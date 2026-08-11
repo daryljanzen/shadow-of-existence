@@ -8,6 +8,26 @@ WHAT CHANGES, and each from the corpus not from me:
     in k, and the common phase is taken at an extremum (velocities zero).
   * SPECIES: adiabatically related, as the transmission argument requires.
 CONTROL REFERENCE: the LambdaCDM run at r1975 -- peaks 225/510/810, phi_1=0.254, P1/P2=2.299.
+
+** !! MARKED r2376+c54.164 -- THE FIGURES THIS FILE PINS ARE NOT STABLE UNDER ITS OWN DOCUMENTED
+INITIAL CONDITIONS, AND P15 NO LONGER QUOTES THE 150. **  The run below is unchanged and its
+assertions still hold; what is withdrawn is the STATUS the paper gave its output.
+  * The docstring above says "the common phase is taken at an extremum (velocities zero)".  ** The
+    code does not set the velocities to zero: th0v = -3 dThat + 6 dPh0 with dThat = 0, so theta is
+    6 dPsi, which is not zero. **  Setting it to zero as documented returns P1/P2 = 2.017 against
+    the sky's 2.212, where this file returns 1.447 and the paper reported 1.45 as its disagreement.
+  * ** Psi's VALUE is taken from the smooth matched envelope 1/(1+xs^2/3) and Psi's DERIVATIVE from
+    a numerical derivative of the OSCILLATORY 3(sin x - x cos x)/x^3 -- two different functions. **
+  * Across four readings of the same stated initial condition the first peak moves over
+    ell_1 in {150, 165, 315} and the ratio over P1/P2 in {0.93, 1.21, 1.45, 2.02}.
+  * ** The numerics are NOT the cause: stability number 0.47 against this file's own limit of 2.8,
+    120+ RK4 steps per acoustic oscillation, and NS_CR=5600 reproduces every figure exactly. **
+  * ** What does NOT move is the source comb's spacing: 0.72-0.79 of pi/r_s under every variant,
+    never pi/r_s.  That is a disagreement with the acoustic scale this file was PINNED to, it is
+    not an initial-data artefact, and it is now what front #5 is about. **
+See P15_the_first_peak_figure_is_not_stable.py, and the probe it pins,
+computations/beyond_the_wall/L171_what_sets_the_first_peak.py, which execs THIS file's source with
+only the initial-data block substituted.
 ORIGIN: storyboard_receipts/ROBUST_p1p2_scan.py -- registered r2376 (c54); edit the origin, not this copy."""
 import os
 import numpy as np

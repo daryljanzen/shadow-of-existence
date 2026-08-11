@@ -1,7 +1,7 @@
 ---
 name: absorption
 kind: SOURCE
-current: c54.163
+current: c54.178
 job: The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced.
 sources: [chat]
 ---
@@ -32,6 +32,7 @@ sources: [chat]
 | c54.134 | r2377 | 2026-08-10 |
 | c54.153 | r2385 | 2026-08-10 |
 | c54.163 | r2393 | 2026-08-11 |
+| c54.178 | r2427 | 2026-08-11 |
 
 ## What each absorption cost, so the next one is planned rather than discovered
 
@@ -70,6 +71,56 @@ sources: [chat]
   - *The other half of our P7 change was the dependency matrix, which is generated and simply regenerates.*
   - *ID space clean again: 36 rows re-inserted, **zero collisions** — the fork still has not opened a row above
     `L-173`.*
+
+- **c54.163 → c54.178** *(15 revisions, **26 changed, 40 added, ZERO dropped, nothing lost**). The acoustic
+  front: a **Boltzmann photon hierarchy to $\ell=24$ with polarisation inside the transfer**, the shear
+  coefficient **derived rather than remembered** (and $\chi^2$ preferring the other value by 1123 units, recorded
+  and refused), and the height target found to be **below the resolution of its own statistic** — the sky's own
+  ratios are $2.256\pm0.077$ and $2.280\pm0.074$, so the earlier $2$–$3\%$ claims were inside the error and the
+  $13\%$/$34\%$ were four and ten sigma and stand.*
+  - ⛭⛭ ***FIVE OF THE SEVENTEEN ROUTED ITEMS WERE APPLIED BY THE FORK***: *`PO-8`'s closed gate, family 6's
+    pointer at struck `L-164`, "seven families are open" in **both** `README` and `INTRODUCTION`, **all four
+    published-paper typos**, and `A·1` folded.* ⇒ **This line's four text repairs are RETIRED — the fork made
+    them.** *Protocol step 4 paying off exactly as designed:* ***check the fix, not just the diagnosis.***
+  - ⛔ ***THE ID COLLISION FIRED.*** *At c54.166 the fork opened its own **`L-174`**, folding `A·1` — and this
+    line's `L-174` was `PO-5`. **`THE_HUB` had called it a near-miss twice by luck.** This line yielded: the row
+    moved to **`L-221`** and every live citation was repointed. **The bands were corrected and the gate rewritten**
+    — see `THE_HUB`.*
+  - ⌗ *And the fork's `L-174` **splits `A·1` into an ungated classical half and a `PO-6`-gated non-perturbative
+    half** — **exactly the split this line made at `L-207` at r2383**. Two lines, same map item, same split,
+    different IDs.*
+  - ⌗ **`FOLD52_ASSESSMENT.md` arrived** — the 52/53 acoustic fold, and it carries the strongest corroboration this
+    front has: ***"two nodes, two instruments, two fork lines, same result, neither knowing of the other"*** on the
+    comb's invariance under initial data. ⚠ *And its own honesty: **the fold's reproduction gate does not reproduce
+    in the fork's environment** ($\ell_1=229.6$ against the required $221.1$), diagnosed as a stale-path import.*
+  - ⚠ *The fork's whole c54.164–178 changelog block is **absorbed verbatim** into `CORPUS_MAP`, kept unedited,
+    because* ***the fork's account of what it did is the thing a file-level diff cannot produce.***
+
+## ⛔⛔ STEP 6 WAS WRONG FOR THREE ABSORPTIONS — corrected r2427
+
+*The duplicate sweep removed a top-level file whenever a copy existed in `retired/`, "after verifying against the
+pristine incoming tree". **The verification asked the wrong question.***
+
+| | |
+|---|---|
+| **what it asked** | *did the fork **change** these since the baseline?* |
+| **what it should ask** | ***does the fork still HAVE them at top level?*** |
+
+***Unchanged is not absent.*** *All twenty-nine so-called duplicates were present in the fork's tree the whole
+time — **the fork does not retire by moving; it keeps both copies** — so the sweep was deleting live files on the
+strength of a filename match.
+
+**⌗ WHAT IT COST: `README.md` and `INDEX.md` were deleted from this line's tree at r2385 or r2393** *and never
+existed in git at all.* ⚠ **And the reason nobody noticed for three absorptions is the sharp part:** *routing item
+3 checked `README.md` for "seven families are open" —* ***and read the FORK's copy, because this line's did not
+exist.*** **Every check of those files silently went to the other tree.**
+
+⌗ ***AND THE GUARD FIRED AND WAS IGNORED.*** *At r2427 the sweep printed **"changed by the fork since c54.163:
+['README.md', 'INDEX.md']"** and the removal ran anyway, because the removal loop did not consult the check it had
+just performed.* ⇒ **A guard that prints and does not gate is a comment.** *The check now decides.*
+
+**⌗ THE CORRECTED STEP 6.** *Remove a top-level file only if **the pristine incoming tree does not carry it at top
+level**. Never on a filename match with `retired/`, and never on "the fork did not change it".*
 
 ## The protocol, in the order that survived contact
 

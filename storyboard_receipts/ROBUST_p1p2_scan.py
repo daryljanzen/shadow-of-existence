@@ -48,6 +48,13 @@ eta_end=float(np.interp(min(20*a_rec,1.0),ag,eg))
 # so the same recombination history HIER uses transfers here directly.
 # A = 16/45 with polarisation (the standard damping rate's 16/15 term includes it); the amplitude
 # rate is half the friction coefficient, which is where the factor 2 comes from (r2361).
+# ** r2376+c54.160: this import made the REGISTERED receipt unrunnable from its own directory --
+#    RD_diffusion_direct lives only in storyboard_receipts/, so the file exited 1 on ImportError
+#    before reaching any computation, and the assertion sweep had to run it from the ORIGIN
+#    instead.  A receipt that cannot run where it is registered is not a receipt. **
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__)))), 'storyboard_receipts'))
 from RD_diffusion_direct import xe_history, n_H0_of, sigT, Mpc_m, xe_total
 _Yp = 0.2454
 _zg, _xeg = xe_history(lambda z: Hub(1/(1+z))*1e3/Mpc_m, ombh2, _Yp, z_hi=3000.0, z_lo=80.0, n=6000)

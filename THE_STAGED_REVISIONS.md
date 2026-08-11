@@ -1,7 +1,7 @@
 ---
 name: the-staged-revisions
 kind: STATE
-current: c54.163
+current: c54.178
 description: The observer line's staging ground — revisions to the papers, computations to run, and consolidation work, PREPARED here and executed when the working fork reaches its target. Nothing here has been applied to the corpus; each entry carries its gate, its locus and its done-test.
 sources: [chat]
 ---
@@ -605,7 +605,7 @@ one ID space, 195 rows — **171 QUESTION (160 struck, 11 open) + 24 WORK**.*
 
 | namespace | outcome |
 |---|---|
-| `PROTECTED_OPEN` | **folded**, cross-referenced both ways; `PO-5`→`L-174`, `PO-9`→`L-175` registered; `PO-8` closed with a receipt; `check_kills` now protects register aliases |
+| `PROTECTED_OPEN` | **folded**, cross-referenced both ways; `PO-5`→`L-221`, `PO-9`→`L-175` registered; `PO-8` closed with a receipt; `check_kills` now protects register aliases |
 | ledger families | **already folded since c54.121** — and **family 6's pointer was stale**, naming `L-164` (struck c54.128); corrected to `PO-4` |
 | `OPEN_PROBLEMS_MAP` | **already folded since c54.90 and clean** — the c54.90 fold's own claim holding up under independent check |
 | `CONSOLIDATE` arcs + §13 phases | **folded as `kind:WORK`**, with the gates scoped per kind rather than diluted |

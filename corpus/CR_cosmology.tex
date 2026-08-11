@@ -289,7 +289,30 @@ while $c_s$ saturates at $1/\sqrt3$, so $c_sk/\lvert aH\rvert\to c_skx\to0$ for 
 $\ell\simeq28$ to $\ell\simeq2475$ exits the comoving sound horizon strictly before the crunch---the highest
 with a fifth of a per cent of the collapsing leg still to run~\cite{JanzenCosmogenesis}. \emph{So the two
 readings do not divide the work between them: the scale criterion is satisfied by everything, and the species
-criterion selects nothing.} The crossing is lossless for every species rather than for cold ones alone.
+criterion selects nothing.}
+
+\emph{One consequence of that freezing bears on the acoustic sector rather than on the crossing, and it is
+computed at r2376+c54.167 rather than left as an inference.} If every mode is outside the comoving horizon at
+the branch point and the acoustic modes are inside it at the onset (Prop.~\ref{prop:subhorizon}), then between
+those two loci the modes \emph{re-enter}---and in flat $\Lambda$CDM a horizon crossing is exactly where the
+$k$-independent acoustic driving phase shift is acquired. \emph{The re-entry is real and its boundary is
+computable}: the mode whose crossing coincides with the onset is $k=0.0111\,\mathrm{Mpc}^{-1}$, i.e.\
+$\ell\simeq144$, so every mode at and above the acoustic peaks crossed before the plasma began while
+$\ell\lesssim144$ is still outside at the onset and crosses later\rcpt{P15_the_crossing_exists_and_is_empty}.
+\emph{But nothing is imprinted there, and the reason is structural rather than quantitative.} On the
+radiation-free rate the crossing occurs under pressureless matter to better than a part in $10^{4}$, and the
+potential equation for a pressureless component,
+$\Phi''+3\mathcal{H}(1+w)\Phi'+[2\mathcal{H}'+(1+3w)\mathcal{H}^{2}]\Phi+wk^{2}\Phi=0$, \emph{contains no $k$
+at all once $w=0$}---the wavenumber enters only through the pressure term. Integrated on this background from
+$a=10^{-7}$ to the onset the potential is constant to twelve digits and \emph{identical across four decades in
+$k$}, the integrator taking the same number of steps for every mode because it is handed the same problem.
+\emph{So the horizon crossing is not an event for the potential here}: before the onset the perturbation
+problem on the observable leg is scale-free, and a scale-free problem imprints nothing. In flat $\Lambda$CDM
+the same modes cross under \emph{radiation}, where $w=1/3$ restores the $k^{2}$ term and the potential decays
+on the sound-crossing time by construction, which is why that shift is the same for every mode. \emph{This
+closes a candidate mechanism rather than supplying one}: the absence of a universal driving shift on this rate
+is not an omitted crossing but a scale-free interval, and the first peak's position is left open by it.
+ The crossing is lossless for every species rather than for cold ones alone.
 \emph{That is a loss of a claimed prediction and not a gain, and it is recorded as one}; what survives is the
 pressureless argument's positive content, that the inheritance is exact rather than adiabatic, now holding of
 every species and not of dust alone.
@@ -298,7 +321,7 @@ every species and not of dust alone.
 
 The acoustic peaks are sharp because the modes of a given wavenumber share a common phase at last scattering. Inflation produces this coherence dynamically, by freezing modes while super-horizon; Proposition~\ref{prop:subhorizon} closes that route here. CR obtains it instead from the character of the branch point.
 
-The branch point is a \emph{null} surface---the cosmological horizon promoted to the initial layer~\cite{JanzenCRframework}. The initial-value problem on a null surface is characteristic, not Cauchy: the data that determine the future are one free function per mode on the surface together with regularity along the generators, rather than a field and an independent momentum. A single datum per mode is a single phase per mode; there is no second, independently specifiable quantity to randomize the relative phase. We therefore argue that coherence is not imposed but is what regular characteristic data on a null surface \emph{is}. This is borne out quantitatively: propagating the tightly-coupled acoustic modes to last scattering from a \emph{common} seam phase yields a sharp regular comb at spacing $\Delta\ell\simeq\pi D_C/\rs\approx296$, troughs falling to zero, whereas drawing the phase independently per mode---the second, free datum a Cauchy surface would admit---washes the comb out entirely, leaving flat power (peak-to-trough contrast $\sim1$ against the coherent comb's many orders of magnitude; receipts: \texttt{verify\_coherence\_comb.py}\rcpt{P15_verify_coherence_comb}). The null boundary admits only the first column: one characteristic datum per mode is one phase per mode. The peak \emph{heights} are then carried by a structural argument rather than a bespoke transfer. The driven acoustic amplitude is the resonant Fourier magnitude of the potential's evolution, $|\tilde\Psi(\omega{=}1)|$---exactly invariant under time reversal, $|\widetilde{\Psi(x)}|=|\widetilde{\Psi(-x)}|$, a Fourier theorem confirmed numerically on the radiation-era transfer function and on a random control\rcpt{P15_time_reversal_driving}. This cosmology's driving does not live on an expanding radiation era, which the radiation-free rate does not possess; it lives on the \emph{contracting} side---the progenitor's radiation-comparable collapse phase, whose potential evolution is the Friedmann time-reverse of an expanding radiation era---so its driving magnitude equals flat $\Lambda$CDM's exactly, and the branch point's faithful transmission (\S\ref{sec:transmission}) carries it across unaltered. The acoustic amplitude, and with it the peak-height pattern, therefore match flat $\Lambda$CDM's---by the time-reversal structure, not by tuning---conditional on the inherited medium being the ordinary photon--baryon plasma, the condition the abundance comparison confirms (\S\ref{sec:tensions}; receipt: \texttt{cr\_collapse\_driving.py}\rcpt{P15_cr_collapse_driving}, the driving validated as a linear oscillator against the known radiation-era boost). Because the acoustic modes are already sub-horizon at the branch point (Prop.~\ref{prop:subhorizon}), each mode's driving is complete on the collapse side; the observed peaks therefore \emph{reduce} to flat $\Lambda$CDM's---the driving equality above together with the shared photon--baryon plasma and the coherent seam phase---and match a Boltzmann reference digit by digit ($P_1/P_2\approx2.2$, $P_2/P_1\approx0.45$, $P_3/P_1\approx0.44$; \texttt{camb\_reference.py}\rcpt{P15_camb_reference}). What remains is confined to the \emph{damping} tail ($\ell\gtrsim1000$), and the three-level rule (\S\ref{sec:tensions}) fixes it rather than leaving it to judgement. Recombination is observable cosmology from the branch point onward, so the photon diffusion length $r_D$---like $\rs$---is an L1 quantity: the random walk accumulates against the layer's own radiation-free expansion, its Thomson microphysics ordinary content physics but its expansion the L1 rate, \emph{not} a radiation-included one. This is the same branch point-located scoping the cosmogenesis paper derives for the nucleosynthesis window~\cite{JanzenCosmogenesis}, read here in the opposite direction: there the self-gravitating excursion sets the L2 rate radiation is included in, here the diffuse plasma rides the L1 foliation radiation is excluded from. This is forced: it is the same L1 rate that dissolves the Hubble tension, and one may not take the rate radiation-free for the peak spacing and radiation-included for the diffusion. Because the radiation-free rate near recombination is ${\sim}13\%$ below the radiation-included one there ($\rho_r/\rho_m\approx0.3$), the diffusion length runs ${\sim}9\%$ longer than $\Lambda$CDM's while $\rs$ is matched to the observed acoustic scale; the projection-independent ratio is therefore $\theta_D/\theta_*\approx1.08\,(\theta_D/\theta_*)_{\Lambda\mathrm{CDM}}$---a ${\sim}8\%$ larger damping angular scale (receipt: \texttt{damping\_ratio\_clean.py}\rcpt{P15_damping_ratio_clean}, validated against a Boltzmann reference on the radiation-included rate; $\rs=144.0$ vs CAMB $144.4$). This is the one genuinely CR-specific piece of the height pattern: a real signature \emph{locked to} the Hubble resolution by their shared L1 rate---not an artefact of laying the standard radiation-governed $\rs$ on the radiation-free rate, the calculation belonging to neither framework this paper warns against (\S\ref{sec:intro}). One thing about this signature is settled and one is not, and it is essential to keep them apart. Settled: the ${\sim}9\%$ in $r_D$ is genuinely CR-specific and does not dissolve under the density that would ordinarily rescale it---$r_D\propto\omega_b^{-0.31}$, so a percent-level $\omega_b$ (fixed by primordial deuterium and the peak-height ratio) shifts it by well under a percent (receipt: \texttt{damping\_reabsorption.py}\rcpt{P15_damping_reabsorption}). \emph{Not} settled, and not to be over-read: what that ${\sim}9\%$ in the diffusion \emph{scale} does to the observed high-$\ell$ power. The observable is $\theta_D/\theta_*=r_D/\rs$, and translating it into a spectrum requires the full acoustic transfer---above all, whether CR's high-$\ell$ peaks, driven on the radiation-free rate, track flat $\Lambda$CDM's, which is verified only through the third peak ($\ell\lesssim800$). A leading-order pass that simply \emph{assumes} the high-$\ell$ peaks equal $\Lambda$CDM's and applies the extra damping produces a large high-$\ell$ deficit (receipt: \texttt{full\_transfer\_verdict.py}\rcpt{P15_full_transfer_verdict})---but that assumption may not be imported for free: the same radiation-free rate that enlarges $r_D$ also governs the high-$\ell$ driving envelope, so CR's high-$\ell$ spectrum rests on short-wavelength collapse-phase driving rather than on the boost an expanding radiation era supplies. \emph{That driving is computed below} (\S\ref{sec:envelope}), and the calculation removes the licence the shortcut lacked: the envelope is derived on the collapse leg rather than imported. The two structural facts---peaks-match (verified low-$\ell$) and radiation-free diffusion---therefore constrain, but do not by themselves determine, the high-$\ell$ shape; the net effect is computed in \S\ref{sec:envelope-consequence}; whether it is a tension, a wash, or a distinctive but consistent feature turns on a parameter refit and on the early integrated Sachs--Wolfe term, which is what remains open. What is honestly claimed here is the \emph{effect}, not a verdict on it: a real, computed, non-reabsorbable ${\sim}9\%$ CR-specific diffusion-scale signature, its observable consequence now derived rather than entangled (\S\ref{sec:envelope-consequence}), and the verdict on it left to a likelihood confrontation this paper does not run. The structural point that stands is the \emph{mechanism}: where inflation freezes the phase dynamically and drives the amplitudes on an expanding radiation era, CR fixes the phase geometrically on the single null layer and drives the amplitudes on the time-mirrored collapse.
+The branch point is a \emph{null} surface---the cosmological horizon promoted to the initial layer~\cite{JanzenCRframework}. The initial-value problem on a null surface is characteristic, not Cauchy: the data that determine the future are one free function per mode on the surface together with regularity along the generators, rather than a field and an independent momentum. A single datum per mode is a single phase per mode; there is no second, independently specifiable quantity to randomize the relative phase. We therefore argue that coherence is not imposed but is what regular characteristic data on a null surface \emph{is}. This is borne out quantitatively, and the scope of the demonstration is stated exactly here at r2376+c54.164, because this paper previously claimed more of it than it does. Evaluating the tightly-coupled mode function at last scattering with a \emph{common} seam phase gives a sharp regular comb, whereas drawing the phase independently per mode---the second, free datum a Cauchy surface would admit---washes it out entirely, leaving flat power (peak-to-trough contrast $\sim1$ against the coherent comb's many orders of magnitude; receipt: \texttt{verify\_coherence\_comb.py}\rcpt{P15_verify_coherence_comb}). \emph{That establishes the mechanism---one characteristic datum per mode is one phase per mode, and coherence follows---and it establishes nothing about where the peaks fall.} The receipt writes the mode function down as $\cos(k\rs)$ with $\rs$ and $D_{C}$ as literals; no mode is propagated in it, as its own scope note says, so the spacing $\Delta\ell\simeq\pi D_{C}/\rs\approx296$ is the arithmetic of the expression assumed rather than an output. \emph{This paper stated it as the result of propagating the modes, and that was wrong}\rcpt{P15_the_first_peak_figure_is_not_stable}. Where the modes \emph{are} propagated the comb comes out at $0.72$--$0.79$ of that spacing under every initial condition tried (\S\ref{sec:refit-bound}), so the peak spacing is at present asserted in one place and short in the other. The null boundary admits only the first column: one characteristic datum per mode is one phase per mode. The peak \emph{heights} are then carried by a structural argument rather than a bespoke transfer. The driven acoustic amplitude is the resonant Fourier magnitude of the potential's evolution, $|\tilde\Psi(\omega{=}1)|$---exactly invariant under time reversal, $|\widetilde{\Psi(x)}|=|\widetilde{\Psi(-x)}|$, a Fourier theorem confirmed numerically on the radiation-era transfer function and on a random control\rcpt{P15_time_reversal_driving}. This cosmology's driving does not live on an expanding radiation era, which the radiation-free rate does not possess; it lives on the \emph{contracting} side---the progenitor's radiation-comparable collapse phase, whose potential evolution is the Friedmann time-reverse of an expanding radiation era---so its driving magnitude equals flat $\Lambda$CDM's exactly, and the branch point's faithful transmission (\S\ref{sec:transmission}) carries it across unaltered. The acoustic amplitude, and with it the peak-height pattern, therefore match flat $\Lambda$CDM's---by the time-reversal structure, not by tuning---conditional on the inherited medium being the ordinary photon--baryon plasma, the condition the abundance comparison confirms (\S\ref{sec:tensions}; receipt: \texttt{cr\_collapse\_driving.py}\rcpt{P15_cr_collapse_driving}, the driving validated as a linear oscillator against the known radiation-era boost). Because the acoustic modes are already sub-horizon at the branch point (Prop.~\ref{prop:subhorizon}), each mode's driving is complete on the collapse side; the observed peaks therefore \emph{reduce} to flat $\Lambda$CDM's---the driving equality above together with the shared photon--baryon plasma and the coherent seam phase---and match a Boltzmann reference digit by digit ($P_1/P_2\approx2.2$, $P_2/P_1\approx0.45$, $P_3/P_1\approx0.44$; \texttt{camb\_reference.py}\rcpt{P15_camb_reference}). What remains is confined to the \emph{damping} tail ($\ell\gtrsim1000$), and the three-level rule (\S\ref{sec:tensions}) fixes it rather than leaving it to judgement. Recombination is observable cosmology from the branch point onward, so the photon diffusion length $r_D$---like $\rs$---is an L1 quantity: the random walk accumulates against the layer's own radiation-free expansion, its Thomson microphysics ordinary content physics but its expansion the L1 rate, \emph{not} a radiation-included one. This is the same branch point-located scoping the cosmogenesis paper derives for the nucleosynthesis window~\cite{JanzenCosmogenesis}, read here in the opposite direction: there the self-gravitating excursion sets the L2 rate radiation is included in, here the diffuse plasma rides the L1 foliation radiation is excluded from. This is forced: it is the same L1 rate that dissolves the Hubble tension, and one may not take the rate radiation-free for the peak spacing and radiation-included for the diffusion. Because the radiation-free rate near recombination is ${\sim}13\%$ below the radiation-included one there ($\rho_r/\rho_m\approx0.3$), the diffusion length runs ${\sim}9\%$ longer than $\Lambda$CDM's while $\rs$ is matched to the observed acoustic scale; the projection-independent ratio is therefore $\theta_D/\theta_*\approx1.08\,(\theta_D/\theta_*)_{\Lambda\mathrm{CDM}}$---a ${\sim}8\%$ larger damping angular scale (receipt: \texttt{damping\_ratio\_clean.py}\rcpt{P15_damping_ratio_clean}, validated against a Boltzmann reference on the radiation-included rate; $\rs=144.0$ vs CAMB $144.4$). This is the one genuinely CR-specific piece of the height pattern: a real signature \emph{locked to} the Hubble resolution by their shared L1 rate---not an artefact of laying the standard radiation-governed $\rs$ on the radiation-free rate, the calculation belonging to neither framework this paper warns against (\S\ref{sec:intro}). One thing about this signature is settled and one is not, and it is essential to keep them apart. Settled: the ${\sim}9\%$ in $r_D$ is genuinely CR-specific and does not dissolve under the density that would ordinarily rescale it---$r_D\propto\omega_b^{-0.31}$, so a percent-level $\omega_b$ (fixed by primordial deuterium and the peak-height ratio) shifts it by well under a percent (receipt: \texttt{damping\_reabsorption.py}\rcpt{P15_damping_reabsorption}). \emph{Not} settled, and not to be over-read: what that ${\sim}9\%$ in the diffusion \emph{scale} does to the observed high-$\ell$ power. The observable is $\theta_D/\theta_*=r_D/\rs$, and translating it into a spectrum requires the full acoustic transfer---above all, whether CR's high-$\ell$ peaks, driven on the radiation-free rate, track flat $\Lambda$CDM's, which is verified only through the third peak ($\ell\lesssim800$). A leading-order pass that simply \emph{assumes} the high-$\ell$ peaks equal $\Lambda$CDM's and applies the extra damping produces a large high-$\ell$ deficit (receipt: \texttt{full\_transfer\_verdict.py}\rcpt{P15_full_transfer_verdict})---but that assumption may not be imported for free: the same radiation-free rate that enlarges $r_D$ also governs the high-$\ell$ driving envelope, so CR's high-$\ell$ spectrum rests on short-wavelength collapse-phase driving rather than on the boost an expanding radiation era supplies. \emph{That driving is computed below} (\S\ref{sec:envelope}), and the calculation removes the licence the shortcut lacked: the envelope is derived on the collapse leg rather than imported. The two structural facts---peaks-match (verified low-$\ell$) and radiation-free diffusion---therefore constrain, but do not by themselves determine, the high-$\ell$ shape; the net effect is computed in \S\ref{sec:envelope-consequence}; whether it is a tension, a wash, or a distinctive but consistent feature turns on a parameter refit and on the early integrated Sachs--Wolfe term, which is what remains open. What is honestly claimed here is the \emph{effect}, not a verdict on it: a real, computed, non-reabsorbable ${\sim}9\%$ CR-specific diffusion-scale signature, its observable consequence now derived rather than entangled (\S\ref{sec:envelope-consequence}), and the verdict on it left to a likelihood confrontation this paper does not run. The structural point that stands is the \emph{mechanism}: where inflation freezes the phase dynamically and drives the amplitudes on an expanding radiation era, CR fixes the phase geometrically on the single null layer and drives the amplitudes on the time-mirrored collapse.
 
 \subsection{The collapse-phase driving envelope}\label{sec:envelope}
 The driving named above can be carried out in closed form, and doing so removes the entanglement the previous
@@ -436,23 +459,265 @@ state this as a bound and not as a likelihood: a full comparison fits the whole 
 and its covariances, where this fixes one observable and minimises one derived ratio. It settles that the
 signature does not dissolve under reabsorption; it does not settle the verdict.
 
-\emph{This is an argument from transfer, and a direct computation now disagrees with it.} The reasoning above
+\emph{This was reported here as a transfer argument contradicted by a direct computation, and at
+r2376+c54.164 that reading is withdrawn: the computation does not hold still.} The reasoning above
 establishes that the driving phase shift carries over from the leg, and infers from that a first peak near the
-same fraction of $\ell_{*}$ as flat $\Lambda$CDM's---which is how $220$ enters. A perturbation calculation built
-on the branch point handover instead places it near $\ell=150$, i.e.\ at half of $\ell_{*}$ rather than at
-$0.73$\rcpt{ROBUST_p1p2_scan}, and returns a first-to-second peak ratio of ${\simeq}1.45$ against the measured
-$2.21$. \emph{That ratio was quoted here as $1.15$ until r2376+c54.155, which was its value before the anisotropic-stress sign correction and the Thomson-opacity port; the instrument now returns $1.447$, so the disagreement with the sky is smaller than this paper has been reporting.} The peak position is unaffected. \emph{Neither figure has been shown stable under the tilt and the diffusion scale by the cited computation}, which varies neither. \emph{Neither figure is yet a settled prediction, and the disagreement is recorded rather than resolved.} The
-transfer argument establishes that the driving phase shift carries over from the leg, and infers a first peak
-near flat $\Lambda$CDM's fraction of the acoustic scale---which is how $220$ enters. A perturbation calculation
-built on the branch point handover places it lower, and the amount depends on parts of the handover that are still being
-settled. What the two share is the mechanism; where they part is the inference from a transferred mechanism to a
-shared peak fraction, and that inference is not established---the initial data admissible on one rate need not
-be admissible on the other. \emph{So $220$ should be read as what the transfer argument gives, and the first
-peak's position treated as open.} The computation, for its part,
-rests on a handover whose specification was settled only recently and on a projection validated to ten or twenty
-per cent. \emph{We record the disagreement rather than resolve it: the first peak's position is an open question
-in this construction, and the figure of $220$ should be read as what the transfer argument gives, not as a
-prediction the built spectrum confirms.}
+same fraction of $\ell_{*}$ as flat $\Lambda$CDM's---which is how $220$ enters. A perturbation calculation
+built on the branch point handover was quoted against it, placing the peak near $\ell=150$, at half of
+$\ell_{*}$ rather than at $0.73$, with a first-to-second peak ratio of ${\simeq}1.45$ against the measured
+$2.21$\rcpt{ROBUST_p1p2_scan}. \emph{Neither figure survives an examination of what fixes it.} Substituting
+the instrument's initial-data block and leaving every other line of it byte-identical---the background, the
+hierarchy, the opacity, the damping, the discrete ladder, the projection---moves the first peak across
+$\ell_{1}\in\{150,165,315\}$ and the ratio across $P_{1}/P_{2}\in\{0.93,1.21,1.45,2.02\}$, over four readings
+of the \emph{same} stated initial condition\rcpt{P15_the_first_peak_figure_is_not_stable}. \emph{Two of those
+readings are the instrument's own text.} Its amplitude is taken from a smooth matched envelope while its
+initial velocity is taken from a numerical derivative of the oscillatory closed form---two different
+functions---and its docstring describes a common phase taken at an extremum, \emph{with the velocities zero},
+which the code does not impose. Imposing it returns $P_{1}/P_{2}=2.02$ against the measured $2.21$, where the
+figure quoted here as the disagreement was $1.45$. \emph{So the disagreement this paper has been recording is
+a property of one implementation and not of the construction}, and $150$ is withdrawn as a quotable figure.
+The numerics are not the source of it: the integrator runs at a stability number of $0.47$ against its own
+limit of $2.8$ with at worst $120$ steps per acoustic oscillation, and quadrupling the step count reproduces
+the peaks exactly.
+
+\emph{What survives is smaller, harder, and is not what this item was posed as.} Under \emph{every} one of the
+four initial conditions the instrument's source comb comes out at $0.72$--$0.79$ of $\pi/\rs$ rather than at
+$\pi/\rs$: the initial data move the first peak by $165$ multipoles and do not move this. \emph{That is a
+disagreement with the acoustic scale inside the one instrument in this programme that propagates modes}, and
+it is not caused by the initial data. \emph{It is also not answered by the coherence argument of
+\S\ref{sec:coherence}}, whose comb is written down rather than propagated---$\rs$ and $D_{C}$ entering its
+receipt as literals and the mode function as $\cos(k\rs)$, as that receipt's own scope note
+says\rcpt{P15_verify_coherence_comb}. \emph{So the peak spacing is asserted in one place and computed nowhere,
+and where it is computed it comes out short.} We record that rather than resolve it. \emph{The figure of $220$
+should still be read as what the transfer argument gives, and the first peak's position, together with the
+spacing, treated as open}---but the ground for treating it as open is now the missing propagation, not a rival
+number.
+
+\emph{That missing propagation is built at r2376+c54.168, with the two things whose absence made every earlier
+figure unreadable: a live control and a guard that can fail}\rcpt{P15_two_arm_control_and_guard}. Both arms run
+on one set of equations, so nothing below is a difference of machinery. \emph{The guard first, because it is
+what licenses the rest.} With every coupling to the potential removed at every site---the $4\Phi'$ in the
+photon, neutrino and cold-matter continuity equations and the $k^{2}\Psi$ in the photon--baryon and neutrino
+Euler equations, in both the tightly-coupled and post-switch branches---the source comb lands on the integers
+on \emph{both} arms, at $1.015$ and $2.000$ for flat $\Lambda$CDM and $1.012$ and $1.997$ here. \emph{So the
+sound horizon, the measure, the wavenumber grid and the phase extraction are validated as an ensemble, and
+every departure from $n\pi/\rs$ in a driven run is the driving and nothing else.} \emph{The control next, with
+its floor, which is the point of running one.} The $\Lambda$CDM arm returns peaks at $224$, $536$ and $808$
+against the measured $220.6$, $538.1$ and $809.8$: positions good to $1.5\%$ at the first peak and to $0.4\%$
+and $0.2\%$ at the second and third, and \emph{heights good only to $13$--$26\%$, so no height claim from this
+instrument is meaningful below about a quarter}. \emph{And one objection to any figure of ours is closed by
+measurement rather than by argument}: run on the physical discrete ladder $k_L=\sqrt{L(L+2)}/r_0$ and on a
+dense continuum sampling, this cosmology's arm returns \emph{identical} peaks, so the discreteness is not what
+sets the position.
+
+\emph{The measurement is then stated in the only form comparable across arms}, the two running at different
+$H_{0}$ and $\Omega_{m}$ so that $D_{M}$ and $\rs$ differ by some six per cent each and cancel, $\ell_{A}$
+coming out $301.4$ against $301.6$. \emph{On the initial datum this paper's own text describes}---the effective
+temperature flat in $k$, the phase common, and \emph{the velocities zero}---the first peak sits at
+$\ell_{1}/\ell_{A}=0.570$ against the control's $0.743$ and the sky's $0.731$. \emph{That is a twenty-three per
+cent deficit against a one-and-a-half per cent floor}, and the height ratio compounds rather than cancels it,
+$P_{1}/P_{2}=0.87$ against the control's $1.93$. \emph{We state what this is and what it is not.} It is not a
+prediction: \S\ref{sec:refit-bound} has just recorded that the figure moves with the initial datum, and it
+moves here too. \emph{What has changed is that it now moves against something}---a control, a floor, and a
+guard---where before it moved against nothing at all. The first peak's position remains open, and the
+open question is now sharp: on this rate nothing before the onset can imprint an acoustic phase
+(\S\ref{sec:what-crosses}), so whatever sets it must act on modes already inside the sound horizon when the
+plasma begins.
+
+\emph{With the guard in place the driving itself can be measured rather than modelled, and it is}
+\rcpt{P15_the_driving_shift_by_subtraction}. Each wavenumber is integrated twice on the same equations,
+driven and undriven, differing in one multiplicative switch and in nothing else; $Q(k)$ is the accumulated
+sound phase in half-periods at the first acoustic turnover, and \emph{the undriven column, which a free
+oscillator must return at exactly one, is the calibration}---it comes out between $0.9968$ and $1.0003$ on
+both arms. Read against it, \emph{flat $\Lambda$CDM's acoustic phase is flat in $k$}, running from $0.791$ to
+$0.774$ across $k=0.045$--$0.16\,\mathrm{Mpc}^{-1}$, a spread of two per cent: every mode crosses the sound
+horizon during radiation domination, where the potential decays on the sound-crossing time by construction, so
+each acquires the same shift. \emph{This cosmology's varies by a factor of $3.9$ across the same band},
+$0.457$ to $0.117$. \emph{That is the deficit of \S\ref{sec:refit-bound} seen at the level of a single mode
+rather than of a spectrum}, and it is what a rate carrying no radiation source predicts: there is no crossing
+at which a universal shift could be acquired, and the interval before the onset is scale-free. \emph{The
+scaling is quoted for what it is and not more.} A power-law fit returns $Q\propto k^{-0.62}$, which collapses
+the measurements to a factor of $1.2$ where $k^{-2}$ spans a factor of $16$; \emph{we record that the exponent
+is not the $-2$ a relaxation on $3\mathcal{H}/k^{2}$ would give}, and leave the identification of the process
+open rather than name one the measurement does not support.
+
+\emph{Splitting the driving into its two couplings localises the dependence, and the result is not where a
+relaxation timescale would put it}\rcpt{P15_which_coupling_carries_the_k_dependence}. The potential enters the
+plasma twice: as $4\Phi'$ in the continuity equations, its rate of change feeding the density, and as
+$k^{2}\Psi$ in the Euler equations, its gradient driving the velocity. Switched independently on the same
+integration, \emph{flat $\Lambda$CDM's two couplings are each flat in $k$ and they oppose}: continuity alone
+puts the turnover at $Q=1.23$--$1.28$, \emph{later} than a free half-period, and the gradient alone at
+$0.73$--$0.87$, earlier, the two composing to $0.77$--$0.86$. \emph{So the universality of the standard driving
+shift is a cancellation between two flat terms rather than the signature of one.} On the radiation-free rate
+there is no cancellation left---continuity gives $0.11$--$0.18$ and the gradient $0.06$--$0.57$, both earlier
+than a free half-period, so they add---\emph{and the wavenumber dependence sits in the gradient}: the
+continuity channel varies by a factor $1.6$ across the band, as $k^{-0.17}$, while the gradient varies by
+$8.9$, as $k^{-1.04}$. \emph{That is the reverse of what a relaxation would give.} A timescale acts on how the
+potential decays, and decay is the continuity channel, which is the one measured flat. \emph{And neither
+coupling alone is the answer either}: the driven exponent, $-0.62$, lies between the two, so the observed
+scaling is their interference. \emph{And the process that makes the gradient coupling run as $k^{-1}$ can then be given in closed
+form}\rcpt{P15_the_gradient_coupling_in_closed_form}. The potential's own equation carries a damping term
+$-k^{2}\Phi/3\mathcal{H}$, so $\Phi$ relaxes on the time $\tau=3\mathcal{H}/k^{2}$. With the continuity
+coupling off, the oscillator obeys $\Theta_{0}''+c_{s}^{2}k^{2}\Theta_{0}=-(k^{2}/3)\Psi$, and \emph{the
+$k^{2}$ in the forcing's amplitude is cancelled by the $k^{-2}$ in its duration}: the delivered impulse
+$\int(k^{2}/3)\Psi\,\dd\eta\sim\mathcal{H}\Psi_{0}$ carries no $k$ at all. \emph{So the first turnover is not
+at an acoustic phase but at the moment the impulse has been delivered}---at a fixed multiple of $\tau$,
+measured constant at $\kappa=1.79$ across a factor of eight in $k$. Since $Q$ is the accumulated phase in
+half-periods, $Q=k\int c_{s}\dd\eta/\pi$, \emph{it already carries one factor of $k$}, and
+\[
+  Q(k)\;=\;\frac{3\kappa c_{s}\mathcal{H}}{\pi}\,\frac1k ,
+\]
+predicting $0.01040\,\mathrm{Mpc}^{-1}$ for $Qk$ against a measured $0.01037$, and reproducing $Q$ itself to
+$1.6\%$ across the sub-horizon band with nothing fitted but $\kappa$. \emph{The complementary channel is flat
+for the complementary reason}: the $4\Phi'$ term feeds the density with the potential's \emph{total} change,
+$\int\Phi'\dd\eta=-\Phi_{0}$, which is the same however fast the relaxation runs. \emph{The observed
+$k^{-0.62}$ is therefore not a power law of anything}---it is the crossover between a flat channel and a
+$1/k$ one.
+
+\emph{This closes the mechanism and does not close the discrepancy, and the two should not be confused.} The
+first peak still sits where \S\ref{sec:refit-bound} measures it, $23\%$ low against a $1.5\%$ control floor.
+\emph{What has changed is that its cause is now derived rather than described}: a rate carrying no radiation
+source has no era in which the potential decays on the sound-crossing time, so the two couplings that oppose
+one another in flat $\Lambda$CDM instead add, and the one that survives as a driving impulse delivers a
+$k$-independent kick to an oscillator whose frequency is proportional to $k$.
+
+\emph{A likelihood-level comparison can then be attempted, and the result is that it cannot yet be made}
+\rcpt{P15_where_the_likelihood_sits}. The criterion was fixed before the data were opened: the pipeline is
+wired if a Boltzmann-code flat-$\Lambda$CDM best fit returns the banked $\chi^{2}=206.4$ over $215$ Planck
+\texttt{plik\_lite} TT bins ($\chi^{2}/\mathrm{dof}=0.96$); the instrument's own floor is what \emph{its}
+$\Lambda$CDM arm costs through the same likelihood on the same bins; and the only readable quantity is the
+difference between the two arms of one instrument, since comparing this construction's spectrum against a
+Boltzmann code's would charge it for the instrument's error. \emph{Run that way, on $185$ covered bins with a
+single fitted amplitude, the $\Lambda$CDM arm returns $\chi^{2}/\mathrm{dof}=103$ and this cosmology's arm
+$558$.} \emph{The ordering is a fact and the ratio is not a $p$-value.} Planck's binned errors are a few
+tenths of a per cent while this instrument's peak heights carry $13$--$26\%$, which is tens of standard
+deviations in a single bin: \emph{both arms sit far outside the regime in which that likelihood discriminates
+between models}, and a control a hundred times too poor certifies nothing about what it is compared with.
+\emph{So the honest verdict is that the likelihood cannot arbitrate here}, and the number that survives is a
+statement about this instrument rather than about the sky---\emph{the construction's arm costs $5.4$ times
+its own control}. \emph{Half of that has since been done, and the half that has been done is the one that matters for
+the position}\rcpt{P15_the_line_of_sight_transfer}. Until r2376+c54.173 the transfer evaluated its source at a
+single $\eta_{*}$---an instantaneous last scattering. The visibility $g=\tau'e^{-\tau}$ in fact peaks at
+$\eta=280.75$ with a full width at half maximum of $37.8$~Mpc, a tenth of a wavelength at the first peak and
+more at the third, and rebuilding the transfer as the standard line-of-sight integral across it takes the
+control's first-peak position from $1.66\%$ to $0.16\%$. \emph{The heights it did not fix, and the reason was diagnosable from their sign}: both ratios came out low,
+so the second and third peaks were too high, and worse the higher the multipole---which is under-damping. The
+cause was that the tight-coupling closure switches off at $\tau'=0.6\,\mathrm{Mpc}^{-1}$ while the visibility
+peaks at $0.06$, ten times lower, so the photon quadrupole and the baryon slip were absent through the whole
+of last scattering and the transfer carried no diffusion damping at all. \emph{Restoring it from the standard
+tight-coupling integral evaluated on each arm's own opacity and rate},
+$k_{D}^{-2}=\int[R^{2}/(1{+}R)+8/9]\,\dd\eta/[6(1{+}R)\tau']$, returns $r_{D}=6.58$~Mpc where a Boltzmann code
+gives $6$--$7$, with nothing fitted, and takes the height ratios from $-12.9\%$ and $-33.5\%$ to $-2.8\%$ and
+$-2.1\%$\rcpt{P15_the_derived_diffusion_damping}. \emph{One double count had to be removed for it to work}:
+with the hierarchy's own tight-coupling damping left in over the same range the control came out
+\emph{over}-damped, and the sign flipping either side of the correction is what identifies a double count
+rather than a wrong coefficient. \emph{So the instrument's floor falls by a factor of five---the likelihood's
+control moves from $\chi^{2}/\mathrm{dof}=103$ to $23$---without its verdict turning over}: two to three per
+cent is not sub-per-cent, and the comparison of \S\ref{sec:refit-bound} still cannot arbitrate. \emph{What the
+floor moving while the verdict does not gives is the measure of how much further the instrument has to go.}
+
+\emph{That last sentence was measured against a target that could not carry it, and we correct our own
+protocol here rather than leave it standing}\rcpt{P15_the_height_target_was_below_the_resolution_of_its_own_statistic}.
+Every height figure above compares $P_{1}/P_{2}$ and $P_{1}/P_{3}$ with two bare numbers. Read off the
+\texttt{plik\_lite} bandpowers with the published covariance---the full $2\times2$ block for the two peak bins,
+propagated through the ratio---the sky's own values are $2.256\pm0.077$ and $2.280\pm0.074$, which is $3.4\%$
+and $3.2\%$. \emph{The $12.9\%$ and $33.5\%$ were therefore four and ten standard deviations and stand; the
+$2.8\%$ and $2.1\%$ are about one, and do not.} A target of sub-per-cent \emph{heights} asks for several times
+more precision than the statistic it is quoted against possesses, and it is withdrawn in favour of the one
+that was doing the work throughout: $\chi^{2}$ over the $185$ covered bins, where the control sits at
+$22.5$ per degree of freedom against a five-parameter fit's $0.96$. \emph{The numerics were cleared before any
+of this was attributed}: raising the mode count by $1.4$, the wavenumber range by $1.3$ and the conformal-time
+sampling by $1.8$ moves the two ratios by $0.09\%$ and $0.37\%$, and the two- and seven-per-cent swings that
+prompted the check came from a multipole ceiling that was truncating the wavenumber integral beneath the third
+peak.
+
+\emph{The same correction disposes of a stronger claim we were in a position to make and cannot.} Sliding a
+single multiplier on $k_{D}^{-2}$---which moves the damping \emph{scale} and cannot change the envelope's
+\emph{shape}---the second-peak ratio selects $1.094\pm0.184$ and the third selects $0.897\pm0.055$: a split of
+$1.03$ standard deviations. \emph{One would have liked to say that no single damping scale fits both, so that
+the residual is the shape of the envelope rather than its size; the measurement does not support it at its own
+error bar, and we withdraw it.} What $\chi^{2}$ does resolve is the coefficient in the shear term, and the
+result is instructive in a direction that does not flatter: its minimum sits at $0.865$ against the $0.859$
+that corresponds to $8/9$, so the polarisation-corrected $16/15$ costs $1123$ units of $\chi^{2}$, some seven
+inflated standard deviations. \emph{We keep $8/9$, and not because it fits better.} Neither value has been
+derived in this programme---\S\ref{sec:envelope-consequence}'s receipt names the ambiguity in its own
+text---and a coefficient chosen by a fit is a fitted parameter whatever it is called. \emph{What the $1123$
+measures is a residual error in this instrument's damping tail of a size that a shear coefficient could
+absorb, which is precisely the reason it must not be permitted to.} The derivation that would settle it is
+named and owed: the free-streaming photon hierarchy carrying the polarisation multipoles, from which the
+coefficient falls out instead of being chosen.
+
+\emph{That derivation is now in hand, and it settles the question against the
+fit}\rcpt{P15_the_shear_coefficient_derived_not_remembered}. The coefficient is measured by running the same
+oscillator twice on the same background: once as the perfect tight-coupled fluid, which is undamped by
+construction, and once as a photon hierarchy carried to $\ell=24$ with Thomson scattering, the polarisation
+multipoles evolved alongside and the baryons given their own velocity. \emph{Their ratio is the damping and
+nothing else}---the slowly varying prefactor, the drift of the sound speed and the baryon-loading dependence
+of the oscillation are common to the two runs and divide out identically---and reading it locally, between
+consecutive extrema, lets the residual be extrapolated in $(k/\tau')^{2}$ rather than smeared over an
+interval. With the polarisation multipoles suppressed the quadrupole's scattering term reduces to
+$-\tfrac{9}{10}\tau'F_{2}$, which is the unpolarised closure, and the coefficient comes back as $0.8852$
+against $8/9$; with them carried it is $1.0618$ against $16/15$. \emph{The polarisation correction itself,
+which is the quantity in dispute, is a factor $1.1996$ against $6/5$: three parts in ten thousand.} Both
+absolute values sit about half a per cent low by an amount proportional to the coefficient, so the residual is
+a common normalisation and cancels in the ratio.
+
+\emph{So the coefficient is $16/15$, and adopting it makes the control worse}: $\chi^{2}$ per degree of
+freedom on the $\Lambda$CDM arm moves from $22.5$ to $28.6$, the $1123$ units the previous paragraph
+recorded. \emph{We take the derivation and pay the $\chi^{2}$}, because a coefficient chosen because it fits
+is a fitted parameter whatever it is called. \emph{And what the $1123$ measures is now nameable rather than
+mysterious.} Polarisation enters the transfer twice: it raises the damping coefficient, and it contributes to
+the source through $g\Pi/4$ and $(3/4k^{2})\,\dd^{2}(g\Pi)/\dd\eta^{2}$ with
+$\Pi=\Theta_{2}+\Theta^{P}_{0}+\Theta^{P}_{2}$. \emph{This transfer has the first and not the second, and
+the half it has is the half that removes power}---which is the specification of what remains, and it is not a
+question about this construction. \emph{One figure that might have been expected to move does not}: the
+diffusion-length ratio of \S\ref{sec:envelope-consequence} goes from $+10.83\%$ to $+10.87\%$, because the
+coefficient very nearly cancels in a ratio of two rates.
+
+\emph{Carrying the multipoles instead of the envelope is what the previous paragraph specified, and doing it
+takes the control most of the remaining
+distance}\rcpt{P15_the_photon_hierarchy_in_the_transfer}. The photons are now evolved as a Boltzmann
+hierarchy with the polarisation multipoles alongside, the baryons are given their own velocity and their own
+density contrast, and the source carries $g\Pi/4$ and $(3/4k^{2})\,\dd^{2}(g\Pi)/\dd\eta^{2}$. \emph{The
+first four peaks land at $220$, $540$, $812$ and $1124$ against the sky's $220.6$, $538.1$, $809.8$ and
+$1147.8$}---the second peak $0.35\%$ out and the third $0.27\%$, where the fluid transfer placed them at $524$
+and $804$---and $\chi^{2}$ per degree of freedom falls from $28.6$ to $7.1$, or to $4.2$ over the range in
+which the wavenumber integral is not starved by the instrument's own truncation.
+
+\emph{The prediction of the previous paragraph is checked against the number it predicted rather than against
+a story.} Running the same hierarchy with only the two polarisation source terms removed---which is exactly
+the half an envelope can supply---costs $702$ units of $\chi^{2}$, against the $1123$ that adopting the
+derived coefficient cost. \emph{And a second lesson arrived in the same shape as the first}: giving the
+baryons their own density while they still shared the photons' velocity made the control \emph{worse}, because
+the density they then carry is the photons' own and nothing lets them fall into the potential wells after
+decoupling; giving them both halves the residual again. \emph{A physical effect taken in half is not a small
+error but a different and inconsistent model, and this programme has now met that twice in consecutive
+revisions.} What is arbitrary in the construction is measured rather than argued: doubling the hierarchy depth
+moves $\chi^{2}$ by nothing at the printed precision, and doubling the opacity at which the fluid hands over
+moves it by $1.5\%$. \emph{The handover also makes a double count impossible rather than merely absent}, since
+the envelope is frozen where the multipoles begin and the two therefore act on disjoint intervals.
+
+\emph{Under all of it this cosmology's arm has not moved.} $\ell_{1}/\ell_{A}=0.5703$ through six distinct
+states of the instrument---a delta-function transfer, a line-of-sight transfer, a derived damping envelope, a
+scan of that envelope's scale, a derived shear coefficient, and now the full hierarchy---while the control's
+$\chi^{2}$ per degree of freedom fell from about a hundred to seven. \emph{We report that and convert it into
+nothing.} The comparison of \S\ref{sec:refit-bound} still cannot arbitrate, for the same reason it could not
+before: a control seven times worse than a fit cannot certify what it is compared with. \emph{What has changed
+is the size of the gap and the fact that no missing sector remains named}---what stands between this
+instrument and a control that could arbitrate is accuracy in reionisation, neutrino mass, lensing and
+wavenumber range, and not a piece of physics we know we have left out.
+
+\emph{What that buys is a statement about the deficit rather than about the instrument.} Under the same
+rebuild this cosmology's arm does not move at all---$\ell_{1}/\ell_{A}=0.5703$ on both transfers, to four
+figures---while the control's error fell by a factor of ten. \emph{The most suspect component of the
+instrument was replaced wholesale and the deficit did not follow it down}, which now stands at $21.9\%$
+against a position floor of $0.16\%$. \emph{We state it at that strength and no higher}: the first peak's
+position on this rate is not an artefact of how last scattering was modelled, and whether it is a
+disagreement with the sky remains the open question it was. \emph{And we record what is not in question either way},
+since it is not downstream of this spectrum's shape: the metric-singularity structure, the continuation, the
+light-element abundances, the acoustic \emph{scale} met at the directly measured $H_{0}$, and the
+expansion-rate resolution.
+
 
 A second check fell out of the same setup, and it is stated here at its actual strength. Pinning the
 \emph{measured} acoustic angle $100\theta_{*}=1.04109$---equivalently $\ell_{A}=\pi/\theta_{*}=301.76$---on the

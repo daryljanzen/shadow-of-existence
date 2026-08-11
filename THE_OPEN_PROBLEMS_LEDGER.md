@@ -1,7 +1,7 @@
 ---
 name: the-open-problems-ledger
 kind: STATE
-current: c54.163
+current: c54.178
 class: whole-corpus-instrument
 job: The open-problems ledger by FAMILY — what each family is, what closed it or holds it open, and its register pointer. The fork writes here; this line absorbs it.
 sources: [cowork, chat]
@@ -304,6 +304,143 @@ genuine opens, all their mentions (the clue-map), the kill list of struck false-
 
 **⛔ STANDING RULE (Daryl, r1448) — NO WORK-BLOCKERS.** Nothing in this programme's documents may say, or imply, that a piece of work *need not be done*: not "not load-bearing," not "at no cost," not "low-priority," not "optional," not "not on the critical path," not "unlocks nothing." Those phrases are **empty blockers** — they keep real work out of the plan by pre-deciding it away, and they are read as "leave it, unnecessary." **It is all necessary.** A document may record what a thing *is*, what state it is in, and what working it would involve. It may not rank it out of existence. The corpus's own earlier lesson is the rule: *"'not load-bearing' is never grounds to bury a structural lead."*
 
+> **⌗⌗⌗ CURRENCY, r2376+c54.155 — this ledger stops at c54.137 and eighteen revisions have landed. What
+> follows below is accurate as far as it goes; these are the movements it does not carry.**
+>
+> - **Family 11 (the inherited boundary data) moved again, and further than the note below records.** *The
+>   composition is **DERIVED**, not bounded: a small perturbation shares its background's composition, so the
+>   patch's equality is the ambient universe's, giving $\rho\simeq5.4\times10^{-2}$ and closing to three
+>   figures against the observable leg. **Five successive upper bounds on it are withdrawn.*** ⚠ *And the
+>   scalar monodromy the note below quotes as $2\pi/\rho$ is the TENSOR value; the scalar is $4\pi/\rho$
+>   (c54.146), which multiplies the transfer law by four.*
+> - **The tensor sector is closed as a negative**: no primordial $B$-modes at any conceivable sensitivity, and
+>   it is the one place the machinery runs with no idealisation at all.
+> - ⚠⚠ **AND FRONT #1 IS NO LONGER A CALCULATION.** *The full-lap apparatus and its correction are both
+>   withdrawn; what they bracket is **the construction's recursion**, never posed in the corpus and answerable
+>   by a reading of P1, P2, P3 and P7 rather than by more apparatus.*
+> - ⌗⌗ **A NEW OPEN PROBLEM OF A DIFFERENT KIND, and this ledger is where it belongs: THE ASSERTION DEBT.**
+>   *188 of 276 receipts carried no check at all — two thirds of the reproducibility layer, where `OK`
+>   certifies that Python exited zero. Reading the cited subset against the sentences citing it returned
+>   **1 match in 16**, and on P15's empirical spine **six published numbers no longer matched their own
+>   receipts**. The debt is named in `receipts/ASSERTION_DEBT.txt` and ratcheted by `check_receipts`; the work
+>   is bounded and its yield is measured.*
+
+> **⌗⌗ THE COLLAPSE-PERTURBATION ARC IS PROPAGATED (r2376+c54.137), AND IT MOVES THIS LEDGER'S FAMILY (11) —
+> the inherited boundary data — DECISIVELY IN ONE DIRECTION AND PARTLY IN THE OTHER.**
+>
+> - **$n_s$ is NOT wholly inherited.** *The collapse leg is $\beta=2$, the second root of $\beta(\beta-1)=2$ —
+>   the matter-contraction dual of de Sitter inflation, which this corpus had denied having (c54.122). **Its
+>   scale-invariant part is a consequence of the leg's geometry; only the DEPARTURE from unity is inherited.***
+> - **$A_s$ IS wholly inherited, and now for a proved reason rather than a shrug.** *$\hbar$ is multiplicative
+>   in $P(k)$, so it survives in an amplitude and cancels in every logarithmic derivative (c54.136): the
+>   no-magnitude theorem bears on $A_s$ and not on $n_s$, **and the two were never the same kind of quantity —
+>   though this ledger, like every frontier statement in the corpus, has named them as a pair.***
+> - **AND THE HOPED INVERSION IS DEAD (c54.137).** *A quantity fixed by the moduli is one an observation
+>   measures, so $A_s=F(2M/\alpha)$ looked like an instrument. **$F$ is computed: it is a function of TWO
+>   moduli, not one, and carries no fixed normalisation.** The progenitor's own vacuum, amplified by the full
+>   passage, delivers $3\times10^{-103}$ against $2\times10^{-9}$ — so the incoming amplitude is a classical
+>   datum, free at this level, and the relation cannot be solved for the mass.*
+> - **WHAT THE FAMILY GAINS INSTEAD: the progenitor's COMPOSITION is bracketed on both sides** —
+>   $2.6\times10^{-6}\le\rho\le1.1\times10^{-3}$, *the child's spectrum from above and the parent's own
+>   nucleosynthesis from below.* **That is the first two-sided constraint this family has ever carried on any
+>   inherited datum.**
+>
+> ⚠ *And a caution this ledger should carry about itself: family (11)'s r2244 clause was read at c54.119 as
+> saying the tilt cannot be inherited, and P15's body says the opposite in a paragraph that names that reading
+> as naive. **A lead was opened on the stale framing and struck two revisions later as my error.** The ledger's
+> family text is a summary and the paper's body is the source.*
+
+> **⌗⌗ THE LEADS SWEEP IS PROPAGATED (r2376+c54.84), AND WHAT IT LEAVES HERE IS MOSTLY SUBTRACTION.**
+> *The lead register ran 20 open → **2 open** across c54.63–c54.84. Four items in this ledger's families move:*
+>
+> - **The `R3` row's pairing question is answered and the row is MIS-SHAPED rather than mis-ordered.** *Its two
+>   objects (the designation $2{+}1$ and the sign $2{+}1$) both partition the three ROOTS, while one of its two
+>   targets — $uud$ — is a partition by ISOSPIN within a baryon. **The correction is an ADDITION, not a
+>   re-ordering: the row is missing a third object.*** *A better-typed candidate — the horn assignment of a
+>   baryon's three ends — is registered at `PO-1c` and **not claimed**.*
+> - **The designation $2{+}1$ is NOT the physical hierarchy.** *It is a property of the vantage, three per
+>   geometry, permuted by $S_3$; the hierarchy carries no such multiplicity. **An indexical structure cannot be
+>   an absolute one**, and what the split says positively is "the generation this cut is" — P3's own "my
+>   horizon".*
+> - **The taxonomy's last OPEN alignment row closes as a NON-alignment.** *At Nariai the geometry names **two**
+>   distinguished roots and they differ; and on the colour side a distinguished one is structurally impossible,
+>   $\Lambda^3$ of the wall kernel being one-dimensional and generated by $\varepsilon$.* **`PO-2` is narrowed,
+>   not closed: the zero-sum-triple/baryon resemblance is untouched and its "distinguished member" leg is gone.**
+> - **The coverage register's 39 screened-clean probes are read.** *The complaint was never that the screen was
+>   wrong but that it was **uncheckable** — the audit published counts and not the partition. The screen is
+>   re-run with its criterion written as code and **the per-probe classification is now on disk**; no probe
+>   classed clean rests on a quantity built from $f$.*
+>
+> **⌗ AND THE MECHANISM THAT FOUND MOST OF THIS: `check_supersession`, the eighth gate.** *Six leads in nine
+> revisions had turned out to be answered by banked work never claimed against them; the gate matches open leads
+> against receipt summaries and ranks the overlaps.* **A family here is at the same risk and by the same
+> mechanism — this ledger records what is OWED and has no way to notice when something else PAYS it.**
+
+---
+
+> **⌗ THE COLOUR ARC IS PROPAGATED (r2376+c54.61).** *Its content is in **family (12)**, which is
+> **resolved from the other side** — and whose own assignment table was found **inverted**: it read the hinge
+> $S_3$ as the generations and the comoving three-fold as unused, when P14 `sec:whichthree` had reversed that at
+> c54.31. **The family hunted for colour in the one three-fold it believed was free; the free one was the
+> other.** Table corrected in place.*
+
+---
+name: open-problems-ledger
+description: The arsenal's PRODUCT. The seven genuine open problems, every mention of each across the corpus (the clue-map to each resolution), the kill list of struck false-opens, and (written at campaign's end) the attack manual per problem. The ONLY opens the corpus may carry are mentions of these seven or a genuinely new miss.
+sources: [chat]
+---
+
+> **⌫ r1449's ROUTING BANNER — SPENT, corrected r1812 by sweep `A4`. THIRD DOCUMENT CARRYING IT: `THE_PLAN`
+> (fixed r1745), `THE_ARSENAL` (fixed r1812), and this one.**
+> *The bin emptied at r1553; **this file is grain 1 of the six-grain instrument**, indexed and live; `CONSOLIDATE`
+> §3 is marked SPENT/RECORD at r1735. **A new family or kill goes HERE, at grain 1, and propagates down the
+> crosswalk — never to a filter that no longer runs.***
+> *(Original banner, kept as the record:)* **⌖ r1449 —** This file has not been
+> filtered into it yet; it sits in the bin (§2 there) awaiting a full read. Until it is filtered, work
+> from it as before — but **place nothing new here**. New items go to `CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md` §3.
+
+
+> **⌗ r2376+c54.10 — A RESULT LANDED THAT THIS LEDGER'S FAMILIES DO NOT YET REFLECT.** *Four-dimensional
+> spacetime is now **derived inside CR** from the matter sector: the fold the generation count reads is $D-1$;
+> the horizon relation collapses to a single multiple-angle only at $D=4$ and $D=5$; and the mass-parity
+> grading chirality exists only at even $D$ ⇒ **four is the only dimension carrying both a count and a
+> chirality**, and the corpus's three is its $D-1$. **Landed in P3 `rem:dimension`, P14 `sec:scope`, p0, P12,
+> P13, P7 `sec:frontiers`, and `COMBINATORICS_LEDGER` L8.1-a.** ⚠ **The counter below and the family
+> statements have NOT yet been recounted against it** — that is step 4 of
+> [`THE_LIVE_ARC.md`](THE_LIVE_ARC.md) and is **owed, not done**.
+> *Flagged here rather than silently left, because a ledger that looks current and is not is the defect this
+> programme sweeps for.*
+
+# THE OPEN-PROBLEMS LEDGER — the arsenal's product
+
+> **⌗ BROUGHT CURRENT r2376+c54.32** *(gate: `corpus/check_currency.py`, which now fails when a standing
+> register falls more than six revisions behind the fork).* **What has landed since this file was last current:**
+> ***(A1) DISCHARGED*** *(`L-01`) — CR's own operator is the **kernel of the matter functional**, and run at
+> general $D$ its entire solution space is Tangherlini–de Sitter, so the dimension result's input is **derived,
+> not imported**; the **LOCK** survives with it (`L-89`: $A=f$ and $p_r=-\rho$ are the same condition at every
+> $D$).* ***THE L8.1-a WELD IS SPLIT*** *(`L-67`/`L-92`/`L-95`) — the hinge three is the **within-state** index
+> (a bound triple takes one puncture per hinge, forced by the causal trichotomy) and **generation moves to the
+> turnaround three**; the count is untouched because **both threes are $D-1$, descending from $f$'s degree-$(D-1)$
+> numerator** (`L-07`), and the chirality survives verbatim because $R$ reaches the turnaround branch exactly
+> when $D$ is even. Landed in P14 `sec:whichthree`.* ***THE FERMION SECTOR READ IN THE GEOMETRY*** *
+> ([`THE_FERMION_SECTOR_GEOMETRY.md`](THE_FERMION_SECTOR_GEOMETRY.md), a spine step) — the wall **is** the graze
+> point **is** the $r=0$ branch point; charge is a **winding** whose thirds are **derived** from closure; triality
+> $=-\lambda\bmod3$ and chirality $=\operatorname{sign}\lambda$ computed on `prop:wall`'s own solution; and the
+> honest negative that the mode tower **does not terminate**, so the corpus gets the **grading** and not the
+> multiplet count.* ***AND THE OPERATING LAYER:*** *`PROTECTED_OPEN` gained checks 5–7; the arc gained rules 4–5;
+> and the corpus now has **five gates** — receipts, kills, burn-down, compile, currency.*
+> **The live queue is [`WHATS_TEED_UP.md`](WHATS_TEED_UP.md); the accounting is [`THE_BURN_DOWN.md`](THE_BURN_DOWN.md).**
+
+
+> **⛭ One instrument, five grains — described in `THE_PLAN.md` §THE INSTRUMENT.** **GRAIN 2 — coarsest.** The distilled canonical list: what is *genuinely* open, after false opens are killed and real ones consolidated into families. Sorts into `THE_PLAN`'s lanes.
+> *Grain discipline: a finding goes to the grain that fits. Propagate down the chain, not sideways.*
+
+Established **r1244**, Daryl-directed. The consolidated ledger the open-problems campaign produces: the seven
+genuine opens, all their mentions (the clue-map), the kill list of struck false-opens, and — at campaign's end
+— the attack manual per problem.
+
+**⛔ STANDING RULE (Daryl, r1448) — NO WORK-BLOCKERS.** Nothing in this programme's documents may say, or imply, that a piece of work *need not be done*: not "not load-bearing," not "at no cost," not "low-priority," not "optional," not "not on the critical path," not "unlocks nothing." Those phrases are **empty blockers** — they keep real work out of the plan by pre-deciding it away, and they are read as "leave it, unnecessary." **It is all necessary.** A document may record what a thing *is*, what state it is in, and what working it would involve. It may not rank it out of existence. The corpus's own earlier lesson is the rule: *"'not load-bearing' is never grounds to bury a structural lead."*
+
 ## THE LAW (absolute)
 The corpus's ONE open section is **P7 `CR_framework.tex` `sec:frontiers` "Frontiers and open problems"** — it explains
 what is *owed*, not just lists. The ONLY items the corpus may call open, anywhere, are **(a) mentions of the
@@ -457,8 +594,8 @@ resolves) and as the **clue-map** (everywhere an open touches points at where it
 > | 2 | which sheet goes with which ruling | **killed r1280** — they are the two faces of one object |
 > | 3 | derive the inherited datum rather than measuring it | **LIVE** — register `L-150` |
 > | 4 | the irreducible interior reassignments (Kerr-inner, RN) | **closed c54.118** — both owning rows struck; the remainder lives in them |
-> | 5 | the scalar perturbation sector, to a verdict | **LIVE, one item left** — register `L-147`, the likelihood alone |
-> | 6 | the propagating fermion and gauge sector | **LIVE** — register `L-164` |
+> | 5 | the scalar perturbation sector, to a verdict | ⚑ **BROUGHT CURRENT r2376+c54.174, and the family has changed shape rather than shrunk.** ***`L-147` is STRUCK (c54.172) and the likelihood's answer is that it CANNOT ARBITRATE***: the pipeline is wired at $\chi^2/\mathrm{dof}=0.96$, but the instrument's own $\Lambda$CDM control sits at $103$, because Planck's binned errors are tenths of a per cent and this transfer's peak heights carry $13$–$34\%$. *What replaced it is an instrument specification, not a verdict: **the likelihood becomes answerable when a transfer's control reaches sub-per-cent HEIGHTS**.* ⚑ **Positions got there at c54.173** — a line-of-sight integral across a finite-width visibility took the control from $1.66\%$ to $0.16\%$, **and the CR deficit did not move at all** ($0.5703$ on both transfers, $21.9\%$ against a $0.16\%$ floor). ⌗ *And the sector's physics is now derived rather than described: the recursion does not run on modes (c54.162), the pre-onset interval is scale-free (c54.167), and the driving's $k$-dependence is $Q=3\kappa c_s\mathcal{H}/\pi k$ in closed form (c54.171).* **LIVE — carried on `L-171` and protected `PO-7`; what is owed is the height half of the transfer.** |
+> | 6 | the propagating fermion and gauge sector | **LIVE** — protected `PO-4` *(pointer corrected r2376+c54.166: it read `L-164`, which this fork struck at c54.128. The family is live; the pointer was dead, and a node following it landed on a struck row and would have read the family as closed.)* |
 > | 7 | the world-correspondence and empirical grounding | **not a work item** — the family says so itself: *"NOT a corpus gap — the empirical question."* |
 > | 8 | the interacting quantum tower as a defined theory | **LIVE** — register `L-165` |
 > | 9 | the structure of the lap and the physics of the lift | **resolved r2154–r2159** |

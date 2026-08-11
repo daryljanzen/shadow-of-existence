@@ -8,6 +8,112 @@ sources: [cowork, chat]
 
 # Corpus Map — the papers, their causal order, and the shape we are aiming at
 
+> ⌗ **THE FORK'S OWN c54.164–c54.178 BLOCK FOLLOWS, ABSORBED VERBATIM AT r2427.** *It is the working fork's account of the acoustic front in its own voice, kept whole and unedited — because* ***the fork's account of what it did is the thing a file-level diff cannot produce*** *(the c54.153 lesson). This line's own changelog begins below it.*
+
+> ## ⌗⌗ BROUGHT CURRENT r2376+c54.174 — *the acoustic front, c54.168–c54.174*
+>
+> **⚑ THE INSTRUMENT WAS BUILT, AND WITH IT THE TWO THINGS WHOSE ABSENCE MADE EVERY EARLIER FIGURE UNREADABLE.**
+> *`computations/beyond_the_wall/ACOUSTIC_two_arm.py` carries both arms on **one** set of equations plus an
+> undriven guard. **Undriven, the source comb lands on the integers on both arms** ($\Lambda$CDM $1.0147/2.0005$,
+> CR $1.0121/1.9968$), so the sound horizon, the measure, the $k$-grid and the phase extraction are validated as
+> an ensemble and every departure in a driven run is the driving. **And the control lands**: after the
+> line-of-sight rebuild, $\ell_1/\ell_A$ within $0.16\%$ of the sky.*
+>
+> **⚑ THE DEFICIT IS MEASURED, AND IT SURVIVED THE THING MOST LIKELY TO HAVE CAUSED IT.** *$\ell_1/\ell_A=0.5703$
+> against the control's $0.7300$ — $21.9\%$ against a $0.16\%$ floor. **Discreteness ruled out by measurement**
+> (the physical ladder and a dense continuum give identical peaks); **and the whole last-scattering treatment
+> replaced** at c54.173, the control improving tenfold while the CR number did not move to four figures.*
+>
+> **⚑ AND ITS MECHANISM IS DERIVED, NOT DESCRIBED.** *The potential enters the plasma twice. **In flat
+> $\Lambda$CDM the two couplings are each flat in $k$ and OPPOSE — so the standard driving shift's universality
+> is a cancellation.** On a radiation-free rate they both advance and **add**, and the $k$-dependence sits in the
+> gradient channel: $Q=3\kappa c_s\mathcal{H}/\pi k$, predicted to $0.30\%$.* ⌗ ***The abandoned 52/53 fork's
+> timescale $3\mathcal{H}/k^2$ is confirmed here independently and its exponent corrected by exactly one factor
+> of $k$*** — *the factor $Q$'s own definition carries.*
+>
+> **⛔ THE LIKELIHOOD CANNOT ARBITRATE, AND THAT IS THE ANSWER RATHER THAN AN EVASION.** *`L-147` struck at
+> c54.172 with its falsifier fixed before the Planck bins were opened. The pipeline is wired at
+> $\chi^2/\mathrm{dof}=0.96$; **this instrument's own $\Lambda$CDM control sits at $103$**, because Planck's
+> binned errors are tenths of a per cent and the transfer's heights carry $13$–$34\%$.* ⚠ ***My pre-registered
+> rule was defective — a ratio test with no absolute companion — and its correction ran in the construction's
+> favour, which is flagged in `THE_BASE_RATE` entry twenty-nine rather than quietly applied.***
+>
+> **⌗ WHAT IS OWED: the HEIGHT half of the transfer.** *Positions are sub-per-cent; heights are not. Two named
+> causes, neither a CR question — no polarisation term in the source, and a tight-coupling photon closure that
+> fails exactly where the visibility is. **That is front #2, and it is the only thing between the derived
+> mechanism and a verdict.***
+
+
+> ## ⌗⌗⌗ BROUGHT CURRENT r2376+c54.167 AFTER 135 REVISIONS — *discharging front #19*
+>
+> ⚠ ***This register last moved at c54.32. The fork ran to c54.166 behind it, and the gate whose whole job is
+> to catch that could not see it***: `check_currency` read its own reference point from `FORK_c54.md`, a
+> narrative document frozen at c54.35, so from c54.36 onward it compared every register against a fixed point
+> in the past and reported all of them current. *The tell — a register at **lag −130** — was printed in its own
+> output every run.* **Found at c54.166 while fixing an unrelated cosmetic item; `THE_BASE_RATE` entry
+> twenty-seven; gate now reads the git log, which cannot freeze.**
+>
+> ### ⚑ THE COLLAPSE-PERTURBATION ARC (c54.114–c54.153) — *capstoned in `THE_ASSUMPTIONS_RETREATED_UPWARD.md`*
+>
+> **What stands.** *No primordial $B$-modes at any conceivable sensitivity ($\mathcal{P}_T\simeq5\times10^{-111}$
+> against a ceiling of $7\times10^{-11}$), and the tensor sector is the one place the transfer runs with **no**
+> idealisation, $z_T=aM_{\rm Pl}/2$ being exact for any content. The leading-order interior is **adequate**, with
+> six orders to spare, and **the Bianchi shear is not a free datum but the long-wavelength growing tensor mode**,
+> so bounding the tensors bounded it. The true hydrodynamical scalar variable is $z_S=a(a+4B/3A)/a'$ and **the
+> scalar monodromy is $4\pi/\rho$, twice the tensor's** — the doubling verified to be the entire effect.
+> Recollapse **is** the Nariai threshold. And the composition is **derived** rather than bounded:
+> $\rho\simeq5.4\times10^{-2}$, $a_{\rm eq}=A\rho^2/4=1.492$ Mpc against the observable leg's $1.490$, with the
+> progenitor turning around at $z\simeq1.5$ and a mass $4.3\times10^{52}$ kg.*
+>
+> **What was withdrawn, and the pattern it makes.** *The full-lap Floquet apparatus (c54.143–148) and its own
+> correction (c54.149) are both withdrawn.* ***The thing being assumed kept moving upward*** *— observable, then
+> input, then background, then the recursion itself — which is what a sector looks like when the tools are sound
+> and the frame is not yet.*
+>
+> ### ⚑ FRONT #1 SETTLED (c54.162) — *the construction's recursion does not run on modes*
+>
+> *The programme's leading item for twelve revisions, settled by reading four papers plus one line of
+> asymptotics.* **(i)** *There is no map between the patch's closed-$S^3$ harmonics and the ambient universe's,
+> because **no spacelike datum crosses**: P7's correspondence is null boundary to null boundary "with no
+> spacelike slice entering the map", and the collapse interior is Kantowski–Sachs on $\mathbb{R}\times S^2$.*
+> **(ii)** *Moot, computably: $|aH|\to1/x$ at the crunch while $c_s$ saturates, so **every** mode
+> $\ell\simeq28$–$2475$ freezes strictly before it.* **(iii)** *No — frozen content has an amplitude and no
+> phase.* ***One lap, not a tower: a genealogy of universes, not a recursion on modes.*** ⚠ *It removed P7's
+> "a cold species and no other" selection rule — **a loss of a claimed prediction, recorded as one** in P7, P15,
+> the receipt that drew it and its INDEX row.*
+>
+> ### ⚑ THE REPRODUCIBILITY LAYER REBUILT (c54.151–c54.161)
+>
+> *A receipt-vs-sentence audit measured the base rate — is the cited computation a computation of the claim? —
+> at 14/28, **1/16**, 9/24, 5/9 and 13/20 by sector, and found **number-drift tracks revision and nothing else**.*
+> **The assertion debt went 188 → 0**, *policed by `scripts/lint_assertions.py`, which classifies every assertion
+> HOLLOW / UNPINNED / PINNED and was built **before** the sweep it governs.* **And the eleventh gate,
+> `scripts/run_all_receipts.py`, runs every registered receipt from its own directory — which nothing had ever
+> done**, *and caught a registered, cited receipt exiting 1 on ImportError before reaching a line of computation.*
+>
+> ### ⚑ FRONT #5 SETTLED AS POSED (c54.164), AND IT WAS POSED WRONG
+>
+> *`ROBUST_p1p2_scan`'s first-peak position and height ratio are **not stable under its own documented initial
+> conditions**: substituting only its initial-data block moves $\ell_1$ over $\{150,165,315\}$ and $P_1/P_2$ over
+> $\{0.93,1.21,1.45,2.02\}$. **Its docstring says "velocities zero"; the code does not impose it, and imposing it
+> returns $P_1/P_2=2.02$ against the sky's $2.21$ — where the paper reported $1.45$ as its disagreement.***
+> **The 150 is withdrawn; 220 still reads as what the transfer argument gives.** *What replaced the front: the
+> propagated comb sits at $0.72$–$0.79$ of $\pi/\rs$ under every initial condition — since **diagnosed as the
+> driving** by the acoustic fold's undriven guard (`FOLD52_ASSESSMENT.md`).*
+>
+> ### ⌗ THE OPERATING LAYER
+>
+> *`PO-7` reworded and `PO-8` restated (c54.165–166, Daryl-directed; **neither closed**). `A·1` — which P8 calls
+> the deepest question the construction raises — **folded as `L-174` after being live and unregistered since
+> r565**. Node 56's routing list discharged. **The corpus now has ten standing gates plus three instruments
+> outside them** — `run_all_receipts`, `regen_teed_up`, `audit_index`. `WHATS_TEED_UP` is **generated** rather
+> than hand-kept, and the register stands at **5 open leads against 162 struck** where the stale queue advertised
+> 44 open.*
+>
+> **For the live fronts read [`THE_WORK.md`](THE_WORK.md); for what this fork has learned about its own failures,
+> [`THE_BASE_RATE.md`](THE_BASE_RATE.md), twenty-seven entries.**
+
+
 > **⌗ LANE-8 CARD — added r2376+c54.32 (`L-41`, owed for a finished result).** ***THE DIMENSION RESULT.*** *Four dimensions is the only one carrying **both** a generation count and a chirality. **Two independent selectors**: the harmonic collapse (the horizon relation returns a single multiple-angle only at $D=4,5$) and **exhaustion** (a bound triple is a singlet only where it uses up all the stations — $D=4$ alone). The mass parity removes $D=5$. **Its input is DERIVED, not imported**: CR's own operator's kernel is Tangherlini–de Sitter at every $D$ (`L-01`), and the lock survives with it (`L-89`). **The fold is seat-independent** — both of the corpus's threes are $D-1$ because both descend from $f$'s degree-$(D-1)$ numerator (`L-07`, `L-93`), so the L8.1-a weld's split leaves it untouched. **Papers**: P3 `rem:dimension`, P14 `sec:scope` and `sec:whichthree`, p0. **Receipts**: `P03_dimension_collapse`, `P03_operator_at_general_D`, `P03_the_weld_and_the_two_folds`, `P03_R_reaches_the_turnaround`, `P03_batch1_cheap_owed`, `P03_batch2_runnable`.*
 
 
@@ -39,6 +145,67 @@ sources: [cowork, chat]
 > **The live queue is [`WHATS_TEED_UP.md`](WHATS_TEED_UP.md); the accounting is [`THE_BURN_DOWN.md`](THE_BURN_DOWN.md).**
 
 
+
+### Revision r2427 — 2026-08-11 (main line). **c54.178 ABSORBED — five routed items applied by the fork, the ID collision fired, and the duplicate sweep was found to have deleted two live documents three absorptions ago.**
+
+**⌗⌗ THE SPAN: c54.163 → c54.178, 15 revisions, 26 changed, 40 added, ZERO dropped.** *The acoustic front: a
+**Boltzmann photon hierarchy to $\ell=24$ with polarisation inside the transfer**; the shear coefficient
+**derived rather than remembered** — and $\chi^2$ preferring the other value by **1123 units**, recorded and
+refused; and the height target found **below the resolution of its own statistic** (the sky's own ratios are
+$2.256\pm0.077$ and $2.280\pm0.074$, so the earlier $2$–$3\%$ claims sat inside the error while the $13\%$ and
+$34\%$ were four and ten sigma and stand).*
+
+**⛭⛭ FIVE OF THE SEVENTEEN ROUTED ITEMS WERE APPLIED BY THE FORK:** *`PO-8`'s closed gate · family 6's pointer at
+struck `L-164` · "seven families are open" in **both** `README` and `INTRODUCTION` · **all four published-paper
+typos** · `A·1` folded.* ⇒ ***THIS LINE'S FOUR TEXT REPAIRS ARE RETIRED — the fork made them.*** *Protocol step 4
+paying off exactly as designed:* **check the fix, not just the diagnosis.**
+
+**⛔ THE ID COLLISION FIRED.** *At c54.166 the fork opened its own **`L-174`**, folding `A·1`; this line's `L-174`
+was `PO-5`. `THE_HUB` had called it **"a near-miss twice by luck."*** ⇒ **This line yielded: the row moved to
+`L-221`, every live citation was repointed, the bands were corrected and the gate rewritten.**
+⌗ ***And the discipline's first part is what failed:*** *reserved ranges only work if both lines read the
+reservation, and **the fork does not read `THE_HUB`** — at c54.166 it took the next integer after its own maximum,
+which is what any line does absent a shared convention.* **What held was part ③, the gate.** ⇒ ***The corrected
+rule: allocate FAR from the other line's frontier, not merely above it*** *— this line now allocates from `L-221`
+while the fork sits at `L-174`.*
+⌗ *And the fork's `L-174` **splits `A·1` into an ungated classical half and a `PO-6`-gated non-perturbative half**
+— **exactly the split this line made at `L-207` at r2383.** Two lines, same map item, same split, different IDs.*
+
+**⛔⛔ AND THE ABSORPTION FOUND A DEFECT THREE ABSORPTIONS OLD, IN THIS LINE'S OWN PROTOCOL.**
+*Step 6's duplicate sweep removed a top-level file whenever a copy existed in `retired/`, "after verifying against
+the pristine incoming tree".* ***The verification asked the wrong question: it asked whether the fork had CHANGED
+them, when the question is whether the fork still HAS them.*** **Unchanged is not absent.** *All twenty-nine
+so-called duplicates were in the fork's tree the whole time — **the fork does not retire by moving; it keeps both
+copies**.*
+⇒ ***IT DELETED `README.md` AND `INDEX.md` FROM THIS LINE'S TREE*** *at r2385 or r2393 — **a 23 KB live README
+because a 1.3 KB stub shared its name, and a 49 KB INDEX because of a 32 KB one.* **Neither ever existed in git.**
+⚠ **And the reason nobody noticed for three absorptions is the sharp part:** *routing item 3 checked `README.md`
+for "seven families are open" —* ***and read the FORK's copy, because this line's did not exist.*** **Every check
+of those files silently went to the other tree.**
+⌗ ⚠⚠ ***AND THE GUARD FIRED AND WAS IGNORED.*** *This absorption's sweep printed **"changed by the fork since
+c54.163: ['README.md', 'INDEX.md']"** and the removal ran anyway, because the loop never consulted the check it
+had just performed.* ⇒ **A guard that prints and does not gate is a comment.** *Both files restored from the
+pristine incoming tree; step 6 rewritten in `ABSORPTION.md`.*
+
+**⌗ AND A THIRD ANNOTATION-LOSS CLASS, caught by `check_arcs` rather than by any diff.** *`CONSOLIDATE_THE_PLAN`
+is fork-owned, and this line's **four `DECLARED-UNDATED` flags on PHASE 3/5/6/7** — written at r2378 when
+`check_arcs` first found those sections carrying no revision marker — were dropped by taking the fork's body.*
+⇒ ***The pattern is now unambiguous: EVERY annotation this line writes into a fork-owned file must be registered
+in `reapply_annotations`, whatever the file type*** *— `.md` tables (r2385), `.tex` comments (r2393), and now
+`.md` prose blocks (r2427). **Registered by marker text so a body rewrite cannot hide it.***
+
+**⌗ `FOLD52_ASSESSMENT.md` ARRIVED — the 52/53 acoustic fold, and it carries the strongest corroboration this
+front has:** ***"two nodes, two instruments, two fork lines, same result, neither knowing of the other"*** *on the
+comb's invariance under initial data — the propagated source comb at $0.72$–$0.79$ of $\pi/r_s$ under every
+initial condition while $\ell_1$ moves 165 multipoles.* ⚠ *And its own honesty, which governs the rest: **the
+fold's own reproduction gate does not reproduce in the fork's environment** — $\ell_1=229.6$ against the required
+$221.1$, diagnosed as a stale-path import, so **the $221.1$ came from a state of the instrument that is not in the
+bundle**.*
+⌗ *The fork's whole c54.164–178 changelog block is **absorbed verbatim** into this file, kept unedited, because*
+***the fork's account of what it did is the thing a file-level diff cannot produce*** *(the c54.153 lesson).*
+
+**Register: 214 rows. Gates: twenty-one, twenty rc=0.** *Working tree is now the git clone; the revision is the
+commit.*
 
 ### Revision r2425 — 2026-08-11 (main line). **THE OVERSTATEMENT AUDIT: ITS BINARY HALF KEPT, ITS PHRASE TEST STRIPPED ON 7/7 EVIDENCE — AND IT FOUND A REAL ITEM SIDEWAYS.**
 

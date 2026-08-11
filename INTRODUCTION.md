@@ -340,19 +340,12 @@ history; the cosmogenesis synthesis with the light-element abundances reproduced
 programme has crossed **from coherence to empirically favoured**: the Hubble tension is resolved across the
 low-redshift distance ladder, and not by the acoustic angle alone.
 
-**What is open — four families, and they are named rather than implied.** The inherited datum ·
+**What is open — five families, and they are named rather than implied.** The inherited datum ·
 the scalar-perturbation sector to a verdict · **the propagating fermion sector**, which is the largest
-undertaking and the gate the others wait on · and the interacting quantum tower, which is not CR-specific.
-The **world-correspondence** is named beside them and is not a corpus gap — the ledger's family 7 says so
-itself: *"NOT a corpus gap — the empirical question."*
-
-> **⚠ THIS COUNT WAS SEVEN AND IS FOUR (corrected r2377, on the observer line).** *Two families closed on the
-> working fork — **the matter branch-point crossing dynamics** (c54.113: there is no worldline crossing to
-> compute) and **the irreducible interior reassignments** (c54.118: the gate it waited on was the first, and
-> what remains is ordinary interior analysis rather than a frontier of this construction). Both are recorded
-> below P7's frontier list rather than deleted. **The correction reached the papers and
-> `THE_OPEN_PROBLEMS_LEDGER` and not this file, nor the README** — the summary layer again, which is where a
-> reader goes first and a working node edits last.*
+undertaking and the gate the others wait on · the world-correspondence · and the interacting quantum tower,
+which is not CR-specific. **Two families have left this list since it was written, and a list that shrinks and
+says why is worth more than one that was always right**: the *matter branch-point crossing dynamics* closed at
+r2376+c54.113 and the *irreducible interior reassignments* at c54.118.
 
 **What would decide it.** Two things are held out to the world rather than argued: **no event horizon completes
 at finite exterior time** — structural, resting on causal structure alone, and where the programme's whole

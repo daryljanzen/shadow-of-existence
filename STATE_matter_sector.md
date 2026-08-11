@@ -236,7 +236,7 @@ is undelivered is a MAGNITUDE, and the theory's shape says it would not be.**
 |---|---|
 | **`PO-4`** *(= register `L-164`, struck)* | **colour and isospin as structures on the cut** — *still OPEN in `PROTECTED_OPEN`; a node may not close it. Two named routes shut as a **bounded negative**; the register row is struck and the protected item is not, and that disagreement is recorded rather than resolved* |
 | **ledger family 6** | *the propagating fermion and gauge sector — its pointer to `L-164` was **stale** and now reads `PO-4`* |
-| **`PO-5`** *(= `L-174`)* | *the quark/lepton split and what a baryon IS at particle level — **`lepton` ×1 in the whole corpus and that one inside a bibliography title; `quark` ×0**, against `fermion` ×153* |
+| **`PO-5`** *(= `L-221`)* | *the quark/lepton split and what a baryon IS at particle level — **`lepton` ×1 in the whole corpus and that one inside a bibliography title; `quark` ×0**, against `fermion` ×153* |
 | **`PO-9`** *(= `L-175`)* | *the dimensional rise — **the CUT's dimension is settled at four; the SUBSTRATE's is bounded BELOW and never above*** |
 | **`PO-3`** | *the a2-meaning drill-site — whether the geometric $A_2$ and $\su(3)$'s coincide structurally. **"Not a realised colour isometry" is not "a meaningless coincidence"*** |
 

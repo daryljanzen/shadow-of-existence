@@ -37,6 +37,16 @@ print(f"  Lambda in Planck units (Lam*lP^2)      = {Lam_planck:.2e}   (the cc-pr
 print(f"  substrate dS vacuum power ~(H_Lam/M_P)^2= {Delta2_sub:.2e}")
 print(f"  observed A_s                           = {As:.2e}")
 print(f"  ratio substrate/observed               = {Delta2_sub/As:.2e}  (~{np.log10(As/Delta2_sub):.0f} orders BELOW)")
+# ** ANCHOR 5's PRINTED VERDICT HAD NOTHING BEHIND IT (routed by node 56, r2376+c54.166). **  The
+# sub-horizon anchor gained a real check at c54.154; THIS one still printed PASS on a computation it
+# never compared.  ** A printed verdict with nothing compared is a claim, not a check. **  The claim
+# the paper cites this for is that the substrate's own vacuum is ~110-120 orders BELOW the observed
+# A_s -- so the amplitude is inherited classical content and no inflationary consistency relation
+# applies.  That gap is what is asserted, with the O(10) prefactor convention left loose deliberately.
+_gap = np.log10(As / Delta2_sub)
+assert 105.0 < _gap < 125.0, f"the substrate/observed gap is {_gap:.1f} orders, not the 110-120 claimed"
+assert Delta2_sub < As, "the substrate vacuum must be BELOW the observed amplitude for the claim to hold"
+print(f"  ** CHECK (c54.166): the gap is {_gap:.1f} orders; the paper's claim is 110-120. **")
 print("  RESULT: PASS [E] — substrate vacuum is ~110-120 orders below A_s, robust to the O(10) prefactor")
 print("          (6e-123 vs 3e-122 etc = 2pi / reduced-vs-full M_P convention). Conclusion: the amplitude")
 print("          is INHERITED CLASSICAL content, not the substrate vacuum -> no inflationary consistency relation.")

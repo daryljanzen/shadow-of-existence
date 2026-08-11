@@ -53,6 +53,19 @@ adding rows land at the same place — a conflict every time, or worse, a **sile
 ⚠ *And the ID space has been a **near-miss twice by luck**: this line's rows begin at `L-174` only because the
 fork's maximum was `L-173`, and the fork has still not opened a row above it.*
 
+### ⚠⚠ WHAT r2426 TAUGHT: A BAND THE OTHER LINE HAS NOT AGREED TO IS NOT A GUARD
+
+*The three-part discipline below was written at r2407 and **its first part failed on first contact with reality**.*
+***Reserved ranges only work if both lines read the reservation, and the working fork does not read this
+document.*** *At c54.166 it opened its own `L-174` — the next integer after its own maximum, which is exactly what
+any line does absent a shared convention.*
+⇒ **What actually held was part ③, the GATE**: *`check_id_bands` exists precisely because ① and ② can fail
+silently, and this collision would otherwise have entered a union merge as two rows with one ID.*
+⌗ ***THE CORRECTED RULE: allocate FAR from the other line's frontier, not merely above it.*** *This line now
+allocates from `L-221` while the fork sits at `L-174` — a gap that survives the fork advancing normally for
+decades of revisions.* **And the resolution rule is stated so it needs no negotiation:** ***the fork owns the low
+band by history; on collision, this line yields and repoints.***
+
 ### ⌗ THE DISCIPLINE, in three parts, and none of them is inferred
 
 **① RESERVED ID RANGES, declared per line.** *A node allocates only inside its own band, so two nodes cannot
@@ -61,8 +74,9 @@ choose the same number even offline:*
 | band | line | note |
 |---|---|---|
 | `L-001` – `L-173` | **the working fork (54)** | *historical; the fork's own numbering* |
-| `L-174` – `L-499` | **the main line (56)** | *this line's rows since r2378* |
-| `L-500` – `L-799` | **reserved — the fork's new rows** | *so the fork may open rows without collision* |
+| `L-174` – `L-220` | ⛔ **CONTESTED — DO NOT ALLOCATE HERE** | ⚠ *the fork opened its own `L-174` at c54.166; this line's `L-174` moved to `L-221` at r2426.* ***The overlap is historical and must not be extended: the fork reached into this band once and may again.*** |
+| `L-221` – `L-499` | **the main line (56)** | *this line's rows from r2426; **allocate here*** |
+| `L-500` – `L-799` | **reserved — the fork's new rows** | ⚠ *offered, **not adopted**: the fork does not read this document, so **a band it has not agreed to is a hope, not a guard**. The fork's actual behaviour is to continue from its own maximum, which is why `L-174`–`L-220` is contested and why this line allocates high.* |
 | `L-800` +  | **reserved — future lines** | |
 
 **② `merge=union` ON THE REGISTER.** *Declared in `.gitattributes`. Union merge **keeps both sides' added

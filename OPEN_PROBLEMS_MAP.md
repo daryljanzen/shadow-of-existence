@@ -1,7 +1,7 @@
 ---
 name: open-problems-map
 kind: STATE
-current: c54.163
+current: c54.178
 job: The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open
 ---
 > **⌗⌗ AUDITED AGAINST THE REGISTER r2378 (observer line, `ARC 14` step ②) — and the map came out CLEAN.**
@@ -324,6 +324,173 @@ job: The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of
 >
 > *(Nothing was discarded — the removed text is in the r1482 bundle, and the two live rules are placed.)*
 
+> **⌗⌗⌗ CURRENCY, r2376+c54.155 — this map stops at c54.137. The item movements below are accurate; these
+> are the eighteen revisions of movement it does not carry.**
+>
+> - **`F·1` — the composition half is CLOSED and the transfer half is REOPENED.** *Closed: the composition is
+>   derived from spherical collapse, $\rho\simeq5.4\times10^{-2}$, and five successive bounds on it are
+>   withdrawn. Reopened: the transfer law below is quoted with the TENSOR monodromy; the scalar value is
+>   $4\pi/\rho$, so $\mathcal{P}=18k^3D_k^2/(M^2\rho^6)$ (c54.146, receipted c54.153).*
+> - **The adequacy question this map records as untested is SETTLED**: perturbations stay linear by six orders,
+>   and the Bianchi shear is not a free datum but the long-wavelength growing tensor mode, so bounding the
+>   tensors bounded it.
+> - ✔✔✔ **THE ITEM THIS MAP DID NOT HAVE — the construction's recursion — IS SETTLED c54.162.** *In whose
+>   harmonic basis does an observed mode's history run, through how many passages, with which monodromy at
+>   each? **The first clause has no object**: no spacelike datum crosses, and no patch $S^3$ harmonic basis is
+>   built anywhere. **The second is moot**: every mode in $\ell\simeq28$–$2475$ freezes strictly before the
+>   branch point. **The third is no**: frozen content has no phase. ***One lap, not a tower — a genealogy of
+>   universes and not a recursion on modes.*** ⚠ It removes P7's "a cold species and no other" selection rule,
+>   which is a loss and is recorded as one. **What the map DOES now owe is front #5, de-merged out of #1 in
+>   the same pass: the two internal routes to the first acoustic peak, 220 against 150, on the single leg.***
+> - ⌗⌗ **AND ONE ITEM OF A DIFFERENT WORK-KIND ENTIRELY — instrument rather than physics: THE ASSERTION DEBT.**
+>   *188 of 276 receipts carried no check; the cited subset audited 1-in-16; P15's empirical spine had six
+>   stale published numbers. Named in `receipts/ASSERTION_DEBT.txt`, ratcheted by `check_receipts`. This map
+>   clusters by work-kind, and this is a kind it did not have.*
+
+> **⌗⌗ THE COLLAPSE-PERTURBATION ARC IS PROPAGATED (r2376+c54.137).** *The lead register ran c54.118–c54.137
+> and closed **nine fronts**; this document's items move as follows.*
+>
+> - **`F·1` (the collapse-to-observer handover) — SUBSTANTIALLY NARROWED, and it is now four questions rather
+>   than one.** *Settled: the leg is scale-invariant ($\beta=2$); the vacuum-leg continuation is diagonal and
+>   the evenness that forbids mixing **is** the time symmetry; radiation is the odd part exactly and makes the
+>   mixing generic with off-diagonal $2\pi/\rho$; the interior-to-observed mode map is built and validated on
+>   P15's own low-$\ell$ deficit; and the transfer law $\mathcal{P}=(9/2)k^3D_k^2/(M^2\rho^6)$ is derived.*
+>   **What remains under this item is the COMPOSITION question — can the collapse produce $\rho_r/\rho_m$,
+>   $\eta$, $z_{\rm onset}$ rather than read them off the sky — and the untested adequacy of the leading-order
+>   interior, anisotropy above all.**
+> - **The progenitor's mass — CLOSED AS A NEGATIVE, and the proof the standing item asked for now has a fourth
+>   leg.** *No asymptotic mass exists to be inherited; $M$ is forced to Nariai by the slicing; the invariants
+>   are blind to it; **and no observable determines it either — the amplitude was the only candidate and the
+>   inversion fails.** What survives is a CAP, $2M\le2\alpha/3\sqrt3$, reached independently at c54.135 from
+>   whether a closed dust ball with $\Lambda$ turns around at all.*
+> - **The progenitor's composition — NEWLY BOUNDED, both sides.** *$2.6\times10^{-6}\le\rho\le1.1\times10^{-3}$.*
+> - ⚠ **AND THE MAP'S OWN DEFECT, found by this arc and worth keeping visible: four live open problems and
+>   cluster J's tenth germ had NO REGISTER ROW AT ALL.** *They were found by asking a **paper's** frontier list
+>   to name a lead per item. **This document and the register are independent indices of the same thing and had
+>   never been compared.***
+
+> **⌗⌗ THE LEADS SWEEP IS PROPAGATED (r2376+c54.84).** *The lead register ran **20 open → 2 open** across
+> c54.63–c54.84, and this document's protected items move as follows — **every movement is a NARROWING and
+> nothing here is closed:***
+>
+> - **`PO-1a` (the designation $2{+}1$) — NARROWED.** *Candidate side unchanged (generations / flavour-breaking).
+>   **One reading of that side is removed: it is not the physical hierarchy**, because this row's own naming
+>   makes it a property of the vantage, three per geometry, while the hierarchy carries no such multiplicity.*
+> - **`PO-1b` (the sign $2{+}1$) — untouched.**
+> - **`PO-1c` (does $uud$ have any geometric counterpart) — LEFT MORE OPEN.** *Its named candidate, the causal
+>   $2{+}1$, was identified at c54.81 as a partition of **colour**, and $uud$ is a flavour partition — so that
+>   candidate is **mis-typed**. A better-typed one is registered in its place and not claimed: a baryon's three
+>   constituents each sit at a hinge END, whose remaining bit is the HORN, read as isospin.*
+> - **`PO-1d` (the causal $2{+}1$) — CONFIRMED AS A THIRD STRUCTURE, and by this row's own protection.** *It is
+>   not the designation split wearing a causal face: this row proves the symmetry acts transitively on the six
+>   ends with one orbit per causal class, so the causal assignment is RELATIVE, while $r_0$ is the cut's own
+>   parameter and no element of the symmetry moves it.* **A split the symmetry randomises is not a split the
+>   symmetry determines.** *No absolute assignment is asserted; the finding USES the relativity rather than
+>   working around it.*
+> - **`PO-2` (the Nariai / three-quark lead) — NARROWED, one leg removed.** *At Nariai the geometry names **two**
+>   distinguished roots and they differ, and on the colour side a distinguished one is structurally impossible.*
+>   **The zero-sum triple and its resemblance to baryon combinatorics are untouched.**
+> - **`PO-4` (colour and isospin) — the colour half is where the arc left it; the ISOSPIN half now has a stated
+>   live question**: does $T$ act on one $R$-eigenspace of the wall mode and trivially on the other? *Freely on
+>   all four is a species LABEL; fixing the other pair is $SU(2)_L$'s ORBIT structure.* **No $\mathbb{Z}_2$
+>   grading can reproduce $SU(2)_L$'s $2{+}1{+}1$ decomposition, so the question is about orbits and not gradings.**
+>
+> **⌗ AND THE MAP'S OWN NEXT STEP, stated because the lead slate is now clear:** *the register runs to two, both
+> open by design. **The work-kind clusters in this document have not had the treatment the lead register just
+> had**, and the instrument that did most of the finding — `check_supersession` — reads `THE_LIVE_ARC` only.*
+
+---
+
+> **[†ONT-COSMO] Cosmological grounding — read before computing.** Whenever this doc's work touches the expansion rate, the early universe, or the seam, the forced model to plug in — **not** an FLRW default — is held whole in `ONTOLOGY_FOUNDATION_INDEX.md` §1b: the *observable* rate is radiation-free sinh^{2/3} (Nariai proper frame, fixed by Λ, **read leftward** — radiation/matter inherited content, never a rate source); the *progenitor/local* dynamics is ordinary GR at the standard Friedmann rate (where BBN runs, below the ~1.6 eV onset); the two regimes are distinct and meet at the reassignment seam; the beginning is the branch point at $r=0$ (well-posed because $r_*$ CONVERGES, **not** because curvature is finite -- it diverges there; r2234) $r=0$, not r=0. Conflating the two regimes is the veer that thrashes.
+
+> **⌗⌗⌗ THIS DOCUMENT IS NOW A VIEW OF THE LEAD REGISTER, NOT A SECOND SOURCE OF TRUTH (r2376+c54.90, Daryl-directed).**
+> ⚠ ***CLAIM SOFTENED r2376+c54.166 TO WHAT CAN BE CHECKED, because the strong form is what made a gap invisible.***
+> *It read "every live item below has been folded". **`A·5`, `B·1`, `B·2` and `G·1` were caught unfolded at c54.115–116, and `A·1` was found unfolded at c54.166** — the fifth. A reader who trusts a header does not check the items, so the header was doing the opposite of its job.*
+> **Most live items below have been folded into `THE_LIVE_ARC`'s lead register and carry a lead ID inline as**
+> `[L-nnn]`.* **One ID space, one burndown, one supersession scan — and the map keeps what only it has: the
+> work-CLUSTERS, the readiness/priority sort and the runway.**
+>
+> **⌗ WHY THE FOLD HAPPENED NOW, and not earlier: the map needed infrastructure that did not exist.** *The register
+> gained `check_burndown` (HOT budget, languishing debt, ID-space integrity), `check_grains` (staleness of the
+> strategic documents), `check_supersession` (open items answered by banked work) and `check_withdrawn` (claims
+> the corpus retracted and kept asserting).* **Those four are what make a register of this size workable rather
+> than a list that rots**, and the map had none of them.
+>
+> **⌗ WHAT THE FOLD DOES TO SCOPE.** *The register was the c54 fork's own arc — what one node surfaced and owed.
+> It is now **what the corpus owes**: 27 map items joined it, and the same gates run over all of them.*
+> ⚠ **Cluster J is registered at GERM weight and stays off-runway by construction** — a J lead is a *candidate*,
+> not owed work at the altitude of A–H, and the register rows say so.
+>
+> ⌗ *Closed items are NOT folded and are left exactly in place as the record.  A new item goes into the register
+> first and appears here as a view of it — never the other way round.*
+>
+> ⚠⚠ **AND THE SENTENCE ABOVE WAS FALSE FOR THREE ITEMS UNTIL `c54.116`.** *`B·1`, `B·2` and `G·1` were live and
+> were never folded — so for twenty-six revisions no gate could see them.* **Registered now as `L-165` (cluster B,
+> both faces) and `L-166` (`G·1`); `C·1` and `C·2` were closed before the fold and are correctly left in place.**
+> ⌗ *Found the way `A·5` was found one revision earlier — `P07_frontier_currency` mapped every P7 frontier item to a
+> lead and item 4 mapped to nothing — and the claim is now **checked** rather than asserted, by
+> `computations/frontier_audit/L165_the_quantum_completion_was_never_folded.py`.*
+
+# The Open-Problems Map — every sitting open problem, clustered by work-kind and sorted by readiness
+> **⚑ CODE NAMESPACE (r1579).** This document's item codes are **cluster-local** and are now written
+> **`A·1`, `D·1`, `E·3`** and so on — *cluster letter · item number*. **They are NOT the same namespace as
+> `THE_PLAN`'s lane codes** (`A2.3`, `A4.7`, `D.2b`), and three used to collide outright: **the plan's `D1`
+> is *The Big Bang computation*, struck; this document's `D·1` is *P2's other-singularities question*, live.**
+> Likewise `A3` and `A4`. **Propagate by `THE_PLAN`'s CROSSWALK, never by matching a code across documents.**
+
+
+> **⚠ WORK-BLOCKERS REMOVED r1560.** The r1448 sweep stripped 21 work-blocker phrases from `THE_PLAN`,
+> `THE_WEAVE` and the ledger — **and never reached this document, which carried 15 more.** *"Low urgency",
+> "not load-bearing", "optional", "unlocks nothing", "the whole stands without it", "at no cost"* have been
+> rewritten to say what is true — that an item does not **gate** another, or that the corpus is coherent
+> without it — **without telling a reader it need not be done. Daryl's standing rule: it is all necessary.**
+> *One of them was on **B.2/C·7**, the item wrongly killed for exactly that phrase at r1281 and reversed the
+> same turn — the burying reflex had left a copy here too.*
+
+
+
+> **⛭ One instrument, five grains — described in `THE_PLAN.md` §THE INSTRUMENT.** **GRAIN 1 — finest.** Every open problem the corpus advertises in its own words, each with its source, clustered by work-kind and sorted by readiness. Distils into `THE_OPEN_PROBLEMS_LEDGER`'s families.
+> *Grain discipline: a finding goes to the grain that fits. Propagate down the chain, not sideways.*
+
+
+> **⌗ r2376+c54.10 — CLUSTER A's HINGE MOVED.** *The matter sector now **derives the dimension of the cut**:
+> the fold is $D-1$, the single-multiple-angle collapse exists only at $D=4,5$, and the chirality-grading
+> mass-parity only at even $D$ ⇒ **four is the only dimension carrying both**. **This is not an A-item
+> closure** — it closes nothing on the map — but it changes what several rows are about: **A·5's "one geometric
+> opening"** now sits at a **known** cut dimension; **the H/J numerology guard** (`GEOMETRY_PHYSICS_TAXONOMY`)
+> gains a discriminator with teeth, since the three-ness is now shown to fail outright at $D\ge6$ rather than
+> merely to be unexplained there; and **the r753 lead** *(the three-root multiplicity requires $\Lambda>0$)*
+> is the same statement read at the other variable — that lead asked whether the multiplicity's
+> $\Lambda$-dependence bears on the descent, and the dimension result is its companion. **Rows not yet
+> rewritten**; that is step 4 of [`THE_LIVE_ARC.md`](THE_LIVE_ARC.md).*
+
+### Built with the gate at r544 (2026-06-30) from a source read of the open-problem sections of all fourteen papers. A working todo map, not yet a banked revision — we iterate it, then it informs `THE_PLAN.md`. Every item carries its source so we can return to it; organizational judgments (clusters, tiers, dependencies) are tagged **[reading]** and stated for reversal; nothing here overrides a paper. The matter sector (Cluster A) is the hinge most downstream items hang off.
+
+> **⚠ THE BANNER BELOW IS STALE, THE DOCUMENT IS NOT (r1485).** This header reads r964 while the body carries
+> work through **r1423** — the family-5 spectral resolution, the E·3 entry, the r1408 receipt flag. A node
+> reading the header concludes the map is ~500 revisions behind and it is not. *(r1484 concluded exactly that,
+> from the banner rather than the content — the same error as trusting a docstring over its code.)*
+> **Current to ~r1424.** The r964 text is kept below as the record of that milestone.
+
+**▶ MILESTONE (r964, 2026-07-11) — the empirical cluster has resolved, and it resolved in CR's favour: the observational rung crossed from coherence to _empirically favoured_.** Three tractable computations, run this arc (r959–r964), took the empirical cluster (E·1/E·2/E·4/F·1 in the r570 currency note below) past its "favoured-and-awaiting" pause to a data verdict on the discriminating axes: **(A1.4, E·4→resolved)** the radiation-free rate confronted against the full BAO expansion history **resolves the Hubble tension** — CR fits at the local $H_0=73$ where ΛCDM cannot, the invariant the dimensionless $\Omega_m$ (a hidden-FLRW-$\omega_m$ assumption that had manufactured a fake tension caught and corrected); **(D·1, F·1→resolved)** the primordial light-element abundances computed on the corpus's own hot dense history return **deuterium and helium within measurement** by ordinary nuclear physics, no tuned sector (gate-validated reduced network, StarLib-precise — the abundances _produced_, discharging P16's title); **(A1.2, E·1/E·2→corrected)** the low-multipole octopole shape, computed at last through the **genuine Boltzmann transfer** (CAMB's $\Delta_\ell(k)$ = CR's transfer), corrects the old "octopole falsification edge / striking quadrupole match" to a **cosmic-variance-limited wash** (depth $\sim0.47/0.41$ at $\ell=2,3$; the sharp-quadrupole match was an SW-analytic artifact; the ISW retained above the floor). **Net: coherence → correspondence → confirmed prediction on several critical axes** — the modern parallax's form (P4/P6) repeated forward, a small family of vindications now. **Held at honest weight:** the milestone is the _observational_ rung. **Cluster A (the matter sector)** and the structural unification stay **at coherence**, unmoved; the still-open discriminators (the full abundance likelihood, P1's no-horizons, and the **damping tail** — a computed, non-reabsorbable ~8% CR-specific effect in the diffusion *scale*, its *observable* high-ℓ consequence ***DERIVED r1927*** — the transfer is built, the envelope flat, $\theta_D/\theta_*$ larger by 9.3%, and the ratio $\exp[-(\ell/\ell_D)^2(r^2-1)]$ parameter-free; ***what remains is the early-ISW term and a likelihood refit, not the transfer*** [r966 corrected r965's brief "near-refutation" over-reach]; BAO meanwhile strengthened to DESI DR2, χ²/dof≈1.0) keep it from overreach. Receipts in `computations/p16_bbn/`, `hubble_build/`, `computations/perturbation_verify/`; the milestone is baked corpus-wide (P15/P16/P7/P6/p0/THE_VISION, r964). The r570 currency note and r646 banner below are retained as the record. Stated for reversal.
+
+**▶ CURRENT STATE (r646) — the arc since r609.** p0/15 is **built and woven**: the G·0 reciprocity-engine grind (line 17) is **complete** (all 14 papers ↔ p0/15, both ways), the 15×15 dependency matrix and the P7↔p0 **dipole** are in hand, and the corpus ran a self-knowing pass (all 15 compile clean). The end-state at line 21 — *p0/15 as the puzzle's-edge/border paper, the corpus current and self-knowing* — is **reached**. **G·0-real** is landed and struck (below); the **horizon-problem framing** is **written** into p0 §sec:standard (r647; annotated below). The detailed currency log that follows stops at **r608**; the r609→r646 arc is logged in `CORPUS_MAP` and the transcripts. Stated for reversal.
+
+> **Strikethrough convention — the bar (r570).** A map item earns a strikethrough ONLY when its result is *fully propagated*: into the specific paper's body, introduction, AND abstract; into the framework paper's synthesis body and framing (P7 — `§sec:synthesis`/`§sec:general-reach`, `§sec:frontiers`, the Outlook, abstract, intro); and into the meta-docs (this map, `CORPUS_MAP`, the roadmap/runway with its prioritization pointer). A corpus-affecting result is not done until the corpus is a coherent whole that carries it everywhere it lives — a build doc or a map note is not enough. "Everywhere it lives" means scoped across the *whole* corpus and placed in every paper it genuinely bears on (and, plainly, only those — not jammed into the first paper that comes to mind, nor into papers it merely touches), the framework paper's synthesis included. **Strike = genuinely resolved AND fully propagated.** Everything short of that is annotated, not struck. *(Bar set r570; the propagation of each struck result is logged in `CORPUS_MAP`.)*
+> **⌖ r1483 — the PINNED WORKING PROCEDURE that sat here has been removed to its proper places.** ~190 lines of
+> operating discipline had accumulated inside a tracker: the governing principle, the per-turn mirror-check,
+> a 24-face index with a balanced-act pair map, the reload rule, the prominent-conjecture rule, the
+> gate-carries-the-warranted-work rule, and what "stated for reversal" means.
+>
+> **Where each went.** The **mirror at the turn's start** and the **prominent-conjecture rule** → `THE_PLAN`'s
+> per-turn list. The **gate-carries-the-warranted-work** rule and **"never write *stated for reversal*"** →
+> already there. The **24-face index and the balanced-act pairs** → they are an analysis *of*
+> `CODA_FIELD_NOTE.md` and belong with it; **pinning a name-list here was a recall crutch**, and the programme
+> now has `INDEX.md` and a reading order, so navigation replaces recall. **Kept here, because it is this
+> document's own rule:** the striking bar, above.
+>
+> *(Nothing was discarded — the removed text is in the r1482 bundle, and the two live rules are placed.)*
+
 ## How the scraps consolidated (the recognitions the folding-in produced)
 
 1. **P7 `§sec:frontiers` is the master list.** Its five named frontiers are: (1) matter branch-point crossing dynamics → **A·4**; (2) derivation of the inherited boundary data → **F·1**; (3) full classification of causal reassignments → **C·5**; (4) the scalar sector to a data verdict → **Cluster E**; (5) the Standard-Model fermion sector → **A·5**. Everything below hangs on this spine.
@@ -338,20 +505,20 @@ job: The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of
 
 ## ⌗⌗ THE REGISTER'S VERDICT ON EVERY FOLDED CODE — generated
 
-*Generated by `scripts/regen_map_status.py` from `THE_LIVE_ARC.md` at fork front **c54.163**. **Do not hand-edit.***
+*Generated by `scripts/regen_map_status.py` from `THE_LIVE_ARC.md` at fork front **c54.178**. **Do not hand-edit.***
 
 > **⌗ WHY THIS BLOCK EXISTS, AND WHY IT IS A FRONT RATHER THAN A REWRITE (r2383).**
 > *This map became a **view** of the lead register at c54.90 — "a new item enters the register first and appears here as a view of it, never the other way round" — and **nothing made that true**. Its item states live in prose annotations accreted from r544 to c54.108, so the map and the register could disagree silently across 152 KB.*
 > ⌗ ***The cluster prose below is NOT regenerated, deliberately.*** *Notes like "two residues now converge here" are **findings**, not status, and the priority axis, the readiness sort and the runway exist nowhere else. **The map keeps what only it has; the register keeps what it is the source of.***
 > ⚠ *And the queued task was "the status column as a generated view."* ***There is no status column.*** *That was the file's `description:` field paraphrased — the fifth time in this audit a description has misdescribed its document. The build had to change to the one the file can actually take.*
 
-**32 folded codes — 27 struck, 5 live.**
+**32 folded codes — 28 struck, 4 live.**
 
 ### Cluster A — the matter sector — 5 folded, **1 live**
 
 | map code | register | state | the register's verdict, first line |
 |---|---|---|---|
-| **A·1** | **L-207** | **OPEN · kind:QUESTION** | REGISTERED r2383 — OPEN_PROBLEMS_MAP's A·1, A FOLD MISS FOUND BY THE MAP'S OWN NEW STATUS BLOCK. Why the cut bends — a dynamics for the curve itself, matter's own evoluti… |
+| **A·1** | **L-174** | **OPEN · opened c54.166** | OPENED r2376+c54.166 — FOLDING A·1, WHICH THE MAP HAS CARRIED LIVE AND UNREGISTERED SINCE r565. OPEN_PROBLEMS_MAP cluster A item 1, 'why the cut bends' — a dynamics for t… |
 | **A·2** | ~~L-136~~ | ✔ struck | STRUCK c54.109 — THE ANSWER IS NO, AND THE OBSTRUCTION IS THE SUBSTRATE'S OWN SIGNATURE RATHER THAN A GAP IN THE CONSTRUCTION. A2 asks to generalize the cut past a symmet… |
 | **A·3** | ~~L-137~~ | ✔ struck | STRUCK c54.108 — THE ANSWER IS A COROLLARY IN P9's BODY, AND THE ITEM'S TWO FACTUAL CLAIMS ARE BOTH STALE. THE SWEEP READING DOES NOT ACQUIRE A SEPARATE NON-VACUUM FORM O… |
 | **A·4** | ~~L-138~~ | ✔ struck | STRUCK c54.113 — THE WORLDLINE HALF HAS A NEGATIVE ANSWER WITH A REASON, AND THE REASON IS WHAT MAKES THE FIELD HALF WORK. THERE IS NO WORLDLINE CROSSING TO COMPUTE. A co… |
@@ -381,12 +548,12 @@ job: The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of
 |---|---|---|---|
 | **D·2** | ~~L-145~~ | ✔ struck | STRUCK c54.111 — THE ROW'S TWO CLAIMS ABOUT ITSELF ARE BOTH STALE, AND WHAT P2 ASSERTED IS NOW PROVED. The row says 'exploratory (no sharp resolution criterion)'. P2 sec:… |
 
-### Cluster E — the cosmology's empirical edges — 4 folded, **1 live**
+### Cluster E — the cosmology's empirical edges — 4 folded, **0 live**
 
 | map code | register | state | the register's verdict, first line |
 |---|---|---|---|
 | **E·1** | ~~L-146~~ | ✔ struck | STRUCK c54.103 — THE VERDICT IT ASKED FOR EXISTS, AND SO DOES THE SHAPE; WHAT DID NOT EXIST WAS ANY STATEMENT OF EITHER OUTSIDE A FIGURE CAPTION. E·1 asks for the octopol… |
-| **E·2** | **L-147** | **OPEN · folded from the map c54.90** | RESIDUE RECEIVED c54.103 from L-146: the sky suppresses $\ell=2$ ALONE by a factor of order three and this construction produces no selective quadrupole dip — it starves … |
+| **E·2** | ~~L-147~~ | ✔ struck | RESIDUE RECEIVED c54.103 from L-146: the sky suppresses $\ell=2$ ALONE by a factor of order three and this construction produces no selective quadrupole dip — it starves … |
 | **E·3** | ~~L-148~~ | ✔ struck | STRUCK c54.98 — ITS OPEN CORE WAS BUILT, RECEIPTED ELEVEN TIMES, AND THE MAP NEVER RECORDED IT. E·3's status, carried since r1408 and folded in verbatim: the open core is… |
 | **E·4** | ~~L-149~~ | ✔ struck | STRUCK c54.104 — BOTH HALVES DELIVERED, AND ITS SHARP QUESTION HAS A THIRD ANSWER. E·4 owes two things and both are built and registered: the rate confronted against the … |
 
@@ -434,7 +601,7 @@ job: The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of
 
 ### Cluster A — the matter sector (the hinge; "one frontier read several ways")
 **[r565 — CARRIED THROUGH AT SOURCE (P8 §open, P11 §scope, P14) and ASSESSED on both axes; NOTHING here is resolved or struck. The matter *dynamics* (A·1/A2/A·4) is advanced — the confined case built in-corpus (P11/P10), the branch-point crossing partial result built this session and propagated across its whole matter-dynamics scope (A·4, r563/r574), the wall characterized — while the matter *content* (A·5) is unbuilt and geometrically walled. Readiness: the dynamics facets are advanced/low-remaining but none closed; A·5 is a bounded research programme, not a sitting computation. Confirms P14 from the inside — CR is a gravitational–cosmological unification, not a geometric unification of matter. See `CLUSTER_A_carry-through_status.md`.]**
-- **A·1 — why the cut bends.** A dynamics for the curve itself / matter's own evolution. **[ADVANCED, NOT resolved — r565:** the confined/symmetry-reducible case is built in-corpus (the Gowdy–de Sitter TT wave on a true Hamiltonian, P11 §gowdy; the nonlinear Λ>0 regime resolved on its classical side, P11 prop:admit; the closed-S³ lift, P10). The general matter dynamics is characterized but **not crossed** (P8 §open); non-perturbative quantization = B·2, gated. **Open.**]** *(P8 §open — "the deepest open question the construction raises.")*
+- **A·1 `[L-174]` — why the cut bends.** ⌗ *Folded r2376+c54.166 — it had been live and unregistered since r565; `L-174` splits it into the **ungated** classical half and the **`PO-6`-gated** non-perturbative half.* A dynamics for the curve itself / matter's own evolution. **[ADVANCED, NOT resolved — r565:** the confined/symmetry-reducible case is built in-corpus (the Gowdy–de Sitter TT wave on a true Hamiltonian, P11 §gowdy; the nonlinear Λ>0 regime resolved on its classical side, P11 prop:admit; the closed-S³ lift, P10). The general matter dynamics is characterized but **not crossed** (P8 §open); non-perturbative quantization = B·2, gated. **Open.**]** *(P8 §open — "the deepest open question the construction raises.")*
 - **⌗ TWO RESIDUES NOW CONVERGE HERE: `C·3`'s past-the-wall grand claim (c54.100) and `A·3`'s post-wall dynamics (c54.108).** *`A2` is where the matter sector's remaining conceptual debt has collected, and both arrivals say the same thing about it: **past the wall is ordinary general-relativistic free evolution, which this construction does not generate**. The row's own r573 status already reads that way — 'by P11 `prop:radiative-wall` this is ordinary GR free evolution the construction does not generate, so working it out needs no unbuilt CR machinery and it sits behind nothing'. **Ready, unblocked, and now the cluster's single collection point.***
 - **✔✔ STRUCK c54.109 (`L-136`) — THE ANSWER IS *NO*, AND THE OBSTRUCTION IS THE SUBSTRATE'S SIGNATURE.** ***$\mathfrak{so}(5,1)$ is rank-one with an ABELIAN unipotent radical of dimension four; the type-N plane wave's isometry algebra is the five-dimensional HEISENBERG algebra. A non-abelian unipotent algebra does not embed in an abelian one*** — the difference between $SO(n,1)$ and $SU(n,1)$, not a deficiency of the geometry. ⚠⚠ **AND THE WALL TURNS OUT TO BE MISPLACED IN P9, WITH THE PAPER'S OWN EXEMPLAR AS WITNESS: the plane wave has FIVE Killing vectors (more than Schwarzschild's four) and is VACUUM**, so `cor:wall`'s two readings of the boundary are both falsified — and its abelian $\mathbb{R}^3$ *does* embed, so it satisfies the stated condition while `cor:radiation` places it outside. ✔ **Repaired on `thm:bound`'s own second clause: the boundary is the loss of a symmetry whose ORBITS CAN CARRY A LEAF** — the wave's orbits being three-dimensional and null. ✔✔ ***AND GRAVITATIONAL CHIRALITY IS ACHIEVED INSIDE THE RANGE***: on the Gowdy form the transverse reflection is an isometry iff the wave is polarized, so the unpolarized turning wave is chiral and reachable. **This row's pricing was wrong — handedness does not wait on a sector the construction cannot generate.** **Residue → `L-163`: build the unpolarized Gowdy–de Sitter cut, the corpus's first chiral geometry, currently named and not constructed.** *Landed in P9 (`thm:range`, `cor:wall`, `cor:radiation`) and P11 `sec:chirality`; receipt `P09_the_wall_is_not_the_loss_of_symmetry`.*
 - **A2 `[L-136]` — beyond the wall.** The fully inhomogeneous Type-N radiative sector; needs generalizing the cut past a symmetric sweep. **[STATUS r573 — READY, not gated:** by P11 prop:wall this is ordinary GR free evolution the construction does not generate, so working it out needs no unbuilt CR machinery and it sits behind nothing. Priced on unlock/urgency, not taste: the CR-structural claim (the wall is the generative boundary; beyond it is ordinary GR) is already banked (P11 prop:wall, cor:radiation), so the explicit working-out adds ordinary-GR detail rather than new CR structure and unlocks no other map item — **but** it is the sector where the graviton's two polarizations are freed and handedness becomes genuine (P9 cor:radiation §204; worked out dynamically in P11 §chirality — chirality is the turning of the polarization plane, the orientation-parity Z₂, the graviton chiral precisely through the disconnected component the AH obstruction cannot touch), the same discrete-orientation-parity structure A·5's one geometric opening turns on, so it is not isolated from the live frontier. Ready to turn over; ranked low by unlock, not blocked.]** *(P9 §open, cor:radiation; P11 prop:wall, §scope item 2.)*

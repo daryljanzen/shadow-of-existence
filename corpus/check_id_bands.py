@@ -35,15 +35,22 @@ ROOT = os.path.abspath(os.path.join(HERE, '..'))
 ARC = os.path.join(ROOT, 'THE_LIVE_ARC.md')
 
 # Declared, never inferred.  Widen a band only by editing this table and THE_HUB.md together.
+# ** CORRECTED r2426: THE COLLISION FIRED AND THE BANDS WERE WRONG. **  At c54.166 the working
+# fork opened its own L-174 -- the next integer after its own maximum, which is what any line does
+# absent a shared convention.  ** A reserved range only works if both lines read the reservation,
+# and the fork does not read THE_HUB. **  This line's L-174 moved to L-221 and every live citation
+# was repointed; the fork's row stands, because it owns the low band by history.
+# ⇒ THE CORRECTED RULE: ** allocate FAR from the other line's frontier, not merely above it. **
 BANDS = [
     (1,   173, 'the working fork (54) -- historical'),
-    (174, 499, 'the main line (56)'),
-    (500, 799, 'reserved -- the fork\'s new rows'),
+    (174, 220, 'CONTESTED -- both lines allocated here; DO NOT ALLOCATE'),
+    (221, 499, 'the main line (56) -- allocate here'),
+    (500, 799, 'offered to the fork, NOT adopted (it does not read THE_HUB)'),
     (800, 999, 'reserved -- future lines'),
 ]
 
 # Which band this tree writes in.  A node changes this line and nothing else.
-THIS_LINE = (174, 499)
+THIS_LINE = (221, 499)
 
 
 def band_of(n):

@@ -1,7 +1,7 @@
 ---
 name: the-weave
 kind: STATE
-current: c54.163
+current: c54.178
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
 ## ⌗⌗ BROUGHT CURRENT r2379 (observer line) — *and the weave's own direction-of-neglect finding predicted every defect this line found*
@@ -561,6 +561,20 @@ looking for it:**
 - **`L-150` — the branch point** *(c54.125).* *The collapse geometry transmits **zero** parameters,
   so it supplies a **cutoff** — $|\Delta\eta|=3.32\alpha$, from $\Lambda$ alone — and cannot
   supply a **content**.*
+- ⚑ **`L-150` / `L-171` — the acoustic sector, and the same shape one level down** *(c54.162–169,
+  propagated here at c54.169).* ***The construction supplies the RATE and does not supply the
+  DRIVING.*** *Front #1 (c54.162): what crosses the branch point is frozen — an amplitude and no
+  phase — so the recursion is a genealogy of universes and not a recursion on modes, **one lap and
+  not a tower**. c54.167: the whole interval between the branch point and the onset is **scale-free**
+  — the $w=0$ potential equation contains no $k$ at all — so nothing there can imprint an acoustic
+  phase, and the re-entry that does occur (boundary computed at $\ell\simeq144$) is empty.
+  c54.168–169, on this fork's own two-arm instrument with a live control and an undriven guard that
+  calibrates at $1.000$: **flat $\Lambda$CDM's acoustic phase is flat in $k$ to $2\%$ because every
+  mode crosses under radiation; this cosmology's varies by a factor of $3.9$ because there is no
+  radiation era to cross.*** ⇒ **So the same weave holds here as for the flat bundle and the branch
+  point: the geometry fixes what is POSSIBLE — the rate, the scale, the cutoff — and the CONTENT
+  must come from somewhere it does not reach.** *The first peak's position is where that costs
+  something measurable, and it is open.*
 
 ⇒⇒ ***THE CONSTRUCTION IS A GEOMETRY OF SELECTION RULES. IT SAYS WHICH THINGS ARE POSSIBLE AND
 CONSISTENTLY DECLINES TO SAY HOW MUCH.***

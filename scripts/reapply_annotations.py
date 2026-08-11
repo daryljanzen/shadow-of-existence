@@ -81,6 +81,31 @@ ANNOTATIONS = [
      '`L-165` = `PO-6` (protected), family 8.\n\\item\\label{frontier:quantum}',
      'the interacting quantum tower -- register `L-165` = `PO-6`'),
 
+    # ** r2427: THE REGISTRY MISSED A THIRD FILE TYPE, AND THE ABSORPTION PROVED IT AGAIN. **
+    # CONSOLIDATE_THE_PLAN is fork-owned, and this line's four DECLARED-UNDATED flags on PHASE 3/5/6/7
+    # -- written at r2378 when check_arcs first found those sections carrying no revision marker --
+    # were dropped by taking the fork's body.  ** check_arcs caught it (rc=1, four FAILs), which is
+    # the third time a gate has caught an annotation loss the diff could not show. **
+    # The pattern is now unambiguous: ** EVERY annotation this line writes into a fork-owned file
+    # must be registered here, whatever the file type -- .md tables (r2385), .tex comments (r2393),
+    # and now .md prose blocks. **  Registered by their marker text so a body rewrite cannot hide it.
+    ('CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md',
+     '## PHASE 3 · Corpus hygiene',
+     None,
+     'UNDATED POSITION'),
+    ('CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md',
+     '## PHASE 5 · The register',
+     None,
+     'UNDATED POSITION'),
+    ('CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md',
+     '## PHASE 6 · The two cheap physics checks',
+     None,
+     'UNDATED POSITION'),
+    ('CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md',
+     '## PHASE 7 · The build',
+     None,
+     'UNDATED POSITION'),
+
     ('THE_LIVE_ARC.md',
      '`OPEN_PROBLEMS_MAP` A2 ',
      '`OPEN_PROBLEMS_MAP` A·2 ',

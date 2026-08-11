@@ -3,9 +3,48 @@ name: the-base-rate
 description: A5.5 worked — the reference class for least-arbitrariness arguments in physics, assembled neutrally and then judged. P6's criterion measured against the historical record rather than against favourable examples.
 sources: [cowork]
 kind: STATE
-current: c54.163
+current: c54.178
 job: A5.5 worked — the reference class for least-arbitrariness arguments in physics, assembled neutrally and then judged. The fork added 11 entries across c54.114–153; read BEFORE claiming a least-arbitrariness win.
 ---
+## ⌗⌗ `L-213` MEASURED AGAINST THE DISCRIMINANT — r2405, and the ledger answers before the argument is made
+
+*`L-213` (registered r2401 out of `ENTRY_POINT_REGISTER` B18) asks:* **whether the Standard Model, read as an
+EXTERNAL constraint rather than derived from the bare geometry, motivates taking the compact (Wick) face as
+physical and building a fermion sector there.** *P13 states its status —* **"is not settled by anything above"**
+*— and insists it is a **distinct** frontier:* ***"These are not the same frontier, and neither is 'empirical
+coherence alone': a coherent matter route would have to supply BOTH."***
+
+**⌗ THIS LEDGER'S DISCRIMINANT IS THE INSTRUMENT, and it is sharper than the ratio:**
+***least-arbitrariness arguments that REMOVE AN EXCEPTION succeed; ones that ADD MACHINERY to explain a number
+fail.*** *So the first move is not to make the argument — it is to ask **which kind it would be**.*
+
+| reading of the argument | which kind | standing |
+|---|---|---|
+| *"the SM's factual standing motivates **taking the compact face as physical**"* | ***ADDS*** — *it proposes a venue in order to accommodate content* | ⚠ **the historically failing kind** |
+| *"the compact face is **already there** — the Wick rotation already reaches it — and treating only the Lorentzian face as physical is the arbitrary restriction being **discarded**"* | ***DELETES*** | **the favourable side** |
+
+***So `L-213` is not one argument with an unknown verdict; it is TWO arguments wearing one sentence, and the
+ledger separates them before either is made.*** **That is the discriminant doing exactly what `L-96` was told to
+do**: *"what would move it to the favourable side is showing the adjoint is **already there and was being
+discarded**, rather than supplying it."*
+
+**⌗ AND ONE PIECE OF EVIDENCE ALREADY BEARS ON WHICH READING IS AVAILABLE.** *The c54.128 closure found that
+**the Wick rotation carries the same $\alpha$** — the compact face supplies **no second scale**. That cuts both
+ways and both are worth stating: it **weakens** the ADD reading (there is no new magnitude being bought, so
+nothing is being added to explain a number), and it **weakens** the DELETE reading too (if the face carries
+nothing the Lorentzian one does not, then treating it as unphysical was not discarding anything).*
+⇒ ***The honest position is that the DELETE reading is not yet available, and the work `L-213` owes is to make
+it available or to concede the ADD reading and price it at the base rate.***
+
+**⌗ WHAT `L-213` MUST SUPPLY, stated so the argument cannot be made without it:**
+*① **what the compact face carries that the Lorentzian one does not** — and c54.128 says it is not a scale;*
+*② **why treating it as unphysical is a restriction rather than a reading**, given that the substrate is
+Lorentzian by construction and §1a of the ontology map already adjudicates the compact face as **real by
+construction but not a co-equal existent — it carries no clock**;*
+*③ **and the second half P13 demands**: a coherent matter route must supply **both** the geometric and the
+empirical grounds, so an external-constraint argument that succeeds still does not stand alone.*
+⚠ ***Absent ①, the argument is an ADD, and the base rate prices an ADD at worse than a coin flip.***
+
 
 # THE BASE RATE
 *`L-35` / P6 `A5.5`, worked r2376+c54.35.* **P6 calls this "the one genuinely unworked item" of its own
@@ -99,45 +138,6 @@ is what `L-96` now asks — showing the adjoint is **already there and was being
 supplying it. **That is not a stylistic preference; it is what the base rate says.***
 
 ---
-
-## ⌗⌗ `L-213` MEASURED AGAINST THE DISCRIMINANT — r2405, and the ledger answers before the argument is made
-
-*`L-213` (registered r2401 out of `ENTRY_POINT_REGISTER` B18) asks:* **whether the Standard Model, read as an
-EXTERNAL constraint rather than derived from the bare geometry, motivates taking the compact (Wick) face as
-physical and building a fermion sector there.** *P13 states its status —* **"is not settled by anything above"**
-*— and insists it is a **distinct** frontier:* ***"These are not the same frontier, and neither is 'empirical
-coherence alone': a coherent matter route would have to supply BOTH."***
-
-**⌗ THIS LEDGER'S DISCRIMINANT IS THE INSTRUMENT, and it is sharper than the ratio:**
-***least-arbitrariness arguments that REMOVE AN EXCEPTION succeed; ones that ADD MACHINERY to explain a number
-fail.*** *So the first move is not to make the argument — it is to ask **which kind it would be**.*
-
-| reading of the argument | which kind | standing |
-|---|---|---|
-| *"the SM's factual standing motivates **taking the compact face as physical**"* | ***ADDS*** — *it proposes a venue in order to accommodate content* | ⚠ **the historically failing kind** |
-| *"the compact face is **already there** — the Wick rotation already reaches it — and treating only the Lorentzian face as physical is the arbitrary restriction being **discarded**"* | ***DELETES*** | **the favourable side** |
-
-***So `L-213` is not one argument with an unknown verdict; it is TWO arguments wearing one sentence, and the
-ledger separates them before either is made.*** **That is the discriminant doing exactly what `L-96` was told to
-do**: *"what would move it to the favourable side is showing the adjoint is **already there and was being
-discarded**, rather than supplying it."*
-
-**⌗ AND ONE PIECE OF EVIDENCE ALREADY BEARS ON WHICH READING IS AVAILABLE.** *The c54.128 closure found that
-**the Wick rotation carries the same $\alpha$** — the compact face supplies **no second scale**. That cuts both
-ways and both are worth stating: it **weakens** the ADD reading (there is no new magnitude being bought, so
-nothing is being added to explain a number), and it **weakens** the DELETE reading too (if the face carries
-nothing the Lorentzian one does not, then treating it as unphysical was not discarding anything).*
-⇒ ***The honest position is that the DELETE reading is not yet available, and the work `L-213` owes is to make
-it available or to concede the ADD reading and price it at the base rate.***
-
-**⌗ WHAT `L-213` MUST SUPPLY, stated so the argument cannot be made without it:**
-*① **what the compact face carries that the Lorentzian one does not** — and c54.128 says it is not a scale;*
-*② **why treating it as unphysical is a restriction rather than a reading**, given that the substrate is
-Lorentzian by construction and §1a of the ontology map already adjudicates the compact face as **real by
-construction but not a co-equal existent — it carries no clock**;*
-*③ **and the second half P13 demands**: a coherent matter route must supply **both** the geometric and the
-empirical grounds, so an external-constraint argument that succeeds still does not stand alone.*
-⚠ ***Absent ①, the argument is an ADD, and the base rate prices an ADD at worse than a coin flip.***
 
 ## ⌗ AND THE TABLE WAS TESTED ON ITS OWN AUTHOR ONE TURN LATER — *`r2376+c54.36`*
 
@@ -1181,3 +1181,174 @@ recursion settlement by reading, and then, in the same turn, filed a "defect" ag
 The tell was available and I passed it: **I quoted §185 in support of the finding without reading the
 sentence in §185 that names P1's object.** ⇒ *A phrase that looks stale against a header note is not a
 defect. **A defect is what survives reading the paragraph that defines the term.***
+
+---
+
+## ⌗⌗ THE TWENTY-SIXTH ENTRY (added c54.164) — *the front asked which of two routes is right, and one of them was not a route*
+
+**⚑ THE CASE.** *Front #5 stood for twelve revisions as "two internal routes disagree on the first acoustic
+peak: transfer gives $220$, the handover calculation gives $150$." It was carried as a disagreement to be
+adjudicated — which route is right? ***Neither adjudication was possible, because `ROBUST_p1p2_scan` does not
+return a figure. It returns whichever figure its initial-data block is read to mean.*** Substituting only that
+block and leaving every other line byte-identical moves $\ell_1$ over $\{150,165,315\}$ and $P_1/P_2$ over
+$\{0.93,1.21,1.45,2.02\}$ — **four readings of one stated initial condition.***
+
+**⇒⇒ AND TWO OF THE FOUR ARE THE INSTRUMENT'S OWN TEXT.** *Its docstring says "the common phase is taken at
+an extremum (velocities zero)". **The code sets $\theta = 6\,\mathrm{d}\Psi \neq 0$.** And $\Psi$'s value is
+taken from a smooth matched envelope while $\Psi$'s derivative is taken from the oscillatory closed form —
+**two different functions supplying the amplitude and the velocity of the same field.*** ⇒ ***Imposing the
+documented condition returns $P_1/P_2 = 2.017$ against the measured $2.212$ — where the paper reported $1.45$
+against $2.21$ AS ITS DISAGREEMENT WITH THE SKY.*** **The corpus's sharpest recorded internal tension was a
+gap between a docstring and the code beneath it.**
+
+**⌗ THE DISCRIMINANT, AND IT IS NEW.** *Entry eighteen asks that a receipt pin the figure the paper prints.
+`ROBUST_p1p2_scan` **does** — it pins $150/360/555/780$ and $1.447$, and those assertions pass, and it passed
+the runner, and it is cited, and every gate is green. ***The pin is on the output. Nothing pins the input.***
+**A receipt that pins what it produced without pinning what it assumed measures its own reproducibility and
+not its correctness** — it will faithfully reproduce a figure that means nothing. ⇒ *The instrument this entry
+required was not another gate but a **substitution probe**: exec the receipt's own source with one block
+replaced and everything else byte-identical, so that anything that moves, moves for a named reason.*
+
+**⌗ AND THE NUMERICS WERE CLEARED FIRST, DELIBERATELY.** *Stability number $0.47$ against the file's own stated
+limit of $2.8$, $120$+ RK4 steps per acoustic oscillation, `NS_CR` quadrupled reproducing every figure digit
+for digit. **My first hypothesis was integration error and it was wrong.** Checking it first is what makes the
+initial-data finding unwaveable-away — and killing my own first guess before it reached the corpus is the
+half of the method that the P1 retraction one revision earlier says I skipped.*
+
+**⛔⛔ AND THE COMB CITED AGAINST IT WAS NEVER PROPAGATED.** *P15 `sec:coherence`: "propagating the
+tightly-coupled acoustic modes to last scattering from a common seam phase yields a sharp regular comb at
+spacing $\Delta\ell\simeq\pi D_C/\rs\approx296$." **The receipt evaluates `Cc=(np.cos(k*rs)**2)*env**2` with
+`rs=147.0` and `D_C=13864.0` as literals. There is no integrator in the file.*** *Its own scope note says so
+plainly — "does NOT replace the full seam-to-recombination Boltzmann transfer" — and **the paper's sentence
+claimed exactly the propagation the receipt disclaims.** The receipt was honest; the prose borrowed against it.*
+
+**⚑ WHAT THE PASS LEFT STANDING, WHICH IS THE UNCOMFORTABLE PART.** *Under **every** one of the four initial
+conditions the propagated source comb comes out at $0.72$–$0.79$ of $\pi/\rs$, never $\pi/\rs$. The initial
+data move the first peak by $165$ multipoles and **do not move this**. ⇒ ***So the acoustic peak SPACING — the
+corpus's flagship settled result, the one carrying the Hubble resolution — is asserted in the one place it is
+not computed and comes out short in the one place it is.*** **That is a smaller, harder and more serious
+question than the one the front carried, and clearing away a false disagreement is what made it visible.***
+
+---
+
+## ⌗⌗ THE TWENTY-SEVENTH ENTRY (added c54.166) — *a gate read its own "now" from a document nobody updates, and was vacuous for 131 revisions*
+
+**⚑ THE CASE.** *`check_currency` is one of the standing ten. It compares the highest revision each standing
+register mentions against the fork's current state and fails on any that has fallen more than six behind. **It
+took the fork's current state from `FORK_c54.md` — a NARRATIVE document whose account stops at c54.35 and which
+nothing updates.*** ⇒ ***So from c54.36 onward the gate's notion of "now" was frozen at c54.35, and it spent 131
+revisions comparing every register against a fixed point in the past.*** *Registers that had stopped being
+updated **before** c54.35 showed a lag under the window and passed — `CONSOLIDATE` at c54.32, `CORPUS_MAP` at
+c54.32, `INDEX` at c54.35. Registers that were being updated showed a **negative** lag and passed trivially.*
+
+**⇒⇒ AND THE TELL WAS PRINTED IN ITS OWN OUTPUT EVERY SINGLE RUN.**
+
+```
+   THE_LIVE_ARC.md   c54.165  (lag -130)
+```
+
+***A register cannot be 130 revisions AHEAD of the fork.*** *It printed that, in a gate I have run at the close
+of every revision this session, and I read the last line — `Every standing register is current.` — and not the
+body.* **Nobody reads the body of a green gate. That is the whole entry.**
+
+**⌗ HOW IT WAS FOUND, WHICH IS THE PART WORTH KEEPING.** *Node 56's routing list carried nine items. Item 7 was
+`FORK_c54.md` narrates c54.1–c54.35 and reads as current — filed under **"worth a minute"**, with the suggested
+fix "one line at the head saying which span it narrates." ***Adding that line moved the gate's reference from
+c54.35 to c54.166 and fired it immediately on four registers that are 100–133 revisions stale.*** **The item
+they ranked eighth of nine was the most valuable thing on the list, and neither of us knew it — they because
+they were looking at a navigation defect, I because I had never asked what the gate's reference point was.**
+
+**⌗ THE DISCRIMINANT.** *Entry twenty-three: an instrument that reads a file has not run it. Twenty-six: a
+receipt that pins what it produced without pinning what it ASSUMED measures its own reproducibility.* ***This is
+the same shape a third time, at the gate layer: a gate that reads its own REFERENCE POINT from something nobody
+maintains measures nothing, however correct its comparison is.*** **The comparison in `check_currency` was
+right the whole time. The thing it compared against was dead.** ⇒ *So the rule is not "check the gates" but:
+**every instrument has an input it does not check, and that input is where it fails silently.** For a receipt it
+is the initial data. For a gate it is the reference point.*
+
+**⛔ AND THE GATE IS NOW RED, DELIBERATELY.** *Four standing registers are 100–133 revisions behind, and this
+revision does **not** bring them current — it has no honest way to compress 133 revisions of arc into four
+navigation documents in the same pass that found the problem.* **Stamping the current revision into a stale file
+would turn a visible lapse into an invisible one — the precise failure the receipt layer spent c54.154–161
+clearing — so the gate now says that in its own failure text.** ***A gate that fails truthfully is worth more
+than ten that pass. The red stays until the registers are actually brought current, and it is registered as
+owed work rather than engineered around.***
+
+---
+
+## ⌗⌗ THE TWENTY-EIGHTH ENTRY (added c54.171) — *the other fork was right about the mechanism and wrong by one factor of k, and only building the instrument could tell which*
+
+**⚑ THE CASE.** *The abandoned acoustic fork's central mechanism is that the driving on a radiation-free rate
+is a seam transient relaxing on $3\mathcal{H}/k^{2}$. It supported that with "$Q_{1}k^{2}$ is measured
+constant across the whole range." **This fork, on its own instrument, measures $Q_{1}k$ constant to $1.11\times$
+where $Q_{1}k^{2}$ spans $7.2\times$** — and then derives why in four lines. ***The timescale is right. The
+exponent is out by exactly one factor of $k$, and it is the factor $Q$'s own definition already contains***:
+$Q$ is a phase in units of $k\int c_{s}\dd\eta$, so a turnover at $\Delta\eta\propto k^{-2}$ gives
+$Q\propto k^{-1}$.*
+
+**⇒⇒ AND THE SEQUENCE THAT GOT THERE IS THE ENTRY.** *c54.169 measured the exponent as $-0.62$ and could say
+only that it was **not** $-2$ — a disagreement with no diagnosis. c54.170 split the driving into its two
+couplings and found the $k$-dependence in the **gradient** channel while the **decay** channel — the one a
+relaxation timescale acts through — came out flat, which read as evidence **against** the fold's mechanism.
+c54.171 derived the closed form and found the mechanism **vindicated**: the relaxation time is exactly what
+sets the turnover, and it acts through the gradient channel because the $k^{2}$ in the forcing's amplitude is
+cancelled by the $k^{-2}$ in its duration.* ***Two revisions of apparent refutation resolved into
+confirmation-plus-correction, and the intermediate reading was wrong in a way no amount of care at the time
+would have caught — only the derivation could.***
+
+**⌗ THE DISCRIMINANT.** *Entry twenty-five said a question worked for twelve revisions had not been read.
+**This one is its complement: a number measured for three revisions had not been DERIVED.** Every step from
+c54.168 to c54.170 was a measurement, each one honest and each one correct as far as it went, and the sequence
+was converging on the wrong verdict about someone else's work. ***What turned it was four lines of algebra
+that cost less than any one of the runs.*** ⇒ **When a measurement disagrees with a stated mechanism, derive
+the mechanism's own prediction before concluding the mechanism is wrong — the disagreement is at least as
+likely to be in the bookkeeping as in the physics, and bookkeeping is cheap to check.**
+
+**⌗ AND WHAT IT SAYS ABOUT THE IMPORT DISCIPLINE.** *The rule fixed at c54.165 was that nothing from that fork
+enters as a figure and only method transfers. **That rule is what made this possible.** Had the $201.3$ or the
+$Q_{1}k^{2}$ been imported, this fork would have inherited the factor of $k$ and had no independent
+measurement to catch it. Had the fork been dismissed for failing its own reproduction gate, its correct
+timescale would have been lost with it. ***The discipline that paid was: take the idea, rebuild the
+measurement, and let the two argue.***
+
+---
+
+## ⌗⌗ THE TWENTY-NINTH ENTRY (added c54.172) — *the pre-registered falsifier was defective, and its defect ran in the construction's favour*
+
+**⚑ THE CASE.** *`L-147`, the likelihood, was fenced for a hundred revisions on three conditions, and the first
+was **the falsifier fixed before any data is touched**. It was: F1 the pipeline wired against a banked number,
+F2 the instrument's own floor measured through the same likelihood, F3 only the two arms of one instrument
+compared, F4 a verdict rule with two thresholds. ***All five written before the Planck bins were opened in
+this revision. And F4 was wrong.***
+
+**⇒⇒ IT IS A RATIO TEST WITH NO ABSOLUTE COMPANION.** *F4 asked whether the CR-minus-control difference
+exceeded the control's own floor, and by how much. **It never asked whether the floor was small.** It is not:
+the control arm lands at $\chi^{2}/\mathrm{dof}=103$ against CAMB's $0.96$, because Planck's binned errors are
+a few tenths of a per cent and this instrument's peak heights carry $13$–$26\%$ — **tens of standard
+deviations in a single bin**. ⇒ *Both arms sit far outside the regime in which that likelihood discriminates
+between models at all, so the pre-registered "suggestive" is wrong and the honest verdict is the weaker one:
+**it cannot arbitrate**.*
+
+**⛔⛔ AND THE CORRECTION RUNS IN THE CONSTRUCTION'S FAVOUR, WHICH IS THE ENTIRE REASON THIS ENTRY EXISTS.**
+*Moving from "suggestive of a discrepancy" to "cannot arbitrate" moves **away** from a negative on CR.
+***That is the exact shape of the failure a pre-registered falsifier exists to prevent, and here the
+pre-registration did not prevent it — because the flaw was in the criterion rather than in its application.***
+The defence is that the correction is arithmetic and not special pleading: **it would apply identically had
+the CR arm come out BETTER than the control**, and it rests on a height floor measured at c54.168, before any
+data were opened, against a target set by the sky. *A reader who does not accept that should read the ordering
+and ignore the verdict: on one instrument, same bins, same fitted amplitude, the construction's arm costs
+$5.4$ times its own control.*
+
+**⌗ THE DISCRIMINANT, AND IT IS UNCOMFORTABLE.** *Entry twenty-six: a receipt that pins its output and not its
+input measures reproducibility, not correctness. Twenty-seven: a gate that reads its reference point from a
+dead document measures nothing. **Twenty-nine is the same failure in a FALSIFIER: a criterion that compares
+two quantities without bounding either measures their ratio and not the thing it was written to decide.***
+⇒ **Pre-registration protects against choosing the criterion to fit the answer. It does not protect against
+choosing a criterion that cannot see the answer** — and the second is the easier mistake, because a
+well-formed-looking rule feels like rigour. *The only thing that caught it was running the control and
+reading its absolute value, which F2 collected and F4 never used.*
+
+**⌗ WHAT THE ROW ACTUALLY DELIVERED.** *Not a verdict — an instrument specification. **The likelihood becomes
+answerable when a transfer's control reaches sub-per-cent heights, and not before**; more parameters will not
+do it, and neither will more bins. That is a concrete, checkable target where there was previously a fence,
+and it belongs to the transfer work rather than to a statistics question.*

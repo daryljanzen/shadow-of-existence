@@ -1,279 +1,10 @@
 ---
 name: consolidate-the-plan-and-index-the-programme
 kind: STATE
-current: c54.163
+current: c54.178
 job: Consolidate the plan and index the programme — the arcs (§2), the sequence (§13), the standing actions (§14), and §16 THE DEVELOPMENT RECORD, which is where RG-1 moves a paper's past state.
 sources: [cowork]
 ---
-
-# Consolidate the plan, and index the programme
-
-> **⚠⚠ THIS BANNER IS 76 REVISIONS STALE, AND THE GATE IT NAMES COULD NOT SAY SO (r2377).** *It was written
-> at c54.32; the fork is at **c54.108**. `check_currency` read the fork's front from `FORK_c54.md`, which had
-> itself stopped at c54.35, **so the baseline sank with the documents it was measuring** and the gate reported
-> this file at lag 3. **The gate is fixed (r2377) and now names this file at −76.** The corpus has **ten**
-> gates, not five. **What follows is the c54.32 state, kept as the record of what had landed by then — it is
-> not the current state, and `ARC 14 · THE SINGLE EDGE` in §2 is the plan to make it one.***
->
-> **⌗ BROUGHT CURRENT r2376+c54.32** *(gate: `corpus/check_currency.py`, which now fails when a standing
-> register falls more than six revisions behind the fork).* **What has landed since this file was last current:**
-> ***(A1) DISCHARGED*** *(`L-01`) — CR's own operator is the **kernel of the matter functional**, and run at
-> general $D$ its entire solution space is Tangherlini–de Sitter, so the dimension result's input is **derived,
-> not imported**; the **LOCK** survives with it (`L-89`: $A=f$ and $p_r=-\rho$ are the same condition at every
-> $D$).* ***THE L8.1-a WELD IS SPLIT*** *(`L-67`/`L-92`/`L-95`) — the hinge three is the **within-state** index
-> (a bound triple takes one puncture per hinge, forced by the causal trichotomy) and **generation moves to the
-> turnaround three**; the count is untouched because **both threes are $D-1$, descending from $f$'s degree-$(D-1)$
-> numerator** (`L-07`), and the chirality survives verbatim because $R$ reaches the turnaround branch exactly
-> when $D$ is even. Landed in P14 `sec:whichthree`.* ***THE FERMION SECTOR READ IN THE GEOMETRY*** *
-> ([`THE_FERMION_SECTOR_GEOMETRY.md`](THE_FERMION_SECTOR_GEOMETRY.md), a spine step) — the wall **is** the graze
-> point **is** the $r=0$ branch point; charge is a **winding** whose thirds are **derived** from closure; triality
-> $=-\lambda\bmod3$ and chirality $=\operatorname{sign}\lambda$ computed on `prop:wall`'s own solution; and the
-> honest negative that the mode tower **does not terminate**, so the corpus gets the **grading** and not the
-> multiplet count.* ***AND THE OPERATING LAYER:*** *`PROTECTED_OPEN` gained checks 5–7; the arc gained rules 4–5;
-> and the corpus now has **five gates** — receipts, kills, burn-down, compile, currency.*
-> **The live queue is [`WHATS_TEED_UP.md`](WHATS_TEED_UP.md)** — ***now GENERATED*** *from the register by
-> `scripts/regen_teed_up.py` (r2377), after it was found listing 44 leads of which all 44 were struck and none
-> of the 14 open;* **the accounting is [`THE_BURN_DOWN.md`](THE_BURN_DOWN.md)**, *which is 80 revisions behind
-> and is ARC 14 step ③'s next regenerator.*
-
-
-*The two-goal plan. Opened r1449.*
-
-> # ⌖ WHAT THIS DOCUMENT IS, AND WHAT IS LIVE IN IT — settled r1735, Daryl-directed
-> **It is not scaffolding and it is not near retirement.** *Daryl: "the consolidation plan clearly is not stale
-> and it shows **zero sign of being deprecated** anytime soon… **it seems to be the only document that can keep
-> the work organised at the highest level**… you should not be looking to retire the only thing that has a hope
-> of helping you become sane again."*
-> **The two goals are at very different states, and the document said otherwise for 182 revisions.**
-> **GOAL 2 — index the programme: substantially done.** *202 documents dispositioned, 114 indexed, 91 retired,
-> the six grains named, the capstone at five, the resources recovered.*
-> **GOAL 1 — consolidate the plan: BARELY STARTED.** *Emptying the bin was the **means** — it made the programme
-> knowable so the plan could be consolidated against it. **`THE_PLAN` is 260 KB across seven strata citing 198
-> revisions from r1003, and two of its seven lanes have been audited.** It has been blocking physics in earnest
-> for ~300 revisions. **That is Goal 1, it is ARC 11, and it opened at r1709.***
-> **⌗ LIVE HERE:** *§0 the working set · §2 the arcs (ARC 11 above all) · §13 the sequence and its register ·
-> §14 the eight standing actions.*
-> **⌫ RECORD HERE, each now marked at its own heading:** *§3 the filter · §4 and §4b the bin · §5 indexed
-> resources · §6's items, all moved out · §§7–11, already headed RECORD.*
-> **Why the marking matters more than it looks:** *a node — and I did this at r1729 — reads the record as the
-> plan, reports the bin's state as though it were news, and misses that the live edge is one section away.*
-
-**Contents** — [0 · Working set](#0--the-open-documents--the-working-set) · [1 · The target](#1--the-top-level-r1478-corrected-r1479) · [2 · The arcs](#2--the-arcs--multi-step-consolidation-work-held-open-across-turns) · [3 · The filter](#3--the-filter) · [4 · The bin](#4--the-bin) · [5 · Indexed resources](#5--indexed-resources) · [6 · Consolidation work](#6--goal-1--the-work) · [7–10 · Record](#7--goal-2--index-the-programme) · [11 · Open thought](#11--a-thought-not-a-decision--this-document-as-the-home-for-consolidated-outputs) · [12 · Log](#12--log)
-
-**The job.** ~1450 revisions across four phases, each leaving its planning notes behind without retiring them:
-**202 documents** of every era, many stale, the staleness leaking into whatever was being worked from. This
-document consolidates them — reading each one and either pulling its live content into §1, indexing it in §2 if
-it has a live job, or retiring it into `retired/`.
-
-**⚑ STATE, r1553 — THE BIN IS EMPTY.** **⚠ AND THAT IS NOT GOAL 1 — corrected r1735 (Daryl).** *This line read
-"GOAL 1 IS DONE. The bin is empty" for 182 revisions, welding two different claims. **Goal 1 is
-*consolidate the plan*. Emptying the bin was the MEANS: it dispositioned 202 documents so that the plan could
-then be consolidated against a knowable programme.** Daryl, r1735: *"while the programme has been indexed now,
-the 400 documents, **I don't think the plan actually is consolidated yet because the whole fucking thing is
-still a giant mess we are trying to pull together and make coherent**… it's been blocking attacking physics in
-earnest now for about 300 revisions and shows no sign yet of letting up."* **ARC 11 — the plan's own audit — is
-Goal 1, and it opened at r1709.** *Two of seven lanes audited.* All **202** documents dispositioned: **114** kept at
-root and indexed, **91** retired with their content routed, **0** remaining. What follows describes a filter
-that has now been run to completion; it is kept because the arcs it opened are not all closed and because the
-rules it earned are the ones the programme works by.
-
-**TWO GOALS.**
-- **GOAL 1 — consolidate the plan.** Read the 202 documents one at a time; pull live content into §1, index the
-  ones with a live job in §2, retire the rest. §3 is the filter that does it; §4 is the queue.
-- **GOAL 2 — index the programme.** Arrange the whole thing as a book, so it can be read cover to cover on
-  spin-up. §5.
-
-Working this through is **item 1 of §1**.
-
----
-
-# 0 · THE OPEN DOCUMENTS — the working set
-*Opened r1463. **These are held open every turn.** Work happens here and nowhere else. Anything not on this
-list is **in the bin**: it is not consulted, not quoted, not used as evidence, and not compared against —
-until it is pulled through the filter deliberately, one at a time.*
-
-| | Document | Its one job | State |
-|---|---|---|---|
-| 1 | `README.md` | how to spin up | **written r1464 from `KICKOFF_ARTHUR`** — first working version |
-| 2 | `INTRODUCTION.md` | what the programme is, and its scope | to be written |
-| 3 | `INDEX.md` | what is in the programme, and where | draft — not derived |
-| 4 | **this document** | consolidate the plan, index the programme | live |
-| — | `retired/` | the records, with `retired/INDEX.md` as their register — **and `retired/receipts/` beneath it (r1708) for retired computations** | live |
-| 5 | `THE_PLAN.md` | the programme's work, route and destination | **to be pulled in — Daryl: start working with it asap** |
-| 6 | `corpus/` | the seventeen papers and ARP | live |
-| 7 | `THE_CODA.md`, `CODA_FIELD_NOTE.md` | the capstone | live |
-
-**⌖ AND THE WORKING SET PREDATES THE REGISTER (noted r2377).** *This table was built at r1463, before
-`THE_LIVE_ARC` existed. **The live edge is now the lead register in `THE_LIVE_ARC`** — one ID space, gated by
-`check_burndown`, `check_supersession` and `check_kills` — and `ARC 14` is the plan to make that the *only*
-hand-maintained state document. **Read this table as the DOCUMENT set; read the register for what is open.***
-
-**Plus exactly one document under the filter at a time.** Currently: **none — the kickoffs are done (r1468).**
-Three retired into the working set; `KICKOFF_CODA_REVIEW.md` kept and indexed in §2.
-
-**The rule this exists to enforce.** When something needs a home, the home is found **on this list**. If it is
-not on the list, the finding is *"this has no home yet"* — recorded, held, and brought to Daryl. It is **not**
-solved by inventing a document and it is **not** solved by reaching into the bin for a candidate.
-
-*r1462 broke both halves: `THE_METHOD.md` was pulled out of the bin to be compared against Arthur, and a new
-document was proposed off the back of it. Neither was the task.*
-
----
-
-# 1 · THE TOP LEVEL (r1478, corrected r1479)
-
-| | The one question it answers | What is in it |
-|---|---|---|
-| **1 · `README.md`** | How do I start? | The seat, the setup, the reading order, the holds, the check-in. |
-| **2 · `INTRODUCTION.md`** | What is this? | The corpus overview and the programme's scope. **Owed** — `THE_PLAN` H.0. |
-| **3 · `INDEX.md`** | What is in it, and where? | Entries and locations, in bins. |
-| **4 · `THE_PLAN.md`** | What is left to do, and how the work is done? | The lanes and their gating · the per-turn list · the **⌗ FIGURE IDEAS REGISTER** (a holding list, not a work queue; fed by SA-8, r1727) · **`THE_ARSENAL` (the method for a paper — it belongs here and always did)** · **`THE_OPERATING_MANUAL` (the method for the INSTRUMENT — the arsenal's sibling, opened r1630)** · **`THE_WEAVE` (to be integrated)**. |
-| **5 · `corpus/`** | The work itself | Seventeen papers and ARP, with `receipts/`, the figures, and the three censuses feeding it. |
-| **6 · The capstone** | How do I do this without wrecking it? | `THE_CODA`, `CODA_FIELD_NOTE`, and the three further documents the reading order names. |
-| **7 · The record-and-navigation group** | What happened, and how do I find my way? | `CORPUS_MAP` · the **ontology map** · the **evolution map** · the glossary · **the three corpus ledgers (§1t, §1u, and `PHYSICAL_VALUES_LEDGER` §1w, opened r1634 and fed by SA-5)** · **`THE_WISDOM_LEDGER` — one of the programme's own standing documents per `INDEX`, ten compartments by moment of use, fed by SA-6 and opened at every turn per `THE_PLAN`'s opener**. **Internal shape deliberately unresolved** — this cluster wants a consolidation of its own, and it is too early to say whether it becomes one document, or several with clean edges. Left a bit of a mess on purpose. |
-
-**Nothing else is top level.** Everything else feeds one of the seven, or is a record in `retired/`.
-
-**⚠ CORRECTION r1533 — the seven dropped two of the programme's own FOUR STANDING DOCUMENTS.**
-`retired/KICKOFF_GATE` names them: *"the four standing documents, maintained in step: `CORPUS_MAP`,
-`THE_VISION`, `THE_PLAN`, `THE_SYNTHESIS`"*, and `THE_SYNTHESIS` calls itself *"the fourth standing document,
-maintained with the other three."* **The seven contain the changelog and the plan. `THE_VISION` and
-`THE_SYNTHESIS` were nowhere in it**, and nothing in the seven carries what they carry — checked: the vision's
-*crossing from coherence to empirically favoured*, and the synthesis's *puzzle / what binds the map*, return
-**zero** hits in the introduction or the plan. *(The plan does hold the **destination**, cosmiCave, ×11 — but a
-destination is not a standing account of where the programme stands against the world.)*
-**Indexed as a standing-documents group**, with the vision journal beneath them as the chain the vision grows
-along. **Whether the top level is seven or nine is now a real question and Daryl's** — the two were dropped
-because I built the seven from function, and *"where do we stand"* and *"what is the picture"* are functions I
-did not think to name.
-
-**⚠ THIS DOCUMENT IS NOT SCAFFOLDING — the r1450 framing is STRUCK r1735 (Daryl).** *It read: "it exists to
-get from 196 unfiltered documents to the list above, and **when the bin is empty it retires**… a consolidation
-plan that outlives its consolidation is just another standing document." **The retirement condition inherited
-the same conflation as the state line: it tied retirement to the BIN rather than to the GOAL.** The bin emptied
-at r1553 and the plan is still not consolidated.*
-**Daryl, r1735, and this settles the document's status rather than deferring it:** *"the consolidation plan
-clearly is not stale and it shows **zero sign of being deprecated** anytime soon as a document… **it seems to be
-the only document that can keep the work organised at the highest level**… you should not be looking to retire
-the only thing that has a hope of helping you become sane again."*
-**What IS owed instead, and it is the opposite of retirement: this document must consolidate ITSELF.** *Its
-spent sections get struck and retired **out of it** so that what remains is current and **knows the live edges
-of what is not yet complete**. **Record and live are already separable and were never marked:** §§3 (the
-filter, run to completion), 4 and 4b (the bin, empty), 6 (Goal-1 items, moved to `THE_PLAN` at r1465) and 7–11
-(explicitly headed RECORD) are **spent**; §0 the working set, §2 the arcs, §13 the sequence and §14 the standing
-actions are **live**. *A node reading this document cannot presently tell those apart, and I could not either —
-which is how r1729 came to report a bin empty for 180 revisions as though it were news.*
-
----
-
-# 2 · THE ARCS — multi-step consolidation work, held open across turns
-
-> **⌗⌗ FOLDED INTO THE REGISTER r2378 — `L-176`…`L-190` for the fifteen arcs, `L-191`…`L-199` for §13's
-> nine phases.** *One ID space, because **the assignment is a clean slate with nothing owed strewn about**,
-> and an arc is owed work. **§2 and §13 keep what only they have — the steps, the layer ordering, the
-> reasoning — and become the arcs' content; the register carries the fact that they are open.***
->
-> **⌗ AND THE OBJECTION THAT HAD TO BE ANSWERED RATHER THAN AVOIDED.** *The register's gates were built for
-> **questions with possible answers**: `check_supersession` scores a row against 268 receipts,
-> `check_burndown` runs a HOT budget, `check_kills` bars closures. ***An arc is not that*** — "has a receipt
-> already answered `ARC 14`?" is not well formed, and scoring one produces noise that pushes real candidates
-> off the list. **The resolution is neither to leave them out nor to accept the dilution: the register carries
-> a `kind`.** `kind:QUESTION` rows take supersession and the kill bar; `kind:WORK` rows do not.
-> `check_burndown` reports the two **separately**, so the struck fraction still means what it meant —
-> **95.2% of 168 questions**, not a blended number measuring nothing. `check_supersession` skips WORK rows
-> outright.*
->
-> **⌗ The tag is EXPLICIT — `kind:WORK` in the state cell — and two drafts that inferred it from prose were
-> both wrong**: *`WORK` as a substring made 104 of 192 rows WORK (`WORKED c54.48`), and `\bWORK\b` still
-> caught `L-64`, whose state cell reads "a check on my own work".* ***A classifier that reads prose will
-> classify prose.*** *Both were caught by the printed count being obviously wrong, which is why it is printed.*
-
-*Opened r1480. **This is where consolidation work lives once it is bigger than one turn.** An arc has steps,
-the steps get struck as they close, and the arc retires when its last step does. Targeted hits first; sweeps
-only when a kind has been worked enough that the rest can go as a batch.*
-
-## ⌖ THE ARC SEQUENCE — added r1738, and it did not exist
-*Daryl: "wash the car from the top down, attacking it layer by layer with the tools needed to remove that layer
-so the next tool can begin — therefore running the broadly applicable cleaning pass first, then all the
-subsequent ones that are gated till that pass exposes them." **And: is the current sequence written down?***
-**Half of it was. §13 is the sequence for the PHYSICS AND CORPUS work — eight phases *(NINE from r1835: `PHASE 9 ·
-THE LANDING` was written before Phase 6 ran)* — and it names almost none of
-the arcs** *(ARC 3 and ARC 6 incidentally; ARC 1 and ARC 11 only because they were added to its register at
-r1730).* **The arcs — the consolidation's own work — have had NO order since §2 opened at r1480.** §2 says *one
-arc at a time* and never says which. **That is the missing half, and it is written here.**
-
-**⌗ WHERE THE ARCS LIVE, stated because one of them is not here (added r2379).** *`ARC 1`–`ARC 12`, `ARC 14`
-and `ARC 15` are headed in this section.* ***`ARC 13 · THE CANON SWEEP` is headed in `THE_PLAN`***, *and is left
-there deliberately: it is a full-corpus **read**, which is that document's kind of work rather than this one's,
-and moving a 700-line section to satisfy a pattern is the tidying face.* **The anomaly is named rather than
-trusted to memory, because an arc whose home is not where its siblings live is an arc a node will not find by
-reading §2** — *which is exactly how `corpus/check_arcs.py` found it, by reporting "no section found" for that
-one alone. The gate searches both homes.*
-
-**⛭ THE LAYERS, top down, each gating the next by what it EXPOSES rather than by what it finishes.**
-
-**LAYER 0 — THE NODE. `ARC 12 · hold the seven`, then the README rewrite.**
-*Broadest, and it gates literally everything downstream **forever**, because every future turn begins with a
-spin-up. **The evidence it is layer zero: r1628** — a node completed the whole reading order, gave the four-part
-handback, and **held none of the operating layer**, then rediscovered it one document at a time by making the
-mistake each guard prevents. **This session repeated that for ~120 revisions.** *Until a node arrives holding
-the seven, every layer below is worked by someone re-deriving the tools.*
-**State: step ③ done (`THE_METHOD` read, indexed); ① one of seven read end to end; ②, ④ owed.**
-
-**⌖ AND `ARC 14 · THE SINGLE EDGE` IS LAYER 1's INSTRUMENT — added r2377.** *`ARC 11` says what the plan
-owes; **ARC 14 is the mechanism by which the whole register layer stops going stale**, and it reaches wider
-than `THE_PLAN`. Its steps 0–3 are mechanical and build against any revision; **run them before ARC 11's
-content pass**, because a content pass into an ungated layer is the r1471 finding repeating.*
-
-**LAYER 1 — THE PLANNING LAYER. `ARC 11 · the plan's own audit` — and this is GOAL 1.**
-*Exposed by layer 0 and gates every item beneath it: **we cannot work a plan we do not understand, and cannot
-understand a plan that does not know itself.** **State: 2 of 7 lanes** (Lane 1 four closed, Lane 5 all nine),
-Lane 7 opened with eighteen items left, Lanes 2/3/4/8 untouched.*
-*⌗ And its yield is not plan repair — it is corpus advance: a 567-revision citation debt became a five-home
-dissolution; a mis-specified gate found a gap in P10.*
-
-**LAYER 2 — THE ONE FULL-CORPUS PASS. ✔ BOOKED r1790 as `ARC 13 · THE CANON SWEEP`, Daryl-directed.**
-*It was named at r1636 and sat "not started" for 154 revisions. **Six passengers**, not four: the canon itself ·
-`D.8` · `D.9` · `D.13` · `D.14` · **P14's ten-avenue comb** (r1786). **Plus a seventh CHANNEL that is the pass's
-main yield rather than a side effect — the INCIDENTALS.** Daryl: *"the things that pop out of the woodwork as we
-run that full corpus read… they point to things we didn't notice before. **It's so common it's almost to be
-expected.**"* **And the reason it is bookable now and was not before: the pass was always affordable; what was
-missing was somewhere to put what it turns up** — SA-9, the not-found form, the header-vs-body check, the
-heading count, and the ledger's ten compartments all arrived this session. ***A sweep run earlier would have
-found the same things and dropped most of them.*** **Ordered by `INTRODUCTION`'s physicist's arc, so the pass
-doubles as the first pass of the deferred broadening.**
-**⌗ AND WHAT IT DEFERS, stated so it is not lost: the targeted broadening through mathematics and physics** —
-*the two arcs as the ordering lens for the reach sweeps (r1741). **Daryl: "I'm really excited to run [it]… But it
-should wait till we captured the owed and the incidentals in a full-corpus read."***
-*`D.8` `D.9` `D.13` `D.14` **and ARC 9's canon sweep all ride a single read-through that nothing schedules**
-(found r1721–r1722; last one r1406). **This is the broadly-applicable pass in Daryl's sense: one read, five
-purposes** — the five work-blocker forms, cross-corpus defragmentation, the forward pointer, the unrouted gaps,
-and ARC 9's five guard patterns. **It cannot run before layer 1, because ARC 11 is still discovering what the
-patterns are.***
-
-**LAYER 3 — THE REMAINING ARCS, cheap and unblocked, taken as they are exposed.**
-*`ARC 1`'s last item (`THE_WEAVE`'s consolidation analysis → level ⑤ RECORD) · `ARC 3`'s glossary question
-(deliberately open: one document or several) · `ARC 4`'s ~55 untested bucket documents · `ARC 5` **standing, not
-complete** (r1697 found three more stale headers) · `ARC 10`'s second source — **this node's own transcript**,
-read for the failures that came from not having the refined thing in place.*
-
-**LAYER 4 — THE PHYSICS. §13's Phases 6, 7, 8 — and 9, THE LANDING, which rides 7 and 8 rather than following them (written r1835).**
-*Phase 6's two checks are **done** (r1598, and A2.10 §II.1 unblocked); **Phase 7 is the build** — item 2, four
-of seven families closing off one collapse excursion, nine documents of prior work gathered; Phase 8 the two
-bakes. **These are unblocked today and always have been** — §13's own note says so: *"nothing in this register is
-blocked by anything else in it."* **What gates them is not dependency but attention**, and layers 0–2 are what
-frees it.*
-
-**⚠ THE ONE THING THIS SEQUENCE IS NOT.** *It is **not** a claim that physics waits on housekeeping. §13 is
-explicit: the collapse-excursion build **has been startable since r1449**. The layers order **what makes the work
-survivable** — a build worked by a node that does not hold the seven, against a plan that does not know itself,
-produces results the programme then loses. **That is the r1471 finding: five plan items stale from their own
-session, findings that landed in papers and never reached the plan.***
-
-**The rule that keeps arcs from bleeding.** One arc is worked at a time. If working it turns up something that
-belongs to another arc, **write it into that arc and carry on** — do not switch. If it turns up something too
-big for consolidation at all, **it goes to `THE_PLAN`** and we move on.
-
 ## ⌖⌖ ARC 14 · THE SINGLE EDGE — *one live list, everything else a view, a method or a record*
 
 *Opened r2377 (Daryl-directed, from the r2377 spin-up's currency audit). **This is LAYER 1's missing
@@ -739,6 +470,329 @@ eighth face exactly. **Fixed on this line's tree; not routed to the fork.***
 
 ---
 
+# Consolidate the plan, and index the programme
+
+> ## ⌗⌗ BROUGHT CURRENT r2376+c54.174 — *the acoustic front, c54.168–c54.174*
+>
+> **⚑ THE INSTRUMENT WAS BUILT, AND WITH IT THE TWO THINGS WHOSE ABSENCE MADE EVERY EARLIER FIGURE UNREADABLE.**
+> *`computations/beyond_the_wall/ACOUSTIC_two_arm.py` carries both arms on **one** set of equations plus an
+> undriven guard. **Undriven, the source comb lands on the integers on both arms** ($\Lambda$CDM $1.0147/2.0005$,
+> CR $1.0121/1.9968$), so the sound horizon, the measure, the $k$-grid and the phase extraction are validated as
+> an ensemble and every departure in a driven run is the driving. **And the control lands**: after the
+> line-of-sight rebuild, $\ell_1/\ell_A$ within $0.16\%$ of the sky.*
+>
+> **⚑ THE DEFICIT IS MEASURED, AND IT SURVIVED THE THING MOST LIKELY TO HAVE CAUSED IT.** *$\ell_1/\ell_A=0.5703$
+> against the control's $0.7300$ — $21.9\%$ against a $0.16\%$ floor. **Discreteness ruled out by measurement**
+> (the physical ladder and a dense continuum give identical peaks); **and the whole last-scattering treatment
+> replaced** at c54.173, the control improving tenfold while the CR number did not move to four figures.*
+>
+> **⚑ AND ITS MECHANISM IS DERIVED, NOT DESCRIBED.** *The potential enters the plasma twice. **In flat
+> $\Lambda$CDM the two couplings are each flat in $k$ and OPPOSE — so the standard driving shift's universality
+> is a cancellation.** On a radiation-free rate they both advance and **add**, and the $k$-dependence sits in the
+> gradient channel: $Q=3\kappa c_s\mathcal{H}/\pi k$, predicted to $0.30\%$.* ⌗ ***The abandoned 52/53 fork's
+> timescale $3\mathcal{H}/k^2$ is confirmed here independently and its exponent corrected by exactly one factor
+> of $k$*** — *the factor $Q$'s own definition carries.*
+>
+> **⛔ THE LIKELIHOOD CANNOT ARBITRATE, AND THAT IS THE ANSWER RATHER THAN AN EVASION.** *`L-147` struck at
+> c54.172 with its falsifier fixed before the Planck bins were opened. The pipeline is wired at
+> $\chi^2/\mathrm{dof}=0.96$; **this instrument's own $\Lambda$CDM control sits at $103$**, because Planck's
+> binned errors are tenths of a per cent and the transfer's heights carry $13$–$34\%$.* ⚠ ***My pre-registered
+> rule was defective — a ratio test with no absolute companion — and its correction ran in the construction's
+> favour, which is flagged in `THE_BASE_RATE` entry twenty-nine rather than quietly applied.***
+>
+> **⌗ WHAT IS OWED: the HEIGHT half of the transfer.** *Positions are sub-per-cent; heights are not. Two named
+> causes, neither a CR question — no polarisation term in the source, and a tight-coupling photon closure that
+> fails exactly where the visibility is. **That is front #2, and it is the only thing between the derived
+> mechanism and a verdict.***
+
+
+> ## ⌗⌗⌗ BROUGHT CURRENT r2376+c54.167 AFTER 135 REVISIONS — *discharging front #19*
+>
+> ⚠ ***This register last moved at c54.32. The fork ran to c54.166 behind it, and the gate whose whole job is
+> to catch that could not see it***: `check_currency` read its own reference point from `FORK_c54.md`, a
+> narrative document frozen at c54.35, so from c54.36 onward it compared every register against a fixed point
+> in the past and reported all of them current. *The tell — a register at **lag −130** — was printed in its own
+> output every run.* **Found at c54.166 while fixing an unrelated cosmetic item; `THE_BASE_RATE` entry
+> twenty-seven; gate now reads the git log, which cannot freeze.**
+>
+> ### ⚑ THE COLLAPSE-PERTURBATION ARC (c54.114–c54.153) — *capstoned in `THE_ASSUMPTIONS_RETREATED_UPWARD.md`*
+>
+> **What stands.** *No primordial $B$-modes at any conceivable sensitivity ($\mathcal{P}_T\simeq5\times10^{-111}$
+> against a ceiling of $7\times10^{-11}$), and the tensor sector is the one place the transfer runs with **no**
+> idealisation, $z_T=aM_{\rm Pl}/2$ being exact for any content. The leading-order interior is **adequate**, with
+> six orders to spare, and **the Bianchi shear is not a free datum but the long-wavelength growing tensor mode**,
+> so bounding the tensors bounded it. The true hydrodynamical scalar variable is $z_S=a(a+4B/3A)/a'$ and **the
+> scalar monodromy is $4\pi/\rho$, twice the tensor's** — the doubling verified to be the entire effect.
+> Recollapse **is** the Nariai threshold. And the composition is **derived** rather than bounded:
+> $\rho\simeq5.4\times10^{-2}$, $a_{\rm eq}=A\rho^2/4=1.492$ Mpc against the observable leg's $1.490$, with the
+> progenitor turning around at $z\simeq1.5$ and a mass $4.3\times10^{52}$ kg.*
+>
+> **What was withdrawn, and the pattern it makes.** *The full-lap Floquet apparatus (c54.143–148) and its own
+> correction (c54.149) are both withdrawn.* ***The thing being assumed kept moving upward*** *— observable, then
+> input, then background, then the recursion itself — which is what a sector looks like when the tools are sound
+> and the frame is not yet.*
+>
+> ### ⚑ FRONT #1 SETTLED (c54.162) — *the construction's recursion does not run on modes*
+>
+> *The programme's leading item for twelve revisions, settled by reading four papers plus one line of
+> asymptotics.* **(i)** *There is no map between the patch's closed-$S^3$ harmonics and the ambient universe's,
+> because **no spacelike datum crosses**: P7's correspondence is null boundary to null boundary "with no
+> spacelike slice entering the map", and the collapse interior is Kantowski–Sachs on $\mathbb{R}\times S^2$.*
+> **(ii)** *Moot, computably: $|aH|\to1/x$ at the crunch while $c_s$ saturates, so **every** mode
+> $\ell\simeq28$–$2475$ freezes strictly before it.* **(iii)** *No — frozen content has an amplitude and no
+> phase.* ***One lap, not a tower: a genealogy of universes, not a recursion on modes.*** ⚠ *It removed P7's
+> "a cold species and no other" selection rule — **a loss of a claimed prediction, recorded as one** in P7, P15,
+> the receipt that drew it and its INDEX row.*
+>
+> ### ⚑ THE REPRODUCIBILITY LAYER REBUILT (c54.151–c54.161)
+>
+> *A receipt-vs-sentence audit measured the base rate — is the cited computation a computation of the claim? —
+> at 14/28, **1/16**, 9/24, 5/9 and 13/20 by sector, and found **number-drift tracks revision and nothing else**.*
+> **The assertion debt went 188 → 0**, *policed by `scripts/lint_assertions.py`, which classifies every assertion
+> HOLLOW / UNPINNED / PINNED and was built **before** the sweep it governs.* **And the eleventh gate,
+> `scripts/run_all_receipts.py`, runs every registered receipt from its own directory — which nothing had ever
+> done**, *and caught a registered, cited receipt exiting 1 on ImportError before reaching a line of computation.*
+>
+> ### ⚑ FRONT #5 SETTLED AS POSED (c54.164), AND IT WAS POSED WRONG
+>
+> *`ROBUST_p1p2_scan`'s first-peak position and height ratio are **not stable under its own documented initial
+> conditions**: substituting only its initial-data block moves $\ell_1$ over $\{150,165,315\}$ and $P_1/P_2$ over
+> $\{0.93,1.21,1.45,2.02\}$. **Its docstring says "velocities zero"; the code does not impose it, and imposing it
+> returns $P_1/P_2=2.02$ against the sky's $2.21$ — where the paper reported $1.45$ as its disagreement.***
+> **The 150 is withdrawn; 220 still reads as what the transfer argument gives.** *What replaced the front: the
+> propagated comb sits at $0.72$–$0.79$ of $\pi/\rs$ under every initial condition — since **diagnosed as the
+> driving** by the acoustic fold's undriven guard (`FOLD52_ASSESSMENT.md`).*
+>
+> ### ⌗ THE OPERATING LAYER
+>
+> *`PO-7` reworded and `PO-8` restated (c54.165–166, Daryl-directed; **neither closed**). `A·1` — which P8 calls
+> the deepest question the construction raises — **folded as `L-174` after being live and unregistered since
+> r565**. Node 56's routing list discharged. **The corpus now has ten standing gates plus three instruments
+> outside them** — `run_all_receipts`, `regen_teed_up`, `audit_index`. `WHATS_TEED_UP` is **generated** rather
+> than hand-kept, and the register stands at **5 open leads against 162 struck** where the stale queue advertised
+> 44 open.*
+>
+> **For the live fronts read [`THE_WORK.md`](THE_WORK.md); for what this fork has learned about its own failures,
+> [`THE_BASE_RATE.md`](THE_BASE_RATE.md), twenty-seven entries.**
+
+
+> **⌗ BROUGHT CURRENT r2376+c54.32** *(gate: `corpus/check_currency.py`, which now fails when a standing
+> register falls more than six revisions behind the fork).* **What has landed since this file was last current:**
+> ***(A1) DISCHARGED*** *(`L-01`) — CR's own operator is the **kernel of the matter functional**, and run at
+> general $D$ its entire solution space is Tangherlini–de Sitter, so the dimension result's input is **derived,
+> not imported**; the **LOCK** survives with it (`L-89`: $A=f$ and $p_r=-\rho$ are the same condition at every
+> $D$).* ***THE L8.1-a WELD IS SPLIT*** *(`L-67`/`L-92`/`L-95`) — the hinge three is the **within-state** index
+> (a bound triple takes one puncture per hinge, forced by the causal trichotomy) and **generation moves to the
+> turnaround three**; the count is untouched because **both threes are $D-1$, descending from $f$'s degree-$(D-1)$
+> numerator** (`L-07`), and the chirality survives verbatim because $R$ reaches the turnaround branch exactly
+> when $D$ is even. Landed in P14 `sec:whichthree`.* ***THE FERMION SECTOR READ IN THE GEOMETRY*** *
+> ([`THE_FERMION_SECTOR_GEOMETRY.md`](THE_FERMION_SECTOR_GEOMETRY.md), a spine step) — the wall **is** the graze
+> point **is** the $r=0$ branch point; charge is a **winding** whose thirds are **derived** from closure; triality
+> $=-\lambda\bmod3$ and chirality $=\operatorname{sign}\lambda$ computed on `prop:wall`'s own solution; and the
+> honest negative that the mode tower **does not terminate**, so the corpus gets the **grading** and not the
+> multiplet count.* ***AND THE OPERATING LAYER:*** *`PROTECTED_OPEN` gained checks 5–7; the arc gained rules 4–5;
+> and the corpus now has **five gates** — receipts, kills, burn-down, compile, currency.*
+> **The live queue is [`WHATS_TEED_UP.md`](WHATS_TEED_UP.md); the accounting is [`THE_BURN_DOWN.md`](THE_BURN_DOWN.md).**
+
+
+*The two-goal plan. Opened r1449.*
+
+> # ⌖ WHAT THIS DOCUMENT IS, AND WHAT IS LIVE IN IT — settled r1735, Daryl-directed
+> **It is not scaffolding and it is not near retirement.** *Daryl: "the consolidation plan clearly is not stale
+> and it shows **zero sign of being deprecated** anytime soon… **it seems to be the only document that can keep
+> the work organised at the highest level**… you should not be looking to retire the only thing that has a hope
+> of helping you become sane again."*
+> **The two goals are at very different states, and the document said otherwise for 182 revisions.**
+> **GOAL 2 — index the programme: substantially done.** *202 documents dispositioned, 114 indexed, 91 retired,
+> the six grains named, the capstone at five, the resources recovered.*
+> **GOAL 1 — consolidate the plan: BARELY STARTED.** *Emptying the bin was the **means** — it made the programme
+> knowable so the plan could be consolidated against it. **`THE_PLAN` is 260 KB across seven strata citing 198
+> revisions from r1003, and two of its seven lanes have been audited.** It has been blocking physics in earnest
+> for ~300 revisions. **That is Goal 1, it is ARC 11, and it opened at r1709.***
+> **⌗ LIVE HERE:** *§0 the working set · §2 the arcs (ARC 11 above all) · §13 the sequence and its register ·
+> §14 the eight standing actions.*
+> **⌫ RECORD HERE, each now marked at its own heading:** *§3 the filter · §4 and §4b the bin · §5 indexed
+> resources · §6's items, all moved out · §§7–11, already headed RECORD.*
+> **Why the marking matters more than it looks:** *a node — and I did this at r1729 — reads the record as the
+> plan, reports the bin's state as though it were news, and misses that the live edge is one section away.*
+
+**Contents** — [0 · Working set](#0--the-open-documents--the-working-set) · [1 · The target](#1--the-top-level-r1478-corrected-r1479) · [2 · The arcs](#2--the-arcs--multi-step-consolidation-work-held-open-across-turns) · [3 · The filter](#3--the-filter) · [4 · The bin](#4--the-bin) · [5 · Indexed resources](#5--indexed-resources) · [6 · Consolidation work](#6--goal-1--the-work) · [7–10 · Record](#7--goal-2--index-the-programme) · [11 · Open thought](#11--a-thought-not-a-decision--this-document-as-the-home-for-consolidated-outputs) · [12 · Log](#12--log)
+
+**The job.** ~1450 revisions across four phases, each leaving its planning notes behind without retiring them:
+**202 documents** of every era, many stale, the staleness leaking into whatever was being worked from. This
+document consolidates them — reading each one and either pulling its live content into §1, indexing it in §2 if
+it has a live job, or retiring it into `retired/`.
+
+**⚑ STATE, r1553 — THE BIN IS EMPTY.** **⚠ AND THAT IS NOT GOAL 1 — corrected r1735 (Daryl).** *This line read
+"GOAL 1 IS DONE. The bin is empty" for 182 revisions, welding two different claims. **Goal 1 is
+*consolidate the plan*. Emptying the bin was the MEANS: it dispositioned 202 documents so that the plan could
+then be consolidated against a knowable programme.** Daryl, r1735: *"while the programme has been indexed now,
+the 400 documents, **I don't think the plan actually is consolidated yet because the whole fucking thing is
+still a giant mess we are trying to pull together and make coherent**… it's been blocking attacking physics in
+earnest now for about 300 revisions and shows no sign yet of letting up."* **ARC 11 — the plan's own audit — is
+Goal 1, and it opened at r1709.** *Two of seven lanes audited.* All **202** documents dispositioned: **114** kept at
+root and indexed, **91** retired with their content routed, **0** remaining. What follows describes a filter
+that has now been run to completion; it is kept because the arcs it opened are not all closed and because the
+rules it earned are the ones the programme works by.
+
+**TWO GOALS.**
+- **GOAL 1 — consolidate the plan.** Read the 202 documents one at a time; pull live content into §1, index the
+  ones with a live job in §2, retire the rest. §3 is the filter that does it; §4 is the queue.
+- **GOAL 2 — index the programme.** Arrange the whole thing as a book, so it can be read cover to cover on
+  spin-up. §5.
+
+Working this through is **item 1 of §1**.
+
+---
+
+# 0 · THE OPEN DOCUMENTS — the working set
+*Opened r1463. **These are held open every turn.** Work happens here and nowhere else. Anything not on this
+list is **in the bin**: it is not consulted, not quoted, not used as evidence, and not compared against —
+until it is pulled through the filter deliberately, one at a time.*
+
+| | Document | Its one job | State |
+|---|---|---|---|
+| 1 | `README.md` | how to spin up | **written r1464 from `KICKOFF_ARTHUR`** — first working version |
+| 2 | `INTRODUCTION.md` | what the programme is, and its scope | to be written |
+| 3 | `INDEX.md` | what is in the programme, and where | draft — not derived |
+| 4 | **this document** | consolidate the plan, index the programme | live |
+| — | `retired/` | the records, with `retired/INDEX.md` as their register — **and `retired/receipts/` beneath it (r1708) for retired computations** | live |
+| 5 | `THE_PLAN.md` | the programme's work, route and destination | **to be pulled in — Daryl: start working with it asap** |
+| 6 | `corpus/` | the seventeen papers and ARP | live |
+| 7 | `THE_CODA.md`, `CODA_FIELD_NOTE.md` | the capstone | live |
+
+**Plus exactly one document under the filter at a time.** Currently: **none — the kickoffs are done (r1468).**
+Three retired into the working set; `KICKOFF_CODA_REVIEW.md` kept and indexed in §2.
+
+**The rule this exists to enforce.** When something needs a home, the home is found **on this list**. If it is
+not on the list, the finding is *"this has no home yet"* — recorded, held, and brought to Daryl. It is **not**
+solved by inventing a document and it is **not** solved by reaching into the bin for a candidate.
+
+*r1462 broke both halves: `THE_METHOD.md` was pulled out of the bin to be compared against Arthur, and a new
+document was proposed off the back of it. Neither was the task.*
+
+---
+
+# 1 · THE TOP LEVEL (r1478, corrected r1479)
+
+| | The one question it answers | What is in it |
+|---|---|---|
+| **1 · `README.md`** | How do I start? | The seat, the setup, the reading order, the holds, the check-in. |
+| **2 · `INTRODUCTION.md`** | What is this? | The corpus overview and the programme's scope. **Owed** — `THE_PLAN` H.0. |
+| **3 · `INDEX.md`** | What is in it, and where? | Entries and locations, in bins. |
+| **4 · `THE_PLAN.md`** | What is left to do, and how the work is done? | The lanes and their gating · the per-turn list · the **⌗ FIGURE IDEAS REGISTER** (a holding list, not a work queue; fed by SA-8, r1727) · **`THE_ARSENAL` (the method for a paper — it belongs here and always did)** · **`THE_OPERATING_MANUAL` (the method for the INSTRUMENT — the arsenal's sibling, opened r1630)** · **`THE_WEAVE` (to be integrated)**. |
+| **5 · `corpus/`** | The work itself | Seventeen papers and ARP, with `receipts/`, the figures, and the three censuses feeding it. |
+| **6 · The capstone** | How do I do this without wrecking it? | `THE_CODA`, `CODA_FIELD_NOTE`, and the three further documents the reading order names. |
+| **7 · The record-and-navigation group** | What happened, and how do I find my way? | `CORPUS_MAP` · the **ontology map** · the **evolution map** · the glossary · **the three corpus ledgers (§1t, §1u, and `PHYSICAL_VALUES_LEDGER` §1w, opened r1634 and fed by SA-5)** · **`THE_WISDOM_LEDGER` — one of the programme's own standing documents per `INDEX`, ten compartments by moment of use, fed by SA-6 and opened at every turn per `THE_PLAN`'s opener**. **Internal shape deliberately unresolved** — this cluster wants a consolidation of its own, and it is too early to say whether it becomes one document, or several with clean edges. Left a bit of a mess on purpose. |
+
+**Nothing else is top level.** Everything else feeds one of the seven, or is a record in `retired/`.
+
+**⚠ CORRECTION r1533 — the seven dropped two of the programme's own FOUR STANDING DOCUMENTS.**
+`retired/KICKOFF_GATE` names them: *"the four standing documents, maintained in step: `CORPUS_MAP`,
+`THE_VISION`, `THE_PLAN`, `THE_SYNTHESIS`"*, and `THE_SYNTHESIS` calls itself *"the fourth standing document,
+maintained with the other three."* **The seven contain the changelog and the plan. `THE_VISION` and
+`THE_SYNTHESIS` were nowhere in it**, and nothing in the seven carries what they carry — checked: the vision's
+*crossing from coherence to empirically favoured*, and the synthesis's *puzzle / what binds the map*, return
+**zero** hits in the introduction or the plan. *(The plan does hold the **destination**, cosmiCave, ×11 — but a
+destination is not a standing account of where the programme stands against the world.)*
+**Indexed as a standing-documents group**, with the vision journal beneath them as the chain the vision grows
+along. **Whether the top level is seven or nine is now a real question and Daryl's** — the two were dropped
+because I built the seven from function, and *"where do we stand"* and *"what is the picture"* are functions I
+did not think to name.
+
+**⚠ THIS DOCUMENT IS NOT SCAFFOLDING — the r1450 framing is STRUCK r1735 (Daryl).** *It read: "it exists to
+get from 196 unfiltered documents to the list above, and **when the bin is empty it retires**… a consolidation
+plan that outlives its consolidation is just another standing document." **The retirement condition inherited
+the same conflation as the state line: it tied retirement to the BIN rather than to the GOAL.** The bin emptied
+at r1553 and the plan is still not consolidated.*
+**Daryl, r1735, and this settles the document's status rather than deferring it:** *"the consolidation plan
+clearly is not stale and it shows **zero sign of being deprecated** anytime soon as a document… **it seems to be
+the only document that can keep the work organised at the highest level**… you should not be looking to retire
+the only thing that has a hope of helping you become sane again."*
+**What IS owed instead, and it is the opposite of retirement: this document must consolidate ITSELF.** *Its
+spent sections get struck and retired **out of it** so that what remains is current and **knows the live edges
+of what is not yet complete**. **Record and live are already separable and were never marked:** §§3 (the
+filter, run to completion), 4 and 4b (the bin, empty), 6 (Goal-1 items, moved to `THE_PLAN` at r1465) and 7–11
+(explicitly headed RECORD) are **spent**; §0 the working set, §2 the arcs, §13 the sequence and §14 the standing
+actions are **live**. *A node reading this document cannot presently tell those apart, and I could not either —
+which is how r1729 came to report a bin empty for 180 revisions as though it were news.*
+
+---
+
+# 2 · THE ARCS — multi-step consolidation work, held open across turns
+*Opened r1480. **This is where consolidation work lives once it is bigger than one turn.** An arc has steps,
+the steps get struck as they close, and the arc retires when its last step does. Targeted hits first; sweeps
+only when a kind has been worked enough that the rest can go as a batch.*
+
+## ⌖ THE ARC SEQUENCE — added r1738, and it did not exist
+*Daryl: "wash the car from the top down, attacking it layer by layer with the tools needed to remove that layer
+so the next tool can begin — therefore running the broadly applicable cleaning pass first, then all the
+subsequent ones that are gated till that pass exposes them." **And: is the current sequence written down?***
+**Half of it was. §13 is the sequence for the PHYSICS AND CORPUS work — eight phases *(NINE from r1835: `PHASE 9 ·
+THE LANDING` was written before Phase 6 ran)* — and it names almost none of
+the arcs** *(ARC 3 and ARC 6 incidentally; ARC 1 and ARC 11 only because they were added to its register at
+r1730).* **The arcs — the consolidation's own work — have had NO order since §2 opened at r1480.** §2 says *one
+arc at a time* and never says which. **That is the missing half, and it is written here.**
+
+**⛭ THE LAYERS, top down, each gating the next by what it EXPOSES rather than by what it finishes.**
+
+**LAYER 0 — THE NODE. `ARC 12 · hold the seven`, then the README rewrite.**
+*Broadest, and it gates literally everything downstream **forever**, because every future turn begins with a
+spin-up. **The evidence it is layer zero: r1628** — a node completed the whole reading order, gave the four-part
+handback, and **held none of the operating layer**, then rediscovered it one document at a time by making the
+mistake each guard prevents. **This session repeated that for ~120 revisions.** *Until a node arrives holding
+the seven, every layer below is worked by someone re-deriving the tools.*
+**State: step ③ done (`THE_METHOD` read, indexed); ① one of seven read end to end; ②, ④ owed.**
+
+**LAYER 1 — THE PLANNING LAYER. `ARC 11 · the plan's own audit` — and this is GOAL 1.**
+*Exposed by layer 0 and gates every item beneath it: **we cannot work a plan we do not understand, and cannot
+understand a plan that does not know itself.** **State: 2 of 7 lanes** (Lane 1 four closed, Lane 5 all nine),
+Lane 7 opened with eighteen items left, Lanes 2/3/4/8 untouched.*
+*⌗ And its yield is not plan repair — it is corpus advance: a 567-revision citation debt became a five-home
+dissolution; a mis-specified gate found a gap in P10.*
+
+**LAYER 2 — THE ONE FULL-CORPUS PASS. ✔ BOOKED r1790 as `ARC 13 · THE CANON SWEEP`, Daryl-directed.**
+*It was named at r1636 and sat "not started" for 154 revisions. **Six passengers**, not four: the canon itself ·
+`D.8` · `D.9` · `D.13` · `D.14` · **P14's ten-avenue comb** (r1786). **Plus a seventh CHANNEL that is the pass's
+main yield rather than a side effect — the INCIDENTALS.** Daryl: *"the things that pop out of the woodwork as we
+run that full corpus read… they point to things we didn't notice before. **It's so common it's almost to be
+expected.**"* **And the reason it is bookable now and was not before: the pass was always affordable; what was
+missing was somewhere to put what it turns up** — SA-9, the not-found form, the header-vs-body check, the
+heading count, and the ledger's ten compartments all arrived this session. ***A sweep run earlier would have
+found the same things and dropped most of them.*** **Ordered by `INTRODUCTION`'s physicist's arc, so the pass
+doubles as the first pass of the deferred broadening.**
+**⌗ AND WHAT IT DEFERS, stated so it is not lost: the targeted broadening through mathematics and physics** —
+*the two arcs as the ordering lens for the reach sweeps (r1741). **Daryl: "I'm really excited to run [it]… But it
+should wait till we captured the owed and the incidentals in a full-corpus read."***
+*`D.8` `D.9` `D.13` `D.14` **and ARC 9's canon sweep all ride a single read-through that nothing schedules**
+(found r1721–r1722; last one r1406). **This is the broadly-applicable pass in Daryl's sense: one read, five
+purposes** — the five work-blocker forms, cross-corpus defragmentation, the forward pointer, the unrouted gaps,
+and ARC 9's five guard patterns. **It cannot run before layer 1, because ARC 11 is still discovering what the
+patterns are.***
+
+**LAYER 3 — THE REMAINING ARCS, cheap and unblocked, taken as they are exposed.**
+*`ARC 1`'s last item (`THE_WEAVE`'s consolidation analysis → level ⑤ RECORD) · `ARC 3`'s glossary question
+(deliberately open: one document or several) · `ARC 4`'s ~55 untested bucket documents · `ARC 5` **standing, not
+complete** (r1697 found three more stale headers) · `ARC 10`'s second source — **this node's own transcript**,
+read for the failures that came from not having the refined thing in place.*
+
+**LAYER 4 — THE PHYSICS. §13's Phases 6, 7, 8 — and 9, THE LANDING, which rides 7 and 8 rather than following them (written r1835).**
+*Phase 6's two checks are **done** (r1598, and A2.10 §II.1 unblocked); **Phase 7 is the build** — item 2, four
+of seven families closing off one collapse excursion, nine documents of prior work gathered; Phase 8 the two
+bakes. **These are unblocked today and always have been** — §13's own note says so: *"nothing in this register is
+blocked by anything else in it."* **What gates them is not dependency but attention**, and layers 0–2 are what
+frees it.*
+
+**⚠ THE ONE THING THIS SEQUENCE IS NOT.** *It is **not** a claim that physics waits on housekeeping. §13 is
+explicit: the collapse-excursion build **has been startable since r1449**. The layers order **what makes the work
+survivable** — a build worked by a node that does not hold the seven, against a plan that does not know itself,
+produces results the programme then loses. **That is the r1471 finding: five plan items stale from their own
+session, findings that landed in papers and never reached the plan.***
+
+**The rule that keeps arcs from bleeding.** One arc is worked at a time. If working it turns up something that
+belongs to another arc, **write it into that arc and carry on** — do not switch. If it turns up something too
+big for consolidation at all, **it goes to `THE_PLAN`** and we move on.
+
 ## WHAT MUST BE TRUE BEFORE THE WORK RUNS — ordered (r1482)
 
 **First, the honest part: the physics is not blocked.** The corpus compiles, every computed claim carries a
@@ -800,7 +854,7 @@ supposed to make finding things easier… you can't do one without the other."*
 **THE LINK SCOPE, excavated r1733 rather than estimated.** *`README` **28** · `INTRODUCTION` **3** · `INDEX`
 **115** · `THE_PLAN` **86** · `CONSOLIDATE` **223** · `THE_CODA` **17**. **Every one now resolves** — the single
 dead reference was a name error, `THIRD_ARC_T01_cmb_heights_lookahead.md` for the real
-`retired/THIRD_ARC_T01_heights_firstrun.md`, propagated into both `THE_PLAN` and `INDEX`; fixed in both. And
+`THIRD_ARC_T01_heights_firstrun.md`, propagated into both `THE_PLAN` and `INDEX`; fixed in both. And
 `CONSOLIDATE`'s four residual broken links resolved: **two exist at `resources/` and always did**, two are
 absent and cited only by the field note as history — **left, because a record may cite a document that no longer
 exists and a live document may not.***
@@ -1689,10 +1743,10 @@ being the most obviously disposable. The presumption inverted.***
         ***"do NOT violate — this is what tripped two nodes"***: L1 the foliation stacking rate, radiation-free,
         what rides outward from the seam; **L2 the leaf's local rate where radiation gravitates normally and
         the acoustic driving lives**; L3 the projection. *Conflating L1 and L2 is the veer that thrashes.*
-      - **`retired/A4_matter_seam_crossing_build.md`** — family 1's first-build log. **`retired/A5_fermion_sector_build.md`**
-        (43K) — family 6's. **`retired/THIRD_ARC_T01_heights_firstrun.md`** — A2.3's first run.
-        **`retired/PLANCK_from_CR_build.md`** — T6 of the constant-ledger plan, A5.2.
-      - **`retired/CMB_ACOUSTIC_FRONTIER_STATUS.md`** — self-marked *"⛔ SUPERSEDED (r497–r500) — DO NOT WORK FROM"*.
+      - **`A4_matter_seam_crossing_build.md`** — family 1's first-build log. **`A5_fermion_sector_build.md`**
+        (43K) — family 6's. **`THIRD_ARC_T01_heights_firstrun.md`** — A2.3's first run.
+        **`PLANCK_from_CR_build.md`** — T6 of the constant-ledger plan, A5.2.
+      - **`CMB_ACOUSTIC_FRONTIER_STATUS.md`** — self-marked *"⛔ SUPERSEDED (r497–r500) — DO NOT WORK FROM"*.
         **The kind polices itself where it can.**
       **Disposition: these are build material, not record. They belong with the work they serve** — the
       collapse-excursion manual with item 2 above all. **Not retired; pulled forward.**
@@ -1709,18 +1763,333 @@ sweep would be doing.
 
 ---
 
-# 3–11 · ⌫ **RETIRED r2378 — the filter, the bin, and the Goal-2 record.**
+# 3 · THE FILTER — ⌫ **SPENT (r1735). RECORD.** **⌗ SWEPT r1787 for live content — eight record sections,
+**one live marker between them**, and it is a self-report rather than an owed item: *step 7 "failed to write on
+its first attempt (r1525), reporting success while the anchor did not match — caught by reading the output
+rather than trusting the call."* **That is a warning about the step, not work owed**, so the record marking
+holds across all eight. *Contrast `THE_PLAN`, whose three strata hid a genuinely owed item (r1786).*** *Run to completion; the bin emptied r1553. Kept because its rules are the ones the programme works by — steps 2, 7 and the three invariants are live discipline quoted elsewhere. **Not a queue to work.***
+Everything starts **in the bin** (§4): unfiltered, not part of the plan. Then, one document at a time:
+1. **Pull** it from the bin.
+2. **Read it in full.** Not headings. Not grep. The whole document.
+3. **Extract** every live item, and any connection that suggests itself while reading.
+4. **Place** each item into §1, or into an existing resource — never into a new document.
+5. **Dispose:**
+   - **INDEX** — it has a live job. It stays where it is and gets a row in §2 saying what it is and what the job
+     is.
+   - **RETIRE** — its content is now carried elsewhere. It is **moved to `retired/`** with a banner saying
+     where its content went, so a directory listing shows only what is live. Kept, not deleted.
+6. **Record** it in §4 so the bin shrinks visibly and nothing is filtered twice.
+7. **VERIFY IT LANDED (r1525).**
+   **⚠⚠ AND VERIFY WHAT ELSE MOVED (r1589) — the most expensive lesson of the session.** A slice-based edit at
+   **r1585** — `s[:i] + new + s[j:]` — had its **end-anchor match far beyond the intended region** and **deleted
+   eight plan items in one cut**: 4, 5, 6, 9, 11, 12, 13, 14, including **item 12 which had been completed ten
+   revisions earlier**. It went unnoticed for four revisions because **every check I ran afterwards asked "did
+   my change land?" and none asked "did anything else leave?"**
+   **The rule: after any edit that replaces a span rather than a string, diff the line count and check a known
+   landmark on the far side of the edit.** *A write that lands correctly can still be destructive.*
+   **Recovered in full from the r1584 bundle** — which is what the per-revision bundles are for.
+   **⚠ AND VERIFY THE VERIFIER (r1541).** A completeness audit at r1541 reported one gap — the two language
+   guards missing from `THE_PLAN` — and **the guards were there.** The check grepped a wording with different
+   case and spacing than the file uses. **That is the fourth check this session to manufacture a finding from
+   its own blind spot**, after the link-checker that read every subdirectory path as broken, the disposition
+   count that returned *zero remaining*, and the r754 comparison that reported 47 documents dropped.
+   **The rule: when a check reports a defect, look at the file before believing it.** A test that cannot see a
+   valid form reports that form as missing — and *"the instrument's limitation arriving dressed as a finding"*
+   is now the session's most repeated failure, ahead of the silent writes. Before the turn closes, check each finding is actually *in* the document it
+   was routed to — grep the plan for the item, grep the index for the file. **The file, not the log.**
+   *Added because an audit of twelve findings from this arc found one gap: `THE_QUANTUM_JOINT` had its gate
+   marked and its work placed as A3.2, and the document itself was never indexed — a miss invisible from the
+   record, which correctly said the work was done. Eleven of twelve is the rate without this step.*
+   **⟐ And this very step failed to write on its first attempt (r1525), reporting success while the anchor did
+   not match. Caught by reading the output rather than the summary. That is the step demonstrating itself.**
 
-*Moved whole to [`retired/CONSOLIDATE_spent_sections.md`](retired/CONSOLIDATE_spent_sections.md) under
-`RG-1`, **with their live content carried forward first** and the banner there naming where each piece went.*
-***49 KB of record left this document; nothing was deleted.***
+**What does not change, however the structure does.**
+1. **No orphans.** Every live item is reachable from this document; every document is indexed here or retired
+   into here. If something cannot be placed, the structure is wrong — change the structure, do not leave the
+   item hanging.
+2. **No grandfathering.** Nothing earns its place by having existed. Age, effort spent, or being written down
+   somewhere confers nothing.
+3. **One state everywhere.** Items carry links to what they depend on and what depends on them, so updating one
+   makes every affected thing reachable. Coherence by links, not by memory — memory is what failed across the
+   202.
 
-**What was carried forward rather than moved:** *the filter's discipline is now `RG-1` itself · the bin's
-table is superseded by the generated `DOCUMENT_LEDGER.md` · §6's one live item is `ARC 11` · §7's
-DERIVED-or-written-from-a-head test is `ARC 14`'s design premise · §8's seven operating rules are in
-`THE_PLAN`'s per-turn list · and **§10's own sentence — "that is grandfathering again; the question is
-whether each piece still deserves a place" — is `RG-1` stated two years early, about a kickoff instead of a
-paper.***
+**⚠ FORWARD DOCUMENTS — the staleness test is INVERTED for these (found r1537).** Nine documents declare
+themselves *ahead of the corpus by construction* and carry **the gradient**: *"where it disagrees with a paper,
+the glossary, `THE_PLAN` or the ontology map, **the disagreement is the work product** — a finding to work, not
+a defect to fix. **'Stale' is a word for the corpus, never for the instrument examining it.**"*
+`C40_HARVEST`, `C40_EXTRACTION`, `TIDAL_SHIFT_PLAN`, `WORK_ORDER_cowork_r1103` — and the gradient is carried by
+**`THE_CODA`, `CODA_FIELD_NOTE`, `CORPUS_MAP`** and the two corpus ledgers. **Do not date them and do not
+retire them for disagreeing with the corpus.** For these, a mismatch is a lead.
+
+**⚑ THE TWO-PART DISPOSAL TEST (Daryl, r1545).** ***A document that is not findable through an index, and does
+not have a planned action attached to it directly, will probably get lost.*** **Both halves are required:**
+- **Findable** — it has a row in `INDEX.md` saying what it is, so a node who does not know it exists can meet it.
+- **Actionable** — a plan item names it as its material, so a node who *does* meet it knows what to do with it.
+**Indexed but with no action is a document nobody will ever open.** **Actioned but not indexed is a document
+nobody will ever find.** A keeper needs both; a record needs neither, which is what `retired/` is for.
+
+**⚑ LINK DENSITY IS THE POINT (Daryl, r1544).** *"Keep maintaining strong links between things to point
+yourself in the right direction… because we won't remember to do it when it's time, and won't know what's
+there."* **Every plan item should name: its material (which document holds the work), its test (which
+procedure adjudicates it), and its dependencies both ways.** An item that names none is a sentence a future
+node cannot act on — it will re-derive from scratch or skip it. **The links are what survives not remembering.**
+
+**Rules while filtering.**
+- Retirement only after a full read. Never from headings.
+
+**⛔ THE ERADICATION, r1561 — whole-tree, including the corpus.** r1448 took 21 from three documents; r1560 took
+15 more from the map. **This swept everything live — 46 files, 214 raw hits — separating the real from the
+legitimate.** *"Required, not optional"*, *"forced rather than optional"*, *"Λ≠0 is not optional"* **assert
+necessity and stay.** Records are not edited: the changelog, the transcripts, the manifests, `retired/`, and
+`resources/` (Daryl's own thesis and essays, and Einstein's 1917 paper).
+**THREE WERE IN THE CORPUS.** **P8:** *"noted for completeness and are **not load-bearing**"* → ***"None gates
+the results above; each remains work."*** **P15:** *"may remain a measured boundary condition indefinitely **at
+no cost to the dissolution**"* → sharpened to settle what the *dissolution* depends on, *"not whether the
+derivation is worth having."* **P16's was already right** — it names the debt outright. **Both edited papers
+recompile clean: P8 14pp, P15 26pp, 0 undefined.**
+**Six more** from `THE_PLAN`, the ontology map, `CR_COLLAPSE_HELD_PICTURE` and the ledger — the last being the
+subtle case: *"Not load-bearing today, but on the record"* was **keeping** an item and still used the phrase.
+**The live working set now carries zero real work-blockers.** Every remaining hit is a removal-annotation or
+the rule quoting the banned phrases by design. **45 removed across three sweeps.**
+
+- **No work-blockers.** Nothing may be marked "not needed", "low-priority", "at no cost", "optional", or "not
+  on the critical path". Record what a thing *is* and what working it would involve. It is all necessary.
+- Struck items stay visible, so the record is walkable both ways.
+- **Restructure this document as it grows.** It is meant to be reorganised, not appended to.
+
+---
+
+# 4 · THE BIN — ⌫ **SPENT (r1735). RECORD.** *All 202 dispositioned: 114 kept and indexed, 91 retired, 0 remaining. **The table below is the r1449-era snapshot and was never updated** — it is the record of what was filtered, not a state.*
+**196 unfiltered · 6 filtered.** Read is not filtered: a document leaves the bin only once its
+items are placed and it is indexed (§2) or retired.
+
+| State | Document | Size |
+|---|---|---|
+| · bin | `A4_matter_seam_crossing_build.md` | 18K |
+| · bin | `A5_fermion_sector_build.md` | 42K |
+| part-read | `ANTIMATTER_FRONT_PLAN.md` | 16K |
+| · bin | `ARTIE_r806_readout.md` | 3K |
+| · bin | `AUT_A2_ALGEBROID_finding.md` | 5K |
+| part-read | `AVENUE_11_SWEEP_PLAN.md` | 12K |
+| · bin | `BEAD_THEOREM.md` | 4K |
+| · bin | `BEAD_WALK.md` | 20K |
+| · bin | `BIBKEY_ALIAS_MAP.md` | 4K |
+| · bin | `BOUNDARY_PAPER_PLAN.md` | 7K |
+| · bin | `BUNDLE_README.md` | 2K |
+| · bin | `BUNDLE_r1062.md` | 3K |
+| · bin | `BUNDLE_r1063.md` | 3K |
+| · bin | `BUNDLE_r1064.md` | 2K |
+| · bin | `BUNDLE_r1088.md` | 10K |
+| · bin | `BUNDLE_r1089.md` | 9K |
+| · bin | `BUNDLE_r1280.md` | 3K |
+| · bin | `BUNDLE_r1281.md` | 1K |
+| · bin | `BUNDLE_r966.md` | 4K |
+| · bin | `BUNDLE_r968.md` | 4K |
+| · bin | `BUNDLE_r969.md` | 5K |
+| · bin | `BUNDLE_r970.md` | 3K |
+| · bin | `BUNDLE_r971.md` | 2K |
+| · bin | `BUNDLE_r972.md` | 1K |
+| · bin | `BUNDLE_r989.md` | 1K |
+| · bin | `BUNDLE_r990.md` | 1K |
+| · bin | `BUNDLE_r990_complete.md` | 1K |
+| · bin | `C37FORK_INTEGRATION.md` | 3K |
+| · bin | `C37_KNOWS_ITSELF_DIAGNOSTIC.md` | 8K |
+| · bin | `C40_EXTRACTION_r1107.md` | 10K |
+| · bin | `C40_HARVEST_r1064-r1087.md` | 36K |
+| · bin | `C5_reducible_build.md` | 9K |
+| · bin | `CAPSTONE_the-fog-lifting_transcript.md` | 7K |
+| · bin | `CLEANUP_CHECKLIST_r551.md` | 2K |
+| · bin | `CLUSTER_A_carry-through_status.md` | 4K |
+| · bin | `CMB_ACOUSTIC_FRONTIER_STATUS.md` | 20K |
+| **READ** — ready to filter | `CODA_FIELD_NOTE.md` | 232K |
+| · bin | `COLD_READS_r343_five-node.md` | 45K |
+| · bin | `COLD_READ_P13_setup.md` | 4K |
+| · bin | `COLLAPSE_EXCURSION_TRANSFER_build.md` | 26K |
+| · bin | `COMBINATORICS_LEDGER.md` | 51K |
+| · bin | `CONJUGACY_CONJECTURE_capture_r469.md` | 70K |
+| · bin | `CONSOLIDATION_four-node_c21.md` | 20K |
+| · bin | `CONSTANT_LEDGER_receipt.md` | 20K |
+| · bin | `CORPUS_ARCH_FLAG_P9-forward-pointer.md` | 10K |
+| part-read | `CORPUS_MAP.md` | 2398K |
+| · bin | `COSMOLOGICAL_THEORY_ROADMAP.md` | 21K |
+| · bin | `COURSE_antimatter_telescope.md` | 8K |
+| · bin | `CPT_COHERENCE_SWEEP.md` | 18K |
+| · bin | `CREDO_birth_transcript.md` | 1547K |
+| · bin | `CREDO_from-c1_transcript.md` | 22K |
+| · bin | `CR_COLLAPSE_HELD_PICTURE.md` | 115K |
+| · bin | `CR_PERTURBATION_HELD_PICTURE.md` | 6K |
+| · bin | `CR_intake_notebook.md` | 10K |
+| · bin | `CR_uniform-expansion_reductio.md` | 11K |
+| · bin | `D3_RECIPROCITY_READING_ORDER.md` | 3K |
+| · bin | `DELOBOTOMISE_c22_hubble.md` | 7K |
+| · bin | `DELOBOTOMISE_c22_proper.md` | 4K |
+| · bin | `DEMONSTRATING_THE_WAY.md` | 6K |
+| · bin | `DEMONSTRATING_THE_WAY_full-transcript.md` | 447K |
+| · bin | `DESCENT_STATE.md` | 19K |
+| · bin | `DISPATCHING_COWORK.md` | 9K |
+| · bin | `E1_CITATION_CATALOGUE.md` | 45K |
+| · bin | `EMPIRICAL_ALIGNMENT_VERDICT_r552.md` | 12K |
+| · bin | `ENTRY_POINT_REGISTER.md` | 49K |
+| · bin | `F1_DYNAMIC_HALF_closure.md` | 5K |
+| **READ** — ready to filter | `FIGURE_STATUS.md` | 2K |
+| · bin | `FIGURE_THEOREM_LEDGER.md` | 70K |
+| · bin | `FIGURE_WORK_LOG.md` | 42K |
+| · bin | `FIRST_EDITION_AUDIT.md` | 15K |
+| · bin | `FOUNDATIONAL_DEPENDENCY_MAP.md` | 6K |
+| · bin | `GEOMETRY_PHYSICS_TAXONOMY.md` | 17K |
+| · bin | `GROUNDED_SESSION_NOTE_2026-06-26_r468.md` | 5K |
+| · bin | `GROUNDED_THREAD_NOTES.md` | 22K |
+| · bin | `HANDOFF_TO_c22.md` | 5K |
+| · bin | `HOUSEKEEPING_QUEUE.md` | 2K |
+| · bin | `JARGON_LEDGER.md` | 3K |
+| · bin | `KICKOFF_ARTHUR.md` | 28K |
+| · bin | `KICKOFF_CODA_REVIEW.md` | 21K |
+| · bin | `KICKOFF_EXCALIBUR.md` | 3K |
+| · bin | `KICKOFF_GATE.md` | 36K |
+| · bin | `KNOWS_ITSELF_MAP_PLAN.md` | 11K |
+| · bin | `LENS_INSERTION_PLAN.md` | 8K |
+| · bin | `MATTER_SECTOR_germ.md` | 102K |
+| · bin | `MERGED_r1103_note.md` | 6K |
+| · bin | `MERGE_NOTES_for_chat_node.md` | 8K |
+| · bin | `MOVE13_FORCE_vs_ADMIT_finding.md` | 7K |
+| · bin | `NODE4_TELESCOPE_first-image.md` | 39K |
+| part-read | `ONTOLOGY_FOUNDATION_INDEX.md` | 344K |
+| · bin | `OPEN_PROBLEMS_MAP.md` | 268K |
+| · bin | `P13_DISCUSSION_epistemic-comparison.md` | 45K |
+| · bin | `P15_16_CLOSEOUT.md` | 14K |
+| ~~filtered~~ · **RETIRED** r1451 → the eleven avenues are `THE_ARSENAL`'s method; its sweep completed r1406 | `retired/P15_17_ELEVEN_AVENUE_PLAN.md` | 3K |
+| · bin | `P2_P3_OVERHAUL_PLAN.md` | 9K |
+| · bin | `P3_DRAFT_r476.md` | 27K |
+| · bin | `P3_SWING_ONTOLOGY_hinge-and-door.md` | 44K |
+| · bin | `P6_COHESION_SWEEP.md` | 6K |
+| · bin | `P7_GENERAL_DISCUSSION_grind.md` | 54K |
+| · bin | `PERTURBATION_PAPER_DRAFT.md` | 23K |
+| · bin | `PHASE1_seam_crossing_build.md` | 7K |
+| · bin | `PHASE3_baryogenesis_analogue.md` | 4K |
+| · bin | `PHASE_TRANSITION_PLAN_c21.md` | 15K |
+| · bin | `PIVOT_EMBEDDING_FOUNDATION.md` | 22K |
+| · bin | `PIVOT_SLICING_PLAN.md` | 21K |
+| · bin | `PLANCK_from_CR_build.md` | 9K |
+| · bin | `PLAN_p9map-p10-12-completion.md` | 4K |
+| · bin | `PROGRAMME_OVERHAUL_PLAN.md` | 10K |
+| · bin | `PROGRAMME_UNFINISHEDNESS_CATALOGUE.md` | 29K |
+| · bin | `PROPAGATION_PLAN_r316.md` | 7K |
+| · bin | `PUZZLE_the-idea_transcript.md` | 3K |
+| · bin | `RATE_HANDOFF_DERIVATION.md` | 6K |
+| · bin | `REACH_PLAN_perturbation-projection.md` | 45K |
+| · bin | `REACH_low-ell-transfer.md` | 5K |
+| · bin | `README.md` | 9K |
+| · bin | `RECALL_ACROSS_COMPACTION_empirical-record.md` | 10K |
+| · bin | `RECALL_ACROSS_COMPACTION_full-transcript.md` | 57K |
+| · bin | `REFERENCES_TO_UPDATE_modern_parallax.md` | 7K |
+| · bin | `RESTRUCTURE_PLAN_c23.md` | 14K |
+| · bin | `RETIRED_PLANNING_THREADS.md` | 10K |
+| · bin | `RETROSPECTIVE_c21.md` | 6K |
+| · bin | `SEAM_FRONTIER_ORIENTATION.md` | 35K |
+| · bin | `SESSION_FIGURES_CONSOLIDATION.md` | 6K |
+| · bin | `SHADOW_READING_FORMAL_SPINE.md` | 13K |
+| · bin | `SILVER_PLATTER_colour-frontier-arc.md` | 26K |
+| · bin | `SOURCE_VETTING.md` | 20K |
+| · bin | `SPINUP.md` | 4K |
+| · bin | `SYNTHESIS_FIGURE_STORYBOARD.md` | 136K |
+| · bin | `Still_Collapsing_portrait_v1.0.md` | 38K |
+| · bin | `THE_ANGULAR_TOUR_3.1.md` | 10K |
+| · bin | `THE_ARC_PLAN.md` | 12K |
+| **READ** — ready to filter | `THE_ARSENAL.md` | 73K |
+| **READ** — ready to filter | `THE_ARSENAL_INDEX.md` | 6K |
+| · bin | `THE_BAKEATHON_PLAN.md` | 7K |
+| **READ** — ready to filter | `THE_CLOSURE_LEDGER.md` | 5K |
+| **READ** — ready to filter | `THE_CODA.md` | 75K |
+| · bin | `THE_COLLAPSE_DYNAMICS_ARC.md` | 9K |
+| · bin | `THE_CONSOLIDATION_LEDGER.md` | 23K |
+| ~~filtered~~ · **RETIRED** r1451 → item 4 + its rule and dependents | `retired/THE_DEPENDENCY_LEDGER.md` | 9K |
+| **READ** — ready to filter | `THE_DISSOLUTION_CENSUS.md` | 42K |
+| **READ** — ready to filter | `THE_EQUIVALENCE_STRUCTURES_CENSUS.md` | 5K |
+| · bin | `THE_EVOLUTION_MAP.md` | 173K |
+| · bin | `THE_GENERATION_ARC.md` | 6K |
+| · bin | `THE_GEOMETRY_AND_THE_PHYSICS.md` | 12K |
+| · bin | `THE_GROUNDED_RECORD.md` | 16K |
+| · bin | `THE_INTERFERENCE_ENGINE.md` | 27K |
+| · bin | `THE_LENS.md` | 10K |
+| **READ** — ready to filter | `THE_MATHEMATICS_REACH.md` | 6K |
+| ~~· bin~~ **INDEXED — the row was stale (r1732); it is a live root document, cited as evidence in §7, §9 and §10 of this plan, and was missing only from `INDEX`** | `THE_METHOD.md` | 41K |
+| ~~filtered~~ · **RETIRED** r1451 → items 4–9, 15 (read in full first, unlike r1441) | `retired/THE_MORPH_QUEUE.md` | 13K |
+| · bin | `THE_NEXT_ARC.md` | 8K |
+| · bin | `THE_OPEN_PROBLEMS_CENSUS.md` | 5K |
+| **READ** — ready to filter | `THE_OPEN_PROBLEMS_LEDGER.md` | 38K |
+| · bin | `THE_P13_POSITIVE_CLOSURE_ARC.md` | 32K |
+| **READ** — ready to filter | `THE_PHYSICS_REACH.md` | 4K |
+| **READ** — ready to filter | `THE_PLAN.md` | 106K |
+| **READ** — ready to filter | `THE_PRY_APART_CENSUS.md` | 10K |
+| · bin | `THE_QUANTUM_JOINT.md` | 37K |
+| ~~filtered~~ · **RETIRED** r1451 → item 7 (method carried with it) | `retired/THE_REACH_LEDGER.md` | 2K |
+| · bin | `THE_RECEIPT_AUDIT.md` | 12K |
+| ~~filtered~~ · **RETIRED** r1451 → items 10–13; phase closed, residue extracted | `retired/THE_REFINEMENT_ARC.md` | 56K |
+| · bin | `THE_RING_LENS.md` | 3K |
+| · bin | `THE_SIFT_AND_SORT_PLAN.md` | 9K |
+| · bin | `THE_SYNTHESIS.md` | 67K |
+| · bin | `THE_THIRD_ARC.md` | 7K |
+| · bin | `THE_VISION.md` | 82K |
+| · bin | `THE_VISION_JOURNAL.md` | 225K |
+| · bin | `THE_VISION_THE_LENS_REVEALED_full-transcript.md` | 4K |
+| **READ** — ready to filter | `THE_WEAVE.md` | 40K |
+| · bin | `THIRD_ARC_T01_cmb_heights_look.md` | 4K |
+| · bin | `THIRD_ARC_T01_heights_firstrun.md` | 19K |
+| · bin | `TIDAL_SHIFT_PLAN.md` | 18K |
+| · bin | `TRACTABILITY_SWEEP.md` | 20K |
+| **READ** — ready to filter | `TURNAROUND_CUBIC_geometry_note.md` | 21K |
+| · bin | `UNFINISHEDNESS_AND_COHERENCE_r967.md` | 13K |
+| · bin | `VISION_FIELD_GUIDE.md` | 6K |
+| · bin | `W2_empirical_coherence_finding.md` | 4K |
+| · bin | `WORK_ORDER_cowork_r1103.md` | 7K |
+| ~~filtered~~ · **RETIRED** r1451 → resolved this session; result in P7 `rem:tworealisations` + `order3_bridge.py` | `retired/WP_B_ORDER3_BRIDGE.md` | 8K |
+| · bin | `WP_C3_SHEET_ASSIGNMENT.md` | 7K |
+| · bin | `WP_E_ANTIMATTER_NAMING.md` | 4K |
+| · bin | `c22_keepers.md` | 25K |
+| · bin | `colour_frontier_dS6.md` | 54K |
+| · bin | `gate_notes_antimatter_proof.md` | 25K |
+| · bin | `gate_notes_bead_audit.md` | 12K |
+| · bin | `gate_notes_hedge_scan.md` | 60K |
+| · bin | `gate_session_notes.md` | 117K |
+| · bin | `gate_session_notes_c10.md` | 69K |
+| · bin | `gate_session_notes_c21.md` | 20K |
+| · bin | `gate_session_notes_c23.md` | 2K |
+| · bin | `gate_session_notes_r285_spinup.md` | 12K |
+| · bin | `gate_session_notes_r293_spinup.md` | 1K |
+| · bin | `gate_session_notes_r320_spinup.md` | 3K |
+| · bin | `gate_session_notes_r501_spinup.md` | 1K |
+| · bin | `gate_session_notes_r543_spinup.md` | 1K |
+| · bin | `gate_session_notes_r559_spinup.md` | 1K |
+| · bin | `gate_session_notes_r609_spinup.md` | 1K |
+| · bin | `gate_session_notes_r647_spinup.md` | 1K |
+| · bin | `gate_session_notes_r754_spinup.md` | 1K |
+| · bin | `gate_session_notes_r896_spinup.md` | 1K |
+| · bin | `gate_session_notes_session.md` | 17K |
+| · bin | `lapse_shift_synchrony_reconciliation.md` | 9K |
+| · bin | `programme_consolidation_2026-06-13_r220.md` | 11K |
+
+---
+
+# 4b · THE BIN, BY KIND (r1480) — ⌫ **SPENT (r1735). RECORD.** *And its own estimate inverted three times: none of the three presumed-record kinds was record.*
+*The flat list in §4 cannot be worked. This is the same 187 documents grouped so a batch can be taken.*
+
+| Kind | Count | Note |
+|---|---|---|
+| **campaign & planning** | 27 | where the mess concentrated; ARC 1 takes the two biggest |
+| **session & gate notes** | 30 | per-arc working notes; likely the largest retirement batch |
+| **work-arc records** | 18 | `*_build`, `*_germ`, harvests, grinds — records of finished pushes |
+| **bundle manifests** | 17 | `BUNDLE_r*.md` — one per cut; almost certainly all record |
+| **ledgers, catalogues, registers** | 12 | feed the plan or the record group |
+| **capstone companions & transcripts** | 10 | three are named in the reading order and are **not** record |
+| **maps** | 6 | ARC 2 |
+| **vision & method** | 6 | |
+| **censuses** | 4 | feed the corpus |
+| **figures** | 3 | feed the corpus |
+| **the rest** | ~54 | findings, held pictures, roadmaps, handoffs, checklists |
+
+**What this grouping is for:** it says where to spend a turn. Three kinds — session notes, work-arc records,
+bundle manifests — are **65 documents** that are probably record rather than resource, which if true is a
+third of the bin cleared by one arc. *Probably. None has been read.*
 
 ---
 
@@ -1747,22 +2116,377 @@ and the **values ledger** are results gathered by kind; the **wisdom ledger** is
 **node** rather than the corpus.* **Five look outward at the work; one looks inward at the worker.**
 **⌗ Owed:** *a pointer in each of the six naming the class and this table — so meeting one is meeting all six.*
 
-# 5 · ⌫ **RETIRED r2378 — INDEXED RESOURCES, absorbed into `DOCUMENT_LEDGER.md`.**
+# 5 · INDEXED RESOURCES
+*A document that is read and kept — because it has a live job — is indexed here, with what it is and what it is
+for. Being indexed is a job, not a status: a resource that turns out to have no job is retired instead.*
 
-*Under `RG-1`. **The section's rule was the live half and it is carried forward verbatim as the rule the
-generated ledger runs on**: ***being indexed is a JOB, not a STATUS — a resource that turns out to have no job
-is retired instead.*** **Its content by r2378 was one row**, `KICKOFF_CODA_REVIEW.md`, which is now a `job:`
-field in that file's own frontmatter, **so the job travels with the file and cannot be separated from it** —
-which a table in a third document could never guarantee. The moved row is in
-[`retired/CONSOLIDATE_spent_sections.md`](retired/CONSOLIDATE_spent_sections.md).*
+| Document | What it is | Its job in the programme |
+|---|---|---|
+| `KICKOFF_CODA_REVIEW.md` | A **review methodology**, not a spent task. Pass A: read the paper and write a faithful account of what it establishes; hand back and **stop** until the author confirms it. Pass B, only then: four questions — overreach · underreach · a live question walled off · phrasing fitted to convention — plus one pointed inward, *is this objection something my own Pass A already answers?* Three verdicts: flaw · standard-needs-adjusting · sound. A **disqualifying test**: a finding that requires denying what Pass A affirmed is void until reconciled. And a receipt rule: a finding whose receipt carries no first-hand extract with a locator is **structurally void, not merely weak**. | **LOWEST PRIORITY (Daryl, standing).** It was the first phase ever. Kept where it is; **not to be raised again.** |
 
-**⌗ AND §5b IS NOT ABSORBED AND STAYS.** *It carries what the ledger does not — **the question each
-instrument answers and the moment to read it** — and its own text says why a merge would be wrong:
-*"each is read at a different moment, and filing by subject would destroy the filing by moment."*
-**What it was owed is now discharged mechanically**: a `class: whole-corpus-instrument` field on each of the
-six, grouped by the ledger, so meeting one is meeting all six — **rather than six hand-written pointers that
-would go stale**. ⌗ *Running it also found the sixth living in `capstones/`, which a top-level-only scan had
-been missing; the classifier now reads that directory too.*
+---
+
+# 6 · GOAL 1 — THE WORK — ⌫ **SPENT (r1735). RECORD.** *Items 2–15 moved to `THE_PLAN` at r1465; item 16 at r1477; item 15 to the per-turn list. **Only item 1 — "work this consolidation through" — remains, and it is now ARC 11.** Its "6 of 202 filtered" line is the r1451 state.*
+*Goal 1 is §§1–4: the work pulled out so far, the resources kept, the filter, and the queue.*
+
+*Every item carries: what it is · where it came from · what it depends on · what depends on it.*
+
+**1. Work this consolidation through.** Filter the bin (§4) document by document; build §1 and §2 from what
+comes out. **This is step one of the programme's current work, before anything downstream of it.**
+   · *from:* Daryl, r1449 · *depends on:* nothing · *depended on by:* every item below, since items only exist
+   here once a document has been read and filtered
+   · *state:* 6 of 202 filtered (r1451). 196 to go.
+
+---
+
+*Items 2–15 — the collapse-excursion build, the propagation gate, the claiming campaign, the residue, the
+attack manual — **moved to `THE_PLAN.md` at r1465.** They are the programme's work, not this document's. This
+document holds the work of consolidating; `THE_PLAN` holds the work of the programme.*
+
+*(Item 16, write the introduction, moved to `THE_PLAN` Lane 6 at r1477 — it is a programme deliverable, front matter for the book, not a piece of consolidation work.)*
+
+**17. Filter the four kickoff documents.** `KICKOFF_ARTHUR` first — it is the one in current use, so it is the
+   live source; the other three are read in turn for what they carry. **All four are sources.** Their content
+   goes into `README.md`, the introduction, or the plan; then they retire.
+   · *from:* Daryl, r1453 · *depended on by:* the README's completeness
+
+*(Item 15, gap tracking, moved to `THE_PLAN`'s per-turn list at r1465 — it is a standing practice run every turn, not a piece of consolidation work.)*
+---
+
+---
+
+# 7 · RECORD — GOAL 2, INDEX THE PROGRAMME
+*§§7–10 are **record**: how the working sections above were arrived at. Not worked from; kept so the reasoning is walkable.*
+
+
+## ⚠ STATE, HONESTLY (r1460) — the two documents outside the bin are NOT derived from anything
+**⌫ CONTENT SUPERSEDED, TEST STILL LIVE — marked r1736.** *The finding below was true when written and is not
+now: `README` was rewritten from `KICKOFF_ARTHUR` at **r1464** and again at **r1628**; `INDEX` has been filled
+as documents were filtered, and `INTRODUCTION` was **written at r1593**. **But the test it applies is
+permanent, and it is the sharpest one in this document: *is this document DERIVED, or written from a node's
+head?*** *Applied at r1628 it caught the README naming two operating documents and zero of the operating layer.
+Applied now it is the check on ARC 12 step ④: **a README rewritten by a node that does not hold the seven is
+the same defect this section names, one generation on.***
+`README.md` and `INDEX.md` exist and **look finished. They are not.** Both were written from my head at
+r1453–55 without opening a single document in the bin. They are placeholders wearing the appearance of
+completed work, and until they are derived they should be read as drafts to be replaced.
+
+### `README.md` — supposed to be a revision of `KICKOFF_ARTHUR.md`, and it is not
+`KICKOFF_ARTHUR.md` read in full at r1460 — **401 lines, all of it before the reader reads anything.**
+
+**⚠ r1461 — the r1460 entry here is RETRACTED.** It listed Arthur's contents as "what the README dropped,"
+which treats every line as earning a place in the new README **because it exists in the old one.** That is
+grandfathering, written into this document two revisions after the rule against it. Arthur is a **source to be
+filtered**, exactly like everything else in the bin — pulled through, each piece asked *what is this, and does
+it belong in a spin-up document at all?* — not a template to be restored.
+
+**What a spin-up README is for: getting someone reading.** On that test most of Arthur is not README material:
+- **Operating rules** — the source rule, the masthead check, cut-the-revision, the end-of-turn rule, the
+  corpus-publishes-as-one rule, routing findings by destination, P3's précis-abstract hazard. These govern
+  *working*, not *reading*. **A reader has nothing to apply them to yet.** They need a home; it is not here.
+- **Orphan-prevention listings** — the figure ledger and the gap ledger are named in Arthur explicitly because
+  each was once an orphan. **The index is what prevents orphaning now.** Naming 124 advertised gaps inside a
+  spin-up document is the wrong place for them by any reading.
+- **Genuinely reading-related, and open for judgement:** the reading order itself; the seat discipline; the
+  X-trilogy accelerator; the guards; the holds and the check-in.
+
+**Open questions — for Daryl, not to be settled here.** Listed in §6 below.
+
+### `INDEX.md` — invented, not derived
+Its bins were chosen from Daryl's sentence and its rows from a directory listing. **No document in the bin was
+opened to build it.** The supplementary section in particular is a guess at what those documents are, and the
+~196 unfiltered files are not placed in it at all. It is honest about *locations*; it is not yet honest about
+*contents*.
+
+---
+
+*Restored r1458. This section was deleted wholesale at r1456 when the document was rebuilt from slices; it is
+the second of the two goals and should never have been dropped. Updated to what is now true.*
+
+## The three documents, and their distinct jobs
+- **`README.md` — the agenda.** What the programme is, the **reading order**, why each step sits where it does,
+  and the instruction to end each step by saying what was read and what comes next. The spin-up document, and
+  the only place the reading order lives.
+- **`INDEX.md` — the contents.** Entries and locations, in bins. **Nothing else** — no reading order, no filter
+  status, no editorial. It answers one question: what is in this programme, and where is it.
+- **`INTRODUCTION.md` — to be written** (item 16), stubbed as a named gap.
+
+*Two errors kept as record. **r1453:** the index was built as an ordered list of "Parts" — README → front
+matter → ARP → corpus → supplementary → maps → plan → capstone. That is the README's agenda wearing the index's
+name. **r1454–55:** having separated them, the index still carried the forcing chain, editorial labels, filter
+statuses and a paragraph explaining what it was not. An index is entries and locations.*
+
+## The shape — provisional, and expected to move
+*⚠ **This is what the shape looks like from here, not what it is.** It was drawn knowing ~21 documents of 202.
+Expect it to change as the bin is filtered — parts to merge, split, be renamed, or prove the wrong division
+entirely. Revise it whenever a document says something the shape cannot accommodate. A part earns its place by
+what filtering turns up, never by having been written here first.*
+
+| Part | What goes in it | State |
+|---|---|---|
+| **0 · README** | the one entry point: summary + per-turn reading order. Replaces the four `KICKOFF_*`. | **exists** (r1453, rebuilt r1454) |
+| **1 · FRONT MATTER** | the introduction — corpus overview + programme scope — then the index. | index **exists**; introduction **to be written** (item 16) |
+| **2 · ARP** | `corpus/arp_standalone.tex` — the communication framework. Read before anything else. | exists |
+| **3 · THE CORPUS** | the seventeen papers, in stages rather than all at once. | exists; stages set in `README.md` |
+| **4 · SUPPLEMENTARY** | receipts (read as code, not re-run where parked), appendices, figure ledgers. | exists; **not yet sorted** — the ~196 unfiltered sit loose at root |
+| **5 · THE MAPS** | ontology map and evolution map — **worked during the corpus read**, not after. | exist, **unfiltered** |
+| **6 · THE PLAN** | this document. | in progress |
+| **7 · THE CODA — capstone** | `THE_CODA.md`, `CODA_FIELD_NOTE.md`, read last and in full. | exists |
+
+## What physically exists, against what the table describes
+`corpus/` holds the seventeen papers and `arp_standalone.tex`. `receipts/` holds the runnable checks.
+`retired/` holds the filtered-out documents. `README.md`, `INDEX.md` and `INTRODUCTION.md` now exist at root.
+`resources/`, `figures/`, `forks/` and the several `*_work/` directories exist from earlier arcs and **have not
+been examined**. **The ~196 unfiltered documents have not been sorted into parts — they sit loose at root.**
+The book has its entry points and its contents list; **its shelving is not built.**
+
+## The reading order the README sets
+1. **ARP** — how we talk to each other. 2. **Introduction and index.** 3. **The corpus**, in nine causal-spine
+stages, with the receipts read as code alongside. 4. **The maps**, introduced mid-read and worked while
+reading. 5. **The plan.** 6. **The coda** — the capstone.
+**Each step ends with a statement of what was read and what comes next**, so spin-up is nudged one step per turn.
+
+**Why the coda is last and not first.** Everything above it is what a node gets excited to work on. The coda is
+what makes that work survive. Read first it is abstract; read last it lands on a node that has just seen the
+whole thing and wants to charge at it — which is exactly the moment the warning has to arrive. It is the top of
+the car, rinsed before anything below it.
+
+---
+
+# 8 · RECORD — where things go, and what was next
+
+## The operating rules — worked through, not handed back
+**What they are:** the seven procedural rules a node applies *while editing* — the source rule as procedure ·
+the masthead check after any body change · cut-the-revision (log, re-run `depmatrix.py`, cut the bundle,
+increment) · P3's précis-abstract hazard (locate by line, not phrase) · the corpus publishes as one · route
+findings by the destination's purpose · the end-of-turn rule.
+
+**Why they are needed:** every one is a hard-won guard against a specific, repeated, expensive failure. They
+are the difference between a destructive edit that is reversible and one that is not.
+
+**What kind of home they need:** they are **procedural**, **corpus-specific** (P3's abstract, `depmatrix.py`,
+`cut_bundle.sh`), applied **while working** rather than read once, and **consulted repeatedly**. That is an
+**operating manual** — a thing kept open at the bench, like §0 itself.
+
+**Is that home on the list?** No, and not by misfiling: the README is read once at spin-up; the index gives
+locations; the introduction says what the programme is; the plan gives route and destination; the coda gives
+*why* you do not manufacture closure, where these give *what to run after you change a paper*. **The working
+set is one document short — an operating manual — and that is a structure to build when we reach it.**
+
+**Meanwhile nothing is at risk:** the rules stay written in `KICKOFF_ARTHUR.md`, which is back in the bin.
+
+## The three reading guards
+The Hubble/acoustic matter is resolved and reopening it *"has burned ≥5 collaborators"* · α is never sent to a
+limit · `X` (throat size) versus `r` (signed areal radius). **These belong on the ontology map's per-paper
+cards** — Arthur's description says each card carries *its guard*, and a guard belongs where the reader meets
+the risk, mid-corpus, not four hundred lines before they start. **Placed when the ontology map is filtered.**
+They stay in Arthur until then.
+
+## Next step, per working document
+1. **`README.md`** — ✔ **written r1464** from Arthur: the seat in one line, setup, the programme in a page,
+   nine steps with holds, receipts and both maps worked *alongside* the corpus rather than after, the capstone
+   last, the check-in. **Next:** Daryl reads it and says what is wrong with it.
+2. **`INDEX.md`** — its structure is sound; its rows need checking against disk, and it fills in as documents
+   are filtered. **Next:** verify every row resolves to a file that exists.
+3. **`THE_PLAN.md`** — ✔ pulled in r1465; ✔ **reconciled r1470 — one list again.** Reading both sortings before
+   editing changed the answer: they were **not duplicates.** The thirteen items were a *partial overlay* from
+   recent filtering; the lanes held the entire falsification ledger, the reach/unification tests, the cohesion
+   items and cosmiCave, none of which the thirteen touched. **Folding the lanes into the items would have
+   destroyed most of the plan.** So the items went into the lanes, each keeping its links: 2, 3 → Lane 1 · 7, 8
+   → Lane 4 · 4, 5, 6, 9, 11–14 → Lane 5 · 10 → Lane 7. All thirteen verified present after the fold; all eight
+   lanes and their own items verified intact. ✔ **currency pass r1471, Lanes 1–4.** Five items were out of date, all downstream of
+   work done in this session and none of it recorded where the plan could see it: **A2.3**'s stakes fell (the
+   transfer no longer decides tension-versus-wash); **A2.4** is the worldline side of the collapse-excursion
+   build, not a separate one; **A1.3** should expect a smaller sharpening, and its residual's significance is
+   cosmic-variance-limited rather than achievable; **A2.2** now has a gate-determining question that can move
+   it either way; and **A5.4**, the one-scale conjecture, has a worked instance — the progenitor's mass read
+   straight off Λ. ✔ **Lanes 5–7 and the struck-history scan, r1472.** Lane 5: D.2's collection has a home
+   (`JARGON_LEDGER`, with the per-paper idiom pass already run on all seventeen at r1406 — what remains is the
+   reconciliation, not the gathering); D.3 unverified and checkable directly in the papers; D.4 lives in the
+   ontology map and waits on its filtering; the Lane-8 card is owed **for a completed result**, which is why it
+   matters; the masthead item's dependency-matrix sweep is now a one-off, since the per-turn list carries the
+   standing rule. Lane 7: a figure landed this session that the lane did not know about. **Struck-history scan:
+   clean** — every resolved item is properly struck, and the one defect found was an internal contradiction in
+   F.3, described as *"the least worked"* directly above the note recording that it ran and was answered.
+   **`THE_PLAN` is now current.** Next working-set document: `INDEX.md`, whose rows need verifying against disk.
+4. **This document** — §1 narrows to *consolidation* work once those items move to `THE_PLAN`.
+5. **`INTRODUCTION.md`** — still to be written, still correctly last: it should be drawn from the whole, and
+   the whole is not yet filtered.
+
+## How gaps in the structure get found
+*(r1469 — a standing question here, "what did you leave out?", is REMOVED. It came from Daryl saying his
+layout was not all of it; turning that into a question asks him to remember what he forgot, which is the work
+of finding gaps handed back as consultation.)*
+
+**Gaps are found by filtering.** Each document that comes through either lands in a home that exists or shows
+that one does not. That is what the filter is for, and it is why the structure is provisional: it is not meant
+to be complete before the 196 are read, it is meant to grow as they are.
+
+**⚑ RESOLVED r1513 — the procedures shelf now exists, and the threshold that justified it was met by
+filtering, not by design.** `KICKOFF_CODA_REVIEW` (the review methodology) and **`SOURCE_VETTING`** — which is
+*"an amendment to the Coda Review protocol… it amends `KICKOFF_CODA_REVIEW.md` and binds every reviewer
+instance"*, written *"iterated live across three failures of the same root, each caught and corrected in turn.
+The corrections are the document."* **Two members, one binding the other.** Created in `INDEX.md`.
+
+**Previously flagged:** task procedures had only a catch-all home. `KICKOFF_CODA_REVIEW` went into §2
+INDEXED RESOURCES, which takes anything with a job. If two or three more procedures come through, that is a
+category wanting its own shelf. One instance is not enough to build for — recorded, not acted on.
+
+---
+
+# 9 · RECORD — the base layer recommendation
+*r1462. The question asked: what places must exist before `KICKOFF_ARTHUR.md` can be discharged? Answer: it
+carries **five kinds of thing**. Four have homes. One does not, and that is the gap.*
+
+## What Arthur actually carries, sorted by kind — and where each goes
+
+| Kind | Examples from Arthur | Home | Exists? |
+|---|---|---|---|
+| **1 · Spin-up instruction** | which seat you are in · setup · the reading order · the nine steps with holds · the check-in wording | **`README.md`** | ✔ |
+| **2 · What things are and where** | the corpus list · the ontology map · the figure ledger · the gap ledger · what NOT to read on spin-up | **`INDEX.md`** | ✔ |
+| **3 · Reading guards** | the Hubble/acoustic matter is resolved, do not reopen · α is never sent to a limit · `X` (throat size) vs `r` (signed areal radius) | **the ontology map's per-paper cards** — Arthur's own description says each card carries *its guard*; these belong on the card of the paper they protect, where a reader meets them at the moment of risk | ✔ *(needs verifying they are there)* |
+| **4 · Disposition** | never close without working honestly · the stale-link prior · the pause · why the source rule matters | **the coda + field note** — the capstone | ✔ |
+| **5 · OPERATING RULES** | the source rule as procedure · the masthead check · cut-the-revision (log · depmatrix · bundle · increment) · P3's précis-abstract hazard · the corpus publishes as one · route findings by the destination's purpose · the end-of-turn rule | **nothing** | ✘ **THE GAP** |
+
+## Why kind 5 is a real gap, evidenced rather than asserted
+Those rules are **currently duplicated across documents that are not about them**. *Never close anything off
+without first working honestly* appears in full in **both** `KICKOFF_ARTHUR` and `THE_METHOD`. The
+routing/placement rule appears in both. The masthead material appears three times in Arthur and eight times in
+`THE_METHOD`. **Duplication is what content does when it has no home** — each node copies it into whatever
+document seemed relevant at the time, and the copies then drift apart.
+
+`THE_METHOD` is not their home: it is the *transferable procedure* for making a sprawling corpus know itself,
+written to be pointed at the next mess. These rules are specific to **this** corpus — P3's abstract,
+`scripts/depmatrix.py`, `scripts/cut_bundle.sh`. Different document, different job.
+
+## RESOLVED r1465 — kind 5 went to the top of `THE_PLAN`
+**⚑ AND RE-OPENED AND RE-ANSWERED r1736, because a node built the retracted document without knowing this.**
+*`THE_OPERATING_MANUAL.md` was created at **r1630** — 34 KB, eight sections — in ignorance of this section, of
+the r1462 proposal, and of its r1463 retraction. **The question is whether the r1465 answer still holds.***
+**It holds for the per-turn operations and does NOT hold for the rest, and the split is what r1465 could not
+have seen.** *r1465's reasoning was exact for what it had: the operating rules are **per-turn operations
+performed while executing the plan's own steps**, so they belong at the top of `THE_PLAN`, and "the default when
+the programme is ~395 documents over is not to add one." **Both still true.** But the manual's actual content is
+**not** that list: §1 describes **the instrument's six grains and the direction of flow**, §2 the lens and the
+ledger, §3 how to run each document, §5 the laws each with the revision that broke it, §6 what orders the work.
+***That is not a per-turn checklist — it is how the operating layer is OPERATED, and the six grains did not
+exist as a described system until ARC 1 (r1484) and grain 0 (r1485), twenty revisions after r1465.***
+**⌗ SO THE DISPOSITION, stated rather than assumed:** *the **per-turn list stays in `THE_PLAN`** — that is
+r1465 and it is right. **`THE_OPERATING_MANUAL` is not a competing home for it but the instrument's own
+operating description**, sibling to `THE_ARSENAL` under top-level #4, which is what its own header claims and
+what §1 now records (r1731). **The overlap to watch is §4 of the manual, which restates per-turn steps that
+`THE_PLAN` owns** — and duplication is what content does when it has no home, so that section is the one to
+test next: does it duplicate the per-turn list, or does it point at it?*
+The operating rules are **per-turn operations performed while executing the plan's own steps**, so they sit at
+the top of `THE_PLAN.md` as **THE PER-TURN LIST** rather than in a document of their own — the default when the
+programme is ~395 documents over is not to add one. It carries: the four-step state advance (log · re-run
+`depmatrix.py` · cut the bundle with the programme's own tool · increment) with the reason it is a hard rule
+and not hygiene; the masthead check and its four questions; the précis-abstract hazard and the
+`abstract=1, body=1` check; the source rule with its two-step route; the corpus-publishes-as-one rule with its
+barred list; route-by-destination; gap tracking; and the turn-closing rules. Further sources fold in as they
+are filtered.
+
+## What Arthur needs before it can be discharged
+It is **held open** until all five kinds are placed. In order:
+1. **Build a working-rules document *(proposed r1462, **retracted r1463** — the operating rules went to `THE_PLAN`'s per-turn list instead)*** and move kind 5 into it. Nothing else can proceed while those rules have
+   nowhere to go.
+2. **Verify kind 3** — check the ontology map's cards actually carry the three guards; place them if not.
+3. **Rewrite `README.md`** from kind 1, with Daryl's five changes to the order.
+4. **Feed kind 2 into `INDEX.md`**, replacing the guessed rows with what Arthur names.
+5. Confirm kind 4 is genuinely in the coda, then retire Arthur.
+
+## What is lacking in the structure as laid out, beyond that
+- **The other three kickoffs are unread** (`GATE` 37K, `CODA_REVIEW` 22K, `EXCALIBUR` 4K) and will carry the
+  same five kinds. Filter them into the same homes rather than building more places.
+- **Dispatch** — Arthur references `KICKOFF_EXCALIBUR.md` and `DISPATCHING_COWORK.md` for sending scoped work
+  to other nodes. That is neither reading nor editing. **Recommendation: a section of a working-rules document *(proposed r1462, **retracted r1463** — the operating rules went to `THE_PLAN`'s per-turn list instead)***, not
+  its own document, unless reading those two shows otherwise.
+- **The seats** — Arthur defines four roles. The coda carries them. **Recommendation: the README states which
+  seat the reader is in, in one line, and points at the capstone for the rest.**
+
+---
+
+# 10 · RECORD — the kickoff audit
+*The r1466 version listed what Arthur holds and implied it all needed keeping. That is grandfathering again.
+The question is whether each piece **still deserves a place**. Tested at source; most of it does not.*
+
+## 8a · Arthur's seat discipline — RETIRE. It is a duplicate of the capstone.
+Six items, each checked against the capstone and `THE_METHOD`:
+
+| Item | Where it already lives |
+|---|---|
+| do not usurp the cold read | coda ×8, field note ×8 |
+| do not rule from certainty in the seat | coda |
+| Occam's razor on an orchestrator slip | field note ×3 |
+| no manufacturing either way (sycophantic / sadistic) | coda ×5, field note ×58 |
+| never farm a coherence judgment / the perimeter defect | field note, `THE_METHOD` ×7 |
+| the operable-question check | coda, field note ×7, `THE_METHOD` ×5 |
+
+**Why Arthur carries them at all:** it says the seat *"binds from turn one"* — i.e. before the capstone is
+read. **The structure puts the capstone last deliberately.** So the README's single line naming the seat and
+pointing at the capstone is the right amount, and these six do not need placing. **Retired.**
+
+## 8b · The rest of Arthur, judged
+| Piece | Judgement |
+|---|---|
+| **The capstone is five documents, not two** | **CRITICAL ERROR, FIXED r1467.** The README named two. It now carries all five in order, each with what it is for. |
+| **The X trilogy** | **KEEP — one line.** Teaches the intuition the formal papers assume but never build. Nothing else does that job. |
+| The ontology map's internal structure | **RETIRE.** A map describes itself; a spin-up document does not describe a map's sections. |
+| What NOT to read on spin-up | **RETIRE.** The index now sorts everything into bins, and the plan's §4 marks what is unfiltered. That is the job, done better. |
+| *Ongoing work is map-navigated, not full-reread* | **KEEP — one line, per-turn list.** Operational, and not stated anywhere else. |
+| The three reading guards | **KEEP, held** until the ontology map is filtered, then onto the cards of the papers they protect. |
+
+## 8c · The other three — judged and closed (r1468)
+| | Judgement |
+|---|---|
+| **`KICKOFF_EXCALIBUR`** | **RETIRED.** The dispatch model was used **once** — r931, six parallel readers with Arthur synthesizing, for the publication-readiness audit — and not again in the ~530 revisions since. The capability it served (bounded verification, focused computation, refutation) is now served by **writing a receipt**: a script that runs, asserts, and can fail. The README carries that in one line under *Bounded work*. |
+| **`KICKOFF_GATE`** | **RETIRED**, after harvesting four things nothing else held: **two standing guards on CR's own language** — *manufactured/shadow/projection/artefact* mean built-by-construction-and-real, never *unreal*, and reading them conventionally **inverts the central claim**; and the horizon and centre are **topologically identical, not metrically identical**, with *"metrically identical" retired as false* — both now in `THE_PLAN`'s per-turn list, held until the ontology map is filtered and they can go onto the cards of the papers they protect. Plus ***prior reading earns you the index — where to look — never the extract***, into the per-turn list. Plus a **better check-in** than the README had: hand back the goal, where we actually are, **the failure mode you are most at risk of** named from the field note, and the consolidated picture. Its own corpus map was badly stale — fifteen papers, `p0/16`, a bundle from r795. |
+| **`KICKOFF_CODA_REVIEW`** | **KEPT and INDEXED** — the presumption of retirement was wrong. It is a **reusable review methodology**, not a one-off: Pass A understand and stop, Pass B only after confirmation, four review questions plus one turned inward, three verdicts, a disqualifying test, and a receipt rule that voids any finding without a first-hand extract. In its own words, *"the gate is the coda, operationalized."* See §2. |
+
+**So: all four kickoffs are resolved.** Three retired into the working set; one kept because it does a job
+nothing else does. **The README replaces the spin-up function of all four.**
+
+---
+
+# 11 · ⌫ **DECIDED r1736** — *was "a thought, not a decision"* — this document as the home for consolidated outputs
+*(Daryl, r1480: "we could think about it anyway. Without skipping to doing.")*
+The suggestion: things that **draw consolidated coherence across the whole programme** — the dissolution
+census, the ontology map, and their kind — might belong under this banner rather than scattered as
+supplementary. They share a property nothing else does: each is *about the corpus as a whole* rather than about
+a part of it.
+**⚑ ANSWERABLE NOW, AND ANSWERED r1736 — and the objection has dissolved.** *The r1480 case **against** was
+*"this document is scaffolding and retires; a home that retires is not a home."* **That premise is struck
+(r1735): the document is not scaffolding, it is the only thing holding the work together at the highest level,
+and it is nowhere near retirement.** So the only argument against is gone.*
+**And the evidence r1480 lacked has arrived. There are now SIX documents of this kind, not two:**
+| Document | What it draws across the whole | State |
+|---|---|---|
+| `ONTOLOGY_FOUNDATION_INDEX` | the **lens** — each forcing pinned once, 21 cards | live, ARC 2 |
+| `THE_EVOLUTION_MAP` | the **ledger** — what is forced, in arc order p0→p17 | live, ARC 3 |
+| `THE_DISSOLUTION_CENSUS` | every standard problem the corpus dissolves, graded by ontology-cost | **17/17 complete r1717** |
+| `PHYSICAL_VALUES_LEDGER` | every computed value, its conventions, the ΛCDM comparison | live, SA-5 |
+| `THE_WISDOM_LEDGER` | every operative scrap, filed by moment of use | live, 225 scraps, SA-6 |
+| `ENTRY_POINT_REGISTER` | every gap the corpus advertises, in its own words | live, grain 0 |
+**⌗ AND THE CENSUS'S GRADING HAS AN EPISTEMIC LIMIT, stated r1768 so it is not over-read.** *The **ontology-cost**
+grading makes some entries **independent of the frame** — the ontology-free ones do not presuppose the layered
+reading, which is why they are the ones an opponent cannot decline. **That escapes circularity. It does not
+escape survivorship.** P6's boundary is the binding one: ***"self-consistency is not soundness — `lem:vindication`
+is built from successes, survivorship not measurement."*** **A run of successes is not a base rate however
+independent each success is of the frame** — so the grading sharpens **which** instances `THE_PLAN` A5.5's
+reference class must be built against, and **does not stand in for building it.***
+
+**⛭ THE ANSWER, and it is NOT to move them here.** *They share a property — each is **about the corpus as a
+whole** — but they are **read at different moments** and moving them under one banner would break the thing
+that makes each usable: the wisdom ledger is opened **at the moment of use**, the census **before claiming a
+dissolution**, the values ledger **when quoting a number**, the lens and the ledger **while reading a paper**.
+**A shared subject is not a shared moment, and filing by subject would destroy the filing by moment.***
+**⌗ WHAT IS ACTUALLY OWED, which is what the r1480 thought was reaching for: they need to be NAMED AS A CLASS
+and know about each other.** *Six documents doing one kind of job, each indexed separately, **none of them
+saying that the other five exist or what distinguishes it from them** — which is SA-2's fourth shape exactly:
+**two right things in their right places that do not know about each other.** *Entered as the class below,
+with the distinguishing question each answers.*
+
+---
 
 # 13 · THE SEQUENCE — what to work, in what order, and why (r1555)
 **⌖ AND IT IS ONE OF TWO — stated r1738.** *This is the sequence for the **physics and corpus** work: eight
@@ -1875,7 +2599,6 @@ that most changes what the others are working from.*
 of the plan's gates. Working the corpus on unverified instruments is how the r1420 trap happened.
 
 ## PHASE 3 · Corpus hygiene — **bounded, and it makes the papers shippable**
-
 > **⚠ UNDATED POSITION — flagged r2378 by `corpus/check_arcs.py`, and NOT given a date I cannot
 > establish.** *This section carries **no revision marker**, so its stated position is **uncheckable**:
 > a node reading it cannot tell whether it holds. **An uncheckable claim about what is done is worse
@@ -1895,7 +2618,6 @@ kills, unverified cards and twelve bare tags in it. **Why not later:** it blocks
 no working front matter until it exists.
 
 ## PHASE 5 · The register's meta-layer (~185 sites) — **the gather that finds more**
-
 > **⚠ UNDATED POSITION — flagged r2378 by `corpus/check_arcs.py`, and NOT given a date I cannot
 > establish.** *This section carries **no revision marker**, so its stated position is **uncheckable**:
 > a node reading it cannot tell whether it holds. **An uncheckable claim about what is done is worse
@@ -1908,7 +2630,6 @@ advertise. **Why here:** it will produce new plan items, and they should land on
 already cleaned — otherwise the findings mix with the defects.
 
 ## PHASE 6 · The two cheap physics checks — **before the build, because they may change it**
-
 > **⚠ UNDATED POSITION — flagged r2378 by `corpus/check_arcs.py`, and NOT given a date I cannot
 > establish.** *This section carries **no revision marker**, so its stated position is **uncheckable**:
 > a node reading it cannot tell whether it holds. **An uncheckable claim about what is done is worse
@@ -1924,7 +2645,6 @@ already cleaned — otherwise the findings mix with the defects.
   document naming a gap in a paper is either a finding or a stale claim; both are cheap to settle.**
 
 ## PHASE 7 · The build — **item 2, the collapse-excursion model**
-
 > **⚠ UNDATED POSITION — flagged r2378 by `corpus/check_arcs.py`, and NOT given a date I cannot
 > establish.** *This section carries **no revision marker**, so its stated position is **uncheckable**:
 > a node reading it cannot tell whether it holds. **An uncheckable claim about what is done is worse
@@ -2447,90 +3167,6 @@ neither is closed until the other is.**
 
 
 ---
-
-# 16 · THE DEVELOPMENT RECORD — *how the programme's questions were actually worked, and how they came together*
-
-*Opened r2378 (Daryl-directed, `SC-1`). **This is the home `RG-1` moves things into.** §11 decided at r1736
-that this document is where consolidated outputs belong and nothing was built; this is that decision acted on.*
-
-> ## ⌗ WHAT THIS SECTION IS FOR
->
-> **The papers present the physics as the finished product, as clearly and coherently as they can. This
-> section carries how it came to be that.** *A paper does not report the things it did not have figured out
-> at some stale point in the past and has since worked through — that content is folded into the positive
-> synthesis and its stale wrapper is **struck and landed here**, in this document's own framing.*
->
-> **⛭ THE FRAMING IS THE POINT, and it is what makes this a complement rather than a duplicate.** *The
-> paper's framing is **the physics**: what is true, why, and how it hangs together. This section's framing is
-> **the development**: what was open when, what closed it, in what order, and what the closing revealed about
-> how the work runs. **The same fact told in the two framings is two different things** — and if a passage
-> here reads the way the paper reads, it is in the wrong framing and belongs back in the paper.*
->
-> **⛭ AND THE `RG-1` KEEP CASE LANDS HERE TOO, as its counterpart.** *When an account of how a problem was
-> worked is judged **particularly pedagogical** and kept in a paper, this section still carries the
-> development account — **and the two must be written against each other**, so that the paper's paragraph
-> teaches and this one records. **`RG-2` is the check that they are complements**: after any MOVE, name the
-> sentence in the paper that now carries the result, or the move is not finished.*
-
-## ⌗ THE ENTRY FORM — four fields, and the first is not optional
-
-*Every entry: **① THE QUESTION as it actually stood** (in the words it was carried in, so the entry is
-findable from the old wording) · **② THE SEQUENCE** — what was tried, what failed, what closed it, dated to
-revisions where the record supports it and **left undated where it does not** · **③ WHERE IT LANDED** — the
-paper and section that now carries the result · **④ WHAT THE CLOSING TAUGHT**, if anything, and a pointer to
-the coda face or wisdom-ledger scrap if it earned one.*
-
-**⛔ AND THE ONE THING AN ENTRY MAY NOT DO: re-argue the physics.** *The result lives in the paper. **An
-entry that restates the derivation has become a second paper, worse than the first**, and the next node will
-have two sources for one fact.*
-
-## ⌗ THE LEDGER
-
-*(empty — the first entries arrive from `SR-1`, whose seventeen sites are censused in
-[`THE_STAGED_REVISIONS.md`](THE_STAGED_REVISIONS.md) and whose MOVEs land here.
-**`SC-1` is discharged by this section existing; the filling is `SR-1`.**)*
-
-| # | the question as it stood | closed | landed in | what it taught |
-|---|---|---|---|---|
-| **1** | *"The classification of causal reassignments"* — P7 `sec:frontiers` item 3 | **c54.115** (retired below P7's list); **moved here r2378** | P7 `sec:general-reach` carries the reducible sector; the irreducible remainder (Kerr-inner, Reissner–Nordström) is ordinary interior analysis | **That a gate can vanish without its item being answered.** The remainder was never closed on its merits — the *matter-sector dynamics* it waited on was, and what was left stopped being a frontier of this construction. **A frontier item can leave a list by its gate dissolving**, and that is a different closure from being solved. |
-| **2** | *"The discrete-residue matter home"* — p0 `sec:frontiers` item 3, struck r1609 and **still listed with its own strike notice for ~770 revisions** | **r1609**; **moved here r2378** | P14 `sec:count` — a Dirac field binds exactly one chiral zero-mode at each of the three throat walls, the count forced and the family symmetry the Weyl $S_3$ | **The blindness is the reusable part.** The item's own record says it: *"it asked after the **existence** of such a sector, which the matter paper had settled, and so could no longer discriminate."* **A test that can only return one answer has stopped being a test** — and this one went on being listed as open for 770 revisions after it stopped. |
-| **3** | p0 §sec:unification way 5 — two inline *"Corrected r1609: this bracket read …"* records | **r1609**; **moved here r2378** | The corrected claims stand in place, unmarked | **A revision record inside a published paper is a category error, and a small one is the hardest to see.** Each was two lines; neither was wrong; **both told a reader what the paper used to say**, which is this document's business and not the paper's. |
-| **4** | *"The structure of the lap, and the physics of the lift"* — P7 `sec:frontiers` item 7 | resolved **r2154–r2159**; retired below P7's list; **merged and moved here r2378** | P7 `sec:lift-initial-rate`, which now carries **every** result the block held: the Euclidean null's own numbers ($s/P=0.78899$, $r=-0.3441\alpha$, $\dd r/\dd\ell=\sqrt2$) and its **uniqueness** on the segment · $\lvert\Delta\eta_{\rm lift}\rvert=1.66\times10^{4}$ Mpc · the link to `thm:antimatter-progenitor` · the two dualities and the turnaround as the branch point of $\sqrt{1-f}$ · the lap as the region where the background's own synchronous reading is unavailable · and the **horizon discriminator** with $e^{-152}$ at the first peak and the $\ell\simeq1.5$–$2.5$ boundary | **The wrapper said the content was not repeated, and it was — twice over.** The block opened *"the detail belongs to `\S sec:lift-initial-rate` and is not repeated"* and then restated the bead law, the imaginary conformal time, the zero cosmic duration and the effective-rate reading, **while also being the only place four results were stated at all**. ***That is the shape of the hazard: a retirement wrapper is where live physics goes to be half-duplicated and half-orphaned*** — a reader gets each result twice or not at all, and neither copy knows about the other. |
-
-### ⌗ THE MOVED TEXT, VERBATIM — *so the record is the record and not a summary of one*
-
-**① `CR_framework.tex`, below `sec:frontiers` (P7 item 3's retirement paragraph):**
-
-> \paragraph{} \emph{The classification of causal reassignments} stood as item three, and closes the other way: its reducible sector was settled in the synthesis, and its irreducible remainder---the Kerr-inner and Reissner--Nordstr\"om interiors---was gated on the matter-sector dynamics that item one has now answered. It is recorded here rather than listed above because the gate it waited on is gone, and what is left of it is ordinary interior analysis rather than a frontier of this construction.
-
-**② `geometric_core_paper.tex`, `sec:frontiers` item 3 (struck r1609, listed until r2378):**
-
-> \item \textbf{The discrete-residue matter home. --- \emph{ANSWERED; struck r1609, kept as the record.}}
-> As posed, this asked whether a fermion sector genuinely lives on the discrete
-> orientation parity, the place the reading indicates, or whether even that residue
-> is too thin and matter is carried the ordinary way (a gravitational--cosmological
-> unification only, which is the boundary paper's verdict~\cite{JanzenBoundary}).
-> \textbf{It has since been answered in the first sense}: a Dirac field on the slicing
-> structure binds exactly one chiral zero-mode at each of the substrate's three throat
-> walls, the count forced within CR and the family symmetry the Weyl $S_3$
-> itself~\cite{JanzenMatter}.
-> \textbf{[Struck r1609. The bracket here read ``the discrete residue is established; that a fermion sector lives on it is neither shown nor excluded here, and the corpus asserts it nowhere'' --- false since P14, which this paper cites throughout for precisely that sector, and a false-open under the corpus's own standing law. It is logged rather than deleted, because a branch that closed is the shape of the maze and not waste. What the test's own blindness was: it asked after the \emph{existence} of such a sector, which the matter paper had settled, and so could no longer discriminate. What survives it is routed rather than orphaned --- the descent onto a \emph{propagating} spinor sector is open family~6, and the world-correspondence of the identification, as of every result in this paper, is family~7, the standing empirical question.]}
-
-**③ `geometric_core_paper.tex`, §sec:unification way 5 (two inline correction records):**
-
-> [p0 way-5 bracket: r1609 correction record]
->  \emph{(Corrected r1609: this bracket read ``the generation factor and the descent \ldots
-> asserted nowhere,'' which P14 had already superseded.)}
-> 
-> [p0 way-5 bracket: r1609 hexad correction record]
->  \emph{(Corrected r1609: this read ``left open with the descent.'')}
-
----
-
-
-**④ `CR_framework.tex`, below `sec:frontiers` (P7 item 7's retirement block, merged into `sec:lift-initial-rate` first):**
-
-> \paragraph{One item has left this list, and its content stays.} \emph{The structure of the lap, and the physics of the lift} stood as item seven of the frontier above until it resolved; it is recorded here rather than listed there, because a frontier list is a map of where the work is and an item that has been answered is no longer part of that map. The detail belongs to \S\ref{sec:lift-initial-rate} and is not repeated; what follows is the account as the frontier item carried it, kept because the item's own framing---the three negative characterisations it named and the positive results that replaced them---is the record of how the question closed. The bead's closed contour is established as one analytic object (Theorem~\ref{thm:bead}), and its four principal loci are separated by the derivatives (Fig.~\ref{fig:F-triptych}). \emph{What physically transpires along it was the open item here; it is now settled, and the account is one function.} The lift---the stretch of path, of length $\pi\alpha/3$, along which $\operatorname{Re}\tilde\tau$ does not advance while $r$ climbs from the comoving turnaround to the branch point---was previously characterised only \emph{negatively}, by the coordinate's failure to advance. Three features made that deficit concrete, and each is now a positive result. First, the lift is not featureless: it carries the \emph{Euclidean null} at $s/P=0.78899$, $r=-0.3441\alpha$---the locus $f=2$, where the marginal congruence has $\dd r/\dd\tilde\tau=\pm i$, the unit-speed condition realised on the imaginary branch as the seams realise it on the real ones (Fig.~\ref{fig:F-triptych}b). It is not a seam: the slicing curve does not turn there, $\dd r/\dd\ell=\sqrt2$. Second, it terminates at the branch point, which is where the conjugate ($r<0$) branch becomes the matter branch (Theorem~\ref{thm:antimatter-progenitor}); whatever the lift is, it is the interval immediately preceding that exchange. Third, the whole lap---from the back seam through turnaround, lift and branch point to the front seam---is the portion of the history the $dS_4$ background represents on a single minimal $S^3$ at the throat, so it is precisely the region in which the background's null rulings, and with them the synchronous reading built on the second ruling~\cite{JanzenOperator}, are \emph{not} available as they are on the horns. The positive account is now in hand for the lift itself\rcpt{LIFT_euclidean_filter}, and it follows from Theorem~\ref{thm:bead}'s own continuation rather than from new structure. On the lift $\mathrm{Re}\,\tilde\tau=0$, so $\tilde\tau=is$ and $\sinh(3is/2\alpha)=i\sin(3s/2\alpha)$; on the branch joining the collapse leg this is real, $r(s)=-(2M\alpha^{2})^{1/3}\lvert\sin(3s/2\alpha)\rvert^{2/3}$, monotonic from the turnaround to the branch point. Since $\dd\tilde\tau=i\,\dd s$, the conformal time $\dd\eta=\dd\tilde\tau/a$ is \emph{purely imaginary}: $\lvert\Delta\eta_{\rm lift}\rvert=1.66\times10^{4}$ Mpc. \emph{The lift is the Euclidean segment of the bead}, and the interior unit-speed crossing is more than placed by this: it is where the null cone is defined on that segment. \emph{And a structural consequence follows that is worth stating on its own.} Cosmic time is $\operatorname{Re}\tilde\tau$, and $\operatorname{Re}\tilde\tau$ is frozen across the lift; therefore \emph{the lift occupies zero cosmic time}. The Euclidean segment is not a gap in the cosmic-time evolution but a single instant of it---which is why nothing can dissipate across it, and why the deparametrized Hamiltonian evolution~\cite{JanzenCanonicalTime} passes from the collapse leg to the expansion leg with no interval in which to act---the evolution operator across cosmogenesis being the identity, so that nothing can be lost there because no evolution acts~\cite{JanzenCanonicalTime}. \emph{Cosmogenesis is instantaneous in the true time.} \emph{And with that, the triptych of Fig.~\ref{fig:F-triptych} reads as the resolution of an old and abandoned objection.} Panel~\textbf{(b)} shows the rate $\dd r/\dd s$ vanishing at the turnaround, passing through unity at the Euclidean null, and diverging at the branch point; panel~\textbf{(c)} shows the acceleration growing without bound over the same interval. \emph{So the lift is the continuous physical process that carries the areal rate from zero to infinity}---and it does so, by the preceding paragraph, \emph{over no cosmic time at all}. The universe therefore \emph{arrives} at $r=0$ with precisely the initial data the Friedmann equations require of it: vanishing areal radius, divergent expansion rate, and divergent deceleration, the last working against a rate already large enough to absorb it. Hoyle and Eddington's complaint against the Einstein--de~Sitter model was that its big bang \emph{posits} the expansion it is meant to explain---that the model expands only ever because it was already expanding, with no account of the initial rate. \emph{The lift is that account.} It is not a point but a well-defined interval, a forced phase shift of finite path length and zero duration, and it delivers the preconditions rather than assuming them. \emph{And it does so in the reading this framework insists on throughout}: the evolution is read geometrically in $r$ along the bead, and the divergent rate and deceleration are \emph{effective}---perspectival consequences of continuous parametric motion, not dynamical causes. The equations are read leftward from the geometry, and the beginning stops being a mystery. A sharp separation follows: any quantity whose value depends on elapsed cosmic time is necessarily continuous across the lift, having no time in which to change, while quantities depending on path length or on $\operatorname{Im}\tilde\tau$ may differ across it. The marginal congruence satisfies $(\dd r/\dd\tilde\tau)^{2}=1-f$, so $f=0$ gives $\dd r/\dd\tilde\tau=\pm1$---unit speed in the real segments' own parameter, which is what the seams realise---while $f=2$ gives $\pm i$ and hence, since $\dd\tilde\tau=i\,\dd s$ on the lift, $\dd r/\dd s=\pm1$: \emph{unit speed in the lift's own parameter}. A generic point of the lift gives $\dd r/\dd s=\pm i\,0.784$, imaginary and not unit, so the Euclidean null is the \emph{unique} such locus there. \emph{Thus $f=0$ and $f=2$ are one condition---$\lvert\dd r/\dd(\text{segment parameter})\rvert=1$ read on the two branches of $\tilde\tau$---and the lap carries a unit-speed locus on every segment, so the null cone is defined continuously across the whole excursion}\rcpt{EUCNULL_continuous_null_definition}. What the region carries across follows at once, and it is a \emph{horizon discriminator} rather than an attenuation: an oscillating mode carries $e^{ikc_s\eta}$, which under $\eta\to\eta+i\lvert\Delta\rvert$ acquires $e^{-kc_s\lvert\Delta\rvert}$ and is annihilated ($e^{-152}$ at the first peak), while a super-horizon mode is frozen---a constant, which the shift does not touch---and passes unchanged. \emph{So the amplitude and tilt cross and the phase does not}, which is the division of labour the cosmology asserts~\cite{JanzenCRcosmology}, here with its mechanism. The boundary falls at $\ell\simeq1.5$--$2.5$, below the observable range. The turnaround and the real segments follow from the same reading, and complete the account\rcpt{LAP_complete_account}. The marginal congruence satisfies $(\dd r/\dd\tilde\tau)^{2}=1-f$, so the whole seam-to-seam excursion is one monotone reading of $f$: $f<0$ has $r$ timelike (the horns, and the entire $r>0$ cosmology); $f=0$ is the seam, where $r$ is null and $\lvert\dd r/\dd\tilde\tau\rvert=1$ on the real branch; $0<f<1$ is the lap's real segment, $r$ spacelike and the congruence decelerating; $f=1$ is \emph{the turnaround}, $\dd r/\dd\tilde\tau=0$---and, being the branch point of $\sqrt{1-f}$, it is \emph{why} the lift is Euclidean rather than merely where the lift begins; $f>1$ is the lift; and $f=2$ is the Euclidean null. Two dualities close it. The unit-speed loci sit at $1-f=+1$ and $1-f=-1$, \emph{one unit either side of the turnaround at $1-f=0$}---the single condition of the preceding paragraph, with its centre identified. And the two flips of $r$'s causal character are of opposite kind: the seam flips it \emph{through zero} ($f=0$), the branch point \emph{through infinity} ($f\to\pm\infty$ via $-2M/r$), which is precisely why $r_{*}$ is finite there and no divergent phase is carried across\rcpt{BRANCHPT_transmission_character}. \emph{Note that $f>0$ covers only the $r<0$ stretch: past the branch point $r$ is timelike again and the cosmology is already running.}
 
 # 12 · LOG
 - **r1598** — **PHASE 6, first check SETTLED.** A2.9 and A2.10 §II.3 are **not** the same result — two readings
