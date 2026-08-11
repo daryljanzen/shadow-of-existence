@@ -1,0 +1,439 @@
+\documentclass[11pt,a4paper]{article}
+
+% [†ONT-RANGE] THE RANGE AND THE WALL — this paper is the HOME (ONTOLOGY_FOUNDATION_INDEX.md §1m).
+%   IT ANSWERS P8's PRINCIPAL OPEN QUESTION, and the answer is "geometric and, once seen, forced":
+%   THE RANGE IS THE SYMMETRY-REDUCIBLE SECTOR. thm:bound (necessary): a geometry swept by H <= SO(4,1)
+%   INHERITS H, so every reachable geometry's isometry group contains a sweep-subgroup of the substrate's.
+%   prop:surj (sufficient, class by class): the operator's FOUR DATA — leaf (spatial cut), lapse
+%   (time-stacking), SHIFT (frame-dragging), vantage (radial signature) — supply exactly the functions the
+%   general H-invariant metric needs, so the cut SPANS the class; vacuum members are the substrate's own
+%   family, matter is the bend. KERNEL SIZE = HOW MUCH SYMMETRY THE CLASS SPENDS: ODE (one orbit-space
+%   variable) -> a finite parameter family (1 for SdS; FOUR for Type-D); PDE (two variables, static
+%   axisymmetric) -> an entire FUNCTIONAL family, the Weyl class.
+%   *** ROTATION IS THE SHIFT — not the leaf, not the lapse. A symmetric sweep makes the orbits orthogonal
+%   to the cut, so every cut so far was block-diagonal; the whole content of rotation is the cross term
+%   g_{t.phi}, which a block-diagonal cut cannot carry. J = Ma/Xi^2: GENUINE ANGULAR MOMENTUM NEEDS BOTH
+%   THE OFFSET AND THE TWIST — "the offset alone is SdS, the twist alone is de Sitter." The mass-free twist
+%   limit is MAXIMALLY SYMMETRIC (constant-curvature Riemann): "a rotating, oblate slicing of the substrate
+%   itself, NOT A NEW GEOMETRY." ***
+%   thm:pd: the separable (Carter) cut is vacuum-Lambda IFF its structure functions are QUARTICS with
+%   LEADING COEFFICIENT -Lambda/3 = -1/alpha^2 PINNED BY THE SUBSTRATE; the four free coefficients are the
+%   mass (c1=-2M), the rotation (c0=a^2), the NUT charge (d1), and a coordinate normalization (c2). SO THE
+%   ROTATING VACUUM KERNEL IS EXACTLY KERR-NUT-(A)dS.
+%   *** cor:carter — THE CARTER CONSTANT EXPLAINED. "The separation is NOT IMPOSED beyond the separable
+%   form: the vacuum condition on the maximally symmetric substrate SPLITS OF ITS OWN ACCORD into a pure-r
+%   and a pure-p equation. The hidden symmetry of the Type-D family — the Killing tensor and the Carter
+%   constant that render Kerr geodesics integrable, WHICH GENERAL RELATIVITY CARRIES WITHOUT EXPLANATION —
+%   IS THE SUBSTRATE'S MAXIMAL SYMMETRY SURFACING IN THE SEPARABLE CORNER." (An "unexplained gift", explained.) ***
+%   TWO PRINCIPLED EXCLUSIONS: ACCELERATION IS MATTER — the de Sitter C-metric's axis structure function
+%   carries NO Lambda, so a bare accelerating mass leaves an irremovable CONICAL STRUT ("a free mass follows
+%   a geodesic; a forced acceleration REQUIRES A SOURCE"); the strut is a line of matter on the axis, a BEND.
+%   (Scope: shown for the standard form; no exhaustive proof that no strut-free variant exists.) CHARGE IS
+%   THE BEND — electrovac, not vacuum; rotation-independent; and THE GEOMETRY IS CHARGE-CONJUGATION BLIND
+%   (depends on Q only through Q^2; the SIGN lives entirely in the Maxwell potential A).
+%   *** TYPE D IS THE SEPARABLE CORNER, NOT THE EDGE. Mechanism = THE SHIFT-SHEAR LINK: by GOLDBERG-SACHS an
+%   algebraically special vacuum carries a SHEAR-FREE null geodesic congruence, and the substrate's null
+%   rulings ARE shear-free — hence the Type-D corner. BUT A CUT NEED NOT INHERIT ONE: the anisotropy of
+%   Bianchi I and Zipoy-Voorhees IS SHEAR, and SHEAR FORBIDS A REPEATED PRINCIPAL NULL DIRECTION. So the
+%   operator climbs into TYPE I. It survives the shift: "the ALGEBRAIC TYPE IS CARRIED BY THE LEAF, NOT
+%   CONFERRED BY THE ROTATION — the shift moves angular momentum, not algebraic type." WHAT GOVERNS
+%   REACHABILITY IS THE COUNT OF KILLING *VECTORS*, NOT KILLING *TENSORS*. prop:radiative: the reachable
+%   kernels are the NON-RADIATIVE types O, D, I; TYPES N AND III ARE ABSENT — "a swept geometry depends only
+%   on its ORBIT-SPACE coordinates while a free wave depends on the TRANSVERSE coordinates through which it
+%   propagates." This absence is the sector's POSITIVE BOUNDARY, not a gap. ***
+%   *** THE WALL, READ FOUR WAYS: (i) the loss of continuous symmetry ("the operator has nothing to grip");
+%   (ii) genuinely INHOMOGENEOUS MATTER; (iii) the ONSET OF FREE GRAVITATIONAL RADIATION — the graviton's two
+%   polarizations are "exactly the transverse degrees of freedom a sweep cannot carry" (high symmetry forbids
+%   radiation by Birkhoff; INTERMEDIATE symmetry CONFINES it — the Einstein-Rosen and Gowdy waves, Type I,
+%   IN the reachable sector and ON ITS EDGE); (iv) the ONSET OF CHIRALITY — inside, the swept symmetry
+%   completes the reflection exchanging the two handednesses into an orientation-preserving rotation and so
+%   IDENTIFIES them, "A MIRROR, NOT A CHIRALITY"; past the wall the handedness becomes GENUINE, the Z_2 sign
+%   of the turning polarization plane, the substrate's own orientation parity (the A_2 diagram automorphism,
+%   the same Z_2 that in the static sector is the dS<->Schwarzschild correspondence).
+%   THE SHARP CHARACTERIZATION: "a sweep generates a deformation of FIXED ORIENTATION... the loss of the last
+%   confining isometry is exactly the point at which the wave's polarization MUST REORIENT FROM PLACE TO
+%   PLACE. THE RIGIDITY OF A SINGLE GLOBAL SWEEP IS WHAT THE WALL IS." AND IT IS NOT A DEFECT: the dynamics
+%   of GR is unchanged, so beyond the wall the radiative sector is reached by ORDINARY EVOLUTION OF THE LEAF,
+%   not by generation from a sweep — THE WALL IS THE SEAM AT WHICH GENERATION-BY-SYMMETRY HANDS OFF TO
+%   EVOLUTION-BY-DYNAMICS. Connected/disconnected: a fermion chirality on a CONNECTED gauge isometry is
+%   rendered vector-like by Atiyah-Hirzebruch, while the GRAVITON's handedness lives in the DISCONNECTED
+%   orientation parity that obstruction cannot reach. ***
+%   NARIAI PINS TO THE SEAM, NOT THE WALL: the reachable sector runs along the NULL-DEGENERACY (Petrov) axis,
+%   whose INNER boundary is Nariai (two horizon null surfaces merged, still Type D) and whose OUTER boundary
+%   is the wall (all degeneracy lost into Type N's single propagating null direction). Opposite ends of ONE
+%   axis. Also: the KS reading and the flat-FLRW reading are DIFFERENT SO(4,1)-classes of the SAME SdS
+%   geometry, differing by exactly the rest-energy "-1" in (dr/dtau)^2.
+%   ALTITUDE: established within the symmetry-reducible sector across all algebraic
+%   types. The structural reading is GROUNDED, NOT ENTAILED ("we mark throughout what is computed and what is
+%   the reading the computations support"). Answers P8 ([†ONT-OPER] §1l); supplies the GEOMETRIC axis of P7's
+%   three-axis reach ([†ONT-CR] §1e); the wall feeds P11, P12 ([†ONT-ALG] §1h), P13.
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{receipts}  % in-place receipt citations -> Appendix R
+\usepackage{caption}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!black,
+  citecolor=blue!50!black,
+  urlcolor=blue!50!black
+}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\captionsetup{font=small, labelfont=bf}
+
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tud}[2]{T^{#1}{}_{#2}}
+\newcommand{\so}{\mathrm{SO}(4,1)}
+
+\title{The range of the de Sitter slicing operator:\\
+\large surjectivity onto the symmetry-reducible sector of general relativity,\\
+the Kerr--NUT--(A)dS vacuum kernel, and the wall of inhomogeneity}
+\author{Daryl Janzen\\
+\small Department of Physics and Engineering Physics\\
+\small University of Saskatchewan}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+A companion paper promoted the de Sitter slicing curve from a classifier of the vacuum family to a generating operator for the static, spherically symmetric sector of general relativity, with the matter content read off as the bend of the cut, and posed as its principal open problem the \emph{range}: which geometries of general relativity arise as cuts of the one de Sitter substrate. This paper answers it. The operator generates a geometry by sweeping or reassigning a lower-dimensional object built from the substrate's structure; a swept geometry inherits the sweep's symmetry, and the sweep is by isometries of the substrate, so every reachable geometry carries a symmetry that is a subgroup of the substrate's isometry group $\so$. The range is therefore bounded above by the symmetry-reducible sector of general relativity, and we show it fills that sector. The shape of that argument is worth naming, because it is standard and because naming it links the bound to the companion results rather than leaving it a lemma of this paper alone. Bounding a reachable class above by a necessary condition and then showing the bound attained is how one computes the image of a construction up to isomorphism, and the necessary condition here is the same sentence the geometric core uses to say what a cut \emph{is}---that a four-geometry's isometry group contain a sweep-subgroup of the substrate's~\cite{JanzenGeometricCore}\rcpt{K7_range_is_essential_image}. The condition is stated as an inclusion, and at every stratum for which the companion algebroid paper tabulates an isotropy---$\mathrm{SO}(4,1)$ at Type O, $\mathrm{SO}(2,1)\times\mathrm{SO}(3)$ at Nariai, $\mathbb{R}_{t}\times\mathrm{SO}(3)$ at the generic Schwarzschild--de~Sitter class---it is in fact an equality~\cite{JanzenAlgebroid}. The sharpening is stated for the strata tabulated, and the restriction is structural rather than a limit of the survey: a cut's isotropy is the subgroup of its geometry's isometry group that preserves the second fundamental form as well as the induced metric, so the two coincide only where the symmetry is large enough to fix the embedding too~\cite{JanzenOperator}. The Type-I classes, Kerr--de~Sitter and the wall are the low-symmetry classes, and are exactly where they need not. The inclusion is what the bound requires in any case. Within any reachable symmetry class the operator's four data---the leaf (the spatial cut), the lapse (the time-stacking), the shift (the frame-dragging), and the vantage (the radial signature)---supply exactly the metric functions the class admits, so the cut spans the class; the vacuum members are the substrate's own family in that class, and matter is the bend. The size of the vacuum kernel is set by how much symmetry the class spends: where the class reduces to ordinary differential equations (one orbit-space variable: spherical in $r$, homogeneous in $t$) the kernel is a finite parameter family---the one-parameter Schwarzschild--de Sitter family, the Kantowski--Sachs vacuum family (the Schwarzschild--de Sitter interior together with its Nariai tangency); where it remains a partial differential problem (two variables: static axisymmetric in $(\rho,z)$) the kernel is an entire functional family---the Weyl class. Rotation is located precisely: it is the shift, the off-diagonal frame-dragging that every symmetric cut so far had set to zero, and the angular momentum is the product of the mass-offset and a twist of the slicing frame ($J\propto Ma$), the twist alone returning pure de Sitter. The central theorem treats the separable (Carter) cut: requiring it to be vacuum on the substrate forces its two structure functions to be quartics whose leading coefficients are pinned to $-\Lambda/3=-1/\alpha^{2}$ by the substrate and whose remaining coefficients are the mass, the rotation, and the NUT charge (the fourth being a coordinate normalization fixed by the substrate), so the rotating vacuum kernel is the complete \emph{separable} Type-D family, Kerr--NUT--(A)dS, over the one substrate. Acceleration---the remaining Plebański--Demiański parameter---is not a vacuum parameter: a bare accelerating mass leaves an irremovable conical strut on the axis (the axis structure function carries no $\Lambda$, so the cosmological constant cannot regularise it), so acceleration enters on the matter side as a bend, the substrate's own free relative-acceleration being the de Sitter drift of the cosmological sector. The separation is not assumed beyond the separable form: the vacuum condition itself splits into a pure-$r$ piece and a pure-angle piece, so the hidden symmetry of the Type-D family---the Carter constant~\cite{Carter1968} that general relativity carries as an unexplained gift---is the substrate's maximal symmetry surfacing in that corner. Algebraic type is shown to be no constraint on the range: the operator reaches Petrov type O~\cite{Petrov1954} (de Sitter, Friedmann--Lemaître--Robertson--Walker), type D (Schwarzschild--de Sitter, the Kerr--NUT--(A)dS family), and type I (anisotropic Bianchi cosmologies at three Killing vectors, the Zipoy--Voorhees and Weyl class at two), with the speciality invariant verified to separate them. Type D is thereby identified as the separable \emph{corner}, not the edge: the corner where the substrate symmetry surfaces as a Killing tensor~\cite{WalkerPenrose1970}, with the rest of every class generic and needing no such structure. The mechanism is the shift--shear link. By the Goldberg--Sachs theorem an algebraically special vacuum carries a shear-free null geodesic congruence; the substrate's null rulings are shear-free, and a cut that inherits one as its principal congruence is algebraically special---this is the Type-D corner. But a cut need not inherit one: the anisotropy of Bianchi~I and of Zipoy--Voorhees \emph{is} shear, shear forbids a repeated principal null direction, and so the operator climbs past Type~D into Type~I. It survives the shift---the algebraic type is carried by the leaf, not conferred by the rotation---so what governs reachability is the count of Killing \emph{vectors}, the honest isometry, not the count of Killing \emph{tensors}. The wall is then drawn sharply: it is the loss of continuous symmetry, the point at which no isometry survives to anchor a sweep, and a geometry with no Killing symmetry is precisely one whose matter is genuinely inhomogeneous, so the boundary of the range and the dynamical-matter problem are one statement read two ways. On the geometry side this boundary has a positive identity: it is the onset of free gravitational radiation. The reachable sector carries no free propagating tensor mode---high symmetry forbids radiation (Birkhoff), intermediate symmetry confines it (the type-I Einstein--Rosen and Gowdy waves, on the edge), and only the loss of all confining symmetry frees the graviton's two transverse polarizations (the type-N plane wave, beyond the wall)---because a swept geometry depends only on its orbit-space coordinates while a free wave depends on the transverse coordinates through which it propagates. The operator generates the constrained, non-radiative skeleton of general relativity, in every symmetry class and of every Coulomb-like algebraic type, and stops where the field begins to propagate and the matter to move on its own. The wall acquires a sharp characterization: a sweep generates a deformation of \emph{fixed} orientation, so a confined wave is self-consistent only while it propagates transverse to that orientation, and the loss of the last confining isometry is exactly the point at which the wave's polarization must reorient from place to place---the rigidity of a single global sweep is what the wall is. It is not a defect: since the construction leaves the dynamics of general relativity unchanged, the radiative sector beyond it is reached by ordinary evolution of the leaf rather than by generation from a sweep, so the wall is the seam at which generation-by-symmetry hands off to evolution-by-dynamics. Read once more, on the orientation the sweep carries, the same boundary is where \emph{chirality} becomes generic: where the sweep carries a rotation---the $\mathrm{SO}(3)$ of the symmetric sector---it completes the reflection exchanging the wave's two handednesses into an orientation-preserving rotation and so identifies them, a mirror rather than a chirality; once that swept rotation is lost no isometry remains to undo the reflection, and the criterion bites from that loss onward rather than only at the wall---a wave whose single polarization a residual isometry still pins to a fixed axis remains achiral, the unpolarized \emph{turning} wave is the first chiral case, and the wall, where no residual isometry survives, is where chirality is generic~\cite{JanzenDynamics}. The handedness is the $\mathbb{Z}_{2}$ sign of the turning polarization plane, the substrate's own orientation parity surfacing in the freed transverse modes. Read against the framework's catalogue question, this identifies the \emph{geometric}-multiplicity axis of the standard catalogue~\cite{Stephani}---the moduli of distinct vacuum cuts---with causal reassignment supplying the vantage multiplicity and matter the bend, so that the reachable catalogue is one substrate read through a vantage groupoid over a moduli family of cuts. Collapse and cosmology are thereby one family and not two: the Schwarzschild--de~Sitter interior (Kantowski--Sachs) and the flat-FLRW cosmology are the same geometry read at two slicings, differing by a single rest-energy term, so a black-hole interior and an expanding universe sit in the range as cuts of the one substrate. A curvature invariant makes the same point quantitatively: read along the cosmological cut the \emph{perspectival} Kretschmann scalar $48M^{2}/r^{6}$ near the origin is $64/27\tau^{4}$, free of the mass, the amplitude's
+$r\propto M^{1/3}$ cancelling the $M^{2}$ exactly; read along the interior cycloid, whose amplitude carries
+$r\propto M$, the same invariant goes as $M^{-4}$~\cite{JanzenCircle,JanzenCRframework}. The mass-dependence
+belongs to the slicing being read and not to the geometry read through it, which is what one closed family read
+two ways requires. \emph{Charge enters as the bend and carries conjugation as a symmetry rather than a blindness}: the metric depends on $Q$ only through $Q^{2}$, the sign living entirely in the Maxwell potential, and composed with the substrate's mass-reflection this supplies charge conjugation's geometric face with only the charge sign closing from the matter field. \emph{That geometric face has since been shown to carry no asymmetry of its own}---the two branches of the cosmogenetic contour carry equal and opposite action, summing to zero identically---so any matter--antimatter asymmetry enters through the charge sign and cannot be manufactured by the geometry. The central constructions are established and verified at the stated scope, the symmetry-reducible sector across all algebraic types; the type-I reach is computed across the static and rotating axisymmetric classes alike---the Tomimatsu--Sato $\delta=2$ metric verified Type I, with the rotating spherical Kerr leaf the Type-D control---and the radiative degrees of freedom beyond the wall---free gravitational radiation, equivalently dynamical inhomogeneous matter---are carried past it by the ordinary general-relativistic evolution the companion dynamics paper works out, the wall a regular boundary of the operator's reach and not a frontier of the theory~\cite{JanzenDynamics}.
+\end{abstract}
+
+\section{Introduction and ontological setting}\label{sec:intro}
+
+The companion paper~\cite{JanzenOperator} took the de Sitter slicing curve of~\cite{JanzenSlicing}---the radial curve whose turning points are the roots of the Schwarzschild--de Sitter (SdS) horizon cubic, unifying Schwarzschild and de Sitter as two readings of one slicing---and showed that the same curve, sent through the Einstein tensor, generates the entire static spherically symmetric sector of general relativity: the vacuum condition is the linear equation whose solution space is the SdS family (\emph{straight cuts are vacuum}), the energy density is the radial bend of the cut off that vacuum profile ($\rho=m'(r)/4\pi r^{2}$, \emph{matter is the curvature of the cut}), and the radial pressure is carried by unlocking the lapse from the spatial profile. The operator's data separated into the leaf (the spatial cut), the stacking (the lapse), and the vantage (the radial signature). That paper closed with the range as its principal open problem: whether the operator reaches the rest of general relativity, or only a privileged subclass.
+
+This paper answers the range question. The answer is geometric and, once seen, forced. The de Sitter manifold is the maximally symmetric Lorentzian manifold; its isometry group is $\so$. The operator generates a geometry not by writing an arbitrary metric but by sweeping or reassigning a lower-dimensional object built from the substrate's own structure---the spherical sector swept a one-dimensional curve on a two-dimensional de Sitter section by $\mathrm{SO}(3)$. A geometry generated by sweeping with a subgroup $H$ inherits the symmetry $H$, and $H$ is a subgroup of $\so$. The range is therefore bounded above by the \emph{symmetry-reducible sector} of general relativity---geometries whose isometry group contains a sweep-subgroup of $\so$---and the body of this paper shows the operator fills that sector, across every algebraic (Petrov) type~\cite{Petrov1954}, with the substrate's families as the vacuum kernels and matter as the bend. That reach has a single structural axis. Algebraic type is the count of coincident principal null directions, and the operator's whole range---Petrov type~O, D, and I---lies along it as one interval between two null-structure boundaries: at the inner end the Nariai seam, where two horizon null surfaces merge into a frozen, maximally symmetric but still Type-D degeneracy (the cosmogenesis branch point); at the outer end the wall, where the last degeneracy is lost into the single propagating null direction of Type~N. The wall is the complement: geometries with no continuous symmetry to anchor a sweep, which is exactly the class whose matter is genuinely inhomogeneous. The range so drawn is the reach of the substrate's maximal symmetry gathered in the geometric core~\cite{JanzenGeometricCore}: what the maximal symmetry reaches is this constrained, non-radiative skeleton, and the wall is its matter-boundary face read from the range side. One consequence of that fill is worth marking at the outset, for it is the programme's central identity made comprehensive: the reachable sector carries the black-hole geometries and the cosmologies together, as cuts of the one substrate, so that the Schwarzschild--de~Sitter interior and the flat-FLRW cosmology are the same geometry read at two slicings---collapse and cosmology one family, not two, throughout the range this paper draws~\cite{JanzenCRframework}.
+
+We carry the programme's structural reading---formalized as the substrate's action Lie algebroid~\cite{JanzenAlgebroid}---and its discipline of grounding rather than entailment~\cite{JanzenShadowExistence}. Within Cosmological Relativity the de Sitter manifold is the fundamental \emph{representation} in which the evolving three-dimensional universe is described; this paper works entirely at the representational level (how cuts of the substrate generate the exact-solution geometries) and inherits the deeper individuation rather than re-deriving it~\cite{JanzenCRframework}. The results below ground the structural reading---that the covariance of geometries over the substrate is general relativity's covariance of charts lifted one level, and that its range is precisely the symmetry-reducible sector---they do not entail it as a theorem entails a corollary, and we mark throughout what is computed and what is the reading the computations support.
+
+\section{The structural bound}\label{sec:bound}
+
+\begin{theorem}[The $\so$ symmetry bound]\label{thm:bound}
+Let a geometry be generated by the operator: a lower-dimensional slicing object on the de Sitter substrate, swept or reassigned by a subgroup $H\subseteq\so$ of the substrate's isometries. Then the generated geometry is invariant under $H$. Consequently every geometry in the range of the operator carries an isometry group containing a sweep-subgroup of $\so$, and the range is contained in the symmetry-reducible sector of general relativity.
+\end{theorem}
+
+\begin{proof}
+The sweep maps the slicing object along the orbits of $H$; the induced metric is constant along those orbits by construction, so $H$ acts by isometries of the generated geometry. The sweep-subgroups available are the subgroups of the substrate's isometry group $\so$. A geometry with no continuous isometry, or whose isometry group contains no $\so$-subgroup acting as a sweep, is not of this form.
+\end{proof}
+
+Theorem~\ref{thm:bound} is a necessary condition; the rest of the paper establishes sufficiency sector by sector. The reachable symmetry classes are the geometrically realized subgroups of $\so$: $\mathrm{SO}(3)$ (spherical), $\mathrm{SO}(4)$, $E(3)$, $\mathrm{SO}(3,1)$ (the closed, flat, and open Friedmann--Lemaître--Robertson--Walker (FLRW) isometries), the Kantowski--Sachs group and the abelian translation groups (homogeneous cosmologies), and $\mathbb{R}\times\mathrm{SO}(2)$ (stationary axisymmetric). The groupoid of admissible vantages within a class is the subject of~\cite{JanzenGroupoid}.
+
+\section{Surjectivity within a class}\label{sec:surj}
+
+\begin{proposition}[In-class surjectivity]\label{prop:surj}
+Let $H$ be a reachable symmetry class with orbit space of dimension $k$, so that the general $H$-invariant metric is determined by a fixed number of functions of $k$ variables. The operator's data---the leaf (the spatial three-geometry of the cut), the lapse (the time-stacking), the shift (the frame-dragging cross term), and the vantage (the radial signature)---supply exactly these functions. The cut therefore spans the $H$-invariant metrics; within the class the operator is surjective, the vacuum members are the substrate's family in the class, and matter is the bend off that family.
+\end{proposition}
+
+This is established case by case below. In each class the content is not the surjectivity itself---once the cut carries the class's function count, the cut ansatz is the general $H$-invariant metric, and spanning is near-tautological---but the identification of the vacuum members as the substrate's family (the kernel) and of matter as the bend. The companion paper~\cite{JanzenOperator} is the spherical case ($H=\mathrm{SO}(3)$, $k=1$): two functions of $r$, kernel the one-parameter SdS family. We take the remaining classes in turn.
+
+\section{The homogeneous class}\label{sec:homog}
+
+The homogeneous anisotropic cut is the Kantowski--Sachs (KS) form~\cite{Kantowski1966}, two scale functions of cosmic time,
+\begin{equation}\label{eq:ks}
+\dd s^{2}=-\dd\tau^{2}+X(\tau)^{2}\,\dd\chi^{2}+Y(\tau)^{2}\,\dd\Omega^{2},
+\end{equation}
+with spatial topology $\mathbb{R}\times S^{2}$---genuinely anisotropic, the form the framework paper~\cite{JanzenCRframework} reads the SdS cosmology as carrying. Its stress-energy is
+\begin{align}
+8\pi\rho&=-\Lambda+(Y'/Y)^{2}+1/Y^{2}+2(X'/X)(Y'/Y),\label{eq:ksrho}\\
+8\pi p_{\chi}&=\Lambda-2Y''/Y-(Y'/Y)^{2}-1/Y^{2},\\
+8\pi p_{\perp}&=\Lambda-Y''/Y-X''/X-(X'/X)(Y'/Y).
+\end{align}
+Two free functions $(X,Y)$ map onto the stress-energy $(\rho,p_{\chi},p_{\perp})$ modulo one conservation identity---two independent---so the KS cut is surjective onto KS-symmetric stress-energy, generically anisotropic ($p_{\chi}\neq p_{\perp}$).
+
+\begin{proposition}[The KS vacuum kernel]\label{prop:ksvac}
+The vacuum kernel ($T_{\mu\nu}=0$) of the KS cut is the Schwarzschild--de Sitter interior\rcpt{P09_ks_vacuum}, $Y=r(\tau)$, $X=\sqrt{-f(r)}$ with $(\dd r/\dd\tau)^{2}=-f$ and $f=1-2M/r-\Lambda r^{2}/3$, together with the Nariai member~\cite{Nariai1951} $Y=1/\sqrt{\Lambda}$ (the two-sphere frozen at the Nariai radius), $X=e^{\sqrt{\Lambda}\,\tau}$, in which the two-sphere is degenerate.
+\end{proposition}
+
+\begin{proof}
+Direct substitution: for the SdS interior, $(\dd r/\dd\tau)^{2}=-f$ gives $Y'/Y=\sqrt{-f}/r$, $Y''=-f'/2$, $X'/X=(-f'/2)/\sqrt{-f}$, $X''/X=-f''/2$, and \eqref{eq:ksrho} and its partners reduce identically to zero on $f=1-2M/r-\Lambda r^{2}/3$. For Nariai, $Y=1/\sqrt{\Lambda}$ gives $1/Y^{2}=\Lambda$ and $X''/X=\Lambda$, and all three components vanish.
+\end{proof}
+
+The Nariai tangency, which the slicing framework~\cite{JanzenSlicing} forces on the cosmological curve and which~\cite{JanzenCRframework} selects as the unique non-pivoting cosmological case, reappears here as the degenerate member of the homogeneous vacuum kernel: the programme's recurring object is again the seam---the inner, Type-D end of the null-degeneracy axis the introduction lays out, the horizon cubic's double root $\Lambda M^{2}=1/9$ where two horizon null surfaces merge, the wall its far end. This locates the seam in the range's own structure, and it does more than classify: it is where the programme's collapse--cosmology identity surfaces in the range's own terms. The KS reading ($r$ timelike, $\mathbb{R}\times S^{2}$, $(\dd r/\dd\tau)^{2}=-f$) and the flat-FLRW reading (the marginally-bound $E=1$ Painlevé--Gullstrand slicing~\cite{Painleve1921,Gullstrand1922}, $(\dd r/\dd\tau)^{2}=2M/r+\Lambda r^{2}/3$, the $\sinh^{2/3}$ scale factor of~\cite{JanzenOperator}) are different $\so$-classes---$\mathbb{R}\times S^{2}$ anisotropic versus flat $E(3)$---of the \emph{same} SdS geometry, differing by exactly the rest-energy ``$-1$'' in $(\dd r/\dd\tau)^{2}$. The anisotropy is the artifact of the fundamental observers' motion through the third direction, now a feature of which slicing one takes rather than an assertion. The interior of a black hole and an expanding universe are thus one geometry read two ways---the range carrying the collapse and the cosmology not as two families but as two cuts of the one substrate.
+
+\section{Rotation is the shift}\label{sec:rotation}
+
+Every cut so far is block-diagonal, because a symmetric sweep makes the sweep orbits orthogonal to the cut. The whole content of rotation is the cross term $g_{t\phi}$---frame-dragging---which a block-diagonal cut cannot carry. Rotation is therefore neither the leaf nor the lapse; it is the \emph{shift}, the off-diagonal datum of the full stacking that the spherical and homogeneous cuts set to zero. These four data---leaf, lapse, shift, vantage---are the same four the cosmological reading runs on, and naming which is which fixes that reading with no room for a wrong turn: the \emph{leaf}'s bend is the matter (the density read off the cut), the \emph{lapse} is the foliation stacking rate the observable expansion rides (radiation-free, the content read off the clock it sets), the \emph{shift} is the synchronization convention through which that expansion is observed, and the \emph{vantage} is which direction the cut reads as time---$f>0$ the static hole, $f<0$ the expanding cosmology, the null--timelike reassignment between them the same vantage move that carries a collapse interior into a cosmology~\cite{JanzenCRframework, JanzenCosmogenesis}. The wall this paper reaches is the far boundary of that reading: where the last continuous symmetry is lost the operator can no longer generate the leaf by a sweep, and the layer passes to ordinary evolution---so the layered generation runs from the seam (the inner, Nariai end of the null-degeneracy axis) out to the wall, the two its endpoints.
+
+\begin{proposition}[Kerr--de Sitter is reached; $J$ is offset times twist]\label{prop:kerr}
+Kerr--de Sitter~\cite{Kerr1963} is vacuum-$\Lambda$ on the same substrate, $R_{\mu\nu}=\Lambda g_{\mu\nu}$, sharing the throat $\alpha=\sqrt{3/\Lambda}$; it reduces to SdS as $a\to0$ and to de Sitter as $M\to0$. The mass-free, rotation-only limit ($M=0$, $a\neq0$) is not merely vacuum but maximally symmetric---its Riemann tensor is the constant-curvature form $\alpha^{-2}(g_{\mu\rho}g_{\nu\sigma}-g_{\mu\sigma}g_{\nu\rho})$---so the twist alone is a (rotating, oblate) slicing of the substrate itself, not a new geometry. The radial and polar structure functions are the substrate-scale deformations
+\begin{equation}\label{eq:deltadecomp}
+\Delta_{r}=r^{2}f_{\mathrm{SdS}}+a^{2}f_{\mathrm{dS}},\qquad
+\Delta_{\theta}=1+(a/\alpha)^{2}\cos^{2}\theta,\qquad
+\Xi=1+(a/\alpha)^{2},
+\end{equation}
+with $f_{\mathrm{SdS}}=1-2M/r-r^{2}/\alpha^{2}$ and $f_{\mathrm{dS}}=1-r^{2}/\alpha^{2}$. The angular momentum is the product of the mass-offset and the twist, $J=Ma/\Xi^{2}$, vanishing if either the offset or the twist is absent.
+\end{proposition}
+
+The verifications (vacuum to machine precision, the maximal symmetry of the $M\to0$ limit, the exact decomposition \eqref{eq:deltadecomp}) are computational\rcpt{P09_kerr_deSitter}. Kerr--de Sitter is the mass-offset cut---the same $M$-offset that is the SdS mass---performed in a rotating slicing of the substrate, and $J=Ma$ is the statement that genuine angular momentum needs both the offset and the twist: the offset alone is SdS, the twist alone is de Sitter, and only the offset taken in a twisted slice carries $J$.
+
+\section{The separable Type-D vacuum kernel: Kerr--NUT--(A)dS}\label{sec:pd}
+
+The separable (Carter) cut~\cite{Carter1968} couples a radial and a polar structure function through the additive form $\Sigma=r^{2}+p^{2}$ and the two Killing fibers $(\tau,\sigma)$,
+\begin{equation}\label{eq:carter}
+\dd s^{2}=\frac{\Sigma}{\Delta_{r}}\dd r^{2}+\frac{\Sigma}{\Delta_{p}}\dd p^{2}
++\frac{1}{\Sigma}\Bigl[\Delta_{r}(\dd\tau-p^{2}\dd\sigma)^{2}-\Delta_{p}(\dd\tau+r^{2}\dd\sigma)^{2}\Bigr],
+\end{equation}
+with $\Delta_{r}=\Delta_{r}(r)$, $\Delta_{p}=\Delta_{p}(p)$.
+
+\begin{theorem}[The Type-D vacuum kernel]\label{thm:pd}
+The cut \eqref{eq:carter} is vacuum-$\Lambda$ if and only if its structure functions are quartics\rcpt{P09_typeD_quartics},
+\begin{equation}\label{eq:quartics}
+\Delta_{r}=-\tfrac{\Lambda}{3}r^{4}+c_{2}r^{2}+c_{1}r+c_{0},\qquad
+\Delta_{p}=-\tfrac{\Lambda}{3}p^{4}-c_{2}p^{2}+d_{1}p+c_{0},
+\end{equation}
+with the leading coefficient $-\Lambda/3=-1/\alpha^{2}$ of both pinned by the substrate. The four free coefficients $\{c_{0},c_{1},c_{2},d_{1}\}$ are the mass ($c_{1}=-2M$), the rotation ($c_{0}=a^{2}$), the NUT charge ($d_{1}$), and a coordinate normalization ($c_{2}$), so the rotating vacuum kernel of the operator is the complete \emph{separable} Type-D vacuum-$\Lambda$ family---Kerr--NUT--(A)dS~\cite{ChenLuPope2006}---$\mathrm{SdS}$ being the $c_{0}=d_{1}=0$, $c_{2}=1$ member and Kerr--de Sitter the addition of the twist. Acceleration, the remaining Plebański--Demiański parameter~\cite{PlebanskiDemianski}, does not appear here and is not a vacuum parameter (Remark~\ref{rem:accel}).
+\end{theorem}
+
+\begin{proof}
+The $rr$ and $pp$ Einstein equations of \eqref{eq:carter}, after clearing the $\Sigma/\Delta$ factors, are
+\begin{align*}
+&-\tfrac{\Lambda}{2}(r^{2}+p^{2})^{2}-\tfrac{r^{2}+p^{2}}{2}\Delta_{r}''+r\Delta_{r}'-\Delta_{r}+\Delta_{p}-p\Delta_{p}'=0,\\
+&-\tfrac{\Lambda}{2}(r^{2}+p^{2})^{2}-\tfrac{r^{2}+p^{2}}{2}\Delta_{p}''+p\Delta_{p}'-\Delta_{p}+\Delta_{r}-r\Delta_{r}'=0.
+\end{align*}
+Their sum cancels every cross term and leaves
+\begin{equation}\label{eq:separated}
+\Delta_{r}''(r)+\Delta_{p}''(p)=-4\Lambda(r^{2}+p^{2}),
+\end{equation}
+which separates: $\Delta_{r}''(r)+4\Lambda r^{2}$ depends on $r$ alone and equals $-[\Delta_{p}''(p)+4\Lambda p^{2}]$, which depends on $p$ alone, so both equal a constant $2c_{2}$. Integrating, $\Delta_{r}=-\tfrac{\Lambda}{3}r^{4}+c_{2}r^{2}+c_{1}r+c_{0}$ and $\Delta_{p}=-\tfrac{\Lambda}{3}p^{4}-c_{2}p^{2}+d_{1}p+d_{0}$. Substituting these into the full Einstein tensor, every component vanishes if and only if $d_{0}=c_{0}$, which closes the kernel. The leading $-\Lambda/3$ is the substrate's; the remaining $\{c_{0},c_{1},c_{2},d_{1}\}$ are four free parameters, with the mass the offset $c_{1}$ ($c_{1}=-2M$), the rotation in $c_{0}=a^{2}$ (the constant $c_{0}=d_{0}$ coupling the two quartics), the NUT charge in $d_{1}$, and $c_{2}$ a coordinate normalization. This is the vacuum-$\Lambda$ Kerr--NUT--(A)dS family. Acceleration does not appear: the additively separable form $\Sigma=r^{2}+p^{2}$ of \eqref{eq:carter} is exactly Kerr--NUT--(A)dS; the accelerating Plebański--Demiański members live in the conformally separable form and are not vacuum (Remark~\ref{rem:accel}).
+\end{proof}
+
+\begin{corollary}[The Carter constant is the substrate's symmetry]\label{cor:carter}
+The separation \eqref{eq:separated} is not imposed beyond the separable form of \eqref{eq:carter}: the vacuum condition on the maximally symmetric substrate splits of its own accord into a pure-$r$ and a pure-$p$ equation\rcpt{P09_carter_killing}. The hidden symmetry of the Type-D family---the Killing tensor and the Carter constant of motion that render Kerr geodesics integrable~\cite{WalkerPenrose1970}, which general relativity carries without explanation---is the substrate's maximal symmetry surfacing in the separable corner.
+\end{corollary}
+
+\begin{remark}[The chain, drawn]\label{rem:carter-chain}
+Read alone the corollary is weaker than what this paper has, because it works on the separable ansatz and so
+answers only what the vacuum condition does once that form is granted. The prior question---why the reachable
+cuts should be of a type that admits such a form at all---is answered in \S\ref{sec:pd} by a different argument,
+and the two join. The substrate's null rulings are shear-free; a cut that inherits one as its principal
+congruence is therefore algebraically special by the Goldberg--Sachs theorem; the speciality invariant places
+the resulting family at Type~D; a Type-D vacuum admits a Killing tensor~\cite{WalkerPenrose1970}; and the
+constant of motion that tensor carries is Carter's\rcpt{V1_carter_chain}. \emph{So the explanation does not
+rest on the separable ansatz}: the ansatz is where the vacuum condition is checked, and the shear-free rulings
+are why a cut of that kind is what the construction produces. No conservation theorem of the usual kind is
+invoked or needed---the Carter constant is not the charge of a point symmetry, which is precisely why general
+relativity carries it without explanation, and the substrate supplies instead the geometric reason a Killing
+tensor is there to be found.
+\end{remark}
+
+\begin{remark}[Acceleration is matter, not a vacuum parameter]\label{rem:accel}
+The fourth Plebański--Demiański parameter~\cite{PlebanskiDemianski}, the acceleration $A$, is absent from the vacuum kernel above because it is not a vacuum datum. In the de Sitter C-metric the axis is governed by a structure function $G(x)=1-x^{2}-2mAx^{3}$ that carries \emph{no} $\Lambda$; for a bare accelerating mass ($m,A\neq0$) the two axis poles have unequal $|G'|$, leaving a conical deficit on one of them---a cosmic strut---that the cosmological constant cannot remove, and that can be traded only for a NUT-type (Misner-string) term, not eliminated. A free mass follows a geodesic; a forced acceleration therefore requires a source, and that source is the strut. In the present framework a strut is a one-dimensional line of matter on the axis---a bend---so acceleration is reached, but on the matter side, as a bend, exactly as the companion paper reads all matter. The substrate's own \emph{free} relative-acceleration is not this parameter at all: it is the de Sitter geodesic drift, already carried by the cosmological ($E=1$) sector of~\cite{JanzenOperator}. The reading does not depend on the coordinate form in which the strut was displayed: a forced acceleration requires a source---the equivalence principle makes a free mass geodesic---and that source can be relocated along the axis or traded (the strut for a NUT-type Misner string) but never eliminated, so acceleration is matter throughout the reducible sector, never a vacuum parameter.
+\end{remark}
+
+\begin{remark}[Charge is the bend]\label{rem:charge}
+Electric charge is likewise not a vacuum datum. The kernel of Theorem~\ref{thm:pd} is the \emph{vacuum}-$\Lambda$ family Kerr--NUT--(A)dS; the charged solutions---Reissner--Nordstr\"om--de~Sitter and its rotating completion Kerr--Newman--de~Sitter---are electrovac rather than vacuum, and the charge enters as the bend. In the spherical case the structure function $f=1-2m(r)/r-\Lambda r^{2}/3$ carries $m(r)=M-Q^{2}/2r$, so the bend $m'(r)=Q^{2}/2r^{2}$ is sourced by the Maxwell field $A=-(Q/r)\,dt$ and the Einstein--Maxwell--$\Lambda$ equations hold identically: charge is a field on the cut, exactly the matter-as-bend reading the companion paper gives all matter~\cite{JanzenOperator}. It is rotation-independent---in Kerr--Newman--(A)dS the radial structure function is $\Delta_{r}=(r^{2}+a^{2})(1-\Lambda r^{2}/3)-2Mr+Q^{2}$, with $Q$ entering only through $+Q^{2}$, decoupled from the rotation $a$ and the mass $M$ of the vacuum kernel---and the geometry carries charge conjugation as a \emph{symmetry} rather than a blindness: the metric depends on $Q$ only through $Q^{2}$, so $Q\mapsto-Q$ leaves it invariant---the even-face degeneracy the companion reads as a boundary, paired there with the $R$-odd mass~\cite{JanzenBoundary}---the sign of the charge living entirely in the Maxwell potential $A$ (linear in $Q$). The boundary paper carries that even face one step further: composed with the antilinear reality involution $\tilde\tau\mapsto\bar{\tilde\tau}$ of the vacuum cosmogenetic bead, the mass-reflection $R$ supplies charge conjugation's geometric kinematic (Feynman--St\"uckelberg) face, so that the full conjugation factorises with only the charge sign closing from the Maxwell field~\cite{JanzenBoundary}---the $Q^{2}$-degeneracy read here being the linear-face root of that closure. \emph{And the geometric factor has since been shown to carry no asymmetry of its own, which sharpens what
+the Maxwell field is left to close.} The imaginary segment along which the reality involution is realised is a
+solution of a variational principle, and its action's integrand $r[f(r)-1]=-2M-r^{3}/\alpha^{2}$ is odd under
+the standing conjugation acting on offset and mass together, $r\mapsto-r$ with $2M\mapsto-2M$; the two branches
+therefore carry equal and opposite action, summing to zero identically~\cite{JanzenCosmogenesis}. \emph{So
+neither branch is weighted above the other by the geometry}: the even $Q^{2}$-dependence read here and the odd
+mass-reflection read there are not merely compatible but exactly balanced, and any asymmetry between matter and
+antimatter must enter through the charge sign in $A$---the one factor the geometry does not supply---rather
+than being manufactured at the crossing. \emph{That is a stronger statement than the factorisation alone
+gives}, which says only where the sign lives; this says where an \emph{asymmetry} could come from, and rules
+out the geometric factor as its source. Charge is therefore reached on the matter side, a bend alongside acceleration, with the vacuum kernel unchanged.
+\end{remark}
+
+\section{Algebraic type is no constraint}\label{sec:petrov}
+
+Theorem~\ref{thm:pd} might suggest that the operator reaches only the algebraically special (Type-D) geometries, the separable corner whose hidden symmetry it explains. It does not. Algebraic speciality is detected by the Weyl invariants: a geometry is algebraically special exactly when the speciality discriminant $I^{3}-27J^{2}$ vanishes---equivalently, when two of the three eigenvalues of the self-dual Weyl operator coincide---and is Type I when it does not. We verify the separation directly from the Weyl eigenvalues: Schwarzschild--de Sitter, Kerr--de Sitter, and the axisymmetric Bianchi members are Type D (a repeated eigenvalue, the speciality ratio constant over the manifold), while the generic members are Type I (three distinct eigenvalues, the ratio varying point to point). The operator reaches Type I in two distinct classes.
+
+\begin{proposition}[Type-I reachability]\label{prop:typeI}
+The operator reaches Petrov type I. At three Killing vectors, the generic vacuum-$\Lambda$ Bianchi-I (anisotropic flat) cosmology---$\dd s^{2}=-\dd t^{2}+\sum_{i}a_{i}(t)^{2}\dd x_{i}^{2}$ with $a_{i}=\sinh(3t)^{1/3}\tanh(3t/2)^{C_{i}/3}$, $\sum C_{i}=0$, $\sum C_{i}^{2}=6$ and the $C_{i}$ distinct---is vacuum to machine precision and Type I\rcpt{P09_bianchiI_typeI} (its speciality varies with time and departs from the special value, while the axisymmetric member with two equal $C_{i}$ is Type D). At two Killing vectors, the Zipoy--Voorhees $\gamma$-metric~\cite{Zipoy1966,Voorhees1970} (static axisymmetric vacuum, non-separable) is Type I for $\gamma\neq1$---three distinct Weyl eigenvalues with the speciality ratio varying over the manifold---and Type D (Schwarzschild) only at $\gamma=1$, where two eigenvalues coincide and the ratio is constant. Both are reached as cuts: Bianchi I as a homogeneous cut, Zipoy--Voorhees as a member of the Weyl class, the general static axisymmetric vacuum family (one harmonic function on the substrate, with the second metric function fixed by quadrature). The reach persists with the shift turned on. In the \emph{stationary} axisymmetric class the Tomimatsu--Sato~\cite{TomimatsuSato1972} $\delta=2$ metric is Type I---three distinct self-dual Weyl eigenvalues, vacuum to machine precision, with the speciality ratio $27J^{2}/I^{3}$ varying over the manifold---while the rotating \emph{spherical} leaf, Kerr, stays Type D (a repeated eigenvalue, the ratio $\equiv1$ identically). Rotation of a Type-I static leaf preserves Type I exactly as rotation of the Type-D spherical leaf preserves Type D: the algebraic type is carried by the leaf, not conferred by the rotation. It is reached as a cut on the same footing as the static Weyl class---the stationary axisymmetric class carries the two Killing vectors $\partial_{t},\partial_{\phi}$, a sweep-subgroup of $\so$, and the shift is the independent datum (Proposition~\ref{prop:kerr}, the lapse--shift split of~\cite{JanzenOperator}) that turns the static type-I leaf into its rotating member.
+\end{proposition}
+
+These are computational facts. Their consequence is structural: Type D is the separable \emph{corner} of the range, not its edge. The corner is where the substrate symmetry surfaces as a Killing tensor (Corollary~\ref{cor:carter}); the rest of every reachable class is Type I and needs no hidden symmetry, no separability, and no algebraic speciality. What governs reachability is the count of Killing \emph{vectors} (the honest isometry, by Theorem~\ref{thm:bound}), not the count of Killing \emph{tensors}.
+
+The reason the naive expectation fails is the shift--shear link. An algebraically special vacuum geometry has, by the Goldberg--Sachs theorem~\cite{GoldbergSachs1962}, a shear-free null geodesic congruence; the substrate's null rulings are shear-free, and where a cut inherits one as its principal congruence the geometry is algebraically special---this is the Type-D corner. But a cut need not inherit a shear-free congruence: the anisotropy of Bianchi I and of Zipoy--Voorhees \emph{is} shear, shear forbids a repeated principal null direction, and the substrate's congruences can be reassigned with shear. Nothing forces algebraic speciality, and the operator climbs past Type D into Type I. This survives the shift: turning on the frame-dragging over a shearing (Zipoy--Voorhees) leaf leaves the shear that broke speciality intact, so the Tomimatsu--Sato metrics remain Type I (Proposition~\ref{prop:typeI}), whereas the shear-free spherical congruence stays shear-free under rotation and Kerr stays Type D---the shift moves angular momentum, not algebraic type.
+
+There is, however, one algebraic class the symmetric cuts do not produce, and it is the class that marks the boundary.
+
+\begin{proposition}[The radiative types are absent]\label{prop:radiative}
+The reachable vacuum kernels are the non-radiative algebraic types---type O (Weyl-flat), type D ($I^{3}=27J^{2}$), and type I (generic $I,J$)---in each of which the Weyl invariants $I,J$ are not both zero (or the Weyl tensor vanishes). The purely radiative types N and III, for which $I=J=0$ while the Weyl tensor is nonzero, do not occur among them. The plane gravitational wave,
+\begin{equation}\label{eq:ppwave}
+\dd s^{2}=H(u,x,y)\,\dd u^{2}-2\,\dd u\,\dd v+\dd x^{2}+\dd y^{2},\qquad H_{xx}+H_{yy}=0,
+\end{equation}
+is vacuum with $I=J=0$ and nonzero Weyl---type N\rcpt{P09_ppwave_typeN}---and is not a symmetric cut. High symmetry forbids it: spherical vacuum is static by Birkhoff's theorem~\cite{Birkhoff1923}, the Weyl class is static, and the homogeneous tensor mode is a non-propagating shear. Free gravitational radiation requires the symmetry-breaking propagation a sweep cannot carry, and is therefore absent from the range.
+\end{proposition}
+
+\noindent This absence is not a gap in the reachable sector but its positive boundary, developed next.
+
+\section{The range and the wall}\label{sec:wall}
+
+\begin{theorem}[The range is the symmetry-reducible sector]\label{thm:range}
+The range of the operator is the symmetry-reducible sector of general relativity: a geometry is a cut of the de Sitter substrate when its isometry group contains a sweep-subgroup of $\so$. Within any such class the operator is surjective across all algebraic types, the vacuum members are the substrate's family in the class, and matter is the bend. The vacuum kernel's size is set by the symmetry the class spends: where the class reduces to ordinary differential equations (one orbit-space variable) the kernel is a finite parameter family (one parameter for SdS by~\cite{JanzenOperator}; four for the Type-D family by Theorem~\ref{thm:pd}; the finite KS family by Proposition~\ref{prop:ksvac}); where it remains a partial differential problem (two variables, the static axisymmetric class) the kernel is an entire functional family, the Weyl class. The boundary of the range is the loss of a symmetry able to \emph{anchor} a sweep, which is strictly stronger than the loss of symmetry (Corollary~\ref{cor:wall}).
+\end{theorem}
+
+The upper bound is Theorem~\ref{thm:bound}; the filling is Proposition~\ref{prop:surj} realized class by class in \S\ref{sec:homog}--\S\ref{sec:petrov}. The boundary statement is the content of the wall.
+
+\begin{corollary}[The wall is inhomogeneity]\label{cor:wall}
+A geometry with no continuous isometry admits no sweep-subgroup of $\so$ to anchor the construction; the operator has nothing to grip, and such a geometry is one whose matter is genuinely inhomogeneous. \emph{The converse fails, and the failure is worth stating precisely, because this paper's own exemplar of a geometry beyond the wall is its witness.} The type-N plane wave of Corollary~\ref{cor:radiation} carries a \emph{five}-dimensional isometry algebra---the four solutions of the transverse oscillator equation $\ddot f^{a}=A^{a}{}_{b}(u)f^{b}$ together with the null translation $\partial_v$, so more continuous symmetry than Schwarzschild's four---and it is vacuum, with no matter at all to be inhomogeneous. So the complement of the range is neither the asymmetric geometries nor those with inhomogeneous matter; it strictly contains both. What excludes the plane wave is the \emph{second} clause of the condition in the proof of Theorem~\ref{thm:bound} rather than the first. Its full isometry algebra is the five-dimensional Heisenberg algebra, whose derived algebra is the one-dimensional centre $\langle\partial_v\rangle$; and $\so$ is a rank-one algebra whose unipotent radical is \emph{abelian} of dimension four, so no Heisenberg algebra of unipotent isometries embeds in it. The abelian $\mathbb{R}^{3}$ subalgebras that do embed act with three-dimensional \emph{null} orbits, which carry no spacelike leaf for the operator to sweep. \emph{The boundary is therefore the loss of a symmetry whose orbits can carry a leaf, and not the loss of symmetry.} The two coincide across every class filled in \S\S\ref{sec:homog}--\ref{sec:petrov}, which is why the shorter statement served; they come apart exactly on the null orbits, which is where the wall's own exemplar lives. The operator captures every geometry general relativity admits that carries a leaf-sweeping symmetry, of every algebraic type; beyond it lie both the inhomogeneous-matter sector and the null-orbit vacuum sector, and only the first is a statement about matter.\rcpt{P09_the_wall_is_not_the_loss_of_symmetry}
+\end{corollary}
+
+\begin{corollary}[The wall is free gravitational radiation]\label{cor:radiation}
+Read on the geometry side, the boundary has a positive identity: it is the onset of free gravitational radiation. By Proposition~\ref{prop:radiative} the reachable sector carries no free propagating tensor mode. High symmetry forbids radiation (Birkhoff and its analogues); intermediate symmetry confines it to a reduced propagation that a residual isometry still pins---the cylindrical Einstein--Rosen and Gowdy waves, type I with two Killing vectors, hence in the reachable sector by Theorem~\ref{thm:range} and lying on its edge; only the loss of all confining symmetry frees it, in the type-N plane wave \eqref{eq:ppwave} and the generic gravitational wave beyond the wall. The graviton's two propagating polarizations are exactly the transverse degrees of freedom a sweep cannot carry, since a swept geometry depends only on its orbit-space coordinates while a free wave depends on the transverse coordinates through which it propagates. With Corollary~\ref{cor:wall} this is one boundary read two ways---free radiation on the geometry side, dynamical inhomogeneous sources on the matter side---\emph{with the qualification that corollary carries}: the vacuum plane wave is beyond the wall while carrying five Killing vectors and no matter at all, so the matter-side reading names one part of the complement and not the whole of it. \emph{One consequence for the reading, and it is the honest answer to a question the programme leaves standing}: the perspectival reading of apparent dynamics---evolution as the shadow of a sweep by substrate isometries---does not acquire a separate non-vacuum form once matter is present. It keeps the same form and acquires a \emph{domain}. A sweep is anchored by a continuous isometry, and matter neither supplies nor removes one; what removes it is inhomogeneity, so the reading holds for exactly as long as the matter carries a symmetry and fails exactly at the wall. \emph{And the failure is sharp rather than gradual}, for the reason Corollary~\ref{cor:radiation} gives: a sweep deforms with fixed orientation, and the loss of the last confining isometry is precisely where a wave's polarization must begin to reorient from place to place. \emph{What lies past that boundary is not a weaker version of the reading but ordinary general-relativistic free evolution}, which this construction does not generate and does not claim to. The operator generates the constrained, non-radiative skeleton of general relativity in every symmetry class and of every Coulomb-like type; the wall is where the field begins to propagate and the matter to move on its own.
+\end{corollary}
+
+\medskip
+Read against the classification the framework paper places on the table---how much of the standard catalogue of exact solutions is geometric multiplicity and how much vantage~\cite{JanzenCRframework}---this range is the \emph{geometric} axis of the answer. The genuine multiplicity of the reachable catalogue is the moduli of distinct vacuum cuts established here: the one-parameter Schwarzschild--de~Sitter family, the separable Type-D kernel Kerr--NUT--(A)dS (Theorem~\ref{thm:pd}), the functional Weyl class, and the homogeneous families, with mass, rotation, and NUT charge the moduli transverse to the substrate's orbits. The \emph{apparent} multiplicity that causal reassignment produces is vantage, one geometry read several ways---de~Sitter and Schwarzschild as one slicing read two ways~\cite{JanzenSlicing}, the Kantowski--Sachs and flat-FLRW readings of one Schwarzschild--de~Sitter geometry differing by the rest-energy term alone (\S\ref{sec:homog}), the orientation parity $\pm M$~\cite{JanzenAlgebroid}---while charge and acceleration (\S\ref{sec:pd}) are matter, the bend. The reachable catalogue is thus one substrate read through a vantage groupoid over the moduli family of cuts established here, with matter the bend; and the Friedmann initial singularity is the degenerate Nariai member of that moduli family (\S\ref{sec:homog}), the finite-curvature cosmogenesis branch point, not a breakdown of the geometry. The re-expansion from that seam---and the primordial light-element abundances the collapse across it produces---is worked out in the cosmogenesis paper~\cite{JanzenCosmogenesis}, its expansion history in the cosmology paper~\cite{JanzenCRcosmology}: the causal reassignment there, collapse read forward as an expanding universe---the two readings of the single closed \emph{cosmogenetic bead} the framework proves~\cite{JanzenCRframework}, whose seam is exactly the degenerate Nariai member this range places at the inner end of the null-degeneracy axis---is one of the vantage changes this range classifies, its matter the bend crossing inherited. The vantage changes this range does \emph{not} classify are the irreducible ones: the interior causal reassignments (Kerr-inner, Reissner--Nordstr\"om-interior) that carry across an inner horizon lie outside the reducible groupoid and, tied to the matter side, are gated on the matter-sector dynamics---the complement of the reducible sector on the \emph{vantage} axis, as the wall (\S\ref{sec:wall}) is its complement where continuous \emph{symmetry} is lost, both handed to the same matter frontier~\cite{JanzenCRframework}.
+
+\section{Scope and open problems}\label{sec:open}
+
+The results are established within the symmetry-reducible sector and verified across algebraic types: the $\so$ bound (Theorem~\ref{thm:bound}), the homogeneous kernel (Proposition~\ref{prop:ksvac}), the location of rotation in the shift with $J=Ma$ (Proposition~\ref{prop:kerr}), the Type-D vacuum kernel and the explanation of the Carter constant (Theorem~\ref{thm:pd}, Corollary~\ref{cor:carter}), the reach across Petrov types O, D, and I and the absence of the radiative types (Proposition~\ref{prop:typeI}, Proposition~\ref{prop:radiative}), and the range and wall---the latter both as the loss of isometry and, positively, as the onset of free gravitational radiation, and, by the companion dynamics paper, a regular boundary walked past into ordinary evolution~\cite{JanzenDynamics} (Theorem~\ref{thm:range}, Corollaries~\ref{cor:wall} and~\ref{cor:radiation}). The wall is characterized below and the explicit non-spherical matter functionals collected; the one genuinely open remainder is the irreducible interior reassignments (Kerr-inner, Reissner--Nordstr\"om-interior)---the vantage-axis complement noted above, tied to the matter sector~\cite{JanzenCRframework}.
+
+\paragraph{The matter sector off the kernel in the non-spherical classes (collected).} The vacuum kernels are established in every class; the bend---the matter content as a functional of the cut---is worked out in the companion paper for the spherical class and is the same leaf/lapse/shift reading in the others. The explicit functionals and their equations of state are collected as follows. For the homogeneous class they are \eqref{eq:ksrho} and its partners: two independent functionals of the cut $(X,Y)$ modulo the contracted-Bianchi (conservation) identity $\dot\rho+(X'/X)(\rho+p_{\chi})+2(Y'/Y)(\rho+p_{\perp})=0$, generically anisotropic ($p_{\chi}\neq p_{\perp}$), with the perfect-fluid closure $p_{\chi}=p_{\perp}$ a single ordinary differential equation on $(X,Y)$ and dust and the Schwarzschild--de~Sitter vacuum its degenerate members. For the axisymmetric (Weyl) class the bend splits into two functionals off the $\Lambda=0$ vacuum kernel (the potential $U$ harmonic in the flat cylindrical Laplacian, $\gamma$ by the quadratures $\gamma_{\rho}=\rho(U_{\rho}^{2}-U_{z}^{2})$, $\gamma_{z}=2\rho U_{\rho}U_{z}$): the failure of $U$ to be harmonic is a fluid bend (its source the trace of the spatial stress, hydrostatic balance $\dd U=-\dd p/(\rho+p)$ setting the isotropic-pressure equation of state), and the failure of $\gamma$ to satisfy its quadratures is an axial-strut bend (pure tension $T^{z}{}_{z}=-\rho$, the conical-defect equation of state)---the latter exactly the irremovable strut of the bare accelerating mass (\S\ref{sec:pd}), here placed as the class's canonical non-fluid functional. The functionals are verified symbolically against the Einstein tensor, with every vacuum kernel recovered (receipt: \texttt{computations/matter\_functionals/matter\_functionals\_C9.py}).
+
+\paragraph{The wall.} The boundary of the range is the loss of isometry, and it now has a positive identity: it is the onset of free gravitational radiation---the graviton's two propagating polarizations---read on the matter side as the emergence of dynamical, inhomogeneous sources (Corollaries~\ref{cor:wall} and~\ref{cor:radiation}). The reachable sector is the constrained, non-radiative skeleton of general relativity, in every symmetry class and of every Coulomb-like algebraic type; past the wall, where the last continuous symmetry is gone, the operator's \emph{generation} ends---but no gap opens there, and the companion dynamics paper walks straight past it: it works the cut's dynamics as a true-Hamiltonian flow throughout the reducible sector and shows the wall to be a regular radiative boundary---not a metric singularity, and not the cosmogenesis branch point---beyond which the leaf is carried by ordinary general-relativistic evolution~\cite{JanzenDynamics}. The wall is thus named and walked past, not a defect and not the construction's open edge. Two results fix its character exactly. First, the last reachable object before it has been constructed exactly: a confined gravitational wave---a linearly polarized Gowdy--de~Sitter cut carrying two Killing vectors---on which the transverse-traceless mode evolves by a wave equation while one isometry still pins it, the background area function driven by $\Lambda$ and the wave's energy and momentum carried entirely by the shear of the spatial leaf. Second, the wall itself acquires a sharp characterization: a sweep generates a deformation of \emph{fixed} orientation, so a confined wave is self-consistent only while it propagates transverse to that orientation, and the loss of the last confining isometry is exactly the point at which the wave's polarization must reorient from place to place. The rigidity of a single global sweep is what the wall is. Reaching past it would require a generation whose orientation varies locally rather than globally; but since the construction leaves the dynamics of general relativity unchanged, the radiative sector beyond the wall is reached by ordinary evolution of the leaf, not by generation from a sweep. The wall is therefore the proper boundary of the operator's generative reach---the seam at which generation-by-symmetry hands off to evolution-by-dynamics---rather than a defect to be engineered around. Read once more, on the orientation the sweep carries, the same boundary is where \emph{chirality} becomes generic: where the sweep carries a rotation---the $\mathrm{SO}(3)$ of the symmetric sector---it completes the reflection that would exchange the wave's two handednesses into an orientation-preserving rotation and so identifies them, a mirror rather than a chirality; once that swept rotation is lost no isometry remains to undo the reflection, and the criterion accordingly bites from that loss onward rather than only at the wall---a wave whose single polarization a residual isometry still pins to a fixed axis remains achiral, the unpolarized \emph{turning} wave is the first chiral case, and the wall, where the polarization reorients from place to place and no residual isometry survives, is where chirality is generic. The handedness is the $\mathbb{Z}_2$ sign of the turning of the polarization plane (helicity $\pm2$); the criterion is computed in the companion dynamics paper~\cite{JanzenDynamics}, the parity being the substrate's own orientation surfacing in the freed transverse modes---the $A_{2}$ diagram automorphism of~\cite{JanzenGroupoid}, the same orientation-parity $\mathbb{Z}_{2}$ that in the static sector is the de~Sitter$\leftrightarrow$Schwarzschild correspondence (the backward-radial reflection under which the de~Sitter geometry is even and the Schwarzschild mass odd). This connected-versus-disconnected division---the handedness identified while a connected sweep symmetry survives, genuine once that symmetry is lost---is the same one that places the \emph{matter} sector's chirality~\cite{JanzenMatter} on its complementary footing: a fermion chirality realised by a connected gauge isometry is rendered vector-like by the Atiyah--Hirzebruch obstruction, while the graviton's handedness lives in the disconnected orientation parity that obstruction cannot reach~\cite{JanzenBoundary}.
+
+\paragraph{}
+The central constructions are established and verified at the stated scope, which is the symmetry-reducible sector of general relativity across all algebraic types. The operator generates that sector---vacuum as the substrate's family, mass as the offset, rotation as the twist carried by the shift, the separable Type-D family (Kerr--NUT--(A)dS) as the rotating kernel, matter as the bend---over one fixed substrate whose only scale is the throat radius $\alpha=\sqrt{3/\Lambda}$, which fixes the leading term of every vacuum kernel. Its hidden symmetries, where they appear, are the substrate's symmetry surfacing; its algebraic type is unconstrained; and its boundary is the exact place where symmetry, and with it inhomogeneous matter, begins. This draws the exact reach of the framework's gravitational face. The framework reads one maximally symmetric de~Sitter substrate as at once general relativity's solution space, the discrete $CPT$ and charge structure, and the gauge sector on its conjugate real form~\cite{JanzenCRframework}; the companion operator generates the first of these~\cite{JanzenOperator}, and the present paper fixes how far it reaches---the symmetry-reducible sector, filled across every algebraic type and bounded by the wall, past which the leaf is carried by ordinary general-relativistic evolution~\cite{JanzenDynamics}. General relativity's solution space is thereby the cut-family of the one substrate, its own covariance of charts lifted one level to covariance of geometries.
+
+\begin{thebibliography}{9}
+
+\bibitem{JanzenSlicing}
+D.~Janzen,
+\emph{The de Sitter substrate and its slicing curve: horizons as turning points, and de Sitter and Schwarzschild as two readings of one slicing}, companion paper (P3).
+
+\bibitem{JanzenGroupoid}
+D.~Janzen,
+\emph{The Schwarzschild--de Sitter description groupoid: generators, relations, and Schwarzschild as the asymmetric realisation}, companion paper (P5).
+
+\bibitem{JanzenCircle}
+D.~Janzen,
+\emph{The Schwarzschild and de Sitter circle: the intrinsic geometry of one homogeneous ring---the event horizon and the curvature singularity at $r=0$ its two poles}, companion paper (P2).
+
+\bibitem{JanzenCRframework} D.~Janzen, \emph{Collapsed matter must become a universe: the necessary and sufficient augmentation of general relativity into a description of structural existence, proven for gravitational collapse of any symmetry}, companion paper (P7).
+
+\bibitem{JanzenOperator}
+D.~Janzen,
+\emph{Covariance of geometries over the de Sitter substrate: the slicing operator, the vacuum kernel, and matter as the bend of the cut}, companion paper (P8).
+
+\bibitem{JanzenGeometricCore}
+D.~Janzen,
+\emph{Reached through the imaginary, real by construction: the maximally symmetric substrate as the geometric--ontological core}, companion paper (p0).
+
+\bibitem{JanzenAlgebroid}
+D.~Janzen,
+\emph{General relativity's constraint algebra as the symmetric-space structure of a de Sitter substrate: the action Lie algebroid of the symmetry-reducible sector, and the problem of time's ``wrong sign'' as the substrate's coset signature}, companion paper (P12).
+
+\bibitem{JanzenShadowExistence}
+D.~Janzen,
+\emph{The shadow of existence: scientific theory-choice as an empirically grounded discipline, calibrated on the historical record}, companion paper (P6).
+
+\bibitem{JanzenBoundary}
+D.~Janzen,
+\emph{The de Sitter substrate and the Standard Model: a four converging routes to a geometric boundary on what one maximally-symmetric Lorentzian substrate's isometry does and does not force, and the framework and gauge on its two real forms}, companion paper (P13).
+
+\bibitem{Carter1968}
+B.~Carter,
+\emph{Hamilton--Jacobi and Schr\"odinger separable solutions of Einstein's equations},
+Commun. Math. Phys. \textbf{10}, 280--310 (1968).
+
+\bibitem{PlebanskiDemianski}
+J.~F.~Plebański and M.~Demiański,
+\emph{Rotating, charged, and uniformly accelerating mass in general relativity},
+Ann. Phys. (N.Y.) \textbf{98}, 98--127 (1976).
+
+\bibitem{Stephani}
+H.~Stephani, D.~Kramer, M.~MacCallum, C.~Hoenselaers, and E.~Herlt,
+\emph{Exact Solutions of Einstein's Field Equations},
+2nd ed., Cambridge University Press (2003).
+
+\bibitem{JanzenDynamics} D.~Janzen, \emph{Why the cut bends: the dynamics of the de Sitter cut, the confined gravitational wave, the generative boundary of the slicing operator, and chirality as the turning of the polarization plane}, companion paper (P11).
+\bibitem{JanzenMatter} D.~Janzen, \emph{The fermion sector of Cosmological Relativity: three chiral generations from the maximally-symmetric slicing structure}, companion paper (P14).
+\bibitem{JanzenCosmogenesis} D.~Janzen, \emph{Cosmogenesis: the Big Bang as a synthesis of Cosmological Relativity's deductively forced consequences, and the primordial light-element abundances it produces}, companion paper (P16).
+\bibitem{JanzenCRcosmology} D.~Janzen, \emph{The cosmology of Cosmological Relativity: the expansion history from causal reassignment on a de~Sitter background, the cosmogenesis branch point, and the scalar perturbation sector}, companion paper (P15).
+
+\bibitem{Kantowski1966}
+R.~Kantowski and R.~K.~Sachs,
+\emph{Some spatially homogeneous anisotropic relativistic cosmological models},
+J. Math. Phys. \textbf{7} (1966) 443--446.
+
+\bibitem{Nariai1951}
+H.~Nariai,
+\emph{On a new cosmological solution of Einstein's field equations of gravitation},
+Sci. Rep. T\^ohoku Univ. Ser. I \textbf{35}, 62 (1951); reprinted in Gen. Rel. Grav. \textbf{31}, 963 (1999).
+
+\bibitem{Kerr1963}
+R.~P.~Kerr,
+\emph{Gravitational field of a spinning mass as an example of algebraically special metrics},
+Phys. Rev. Lett. \textbf{11}, 237 (1963).
+
+\bibitem{ChenLuPope2006}
+W.~Chen, H.~L\"u, and C.~N.~Pope,
+\emph{General Kerr--NUT--AdS metrics in all dimensions},
+Class. Quantum Grav. \textbf{23}, 5323 (2006).
+
+\bibitem{Petrov1954}
+A.~Z.~Petrov,
+\emph{The classification of spaces defining gravitational fields},
+Uchenye Zapiski Kazanskogo Universiteta \textbf{114}, 55 (1954); reprinted in Gen. Rel. Grav. \textbf{32}, 1665 (2000).
+
+\bibitem{GoldbergSachs1962}
+J.~N.~Goldberg and R.~K.~Sachs,
+\emph{A theorem on Petrov types},
+Acta Phys. Polon. \textbf{22}, 13 (1962); reprinted in Gen. Rel. Grav. \textbf{41}, 433 (2009).
+
+\bibitem{Birkhoff1923}
+G.~D.~Birkhoff,
+\emph{Relativity and Modern Physics},
+Harvard University Press, Cambridge (1923).
+
+\bibitem{TomimatsuSato1972}
+A.~Tomimatsu and H.~Sato,
+\emph{New exact solution for the gravitational field of a spinning mass},
+Phys. Rev. Lett. \textbf{29}, 1344 (1972).
+
+\bibitem{Zipoy1966}
+D.~M.~Zipoy,
+\emph{Topology of some spheroidal metrics},
+J. Math. Phys. \textbf{7}, 1137 (1966).
+
+\bibitem{Voorhees1970}
+B.~H.~Voorhees,
+\emph{Static axially symmetric gravitational fields},
+Phys. Rev. D \textbf{2}, 2119 (1970).
+
+\bibitem{WalkerPenrose1970}
+M.~Walker and R.~Penrose,
+\emph{On quadratic first integrals of the geodesic equations for type $\{22\}$ spacetimes},
+Commun. Math. Phys. \textbf{18}, 265 (1970).
+
+\bibitem{Painleve1921}
+P.~Painlev\'e,
+\emph{La m\'ecanique classique et la th\'eorie de la relativit\'e},
+C. R. Acad. Sci. (Paris) \textbf{173}, 677 (1921).
+
+\bibitem{Gullstrand1922}
+A.~Gullstrand,
+\emph{Allgemeine L\"osung des statischen Eink\"orperproblems in der Einsteinschen Gravitationstheorie},
+Ark. Mat. Astron. Fys. \textbf{16}, 1 (1922).
+\bibitem{Bondi1947}
+H.~Bondi,
+\emph{Spherically symmetrical models in general relativity},
+Mon.~Not.~R.~Astron.~Soc.~\textbf{107} (1947) 410--425.
+\end{thebibliography}
+
+
+\input{appendix_receipts_P09}
+
+\end{document}

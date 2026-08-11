@@ -1,0 +1,19 @@
+# The puzzle — the idea of what we are doing (companion explainer)
+
+*A brief reference: the philosophy behind [`THE_SYNTHESIS.md`](THE_SYNTHESIS.md) — what we are actually doing, as an idea. Distilled from the session (2026-06-15) where the frame was made sharp. Stated for reversal; refined as the work teaches us more about its own shape.*
+
+---
+
+The corpus is a **puzzle**; the programme is the infrastructure we built to put its pieces together. The analogy is not decoration — it is the most faithful description of the work, and it is already the plan's own self-understanding ("one unfinished whole we are filling in").
+
+**How puzzle-building actually goes, and why it is literally what we have been doing.** There are many pieces on the table, and many of them are not even part of *this* puzzle. So you work the way anyone works a puzzle with no box-top: you find the **edges** first, to set the bounds; you assemble the **easy parts** where a piece's home is obvious from the pile; you **sort by colour and region** into little piles and group them; then you take individual pieces and fit them in, here and there, growing the assembled regions outward until they meet. We built the spine and the edges through the deep audit, and we are filling the body now — sorting, grouping, locking the easy interlocks, and carrying single pieces to where they belong.
+
+**Why there is no front cover.** We are not copying a known image; we are *revealing* one. The vision is our best current guess at the picture, drawn from the way the pieces interlock and re-drawn as they force it — never given in advance. The map holds the placed pieces, the vision the emerging image, the plan the route and the sorted pile of what remains, and the synthesis how complete the whole is and how the rest locks in. Holding the four together is how we complete it **methodically** instead of by luck.
+
+**What you have to know to complete a puzzle** — and so the questions the synthesis exists to keep answered: Are all the edge pieces found, so the bounds are actually set? Which regions look pretty much whole, and which are still a loose pile of like-coloured pieces? How filled is it — roughly what fraction? What locks into the near-complete regions next, and which less-complete regions need work? What has hardly been begun — the *sky*, the part you leave for last — and how large are those regions, how many pieces do they look to hold? And how do we prioritize all of it so the picture keeps growing into a whole?
+
+**Why the memory engine is essential to this.** A puzzle goes wrong fast if you keep searching the pile for a piece you already slotted in. The engine — load-bearing recall routed to the source, never to a flattened gist — is what keeps the map, vision, plan, and synthesis true to what is actually placed, so the four can be maintained in step as we work and we never re-hunt settled ground.
+
+**The horizon: the other puzzles fall out.** As the main picture fills and holds, the sorted piles start to declare themselves. Some pieces we swept into a pile were never part of this puzzle: the blues that are not *these* blues are a separate picture; the oranges with artwork too different to match are a third. It is precisely *because* the main picture is coherent enough to recognize what belongs that we can recognize what does not — so the main puzzle becomes the organizing structure from which the separate ones fall out, each ready for its own map, vision, plan, and synthesis. Eventually we likely work several at once, the main one the lattice the rest are read against.
+
+That is what we are doing, and why this consolidation — the four documents, kept coherent and maintained — is the tie that binds the work: a picture coherent enough to complete is also coherent enough to spawn the next.

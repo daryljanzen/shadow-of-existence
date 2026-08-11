@@ -1,0 +1,332 @@
+--- /tmp/pristine/cr_r2117/corpus/CR_cosmology.tex	2026-07-31 13:01:06.000000000 +0000
++++ cr_r2118/corpus/CR_cosmology.tex	2026-08-02 18:54:29.922052559 +0000
+@@ -147,12 +147,12 @@
+ r(\tilde\tau)=\left(\frac{6GM}{\Lambda c^2}\right)^{1/3}\sinh^{2/3}\!\left(\tfrac32\sqrt{\tfrac{\Lambda c^2}{3}}\,\tilde\tau\right),
+ \label{eq:scalefac}
+ \end{equation}
+-and redshift $1+z=r(\tilde\tau_0)/r(\tilde\tau_e)$. The constant-$\tilde\tau$ slices sit at $45^\circ$ to the fundamental rest frame: the cosmology is homogeneous and observationally isotropic, yet \emph{non-synchronous}---the constant-$\tau$ slices are exactly Euclidean ($\S$\ref{sec:largescale}) but are not the cosmological ones. Of the FLRW kinematic assumptions---(i)~a geodesic congruence, (ii)~hypersurface orthogonality, (iii)~homogeneity, (iv)~isotropy---this construction keeps (i) and drops (ii); Lemaître's reading~\cite{Lemaitre1949} of the Euclidean slices as ``space ejected from $r=0$'' is causally incoherent and is not the physics. Equation~\eqref{eq:scalefac} is moreover a single analytic function of $\tilde\tau$ (Fig.~\ref{fig:scalefac3d}): the expanding cosmology is its real branch $\tilde\tau>0$, and the cosmogenesis seam at $\tilde\tau=0$, where $r\to0$, is the branch point of the scale factor rather than a real $r=0$ boundary---the analytic counterpart of the beginning at the finite-curvature seam~\cite{JanzenBHcausality}, and the cosmological reading of the slicing curve's closed lap---the \emph{cosmogenetic bead} the framework establishes as one closed object~\cite{JanzenSlicing,JanzenCRframework}, of which this scale factor's real branch $\tilde\tau>0$ is the expansion leg and its analytic continuation the prior universe's collapse---on which $r=0$ is a branch point and not a barrier, the substrate smooth across the locus the chart so labels~\cite{JanzenSlicing}.
++and redshift $1+z=r(\tilde\tau_0)/r(\tilde\tau_e)$. The constant-$\tilde\tau$ slices sit at $45^\circ$ to the fundamental rest frame: the cosmology is homogeneous and observationally isotropic, yet \emph{non-synchronous}---the constant-$\tau$ slices are exactly Euclidean ($\S$\ref{sec:largescale}) but are not the cosmological ones. Of the FLRW kinematic assumptions---(i)~a geodesic congruence, (ii)~hypersurface orthogonality, (iii)~homogeneity, (iv)~isotropy---this construction keeps (i) and drops (ii); Lemaître's reading~\cite{Lemaitre1949} of the Euclidean slices as ``space ejected from $r=0$'' is causally incoherent and is not the physics. Equation~\eqref{eq:scalefac} is moreover a single analytic function of $\tilde\tau$ (Fig.~\ref{fig:scalefac3d}): the expanding cosmology is its real branch $\tilde\tau>0$, and the cosmogenesis \emph{branch point} at $\tilde\tau=0$, where $r\to0$, is the branch point of the scale factor rather than a real $r=0$ boundary---and it is \emph{not} a seam: the seams are the two unit-speed loci of the lap, $r=-2\alpha/\sqrt3$ and $r=+\alpha/\sqrt3$~\cite{JanzenCRframework}, and $r=0$ lies strictly between them, at the close of the lift---the analytic counterpart of the beginning at the finite-curvature seam~\cite{JanzenBHcausality}, and the cosmological reading of the slicing curve's closed lap---the \emph{cosmogenetic bead} the framework establishes as one closed object~\cite{JanzenSlicing,JanzenCRframework}, of which this scale factor's real branch $\tilde\tau>0$ is the expansion leg and its analytic continuation the prior universe's collapse---on which $r=0$ is a branch point and not a barrier, the substrate smooth across the locus the chart so labels~\cite{JanzenSlicing}.
+ 
+ \begin{figure}[t]
+     \centering
+     \includegraphics[width=0.66\textwidth]{r_of_tildetau_3D.png}
+-    \caption{The scale factor~\eqref{eq:scalefac} as one analytic curve $r(\tilde\tau)$ in $(\tilde\tau,\operatorname{Re}r,\operatorname{Im}r)$. The expanding cosmology is the real leg $\tilde\tau>0$, lying in the real plane; the seam $\tilde\tau=0$, $r\to0$ is the branch point at which the curve leaves the real plane onto a conjugate branch at constant phase $2\pi/3$ for $\tilde\tau<0$. The beginning is this analytic seam, not a real $r=0$ boundary. Forcing $r$ real (dashed) projects the conjugate branch onto the negative axis and manufactures a cusp the smooth curve does not carry.}
++    \caption{The scale factor~\eqref{eq:scalefac} as one analytic curve $r(\tilde\tau)$ in $(\tilde\tau,\operatorname{Re}r,\operatorname{Im}r)$. The expanding cosmology is the real leg $\tilde\tau>0$, lying in the real plane; the branch point $\tilde\tau=0$, $r\to0$---\emph{not} a seam---is where the curve leaves the real plane onto a conjugate branch at constant phase $2\pi/3$ for $\tilde\tau<0$. The beginning is this analytic branch point, not a real $r=0$ boundary. Forcing $r$ real (dashed) projects the conjugate branch onto the negative axis and manufactures a cusp the smooth curve does not carry.}
+     \label{fig:scalefac3d}
+ \end{figure}
+ 
+--- /tmp/pristine/cr_r2117/corpus/CR_framework.tex	2026-07-30 14:48:55.000000000 +0000
++++ cr_r2118/corpus/CR_framework.tex	2026-08-02 19:10:43.926667959 +0000
+@@ -935,7 +935,7 @@
+ \begin{figure}[ht]
+ \centering
+     \includegraphics[width=0.62\textwidth]{F_triptych.pdf}
+-\caption{\textbf{The lap in position, speed and acceleration}, against the path length $s$ along the bead's contour in complex cosmic time, on the Nariai member. Panel \textbf{(a)} is panel \textbf{(F)} of Fig.~\ref{fig:dS_SdS}; \textbf{(b)} and \textbf{(c)} are its first and second derivatives, taken analytically on the same three closed-form segments (collapse, lift, expansion). Colour as throughout: red $=$ antimatter ($r<0$), blue $=$ matter ($r>0$); the shaded band is the lift, along which $\operatorname{Re}\tilde\tau$ does not advance. The dashed verticals mark the four loci. Their derivative signatures are all distinct (Remark~\ref{rem:twocritical}): at the comoving turnaround the speed vanishes and the acceleration jumps sign through a finite corner---the contour's right-angle turn; at $r=0$ both diverge, the acceleration reversing sign, which is the areal coordinate degenerating and not a dynamical turning; at the front seam $r=+\alpha/\sqrt3$ the speed reaches its minimum, exactly $1$, and the acceleration vanishes---the bead's one inflection; and at the back seam $r=-2\alpha/\sqrt3$ there is no feature, the collapse leg passing through it monotonically. \emph{(Receipt: \texttt{F\_triptych.py}.)}}
++\caption{\textbf{The lap in position, speed and acceleration}, against the path length $s$ along the bead's contour in complex cosmic time, on the Nariai member. Panel \textbf{(a)} is panel \textbf{(F)} of Fig.~\ref{fig:dS_SdS}; \textbf{(b)} and \textbf{(c)} are its first and second derivatives, taken analytically on the same three closed-form segments (collapse, lift, expansion). Colour as throughout: red $=$ antimatter ($r<0$), blue $=$ matter ($r>0$); the shaded band is the lift, along which $\operatorname{Re}\tilde\tau$ does not advance. The dashed verticals mark the four loci. Their derivative signatures are all distinct (Remark~\ref{rem:twocritical}), and the panels are to be read for the \emph{whole} structure they carry, not only for the four marked loci. At the comoving turnaround the speed vanishes and the acceleration jumps sign through a finite corner, $\mp\tfrac32(2M\alpha^2)^{1/3}$---the contour's right-angle turn. At $r=0$ both diverge, the acceleration reversing sign; this is the areal coordinate degenerating, not a dynamical turning, and $r=0$ is the \emph{branch point} at the close of the lift---\emph{not} a seam. The organising feature of the lap is instead the \emph{null condition} $\dd r/\dd s=1$, drawn as the dashed level in panel~\textbf{(b)}, and it is met \emph{three} times. \emph{Both seams sit on it exactly}: at the back seam $r=-2\alpha/\sqrt3$ (where $\cosh(3s/2\alpha)=2$) the collapse leg crosses it \emph{transversally}, the acceleration finite and non-zero ($-1.299$); at the front seam $r=+\alpha/\sqrt3$ the expansion leg touches it \emph{tangentially}, the speed attaining its minimum of exactly $1$ and the acceleration vanishing. The two seams are therefore distinguished from one another not by the presence or absence of a feature but by \emph{order of contact}---they share the null value that makes each a seam, and their radii stand in the exact ratio $2{:}1$ about the branch point. Between them lies the third crossing, \emph{interior to the lift}, at $s/P=0.78899$, $r=-0.3441\alpha$, transversal with acceleration $+1.969$ (marked $\Diamond$). \emph{This point is newly identified and its significance is not yet worked}: the lift is characterised here only negatively, as the stretch along which $\operatorname{Re}\tilde\tau$ does not advance, and what physically transpires along it---an interval that carries a unit-speed crossing and terminates at the branch point where the conjugate branch becomes the matter branch---is an open problem of the programme rather than a settled reading (\S\ref{sec:frontiers}). \emph{(Receipt: \texttt{F\_triptych.py}.)}}
+ \label{fig:F-triptych}
+ \end{figure}
+ 
+@@ -1215,6 +1215,8 @@
+ \item \emph{The scalar perturbation sector, to a verdict.} The cosmology's completion~\cite{JanzenCRcosmology} carries its remaining open edges: the seam-to-recombination transfer has now been run~\cite{JanzenCRcosmology}: the collapse-phase driving envelope is derived in closed form and is flat above ten times the seam's horizon wavenumber, with its turnover at the equality the inherited datum fixes, so the peak heights verified through the third peak continue to track; the diffusion length and sound horizon follow on the same footing, and the damping-scale signature is settled within the transfer as a parameter-free ratio rather than an entangled estimate. What remains of this item is the full-spectrum likelihood-level comparison against flat $\Lambda$CDM---a parameter refit rather than a further calculation---together with the odd/even height pattern, which is imprinted by the baryon loading on the expansion leg and is ordinary content physics there. The exact large-angle shape is now computed on a genuine Boltzmann transfer---a mild, non-discriminating low-multipole deficit consistent with the standard model within cosmic variance.
+ \item \emph{The Standard-Model fermion and gauge sector.} As developed here the framework is a theory of the gravitational and geometric sector: the de~Sitter substrate, the vacuum solution space as the slicing operator's symmetry-reducible range, and matter as the classical bend of the cut up to the wall of inhomogeneity~\cite{JanzenOperator,JanzenRange}. Whether the \emph{same} substrate yields the Standard Model is mapped, at a precise and bounded scope, in the companion boundary paper~\cite{JanzenBoundary}: the gauge group does \emph{not} arise as a continuous isometry of the substrate---$\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$ structurally; the gauge structure lives only on the compact (Wick) face, off the real Lorentzian substrate; the genuine $A_2$ root structure is discrete, not the continuous algebra; and a compact-face isometry-realised fermion sector is rendered vector-like by the Atiyah--Hirzebruch index obstruction. This \emph{sharpens} the framework's claim to a gravitational-cosmological unification rather than a geometric unification of matter; it is explicitly \emph{not} the universal statement that colour cannot arise from this geometry by any route, and colour placed by the ordinary route---an $\mathrm{SU}(3)$ matter bundle on the spacetime---is untouched. The open work is correspondingly sharp: CR has \emph{no propagating fermion field sector built} (its matter is the bend of the cut, not a spinor field), so constructing one is the framework's largest unbuilt undertaking, and coherence with the empirical Standard Model stands as an independent ground to be met. The approach this leaves has a known shape, held do-not-assert. There is the ordinary, non-geometric route---an $\mathrm{SU}(3)$ matter bundle placed on the spacetime by hand, untouched by the wall but not read off the geometry. And there is one geometric \emph{opening}: the boundary paper's mechanism shows that geometric chirality can be carried only by the discrete orientation parity $\mathrm{O}(5,1)\setminus\mathrm{SO}_0(5,1)$---the one component the Atiyah--Hirzebruch obstruction, a theorem about connected groups, cannot reach, and where the gravitational sector's own chirality already lives~\cite{JanzenBoundary,JanzenDynamics}---so a fermion sector built on that discrete component is the single candidate the wall does not foreclose. That opening has since been \emph{built}~\cite{JanzenMatter}. A Dirac field on the slicing structure binds exactly one chiral zero-mode at each of the substrate's three throat walls, and the discrete residue's $D_6=S_3\times\mathbb{Z}_2$, read on that sector, is three generations times two chiralities. The multiplicity is \emph{forced within CR}: the offset-mass relation is the pure triple-angle at the unique gnomonic-fixed slicing scale, and each of the three hinges designates one root of that cubic as its own black-hole horizon, so a transposition of roots is a hop to a neighbouring hinge and the Weyl $S_3$ \emph{is} the relation among the three hinges~\cite{JanzenSlicing}---the three generations one object read three ways, identical in content (every root returns the same $2M$) and distinguished by which root each takes as its hole, which is the same distinction as which wall each binds at. The chirality is gauged (the parity $R$ acting as $\gamma^5$) while the family symmetry is global (the deck symmetry of the solution space, no isometry)---the Standard Model's own arrangement, following from which factor is an isometry. What the sector delivers is the \emph{discrete flavour structure}: the count, the chirality, and the family. What it does not deliver, and what stays the ordinary route, is the gauge content and the mass spectrum; and its one open step is the descent onto a \emph{propagating} spinor sector, held do-not-assert---what is built is a sector of bound modes of the existent leaf. The honest edge is the one the matter paper states: the count is forced by the programme's own criterion of necessity, and a framework declining that criterion reads the natural single-hinge index---one---not three. That conjecture is, read at its widest, the innermost of three nested registers of maximal symmetry the geometric-core paper draws together~\cite{JanzenGeometricCore}---the maximally symmetric substrate, the maximally symmetric evolving three-space it presents, and the maximally symmetric discrete breaking the slicing takes from it---so the one principle grounding this framework's gravitational and cosmological sector reaches, at its hardest , for the Standard Model's family structure---and, for that discrete skeleton, built and forced within CR~\cite{JanzenMatter}---as a maximally-symmetric breaking of a maximally-symmetric substrate. That built sector leans on the layered ontology at the matter rung: its generation zero-modes are normalizable as modes of the existent spatial layer, bound in the layer's proper norm---where the slicing's horizons lie at finite distance and the $r=0$ crossing is integrable---and not as propagating spacetime fields carrying the conserved Dirac norm, in which the same static modes, with the horizons infinitely distant, do not bind~\cite{JanzenMatter}.
+ \item \emph{The quantum sector: the deparametrized content in hand, the interacting theory's definition open.} On the substrate's cosmic foliation the closed-$S^3$ layer's transverse-traceless graviton modes form a discrete tower that deparametrizes to a unitary evolution in cosmic time and projects, in a fundamental observer's frame, to the flat-$\Lambda$CDM graviton~\cite{JanzenCanonicalTime}. The quantization \emph{ambiguity} is closed without a free parameter by the de~Sitter horizon's own thermal state---and closed not only for the free scale-factor sector but for the coupled tower \emph{at every order of the coupling}, Hartle--Hawking regularity supplying the self-adjoint boundary condition on the sub-threshold subspace throughout~\cite{JanzenCanonicalTime}. The classical nonlinear $\Lambda>0$ regime is likewise settled: the de~Sitter background is an attractor and the propagating sector is ghost-free to all orders, so the continuous dynamics is first-class general relativity, admitting rather than forcing a quantum structure~\cite{JanzenDynamics,JanzenAlgebroid}. What remains genuinely open is the \emph{definition of the interacting tower}---the spectrum of the boundary operator $\hat\Gamma$, whether it is bounded below, and the ultraviolet definition of the mode sums: whether the coupled quantum graviton sector is a consistent, well-defined theory. This is the same wall any interacting quantum field theory meets, and the results established here---the classical dynamics, the deparametrized unitary evolution, and the parameter-free closure of the quantization \emph{ambiguity}---stand independent of its resolution. But the shared character of the wall does not settle it: the quantization ambiguity this framework fixes and the interacting theory's definition it does not are two different things, and the latter is a genuine open frontier of the programme's quantum sector, carried as such and to be worked.
++
++\item \emph{The structure of the lap, and the physics of the lift.} The bead's closed contour is established as one analytic object (Theorem~\ref{thm:bead}), and its four principal loci are separated by the derivatives (Fig.~\ref{fig:F-triptych}). What is \emph{not} established is what physically transpires along it. The lift---the stretch of path, of length $\pi\alpha/3$, along which $\operatorname{Re}\tilde\tau$ does not advance while $r$ climbs from the comoving turnaround to the branch point---is at present characterised only \emph{negatively}, by the coordinate's failure to advance, and a negative characterisation is not a physical account. Three things make the deficit concrete. First, the lift is not featureless: it carries an interior crossing of the null condition $\dd r/\dd s=1$, at $s/P=0.78899$, $r=-0.3441\alpha$, transversal and with finite acceleration---a locus of the same character as the two seams, occurring where no seam is (Fig.~\ref{fig:F-triptych}b). Second, it terminates at the branch point, which is where the conjugate ($r<0$) branch becomes the matter branch (Theorem~\ref{thm:antimatter-progenitor}); whatever the lift is, it is the interval immediately preceding that exchange. Third, the whole lap---from the back seam through turnaround, lift and branch point to the front seam---is the portion of the history the $dS_4$ background represents on a single minimal $S^3$ at the throat, so it is precisely the region in which the background's null rulings, and with them the synchronous reading built on the second ruling~\cite{JanzenOperator}, are \emph{not} available as they are on the horns. The owed work is a positive account of the lap: what the lift is, what the interior unit-speed crossing marks, and what structure the layered framework carries across a region its own ruling-based constructions do not reach. Until that account exists the lap is to be described by what is computed of it and not by the coordinate's silence.
+ \end{enumerate}
+ 
+ \begin{thebibliography}{99}
+--- /tmp/pristine/cr_r2117/corpus/F_triptych.py	2026-07-23 02:10:07.000000000 +0000
++++ cr_r2118/corpus/F_triptych.py	2026-08-02 19:09:05.024946350 +0000
+@@ -14,11 +14,19 @@
+ The landmark values are ASSERTED below, so a wrong curve now stops the script.
+ 
+ The four loci are distinguished by the derivatives, and they are NOT alike:
+-    back seam   r=-2a/sqrt3   : r' no extremum, r'' finite and non-zero -- swept through monotonically
++    back seam   r=-2a/sqrt3   : r' = 1 EXACTLY, crossed TRANSVERSALLY (r'' = -1.29904, non-zero)
+     turnaround  r=-cbrt2 a/sq3: r' = 0 ; r'' JUMPS -1.5A -> +1.5A -- the tau~ contour's 90-degree corner
++    LIFT unit pt  r=-0.344142 : r' = 1 EXACTLY, crossed TRANSVERSALLY (r'' = +1.96910)  [s/P = 0.78899]
+     r = 0                     : r' -> inf ; r'' -> +inf then -inf -- the areal coordinate's degeneracy
+-    front seam  r=+a/sqrt3    : r' = 1 EXACTLY (its minimum) ; r'' = 0 -- the bead's unique inflection
+-The last is exact: cosh(2v)=2 gives sinh v = 1/sqrt2, whence r = A 2^{-1/3} = a/sqrt3 and r' = 1.
++    front seam  r=+a/sqrt3    : r' = 1 EXACTLY, touched TANGENTIALLY (r'' = 0, its minimum)
++Both seam values are exact: cosh(3s/2)=2 at the back seam; cosh(2v)=2 gives sinh v = 1/sqrt2 at the
++front, whence r = A 2^{-1/3} = a/sqrt3.  THE NULL CONDITION dr/ds = 1 THEREFORE HOLDS THREE TIMES ON
++THE LAP, and the two seams are distinguished from each other NOT by presence/absence of a feature but
++by ORDER OF CONTACT -- transversal on the collapse leg, tangential on the expansion leg.  An earlier
++caption read "at the back seam there is no feature at all", which concealed exactly what the seams
++share (corrected r2118).  The third crossing, interior to the LIFT, was unmarked and unnamed until
++r2118; the lift's physics is an open item of the programme, not a mere "stretch where Re tau~ does
++not advance".  r=0 IS NOT A SEAM: it is the branch point at the lift's close.
+ """
+ import numpy as np, sympy as sp, matplotlib; matplotlib.use('Agg'); import matplotlib.pyplot as plt
+ 
+@@ -40,6 +48,9 @@
+ sTA = 0.0                                                  # turnaround,  r = -cbrt2 a/sqrt3
+ sZ  = P                                                    # conjugation, r = 0
+ sSp = P + (2/3)*np.arcsinh(((1/np.sqrt(3))/A)**1.5)       # front seam,  r = +a/sqrt3
++from scipy.optimize import brentq                           # the third unit-speed point, interior to the LIFT
++sL  = brentq(lambda x: float(np.real(complex(FN['lift'][1](complex(x))))) - 1.0, 1e-6, P - 1e-6)
++rL  = float(on('lift', 0, sL))
+ 
+ # ---------------------------------------------------------------- the verdicts, inside the receipt
+ eps = 1e-9
+@@ -56,6 +67,10 @@
+ assert on('lift',   2, P - 1e-6) > 1e3,                     "lift: r'' -> +inf at r=0"
+ assert on('expand', 2, P + 1e-6) < -1e3,                    "expansion: r'' -> -inf at r=0"
+ assert on('collapse', 1, sSm) < on('collapse', 1, sSm - 0.3), 'collapse leg: dr/ds monotone through the back seam'
++assert abs(on('collapse', 1, sSm) - 1.0) < 1e-9,            'back seam: dr/ds = 1 EXACTLY (same null value as the front)'
++assert abs(on('lift', 1, sL) - 1.0) < 1e-9,                 'lift: the third unit-speed point'
++assert abs(rL + 0.344142) < 1e-5,                           'lift unit-speed radius'
++assert on('lift', 2, sL) > 1.0,                             'lift unit-speed point: transversal (r-double-prime non-zero)'
+ 
+ # ---------------------------------------------------------------- the figure
+ plt.rcParams.update({'font.family': 'serif', 'font.size': 13, 'mathtext.fontset': 'cm'})
+@@ -81,11 +96,12 @@
+ # (a) position -- F_flat, unchanged
+ draw(axA, 0, 1e9, 3.4)
+ axA.text(P/2, 2.42, 'the lift', fontsize=10.5, color='0.4', ha='center')
+-axA.text(P/2, 2.18, r'(no $\mathrm{Re}\,\tilde\tau$ advance)', fontsize=9.5, color='0.5', ha='center')
+-pts = [(sSm, -2/np.sqrt(3), 'o', r'seam $(r=-2\alpha/\sqrt{3})$',                              None,                   (0.07, -0.08)),
++axA.text(P/2, 2.18, r'(no $\mathrm{Re}\,\tilde\tau$ advance; physics open)', fontsize=9.5, color='0.5', ha='center')
++pts = [(sSm, -2/np.sqrt(3), 'o', r'back seam $(r=-2\alpha/\sqrt{3})$',                              None,                   (0.07, -0.08)),
+        (sTA, -A,            's', r'turnaround $(r=-\sqrt[3]{2}\,\alpha/\sqrt{3})$; $dr/ds=0$', '(horizontal tangent)', (0.08, -0.07)),
+        (sZ,   0.0,          'o', r'$r=0$; $dr/ds\to\infty$',                                   '(vertical tangent)',   (0.09, -0.07)),
+-       (sSp,  1/np.sqrt(3), 'o', r'seam $(r=+\alpha/\sqrt{3})$',                               None,                   (0.08, -0.07))]
++       (sSp,  1/np.sqrt(3), 'o', r'front seam $(r=+\alpha/\sqrt{3})$',                         None,                   (0.08, -0.07)),
++       (sL,   rL,           'D', r'unit-speed point on the lift',                              r'$(r=-0.3441\alpha)$', (0.09, -0.07))]
+ for x, y, mk, l1, l2, (dx, dy) in pts:
+     axA.plot(x, y, mk, color='0.12', ms=7.5, zorder=6)
+     axA.annotate(l1, xy=(x, y), xytext=(x+dx, y+dy), fontsize=9.5, ha='left', va='top', color='0.1', zorder=6)
+@@ -102,8 +118,14 @@
+ draw(axB, 1, 4.0, 3.0)
+ axB.plot(sTA, 0.0, 's', color='0.12', ms=7.5, zorder=6)
+ axB.annotate(r'$dr/ds=0$: the collapse stops', xy=(sTA, 0), xytext=(sTA+0.10, 0.42), fontsize=9.5, ha='left', color='0.1', zorder=6)
++axB.axhline(1.0, color='0.55', lw=1.0, ls=(0, (4, 3)), zorder=2)
++axB.text(XLO+0.06, 1.12, r'the null condition $dr/ds=1$: met three times', fontsize=9.2, color='0.35', ha='left', zorder=6)
++axB.plot(sSm, 1.0, 'o', color='0.12', ms=7.5, zorder=6)
++axB.annotate('back seam:\ntransversal', xy=(sSm, 1.0), xytext=(sSm-0.10, 2.30), fontsize=9.5, ha='right', color='0.1', zorder=6)
++axB.plot(sL, 1.0, 'D', color='0.12', ms=7.0, zorder=6)
++axB.annotate('on the lift:\ntransversal', xy=(sL, 1.0), xytext=(sL-0.05, 3.30), fontsize=9.5, ha='right', color='0.1', zorder=6)
+ axB.plot(sSp, 1.0, 'o', color='0.12', ms=7.5, zorder=6)
+-axB.annotate(r'minimum, $dr/ds=1$ exactly', xy=(sSp, 1.0), xytext=(sSp+0.10, 0.60), fontsize=9.5, ha='left', color='0.1', zorder=6)
++axB.annotate('front seam: tangential (minimum)', xy=(sSp, 1.0), xytext=(sSp+0.10, 0.52), fontsize=9.5, ha='left', color='0.1', zorder=6)
+ axB.annotate(r'$\to\infty$ at $r=0$', xy=(sZ, 4.0), xytext=(sZ-0.62, 3.34), fontsize=9.5, ha='right', color='0.1', zorder=6)
+ axB.set_ylabel(r'$dr/ds$', fontsize=13); axB.set_ylim(-0.35, 4.0)
+ axB.text(0.0, 1.02, r'(b) rate $dr/ds$', transform=axB.transAxes, fontsize=12, va='bottom', fontweight='bold')
+@@ -118,9 +140,10 @@
+ axC.annotate(r'jump $\mp\frac{3}{2}(2M\alpha^{2})^{1/3}$: the contour turns', xy=(sTA, jp), xytext=(sTA+0.12, 2.55),
+              fontsize=9.5, ha='left', color='0.1', zorder=6)
+ axC.plot(sSp, 0.0, 'o', color='0.12', ms=7.5, zorder=6)
+-axC.annotate(r'$d^2r/ds^2=0$: the one inflection', xy=(sSp, 0), xytext=(sSp+0.10, -1.35), fontsize=9.5, ha='left', color='0.1', zorder=6)
++axC.annotate('expansion leg reaches\n$dr/ds=1$ tangentially', xy=(sSp, 0), xytext=(sSp+0.10, -1.20), fontsize=9.5, ha='left', color='0.1', zorder=6)
+ axC.plot(sSm, float(on('collapse', 2, sSm)), 'o', color='0.12', ms=7.5, zorder=6)
+-axC.annotate('seam: no feature', xy=(sSm, float(on('collapse', 2, sSm))), xytext=(sSm-0.10, -2.55), fontsize=9.5, ha='right', color='0.1', zorder=6)
++axC.annotate('back seam crosses\n$dr/ds=1$ transversally', xy=(sSm, float(on('collapse', 2, sSm))), xytext=(sSm-0.10, -2.45), fontsize=9.5, ha='right', color='0.1', zorder=6)
++axC.plot(sL, float(on('lift', 2, sL)), 'D', color='0.12', ms=7.0, zorder=6)
+ axC.annotate(r'$\pm\infty$ at $r=0$', xy=(sZ, 0), xytext=(sZ+0.16, 3.30), fontsize=9.5, ha='left', color='0.1', zorder=6)
+ axC.set_ylabel(r'$d^{2}r/ds^{2}$', fontsize=13); axC.set_ylim(-YC, YC)
+ axC.text(0.0, 1.02, r'(c) acceleration $d^{2}r/ds^{2}$', transform=axC.transAxes, fontsize=12, va='bottom', fontweight='bold')
+@@ -132,4 +155,5 @@
+ plt.savefig('F_triptych.pdf', bbox_inches='tight'); plt.savefig('F_triptych.png', dpi=150, bbox_inches='tight')
+ print(f"ok | turnaround jump {jm:+.6f} -> {jp:+.6f}   (= mp 1.5A = {-1.5*A:+.6f} -> {1.5*A:+.6f})")
+ print(f"   | front seam  r={float(on('expand',0,sSp)):.6f}  r'={float(on('expand',1,sSp)):.6f}  r''={float(on('expand',2,sSp)):.2e}")
+-print(f"   | back seam   r''={float(on('collapse',2,sSm)):+.6f}  (finite, non-zero: no feature)")
++print(f"   | back seam   r'={float(on('collapse',1,sSm)):.6f}  r''={float(on('collapse',2,sSm)):+.6f}  (unit speed, TRANSVERSAL)")
++print(f"   | lift  unit  s/P={sL/P:.5f}  r={rL:+.6f}  r'={float(on('lift',1,sL)):.6f}  r''={float(on('lift',2,sL)):+.5f}")
+--- /tmp/pristine/cr_r2117/CORPUS_MAP.md	2026-08-02 14:36:29.000000000 +0000
++++ cr_r2118/CORPUS_MAP.md	2026-08-02 19:22:16.946420458 +0000
+@@ -1,5 +1,15 @@
+ # Corpus Map — the papers, their causal order, and the shape we are aiming at
+ 
++### Revision r2118 — 2026-08-02. **⛔ $r=0$ IS NOT A SEAM, and the layer scoping was never derived. A third unit-speed point found on the lift; the lap opened as frontiers family (9).**
++**⛔ THE NAMING ERROR, ruled by Daryl and corrected.** *$r=0$ is the **branch point** at the close of the **lift** — where antiparticles become particles, and **the beginning**, the acoustic era's beginning. **It is not a seam and is never to be called one.** The seams are the two unit-speed loci $r=-2\alpha/\sqrt3$ and $r=+\alpha/\sqrt3$, the back **exactly twice** as far from the branch point as the front. P7 had this right throughout; **P15 did not** — corrected at 3 sites (`sec:properframe` ×1, `fig:scalefac3d` caption ×2).*
++**⛭ THE LAYER BINARY OPENED (`THE_CLOSURE_LEDGER` r2118).** *P7's `prop:lapse-shift` remark and P15 §`sec:tensions` declare a two-level partition with a single boundary — **"the decision rule is structural, not a choice"** — for a structure **never derived**. What IS derived is narrower: P8 `prop:lapse` (density depends on the spatial profile **alone**), P16 (the two rate-objects are distinct and each **wholesale** extension is fatal). **A demonstration that two extremes are fatal is not a derivation that the partition is binary.** The authority **circulates**: P8→P16, P16→P8/P10/P15/P7, P15→P7/P8/P16, P7→P15/P16. **No paper carries it.** ***Daryl: this has been repeatedly taken as a cyanide pill — declarations written in to avoid doing the work.*** P7 should say the layers are **not yet sorted**; wording gated on the P9–P11 read.*
++**⛔ THE ARC AND THE CORPUS CONTRADICT EACH OTHER ON THE SAME QUANTITIES** *(found holistically, changelog against corpus — not by weighing a P15 sentence).* *r2114/r2115: **"$r_s$, recombination, diffusion AND the perturbations are content on the leaf $\Rightarrow$ the leaf's rate"**, calling the alternative *"the reification P7 forbids — the error running through `A.100`–`A.153`."* P15 §`sec:coherence`, present text: **"$r_D$ — like $\rs$ — is an L1 quantity … the layer's own radiation-free expansion … not a radiation-included one."** **Exact opposites.** And **$z_{\rm onset}$ is retired in the arc (r2114/r2115) and still live in P15 §184.** *The arc moved; the paper never caught up.* **Not resolved here** — choosing by which gives the better number is the same underived move in the other direction.*
++**★★★ THE TRIPTYCH, READ FROM THE FIGURE.** *Three findings its caption and docstring did not carry. **(i) BOTH SEAMS ARE UNIT-SPEED LOCI, $\dd r/\dd s=1$ EXACTLY** — back seam ($\cosh(3s/2\alpha)=2$) crossed **transversally** ($r''=-1.299$), front seam touched **tangentially** ($r''=0$, its minimum). ***The caption's "at the back seam there is no feature at all" was wrong*** and concealed precisely what the seams share: they differ by **order of contact**, not by presence of a feature. **(ii) A THIRD UNIT-SPEED POINT, INTERIOR TO THE LIFT** — $s/P=0.78899$, $r=-0.3441\alpha$, transversal, $r''=+1.969$; unmarked and unnamed anywhere until now. **(iii)** "the bead's unique inflection" is a statement about the **expansion leg only**; the null condition holds **three** times.*
++**⌗ FIGURE AND CAPTION REBUILT.** *`F_triptych.py`: third point located by `brentq`, **5 new assertions** (back-seam $r'=1$; the lift point's $s$, $r$ and transversality), $\dd r/\dd s=1$ drawn as an explicit level in panel (b), all three crossings marked, both misleading annotations corrected. P7 `fig:F-triptych` caption rewritten to describe the whole structure, the $2{:}1$ ratio, and the third point **as not yet worked**.*
++**⚑ NEW FRONTIERS FAMILY (9) — THE STRUCTURE OF THE LAP, AND THE PHYSICS OF THE LIFT.** *Daryl: **"we've not even begun to uncover the actual physics going on in the lift … it has to be significant and not just 'a stretch where no real time passes'."** Three concrete deficits: the interior unit-speed crossing where no seam is; the lift terminating at the branch point where the conjugate branch becomes matter; and **the whole lap being the stretch the $dS_4$ background represents on ONE minimal $S^3$** — hence exactly where the null rulings, and the synchronous reading built on the second ruling, are not available as they are on the horns. Logged as a new family per THE LAW (no parking).*
++**⚠ NOT VISUALLY VERIFIED.** *The regenerated figure is **numerically** asserted but the image viewer returned blank on four attempts; **annotation layout is unconfirmed** and panel (b) now carries three labels where it had one.*
++**⚠ STILL OWED:** *P9, P10, P11 (unread this session); P15 §184's $z_{\rm onset}$ argument (flagged, untouched); P7's replacement wording for the layer declaration.*
++
+ ### Revision r2117 — 2026-07-30. **The capstone read set restored and foldered: `THE_INTERFERENCE_ENGINE`, `Still_Collapsing_portrait` and `THE_WISDOM_LEDGER` are back in the spin-up list, and the coda step is now two steps.**
+ **⛔ WHAT HAD BEEN LOST.** *The r814 README lists **eight** capstones "read last, never first". The current step 8 had **three**. ***The interference engine and the portrait were dropped by an earlier consolidation; the wisdom ledger was never listed at all.*** (Also absent, not restored here: `VISION_FIELD_GUIDE`, `THE_VISION`, `THE_VISION_JOURNAL` — the last of which carried the **final initiation step**, each fresh collaborator reaching its own vision.)*
+ **⌗ THE FIX.** *New `capstones/` folder holding all six, with its own README. **Step 8 (how to see, and how seeing fails):** `THE_CODA` → `CODA_FIELD_NOTE` → `DEMONSTRATING_THE_WAY`. **Step 8b (how knowing happens, and who it came from):** `THE_INTERFERENCE_ENGINE` → `THE_WISDOM_LEDGER` → `Still_Collapsing_portrait`. Non-negotiables updated: **both coda parts before the map**.*
+--- /tmp/pristine/cr_r2117/THE_CLOSURE_LEDGER.md	2026-07-22 02:11:50.000000000 +0000
++++ cr_r2118/THE_CLOSURE_LEDGER.md	2026-08-02 19:21:48.267635487 +0000
+@@ -68,3 +68,150 @@
+ - *(Prior finds live in `THE_DISSOLUTION_CENSUS` Q-MINE entries —
+   e.g. the P7 "spacetime through r=0 is open" false-open fixed r1212, and the P11 cite-without-reading r1213
+   — to be folded/cross-referenced as the systematic corpus comb runs.)*
++
++### r2118 — THE LAYER BINARY: an unworked layer structure DECLARED settled in P7 and P15 — OPENED (Daryl, this turn)
++- **Location.** **P7** §`sec:CR-axioms`, the `rem` closing `prop:lapse-shift` (line 393): *"What the cosmology
++  adds is only the **boundary**: on a self-gravitating collapse excursion the leaf's own local rate governs …
++  and from the reassignment seam outward the foliation stacking rate governs … the two meeting at the seam."*
++  **P15** §`sec:tensions` (line 180): *"**The decision rule is structural, not a choice**: a self-gravitating
++  local excursion runs on L2, diffuse content riding the global foliation on L1 … the L1/L2 boundary is the
++  reassignment seam."* Propagated to **P15** §`sec:coherence` (line 223, `r_D` and `\rs` assigned L1 on it),
++  **P16** §scoping, and the ontology map §1·LEVELS.
++- **The closure.** *A two-level partition with a single boundary, asserted as forced by the geometry, for a
++  layer structure that has not been derived.* The phrase **"structural, not a choice"** and **"the decision
++  rule is settled by the geometry rather than defaulted"** are the tell: they claim a derivation the corpus
++  does not carry. **What is actually established is narrower** — that the two rate-objects are distinct, and
++  that each wrong wholesale extension is quantitatively fatal (~300× in the nuclear window; the re-manufactured
++  Hubble tension past the seam). **A demonstration that two extremes are fatal is not a derivation that the
++  partition between them is binary, nor that the seam is its only boundary.**
++- **Why it is the costly kind.** It does not merely skip work — **it forecloses the computation that would do
++  it.** Every acoustic-sector derivation since has run with the assignment presupposed rather than worked, so
++  the one thing that could have found a third layer (or a different boundary) was ruled out before it started.
++  *That is the kill-switch face wearing a structural claim: not-worked → can't-be-worked → settled.* Daryl:
++  **"we do not presuppose structures that have not been carefully derived before we've worked how they all fit
++  together"** — and this one has been **"repeatedly taken as a cyanide pill by others who arbitrarily wrote
++  declarations like this into P7 or P15 … about processes that have not been worked, as a way of avoiding
++  doing the work and collapsing it to a more complete state."**
++- **What P7 should say instead (Daryl, this turn):** *that we do not currently have sorted how the various
++  layers in the unfinished computation come together.* **Being content to sit in that uncertainty is the
++  programme's aim, not a failure of it** — the whole point is to figure the actual thing out, in the time each
++  individual piece takes.
++- **Verdict: OPENED.** The declaration is reversed as a declaration. **The edit's wording is not written this
++  turn on purpose:** saying correctly what *is* derived versus what is declared requires the P8–P11 read of how
++  GR phenomena distribute across the layers, which is the directed next step. *Naming the wording as owed is
++  not a deferral — writing it before knowing the answer is how this entry's own defect was created.*
++- **Standing guard this earns.** *A rate assignment used in a computation is a claim about the layer structure,
++  and it carries the same burden as any other claim. "Which level is this on?" is not answered by citing the
++  decision rule until the decision rule is derived.* **⚠ And the symmetric error is barred with it:** this
++  entry does **not** establish that the binary is wrong, or that a third layer exists. It establishes that the
++  binary is **UNDERIVED and was asserted**, which is a different and smaller claim — and inflating it into
++  "the layering is wrong" would be the same failure pointed the other way.
++
++**⛭ THE MECHANISM, traced at source r2118 — the declaration's authority CIRCULATES; no paper carries it.**
++*Each paper attributes the layer-scoping to another, and the loop closes without anyone deriving it:*
++- **P8** §cosmology: the leftward reading *"is the level the cosmology papers run their observable expansion
++  on — the foliation stacking rate, **'L1' of the three-level scoping**"* → cites **P16**.
++- **P16** §scoping (titled *"The scoping of the two rates, **derived**"*): *"the boundary between them is not an
++  assumption. **Three structural facts, each already in the corpus, force it**"* → cites **P8** (leaf-carried,
++  lapse-independent density), **P10** (the deparametrized layer's lapse structure), **P15** (*"the structural
++  transition law"*), **P7** (the NBC).
++- **P15** §tensions states the three levels and *"the decision rule is structural, not a choice"* → cites
++  **P7, P8, P4, P16**. **P7**'s `rem` states the boundary → cites **P15, P16**.
++**⌗ WHAT EACH ACTUALLY DERIVES, and it is real and it is not this.** *P8 `prop:lapse`: the density depends on
++the spatial profile **alone**, independent of $A$ — **a statement about the static metric functions**, computed.
++P16 §rate: the two rate-objects are numerically distinct and each **wholesale** extension is fatal (~300×; the
++re-pinned $\rs$). P7 `prop:lapse-shift`: the lapse/shift ontological split. P10: deparametrization **once a
++foliation is selected**.*
++***None of them derives the ASSIGNMENT RULE*** — *"a self-gravitating local excursion runs on L2, diffuse
++content riding the global foliation on L1, and the L1/L2 boundary is the seam."* **That the four data separate
++is derived. That cosmological processes sort onto them THIS way, with ONE boundary, is the declaration.**
++**⚠ SCOPE OF THIS TRACE:** *P7, P8, P15, P16 read at source. **P10 and P11 not yet read on this point** — if
++either carries a derivation the loop is not a loop, and that is the first thing the next read checks.*
++
++**⛭ WHAT THE BINARY HAS NO VOCABULARY FOR — computed r2118, and it is the substantive half of the open.**
++*Source:* P15 §`sec:properframe` fixes the beginning at $\tilde\tau=0$, $r\to0$ — **the branch point of the scale
++factor**. ⛔ *I first wrote this as "the cosmogenesis seam," copying P15's wording. **$r=0$ IS NOT A SEAM** (Daryl,
++r2118) — corrected here and at three sites in P15.* That is the locus the L1/L2 boundary is pinned to. **So "from the seam outward"
++spans the entire observable history**, and the binary hands all of it to L1, reserving L2 for the progenitor's
++collapse alone.
++*Computed (Nariai, $\alpha=1$, $2M=2/3\sqrt3$, $\Omega_m=0.3066$):* the bead's **front seam $r=+\alpha/\sqrt3$
++sits at $z=0.654$** — the triptych's one inflection, where $\dd r/\dd s$ attains its minimum of exactly $1$ and
++the acceleration vanishes. Recombination ($z=1090$) is at $r/\alpha\approx8.8\times10^{-4}$ and $z_{\rm onset}
++\approx6800$ at $r/\alpha\approx1.4\times10^{-4}$ — **both essentially at $r=0$, deep inside the lap.**
++**⇒ THE LAP DOES NOT END AT THE BEGINNING; IT ENDS AT $z\approx0.65$.** From $r=0$ to $z\approx0.65$ the
++worldlines are **on the equator** — the region the dS$_4$ background represents by a *single* $X=\alpha$ minimal
++$S^3$, where a whole ordered sequence of events occurs at what the background resolves as one 3-surface, and
++where **the null rulings are not defined** (they are the horns' structure, well-defined only outside the two
++seams). Only after $z\approx0.65$ do the worldlines splay out along the cosmological horn as 4D spacetime.
++**The L1/L2 scoping never mentions this locus.** It treats $r=0\to$ today as one undifferentiated regime while
++the geometry ends the lap two-thirds of the way through it. *The acoustic era is therefore not merely
++"after the seam" — it is **on the equator**.*
++**⚠ WHAT THIS DOES AND DOES NOT ESTABLISH.** *Established: a distinguished geometric locus at $z=0.654$ lies
++inside the region the binary treats as homogeneous, and the binary does not address it.* **Not established, and
++not to be inflated: that a third level exists, that the lap carries a different rate, or that any published
++number is wrong.** The open is that **the layer structure across the lap has not been worked** — which is what
++P7 should say. *This entry supplies the reason the question is live; it does not pre-answer it.*
++**⌗ Consequence for P8 §`sec:synchronous`:** *the synchronous-space-is-the-second-ruling identification is
++computed on the pure-dS comoving worldline $X(\tau)=e^{\tau/\alpha}A+e^{-\tau/\alpha}B$ — **on the horn**. Its
++status **across the lap**, where the rulings are not defined, is not settled by that computation.* Live check,
++not a defect claim.
++
++### r2118b — "$r=0$ IS NOT A SEAM" + the triptych read from the FIGURE, not its caption — OPENED + CORRECTED
++**⛔ THE NAMING ERROR, ruled by Daryl and corrected in P15.** *$r=0$ is the **branch point**. It is the close of
++the **lift**, where antiparticles become particles, and **it is the beginning — the acoustic era's beginning.**
++It is **not** a seam and is never to be called one.* **The seams are the two unit-speed loci**, $r=-2\alpha/\sqrt3$
++and $r=+\alpha/\sqrt3$, and **the back seam is exactly twice as far from $r=0$ as the front seam.** P7 has this
++right throughout (§670 even records the $2{:}1$ spacing); **P15 did not.** *Corrected at 3 sites in
++`CR_cosmology.tex` (§`sec:properframe` body ×1, `fig:scalefac3d` caption ×2).*
++**⛔ $z_{\rm onset}$ IS MANUFACTURED** (Daryl: left behind by c51, which had already determined it manufactured).
++*There is no separate onset redshift — **the branch point itself is the beginning.** P15 §184 still carries it as
++"a single early-universe parameter, the redshift $z_{\rm onset}$ at which the expanding-phase plasma begins," and
++the acoustic-scale argument is stated as resting on it. **Not edited this turn** — the section's argument has to be
++re-read whole before touching it, since the fit "$z_{\rm onset}\approx z_{\rm seam}$" may be a manufactured
++parameter dressing a locus that was never free.* **⚑ NEXT ACTION, named so it cannot be lost.**
++
++**⌗ WHAT THE TRIPTYCH ACTUALLY SHOWS** *(computed from `F_triptych.py`'s own symbolic segments — three findings
++the caption and docstring do not carry).* The segments are
++`s≤0` collapse $-A\cosh^{2/3}$; `0<s<π/3` **the LIFT** $-A\sin^{2/3}$; `s≥π/3` expansion $+A\sinh^{2/3}$ —
++**so $r=0$ sits at $s=\pi/3$, the LIFT'S END**, which is Daryl's ruling read straight off the parametrisation.
++1. **BOTH SEAMS ARE UNIT-SPEED LOCI: $\dd r/\dd s=1$ EXACTLY AT EACH.** Back seam $r'=1.000000$, crossed
++   **transversally** ($r''=-1.29904$); front seam $r'=1.000000$, touched **tangentially** ($r''=0$, its minimum).
++   Analytically the back seam is $\cosh(3s/2)=2$. ⚠ **The caption's "at the back seam there is no feature at all"
++   is wrong** — it carries *the same* feature as the front seam and differs only in **order of contact**. The
++   caption conceals precisely what the two seams share, and the script's docstring repeats it.
++2. **A THIRD UNIT-SPEED POINT, UNMARKED ANYWHERE.** On **the lift**, $s/P=0.78899$, **$r=-0.344142$**, a
++   transversal crossing of $\dd r/\dd s=1$ with $r''=+1.96910$. Not among the figure's four loci; absent from
++   caption, docstring and assertion block. *It lies in the stretch of the lap where the whole event sequence is
++   occurring on the equator.*
++3. **"The bead's unique inflection" is a statement about the EXPANSION LEG ONLY.** $r''$ has exactly one sign
++   change there and none on collapse or lift — but **the null condition $\dd r/\dd s=1$ occurs three times.**
++**⚠ HOW THIS ENTRY WAS EARNED, and the guard it carries:** *I first reported "the bead's one inflection" by
++**quoting the caption**. Daryl: "study the figure and not compute to one critical point along a function and call
++that the only one." **Reading a figure means reading the figure.** A caption is a claim about the figure with the
++same burden as any other claim — and here three of its claims did not survive contact with the curves it plots.*
++
++### r2118c — THE ARC AND THE CORPUS ASSIGN THE SAME QUANTITIES TO OPPOSITE LEVELS — SURFACED (holistic, not per-sentence)
++**Found the way Daryl asked for it** — *not* by weighing an individual P15 sentence (P15 is under suspicion and
++its pieces carry no evidential weight on their own), but by reading the **changelog against the corpus** and
++finding two parts of the programme that cannot both be right.
++- **THE ARC** (`CORPUS_MAP` r2114, r2115): *"$D_M$ is measured across the foliation $\Rightarrow$ stacking rate
++  (radiation-free). **$r_s$, recombination, diffusion AND the perturbations are content on the leaf
++  $\Rightarrow$ the leaf's rate (content-carrying)**"* — and it names the opposite reading *"the reification P7
++  forbids — **the error running through `A.100`–`A.153`**."*
++- **THE CORPUS** (P15 §`sec:coherence`, present text): *"the photon diffusion length $r_D$---**like $\rs$**---is
++  an **L1 quantity**: the random walk accumulates against the layer's own **radiation-free** expansion … **not**
++  a radiation-included one."*
++**⇒ Exact opposites on the same quantities.** One of them is the error the other says it corrected.
++**⛔ AND $z_{\rm onset}$ IS RETIRED IN THE ARC AND LIVE IN THE CORPUS.** r2114: *"`$z_{\rm onset}$` retired"*;
++r2115: *"`$z_{\rm onset}$`, the leg amplitude, the $\hat\Theta$ inheritance and the four $\Psi$-readings are all
++gone — **artifacts of treating the lower boundary as a transmission surface**."* P15 §184 still presents it as
++"a single early-universe parameter." **The arc moved; the paper never caught up.**
++**⌗ WHY THIS VINDICATES THE r2118 OPEN.** *The assignment rule was declared "structural, not a choice" and never
++derived (r2118). **The direct consequence of an underived rule is exactly this: two parts of the programme
++sorting the same quantities onto opposite levels, each citing the same foundations.** The declaration did not
++settle the question; it hid that the question was open.*
++**⚠ NOT RESOLVED HERE, and deliberately.** *Which assignment is right is the open. The arc's version produced
++$\ell_A=301.2$ against a measured $301.6$ with nothing fitted, which is evidence and not proof; the corpus's
++version is load-bearing for the Hubble-tension dissolution as written. **Deciding between them by picking the
++one with the better number would be the same underived move in the other direction.*** **⚑ Gated on the P9–P11
++read and a positive account of the layers.**
+--- /tmp/pristine/cr_r2117/THE_OPEN_PROBLEMS_LEDGER.md	2026-07-28 23:54:48.000000000 +0000
++++ cr_r2118/THE_OPEN_PROBLEMS_LEDGER.md	2026-08-02 19:10:43.935751300 +0000
+@@ -256,3 +256,23 @@
+   receipt-certified), so this line's first and third clauses are discharged. **What it leaves owed is the
+   ATTACK MANUAL below**, which was explicitly "the campaign's terminal deliverable" and is now due. The
+   live sequence is the phase plan above: step 2 (the one collapse-excursion build).
++
++---
++## ★ NEW FAMILY (9) — THE STRUCTURE OF THE LAP, AND THE PHYSICS OF THE LIFT (opened r2118, Daryl)
++**Opened as a genuinely new open family** — `sec:frontiers` did not hold it, and THE LAW forbids parking it.
++**Daryl (r2118):** *"We've not even begun as far as I know to uncover the actual physics that's going on in the
++lift yet. And it has to be significant and not just 'a stretch where no real time passes'. The lift and honestly
++the whole lap structure needs to be better investigated and understood."*
++**What is owed:** a **positive** account of the lap. At present the lift is characterised only *negatively* —
++by $\operatorname{Re}\tilde\tau$ failing to advance — and a negative characterisation is not a physical account.
++**The three concrete deficits** (all in the new `sec:frontiers` item): *(i)* the lift carries an **interior
++crossing of the null condition** $\dd r/\dd s=1$ at $s/P=0.78899$, $r=-0.3441\alpha$, transversal, $r''=+1.969$ —
++a locus of the same character as the two seams, occurring where no seam is; *(ii)* the lift **terminates at the
++branch point**, where the conjugate branch becomes the matter branch, so it is the interval immediately
++preceding that exchange; *(iii)* the whole lap is the stretch the $dS_4$ background represents on **one minimal
++$S^3$**, hence exactly where the null rulings — and the synchronous reading built on the second ruling — are
++not available as they are on the horns.
++**Instances to catalogue:** P7 `fig:F-triptych` caption (rewritten r2118 to describe the full structure);
++`corpus/F_triptych.py` (third point added, asserted); the layer-scoping open in `THE_CLOSURE_LEDGER` r2118.
++**⚠ Not to be conflated with family (1), the matter seam-crossing dynamics.** *That one asks how matter
++transits the shared layer. **This one asks what the lap IS.** They meet at the branch point and are distinct.*

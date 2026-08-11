@@ -1,0 +1,429 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{caption}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!black,
+  citecolor=blue!50!black,
+  urlcolor=blue!50!black
+}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\captionsetup{font=small, labelfont=bf}
+
+\title{Cosmological Relativity:\\
+\large a structural augmentation of general relativity}
+\author{Daryl Janzen\\
+\small Department of Physics and Engineering Physics\\
+\small University of Saskatchewan}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper synthesises a programme of five preceding works~\cite{JanzenBHcausality, JanzenCircle, JanzenSlicing, JanzenGroupoid, JanzenCRcosmology} into a single structural augmentation of general relativity, which we call Cosmological Relativity (CR). CR is not a competing theory of gravity. It leaves Einstein's field equations and their solutions formally unchanged. What it changes is the ontological reading of those solutions: the spacetime that the equations describe is the worldtube history of a real, evolving three-dimensional universe in a de Sitter substrate, with the various exact-solution geometries (Schwarzschild, Schwarzschild--de Sitter, de Sitter, flat $\Lambda$CDM) related to one another as readings of one underlying structure---a single intrinsic slicing curve on the de Sitter manifold---rather than as autonomous geometries on distinct manifolds. (They are distinct Lorentzian geometries at the metric level, sharing the de Sitter manifold but selecting different slicings of it---the finite-$\alpha$ Schwarzschild--de~Sitter members sharing the throat radius $\alpha$, with the literal asymptotically flat Schwarzschild form the degenerate $\alpha\to\infty$ edge of the same family---not charts of one fixed geometry; at the level at which CR individuates they are representations of one ontological layer---the de Sitter manifold and its throat radius $\alpha$ being invariants of the representation, the individuating entity the layer. See \S\ref{sec:ontology}.) The five preceding papers establish, in different registers, the technical content of this augmentation. The first paper~\cite{JanzenBHcausality} proves that an event horizon is a metric singularity, an asymptotic feature of the infinite-time null boundary rather than a finite-time geometric structure. The second~\cite{JanzenCircle} exhibits the Schwarzschild geometry as a circle with two non-degenerate critical points of identical analytic type, removing the horizon-versus-singularity asymmetry of the standard reading. The third~\cite{JanzenSlicing} unifies Schwarzschild and de Sitter as the two limits of a single radial curve, with a rigid groupoid of charting vantages. The fourth~\cite{JanzenGroupoid} develops the algebraic content of that groupoid, identifying its discrete generators, their relations as the dihedral group $D_{3}\cong S_{3}$, and the partial involution at the Riemannian--Lorentzian seam. The fifth~\cite{JanzenCRcosmology} establishes the cosmological completion: a causal reassignment of de Sitter space produces flat $\Lambda$CDM as an algebraic identity, late-time expansion reproduced exactly while the early-universe expansion is set by geometric structure rather than radiation density, yielding an in-principle empirical distinguishability from standard $\Lambda$CDM. We read the five papers back as a single framework with three load-bearing components: (i) an ontological setting in which worldtubes (the evolving universe) are the primitive and the de Sitter substrate is its fundamental representation; (ii) a methodological setting in which conceptual logic from minimal geometric premises is the primary mode of argument; (iii) an eight-result evidential constellation in which seven structurally distinct routes converge on the no-horizon-formation conclusion from different angles and an eighth establishes parity with standard general relativity. We inventory the diagnostic apparatus the framework offers (the metric-singularity definition gap; the verb-tense locus of category error; the causal-localization diagnostic; the sweep-pivot artefact), and we close with what the framework leaves open as natural future directions (cross-geometry vantages, dynamics implications, the gravitational-mass question, the cosmogenetic question raised by the Null-Boundary Correspondence, and quantum implications). The framework is the structural augmentation; the five preceding papers are its load-bearing content; this paper names what they collectively establish.
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+
+This paper is a synthesis, not a foundation. The five preceding papers~\cite{JanzenBHcausality, JanzenCircle, JanzenSlicing, JanzenGroupoid, JanzenCRcosmology} each carry their own load-bearing constructions. They are individually proven and individually complete. The present paper reads them back as a single framework and names what they collectively establish.
+
+The framework is Cosmological Relativity (CR). It is an augmentation of general relativity, not a replacement of it. Einstein's field equations remain Einstein's field equations. Their formal solutions remain the same. What CR changes is the ontological reading of those solutions and of the spacetimes they describe. In the standard reading, an exact-solution spacetime is taken to describe an autonomous block manifold whose geometry is read directly from the metric. In CR, an exact-solution spacetime is the worldtube history of a real, evolving three-dimensional universe in a de Sitter substrate, with the various exact-solution geometries related as readings of one underlying structure (a single intrinsic slicing curve on the de Sitter manifold)---distinct Lorentzian geometries selecting different slicings of one manifold, and, at the level at which CR individuates, representations of one ontological layer, not autonomous block manifolds. The change is structural: it does not modify any equation, but it modifies what the equations are taken to describe.
+
+The augmentation is not an interpretation in the usual sense. It is supplied by results, not by stipulation. The first paper of the series~\cite{JanzenBHcausality} proves that the event horizon of a black-hole spacetime is a metric singularity --- a feature of the infinite-time null boundary rather than a finite-time geometric structure. The proof is constructive and proceeds from the standard global causal definition of the horizon together with the structure of null geodesic congruences. The conclusion is geometric, not interpretive: the spacetime structures the standard reading attributes to a black-hole interior are not present in finite time as part of any worldtube generated by collapsing matter. The reading that follows from the proof is therefore not a choice but a consequence.
+
+The remaining four papers extend this constructive lineage. The circle paper~\cite{JanzenCircle} exhibits the Schwarzschild geometry as a circle whose two non-degenerate critical points are of identical analytic type: the horizon and the standard ``singularity'' at $r=0$ are two metric singularities of the same kind, with the apparent asymmetry between them not a property of the geometry but of the conventional asymmetric reading. The slicing paper~\cite{JanzenSlicing} unifies Schwarzschild and de Sitter as the two limits of a single radial curve with a rigid groupoid of charting vantages. The groupoid paper~\cite{JanzenGroupoid} develops the algebraic content of that groupoid: discrete generators, dihedral-group relations, partial involution at the seam, Schwarzschild as the canonical asymmetric realisation. The cosmology paper~\cite{JanzenCRcosmology} establishes the cosmological completion: a causal reassignment of de Sitter space produces flat $\Lambda$CDM as an algebraic identity, with an in-principle empirical distinguishability from standard $\Lambda$CDM at early times (the expansion rate set by geometric structure rather than radiation density).
+
+Across the five papers, the no-horizon-formation conclusion is established through structurally distinct routes: a formal global causal theorem (Section~3.1 of~\cite{JanzenBHcausality}); an asymptotic lemma about the alignment of null directions (Section~5 of~\cite{JanzenBHcausality}); a constructive informal argument running through what an observer trying to chart a horizon-formation event actually finds (the magic-flashlight construction of~\cite{JanzenBHcausality}); a tetrahedral proof structure consisting of four convergent arguments (observability constraint; worldtube replacement; asymptotic nature; generator argument). The circle paper~\cite{JanzenCircle} and the slicing paper~\cite{JanzenSlicing} are two further independent routes to the same conclusion, in algebraic and geometric registers respectively; and the cosmology paper~\cite{JanzenCRcosmology} grounds the cosmological completion in the structural identification of the horizon's null direction with the cosmic temporal direction of expansion. The eight-result evidential constellation, inventoried in Section~\ref{sec:constellation}, is the architecture that makes CR a framework rather than a single claim.
+
+The framework's ontological commitments are not technical in the same sense the eight results are. They are an ontological augmentation of general relativity, articulated in the book \emph{Beyond Space-Time}~\cite{Janzen2025} and grounded in the dissertation lineage~\cite{Janzen2012} that runs from the 2013 FQXi essay~\cite{Janzen2013a} and arXiv preprint~\cite{Janzen2013b}, through the 2014 paper on Einstein's cosmological considerations~\cite{Janzen2014}, to the present series. The book carries the framework as an ontological augmentation in which the universe described by Einstein's phenomenological equations is taken to be a real ontological universe (a 3-sphere evolving in a de Sitter substrate, with the possibility of particles forming in baby universes at horizon events explicitly open). The present paper inherits this ontological setting from the book and refines it where the five preceding papers' technical results refine it.
+
+The structure of this paper is the following. Section~\ref{sec:ontology} articulates the ontological setting that CR carries: worldtubes as the primitive, the de Sitter substrate as their fundamental representation, the existence/occurrence distinction, the Heraclitean epistemology that orients the framework methodologically. Section~\ref{sec:methodology} articulates the methodological setting: conceptual logic from minimal geometric premises as the primary mode of argument, the Friedmann--Lema\^itre lineage in which this style sits, and the conservative posture (the framework adds the minimum required for coherence; it does not pursue speculative extensions). Section~\ref{sec:five-papers} gives a brief synthesis of each of the five preceding papers and the central result it carries. Section~\ref{sec:constellation} inventories the eight-result evidential constellation, with the structural function of each result --- seven establishing the no-horizon-formation conclusion and the eighth (parity-and-compatibility) situating them as a structural augmentation. Section~\ref{sec:diagnostics} inventories the diagnostic apparatus the framework offers. Section~\ref{sec:augmentation} articulates the augmentation itself: what CR adds to general relativity, what it preserves, and the sense in which the augmentation is structural rather than dynamical. Section~\ref{sec:open} names what the framework leaves open as natural future directions. Section~\ref{sec:conclusion} closes.
+
+\section{The ontological setting}\label{sec:ontology}
+
+CR's ontological setting is articulated in detail in the book~\cite{Janzen2025}. The present section gives the load-bearing elements as they are needed for the synthesis.
+
+\subsection{Worldtubes as the primitive}\label{sec:worldtubes}
+
+The ontological primitive of CR is the worldtube. A worldtube is the spatiotemporal history of a localised structure: the four-dimensional region swept out as the structure occurs over time. Worldtubes are real in the same sense that material objects are real: they exist as concrete instantiations of physical occurrence. The four-dimensional region they sweep out is the region that has been causally instantiated; it does not include regions that, by causal-locality considerations, cannot have been instantiated from any worldtube.
+
+In standard general relativity, the manifold of a spacetime solution is treated as autonomous: it exists as a single block, and worldlines of matter are curves embedded in it. In CR, the ordering is reversed: worldtubes are the primitive, and the spacetime manifold is a description of what has been instantiated by their joint history. The reversal is structural. It does not change what the field equations say; it changes what the equations are read as describing.
+
+The reversal matters for the no-horizon-formation results~\cite{JanzenBHcausality, JanzenCircle, JanzenSlicing}. In a worldtube-first ontology, the interior of an event horizon is not a region whose existence is given by the form of the maximal analytic extension of the metric. The interior is a region that would only be present if matter worldtubes had instantiated it in finite exterior time, and the metric-singularity theorem of~\cite{JanzenBHcausality} shows that this finite-time instantiation cannot occur. The interior is therefore not present as part of any worldtube generated by collapsing matter: it is an asymptotic structure at the infinite-time null boundary, and the standard reading that treats it as present in finite time is a category error about what the metric describes.
+
+\subsection{The de Sitter substrate}\label{sec:dS-substrate}
+
+The de Sitter manifold is the unique maximally symmetric Lorentzian manifold of constant positive scalar curvature in the appropriate dimension. Within CR, it is the fundamental \emph{representation} in which all worldtubes evolve --- the privileged, maximally-symmetric arena whose null structure is the geometric heart of the framework. It is fundamental \emph{as a representation}, not as a second ontological primitive: by the worldtube-first reversal of Section~\ref{sec:worldtubes} the spacetime manifold (the de Sitter manifold included) is a description of what worldtubes have instantiated, and the cosmology paper~\cite{JanzenCRcosmology} makes the identification explicit --- the evolving three-dimensional spatial geometry $\{\mathcal{S}_t\}$ is the primary object and the spacetime $(M,g)$ is its representational projection, not ontologically fundamental. The individuating primitive is therefore the evolving universe; the de Sitter manifold is its fundamental, privileged representation. This is not a choice among possibilities. The slicing paper~\cite{JanzenSlicing} establishes that the SdS family is rigid: the geometry has no continuous moduli, and the various exact-solution geometries of the family (Schwarzschild, intermediate SdS, de Sitter, overcritical) are charts of one underlying intrinsic curve on the de Sitter manifold. The groupoid paper~\cite{JanzenGroupoid} characterises the algebraic structure of admissible charts. The cosmology paper~\cite{JanzenCRcosmology} establishes that the cosmological case --- a causal reassignment of de Sitter --- selects the Nariai vantage uniquely.
+
+The de Sitter substrate is therefore not a metaphysical posit. It is the unique maximally symmetric Lorentzian manifold consistent with the rigidity of the SdS family and the structural requirements of the cosmological completion. The framework's commitment to the substrate is supplied by the geometric results, not stipulated independently of them.
+
+\subsection{The existence/occurrence distinction}\label{sec:existence-occurrence}
+
+A central feature of CR's ontological setting is the distinction between existence and occurrence. The dissertation~\cite{Janzen2012} and the book~\cite{Janzen2025} develop this distinction at length; here we give its load-bearing form.
+
+Existence, in CR, is a property of the worldtube as a four-dimensional structure: the worldtube exists as the full instantiation of a physical history. Occurrence is the property of present happening: each point along the worldtube is the locus of an occurrence in its own present, and the four-dimensional existence of the worldtube is composed of the totality of its occurrences. The two are not the same thing. Existence is a structural property of the four-dimensional whole; occurrence is the property of the unfolding present at each moment of that whole.
+
+The distinction matters because the standard reading of general relativity treats the spacetime block as existing autonomously, with present occurrence either dispensed with as illusion (the eternalist reading) or as an additional layer that the block-structure cannot accommodate. CR takes both existence and occurrence as primitive: the worldtube exists as a four-dimensional structure, and occurrence is the property of its presents. The metric describes existence (the four-dimensional structure of the worldtube as it has occurred), but it does not exhaust the ontology: the property of occurring presents is structural to the worldtube's mode of being.
+
+For the present paper's synthesis, the existence/occurrence distinction has one specific role: it underwrites the worldtube-first ontology of Section~\ref{sec:worldtubes}. A worldtube exists as a four-dimensional structure precisely because it has occurred --- has been instantiated, through the unfolding of presents along it, in causally-local fashion. The exterior of an event horizon is part of this instantiated structure; the interior is not, because no worldtube generated by collapsing matter has occurred there in finite exterior time.
+
+\subsection{Heraclitean epistemology}\label{sec:heraclitean}
+
+The framework's epistemological orientation is Heraclitean: change is primary, structure is secondary. This is the orientation in which one approaches a problem by asking what is unfolding, what is occurring, and what the present moment is doing, rather than by treating the structural relations as given and asking how change is to be fitted in.
+
+In CR, the Heraclitean orientation underwrites the methodological priority of conceptual logic from minimal premises (Section~\ref{sec:methodology}). One does not begin with the manifold and ask what worldlines fit in it; one begins with the unfolding occurrence and asks what structure is being instantiated. The metric is the description of the instantiation; the instantiation itself is the unfolding occurrence of worldtubes. This orientation is not in conflict with the formalism of general relativity; it is a way of relating to that formalism that keeps the ontological primitives visible.
+
+The book~\cite{Janzen2025} develops the Heraclitean orientation in detail, including its lineage in Heraclitus, the Stoics, Bergson, Whitehead, and the more recent work of Smolin and others. We do not recapitulate that material here; we note only that the framework's positive ontological commitments are intelligible as the technical content of a Heraclitean reading of relativistic spacetime.
+
+\section{The methodological setting}\label{sec:methodology}
+
+CR's methodological setting is, like its ontological setting, articulated more fully in~\cite{Janzen2025} and in the dissertation~\cite{Janzen2012}. The present section gives the methodological features that are load-bearing for the five-paper programme.
+
+\subsection{Conceptual logic from minimal premises}\label{sec:conceptual-logic}
+
+The central methodological move of the programme is the deployment of conceptual logic from minimal geometric premises. This is not a procedure that can be applied as a checklist; it is a posture toward investigation that the programme either takes or does not take.
+
+The posture has two aspects, operating together as one stance rather than as two stances held in balance. First: the investigation runs as far as its conceptual content runs, without restraint of where the conclusions might lead, without checking whether the destination will sit comfortably with the field's standard reading. Second: every step of the investigation is grounded in what the existing formalism of general relativity actually supplies --- not in what the field has been reading the formalism as supplying, not in canonical received summaries of its standard definitions, not in interpretive habits that have accumulated around it through repetition. The openness in scope is total because the conservatism in grounding is total, and conversely.
+
+What the stance requires, to be carried out, is the removal of three mechanisms by which constraints get smuggled back into investigation: ego (the investigator's attachment to producing the kind of result the field will recognise), prejudice (the interpretive habits the field has trained the investigator into, operating invisibly until something forces them to surface), and agenda (any commitment to producing one outcome rather than another). Each of these, if active during the investigation, produces a specific failure mode in which the formalism gets read through the constraint rather than at its actual content. The discipline is the removal of these mechanisms, so that what comes out of the investigation is what the formalism actually says.
+
+The standard mode in foundational relativity is to begin with a formalism (a Lagrangian, an action principle, a set of field equations) and derive consequences within it. The programme's mode is different: it begins with the formalism's own structural content --- the global causal definition of the event horizon, the structure of null geodesic congruences, the locality of physical influence --- and tracks what these structural commitments, carefully read, actually imply. The metric-singularity theorem of~\cite{JanzenBHcausality} is the canonical example. The premises are minimal in the specific sense that they are the formalism's structural commitments, not new postulates introduced for the argument: the global causal definition $H^{+}=\partial J^{-}(\mathscr{I}^{+})$, the requirement that physical influence propagates causally, the asymptotic structure of null infinity. The conclusion is forced rather than proposed: the spacetime structures the standard reading attributes to a finite-time black-hole interior are not part of any worldtube generated by collapsing matter, because the formation event of any such interior is forever causally disconnected from the exterior region in which observation occurs. The argument requires no novel formalism; it requires only that the standard formalism be read carefully and the conceptual implications of its definitions tracked to where they lead.
+
+The same methodological pattern operates in the other four papers~\cite{JanzenCircle, JanzenSlicing, JanzenGroupoid, JanzenCRcosmology}, each working from the structural content of a different feature of the formalism (the algebraic structure of the Schwarzschild radial coordinate; the geometric structure of the slicing curve and its projection onto the celestial sphere; the algebraic content of the groupoid of admissible vantages; the causal-reassignment structure of de Sitter space). In each case the result is derived from minimal premises by conceptual logic; in each case no novel formalism is introduced. The structural-redundancy by which the same conclusion is exhibited along multiple distinct routes (Section~\ref{sec:constellation}) is itself a load-bearing methodological feature: it is the architectural response to the specific class of failures by which careful arguments on foundational questions are deflected in practice.
+
+\subsection{The Friedmann--Lema\^itre lineage}\label{sec:fl-lineage}
+
+The methodological style sits in a specific historical lineage, but the lineage as standardly narrated by the field is, on several points the primary-source record clarifies~\cite{Janzen2014}, not what actually happened. The substance of the lineage is what the present programme inherits; the mythologised version is itself an instance of the structure the diagnostic apparatus of this paper (Section~\ref{sec:diagnostics}) identifies as the field's standard mode for handling foundational corrections.
+
+Friedmann's 1922 paper derived non-static solutions of the Einstein equations under homogeneity and isotropy. The derivation introduced no new formalism; it applied the existing formalism carefully under symmetry assumptions and read off the mathematical consequences. Friedmann was a mathematician working through the algebraic geometry of the field equations under those symmetries; he did not commit, in 1922, to the physical claim that these solutions described our universe. Friedmann's 1924 paper extended the treatment to spaces of zero and negative curvature, and was the more comprehensive of the two; that paper remained outside general circulation in cosmological circles until 1930, when Heckmann's work brought it to Einstein's attention~\cite{Janzen2014}.
+
+Lema\^itre's 1927 paper carried out the physical interpretation: identifying expanding-universe solutions as the description of our actual cosmos, connecting them to redshift observations, and pressing the case in correspondence with Einstein. Lema\^itre's 1931 primordial-atom hypothesis was a speculative extrapolation beyond what the equations forced; it is not a deduction from minimal premises in the same sense that the 1922 and 1927 solutions were. Lema\^itre also made specific interpretive errors: his identification of the synchronous set of events in de Sitter space as the comoving universe is incorrect, as the dissertation~\cite{Janzen2012} (Section~4.3) documents at the calculational level. Lema\^itre did important work and made specific structural mistakes; both stand simultaneously and neither cancels the other.
+
+The standard textbook compression of this lineage smooths over the distinction between Friedmann's mathematical derivation and Lema\^itre's physical interpretation, occludes the 1924 paper, reassigns the timing of when expansion was accepted, and turns Lema\^itre's 1931 speculative extrapolation into a forced conclusion. The primary-source record~\cite{Janzen2014} shows multiple researchers arriving at compatible results partially independently across roughly fifteen years; the institutional response deflecting each result until the deflections became untenable; and canonical naming and standard pedagogical narration arriving substantially after the work, by which point the texture of who-did-what-when had been smoothed away.
+
+The programme of the present paper sits in the methodological lineage, not the mythologised version. It works from the structural content of general relativity's formalism, applies that content under minimal symmetry or causal assumptions, and reads off consequences the formalism's standard reading has not. The programme's results are robust in the same way that Friedmann's 1922 mathematical derivation was robust --- not because they have been confirmed by new observations (though some, including the cosmology paper's in-principle early-time distinguishability from standard $\Lambda$CDM, will be subject to such confirmation in time) but because they follow from the existing formalism under careful reading. The structural-redundancy architecture of Sections~\ref{sec:tetrahedron} and~\ref{sec:constellation} is the methodological feature that makes the results robust against the same institutional deflection that operated against Friedmann's 1924 paper between 1924 and 1930, and that operates today against foundational corrections in the field.
+
+The methodological setting articulated in this section is given a parallel public-register articulation in five cosmiCave essays~\cite{JanzenFiveD, JanzenShadowReading, JanzenRecordStraight, JanzenWildGoose, JanzenFortress}, operating together as an integrated argument. The foundational essays examine three branches of the audit: the philosophical (existence/occurrence distinction), the epistemological (six-figure scientific-revolution pedigree with primary-source archaeology), and the logical-empirical (synchrony/simultaneity distinction with the CMB-evidence anchor). The epistemological branch is carried by two essays---a principal essay together with a supplement that corrects the standard misunderstandings the principal essay holds apart in order to state its case cleanly, and which a reader needs in order to see why the principal essay departs from the received account. The synthesis essay integrates all three branches through a four-rule diagnostic framework derived from the heliocentrism-geocentrism precedent. The public-register articulation carries the methodological commitments of the present series in pedagogical form accessible to readers outside the formal-paper register.
+
+\subsection{Conservative posture}\label{sec:conservative}
+
+The framework adds the minimum required for coherence; it does not pursue speculative extensions. The ontological augmentation of Section~\ref{sec:ontology} is the minimum required to read the five papers' results coherently. The framework points at possible extensions (cross-geometry vantages of the groupoid; dynamics implications in non-vacuum cases; the gravitational-mass question; the cosmogenetic question raised by the Null-Boundary Correspondence; quantum implications) but does not pursue them. The conservative posture is itself a methodological feature: the framework is committed to articulating what has been established, not to extending it on the basis of guesses about where it might lead.
+
+\subsection{The Article-3 tetrahedron}\label{sec:tetrahedron}
+
+The third black-hole article in the popular-exposition lineage~\cite{JanzenArticle3} develops the no-horizon-formation conclusion through a tetrahedral proof structure: four convergent arguments forming a tetrahedron, with each face proving the conclusion through a distinct route and the six edges expressing the structural connections among them. The four arguments are:
+
+\begin{enumerate}
+\item \textbf{Observability constraint.} The horizon-formation event lies on the boundary $\partial J^{-}(\mathscr{I}^{+})$ of the causal past of future null infinity. By the definition of the boundary, every signal from inside the horizon fails to reach $\mathscr{I}^{+}$; the formation event therefore lies on the boundary in the strict sense that no causal curve from it reaches $\mathscr{I}^{+}$. The observability constraint is a strict causal-structure consequence.
+
+\item \textbf{Worldtube replacement.} The global causal definition $H^{+}=\partial J^{-}(\mathscr{I}^{+})$ depends on the entire future development of the spacetime. As collapsing or accreting matter alters the future, the location of $H^{+}$ alters with it. The horizon as a worldtube structure is therefore not present at any finite exterior time as a stable feature; what is present is a sequence of worldtube replacements as the future develops.
+
+\item \textbf{Asymptotic nature.} The horizon as defined globally is an asymptotic structure: it is the limiting null surface at $\mathscr{I}^{+}$, and a finite-time signal from inside the horizon would, by the limiting structure, take infinite exterior time to reach the boundary. The standard reading that treats the horizon as a finite-time structure is, on this argument, a category error about the asymptotic nature of the definition.
+
+\item \textbf{Generator argument.} A horizon generator is a null geodesic on $H^{+}$; the asymptotic alignment lemma of~\cite{JanzenBHcausality} establishes that the relevant null directions align asymptotically with the horizon, producing a metric singularity at the infinite-time null boundary. The generator argument is the local-geometric version of the asymptotic-nature argument.
+\end{enumerate}
+
+The four arguments are not independent in the strong logical sense: they share minimal premises (causal locality; the global form of the horizon definition; the asymptotic structure of null infinity; the alignment of horizon generators), and the generator argument is the local-geometric counterpart of the asymptotic-nature argument. What is distinct about them is not that they assume different things but that they exhibit the conclusion from different angles, in different formalisms, against different counter-arguments. The tetrahedral structure is not a redundancy: a deflection that works against one argument need not work against another, because they operate on different terrain. To defeat the conclusion one would have to engage each argument on its own terrain; the robustness is structural, not a matter of logical equivalence among the arguments.
+
+\section{The five papers and their central results}\label{sec:five-papers}
+
+The five preceding papers of the series carry the technical content of the framework. We give here a brief synthesis of each.
+
+\subsection{The metric-singularity theorem}\label{sec:bh-causality}
+
+Paper~\cite{JanzenBHcausality} proves that the event horizon is a metric singularity: an asymptotic feature of the infinite-time null boundary, not a finite-time geometric structure. The proof has two main components. First, a global causal theorem (Section~3.1 of~\cite{JanzenBHcausality}) shows that the horizon-formation event is forever causally disconnected from every event in the external universe; no worldtube generated by collapsing matter instantiates the interior in finite exterior time. Second, an asymptotic alignment lemma (Section~5 of~\cite{JanzenBHcausality}) shows that the horizon's null generators align asymptotically at the infinite-time null boundary, producing a metric singularity in the standard analytic sense.
+
+The reading the proof underwrites: the spacetime structures the standard reading attributes to a finite-time black-hole interior are not present as part of any worldtube generated by collapsing matter. They are asymptotic features of the spacetime's null boundary, accessible only in the limit of infinite exterior time. This is the no-horizon-formation conclusion in its clearest form.
+
+\subsection{Schwarzschild as a circle}\label{sec:circle}
+
+Paper~\cite{JanzenCircle} exhibits the Schwarzschild geometry as a circle whose two non-degenerate critical points are of identical analytic type. The horizon at $r=2M$ and the standard ``singularity'' at $r=0$ are two metric singularities of identical analytic character, with $d^{2}r/dz^{2}=\pm M$ alternately on the cycloid parametrisation $r(z)=M(1+\cos z)$. The apparent asymmetry between them in the standard reading is not a property of the geometry; it is a property of the conventional asymmetric reading, in which one critical point is classified as a removable coordinate singularity and the other as a true curvature singularity. That the bend is the same magnitude at both ($|d^{2}r/dz^{2}|=M$, the two being the $r$-poles of one homogeneous circle) localises the point exactly: the two are identical through first order and part only at the second, the curvature, so the entire horizon-versus-singularity asymmetry is which value the chart's origin assigns each---read by the curvature---and nothing in the curve.
+
+The circle paper's contribution to the framework is algebraic: it locates the horizon-singularity asymmetry of the standard reading at a specific algebraic site (the critical-point structure of the cycloid) and removes it as an artefact of the asymmetric classification rather than a feature of the geometry. The groupoid paper~\cite{JanzenGroupoid} subsequently shows that the asymmetry is manufactured by the Schwarzschild sweep's forced pivot off the manifold's axis of symmetry onto the off-axis point $r=0$.
+
+\subsection{The Schwarzschild--de Sitter slicing curve}\label{sec:slicing}
+
+Paper~\cite{JanzenSlicing} unifies Schwarzschild and de Sitter as the two limits of a single radial curve $r(l)$ with $dr/dl=\sqrt{|f(r)|}$, where $f(r)=1-2M/r-r^{2}/\alpha^{2}$. The horizons of the SdS family are the turning points of this curve. The curve is intrinsic to the de Sitter manifold: changes of charting vantage change the chart of the curve, but not the curve itself. The SdS geometry of a given member is therefore rigid under change of charting vantage (no continuous moduli act on it), and the within-member descriptions are related in a groupoid whose invariant is that member's geometry. The named de Sitter and Schwarzschild forms, by contrast, are not two charting vantages of one fixed geometry but two different slicings of the de Sitter manifold---sharing the invariant $\alpha$, differing in projected $M$---hence distinct Lorentzian geometries (a between-member relation, not a within-member one).
+
+The slicing paper's contributions to the framework are several: the structural unification of Schwarzschild and de Sitter as distinct Lorentzian geometries realised as readings of one slicing curve on the de Sitter manifold (the finite-$\alpha$ members sharing the invariant $\alpha$ and differing in projected $M$, the literal asymptotically flat Schwarzschild form being the degenerate $\alpha\to\infty$ edge of the same family)---representations of one ontological layer, not charts of one fixed geometry and not autonomous geometries on distinct realities; the rigidity of the SdS family; the establishment of the groupoid at the level of generators; the seam mechanism by which Riemannian and Lorentzian pieces of the slicing curve join through automatic signature flip; and the sweep-pivot diagnostic for the Schwarzschild description.
+
+\subsection{The groupoid of SdS descriptions}\label{sec:groupoid}
+
+Paper~\cite{JanzenGroupoid} takes the groupoid established at the level of generators in the slicing paper and develops its algebraic content. The two generators of the within-single-geometry morphisms are identified in coordinate-independent form (the root-exchange involution $\sigma$ and the sky-angle periodicity $\tau$). Their relations are derived: $\sigma^{2}=\tau^{3}=(\sigma\tau)^{2}=\text{id}$, with the generated group the dihedral group $D_{3}\cong S_{3}$. The rigidity is characterised as a dimensional collapse: the slicing family collapses onto its single invariant, the de Sitter manifold $\alpha$, distinct from the within-member action of the groupoid (which permutes the sky-angle labels of a single member at fixed $M$). The cosmological reassignment uniquely selects the Nariai vantage as the fixed point of $\sigma$. The seam continuation is characterised as a partial involution of the groupoid, with the signature flip a property of the analytic continuation. The Schwarzschild description is read as the canonical asymmetric realisation: a partial arc swept, by an exterior vantage denied the manifold's own axis of symmetry, about a selected off-axis point of the manifold ($r=0$, a genuine point of it), the forced pivot manufacturing the horizon-versus-singularity asymmetry.
+
+The groupoid paper's contributions to the framework are the relational content of the algebraic structure: the discrete morphisms organise into $D_{3}$; the rigidity is dimensional collapse; the cosmological reassignment is the unique fixed-point selection; the Schwarzschild description is the canonical asymmetric realisation in which the sweep is forced to pivot on the off-axis manifold point $r=0$, the cascade of a single break rather than a second one.
+
+\subsection{The cosmological completion}\label{sec:cosmology}
+
+Paper~\cite{JanzenCRcosmology} establishes the cosmological completion of the framework. A causal reassignment of de Sitter space --- the promotion of a null direction at the horizon to the fundamental timelike congruence --- produces the flat $\Lambda$CDM scale factor as an algebraic identity. The reassignment is structurally forced rather than postulated: only the Nariai configuration of the SdS family admits a comoving curve along a null generator of the de Sitter embedding without pivoting into a horizon. The Null-Boundary Correspondence Theorem of the cosmology paper identifies the horizon's null direction (selected asymptotically in collapse, per~\cite{JanzenBHcausality}) with the cosmic temporal direction of expansion.
+
+The cosmology paper's contributions to the framework are the cosmological grounding: $\Lambda$CDM as the algebraic identity of a causal reassignment; an in-principle empirical distinguishability from standard $\Lambda$CDM (late-time expansion reproduced exactly, while the early-universe expansion is set by geometric structure rather than radiation density, so the sound horizon, acoustic scale, and CMB anisotropy spectrum may differ---a comparison the paper establishes as possible in principle, without computing its magnitude); and the Null-Boundary Correspondence as the structural identification that ties the no-horizon-formation result to the cosmological completion.
+
+\section{The eight-result evidential constellation}\label{sec:constellation}
+
+The framework's evidential signature is a constellation of eight structurally distinct results. Seven of them (A, B, C, D, F, G, H) establish the no-horizon-formation conclusion, each through a different mode of argument and on different terrain; the remaining result (E, parity-and-compatibility) is of a different character --- it establishes that the framework reproduces every exterior-region observational fact of standard general relativity, situating the other seven as a structural augmentation rather than a competing theory. We inventory them here in the form they take across the five papers.
+
+\subsection{Result A --- Metric Singularity Theorem}\label{sec:result-A}
+
+The Metric Singularity Theorem of~\cite{JanzenBHcausality} establishes that the event horizon is a metric singularity at the infinite-time null boundary. The theorem is a formal global causal result derived from the standard horizon definition $H^{+}=\partial J^{-}(\mathscr{I}^{+})$ together with the structure of null geodesic congruences.
+
+\subsection{Result B --- Asymptotic Alignment Lemma}\label{sec:result-B}
+
+The Asymptotic Alignment Lemma of~\cite{JanzenBHcausality} (Section~5 there) establishes that the null directions of horizon generators align asymptotically at the infinite-time null boundary. This is the local-geometric content of the metric-singularity result, supplying the constructive identification of the asymptotic alignment that the theorem describes globally.
+
+\subsection{Result C --- Constructive limit}\label{sec:result-C}
+
+The constructive limit, developed in the informal articles ``When black holes happen''~\cite{JanzenArticle1} and Chapter X / the magic-flashlight thought experiment~\cite{JanzenChapterX}, runs through what an observer trying to chart a horizon-formation event actually finds. The external observer watching the astronaut emit flashes finds the gap between emission and observation widening without bound (the infalling astronaut's own proper time to the horizon remains finite); the magic-flashlight spacetime diagram exhibits the constructive structure of the asymptotic limit. The constructive limit is the conceptual-logical content of the no-horizon-formation result for non-technical readers, and it operates on the same minimal premises as the formal theorem.
+
+\subsection{Result D --- Article 3 tetrahedral proof}\label{sec:result-D}
+
+The third article~\cite{JanzenArticle3} develops the four convergent arguments of Section~\ref{sec:tetrahedron}: observability constraint, worldtube replacement, asymptotic nature, generator argument. Each face of the tetrahedron proves the no-horizon-formation conclusion through a structurally distinct route, and the six edges express the structural connections among them.
+
+\subsection{Result E --- Parity and compatibility}\label{sec:result-E}
+
+The first two articles~\cite{JanzenArticle1, JanzenArticle2} establish the parity and compatibility of the framework's reading with standard general relativity: every fact about an exterior region that the standard reading derives is also derived by CR, and the deviations between the two readings concern only what is taken to exist in finite time inside the horizon (which CR says is nothing). The parity-and-compatibility result is the load-bearing structural feature that establishes CR as an augmentation rather than a replacement: it makes no observational predictions that conflict with standard general relativity for any exterior region of any solution.
+
+\subsection{Result F --- Schwarzschild as a circle}\label{sec:result-F}
+
+The circle paper~\cite{JanzenCircle} establishes the algebraic identity of Schwarzschild's two metric singularities as non-degenerate critical points of identical analytic type. This is an independent algebraic route to the no-horizon-formation conclusion: the horizon and the ``singularity'' are structurally the same kind of thing, and the apparent asymmetry between them is an artefact of the conventional asymmetric reading.
+
+\subsection{Result G --- Slicing-curve rigidity and the sweep-pivot diagnostic}\label{sec:result-G}
+
+The slicing paper~\cite{JanzenSlicing} and the groupoid paper~\cite{JanzenGroupoid} jointly establish the geometric rigidity of the SdS family and the sweep-pivot artefact diagnostic. The rigidity establishes the SdS family's single invariant geometry---the invariant arena, no continuous moduli acting on it---which the framework reads as the de Sitter manifold being the fundamental, privileged representation; the sweep-pivot diagnostic identifies the Schwarzschild description's apparent asymmetric features as signatures of the sweep's forced pivot off the manifold's axis of symmetry onto the off-axis point $r=0$. Under the perspectival reading, this is the geometric-algebraic account behind the no-horizon-formation conclusion: the Schwarzschild reading's horizon-versus-singularity asymmetry is read as the signature of the forced pivot rather than a feature of the geometry---the reading's interpretive payoff, not a further proposition of the construction.
+
+\subsection{Result H --- Null-Boundary Correspondence and flat $\Lambda$CDM as an algebraic identity}\label{sec:result-H}
+
+The cosmology paper~\cite{JanzenCRcosmology} establishes the Null-Boundary Correspondence Theorem and derives flat $\Lambda$CDM as an algebraic identity from the causal reassignment of de Sitter space. This is the cosmological route: the horizon's null direction (selected asymptotically in collapse) is identified with the cosmic temporal direction of expansion, and the cosmology follows as an algebraic identity. The result extends the no-horizon-formation conclusion to its cosmological completion.
+
+\subsection{The structural function of the constellation}\label{sec:constellation-function}
+
+Seven of the results (A, B, C, D, F, G, H) jointly underwrite the no-horizon-formation conclusion through structurally distinct routes; the remaining result (E) establishes the parity-and-compatibility that makes the framework an augmentation rather than a replacement:
+
+\begin{itemize}
+\item Result A is formal and global (causal-structure theorem).
+\item Result B is asymptotic and local-geometric (null-generator alignment).
+\item Result C is constructive-informal (what the observer finds).
+\item Result D is methodological-architectural (the tetrahedron of four arguments).
+\item Result E is structural-compatibility (parity with standard GR).
+\item Result F is algebraic (cycloid critical-point structure).
+\item Result G is geometric-algebraic (rigidity + sweep-pivot).
+\item Result H is cosmological (Null-Boundary Correspondence + algebraic $\Lambda$CDM).
+\end{itemize}
+
+These seven routes are not seven logically independent derivations: Result~A is the core argument, Results~B, C, and~D present it in local-geometric, constructive-informal, and architectural registers, Results~F and~G are further routes grounded in the metric-singularity reading, and Result~H is its cosmological extension. To defeat the no-horizon-formation conclusion one would nonetheless have to engage each route on its own terrain: a deflection that works against one need not work against another, because they operate on different formalisms and against different counter-arguments. The routes are not independent in the strong logical sense---they share minimal premises, and several are one argument across registers---but the robustness is structural: the architecture forces engagement on each terrain rather than a single deflection. Result E adds the parity-and-compatibility that situates the whole as a structural augmentation. The constellation is the framework's evidential signature: one conclusion exhibited across several registers and underwritten by further independent and cosmological routes, plus the compatibility result that makes the augmentation an augmentation.
+
+\section{The diagnostic apparatus}\label{sec:diagnostics}
+
+The framework offers a diagnostic apparatus that locates category errors and chart artefacts at specific structural sites. The diagnostics are not interpretive principles; they are technical instruments derived from the five papers' constructions.
+
+\subsection{The metric-singularity definition gap}\label{sec:diagnostic-msg}
+
+The first diagnostic is the metric-singularity definition gap of~\cite{JanzenBHcausality}. The standard reading of general relativity recognises curvature singularities (where curvature invariants diverge) but does not consistently recognise metric singularities of the kind the horizon represents (asymptotic features at the infinite-time null boundary where the metric becomes degenerate without curvature diverging). The diagnostic: when the standard reading classifies a feature of a spacetime as a coordinate singularity that is removable by an analytic extension, check whether the analytic extension is in fact reachable in finite time from the exterior, and check whether the metric remains non-degenerate on the extension. The horizon fails both checks; it is a metric singularity in the asymptotic sense, not a removable coordinate singularity.
+
+\subsection{The verb-tense locus of category error}\label{sec:diagnostic-verb-tense}
+
+The second diagnostic is the verb-tense locus of category error. The standard reading of black-hole spacetimes uses past-tense verbs (``the collapsed object,'' ``the formed horizon'') to describe features whose causal status, in finite exterior time, is at most that of the limiting null boundary. The past tense presupposes that the formation event lies in the causal past of the speaker, but the metric-singularity theorem of~\cite{JanzenBHcausality} establishes that the formation event lies on the infinite-time null boundary --- not in the causal past of any exterior event. The verb tense is the grammatical locus of the category error: the past tense smuggles in a finite-time presence that the geometry does not support.
+
+The diagnostic: when discussing black-hole spacetimes, attend to verb tense. The present-progressive ``is collapsing'' or the present-continuous ``is approaching the horizon'' is causally accurate; the past-perfect ``has collapsed'' or the present-perfect ``has formed'' is not. Verb tense is the most subtle and most pervasive site at which the category error of the standard reading reproduces itself in everyday speech and in technical exposition.
+
+\subsection{Causal-localization as primary diagnostic}\label{sec:diagnostic-causal}
+
+The third diagnostic is causal-localization. Many results in the framework can be derived by asking: at what events is the claim under examination causally localised? If the claim concerns a feature inside a black-hole interior, and the interior is not part of the causal past of any external event, then the claim cannot be causally localised at any external event. Claims that cannot be causally localised at external events are not claims about features the external universe instantiates. They are claims about asymptotic structures.
+
+The diagnostic: when a claim about a black-hole spacetime appears to refer to features inside the horizon, check whether the claim can be causally localised. If it cannot, the claim is about an asymptotic structure rather than a finite-time feature, and the standard reading's treatment of it as a finite-time feature is a category error.
+
+\subsection{The sweep-pivot artefact diagnostic}\label{sec:diagnostic-sweep}
+
+The fourth diagnostic is the sweep-pivot artefact, established in the groupoid paper~\cite{JanzenGroupoid} (the sweep-pivot artefact proposition there) and grounded in the slicing paper~\cite{JanzenSlicing}. Features of a chart that appear to be features of the geometry can be sweep artefacts: properties of the rotational sweep used to produce the chart, not of the underlying intrinsic structure. The diagnostic: identify the sweep used to produce the chart; identify the point about which the sweep is pivoted; check whether that point is the manifold's own axis of symmetry or a selected point off it. If the sweep is forced onto an off-axis point, the asymmetric features arising in the swept chart are diagnostic of the forced pivot, not of the geometry.
+
+Under the perspectival reading, the Schwarzschild description is the canonical case: the apparent horizon-versus-singularity asymmetry is read as a sweep-pivot artefact rather than a feature of the underlying SdS geometry. Whether the diagnostic extends to other charts with asymmetric features (Kerr's ring singularity, Reissner--Nordstr\"om's interior horizon, the FLRW initial singularity) is a question the framework enables but does not resolve.
+
+\section{The structural augmentation}\label{sec:augmentation}
+
+We now articulate the augmentation itself: what CR adds to general relativity, what it preserves, and the sense in which the augmentation is structural rather than dynamical.
+
+\subsection{What CR preserves}\label{sec:preserves}
+
+CR preserves general relativity in its entirety as a phenomenological theory. The field equations are unchanged. The standard exact-solution geometries (Schwarzschild, Kerr, FLRW, de Sitter, Schwarzschild--de Sitter) are unchanged in their formal structure. The standard derivations of observational predictions (light bending, perihelion precession, gravitational waves, redshift) proceed as before. CR adds no new degrees of freedom, no new field equations, no new constants. Every observational prediction of general relativity for any exterior region of any spacetime remains a prediction of CR.
+
+The preservation is structural: CR is committed to the formal content of general relativity as the phenomenological theory of relativistic gravity. The augmentation is not a modification of the formalism; it is a re-reading of what the formalism describes.
+
+\subsection{What CR adds}\label{sec:adds}
+
+CR adds an ontological reading of general relativity's solutions: worldtubes (the evolving universe) are the primitive, the de Sitter substrate is its fundamental representation, and exact-solution geometries are readings of one underlying structure---distinct slicings of a single intrinsic curve on the de Sitter manifold, and, at the level at which CR individuates, representations of one ontological layer---rather than autonomous block manifolds. The addition is structural: it does not change what the field equations say; it changes what they are read as describing.
+
+The addition is supplied by the results, not by stipulation---in the sense that the results \emph{ground} the reading, not that they entail it as a theorem entails a corollary. The metric-singularity theorem of~\cite{JanzenBHcausality} forces the no-horizon-formation conclusion---the standard reading's finite-time black-hole interior is not present as part of any worldtube generated by collapsing matter---and on the strength of that conclusion the worldtube-first reading is the only coherent reading of what the formalism describes. The slicing paper~\cite{JanzenSlicing} establishes the rigidity of the SdS family---the various exact-solution geometries are charts of one intrinsic curve on the de Sitter manifold---which the framework reads as the de Sitter manifold being the fundamental substrate, a reading adopted on the strength of the rigidity rather than compelled by the rigidity proposition alone. The cosmology paper~\cite{JanzenCRcosmology} establishes that, once the causal reassignment is adopted, the Nariai member is the unique non-pivoting cosmological case, and grounds the identification of the horizon's null direction with the cosmic temporal direction of expansion on the framework's axioms. Each addition is grounded in a result; none is stipulated independently of the results.
+
+\subsection{Augmentation, not replacement}\label{sec:not-replacement}
+
+The augmentation is not a competing theory of gravity. It does not propose new equations. It does not predict new effects in any exterior region. It is the ontological reading that the eight-result evidential constellation makes cohere: the metric-singularity theorem disproves the finite-time black-hole interior, the slicing-curve rigidity establishes the single intrinsic curve the framework reads as the de Sitter substrate, and the causal reassignment, once adopted, selects the Nariai cosmology uniquely---each step grounded in the geometric results rather than selected against a survey of alternatives. The reading is unique not in the sense a theorem is forced but in the sense the construction is: it is what the results, taken together, leave standing as the coherent description the formalism actually supports.
+
+This is the sense in which the framework is a structural augmentation: the addition is the structural-ontological reading, and the reading is forced by the technical results. CR is general relativity, read carefully, with the consequences of careful reading articulated.
+
+\subsection{Compatibility with prior interpretive traditions}\label{sec:compatibility}
+
+The framework is compatible with several existing interpretive traditions: with the relational reading of general relativity (Rovelli, Smolin); with the process-philosophical reading (Whitehead and successors); with the worldline-first reading of certain quantum-gravity programmes (Sorkin's causal sets, Markopoulou's quantum graphity). It does not endorse any particular such tradition; it is articulated as the structural-ontological content of the eight-result evidential constellation, without commitment to one or another philosophical school.
+
+The book~\cite{Janzen2025} discusses these compatibilities at length. The present paper notes them only to make explicit that CR is not in opposition to existing interpretive work; it is, in many cases, a refinement and technical grounding of intuitions that other workers have articulated in less technical terms.
+
+\section{What remains open}\label{sec:open}
+
+The framework names what it has established. It also names what it has not. Four directions remain open, each of which is a natural extension of the five-paper foundation and each of which is not pursued here.
+
+\subsection{Cross-geometry vantages}\label{sec:cross-geometry}
+
+The groupoid of admissible vantages, as developed in~\cite{JanzenGroupoid}, acts within a single SdS member (a fixed $M$), permuting the member's sky-angle labels while leaving that member's geometry invariant. Its discrete generators do not move between members of the slicing family (different projected $M$ at the same throat radius $\alpha$); that the family of members carries the single invariant $\alpha$ is the dimensional-collapse content. Beyond the family at fixed $\alpha$, the partial involutions $\xi$ (Riemannian--Lorentzian) and the overcritical continuation act, in~\cite{JanzenGroupoid}, within a fixed $\alpha$, and the vantages that move between distinct values of $\alpha$ (distinct throat radii, hence distinct de Sitter manifolds) are placed there in the open category. Whether further partial involutions relate distinct $\alpha$ values, and what algebraic structure such involutions carry, is a natural next direction.
+
+\subsection{Dynamics implications}\label{sec:dynamics}
+
+The sweep-pivot diagnostic of~\cite{JanzenGroupoid} (the sweep-pivot artefact proposition there) supplies a tool for identifying chart asymmetries arising from sweeps forced off the manifold's axis of symmetry onto a selected point. Whether the diagnostic extends to non-vacuum solutions (Kerr, Reissner--Nordstr\"om), and whether the dynamics of matter and fields in such geometries can be reformulated in terms that respect the underlying symmetric structure, is a programmatic question. The framework does not pursue it. The companion operator and range papers~\cite{JanzenOperator, JanzenRange} carry this furthest: the matter content is reformulated as the bend of the cut---for a general spatial leaf the energy density is the leaf's intrinsic-curvature departure from the de~Sitter substrate, the Hamiltonian constraint---and gravitational radiation as the transverse-traceless mode of the evolving leaf, with the boundary of what a symmetric cut can carry identified as the loss of continuous symmetry: the seam at which generation-by-symmetry hands off to evolution-by-dynamics. The reformulation respecting the underlying symmetric structure is thus achieved across the symmetry-reducible sector; its extension to the non-vacuum stationary solutions named above, and to the general inhomogeneous evolution beyond that seam, remains programmatic.
+
+\subsection{The mass question}\label{sec:mass-question}
+
+The slicing paper~\cite{JanzenSlicing} and the groupoid paper~\cite{JanzenGroupoid} establish that the throat radius $\alpha$ is the invariant of the SdS construction, while the mass parameter $M$ is the slicing-dependent chart label. Whether $\alpha$ is the correct intrinsic gravitational mass in the standard quasi-local (Brown--York, Misner--Sharp) and asymptotic (ADM, Bondi) definitions is open. The framework sharpens the question by showing that any candidate for an intrinsic gravitational mass in the SdS construction must be built from $\alpha$, not from $M$. The operator paper~\cite{JanzenOperator} sharpens it further: $M$ is the offset of the cut---a vacuum datum, the chart label of a straight cut---while physical matter is the bend, the cut's departure from straight, so $M$ measures not matter content but the vacuum member's place in the family. Any intrinsic gravitational mass must therefore be built from the invariant $\alpha$; whether the standard quasi-local and asymptotic constructions return it is the form the open question now takes.
+
+\subsection{The cosmogenetic question}\label{sec:cosmogenesis}
+
+The Null-Boundary Correspondence~\cite{JanzenCRcosmology} identifies the horizon's null direction in collapse with the cosmic temporal direction of expansion in the SdS-Nariai cosmology. This identification raises a question the framework does not address: whether a collapse event can be the cosmogenetic origin of a new universe (a ``baby universe'' in the sense of Smolin's cosmological natural selection and related proposals, but with the structural identification supplied by the Null-Boundary Correspondence rather than postulated independently). The dissertation~\cite{Janzen2012} (Section~4.4) developed this picture as a cosmogenetic extrapolation, and the book~\cite{Janzen2025} discusses it as the natural cosmogenetic completion of the framework. The present paper does not pursue it; it notes only that the question is raised by the framework's results and is not foreclosed by them.
+
+\subsection{Quantum implications}\label{sec:quantum}
+
+The framework is articulated at the level of classical relativistic structure. It makes no quantum claims, and it does not address how its ontological commitments would interact with a quantum theory of gravity. The framework does, however, suggest possibilities: the no-horizon-formation result eliminates the information-paradox motivation for certain quantum-gravity programmes; the worldtube-first ontology aligns with the structural commitments of certain process-quantum approaches; the existence/occurrence distinction may have quantum-mechanical analogues in the relation between unitary evolution and measurement collapse. One of these possibilities the framework can now make precise. The canonical ``problem of time''---that in the Hamiltonian formulation of general relativity the generator of evolution is a sum of constraints that vanish on physical states, leaving no preferred time and no genuine evolution---is the canonical instance of the very category error this framework corrects. It is what follows from treating the four-dimensional manifold as the existing object: if the block is what exists, every foliation is an equally gauge re-slicing of one existing thing, no slicing records a real advance, and the generator cannot move physical states. Once the evolving three-dimensional layer is taken as what exists and advances---the framework's own primitive---the lapse recovers its meaning as the covariant metrical rate of that advance, the canonical constraint deparametrized along cosmic time is solved for a true Hamiltonian that generates the advance rather than annihilating it, and that generator reproduces the flat-$\Lambda$CDM expansion of the cosmological paper~\cite{JanzenCRcosmology}. The frozen constraint and the true Hamiltonian are the same canonical content under two readings, differing only in whether the manifold is granted existence. So read, the problem of time is dissolved rather than solved: it is the canonical symptom of the block-universe reading the framework rejects, and its formal development---the deparametrization and the unitary evolution it yields---is the subject of a forthcoming canonical companion to this programme. The remaining quantum possibilities are not pursued here.
+
+\section{Conclusion}\label{sec:conclusion}
+
+Cosmological Relativity is a structural augmentation of general relativity. It does not modify Einstein's field equations. It does not introduce new degrees of freedom. It does not predict new effects in any exterior region of any exact-solution spacetime. What it does is to read the formalism of general relativity carefully, supply the ontological reading the careful reading forces, and articulate the framework that emerges.
+
+The framework's load-bearing content is the five preceding papers. Each carries its own constructions, each is individually proven, and the five jointly underwrite an eight-result evidential constellation in which a core argument, presented across several registers together with further independent and cosmological routes, converges on the no-horizon-formation conclusion, while an eighth result establishes parity with standard general relativity. The framework's ontological commitments (worldtubes as the primitive; de Sitter substrate as their fundamental representation; existence/occurrence distinction; Heraclitean orientation) are not added by stipulation but supplied by the results.
+
+The augmentation is structural. It changes what the formalism is read as describing, not what the formalism says. In this sense it is the most conservative possible augmentation: it adds the minimum required for the formalism's careful reading to cohere. CR is general relativity, read with its consequences tracked through to where they lead.
+
+The five preceding papers~\cite{JanzenBHcausality, JanzenCircle, JanzenSlicing, JanzenGroupoid, JanzenCRcosmology} carry the technical content. The book~\cite{Janzen2025} carries the longer ontological articulation. The present paper names the framework that emerges from their synthesis.
+
+\begin{thebibliography}{99}
+
+\bibitem{JanzenBHcausality}
+D.~Janzen,
+\emph{The event horizon is a metric singularity: a missing definition in general relativity},
+in preparation.
+
+\bibitem{JanzenCircle}
+D.~Janzen,
+\emph{Schwarzschild as a circle: the curvature singularity at $r=0$ and the event horizon are one kind of object, and the inference from the curvature divergence to an inextendible boundary at $r=0$ fails under the continuation that the standard treatment takes to remove the horizon},
+in preparation.
+
+\bibitem{JanzenSlicing}
+D.~Janzen,
+\emph{The Schwarzschild--de Sitter slicing curve: horizons as turning points, and de Sitter and Schwarzschild as the two limits of one construction},
+in preparation.
+
+\bibitem{JanzenGroupoid}
+D.~Janzen,
+\emph{The Schwarzschild--de Sitter description groupoid: generators, relations, and Schwarzschild as the asymmetric realisation},
+in preparation.
+
+\bibitem{JanzenCRcosmology}
+D.~Janzen,
+\emph{Null-Boundary Correspondence and Non-Synchronous Cosmology in a Layered Geometric Framework},
+in preparation.
+
+\bibitem{JanzenOperator}
+D.~Janzen,
+\emph{Covariance of geometries over the de Sitter substrate: the slicing operator, the vacuum kernel, and matter as the bend of the cut},
+in preparation.
+
+\bibitem{JanzenRange}
+D.~Janzen,
+\emph{The range of the de Sitter slicing operator: surjectivity onto the symmetry-reducible sector of general relativity, the Kerr--NUT--(A)dS vacuum kernel, and the wall of inhomogeneity},
+in preparation.
+
+\bibitem{Janzen2025}
+D.~Janzen,
+\emph{Beyond Space-Time},
+(2025).
+
+\bibitem{Janzen2012}
+D.~Janzen,
+\emph{A solution to the cosmological problem of relativity theory},
+PhD dissertation, University of Saskatchewan (2012).
+
+\bibitem{Janzen2013a}
+D.~Janzen,
+\emph{Time, as it actually is},
+FQXi essay (2013).
+
+\bibitem{Janzen2013b}
+D.~Janzen,
+\emph{On the cosmic time, fundamental observers, and cosmic event horizons},
+arXiv:1303.2549 (2013).
+
+\bibitem{Janzen2014}
+D.~Janzen,
+\emph{Einstein's cosmological considerations},
+European Physical Journal H (accepted with revisions, not completed) (2014).
+
+\bibitem{JanzenFiveD}
+D.~Janzen,
+\emph{Time Travel: A Five-Dimensional Trope},
+cosmiCave essay (June 2025).
+
+\bibitem{JanzenShadowReading}
+D.~Janzen,
+\emph{Scientific Shadow Reading: How We Discovered Earth is a Planet},
+cosmiCave essay (July 2025).
+
+\bibitem{JanzenRecordStraight}
+D.~Janzen,
+\emph{Setting the Record Straight: How Copernicus Concealed His Debt to Aristarchus},
+cosmiCave essay (July 2025).
+
+\bibitem{JanzenWildGoose}
+D.~Janzen,
+\emph{Albert Einstein's Wild Goose Chase},
+cosmiCave essay (August 2025).
+
+\bibitem{JanzenFortress}
+D.~Janzen,
+\emph{The Fortress of Misunderstanding Physics},
+cosmiCave essay (August 2025).
+
+\bibitem{JanzenArticle1}
+D.~Janzen,
+\emph{When black holes happen},
+cosmiCave essay (2026).
+
+\bibitem{JanzenArticle2}
+D.~Janzen,
+\emph{The shadow of existence},
+cosmiCave essay (2026).
+
+\bibitem{JanzenArticle3}
+D.~Janzen,
+\emph{The tetrahedral proof: four mutually-entailing arguments that black holes do not form in finite time},
+cosmiCave essay (2026).
+
+\bibitem{JanzenChapterX}
+D.~Janzen,
+\emph{The magic flashlight and the greedy astronaut: a spacetime diagram for what happens at the horizon},
+cosmiCave essay (2026).
+
+\end{thebibliography}
+
+\end{document}

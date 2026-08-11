@@ -1,0 +1,238 @@
+#!/usr/bin/env python3
+"""id_space_census.py -- ARC 14 step 2's instrument.
+
+c54.90 folded OPEN_PROBLEMS_MAP's 27 live items into the lead register as L-136..L-162, each
+carrying its map code as an ALIAS, and the map became a view.  The SAME condition still holds for
+every other namespace that carries open items: each has local codes, none of them are in the one
+ID space, and check_supersession therefore cannot run them against the receipts.
+
+This does NOT fold anything.  It CENSUSES: it extracts every open-item code from every namespace,
+checks which already appear as an alias in the register, and reports the gap.  Folding is a
+reading job -- an item is folded only after someone has checked it is not already registered under
+another name -- and a script that assigned IDs automatically would create exactly the duplicate
+namespace it is meant to remove.
+
+    python3 scripts/id_space_census.py            # write ID_SPACE_CENSUS.md
+    python3 scripts/id_space_census.py --check    # exit 1 while any namespace is unfolded
+
+Written r2377.  Stated for reversal.
+"""
+import os, re, sys
+
+FRONTIER_ALIAS = re.compile(r'REGISTER ALIAS[^\n]*?`?(L-\d+|PO-\d+[a-z]?)`?', re.I)
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.join(HERE, '..')
+
+# (label, path, regex for a local open-item code, note)
+NAMESPACES = [
+    # r2378: struck items (~~**PO-N**~~) are not owed a register row -- they are closed, with a
+    # kill receipt under kills/.  Counting them as unfolded would keep the census permanently red on
+    # work that is finished, which is the same defect as a gate that fails forever.
+    ('PROTECTED_OPEN', 'PROTECTED_OPEN.md', r'(?<!~)\*\*(PO-\d+[a-z]?)\*\*(?!~)',
+     'the closure bar — a node may not close these'),
+    # r2378: this row read `\bfamily\s*\(?(\d)\)?` and reported 8 unfolded.  ** That was a census
+    # artifact, the SECOND from this instrument. **  The pattern matched prose mentions of "family 6"
+    # and then looked for a bare digit as a register alias, which nothing could satisfy.  Read at
+    # source, the ledger's family table ALREADY states each family against the register -- families
+    # 3, 5, 6 and 8 name L-150, L-147, L-164 and L-165 -- so the namespace was folded before the
+    # census was written, and better than folded: it is a view with a status column.
+    # The honest measure is therefore whether each LIVE family names a register row, so the pattern
+    # reads the table's own rows and not the prose.
+    ('OPEN_PROBLEMS_LEDGER families', 'THE_OPEN_PROBLEMS_LEDGER.md',
+     r'^> \| (\d+) \|[^|]*\|[^|]*LIVE',
+     'the families and their worked content — a VIEW of the register since c54.121'),
+    ('P7 sec:frontiers', 'corpus/CR_framework.tex', None,
+     'the framework paper\'s own frontier list'),
+    ('p0 sec:frontiers', 'corpus/geometric_core_paper.tex', None,
+     'the geometric core\'s frontier list'),
+    ('CONSOLIDATE arcs', 'CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md',
+     r'`?ARC (\d+)', 'the arcs — FOLDED r2378 as kind:WORK rows; §2 keeps their steps'),
+    ('CONSOLIDATE phases', 'CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md',
+     r'^## PHASE (\d+) ·', 'the sequence — FOLDED r2378 as kind:WORK rows; §13 keeps their content'),
+    ('OPEN_PROBLEMS_MAP codes', 'OPEN_PROBLEMS_MAP.md',
+     r'\b([A-J])·(\d+)\b', 'FOLDED c54.90 — the worked example'),
+]
+
+
+def read(rel):
+    p = os.path.join(ROOT, rel)
+    if not os.path.exists(p):
+        return None
+    return open(p, encoding='utf-8', errors='replace').read()
+
+
+def register_aliases():
+    """Every code the register already carries as an alias, plus the L- ids themselves."""
+    t = read('THE_LIVE_ARC.md') or ''
+    ids = set(re.findall(r'\| (?:\*\*|~~)(L-\d+)', t))
+    live = set(re.findall(r'\| \*\*(L-\d+)\*\*', t))
+    # aliases appear as `X·N` codes and as ALIAS: mentions
+    aliases = set(f'{a}·{b}' for a, b in re.findall(r'\b([A-J])·(\d+)\b', t))
+    aliases |= set(re.findall(r'\b(PO-\d+[a-z]?)\b', t))
+    # r2378: the folded arcs and phases carry their source code in the row, e.g. `CONSOLIDATE` §2
+    # `ARC 14` / §13 `PHASE 7`, so those are aliases too.
+    aliases |= set(f'ARC {n}' for n in re.findall(r'`ARC (\d+)`', t))
+    aliases |= set(re.findall(r'`(PHASE \d+)`', t))
+    aliases |= set(n for n in re.findall(r'`ARC (\d+)`', t))
+    return ids, live, aliases
+
+
+def frontier_items(tex, label):
+    """Count \\item entries inside a frontiers section of a paper."""
+    t = read(tex)
+    if t is None:
+        return []
+    m = re.search(r'\\section\{[^}]*\}\\label\{sec:frontiers\}(.*?)(?=\\section|\\input|'
+                  r'\\begin\{thebibliography\})', t, re.S)
+    if not m:
+        return []
+    body = m.group(1)
+    items = re.findall(r'\\item(?:\\label\{[^}]*\})?\s*\\(?:textbf|emph)\{([^}]{0,95})', body)
+    if not items:
+        items = [x[:95] for x in re.findall(r'\\item\s+(.{0,95})', body)]
+    return items
+
+
+def main():
+    ids, live, aliases = register_aliases()
+    rows = []
+    for label, path, rx, note in NAMESPACES:
+        if path.endswith('.tex'):
+            items = frontier_items(path, label)
+            codes = [f'{label} #{i+1}' for i in range(len(items))]
+            titles = items
+            # r2378: a paper's frontier list is folded by an ALIAS COMMENT, never by a rewrite into
+            # register voice (ARC 15's ordering rule).  So the fold test for a .tex namespace is
+            # whether the section carries one alias comment per item -- read from the comment, which
+            # is exactly where the paper is allowed to carry it.
+            src = read(path) or ''
+            m2 = re.search(r'\\label\{sec:frontiers\}(.*?)(?=\\input|\\begin\{thebibliography\})',
+                           src, re.S)
+            n_alias = len(FRONTIER_ALIAS.findall(m2.group(1))) if m2 else 0
+            unfolded = codes[n_alias:]
+            state = 'FOLDED' if codes and not unfolded else ('UNFOLDED' if codes else 'no codes')
+            rows.append((label, path, codes, unfolded, state, note))
+            continue
+        else:
+            t = read(path)
+            if t is None:
+                rows.append((label, path, [], [], 'MISSING', note)); continue
+            if label.startswith('OPEN_PROBLEMS_LEDGER'):
+                # r2378: for this namespace "folded" is not "the code appears in the register" --
+                # the code is a family NUMBER and never could.  A family is folded when its own
+                # status line NAMES a register row, which is what the c54.121 rewrite made the
+                # table do.  So the test is per-row and local, and the global alias check is the
+                # wrong instrument for it.  ** Stated rather than special-cased silently: a census
+                # whose fold test does not fit the namespace reports a phantom, and this one has
+                # now done that twice. **
+                codes, unfolded, titles = [], [], []
+                for m in re.finditer(r'^> \| (\d+) \|([^|]*)\|([^|]*)', t, re.M):
+                    if 'LIVE' not in m.group(3):
+                        continue
+                    codes.append('family ' + m.group(1))
+                    if not re.search(r'`(L-\d+|PO-\d+[a-z]?)`', m.group(3)):
+                        unfolded.append('family ' + m.group(1))
+                state = 'FOLDED' if codes and not unfolded else ('UNFOLDED' if codes else 'no codes')
+                rows.append((label, path, codes, unfolded, state, note))
+                continue
+            if rx is None:
+                codes, titles = [], []
+            else:
+                found = re.findall(rx, t, re.M)
+                codes = sorted({(''.join(f) if isinstance(f, tuple) and len(f) > 1
+                                 else (f[0] if isinstance(f, tuple) else f)) for f in found},
+                               key=str)
+                if label == 'OPEN_PROBLEMS_MAP codes':
+                    # r2378: THIS ROW REPORTED 8 UNFOLDED AND ALL EIGHT WERE PHANTOMS -- the THIRD
+                    # phantom class from this instrument, after the 17-sites over-count and the
+                    # family-number test.  Read at source:
+                    #   A·2  -- already folded as L-136; the register writes the code "A2", without
+                    #           the middle dot, so a literal alias match missed its own fold.
+                    #   C·1, C·2 -- "closed before the fold and are correctly left in place" (the
+                    #           map says so in its own voice).
+                    #   G·0  -- not an item at all: a status line recording that the reciprocity
+                    #           grind is complete.
+                    #   I·1--I·4 -- the paper-surgery cluster, STRUCK: "done this session (P13 made
+                    #           whole and self-owning ... compiles clean)".
+                    # ** So the map has been fully folded since c54.90 and stayed that way. **  The
+                    # fold test is therefore: a code is owed a register row only if it is not struck,
+                    # and the alias match is punctuation-insensitive.
+                    def _norm(x):
+                        return x.replace('·', '')
+                    NOT_AN_ITEM = {'G·0'}   # a status line recording the reciprocity grind complete
+                    struck = set(NOT_AN_ITEM)
+                    for ln in t.split('\n'):
+                        for a, b in re.findall(rx, ln):
+                            seg = ln[max(0, ln.find(f'{a}·{b}') - 70):ln.find(f'{a}·{b}') + 70]
+                            if '~~' in seg or 'closed before the fold' in ln:
+                                struck.add(f'{a}·{b}')
+                    codes = sorted({f'{a}·{b}' for a, b in re.findall(rx, t)} - struck)
+                titles = []
+        flat_aliases = {a.replace('·', '') for a in aliases}
+        folded = [c for c in codes if c in aliases or c.replace('·', '') in flat_aliases]
+        unfolded = [c for c in codes if not (c in aliases or c.replace('·', '') in flat_aliases)]
+        state = 'FOLDED' if codes and not unfolded else ('UNFOLDED' if codes else 'no codes')
+        rows.append((label, path, codes, unfolded, state, note))
+
+    if '--check' in sys.argv:
+        bad = [r for r in rows if r[4] == 'UNFOLDED']
+        if bad:
+            print(f'  [FAIL] {len(bad)} namespace(s) still outside the one ID space')
+            for label, path, codes, unfolded, _, _ in bad:
+                print(f'    {label}: {len(unfolded)} of {len(codes)} codes unfolded')
+            return 1
+        print('  every namespace is folded into the register')
+        return 0
+
+    front = 0
+    for n in ('THE_LIVE_ARC.md', 'THE_PLAN.md'):
+        tt = read(n) or ''
+        rs = [int(x) for x in re.findall(r'c54\.(\d+)', tt)]
+        front = max([front] + rs)
+    o = ['---', 'name: id-space-census', 'kind: VIEW', f'current: c54.{front}',
+         'description: ARC 14 step 2 — every open-item namespace in the programme, and whether it '
+         'is in the one ID space yet. GENERATED by scripts/id_space_census.py; do not hand-edit.',
+         'sources: [chat]', '---', '',
+         '# THE ID-SPACE CENSUS', '',
+         '*Generated by `scripts/id_space_census.py`. **Do not hand-edit.***', '',
+         f'**The register holds {len(ids)} IDs, {len(live)} of them open.**', '',
+         '> **⌗ WHY THIS EXISTS.** *`c54.90` folded `OPEN_PROBLEMS_MAP`\'s 27 live items into the '
+         'lead register as `L-136`–`L-162`, each carrying its map code as an **alias**, and the map '
+         'became a **view**. **One ID space, one burn-down, one supersession scan.** The same '
+         'condition still holds for every other namespace below: local codes, outside the register, '
+         'invisible to `check_supersession` — which is precisely the state the map was in before the '
+         'fold, and precisely why the fold paid on its first scan.*', '',
+         '> **⛔ THIS FILE DOES NOT FOLD ANYTHING, AND MUST NOT.** *An item is folded only after '
+         'someone has **read it** and checked it is not already registered under another name. A '
+         'script that assigned IDs automatically would manufacture the duplicate namespace the fold '
+         'exists to remove — and would do it at the altitude of the whole programme\'s open work.*',
+         '', '| namespace | file | codes | unfolded | state | what only it has |',
+         '|---|---|---|---|---|---|']
+    for label, path, codes, unfolded, state, note in rows:
+        o.append(f'| **{label}** | `{path}` | {len(codes)} | {len(unfolded)} | '
+                 f'{"✔ " if state == "FOLDED" else ""}{state} | *{note}* |')
+    o.append('')
+    for label, path, codes, unfolded, state, note in rows:
+        if state == 'UNFOLDED' and unfolded:
+            shown = ', '.join(f'`{c}`' for c in unfolded[:40])
+            o.append(f'**{label} — unfolded codes:** {shown}'
+                     + (f' … *and {len(unfolded)-40} more*' if len(unfolded) > 40 else ''))
+            o.append('')
+    o.append('> **⌗ THE ORDER WITHIN THE FOLD (`ARC 14` step ②): the PAPERS\' frontier sections go '
+             'LAST.** *A paper\'s `sec:frontiers` is published prose, not a register; it gets an '
+             'alias comment, never a rewrite into register voice.*')
+    o.append('')
+    o.append('> **⌗ AND `PROTECTED_OPEN` FOLDS AS PROTECTED.** *Registering something is not '
+             'promoting it, and closing it stays barred — `corpus/check_kills.py` runs before and '
+             'after any fold.*')
+    o.append('')
+    open(os.path.join(ROOT, 'ID_SPACE_CENSUS.md'), 'w', encoding='utf-8').write('\n'.join(o) + '\n')
+    print(f'  wrote ID_SPACE_CENSUS.md')
+    for label, path, codes, unfolded, state, _ in rows:
+        print(f'    {label:<32} {len(codes):>4} codes, {len(unfolded):>4} unfolded  [{state}]')
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())

@@ -1,0 +1,24 @@
+# ── LaTeX build output ────────────────────────────────────────────────────────
+# The same list cut_bundle.sh excludes -- which is WHY a correctly-cut bundle
+# always looked like it dropped 58 files, and why audit_trail.py had to learn to
+# partition build artefacts out of its DROPPED section (r2385).
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.pre_*
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+
+# ── scratch ──────────────────────────────────────────────────────────────────
+/vt/
+/out*/
+*.tar.gz
+*.tar.xz

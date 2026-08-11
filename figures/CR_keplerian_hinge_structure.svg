@@ -1,0 +1,57 @@
+<svg viewBox="0 0 560 500" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <rect x="0" y="0" width="560" height="500" fill="#ffffff"/>
+  <text x="280" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a1a">The Keplerian hinge structure</text>
+  <text x="280" y="49" text-anchor="middle" font-size="12.5" fill="#555" font-style="italic">the hole is the incircle of the Nariai double-null-ruling equilateral</text>
+
+  <!-- the equilateral: the three Nariai dual rulings (triangle sides) -->
+  <polygon points="280,80 167.4,275 392.6,275" fill="none" stroke="#333333" stroke-width="2"/>
+
+  <!-- the hole = the throat circle (incircle), radius alpha -->
+  <circle cx="280" cy="210" r="65" fill="#e8f0f9" stroke="#1a5fa5" stroke-width="2"/>
+  <text x="280" y="215" text-anchor="middle" font-size="12.5" fill="#1a5fa5" font-style="italic">the hole</text>
+  <circle cx="280" cy="210" r="2.5" fill="#1a5fa5"/>
+
+  <!-- radius annotations -->
+  <line x1="280" y1="210" x2="280" y2="80" stroke="#b02020" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="287" y="150" font-size="12.5" fill="#b02020">2&#945;</text>
+  <line x1="280" y1="210" x2="336.3" y2="177.5" stroke="#1a7a3a" stroke-width="1" stroke-dasharray="3 2"/>
+  <text x="300" y="196" font-size="12.5" fill="#1a7a3a">&#945;</text>
+
+  <!-- hinges (triangle vertices, spatial radius 2 alpha) -->
+  <g fill="#b02020">
+    <circle cx="280" cy="80" r="5.5"/>
+    <circle cx="167.4" cy="275" r="5.5"/>
+    <circle cx="392.6" cy="275" r="5.5"/>
+  </g>
+  <text x="280" y="70" text-anchor="middle" font-size="12" fill="#b02020" font-weight="bold">hinge</text>
+  <text x="150" y="292" text-anchor="middle" font-size="12" fill="#b02020" font-weight="bold">hinge</text>
+  <text x="410" y="292" text-anchor="middle" font-size="12" fill="#b02020" font-weight="bold">hinge</text>
+
+  <!-- tangent points: the Nariai dual rulings touch the throat at the side midpoints -->
+  <g fill="#1a7a3a">
+    <circle cx="223.7" cy="177.5" r="4"/>
+    <circle cx="280" cy="275" r="4"/>
+    <circle cx="336.3" cy="177.5" r="4"/>
+  </g>
+
+  <!-- 60 degree subtend wedge at the top hinge -->
+  <path d="M 280 80 L 223.7 177.5 M 280 80 L 336.3 177.5" stroke="#333" stroke-width="0.8" stroke-dasharray="2 2" opacity="0.5"/>
+  <text x="280" y="120" text-anchor="middle" font-size="11" fill="#666">60&#176;</text>
+
+  <!-- legend -->
+  <g font-size="12" fill="#333">
+    <circle cx="70" cy="335" r="5.5" fill="#b02020"/>
+    <text x="82" y="339">hinge — spatial radius 2&#945;, polar 0&#176;/120&#176;/240&#176;</text>
+    <circle cx="70" cy="358" r="4" fill="#1a7a3a"/>
+    <text x="82" y="362">Nariai dual-ruling touch — at each side's midpoint (polar 60&#176;/180&#176;/300&#176;)</text>
+    <line x1="62" y1="381" x2="78" y2="381" stroke="#333" stroke-width="2"/>
+    <text x="82" y="385">Nariai double null ruling (equilateral side, a straight generator)</text>
+  </g>
+
+  <!-- the out-of-plane receipt -->
+  <line x1="40" y1="410" x2="520" y2="410" stroke="#ccc" stroke-width="1"/>
+  <text x="280" y="432" text-anchor="middle" font-size="12.5" fill="#1a1a1a" font-weight="bold">The vertical receipt (out of the equatorial plane):</text>
+  <text x="280" y="452" text-anchor="middle" font-size="12" fill="#333">each pair of dual rulings crosses above and below the hole at <tspan font-weight="bold">X&#8320; = &#177;&#8730;3&#8201;&#945;</tspan>, on the hyperboloid &#8722;X&#8320;&#178;+X&#8321;&#178;+X&#8322;&#178;=&#945;&#178;.</text>
+  <text x="280" y="471" text-anchor="middle" font-size="12" fill="#333">Circumradius 2&#945;, inradius &#945; = the hole, so the hole subtends exactly 60&#176; from each hinge.</text>
+  <text x="280" y="490" text-anchor="middle" font-size="11" fill="#888" font-style="italic">Six hinge vertices in all (three up, three down); one swings the door. [computed c31]</text>
+</svg>

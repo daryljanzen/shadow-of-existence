@@ -1,0 +1,28 @@
+# Canonical bibitem titles (r908)
+# Built from each paper's own \title{} at source. One authoritative rendering per paper.
+# Convention: the paper's real title. Where the real title is a multi-clause sentence whose
+# later clauses restate the result (P2, P13), it is truncated at the first natural clause
+# boundary — which is what the majority of existing bibitems already do.
+# Format: KEYS | canonical title (LaTeX, as it must appear inside \emph{})
+
+BH_causality_v2      | JanzenBHcausality, JanzenCausality      | The event horizon is a metric singularity: a missing definition in general relativity
+janzen_circle_v3     | JanzenCircle                            | Schwarzschild as a circle: the curvature singularity at $r=0$ and the event horizon are one kind of object
+SdS-slicing-curve_v2 | JanzenSlicing                           | The Schwarzschild--de Sitter slicing curve: horizons as turning points, and de Sitter and Schwarzschild as two readings of one slicing
+modern_parallax      | JanzenModernParallax, JanzenParallax    | The modern parallax: the redshift-isotropy floor, the empirical forcing of cosmic time and uniform expansion, and the measured resolution of the relativity of simultaneity
+groupoid_paper       | JanzenGroupoid                          | The Schwarzschild--de Sitter description groupoid: generators, relations, and Schwarzschild as the asymmetric realisation
+shadow_of_existence  | JanzenShadowExistence, JanzenShadow     | The shadow of existence: scientific theory-choice as an empirically grounded discipline, calibrated on the historical record and on a live programme
+CR_framework         | JanzenCRframework, JanzenFramework      | Collapsed matter must become a universe: the necessary and sufficient augmentation of general relativity into a description of structural existence, proven for gravitational collapse of any symmetry
+slicing_operator     | JanzenOperator                          | Covariance of geometries over the de Sitter substrate: the slicing operator, the vacuum kernel, and matter as the bend of the cut
+range_paper          | JanzenRange                             | The range of the de Sitter slicing operator: surjectivity onto the symmetry-reducible sector of general relativity, the Kerr--NUT--(A)dS vacuum kernel, and the wall of inhomogeneity
+canonical_time       | JanzenCanonicalTime, JanzenCanonical    | The canonical problem of time as a category error: an empirically forced cosmic time, deparametrization, and the dissolution of frozen dynamics in Cosmological Relativity
+dynamics_paper       | JanzenDynamics                          | Why the cut bends: the dynamics of the de Sitter cut, the confined gravitational wave, and the generative boundary of the slicing operator
+algebroid_paper      | JanzenAlgebroid                         | General relativity's constraint algebra as the symmetric-space structure of a de~Sitter substrate: the action Lie algebroid of the symmetry-reducible sector   # plain 'de Sitter' per P12's own title
+boundary_paper       | JanzenBoundary                          | The de Sitter substrate and the Standard Model: a geometric boundary on what one maximally-symmetric Lorentzian substrate's isometry does and does not force
+matter_sector_paper  | JanzenMatter                            | The fermion sector of Cosmological Relativity: three chiral generations from the maximally-symmetric slicing structure
+CR_cosmology         | JanzenCRcosmology, JanzenCosmology      | The cosmology of Cosmological Relativity: the expansion history from causal reassignment on a de~Sitter background  # NOTE: P15's real title uses de~Sitter (tilde). P8/P12/P13 use plain 'de Sitter'. Match each paper's own \title{} exactly., the cosmogenesis seam, and the scalar perturbation sector
+cosmogenesis_paper   | JanzenCosmogenesis                      | Cosmogenesis: the Big Bang as a synthesis of Cosmological Relativity's deductively forced consequences, and the primordial light-element abundances it produces
+geometric_core_paper | JanzenGeometricCore                     | Reached through the imaginary, real by construction: the maximally symmetric substrate as the geometric--ontological core   # NOTE: all 15 citing papers truncate here; this is the corpus convention, not drift
+
+# NOTE on p0 (geometric_core_paper): it uses a short-title convention in its own bibliography
+# (``The shadow of existence'' (P6)) with quotes rather than \emph{}. Standardising it to \emph{}
+# full titles is a deliberate change to that paper's house style — applied, for corpus consistency.

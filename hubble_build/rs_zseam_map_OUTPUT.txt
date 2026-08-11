@@ -1,0 +1,23 @@
+=== CALIBRATION (machinery sanity) ===
+standard LCDM, radiation in H, baryon-loaded c_s, ztop=1e5: r_s =  142.17 Mpc  (obs ~144-147)
+standard LCDM, radiation in H, c_s=c/sqrt3,    ztop=1e5: r_s =  159.54 Mpc
+
+=== CR rate (NO radiation), c_s=c/sqrt3 — the chimera and the z_seam map ===
+CR rate, c_s=c/sqrt3, ztop=1e6 (to beginning a->0):   r_s =  267.93 Mpc  <- the +74% balloon
+CR rate, c_s=c/sqrt3, ztop=z_rec (seam=recomb):       r_s =  0.0000 Mpc  <- ~0, must inherit from collapse side
+
+  to hit r_s= 147.0 Mpc (c_s=c/sqrt3, CR rate): z_seam =     4948
+  to hit r_s= 144.0 Mpc (c_s=c/sqrt3, CR rate): z_seam =     4728
+  to hit r_s= 133.0 Mpc (c_s=c/sqrt3, CR rate): z_seam =     4033
+
+  r_s(z_seam), CR rate, c_s=c/sqrt3:
+    z_seam=    1200:  r_s=  13.02 Mpc
+    z_seam=    1500:  r_s=  40.88 Mpc
+    z_seam=    2000:  r_s=  72.50 Mpc
+    z_seam=    3000:  r_s= 110.03 Mpc
+    z_seam=    3400:  r_s= 120.16 Mpc
+    z_seam=    4000:  r_s= 132.40 Mpc
+    z_seam=    4700:  r_s= 143.61 Mpc
+    z_seam=    6000:  r_s= 158.95 Mpc
+    z_seam=   10000:  r_s= 185.57 Mpc
+    z_seam=  100000:  r_s= 248.14 Mpc

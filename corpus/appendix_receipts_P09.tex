@@ -1,0 +1,52 @@
+\clearpage
+\section*{Appendix R\quad Computational Receipts}\label{app:receipts}
+\addcontentsline{toc}{section}{Appendix R: Computational Receipts}
+\small\noindent Each computation marked \rcptmarker\ in the text is verified by a runnable receipt in the \texttt{receipts/} directory that ships with this work; status \textsf{OK} = verified (traced, run, output matches the claim). This appendix is generated from the receipt index, not maintained by hand.\par\medskip
+\begingroup\renewcommand{\arraystretch}{1.25}
+\begin{description}
+\item[\label{rcpt:P09_ppwave_typeN}\texttt{P09\_ppwave\_typeN}]\hfill\textsf{[OK]}\\
+\textit{prop:radiative} \ (pp-wave ds\textasciicircum{}2=H du\textasciicircum{}2-2dudv+dx\textasciicircum{}2+dy\textasciicircum{}2 is vacuum iff H harmonic; Weyl!=0 but all scalar invariants vanish = Petrov TYPE N (radiative, I=J=0); NOT a symmetric cut (the range's boundary)). 
+\emph{Computes:} Ricci derived (R\_uu=-(1/2)(H\_xx+H\_yy)); R\_uxux!=0; Kretschmann=0 (VSI); Type N off computed Weil+Kret (not O, not D)
+ \emph{Bound:} radiative types absent from the range
+\ \emph{Run:} \texttt{python3 receipts/P09\_range\_paper/P09\_ppwave\_typeN.py}
+\item[\label{rcpt:P09_bianchiI_typeI}\texttt{P09\_bianchiI\_typeI}]\hfill\textsf{[OK]}\\
+\textit{prop:typeI} \ (generic vacuum-Lambda Bianchi-I (a\_i=sinh(3t)\textasciicircum{}\{1/3\}tanh(3t/2)\textasciicircum{}\{C\_i/3\}, distinct C\_i) is Petrov TYPE I: electric Weyl has 3 distinct eigenvalues (I\textasciicircum{}3!=27J\textasciicircum{}2)). 
+\emph{Computes:} numeric GR pipeline; R\textasciicircum{}mu\_nu=3 delta (vacuum-Lambda); electric Weyl traceless, 3 distinct eigenvalues; speciality varies with t; control axisymmetric (2,-1,-1)=Type D
+ \emph{Bound:} algebraic type no constraint on the range
+\ \emph{Run:} \texttt{python3 receipts/P09\_range\_paper/P09\_bianchiI\_typeI.py}
+\item[\label{rcpt:P09_kerr_deSitter}\texttt{P09\_kerr\_deSitter}]\hfill\textsf{[OK]}\\
+\textit{prop:kerr} \ (Kerr-de Sitter is vacuum-Lambda (R\textasciicircum{}mu\_nu=Lambda delta, Lambda=3/a\textasciicircum{}2) on the substrate; Delta\_r=r\textasciicircum{}2 f\_SdS+a\textasciicircum{}2 f\_dS; a->0 -> SdS; M->0 -> maximally symmetric (Weyl-flat)). 
+\emph{Computes:} numeric Ricci=Lambda delta at 3 (r,theta) (resid 3.5e-6); Delta\_r decomposition symbolic; M->0 Weyl->0 vs M!=0 Weyl!=0
+ \emph{Bound:} J=Ma/Xi\textasciicircum{}2 (Komar) stated not computed here
+\ \emph{Run:} \texttt{python3 receipts/P09\_range\_paper/P09\_kerr\_deSitter.py}
+\item[\label{rcpt:P09_typeD_quartics}\texttt{P09\_typeD\_quartics}]\hfill\textsf{[OK]}\\
+\textit{thm:pd} \ (separable Carter cut is vacuum-Lambda IFF structure functions are the quartics (Dr=-L/3 r\textasciicircum{}4+c2 r\textasciicircum{}2+c1 r+c0, Dp=-L/3 p\textasciicircum{}4-c2 p\textasciicircum{}2+d1 p+c0): leading -L/3, shared c0, opposite c2 = Type-D Kerr-NUT-(A)dS). 
+\emph{Computes:} numeric R\textasciicircum{}mu\_nu=Lambda delta for the quartics; 3 only-if controls (extra r\textasciicircum{}3, mismatched c0, flipped c2) each break vacuum
+ \emph{Bound:} the iff, both directions
+\ \emph{Run:} \texttt{python3 receipts/P09\_range\_paper/P09\_typeD\_quartics.py}
+\item[\label{rcpt:P09_carter_killing}\texttt{P09\_carter\_killing}]\hfill\textsf{[OK]}\\
+\textit{cor:carter} \ (the vacuum separation Dr''+Dp''=-4L(r\textasciicircum{}2+p\textasciicircum{}2) splits of its own accord; the separation constant c2 (opposite in Dr,Dp) is the Carter constant = a genuine irreducible Killing tensor K=p\textasciicircum{}2 g\textasciicircum{}(r)-r\textasciicircum{}2 g\textasciicircum{}(p) with grad\_(a K\_bc)=0). 
+\emph{Computes:} symbolic separation + constant; numeric Killing eqn (\textasciitilde{}1e-8); K irreducible; wrong-sign control fails
+ \emph{Bound:} the substrate's hidden symmetry, forced by vacuum
+\ \emph{Run:} \texttt{python3 receipts/P09\_range\_paper/P09\_carter\_killing.py}
+\item[\label{rcpt:P09_ks_vacuum}\texttt{P09\_ks\_vacuum}]\hfill\textsf{[OK]}\\
+\textit{prop:ksvac} \ (**!! MARKED c54.161: the printed chain rule for Y'/Y is the self-comparison simplify(YpY - sqrtnf/r)==0**, and YpY was assigned that same expression one line earlier, so the first conjunct tests the interpreter; only the second has content. KS vacuum kernel = SdS interior: Y=r, X=sqrt(-f), (dr/dtau)\textasciicircum{}2=-f substituted into the Kantowski-Sachs stress-energy gives rho=p\_chi=p\_perp=0). 
+\emph{Computes:} symbolic: the 3 stress-energy components vanish for the SdS interior; control X=const breaks it
+ \emph{Bound:} SdS is the vacuum member of the homogeneous class
+\ \emph{Run:} \texttt{python3 receipts/P09\_range\_paper/P09\_ks\_vacuum.py}
+\item[\label{rcpt:K7_range_is_essential_image}\texttt{K7\_range\_is\_essential\_image}]\hfill\textsf{[OK]}\\
+\textit{---} \ (K7 --- IS P9's RANGE THE ORBIT SPACE OF K1's ACTION GROUPOID? CONFIRMATION 2 --- P9 read at source FIRST, and it turns out to be speaking the language already: NECESSARY (prop:bound): 'a geometry swept by H <= SO(4,1) INHERITS H, so every reachable geometry's isometry group CONTAINS A SWEEP-SUBGROUP of the substrate's.' SUFFICIENT (prop:surj): 'the operator's four data supply exactly the functions the general H-invariant...). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P09\_range\_paper/K7\_range\_is\_essential\_image.py}
+\item[\label{rcpt:V1_carter_chain}\texttt{V1\_carter\_chain}]\hfill\textsf{[OK]}\\
+\textit{rem:carter-chain} \ (V1 --- IS THE CARTER-CONSTANT CLAIM A NOETHER, KILLING-TENSOR, OR SEPARABILITY STATEMENT? CONFIRMATION 2 --- P9 read whole, and the ledger's premise ('the corpus's wording does not distinguish them') is WRONG. P9 distinguishes them explicitly and cites the right sources. What it has:). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P09\_range\_paper/V1\_carter\_chain.py}
+\item[\label{rcpt:P09_the_wall_is_not_the_loss_of_symmetry}\texttt{P09\_the\_wall\_is\_not\_the\_loss\_of\_symmetry}]\hfill\textsf{[OK]}\\
+\textit{cor:wall / cor:radiation / thm:range \ensuremath{\cdot} sec:chirality} \ (**THE RANGE'S BOUNDARY IS NOT THE LOSS OF CONTINUOUS SYMMETRY, AND THE PAPER'S OWN BEYOND-THE-WALL EXEMPLAR IS THE WITNESS.** ** THE TYPE-N PLANE WAVE HAS FIVE KILLING VECTORS AND IS VACUUM ** -- more continuous symmetry than Schwarzschild's four, and no matter at all -- so BOTH readings cor:wall gives of the boundary are falsified by the geometry cor:radiation sends beyond it. DERIVED HERE: (1) for ds\textasciicircum{}2 = 2 du dv + H du\textasciicircum{}2 + dx\textasciicircum{}2 + dy\textasciicircum{}2 the ansatz xi\_f = f\textasciicircum{}a(u) d\_a - (fdot.x) d\_v is Killing **iff fdd = A f, A = [[h+,hx],[hx,-h+]]**, every other component of Lie\_xi g vanishing identically -- a 4-dim solution space plus d\_v = FIVE, checked on a TURNING (chiral) profile with Ricci = 0; (2) **[xi\_f, xi\_g] = W(f,g) d\_v with dW/du = 0 on shell -> the algebra is the 5-dim HEISENBERG algebra**, derived algebra the 1-dim centre; (3) **the orbits are 3-dim and NULL** (no Killing vector has a d\_u component; g(d\_v,d\_v) = 0); (4) **so(5,1)'s unipotent radical is ABELIAN** (K\_i = M\_0i + M\_5i commute pairwise, K\textasciicircum{}3 = 0), so no Heisenberg algebra of unipotent isometries embeds -- the wave's FULL algebra is not a sweep; (5) **but its abelian R\textasciicircum{}3 subalgebras DO embed**, so the plane wave SATISFIES thm:bound/thm:range's stated condition while cor:radiation places it beyond the wall -- **read literally the two are inconsistent**; (6) **the repair is thm:bound's OWN second clause**: the boundary is the loss of a symmetry whose ORBITS CAN CARRY A LEAF, the two criteria coinciding across every class the paper fills and coming apart exactly on the null orbits; (7) **and the chirality consequence runs in the construction's favour**: on the Gowdy form d\_x, d\_y are Killing and spacelike and the reflection x -> -x is an isometry iff g\_xy = 0, i.e. iff POLARIZED -- so the unpolarized turning wave is chiral and lies IN the reachable sector by P9's own ground. **Gravitational chirality is achieved INSIDE the range.** [borrowed from P9 / P11]). 
+\emph{Computes:} the Killing condition derived symbolically and reduced to the oscillator system; Ricci asserted zero on the turning profile; the Wronskian asserted constant on shell; the orbit asserted null; so(5,1) asserted 15-dimensional with the four K\_i asserted pairwise-commuting and nilpotent; and the Gowdy reflection condition asserted equivalent to Q = 0
+ \emph{Bound:} ** THIS CHANGES A CHARACTERISATION, NOT A RESULT. ** No reachable class, filling, or vacuum kernel moves; the Z\_2 identification (graviton helicity and fermion gamma\textasciicircum{}5 as one orientation parity) is P11's and is untouched. **And the first chiral member of the range is NAMED, not built** -- the cut constructed exactly is the polarized, achiral one
+\ \emph{Run:} \texttt{python3 receipts/P09\_range\_paper/P09\_the\_wall\_is\_not\_the\_loss\_of\_symmetry.py}
+\end{description}\endgroup

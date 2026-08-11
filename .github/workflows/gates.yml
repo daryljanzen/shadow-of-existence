@@ -1,0 +1,74 @@
+# The gate suite, TIERED -- because the suite is not uniform in cost and
+# pretending otherwise produces a pipeline nobody waits for.
+#
+# ** An instrument that cannot finish inside the harness that calls it will be
+#    skipped by every caller who does not know that. **  (r2394, learned when
+#    run_all_receipts died twice at a tool execution limit.)
+name: gates
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 3 * * *'      # nightly: the compile and heavy tiers
+
+jobs:
+  fast:
+    name: fast — registers, views, IDs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install numpy scipy sympy mpmath
+      - name: the register and view checks
+        run: |
+          set -e
+          python3 scripts/classify_documents.py --check
+          python3 scripts/regen_teed_up.py --check
+          python3 scripts/regen_burn_down.py --check
+          python3 scripts/id_space_census.py --check
+          python3 scripts/regen_map_status.py --check
+          python3 scripts/build_fork_span.py --check
+          python3 scripts/reapply_annotations.py --check
+      - name: the text gates
+        run: |
+          set -e
+          for g in check_id_bands check_kills check_burndown check_supersession \
+                   check_grains check_changelog check_depmatrix check_arcs \
+                   check_paststate check_receipts check_withdrawn check_queues \
+                   check_citations check_absorption check_receipt_asserts; do
+            echo "── $g"; python3 corpus/$g.py
+          done
+      - name: the hollow-assertion lint
+        run: python3 scripts/lint_assertions.py
+
+  compile:
+    name: compile — 17 papers through LaTeX
+    if: github.ref == 'refs/heads/main' || github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { lfs: true }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: sudo apt-get update && sudo apt-get install -y texlive-full latexmk
+      - run: python3 corpus/check_compile.py
+
+  receipts:
+    name: heavy — every receipt run where it is registered
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      # ** THE GAIN THAT ONLY CI CAN GIVE. **  Ten receipts import camb/pynucastro,
+      # declared by name in check_receipts_run because the observer container carries
+      # neither.  Here they can actually run -- so the fork's own rule, "a registered
+      # receipt that does not run where it is registered is not a receipt", becomes
+      # checkable EVERYWHERE rather than only where the fork sits.
+      - run: pip install numpy scipy sympy mpmath camb pynucastro
+      - run: python3 scripts/run_all_receipts.py --jobs 4 --timeout 300 | tee receipts/RUN_RESULT.txt
+      - run: python3 corpus/check_receipts_run.py

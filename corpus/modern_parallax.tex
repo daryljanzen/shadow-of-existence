@@ -1,0 +1,417 @@
+\documentclass[11pt,a4paper]{article}
+
+% [†ONT-SIM] EMPIRICAL-FOLIATION / SIMULTANEITY FORCING — this paper is the HOME (ONTOLOGY_FOUNDATION_INDEX.md §1d).
+%   Masthead / established here (the empirical hinge of the programme): the cosmological redshift is the
+%   path integral of the expansion rate, so the CMB monopole isotropy is a DIRECT MEASUREMENT of uniform
+%   expansion (isotropy-from-homogeneity is a category error); a matter-tracking expansion would scatter
+%   redshift ~10^-3 vs observed <=3e-6 (excluded by 3 orders) => the cosmic foliation is MEASURED, not
+%   assumed ("the modern parallax"). Read ontologically (thm:augmentation): the foliation is the lapse
+%   (the objective present), synchrony's relativity the shift; reading synchrony-relativity as
+%   no-objective-present is a MODAL FALLACY the isotropy falsifies. Synchrony relative; simultaneity
+%   ABSOLUTE and measured. This is the empirical rung of P7's cosmic-time commitment and p0's maximal
+%   symmetry, the measured counterpart of the Tier-C essays. Do not concede the relational "no preferred
+%   frame / no objective now" default — P4 falsified it.
+%
+% [†ONT-EPI] The modal fallacy this paper falsifies is established as a theorem (thm:modal) in the
+%   companion epistemic paper (P6), held whole in ONTOLOGY_FOUNDATION_INDEX.md §1g — which also
+%   licenses the method's warrant (R2 / least-arbitrariness) this paper leans on, and marks the
+%   boundary: self-consistency is not soundness. P6 supplies the LOGIC; this paper supplies the
+%   non-local MEASUREMENT that decides it. Per P6 §place, this paper is where the programme first
+%   leans on the method.
+%
+% =====================================================================
+% SPINE POSITION — P4 (r620 physics-first P4↔P5 swap; was P5 at r531).
+%   [r620 note] Current canonical numbering: this paper is P4
+%   (modern_parallax), the empirical/physics-first foundation, AHEAD OF
+%   P5 groupoid_paper (whose algebraic content it grounds) and P6
+%   shadow_of_existence, P7 CR_framework. The swap lands the dependency
+%   the groupoid always carried (it supplies "the algebraic content of the
+%   augmentation the foundation establishes"): the empirical forcing now
+%   precedes its algebra. Spine flexible — see OPEN_PROBLEMS_MAP.
+%   The narrative below predates the r531 renumber and is retained as
+%   provenance only — all P-numbers in it are historical, not current.
+%   Citations are key-based; authoritative numbering: CORPUS_MAP.md.
+%
+% This paper then held the P7 slot, ahead of the cosmology paper
+% (CR_flatLCDM_v2.tex, JanzenCRframework, then P8). It is the empirical-and-
+% ontological FOUNDATION that opens the dynamic half: the redshift-isotropy
+% floor forcing cosmic time and uniform expansion. Citations are key-based,
+% so the renumber breaks no cross-reference.
+%
+% EXECUTED (r389, the planned P7 upgrade): this paper now carries the
+% logical/categorical/ontological closure of CR's adjudicated distinctions
+% — occurrence/existence (the lapse) and the relativity of synchrony vs the
+% absoluteness of simultaneity (the shift) — as a structural THEOREM in
+% sec:establishes (thm:augmentation): CR is the NECESSARY AND SUFFICIENT
+% augmentation of GR for a coherent formal description of an existing,
+% evolving world — the completion of the two-part Newton--Einstein formalism
+% the standard reading left fused. Dug from the ontology resources
+% (conceptual-boundary essays + canonical_time). The theorem is dropped here,
+% before P8 formalizes; the forced geometric details (dS substrate, the cut,
+% the bend) are the back half's, the minimal-structure uniqueness the book's.
+% Green-Wald is QUARANTINED and assessed AGAINST the theorem (not folded in):
+% it presupposes the foliation the floor forces, so the backreaction dispute
+% (Buchert et al vs Green-Wald) is settled structurally from outside.
+% The body's "companion cosmology paper" framing (it currently reads as
+% following the cosmology) is reconciled to the foundation-first order in
+% the knows-itself pass, not here. Abstract/intro/title still frame at the
+% empirical level — elevating them to announce the theorem is a register call.
+%
+% CANON NOTE — ontology live. CR is ontological: the real 3-space (the layer)
+% EXISTS and advances in cosmic time; the 4-manifold records what happens.
+% "Uniform expansion" is the layer's advance, not a property of a block.
+% The cosmic foliation established here is a MEASURED feature of the world,
+% not a coordinate convenience.
+%
+% REFERENCES: the load-bearing standard-model claims are sourced from primary
+% literature -- Hubble 1929; Robertson 1933/1935; Walker 1937; North 1965;
+% Eddington 1920; Friedmann 1922; Lemaitre 1927; Sachs--Wolfe 1967; Ellis 2006;
+% Barrett--Clarkson 2000; Clarkson et al. 2010; Planck/Aghanim 2020 -- plus the
+% expansion-history tracers Eisenstein 2005 (BAO standard ruler) and
+% Riess 1998 + Perlmutter 1999 (SNe Ia standard candles). Older entries from
+% BST refs.bib; Walker 1937, Eisenstein 2005, Riess 1998, Perlmutter 1999
+% verified at source this revision.
+% =====================================================================
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{receipts}  % in-place receipt citations -> Appendix R
+\usepackage{caption}
+\newtheorem{theorem}{Theorem}
+
+\title{The modern parallax:\\
+\large the redshift-isotropy floor, the empirical forcing of cosmic time and uniform expansion,\\
+and the measured resolution of the relativity of simultaneity}
+\author{Daryl Janzen\\
+\small Department of Physics and Engineering Physics\\
+\small University of Saskatchewan}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The standard cosmological model installs a global cosmic time, a preferred rest frame, and a spatially uniform expansion as kinematical assumptions, prior to and independent of the dynamical fit to data. We show that these assumptions are not conventions the data merely tolerate but structures the data force. The cosmological redshift is the path integral of the expansion rate, $\ln(1+z)=\int H\,dt$, so the observed anisotropy of the cosmic microwave background (CMB) separates exactly into a source term, fixed at last scattering, and a cumulative term, set by the integrated expansion along each line of sight. Granted even perfect homogeneity at last scattering, the observed isotropy of the monopole is then a direct measurement of uniform expansion---so the common supposition that the isotropy is supplied by homogeneity at decoupling is a category error. We make the alternative quantitative: were the expansion rate to track the inhomogeneous matter distribution region by region, with no single global scale factor, the accumulated redshift would scatter by $\sim\!10^{-3}$ across the sky, against an observed $\lesssim 3\times 10^{-6}$---an exclusion by three orders of magnitude. The effect is distinct from the Sachs--Wolfe anisotropies and not a re-derivation of them: when lumpiness clusters upon a single background, a photon's gravitational redshift descending into a potential well is undone climbing out, so the contributions \emph{telescope} along the path and leave no $\sqrt{N}$ accumulation, whereas a genuine differential expansion accumulates because there is nothing to cancel against---so the observed isotropy selects the telescoping picture over the accumulating one. Every choice in the estimate biases it downward, so the number is a floor. A differential programme can evade it only by requiring the local rates to average to a common value in every direction, which is itself a global uniform expansion in a cosmic time---the very structure such programmes set out to dispense with. What is excluded is an inhomogeneous expansion \emph{rate}; the matter lumpiness is untouched, the density being the bend of the spatial cut, so uniform expansion and lumpy matter are consistent. The remaining, finely tuned, observer-centred escape is closed by the Copernican principle together with the independently measured isotropy of the expansion history. What the exclusion selects is a global, time-ordered expansion---the cosmic foliation made dynamical---which is logically prior to the notions of space, isotropy, and homogeneity the model otherwise assumes. The same datum thus establishes, from the bottom up, the cosmic time, the uniformity of its advance, and---within the observable region, under the Copernican principle---the maximal symmetry of its slices. Read ontologically, this measured foliation is the \emph{lapse} of the $3{+}1$ split---an objective rate of advance, the cosmic present---while the relativity of synchrony is the \emph{shift}; the century-old reading of synchrony's relativity as the absence of any objective present is thereby a modal fallacy, which the measured isotropy falsifies outright. We prove that fixing the physical foliation and reading it so is both necessary and sufficient for a coherent formal description of an existing, evolving world---an augmentation of general relativity that changes none of its equations, its necessary half here \emph{measured}. \emph{We also set down the history the measurement closes.} The structure this datum forces was posited by Einstein in February 1917---explicitly ``against the spirit of relativity'', and on the empirical ground that stellar proper motions are small compared with $c$---countered a month later by de~Sitter, who placed the choice among candidate universes outside physical argument altogether and pressed as his sharpest objection that in Einstein's solution ``time has a separate position''; and defended in 1920 by Eddington on geometric grounds, in the declared absence of any experimental knowledge on cosmical scales. \emph{Einstein then went nearly silent on cosmology for the rest of his life}, and never addressed how the cosmic time his own assumption distinguished stands to the relativity of simultaneity. \emph{The assumption was correct}, and the objection was correct as a description of the structure though not as a reason to reject it. This is the empirical counterpart of the conceptual results of the companion papers~\cite{JanzenCRframework, JanzenBHcausality}: as stellar parallax converted the Earth's motion from an interpretive option into a measured fact, the isotropy of the cosmological redshift converts the cosmic foliation from a modelling convenience into a measured feature of the world.
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+
+The standard model of cosmology is assembled in a definite order~\cite{Robertson1933, Robertson1935, Walker1937, north1965}. One first posits that the average rest frame of matter---made manifest in the redshift--distance relation~\cite{Hubble1929}---defines a coherent cosmic time, the one direction in which the four-dimensional world is, in Eddington's phrase, not curved~\cite{Eddington1920}; then that space is the family of hypersurfaces orthogonal to it; then that this space is isotropic; then that it is homogeneous; and only last that its geometry evolves by a scale factor $a(t)$ whose form the field equations fix through the energy content~\cite{Friedmann1922, Lemaitre1927}. The first four are kinematical posits; the dynamical fit comes fifth and last. The standard presentation treats the kinematical posits as idealizations vindicated after the fact by the success of the fit---a global cosmic time, a preferred rest frame, and a uniform expansion accepted because the model built on them works.
+
+The claim of this paper is that observation forces those kinematical posits directly, and not through the success of the dynamical fit. The forcing is a falsification, not a confirmation: the one coherent alternative to the posits is given its observable consequence and rejected by the data. Where the standard argument runs only the affirmative half of the scientific loop---the model is consistent with uniform expansion---we run the half that decides, deriving what the sky would look like if the posits failed and finding that it does not look like that, by three orders of magnitude. The decisive observable is the isotropy of the CMB monopole redshift, read correctly: not as a property inherited from the emitting surface, but as the accumulated record of the expansion the radiation traversed. That this is a distinct effect from the Sachs--Wolfe anisotropies, and not a re-derivation of them, is the crux and is established in \S\ref{sec:floor}: lumpiness clustering upon a single background carries a metric potential whose contributions \emph{telescope} along a photon's path---the redshift descending into a well undone climbing out---leaving no accumulation, whereas a differential expansion accumulates because there is nothing to cancel against. This is the empirical ground of the level the cosmology papers run their observable expansion on---the foliation stacking rate, read leftward from the geometry with the content's lumpiness read off, not summed into, the rate~\cite{JanzenCosmogenesis}: the alternative the isotropy rejects, a rate tracking the (lumpy, radiation-carrying) matter content, is exactly the mis-reading that would source that rate from the content, and the sky forbids it by three orders of magnitude. The two ontological readings this paper pries apart (\S\ref{sec:establishes}) are the same two the cosmology carries as computational levels: the \emph{lapse}---the objective, measured rate of cosmic advance, simultaneity absolute---is the foliation stacking rate the observable expansion rides, and the \emph{shift}---the relativity of synchrony, untouched convention---is the freedom in the projection through which that expansion is read as distance and redshift. So the discriminator this paper establishes, that the rate is forced while the content is not, is precisely what fixes, downstream, that a cosmological rate is read off the geometry and never sourced from the plasma it carries.
+
+This is the modern counterpart of a familiar episode. Before Bessel, whether the Earth moved was, on a strict reading, an interpretive choice among empirically equivalent pictures; stellar parallax converted it into a measured fact~\cite{Bessel1838}, and the heliocentric frame from an option into the one the measurement singled out~\cite{JanzenFortress}. A purely relational reading of relativity holds, by the same token, that a preferred cosmic rest frame could never be observable even if it existed. The CMB is the measurement that overturns that expectation: the universe furnished, through the physics that produced the background and the geometry of its uniform expansion, a direct measurement of our motion with respect to the cosmic rest frame, and with it of the cosmic time that frame carries~\cite{Janzen2025, JanzenWildGoose}. What follows makes that ``modern parallax'' quantitative.
+
+The companion cosmology paper~\cite{JanzenCRframework} takes a real, global cosmic time as an ontological commitment of Cosmological Relativity---a structure general relativity's formalism admits but does not supply. This paper shows that the commitment is not merely admissible but empirically forced. It is the empirical hinge of the programme: where the general result that no exterior temporal slicing can record a finite-time completion of gravitational collapse~\cite{JanzenBHcausality} stands on causal structure alone and needs none of the cosmological evidence, the present result shows that the preferred slicing those arguments concern is not one option among many but the one the universe has let us measure. We stress the register at the outset, as the companion papers do: nothing here modifies general relativity. The equations are unchanged. What is established is which of the formally available foliations is the physical one---and, read ontologically (\S\ref{sec:establishes}, Theorem~\ref{thm:augmentation}), that this physical foliation is the \emph{lapse}, the objective cosmic present, while the relativity of synchrony is the \emph{shift}: the measured isotropy thereby settles the century-old question the relativity of simultaneity left open---synchrony relative, simultaneity absolute---exposing the reading that denied an objective present as a modal fallacy, and fixing this reading as the necessary and sufficient augmentation of general relativity for a coherent description of an existing, evolving world.
+
+\section{The two contributions to the observed anisotropy}\label{sec:decomp}
+
+The redshift along a line of sight is the total expansion the photon underwent, $1+z = a_{\mathrm{obs}}/a_{\mathrm{em}}$, equivalently $\ln(1+z) = \int H\,dt$ integrated along the ray: the cosmological redshift simply \emph{is} the accumulated expansion in that direction, a path integral and not a property of the source. The observed temperature is $T_{\mathrm{obs}}(\hat n) = T_{\mathrm{em}}(\hat n)/(1+z(\hat n))$, so the observed anisotropy separates exactly into two physically distinct contributions,
+\begin{equation}
+\frac{\delta T_{\mathrm{obs}}}{T_{\mathrm{obs}}} = \frac{\delta T_{\mathrm{em}}}{T_{\mathrm{em}}} \;-\; \delta\!\!\int H\,dt ,
+\label{eq:decomp}
+\end{equation}
+a \emph{source} term fixed by conditions on the last-scattering surface, and a \emph{cumulative} term set by the directional variation of the integrated expansion rate over the whole path. The two are independent: the value of one constrains the other not at all. Observed isotropy therefore requires \emph{both} to be small---uniformity at decoupling \emph{and} uniformity of the subsequent expansion---and these are precisely the two kinematical assumptions the standard model installs by hand, homogeneity at decoupling zeroing the first term and a single direction-independent scale factor $a(t)$ zeroing the second.
+
+The decisive consequence is seen by granting the common reading its strongest form. Suppose the last-scattering surface were perfectly homogeneous, $\delta T_{\mathrm{em}} = 0$ exactly. Then \eqref{eq:decomp} reads $\delta T_{\mathrm{obs}}/T_{\mathrm{obs}} = -\,\delta\!\int H\,dt$, with nothing left over: the entire observed isotropy is the statement that the integrated expansion was the same in every direction. Homogeneity at the source does not \emph{supply} the isotropy; granted perfectly, it removes one term and leaves the observed isotropy as a \emph{direct measurement of uniform expansion}. The widespread supposition that the monopole's isotropy is delivered by homogeneity at last scattering, full stop, is thus a category error---it credits the source for a fact about the \emph{observed} radiation that resides entirely in the intervening expansion. What the remainder of this paper does is put a number to the cumulative term under the one coherent alternative to a global $a(t)$, and read that number against the data.
+
+\section{The redshift-isotropy floor}\label{sec:floor}
+
+\subsection{The hypothesis under test}
+
+The hypothesis the floor tests is that the large-scale expansion rate tracks the matter lumpiness region by region---that the expansion follows the local density, with no single global scale factor. This is the operative reading of the backreaction and timescape programmes~\cite{Buchert2000, Wiltshire2007}; we make it quantitative through the separate-universe correspondence, in which a spherical region of uniform overdensity evolves as a closed Friedmann patch.
+
+To linear order the separate-universe correspondence assigns a region of fractional matter contrast $\delta \equiv \delta\rho/\rho$ a fractional deficit in its local scale factor. Matter conservation gives $\rho \propto a^{-3}$, hence $d\rho/\rho = -3\,da/a$, so
+\begin{equation}
+\frac{\delta a}{a} = -\frac{1}{3}\,\delta .
+\label{eq:sepuniv}
+\end{equation}
+An overdense region has expanded less; an underdense region more.
+
+\subsection{Accumulation along the line of sight}
+
+The observed CMB temperature in a given direction is $T_{\mathrm{obs}} = T_{\mathrm{lss}}/(1+z)$ with $1+z = a_{\mathrm{obs}}/a_{\mathrm{em}}$ the total expansion factor along that line of sight, so to the order kept $|\delta T/T| = |\delta a/a|$: the temperature contrast between directions is the fractional contrast in accumulated expansion. A CMB photon traverses many regions of differing density; modelling its path as a tube binned into $N$ statistically independent cells of comoving size $R = 8\,h^{-1}\,\mathrm{Mpc}$, each carrying rms contrast $\sigma_8$, the accumulated fractional redshift contrast is the path \emph{mean} of the per-cell contrasts. By the central limit theorem its standard deviation is
+\begin{equation}
+\sigma_{\mathrm{path}} = \frac{\sigma_{8,\mathrm{eff}}}{3\sqrt{N}},
+\label{eq:floor}
+\end{equation}
+the factor $1/3$ from~\eqref{eq:sepuniv} and the $1/\sqrt{N}$ the averaging-down of independent contributions---a path mean, not a sum.
+
+\subsection{The number, and why it is a floor}
+
+The effective contrast weights $\sigma_8$ by its linear growth along the path, $\sigma_{8,\mathrm{eff}} = \int \sigma_8(z)\,w(z)\,dz \big/ \int w(z)\,dz$ with $\sigma_8(z) = \sigma_8(0)\,D(z)$ and $w = H^{-1}$; for $\Omega_m = 0.315$, $\sigma_8(0) = 0.8$ and $z_{\mathrm{lss}} = 1089$~\cite{Aghanim2020} this gives $\sigma_{8,\mathrm{eff}} \approx 0.285$. The comoving distance to last scattering is $d_{\mathrm{lss}} = (c/H_0)\int_0^{z_{\mathrm{lss}}} dz/E(z) \approx 9.4\,h^{-1}\,\mathrm{Gpc}$, so $N = d_{\mathrm{lss}}/R \approx 1174$. Equation~\eqref{eq:floor} then gives
+\begin{equation}
+\sigma_{\mathrm{path}} \approx 2.8\times 10^{-3}.
+\label{eq:value}
+\end{equation}
+
+Every choice in this estimate biases it \emph{downward}, so the result is a genuine floor:
+\begin{itemize}
+\item the full matter coefficient $1/3$ is retained (dropping it would treble the estimate);
+\item growth-weighting suppresses $\sigma_8$ at high redshift ($\sigma_{8,\mathrm{eff}} = 0.285$ against $\sigma_8(0) = 0.8$), where a constant $\sigma_8$ along the path would give an estimate $\sim\!2.8\times$ larger;
+\item treating the cells as independent \emph{maximizes} $N$: gravitational clustering produces positive correlations along the line of sight, which can only increase the variance of the path mean, so the no-correlation value is a strict lower bound (coherence over basins of attraction at $\sim\!138\,h^{-1}\,\mathrm{Mpc}$ would lower the effective $N$ to $\sim\!68$ and raise the estimate $\sim\!4\times$);
+\item the realized void/wall density contrast on the scales the programmes invoke is of order unity, well above $\sigma_8$ at $8\,h^{-1}\,\mathrm{Mpc}$.
+\end{itemize}
+
+\subsection{The floor against the data}
+
+The monopole redshift is isotropic---after removal of the dipole, Galactic foregrounds, and the standard secondary anisotropies---to $\lesssim 3\times 10^{-6}$~\cite{Aghanim2020}.\rcpt{P04_redshift_isotropy_floor} The floor~\eqref{eq:value} exceeds this by some three orders of magnitude. The hypothesis that the expansion rate is locally set by the matter distribution is therefore excluded, and not marginally.
+
+It is essential that this is a distinct effect from the ordinary Sachs--Wolfe and integrated Sachs--Wolfe anisotropies~\cite{Sachs1967}, not a re-derivation of them. In the uniform-expansion picture the matter lumpiness is clustering upon a single background $a(t)$, carried by a metric potential $\Phi$; a photon's gravitational redshift descending into a potential well is undone climbing out, so the contributions \emph{telescope} along the path, leaving the endpoint potential ($\sim\!10^{-5}$) and the small integrated term, with no $\sqrt{N}$ accumulation. The floor computed here is the contrary case---a genuine differential \emph{expansion}, a cosmological redshift that accumulates because there is nothing to cancel against. The observed anisotropy ($\sim\!10^{-5}$ in total, $\lesssim 3\times 10^{-6}$ once secondaries are removed) thus selects the telescoping, uniform-expansion picture over the accumulating, differential one. The isotropy of the monopole is not accounted for by large-scale statistical homogeneity---that homogeneity is fully consistent with the differential-expansion hypothesis, which would still produce the $\sim\!10^{-3}$ scatter of~\eqref{eq:value}---but by uniform expansion in a cosmic time.
+
+A differential-expansion programme can evade the floor only by requiring the local rates to average to a common value in every direction: a uniform large-scale Hubble flow. But that requirement is itself a global uniform expansion in a cosmic time, the very structure such programmes set out to dispense with; imposing it to recover the observed isotropy reinstates the cosmic rest frame and the objective simultaneity it carries. Either way, the observed isotropy of the monopole redshift forces a uniform cosmic expansion.
+
+\subsection{Uniform expansion, lumpy matter}
+
+The floor constrains the expansion \emph{rate}, not the matter content. CR's real space is locally curved and inhomogeneous---the matter density is the bend of the spatial cut off the de~Sitter vacuum profile~\cite{JanzenOperator, JanzenRange}---and that lumpiness is untouched by the argument. What is excluded is an inhomogeneous expansion rate \emph{tracking} the lumpiness: the layer advances uniformly in cosmic time while its intrinsic geometry carries the bend. Uniform expansion and lumpy matter are consistent, and only the former is at issue here.
+
+\section{What the exclusion establishes}\label{sec:establishes}
+
+The floor closes the statistical escape, and one further escape is logically available and must be closed separately. A finely tuned, spherically symmetric inhomogeneity centred on the observer would produce isotropic redshift about us with no global uniform expansion; being structured rather than statistical, it is not touched by the $\sqrt{N}$ floor. It is closed instead by the Copernican principle together with the independent isotropy of the \emph{expansion history} itself: standard rulers (baryon acoustic oscillations~\cite{Eisenstein2005}) and standard candles (Type~Ia supernovae~\cite{Riess1998, Perlmutter1999}) reconstruct the expansion along many directions and agree across the sky, so the uniformity is not the vantage artefact of a privileged centre~\cite{Ellis2006, Barrett2000, Clarkson2010}. With the statistical alternative excluded by the floor and the centred one by the Copernican step, the disjunction is exhausted: the observed isotropy forces uniform cosmic expansion.
+
+What that exclusion reaches is the point of the paper. The region the data reject is not a parameter corner but the entire class of histories lacking a single global scale factor on a single global time; to reject that class is to select a global, time-ordered expansion, which is the cosmic foliation made dynamical. And the foliation is logically prior to everything the standard model otherwise assumes---``space'' is one of its slices, ``expansion'' an ordered family of them, ``isotropy'' and ``homogeneity'' properties of a slice---none of which is even statable until the foliation is in hand. So a single datum establishes, from the bottom up, the cosmic time on which the rest stands, the uniformity of its advance, and---within the observable region and under the Copernican principle---the maximal symmetry of its slices. The model's foundational kinematics are not idealizations the data tolerate; they are what the data force, the one coherent alternative excluded.
+
+\section{The history the measurement closes}\label{sec:history}
+
+\emph{The structure this datum forces was posited, attacked, defended, and abandoned within four years, and
+the record is worth setting down because the abandonment shaped a century of practice.}
+
+Einstein's cosmological paper of February 1917 assumed, in his own words and marked as such, ``against the
+spirit of relativity'', that \emph{``there is a system of reference relatively to which matter may be looked
+upon as being permanently at rest''}~\cite{Einstein1917}. \emph{His ground was empirical}: ``the most important
+fact that we draw from experience as to the distribution of matter is that the relative velocities of the stars
+are very small as compared with the velocity of light''. In a special-relativistic world one would expect
+neighbouring bodies at velocities drawn uniformly from $(0,c)$; the observed smallness of proper motions is
+evidence that the world lines are nearly parallel, and the three-space in which they are at rest is
+distinguished. \emph{That inference is the one this paper's floor now closes at three orders of magnitude}, and
+it was drawn from stellar velocities a century before.
+
+De~Sitter's reply came one month later and countered every consideration in
+turn~\cite{deSitter1917}. The boundary conditions were dismissed as unobservable in principle and, given the
+new $\lambda$-term, achievable anyway; the world-matter Einstein thought essential was declared to ``serve no
+other purpose than to enable us to suppose it not to exist''; and the choice among the candidate
+universes was placed outside physics altogether---it ``cannot be decided by physical arguments, but must depend
+on metaphysical or philosophical considerations, in which of course also personal judgment or predilections
+will have the same influence''. \emph{And the criticism he pressed most was the one that matters here}: that in
+Einstein's solution ``time has a separate position'' from space.
+
+\emph{Three years later the same structure was defended on geometric grounds, by the relativist best placed to
+do it.} Eddington held that ``the world taken as a whole has one direction in which it is not curved; that
+direction gives a kind of absolute time distinct from space'', that relativity ``is not concerned to deny the
+possibility of an absolute time, but to deny that it is concerned in any experimental knowledge yet found'',
+and that ``it need not perturb us if the conception of absolute time turns up in a new form in a theory of
+phenomena on a cosmical scale, \emph{as to which no experimental knowledge is yet
+available}''~\cite{Eddington1920}. The time in question is that of ``a being coextensive with the world'',
+which is the foliation. \emph{He names the absence of the discriminator, and selects anyway.}
+
+\emph{What followed was silence.} The 1917 paper was the last in which Einstein published the details of his
+cosmological considerations. After Hubble's result he wrote some five pages on the problem in two short
+articles, the second co-authored with de~Sitter, while de~Sitter published volumes; and his later rejection of
+the cosmological term shaped the expansion paradigm for the rest of the
+century~\cite{JanzenEinsteinCosmology}. \emph{He never returned to the question his own assumption raised}---how
+a cosmic time distinguished by the matter's rest frame stands to the relativity of simultaneity---and so far as
+the record shows never addressed it in print.
+
+\emph{The measurement reported above closes that arc.} What Einstein posited apologetically on stellar
+velocities, what de~Sitter placed beyond physical argument, and what Eddington defended without evidence, is
+what the redshift isotropy now forces. \emph{The assumption marked ``against the spirit of relativity'' was
+correct}, and the objection that it gave time ``a separate position'' was correct too---as a description of the
+structure, though not as a reason to reject it. \emph{We record the history because the reasoning that
+abandoned this structure is still in the field's hands}, and because a selection made in 1920 in the declared
+absence of evidence, met by a measurement in the decades after, is the pattern by which theory-choice earns its
+standing~\cite{JanzenShadowExistence}. \emph{And the parallax of this paper's title should be read with the same care the historical case
+requires.} Stellar parallax went undetected for two millennia and was read as telling against the Earth's
+motion, but before the cosmos was given depth the relevant parallax was not a conceivable measurement at
+all---the stars sat on a sphere and had no distances to be displaced against~\cite{JanzenShadowExistence}. The
+objection is post-Digges, and it is Tycho who presses it. \emph{The lesson is the one this paper's floor
+turns on}: an absent discriminator is not an absent fact, and whether a discriminator is even available is a
+question about the picture in hand rather than about the world.
+
+What the standard model installs as assumptions, the present framework derives. The cosmic-time variable was put in by hand at the outset---assumed in Einstein's 1917 cosmology~\cite{Einstein1917} and carried through Friedmann's expanding solutions~\cite{Friedmann1922} to the present model, where a single global scale factor on a single global time is the background fixed before any matter is placed upon it. That foundational structure is here forced by measurement; and in the companion framework it is derived, the expansion being the uniform advance of the cosmic foliation and the matter the bend of its spatial cut~\cite{JanzenOperator, JanzenRange}. This is the empirical motivation the title names: not a modification of general relativity, whose equations are untouched, but the measured selection of the foliation the theory admits and does not otherwise single out.
+
+What the measurement forces is the empirical half of a structural result, and the half in hand fixes the other, so it is worth stating whole. General relativity supplies a four-geometry and field equations but does not single out which of the foliations its formalism admits is the physical one---as the companion papers stress and as the present forcing makes vivid~\cite{JanzenCRframework}. The standard interpretation fills that silence by collapsing two distinctions at once: it reads the relativity of simultaneity as the absence of any objective present, and it reifies the four-manifold as a thing that exists. Each is a category error of the same family as the one corrected in \S\ref{sec:decomp}---there, crediting the source for a fact that resides in the intervening expansion; here, crediting the manifold for what the evolving world does. Pried apart, the two are the parts a coherent formal description of an existing, evolving world requires; and they are exactly the lapse and the shift of the $3{+}1$ split read ontologically---the Newtonian part, an absolute rate of advance, and the Einsteinian part, the relativity of synchrony, the formalism the standard reading had fused and a coherent description must hold apart.
+
+The relativity of \emph{synchrony} is general---a feature of relative motion, the light postulate fixing only its magnitude~\cite{JanzenWildGoose, JanzenMisconstrue}---and it is the shift, the freedom of a moving observer to tilt the slices off the comoving normal. \emph{Simultaneity} is the separate question, and to read the relativity of synchrony as the denial of an objective simultaneity is a modal fallacy, the absence of a local test mistaken for the absence of a fact---the imperative's characteristic dual, established as such in the companion epistemic paper~\cite{JanzenShadowExistence, JanzenWildGoose}. The lapse is the other part: the rate of advance of the layer that exists, what the clock measures~\cite{JanzenTrope}. To deny it---to hold the four-manifold itself the existent---is to treat occurrences as existents, which on analysis smuggles a fifth, meta-temporal dimension along which the block is supposed to ``exist,'' and is incoherent as a basic description~\cite{JanzenTrope, JanzenCanonicalTime}. The two corrections are not optional glosses on the formalism; they are what makes ``a world that exists and evolves'' a statable object at all. With them restored the measured result binds: the redshift isotropy forces the lapse---a global, uniform rate of advance in a cosmic time---while the relativity of synchrony, untouched, is the shift, the existent the evolving layer the foliation orders and the manifold its record.
+
+\begin{theorem}[The necessary and sufficient augmentation]\label{thm:augmentation}
+Augmenting general relativity by fixing a physical foliation and reading it ontologically---the lapse the objective rate of advance of the existent layer, the shift the relativity of synchrony---is both necessary and sufficient for a coherent formal description of an existing, evolving world. \emph{Necessary:} the two parts are the pried-apart forms of the existence/occurrence and synchrony/simultaneity distinctions, and a description lacking the lapse part collapses existence into occurrence---the block reading, incoherent as a basic description. \emph{Sufficient:} the two parts close the only coherent escapes---the ``events exist'' horn to the existence/occurrence correction as a category error, the ``no objective present'' horn to the synchrony/simultaneity correction as a modal fallacy, the latter then falsified outright by the measured isotropy---leaving the layered, cosmically-timed description with no surviving alternative. The augmentation alters none of general relativity's equations; it fixes which of the foliations they admit is physical and reads that one as the existent.
+\end{theorem}
+
+\noindent The measurement is what turns this from a coherent option into a forced one: the lapse the theorem requires is not posited but measured, the cosmic foliation read directly off the redshift isotropy. The augmentation is thus not merely the structure a coherent description \emph{may} take but the one the world is found to realize. What it does not fix here are its forced details---that the substrate is de~Sitter, the expansion the uniform advance of its cut, the matter the bend of that cut---which are derived, not posited, in the second half of the programme~\cite{JanzenCRframework, JanzenOperator, JanzenRange}, the uniqueness of the minimal such structure being the burden of the book-length treatment~\cite{Janzen2025}. What is settled \emph{here}, before that construction, is the structural verdict, with its necessary half measured: the two-part augmentation---the completion of the Newton--Einstein formalism the standard reading left fused---is the necessary and sufficient one. That measured necessity is also what fixes the altitude at which the companion framework paper's first synthesis stands: the family of general relativity's standing problems dissolved there rests on this ontology, and because the ontology's necessary half is measured here rather than posited, those dissolutions are not free-standing coherence but the consequences of a distinction whose foundation the redshift isotropy already forces~\cite{JanzenCRframework}.
+
+\noindent The warrant for the theorem's two moves is empirical, not philosophical, and worth marking. Diagnosing the ``events exist'' horn as a category error and the ``no objective present'' horn as a modal fallacy, and preferring---as the floor above and the assessment below both do---the description that \emph{requires} the observed structure over the one that merely \emph{permits} it, are not appeals to taste but the operations of one method of inference from appearances to structure, set out and grounded on the historical record of theory-choice in the companion paper~\cite{JanzenShadowExistence}. On that record the same inference, applied ahead of a decisive measurement, selected the structure the measurement then confirmed---stellar parallax for the heliocentric case the worked instance---so the method carries a track record, not merely an intuition. Read through it, the theorem is not a metaphysics imposed on the geometry but an instance of an empirically calibrated inference, of which the modern parallax established here is the forward case; and the category-error correction of \S\ref{sec:decomp} is the same method's first turn within this paper, so the paper's measured core and its structural verdict are operations of one grounded discipline.
+
+It remains to weigh, against this result, the one objection that the uniform expansion is justified rather than assumed. It is held that Green and Wald have shown small-scale inhomogeneities to backreact negligibly on the large-scale metric, so that the Friedmann model is self-consistent with the averaged matter as its source~\cite{GreenWald2014}, against the contrary case that backreaction is dynamically significant~\cite{Buchert2000, Wiltshire2007}. Kept apart from the theorem and then set against it, the demonstration is seen to take as its input precisely what the floor forces: it assumes the metric already close to Friedmann--Lema\^itre--Robertson--Walker form---the cosmic time, the single global expansion---and proves the lumpiness does not disturb it. That is a statement about the \emph{stability} of the assumed foliation, presupposing it and establishing its robustness, not deriving it---what is small in the demonstration is the metric perturbation ($\sim\!10^{-5}$), while the matter contrast it rides on is nonlinear, so the licence to treat the configuration as a perturbed Friedmann model is itself a statement about the assumed background. The floor owes none of this, forcing the cosmic time and the uniformity of its advance from the redshift isotropy directly, a datum prior to any slice, with no Friedmann structure assumed in its derivation. This settles the standing dispute structurally and from outside it: the uniform expansion that one side assumes and the other questions is forced by measurement whichever way the averaging argument is adjudicated, so the most rigorous defence of the standard treatment is found to presuppose the very structure the measurement supplies, and the backreaction question, however it resolves dynamically, cannot reach the foliation the floor has fixed. Were the backreaction case to carry genuine large-scale content, it would enter on that merit and against this result; it does not enter as the ground of the uniform expansion, which the measurement has removed from its reach.
+
+The scope is worth marking. This contradicts none of the standard model's fitted predictions; with its assumptions in place it reproduces the expansion history observed, which is why it stands. What the measurement changes is the standing of those assumptions: the cosmic time and the uniformity of its advance are forced from the bottom up, prior to and independent of the dynamical fit, not conventions adopted for it. What the measurement does \emph{not} do is install the replacement---the positive account, that the expansion is set by the cosmological constant alone with the matter density a reading of cosmic epoch~\cite{JanzenCRframework}, is motivated by this forcing but not compelled by it, and is left to the companion framework rather than asserted here.
+
+This is the empirical counterpart, made quantitative, of the conceptual point that the cosmic present is measured rather than posited. As stellar parallax once converted the Earth's motion from an interpretive option into a measured fact, the isotropy of the cosmological redshift---with our own velocity through the rest frame read directly from the dipole, $(369.82\pm0.11)$~km/s toward Crater~\cite{Aghanim2020}---converts the cosmic foliation from a modelling convenience into a measured feature of the world. The general result that no exterior temporal slicing can record a finite-time completion of gravitational collapse~\cite{JanzenBHcausality} stands on causal structure alone and needs none of this evidence; what the evidence adds is that the slicing that result concerns is not one option among many but the one the universe has let us measure. \emph{Scope.} The temporal claim---uniform expansion throughout cosmic history---is clean, being the integral from decoupling to the present along the observed rays; the extension to a globally maximally symmetric space rides on the Copernican principle and is an extrapolation beyond the directly constrained region. That measured foliation, and the necessary-and-sufficient augmentation it grounds, are the \emph{empirical} rung of the substrate's maximal symmetry gathered across the corpus~\cite{JanzenGeometricCore}---the necessity there is not posited but measured---whose global maximal-symmetry form inherits exactly the Copernican scope marked here, no more. Read forward, that same measured foliation is the first link of the corpus's cosmogenesis: the necessary-and-sufficient augmentation it grounds is what makes gravitational collapse continue, past its finite-curvature seam, as an expanding universe---the expansion leg of the single closed \emph{cosmogenetic bead} the framework proves~\cite{JanzenCRframework}, along which cosmic time runs real and monotone exactly as it is measured here (the bead's phase leaves the real axis only across the unobservable lap, never on the expanding leg this datum constrains)---and the primordial light-element abundances the cosmogenesis paper computes are a fossil of that collapse~\cite{JanzenCosmogenesis}. That measured foliation is the framework's unification read on its empirical ground. The framework takes one maximally symmetric de~Sitter substrate to be at once general relativity's solution space, the discrete $CPT$ and charge structure, and the gauge sector on its conjugate real form~\cite{JanzenCRframework}; the redshift isotropy establishes the substrate's necessary half as measured and not posited---the cosmic foliation the whole reading rests on---so the unification stands on a foundation the world is found to realize rather than on coherence alone, the empirical forcing co-equal with the structural forcing of the horizon's metric singularity~\cite{JanzenBHcausality,JanzenShadowExistence}.
+
+\begin{thebibliography}{99}
+
+\bibitem{deSitter1917} W.~de~Sitter, \emph{On Einstein's theory of gravitation and its astronomical consequences}, Mon.\ Not.\ R.\ Astron.\ Soc.\ \textbf{78} (1917) 3.
+
+\bibitem{JanzenEinsteinCosmology} D.~Janzen, \emph{Einstein's cosmological considerations}, arXiv:1402.3212.
+
+\bibitem{JanzenCRframework} D.~Janzen, \emph{Collapsed matter must become a universe: the necessary and sufficient augmentation of general relativity into a description of structural existence, proven for gravitational collapse of any symmetry}, companion paper (P7).
+\bibitem{JanzenGeometricCore} D.~Janzen, \emph{Reached through the imaginary, real by construction: the maximally symmetric substrate as the geometric--ontological core}, companion paper (p0).
+
+\bibitem{JanzenBHcausality}
+D.~Janzen,
+\emph{The event horizon is a metric singularity: a missing definition in general relativity}, companion paper (P1).
+
+\bibitem{JanzenShadowExistence}
+D.~Janzen,
+\emph{The shadow of existence: scientific theory-choice as an empirically grounded discipline, calibrated on the historical record}, companion paper (P6).
+
+\bibitem{JanzenOperator}
+D.~Janzen,
+\emph{Covariance of geometries over the de Sitter substrate: the slicing operator, the vacuum kernel, and matter as the bend of the cut}, companion paper (P8).
+
+\bibitem{JanzenRange}
+D.~Janzen,
+\emph{The range of the de Sitter slicing operator: surjectivity onto the symmetry-reducible sector of general relativity, the Kerr--NUT--(A)dS vacuum kernel, and the wall of inhomogeneity}, companion paper (P9).
+
+\bibitem{Janzen2025}
+D.~Janzen,
+\emph{Beyond Space-Time},
+(2025).
+
+\bibitem{JanzenWildGoose}
+D.~Janzen,
+\emph{Albert Einstein's Wild Goose Chase},
+cosmiCave.org (2025).
+
+\bibitem{JanzenFortress}
+D.~Janzen,
+\emph{The Fortress of Misunderstanding Physics},
+cosmiCave.org (2025).
+
+\bibitem{Aghanim2020}
+Planck Collaboration (N.~Aghanim et~al.),
+\emph{Planck 2018 results.~VI.~Cosmological parameters},
+Astron.~Astrophys.~\textbf{641} (2020) A6.
+
+\bibitem{Buchert2000}
+T.~Buchert,
+\emph{On average properties of inhomogeneous fluids in general relativity: dust cosmologies},
+Gen.~Rel.~Grav.~\textbf{32} (2000) 105--125; arXiv:gr-qc/9906015.
+
+\bibitem{Wiltshire2007}
+D.~L. Wiltshire,
+\emph{Cosmic clocks, cosmic variance and cosmic averages},
+New J.~Phys.~\textbf{9} (2007) 377; arXiv:gr-qc/0702082.
+
+\bibitem{GreenWald2014}
+S.~R. Green and R.~M. Wald,
+\emph{How well is our Universe described by an FLRW model?},
+Class.~Quantum Grav.~\textbf{31} (2014) 234003; arXiv:1407.8084.
+
+\bibitem{Hubble1929}
+E.~Hubble,
+\emph{A relation between distance and radial velocity among extra-galactic nebulae},
+Proc.~Natl.~Acad.~Sci.~USA \textbf{15} (1929) 168--173.
+
+\bibitem{Eddington1920}
+A.~S. Eddington,
+\emph{Space, Time, and Gravitation},
+Cambridge University Press, Cambridge (1920).
+
+\bibitem{Robertson1933}
+H.~P. Robertson,
+\emph{Relativistic cosmology},
+Rev.~Mod.~Phys.~\textbf{5} (1933) 62--90.
+
+\bibitem{Robertson1935}
+H.~P. Robertson,
+\emph{Kinematics and world-structure},
+Astrophys.~J.~\textbf{82} (1935) 284--301.
+
+\bibitem{Walker1937}
+A.~G. Walker,
+\emph{On Milne's theory of world-structure},
+Proc.~London Math.~Soc.~(2) \textbf{42} (1937) 90--127.
+
+\bibitem{north1965}
+J.~D. North,
+\emph{The Measure of the Universe: A History of Modern Cosmology},
+Oxford University Press, Oxford (1965).
+
+\bibitem{Einstein1917}
+A.~Einstein,
+\emph{Kosmologische Betrachtungen zur allgemeinen Relativit\"atstheorie},
+Sitzungsber.~K\"onigl.~Preuss.~Akad.~Wiss.~(Berlin) (1917) 142--152.
+
+\bibitem{Friedmann1922}
+A.~Friedmann,
+\emph{\"Uber die Kr\"ummung des Raumes},
+Z.~Phys.~\textbf{10} (1922) 377--386.
+
+\bibitem{Lemaitre1927}
+G.~Lema\^itre,
+\emph{Un univers homog\`ene de masse constante et de rayon croissant rendant compte de la vitesse radiale des n\'ebuleuses extra-galactiques},
+Ann.~Soc.~Sci.~Bruxelles A \textbf{47} (1927) 49--59.
+
+\bibitem{Sachs1967}
+R.~K. Sachs and A.~M. Wolfe,
+\emph{Perturbations of a cosmological model and angular variations of the microwave background},
+Astrophys.~J.~\textbf{147} (1967) 73--90.
+
+\bibitem{Ellis2006}
+G.~F.~R. Ellis,
+\emph{Physics in the real universe: time and spacetime},
+Gen.~Rel.~Grav.~\textbf{38} (2006) 1797--1824; arXiv:gr-qc/0605049.
+
+\bibitem{Barrett2000}
+R.~K. Barrett and C.~A. Clarkson,
+\emph{Undermining the cosmological principle: almost isotropic observations in inhomogeneous cosmologies},
+Class.~Quantum Grav.~\textbf{17} (2000) 5047--5078; arXiv:astro-ph/9911235.
+
+\bibitem{Clarkson2010}
+C.~Clarkson, R.~Maartens, B.~Bassett, and G.~F.~R. Ellis,
+\emph{Reconstructing the large-scale structure of the universe},
+Rep.~Prog.~Phys.~\textbf{74} (2010) 112901.
+
+\bibitem{Eisenstein2005}
+D.~J. Eisenstein et~al.,
+\emph{Detection of the baryon acoustic peak in the large-scale correlation function of SDSS luminous red galaxies},
+Astrophys.~J.~\textbf{633} (2005) 560--574; arXiv:astro-ph/0501171.
+
+\bibitem{Riess1998}
+A.~G. Riess et~al.,
+\emph{Observational evidence from supernovae for an accelerating universe and a cosmological constant},
+Astron.~J.~\textbf{116} (1998) 1009--1038; arXiv:astro-ph/9805201.
+
+\bibitem{Perlmutter1999}
+S.~Perlmutter et~al.,
+\emph{Measurements of $\Omega$ and $\Lambda$ from 42 high-redshift supernovae},
+Astrophys.~J.~\textbf{517} (1999) 565--586; arXiv:astro-ph/9812133.
+
+\bibitem{JanzenCanonicalTime}
+D.~Janzen,
+\emph{The canonical problem of time as a category error: an empirically forced cosmic time, deparametrization, the dissolution of frozen dynamics, and a graviton quantization the de~Sitter horizon closes without a free parameter---the seam where $\hbar$ enters gravity---in Cosmological Relativity}, companion paper (P10).
+\bibitem{JanzenMisconstrue}
+D.~Janzen,
+\emph{Did Einstein Misconstrue Relativity's Real Meaning?},
+cosmiCave.org (2025).
+\bibitem{JanzenTrope}
+D.~Janzen,
+\emph{Time Travel: A Five-Dimensional Trope},
+cosmiCave.org (2025).
+\bibitem{JanzenCosmogenesis} D.~Janzen, \emph{Cosmogenesis: the Big Bang as a synthesis of Cosmological Relativity's deductively forced consequences, and the primordial light-element abundances it produces}, companion paper (P16).
+
+\bibitem{Bessel1838}
+F.~W. Bessel,
+\emph{Bestimmung der Entfernung des 61sten Sterns des Schwans},
+Astron.~Nachr.~\textbf{16} (1838) 65--96.
+\end{thebibliography}
+
+
+\input{appendix_receipts_P04}
+
+\end{document}

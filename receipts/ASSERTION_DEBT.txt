@@ -1,0 +1,43 @@
+0
+
+THE ASSERTION DEBT -- receipts registered in INDEX.md that carry NO check at all.
+
+** CLEARED AT r2376+c54.161.  THE NUMBER ABOVE IS ZERO AND MAY NEVER RISE. **
+
+** WHY IT EXISTED. **  A receipt with no assertion is a print statement with a filename: its OK
+certifies that Python exited zero and nothing more.  The census at c54.154 found 188 of 276 in
+that state -- two thirds of the reproducibility layer -- after the c54.153 receipt-vs-sentence
+pass showed that THIS, and not a wrong citation, was the mechanism behind most of its misses.
+THE_BASE_RATE, entries sixteen through twenty-four.
+
+check_receipts.py enforces the ratchet: a receipt of the current fork with no check FAILS the
+gate, the total may never rise, and this file may only ever be rewritten DOWNWARD.  Two further
+instruments guard the quality of what was written:
+
+  scripts/lint_assertions.py   classifies every assertion HOLLOW / UNPINNED / PINNED and fails
+                               the gate on the first hollow one.  It reads `check()` helpers as
+                               well as `assert`, and folds constant conditions -- both learned
+                               from tautologies the sweep itself turned up, including three the
+                               sweep WROTE.
+  scripts/run_all_receipts.py  RUNS every registered receipt from its own directory.  Nothing in
+                               the corpus had ever done that; c54.160 found a registered, cited
+                               receipt exiting 1 on ImportError with every gate green.
+
+THE RATCHET, revision by revision:
+
+  r2376+c54.154: 187 -> 180    the perturbation-sector receipts the c54.153 audit had read
+  r2376+c54.155: 180 -> 178    C6's f_nu asserted against its own recomputation; C8 corrected
+  r2376+c54.156: 178 -> 175    P16's spine, each PINNED TO THE FIGURE THE PAPER PRINTS
+  r2376+c54.157: 175 -> 172    P7/P17: the bead's branch points, the Cayley-Klein alpha^4
+  r2376+c54.158: 172 -> 124    ** THE SWEEP OPENS **, its scorer built first and wired in
+  r2376+c54.159: 124 ->  88    P03 in full; the scorer found blind to check()-shaped tautologies
+  r2376+c54.160:  88 ->  59    P15 in full, its corrected figures pinned INSIDE the receipts
+  r2376+c54.161:  59 ->   0    ** P14, P17, P07, P08, P09 -- THE SWEEP CLOSES. **
+
+** WHAT ZERO MEANS, STATED EXACTLY, BECAUSE IT IS EASY TO READ AS MORE. **
+Every registered receipt carries at least one check; no check in the tree is hollow by any form
+the lint can detect; and every registered receipt RUNS, in place, and exits 0 -- so every one of
+those checks was actually evaluated.  It does NOT mean every claim in every receipt is pinned:
+24 receipts carry only UNPINNED structural checks, which can fail if the computation moves and
+cannot notice if the PAPER moves.  Nor does it mean the lint sees everything: it catches
+SYNTACTIC hollowness and cannot catch an expression that merely happens to be identically zero.

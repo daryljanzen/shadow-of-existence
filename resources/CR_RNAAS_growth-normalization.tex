@@ -1,0 +1,119 @@
+\documentclass[twocolumn]{aastex701}
+
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[german,english]{babel}
+
+\newcommand{\vdag}{(v)^\dagger}
+\newcommand\aastex{AAS\TeX}
+\newcommand\latex{La\TeX}
+
+\begin{document}
+
+\title{A Curious Normalization of the $\Lambda$CDM Linear Growth Factor}
+
+\author[0000-0003-0549-3281]{Daryl Janzen}
+\affiliation{Department of Physics and Engineering Physics, University of Saskatchewan, 116 Science Place, Saskatoon, SK S7N 5E2, Canada}
+\email[show]{daryl.janzen@usask.ca}
+
+\begin{abstract}
+I note a numerical coincidence in the normalization of the linear growth factor for matter perturbations in flat $\Lambda$CDM: the required normalization integral evaluates to unity at a matter density $\Omega_m^\star \simeq 0.315$, consistent with the concordance cosmological matter density. Over the Planck-allowed range of $\Omega_m$ this normalization differs from unity by several percent. Any analytic implementation of the growth factor that inadvertently omits this factor therefore acquires an $\Omega_m$-dependent amplitude bias that is minimized near $\Omega_m^\star$ and grows to percent-level across the standard parameter range. Although this note does not identify any specific analysis as affected, the behavior of the normalization motivates explicit checks in growth-factor implementations used in multi-probe cosmological inference.
+\end{abstract}
+
+\keywords{ 
+\uat{Computational methods}{1965} ---
+\uat{Cosmological parameters}{339} --- 
+\uat{Cosmological models}{337} --- 
+\uat{Cosmological perturbation theory}{341} --- 
+\uat{Matter density}{1014}
+}
+
+\section{introduction}
+
+In standard linear perturbation theory the growth factor $D_1(a)$ for matter density perturbations in a homogeneous, isotropic universe satisfies
+\begin{equation}
+\ddot{D}_1 + 2 H \dot{D}_1 - \frac{3}{2}\,\Omega_{m,0} H_0^2 a^{-3} D_1 = 0,
+\label{eq:growth}
+\end{equation}
+where overdots denote derivatives with respect to cosmic time, $H(a)$ is the Hubble parameter, and $\Omega_{m,0}$ is the present-day matter density parameter. For any choice of cosmological parameters this second-order equation admits a growing and a decaying solution; the overall normalization of the growing mode is arbitrary until one imposes a convention such as $D_1(z=0)=1$.
+
+An explicit integral solution for the growing mode in flat $\Lambda$CDM can be written in closed form (see, e.g., the standard treatments in \cite{Peebles1980,Heath1977}). A pedagogical derivation is given by \cite{WeinbergNotes} (see also \cite{Eisenstein1997}), in which the solution is written in terms of redshift $z$ as
+\begin{equation}
+D_1(z) = \frac{H(z)}{H_0}
+\int_z^{\infty} dz'\,\frac{1+z'}{H^3(z')}
+\left[
+\int_0^{\infty} dz'\,\frac{1+z'}{H^3(z')}
+\right]^{-1},
+\label{eq:weinberg}
+\end{equation}
+where the factor in square brackets fixes the normalization to $D_1(0)=1$. The integrand is a positive, rapidly decaying function of $z$, so both integrals converge.
+
+For a spatially flat $\Lambda$CDM cosmology with matter density parameter $\Omega_m$ and $\Omega_\Lambda=1-\Omega_m$,
+\begin{equation}
+\frac{H(z)}{H_0} = \left[\Omega_m (1+z)^3 + (1-\Omega_m)\right]^{1/2}.
+\label{eq:hubble}
+\end{equation}
+Substituting Eq.~(\ref{eq:hubble}) into Eq.~(\ref{eq:weinberg}) shows that the normalization factor depends only on $\Omega_m$:
+\begin{equation}
+J(\Omega_m) \equiv \int_0^{\infty} dz\,
+\frac{1+z}{\left[\Omega_m (1+z)^3 + (1-\Omega_m)\right]^{3/2}},
+\label{eq:Jdef}
+\end{equation}
+so that
+\begin{equation}
+D_1(z;\Omega_m) =
+\frac{H(z;\Omega_m)}{H_0}
+\int_z^{\infty} dz'\,\frac{1+z'}{H^3(z';\Omega_m)}\,
+\big[J(\Omega_m)\big]^{-1}.
+\label{eq:Dfull}
+\end{equation}
+The inner integral in Eq.~(\ref{eq:weinberg}) has thus collapsed, for flat $\Lambda$CDM, to a one-parameter function $J(\Omega_m)$. Because the integrand in Eq.~(\ref{eq:Jdef}) is positive and decays as a power law at large $z$, $J(\Omega_m)$ is a smooth, monotonic function of $\Omega_m$. 
+
+\section{coincidence or sign of error?}
+
+A straightforward numerical evaluation shows that there is a unique value $\Omega_m^\star$ for which (see Fig.~\ref{fig:Jomega})
+\begin{equation}
+J(\Omega_m^\star) = 1,
+\qquad
+\Omega_m^\star \simeq 0.315162,
+\label{eq:omegastar}
+\end{equation}
+consistent with the ``concordance'' matter density obtained in contemporary fits to cosmological data (e.g., $\Omega_m = 0.315 \pm 0.007$; \citealt{Aghanim2020}).
+
+In practice what matters is not a single value but the range of $\Omega_m$ over which $J(\Omega_m)$ remains close to unity. For illustration, taking a representative constraint $\Omega_m = 0.315 \pm 0.007$, one finds $J(0.308) \approx 1.018$ and $J(0.322) \approx 0.984$, i.e.\ deviations of order $+1.8\%$ and $-1.6\%$ from unity already at $1\sigma$. Across the corresponding $2\sigma$ and $3\sigma$ ranges ($0.301 \lesssim \Omega_m \lesssim 0.329$ and $0.294 \lesssim \Omega_m \lesssim 0.336$), $J(\Omega_m)$ varies from $\simeq 1.036$ to $\simeq 0.967$ and from $\simeq 1.055$ to $\simeq 0.952$, respectively. Thus $J(\Omega_m)$ is monotonic and crosses unity only once, at $\Omega_m^\star$, with percent-level departures from unity over the parameter range relevant to precision cosmology.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{J_omega_plot.png}
+\caption{Normalization integral $J(\Omega_m)$ defined in Eq.~(\ref{eq:Jdef}) for flat $\Lambda$CDM, shown as a function of the matter density parameter $\Omega_m$. The dashed horizontal line marks $J=1$; the vertical dotted line marks the unique solution $\Omega_m^\star \simeq 0.315162$, at which the normalization integral equals unity. This value is consistent with the concordance matter density reported by Planck and other contemporary analyses.}
+\label{fig:Jomega}
+\end{figure}
+
+This observation is mathematically trivial but has a potentially nontrivial practical consequence. Define
+\begin{equation}
+\tilde{D}_1(z;\Omega_m) \equiv
+\frac{H(z;\Omega_m)}{H_0}
+\int_z^{\infty} dz'\,\frac{1+z'}{H^3(z';\Omega_m)},
+\label{eq:Dtld}
+\end{equation}
+i.e.\ the same expression as Eq.~(\ref{eq:Dfull}) but without the normalization factor $J(\Omega_m)^{-1}$. Equations~(\ref{eq:Dfull}) and~(\ref{eq:Dtld}) are related by
+\begin{equation}
+\tilde{D}_1(z;\Omega_m) = J(\Omega_m)\,D_1(z;\Omega_m).
+\label{eq:relation}
+\end{equation}
+Thus, omitting the square-bracket factor in Eq.~(\ref{eq:weinberg}) is mathematically identical to assuming $J(\Omega_m) = 1$ for all cosmologies. In reality, $J(\Omega_m)$ departs from unity everywhere except near $\Omega_m^\star$, with the several-percent deviations quantified above. Any analysis pipeline that inadvertently uses $\tilde{D}_1$ in place of the correctly normalized $D_1$ therefore builds in a hidden, $\Omega_m$-dependent amplitude error proportional to $J(\Omega_m)$.
+
+Although the linear growth factor is not itself directly observable, it enters many cosmological analyses as a transfer function connecting early-universe initial conditions to late-time structure. Analytic growth expressions of the form in Eq.~(\ref{eq:weinberg}) or Eq.~(\ref{eq:Dfull}) are commonly used when propagating amplitudes between epochs in multi-probe inference frameworks that combine cosmic microwave background data with large-scale structure, redshift--space distortions, and weak gravitational lensing \citep{carroll1992,eisenstein1999,tegmark2001,hu2004,kilbinger2015,adame2025}. In such contexts, the growth factor does not always appear only in ratios, but also through its absolute normalization, for example when $\sigma_8(z)$ is modeled as $\sigma_8(0)\,D_1(z;\Omega_m)$ or when shear power spectra are computed using $P(k,z) \propto D_1^2(z;\Omega_m)$. If the normalization factor in Eq.~(\ref{eq:Dfull}) were inadvertently omitted in any such implementation, the resulting growth history would acquire an artificial dependence on $\Omega_m$ that could bias growth-sensitive amplitudes while leaving purely geometric probes unchanged. This note does not imply that any existing code is known to be affected; it merely identifies a specific normalization whose numerical behavior makes it a natural failure mode to check for wherever analytic growth prescriptions are used.
+
+If model predictions for observables sensitive to the growth factor (e.g.\ the redshift dependence of $\sigma_8$, peculiar velocities, or clustering amplitudes) are computed using $\tilde{D}_1$ while data are compared under the assumption that the growth has been correctly normalized, then the likelihood will be artificially optimized when the assumed $\Omega_m$ happens to satisfy $J(\Omega_m)=1$. In other words, dropping the normalization factor in Eq.~(\ref{eq:weinberg}) biases fits toward $\Omega_m^\star$, because at that point the incorrectly normalized growth history coincides with the correctly normalized one.
+
+\section{conclusion}
+
+The fact that $\Omega_m^\star$ lies close to the matter density preferred by many contemporary analyses therefore deserves attention, but should not be overinterpreted. The coincidence does not by itself prove that any specific analysis has omitted the factor $J(\Omega_m)^{-1}$, nor that this mechanism explains any currently discussed cosmological tension. Its significance here is more modest: it identifies a concrete mechanism by which such an omission would drive growth-based inferences toward the observed value, with several-percent departures from unity across the range of $\Omega_m$ relevant to precision cosmology. Given the ubiquity of growth-factor calculations in modern cosmological inference, it would be prudent to explicitly verify that the normalization in Eq.~(\ref{eq:weinberg}), or its equivalent, is correctly implemented in numerical codes, and that no algebraically dropped normalization term is implicitly being set to unity in a way that could bias constraints on $\Omega_m$ in multi-probe analyses.
+
+\bibliography{main}{}
+\bibliographystyle{aasjournalv7}
+
+\end{document}

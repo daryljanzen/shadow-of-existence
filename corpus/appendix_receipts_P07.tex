@@ -1,0 +1,120 @@
+\clearpage
+\section*{Appendix R\quad Computational Receipts}\label{app:receipts}
+\addcontentsline{toc}{section}{Appendix R: Computational Receipts}
+\small\noindent Each computation marked \rcptmarker\ in the text is verified by a runnable receipt in the \texttt{receipts/} directory that ships with this work; status \textsf{OK} = verified (traced, run, output matches the claim). This appendix is generated from the receipt index, not maintained by hand.\par\medskip
+\begingroup\renewcommand{\arraystretch}{1.25}
+\begin{description}
+\item[\label{rcpt:X4_singularity_types}\texttt{X4\_singularity\_types}]\hfill\textsf{[OK]}\\
+\textit{the closure --- **finite order in both senses, so passable**} \ (P7 \S{}the closure --- **finite order in both senses, so passable**). 
+\emph{Computes:} run r1870, rc=0
+ \emph{Bound:} **bound: it licenses a claim the corpus already makes correctly. What is new is the compatibility argument --- that a finite-order branch point and a pole both admit continuation while an essential singularity would admit neither**
+\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/X4\_singularity\_types.py}
+\item[\label{rcpt:O6_eikonal_ringdown}\texttt{O6\_eikonal\_ringdown}]\hfill\textsf{[OK]}\\
+\textit{the optical face --- **the forced member has no ringdown scale**} \ (P7 \S{}the optical face --- **the forced member has no ringdown scale**). 
+\emph{Computes:} run r1863, rc=0
+ \emph{Bound:} **bound: the eikonal correspondence is an asymptotic in \$\textbackslash\{\}ell\$ (Cardoso et al. 2009), and the CR reading is stated as a CONSISTENCY, not an independent prediction**
+\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/O6\_eikonal\_ringdown.py}
+\item[\label{rcpt:O4_deflection_perspectival}\texttt{O4\_deflection\_perspectival}]\hfill\textsf{[OK]}\\
+\textit{perspectival shadow curvature --- **\ensuremath{\Lambda} is in the measurement, not the path**} \ (P7 \S{}perspectival shadow curvature --- **\ensuremath{\Lambda} is in the measurement, not the path**). 
+\emph{Computes:} run r1860, rc=0
+ \emph{Bound:} **bound: the physics is STANDARD (Rindler--Ishak 2007) and no new prediction is claimed. What is new is that it instantiates P7's perspectival split exactly, in a place the field itself disputed**
+\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/O4\_deflection\_perspectival.py}
+\item[\label{rcpt:O5_kappa_and_lyapunov}\texttt{O5\_kappa\_and\_lyapunov}]\hfill\textsf{[OK]}\\
+\textit{the seam's rigidity --- **\ensuremath{\kappa} and \ensuremath{\lambda} both vanish at the forced member**} \ (P7 \S{}the seam's rigidity --- **\ensuremath{\kappa} and \ensuremath{\lambda} both vanish at the forced member**). 
+\emph{Computes:} run r1859, rc=0
+ \emph{Bound:} **bound: the coincidence of loci is computed; the causal LINK to P7's reframing-freedom argument is NOT claimed --- that remains P7's, established causally**
+\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/O5\_kappa\_and\_lyapunov.py}
+\item[\label{rcpt:photon_cross_test}\texttt{photon\_cross\_test}]\hfill\textsf{[OK]}\\
+\textit{bead: null congruence crosses seam} \ (signed r(tau\textasciitilde{}) real \& odd through r=0; radial null photon crosses the seam with bounded chi -> r=0 passable, not a barrier). 
+\emph{Computes:} integrates dchi/dtau\textasciitilde{}=1/(1+r') across seam; asserts r real/odd/sign-crossing, chi bounded+continuous; control: unsigned law can't cross
+ \emph{Bound:} one of P7's 5 bead receipts
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/photon\_cross\_test.py}
+\item[\label{rcpt:bead_conjugate}\texttt{bead\_conjugate}]\hfill\textsf{[OK]}\\
+\textit{bead: two cosmic-time legs are complex conjugates} \ (r(tau\textasciitilde{}*)=conj(r(tau\textasciitilde{})) (Schwarz); imaginary period 2pi/3 rotates r by e\textasciicircum{}\{2pi i/3\}; turnaround at Im tau\textasciitilde{}=pi/3 (half the Wick period)). 
+\emph{Computes:} conjugate legs asserted; e\textasciicircum{}\{2pi i/3\} rotation exact + tau\textasciitilde{}-independent (1.5*2pi/3=pi); turnaround pi/3; control: generic shift tau\textasciitilde{}-dependent
+ \emph{Bound:} branch-point turnaround to \textasciitilde{}1e-8
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/bead\_conjugate.py}
+\item[\label{rcpt:bead_contour}\texttt{bead\_contour}]\hfill\textsf{[OK]}\\
+\textit{bead contour / closure in cosmic time} \ (tau\textasciitilde{}(r)=int dr/sqrt(2M/r+r\textasciicircum{}2) bounded contour: real (r>0), pure imaginary (0->-A), \textbar{}Im\textbar{}=pi/3 locked on collapse leg (r<-A)). 
+\emph{Computes:} numeric tau\textasciitilde{}(r); asserts the 4 contour phases + Re-growth; lock=pi/3 A-independent (rescaled A), control vs 2pi thermal
+ \emph{Bound:} turnaround here = bead r=-A (correct reserved sense)
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/bead\_contour.py}
+\item[\label{rcpt:two_realisations}\texttt{two\_realisations}]\hfill\textsf{[OK]}\\
+\textit{rem:tworealisations} \ (the horizon and turnaround three-folds are two realisations of one A\_2: both cubics zero-sum, H-T = -a\textasciicircum{}2 r, horizon colinear-real in r while the turnaround is equilateral in the complex r-plane; R exchanges 3<->3bar on both; they meet only at 2M=0). 
+\emph{Computes:} both cubics' zero-sum and difference verified symbolically; the two root configurations computed and compared; -1 not in W(A\_2) rechecked
+ \emph{Bound:} the affine non-equivalence is lem:twoturnings' (imported); receipt file sits in a working dir, not receipts/
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/two\_realisations.py}
+\item[\label{rcpt:P07_lap_timeline}\texttt{P07\_lap\_timeline}]\hfill\textsf{[OK]}\\
+\textit{rem:twocritical + P3 sec:temporal-threeness} \ (A2.11's timeline: the landmark phases exact, w\_back = 2 w\_front = arccosh 2 = ln(2+sqrt3) (the 2:1 in radius as a 1:2 in phase, by the identity cosh2w = 1+2sinh\textasciicircum{}2w across the sinh/cosh legs); the intervals in Gyr on the corpus's constants; and THE LIFT ADVANCES Re(tau) BY EXACTLY ZERO, so the collapse-to-expansion handoff takes no cosmic time). 
+\emph{Computes:} phases in closed form, the relation proved via the identity and cross-checked as algebra and numerically; A = 2\textasciicircum{}(1/3) rho; the Nariai condition asserted as self-consistency rather than against a number; the present epoch checked against the independent flat-LCDM age formula to 1e-12; the 1/H0 scaling exposed
+ \emph{Bound:} held: tau is the FUNDAMENTAL OBSERVERS' proper time, not the exterior static clock (P1's infinite-time result is the exterior one). TWO LEVELS, never collapsed: GEOMETRICALLY the lap passes THROUGH r=0 -- a branch point, not a barrier, the substrate smooth across it, and the crossing is where the species reverses; PHYSICALLY no finite-time layer S\_t CONTAINS the curvature singularity (the Smoothness theorem, about the layers and not the curve), so the cosmological future is seeded at the finite-curvature seam. P7: 'claims at different levels, not competing ones.' The rho-crossing figure is a law-phase, not the seeding. The imaginary length is contour, not duration, and not recurrence. *r1632 collapsed the second level into the first and wrote 'r=0 is an unattained limit' -- inverting the corpus's central result; corrected r1633*
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/P07\_lap\_timeline.py}
+\item[\label{rcpt:order3_bridge}\texttt{order3\_bridge}]\hfill\textsf{[OK]}\\
+\textit{groupoid<->bead order-three (scope corrected r1430)} \ (the groupoid Z/3 (horizon cubic r\textasciicircum{}3-r+2M, colinear real) and bead Z/3 (comoving r\textasciicircum{}3+2M, equilateral) are Z/3's of DIFFERENT cubics and no AFFINE change of variable identifies their root sets (obstruction at fixed cubic; the two are the E=1 and E=0 ends of one turning-point family, stage 5)). 
+\emph{Computes:} bead law obeys (dr/dtau\textasciitilde{})\textasciicircum{}2=1-f; horizon roots colinear-real vs comoving equilateral; not affinely equivalent; stage 5 exhibits the E-family joining them, with a discriminating control
+ \emph{Bound:} the affine obstruction is exact; identification of ROOT SETS remains do-not-assert
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/order3\_bridge.py}
+\item[\label{rcpt:F_flat}\texttt{F\_flat}]\hfill\textsf{[OK]}\\
+\textit{fig panel F: cosmological bundle} \ (**!! c54.161: THE c54.157 MARKING IS RETIRED** -- the back seam is bisected at r = -2 alpha/sqrt3, s = -0.87797193, and the seam s-offset ratio computed as exactly 2.0, so the caption's two uncomputed claims now have computations. r(s) vs EXACT arc length in complex cosmic time: two perpendicular straight legs + lift; single-valued, monotonic, smooth; dr/ds=0 at turnaround, ->inf at seam). 
+\emph{Computes:} tau\textasciitilde{}-path unit-speed straight legs (\textbar{}dtau\textasciitilde{}/ds\textbar{}=1, perpendicular); continuity at both joints; monotonic; tangents; landmarks r=-A, r=0, r=+a/sqrt3
+ \emph{Bound:} 'turnaround' = reserved bead sense
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/F\_flat.py}
+\item[\label{rcpt:P07_nariai_selection}\texttt{P07\_nariai\_selection}]\hfill\textsf{[OK]}\\
+\textit{(Nariai selection)} \ (DERIVES the horizon-cubic discriminant: r\textasciicircum{}3-alpha\textasciicircum{}2 r+2M alpha\textasciicircum{}2=0, Delta=4 alpha\textasciicircum{}4(alpha\textasciicircum{}2-27M\textasciicircum{}2); Delta=0 <=> M=alpha/(3 sqrt3), Nariai condition Lambda m\textasciicircum{}2=1/9 (not asserted)). 
+\emph{Computes:} sympy discriminant from the cubic; sum of roots=0; dimensionful 1/9
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/P07\_nariai\_selection.py}
+\item[\label{rcpt:P07_sds_kretschmann}\texttt{P07\_sds\_kretschmann}]\hfill\textsf{[OK]}\\
+\textit{(Perspectival Singularity)} \ (COMPUTES SdS Kretschmann K=48M\textasciicircum{}2/r\textasciicircum{}6+8Lambda\textasciicircum{}2/3=48M\textasciicircum{}2/r\textasciicircum{}6+24/alpha\textasciicircum{}4 from the metric; M->0 gives constant 24/alpha\textasciicircum{}4 (regular at r=0); r=0 divergence is the M-term alone). 
+\emph{Computes:} K from Riemann; dS remainder finite at r=0; Lambda=0 Schwarzschild control
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/P07\_sds\_kretschmann.py}
+\item[\label{rcpt:D4_fold_scaling}\texttt{D4\_fold\_scaling}]\hfill\textsf{[OK]}\\
+\textit{---} \ (D4 --- IS NARIAI A SADDLE-NODE, AND WHAT SCALING DOES THAT FORCE? CONFIRMATION 4 --- and the collision guards the wording: the corpus's 'bifurcation' x23 is ALL the GR BIFURCATION SPHERE of a Killing horizon, and P7's guard leans on 'the degenerate horizon carries NO bifurcation sphere'. So nothing below may be written as 'the bifurcation at Nariai' bare.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/D4\_fold\_scaling.py}
+\item[\label{rcpt:EUCNULL_continuous_null_definition}\texttt{EUCNULL\_continuous\_null\_definition}]\hfill\textsf{[OK]}\\
+\textit{sec:lift-initial-rate} \ (EUCNULL-2 --- f=0 and f=2 are ONE condition, and the null cone is defined continuously across the whole lap. (r2158; supersedes the placement-only reading of r2157.) THE CLAIM (Daryl, r2158): the Euclidean null is where the null bundle INSIDE the lift obtains its definition, so "null" is continuously well-defined across the entire excursion -- the seams doing it on the real branches and the Euclidean null on the imagin...). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/EUCNULL\_continuous\_null\_definition.py}
+\item[\label{rcpt:LAP_complete_account}\texttt{LAP\_complete\_account}]\hfill\textsf{[OK]}\\
+\textit{sec:lift-initial-rate} \ (LAP --- the whole seam-to-seam excursion read off the single function f (r2159). P7's frontier asked for "a positive account of the lap". It is here, and it is one function. f(r) = 1 - 2M/r - r\textasciicircum{}2/alpha\textasciicircum{}2 on the Nariai member; the marginal (E=1) congruence has (dr/dtau)\textasciicircum{}2 = 1 - f.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/LAP\_complete\_account.py}
+\item[\label{rcpt:LIFT_euclidean_filter}\texttt{LIFT\_euclidean\_filter}]\hfill\textsf{[OK]}\\
+\textit{sec:frontiers} \ (LIFT --- a positive account of the lift, from the bead's own analytic continuation (r2157). P7's frontier: "the lift is at present characterised only NEGATIVELY, by the coordinate's failure to advance, and a negative characterisation is not a physical account." It asks three things: what the lift is, what the interior unit-speed crossing marks, and what the framework carries across. *** 1. WHAT THE LIFT IS.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/LIFT\_euclidean\_filter.py}
+\item[\label{rcpt:X4r_no_essential_singularity}\texttt{X4r\_no\_essential\_singularity}]\hfill\textsf{[OK]}\\
+\textit{thm:null-boundary} \ (**!! EXTENDED c54.157: THIS ROW CERTIFIED EXIT-ZERO FOR A CLAIM IT DID NOT STATE.** P7 cites the file for 'no essential singularity, in BOTH parametrisations'; the file computed the pole ORDER of the Schwarzschild invariant in the cycloid variable -- which the same sentence credits to the companion paper -- and the sinh half had no computation at all (tau and alpha declared and never used, numpy imported and never used, the branch-point statement a loop over range(3) inside an f-string). **Now computed: r\textasciicircum{}3 = 2M alpha\textasciicircum{}2 sinh\textasciicircum{}2 is ENTIRE, so it has no essential point anywhere finite; the shift identity is verified at three tau\_k; the zero is of order TWO (the first draft of the assertion said one and FIRED -- sinh is squared, which is why the exponent is 2/3); leading coefficient 9M/2; and the cycloid pole coefficient 3072/M\textasciicircum{}4 pinned.** Original claim: X4-REDONE --- what is actually left once P2 is read. P2 prop:Kretschmann ALREADY: K(z) has a TWELFTH-ORDER POLE at z=pi, 'generated by the chain rule applied to the composition at a non-degenerate critical point of r(z)'; bounded at z=0. So the POLE classification and its MECHANISM are the corpus's.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/X4r\_no\_essential\_singularity.py}
+\item[\label{rcpt:P07_eikonal_ratio_is_D_minus_three}\texttt{P07\_eikonal\_ratio\_is\_D\_minus\_three}]\hfill\textsf{[OK]}\\
+\textit{sec:frontiers (eikonal ringdown)} \ (THE EIKONAL RATIO AT GENERAL D: lambda\textasciicircum{}2 / Omega\_c\textasciicircum{}2 = D - 3 EXACTLY, FOR EVERY M AND EVERY alpha -- SO THE MASS- AND CURVATURE-INDEPENDENCE OF THE QUALITY FACTOR IS NOT A FOUR-DIMENSIONAL FACT, AND WHAT IS FOUR-DIMENSIONAL IS THE RATIO'S VALUE BEING ONE. The identity in closed form (asserted at D = 4..8): 2f - r\textasciicircum{}2 f'' = 2 + 2M[(D-3)(D-2)-2] r\textasciicircum{}-(D-3), and the bracket factors as (D-1)(D-4), vanishing exactly at D=4 above three. ** THE RATIO COMPUTED RATHER THAN QUOTED (asserted at D = 4..9): with the photon sphere at r f' = 2f, Omega\_c\textasciicircum{}2 = f\_c/r\_c\textasciicircum{}2 and lambda\textasciicircum{}2 = -(r\_c\textasciicircum{}2 f\_c/2)(f/r\textasciicircum{}2)'' evaluated at r\_c, the ratio is D-3 identically -- no M, no alpha, no residue. ** ** THE REASON IN ONE LINE: the photon-sphere condition gives M r\_c\textasciicircum{}-(D-3) = 1/(D-1), so the identity's excess becomes 2(D-1)(D-4)/(D-1) = 2(D-4) and lambda\textasciicircum{}2 - Omega\_c\textasciicircum{}2 = (D-4) Omega\_c\textasciicircum{}2. ** ** HENCE THE CORRECTION TO THE READING: the eikonal quality factor is l / [sqrt(D-3) (n+1/2)] in EVERY dimension and is always M- and alpha-free; the four-dimensional content is lambda = Omega\_c, not the independence. At D=5 and D=6 the ratios Omega\_c/lambda are 1/sqrt2 and 1/sqrt3. **). 
+\emph{Computes:} the general-D identity asserted at five dimensions with its factorisation; the photon-sphere radius, Omega\_c\textasciicircum{}2 and lambda\textasciicircum{}2 computed from the metric function and the ratio asserted equal to D-3 at six dimensions
+ \emph{Bound:} ** STANDARD eikonal/geodesic correspondence for a static spherically symmetric metric, applied to the D-dimensional Schwarzschild-de Sitter function. Inherits the same altitude the framework already assigns the D=4 case: A CONSISTENCY OF THE READING, NOT AN INDEPENDENT PREDICTION **
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/P07\_eikonal\_ratio\_is\_D\_minus\_three.py}
+\item[\label{rcpt:O1_photon_sphere_nariai}\texttt{O1\_photon\_sphere\_nariai}]\hfill\textsf{[OK]}\\
+\textit{the locus figure --- **the photon sphere IS Nariai's forcing locus**} \ (P3 \S{}the locus figure --- **the photon sphere IS Nariai's forcing locus** [borrowed from P3]). 
+\emph{Computes:} run r1857, rc=0
+ \emph{Bound:} **bound, and it records a caught error: the first pass used the SCHWARZSCHILD shadow formula \$b=\textbackslash\{\}sqrt\{27\}M\$ and got \$b=\textbackslash\{\}alpha\$ exactly --- clean and WRONG, since that assumes \$\textbackslash\{\}Lambda=0\$**
+\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/O1\_photon\_sphere\_nariai.py}
+\item[\label{rcpt:P03_acceleration_is_slice_curvature}\texttt{P03\_acceleration\_is\_slice\_curvature}]\hfill\textsf{[OK]}\\
+\textit{sec:curvature \ensuremath{\cdot} rem:twocritical \ensuremath{\cdot} the bend} \ (on ANY member of the energy family (E cancels: (dr/dtau)\textasciicircum{}2 = E\textasciicircum{}2 - f, and E is a constant of the motion) d\textasciicircum{}2r/dtau\textasciicircum{}2 = -f'/2 = r*K\_G identically, so THE SIGN OF THE SLICE'S GAUSSIAN CURVATURE IS THE SIGN OF THE COMOVING ACCELERATION -- and the flat locus is the deceleration-to-acceleration turnover, which on Nariai is the seam and in standard terms is rho\_m = 2 rho\_Lambda (csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2, the seam's phase). A recent cosmological epoch: 7.06 Gyr at H0=73, 7.65 at 67.4, preceding matter-Lambda equality [borrowed from P3 \ensuremath{\cdot} P7 \ensuremath{\cdot} P8]). 
+\emph{Computes:} the identity asserted; the K\_G zero solved and matched to (M alpha\textasciicircum{}2)\textasciicircum{}(1/3); csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2 proved by algebra after simplify() failed on the closed forms; epochs at both H0
+ \emph{Bound:} bound: identities on the Nariai E=1 worldline; no causal claim between seam and turnover -- they are one locus; dating inherits H0
+\ \emph{Run:} \texttt{python3 receipts/P03\_SdS\_slicing/P03\_acceleration\_is\_slice\_curvature.py}
+\item[\label{rcpt:BRANCHPT_transmission_character}\texttt{BRANCHPT\_transmission\_character}]\hfill\textsf{[OK]}\\
+\textit{rem:phase-open} \ (BRANCHPT --- the transmission character of the BRANCH POINT r=0, on its own terms. WHY (r2154). P15 l.525 says "The cosmogenesis branch point, BEING the degenerate Nariai horizon, is a faithful scale-free transmitter", and prop:transmission argues from the tortoise integral at a DOUBLE ROOT (p=2, kappa=0).  **PART 2 ADDED r2376+c54.153 by the receipt-vs-sentence audit: the PEAK-POSITION EXCLUSION, which is what P15 actually cites this file for and which the file did not compute** --- the collapse leg's own conformal time gives eta\_bp \textasciitilde{} 5e3-1e4 Mpc, so r\_s\textasciicircum{}eff = r\_s + eta\_bp/sqrt3 = 3.0-5.9e3 Mpc, and reproducing l\_A = 301.8 would demand D = 2.9-5.7e5 Mpc against the actual 1.4e4, a factor of **21-41**. *PART 1 shows the crossing ADDS no divergent phase; PART 2 shows an inherited phase cannot survive. The paper's sentence needs the second.* [borrowed from P15 (+P7)]). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/BRANCHPT\_transmission\_character.py}
+\item[\label{rcpt:P16_every_mode_is_frozen_at_the_crossing}\texttt{P16\_every\_mode\_is\_frozen\_at\_the\_crossing}]\hfill\textsf{[OK]}\\
+\textit{the collapse excursion} \ (**EVERY MODE IN THE OBSERVED RANGE IS FROZEN BEFORE THE BRANCH POINT, SO THE CROSSING'S SPECIES FILTER HAS NOTHING TO ACT ON AND THE PASSAGE IS LOSSLESS FOR EVERY SPECIES RATHER THAN FOR COLD ONES ALONE.** Built settling front \#1, the construction's recursion, which had headed the programme's list for twelve revisions. P7 gave two incompatible accounts of the Euclidean segment: `sec:lift-quantum` says the kernel acts on OSCILLATORY content and a frozen mode is a fixed point of it, `sec:frontiers` read the same exponent at fixed k as a criterion on SPECIES. **The first account's premise -- that every mode exits the comoving sound horizon before the crunch -- was asserted and cited sideways, never computed.** It is computed here on the progenitor's own exact interior: PART 1 the asymptotics (\textbar{}aH\textbar{} -> 1/x while c\_s saturates at 1/sqrt3, so c\_s k/\textbar{}aH\textbar{} -> c\_s k x -> 0 for EVERY k); PART 2 the freeze-out epoch x\_f across ell = 28..2475, strictly positive throughout, the highest mode freezing with 0.065\% of the leg to spare; PART 3 the species criterion shown vacuous. [borrowed from P16]). 
+\emph{Computes:} \textbar{}aH\textbar{} x asserted -> 1 within 2\% at x = 1e-3, 1e-4, 1e-5; c\_s asserted to reach 1/sqrt3 within 1e-3; every k in 10..900 asserted to freeze strictly on the leg AND to stay frozen a decade past freeze-out; the warm exponent asserted at the computed 204.6 (not P7's quoted \textasciitilde{}1.6e2, whose k is unstated) and asserted large enough to be a filter at all; a pressureless species asserted to have a vanishing exponent.
+ \emph{Bound:} **scope: this settles what the segment ACTS ON. It does NOT compute the segment's action on a frozen mode beyond P7's own fixed-point statement, and it says nothing about the harmonic-basis question -- that is answered by reading, not arithmetic. AND IT REMOVES AN ADVERTISED SELECTION RULE: P7's 'a cold species and no other' does not hold. A loss of a claimed prediction, recorded as one.**
+\ \emph{Run:} \texttt{python3 receipts/P16\_cosmogenesis\_paper/P16\_every\_mode\_is\_frozen\_at\_the\_crossing.py}
+\end{description}\endgroup

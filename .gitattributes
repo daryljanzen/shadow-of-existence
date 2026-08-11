@@ -1,0 +1,31 @@
+# ── THE REGISTER AND ITS VIEWS: union merge ──────────────────────────────────
+# These are APPEND-ONLY tables that every node writes to.  A union merge keeps
+# both sides' added lines, which is exactly right here and exactly wrong
+# everywhere else -- so it is declared on these paths and no others.
+#
+# ** Union merge cannot detect a duplicate ID. **  That is why the ID bands in
+# THE_HUB.md exist and why corpus/check_id_bands.py runs in CI.
+THE_LIVE_ARC.md      merge=union
+WHATS_TEED_UP.md     merge=union
+THE_BURN_DOWN.md     merge=union
+CORPUS_MAP.md        merge=union
+
+# ── NO LFS.  CORRECTED r2419, and the earlier advice was wrong. ──────────────
+# r2407 put pdf/png/eps/dat behind git-lfs.  ** Measured before pushing: the
+# largest file in the tree is 4.3 MB (CORPUS_MAP.md) and the whole tree is
+# 72 MB. **  GitHub's hard limit is 100 MB per FILE and it warns at 50 MB; the
+# repo soft limit is 1 GB.  ** Nothing here is within an order of magnitude of
+# any limit. **
+#
+# So LFS would buy nothing and cost a dependency: a clone made without git-lfs
+# installed silently yields POINTER FILES instead of content, which is exactly
+# the kind of failure that looks like data loss.  ** An instrument that adds a
+# failure mode without removing one is not worth installing. **
+#
+# If a future addition ever approaches 50 MB, revisit -- and note it here.
+
+# ── text, so diffs read ──────────────────────────────────────────────────────
+*.md   text
+*.tex  text
+*.py   text
+*.sh   text

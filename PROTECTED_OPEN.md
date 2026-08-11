@@ -1,0 +1,328 @@
+---
+name: protected-open
+description: The register of open research questions a node may NOT close. Read before writing any negative verdict; the gate `corpus/check_kills.py` enforces it. A node may write a bounded negative; a closure on a protected item is Daryl's.
+sources: [cowork]
+kind: METHOD
+current: c54.134
+---
+
+# PROTECTED OPEN — the questions a node may not close
+*Opened r2376+c54.15 (Daryl-directed), after the second firing of the cyanide face at the same drill-site.*
+
+## ⌗ WHY THIS EXISTS, and the diagnosis is structural rather than personal
+
+**Every mechanical instrument this corpus has ever built polices OVER-CLAIMING.** *The receipt gate: you may
+not assert without a receipt. The do-not-assert census: you may not promote a resemblance. The striking bar:
+you may not strike an item until its result is fully propagated. The ORIGIN drift guard, the bibliography
+check, the column lint — **all of them stop a node from saying too much.***
+
+$$\textbf{NOTHING polices a NEGATIVE verdict on an open question. There has never been a gate on the other side.}$$
+
+**And the guard set is not merely silent there — it LEANS.** *`anti-flinch`, `negatives-are-the-map`,
+`do-not-assert`, the `kill-list`, `verdict-bar-symmetric` — every one was forged against a node that softens,
+hedges or over-claims, so **every one of them pushes toward the negative.** A node running low on context keeps
+the heuristics and loses the nuance, and what survives is a set of rules **all pointing the same way**: toward
+closure. **That is the mechanism, and it is why this keeps happening on long sessions rather than short ones.**
+
+**⌗ AND CLOSURE IS THE SHAPE A NODE WANTS FOR A DIFFERENT REASON.** *A closure is terminal and reads as a
+deliverable; an open question does not. So there is a standing pull toward producing endings, and in research
+that pull is pure damage.* ***The corpus does not need endings. Daryl is holding these objects and thinking
+about them; the node's job is to bring material TO them, not to decide they are empty.***
+
+**⌗ THE RECORD, which is what makes this a rule rather than a preference.** *Every time a node has reached a
+result that looked like "CR does not deliver here", it has turned out to be the node's error and not the
+framework's — the stale row, the "4D is nowhere derived" that the matter sector already held, the isometry
+miscount, the branch-point loop, the R3 kill.* ***A node's failure to find something in this corpus is evidence
+about the node.*** *It has not once been evidence about the corpus.*
+
+---
+
+## ⌗ THE RULE
+
+**A node MAY write a BOUNDED NEGATIVE:** *"route $Y$, run on object $Z$, did not produce $X$"* — scope stated,
+object named, and **filed as material, not as a verdict**.
+
+**A node may NOT write a CLOSURE on a registered item:** *"$X$ does not work", "the lead is dead", "the
+question is settled in the negative", or any wording a later reader would take as licence to stop looking.*
+
+$$\textbf{Bounded negatives are the node's. Closures on protected items are Daryl's.}$$
+
+**⚠ This is NOT a manufactured deferral.** *The plan forbids inventing an owner for work a node can do
+(r1907), and that rule stands: **the node does the work.** What it may not do is convert the work's bounded
+result into a terminal verdict on someone else's live investigation. **Doing the work and declaring it over are
+different acts, and only the first is delegated.***
+
+---
+
+## ⌗ THE FOUR CHECKS, and any one of them failing blocks the closure
+
+*They are ordered by how often they catch it.*
+
+1. **SAME-OBJECT.** *What object did the computation run on? What object is the open item about? **Do they
+   match?*** — ***If the item does not NAME an object, the check fails automatically***, and the work owed is
+   to make it name one, **not** to answer it. *(This alone would have stopped the R3 kill: P14 names two
+   $2{+}1$s in one sentence and R3 names neither.)*
+2. **INVERSION.** ***What would have to be true for the corpus to be right here instead?*** *Answer it in
+   writing. **A node that cannot state the corpus's best case has not understood the question well enough to
+   close it.***
+3. **PRICE, both ways.** *The coda's verdict-bar-symmetric rule, actually run: **what does keeping it open
+   cost, and what does closing it cost?** Killing must cost what keeping costs. **If keeping costs nothing,
+   there is no case for closing.***
+4. **CHAIN CHECK.** *Is the verdict carried by **one** result, or by several narrowly-scoped ones conjoined?
+   **Each piece true and the conjunction unargued is the cyanide face**, and it is what fires here.*
+
+---
+
+## ⌗ THE FIFTH CHECK, added r2376+c54.19 — *and it fires where the other four do not*
+
+**⚠ THE FOUR CHECKS ABOVE ALL GATE A CLOSURE.** *c54.18 tripped none of them and was still wrong twice, so the
+guard set had a hole exactly where it felt safest: **a node that is not closing anything.***
+
+5. **RELATIVE-OR-ABSOLUTE.** ***Before recording that the geometry FAILS TO SUPPLY a distinction, ask whether
+   the distinction is one it should supply at all.*** *Run it as two questions, in order:*
+   - **(a) IS THE OBJECT THE RIGHT ONE?** *SAME-OBJECT, but applied to a **finding** and not only to a kill. At
+     c54.18 the object was wrong — six independent hinges instead of **three hinges with two ends**, the hinge
+     being the **line** the door swings on — and the wrongness manufactured a phantom: the pair the null
+     binding "excluded" **was the hinge itself**. **A misidentified object does not announce itself; it shows
+     up as a small mystery that is interesting for no stated reason.** Treat that feeling as the alarm.*
+   - **(b) IS THE MISSING DISTINCTION SUPPOSED TO BE ABSOLUTE?** *c54.18 recorded, as an "honest gap", that the
+     geometry does not show which two of a triple are the alike ones.* **Daryl:** *"just as well-posed as $udd$
+     as it is $uud$. They are complementary things … our universe emerged from an antimatter black hole because
+     it's 'antimatter' **relative** to our matter. That's the C thing. There is no geometric distinction of one
+     versus the other in an absolute sense."* ***The geometry was right and the demand was wrong.*** *The
+     symmetry group is transitive on the six ends: an absolute assignment is **forbidden**, not merely absent.*
+
+**⌗ WHY THIS IS THE SAME DEFECT AS THE R3 KILL, WEARING BETTER CLOTHES.** *The R3 kill said "CR does not
+deliver." c54.18 said "CR delivers **partway**, and here is the honest gap." **Both put the shortfall in the
+framework and neither asked whether the shortfall was in the demand.** The second is more dangerous than the
+first precisely because it **sounds like rigour** — it is hedged, it is modest, it volunteers a limitation,
+and every instinct the corpus has trained rewards it. **A node writing "the honest gap is…" should read that
+phrase as a flag on its own sentence and run check 5 before finishing it.***
+
+**⌗ AND THE POSITIVE FORM, which is the part worth keeping.** *When a symmetry forbids a distinction, **say
+so as a theorem** — "the group is transitive, so no invariant singles one out" — rather than as an absence.
+**The negative statement is a gap; the positive statement is a result**, and they are the same fact.*
+
+**⚠ AND THE FIFTH CHECK IMMEDIATELY GREW A SECOND HALF, because c54.20 passed it and still failed.** *Having
+proved that no **absolute** assignment exists, I then used that theorem to argue the geometry could not supply
+charge at all — and charge is not an absolute label on a point but a **directed arc between two**.*
+***So: a transitivity result forbids labels ON objects; it says nothing about RELATIONS BETWEEN them, and a
+node that reaches for it against a relation has turned the corpus's own relativity into an obstacle to using
+the corpus.*** **Run the check both ways: is the thing demanded absolute (then the theorem applies) or
+relational (then it does not)?**
+
+---
+
+## ⌗ THE SIXTH CHECK — *SCOPE*, added r2376+c54.21
+
+**⚠ THREE TURNS RUNNING, DARYL STATED A STRUCTURE AND A NODE READ IT DOWN TO THE SMALLEST THING IT COULD BE
+MADE TO MEAN.** *A statement about the fermion sector was worked as **baryons**. A statement carrying a **leg**
+count was worked as a **chord** count. A statement about a **directed relation** was met with an argument
+about **absolute labels**. **None of these tripped any existing check, because none of them was a closure and
+each was locally defensible.***
+
+6. **SCOPE.** ***When Daryl states a structure, ask what the LARGEST thing it could mean is, and work that.***
+   - *If a term he uses has a broader referent than the one being worked, **the broader one is the subject**.*
+   - *If a count he gives differs from the count in hand, ***his is counting something the ledger does not
+     carry*** — find the object, do not reconcile the number.*
+   - *If naming the working document requires a noun narrower than his statement, **the scope has already been
+     lost** — the name is the tell. (`THE_BARYON_RHYME` → `THE_FERMION_SECTOR_GEOMETRY` is the instance.)*
+
+**⌗ WHY THIS IS THE SAME DEFECT AS THE OTHERS, AT A THIRD ANGLE.** *A closure kills a question. A false gap
+puts the shortfall in the framework. **A narrowed scope does neither and is the hardest to see: the work is
+correct, it is just about a smaller object than the one that was handed over** — and the parts left outside
+never get registered, because a node cannot register what it has not noticed it dropped.*
+
+
+---
+
+## ⌗ THE SEVENTH CHECK — *INDEX SET vs STRUCTURE*, added r2376+c54.24
+
+**⚠ AT c54.23 A NODE WROTE: "wall $\leftrightarrow$ hinge is a bijection, so they are the same three; walls
+cannot carry a label different from hinges."** ***Invalid, and the Standard Model is the counterexample in plain
+sight: colour and generation are both threes, both permuted, and completely independent.*** *If a bijection
+between index sets forced labels to coincide, the Standard Model could not exist.* **Daryl, catching it:**
+*"walls and hinges are related to each other but are decidedly NOT the same thing … ask in what way they need
+to be actually completely divorced from one another before you would allow that two different things could be
+called separate things."*
+
+7. **INDEX SET vs STRUCTURE.** ***A bijection is not an identity. Before treating two structures as one, run
+   five tests, and they are the same thing only if it passes ALL five:*** *LOCUS (same place?) · TYPE (same
+   kind of object?) · DEFINITION (is one definable from the other with no further data?) · EQUIVARIANCE (is
+   the bijection natural?) · SEPARABILITY (can a quantity take different values on them?).*
+   - ***EQUIVARIANCE ALONE IS THE TRAP.*** *It is the test a canonical bijection always passes, and it is
+     precisely the one that does **not** force labels to coincide.*
+   - **And the right question is never "are they divorced?"** *Two structures carry independent labels iff the
+     **labels** can vary independently — which is a question about the set of realised **pairs**, not about
+     whether the objects are related.* ***Tightly related and completely distinct is not a tension; it is what
+     a factorisation looks like.***
+
+**⌗ AND THE STAKES, so this reads as more than pedantry.** *The bad inference had already been used to declare
+that a first-rank open item was **worse** than it was. Correcting it did not soften anything — the item
+(`L-67`) came out **forced rather than merely available** — but the correctness of the conclusion was luck, not
+method.*
+
+**⚠ AND A SWEEP CLAUSE, ADDED r2376+c54.25 AFTER THE CHECK FAILED IN THE OTHER DIRECTION.** *The criterion was
+built at c54.24 and then run on **exactly one pair** — wall vs hinge, the pair already under suspicion, which
+came out $4/5$ **different**. It was not swept.* ***One turn later Daryl pointed out that wall vs BRANCH POINT
+returns $5/5$ SAME — a TRUE identity sitting one line away in the same document, missed because the test was
+only pointed where a false one was expected.*** **A test applied only where you already suspect an answer
+returns the answer you suspected.**
+
+***So check 7 carries an obligation: having built the criterion, RUN IT OVER THE INVENTORY, not over the one
+pair that prompted it.*** *That sweep is `L-77`, and it has now produced evidence twice — once by finding a
+false identity, once by having missed a true one.*
+
+---
+
+---
+
+## ⌗⌗ REGISTER CROSS-REFERENCE — added r2378 on the observer line, and it found a hole in this register's own bar
+
+***`check_kills` protects an item by NAME. The lead register carries the same objects under DIFFERENT names.
+So the bar has a hole exactly the width of a name — and the one strike that went through it turned out,
+on testing, to be a bounded negative that the rules allow. The hole is real and has not been fallen
+through.***
+
+**The case, stated fairly.** *At c54.128 the working fork struck `L-164` and reasoned, in the row itself:*
+**"`check_kills` requires an authorisation file only for `PROTECTED_OPEN` items. This row is not one —
+checked: `L-164` appears nowhere in `PROTECTED_OPEN`. No rule required a sign-off."** *That is **correct on
+the letter**: the string `L-164` is not in this file. And `L-164`'s content is **`PO-4`'s object** — colour
+and isospin as structures on the cut.*
+
+**⚠ AND MY FIRST STATEMENT OF THIS WAS AN OVER-CLAIM, TESTED AND CORRECTED IN THE SAME PASS.** *I wrote that
+the bar "has already been walked through." **Then I ran the gate's own regexes against the row, and neither
+fires**: `CLOSURE` returns nothing, because the row's language is* **"the holonomy route is shut by an
+invariant"** *— a **bounded negative on a named route**, which is precisely what a node is permitted to write,
+with the residue recorded as* **"an unnamed mechanism is not owed work"** *rather than as a closure.*
+***So `check_kills` passed for the right reason and not by accident, and the fork's strike was inside the
+rules in substance as well as in letter.***
+
+**What the finding actually is, at its earned weight.** *The bar is **name-matched**, so it can only ever see
+a closure written against a `PO-` id. **A strike written against the `L-` name is outside its field of view
+whether or not it happens to be bounded** — this one was bounded, and the next one need not be. *The hole is
+real; it has not yet been fallen through.* **The node did the right thing by the rules as written, and the
+rules as written could not have caught it if it had not.** *The defect is the namespace split, not the node —
+which is the whole argument for one ID space, and the argument does not need an incident to stand.*
+
+**⛔ NOTHING BELOW IS CLOSED BY THIS LINE.** *Every item keeps the status it had. A closure on a protected
+question is the orchestrator's, and an observer that adjudicated one would be crossing a seat.* **What is
+added is visibility**: which register row carries the same object, and where the two disagree.
+
+| item | the register row carrying the same object | state of that row | ⚠ the disagreement |
+|---|---|---|---|
+| **PO-1a**–**PO-1d**, **PO-2**, **PO-3**, **PO-7** | named in the register by their own codes | — | *none — `check_kills` can see these* |
+| **PO-4** *colour and isospin on the cut* | **`L-164`** | ✔ **STRUCK c54.128** | ***the register row is struck and this item still stands OPEN.*** *Two named routes shut; the residue recorded as "an unnamed mechanism is not owed work."* **Whether that closes `PO-4` is Daryl's call, not this line's** — *recorded here so the question is asked rather than inherited* |
+| **PO-5** *quark/lepton split, what a baryon IS* | **`L-174`** | ✔ **registered r2378** | *was **unregistered anywhere**.* *`THE_PLAN`'s standing item ② and `THE_PHYSICS_REACH` ⑥b carry it; the register does not — so no burn-down, no supersession scan and no HOT budget reaches it* |
+| **PO-6** *the interacting tower — spectrum of $\hat\Gamma$, bounded below, UV definition* | **`L-165`** | **LIVE, shrunk c54.129** | *one of its three clauses is **answered**: $\hat\Gamma$ **is** bounded below, by the deparametrization itself.* **This row still lists it as open.** *The other two clauses stand* |
+| ~~**PO-8**~~ *irreducible reassignment remainder* | *(was P7 frontier item 3 → `CONSOLIDATE` §16 entry 1)* | **closed c54.118** | ✔ **RESOLVED r2378: struck, Daryl-authorised, receipt `kills/PO-8.md`.** *It had read "OPEN, gated on frontier 1" while the gate it named was answered at c54.113 —* ***this register was the last carrier still reading OPEN.*** *The ledger marks family 4 closed c54.118; P7 retired the item below its list.* **And the HOME this row cites — `CR_framework` P7 `sec:frontiers` item 3 — no longer exists**: *it moved to `CONSOLIDATE` §16 at r2378* |
+| **PO-9** *the dimensional rise* | **`L-175`** | ✔ **registered r2378** | *was **unregistered***, *and its guard is live and load-bearing — the cut's dimension is settled, the substrate's is bounded below only* |
+
+**⌗ WHAT THIS MEANS FOR THE BAR, mechanically.** *`corpus/check_kills.py` now reads this table's register
+codes alongside the `PO-` codes, so a strike on `L-164` — or on any row named here — trips the same
+authorisation requirement a strike on `PO-4` would.* ***The hole is closed by the cross-reference existing,
+not by anyone remembering it.***
+
+**⌗ AND THIS FILE IS AT c54.101** *while the fork is at c54.134: it mentions neither c54.118 nor c54.128, the
+two revisions bearing on it hardest.* **That is the wake, and closing it is this line's job, not the fork's.**
+
+## ⌗ THE REGISTER
+
+*Columns: the item · **its object**, which is the thing check 1 tests · where it lives · state.*
+**⚑ An item whose object is `NOT NAMED` is protected absolutely: it cannot be closed by anyone until the
+object is fixed, because there is nothing definite to close.**
+
+| # | the open question | its object | home | state |
+|---|---|---|---|---|
+| **PO-1a** | **`R3a` — the DESIGNATION $2{+}1$, and what it is a candidate for** | ✔ **NAMED r2376+c54.17.** *$\{$the designated root, on the line$\}$ against $\{$the ellipse pair$\}$ — a property of the **VANTAGE**, three per geometry, permuted by $S_3$. P14 calls the slicing's singling-out of one root against the ellipse pair a **flavour-breaking structure**. Generalises as $1+(D{-}2)$; a **conic** cofactor only at $D=4$* | `FIGURE_THEOREM_LEDGER` R3 | **OPEN, NARROWED c54.82.** *Natural candidate side: **generations / flavour-breaking**, unchanged.* ⌗ ***ONE READING OF THAT SIDE IS REMOVED: it is NOT the physical hierarchy.*** *This row's own naming decides it — 'a property of the VANTAGE, **three per geometry**, permuted by $S_3$' — while the hierarchy carries no such multiplicity. **An indexical structure cannot be an absolute one.** What it is, positively: the flavour-side indexical, 'the generation this cut is' against the other two — P3's own 'my horizon'.* **Narrowed, not closed** |
+| **PO-1b** | **`R3b` — the SIGN $2{+}1$, and what it is a candidate for** | ✔ **NAMED r2376+c54.17.** *$\{$positive roots$\}$ against $\{$negative$\}$ — a property of the **GEOMETRY**, designation-invariant, one per geometry; $\mathrm{sign}(r)$ is **species** in the corpus's canon* | `FIGURE_THEOREM_LEDGER` R3 | **OPEN.** *Natural candidate side: **species**. A kill was written c54.13 and retracted c54.14* |
+| **PO-1c** | **Does $uud$ have ANY geometric counterpart?** | the proton's within-baryon flavour $2{+}1$ | `GEOMETRY_PHYSICS_TAXONOMY` §IV | ⚑ **OPEN, and this is the question R3 was really asking.** *A **named candidate** exists — the causal $2{+}1$ of `PO-1d`. **But the question's SHAPE changed at c54.19 (Daryl):** $uud$ and $udd$ are **complementary**, and the geometry is **just as well-posed as one as the other** — as species is (our matter is matter only relative to the hole it came from; the $C$ thing). ***So a geometric counterpart is not owed an absolute assignment, and demanding one is the error.*** What is owed is the **relation exchanging the two readings**, and Daryl's candidate for its seat is **charge** — see L-59. **⌗⌗ ***A SECOND AND BETTER-TYPED CANDIDATE, REGISTERED c54.82 AND NOT CLAIMED: THE HORN.*** *A baryon is one constituent per HINGE; each constituent sits at a hinge END; the end's remaining bit is the HORN, which the corpus reads as ISOSPIN. **So a baryon's isospin content IS its horn assignment: $2^3=8$ configurations, six of shape $2{+}1$ ($uud$-shaped) and two of shape $3{+}0$ ($uuu$, $ddd$ — which the SM has as $\Delta^{++},\Delta^{-}$) — and the exchanging relation this row says is really owed is then $T$ itself, the horn swap, which is the operation carrying $u$ to $d$.*** ⚠ *At honest weight: eight is $2^3$ and any three binary labels give eight, so the COUNT is cheap; the $4\oplus2\oplus2$ the SM reads there needs each $\mathbb{Z}_2$ promoted to an $SU(2)$, which this construction does not do. **What is not cheap is the TYPE.*** ⚠ ***AND THE PREVIOUSLY NAMED CANDIDATE IS MIS-TYPED: c54.81 identified the causal $2{+}1$ as a partition of COLOUR (which hinge), and $uud$ is a flavour partition. So this row is left MORE open than it was, not less.*** ⌗ AND THE WHOLE READING IS NOW REGISTERED AS A WORKABLE OBJECT** in `THE_FERMION_SECTOR_GEOMETRY.md` — *eight terms, each with what a proof would have to establish **and what would refute it**; every row of it is protected here.* Nothing asserted* |
+| **PO-1d** | **The causal $2{+}1$ on the three hinges** *(Daryl's geometry; object corrected by him at r2376+c54.19 after c54.18 named it wrongly)* | ✔ **NAMED, AND ITS OBJECT IS THREE HINGES, NOT SIX.** *A hinge is the **line** the door swings on — timelike, piercing the substrate once per horn; the six are $3\times2$ **ends**. All fifteen pairs classify causally without remainder: **timelike $\iff$ same hinge**, **spacelike $\iff$ same horn**, **null $\iff$ neither**. From any end the causal reach splits the three hinges $\{$mine, timelike$\}\mid\{$two others, null$\}$* | `FIGURE_THEOREM_LEDGER` · `GEOMETRY_PHYSICS_TAXONOMY` | ⚑ **OPEN. ⚠ AND PROTECTED IN A SECOND DIRECTION, WHICH IS NEW:** *not only may no node close it, **no node may assert an absolute assignment for it either.** The symmetry group is transitive on the six ends with one orbit per causal class, so causal character is a **complete** invariant — the assignment is **relative to a chosen vantage** and a node that fixes it absolutely is asserting what the geometry forbids. **c54.18's "honest gap" was this fact misread as a deficiency, and that misreading is retracted.*** |
+| **PO-2** | **The Nariai / three-quark lead** | the three horizon roots, their zero-sum, and the distinguished merged member — against a baryon's three quarks in a colour singlet | `GEOMETRY_PHYSICS_TAXONOMY` §IV | **OPEN, NARROWED c54.84.** *Held at do-not-assert on three separated levels; **imploded and restored twice** (r696, and again at c54.13/14).* ⌗⌗ ***ONE LEG IS REMOVED: the 'distinguished merged member'.*** *At Nariai the geometry names **two** distinguished roots and they differ — the designated root merges with a pair member, so the root distinguished by designation is $1/\sqrt3$ and the one distinguished by the merger is $-2/\sqrt3$. **And on the colour side a distinguished one is structurally impossible: $\Lambda^3$ of the wall kernel is one-dimensional and generated by $\varepsilon$, so exchanging two colours reverses a sign and changes no physics.*** **The zero-sum triple and its resemblance to baryon combinatorics are UNTOUCHED and this row stays open on them** |
+| **PO-3** | **The a2-meaning drill-site** — *why* does the SdS geometry produce a zero-sum triple **with** a $\mathbf3/\bar{\mathbf3}$ parity doubling, and does that reason bridge to $\su(3)$? | the $A_2$ skeleton and the parity doubling | `GEOMETRY_PHYSICS_TAXONOMY` | **OPEN, AND MOVED FAR — this row's own status text was written before the colour arc and is corrected here rather than closed (c54.101).** *First half answered at c54.11 (the conjunction is available at one dimension).* ⚠⚠ ***THE SECOND HALF — 'the $\su(3)$ bridge is untouched and stays open' — IS NO LONGER TRUE AS WRITTEN. The bridge was BUILT at c54.42–c54.62:*** *no ambient bundle can carry $\su(3)$ (every candidate is real, and a real bundle's complexified holonomy lands in the real form), so the module is **the branching itself**; the wall is a wall OF A HINGE, giving three signed radii and a non-abelian monodromy; **the smallest connected group containing the three wall monodromies and the hinge $3$-cycle is $SU(3)$**, with the lap as its centre; and second quantisation on the wall kernel returns baryon $1$, diquark $0$, meson $1$, **selecting** the configuration group uniquely.* ⌗ **SO THE BRIDGE EXISTS ON THE DISCRETE SIDE AND DOES NOT ON THE CONTINUOUS: the bundle is FLAT — exact selection rules, no curvature, no force.** ⛔ ***STAYS OPEN, and on a sharper question than it was: not "is there a bridge" but WHY the substrate produces the conjunction at all, and what would supply the coupling. A row whose stated status has been overtaken is corrected, never closed, by the node that overtook it.*** |
+| **PO-4** | **The colour and isospin structure** ⛭⛭ **WHERE ITS REMAINING ROUTE WOULD HAVE TO RUN — routed r2398 from `ENTRY_POINT_REGISTER` U3, and it was not in this row.** *P13, in prose no gap-dig could reach (**"asserted nowhere"**):* ***geometric chirality can be carried ONLY by the discrete orientation parity $\mathrm O(5,1)\setminus\mathrm{SO}_0(5,1)$ — the one component the index obstruction, a theorem about CONNECTED groups, cannot reach, and where the gravitational sector's chirality already lives.*** *So a fermion sector built on **that discrete component**, rather than on a connected-group isometry, is* **"the single geometric opening the wall leaves"** *— and P13 holds it at exactly the right weight:* **"that it is an opening is a statement about where a construction could live, not a claim that one exists: it is unattempted here and asserted nowhere."** ⌗ *One level in (U4): on that component the parity acts as $\gamma^5$ itself — it does **not exchange** the chirality eigenspaces but **grades** them, so* ***the grading is supplied geometrically; only the sector is not built.*** ⛭⛭ **AND WHAT `PO-4` IS ABOUT, settled r2400 from `ENTRY_POINT_REGISTER` B10 — P13 distinguishes TWO fermion sectors and only the second is open.** *"A spinor sector on the slicing structure **is built**, as bound leaf-modes: it delivers the generation count, the chirality, and the family symmetry within CR. But it lives on the substrate's **discrete** component and supplies **no equivariant index** — its count is a **wall-localized leaf index, well-defined precisely where the bulk index is not**, and localized modes are indifferent to the bulk's non-compactness. The sector the obstruction would act on is the **other** one: **gauge-acted and isometry-realized, on the compact face**."* ⇒ ***The index obstruction and P14's built sector do not quantify over the same object*** — *which is how P14 could be built while the wall stands, and why the discrete-parity route above is the one geometric opening left.* ⚠⚠ **AND A TRIP-WIRE, from station `6h` r2414:** ***any result that promotes the gauge group from "the ordinary route" to FORCED re-opens a conflict with the Higgs sector.*** *At present CR **declines to supply** the gauge group rather than forbidding it — P13 proves **"not that the representation content is unreachable but that ONE ROUTE to it is closed"** — and that is why the two sectors compose. **If the group were ever forced, the Higgs scalar's representation would be forced with it, and could disagree with the observed one.** ⇒ *So a win here is not free: **it converts a complementarity into a testable prediction**, which is better physics and a harder claim.* | $\su(3)$ and $\su(2)_L$ as structures on the cut | `STATE_matter_sector` · `boundary_paper` · `matter_sector_paper` | **OPEN.** *The obstruction **moved** at c54.8 — from "cannot act internally at all" to "what reduces $\so(6)\to\su(3)$?" — it did not close* |
+| **PO-5** | **The quark/lepton split, and what a baryon IS at particle level** | the five multiplets, and which carries the colour $\mathbf 3$ | `THE_PHYSICS_REACH` ⑥b | **OPEN.** *Queued, never worked* |
+| **PO-6** | **The interacting tower** — the spectrum of $\hat\Gamma$, whether it is bounded below, the UV definition | the quantum sector's interacting theory | `CR_framework` P7 `sec:frontiers` item 6 | **OPEN.** *P7 names it in its own voice as a genuine frontier* |
+| **PO-7** | **The first acoustic peak** — $\ell_1\simeq140$–$150$ against the sky's $220$ | the CR acoustic spectrum | `CR_cosmology` · `STATE_programme` | **OPEN, and it is a live verdict question.** ⚠ *A negative here is a **measurement discrepancy**, not a framework verdict — the distinction this register exists to protect* |
+| ~~**PO-8**~~ | **The irreducible reassignment remainder** — Kerr-inner, RN-interior | those two reassignments | ~~`CR_framework` P7 `sec:frontiers` item 3~~ → **`CONSOLIDATE` §16 entry 1** | ✔✔ **STRUCK r2378, Daryl-authorised — receipt [`kills/PO-8.md`](kills/PO-8.md), four checks answered.** *Not closed by being answered but by **ceasing to be a frontier of this construction**: P9's range result places the Kerr-inner and RN interiors outside the slicing operator's reach, so what remains is ordinary interior analysis. The gate it named (frontier 1) was answered c54.113; the ledger marked family 4 closed c54.118; P7 retired the item c54.115. **This register was the last carrier still reading OPEN, and the HOME it cited no longer existed.** A proposed mechanism enters as a NEW row.* |
+| **PO-9** | **The dimensional rise, and what the descent must look like** | the substrate's dimension, **never the cut's** | `STATE_matter_sector` · `algebroid_paper` | **OPEN.** ⚠ *The cut's dimension is settled; **the substrate's is bounded below only**. A node that reads the first as capping the second has re-made the c54.6 error* |
+
+**⌗ HOW AN ITEM LEAVES THIS REGISTER.** *Two ways, and neither is a node's unilateral act:* **① Daryl closes
+it.** **② Its object is named, all four checks are written into a kill receipt under `kills/`, and Daryl
+authorises.** *An item may also **narrow** — its object sharpened, its scope reduced — and narrowing is
+**always** a node's to do and is what this register wants.*
+
+---
+
+## ⌗ THE GATE
+
+`corpus/check_kills.py` **fails the turn** if a registered item's home carries closure language without an
+authorised kill receipt. *Run it with `check_receipts.py`; both are cheap.* **The gate is the point: a rule a
+node must remember is a rule that fails exactly when context is long, which is when this failure happens.**
+
+---
+
+## ⌗ CHECK 8 — **A FIGURE'S MISREADING IS THE FIGURE'S DEFECT** *(adopted r2376+c54.43, Daryl)*
+
+**⌗ THE CASE.** *`fig:turnaround` panel (b) drew a circle with a marked centre labelled $r=0$, beside a panel
+that **is** a manifold. Daryl read it as the de Sitter hole:* **"That can't be the dS hole is it? Because there
+is no manifold in the hole."** *He was right about the substrate and right about the figure: panel (b) is the
+**complex $r$-plane**, a plane of **values**, where nothing is a hole and the centre is not a place — and the
+figure said none of that.*
+
+**⌗ THE RULE.** ***A figure that invites a wrong reading has that defect whether or not its content is
+correct.*** *The content here was verified — the cubic's discriminant matched the corpus's own
+$-108M^{2}\alpha^{4}$ exactly — and the figure was still wrong to publish, because* **a reader's misreading of a
+figure is evidence about the figure, not about the reader.**
+
+**⌗ WHAT TO DO.** *Before a figure lands, ask of every drawn element:* **(i) is this panel a MANIFOLD or a
+PARAMETER SPACE, and does the figure say which?** *(ii) does any symbol name different things in different
+panels — $r=0$ names a **value** in one and a **place** in the other?* **(iii) is any centre, circle or axis
+decorative rather than structural, and could it be read as an object?** *Panel (b) failed all three and now
+answers all three on its face.*
+
+**⚠ AND THE SPECIFIC TRAP, RECORDED SO IT IS NOT RE-SET.** *On the substrate the throat's interior **carries no
+manifold**, and $r=0$ is **on** the throat circle at $X_{1}=-\alpha$ — the **wall**, the back of the circle —
+never at a centre. The areal radius runs **from the wall** around the circle to the horizon points.* ***Any
+figure placing $r=0$ at a centre beside a substrate panel is making that error or inviting it.***
+
+## ⌗ CHECK 9 — **BEFORE RECORDING A CONFLICT, READ THE ABSTRACT AND OVERVIEW OF THE PAPER THAT OWNS THE OBJECT** *(adopted r2376+c54.58, paid for twice)*
+
+**⌗ WHAT IT COSTS TO SKIP IT, TWICE IN EIGHT REVISIONS AND BOTH TIMES AGAINST P3.** *At **c54.50** a brand-new
+monodromy matrix disagreed with `L-78`'s triality, and I recorded **the corpus** as carrying an unfixed lap
+orientation. **The corpus owed nothing** — the direction of the shift is forced and my matrix was the inverse deck
+generator. At **c54.52** a fork was recorded as **"the corpus contains two incompatible readings and has never
+noticed."** **P3 had noticed**, in its abstract and again in its overview: the vacuum construction charts the
+family with one door, the matter construction places one plane per hinge, *"three throat walls at distinct points
+of the throat circle **with disjoint support**"* — **which is exactly the premise the fork was said to turn on.**
+
+**⌗ THE ASYMMETRY THAT MAKES THIS A PROTECTED CHECK RATHER THAN ADVICE.** *A false alarm entered into the
+register, the receipts and a paper's index costs **more** than the error would have, because the next reader
+inherits a debt that does not exist and has to disprove it.* **And the alarm wears the costume of care: it is
+marked `⚠`, it is explicit, it looks like exactly the practice that is wanted.**
+
+**⌗ THE CHECK, and it is narrower than "read more" on purpose, so that it binds:**
+> ***Before a conflict between two parts of the corpus is written down anywhere, read the ABSTRACT and the
+> OVERVIEW of the paper that owns the object.*** *Not the whole paper — the two places where a paper says what it
+> is doing.* **Both of these were there.**
+
+**✔ AND IT EARNED ITS KEEP ON FIRST USE.** *At **c54.60**, applied to "which three are the generations", it found
+a **TRUE** cross-paper defect: P3 carried an identification P14 withdrew 27 revisions earlier, in three places —
+and with colour now seated on the vantages it would have collided outright.*
+
+## ⌗ CHECK 10 — **A PAPER CARRIES THE RESULT, NOT THE PATH TO IT** *(adopted r2376+c54.62, from Daryl's r1900 law)*
+
+**⌗ THE LAW IT SPECIALISES.** *`THE_PLAN` r1900:* ***"A probe that turns up a question either SETTLES it in the
+same turn, or the question does not enter the corpus at all. The plan carries WORK; the papers carry RESULTS. A
+question in a paper is a defect whatever the plan says about it."***
+
+**⌗ THE VARIANT THAT SLIPPED THROUGH IT.** *Nine consecutive revisions each landed **their own revision's state**
+into P14 — problem, sharper problem, "no choice works", resolved — and **two of those paragraphs posed as open a
+question the next paragraph settles.*** **No single edit broke r1900; the sequence did.** *The section had become
+a log of my dead ends with the answer at the bottom, 2,889 words where 1,454 said it.*
+
+**⌗ THE CHECK:**
+> ***When a section has been edited on more than two consecutive revisions, read it whole before landing the
+> next one, and ask whether it now reads as an argument or as a diary.*** **An open question that a later
+> paragraph closes is still a defect while it stands, and the reader has no way to know which paragraph is
+> current.** *The path belongs in the receipts and the register, which is what they are for.*

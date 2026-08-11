@@ -1,0 +1,12 @@
+\clearpage
+\section*{Appendix R\quad Computational Receipts}\label{app:receipts}
+\addcontentsline{toc}{section}{Appendix R: Computational Receipts}
+\small\noindent Each computation marked \rcptmarker\ in the text is verified by a runnable receipt in the \texttt{receipts/} directory that ships with this work; status \textsf{OK} = verified (traced, run, output matches the claim). This appendix is generated from the receipt index, not maintained by hand.\par\medskip
+\begingroup\renewcommand{\arraystretch}{1.25}
+\begin{description}
+\item[\label{rcpt:P04_redshift_isotropy_floor}\texttt{P04\_redshift\_isotropy\_floor}]\hfill\textsf{[OK]}\\
+\textit{sec:floor} \ (redshift-isotropy floor sigma\_path=sigma\_\{8,eff\}/(3 sqrt N)\textasciitilde{}2.8e-3 exceeds observed monopole isotropy (<\textasciitilde{}3e-6) by \textasciitilde{}3 orders -> matter-tracking expansion excluded). 
+\emph{Computes:} d\_lss integral -> N=1174; floor 2.77e-3; exclusion ratio 924\textasciitilde{}10\textasciicircum{}3; genuine-floor (biases down) + delta a/a=-1/3 delta derived
+ \emph{Bound:} linear separate-universe deficit taken as input
+\ \emph{Run:} \texttt{python3 receipts/P04\_modern\_parallax/P04\_redshift\_isotropy\_floor.py}
+\end{description}\endgroup

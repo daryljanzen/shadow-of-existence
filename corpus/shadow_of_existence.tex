@@ -1,0 +1,675 @@
+\documentclass[11pt,a4paper]{article}
+
+% [†ONT-EPI] EPISTEMIC GROUND — this paper is the HOME (ONTOLOGY_FOUNDATION_INDEX.md §1g).
+%   THE META-CARD: it licenses the word "forced" everywhere in the corpus, and fixes the ALTITUDE at
+%   which each forcing is held. Masthead / established here: theory-choice epistemology is a discipline
+%   of the same kind as the sciences (same object, method, data; its engine historiography); the FOUR
+%   RULES, of which R2 — prefer the world that REQUIRES the phenomena over the one that merely PERMITS
+%   them through adjustable parameters — is "the criterion of necessity, and the load-bearing one";
+%   LEAST-ARBITRARINESS = R2 in the ontological register (a structure with an unforced modulus is a
+%   family {W_λ}, not a world; maximal symmetry is the unique moduli-free choice) — this licenses the
+%   corpus's foundational SELECTION of the maximally symmetric substrate; thm:modal — THE MODAL FALLACY
+%   (absence of a local test is not absence of the fact), the logic P4 then empirically falsifies; the
+%   constructive ordering (ontology <- evidence; never read ontology off the coordinate scaffold);
+%   lem:vindication (the rules track what later measurement reveals — the heliocentric arc the worked
+%   case, shadow-read).
+%   *** THE §IMPERATIVE FOUNDATION (added r909; the Pass-1 card never read it): Phi = pi(W) — the observer
+%   holds the APPEARANCES, never the world. def:partition — the appearances divide into LITERAL components
+%   (pi acts trivially; they image W faithfully) and PERSPECTIVAL components (artefacts of pi), and BOTH
+%   CLASSES ARE NON-EMPTY — an OBSERVED FACT, not a postulate (the ecliptic is perspectival; the Moon's
+%   circuit literal). So NO BLANKET READING IS ADMISSIBLE, and reading every appearance literally is NAIVE
+%   REALISM OF THE APPEARANCES, the first thing a method must forbid. prin:imperative is FIRST-ORDER:
+%   parsimony, unified causes, hypotheses non fingo are SECOND-ORDER to it — the means, not the ground.
+%   prin:reclass — an admissible W must EXPLAIN the perspectival appearances (exhibit pi, show why they
+%   appear so), "not discard them, and not merely reproduce them": SAVING THE APPEARANCES IS NOT THE TASK.
+%   THE CLOSED-FORM RECLASSIFICATION (§108): in one companion case pi is an EXACT INVOLUTION P, and the
+%   partition APPEARS AS ITS TWO EIGENSPACES — f(r) splits into the R-even de Sitter geometry (literal,
+%   imaging the substrate) and the R-odd Schwarzschild mass (perspectival artefact). Where parallax and the
+%   retrograde loops identify the perspectival case FROM the appearances, this identifies it WITHIN a single
+%   exact description — "THE SHARPEST FORM THE METHOD AFFORDS." Cites P5 + P1; P5's rem:P-dS-Schw cites back.
+%   JOINT CLOSED BOTH WAYS ([†ONT-DISC] §1i link 7b). And §134's GUARD: least-arbitrariness selects a
+%   symmetry OF THE WORLD, NEVER OF THE DESCRIPTION — "a relabelling the world does not see grounds
+%   nothing." R3 reinforces: a structure whose every feature is set by its own hand is MAXIMALLY arbitrary,
+%   not least. ***
+%   *** THE BOUNDARY, and it binds this whole corpus: SELF-CONSISTENCY IS NOT SOUNDNESS. lem:vindication
+%   is built from successes — survivorship, not measurement — so it is "a compelling hypothesis with
+%   confirming instances, not a calibrated reliability." Sampling the cases where the rules MISLED
+%   (ether, caloric, Kepler's solids) and computing a base rate is set as the discipline's FIRST
+%   PROGRAMME, not presumed. Therefore every "forced within CR" is a coherence claim at rule-favoured
+%   altitude, awaiting the world's non-local discriminator — never correspondence. ***
+%   §place fixes the spine: P1 needs no epistemic ground; P4 is where the programme first leans on the
+%   method; p0's unification is held at coherence-not-correspondence; P16 draws R2 at its sharpest.
+%
+% =====================================================================
+% SPINE POSITION — P6 (r531 core-theory/applications restructure).
+%   [r543 honesty note; r909 correction] Current canonical numbering: this
+%   paper is P6 (shadow_of_existence), sitting immediately after P4
+%   (modern_parallax) — where the programme first leans on the method — and
+%   immediately before P7 (CR_framework), the cosmology it steadies. (The
+%   r543 note read "between P5 modern_parallax and P7"; the r620 physics-first
+%   swap made modern_parallax P4 and groupoid_paper P5, and this line was not
+%   updated then. Corrected r909 by the shared-structural-detail sweep.)
+%   The narrative below predates the r531 renumber and is retained as
+%   provenance only — all P-numbers in it are historical, not current.
+%   Citations are key-based; authoritative numbering: CORPUS_MAP.md.
+% THE GIFT: grounds the method the
+% modern parallax (P7) and the dynamic half already lean on, on empirical
+% (historiographic) grounds; adds stability beneath the cosmology. It
+% REQUIRES P7 (the forward empirical instance, the modern parallax); it
+% does not re-prove thm:augmentation (that stays in P7, the cash-in). It
+% reveals and grounds the inference P7 already made. Citations key-based,
+% so the renumber cascade (CR_flatLCDM P8->P9, canonical_time P9->P10,
+% dynamics P10->P11, algebroid P11->P12, boundary P12->P13) breaks no
+% cross-reference. Built from SHADOW_READING_FORMAL_SPINE.md. Register:
+% method-and-calibration; the PST scientific-ethics hinge is left to its
+% own piece, to keep this reading as calibration rather than advocacy.
+% Source essays: Scientific Shadow Reading (method), Setting the Record
+% Straight (the historiographic data-validation), The Fortress of
+% Misunderstanding Physics (the operable four rules).
+% =====================================================================
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{receipts}   % r2376+c54.9: \rcpt was used without it -- the paper did not compile
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{principle}{Principle}
+\newtheorem{definition}{Definition}
+
+\title{The shadow of existence:\\
+\large scientific theory-choice as an empirically grounded discipline,\\
+calibrated on the historical record and on a live programme}
+\author{Daryl Janzen\\
+\small Department of Physics and Engineering Physics, University of Saskatchewan}
+\date{}
+\newcommand{\dd}{\mathrm{d}}   % r2376+c54.9: used but undefined -- the paper did not compile
+\begin{document}
+\maketitle
+
+\begin{abstract}
+A physical theory is chosen, ahead of any decisive measurement, by criteria---coherence, the requiring rather than the permitting of the phenomena,
+consolidation, resistance to patchwork---that are usually treated as the province of philosophy, standing outside science and adjudicating it from
+above. We argue that this is a category placement, and the wrong one. The epistemology of scientific theory-choice is a discipline of the same kind
+as the sciences it grounds, with the same object and the same method: it reads the structure behind appearances---here, which inference rules
+reliably track the world---by the science's own procedure, off the science's own record. Its empirical engine is historiography, and its data are
+episodes in which a structure favoured by these criteria \emph{ahead of} a decisive, non-local measurement was then \emph{vindicated} by that
+measurement. We make the inference rule explicit (ask what world must exist for the appearances to arise), its operable form (four rules of
+reasoning), its characteristic dual (the modal fallacy: no local discriminator is not the absence of the fact), and its constructive ordering
+(ontology from evidence, kinematics from ontology, coordinates from kinematics). We add the constraint that an admissible world must \emph{explain}
+the perspectival appearances---exhibit the projection under which they arise---rather than discard them or merely reproduce them, and we identify the
+ontological register of the criterion of necessity: \emph{least-arbitrariness}, under which a structure carrying an unforced modulus is not a single
+world but a family, and is inadmissible on that ground, the maximally symmetric structure being the unique one that requires its own configuration. The register's boundary is drawn with it, since a criterion claimed to apply everywhere is as suspect as one that applies only where it was formulated: a modulus fixes how a symmetry is \emph{broken}, so an unforced choice that leaves the symmetry maximal---the dimension of a maximally symmetric substrate is the programme's first such case---lies outside the register, and where form is silent content may still decide.
+
+The evidence runs in two directions and is of one form. \emph{Backward}, into the settled record: heliocentrism, favoured by symmetry and necessity a
+century before stellar parallax measured it, is the worked case, and the received narrative must itself be shadow-read before it can serve as
+evidence. \emph{Forward}, into the live present, the base is not a single episode but a family: the cosmic rest frame vindicated by the
+redshift-isotropy floor, a redshift-free expansion rate that resolves the Hubble tension without a tuned background, and primordial abundances that
+follow from ordinary nuclear physics on a hot dense history the construction already possessed. \emph{The relation to the companion programme is
+therefore two-way.} That programme leans on this discipline for the warrant of its central reading; but its independently derived results also
+\emph{supply} data to the engine here---each is a structure the rules favoured ahead of its decisive measurement, and the record of what those
+measurements returned is evidence about the rules, not merely an application of them.
+
+Turned on the corpus it grounds, the method returns more than certification. One observed boundary---the radius at which a bound structure's hold
+gives way to the cosmic expansion---is described in seven independent idioms by papers written for unrelated ends---six geometric or structural and one dynamical, the last locating it as the exact radius at which the areal acceleration changes sign, and no single paper of the programme listing them all; read each for the world it shadows,
+they converge on one fact about the existent, and a long-standing physical tension is thereby \emph{explained} rather than weighed. A family of
+general relativity's standing problems is shown to dissolve together under a single distinction, each standard patch identified as a device that
+merely permits a resolution. And the criterion's oldest outstanding demand is met: the initial expansion rate of the universe,
+which Eddington objected in 1933 was \emph{postulated} rather than explained---an unforced modulus, on the reading given here---is supplied by the
+companion framework as a continuous process occupying no cosmic time, with the divergent rate and deceleration exhibited as \emph{effective},
+perspectival consequences of parametric motion rather than dynamical causes. \emph{That the criterion identified the shape of that answer ninety
+years before the means existed to compute it is itself a datum for the engine.} And applying the criterion to that gathered class amends the programme's own account of itself: the dissolutions are not
+one move recurring but \emph{two}---reclassification, which exhibits a projection, and least-arbitrariness, which denies a quantity a referent---with
+distinct failure conditions and no implication between them.
+
+Throughout we mark the altitude. A reflexive closure is not soundness: a method can be coherently, reflexively wrong. The vindication lemma is stated
+in falsifiable form, and the sampling that would test it---successes and failures alike, together with the episodes in which the criterion was
+applied in print and disregarded---is set out as the discipline's first programme, on the reasoning that a reliability estimate built from one's own
+successes is survivorship and not measurement.
+\end{abstract}
+
+\section{Introduction: the ground beneath the ground}\label{sec:intro}
+
+The companion paper establishes, from the isotropy of the cosmological redshift, that a global cosmic time and a uniform expansion are not conventions the data tolerate but structures the data force, and reads that forcing as the empirical realization of a definite ontology~\cite{JanzenModernParallax}. The reading turns on a methodological commitment made before the data are consulted: that an appearance may be a projection distorted by perspective rather than a literal image of the world, and that the task of a theory is to infer the world that casts the appearance rather than to reproduce the appearance. That commitment is doing real work---it is what licenses treating the manifold of records as the shadow of an existing, evolving layer rather than as the existent itself---and a result that leans on it owes an account of why the commitment is warranted. This paper is that account. It does not re-establish the companion result; it grounds the ground the result stands on.
+
+The commitment is usually classified as philosophy: a stance on scientific method, argued a priori, standing outside the sciences and adjudicating them. We argue the classification is a category error of exactly the kind the commitment itself warns against, and that the correct placement changes the perceived shape of the subject without inventing it. The epistemology of scientific theory-choice---the study of how a theory is rightly chosen under the underdetermination that precedes decisive measurement---is not philosophy looking in from outside. It is a discipline of the same kind as the sciences it grounds. Its object is a structure behind appearances: which rules of inference, applied to the shadows, reliably recover the world. Its method is the sciences' own: infer the structure that must exist for the appearances to arise. And its appearances---its data---are the historical record of theory-choice itself, read with the same refusal to take the record at face value that the method demands of any science. The enterprise is thereby grounded not in a posit imported from outside it, but reflexively, in an instance of the very kind of thing the enterprise exists to discover.
+
+This is an identification, not an invention, and it joins onto existing structure. Kuhn put theory-choice values and the historical record at the centre of the question but read the shared values as non-algorithmic, underdetermining choice rather than tracking truth~\cite{Kuhn1962}; the vindication lemma below is the step past that reading. Quine urged that epistemology be naturalized, made continuous with empirical science rather than its a priori foundation~\cite{Quine1969}; Laudan's normative naturalism treats methodological rules as hypothetical imperatives, instruments to be tested against the historical record of what has and has not advanced knowledge~\cite{Laudan1977, Laudan1987}; and the standing debate between the no-miracles argument and the pessimistic meta-induction is already an argument, conducted on historical evidence, about whether scientific method tracks truth~\cite{Putnam1975, Laudan1981}. What we add to this line is specific: a definite engine (the inference rule of \S\ref{sec:imperative} and its operable rules, \S\ref{sec:rules}), the ontological register of its criterion of necessity---\emph{least-arbitrariness} (\S\ref{sec:least-arbitrariness}), under which a structure carrying an unforced modulus is not a single world but a family and is thereby inadmissible, the maximally symmetric structure being the unique one that requires its own configuration; a case in which the reclassification is carried out in closed form, the projection an exact involution whose eigenspaces \emph{are} the partition of the appearances (\S\ref{sec:imperative}); the demonstration that the engine passes its own test (\S\ref{sec:reflexive}), the insistence that the historical record be itself shadow-read before it can serve as evidence (\S\ref{sec:engine}), and an explicit statement of the calibration that would convert the engine's track record from a collection of confirming instances into a measured reliability (\S\ref{sec:boundary}). We claim the lineage rather than ignore it; engaging the antecedents is itself one of the disciplines the method enjoins.
+
+The structure that emerges runs in two directions, and the central observation of the paper is that both are empirical and of one form. \emph{Backward}, into the settled past: a structure favoured by the rules ahead of a decisive measurement, then vindicated when the measurement arrived---heliocentrism, favoured by coherence and necessity, vindicated by stellar parallax. \emph{Forward}, into the live present: a structure favoured by the rules, vindicated by a measurement now in hand---the cosmic rest frame, favoured by the same criteria, vindicated by the isotropy of the cosmological redshift~\cite{JanzenModernParallax}. The backward direction grounds the \emph{method}; the forward direction, the \emph{theory}. They are the same move, read once in the record and once in the sky, and the discipline that justifies the move is the move applied to its own history.
+
+A third movement follows, developed where the paper takes its place in the programme (\S\ref{sec:place}). Turned on the corpus it grounds, the same move does more than certify results reached elsewhere---it \emph{synthesises} them. The programme's papers describe one observed boundary, the radius beyond which local structure yields to the cosmic expansion, in several idioms at once; read each for the world it shadows, they converge on a single existent fact, and a long-standing physical tension is thereby \emph{explained} by the discipline rather than merely weighed by it. And the same move, carried to its depth, resolves not a boundary's descriptions but two whole worlds: the framework's central theorem, that a black hole and a cosmos are one evolving existent read from two causal vantages, is this reclassification at its fullest~\cite{JanzenCRframework}. That the method, applied to its own programme, returns a consequence of its own is the strongest form its claim---to be a science among the sciences, not a tribunal above them---can take.
+
+\section{The imperative and the reclassification constraint}\label{sec:imperative}
+
+We begin with the structure of the problem the method solves. Let an observer have access not to the world but to its appearances under a perspective---a projection. Write $\Phi=\pi(W)$: the appearances $\Phi$ are the image of the world $W$ under a perspectival projection $\pi$, and the observer holds $\Phi$, never $W$ directly. This is Plato's cave~\cite{PlatoRepublic} stated as a map: the prisoners read shadows for reality, and the freed prisoner who has seen the casting objects is disbelieved on return. Astronomy, almost never leaving the cave, is the discipline that learned to infer the casting structure from the shadows alone.
+
+\begin{definition}[The partition]\label{def:partition}
+The appearances divide into \emph{literal} components, on which $\pi$ acts trivially and which image $W$ faithfully, and \emph{perspectival} components, which are artefacts of $\pi$---projection illusions. Both classes are non-empty.
+\end{definition}
+
+\noindent That both are non-empty is not a postulate but an observed fact about the appearances science actually faces: the Sun's annual path along the ecliptic is a perspectival illusion of the Earth's motion, while the Moon's monthly circuit is a literal orbit. Because both kinds occur, no blanket reading is admissible. The error of reading every appearance literally---identifying $\pi(W)$ with $W$, the shadow with the structure---we call naïve realism of the appearances; it is the first thing a method must forbid. A perspectival component need not, however, be an \emph{illusion}: the companion black-hole result exhibits one that is real. The metric's verdict that two null-separated horizon events share one place and one instant is a genuine fact about the measure---the separation truly collapses---yet perspectival still, a fact about the ruler and not the identity of the events, which stay distinct on the point-set the ruler is laid over~\cite{JanzenBHcausality}. The perspectival class is thus not the class of \emph{false} appearances but of those that image $\pi$ rather than $W$; some, like this one, are entirely real as facts about $\pi$. Nor does formal resemblance sort the two classes: a companion sets a genuine metric collapse---a place its chart draws as an extended line---beside the Mercator map's rendering of the North Pole as its top edge, an identical-looking line that is a pure coordinate artefact concealing an ordinary point; the appearances coincide in form, and only exhibiting the projection each arises under---reading the drawn line back through the chart's degeneration---sorts the one from the other~\cite{JanzenCircle}. Formal likeness is no guide to the partition, which is exactly why the reclassification below demands the projection be shown and not merely the appearance saved.
+
+\begin{principle}[The imperative]\label{prin:imperative}
+Do not take the appearances at face value. Infer the world $W$ such that $\Phi=\pi(W)$: ask what world must exist for the appearances to arise.
+\end{principle}
+
+\noindent This is first-order. The familiar maxims of scientific reasoning---parsimony, the preference for unified causes, the provisional trust in inductive generalization, the refusal to feign hypotheses absent guiding phenomena~\cite{NewtonPrincipia}---are second-order to it: they are the means by which the imperative is carried out, not the ground on which it rests. The imperative is made a method, rather than a licence, by two constraints. The world $W$ is pinned by comparing the appearances across perspectives and demanding a single $W$ consistent with all of them. And, decisively:
+
+\begin{principle}[Reclassification]\label{prin:reclass}
+An admissible $W$ must \emph{explain} the perspectival appearances---exhibit the projection $\pi$ under which they arise and show why they appear as they do---not discard them, and not merely reproduce them.
+\end{principle}
+
+\noindent The distinction in the last clause is the one most often lost. To ``save the appearances''---to construct a model that reproduces what is seen---is not the task; a model can reproduce the ecliptic path exactly while saying nothing true about why it appears. The task is to account for the appearance, which in the perspectival case means reclassifying it: the retrograde loops of the outer planets are not real reversals to be tracked by ever-finer machinery but the parallax of the Earth's own motion as it overtakes them, and the right theory dissolves the puzzle they posed by identifying what they are. A correct explanation makes the misleading appearance intelligible; it does not fence it off with auxiliary devices. A dissolution can moreover be entirely \emph{ontology-free}. The companion circle paper undoes the standard verdict that the Schwarzschild curvature singularity is an inextendible boundary not by any claim about which manifold is fundamental, but by exhibiting the analytic continuation that carries the curve through it---the puzzle dissolved by identifying what the point is, on the bare analytic structure, nothing assumed about the world beyond the appearance's own smoothness~\cite{JanzenCircle}. It is the reclassification in its most economical form, and a reminder that dissolving a puzzle by identity need not wait on settling an ontology.
+
+\medskip
+\noindent In one case the reclassification is carried out in closed form. The gravitational reading of the companion papers~\cite{JanzenSlicing, JanzenGroupoid, JanzenBHcausality, JanzenCircle} holds the mass, the horizon, and the central curvature singularity of a Schwarzschild geometry to be not features of the world but perspectival artefacts of a charting vantage on a de~Sitter substrate---dissolved, as the retrograde loops are, by identifying the projection that casts them. What is distinctive is that the projection is there an exact involution $R$,\footnote{Corpus convention: $R$ is the orientation/mass-reflection parity---the $A_2$ diagram automorphism $\in\mathrm{O}(5,1)\setminus\mathrm{SO}_0(5,1)$, realised on spinors as $\gamma^5$~\cite{JanzenGroupoid}. (The corpus reserves ``$P$'' for the areal spatial parity $r\mapsto-r$, which does not appear here.)} and the partition of Definition~\ref{def:partition} appears as its two eigenspaces. The metric function $f(r)=1-2M/r-r^{2}/\alpha^{2}$ separates into the part $R$ fixes---the de~Sitter geometry $1-r^{2}/\alpha^{2}$, the literal content imaging the substrate---and the part $R$ reverses---the Schwarzschild mass $-2M/r$, the perspectival artefact. The reclassification constraint is then met not by inferring the projection from a spread of perspectives but by exhibiting it outright: $R$ is written down, and an appearance is reclassified by reading which eigenspace it occupies. Stellar parallax and the retrograde loops are the perspectival case identified \emph{from} the appearances; this is the perspectival case identified \emph{within} a single exact description---the sharpest form the method affords, in which a misleading appearance is named an artefact of the projection at the same stroke that the casting world is exhibited.
+
+\section{The operable instrument: four rules of reasoning}\label{sec:rules}
+
+Many worlds may satisfy $\Phi=\pi(W)$. Before a decisive measurement the appearances underdetermine the structure, and selection proceeds by four rules, which are the explicit and wieldable form of the imperative~\cite{JanzenShadowReading, JanzenFortress}.
+
+\emph{Rule 1 (against naïve realism).} Do not privilege the world that maps the appearances most directly onto ``what is really happening.'' All coherent candidates are to be weighed objectively; directness of fit is not evidence of truth. The programme's sharpest instance of this rule is cosmological: reading the synchronous FLRW projection---the directest-fit appearance, the very shadow of the title---as the physically evolving world is exactly the error this rule forbids, and it is one the standard cosmological machinery commits by construction. The cosmology's three-level scoping is Rule 1 made operational there: it holds that observed projection (its ``$E=1$ projection'' level) apart from the layer's own geometric expansion, so that a computation reads the geometry rather than collapsing it into its appearance~\cite{JanzenCosmogenesis}.
+
+\emph{Rule 2 (structural consequence over parameter fitting).} Prefer the world that \emph{requires} the observed phenomena as a consequence of its structure to the world that merely \emph{permits} them through adjustable parameters. A framework on which the phenomenon could not have been otherwise is an explanation; one on which it is one tuned possibility among many is a description. This is the criterion of necessity, and it is the load-bearing one.
+
+\emph{Rule 3 (consolidation and parsimony).} Prefer the world that unifies many phenomena under one structure to the world that treats them as separate patterns each fixed by its own hand.
+
+\emph{Rule 4 (against ad hoc modification).} Reject the framework that survives only by accumulating modifications to reconcile its predictions with observation. Serial patching is the signature of a framework whose foundation is wrong, however ingenious each individual patch.
+
+These rules license judgement precisely when rival frameworks fit the same data and the decisive evidence is not yet in hand---the situation in which theory-choice actually occurs. They have visible structural signatures. A failing framework shows parameters that must be set inconsistently across data sets, and a growth of devices whose only function is to absorb discrepancy---the eccentric and the equant of Ptolemaic astronomy, ungrounded in any physics and present only to recover the appearances; in our own era, the proliferating adjustments by which a fixed background is kept fitting the sky. A sound framework shows the opposite: the phenomena fall out as structural consequences, distinct phenomena consolidate into one class, and the puzzles of the old framework dissolve by identity rather than being managed by conjecture.
+
+\section{The ontological register: least-arbitrariness}\label{sec:least-arbitrariness}
+
+The four rules select among worlds that fit given phenomena. The criterion of necessity governs a second selection the imperative also demands---of ontological structure itself---and there it takes a sharp and nameable form.
+
+A candidate world may carry an \emph{unforced choice}: a parameter---a modulus---that fixes how some symmetry is broken and that neither the appearances nor any deeper principle pins. In the ontological register this is exactly what Rule~2 rejects. A structure carrying such a modulus is one tuned possibility among many, a description; the equant is its historical type, a device ungrounded in physics, present only to select one arrangement among those a symmetry left open. A structure carrying no such modulus \emph{requires its configuration as a consequence of its own form}, an explanation. The maximally symmetric structure is the unique one of the second kind: every less symmetric structure requires a choice of how to break the symmetry, and that choice is a modulus, whereas maximal symmetry leaves nothing to choose. The preference for it we call \emph{least-arbitrariness}; it is Rule~2 read on the world's own form.
+
+The imperative makes the preference an exclusion. It demands a single $W$ consistent with all perspectives (\S\ref{sec:imperative}); a structure with a free modulus is not a single world but a family $\{W_\lambda\}$, and answers ``what is the world?'' with a family rather than a world. It is inadmissible as it stands, not merely disfavoured, and the moduli-free structure is the sole determinate answer---which Rule~2 then certifies as the explanatory one. Rule~3 reinforces from the other side: a structure whose every feature is set by its own hand is \emph{maximally} arbitrary, not least; symmetry is the absence of independently-set features, and the maximally symmetric structure is their consolidation.
+
+The principle is not new to the discipline; it is the move the worked case already runs on. The heliocentric structure was preferred a century before parallax because it was the less arbitrary---the standing objection answered ``not from parallax\ldots\ but from symmetry'' (\S\ref{sec:engine}), Copernicus's decisive complaint being against the equant as a violation of the uniform motion it was introduced to save. The symmetric arrangement was chosen because it \emph{required} what the arbitrary device merely accommodated, and Bessel's measurement vindicated it. Least-arbitrariness therefore inherits the vindication lemma's support directly, as the reading of Rule~2 that the record's cleanest instance instantiates. The programme runs the same move on its own foundation: the de~Sitter substrate is selected as the \emph{unique} maximally symmetric real-Lorentzian manifold, every less symmetric candidate carrying a modulus---a choice of how to break the symmetry---that neither the appearances nor any deeper principle pins, so the substrate \emph{requires} its configuration from its own form rather than tuning one among a family~\cite{JanzenSlicing}. Least-arbitrariness is thus not only the historical record's cleanest instance but the principle by which this programme fixes what it is a theory \emph{of}.
+
+It is worth recording that the criterion does work in sectors this paper does not touch, since a criterion that applied only where it was formulated would be suspect on its own terms. Three further instances stand. In the cosmological sector the case is the sharpest one the programme has against the standard account: the late-time acceleration is standardly carried by an added component with its own equation-of-state parameter---a modulus neither the appearances nor any deeper principle pins---whereas on the substrate the comoving acceleration is $\mathrm{d}^{2}r/\mathrm{d}\tilde\tau^{2}=rK_{G}$, the existent slice's own Gaussian curvature up to a positive factor, so the expansion decelerates while the slice is negatively curved and accelerates once it is not, with the turnover at the flat locus and nothing tuned to place it~\cite{JanzenSlicing,JanzenCRcosmology}. \emph{The appearance is read as a property of what exists rather than as a further existent}---which is this paper's own ordering, ontology from evidence, applied where the standard account adds a sector instead. In the discrete sector, the $\mathbb{Z}_3$-symmetric three-plane configuration is the unique one carrying no modulus---the symmetric point, pinned by the symmetry, the asymmetric alternatives being unforced choices~\cite{JanzenMatter}. And in the canonical sector the form is as sharp as it becomes anywhere in the corpus: the scale-factor Hamiltonian admits a genuine \emph{one-parameter family} of self-adjoint extensions---a $\lambda$ the formalism does not pin, indexing distinct quantizations and so distinct predictions---and it is closed without a free parameter by the de~Sitter horizon's own surface gravity $\kappa=1/\alpha$ and the regular Euclidean state at that $\kappa$~\cite{JanzenCanonicalTime}. There the family $\{W_\lambda\}$ of this section's argument is not an idealisation but the literal object, and the structure requires its configuration in exactly the sense above.
+
+What those instances are, and are not, must be said plainly here rather than left to the boundary section to recover. They answer a charge of ad-hocness---a criterion that applied only where it was formulated would be suspect---and they answer nothing further. \emph{Five applications of a criterion within a single programme, by the same hand, are five bets outstanding and not five confirmations}; the reasoning of \S\ref{sec:boundary} against reliability estimates built from one's own successes applies to this programme with no discount, and the vindication lemma's exposure is exactly what it was before they were counted. \emph{The foliation case requires a separate accounting, and it has been mis-assessed here.} It was recorded
+as concordance rather than vindication on the ground that the redshift-isotropy
+measurement~\cite{JanzenModernParallax} was long in hand before the criterion was brought to it. \emph{That is
+true of this programme's application and false of the question.} The selection was made in 1920. Eddington,
+writing three years after de~Sitter's response to Einstein had put the assumption of a preferred rest frame
+under attack, held that \emph{``the world taken as a whole has one direction in which it is not curved; that
+direction gives a kind of absolute time distinct from space''}, and that relativity \emph{``is not concerned to
+deny the possibility of an absolute time, but to deny that it is concerned in any experimental knowledge yet
+found''}, so that \emph{``it need not perturb us if the conception of absolute time turns up in a new form in a
+theory of phenomena on a cosmical scale, as to which no experimental knowledge is yet
+available''}~\cite{Eddington1920}. \emph{The ground he gives is geometric, and he names the absence of the
+discriminator himself.}
+
+\emph{That is the lemma's pattern, in the author's own words.} The microwave background was not discovered
+until 1965 and the isotropy floor is a modern measurement, so the selection precedes its discriminator by at
+least forty-five years, and the structure selected---\emph{``a being coextensive with the world might well have
+a special separation of space and time natural to him''}---is the cosmic foliation the later measurement
+constrains. \emph{And the instance carries a feature the heliocentric one does not}: Eddington states the absence of evidence explicitly, as the reason the question stands open, so the selection is on the record as having been made without a discriminator rather than reconstructed as such afterwards. \emph{We record it as a second instance of the record's pattern and not as a
+credit to this programme}, whose own application came long after the measurement; what the correction removes
+is the implication that no selection preceded it.
+
+The criterion needs a guard, which those instances make plain, and the word \emph{modulus} carries three distinct senses across this corpus that the guard has to keep apart. In the sense used here it is an \emph{unforced parameter indexing candidate worlds}: unpinned by appearances or principle, so that the candidate answers ``what is the world?'' with a family, and inadmissible on that ground. The self-adjoint $\lambda$ above is of this kind. In a second, purely geometric sense a modulus is a coordinate on a space of inequivalent solutions---as the mass is for the space of cuts, where different-mass cuts are non-isometric and no connected substrate isometry relates them, so that the mass is a modulus \emph{transverse} to the orbits~\cite{JanzenAlgebroid}. \emph{That sense is not what this criterion excludes, and nothing here counts against it}: a space of physically distinct solutions is not a family of rival worlds, and a theory is not made arbitrary by the fact that its solutions differ. In a third sense a parameter may simply record an unknown \emph{datum} of one world---a collapse progenitor's mass, which no appearance pins and no principle fixes, yet whose want is an epistemic gap and not a family: one world with something unmeasured in it, a different complaint answered by different means. Read without these separations, least-arbitrariness would proscribe both ordinary ignorance and ordinary solution spaces, and neither is its office.
+
+Its scope is the boundary of \S\ref{sec:boundary}. Least-arbitrariness is a rule-favoured theory-choice held at coherence: it selects the structure the criterion of necessity favours, not one a measurement has confirmed, and its soundness is the empirical question the discipline sets as its first programme. And it selects a symmetry of the \emph{world}---a fact about the structure---never a symmetry of the \emph{description}, which the constructive ordering (\S\ref{sec:ordering}) forbids reifying; a relabelling the world does not see grounds nothing, and the two must be kept apart.
+
+A worked instance of that last distinction is available in the companion framework, and it is unusually sharp because the description's feature can be exhibited as a single term. In the Schwarzschild--de~Sitter reading the metric function splits under the backward-radial reflection into an invariant part and an odd part carrying the perspectival mass; and that one odd term is what separates the collapse's dynamical turning point from the coordinate origin, what makes the curvature reading diverge at that origin, and---through the collapse it makes possible, whose horizon fixes a limiting causal direction generically non-orthogonal to any slice---what makes the synchronous identification a commitment rather than a truth. Three readings the standard picture treats as independent features of a beginning are thus one reified feature of a description, appearing and lapsing together with that term~\cite{JanzenCRframework}. The instance is worth naming here because it shows the reification the ordering forbids doing its damage in several places at once, and being undone in all of them by the same correction.
+
+\subsection{The register's boundary: an unforced choice the criterion cannot reach}\label{sec:register-boundary}
+
+A criterion that applied only where it was formulated would be suspect, and the instances above answer that
+charge. A criterion claimed to apply everywhere is suspect for the dual reason, and this subsection answers
+that one, by naming a place where least-arbitrariness is silent---stated here rather than discovered later
+against the criterion.
+
+A modulus, in the sense this section uses, is a parameter that fixes \emph{how a symmetry is broken}. The
+dimension of a maximally symmetric substrate is not such a parameter. De~Sitter space is maximally symmetric
+and moduli-free in every dimension, so no member of the family carries an unforced choice of how to break
+anything, and the criterion has nothing to grip: it selects the manifold \emph{at fixed dimension} and is
+silent on the dimension itself. That is not a failure of the criterion but a boundary of its register, and the
+boundary is sharp: what least-arbitrariness rejects is a family $\{W_\lambda\}$ generated by an unbroken
+symmetry's leftover parameter, and a family indexed by dimension is not of that kind.
+
+Two consequences follow, and the second is the substantive one.
+
+First, unforced choices divide into two kinds, and only one of them is this register's business. There are
+those the criterion reaches---moduli, where the moduli-free structure is the sole determinate answer and Rule~2
+certifies it as the explanatory one. And there are those it does not---discrete structural choices that leave
+the symmetry maximal, where form has nothing to say. \emph{The dimension is of the second kind}, and before it
+every unforced choice the programme had encountered was a modulus, so it was natural to read the criterion as
+covering unforced choices as such. It does not.
+
+\emph{And the dimension is not alone there, which is worth saying because a boundary with one instance reads as
+an exception and a boundary with three reads as what it is---a
+class.}\rcpt{P06_the_boundary_is_a_class} Surveying the programme's structural
+choices against the definition of a modulus turns up two further members and, as usefully, two candidates that
+fail to be members. The \emph{number of layers} in the ontology is discrete, leaves the symmetry maximal, and
+fixes no breaking---and it is the programme's founding move rather than a detail of it. \emph{Which real form}
+of the complexified structure is taken as the existent one is likewise discrete and likewise beyond form's
+reach. Against those, two candidates do \emph{not} join the class, and their exclusion is what gives it an
+edge: the \emph{signature} is not an unforced choice at all, being intrinsic to positive curvature, and the
+\emph{orientation} is not a choice because the configuration's symmetry group is transitive on the objects that
+would distinguish one. \emph{So the register's boundary is populated and bounded}: three members, two
+near-misses, and a definition sharp enough to sort them.
+
+\emph{What the members do not share is how they are settled}, and that difference is the more interesting half.
+The dimension is settled by content, as below. The layering is settled by the existence criterion itself---it
+is the leaf that carries the clock---so the criterion is silent on the \emph{number} while deciding which layer
+is existent, which is a subtler position than silence. The real form is the one where the programme should be
+most careful, and a recent result in the matter sector bears on it in the direction of \emph{less} support
+rather than more: the colour structure that had been the reason to take the compact face seriously turns out
+not to be an isometry of either real form, being carried instead by the branch structure of the signed radius,
+so one motivation for the compact face is removed and the choice stands more exposed than it did~\cite{JanzenMatter}.
+\emph{We record that as it falls}: a boundary case whose support has weakened is exactly the kind of thing a
+subsection announcing a boundary should be willing to say.
+
+Second, and this is why the case is worth the space: a choice the criterion cannot reach need not be free. The
+dimension is settled, within the framework, by \emph{content} rather than by form. The matter sector's own two
+deliverables do it: the fold its generation count reads is $D-1$ and exists at all only where a single slicing
+scale removes the residual harmonics---four and five spacetime dimensions, and no other---while the
+mass-parity that grades chirality exists only in even dimension. Four is therefore the only dimension carrying
+both a generation count and a handedness~\cite{JanzenSlicing,JanzenMatter}. \emph{Where form is silent,
+content may still decide}, and a discipline that ordered ontology from evidence should expect exactly that
+rather than be surprised by it.
+
+Three things this is not, and each of them is a way the case could be miscounted.
+
+It is \emph{not} a sixth instance of the criterion. The instances above are five applications; this is a
+boundary. Counting a case in which the criterion was silent as a case in which it worked would be the
+survivorship error of \S\ref{sec:boundary} run in a new direction, and the tally of outstanding bets is
+unchanged by it.
+
+It is \emph{not} an instance of the engine's pattern. That pattern is a selection made on least-arbitrariness
+\emph{before} its discriminator arrived---heliocentrism before parallax, the cosmic foliation before the
+microwave background. Here the discriminator was already in hand and the selection is made \emph{by} it. The
+vindication lemma's exposure is exactly what it was.
+
+And it does \emph{not} weaken Rule~2, which was exercised on live material in the same enquiry and
+discriminated correctly without being told which way to go. The enquiry that fixed the dimension of the cut
+also asked whether a higher-dimensional substrate could supply colour as an isometry, and found that it can be
+made to \emph{permit} one---the structure group available on a cut's normal directions is $\mathfrak{so}(6)$,
+and reducing it to $\mathfrak{su}(3)$ requires a complex structure and a volume form that nothing in the
+construction supplies. Rule~2 condemns that as no explanation but a description, and the corpus records it as
+such~\cite{JanzenBoundary}. \emph{One enquiry, one requirement and one permission, told apart by the criterion
+rather than by preference}---which is the more informative outcome than either alone would have been.
+
+\section{The modal fallacy: the imperative's dual}\label{sec:modal}
+
+The imperative has a characteristic dual, an inference that looks like its converse and is invalid.
+
+\begin{theorem}[The modal fallacy]\label{thm:modal}
+From the premise that the appearances contain no local discriminator between two candidate worlds, it does not follow that the worlds are identical, nor that the structure distinguishing them does not exist. The absence of a local test is not the absence of the fact.
+\end{theorem}
+
+\noindent The fallacy is the cave-dweller's characteristic error: to read the absence of a shadow's variation as the absence of a casting structure. It is the exact dual of the imperative. The imperative infers a structure that must exist to cast the shadows; the fallacy denies the structure because one shadow happens to be locally flat. The history of the subject is a history of the fallacy committed and corrected. No stellar parallax was detectable for two millennia, and this was read---wrongly---as telling against the Earth's motion, though before the cosmos was given depth the relevant parallax was not even a conceivable measurement~\cite{JanzenSettingRecord}. No local experiment distinguishes a state of rest from uniform motion, and this was read---wrongly---as the non-existence of any preferred rest. In each case the missing discriminator was mistaken for a missing fact, and in each case a later, non-local measurement supplied the discriminator and the fact with it. The correct posture in the interval is neither to assert the structure dogmatically nor to deny it for want of a local test, but to let the rules of \S\ref{sec:rules} weigh it, and to expect that a non-local measurement, when it comes, will decide.
+
+\section{The constructive ordering}\label{sec:ordering}
+
+The imperative fixes a direction of construction, and the inversion of that direction is the standing error of which naïve realism is the local symptom. The valid order builds the ontology from the evidence, the kinematics from the ontology, and the coordinates from the kinematics:
+\[
+\text{ontology}\ \longleftarrow\ \text{evidence}\,;\qquad
+\text{kinematics}\ \longleftarrow\ \text{ontology}\,;\qquad
+\text{coordinates}\ \longleftarrow\ \text{kinematics}.
+\]
+The reification error runs the chain backward: it takes the coordinate system---the map, the formal scaffold---as given, and reads an ontology off it, treating the map as the territory, the projection as the structure, an apparent symmetry of the description as a fact about the world. The imperative is precisely the demand that the chain run forward. Applied to a mature mathematical theory the demand is sharper than it first appears, because there the appearances include not only what is seen but the formal structures one has derived; the rule becomes \emph{resist reifying the coordinate system, and ask what world must exist for the appearances and for the formal structures alike to make sense}. A four-dimensional manifold that organizes the record of events is a coordinate scaffold of this kind; to grant it existence is to run the chain backward, and the discipline forbids it on the same ground it forbids reading the ecliptic as a real solar orbit. The reification can also hide in something smaller than a manifold---in a verb tense. The companion black-hole result finds the founding literature calling a black hole a ``collapsed'' object, the past participle quietly reading the horizon-formation into the causal past of an exterior observer, where the causal structure in fact places it only at the infinite-future boundary; the correction it enforces, that \emph{the grammar must follow the geometry}, is the constructive ordering applied to language---ontology read from the evidence, not off the tense one had reified~\cite{JanzenBHcausality}. The same companion sequence marks the error at its more usual scale as well: the circle paper takes care not to promote the asymmetry its chart manufactures---the divergent curvature at one of two analytically identical critical points---into a fact about the geometry, naming the promotion of a charting artefact to a feature of the world the ontological error itself~\cite{JanzenCircle}. Verb tense and chart product are two scales of the one reification the ordering forbids.
+
+\section{The empirical engine: the historical record, shadow-read}\label{sec:engine}
+
+What makes the rules of \S\ref{sec:rules} more than a statement of taste is that their reliability is a matter of fact, and the fact is recorded. The data are the episodes of theory-choice in the history of science, and the engine that produces and cleans them is historiography. But the record cannot be taken at face value any more than any other appearance can: the received history of science is itself shadow-distorted---mythologized into a sequence of independent geniuses and clean confrontations with crucial experiments---and a mythologized record teaches the wrong lesson. The de-mythologizing of the record is therefore not a preface to the evidence but the validation of it, the step that determines whether the data say what they are taken to say~\cite{JanzenSettingRecord}.
+
+Two corrections to the standard heliocentric narrative illustrate why the step is load-bearing. The first: the revolution was not a sequence of unconnected rediscoveries. Copernicus had read Archimedes' \emph{Sand-Reckoner}, in which Aristarchus's heliocentric hypothesis is preserved, before he circulated his own system---the fourth postulate of the \emph{Commentariolus} reproduces Archimedes' own recast of Aristarchus's proportion, a relation Copernicus had no internal use for, never employed, and quietly dropped from \emph{De revolutionibus}---and he withheld the acknowledgement to stand as the innovator rather than the reviver of an idea the authorities had called absurd~\cite{JanzenSettingRecord, ArchimedesSandReckoner, CopernicusCommentariolus}. The second: the famous parallax objection to a moving Earth is anachronistic. While the stars were held to lie on a single spherical boundary at one radius, a relative parallax among them was not a measurement that could fail to be seen---it was inconceivable; neither the \emph{Almagest} nor \emph{De revolutionibus} argues from parallax at all, but from symmetry. The objection was first pressed by Tycho, after Digges had given the cosmos depth, and it rested on stellar ``disc'' sizes now known to be artefacts of atmospheric seeing~\cite{JanzenSettingRecord, CopernicusDeRev}. A history that effaces the first correction reads the episode as evidence that great theories spring \emph{ex nihilo}; one that effaces the second reads it as evidence that a correct theory was rightly held back by a sound empirical objection. Both lessons are false, and only the shadow-read record yields the true one.
+
+The true lesson is a pattern, and the heliocentric arc is its cleanest instance~\cite{JanzenShadowReading}. Aristarchus sought a deeper cause for a regularity the prevailing model did not require---that retrograde always falls at opposition---and found it by placing the Sun at the centre and reading the loops as the parallax of the Earth's motion, at the cost of accepting the appearances as illusions of that motion. Copernicus, objecting to the equant as a violation of the uniform motion it was introduced to save, produced a heliocentric system of equal accuracy and made the illusion reading credible. Digges dissolved the stellar sphere into depth, establishing that an observed celestial motion can be a projection rather than a property. Galileo removed the standing objection by showing that no experiment within a uniformly moving frame can detect its motion, so that a moving Earth would go unfelt---the very fact the parallax fallacy had mistaken for evidence of rest. Kepler discarded the cosmic harmony he had wanted in favour of the ellipse the data forced, surrendering the design he preferred to the one that worked. Newton consolidated the whole into a single law from which the planetary regularities follow as theorems, and from which the unfelt motion of the Earth is a consequence rather than a puzzle. At each step the structure favoured by coherence, by the requiring of the phenomena, and by consolidation gained ground, while the framework defended by patchwork lost it. And the structure so favoured was preferred for a century before the direct, non-local measurement that would settle the matter---stellar parallax---was within reach. When Bessel made that measurement, it vindicated the structure the rules had already chosen~\cite{Bessel1838}.
+
+\begin{lemma}[Vindication]\label{lem:vindication}
+In the recorded episodes of theory-choice, when a direct, non-local discriminator becomes available it confirms the structure already selected by the rules of \S\ref{sec:rules} ahead of it. Selection by the rules is, on this record, reliable: the criteria are not merely aesthetic preferences but track the structure that later measurement reveals.
+\end{lemma}
+
+\noindent The lemma is the empirical content of the discipline. It is a claim about the world---about the historical world of scientific practice---supported by instances and, as \S\ref{sec:boundary} insists, answerable to counter-instances. It is what converts the four rules from a creed into an instrument with a track record.
+
+\section{The reflexive closure: the method passes its own test}\label{sec:reflexive}
+
+The identification of \S\ref{sec:intro} can now be completed, and its self-consistency is its strongest feature. The vindication lemma is itself a structure favoured by the rules: it \emph{requires} the observed pattern of the record (a framework chosen by coherence and necessity is the one later measurement confirms) rather than permitting a flattering selection of cases; it \emph{consolidates} disparate episodes---the Copernican, the Newtonian, and, we will argue, the cosmological---under one account; and it earns its standing by refusing to take the mythologized record at face value, which is the method's own first move. The discipline that grounds the sciences is therefore not a different kind of thing from the sciences. It has the sciences' object (structure behind appearances), the sciences' method (infer the world that casts the shadows), and the sciences' data (read, here, off the sciences' own record); and applied to its own history it returns a result of its own form. The enterprise is grounded reflexively, in an instance of the very kind of thing the enterprise exists to discover. This is why the ground is not philosophy in the sense that stands outside and adjudicates: it is continuous with what it grounds, and it answers to evidence.
+
+The self-similarity runs to the physics the method licenses. The companion programme refuses to ground its cosmic-time ontology in a metaphysical posit and grounds it instead in a measurement, the isotropy of the cosmological redshift, declining the modal fallacy that would read the local undetectability of a rest frame as its non-existence~\cite{JanzenModernParallax}. The present discipline refuses to ground its method in an a priori philosophy and grounds it instead in the measured record, declining the same fallacy in the historiographic register. Forward pillar and backward pillar are one move; the discipline that justifies the move is the move turned on its own past.
+
+\section{The boundary, and the discipline's first programme}\label{sec:boundary}
+
+A reflexive closure this clean is the strongest form of warrant available to a foundational discipline, and it is essential to be exact about what it does and does not establish, on pain of the very self-deception the method exists to prevent. Self-consistency is not soundness. A method can be coherently, reflexively wrong: it can pass its own test because the test is built in its image. What the closure of \S\ref{sec:reflexive} secures is that the discipline is well-formed and continuous with its objects; it does not by itself secure that the rules track truth. That further claim is the vindication lemma, and the lemma is an empirical hypothesis, not a theorem.
+
+To hold the lemma to the standard the discipline demands of any science is to turn the four rules on the lemma itself, and Rule~2 and Rule~4 bite hardest. The lemma as stated in \S\ref{sec:engine} is built from celebrated successes, and a reliability estimate built only from successes is survivorship, not measurement. An empirical discipline must sample the cases in which the rules \emph{misled}: structures favoured by coherence and parsimony ahead of the evidence that were then refuted by it. The luminiferous ether was, by the lights of nineteenth-century mechanics, the coherence-favoured structure, and the decisive measurement went against it. Caloric organized a wide range of thermal phenomena before it was discarded. Kepler's nested Platonic solids were as elegant a consolidation as the age produced, and---in his own later judgement---wholly wrong; parsimony and the preference for unified structure have, on occasion, pointed the wrong way. Until such cases are sampled alongside the successes and a base rate computed, what \S\ref{sec:engine} offers is a compelling hypothesis with confirming instances, not a calibrated reliability.
+
+The reference class the lemma needs is not exhausted by successes and failures, however. A third kind of episode bears on it directly, and modern cosmology supplies one whose documentary record is unusually clean: an episode in which the criterion of \S\ref{sec:rules} was applied explicitly, in print, by a competent practitioner---and the discipline went the other way. Through the 1920s the $\lambda$-term was understood as what \emph{drives} cosmic expansion; in 1931 Einstein removed it in a three-page paper that calls it ``anyhow theoretically unsatisfactory'', gives no reason, and offers no argument against the cosmic repulsion it displaces, leaving that reading unmentioned~\cite{JanzenEinsteinConsiderations}. Eddington objected at once, and in this paper's own terms: rival accounts dispensing with the driving force ``necessarily\ldots postulate that the large velocities have existed from the beginning. This might be true; but can scarcely be called an \emph{explanation} of the large velocities''; and of the Einstein--de~Sitter model, that it ``leaves me cold. One cannot deny the \emph{possibility}, but it is difficult to see what mental \emph{satisfaction} such a theory is supposed to afford''~\cite{Eddington1933}. That is the distinction between requiring and merely permitting, drawn in 1933; an initial expansion rate that neither the appearances nor any deeper principle pins is an unforced modulus in the sense of \S\ref{sec:least-arbitrariness}. In the same passage Eddington sets down, in a footnote, the structure that would supply the requirement---``the system once extended much further than now, that it collapsed, and is now on the rebound\ldots the inward velocities being turned into outward velocities by passage through the centre''---and sets it aside for want of an advocate, his stated reservation being the distribution of velocities, a quantity no one could then compute.
+
+The episode is instructive for the sampling programme precisely because it is not a vindication and not yet a refutation. The favoured structure was not tested and found wanting; it was \emph{not developed}, and the objection was retired with its advocates rather than answered---Eddington, Hoyle and Bondi each being associated with positions the data went against. The microwave background, which settled those associated disputes, establishes \emph{that} there was a hot dense era, not \emph{why} it was expanding. A reference class assembled only from episodes that reached a verdict will not contain this case, and a base rate computed without it will overstate how often the criterion is \emph{acted upon} while saying nothing about how often it is right. \emph{Classifying the episodes in which the criterion was applied and disregarded is therefore part of the same sampling}, and it is the part that measures the discipline rather than the rules.
+
+We therefore state the lemma in the form that makes it an object of research rather than an article of faith:
+\begin{quote}
+\emph{Across a properly sampled reference class of theory-choice episodes---successes and failures alike---structures favoured by the rules of \S\ref{sec:rules} ahead of a decisive non-local measurement are subsequently confirmed at a rate above the base rate at which merely permitted structures are confirmed.}
+\end{quote}
+So stated, the lemma is falsifiable, and the sampling that would test it is the discipline's first programme: assemble the reference class, classify each episode by whether its eventual victor was \emph{required} or merely \emph{permitted} by the framework that favoured it ahead of the test, and measure the differential. The outcome is not presumed here. What is claimed is that the question is empirical, that it is the right question, and that answering it is the work that converts the engine of \S\ref{sec:engine} from its programme's most rhetorically forceful element into its most secure one---the soft spot made load-bearing. The scope is correspondingly disciplined: the subject is not epistemology entire---not perception, testimony, or the a priori---but the epistemology of scientific theory-choice, ampliative inference under underdetermination, which is the domain this engine governs and a large enough object without the overreach.
+
+\section{Place in the programme}\label{sec:place}
+
+The discipline grounds the half of the companion programme that turns ontology empirical. The modern parallax of the forerunning paper~\cite{JanzenModernParallax} is the forward instance of the vindication lemma: the cosmic rest frame and the uniform expansion are the structure the rules favour---required by the layered cosmology, merely permitted by a tuned background---and the isotropy of the cosmological redshift is the direct, non-local measurement that, exactly as stellar parallax did for the heliocentric structure, converts the favoured reading into the measured one. Read through the discipline, the dipole that fixes our motion through the rest frame is the modern counterpart of Bessel's parallax, and the forerunning paper's central inference---that the appearances force the foliation and that the manifold is the foliation's record, not the existent---is licensed as an instance of the method here grounded, rather than asserted as a preference. The forward pillar is no longer carried by that single episode. The cosmology the discipline steadies has since confronted its own data on axes the rules fixed ahead of measurement, and two of those confrontations have begun to return in the construction's favour: the redshift-free expansion rate, which the layered cosmology \emph{requires} and which resolves the Hubble tension without a tuned background~\cite{JanzenCRcosmology}, and the primordial light-element abundances, which follow from ordinary nuclear physics on the hot dense history the corpus already possessed and return deuterium and helium within measurement~\cite{JanzenCosmogenesis}. Each is a structure favoured by coherence ahead of the decisive measurement and subsequently confirmed by it---the modern parallax's form, repeated on new axes---so that the lemma's forward pillar now rests on a small family of vindications rather than one, even as the discriminating edges that remain open (the matter sector, the ${\sim}8\%$ damping-scale signature whose observable weight awaits the high-multipole transfer, the full abundance likelihood) hold it to honest weight.
+
+The order of the spine reflects this. The black-hole result that opens the programme stands on causal structure alone and is established in the language of general relativity without reaching for any of this~\cite{JanzenBHcausality}; it needs no epistemic ground and takes none from here. It is not, however, \emph{without} one: its own floor---that only the fixed causal past yields certain information, so an appearance must not be taken for the present state of the world it images (a distant star is seen as it was, never as it is)---is a bespoke instance of the imperative of \S\ref{sec:imperative}, and the purest the corpus affords, the projection there the light cone itself rather than a spread of perspectives or an exact involution~\cite{JanzenBHcausality}. This discipline draws on it as a worked instance rather than supplying it; that the result owes the method nothing is exactly what lets the method count it as evidence and not construction. The modern parallax is the first place the programme genuinely leans on the method, and so the present paper is placed immediately after it, where the leaning begins, and immediately before the cosmology it steadies~\cite{JanzenCRframework}. It does not re-establish the cosmology's central structural result; it makes explicit, and grounds on the record, the method by which that result was reached, and so puts a firmer floor beneath everything the programme builds on the cosmic foliation. The reading of the four-manifold as the shadow of an existing, evolving world~\cite{JanzenTrope, JanzenWildGoose, JanzenMisconstrue}---the reading from which the programme's ontology descends, and which the book-length treatment develops in full~\cite{Janzen2025}---is, on the account given here, not a metaphysics chosen but the output of an empirically grounded discipline applied where it belongs: at the foundation, grounding the enterprise in the very thing the enterprise is built to discover. The same discipline sets the altitude at which the framework and the geometric core hold their unification---the reading of one maximally symmetric de~Sitter substrate as at once general relativity's solution space, the discrete $CPT$ and charge structure, and the gauge sector on its conjugate real form~\cite{JanzenCRframework,JanzenGeometricCore}: reading its several separately-established results as one fact is a rule-favoured theory-choice, held at coherence and not correspondence---exactly the boundary \S\ref{sec:boundary} marks---its ultimate soundness the empirical question this discipline sets as its first programme. The same altitude governs the framework's own central theorem, which is the discipline's deepest reclassification. A black hole and a cosmos---gravitational collapse read from outside, an expanding world read from within, among the most disparate objects the sciences name---are, read each for the world it shadows, not two objects but one existent: the collapsed layer of a prior universe, continued through the finite-curvature branch point, is the expanding layer of ours, complete collapse and cosmic expansion the two readings of one closed \emph{cosmogenetic bead}~\cite{JanzenCRframework}. Where the reclassifications above name a single appearance an artefact---the retrograde loops, the perspectival mass---this names two whole apparent worlds one, the shadow-reading in its fullest reach and the reclassification the entire programme is built to make. It is held as the rest are: a theorem \emph{of the construction}, its internal closure demonstrated, while whether the world is so built is left to the discipline's tests---the absence of a finite-time horizon and the microwave data---and asserted here nowhere as correspondence. And the discipline grounds not the reading alone but the \emph{selection}: that the substrate is the maximally symmetric manifold, and that the corpus reads its physics as the symmetric breaking of that symmetry down to the discrete flavour structure of the matter sector~\cite{JanzenMatter}, is least-arbitrariness (\S\ref{sec:least-arbitrariness})---Rule~2 in the ontological register---so the programme's foundational choice is itself an instance of its own criterion of necessity, held at the same coherence. The cosmogenesis to which the cosmology's frontier leads~\cite{JanzenCosmogenesis} draws that criterion at its sharpest on the theory-choice axis: that the hot dense era is \emph{required} by the corpus's structure---the far side of a collapse the programme already had---rather than a phase introduced to yield the primordial abundances, is Rule~2 in its empirical register, the abundances then a consequence of ordinary nuclear physics on that history and not of a sector tuned to produce them.
+
+A second assessment belongs here, narrower in its object than that central theorem but where the method's evidence stands clearest, and where the local--cosmic tension from which the programme's own reading first grew comes to rest. The boundary between a bound structure's gravitational hold and the cosmic expansion---that the largest bound structures cannot exceed a mass-set radius, the tension the expanding-space tradition long carried---is, read through this discipline, an \emph{appearance}: a shadow cast by the real evolving space, to be read for the world that casts it and not taken at face value for a coincidence of forces~\cite{PavlidouTomaras2014}. Read so, it resolves, and the resolution is the characteristic move seen whole. The companions describe that one boundary variously---as the flat locus of the slicing surface's intrinsic curvature, the local bend of the cut cancelling the substrate's cosmological term~\cite{JanzenSlicing}; as the handover from the sub-marginal bound orbits to the marginally-bound congruence that \emph{is} the cosmology~\cite{JanzenOperator}; as the local range of the substrate's single scale, the one $\Lambda$ that also sets the global expansion~\cite{JanzenCRcosmology,JanzenGeometricCore}; as a consequence of the layered framework's own closure~\cite{JanzenCRframework}---and these are not four results but four shadows of one fact about the existent: that the real evolving space is intrinsically flat exactly where a structure's hold gives way to the flow, its curvature-sign the boundedness/expansion dichotomy itself. \emph{A fifth idiom has since been added, and it is the one a physicist reads most directly.} For the
+marginal congruence the areal acceleration is $\dd^{2}r/\dd\tilde\tau^{2}=-f'/2$, and $f'$ vanishes exactly at
+$r^{3}=M\alpha^{2}$---so the same radius is the exact locus at which the areal radius stops decelerating and
+begins to accelerate, generally in the mass and not only on the forced member~\cite{JanzenSlicing}. \emph{Two
+independent quantities therefore change sign at that one radius}: the slicing surface's intrinsic curvature, and
+the acceleration of the areal radius. That is a stronger form of the convergence than four geometric
+descriptions of one locus, because the fifth is dynamical and the others are not, and nothing in the
+construction relates them beyond their both being read off the same curve. \emph{The count is in fact larger than either paper's list, which is itself worth noting about how such
+convergences accumulate.} The framework paper gathers five readings at that radius---the Hubble--Eddington
+radius proper, the flat locus, the handover, the acceleration turn, and the unique fixed point of the vantage
+involution---and this section gathers five, of which three are the same~\cite{JanzenCRframework}. \emph{Seven
+distinct readings therefore stand across the corpus, and no single paper lists them all}; each was recorded
+where it arose, and the convergence is visible only from outside any one of them. \emph{That is a fact about
+how the evidence this discipline counts is produced}: it accumulates in separate places for separate reasons,
+and becomes evidence only when something gathers it.
+
+\emph{One further reading sharpens what the coincidence is not.} On the forced member that radius is the front
+seam, and the framework's stratification of the cosmogenetic contour marks the front seam as the one locus
+crossed at unit speed \emph{without} dividing two causal regions---the horizon cubic's double root, where $f$
+touches zero without changing sign. \emph{So the areal acceleration changes sign there and the causal character
+does not}: two sign-questions, independent, answered oppositely at one radius. An observer crossing it records
+a change in their expansion history and none in the character of their own radial coordinate.
+
+\emph{And the fifth idiom exhibits the projection rather than merely joining the list}, which is what this
+discipline asks of a reading. Nothing accelerates anything at that radius: the sign of
+$\dd^{2}r/\dd\tilde\tau^{2}$ is a property of a fixed curve, read where $f'$ passes through zero, and the
+deceleration and acceleration are what continuous motion along that curve looks like from within. \emph{The
+appearance the boundary presents---a coincidence of forces, a hold giving way to a flow---is thereby not merely
+declared to be a shadow but shown what it is a shadow of}: a curve whose second derivative changes sign, seen
+by an observer carried along it. That constructions raised for unrelated ends converge on one world when each is read for the world it shadows is the coherence this discipline counts as its evidence---the serial recurrence of \S\ref{sec:reflexive} gathered to a single point rather than spread across problems---held at the altitude \S\ref{sec:boundary} marks: coherence, whose correspondence stays the empirical question the method sets and is nowhere claimed here. But at that altitude the reading is an \emph{explanation} of the observed phenomenon, drawn from the ontology beneath it and not a redescription of a number; and the phenomenon it explains is the local--cosmic boundary itself, the tension from which the reading of the four-manifold as an existing, evolving world's shadow first took its impetus.
+
+A third assessment is broader than the boundary and stands closest to the discipline's own criterion: the framework paper's first synthesis~\cite{JanzenCRframework}. A family of general relativity's standing problems---the non-localizability of gravitational-wave energy, the closed timelike curves the field equations admit, cosmic censorship, the black-hole information paradox, the laws of black-hole mechanics, the hole argument, the frozen problem of time---each met within the standard theory only by a conjecture or a non-canonical device reaching beyond it, is shown there to dissolve together, by the single distinction between the evolving existent and its maximally extended representation. Read through this discipline the gathering is the criterion of necessity (\S\ref{sec:rules}) at its sharpest: each standard patch---chronology protection, cosmic censorship, the information programmes, the horizon-thermodynamic apparatus---is a device that \emph{permits} a resolution through added apparatus, the modern equant, ungrounded in the classical theory and present only to absorb a discrepancy the framework itself produces; the layered ontology carries no such device, its outcomes forced by structure, so the puzzles dissolve \emph{by identity rather than being managed by conjecture}---the exact structural signature by which \S\ref{sec:rules} reads a framework sound. Where the local--cosmic boundary is the discipline returning one novel consequence, this is the discipline returning a \emph{consolidation}: a family of separately-standing problems shown to be one distinction's shadow, the serial recurrence of \S\ref{sec:reflexive} gathered not at a single boundary but across the standing catalogue. It is held at the altitude \S\ref{sec:boundary} marks---coherence, its correspondence the two tests the programme keeps open---but at that altitude it is the criterion of necessity turned on the programme's own reach, returning, as the boundary did, more than the certification of results reached elsewhere.
+
+A fourth assessment stands apart from the three above, and it is the one on which this discipline's criterion
+is most directly at stake, because the criterion was applied to the case in print---and the discipline went the
+other way. \S\ref{sec:boundary} records the episode: in 1931 the $\lambda$-term, then understood as what
+\emph{drives} cosmic expansion, was removed without argument, and Eddington objected that the accounts left
+standing ``necessarily\ldots postulate that the large velocities have existed from the beginning. This might be
+true; but can scarcely be called an \emph{explanation} of the large velocities''~\cite{Eddington1933}. That is
+Rule~2 (\S\ref{sec:rules}) stated in 1933: a framework that \emph{permits} the initial rate through an
+adjustable datum has described the beginning; one that \emph{requires} it has explained it. The initial
+expansion rate, pinned by neither the appearances nor any deeper principle, is an unforced modulus in the sense
+of \S\ref{sec:least-arbitrariness}, and on the criterion this paper grounds, a cosmology carrying it was
+inadmissible as it stood.
+
+The companion framework now supplies what the criterion demanded, and supplies it in this discipline's
+characteristic form~\cite{JanzenCRframework}. Along the lift---the segment of the cosmogenetic contour on which
+cosmic time does not advance---the expansion rate is carried continuously from zero at the collapse's turnaround
+to divergent at the branch point, over no cosmic time at all, so that the universe \emph{arrives} at vanishing
+areal radius already carrying the initial data the field equations require of it. What makes this a
+reclassification in the sense of \emph{prin:reclass}, rather than a mechanism inserted to produce a needed
+number, is that the projection is exhibited: the divergent rate and the divergent deceleration are not dynamical
+causes acting at a first instant but \emph{effective}---the appearance, in a coordinate that is itself a
+projection, of continuous parametric motion in the areal radius along the contour. The beginning is read
+geometrically and the dynamics are what that reading looks like from within; nothing is driven. The appearance
+that made the beginning a mystery is left standing and re-read as the shadow of something, which is the move of
+\S\ref{sec:imperative} and not a further posit.
+
+Two features fix its weight, and they pull in opposite directions. \emph{Against inflation of the claim}: it is
+held at the altitude \S\ref{sec:boundary} marks---a theorem of the construction, its correspondence the
+programme's open tests---and the criterion's verdict here is concordance with a demand recognised long ago, not
+a vindication in the lemma's sense, since no decisive measurement has arrived to convert it. \emph{For its
+weight}: the alternative route is closed on general grounds rather than by preference. The decelerative force
+grows without bound towards vanishing radius, so a quantum-gravitational modification of that point is not a
+plausible source of an enormously repulsive first instant~\cite{JanzenEinsteinConsiderations}; \emph{if the
+initial rate is to be explained rather than postulated, the explanation must be structural}. \emph{One further development belongs here, because it bears on the criterion rather than only on the case.}
+The account has since been carried to the quantum register, and by the same fact that carried the classical
+one: cosmic time does not advance along the segment, so the kernel across it is Euclidean rather than unitary,
+and such a kernel projects onto a ground state~\cite{JanzenCanonicalTime}. \emph{The state it selects turns out
+to be one the canonical paper had already fixed on independent grounds}---the regular Euclidean state at the de
+Sitter horizon's surface gravity, chosen there to close a one-parameter family of self-adjoint extensions that
+least-arbitrariness had declared inadmissible. That is the criterion of \S\ref{sec:least-arbitrariness}
+operating twice on the same object from two directions, which is the pattern \S\ref{sec:place} counts as
+coherence. \emph{The discount of \S\ref{sec:boundary} applies here exactly as it does there}: two derivations
+within one programme agreeing is not a measurement, and the reference class is not enlarged by it. What the
+development does change is the case's shape: an episode in which the criterion was applied in print and
+disregarded is now an episode in which the structure it favoured has been carried, ninety years later, into a
+register the objection's original terms did not reach. \emph{And one feature of that carrying bears on the criterion directly.} The segment's Euclidean gravitational action is negative---the Hartle--Hawking sign, giving an enhanced weight---but it is obtained from a contour the construction already possessed, rather than from a boundary condition imposed on a path integral to secure that outcome~\cite{JanzenCanonicalTime}. \emph{The distinction is Rule~2's}: a framework on which the no-boundary sign is a consequence of structure stands differently from one on which it is a stipulation chosen because it yields the wanted amplitude, however identical the two may look in the resulting formula. Whether the structure is the world's remains the empirical question this discipline sets; what the criterion can say is that the two are not the same kind of claim.
+
+And the episode
+carries one further lesson for \S\ref{sec:engine}And the episode
+carries one further lesson for \S\ref{sec:engine}, which is why it is recorded here and not only there: in the
+same passage Eddington set down the structure that would supply the requirement---a collapse whose inward
+velocities are ``turned into outward velocities by passage through the centre''---and set it aside for want of
+an advocate, his stated reservation being a quantity no one could then compute. \emph{The criterion identified
+the shape of the answer ninety years before the means existed to test it}, which is precisely the pattern the
+vindication lemma asserts and precisely the pattern the discipline's first programme must learn to count.
+
+A fifth assessment is of a different kind from the four above, and its interest is in the \emph{order} of two
+results rather than in either of them. The convergence at the local--cosmic boundary is four idioms describing
+one fact; what follows is two results in two \emph{registers}, separated in the spine, that land on one object.
+
+The description groupoid stands before the framework and reaches its structure algebraically---charting
+vantages, a horizon cubic, and the classification of the vantage-changes that preserve it---proving there that
+the Nariai configuration is the unique fixed point of the root-exchange involution, the unique vantage at which
+two roots collide so that the involution acts trivially~\cite{JanzenGroupoid}. No cosmology is in evidence at
+that point in the programme and no claim is made about what any configuration \emph{is}. The framework then
+establishes the physics independently and stratifies its cosmogenetic contour by causal character, finding five
+spans that carry only four distinct characters: the front seam is crossed at unit speed \emph{without} dividing
+two causal regions, while the other three joints each carry a genuine change~\cite{JanzenCRframework}. The two
+statements are one statement. A fixed point induces the identity rather than a passage between distinct objects,
+which is exactly why that seam changes nothing; and the algebraic degeneracy is the same one that makes the
+member Nariai, that makes the surface gravity and the photon orbit's Lyapunov exponent vanish there, and that
+leaves the degenerate horizon without a bifurcation sphere.
+
+\emph{What the discipline can and cannot draw from this must be said in the same breath.} It is coherence of
+the kind \S\ref{sec:reflexive} counts---constructions raised for different ends returning one object---and it is
+sharper than the boundary's convergence in one respect only: the results are in different registers and were
+reached in an order that makes engineering implausible, the algebra having been fixed before there was a physics
+to fit it to. It is \emph{not} an instance of the vindication lemma. No decisive non-local measurement stands
+between the two, and the second result is not a measurement but a derivation within the same programme. The
+reasoning of \S\ref{sec:boundary} against reliability estimates assembled from one's own successes applies here
+without discount: \emph{this is one more bet outstanding, and the honest reading of it is that the corpus is
+internally coherent in a place where it had no reason to be arranged so}---which is worth recording, and is not
+evidence that the rules track truth.
+
+\paragraph{Two moves, not one, and the difference is what an objector must dispute.} The companion
+programme's dissolutions are often read as a scorecard of solved problems, and the discipline's own reply has
+been that they are one epistemic move recurring. Applying the criterion of \S\ref{sec:rules} to the gathered
+class shows the reply needs amending, and in the direction that strengthens it. Of the dissolutions the corpus
+carries, eleven exhibit a projection in the sense \emph{prin:reclass} requires---the continuation through the
+chart's labelled centre, the chain-rule artefact, the overcritical continuation, the even/odd partition of the
+metric function, the horizon--singularity family, the problem of time, the hole argument, the closed timelike
+curves, the local--cosmic boundary and the coincidence of the epochs, the initial expansion rate, and the matter--antimatter asymmetry---each leaving the appearance standing and
+re-reading it as the shadow of something\rcpt{A53_two_moves}. \emph{The last of these deserves a word, since what it re-reads is a fact and not a puzzle.} The observed
+preponderance of matter over antimatter is, on the companion construction, the two ends of one conjugation
+across the branch point, each branch antimatter at exactly the weight the other is matter---which by itself
+makes the labels relational and leaves open whether the geometry, while labelling reciprocally, still weights
+one side. \emph{It does not}: the segment along which the conjugate branch is reached carries an action whose
+integrand is odd under that same conjugation, so the two branches carry equal and opposite action summing to
+zero identically~\cite{JanzenCRframework, JanzenRange}. \emph{The projection is thereby exhibited rather than
+asserted}---what an observer reads as an asymmetry of the world is their own branch seen from within a
+structure that weights neither---and the appearance is left standing, which is what admits the case to this
+class rather than to the one below. \emph{One does not.} The cosmological-constant problem is
+not shown to be a shadow: it is denied a quantity to be about, because a construction with a single dimensionful
+scale carries no bare-versus-vacuum split for a cancellation to act on and no dimensionless constant to tune.
+That is least-arbitrariness (\S\ref{sec:least-arbitrariness}) doing the work, not reclassification, and the two
+are distinguishable by their failure conditions: a reclassification fails if the projection cannot be exhibited,
+and a least-arbitrariness dissolution fails if a second free constant is produced. Neither failure implies the
+other. \emph{So the recurrence is not one move repeated but two, each with its own criterion and its own way of
+being wrong}---and for the purpose the recurrence is offered for, that is the stronger finding, since a pattern
+holding across two independent criteria says more about the frame than the same count under one.
+
+\paragraph{A note on what the discipline says of the programme's own audit.} The corpus has lately
+been running a systematic audit in which a whole field of mathematics or physics is carried across
+the construction and its theorems sorted into those that import, those that import bounded by a
+result the corpus already holds, and those the construction refuses. The discipline has something
+exact to say about the yield of such an audit, and it is worth setting down because it is easily
+overstated. Most of what the audit returns is a \emph{consistency}: a result the corpus already
+holds, met a second time from outside and found to agree. A consistency is worth having---it is
+evidence the construction is not merely internally arranged---but by \S\ref{sec:rules} it does not
+move a claim's standing, because agreement is what a coherent structure is expected to produce and
+the criterion of necessity asks something else. What the criterion asks is whether a claim held
+because a search \emph{found nothing against it} can be replaced by a claim held because the
+structure \emph{requires} it. One such replacement has occurred: the corpus's one-scale reading,
+established by an exhaustive audit of the constants that returned no free dimensionless parameter,
+is shown by the projective reading to be the statement that a Cayley--Klein geometry carries its
+scale as its only free constant---signature, null structure and isometry group being fixed by the
+absolute's projective type~\cite{JanzenGeometricCore}. The reading moves from a searched absence to
+a structural requirement, which is the movement \S\ref{sec:rules} credits and the only one of its
+kind the audit has so far produced. Recording the ratio is part of the discipline: an audit that
+returned nothing but consistencies would still be worth running, and would still not have raised the
+programme's standing by the criterion this paper grounds.
+
+\begin{thebibliography}{99}
+
+\bibitem{JanzenRange}
+D.~Janzen,
+\emph{The range of the de Sitter slicing operator: surjectivity onto the symmetry-reducible sector of general relativity, the Kerr--NUT--(A)dS vacuum kernel, and the wall of inhomogeneity}, companion paper (P9).
+
+\bibitem{Eddington1920} A.~S.~Eddington, \emph{Space, Time and Gravitation: An Outline of the General Relativity Theory} (Cambridge University Press, 1920), p.~179.
+
+\bibitem{JanzenAlgebroid}
+\bibitem{JanzenCanonicalTime} D.~Janzen, \emph{The canonical problem of time as a category error: an empirically forced cosmic time, deparametrization, the dissolution of frozen dynamics, and a graviton quantization the de~Sitter horizon closes without a free parameter---the seam where $\hbar$ enters gravity---in Cosmological Relativity}, companion paper (P10).
+\bibitem{JanzenModernParallax}
+D.~Janzen,
+\emph{The modern parallax: the redshift-isotropy floor, the empirical forcing of cosmic time and uniform expansion, and the measured resolution of the relativity of simultaneity}, companion paper (P4).
+
+\bibitem{JanzenCRframework} D.~Janzen, \emph{Collapsed matter must become a universe: the necessary and sufficient augmentation of general relativity into a description of structural existence, proven for gravitational collapse of any symmetry}, companion paper (P7).
+
+\bibitem{JanzenGeometricCore} D.~Janzen, \emph{Reached through the imaginary, real by construction: the maximally symmetric substrate as the geometric--ontological core}, companion paper (p0).
+
+\bibitem{JanzenMatter} D.~Janzen, \emph{The fermion sector of Cosmological Relativity: three chiral generations from the maximally-symmetric slicing structure}, companion paper (P14).
+
+\bibitem{JanzenBHcausality}
+D.~Janzen,
+\emph{The event horizon is a metric singularity: a missing definition in general relativity}, companion paper (P1).
+
+\bibitem{JanzenCircle}
+D.~Janzen,
+\emph{The Schwarzschild and de Sitter circle: the intrinsic geometry of one homogeneous ring---the event horizon and the curvature singularity at $r=0$ its two poles}, companion paper (P2).
+
+\bibitem{JanzenGroupoid}
+D.~Janzen,
+\emph{The Schwarzschild--de Sitter description groupoid: generators, relations, and Schwarzschild as the asymmetric realisation}, companion paper (P5).
+
+\bibitem{JanzenSlicing}
+D.~Janzen,
+\emph{The de Sitter substrate and its slicing curve: horizons as turning points, and de Sitter and Schwarzschild as two readings of one slicing}, companion paper (P3).
+
+\bibitem{JanzenShadowReading}
+D.~Janzen,
+\emph{Scientific Shadow Reading: How We Discovered Earth is a Planet},
+cosmiCave.org (2025).
+
+\bibitem{JanzenSettingRecord}
+D.~Janzen,
+\emph{Setting the Record Straight: How Copernicus Concealed His Debt to Aristarchus},
+cosmiCave.org (2025).
+
+\bibitem{JanzenFortress}
+D.~Janzen,
+\emph{The Fortress of Misunderstanding Physics},
+cosmiCave.org (2025).
+
+\bibitem{JanzenTrope}
+D.~Janzen,
+\emph{Time Travel: A Five-Dimensional Trope},
+cosmiCave.org (2025).
+
+\bibitem{JanzenWildGoose}
+D.~Janzen,
+\emph{Albert Einstein's Wild Goose Chase},
+cosmiCave.org (2025).
+
+\bibitem{JanzenMisconstrue}
+D.~Janzen,
+\emph{Did Einstein Misconstrue Relativity's Real Meaning?},
+cosmiCave.org (2025).
+
+\bibitem{Janzen2025}
+D.~Janzen,
+\emph{Beyond Space-Time},
+(2025).
+
+\bibitem{Quine1969}
+W.~V.~O.~Quine,
+\emph{Epistemology Naturalized}, in \emph{Ontological Relativity and Other Essays}
+(Columbia University Press, New York, 1969).
+
+\bibitem{Laudan1977}
+L.~Laudan,
+\emph{Progress and Its Problems: Towards a Theory of Scientific Growth}
+(University of California Press, Berkeley, 1977).
+
+\bibitem{Laudan1987}
+L.~Laudan,
+\emph{Progress or Rationality? The Prospects for Normative Naturalism},
+American Philosophical Quarterly \textbf{24} (1987) 19--31.
+
+\bibitem{Laudan1981}
+L.~Laudan,
+\emph{A Confutation of Convergent Realism},
+Philosophy of Science \textbf{48} (1981) 19--49.
+
+\bibitem{Putnam1975}
+H.~Putnam,
+\emph{Mathematics, Matter and Method: Philosophical Papers, Volume 1}
+(Cambridge University Press, Cambridge, 1975).
+
+\bibitem{JanzenOperator}
+D.~Janzen,
+\emph{Covariance of geometries over the de Sitter substrate: the slicing operator, the vacuum kernel, and matter as the bend of the cut}, companion paper (P8).
+
+\bibitem{PavlidouTomaras2014} V.~Pavlidou and T.~N.~Tomaras, \emph{Where the world stands still: turnaround as a strong test of $\Lambda$CDM cosmology}, JCAP \textbf{09} (2014) 020.
+
+\bibitem{Kuhn1962}
+T.~S.~Kuhn,
+\emph{The Structure of Scientific Revolutions}
+(University of Chicago Press, Chicago, 1962).
+
+\bibitem{PlatoRepublic}
+Plato,
+\emph{Republic}, Book VII (the Allegory of the Cave).
+
+\bibitem{NewtonPrincipia}
+I.~Newton,
+\emph{Philosophi\ae\ Naturalis Principia Mathematica} (London, 1687);
+\emph{Rules of Reasoning in Philosophy}, Book III.
+
+\bibitem{ArchimedesSandReckoner}
+Archimedes,
+\emph{The Sand-Reckoner} (\emph{Arenarius}).
+
+\bibitem{CopernicusCommentariolus}
+N.~Copernicus,
+\emph{Commentariolus} (c.~1514).
+
+\bibitem{CopernicusDeRev}
+N.~Copernicus,
+\emph{De revolutionibus orbium coelestium} (Nuremberg, 1543).
+
+\bibitem{Bessel1838}
+F.~W.~Bessel,
+\emph{Bestimmung der Entfernung des 61sten Sterns des Schwans},
+Astronomische Nachrichten \textbf{16} (1838).
+
+\bibitem{JanzenCosmogenesis} D.~Janzen, \emph{Cosmogenesis: the Big Bang as a synthesis of Cosmological Relativity's deductively forced consequences, and the primordial light-element abundances it produces}, companion paper (P16).
+
+\bibitem{JanzenCRcosmology} D.~Janzen, \emph{Cosmological Relativity: the layered cosmology, its confrontation with the expansion history, and the resolution of the Hubble tension}, companion paper (P15).
+\bibitem{Eddington1933} A.~S.~Eddington, \emph{The Expanding Universe}, Cambridge University Press (1933).
+%  r2376+c54.9: cited but undefined -- the citation printed as [?]
+\bibitem{JanzenEinsteinConsiderations} D.~Janzen, \emph{Einstein's cosmological considerations}, arXiv:1402.3212 [physics.hist-ph].
+%  r2376+c54.12: cited by the register-boundary subsection; was undefined here
+\bibitem{JanzenBoundary} D.~Janzen, \emph{The de Sitter substrate and the Standard Model: a four converging routes to a geometric boundary on what one maximally-symmetric Lorentzian substrate's isometry does and does not force, and the framework and gauge on its two real forms}, companion paper (P13).
+\end{thebibliography}
+
+\input{appendix_receipts_P06}
+
+\end{document}

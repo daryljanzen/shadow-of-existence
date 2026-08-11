@@ -1,0 +1,250 @@
+#!/usr/bin/env python3
+"""
+L-129b — WHICH GROUP SINGLE-VALUEDNESS IS DEMANDED UNDER.  `L-129` registered this as
+load-bearing and put it ahead of anything about curvature.  Working it does two things:
+it exposes a MODELLING ASSUMPTION `L-129` made silently, and it ends in a genuine tension
+rather than a resolution -- ** the reading that gets the meson right is the one that gets the
+baryon wrong, and that is the result. **
+
+  PART 1  ** THE HIDDEN ASSUMPTION IN `L-129`, NAMED. **  `L-128` built E as a DIRECT SUM of
+          three lines; a constituent lives in ONE summand.
+  PART 2  ** SO THE ONE-PER-VANTAGE TRIPLE IS A SECTION OF det E, AND det E IS NOT TRIVIAL. **
+  PART 3  The three candidate configuration groups, and why each is arguable.
+  PART 4  ** THE TABLE, COMPUTED: no choice gets both channels right. **
+  PART 5  ** WHAT THAT MEANS, AND IT IS NOT A CHOICE PROBLEM. **
+
+Run: python3 L129b_which_configuration_space.py
+"""
+import sympy as sp
+import itertools
+
+print(__doc__.split("Run:")[0])
+
+w = sp.exp(2 * sp.pi * sp.I / 3)
+
+
+def W(k):
+    return sp.simplify(sp.expand_complex(w**(k % 3)))
+
+
+ID, CYC = (0, 1, 2), (1, 2, 0)
+
+
+def mul(g, h):
+    (gs, gd), (hs, hd) = g, h
+    return (tuple(gs[hs[i]] for i in range(3)),
+            tuple((hd[i] + gd[hs[i]]) % 3 for i in range(3)))
+
+
+def sgn(s):
+    return 1 if list(s) in ([0, 1, 2], [1, 2, 0], [2, 0, 1]) else -1
+
+
+def det(g):
+    return sgn(g[0]) * W(sum(g[1]))
+
+
+def trace(g):
+    s, d = g
+    return sp.simplify(sp.expand_complex(sum((W(d[i]) for i in range(3) if s[i] == i),
+                                             sp.Integer(0))))
+
+
+def mat(g):
+    M = sp.zeros(3, 3)
+    for i in range(3):
+        M[g[0][i], i] = W(g[1][i])
+    return M
+
+
+def close(gens):
+    idt = (ID, (0, 0, 0))
+    G, fr = {idt}, [idt]
+    while fr:
+        x = fr.pop()
+        for g in gens:
+            y = mul(x, g)
+            if y not in G:
+                G.add(y)
+                fr.append(y)
+    return sorted(G)
+
+
+# =====================================================================
+print("=" * 78)
+print("PART 1 — THE HIDDEN ASSUMPTION IN `L-129`")
+print("=" * 78)
+for s in [
+ "`L-129` counted invariants in V (x) V (x) V with V the rank-3 fibre, which is the right",
+ "question ** IF each constituent is an E-VALUED field carrying an internal index that runs over",
+ "all three values. **  ",
+ "",
+ "⚠ ** THAT IS NOT WHAT `L-128` BUILT.  `L-128`'s bundle is a DIRECT SUM, E = L_0 + L_1 + L_2,",
+ "   one line per vantage, and a constituent is a mode OF A VANTAGE -- a section of ONE",
+ "   summand, not a three-component object. **  The distinction was never stated because until",
+ "   `L-129` nothing turned on it.",
+ "",
+ "⇒ ** SO A ONE-PER-VANTAGE BOUND TRIPLE IS NOT A GENERAL ELEMENT OF V (x) V (x) V AT ALL.  It",
+ "   is a section of the single line L_0 (x) L_1 (x) L_2 -- which is det E. **  There is no",
+ "   epsilon to contract and no invariant subspace to count: the space is ONE-DIMENSIONAL and",
+ "   the only question is whether that line is TRIVIAL.",
+ "",
+ "⌗ *`L-129`'s arithmetic is unaffected -- e_0 (x) e_1 (x) e_2 does sit inside V (x) V (x) V and",
+ "does transform as computed.  What is affected is what the count MEANT, and PART 2 asks the",
+ "question the corpus's own bundle actually poses.*",
+]:
+    print("  " + s)
+
+# =====================================================================
+print()
+print("=" * 78)
+print("PART 2 — det E, AND IT IS NOT TRIVIAL")
+print("=" * 78)
+lam = sp.Symbol('lambda', integer=True, positive=True)
+gam = [(ID, tuple(2 if i == c else 0 for i in range(3))) for c in range(3)]   # lambda = 1
+Pgen = (CYC, (0, 0, 0))
+print(f"  {'loop':>28} {'action on E':>22} {'action on det E':>18}")
+for c in range(3):
+    print(f"  {('encircle wall %d' % c):>28} "
+          f"{('diag, omega^-1 in slot %d' % c):>22} "
+          f"{str(sp.nsimplify(det(gam[c]))):>18}")
+lap = mul(mul(gam[0], gam[1]), gam[2])
+print(f"  {'one full lap (all three)':>28} {'omega^-1 times identity':>22} "
+      f"{str(sp.nsimplify(det(lap))):>18}")
+print(f"  {'rigid 120 deg rotation':>28} {'the 3-cycle P':>22} "
+      f"{str(sp.nsimplify(det(Pgen))):>18}")
+print()
+for s in [
+ "** SO det E HAS HOLONOMY omega^(-lambda) AROUND A SINGLE WALL AND IS TRIVIAL AROUND A LAP AND",
+ "   AROUND THE RIGID ROTATION. **  ",
+ "",
+ "⇒ ** THE BARYON QUESTION IS THEREFORE EXACTLY: IS A SINGLE-WALL LOOP AVAILABLE TO A BOUND",
+ "   TRIPLE?  If yes, det E is non-trivial along it and the triple is not single-valued.  If no,",
+ "   every available loop acts trivially and it is. **  That is a question about the CONFIGURATION",
+ "   SPACE, not about the bundle, and the corpus has never specified one.",
+]:
+    print("  " + s)
+
+# =====================================================================
+print()
+print("=" * 78)
+print("PART 3 — THE THREE CANDIDATE CONFIGURATION GROUPS")
+print("=" * 78)
+G_full = close(gam + [Pgen])
+G_su = close([mul(gam[0], (ID, tuple((-gam[1][1][i]) % 3 for i in range(3)))),
+              mul(gam[1], (ID, tuple((-gam[2][1][i]) % 3 for i in range(3)))),
+              Pgen])
+G_rigid = close([Pgen, lap])
+for nm, G, why in [
+    ("Gamma_full  (81)", G_full,
+     "every loop in the base is a loop; a single wall IS one.  The strictest reading, and it is"),
+    ("Gamma_SU    (27)", G_su,
+     "only unimodular transports; what a bound one-per-vantage combination traverses if its"),
+    ("Gamma_rigid  (9)", G_rigid,
+     "the triple is RIGID -- causality pins one puncture per hinge, so moving ONE constituent"),
+]:
+    print(f"  {nm}  |G| = {len(G):>2}")
+print()
+for s in [
+ "  Gamma_full  -- ** every closed path in the base is a closed path, and a small circle about",
+ "    one wall is one. **  The strictest reading and the literal meaning of 'single-valued'.",
+ "  Gamma_SU    -- ** only the unimodular transports. **  Defensible if what physically moves is",
+ "    the triple as a whole, whose transport is the product over its constituents.",
+ "  Gamma_rigid -- ** generated by the rigid 120-degree rotation and the full lap. **  Defensible",
+ "    because `P03_hexagon_null_triple` pins a bound triple to ONE PUNCTURE PER HINGE by",
+ "    causality: ** move one constituent off its puncture and the null relations fail, so the",
+ "    intermediate configurations are not bound triples and the path is not a path in the space",
+ "    of BOUND states. **",
+ "",
+ "⌗ ** ALL THREE ARE ARGUABLE FROM THINGS THE CORPUS ALREADY SAYS, WHICH IS PRECISELY THE",
+ "   PROBLEM.  `L-74`'s 'single-valuedness' was written when there was one radius; it does not",
+ "   distinguish these, because with one radius they coincide. **",
+]:
+    print(s)
+
+# =====================================================================
+print()
+print("=" * 78)
+print("PART 4 — THE TABLE")
+print("=" * 78)
+
+
+def inv_dim(G, chi):
+    v = sp.simplify(sp.expand_complex(sum((chi(g) for g in G), sp.Integer(0)) / len(G)))
+    assert sp.im(v) == 0 and v == int(v), f"invariant count must be a non-negative integer: {v}"
+    return int(v)
+
+
+def chi3(g):
+    return sp.expand_complex(trace(g)**3)
+
+
+def chi_bar(g):
+    t = trace(g)
+    return sp.expand_complex(t * sp.conjugate(t))
+
+
+eps = sp.zeros(27, 1)
+for perm in itertools.permutations(range(3)):
+    eps[perm[0] * 9 + perm[1] * 3 + perm[2]] = sgn(perm)
+
+
+def eps_ok(G):
+    for g in G:
+        M = sp.Matrix(sp.kronecker_product(mat(g), mat(g), mat(g)))
+        if sp.simplify(sp.expand_complex(M * eps - eps)) != sp.zeros(27, 1):
+            return False
+    return True
+
+
+print(f"  {'configuration group':>22} {'|G|':>5} {'baryon dim':>11} {'eps invariant?':>15} "
+      f"{'meson dim':>10} {'both right?':>12}")
+rows = []
+for nm, G in (("Gamma_full", G_full), ("Gamma_SU", G_su), ("Gamma_rigid", G_rigid)):
+    b, m, e = inv_dim(G, chi3), inv_dim(G, chi_bar), eps_ok(G)
+    good = (b == 1 and m == 1 and e)
+    rows.append((nm, len(G), b, e, m, good))
+    print(f"  {nm:>22} {len(G):>5} {b:>11} {str(e):>15} {m:>10} {str(good):>12}")
+print(f"  {'SU(3) itself':>22} {'inf':>5} {1:>11} {'True':>15} {1:>10} {'True':>12}")
+print()
+assert not any(r[5] for r in rows), "if any row were right this file's conclusion would be wrong"
+print("  ** NO CANDIDATE GETS BOTH CHANNELS RIGHT.  ASSERTED, NOT EYEBALLED. **")
+
+# =====================================================================
+print()
+print("=" * 78)
+print("PART 5 — WHAT THAT MEANS")
+print("=" * 78)
+for s in [
+ "⌗ ** AND THE PATTERN IN THE TABLE IS THE FINDING, NOT THE FAILURE OF ANY ONE ROW. **",
+ "",
+ "   Gamma_full and Gamma_SU both give the MESON exactly, and both fail the baryon -- one by",
+ "   returning the wrong state, one by over-counting.  Gamma_rigid, which is the only reading",
+ "   that could make the baryon single-valued, ** loses the meson **: relaxing the group enough",
+ "   to admit the baryon admits far too much everywhere else.",
+ "",
+ "⇒ ** SO THE READING THAT GETS THE MESON RIGHT IS THE READING THAT GETS THE BARYON WRONG, AND",
+ "   THIS IS NOT A CHOICE THE CORPUS CAN MAKE ITS WAY OUT OF. **  `L-129` closed by asking the",
+ "   corpus to FIX which group.  ** Fixing it does not help: the answer is bad in every",
+ "   direction, and the badness moves between channels rather than going away. **",
+ "",
+ "⌗ ** AND THAT CONVERGES WITH `L-129`'s OTHER CONCLUSION RATHER THAN COMPETING WITH IT. **  If",
+ "   no choice of holonomy group works, the missing structure is not a group -- which is what",
+ "   `L-129` concluded from the other side when it found the gap's name to be ANTISYMMETRY.",
+ "   ** Two independent routes now say the same thing: what is absent is not a bigger symmetry",
+ "   but a datum of a different KIND. **",
+ "",
+ "⌗ AND PART 1 SHARPENS THAT INDEPENDENTLY.  With E a direct sum, the three constituents are",
+ "   DISTINGUISHABLE -- they sit at three distinct vantages -- so ** 'which ordering' is not a",
+ "   physical label at all unless the constituents are IDENTICAL PARTICLES.  Antisymmetry is",
+ "   meaningless for distinguishable objects. **  So the geometry does not merely fail to supply",
+ "   the exchange sign; ** as built, it does not have the kind of object the exchange sign is a",
+ "   property of. **",
+ "",
+ "⇒ ** WHAT IS OWED IS THEREFORE NOT A CHOICE OF GROUP BUT AN ACCOUNT OF WHEN TWO CONSTITUENTS",
+ "   AT DIFFERENT VANTAGES ARE THE SAME PARTICLE -- and P14 has the material to ask it, since",
+ "   its constituents are Dirac zero-modes of ONE operator differing only by which wall binds",
+ "   them.  Whether that makes them identical is a question about the operator, not about the",
+ "   bundle. **  Registered.  Nothing here claims it does.",
+]:
+    print("  " + s)

@@ -1,0 +1,739 @@
+\documentclass[11pt]{article}
+% =====================================================================
+% [†ONT-FERM] THE FERMION SECTOR — this paper is the HOME (ONTOLOGY_FOUNDATION_INDEX.md §1q).
+%   IT BUILDS P13's ONE OPENING: the boundary paper walls the gauge sector and names the substrate's
+%   DISCRETE structure as "the one opening through which matter might enter, carried as a conjecture."
+%   This paper puts a Dirac field on the slicing curve and computes its zero-mode content.
+%   *** DELIVERED: the generation COUNT (three), the CHIRALITY of each (gamma^5), and the FAMILY SYMMETRY
+%   (S_3) — "these are the discrete flavour structure." NOT DELIVERED: the GAUGE REPRESENTATIONS (colour,
+%   weak isospin, hypercharge — walled; "they remain the ordinary route, a bundle imposed by hand") and the
+%   MASS SPECTRUM ("the zero-modes are massless, and their splitting is electroweak physics, external to
+%   the geometry"). The boundary is drawn explicitly. ***
+%   *** r1830 — THE TEN-AVENUE COMB, RUN PROPERLY (r1304's whole-comb was a rubber-stamp, Daryl-caught).
+%   TWO WEIGHT CORRECTIONS, both between the paper and its OWN apparatus rather than with the world:
+%   (1) sec:count no longer states the gamma^5-graded index "protected under any deformation" FLAT. Its
+%       own receipt P14_even_crossing_index marks the ATIYAH-SINGER STATEMENT ON THE BRANCHED BEAD AS
+%       *TRACED, NOT COMPUTED*, and establishes only the mechanism: (A) Jackiw-Rebbi one-mode-per-wall,
+%       (B) the even-crossing obstruction (net 0 on a simple loop), (C) three same-sign walls => net 3,
+%       WHICH REQUIRES THE r=0 BRANCH POINT. The paper now states the stability at traced weight and
+%       cites the receipt for what IS established. THE RECEIPT WAS MORE HONEST THAN THE PAPER.
+%   (2) sec:count now states the DIRECTION of the P6 dependence. This paper rests on P6's Rule 2; P6
+%       cites this paper three times, including at the Rule-2 core. NOT CIRCULAR — P6 grounds Rule 2
+%       from the historiographic record independently and cites the three-plane selection only as a
+%       worked instance — but the direction was written NOWHERE, and mutual citation between a paper
+%       and its criterion's home READS as circularity. It now says which way it runs. ***
+%   THE CHIRAL WALL: r is a SIGNED coordinate, the curve running forward through the seam and backward
+%   through r=0 as ONE CLOSED OBJECT (r=0 a BRANCH POINT the field crosses smoothly, not a barrier). The
+%   massless radial Dirac problem separates with superpotential W(r) = lambda.sqrt(f)/r; BECAUSE r IS
+%   SIGNED, W CHANGES SIGN AT r=0 — A DOMAIN WALL. The zero-mode integrates to psi = cosh^{-a}(x/a) chi_+,
+%   AN EXACT NORMALIZABLE SOLUTION; the conjugate branch grows as cosh^{+a} and is REJECTED.
+%   *** THE NORM IS LOAD-BEARING — AND IT IS THE LAYERED ONTOLOGY DOING PHYSICS. "The norm in which the
+%   mode is normalizable is the one CR's ontology selects, and the point is LOAD-BEARING." The fermion is a
+%   field on the EVOLVING SPATIAL LEAF — the existent of the layered ontology, of which the spacetime is a
+%   PROJECTION — so its norm is the INDUCED PROPER-DISTANCE MEASURE d.ell = dr/sqrt|f|. In THAT measure the
+%   turning points (f=0, the horizons) lie at FINITE proper distance and the r=0 crossing is an INTEGRABLE
+%   SQUARE-ROOT SINGULARITY, so the bound state is genuinely normalizable. IN THE CONSERVED *SPACETIME*
+%   DIRAC NORM (tortoise, dr_* = dr/f) THE SAME STATIC MODE IS **NOT** NORMALIZABLE — "the horizons sit at
+%   infinite tortoise distance, where the mode tends to a constant." — "THE TWO ARE NOT INTERCHANGEABLE,
+%   and CR reads the fermion as a mode of the EXISTENT LEAF, not a propagating spacetime field carrying the
+%   tortoise norm — on the leaf it is a bound state." Direct solution across a full undercritical slicing
+%   CONFIRMS BOTH LIMITS. NEVER QUOTE THE NORMALIZABILITY WITHOUT THE NORM. ***
+%   prop:wall: EACH THROAT WALL BINDS EXACTLY ONE normalizable chiral zero-mode; its chirality is a definite
+%   sigma_y eigenvalue whose sign is the sign of the signed-radius flip; THAT OPERATOR IS THE
+%   DIAGRAM-AUTOMORPHISM PARITY R = gamma^5. "This is the Z_2 (chirality) half of the substrate's discrete
+%   structure, REALISED AS A BOUND STATE, NOT POSITED. Reversing the wall reverses chi_±, flipping the
+%   chirality — THE PARITY *IS* THE CHIRALITY."
+%   THE THREE WALLS: r=0 is NOT the throat's CENTRE but a point ON the throat circle — the back, X_1 = -alpha,
+%   fixed relative to the hinge about which the slicing plane swings. The substrate carries THREE HINGES,
+%   120 deg apart at transverse distance 2.alpha, of which the THROAT CIRCLE IS THE INCIRCLE. THE Z_3-FIXED
+%   CENTRE CARRIES NO WALL; the walls lie on the circle at polar 180/300/60, a Z_3-ORBIT, each ANTIPODAL to
+%   its hinge.
+%   *** prop:forced — THE THREE-PLANE CONSTRUCTION IS FORCED *WITHIN CR*. "A one-plane construction must
+%   select WHICH hinge to build on: A FREE MODULUS, unfixed by the geometry, an arbitrary choice among three
+%   Z_3-equivalent options. The Z_3-symmetric three-plane construction is THE UNIQUE CONFIGURATION CARRYING
+%   NO SUCH MODULUS — the symmetric point, pinned by the symmetry." A construction carrying an unfixed
+%   arbitrary modulus is EXACTLY WHAT LEAST-ARBITRARINESS EXCLUDES (P6's Rule 2 in the ontological register,
+%   invoked by name).
+%   THE TWO LEGS ARE IN FACT ONE: given the three-hinge leaf, the three throat walls are DISTINCT LOCI, so
+%   the wall-bound zero-modes have DISJOINT SUPPORT and span a three-dimensional space — "A FLAVOUR TRIPLET,
+%   THREE PHYSICAL STATES IN ANY BASIS, NOT ONE STATE REDESCRIBED."
+%   THE HONEST EDGE, STATED PLAINLY BY THE PAPER: "'Forced within CR' is thus forced by that VINDICATED
+%   CRITERION, not an added axiom; THE HONEST EDGE IS THAT A FRAMEWORK DECLINING THE CRITERION READS THE
+%   NATURAL SINGLE-HINGE INDEX — ONE — NOT THREE." And: "It is not a theorem a framework lacking that
+%   principle must accept... AND WE DO NOT INFLATE IT." ***
+%   *** THE COUNT IS A WELL-DEFINED INDEX — AND *WHY*, EXACTLY WHERE THE BULK INDEX IS NOT.
+%   (i) THE LEAF IS COMPACT: "in the leaf's proper measure the closed slicing has FINITE TOTAL LENGTH — the
+%   horizon turning points at finite proper distance, the r=0 crossing an integrable sqrt-singularity — SO
+%   THE LEAF IS COMPACT and the Dirac operator on it carries a WELL-DEFINED ANALYTICAL INDEX dim ker, EXACTLY
+%   WHERE THE BULK INDEX ON THE NON-COMPACT SPACETIME (tortoise measure) IS OBSTRUCTED."
+%   (ii) THE EVEN-CROSSING CONSTRAINT DOES NOT APPLY: the signed-radius flip is through the r=0 BRANCH POINT
+%   rather than a single-valued crossing on a loop, "so the even-crossing constraint that binds a
+%   single-valued sign function on a circle DOES NOT APPLY, and the three same-chirality modes ON DISJOINT
+%   SUPPORT HAVE NO CANCELLING PARTNER."
+%   (iii) dim ker_+ = 3, dim ker_- = 0 — "the count is THE NET CHIRALITY: a gamma^5-GRADED INDEX, PROTECTED
+%   UNDER ANY DEFORMATION THAT PRESERVES THE THREE-WALL STRUCTURE."
+%   "IT IS A LEAF (VANTAGE) INDEX, WHICH IS WHY IT IS WELL-DEFINED PRECISELY WHERE THE SPACETIME BULK INDEX
+%   IS NOT." — THE DIRECT ANSWER TO P13's NON-COMPACTNESS ESCAPE, FROM THE OTHER SIDE: "the count is a
+%   WALL-LOCALIZED zero-mode index, NOT A BULK dS_5 INDEX, and localized modes are indifferent to the bulk's
+%   non-compactness." NO TENSION. ***
+%   THE FAMILY SYMMETRY: the Z_3 rotation cycles the walls; each of the three reflections swaps the other two
+%   and fixes one; together they generate the FULL S_3. With prop:wall's chirality Z_2: D_6 = S_3 x Z_2
+%   (FAMILY x CHIRALITY) = Aut(A_2). GLOBAL vs GAUGED is "NOT A CHOICE MADE HERE BUT THE *KIND* THE DISCRETE
+%   STRUCTURE FIXES": the Weyl S_3 is the deck/monodromy symmetry of the solution space and NO substrate
+%   isometry, whereas the orientation parity Z_2 *IS* an isometry (gamma^5) — "so chirality descends GAUGED
+%   and flavour GLOBAL, the SM's own arrangement following from WHICH FACTOR IS AN ISOMETRY."
+%   WHY THEY ARE *GENERATIONS*: "Each plane carries the same three horizon VALUES, so the three generations
+%   are IDENTICAL IN CONTENT, distinguished only by their wall; this is why the family symmetry is a symmetry
+%   of IDENTICAL COPIES — the defining property of Standard-Model generations."
+%   THE DEGENERACY IS FORCED, AND NO ASYMMETRIC HANDLE SITS IN THE MASS PARAMETER: the three shared horizons
+%   are roots of ONE cubic, and EVERY ROOT, designated the slicing parameter, RETURNS THE SAME 2M = r_0 -
+%   r_0^3 — "one object read three ways on the fully D_6-symmetric horizon locus." The 2+1 of a designated
+%   root against the ellipse pair is the diagonal designation sigma; the sign 2+1 is the reflection through
+%   the origin — "EACH A DESCRIPTION STRUCTURE PAIRED WITH ITS SYMMETRIC TWIN, so NO ASYMMETRIC HANDLE SITS
+%   IN THE MASS PARAMETER." (The partial-symmetry-flatten guard, written into the physics.) A flavour
+%   BREAKING STRUCTURE exists (do-not-assert); the mass VALUES are the ordinary electroweak route.
+%   *** THE COSMOGENESIS OF THE GENERATIONS — three features, each read off established structure.
+%   INHERITANCE: "the causal reassignment FIXES THE EXPANSION RATE AND DOES NOT TOUCH THE LEAF-CARRIED CONTENT,
+%   so the generation structure — being LEAF-CARRIED — is inherited across the branch point UNCHANGED."
+%   ORIGIN: "the Nariai crest is the FIXED POINT OF THE ROOT-PERMUTATION, where two of the three roots merge
+%   (the discriminant 4 - 3 r_0^2 vanishing); the three generation-loci are S_3-SYMMETRIC THERE and split
+%   into three distinct generations undercritical — SO THE FAMILY STRUCTURE *ORIGINATES* AT THE CREST and
+%   unfolds as the universe expands."
+%   CHIRALITY — AND NO BARYOGENESIS AT THE SEAM: "the crest is a fixed point of S_3 but *NOT* of R, so the
+%   parity R = gamma^5 is UNTOUCHED — the inherited matter STAYS CHIRAL, and NO MATTER/ANTIMATTER ASYMMETRY
+%   IS A COSMOGENESIS EVENT; it stays the ordinary route." Grounded: the chirality/mass parity and the TIME
+%   REFLECTION T are DISTINCT reflections — "A RESONANCE, NOT AN IDENTITY" (spacelike/horn-preserving vs
+%   timelike/horn-flipping on the A_2 hexad) — "so THE ANTIMATTER REGISTER IS NOT THE TIME-STRUCTURE, and
+%   matter/antimatter CANNOT BE A COSMOGENESIS (TIME) EVENT."
+%   BOUND -> PROPAGATING: "under the signature flip the hole-side spatial mass W = lambda.sqrt(f)/r passes
+%   into a COSMOLOGICAL-SIDE TEMPORAL TERM, so the bound wall-mode CONTINUES AS A FERMION PROPAGATING IN
+%   COSMIC TIME, and the three progenitor wall-modes become THE THREE PROPAGATING FAMILIES of the expanding
+%   universe." [r966: the explicit continuation is now CARRIED OUT in the body (sec:cosmogenesis) on a
+%   concrete undercritical model, receipt B2_zeromode_continuation.py — W real between horizons -> imaginary
+%   past a horizon -> propagating cosmic-time fermion; the M!=0 spinor vielbein likewise done in sec:chirality
+%   (B3_spinor_vielbein.py). NO LONGER OPEN.] ***
+%   *** SYMBOL COLLISION — RESOLVED corpus-wide at r968. CANON: R = the orientation/mass-reflection
+%   parity (A_2 diagram automorphism, O(5,1)\SO_0, = gamma^5 on spinors); P = the areal SPATIAL parity
+%   r -> -r (generator gamma^1.gamma^2.gamma^3, ANTICOMMUTES with gamma^5); T = time reflection. This is
+%   the physics-standard convention (P is spatial parity, forced because the corpus writes CPT/PT) and it
+%   is what boundary_paper + p0 + this paper's propositions already used (R = gamma^5). The r968 rename
+%   moved P3 and P5's mass-reflection "P" -> R (P3's local radius R was renamed \varrho to free the
+%   letter), fixed p0 L884's backward-radial "P" -> R, and rewrote this paper's L213 note to R (spatial
+%   parity = P). boundary_paper + p0 L649's CPT skeleton (P,T,gamma^5) were already canonical and unchanged.
+%   Recorded in UNFINISHEDNESS_AND_COHERENCE_r967.md §3 (now closed). ***
+%   ALTITUDE: "As throughout, this is COHERENCE WITHIN CR; what the world's matter is remains THE DATA'S TO
+%   JUDGE." The count is forced WITHIN CR — "not a free-standing theorem." Do-not-assert: the
+%   flavour-breaking structure's identification with the physical hierarchy; the mass values; the explicit
+%   cosmological-side continuation.
+%   Builds P13's opening ([†ONT-BDRY] §1p) and answers its non-compactness worry with a LEAF index;
+%   prop:forced is P6's Rule 2 ([†ONT-EPI] §1g); the norm rests on P7's layered ontology ([†ONT-CR] §1e);
+%   R = gamma^5 is P12's result ([†ONT-ALG] §1h), here realised as a BOUND STATE; the three hinges and the
+%   throat-incircle are P3's geometry ([†ONT-GEOM] §1f); inheritance is prop:lapse's leaf-carried content
+%   ([†ONT-OPER] §1l). "The innermost of the three registers of maximal symmetry" p0 draws together.
+% =====================================================================
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{caption}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=NavyBlue,citecolor=NavyBlue,urlcolor=NavyBlue}
+
+\newcommand{\dd}{\mathrm{d}}   % r2376+c54.9: P14 used \dd in 7 places without defining it -- the paper did not compile
+\newcommand{\dS}{\mathrm{dS}}
+\newcommand{\su}{\mathfrak{su}}
+\newcommand{\so}{\mathfrak{so}}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+
+\title{The fermion sector of Cosmological Relativity:\\
+three chiral generations from the maximally-symmetric slicing structure}
+\author{Daryl Janzen}
+\date{}
+
+\usepackage{receipts}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The companion papers establish that the black-hole/de~Sitter substrate of Cosmological Relativity (CR) is a maximally symmetric manifold sliced perspectivally, and that the Standard Model gauge group does \emph{not} arise as a continuous isometry of it: the geometric route to $\su(3)$ is walled, leaving the substrate's discrete orientation structure as the one opening for matter. This paper puts a Dirac spinor field on the slicing structure and asks what that discrete opening delivers. Three results follow, each stated at the weight it is earned. First, the signed areal radius forces the radial Dirac superpotential to change sign at the throat, binding exactly one chiral zero-mode there; its chirality is the diagram-automorphism parity $R=\gamma^5$ (an exact solution, not an assertion). The norm in which it binds is the one CR's ontology selects, and the point is load-bearing\rcpt{P14_dual_norm}: the fermion is a mode of the \emph{existent spatial leaf}, of which the spacetime is a projection, so its measure is the induced proper distance $d\ell=dr/\sqrt{|f|}$, in which the horizon turning points lie at \emph{finite} distance and the $r=0$ crossing is an integrable square-root singularity. In the conserved \emph{spacetime} Dirac norm---the tortoise measure---the same static mode does \emph{not} normalize, the horizons standing infinitely far. The two are not interchangeable, and CR reads the fermion on the leaf, where it is a bound state. Second, the substrate is symmetric in three $120^\circ$-separated hinges, and the maximally-symmetric---least-arbitrary---matter construction, which is the one CR's own founding principle selects, places a slicing plane on each: three throat walls, hence three chiral zero-modes. A one-hinge truncation is excluded not as disfavoured but as carrying an unfixed arbitrary modulus, which the principle forbids. That count is a well-defined index in the precise sense the ontology makes available: in the leaf's proper measure the closed slicing has \emph{finite} total length\rcpt{P14_leaf_compactness}, so the leaf is compact and its Dirac operator carries a well-defined analytical index---exactly where the bulk index on the non-compact substrate, which the boundary paper's non-compactness escape turns on, is obstructed. The signed-radius flip moreover passes through the $r=0$ \emph{branch point}\rcpt{P14_mode_monodromy_at_the_wall}---the wall and the branch point being one locus with two properties rather than two loci that coincide, which is checked on locus, type, definition, equivariance and separability---rather than a single-valued crossing on a loop, so the even-crossing constraint does not apply and the three same-chirality modes, on disjoint support, have no cancelling partner: $\dim\ker_+=3$, $\dim\ker_-=0$, the net chirality a $\gamma^5$-graded index. Its stability under deformations preserving the three-wall structure is the expected behaviour of such a count and is stated here at traced weight: the receipt establishes the mechanism---one mode per wall, the even-crossing obstruction on a simple loop, and the necessity of the $r=0$ branch point---and marks the Atiyah--Singer statement on the branched bead as traced rather than computed. Third, the three zero-modes are permuted by the full $S_3$ generated by the three hinges, and that $S_3$ is not a second group resembling the substrate's own: each hinge designates one of the three roots of the horizon cubic as its own black-hole horizon, so a transposition of roots is a hop to a neighbouring hinge and the Weyl $S_3$ \emph{is} the relation among the three hinges. Every root, designated the slicing parameter, returns the \emph{same} $2M=r_0-r_0^3$, so the three carry one mass parameter and are identical in content, distinguished only by which root each takes as its hole. \emph{Which index that threeness is, this paper settles against its own first reading} (Section~\ref{sec:whichthree}): the hinge $S_3$ is a \emph{within-state} index and not a family symmetry, the generations' own threeness being the turnaround's deck $\mathbb{Z}_3$, with the wall structure fixing the \emph{number} at either seat. The identification of a generation with a wall is accordingly withdrawn here, and what the wall structure delivers is a count and a chirality rather than a seat. Those two data---a chirality and a count---are the two factors of one group, $D_6=S_3\times\mathbb{Z}_2$, and the paper closes by saying why they descend differently, which is a reading of established structure rather than a fourth result. The factors act on independent structures, the Weyl $S_3$ on the three roots and the inversion on the two rulings; on the substrate's waist those are the two relations a figure can bear to a circle, the roots being the three special points \emph{on} it and the rulings the lines \emph{tangent} to it, and \emph{on} and \emph{tangent} are independent relations. \emph{The directness of the product is not itself the evidence for that, and should not be cited as though it were}: $\mathrm{Aut}(A_{2})$ is a Weyl $S_{3}$ extended by a diagram $\mathbb{Z}_{2}$, every automorphism of $S_{3}$ is inner, and a semidirect product by an inner automorphism is isomorphic to the direct one---so no semidirect alternative exists to be ruled out. What the two relations supply is which factor is which, and that they differ in \emph{kind}. The kinds then differ for the same reason: a tangent is a line of the substrate, so exchanging the two rulings is a motion of it---an isometry, acting on the cut spinor as $\gamma^5$, and chirality descends \emph{gauged}; a root labels a different cut, so permuting the three moves through the solution space---the deck symmetry, and flavour is \emph{global}. The Standard Model's arrangement of a gauged chirality against a global flavour is, in this reading, the difference between being \emph{on} the one circle and being \emph{tangent} to it, and this sector is where that difference becomes two physical data. The net structure---a count of three, a chirality, and a within-state $S_3$---is the Standard Model's \emph{discrete flavour structure}, obtained here as the maximally-symmetric slicing of a maximally-symmetric substrate. It is not the mass spectrum (electroweak breaking), and the boundary is drawn explicitly; what it does deliver about the gauge sector is the fourth result below. \emph{The count that correspondence has to meet is specified rather than gestured at}\rcpt{P14_the_count_specified}: one generation splits $12$ coloured against $3$ colourless ($4$ with a right-handed neutrino), and the sector's deliverables are matched factor by factor against that split rather than against the total. \emph{The correspondence with the Standard Model's content is stated explicitly rather than left implicit}: one generation there is fifteen Weyl fermions in five multiplets of $\su(3)_c\times\su(2)_L\times\mathrm{u}(1)_Y$---sixteen with a right-handed neutrino---and the quark/lepton distinction is which of them carries the colour $\mathbf{3}$. \emph{On this construction that distinction lands as a grading rather than as a count}\rcpt{P14_quark_lepton_frontier}: the triality class is what separates the two, a coloured constituent carrying a non-zero class and a lepton the zero one, and no counting argument in this sector distinguishes them. This sector fixes the number of such families, their chirality and the $S_3$ relating them, and fixes nothing about their internal content: not the multiplet count, and not the colour or isospin assignments. \emph{Two items it does bear on}: the wall structure requires each generation's content to be anomaly-free on its own---there being no bulk gauge field for inflow to come from---and the observed content meets that condition on every count and only as a complete set; and given the colour and isospin assignments, that same condition fixes the hypercharges uniquely up to normalisation, so hypercharge is not independently undelivered. \emph{The zero-mode is one Weyl mode per wall, not fifteen; the index counts families, not the states within them.} Carried across the branch point at $r=0$ the structure is inherited rather than remade: the reassignment fixes the expansion rate and does not touch the leaf-carried content, so the generations cross unchanged; the family \emph{originates} at the crest, where two of the three roots merge and the $S_3$-symmetric locus splits undercritically into three; and the crest is a fixed point of $S_3$ but \emph{not} of $R$, so the parity is untouched, the inherited matter stays chiral, and no matter/antimatter asymmetry is a cosmogenesis event---it stays the ordinary route. \emph{Fourth, and reached after the three above, the discrete opening delivers more than a flavour skeleton.} The bundle the operator acts on is not a bundle of the substrate: every ambient candidate is real, and a real bundle's complexification carries a parallel conjugation, so its holonomy lands in the real form and none can carry $\su(3)$. The module is the \emph{branching} itself. Because the wall is a wall \emph{of a hinge}, the construction carries three signed areal radii rather than one, so a wall crossing branches only the vantage that owns it and the monodromy is diagonal in the vantage basis and non-abelian across it; the smallest connected group containing the three wall monodromies and the hinge $3$-cycle is $SU(3)$, with the lap as its centre. Second quantisation---the ordinary step, available because the three wall modes are one operator's kernel and therefore identical particles---places a three-fermion state in the exterior cube, one-dimensional and generated by $\varepsilon$, and returns baryon $1$, diquark $0$, meson $1$: every channel the Standard Model has, with the configuration group \emph{selected} rather than chosen. \emph{And the negative half is as sharp and is stated with it}: the bundle is \emph{flat}. Flat holonomy supplies exact selection rules and no curvature, so the construction delivers the discrete content of colour and supplies no force---the geometry quantises and does not couple. \emph{Two further facts about the sector's discrete group are recorded.} It is larger than $D_{6}=S_{3}\times\mathbb{Z}_{2}$: the residue pairing the horizon roots' surface gravities carry has a holonomy about the branch points which, adjoined to the walls' $S_{3}$, closes the Weyl group of the substrate's own complexified isometry algebra---so the excess is substrate-derived rather than assumed. And that holonomy acts on the walls' chiralities, which are the $\sigma_{y}$ eigenvalues of Proposition~\ref{prop:wall}, changing their signs only in \emph{pairs}: the observed configuration is therefore the unique member of its orbit with all three walls at one chirality, and $\dim\ker_{-}$ cannot be reached from $\dim\ker_{+}=3$ by any number of loops, three and zero lying in different parity classes. The generation count is thus not merely what the index returns but what no holonomy of this connection can move. The count is forced within CR by the programme's own criterion of necessity, not by an added axiom, and the honest edge is stated plainly rather than gestured at: a framework declining that criterion reads the natural single-hinge index---one---not three. A further consequence is drawn in Section~\ref{sec:scope}, and it runs the other way to the rest of the paper: because the fold the count reads is $D-1$ in a $D$-dimensional cut, and because the horizon relation collapses to a single multiple-angle only at four and five dimensions while the mass-parity that grades chirality exists only in even dimension, four is the only dimension carrying both a generation count and a handedness. Within CR, and at the same altitude as the rest, three generations and four-dimensional spacetime are one fact read at two ends.
+\end{abstract}
+
+\section{The question, and what is and is not claimed}\label{sec:intro}
+
+One statement in this paper does not fit that description and is flagged here so it is not read as more than it is. Section~\ref{sec:scope} draws a consequence about the \emph{dimension} of the cut---four dimensions being the only one in which the sector's own two deliverables, the count and the chirality, both exist. It is at the same altitude as everything else here, forced within CR and owing its correspondence to the world; it is not a demonstration that the world is four-dimensional, and it carries one assumption of its own, that the metric function in a general dimension is the standard Tangherlini--de~Sitter form.
+
+The slicing operator of CR generates the spherically symmetric, stationary sector of general relativity as the perspectival reading of a single maximally symmetric substrate~\cite{JanzenOperator,JanzenCRframework,JanzenGeometricCore}. The boundary paper~\cite{JanzenBoundary} asks whether the \emph{matter} content can be read off the same substrate, and returns a precise negative for the gauge sector: $\su(3)\not\subset\so(5,1)$, structurally, so the Standard Model gauge group is not a continuous substrate isometry. What that boundary leaves standing is the substrate's \emph{discrete} structure---the orientation parity and the threefold symmetry of the slicing---recorded there as the one opening through which matter might enter, and carried as a conjecture.
+
+This paper takes up that opening concretely. We put a Dirac field on the slicing curve and compute what its zero-mode content is. The result is a fermion sector with exactly the discrete shape the Standard Model wears: three chiral generations carrying a family symmetry. We are careful throughout to separate what is delivered from what is not:
+\begin{itemize}
+\item \textbf{Delivered.} The generation \emph{count} (three), the \emph{chirality} of each generation ($\gamma^5$), and the $S_3$ relating the three walls---a \emph{within-state} index rather than a family symmetry, the generations' own threeness being the turnaround's deck $\mathbb{Z}_3$ (Section~\ref{sec:whichthree}), with the wall structure fixing the \emph{number} at either seat. These are the discrete flavour structure~\cite{IshimoriEtAl2010}. \emph{And, reached after them, the discrete content of \textbf{colour}}: the module the operator's colour structure acts on is the branching rather than any bundle of the substrate; the three wall monodromies with the hinge $3$-cycle generate $SU(3)$; and second quantisation on the wall kernel returns baryon $1$, diquark $0$, meson $1$, the configuration group selected rather than chosen. With them, the \emph{kind} of each---why the chirality descends gauged and the family global---which Section~\ref{sec:twofactors} reads off the two relations the substrate's waist admits.
+\item \textbf{Not delivered.} The \emph{coupling}: the bundle above is flat, so the construction supplies colour's exact selection rules and no force---it quantises and does not couple. Weak isospin as a \emph{gauging}: $T$ is a discrete horn swap and delivers a species label, not $SU(2)_L$'s chiral action, the two occupations differing on the right-handed pair (Section~\ref{sec:whichthree}). Hypercharge's normalisation is fixed by the winding rather than by the anomalies, which are homogeneous. And the mass spectrum: the zero-modes are massless, and their splitting is electroweak physics, external to the geometry.
+\end{itemize}
+The generation count is \emph{forced within CR}, in the precise sense made explicit in Section~\ref{sec:count}: it follows from the maximal-symmetry principle that defines the programme, applied to the matter construction as the same principle is already applied to the substrate and to the discrete breaking~\cite{JanzenGeometricCore}. It is not a theorem a framework lacking that principle must accept. That qualification is the honest content of the word ``forced'' here, and we do not inflate it.
+
+\section{The chiral wall}\label{sec:chirality}
+
+On the slicing curve the areal radius $r$ is a \emph{signed} coordinate: the curve runs forward through the seam and backward through $r=0$ as one closed object---the \emph{cosmogenetic bead} the framework proves one closed curve~\cite{JanzenCRframework}, on which this sector's chiral wall is built---$r=0$ being a branch point the field crosses smoothly, not a barrier~\cite{JanzenSlicing,JanzenCircle}. The massless radial Dirac problem separates into a first-order pair with superpotential
+\begin{equation}
+W(r)=\frac{\lambda\sqrt{f}}{r},\qquad f=1-\frac{2M}{r}-\frac{r^2}{\alpha^2},\qquad \lambda=j+\tfrac12 .
+\end{equation}
+This superpotential is the explicit output of the leaf frame: the orthonormal tetrad $e^0=\sqrt f\,dt$, $e^1=dr/\sqrt f$, $e^2=r\,d\theta$, $e^3=r\sin\theta\,d\varphi$ of the $M\neq0$ slicing geometry has radial--angular spin connection $\omega^2{}_1=\omega^3{}_1=(\sqrt f/r)\,e$, so the massless Dirac operator's radial first-order pair carries exactly $W=\lambda\sqrt f/r$ (receipt: \rcpt{P14_B3_spinor_vielbein}); the factor $\sqrt f/r$ vanishes at the horizons ($f=0$) and is odd in the signed radius. Because $r$ is signed, $W$ changes sign at $r=0$: a domain wall~\cite{JackiwRebbi1976}. The zero-mode equation $H\psi=0$ for $H=-i\sigma_x\partial_x+m(x)\sigma_z$, with $m(x)$ the wall profile crossing zero at the throat, integrates to
+\begin{equation}
+\psi'=-m\,\sigma_y\,\psi\quad\Longrightarrow\quad \psi(x)=\exp\!\Big(-\!\int_0^x m\,dx'\Big)\,\chi_{+},
+\end{equation}
+with $\chi_+$ the $\sigma_y=+1$ eigenspinor. For a wall $m=\tanh(x/a)$ this is $\psi=\cosh^{-a}(x/a)\,\chi_+$, an exact normalizable solution; the conjugate branch $\chi_-$ grows as $\cosh^{+a}$ and is rejected~\cite{CallanHarvey1985}.
+
+The norm in which the mode is normalizable is the one CR's ontology selects, and the point is load-bearing. The fermion is a field on the evolving spatial leaf---the existent of the layered ontology~\cite{JanzenCRframework}, of which the spacetime is a projection---so its norm is the induced proper-distance measure on the cut, $\int|\psi|^2\,d\ell$ with $d\ell=dr/\sqrt{|f|}$. In that measure the turning points ($f=0$, the horizons) lie at \emph{finite} proper distance and the $r=0$ crossing is an integrable $\sqrt{\,}$-singularity, so the bound state is genuinely normalizable, as the $\tanh$ model captures. In the conserved \emph{spacetime} Dirac norm (tortoise measure $\int|\psi|^2\,dr_*$, $dr_*=dr/f$), by contrast, the same static mode is \emph{not} normalizable: the horizons sit at infinite tortoise distance, where the mode tends to a constant. The two are not interchangeable, and CR reads the fermion as a mode of the existent leaf, not a propagating spacetime field carrying the tortoise norm---on the leaf it is a bound state. Direct solution of the exact zero-mode across a full undercritical slicing confirms both limits (divergence at the horizons in the tortoise measure, convergence in the leaf's proper measure). Hence:
+\begin{proposition}\label{prop:wall}
+Each throat wall binds exactly one normalizable chiral zero-mode. Its chirality is a definite $\sigma_y$ eigenvalue, whose sign is the sign of the signed-radius flip; that operator is the diagram-automorphism parity $R=\gamma^5$~\cite{JanzenAlgebroid}.
+\end{proposition}
+This is the $\mathbb{Z}_2$ (chirality) half of the substrate's discrete structure, realised as a bound state, not posited. \emph{One feature of $W$ deserves comment, since $\lambda=j+\tfrac12$ appears in it and might be thought to
+carry multiplicity.} In the proper radial coordinate of the leaf frame, $\dd x=\dd r/\sqrt f$, the first-order
+pair integrates in closed form: $\int W\,\dd x=\int(\lambda\sqrt f/r)(\dd r/\sqrt f)=\lambda\ln\lvert r\rvert$,
+so the zero mode is a power law $\psi=\lvert r\rvert^{\pm\lambda}$ rather than the $\tanh$ model's exponential.
+
+\emph{That the mode is a power of the signed radius, and that the signed radius is a cube root at the wall,
+together decide a question about the mode that is worth settling here because it is not obvious and its answer
+sorts the spectrum.}\rcpt{P14_route_or_point} Near the wall $f\to-2M/r$ gives $r^{3}=\tfrac92 M\ell^{2}$ in the
+leaf's proper measure, so a crossing of the wall is a half-loop in $\ell$ and sends $r\mapsto\omega r$ exactly,
+$\omega=e^{2\pi i/3}$. \emph{A mode transported across a wall therefore returns multiplied by
+$\omega^{-\lambda}$.} The consequence is a dichotomy rather than a uniform statement: a mode with
+$\lambda\equiv0\pmod 3$ is unaffected and is an ordinary single-valued function of position, while a mode with
+$\lambda\not\equiv0$ is \emph{not}---its value depends on which path reached the point, two paths differing by
+one crossing disagreeing by $\omega^{-\lambda}$. \emph{So the spectrum divides into modes that are functions of
+where they are and modes that are functions of how they got there}, and the divide is exactly the residue
+$\lambda\bmod3$ that Section~\ref{sec:correspondence} identifies as the quark/lepton discriminant. A further
+consequence follows without extra input and is stated at the same weight: since a field on the manifold must be
+single-valued, a configuration whose total $\lambda$ is not divisible by three is not a field on it at all, so
+only combinations of vanishing total residue exist as configurations. \emph{We record the shape of that
+statement and claim nothing from it}: it is the shape of a confinement condition, and whether the residue it
+grades is the physical colour is the question the boundary paper walls and this paper does not
+reopen~\cite{JanzenBoundary}.
+Near the branch point $f\to-2M/r$, so the leaf measure behaves as
+$\dd\ell=\dd r/\sqrt{\lvert f\rvert}\sim\sqrt{\lvert r\rvert/2M}\,\dd r$ and normalizability of
+$\lvert r\rvert^{s}$ requires $s>-\tfrac34$. The decaying branch $s=+\lambda$ satisfies this for every
+$\lambda$; the growing branch $s=-\lambda$ would require $\lambda<\tfrac34$, which no $\lambda=j+\tfrac12$
+attains. At the horizons the measure carries an integrable inverse square root and $\psi$ is finite, so the
+norm converges there as well\rcpt{JTOWER_angular_index}.
+
+\emph{Hence exactly one branch is bound for each $j$, and the tower over $j$ is infinite.} \emph{The angular spectrum is worth stating as the honest negative it is}\rcpt{P14_lambda_spectrum}: $\lambda$ fixes a \emph{grading} and not a \emph{content}---it indexes partial waves of one field and supplies no multiplet structure, so nothing in the angular sector \emph{has yet been} read as internal content---and the receipt cited is explicit that this forecloses nothing: a graded infinite tower whose lowest level reproduces one generation remains a live reading, and it is closed, if at all, by the Kaluza--Klein negative below rather than by the spectrum itself. That is the ordinary
+angular decomposition of a four-dimensional field, not additional multiplet content: $j$ labels the partial
+wave of each generation's mode, and the index of Section~\ref{sec:count} counts walls, not partial waves.
+\emph{We record this because the appearance of $\lambda$ in the superpotential invites the opposite reading}---
+that the wall problem might supply the internal structure of a generation---and it does not. \emph{And it is not a Kaluza--Klein tower either, which is the other reading the shape invites.}\rcpt{P14_tower_is_not_kaluza_klein} A Kaluza--Klein tower requires an \emph{internal} space to reduce on; $\lambda$ indexes the Dirac operator on the transverse $S^{2}$, and that $S^{2}$ is the $r^{2}\dd\Omega^{2}$ of the four-metric---it is spacetime, and $2+2=4$ exhausts the cut, so there is nothing left to reduce on and the levels are not distinct four-dimensional fields. The one genuine extra direction, the cut-normal, cannot supply a tower either, and for the opposite reason: it is a single \emph{non-compact} dimension, giving a continuum rather than a discrete tower. The internal
+content remains where Section~\ref{sec:correspondence} places it, on the far side of the gauge wall. \emph{That undelivered content is owed elsewhere in the programme too, and the two debts are one.} The
+cosmological companion inherits two composition data across the branch point: a ratio of energy densities taken
+over the matter as a whole, and a ratio of numbers taken over the baryons
+alone~\cite{JanzenCRcosmology, JanzenCosmogenesis}. \emph{Passing between them requires knowing which fermions
+the handover delivers, in what numbers and at what masses}---which is this section's undelivered content,
+approached from the cosmological side. That the two data appear there as independent empirical inputs is
+therefore not a separate gap: \emph{it is how the missing representation content presents itself to a
+cosmology}. We record the identification and claim no derivation from it; what it fixes is that a route across
+the wall would discharge both debts, and that neither can be discharged without it. \emph{It is worth stating plainly where the gap sits, since the index of Section~\ref{sec:count} is easily
+read as producing more than it does.} That index counts zero modes of a Dirac operator acting on a bundle, and
+it returns one mode per wall \emph{per internal state of that bundle}. The count of three is a count of walls;
+the multiplicity of a generation is the bundle's rank. \emph{So the question the undelivered content amounts
+to is a question about the bundle}: what does the operator act on, and what fixes it? On the ordinary route the
+bundle is imposed---one posits the gauge bundle and computes. On a geometric route the substrate would supply
+it, and the substrate is not short of bundles: the tangent bundle of the five-dimensional embedding space, the
+spinor bundles it carries, the normal bundle of the wall itself, and the two ruling bundles the framework's
+construction already draws~\cite{JanzenCRframework}.
+
+\emph{That list, however, can be settled at a stroke, and settling it moves the question rather than
+answering it.}\rcpt{P14_the_bundle_is_the_branching} The obstruction is one nobody had written down:
+$\mathfrak{su}(3)$ requires a \emph{complex} rank-three module, and a \emph{real} bundle's complexification
+carries a parallel conjugation, so its holonomy commutes with that conjugation and lands in the real
+form---$\mathfrak{so}(3)$, of dimension three, with no room for eight. Every member of the list falls to that
+or to rank. The embedding tangent bundle is real of signature $(5,1)$, and a metric-compatible complex
+structure $J$ splits a space into $\eta$-orthogonal definite planes $\mathrm{span}\{x,Jx\}$ and so forces both
+signature blocks to be \emph{even}, which $5$ and $1$ are not; the spinor bundle has rank four; the rulings are
+lines. The wall's normal bundle alone has the right rank, and it is reality rather than any decomposition that
+removes it---\emph{the $2{+}1$ splitting one is tempted to use is covariant only under the stabiliser of a
+chosen cut direction, whereas under the full transverse $SO(3)$ that bundle is the vector representation and is
+irreducible.} \emph{What the column shows is that every candidate was built from the substrate's ambient
+geometry, and ambient geometry is real: the question was never which real bundle but where the complex
+structure is.} It is at the branch point.
+
+\emph{And finding it there requires taking this paper's own definition of the wall more literally than the
+winding computation had been taking it.}\rcpt{P14_the_wall_is_a_wall_of_a_hinge} The wall is where the signed
+areal radius vanishes, and that radius is fixed \emph{relative to the hinge about which the slicing plane
+swings}---so there are three of them, one per vantage, and three branch loci rather than one. The companion
+slicing paper states as much at the outset: the matter construction places a plane on each of the three hinges,
+giving ``three throat walls at distinct points of the throat circle \emph{with disjoint
+support}''~\cite{JanzenSlicing}.\rcpt{P14_p3_already_said_it} \emph{The distinction had been invisible because
+the two readings agree on the label and differ only on the group}: with one radius the cover is cyclic and its
+monodromy abelian, which is why the search above returned only a $\mathbb{Z}_3$; with three, crossing a wall
+branches only the vantage that owns it. \emph{That the corpus appeared to hold both is not a conflict between
+the papers but two constructions}---for the vacuum family the three hinges are equivalent vantages and a single
+swinging door charts everything, so a single radius is the right bookkeeping there; for the matter sector the
+planes are placed rather than swung. Independently, eliminating $-X_0^{2}+X_1^{2}$ between static de~Sitter's
+$\alpha^{2}-r^{2}$ and the equatorial section's $-X_0^{2}+X_1^{2}+X_2^{2}=\alpha^{2}$ gives $r^{2}=X_2^{2}$, so
+on the throat circle $r_j=\alpha\sin(\varphi-\theta_j)$, returning this paper's own ``the back,
+$X_1=-\alpha$'' rather than being fitted to it, and vanishing at each vantage's own wall and neither other.
+
+\emph{Nothing then has to be adjoined.} A single wall monodromy has determinant $\omega$, so the unimodular
+content sits in the ratios, and $\gamma_A\gamma_B^{-1}$ is a non-central diagonal of determinant one; it fails
+to commute with the three-cycle permuting the vantages, the pair's commutant is the scalars, and the pair
+preserves no symmetric bilinear form---so the smallest connected group containing the three wall monodromies
+together with the hinge three-cycle is $SU(3)$ itself. \emph{The two generators are this paper's two threes
+doing different jobs, needed together for the first time rather than kept apart: the diagonal one is the three
+walls, the permuting one is the three hinges, and neither alone is more than $\mathbb{Z}_3$ or $S_3$.} A full
+lap, being the product of all three, comes out as $\omega^{-\lambda}$ times the identity---\emph{the
+centre}---which is the sense in which the single-valuedness criterion of \S\ref{sec:chirality} is a statement
+about a lone constituent and not only about a pair of routes. \emph{It also settles what cannot work}: the
+three colours cannot come from the three sheets of a single cover, since a mode has one triality and would then
+have one colour.\rcpt{P14_two_rank_threes} \emph{Nor is this rank-three object the one two paragraphs above.}
+That one was rank three because a cube root has three branches and it graded the tower by triality; this one is
+rank three because there are three hinges. A single mode occupies one line of the first and exists at
+\emph{all three} vantages of the second, so all three colours of one constituent carry the same
+triality---which is the Standard Model's own relation between the centre, carried identically by every state in
+a representation, and the index running within it.
+
+\emph{The reading owes an account of the null legs, since it is on the legs and not the equatorial arcs that
+this section reads the crossings.}\rcpt{P14_leg_count_equals_arc_count} The leg joining two hinges grazes the
+wall owned by the \emph{third}---three legs, three walls, each leg opposite its wall---which is this section's
+own observation that a hinge's legs never graze its own wall, seen from the other side. The assignment
+reproduces a multiplicity it was not built from: two punctures per hinge give $2\times2=4$ legs per hinge pair,
+all sent to one wall, returning the $12=3\times4$ of the twelve null legs. So each leg meets exactly one wall,
+the three legs meet the three walls once each as one lap does, and the closed bound triple acts by the centre.
+\emph{What looks at first like the reading's difficulty is its content}: a constituent at one hinge is labelled
+by the leg it is not on, and a label that cannot be read locally is what route-labelling means.
+
+\emph{What the resulting selection rule reaches, and what it does not, has to be said in one
+breath.}\rcpt{P14_the_gap_is_antisymmetry} The centre gives $N-\bar N\equiv0\ (\mathrm{mod}\ 3)$ and nothing
+finer---it does not distinguish a triple spread one per hinge from one doubled on a single hinge, exactly as
+the centre of $SU(3)$ does not---so triality zero is necessary for a colour singlet and not sufficient, and the
+one-per-hinge condition comes not from it but from the causal trichotomy of the six
+hinge-ends.\rcpt{P03_hexagon_null_triple} \emph{The two conditions arrive from unrelated places and neither
+does the other's work.} Sufficiency needs the invariants of the group just identified, and counting them on the
+tensor cube returns too many and, under the full holonomy group, the wrong one---\emph{which is a feature of
+gradings rather than a defect of this construction}, since a grading records how many constituents occupy each
+slot and nothing about their order or sign, whereas $\epsilon_{abc}$ is a statement about
+antisymmetry.\rcpt{P14_no_choice_of_group_works} \emph{Antisymmetry, however, is not a gauge datum, and this
+section has been carrying what supplies it since Proposition~\ref{prop:wall}.}
+
+\emph{The three wall modes are the kernel of one Dirac operator}, so they are states of a single field and
+therefore identical particles---not by an added postulate but by what having a single operator
+means.\rcpt{P14_statistics_not_gauge} A three-fermion state is accordingly not a general tensor; it lives in
+the exterior cube of the kernel, and since $\Lambda^{3}$ of a three-dimensional space is one-dimensional with
+the totally antisymmetric generator, \emph{the surplus invariants are not states a symmetry fails to
+forbid---they do not exist}: the one with all three constituents on a single vantage vanishes by the Pauli
+principle, and the symmetric combination is not in $\Lambda^{3}$. Counted on the exterior powers the channels
+come out \emph{baryon one, diquark none, meson one}---each exactly what $SU(3)$ gives, with the diquark a
+prediction rather than a fit, nothing here having asked that $\Lambda^{2}$ carry no invariant. \emph{And the
+count decides a question this construction could not otherwise settle}: of the three defensible readings of
+which loops a bound configuration may traverse, exactly one returns all three channels correctly, and it is the
+unimodular group---the same group the $SU(3)$ entailment above reached by an unrelated argument. \emph{One
+consequence bears on \S\ref{sec:chirality} in its favour}: under that group the baryon line has trivial
+holonomy and is invariant exactly, while the one-particle space carries no invariant at all and the action on
+it is irreducible, so a lone constituent does not return to itself up to a phase, which a ray could absorb, but
+returns \emph{a different vector}. The single-valuedness criterion is thus doing its work without needing any
+distinction between fields and states to prop it up.
+
+\emph{What remains is then not a defect but a description.} All of this is holonomy---a flat bundle and exact
+selection rules---so the construction supplies the discrete content of colour and supplies no force, which is
+what the winding label was separately found not to supply.\rcpt{P14_quantisation_not_strength} \emph{And the flatness is a complete obstruction rather than a stage not yet reached, which is worth showing rather than asserting, since a reader is otherwise entitled to hear it as a promise.}\rcpt{P14_the_flat_bundle_cannot_carry_a_force} The holonomy group generated by the three wall monodromies together with the hinge three-cycle is \emph{finite}, of order $81$---necessarily so, since the holonomy is branching and a branch structure has finitely many sheets---and a finite group in characteristic zero has vanishing first cohomology with any coefficients, so the representation does not deform as a representation of its own holonomy. Deformations of the fundamental group's representation that keep each wall's conjugacy class fixed are counted directly and the moduli space is \emph{zero-dimensional}: a wall branches one vantage and leaves the other two alone, so its monodromy carries a repeated eigenvalue and its class is subregular, of dimension four rather than the regular six; three regular classes on a three-punctured base would have left a two-parameter family, and the disjointness of the vantages' supports is exactly what removes it. \emph{But the dimension is a bonus and not the argument.} The moduli space of flat connections consists of flat connections, so a deformation within it changes which flat bundle one has and not whether there is a field strength; obtaining curvature means leaving the flat locus, and no holonomy datum can take one off it, because holonomy is precisely the complete invariant a flat connection has. \emph{Leaving it requires a variational principle, and a Yang--Mills term in four dimensions carries a dimensionless coupling that a single length cannot build}---the substrate's one invariant being $\alpha=\sqrt{3/\Lambda}$, whose energy $\hbar c/\alpha$ sits some forty-one decades below the strong scale, and in the infrared rather than the ultraviolet direction from it. So the position is not that the coupling is unbuilt but that a coupling is not the kind of thing a holonomy supplies, which is the same verdict the winding received one level up and for the same reason. \emph{What is not excluded here is a mechanism that is neither holonomy nor isometry; the isometry route is walled separately, and the honest statement is that no third mechanism has been named.} \emph{One objection to a winding label deserves its answer here, since it is the natural one}: a route-dependent quantity is not readable at a place, and electric charge is.\rcpt{P14_charge_or_colour} The winding splits as $w=n+\phi$ with $n$ an integer lap count and $\phi$ a $\mathbb{Z}_{3}$ class, and the two pieces transport differently---one wall crossing multiplies the field by $\omega^{\text{triality}}$ while a full lap is three crossings and $\omega^{3}=1$---so the \emph{integer} part is route-independent and the fractional part \emph{is} the monodromy. Hence $w$ is locally readable exactly when it is an integer, exactly when the triality vanishes: a fractionally charged object is precisely one whose charge is route-dependent, hence not readable, hence not free. The $\mathbb{Z}_{3}$ is therefore the obstruction to charge being observable rather than a rival to it. \emph{One qualification, entered here because the receipt-vs-sentence audit found this paper claiming otherwise}: the agreement between ``is a field'' and ``has integer charge'' is not an independent check that could have failed. On the identification used here the triality class \emph{is} the fractional part of the charge, so the two predicates are the same predicate and agree on any rational whatever. \emph{What the argument establishes is the implication, not a test of it}: an object with non-zero triality is route-dependent, hence unobservable, and colour confinement is that statement read as a selection rule. A genuine test would compute the triality from the colour content independently of the charge, and this sector does not yet do so. \emph{The winding itself, its closure rule and the derivation of the thirds are the companion slicing paper's}~\cite{JanzenSlicing}: there the graze points cut the throat into three equal arcs, the two routes between punctures at different hinges differ by exactly one lap, and imposing closure on both horn-headed arrangements forces the winding into thirds with no Standard Model input. \emph{One question that construction leaves is properly this paper's, because it is about matter content rather than about the lap}, and it has a clean answer with a clean negative before it.\rcpt{P14_the_isospin_exchange} What exchanges $uud$ and $udd$ is not charge conjugation: $w\mapsto-w$ carries the quark class to the \emph{antiquark} class, and no lap shift repairs it, because conjugation reflects through the origin while the $(u,d)$ pair is not centred there. Solving for the involution that does it---rather than positing one---returns a unique \emph{affine} map, $w\mapsto\tfrac13-w$, whose constant is fixed by the pair itself. \emph{And it is the Standard Model's own map}: with $Q=I_{3}+Y/2$ the isospin Weyl reflection at fixed hypercharge is $Q\mapsto Y-Q$, and the constant came out equal to the quark doublet's hypercharge $\tfrac13$ with nothing fitted. Its two factors are both already in hand---$w\mapsto-w$ is the slicing paper's independent charge $\mathbb{Z}_{2}$, and $w\mapsto w+\tfrac13$ is one graze-point crossing, which is one wall. \emph{An earlier reading here concluded that neither factor lies in $D_{6}$---because $\mathrm{Aut}(A_{2})$ acts linearly and a map with a non-zero offset cannot---and drew from that a structural precondition. That reading is withdrawn, and the receipt cited withdraws it in its own text}: it compares objects in two different spaces, and the exchange is in fact the horn swap $T$, which is a substrate isometry and sits inside the configuration's own order-twelve group. \emph{Nothing needs adjoining.} What survives, and is the part worth having, is the map itself: the involution that exchanges the two classes is $w\mapsto\tfrac13-w$, solved for rather than posited, and its constant came out equal to the quark doublet's hypercharge with nothing fitted. \emph{Two things
+are worth marking about the standing of the whole}: that the vantage rotates the areal direction is a reading
+of the sentence quoted above rather than a computation of it, though the companion paper's disjoint-support
+statement carries the same content independently; and the exhibit of the three radii is at the $M=0$ member,
+where the cut is the substrate.
+
+\emph{We have not examined whether any of these has the rank and the structure the Standard Model's content
+requires beyond what the preceding paragraph settles}, and we do not claim that the question is closed. One
+further negative result bears on it and is recorded above:
+the angular decomposition does not supply multiplicity, since $\lambda=j+\tfrac12$ labels partial waves and
+each contributes exactly one bound mode. \emph{That result is stronger than a fact about the sphere we wrote
+down, because no other transverse space is available to the construction.}\rcpt{P03_transverse_space_is_round}
+Run with the transverse curvature $k$ left free, the operator of the companion slicing-operator
+paper returns as its entire kernel $f=k-2M/r-\Lambda r^{2}/3$, so the operator alone does not fix $k$; but $k$
+enters as an additive constant independent of $M$, and the family passes through $2M=0$ six times per swing,
+at which marks the cut \emph{is} the substrate, $f=1-r^{2}/\alpha^{2}$, whose constant term is
+unity---so $k=+1$ is an output of the construction rather than a choice of chart. Constant curvature $+1$
+leaves the global form $S^{2}/\Gamma$, and there $\Gamma$ is fixed by the spin structure the Dirac operator
+requires: every non-identity element of $\mathrm{SO}(3)$ is a rotation about an axis meeting the sphere in two
+fixed points, so no non-trivial subgroup acts freely, and the one free finite action---the antipodal map, which
+is not in $\mathrm{SO}(3)$---has the non-orientable quotient $\mathbb{RP}^{2}$, which carries no spin
+structure at all. \emph{The transverse space is therefore the round $S^{2}$ and nothing else, and the tower
+over $\lambda$ is infinite for that reason rather than by stipulation.} Nor would any alternative have helped:
+an orbifold quotient $S^{2}/\mathbb{Z}_{n}$ thins each level's degeneracy from $2\lambda$ to roughly
+$2\lambda/n$ and removes no level, a quotient leaving untouched the local geometry that sets $\lambda$.
+\emph{So the source of the tower's multiplicity is closed by exhaustion and not by inspection}---a definite
+question about a definite object, rather than an absence. \emph{Two questions have been called ``the bundle
+question'' and only one of them is this one}: what module the operator's colour structure acts on is settled
+above, and it is the branching rather than any bundle of the substrate; what supplies the \emph{multiplicity} of
+the tower is the question this paragraph leaves open, and it is not a verdict on the sector. \emph{One of the substrate's bundles can be checked immediately, and doing so also sharpens what is being
+asked.} The operator above acts on the leaf's four-dimensional spinor bundle. The substrate's own spinor bundle
+is five-dimensional in base, and in odd dimension the Dirac representation is irreducible of dimension
+$2^{\lfloor5/2\rfloor}=4$, restricting to a codimension-one slice as the four-dimensional Dirac
+representation---\emph{the same rank the operator already uses}\rcpt{BUNDLE_ranks_survey}. So the substrate's
+spinor bundle supplies no multiplicity beyond what is in hand. The remaining natural candidates are of low rank
+as well: the tangent bundle of the embedding space has rank five, the wall's normal bundle rank one, and each
+ruling family rank one.
+
+\emph{But the check also corrects the question, and the correction matters more than the result.} Fifteen is a
+sum of representations, not a bundle rank: a rank-fifteen bundle carrying no $\su(3)\times\su(2)\times
+\mathrm{u}(1)$ action would supply nothing, while a rank-three bundle carrying colour would supply the
+essential thing. \emph{So the question is not which bundle has the right rank but what would furnish the
+group action}, and the low ranks recorded above are therefore not evidence against those bundles---they are
+simply not the relevant measure. \emph{We record one candidate examined and the question restated}; the
+remaining candidates, and the possibility of structure arising by means none of them carries alone, are
+untouched here.
+
+\subsection{A condition the construction imposes on its own content}\label{sec:inflow}
+
+\emph{One constraint follows from the construction as it stands, and it has not been drawn.} The wall of
+Section~\ref{sec:chirality} localizes chiral zero modes on a codimension-one surface of a higher-dimensional
+bulk, which is the configuration of Callan and Harvey~\cite{CallanHarvey1985}---cited above for the rejection
+of the growing branch, but carrying a second consequence. Chiral fermions confined to such a wall have an
+anomaly, and consistency requires it be cancelled either by inflow from the bulk or within the wall's own
+content.
+
+\emph{Here there is no inflow to be had.} Inflow proceeds through a bulk term built from a gauge field, and this
+bulk has none: the substrate is maximally symmetric vacuum geometry, and the gauge group is established not to
+arise as an isometry of it~\cite{JanzenBoundary}. \emph{So the bulk contributes nothing, and the wall's content
+must be anomaly-free on its own.} And because the walls are three separate loci carrying separate zero modes,
+the condition applies \emph{to each wall}---which is to say \emph{generation by generation}, not to the three
+together.
+
+\emph{That is a requirement this construction imposes, and the observed content meets it non-trivially.} A
+Standard Model generation cancels every condition---$[\su(3)]^{3}$, $[\su(2)]^{2}\mathrm{u}(1)$,
+$[\su(3)]^{2}\mathrm{u}(1)$, $[\mathrm{u}(1)]^{3}$, and the mixed $\mathrm{u}(1)$--gravitational---and cancels
+them only as a complete set: removing $e^{c}$ leaves $[\mathrm{u}(1)]^{3}=-1$, removing $u^{c}$ leaves $8/9$,
+removing $L$ leaves $1/4$\rcpt{WALL_anomaly_inflow}. \emph{And the Standard Model's anomalies cancel generation
+by generation, which is the pattern the three-wall structure requires and not the weaker one it might have
+required.}
+
+\emph{We are careful about what this is.} It is not a derivation of the content: anomaly freedom is a
+condition, and many contents satisfy it. \emph{It is a condition the geometry supplies rather than one imposed
+to make a model work}, and it is the first of the undelivered items on which this sector says anything at all.
+It also has a definite falsifier: were a bulk gauge field to be found in the substrate, the inflow would be
+non-zero and the per-wall condition would relax, so the argument stands or falls with the absence established
+in~\cite{JanzenBoundary}.
+
+\emph{The condition has a further consequence, which reduces the count of what this sector leaves
+undelivered.} Section~\ref{sec:correspondence} lists three items---colour, weak isospin, and
+hypercharge---and treats them as three. \emph{They are not independent.} Given the gauge group and the
+multiplet structure, the per-wall anomaly conditions together with the existence of the Yukawa couplings that
+give the fermions mass determine the hypercharges completely, up to a single overall normalisation. \emph{That last qualification is not a formality, and the sector supplies what removes it.}\rcpt{P14_scale_and_ratio} Solved at general $N_{c}$ the anomaly conditions are \emph{homogeneous}---every hypercharge is proportional to one free $q$, and the cubic $[\mathrm{u}(1)]^{3}$ condition, not used in the solve, is identically satisfied for every $N_{c}$ and so selects nothing---which means the anomalies fix ratios and can produce no scale at all. The winding closure is not homogeneous: its unit is one full lap, a closed circuit rather than a chosen normalisation, so it returns absolute values. The two agree where they overlap, the winding's $u=+\tfrac23$ and $d=-\tfrac13$ giving $q=\tfrac16$ and the anomaly solution then reproducing all five Standard Model hypercharges exactly. Solving
+$[\su(3)]^{2}\mathrm{u}(1)$, $[\su(2)]^{2}\mathrm{u}(1)$, the mixed $\mathrm{u}(1)$--gravitational condition and
+the three Yukawa requirements yields
+\[
+Y_{Q}=q,\quad Y_{u^{c}}=-4q,\quad Y_{d^{c}}=2q,\quad Y_{L}=-3q,\quad Y_{e^{c}}=6q,
+\]
+which at $q=\tfrac16$ is $\tfrac16,-\tfrac23,\tfrac13,-\tfrac12,1$: the observed
+assignment\rcpt{HYPERCHARGE_from_anomalies}. \emph{And the cubic condition $[\mathrm{u}(1)]^{3}$ is then
+satisfied identically rather than imposed}---the coincidence usually remarked on in the Standard Model's
+hypercharges is a consequence of the linear conditions once the multiplet structure is given.
+
+\emph{So the undelivered content is two items and not three.} What remains genuinely outstanding is the gauge
+group and the multiplet structure; \emph{hypercharge follows from them by a condition this construction
+supplies}. \emph{The per-wall character is what does the work here and is worth marking}: cancellation
+\emph{in total} across three generations would not fix the assignment within one, and it is the separateness of
+the three walls that makes the condition apply generation by generation.  \emph{And the identification is more useful than a shared debt, because the cosmological end carries
+measurements and this end does not.} The two data are of different kinds and their quotient is therefore a
+number: from $\eta=n_b/n_\gamma$ one has $\rho_b/\rho_\gamma=(30\zeta(3)/\pi^{4})\,\eta\,m_b/T$, and from the
+onset condition one has $\rho_m$ in units of $\rho_\gamma$ at the same temperature, so \emph{the ratio of the
+matter's energy to the baryons' is fixed by measured quantities alone}---of order a few at the onset, and
+rising with the onset temperature. \emph{That is an empirical statement about what the handover delivers}, and
+it is owed an account by this sector rather than by a component introduced to meet it. The same holds on the
+relativistic side: what shares the radiation with the photons is likewise this sector's to say.
+
+\emph{Read this way the constraint proved in~\cite{JanzenBoundary} is informative rather than prohibitive.} It
+does not say that a geometric route to the representation content is impossible; it says that the connected
+isometry route is closed and identifies the single component the obstruction cannot reach. \emph{Together with
+the numbers above, the two bound the search from opposite sides}---one fixing what an admissible mechanism must
+produce, the other fixing where such a mechanism may live. \emph{We claim no construction here.} We record that
+the sector's undelivered content is not unconstrained: it is constrained by a proved structural result and by
+measured ratios, and the fair reading of that pair is a well-posed problem rather than a wall. Reversing the wall reverses $\chi_\pm$, flipping the chirality---the parity is the chirality, exactly as the algebroid paper reads it off the constraint algebra.
+
+\section{Three walls: the count}\label{sec:count}
+
+The single wall of Section~\ref{sec:chirality} sits at $r=0$, and $r=0$ is not the throat's centre but a point \emph{on} the throat circle---the back, $X_1=-\alpha$, fixed relative to the hinge about which the slicing plane swings~\cite{JanzenSlicing}. The substrate carries three such hinges, $120^\circ$ apart at transverse distance $2\alpha$, of which the throat circle is the incircle. That distance is not a stipulation the fermion construction inherits but an output of the substrate's own geometry: the hole determines exactly one circle without further choice---the one on its own edge through its own centre---and $2\alpha$ is where that circle ends, with the throat-as-incircle, the $60^{\circ}$ the hole subtends there, and the triangle's nine-point circle being the throat all equivalent to it~\cite{JanzenSlicing}. So the three walls of this section stand on a triangle the hole placed, and the $\mathbb{Z}_3$ that permutes them is the hole's own three-foldness rather than a choice made here. The walls therefore sit on the same circle everything else in the construction is read off---the circle whose radius is the curvature, whose tangents are the null rulings, and around which the slicing's lap runs---so the generation count this section obtains is one of the faces that circle carries, and is collected as such~\cite{JanzenGeometricCore}. The $\mathbb{Z}_3$-fixed centre carries no wall; the walls lie on the circle, and the three hinges' walls are three distinct points on it (polar $180^\circ,300^\circ,60^\circ$), a $\mathbb{Z}_3$-orbit (Figure~\ref{fig:gen}).
+
+That the centre carries no wall is not a further observation about the figure but a consequence of what a wall is\rcpt{P14_the_centre_is_the_weight_origin}. Vantage $j$'s signed areal radius $r_j=\alpha\sin(\varphi-\theta_j)$ on the throat circle is the restriction of a linear form on the transverse plane---the coordinate perpendicular to hinge $j$'s static pair---and the three forms have rank two, so their common zero set is the single point at the centre. A wall is a locus across which one vantage's superpotential changes sign, hence codimension one; a point is codimension two and has no side to cross to. The wall is accordingly the \emph{line} $r_j=0$, which is hinge $j$'s own axis and meets the throat circle twice, at the front and at the back; naming $r=0$ at the back fixes a point on one wall rather than selecting between two walls, and the two crossings are exchanged by the antipodal map, which is $R$. Taking the three forms' mutual angles---which is a different question from where they vanish---they are of equal length, $120^\circ$ apart, sum to zero identically, and have mutual cosine $-\tfrac12$: the weight system of the fundamental of $\su(3)$, and in rank two nothing else has that shape. The transverse plane is therefore the weight plane and the vantage index the weight label, reached here from the metric geometry with no representation theory in the derivation. The empty centre is then the origin of that plane, and the fundamental has no zero weight: a state seated at the centre would be a zero-weight vector of $\mathbf{3}$, of which there are none. The emptiness is an absence of a weight, not a vacancy waiting to be filled.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.62\textwidth]{figures/CR_three_generation_structure.png}
+\caption{The three-plane fermion structure. Three hinges (radius $2\alpha$, polar $0/120/240$) and their three $r=0$ walls (on the throat circle, polar $180/300/60$, each antipodal to its hinge)---a $\mathbb{Z}_3$-orbit. Each plane carries the same three horizon \emph{values} (identical content) around its own wall (distinct loci): three identical generations. The centre (the $\mathbb{Z}_3$-fixed axis) carries no wall. $\mathbb{Z}_3$ sends generation to generation; $D_6=S_3\times\mathbb{Z}_2$.}
+\label{fig:gen}
+\end{figure}
+
+Two constructions are geometrically available: one plane on one chosen hinge, or one plane on each. They are not on equal footing.
+\begin{proposition}\label{prop:forced}
+Within CR the three-plane construction is forced.
+\end{proposition}
+\begin{proof}[Argument]
+A one-plane construction must select \emph{which} hinge to build on: a free modulus, unfixed by the geometry, an arbitrary choice among three $\mathbb{Z}_3$-equivalent options. The $\mathbb{Z}_3$-symmetric three-plane construction is the unique configuration carrying no such modulus---the symmetric point, pinned by the symmetry. CR is defined by maximal symmetry read as least-arbitrariness: the substrate is $\dS_5$ precisely because a less symmetric choice would be unforced~\cite{JanzenGeometricCore,JanzenCRframework}, and the geometric-core paper extends this to the discrete sector explicitly, holding that the discrete breaking is itself maximally symmetric. A construction carrying an unfixed arbitrary modulus is exactly what that principle excludes. The one-plane truncation is therefore not admissible within CR, and the three-plane structure is selected.
+\end{proof}
+The qualification is genuine and we state it plainly: Proposition~\ref{prop:forced} forces the count \emph{within CR}, resting on (i) the maximal-symmetry principle, which is the programme's definition rather than an added hypothesis, and (ii) that the fermion generations are set by the matter construction at all---Proposition~\ref{prop:wall} makes this concrete, but the link is itself the claim the sector establishes. It is not a free-standing theorem. Inside CR it is forced. Two remarks sharpen this. The two legs are in fact one: given the three-hinge leaf, the three throat walls are \emph{distinct} loci, so the wall-bound zero-modes have disjoint support and span a three-dimensional space---a flavour triplet, three physical states in any basis, not one state redescribed---so leg~(ii) follows from leg~(i) rather than standing beside it. And the pillar that remains, leg~(i), is the programme's own \emph{criterion of necessity}---Rule~2 of~\cite{JanzenShadowExistence} in the ontological register---for which a symmetry-breaking modulus (which of three $\mathbb{Z}_3$-equivalent hinges) is exactly the adjustable parameter it rejects, and maximal symmetry the structure that requires its configuration. ``Forced within CR'' is thus forced by that vindicated criterion, not an added axiom; the honest edge is that a framework declining the criterion reads the natural single-hinge index---one---not three. The direction of that dependence is worth stating, since \cite{JanzenShadowExistence} in turn cites this sector: the epistemic paper \emph{establishes} Rule~2 from the historiographic record, independently of any result here, and cites the three-plane selection only as a worked instance of the rule in the ontological register. The dependence is one-way and the mutual citation is not circular---this paper applies a criterion the other grounds elsewhere.
+
+By Proposition~\ref{prop:wall} each of the three walls binds one chiral zero-mode; the three are localized at distinct walls, hence linearly independent. The generation count is the number of such modes, a wall-localized index insensitive to the non-compactness of $\dS_5$ that obstructs a bulk index~\cite{JanzenBoundary}: the modes are normalizable (in the leaf norm of Section~\ref{sec:chirality}) and pinned to the throat, and there are three. That count is a well-defined index in the precise sense CR's ontology makes available. In the leaf's proper measure $d\ell=dr/\sqrt{|f|}$ the closed slicing has \emph{finite} total length---the horizon turning points at finite proper distance, the $r=0$ crossing an integrable $\sqrt{\,}$-singularity---so the leaf is compact and the Dirac operator on it carries a well-defined analytical index $\dim\ker$~\cite{AtiyahSinger1968}, exactly where the bulk index on the non-compact spacetime (tortoise measure) is obstructed. Each wall's mode is a definite chirality eigenstate $\sigma_y=+1=R=\gamma^5$ (Prop.~\ref{prop:wall}, the conjugate branch rejected), and the signed-radius flip is through the $r=0$ \emph{branch point} rather than a single-valued crossing on a loop~\cite{JanzenSlicing,JanzenCircle}---so the even-crossing constraint that binds a single-valued sign function on a circle does not apply, and the three same-chirality modes on disjoint support have no cancelling partner. Hence $\dim\ker_+=3$, $\dim\ker_-=0$, and the count is the net chirality: a $\gamma^5$-graded index. Index-theoretic stability under deformations preserving the three-wall structure is the expected behaviour of such a graded count and is traced rather than computed here (\rcpt{P14_even_crossing_index} establishes the mechanism---one mode per wall, the even-crossing obstruction on a simple loop, and the necessity of the $r=0$ branch point---and marks the Atiyah--Singer statement on the branched bead as traced); we state it at that weight. It is a leaf (vantage) index, which is why it is well-defined precisely where the spacetime bulk index is not.
+\begin{equation}
+\boxed{\ \text{number of chiral generations} \;=\; 3.\ }
+\end{equation}
+
+\section{The family symmetry}\label{sec:family}
+
+The three walls are permuted by the symmetry of the hinge triangle. The $\mathbb{Z}_3$ rotation cycles them ($180\!\to\!300\!\to\!60$); each of the three reflections---across the axis through one wall---swaps the other two and fixes it. The three transpositions and the three-cycle generate the full $S_3$. With the chirality $\mathbb{Z}_2$ of Proposition~\ref{prop:wall}, the discrete group carried by the sector is
+\begin{equation}
+D_6 = S_3 \times \mathbb{Z}_2 \qquad (\text{family}\times\text{chirality}),
+\end{equation}
+the automorphism group $\mathrm{Aut}(A_2)$ already identified as the substrate's discrete structure~\cite{JanzenSlicing,JanzenGroupoid,JanzenAlgebroid}. \emph{Two further facts about this group are established elsewhere and bear directly on the sector.}
+
+\emph{First, the group is larger than $D_{6}$, and the excess is substrate-derived.} The residue pairing that
+the horizon roots' surface gravities put on the root triple has a holonomy about the branch points---the Klein
+four-group of even sign changes, arising as the per-root resolution of $\sqrt{\Delta}$, the same square root
+whose non-squareness fixes the Galois group as $S_{3}$~\cite{JanzenGroupoid}. Adjoined to the walls' $S_{3}$ it
+closes $W(A_{3})$ in its Weyl embedding, and with the chirality parity a group of order forty-eight; and
+$A_{3}$ is the root system of $\so(6,\mathbb{C})$, the complexification of the substrate's own isometry
+algebra, with $A_{2}$ inside it by deleting one node~\cite{JanzenAlgebroid}. \emph{So the sector's discrete
+group is the substrate's own, where this section has been reading a sub-root-system of it.}
+
+\emph{Second, and physically, that holonomy acts on the walls' chiralities and protects the count's parity.} By
+Proposition~\ref{prop:wall} each wall's chirality is a definite $\sigma_{y}$ eigenvalue whose sign is the sign
+of the signed-radius flip, so a sign change is a reversal of that wall's chirality; the holonomy's elements
+change signs in \emph{pairs}, unimodularity excluding every odd change. \emph{The observed configuration is
+accordingly the unique member of its orbit with all three walls at one chirality}, and $\dim\ker_{-}$ cannot be
+reached from $\dim\ker_{+}=3$ by any number of loops, three and zero lying in different parity
+classes\rcpt{V4_chirality_parity}. \emph{The count is thus not merely what the index returns but what no
+holonomy of this connection can move.} That the family symmetry the three walls carry is \emph{global} rather than gauged is not a choice made here but the \emph{kind} the discrete structure fixes: the Weyl $S_3$ is the deck/monodromy symmetry of the solution space and no substrate isometry, whereas the orientation parity $\mathbb{Z}_2$ \emph{is} an isometry, acting on the cut spinor as $\gamma^5$---so chirality descends gauged and flavour global, the Standard Model's own arrangement following from which factor is an isometry~\cite{JanzenGroupoid,JanzenAlgebroid}. That chirality rides the \emph{discrete} factor is moreover forced, not merely sorted: a chirality carried by a connected-group isometry would be rendered vector-like by the Atiyah--Hirzebruch index obstruction, so an observed chirality can live only on the discrete orientation parity that obstruction cannot reach~\cite{JanzenBoundary}. Each plane carries the same three horizon values, so the three generations are identical in content, distinguished only by their wall; this is why the family symmetry is a symmetry of \emph{identical} copies, the defining property of Standard-Model generations. And the wall is not a bare locus. Each hinge \emph{designates} one of those three roots as its own black-hole horizon, so a transposition of roots is a hop to a neighbouring hinge, and the Weyl $S_3$ \emph{is} the relation among the three hinges rather than an abstract relabelling~\cite{JanzenSlicing}. The $S_3$ the three walls carry and the Weyl $S_3$ of the root system are therefore \emph{one group}, not two that happen to agree in order: a generation is the vantage that takes its own root as its hole, and which root it takes is the same distinction as which wall it binds at---the hinge fixes both. This is what makes ``one object read three ways'' a statement about the sector rather than about the cubic alone: the three readings are the three hinges, and the fermion sector is where they become three states. At the massless level the three are degenerate and $S_3$ is exact, and this degeneracy is \emph{forced}: the three shared horizons are roots of one cubic $r^3-r+2M=0$, and every root, designated the slicing parameter, returns the \emph{same} $2M=r_0-r_0^3$ (as $r^3=r-2M$ for each), so the three carry one mass parameter---one object read three ways on the fully $D_6$-symmetric horizon locus, a diagonal line and a $45^\circ$ tilted ellipse in the $(r_0,r)$-plane~\cite{JanzenSlicing}, on which the $2{+}1$ of a designated root against the ellipse pair is the diagonal designation $\sigma$ and the sign $2{+}1$ (two horizons of one sign against one) the reflection through the origin ($2M\mapsto-2M$, the chirality parity), each a description structure paired with its symmetric twin---so no asymmetric handle sits in the mass \emph{parameter}. The locus does carry a flavour-\emph{breaking structure} (the slicing singles one root against the ellipse pair), supplied with the triplet in the boundary paper~\cite{JanzenBoundary}; but the mass \emph{values} are the ordinary electroweak route, and whether that geometric structure is the physical hierarchy is not claimed---outside the present scope.
+
+\section{The two factors: why they differ in kind}\label{sec:twofactors}
+
+The sector's two data are a chirality and a count, and Section~\ref{sec:family} has just written them as the two factors of one group, $D_6=S_3\times\mathbb{Z}_2$ (family $\times$ chirality). Two things about that group have been established elsewhere and are used above: that its factors act on independent structures---the Weyl $S_3$ on the three horizon roots and the inversion on the two null rulings, the inversion central~\cite{JanzenAlgebroid}---and that they descend differently, one gauged and one global. \emph{The product's being direct is worth separating from both, because it is forced and therefore carries no information about this substrate}: $\mathrm{Aut}(A_2)$ is a Weyl $S_3$ extended by a diagram $\mathbb{Z}_2$, every automorphism of $S_3$ is inner, and a semidirect product by an inner automorphism is isomorphic to the direct one---so there was never a semidirect alternative for the geometry to have excluded. What the geometry supplies is which relation each factor bears to the substrate's waist, and that the two differ in kind; the group structure follows and does not evidence it. Both have been read off the constraint algebra and off the light cone~\cite{JanzenAlgebroid}. \emph{And the chirality factor has a second realisation, in a sector with no fermions in it, which is worth
+stating because it shows the parity is the substrate's and not this sector's.} In the radiating sector the same
+$\mathbb{Z}_2$ appears as the graviton's two helicities: chirality there is the turning of the polarization
+plane, the sign of the rate at which the polarization angle turns, \emph{absent} wherever a residual connected
+isometry pins the polarization to a fixed axis---the swept $\mathrm{SO}(3)$ of the symmetric sector completing a
+reflection into a rotation and identifying the two handednesses, a mirror and not a chirality---and genuine
+once that swept rotation is lost~\cite{JanzenDynamics}. \emph{That is the same mechanism operating here, by a
+different instrument.} What makes the wall's bound mode chiral rather than mirror-paired is that no connected
+group identifies its two handednesses, which is what the index obstruction of~\cite{JanzenBoundary} says of a
+connected gauge action and what confines the parity to the disconnected component. \emph{In the radiating
+sector the identification is lifted by losing a residual isometry and the matter is a direct computation; here
+it is barred by a theorem about connected groups}---one parity, two sectors, two instruments. The
+corroboration runs the way that matters: a sector with no fermion content returns the same $\mathbb{Z}_2$, so
+the factor read off the light cone is a feature of the substrate rather than an artefact of the wall
+construction. A third route reaches the same factorisation from the numerals alone, and reaches it without being told to look: an audit of the recurring numbers of the construction, asking of each pair only whether one object derives both, returns every weld through one of these two factors---the triple-angle map for the three, the twelve, the thirty, the $\sqrt3$ and the $\sqrt[3]{2}$; the ruling-exchange for the two---and every proved split across them, so that the numbers weld \emph{within} a factor and split \emph{across} it. The audit, its receipts, and the splits that cut its law are collected in the programme's combinatorics ledger (\texttt{COMBINATORICS\_LEDGER.md}; \rcpt{P14_L8_the_three}, \rcpt{P14_L8_the_two}, \rcpt{P14_L8_the_twelve}), alongside the figure programme's. Read on the substrate's waist they are one fact, and this is the paper to state it in, because this is where the two factors become matter: the $\mathbb{Z}_2$ as a bound state's chirality eigenvalue (Proposition~\ref{prop:wall}), the $S_3$ as a count of three (Section~\ref{sec:count}). Because that $\mathbb{Z}_2$ is a substrate isometry it grades a chirality in the radiative sector as well as this one---the graviton's two helicities~\cite{JanzenDynamics} and the fermion's $\gamma^5$ here are the one gauged factor's two physical faces, the same $\mathbb{Z}_2$ read in the two sectors, settled there by direct computation on the free wave and here by the domain-wall zero-mode. Its radiative face becomes a \emph{genuine} chirality only past the wall of the symmetry-reducible sector, where the last swept $\mathrm{SO}(3)$ is lost and no isometry survives to turn the exchanging reflection into a rotation---the geometric onset of the parity the fermion sector here carries as $\gamma^5$~\cite{JanzenRange}.
+
+The two structures the factors act on are the two relations a figure can bear to a circle. The three roots are the three special points \emph{on} the throat circle: an offset line meets it at two points $A$ and $B$, with $r=0$ fixed at the back, and those three points are the geometric counterparts of the three roots of the horizon cubic~\cite{JanzenSlicing}---which is why the walls of Section~\ref{sec:count} lie on that circle and not elsewhere. That offset \emph{is} the mass---matter as the bend of the cut, $G$ entering only as the offset-length---so the same offset furnishes both factors geometrically: its odd offset--mass relation ($2M\mapsto-2M$) is the chirality parity, and its three roots the count~\cite{JanzenOperator}. The two rulings are the lines \emph{tangent} to it: the substrate's null rulings \emph{are} the tangents to its waist, ``doubly ruled by straight null lines'' and ``every tangent to the throat is null'' being one statement, the power of a point with respect to that circle being the square of its height~\cite{JanzenGeometricCore}. So the automorphism group factorises because \emph{on} and \emph{tangent} are independent relations to one circle; the direct product is that independence. That there is a second factor at all is itself contingent: the inversion is an \emph{outer} automorphism---not already inside the Weyl $S_3$---only because the cubic realises $A_2$, the one rank-two system with $-1\notin W$; were negation inner (as for $A_1$, $B_2$, $G_2$) $\mathrm{Aut}(A_2)$ would collapse to the Weyl group and leave no chirality factor to sort, which the groupoid paper marks the condition of there being two factors at all~\cite{JanzenGroupoid}. The on/tangent independence is then why the two that do exist form a \emph{direct} product.
+
+And the factors differ in \emph{kind} for the same reason, which is why the difference is not an extra fact requiring its own argument. A tangent is a line \emph{of} the substrate, so exchanging the two rulings is a motion of the substrate---an isometry, acting on the cut spinor as $\gamma^5$, and the chirality descends \emph{gauged}. A root \emph{labels a different cut}, so permuting the three moves through the solution space and is no motion of the substrate---the deck symmetry, and the family symmetry is \emph{global}. The same distinction is what the algebroid paper reads off the light cone, in the same objects: the sky-angle periodicity is two steps along a null ruling, hence a closed path of light and an isometry, whereas the Weyl reflection is a loop in the complex $2M$-plane, and $2M$ labels the family rather than pointing along the manifold~\cite{JanzenAlgebroid}. The two readings are one reading, because the ruling and the tangent are one line.
+
+The Standard Model's arrangement of a gauged chirality against a global flavour is therefore, in this reading, the difference between being \emph{on} the one circle and being \emph{tangent} to it---and the present sector is where that difference becomes two physical data: a bound state's chirality eigenvalue, and a count of three. Two qualifications keep the statement at its weight. It explains the \emph{kind} of each factor and not the gauge content, which stays walled~\cite{JanzenBoundary}; and it is a reading of structure already established rather than a new derivation---what it adds is that the two structures, and hence the two kinds, are one circle's two relations, so that the arrangement follows from the geometry having a waist rather than from a further principle.
+
+\section{The cosmogenesis of the generations}\label{sec:cosmogenesis}
+
+The generations are wall-modes of the existent leaf (Section~\ref{sec:count}), and CR's cosmogenesis carries that leaf across the branch point at $r=0$, where collapse continues as cosmology~\cite{JanzenBoundary,JanzenCRframework}. Three features of the crossing fix what becomes of the generations, each read off established structure. \emph{Inheritance:} the causal reassignment fixes the expansion rate and does not touch the leaf-carried content, so the generation structure---being leaf-carried---is inherited across the branch point unchanged \emph{on the conjectured rate-only reassignment}, a placement the corpus has not derived, the fermion-sector reading of the corpus's rate-reassigned, matter-inherited law. This is the matter-sector face of the layered reading the cosmology computes on: the reassignment acts on the \emph{lapse}---the stacking rate, which it resets to the geometry-set radiation-free law---and not on the \emph{leaf}, whose bend is the content~\cite{JanzenOperator,JanzenCRframework}; so the generations, being leaf-carried, cross as inherited content exactly as the radiation and matter densities do, the fermion instance of the general fact that at the seam only the rate is reset and everything the leaf carries passes through. \emph{A second argument reaches the same conclusion without the conjecture, and it is worth having because
+it does not depend on what the reassignment touches.} The walls are not carried \emph{through} the crossing:
+they are \emph{at} it. The signed areal radius passes through zero at a point on the throat circle, which is
+why the walls lie on that circle and not elsewhere (\S\ref{sec:chirality}), so the wall locus and the branch
+point are one locus. And the segment terminating there occupies no cosmic time at all---the real part of the
+complex cosmic time does not advance along it, so the crossing is a boundary of zero duration rather than an
+interval~\cite{JanzenCanonicalTime,JanzenCRframework}. \emph{A structure localized at a boundary of zero
+duration has no interval in which to be altered}, whatever a reassignment acts on. The inheritance therefore
+does not rest on the reassignment being rate-only: even one that touched the leaf would have no elapsed time in
+which to touch it. \emph{What the rate-only placement adds, if it holds, is that nothing acts on the leaf at
+all; what the zero-duration argument gives without it is that nothing could.} \emph{Origin:} the Nariai crest~\cite{Nariai1951} is the fixed point of the root-permutation, where two of the three roots merge (the discriminant $4-3r_0^2$ vanishing); the three generation-loci are $S_3$-symmetric there and split into three distinct generations undercritical, so the family structure \emph{originates} at the crest and unfolds as the universe expands. \emph{Chirality:} the crest is a fixed point of $S_3$ but \emph{not} of $R$~\cite{JanzenBoundary}, so the parity $R=\gamma^5$ is untouched---the inherited matter stays chiral, and no matter/antimatter asymmetry is a cosmogenesis event; it stays the ordinary route. This is rooted in the substrate's discrete geometry. The chirality/mass parity $R=\gamma^5$ is the mass-reflection $r_0\mapsto-r_0$ (equivalently $2M\mapsto-2M$), the orientation/diagram-automorphism parity, realised on the cut spinor as $\gamma^5$; as the $A_2$ diagram automorphism it carries the fundamental $\mathbf 3$ to the antifundamental $\bar{\mathbf 3}$~\cite{JanzenSlicing,JanzenAlgebroid}, and on the wall mode it is an exact operator (Proposition~\ref{prop:wall}). So the $R$-image of a generation is its antifundamental, and within CR that is its \emph{antimatter}: the dual $\bar{\mathbf 3}$ branch is antimatter at exactly the weight the fundamental branch is matter---forced within CR by the same discrete residue, with the world-correspondence of the identification the data's to judge as it is for the matter it pairs. The discrete matter/antimatter skeleton---representation ($\mathbf 3$ vs $\bar{\mathbf 3}$), chirality ($\gamma^5$), and mass-sign ($R$-odd $2M$)---is what the geometry supplies on both sides of the pair; the charge structure that closes $C$ is field-level on both sides equally, not a substrate datum---the charge entering the geometry only as the $R$-even $Q^2$, so charge conjugation is present there as a symmetry rather than an absence and is no substrate isometry, the outer $\mathbb{Z}_2$ of $\mathrm{Aut}(A_2)=D_6$ being $R$ and not $C$~\cite{JanzenBoundary}---so that geometry supplies matter's discrete skeleton and not its charge is no more an obstacle to naming the $\bar{\mathbf 3}$ branch antimatter than to naming the $\mathbf 3$ branch matter. What $R$ is \emph{not} is the time reflection $T$: they are distinct reflections---$R$ spacelike and horn-preserving, $T$ timelike and horn-flipping, so $R\neq T$ on the substrate's $A_2$ hexad, established in the slicing paper~\cite{JanzenSlicing}. That distinctness is exactly why the matter/antimatter parity is \emph{not} a cosmogenesis (time) event: antimatter is the substrate's ordinary $R$-partner of matter, not something made at the seam, which the crest, a fixed point of $S_3$ but not of $R$, leaves untouched. Read on the cosmogenesis, this same $R$-partner branch is not abstract: it is the conjugate ($r<0$) branch of the bead, the completed collapse whose future is our expansion, so the progenitor of our own universe sits on it---an antimatter black hole, in the signed-radius continuation~\cite{JanzenCRframework}. The relation is therefore standing and relational (our matter and the progenitor's, the two ends of one $R$-conjugation across the bead), consistent with its being no seam-generated asymmetry. $R$ is likewise distinct from the areal-radius spatial parity $r\mapsto-r$---the corpus's $P$---whose Clifford generator $\gamma^1\gamma^2\gamma^3$ anticommutes with $\gamma^5$.\footnote{Corpus convention (fixed at r968): $R$ is the orientation/mass-reflection parity, the $A_2$ diagram automorphism $\in\mathrm{O}(5,1)\setminus\mathrm{SO}_0(5,1)$, realised on spinors as $\gamma^5$, carrying $\mathbf 3\leftrightarrow\bar{\mathbf 3}$; $P$ is the areal \emph{spatial} parity $r\mapsto-r$ ($\gamma^1\gamma^2\gamma^3$, anticommuting with $\gamma^5$); $T$ is the time reflection. The two parities are distinct, anticommuting operations, uniformly named this way across the corpus. \emph{And one further convention, fixed here because its absence has cost more than the parities' did}: \textbf{``the wall'' and ``the branch point'' denote the wall of the hinge under discussion.} There are three, one per hinge, at distinct points of the throat circle with disjoint support, and each vantage's signed areal radius vanishes at its own and at neither of the others~\cite{JanzenSlicing}. The bare singular is used throughout because the natural sentence is about one of them at a time; \emph{the test a reader should apply is that a sentence which would be false if there were three is a sentence about a single vantage and must name it}. This is stated because the sector's own winding computations had been read as though the wall were unique, which makes the branched cover cyclic and its monodromy abelian, and the whole of the colour structure is the difference between that reading and the correct one.\rcpt{P14_naming_a_derived_object}} The wall-mode's dynamics transitions with the reassignment: under the signature flip the hole-side spatial mass $W=\lambda\sqrt f/r$ passes into a cosmological-side temporal term (its turning imaginary past the horizons being precisely this), so the bound wall-mode continues as a fermion propagating in cosmic time, and the three progenitor wall-modes become the three propagating families of the expanding universe, carried through faithfully by the null characteristic seam. The explicit continuation of the exact zero-mode onto the cosmological leaf is carried out on a concrete undercritical model (receipt: \rcpt{P14_B2_zeromode_continuation}): the superpotential $W=\lambda\sqrt f/r$ is real between the horizons, where the mode is the exponentially bound wall-state, and turns imaginary past a horizon ($f<0$), where the same mode becomes a pure phase---a fermion propagating in the now-timelike radius; on the $E=1$ expanding leaf $r(\tilde\tau)\propto\sinh^{2/3}$ this is the standard massless-Dirac form of conformal weight $a^{-3/2}$, so each of the three progenitor wall-modes continues term for term into a propagating family and the $\gamma^5$ chirality, untouched by the real-to-imaginary continuation, is preserved. Inheritance, origin, chirality, and the bound-to-propagating character stand on the crossing's established null-characteristic machinery. The universe those three families cross into is the one whose primordial light-element abundances the cosmogenesis paper computes~\cite{JanzenCosmogenesis}---the same branch-point crossing, read on the inherited radiation content rather than the fermion leaf, fixing the thermal history the abundances record. As throughout, this is coherence within CR; what the world's matter is remains the data's to judge.
+
+This realises, on the built sector, the positive closure the boundary paper draws~\cite{JanzenBoundary}. There charge conjugation is shown to factorise on the cosmogenetic bead, $C=(Q\mapsto-Q)_{\mathrm{field}}\circ(R\circ K)_{\mathrm{geometric}}$, its kinematic (Feynman--St\"uckelberg) face carried geometrically by the composite of the mass-reflection $R$ and the cosmic-time reality involution $K:\tilde\tau\mapsto\bar{\tilde\tau}$, only the electric-charge sign closing from the field. On the present sector that geometric face acts on the \emph{actual} zero-modes: $R$ carries each matter generation's wall-mode to the bound opposite-chirality mode on the reversed ($r<0$, $2M<0$) wall---its antimatter partner $\bar{\mathbf 3}$, exact by Proposition~\ref{prop:wall}---and $K$ is the very real-to-imaginary seam continuation that carries the bound wall-mode to the propagating cosmic-time fermion above, so $R\circ K$ acts on the built modes as charge conjugation's kinematic face, the particle$\leftrightarrow$antiparticle relation of that conjugation being the two ends of this sector's $R$-conjugation across the bead (receipt \rcpt{P14_P14_payoff}). It is that face and no more, exactly as the boundary requires: the zero-modes carry the discrete flavour skeleton and not the gauge charge, so $R\circ K$ carries the discrete matter/antimatter conjugation while the electric-charge sign stays field-level---the identification of a mode with a \emph{specific} charged particle, and the full antilinear $C$, remaining the ordinary route. The operator half is explicit and grounded---the reality-involution lift $S=\gamma^{0}\gamma^{1}\gamma^{3}$ gives $\gamma^{5}S=-\mathrm{i}\gamma^{2}=-(C\gamma^{0\top})$, implementing $\psi\mapsto\psi^{c}$ on the cut spinor (\texttt{storyboard\_receipts/A3\_spinor\_lift.py})---but it is an operator identity carrying no charge, so the matter/antimatter \emph{pairing} of the two ends rests on the actual disjoint wall-modes of Proposition~\ref{prop:wall}, not on the operator alone; absent that built construction the frequency-wing/species identification would stay do-not-assert. The factorisation the boundary paper states is thereby realised on the sector it walls, at exactly its earned weight, and no further: coherence within CR, the world-correspondence the data's to judge.
+
+\subsection{Which three the generations are seated on, and why it is not the hinges}\label{sec:whichthree}
+
+The count above is read off the three walls and the family symmetry off the three hinges, and those are the
+same three. That identification is here revised, for a reason that comes from outside this paper and settles
+something the identification could not.
+
+The substrate's null structure admits a \emph{bound} triple---a puncture of a hinge together with the two
+punctures its null generators reach---and the causal classification of the six hinge-ends forces such a triple
+to take one puncture per hinge: two ends of one hinge are timelike separated, two on one horn spacelike, and
+only the cross pairs null.\rcpt{P03_hexagon_null_triple} A bound triple is therefore one-per-hinge without
+choice. If the three hinges were the generations, a bound triple would be one constituent from each
+generation, which is not what a bound triple of like constituents is. \emph{So the hinge three is the index
+that distinguishes constituents within a bound state, not the index that distinguishes copies of the whole
+state}, and the generations must be seated elsewhere.
+
+They have somewhere to go, and it is the construction's own second three. The framework paper establishes that
+no affine change of variable identifies the horizon roots with the roots of the comoving turnaround
+(\emph{lem:twoturnings}); the marginally-bound congruence integrates to $r^{D-1}=2M\alpha^{2}\sinh^{2}\bigl((D-1)\tilde\tau/2\alpha\bigr)$
+in $D$ dimensions, and the shift $\tilde\tau\mapsto\tilde\tau+2\pi i\alpha/(D-1)$ leaves $r^{D-1}$ invariant while
+sending $r\mapsto e^{2\pi i/(D-1)}r$, so that second three carries a cyclic deck action of order
+$D-1$.\rcpt{P03_the_weld_and_the_two_folds} Three consequences follow, and the third is the one that made the
+move admissible.
+
+\emph{First, the count is unchanged and the dimension argument with it.} Both threes are $D-1$, and for one
+reason: clearing denominators, $f=0$ is a polynomial of degree $D-1$, and the two are the two things one does
+with that single polynomial---the horizon three is its zero set, the turnaround three the deck action of the
+integral of $1-f$. The fold is therefore a property of $f$ and not of which structure reads it, so
+Section~\ref{sec:scope}'s conclusion---that four is the only dimension carrying both a count and a
+handedness---is untouched by the move, its $D=5$ member included.
+
+\emph{Second, the family symmetry changes group, and this is a substantive revision rather than a
+relabelling.} The Weyl $S_{3}$ of Section~\ref{sec:family} is the relation among the three hinges, and on this
+reading that is a statement about the within-state index: its transpositions are the hops between hinges that a
+bound triple needs in order to be a singlet. The turnaround three carries the cyclic deck action alone. So the
+family symmetry the generations bear is $\mathbb{Z}_{3}$, and $\mathbb{Z}_{3}<S_{3}$ properly.
+
+\emph{Third---and this is what had to be checked before any of it could be said---the chirality survives.} The
+grading is the mass reflection $R$, and $R$ acts on the turnaround branch: under $M\mapsto-M$ the right-hand
+side of the law above becomes non-positive for real $\tilde\tau$, so a real image exists exactly when $D-1$ is
+odd, and its image is $r\mapsto-r$, the signed radius. That condition is \emph{$D$ even}---the same condition
+Section~\ref{sec:scope} already reads off $2M=r_{0}^{D-3}-r_{0}^{D-1}$ being odd in the signed
+offset.\rcpt{P03_R_reaches_the_turnaround} The parity argument therefore transfers to the new seat without
+modification. Composed with the deck action it gives $\mathbb{Z}_{6}=\mathbb{Z}_{3}\times\mathbb{Z}_{2}$.
+
+\emph{That is not the whole of what the turnaround carries, and the correction is worth making here because it
+runs the opposite way to what one would expect and does not disturb the argument
+above.}\rcpt{P14_turnaround_carries_D6} It is natural to read the $\mathbb{Z}_{6}$ as an index-two subgroup of
+the $D_{6}$ the hinges carry, with the missing part exactly the transpositions the within-state index needs.
+\emph{The transpositions are not missing.} The time reflection acts on cosmic time as
+$\tilde\tau\mapsto-\tilde\tau$, and the outward law $r^{3}=2M\alpha^{2}\sinh^{2}(3\tilde\tau/2\alpha)$ is exactly
+invariant under it, $\sinh^{2}$ being even---so $T$ descends to the turnaround. But it does \emph{not} commute
+with the deck action: it conjugates it to its inverse, $TDT^{-1}=D^{-1}$, which is the dihedral relation. Hence
+$\langle D,T\rangle\cong S_{3}$ and, with the parity adjoined, the turnaround carries $D_{6}$ of order twelve
+after all. \emph{What keeps this from collapsing the distinction drawn above is that the two $S_{3}$'s permute
+different triples}---the hinge one the three horizon \emph{roots}, this one the three cube-root
+\emph{sheets}---and the companion framework paper's \emph{lem:twoturnings} establishes that no affine change of
+variable identifies the two root sets. So the hinge transpositions remain the within-state index's; the
+turnaround simply has transpositions of its own---\emph{though whose transpositions they are is worth saying,
+because it decides what kind of family symmetry this sector delivers.}\rcpt{P14_the_family_symmetry_is_cyclic}
+They are supplied by $T$, the horn swap, which this paper reads as weak isospin; so the turnaround's $S_3$ is
+the family $\mathbb{Z}_3$ extended by an operation belonging to another sector, and reading it as a family
+$S_3$ would be counting isospin as flavour. \emph{The family symmetry proper---the part acting on generations
+and on nothing else---is cyclic.} A second consequence follows from the same computation and settles a
+question this sector had been asking in a form that admitted no answer: since $T$ descends as the
+\emph{inversion} $k\mapsto-k$ of the sheet index rather than as a translation, the change it induces is $0$,
+$1$ or $2$ according to $k$, so ``the winding change under $T$'' is not a quantity at all. \emph{What is true
+instead is sharper}: $T$ fixes the triality-neutral class and exchanges the two charged ones, which is the
+action the orientation reflection already has,\rcpt{P14_the_lap_orientation_is_derived} and is consistent with
+this paper placing conjugation at the branch point rather than on the horns. \emph{One consequence is worth recording without being
+claimed}: the representations of $D_{6}$ that are trivial on the deck $\mathbb{Z}_{3}$---which is what carrying
+no colour would mean---are its four one-dimensional ones, so a colourless sector on this structure has total
+dimension four. \emph{That is a count of gradings and not of fields}, and this paper draws nothing from it. \emph{One thing should nevertheless be said about its shape, because the natural objection to it is misdirected.}\rcpt{P14_colour_is_vector_like_on_singlets} Every $\mathbb{Z}_2$ grading splits those four $2+2$, which looks like a failure to reproduce a colourless sector that is chirality-asymmetric. \emph{It is not a failure, because colour does not see the chirality of a colour singlet in the Standard Model either}: $SU(3)$ acts trivially on $\nu_L$, $e_L$, $e_R$ and $\nu_R$ alike, and what distinguishes the doublet from the singlet is $SU(2)_L$. A colour structure delivering a chirality-asymmetric colourless triple would not match the Standard Model but exceed it. \emph{The asymmetry is an isospin property, and the question properly addressed to this construction is whether $T$ acts on one $\gamma^{5}$-eigenspace of the wall mode and trivially on the other}---which is well-posed here, since $T$ and $R$ act on independent data and commute, so that $T$ acts within each chirality eigenspace separately. \emph{That they commute is the requirement rather than an obstruction}: a chiral action needs simultaneous diagonalisability, not its failure. We record the question as well-posed and do not answer it. \emph{And one boundary on how the count may be read follows from the same arithmetic, since the temptation runs the other way.}\rcpt{P14_a_labelling_not_a_gauging} Chirality and species each split the four leptons $2+2$, but $SU(2)_L$ does not: it decomposes them as a doublet and \emph{two inequivalent singlets}, $2+1+1$, since it does not distinguish $\nu_R$ from $e_R$ at all. A grading by a one-dimensional character is a function to $\{\pm1\}$ and its blocks are its fibres, so it has at most two, and no character count on a finite group can produce three. What a $\mathbb{Z}_2$ \emph{can} carry is the orbit structure---an action swapping the species on one chirality eigenspace and trivial on the other has orbits $2+1+1$---which is again the question of the previous sentence. So the two bits reproduce the lepton content's \emph{names} and not its gauging, and nothing here should be read as obtaining $SU(2)_L$; $T$ is a discrete horn swap, and no continuous group is derived anywhere in this construction. \emph{And the orbit question, which is the one a $\mathbb{Z}_2$ could have answered, is now answered too, in the negative.}\rcpt{P14_the_species_bit_is_not_chiral} At a single wall it cannot even be asked: Proposition~\ref{prop:wall} binds the $\sigma_y=+1$ eigenspinor with the conjugate branch rejected, so the bound content is one $R$-eigenspace of dimension one, and every operator commuting with $\sigma_y$---as $T$ does---acts on it by a scalar. Asked of the sector's \emph{occupation} it has an answer: the colourless characters are all four of $(T,R)$, so each $R$-eigenspace carries one $T$-even and one $T$-odd state and $T$ acts non-trivially on both. On a character of a direct product the two factors' values are independent by construction, and the product's directness is itself computed. \emph{Set beside the Standard Model the two occupations differ on exactly one pair}: its left-handed doublet gives $T$-values $\{+1,-1\}$, which this sector matches, while its right-handed singlets give $\{+1,+1\}$ where this sector gives $\{+1,-1\}$. So the construction reproduces the left-handed side's shape and fails on the right-handed side, by drawing a distinction there that the Standard Model does not draw. \emph{We record that as a mismatch rather than smoothing it}: nothing this sector delivers rests on the clause, and the falsifiable direction runs the honest way---a right-handed weak structure distinguishing $\nu_R$ from $e_R$ by an isospin-like $\mathbb{Z}_2$ would make the geometry right and this comparison wrong.
+
+\emph{What this paper's results do and do not depend on the move.} The wall count, the one-mode-per-wall
+proposition, the index and its holonomy stability, and the dimension consequence are all statements about
+threeness and parity and are carried unchanged. What is revised is the reading of \emph{which} three: the
+$S_{3}$ this paper exhibits is the relation among the hinges and belongs to the within-state index, and the
+generations' own symmetry is the $\mathbb{Z}_{3}$ of the turnaround. The identification of the generations
+with the walls is accordingly withdrawn to the weaker and correct statement that the wall structure fixes the
+\emph{number}, which is $D-1$ at either seat.
+
+\section{Scope, and consistency with the boundary}\label{sec:scope}
+
+The result sits inside the boundary paper's wall, not against it. \cite{JanzenBoundary} shows the gauge group is not a continuous substrate isometry and names the discrete orientation structure as the one residue; the present sector is that residue built out---the $D_6=S_3\times\mathbb{Z}_2$ realised as three chiral families. Nothing here claims a geometric origin for weak isospin as a \emph{gauging} or for the mass spectrum; colour's discrete content is delivered above and its \emph{coupling} is not, the bundle being flat. \emph{And there is a single statement covering all of those boundaries at once, which is worth making in the sector's own voice rather than leaving to be inferred item by item.}\rcpt{P14_characters_label_they_do_not_multiplet} What the discrete opening supplies is \emph{characters}, and a character is one-dimensional: it labels and it does not multiplet. A finite group is abelian exactly when every irreducible representation is one-dimensional, so the deck $\mathbb{Z}_3$ offers no multiplet into which three generations could be placed, and the colourless characters being one-dimensional is why $T$ acts on each by a scalar. \emph{So the ceiling is uniform}: exact selection rules, exact counts and exact gradings, and no representation content in which a mixing angle, a coupling strength or a mass could live---which is the same fact that makes what \emph{is} delivered exact. \emph{One consequence should be stated plainly, because a reader from the discrete-flavour literature will otherwise mis-place this sector.} That literature's own criterion is that more than one generation can only be explained by a non-abelian symmetry carrying two- and three-dimensional irreducible representations~\cite{IshimoriEtAl2010}, and in its models an accompanying $\mathbb{Z}_3$ is family-\emph{independent}, separating symmetry-breaking sectors while a Froggatt--Nielsen $U(1)$ shapes the hierarchy. This sector's threeness is not a horizontal symmetry of that kind at all: it is the \emph{deck} group of a covering, saying the three generations are one object read three ways rather than three components of a multiplet, and it is not broken and predicts no mixing. \emph{The exchange is a fair one and runs both ways}: this construction cannot claim the explanatory work those models do, and their standing difficulties are correspondingly not its own---it is tested by the count, the chirality and the sixteen-fermion requirement, which is what it predicts. Nor is the non-compactness escape of~\cite{JanzenBoundary} in tension: the count is a wall-localized zero-mode index, not a bulk $\dS_5$ index, and localized modes are indifferent to the bulk's non-compactness. The localization is itself a statement in the leaf norm (Section~\ref{sec:chirality}): the fermion is a mode of the existent spatial leaf~\cite{JanzenCRframework}, and in that induced proper measure the horizons sit at finite distance and the modes are bound, whereas in the conserved spacetime Dirac norm the horizons are infinitely distant and the static mode does not normalize. That the wall-localized index is well-defined thus rests on---and is consistent with---the layered ontology: the count is an object on the leaf, where CR locates the existent.
+
+What CR's matter sector delivers, then, is precisely the Standard Model's discrete flavour skeleton: the number of generations, their chirality, and the family symmetry relating them---three, $\gamma^5$, and $S_3$---read as the maximally-symmetric slicing of a maximally-symmetric substrate.
+
+\paragraph{What the flavour skeleton fixes about the dimension.} The count above is read off the horizon cubic through the three hinges, and that cubic is not an assumption of this sector but an output of the four-dimensional metric function. It is worth asking what the sector would deliver at other dimensions, because the answer is narrower than the question suggests and it runs the other way: the flavour content constrains the dimension rather than being handed it. In $D$-dimensional Schwarzschild--de~Sitter the mass is the slicing-dependent factor $2M=r_{0}^{D-3}-r_{0}^{D-1}$ in the gauge $\alpha=1$, and two conditions this construction already imposes then bear on $D$. The first is the collapse. The family is parametrised by the sky angle, and the horizon relation is required to linearise there to a \emph{single} multiple-angle---in the companion paper's words, the slicing scale $2/\sqrt3$ is ``the one scale removing the residual harmonic''~\cite{JanzenSlicing}. The two powers present are $D-3$ and $D-1$, so the harmonics standing below the top one number exactly \emph{one} at $D=4$ and $D=5$ and \emph{two or more} from $D=6$ upward, while the construction has one scale to spend: from six dimensions up no slicing scale collapses the relation, there is no forced fold, and the family carries no generation count to read at all. At $D=5$ the collapse does occur, at scale $1$, and returns a four-fold. The second condition is the parity, and it separates those two. The mass function is odd in the signed offset exactly when $D$ is even, so at $D=5$ the orientation parity $r_{0}\mapsto-r_{0}$ \emph{fixes} each geometry rather than exchanging it with its conjugate: there is no mass-reflection $\mathbb{Z}_{2}$, hence no $\mathbf 3\oplus\bar{\mathbf 3}$ Nariai hexad, no outer factor of $\mathrm{Aut}(A_{2})=S_{3}\times\mathbb{Z}_{2}$, and no $\gamma^{5}$---which is that parity's Clifford generator on the cut (Section~\ref{sec:twofactors}), and on which this paper's chirality rests through a superpotential odd in the signed radius (Section~\ref{sec:chirality}). A five-dimensional spacetime would therefore carry four generations and no handedness---and, \emph{on the same computation, no antimatter either}, since the parity whose absence removes $\gamma^{5}$ is the one whose absence removes the antifundamental.\rcpt{P14_the_d5_world} \emph{The two deliverables are one fact seen twice, and it is visible in the collapse itself}: at $D=4$ the relation collapses to a pure multiple angle $2M=\tfrac{2}{3\sqrt3}\sin 3w$ of zero mean, whereas at $D=5$ it collapses to $2M=\tfrac18(1-\cos 4w)$---one harmonic \emph{plus a constant}. Both are single-harmonic in the sense the collapse condition asks for, but the constant is not nothing: it holds $2M\ge0$ across the whole swing, so the mass never changes sign, and the sign change is the entire content of the mass reflection. \emph{And the same obstruction is visible a third time, in the root set itself, where it exhibits its mechanism.}\rcpt{P14_odd_D_contains_its_own_image} Writing the horizon condition with the slicing's own root substituted, $P_{D}(r)=r^{D-1}-r^{D-3}+r_{0}^{D-3}-r_{0}^{D-1}$, the factor $(r-r_{0})$ divides at every $D$---that is the designation split---and $-r_{0}$ is a root \emph{exactly at odd} $D$, since substituting it returns $2\cdot 2M$ at even $D$ and $0$ at odd. So at $D=5$ the cofactor degenerates to $(r+r_{0})(r^{2}+r_{0}^{2}-1)$, a line and a circle, and the $1+3$ is really $1+1+2$ with the extra one being $-r_{0}$ itself, where at $D=4$ the cofactor is a genuine conic and at $D=6$ and $D=8$ it does not factor at all. The root-set condition and the mass-parity condition are exact complements dimension by dimension, and the reason is structural: at even $D$ the reflection $r_{0}\mapsto-r_{0}$ carries the geometry to a \emph{different} member of the family, which is what lets it serve as a matter/antimatter parity, while at odd $D$ the reflected root already lies in the same geometry's own root set, so the parity has nothing to relate. \emph{The geometry is its own image, and that is why five is vector-like.} \emph{And two more structures fail at odd $D$ for the same evenness, neither previously known to be the same fact.}\rcpt{P14_odd_D_is_pair_symmetric} The polynomial $r^{D-1}-r^{D-3}+2M$ has its two powers of one parity, so it is even in $r$ exactly at odd $D$; its root set is then stable under a fixed-point-free involution, and the monodromy over the mass plane commutes with that involution. At $D=5$ this confines the monodromy to the centraliser of $(0\,1)(2\,3)$ in $S_{4}$, of order eight against twenty-four, so the deck group cannot be the full symmetric group on the roots and the four-dimensional statement that it is has no odd-dimensional analogue. The root set is likewise not of $A_{2}$ type: the roots sum to zero at every $D$, but at four that is three roots summing to zero, and at five it is four summing to zero \emph{in $\pm$ pairs}---so at five there is no $A_{2}$ whose automorphism group could factorise or fail to. \emph{The constant and the evenness are the same obstruction read in two variables}---and with no sign change there is no antifundamental, hence no hexad, hence none of the twelve designations the four-dimensional dial carries. Among the dimensions in which the count exists at all, four is the only one that also carries a chirality, so the two halves of this sector's own delivery---the number and the handedness---are jointly available at exactly one dimension\rcpt{P14_dimension_from_flavour}. Both conditions are read through the sky angle and so through the gnomonic chart, and that chart is not a four-dimensional import: the companion paper forces it by the straight-line criterion alone---a faithful planar chart must carry the straight line of sight to a straight line, and the gnomonic projection is the unique projection sending every great circle to one---``independently of the observer or the slicing scale''~\cite{JanzenSlicing}, a property of $S^{n}$ in every $n$, and the observer's celestial sphere in $D$ dimensions is $S^{D-2}$. (That paper's \emph{secondary} exclusion of the orthographic, which turns on $\sin\theta\le1<2/\sqrt3$, is specific to the four-dimensional scale and is not used here.) The altitude is the same as the rest of this section, and the one assumption is named: the $D$-dimensional metric function is taken to be the standard Tangherlini--de~Sitter one, an extension of the codimension-one operator rather than a rederivation of it at general $D$. Within CR, and at that weight, the observed flavour skeleton is not merely consistent with four dimensions but selects them.
+
+\subsection{The correspondence, stated in Standard Model terms}\label{sec:correspondence}
+
+Because the papers above speak of ``generations'' without saying what a generation contains, we set the
+correspondence out explicitly. A reader who knows the Standard Model should be able to see at once which of its
+structures this sector fixes and which it does not.
+
+\emph{What a Standard Model generation contains.} In left-handed Weyl form, one generation is five irreducible
+multiplets of $\su(3)_c\times\su(2)_L\times\mathrm{u}(1)_Y$:
+\[
+Q=(u,d)_L:(\mathbf{3},\mathbf{2})_{+1/6},\quad
+u^{c}:(\bar{\mathbf{3}},\mathbf{1})_{-2/3},\quad
+d^{c}:(\bar{\mathbf{3}},\mathbf{1})_{+1/3},\quad
+L=(\nu,e)_L:(\mathbf{1},\mathbf{2})_{-1/2},\quad
+e^{c}:(\mathbf{1},\mathbf{1})_{+1},
+\]
+totalling $6+3+3+2+1=15$ Weyl fermions, or $16$ with a right-handed neutrino
+$\nu^{c}:(\mathbf{1},\mathbf{1})_{0}$. The quark/lepton distinction is exactly the first entry of each triple:
+a quark carries the colour $\mathbf{3}$, a lepton the singlet $\mathbf{1}$. Three generations is $45$ (or $48$)
+Weyl fermions in all.
+
+\emph{What this sector fixes.} Three features of that skeleton, and only three.
+\begin{itemize}
+\item \emph{The number of generations is three}, as a $\gamma^5$-graded index of wall-localized zero-modes
+($\dim\ker_+=3$, $\dim\ker_-=0$; Section~\ref{sec:count}).
+\item \emph{Each is chiral}, carrying a definite $\gamma^5$ eigenvalue (Proposition~\ref{prop:wall}). This is
+not decoration: the Standard Model's content is chiral, and a construction returning a vector-like spectrum
+would be excluded by that fact alone.
+\item \emph{The three are related by a global $S_3$} (Section~\ref{sec:family})---a family symmetry, not a
+gauge symmetry.
+\end{itemize}
+
+\emph{What it does not fix, and the list is longer.} The internal content of a generation is untouched: how
+many Weyl fermions it holds ($15$ or $16$), their $\su(3)_c$ representations---hence \emph{which of them are quarks and which are leptons}---and their $\su(2)_L$ doublet/singlet structure. \emph{The hypercharges are not a third undelivered item}: given those two, they follow from the per-wall anomaly conditions of \S\ref{sec:inflow} together with the existence of the Yukawa couplings, uniquely up to normalisation. Anomaly
+cancellation, which the Standard Model's fifteen satisfy non-trivially and which is among the sharpest
+constraints on any proposed content, is not addressed. Neither is the mass spectrum, the mixing, nor the
+existence of $\nu^{c}$. \emph{The zero-mode of Proposition~\ref{prop:wall} is one Weyl mode per wall, not
+fifteen}: the index counts generations, not the states within them.
+
+\emph{Two consequences of stating it this way are worth drawing.} First, the correspondence is
+$3\leftrightarrow3$ at the level of \emph{families}, with every representation-theoretic fact about the
+Standard Model on the far side of the wall of~\cite{JanzenBoundary}; the sector is compatible with the Standard
+Model's content in the weak sense of not contradicting it, and does not predict it. Second, the global $S_3$ is
+a point of contact rather than a free addition: the Standard Model has no exact family symmetry---the Yukawa
+couplings break it badly---so an exact $S_3$ delivered here must be broken by whatever supplies the masses, and
+the manner of that breaking is a constraint this sector inherits rather than a freedom. \emph{We record that as
+an obligation, not a result.} \emph{That obligation can be checked against a literature rather than left standing, and it is worth doing
+because the check could have gone badly.} $S_3$ is among the most studied discrete flavour symmetries: the
+$S_{3L}\times S_{3R}$ proposal predicting quark-sector flavour democracy has been followed by an extensive
+body of work on how to break that democracy and recover realistic spectra and
+mixing~\cite{HarariHautWeyers1978,XingYangZhou2010}. The structure of the symmetric limit is definite and
+matches what a three-object permutation representation gives: the mass matrices take a universal two-term form,
+one piece proportional to the identity and one to the democracy matrix. On that decomposition the observed
+pattern is not accidental---the charged-fermion matrices are strongly hierarchical, the quark mixing matrix is
+close to the identity, and the lepton mixing matrix carries two large angles, all as consequences of which term
+dominates where~\cite{XingYangZhou2010}.
+
+\emph{Two things follow for this sector, and they pull in opposite directions.} The obligation is met in the
+sense that matters: an exact $S_3$ broken by the mass mechanism is a viable and worked framework, not an
+excluded one, so the sector is not committed to a symmetry the data refute. But it is not met for free.
+Realistic fits generally augment the group---$S_3\times Z_3\times Z_6$ in one construction, where the neutrino
+sector's breaking supplies a naturally small solar-to-atmospheric ratio and next-to-leading corrections bring
+$\theta_{13}$ into the measured range while the quark sector accommodates the Cabibbo angle and the differing
+up- and down-type hierarchies~\cite{Meloni2012}---and the breaking pattern does substantial work. \emph{What
+this sector supplies is the symmetry, not the breaking}: the $S_3$ arrives here from the substrate's geometry
+rather than being posited, which is a point of contact worth having, while the breaking that generates the
+observed masses and mixings remains external to it, in the same place as the gauge representations.
+ The mass spectrum and the gauge representations are external to it and are so marked. This is the innermost of the three registers of maximal symmetry the geometric-core paper draws together~\cite{JanzenGeometricCore}: the substrate maximally symmetric, the evolving space maximally symmetric, and now the discrete matter structure maximally symmetric and counted.
+
+\paragraph{What the matter sector dissolves.} Gathered, and held at exactly the weight the rest of the paper holds---\emph{forced within CR}, coherence and not correspondence, the content (gauge representations, masses) external throughout---the discrete flavour skeleton dissolves a small family of the Standard Model's standing structural questions, each in the programme's now-familiar mode: not a mechanism supplied but a replication recognised. The \emph{generation-replication puzzle}---why the fermions come in three families, a number the Standard Model takes as an input---is, within CR, no free count but the three $120^\circ$ hinges of one substrate read three ways: three is the maximally-symmetric matter construction's own index, not a datum to be fit~\cite{JanzenGeometricCore}. The \emph{origin of the family symmetry}---which flavour model-building posits as an added discrete group---dissolves by identity: the $S_3$ permuting the three families \emph{is} the Weyl symmetry of the horizon cubic's three roots, one group and not two resembling one, since each hinge designates one root as its own horizon (Section~\ref{sec:family}). The \emph{gauged-chirality-against-global-flavour arrangement}---carried in the Standard Model as a structural fact---is read here as the difference between being \emph{on} the substrate's waist circle and \emph{tangent} to it: the chirality parity is a substrate isometry and descends gauged, the family permutation a deck symmetry of the solution space and stays global (Section~\ref{sec:twofactors}). And the \emph{matter/antimatter} pairing is that same orientation parity $R=\gamma^5$ carrying each generation's wall-mode to its bound opposite-chirality partner, the discrete residue of the cosmogenesis bead's own $r=0$ crossing~\cite{JanzenBoundary}. Weighed by the programme's criterion of necessity~\cite{JanzenShadowExistence}, these are consolidations---one substrate's discrete structure where the Standard Model carries several independent inputs---but the altitude is the lowest in the corpus and is marked as such: each holds only \emph{within CR}, on the maximal-symmetry principle a framework may decline (declining it, the natural single-hinge index reads one, not three), and none touches the gauge or mass content that stays the ordinary route. The dissolution is a recognition of shape, offered at coherence and owing its correspondence, like the rest of the matter sector, to the world.
+
+\begin{thebibliography}{9}
+
+\bibitem{JanzenCRcosmology} D.~Janzen, \emph{The cosmology of Cosmological Relativity: the expansion history from causal reassignment on a de~Sitter background, the cosmogenesis branch point, and the scalar perturbation sector}, companion paper (P15).
+
+\bibitem{HarariHautWeyers1978} H.~Harari, H.~Haut and J.~Weyers,
+\emph{Quark masses and Cabibbo angles}, Phys.\ Lett.\ B \textbf{78} (1978) 459.
+
+\bibitem{XingYangZhou2010} Z.-z.~Xing, D.~Yang and S.~Zhou,
+\emph{Broken $S_3$ flavor symmetry of leptons and quarks: mass spectra and flavor mixing patterns},
+Phys.\ Lett.\ B \textbf{690} (2010) 304, arXiv:1004.4234.
+
+\bibitem{Meloni2012} D.~Meloni,
+\emph{$S_3$ as a flavour symmetry for quarks and leptons after the Daya Bay result on $\theta_{13}$},
+JHEP \textbf{05} (2012) 124, arXiv:1203.3126.
+\bibitem{JanzenGeometricCore} D.~Janzen, \emph{Reached through the imaginary, real by construction: the maximally symmetric substrate as the geometric--ontological core}, companion paper (p0).
+\bibitem{JanzenBoundary} D.~Janzen, \emph{The de Sitter substrate and the Standard Model: a four converging routes to a geometric boundary on what one maximally-symmetric Lorentzian substrate's isometry does and does not force, and the framework and gauge on its two real forms}, companion paper (P13).
+\bibitem{JanzenSlicing} D.~Janzen, \emph{The de Sitter substrate and its slicing curve: horizons as turning points, and de Sitter and Schwarzschild as two readings of one slicing}, companion paper (P3).
+\bibitem{JanzenGroupoid} D.~Janzen, \emph{The Schwarzschild--de Sitter description groupoid: generators, relations, and Schwarzschild as the asymmetric realisation}, companion paper (P5).
+\bibitem{JanzenAlgebroid} D.~Janzen, \emph{General relativity's constraint algebra as the symmetric-space structure of a de Sitter substrate: the action Lie algebroid of the symmetry-reducible sector, and the problem of time's ``wrong sign'' as the substrate's coset signature}, companion paper (P12).
+\bibitem{JanzenOperator} D.~Janzen, \emph{Covariance of geometries over the de Sitter substrate: the slicing operator, the vacuum kernel, and matter as the bend of the cut}, companion paper (P8).
+\bibitem{JanzenCRframework} D.~Janzen, \emph{Collapsed matter must become a universe: the necessary and sufficient augmentation of general relativity into a description of structural existence, proven for gravitational collapse of any symmetry}, companion paper (P7).
+\bibitem{JanzenShadowExistence} D.~Janzen, \emph{The shadow of existence: scientific theory-choice as an empirically grounded discipline, calibrated on the historical record}, companion paper (P6).
+\bibitem{JanzenCircle} D.~Janzen, \emph{The Schwarzschild and de Sitter circle: the intrinsic geometry of one homogeneous ring---the event horizon and the curvature singularity at $r=0$ its two poles}, companion paper (P2).
+\bibitem{JanzenCosmogenesis} D.~Janzen, \emph{Cosmogenesis: the Big Bang as a synthesis of Cosmological Relativity's deductively forced consequences, and the primordial light-element abundances it produces}, companion paper (P16).
+\bibitem{JanzenDynamics} D.~Janzen, \emph{Why the cut bends: the dynamics of the de Sitter cut, the confined gravitational wave, the generative boundary of the slicing operator, and chirality as the turning of the polarization plane}, companion paper (P11).
+\bibitem{JanzenCanonicalTime} D.~Janzen, \emph{The canonical problem of time as a category error: an empirically forced cosmic time, deparametrization, the dissolution of frozen dynamics, and a graviton quantization the de~Sitter horizon closes without a free parameter---the seam where $\hbar$ enters gravity---in Cosmological Relativity}, companion paper (P10).
+\bibitem{JanzenRange} D.~Janzen, \emph{The range of the de Sitter slicing operator: surjectivity onto the symmetry-reducible sector of general relativity, the Kerr--NUT--(A)dS vacuum kernel, and the wall of inhomogeneity}, companion paper (P9).
+\bibitem{JackiwRebbi1976} R.~Jackiw and C.~Rebbi, \emph{Solitons with fermion number $\tfrac12$}, Phys.\ Rev.\ D \textbf{13} (1976) 3398.
+\bibitem{CallanHarvey1985} C.~G.~Callan and J.~A.~Harvey, \emph{Anomalies and fermion zero modes on strings and domain walls}, Nucl.\ Phys.\ B \textbf{250} (1985) 427.
+\bibitem{AtiyahSinger1968} M.~F.~Atiyah and I.~M.~Singer, \emph{The index of elliptic operators.\ I}, Ann.\ of Math.\ \textbf{87} (1968) 484.
+\bibitem{IshimoriEtAl2010} H.~Ishimori, T.~Kobayashi, H.~Ohki, Y.~Shimizu, H.~Okada and M.~Tanimoto, \emph{Non-Abelian discrete symmetries in particle physics}, Prog.\ Theor.\ Phys.\ Suppl.\ \textbf{183} (2010) 1.
+\bibitem{Nariai1951} H.~Nariai, \emph{On a new cosmological solution of Einstein's field equations of gravitation}, Sci.\ Rep.\ T\^ohoku Univ.\ Ser.\ I \textbf{35} (1951) 62; reprinted in Gen.\ Rel.\ Grav.\ \textbf{31} (1999) 963.
+\end{thebibliography}
+
+
+\input{appendix_receipts_P14}
+\end{document}

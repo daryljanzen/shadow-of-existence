@@ -1,0 +1,810 @@
+% *** r1853 (PHASE 8, the CONFORMAL bake, probes C1+C2): THE HOMOTHETY IS THE CONFORMAL DILATION.
+%   A linear map preserves the ABSOLUTE (the null cone eta(X,X)=0, which fixes the causal structure)
+%   iff it is an O(5,1) element TIMES A DILATION lambda -- verified, ratio = lambda^2 exactly. The
+%   dilation carries eta=alpha^2 to eta=lambda^2.alpha^2, i.e. A DIFFERENT SUBSTRATE. So this paper's
+%   homothety r0 -> lambda.r0, alpha -> lambda.alpha IS that dilation, and it acts BETWEEN
+%   representations BY CONSTRUCTION rather than by choice -- which sec:alpha-action observed and did
+%   not name. Receipt C1_conformal_vs_isometric.
+%   THE CONSEQUENCE, and it is Q3's Cayley-Klein statement from the other side: the ISOMETRY group of
+%   one representation is O(5,1) while the group preserving the CAUSAL STRUCTURE alone is
+%   O(5,1) x R+, and the single generator by which they differ is the one that moves alpha.
+%   THE CAUSAL STRUCTURE FIXES THE GEOMETRY UP TO THE SCALE, AND THE SCALE IS WHAT IT DOES NOT FIX.
+%   BOUND: computed for LINEAR conformal maps; special conformal transformations not tested. ***
+% *** r1850 (PHASE 8, the quadric bake, probe Q4): rem:equianharmonic ADDED. The Weyl S_3 HAS A
+%   PROJECTIVE INVARIANT. On the sky angle the three roots are w, w+120, w+240 (the triple-angle
+%   spacing P3 forces), and their cross-ratio WITH THE CENTRE is lambda = 1/2 + i.sqrt3/2 = exp(i.pi/3),
+%   CONSTANT in w, satisfying lambda^2 - lambda + 1 = 0 -- the EQUIANHARMONIC value, the unique
+%   cross-ratio at which the six-element permutation orbit COLLAPSES (verified: to {exp(+-i.pi/3)}).
+%   So no relabelling of the roots by the group moves it. Classically equianharmonic <=> j = 0 <=>
+%   complex multiplication by omega = exp(2.pi.i/3) -- the deck action's own order three.
+%   WEIGHT, marked in the paper: three points 120 apart with their centre are equianharmonic
+%   AUTOMATICALLY, so this NAMES a consequence of a forced fact rather than adding one. The name is
+%   not idle: it identifies the group's invariant as PROJECTIVE and ties the order three to j=0.
+%   Receipt Q4_equianharmonic_vantages.  ON THE r-LINE there is NO such invariant -- the cross-ratio
+%   of the three roots with r=0 varies with r0 and degenerates to 1 at Nariai. ***
+% [†ONT-DISC] DESCRIPTION GROUPOID / DISCRETE SYMMETRY — this paper is the HOME (ONTOLOGY_FOUNDATION_INDEX.md §1i).
+%   *** THE THREE OPERATIONS ARE DISTINCT — NEVER FUSE THEM, AND HOLD THEIR LOCI: sigma (Weyl/diagonal;
+%   mass-invariant, Nariai-fixed, NO SEAM-CROSSING AT ALL — an algebraic relabelling); R (diagram/
+%   anti-diagonal; the vantage-swap, dS-fixed, = THE BACK-SEAM AT r=0, onto the conjugate branch); xi
+%   (THE THROAT SEAM AT r=alpha; NOT a symmetry but the invertible continuation, onto the cosmological
+%   branch). They share the sin->cosh mechanism but DO NOT COINCIDE AS MAPS. sigma and R generate D_6.
+%   [r968 SYMBOL CANON: R = orientation/mass-reflection parity (A_2 diagram automorphism, O(5,1)\SO_0,
+%    =gamma^5 on spinors); P (corpus-wide) = areal SPATIAL parity r->-r (absent from this paper); T=time.]
+%   R *IS* THE dS<->SCHWARZSCHILD CORRESPONDENCE (the outer Z_2), acting by parity:
+%       f(r) = (1 - r^2/alpha^2)   [R-EVEN: the invariant de Sitter geometry]
+%            + (-2M/r)             [R-ODD:  the Schwarzschild mass the vantage carries]
+%   — the eigenspace form of the perspectival reading, and P6's SHADOW-READING PARTITION IN CLOSED FORM
+%   (projection an EXACT involution; reifying the R-odd mass is the naive realism the method forbids).
+%   SINGLE-REASSIGNMENT UNIQUENESS: generic vantages fall into sigma-TWO-CYCLES; Nariai is sigma's
+%   UNIQUE fixed point; the reassignment is FORBIDDEN at every generic vantage, so it selects Nariai and
+%   no other — "not a fact about dynamics or fine-tuning," and converging with P4's floor: TWO
+%   INDEPENDENT ROUTES selecting one configuration. The generators are moreover COMPLETE (closing what
+%   P3 deferred; the proof turns on INVERTIBILITY, not continuity). ***
+%   *** SCOPE, KEEP IT: the sweep-artefact reading is hedged in the paper twice — the two critical points
+%   part at second order by the term -M/r^3, and attributing that to the pivot rather than to the mass
+%   "is the perspectival reading, NOT a claim proven independently of it" (the reading's INTERPRETIVE
+%   PAYOFF). On the NBC, this paper supplies ONLY the within-single-geometry component; the cross-geometry
+%   (different alpha) component is NOT established here. And rem:a2-distinct LEAVES OPEN whether the
+%   geometric A_2 and su(3)'s coincide structurally: "not a realised colour isometry" is NOT "a
+%   meaningless coincidence." ***
+%   Established here: ONE RIGID GEOMETRY charted from many vantages (the groupoid's single invariant is
+%   the geometry); THREE DISTINCT discrete operations — sigma (root-exchange), R (mass-reflection), xi
+%   (the seam's PARTIAL involution, the signature flip a property of the CONTINUATION, not of the
+%   descriptions) — never fuse them; rigidity as dimensional collapse (the continuous parameter is a
+%   CHART LABEL, not a modulus); ALPHA IS THE INVARIANT (a length, the curvature radius) while the
+%   gravitational mass is the PERSPECTIVAL M (the standard quasi-local/asymptotic definitions return M);
+%   Schwarzschild is the canonical ASYMMETRIC realisation — an exterior vantage cannot use the
+%   manifold's symmetry axis and is forced to pivot on the off-axis critical point r=0, so THE
+%   HORIZON-VS-SINGULARITY ASYMMETRY IS A SWEEP ARTEFACT, a signature of the chart, not of the geometry
+%   (the central diagnostic: apparent dynamical content in the Schwarzschild reading is the shadow of
+%   the asymmetric sweep); the same-alpha between-member morphisms are DECK TRANSFORMATIONS of the
+%   horizon cubic's three-sheeted cover branched at Nariai, the monodromy about a branch point IS sigma,
+%   the deck group S_3 — acting NON-UNIFORMLY (all of S_3 under-critically; only the order-two subgroup
+%   over-critically, the single real cosmic-time root distinguished); adjoining P gives the full
+%   Aut(A_2)=S_3 x Z_2 = D_6, and between distinct alpha the action is a continuous homothety leaving it
+%   invariant.
+%   *** THE KIND DISTINCTION (read off, not assumed): the Z_2 parity IS a substrate isometry (R in
+%   O(5,1)\SO_0, acting on a cut spinor as gamma^5), so chirality descends GAUGED; the Weyl S_3 is the
+%   deck/monodromy symmetry of the solution space, NO isometry, so a family symmetry it would grade is
+%   GLOBAL. Gauged chirality with global flavour is the Standard Model's own arrangement, following from
+%   WHICH FACTOR IS AN ISOMETRY. The parity is maximal symmetry's unspent discrete residue — the one
+%   structure the symmetric core does not consume. The D_6 matter reading (three generations x two
+%   chiralities) is DO-NOT-ASSERT. ***
+%   Supplies the algebraic content of P3's geometric hexad ([†ONT-GEOM] §1f); P12 realizes this same
+%   structure on the substrate ([†ONT-ALG] §1h); the chart-vs-existent diagnostic is the "events exist"
+%   horn the augmentation closes ([†ONT-SIM] §1d, [†ONT-CR] §1e).
+%
+% SPINE POSITION — P5 (r620 physics-first P4↔P5 swap; was P4 at r531).
+%   This paper (groupoid_paper) supplies the ALGEBRAIC CONTENT of the
+%   augmentation that its empirical foundation P4 modern_parallax
+%   establishes (see §intro: "the algebraic content of that already-
+%   grounded augmentation"). The empirical forcing (P4) precedes its
+%   algebra (this paper), physics-first. Cross-refs are cite-key based
+%   and unaffected. Spine flexible — see OPEN_PROBLEMS_MAP.
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{receipts}  % in-place receipt citations -> Appendix R
+\usepackage{caption}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!black,
+  citecolor=blue!50!black,
+  urlcolor=blue!50!black
+}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\captionsetup{font=small, labelfont=bf}
+
+\title{The Schwarzschild--de Sitter description groupoid:\\
+\large generators, relations, and Schwarzschild as the asymmetric realisation}
+\author{Daryl Janzen\\
+\small Department of Physics and Engineering Physics\\
+\small University of Saskatchewan}
+\date{}
+\newcommand{\dd}{\mathrm{d}}   % r2376+c54.9: used but undefined -- the paper did not compile
+\begin{document}
+\maketitle
+
+\begin{abstract}
+In a companion paper~\cite{JanzenSlicing} the Schwarzschild--de Sitter (SdS) family was exhibited as a single rigid geometry charted from several observer vantages, with the admissible vantages organised into a groupoid whose single invariant is the geometry. That paper established the rigidity (no continuous moduli act on the geometry) and the discrete generation of the morphisms by a unique involution together with sky-angle periodicity. It left open the relational content of the generated structure: the relations among the generators, the action of vantages between distinct de~Sitter representations (different $\alpha$), and the question of whether the throat radius $\alpha=\sqrt{3/\Lambda}$ established there as the invariant of the construction is also the correct intrinsic gravitational mass. The present paper takes the groupoid as established and develops the relational content within a single geometry. We give the groupoid as a category, name its generators in coordinate-independent form, derive the relations they satisfy---the root-exchange involution $\sigma$ of order two and the sky-angle periodicity $\tau$ of order three, with $(\sigma\tau)^{2}=\mathrm{id}$, generating $D_{3}\cong S_{3}$, and shown \emph{complete}, closing the generation question the slicing paper left open---and identify the rigidity-as-dimensional-collapse mechanism in algebraic terms: the slicing family collapses onto its single invariant (the de Sitter manifold $\alpha$), distinct from the within-member action of the groupoid, whose discrete morphisms permute descriptions of a single member at fixed $M$ while leaving that member's geometry fixed. The cosmological configuration is then forced by the group structure rather than chosen: the generic vantages fall into $\sigma$-pairs, while the Nariai member~\cite{Nariai1951} is the \emph{unique} fixed point of $\sigma$, lying in a degenerate orbit of its own, so the reassignment that promotes a null direction to the fundamental timelike congruence---forbidden by the two-cycle structure at every generic vantage---selects it uniquely. The uniqueness of the cosmological configuration is thus a structural fact about the groupoid, not a fact about dynamics or fine-tuning, and it converges with the empirical forcing of a cosmic time from the redshift-isotropy floor~\cite{JanzenModernParallax}: two independent routes selecting one configuration. We then characterise the partial involution at the equatorial seam---the analytic continuation that joins the Riemannian (spherical) piece of the slicing curve to the Lorentzian (de Sitter) piece, with the metric signature flipping automatically---as a structural feature of the groupoid distinct from the within-single-geometry morphisms: a vantage-change that crosses the seam carries Riemannian and Lorentzian descriptions of the same intrinsic structure, with the signature flip a property of the continuation rather than of the descriptions. With the algebraic content in hand, we read the Schwarzschild description as the canonical asymmetric realisation: a partial arc swept, by an exterior vantage that cannot use the manifold's own axis of symmetry, about a selected off-axis point of the manifold---the critical point $r=0$. This forced off-axis pivot is the geometric origin of the horizon-versus-singularity asymmetry that the companion circle paper~\cite{JanzenCircle} identified algebraically as the two metric singularities of identical analytic type. Under the perspectival reading in which the paper is written, the asymmetry is therefore a signature of the chart, not a feature of the geometry; the groupoid's central diagnostic is that what looks like dynamical content in the Schwarzschild reading is, in fact, the geometric shadow of the asymmetric sweep. We are explicit about the scope of that reading: the two critical points are identical through first order and parted at second by the curvature term $-M/r^{3}$, and the attribution of that term to the forced pivot rather than to the mass is the perspectival reading's interpretive payoff, not a claim proven independently of it. One computation bears on that attribution from outside the \emph{interpretation}, though not outside the framework---it uses the bead's own outward law: along the cosmological branch the same perspectival invariant is free of the mass---$K=48M^{2}/r^{6}=64/27\tilde\tau^{4}$, the
+amplitude's $r\propto M^{1/3}$ cancelling the $M^{2}$ exactly---while along the interior cycloid, whose
+amplitude carries $r\propto M$, it goes as $M^{-4}$~\cite{JanzenCircle,JanzenCRframework}. A term whose
+magnitude tracks which sweep is being read, and not the mass, is what the pivot attribution
+predicts. \emph{And the discriminant itself has a reading the attribution question does not
+touch}: on any member of the energy family $\mathrm{d}^{2}r/\mathrm{d}\tilde\tau^{2}=rK_{G}$, so the quantity that
+parts the two critical points at second order is the comoving acceleration up to the factor $r$,
+and the $-M/r^{3}$ carrying that parting is the mass's contribution to the
+deceleration~\cite{JanzenSlicing}.\rcpt{P03_acceleration_is_slice_curvature} The parting is
+therefore one in dynamics and not only in curvature. \emph{This does not settle the attribution}:
+the term is $-M/r^{3}$ on either reading, and whether it belongs to the forced pivot or to the mass
+is untouched by giving it a dynamical name---the question stated above stays open. We then classify the discrete symmetry of the solution space: the same-$\alpha$ between-member morphisms are the deck transformations of the horizon cubic's three-sheeted cover branched at Nariai, whose monodromy is the root-exchange $\sigma$ and whose deck group is $S_{3}$ (acting non-uniformly---fully in the under-critical regime, by its order-two subgroup in the over-critical, the cosmic-time real root distinguished); this deck group is equally the Galois group of the horizon cubic, one $S_{3}$ worn as monodromy, Weyl, and Galois symmetry alike; adjoining the mass-reflection $2M\mapsto-2M$ gives the full discrete symmetry $\mathrm{Aut}(A_{2})=S_{3}\times\mathbb{Z}_{2}\cong D_{6}$; and the action between distinct $\alpha$ is the continuous homothety, under which this discrete structure is invariant. That mass-reflection $R$---the diagram automorphism, the outer $\mathbb{Z}_{2}$---is shown to \emph{be} the de~Sitter$\leftrightarrow$Schwarzschild correspondence itself rather than a structure standing outside the discrete group, and it acts on the metric function by parity: $f(r)=(1-r^{2}/\alpha^{2})+(-2M/r)$ splits into a $R$-even piece, the invariant de~Sitter geometry, and a $R$-odd piece, the Schwarzschild mass the vantage carries and the swap reverses---the eigenspace form of the perspectival reading, and the shadow-reading partition of~\cite{JanzenShadowExistence} in closed form, with the projection an exact involution rather than a general perspective. The construction thereby carries three \emph{distinct} discrete operations, which must not be conflated: $\sigma$ (the Weyl, diagonal reflection---mass-invariant, Nariai-fixed, and no branch-point crossing at all), $R$ (the diagram, anti-diagonal reflection---the vantage-swap, de~Sitter-fixed, the $r=0$ crossing), and $\xi$ (the throat seam at $X=\alpha$); $\sigma$ and $R$ generate $D_{6}$, while $\xi$ is the analytic continuation whose invertibility secures the correspondence's exactness. We close with what remains open and what the present construction enables: the overcritical continuation, here identified as the real trace of that monodromy crossing the Nariai branch (within one de~Sitter geometry, between members); the dynamics implications of the sweep diagnostic in non-vacuum cases; and the question of whether the throat radius $\alpha$ is the correct intrinsic gravitational mass in the standard quasi-local and asymptotic senses---settled with the companion slicing paper: the standard definitions return the slicing-dependent $M$, so the gravitational mass is the perspectival $M$ and $\alpha$ the invariant curvature radius, a length rather than a mass. The relational content this paper establishes is the algebraic core that the companion cosmological completion~\cite{JanzenCRframework} reads as the structural identification of the horizon's null direction with the cosmic temporal direction of expansion. \emph{And the fixed point the involution selects is not only distinguished within the family of charts.} On the forced member it sits at $r=\alpha/\sqrt3=(M\alpha^{2})^{1/3}$, which is the radius at which the marginal congruence's areal acceleration changes sign and at which the slicing surface's intrinsic curvature is flat: \emph{the vantage at which the reassignment is uniquely available is the radius at which the member's own expansion history turns}. The coincidence is exact and is recorded without a claim that either fact derives from the other. \emph{One consequence of the Galois statement is drawn here for the first time.} That $\Delta$ is not a square is used in the product; resolved \emph{per root}, the same square root appears in the parallel transport of the residue pairing the horizon roots' surface gravities put on the root triple, and its individual signs---held to an even number by unimodularity---form a Klein four-group. That this is a genuine holonomy and not a branch convention is settled by computation: a loop about a branch point in the complex dial returns $\operatorname{diag}(1,-1,-1)$ with the signs on the colliding pair, unchanged as the loop shrinks, the loop being $\sigma^{2}$ in the deck group so that the roots return while the form does not. Of that identification the present paper supplies only the within-single-geometry component---that the Nariai member is the unique fixed point of $\sigma$, and the cosmological reassignment the unique morphism selecting it; the remaining component is cross-geometry, relating members of distinct throat radius, and is not established here.
+\end{abstract}
+
+\section{Introduction and ontological setting}\label{sec:intro}
+
+The Schwarzschild and de Sitter geometries appear, in the standard reading, as two distinct exact solutions to the Einstein field equations. They share a one-parameter family, the Schwarzschild--de Sitter family, but are read in the standard treatment as different geometries on different manifolds. The companion paper~\cite{JanzenSlicing} showed that this reading is the wrong reading. The SdS family is exhibited there as a single radial curve $r(l)$, with $dr/dl=\sqrt{|f(r)|}$ and $f(r)=1-2M/r-r^{2}/\alpha^{2}$, at fixed throat radius $\alpha=\sqrt{3/\Lambda}$, of which the Schwarzschild and de Sitter forms are not two limits but two \emph{readings} of one slicing, exchanged by an involution. The horizons of the family are the turning points of this curve. The curve is intrinsic to the underlying de Sitter manifold: moving the observer who charts the construction changes the image on the observer's celestial sphere but does not change the geometry. The SdS geometry is therefore rigid (no continuous moduli act on it), and the de Sitter and Schwarzschild forms are two descriptions of one slicing curve, related within a groupoid of admissible charting vantages whose single invariant is the geometry.
+
+That paper established the structure of the groupoid at the level of generators. The Rigidity proposition of~\cite{JanzenSlicing} shows the geometry carries no continuous modulus under change of charting vantage. Its discrete-generation proposition shows the morphisms acting within a single geometry are discretely generated by a unique involution (the root-exchange of the horizon cubic, equivalently the reflection of the sky angle $w$ about the value at which the cubic's three roots collide) together with the periodicity of the sky angle. What that paper did not develop, and what it explicitly named as open in its closing section, is the relational content of the generated structure: the relations the generators satisfy, the global organisation of the discrete morphisms, the within-one-geometry reassignments at fixed $\alpha$ (in particular the overcritical slicings beyond the Nariai bound, reached at fixed $\alpha$), and the action of vantages between distinct de~Sitter representations (different $\alpha$). It also left explicitly open whether the throat radius $\alpha=\sqrt{3/\Lambda}$ established there as the invariant of the construction is also the correct intrinsic gravitational mass in the standard quasi-local or asymptotic definitions---a question the present paper and the companion now settle (\S\ref{sec:open}): the standard definitions return the slicing-dependent $M$, so $\alpha$ is the invariant length and not the gravitational mass.
+
+The present paper takes the groupoid as established and develops the relational content within a single geometry. Four results structure the paper. First, we give the groupoid as a category, identify its generators in coordinate-independent form, and derive the relations they satisfy: the root-exchange involution $\sigma$ has order two and the sky-angle periodicity $\tau$ has order three, and the relation that organises them, $(\sigma\tau)^{2}=\mathrm{id}$, makes the generated group the dihedral group $D_{3}\cong S_{3}$---shown moreover \emph{complete} (Proposition~\ref{prop:completeness}), which closes the generation question the slicing paper left open. Second, we characterise the partial involution at the equatorial seam---the analytic continuation $\theta\mapsto\pi/2+i\psi$ that the slicing paper identified as joining the Riemannian piece of the slicing curve to the Lorentzian piece, with the metric signature flipping automatically because $d\theta=i\,d\psi$---as a vantage-change distinct from the within-single-geometry morphisms. The signature flip is a property of the continuation, not of the descriptions. Third, we read the Schwarzschild description as the canonical asymmetric realisation: a partial arc of the slicing curve swept, by an exterior vantage that cannot use the manifold's own axis of symmetry, about a selected off-axis point of the manifold---the critical point $r=0$. This forced off-axis pivot is the geometric origin of the horizon-versus-singularity asymmetry that the companion circle paper~\cite{JanzenCircle} identified algebraically as two metric singularities of identical analytic type. The asymmetric features that distinguish the Schwarzschild description from the de Sitter description are signatures of the forced pivot, not features of the underlying geometry---an attribution that is the perspectival reading's interpretive payoff, and which we mark as such rather than as a claim proven independently of that reading (Proposition~\ref{prop:sweep}).
+
+Fourth, two structural results follow from the discrete classification and are worth stating at the outset, since the corpus leans on both. The cosmological configuration is \emph{forced by the group structure}: the generic vantages fall into $\sigma$-pairs, while the Nariai member is the unique fixed point of $\sigma$, lying in a degenerate orbit of its own, so the reassignment promoting a null direction to the fundamental timelike congruence---forbidden by the two-cycle structure at every generic vantage---selects it uniquely (Proposition~\ref{prop:single}). The uniqueness of the cosmological configuration is therefore a structural fact about the groupoid, not a fact about dynamics or fine-tuning, and it converges with the independent empirical forcing of a cosmic time by the redshift-isotropy floor~\cite{JanzenModernParallax}. And the mass-reflection $R$---the diagram automorphism of $\mathrm{Aut}(A_{2})$---\emph{is} the de~Sitter$\leftrightarrow$Schwarzschild correspondence itself, acting on the metric function by parity, $f(r)=(1-r^{2}/\alpha^{2})+(-2M/r)$, whose $R$-even piece is the invariant de~Sitter geometry and whose $R$-odd piece is the Schwarzschild mass the vantage carries (Remark~\ref{rem:P-dS-Schw})\footnote{Corpus convention: $R$ is the orientation/mass-reflection parity---the $A_{2}$ diagram automorphism, the orientation-reversing element $R\in\mathrm{O}(5,1)\setminus\mathrm{SO}_{0}(5,1)$, acting on a cut spinor as $\gamma^{5}$ (Section~\ref{sec:autA2}). The corpus reserves ``$P$'' for the areal \emph{spatial} parity $r\mapsto-r$ (Clifford generator $\gamma^{1}\gamma^{2}\gamma^{3}$, anticommuting with $\gamma^{5}$), which does not appear in this paper; $T$ is the time reflection.}. The construction accordingly carries three \emph{distinct} discrete operations---$\sigma$ (Weyl, mass-invariant, Nariai-fixed, no branch-point crossing), $R$ (diagram, the vantage-swap, the $r=0$ crossing), and $\xi$ (the throat seam at $X=\alpha$)---which share a continuation mechanism but do not coincide as maps, and must not be conflated.
+
+The ontological setting carries forward from the slicing paper. At the level at which CR individuates, the fundamental entity is the ontological layer; the de Sitter manifold and its throat radius $\alpha$, which the present paper holds invariant under the groupoid, are the invariants of the \emph{representation} of that layer (the layered ontology is developed in the cosmological completion~\cite{JanzenCRframework} and formalized as CR's necessary augmentation of general relativity in the foundation~\cite{JanzenModernParallax}). Within that representation the fundamental object is the de Sitter manifold, smooth and with no privileged points. A charting vantage is a fixed projection axis together with the chart it induces. Features standardly attributed to a Schwarzschild spacetime---the horizon, the curvature singularity at $r=0$---are properties of the perspectival construction, of where the chart degenerates, and not of the fundamental manifold. This is not offered as one interpretation among others; it is the reading in which the paper is written, and the constructions below proceed accordingly. The empirical foundation is already established, and it is physics-first: the redshift-isotropy floor forces the cosmic foliation of the existent universe, and with it CR's necessary structural augmentation of general relativity~\cite{JanzenModernParallax}---the observed world (collapsing matter throughout, a cosmic foliation of the existent three-dimensional universe) forcing the augmentation \emph{before} any algebraic structure is laid over it. The present paper supplies the algebraic content of that already-grounded augmentation in the specific geometric case the slicing paper opened: the groupoid is the algebra of an augmentation the preceding empirical foundation has established, not a structure awaiting one.
+
+We work in geometrised units. Where convenient we set $\alpha=1$ as a gauge; this is a choice of units, and we are explicit about it. The mass parameter $M$ is, throughout, related to the slicing parameter by $2M=r_{0}-r_{0}^{3}$ in this gauge; the throat radius $\alpha$ is invariant.
+
+\section{The groupoid as a category}\label{sec:category}
+
+We begin by specifying the groupoid as a category in the standard sense. The objects are charting vantages on the de Sitter manifold; the morphisms are vantage-changes that preserve the SdS geometry; the invariant of the groupoid is the geometry itself.
+
+\subsection{Objects: charting vantages}\label{sec:objects}
+
+A \emph{charting vantage} is a fixed point on the de Sitter hyperboloid together with the gnomonic projection induced by that point onto the orthogonal hyperplane. The slicing paper showed (Section~3.2 of~\cite{JanzenSlicing}) that obtaining a planar chart of the slicing curve forces the gnomonic projection: the hole's image lies on the observer's celestial sphere, and the planar chart that maps lines through the projection point to lines in the plane is forced to be the gnomonic one (the orthographic projection being excluded as it does not satisfy the line-mapping requirement). The vantage is therefore specified by the projection direction in the embedding space.
+
+We collect the admissible vantages into a set $\mathcal{V}$. Each $v\in\mathcal{V}$ determines a chart: a labelling of the slicing curve by a sky angle $w$ on the projection plane, with $w$ a genuine geometric angle (the angle the slicing curve subtends on the observer's celestial sphere). The same intrinsic curve is therefore charted by different elements of $\mathcal{V}$ as different sky-angle functions $w_{v}: \text{slicing curve}\to\mathbb{R}/2\pi\mathbb{Z}$.
+
+\begin{definition}[Charting vantage]\label{def:vantage}
+A charting vantage $v\in\mathcal{V}$ is a fixed point on the de Sitter hyperboloid together with the gnomonic projection it induces. Two vantages $v$ and $v'$ are equivalent if they differ by a rotation of the de Sitter manifold that fixes the slicing curve setwise.
+\end{definition}
+
+\subsection{Morphisms: vantage-changes}\label{sec:morphisms}
+
+A \emph{vantage-change} is a map $v\to v'$ that takes one chart of the slicing curve to another while leaving the underlying de~Sitter manifold invariant. The sky angle $w$ throughout is the distinguished observer's---the labelling for which the horizon relation takes the clean triple-angle form $2M=(2/3\sqrt{3})\sin 3w$ (the horizon-relation (sky-angle) proposition of~\cite{JanzenSlicing}; every other charting observer reads the same curve with a residual harmonic). In that labelling a vantage-change is a transformation $w\to w'$ under which the horizon relation keeps its triple-angle form.
+
+There are two kinds of vantage-change. The first kind acts within a single geometry: it permutes the sky-angle labelling while leaving the value of $2M$ fixed. These are the morphisms the slicing paper proved discretely generated (the Discrete-generation proposition of~\cite{JanzenSlicing}). The second kind moves between geometries: it changes the value of $2M$, equivalently the offset $r_{0}$, and so charts a different member of the SdS family. The slicing paper carries the first kind and hands the classification of the discrete group here~\cite{JanzenSlicing}.
+
+Both kinds are settled below. The within-geometry group --- the first kind --- is $D_{3}\cong S_{3}$ (Proposition~\ref{prop:completeness}). The second kind is the reflection $R:2M\mapsto-2M$, which adjoined to the Weyl $S_{3}$ gives the full discrete symmetry of the solution space, $\mathrm{Aut}(A_{2})\cong D_{6}$ (Proposition~\ref{prop:autA2}); and between distinct $\alpha$ the action is a continuous homothety leaving that structure invariant (Section~\ref{sec:alpha-action}), so no further discrete morphism remains to classify.
+
+\begin{definition}[Vantage-change within a single geometry]\label{def:morphism}
+A vantage-change within a single geometry is a continuous transformation $g:\mathcal{V}\to\mathcal{V}$ such that for every $v\in\mathcal{V}$,
+\[
+\sin 3w_{g(v)} = \sin 3w_{v}.
+\]
+\end{definition}
+
+The condition states that the value of $2M$ read off by the chart at vantage $g(v)$ agrees with the value read off at vantage $v$, since $2M=(2/3\sqrt{3})\sin 3w$ in either chart. Vantage-changes within a single geometry therefore preserve the horizon relation as an identity of the chart on the same intrinsic curve. The continuity requirement is not an extra hypothesis but a property of vantage-changes as defined: a vantage is a point on the de Sitter hyperboloid with its induced gnomonic projection (Definition~\ref{def:vantage}), and a vantage-change is the relabelling of the sky angle induced by moving that point, a smooth reparametrisation of the same intrinsic curve. We record continuity explicitly because it is load-bearing in the completeness proof below: without it the condition $\sin 3w_{g(v)}=\sin 3w_{v}$, which is satisfied by every permutation of a sky-angle orbit, would not single out the dihedral action.
+
+A point here calls for care, since the objects $\mathcal{V}$ form a continuum while the within-single-geometry morphisms characterised below are discrete. The two are reconciled by the rigidity of the geometry under change of charting vantage (the Rigidity and Discrete-generation propositions of~\cite{JanzenSlicing}): a continuous change of charting vantage either fails to act on the slicing curve---contributing only the identity to $\mathcal{G}$---or re-images it onto an off-distinguished observer, whose reading carries a residual harmonic and so is not a transformation of the distinguished sky angle $w$ preserving the clean triple-angle form (Definition~\ref{def:morphism}), hence not a morphism of $\mathcal{G}$; the vantage-changes that act \emph{non-trivially} within a single geometry are therefore discrete. This is why the within-geometry morphism group is discrete though $\mathcal{V}$ is a continuum, and it is what the completeness proof (Proposition~\ref{prop:completeness}) makes precise: those non-trivial morphisms are exactly $D_{3}$.
+
+\subsection{The groupoid structure}\label{sec:groupoid-structure}
+
+The objects $\mathcal{V}$ and morphisms $\{g\}$ together form a category. Identity morphisms exist (the identity vantage-change at each $v$); composition is associative (vantage-changes compose by composing the maps $\mathcal{V}\to\mathcal{V}$); and every morphism has an inverse (a vantage-change can always be reversed by changing vantage back the other way). The category is therefore a groupoid.
+
+\begin{proposition}[The groupoid]\label{prop:groupoid}
+The objects $\mathcal{V}$ and morphisms within a single geometry, together with the identity and composition, form a groupoid $\mathcal{G}$. The single invariant of $\mathcal{G}$ is the SdS geometry.
+\end{proposition}
+
+\begin{proof}
+The category axioms are immediate from the definitions of objects and morphisms (Definitions~\ref{def:vantage} and~\ref{def:morphism}). Every morphism is invertible because a vantage-change can be reversed. That the geometry is the single invariant follows from the Rigidity proposition of~\cite{JanzenSlicing}: the geometry carries no continuous modulus under change of charting vantage, and the discrete vantage-changes that do act non-trivially on the description leave the horizon relation, and hence the geometry, invariant.
+\end{proof}
+
+The groupoid is the structural object the present paper analyses. The two generators of its morphisms within a single geometry are identified in the next section.
+
+\section{The two generators and their relations}\label{sec:generators}
+
+The slicing paper identified the two generators of the within-single-geometry morphisms (the Discrete-generation proposition of~\cite{JanzenSlicing}): the involution $\sigma$ exchanging roots of the horizon cubic, and the periodicity of the sky angle $w$. We state them here in coordinate-independent form and derive the relations they satisfy.
+
+\subsection{The root-exchange involution}\label{sec:involution}
+
+The horizon cubic of the SdS family is $r^{3}-\alpha^{2}r+2M\alpha^{2}=0$, which in the gauge $\alpha=1$ becomes $r^{3}-r+2M=0$. When the slicing parameter is taken as one of its own roots, $r_{0}$, the cubic factors as $(r-r_{0})(r^{2}+rr_{0}+r_{0}^{2}-1)=0$, with the quadratic factor carrying the other two roots. The root-exchange involution proposition of~\cite{JanzenSlicing} shows that the parameter map exchanging which root is designated $r_{0}$,
+\begin{equation}\label{eq:f}
+\sigma(r_{0})=\tfrac{1}{2}\left(-r_{0}+\sqrt{4-3r_{0}^{2}}\right),
+\end{equation}
+is an involution: $\sigma(\sigma(r_{0}))=r_{0}$. Its fixed point is at $r_{0}=1/\sqrt{3}$, the Nariai configuration at which the two positive horizons of the cubic coincide. The involution's endpoints are the de Sitter configuration $r_{0}=0$ and the throat-tangent configuration $r_{0}=1$, which it exchanges (the root-exchange involution proposition of~\cite{JanzenSlicing}). Separately, at $r_{0}=0$ the single $w=0$ curve carries both the de Sitter and the Schwarzschild readings (the $r_{0}=0$ proposition and the two-readings discussion of~\cite{JanzenSlicing}): that de Sitter$\leftrightarrow$Schwarzschild correspondence is the vantage-swap between two readings of one curve at fixed $\alpha$, a between-description move distinct from the root-exchange $\sigma$ itself.
+
+In the sky angle $w$, with $r_{0}=(2/\sqrt{3})\sin w$, the involution acts as the reflection $w\leftrightarrow \pi/3 - w$ (the root-exchange involution proposition of~\cite{JanzenSlicing}). This is its coordinate-independent statement: the involution is the reflection of the sky angle about $w=\pi/6$, the midpoint of one fundamental domain. We denote this generator $\sigma$.
+
+\begin{proposition}[The involution as generator]\label{prop:sigma}
+The root-exchange involution $\sigma$ is the reflection of the sky angle $w$ about $w=\pi/6$. It is an involution of order two,
+\[
+\sigma^{2}=\text{id},
+\]
+and its action on the horizon cubic exchanges the two non-fixed positive roots.
+\end{proposition}
+
+\begin{proof}
+The reflection $w\to\pi/3-w$ satisfies $w\to\pi/3-w\to\pi/3-(\pi/3-w)=w$, so $\sigma^{2}=\text{id}$. The root-exchange property is the content of the root-exchange involution proposition of~\cite{JanzenSlicing}.
+\end{proof}
+
+\subsection{The sky-angle periodicity}\label{sec:periodicity}
+
+The horizon relation $2M=(2/3\sqrt{3})\sin 3w$ has period $2\pi/3$ in $w$, since $\sin 3w$ has period $2\pi/3$ in $w$. The natural fundamental domain for $w$ modulo the periodicity is $[0,2\pi/3)$, and the sky-angle periodicity acts as
+\begin{equation}\label{eq:periodicity}
+\tau: w\mapsto w + \tfrac{2\pi}{3}.
+\end{equation}
+Composed twice it gives $w\mapsto w+4\pi/3$; composed three times it gives $w\mapsto w+2\pi$, which is the trivial periodicity of any angle. The sky-angle periodicity is therefore of order three on the fundamental domain $[0,2\pi/3)$ if we identify the endpoints, with $\tau^{3}=\text{id}$ as the appropriate relation.
+
+We denote this generator $\tau$ and note its order.
+
+\begin{proposition}[The sky-angle periodicity as generator]\label{prop:tau}
+The sky-angle periodicity $\tau$ acts as $w\mapsto w+2\pi/3$. On the fundamental domain $[0,2\pi/3)$ with endpoints identified, it has order three:
+\[
+\tau^{3}=\text{id}.
+\]
+\end{proposition}
+
+\begin{proof}
+Three successive translations by $2\pi/3$ give a total translation of $2\pi$, which is the identity on the circle.
+\end{proof}
+
+\subsection{The relation between the two generators}\label{sec:relations}
+
+With $\sigma$ of order two and $\tau$ of order three, the group generated by $\sigma$ and $\tau$ acts on the circle $w\in\mathbb{R}/2\pi\mathbb{Z}$. The relation between them is determined by computing the composition $\sigma\tau$ and identifying its order.
+
+The composition $\sigma\tau$ first translates $w$ by $2\pi/3$ and then reflects about $\pi/6$:
+\begin{equation}
+(\sigma\tau)(w) = \sigma(w+\tfrac{2\pi}{3}) = \tfrac{\pi}{3}-\left(w+\tfrac{2\pi}{3}\right) = -w - \tfrac{\pi}{3}.
+\end{equation}
+Composed with itself this gives
+\begin{equation}
+(\sigma\tau)^{2}(w) = -(-w-\tfrac{\pi}{3})-\tfrac{\pi}{3} = w,
+\end{equation}
+so $\sigma\tau$ is also of order two. The group generated by $\sigma$ and $\tau$ with the relations $\sigma^{2}=\tau^{3}=(\sigma\tau)^{2}=\text{id}$ is the dihedral group of order six, $D_{3}\cong S_{3}$.
+
+\begin{proposition}[The relations]\label{prop:relations}
+The two generators $\sigma$ (involution) and $\tau$ (sky-angle periodicity)\rcpt{P05_dihedral_generators} of the within-single-geometry morphisms of $\mathcal{G}$ satisfy the relations
+\begin{equation}\label{eq:dihedral}
+\sigma^{2}=\text{id},\quad \tau^{3}=\text{id},\quad (\sigma\tau)^{2}=\text{id}.
+\end{equation}
+The group they generate is the dihedral group $D_{3}\cong S_{3}$ of order six.
+\end{proposition}
+
+\begin{proof}
+The orders of $\sigma$ and $\tau$ are Propositions~\ref{prop:sigma} and~\ref{prop:tau}. The order of $\sigma\tau$ is computed directly above. The presentation $\langle\sigma,\tau\mid\sigma^{2}=\tau^{3}=(\sigma\tau)^{2}=\text{id}\rangle$ is the standard presentation of $D_{3}$.
+\end{proof}
+
+\begin{proposition}[Completeness of the generators]\label{prop:completeness}
+Every within-single-geometry morphism lies in $\langle\sigma,\tau\rangle$. The within-single-geometry morphism group is therefore exactly $D_{3}\cong S_{3}$.
+\end{proposition}
+
+\begin{remark}[The group has a projective invariant, and it is the equianharmonic cross-ratio]\label{rem:equianharmonic}
+The Weyl $S_{3}$ permutes the three horizon roots, and on the observer's sky angle those roots
+are the three preimages of $3w$ under the sine---$w$, $w+120^{\circ}$, $w+240^{\circ}$, the
+$120^{\circ}$ spacing the triple-angle identity forces~\cite{JanzenSlicing}. Read projectively,
+that triple carries an invariant the group cannot move: the cross-ratio of the three with the
+centre is
+\[
+\lambda=\tfrac12+\tfrac{\sqrt3}{2}\,i=e^{i\pi/3},\qquad \lambda^{2}-\lambda+1=0,
+\]
+independently of $w$---the \emph{equianharmonic} value~\cite{Coxeter1987,SempleKneebone1952}, the unique cross-ratio at which the
+six-element orbit $\{\lambda,1/\lambda,1-\lambda,1/(1-\lambda),\lambda/(\lambda-1),(\lambda-1)/\lambda\}$
+generated by permuting the four points collapses, here to the conjugate pair
+$\{e^{\pm i\pi/3}\}$. So no relabelling of the roots by the group moves it\rcpt{Q4_equianharmonic_vantages}.
+Classically the equianharmonic case is the one of vanishing $j$-invariant, whose curve carries
+complex multiplication by $\omega=e^{2\pi i/3}$. That curve is the double cover of the line branched
+at the four points, and it is not the branched cover of \S\ref{sec:deck}: that one is three-sheeted, over the
+$2M$-plane, branched at the two Nariai values, with deck group $S_{3}$
+(Proposition~\ref{prop:deck})---a different degree over a different base with a different branch set, so a
+$j$-invariant computed from the four points says nothing about it. What the coincidence of
+order-three structures amounts to is therefore left as noted rather than asserted: the cross-ratio
+is equianharmonic, the deck action is $\mathbb{Z}_3$, and the two are not here shown to be one
+thing.
+\end{remark}
+
+\begin{remark}
+The weight is worth marking. Three points $120^{\circ}$ apart, taken with their centre, are
+equianharmonic automatically; the content is not the value but that the vantages \emph{are} so
+spaced, which is forced elsewhere and used here. The remark therefore names a consequence of a
+forced fact rather than adding one---but the name is not idle, since it is what identifies the
+group's invariant as a projective one and ties the deck action's order three to the classical
+$j=0$ case.
+\end{remark}
+
+\begin{proof}
+By Definition~\ref{def:morphism} a within-single-geometry morphism $g$ acts on the sky angle as a transformation $T:w\mapsto w'$ satisfying $\sin 3T(w)=\sin 3w$ for every $w$. Since $\sin a=\sin b$ holds for all the relevant values exactly when $a\equiv b$ or $a\equiv \pi-b \pmod{2\pi}$, the condition $\sin 3T(w)=\sin 3w$ admits at each $w$ either branch $3T\equiv 3w$ or $3T\equiv\pi-3w \pmod{2\pi}$. Continuity alone does not select between them---the two branches meet at $w=\pi/6 \pmod{\pi/3}$, and a continuous map could switch branches there. What excludes a switch is invertibility: every morphism of $\mathcal{G}$ is a bijection (Proposition~\ref{prop:groupoid}), and a branch-switch at a crossing folds the domain (the two branches have slopes $+1$ and $-1$, so the switched map is non-injective). A continuous \emph{bijection} satisfying the condition therefore stays on one branch uniformly:
+\[
+3T(w)\equiv 3w \pmod{2\pi}\qquad\text{or}\qquad 3T(w)\equiv \pi-3w \pmod{2\pi}.
+\]
+The first branch gives the three rotations $T(w)=w+2\pi k/3$ ($k=0,1,2$), which are the powers of $\tau:w\mapsto w+2\pi/3$; the second gives the three reflections $T(w)=\pi/3-w+2\pi k/3$, which are $\sigma:w\mapsto\pi/3-w$ and its $\tau$-translates. These six maps are exactly $\langle\sigma,\tau\rangle=D_{3}$. Hence every within-single-geometry morphism lies in $\langle\sigma,\tau\rangle$; since $\sigma$ and $\tau$ are themselves such morphisms, the group is exactly $D_{3}\cong S_{3}$. This closes the generation question that the slicing paper~\cite{JanzenSlicing} left open: the discrete generators identified there are not merely forced and present but complete.
+\end{proof}
+
+By Proposition~\ref{prop:completeness} the within-single-geometry morphisms of $\mathcal{G}$ are exactly the dihedral group $D_{3}$. The six elements are the identity, the two non-trivial powers of $\tau$, the involution $\sigma$, and the two products $\sigma\tau$ and $\sigma\tau^{2}$. They act on the sky-angle circle by permuting six labelled positions, corresponding to the six distinct sky-angle labels a single intrinsic curve can carry under the admissible vantage-changes within one geometry.
+
+\begin{remark}\label{rem:S3}
+The identification of the within-single-geometry morphisms with $D_{3}\cong S_{3}$ is structurally clean: the cubic has three roots, and the symmetric group $S_{3}$ is the symmetry group of the unordered triple. The chart-symmetric reading is the one that does not privilege any one root as ``the'' horizon; the asymmetric Schwarzschild reading (Section~\ref{sec:schwarzschild}) is the one in which a specific root is selected as the mass-horizon and the others demoted to non-mass features.
+\end{remark}
+
+\subsection{Conjugacy in the throat angle}\label{sec:conjugacy}
+
+The slicing paper showed (the Conjugacy proposition of~\cite{JanzenSlicing}) that the cubic involution $\sigma$ on $w$ and the chart involution $g_{1}$ on the throat angle $u$ are conjugate by an explicit closed-form map $\chi$: that is, the same involution appears in two coordinate systems related by $\sin u = (2/\sqrt{3})\sin w$.
+
+Within the present development, this conjugacy is the statement that the relations~\eqref{eq:dihedral} hold in either coordinate system. The throat-angle coordinate carries the same $D_{3}$ structure, with $\sigma$ realised as the reflection of $u$ about its midpoint in one fundamental domain and $\tau$ realised as the periodicity of $u$ on the throat circle. The conjugacy is the change-of-coordinates within $\mathcal{G}$; the group structure is invariant.
+
+\section{Rigidity as dimensional collapse}\label{sec:rigidity}
+
+The slicing paper proved (the Rigidity proposition of~\cite{JanzenSlicing}) that the SdS geometry carries no continuous moduli under change of charting vantage. The geometric reason was identified in Section~7 of that paper: the throat radius $\alpha=\sqrt{3/\Lambda}$ is invariant under the reading-swap involution, across all slicings, and under the projection; only the mass parameter $M$ varies with the slicing, via the relation $2M=\alpha\bigl((r_{0}/\alpha)-(r_{0}/\alpha)^{3}\bigr)$. In the gauge $\alpha=1$, the slicing parameter $r_{0}$ moves continuously over its admissible range. Two distinct invariances are in play, and the dimensional collapse rests on the second. First, at fixed $r_{0}$, a change of charting vantage leaves the whole SdS geometry---$f$, $M$, and all---invariant: this is the Rigidity proposition, and it is what makes the within-single-geometry groupoid $\mathcal{G}$ well defined. Second, as $r_{0}$ varies, $M$ varies with it (so the SdS member changes), but the underlying de Sitter manifold, fixed by the throat radius $\alpha$, does not: this is the invariance of Section~7 of~\cite{JanzenSlicing}. It is this second invariance that the dimensional collapse formalises---the continuous family of slicings collapses onto the single de Sitter manifold $\alpha$ they all chart, not onto a single SdS member.
+
+The present section gives the algebraic content of this rigidity. We call the mechanism \emph{dimensional collapse}: a continuous parameter space of slicings collapses onto a single geometric invariant---the de Sitter manifold $\alpha$---with the discrete morphisms of $\mathcal{G}$ permuting the labels of a single member and the continuous variation of $r_{0}$ producing no variation in the underlying manifold $\alpha$ (though it does move between members $M$).
+
+\subsection{The continuous parameter as a chart label}\label{sec:label}
+
+The slicing parameter $r_{0}$ continuously parametrises the vantages: choosing $r_{0}$ chooses the point on the slicing curve at which the chart is centred, and the chart unfolds outward from $r_{0}$. As $r_{0}$ varies continuously over the admissible range, the chart's centre moves continuously along the slicing curve, and the labels the chart attaches to points on the curve change continuously with $r_{0}$.
+
+The geometry of the slicing curve does not change with $r_{0}$. Different choices of $r_{0}$ label the same intrinsic curve differently; the curve itself is fixed. The relation $2M=r_{0}-r_{0}^{3}$ (in the gauge $\alpha=1$) reads $M$ off the chart as a function of $r_{0}$, but $M$ thus computed is the throat radius modulated by the chart's slicing profile, not a property of the geometry independent of the slicing.
+
+\subsection{The dimensional-collapse statement}\label{sec:dim-collapse}
+
+\begin{proposition}[Dimensional collapse]\label{prop:dim-collapse}
+Let $\mathcal{V}_{\alpha}$ be the parameter space of slicings of the de Sitter manifold of fixed throat radius $\alpha$. Then $\mathcal{V}_{\alpha}$ is a continuous manifold (parametrised by the slicing parameter $r_{0}\in(-2/\sqrt{3},2/\sqrt{3})$ in the gauge $\alpha=1$), but its image under the map ``slicing $\mapsto$ underlying manifold'' is a single point: the de Sitter manifold $\alpha$.
+\end{proposition}
+
+\begin{proof}
+The parameter space $\mathcal{V}_{\alpha}$ is continuous by inspection: $r_{0}$ moves continuously. The map ``slicing $\mapsto$ underlying manifold'' sends every $r_{0}$ to the same de Sitter manifold, since the throat radius $\alpha$ is invariant across all slicings (Section~7 of~\cite{JanzenSlicing}) while only $M$ varies with $r_{0}$. The image is therefore a single point. (The Rigidity proposition is the distinct, fixed-$r_{0}$ statement that a change of charting vantage leaves the whole SdS geometry invariant; it is what makes $\mathcal{G}$ well defined, not what collapses the $r_{0}$-family.)
+\end{proof}
+
+The proposition formalises the $\alpha$-invariance of Section~7 in algebraic terms. The continuous parameter $r_{0}$ does not vary the underlying de Sitter manifold; it varies the slicing of it (and with it $M$), selecting different SdS members charted on the one manifold. This is distinct from the action of $\mathcal{G}$: the discrete morphisms of $\mathcal{G}$ (the dihedral group $D_{3}$) act at fixed $M$, permuting the six sky-angle labels of one member while leaving that member's geometry fixed. The continuous variation of $r_{0}$ over a fundamental domain of $D_{3}$ sweeps once through the members of the family, all charted on the one de Sitter manifold $\alpha$; the discrete morphisms relate the six such fundamental domains of the sky-angle circle to one another, matching $M$ member-by-member across them.
+
+\subsection{The throat radius as the invariant}\label{sec:alpha-invariant}
+
+The geometric invariant of $\mathcal{V}_{\alpha}$ is the throat radius $\alpha$. The slicing paper established (Section~7 of~\cite{JanzenSlicing}) that $\alpha$ is invariant under the reading-swap involution, across all slicings, and under the projection of the celestial-sphere chart; $M$ in contrast is the throat radius modulated by the slicing profile, bounded by $\alpha$ and vanishing at $r_{0}=0$. In the language of the present paper: $\alpha$ is the invariant of the whole slicing family $\mathcal{V}_{\alpha}$, fixed across every member; $M$ is the slicing-dependent quantity that varies between members as $r_{0}$ varies. The morphisms of $\mathcal{G}$ do not move $M$---they act at fixed $M$, permuting the sky-angle labels of a single member (Section~\ref{sec:label}).
+
+\begin{remark}\label{rem:mass-question}
+Whether $\alpha$, established here as the invariant of the construction, is also the correct intrinsic gravitational mass in the standard quasi-local or asymptotic definitions (Brown--York, Misner--Sharp, ADM, Bondi) is a question the present paper sharpens and the companion slicing paper now settles. The present paper's contribution is to show that within the groupoid structure, $\alpha$ is the unique chart-invariant quantity available, so any candidate for a \emph{fully} invariant gravitational mass must be built from $\alpha$, not from the slicing-dependent $M$. The slicing paper's mass section then evaluates the standard definitions directly (\S~mass of~\cite{JanzenSlicing}): the Misner--Sharp ($M+r^{3}/2\alpha^{2}$) and Komar ($M-r^{3}/\alpha^{2}$) quasi-local masses, and the asymptotically-de~Sitter mass that replaces the inapplicable ADM/Bondi---the Abbott--Deser charge, the one member of a contested class that both applies to SdS and returns the parameter---all return the parameter $M$---the slicing-dependent quantity. The two results agree and complete each other: the standard gravitational mass is precisely the non-invariant, perspectival $M$; $\alpha$ is the invariant curvature \emph{radius}, a length rather than a mass; and the lone member whose mass is an $\alpha$-built invariant is the physical Nariai member, $M=\alpha/(3\sqrt3)$. So $\alpha$ is not the gravitational mass---the gravitational mass is the projection the construction identifies---which sharpens the perspectival reading rather than weakening it.
+\end{remark}
+
+\section{Single-reassignment uniqueness}\label{sec:single-reassignment}
+
+The cosmological completion paper~\cite{JanzenCRframework} established that the cosmology of the framework is the Nariai configuration of the SdS family, with the relation $\Lambda G^{2}M^{2}/c^{4}=1/9$ holding as an equality (not as an inequality saturating some bound). The selection of the Nariai configuration is forced by a structural requirement: the cosmological case is the unique non-pivoting member of the SdS family, the one whose comoving fundamental congruence runs along a null generator of the de Sitter embedding without pivoting into a horizon. Only the self-dual null direction at which the two positive horizons of the horizon cubic merge gives a comoving curve with no pivot, and only the Nariai configuration is fixed at that direction.
+
+The present section reads this selection through the groupoid structure. Acting on the slicing family $\mathcal{V}_{\alpha}$, the involution $\sigma$ ($w\mapsto\pi/3-w$) preserves each member's mass $2M$ and so acts within each member; its one fixed point, $w=\pi/6$, lands in the Nariai member. The cosmological case is therefore the unique member at which $\sigma$ acts as the identity: in every other member $\sigma$ exchanges the member's two vantages, but the Nariai member's single vantage is its own partner.
+
+\subsection{Nariai as the fixed point of the involution}\label{sec:nariai-fixed}
+
+The involution $\sigma$ is the reflection of the sky angle $w$ about $w=\pi/6$ (Proposition~\ref{prop:sigma}). The fixed point of this reflection is at $w=\pi/6$, where the involution leaves $w$ unchanged. At $w=\pi/6$, the slicing parameter is $r_{0}=(2/\sqrt{3})\sin(\pi/6)=1/\sqrt{3}$, which is the Nariai value. The mass parameter at Nariai is $2M=(2/3\sqrt{3})\sin(3\cdot\pi/6)=(2/3\sqrt{3})\sin(\pi/2)=2/(3\sqrt{3})$, giving the Nariai relation $2M=2/(3\sqrt{3})$ in the gauge $\alpha=1$, equivalently $\Lambda G^{2}M^{2}/c^{4}=1/9$ when units are restored.
+
+\begin{proposition}[Nariai as fixed point]\label{prop:nariai-fixed}
+The Nariai configuration $r_{0}=1/\sqrt{3}$ is the unique fixed point of the involution $\sigma$ acting on the sky-angle circle. It is the unique vantage at which the two non-fixed roots of the horizon cubic collide, making the involution trivial on that vantage.
+\end{proposition}
+
+\noindent\emph{The fixed point carries a dynamical coincidence worth recording, since nothing in this paper's
+construction anticipates it.} The companion slicing paper identifies the Hubble--Eddington radius
+$r_{\mathrm{HE}}=(M\alpha^{2})^{1/3}$---the boundary between a structure's local gravitational hold and the
+cosmic expansion, and, for the marginal congruence, the exact locus at which
+$\dd^{2}r/\dd\tilde\tau^{2}=-f'/2$ changes sign~\cite{JanzenSlicing}. On the forced member
+$M=\alpha/3^{3/2}$, so $r_{\mathrm{HE}}=\alpha/\sqrt3$: \emph{the Nariai radius}. Hence
+\begin{quote}
+\emph{the unique fixed point of the vantage involution $\sigma$ is exactly the radius at which the areal
+acceleration changes sign.}
+\end{quote}
+\emph{The two statements are of different kinds and neither entails the other here.} This paper's is a fact
+about the groupoid: the vantage at which the two non-fixed roots collide and $\sigma$ acts trivially. The
+other is a fact about a second derivative on a curve, computed from $f'$ alone and holding generally in the
+mass. They meet only on the forced member, and they meet exactly. \emph{We record the coincidence without
+claiming a derivation of either from the other}; what it does show is that the vantage the reassignment selects
+is not merely distinguished within the family of charts but is the locus at which the member's own expansion
+history turns.
+
+\begin{proof}
+The reflection $w\to\pi/3-w$ has the unique fixed point $w=\pi/6$, since $w=\pi/3-w$ implies $w=\pi/6$. The corresponding slicing parameter is $r_{0}=(2/\sqrt{3})\sin(\pi/6)=1/\sqrt{3}$. Evaluating the involution formula~\eqref{eq:f} at this value gives
+\[
+\sigma(1/\sqrt{3}) = \tfrac{1}{2}\bigl(-1/\sqrt{3} + \sqrt{4-3\cdot 1/3}\bigr) = \tfrac{1}{2}\bigl(-1/\sqrt{3} + \sqrt{3}\bigr) = \tfrac{1}{2}\cdot\frac{2}{\sqrt{3}} = \frac{1}{\sqrt{3}},
+\]
+so $\sigma$ maps $r_{0}=1/\sqrt{3}$ to itself. The fixed-point property is thereby verified algebraically. Geometrically, the corresponding cubic factorisation $(r-1/\sqrt{3})(r^{2}+r/\sqrt{3}-2/3)=0$ has the quadratic factor's roots given by $r=(-1/\sqrt{3}\pm\sqrt{3})/2\in\{1/\sqrt{3},\,-2/\sqrt{3}\}$. The two non-negative roots of the cubic therefore coincide at $1/\sqrt{3}$, which is the Nariai degeneracy: the two positive horizons of the SdS family merge.
+\end{proof}
+
+\noindent\emph{The fixed point has a physical consequence on the cosmogenetic contour, and it is worth recording
+here because it is this proposition doing the work.} The companion framework stratifies that contour by causal
+character---the sign of $f$ deciding whether $r$ is timelike or spacelike, the sign of $1-f$ whether the
+marginal congruence's radial rate is real or imaginary---and finds five spans carrying only four distinct
+characters~\cite{JanzenCRframework}. The exception is the front seam: on both sides of it $r$ is timelike and
+the rate real, so \emph{the seam is crossed at unit speed without dividing two causal regions}, while the back
+seam, the turnaround and the branch point each carry a genuine change. \emph{That asymmetry between the two seam
+passes is this proposition.} They are one substrate point met a lap apart, but the vantage at which they are met
+is the fixed point of $\sigma$, where the involution is trivial; a fixed point induces the identity rather than
+a passage between distinct objects, and the contour records that by passing through without a change of
+character. The algebraic degeneracy proved here---two roots colliding, the involution acting trivially---is thus
+the same fact as the geometric one there, and as the vanishing of the surface gravity and of the photon orbit's
+Lyapunov exponent at that member. \emph{And the order in which the two were reached is worth recording, since it is the kind of thing a corpus can only notice about itself.} This paper stands before the framework in the programme's spine and reaches its structure algebraically---from charting vantages, a horizon cubic, and the classification of the vantage-changes---with no cosmology in evidence and no claim about what the configurations are. The framework then establishes the physics independently, and the two land on the same object: the fixed point proved here is the seam the contour crosses without a change of causal character there. \emph{Neither result was engineered to meet the other}, which is what makes the meeting worth reporting rather than merely noting.
+
+\subsection{Single-reassignment uniqueness in groupoid terms}\label{sec:single-groupoid}
+
+The cosmological reassignment of de Sitter space (the CR causal reassignment of~\cite{JanzenCRframework}) promotes a null direction at the horizon to the fundamental timelike congruence. Within the groupoid $\mathcal{G}$, this reassignment is structurally constrained: only the Nariai vantage admits a comoving curve along a null generator without pivoting into a horizon. Every other vantage in $\mathcal{V}_{\alpha}$ produces a fundamental congruence that crosses the embedding's symmetry structure transversally, and that transverse crossing manufactures the horizon-like features of the corresponding black-hole reading.
+
+The single-reassignment uniqueness is therefore the statement that the Nariai vantage is the unique vantage at which the reassignment produces a cosmology rather than a localised black hole. In groupoid terms: the Nariai vantage is the unique fixed point of $\sigma$, and the reassignment that selects a null generator without pivoting is the reassignment that selects the fixed-point vantage.
+
+\begin{proposition}[Single-reassignment uniqueness]\label{prop:single}
+Across the slicing family $\mathcal{V}_{\alpha}$, the cosmological reassignment that promotes a null direction to the fundamental timelike congruence is uniquely the reassignment that selects the Nariai member---the unique fixed point of $\sigma$---as the comoving observer. The mass parameter at Nariai is then fixed by the cosmological constant alone, $2M=\alpha\cdot 2/(3\sqrt{3})$, equivalently $\Lambda G^{2}M^{2}/c^{4}=1/9$.
+\end{proposition}
+
+\noindent\emph{A remark on what this proposition supplies to the cosmogenesis account, since it is one of two
+requirements there and the only one with a uniqueness theorem attached.} That account needs two things at the
+crossing, and they are independent: a \emph{degenerating Killing field} whose freed null direction can be
+re-founded as a clock, and a \emph{branch point} at which the collapse leg becomes the expansion
+leg~\cite{JanzenDynamics, JanzenCRframework}. The construction supplies them at different loci---the forced
+Nariai member carries the degeneracy and is not a branch point, while $r=0$ is the branch point and carries no
+Killing degeneracy. \emph{This proposition settles the first, and settles it as uniqueness rather than
+availability}: not merely that Nariai admits the reassignment, but that no other vantage does. So a concrete
+matter model has no freedom in where the reassignment acts---the vantage is forced---and what remains to be
+checked of such a model is only whether its history reaches the branch point. \emph{The transverse alternative
+is instructive here}: at any other vantage the fundamental congruence crosses the embedding's symmetry
+structure transversally and the reading is a localised black hole, so a model that misplaces the reassignment
+does not fail to produce a cosmology by a little---it produces a black hole instead.
+
+\begin{proof}
+The null-generator condition selects the vantage at which the fundamental congruence runs along a null generator of the dS embedding without pivoting. By the analysis of~\cite{JanzenCRframework} (its non-synchronous SdS construction there), this is the Nariai vantage. By Proposition~\ref{prop:nariai-fixed}, the Nariai vantage is the unique fixed point of $\sigma$ in $\mathcal{V}_{\alpha}$. The mass relation at Nariai follows from $2M=(2/3\sqrt{3})\sin 3w$ evaluated at $w=\pi/6$.
+\end{proof}
+
+\subsection{Implications for the groupoid action}\label{sec:single-implications}
+
+The single-reassignment uniqueness has a structural implication for the groupoid action. The generic vantages fall into $\sigma$-pairs (the involution acts on them by two-cycles); the Nariai vantage is the exception, the one fixed point of $\sigma$, lying in a degenerate orbit of its own rather than as a member of a generic six-element orbit. The cosmological reassignment selects that fixed point and is forbidden by the two-cycle structure at every generic vantage. The discrete symmetry of $\mathcal{G}$ therefore predicts the uniqueness of $\sigma$'s fixed point as a structural fact about the groupoid, not a fact about dynamics or fine-tuning; that this fixed point is the cosmological configuration is the identification imported from~\cite{JanzenCRframework} (Proposition~\ref{prop:single}), so the uniqueness of the cosmological configuration follows from the groupoid structure together with that import.
+
+This is the algebraic content of the CR cosmology's geometric forcing: the cosmology is the fixed point of the within-single-geometry involution, and the cosmological reassignment is the unique vantage-change in $\mathcal{G}$ at which the reassignment to a null generator is consistent with the fixed-point structure. Read against the cosmology's layered ontology, this locates the reassignment precisely. The vantages of $\mathcal{G}$ are charts---synchronizations of one rigid geometry, the shift-freedom of the framework's lapse--shift split---and the geometry is their single invariant; the reassignment that promotes the collapse horizon's null generator to the fundamental timelike congruence is the discrete morphism that installs the evolving layer whose rate is the lapse, carrying the collapsing interior across the branch point into the expanding cosmology~\cite{JanzenCRframework, JanzenCosmogenesis}. That it selects Nariai as $\sigma$'s unique fixed point ``not as a fact about dynamics or fine-tuning'' converges with the empirical route---the redshift-isotropy floor forcing the same cosmic foliation from the data~\cite{JanzenModernParallax}: two independent routes, the algebraic here and the empirical there, selecting one configuration. And the eigenspace reading of the mass-reflection $R$ that the same discrete group carries---the invariant de~Sitter geometry its $R$-even part, the Schwarzschild mass its $R$-odd perspectival artefact---is the shadow-reading partition in closed form~\cite{JanzenShadowExistence}: the same separation of the existent from the chart the layered rate rule runs on, here exhibited as an exact involution rather than inferred from a spread of perspectives.
+
+\section{The partial involution at the equatorial seam}\label{sec:seam}
+
+The slicing paper showed (Section~5 of~\cite{JanzenSlicing}) that the seam---a turning point of the slicing curve---joins a Riemannian spherical piece to a Lorentzian de Sitter piece by the analytic continuation
+\begin{equation}\label{eq:seam}
+\theta\mapsto \tfrac{\pi}{2}+i\psi,\quad \sin\theta\mapsto \cosh\psi,
+\end{equation}
+and that the metric signature flips automatically across the seam because $d\theta=i\,d\psi$ squares the continuation factor to $-1$. The signature flip is not imposed; it follows from the form of the continuation.
+
+The present section reads this seam continuation as a vantage-change of a kind distinct from the within-single-geometry morphisms of Section~\ref{sec:generators}. We call it a \emph{partial involution} of the groupoid.
+
+\subsection{The seam as a vantage-change}\label{sec:seam-vantage}
+
+A vantage that charts the slicing curve from the Riemannian (spherical) side and a vantage that charts it from the Lorentzian (de Sitter) side are related by the continuation~\eqref{eq:seam}. The two vantages describe the same intrinsic slicing curve, but in different signature regimes: the spherical regime has $ds^{2}=d\theta^{2}+\sin^{2}\theta\, d\Omega^{2}$ (positive definite), and the de Sitter regime has $ds^{2}=-d\psi^{2}+\cosh^{2}\psi\, d\Omega^{2}$ (Lorentzian). The continuation $\theta\to\pi/2+i\psi$ is therefore a vantage-change between two regimes of the same construction, with the signature flip a property of the continuation rather than of the descriptions.
+
+This vantage-change is not a within-single-geometry morphism in the sense of Section~\ref{sec:morphisms}. It does not act on the sky-angle labelling of a fixed slicing curve; it changes the analytic regime in which the slicing curve is read. We denote it $\xi$ and characterise it as a partial involution.
+
+\begin{proposition}[Partial involution at the seam]\label{prop:partial}
+The seam continuation $\xi:\theta\mapsto\pi/2+i\psi$ is an involution on the analytic structure of the slicing curve: applied twice it returns to the original parameter. The signature flip across the seam is the property that $\xi$ exchanges Riemannian and Lorentzian descriptions of the same intrinsic curve.
+\end{proposition}
+
+\begin{proof}
+We define $\xi$ as the swap between the two regimes: it carries the Riemannian (spherical) description of the slicing curve to the Lorentzian (de Sitter) description and back. As a swap of a two-element set of descriptions it is an involution, $\xi^{2}=\text{id}$, without further computation. The continuation that realises it is $\theta\mapsto\pi/2+i\psi$; the signature flip it carries is the content of the Automatic-signature-flip proposition of~\cite{JanzenSlicing}: $d\theta=i\,d\psi$ produces $d\theta^{2}=-d\psi^{2}$.
+\end{proof}
+
+\subsection{Why partial}\label{sec:why-partial}
+
+We use the term \emph{partial} because $\xi$ does not act within a single sky-angle fundamental domain of $\mathcal{G}$. It acts on the analytic continuation of the slicing curve into the complex parameter plane, where the spherical and de Sitter regimes are two real slices of the same analytic object. The within-single-geometry morphisms $\sigma$ and $\tau$ permute the six labelled positions on the sky-angle circle; the seam continuation $\xi$ moves between the two real slices of the analytic continuation. The two structures are complementary: $\sigma$ and $\tau$ act within a regime, $\xi$ acts across regimes.
+
+The structural feature this captures is that the SdS construction unifies what the standard reading treats as distinct geometries (Schwarzschild, de Sitter, intermediate SdS family members) by exhibiting them as readings of one underlying intrinsic curve---one representation of one ontological layer, not autonomous geometries on distinct realities. The seam is the analytic structure that makes the unification work: at the seam, the Riemannian and Lorentzian descriptions meet, and the analytic continuation through the seam is the structural bridge that joins them.
+
+\subsection{Overcritical continuation}\label{sec:overcritical}
+
+The slicing paper noted (Section~5.4 of~\cite{JanzenSlicing}) that overcritical SdS (the regime $2M>2/(3\sqrt{3})$ in the gauge $\alpha=1$, where the cubic has only one real horizon) is the same continuation~\eqref{eq:seam} applied to the horizon angle past the Nariai crest. The overcritical continuation extends the seam structure beyond the under-critical regime: the locus of horizons is an ellipse continuing analytically past the Nariai threshold, with the two coincident horizons at Nariai continuing as a conjugate pair on the complex extension.
+
+Within the groupoid structure, the overcritical continuation is a further partial involution: it relates an under-critical vantage to an overcritical vantage of the same throat radius $\alpha$ via the analytic continuation past Nariai. The discrete generators $\sigma$ and $\tau$ act within the under-critical regime (or within the overcritical regime considered separately); the partial involution $\xi$ moves between Riemannian and Lorentzian pieces of the slicing curve; the overcritical partial involution moves between under-critical and overcritical regimes of the horizon cubic.
+
+The vantages that move between distinct de~Sitter representations (different values of $\alpha$---distinct at the representational level) are not addressed by these partial involutions and remain in the open category of Section~\ref{sec:open}.
+
+\section{Schwarzschild as the canonical asymmetric realisation}\label{sec:schwarzschild}
+
+We now read the Schwarzschild description as one specific vantage in the groupoid $\mathcal{G}$, and identify the geometric origin of the horizon-versus-singularity asymmetry as the forced off-axis pivot the Schwarzschild sweep is driven onto---the cascade of a single symmetry break, not a second break standing beside the first. The slicing paper articulated the sweep mechanism geometrically (Section~6.4 of~\cite{JanzenSlicing}, ``The horizon--singularity asymmetry is a sweep-pivot artefact''); the present section gives its algebraic content within the groupoid, and connects it to the pivoting/non-pivoting structure of Section~\ref{sec:single-reassignment}.
+
+\subsection{The Schwarzschild vantage}\label{sec:schwarzschild-vantage}
+
+The Schwarzschild description corresponds, in the slicing paper's framework, to the swing-zero ($w=0$) member of the SdS family at fixed throat radius $\alpha$, read from the pivot vantage: the slicing curve there is the cycloid $r(z)=M(1+\cos z)$, the equator taken diametrically, read as Schwarzschild from the swing-pivot looking down (the two-readings-at-the-throat discussion of~\cite{JanzenSlicing}). The relevant section of the slicing curve is the partial arc $z\in[0,\pi]$, running from the horizon at $z=0$ ($r=2M$) to the standard ``singularity'' at $z=\pi$ ($r=0$).
+
+The Schwarzschild vantage is then the choice of charting that takes this partial arc and sweeps it about a fixed axis to produce the four-dimensional spacetime. The sweep is the conventional ``rotational'' construction that produces the Schwarzschild geometry from the cycloid: at each point of the cycloid, a two-sphere is attached, and the resulting four-dimensional manifold is parametrised by $(z, \theta, \phi)$ together with a time-like direction.
+
+\subsection{The two sweeps compared}\label{sec:two-sweeps}
+
+The de Sitter description sweeps the \emph{complete} arc of the slicing curve about the manifold's own axis of symmetry. The slicing curve, in the de Sitter reading, is the full half-arc $r=\alpha\sin\theta$ for $\theta\in[0,\pi]$, and the sweep through the rotational symmetry of the de Sitter hyperboloid produces the full de Sitter manifold. No symmetry is broken in this sweep that is not already broken by the choice of foliation; the de Sitter sweep is structurally clean.
+
+The Schwarzschild description, viewing the hole from outside in the timelike orientation, cannot use that axis: the symmetric sweep about the manifold's own axis is the de Sitter, interior one just described, and it is unavailable to the exterior vantage. The sweep still requires a pivot; denied the axis, it is forced to take a selected point of the manifold as the centre it sweeps about. That point is $r=0$. It \emph{is} a point of the manifold---the off-axis critical point at the back of the throat ring, where the two branches of the slicing curve, having conjugated around the ring, meet---and the circle paper~\cite{JanzenCircle} showed it to be a regular, non-degenerate critical point of the $C^{\infty}$ function $r(z)=M(1+\cos z)$ on the smooth manifold $z\in\mathbb{R}/2\pi\mathbb{Z}$, no more special intrinsically than the horizon critical point at $z=0$. What the Schwarzschild sweep does is make a \emph{centre} of this off-axis point: it pivots the whole partial-arc construction about a point that sits off the surface's axis of symmetry, as if it were the axis. The smooth structure contains the point; what it withholds is any warrant for treating it as a centre of symmetry.
+
+This is not a second symmetry break standing beside a first. There is one break, cascading. The single break is the exterior vantage's locating of the hole---taking the hole, off-axis, as the reference of the chart (Section~6.4 of~\cite{JanzenSlicing}). Having located it that way, the vantage is committed: the restriction to the partial arc and the forced off-axis pivot onto $r=0$ both follow of necessity, not as further independent choices. Together they produce the asymmetric features of the Schwarzschild geometry---the horizon at one end of the swept arc, the apparent curvature singularity at the other---as the cascade of that one break.
+
+This places the Schwarzschild vantage within the structure of Section~\ref{sec:single-reassignment}. There the distinction was read at the level of the fundamental congruence: Nariai---the fixed point of $\sigma$---is the unique vantage whose comoving congruence runs along a null generator without pivoting, while every other vantage crosses the embedding's symmetry structure transversally. The forced off-axis pivot of the sweep is that same off-axis forcing, seen now at the level of the spatial construction rather than the congruence. Nariai alone sweeps about the manifold's axis and manufactures no asymmetry; the Schwarzschild description is a canonical pivoting vantage, and its horizon--singularity asymmetry is what the forced pivot leaves behind.
+
+\subsection{The horizon--singularity asymmetry as sweep artefact}\label{sec:asymmetry}
+
+The circle paper~\cite{JanzenCircle} established that the two critical points of $r(z)$---at $z=0$ ($r=2M$, the horizon) and $z=\pi$ ($r=0$, the standard ``singularity'')---are non-degenerate critical points of identical analytic character, with $d^{2}r/dz^{2}=\pm M$ alternately. As algebraic features of the cycloid, they are structurally identical. The standard reading classifies the horizon as a removable coordinate singularity and $r=0$ as a true curvature singularity, but this asymmetry is not forced by the analytic structure of $r(z)$.
+
+The present section's contribution is to identify the geometric mechanism that manufactures the asymmetric standard classification: the Schwarzschild sweep, forced to pivot on the off-axis manifold point $r=0$, makes that point the centre of radial infall, and the appearance of a singularity there is the shadow of the forced pivot---the Kretschmann scalar $48M^{2}/r^{6}$ as a function on the parameter $r$ diverges at $r=0$ via the chain rule applied to the composition with the cycloid. The divergence tracks the chart's labelling of the pivot, not the underlying smooth manifold.
+
+\begin{proposition}[Sweep-pivot artefact]\label{prop:sweep}
+The de Sitter sweep is taken about the manifold's own axis of symmetry, while the Schwarzschild sweep, viewing the hole from outside in the timelike orientation, cannot use that axis and is forced to pivot on the off-axis manifold point $r=0$ (Section~\ref{sec:two-sweeps}; Section~6.4 of~\cite{JanzenSlicing}). The two critical points of the cycloid are the two metric singularities of identical analytic type~\cite{JanzenCircle}---identical, in fact, through first order, parted only at second order in the curvature $K_G=1/\alpha^2-M/r^3$, which diverges at $r=0$. On the perspectival reading in which this paper is written---the mass being the slicing offset of a fundamentally de~Sitter cut---that second-order difference is read as the signature of the forced off-axis pivot rather than as an independent feature of the geometry. This is the reading's interpretive payoff (Section~\ref{sec:asymmetry}), not an unconditional consequence of the sweep alone: the mass term $-M/r^3$ carries the difference, and its attribution to the pivot rather than to the mass is the perspectival reading, not a claim proven independently of it.
+\end{proposition}
+
+\begin{proof}
+By the Rigidity proposition of~\cite{JanzenSlicing}, the SdS geometry is rigid: no continuous moduli act on it. The Schwarzschild and de Sitter forms of the slicing curve are two readings of one slicing at fixed $\alpha$ (the two-readings-at-the-throat discussion of~\cite{JanzenSlicing}), two descriptions of the same intrinsic structure. The de Sitter sweep is symmetric (taken about the manifold's own axis); the Schwarzschild sweep is asymmetric (forced to pivot on the off-axis manifold point $r=0$, the cascade of the one break of Section~\ref{sec:two-sweeps}). Through first order the two critical points are identical~\cite{JanzenCircle}, and the second-order difference is the curvature term $-M/r^3$. Under the perspectival reading, in which the mass is the slicing offset, the asymmetric features of the Schwarzschild description (horizon at one end, curvature divergence at the other) are read as the signature of the forced off-axis pivot rather than as an independent feature of the geometry; the attribution of that curvature term to the pivot rather than to the mass is the reading, not a step derived here. The two critical points are identified algebraically as the two metric singularities of identical type in~\cite{JanzenCircle}.
+\end{proof}
+
+\subsection{The diagnostic}\label{sec:diagnostic}
+
+Under the perspectival reading in which this paper is written, the horizon--singularity asymmetry is read not as a feature of the geometry but as the signature of the forced pivot---the reading's interpretive payoff, the geometric account behind the algebraic asymmetry of Papers~1--2~\cite{JanzenBHcausality,JanzenCircle}, rather than a further proposition of the construction. So read, the result of Section~\ref{sec:asymmetry} supplies a diagnostic for the groupoid programme: features of a chart that appear to be features of the geometry can be sweep artefacts. The diagnostic is: identify the sweep used to produce the chart; identify the point about which the sweep is pivoted; check whether that point is the manifold's own axis of symmetry or a selected point off it. If the sweep is forced onto an off-axis point, the asymmetric features arising in the swept chart are diagnostic of the forced pivot, not of the geometry.
+
+The Schwarzschild description is the canonical case. Its horizon--singularity asymmetry is the canonical sweep artefact. Other applications of the diagnostic await development.
+
+\begin{remark}\label{rem:wider}
+How far the perspectival diagnostic reaches beyond Schwarzschild is settled, not open. The de~Sitter slicing operator's range is the entire symmetry-reducible sector of general relativity~\cite{JanzenRange}: Kerr--de~Sitter is reached as the mass-offset cut performed in a \emph{rotating} slicing of the substrate, its angular momentum the offset times the twist ($J=Ma$), rotation carried by the shift; the charged members---Reissner--Nordstr\"om--de~Sitter and its rotating completion Kerr--Newman--de~Sitter---are reached with charge the bend and charge conjugation a symmetry~\cite{JanzenSlicing,JanzenRange}; and the general Petrov type~I members are reached too, the algebraic type carried by the leaf and not conferred by the rotation. The FLRW initial singularity is the degenerate Nariai member of the same moduli family, the cosmogenesis branch point~\cite{JanzenRange,JanzenCosmogenesis}. The asymmetric features of each are therefore features of a cut of the one substrate, exactly as for Schwarzschild---none of them an open case. These are all within the operator's reach; its boundary is the loss of continuous symmetry---the wall---which the programme names and \emph{passes}, generating up to it and evolving the cut by ordinary dynamics beyond~\cite{JanzenRange}.
+\end{remark}
+
+\section{Connection to the cosmological completion}\label{sec:cosmology}
+
+The cosmological completion~\cite{JanzenCRframework} reads the within-groupoid uniqueness of the Nariai vantage as the structural identification of the horizon's null direction (selected asymptotically in collapse, per~\cite{JanzenBHcausality}) with the cosmic temporal direction of expansion. The present paper's contribution to this identification is the algebraic groundwork: the groupoid action establishes that the Nariai vantage is the unique fixed point of the within-single-geometry involution, and the cosmological reassignment is the unique reassignment that selects this fixed point.
+
+The Null-Boundary Correspondence Theorem of~\cite{JanzenCRframework} reads, in groupoid terms, as the identification of the horizon's null direction in the collapse geometry with the cosmic temporal direction in the SdS-Nariai cosmology. The present paper supplies only the within-single-geometry component of this identification: that the Nariai member is the unique fixed point of the within-geometry involution $\sigma$, and that the cosmological reassignment is the unique reassignment selecting it (the preceding paragraph). The remaining component is cross-geometry---``collapse geometry'' and ``cosmology'' label different members of the SdS family (different $\alpha$), so relating them is a between-member move, not the same-member seam continuation $\xi$ of Section~\ref{sec:seam} (which relates Riemannian and Lorentzian regimes of one slicing curve at fixed $2M$). That between-member reassignment is in the open category of Section~\ref{sec:open}; the present paper does not establish it.
+
+\begin{remark}\label{rem:cosmology}
+The structural identification is therefore not a metaphysical posit. It is the unique consistent reading of the groupoid action on the SdS family, combined with the null-tilt condition for the cosmological reassignment---and it converges with the foundation from the other side: the cosmological configuration is forced \emph{algebraically} here, as the unique fixed point of the within-geometry involution, and \emph{empirically} by the redshift-isotropy floor that forces a cosmic time~\cite{JanzenModernParallax}, two independent routes selecting one configuration. This is the geometric core of CR's ontological augmentation of general relativity.
+\end{remark}
+
+\section{The discrete symmetry of the solution space}\label{sec:classification}
+
+Sections~\ref{sec:generators}--\ref{sec:overcritical} developed the morphisms one regime at a time: the within-single-geometry group $D_{3}\cong S_{3}$ (Proposition~\ref{prop:relations}), the seam involution $\xi$ relating Riemannian and Lorentzian regimes at fixed $2M$ (Proposition~\ref{prop:partial}), and the overcritical continuation relating under- and over-critical regimes at fixed $\alpha$ (Section~\ref{sec:overcritical}). The slicing paper left the global organisation of the same-$\alpha$ between-member morphisms open, and named the action between distinct $\alpha$ as a further open direction. This section closes both. The same-$\alpha$ between-member morphisms are the deck transformations of a branched cover whose monodromy is the involution $\sigma$ itself; the full discrete symmetry of the solution space is the automorphism group of the $A_{2}$ root system the horizon cubic realises; and the action between distinct $\alpha$ is a continuous homothety under which that discrete symmetry is invariant.
+
+\subsection{The between-member morphisms as a branched cover}\label{sec:deck}
+
+In the gauge $\alpha=1$ the horizon cubic is $r^{3}-r+2M=0$, with discriminant $\Delta=4-27(2M)^{2}$ vanishing at the Nariai values $2M=\pm\,2/(3\sqrt{3})$. Read $2M$ as a complex parameter: the three roots are the three sheets of a cover of the $2M$-plane, branched at the two Nariai points where two roots collide.
+
+\begin{proposition}[The Nariai monodromy is $\sigma$]\label{prop:monodromy}
+The monodromy of the horizon cubic about a Nariai branch point is the transposition exchanging the two roots that collide there. Each Nariai point is a simple branch point, so the monodromy is a single transposition, and it is exactly the root-exchange $\sigma$ of Proposition~\ref{prop:sigma}: $\sigma$ is the analytic continuation of the slicing description once around the configuration at which its two designated horizons merge.
+\end{proposition}
+
+\begin{proof}
+Continuing the roots along $2M=2M_{\ast}+\epsilon e^{i\phi}$, $\phi:0\to2\pi$, about the Nariai value $2M_{\ast}=2/(3\sqrt{3})$ and matching by continuity induces the permutation exchanging the two roots degenerate at $2M_{\ast}$ while fixing the third. The branch point is simple: $\Delta=4-27(2M)^{2}$ has a simple zero there, $d\Delta/d(2M)=-54\,(2M)\neq0$, so the local cover is two-sheeted and the monodromy a transposition. The transposed pair is the pair whose collision defines the Nariai degeneracy (Proposition~\ref{prop:nariai-fixed}), i.e.\ the pair $\sigma$ exchanges. (Verified numerically by continuation in the complex $2M$-plane.)
+\end{proof}
+
+\begin{proposition}[The deck group, and its non-uniformity]\label{prop:deck}
+The deck group of the three-sheeted cover is $S_{3}$, generated by the monodromies about the branch points\rcpt{P05_deck_group_S3}; it is the global organisation of the same-$\alpha$ between-member morphisms, of which the overcritical continuation of Section~\ref{sec:overcritical} is the real trace of the monodromy crossing $\Delta=0$. The deck group does not act uniformly on the real structure: in the under-critical regime ($\Delta>0$, three real roots) all of $S_{3}$ is realised on the real root labelling, whereas in the over-critical regime ($\Delta<0$, one real root and a complex-conjugate pair) only the order-two subgroup---complex conjugation of the pair---is realised on the real structure, the single real root, the cosmic-time horizon of the Nariai-side reading, being distinguished. $S_{3}$ is therefore the monodromy group of the branched cover, not a free relabelling of the members: the over-critical cascade carries only the $\mathbb{Z}/2$, in keeping with the forced off-axis pivot of Section~\ref{sec:schwarzschild}.
+\end{proposition}
+
+\begin{remark}[The generation is a computation, not an observation]\label{rem:monodromy-group}
+Two transpositions generate $S_{3}$ only if they differ, so the generation claim of
+Proposition~\ref{prop:deck} rests on the two Nariai monodromies transposing \emph{different} pairs of sheets,
+which is a computation. Continuing the roots from a common base point around each branch point in turn gives the
+transpositions $(0\,2)$ and $(1\,2)$ in the labelling that base point fixes: they differ, and the group they
+generate has order six\rcpt{X5_monodromy_group}. Had the same pair collided at both, the group would have been
+$\mathbb{Z}_{2}$ and the claim false, so the alternative was a real one. The computation is base-point dependent
+in its labels and not in its conclusion: any common base point gives two distinct transpositions.
+\end{remark}
+
+
+
+\begin{proof}
+The discriminant changes sign across each Nariai point, so the real-root count changes from three (under-critical) to one (over-critical) there; on the three-real-root side all transpositions act on real labels, while on the one-real-root side the only real-structure-preserving deck transformation is the conjugation swapping the complex pair. The generators are the two Nariai monodromies of Proposition~\ref{prop:monodromy}; two distinct transpositions in a three-element set generate $S_{3}$. The non-uniformity is the statement that the realisation on the \emph{real} root structure is regime-dependent, which is why the family's symmetry is the deck/monodromy group of a cover and not a free $S_{3}$ action on the members. (Verified numerically: regime structure and induced permutations as above.)
+\end{proof}
+
+\begin{remark}[The $S_{3}$ is the horizon cubic's Galois group]\label{rem:galois}
+The deck group of Proposition~\ref{prop:deck} is, equivalently, the \emph{Galois group} of the horizon cubic over the field $\mathbb{C}(2M)$ of the mass parameter: the monodromy group of a branched cover is the Galois group acting on its sheets~\cite{Harris1979}, and the cubic $r^{3}-r+2M=0$ has discriminant $\Delta=4-27(2M)^{2}$, not a square in $\mathbb{C}(2M)$, so its Galois group is the full $S_{3}$. The one group governing the family is thus worn three ways: the deck/monodromy group of the three-sheeted cover (here), the Weyl group of the root system $A_{2}$ (Section~\ref{sec:autA2}), and the Galois group of the horizon equation---the geometric permutation of description-vantages, the reflection symmetry of the fundamental ellipse, and the algebraic permutation of the horizon radii under continuation of the mass, one $S_{3}$ seen from three sides.
+\end{remark}
+
+\begin{remark}[``The single invariant'' is a universal property]\label{rem:universal}
+The parenthesis carried from the slicing paper---\emph{one rigid geometry charted from many vantages, the
+groupoid's single invariant being the geometry}---says more than it appears to, and the extra content is worth
+extracting because the construction leans on it. An \emph{invariant} of a groupoid is a function on objects
+constant along arrows. To say the geometry is \emph{the single} invariant is to say that every such function is
+a function of the geometry, which is precisely the universal property of the quotient: any assignment constant
+along the morphisms factors through the geometry, and uniquely. That is checkable on the construction's own
+quantities, and it holds---$\alpha$ and $2M$ are constant across the three cuts of one geometry and so are
+functions of it, while $r_{0}$ is not\rcpt{K23_functor_and_quotient}. The rigidity statement is the same fact
+read the other way: a continuous parameter that the quotient map kills is a chart label and not a modulus,
+which is what \emph{dimensional collapse} names. So the invariant claim is not an observation about this
+family but a statement with a uniqueness clause, and the discrete generation established below is what makes
+the quotient computable.
+\end{remark}
+
+\begin{remark}[The sky angle is the Galois closure of the horizon cubic]\label{rem:galois-closure}
+The group of Remark~\ref{rem:galois} is the Galois group, but the cover it acts on is not itself a Galois
+cover---three sheets carrying a group of order six---and the construction already contains the Galois closure
+that is, in the slicing paper's dial. Over the base the roots are
+$r_{0}=\tfrac{2}{\sqrt3}\sin w$ at the three sky angles $w$, $\pi/3-w$, $-\pi/3-w$~\cite{JanzenSlicing}, and
+$\sin w$ satisfies the cubic while the remaining two roots require $\cos w$ as well, so the splitting field is
+reached in two steps: degree three to adjoin $\sin w$, then degree two to adjoin
+$\cos w=\sqrt{1-\sin^{2}w}$\rcpt{X1rr_sky_angle_is_the_galois_closure}. The dial is that degree-six extension.
+Its deck transformations are exactly the two generators of Section~\ref{sec:periodicity}---the periodicity
+$\tau:w\mapsto w+2\pi/3$ and the root-exchange $\sigma:w\mapsto\pi/3-w$, both of which leave $2M$
+fixed---and by Proposition~\ref{prop:tau} they generate $S_{3}$, of order six, equal to the degree: the dial is
+a regular cover where the root cover is not. \emph{So the sky angle is not merely a convenient parametrisation
+of the family; it is the splitting cover of the family's own cubic}, and the passage from a designated root to
+the whole triple is the passage to the Galois closure. The involution relating the two sheets of the dial over
+one root is $w\mapsto\pi-w$, which fixes $\sin w$ and $2M$ and negates $\cos w$: it is the Galois involution of
+that final square root. It is \emph{not} the mass-reflection $R$, which carries $w\mapsto w+\pi$ and negates
+$2M$ and $r_{0}$ together, and so does not fix the base; $R$ is the extra $\mathbb{Z}_{2}$ by which
+$\mathrm{Aut}(A_{2})=S_{3}\times\mathbb{Z}_{2}$ exceeds this Galois group, relating the two Nariai sign-halves
+rather than acting within one.
+\end{remark}
+
+\begin{remark}[The discriminant's square root, resolved per root]\label{rem:perroot}
+The Galois statement above takes the square root of the discriminant \emph{in the product}: $\Delta$ is not a
+square, so the group is the full $S_{3}$. \emph{The same square root can be resolved root by root, and doing so
+is not a choice but a consequence of transporting a natural form along the family.}
+
+Each horizon root carries a surface gravity $\kappa=f'(r_{h})/2$, so the space of functions on the root triple
+carries the residue pairing, diagonal with entries $1/f'(r_{i})$; its signature is $(2,1)$. Parallel transport
+of that pairing along the dial involves $\sqrt{1/f'(r_{i})}$ \emph{individually}, and the product of the three
+is $1/\sqrt{\Delta}$---the very quantity the Galois remark turns on. \emph{The individual signs are therefore
+not fixed by the product}, and their independent choices, constrained to an even number by unimodularity, form
+a Klein four-group.
+
+That this is a genuine holonomy and not a branch convention is settled by computing it: a loop about a branch
+point in the complex dial returns $\operatorname{diag}(1,-1,-1)$, with the $-1$s on the pair of roots that
+collide there, unchanged as the loop is shrunk\rcpt{HOLONOMY_complex_loop}. The loop is $\sigma^{2}$ in the
+deck group---the dial-to-mass projection is quadratic at the branch point, so one turn in $w$ is two in
+$2M$\rcpt{COVER_dial_loop_is_sigma_squared}---so the roots return while the form does not. \emph{A square-root
+effect the roots cannot see is exactly what a double cover carries.}
+\end{remark}
+
+\begin{remark}[The family symmetry is global, not gauged]
+That the deck group is the monodromy of the cover, and not a substrate isometry, fixes the \emph{kind} of any family symmetry a matter sector built on this structure would carry. The orientation-parity $\mathbb{Z}_2$ (the diagram automorphism, Section~\ref{sec:autA2}) \emph{is} a substrate isometry---$R\in\mathrm{O}(5,1)\setminus\mathrm{SO}_0$, acting on a cut spinor as $\gamma^5$---so the chirality it grades descends gauged; the Weyl $S_3$ here is the deck/monodromy symmetry of the solution space, no isometry, so a family symmetry it would grade is \emph{global}. Gauged chirality with global flavour is the Standard Model's own arrangement, following from which factor is an isometry rather than assumed~\cite{JanzenAlgebroid,JanzenBoundary,JanzenGeometricCore}. The same partition is reached independently from the substrate's null structure, by a route mentioning neither spinors nor the cover: the sky-angle periodicity $\tau$ is realised on the substrate as two steps along a null ruling---consecutive rulings carry a hinge to the next hinge of its own triple, and because a hinge-transpose \emph{is} a turn of the dial~\cite{JanzenSlicing}, that advance is $\tau$ itself, so $\tau$ is a closed path of light and $\tau^{3}=\mathrm{id}$ is its closure. $\sigma$ admits no such path: by Proposition~\ref{prop:monodromy} it is a loop in the complex $2M$-plane about the branch point, and $2M$ is not a direction of the substrate but a label on the family. A ruling joins two points of one manifold; $\sigma$ joins two \emph{descriptions} of one geometry. The rulings therefore realise exactly that part of $D_{3}$ which is a substrate isometry, and nothing else---this remark's partition read off the light cone rather than off the cover. The discrete skeleton this grades---the generation count, the chirality $\gamma^5$, and the family symmetry $S_3$---is built as bound-state zero-modes of the existent leaf, forced within CR, in the matter-sector paper~\cite{JanzenMatter}, while the descent onto a full \emph{propagating} spinor field sector---the programme's largest unbuilt undertaking---remains genuinely open~\cite{JanzenCRframework}.
+\end{remark}
+
+\subsection{The full automorphism group}\label{sec:autA2}
+
+The horizon cubic's roots, equivalently the sky-angle triple, realise the $A_{2}$ root system~\cite{Humphreys1972} (the six roots arranged as a regular hexagon); the within-geometry group of Proposition~\ref{prop:relations} and the deck group of Proposition~\ref{prop:deck} are both the Weyl group $W(A_{2})=S_{3}$. The coupled operations that generate this discrete symmetry---the root-exchange, the backward-radial reflection, their conjugacy, and their action across both regimes---are collected as the slicing's own in the companion slicing paper~\cite{JanzenSlicing}; the present section advances them into their group-theoretic form.
+
+\begin{proposition}[The discrete symmetry of the solution space]\label{prop:autA2}
+The reflection $R:2M\mapsto-2M$ is a symmetry of the solution space: it swaps the two Nariai points $\pm\,2/(3\sqrt{3})$ and the two over-critical rays, and fixes the massless/de~Sitter configuration $2M=0$. Together with the Weyl group $S_{3}$ it generates the automorphism group of the $A_{2}$ root system the horizon cubic realises,
+\[
+\mathrm{Aut}(A_{2})=S_{3}\times\mathbb{Z}_{2}\cong D_{6}\quad(\text{order }12),
+\]
+the $\mathbb{Z}_{2}$ being the $A_{2}$ diagram automorphism (equivalently the symmetry of the hexagonal root system that the Weyl group does not contain). This is the full discrete symmetry of the SdS solution space.
+\end{proposition}
+
+\begin{remark}[The diagram automorphism is the substrate's orientation]\label{rem:orientation}
+The $\mathbb{Z}_{2}$ is not merely a combinatorial automorphism of the root system but the substrate's own orientation parity. The mass-reflection $R:2M\mapsto-2M$ is realized geometrically by the reticle reflection $r_{0}\mapsto-r_{0}$---the reversal of the slicing aim on the observer's celestial sphere, $w\mapsto-w$ in the sky angle, under which $2M=(2/3\sqrt{3})\sin 3w$ is odd---an orientation-reversing substrate isometry lying outside the connected group whose continuous action sweeps the family at fixed mass. It connects the $+M$ and $-M$ cuts that no connected motion relates, and it is the same orientation parity $\mathrm{O}(5,1)/\mathrm{SO}_{0}(5,1)$ that surfaces in the radiating sector as the graviton's two helicities and at the wall as chirality; the development is in the algebroid construction~\cite{JanzenAlgebroid}. Read through the maximal symmetry of the substrate, this parity is the discrete residue the continuous isometry, once exhausted, leaves unspent---the one geometric structure the symmetric core does not consume---and the structurally indicated home of a matter sector the continuous isometry cannot carry (the single geometric opening the boundary paper leaves~\cite{JanzenBoundary}), an opening since occupied by the discrete skeleton---three chiral generations built as bound-state zero-modes of the existent leaf, forced within CR, in the matter-sector paper~\cite{JanzenMatter} (the full propagating sector remaining open); this reading of the parity as maximal symmetry's residue is developed in the geometric-core paper~\cite{JanzenGeometricCore}. The apparent non-isometry of the $+M$ and $-M$ Lorentzian charts is accordingly a feature of the representational record, not of the symmetric existent---granting the charts the standing of distinct existents being the ``events exist'' horn the foundational augmentation closes~\cite{JanzenModernParallax,JanzenCRframework}---which is exactly this paper's central diagnostic that the asymmetry is a signature of the chart, not a feature of the geometry.
+\end{remark}
+
+\begin{proof}
+The roots of $r^{3}-r+2M=0$ go to minus the roots of $r^{3}-r-2M=0$, so $R:2M\mapsto-2M$ acts on the solution space by $r\mapsto-r$ on the roots; it therefore fixes $2M=0$ (the de~Sitter/massless configuration, where the cubic is odd) and exchanges $\pm2M$, in particular the two Nariai points and the two over-critical rays. (Verified numerically.) $R$ is the diagram automorphism of $A_{2}$: it is the order-two symmetry of the hexagonal root system that lies outside the Weyl group $S_{3}$ (the rotation group of the hexagon by $W(A_2)$ together with the reflection $R$ exhausts the dihedral symmetry of the hexagon). That the negation $r\mapsto-r$ lies outside $W$ is the load-bearing and \emph{$A_{2}$-specific} step: $-1\notin W(A_2)$---the Weyl group $S_{3}$ (the rotations of the hexagon) contains no element acting as $-\mathrm{id}$ on the plane, the longest element of $A_2$ acting instead as $-(\text{diagram automorphism})$, a standard fact of the reflection group~\cite{Humphreys1972}---so $r\mapsto-r$ falls in the nontrivial coset of $\mathrm{Aut}(A_2)/W(A_2)=\mathbb{Z}_2$ and \emph{thereby} induces the diagram automorphism, conjugating the representation $\mathbf 3\leftrightarrow\bar{\mathbf 3}$. This is a property of the $A_2$ root system the horizon cubic realises, not of sign-reversal in general: for the rank-two systems in which $-1$ \emph{is} a Weyl element ($A_1$, $B_2$, $G_2$; the classification of when $-1\in W$ is standard~\cite{Humphreys1972}) negation would be inner and would fix each representation rather than conjugate it. The step is load-bearing twice, and the second time for more than this proposition. Were negation inner, $\mathrm{Aut}(A_2)$ would \emph{be} $W$: there would be no outer coset to adjoin, no second factor, and the residue would be a single group. The whole two-factor structure read off it below---three generations ($S_3$) against two chiralities ($\mathbb{Z}_2$), and the sorting of the one as the substrate's own orientation parity against the other as the deck symmetry of the solution space~\cite{JanzenAlgebroid,JanzenMatter}---would not exist to be sorted. That the horizon cubic realises the one rank-two system in which $-1$ is outer is therefore not a detail of the conjugation but the condition of there being two factors at all. (Verified: $-1\notin W(A_2)$, $-1\in W$ for the other three\rcpt{negation_outer_A2}.) Hence $\langle S_{3},R\rangle=S_{3}\times\mathbb{Z}_{2}\cong D_{6}$, the dihedral group of order twelve and the full automorphism group of $A_{2}$. This $D_{6}$ carries a matter reading---three fermion generations ($S_{3}$) times two chiralities ($\mathbb{Z}_{2}=R$)---built as a fermion sector, forced within CR, in the matter-sector paper~\cite{JanzenMatter}: the generation count, the chirality $\gamma^5$, and the family symmetry $S_3$ are the discrete flavour structure the geometry forces, while the gauge content and mass spectrum remain the ordinary route and the world-correspondence is not asserted~\cite{JanzenBoundary}.
+\end{proof}
+
+\begin{remark}[The diagram automorphism is the de~Sitter$\leftrightarrow$Schwarzschild correspondence]\label{rem:P-dS-Schw}
+The diagram automorphism $R$ is the de~Sitter$\leftrightarrow$Schwarzschild vantage-swap of the slicing paper (the two-readings-at-the-throat discussion of~\cite{JanzenSlicing}): the $180^{\circ}$ rotation of the charting vantage that reads the $w=0$ diametric curve from the pivot as Schwarzschild and, from the uphill side looking up the $r=0$ axis, as de~Sitter. That uphill view is the backward radial direction, and $R$ acts on the horizon roots as $r\mapsto-r$ (Proposition~\ref{prop:autA2}): at the de~Sitter configuration $2M=0$ it fixes the axis $r=0$ and exchanges the forward and backward de~Sitter horizons $\pm\alpha$---exactly the polar-opposite swing of the cosmological horizon the slicing paper describes. On the metric function it acts by parity: writing $f(r)=1-2M/r-r^{2}/\alpha^{2}$,
+\[
+f(r)=\underbrace{\bigl(1-r^{2}/\alpha^{2}\bigr)}_{R\text{-even: de~Sitter}}\;+\;\underbrace{\bigl(-2M/r\bigr)}_{R\text{-odd: Schwarzschild mass}},
+\]
+so the invariant de~Sitter geometry is the $R$-symmetric content and the Schwarzschild mass is the $R$-antisymmetric content the vantage carries and the swap reverses---the eigenspace form of the perspectival reading (the underlying invariant geometry is de~Sitter; the Schwarzschild mass is the reading's, carried by the vantage). Adjoining electric charge extends the split without disturbing it: in the charged (Reissner--Nordstr\"om--de~Sitter) member $f=1-2M/r+Q^{2}/r^{2}-r^{2}/\alpha^{2}$ the charge term $Q^{2}/r^{2}$, even in $2M$, joins the de~Sitter geometry on the $R$-even side while the mass stays the $R$-odd content---charge sitting with the invariant geometry and not with the perspectival mass---and that $R$-even charge term carries a symmetry of its own, charge conjugation $Q\mapsto-Q$, under which the metric (depending on the charge only through $Q^{2}$) is invariant, its sign field-level in the potential; charge conjugation is thus present as this even-face degeneracy and not as a substrate datum, drawn out as a boundary in the boundary paper~\cite{JanzenBoundary}---where, composed with the antilinear reality involution $\tilde\tau\mapsto\bar{\tilde\tau}$ of the cosmogenetic bead, this even face completes to a geometric factorisation of charge conjugation, its kinematic content carried by the bead's own $r=0$ crossing and only the charge sign closing from the field, the eigenspace split above being the linear ($R$) factor of that conjugation. The de~Sitter$\leftrightarrow$Schwarzschild correspondence is therefore not a structure standing outside the discrete group but the outer $\mathbb{Z}_{2}$ of $\mathrm{Aut}(A_{2})=D_{6}$ itself: $\sigma$ the diagonal (Weyl) reflection of the fundamental ellipse (Section~3 of~\cite{JanzenSlicing}), $R$ the anti-diagonal (diagram) reflection along the backward radial axis, the two together generating $D_{6}$. Read methodologically, this split is the shadow-reading partition of~\cite{JanzenShadowExistence} in closed form: the appearances $\Phi=\pi(W)$ divide into a literal component on which the projection acts trivially and a perspectival artefact of it, and here the projection is exactly $R$---the $R$-even de~Sitter geometry the literal content imaging the substrate, the $R$-odd Schwarzschild mass the perspectival artefact whose reification as a feature of the world is the naïve realism the method forbids; the correspondence is thereby an instance of that method with the projection an exact involution rather than a general perspective. Its relation to the throat seam $\xi$ of Section~\ref{sec:seam} is that of two \emph{distinct but consecutive} crossings of one slicing curve, not one operation: on the single closed slicing curve---the cosmogenetic bead the framework establishes~\cite{JanzenCRframework}---the throat continuation $\xi$ ($X=\alpha$, Riemannian$\leftrightarrow$Lorentzian, onto the cosmological branch $r>\alpha$) is the entry to the throat lap and the backward-radial reflection $R$ ($r=0\to r<0$, onto the conjugate branch) the turn at its back; they are distinct turning points of the \emph{one} closed traversal, sharing the single $\sin\to\cosh$ continuation mechanism but not coinciding as a map---not separate crossings with unrelated destinations. The root-exchange $\sigma$ is the third and is no branch-point crossing at all but the algebraic relabelling of which root is designated. Thus the construction carries three distinct discrete operations---$\sigma$ (Weyl/diagonal, mass-invariant, Nariai-fixed), $R$ (diagram/anti-diagonal, the vantage-swap, de~Sitter-fixed, $=$ the $r=0$ crossing), and $\xi$ (the throat seam at $X=\alpha$)---of which $\sigma$ and $R$ generate $D_{6}$ and $\xi$ is the analytic continuation whose invertibility secures the correspondence's exactness.
+\end{remark}
+
+\begin{remark}[This $A_{2}$ is not a realised colour isometry]\label{rem:a2-distinct}
+The $A_{2}$ here is the root system of the SdS \emph{solution space}---a discrete symmetry of the gravitational--cosmological slicing family, realised by the roots of the horizon cubic, governing which member of the de~Sitter family a vantage describes. It is the same \emph{abstract} root system as the $A_{2}$ Cartan--Weyl skeleton of $\mathfrak{su}(3)$, but a different realisation: the present $A_{2}$ is the automorphism structure of a discrete family of spacetime geometries, not the root lattice of a continuous internal Lie algebra. The coincidence of abstract type does not, on its own, make this discrete gravitational symmetry an internal colour symmetry as a \emph{realised} symmetry: colour $\mathfrak{su}(3)$ embeds in no continuous isometry of the substrate ($\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$, structurally~\cite{JanzenBoundary}), so the geometric $A_{2}$ is not a realised colour gauge and must not be read as one \emph{in that sense}. What that argument establishes, however, is precisely the distinct \emph{realisation} and the absence of a continuous-isometry colour---not that the shared abstract root system is without significance. That the two $A_{2}$'s coincide is, moreover, no accident of abstract type: colour's $\mathfrak{su}(3)$ is carried on the substrate's own \emph{conjugate real form}---the compact $\mathrm{SO}(6)/\mathrm{SO}(5)$ that, with the Lorentzian $\mathrm{SO}(5,1)$, is one of the two real forms of the single complex group $\mathrm{SO}(6,\mathbb{C})$, $\mathfrak{su}(3)\subset\mathfrak{so}(6)$ but $\mathfrak{su}(3)\not\subset\mathfrak{so}(5)$~\cite{JanzenBoundary,JanzenGeometricCore}. The connection between the geometric $A_{2}$ and colour's is therefore \emph{analytic}---sourced in that common complexification---and not the free resemblance an ``accident of abstract type'' would make it. What remains walled is only the \emph{realised colour isometry} on the Lorentzian substrate; what remains do-not-assert is only the world-correspondence---that this located $\mathfrak{su}(3)$ is the physical colour. The structural reason an earlier phrasing left open is supplied.
+\end{remark}
+
+\subsection{The action between distinct $\alpha$}\label{sec:alpha-action}
+
+The morphisms between distinct $\alpha$---the open direction named in the slicing paper and at the head of Section~\ref{sec:open}---are not a further discrete structure. The throat radius $\alpha=\sqrt{3/\Lambda}$ is the single scale of the construction (Section~\ref{sec:alpha-invariant}); the map between de~Sitter representations of different $\alpha$ is the homothety $r_{0}\mapsto\lambda r_{0}$, $\alpha\mapsto\lambda\alpha$, a continuous one-parameter scaling, not a discrete morphism. That scaling has a projective identity worth recording, since it explains why it acts between representations rather than within one: a linear map preserves the substrate's absolute---the null cone $\eta(X,X)=0$, which is what fixes the causal structure---exactly when it is an element of $\mathrm{O}(5,1)$ composed with a dilation, and the dilation carries $\eta(X,X)=\alpha^{2}$ to $\eta(X,X)=\lambda^{2}\alpha^{2}$\rcpt{C1_conformal_vs_isometric}. The homothety is that dilation. So the isometry group of a single de~Sitter representation is $\mathrm{O}(5,1)$ while the group preserving the causal structure alone is $\mathrm{O}(5,1)\times\mathbb{R}^{+}$, and the one generator by which they differ is precisely the one that moves $\alpha$: the causal structure fixes the geometry up to the scale, and the scale is what it does not fix. The word \emph{linear} in that statement is not a restriction, which is worth saying because it looks like one: the conformal group of a pseudo-Euclidean space acts \emph{linearly} on the null cone of one dimension higher, translations, dilations and the special conformal transformations alike, an SCT appearing non-linear only in an affine chart of the cone's projectivisation\rcpt{C5_sct_already_linear}. So the count above is of the whole conformal group and not of a linear part of it. The same generator has a conservation-law face, and it is worth recording because it says which observers can and cannot detect the scale. A dilation is a homothety, $\mathcal{L}_{\xi}g=2cg$ with $c$ constant, and for any vector field the charge $\xi_{a}p^{a}$ obeys $\mathrm{d}(\xi_{a}p^{a})/\mathrm{d}\tau=\tfrac12 p^{a}p^{b}(\mathcal{L}_{\xi}g)_{ab}$ along an affinely parametrised geodesic. For a Killing field the right-hand side vanishes identically; for a homothety it is $c\,p^{a}p_{a}$, which vanishes if and only if the geodesic is null\rcpt{V5_homothety_charge}. \emph{So the dilation carries a conserved charge on the null cone and on nothing else}---which is the statement above met from the conservation side, a symmetry conserving a charge exactly on the structure it preserves. The failure off the cone is proportional to $p^{a}p_{a}=-m^{2}$, so it is rest mass that spoils it, and rest mass is the perspectival $R$-odd quantity of this construction rather than an invariant of the substrate. We state the identity as the result and mark the gloss as a gloss. The discrete classification above is formulated on the dimensionless ratio $r_{0}/\alpha=\sin u$ (equivalently the sky angle $w$), so it is invariant under this homothety: the same $\mathrm{Aut}(A_{2})=D_{6}$ governs every $\alpha$-leaf. There is accordingly no further between-$\alpha$ discrete morphism to classify; the action between distinct $\alpha$ is the homothety orbit, along which the discrete structure is constant.
+
+\subsection{The branch point and the algebroid connection}\label{sec:nariai-algebroid}
+
+The branch point of the cover---the Nariai configuration---is the locus at which the discrete structure of this paper meets the continuous structure of the algebroid completion~\cite{JanzenAlgebroid}: it is a stratum at which the algebroid connection vanishes and the substrate's isotropy enhances (the Nariai degeneracy at which the cubic's two designated horizons merge). That the deck group's branch point and the connection-vanishing stratum coincide is a structural meeting of the discrete (deck/monodromy) and continuous (algebroid) faces of the one solution space. The relation can now be named, and the naming needs only the vocabulary of the field the two
+objects belong to. The algebroid the companion paper constructs is an \emph{action} algebroid---its own
+notation, $\mathfrak{so}(5,1)\ltimes\mathcal{C}$, is that of the infinitesimal action of the substrate's isometry
+algebra on the space of cuts~\cite{JanzenAlgebroid}---and an action algebroid is always integrable, its
+integrating object the action groupoid $\mathrm{SO}(5,1)\ltimes\mathcal{C}\rightrightarrows\mathcal{C}$, whose
+objects are cuts and whose arrows are the isometries carrying one cut to another~\cite{Mackenzie2005}. That is
+not the groupoid $\mathcal{G}$ of this paper, whose objects are vantages on one geometry, and the two are
+separated exactly as the companion paper separates their operations, by dimension: the slicing is
+dimension-reducing and continuous, the reassignment dimension-preserving and discrete. \emph{What relates them
+is isotropy.} In an action groupoid the arrows from an object to itself form its isotropy group; the coset
+grading is symmetric precisely when that isotropy makes a symmetric pair, so the companion paper's connection
+---the leak of $[\mathfrak{m},\mathfrak{m}]$ into $\mathfrak{m}$---measures the isotropy's failure to be of that
+kind, and vanishes exactly where it is. Its two vanishing strata carry isotropy of dimension ten and six against
+a generic four\rcpt{K1_action_groupoid}. And $\mathcal{G}$'s branch point is where $\sigma$ has its fixed
+point, which is where two designated roots merge---a vantage being a choice of designated root, and the choices
+collapsing exactly when the isotropy that permutes them grows. \emph{So the discrete face and the continuous
+face are not two structures that happen to degenerate at one locus: they are the isotropy of one action groupoid,
+read discretely and infinitesimally, and Nariai is where that isotropy jumps. And the jump is not a further coincidence to be added to the list the slicing paper's corollary already carries. That corollary locates Nariai three ways---the cubic's double root, the singular point of the reducible locus, the end of the conic's minor axis---and the framework and optics readings add the merged horizon and the photon sphere's contact with it; every one of those reduces to the single condition $f(r_{N})=f'(r_{N})=0$\rcpt{K45_span_and_nariai}. The isotropy jump is what that condition \emph{is}, read on the near-horizon geometry: a double root makes that geometry $\mathrm{dS}_{2}\times S^{2}$, whose isometry $\mathrm{SO}(2,1)\times\mathrm{SO}(3)$ is six-dimensional against a generic four, which is exactly the stratum the algebroid paper records~\cite{JanzenAlgebroid}. \emph{So there is one condition wearing several faces, and the isotropy is the face that explains why a discrete structure and a continuous one both mark the same locus.}}
+
+\section{Discussion}\label{sec:discussion}
+
+The groupoid $\mathcal{G}$ is the structural object the present paper develops. It is generated by the root-exchange involution $\sigma$ (order two) and the sky-angle periodicity $\tau$ (order three), organised as the dihedral group $D_{3}\cong S_{3}$, and within each SdS member it permutes the member's six labelled sky-angle positions while leaving that member's geometry invariant. The continuous slicing parameter $r_{0}$ runs between members of the family $\mathcal{V}_{\alpha}$, all charted on the one de Sitter manifold of throat radius $\alpha$; the dimensional collapse is the statement that this continuous family carries a single invariant, $\alpha$. The cosmological reassignment selects the unique fixed point of $\sigma$ on the family (the Nariai member), and the partial involution $\xi$ at the seam moves between Riemannian and Lorentzian descriptions of the same intrinsic curve. The Schwarzschild description is the canonical asymmetric realisation, in which the sweep, forced off the manifold's axis of symmetry onto the off-axis point $r=0$, manufactures the horizon-versus-singularity asymmetry that the circle paper identified algebraically as two metric singularities of identical type.
+
+\subsection{What is established}\label{sec:established}
+
+The paper establishes the following:
+
+\begin{enumerate}
+\item The groupoid $\mathcal{G}$ is given as a category, with objects the charting vantages within a fixed SdS member and morphisms the vantage-changes preserving the horizon relation (Proposition~\ref{prop:groupoid}).
+
+\item The two generators of the within-single-geometry morphisms are the involution $\sigma$ (Proposition~\ref{prop:sigma}) and the sky-angle periodicity $\tau$ (Proposition~\ref{prop:tau}).
+
+\item The relations among the generators are $\sigma^{2}=\tau^{3}=(\sigma\tau)^{2}=\text{id}$, and the group they generate is $D_{3}\cong S_{3}$ (Proposition~\ref{prop:relations}).
+
+\item The rigidity-as-dimensional-collapse mechanism: the continuous parameter $r_{0}$ varies the slicing (and with it the member $M$) but not the underlying de Sitter manifold $\alpha$ (Proposition~\ref{prop:dim-collapse}).
+
+\item The single-reassignment uniqueness: the groupoid establishes the Nariai vantage as the unique fixed point of $\sigma$ (Proposition~\ref{prop:nariai-fixed}); that this fixed point is the configuration the cosmological reassignment selects is the identification imported from~\cite{JanzenCRframework} (Proposition~\ref{prop:single}).
+
+\item The partial involution $\xi$ at the seam relates Riemannian and Lorentzian descriptions of the same intrinsic curve, with the signature flip a property of the continuation (Proposition~\ref{prop:partial}).
+
+\item The Schwarzschild description is the canonical asymmetric realisation: the sweep's forced pivot onto the off-axis manifold point $r=0$ manufactures the horizon--singularity asymmetry (Proposition~\ref{prop:sweep}).
+
+\item The discrete symmetry of the SdS solution space is $\mathrm{Aut}(A_{2})=S_{3}\times\mathbb{Z}_{2}\cong D_{6}$: the same-$\alpha$ between-member morphisms are the deck group $S_{3}$ of the horizon cubic's three-sheeted cover branched at Nariai, with monodromy the root-exchange $\sigma$ and a regime-dependent realisation on the real structure (Propositions~\ref{prop:monodromy}--\ref{prop:deck}); the mass-reflection $2M\mapsto-2M$ adjoins the diagram automorphism $\mathbb{Z}_{2}$ (Proposition~\ref{prop:autA2}); and the action between distinct $\alpha$ is the continuous homothety under which the discrete structure is invariant (Section~\ref{sec:alpha-action}).
+\end{enumerate}
+
+The first seven results constitute the relational content of the groupoid within a single SdS member; the eighth extends it to the discrete symmetry of the full SdS solution space.
+
+\subsection{What is open}\label{sec:open}
+
+This paper's relational programme leaves no open direction of its own. A direction the slicing paper named---the action between distinct $\alpha$---is resolved in Section~\ref{sec:alpha-action}: it is the continuous homothety $r_{0}\mapsto\lambda r_{0}$, $\alpha\mapsto\lambda\alpha$, not a further discrete morphism, and the discrete symmetry $\mathrm{Aut}(A_{2})\cong D_{6}$ is invariant under it. Two further directions are noted below: the first is an instance of the programme's named frontiers, the second is settled here---neither a standalone open.
+
+\begin{enumerate}
+\item \textbf{Dynamics implications of the sweep diagnostic.} The sweep-pivot artefact (Proposition~\ref{prop:sweep}) supplies a diagnostic for chart asymmetries arising from sweeps forced off the manifold's axis of symmetry onto a selected point. Its reach to the non-vacuum solutions is not a fresh frontier of this paper: Kerr, Reissner--Nordstr\"om, and their de~Sitter and combined members are reached as cuts of the substrate in the range paper~\cite{JanzenRange}, so the diagnostic applies to their reducible (exterior) sector as it does here; and the dynamics of matter and fields in such geometries---the reformulation respecting the symmetric structure---is the matter branch-point crossing dynamics and the irreducible interior reassignments (Kerr-inner, Reissner--Nordstr\"om-interior) the framework names as its open frontiers~\cite{JanzenCRframework}, gated on the matter sector rather than left as this paper's own.
+
+\item \textbf{The mass question, and the programme it leaves.} Whether the throat radius $\alpha$ established here as the invariant of $\mathcal{G}$ is also the correct intrinsic gravitational mass in the standard quasi-local (Brown--York, Misner--Sharp) and asymptotic definitions is now \emph{settled}: it is not. The present paper sharpens the question by showing any \emph{fully} invariant mass must be built from $\alpha$; the companion slicing paper's mass section evaluates the standard definitions and finds they all return the slicing-dependent $M$ (Misner--Sharp $M+r^{3}/2\alpha^{2}$, Komar $M-r^{3}/\alpha^{2}$, asymptotically-de~Sitter $M$), so the gravitational mass is the perspectival $M$, $\alpha$ is the invariant curvature radius (a length, not a mass), and only the Nariai member locks an $\alpha$-built mass, $M=\alpha/(3\sqrt3)$.
+\end{enumerate}
+
+The first is an instance of the programme's named frontiers---the matter dynamics and the irreducible interiors---pursued in the framework and cosmology papers rather than here; the second is settled above. Neither is a standalone open of this paper.
+
+\subsection{Structural placement of this paper}\label{sec:placement}
+
+The paper sits between the foundational results of~\cite{JanzenBHcausality},~\cite{JanzenCircle}, and~\cite{JanzenSlicing}, and the cosmological endpoint of~\cite{JanzenCRframework}. Its job is to fill the algebraic gap between the geometric construction of the slicing paper (which establishes the groupoid at the level of generators) and the cosmological reading in the completion~\cite{JanzenCRframework} (which uses the within-groupoid uniqueness of Nariai as the structural identification of horizon and cosmic temporal direction). With the gap filled, the programme's foundational structure is established at the scope of a single de~Sitter geometry: the geometric construction is rigid, the groupoid of admissible vantages is algebraically characterised, the cosmological reassignment is identified as the unique selector of $\sigma$'s fixed point---its cross-geometry component (Section~\ref{sec:cosmology}) and the further directions of Section~\ref{sec:open} remaining open---and the Schwarzschild description's apparent asymmetric features are diagnosed, under the perspectival reading, as sweep artefacts. Seen in the framework's unification, this discrete symmetry is the joint. The framework reads one maximally symmetric de~Sitter substrate as at once general relativity's solution space, the discrete $CPT$ and charge structure, and the Standard Model's flavour and colour skeleton~\cite{JanzenCRframework}; the $\mathrm{Aut}(A_{2})=D_{6}$ established here is the discrete backbone shared across those readings---the deck group of the vantage-groupoid on the gravitational side, and, in its $A_{2}$ root system carried analytically onto the substrate's conjugate real form, the skeleton the fermion content's discrete structure is borne on~\cite{JanzenMatter,JanzenBoundary,JanzenGeometricCore}. \emph{The matter sector separates the two indices that structure carries}: the $S_{3}$ among the vantages is the \emph{within-state} one, while the generations' threeness is the turnaround's deck $\mathbb{Z}_{3}$ (\emph{ibid.}). The one discrete symmetry joins the covariance of geometries to the matter skeleton.
+
+\section{Conclusion}\label{sec:conclusion}
+
+We have given the groupoid $\mathcal{G}$ of Schwarzschild--de Sitter description vantages as a category, identified its two generators and the relations they satisfy ($D_{3}\cong S_{3}$), and characterised the rigidity of the SdS geometry as a dimensional collapse of the slicing family onto its single invariant, the de Sitter manifold $\alpha$, distinct from the within-member action of the groupoid. The cosmological reassignment uniquely selects the Nariai vantage as the unique fixed point of the involution. The seam between the Riemannian and Lorentzian pieces of the slicing curve is a partial involution of the groupoid, with the signature flip a property of the analytic continuation. The Schwarzschild description is the canonical asymmetric realisation, in which the sweep, forced off the manifold's axis of symmetry onto the off-axis point $r=0$, manufactures the horizon-versus-singularity asymmetry that the circle paper identified algebraically. The full discrete symmetry of the solution space is $\mathrm{Aut}(A_{2})=S_{3}\times\mathbb{Z}_{2}\cong D_{6}$: the within-geometry and same-$\alpha$ between-member root permutations form the Weyl group $S_{3}$---the latter realised as the deck group of the horizon cubic's cover branched at Nariai, with monodromy the root-exchange $\sigma$---the mass-reflection $2M\mapsto-2M$ adjoins the diagram automorphism $\mathbb{Z}_{2}$, and the action between distinct $\alpha$ is the continuous homothety under which the structure is invariant. The asymmetry is a signature of the chart, not a feature of the geometry.
+
+The relational content this paper establishes is the algebraic core that the cosmological completion reads as the structural identification of horizon's null direction with cosmic temporal direction, and that the foundation reads back as the geometric content of CR's ontological augmentation of general relativity~\cite{JanzenModernParallax}. That identification is the seam of the cosmogenesis: the reassignment by which collapsed matter re-founds its clock and continues as an expanding universe is this groupoid morphism, carrying the horizon's null direction to cosmic time, and the companion cosmogenesis paper carries it forward to the primordial light-element abundances the re-expansion produces~\cite{JanzenCosmogenesis}.
+
+\begin{thebibliography}{9}
+
+\bibitem{JanzenBHcausality}
+D.~Janzen,
+\emph{The event horizon is a metric singularity: a missing definition in general relativity}, companion paper (P1).
+
+\bibitem{JanzenCircle}
+D.~Janzen,
+\emph{The Schwarzschild and de Sitter circle: the intrinsic geometry of one homogeneous ring---the event horizon and the curvature singularity at $r=0$ its two poles}, companion paper (P2).
+
+\bibitem{JanzenSlicing}
+D.~Janzen,
+\emph{The de Sitter substrate and its slicing curve: horizons as turning points, and de Sitter and Schwarzschild as two readings of one slicing}, companion paper (P3).
+
+\bibitem{JanzenCRframework} D.~Janzen, \emph{Collapsed matter must become a universe: the necessary and sufficient augmentation of general relativity into a description of structural existence, proven for gravitational collapse of any symmetry}, companion paper (P7).
+
+\bibitem{JanzenModernParallax}
+D.~Janzen,
+\emph{The modern parallax: the redshift-isotropy floor, the empirical forcing of cosmic time and uniform expansion, and the measured resolution of the relativity of simultaneity}, companion paper (P4).
+
+\bibitem{JanzenAlgebroid}
+D.~Janzen,
+\emph{General relativity's constraint algebra as the symmetric-space structure of a de Sitter substrate: the action Lie algebroid of the symmetry-reducible sector, and the problem of time's ``wrong sign'' as the substrate's coset signature}, companion paper (P12).
+
+\bibitem{JanzenShadowExistence}
+D.~Janzen,
+\emph{The shadow of existence: scientific theory-choice as an empirically grounded discipline, calibrated on the historical record}, companion paper (P6).
+
+\bibitem{JanzenBoundary}
+D.~Janzen,
+\emph{The de Sitter substrate and the Standard Model: a four converging routes to a geometric boundary on what one maximally-symmetric Lorentzian substrate's isometry does and does not force, and the framework and gauge on its two real forms}, companion paper (P13).
+
+\bibitem{JanzenMatter}
+D.~Janzen,
+\emph{The fermion sector of Cosmological Relativity: three chiral generations from the maximally-symmetric slicing structure}, companion paper (P14).
+
+\bibitem{JanzenGeometricCore}
+D.~Janzen,
+\emph{Reached through the imaginary, real by construction: the maximally symmetric substrate as the geometric--ontological core}, companion paper (p0).
+
+\bibitem{JanzenRange}
+D.~Janzen,
+\emph{The range of the de Sitter slicing operator: surjectivity onto the symmetry-reducible sector of general relativity, the Kerr--NUT--(A)dS vacuum kernel, and the wall of inhomogeneity}, companion paper (P9).
+
+\bibitem{JanzenCosmogenesis} D.~Janzen, \emph{Cosmogenesis: the Big Bang as a synthesis of Cosmological Relativity's deductively forced consequences, and the primordial light-element abundances it produces}, companion paper (P16).
+
+\bibitem{Coxeter1987} H.~S.~M.~Coxeter, \emph{Projective Geometry}, 2nd ed., Springer, New York (1987).
+\bibitem{SempleKneebone1952} J.~G.~Semple and G.~T.~Kneebone, \emph{Algebraic Projective Geometry}, Clarendon Press, Oxford (1952).
+\bibitem{Humphreys1972}
+J.~E. Humphreys,
+\emph{Introduction to Lie Algebras and Representation Theory},
+Graduate Texts in Mathematics~\textbf{9}, Springer-Verlag, New York (1972).
+\bibitem{Mackenzie2005} K.~C.~H.~Mackenzie, \emph{General Theory of Lie Groupoids and Lie Algebroids}, London Mathematical Society Lecture Note Series \textbf{213}, Cambridge University Press (2005).
+\bibitem{Harris1979} J.~Harris, \emph{Galois groups of enumerative problems}, Duke Math.\ J.\ \textbf{46} (1979), no.~4, 685--724.
+
+%  r2376+c54.9: entries below were cited but undefined -- the citations printed as [?]
+\bibitem{JanzenDynamics} D.~Janzen, \emph{Why the cut bends: the dynamics of the de Sitter cut, the confined gravitational wave, the generative boundary of the slicing operator, and chirality as the turning of the polarization plane}, companion paper (P11).
+\bibitem{Nariai1951} H.~Nariai, \emph{On a new cosmological solution of Einstein's field equations of gravitation}, Sci.\ Rep.\ T\^ohoku Univ.\ Ser.\ I \textbf{35} (1951) 62; reprinted in Gen.\ Rel.\ Grav.\ \textbf{31} (1999) 963.
+\end{thebibliography}
+
+
+\input{appendix_receipts_P05}
+
+\end{document}

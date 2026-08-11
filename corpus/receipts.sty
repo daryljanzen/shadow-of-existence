@@ -1,0 +1,13 @@
+%% receipts.sty -- in-place citations for computational receipts, resolving to "Appendix R".
+%% Usage: \usepackage{receipts}; mark a receipt-worthy computation in the body with \rcpt{key},
+%% where key is the receipt's filename stem (e.g. \rcpt{P01_metric_singularity_algebra}). The marker
+%% is an unobtrusive superscript R; with hyperref loaded it links to the Appendix R entry \label{rcpt:key}.
+%% The appendix itself is GENERATED from receipts/INDEX.md by make_receipt_appendix.py -- never hand-kept.
+\ProvidesPackage{receipts}[2026/07/21 v1 Computational receipt citations]
+\newcommand{\rcptmarker}{\textsuperscript{\normalfont\scriptsize\textsf{R}}}
+\newcommand{\rcpt}[1]{\rcptmarker}                 % base: plain unobtrusive marker
+\AtBeginDocument{%
+  \@ifpackageloaded{hyperref}{%
+    \renewcommand{\rcpt}[1]{\texorpdfstring{\hyperref[rcpt:#1]{\rcptmarker}}{}}%
+  }{}%
+}

@@ -1,0 +1,21 @@
+"""Is the isotropy jump the MECHANISM prop:single states combinatorially?
+The reassignment promotes a null direction to timelike.  Count the isometries and ask what
+structure each geometry offers for that promotion."""
+print("   GENERIC SdS  (two distinct horizons, sigma-paired vantages):")
+print("      isometry: static Killing field (1) + SO(3) (3) = 4")
+print("      structure: a timelike Killing field and a 2-sphere.")
+print("      2D Lorentzian factor?  NO -- the (t,r) block is not a symmetric-space factor;")
+print("      the metric function f(r) varies, so there is no SO(2,1) acting on it.")
+print()
+print("   NARIAI  (double root, discriminant zero, Lambda M^2 = 1/9):")
+print("      geometry: dS_2 x S^2")
+print("      isometry: SO(2,1) (3) + SO(3) (3) = 6")
+print("      2D Lorentzian factor?  YES -- dS_2, whose SO(2,1) acts transitively on its null directions.")
+print()
+print("   => 4 -> 6, and the two added generators are the BOOSTS of the dS_2 factor.")
+print("      SO(2,1) on dS_2: the null directions form a single orbit, so a null generator can be")
+print("      carried to any other -- and promoted -- by an isometry the geometry itself supplies.")
+print()
+print("   at a GENERIC vantage there is no such factor and no such orbit: the promotion has")
+print("   nothing acting on it.  That is prop:single's 'forbidden by the two-cycle structure',")
+print("   read geometrically rather than combinatorially.")

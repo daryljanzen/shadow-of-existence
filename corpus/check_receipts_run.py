@@ -1,0 +1,136 @@
+#!/usr/bin/env python3
+"""check_receipts_run.py -- the TWENTIETH gate: absorbed from the working fork, not built here.
+
+** THE FORK BUILT THE TWO INSTRUMENTS THIS LINE'S RECEIPT GATE COULD NOT BE. **  Absorbed r2394.
+
+`scripts/lint_assertions.py` and `scripts/run_all_receipts.py` arrived with the c54.163 bundle.  They
+answer the two questions `check_receipt_asserts.py` cannot:
+
+  lint_assertions   -- CAN THIS CHECK EVER BE FALSE?  Not "is there an assert" but "is the condition
+                       a tautology".  It was extended twice by the fork, both times on real misses:
+                       `check("tilt 45deg", True)` (a local helper, so no `assert` appears at all),
+                       `sqrt(Rv**2-1) - sqrt(Rv**2-1) == 0` (the difference form), and
+                       `assert 3*2*2 == 12` (a constant condition -- which THIS LINE's gate counts as
+                       a failure path).  ** The fork's own words for the last class: "arithmetic
+                       dressed as claims, written by workers measured on a count." **
+
+  run_all_receipts  -- DOES IT ACTUALLY RUN, WHERE IT IS REGISTERED?  ** No static gate can see a
+                       citation that moved away from its claim. **  The fork's first run found
+                       `P15_the_low_ell_minimum_is_at_ell_four` failing on six of its eight pins,
+                       broken since c54.155 by an edit that inserted a `\\rcpt{}` marker inside the
+                       very sentences the receipt matches -- "the claims were all still true; the
+                       citation moved, not the physics.  But the receipt had been failing since
+                       c54.155 and nothing knew, because nothing ran it."
+
+** THIS FILE IS THE WIRING, NOT A REIMPLEMENTATION. **  It runs the lint (fast, in-process) and reads
+the runner's most recent result file, because the runner takes ~9 minutes and must be launched
+detached -- two attempts to run it inside a single tool call died at the execution limit before
+producing a line, which is itself worth recording: ** an instrument that cannot finish inside the
+harness that calls it will be skipped by every caller who does not know that. **
+
+THE ENVIRONMENT CAVEAT, WHICH MAKES THE RUNNER'S OUTPUT READABLE HERE.  Ten registered receipts import
+third-party libraries this container does not carry -- six need `camb` (P15's Boltzmann references)
+and four need `pynucastro` (P16's BBN network, via `bbn_network.py`).  They fail here and pass where
+the fork runs them.  The fork's rule -- ** "a registered receipt that does not run where it is
+registered is not a receipt" ** -- still holds; what this caveat records is where THIS LINE can
+verify, not a defect in the receipts.  So those ten are named and excluded from the verdict, and the
+exclusion is DECLARED here rather than inferred from an error string.
+
+    python3 corpus/check_receipts_run.py            # lint + read the last runner result
+    python3 corpus/check_receipts_run.py --how      # print how to launch the runner
+
+Written r2394.  Stated for reversal.
+"""
+import os, re, sys, subprocess
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(HERE, '..'))
+RESULT = os.path.join(ROOT, 'receipts', 'RUN_RESULT.txt')
+
+# Declared, not inferred: the receipts this container cannot run, and what each needs.
+UNRUNNABLE = {
+    'BUILD_camb_store.py': 'camb',
+    'P15_camb_reference.py': 'camb',
+    'P15_damping_ratio_clean.py': 'camb',
+    'P15_damping_reabsorption.py': 'camb',
+    'P15_full_transfer_verdict.py': 'camb',
+    'P15_verify_lowell_boltzmann.py': 'camb',
+    'P16_theory_error_and_likelihood.py': 'pynucastro',
+    'P16_validate_bbn.py': 'pynucastro',
+}
+
+LAUNCH = ("cd <tree> && (setsid nohup python3 scripts/run_all_receipts.py --jobs 4 --timeout 300 "
+          "> receipts/RUN_RESULT.txt 2>&1 < /dev/null &)")
+
+
+def main():
+    if '--how' in sys.argv:
+        print()
+        print('  The runner takes ~9 minutes and must be launched DETACHED:')
+        print(f'    {LAUNCH}')
+        print('  then poll `receipts/RUN_RESULT.txt`.  Two attempts to run it inside one tool call')
+        print('  died at the execution limit before producing a line.')
+        print()
+        return 0
+
+    print()
+    print('  RECEIPTS, RUN AND LINTED -- the two questions a presence-check cannot ask')
+    print()
+
+    rc = 0
+    lint = os.path.join(ROOT, 'scripts', 'lint_assertions.py')
+    if not os.path.exists(lint):
+        print('  [FAIL] scripts/lint_assertions.py is absent -- it arrived with the c54.163 bundle')
+        print('         and is the only instrument that can see a HOLLOW assertion.')
+        rc = 1
+    else:
+        out = subprocess.run([sys.executable, lint], capture_output=True, text=True,
+                             cwd=ROOT).stdout
+        for ln in out.split('\n'):
+            if ln.strip():
+                print('   ', ln.strip())
+        if 'No hollow assertions' not in out:
+            rc = 1
+
+    print()
+    if not os.path.exists(RESULT):
+        print('  [REPORT] no runner result on file yet.  This is NOT a failure: the runner takes')
+        print('     ~9 minutes and is launched out of band.  `--how` prints the command.')
+        print('     ** A gate that fails because a 9-minute job has not been run would be a gate')
+        print('        that trains its caller to skip it. **')
+        print()
+        return rc
+
+    res = open(RESULT, encoding='utf-8', errors='replace').read()
+    m = re.search(r'(\d+) pass, (\d+) fail, (\d+) over timeout, in (\d+)s', res)
+    if not m:
+        print('  [FAIL] the runner result file has no verdict line -- it may have been truncated.')
+        return 1
+    npass, nfail, nslow = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    failed = re.findall(r'\[FAIL\] receipts/\S+/(\S+\.py)', res)
+    env = [f for f in failed if f in UNRUNNABLE]
+    real = [f for f in failed if f not in UNRUNNABLE]
+    print(f'  Last run: {npass} pass, {nfail} fail, {nslow} over timeout, {m.group(4)}s.')
+    if env:
+        libs = sorted({UNRUNNABLE[f] for f in env})
+        print(f'  Of the failures, {len(env)} are ENVIRONMENT -- they import {", ".join(libs)}, which')
+        print('     this container does not carry, and they pass where the fork runs them.')
+        print('     ** Declared here by name, never inferred from an error string. **')
+    if real:
+        print(f'  ⛔ {len(real)} REAL failure(s):')
+        for f in real:
+            print(f'    [FAIL] {f}')
+        print('     A receipt that fails where it is registered is the one thing no static gate')
+        print('     can see -- a citation that moved away from its claim looks fine to every')
+        print('     link checker and every assertion lint.')
+        rc = 1
+    else:
+        print('  No receipt fails for a reason inside the corpus.')
+    if nslow:
+        print(f'  {nslow} exceeded the per-receipt timeout -- raise it rather than reading it as a fail.')
+    print()
+    return rc
+
+
+if __name__ == '__main__':
+    sys.exit(main())

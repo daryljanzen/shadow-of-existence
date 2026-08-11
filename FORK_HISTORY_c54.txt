@@ -1,0 +1,57 @@
+cd91723e3611a45d2a3ec9144bc134c190848dec  2026-08-09  r2376+c54.93 — L-135 struck and the landing debt paid: P3 gains sec:winding, where closure on both horn-headed arrangements FORCES the thirds with no Standard Model input and the Z_3 sheet index supplies the closure rule rather than receiving it; P14 gains the affine isospin exchange w -> 1/3 - w, the SM's own Q -> Y - Q with the constant unfitted; no uncited receipt from this fork remains
+32a257a57b1b56a4e918891de7a122385c30b697  2026-08-09  r2376+c54.92 — L-91 struck: the flavour literature's own criterion says a cyclic group cannot organise generations into a multiplet, so the corpus's threeness is a DECK symmetry and not a horizontal one; and the same one-dimensionality that bounded the isospin sector bounds this one, landed in P14 sec:scope as the discrete opening's uniform ceiling
+c5c0f0e057197a086828ba617508e229acf2aa0a  2026-08-09  r2376+c54.91 — L-110 struck, the sector's discharge condition fully disposed: T acts the same on both R-eigenspaces, so the construction supplies a species label and not SU(2)_L's chiral gauging, and the mismatch with the Standard Model is exactly one pair wide — recorded as a mismatch; P14's stale Delivered/Not-delivered list brought current with the colour arc
+5fc09cadfffb1881c29d8cf8cd3c804a35a4558d  2026-08-09  r2376+c54.90 — THE FOLD: the open-problems map's 27 live items enter the lead register as L-136..L-162 with their map codes as aliases; the map becomes a view rather than a second source of truth; cluster J registered at germ weight and off-runway; and L-91, L-110, L-135 made HOT as what this node owes
+ca670ec02b0687522fa86fd3ac13f791030032bf  2026-08-09  r2376+c54.89 — the landing audit propagated to THE_PLAN and THE_WEAVE: the weave has a direction of neglect, and both gates built in response police summaries rather than arguments
+91dff96e86cacb47b16ce7b36324821d282ecbc0  2026-08-09  r2376+c54.88 — the withdrawn identification found live in the REGISTER layer too: the ninth gate gains a second scope over the standing documents, five forward-facing registers corrected, nine documents exempted by name as historical records, and the open-problems ledger's family 6 brought current with the colour arc
+8aa2297401283354fe2f422030e347318a18d1b7  2026-08-09  r2376+c54.87 — the uncited-receipt debt measured and mostly paid: P3's proposition gains the sixth equivalence its own abstract announces; nine banked receipts land in P3, P14 and P17; four batch receipts marked as process records; and the winding/charge sector, banked in four receipts and carried by no paper, is registered as L-135 with the gate naming it
+7b26087d6380d5f88e27af030950d0c319fcb9bf  2026-08-09  r2376+c54.86 — the frontier and synthesis audit: P14's abstract asserted the identification its own section is titled after denying and predated its own central result, both fixed; P7's item 5 contradicted itself and its synthesis carried only the pre-arc su(3) route, both fixed; item 7 retired so the frontier stands at six; and check_withdrawn.py is the ninth gate, verified to fire on the pre-fix tree
+271e0e9359961fef0f076a246d199ceafd67ae25  2026-08-09  r2376+c54.85b — bundle cut: manifest, 48-commit fork history in plain text, and checksums for the two-part programme bundle
+39ef69c3babdec30c7d9596df2d66a95885b785a  2026-08-09  r2376+c54.85 — the four strategic grains propagated: the leads sweep written into THE_PLAN, THE_WEAVE, the open-problems ledger and the map, with every protected item's movement recorded as a narrowing
+190bdc0ec1a919e70d4cf4d0234926c3bc07493b  2026-08-09  r2376+c54.84 — the bounded slate is empty (L-08, L-13): the coverage screen re-run with its criterion as code and the per-probe partition published; and the taxonomy's last open alignment row closes as a non-alignment, Nariai naming two distinguished roots and colour admitting none
+fa5245db1c1592d65a87b6b4a6cf6ad8c9ee6dd3  2026-08-09  r2376+c54.83 — the dimension cluster struck (L-16, L-19, L-20, L-21, L-23) plus L-37: lambda^2/Omega_c^2 = D-3 exactly so the eikonal M-independence was never four-dimensional; the odd-D evenness accounts for four separate failures; and check_receipts' column lint is promoted from warning to failure, which immediately found two corrupted INDEX rows
+3d164d3ab8e4e276587244e8581f4f1c2a2dfc8e  2026-08-09  r2376+c54.82 — the R3 cluster finished (L-46, L-48, L-49): -r_0 is a horizon root exactly at odd D, so at odd D the geometry is its own R-image and the parity has nothing to relate; the designation split is an indexical, not the hierarchy; and R3's row is missing an object, not mis-ordered
+6ed6fe19875f98f7cfbf112ca4dcfbad5ef14001  2026-08-09  r2376+c54.81 — five struck (L-11, L-45, L-47, L-55, L-56): the causal trichotomy is a statement about which label differs, so colour is spacelike and isospin timelike; the triangle is the quotient by T; and P3's own open question is settled by its own transitivity result
+49af47d2158f18cb220413b548d60aa147c0e7bd  2026-08-09  r2376+c54.80 — L-110's S4 withdrawn structurally: no Z_2 grading has three blocks, so it asked a Z_2 for SU(2)_L's decomposition; and P14 now records that the two-bit match is a labelling, not a gauging
+94328d01570c0796b735bb1acc06d304f5ce5499  2026-08-09  r2376+c54.79 — L-69 and L-79 struck: the transverse plane is the A2 weight plane, so the Z_3-fixed centre is its origin and the fundamental has no zero weight; and F-6's tower is the kernel, not a tower
+591d97c01004ae7c181dc03af764622e1be91dd0  2026-08-09  r2376+c54.78 — L-110's S3 re-specified: colour is vector-like on singlets, so two recorded failures were measured against the wrong operator
+351a760d28c543de7e26893299c7b946baf6710e  2026-08-09  r2376+c54.77 — the eighth gate earns its keep: L-44, L-57 and L-108 struck, all three found by the scan
+2bb38d52e2b9e5f27114b741b48c19972e74c6bf  2026-08-09  r2376+c54.75-76 — L-02 and L-03 struck; check_supersession.py is the eighth gate, and it caught a strike I reported that never happened
+cbbebaeb8e01f7932dbe6a036c575bbff1583774  2026-08-09  r2376+c54.74 — L-06 and L-14 struck: the D=5 world loses more than handedness, and the A2 bridge does not run through A2
+479234940e865b4ecc3f87d2d50d22bc9d2078d3  2026-08-09  r2376+c54.73 — the oldest cohort: L-12 and L-05 struck, L-11 ungated and narrowed
+707ad1c561c36d52f070d903a1538973fb59f47b  2026-08-09  r2376+c54.72 — L-99 and L-102 struck: a vacuous theorem with a good reason, and an aberration factor whose direction was not free
+e1cb256bae9b8b0b3f9ee10295997954759bf2f7  2026-08-09  r2376+c54.71 — L-104 struck: the excentres are null-inert but NOT causally inert, and it yields a sixth equivalence for 2 alpha
+f208ad97d1034d04c0207a4e365c26a4cbb9558e  2026-08-09  r2376+c54.70 — L-60 struck: its class of error produced the session's largest drift while the lead sat open naming it
+2fdc38afb2307354affd88a3ab3c3723d0d61de9  2026-08-09  r2376+c54.69 — L-98 struck: P6's register boundary is a class with three members and an edge
+d1747df5e874804e88d805f6b30e44b694f7a825  2026-08-09  r2376+c54.68 — L-64's attack run against my own work; it lands on the table's closure, not its rows
+0e03a30eeb0952b58fada32ebd83a151d3c248d1  2026-08-09  r2376+c54.67 — the fermion tail worked as a cluster: two struck, one amended, two narrowed, and one lead PREDICTED the arc
+bc34436ac7cdbf10b7d8c51ead47b36febc0fa52  2026-08-09  r2376+c54.66 — it was not only P3: five papers carried the withdrawn identification
+5545d8fcd4815a3dd53272f27739dda5fcf87d3c  2026-08-09  r2376+c54.65 — the last three standing docs brought current; PROTECTED_OPEN gains checks 9 and 10
+61ccc68eaf425b99c032badccfa81f52f99c61b6  2026-08-09  r2376+c54.64 — check_grains.py, the seventh gate: grain freshness
+cbccd5bbdab08b6df62a3a83a48c4444a049d6de  2026-08-09  r2376+c54.63 — propagation completed into THE_PLAN, THE_WEAVE, the ledger banner, and A·5
+40cc90e70a60a5fcc247574164d428f5468dff03  2026-08-09  r2376+c54.62 — P14's new section rewritten from a log into a result (2,889 -> 1,454 words)
+d4dc40527e6434104da7f56aa07f2351d6c354e7  2026-08-09  r2376+c54.61 — ledger family (12) resolved from the other side; its own table was inverted
+1b5f9bc37a2e28a39340cd84c464428f20b806d5  2026-08-09  r2376+c54.60 — P3 carried an identification P14 withdrew 27 revisions earlier
+9ff9f5fdeed8e4d9c296230eb7de6c44e3910770  2026-08-09  r2376+c54.59 — the strategic grains were 17-22 revisions stale; propagation step 1
+a2c7116c328599649263080d477104962edcbb0d  2026-08-09  r2376+c54.58 — L-128 struck: P3 already said it, in its abstract, twice
+1c2346b2add9b27a5773659877e92152708caa82  2026-08-09  r2376+c54.57 — L-127 struck under rule 4, and doing so found two rank-3 bundles P14 was conflating
+6bcd194a2960349e7eb9e13aebc8d8893c4ab8dd  2026-08-09  r2376+c54.56 — L-130: statistics, not gauge; and it selects the group uniquely
+a838cca1bdc9eb60c0d0baf7aabd306a88ef4a81  2026-08-09  r2376+c54.55 — fixing the group does not help, and that is the result
+37a465a6a5196ecb70b6774c2bce8e1fbd5dd4e7  2026-08-09  r2376+c54.54 — L-129: the gap is ANTISYMMETRY, and under the full holonomy group it is the wrong state
+cf949d5170406b12442e2fb3c9cac971ff1ea2ee  2026-08-09  r2376+c54.53 — L-128's two debts worked; the risk became a result, and a reading was refuted by its own table
+4a365d1cd333db2a1a0f12bfcf48ceee8cdd6382  2026-08-09  r2376+c54.52 — L-128: the wall is a wall OF A HINGE, and that supplies L-127's missing generator
+523f3c9883820bc348b30493597d6360481874f3  2026-08-09  r2376+c54.51 — the lap orientation is DERIVED; c54.50's alarm was mine and is withdrawn
+5f1f247ce77fd3f0c7b48f5ae6daa90afbf91045  2026-08-09  r2376+c54.50 — L-127 worked: the bundle is the branching, not the substrate
+5b4b459ebcadddb4a6fff2f4c4c548556e3dd28d  2026-08-09  r2376+c54.49 — regroup: the ID space was lying, and two leads were lost
+9418569a6d919b8ad326d6d3fe0ff395bc68ccd6  2026-08-09  r2376+c54.48 — a topological label quantises and cannot scale; three gaps become one
+ddf38940498c36c5601953d021673d33fa6d7830  2026-08-09  r2376+c54.47 — L-123 dissolved: the Z_3 is the obstruction to charge being observable
+5609e9a3842991fe1cb88fb50083ca80a6bab843  2026-08-09  r2376+c54.46 — L-74 discharged: a field is route-labelled iff it is coloured
+54ced14ed6c918fcf7b214e091a30d5a8f2c93ff  2026-08-09  r2376+c54.45 — T descends to the turnaround; D_6 not Z_6; the colourless sector is four
+9a60d1707a506346a9ea11c890b7b16a8925fb60  2026-08-09  r2376+c54.44 — L-109 worked; the languishing HOT backlog cleared
+65ade7067e8c5391997b2f0471fdd7cc47f697dd  2026-08-09  r2376+c54.43 — panel (b) corrected: it is the complex r-plane, not the substrate
+f1205ab80ca16777c18f253dc45085026273762d  2026-08-09  r2376+c54.42 — L-88 answered NO; the count's last route closes; the turnaround is drawn
+1400d9f17d4a7d55b97c039b1f19f72f7bcc6b10  2026-08-08  r2376+c54.41 — the cut is written: planar iff M=0, and the obstruction IS the mass
+643c3f6f245bc149d5723ad14e1ed09ad8db3410  2026-08-08  r2376+c54.40 — the lift to dS5, and C.8 is promoted from pedagogical to load-bearing
+73c14ad3722d486d1ddaff62c5343c629169d16f  2026-08-08  r2376+c54.39 — the two threes collide, and it was my own withdrawn result
+fd79ea93b5e1aadac46ea00660f01c0f01071302  2026-08-08  r2376+c54.37 — two corrections and the count specified, all on Daryl's instruction
+91efb89160eff9afe7a3bb5dfab45feaf4ed35e5  2026-08-08  r2376+c54.36 — the U3 figure lands; L-107, L-96, L-59, L-52, L-90 worked

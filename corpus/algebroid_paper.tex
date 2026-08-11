@@ -1,0 +1,344 @@
+\documentclass[11pt,a4paper]{article}
+
+% =====================================================================
+% [†ONT-ALG] CONSTRAINT-ALGEBRA GRADING — this paper is the HOME (ONTOLOGY_FOUNDATION_INDEX.md §1h).
+%   THE STRUCTURAL KEYSTONE, and the claim is A RECOGNITION, NOT AN ADDITION: "the algebroid was already
+%   there, in GR's own constraint algebra, WAITING FOR THE BASE."
+%   Established here: GR's Dirac (hypersurface-deformation) algebra is not a Lie algebra but a Lie
+%   ALGEBROID — its structure FUNCTION is the inverse spatial metric — and it has lacked a base and a
+%   section. CR supplies both: base = the space of cuts C of dS_5 = SO(5,1)/SO(4,1); section = the cosmic
+%   clock (P10). THE FIFTH DIMENSION IS FORCED: "the construction generates MANY DISTINCT four-geometries
+%   from ONE substrate, and slicing a four-dimensional de Sitter space ONLY RE-COORDINATIZES IT."
+%   *** TWO OPERATIONS, SPLIT ON DIMENSION — NEVER FUSE THEM. SLICING is codimension-one and
+%   DIMENSION-REDUCING ("the operation that forces the substrate up to five dimensions"), and it is what
+%   the continuous so(5,1) |x C realizes. REASSIGNMENT (the NBC, the f>0 hole / f<0 cosmos) is
+%   DIMENSION-PRESERVING AND DISCRETE. "The continuous algebroid IS THE SLICING STRUCTURE; reassignment is
+%   a distinct discrete operation." ***
+%   THE ANCHOR is the ADM data read as functions of the cut: ENERGY (the leaf) = the Hamiltonian
+%   constraint, matter the leaf's intrinsic-curvature departure from the round substrate leaf; MOMENTUM
+%   (the shift) = THE BEND IN THE SHIFT, a clean functional of the shift alone, giving omega = C_0 +
+%   2J/r^3 with J = M. That the anchor is purely intrinsic is worth a word, since the Hamiltonian constraint of the Arnowitt--Deser--Misner decomposition carries an extrinsic contribution as well. On the sector these results are proven for it vanishes: the cuts are static, so the induced metric is independent of the foliation parameter and the shift is zero, and the extrinsic curvature of every leaf is identically zero\rcpt{E1_static_gauge}. The constraint is then intrinsic alone, which is why the anchor may be stated in intrinsic terms without loss, and why the pure de~Sitter cut is totally geodesic rather than merely highly symmetric. In the cosmological reassignment the leaves do expand and the extrinsic contribution is not zero; there it is carried by the lapse, the foliation stacking rate, which for a homogeneous leaf holds the same information---the trace of the extrinsic curvature being three times that rate.a/Xi^2; STRESS (the lapse) = the lapse split (A=f => p_r=-rho); SIGNATURE (the
+%   vantage) = the causal orientation, the discrete datum. The four close as ONE functional of the cut ON
+%   THE SPHERICAL CLASS (general-cut functionals are open scope).
+%   prop:closure: at the symmetric cut so(5,1)=h+m, the symmetric-space grading [m,m] in h, [h,m] in m,
+%   [h,h] in h IS the hypersurface-deformation algebra TERM FOR TERM. "The algebraic shape that makes the
+%   Dirac algebra puzzling — two normal deformations bracketing into a tangential one — is EXACTLY THE
+%   SHAPE OF A SYMMETRIC-SPACE COSET: two coset directions bracketing into the isotropy. THEY ARE THE SAME
+%   GRADING." (m is no subalgebra; the sign IS the substrate curvature.)
+%   *** THE STRUCTURE-FUNCTION IDENTIFICATION IS *NOT* A NAIVE TENSOR EQUALITY. "h^{ab} is the RIEMANNIAN
+%   INVERSE SPATIAL 3-METRIC, whereas the coset metric of SO(5,1)/SO(4,1) is the LORENTZIAN 5-DIMENSIONAL
+%   FORM (Killing form on the coset ~ diag(+,-,-,-,-), signature (1,4)); THE IDENTIFICATION IS OF THE
+%   *REDUCED* STRUCTURE FUNCTION ON THE SYMMETRIC-CUT PATTERN WITH THAT COSET FORM." What makes it more
+%   than dimensional bookkeeping is THE SIGNATURE: "the indefinite, Lorentzian sign carried by the coset
+%   metric — SUPPLIED BY THE SUBSTRATE'S GEOMETRY, NOT INSERTED BY HAND — is the same indefiniteness
+%   standardly recognized as the 'WRONG SIGN' at the heart of the problem of time." Constant at the
+%   symmetric cut (so so(5,1) is a genuine LIE algebra there); varying over C (so the object is a genuine
+%   LIE ALGEBROID). "The problem-of-time obstruction is thus identified with A SINGLE GEOMETRIC FACT: the
+%   base-dependence of the substrate's symmetric-space metric." Read on the preferred foliation it
+%   deparametrizes to a true Hamiltonian: "the obstruction and its resolution are ONE OBJECT UNDER THE
+%   STATIC AND DYNAMIC VANTAGES." ***
+%   THE STRATIFICATION: the so(5,1)-action on C is NON-TRANSITIVE — R_ab R^ab = 6M^2/r^6 + 12/alpha^4
+%   separates different-mass cuts while ^3R = 2.Lambda does not — so THE MASS IS A MODULUS TRANSVERSE TO
+%   THE ORBITS (folding at the Nariai seam, where the offset-to-mass map is stationary). THE QUALIFIER IS
+%   *CONNECTED*: "no CONNECTED substrate isometry connects different-mass cuts, BUT AN ORIENTATION-
+%   REVERSING ONE DOES." The grading survives at EXACTLY TWO strata (Type O; Nariai) — and this is FORCED
+%   BY DIMENSION ALONE, independent of generator realization: the symmetric-pair isotropy dimensions of
+%   so(5,1) are {6,7,10}, so Type O (SO(4,1), ten) and Nariai (SO(2,1)xSO(3), six) sit at the only
+%   admissible dimensions, while every generic stratum (four, three, two, zero) is non-symmetric by
+%   dimension. The [m,m] LEAK elsewhere IS THE ALGEBROID CONNECTION.
+%   *** THE SMEARED CLOSURE IS A COROLLARY, NOT AN OPEN ITEM. Because the normal-normal structure function
+%   is the INVERSE LEAF METRIC — a MOMENTUM-INDEPENDENT tensor field, hence already fixed by the
+%   finite-mode identification — the smeared closure FOR ARBITRARY LAPSES holds on this sector, the bracket
+%   closing on the full momentum constraint, "so that the finite-mode homomorphism holds at the SMEARED,
+%   INFINITE-DIMENSIONAL level ON THIS SECTOR AS A COROLLARY." DO NOT REPORT IT AS AN OPEN BRACKET-CLOSURE.
+%   "What lies genuinely beyond the finite-so(5,1) pattern is NOT A RESIDUAL BRACKET-CLOSURE HERE but the
+%   free transverse degrees of freedom past the wall" — grounded in P11. THE ALGEBROID HANDS OFF AT THE WALL. ***
+%   *** THE SEAM/WALL DIVERGENCE: the isotropy-jump locus IS the metric-degenerate locus at the INNER end
+%   (the Nariai double root, discriminant zero at Lambda.M^2 = 1/9, geometry dS_2 x S^2, isotropy jumping
+%   four -> six) — THIS NARIAI DOUBLE ROOT IS THE SEAM (r=alpha/sqrt3) -- NOT the branch point, and NOT
+%   cosmogenesis, which is realised at r=0, a lap away. Nariai is the member the reassignment SELECTS;
+%   the seam is where its double root sits. THREE DISTINCT THINGS (naming rule r2155). [fossil fixed r2325] At the OUTER end they DIVERGE: THE
+%   WALL IS NOT A METRIC SINGULARITY (non-degenerate Type-N metric => no measure-collapse => not the
+%   finite-curvature species; vanishing curvature invariants => not the infinite-curvature species). And
+%   the wall's "isotropy zero" is the CUT-FIXING SUBSTRATE ISOTROPY, "which coincides with a geometry's own
+%   isometry on the symmetry-reducible sector but DIVERGES here, the Type-N geometry retaining ITS OWN
+%   LARGE ISOMETRY" — so the wall is no metric singularity BY THE MEASURE CRITERION, NOT FOR WANT OF A
+%   KILLING FIELD. "'Isotropy boundary' and 'metric singularity' COINCIDE AT THE INNER SEAM (NARIAI) BUT
+%   ARE TWO SPECIES OF DEGENERACY AT THE WALL." ***
+%   THE DISCRETE SKELETON: the cubic r^3 - alpha^2 r + 2M.alpha^2 has NO QUADRATIC TERM, so its three roots
+%   SUM TO ZERO — the A_2 configuration; in the gauge alpha=1 it factors as (r-r_0)(r^2 + r.r_0 + r_0^2 - 1),
+%   the quadratic factor THE FUNDAMENTAL ELLIPSE. The Weyl S_3 permutes the three zero-sum roots, 120 deg
+%   apart on the throat-image circle of radius 2/sqrt3 (r_k = (2/sqrt3) cos(phi - 2.pi.k/3); the reflection
+%   w <-> pi/3 - w about the NARIAI CREST the order-two generator).
+%   *** THE GEOMETRIC REALIZATION OF THE OUTER Z_2: R = diag(1,1,-1,1,1,1) in O(5,1) \ SO_0 — the reflection
+%   of the cut's displacement transverse to the symmetry axis. Verified: it is an isometry, det = -1 both
+%   globally and on the ruled three-block, IT SWAPS THE SUBSTRATE'S TWO NULL RULINGS (the comoving and
+%   synchronous congruences of the cosmology), and it sends r_0 -> -r_0 hence 2M -> -2M, CARRYING THE +M CUT
+%   TO THE -M CUT ACROSS EXACTLY THE SO_0-ORBITS THE CONNECTED ACTION CANNOT CROSS.
+%   WHY Aut(A_2) IS A *DIRECT* PRODUCT: "the two factors act on INDEPENDENT STRUCTURES — the three roots and
+%   the two rulings — AND THE INVERSION IS CENTRAL.~The audit behind this count, its receipts, and the splits that cut its law are collected in the programme's combinatorics ledger (\texttt{COMBINATORICS\_LEDGER.md})."
+%   "THE DOUBLE-RULING SWAP, THE ORIENTATION PARITY O(5,1)/SO_0, THE A_2 DIAGRAM AUTOMORPHISM, AND THE
+%   GRAVITON CHIRALITY ARE ONE AND THE SAME Z_2." And a FIFTH, FERMIONIC FACE: dS_5 ~ R x S^4 is spin with a
+%   UNIQUE SPIN STRUCTURE, inherited by the cut, and R — reflecting the transverse cut-normal and so FIXING
+%   ALL FOUR SPACETIME LEGS — ACTS ON THE CUT'S NATURAL SPINOR AS THE CHIRALITY OPERATOR gamma^5 ITSELF, so
+%   THE ORIENTATION PARITY *IS* THE CHIRALITY GRADING. (Grounded: "the parity MEASURES chirality, THE
+%   EXCHANGE READING EXCLUDED BY EXPLICIT COMPUTATION.") THE SAME Z_2 GRADES MASS IN BOTH FACES — the
+%   geometric 2M -> -2M and the R-odd fermion mass term — "so MASS, GEOMETRIC OR FERMIONIC, IS ITS ONE
+%   R-ODD DATUM; the chiral content this parity would grade is NOT BUILT HERE." ***
+%   *** THE A_2 IS THE DISCRETE WEYL SHADOW ONLY, and on dS_5 it is SETTLED NEGATIVELY: the zero-sum roots
+%   furnish a Cartan element of su(3) and S_3 its Weyl group — "the Cartan-Weyl skeleton, A *NECESSARY*
+%   INGREDIENT" — but a continuous su(3) isometry would have to embed in the substrate's rotation group, and
+%   SU(3) is NOT in SO(5) (smallest faithful real rep six-dimensional), so NO SUCH ISOMETRY EXISTS ON dS_5.
+%   [SHARPENED r2376 c54.7: "a six-dimensional substrate" is loose. su(3) is COMPACT, so it must sit in the
+%   isotropy's maximal compact so(D-1), and its smallest faithful REAL rep is 6-dim => a LORENTZIAN substrate
+%   needs D>=7. And since su(3) on R^6 is real-irreducible (no invariant 3-plane) while P7 makes the 3-dim
+%   LAYER the existent, the su(3) block must be disjoint from it => D>=10. Working: THE_QUANTUM_JOINT SKETCH 8b.]
+%   A six-dimensional substrate would PERMIT one, "WHICH THE CONSTRUCTION PERMITS BUT DOES NOT FORCE — and a
+%   structure a framework merely PERMITS, as against one it REQUIRES, is on the programme's criterion of
+%   necessity NO EXPLANATION BUT A DESCRIPTION" (R2, [†ONT-EPI] §1g). ASSERT NEITHER THE CONTINUOUS su(3)
+%   NOR THE DIMENSIONAL RISE. We make NO CLAIM that the discrete operations unify into a single action. ***
+%   The two factors descend onto a spinor sector BY DIFFERENT KIND: the Z_2, BEING a substrate isometry,
+%   acts as the GAUGED grading gamma^5; the Weyl S_3 is NO substrate isometry (its continuous parent walled;
+%   a single Dirac spinor carrying no three-fold to realise it), so a family symmetry it would grade is
+%   GLOBAL. "Gauged chirality with global flavour is the Standard Model's own arrangement, HERE NOT ASSUMED
+%   BUT FOLLOWING FROM WHICH OF THE TWO FACTORS IS AN ISOMETRY."
+%   ALTITUDE: the closure is on the SYMMETRY-REDUCIBLE SECTOR (so(5,1) is fifteen-dimensional; the full
+%   hypersurface-deformation algebra is infinite-dimensional). The wall is the BOUNDARY of the action
+%   algebroid; beyond it the algebroid DOES NOT CLAIM the free transverse degrees of freedom. And p0's
+%   "the rungs are one fact" is "A READING ADVANCED THERE, AT THAT READING'S WEIGHT; here the algebroid rung
+%   STANDS ON ITS OWN, on the symmetry-reducible sector."
+%   % =====================================================================
+% CANON NOTE — LIVE OPERATING PHILOSOPHY
+%
+% CR is ONTOLOGICAL, not merely representational. The de Sitter substrate
+% is real; the cuts are real spatial leaves; "the home the pieces sit in"
+% is a structural claim about real geometry, built-by-construction-and-REAL.
+%
+% REGISTER: recognition, not proposal. The constraint algebra is GR's own
+% (Dirac/ADM), unchanged. The thesis is NOT "CR adds an algebroid" but
+% "GR's hypersurface-deformation algebra was ALWAYS a Lie algebroid --
+% structure functions, not constants -- lacking a base and a section; the
+% substrate supplies both, and on the symmetry-reducible sector the
+% identification closes as a calculation."
+%
+% STATUS: FIRST DRAFT (r216), assembled from corpus/algebroid_base_and_
+% substrate.md + anchor_consolidation.md + algebroid_closure_consolidation.md
+% (Moves 4-7, 11). Stated for review. HONESTLY SCOPED: closure is on the
+% symmetry-reducible (finite so(5,1)) sector; the per-stratum subalgebra
+% grading is now computed (symmetric at Type O and Nariai only, the
+% connection elsewhere). [r916 update, from the paper's own §scope:] the
+% SMEARED, infinite-dimensional homomorphism ON THIS SECTOR now follows as a
+% COROLLARY — the normal-normal structure function being the inverse leaf
+% metric, a momentum-independent tensor field already fixed by the finite-mode
+% identification — so it is NOT an open item. What lies genuinely beyond the
+% finite so(5,1) pattern is the free transverse sector past the wall, grounded
+% in the dynamics paper; the algebroid hands off to it there. Compiles clean
+% (9pp, 0 undefined); bib keys reconciled.
+% =====================================================================
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{receipts}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\newcommand{\so}{\mathfrak{so}}
+\newcommand{\fh}{\mathfrak{h}}
+\newcommand{\fm}{\mathfrak{m}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\Hc}{\mathcal{H}}
+\newcommand{\dS}{\mathrm{dS}}
+\newcommand{\su}{\mathfrak{su}}   % r2376+c54.9: used but undefined -- the paper did not compile
+
+\title{General relativity's constraint algebra as the symmetric-space\\
+structure of a de Sitter substrate:\\
+\large the action Lie algebroid of the symmetry-reducible sector,\\ and the problem of time's ``wrong sign'' as the substrate's coset signature}
+\author{Daryl Janzen\\
+\small Department of Physics and Engineering Physics\\
+\small University of Saskatchewan}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The canonical constraint algebra of general relativity---the hypersurface-deformation (Dirac) algebra---is not a Lie algebra: the bracket of two normal deformations closes on the tangential generators with a coefficient that is the inverse spatial metric, a structure \emph{function} rather than a constant. It is, in the precise modern sense, a Lie \emph{algebroid}, and it has lacked the two things an action algebroid needs: a base on which the structure functions vary, and a section selecting a flow. Cosmological Relativity supplies both, and the claim is a recognition rather than an addition: the algebroid was already there, in general relativity's own constraint algebra, waiting for the base. The base is the space of cuts $\C$ of a de Sitter substrate $\dS_5=SO(5,1)/SO(4,1)$---the fifth dimension forced, since the construction generates many distinct four-geometries from one substrate and slicing a four-dimensional de Sitter space only re-coordinatizes it---and the section is the substrate's cosmic clock~\cite{JanzenCanonicalTime}. Two operations move between geometries and must not be fused: \emph{slicing}, codimension-one and dimension-reducing, which is what the continuous $\so(5,1)\ltimes\C$ realizes; and \emph{reassignment}, dimension-preserving and discrete, the null-boundary correspondence. The continuous algebroid is the slicing structure. We construct the action Lie algebroid $\so(5,1)\ltimes\C$ and verify its defining structure on the symmetry-reducible sector. (i) The \emph{anchor}---the map from an infinitesimal cut-deformation to its stress-energy---is the Arnowitt--Deser--Misner data read as functions of the cut: energy is the Hamiltonian constraint (the bend of the leaf), momentum the bend of the shift, with the four data closing as one functional~\cite{JanzenOperator,JanzenRange}. \emph{Read that way the asymptotic mass problem loses its subject.} A conserved charge in an asymptotically-de~Sitter spacetime is widely held not to be well defined, and the constructions disagree on Schwarzschild--de~Sitter itself~\cite{JanzenSlicing}; but on this anchor \emph{energy is not a global charge at all}---it is the Hamiltonian constraint, a local functional of the cut's own bend, defined wherever there is a leaf and needing no boundary at which to be evaluated. The difficulty is not that the global object is hard to construct but that it is the wrong kind of object: \emph{the anchor supplies energy pointwise on the leaf, and the asymptotic charge is an attempt to recover at a boundary what was never boundary data}. (ii) The cut-deformation bracket \emph{closes}: at the symmetric cut $\so(5,1)=\fh\oplus\fm$ with $\fh=\so(4,1)$ the cut-fixing isotropy and $\fm$ the cut-deforming coset, and the symmetric-space relation $[\fm,\fm]\subset\fh$ holds; under $\fm\leftrightarrow\Hc_\perp$, $\fh\leftrightarrow\Hc_a$ the symmetric-space grading is the Dirac algebra term for term. (iii) The Dirac structure \emph{function}---the inverse spatial metric---is, on this reduction, identified with the substrate's coset metric, whose Lorentzian signature is the problem-of-time ``wrong sign'': constant at the symmetric cut, so the algebra is genuinely Lie there, and varying over $\C$, so the object is genuinely an algebroid; this base-dependence is the canonical root of the problem of time. (iv) The isotropy stratification reproduces the range/Petrov classes of the construction, and its boundaries coincide with the metric-singular seams at the inner end (the Nariai double root) but \emph{diverge} at the wall, which is a regular radiative boundary and not a metric singularity~\cite{JanzenBHcausality}. (v) The finite discrete skeleton acts at the strata as distinct boundary operations organized by the horizon cubic: the Weyl $S_3$ permuting the three zero-sum roots, together with the outer $\mathbb{Z}_2$---the central inversion $r_0\mapsto-r_0$ (mass-reflection $2M\mapsto-2M$), realized geometrically as the swap of the substrate's two null rulings and the orientation parity $\mathrm{O}(5,1)/\mathrm{SO}_0(5,1)$---giving the full $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2\cong D_6$~\cite{JanzenGroupoid} in its pivot-and-ruling geometry; that one orientation $\mathbb{Z}_2$ threads the symmetric and radiative faces alike (the mass-reflection, the graviton's two helicities, the chirality of the turning polarization plane past the wall~\cite{JanzenRange,JanzenDynamics}), and carries a further, fermionic face: $\dS_5\simeq\mathbb{R}\times S^4$ is spin with a \emph{unique} spin structure, inherited by the cut, and the reflection---fixing all four spacetime legs---acts on the cut's natural spinor as the chirality operator $\gamma^5$ itself, so the orientation parity \emph{is} the chirality grading, the exchange reading excluded by explicit computation; the same $\mathbb{Z}_2$ grades mass in both faces, the geometric $2M\mapsto-2M$ and the $R$-odd fermion mass term, so that mass, geometric or fermionic, is its one $R$-odd datum. The two factors act on independent structures---the Weyl $S_3$ on the three roots, the inversion on the two rulings---and the inversion is central, which is why the automorphism group is the direct product. Those two structures are the two relations a figure can bear to one circle: the substrate's null rulings \emph{are} the tangents to its waist, and the three roots are the three special points \emph{on} that same circle, so the product factorises because \emph{on} and \emph{tangent} are independent---and the factors differ in kind for the same reason, a tangent being a line of the substrate while a root labels a different cut. The $A_2$ here is the discrete Weyl shadow only: $SU(3)\not\subset SO(5)$, so no continuous $\mathfrak{su}(3)$ isometry lives on the substrate---a six-dimensional one would permit it, which the construction does not force. The closure is on the symmetry-reducible sector---finite $\so(5,1)$, not the full infinite-dimensional algebra---but it is not confined to the finite mode pattern: because the normal--normal structure function is the inverse leaf metric, a momentum-independent tensor field already fixed by the finite-mode identification, the smeared closure for arbitrary lapses follows on this sector as a corollary, the bracket closing on the full momentum constraint. \emph{A further identification is established here.} The discrete skeleton the corpus reads off the horizon cubic is $\mathrm{Aut}(A_{2})=S_{3}\times\mathbb{Z}_{2}$, of order twelve; adjoining the holonomy of the residue pairing about the branch points---a Klein four-group, arising as the per-root resolution of $\sqrt{\Delta}$---closes $W(A_{3})$ in its Weyl embedding, and with the orientation parity a group of order forty-eight. The embedding is verified rather than inferred: all six order-four elements are improper, the signature of the full tetrahedral group and not of the chiral octahedral one. Since $A_{3}\cong D_{3}$ is the root system of $\so(6,\mathbb{C})$, the complexification of the substrate's own isometry algebra, with $A_{2}$ inside it by deleting one node, the sector's discrete group is the substrate's own, and what the corpus had been using is the sub-root-system obtained by reading only the cubic. This concerns the discrete structure alone: a finite group, however enlarged, is not a Lie algebra. What lies genuinely beyond the finite pattern is therefore not a residual bracket-closure here but the free transverse degrees of freedom past the wall, whose nonlinear $\Lambda>0$ dynamics and future stability are grounded in the companion dynamics paper~\cite{JanzenDynamics}: the algebroid hands off to them at the wall, and we mark plainly what that leaves open.
+\end{abstract}
+
+\section{Introduction: an algebroid without a base}\label{sec:intro}
+
+In the canonical formulation of general relativity, deformations of a spatial hypersurface generate an algebra~\cite{Dirac1964,ADM1962,Teitelboim1973}: with $\Hc_\perp$ the normal (Hamiltonian) constraint and $\Hc_a$ the tangential (momentum) constraint, smeared with lapse and shift,
+\begin{align}
+\{\Hc_a[N^a],\Hc_b[M^b]\} &= \Hc_a\bigl[[N,M]^a\bigr],\\
+\{\Hc_a[N^a],\Hc_\perp[M]\} &= \Hc_\perp\bigl[N^a\partial_a M\bigr],\\
+\{\Hc_\perp[N],\Hc_\perp[M]\} &= \Hc_a\bigl[h^{ab}(N\,\partial_b M-M\,\partial_b N)\bigr].\label{eq:HH}
+\end{align}
+The last bracket is the decisive one. Its coefficient $h^{ab}$ is the inverse spatial metric---a field on the hypersurface, not a constant. The hypersurface-deformation algebra is therefore not a Lie algebra but a Lie \emph{algebroid}~\cite{Mackenzie2005}: the brackets carry \emph{structure functions}, and the failure of those functions to be constant is exactly what makes the canonical generator of normal deformation a constraint to be solved rather than a Hamiltonian that evolves~\cite{Kuchar1992,Isham1993,BojowaldHDA}. This structure-function feature is standardly recognized as the obstruction at the heart of the problem of time.
+
+An action Lie algebroid is a Lie algebra acting on a base manifold, with an anchor mapping algebra elements to vector fields on the base and structure functions varying over it. General relativity's constraint algebra has the structure-functions but has never been given the base they vary over, nor a section of the bundle that would select a definite flow. This paper supplies both, from the geometry of Cosmological Relativity. The base is the space of \emph{cuts} of a de Sitter substrate; the acting algebra is the substrate's isometry $\so(5,1)$; the anchor is the slicing operator's cut-to-stress-energy map~\cite{JanzenOperator}; and the section is the cosmic clock that turns the constraint into a true Hamiltonian~\cite{JanzenCanonicalTime}. The claim is a recognition, not an addition: the algebroid was already there, in GR's own constraint algebra, waiting for the base.
+
+We verify the construction's defining identities on the \emph{symmetry-reducible sector}---the cuts a substrate isometry can reach, which is exactly the range of the slicing construction~\cite{JanzenRange}---and we are explicit, throughout and in Section~\ref{sec:scope}, that this is where the verification lives: $\so(5,1)$ is finite-dimensional, the full Dirac algebra is not, and the closure is the finite, symmetry-reducible reduction, not a claim about the entire infinite-dimensional algebra.
+
+\section{The substrate, the base, and the two operations}\label{sec:substrate}
+
+The substrate is a single five-dimensional de Sitter manifold $\dS_5$, a hyperboloid in the flat ambient $M^6$, with isometry $\so(5,1)$; the four-dimensional geometries of the symmetric sector are generated as cuts of it~\cite{JanzenOperator,JanzenSlicing}. (The dimension is bounded below here and pinned elsewhere, and the two should not be run together. The
+construction generates \emph{many distinct} four-geometries from \emph{one} substrate, and slicing a
+four-dimensional de Sitter space only re-coordinatizes it---which excludes $\dS_4$ and yields $D\ge5$, a lower
+bound and not an equality. \emph{No upper bound is established anywhere in this framework.} The companion's
+ontological commitments fix only the \emph{existent}---a one-parameter family of \emph{three}-dimensional
+layers, the sole dimensional statement in any of its axioms---and require of the representation only that it
+admit them as spacelike hypersurfaces, so that $\dim M\ge4$ with the projection explicitly
+non-unique~\cite{JanzenCRframework}; the empirical forcing is of the foliation, likewise a
+floor~\cite{JanzenModernParallax}. $\dS_5$ is accordingly the \emph{minimal} substrate sufficient for the
+symmetry-reducible sector built here---a modelling economy, not a derived maximum---and the polar structure
+does not close the gap either: the polar of a spacelike substrate point is $\dS_{D-1}$ in \emph{every}
+dimension~\cite{JanzenGeometricCore}, which relates the rungs without capping
+them.\rcpt{P12_polar_dimension} \emph{Nor can least-arbitrariness close it}: it prefers the structure requiring
+no choice of how to break a symmetry, and $\dS_D$ is maximally symmetric and moduli-free for every $D$, so it
+selects the manifold \emph{at fixed dimension} and is silent on the dimension
+itself~\cite{JanzenShadowExistence}. \emph{Reading $\dS_5$ as a ceiling would set a feature by hand, which
+Rule~3 counts as maximally arbitrary rather than least.} One thing \emph{is} settled, and it is a different
+object: the \emph{cut's} dimension. The matter sector shows that the horizon relation collapses to a single
+multiple-angle in the sky angle only at four and five spacetime dimensions, and that the mass-parity grading
+chirality exists only in even dimension, so a four-dimensional cut is the only one carrying both a generation
+count and a handedness~\cite{JanzenSlicing,JanzenMatter}. That settles the geometry the slicing operator
+delivers, not the substrate it is delivered from; the grading below is accordingly the \emph{last} step of any
+descent ending at a four-geometry, and constrains the rung immediately above spacetime rather than the top of
+the ladder.) Crucially, $\dS_5$ is a \emph{symmetric space}~\cite{Helgason1978},
+\begin{equation}
+\dS_5 = SO(5,1)/SO(4,1),
+\end{equation}
+and this is the structural fact the whole construction turns on. At a maximally symmetric (vacuum) cut, the subalgebra of $\so(5,1)$ fixing the leaf is $\fh=\so(4,1)$ (ten-dimensional), and the cut-\emph{deforming} directions are the coset $\fm$ (five-dimensional, the normal carrying one leaf to the next): $\so(5,1)=\fh\oplus\fm$.
+
+The base $\C$ is the space of cuts. A cut is fixed by an orientation datum---how the slicing curve is aimed into the geometry (the reticle orientation $r_0$, with the mass a determined function of it, not a free parameter)~\cite{JanzenSlicing}---together with a causal-vantage datum. Two distinct operations move between geometries, split on what they do to dimension: \emph{slicing}, codimension-one and dimension-reducing, which is the operation that forces the substrate up to five dimensions and which the continuous $\so(5,1)\ltimes\C$ structure realizes; and \emph{reassignment}, dimension-preserving and discrete, which holds one background geometry fixed and involutes the causal roles of the generating null ruling (the Null--Boundary Correspondence, the $f>0$ hole / $f<0$ cosmos)~\cite{JanzenCRframework}. The continuous algebroid is the slicing structure; reassignment is a distinct discrete operation (Section~\ref{sec:discrete}).
+
+\section{The anchor}\label{sec:anchor}
+
+The anchor maps an infinitesimal cut-deformation to the stress-energy it produces---the slicing operator made infinitesimal. Its four sectors are the ADM data of the cut, read as functions of the cut~\cite{JanzenOperator,JanzenRange}:
+\begin{itemize}
+\item \emph{energy} (the leaf): matter is the leaf's intrinsic-curvature departure from the round substrate leaf---the Hamiltonian constraint $16\pi\rho={}^3R+K^2-K_{ij}K^{ij}-2\Lambda$, vacuum the round $S^3$ (${}^3R=2\Lambda$), spherically $\rho=m'/4\pi r^2$;
+\item \emph{momentum} (the shift): the shift enters the tangential constraint through $K_{ij}=\tfrac1{2N}(D_iN_j+D_jN_i)$, so the momentum $j_i$ is the \emph{bend in the shift}---a clean functional of the shift alone (on a fixed leaf-and-lapse background), separating cleanly, giving the spherical frame-drag $\omega=C_0+2J/r^3$ with $J=Ma/\Xi^2$;
+\item \emph{stress} (the lapse): the lapse split, fixing the equation of state ($A=f\Rightarrow p_r=-\rho$);
+\item \emph{signature} (the vantage): the causal orientation, the discrete datum.
+\end{itemize}
+The four close as one functional of the cut on the spherical class; the general-cut functionals and the dimensional restriction are part of the open scope (Section~\ref{sec:scope}).
+
+\section{The bracket closes: the symmetric-space grading is the Dirac algebra}\label{sec:bracket}
+
+The defining test of the action algebroid is whether the cut-deformation bracket closes and the anchor is a homomorphism into the Dirac algebra. On the symmetric space it does, by the symmetric-space property.
+
+\begin{proposition}\label{prop:closure}
+At the symmetric cut, with $\so(5,1)=\fh\oplus\fm$, $\fh=\so(4,1)$, the three inclusions
+\[
+[\fh,\fh]\subset\fh,\qquad [\fh,\fm]\subset\fm,\qquad [\fm,\fm]\subset\fh
+\]
+all hold; $\fm$ is not a subalgebra (e.g.\ $[M_{05},M_{15}]=-M_{01}$\rcpt{P12_bracket_closure}, the sign the substrate curvature). Under the identification $\fm\leftrightarrow\Hc_\perp$, $\fh\leftrightarrow\Hc_a$, these are the hypersurface-deformation brackets term for term:
+\[
+[\fm,\fm]\subset\fh \;\leftrightarrow\; \{\Hc_\perp,\Hc_\perp\}\sim\Hc_a,\quad
+[\fh,\fm]\subset\fm \;\leftrightarrow\; \{\Hc_a,\Hc_\perp\}\sim\Hc_\perp,\quad
+[\fh,\fh]\subset\fh \;\leftrightarrow\; \{\Hc_a,\Hc_b\}\sim\Hc_c.
+\]
+\end{proposition}
+
+\noindent The content of Proposition~\ref{prop:closure} is that the algebraic shape that makes the Dirac algebra puzzling---two normal deformations bracketing into a tangential one---is exactly the shape of a symmetric-space coset: two coset directions bracketing into the isotropy. They are the same grading.
+
+This grading is also the algebraic form of the split the cosmology computes on. The normal generator $\Hc_\perp\leftrightarrow\fm$ is smeared by the \emph{lapse}---the metrical rate of the layer's advance, the existent's own foliation stacking rate---and the tangential $\Hc_a\leftrightarrow\fh$ by the \emph{shift}, the synchronization convention through which that advance is coordinated and observed~\cite{JanzenModernParallax, JanzenCanonicalTime}. So the cosmological reading in which the observable expansion rides the foliation rate (radiation-free, the density its content) while a chosen synchronization projects it to distance and redshift is not a separate posit: it is this $\fm/\fh$ grading, read on the preferred foliation, with the leaf's bend the matter the operator reads as the cut's departure from vacuum~\cite{JanzenOperator, JanzenCosmogenesis}. The ``wrong sign'' that is the problem of time and the radiation-free stacking rate that dissolves the Hubble tension are thus two faces of one object---the substrate's coset metric read, respectively, across the base and along the preferred foliation.
+
+\paragraph{The structure function is the substrate's metric.}
+The coefficient $h^{ab}$ in~\eqref{eq:HH}---the structure \emph{function} that makes the algebra an algebroid and is the canonical root of the problem of time---is, on the symmetry-reducible reduction, identified with the coset metric of the symmetric space. This is not a naive tensor equality: $h^{ab}$ is the Riemannian inverse spatial $3$-metric, whereas the coset metric of $SO(5,1)/SO(4,1)$ is the Lorentzian $5$-dimensional form (the Killing form on the coset is $\propto\mathrm{diag}(+,-,-,-,-)$, signature $(1,4)$\rcpt{P12_coset_metric}); the identification is of the \emph{reduced} structure function on the symmetric-cut pattern with that coset form. What makes it more than dimensional bookkeeping is the signature: the indefinite, Lorentzian sign carried by the coset metric---supplied by the substrate's geometry, not inserted by hand---is the same indefiniteness standardly recognized as the ``wrong sign'' at the heart of the problem of time. At the symmetric cut the structure function is constant, so $\so(5,1)$ is there a genuine Lie algebra; as the cut moves over $\C$ it varies, so the object is a genuine Lie \emph{algebroid}. The problem-of-time obstruction is thus identified with a single geometric fact: the base-dependence of the substrate's symmetric-space metric, whose Lorentzian signature is the obstruction's own. Read on the substrate's preferred foliation, that same content deparametrizes to a true Hamiltonian~\cite{JanzenCanonicalTime}; the obstruction and its resolution are one object under the static and dynamic vantages.
+
+\section{The isotropy stratification and the metric-singular seams}\label{sec:strata}
+
+As the cut moves off the symmetric vacuum, the cut-fixing isotropy drops, and its strata are the range/Petrov classes of the construction~\cite{JanzenRange}: Type O (de Sitter, isotropy $\so(4,1)$, dimension ten), Type D (Schwarzschild--de Sitter $\mathbb{R}_t\times SO(3)$, dimension four; Kerr--de Sitter, dimension two), Type I (Bianchi, dimension three; Zipoy--Voorhees, dimension two), and the wall (Type N, isotropy zero). Proposition~\ref{prop:closure} pins the base-variation only at the symmetric cut; computing it across these strata sharpens the picture. The $\so(5,1)$-action on $\C$ is \emph{non-transitive}: on the Schwarzschild--de Sitter family the diffeomorphism invariant $R_{ab}R^{ab}=6M^2/r^6+12/\alpha^4$ separates different-mass cuts while the scalar curvature ${}^3R=2\Lambda$ does not, so cuts of different mass are non-isometric and no substrate isometry connects them---the mass is a modulus \emph{transverse} to the orbits (folding at the Nariai seam, where the offset-to-mass map of Section~\ref{sec:substrate} is stationary). The qualifier is \emph{connected}: no connected substrate isometry connects different-mass cuts, but an orientation-reversing one does. The reticle reflection $r_0\mapsto-r_0$---the reversal of the slicing aim on the observer's celestial sphere---is a substrate isometry lying in $\mathrm{O}(5,1)\setminus\mathrm{SO}_0(5,1)$, and since $2M=r_0-r_0^3$ is odd it sends $2M\mapsto-2M$, carrying the $+M$ cut to the $-M$ cut across exactly the $\mathrm{SO}_0$-orbits the connected action cannot cross. It realizes the mass-reflection $\mathbb{Z}_2$---the $A_2$ diagram automorphism that adjoins the Weyl group~\cite{JanzenGroupoid}---as the substrate's own \emph{orientation} parity $\mathrm{O}(5,1)/\mathrm{SO}_0(5,1)$. The non-isometry of the $+M$ (black-hole) and $-M$ (naked) \emph{Lorentzian charts} is then a property of the representational record, not of the existent: the substrate is symmetric under the reflection, the evolving layer it carries is what exists, and the charts are its shadow---granting them the standing of distinct existents is the category error the cosmological ontology dissolves---the ``events exist'' horn the foundational augmentation closes~\cite{JanzenModernParallax,JanzenCanonicalTime,JanzenBHcausality}. This single orientation $\mathbb{Z}_2$ recurs beyond the symmetric sector: in the radiating sector as the graviton's two helicities, and past the wall as the un-undoable chirality of the turning polarization plane~\cite{JanzenRange,JanzenDynamics}---one parity threading the symmetric and radiative faces of the construction. Testing the symmetric-space grading $[\fm,\fm]\subset\fh$ stratum by stratum, it survives at exactly two: Type O ($\fh=\so(4,1)$, the symmetric space $SO(5,1)/SO(4,1)$ itself) and Nariai ($SO(2,1)\times SO(3)$, the block-diagonal Grassmannian pair). The stratification has invariants of its own, and two are worth recording. First, orbit dimension: since $\dim\so(5,1)=15$, the orbit through a cut has dimension $15-\dim\fh$, so the two symmetric strata carry orbits of dimension five and nine against a generic eleven and a principal fifteen where the isotropy is trivial\rcpt{K8_orbit_type_filtration}. \emph{The most symmetric cut has the smallest orbit}, which places pure de~Sitter at the degenerate end of the filtration rather than in its interior, and the ordering $10>6>4>3>2>0$ runs from there to the wall---the same axis the range paper traverses from the Nariai seam outward, ordered there by algebraic type and here by isotropy, the two orderings agreeing at the ends that paper names~\cite{JanzenRange}. Second, and stated as a question rather than a result: the admissible symmetric-pair dimensions are $\{6,7,10\}$, and the construction occupies six and ten. The dimension seven, realised by $\so(4)\oplus\so(1,1)$ and by $\so(3,1)\oplus\so(2)$, is not occupied, and the reason is the range paper's own bound rather than an omission of the survey. That bound is sharper than membership in $\so(5,1)$: a swept geometry inherits a subgroup of $\so(4,1)$~\cite{JanzenRange}, and neither dimension-seven pair embeds there. $\so(4)\oplus\so(1,1)$ cannot, because $\so(4)$ already rotates all four spacelike directions and a boost on any of them fails to commute with those rotations; $\so(3,1)\oplus\so(2)$ cannot, because $\so(3,1)$ leaves one spacelike direction free and a rotation needs two\rcpt{K8b_dim_seven_empty}. \emph{So the count $\{6,7,10\}$ is a fact about the algebra and the two occupied strata are a fact about the reachable class, and the third dimension is excluded by the sweep rather than left untested.} At every generic stratum---Schwarzschild--de Sitter $\mathbb{R}_t\times SO(3)$, Kerr--de Sitter, the Type-I classes, the wall---the pair is non-symmetric and $[\fm,\fm]$ acquires a component in $\fm$: that leak \emph{is} the algebroid connection, the genuine base-variation of the structure function, vanishing exactly at the two symmetric strata. The isotropy dimensions are the Killing-vector counts the construction establishes~\cite{JanzenRange}, and the verdict is independent of the choice of generator realization: the symmetric-pair isotropy dimensions of $\so(5,1)$ are $\{6,7,10\}$, so the two symmetric strata sit at the only admissible dimensions and are the geometry-fixed pairs ($SO(4,1)$ at ten, the $SO(2,1)\times SO(3)$ Grassmannian at six), while every generic stratum (dimensions four, three, two, zero) is non-symmetric by dimension alone.
+
+The strata boundaries---where the isotropy jumps---meet the corpus's metric-singular seams at the inner end and part from them at the outer end. At the inner end, the Schwarzschild--de Sitter horizon cubic $r^3-\alpha^2 r+2M\alpha^2$ has discriminant $-4\alpha^4(27M^2-\alpha^2)$, which vanishes at $\Lambda M^2=1/9$: the double root $r_N=1/\sqrt\Lambda$, the Nariai seam, where the geometry is $\dS_2\times S^2$ (both factors constant-curvature) and the isotropy jumps from four to six. The isotropy-jump locus \emph{is} the metric-degenerate locus there. This Nariai double root is the cosmogenesis branch point of~\cite{JanzenCosmogenesis}: the stratum boundary at which collapse re-founds as cosmology, and across which---the reassignment fixing the $\Lambda$-set rate on the leaf-carried density---the light-element abundances are inherited and produced. At the outer end they diverge: the wall is isotropy zero, Type N---and \emph{not} a metric singularity. A metric singularity in the sense of~\cite{JanzenBHcausality} is a collapse of the metric's \emph{measure}---a null hypersurface along whose generators the spatial extent contracts to zero, so that null-separated, spatially coincident events have vanishing proper interval (a Killing horizon being the worked sufficient case, not the definition). The wall, a Type-N plane wave, has a non-degenerate metric (no such measure-collapse, so not the finite-curvature species) and vanishing curvature invariants (so not the infinite-curvature species); it is neither. The ``isotropy zero'' that marks it is the cut-fixing \emph{substrate} isotropy---which coincides with a geometry's own isometry on the symmetry-reducible sector but \emph{diverges} here, the Type-N geometry retaining its own large isometry---so the wall is no metric singularity by the measure criterion, not for want of a Killing field. It is a regular radiative boundary, the construction's generative boundary, where generation-by-symmetry hands off to ordinary evolution~\cite{JanzenRange}. So ``isotropy boundary'' and ``metric singularity'' coincide at the inner seam (Nariai) but are two species of degeneracy at the wall.
+
+\section{The discrete skeleton at the strata}\label{sec:discrete}
+
+Inside the continuous $\so(5,1)$ sits a finite discrete skeleton: the $S_3\cong D_3$ permuting the three roots of the horizon cubic of Section~\ref{sec:strata}. That cubic $r^3-\alpha^2 r+2M\alpha^2$ has no quadratic term, so its three roots sum to zero---the $A_2$ root configuration~\cite{Humphreys1972}; written in the gauge $\alpha=1$ with the mass carried by the reticle orientation ($2M=r_0-r_0^3$, the determined mass of Section~\ref{sec:substrate}) it reads $r^3-r-(r_0^3-r_0)=0$ and factors as $(r-r_0)(r^2+r r_0+r_0^2-1)$, the quadratic factor the fundamental ellipse $r^2+r r_0+r_0^2=1$~\cite{JanzenGroupoid,JanzenSlicing}. The discrete operations are distinct (they are different involutions, not one), and each is anchored at a stratum, organized by the cubic's root structure: the Nariai seam is the fixed point of the root-permutation transposition (two roots collide, the discriminant vanishes); the cosmogenesis horizon is the locus of the null$\leftrightarrow$timelike reassignment~\cite{JanzenCRframework}; the Riemannian$\leftrightarrow$Lorentzian seam is the locus of the signature flip. The wall carries no such marker---no colliding cubic roots, no degenerating Killing field, no measure-collapse---consistent with its being the purely continuous boundary. The continuous face is thus the flow through the symmetry-reducible sector---whose slicing curve, run through the seam and backward through the $r=0$ branch point with the signed areal radius, closes into the single \emph{cosmogenetic bead} the framework proves one object~\cite{JanzenCRframework}; the discrete face is the set of distinct operations marking its special strata. (We make no claim that these unify into a single discrete action, nor that the $A_2$ configuration realizes a continuous $\mathfrak{su}(3)$ isometry. The root structure is the established skeleton; the continuous realization is a separate question, and on the established five-dimensional substrate it is settled negatively. The three roots summing to zero furnish a Cartan element of $\mathfrak{su}(3)$ and the $S_3$ its Weyl group---the Cartan--Weyl skeleton, a \emph{necessary} ingredient---but a continuous $\mathfrak{su}(3)$ isometry would have to embed in the substrate's rotation group, and $SU(3)\not\subset SO(5)$ (its smallest faithful real representation is six-dimensional, on $\mathbb{C}^3=\mathbb{R}^6$), so no such isometry exists on $\dS_5$: there the $A_2$ structure is the discrete $\mathrm{Weyl}(A_2)=S_3$ shadow only. Read on a fermion sector, this discrete shadow is realized as matter---the three zero-sum weights as a threeness of fermion content, the orientation $\mathbb{Z}_2$ as its chirality, so that $D_6=S_3\times\mathbb{Z}_2$ reads as a threeness times two chiralities: three chiral families forced within CR, built in the matter-sector paper~\cite{JanzenMatter}. \emph{That paper has since revised which three the generations are seated on}---these weights carry the \emph{within-state} index, the generations being carried by the turnaround's deck $\mathbb{Z}_3$, a three it proves affinely inequivalent to this one (\emph{ibid.}). A continuous, geometric $\mathfrak{su}(3)$ would require a six-dimensional substrate ($SU(3)\subset SO(6)$), which the construction permits but does not force---and a structure a framework merely \emph{permits}, as against one it \emph{requires}, is on the programme's criterion of necessity no explanation but a description~\cite{JanzenShadowExistence}; the resonance is necessary, not sufficient, and silent on the dimension. We assert neither the continuous $\mathfrak{su}(3)$ nor the dimensional rise.)
+
+\paragraph{Geometric realization of $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2$.}
+Both factors of the root system's full automorphism group are realized on the substrate in the pivot-and-ruling frame. The Weyl factor $S_3$ permutes the three horizon roots, which---the cubic having no quadratic term---are the three zero-sum weights and sit $120^\circ$ apart on the throat-image circle of radius $2/\sqrt3$: in the sky angle $w$ of~\cite{JanzenSlicing} they are $r_k=\tfrac{2}{\sqrt3}\cos\!\bigl(\varphi-\tfrac{2\pi}{3}k\bigr)$, with the reflection $w\leftrightarrow\pi/3-w$ about the Nariai crest the order-two generator. The diagram-automorphism factor $\mathbb{Z}_2$ is the central inversion $r_0\mapsto-r_0$ of Section~\ref{sec:strata}---the parity that carries the weight triangle to its negative, completing the $A_2$ hexad---and it has a clean geometric form. The one-sheeted $\dS_5$ is doubly ruled by null generators~\cite{JanzenOperator}---the comoving and synchronous congruences of the cosmology---and the central inversion exchanges the two families: restricted to the ruled section, an orientation-reversing isometry swaps the two rulings while an orientation-preserving one fixes each. Explicitly it is $R=\mathrm{diag}(1,1,-1,1,1,1)\in\mathrm{O}(5,1)\setminus\mathrm{SO}_0$, the reflection of the cut's displacement transverse to the symmetry axis (the offset $r_0=\tfrac{2}{\sqrt3}\sin w$): one verifies directly that it is an isometry, has determinant $-1$ both globally and on the ruled three-block, swaps the two rulings, and sends $r_0\mapsto-r_0$ hence $2M\mapsto-2M$. This $\mathbb{Z}_2$ is distinct from the Weyl reflections that generate $S_3$: those fix $2M$ and permute the three horizon roots within a mass level---their realisation on the real roots regime-dependent, all of $S_3$ under-critically and only the order-two complex conjugation of the conjugate pair over-critically~\cite{JanzenGroupoid}---while the central inversion sends the whole root triple to its negative and swaps the two rulings. The two factors thus act on independent structures---the three roots and the two rulings---and the inversion is central, which is why $\mathrm{Aut}(A_2)$ is the direct product $S_3\times\mathbb{Z}_2\cong D_6$ the groupoid paper obtains algebraically~\cite{JanzenGroupoid}. The double-ruling swap, the orientation parity $\mathrm{O}(5,1)/\mathrm{SO}_0$, the $A_2$ diagram automorphism, and the graviton chirality of Section~\ref{sec:strata} are therefore one and the same $\mathbb{Z}_2$. That one $\mathbb{Z}_2$ carries a further, fermionic face on the substrate's spin structure: $\dS_5\simeq\mathbb{R}\times S^4$ is spin with a unique spin structure~\cite{LawsonMichelsohn1989}, inherited by the four-dimensional cut, and $R$---reflecting the transverse cut-normal ($r_0$) direction and so fixing all four spacetime legs---acts on the cut's natural spinor as the chirality operator $\gamma^5$ itself, so the orientation parity \emph{is} the chirality grading, measuring left against right as it carries the graviton's helicities~\cite{JanzenGeometricCore}. (Grounded: the parity measures chirality, the exchange reading excluded by explicit computation. The same $\mathbb{Z}_2$ grades mass in both faces---the geometric mass-reflection $2M\mapsto-2M$ above and the $R$-odd fermion mass term on a cut spinor---so mass, geometric or fermionic, is its one $R$-odd datum; the chiral content this parity would grade is not built here.) The two factors moreover descend onto any such spinor sector by \emph{different kind}: the $\mathbb{Z}_2$, being a substrate isometry, acts on the cut spinor as the gauged grading $\gamma^5$; the Weyl $S_3$ is \emph{no} substrate isometry---its continuous parent walled by $\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$ above, and a single Dirac spinor carrying no three-fold to realise it---so a family symmetry it would grade is \emph{global}, not gauged. The same partition falls out of the substrate's null structure, and by a route that mentions neither spinors nor $\mathfrak{su}(3)$: the sky-angle periodicity $\tau$ is two steps along a null ruling of the substrate---so it is a closed path of light, and $\tau^{3}=\mathrm{id}$ is that path closing---whereas the Weyl reflection $\sigma$ is a loop in the complex $2M$-plane about the Nariai branch point~\cite{JanzenGroupoid}, and $2M$ labels the family rather than pointing along the manifold. The rulings walk exactly the isometries and nothing else, which is this paragraph's \emph{different kind} read off the light cone~\cite{JanzenSlicing,JanzenGeometricCore}. And the light cone and the throat are one reading, not two: the substrate's null rulings \emph{are} the tangent lines to its waist---``doubly ruled by straight null lines'' and ``every tangent to the throat is null'' are one statement, the power of a point with respect to that circle being the square of its height~\cite{JanzenGeometricCore}. So ``two steps along a null ruling'' is two steps along a tangent to the throat, and the two structures the factors act on are the two relations a figure can bear to that one circle: the three roots are the three special points \emph{on} it---the offset line meets it at $A$ and $B$, with $r=0$ fixed at the back~\cite{JanzenSlicing}---and the two rulings are the lines \emph{tangent} to it. The automorphism group factorises because \emph{on} and \emph{tangent} are independent relations; and the factors differ in kind for the same reason, a tangent being a line of the substrate while a root labels a different cut. The pivot-and-ruling geometry this section reads the skeleton off is, in that reading, one circle read two ways. Where those two factors become matter---the inversion as a bound state's chirality eigenvalue, the Weyl $S_3$ as a count of three---the reading is stated on the built sector~\cite{JanzenMatter}. Gauged chirality with global flavour is the Standard Model's own arrangement, here not assumed but following from which of the two factors is an isometry and which the Weyl/deck symmetry of the solution space~\cite{JanzenGeometricCore}. With the pivot supplying $S_3$ and the ruling swap supplying $\mathbb{Z}_2$, the order-twelve $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2$---the symmetry group of the $A_2$ hexad---is realized in full on the substrate, the discrete skeleton read off its pivot-and-ruling geometry. The slicing paper draws this realisation as a figure~\cite{JanzenSlicing}: the pivot's three vantage-hinges---each designating one root---as an equilateral whose incircle is the throat, and the ruling structure as a skew hexagon of null generators laced across the substrate's two horns; whether that six-hinge figure is the \emph{same} six-fold as the six-Nariai root hexad is established in the slicing paper as a resonance, not an identity---the horn-swap ($T:X_0\mapsto-X_0$) and the offset parity ($R:r_0\mapsto-r_0$) distinct reflections that share the fundamental triple but complete it distinctly~\cite{JanzenSlicing}.
+
+\paragraph{The three levels of the symmetry structure.} The discrete skeleton read off here is the substrate's \emph{linear} face---real reflections acting as isometries on the ruled section. It does not exhaust the symmetry structure the substrate carries. Composed with the antilinear reality involution $\tilde\tau\mapsto\bar{\tilde\tau}$ of the cosmogenetic bead---antilinear \emph{and} geometric, living in the substrate's complex-analytic structure rather than in its isometry group---the orientation parity $R$ yields charge conjugation's kinematic (Feynman--St\"uckelberg) face, so that charge conjugation \emph{factorises}, $C=(Q\mapsto-Q)_{\mathrm{field}}\circ(R\circ K)_{\mathrm{geometric}}$ with $K:\tilde\tau\mapsto\bar{\tilde\tau}$, the geometry supplying its whole kinematic content and only the electric-charge sign closing from the matter field~\cite{JanzenBoundary,JanzenMatter}. The substrate's symmetry structure is thereby three-levelled---the discrete linear skeleton of this section (substrate isometries), the antilinear complex-analytic conjugation face, and the field-level charge---of which the order-twelve $\mathrm{Aut}(A_2)=D_6$ realized here is the first and load-bearing face, the one the constraint algebroid's base-and-section reads directly; the geometric factor of the conjugation is the same cosmogenetic bead the continuous flow closes into, so the discrete skeleton and the conjugation share the one $r=0$ crossing.
+
+\section{Scope and what is open}\label{sec:scope}
+
+The verification above is, throughout, on the \emph{symmetry-reducible sector}. We state plainly what that means and what it leaves.
+\begin{itemize}
+\item \emph{Computed:} the symmetric-space split and closure at the symmetric cut; the grading match to the Dirac algebra; $\so(5,1)$ a genuine Lie algebra at the symmetric cut; the stratification dimensions; the inner (Nariai) metric-singular coincidence and the outer (wall) divergence; the Nariai root-collision; the non-transitivity of the $\so(5,1)$-action on $\C$ (the mass a transverse modulus); and the per-stratum grading---the symmetric-space relation surviving at Type O and Nariai only, with the structure-function variation, the algebroid connection, at every other stratum; and, since the normal--normal structure function is the inverse leaf metric $h^{ab}$---a momentum-independent tensor field, hence already fixed by the finite-mode identification---the smeared closure for arbitrary lapses on this sector, the bracket closing on the full momentum constraint with $h^{ab}$ the de Sitter coset metric at the symmetric cut, its angular part invariant and its radial part carrying the connection off it, so that the finite-mode homomorphism holds at the smeared, infinite-dimensional level on this sector as a corollary.
+\item \emph{Beyond the finite pattern (the handoff, not an open closure on this sector):} the smeared, infinite-dimensional homomorphism \emph{on the symmetry-reducible sector} follows as the corollary above---the structure function being the inverse metric, the finite-mode identification fixes it for arbitrary lapses. What lies genuinely beyond the finite-$\so(5,1)$ pattern is not a residual bracket-closure here but the free transverse degrees of freedom past the wall---the propagating gravitational sector---whose nonlinear $\Lambda>0$ dynamics and future stability are the subject of the companion dynamics paper~\cite{JanzenDynamics}, and are grounded there. The algebroid hands off to them at the wall.
+\item \emph{The sector itself:} $\so(5,1)$ is fifteen-dimensional; the full hypersurface-deformation algebra is infinite-dimensional. The closure is the finite, symmetry-reducible reduction---the cuts reachable by substrate isometries. The wall (isotropy zero) is the boundary of the action algebroid; beyond it the free transverse degrees of freedom take over, and the algebroid does not claim them.
+\end{itemize}
+Within that scope the result stands as a recognition: general relativity's constraint algebra is the symmetric-space structure of a de Sitter substrate, an action Lie algebroid whose base is the space of cuts, whose structure function is the substrate's own metric, and whose problem-of-time obstruction is that metric's base-dependence. This symmetric-space root is, in the geometric core~\cite{JanzenGeometricCore}, read as one rung of the substrate's maximal symmetry: the same exhaustion of $SO(5,1)$ that there locks the cosmological constants and walls a continuous colour symmetry is what closes the constraint algebra as the coset grading and dissolves the problem of time. That the rungs are one fact is a reading advanced there, at that reading's weight; here the algebroid rung stands on its own, on the symmetry-reducible sector.
+
+\begin{thebibliography}{9}
+\bibitem{JanzenBHcausality} D.~Janzen, \emph{The event horizon is a metric singularity: a missing definition in general relativity}, companion paper (P1).
+\bibitem{JanzenSlicing} D.~Janzen, \emph{The de Sitter substrate and its slicing curve: horizons as turning points, and de Sitter and Schwarzschild as two readings of one slicing}, companion paper (P3).
+\bibitem{JanzenGroupoid} D.~Janzen, \emph{The Schwarzschild--de Sitter description groupoid: generators, relations, and Schwarzschild as the asymmetric realisation}, companion paper (P5).
+\bibitem{JanzenOperator} D.~Janzen, \emph{Covariance of geometries over the de Sitter substrate: the slicing operator, the vacuum kernel, and matter as the bend of the cut}, companion paper (P8).
+\bibitem{JanzenRange} D.~Janzen, \emph{The range of the de Sitter slicing operator: surjectivity onto the symmetry-reducible sector of general relativity, the Kerr--NUT--(A)dS vacuum kernel, and the wall of inhomogeneity}, companion paper (P9).
+\bibitem{JanzenCRframework} D.~Janzen, \emph{Collapsed matter must become a universe: the necessary and sufficient augmentation of general relativity into a description of structural existence, proven for gravitational collapse of any symmetry}, companion paper (P7).
+
+\bibitem{JanzenCanonicalTime} D.~Janzen, \emph{The canonical problem of time as a category error: an empirically forced cosmic time, deparametrization, the dissolution of frozen dynamics, and a graviton quantization the de~Sitter horizon closes without a free parameter---the seam where $\hbar$ enters gravity---in Cosmological Relativity}, companion paper (P10).
+\bibitem{JanzenModernParallax} D.~Janzen, \emph{The modern parallax: the redshift-isotropy floor, the empirical forcing of cosmic time and uniform expansion, and the measured resolution of the relativity of simultaneity}, companion paper (P4).
+\bibitem{JanzenShadowExistence} D.~Janzen, \emph{The shadow of existence: scientific theory-choice as an empirically grounded discipline, calibrated on the historical record}, companion paper (P6).
+\bibitem{JanzenDynamics} D.~Janzen, \emph{Why the cut bends: the dynamics of the de Sitter cut, the confined gravitational wave, the generative boundary of the slicing operator, and chirality as the turning of the polarization plane}, companion paper (P11).
+\bibitem{JanzenGeometricCore} D.~Janzen, \emph{Reached through the imaginary, real by construction: the maximally symmetric substrate as the geometric--ontological core}, companion paper (p0).
+\bibitem{ADM1962} R.~Arnowitt, S.~Deser, C.~W.~Misner, \emph{The dynamics of general relativity}, in \emph{Gravitation: An Introduction to Current Research} (Wiley, 1962).
+\bibitem{Dirac1964} P.~A.~M.~Dirac, \emph{Lectures on Quantum Mechanics} (Yeshiva University, 1964).
+\bibitem{Teitelboim1973} C.~Teitelboim, \emph{How commutators of constraints reflect the spacetime structure}, Ann.\ Phys.\ \textbf{79} (1973) 542.
+\bibitem{Kuchar1992} K.~V.~Kucha\v{r}, \emph{Time and interpretations of quantum gravity}, in \emph{Proc.\ 4th Canadian Conf.\ on General Relativity} (1992).
+\bibitem{Isham1993} C.~J.~Isham, \emph{Canonical quantum gravity and the problem of time}, in \emph{Integrable Systems, Quantum Groups, and Quantum Field Theories} (1993).
+\bibitem{BojowaldHDA} M.~Bojowald, \emph{Canonical Gravity and Applications} (Cambridge University Press, 2011).
+\bibitem{JanzenBoundary} D.~Janzen, \emph{The de Sitter substrate and the Standard Model: a four converging routes to a geometric boundary on what one maximally-symmetric Lorentzian substrate's isometry does and does not force, and the framework and gauge on its two real forms}, companion paper (P13).
+\bibitem{JanzenMatter} D.~Janzen, \emph{The fermion sector of Cosmological Relativity: three chiral generations from the maximally-symmetric slicing structure}, companion paper (P14).
+\bibitem{JanzenCosmogenesis} D.~Janzen, \emph{Cosmogenesis: the Big Bang as a synthesis of Cosmological Relativity's deductively forced consequences, and the primordial light-element abundances it produces}, companion paper (P16).
+\bibitem{Mackenzie2005} K.~C.~H.~Mackenzie, \emph{General Theory of Lie Groupoids and Lie Algebroids}, London Mathematical Society Lecture Note Series \textbf{213} (Cambridge University Press, 2005).
+\bibitem{Helgason1978} S.~Helgason, \emph{Differential Geometry, Lie Groups, and Symmetric Spaces} (Academic Press, New York, 1978).
+\bibitem{Humphreys1972} J.~E.~Humphreys, \emph{Introduction to Lie Algebras and Representation Theory}, Graduate Texts in Mathematics \textbf{9} (Springer-Verlag, New York, 1972).
+\bibitem{LawsonMichelsohn1989} H.~B.~Lawson and M.-L.~Michelsohn, \emph{Spin Geometry}, Princeton Mathematical Series \textbf{38} (Princeton University Press, Princeton, 1989).
+\end{thebibliography}
+
+
+\input{appendix_receipts_P12}
+
+
+\section{The discrete structure is the substrate's own Weyl group}\label{sec:weyl-a3}
+
+\emph{The corpus reads its discrete skeleton off the horizon cubic, whose three roots realise $A_{2}$, giving
+$\mathrm{Aut}(A_{2})=S_{3}\times\mathbb{Z}_{2}=D_{6}$ of order twelve. That is a sub-root-system of one the
+substrate already carries, and the difference is supplied by a holonomy rather than by an assumption.}
+
+The residue pairing on functions over the root triple---diagonal, entries $1/f'(r_{i})$, signature
+$(2,1)$---has a non-trivial holonomy about the branch points, the Klein four-group $V_{4}$ of even sign
+changes, whose origin is the per-root resolution of $\sqrt{\Delta}$~\cite{JanzenGroupoid}. Adjoining it to the
+deck $S_{3}$ closes a group of order twenty-four; adjoining the orientation parity as well closes one of order
+forty-eight\rcpt{GROUP_full_order48}. \emph{Neither is an abstract coincidence of order.} Computing the element
+profile: the six order-four elements are all \emph{improper}, none a proper rotation, which is the signature of
+the full tetrahedral group $T_{d}$ and not of the chiral octahedral group; the transpositions appear as
+reflections, the $V_{4}$ as the three proper two-fold rotations, the three-cycles as three-fold
+rotations\rcpt{EMBEDDING_is_Td_equals_WA3}. \emph{So the group is $W(A_{3})$ in its Weyl embedding, not merely
+a group isomorphic to $S_{4}$.}
+
+\emph{And $A_{3}$ is not a new structure.} The substrate's isometry algebra is $\so(5,1)$, a real form of
+$\so(6,\mathbb{C})$, whose root system is $D_{3}\cong A_{3}$; and $A_{2}$ sits inside $A_{3}$ by deleting one
+node. \emph{So the sector's discrete group is the Weyl group of the substrate's own complexified isometry
+algebra}, and what the corpus had been using is the sub-root-system obtained by reading only the horizon
+cubic. The enlargement is therefore not an addition to the construction but a recognition of what the
+construction already contains, reached by transporting a form the substrate itself supplies.
+
+\emph{We mark the scope.} This concerns the discrete structure alone. It says nothing about a continuous
+$\su(3)$, which the boundary paper's obstruction continues to
+address~\cite{JanzenBoundary}; a finite group, however enlarged, is not a Lie algebra.
+\end{document}

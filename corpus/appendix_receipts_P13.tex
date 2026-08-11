@@ -1,0 +1,51 @@
+\clearpage
+\section*{Appendix R\quad Computational Receipts}\label{app:receipts}
+\addcontentsline{toc}{section}{Appendix R: Computational Receipts}
+\small\noindent Each computation marked \rcptmarker\ in the text is verified by a runnable receipt in the \texttt{receipts/} directory that ships with this work; status \textsf{OK} = verified (traced, run, output matches the claim). This appendix is generated from the receipt index, not maintained by hand.\par\medskip
+\begingroup\renewcommand{\arraystretch}{1.25}
+\begin{description}
+\item[\label{rcpt:P13_A3_factorization}\texttt{P13\_A3\_factorization}]\hfill\textsf{[OK]}\\
+\textit{prop:conjugation-closure} \ (charge conjugation factorises on the bead: C=(Q->-Q)\_field o (R o K)\_geometric; R o K is antilinear geometric involution reproducing C's kinematic (CPT/FS) content but BLIND to sign(Q) (Q enters as Q\textasciicircum{}2)). 
+\emph{Computes:} numeric on random complex points: R,K,C on bead; \textbar{}mass\textbar{}/species/FS-wings; load-bearing NEGATIVE R o K blind to Q sign
+ \emph{Bound:} scope + do-not-assert stated
+\ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_A3\_factorization.py}
+\item[\label{rcpt:P13_conjugation_parity}\texttt{P13\_conjugation\_parity}]\hfill\textsf{[OK]}\\
+\textit{prop:conjugation-parity} \ (mass-reflection R=gamma\textasciicircum{}5 (grades chirality); mass term ODD, charge EVEN under r->-r; P=g1g2g3 flips chirality; R!=P (same residue, opposite parity-faces)). 
+\emph{Computes:} cold read: parity of f(r) terms; Clifford R=g5 commutes / P anticommutes with g5; guards R!=P
+\ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_conjugation\_parity.py}
+\item[\label{rcpt:P13_ruling_swaps}\texttt{P13\_ruling\_swaps}]\hfill\textsf{[OK]}\\
+\textit{prop:closure(iii)} \ (R swaps the substrate's two null rulings -- generic (every orientation-reversing isometry does)). 
+\emph{Computes:} ruling swap under R; generic face
+\ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_ruling\_swaps.py}
+\item[\label{rcpt:P13_closure_i_check}\texttt{P13\_closure\_i\_check}]\hfill\textsf{[OK]}\\
+\textit{prop:closure(i)} \ (R carries 3->3bar (matter/antimatter): (a) R negates roots => (b) A2 diagram automorphism => (c) 3<->3bar; A2-specific (warrant -1 not in W(A2))). 
+\emph{Computes:} 3-link chain confirmed; flags the owed A2-specificity clause
+ \emph{Bound:} corpus owed one clause
+\ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_closure\_i\_check.py}
+\item[\label{rcpt:P13_closure_iv_check}\texttt{P13\_closure\_iv\_check}]\hfill\textsf{[OK]}\\
+\textit{prop:closure(iv)} \ (R:r->-r involution, fixed set \{r=0\} = the bead's branch point; two halves in R-conjugate regions; cosh/sinh asymmetry = the symmetry-breaking). 
+\emph{Computes:} fixed point r=0 computed; corrects map-vs-path; asymmetry is content
+\ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_closure\_iv\_check.py}
+\item[\label{rcpt:P13_A3_spinor_lift}\texttt{P13\_A3\_spinor\_lift}]\hfill\textsf{[OK]}\\
+\textit{prop:conjugation-parity (spinor)} \ (R o K lifted to the cut spinor IS charge conjugation: gamma\textasciicircum{}5 S psi*=-psi\textasciicircum{}c on 200 spinors; C=i g2 g0 the C-matrix proper; guard -i g2 is NOT C). 
+\emph{Computes:} Clifford: g5 involution, reality-lift S unique, g5 S=-(C g0T), particle<->anti, Q\textasciicircum{}2 R-even; load-bearing C-matrix guard
+\ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_A3\_spinor\_lift.py}
+\item[\label{rcpt:P13_kretschmann_bead}\texttt{P13\_kretschmann\_bead}]\hfill\textsf{[OK]}\\
+\textit{(bead Kretschmann)} \ (Kretschmann along the bead: mass CANCELS -- K=(12/alpha\textasciicircum{}4)(sinh\textasciicircum{}\{-4\}(3tau\textasciitilde{}/2alpha)+2), M-independent). 
+\emph{Computes:} SdS K, bead r\textasciicircum{}3=2M a\textasciicircum{}2 sinh\textasciicircum{}2 w => r\textasciicircum{}6 kills M; numeric across 3 M values same K
+\ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_kretschmann\_bead.py}
+\item[\label{rcpt:P13_qm_S4_vs_S5}\texttt{P13\_qm\_S4\_vs\_S5}]\hfill\textsf{[OK]}\\
+\textit{sec:synthesis} \ (Euclidean form carries gauge + hbar: su(3) subset so(6)/S\textasciicircum{}5 (faithful on R\textasciicircum{}6, not so(5)/S\textasciicircum{}4); GH beta=2pi alpha; S\textasciicircum{}4 subset S\textasciicircum{}5 equator => gauge and hbar SAME real form). 
+\emph{Computes:} su(3) antisymmetry+faithfulness; dS\_n GH temp; S\textasciicircum{}4/S\textasciicircum{}5 nesting; verdict full-S\textasciicircum{}5 vs S\textasciicircum{}4-equator residue
+\ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_qm\_S4\_vs\_S5.py}
+\item[\label{rcpt:P13_cascade_rank}\texttt{P13\_cascade\_rank}]\hfill\textsf{[OK]}\\
+\textit{sec:cascade} \ (cascade rank-map: rank(SM)=4 > rank SO(6)=3, so the full SM gauge group cannot embed even in the dS\_6 raise -- gauge structure dropped at the real cut). 
+\emph{Computes:} so(6) Cartan (M12,M34,M56 commute, rank 3); su(3) rank 2; 4>3; SU(3)-fits control
+ \emph{Bound:} supports prop:boundary
+\ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_cascade\_rank.py}
+\item[\label{rcpt:P13_sigma_lift}\texttt{P13\_sigma\_lift}]\hfill\textsf{[OK]}\\
+\textit{sec:sigma} \ (a real involution is not the Wick rotation: sigma (real Weyl(A2) reflection) preserves eta\_L (in O(5,1)), the Wick x0->ix0 sends eta\_L->eta\_E; boost M05 -> rotation under Wick (so(6) created) but stays boost under sigma; su(3) faithful on R\textasciicircum{}6 (not so(5)) -- colour-from-geometry via sigma-lift does NOT hold). 
+\emph{Computes:} Wick eta\_L->eta\_E; sigma preserves both signatures; boost->rotation vs boost->boost; su(3) faithful on R\textasciicircum{}6
+ \emph{Bound:} bounded NEGATIVE, do-not-assert stated
+\ \emph{Run:} \texttt{python3 receipts/P13\_boundary\_paper/P13\_sigma\_lift.py}
+\end{description}\endgroup

@@ -1,0 +1,6 @@
+recombination          z=1.09e+03:  H_std/H_CR =      0.6x
+matter-rad equality    z=3.4e+03:  H_std/H_CR =      1.0x
+BBN  T~1e9 K           z=4e+08:  H_std/H_CR =    339.9x
+
+A ~300x-slower expansion at BBN freeze-out alters n/p and the light-element yields:
+the radiation-fast rate is what standard BBN needs. This is independent of the CMB front.

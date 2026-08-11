@@ -1,0 +1,72 @@
+\clearpage
+\section*{Appendix R\quad Computational Receipts}\label{app:receipts}
+\addcontentsline{toc}{section}{Appendix R: Computational Receipts}
+\small\noindent Each computation marked \rcptmarker\ in the text is verified by a runnable receipt in the \texttt{receipts/} directory that ships with this work; status \textsf{OK} = verified (traced, run, output matches the claim). This appendix is generated from the receipt index, not maintained by hand.\par\medskip
+\begingroup\renewcommand{\arraystretch}{1.25}
+\begin{description}
+\item[\label{rcpt:P08_matter_functional}\texttt{P08\_matter\_functional}]\hfill\textsf{[OK]}\\
+\textit{sec:gauge/thm:kernel/prop:bend} \ (matter functional 8pi T\textasciicircum{}t\_t=(r f'+f-1)/r\textasciicircum{}2+Lambda (Einstein tensor derived); lock p\_r=-rho; vacuum kernel = SdS (general soln); density rho=m'/(4 pi r\textasciicircum{}2) is the bend). 
+\emph{Computes:} full Einstein tensor of ds\textasciicircum{}2=-f dt\textasciicircum{}2+dr\textasciicircum{}2/f+r\textasciicircum{}2dOmega\textasciicircum{}2 derived; eq:Ttt/eq:Ttheta matched; dsolve gives SdS; density=bend; control straight vs bent
+ \emph{Bound:} covers 3 P8 claims
+\ \emph{Run:} \texttt{python3 receipts/P08\_slicing\_operator/P08\_matter\_functional.py}
+\item[\label{rcpt:P08_lapse_split}\texttt{P08\_lapse\_split}]\hfill\textsf{[OK]}\\
+\textit{prop:lapse} \ (**!! MARKED c54.161: the test that G\textasciicircum{}t\_t is independent of A is partly vacuous** -- `A not in Gtt.free\_symbols` is always true because A is an applied Function and free\_symbols holds only Symbols. Only the sibling has() test has teeth. two-function metric ds\textasciicircum{}2=-A dt\textasciicircum{}2+dr\textasciicircum{}2/f+r\textasciicircum{}2dOmega\textasciicircum{}2: density depends on f alone (indep of A); radial EoS 8pi(p\_r+rho)=(f/r)d/dr ln(A/f); lock A=f gives p\_r=-rho). 
+\emph{Computes:} two-function Einstein tensor derived; G\textasciicircum{}t\_t indep of A; EoS matched; lock kills the log; control A=f*g -> (f/r)g'/g
+ \emph{Bound:} ---
+\ \emph{Run:} \texttt{python3 receipts/P08\_slicing\_operator/P08\_lapse\_split.py}
+\item[\label{rcpt:P08_E1_cosmology}\texttt{P08\_E1\_cosmology}]\hfill\textsf{[OK]}\\
+\textit{prop:cosmo} \ (E=1 marginally-bound SdS geodesic = flat-LCDM cosmology: (dr/dtau)\textasciicircum{}2=2M/r+r\textasciicircum{}2/a\textasciicircum{}2 solved by (2M a\textasciicircum{}2)\textasciicircum{}\{1/3\}sinh\textasciicircum{}\{2/3\}(3tau/2a); Friedmann H\textasciicircum{}2=Lambda/3+8pi rho/3; OS at Lambda->0; HEB handover at r\_star). 
+\emph{Computes:} geodesic derived (dr/dtau)\textasciicircum{}2=E\textasciicircum{}2-f; scale factor solves eq:E1; coth\textasciicircum{}2=1+csch\textasciicircum{}2 split; Lambda->0 -> tau\textasciicircum{}\{2/3\}; min of 2M/r+r\textasciicircum{}2/a\textasciicircum{}2 at r\_star=(M a\textasciicircum{}2)\textasciicircum{}\{1/3\} (HEB); control E<1 turns around
+ \emph{Bound:} ties prop:cosmo to the Hubble-Eddington radius
+\ \emph{Run:} \texttt{python3 receipts/P08\_slicing\_operator/P08\_E1\_cosmology.py}
+\item[\label{rcpt:P08_nariai_signed_roots}\texttt{P08\_nariai\_signed\_roots}]\hfill\textsf{[OK]}\\
+\textit{sec:open} \ (the forced scale 2/sqrt3: FOUR distinct quantities share the magnitude (Nariai offset \textbar{}r\_0\textbar{}, ellipse focal distance, throat-image radius, lone/backward-radial root) and only the last is a signed root; on the M>0 member the pair is degenerate at +1/sqrt3 and the lone root is -2/sqrt3). 
+\emph{Computes:} Nariai masses +/-2/(3sqrt3) via discriminant; signed roots at both members; R-conjugacy of the two sets; degeneracy of the pair; r\_0 always itself a root, and which offset gives 2M>0; 'larger' true in magnitude and false in value; the four same-magnitude quantities separated
+ \emph{Bound:} the vantage-dependence of the signs is P2 sec:ring's, imported not re-established
+\ \emph{Run:} \texttt{python3 receipts/P08\_slicing\_operator/P08\_nariai\_signed\_roots.py}
+\item[\label{rcpt:P08_trichotomy}\texttt{P08\_trichotomy}]\hfill\textsf{[OK]}\\
+\textit{prop:trichotomy} \ (**!! MARKED c54.161: "eq:Ek verified at E=1 and E=sqrt2" is the constant arithmetic (1-1)==0 and (2-1)==1, and the flat-leaf CONTROL is simplify(6*0/a**2)==0** -- a constant zero compared with zero. Neither conjunct depends on the derived geodesic, so the energy-curvature relation was never tested at either energy and the control cannot distinguish the flat leaf from anything. three constant-curvature leaves (closed S\textasciicircum{}3 k=+1, flat horosphere k=0, open H\textasciicircum{}3 k=-1) = one SdS congruence at three energies via -k=E\textasciicircum{}2-1; Friedmann curvature term = \textasciicircum{}3R/6=6k/a\textasciicircum{}2). 
+\emph{Computes:} open+closed induced metrics DERIVED from 5D embeddings (sinh/cosh de Sitter slicings); \textasciicircum{}3R computed (+6/-6) => 6k/a\textasciicircum{}2; -k=E\textasciicircum{}2-1 off the geodesic
+ \emph{Bound:} closes P8
+\ \emph{Run:} \texttt{python3 receipts/P08\_slicing\_operator/P08\_trichotomy.py}
+\item[\label{rcpt:P08_synchronous_horosphere}\texttt{P08\_synchronous\_horosphere}]\hfill\textsf{[OK]}\\
+\textit{sec:synchronous} \ (flat synchronous slicing = horosphere family between two null directions: embedding on hyperboloid; induced -dtau\textasciicircum{}2+e\textasciicircum{}\{2tau/a\}dx\textasciicircum{}2 (flat k=0); eta(X,B)=(a\textasciicircum{}2/2)e\textasciicircum{}\{tau/a\} labels slices; tau->-inf singularity). 
+\emph{Computes:} flat-slicing embedding + induced metric DERIVED; A,B null (eta(A,B)=a\textasciicircum{}2/2); eta(X,B) prop e\textasciicircum{}\{tau/a\} indep of transverse; tau->-inf limit 0
+ \emph{Bound:} the 'direct computation' claim (not a numbered prop)
+\ \emph{Run:} \texttt{python3 receipts/P08\_slicing\_operator/P08\_synchronous\_horosphere.py}
+\item[\label{rcpt:K6_fullness}\texttt{K6\_fullness}]\hfill\textsf{[OK]}\\
+\textit{eq:gauge} \ (**!! MARKED c54.161: the stratum-by-stratum match column compares each row's dimension WITH ITSELF** -- both fields are the same expression written twice, so the column can never print NO and the fullness claim went unchecked. The added assertions pin the dimensions against P12's independently. K6 --- IS Psi FULL? P5's own stated gap, posed functorially by K2, and P12 already has the data. CONFIRMATION 2 -- read P12's stratification statement WHOLE, which a first pass did not: 'the symmetric-pair isotropy dimensions of so(5,1) are \{6,7,10\}, so Type O (SO(4,1), ten) and Nariai (SO(2,1)xSO(3), six) sit at the only admissible dimensions, while EVERY GENERIC STRATUM (FOUR, three, two, zero) is non-symmetric by di...). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P08\_slicing\_operator/K6\_fullness.py}
+\item[\label{rcpt:K9_isotropy_obstruction}\texttt{K9\_isotropy\_obstruction}]\hfill\textsf{[OK]}\\
+\textit{eq:gauge} \ (K9 --- IS THE ISOTROPY=ISOMETRY EQUALITY GENERAL, OR STRATUM-BY-STRATUM? I hedged this twice (K6 in P8, K7 in P9) and proposed the hedge could be removed by a general argument: 'a cut's isotropy is by construction the subgroup preserving it, and the geometry read off it inherits exactly those.' TEST THAT ARGUMENT HONESTLY, BOTH DIRECTIONS.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P08\_slicing\_operator/K9\_isotropy\_obstruction.py}
+\item[\label{rcpt:V34_orthogonal_and_no_cost}\texttt{V34\_orthogonal\_and\_no\_cost}]\hfill\textsf{[OK]}\\
+\textit{eq:gauge} \ (V3 --- IS THE LEFTWARD READING INCOMPATIBLE WITH AN ACTION PRINCIPLE, OR ORTHOGONAL TO ONE? V4 --- WHAT DOES TAKING THE DIRAC ALGEBRA WITHOUT A LEGENDRE TRANSFORM COST? CONFIRMATION 2 first, and it moves both answers.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P08\_slicing\_operator/V34\_orthogonal\_and\_no\_cost.py}
+\item[\label{rcpt:P08_the_branch_point_monodromy_is_Z3}\texttt{P08\_the\_branch\_point\_monodromy\_is\_Z3}]\hfill\textsf{[OK]}\\
+\textit{prop:cosmo} \ (**THE COSMOGENESIS BRANCH POINT CARRIES A Z\_3 MONODROMY, AND ONLY TWO OF ITS THREE SHEETS CARRY REAL GEOMETRY.** In r = (2 M alpha\textasciicircum{}2)\textasciicircum{}(1/3) sinh\textasciicircum{}(2/3)(u), u = 3 tau / 2 alpha, the sine near u = 0 is u times something analytic and non-vanishing, so **the whole branch structure is the factor u\textasciicircum{}(2/3)**: one circuit multiplies r by e\textasciicircum{}\{4 pi i/3\}, a primitive cube root of unity. **One circuit does not close it; three do.** ** OF THE THREE DETERMINATIONS EXACTLY TWO CARRY REAL r, and they are the two the construction already uses: ** the real u axis gives r > 0 (the expanding leg) and Im u = -pi/2 -- the offset Im tautilde = -pi alpha/3 the companion papers continue along -- gives r = -(2M alpha\textasciicircum{}2)\textasciicircum{}(1/3) cosh\textasciicircum{}(2/3), the conjugate branch. **The third sheet carries no real geometry to continue onto.** ** AND THE ORDER IS THE MASS TERM'S, NOT THE HORIZON CUBIC'S: ** near r -> 0 the 2M/r in (dr/dtau)\textasciicircum{}2 dominates and gives r\textasciicircum{}(3/2) \textasciitilde{} tau, whereas the cubic's degree comes from the r\textasciicircum{}2/alpha\textasciicircum{}2 term. **Two threes of the same order and different origin, recorded as distinct.**). 
+\emph{Computes:} the monodromy multiplier asserted a primitive cube root of unity with order asserted 3; the real-r sheets tabulated line by line; the horizon cubic's degree asserted 3 with its leading term identified; and R asserted central in the Weyl S\_3, an involution, and outside it
+ \emph{Bound:} ** THIS IS A THIRD THREE AND IS A LIABILITY BEFORE IT IS AN ASSET. ** The programme has already withdrawn one conflation of two threes (generations-are-the-hinges, registered in `check\_withdrawn`), so this one enters labelled as DISTINCT from the A\_2 / horizon-root / hinge three. What would make them one is an argument that the 2/3 exponent and the cubic's degree are forced by a single structure; **none is offered**
+\ \emph{Run:} \texttt{python3 receipts/P08\_slicing\_operator/P08\_the\_branch\_point\_monodromy\_is\_Z3.py}
+\item[\label{rcpt:P03_acceleration_is_slice_curvature}\texttt{P03\_acceleration\_is\_slice\_curvature}]\hfill\textsf{[OK]}\\
+\textit{sec:curvature \ensuremath{\cdot} rem:twocritical \ensuremath{\cdot} the bend} \ (on ANY member of the energy family (E cancels: (dr/dtau)\textasciicircum{}2 = E\textasciicircum{}2 - f, and E is a constant of the motion) d\textasciicircum{}2r/dtau\textasciicircum{}2 = -f'/2 = r*K\_G identically, so THE SIGN OF THE SLICE'S GAUSSIAN CURVATURE IS THE SIGN OF THE COMOVING ACCELERATION -- and the flat locus is the deceleration-to-acceleration turnover, which on Nariai is the seam and in standard terms is rho\_m = 2 rho\_Lambda (csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2, the seam's phase). A recent cosmological epoch: 7.06 Gyr at H0=73, 7.65 at 67.4, preceding matter-Lambda equality [borrowed from P3 \ensuremath{\cdot} P7 \ensuremath{\cdot} P8]). 
+\emph{Computes:} the identity asserted; the K\_G zero solved and matched to (M alpha\textasciicircum{}2)\textasciicircum{}(1/3); csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2 proved by algebra after simplify() failed on the closed forms; epochs at both H0
+ \emph{Bound:} bound: identities on the Nariai E=1 worldline; no causal claim between seam and turnover -- they are one locus; dating inherits H0
+\ \emph{Run:} \texttt{python3 receipts/P03\_SdS\_slicing/P03\_acceleration\_is\_slice\_curvature.py}
+\item[\label{rcpt:order3_bridge}\texttt{order3\_bridge}]\hfill\textsf{[OK]}\\
+\textit{groupoid<->bead order-three (scope corrected r1430)} \ (the groupoid Z/3 (horizon cubic r\textasciicircum{}3-r+2M, colinear real) and bead Z/3 (comoving r\textasciicircum{}3+2M, equilateral) are Z/3's of DIFFERENT cubics and no AFFINE change of variable identifies their root sets (obstruction at fixed cubic; the two are the E=1 and E=0 ends of one turning-point family, stage 5) [borrowed from P7]). 
+\emph{Computes:} bead law obeys (dr/dtau\textasciitilde{})\textasciicircum{}2=1-f; horizon roots colinear-real vs comoving equilateral; not affinely equivalent; stage 5 exhibits the E-family joining them, with a discriminating control
+ \emph{Bound:} the affine obstruction is exact; identification of ROOT SETS remains do-not-assert
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/order3\_bridge.py}
+\item[\label{rcpt:K23_functor_and_quotient}\texttt{K23\_functor\_and\_quotient}]\hfill\textsf{[OK]}\\
+\textit{rem:universal} \ (K2 + K3 --- IS Psi A FUNCTOR, AND IS 'THE SINGLE INVARIANT IS THE GEOMETRY' A UNIVERSAL PROPERTY? CONFIRMATION 4 --- the objects: SOURCE: K1's action groupoid SO(5,1) \textbar{}x C ==> C . Objects = cuts. Arrows c -> g.c . Psi (P8): 'carries a cut of the substrate to a geometry'. TARGET: geometries, with isometries between them. [borrowed from P5 (+P8)]). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/K23\_functor\_and\_quotient.py}
+\end{description}\endgroup

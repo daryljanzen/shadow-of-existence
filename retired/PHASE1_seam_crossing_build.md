@@ -1,0 +1,48 @@
+> **⌗ RETIRED r2380 under `RG-1`. ITS RESULT IS CORPUS AND IS STATED THERE.**
+> *Phase 1 of the cosmogenesis-of-matter arc (r810): what does the branch point do to the three chiral
+> generations?* ***Its answer — the generations are INHERITED across the branch point, leaf-carried,
+> faithfully — is the corpus's own line***: P14 `sec:count`, and the ontology map §1q states it verbatim
+> ("the three chiral generations cross the seam UNCHANGED, leaf-carried — the L2 content becomes L1's
+> inherited content"). *It reached that answer by combining two established facts with no gap between them
+> (A4's transition law: the reassignment fixes the RATE and does not touch the DENSITY; T0.1: the generations
+> are leaf-carried wall-modes), and* ***that combination is the result, not the document.***
+
+---
+
+# Phase 1 — the chiral matter across the branch point: the build log
+
+*Opened r810 (2026-07-05), the first reach of the cosmogenesis-of-matter arc (`retired/THE_NEXT_ARC.md` Tier 1). Foundation-first inside the drill: grounded at source (A4 build, P14 §141, T0.1/matter §chirality) before synthesis. Result held to coherence; correspondence data-gated; the phase can return `no`.*
+
+## The question
+What does the cosmogenesis branch point do to the three chiral generations? A4 built the *classical* matter crossing but explicitly deferred the fermion/chiral matter across the branch point (A4 Milestone 3 fork (c): "the chiral matter forced across the branch point"). This is that piece.
+
+## The grounded result — the generations are INHERITED across the branch point, leaf-carried, faithfully.
+
+Two established facts combine with no gap between them:
+- **A4's structural transition law (r564):** the causal reassignment (radial → cosmic time, the NBC move on the null degenerate Nariai horizon) **fixes the RATE (time-stacking, Λ-set) and does not touch the DENSITY (leaf-carried, inherited).** The mechanism acts on the rate, never on the leaf-carried content.
+- **T0.1 (r808):** the three generations are **leaf-carried** — wall-modes of the existent leaf, counted by the γ⁵-graded analytical index in the leaf's proper measure, *not* propagating spacetime fields.
+
+**Therefore:** the generations are precisely the leaf-carried content the reassignment leaves untouched. The discrete flavour structure crosses the cosmogenesis **inherited, unchanged** — the matter the universe is made of is the progenitor's leaf-carried generation-structure, inherited faithfully at the branch point. This is the fermion-sector instance of the corpus's settled "the reassignment fixes the rate, the matter is inherited" (A4/P5/F1), now read on the *discrete flavour* content.
+
+## The origin — the family structure emerges from the S₃-fixed crest.
+The Nariai cosmogenesis branch point is the **fixed point of the root-permutation transposition, where two roots merge** (A4 Milestone 3; P14 §141: "the Weyl-fixed Nariai crest, a fixed point of S₃"). The discriminant $4-3r_0^2$ leaves the three roots real and distinct only undercritical, merging two at the crest. So the three generation-loci are **S₃-symmetric (two merged) at the crest** and **split into three distinct generations below it** (as the universe expands undercritical). The generations *emerge* from the S₃-symmetric crest — the vision's positive hook (Entry 21 leg 1), now grounded in the fermion sector: the crest is the family structure's symmetric origin, the three generations its undercritical unfolding.
+
+## The chirality — preserved; the matter/antimatter parity is not a seam event.
+The crest is **not** an $R$-fixed point (P14 §141: "not of $R$"; "the cosmogenesis places no parity-breaking event"). So $R=\gamma^5$ is not touched at the branch point: the inherited matter stays chiral, and the matter/antimatter parity is not a cosmogenesis event — it stays external, exactly as Entry 21 leg 2 charted the constraint. Phase 3's baryogenesis-analogue is thereby pre-constrained from Phase 1's own grounding.
+
+## Verdict (Phase 1, coherence)
+The three chiral generations cross the cosmogenesis branch point **faithfully, inherited as leaf-carried content**; their family structure **originates at the S₃-symmetric Nariai crest** (two roots merged there, splitting below); the **chirality is preserved** (the crest not R-fixed). The seam does not add to the discrete skeleton (count/chirality/family unchanged) — it supplies the skeleton's **cosmogenesis** (inheritance + S₃-origin) and confirms the matter/antimatter parity is not a seam event. Not "inert," but not skeleton-extending either: the honest middle the phase's live-test allowed. Coherence; correspondence data-gated.
+
+## The deeper reach still open (flagged, not claimed)
+The *dynamics* of the inherited generations on the cosmological side: the wall-mode mass $W=\lambda\sqrt f/r$ turns imaginary past the horizons (T0.1 flag), i.e. under the signature flip the hole-side spatial mass term becomes a cosmological-side temporal one — the bound wall-mode continuing as a **propagating** cosmological fermion. That the branch point is null (κ=0) and characteristic (one datum per mode, A4) is the machinery; working the explicit bound→propagating continuation of the exact zero-mode is the next step, and is where the imaginary-mass structure becomes the question rather than a footnote. Held do-not-assert until worked.
+
+## The dynamics, worked (r811)
+The bound→propagating transition is the fermion instance of A4's rate-reassignment, and A4 already fixes its character. Under the signature flip ($\theta=\pi/2+i\psi$, radial spacelike $\to$ timelike; P3 §seam), the hole-side Dirac problem $H=-i\sigma_x\partial_x+m(x)\sigma_z$ with real $m=W$ (a spatial mass, the mode bound) continues to the cosmological side with $\partial_x\to-i\partial_\tau$ and $m\to$ imaginary: the two imaginaries combine into a **real cosmic-time evolution**. So the bound wall-mode does not vanish or reflect at the branch point — it continues as a fermion **propagating in cosmic time**, the hole-side spatial-mass term reappearing as the cosmological-side temporal one. This is exactly A4's law read on the fermion: the *content* (the generation, leaf-carried) is inherited, the *rate* (the radial$\to$time promotion) is reassigned, and the fermion's bound$\to$propagating character *is* that reassignment. Because the seam is null and characteristic (one datum per mode, faithful transmission, κ=0), the generation structure is carried through unaltered: the three bound generation-modes of the progenitor become the **three propagating fermion families of the expanding universe**, faithfully.
+
+**Residual (technical, not blocking):** the *explicit* analytic continuation of the exact zero-mode (the $\cosh^{-a}$ profile continues under $x\to i\tau$ toward a $\cos$-type cosmological form; any turning-point/oscillation structure and its normalization on the cosmological leaf) is a computation left for when a concrete cosmological-side Dirac model is wanted. The qualitative result — bound$\to$propagating, faithful, three families carried through — stands on A4's characteristic/null machinery and does not wait on it.
+
+## Verdict, complete (Phase 1, coherence)
+The cosmogenesis of the generations: they are **inherited** across the branch point (leaf-carried content, A4+T0.1), their family structure **originates** at the S₃-symmetric Nariai crest (two roots merged, splitting below), their **chirality is preserved** (crest not R-fixed), and their **dynamics** transitions bound$\to$propagating (A4's rate-reassignment on the fermion) — the three progenitor wall-modes becoming the three propagating fermion families of the expanding universe, carried through faithfully by the null characteristic seam. The matter the universe is made of is the progenitor's leaf-carried generation-structure, inherited and released at the cosmogenesis. Coherence; correspondence data-gated; matter/antimatter not a seam event (external, Phase 3 pre-constrained).
+
+## Bake call (gate, made — r811)
+**Bake.** The result is a settled synthesis of established machinery (A4's transition law, T0.1's leaf-index, P14 §141's S₃-fixed/not-R-fixed), earned and complete at the level it claims. Distilled as a short cosmogenesis paragraph into `matter_sector_paper` (the fermion sector's home) — the generations inherited/originating/chirality-preserved/bound→propagating, the exact continuation flagged as the technical residual, coherence-scoped. Not P14 (that paper's cosmogenesis line is the boundary's; this is the fermion sector's own).

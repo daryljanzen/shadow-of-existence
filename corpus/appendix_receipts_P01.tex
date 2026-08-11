@@ -1,0 +1,12 @@
+\clearpage
+\section*{Appendix R\quad Computational Receipts}\label{app:receipts}
+\addcontentsline{toc}{section}{Appendix R: Computational Receipts}
+\small\noindent Each computation marked \rcptmarker\ in the text is verified by a runnable receipt in the \texttt{receipts/} directory that ships with this work; status \textsf{OK} = verified (traced, run, output matches the claim). This appendix is generated from the receipt index, not maintained by hand.\par\medskip
+\begingroup\renewcommand{\arraystretch}{1.25}
+\begin{description}
+\item[\label{rcpt:P01_metric_singularity_algebra}\texttt{P01\_metric\_singularity\_algebra}]\hfill\textsf{[OK]}\\
+\textit{sec:3} \ (horizon time-coefficient forced to 0 at r\_h in every chart; \textbar{}zeta\textbar{}\textasciicircum{}2, g\textasciicircum{}rr vanish). 
+\emph{Computes:} Schwarzschild g\textasciicircum{}rr (inversion), g\_vv (EF), g\_TT (PG) derived + vanish at r\_h; controls at 2 r\_h
+ \emph{Bound:} algebraic half of sec:3 only; the theorem/prop/lemma are analytic proofs
+\ \emph{Run:} \texttt{python3 receipts/P01\_BH\_causality/P01\_metric\_singularity\_algebra.py}
+\end{description}\endgroup

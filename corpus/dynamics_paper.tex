@@ -1,0 +1,364 @@
+\documentclass[11pt,a4paper]{article}
+
+% =====================================================================
+% [†ONT-DYN] WHY THE CUT BENDS — this paper is the HOME (ONTOLOGY_FOUNDATION_INDEX.md §1o).
+%   IT ANSWERS P8's DEEPEST OPEN QUESTION ("the emergence of the bend"): "The static operator says WHAT a
+%   bend is — matter, the anchor's image. The dynamical question is HOW a bend evolves."
+%   Established here: the confined bend — a polarized Gowdy-de Sitter wave whose single TT mode psi IS the
+%   leaf's shear, the propagating graviton. ENERGY and MOMENTUM ARE NOT EVOLUTION EQUATIONS: they are exactly
+%   the ADM Hamiltonian and momentum constraints, and they say the wave's energy and momentum are carried
+%   ENTIRELY BY THE SHEAR OF THE SPATIAL LEAF. "This is the anchor at work in the dynamical setting."
+%   A TRUE HAMILTONIAN, NOT A FROZEN CONSTRAINT: the lapse N = e^{gamma-psi} is "the metrical rate at which
+%   the existing layer advances." Same content as P10's minisuperspace, NOW WITH A LOCAL PROPAGATING D.O.F.
+%   *** LAMBDA>0 FORCES THE CLOCK, AND POSITIVELY. At Lambda=0 the area R is an internal clock (the WAVE
+%   equation becomes the cylindrical Bessel equation). At Lambda>0 the area-clock R=t is INCONSISTENT (AREA
+%   then forces 0 = 2.Lambda.t.e^{2(gamma-psi)} != 0); "the substrate's de Sitter cosmic time is the clock
+%   that replaces it, ESTABLISHED POSITIVELY AND NOT MERELY BY THE FAILURE OF THE ALTERNATIVE." — "the
+%   absolute foliation is not a convenience but the structure on which the constraint becomes a true
+%   Hamiltonian, and IT EARNS THAT NECESSITY PRECISELY WHERE AN INTERNAL CLOCK BREAKS DOWN." ***
+%   COSMIC NO-HAIR, EXACTLY: AREA - 2.WAVE cancels the Lambda source identically, leaving the conserved
+%   canonical shear charge C_0 = R_t - 2R.psi_t; ds/dtau = -C_0/2V, so the anisotropy rate decays as the
+%   INVERSE VOLUME. The de Sitter background is an attractor.
+%   *** THE GRAVITON IS EXACTLY MASSLESS — a computation, not an assertion. The fixed-background TT
+%   truncation gives m^2 = 2.Lambda = 6H^2 (principal series). RESTORING THE CONSTRAINT BACK-REACTION and
+%   reducing to the gauge-invariant Q yields the MASSLESS minimally-coupled de Sitter Mukhanov equation, NO
+%   a^2 m^2 TERM. "The physical effective mass is therefore EXACTLY ZERO — the apparent shift 6H^2 -> 4H^2 is
+%   a gauge/truncation artifact, the ~a solution being pure residual gauge." Established at the
+%   gauge-invariant level BY COMPUTATION, not asserted robust to an ambiguous shift.
+%   TWO EXACT STRUCTURES beyond the Bianchi count: (i) the shear charge is conserved in the FULL INHOMOGENEOUS
+%   model (AREA - 2.WAVE is identically a continuity equation); (ii) e_grav = 2R(psi_t^2 + psi_z^2) >= 0 is
+%   POSITIVE-DEFINITE, so the propagating sector is GHOST-FREE TO ALL ORDERS. "These close the ghost and
+%   zero-mode runaways exactly."
+%   DO NOT REPORT THE NONLINEAR RESONANCE AS OPEN. "The natural monotone instrument fails for a precise
+%   reason: the total field energy grows as 2.Lambda.a^4, carrying THE BACKGROUND'S OWN EXPANDING ENERGY, so
+%   no total energy is monotone." The residual IS the future stability of de Sitter, "and at the level of the
+%   physics IT IS A SETTLED THEOREM RATHER THAN AN OPEN FRONTIER": Friedrich (vacuum, small data, conformal
+%   field equations — "which is also why no exact energy in this model closes the question: ENERGY IS THE
+%   WRONG INSTRUMENT, and the failure of any monotone energy is the expected shape of that fact, NOT A SIGN OF
+%   OPENNESS"); Andreasson-Ringstrom (all data, T^3-Gowdy, Lambda>0, with Vlasov matter — "a corroboration
+%   rather than a vacuum theorem"); Beyer (the one non-generic exception, the unstable NARIAI BRANCH,
+%   "precisely the locus the range construction already isolates as the no-pivot seam"). ***
+%   prop:admit: "NO FEATURE OF THE CONTINUOUS DYNAMICS *FORCES* A QUANTUM STRUCTURE; THE DYNAMICS *ADMITS*
+%   QUANTIZATION, AS THE LAMBDA=0 CASE DOES." Two cautions: this is NOT a constructed full non-perturbative
+%   quantization (neither built here nor needed for the verdict), and NOT the claim that no structure could
+%   ever be forced — only that no CLASSICAL DYNAMICAL obstruction exists, "so that ANY FORCING MUST LIVE
+%   ELSEWHERE THAN IN THE CONTINUOUS EVOLUTION." The one remaining candidate is the DISCRETE root structure
+%   (the horizon cubic's S_3 and its A_2) — developed in P12 ([†ONT-ALG] §1h), not here.
+%   prop:twoKV: the polarized Gowdy-dS metric admits EXACTLY TWO Killing vectors, so it sits at the Type-I
+%   stratum — THE LAST CONFINED STRATUM BEFORE THE WALL, its single polarization pinned to a fixed global
+%   orientation by the residual T^2.
+%   *** prop:radiative-wall — THE WALL IS NOT A METRIC SINGULARITY OF EITHER SPECIES. A metric singularity (P1's sense)
+%   is a COLLAPSE OF THE METRIC'S MEASURE; a Killing horizon is the worked SUFFICIENT case, NOT THE DEFINITION.
+%   The wall is a Type-N Brinkmann plane wave: its metric is NON-DEGENERATE (det g = -1), so no measure-
+%   collapse — not the finite-curvature species; and it is VSI (all polynomial curvature invariants vanish) —
+%   not the infinite-curvature species either. IT IS A REGULAR RADIATIVE BOUNDARY. The Type-N field DOES carry
+%   a Killing vector (its covariantly-constant, fourfold-degenerate PND, "the characteristic of ordinary wave
+%   propagation") — BUT THAT DIRECTION IS NULL EVERYWHERE: no non-null-to-null transition, no Killing horizon,
+%   no measure-collapse.
+%   THEREFORE NO COSMOGENESIS AT THE WALL: "the NBC re-founds a clock by reassigning the freed null direction
+%   of a DEGENERATING Killing field; the wall has no degenerating Killing field, so the cosmogenesis mechanism
+%   HAS NOTHING TO ACT ON THERE. Cosmogenesis lives at the finite-curvature Killing-horizon strata — the
+%   cosmological/black-hole horizon and the Nariai seam — AND NOT AT THE WALL." The wall is the operator's
+%   GENERATIVE BOUNDARY: where generation-by-symmetry hands off to ordinary inhomogeneous evolution. "'Why the
+%   cut bends past the wall' is a GENUINELY DIFFERENT QUESTION from cosmogenesis." NEVER CONFLATE THEM.
+%   GUARD: the "isotropy -> 0" that marks the wall is the CUT-FIXING SUBSTRATE ISOTROPY, which vanishes there —
+%   NOT the wall geometry's own isometry, which as a plane wave is LARGE. "The two coincide on the
+%   symmetry-reducible sector and PART ONLY AT THE WALL." ***
+%   *** THE CHIRALITY CRITERION, COMPUTED. With H = h_+(u)(x^2-y^2) + 2 h_x(u) xy the Ricci tensor vanishes for
+%   ANY h_+, h_x (the trace part would be the matter bend, absent in vacuum). The reflection x -> -x sends
+%   h_x -> -h_x: the helicity-flipping parity, a symmetry IFF h_x = 0. A transverse rotation acts as the spin-2
+%   phase e^{-2.i.theta} on h_+ + i.h_x, polarization angle (1/2) arg(h_+ + i.h_x).
+%   "CHIRALITY IS THE TURNING OF THE POLARIZATION PLANE" — the handedness being the Z_2 SIGN OF
+%   d/du arg(h_+ + i.h_x), helicity ±2. Fixed polarization (h_x=0, or any constant ratio) => a fixed axis
+%   furnishes a reflection symmetry, parity IDENTIFIES the helicities => NO genuine chirality. Turning
+%   polarization => no fixed axis is a reflection symmetry for all u => GENUINELY CHIRAL.
+%   WHERE IT ONSETS (this paper SHARPENS P9): "the criterion bites NOT ONLY AT THE WALL but FROM THE LOSS OF
+%   THAT SWEPT SO(3) ONWARD: the polarized Gowdy edge (residual T^2, one fixed axis) IS STILL ACHIRAL, THE
+%   UNPOLARIZED TURNING WAVE IS THE FIRST CHIRAL CASE, and the wall (no residual isometry) is where chirality
+%   is GENERIC." P9's "the wall is the onset of chirality" is the coarser statement, qualified at r915.
+%   The handedness rides the DISCONNECTED orientation parity — "outside any connected-group action, which is
+%   ALSO WHY IT LIES BEYOND THE REACH of the matter-sector index obstruction that renders a connected-gauge
+%   fermion spectrum vector-like: THE GRAVITATIONAL SECTOR IS CHIRAL PRECISELY THROUGH THE COMPONENT THAT
+%   OBSTRUCTION CANNOT TOUCH." Same Z_2 as the A_2 diagram automorphism R (the dS<->Schwarzschild vantage-swap; = gamma^5 per r968 canon)
+%   and as gamma^5 on the cut's fermion, "here read dynamically" — the GAUGED factor of D_6, while the Weyl S_3
+%   is the deck symmetry and NO isometry, so flavour is GLOBAL. ***
+%   THE WALL CARRIES NO DISCRETE MARKER: the Nariai seam = two horizon roots collide; the cosmogenesis horizon
+%   = the null<->timelike reassignment; the Riemannian<->Lorentzian seam = the signature flip. "The wall is the
+%   one boundary carrying no such discrete marker — no colliding roots, no degenerating Killing field, no
+%   measure-collapse — consistent with its being purely THE END OF CONTINUOUS GENERATION. These markers are
+%   DISTINCT OPERATIONS, NOT ONE; they relate only through the strata they mark."
+%
+% =====================================================================
+% CANON NOTE — LIVE OPERATING PHILOSOPHY
+%
+% CR is ONTOLOGICAL, not merely representational. The universe is a real
+% 3-sphere evolving in a real de Sitter substrate; the layer is what EXISTS
+% and advances, and "the cut bends" means the existing layer departs from the
+% maximally symmetric vacuum profile. "Representation/projection/shadow/
+% manufactured" mean built-by-construction-and-REAL, never unreal.
+%
+% REGISTER: recognition, not proposal. The field equations are Einstein's,
+% unchanged; only the reading is CR's. The thesis is NOT "CR modifies the
+% dynamics" but "the dynamics of GR's inhomogeneous sector is the bend of the
+% de Sitter cut, advanced by the substrate's own true Hamiltonian, up to the
+% wall where finite-symmetry generation hands off to free evolution."
+%
+% STATUS: r306 — the nonlinear Lambda>0 regime resolved on its CLASSICAL side, now
+% with F1's full closure folded in: the linearized dS-wave sharpened to the
+% gauge-invariant MASSLESS dS Mukhanov mode (m^2_eff=0, the 6H^2->4H^2 shift a gauge
+% artifact) [frontier sec 13]; the conserved shear charge extends to the full
+% propagating system + ghost-free graviton energy [sec 14]; total energy ~2 Lambda a^4
+% not monotone, the gauge-invariant perturbation energy the right object [r300]; and
+% the all-orders ADMIT externally grounded for GENERIC data by the established de Sitter
+% nonlinear-stability theorem -- Friedrich 1986 (vacuum small-data = CR's regime),
+% Andreasson-Ringstrom 2016 (T^3-Gowdy all-data, Vlasov), Beyer 2009 (Nariai non-generic,
+% the boundary CR isolates) [r301]. => the continuous dynamics ADMITS, not FORCES;
+% Prop. admit. From the consolidated spine
+% corpus/dynamics_frontier_gowdy-dS_canonical.md sec 9-14 (r273-r301). Assembled on
+% the anchor + the isotropy stratification + the wall's settled species (Moves 8-11).
+% Stated for review. NOT claimed: a closed-form nonlinear solution; a full
+% non-perturbative quantization (not built, not needed for the verdict). Any forcing
+% is isolated to the discrete S_3/A_2 skeleton, developed in the algebroid paper
+% (Move 13: on the established dS_5 substrate it is the discrete Weyl(A_2)=S_3 shadow).
+% =====================================================================
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{receipts}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\newcommand{\Hphys}{H_{\mathrm{phys}}}
+\newcommand{\so}{\mathfrak{so}}
+\newcommand{\dS}{\mathrm{dS}}
+
+\title{Why the cut bends:\\
+\large the dynamics of the de Sitter cut, the confined gravitational wave,\\
+the generative boundary of the slicing operator, and chirality as the turning of the polarization plane}
+\author{Daryl Janzen\\
+\small Department of Physics and Engineering Physics\\
+\small University of Saskatchewan}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+In Cosmological Relativity (CR) the exact spherically symmetric and stationary geometries of general relativity are generated as symmetry-breaking cuts of a single de Sitter substrate: the slicing operator promotes the de Sitter slicing curve from a classifier to a generator, with vacuum the straight cut and matter the bend~\cite{JanzenOperator}, and the range of the construction is the symmetry-reducible sector of GR, bounded by a \emph{wall} at which continuous symmetry is lost and free gravitational radiation begins~\cite{JanzenRange}. This paper takes the next step: the \emph{dynamics}---why and how the cut bends in time. \emph{The symmetric sector already has its answer in closed form, and it is worth stating before the inhomogeneous case departs from it}: on any comoving worldline of a symmetric cut, at any energy, $\mathrm{d}^{2}r/\mathrm{d}\tilde\tau^{2}=-f'/2=rK_{G}$ with $K_{G}$ the slicing surface's Gaussian curvature~\cite{JanzenSlicing}---so \emph{the rate at which the symmetric cut's bend changes in time is the bend itself}, up to the areal factor, and the cut straightens, is momentarily flat, and bends the other way as the geometry passes its one sign change.\rcpt{P03_acceleration_is_slice_curvature} That is the whole of the symmetric sector's dynamics; what follows is the first case in which the bend is not symmetric. We work the first inhomogeneous, time-dependent bend explicitly. In a polarized Gowdy--de Sitter model the spatial leaf carries a single propagating transverse-traceless mode whose energy and momentum are the shear of the leaf; the Arnowitt--Deser--Misner (ADM) energy and momentum equations are exactly the Hamiltonian and momentum constraints; and the canonical Hamiltonian, deparametrized along the substrate's cosmic foliation, is a \emph{true} Hamiltonian generating the layer's advance rather than a frozen constraint~\cite{JanzenCanonicalTime}. We locate this confined wave precisely within the symmetry classification: it carries exactly two Killing vectors and so occupies the Type-I edge of the isotropy stratification---the last confined stratum before the wall. Finally we settle the character of the wall itself. It is \emph{not} a metric singularity in the sense of~\cite{JanzenBHcausality}: there a metric singularity is a collapse of the metric's \emph{measure}---a null hypersurface along whose generators the spatial extent contracts to zero, so that null-separated, spatially coincident events are assigned vanishing proper interval---with a Killing horizon the worked sufficient case rather than the definition; the wall, a Type-N plane wave, has a non-degenerate metric (no such measure-collapse) and vanishing curvature invariants, so it is neither species. The wall is therefore the operator's \emph{generative boundary}---where generation-by-symmetry hands off to ordinary inhomogeneous evolution---and not a cosmogenesis branch point; cosmogenesis is elsewhere, and its two loci should be kept apart. The \emph{reassignment}---the re-founding of a clock by freeing a degenerating Killing field's null direction---requires a degeneracy, and lives at the finite-curvature Killing-horizon strata, the forced Nariai member where $\kappa=0$; the \emph{branch point} at which the collapse leg becomes the expansion leg is $r=0$, at the close of the lift~\cite{JanzenCRframework,JanzenCosmogenesis}. \emph{These are two readings of the construction and not one event}: the degeneracy is what makes the reassignment possible, the branch point is where the legs join, and neither is the wall---which has no degenerating Killing field to free and no branch structure, being simply where generation-by-symmetry ends. \emph{The two lacks are independent, and it is worth saying so, since a geometry can supply either without the other}: the forced Nariai member carries the degeneracy and is \emph{not} a branch point, while $r=0$ is a branch point and carries \emph{no} Killing degeneracy. Cosmogenesis requires the pair---a null direction freed by a degenerating Killing field, and a branch at which that freed direction becomes the expansion leg's clock---so a locus failing either is excluded, and the wall fails both. \emph{This is a second and independent exclusion of the wall}, the first being its species: a Type-N plane wave is neither a metric nor a curvature singularity, and so could not host a cosmogenesis whatever its Killing structure. At the wall the two freed polarizations settle \emph{handedness} by direct computation: chirality is the turning of the polarization plane (helicity $\pm2$, the $\mathbb{Z}_2$ sign of the rate at which the polarization angle turns), absent while a residual isometry pins the polarization to a fixed axis---the swept $\mathrm{SO}(3)$ of the symmetric sector completing the reflection into a rotation and identifying the two handednesses, a mirror not a chirality---and genuine once that swept rotation is lost. The criterion therefore bites from that loss onward rather than only at the wall: the polarized Gowdy wave, its single polarization pinned by the residual $T^2$, is still achiral; the unpolarized \emph{turning} wave is the first chiral case; and the wall, where no residual isometry survives, is where chirality is generic. \emph{That placement is worth reading off carefully, because it puts the first chiral geometry inside the construction's own reach rather than past it.} The unpolarized turning wave carries the same two spacelike Killing vectors as the polarized one---the range paper's ground for placing the Einstein--Rosen and Gowdy class in the reachable sector~\cite{JanzenRange}---and the transverse reflection $x\mapsto-x$ is an isometry of the Gowdy form precisely when the off-diagonal $g_{xy}$ vanishes, that is precisely when the wave is polarized. \emph{So handedness is achieved on a cut the operator reaches, and not deferred to a sector it does not generate}: what the wall adds is that chirality there is generic rather than that it begins there\rcpt{P09_the_wall_is_not_the_loss_of_symmetry}. The first chiral member of the range is built in \S\ref{sec:unpolarized}: its two polarizations are a wave map into the hyperbolic plane, and the handedness settled here is there the sign of that map's conserved twist $c=R\,e^{2P}Q_t$, on which the orientation parity acts as $c\mapsto-c$. The handedness is the substrate's own orientation parity surfacing in the radiating sector as the graviton's two helicities, the \emph{disconnected} $\mathbb{Z}_2$ (the $A_2$ diagram automorphism of~\cite{JanzenGroupoid}, the de~Sitter$\leftrightarrow$Schwarzschild vantage-swap) that lies beyond the reach of the index obstruction rendering a connected-gauge fermion spectrum vector-like~\cite{JanzenBoundary}---the two being one mechanism read in two sectors, a connected isometry identifying the handednesses in each, there by an index theorem and here by direct computation, with the stratification supplying the locus at which the identification is lost. \emph{The fermionic half of that pair is realised concretely in the matter sector}, where the parity is the chirality of a wall-bound zero mode---the diagram automorphism acting as $\gamma^5$ on a Jackiw--Rebbi mode whose superpotential is odd in the signed radius---so the two sectors exhibit one $\mathbb{Z}_2$ in matter and in radiation~\cite{JanzenMatter}. \emph{That a sector with no fermion content returns the same parity is the corroboration}: the handedness is the substrate's, not an artefact of either construction. The dynamics is thus the motion of the cut along the strata, Hamiltonian throughout the symmetry-reducible sector and ordinary beyond its boundary. We then carry the nonlinear $\Lambda>0$ regime through on its classical side: the model has an exact de Sitter background whose cosmic time is the clock---and is \emph{forced} to be, since the internal area clock that organizes the $\Lambda=0$ Gowdy system is inconsistent once $\Lambda>0$, the substrate's cosmic time replacing it positively rather than by the failure of the alternative, the dynamical analogue of the canonical-time paper's necessity---the homogeneous shear obeys a conserved-charge \emph{cosmic no-hair} law that makes that background an attractor, the linearized propagating graviton is a de Sitter wave admitting Bunch--Davies quantization---its physical effective mass exactly zero at the gauge-invariant level, the apparent $6H^2$ of the fixed-background truncation being a gauge artifact, established by computation rather than asserted robust to an ambiguous shift---and two exact structures sharpen the first-class Bianchi count: the shear charge is conserved in the \emph{full} inhomogeneous model, and the graviton's reduced energy is positive-definite, so the propagating sector is ghost-free to all orders. The one residual, a propagating nonlinear parametric resonance, is \emph{settled}, and not by an energy argument: no total energy is monotone here, because the total field energy carries the background's own expanding energy, and that failure is the expected shape of the fact that energy is the wrong instrument---the question is the future stability of de Sitter, settled in vacuum at small data by Friedrich's conformal method, corroborated for all data in the $T^3$-Gowdy class with $\Lambda>0$, and with the one non-generic exception, the unstable Nariai branch, precisely the no-pivot seam the range construction already isolates. Since the system is first-class general relativity, consistent to all orders, the continuous dynamics \emph{admits} rather than \emph{forces} a quantum structure---the distinction held at the programme's own criterion of necessity, on which a structure a framework merely \emph{permits} is no explanation but a description, and which fixes the altitude of every ``forces'' and every ``admits'' in this paper (coherence, not correspondence)~\cite{JanzenShadowExistence}. What is not claimed is a full non-perturbative quantization; any forcing is isolated to the construction's discrete root structure, developed in the companion algebroid paper.
+\end{abstract}
+
+\section{Introduction: from the static operator to the bend}\label{sec:intro}
+
+The slicing operator of Cosmological Relativity generates the static, spherically symmetric sector of general relativity from one de Sitter substrate~\cite{JanzenOperator}. A slicing curve on the substrate is the radial profile of a spatial leaf; the straight cut is vacuum (Schwarzschild--de Sitter, the kernel), and a bend in the curve is matter, with density $\rho=m'/4\pi r^2$ fixed by the bend. The companion range paper extends this from a classifier to a map of reach~\cite{JanzenRange}: a geometry is generated as a cut exactly when its isometry group contains a sweep-subgroup of the substrate's, so the range is the \emph{symmetry-reducible sector}, laid out along a null-degeneracy axis from the Nariai seam to a \emph{wall} at which continuous symmetry is lost altogether. At the wall, inhomogeneity, free gravitational radiation, and the failure of any global sweep orientation are one and the same boundary; ``why the cut bends'' is named there as the open dynamical question.
+
+This paper answers it, in the regime where the answer can be made concrete and exact. The static operator says \emph{what} a bend is---matter, the anchor's image. The dynamical question is \emph{how} a bend evolves: a leaf that is not maximally symmetric must carry its departure from the round $S^3$ forward in time, and the governing law of that advance is what we exhibit. Three ingredients, each already established in the corpus, combine:
+
+\begin{enumerate}
+\item the \emph{anchor}---the map from a cut to its stress-energy---whose energy sector is the Hamiltonian constraint and whose momentum sector is the bend in the shift~\cite{JanzenOperator,JanzenRange};
+\item the \emph{cosmic clock}---the substrate's preferred foliation, empirically forced~\cite{JanzenModernParallax} and structurally distinguished, on which the canonical constraint deparametrizes to a true Hamiltonian~\cite{JanzenCanonicalTime,JanzenCRframework};
+\item the \emph{stratification}---the symmetry classes of the range read as the isotropy strata of the construction, from the maximally symmetric vacuum down to the wall~\cite{JanzenRange}.
+\end{enumerate}
+
+We assemble them on the simplest model that carries a genuine propagating degree of freedom---a linearly polarized Gowdy--de Sitter spacetime~\cite{Gowdy1974,EinsteinRosen1937}---and then read the result back into the stratification and out to the wall. The register is that of the rest of the programme~\cite{Janzen2025,JanzenCRframework}: the field equations are Einstein's, unchanged; the existing object is the evolving three-dimensional layer, and ``the cut bends'' is a statement about that layer's advance, not about a four-dimensional block. In the layered reading the cosmology runs on, this is the dynamics of the leaf and its rate: the bend \emph{is} the leaf's content (matter, its departure from the round $S^3$), and the advance that carries it forward is generated by the same lapse whose deparametrized true Hamiltonian is the foliation's rate of advance~\cite{JanzenOperator,JanzenCanonicalTime}---so where the static operator gives the leaf and its bend, this paper supplies how that leaf evolves. The wall at the far end of the stratification is the boundary of that layered generation: up to it the leaf is generated by a symmetric sweep of the substrate, and past it, where the last continuous symmetry is gone, it is carried instead by ordinary evolution---the same seam-to-wall span along which the observable cosmology is laid out, the seam its inner (Nariai) end~\cite{JanzenRange}.
+
+\section{The confined bend: a polarized Gowdy--de Sitter wave}\label{sec:gowdy}
+
+Consider the linearly polarized Gowdy--de Sitter metric
+\begin{equation}
+ds^2 = e^{2(\gamma-\psi)}\bigl(-dt^2+dz^2\bigr) + e^{2\psi}\,dx^2 + R^2 e^{-2\psi}\,dy^2,
+\label{eq:metric}
+\end{equation}
+with $\psi,\gamma,R$ functions of $(t,z)$ only. The field $\psi$ is the single transverse-traceless polarization\rcpt{P11_gowdy_dS}---the leaf's shear, the propagating graviton; $R$ is the area element of the $(x,y)$ two-torus, the local clock/area variable; $\gamma$ is the conformal factor on the $(t,z)$ plane. With cosmological constant $\Lambda$, the Einstein equations $G_{ab}+\Lambda g_{ab}=0$ reduce to a wave equation, an area equation, two constraints, and a quadrature for $\gamma$:
+\begin{align}
+\text{(WAVE)}\quad & (R\,\psi_t)_t-(R\,\psi_z)_z = \Lambda R\, e^{2(\gamma-\psi)}, \label{eq:wave}\\
+\text{(AREA)}\quad & R_{tt}-R_{zz} = 2\Lambda R\, e^{2(\gamma-\psi)}, \label{eq:area}\\
+\text{(ENERGY)}\quad & 2(R_t\gamma_t+R_z\gamma_z)-(R_{tt}+R_{zz}) = 2R(\psi_t^2+\psi_z^2), \label{eq:energy}\\
+\text{(MOMENTUM)}\quad & R_t\gamma_z+R_z\gamma_t-R_{tz} = 2R\,\psi_t\psi_z. \label{eq:momentum}
+\end{align}
+These are verified directly from~\eqref{eq:metric} (clean residuals). Equations~\eqref{eq:energy}--\eqref{eq:momentum} are not evolution equations: they are precisely the ADM Hamiltonian and momentum constraints~\cite{ADM1962} for the foliation by constant-$t$ leaves, and they say that the wave's energy and momentum are carried \emph{entirely by the shear of the spatial leaf}---$\psi_t^2+\psi_z^2$ and $\psi_t\psi_z$. This is the anchor at work in the dynamical setting: matter and radiation are the bend, and here the bend is the leaf's transverse-traceless shear.
+
+\paragraph{A true Hamiltonian, not a frozen constraint.}
+The canonical Hamiltonian density built from~\eqref{eq:metric} generates~\eqref{eq:wave},~\eqref{eq:area}, and the $\gamma$-quadrature through Hamilton's equations: the time development of the leaf is reproduced exactly. The lapse $N=e^{\gamma-\psi}$ is not a free multiplier to be gauged away but the metrical rate at which the existing layer advances, $d\tau=N\,dt$, exactly as in the cosmological and canonical-time papers~\cite{JanzenCRframework,JanzenCanonicalTime}. The constraint, read on the substrate's foliation rather than an arbitrary one, deparametrizes:
+\begin{equation}
+i\,\partial_\tau \Psi = \hat{\Hphys}\,\Psi,
+\end{equation}
+with $\Hphys$ the reduced Hamiltonian for the propagating mode. This is the same content as the minisuperspace deparametrization of~\cite{JanzenCanonicalTime}, now carrying a local propagating degree of freedom: the same absolute foliation that makes flat $\Lambda$CDM a true-Hamiltonian flow makes the graviton's confined polarization a true-Hamiltonian flow.
+
+\paragraph{The two regimes.}
+At $\Lambda=0$ the model degenerates to the classical Gowdy/Einstein--Rosen system~\cite{Gowdy1974,EinsteinRosen1937}: the area $R$ may be used as an internal clock and the wave equation~\eqref{eq:wave} becomes the cylindrical (Bessel) wave equation, $\psi_{TT}+R^{-1}\psi_T-\psi_{zz}=0$ in the $R$-time gauge. At $\Lambda>0$ this internal-clock construction fails---$R$ no longer separates the dynamics cleanly---and the substrate's cosmic time is the natural clock instead. This is the dynamical analogue of the point made in the canonical-time paper: the absolute foliation is not a convenience but the structure on which the constraint becomes a true Hamiltonian, and it earns that necessity precisely where an internal clock breaks down.
+
+\subsection{The unpolarized cut: the wave map, and a conserved handedness}\label{sec:unpolarized}
+The cut above is \emph{linearly polarized}, and by the criterion of \S\ref{sec:chirality} that makes it achiral: its single polarization is pinned to a fixed axis by the residual $T^2$. The first chiral member of the reachable sector is therefore not this one but its unpolarized generalization, which we now build---restoring the second polarization as the off-diagonal $\omega$ of the torus block,
+\begin{equation}\label{eq:unpolarized}
+ds^2 = e^{2(\gamma-\psi)}\bigl(-dt^2+dz^2\bigr) + e^{2\psi}\,(dx+\omega\,dy)^2 + R^2 e^{-2\psi}\,dy^2,
+\end{equation}
+with $\psi,\gamma,\omega,R$ functions of $(t,z)$ and $\omega\equiv0$ returning~\eqref{eq:metric}. The torus block still has determinant $R^2$, so $R$ remains the area element, and $G_{ab}+\Lambda g_{ab}=0$ still has exactly six nonvanishing components: the conformal--constraint sector and the torus block in which the second polarization lives.
+
+\emph{The two polarizations are a wave map into the hyperbolic plane.} In the variables
+\begin{equation}\label{eq:wavemapvars}
+P = 2\psi-\ln R,\qquad Q=\omega,
+\end{equation}
+the torus block's equations are, identically,
+\begin{align}
+(R\,P_t)_t-(R\,P_z)_z &= R\,e^{2P}\bigl(Q_t^2-Q_z^2\bigr), \label{eq:wmP}\\
+\bigl(R\,e^{2P}Q_t\bigr)_t-\bigl(R\,e^{2P}Q_z\bigr)_z &= 0, \label{eq:wmQ}
+\end{align}
+which is the harmonic-map system for a map from the $(t,z)$ plane, with density $R$, into the target $dP^2+e^{2P}dQ^2$---a metric of Gaussian curvature $-1$, the hyperbolic plane\rcpt{P11_unpolarized_gowdy_cut}. \emph{The two polarizations are therefore not two decoupled fields but one point moving on a negatively curved surface}, the polarized case being the geodesic $Q=\mathrm{const}$ and the turning of the polarization plane being motion off it.
+
+\emph{And $\Lambda$ is absent from that sector.} Both of~\eqref{eq:wmP}--\eqref{eq:wmQ} hold with no cosmological term: $\Lambda$ enters only the area and conformal equations. This is worth stating because it explains the source in~\eqref{eq:wave} above. With $Q\equiv0$ the identity $(R P_t)_t-(R P_z)_z = 2[(R\psi_t)_t-(R\psi_z)_z]-(R_{tt}-R_{zz})$ is exact, so the vanishing of~\eqref{eq:wmP} is precisely the polarized WAVE equation minus the AREA equation, $2\Lambda Re^{2(\gamma-\psi)}-2\Lambda Re^{2(\gamma-\psi)}=0$. \emph{In the wave-map variable the graviton propagates freely and $\Lambda$ drives only the area}; the source in~\eqref{eq:wave} is the area equation, changed variables, and it is the second polarization that forces the variable in which this is visible.
+
+\emph{The handedness is then the disconnected component of the target's isometry group, and it carries a conserved charge.} The helicity-flipping parity of \S\ref{sec:chirality}---the transverse reflection $x\mapsto-x$---sends $g_{xy}\mapsto-g_{xy}$ and fixes every other component of~\eqref{eq:unpolarized}, which in the variables~\eqref{eq:wavemapvars} is exactly $Q\mapsto-Q$ with $P$ fixed. That is an isometry of $dP^2+e^{2P}dQ^2$, and its differential has determinant $-1$: it reverses orientation, so it lies in the component of $\mathrm{Isom}(\mathbb{H}^2)$ that the identity component does not reach. \emph{No connected target isometry identifies the two handednesses.} On the homogeneous reduction---$z$-independent, hence a three-dimensional abelian isometry with spacelike orbits, among the classes the range paper lists as reachable~\cite{JanzenRange}---equation~\eqref{eq:wmQ} integrates once,
+\begin{equation}\label{eq:twist}
+c \;=\; R\,e^{2P}\,Q_t \;=\; \text{const},
+\end{equation}
+and the parity acts on this \emph{twist} as $c\mapsto-c$. \emph{So on the reachable sector the graviton's handedness is the sign of a conserved charge, and the substrate's orientation parity is exactly its sign flip}, with $c=0$ the polarized, achiral cut of \S\ref{sec:gowdy}. Solutions with $c\neq0$ exist and their polarization turns, the first integral~\eqref{eq:twist} reproduced along them\rcpt{P11_unpolarized_gowdy_cut}.
+
+\emph{What this adds to the handedness argument of \S\ref{sec:chirality} is a third instrument, and the one that lies inside the construction's own reach.} The index theorem on the compact face and the polarization computation on the type-N plane wave both establish that a chirality can live only on the component no connected action reaches; but the plane wave is a geometry the operator provably cannot generate, its full isometry algebra being a five-dimensional Heisenberg algebra where $\so$'s unipotent radical is abelian~\cite{JanzenRange}. Here the same conclusion is a property of a wave map's \emph{target}, on a cut the operator does generate---and it upgrades the statement from a feature of a geometry to a conserved charge of a field.
+
+\section{The nonlinear $\Lambda>0$ regime: the de Sitter attractor and classical admissibility}\label{sec:nonlinear}
+
+The $\Lambda>0$ regime is where the dynamics is most distinctively CR's, and it can be carried through. The model has an exact isotropic de Sitter background, and that background fixes the foliation on which the nonlinear evolution runs. Isotropy is the equality of the three spatial scale factors---$\gamma=2\psi$ and $R=e^{2\psi}$---and under it the homogeneous field equations~\eqref{eq:wave}--\eqref{eq:momentum} reduce consistently (clean residuals) to a single constraint and a single dynamical law,
+\begin{equation}
+\psi_{tt}=\psi_t^2\quad(\text{ENERGY}),\qquad 3\psi_t^2=\Lambda\,e^{2\psi}\quad(\text{AREA}=\text{WAVE}=\gamma\text{-eq}),
+\end{equation}
+solved by $\psi_t=\sqrt{\Lambda/3}\,e^{\psi}$. The lapse is $N=e^{\gamma-\psi}=e^{\psi}$, so the scale factor $a=e^{\psi}$ and cosmic time $d\tau=N\,dt=a\,dt$ give $a(\tau)=a_0\,e^{H\tau}$ with $H^2=\Lambda/3$---exact de Sitter. The internal area-clock $R=t$ that organizes the $\Lambda=0$ Gowdy system is inconsistent here (AREA then forces $0=2\Lambda t\,e^{2(\gamma-\psi)}\neq0$); the substrate's de Sitter cosmic time is the clock that replaces it, established positively and not merely by the failure of the alternative. The graviton is the \emph{anisotropic departure} from this background, and the question of whether its nonlinear back-reaction \emph{forces} a new (quantum) structure or only \emph{admits} one---as the clean $\Lambda=0$ case does---is the question of that departure's evolution on the cosmic-time foliation.
+
+In the homogeneous sector the answer is exact. Writing the shear shape $s=\psi-\tfrac12\ln R$ (so $a_x/a_y=e^{2s}$, with $s=0$ on the background), the combination $\text{AREA}-2\,\text{WAVE}$ cancels the $\Lambda$ source identically and leaves a conserved quantity,
+\begin{equation}
+C_0:=R_t-2R\,\psi_t=\text{const},
+\end{equation}
+the canonical shear charge\rcpt{P11_deSitter_attractor} ($C_0=-\tfrac12(p_\gamma+p_\psi)$, verified on shell). Since $2R\,s_t=-C_0$, in cosmic time---with spatial volume $V=R\,e^{\gamma-\psi}$---the shear rate obeys $ds/d\tau=-C_0/2V$: as the background expands, $V\to\infty$ and the anisotropy rate decays as the inverse volume. This is \emph{cosmic no-hair}~\cite{Wald1983}---the isotropic de Sitter background is an attractor, the shape freezing as the expansion-rate anisotropy redshifts away. The homogeneous nonlinear back-reaction thus admits clean classical dynamics: a conserved charge and a monotone decay, with nothing forcing a new structure.
+
+The propagating mode admits as well, at linear order. Linearizing the wave equation~\eqref{eq:wave} for $\delta\psi(t,z)$ on the de Sitter background and passing to cosmic time gives
+\begin{equation}
+\ddot{\delta\psi}+3H\,\dot{\delta\psi}+\frac{k^2}{a^2}\,\delta\psi+2\Lambda\,\delta\psi=0,
+\end{equation}
+a de Sitter wave equation: Hubble friction $3H$, a gradient term $k^2/a^2$ that redshifts away, and an effective mass $m^2=2\Lambda=6H^2$ (principal series) in this fixed-background (transverse-traceless) truncation. This is a massive scalar on de Sitter and admits a clean, unitary Bunch--Davies quantization~\cite{BunchDavies1978}. Restoring the constraint back-reaction---the metric perturbations $\delta\gamma,\delta R$ the truncation drops---and reducing to the gauge-invariant combination $Q$ yields, in conformal time, the massless minimally-coupled de Sitter Mukhanov equation~\cite{MukhanovFeldmanBrandenberger1992}
+\begin{equation}\label{eq:mukhanov}
+W''+\Big(k^2-\frac{2}{t^2}\Big)W=0,
+\end{equation}
+with no $a^2m^2$ term. The physical effective mass is therefore exactly zero\rcpt{P11_mukhanov}---the apparent shift $6H^2\!\to\!4H^2$ is a gauge/truncation artifact, the $\propto a$ solution being pure residual gauge---and the gauge-invariant perturbation $Q$ is bounded, decaying as $a^{-2}$. The propagating mode is thus a healthy massless de Sitter scalar, with no ghost, tachyon, or runaway: the admissibility is established at the gauge-invariant level by computation, not merely asserted robust to an ambiguous shift.
+
+These computations, with the canonical structure of \S\ref{sec:gowdy} already in hand, settle the classical question. The full nonlinear Gowdy--de Sitter system is a genuine true-Hamiltonian system---Hamilton's equations from the canonical $\mathcal{H}$ reproduce the full evolution---and it is exact vacuum-$\Lambda$ general relativity, so its energy and momentum equations~\eqref{eq:energy}--\eqref{eq:momentum} are the first-class Hamiltonian and momentum constraints of GR. A first-class constrained system evolves consistently to all orders by the contracted Bianchi identity: there is no classical dynamical obstruction at any order. Two exact structures sharpen this beyond the Bianchi count. First, the homogeneous shear charge $C_0=R_t-2R\psi_t$ extends to the full propagating system: $\mathrm{AREA}-2\,\mathrm{WAVE}$ is identically a continuity equation, $\partial_t(R_t-2R\psi_t)=\partial_z(R_z-2R\psi_z)$ with the $\Lambda$ source cancelling, so $\int(R_t-2R\psi_t)\,dz$ is conserved in the full inhomogeneous model, not only the homogeneous sector. Second, the graviton's reduced energy $e_{\mathrm{grav}}=2R(\psi_t^2+\psi_z^2)\ge0$ is positive-definite, so the propagating sector is ghost-free to all orders. These close the ghost and zero-mode runaways exactly. The one structure they do not by themselves close is a propagating nonlinear parametric resonance, and here the natural monotone instrument fails for a precise reason: the total field energy grows as $2\Lambda a^4$, carrying the background's own expanding energy, so no total energy is monotone. The right object is the gauge-invariant \emph{perturbation} energy, which decays as $a^{-2}$ with the monotone (never periodic) coefficient of~\eqref{eq:mukhanov}, excluding single-mode resonance at linear order and isolating the residual to nonlinear mode--mode transfer against the de Sitter detuning. Every tractable sector---the homogeneous nonlinear back-reaction and the linearized propagating mode---returns admissibility. The verdict, recorded at the scope it is earned:
+
+\begin{proposition}\label{prop:admit}
+In the symmetry-reducible sector the nonlinear $\Lambda>0$ dynamics of the de Sitter cut admits a clean, consistent classical evolution, governed by a deparametrized true Hamiltonian on the substrate's cosmic foliation, with no obstruction at any order and unitary quantization in every regime that can be checked. No feature of the continuous dynamics \emph{forces} a quantum structure; the dynamics \emph{admits} quantization, as the $\Lambda=0$ case does.
+\end{proposition}
+
+The residual just isolated---whether the propagating nonlinear evolution no-hairs away rather than resonating into runaway---is exactly the future stability of de Sitter, and at the level of the physics it is a settled theorem rather than an open frontier. Friedrich proved the nonlinear stability of de Sitter in vacuum with $\Lambda>0$: data near de Sitter have geodesically-complete maximal developments asymptotic to it, a proof of cosmic no-hair in the vacuum case~\cite{Friedrich1986}. His method---the conformal field equations, trading the global-in-time problem for a local one at $\mathcal{J}^+$---is also why no exact energy in this model closes the question: energy is the wrong instrument, and the failure of any monotone energy above is the expected shape of that fact, not a sign of openness. Friedrich is a small-data result, exactly the perturbative regime of the propagating graviton, so it settles the in-regime all-orders stability directly; Andr\'easson and Ringstr\"om extend cosmic no-hair and future stability to \emph{all} data in the $T^3$-Gowdy class with $\Lambda>0$~\cite{AndreassonRingstrom2016}---with Vlasov matter, a corroboration rather than a vacuum theorem---and the one non-generic exception, the Nariai branch, unstable within the Gowdy class~\cite{Beyer2009}, is precisely the locus the range construction already isolates as the no-pivot seam~\cite{JanzenRange}. The classical propagating no-hair therefore holds for generic data, externally grounded, with the non-generic Nariai branch the genuine boundary. This is convergence across results---vacuum small-data, all-data Gowdy with matter, vacuum Nariai-genericity---rather than a single theorem covering the exact vacuum polarized Gowdy--$\Lambda$ case, and the in-model computations above are the right in-model rigor the theorems ground rather than replace.
+
+Two cautions fix the scope. This is not a constructed full non-perturbative quantization---that object is neither built here nor needed for the verdict; and it is not the claim that no structure could ever be forced, only that no \emph{classical dynamical} obstruction exists, so that any forcing must live elsewhere than in the continuous evolution. The one remaining candidate is the discrete root structure of the construction---the horizon cubic's $S_3$ permutation symmetry and its $A_2$ root system (\S\ref{sec:discrete})---a separate, discrete object rather than a feature of the continuous dynamics, and developed in the algebroid construction~\cite{JanzenAlgebroid} rather than here. Within the dynamics proper the verdict stands: the cut bends by a true-Hamiltonian flow that admits quantization throughout the symmetry-reducible sector.
+
+\section{Where the bend lives: the Type-I edge of the stratification}\label{sec:strata}
+
+The range paper classifies the reachable geometries by the symmetry a cut retains---read infinitesimally, the subalgebra of the substrate isometry that fixes the cut, the isotropy~\cite{JanzenRange}. This isotropy is the cut-fixing \emph{substrate} isotropy; on the symmetry-reducible sector it coincides with the generated geometry's own isometry (the residual symmetry there is inherited from the substrate isometry that sweeps the cut), and it is this that falls, through the Type-D and Type-I classes, to zero at the wall (Type N). At the wall the two notions part company---a point we will need: the substrate isotropy is zero, while the Type-N geometry retains its own (large) plane-wave isometry that is not substrate-inherited. The isotropy is maximal at the vacuum cut (the de Sitter / FLRW stratum). The confined wave~\eqref{eq:metric} sits at a definite stratum, and we can name it exactly.
+
+\begin{proposition}\label{prop:twoKV}
+The polarized Gowdy--de Sitter metric~\eqref{eq:metric} with a generic profile $\psi(t,z)$ admits exactly two Killing vectors, $\partial_x$ and $\partial_y$\rcpt{P11_twoKV}, and so occupies the two-Killing-vector (Type-I) stratum---the last confined stratum before the wall.
+\end{proposition}
+
+\noindent\emph{Verification.} The metric coefficients depend only on $(t,z)$, so $\partial_x$ and $\partial_y$ are manifestly Killing. For a generic propagating profile---taking, e.g., $\psi=\sin t\cos z$ with $R,\gamma$ the corresponding solution---the candidate additional symmetries all fail: the Lie derivative of the metric along $\partial_t$, along $\partial_z$, and along the boost $z\partial_t+t\partial_z$ are each nonzero. The isometry is therefore exactly the two-torus $\langle\partial_x,\partial_y\rangle$, isotropy dimension two. $\qquad\square$
+
+This places the dynamics where the range paper said the confined radiation lives: ``intermediate symmetry confines radiation (the Type-I Einstein--Rosen and Gowdy waves, on the edge)''~\cite{JanzenRange}. The wave is the worked first \emph{bend} at the last confined stratum: a single residual symmetry (the $T^2$) still pins the polarization to a fixed global orientation, so the wave is self-consistent only while it propagates transverse to that orientation. The dynamics is then the motion of the cut along the strata: as one descends from the symmetric vacuum, the bend turns on, generated by the true Hamiltonian, and the confined Gowdy--de Sitter wave is the explicit instance at the edge.
+
+\section{The wall: a generative boundary, not a metric singularity}\label{sec:wall}
+
+The loss of the last Killing vector---isotropy from two to zero---is the wall: the Type-N, freely radiating boundary where no global sweep orientation survives and the polarization must reorient from place to place~\cite{JanzenRange}. Two questions stand at the wall. Does the dynamics simply continue across it? And is the wall a \emph{metric singularity}---a place where, as at a black-hole or cosmological horizon, a clock can be re-founded by the Null-Boundary Correspondence~\cite{JanzenBHcausality,JanzenCRframework}? We settle both.
+
+A metric singularity, in the precise sense of~\cite{JanzenBHcausality}, is a collapse of the metric's \emph{measure}: a null hypersurface along whose generators the spatial extent contracts to zero, so that two events that are null-separated ($\Delta s^2=0$) and spatially coincident ($\Delta x=0$) are assigned vanishing temporal separation ($\Delta\tau=0$)---distinct, causally ordered points the metric measures as one place at one instant. A Killing horizon is the worked sufficient case, not the definition: for Schwarzschild--de Sitter the static Killing field $\zeta=\partial_t$ has $|\zeta|^2=g_{tt}=-f$, which vanishes at each horizon $f=0$, so its orbits become the null generators of zero invariant spatial extent and the measure-collapse hypotheses are met, while the Kretschmann scalar $K=48M^2/r^6+24/\alpha^4$ stays finite there---the finite-curvature species. Worldlines pass through, and the freed Killing direction is reassigned as the new timelike clock---this is cosmogenesis, the re-founding of a flat-$\Lambda$CDM clock on the reassigned horizon null direction~\cite{JanzenCRframework}.
+
+\begin{proposition}\label{prop:radiative-wall}
+The wall is not a metric singularity of either species. Its metric is non-degenerate\rcpt{P11_wall_ppwave}---there is no null hypersurface along whose generators the spatial extent contracts to zero---so the measure does not collapse and it is not the finite-curvature species; and a Type-N solution is curvature-regular (all polynomial curvature invariants vanish), so it is not the infinite-curvature (terminating) species either. It is a regular radiative boundary.
+\end{proposition}
+
+\noindent\emph{A note on the name, because the corpus carries two walls and they are different objects.} The wall of this proposition is the \emph{wall of inhomogeneity}---the boundary past which the symmetry-reducible sector ends and the Type-N radiative regime begins. The companion matter paper's \emph{throat} wall is a different locus entirely: the $r=0$ point on the throat circle at which a Dirac zero-mode binds~\cite{JanzenMatter}. Both were labelled \texttt{prop:wall} in their own sources until this one was renamed; the two should not be conflated, and a cross-paper reference to ``the wall'' should say which.
+
+\noindent\emph{Argument.} Apply the criterion directly. The wall is a Type-N vacuum, a plane-fronted (Brinkmann) wave~\cite{Brinkmann1925} $ds^2=2\,du\,dv+H(u,x,y)\,du^2+dx^2+dy^2$; its metric is non-degenerate ($\det g=-1$), so there is no hypersurface along which the spatial extent contracts to zero and the measure cannot collapse---it is not the finite-curvature species. All its polynomial curvature invariants vanish (it is VSI~\cite{PravdaVSI2002}), so it is not the divergent-invariant species either. That species is the degeneration of the areal coordinate at the branch point $r=0$, where the invariants of the $r$-chart diverge by the chain rule while the geometry itself continues~\cite{JanzenCircle}: $r=0$ is a branch point in the complex $\tilde\tau$ plane, the cosmogenetic bead passing through it onto the conjugate branch, and it is the locus at which that branch becomes the matter branch~\cite{JanzenSlicing,JanzenCRframework}. The wall carries neither character. Hence the wall is neither species, directly by the measure-collapse criterion. The Type-N field does carry a Killing vector---its covariantly-constant, fourfold-degenerate principal null direction, the \emph{characteristic of ordinary wave propagation}---but that direction is null \emph{everywhere}: it makes no non-null-to-null transition, forms no Killing horizon, and produces no measure-collapse, consistent with the verdict. (The ``isotropy $\to 0$'' that marks the wall in \S\ref{sec:strata} is the cut-fixing \emph{substrate} isotropy, which vanishes here, not the wall geometry's own isometry, which as a plane wave is large; the two coincide on the symmetry-reducible sector and part only at the wall.) $\qquad\square$
+
+The consequence sharpens the whole picture rather than complicating it. The Null-Boundary Correspondence re-founds a clock by reassigning the freed null direction of a \emph{degenerating Killing field}; the wall has no degenerating Killing field---its null Killing vector is null throughout, never crossing from non-null to null---so the cosmogenesis mechanism has nothing to act on there. Cosmogenesis lives at the finite-curvature Killing-horizon strata---the cosmological/black-hole horizon and the Nariai seam---and not at the wall. That cosmogenesis, the re-founding of the clock at the Nariai seam, is carried to a quantitative edge in the cosmogenesis paper~\cite{JanzenCosmogenesis}: the matter re-expanding from the seam produces the primordial light-element abundances, a fossil of the collapse that made it. The wall is instead the slicing operator's \emph{generative boundary}: the locus where generation-by-symmetry, the sweep of a substrate isometry, runs out and hands off to ordinary inhomogeneous evolution. ``Why the cut bends past the wall'' is therefore a genuinely different question from cosmogenesis---it is the question of free, fully inhomogeneous gravitational dynamics, with no residual symmetry to confine it---and the dynamics of this paper, Hamiltonian throughout the symmetry-reducible sector, is exactly the dynamics \emph{up to} that boundary.
+
+\section{The handedness: chirality as the turning of the polarization plane}\label{sec:chirality}
+
+At the wall the two transverse-traceless polarizations are free, so whether the radiation carries a \emph{handedness}---a chirality no isometry can undo---is settled by direct computation rather than asserted. Resolve the harmonic profile of \S\ref{sec:wall} into the two polarizations,
+\begin{equation}\label{eq:Hpol}
+ds^2 = 2\,du\,dv + H\,du^2 + dx^2 + dy^2,\qquad H = h_+(u)\,(x^2-y^2) + 2\,h_\times(u)\,xy,
+\end{equation}
+the Ricci tensor vanishing for \emph{any} $h_+(u),h_\times(u)$\rcpt{P11_wall_ppwave}---the two polarizations independent and unconstrained (the trace part of $H$ would be the matter bend, absent in vacuum). Two transverse operations act on the pair $h_++ih_\times$. The reflection $x\mapsto-x$ sends $h_\times\mapsto-h_\times$, i.e.\ $(h_++ih_\times)\mapsto(h_+-ih_\times)$: it is the helicity-flipping parity, exchanging the two circular polarizations, and is a symmetry of the wave \emph{iff} $h_\times=0$. A transverse rotation by $\theta$ sends $(h_++ih_\times)\mapsto e^{-2i\theta}(h_++ih_\times)$, the spin-2 transformation, with polarization angle $\tfrac12\arg(h_++ih_\times)$.
+
+The handedness criterion follows. If the polarization is fixed---$h_\times=0$, or any constant ratio $h_+:h_\times$, a linear polarization along a fixed (possibly tilted) axis---that axis furnishes a fixed reflection symmetry, parity identifies the two helicities, and there is \emph{no genuine chirality}; this is the polarized Gowdy wave of \S\ref{sec:gowdy}, its single polarization pinned to a global orientation by the residual $T^2$ isotropy of \S\ref{sec:strata}. If instead the polarization \emph{turns}---$\tfrac12\arg(h_++ih_\times)$ varying with $u$, the plane reorienting along the wave---no fixed axis is a reflection symmetry for all $u$, no isometry identifies the helicities, and the radiation is \emph{genuinely chiral}. The slogan of \S\ref{sec:wall}, that past the wall the polarization must reorient from place to place, is thus the exact criterion: \textbf{chirality is the turning of the polarization plane}, the handedness being the $\mathbb{Z}_2$ sign of $\tfrac{d}{du}\arg(h_++ih_\times)$---left- versus right-circular, helicity $\pm2$.
+
+The mechanism places this on the stratification. The reflection $x\mapsto-x$ is the radiative descendant of the slicing reflection that fixes a comoving worldline in the symmetric sector; there the swept $\mathrm{SO}(3)$ completes it to an orientation-preserving rotation and rotates it away, so the two handednesses are \emph{identified}---a mirror, not a chirality. The criterion therefore bites not only at the wall but from the loss of that swept $\mathrm{SO}(3)$ onward: the polarized Gowdy edge (\S\ref{sec:strata}, residual $T^2$, one fixed axis) is still achiral, the unpolarized turning wave is the first chiral case, and the wall (no residual isometry) is where chirality is generic. The handedness is the orientation parity of the substrate---the reflection lying outside the connected isometry group that sweeps the symmetric sector---surfacing in the radiating sector as the graviton's two helicities; it is not one of the cubic-organized markers of \S\ref{sec:discrete} but the radiating-sector face of that single orientation $\mathbb{Z}_2$---the $A_2$ diagram automorphism (the mass-reflection parity $R=\gamma^5$ of the groupoid paper) identified there with the de~Sitter$\leftrightarrow$Schwarzschild vantage-swap, the outer involution completing the Weyl group to $\mathrm{Aut}(A_2)=D_6$~\cite{JanzenGroupoid}---whose development in the radiative sector belongs to the algebroid construction~\cite{JanzenAlgebroid}. That this handedness rides the \emph{disconnected} orientation parity, outside any connected-group action, is also why it lies beyond the reach of the matter-sector index obstruction that renders a connected-gauge fermion spectrum vector-like~\cite{JanzenBoundary}: the gravitational sector is chiral precisely through the component that obstruction cannot touch. The agreement is closer than a shared conclusion: the two are one mechanism read in two sectors. The obstruction bites because a positive-dimensional \emph{connected} group contains a circle whose action forces the equivariant index to vanish; the criterion above is achiral exactly while the swept $\mathrm{SO}(3)$ supplies a continuous rotation that completes the reflection and identifies the two helicities. In each a \emph{connected} isometry identifies the handednesses, and a chirality survives only on the component no connected action reaches---which is what the boundary paper means by saying \emph{where} geometric chirality can live at all. The two are established independently and by different instruments: there by an index theorem on the compact face, here by direct computation on~\eqref{eq:Hpol} in the real radiating sector. So the handedness settled here is not merely consistent with that boundary; it is the same statement computed where the index theorem does not reach, and the stratification supplies what neither instrument alone does---the \emph{locus} at which the identification is lost, the swept $\mathrm{SO}(3)$ of \S\ref{sec:strata}. (The helicity--parity relation is itself standard for gravitational waves; what is specific here is the placement---identified by the swept $\mathrm{SO}(3)$ in the symmetric sector, released past it---read off the programme's own stratification.) That orientation parity is, in the geometric core~\cite{JanzenGeometricCore}, the discrete residue the substrate's exhausted continuous symmetry leaves---matter's one geometric opening; the handedness settled here is its face in the radiating sector, the same $\mathbb{Z}_2$ that acts on the cut's fermion as the chirality operator $\gamma^5$~\cite{JanzenBoundary}, here read dynamically. This $\mathbb{Z}_2$ is, moreover, the \emph{gauged} factor of the discrete residue's full $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2\cong D_6$: being a substrate isometry, it grades a chirality that descends gauged---graviton helicity here, fermion $\gamma^5$ there---whereas the Weyl $S_3$ is the deck symmetry of the solution space and no isometry, so a family symmetry it would grade is global. Gauged chirality with global flavour is the Standard Model's own arrangement, following from which of the two factors is an isometry~\cite{JanzenAlgebroid,JanzenGeometricCore}.
+
+\section{The strata and their discrete markers}\label{sec:discrete}
+
+Read across the whole sector, the picture is a continuous flow punctuated by discrete boundaries. The substrate isometry $\so(5,1)$ acts continuously on the space of cuts, carrying the layer through the symmetry-reducible sector; the true Hamiltonian advances it. The special strata are marked by distinct discrete operations organized by the horizon cubic's root structure: the Nariai seam is the locus where two of the three horizon roots collide (a fixed point of the root-permutation symmetry~\cite{JanzenSlicing,JanzenGroupoid}); the cosmogenesis horizon is the locus of the null$\leftrightarrow$timelike reassignment~\cite{JanzenCRframework}; the Riemannian$\leftrightarrow$Lorentzian seam is the locus of the signature flip~\cite{JanzenSlicing}. The wall is the one boundary carrying no such discrete marker---no colliding roots, no degenerating Killing field, no measure-collapse---consistent with its being purely the end of continuous generation. These markers are distinct operations, not one; but the strata they mark are the ordered turning points of a single closed slicing curve---the operations distinct, the object one~\cite{JanzenSlicing,JanzenCRframework}. The cosmogenesis marker carries one further structure the boundary paper reads off it: composed with the antilinear reality involution $\tilde\tau\mapsto\bar{\tilde\tau}$ of that closed bead, the orientation parity $R=\gamma^5$---graded in \S\ref{sec:chirality} as the graviton's handedness---is the \emph{geometric} factor of charge conjugation's kinematic closure, $C=(Q\mapsto-Q)_{\mathrm{field}}\circ(R\circ K)_{\mathrm{geometric}}$, so that the same $r=0$ crossing which re-founds the clock here supplies, read in the matter sector rather than the radiative one, the Feynman--St\"uckelberg face of $C$~\cite{JanzenBoundary}. (The detailed development belongs to the algebroid construction~\cite{JanzenAlgebroid} and is summarized here only to place the dynamics.)
+
+\section{Scope and what remains open}\label{sec:scope}
+
+We have exhibited the dynamics of the cut in the regime where it is exact and Hamiltonian: the confined Gowdy--de Sitter wave, the leaf's transverse-traceless shear advanced by a true Hamiltonian on the substrate's cosmic foliation, located at the Type-I edge of the stratification, with the wall identified as a regular radiative boundary rather than a metric singularity. Three things are explicitly \emph{not} claimed here; the first two are the natural next work, and the third is carried out in the companion canonical-time paper:
+\begin{enumerate}
+\item the full nonlinear $\Lambda>0$ evolution is resolved here on its \emph{classical} side (\S\ref{sec:nonlinear}, Proposition~\ref{prop:admit}): the de Sitter background is an attractor, every tractable sector admits, and the first-class system is consistent to all orders, so the continuous dynamics admits rather than forces a quantum structure. What is \emph{not} claimed is a closed-form nonlinear solution, nor a full non-perturbative quantization---neither is built here, and the latter is not needed for the admissibility verdict;
+\item the dynamics strictly \emph{beyond} the wall, in the fully inhomogeneous Type-N regime, which by Proposition~\ref{prop:radiative-wall} is ordinary free evolution and not a stratum-crossing the construction generates;
+\item the lift of the deparametrized $\Hphys$ to the closed-$S^3$ model appropriate to the cosmological sector --- carried out in the companion canonical-time paper~\cite{JanzenCanonicalTime}, where the identification of the cosmic-microwave-background frame with the comoving congruence and the null-boundary $S^3$ is made precise and the transverse-traceless graviton tower deparametrizes to a unitary cosmic-time evolution; the planar Gowdy model of the present paper is the companion field-theoretic realization in the symmetry-reducible sector.
+\end{enumerate}
+None of these unsettles the result obtained: within the symmetry-reducible sector the cut bends by a true-Hamiltonian flow, and the boundary of that sector is a generative boundary, not a singular one. The cut's dynamics at the \emph{other} boundary---the finite-curvature cosmogenesis branch point, distinct from the wall (\S\ref{sec:wall})---is the matter counterpart of the confined bend developed here: the crossing of matter through the seam is shown well posed and structurally governed (the foliation-preserving reassignment fixing the $\Lambda$-set rate while the density crosses as inherited content), with the detailed worldline dynamics open, in the companion cosmology paper~\cite{JanzenCRcosmology}. The \emph{scalar} (density) perturbation sector---the counterpart to the transverse-traceless tensor sector developed here, and the primordial source of the cosmic-microwave-background anisotropies---is treated in the companion paper~\cite{JanzenCRcosmology}.
+
+Read against the whole, this dynamics sets the framework's one synthesis in motion. The maximally symmetric de~Sitter substrate is read at once as general relativity's solution space---generated on its cuts by the slicing operator---as the discrete $CPT$ and charge residue, and as the gauge algebra on its conjugate real form~\cite{JanzenCRframework}; the present paper advances the \emph{first} face, the cut's true-Hamiltonian flow through the symmetry-reducible sector, Hamiltonian up to the generative boundary and ordinary general relativity beyond it, and surfaces the \emph{second} in the radiating sector---the graviton's handedness the discrete orientation parity that grades the cut's fermion as $\gamma^5$~\cite{JanzenGeometricCore}. The continuous dynamics and the discrete residue are two faces of the one substrate, read here in motion and in the radiating sector.
+
+\begin{thebibliography}{9}
+\bibitem{JanzenBHcausality} D.~Janzen, \emph{The event horizon is a metric singularity: a missing definition in general relativity}, companion paper (P1).
+\bibitem{JanzenSlicing} D.~Janzen, \emph{The de Sitter substrate and its slicing curve: horizons as turning points, and de Sitter and Schwarzschild as two readings of one slicing}, companion paper (P3).
+\bibitem{JanzenGroupoid} D.~Janzen, \emph{The Schwarzschild--de Sitter description groupoid: generators, relations, and Schwarzschild as the asymmetric realisation}, companion paper (P5).
+\bibitem{JanzenShadowExistence} D.~Janzen, \emph{The shadow of existence: scientific theory-choice as an empirically grounded discipline, calibrated on the historical record}, companion paper (P6).
+\bibitem{JanzenOperator} D.~Janzen, \emph{Covariance of geometries over the de Sitter substrate: the slicing operator, the vacuum kernel, and matter as the bend of the cut}, companion paper (P8).
+\bibitem{JanzenRange} D.~Janzen, \emph{The range of the de Sitter slicing operator: surjectivity onto the symmetry-reducible sector of general relativity, the Kerr--NUT--(A)dS vacuum kernel, and the wall of inhomogeneity}, companion paper (P9).
+\bibitem{JanzenCRframework} D.~Janzen, \emph{Collapsed matter must become a universe: the necessary and sufficient augmentation of general relativity into a description of structural existence, proven for gravitational collapse of any symmetry}, companion paper (P7).
+
+\bibitem{JanzenCanonicalTime} D.~Janzen, \emph{The canonical problem of time as a category error: an empirically forced cosmic time, deparametrization, the dissolution of frozen dynamics, and a graviton quantization the de~Sitter horizon closes without a free parameter---the seam where $\hbar$ enters gravity---in Cosmological Relativity}, companion paper (P10).
+\bibitem{JanzenCRcosmology} D.~Janzen, \emph{The cosmology of Cosmological Relativity: the expansion history from causal reassignment on a de~Sitter background, the cosmogenesis branch point, and the scalar perturbation sector}, companion paper (P15).
+
+\bibitem{JanzenMatter} D.~Janzen, \emph{The fermion sector of Cosmological Relativity: three chiral generations from the maximally-symmetric slicing}, companion paper (P14).
+
+\bibitem{JanzenAlgebroid} D.~Janzen, \emph{General relativity's constraint algebra as the symmetric-space structure of a de Sitter substrate: the action Lie algebroid of the symmetry-reducible sector, and the problem of time's ``wrong sign'' as the substrate's coset signature}, companion paper (P12).
+\bibitem{JanzenModernParallax} D.~Janzen, \emph{The modern parallax: the redshift-isotropy floor, the empirical forcing of cosmic time and uniform expansion, and the measured resolution of the relativity of simultaneity}, companion paper (P4).
+\bibitem{JanzenBoundary} D.~Janzen, \emph{The de Sitter substrate and the Standard Model: a four converging routes to a geometric boundary on what one maximally-symmetric Lorentzian substrate's isometry does and does not force, and the framework and gauge on its two real forms}, companion paper (P13).
+\bibitem{JanzenGeometricCore} D.~Janzen, \emph{Reached through the imaginary, real by construction: the maximally symmetric substrate as the geometric--ontological core}, companion paper (p0).
+\bibitem{Janzen2025} D.~Janzen, \emph{On the ontological foundations of Cosmological Relativity}.
+\bibitem{Gowdy1974} R.~H.~Gowdy, \emph{Vacuum spacetimes with two-parameter spacelike isometry groups}, Ann.\ Phys.\ \textbf{83} (1974) 203.
+\bibitem{EinsteinRosen1937} A.~Einstein and N.~Rosen, \emph{On gravitational waves}, J.\ Franklin Inst.\ \textbf{223} (1937) 43.
+\bibitem{Friedrich1986} H.~Friedrich, \emph{On the existence of $n$-geodesically complete or future complete solutions of Einstein's field equations with smooth asymptotic structure}, Comm.\ Math.\ Phys.\ \textbf{107} (1986) 587.
+\bibitem{AndreassonRingstrom2016} H.~Andr\'easson and H.~Ringstr\"om, \emph{Proof of the cosmic no-hair conjecture in the $T^3$-Gowdy symmetric Einstein--Vlasov setting}, J.\ Eur.\ Math.\ Soc.\ \textbf{18} (2016) 1565.
+\bibitem{Beyer2009} F.~Beyer, \emph{Non-genericity of the Nariai solutions: investigations within the Gowdy class}, Class.\ Quantum Grav.\ \textbf{26} (2009) 235015, 235016.
+\bibitem{JanzenCosmogenesis} D.~Janzen, \emph{Cosmogenesis: the Big Bang as a synthesis of Cosmological Relativity's deductively forced consequences, and the primordial light-element abundances it produces}, companion paper (P16).
+\bibitem{Wald1983} R.~M.~Wald, \emph{Asymptotic behavior of homogeneous cosmological models in the presence of a positive cosmological constant}, Phys.\ Rev.\ D \textbf{28} (1983) 2118.
+\bibitem{BunchDavies1978} T.~S.~Bunch and P.~C.~W.~Davies, \emph{Quantum field theory in de Sitter space: renormalization by point-splitting}, Proc.\ R.\ Soc.\ Lond.\ A \textbf{360} (1978) 117.
+\bibitem{MukhanovFeldmanBrandenberger1992} V.~F.~Mukhanov, H.~A.~Feldman and R.~H.~Brandenberger, \emph{Theory of cosmological perturbations}, Phys.\ Rep.\ \textbf{215} (1992) 203.
+\bibitem{ADM1962}
+R.~Arnowitt, S.~Deser, and C.~W. Misner,
+\emph{The dynamics of general relativity},
+in: \emph{Gravitation: An Introduction to Current Research}, ed.~L.~Witten, Wiley, New York (1962) 227--265; arXiv:gr-qc/0405109.
+
+\bibitem{Brinkmann1925} H.~W.~Brinkmann, \emph{Einstein spaces which are mapped conformally on each other}, Math.\ Ann.\ \textbf{94} (1925) 119.
+\bibitem{PravdaVSI2002} V.~Pravda, A.~Pravdov\'a, A.~Coley and R.~Milson, \emph{All spacetimes with vanishing curvature invariants}, Class.\ Quantum Grav.\ \textbf{19} (2002) 6213.
+%  r2376+c54.9: entries below were cited but undefined -- the citations printed as [?]
+\bibitem{JanzenCircle}
+D.~Janzen,
+\emph{The Schwarzschild and de Sitter circle: the intrinsic geometry of one homogeneous ring---the event horizon and the curvature singularity at $r=0$ its two poles}, companion paper (P2).
+\end{thebibliography}
+
+
+\input{appendix_receipts_P11}
+
+\end{document}

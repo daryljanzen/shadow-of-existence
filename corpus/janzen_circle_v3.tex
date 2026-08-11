@@ -1,0 +1,647 @@
+\documentclass[11pt,a4paper]{article}
+
+% [†ONT-RING] THE ONE CIRCLE — this paper is the HOME (ONTOLOGY_FOUNDATION_INDEX.md §1k).
+%   ARC POSITION (THE_EVOLUTION_MAP.md): standing above the line here is GR + P1 (a genuine dependency).
+%   Established here: the cycloid r(z)=M(1+cos z), whose TWO ENDPOINTS ARE CRITICAL POINTS OF IDENTICAL
+%   ANALYTIC CHARACTER; the maximal extension as ONE analytic curve (hyperbola-circle-hyperbola), each
+%   critical point opening by complex continuation of z into a two-branch arm — z -> pi±i.rho' at z=pi
+%   giving the r<0 regions KRUSKAL NEVER REACHES (it treats r=0 as a boundary rather than a critical
+%   point one continues through); the Kretschmann divergence at r=0 as a CHAIN-RULE ARTEFACT of the
+%   perspectival chart (real as THAT metric's, no invariant of the smooth manifold in z diverging).
+%   *** THE ONE CIRCLE: the horizon and r=0 are THE TWO r-POLES OF ONE HOMOGENEOUS CIRCLE — metric
+%   singularities of one genus, IDENTICAL THROUGH FIRST ORDER AND PARTED ONLY AT SECOND, by the single
+%   value the chart's origin assigns each (2M against 0). The standard classification commits ONE
+%   CATEGORY ERROR TWICE (horizon as removable Mercator pole; r=0 as the manifold tearing): both are
+%   places drawn as lines by degenerate coordinates — but the Mercator chart MANUFACTURES an extension
+%   that is not there, while at r=2M the chart SPREADS OUT a metric collapse that IS. ***
+%   *** SCOPE, KEEP IT: r=0 REMAINS A REAL infinite-curvature metric singularity — the place worldlines
+%   END (finite proper time, tau=M.pi from horizon-crossing), where the horizon is where they PASS
+%   THROUGH; the two are NOT identical as metrics (curvature differs at second order). What fails is the
+%   CURVATURE-DIVERGENCE INFERENCE, and ONLY that: SBIERSKI's C^0-inextendibility, proven on
+%   causal-geometric grounds that never invoke the curvature, is LEFT UNTOUCHED and conceded here —
+%   continuing the CURVE through z=pi is not a C^0 extension of the Lorentzian manifold across r=0.
+%   What the continued curve passes INTO -- the substrate, where r=0 is a chart function's zero on one
+%   smooth manifold and the geometry runs through -- is Sec sec:r0-tee: the second critical point is the
+%   object the whole sequence is organised around (species, the progenitor, C's kinematic face, the
+%   generations, the big bang). NEVER re-advertise it as a deferral. [r1120]
+%   elevation of the z-manifold is NOT established here (§444, in the paper's own words). The
+%   singularity theorems are QUALIFIED, not falsified. CONSTRUCTION, NOT ERROR: the swept chart is
+%   legitimate and agrees on every exterior observable; the fault is ontological — promoting a charting
+%   artefact to a fact about the geometry. ***
+%   *** LAMBDA>0 AND THE ROOT TRIPLE (§ring, in the DISCUSSION — easily missed): the horizon here is ONE
+%   OF THREE. Under Lambda>0, f=1-2M/r-r^2/alpha^2 gives a HORIZON CUBIC; as Lambda->0 (alpha->infinity)
+%   it degenerates, the cosmological horizon and its BACKWARD-RADIAL PARTNER running off to infinity,
+%   leaving the single finite horizon the cycloid shows. HORIZON MULTIPLICITY IS A READING OF THE
+%   COSMOLOGICAL CONSTANT — one for Lambda=0, three for Lambda>0, the extra roots present precisely
+%   BECAUSE THE SUBSTRATE IS DE SITTER AND NOT FLAT. (Do-not-assert, conjectured in p0: on a fermion
+%   sector the three roots would be three generations — no Lambda, no third.) And §442: THIS CYCLOID IS
+%   THE EQUATOR, the swing-zero (w=0) member of the SdS slicing family, carrying a CONJUGATE DE SITTER
+%   READING related by an involution — two vantages on one curve at fixed throat alpha, the Schwarzschild
+%   mass the pivot reading's own rather than a second invariant. The backward-radial partner is the root
+%   P3's lap closes on. ***
+%   The r<0 arm IS THE LAP, here as pure ANALYSIS; it becomes cosmogenesis only at P3 ([†ONT-GEOM] §1f)
+%   + P7 ([†ONT-CR] §1e) — though this paper's own conclusion already reads forward: "the passage the
+%   present paper opens is the branch point of a cosmogenesis." P2 RAISES but cannot answer why the sweep pivots
+%   on r=0 — P3 answers it geometrically (the forced off-axis pivot), P5 group-theoretically (§1i).
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{receipts}  % in-place receipt citations -> Appendix R
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!black,
+  citecolor=blue!50!black,
+  urlcolor=blue!50!black
+}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{The Schwarzschild and de Sitter circle:\\
+\large the intrinsic geometry of one homogeneous ring---the event horizon and the curvature singularity at $r=0$ its two poles, run through by a single continuation}
+\author{Daryl Janzen\\
+\small Department of Physics and Engineering Physics\\
+\small University of Saskatchewan}
+\date{}
+\newcommand{\dd}{\mathrm{d}}   % r2376+c54.9: used but undefined -- the paper did not compile
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper gives the intrinsic description---read from within the geometry, with no exterior slicing operator---of a single object that is at once Schwarzschild and de~Sitter: one homogeneous circle whose two poles are the event horizon and the curvature singularity at $r=0$, run through by a single analytic continuation. The Schwarzschild interior, written in Lemaître--Tolman cycloid coordinates~\cite{Tolman1934,Bondi1947}, has areal radius $r(z) = M(1+\cos z)$ for $z \in [0,\pi]$, taking the horizon value $r=2M$ at $z=0$ and the standard ``singularity'' value $r=0$ at $z=\pi$. This same cycloid is, term for term, the scale factor of a closed Friedmann cosmology: the black-hole interior and a closed universe are one curve---the classical seed, present already in bare Schwarzschild, of the collapse--cosmology identity this sequence makes exact. \emph{And the curve only ever decelerates}: on the comoving worldline the acceleration is $\mathrm{d}^{2}r/\mathrm{d}\tilde\tau^{2}=rK_{G}$ with $K_{G}=1/\alpha^{2}-M/r^{3}$ the slicing surface's Gaussian curvature~\cite{JanzenSlicing}, and at $\Lambda=0$ the first term is absent, leaving $-M/r^{2}$---Newtonian free fall, negative at every radius. The cycloid has no turning point of the rate because the substrate term that would supply one is switched off; \emph{the turn belongs to $\Lambda$, not to the collapse}, and it appears only when this circle is read on the de~Sitter substrate the sequence supplies. We observe that the two endpoints are analytic critical points of $r(z)$ of identical character: $dr/dz = 0$ at both, $d^2r/dz^2 = \pm M$ alternately, and $r(z)$ is everywhere $C^\infty$ smooth as a function of $z$. The maximal analytic extension of the cycloid arc is a single analytic curve---hyperbola, circle, hyperbola---in which each critical point opens, by continuation of $z$ into the complex plane, into a two-branch hyperbolic arm: $z \mapsto \pm i\rho$ at $z=0$ produces two isometric asymptotically flat exteriors at $r>2M$, and $z \mapsto \pi \pm i\rho'$ at $z=\pi$ produces two asymptotically flat regions at $r<0$. The four regions at $r \geq 0$ (the two exteriors and the two interior arcs) are precisely the maximal Kruskal--Szekeres extension, which terminates at $r=0$; the two regions at $r<0$ are the continuation through $z=\pi$ that Kruskal never reaches, because it treats $r=0$ as a boundary rather than a critical point one continues through. We show that the Kretschmann scalar's divergence at $r=0$ is generated by the chain rule applied to the composition $48M^2/r(z)^6$ at a non-degenerate critical point of $r(z)$, and is therefore the curvature scalar of the Schwarzschild perspectival metric---the metric as a tensor field over the parameter $r$, real as that metric's---rather than an invariant of the underlying smooth manifold parametrised by $z$, which carries none that diverges. The standard asymmetric classification of the horizon as a ``removable coordinate singularity'' and $r=0$ as a ``true curvature singularity'' is not forced by the analytic structure of $r(z)$: the two critical points are the same kind of object, and the standard classification commits a single category error twice. We identify both critical points as metric singularities of one genus---the horizon the finite-curvature species the companion paper~\cite{JanzenBHcausality} establishes for the event horizon, $r=0$ the conjugate infinite-curvature species---distinguished only by curvature, which is to say only at second order: the two are identical through first order and parted only there, being the two $r$-poles of one homogeneous circle, so the asymmetry lies entirely in which value the chart's origin assigns each ($2M$ versus $0$), not in the curve. The standard reading draws an inference: because the curvature diverges at $r=0$, no continuation through it exists, so $r=0$ is an inextendible boundary. The cycloid is a counterexample to that inference: the same analytic continuation that the standard treatment accepts as removing the horizon at $z=0$ passes smoothly through $z=\pi$ into the $r<0$ arm, so the cycloid \emph{curve} passes through $r=0$ by the same step that carries through the horizon. The inference standardly drawn from the curvature divergence---that $r=0$ is an inextendible boundary at which the construction must stop---therefore fails; what is left standing is the rigorous, curvature-independent $C^{0}$-inextendibility of $r=0$ established by Sbierski~\cite{sbierski2018}, which the present continuation of the \emph{curve} leaves untouched, and what the continued curve passes \emph{into} is set out in Section~\ref{sec:r0-tee}. Two readings of the construction, developed in the discussion, place it: the single horizon exhibited here is the $\Lambda\to0$ degeneration of a root \emph{triple}---for $\Lambda>0$ the structure function $f=1-2M/r-r^{2}/\alpha^{2}$ carries a horizon cubic whose cosmological root and backward-radial partner run to infinity as $\alpha\to\infty$, so that horizon multiplicity is a reading of the cosmological constant, the extra roots present precisely because the substrate the construction rests on is de~Sitter and not flat; and the cycloid is itself the swing-zero ($w=0$) member of the Schwarzschild--de~Sitter slicing family---the equator taken diametrically---carrying, besides the Schwarzschild reading developed here, a conjugate de~Sitter reading related to it by an involution, the two vantages on one curve at fixed throat radius $\alpha$, with the Schwarzschild mass the pivot reading's own rather than a second invariant~\cite{JanzenSlicing}. \emph{The asymptotic machinery marks the same boundary from the other side.} In the Schwarzschild reading this paper works, the ADM mass is well defined and returns the mass parameter, spatial infinity and a global timelike Killing vector both being available. Neither survives the move to Schwarzschild--de~Sitter, where a conserved charge is widely held not to be well defined and the candidate constructions disagree on the value~\cite{JanzenSlicing}. \emph{The asymmetry is not a technical shortfall of the de~Sitter case but the same perspectival point}: the constructions differ over how to subtract a de~Sitter background, and in the wider construction there is no background to subtract---the de~Sitter structure being the substrate this circle is the $\Lambda\to0$ seed of. This is the second of a sequence of papers: the companion~\cite{JanzenBHcausality} establishes that the event horizon is itself a metric singularity, not a mere coordinate artefact; the present paper establishes that the inextendibility \emph{inference} at $r=0$ fails under the same continuation---the curvature singularity itself remaining real; and the companion slicing paper~\cite{JanzenSlicing} supplies the geometric account of the $r<0$ arm and of the asymmetric labelling, finding the residual divergence perspectival---a property of the areal coordinate, not of the substrate, which is $C^{\infty}$ across the locus the chart labels $r=0$. What that leaves is the sequence's subject, taken up and carried through in the companions: on the substrate they build, the geometry runs through the second critical point, and the point carries the matter/antimatter register (the sign of $r$), the antimatter progenitor of our own cosmology, charge conjugation's kinematic face, the three-fold generation count, and the big bang the comoving chart reports there. Section~\ref{sec:r0-tee} sets that out: the point the standard reading treats as the terminus of the description is the one the sequence's subject matter is organised around.
+\end{abstract}
+
+\section{Introduction}
+
+The maximal analytic extension of the Schwarzschild solution, formulated by Synge \cite{synge1950} and developed by Kruskal \cite{kruskal1960} and Szekeres \cite{szekeres1960}, partitions the manifold into four regions joined at a bifurcation 2-sphere. Two are asymptotically flat exteriors and two are bounded by spacelike curvature singularities. The standard treatment classifies the horizon at $r=2M$ as a removable coordinate singularity of the Schwarzschild chart, removed in coordinate systems---Kruskal--Szekeres, Eddington--Finkelstein, Lemaître---that extend smoothly through it. The curvature singularity at $r=0$ is classified as a true singularity on the grounds that the Kretschmann scalar $K = R_{abcd}R^{abcd} = 48M^2/r^6$~\cite{Kretschmann1915} diverges there in every chart, and the manifold is therefore geodesically incomplete in a way that cannot be repaired by coordinate change. We will show this classification to be untenable: the horizon and $r=0$ are the same kind of object---two metric singularities of the Schwarzschild geometry---and the asymmetric standard reading misclassifies one of them.
+
+This article re-examines that classification from the standpoint of the Lemaître--Tolman cycloid parametrisation of the Schwarzschild interior~\cite{lemaitre1933,Tolman1934}. In these coordinates the areal radius is given by
+\begin{equation}\label{eq:cycloid}
+r(z) = M(1 + \cos z), \qquad z \in [0, \pi],
+\end{equation}
+running from $r=2M$ at $z=0$ (the horizon) to $r=0$ at $z=\pi$ (the standard singularity). The function $r(z)$ is $C^\infty$ smooth on $\mathbb{R}$, and its endpoints in (\ref{eq:cycloid}) are non-degenerate critical points: $dr/dz$ vanishes at both, with $d^2r/dz^2 = -M$ at $z=0$ and $d^2r/dz^2 = +M$ at $z=\pi$. The two endpoints are, on the underlying smooth function $r(z)$, of identical analytic character. They are the two extrema of a smooth even function on the circle $z \in \mathbb{R}/2\pi\mathbb{Z}$---equivalently, since $r-M=M\cos z$ obeys $r''=-(r-M)$, the two $r$-poles of the geometric circle $(r-M)^2+s^2=M^2$ that the interior arc projects. Their identical character is then not a coincidence of $r(z)$ but the homogeneity of that circle, which has no distinguished point; the sole asymmetry between the two poles is which value the chart's origin assigns each, and the curvature, a function of that value, is what reads it.
+
+We show that this analytic symmetry has a structural consequence. The maximal analytic extension is a single analytic curve---hyperbola, circle, hyperbola---obtained by continuing $z$ into the complex plane at each critical point. At $z=0$ the two branches $z \mapsto \pm i\rho$ both give $r = M(1+\cosh\rho) \in (2M,\infty)$ (since $\cosh$ is even), producing two isometric asymptotically flat exteriors that meet at the bifurcation 2-sphere at $r=2M$. At $z=\pi$ the two branches $z \mapsto \pi \pm i\rho'$ both give $r = M(1-\cosh\rho') \in (-\infty,0)$, producing two regions on $r<0$. Combined with the time-parity choice that distinguishes the black-hole and white-hole interior arcs, the curve carries six pieces in the Schwarzschild chart: the two interior arcs, the two $r>2M$ exteriors of the front seam, and the two $r<0$ regions of the back seam. The four pieces at $r \geq 0$---two exteriors and two interiors, meeting at the bifurcation sphere and terminating at $r=0$---are precisely the maximal Kruskal--Szekeres extension. The two pieces at $r<0$ are the continuation through the conjugate critical point $z=\pi$, beyond where Kruskal terminates: Kruskal draws the curve up to the $r=0$ turn and stops, treating it as a boundary, and never draws the second hyperbolic arm. The apparent fragmentation into separate ``regions'' is an artefact of the Cartesian $(r,t)$ chart, whose coordinates degenerate at the two critical points and so cut the single curve into patches at exactly the turns.
+
+The Kretschmann scalar's divergence at $r=0$ is, in this framing, a chain-rule artefact. The composition $K(z) = 48M^2/r(z)^6 = 48/[M^4(1+\cos z)^6]$ has a twelfth-order pole at $z=\pi$, generated by the second-order vanishing of $r(z)$ there. It is the curvature scalar of the Schwarzschild perspectival metric---the metric as a tensor field over the parameter $r$---real as that metric's and marking a genuine curvature singularity; that it tracks the chart's labelling is established directly, under the opposite labelling it would land at the horizon instead. What it is \emph{not} is an invariant of the underlying smooth manifold on which $z$ is the natural coordinate: no coordinate-independent invariant constructed from the smooth structure $r(z)$ itself diverges at $z=\pi$.
+
+The same invariant, read along the cosmological branch rather than the interior, scales differently in the
+mass, and the difference is instructive. On the bead's outward law~\cite{JanzenCRframework} the areal radius
+carries $r\propto M^{1/3}$ rather than the cycloid's $r\propto M$, so that
+$K=48M^{2}/r^{6}=64/27s^{4}$ near the origin: \emph{free of the mass and of $\alpha$ alike}. The cancellation is
+the amplitude's exponent and nothing else---$6\times\tfrac13=2$ exactly---so that at a given proper interval
+from the origin the curvature is the same for every progenitor mass, while at a given cycloid phase it goes as
+$M^{-4}$. \rcpt{P02_bead_K_mass_free}
+The scope of that statement is worth marking, because the object is this paper's perspectival scalar and not
+the curvature of the geometry the bead rides. On the Nariai cut itself the full invariant is
+$K=48M^{2}/r^{6}+24/\alpha^{4}=(12/\alpha^{4})\bigl(\sinh^{-4}(3\tilde\tau/2\alpha)+2\bigr)$, in which the mass
+cancels \emph{identically} rather than only in the limit---the sharper form, established with the conjugation
+vertex it belongs to~\cite{JanzenBoundary}. The two agree where they meet: the background term $24/\alpha^{4}$
+is finite while the first diverges, so the near-origin limit is the $64/27s^{4}$ above. What is $\alpha$-free is
+therefore the \emph{divergent} part read through the perspectival scalar, not the geometry's own curvature,
+which carries $24/\alpha^{4}$ and is manifestly $\alpha$-dependent.
+
+This falsifies the inextendibility \emph{inference} on which the standard classification rests. The standard reading takes the curvature divergence at $r=0$ to entail an inextendible boundary---that no continuation through it exists. The cycloid is a counterexample to that entailment, and a single counterexample refutes a universal. The continuation $z \mapsto \pi + i\rho'$ carries the smooth curve through $z=\pi$ into the $r<0$ arm, by the same analytic operation the standard treatment already accepts at $z=0$ as removing the horizon. So the curve passes through $r=0$, and the inference from the divergence to an inextendible boundary---an absolute terminus admitting no continuation---does not hold. This conclusion does not depend on any ontological preference, and in particular it does not require deciding whether the residual Kretschmann divergence is a feature of the geometry or of the chart---a separable question, developed in the companion slicing paper~\cite{JanzenSlicing}, which supplies the geometric account on which the $r<0$ arm and the asymmetric labelling rest. What the present paper establishes, independently of that question, is that the inextendibility \emph{inference} of the standard classification---from the curvature divergence to an inextendible boundary---is false.
+
+This paper is the second of a sequence. The companion~\cite{JanzenBHcausality} establishes that the event horizon, far from being a mere removable coordinate singularity, is itself a metric singularity of the geometry. The present paper establishes that the curve continues through $r=0$ by the same continuation that the standard treatment accepts at the horizon, so the inference from the curvature divergence to an inextendible boundary fails there---the curvature singularity itself remaining real. The two papers attack the standard horizon/singularity asymmetry from both ends at once: Paper~1 shows the ``removable'' horizon is itself a metric singularity, and the present paper shows that the ``non-removable'' singularity's standard support---the inference from the curvature divergence to an inextendible boundary---fails. The two grounds on which the standard classification rests its asymmetry thus both give way. What this leaves standing is the rigorous, curvature-independent inextendibility of $r=0$ established by Sbierski~\cite{sbierski2018}; whether that surviving asymmetry is a feature of the geometry or of the perspectival chart is the further step the companion slicing paper~\cite{JanzenSlicing} takes up, and it finds it perspectival: on the de~Sitter substrate the divergence of the curvature \emph{reading} at $r=0$ is a property of the areal coordinate and not of the manifold, which is $C^{\infty}$ across the locus the chart so labels. The companion slicing paper~\cite{JanzenSlicing} then supplies the geometric cause---the off-centre sweep that manufactures the asymmetric labelling---and the identity of the $r<0$ arm. Two readings of the present construction, drawn out in Section~\ref{sec:discussion}, locate it within that wider setting and are worth stating at the outset, since both bear on what the cycloid is. First, the single horizon exhibited here is the $\Lambda\to0$ degeneration of a root \emph{triple}: for $\Lambda>0$ the structure function $f=1-2M/r-r^{2}/\alpha^{2}$ replaces Schwarzschild's single horizon with a horizon cubic, two of whose roots---the cosmological horizon and its backward-radial partner---run off to infinity as $\alpha\to\infty$, leaving exactly the one finite horizon the cycloid exhibits, the conjugate point at $r=0$ persisting throughout. Horizon multiplicity is therefore a reading of the cosmological constant---one horizon for $\Lambda=0$, three for $\Lambda>0$---the two additional roots present precisely because the substrate the wider construction rests on is de~Sitter and not flat, and the backward-radial partner the root on which the $r<0$ arm closes. Second, the cycloid is itself the swing-zero ($w=0$) member of that Schwarzschild--de~Sitter slicing family, the equator taken diametrically, carrying besides the Schwarzschild reading developed here a conjugate de~Sitter reading related to it by an involution: two vantages on one curve at fixed throat radius $\alpha$, the Schwarzschild mass the pivot reading's own rather than a second invariant. One further reading of that curve is worth stating at the outset, because it is where the sequence's central identity is already visible in bare Schwarzschild. The cycloid $r(z)=M(1+\cos z)$ is, term for term, the scale factor of a closed Friedmann--Lema\^itre dust cosmology, $a(\eta)=\tfrac{a_{m}}{2}(1+\cos\eta)$: the areal radius of the interior collapse and the scale factor of a closed universe trace one and the same curve---the classical Oppenheimer--Snyder identity~\cite{Oppenheimer1939b}, read here at the level of the vacuum areal radius rather than a matched dust ball. The collapse of a black-hole interior and the life of a closed cosmos are therefore not analogues but one geometric object seen twice, and this is the seed---present already at $\Lambda=0$---of the identity the programme makes exact: on the de~Sitter substrate the black-hole and cosmological readings are slicings of one manifold~\cite{JanzenSlicing}, and the continuation through the second critical point carries the collapse forward not into a closed recollapse but into our own \emph{open}, expanding cosmology, the two joined as one closed cosmogenetic object~\cite{JanzenCRframework}. The ring exhibited here is thus at once the black hole, the de~Sitter substrate, and---through the cycloid---a cosmology. These readings are not used in the falsification below, which needs neither---but they are not a deferral. They are what the object exhibited here \emph{is}: one homogeneous ring, at once Schwarzschild and de~Sitter. Exhibiting that ring from within its own geometry---where the companions read it through the exterior slicing operator---is the present paper's work alongside the falsification. The two-species genus established here, and the perspectival curvature that reads the chart's labelling, are the foundational-geometry instance of the substrate's everywhere-real boundary and its shadow-reading~\cite{JanzenGeometricCore}; the \emph{falsification} needs none of that substrate ontology, resting on the analytic structure of $r(z)$ alone.
+
+The paper proceeds as follows. Section \ref{sec:cycloid} reviews the cycloid parametrisation of the Schwarzschild interior and derives the metric coefficients. Section \ref{sec:critical} examines the analytic structure of $r(z)$ at the two critical points. Section \ref{sec:continuation} constructs the analytic continuations at $z=0$ and $z=\pi$, with both branches at each critical point. Section \ref{sec:four_regions} assembles the single curve into the Schwarzschild chart's patches and identifies the four $r \geq 0$ pieces as the Kruskal--Szekeres extension and the two $r<0$ pieces as the back-seam continuation beyond it. Section \ref{sec:kretschmann} analyses the Kretschmann scalar in $z$-coordinates and identifies the divergence at $r=0$ as a chain-rule artefact. Section \ref{sec:metric-singularities} identifies both critical points as metric singularities of the Schwarzschild geometry. Section \ref{sec:ontology} sets out what the construction establishes and what it leaves open. Section \ref{sec:discussion} discusses implications for the singularity theorems (including the curvature-independent inextendibility of Sbierski~\cite{sbierski2018}, which stands) and for the physical interpretation of black-hole geometry, and closes by placing the construction in its wider setting: the single horizon as the $\Lambda\to0$ degeneration of a root triple (\S\ref{sec:ring}), the cycloid as the $w=0$ equatorial member of the Schwarzschild--de~Sitter slicing family, and---in \S\ref{sec:r0-tee}---what the second critical point becomes once carried to the substrate: not a technicality left to the next paper, but the object the sequence is organised around.
+
+\section{The cycloid parametrisation of the Schwarzschild interior}\label{sec:cycloid}
+
+The Schwarzschild line element in standard coordinates is
+\begin{equation}
+ds^2 = -\left(1 - \frac{2M}{r}\right)dt^2 + \left(1 - \frac{2M}{r}\right)^{-1} dr^2 + r^2 d\Omega^2,
+\end{equation}
+where $d\Omega^2 = d\theta^2 + \sin^2\theta\, d\phi^2$ is the standard line element on the unit 2-sphere. For $r < 2M$ the factor $(1 - 2M/r)$ is negative, the coordinates $t$ and $r$ exchange roles, and $r$ becomes a timelike coordinate.
+
+\begin{proposition}[Lemaître--Tolman cycloid form]\label{prop:cycloid}
+Within the Schwarzschild interior $r \in (0, 2M)$, the radial proper-time parameter $\tau$ along a radial timelike geodesic satisfies
+\begin{equation}\label{eq:cycloid_pair}
+r(\eta) = M(1 + \cos \eta), \qquad \tau(\eta) = M(\eta + \sin \eta),
+\end{equation}
+for $\eta \in [0, \pi]$, with $\eta = 0$ corresponding to the horizon $r = 2M$ and $\eta = \pi$ corresponding to $r=0$. The proper-time interval from horizon to $r=0$ is $\tau(\pi) - \tau(0) = M\pi$.\rcpt{P02_cycloid_and_critical_points}
+\end{proposition}
+
+\begin{proof}
+Along a radially infalling timelike geodesic in the Schwarzschild interior with vanishing angular momentum, the proper-time element satisfies
+\begin{equation}
+d\tau^2 = \frac{dr^2}{2M/r - 1} = \frac{r}{2M - r}\, dr^2.
+\end{equation}
+Substituting $r = M(1+\cos\eta)$, so that $2M - r = M(1 - \cos\eta) = 2M\sin^2(\eta/2)$ and $r = 2M\cos^2(\eta/2)$, and $dr = -M\sin\eta\, d\eta$:
+\begin{align}
+d\tau^2 &= \frac{2M\cos^2(\eta/2)}{2M\sin^2(\eta/2)} \cdot M^2\sin^2\eta\, d\eta^2 \nonumber\\
+&= \cot^2(\eta/2) \cdot M^2 \cdot 4\sin^2(\eta/2)\cos^2(\eta/2)\, d\eta^2 \nonumber\\
+&= 4M^2 \cos^4(\eta/2)\, d\eta^2.
+\end{align}
+Taking the positive square root,
+\begin{equation}
+d\tau = 2M\cos^2(\eta/2)\, d\eta = M(1 + \cos\eta)\, d\eta,
+\end{equation}
+which integrates to $\tau(\eta) = M(\eta + \sin\eta)$ with $\tau(0) = 0$. The total proper time is $\tau(\pi) = M\pi$.
+\end{proof}
+
+\begin{remark}
+The parametrisation (\ref{eq:cycloid_pair}) describes a cycloid: the trajectory traced by a point on the rim of a circle of radius $M$ as the circle rolls along a straight line. The Schwarzschild interior is the cycloidal motion of a radially infalling test particle as parametrised by the rolling angle $\eta$, with the proper time $\tau$ being the arc length along the cycloid. The same cycloid is the recollapse curve of a closed matter cosmology: the closed dust Friedmann universe has scale factor $a(\eta)=\tfrac{a_{m}}{2}(1+\cos\eta)$ and cosmic time $t(\eta)=\tfrac{a_{m}}{2}(\eta+\sin\eta)$, the identical curve under $M\leftrightarrow a_{m}/2$---the Oppenheimer--Snyder identity that homogeneous dust collapse traces the interior of a closed Friedmann universe. The Schwarzschild interior and a closed cosmology are thus one curve already at the level of the areal radius; the programme's continuation through the second critical point carries that identity onto the conjugate branch, where the collapse reads forward not as a recollapse but as our own expanding cosmology~\cite{JanzenSlicing,JanzenCRframework}. Within the programme the curve is placed exactly. Read inward it is the closed ($E<1$) member of the slicing operator's Friedmann family, taken as a bound collapse rather than a recollapse~\cite{JanzenOperator}; and the interior it parametrises is, carried to the substrate, the Kantowski--Sachs vacuum cut the range paper reads as one geometry with the flat cosmology at a single rest-energy's difference~\cite{JanzenRange}. This $\Lambda=0$ cycloid is the classical face of the identity those companions carry with $\Lambda$ intact.
+\end{remark}
+
+\subsection{The full interior metric in cycloid coordinates}
+
+The cycloid parametrises a single radial geodesic. To obtain the full interior metric we retain the angular 2-sphere and the Schwarzschild time coordinate $t$ (which is spacelike in the interior), and we use $\eta$ as the independent radial-temporal coordinate.
+
+\begin{lemma}\label{lem:interior_metric}
+In coordinates $(\eta, t, \theta, \phi)$, the Schwarzschild interior metric is\rcpt{P02_interior_metric}
+\begin{equation}\label{eq:interior_metric}
+ds^2_{\text{int}} = -d\tau^2 + \tan^2(\eta/2)\, dt^2 + M^2(1+\cos\eta)^2\, d\Omega^2,
+\end{equation}
+where $\tau = M(\eta + \sin\eta)$, and equivalently
+\begin{equation}\label{eq:interior_metric_eta}
+ds^2_{\text{int}} = -4M^2\cos^4(\eta/2)\, d\eta^2 + \tan^2(\eta/2)\, dt^2 + M^2(1+\cos\eta)^2\, d\Omega^2.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+In the interior, the Schwarzschild metric components are
+\begin{align}
+g_{tt} &= -(1 - 2M/r) = 2M/r - 1 = \frac{2M - r}{r} = \frac{2M\sin^2(\eta/2)}{2M\cos^2(\eta/2)} = \tan^2(\eta/2), \\
+g_{rr} &= (1 - 2M/r)^{-1} = -\frac{r}{2M - r} = -\cot^2(\eta/2).
+\end{align}
+The radial coefficient gives, after substituting $dr = -M\sin\eta\, d\eta$,
+\begin{equation}
+g_{rr}\, dr^2 = -\cot^2(\eta/2) \cdot M^2\sin^2\eta\, d\eta^2 = -4M^2\cos^4(\eta/2)\, d\eta^2 = -d\tau^2,
+\end{equation}
+by the calculation in Proposition \ref{prop:cycloid}. The angular coefficient is $r^2 = M^2(1+\cos\eta)^2$. Assembling,
+\begin{equation}
+ds^2 = g_{tt} dt^2 + g_{rr} dr^2 + r^2 d\Omega^2 = \tan^2(\eta/2)\, dt^2 - d\tau^2 + M^2(1+\cos\eta)^2\, d\Omega^2,
+\end{equation}
+which is (\ref{eq:interior_metric}).
+\end{proof}
+
+In the form (\ref{eq:interior_metric}), the timelike character of $\eta$ inside the horizon is manifest---$d\tau^2$ enters with a negative coefficient, while $dt^2$ enters with a positive (spacelike) coefficient.
+
+\section{The two critical points of \texorpdfstring{$r(z)$}{r(z)}}\label{sec:critical}
+
+We now move to the central observation of the paper. Let us extend the parameter range from $\eta \in [0, \pi]$ to $z \in \mathbb{R}$ and treat
+\begin{equation}\label{eq:rz}
+r(z) = M(1 + \cos z)
+\end{equation}
+as a smooth function on the real line (or, equivalently, on the circle $\mathbb{R}/2\pi\mathbb{Z}$, since $r$ is $2\pi$-periodic).
+
+\begin{proposition}[Symmetric critical points]\label{prop:critical}
+The function $r(z) = M(1+\cos z)$ has critical points precisely at $z \in \pi\mathbb{Z}$, all of which are non-degenerate. At $z = 2k\pi$ (k integer), $r = 2M$ and $d^2r/dz^2 = -M$ (local maximum). At $z = (2k+1)\pi$, $r = 0$ and $d^2r/dz^2 = +M$ (local minimum).
+\end{proposition}
+
+\begin{proof}
+Direct differentiation: $dr/dz = -M\sin z$, vanishing precisely at $z \in \pi\mathbb{Z}$. The second derivative $d^2r/dz^2 = -M\cos z$ equals $-M$ at $z = 2k\pi$ and $+M$ at $z = (2k+1)\pi$, both nonzero. By Morse's lemma~\cite{Milnor1963}, both are non-degenerate critical points, the former a local maximum (where $r = 2M$) and the latter a local minimum (where $r=0$).
+\end{proof}
+
+The two endpoints of the cycloid interior, $z=0$ and $z=\pi$, are therefore extrema of $r(z)$ of identical analytic type up to the sign of the second derivative. Each is a smooth non-degenerate critical point of a $C^\infty$ function on a smooth one-dimensional manifold.
+
+This identity is not a coincidence of the particular function $M(1+\cos z)$; it is forced by the geometry of the arc. Since $r-M = M\cos z$ obeys $r'' = -(r-M)$---simple harmonic motion about $r=M$---the interior arc is the projection onto the $r$-axis of uniform motion on the circle $(r-M)^2 + s^2 = M^2$, with conjugate $s = M\sin z$ (the \emph{circle} of the hyperbola--circle--hyperbola completion of Section~\ref{sec:continuation}, the conjugate $s$ going imaginary to give the exterior arms). The two critical points $z=0,\pi$ are the two points at which this circle crosses the $r$-axis---its $r$-poles, at $r=2M$ and $r=0$. At a pole the tangent to the circle is orthogonal to the $r$-axis, so $dr/dz$ vanishes there of necessity, not by computation; and the circle is homogeneous---it has no distinguished point---so its two $r$-poles are one point seen twice, exchanged by reflection through its centre. The identical analytic character of the two critical points is the homogeneity of the circle. The sole asymmetry between them is extrinsic: which value the chart's origin assigns each pole, $2M$ against $0$---and, as Remark~\ref{rem:asymmetric_chart} records and Section~\ref{sec:kretschmann} makes precise, the curvature, a function of that value, is the quantity that reads it.
+
+\begin{remark}\label{rem:asymmetric_chart}
+Although the underlying function $r(z)$ treats $z=0$ and $z=\pi$ symmetrically, the standard Schwarzschild chart treats them asymmetrically: at $z=0$ the chart's coordinate value $r$ is $2M$, while at $z=\pi$ the chart's coordinate value is $0$. This asymmetric labelling has structural consequences for invariants computed as functions of $r$. The Kretschmann scalar $K(r) = 48M^2/r^6$ takes the finite value $K = 3/(4M^4)$ at $z=0$ but diverges as $r \to 0$ at $z=\pi$. The divergence is generated by the chart's labelling, not by the underlying smooth structure of $r(z)$, as we make precise in Section \ref{sec:kretschmann}.
+\end{remark}
+
+\section{Analytic continuation through both critical points}\label{sec:continuation}
+
+The cycloid arc $z \in [0,\pi]$ admits analytic continuation through each of its critical-point endpoints. We carry out the continuations symmetrically.
+
+\subsection{Continuation at \texorpdfstring{$z=0$}{z=0}: Region I}
+
+Set $z = i\rho$ for $\rho \in (0, \infty)$ real. Then
+\begin{equation}\label{eq:r_RegionI}
+r(i\rho) = M(1 + \cos(i\rho)) = M(1 + \cosh\rho),
+\end{equation}
+which takes values $r \in (2M, \infty)$ as $\rho$ ranges over $(0, \infty)$, with the boundary value $r = 2M$ recovered at $\rho = 0$ matching the interior endpoint.
+
+\begin{proposition}\label{prop:region_I_metric}
+Under the analytic continuation $z = i\rho$, the metric (\ref{eq:interior_metric_eta}) becomes
+\begin{equation}\label{eq:Region_I_metric}
+ds^2_{\text{I}} = -\tanh^2(\rho/2)\, dt^2 + 4M^2 \cosh^4(\rho/2)\, d\rho^2 + M^2(1 + \cosh\rho)^2\, d\Omega^2,
+\end{equation}
+which agrees with the Schwarzschild exterior metric for $r \in (2M, \infty)$ under the identification $r = M(1+\cosh\rho)$.
+\end{proposition}
+
+\begin{proof}
+Under $z = i\rho$, $dz = i\, d\rho$ and $dz^2 = -d\rho^2$. The trigonometric functions become hyperbolic:
+\begin{align}
+\cos z &\mapsto \cosh\rho, \\
+\sin z &\mapsto i\sinh\rho, \\
+\tan(z/2) &\mapsto i\tanh(\rho/2), \\
+\cos(z/2) &\mapsto \cosh(\rho/2).
+\end{align}
+The interior metric (\ref{eq:interior_metric_eta}) transforms component by component:
+\begin{align}
+-4M^2 \cos^4(\eta/2)\, d\eta^2 &\mapsto -4M^2 \cosh^4(\rho/2) \cdot (-d\rho^2) = +4M^2\cosh^4(\rho/2)\, d\rho^2, \\
+\tan^2(\eta/2)\, dt^2 &\mapsto (i\tanh(\rho/2))^2\, dt^2 = -\tanh^2(\rho/2)\, dt^2, \\
+M^2(1+\cos\eta)^2\, d\Omega^2 &\mapsto M^2(1+\cosh\rho)^2\, d\Omega^2.
+\end{align}
+Assembling,
+\begin{equation}
+ds^2_{\text{I}} = +4M^2\cosh^4(\rho/2)\, d\rho^2 - \tanh^2(\rho/2)\, dt^2 + M^2(1+\cosh\rho)^2\, d\Omega^2,
+\end{equation}
+which is (\ref{eq:Region_I_metric}). The signature has flipped: $dt^2$ now enters with a negative coefficient (timelike) and the radial coefficient is positive (spacelike), as required for the exterior.
+
+To verify agreement with the Schwarzschild exterior, identify $r = M(1+\cosh\rho)$, so $r - 2M = M(\cosh\rho - 1) = 2M\sinh^2(\rho/2)$ and $r = 2M\cosh^2(\rho/2)$, giving
+\begin{equation}
+1 - \frac{2M}{r} = 1 - \frac{2M}{2M\cosh^2(\rho/2)} = 1 - \frac{1}{\cosh^2(\rho/2)} = \tanh^2(\rho/2),
+\end{equation}
+so the time coefficient matches: $g_{tt} = -(1 - 2M/r) = -\tanh^2(\rho/2)$. For the radial coefficient, $dr = M\sinh\rho\, d\rho = 2M\sinh(\rho/2)\cosh(\rho/2)\, d\rho$, so
+\begin{equation}
+\frac{dr^2}{1 - 2M/r} = \frac{4M^2\sinh^2(\rho/2)\cosh^2(\rho/2)\, d\rho^2}{\tanh^2(\rho/2)} = 4M^2\cosh^4(\rho/2)\, d\rho^2,
+\end{equation}
+matching (\ref{eq:Region_I_metric}). The angular term is direct: $r^2 = M^2(1+\cosh\rho)^2$.\rcpt{P02_analytic_continuations}
+\end{proof}
+
+This recovers the right-exterior Region I of the Kruskal--Szekeres extension by an explicit substitution applied to the interior metric. The substitution $z = i\rho$ is the Wick rotation that converts the circular trigonometric functions of the interior into the hyperbolic functions of the exterior.
+
+\subsection{Continuation at \texorpdfstring{$z=\pi$}{z=π}: the back-seam continuation onto \texorpdfstring{$r<0$}{r<0}}
+
+By symmetry, we now apply the analytic continuation at the other critical point. Set $z = \pi + i\rho'$ for $\rho' \in (0,\infty)$. Then
+\begin{equation}\label{eq:r_RegionIV}
+r(\pi + i\rho') = M(1 + \cos(\pi + i\rho')) = M(1 - \cos(i\rho')) = M(1 - \cosh\rho'),
+\end{equation}
+which takes values $r \in (-\infty, 0)$ as $\rho'$ ranges over $(0,\infty)$, with the boundary value $r=0$ recovered at $\rho'=0$ matching the interior endpoint at $z = \pi$.
+
+\begin{proposition}\label{prop:back_seam_metric}
+Under the analytic continuation $z = \pi + i\rho'$, the metric (\ref{eq:interior_metric_eta}) becomes
+\begin{equation}\label{eq:back_seam_metric}
+ds^2_{\text{back}} = -\coth^2(\rho'/2)\, dt^2 + 4M^2 \sinh^4(\rho'/2)\, d\rho'^2 + M^2(1 - \cosh\rho')^2\, d\Omega^2,
+\end{equation}
+which agrees with the Schwarzschild form for $r \in (-\infty, 0)$ under the identification $r = M(1-\cosh\rho')$.
+\end{proposition}
+
+\begin{proof}
+Under $z = \pi + i\rho'$, $dz = i\, d\rho'$ and $dz^2 = -d\rho'^2$. The trigonometric functions transform as
+\begin{align}
+\cos(\pi + i\rho') &= -\cos(i\rho') = -\cosh\rho', \\
+\sin(\pi + i\rho') &= -\sin(i\rho') = -i\sinh\rho', \\
+\tan((\pi + i\rho')/2) &= \tan(\pi/2 + i\rho'/2) = -\cot(i\rho'/2) = i\coth(\rho'/2), \\
+\cos((\pi + i\rho')/2) &= \cos(\pi/2 + i\rho'/2) = -\sin(i\rho'/2) = -i\sinh(\rho'/2).
+\end{align}
+Substituting into (\ref{eq:interior_metric_eta}):
+\begin{align}
+-4M^2\cos^4(\eta/2)\, d\eta^2 &\mapsto -4M^2 \cdot (-i\sinh(\rho'/2))^4 \cdot (-d\rho'^2) = +4M^2\sinh^4(\rho'/2)\, d\rho'^2, \\
+\tan^2(\eta/2)\, dt^2 &\mapsto (i\coth(\rho'/2))^2 dt^2 = -\coth^2(\rho'/2)\, dt^2, \\
+M^2(1+\cos\eta)^2\, d\Omega^2 &\mapsto M^2(1-\cosh\rho')^2\, d\Omega^2.
+\end{align}
+Assembling gives (\ref{eq:back_seam_metric}).
+
+For the identification with Schwarzschild in the $r < 0$ branch: with $r = M(1-\cosh\rho')$, $r < 0$ for $\rho' > 0$, and
+\begin{equation}
+1 - \frac{2M}{r} = 1 - \frac{2M}{M(1-\cosh\rho')} = 1 - \frac{2}{1-\cosh\rho'} = \frac{(1 - \cosh\rho') - 2}{1 - \cosh\rho'} = \frac{-1 - \cosh\rho'}{1 - \cosh\rho'} = \frac{1 + \cosh\rho'}{\cosh\rho' - 1} = \coth^2(\rho'/2),
+\end{equation}
+where in the last step we used $1+\cosh\rho' = 2\cosh^2(\rho'/2)$ and $\cosh\rho' - 1 = 2\sinh^2(\rho'/2)$. So $g_{tt} = -(1-2M/r) = -\coth^2(\rho'/2)$, matching the result of the analytic continuation.
+\end{proof}
+
+The structural similarity between Propositions \ref{prop:region_I_metric} and \ref{prop:back_seam_metric} is exact. At both critical points of $r(z)$, the same analytic operation $z \mapsto z_* + i\rho$ (with $z_* \in \{0, \pi\}$) produces an asymptotically flat region whose metric is the standard Schwarzschild form. The roles of hyperbolic sine and cosine are exchanged between the two seams, but the analytic structure is identical.
+
+Each critical point carries a second branch. At $z=0$, the conjugate continuation $z \mapsto -i\rho$ gives $r = M(1+\cosh\rho) \in (2M,\infty)$ again, since $\cosh$ is even; it yields a second copy of the exterior (\ref{eq:Region_I_metric}), isometric to the first and causally disconnected from it across the bifurcation 2-sphere at $r=2M$. The front seam at $z=0$ thus opens into \emph{two} exteriors at $r>2M$. At $z=\pi$, the conjugate continuation $z \mapsto \pi - i\rho'$ likewise gives $r = M(1-\cosh\rho') \in (-\infty,0)$, a second region on $r<0$. On the back seam $f = 1 - 2M/r = \coth^2(\rho'/2) > 1$ for all $\rho'>0$, so $f$ has no zero on $r<0$: the back-seam regions contain no horizon, and are static and asymptotically flat as $r \to -\infty$. The back seam at $z=\pi$ thus opens into \emph{two} regions at $r<0$, both horizonless.
+
+\section{One curve, two seams: Kruskal as the front, and the back-seam pair beyond it}\label{sec:four_regions}
+
+The cycloid arc $z \in [0, \pi]$ admits a second parity choice that we have so far suppressed: the time-reversal $\eta \mapsto -\eta$, which corresponds to running the cycloid backwards (the white-hole branch of the interior). Together with the two-branch continuation at each critical point, this completes the single analytic curve and its image in the Schwarzschild chart.
+
+\begin{proposition}\label{prop:four_regions}
+The maximal analytic completion of the cycloid is a single analytic curve---hyperbola, circle, hyperbola---with two non-degenerate critical points, at $z=0$ ($r=2M$) and $z=\pi$ ($r=0$). In the Schwarzschild $(r,t)$ chart, whose coordinates degenerate at the two critical points, the curve is drawn as six patches:
+\begin{enumerate}
+\item black-hole interior: $z = \eta$, $\eta \in (0, \pi)$, with $r = M(1+\cos\eta) \in (0, 2M)$;
+\item white-hole interior: $z = \eta$, $\eta \in (-\pi, 0)$, with $r = M(1+\cos\eta) \in (0, 2M)$;
+\item two exteriors at $r>2M$: $z = \pm i\rho$, $\rho \in (0, \infty)$, both with $r = M(1+\cosh\rho) \in (2M, \infty)$, isometric and meeting at the bifurcation 2-sphere $r=2M$;
+\item two regions at $r<0$: $z = \pi \pm i\rho'$, $\rho' \in (0, \infty)$, both with $r = M(1-\cosh\rho') \in (-\infty, 0)$, horizonless and asymptotically flat as $r \to -\infty$.
+\end{enumerate}
+The four patches at $r \geq 0$---the two interiors and the two $r>2M$ exteriors---meet at the bifurcation 2-sphere and terminate at $r=0$; they are precisely the maximal Kruskal--Szekeres extension. The two patches at $r<0$ are the continuation through the conjugate critical point $z=\pi$. The Kruskal--Szekeres extension does not contain them: it draws the curve up to the $r=0$ turn and stops there, treating $r=0$ as a boundary rather than a critical point one continues through.
+\end{proposition}
+
+\begin{proof}[Sketch]
+The metric on each patch was computed in Lemma \ref{lem:interior_metric} (the interior arcs, with $\eta \in (0,\pi)$ and its time-reversal), Proposition \ref{prop:region_I_metric} (the $r>2M$ exteriors, both branches $z = \pm i\rho$ giving the same $r$ since $\cosh$ is even), and Proposition \ref{prop:back_seam_metric} (the $r<0$ regions, both branches $z = \pi \pm i\rho'$). The white-hole interior is obtained from the black-hole interior by $\eta \mapsto -\eta$; the metric is identical in form because (\ref{eq:interior_metric_eta}) is invariant under $\eta \mapsto -\eta$ (the only odd-power dependence on $\eta$ is in $d\eta$, which appears squared).
+
+The four $r \geq 0$ patches meet at the bifurcation 2-sphere $z=0$: the two interiors and the two exteriors join there in the standard Kruskal--Szekeres X-pattern, and each is matched to the Schwarzschild form in its domain of $r$ by Lemma \ref{lem:interior_metric} and Proposition \ref{prop:region_I_metric}. This subset is in bijection with the maximal Kruskal--Szekeres extension, which terminates at $r=0$. The two $r<0$ patches are the continuation through the second critical point $z=\pi$, matched to the Schwarzschild form for $r<0$ by Proposition \ref{prop:back_seam_metric}; they lie beyond the Kruskal extension, and their geometric identity---the backward radial direction, the negative root of the horizon cubic---is established in the companion slicing paper~\cite{JanzenSlicing}.
+\end{proof}
+
+\section{The Kretschmann scalar as a chain-rule artefact}\label{sec:kretschmann}
+
+The Kretschmann scalar of the Schwarzschild metric is $K = R_{abcd}R^{abcd} = 48M^2/r^6$, which is a scalar invariant under coordinate transformations of the Schwarzschild chart. At the horizon $r = 2M$ it takes the finite value $K = 3/(4M^4)$, in agreement with the horizon being a coordinate singularity. At $r = 0$ it diverges, in agreement with the standard classification of $r = 0$ as a curvature singularity.
+
+Our cycloid construction parametrises the Schwarzschild manifold by the smooth coordinate $z$, with $r$ a smooth function of $z$. Expressed as a function of $z$, the Kretschmann scalar becomes
+\begin{equation}\label{eq:Kretschmann_z}
+K(z) = \frac{48 M^2}{r(z)^6} = \frac{48 M^2}{M^6(1+\cos z)^6} = \frac{48}{M^4 (1+\cos z)^6}.
+\end{equation}
+
+\begin{proposition}\label{prop:Kretschmann}
+Expressed as a function of $z$, the Kretschmann scalar $K(z)$ has a twelfth-order pole at $z = \pi$ and remains bounded at $z = 0$.\rcpt{P02_kretschmann_chain_rule} The pole at $z = \pi$ is generated by the chain rule applied to the composition (\ref{eq:Kretschmann_z}) at a non-degenerate critical point of $r(z)$.
+\end{proposition}
+
+\begin{proof}
+At $z = 0$, $r(0) = 2M$ and $K(0) = 48/(M^4 \cdot 2^6) = 3/(4M^4)$, finite.
+
+At $z = \pi$, $r(\pi) = 0$. Near $z = \pi$, set $\epsilon = \pi - z$, small. Then $1 + \cos z = 1 - \cos\epsilon = \epsilon^2/2 - \epsilon^4/24 + O(\epsilon^6)$. So
+\begin{equation}
+(1+\cos z)^6 = (\epsilon^2/2)^6 (1 + O(\epsilon^2)) = \epsilon^{12}/64 \cdot (1 + O(\epsilon^2)),
+\end{equation}
+and
+\begin{equation}
+K(z) = \frac{48}{M^4 \cdot \epsilon^{12}/64} \cdot (1 + O(\epsilon^2)) = \frac{3072}{M^4 \epsilon^{12}} + O(\epsilon^{-10}),
+\end{equation}
+a twelfth-order pole at $z = \pi$.
+
+The pole order is determined by the chain rule: $r(z)$ vanishes to second order at $z = \pi$ ($r \sim M\epsilon^2/2$), and $K \propto r^{-6}$, so $K$ diverges as $\epsilon^{-12}$. The pole order matches the product of the multiplicity of the critical point of $r(z)$ (order 2) and the power of $r$ in the denominator of $K$ (power 6).
+\end{proof}
+
+\begin{corollary}\label{cor:Kretschmann_at_z0}
+By the same chain-rule analysis applied at $z = 0$, the Kretschmann scalar would diverge if $r(0)$ were $0$ instead of $2M$. The finiteness of $K(0) = 3/(4M^4)$ is a consequence of the chart's particular labelling of the maximum-$r$ critical point as $r = 2M$ rather than $r = 0$.
+
+Specifically: had the Schwarzschild chart labelled the horizon-critical-point as $r = 0$ instead of as $r = 2M$, the Kretschmann scalar $48M^2/r^6$ would diverge at the horizon, and the standard classification would call it a true curvature singularity.
+
+This labelling is fixed by the physical interpretation of $r$ as the areal radius of the angular 2-sphere, which takes finite value $2M$ at the horizon and zero at the conjugate critical point. The labelling is therefore part of the perspectival construction of the Schwarzschild chart, not an intrinsic feature of the underlying analytic structure of $r(z)$.
+\end{corollary}
+
+\begin{remark}\label{rem:divergence_tracks_label}
+The $1/r^6$ Kretschmann divergence at $z = \pi$ is generated by the chain rule applied to the composition $48M^2/r(z)^6$ at the second-order vanishing of $r$ there; it is the curvature scalar of the Schwarzschild perspectival metric---the metric as a tensor field over the parameter $r$---read as a function on the $z$-parametrised manifold. That this particular divergence tracks the chart's labelling is established directly: under the opposite labelling it would land at the horizon, and the Kruskal--Szekeres chart's natural curvature scalars are likewise finite at the bifurcation 2-sphere ($z = 0$) and divergent at $z = \pi$, for the same chain-rule reason.
+
+The underlying smooth structure parametrised by $z$ carries no divergent invariant of its own: the divergence is the perspectival metric's, real as that metric's, generated where the chart labels the critical point $r=0$. What is not settled by this bookkeeping is the ontological reading of that real divergence---whether it is taken as a feature of the geometry, the perspectival metric being fundamental, or as a feature of the perspectival chart, the smooth structure being fundamental. The divergence is coordinate-independent, which may seem to make the question moot; that the invariance is nonetheless consistent with the perspectival reading is the ontological matter taken up in Section~\ref{sec:ontology}, and not decided here.
+\end{remark}
+
+\section{The two critical points are the two metric singularities of Schwarzschild}\label{sec:metric-singularities}
+
+The chain-rule analysis of Section~\ref{sec:kretschmann} shows that the divergence at $r=0$ is generated by the chart's labelling of one critical point. We now name the structure this reveals, because it is the structure that governs the interpretation of the whole construction. Each of the two critical points of $r(z)$ is a \emph{metric singularity}: a single place at which the metric collapses to zero separation, drawn by the $r$-chart as an extended locus. The notion is made precise, in its finite-curvature form, and shown to be a feature of standard general relativity rather than of any particular interpretation, in the companion paper on the causal occurrence of black holes \cite{JanzenBHcausality}: two events that are null-separated and share a single invariant spatial location have vanishing temporal separation as well, by the difference-structure of the Lorentzian line element, and are therefore metrically coincident while remaining topologically distinct and causally ordered. The future event horizon is shown there to be exactly such a locus---a place of infinitely many distinct, causally ordered, metrically coincident events, every horizon-crossing event occurring at the one areal radius $r=2M$. That is the finite-curvature species; the conjugate point is the other.
+
+The cycloid construction makes plain that the conjugate critical point is a metric singularity also, of the same genus as the horizon---the same structure on the one underlying curve, the symmetry of Proposition~\ref{prop:critical}, now named. What separates them is curvature, and the separation is definite. The horizon is the critical point worldlines pass \emph{through}: infinitely many distinct, causally ordered events tied together there at zero separation, the manifold place intact---the finite-curvature metric singularity the companion paper~\cite{JanzenBHcausality} makes precise. $r=0$ is the critical point worldlines \emph{end} at: the endpoint of the infalling family, at which the constructed manifold is legitimately singular---the curvature diverges, and the worldlines reach a terminus rather than crossing one. This is the infinite-curvature metric singularity. The two are metric singularities of one genus---each a place at which the metric assigns no separation, drawn from the same critical point of the one curve---and they differ in just this: the horizon is the place infinitely many worldlines pass through, $r=0$ the place they end. That is the whole of the finite-versus-infinite distinction.
+
+The separation can be located exactly, and locating it disposes of a tempting overstatement. The two critical points are not identical \emph{as metrics}: a metric fixes not only the interval but, through its second derivatives, the curvature, and the curvature differs. What is identical, and what is not, sorts cleanly by derivative order. At zeroth order---the interval, the genus---both collapse the ruler to zero separation; as metric singularities they are alike. At first order there is nothing to tell them apart: the lowest scalar invariant of a metric is the Ricci scalar, second order in the metric, so no first-order invariant exists to carry a distinction; the connection is gauge, removable in normal coordinates; and the $r$-chart degenerates at \emph{both} critical points, symmetrically (Section~\ref{sec:four_regions}). The first invariant that separates them is the curvature itself, second order---finite at $r=2M$, divergent at $r=0$. So the pair is identical through first order and parts only at the second: the distinction is \emph{sourced} at zeroth order, in the single value the chart assigns each pole ($2M$ against $0$), and \emph{lands} at second order, because the curvature is the lowest invariant there is and the one that depends on that value, through $K = 48M^2/r^6$. ``Distinguished only by curvature'' is therefore ``distinguished only at second order''---the two coincident through every order beneath it, and the chart's choice of origin, read by the curvature, the whole of what sets them apart.
+
+A reader who tests this identity against the full interior metric (\ref{eq:interior_metric}) will find the two points behaving in opposite ways and might take that opposition for a difference in kind; it is not, and seeing why is the content of ``distinguished only by curvature.'' At the horizon the collapse is the one the companion paper~\cite{JanzenBHcausality} makes precise---along the null generator, $g_{tt}=\tan^2(\eta/2)\to0$, separation vanishing along the generator while the angular $2$-sphere stays finite (areal radius $2M$, area $16\pi M^2$) and orthogonal to it. At $r=0$ the collapse is angular: the $2$-sphere's radius runs to zero, every direction of approach crushed onto the one place, while the spacelike coefficient $g_{tt}\to\infty$ runs the other way. The collapse has moved from one sector of the metric to the other, and for one reason: each of these behaviours---$g_{tt}\to0$ against $\to\infty$, the $2$-sphere finite against vanishing, the curvature finite against divergent---is a function of the single areal-radius value the chart assigns the critical point, $2M$ against $0$, with $K=48M^2/r^6$ the invariant that indexes it. The opposition in the full metric is therefore the finite-versus-infinite-curvature distinction displaying itself, not a second distinction beside it---the signature of the identity, not its refutation.
+
+Why $r=0$ is the end and the horizon the crossing---why the sweep is forced to pivot on the one and not the other---is the cascade the companion slicing paper~\cite{JanzenSlicing} exhibits, following from the single symmetry break of locating the hole.
+
+\subsection{The identification survives the recovery of the spatial geometry}
+
+This identification is preserved when the full spatial geometry is recovered from the radial curve, and that is worth stating explicitly, because it is where the standard picture quietly goes wrong. The geometry is built from the radial curve by sweeping it through the angular symmetries of the 2-sphere---the $d\Omega^2$ directions of the line element. The sweep multiplies the points: a single radial event at a critical point becomes a whole 2-sphere's worth of events in the swept geometry. But it does not turn either critical point into an ordinary point of space; which sector carries the collapse differs between the two. At the horizon the swept $2$-sphere is ordinary---areal radius $2M$, area $16\pi M^2$---and events at one critical point but different angular position are genuinely spacelike-separated across it, exactly as in the companion paper~\cite{JanzenBHcausality}; what the sweep leaves untouched is the collapse along the generator, where events at one $(\theta,\phi)$ remain at zero radial, temporal, and spacetime separation, because zero separation carried around the orthogonal angular symmetry is still zero along the generator. At $r=0$ it is the swept sphere itself that degenerates: its areal radius is zero, the angular directions crushed together rather than spread into an ordinary sphere, so the collapse to zero separation lives in the angular sector, while the radial--temporal coefficient $g_{tt}$ diverges instead. In both the sweep adds no separation where the metric assigns none---along the generator at the horizon, across the angular sphere at $r=0$---and leaves the metric singularity intact. Consequently neither critical point becomes an ordinary point of space under the sweep. The horizon does not become a sphere of normal radius enclosing a normal interior, and $r=0$ does not become a normal centre at which space tears. The horizon remains the finite-curvature metric singularity---a single metric place of infinitely many distinct, causally ordered, metrically coincident events, which worldlines cross; $r=0$ remains the infinite-curvature one---the endpoint at which the infalling worldlines terminate and the curvature diverges. The sweep preserves what each is; it makes neither an ordinary point. \emph{One property of the second is worth separating from its curvature, because the classification sorts by curvature at the locus and cannot see it.} Read at fixed $r$ the divergence carries the mass: $K=48M^{2}/r^{6}+24/\alpha^{4}$. Read instead along the marginally-bound infalling geodesic, as a function of the faller's own proper time, it does not. On $r(\tau)=(2M\alpha^{2})^{1/3}\sinh^{2/3}(3\tau/2\alpha)$ the cube of the amplitude cancels the $M^{2}$ exactly, leaving $K=12\bigl[2+\sinh^{-4}(3\tau/2\alpha)\bigr]/\alpha^{4}$, with no $M$ anywhere and $K\to(64/27)\tau^{-4}$ at the approach---the matter-dominated Friedmann value, and the same history for every progenitor. The radial tidal component behaves likewise, $\to-4/9\tau^{2}$, and is likewise $M$-free\rcpt{P02_the_approach_is_mass_free}. \emph{So what distinguishes this locus is not the size of its curvature but the universality of the approach to it}: every progenitor, whatever its mass, spends its last proper interval in the same curvature history, so nothing of the parent survives in the approach to distinguish one such ending from another. The classification's axis is curvature at the locus; this is a second axis, and the companion papers' scale-freeness is a statement on it. The geometric origin of the chart's asymmetric pivot---why the sweep happens about one critical point rather than respecting the symmetry of the underlying construction---is developed in the companion paper on the SdS slicing curve \cite{JanzenSlicing}, where it is exhibited explicitly: viewing the hole from outside, in the timelike orientation, the Schwarzschild vantage cannot sweep the symmetric manifold about its own axis of symmetry and is forced to pivot on the off-axis manifold point $r=0$, which the sweep thereby makes the centre of radial infall---the endpoint of the infalling family. Locating the hole is the one symmetry break; the pivot onto $r=0$, and the divergence that is its shadow, are the cascade it forces.
+
+\subsection{Why the chart draws a place as a line}
+
+The reason these metric singularities are persistently misread is that the charts in which the geometry is usually drawn render them in a particular, familiar, and misleading way. A chart such as the Eddington--Finkelstein diagram parametrises approaches to a metric singularity by a coordinate that remains well defined in a neighbourhood but degenerates at the singularity itself, and so draws the single metric place spread out as an extended line---the vertical line at $r=2M$ in the standard diagram.
+
+This is the same projective mechanism by which a Mercator map draws the North Pole. The pole is a single point of the sphere; the map parametrises approaches to it by longitude, which is well defined everywhere except at the pole, and so the single point is drawn as the entire top edge of the map. A reader fluent in map projections knows to read that edge back as a point---change to a chart centred on the pole and the line collapses to the point it always was. The pole is a \emph{coordinate} singularity: the spreading is an artefact of the projection, and the underlying object is an ordinary point.
+
+The line at $r=2M$ is drawn by the same projective mechanism, but the object being spread out is not an ordinary point. It is a metric singularity: a place where the geometry itself has collapsed the separation between infinitely many distinct events. Reading the line back does not yield an ordinary point that a better chart would reveal; no chart removes it, because the collapse is in the metric, not in the projection. The visual appearance is identical to the Mercator pole---a place drawn as a line---but the reason for the appearance is the opposite: at the pole the chart manufactures an extension that is not there, while at $r=2M$ the chart spreads out a metric collapse that is. The same holds at $r=0$, with the collapse in a different sector: it too is a metric singularity no chart removes, but where the line at $r=2M$ is the collapsed generator drawn out along time, the extended locus at $r=0$ is the spacelike direction along which the interior separation \emph{diverges} (the obstruction Sbierski~\cite{sbierski2018} makes precise), and the metric collapse is the angular $2$-sphere orthogonal to it, of zero radius at every point of the locus.
+
+The standard classification commits a single error twice over. It reads the line at $r=2M$ as a Mercator pole---a coordinate singularity, ``removable,'' an artefact the right chart dispels---and it reads the locus at $r=0$ as evidence that the manifold tears, a ``true curvature singularity.'' But the two are the same kind of object: two metric singularities, drawn spread out by charts whose coordinates degenerate at them, distinguished only by the $r$-value the chart assigns and by the chain-rule consequence (Section~\ref{sec:kretschmann}) that this labelling has for the Kretschmann scalar. The asymmetry of the standard classification is the asymmetry of the labelling, not of the geometry.
+
+\subsection{Construction, not error}
+
+It would misread the foregoing to conclude that the swept Schwarzschild geometry is simply a mistake. The construction---taking the radial curve and sweeping it to recover a spatial geometry---is the legitimate and indeed the natural way to chart the geometry from a given vantage, and the result agrees with the standard geometry on every observable in the exterior region $r \geq 2M$. What the analysis identifies is not an illegitimate operation but a misreading of its product: the treatment of features that the construction manufactures---the asymmetric labelling, and with it the curvature singularity at $r=0$---as features of the geometry rather than of the chart. The construction is faithful as a description from its vantage; the error is ontological, the promotion of a charting artefact to a fact about what the geometry contains.
+
+We note, and do not resolve here, that this is also where the construction becomes most interesting rather than least. That two analytically identical metric singularities are charted into a sharply asymmetric pair---one passed through smoothly, one ringed with a divergent curvature invariant and a chain of associated physical puzzles---is not a defect to be discarded but a structural fact to be understood: the geometry of the chart, and of the symmetry-reduction implicit in sweeping an asymmetric radial profile about one of its endpoints, is doing work that the symmetric underlying structure alone does not display. Whether that work is purely an artefact of the vantage, or whether the vantage-dependence itself encodes something physical about how such geometries are observed, is a question this construction raises and leaves open. It is, we suggest, the more productive question than the one the standard classification forecloses by reading the asymmetry as given.
+
+\section{Ontological framing: chart and manifold}\label{sec:ontology}
+
+The construction in Sections \ref{sec:cycloid}--\ref{sec:kretschmann} can be read in two ways.
+
+\subsection{The standard reading}
+
+On the standard reading, the Schwarzschild manifold is the fundamental object. It is the maximal analytic extension of the Schwarzschild solution to the vacuum Einstein equations, characterised intrinsically by its geometry without reference to any embedding or perspectival construction. The cycloid parametrisation is a useful coordinate chart but does not change the underlying geometry: the curvature singularity at $r = 0$ is a feature of the manifold, the geodesic incompleteness there is real, and the manifold has four regions joined at the bifurcation 2-sphere with two distinct singular endpoints (future and past).
+
+The Kretschmann scalar's divergence at $r = 0$ supports this reading: it is a coordinate-invariant scalar, and its divergence is a coordinate-invariant statement about the curvature of the underlying geometry. The asymmetric classification of the horizon (removable coordinate singularity) and $r = 0$ (true curvature singularity) is then justified by the coordinate-invariance of the latter.
+
+\subsection{The perspectival reading}
+
+This reading makes a specific and old move, and the present paper makes it \emph{bespoke}, reaching it on its own and owing the corpus's later general treatment nothing. To read an appearance as the projection of an underlying object, and to infer the object that casts it rather than take the appearance for the thing, is the inference by which the retrograde planetary loops were read as the parallax of the Earth's own motion; the companion foundation sets that inference out in general, with the constraint that makes it a method and not a licence---that an admissible underlying object must \emph{explain} the appearance, not merely reproduce it~\cite{JanzenShadowExistence}. The present paper reaches its own instance on the analytic structure of $r(z)$ and the companion metric-singularity result~\cite{JanzenBHcausality} alone, and stands complete without that general treatment. That independence is the point rather than a gap: an instance derived without the method that would later license it is a worked case on which that method's own claim to track the world can rest without circularity---the same non-leaning relation by which the metric-singularity and empirical-forcing keystones, each reached without the other, converge as evidence and not construction~\cite{JanzenBHcausality,JanzenModernParallax}.
+
+Nor is the perspectival reading the only place the paper runs that discipline on its own. The falsification is its purest instance---the puzzle that $r=0$ is an inextendible boundary dissolves not by any ontological preference but by the continuation that carries the curve through it, a puzzle undone by identifying what the point \emph{is}, on the analytic structure alone. The Mercator comparison of Section~\ref{sec:metric-singularities} is the same discipline sharpened to a case worth marking: two appearances identical in form---a place drawn as a line---cast by opposite structures, a coordinate artefact the chart manufactures against a metric collapse it merely spreads, told apart only by exhibiting the projection each arises under. And the ontological error the construction takes care \emph{not} to commit---promoting its manufactured asymmetry to a fact about the geometry (Section~\ref{sec:metric-singularities})---is the reification that same discipline forbids, here caught in the chart's product where the companion catches it in a verb tense~\cite{JanzenBHcausality}. Each is reached on the construction alone; that independence is again what lets the general account draw on it.
+
+On an alternative reading, the smooth manifold parametrised by $z$ is the fundamental object, and the Schwarzschild chart---the assignment of areal radii $r$, time coordinates $t$, and the metric tensor expressed in $(r, t)$---is a perspectival construction built on top of it. The cycloid relation $r(z) = M(1+\cos z)$ is the map from the fundamental coordinate $z$ to the perspectival coordinate $r$; this map has two non-degenerate critical points, at which the perspectival chart degenerates and the perspectival metric has component divergences.
+
+On this reading:
+
+\begin{itemize}
+\item The horizon at $z = 0$ is a critical point of the projection $r(z)$. The Schwarzschild metric components $g_{tt}$ and $g_{rr}$ diverge there in $(r,t)$-coordinates because the chart fails. The Kretschmann scalar $K(z) = 48M^2/r(z)^6$ remains finite at $z = 0$ because the chart's labelling of this critical point is $r = 2M$, not $r = 0$, and the perspectival scalar $48M^2/r^6$ is not singular at $r = 2M$.
+
+\item The ``singularity'' at $z = \pi$ is the other critical point of $r(z)$. The Schwarzschild metric components in $(r, t)$-coordinates also fail here. The Kretschmann scalar $K(z)$ diverges because the chart's labelling of this critical point is $r = 0$, and $48M^2/r^6$ diverges at $r = 0$. The divergence is generated by the chain rule applied to a smooth function $r(z)$ vanishing to second order at $z = \pi$, composed with the rational function $48M^2/r^6$ singular at $r = 0$.
+
+\item Both critical points are smooth points of the underlying $z$-manifold. The chart-failures at both are of identical structural type: each is a non-degenerate critical point of the projection $r(z)$ at which the perspectival metric components have characteristic divergences. They differ only in the value of $r$ that the chart assigns: $2M$ at one, $0$ at the other.
+
+\item The Schwarzschild chart's separate ``regions'' are images of one analytic curve under a projection that degenerates at the two critical points. The four pieces at $r \geq 0$ are the Kruskal--Szekeres extension; the two pieces at $r<0$ are the continuation through $z=\pi$ beyond it. The maximal extension is the smooth $z$-parametrised curve, with its complex continuations $z = \pm i\rho$ and $z = \pi \pm i\rho'$, of which the Schwarzschild chart draws the front four and stops at $r=0$.
+
+\item The incompleteness at $r = 0$ is real, not a mere chart artefact: the infalling worldline ends there and the curvature diverges---an infinite-curvature metric singularity. What the smooth $z$-coordinate shows is that the \emph{curve} continues through the critical point into the $r<0$ back-seam arm via the analytic continuation $z \mapsto \pi + i\rho'$, so $r=0$ is not an inextendible boundary. Whether that divergence belongs to the geometry or to the perspectival construction is the ontological question of Section~\ref{sec:ontology}.
+\end{itemize}
+
+\subsection{What is established, and what remains a choice}
+
+It is important to separate what the construction establishes outright from what it leaves as a choice of reading, because the two have been run together in the literature and the conflation is what makes the result look weaker, or more contestable, than it is.
+
+What is established, independently of any ontological reading, is the falsification of the inextendibility \emph{inference}---the step from the curvature divergence at $r=0$ to the conclusion that no continuation through it exists. The standard classification draws that inference: because the Kretschmann scalar diverges at $r=0$, the maximal extension is held to terminate there, an absolute boundary the construction cannot pass. The cycloid refutes the inference directly. The continuation $z \mapsto \pi + i\rho'$ carries the smooth curve through $z=\pi$ into the $r<0$ arm, by the same analytic operation that the standard treatment itself accepts at $z=0$ as removing the apparent singularity of the horizon. A single such continuation is a counterexample to the universal claim that none exists. What it establishes, independently of which manifold one regards as fundamental, is precise and bounded: $r=0$ is a non-degenerate critical point of a smooth curve that the construction passes through, not a boundary at which the curve stops, and the inference from the Kretschmann divergence to an \emph{absolute terminus admitting no continuation} therefore fails. Two readings of this remain, and the construction does not by itself choose between them. On the standard reading, where the metric and its manifold are fundamental, the divergence at $z=\pi$ is genuine, no regular Lorentzian extension crosses it, and the $r<0$ arm is a separate region reached only by continuing the coordinate expressions across a singular junction; the curve is extendible, the spacetime is not. On the perspectival reading, where the smooth $z$-manifold is fundamental and the divergence is a feature of the perspectival chart, the same continuation is a genuine extension of the spacetime. The ontology-independent content is thus the extendibility of the \emph{curve} and the failure of the divergence-to-terminus inference; what the curve passes into is set out in Section~\ref{sec:r0-tee}. Either way, the residual Kretschmann divergence is neither asserted nor required to be unreal.
+
+What remains a choice is the ontological status of that residual divergence---whether $K \to \infty$ at $z=\pi$ is a feature of the geometry or an artefact of the perspectival chart. The two readings of Sections~\ref{sec:ontology} agree on every observable consequence in $r \geq 2M$ and agree that the curve continues through $z=\pi$; they differ only on whether the smooth $z$-curve or the Schwarzschild $r$-chart is taken as fundamental, and hence on whether the chart-relative divergence is read as geometry or as projection. The cycloid construction does not, in isolation, force that choice. What breaks the symmetry between the readings is supplied elsewhere: Section~\ref{sec:metric-singularities} identifies both critical points as metric singularities of one genus---the horizon the finite-curvature species the companion paper establishes on independent grounds for the event horizon~\cite{JanzenBHcausality}, $r=0$ the conjugate infinite-curvature species---and the companion slicing paper~\cite{JanzenSlicing} exhibits the geometric mechanism---the off-centre sweep about a chart-labelled $r=0$ that is not the manifold's symmetry axis---that manufactures the asymmetric labelling and the divergence with it. Given those, the perspectival reading does explanatory work the standard reading cannot: it accounts for \emph{why} the chart labels the two analytically identical critical points asymmetrically, where the standard reading must posit that asymmetry as a brute fact. That a reading deriving what its rival must posit as brute fact is the one to prefer is not informal taste but the inference-to-the-best-explanation the sciences run on, which the companion foundation later develops as a grounded discipline of theory choice~\cite{JanzenShadowExistence}; the present paper draws that inference on its own, as one instance of the discipline rather than by leaning on it, and it is in any case no part of the falsification, which stands on the extendibility alone.
+
+The objection that survives this split has a definite form: the Kretschmann scalar is coordinate-independent, so its divergence as $r \to 0$ resists relabelling. It does---as the curvature of the perspectival metric. The companion slicing paper~\cite{JanzenSlicing} cashes the rest: the mass $M$ that metric carries is itself a feature of the slicing, so the divergence belongs to the perspectival construction and not to the manifold it slices. The objection's force rests on treating the perspectival metric as fundamental---the very point the construction puts at issue.
+
+This separation should not be overstated in either direction. The swept Schwarzschild construction is not an illegitimate operation; it is the correct description of the geometry as charted from a particular vantage, and it agrees with the standard geometry on every observable in $r \geq 2M$. The falsification does not claim that general relativity is wrong, nor that the Kretschmann divergence is a computational mistake; it claims only that the inference standardly drawn---from the curvature divergence at $r=0$ to the conclusion that the construction admits no regular continuation through it---is false, because a regular continuation of the \emph{curve} exists. What that continuation passes into,
+and what the second critical point carries once carried to the substrate, is set out in
+Section~\ref{sec:r0-tee}. The further question the circle frames---whether the smooth $z$-curve should be elevated to the status of \emph{the} fundamental object, or treated as one privileged description among the perspectival charts---is not settled by the circle alone, and the companions answer it by supplying a third object neither horn names. The fundamental object is the de~Sitter substrate: a real manifold whose Lorentzian signature is intrinsic to its positive curvature, of which the $z$-curve is a \emph{curve} and the $r$-chart a \emph{chart}~\cite{JanzenSlicing,JanzenGeometricCore}. The selection is not a preference but a consequence of the discipline of theory choice~\cite{JanzenShadowExistence}: a structure carrying an unforced modulus answers ``what is the world?'' with a family rather than a world, and the maximally symmetric structure is the unique one requiring its configuration from its own form---which the circle, being one curve on that manifold, could not have decided either way.
+
+We note, further, that the perspectival reading has structural appeal beyond this explanatory asymmetry. It places the horizon and the curvature singularity on equal footing as features of one and the same construction, and it identifies the maximal Schwarzschild manifold as a smooth submanifold of a larger smooth object (the analytic completion of the cycloid curve), rather than as a manifold-with-boundary requiring exotic mathematical treatment.
+
+\section{Discussion}\label{sec:discussion}
+
+\subsection{Implications for the singularity theorems}
+
+The Penrose--Hawking singularity theorems \cite{penrose1965,hawking1970} establish geodesic incompleteness for certain spacetimes under stated assumptions about causal structure, energy conditions, and trapped-surface formation. The theorems establish that the infalling worldline ends at $r=0$ in finite affine parameter, and the cycloid construction does not dispute this. What it adds is that the \emph{curve} of which that worldline is the timelike reading continues through the critical point in the $z$-coordinate, into the $r<0$ arm---so the incompleteness the theorems detect is real, while the inference standardly drawn from it, that $r=0$ is an inextendible boundary, does not follow. Whether the incompleteness reflects a pathology of the geometry or a feature of the perspectival construction the theorems do not, in their standard formulation, distinguish.
+
+This does not falsify the singularity theorems but qualifies what they have actually established, and for the Schwarzschild case the qualification is forced rather than optional. What the symmetric analytic continuation undercuts is the \emph{inference} to the inextendibility of $r=0$, not its singularity: a smooth continuation of the construction through $z=\pi$ exists, so the inference ordinarily drawn---that the Schwarzschild $r=0$ is an \emph{inextendible} boundary, an absolute terminus admitting no continuation---has an explicit counterexample and cannot be sustained on the strength of the Kretschmann divergence alone. The singularity itself is not thereby removed: the worldline ends at $r=0$ and the curvature diverges there. Whether that divergence is a feature of the geometry or of the perspectival construction---and so whether general relativity, correctly read, predicts a genuine curvature singularity in the infaller's future at all---is the ontological question of Section~\ref{sec:ontology} and the companion slicing paper~\cite{JanzenSlicing}, not one the cycloid settles. What the cycloid settles is the curvature-divergence inference to inextendibility; what the theorems detect for Schwarzschild is a non-degenerate critical point of the areal radius, of the same analytic type as the horizon, at which the infalling worldline ends.
+
+The inextendibility of the maximal analytic Schwarzschild spacetime has, moreover, been established rigorously and at low regularity by Sbierski~\cite{sbierski2018}, who proved it $C^0$-inextendible---inextendible even as a Lorentzian manifold with a merely continuous metric---by causal-geometric (Lorentzian-diameter) arguments that do not invoke the curvature divergence at all. This both confirms and bounds the present point: what the cycloid refutes is the \emph{curvature-divergence} inference to inextendibility, and a continuation of the \emph{curve} through $z=\pi$ is not a $C^0$ extension of the Schwarzschild Lorentzian manifold across $r=0$, so Sbierski's theorem is left untouched. Sbierski's theorem concerns the maximal analytic Schwarzschild spacetime---the $\Lambda=0$ object---and the wider construction does not contain it: for $\Lambda>0$ the structure function carries a horizon \emph{cubic}, and the single horizon exhibited here is that triple's $\Lambda\to0$ degeneration (\S\ref{sec:ring}). What the geometry does at $r=0$ is not left hanging on that theorem, and the companions answer it completely. The slicing paper~\cite{JanzenSlicing} carries the continuation on the de~Sitter substrate---the one smooth manifold, $C^{\infty}$ across the locus the chart labels $r=0$, where the signed areal radius passes through zero as the origin of polar coordinates does on a plane, a branch point and not a barrier---and closes the curve onto the real conjugate branch. The framework paper~\cite{JanzenCRframework} establishes that closure as a theorem (the cosmogenetic bead): one closed object on one smooth manifold, the substrate $C^{\infty}$ across $r=0$ and \emph{the radial null congruence continuous across it}, with the whole passage exhibited---the geometry through the trough, the two conjugate readings crossing, and the null geodesics carried across the locus into the collapse side. The slicing operator~\cite{JanzenOperator} identifies the chart's $r=0$ for what it is: not a point matter emerges from, but a horizon the slicing is anchored to, of the finite-curvature species the first companion establishes~\cite{JanzenBHcausality}; and the substrate is real at every point the continuation lands on~\cite{JanzenGeometricCore}. The theorem stands on its object; the geometry runs through on the substrate, and where it runs is built.
+
+The same reframing extends to other classical singularity results, and the companions carry it through. The Reissner--Nordstr\"om singularity's discrete-symmetry reading is exact on the charged cut---charge $R$-even, mass $R$-odd~\cite{JanzenSlicing}---and the rotating and charged black holes are reached as slicings of the de~Sitter substrate: Kerr--de~Sitter and Kerr--Newman--de~Sitter as rotating cuts with angular momentum carried by the shift, and the Friedmann--Robertson--Walker initial singularity as the degenerate Nariai member of the same moduli family~\cite{JanzenRange}. None of these is an open case; the operator's boundary is the loss of continuous symmetry---the wall---which the programme names and \emph{passes}~\cite{JanzenRange}.
+
+\subsection{Black-hole physics}
+
+The corrected picture shifts the physical interpretation of black holes in specific ways. The first point below follows from the extendibility result alone; the remainder follow if the perspectival reading is adopted:
+
+\begin{enumerate}
+\item The infalling worldline reaches $r=0$ in finite proper time ($\tau = M\pi$ from horizon-crossing) and ends there: $r=0$ is the endpoint of the infalling family, an infinite-curvature metric singularity at which the constructed manifold is legitimately singular. What it is \emph{not} is the absolute terminus the standard reading takes it for---the construction continues through $z=\pi$ into the $r<0$ arm by the same continuation that carries through the horizon. The swept worldline ends at the singular endpoint; the underlying curve passes through it. The singularity is real; the inextendibility inferred from it does not follow.
+
+\item The standard ``information paradox'' associated with infalling matter reaching a singularity does not arise. It is dissolved at its root in the companion causality paper---no completed horizon forms, so there is no evaporation to carry the loss and no hidden interior sector to trace over, the realised spacetime remaining globally hyperbolic and its evolution unitary~\cite{JanzenBHcausality}. Information that crosses the horizon in finite proper time of the infaller also crosses the critical point $z=\pi$ in finite proper time and continues into the $r<0$ back-seam arm; that continuation is what the finite-time crossing passes into (\S\ref{sec:r0-tee}), on one globally connected manifold.
+
+\item The $r<0$ back-seam arm, on the perspectival reading, is not a ``parallel universe'' in the sense of being causally disconnected from the exterior. It is the analytic continuation of the curve through the second critical point. The causal structure of the maximal extension is determined by the smooth manifold, and the back-seam arm is part of the same manifold as the interiors and the $r>2M$ exteriors.
+
+\item The thermodynamic features of black holes (Hawking radiation, the area law, the holographic correspondence) are typically derived from semiclassical analysis in the exterior, with boundary conditions imposed at the horizon. On this reading the horizon is a chart-failure of the same structural type as the $r=0$ chart-failure, not a privileged surface---and the companion causality paper shows the specific mechanism of horizon-induced Hawking radiation has no realised background, the Bogoliubov transformation between in- and out-vacua having no completed horizon to be computed across~\cite{JanzenBHcausality}. The horizon-induced thermodynamic accounts therefore rest on a surface the realised spacetime does not contain; horizon-independent local processes are untouched, exactly as the causality paper marks there.
+\end{enumerate}
+
+\subsection{Limitations and open questions}
+
+The cycloid \emph{form} (\ref{eq:cycloid_pair}) here is specific to vacuum Schwarzschild; carrying it to Reissner--Nordström, Kerr, and Schwarzschild--de~Sitter would require generalising the cycloid to additional parameters (charge, angular momentum, cosmological constant). The \emph{geometries}, however, are companion results in hand, not open problems. Schwarzschild--de~Sitter is generalised in the companion slicing paper~\cite{JanzenSlicing}, where the present cycloid is the swing-zero ($w=0$) member of the SdS slicing family---the equator taken diametrically---carrying, besides the Schwarzschild reading developed here, a conjugate de~Sitter reading related by an involution, the two being two vantages on one curve at fixed throat radius $\alpha$, the Schwarzschild mass the pivot reading's own rather than a second invariant. The charged and rotating members---Reissner--Nordström--de~Sitter, Kerr--de~Sitter, and Kerr--Newman--de~Sitter---are reached as cuts of the de~Sitter substrate in the range paper~\cite{JanzenRange}, by the slicing operator rather than a generalised cycloid. What is Schwarzschild-specific is the cycloid form, not the reach.
+
+The ontological framing of Section \ref{sec:ontology} is presented as an alternative to the standard reading rather than as a derivation that forces the alternative. This limitation attaches to the ontological claim only, not to the falsification: that the \emph{curve} continues through the critical point---so that $r=0$ is not an absolute terminus and the inference from the Kretschmann divergence to inextendibility fails---is established outright by the construction and does not depend on which manifold is taken as fundamental. (What the curve passes \emph{into}, and what the second critical point carries once it is there, is set out in Section~\ref{sec:r0-tee}.) What the structural symmetry between the two critical points does \emph{not} by itself establish is the stronger ontological claim that the underlying $z$-manifold is more fundamental than the $r$-chart; it establishes that the asymmetric standard classification is not forced by the analytic structure, and that the inextendibility leg of that classification is false. Stronger justification for elevating the $z$-manifold would require either: (a) a derivation of the Schwarzschild metric from a more fundamental geometric structure on which the cycloid curve is a natural curve; or (b) an empirical or theoretical consideration that distinguishes the two readings observationally. Condition (a) is supplied by the companions: the slicing paper derives the Schwarzschild--de~Sitter family as the slicings of a de~Sitter substrate and identifies the present cycloid as the swing-zero member of that family---a natural curve on the more fundamental structure~\cite{JanzenSlicing}---and the operator paper obtains the vacuum sector not by matching but as the \emph{kernel} of the map from cut to stress-energy~\cite{JanzenOperator}. Condition (b) is the standing structural test the sequence keeps open, that no event horizon completes at finite exterior time~\cite{JanzenBHcausality}. The elevation is therefore not left hanging on the circle; the circle simply is not what settles it.
+
+The complex parameter $z$ admits a third axis: $z \in \mathbb{C}$ generically---which raises, but does not leave open, whether generic complex paths carry additional physical structure. They do not, and the reason is the construction's own. A continuation is physical exactly when it lands on a \emph{real} region of the geometry: the geometry is everywhere real and the imaginary variable is an instrument reaching its real regions and no more~\cite{JanzenSlicing,JanzenGeometricCore}. The real-landing continuations are the seam-specific ones the construction uses---$z$ real (the cycloid arc), $z = \pm i\rho$ (the front-seam $r>2M$), and $z = \pi \pm i\rho'$ (the back-seam $r<0$)---identified on the de~Sitter substrate as the Riemannian$\leftrightarrow$Lorentzian and backward-radial continuations of one closed slicing curve~\cite{JanzenSlicing}, and the substrate's real regions they reach---exterior, interior, the conjugate $r<0$ branch, and the de~Sitter piece---are the whole of the geometry. Generic complex paths terminating on none of them are points of the complexified coordinate, carrying no geometry and hence no physical structure. The third axis is therefore resolved, not open: its physical content is exhausted by the real-landing continuations already in hand. \emph{That the list is exhaustive is not an enumeration but a two-line computation, and the count it returns is the circle's own.} Writing $z=a+ib$, the cycloid gives $\operatorname{Im}r = -M\sin a\,\sinh b$: a product, so $\operatorname{Im}r=0$ if and only if $b=0$ or $a\in\pi\mathbb{Z}$, and $2\pi$-periodicity collapses the second alternative to $a=0$ and $a=\pi$. There are therefore exactly three real-landing axes and there is no fourth. On them $\tau$ is real, purely imaginary, and purely imaginary about $\tau=M\pi$ respectively---Lorentzian on the arc and Riemannian on the two seams, which is what makes the imaginary axes physical rather than formal---and the three ranges $0\le r\le 2M$, $r\ge 2M$ and $r\le 0$ partition the real radius line, so the three exhaust the geometry and not merely the reality condition. \emph{And the two seam axes do not stand at arbitrary places.} The parametrisation carries the reflection $z\mapsto-z$, under which $r$ is even and $\tau$ is odd; its fixed points on the circle are $z=0$ and $z=\pi$, where $r=2M$ and $r=0$---the event horizon and the curvature singularity, which are this paper's two poles. \emph{The number of continuations beyond the real one is thus $|\mathrm{Fix}(z\mapsto-z)|=2$}: not a fact about the cosine but the circle counting its own poles\rcpt{P02_the_third_axis_is_two_poles}.
+
+\subsection{The single horizon as the $\Lambda\to0$ limit of a root triple}\label{sec:ring}
+The horizon exhibited here is, in the wider construction, one of three. The companion slicing paper carries the cycloid construction to Schwarzschild--de~Sitter, where the structure function $f=1-2M/r-r^2/\alpha^2$ replaces Schwarzschild's single horizon with a horizon \emph{cubic} of three roots~\cite{JanzenSlicing}. In the Schwarzschild limit $\Lambda\to0$ ($\alpha\to\infty$) that cubic degenerates: two of its roots---the cosmological horizon and its backward-radial partner---run off to infinity, leaving exactly the single finite horizon the cycloid exhibits\rcpt{P02_ring_lambda_limit}, with the conjugate point at $r=0$ persisting throughout as the second critical point. The horizon multiplicity is thus a reading of the cosmological constant: one horizon for $\Lambda=0$, three for $\Lambda>0$, the two additional roots present precisely because the substrate the construction rests on is de~Sitter and not flat. That triple carries structure beyond the horizon count. Read on a fermion sector its three roots are three chiral generations, built on the matter sector and \emph{forced within} CR~\cite{JanzenMatter}, so the generation multiplicity is itself a de~Sitter effect---with $\Lambda=0$ there is one horizon and no third---and the world-correspondence is the one thing held do-not-assert. Those three zero-sum roots are, moreover, the $A_{2}$ root configuration, and the continuous $\mathfrak{su}(3)$ that shares it is no abstract look-alike: it is carried on the substrate's own \emph{conjugate real form}, the compact $\mathrm{SO}(6)/\mathrm{SO}(5)$ that, with the Lorentzian $\mathrm{SO}(5,1)$, makes the two real forms of the single complex group $\mathrm{SO}(6,\mathbb{C})$ ($\mathfrak{su}(3)\subset\mathfrak{so}(6)$ but $\mathfrak{su}(3)\not\subset\mathfrak{so}(5)$)---so the flavour these roots grade and colour's $\mathfrak{su}(3)$ share their root system across the substrate's two real forms, not by accident of abstract type~\cite{JanzenBoundary,JanzenGeometricCore}. \emph{And the ring this paper exhibits is the one on which the whole cosmogenetic excursion takes place.}
+The companion framework's closed contour---the \emph{cosmogenetic bead}---runs on precisely these
+roots~\cite{JanzenCRframework}: the back seam at $r=-2\alpha/\sqrt3$ and the front seam at $r=+\alpha/\sqrt3$ are
+the cubic's roots met at the two ends of one lap, and are \emph{one point of the substrate}, since in the phase
+$\varphi=2\pi r/\sqrt3\alpha$ the roots sit at $+120^\circ$, $0^\circ$ and $-240^\circ$ and the outer two differ
+by a full turn. Between them the contour passes the comoving turnaround, the imaginary-time lift, and---at the
+conjugate critical point this paper carries throughout, $r=0$---the branch point at which a collapse becomes a
+cosmology. \emph{The second critical point of the cycloid is therefore not merely a place the curve passes
+through smoothly; it is where the beginning happens}, and the smoothness established here is what permits the
+passage. The horizon and $r=0$, the two poles of the homogeneous ring, are the two ends and the midpoint of the
+one excursion.
+
+The structure function's \emph{values} carry a second triple, independent of its roots and worth recording
+beside them. On the forced (Nariai) member the marginal congruence satisfies
+$(\dd r/\dd\tilde\tau)^{2}=1-f$, and the excursion's three critical loci sit at three equally spaced values of
+$f$: the seam at $f=0$, where $\dd r/\dd\tilde\tau=\pm1$ is real; the turnaround at $f=1$, where it vanishes;
+and the interior \emph{Euclidean null} at $f=2$, where it is $\pm i$ and the lift's own parameter carries unit
+speed~\cite{JanzenCRframework}. So $1-f\in\{+1,0,-1\}$ across the excursion: \emph{the three critical loci are
+the three causal characters}, and the root triple grades position on the ring and, read on a fermion sector, the generations, while these values grade causal character along it. \emph{Whether the two triples are one structure in the sense the programme's number audit certifies is not claimed here}: no derivation producing $\{0,1,2\}$ from a single condition has been exhibited, and the audit's verdict on that claim is accordingly open.
+
+The cycloid itself establishes only that the extra roots are the ones the cosmological constant supplies; the readings built on them are the companions', drawn here to the built and located weight they carry.
+
+This one circle is the analytic object that binds the two readings the wider construction turns on. Read as the static interior it is the collapsing hole---the Schwarzschild vantage, the matter falling on its own leaf; carried to the de~Sitter substrate and read outward through the timelike vantage it is the expanding cosmology, whose rate the geometry alone sets, the framework's reassignment installing the Nariai member at which two roots of the $\Lambda>0$ triple merge~\cite{JanzenSlicing}. These are two vantages on the one slicing, not two geometries; and the framework's central theorem---that this cycloid, carried to the substrate and closed through the seam and the $r=0$ branch point, is the single \emph{cosmogenetic bead}~\cite{JanzenCRframework}, of which the circle exhibited here is the Schwarzschild-limit seed---carries the one into the other through the seam, so that the collapse's local, matter-gravitating dynamics on the interior side and the observable, radiation-free expansion on the cosmological side are the two rate-levels the layered cosmology later computes on, meeting at the branch point this single circle, extended, is the seed of~\cite{JanzenCosmogenesis}. The turning points are distinct but not \emph{apart}: the throat at size $\alpha$, the branch point at $r=0$ the curve passes \emph{through}, the merged horizon at $\alpha/\sqrt3$ that seeds the Nariai cosmology, and the backward-radial root at $-2\alpha/\sqrt3$ on which the lap \emph{closes}, are turning points of \emph{one continuous lap}---a single closed bead the signed areal radius traverses (the collapse ruling in, around the throat, through $r=0$ onto the conjugate branch, out to close on the backward-radial root), not separately-destined crossings. These signs are one vantage's, and the enumeration must not privilege them: the three horizon roots sum to zero, so they are two of one sign and one of the other, and the backward-radial reflection $R$ ($r\mapsto-r$, $2M\mapsto-2M$) carries the whole set to its conjugate reading---the merged horizon to $-\alpha/\sqrt3$, the closing root to $+2\alpha/\sqrt3$---exchanging the two vantages as a set and singling out no sign~\cite{JanzenSlicing}. They are held apart only by radius---$\alpha$ the size of the substrate throat, $\alpha/\sqrt3$ a merged-horizon areal radius, $2\alpha/\sqrt3$ the backward-radial closing root, quantities never to be conflated---and it is a single homogeneous circle whose poles and throat they are, read from within, the object the whole layered reading is laid out around.
+
+\subsection{What the second critical point opens onto}\label{sec:r0-tee}
+
+The two critical points are the same kind of object, and the sequence this paper opens is, in a precise sense, about the second one. It is worth setting down what $r=0$ becomes once the construction is carried to the substrate, because the standard verdict there---the end of the world, the place the description stops---is close to the opposite of what the companions find.
+
+On the de~Sitter substrate the slicing paper builds, the signed areal radius passes through zero at an ordinary point of one smooth manifold. The substrate is $C^{\infty}$ across the locus the chart labels $r=0$; the vanishing is of a chart function, not of the geometry---the origin of polar coordinates, on a plane that does not notice---so the curve laps through onto the real conjugate branch and closes~\cite{JanzenSlicing}. The framework paper establishes that closure as a theorem: one closed object on one smooth manifold, the substrate $C^{\infty}$ across $r=0$ and the radial null congruence continuous across it---the \emph{cosmogenetic bead}, of which the circle exhibited here is the Schwarzschild-limit seed~\cite{JanzenCRframework}.
+
+What that point then carries is the sequence's subject matter, and the list is not short.
+
+\begin{itemize}
+\item \emph{Species.} The sign of $r$ is the matter/antimatter register. The conjugate ($r<0$) branch is the areal reflection of the expansion leg, and under the substrate's one orientation parity $R=\gamma^{5}$---the $A_2$ diagram automorphism, $2M\mapsto-2M$---it is the antifundamental $\bar{\mathbf 3}$ of the matter branch~\cite{JanzenGroupoid,JanzenAlgebroid}. The second critical point is where that register turns.
+\item \emph{The progenitor.} Joined to the cosmogenesis theorem, that yields the sequence's most exposed result: the collapse whose completion is our expansion lies on the conjugate branch, so the black hole from which our universe issued was, in the signed-radius geometry, an antimatter black hole---our matter and the progenitor's the two ends of one $R$-conjugation across this very branch point~\cite{JanzenCRframework}.
+\item \emph{Charge conjugation.} Composed with the reality involution on complexified cosmic time, that same reflection \emph{is} the bead's $r=0$ crossing, and it reproduces charge conjugation's entire kinematic (Feynman--St\"uckelberg) content; only the electric-charge sign closes from the matter field. The discrete $CPT$ structure and the cosmogenesis meet, at that face, in one object~\cite{JanzenBoundary}.
+\item \emph{The generations.} $r=0$ is not the throat's centre but a point \emph{on} the throat circle, fixed relative to the hinge its slicing plane swings about; the substrate carries three such hinges, hence three such walls, and each binds exactly one chiral zero-mode. The generation count is the count of those walls~\cite{JanzenMatter}.
+\item \emph{The big bang.} The $r=0$ the comoving chart reports at the beginning is this same artefact dressed with mass---not a point matter emerges from, but a horizon the slicing is anchored to~\cite{JanzenOperator}.
+\end{itemize}
+
+None of that is established here, and this paper needs none of it: the falsification of the inextendibility inference rests on the analytic structure of $r(z)$ alone. What is established here is the step the rest stands on---that the curve passes through the second critical point by the same continuation that carries it through the first, so that the point is one the description passes through rather than one at which it stops. How narrow that step is, and how much stands on it, is worth stating exactly, because the first and fourth items above are one fact read twice. The continuation through $z=\pi$ is what gives the areal radius a \emph{sign} at all; the sign of $r$ is the species register; and the turning of that sign at the second critical point is, in the matter sector, a \emph{domain wall}---the radial Dirac superpotential being odd in the signed radius, it changes sign where $r$ does, and the wall binds exactly one chiral zero-mode, its handedness the same orientation parity $R=\gamma^{5}$ under which the conjugate branch is the antifundamental~\cite{JanzenMatter}. The generation count is then the count of those walls and the two chiralities the parity that grades them---the discrete residue's two factors, and the Standard Model's own arrangement of a global family against a gauged chirality~\cite{JanzenMatter,JanzenGeometricCore}. A sector so read exists only if the curve passes through $r=0$: a boundary there leaves the radius unsigned, the superpotential without a sign to change, the wall unformed and the count empty. That is the whole of this paper's load, and it is why the second critical point rather than the first is the one the sequence is about. Where it passes \emph{into} is the slicing paper's geometry~\cite{JanzenSlicing}; the operator that sends that curve through the Einstein tensor to generate the whole static spherically symmetric sector, reading vacuum as the straight cut and matter as the bend, is the next companion's~\cite{JanzenOperator}; the cosmic time the outward reading requires is not posited but \emph{measured}, the redshift isotropy excluding a matter-tracking expansion by some three orders of magnitude~\cite{JanzenModernParallax}; the algebra of the vantages, in which the reflection above is the outer $\mathbb{Z}_2$ of $\mathrm{Aut}(A_2)=D_6$ and the cosmology is the unique fixed point of the root exchange, is the groupoid's~\cite{JanzenGroupoid}; and the warrant for reading any of it---the discipline of inferring the world that casts the appearances, before the appearances are believed---is set out in the epistemic companion~\cite{JanzenShadowExistence} and is prior to the physics, not decoration on it. The framework paper~\cite{JanzenCRframework} then closes the bead and carries the collapse through into the expanding cosmology; the cosmology and cosmogenesis papers take that construction to the data, where the expansion history, the acoustic scale and the light-element abundances are confronted and the cosmology reported empirically favoured~\cite{JanzenCRcosmology,JanzenCosmogenesis}. Gathered, these threads are one reading: the framework takes a single maximally symmetric de~Sitter substrate to be at once general relativity's solution space (on its cuts), the $CPT$ and matter/antimatter register (on the sign of the radius), and the Standard Model's generation structure (on the discrete wall-count)~\cite{JanzenCRframework}. The Schwarzschild cycloid exhibited here is the seed of that unification---the simplest cut, whose passage through the second critical point first gives the areal radius the sign on which both the species register and the generation count rest.
+
+The geometric structure of the second critical point is not exhausted by that list, and the sequence does not claim it is. What the sequence claims is that the point the standard reading treats as the terminus of the description is the one its own subject matter is organised around.
+
+\section{Conclusion}
+
+We have shown that the maximally extended Schwarzschild geometry admits a parametrisation by a single smooth coordinate $z$, with the areal radius $r$ given by the cycloid $r(z) = M(1+\cos z)$. The two endpoints of the interior cycloid arc, conventionally identified as the horizon ($r = 2M$, at $z = 0$) and the curvature singularity ($r = 0$, at $z = \pi$), are non-degenerate critical points of $r(z)$ of identical analytic character. Analytic continuation through the two critical points, with both branches at each, produces a single curve---hyperbola, circle, hyperbola---whose four pieces at $r \geq 0$ are the maximal Kruskal--Szekeres extension, terminating at $r=0$, and whose two pieces at $r<0$ are the back-seam continuation through $z=\pi$, beyond where Kruskal stops. The Kretschmann scalar's divergence at $r = 0$ is generated by the chain rule---the second-order vanishing of $r(z)$ at $z = \pi$ composed with the singular function $48M^2/r^6$---and tracks the chart's labelling of the conjugate critical point as $r = 0$. The underlying smooth structure carries no divergent invariant of its own; the divergence is the perspectival Schwarzschild metric's, real as such. Whether that real divergence is read as a feature of the geometry or of the perspectival chart is the ontological question of Section~\ref{sec:ontology}, not decided here.
+
+The primary consequence is the falsification of an inference. The standard classification takes the curvature divergence at $r=0$ to entail an inextendible boundary, removable in no chart; the cycloid is a counterexample to that entailment, because the same analytic continuation that the standard treatment accepts as removing the horizon at $z=0$ carries the curve smoothly through $z=\pi$. A single counterexample refutes the universal, and it does so independently of any ontological preference: $r=0$ is a critical point the construction passes through, not a boundary at which it stops. Whether the residual Kretschmann divergence is read as a feature of the geometry or of the perspectival chart is a separate question, which the construction does not force and which the companion slicing paper takes up. This paper is the second of a sequence: the companion~\cite{JanzenBHcausality} establishes that the event horizon is itself a metric singularity, and the present paper establishes that the curve passes through $r=0$ by the same continuation, so the curvature-divergence inference to an inextendible boundary fails there as the removability of the horizon fails at $z=0$---the two grounds on which the standard classification rests its horizon/singularity asymmetry both give way. What is not thereby removed is $r=0$'s inextendibility on the independent, curvature-free grounds Sbierski establishes~\cite{sbierski2018}; whether the asymmetry that survives there is a feature of the geometry or of the perspectival chart is the step the companion slicing paper~\cite{JanzenSlicing} takes up, and finds perspectival---the divergence a property of the areal coordinate, not of the substrate, which is $C^{\infty}$ across the locus the chart labels $r=0$; the asymmetric labelling itself manufactured by the off-axis pivot the exterior vantage is forced onto. Read forward on that perspectival reading, the passage the present paper opens is the seam of a cosmogenesis: the framework's central theorem carries the collapse through it into an expanding cosmology, and the primordial light-element abundances that history produces are computed in the companion cosmogenesis paper~\cite{JanzenCosmogenesis}. The present paper supplies only the geometric step---that the inextendibility inference fails at $r=0$---on which that forward reading stands.
+
+\begin{thebibliography}{9}
+
+\bibitem{synge1950}
+J.~L. Synge,
+\emph{The gravitational field of a particle},
+Proc.~Roy.~Irish Acad.~Sect.~A \textbf{53} (1950) 83--114.
+
+\bibitem{kruskal1960}
+M.~D. Kruskal,
+\emph{Maximal extension of Schwarzschild metric},
+Phys.~Rev.~\textbf{119} (1960) 1743--1745.
+
+\bibitem{szekeres1960}
+G.~Szekeres,
+\emph{On the singularities of a Riemannian manifold},
+Publ.~Mat.~Debrecen \textbf{7} (1960) 285--301.
+
+\bibitem{lemaitre1933}
+G.~Lemaître,
+\emph{L'univers en expansion},
+Ann.~Soc.~Sci.~Bruxelles A \textbf{53} (1933) 51--85.
+
+\bibitem{penrose1965}
+R.~Penrose,
+\emph{Gravitational collapse and space-time singularities},
+Phys.~Rev.~Lett.~\textbf{14} (1965) 57--59.
+
+\bibitem{hawking1970}
+S.~W. Hawking and R.~Penrose,
+\emph{The singularities of gravitational collapse and cosmology},
+Proc.~Roy.~Soc.~A \textbf{314} (1970) 529--548.
+
+\bibitem{JanzenBHcausality}
+D.~Janzen,
+\emph{The event horizon is a metric singularity: a missing definition in general relativity}, companion paper (P1).
+
+\bibitem{JanzenSlicing}
+D.~Janzen,
+\emph{The de Sitter substrate and its slicing curve: horizons as turning points, and de Sitter and Schwarzschild as two readings of one slicing}, companion paper (P3).
+
+\bibitem{JanzenGroupoid}
+D.~Janzen,
+\emph{The Schwarzschild--de Sitter description groupoid: generators, relations, and Schwarzschild as the asymmetric realisation}, companion paper (P5).
+
+\bibitem{JanzenAlgebroid}
+D.~Janzen,
+\emph{General relativity's constraint algebra as the symmetric-space structure of a de Sitter substrate: the action Lie algebroid of the symmetry-reducible sector, and the problem of time's ``wrong sign'' as the substrate's coset signature}, companion paper (P12).
+
+\bibitem{JanzenBoundary} D.~Janzen, \emph{The de Sitter substrate and the Standard Model: a four converging routes to a geometric boundary on what one maximally-symmetric Lorentzian substrate's isometry does and does not force, and the framework and gauge on its two real forms}, companion paper (P13).
+
+\bibitem{JanzenMatter} D.~Janzen, \emph{The fermion sector of Cosmological Relativity: three chiral generations from the maximally-symmetric slicing structure}, companion paper (P14).
+
+\bibitem{JanzenModernParallax} D.~Janzen, \emph{The modern parallax: the redshift-isotropy floor, the empirical forcing of cosmic time and uniform expansion, and the measured resolution of the relativity of simultaneity}, companion paper (P4).
+
+\bibitem{JanzenCRcosmology} D.~Janzen, \emph{The cosmology of Cosmological Relativity: the expansion history from causal reassignment on a de~Sitter background, the cosmogenesis branch point, and the scalar perturbation sector}, companion paper (P15).
+
+\bibitem{JanzenOperator}
+D.~Janzen,
+\emph{Covariance of geometries over the de Sitter substrate: the slicing operator, the vacuum kernel, and matter as the bend of the cut}, companion paper (P8).
+
+\bibitem{JanzenGeometricCore}
+D.~Janzen,
+\emph{Reached through the imaginary, real by construction: the maximally symmetric substrate as the geometric--ontological core}, companion paper (p0).
+
+\bibitem{JanzenShadowExistence} D.~Janzen, \emph{The shadow of existence: scientific theory-choice as an empirically grounded discipline, calibrated on the historical record}, companion paper (P6).
+
+\bibitem{JanzenCRframework} D.~Janzen, \emph{Collapsed matter must become a universe: the necessary and sufficient augmentation of general relativity into a description of structural existence, proven for gravitational collapse of any symmetry}, companion paper (P7).
+\bibitem{sbierski2018}
+J.~Sbierski,
+\emph{The $C^0$-inextendibility of the Schwarzschild spacetime and the spacelike diameter in Lorentzian geometry},
+J.~Differential Geom.~\textbf{108} (2018) 319--378.
+
+\bibitem{JanzenRange}
+D.~Janzen,
+\emph{The range of the de Sitter slicing operator: surjectivity onto the symmetry-reducible sector of general relativity, the Kerr--NUT--(A)dS vacuum kernel, and the wall of inhomogeneity}, companion paper (P9).
+
+\bibitem{JanzenCosmogenesis} D.~Janzen, \emph{Cosmogenesis: the Big Bang as a synthesis of Cosmological Relativity's deductively forced consequences, and the primordial light-element abundances it produces}, companion paper (P16).
+
+\bibitem{Milnor1963}
+J.~Milnor,
+\emph{Morse Theory},
+Annals of Mathematics Studies \textbf{51}, Princeton University Press (1963).
+
+\bibitem{Kretschmann1915}
+E.~Kretschmann,
+\emph{\"Uber die prinzipielle Bestimmbarkeit der berechtigten Bezugssysteme beliebiger Relativit\"atstheorien},
+Ann.~Phys.~(Leipzig) \textbf{48} (1915) 907--982.
+
+\bibitem{Tolman1934}
+R.~C. Tolman,
+\emph{Effect of inhomogeneity on cosmological models},
+Proc.~Natl.~Acad.~Sci.~USA \textbf{20} (1934) 169--176.
+
+\bibitem{Oppenheimer1939b}
+J.~R.~Oppenheimer and H.~Snyder,
+\emph{On continued gravitational contraction},
+Phys.~Rev.~\textbf{56} (1939) 455--459.
+\bibitem{Bondi1947}
+H.~Bondi,
+\emph{Spherically symmetrical models in general relativity},
+Mon.~Not.~R.~Astron.~Soc.~\textbf{107} (1947) 410--425.
+\end{thebibliography}
+
+
+\input{appendix_receipts_P02}
+
+\end{document}

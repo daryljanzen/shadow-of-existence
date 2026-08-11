@@ -1,0 +1,188 @@
+\documentclass[12pt,notablelist]{uofsthesis-cs}
+\usepackage{amssymb}
+\usepackage[dvips]{color}
+\usepackage{graphicx}
+\usepackage[german,english]{babel}
+\usepackage{epigraph}
+\renewcommand{\epigraphflush}{center}
+\renewcommand{\textflush}{flushepinormal}
+\setlength{\epigraphwidth}{5.7in}
+\setlength{\epigraphrule}{0pt}
+
+\renewcommand{\baselinestretch}{1.0}
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup} 
+
+\raggedbottom
+% Documentation for the uofsthesis-cs class is given in uofsthesis-cs.dvi
+%
+% It is recommended that you read the CGSR thesis preparation
+% guidelines before proceeding.
+% They can be found at http://www.usask.ca/cgsr/thesis/index.htm
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FRONTMATTER - In this section, specify information to be used to
+% typeset the thesis frontmatter.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% THESIS TITLE
+% Specify the title. Set the capitalization how you want it.
+\title{A Solution to the Cosmological Problem of Relativity Theory}
+
+% AUTHOR'S NAME
+% Your name goes here.
+\author{Daryl Janzen}
+
+% DEGREE SOUGHT.
+% Use \MSc or \PhD here
+\degree{\PhD}
+
+% EXPECTED CONVOCATION DATE
+% Should be month/year, e.g. July 2004
+\convocationdate{March 2012}
+
+
+% NAME OF ACADEMIC UNIT
+%
+% The following two commands allow you to specify the academic unit you belong to.
+% This will appear on the title page as
+% ``<academic unit> of <department>''.
+% So if you are in the division of biomedical engineering you would need to do:
+% \department{Biomedical Engineering}
+% \academicunit{Division}
+%
+% The default is ``Department of Computer Science'' if these commands
+% are not given.
+%
+% If you are in a discipline other than Computer Science, uncomment the following line and
+% specify your discipline/department.  Default is 'Computer Science'.
+\department{Physics and Engineering Physics}
+
+% If you are not in a department, but say, a division, uncomment the following line.
+% \academicunit{Put the type of academic unit you belong to here, e.g. Division, College}
+
+
+% PERMISSION TO USE ADDRESS
+%
+% If you are not in Compuer Science you will want to change the
+% address on the Permission to Use page.  This is done using the
+% \ptuaddress{}.  Example:
+%
+ \ptuaddress{Head of the Department of Physics and Engineering Physics\\
+ Physics Building\\
+ 116 Science Place\\
+ University of Saskatchewan\\
+ Saskatoon, Saskatchewan\\
+ Canada\\
+ S7N 5E2
+ }
+
+% ABSTRACT
+\abstract{After nearly a century of scientific investigation, the standard cosmological theory continues to have many unexplained problems, which invariably amount to one troubling statement: we know of no good reason for the Universe to appear just as it does, which is described extremely well by the flat $\Lambda$CDM cosmological model. Therefore, the problem is not that the physical model is at all incompatible with observation, but that, as our empirical results have been increasingly constrained, it has also become increasingly obvious that the Universe does not meet our prior expectations; e.g., the evidence suggests that the Universe began from a singularity of the theory that is used to describe it, and with \textit{space} expanding thereafter in \textit{cosmic time}, even though relativity theory is thought to imply that no such objective foliation of the spacetime continuum should reasonably exist. Furthermore, the expanding Universe is well-described as being flat, isotropic, and homogeneous, even though its shape and expansion rate are everywhere supposed to be the products of local energy-content---and the necessary prior uniform distribution, of just the right amount of matter for all three of these conditions to be met, could not have been causally determined to begin with. And finally, the empirically constrained density parameters now indicate that all of the matter that we directly observe should make up only four percent of the total, so that the dominant forms of energy in the Universe should be dark energy in the form of a cosmological constant, $\Lambda$, and cold dark matter (CDM).
+
+The most common ways of attacking these problems have been: to apply modifications to the basic physical model, e.g.\ as in the inflation and quintessence theories which strive to resolve the horizon, flatness, and cosmological constant problems; to use particle physics techniques in order to formulate the description of dark matter candidates that might fit with observations; and, in the case of the Big Bang singularity, to appeal to the need for a quantum theory of gravity.
+
+This thesis takes a very different approach to the problem, in hypothesising that, because our physical model really does appear to do a very good job of \textit{describing} the observed cosmic expansion rate, and all the data indicate that our Universe might well expand precisely according to the flat $\Lambda$CDM scale-factor, it may not be the model, but our basic expectations that need to be modified in order to derive a physical theory that stands in reasonable agreement with the empirical results; i.e., that it may actually be that we need to re-examine, and rationally modify our expectations of what should theoretically be, so that we might derive a theory to \textit{explain} the empirical results of cosmology, which would be based solely on reasonably acceptable first principles.% Thus, in attempting to rationally modify a prior bias that has built up through time and experience, the present inquiry really strives to always objectively consider the question of `what is essential, which is based solely on accidents of development', as Einstein once put it, and thereby establish more concrete axioms, that provide for a theory that is consistent with as many of the known facts as possible.
+
+Therefore, a self-consistent theory is constructed here, upon re-consideration of the cosmological foundations of relativity theory, which eventually does afford an explanation of the cosmological problem, as it provides good reason to actually \textit{expect} observations in the fundamental rest-frame to be described precisely by the flat $\Lambda$CDM scale-factor which has been empirically constrained.
+}
+
+% THESIS ACKNOWLEDGEMENTS -- This can be free-form.
+\acknowledgements{I would like to thank Rainer Dick for advising me to do what interests me, and for allowing me the freedom to do just that. Thanks also to my advisory committee, especially Artur Sowa and Kaori Tanaka, for some very helpful suggestions that greatly improved readability of the final draft. Mostly, though, I want to thank my family, who supported me in every capacity of life while I worked on this thesis.}
+
+% THESIS DEDICATION -- Also free-form.  If you don't want a dedication, comment out the following
+% line.
+\dedication{For Kim, Amalia, and Jonas, 
+
+who make everything possible.}
+
+% LIST OF ABBREVIATIONS - Sample
+% If you don't want a list of abbreviations, comment the following 4 lines.
+\loa{
+\abbrev{BAO}{Baryon acoustic oscillations}
+\abbrev{CBR}{Cosmic background radiation}
+\abbrev{$\Lambda$CDM}{The two-component cosmological standard model, involving $\Lambda$ and cold dark matter}
+\abbrev{CMB}{Cosmic microwave background, the present CBR}
+\abbrev{ESSENCE}{Equation of State: SupErNovae trace Cosmic Expansion}
+\abbrev{FLRW}{Friedman-Lema\^{i}tre-Robertson-Walker}
+\abbrev{$\Lambda$}{The cosmological constant}
+\abbrev{PS$_3$K}{A cosmological theory proposed in three 1967 articles: one, by American physicists, V.~Petrosian, E.~Salpeter, and P.~Szekeres; the other two, separately, by Soviet physicists, J.~Shklovsky and N.~Kardashev.}
+\abbrev{RW}{Robertson-Walker}
+\abbrev{SdS}{Schwarzschild-de Sitter}
+\abbrev{SDSS}{Sloan Digital Sky Survey}
+\abbrev{SN(e) Ia}{Type Ia supernova(e)}
+\abbrev{WMAP}{Wilkinson Microwave Anisotropy Probe}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% END OF FRONTMATTER SECTION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% Typeset the title page
+\maketitle
+
+% Typeset the frontmatter.
+\frontmatter
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FIRST CHAPTER OF THESIS BEGINS HERE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SUBSEQUENT CHAPTERS (or \input's)  GO HERE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input thesischap0.tex
+\input thesischap1.tex
+\input thesischap2.tex
+\input thesischap3.tex
+\input thesischap4.tex
+\input thesischap5.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The Bibliograpy should go here. BEFORE appendices!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Typeset the Bibliography.  The bibliography style used is "plain".
+% Optionally, you can specify the bibliography style to use:
+% \uofsbibliography[stylename]{yourbibfile}
+
+\uofsbibliography[unsrt]{Janzen_bib}
+
+% If you are not using bibtex, comment the line above and uncomment
+% the line below.
+%Follow the line below with a thebibliography environmentand bibitems.
+% Note: use of bibtex is usually the preferred method.
+
+%\uofsbibliographynobibtex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% APPENDICES
+%
+% Any chapters appearing after the \appendix command get numbered with
+% capital letters starting with appendix 'A'.
+% New chapters from here on will be called 'Appendix A', 'Appendix B'
+% as opposed to 'Chapter 1', 'Chapter 2', etc.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Activate thesis appendix mode.
+%\uofsappendix
+
+%\input thesisappA.tex
+
+%\chapter{Sample Appendix}
+
+%Stuff for this appendix goes here.
+
+%\chapter{Another Sample Appendix}
+
+%Stuff for this appendix goes here.
+
+
+\end{document}

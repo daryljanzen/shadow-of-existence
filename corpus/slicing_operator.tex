@@ -1,0 +1,494 @@
+\documentclass[11pt,a4paper]{article}
+
+% [†ONT-OPER] THE SLICING OPERATOR — this paper is the HOME (ONTOLOGY_FOUNDATION_INDEX.md §1l).
+%   THE MOVE: P3 used the slicing curve to CLASSIFY the vacuum family; THIS PAPER USES IT TO GENERATE —
+%   the same curve, sent through the Einstein tensor, returns the entire static spherically symmetric
+%   sector of GR, vacuum as one distinguished locus and the stress-energy of every other member as a
+%   functional of how the curve departs from it.
+%   Established here: THE CONSTRUCTION GAUGE and its scope limit (the lock g_tt g_rr = -1 forces
+%   p_r = -rho for EVERY f — the single curve reaches only that equation-of-state slice, which is WHY the
+%   lapse split exists); thm:kernel — STRAIGHT CUTS ARE VACUUM: T=0 IS the first-order linear ODE
+%   rf' + f - 1 + Lambda r^2 = 0, whose entire solution space IS the SdS family, M the constant of
+%   integration ("not imposed and then solved by the SdS metric; it IS the linear equation");
+%   prop:bend — MATTER IS THE CURVATURE OF THE CUT: rho = m'(r)/4.pi.r^2, the departure of the curve from
+%   the constant-M vacuum profile (RN-de Sitter returns its own EM stress-energy off the q^2/r^2 bend);
+%   prop:lapse — THE DATA SEPARATE: rho depends on the SPATIAL PROFILE ALONE, independent of A, while
+%   8.pi(p_r + rho) = (f/r) d_r ln(A/f). THE LEAF CARRIES THE DENSITY; THE STACKING (LAPSE) CARRIES THE
+%   PRESSURE. (This is what P16's rate-handoff derivation rests on: "leaf-carried, lapse-independent.")
+%   *** THE THREE DATA, NEVER CONFLATED: the VANTAGE fixes the signature (f>0 -> the static exterior of the
+%   hole; f<0 -> an expanding cosmology); the LEAF fixes the density; the STACKING fixes the pressure. ***
+%   THE DICTIONARY: planar cut <=> vacuum; central/geodesic <=> de Sitter (M=0); offset/non-geodesic <=>
+%   SdS, THE OFFSET *BEING* THE MASS; non-planar <=> matter. "The thing the offset cut loses is GEODESY,
+%   NOT PLANARITY" — geodesic-vs-not is the finer split INSIDE the vacuum family. G IS GEOMETRIZED: it
+%   enters only as the offset-length GM/c^2, "not a coupling of independent matter to geometry but the
+%   identification of the mass-label with the cut's offset" (p0's constant ledger cites this).
+%   THE COSMOLOGICAL SECTOR is the same operator under the TIMELIKE VANTAGE: the marginally-bound E=1
+%   geodesic IS the Painleve-Gullstrand frame — "this is why the cosmology is FLAT LambdaCDM and not the
+%   closed cosh universe" — integrating to sinh^{2/3}; as Lambda->0 the SAME geodesic gives r ~ tau^{2/3},
+%   the Oppenheimer-Snyder collapse profile. The single E=1 geodesic is DUST COLLAPSE READ INWARD AND DUST
+%   COSMOLOGY READ OUTWARD; "the horizon is the seam the one congruence crosses, not a wall."
+%   *** READ THE FRIEDMANN EQUATION LEFTWARD (derived here, not asserted): coth^2 = 1 + csch^2 splits H^2
+%   into Lambda (pure de Sitter, the unbent expansion) and a pressureless dust — the BEND. "The cut is the
+%   primary object and RHO IS THE NAME OF ITS BEND, NOT ITS CAUSE. The expansion rate is set by the
+%   geometry (which cut); the density is read off afterward." Amplitude and rate both fixed by Lambda
+%   because the cosmological curve is forced to the Nariai tangency: "the tangency IS the mass." ***
+%   *** THE SYNCHRONOUS SPACE IS THE SECOND NULL RULING. The comoving worldline is strung between two null
+%   directions: the future generator A (which IS the per-worldline cosmological horizon of P7's NBC) and
+%   the past generator B, common to the whole congruence. The flat synchronous slices are the HOROSPHERES
+%   NORMAL TO B. "Synchronizing to B is what makes the slices flat, hence flat LambdaCDM."
+%   THE BIG BANG IS NOT A SOURCE: as tau -> -infinity the horospheres pile onto the null plane through B —
+%   BUT THAT POINT IS THE SMOOTH NULL GENERATOR B; de Sitter has no curvature singularity there. Dressed
+%   with mass it becomes r=0. LEMAITRE'S READING "INVERTS THE GEOMETRY, READING THE SMOOTH COMMON ASYMPTOTE
+%   AS A SOURCE." r=0 IS NOT A POINT MATTER EMERGES FROM; IT IS A HORIZON THE SLICING IS ANCHORED TO. The
+%   beginning is a FINITE-CURVATURE metric singularity (the event horizon's own species), NOT the
+%   infinite-curvature centre; and IT IS CROSSED AT FINITE PROPER TIME — the "-infinity" is the SYNCHRONOUS
+%   COORDINATE, the flat-LambdaCDM age convergent. "Taking the chart's -infinity for the physical age is the
+%   time-face of the same doubled category error whose radius-face is taking r=0 for the source." AND THE
+%   SEAM *IS* AN EVENT HORIZON: read inward, the future horizon a collapse in the antecedent universe
+%   asymptotes onto; read outward, this universe's beginning. ***
+%   prop:trichotomy: THE THREE LEAVES ARE ONE CONGRUENCE AT THREE ENERGIES, -k = E^2 - 1. Bound E<1 =>
+%   closed S^3; marginal E=1 => flat; unbound E>1 => open H^3. M and Lambda common to all three; only the
+%   congruence's energy differs. "The flat LambdaCDM is the MARGINAL MEMBER of the family, NOT A SEPARATE
+%   CONSTRUCTION." SCOPE: the observed cosmology is the FLAT member (the others are admissible but not the
+%   physical universe); and THE OPEN LEAF IS SPATIAL H^3, NOT LORENTZIAN AdS_4 — "the trichotomy is over the
+%   SPATIAL CURVATURE of the leaf, NEVER over the SIGNATURE of the spacetime."
+%   ALTITUDE: the theorems GROUND the covariance-of-geometries reading ("many line elements, one geometry"
+%   becomes "many geometries, one substrate", GR's covariance lifted one rung); "they do not ENTAIL it as a
+%   theorem entails a corollary, and we do not claim more." Everything proven is STATIC AND SPHERICALLY
+%   SYMMETRIC, or its spherical-cosmological reassignment. Two open problems named: THE RANGE (answered in
+%   P9 — the symmetry-reducible sector) and THE EMERGENCE OF THE BEND — "a statement of WHAT the bend is,
+%   not of WHY the cut bends as it does... the deepest open question the construction raises" (P11 exhibits
+%   the confined dynamical case). See also [†ONT-COSMO] §1b, [†ONT-GEOM] §1f, [†ONT-CR] §1e.
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{receipts}  % in-place receipt citations -> Appendix R
+\usepackage{caption}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!black,
+  citecolor=blue!50!black,
+  urlcolor=blue!50!black
+}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\captionsetup{font=small, labelfont=bf}
+
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tud}[2]{T^{#1}{}_{#2}}
+
+\title{Covariance of geometries over the de Sitter substrate:\\
+\large the slicing operator, the vacuum kernel, and matter\\
+as the bend of the cut}
+\author{Daryl Janzen\\
+\small Department of Physics and Engineering Physics\\
+\small University of Saskatchewan}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+A companion paper exhibited the Schwarzschild--de Sitter (SdS) family as the readings of a single intrinsic curve---a slicing of the de Sitter manifold---unifying Schwarzschild and de Sitter as two readings of one slicing. Here that curve is promoted from a classifier of the vacuum family to a \emph{generating operator} for the full static, spherically symmetric sector, stress-energy included. Working in the construction gauge $\dd s^2=-f\,\dd t^2+\dd r^2/f+r^2\,\dd\Omega^2$ that the single slicing curve enforces (the lock $g_{tt}g_{rr}=-1$), we form the Einstein tensor and read the matter content off the curve. Three results follow as derivations rather than identifications. First (the vacuum kernel): the condition $T_{\mu\nu}=0$ is the first-order linear ordinary differential equation $rf'+f-1+\Lambda r^{2}=0$, whose entire solution space is $f=1-2M/r-\Lambda r^{2}/3$---the whole SdS family, $M$ the single constant of integration. The vacuum sector is exactly the kernel of the matter functional, derived, not matched: \emph{straight cuts are vacuum}. Second (matter as bend): writing any curve as a departure from the vacuum profile, $f=1-2m(r)/r-\Lambda r^{2}/3$, gives $8\pi T^{t}{}_{t}=-2m'(r)/r^{2}$, so the energy density $\rho=m'(r)/4\pi r^{2}$ is the radial growth-rate of enclosed mass---the bend of the curve off the constant-$M$ vacuum profile; the Reissner--Nordstr\"om--de~Sitter member returns the electromagnetic stress-energy off its $q^{2}/r^{2}$ bend. \emph{Matter is the curvature of the cut.} Third (the lapse split): with the temporal datum $A$ freed from the spatial profile, $\rho$ depends on the spatial curve alone, while $8\pi(p_{r}+\rho)=(f/r)\,\dd_{r}\ln(A/f)$, so radial pressure is carried by the divergence of the time-stacking from the curve; the single locked curve ($A=f$) reaches only the $p_{r}=-\rho$ sector, with vacuum-$\Lambda$ its kernel. The operator thus separates into three independent data---the leaf (the spatial cut: planar $\Rightarrow$ vacuum, bent $\Rightarrow$ density), the stacking (the lapse: locked $\Rightarrow p_{r}=-\rho$, free $\Rightarrow$ pressure), and the vantage (the radial signature: $r$ spacelike $\Rightarrow$ the hole, $r$ timelike $\Rightarrow$ the cosmos)---and the geometric dictionary closes: a planar section of the de Sitter hyperboloid is vacuum (central and geodesic is de Sitter, $M=0$; offset and non-geodesic is SdS, the offset \emph{being} the mass), a non-planar section is matter. The cosmological face is the same operator under the timelike vantage: the marginally-bound ($E=1$) radial geodesic, which is the Painlev\'e--Gullstrand flat-slicing comoving congruence, integrates to $r(\tau)=(2M\alpha^{2})^{1/3}\sinh^{2/3}(3\tau/2\alpha)$---flat $\Lambda$CDM read leftward, the dust the bend off pure de Sitter and $\Lambda$ fixing both amplitude and rate once the cosmological curve is forced to the Nariai tangency~\cite{Nariai1951} by the slicing framework. The same geodesic read inward is $\tau^{2/3}$ dust collapse. Near the origin the $\Lambda$ term is negligible and the law reduces to
+$r=6^{2/3}M^{1/3}\tau^{2/3}/2$, in which $\alpha$ has cancelled between amplitude and argument: there the
+substrate's own scale does not enter, and $\Lambda$ fixes amplitude and rate only away from it. One consequence
+is worth stating, since the operator's whole reading turns on which parametrisation is being read. Because the
+amplitude carries $r\propto M^{1/3}$, one has $r^{6}\propto M^{2}$ and the \emph{perspectival} Kretschmann scalar $K=48M^{2}/r^{6}=64/27\tau^{4}$---free of the mass, since $6\times\tfrac13=2$ exactly. Two collapses of
+different mass reach the same curvature at the same proper interval from the origin, where the same invariant
+along the interior cycloid, whose amplitude carries $r\propto M$ instead, goes as $M^{-4}$~\cite{JanzenCircle}:
+the mass-dependence of the invariant tracks the slicing being read, not the geometry read through it. The flat synchronous space is the second null ruling of the hyperboloid (the horospheres normal to the common past asymptote), so the lapse-shift, the synchronous slicing, and the second ruling are one object, and the $t=-\infty$/$r=0$ singularity is the artifact of the comoving reading laid over a throat that is the substrate's defining constant $\alpha$. Two clarifications follow. The seam is crossed at \emph{finite proper time}---the ``$t=-\infty$'' is the synchronous coordinate, not the proper cosmic time, whose elapsed value from the seam is the ordinary convergent flat-$\Lambda$CDM age---so taking the chart's $-\infty$ for the physical age is the time-face of the same category error whose radius-face is taking $r=0$ for the source. And the seam is not merely this universe's beginning: being the same species as the event horizon, it \emph{is} one---read inward the future horizon onto which a collapse in the antecedent universe asymptotes, read outward this universe's cosmological beginning, the single $E=1$ geodesic dust collapse read inward and dust cosmology read outward. The flat leaf is the marginal ($E=1$) member of the substrate's three constant-curvature slicings---closed ($E<1$, $S^{3}$), flat ($E=1$), open ($E>1$, $H^{3}$), the full FLRW family $k=+1,0,-1$ at $-k=E^{2}-1$, each carrying pressureless dust through the same bend---the observed cosmology the flat member and the trichotomy over the spatial curvature of the leaf, never the signature of the spacetime. Read inward, the closed member is the cycloid the companion reads as the black-hole \emph{interior}~\cite{JanzenCircle}, so the collapse/cosmology identity holds at the closed energy too---the black-hole interior the inward reading of a closed universe. The structural reading---covariance lifted one level, the de Sitter substrate held invariant under change of geometry as general relativity holds one geometry invariant under change of chart, with the slicing curve the gauge object---is adopted on the strength of these results. The central constructions are established and verified at the stated scope, which is the static, spherically symmetric and spherical-cosmological sector. The range over the rest of general relativity, posed here as the principal open problem, is answered in the companion range paper~\cite{JanzenRange}; and the emergence of the bend (dynamical matter) is since advanced---the confined dynamical case exhibited and the crossing of matter through the cosmogenesis branch point shown well posed (\S\ref{sec:open})---with the general dynamical problem stated as open. \emph{One consequence of the data-separation is worth stating here, since it is cited outside this paper.} Because the energy density is a functional of the leaf alone, a causal reassignment acting on the stacking cannot remake it---the structural transition law of the cosmogenesis account rests on this proposition and on nothing else. And the handover this paper locates, from the sub-marginal bound orbits to the marginally-bound congruence, sits at the radius $r^{3}=M\alpha^{2}$ at which the areal acceleration changes sign, the same radius at which the slicing surface's intrinsic curvature is flat: \emph{one radius, read as a handover, as a flat locus, and as the turn from deceleration to acceleration}. Read through the operator, the boundary between local boundedness and cosmic expansion is one Schwarzschild--de~Sitter geometry at two energies: a structure stays bound only within the Hubble--Eddington radius $r_{\mathrm{HE}}=(M\alpha^{2})^{1/3}$, the handover to the marginally-bound $E=1$ congruence that is the cosmology.
+\end{abstract}
+
+\section{Introduction and ontological setting}\label{sec:ontology}
+
+The slicing paper~\cite{JanzenSlicing} established the Schwarzschild--de Sitter family as the readings of a single intrinsic curve on the de Sitter manifold: a radial curve $r(l)$ with $\dd r/\dd l=\sqrt{|f(r)|}$, $f=1-2M/r-r^{2}/\alpha^{2}$, whose turning points are the roots of the SdS horizon cubic, read as the Schwarzschild cycloid and the de Sitter arc at fixed throat radius $\alpha$. \emph{Two further readings of that radius belong beside this one, and the second is dynamical.} The
+companion slicing paper identifies it as the flat locus of the slicing surface's intrinsic curvature, and the
+epistemic companion gathers the descriptions as several shadows of one fact about the
+existent~\cite{JanzenSlicing, JanzenShadowExistence}. To those may be added that the areal acceleration of the
+marginal congruence is $\dd^{2}r/\dd\tilde\tau^{2}=-f'/2$, which vanishes exactly at $r^{3}=M\alpha^{2}$: the
+same radius is the exact locus at which the areal radius stops decelerating and begins to accelerate, generally
+in the mass. \emph{So the handover this paper describes---from the sub-marginal bound orbits to the
+marginally-bound congruence---coincides with a change of sign in the acceleration and with a change of sign in
+the intrinsic curvature}, three readings of one radius, of which only the last is dynamical. The de~Sitter and Schwarzschild forms are two manifold-observer vantages on one slicing; the throat radius $\alpha=\sqrt{3/\Lambda}$ is the invariant and $M$ the slicing- and projection-dependent factor. That paper used the curve to \emph{classify} the vacuum family. The present paper uses it to \emph{generate}: it shows that the same curve, sent through the Einstein tensor, returns the entire static spherically symmetric sector of general relativity---the vacuum solutions as one distinguished locus, and the stress-energy of every other member as a functional of how the curve departs from that locus.
+
+The reading this paper adopts of its own results is the programme's covariance-of-geometries reading, formalized as the substrate's action Lie algebroid in a companion~\cite{JanzenAlgebroid}, and we state it at the outset so the later sections can be read at the weight they earn. Within Cosmological Relativity the de Sitter manifold is the fundamental \emph{representation} in which the evolving three-dimensional universe $\{\mathcal{S}_t\}$---the individuating primitive~\cite{JanzenCRframework}---is described; it is not a second ontological primitive. The present work lives entirely at the level of that representation: it concerns how slicings of the de Sitter manifold generate the representational geometries (the exact-solution line elements and their stress-energy), and it takes no position here on the worldtube-first individuation beyond inheriting it. At the representational level the structure is a covariance, and it is one level above the covariance of general relativity. General relativity holds a single geometry invariant under change of chart; the construction here holds the de Sitter substrate invariant under change of \emph{geometry}, with the slicing curve as the gauge object. ``Many line elements, one geometry'' becomes ``many geometries, one substrate.'' We will state which parts of this are theorems and which is the reading the theorems ground. That held-invariant substrate is the geometric--ontological core~\cite{JanzenGeometricCore}; the present operator is where its cuts are realized as line elements and their stress-energy, matter the bend of the cut.
+
+The discipline is the programme's, in the sense the foundation makes explicit~\cite{JanzenShadowExistence}: the results below ground the structural reading; they do not entail it as a theorem entails a corollary, and we do not claim more. The vacuum kernel, the bend-density identity, the lapse split, the cosmological geodesic and its collapse limit, and the embedding of the synchronous space in the second ruling are computed and verified. The covariance-of-geometries reading is adopted on their strength. And the scope is bounded: everything proven here is static and spherically symmetric, or its spherical-cosmological reassignment. Whether the operator reaches the rest of general relativity is posed here as the principal open problem (Section~\ref{sec:open}) and is answered in the companion range paper~\cite{JanzenRange}: the range is the symmetry-reducible sector of general relativity---rotation and the anisotropic vacuum classes included---leaving the radiation-filled, dynamical-matter regime beyond the wall of inhomogeneity as the piece that remains open.
+
+\section{The construction gauge and the matter functional}\label{sec:gauge}
+
+The slicing curve carries one function. In the static chart it sets the areal radius against proper radial distance, $\dd r/\dd l=\sqrt{|f|}$, and the line element it induces is
+\begin{equation}\label{eq:gauge}
+\dd s^{2}=-f(r)\,\dd t^{2}+\frac{\dd r^{2}}{f(r)}+r^{2}\,\dd\Omega^{2},
+\qquad g_{tt}\,g_{rr}=-1,
+\end{equation}
+the same $f$ filling the temporal and spatial slots. We call \eqref{eq:gauge} the \emph{construction gauge}; the lock $g_{tt}g_{rr}=-1$ is the single-curve condition, and Section~\ref{sec:lapse} is the analysis of what freeing it does.
+
+\paragraph{The reading has no quarrel with a variational route.} Because the reading here is directional---the
+cut primary, $\rho$ the name of its bend---it is worth saying plainly that the direction is not a stance taken
+against the usual derivation. Varying an action returns a field \emph{equality}, and an equality has no
+direction; which side is the existent and which the name of the other's bend is not a question the variation
+asks. The direction is fixed here by measurement rather than by formalism: the microwave-redshift isotropy floor
+forces uniform expansion to some three orders of magnitude and so rejects a rate tracking the lumpy content~\cite{JanzenModernParallax}. \emph{So the two are orthogonal, not in
+competition}\rcpt{V34_orthogonal_and_no_cost}---the same field equations either way, and the reading settled
+where the corpus settles it, on the sky.
+
+\paragraph{What kind of map the operator is.} The operator is defined on cuts, and the substrate's own
+isometries carry cuts to cuts, so it is worth recording what it does to those---the answer organises three
+results the companion papers state separately. An isometry taking one cut to another takes the geometry read
+off the first to the geometry read off the second, and does so compatibly with composition, so the slicing operator carries
+the arrows as well as the objects\rcpt{K23_functor_and_quotient}. Three properties follow, and each is a
+companion paper's subject. It is \emph{surjective onto its image} by construction, and that image is what the
+range paper computes~\cite{JanzenRange}. It is \emph{not injective on arrows}: three distinct cuts, the three
+roots of one horizon cubic, return the same $2M$ and hence one geometry, so isometries that move the cut may
+leave the geometry fixed---and that failure is exactly the vantage multiplicity the groupoid paper
+classifies~\cite{JanzenGroupoid}. Whether every isometry between two geometries in the image arises from a
+substrate isometry splits cleanly in two, and the algebroid paper's stratification settles the first half. At
+each stratum it names, the isotropy of the cut is not merely of the same dimension as the geometry's isometry
+group but is that group---$\mathrm{SO}(4,1)$ at Type O, $\mathrm{SO}(2,1)\times\mathrm{SO}(3)$ at Nariai, and
+$\mathbb{R}_{t}\times\mathrm{SO}(3)$ at the generic Schwarzschild--de~Sitter
+stratum~\cite{JanzenAlgebroid}\rcpt{K6_fullness}. So at fixed throat radius nothing is left over: every isometry
+of a geometry in the image is induced by a substrate isometry fixing its cut. That equality is stated for the strata tabulated and not in general, and the reason is worth
+giving rather than leaving as a limit of the survey. An isometry of a cut's induced metric extends to an
+isometry of the substrate exactly when it also preserves the way the cut sits inside it---its second
+fundamental form---so the isotropy of a cut is the subgroup of the geometry's isometry group that preserves the
+embedding, and may in general be proper\rcpt{K9_isotropy_obstruction}. \emph{The strata for which the
+equality is exhibited are those whose symmetry is large enough to fix the extrinsic data as well as the
+intrinsic}: at Type~O the cut is totally geodesic and there is nothing to preserve, and at Nariai and the
+generic Schwarzschild--de~Sitter class the product and static-spherical structures leave it invariant. Where
+the symmetry is smaller the two need not agree, which is why the classes the companion paper names without
+tabulating are exactly the ones the equality is not claimed for. The remaining half is the one the
+groupoid paper leaves open, the component relating distinct throat radii, and it cannot be closed the same way:
+the map between representations of different $\alpha$ is the homothety, and a homothety is not an isometry---it
+is the dilation by which the group preserving the causal structure exceeds the isometry
+group~\cite{JanzenGroupoid}. \emph{So the failure across radii is not a gap in the classification but the
+single scale appearing again}: the leaves are not related by isometries because $\alpha$ is exactly what the
+causal structure does not fix.
+
+
+
+Forming the Einstein tensor of \eqref{eq:gauge} and writing the field equations with cosmological constant as $G^{\mu}{}_{\nu}+\Lambda\,\delta^{\mu}{}_{\nu}=8\pi \Tud{\mu}{\nu}$, the mixed stress-energy components are
+\begin{align}
+8\pi\,\Tud{t}{t}=8\pi\,\Tud{r}{r}&=\frac{r f'+f-1}{r^{2}}+\Lambda,\label{eq:Ttt}\\
+8\pi\,\Tud{\theta}{\theta}=8\pi\,\Tud{\phi}{\phi}&=\frac{f''}{2}+\frac{f'}{r}+\Lambda.\label{eq:Ttheta}
+\end{align}
+With the conventions $\Tud{t}{t}=-\rho$, $\Tud{r}{r}=p_{r}$, $\Tud{\theta}{\theta}=p_{t}$, \eqref{eq:Ttt}--\eqref{eq:Ttheta} are the matter functional of the slicing curve: feed in a profile $f$, read off what it carries. The angular component is fixed by the radial pair through the contracted Bianchi identity, so the radial pair carries the content.
+
+The lock $g_{tt}g_{rr}=-1$ already shows in \eqref{eq:Ttt}: $\Tud{t}{t}=\Tud{r}{r}$ identically, i.e. $p_{r}=-\rho$ for every $f$. The single curve therefore reaches only the equation-of-state slice $p_{r}=-\rho$. We take the three results of the operator in turn---the kernel of \eqref{eq:Ttt}, its general non-vanishing value, and the consequence of unlocking the gauge---and then read them geometrically.
+
+\section{The vacuum kernel: straight cuts are vacuum}\label{sec:kernel}
+
+\begin{theorem}[Vacuum kernel]\label{thm:kernel}
+In the construction gauge \eqref{eq:gauge}, $T_{\mu\nu}=0$ holds if and only if $f$ satisfies the first-order linear ordinary differential equation
+\begin{equation}\label{eq:vacode}
+r f'+f-1+\Lambda r^{2}=0,
+\end{equation}
+whose general solution is
+\begin{equation}\label{eq:sds}
+f(r)=1-\frac{2M}{r}-\frac{\Lambda}{3}r^{2}=1-\frac{2M}{r}-\frac{r^{2}}{\alpha^{2}},
+\qquad \alpha^{2}=\frac{3}{\Lambda},
+\end{equation}
+with the single constant of integration $-2M$. The vacuum sector of the construction gauge is exactly the one-parameter SdS family, and nothing else.\rcpt{P08_matter_functional}
+\end{theorem}
+
+\begin{proof}
+By \eqref{eq:Ttt}, $\Tud{t}{t}=0$ is precisely \eqref{eq:vacode}. Equation~\eqref{eq:vacode} is first-order and linear in $f$; its general solution is the one-parameter family \eqref{eq:sds}, as is verified by substitution: with $f$ as in \eqref{eq:sds}, $rf'=2M/r-2\Lambda r^{2}/3$ and $rf'+f-1=-\Lambda r^{2}$, so \eqref{eq:vacode} holds for every $M$. It remains to check that the angular component \eqref{eq:Ttheta} also vanishes on \eqref{eq:sds}; by the Bianchi identity, $\Tud{r}{r}=0$ for all $r$ forces $\Tud{\theta}{\theta}=0$, and direct substitution of \eqref{eq:sds} into \eqref{eq:Ttheta} confirms $f''/2+f'/r+\Lambda=0$. Conversely any $f$ with $T_{\mu\nu}=0$ satisfies \eqref{eq:vacode} and hence lies in \eqref{eq:sds}.
+\end{proof}
+
+Theorem~\ref{thm:kernel} is the precise content of ``straight cuts are vacuum.'' The vacuum condition is not imposed and then solved by the SdS metric; it \emph{is} the linear equation whose solution space is the SdS family, $M$ the integration constant. The Schwarzschild--de Sitter members are the offset cuts, the de Sitter form the $M\to0$ centre, the Nariai case the degenerate-horizon member; all are the kernel of the matter functional \eqref{eq:Ttt}--\eqref{eq:Ttheta}. (Pure Schwarzschild is the $\alpha\to\infty$ flat-space limit of the family.) The slicing paper's vacuum family is identified here as a kernel.
+
+\section{Matter as the bend of the cut}\label{sec:bend}
+
+A general curve departs from \eqref{eq:sds} by promoting the integration constant to a function. Write
+\begin{equation}\label{eq:massfn}
+f(r)=1-\frac{2m(r)}{r}-\frac{\Lambda}{3}r^{2},
+\end{equation}
+with $m(r)$ a \emph{mass function}. A straight cut has $m'\equiv0$ (the mass is a constant, ``already there''); the bend is $m'\neq0$.
+
+\begin{proposition}[Density is the bend]\label{prop:bend}
+For $f$ as in \eqref{eq:massfn}, the matter functional \eqref{eq:Ttt} gives
+\begin{equation}\label{eq:rho}
+8\pi\,\Tud{t}{t}=-\frac{2m'(r)}{r^{2}},
+\qquad\text{i.e.}\qquad
+\rho(r)=\frac{m'(r)}{4\pi r^{2}}.
+\end{equation}
+The energy density\rcpt{P08_matter_functional} is the radial growth-rate of enclosed mass: the departure of the slicing curve from the constant-$M$ vacuum profile.
+\end{proposition}
+
+\begin{proof}
+Substituting \eqref{eq:massfn} into \eqref{eq:Ttt}: $rf'=-2m'+2m/r-2\Lambda r^{2}/3$, so $rf'+f-1=-2m'-\Lambda r^{2}$, and $(rf'+f-1)/r^{2}+\Lambda=-2m'/r^{2}$. With $\Tud{t}{t}=-\rho$, this is \eqref{eq:rho}.
+\end{proof}
+
+The reading is exact: $m'=0$ is vacuum (Theorem~\ref{thm:kernel}); any $m'\neq0$ is energy density, and equal to the rate at which the curve bends away from the $1/r$ vacuum profile. As a check on a non-vacuum member, the Reissner--Nordstr\"om--de~Sitter curve $f=1-2M/r+q^{2}/r^{2}-\Lambda r^{2}/3$ is the bend $2m(r)=2M-q^{2}/r$, $m'=q^{2}/2r^{2}$, returning $\rho=q^{2}/8\pi r^{4}=p_{t}$, the electromagnetic stress-energy read off the $q^{2}/r^{2}$ term. The stress-energy is not an independent posit fed into the geometry; it is the curvature of the cut.
+
+\section{The lapse split: the second function and the equation of state}\label{sec:lapse}
+
+The single curve carries one function and so reaches only $p_{r}=-\rho$ (Section~\ref{sec:gauge}). General matter, with $p_{r}\neq-\rho$, requires the temporal slot to be freed from the spatial one. Write the general static spherically symmetric metric with an independent lapse,
+\begin{equation}\label{eq:twofn}
+\dd s^{2}=-A(r)\,\dd t^{2}+\frac{\dd r^{2}}{f(r)}+r^{2}\,\dd\Omega^{2},
+\end{equation}
+$f$ the spatial profile (the slicing curve) and $A$ the lapse, the time-stacking of the leaves. The construction gauge \eqref{eq:gauge} is the lock $A=f$.
+
+\begin{proposition}[Leaf and stacking]\label{prop:lapse}
+For \eqref{eq:twofn}, the energy density depends on the spatial profile alone,
+\begin{equation}\label{eq:rho-B}
+8\pi\,\Tud{t}{t}=\frac{r f'+f-1}{r^{2}}+\Lambda
+\qquad(\text{independent of }A),
+\end{equation}
+so $\rho=m'(r)/4\pi r^{2}$ as in \eqref{eq:rho}; and the radial equation of state is carried by the divergence of the lapse from the curve\rcpt{P08_lapse_split},
+\begin{equation}\label{eq:prho}
+8\pi\bigl(\Tud{r}{r}-\Tud{t}{t}\bigr)=8\pi\,(p_{r}+\rho)=\frac{f}{r}\,\frac{\dd}{\dd r}\ln\!\frac{A}{f}.
+\end{equation}
+The lock $A=f$ gives $p_{r}+\rho=0$, the construction-gauge identity; any $A$ that diverges from $f$ gives general radial pressure, fixed by the rate of that divergence.
+\end{proposition}
+
+\begin{proof}
+Direct computation of $G^{\mu}{}_{\nu}$ for \eqref{eq:twofn} gives, with $\Lambda$ carried inside $f$,
+\[
+G^{t}{}_{t}=\frac{r f'+f-1}{r^{2}},\qquad
+G^{r}{}_{r}=\frac{r f\,A'/A+f-1}{r^{2}},
+\]
+so the $t$--$t$ component involves the spatial profile $f$ alone---giving \eqref{eq:rho-B}---while the difference
+\[
+G^{r}{}_{r}-G^{t}{}_{t}=\frac{f A'}{rA}-\frac{f'}{r}=\frac{f}{r}\,\frac{\dd}{\dd r}\ln\!\frac{A}{f}
+\]
+is \eqref{eq:prho}, in which the lapse $A$ enters only through $\dd_{r}\ln(A/f)$. Setting $A=f$ annihilates the logarithm, returning $p_{r}=-\rho$.
+\end{proof}
+
+Proposition~\ref{prop:lapse} separates the operator's data. The \emph{leaf}---the spatial slicing curve---carries the three-geometry and, through its bend, the density: planar gives $\rho=0$, bent gives $\rho=m'/4\pi r^{2}$. The \emph{stacking}---the lapse $A$, how successive leaves are spaced in time---carries the radial pressure: locked to the leaf it gives the rigid vacuum equation of state $p_{r}=-\rho$, unlocked it gives general $p_{r}$. The slicing paper's curve is the shape of one leaf; the lapse is the second, independent datum, and Section~\ref{sec:synchronous} identifies it geometrically.
+
+\emph{The separation carries a load elsewhere that is worth naming here, since it is the reason this
+proposition is cited outside its own paper.} The companion cosmogenesis account has the causal reassignment act
+on the stacking---resetting it to the geometry-set rate---and not on the leaf; by
+Proposition~\ref{prop:lapse} the density is a functional of the leaf alone, so it crosses the reassignment as
+inherited content rather than being remade by it~\cite{JanzenCosmogenesis, JanzenCRcosmology}. \emph{That is the
+structural transition law, and this proposition is its whole content}: without the separation of the data there
+would be no sense in which a reassignment of the time-stacking could leave the matter untouched.
+
+\emph{A second and independent support for the same conclusion has since been given, and the two should not be
+confused.} The segment on which the reassignment is reached carries no cosmic time---the real part of the
+complex cosmic time does not advance along it---so a structure carried on the leaf has no interval in which to
+be altered, whatever the reassignment acts on~\cite{JanzenCanonicalTime}. \emph{The two differ in what they
+establish.} This proposition says that nothing acts on the leaf, which is the stronger statement and requires
+the separation to hold; the zero-duration argument says only that nothing could, which is weaker but survives
+even if the reassignment were found to touch the leaf. \emph{The transition law is therefore better supported
+than either alone makes it look}, and a reader checking it should know which is being leaned on where.
+
+\section{The geometric dictionary}\label{sec:dictionary}
+
+The algebra of Sections~\ref{sec:kernel}--\ref{sec:lapse} has a clean image on the de Sitter hyperboloid, which fixes ``straight'' and ``bent'' as statements about cuts of a fixed surface.
+
+A \emph{planar} section of the hyperboloid is a flat cut: its image is the slicing curve of a vacuum member. The central section, the plane through the axis ($X_{0}=0$ in the embedding, the equatorial throat circle continued onto its Lorentzian arc), is a geodesic of the hyperboloid and is de Sitter, $M=0$. An \emph{offset} planar section---a parallel plane not through the centre---is not a geodesic, and is SdS with $M\neq0$; the offset is the mass, through $2M=\alpha\bigl((r_{0}/\alpha)-(r_{0}/\alpha)^{3}\bigr)$~\cite{JanzenSlicing}. \emph{That identification says something about the asymptotic machinery, and it is the sharpest form of the point.} An asymptotic mass charge is built to measure a property the spacetime possesses, read off at its boundary; but if the mass \emph{is} where the cut sits, there is no such property to read---the quantity being sought is a placement of the section, not a content of the geometry. So the standing difficulty that no conserved charge is well defined in an asymptotically-de~Sitter spacetime is not a gap in the definitions~\cite{JanzenCRframework}: \emph{there is nothing at infinity to measure, because the mass was never in the geometry to begin with---it is in the cut}. This offset--mass relation is an \emph{odd} cubic in $r_{0}$---it is $R$-odd, $2M\mapsto-2M$ under $r_{0}\mapsto-r_{0}$---and its three roots, the $A_2$ weights of the horizon cubic, are read on a fermion sector as the three-generation multiplicity---built as three chiral zero-modes, forced within CR, in the matter-sector paper~\cite{JanzenMatter}; the continuous $\mathrm{SU}(3)$ that shares this $A_2$ root system, not an isometry of the Lorentzian substrate ($\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$), is carried on the substrate's conjugate real form---the compact $S^{5}=\mathrm{SO}(6)/\mathrm{SO}(5)$ the global Wick rotation reaches---in the geometric-core paper~\cite{JanzenGeometricCore}. That the mass \emph{is} the cut's offset is the geometric content of Newton's constant in the substrate's constant ledger: $G$ enters only as the offset-length $GM/c^2$, so it is not a coupling of independent matter to geometry but the identification of the mass-label with the cut's offset---the geometrisation of matter's being the bend, and the perspectival counterpart to the invariant null-ruling reading of $c$~\cite{JanzenGeometricCore}. The thing the offset cut loses is geodesy, not planarity: both cuts are flat, both are vacuum, and geodesic-versus-not is the finer split \emph{inside} the vacuum family. The non-geodesy is the geometric face of the off-axis sweep-pivot that the slicing paper identified as the origin of the mass.
+
+A section that \emph{bends off every plane} is matter: by Proposition~\ref{prop:bend} the bend off the planar profile is the density. So the dictionary is
+
+\begin{center}
+\emph{planar cut} $\Leftrightarrow$ vacuum $\bigl(\rho=0\bigr)$;\qquad
+\emph{central/geodesic} $\Leftrightarrow$ de Sitter;\qquad
+\emph{offset/non-geodesic} $\Leftrightarrow$ SdS, the offset the mass;\qquad
+\emph{non-planar cut} $\Leftrightarrow$ matter $\bigl(\rho=m'/4\pi r^{2}\bigr)$.
+\end{center}
+
+\noindent This is why the horizon locus of the slicing paper comes out a conic: it is the shadow of a planar cut of a quadric. And the same holds one step further out: the throat's own conic geometry is not decoration on the construction but its causal structure, because the power of a point with respect to the throat is the square of that point's height in the embedding, so a tangent to the throat is a null line and the classical theory of the power of a point is---on that one circle---a theory of the substrate's light cone~\cite{JanzenGeometricCore}. The conic the horizon locus traces and the cone the cuts are read against are the same quadric seen twice. And the third datum, the vantage, is the choice of which direction the cut reads as time: where $f>0$ the radial direction is spacelike and the cut reads as the static exterior of the hole; where $f<0$ it is timelike and the same cut reads as an expanding cosmology. The vantage fixes the signature; the leaf fixes the density; the stacking fixes the pressure.
+
+\section{The cosmological sector}\label{sec:cosmology}
+
+Under the timelike vantage the operator is the cosmology, and the same dictionary holds. The expanding face of the substrate is the family of marginally-bound radial geodesics.
+
+\begin{proposition}[The $E=1$ cosmology]\label{prop:cosmo}
+The radial timelike geodesics of \eqref{eq:sds} carry a conserved $E=f\,\dot t$ and obey $(\dd r/\dd\tau)^{2}=E^{2}-f$. The marginally-bound value $E=1$---the energy of a particle at rest where the field potential is trivial, the boundary between bound and unbound motion---gives
+\begin{equation}\label{eq:E1}
+\left(\frac{\dd r}{\dd\tau}\right)^{2}=\frac{2M}{r}+\frac{r^{2}}{\alpha^{2}},
+\end{equation}
+solved exactly by
+\begin{equation}\label{eq:scalefactor}
+r(\tau)=(2M\alpha^{2})^{1/3}\,\sinh^{2/3}\!\left(\frac{3\tau}{2\alpha}\right),
+\end{equation}
+the flat $\Lambda$CDM scale-factor.\rcpt{P08_E1_cosmology} As $\Lambda\to0$ the same geodesic gives $r\propto\tau^{2/3}$, the Oppenheimer--Snyder pressureless-collapse profile~\cite{Oppenheimer1939b}.
+\end{proposition}
+
+\emph{One property of \eqref{eq:scalefactor} is worth reading off, because the construction turns on continuing it and its branching has an order.} Write $u=3\tau/2\alpha$. Near $u=0$ the hyperbolic sine is $u$ times a function analytic and non-vanishing there, so the whole branch structure of $r$ sits in the factor $u^{2/3}$: one circuit of the branch point multiplies $r$ by $e^{4\pi i/3}$, a primitive cube root of unity. \emph{The cosmogenesis branch point therefore carries a $\mathbb{Z}_3$ monodromy}---one circuit does not close it, and three do\rcpt{P08_the_branch_point_monodromy_is_Z3}. Of the three determinations exactly two carry real $r$: the real $u$ axis gives $r>0$, the expanding leg, and the line $\operatorname{Im}u=-\pi/2$---which is the offset $\operatorname{Im}\tilde\tau=-\pi\alpha/3$ the companion papers continue along---gives $r=-(2M\alpha^{2})^{1/3}\cosh^{2/3}$, the conjugate branch~\cite{JanzenCircle,JanzenSlicing}. \emph{So the two legs the construction uses are two of three sheets, and the third carries no real geometry to continue onto.} The order is inherited from the mass term: near $r\to0$ the $2M/r$ in \eqref{eq:E1} dominates and gives $r^{3/2}\propto\tau$, so the $3$ here is that exponent's and not the horizon cubic's, whose degree comes from the $r^{2}/\alpha^{2}$ term instead. \emph{These are two threes of the same order and different origin, and the distinction is recorded rather than elided}: this paper's programme has already had to withdraw one conflation of two threes~\cite{JanzenMatter}.
+
+The $E=1$ congruence is the Painlev\'e--Gullstrand frame~\cite{Painleve1921,Gullstrand1922}: the comoving observers whose constant-time slices are flat, with comoving speed $v=\sqrt{1-f}=\sqrt{2M/r+r^{2}/\alpha^{2}}$, which reaches unity ($v\to1$, null) at the horizon $f=0$. This is why the cosmology is \emph{flat} $\Lambda$CDM and not the closed $\cosh$ universe: $E=1$ is the flat slicing of the same SdS geometry; the closed $\cosh$ slicing is the orthogonal, synchronous one. The choice between them is the third datum below (Section~\ref{sec:synchronous}). The single $E=1$ geodesic, threaded through the horizon-regular Painlev\'e--Gullstrand chart, is dust collapse read inward and dust cosmology read outward; the horizon is the seam the one congruence crosses, not a wall between two regimes.
+
+The same two terms locate the boundary between local boundedness and the cosmic flow\rcpt{P08_E1_cosmology}, and tie it to the slicing paper's curvature reading. The $E=1$ congruence is the marginally-bound expansion---the background cosmology---and an overdense shell, carrying more mass than the background, can turn around and remain bound only within the \emph{Hubble--Eddington radius}~\cite{Eddington1933} $r_{\mathrm{HE}}=(M\alpha^{2})^{1/3}$, where its inward pull (the same $2M/r$ of~\eqref{eq:E1}) balances the outward $r^{2}/\alpha^{2}$; beyond $r_{\mathrm{HE}}$ the cosmological term wins and the shell is carried outward with the expansion~\cite{PavlidouTomaras2014}. This $r_{\mathrm{HE}}$ is the maximum of the structure function $f$, its zero of $f'$, and the slicing paper reads it as the flat locus of the existent slice's own Gaussian curvature---$K_{G}=1/\alpha^{2}-M/r^{3}=0$ there, the local bend of the cut exactly cancelling the substrate's cosmological curvature~\cite{JanzenSlicing}. The two readings are not two facts that agree: $K_{G}=-f'/2r$ identically, and the factor never vanishes for $r>0$, so the zero of the operator's derivative and the flat locus of the cut are one locus described twice~\cite{JanzenSlicing}. And the cancellation has a dynamical face: on the $E=1$ worldline $\mathrm{d}^{2}r/\mathrm{d}\tilde\tau^{2}=rK_{G}$, so \emph{the epoch at which the cut's local bend exactly cancels the substrate's cosmological curvature is the epoch at which the expansion stops decelerating and begins to accelerate}---the bend's cancellation read as a cosmological event rather than only a geometric one\rcpt{P03_acceleration_is_slice_curvature}. So the local structure and the global expansion are one Schwarzschild--de~Sitter geometry read at two energies: the marginally-bound $E=1$ slicing is the cosmology, the sub-marginal bound structures turn within their own $r_{\mathrm{HE}}$, and the Hubble--Eddington radius---a per-structure boundary carried by every mass---is where a structure's own bend of the cut gives way to the substrate's $\Lambda$-set rate. Its standard use as a local test of $\Lambda$ from the largest bound structures~\cite{PavlidouTomaras2014} is, in this picture, a measurement of that handover. This boundary is gathered, in the framework paper's first synthesis, with the other standing problems the layered distinction dissolves~\cite{JanzenCRframework}; its several descriptions---the flat locus of the slicing paper, this energy handover, the one scale read at two ranges---are resolved by the epistemic discipline into a single existent fact, one of that discipline's own assessments~\cite{JanzenShadowExistence}.
+
+The matter content reads off \eqref{eq:scalefactor} exactly as in the static sector---as the bend. Writing the closed-form Friedmann readout of \eqref{eq:scalefactor},
+\begin{equation}\label{eq:friedmann}
+H^{2}=\frac{\Lambda}{3}\coth^{2}\!\left(\frac{\sqrt{3\Lambda}}{2}\tau\right)
+=\frac{\Lambda}{3}\Bigl(1+\operatorname{csch}^{2}\Bigr)
+=\frac{8\pi}{3}\rho+\frac{\Lambda}{3},
+\end{equation}
+the identity $\coth^{2}=1+\operatorname{csch}^{2}$ splits the right side into the ``$1$,'' which is $\Lambda$ (pure de Sitter, the unbent expansion), and the $\operatorname{csch}^{2}$, which is a pressureless dust, $\rho\propto a^{-3}$, $p=0$. The dust is the bend of the expansion off pure de Sitter; its amplitude is fixed by $\Lambda$, not dialled. Equation~\eqref{eq:friedmann} is read here \emph{leftward}: the cut $r(\tau)$ is the primary object---a slicing of the substrate along the comoving worldlines---and $\rho$ is the name of its bend, not its cause. The expansion rate is set by the geometry (which cut); the density is read off afterward. This is the framework paper's result~\cite{JanzenCRframework} that the expansion is governed by geometric structure and not by the stress-energy content of space. This leftward reading is the level the cosmology papers run their observable expansion on---the foliation stacking rate, ``L1'' of the three-level scoping that keeps it apart from the leaf-level local dynamics (the self-gravitating collapse, radiation included) and the $E=1$ projection: radiation is excluded from it not by a mechanism but because content is read off the clock the geometry sets, never summed into it~\cite{JanzenCosmogenesis}.
+
+That the amplitude and rate are both fixed by $\Lambda$ rests on the slicing framework, not on a free choice. The slicing paper~\cite{JanzenSlicing} shows that the overcritical curve---the line that misses the throat circle---leaves $M$ unconstrained, whereas the cosmological curve is forced to the Nariai tangency, the curve meeting the throat at its critical point ($\Lambda M^{2}=1/9$, the double root at $r=1/\sqrt{3}$ in the gauge $\alpha=1$). The tangency \emph{is} the mass: it fixes $2M=\frac{2}{3\sqrt3}\alpha$ and the amplitude to $2^{1/3}\alpha/\sqrt3$, by $\Lambda$ alone. The framework paper's selection of Nariai as the unique non-pivoting cosmological member~\cite{JanzenCRframework} is, in the present language, the requirement that the cosmological cut be the tangent one.
+
+\section{The synchronous space is the second ruling}\label{sec:synchronous}
+
+The lapse of Proposition~\ref{prop:lapse} has a geometric identity, and it answers what the third datum---the choice of synchronous slicing---is on the substrate. The de Sitter hyperboloid is doubly ruled by null generators; the comoving congruence is built from one ruling and the synchronous space from the other.
+
+In the five-dimensional Minkowski embedding $-X_{0}^{2}+X_{1}^{2}+\dots+X_{4}^{2}=\alpha^{2}$, the flat-slicing comoving worldline of pure de Sitter is the unit
+timelike geodesic
+\begin{equation}\label{eq:embed}
+X(\tau)=e^{\tau/\alpha}\,A+e^{-\tau/\alpha}\,B,
+\qquad \eta(A,A)=\eta(B,B)=0,
+\end{equation}
+strung between two distinct null directions: it asymptotes to the future null generator $A$ as $\tau\to+\infty$ and to the past one $B$ as $\tau\to-\infty$. The future generators $A$ are the per-worldline cosmological horizons (the Null-Boundary Correspondence map $p\mapsto H^{+}(p)$ of~\cite{JanzenCRframework}); the past asymptote $B$ is common to the whole congruence---every comoving worldline, at every spatial position, runs into the same $B$ as $\tau\to-\infty$.
+
+The flat synchronous slices are the level sets of $\eta(X,B)$: a direct computation gives $\eta(X,B)=e^{\tau/\alpha}$\rcpt{P08_synchronous_horosphere}, constant on each slice, so the constant-time surfaces are the horospheres normal to the second (past) ruling $B$. The synchronous space \emph{is} the second ruling. This identifies the lapse: the closed $\cosh$ slicing is synchronized to the timelike vertical (not a ruling), the flat slicing to the null ruling $B$, and the choice between them---the lapse-shift of Proposition~\ref{prop:lapse}---is which structure the comoving frame synchronizes to. Synchronizing to $B$ is what makes the slices flat, hence flat $\Lambda$CDM rather than the closed $\cosh$ universe. The leaf, the stacking, and the second ruling are one set of data: the curve is the leaf, the lapse is the stacking, and the stacking is the second ruling realized as the synchronous space. This second ruling is the geometric origin of what the cosmology papers read observables through---the $E=1$ projection, the synchronous shadow (``L3'' of the three-level scoping); the standing error the layered framework names is to take that synchronous appearance for the existent, computing on the shadow rather than carrying the physics on the layer and projecting~\cite{JanzenCRframework,JanzenShadowExistence,JanzenCosmogenesis}.
+
+This also fixes the nature of the cosmological singularity. As $\tau\to-\infty$, $\eta(X,B)\to0$: the horospheres pile onto the null plane through $B$ and the whole congruence converges on the single common asymptote---``a single point at $t=-\infty$.'' That point is the smooth null generator $B$; de Sitter has no curvature singularity there. In the SdS reading the same structure becomes the $r=0$ origin of \eqref{eq:scalefactor}, which the comoving reading reports as a Big Bang singularity. It is the same artifact dressed with mass: the fundamental metric is the closed-de~Sitter sphere $X(T)=\alpha\cosh(T/\alpha)$, which is the substrate's defining constant $\alpha$, and the $r=0$ singularity is the ill-definition of a derivative metric there~\cite{JanzenCRframework, Janzen2015}. The reading inherited from the synchronous slicing---that flat space extends from $r=0$ outward with matter ejected from a point singularity at the origin---was Lemaître's~\cite{Lemaitre1949}; it inverts the geometry, reading the smooth common asymptote as a source. The leftward reading of Section~\ref{sec:cosmology} is its correction: $r=0$ is not a point matter emerges from, it is a horizon the slicing is anchored to. The singularity taxonomy of the companion papers makes this exact. The cosmological beginning is a \emph{finite-curvature} metric singularity---the smooth past null boundary $B$, a horizon at which the comoving ruler collapses while the substrate curvature stays finite, the same species the event horizon was shown to be~\cite{JanzenBHcausality, JanzenCircle}---and not the \emph{infinite-curvature} centre it is conventionally pictured as. The Big-Bang reading conflates the two species of the one genus, the cosmological face of precisely the doubled category error the circle paper identifies in the static hole; the slicing anchors to the finite-curvature horizon, never to the infinite-curvature centre.
+
+Two clarifications follow, both established by the foregoing but obscured by the projection coordinate. First, the seam is crossed at \emph{finite proper time}. The ``$t=-\infty$'' above is the synchronous coordinate $\tau$ in which $\eta(X,B)=e^{\tau/\alpha}$, not the proper cosmic time; the proper time elapsed from the seam ($a\to0$, i.e.\ the throat $X=\alpha$) to any later epoch is the ordinary, convergent flat-$\Lambda$CDM age. The cosmological beginning is finite-curvature \emph{and} a finite proper time in the past; only the conformal/synchronous chart sends it to $-\infty$, exactly as the comoving chart sends the finite throat to the spurious $r=0$. Taking the chart's $-\infty$ for the physical age is the time-face of the same doubled category error whose radius-face is taking $r=0$ for the source. Second, the seam is not merely the beginning of this universe: being the same species as the event horizon, it \emph{is} one. Read inward it is the future event horizon onto which a gravitational collapse in the antecedent universe asymptotes---the single $E=1$ geodesic is dust collapse read inward and dust cosmology read outward, the horizon the one congruence crosses; read outward it is this universe's cosmological beginning. The one finite-curvature layer carries both causal readings, joined by the null-boundary correspondence into the single closed \emph{cosmogenetic bead} the framework proves~\cite{JanzenCRframework, JanzenBHcausality}, of which this $E=1$ geodesic is the expansion leg and the operator's straight vacuum cut the curve it bends off: the collapse's event-of-events at the close of the antecedent cosmic time is the big bang at the opening of this one.
+
+\section{The three constant-curvature slicings}\label{sec:trichotomy}
+
+The cosmological sector gave the flat leaf---the $E=1$ congruence of Section~\ref{sec:cosmology}---and the synchronous section gave the closed $\cosh$ leaf as its orthogonal alternative (Section~\ref{sec:synchronous}). Both are maximally symmetric constant-curvature spatial sections of the one substrate, and they are two of three. The third is the open, negative-curvature leaf; with it the cosmological sector closes over the full Friedmann--Lema\^itre--Robertson--Walker family of spatial curvatures.
+
+The leaves are the constant-coordinate sections of the embedding hyperboloid $-X_{0}^{2}+X_{1}^{2}+\dots+X_{4}^{2}=\alpha^{2}$, sorted by the character of the held direction.
+
+\begin{proposition}[The constant-curvature leaves]\label{prop:trichotomy}
+The maximally symmetric spatial sections of the de~Sitter substrate are of three kinds:
+\begin{itemize}
+\item a timelike direction held fixed, $X_{0}=\mathrm{const}$, gives $X_{1}^{2}+\dots+X_{4}^{2}=\alpha^{2}+X_{0}^{2}$, a round $S^{3}$ of curvature $+1/(\alpha^{2}+X_{0}^{2})$---the \emph{closed} leaf;
+\item the null cone $r=\alpha$ (the de~Sitter horizon) gives the horosphere of Section~\ref{sec:synchronous}, curvature $0$---the \emph{flat} leaf;
+\item a spacelike direction held fixed beyond the throat, $X_{1}=b>\alpha$, gives $X_{0}^{2}-(X_{2}^{2}+X_{3}^{2}+X_{4}^{2})=b^{2}-\alpha^{2}$, a two-sheeted hyperboloid whose induced metric is hyperbolic $3$-space $H^{3}$ of radius $\sqrt{b^{2}-\alpha^{2}}$ and curvature $-1/(b^{2}-\alpha^{2})$---the \emph{open} leaf.
+\end{itemize}
+The three carry the spatial curvatures $k=+1,0,-1$.\rcpt{P08_trichotomy}
+\end{proposition}
+
+The open leaf stacks into a cosmology exactly as the other two do. Carrying the $H^{3}$ sections through a timelike parameter $\tau$, the embedding
+\begin{equation}\label{eq:openembed}
+X_{1}=\alpha\cosh(\tau/\alpha),\qquad
+X_{0}=\alpha\sinh(\tau/\alpha)\cosh\rho,\qquad
+(X_{2},X_{3},X_{4})=\alpha\sinh(\tau/\alpha)\,\hat{n}\,\sinh\rho
+\end{equation}
+lies on the hyperboloid and induces
+\begin{equation}\label{eq:opends}
+\dd s^{2}=-\dd\tau^{2}+\alpha^{2}\sinh^{2}(\tau/\alpha)\,\dd\Omega_{H^{3}}^{2},
+\end{equation}
+the open ($k=-1$) slicing of de~Sitter---the $\sinh$ counterpart of the closed leaf's $\cosh$. The constant-$X_{1}$ section of Proposition~\ref{prop:trichotomy} is its leaf at the instant $\cosh(\tau/\alpha)=b/\alpha$, with $H^{3}$ radius $\sqrt{b^{2}-\alpha^{2}}=\alpha\sinh(\tau/\alpha)$.
+
+The three slicings are one congruence at three energies.\rcpt{P08_trichotomy} The radial timelike geodesics of \eqref{eq:sds} obey $(\dd r/\dd\tau)^{2}=E^{2}-f=(E^{2}-1)+2M/r+r^{2}/\alpha^{2}$ (Proposition~\ref{prop:cosmo}); read as the Friedmann equation $\dot a^{2}=\tfrac{8\pi}{3}\rho\,a^{2}+\tfrac{\Lambda}{3}a^{2}-k$ with the dust term $2M/r$ and $\Lambda=3/\alpha^{2}$, the curvature constant is
+\begin{equation}\label{eq:Ek}
+-k=E^{2}-1.
+\end{equation}
+The bound congruence $E<1$ is the closed leaf $(k=+1)$, the marginal $E=1$ the flat leaf $(k=0)$ of Section~\ref{sec:cosmology}, and the unbound $E>1$ the open leaf $(k=-1)$. The mass $M$ and the cosmological constant are common to all three; only the energy of the comoving congruence---equivalently, the spatial curvature it slices---differs. The flat $\Lambda$CDM of Proposition~\ref{prop:cosmo} is the marginal member of the family, not a separate construction. Read inward rather than outward, the bound closed member is a collapse, as the marginal member's inward reading is the $\tau^{2/3}$ dust collapse of Section~\ref{sec:cosmology}: run inward, the closed member is the cycloid $r=M(1+\cos\eta)$---the recollapse curve of a closed dust cosmology, and the curve the companion reads as the Schwarzschild black-hole \emph{interior}~\cite{JanzenCircle}. The operator thus carries the classical Oppenheimer--Snyder seed---that homogeneous dust collapse traces the interior of a closed Friedmann universe~\cite{Oppenheimer1939b}---as the closed member of its own family: the black-hole interior is the inward reading of the closed cosmology, exactly as the $\tau^{2/3}$ collapse is the inward reading of the flat.
+
+\begin{remark}[The family's turning points, and a second way the marginal member is singled out]\label{rem:turningfamily}
+The energy that labels the leaf also fixes where the congruence turns, and following it to the ends of the family recovers a structure the framework paper meets from the other side. A radial geodesic turns where $E^{2}=f$, that is on
+\begin{equation}\label{eq:turningfamily}
+r^{3}+(E^{2}-1)\alpha^{2}r+2M\alpha^{2}=0 ,
+\end{equation}
+one cubic per member, whose linear coefficient is $E^{2}-1=-k$ by \eqref{eq:Ek}. Its two ends are exactly the two turning cubics that paper keeps apart~\cite{JanzenCRframework}: the marginal member $E=1$, $k=0$, gives $r^{3}+2M\alpha^{2}=0$, whose root is the comoving turnaround of the flat leaf; and the zero-energy member $E=0$, $k=1$---whose motion is confined to the regions where $f<0$---gives $r^{3}-\alpha^{2}r+2M\alpha^{2}=0$, which is the horizon condition $f=0$ itself. The two turning conditions are therefore not two unrelated cubics but the $k=1$ and $k=0$ ends of this one family, separated by the curvature term.
+
+Read as three-sheeted covers of the mass line, the members differ further, and in a way that exchanges rather than removes structure. In depressed form $r^{3}+pr+q$ with $p=(E^{2}-1)\alpha^{2}$ and $q=2M\alpha^{2}$, the roots are equilateral exactly when $p=0$, and---since $p$ does not depend on $M$ while $q$ is linear in it---the discriminant $-4p^{3}-27q^{2}$ is a square in $M$ exactly when $p=0$ as well. The two are one condition, met at $E=1$ alone. Every member with $E<1$ therefore has colinear real roots with no symmetry as a figure but full monodromy $S_{3}$, its cover branching at the two masses where roots collide; the marginal member has the equilateral triangle, carrying $S_{3}$ as the figure's own symmetry, and monodromy only $\mathbb{Z}/3$, its cover branching at $M=0$ alone. The Weyl group is present throughout the family; what the marginal member changes is whether it is carried by the cover or by the configuration. That this exchange occurs at the flat leaf $k=0$---the member the observed cosmology selects---is recorded, with no connection claimed.\rcpt{order3_bridge}
+\end{remark}
+
+The dust is carried in each case as the bend, with no new mechanism. For a general spatial leaf the bend-density identity of Section~\ref{sec:bend} is the Hamiltonian constraint $16\pi\rho={}^{3}R+K^{2}-K_{ij}K^{ij}-2\Lambda$; for an FLRW leaf $K_{ij}=-(\dot a/a)h_{ij}$ and ${}^{3}R=6k/a^{2}$, and it reads
+\begin{equation}\label{eq:friedmann-k}
+\left(\frac{\dot a}{a}\right)^{2}=\frac{8\pi}{3}\rho-\frac{k}{a^{2}}+\frac{\Lambda}{3},
+\end{equation}
+the Friedmann equation whose curvature term \emph{is} the leaf's own intrinsic curvature ${}^{3}R=6k/a^{2}$. The open leaf bends to carry pressureless dust exactly as the flat leaf does in \eqref{eq:friedmann}; the open $\Lambda$CDM cosmology is the matter-filled $E>1$ slicing, not merely the empty open chart of de~Sitter.
+
+Two scope notes fix what this is and is not. First, the observed cosmology is the flat member: spatial flatness is the selection $k=0$, $E=1$, and the framework paper's identification of Nariai as the unique non-pivoting cosmological cut~\cite{JanzenCRframework} fixes the mass independently of the curvature; the flat member's expansion history is developed in full in the cosmology paper~\cite{JanzenCRcosmology}. The open and closed leaves are the substrate's other admissible cosmological slicings---shown to carry matter through the same bend, not merely the empty $\sinh$ and $\cosh$ charts of de~Sitter---and not the physical universe. Second, the open leaf is the \emph{spatial} hyperbolic $3$-space $H^{3}$, the Riemannian maximally symmetric negative-curvature section, and not Lorentzian anti--de~Sitter spacetime. $\mathrm{AdS}_{4}$ carries two timelike directions and embeds in $\mathbb{M}^{2,3}$; the one-time substrate $\mathbb{M}^{1,4}$ admits no such section. The trichotomy is over the spatial curvature of the FLRW leaf, never over the signature of the spacetime.
+
+\section{Scope and open problems}\label{sec:open}
+
+The results above are established within the static, spherically symmetric sector and its spherical-cosmological reassignment: the vacuum kernel (Theorem~\ref{thm:kernel}), the bend-density identity (Proposition~\ref{prop:bend}), the lapse split (Proposition~\ref{prop:lapse}), the geometric dictionary (Section~\ref{sec:dictionary}), and the cosmological geodesic with its collapse limit and synchronous-space identification (Sections~\ref{sec:cosmology}--\ref{sec:synchronous}). Within that sector the operator is complete: the cut generates the geometry, the bend generates the density, the lapse generates the pressure, the vantage generates the signature, and the substrate is invariant under all of it. We close by naming what this does not yet settle.
+
+\paragraph{The range.} Everything proven is spherically symmetric. The vacuum sector is exactly the planar cuts; the single curve reaches the $p_{r}=-\rho$ equation of state; the lapse carries general radial pressure and the cosmology. One question the spherical results place but do not themselves answer is the range of the operator over the rest of general relativity. The sharp question is whether every solution---rotating (Kerr), generally anisotropic, the radiation-filled early universe---arises as some slicing of the de Sitter substrate, or whether only a privileged class closes up coherently. The mechanism is proven here; the range is \emph{settled} in the companion range paper, and its answer is a theorem with physical content. If the operator is surjective, Cosmological Relativity is a generating theory for the geometries of general relativity, with the slicing curve the universal gauge object, and the structural reading of Section~\ref{sec:ontology} is earned in full. If it reaches only a subclass, the boundary of what is reachable---those solutions the substrate ``permits''---is itself physical content, a constraint on admissible matter rather than a defect of the construction. The operator is stated precisely enough there that the spherically symmetric sector is a rigorous instance and the Einstein tensor of a general (non-spherical) slicing is computable as a functional of the cut~\cite{JanzenRange}: the range is the symmetry-reducible sector of general relativity---a geometry is a cut of the de~Sitter substrate exactly when its isometry group contains a sweep-subgroup of the substrate's---and within each such class the operator is surjective across all algebraic types, the vacuum members being the substrate's own family in the class and matter the bend. The vacuum kernels run from the one-parameter SdS family in the spherical case to the rotating Kerr--NUT--(A)dS family and the functional Weyl class; the boundary of the range is the loss of continuous symmetry.
+
+\paragraph{The emergence of the bend.} The bend-density identity is exact---$\rho=m'/4\pi r^{2}$, the cut's departure from straight is the stress-energy---but it is a statement of \emph{what} the bend is, not of \emph{why} the cut bends as it does. The slicing operator is kinematic: it generates the stress-energy from the curve, not the curve's own dynamics---the matter content's evolution and structure. That dynamics is the deepest question the construction opens onto, the one distinguishing a complete dynamical theory from a kinematical one awaiting its dynamics; and, unlike the range, the corpus has since substantially \emph{worked} it, not merely characterised it. On the geometry side it is the wall of~\cite{JanzenRange}: the boundary at which free gravitational radiation begins, identified as the rigidity of a single global sweep---a swept deformation has one fixed orientation, and the loss of the last isometry is precisely the point at which the wave's polarization must turn from place to place. On the matter side, \emph{what} the bend is extends beyond the spherical case: for a general spatial leaf the energy density is the leaf's intrinsic-curvature departure from the de~Sitter substrate, $16\pi\rho = {}^{3}R + K^{2} - K_{ij}K^{ij} - 2\Lambda$, the Hamiltonian constraint, of which $\rho=m'/4\pi r^{2}$ is the spherical instance. And \emph{why} the cut bends is, in the confined case, now exhibited exactly~\cite{JanzenDynamics}: on a wave that one residual isometry still pins, the leaf's transverse-traceless mode evolves by a wave equation---the first dynamical bend the construction displays, in vacuum, with the wave's energy carried by the shear of the leaf. Since the framework leaves the dynamics of general relativity unchanged, the general inhomogeneous evolution is ordinary dynamical evolution of the leaf rather than a new generative law; its canonical formulation, in which the cut's advance is generated by a true Hamiltonian, is developed in the companion canonical-time paper~\cite{JanzenCanonicalTime}. A further instance of the same frontier is the bend crossing the \emph{cosmogenesis branch point}---the matter counterpart of the geometric branch-point crossing of \S\ref{sec:synchronous}: that crossing is shown well posed on the finite-curvature branch point $r=0$ (a characteristic crossing with no curvature obstruction) and structurally governed---the foliation-preserving reassignment fixing the $\Lambda$-set rate while the leaf-carried density crosses as inherited content---with the detailed worldline dynamics the open depth~\cite{JanzenCRframework}. That worldline dynamics is taken up for a concrete matter model in the cosmogenesis paper~\cite{JanzenCosmogenesis}: the leaf-carried plasma's own thermal history across the branch point---heated by adiabatic compression, cooled on re-expansion through the nuclear window---produces the primordial light-element abundances, the leaf-carried density crossing as inherited content while the composition is produced from that datum on the re-expansion.
+
+\paragraph{Smaller remainders.} Three further items are noted for completeness. None gates the results above; each remains work. First, the explicit higher-dimensional embedding of the bent (non-vacuum) and Nariai cuts. The framework paper's analysis dissolves the \emph{need} for it---the fundamental metric is the five-dimensional closed-de~Sitter sphere and the SdS cosmology a derivative metric on the same manifold, not a higher-dimensional object~\cite{JanzenCRframework, Janzen2015}---so nothing rests on drawing one. Its value would be pedagogical: an explicit embedding picture would make visible how a matter cut bends off the planar vacuum profile and where the Nariai cut sits, a visualisation of the construction's central image rather than an owed result. Second, where the forced scale $2/\sqrt3$ sits, and what it is \emph{not}. In \emph{magnitude} it is the lone Nariai root---the backward-radial root the closed slicing (the cosmogenetic lap) runs out onto and closes on, which is how the value enters the bead---standing against the merged pair of magnitude $1/\sqrt3$.\rcpt{P08_nariai_signed_roots} The signs belong to a vantage and the enumeration must not privilege them~\cite{JanzenCircle}: on the $M>0$ member the cosmology selects, the merged pair is degenerate at the single value $+\alpha/\sqrt3$ and the lone root is $-2\alpha/\sqrt3$, with the backward-radial reflection carrying the whole set to its conjugate reading. And the magnitude is shared by quantities that are not roots at all: the Nariai \emph{offset} $|r_{0}|=2/\sqrt3$, which is a slicing parameter, and the horizon-locus ellipse's focal distance---the two foci lying at exactly that distance on the backward-radial major axis, at sky-angle $w=\pi/4$, the bisector of the Nariai crest ($w=\pi/6$) and the throat-tangent rulings ($w=\pi/3$)~\cite{JanzenSlicing}. The ellipse foci, the two null generators $A,B$ of Section~\ref{sec:synchronous}, and the lap-close root are thus all carried at the single forced scale $2/\sqrt3=2\alpha/\sqrt3=2/\sqrt\Lambda$---twice the merged-pair radius $\alpha/\sqrt3$, the one gauge $\alpha$ times the pure number the equilateral cubic forces, no second scale. It is an item of the substrate's structural inventory---roots, rulings, foci, sky-angles---kept on record for the matter sector's mapping (receipt \texttt{storyboard\_receipts/foci\_ruling\_2sqrt3.py}). Third, the empirical discriminant: that no radiation contributes to the expansion rate~\cite{JanzenCRframework} is the in-principle distinction from standard $\Lambda$CDM, decided by early-universe data and not by the geometry---the observational content the cosmology paper develops in full~\cite{JanzenCRcosmology}.
+
+\paragraph{}
+The central constructions are established and verified at the stated scope, which is the static, spherically symmetric and spherical-cosmological sector. The slicing operator generates that sector---vacuum as the straight cut, mass as the offset, matter as the bend, pressure as the unlocked stacking, the cosmos as the timelike vantage---over one fixed substrate whose only scale is the throat radius $\alpha=\sqrt{3/\Lambda}$. The covariance of geometries it exhibits is, at the representational level, general relativity's covariance lifted one rung; that rung carries the symmetry-reducible sector of general relativity---its boundary the loss of continuous symmetry---as the companion range paper establishes~\cite{JanzenRange}, the reach the construction earns. That covariance is the gravitational face of the wider unification the framework paper assembles: one maximally symmetric substrate read three ways---on its cuts, general relativity's solution space (this operator); on its discrete residue, the $CPT$ and charge-conjugation structure; on its two real forms, the gauge algebra and the quantum of action---of which this operator supplies the first~\cite{JanzenCRframework}.
+
+\begin{thebibliography}{9}
+
+\bibitem{JanzenModernParallax} D.~Janzen, \emph{The modern parallax: the redshift-isotropy floor, the empirical forcing of cosmic time and uniform expansion, and the measured resolution of the relativity of simultaneity}, companion paper (P4).
+\bibitem{JanzenGroupoid}
+\bibitem{JanzenBHcausality}
+D.~Janzen,
+\emph{The event horizon is a metric singularity: a missing definition in general relativity}, companion paper (P1).
+
+\bibitem{JanzenCircle}
+D.~Janzen,
+\emph{The Schwarzschild and de Sitter circle: the intrinsic geometry of one homogeneous ring---the event horizon and the curvature singularity at $r=0$ its two poles}, companion paper (P2).
+
+\bibitem{JanzenSlicing}
+D.~Janzen,
+\emph{The de Sitter substrate and its slicing curve: horizons as turning points, and de Sitter and Schwarzschild as two readings of one slicing}, companion paper (P3).
+
+\bibitem{JanzenCRframework} D.~Janzen, \emph{Collapsed matter must become a universe: the necessary and sufficient augmentation of general relativity into a description of structural existence, proven for gravitational collapse of any symmetry}, companion paper (P7).
+
+\bibitem{JanzenRange}
+D.~Janzen,
+\emph{The range of the de Sitter slicing operator: surjectivity onto the symmetry-reducible sector of general relativity, the Kerr--NUT--(A)dS vacuum kernel, and the wall of inhomogeneity}, companion paper (P9).
+
+\bibitem{JanzenGeometricCore}
+D.~Janzen,
+\emph{Reached through the imaginary, real by construction: the maximally symmetric substrate as the geometric--ontological core}, companion paper (p0).
+
+\bibitem{JanzenAlgebroid}
+D.~Janzen,
+\emph{General relativity's constraint algebra as the symmetric-space structure of a de Sitter substrate: the action Lie algebroid of the symmetry-reducible sector, and the problem of time's ``wrong sign'' as the substrate's coset signature}, companion paper (P12).
+
+\bibitem{JanzenShadowExistence}
+D.~Janzen,
+\emph{The shadow of existence: scientific theory-choice as an empirically grounded discipline, calibrated on the historical record}, companion paper (P6).
+
+\bibitem{Janzen2015}
+D.~Janzen,
+\emph{A Critical Look at the Standard Cosmological Picture},
+in: \emph{Questioning the Foundations of Physics}, Springer (2015); arXiv:1303.2549.
+
+\bibitem{PavlidouTomaras2014} V.~Pavlidou and T.~N.~Tomaras, \emph{Where the world stands still: turnaround as a strong test of $\Lambda$CDM cosmology}, JCAP \textbf{09} (2014) 020.
+
+\bibitem{Oppenheimer1939b}
+J.~R. Oppenheimer and H.~Snyder,
+\emph{On continued gravitational contraction},
+Phys.~Rev.~\textbf{56} (1939) 455--459.
+
+\bibitem{Painleve1921}
+P.~Painlev\'e,
+\emph{La m\'ecanique classique et la th\'eorie de la relativit\'e},
+C. R. Acad. Sci. (Paris) \textbf{173}, 677 (1921).
+
+\bibitem{Gullstrand1922}
+A.~Gullstrand,
+\emph{Allgemeine L\"osung des statischen Eink\"orperproblems in der Einsteinschen Gravitationstheorie},
+Ark. Mat. Astron. Fys. \textbf{16}, 1 (1922).
+
+\bibitem{Lemaitre1949}
+G.~Lema\^itre,
+\emph{Cosmological Application of Relativity},
+Rev. Mod. Phys. \textbf{21}, 357--366 (1949).
+
+\bibitem{JanzenCanonicalTime} D.~Janzen, \emph{The canonical problem of time as a category error: an empirically forced cosmic time, deparametrization, the dissolution of frozen dynamics, and a graviton quantization the de~Sitter horizon closes without a free parameter---the seam where $\hbar$ enters gravity---in Cosmological Relativity}, companion paper (P10).
+\bibitem{JanzenDynamics} D.~Janzen, \emph{Why the cut bends: the dynamics of the de Sitter cut, the confined gravitational wave, the generative boundary of the slicing operator, and chirality as the turning of the polarization plane}, companion paper (P11).
+\bibitem{JanzenCosmogenesis} D.~Janzen, \emph{Cosmogenesis: the Big Bang as a synthesis of Cosmological Relativity's deductively forced consequences, and the primordial light-element abundances it produces}, companion paper (P16).
+\bibitem{JanzenMatter} D.~Janzen, \emph{The fermion sector of Cosmological Relativity: three chiral generations from the maximally-symmetric slicing structure}, companion paper (P14).
+\bibitem{JanzenCRcosmology} D.~Janzen, \emph{The cosmology of Cosmological Relativity: the expansion history from causal reassignment on a de~Sitter background, the cosmogenesis branch point, and the scalar perturbation sector}, companion paper (P15).
+\bibitem{Eddington1933} A.~S.~Eddington, \emph{The Expanding Universe}, Cambridge University Press (1933).
+\bibitem{Nariai1951} H.~Nariai, \emph{On a new cosmological solution of Einstein's field equations of gravitation}, Sci.\ Rep.\ T\^ohoku Univ.\ Ser.\ I \textbf{35} (1951) 62; reprinted in Gen.\ Rel.\ Grav.\ \textbf{31} (1999) 963.
+\end{thebibliography}
+
+
+\input{appendix_receipts_P08}
+
+\end{document}

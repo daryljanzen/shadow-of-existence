@@ -1,0 +1,28 @@
+
+  RUN-ALL-RECEIPTS -- 276 registered receipt(s), 4 at a time, 120s each, each from ITS OWN DIRECTORY
+
+    [FAIL] receipts/P15_CR_cosmology/BUILD_camb_store.py  (0s)
+             File "/home/claude/cr/m3/receipts/P15_CR_cosmology/BUILD_camb_store.py", line 27, in <module> /     import camb / ModuleNotFoundError: No module named 'camb'
+    [FAIL] receipts/P15_CR_cosmology/P15_camb_reference.py  (0s)
+             File "/home/claude/cr/m3/receipts/P15_CR_cosmology/P15_camb_reference.py", line 13, in <module> /     import numpy as np, camb / ModuleNotFoundError: No module named 'camb'
+    [FAIL] receipts/P15_CR_cosmology/P15_damping_ratio_clean.py  (0s)
+             File "/home/claude/cr/m3/receipts/P15_CR_cosmology/P15_damping_ratio_clean.py", line 20, in <module> /     import camb / ModuleNotFoundError: No module named 'camb'
+    [FAIL] receipts/P15_CR_cosmology/P15_damping_reabsorption.py  (0s)
+             File "/home/claude/cr/m3/receipts/P15_CR_cosmology/P15_damping_reabsorption.py", line 18, in <module> /     import camb / ModuleNotFoundError: No module named 'camb'
+    [FAIL] receipts/P15_CR_cosmology/P15_full_transfer_verdict.py  (1s)
+             File "/home/claude/cr/m3/receipts/P15_CR_cosmology/P15_full_transfer_verdict.py", line 17, in <module> /     import numpy as np, camb / ModuleNotFoundError: No module named 'camb'
+    [FAIL] receipts/P15_CR_cosmology/P15_verify_lowell_boltzmann.py  (0s)
+             File "/home/claude/cr/m3/receipts/P15_CR_cosmology/P15_verify_lowell_boltzmann.py", line 15, in <module> /     import numpy as np, camb / ModuleNotFoundError: No module named 'camb'
+    [FAIL] receipts/P16_cosmogenesis_paper/P16_theory_error_and_likelihood.py  (3s)
+             File "/home/claude/cr/m3/receipts/P16_cosmogenesis_paper/bbn_network.py", line 36, in <module> /     import pynucastro as pyna / ModuleNotFoundError: No module named 'pynucastro'
+    [FAIL] receipts/P16_cosmogenesis_paper/P16_validate_bbn.py  (4s)
+             File "/home/claude/cr/m3/receipts/P16_cosmogenesis_paper/bbn_network.py", line 36, in <module> /     import pynucastro as pyna / ModuleNotFoundError: No module named 'pynucastro'
+    [slow] receipts/P15_CR_cosmology/P15_the_collapse_leg_is_scale_invariant.py  -- exceeded 120s
+    [slow] receipts/P15_CR_cosmology/P15_the_second_arm_actually_run.py  -- exceeded 120s
+    [slow] receipts/P15_CR_cosmology/P15_verify_lowell_exact_measure.py  -- exceeded 120s
+    [slow] receipts/P16_cosmogenesis_paper/P16_the_scalar_monodromy_is_four_pi_over_rho.py  -- exceeded 120s
+
+  264 pass, 8 fail, 4 over timeout, in 543s wall
+  slowest that passed: P15_verify_closedS3_nonsync.py 88s, P15_the_progenitor_vacuum_is_negligible_too.py 79s, P16_what_the_sky_permits.py 79s, P11_unpolarized_gowdy_cut.py 57s, P17_the_cut_is_planar_only_at_M_zero.py 36s
+
+  ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.
