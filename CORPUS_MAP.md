@@ -40,6 +40,63 @@ sources: [cowork, chat]
 
 
 
+### Revision r2421 — 2026-08-11 (main line). **`L-200` — p0'S OWN DECISIVE TEST RUN FOR THE FIRST TIME, and the half that was open has moved.**
+
+**⌗⌗ WHY THIS ROW FIRST.** *`L-200` is **p0's own decisive test** — "show that the framework's count of genuinely
+free data equals the substrate's non-symmetric residue" — with a falsifier the paper names and calls decisive:
+**"a hidden geometric freedom in the cosmology, or a genuinely free constant where the reading says it should
+lock, falsifies 'rigidity and wall are one fact'."*** ⚠ *And it was **unregistered until r2378**, so
+`check_supersession` had never run p0's central test against a single receipt.* ⌗ *It also converges three threads
+of this session: **the one-constant theorem decided `L-212`** (no mass grading), **bounded `6h`** (CR cannot
+supply Yukawa ratios), and* ***is exactly what `L-200` tests at corpus scale — three fronts leaning on a claim
+nobody had counted.***
+
+**⌗ §0 (`U1`) — READ THE HALF THAT EXISTS BEFORE REDOING IT.** *`retired/CONSTANT_LEDGER_receipt.md` (r648–r655,
+21 KB) had already closed the **gravitational–quantum** sector at **ZERO free dimensionless constants**:
+$\Lambda$ the sole dimensionful scale ($\alpha=\sqrt{3/\Lambda}$, "the sole remaining scale"); $c$ the
+null-ruling gauge, "no dimensionless relation between a slope and an inverse area"; $G$ appearing **only** as
+$GM/c^2$ with $M$ perspectival or Nariai-locked; and $\hbar$'s one possible free parameter — the $(1,1)$
+deficiency indices, generically a one-parameter family of self-adjoint extensions — **closed without a free
+parameter** by the horizon's own thermal state.*
+
+**⛭ AND A CANDIDATE FREE DATUM WAS FOUND AND ELIMINATED BY DERIVATION SINCE.** *P3 recorded a **second** input —
+**"the metric function itself was for a time the one input not derived here"**, the $D$-dimensional $f$ taken as
+the Tangherlini–de Sitter form — and states* ***"that gap is now closed"***: *the slicing operator defines the
+vacuum sector as the **kernel of the matter functional**, $T^{t}{}_{t}=0$ is first-order linear, and its
+**entire** solution space is the SdS form with **$M$ the single constant of integration**.*
+⇒ ***That is p0's falsifier being MET rather than asserted: a place a hidden freedom could have lived was checked,
+and it locked.***
+
+**⌗⌗ §1 (`U2`) — THE MATTER SIDE, which is precisely what the retired ledger left open** *("the matter-side
+count: **open** — the fermion sector is unbuilt"). **The sector has since been built.*** *P14 spends **zero**, and*
+***each of its three "no"s has a different reason***:
+*· the generation count is* **"no free count but the three $120^\circ$ hinges of one substrate read three ways …
+not a datum to be fit"** *— **an index, not a spent parameter**;*
+*· the hypercharges came out* **"with nothing fitted"** *— **representation-theoretic**, following from the
+per-wall anomaly conditions together with the **existence** of Yukawa couplings;*
+*· and the coupling is not spent* ***because it cannot be built***: **"a Yang–Mills term in four dimensions
+carries a dimensionless coupling that a single length cannot build"** *— with the position stated as a
+**kind**-claim rather than a to-do,* **"a coupling is not the kind of thing a holonomy supplies."**
+
+⇒ ***AND THAT IS STRONGER THAN A TALLY OF ZERO.*** *A theory can score zero free constants two ways: by
+**deriving** each one, or by **declining to speak** of them. **P14 does the second, explicitly, with the reason
+stated as a law** — a dimensionless magnitude needs two invariants and the substrate has one.* ⇒ **The count
+closes not because the matter sector was frugal but because *the sector's boundary IS the boundary of what one
+constant can express*.**
+
+**⌗ THE COUNT, WHOLE, AT c54.163: ONE dimensionful scale ($\Lambda$) · THREE unit gauges ($c$, $G$, $\hbar$) ·
+ONE free datum ($\rho_r/\rho_m$) · ZERO free dimensionless constants anywhere.**
+
+**⚠ AND `L-200` IS NOT CLOSED, which the receipts state at their head.** *p0 asks that the count **EQUAL** the
+substrate's non-symmetric residue —* ***the RESIDUE side has not been counted: this counts the SPEND, not the
+BUDGET.*** *And $\rho_r/\rho_m$ remains a **one-parameter accommodation** by the corpus's own words in three
+papers, with `L-150` owing its derivation.* ⇒ **The row's next moves are written: ⓵ count the residue and compare;
+⓶ `L-150`'s derivation is the one datum standing between this count and a parameter-free framework.**
+
+*Receipts: `U1_the_count_as_the_corpus_now_states_it` (14 checks) · `U2_the_matter_sector_spends_none` (11).*
+
+**Register: 213 rows. Gates: twenty-one, twenty rc=0.**
+
 ### Revision r2420 — 2026-08-11 (main line). **THE REPO IS LIVE AND PUBLIC, THIS LINE WORKS IT DIRECTLY, AND THE BUNDLE FLOW IS RETIRED.**
 
 **⌗⌗ `daryljanzen/shadow-of-existence` — pushed at `c01f56c`, made public, CI green on both branches**
