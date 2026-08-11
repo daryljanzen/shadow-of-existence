@@ -40,6 +40,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r2420 — 2026-08-11 (main line). **THE REPO IS LIVE AND PUBLIC, THIS LINE WORKS IT DIRECTLY, AND THE BUNDLE FLOW IS RETIRED.**
+
+**⌗⌗ `daryljanzen/shadow-of-existence` — pushed at `c01f56c`, made public, CI green on both branches**
+*(`main` 9m6s with the LaTeX tier, `line/56` 1m1s without —* ***the tiering works as designed***).
+⌗ **Clone verified against the working tree from inside the container: 1,660 files, ZERO differing**, *the only
+extras being LaTeX build artefacts `.gitignore` correctly excludes.* ⇒ ***The repo IS the tree.***
+
+**⌗ READ IS FREE AND PERMANENT; WRITE USES A FINE-GRAINED TOKEN THAT IS NEVER STORED** — *not in memory, not on
+disk, not in the tree.* **Two reasons, and the second is specific to a public repo:** *① a credential in a memory
+file can surface in a context nobody is watching; ② **GitHub's secret scanning auto-revokes a token that lands in
+a public repo**, so a token written to a tracked file destroys itself and takes the push path with it.*
+
+**⇒ THE LOOP THE BUNDLES EXISTED FOR:** *Daryl pastes a token at session start; this line clones, works, commits
+and pushes.* ***The revision IS the commit, and there are no downloads or uploads in either direction.***
+⌗ *And `CORPUS_MAP` is not made redundant by git:* ***git carries WHAT changed; this changelog carries WHY, and
+what was learned*** *— the one a later node cannot reconstruct.*
+
+**⌗ THE FIRST COMMIT IS A BUG FIX, AND IT IS THE ONE THE INSTALL FOUND.** *`BOOTSTRAP_THE_REPO.sh` printed
+`MISSING` for five files that were demonstrably staged, and passed only the sixth.* ***CAUSE, reproduced:
+`grep -q` exits the instant it matches; `echo` still has output to write and takes SIGPIPE; `set -o pipefail`
+then reports the PIPELINE as failed, so the `if` takes the else branch.*** **The split was by SORT ORDER** —
+*dotfiles and `THE_*` sort early in `git ls-files` (instant match → SIGPIPE), while `corpus/check_id_bands.py`
+sorts late enough that grep had consumed nearly all the input first.* ⌗ *It did not reproduce on Linux because a
+64 KB pipe buffer swallows the whole ~40 KB list; **macOS's is 16 KB**.* ⇒ *Fixed with a here-string, which uses a
+temp file and has no pipe to break.*
+⚠ ***A check that reports absence because its own pipeline died is worse than no check: this one would have
+stopped a correct push*** *— and it survived a dry run on Linux, which is why the mechanism is recorded in the
+script itself and not only here.*
+
+**⌗ ALSO IN THIS REVISION: LFS DROPPED (r2419's measurement), `THE_HUB` gains the live-setup section, `L-215`
+struck.**
+
+**Register: 213 rows. Gates: twenty-one, twenty rc=0.**
+
 ### Revision r2419 — 2026-08-11 (main line). **THE BOOTSTRAP, AND TWO CORRECTIONS TO THIS LINE'S OWN REPO ADVICE — both found by dry-running it.**
 
 **⛔ LFS IS DROPPED, AND THE r2407 ADVICE WAS WRONG.** *That revision put `pdf`/`png`/`eps`/`dat` behind

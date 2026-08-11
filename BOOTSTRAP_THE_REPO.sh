@@ -42,12 +42,26 @@ echo
 echo "── sanity: these must all be present"
 for f in .gitignore .gitattributes .github/workflows/gates.yml THE_HUB.md \
          THE_LIVE_ARC.md corpus/check_id_bands.py; do
-  if echo "$STAGED" | grep -qx "$f"; then echo "   ok      $f"
+  # ** FIXED r2420, AND THE MECHANISM IS WORTH THE COMMENT because it will bite
+  # anything else that pipes into `grep -q` under `set -o pipefail`.
+  # The first real run of this script printed MISSING for five files that were
+  # demonstrably staged (`git ls-files` listed them), and passed only the sixth.
+  # CAUSE: `grep -q` exits the instant it matches; `echo` still has output to
+  # write and takes SIGPIPE; `pipefail` then reports the PIPELINE as failed, so
+  # the `if` takes the else branch.  ** The split was by SORT ORDER: dotfiles and
+  # THE_* sort early in `git ls-files` (instant match -> SIGPIPE), while
+  # corpus/check_id_bands.py sorts late enough that grep had consumed almost all
+  # the input first. **  It did not reproduce on Linux because a 64 KB pipe
+  # buffer swallows the whole ~40 KB list; macOS's is 16 KB.
+  # A here-string uses a temp file, not a pipe, so there is no SIGPIPE to take.
+  # ** A check that reports absence because its own pipeline died is worse than
+  #    no check: this one would have stopped a correct push. **
+  if grep -qxF "$f" <<< "$STAGED"; then echo "   ok      $f"
   else echo "   MISSING $f"; fi
 done
 echo
 echo "── and these must NOT be (build cruft the .gitignore excludes):"
-if echo "$STAGED" | grep -qE '\.(aux|log|fls|fdb_latexmk|synctex\.gz)$'; then
+if grep -qE '\.(aux|log|fls|fdb_latexmk|synctex\.gz)$' <<< "$STAGED"; then
   echo "   ⛔ build artefacts staged -- stop and check .gitignore"; exit 1
 else
   echo "   ok      no LaTeX build artefacts staged"

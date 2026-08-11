@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.163 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**15 open QUESTIONS · 31 open WORK rows · 1 HELD** *(166 struck of 213 registered).*
+**14 open QUESTIONS · 31 open WORK rows · 1 HELD** *(167 struck of 213 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -19,7 +19,6 @@ sources: [cowork]
 
 | lead | state | what it is | origin | first move |
 |---|---|---|---|---|
-| **`L-215`** | DARYL | REGISTERED r2407 — THE HUB: the programme in a private git repository, and it is FIRST CONTACT'S VENUE. Daryl: "This is how we eventually make contact with 54. By inviting it to the repo." Private to start, which makes the publish decision a separate and defer… | `THE_HUB.md` · `check_id_bands.py` · Daryl r2407 | Daryl creates the private repo and pushes; `THE_HUB` must be in it before any invitation, because it is what 54 reads on arrival. One call left to him… |
 | **`L-216`** | DARYL | REGISTERED r2409 — THE REPO SETUP INSTRUCTIONS ARE WRITTEN AND FILED, gated on either trigger. Written while Daryl was outside on a phone, and filed as `SETUP_THE_REPO.md` so it survives every session boundary. ASK FOR IT BY NAME: "dig up the repo instructions… | `SETUP_THE_REPO.md` · `THE_HUB.md` · Daryl r2409 | Daryl runs it when at a computer or when the publish call lands; then tell this line the URL (public) or hand it a short-lived token (private) |
 | **`L-219`** | DARYL | REGISTERED r2415 — THE ACCESS LADDER, and it gates `L-218` and first contact both. Daryl's sequence, recorded as rungs rather than as a plan, because each rung is a decision and none is automatic: ⓵ PRIVATE for a while (the repo, this line, 54 by invitation — … | `THE_HUB` (bands, branches, CI) · `SETUP_THE_REPO` · Daryl r2415 | each rung is Daryl's call and taken one at a time; nothing below a rung starts before it |
 | **`L-147`** | OPEN | RESIDUE RECEIVED c54.103 from `L-146`: the sky suppresses $\ell=2$ ALONE by a factor of order three and this construction produces no selective quadrupole dip — it starves $\ell=2,3,4$ together and bottoms at $\ell=4$. Inside cosmic variance, and a STATISTICAL… | `OPEN_PROBLEMS_MAP` E·2 | see the map item, which carries the owed action and the readiness/priority sort |

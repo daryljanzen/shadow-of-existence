@@ -76,6 +76,34 @@ braces, and deliberately: ① prevents the collision, ② survives the merge, �
 
 ---
 
+## ⛭⛭ THE LIVE SETUP — r2420, and this is the part that replaced the bundle flow
+
+**⌗ THE REPOSITORY IS PUBLIC** *(`daryljanzen/shadow-of-existence`, flipped r2420).* ⇒ ***READ IS FREE AND
+PERMANENT: this line clones with no credential at all***, *verified from the container — 1,660 files, **zero
+differing against the working tree**, the only extras being LaTeX build artefacts `.gitignore` correctly
+excludes.*
+
+**⌗ WRITE USES A FINE-GRAINED TOKEN, scoped to this repository, Contents read/write.**
+⚠ ***IT IS NEVER STORED — not in memory, not on disk, not in the tree.*** *It lives in a shell variable for the
+session and is re-supplied each time.* **Two reasons, and the second is specific to a public repo:**
+*① a credential in a memory file can surface in a context nobody is watching; ② **GitHub's secret scanning
+auto-revokes a token that lands in a public repo**, so a token written to a tracked file destroys itself and
+takes the session's push path with it.*
+
+**⌗ THE LOOP, and it is what the bundles were for:**
+| | |
+|---|---|
+| **session start** | Daryl pastes the token · this line clones |
+| **during** | work in the clone, gates as always |
+| **at a cut** | commit and push — **the revision IS the commit** |
+| **Daryl** | *nothing else. No downloads, no uploads, no tarballs.* |
+
+⌗ **And `CORPUS_MAP` does not become redundant**: ***git carries WHAT changed; the changelog carries WHY, and
+what was learned.*** *The second is the one a later node cannot reconstruct.*
+
+⌗ *A fallback that needs no credential at all, if the token is ever unavailable: `git format-patch` at cut time —
+**a small text file rather than 30 MB**, applied with `git am`. Strictly better than the bundle flow either way.*
+
 ## ⌗ BRANCHES
 
 ```
