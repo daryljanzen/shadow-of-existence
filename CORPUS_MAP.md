@@ -40,6 +40,54 @@ sources: [cowork, chat]
 
 
 
+### Revision r2425 — 2026-08-11 (main line). **THE OVERSTATEMENT AUDIT: ITS BINARY HALF KEPT, ITS PHRASE TEST STRIPPED ON 7/7 EVIDENCE — AND IT FOUND A REAL ITEM SIDEWAYS.**
+
+**⌗⌗ THE CLASS WAS NINE INSTANCES DEEP BEFORE AN INSTRUMENT WAS BUILT FOR IT** *(`L-209`, `B1`, `B2`, `B21`, `U1`,
+`V1`/`G1`, `G3`, `L-200`, `L-207`), and its shape is:* ***the programme's open items are systematically overstated
+relative to what the corpus establishes, and the overstatement lives in the NAVIGATION LAYER — comments, maps,
+register rows, frontier lists — not in the papers.***
+
+**⌗ WHAT WAS BUILT AND WHAT SURVIVED.** *`scripts/audit_overstatement.py` asks three things of every open row that
+cites a labelled result. **Two are binary and both pass clean at c54.163**: **zero dead labels** (a row citing a
+label that no longer exists is stale by construction) and **zero labels defined inside `%` comments** (the `L-207`
+class — a working note quoted as published text; that specific leak is now closed corpus-wide).*
+
+**⛔ THE THIRD WAS STRIPPED ON 7/7 EVIDENCE.** *A phrase-proximity test — closing language near the cited label —
+flagged seven rows and **all seven were false positives, each for a different reason**: "is built" in **"the
+background geometry on which the cosmology is built"**; "is settled" about a **holonomy** being genuine rather than
+a branch convention; "resolved" from a **neighbouring remark's TITLE**; "is settled" about a **connection
+problem**; "no longer" in **"at Nariai the mass is no longer free"**; "is answered" from the range
+cross-reference already worked at `B1`.*
+⇒ ***A phrase test measures a string whose meaning depends entirely on its subject. It is `G1`'s error in a new
+costume: the QUANTITY is wrong, not the threshold.*** *Stripped, with the evidence written into the file and
+`CLOSING = []` left deliberately empty.*
+
+⌗ **AND THE DIAGNOSTIC IS NOW FILED AS A SCRAP, stated so it applies BEFORE building rather than after:**
+***if the quantity's meaning changes with what the sentence is ABOUT, it is not a measurement — it is a guess with
+arithmetic on it.*** *What survived, in both `G1`'s case and this one, is exactly what is **binary and
+subject-independent**.*
+
+**⛭⛭ AND IT EARNED ITS COST SIDEWAYS, WHICH IS RECORDED AS A PROPERTY OF THE READING AND NOT AS EVIDENCE FOR THE
+INSTRUMENT.** *Reading one false positive found that P15 `sec:predictions` states* ***"The unqualified form of this
+clause---that the construction has no scale-invariant attractor at all---is withdrawn"*** *— and the unqualified
+phrase then appears **twice more, both after the withdrawal, both in the paper's verdict passages**: "falsifiable
+commitments … **no scale-invariant attractor**, no consistency relation, no substrate-sourced $B$-modes."*
+⌗ **And precisely what it is, because it is not a contradiction:** *the surviving claim is **observational** — the
+scale-invariant spectrum is **confined to the contracting side and does not reach the observer**, which is what
+`L-169`'s strike says ("now right for a better reason").* ⇒ ***It is the withdrawn WORDING surviving where the
+paper is most quoted.*** *The construction **does** have a scale-invariant background — the collapse leg is
+$\beta=+2$ exactly — so a reader meeting a verdict passage first reads the structural claim the paper withdrew.*
+⚠ *And these are the theory's **falsifiable commitments**, which makes the wording load-bearing:* **an unqualified
+"no scale-invariant attractor" is falsified by the corpus's own $\beta=+2$ result; the qualified one is not.**
+*Routed as **item 17**, with the withdrawal's own surviving form suggested.*
+
+⌗ ***AND THE PASS'S HONEST RESULT IS THAT MY PROPOSAL WAS NOT MECHANISABLE.*** *I proposed "check whether the paper
+each open item cites still says what the item claims" —* **and "what a paper says" is not a string.** *All nine
+instances were found by **reading**. The audit keeps the two checks that are genuinely mechanical and claims
+nothing more.*
+
+**Register: 213 rows. Gates: twenty-one, twenty rc=0. Routing list: seventeen items.**
+
 ### Revision r2424 — 2026-08-11 (main line). **`L-207` ⓵ ANSWERED — nothing remains of the kind the question imagined, and the row's framing came from a source comment.**
 
 **⌗⌗ P8 `sec:open` SEPARATES THE TWO HALVES AND ANSWERS THE SECOND OUTRIGHT.**
