@@ -40,6 +40,55 @@ sources: [cowork, chat]
 
 
 
+### Revision r2422 — 2026-08-11 (main line). **`L-201` STRUCK — the residue was already counted in p0's own ledger section, and the constant-side ledger CLOSES.**
+
+**⌗⌗ THE BUDGET SIDE, which `U1`/`U2` had explicitly left uncounted.** *`L-201` asked which geometric relations
+among the constants the substrate forces, **and for any constant maximal symmetry does not reach — "the
+constant-side analogue of the discrete-parity matter opening."***
+⇒ ***THE ANSWER IS IN p0's OWN `sec:ledger`, AND IT WAS NEVER JOINED TO THE `sec:frontiers` ITEM THAT ASKS FOR
+IT:*** **"$\alpha$ is precisely what the causal structure does NOT fix: the group preserving the absolute is
+$\mathrm O(5,1)\times\mathbb R^{+}$, ONE GENERATOR LARGER than the substrate's isometry group, and that extra
+generator is the dilation carrying $\alpha\mapsto\lambda\alpha$ … which is why there is a single dimensionful
+input and nothing for a dimensionless tuning to hide in."** *Sourced independently in P5 with
+`\rcpt{C1_conformal_vs_isometric}`.*
+
+**⌗ COUNTED:** *$\dim\mathrm O(5,1)=15$; $\dim(\mathrm O(5,1)\times\mathbb R^{+})=16$; **the quotient is one
+generator, the dilation**.*
+| | |
+|---|---|
+| **BUDGET (residue)** | **1 dimensionful, 0 dimensionless** |
+| **SPEND (`U1`/`U2`)** | **1 dimensionful ($\Lambda$), 0 dimensionless** |
+⇒ ***THE CONSTANT-SIDE LEDGER MATCHES EXACTLY, AND IT CLOSES WITH A MECHANISM RATHER THAN AN AUDIT***: *a
+Cayley–Klein geometry* **"carries the scale as its ONLY free constant, signature, null structure and isometry group
+all being fixed by the absolute's projective type"** *— so the one-scale reading, in p0's words,* **"has a
+classical mechanism and is not only the outcome of an exhaustive audit."**
+
+**⛭⛭ AND `L-201`'s SHARP TARGET IS ANSWERED IN THE NEGATIVE, WHICH IS THE STRONGER OUTCOME.** ***There is no
+constant maximal symmetry fails to reach, and no room for one.*** *The **matter** opening exists because the index
+obstruction leaves a **disconnected component**;* ***the constant ledger has no analogous leftover — the quotient
+is one-dimensional and IS the scale.*** **A negative that follows from a dimension count is a closure, not a
+gap.**
+
+**⚠ AND `L-200` IS NOT CLOSED, BECAUSE THE ITEM IS PRECISE.** *It also asks that maximal symmetry spent leave*
+**"exactly the one measured cosmological IC ($\rho_r/\rho_m$) as the sole tunable datum"** *— and*
+***$\rho_r/\rho_m$ is a MATTER INITIAL CONDITION, not a constant, and is not in the geometric residue at all.***
+*It stays where the corpus leaves it: a one-parameter accommodation in three papers.* ⇒ ***So `L-200` now reduces
+to exactly one thing: `L-150`, the derivation of the handover datum — the one datum standing between this count
+and a parameter-free framework.***
+
+**⌗ ROUTED AS ITEM 15, and it is the list's first VERDICT item rather than a defect or a result.** *p0
+`sec:frontiers` still marks item 1* **"[Reach: stated as a target, not a result]"** *while `sec:ledger` answers its
+constant half —* ***and only the author can change a paper's verdict on its own frontier.*** *Suggested: split the
+item, the constant-relation clause being a result and the $\rho_r/\rho_m$ clause remaining the target.*
+
+⌗ ***AND THE CLASS IS THE SESSION'S MOST FREQUENT, ONE MORE TIME: the answer was in the corpus, in the same paper,
+not joined to the question.*** *`L-209`, `U1`'s $\eta$, `V1`'s corollary, the axis misparse, and now p0's own
+decisive test — **five instances, and none of them a physics defect.***
+
+*Receipt `U3_the_residue_is_one_and_it_is_already_counted` (13 checks).*
+
+**Register: 213 rows = 181 QUESTION (167 struck, 14 open) + 32 WORK. Gates: twenty-one, twenty rc=0.**
+
 ### Revision r2421 — 2026-08-11 (main line). **`L-200` — p0'S OWN DECISIVE TEST RUN FOR THE FIRST TIME, and the half that was open has moved.**
 
 **⌗⌗ WHY THIS ROW FIRST.** *`L-200` is **p0's own decisive test** — "show that the framework's count of genuinely
