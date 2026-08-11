@@ -40,6 +40,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r2423 — 2026-08-11 (main line). **A RETRY ARTEFACT REMOVED, AND THE DISCREPANCY REPORTED RATHER THAN RECONSTRUCTED.**
+
+**⚠⚠ WHAT HAPPENED, stated as observation and not as cause.** *A commit `6db0cc5 r2422` was found on the tree and
+on the remote that this line had not made in the turn that found it — L-201 struck with the `U3` verdict, and
+routing **item 15 present twice**. An `assert n==2` failed precisely **because** L-201 was already struck.*
+⇒ ***Every fact fits one explanation, and it is the r2392/r2393 one: a turn ran to completion — scripts, commit,
+push — and was then cut, and this line re-ran the scripts against a tree that already carried them.***
+⌗ **Reported rather than reconstructed, which is the rule that earned itself at r2392:** ***report the discrepancy;
+never narrate the cause you do not have.*** *Had a cause been invented there, a false finding about this line's
+continuity would be permanent in this changelog.*
+
+**⌗ WHAT WAS ACTUALLY WRONG: the duplicated routing item, and nothing else.** *`git status` showed **one** modified
+file; the remote carried `6db0cc5` on all three refs, so **r2422 had landed complete**. The retry's only net effect
+was a second copy of item 15 — **removed here, keeping the version that splits the item** (constant-side a result,
+datum side still a target).*
+
+⌗ **AND THE DIAGNOSTIC DISCIPLINE IS WORTH THE LINE, because this line nearly inferred instead.** *Four
+increasingly precise reads settled it — `git diff --stat`, `git status --short`, `git show HEAD:<file>`, and
+`git log` — and* ***only the last one made the situation legible.*** **When a working tree disagrees with what you
+remember doing, `git log` is the first question, not the fourth.**
+
+**Register: 213 rows = 181 QUESTION (167 struck, 14 open) + 32 WORK (1 struck).**
+**Gates: twenty-one, twenty rc=0.**
+
 ### Revision r2422 — 2026-08-11 (main line). **`L-201` STRUCK — the residue was already counted in p0's own ledger section, and the constant-side ledger CLOSES.**
 
 **⌗⌗ THE BUDGET SIDE, which `U1`/`U2` had explicitly left uncounted.** *`L-201` asked which geometric relations
