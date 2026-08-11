@@ -159,7 +159,7 @@ sources: [chat]
 | `CREDO_from-c1_transcript.md` | RECORD | frozen record | — | — |  |
 | `DEMONSTRATING_THE_WAY_full-transcript.md` | RECORD | frozen record | — | — |  |
 | `FORK_HISTORY_c54.txt` | RECORD | frozen record | — | c54.93 |  |
-| `FOR_54_c54.163.md` | RECORD | The ROUTING LIST — items this line verified wrong on the working fork's own front edge at c54.163, for Daryl to carry across if he chooses. Nine items, each checked at source in the fork's tree, each with the fix and the reason. | c54.163 | c54.163 |  |
+| `FOR_54.md` | RECORD | THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied. | c54.178 | c54.178 |  |
 | `HISTORICAL_CONTEXT_einstein_cosmological_considerations.md` | RECORD | frozen record | — | — |  |
 | `HISTORICAL_CONTEXT_the_initial_rate_problem.md` | RECORD | frozen record | — | — |  |
 | `PROGRAMME_UNFINISHEDNESS_CATALOGUE.md` | RECORD | frozen record | — | — |  |

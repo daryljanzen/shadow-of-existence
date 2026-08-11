@@ -43,9 +43,10 @@ ARC = os.path.join(ROOT, 'THE_LIVE_ARC.md')
 # ⇒ THE CORRECTED RULE: ** allocate FAR from the other line's frontier, not merely above it. **
 BANDS = [
     (1,   173, 'the working fork (54) -- historical'),
-    (174, 220, 'CONTESTED -- both lines allocated here; DO NOT ALLOCATE'),
-    (221, 499, 'the main line (56) -- allocate here'),
-    (500, 799, 'offered to the fork, NOT adopted (it does not read THE_HUB)'),
+    (174, 174, 'CONTESTED -- both lines allocated here; the fork holds it'),
+    (175, 220, 'the observer line (56) -- historical'),
+    (221, 499, 'the observer line (56) -- allocate here'),
+    (500, 799, 'THE WORKING FORK (54) -- allocate here (adopted r2428: it now reads THE_HUB)'),
     (800, 999, 'reserved -- future lines'),
 ]
 

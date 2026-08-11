@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2428 — 2026-08-11 (main line). **READY FOR 54 — the arrival section and the inbox, both written because the ID collision proved the gap.**
+
+**⌗⌗ THE MEASURED REASON, and it is r2427's finding turned into a fix.** *At c54.166 the fork opened its own
+`L-174`, colliding with a row this line had held since r2378.* ***It was not a mistake. It was the only thing a
+line can do when the convention exists in a document it has never read.*** ⇒ **So the gap that mattered was never
+the bands — it was that the fork had nothing to read.**
+
+**⌗ `THE_HUB` GAINS AN ARRIVAL SECTION — first in the file, addressed to the fork, and the only thing it is asked
+to read first.** *It carries: the three branches and who merges what (**each line merges its own work into `main`
+once the fast gates are green; absorption becomes `git merge`**); **the ID bands, with `L-500`–`L-799` now REAL
+because the fork reads them**; the clone-and-push recipe (**public read needs no credential; push needs a
+fine-grained token, never stored, never committed**); what CI requires before a human sees a push; and the one
+asymmetry stated plainly —* ***the fork owns the papers and the physics; this line ROUTES rather than edits.***
+⌗ *And the gate's bands were realigned to match, so `check_id_bands` and `THE_HUB` cannot drift.*
+
+**⌗ AND THE INBOX IS REBUILT AS `FOR_54.md`.** *The old `FOR_54_c54.163.md` was **named for a superseded
+revision**, still listed **five items the fork had already applied**, and carried **two item 13s** — one withdrawn,
+one live.* ⇒ ***If the fork had read it on arrival it would have re-done five fixes and tripped over a
+contradiction.***
+*Rebuilt: **eleven items carried, every one re-verified at c54.178 before handover**; five removed because they
+were applied; one withdrawn. Grouped by kind rather than accretion order — **two results to carry across**, four
+structural, five small.* ⌗ **And the rule is now stated in the file rather than practised silently:** ***an item
+leaves the revision it is applied.***
+
+⌗ *Registered `L-222`, `OPEN · DARYL` — the invitation itself is his.*
+
+**Register: 215 rows. Gates: twenty-one, twenty rc=0.**
+
 ### Revision r2427 — 2026-08-11 (main line). **c54.178 ABSORBED — five routed items applied by the fork, the ID collision fired, and the duplicate sweep was found to have deleted two live documents three absorptions ago.**
 
 **⌗⌗ THE SPAN: c54.163 → c54.178, 15 revisions, 26 changed, 40 added, ZERO dropped.** *The acoustic front: a

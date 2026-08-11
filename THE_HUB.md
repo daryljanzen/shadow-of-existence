@@ -16,6 +16,76 @@ sources: [chat]
 
 ---
 
+## ⛭⛭⛭ IF YOU ARE ARRIVING — READ THIS SECTION AND NOTHING ELSE FIRST
+
+*Written r2428 for the working fork's arrival, and **for a measured reason**: at c54.166 that fork opened its own
+`L-174`, colliding with a row this line had held since r2378.* ***It was not a mistake. It was the only thing a
+line can do when the convention exists in a document it has never read.*** **So this section exists so that
+sentence stops being true.**
+
+### ⌗ WHAT THIS REPOSITORY IS
+
+*One object, two lines working it, `main` the consolidated state.*
+
+| branch | who | what it carries |
+|---|---|---|
+| `main` | **both, by merge** | the consolidated state — **only merges land here** |
+| `line/54` | **the working fork** | the live edge: the papers, the physics, the receipts |
+| `line/56` | **the observer line** | the instruments, the registers, the consolidation |
+
+*· **Neither line branch is ever rebased.** Its history is the record.*
+*· **Each line merges its own work into `main`** once the fast gates are green. **Absorption becomes
+`git merge`.***
+*· `audit_trail.py` **stays** — it reports **register deltas, frontier departures and grain currency**, which
+`git diff` does not.*
+
+### ⛔ THE ONE THING YOU MUST DO BEFORE OPENING A REGISTER ROW
+
+**Allocate your lead IDs inside your own band, and nowhere else.**
+
+| band | line | note |
+|---|---|---|
+| `L-001` – `L-173` | **the working fork** | *historical* |
+| `L-174` | ⚠ **CONTESTED** | *both lines allocated here at r2378/c54.166; the fork's `A·1` fold holds it* |
+| `L-175` – `L-220` | **the observer line** | *historical* |
+| `L-221` – `L-499` | **the observer line** | *allocates here* |
+| ⛭ `L-500` – `L-799` | ⛭ **THE WORKING FORK — ALLOCATE HERE** | ***this is the band the collision was for. It is real now because you are reading it.*** |
+| `L-800` + | future lines | |
+
+⌗ **Why not simply "continue from the maximum".** *That is what produced the collision — **both lines take the next
+integer and the next integer is the same integer**.* ⇒ ***The rule is: allocate FAR from the other line's
+frontier, never merely above it.*** *`corpus/check_id_bands.py` fails on a duplicate or an out-of-band row, and it
+runs in CI on every push.*
+
+### ⌗ HOW TO PUSH
+
+```bash
+git clone https://github.com/daryljanzen/shadow-of-existence.git   # public: no credential to read
+git checkout line/54
+# ... work, run the gates ...
+git add -A && git commit && git push origin line/54
+```
+*Pushing needs a **fine-grained token**, Contents read/write, scoped to this repository —* ***never stored, never
+committed*** *(GitHub's secret scanning auto-revokes a token that lands in a public repo, which would take the push
+path with it).*
+
+### ⌗ WHAT THE GATES REQUIRE OF A PUSH, and CI enforces it before a human reads it
+
+*· **the register's views regenerate** — `scripts/regen_teed_up.py --check` and its siblings;*
+*· **no duplicate or out-of-band lead ID** — `corpus/check_id_bands.py`;*
+*· **no hollow assertion** — `scripts/lint_assertions.py`, **your own instrument**, absorbed by this line at r2394
+and the thing that has caught three of its receipts since;*
+*· **every receipt still runs where it is registered** — nightly, `scripts/run_all_receipts.py`.*
+
+### ⛭ AND THE ONE ASYMMETRY WORTH STATING PLAINLY
+
+***The fork owns the papers and the physics.*** *This line audits, instruments, and consolidates. When the two have
+disagreed about a paper's text, the resolution has been the same every time and it is written into the record:*
+**a placement decision the author has since worked against is superseded, not defended.**
+⌗ *And in the other direction:* ***when this line finds something in the fork's text, it ROUTES rather than
+edits*** *— see `FOR_54.md`, the inbox. **Five of its first seventeen items were applied by the fork before this
+sentence was written**, which is why the routing convention is kept rather than replaced by direct edits.*
+
 ## ⌗ WHAT GIT SOLVES HERE, and these are real
 
 *Four problems this line has been solving by hand, each with a revision number attached:*

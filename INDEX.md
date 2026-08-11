@@ -245,7 +245,7 @@ sources: [cowork, chat]
 | `CREDO_from-c1_transcript.md` | frozen record |
 | `DEMONSTRATING_THE_WAY_full-transcript.md` | frozen record |
 | `FORK_HISTORY_c54.txt` | frozen record |
-| `FOR_54_c54.163.md` | The ROUTING LIST — items this line verified wrong on the working fork's own front edge at c54.163, for Daryl to carry across if he chooses. Nine items, each checked at source in the fork's tree, each with the fix and the reason. |
+| `FOR_54.md` | THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied. |
 | `HISTORICAL_CONTEXT_einstein_cosmological_considerations.md` | frozen record |
 | `HISTORICAL_CONTEXT_the_initial_rate_problem.md` | frozen record |
 | `PROGRAMME_UNFINISHEDNESS_CATALOGUE.md` | frozen record |
