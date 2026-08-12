@@ -1,8 +1,34 @@
 ---
 name: complex-analysis-ledger
 description: R-M's third field bake — complex analysis and monodromy thrown at CR. Opened r1867 (Phase 8), handed to by the quadric bake's Q4 (equianharmonic ⟺ j=0 ⟺ CM by ω). Discharges R-M arc station Ⓒ, marked NO ENTRY since r1805. Baseline, probes, four-part close.
-current: r2488+c54.194
+current: r2491+c54.194
 ---
+
+## ⛭⛭ STATION Ⓒ WALKED r2491 — AND THIS LEDGER'S OWN FIELD SUPPLIES THE DISTINCTION
+
+*`Q4`'s handoff: the vantage triple's cross-ratio is the equianharmonic $e^{i\pi/3}$.* ✔ **Checked: the
+$j$-invariant is exactly 0**, so the attached curve is $y^2=x^3+1$ with complex multiplication by $\omega$.
+
+**⇒ AND HERE IS WHAT COMPLEX ANALYSIS ADDS, which is a distinction and not a result:**
+
+| object | group | order | |
+|---|---|---|---|
+| the equianharmonic curve's automorphisms | **$\mathbb Z_6$** | 6 | ***cyclic*** |
+| the horizon cubic's deck/monodromy | **$S_3$** | 6 | ***non-abelian*** |
+
+⇒ ***SAME ORDER. NOT ISOMORPHIC.*** *And P5 already establishes that one group is **"worn three ways"** —
+deck/monodromy, the Weyl group of $A_2$, the Galois group.* ⇒ ***$\mathbb Z_6$ is a fourth object and is not among
+them.***
+
+**⌗ AND THIS LEDGER IS WHERE THAT MATTERS, because the same field already supplied the deck-versus-monodromy
+correction** *(routed item 23: **"deck group $S_3$" on a three-sheeted cover is impossible, $6\nmid3$**, and
+`rem:equianharmonic` gives a third answer, $\mathbb Z_3$).*
+⇒ ***Three order-six-adjacent objects — $S_3$, $\mathbb Z_6$, $\mathbb Z_3$ — and the corpus's texts have at points
+called the same thing all three. "Degree six" is not one fact it can carry loosely.***
+
+⚠ **Not a defect report.** *`Q4` and `rem:galois` are **both correct and about different objects**, and nothing
+exhibits a $\mathbb Z_6$ action on anything in the construction. ***The finding is the adjacency under one word.***
+
 
 ## ⛭⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **AND THE FIELD'S OWN VOCABULARY IS MISUSED IN TWO PAPERS**
 

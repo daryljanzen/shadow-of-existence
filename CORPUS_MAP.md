@@ -146,6 +146,44 @@ sources: [cowork, chat]
 
 
 
+### Revision r2491 — 2026-08-11 (main line). **STATION Ⓒ WALKED AND IT BITES — the equianharmonic structure supplies $\mathbb Z_6$ where the corpus's cover carries $S_3$, and routed item 23 is the same knot.**
+
+**⌗⌗ `Q4`'s HANDOFF CHECKS AT THE FIRST STEP.** *With $\lambda=e^{i\pi/3}$ the $j$-invariant is **exactly 0**, so
+the attached curve is $y^2=x^3+1$ with complex multiplication by $\omega=e^{2\pi i/3}$.*
+
+**⛭⛭ AND THAT IS WHERE THE FIELD SAYS SOMETHING THE CORPUS DOES NOT ALREADY HOLD:**
+
+| object | group | order | |
+|---|---|---|---|
+| the equianharmonic curve's automorphisms | **$\mathbb Z_6$** | 6 | ***cyclic*** |
+| the horizon cubic's deck/monodromy | **$S_3$** | 6 | ***non-abelian*** |
+
+⇒⇒ ***SAME ORDER. NOT ISOMORPHIC. And the corpus carries a "degree-six dial" without this reach ever recording
+which of the two it is.***
+⌗ *P5 already establishes three of a possible four: **"this deck group is equally the Galois group of the horizon
+cubic, one $S_3$ worn as monodromy"** — deck/monodromy, the Weyl group of $A_2$, the Galois group.* ⇒ ***$\mathbb
+Z_6$ is a FOURTH object and is not among them.***
+
+**⌗⌗ AND ROUTED ITEM 23 IS THE SAME KNOT FROM THE OTHER SIDE:** *"deck group $S_3$" on a three-sheeted cover is
+impossible ($6\nmid3$), `prop:deck` corrects its own heading four sentences later, and `rem:equianharmonic` gives a
+third answer, $\mathbb Z_3$.*
+⇒ ***So there are THREE order-six-adjacent objects in play — $S_3$, $\mathbb Z_6$, $\mathbb Z_3$ — and the corpus's
+texts have at points called the same thing all three.***
+
+**⚠ NOT A DEFECT REPORT, and the distinction is the whole value:** ***`Q4` and `rem:galois` are both correct and
+about DIFFERENT objects*** *— the cross-ratio's attached curve and the horizon cubic's cover — and nothing here
+exhibits a $\mathbb Z_6$ action on anything in the construction.*
+⇒ ***The finding is that they have been sitting adjacent under one word, and "degree six" is not one fact the corpus
+can carry loosely.*** *Filed in `COMPLEX_ANALYSIS_LEDGER`, which is where the deck-versus-monodromy correction also
+lives.*
+
+⌗ **AND TWO QUOTATIONS IN THIS LINE'S OWN RECEIPT FAILED FIRST, both because they were written from a memory of a
+read rather than from the file:** *the R-M phrase carries **markdown bold inside it**, and P5's own words are
+tighter than the paraphrase — **"one $S_3$ worn as monodromy"**.* ***Quoting from memory of a read is the error this
+receipt is about, arriving in the receipt itself.***
+
+**Register: 239 rows. Gates: twenty-one, twenty-one rc=0. `L-203`: two of five stations walked.**
+
 ### Revision r2490 — 2026-08-11 (main line). **A FRONTMATTER CONTRADICTED ITS OWN BODY FOR FORTY-EIGHT REVISIONS — and the stale-field class is four instances, not the one r2482 reported.**
 
 **⌗⌗ `L-203`'s ROUTE, written r2413, read "Ⓒ first… then Ⓕ (representation theory, **TWO real forms** of
