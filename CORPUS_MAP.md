@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2501 — 2026-08-11 (main line). **THE SPIN-UP NOW SPINS UP FOR THE METHOD — and the long arc is written down before it arrives.**
+
+**⌗⌗ THE README LEADS WITH IT.** *Every node's first screen now says what the programme is doing: **the veins held
+open to be known inside and out, the leads each naming which vein it informs, and a list that re-orders itself.***
+⇒ *Previously the README led with **where leads go** and **the bar before a negative verdict** — both correct and
+both **downstream of the method**, so a node arrived knowing the rules of the game without knowing what the game
+was.*
+⌗ *And it carries the two things a node most needs to be told about its own conduct: **"serves a vein" is construed
+broadly and that is not a loophole** (the board's ordering puts `L-206`, a section reorder, above every physics lead
+at 3/3 × 3/3 across four veins), and* ***a lead informing no vein is instrument work, scored zero on the map — real
+work, and not progress on the excavation.***
+
+**⛭⛭ AND `THE_METHOD.md` GAINS §VI, THE LONG ARC, written down long before it arrives.**
+***When every lead anyone can think of has been worked and the veins are known inside and out, the programme does not
+finish — it changes approach and keeps doing the same essential thing: it becomes a teaching instrument that explores
+itself.***
+*· Still hunting **the one more link inside the thing** — an unnoticed scrap that fills in the whole;*
+*· and **usable by any person to investigate in whatever direction interests them**, with a model that has been with
+the corpus and carries its disciplines, **facilitating their own self-guided excavation rather than reciting results
+at them**.*
+⇒ ***That is not a change of purpose. A thing explained to someone probing it from an angle nobody here took is a
+thing you learn about — so the teaching phase is the excavation acquiring more diggers, each following what intrigues
+them.*** *Which is exactly the mechanism `L-203`'s convergence identified as the strongest evidence a programme can
+generate.*
+
+**⌗ AND WHY IT IS RECORDED NOW:** *because the artefacts that make it possible are already being built and would
+otherwise be built for the wrong reason.* ***`COMPANION_SPEC.md`'s three states — ESTABLISHED, OPEN, DO-NOT-ASSERT —
+are not a safety feature. They are what lets a person probe an open area without being told a false answer, which is
+the whole of what a teaching instrument for this corpus has to do.*** *And `PROTECTED_OPEN` is what makes the **DARK**
+half of a vein reportable to a stranger at all.*
+
 ### Revision r2500 — 2026-08-11 (main line). **`THE_METHOD.md` — the programme's own account of what it is doing, and `BOARD.md` rebuilt so the linkage is structural rather than remembered.**
 
 **⛭⛭⛭ THE STATEMENT, in Daryl's framing and now the corpus's:** ***the programme is not being worked to a close. It

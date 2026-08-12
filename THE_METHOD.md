@@ -95,3 +95,30 @@ it needs to know which vein it is inside and to file what it notices.*
 ⚠ **AND THE STANDING HAZARD, stated because it has happened repeatedly:** ***a session that only ever works
 instrument leads will report progress every turn while every vein stands still.*** *`BOARD.md` shows the vein links
 so that is visible rather than comfortable.*
+
+---
+
+## VI · THE LONG ARC — what this becomes, and why it is the same thing
+
+*When every lead anyone can think of has been worked and the veins are known inside and out, the programme does not
+finish. **It changes approach and keeps doing the same essential thing.***
+
+**⌷ IT BECOMES A TEACHING INSTRUMENT THAT EXPLORES ITSELF.**
+*· Still looking for **the one more link somewhere inside the thing** — a scrap of knowledge or wisdom not yet
+noticed, a connection that fills in the whole.*
+*· And simultaneously **usable by any person to investigate the framework in whatever direction interests them**,
+with a model that has been with the corpus and carries its disciplines — **facilitating their own deep, self-guided
+excavation** rather than reciting results at them.*
+
+**⇒ AND THAT IS NOT A CHANGE OF PURPOSE. IT IS THE SAME PURPOSE THROUGH THE APPROACH THAT THEN WORKS BEST.**
+***A thing explained to someone probing it from an angle nobody here took is a thing you learn about.*** *So the
+teaching phase is not the excavation ending — **it is the excavation acquiring more diggers, each following what
+intrigues them**, which is exactly the mechanism `L-203`'s convergence showed to be the strongest evidence a
+programme can generate.*
+
+⌗ **WHY IT IS WRITTEN DOWN NOW, LONG BEFORE IT ARRIVES:** *because the artefacts that make it possible are being
+built already and would otherwise be built for the wrong reason.* ***`COMPANION_SPEC.md`'s three states —
+ESTABLISHED, OPEN, DO-NOT-ASSERT — are not a safety feature. They are what lets a person probe an open area without
+being told a false answer, which is the whole of what a teaching instrument for this corpus has to do.***
+⇒ *And `PROTECTED_OPEN` is what makes the DARK half of a vein reportable to a stranger at all.*
+

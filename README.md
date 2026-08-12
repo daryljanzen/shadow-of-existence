@@ -1,5 +1,50 @@
 # Cosmological Relativity — start here
 
+> # ⛭⛭⛭ WHAT YOU ARE SPINNING UP FOR — read `THE_METHOD.md` and `BOARD.md` before anything else
+>
+> ***This programme is not being worked to a close. It is being worked to a state where the open areas are known
+> inside and out.***
+>
+> **⌷ THE VEINS** *(`BOARD.md` §I)* — *the areas we know we do not know inside and out, **held open deliberately so
+> they can be excavated rather than deleted**. Reported as **MAPPED** and **DARK**: what the interior is now known
+> to contain, and where it is still dark.*
+> ⇒ ***A vein closes FROM WITHIN, when its interior is completely known — never from outside by a verdict. And
+> "exhaustively earned" is the only condition that ends one.***
+>
+> **⌷ THE LEADS** *(`BOARD.md` §II)* — *everything noticed while working something else that could inform a vein.
+> **Every lead names which vein(s) it informs**, carries a groundedness and an informativeness, and* ***the list
+> re-orders itself every time it is generated, because a landed lead changes what the next one is worth.***
+>
+> > ***work the top lead → gather every lead the work turned up → re-order → repeat***
+>
+> **⛔ AND THE FAILURE THIS EXISTS TO PREVENT HAS A NAME: FLATTENING.** *A question crossed out is a piece of the
+> problem space **removed from the topology rather than explored**.* ⇒ ***`PROTECTED_OPEN` is not a list of things
+> too delicate to touch. It is the list of things we refuse to cross out until we can see all the way inside them.***
+>
+> **⌗ AND "SERVES A VEIN" IS CONSTRUED BROADLY, which is not a loophole.** ***Making a paper build its framework in
+> a logically ordered, concise, coherent way serves every vein at once*** *— a framework you cannot follow cannot be
+> excavated, and every vein is excavated by reading the framework.* ⌗ *The board's own ordering demonstrates it
+> rather than asserting it: **`L-206`, a section reorder in P3, currently outranks every physics lead**, computed at
+> 3/3 × 3/3 across four veins.*
+> ⚠ *A lead informing **no** vein is labelled **instrument work** and **scored zero on the map** — real work, and
+> not progress on the excavation.* ***A session that only works instrument leads will report progress every turn
+> while every vein stands still.***
+>
+> **⌗ THREE NODES, ONE MAP.** *This runs across **56** (instruments, registers, audit), **54** (papers, computation,
+> the acoustic front) and **cc54** (long unattended runs, production-depth computation).* ***Each brings what the
+> others structurally cannot*** *— 56 cannot run a production-depth spectrum, 54 cannot push to the repository,
+> cc54 has an execution budget neither chat line has.* ⇒ ***A node grinding in one direction inside a vein does not
+> need to know what the others are doing. It needs to know which vein it is inside, and to file what it notices.***
+>
+> **⌗⌗ AND THE LONG ARC, so you know what this is being built toward.** *When every lead anyone can think of has
+> been worked and the veins are known inside and out, ***the same essential activity continues through the approach
+> that then works best: the programme becomes a teaching instrument that explores itself.*** *Still looking for the
+> one more link, the one unnoticed scrap that fills in the whole — **and simultaneously usable by any person to
+> investigate the thing in whatever direction interests them**, with a model that has been with the corpus and can
+> facilitate their own deep, self-guided excavation.* ⇒ ***Not a change of purpose. The same purpose, harnessed
+> through teaching — because a thing explained to someone probing it from an angle you never took is a thing you
+> learn about.***
+
 
 > ## ⟐ WHERE THE WORK IS, AND WHERE LEADS GO — `THE_LIVE_ARC.md`
 >
