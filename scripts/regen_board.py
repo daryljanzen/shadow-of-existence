@@ -42,7 +42,7 @@ VEINS = {
    "the cut is four and **says nothing about the substrate**; a descent from $D>5$ must be **multi-step**; the "
    "construction is **single-step by design** and one-step-ness is governed by **Rule 2**, not taste",
    "**whether a second slicing could be non-arbitrary, its selection forced by the first** \u2014 and the substrate "
-   "stays bounded **below only**; and \u26ed r2515 (`L-240`) **whether the CUT\u2019s four-ness carries the FORCING of the dynamics** \u2014 the Dirac algebra singles out GR only in four dimensions, so the leaf\u2019s four-ness may be doing work the corpus has never asked it to do"),
+   "stays bounded **below only**; and \u26ed r2515 (`L-240`) **whether the CUT\u2019s four-ness carries the FORCING of the dynamics** \u2014 the Dirac algebra singles out GR only in four dimensions, so the leaf\u2019s four-ness may be doing work the corpus has never asked it to do. \u26ed r2518 CHARTED: $D=4$ is the **largest dimension in which Lovelock leaves exactly ONE dynamical term**, so the leaf\u2019s dynamics carries **no unfixed coefficient** \u2014 Rule 2\u2019s own object. **What stays DARK is the decision it turns on: is uniqueness of the leaf\u2019s dynamics a desideratum this programme holds?** CR takes GR as given, so the forcing is a PROPERTY either way"),
  'L-202': ("p0 item 4 \u00b7 WHAT THE SEAM CARRIES",
    "the phase is the **antilinear face $K$**; reality admits **exactly two values**; $K$ acts trivially on the "
    "reality set while **$R$ exchanges the branches**; off-real, $K$ **swaps the two wings of the lap** and "

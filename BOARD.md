@@ -25,7 +25,7 @@ current: r2500+c54.194
 ## `L-175` · PO-9 · WHAT FIXES THE SUBSTRATE'S DIMENSION
 
 - **MAPPED** — the cut is four and **says nothing about the substrate**; a descent from $D>5$ must be **multi-step**; the construction is **single-step by design** and one-step-ness is governed by **Rule 2**, not taste
-- ⛔ **DARK** — **whether a second slicing could be non-arbitrary, its selection forced by the first** — and the substrate stays bounded **below only**; and ⛭ r2515 (`L-240`) **whether the CUT’s four-ness carries the FORCING of the dynamics** — the Dirac algebra singles out GR only in four dimensions, so the leaf’s four-ness may be doing work the corpus has never asked it to do
+- ⛔ **DARK** — **whether a second slicing could be non-arbitrary, its selection forced by the first** — and the substrate stays bounded **below only**; and ⛭ r2515 (`L-240`) **whether the CUT’s four-ness carries the FORCING of the dynamics** — the Dirac algebra singles out GR only in four dimensions, so the leaf’s four-ness may be doing work the corpus has never asked it to do. ⛭ r2518 CHARTED: $D=4$ is the **largest dimension in which Lovelock leaves exactly ONE dynamical term**, so the leaf’s dynamics carries **no unfixed coefficient** — Rule 2’s own object. **What stays DARK is the decision it turns on: is uniqueness of the leaf’s dynamics a desideratum this programme holds?** CR takes GR as given, so the forcing is a PROPERTY either way
 - *6 live lead(s) inform this vein*
 
 ## `L-202` · p0 item 4 · WHAT THE SEAM CARRIES

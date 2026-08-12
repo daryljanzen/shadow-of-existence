@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2518 — 2026-08-11 (main line). **`L-240` WORKED — $D=4$ is the largest dimension in which the field equations are forced, and the scoring came out as a third thing.**
+
+**⌗ THE COUNT, exact.** *Lovelock's Euler densities: $L_k$ is **topological at $2k=D$** and **vanishes above**, so
+the dynamical terms beyond $\Lambda$ number $\lfloor(D-1)/2\rfloor$ — **$D=4$: ONE, Einstein–Hilbert alone;
+$D=5$: TWO, Gauss–Bonnet dynamical and the dynamics a CHOICE**.*
+⇒ ***So the cut's ALREADY-SETTLED four-ness carries a consequence nobody had drawn: at four, and at no larger
+dimension, the leaf's dynamics carries NO UNFIXED COEFFICIENT.***
+
+**⌗ AND THAT IS `Rule 2`'s OWN LANGUAGE, so no criterion is added:** *P0 names the **symmetry-breaking modulus** as
+what the criterion rejects, and P14 applies it to a **count** — "a one-hinge truncation is excluded not as
+disfavoured but as **carrying an unfixed arbitrary modulus, which the principle forbids**".* ⇒ ***A second Lovelock
+coefficient is exactly that object.***
+
+**⛭⛭ AND THE SCORING CAME OUT AS A THIRD THING, WHICH IS THE REAL RESULT.** *`THE_BASE_RATE`'s first instruction is
+**"the first move is not to make the argument — it is to ask which kind it would be."** Read one way the argument
+**ADDS**; read the other it **REMOVES**.*
+⚠ ***But the discriminant is for arguments DEFENDING an existing number, and `PO-9` says the substrate's dimension
+is "bounded below only" — an OPEN QUESTION.*** ⇒ ***So it scores as NEITHER: it is a candidate piece of a vein's
+INTERIOR, and the vein rules apply rather than the base rate. A vein closes from within when its interior is
+completely known; this is interior, not a closure.***
+
+**⌗ AND THE `c54.6` GUARD IS RESPECTED.** *`PO-9` warns that reading the cut's settled dimension as capping the
+substrate's re-makes that error.* ⇒ ***The chain runs CUT→DYNAMICS, never CUT→SUBSTRATE. The bound is untouched.***
+
+**⚠⚠ AND THE COUNTER SHIPS WITH IT, because it is most of the weight:** *CR takes GR's dynamics as **given** — "the
+construction leaves the dynamics of general relativity unchanged".* ⇒ ***So the forcing is a PROPERTY the
+arrangement has, not by itself a REASON for it.*** ***It becomes a reason only if uniqueness of the leaf's dynamics
+is a desideratum this programme holds — and that is now the decision `L-240` turns on.***
+
+⌗ *And the receipt's first draft **pinned register prose and failed** — three revisions after this line built
+`check_arcpins` against exactly that. **Re-anchored to P0 and P14, which is where the claim is ABOUT.*** *The rule
+earns itself on its author within three revisions.*
+
 ### Revisions r2516–r2517 — 2026-08-11 (main line). **FULL INGESTION AND CONSOLIDATION — c54.200, c54.201 and cc54's branch all in, and the four documents carrying retracted figures annotated.**
 
 **⛭⛭⛭ cc54's FINDING, and it earned its place by CAPABILITY rather than attention.** *Sweeping every receipt with
