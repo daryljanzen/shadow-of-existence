@@ -118,6 +118,19 @@ corpus supports and which it does not;*
 checked;*
 *· ***state the lead as a QUESTION***, so it cannot be mistaken for a result the corpus has earned.*
 
+**⌗ AND THE PROBE HAS A SHAPE, LEARNED r2515–r2522: ask what a reader OF THAT FIELD would look for, and measure
+whether it is there.** *Four findings in eight revisions — **zero "Lovelock", zero "Type II/III", zero "Unruh", zero
+"Higgs"** — and none could have come from inside the corpus.*
+⇒ **AND SORT WHAT YOU FIND, because the three kinds need different work:**
+*· ***the corpus already holds it, elsewhere*** → **a missing sentence** (assemble it);*
+*· ***the corpus DECLINES it and says so without the word*** → **a missing name** (one clause);*
+*· ***nothing addresses it at all*** → ***a missing treatment, and the only real owe of the three***.*
+
+⚠ **AND MEASURE CAREFULLY, because an absence is easy to assert and easy to get wrong.** *Three counts in one
+receipt's first draft were wrong, and another receipt's "zero X" check was **defeated by its own index row**, which
+the appendix generator writes into `.tex`.* ⇒ ***A claim about the absence of a string is undone by the sentence
+that reports it. Measure the papers, not the generated files.***
+
 **⇒ AND THE TEST FOR WHETHER AN OUTSIDE RESULT IS A LEAD AT ALL is the same as for any other:** ***does it inform a
 vein?*** *`L-240` informs `PO-9` — and it does so by saying something the vein's own mapped half does not: that the
 cut being four is **doing work**, not merely being observed.*

@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r2523 — 2026-08-11 (main line). **`THE_WEAVE` BROUGHT CURRENT — a FOURTH mechanism, and it is the only one that finds what is ABSENT.**
+
+**⛭⛭ THE OUTSIDE PROBE.** *The file held three mechanisms — **adjacency**, **convergence of probes**, **convergence
+of instruments** — and all three read what is **written**.* ⇒ ***This one asks what a reader OF THE RELEVANT FIELD
+would look for, and measures whether it is there.***
+*Four findings in eight revisions, none available from inside the corpus:*
+*· **`L-240`** — **zero "Lovelock"** beside a cited `Teitelboim1973`;*
+*· **station ③④** — **zero "Type II/III"** under a claim of "every algebraic (Petrov) type";*
+*· **station ⑤** — **zero "Unruh"** in a corpus arguing about when a thermal spectrum arises;*
+*· **station ⑥** — **zero "Higgs"** in one with three chiral families and hypercharge assignments.*
+
+**⌗ AND IT SORTS ITS OWN FINDINGS INTO THREE KINDS, which is what makes it usable rather than alarming:**
+*· ***the corpus already holds it, elsewhere*** → **a missing SENTENCE** (③④'s completeness argument, `L-217`'s
+relation);*
+*· ***the corpus DECLINES it and says so without the word*** → **a missing NAME** (⑥'s Higgs — one clause);*
+*· ***nothing addresses it at all*** → ***a missing TREATMENT, and the only real owe of the three*** (⑤'s Unruh).*
+⇒ ***Three of the four were the corpus being ahead of its own presentation. One was not — and knowing which is the
+whole value.***
+
+**⚠ AND THE DISCIPLINE IS STRICTER, BECAUSE AN ABSENCE IS EASY TO ASSERT AND EASY TO GET WRONG.** *Three counts in
+`P2`'s first draft were wrong — **"chart artefact" is not zero; "Rindler" is not zero, and all three uses are Rindler
+the AUTHOR on lensing** — and `N1`'s "zero Lovelock" check was **defeated by its own INDEX row**, which the appendix
+generator writes into `.tex`.*
+⇒ ⛭ ***A claim about the absence of a string is undone by the sentence that reports it. Measure the papers, not the
+generated files, and re-read before asserting.***
+⌗ *And `P2`'s finding survived all three corrections **because it never rested on the counts alone** — the argument
+was about what the corpus's claim TURNS ON, and the counts only said how visibly.*
+
+⌗ *`THE_METHOD` §V·b gains the probe's shape and its three-way sort. Also recorded in the weave: **`L-174` ⓵ closed
+at linear order**; **`PO-7` sharpened to one sentence** by 54 finding the freezing argument in its own paper; and
+**cc54's arc-pin class**, found by a full run neither chat line can do.*
+
 ### Revision r2522 — 2026-08-11 (main line). **R-P STATION ⑥ — "Higgs" appears zero times in seventeen papers, and the corpus already holds the sentence that fixes it.**
 
 **⛔ THE MEASUREMENT.** *SU(3) 109 · chiral 337 · family 393 · hypercharge 15 · anomaly 13 · electroweak 11 ·

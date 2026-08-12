@@ -1,9 +1,46 @@
 ---
 name: the-weave
 kind: STATE
-current: r2511+c54.198
+current: r2523+c54.201
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
+
+> ## ⛭⛭⛭ BROUGHT CURRENT r2523 — A FOURTH MECHANISM, AND IT IS THE ONE THAT FINDS WHAT IS ABSENT
+>
+> *The file holds three: **adjacency** (a closure here pays a debt there), **convergence of probes** (independent
+> fields naming one object), **convergence of instruments** (two nodes, one number).* ⛭ ***A fourth appeared across
+> r2515–r2522, and it is different in kind: it finds what the corpus does NOT contain.***
+>
+> ## ⌷ THE OUTSIDE PROBE — measuring an ABSENCE against a field's own vocabulary
+>
+> *Every other mechanism reads what is written. This one asks **what a reader of the relevant field would look for**,
+> and measures whether it is there.* ⇒ ***Four findings in eight revisions, and not one could have come from inside:***
+> *· **`L-240`** — P12 cites `Teitelboim1973` for the Dirac brackets' FORM and never for the uniqueness theorem
+> beside it; **zero "Lovelock"** across the papers;*
+> *· **station ③④** — P9 claims "every algebraic (Petrov) type" and names O, D, I; **Type II and Type III appear
+> zero times**, and the completeness argument sits in P0 as "doubly ruled";*
+> *· **station ⑤** — **zero "Unruh"**, in a corpus arguing about when a thermal spectrum arises;*
+> *· **station ⑥** — **zero "Higgs"**, in a corpus with three chiral families and hypercharge assignments.*
+>
+> **⌗ AND THE MECHANISM SORTS ITS OWN FINDINGS INTO THREE KINDS, which is what makes it usable rather than alarming:**
+> *· ***the corpus already holds it, in another paper*** — ③④'s completeness argument, `L-217`'s relation. **A
+> missing sentence.***
+> *· ***the corpus DECLINES it and says so without the word*** — ⑥'s Higgs. **A missing name.***
+> *· ***nothing addresses it at all*** — ⑤'s Unruh. ***A missing treatment, and the only one of the three that is a
+> real owe.***
+> ⇒ ***Three of the four were the corpus being ahead of its own presentation. One was not.***
+>
+> **⚠ AND THE DISCIPLINE IS STRICTER, because an absence is easy to assert and easy to get wrong.** *Three
+> measurements in `P2`'s first draft were wrong — "chart artefact" is not zero, "Rindler" is not zero (all three are
+> Rindler the **author**) — and `N1`'s "zero Lovelock" was **defeated by its own index row**, which the appendix
+> generator writes into `.tex`.*
+> ⇒ ***A claim about the absence of a string is undone by the sentence that reports it. Measure the papers, not the
+> generated files, and re-read before asserting.***
+>
+> ⌗ *Also landed this span: **`L-174` ⓵ closed at linear order** (textbook GR on a de Sitter background, because the
+> construction was never the thing that had to reach); **`PO-7` sharpened to one sentence** by 54 finding the
+> freezing argument in its own paper; and **cc54's arc-pin class**, found by a full run neither chat line can do.*
+
 
 > ## ⛭⛭⛭ BROUGHT CURRENT r2511 — CONVERGENCE HAS A THIRD FORM NOW, AND IT IS BETWEEN NODES
 >
