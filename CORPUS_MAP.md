@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2471 — 2026-08-11 (main line). **`NEXT.md` — the work order, so the board can be picked up cold and nothing waits on Daryl.**
+
+**⌗ WHY.** *Asked to set work up to run unattended.* ***It cannot: this line executes only when sent a message, and
+CI runs the gates on push, which is verification and not research.*** *What CAN be done is make the next session —
+this line's or the fork's — **cold-startable**.*
+
+**⌗ FOUR BLOCKS, each naming its object, its first move, and what a result would look like:**
+*· **⓵ the $\hat\Theta$ flatness scan** — the fork's own pick and its layer. **The spacing is now the load-bearing
+number on front #2** ($0.79\pm0.04$ of $\ell_A$, never 1.0, across every phase), and $\hat\Theta$'s $k$-flatness is
+**the one unscanned freedom that could move it**. Either outcome is a result; **neither is a framework verdict**.*
+*· **⓶ `L-218`'s companion SPEC** — this line's, and **mis-filed as "held by Daryl" at r2463**. ⌗ *And the SPEC's
+content is already half-written by the corpus: **`PROTECTED_OPEN`, `THE_BASE_RATE`, `receipts/INDEX.md` and the
+do-not-assert census are exactly the machinery that lets a companion distinguish ESTABLISHED from DISCUSSED** —
+which is the failure mode the row says is fatal, and the same declaration-architecture `L-237` found under the
+gates.*
+*· **⓷ `L-210`'s entry-point front**, one site at a time.*
+*· **⓸ `L-211` as a standing procedure**, re-armed after every closure.*
+
+**⌗ AND WHAT IS DELIBERATELY NOT ON IT, with reasons:** *`L-206` (**the only genuinely held row on the board, and it
+says so in its own words**), `L-207` ⓶ (gated on `PO-6`), and **the three gate requests — each one declaration away,
+and the declaration is the other party's to make**. ⇒ ***Do not build any of them speculatively*** — which is the
+lesson of `L-220`, the withdrawn scanner, and `L-237`, three times in one session.*
+
+⌗ *`THE_HUB` now points at it on arrival.*
+
+**Register: 232 rows. Gates: twenty-one, twenty-one rc=0. Seventeen papers compiling.**
+
 ### Revision r2470 — 2026-08-11 (main line). **c54.187 ABSORBED — a disposition of this line's corrected, and the routed gate answered architecturally rather than built.**
 
 **⌗⌗ THE ABSORPTION.** *Eighty-three files against `14a90fd`. The fork's `CR_cosmology.tex`, `ACOUSTIC_two_arm.py`,

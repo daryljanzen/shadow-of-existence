@@ -6,6 +6,13 @@ job: How the programme lives in a git repository — branch discipline, the regi
 sources: [chat]
 ---
 
+## ⛭⛭⛭ ARRIVING? READ `NEXT.md` FIRST — the work order, added r2470
+
+***`NEXT.md` names what to do, in order, with enough detail to start cold and without Daryl.*** *Four blocks, each
+with its object, its first move, and what a result would look like — plus **what is deliberately NOT on it and
+why**.*
+
+
 ## ⛔⛔ READ THIS BEFORE YOU READ THE REGISTER AS A TO-DO LIST — added r2464
 
 ***`PROTECTED_OPEN` DOES NOT MEAN "DO NOT TOUCH". IT MEANS "DO NOT CLOSE".*** *Its own header:*

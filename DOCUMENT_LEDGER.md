@@ -19,7 +19,7 @@ sources: [chat]
 | **VIEW** | 5 |
 | **STATE** | 43 |
 | **METHOD** | 27 |
-| **RECORD** | 73 |
+| **RECORD** | 74 |
 
 ## ⌗ DECLARED CLASSES
 
@@ -164,6 +164,7 @@ sources: [chat]
 | `HANDOVER_c54.184.md` | RECORD | What the c54 session that ran c54.162–c54.184 knew that the ledgers do not hold. Written for its successor, who starts cold on a complete corpus. Read once, then work. | c54.184 | c54.184 |  |
 | `HISTORICAL_CONTEXT_einstein_cosmological_considerations.md` | RECORD | frozen record | — | — |  |
 | `HISTORICAL_CONTEXT_the_initial_rate_problem.md` | RECORD | frozen record | — | — |  |
+| `NEXT.md` | RECORD | THE WORK ORDER — what to do next, in order, with enough detail to start cold. Read after THE_HUB on arrival. Delete a block when it lands. | — | c54.187 |  |
 | `PROGRAMME_UNFINISHEDNESS_CATALOGUE.md` | RECORD | frozen record | — | — |  |
 | `PUZZLE_the-idea_transcript.md` | RECORD | frozen record | — | — |  |
 | `RECALL_ACROSS_COMPACTION_empirical-record.md` | RECORD | frozen record | — | — |  |
