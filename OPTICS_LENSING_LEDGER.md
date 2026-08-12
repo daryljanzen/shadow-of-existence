@@ -4,6 +4,17 @@ description: R-P's first field bake — observational optics and lensing thrown 
 current: c54.185
 ---
 
+> ⚠⚠ **THE $0.72$–$0.79$ SPACING FIGURE IN THIS DOCUMENT IS RETRACTED — annotated r2487, not erased.**
+>
+> *c54.190 withdrew it: **the scans that produced it ran at LMAXL = 1000, where the CR arm has FOUR peaks**, so a
+> "mean spacing" was a mean of THREE GAPS — and the first three gaps are the only place the two arms disagree.*
+> ⇒ ***At production depth the asymptotic spacing is $0.975$ of $\ell_A$ against the control's $1.002$ — 2.5%
+> short, not 21%.*** *And c54.191 showed the peaks track their own sound horizon at **98.2% of the acoustic rate**
+> under a moved $r_s$.*
+> ⇒ ***The front's statement is now one number and one mechanism: the acoustic SPACING is reproduced, and the
+> disagreement is the acoustic PHASE, by $0.62\pi$.***
+
+
 ## ⛭⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **AND THE BAKE MISSED ITS OWN SUBJECT LANDING**
 
 > ⚠⚠ **THIS LEDGER STOOD AT c54.163 AND CARRIED NOTHING ABOUT THE LENSING BUILT AT c54.181–184** *— no

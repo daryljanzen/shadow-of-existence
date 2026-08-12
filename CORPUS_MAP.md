@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2487 — 2026-08-11 (main line). **THE CONSOLIDATION THE FORK NAMED — P15's published text still carries the retracted framing, and the one experiment that would test "why $0.62\pi$" is one this line cannot run.**
+
+**⌗⌗ P15's TEXT, read at source in the c54.191 file absorbed at r2486, states the front as it was before the last
+two revisions — in three passages:**
+*· `sec:coherence`: **"$\ell_1/\ell_A=0.5703$ through six distinct states of the instrument"** ⇒ c54.187 showed that
+invariance is **an invariance of the TRANSFER**, and says nothing about the datum none of the six varied. **The
+sentence is true and reads as evidence for a stability it does not establish.***
+*· the deficit passage: **"$21.9\%$ against a position floor of $0.16\%$ … the first peak's position"** ⇒ **the
+quantity c54.187 showed states nothing and c54.190 showed sits inside the transient**.*
+*· `sec:refit-bound`: **"$0.72$–$0.79$ of that spacing"** ⇒ **the first-three-gap figure, at the retracted depth**.*
+⇒ ***And what replaces all three is one sentence the fork already wrote: this construction reproduces the acoustic
+spacing and disagrees with the sky in the acoustic phase by $0.62\pi$.*** *Routed as item 40 — **the papers are the
+fork's and were not touched**. `OPTICS_LENSING_LEDGER` carried $0.79$ on this side and is **annotated, not
+erased**.*
+
+**⛭⛭ AND A CONSTRAINT ON THIS LINE, STATED SO NOTHING WAITS ON IT.** *An attempt to run `ARM=cr LMAXL=3000
+NODRIVE=1` — **the direct test of whether the $0.62\pi$ is a driving consequence**, since an acoustic phase shift is
+a computable consequence of the driving and the instrument has the knob —* ***failed twice: a production-depth run
+exceeds this line's per-call execution limit, and a detached background run does not survive between calls.***
+⇒ ***So every production-depth result in this corpus was produced by the working fork, and this line has only ever
+READ them.*** *Recorded in `FOR_54` item 41 and in `CLAUDE_CODE_WORK_ORDER` §⓹b as **the highest-value single
+command available to a session that has one**.*
+
+⚠ **And that item states NO expected outcomes, deliberately.** *At r2485 this line named an experiment and wrote
+"if it does not move, X; if it does, Y" — **both horns were false**.* ***The run is stated as a question with no
+answer space attached.***
+
+**Register: 238 rows. Gates: twenty-one, twenty-one rc=0. Lints: four.**
+
 ### Revision r2486 — 2026-08-11 (main line). **c54.191 ABSORBED — THE ACOUSTICS WORK AT 98.2% OF THE REQUIRED RATE, this line's r2485 dichotomy was false, and the gate the fork routed is BUILT because its discipline was already a declaration.**
 
 **⛭⛭⛭ THE POSITIVE RESULT, REPRODUCED HERE FROM THE FORK'S OWN SPECTRA.** *Moving the one fitted parameter so the

@@ -141,6 +141,29 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 
 <!-- WORK-EDGE:END -->
 
+## ⛭⛭⛭ ⓹b THE ONE THING THIS LINE CANNOT DO AND YOU CAN — take it first if the acoustic front interests you
+
+***A production-depth spectrum run exceeds the chat line's per-call execution limit, and a detached background run
+does not survive between calls — the process is reaped.*** *So every production-depth result in this corpus was
+produced by the working fork, and **this line has only ever read them**.*
+
+**⇒ YOU HAVE A PERSISTENT SESSION. THE HIGHEST-VALUE RUN AVAILABLE IS ONE COMMAND:**
+
+```
+cd computations/beyond_the_wall
+ARM=cr LMAXL=3000 NODRIVE=1 SAVE=spectra/<rev>_cr_nodrive_L3000.npz python3 ACOUSTIC_two_arm.py
+```
+
+*Then **fit peaks 4–8 and read the intercept** (the method is in `receipts/L147_two_arm/B4_the_intercept_is_a_
+phase_and_the_control_proves_it.py`).*
+
+**⌗ WHY IT MATTERS.** *The front's whole content is now: **the acoustic spacing is reproduced (98.2% of the
+required rate) and the disagreement is the acoustic PHASE, by $0.62\pi$**. An acoustic phase shift is a computable
+consequence of the driving — **so "why $0.62\pi$" has an address, and `NODRIVE` is the knob that tests it**.*
+⚠ ***And state NO expected outcomes.*** *At r2485 this line named an experiment and wrote "if it does not move, X;
+if it does, Y" — **both horns were false**. Report what the intercept does and let the judgement follow.*
+⌗ *Two or three seam phases at production depth (`CRPHI`) is the sibling run, routed as `FOR_54` item 38.*
+
 ## ⓺ ADD LEADS — this is expected, not exceptional
 
 *Open a row in `THE_LIVE_ARC.md` in band **`L-221`–`L-499`** (the fork owns `L-500`+). **State the object, the

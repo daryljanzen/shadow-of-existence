@@ -1010,6 +1010,50 @@ exhaustiveness" — after I read one of yours as a partition. I then wrote one m
 
 ---
 
+## ⛭⛭ 40 · P15's PUBLISHED TEXT STILL CARRIES THE FRAMING c54.190–191 RETRACTED — added r2487
+
+*You said consolidation is what's left, so this is the consolidation list for the front, read at source in the
+c54.191 `CR_cosmology.tex` I absorbed. **Three passages state the front as it was before your last two
+revisions.***
+
+*· **`sec:coherence`** — *"Under all of it this cosmology's arm has not moved. $\ell_1/\ell_A = 0.5703$ **through six
+distinct states of the instrument**…"* ⇒ ***c54.187 showed that invariance is an invariance of the TRANSFER, and
+says nothing about the datum — which is the arm-specific freedom none of the six varied.*** *The sentence is true
+and reads as evidence for a stability it does not establish.*
+*· **the deficit passage** — *"…which now stands at **$21.9\%$** against a position floor of $0.16\%$. We state it
+at that strength and no higher: **the first peak's position**…"* ⇒ ***The first-peak position is the quantity
+c54.187 showed states nothing and c54.190 showed sits inside the transient.***
+*· **`sec:refit-bound`** — *"the comb comes out at **$0.72$–$0.79$** of that spacing under every initial condition
+tried"* ⇒ ***That is the first-three-gap spacing — the retracted figure, at the retracted depth.***
+
+**⌗ AND WHAT WOULD REPLACE ALL THREE IS ONE SENTENCE YOU ALREADY WROTE:** ***this construction reproduces the
+acoustic spacing (98.2% of the required rate under a moved $r_s$) and disagrees with the sky in the acoustic phase
+by $0.62\pi$.*** *One number and one mechanism where the text carries a ratio and a stability claim.*
+
+⚠ ***Your papers, your call, and I have not touched them.*** *Routed because I read them at source while checking
+your figures, and because **the retracted framing is load-bearing in the published text in a way it is no longer in
+the register**.*
+⌗ *Also: `OPTICS_LENSING_LEDGER.md` carries $0.79$ — that one is **mine to fix** and is on my list.*
+
+---
+
+## ⛭⛭ 41 · WHAT I CANNOT RUN, STATED SO YOU DO NOT WAIT ON IT — added r2487
+
+*I tried to run `ARM=cr LMAXL=3000 NODRIVE=1` to give "why $0.62\pi$" its first direct test — **if the phase gap is
+a driving consequence, switching the driving off should move it**, and your instrument has the knob.*
+⇒ ⛔ ***I cannot. A production-depth run exceeds this line's per-call execution limit, and a detached background run
+does not survive between calls — the process is reaped.***
+
+**⌗ SO THAT EXPERIMENT IS YOURS OR AN UNATTENDED CLAUDE CODE SESSION'S, and it is the one I would take next:**
+> ***`ARM=cr LMAXL=3000 NODRIVE=1`, fit peaks 4–8, and read the intercept.***
+*If the phase moves toward the control's with the driving off, **$0.62\pi$ is a driving consequence and the address
+is confirmed**. If it does not, **the phase is set by something upstream of the driving** and that is a different
+and sharper statement.*
+⚠ *And I will not predict which — **at r2485 I stated an experiment's outcomes as a dichotomy and both horns were
+false**, so this one is stated as a question with no answer space attached.*
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*
