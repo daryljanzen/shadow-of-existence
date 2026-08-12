@@ -10,7 +10,7 @@ current: r2500+c54.194
 
 > ***Read `THE_METHOD.md` first.*** *The short form: **the VEINS are areas held open to be known inside and out — never crossed out. The LEADS are everything noticed that could inform one.** Work the top lead, gather what it turns up, re-order, repeat.*
 >
-> *18 live rows: **4 veins**, **14 leads**. 244 struck.*
+> *20 live rows: **4 veins**, **16 leads**. 245 struck.*
 
 # I · THE VEINS — held open, to be known inside and out
 
@@ -20,13 +20,13 @@ current: r2500+c54.194
 
 - **MAPPED** — the boundary condition closes **per fibre** and cannot be broken by the number of fibres; the clause `c54.129` answered was **the one the argument does not need**; the UV degree is **quartic**, the ordinary zero-point degree; compactness buys the **IR free**
 - ⛔ **DARK** — **defining the sum**; the closed-form nonlinear $\Lambda>0$ solution; and whether a theory with **one dimensionful constant** can regulate at all — and ⛭ r2536 sharpens where that bites: **the corpus takes the de Sitter horizon's TEMPERATURE ($T=1/2\pi\alpha$, depending on $\alpha$ ALONE, and the channel through which $\hbar$ ENTERS the framework) and never its ENTROPY ($S=\pi(\alpha/\ell_P)^2$, depending on the RATIO)**; and ⛔ **CORRECTED r2537**: r2505 recorded this as *what selects among FIVE-component shears without assuming vacuum*, and **both halves of that were withdrawn** — c54.198 made the count **TWO** (the momentum constraint fixes $W$ under the York split) and c54.199 showed **Goldberg–Sachs governs the OPTICAL shear, not $\sigma^{TT}$ at all**. ⇒ **What actually remains dark here is narrower and better posed: the two are the graviton polarizations, they carry the GEOMETRY rather than the foliation, and `L-802` closes their stability for the small-data cell the construction needs**
-- *6 live lead(s) inform this vein*
+- *7 live lead(s) inform this vein*
 
 ## `L-175` · PO-9 · WHAT FIXES THE SUBSTRATE'S DIMENSION
 
 - **MAPPED** — the cut is four and **says nothing about the substrate**; a descent from $D>5$ must be **multi-step**; the construction is **single-step by design** and one-step-ness is governed by **Rule 2**, not taste
 - ⛔ **DARK** — **whether a second slicing could be non-arbitrary, its selection forced by the first** — and the substrate stays bounded **below only**; and ⛭ r2515 (`L-240`) **whether the CUT’s four-ness carries the FORCING of the dynamics** — the Dirac algebra singles out GR only in four dimensions, so the leaf’s four-ness may be doing work the corpus has never asked it to do. ⛭ r2518 CHARTED: $D=4$ is the **largest dimension in which Lovelock leaves exactly ONE dynamical term**, so the leaf’s dynamics carries **no unfixed coefficient** — Rule 2’s own object. **What stays DARK is the decision it turns on: is uniqueness of the leaf’s dynamics a desideratum this programme holds?** CR takes GR as given, so the forcing is a PROPERTY either way
-- *3 live lead(s) inform this vein*
+- *4 live lead(s) inform this vein*
 
 ## `L-202` · p0 item 4 · WHAT THE SEAM CARRIES
 
@@ -46,35 +46,33 @@ current: r2500+c54.194
 
 | # | row | informs | grounded | informs-how-much | what |
 |---|---|---|---|---|---|
-| **1** | **`L-204`** | `L-165` `L-175` | 3/3 | 2/3 | R-P stations ③④ — P8/P9, GR field equations and the exact-solution catalogue |
-| **2** | **`L-801`** | `L-165` | 3/3 | 2/3 | ⛭⛭ **cc54 WORKED `L-174`'s NONLINEAR REMAINDER** (the run Daryl handed it): does the nonlinear evolution keep $\sigma^{TT}$ free? — and it SPLITS. **The FREEDOM (the count) is the contracted Bianchi identity, an off-shell identity verified EXACTLY ($\nabla_\mu G^\mu{}_\nu=0$, all orders in $h$) on the INHOMOGENEOUS leaf and preserved for NON-parallel two-wave data — no Killing vector, so it covers the general case, not only P11's Gowdy model.** The $\sigma^2$ back-reaction is a positive $O(\epsilon^2)$ SCALAR sourcing the energy sector, not a new TT constraint. ⇒ **The STABILITY (no runaway) is the SEPARATE remainder**, routed to Friedrich and Andreasson–Ringström, Nariai the exception |
-| **3** | **`L-802`** | `L-165` | 3/3 | 2/3 | ⛭⛭ **cc54 CLOSED `L-245`'s STABILITY BRACKET against the literature** — a $2\times2$ grid in SYMMETRY×DATA-SIZE with ONE open cell. **(general, small) COVERED** — Friedrich 1986 (vacuum), Ringström 2008 (scalar), Rodnianski–Speck 2013 (fluid); **(symmetric, all) COVERED** — Andréasson–Ringström, Wald; **(general, ALL-data) OPEN** = the cosmic no-hair CONJECTURE, general GR's problem not CR's. ⇒ **And the cell CR needs — the perturbative graviton, vacuum, small departures from the dS substrate — is Friedrich's, which P11 itself names (“exactly the perturbative regime of the propagating graviton”).** Whether a large-data beyond-wall regime is ever needed is a construction question, open and not settled here |
-| **4** | **`L-242`** | `L-221` | 2/3 | 3/3 | ⛭ **THE HIGGS MECHANISM IS IDENTIFIED, NOT DECLINED — and the identification is undeveloped.** P6: **the $R$-symmetric sector IS the offset-free massless vacuum**, mass is the **$R$-odd departure** from it, and **the electroweak breaking that supplies the fermion mass IS the breaking of the substrate's orientation parity**. ⇒ **The one-constant theorem forbids the STRENGTHS; it says nothing about the MECHANISM.** And P3 has the corpus's own symmetry breaking (“located precisely”) — **nobody has set the two beside each other**. ⚠ r2522 recorded this as a decline; that was wrong |
+| **1** | **`L-521`** | `L-221` | 3/3 | 3/3 | **item 48 worked**: P3's $2M=r_0-r_0^3$ is ODD, so p0's $r_0\mapsto-r_0$ mass-reflection is an IDENTITY of it — the two symmetry breakings are ONE object. The order parameter is the offset, the symmetric sector is the bare substrate, the breaking has a derived cause rather than a chosen minimum, and **it is BOUNDED by the Nariai mass** where a quartic potential is not |
+| **2** | **`L-204`** | `L-165` `L-175` | 3/3 | 2/3 | R-P stations ③④ — P8/P9, GR field equations and the exact-solution catalogue |
+| **3** | **`L-801`** | `L-165` | 3/3 | 2/3 | ⛭⛭ **cc54 WORKED `L-174`'s NONLINEAR REMAINDER** (the run Daryl handed it): does the nonlinear evolution keep $\sigma^{TT}$ free? — and it SPLITS. **The FREEDOM (the count) is the contracted Bianchi identity, an off-shell identity verified EXACTLY ($\nabla_\mu G^\mu{}_\nu=0$, all orders in $h$) on the INHOMOGENEOUS leaf and preserved for NON-parallel two-wave data — no Killing vector, so it covers the general case, not only P11's Gowdy model.** The $\sigma^2$ back-reaction is a positive $O(\epsilon^2)$ SCALAR sourcing the energy sector, not a new TT constraint. ⇒ **The STABILITY (no runaway) is the SEPARATE remainder**, routed to Friedrich and Andreasson–Ringström, Nariai the exception |
+| **4** | **`L-802`** | `L-165` | 3/3 | 2/3 | ⛭⛭ **cc54 CLOSED `L-245`'s STABILITY BRACKET against the literature** — a $2\times2$ grid in SYMMETRY×DATA-SIZE with ONE open cell. **(general, small) COVERED** — Friedrich 1986 (vacuum), Ringström 2008 (scalar), Rodnianski–Speck 2013 (fluid); **(symmetric, all) COVERED** — Andréasson–Ringström, Wald; **(general, ALL-data) OPEN** = the cosmic no-hair CONJECTURE, general GR's problem not CR's. ⇒ **And the cell CR needs — the perturbative graviton, vacuum, small departures from the dS substrate — is Friedrich's, which P11 itself names (“exactly the perturbative regime of the propagating graviton”).** Whether a large-data beyond-wall regime is ever needed is a construction question, open and not settled here |
 | **5** | **`L-171`** | `L-202` | 2/3 | 3/3 | **PO-7** — whether the acoustic disagreement is real against the sky. ⛭ *Sharpened at c54.200 (`L-513`): over the phases `sec:what-crosses` ADMITS, the acoustic phase moves **0.207 against a 0.615 gap — a third — with the control OUTSIDE it**, so the disagreement is real and bounded rather than a free choice.* ⇒ **What is open is the confrontation itself: both admissible readings sit 76x and 102x the control, so something other than the seam phase carries the bulk of it — and the SPACING, robust to 1.9%, is what does not move** |
 | **6** | **`L-240`** | `L-175` | 2/3 | 3/3 | ⛭ **a LEAD from OUTSIDE literature, the first**: P12 cites `Teitelboim1973` for the Dirac brackets' FORM and never for the uniqueness theorem they carry (**zero “Lovelock” across 35 .tex files**). ** HKT: Einsteinian geometrodynamics is the ONLY canonical representation of those deformations; Teitelboim–Zanelli: LOVELOCK gravity closes the SAME algebra, and for $n>4$ there are Lovelock gravities other than GR. ** ⇒ **the Dirac algebra forces GR only in FOUR dimensions**, so **the four-ness of the CUT is what makes the dynamics forced** — which is not what `PO-9`'s guard says |
 | **7** | **`L-519`** | `L-165` | 2/3 | 3/3 | the corpus holds **$\kappa=0$ at Nariai** (P7) and the **equal-radii $dS_2\times S^2$ throat** (P15) and has never joined them — the two sides of the degenerate limit. **What temperature, if any, does the configuration a collapse reaches carry, read on the near-horizon geometry rather than on $\kappa/2\pi$?** Registered rather than left in a caveat |
 | **8** | **`L-210`** | `L-202` `L-221` `L-175` | 2/3 | 2/3 | the entry-point front — all 44 sites carry verdicts; **live leads are where a paper's own text points at an unexplored interior** |
 | **9** | **`L-217`** | `L-221` | 2/3 | 2/3 | the CR/Higgs relation is stated; **`F1` stays live — the relation breaks if the gauge group is ever promoted to forced** |
-| **10** | **`L-230`** | `L-165` `L-221` | 3/3 | 1/3 | the `COMPUTES:` convention — uptake **flat at 40 of 357** while the corpus grew a sixth; a receipt that declares what it computed is a receipt a vein can be excavated through |
-| **11** | **`L-207`** | `L-165` | 1/3 | 3/3 | ⓶ the confined/branch-point exhibition — **gated on PO-6 and must not be opened without it** (⓵ discharged r2450) |
-| **12** | **`L-218`** | *— instrument work* | 3/3 | 0/3 | ⓵ the reader-package formats via pandoc in CI |
-| **13** | **`L-228`** | *— instrument work* | 3/3 | 0/3 | `check_loci` extended to the possessive and compound-noun forms node 52 declined to claim |
-| **14** | **`L-514`** | *— instrument work* | 2/3 | 0/3 | **nothing in the tree reads UPWARD**: c54.195's withdrawal contradicted text two paragraphs above it in the same section, which had carried the right answer since c54.191. A withdrawal is the edit for which that matters most. Second instance of the class after the c54.182/c54.184 duplicate |
+| **10** | **`L-522`** | `L-165` `L-175` | 3/3 | 1/3 | items 19, 20 and 22 applied — two more locus conflations in published text (the class of routed item 21) and a section that rendered after the bibliography. **Both loci were found by reading, not by `check_loci`**, which sees only receipt-bound sentences: a recall bound stated rather than fixed |
+| **11** | **`L-230`** | `L-165` `L-221` | 3/3 | 1/3 | the `COMPUTES:` convention — uptake **flat at 40 of 357** while the corpus grew a sixth; a receipt that declares what it computed is a receipt a vein can be excavated through |
+| **12** | **`L-207`** | `L-165` | 1/3 | 3/3 | ⓶ the confined/branch-point exhibition — **gated on PO-6 and must not be opened without it** (⓵ discharged r2450) |
+| **13** | **`L-523`** | *— instrument work* | 3/3 | 0/3 | `check_receipts` skipped every `| p0 |` row — the parser was case-sensitive and the corpus writes p0 lowercase. **Nine rows invisible; surfaced only because the first `\rcpt{}` to name one read as an orphan.** Same shape as its own duplicate-stem guard: blind to a row it should police |
+| **14** | **`L-218`** | *— instrument work* | 3/3 | 0/3 | ⓵ the reader-package formats via pandoc in CI |
+| **15** | **`L-228`** | *— instrument work* | 3/3 | 0/3 | `check_loci` extended to the possessive and compound-noun forms node 52 declined to claim |
+| **16** | **`L-514`** | *— instrument work* | 2/3 | 0/3 | **nothing in the tree reads UPWARD**: c54.195's withdrawal contradicted text two paragraphs above it in the same section, which had carried the right answer since c54.191. A withdrawal is the edit for which that matters most. Second instance of the class after the c54.182/c54.184 duplicate |
 
-> ⛭⛭ **TAKE `L-204` NEXT** — *highest grounded×informative, and it informs 2 vein(s).*
+> ⛭⛭ **TAKE `L-521` NEXT** — *highest grounded×informative, and it informs 1 vein(s).*
 
 # III · THE ROUTED LIST (`FOR_54.md`) — leads handed to the working fork
 
-- ***18 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
+- ***13 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
 - *7 are ANSWERS to the fork rather than work for it* — 33, 34, 35, 36, 37, 38, 39
-- *21 closed* — 10, 15, 6, 8, 11, 12, 14, 16, 17, 21, 23, 24, 27, 29, 31, 40, 41, 43, 45, 46, 47
+- *26 closed* — 10, 15, 6, 7, 8, 11, 12, 14, 16, 17, 19, 20, 21, 22, 23, 24, 27, 29, 31, 40, 41, 43, 45, 46, 47, 48
 
-  - **7** · `FORK_c54.md` narrates c54.1–c54.35 and reads as current
   - **9** · A convention worth having, if the fork wants it
   - **18** · p0's FRONTIER ITEM 1, DATUM HALF: THE ANSWER IS THAT IT CANNOT BE DERIVE
-  - **19** · P1 CONTRADICTS ITS OWN ABSTRACT ABOUT $r=0$, IN PUBLISHED TEXT — added r
-  - **20** · P7 CONFLATES TWO LOCI IT ELSEWHERE SAYS MUST NEVER BE CONFLATED — added
-  - **22** · P12's §weyl-a3 RENDERS AFTER THE BIBLIOGRAPHY — added r2440, and it is a
   - **25** · P13's `sec:face-status` CONCEDES A SYMMETRY THE GROUP THEORY DOES NOT HA
   - **26** · TWO ITEMS ROUTED AT THE FINDER'S WEIGHT, NOT INDEPENDENTLY VERIFIED HERE
   - **28** · P16's HEADLINE ABUNDANCES CITE A RECEIPT'S REFERENCE COLUMN, NOT ITS COM
@@ -83,7 +81,6 @@ current: r2500+c54.194
   - **42** · P9's `cor:wall` CITATION COVERS THE METHOD, NOT THE CASE — added r2503
   - **44** · THE UNWORKED STRATUM IS EXHIBITED AT LINEAR ORDER, AND IT IS TEXTBOOK GR
   - **51** · THREE RECEIPTS FAIL THE FULL SWEEP — not on physics, on a prose PIN into
-  - **48** · THE HIGGS MECHANISM IS *IDENTIFIED* IN P6 AND NEVER DEVELOPED — correcte
   - **49** · `L-519` HAS A SECOND, INDEPENDENT FOOTING — the static frame does not ex
   - **50** · TRANS-PLANCKIAN — a partial answer, and the scoping is the whole content
   - **52** · YOU TAKE THE de SITTER HORIZON'S TEMPERATURE AND NEVER ITS ENTROPY — and

@@ -77,6 +77,7 @@ EXEMPT = {
 # the record, which is a different failure from the one this gate exists to catch.  Named and exact,
 # like the exemptions: nothing is excluded by pattern. **
 LOGS = (
+    'FORK_c54.md',
     'CORPUS_MAP.md',
     'PHASE7_BUILD_LEDGER.md',
     'CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md',

@@ -126,9 +126,9 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-240`** | r2518 | **the interior is charted r2518**; what remains is the DECISION it turns on: ***is uniqueness of the leaf's dynamics a desideratum this programme hold |
 | **`L-171`** | r2519 | **`PO-7` is the one verdict on the board, and it is now sharply posed**: ***is 0.408 in $\phi/\pi$, at the only two readings the construction PERMITS, |
 | **`L-519`** | r2524 | **NOT done — this is a question and it is stated as one**: *what temperature, if any, does the configuration a collapse reaches carry, read on the nea |
-| **`L-242`** | r2524 | ***does CR's structure say anything about the Higgs MECHANISM, as against the magnitudes it provably cannot supply?*** — the identification (electrowe |
+| **`L-801`** | r2525 | ***the STABILITY remainder: does the no-runaway hold for ALL data on the general no-isometry leaf, past the externally-covered vacuum-small-data and $ |
 
-*18 live rows carry a stated next step; the 14 longest-unworked are shown.*
+*20 live rows carry a stated next step; the 14 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session

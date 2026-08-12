@@ -113,11 +113,20 @@ def probe_6():
 
 
 def probe_7():
-    """FORK_c54.md narrates c54.1-c54.35 and reads as current."""
+    """FORK_c54.md narrates c54.1-c54.35 and reads as current.
+
+    ** DISCHARGED r2539 as a FROZEN RECORD rather than fixed. **  The corpus already has the category:
+    check_deferrals' LOGS list (r2531) -- dated records of past work, where rewriting a record to look
+    better is a different failure -- and bringing this file current would duplicate CORPUS_MAP and
+    THE_LIVE_ARC.  *** The defect was never that the narrative stops; it is that the file did not SAY
+    it stops.  Now it does, and the probe checks for that rather than for the stopping point. ***
+    """
     t = _raw('FORK_c54.md')
     if t is None:
         return False, 'FORK_c54.md absent -- moot by removal'
-    return ('c54.35' in t), 'narrative anchored at c54.35 with no span note'
+    frozen = 'FROZEN RECORD' in t
+    note = 'the frozen-record span note is present' if frozen else 'no span note -- reads as current'
+    return (not frozen), note
 
 
 def probe_8():

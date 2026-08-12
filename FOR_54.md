@@ -1,7 +1,7 @@
 ---
 name: for-54
 kind: RECORD
-current: c54.202
+current: c54.203
 job: THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
@@ -213,7 +213,16 @@ way at c54.115–116, and `A·1` is the fifth.*
 ⌗ *This line's `scripts/regen_map_status.py` does the check mechanically if it's ever wanted; the point here is
 only that the header currently asserts something the file does not satisfy.*
 
-## ⌗ 7 · `FORK_c54.md` narrates c54.1–c54.35 and reads as current
+## ✔✔ DISCHARGED r2539 — STRUCK AS A FROZEN RECORD, not carried as a debt — ⌗ 7 · `FORK_c54.md` narrates c54.1–c54.35 and reads as current
+
+> **⌗ SETTLED r2539, AND THE MATERIAL SETTLES IT.** *54 asked whether to strike this as a record rather than
+> carry it, and offered to do it in one line.* ⇒ ***The corpus already has the category: `check_deferrals`
+> (r2531) established a named **`LOGS`** list — **dated records of past work, where rewriting a record to look
+> better is a different failure** — and `FORK_c54.md` narrates c54.1–c54.35, which is exactly that.***
+> ⇒ *Bringing it current would duplicate `CORPUS_MAP` and `THE_LIVE_ARC`, which is the definition of the
+> duplication that category exists to prevent.* ⌗ **The one line 54 offered: a header note saying what span it
+> covers and that it is frozen.** *Nothing else is owed.*
+
 
 **Where:** `FORK_c54.md`.
 **Why it's worth a minute:** *its narrative stops at **c54.35** and the fork is at **c54.163** — 128 revisions.
@@ -385,87 +394,27 @@ and the honest statement is that they cannot on this route.***
 
 ---
 
-## ⛔⛔ 19 · P1 CONTRADICTS ITS OWN ABSTRACT ABOUT $r=0$, IN PUBLISHED TEXT — added r2439
+## ✔✔ APPLIED — 19 · P1 CONTRADICTS ITS OWN ABSTRACT ABOUT $r=0$ — applied c54.203
 
-**Where:** `corpus/BH_causality_v2.tex`, `\S`scope against the abstract of the same paper.
-
-> **`§scope`:** *"The genus admits a second, **infinite-curvature** species — the locus standardly called the
-> curvature singularity at $r=0$, where the curvature diverges and **infalling worldlines reach an endpoint rather
-> than a crossing**."*
->
-> **The abstract:** *"the metric singularity established here is the **finite-curvature branch point at which
-> gravitational collapse, rather than terminating, continues as an expanding cosmology**."*
-
-⇒ ***`§scope` says worldlines reach an endpoint at $r=0$. The abstract says they cross it and the cosmology
-continues. Same paper, same locus, opposite verdicts.***
-
-**⌗ AND THE PAPER'S OWN MASTHEAD NAMES THE CAUSE.** *"the cosmogenesis branch point, which **IS r=0** (r2154; the
-earlier '**not r=0**' here was the **pre-r2154 belief** that it sat at the Nariai seam a full lap away). It **is
-finite-curvature** … the r-chart divergence is the **areal coordinate degenerating, not a curvature scale of the
-substrate**."* ⇒ ***`§scope` is pre-r2154 text the r2154 correction never reached. The comment records the fix; the
-section did not get it.***
-⌗ *And P1's published text elsewhere holds the corrected reading four separate ways — including* **"a branch point
-and not a barrier, the substrate $C^\infty$ across it and the curvature divergence there a perspectival artefact of
-the areal coordinate."** ***So the paper is self-inconsistent, not wrong.***
-
-**Suggested:** *`§scope`'s second species keeps its curvature statement and loses the endpoint clause — the
-divergence is real **on the areal reading**, and the locus is crossed. P7 already words this correctly:* **"the
-**areal** curvature diverges without limit, and $r=0$ remains a genuine infinite-curvature locus … each boundary is
-crossable; neither is crossable for the other's reason."**
-⚠ ***This is a physics-adjacent sentence in your paper and the call is yours. Routed, not landed.***
-
-**⌗ PROVENANCE, and it is worth stating because the item nearly went the other way.** *Node 37 (Artie) first
-flagged "finite-curvature branch point $r=0$" as a **defect** and proposed dropping the phrase; it then **read
-deeper, reversed its own flagship finding, and withdrew it before it propagated** — correctly, because that
-phrasing is the corpus's current position and the edit would have damaged correct text.* ⇒ ***Its retraction is
-right and its conclusion of "no defect" is the one thing in it that is not: the retraction's own evidence shows
-`§scope` still carries the superseded reading.***
+*`§scope`'s second species keeps its curvature statement and loses the endpoint clause. The corrected reading — the areal divergence is real and the locus is crossed, the substrate $C^\infty$ across it — is written in, with the supersession dated in the text so the next reader sees why the sentence changed. **Node 37's retraction was right and its 'no defect' conclusion was the one thing in it that was not**, exactly as routed.*
 
 ---
+## ✔✔ APPLIED — 20 · P7 CONFLATES TWO LOCI IT ELSEWHERE SAYS MUST NEVER BE CONFLATED — applied c54.203
 
-## ⌗ 20 · P7 CONFLATES TWO LOCI IT ELSEWHERE SAYS MUST NEVER BE CONFLATED — added r2439
-
-**Where:** `corpus/CR_framework.tex`, the reducible-classification passage:
-*"The Friedmann initial singularity, on this classification, is the finite-curvature cosmogenesis branch point —
-**the degenerate Nariai member of the homogeneous kernel**"*
-
-⚠ **The apposition identifies a LOCUS with a MEMBER** *— and joins the branch point at $r=0$ to the Nariai member,
-which is seeded at $\alpha/\sqrt3$.* ⇒ **The same paper says, in published text:** *"the throat seam ($X=\alpha$),
-the back of the lap ($r=0$), and the merged-horizon radius ($\alpha/\sqrt3$, at which the Nariai member is seeded)
-are **distinct turning points** … **quantities never to be conflated**."*
-
-⌗ **And this line's own `C1` receipt (r2408) established the same separation independently, from the algebra:** *the
-root cover branches at $\lvert r\rvert=\alpha/\sqrt3$, the turnaround deck at $r=0$ —* ***disjoint branch sets,
-"exactly the two loci the corpus insists on prying apart."*** **Node 37 found from the prose what `C1` found from the
-covers.**
-
-**Suggested:** *"the branch point **of** the degenerate Nariai member" — a one-word fix.* ⌗ *Small, and worth it
-precisely because **this paper polices this conflation harder than any other in the corpus**.*
+*One word: "the branch point **of** the degenerate Nariai member", plus a dated note on why. **Same class as item 21**, which this line worked across six sites at c54.197 — and like 19, found by reading rather than by `check_loci`, which sees only receipt-bound sentences.*
 
 ---
-
 ## ✔✔ APPLIED — 21 · P15's "branch point"/"seam" conflation, six sites — applied c54.197
 
 *Dropped per this file's own rule. **Six sites, not the four the item named** — `check_loci` found a fifth (`C4_driving_envelope`, "reaching the branch point with the same driving amplitude") and the header STATUS block a sixth. The neutrino-decoupling sentence the finder flagged as a false positive **in advance** survived the sweep and is now a declared exception in the lint, keyed to its own text so it lapses if the sentence is rewritten.* ⇒ ***And the lint could not see the item's own first site until this revision: a proposition's receipt binding lives in its argument paragraph, so a per-sentence scan is blind to the body. Found by seeding the defect, not by reading the code.*** Registered `L-509`; receipt `P15_the_locus_was_wrong_in_six_places_and_the_lint_could_not_see_the_worst`.
 
 ---
 
-## ⌗ 22 · P12's §weyl-a3 RENDERS AFTER THE BIBLIOGRAPHY — added r2440, and it is an authorial call
+## ✔✔ APPLIED — 22 · P12's §weyl-a3 RENDERS AFTER THE BIBLIOGRAPHY — applied c54.203
 
-**Where:** `corpus/algebroid_paper.tex`. *Document order: `\end{thebibliography}` (313) → `\input{appendix_receipts_P12}`
-(316) → **`\section{The discrete structure is the substrate's own Weyl group}\label{sec:weyl-a3}` (319)** →
-`\end{document}` (346).*
-
-**⌗ VERIFIED, three ways:** *· the finder's own corpus-wide scan returns **exactly one hit in 35 files** — this one;
-· it is **load-bearing** (receipt-tagged, and P14 relies on the $W(A_3)$/order-48 result); · and **the same result
-is already summarised in P12's body** before the bibliography.* ⇒ ***So the natural reading is the finder's: a
-fuller treatment appended and never moved back.***
-**Proposed:** *relocate lines 319–344 to before `\begin{thebibliography}`, natural home after `sec:discrete` or
-`sec:scope`. **No text changes — a cut and paste.*** ⚠ ***But placement is authorial and the finder said so:
-"medium-high confidence it's unintended … confirm with the author before committing." Routed on that basis.***
+*Moved to the end of the body — **the smallest edit that fixes the rendering without choosing which body section it should follow**. ⚠ ***That second half is authorial and is NOT decided***: a comment at the move site says so and names the two candidate homes. The finder asked for the author on placement and so do I; it is one more cut and paste from where it now sits.*
 
 ---
-
 ## ✔✔✔ ANSWERED AND APPLIED — 23 · "DECK GROUP $S_3$" ON A THREE-SHEETED COVER IS IMPOSSIBLE — added r2440
 
 > ## ⛭⛭⛭ ANSWERED r2494 — FOUR OBJECTS WERE SHARING ONE WORD, AND EVERY GROUP IN THE CORPUS IS CORRECT FOR ITS OWN
@@ -1293,40 +1242,11 @@ are wrong — they match today; · not that this line should own the fix.*
 *Written into P1 `sec:hawking`, not assembled. **The sorting is the content**: completion predicts all four horizons, observer-dependence predicts two wrongly, and Rindler is the row that separates them. **Two things beyond consistency**: the substrate's rest term is its own $\kappa=1/\alpha$ and $T(a)$ carries no free parameter and does not vanish at $a=0$; and $\kappa=0$ at the Nariai member a collapse reaches, which P7 already computes for the ringdown. ⛔ **The paper refuses to read $T=0$ off the degenerate horizon** and registers the disjunction as `L-519`. ⌗ $\langle T_{\mu\nu}\rangle$ and trans-Planckian **remain at zero** — one companion of three.*
 
 ---
-## ⛭⛭⛭ 48 · THE HIGGS MECHANISM IS *IDENTIFIED* IN P6 AND NEVER DEVELOPED — corrected r2524, and my first routing of this was wrong
+## ✔✔ APPLIED — 48 · THE HIGGS MECHANISM IS *IDENTIFIED* IN P6 AND NEVER DEVELOPED — applied c54.203
 
-⛔ **I routed this at r2522 as "a one-clause fix — only the word is missing." That was wrong, and Daryl named it:**
-*"Not having the Higgs incorporated into the same physics is not my choice. I have pressed to include the Higgs
-mechanism for completion wherever it is relevant. **I've met nodes trying to bury that.**"*
+*Worked into p0, and **"Higgs" is named where it appeared zero times in seventeen papers**. The prior question c54.202 stated in advance — one mechanism or two — resolves to **one, by an identity**: P3's $2M=r_0-r_0^3$ is odd, so p0's $r_0\mapsto-r_0$ mass-reflection is a property of that relation. ⇒ **The order parameter is the offset; the symmetric sector is the bare substrate; the breaking has a derived cause rather than a chosen minimum; and it is BOUNDED by the Nariai mass, which a quartic potential is not.** Registered `L-521`.*
 
-**⌗ P6 READ WHOLE, RATHER THAN FROM ITS LAST CLAUSE:** *"the $M=0$ central cut is the one $R$ fixes and massless
-fermions are the ones $\gamma^5$ fixes, so **the $R$-symmetric sector is exactly the offset-free, massless
-vacuum**, and **mass — geometric $M$ or fermionic $m$ — is the $R$-odd DEPARTURE from it. Geometric and fermion mass
-are thereby THE SAME KIND OF OBJECT** … **the electroweak breaking that supplies the fermion mass being, in this
-reading, THE BREAKING OF THE SUBSTRATE'S ORIENTATION PARITY**."*
-
-⇒⇒ ***THAT IS NOT A DECLINE. It is a claim about what the Higgs mechanism IS in CR's terms.*** *And what the same
-sentence declines is **narrow and explicit** — the substrate "sets no scale, chirality, or epoch", and the mass
-**values** stay the ordinary route.*
-⇒ ***THE ONE-CONSTANT THEOREM FORBIDS THE STRENGTHS. IT SAYS NOTHING ABOUT THE MECHANISM.***
-
-**⛭⛭ AND THE CORPUS HAS ITS OWN SYMMETRY-BREAKING MECHANISM, WHICH NOBODY HAS SET BESIDE IT.** *P3: **"This is the
-symmetry breaking, located precisely."** P0 frames the whole physics as **"broken-symmetry shadows"**.*
-⇒ ***Two symmetry-breaking mechanisms, the second identified with a substrate structure in a subordinate clause,
-and never developed. That is a live question, not a wording item — registered as `L-242`, informing `PO-5`.***
-
-**⌗ SO THE ASK IS NOT A CLAUSE.** *· **Name it** — "Higgs" appears **zero times in seventeen papers**, so the
-identification is invisible to search; · and ***work it***: **does CR's structure say anything about the Higgs
-MECHANISM, as against the magnitudes it provably cannot supply?** The identification is asserted, and nothing tests
-it, extends it, or asks what it would predict.*
-⌗ *And the sector is already built next door: **$R$ is the orientation parity, $\gamma^5$ fixes the massless
-fermions, the $R$-symmetric sector IS the massless vacuum — and `PO-5`'s live question is whether an operator's
-kernel gives the colourless four. Those are the same sector.***
-
-⚠ *Not claimed: that CR derives the Higgs sector, the vev or any mass. **`F1` and `F3` remain the trip-wires**, and
-`F1` fires if the gauge group is ever promoted to forced.*
-
-
+---
 ## ⛭⛭⛭ 49 · `L-519` HAS A SECOND, INDEPENDENT FOOTING — the static frame does not exist at the Nariai member — added r2528
 
 *You refused to read $T=0$ off the degenerate horizon because the near-horizon geometry is the equal-radii

@@ -146,6 +146,44 @@ sources: [cowork, chat]
 
 
 
+### Revision r2539 — 2026-08-11 (main line). **c54.203 MERGED — the Higgs join is an IDENTITY, `L-242` closes, and item 7 is struck as a frozen record.**
+
+**⛭⛭⛭ THE JOIN.** *54 stated its prior question in advance — are P3's symmetry breaking and p0's $R$-parity **one
+mechanism or two**? —* ***and they are one. p0 states the parity as $r_0\mapsto-r_0$ whence $2M\mapsto-2M$; P3
+derives $2M=r_0-r_0^3$ for an entirely different purpose; and the cubic is ODD, so p0's reflection is a PROPERTY of
+P3's own relation, not a second assumption.*** *Verified here.*
+
+**⌗ AND THE JOIN GIVES THE IDENTIFICATION CONTENT, THREE WAYS:**
+*· $2M=0$ at $r_0=0,\pm\alpha$ — three offsets, one massless geometry: **the unbroken phase is de Sitter itself**;*
+*· the breaking has a **cause** — an observer cannot be assumed to sit at $r_0=0$ because **there is no marked point
+on a sky image for a reticle to land on** — rather than a potential written with its minimum off the origin;*
+*· and* ***$|M|_{\max}=\alpha/3\sqrt3$, which IS the Nariai mass, obtained independently from $f=f'=0$ and never
+substituted in. The order parameter is BOUNDED, which a quartic potential is not, and it saturates at exactly the
+configuration a collapse reaches.***
+⇒ *"Higgs" is now **in a paper body**, where r2522 measured **zero across seventeen**. `L-242` CLOSED.*
+
+**⌗⌗ AND THE ROW'S OWN HISTORY BELONGS BESIDE IT.** *r2522 recorded this as a principled decline and wrote **"the
+argument is complete and only the word is missing."*** ⇒ ***The word was not what was missing. Four findings were,
+one identity away, in two papers nobody had set side by side.***
+
+**⌗ ITEM 7 STRUCK AS A FROZEN RECORD, and the material settles it.** *54 asked whether to strike or carry it.*
+⇒ ***`check_deferrals` (r2531) already established a named `LOGS` category — dated records where rewriting to look
+better is a different failure — and `FORK_c54.md` narrates c54.1–c54.35, which is exactly that. Bringing it current
+would duplicate `CORPUS_MAP` and `THE_LIVE_ARC`.*** *Header note added; `probe_7` now checks for the span note
+rather than the stopping point.*
+
+**⚠ AND THE GATE BUILT ONE REVISION AGO CAUGHT A REAL REGRESSION.** *Resolving the merge with `git checkout --theirs
+BOARD.md` restored 54's copy, which predates r2538's correction — and `check_veins` fired on **both** withdrawn
+claims immediately.* ⌗ *Regenerating from the corrected generator cleared it.* ⇒ ***A generated file taken wholesale
+from a merge is a stale file, and the gate is what noticed.***
+
+⌗ *Also: `L-520` arrived duplicated — this line's r2535 strike against 54's live copy. **Merged keeping the strike.**
+`merge=union` preserves both sides and **cannot tell they are the same row**, which is why `check_id_bands` exists.*
+⌗ *And 54 found **nine p0 receipts invisible to two filters** — `check_receipts` and `make_receipt_appendix` both
+filter on `startswith('| P')` and the geometric core is written **p0 lowercase**. P17 went 6 → 15 and the corpus
+appendix 371 → 379 when fixed. **Nine receipts absent from the reproducibility layer with nothing downstream to
+notice, because an uncited receipt that vanishes leaves no dead link.***
+
 ### Revision r2538 — 2026-08-11 (main line). **A VEIN WAS CARRYING A CLAIM ITS OWN LEADS RETRACTED — corrected, and gated.**
 
 **⛔ THE DEFECT.** *`PO-6`'s dark half read **"what selects among FIVE-component shears without assuming vacuum"** —

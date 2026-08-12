@@ -5,6 +5,16 @@ sources: [cowork]
 current: r2506+c54.197
 ---
 
+> ## ⌗ FROZEN RECORD — covers c54.1–c54.35 only, marked r2539
+>
+> *This file narrates the fork's first thirty-five revisions and **stops there**. The fork is far past
+> that; **nothing in it is wrong, and none of it is current**.*
+> ⇒ ***It is a dated log, not a status document. For the fork's current state read `CORPUS_MAP`,
+> `ABSORPTION` and `THE_LIVE_ARC`; bringing this file current would duplicate all three.***
+> ⌗ *Named in `check_deferrals`' `LOGS` list for the same reason: **rewriting a record to look better
+> is a different failure from letting it stand.***
+
+
 > ⚠ **THIS FILE NARRATES c54.1–c54.35 AND NOTHING AFTER IT.** *Span named r2376+c54.166 when this was written; **the fork is at c54.188 as of r2477** — seven absorptions further on, and nothing has ever updated this file, because `build_fork_span.py` writes `CORPUS_MAP.md` and not this.
 > Nothing below is wrong — it simply never said what it covered, so it read as the fork's current account.*
 > ***A frozen banner is a good account of its span and a bad account of the present.*** *For the present, read

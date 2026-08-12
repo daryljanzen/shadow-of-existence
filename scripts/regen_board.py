@@ -54,13 +54,6 @@ VEINS = {
 # GROUNDED 0-3: how solid the footing is, INFORMS 0-3: how much a vein would learn). **
 # ** A lead with NO vein links is instrument work.  It is not counted as progress on the map. **
 LEADS = {
- 'L-242': ("\u26ed **THE HIGGS MECHANISM IS IDENTIFIED, NOT DECLINED \u2014 and the identification is undeveloped.** "
-   "P6: **the $R$-symmetric sector IS the offset-free massless vacuum**, mass is the **$R$-odd departure** from it, "
-   "and **the electroweak breaking that supplies the fermion mass IS the breaking of the substrate's orientation "
-   "parity**. \u21d2 **The one-constant theorem forbids the STRENGTHS; it says nothing about the MECHANISM.** And "
-   "P3 has the corpus's own symmetry breaking (\u201clocated precisely\u201d) \u2014 **nobody has set the two "
-   "beside each other**. \u26a0 r2522 recorded this as a decline; that was wrong",
-   ['L-221'], 2, 3),
  'L-171': ("**PO-7 \u2014 THE ONE VERDICT ON THE BOARD, and it is now sharply posed.** \u26ed r2519: the "
    "admissible pair $\\phi\\in\\{0,\\pi\\}$ is **FORCED** by P15's own transmission argument (every mode "
    "**freezes** before the crossing; a frozen mode has zero velocity), not merely distinguished. Band "
@@ -138,6 +131,19 @@ LEADS = {
    "`Teitelboim1973` for its CONTENT \u2014 the brackets are the embeddability condition and HKT's forcing is "
    "**dimension-dependent**, so the leaf being four is doing work",
    ['L-165','L-175'], 3, 2),
+ 'L-521': ("**item 48 worked**: P3's $2M=r_0-r_0^3$ is ODD, so p0's $r_0\\mapsto-r_0$ mass-reflection is an "
+   "IDENTITY of it \u2014 the two symmetry breakings are ONE object. The order parameter is the offset, the "
+   "symmetric sector is the bare substrate, the breaking has a derived cause rather than a chosen minimum, and "
+   "**it is BOUNDED by the Nariai mass** where a quartic potential is not",
+   ['L-221'], 3, 3),
+ 'L-522': ("items 19, 20 and 22 applied \u2014 two more locus conflations in published text (the class of "
+   "routed item 21) and a section that rendered after the bibliography. **Both loci were found by reading, not "
+   "by `check_loci`**, which sees only receipt-bound sentences: a recall bound stated rather than fixed",
+   ['L-165','L-175'], 3, 1),
+ 'L-523': ("`check_receipts` skipped every `| p0 |` row \u2014 the parser was case-sensitive and the corpus "
+   "writes p0 lowercase. **Nine rows invisible; surfaced only because the first `\\rcpt{}` to name one read "
+   "as an orphan.** Same shape as its own duplicate-stem guard: blind to a row it should police",
+   [], 3, 0),
  'L-204': ("R-P stations \u2462\u2463 \u2014 P8/P9, GR field equations and the exact-solution catalogue",
    ['L-165','L-175'], 3, 2),
  'L-217': ("the CR/Higgs relation is stated; **`F1` stays live \u2014 the relation breaks if the gauge group is "
