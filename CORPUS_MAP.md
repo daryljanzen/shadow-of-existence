@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r2474 — 2026-08-11 (main line). **PO-9 NARROWED A SECOND TIME — one-step-ness is governed by Rule 2, and the whole row now turns on one question.**
+
+**⌗⌗ WHERE r2466 LEFT IT.** *"$D=5$ is forced **only if** the descent is one step" — with one-step-ness looking like
+a bare feature of the construction, a habit rather than a result.*
+
+**⛭⛭ IT IS NOT BARE. THE PROGRAMME'S OWN CRITERION BEARS ON IT.**
+*p0: **"least-arbitrariness being the programme's own criterion of necessity (Rule 2 …): a symmetry-breaking modulus
+is the ADJUSTABLE PARAMETER that criterion rejects."***
+*And **P14 already applies it to a COUNT**, one paper over, in an argument nobody had connected to dimension: the
+least-arbitrary construction places a slicing plane on each of the three hinges, and* ***"a one-hinge truncation is
+excluded not as disfavoured but as carrying an unfixed arbitrary modulus, which the principle forbids."***
+⇒⇒ ***SO THE CORPUS ALREADY EXCLUDES A STRUCTURE ON THE GROUND THAT ITS SELECTION IS UNFIXED — AND A SECOND SLICING
+STEP WOULD NEED ITS OWN SELECTION.*** **The same argument that fixes the hinge count governs the step count.**
+
+**⛔⛔ AND THE CONCLUSION IS DECLINED, WHICH IS THE POINT OF THE ROW.** ***A second step's selection might be FORCED
+BY THE FIRST, carrying no free modulus, in which case Rule 2 does not exclude it — and nothing in the corpus
+examines that case, nor can it be settled by inspection.***
+⇒ ***THE SUBSTRATE IS NOT BOUNDED ABOVE HERE. PO-9's object survives intact.***
+
+**⌗ WHAT THE NARROWING DELIVERS:** *the r2466 condition is **not free-floating**. It is decided by one sharp
+question —* ***CAN A SECOND SLICING BE NON-ARBITRARY, ITS SELECTION FORCED BY THE FIRST RATHER THAN CHOSEN?***
+*— and that is a question about the swing, not about dimension.*
+
+**⌗ AND THE GUARD IS OBEYED RATHER THAN ARGUED AROUND.** *PO-9 warns that reading the cut's dimension as capping the
+substrate re-makes the c54.6 error.* ***No step here uses the cut's dimension: the argument runs entirely on Rule 2
+and a count of MODULI, which is a different quantity — and the conclusion a cap would license is exactly the one
+declined.***
+
+⌗ *Route worth recording: **asking the row's own next question, then reading the principle at source instead of from
+a memory of it.** The criterion turned out to be already applied to a count, in another paper, by an argument no row
+had connected to this one.*
+
+**Register: 232 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2473 — 2026-08-11 (main line). **THE WORK ORDER REWRITTEN — the r2472 draft re-made the r2463 inversion, one revision after correcting it, and in a document written to instruct someone else.**
 
 **⛔⛔ WHAT WENT WRONG.** *r2472's Claude Code order restricted an unattended session to **mechanical work**, and its
