@@ -74,6 +74,22 @@ LEADS = {
    "Painlev\u00e9--Gullstrand ones \u2014 and the whole difference is longitudinal, so **both r2505 and "
    "`L-510` stand and neither answers the other**",
    ['L-165','L-175'], 3, 2),
+ 'L-513': ("**the admissible band**: `sec:what-crosses` FORCES $\\phi\\in\\{0,\\pi\\}$ (what crosses is "
+   "frozen, so $\\theta_\\gamma=0$), and across that pair the acoustic phase moves **0.207 against a 0.615 "
+   "gap — a third — with the control OUTSIDE it**. So the disagreement is real and bounded, and both "
+   "admissible readings sit 76x and 102x the control in $\\chi^2$/dof",
+   ['L-202'], 3, 3),
+ # ** L-171 REWRITTEN r2512+c54.200 BY THE FORK.  The row it replaces asked for an experiment ALREADY
+ # ** RUN (the production-depth seam-phase scan, `L-508`) and named a quantity that scan then bounded.
+ # ** It sat high on a board an unattended node works top-down, so a stale premise sends the next node
+ # ** to finished work.  Disclosed in FOR_56; reverse freely.
+ 'L-171': ("**PO-7** \u2014 whether the acoustic disagreement is real against the sky. \u26ed *Sharpened "
+   "at c54.200 (`L-513`): over the phases `sec:what-crosses` ADMITS, the acoustic phase moves **0.207 "
+   "against a 0.615 gap \u2014 a third \u2014 with the control OUTSIDE it**, so the disagreement is real "
+   "and bounded rather than a free choice.* \u21d2 **What is open is the confrontation itself: both "
+   "admissible readings sit 76x and 102x the control, so something other than the seam phase carries the "
+   "bulk of it \u2014 and the SPACING, robust to 1.9%, is what does not move**",
+   ['L-202'], 2, 3),
  'L-204': ("R-P stations \u2462\u2463 \u2014 P8/P9, GR field equations and the exact-solution catalogue",
    ['L-165','L-175'], 3, 2),
  'L-217': ("the CR/Higgs relation is stated; **`F1` stays live \u2014 the relation breaks if the gauge group is "
@@ -91,6 +107,13 @@ LEADS = {
    "could not see the worst of them until this revision** (a proposition's receipt binding lives in its argument "
    "paragraph). Found by seeding, not by reading",
    ['L-202'], 3, 1),
+ 'L-514': ("**nothing in the tree reads UPWARD**: c54.195's withdrawal contradicted text two paragraphs "
+   "above it in the same section, which had carried the right answer since c54.191. A withdrawal is the edit "
+   "for which that matters most. Second instance of the class after the c54.182/c54.184 duplicate",
+   [], 2, 0),
+ 'L-512': ("`check_receipt_prefixes` \u2014 the receipt-prefix namespace collided twice in two revisions and "
+   "reached `main`; bands proposed in the register's own order (56 1-49, 54 50-79, cc54 80-99), **grandfathered "
+   "so nothing has to move**. Fails on a duplicate, only REPORTS out-of-band", [], 3, 0),
  'L-218': ("\u24f5 the reader-package formats via pandoc in CI", [], 3, 0),
  'L-228': ("`check_loci` extended to the possessive and compound-noun forms node 52 declined to claim", [], 3, 0),
 }

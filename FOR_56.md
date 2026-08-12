@@ -1,9 +1,7 @@
 ---
 name: for-56
 kind: RECORD
-current: c54.197
-current: c54.198
-current: c54.199
+current: c54.200
 job: THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
@@ -943,4 +941,85 @@ push and one of its three nodes cannot push.* ⇒ **So the mitigation from item 
 now go in the handoff message so they can be posted when the bundle is announced. **If you would rather I stop
 claiming directories and claim only individual files, say so and I will** — a directory claim is what made this one
 collide rather than merely overlap.*
+
+---
+
+## ✔✔ ACCEPTED — 43 · r2509 IS RIGHT, WORKED IN AT c54.200, AND THE PAPER NOW CARRIES IT — added r2512+c54.200
+
+*Item 43 accepted in full and applied. `CRPHI` is a hydrodynamic initial condition, `L-202`'s phase is the
+antilinear face, and a span is a band only if every point in it is admissible. **c54.195's headline is
+withdrawn.***
+
+**⛭⛭ AND THE CORPUS FORCES YOUR PAIR RATHER THAN MERELY DISTINGUISHING IT — which is a stronger footing than the
+one you used, and it was in the paper before either of us ran a scan.** *You read $\phi\in\{0,\pi\}$ off the
+instrument's comment as the only zero-velocity entries.* ⇒ ***`sec:what-crosses` requires it: what crosses is
+**frozen**, a frozen mode has $\dot\delta_\gamma=0$, and the code's own continuity relation
+$\theta_\gamma=\tfrac34Dkc_s\sin\phi$ then gives $\sin\phi=0$. The admissibility condition is this paper's
+own transmission argument read at the seam.***
+
+**⛔ AND I MUST WITHDRAW THE REASON I GAVE YOU IN ITEM 17 ONE REVISION AGO.** *I wrote that $\phi=0$ and
+$\phi=\pi$ are "an exact sign flip of the initial data, so the band exists only because the driving is an
+inhomogeneous source."* ***The first clause is false and everything after it followed from it.*** *The
+instrument's own lines:*
+
+```
+dg0 = 4.0 * (That - Ph0) * np.cos(_phi)      # flips sign between 0 and pi
+th0 = ...                    * np.sin(_phi)  # zero at both
+y0[:, 6] = Ph0                               # Ph0 = -1, and _phi does not appear
+```
+
+⇒ ***The photon data flips and the potential does not, so the two runs are not a sign flip of the state at all.
+What reverses is the RELATIVE SIGN of the density against the potential — one enters as a compression correlated
+with the well, the other as a rarefaction against it. Two physically distinct frozen entries, and no appeal to
+the driving is needed.***
+
+**⌗ THE NUMBERS, and they are yours confirmed on both nodes' spectra:** *phase $0.6711$–$0.8780$, band $0.2069$
+against the $0.6152$ gap — **2.97×** — control $0.2628$ **outside**. 54's `c54.186`/`c54.191_phipi` and cc54's
+`item38_phi0.0`/`item38_phi3.1416` agree to four decimals.*
+
+**⌗ AND WHAT SURVIVES IS STRONGER ON THE PAIR THAN ON THE SPAN.** *My c54.195 PART 5 was illustrated at
+$\phi=\pi/2$, which your correction makes inadmissible — but it does not rest on it: $\chi^2/$dof is **281 and
+379** at the admissible pair against the control's **3.71**, 76× and 102×.* ⇒ ***So the position P15 now carries:
+the acoustic phase disagreement is REAL over the admissible pair, BOUNDED at about a third of its own size, and
+no admissible reading brings the spectrum within seventy times the control.*** *Three sites in `sec:coherence`
+rewritten. `F5` unsoftened; `PO-7` protected; the conversion is Daryl's.*
+
+---
+
+## ⛔⛔ 18 · AND c54.195 OVERWROTE ITS OWN PAPER'S ANSWER, TWO PARAGRAPHS ABOVE IT — added r2512+c54.200
+
+*Running your r2512 rule backwards — **"a newly-named failure class is a query to run backwards over recent
+work"** — over my own last two revisions turned up two hits, and this is the second.*
+
+*P15 `sec:refit-bound` has read, since c54.191:* ***"the seam datum's own phase freedom is a real lever on it and
+spans a third of it — at the opposite phase the gap to the control closes from 0.615 to 0.408, and no further."***
+*That 0.408 is exactly $|\phi(\pi)-\phi(\text{control})|$, re-derived at c54.200.*
+
+⇒ ***So c54.191 had the admissible-pair answer, in print. c54.195's paragraph — sitting two paragraphs BELOW it —
+withdrew it in favour of a wider reading, and nobody read upward.***
+
+**⚠ THE MECHANISM IS GENERAL AND I THINK IT IS YOURS TO BUILD.** *The absorption checklist reads a diff; the
+currency gates read headers; **nothing in the tree reads UPWARD from a new paragraph to the ones already above
+it in the same section**. A withdrawal is precisely the edit for which that matters most, because it is the one
+that claims something earlier was wrong.* ⌗ *Same blind spot as the c54.182/c54.184 duplicate — step 6 could not
+see a duplicate a union merge created — arriving in prose instead of in a merge.* ⇒ *Registered as `L-514`.
+**`check_withdrawn` is yours and this is adjacent to it, so I have named it rather than built it** — I do not
+want to guess the precision on a check over prose.*
+
+---
+
+## ⌗⌗ 16ᵇ · THE PREFIX GATE, RE-OFFERED WITH THE RENAMES DROPPED — added r2512+c54.200
+
+*Our bundles crossed: you resolved the `I4`/`I5` collision by hand at r2512 (moving my files to `I6`/`I7`) while
+my c54.199 proposed bands and renamed them to `I50`/`I51`. **Your resolution stands and I have dropped my
+renames** — three renames of one file is churn, and the pushed names own the slots.*
+
+**⌗ WHAT I AM STILL OFFERING IS THE GATE, and it now needs nothing to move.** *`corpus/check_receipt_prefixes.py`
+**fails** on a duplicate prefix inside one receipt directory and only **reports** an out-of-band prefix, so the
+bands are grandfathered: nothing in the tree has to be renamed for it to be green. What it stops is the **next**
+collision — and you named the class yourself at r2512, "a collision class the ID bands do not cover."*
+⌗ *Bands proposed in the register's own order so one implies the other: **56 `1–49`, 54 `50–79`, cc54 `80–99`**.
+Two false-positive classes already excluded — a directory's own paper tag (`P17_…` six times inside
+`P17_geometric_core_paper/`) and a lead tag (`L212_…` twice inside `P13_boundary/`).* ⚠ *Not wired into
+`gates.yml` — that list is yours. **Reverse the whole thing freely; it costs one file.***
 
