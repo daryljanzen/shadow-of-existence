@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2526 — 2026-08-11 (main line). **THE DIRECTION HAS AN EXACT OBSTRUCTION — an $R$-odd operator has no graded index, and PO-5's question inverts.**
+
+**⌗ WHY THE COLOURED THREE ARE FIELDS, in the algebra.** *$\{\gamma^\mu,\gamma^5\}=0$ for every $\mu$ — verified
+in the chiral basis — so the massless Dirac operator **anticommutes** with $\gamma^5$, $\ker D$ splits into $\pm$
+eigenspaces, and $\dim\ker_+-\dim\ker_-$ is well defined.* ***That is the whole machinery by which P14 turns three
+gradings into three fields.***
+
+**⛔ AND A MASS TERM DESTROYS IT.** *$[m\mathbb 1,\gamma^5]=0$ — a Dirac mass **commutes** with $\gamma^5$ — so
+**$\{D+m,\gamma^5\}\ne0$**, while $\{D,\gamma^5\}=0$ without it.* ***It is the mass, and only the mass, that
+breaks the grading.***
+⇒⇒ ***THE VERY THING THAT MAKES THE COLOURED THREE FIELDS IS DESTROYED BY GOING $R$-ODD. An $R$-odd operator has no
+index in P14's sense.***
+
+**⛭⛭ SO THE QUESTION INVERTS, and that is the result.** *r2525: **the operator must be $R$-odd**. r2526: **an
+$R$-odd operator cannot deliver its four the way the massless one delivers its three**.*
+⇒ ***"Is there an operator whose kernel is the four?" was the WRONG QUESTION — not because the answer is no, but
+because "kernel of a graded operator" is a structure ONLY THE $R$-EVEN SECTOR HAS.***
+
+**⌗ AND THAT IS WHY P13's "REMAINS UNBUILT" HAS STAYED UNBUILT.** *r2476 read it as "the unbuilt thing is an
+OPERATOR, not a SECTOR".* ⇒ ***Sharper: the unbuilt thing is a BRIDGE — some way for gradings to become fields that
+is NOT "be a kernel" — because on the $R$-odd side the kernel route is structurally unavailable.***
+⇒ *And that is `L-242`'s Higgs question with a reason it is hard: **the corpus's one crossing from grading to field
+runs through a grading that mass breaks**.*
+
+⚠ *Not claimed: that **no bridge exists** — only that the kernel one does not reach there — or that **mass cannot be
+described**: ordinary QFT does it daily, and the claim is about the INDEX construction. **`PO-5` stays open**, and
+P14's splitting remains "external to the geometry".*
+
+⌗ ***AND THE NARROWING CAME FROM DARYL'S CORRECTION.*** *Two revisions earlier this line had recorded the Higgs as a
+principled decline and closed the turn.* ***The vein's interior moved twice in two revisions because that reading was
+refused — which is the clearest demonstration this session has produced of why "only the wording" is the dangerous
+sentence.***
+
 ### Revision r2525 — 2026-08-11 (main line). **PO-5's MISSING OPERATOR AND `L-242`'s UNDEVELOPED IDENTIFICATION ARE ONE GAP — and the vein gains a direction.**
 
 **⌗ P14 NAMES THE OPENING AS TWO DISCRETE STRUCTURES, NOT ONE.** *"What that boundary leaves standing is the

@@ -37,7 +37,7 @@ current: r2500+c54.194
 ## `L-221` · PO-5 · WHAT MAY EXIST, AND WHY THESE
 
 - **MAPPED** — the split is **specified** (12 coloured / 3 colourless, 4 with $\nu_R$); the coloured three are the **index of a Dirac operator** and cross to fields **by being a kernel**; the colourless four are the $D_6$ representations trivial on the deck; the group acting is **$S_3$**
-- ⛔ **DARK** — **no operator whose kernel is the four** — and nothing yet says whether *kernel* is the only bridge from a grading to a field. ⛭ r2525 GIVES IT A DIRECTION: P14 computes on the **massless** ($R$-even) sector and says the splitting is **“external to the geometry”**, while P6 puts **mass = the $R$-odd departure**. ⇒ **any operator whose kernel is the four must be $R$-ODD** — and that is the SAME question as `L-242`’s Higgs identification, asked from the other side
+- ⛔ **DARK** — **no operator whose kernel is the four** — and nothing yet says whether *kernel* is the only bridge from a grading to a field. ⛭ r2525 GIVES IT A DIRECTION: P14 computes on the **massless** ($R$-even) sector and says the splitting is **“external to the geometry”**, while P6 puts **mass = the $R$-odd departure**. ⇒ **any operator whose kernel is the four must be $R$-ODD** — and that is the SAME question as `L-242`’s Higgs identification, asked from the other side. ⛔ r2526 INVERTS IT: a mass term **commutes** with $\gamma^5$, so $\{D+m,\gamma^5\}\ne0$ and **an $R$-odd operator has NO graded index**. ⇒ **“kernel of a graded operator” is a structure only the $R$-EVEN sector has, so the real question is: WHAT BRIDGE from grading to field is not “be a kernel”?**
 - *4 live lead(s) inform this vein*
 
 # II · THE LEADS — ordered by how grounded and how informative

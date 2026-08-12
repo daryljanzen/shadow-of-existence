@@ -31,7 +31,7 @@ VEINS = {
    "a Dirac operator** and cross to fields **by being a kernel**; the colourless four are the $D_6$ representations "
    "trivial on the deck; the group acting is **$S_3$**",
    "**no operator whose kernel is the four** \u2014 and nothing yet says whether *kernel* is the only bridge from a "
-   "grading to a field. \u26ed r2525 GIVES IT A DIRECTION: P14 computes on the **massless** ($R$-even) sector and says the splitting is **\u201cexternal to the geometry\u201d**, while P6 puts **mass = the $R$-odd departure**. \u21d2 **any operator whose kernel is the four must be $R$-ODD** \u2014 and that is the SAME question as `L-242`\u2019s Higgs identification, asked from the other side"),
+   "grading to a field. \u26ed r2525 GIVES IT A DIRECTION: P14 computes on the **massless** ($R$-even) sector and says the splitting is **\u201cexternal to the geometry\u201d**, while P6 puts **mass = the $R$-odd departure**. \u21d2 **any operator whose kernel is the four must be $R$-ODD** \u2014 and that is the SAME question as `L-242`\u2019s Higgs identification, asked from the other side. \u26d4 r2526 INVERTS IT: a mass term **commutes** with $\\gamma^5$, so $\\{D+m,\\gamma^5\\}\\ne0$ and **an $R$-odd operator has NO graded index**. \u21d2 **\u201ckernel of a graded operator\u201d is a structure only the $R$-EVEN sector has, so the real question is: WHAT BRIDGE from grading to field is not \u201cbe a kernel\u201d?**"),
  'L-165': ("PO-6 \u00b7 WHAT A QUANTUM OF THIS GEOMETRY IS",
    "the boundary condition closes **per fibre** and cannot be broken by the number of fibres; the clause `c54.129` "
    "answered was **the one the argument does not need**; the UV degree is **quartic**, the ordinary zero-point "
