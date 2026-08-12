@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2511 — 2026-08-11 (main line). **`THE_WEAVE` BROUGHT CURRENT — convergence has a third form, and it is between NODES rather than between fields.**
+
+**⛭⛭ THE SAME MEASUREMENT, MADE TWICE, BY TWO NODES, ON TWO INSTRUMENT PATHS.** *cc54 ran routed item 38 at
+production depth on **its own runner**; 54 ran it on `ACOUSTIC_two_arm` from **its own tree**.*
+⇒ ***Both give `CRPHI`$=0\to\phi/\pi=0.8780$ and `CRPHI`$=\pi\to0.6711$ — agreeing to the digit, four spectra,
+neither node having seen the other's numbers.***
+⇒⇒ ***That is not convergence of PROBES on one object. It is convergence of INSTRUMENTS on one number — and it tests
+the instrument rather than the object, which nothing else in this corpus does.***
+
+**⌗ SO THE WEAVE NOW HOLDS THREE MECHANISMS, each evidence of a different thing:**
+*· **adjacency** — the parts are **connected**: a debt here is payable from there;*
+*· **convergence of probes** — the **object** is real: three mathematics stations at one knot (`L-203`);*
+*· **convergence of instruments** — the **measurement** is real: two nodes, two code paths, one number.*
+⚠ *And only the third can catch a shared-code artefact, **because the two paths do not share the code**.*
+⌗ **THE OPERATIONAL COROLLARY:** ***when a number becomes load-bearing, a second node re-measuring it on a different
+path is worth more than another decimal place from the first*** *— and it costs nothing, because the nodes are
+already running.*
+
+**⌗ AND THE SAME SPAN PRODUCED ITS DARK TWIN: A CLAIM CORRECTED FROM TWO DIRECTIONS AT ONCE.** *r2504's "nothing
+selects among five shear configurations" fell to the **vacuum** side at r2505 (Goldberg–Sachs exists and is
+hypothesis-bound) and to the **constraint** side at c54.198 (the momentum constraint fixes three, leaving **two** —
+the graviton's polarizations, which `cor:radiation` already names).*
+⇒ ***A claim that draws two independent corrections was not a near-miss. It was a claim made without looking — and
+the weave is what made both looks cheap: the constraint was in the same receipt, and the naming sentence was one line
+past a passage already quoted.***
+
+⌗ *Also propagated into the file: **`L-206` and `L-203` struck**; **the acoustic front's four withdrawals** with the
+spacing at 98.2% the one thing that does not move; and **`CLAIMS.md`, `check_claims`, `check_branches`**, built after
+cc54's work stranded twice.*
+
 ### Revision r2510 — 2026-08-11 (main line). **c54.198 MERGED — the unworked stratum's free shear is TWO, not five, and the constraint that fixes the other three was printed in this line's own receipt.**
 
 **⛔ THE CORRECTION, and it is exact.** *c54.198: "`I3` closes 'a five-dimensional space of shear configurations at

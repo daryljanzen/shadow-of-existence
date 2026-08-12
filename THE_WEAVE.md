@@ -1,9 +1,46 @@
 ---
 name: the-weave
 kind: STATE
-current: r2496+c54.194
+current: r2511+c54.198
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
+
+> ## ⛭⛭⛭ BROUGHT CURRENT r2511 — CONVERGENCE HAS A THIRD FORM NOW, AND IT IS BETWEEN NODES
+>
+> *r2496 recorded two mechanisms: **closure-adjacency** (sequential — a closure here pays a debt there) and
+> **convergence** (independent probes naming one object). Both stand.* ⛭ ***A third has appeared, and it is the
+> strongest evidence this arrangement can produce.***
+>
+> ## ⌷ THE SAME MEASUREMENT, MADE TWICE, BY TWO NODES, ON TWO INSTRUMENT PATHS
+>
+> *cc54 ran routed item 38 at production depth on its own runner; 54 ran it on `ACOUSTIC_two_arm` from its own tree.*
+> ⇒ ***Both give `CRPHI`$=0\to\phi/\pi=0.8780$ and `CRPHI`$=\pi\to0.6711$ — agreeing to the digit, four spectra,
+> neither node having seen the other's numbers.***
+> ⇒⇒ ***That is not convergence of PROBES on one object. It is convergence of INSTRUMENTS on one number — and it
+> tests the instrument rather than the object, which nothing else in this corpus does.***
+>
+> **⌗ AND THE THREE FORMS ARE EVIDENCE OF THREE DIFFERENT THINGS, which is why all three belong here:**
+> *· ***adjacency*** — the parts are **connected**: a debt here is payable from there;*
+> *· ***convergence of probes*** — the object is **real**: three fields arriving at one knot (`L-203`);*
+> *· ***convergence of instruments*** — the **measurement** is real: two nodes, two code paths, one number.*
+> ⚠ *And the third is the only one that can catch a shared-code artefact, because **the two paths do not share the
+> code**.*
+>
+> ## ⌷ AND THE OTHER SHAPE THIS SPAN ADDED: A CLAIM CORRECTED FROM TWO DIRECTIONS
+>
+> *r2504 asserted "a five-dimensional space of shear configurations, and nothing selecting among them".* ⇒ *r2505
+> corrected it from the **vacuum** side (Goldberg–Sachs exists and is hypothesis-bound); c54.198 corrected the
+> **count** from the **constraint** side (the momentum constraint fixes three, leaving **two** — the graviton's
+> polarizations, which `cor:radiation` already names).*
+> ⇒ ***A claim that draws two independent corrections was not a near-miss. It was a claim made without looking — and
+> the weave is what made both looks cheap: the constraint was in the same receipt, and the naming sentence was one
+> line past a passage already quoted.***
+>
+> ⌗ *Also moved: **`L-206` struck** (P3 was already object-first, r2419); **`L-203` struck** (five stations walked,
+> the knot untied); **the acoustic front's four withdrawals** logged in `THE_BASE_RATE`, with the **spacing at 98.2%
+> of the required rate** the one thing that does not move; and **`CLAIMS.md`, `check_claims`, `check_branches`** built
+> after cc54's work stranded twice.*
+
 
 > ## ⛭⛭⛭ BROUGHT CURRENT r2496 — AND THE WEAVE HAS A **SECOND** MECHANISM NOW, which is the substantive change
 >

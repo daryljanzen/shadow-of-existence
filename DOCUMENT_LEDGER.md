@@ -44,8 +44,8 @@ sources: [chat]
 | `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.198 | c54.198 | 0 |
 | `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.198 | c54.198 | 0 |
 | `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.198 | 0 |
-| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.197 | c54.197 | 1 |
-| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.197 | c54.197 | 1 |
+| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.198 | c54.198 | 0 |
+| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.198 | c54.198 | 0 |
 | `ACOUSTIC_BUILD_SETUP.md` | STATE | The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own. | — | c54.194 | 4 |
 | `BOARD.md` | STATE | (declared in frontmatter) | — | c54.195 | 3 |
 | `CATEGORY_THEORY_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.194 | 4 |
@@ -88,7 +88,7 @@ sources: [chat]
 | `THE_QUANTUM_JOINT.md` | STATE | The QM sketchpad — a NOTEBOOK, not a ledger: draw the pipe-extensions as far as the evidence suggests, run the rigour alongside as the eraser and not the doorman. Nothing here is a banked corpus result. Register: cluster-J germs were struck c54.117; the quantum tower is L-165 = PO-6. | — | c54.194 | 4 |
 | `THE_RECEIPT_AUDIT.md` | STATE | The receipt audit — what each receipt COMPUTES against what it ASSERTS in verdict-prose (the ◐ category). | — | c54.153 | 45 |
 | `THE_STAGED_REVISIONS.md` | STATE | (declared in frontmatter) | — | c54.197 | 1 |
-| `THE_WEAVE.md` | STATE | How the parts are one object — the per-paper orchestration grid and the record of what joins to what | — | c54.194 | 4 |
+| `THE_WEAVE.md` | STATE | How the parts are one object — the per-paper orchestration grid and the record of what joins to what | — | c54.198 | 0 |
 | `THE_WORK.md` | STATE | The working fork's OWN front-level view of the register — fronts, not rows. Absorbed by this line, never edited by it (ARC 15's prime directive). | — | c54.195 | 3 |
 | `TURNAROUND_CUBIC_geometry_note.md` | STATE | The comoving-turnaround cubic pinned — the COMPLEX/kinematic leg of the substrate's A₂ three-fold (the horizon cubic being the real/causal leg), the E=1 collapse kinematics, and its place on the ℂ_r×ℂ_τ̃ Plate. Read before the acoustic-transfer build. Carries PROTECTED_OPEN PO-3's drill-site. | — | — | never |
 | `VARIATIONAL_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | — | never |
