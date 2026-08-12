@@ -139,8 +139,34 @@ if _old_unc:
 #   (ii) The TOTAL must not exceed the baseline recorded in receipts/ASSERTION_DEBT.txt, which is
 #        rewritten downward as the backlog is worked and may never be rewritten upward.
 # The debt is therefore visible, monotone decreasing, and owned.
-CHECKS = re.compile(r'^\s*assert\b|fail\.append|allpass\s*&=|^\s*sys\.exit\(1\)'
-                    r'|raise SystemExit\(1\)', re.M)
+# ** THE CHECK TEST IS TWO-PART FROM r2376+c54.179, AND THE OLD ONE HID A REAL DEFECT. **
+# It read  `^\s*assert\b|fail\.append|allpass\s*&=|^\s*sys\.exit\(1\)|raise SystemExit\(1\)`  and had
+# two blind spots that pulled in opposite directions:
+#   TOO NARROW -- case-sensitive on `fail`, literal on `SystemExit(1)`, so a receipt using a `check()`
+#     helper with an UPPERCASE failure list and `raise SystemExit(main())` read as carrying NO check.
+#     Thirteen receipts were reported that way; node 56 broke a claim inside one and it returned rc=1.
+#   TOO WIDE -- `allpass &=` counted as a check ON ITS OWN.  ** Bookkeeping is not acting: a receipt
+#     that accumulates `allpass` and never reads it exits 0 however its checks came out. **  That is
+#     exactly what `P15_expansion_law.py` did, registered and of this fork, for the whole assertion
+#     sweep -- a broken claim printed two FAILs and returned rc=0, and this gate passed it.
+# So a failure-collection idiom now counts only WITH a non-zero exit path; an explicit exit(1) still
+# counts alone, since it IS the acting.  `scripts/lint_assertions.py` carries the same rule and the
+# two are checked against each other below, because a rule in two places drifts.
+_COLLECT = r'\bfail\w*\.append\(|allpass\s*&=|\bok\s*=\s*False\b'
+_NZEXIT = r'raise\s+SystemExit\(|^\s*sys\.exit\(|^\s*return\s+1\b'
+_EXPLICIT = r'^\s*assert\b|^\s*sys\.exit\(1\)|raise\s+SystemExit\(1\)'
+
+
+class _ChecksRule:
+    """the two-part rule, wearing re.compile's interface so the call sites below do not change"""
+
+    def search(self, src):
+        if re.search(_EXPLICIT, src, re.M):
+            return True
+        return bool(re.search(_COLLECT, src, re.I) and re.search(_NZEXIT, src, re.M))
+
+
+CHECKS = _ChecksRule()
 _DEBT_FILE = os.path.join(root, 'receipts', 'ASSERTION_DEBT.txt')
 _nocheck = []
 for _st in sorted(index_stems):

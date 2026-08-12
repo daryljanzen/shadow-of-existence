@@ -54,3 +54,19 @@ allpass&=ok("H^2 late-time -> (1/3)Lambda c^2 (the standard rate (1/2)sqrt(3 Lam
 print("="*72)
 print("RESULT:", "ALL PASS -- amplitude, the sinh^{2/3} scale factor (E=1 geodesic, 2/3 forced by the control),\n         the Friedmann coth^2 rate, and the csch^2 density-ratio all verified symbolically." if allpass else "SOME FAILED")
 print("="*72)
+# ** THIS FILE COULD NOT FAIL ITS CALLER UNTIL r2376+c54.179, AND ITS VERDICT WAS UNCONDITIONAL. **
+# `allpass` was accumulated through every check and then never read: the RESULT line printed
+# "ALL PASS" as a literal, and the process exited 0 whether the symbolic identities held or not.
+# ** Breaking the late-time-rate claim printed two FAILs and still returned rc=0. **
+# It was masked because `scripts/lint_assertions.py` counted the presence of `allpass &=` as a check
+# in itself; the two-part rule adopted in the same revision -- a failure-collection idiom AND a
+# non-zero exit path -- is what surfaced it.  *An instrument that accepts the bookkeeping for the
+# acting will pass a receipt that does neither.*
+if allpass:
+    print("RESULT: ALL PASS -- amplitude, the sinh^{2/3} scale factor (E=1 geodesic, 2/3 forced by")
+    print("        the control), the Friedmann coth^2 rate, and the csch^2 density-ratio, all")
+    print("        verified symbolically.")
+else:
+    print("RESULT: FAILED -- one or more symbolic identities above did not hold.")
+print("="*72)
+raise SystemExit(0 if allpass else 1)
