@@ -47,8 +47,15 @@ BANDS = [
     (175, 220, 'the observer line (56) -- historical'),
     (221, 499, 'the observer line (56) -- allocate here'),
     (500, 799, 'THE WORKING FORK (54) -- allocate here (adopted r2428: it now reads THE_HUB)'),
-    (800, 999, 'reserved -- future lines'),
+    (800, 899, 'THE CLAUDE CODE NODE (57) -- allocate here (opened r2496+c54.196)'),
+    (900, 999, 'reserved -- future lines'),
 ]
+# ** 57's BAND IS OPENED BEFORE 57 ALLOCATES, WHICH IS THE WHOLE POINT. **  This corpus has been
+# bitten twice by a line allocating into a namespace another line was already using: the c54.166
+# L-174 collision (near-miss twice by luck before it fired) and the c54.182/c54.184 duplicate.  In
+# both cases the band existed only AFTER the collision.  ** A third line is now working and pushing;
+# the reservation is made now, while it costs nothing. **  *The name 57 is Daryl's, offered because
+# "new 54" and "54" are the same string to every tool that reads this file.*
 
 # Which band this tree writes in.  A node changes this line and nothing else.
 THIS_LINE = (221, 499)
