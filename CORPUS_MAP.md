@@ -146,6 +146,41 @@ sources: [cowork, chat]
 
 
 
+### Revision r2445 — 2026-08-11 (main line). **THE TWO STALE GRAINS DECLARE THEIR GAP AS AN AUDITABLE LIST — and this line got the gate's mechanism wrong twice on the way there.**
+
+**⌗ WHAT LANDED.** *`THE_PLAN` and `THE_OPEN_PROBLEMS_LEDGER` each carry a currency head naming **the eight rows
+struck and the nine opened since r2417, by ID**, plus the four things their bodies would actively mislead a node
+about: the `ARC 16`/`ARC 17` discharge; `L-200`/`L-201` closing **by one argument**; **the programme now living in a
+public repository with two lines working it and `THE_HUB` as the arrival document** — which supersedes the plan's
+picture of how work moves entirely; and the six outside readers with their twenty-nine routed items.*
+⇒ ***The gap is declared as IDs rather than prose because a list is checkable against the register and prose is not,
+so a reader who doubts the green can AUDIT THE LIST instead of trusting the gate.***
+
+**⚠⚠ AND THE MECHANISM WAS GOT WRONG TWICE IN ONE REVISION, which is the part worth the entry.**
+*r2440 said `check_grains` measures lag **by git commits**, and left the two grains red on that ground. This revision
+then **"corrected" that to fork markers**, having read `marker_of`.* ⇒ ***THE FIRST CLAIM WAS RIGHT AND THE
+CORRECTION WAS WRONG: `marker_of`'s own docstring says "the no-git fallback", and `main()` reaches it only
+`if not have_git()`. In the repo, git mode runs.***
+⌗ **THE LESSON, narrower and more useful than either claim:** ***read which BRANCH executes, not which function is
+defined.*** *Reading a function that exists and inferring behaviour from it — in a file this line had read correctly
+five revisions earlier.*
+
+**⛭ AND IT IS THE SIXTH VARIANT OF ONE FAILURE, which is why it is filed as a scrap rather than a slip.**
+*`G1`'s distance · the phrase test · the quotation check · the coverage ratio · the label-mention count · and now a
+defined function read for its behaviour.* ⇒ ***Every one is TAKING AN INSTRUMENT'S SURFACE FOR ITS BEHAVIOUR. There
+the surface was a countable proxy; here it was a function signature. The proxy and the definition are the same
+mistake at different altitudes.***
+⌗ *And r2438's procedural rule extends to cover it: **spot-check a count against the judgement before reporting it —
+and spot-check a mechanism by RUNNING it before describing it.** Here that was one command: `git status` would have
+shown the edits uncommitted, which is the whole reason the gate was still red.*
+
+**⌗ ONE THING SALVAGED, and it re-scopes the r2440 decision correctly:** *leaving two gates red **was right on the
+mechanism and wrong on the remedy**.* ⇒ ***The remedy is not to leave a gate red; it is to make the declaration
+auditable.***
+
+**Register: 224 rows, 177 struck. Gates: twenty-one, twenty rc=0 once committed** *(`check_currency` measurable).*
+**Plus two lints.**
+
 ### Revision r2444 — 2026-08-11 (main line). **THE READERS' PACKAGE IS CLOSED — eighteen items across six nodes, every claim re-derived here, 5 applied, 10 routed, 7 rejected or superseded.**
 
 **⌗ THE LAST THREE JUDGED.**

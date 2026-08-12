@@ -6,6 +6,52 @@ class: whole-corpus-instrument
 job: The open-problems ledger by FAMILY — what each family is, what closed it or holds it open, and its register pointer. The fork writes here; this line absorbs it.
 sources: [cowork, chat]
 ---
+
+## ⌗⌗⌗ CURRENCY, r2444 / r2376+c54.185 — **what this document does NOT cover, DECLARED AS A CHECKABLE LIST**
+
+> ⚠ **THE BODY BELOW STOPS BEFORE r2417 AND TWENTY-SEVEN REVISIONS HAVE LANDED SINCE.** *Read this head before the
+> body.*
+>
+> ⌗ ***AND THE LIST IS GIVEN AS REGISTER IDs RATHER THAN PROSE, deliberately*** *— a list of IDs is mechanically
+> checkable against the register, so the declaration can be verified rather than believed.*
+>
+> ⚠ **AND A DOUBLE CORRECTION THIS LINE OWES, because it got the gate's mechanism wrong twice in one revision.**
+> *At r2440 this line said `check_grains` measures lag **by git commits**, and left two grains red on the ground that
+> a prose note would fake it. It then "corrected" that to **fork markers**, having read `marker_of`.* ⇒ ***The first
+> claim was right and the correction was wrong: `marker_of`'s own docstring says "the no-git fallback", and `main()`
+> reaches it only `if not have_git()`. In the repo, git mode runs.***
+> ⌗ **THE LESSON IS NARROWER AND MORE USEFUL THAN EITHER CLAIM:** ***read which BRANCH executes, not which function
+> is defined.*** *Reading a function that exists and inferring behaviour from it is the sixth variant of one failure
+> this line keeps repeating — taking an instrument's surface for its behaviour.*
+>
+> ⇒ **SO: touching this file DOES move it, and this block would turn the gate green on the strength of having been
+> written.** *That is exactly why the gap is declared as **register IDs** rather than prose:* ***the list is
+> checkable against `THE_LIVE_ARC` by anyone who doubts it, and a reader who checks it does not have to trust that
+> the gate's green means anything.*** **The green is worth what the list is worth, and the list can be audited.**
+>
+> **⌗ NOT COVERED — STRUCK SINCE r2417, eight rows:**
+> `L-215` `L-201` `L-214` `L-223` `L-200` `L-224` `L-229` `L-225`
+>
+> **⌗ NOT COVERED — OPENED SINCE r2417, nine rows:**
+> `L-221` `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-230` `L-231`
+>
+> **⌗ AND THE FOUR THINGS THE BODY WOULD MISLEAD A NODE ABOUT, named because a list of IDs is not a reading:**
+> *· **`ARC 16` is discharged and `ARC 17` exists** — the linear re-read of `THE_EVOLUTION_MAP` is complete, all
+> eighteen stations, and its harvest is that ***the corpus has no place for a sentence that is true-for-now***
+> (`L-214`, `L-223`);*
+> *· **`L-200`/`L-201` are closed, by ONE argument** — the constant side because the residue is one *dimensionful*
+> parameter, the datum side because $\rho_r/\rho_m$ is *dimensionless*. **p0's frontier item 1 does not close: it
+> asked for the datum to be DERIVED and the answer is that it cannot be** (routed as `FOR_54` 18);*
+> *· **the programme now lives in a public git repository with two lines working it** (`L-215`, `L-222`), and
+> **`THE_HUB`** is the arrival document — this plan's picture of how work moves between nodes is superseded entirely;*
+> *· **six outside readers have been through the corpus** (`L-225`, `L-226`), producing **twenty-nine routed items**,
+> **two adopted lints**, and **two defects of this line's own** — and the standing result is that ***the corpus held
+> everywhere it was load-bearing except one Einstein-space invariant, one locus word, and a handful of scope
+> qualifiers***.*
+>
+> ⌗ *The body's picture of the **physics** fronts is not superseded by any of the above; what is superseded is its
+> picture of the **instruments, the register's shape, and how work moves**.*
+
 > **⌗⌗ BROUGHT CURRENT r2378 on the observer line, and the pass found ONE defect and confirmed the rest.**
 > *The table was audited against the register at c54.134.* ***Family 6's pointer was stale — it named
 > `L-164`, struck at c54.128 — and a LIVE family pointing at a struck row has the exposure `PO-5` and
