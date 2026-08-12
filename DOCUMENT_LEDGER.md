@@ -154,7 +154,7 @@ sources: [chat]
 | `C40_EXTRACTION_r1107.md` | RECORD | frozen record | — | — |  |
 | `C40_HARVEST_r1064-r1087.md` | RECORD | frozen record | — | — |  |
 | `CAPSTONE_the-fog-lifting_transcript.md` | RECORD | frozen record | — | — |  |
-| `CLAUDE_CODE_WORK_ORDER.md` | RECORD | THE UNATTENDED WORK ORDER — mechanical, verifiable work a Claude Code session can run for hours without a human, with hard prohibitions on the judgement half. Read with THE_HUB and NEXT.md. | — | — |  |
+| `CLAUDE_CODE_WORK_ORDER.md` | RECORD | THE ITERATING WORK ORDER — for a Claude Code session that can run for hours. A ladder from mechanical to edge work, the discipline that makes unattended research safe, and the two ownership boundaries. Read with THE_HUB and NEXT.md. | — | — |  |
 | `CREDO_birth_transcript.md` | RECORD | frozen record | — | — |  |
 | `CREDO_from-c1_transcript.md` | RECORD | frozen record | — | — |  |
 | `DEMONSTRATING_THE_WAY_full-transcript.md` | RECORD | frozen record | — | — |  |

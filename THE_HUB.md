@@ -10,13 +10,17 @@ sources: [chat]
 
 *· **A chat or research session → `NEXT.md`.*** *Four blocks of research work, each with its object, its first
 move, and what a result would look like.*
-*· **A Claude Code session running unattended → `CLAUDE_CODE_WORK_ORDER.md`.*** *The **mechanical** half — running
-331 receipts, an inflated debt counter whose fix is already declared, an `ORIGIN` drift backlog — **with hard
-prohibitions on the judgement half and a single output channel (`FINDINGS_FOR_REVIEW.md`) for anything that needs
-one**.*
+*· **A Claude Code session that can run for hours → `CLAUDE_CODE_WORK_ORDER.md`.*** ***A full node, working the
+front*** *— a ladder from the gate suite through 331 unrun receipts to the closure-adjacency edge, **the discipline
+that makes unattended research safe**, and **two boundaries that are ownership rather than capability**.*
 
-⌗ ***The split is `L-237`'s finding applied to labour rather than to gates: work on what is DECLARED, report what
-would need INFERRING.*** *An unattended session is a gate, not a lint.*
+⚠ ***THAT FILE'S FIRST DRAFT RESTRICTED IT TO MECHANICAL WORK AND WAS WRONG*** *— it quoted `PROTECTED_OPEN`'s
+"narrowing is ALWAYS a node's to do" and then withdrew the permission by fiat, **which is the inversion this section
+of `THE_HUB` exists to warn about, made one revision after correcting it**. Rewritten r2473.*
+⇒ ***What makes long unattended work safe is not a shorter list of verbs. It is the discipline*** *— and the one
+that matters most is that **every instrument here polices over-claiming and nothing polices a negative**, so a long
+run keeps the heuristics and loses the nuance.* **If closures start accelerating, that is the failure mode, not
+productivity.**
 
 ## ⛭⛭⛭ ARRIVING? READ `NEXT.md` FIRST — the work order, added r2470
 

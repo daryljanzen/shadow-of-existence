@@ -146,6 +146,42 @@ sources: [cowork, chat]
 
 
 
+### Revision r2473 — 2026-08-11 (main line). **THE WORK ORDER REWRITTEN — the r2472 draft re-made the r2463 inversion, one revision after correcting it, and in a document written to instruct someone else.**
+
+**⛔⛔ WHAT WENT WRONG.** *r2472's Claude Code order restricted an unattended session to **mechanical work**, and its
+prohibition table forbade touching `PROTECTED_OPEN` rows —* ***quoting the permission ("an item may also NARROW …
+narrowing is ALWAYS a node's to do and is what this register wants") and then withdrawing it by fiat: "you simply
+are not the node that does."***
+⚠ **That is worse than r2463's version.** *r2463 **misread** the rule; **this one knew it and overrode it** — and
+wrote the override into an instruction document, where it would have governed someone else's work without
+argument.*
+
+**⌗ THE MECHANISM, worth naming because it will recur:** ***the inversion did not come from misreading. It came
+from writing safety rules for a party this line cannot supervise.*** *Restricting such a party **feels** like
+caution, and* ***a prohibition is the cheapest thing to write and the most expensive thing to be wrong about,
+because the cost is invisible: work that never happens leaves no trace.***
+⇒ ⛭ **THE RULE:** ***when you catch yourself restricting another party "to be safe", check whether the restriction
+is an OWNERSHIP boundary or a CAPABILITY judgement.*** *Ownership boundaries are real and short — **a closure is
+Daryl's; the papers are the fork's**. **Capability judgements about a party you have not watched work are guesses
+wearing the costume of prudence.***
+
+**⌗ THE REWRITE.** *The order is now what it should have been: **a full node working the front**.*
+*· **§I THE DISCIPLINE** — nine rules, each named with the failure it came from, **run on yourself every time**;
+and the one that matters most unattended: **every instrument here polices over-claiming and nothing polices a
+negative**, so a long run keeps the heuristics and loses the nuance. ***If closures start accelerating, that is the
+failure mode, not productivity.***
+*· **§II TWO BOUNDARIES**, both ownership: a **closure** on a protected item is Daryl's (**working, computing and
+narrowing are not**), and `corpus/*.tex` is the fork's.*
+*· **§III A LADDER** — the gate suite, then **331 unrun receipts**, then the **inflated debt counter** (~8 not 29),
+then the **`ORIGIN` backlog**, then ***the edge: `L-211`'s closure-adjacency procedure, with `L-165`, `L-175`,
+`L-221` and `L-210` named as live rows carrying concrete next steps***.*
+*· **§IV ITERATE**, and **§III⓺ ADD LEADS** in band `L-221`–`L-499` — **expected, not exceptional**.*
+
+⌗ *Daryl caught it in one line — "it can also add to the leads and work the edge and iterate on all of it can't
+it?" —* ***and the answer was yes, and had been yes in the register the whole time.***
+
+**Register: 232 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2472 — 2026-08-11 (main line). **A SECOND WORK ORDER, FOR AN UNATTENDED CLAUDE CODE SESSION — the mechanical half, with hard prohibitions on the judgement half.**
 
 **⌗⌗ WHY A SECOND ONE.** *`NEXT.md` is research work and assumes a judging reader. **A Claude Code session can run
