@@ -107,7 +107,6 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-210`** | r2402 | work the unmarked sites **one at a time and without rushing**, giving each a verdict marker; the dig is mechanical and re-runnable, **the verdict neve |
 | **`L-216`** | r2409 | Daryl runs it when at a computer or when the publish call lands; **then tell this line the URL (public) or hand it a short-lived token (private)** |
 | **`L-203`** | r2413 | ⌗⌗ **CORRECTED r2382 BY READING R-M AT SOURCE: THE FRONT IS Ⓒ, NOT Ⓕ.** *`THE_PLAN` lists what is **unrun** (Ⓕ Ⓖ Ⓗ); R-M records that **Ⓒ complex anal |
-| **`L-217`** | r2414 | state the relation in one place: what CR supplies, what it takes as given, what it forbids itself from supplying, and **where the two sectors' claims  |
 | **`L-219`** | r2415 | each rung is Daryl's call and taken one at a time; **nothing below a rung starts before it** |
 | **`L-204`** | r2418 | ⌗⌗ **CORRECTED r2382 BY READING R-P AT SOURCE — and the strike is owed HERE, not in `THE_PLAN`.** *R-P's own table still reads **"①② QM — NEXT, the ea |
 | **`L-222`** | r2428 | Daryl invites the fork to the repo; **`THE_HUB`'s arrival section is what it reads first** |
@@ -117,6 +116,7 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-501`** | r2441 | done in the registering revision — a nine-point phase scan with the knob's default asserted to reproduce the coded value |
 | **`L-502`** | r2441 | done in the registering revision — eighteen readings, the `CRAMP` knob asserted a no-op at its default |
 | **`L-503`** | r2441 | done in the registering revision — three CAMB references, the model separation, and the reversal |
+| **`L-207`** | r2450 | ⓵ ✔ **DISCHARGED r2450 — exhibited, not merely asserted** · ⓶ nothing until `PO-6` moves |
 
 *26 live rows carry a stated next step; the 14 longest-unworked are shown.*
 

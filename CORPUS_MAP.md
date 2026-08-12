@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2482 — 2026-08-11 (main line). **`L-217`'s NEXT STEP WAS ALREADY DISCHARGED AND THE ROW NEVER SAID SO — and a sweep for the class found ONE case of twenty-six.**
+
+**⌗⌗ THE ROW.** *`L-217`'s next step read **"state the relation in one place: what CR supplies, what it takes as
+given, what it forbids."*** ⇒ ***That document exists — `CR_AND_THE_HIGGS.md`, whose §4 is literally "THE RELATION,
+STATED" — written at r2414, brought current at r2449, and the row's next-step field was never touched.***
+
+**⌗ WHAT IT SAYS, and it is worth quoting because it is the station's whole answer:** ***"CR is a SELECTION-RULE
+theory; the Higgs sector is a MAGNITUDE theory… CR supplies WHAT MAY EXIST (three chiral families, related by
+$S_3$), the Higgs sector supplies HOW THEY GET MASS AND WITH WHAT STRENGTHS — and CR's own one-constant theorem
+says it cannot supply the strengths."*** ⇒ *"A Higgs sector is not something CR absorbs. It is something CR's answer
+**leaves room for by construction** — and, at `F3`, something CR is **constrained by**."*
+⛭ *And it scores itself: the claim **DELETES** — removing an apparent conflict by showing the two never quantify
+over the same objects, **adding no structure and no parameter** — so it lands on the favourable side;* ⚠ ***"but the
+favourable side is not a licence, and the base rate is one in two"***, *with **three of four conflict conditions
+live**.* ⇒ ***"A complementarity with live trip-wires is a claim; a complementarity with none would have been a
+tautology."***
+
+**⛭⛭ AND THE SWEEP IS THE PART WORTH KEEPING.** *Suspecting a class — "rows whose next step outlived the work that
+answered it" — this line checked all 26 live rows with a stated next step.* ⇒ ***ONE case. `L-218`'s field was
+updated in the same revision that produced its deliverable; `L-500` is the fork's; `L-174`'s exhibition is genuinely
+unbuilt.***
+⇒⇒ ***SO `L-174` AND `L-217` ARE DIFFERENT FAILURES AND COLLAPSING THEM WOULD HAVE BEEN WRONG:*** *`L-174` had its
+**evidence** corrected and its **weight** never re-read; `L-217` had its **work done elsewhere** and its
+**next-step field** never updated. **Same symptom, different cause.***
+
+**⌗ AND NO DETECTOR WAS BUILT.** ***A one-instance class is validated against nothing*** *— `L-220`'s lesson,
+`check_loci`'s, and `L-237`'s, arriving a third time and obeyed without argument.*
+⌗ *The rule that does land: **when a revision lands work answering a row, updating the row's next-step field is part
+of landing it — the same way propagation is part of striking.** No gate can see this: **a row's next step is prose
+about the future, and no gate reads intent.***
+
+**Register: 235 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2481 — 2026-08-11 (main line). **`L-171`'s DISAGREEMENT NO LONGER HAS TWO SIDES — and the row was carrying the stale one, which makes it the first confirmed instance of the class c54.187 routed here.**
 
 **⌗⌗ THE ROW.** *`L-171`'s c54.127 restatement **stands and was right**: an **internal** disagreement, not a
