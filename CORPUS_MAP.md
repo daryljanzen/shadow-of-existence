@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2513 — 2026-08-11 (main line). **NO SWEEP REACHES THE STRATUM AND `thm:bound` ALREADY SAYS SO — `L-174` ⓵ becomes a GR calculation rather than a construction question.**
+
+**⌗ THE QUESTION r2512 LEFT.** *`cor:radiation` says **a sweep** generates **"a deformation of FIXED orientation"** —
+singular — and P3 records **three hinges $120°$ apart**. ⇒ So: does composing them give the transverse dependence a
+free wave needs?*
+
+**⛔ THE READING WAS WRONG.** *`thm:bound` is stated for **a subgroup $H\subseteq\mathfrak{so}$** — any subgroup, any
+dimension — and concludes the generated geometry is **invariant under $H$**, by a one-line proof: **"the induced
+metric is constant along those orbits by construction."***
+⇒⇒ ***AND COMPOSING SWEEPS MAKES IT WORSE: a larger $H$ is MORE isometry, so the geometry sits FURTHER INSIDE the
+symmetry-reducible sector, while the wall is "the loss of ALL confining symmetry". The three hinges cannot help —
+they would give a bigger $H$.***
+⇒ ***SO THE WALL IS NOT A LIMITATION OF A PARTICULAR CONSTRUCTION. IT IS A THEOREM ABOUT THE OPERATOR*** *— "a
+geometry with no continuous isometry … **is not of this form**."*
+
+**⌗⌗ AND `cor:wall` ALREADY SAYS WHAT FILLS THE GAP:** *the beyond-wall modes **"are carried past it by the ordinary
+general-relativistic evolution"**, the wall **"a regular boundary of the operator's reach and not a frontier of the
+theory"**.*
+⇒⇒ ***THE CONSTRUCTION GENERATES THE DATA; ORDINARY GR EVOLVES IT PAST THE WALL. THE TWO-FUNCTION GAP WAS NEVER THE
+OPERATOR'S TO FILL.***
+⇒ ***So `L-174` ⓵ is restated: not "make the operator reach further" but **exhibit the ordinary evolution of data
+with $\sigma^{TT}\ne0$** — a GR calculation. A smaller and different task than the row has ever carried.***
+
+**⛭ THE RULE:** ***prose summarises; theorems quantify. When a summary sentence seems to leave a gap, read the
+statement it summarises before building on the gap*** *— a summary is written for a reader who already has the
+theorem, and its grammatical number is a stylistic choice, not a scope.*
+⌗ ⚠ *And this is filed as a win rather than an error: **the wrong question was cheap, the right answer was one
+paragraph away, and it restated the row.*** *Fifth consecutive revision in which the corpus was ahead of its own
+register on `L-174`.*
+
+⚠ *Not claimed: that the exhibition is done, or that `thm:bound` is stronger than P9 marks it — **P9 itself
+distinguishes "what is computed and what is the reading the computations support"**.*
+
 ### Revision r2512 — 2026-08-11 (main line). **c54.199 MERGED — r2505's shear-selection attribution is WITHDRAWN, and the third instance of "two objects, one word" was made four revisions before this line filed the rule.**
 
 **⛔ THE CORRECTION.** *r2505 answered "nothing selects among the shear" with P9's **shift–shear link** — Goldberg–Sachs,

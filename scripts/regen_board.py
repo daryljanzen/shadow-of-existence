@@ -54,16 +54,13 @@ VEINS = {
 # GROUNDED 0-3: how solid the footing is, INFORMS 0-3: how much a vein would learn). **
 # ** A lead with NO vein links is instrument work.  It is not counted as progress on the map. **
 LEADS = {
- 'L-174': ("**exhibit a bend carrying the graviton's TWO transverse polarizations** \u2014 the one unworked "
-   "stratum, and everything with $\\ge1$ Killing vector is worked (closed form / LTB r2450 / Gowdy in P11). "
-   "\u26ed c54.198: the free shear is **two, not five** \u2014 the momentum constraint fixes $W$ under the York "
-   "split \u2014 and `cor:radiation` already names them: **'the transverse degrees of freedom a sweep cannot "
-   "carry'**, so the question is whether anything other than a sweep is available. \u26d4 c54.199: and the two "
-   "the constraint LEAVES are the ones that carry the geometry \u2014 **Schwarzschild's ADM shear is $3M/r^3$ "
-   "in Painlev\u00e9\u2013Gullstrand and $0$ in static slices, the whole difference longitudinal, so "
-   "$\\sigma^{TT}=0$ in both** \u2014 so **the three the constraint owns carry the FOLIATION and the two it "
-   "leaves carry the GEOMETRY**, and \u26d4 **Goldberg\u2013Sachs bears on the OPTICAL shear, not on "
-   "$\\sigma^{TT}$** (r2505\u2019s attribution withdrawn)",
+ 'L-174': ("**exhibit the ORDINARY GR EVOLUTION of data with $\\sigma^{TT}\\ne0$** \u2014 and \u26ed "
+   "r2513 that is now a **GR calculation, not a construction question**: `thm:bound` quantifies over **every "
+   "subgroup $H\\subseteq\\mathfrak{so}$**, so **no sweep reaches the stratum and composing sweeps moves "
+   "FURTHER INSIDE the reducible sector**. `cor:wall` already says the beyond-wall modes are **carried past "
+   "by ordinary GR evolution**, the wall **a regular boundary of the operator's reach, not a frontier of the "
+   "theory**. The free data is **two functions** \u2014 the graviton polarizations (c54.198) \u2014 and they "
+   "carry the geometry, not the foliation (c54.199)",
    ['L-165','L-175'], 3, 3),
  'L-207': ("\u24f6 the confined/branch-point exhibition \u2014 **gated on PO-6 and must not be opened without "
    "it** (\u24f5 discharged r2450)",
