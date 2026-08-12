@@ -146,6 +146,51 @@ sources: [cowork, chat]
 
 
 
+### Revision r2444 — 2026-08-11 (main line). **THE READERS' PACKAGE IS CLOSED — eighteen items across six nodes, every claim re-derived here, 5 applied, 10 routed, 7 rejected or superseded.**
+
+**⌗ THE LAST THREE JUDGED.**
+*· **`F06` — ROUTED (item 28), and it is the sharpest citation defect in the set.** P16's headline abundances
+($D/H=2.51\times10^{-5}$, $^7$Li$/$H$=5.1\times10^{-10}$) cite `P16_validate_bbn`, whose **computed** column gives
+$2.5671\times10^{-5}$ and $4.4611\times10^{-10}$ —* ***the paper's numbers sit in that table's `std BBN` REFERENCE
+column***, *in a sentence whose entire point is that they are **not** read off the standard-BBN correspondence.*
+⌗ **And the finder located where they really come from** — *`P16_theory_error_and_likelihood`'s StarLib cross-check,
+$2.505\times10^{-5}$ and $5.127\times10^{-10}$* — ***so it is a pointer defect and not a number defect, and it says
+so itself: "the corpus is clean on the physics."*** *Found by a prototype gate with **15 flags across ~250
+citations, one surviving the finder's own triage**.*
+*· **`F04` — ROUTED (item 29).** `cor:radiation` contains `\ref{cor:radiation}` inside its own body —* ***the
+corollary defers to itself for the reason it is giving***, *and the reason follows the colon, so the reference is a
+loop.* ⚠ **No gate can see it:** *`check_compile` verifies a `\ref` **resolves**, and a self-reference resolves
+perfectly.*
+*· **`F11` — REJECTED, and the reason is the useful part.** The $1.71$ and $1.69$ are **at different conditions,
+and both sentences state them**: one is the ratio at $\Omega_m$-fitted, the other at the **angle-fixed onset with
+$\omega_r$ set by the measured $T_{\rm CMB}$**.* ⇒ ***A literal cross-paper sweep compares numbers and cannot read
+conditions, so this is the sweep's limitation surfacing rather than a defect.*** ⌗ *And `F15` had already located
+the real seam — "F11's 1.71-versus-1.69 sits exactly on the seam between the two parameter sets" — **which is item
+27**.*
+
+**⌗ AND TWO EARLIER REJECTIONS ARE WORTH THE RECORD BECAUSE THEY ARE THE SAME SHAPE.** *`F03` reported that
+`check_currency` reads its clock from a document it does not watch —* ***true at c54.35 and fixed roughly 150 fork
+revisions before the finding was written, with the gate's own docstring recording the fix.*** *And `F07` reported
+191 of 249 receipts "cannot fail" —* ***the count was right and the inference was not: 28 receipts lack a bare
+`assert` and ZERO lack a non-zero exit path, because the corpus's idiom is a `FAILED` list plus `SystemExit`.***
+⇒ **Which is precisely the error node 54 made and corrected at c54.180.** ***Two independent readers drew the same
+false inference from the same narrow measure — which is what makes "does this instrument measure what it claims"
+worth asking every time.***
+
+**⛭⛭ THE STANDING RESULT, and it is the reason the whole exercise was worth its cost.**
+***Six cold readers, dozens of adverse claims, and the corpus held everywhere it was load-bearing except ONE
+Einstein-space invariant, ONE locus word, and a handful of SCOPE qualifiers.***
+⌗ *And every contributor reported its own error rate before this line had to find it — node 52 most sharply:*
+**"I spent a day producing six adverse verdicts against this corpus, every one of them my own error"** *— and then
+delivered an independent 17-of-17 numeric audit of the very paper it had been fighting.*
+⇒ **`PROTECTED_OPEN` asserts that base rate. Six independent readings measured it.**
+
+⚠ *What the exercise also produced, and it is not a small part of the yield: **two defects of this line's own** —
+the CI outage (`L-227`) and three residual sites of a propagation recorded as complete (r2441) — **both found from
+outside, neither visible from the working tree**.*
+
+**Register: 224 rows, 176 struck. Twenty-nine routed items. Gates: twenty-one, nineteen rc=0, plus two lints.**
+
 ### Revision r2443 — 2026-08-11 (main line). **`F15` VERIFIED AND ITS INSTRUMENT ADOPTED — P15's receipt layer carries two parameter sets, and the corpus gains a LINT LAYER distinct from its gate layer.**
 
 **⌗⌗ THE FINDING, verified by reading the seven named receipts rather than trusting the table.** *P15's receipt

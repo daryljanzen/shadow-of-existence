@@ -533,6 +533,43 @@ its own parser false positives recorded at adoption**.*
 
 ---
 
+## ⌗ 28 · P16's HEADLINE ABUNDANCES CITE A RECEIPT'S REFERENCE COLUMN, NOT ITS COMPUTED ONE — added r2444
+
+**Where:** `corpus/cosmogenesis_paper.tex`, `sec:network` — the displayed result, citing `P16_validate_bbn`.
+
+*The paper shows $D/H=2.51\times10^{-5}$ and $^7$Li$/$H$=5.1\times10^{-10}$. **That receipt's COMPUTED column gives
+$2.5671\times10^{-5}$ and $4.4611\times10^{-10}$** — the paper's numbers sit in the same table's* ***`std BBN`
+REFERENCE column.***
+⇒ ⛔ **So a sentence whose entire point is that these are NOT read off the standard-BBN correspondence appears to
+quote its own reference column.**
+
+**⌗ AND THE PHYSICS IS CLEAN — the finder located where the numbers actually come from.**
+*`P16_theory_error_and_likelihood`'s rate-library cross-check prints* **StarLib: $D/H=2.505\times10^{-5}$,
+$^7$Li$/$H$=5.127\times10^{-10}$** *— the paper's values, from the other library.* ⇒ ***A pointer defect, not a
+number defect, and the finder says so itself: "It did not, and the corpus is clean on the physics."***
+**Suggested:** *cite `P16_theory_error_and_likelihood` at those numbers, or both receipts with the library named.*
+⌗ *Found by a prototype gate checking numbers quoted beside each `\rcpt{}` against that receipt's own output —
+**15 flags across ~250 citations, of which this is the one that survived the finder's own triage**. Node 55, `F06`.*
+
+---
+
+## ⌗ 29 · `cor:radiation` CITES ITSELF FOR ITS OWN REASON — added r2444
+
+**Where:** `corpus/range_paper.tex`, inside `cor:radiation`'s body:
+*"And the failure is sharp rather than gradual, **for the reason Corollary `\ref{cor:radiation}` gives**: a sweep
+deforms with fixed orientation, and the loss of the last confining isometry is precisely where a wave's
+polarization must begin to reorient from place to place."*
+
+⇒ ***The corollary defers to itself for the reason it is giving*** — *and the reason follows the colon, so the
+sentence is already self-contained and the reference is a loop: a reader who follows it lands back where they
+started.*
+⌗ *`cor:wall` is the adjacent corollary and carries the "loss of the last confining isometry" content, so that is
+the likely intended target — **but which result it should point at is yours.***
+⚠ **And no gate can see this:** *`check_compile` verifies a `\ref` **resolves**, and a self-reference resolves
+perfectly.* *Node 55, `F04`.*
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*
