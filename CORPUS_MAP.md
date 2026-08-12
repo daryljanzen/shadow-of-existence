@@ -147,6 +147,33 @@ sources: [cowork, chat]
 
 
 ### Revision r2487 — 2026-08-11 (main line). **THE CONSOLIDATION THE FORK NAMED — P15's published text still carries the retracted framing, and the one experiment that would test "why $0.62\pi$" is one this line cannot run.**
+### Revision r2441+c54.192 — 2026-08-12 (working fork, line/54). **CONSOLIDATION: the span's shape propagated into the grain documents, and a handover written for whoever picks front #2 up cold.**
+
+**⌗ NO NEW RESULT. This revision exists because six revisions of front #2 changed what the corpus's SHAPE
+documents should say, and none of them had been told.**
+
+- **`THE_WEAVE`** — *the orchestration fact is that P15's empirical section **stopped being a list and became a
+  single statement**. c54.178's four owed items are struck (reionisation, c54.181), built (lensing, c54.183),
+  closed (wavenumber range, c54.186) and measured (neutrino mass, c54.188).* ⇒ ***And the acoustic claim now
+  joins differently: the SPACING belongs to `sec:tensions` (it is what the one fitted parameter is fitted to)
+  and the PHASE belongs to `sec:coherence` (it is what the seam datum assigns).***
+- **`THE_PLAN`** — *§⑥ read against the front's final form, and **the two retracted figures named so this
+  document cannot re-carry them**.*
+- **`THE_OPEN_PROBLEMS_LEDGER`** — *family 5's owed work is no longer a list; it is one number and one
+  mechanism, and the mechanism has an address.*
+- **`HANDOVER_c54.191.md`** — *what this session knows that the ledgers do not.*
+
+**⚠⚠ THE HANDOVER LEADS WITH THE FAILURE RATHER THAN THE RESULT, AND DELIBERATELY.** *Two retractions in two
+revisions shared one cause: **the right measurement of the wrong quantity, and in both cases the wrong quantity
+was the one the cheap experiment could see**. The practical form of the warning is in it: the production-depth
+pair was banked at c54.186 and **sat in the tree through three revisions with nothing reading it for its peak
+series**, because each revision read the spectra its own scan produced.* ⇒ ***Before characterising a
+spectrum, check what is already banked at full depth.***
+
+⌗ *Also carried: the four new instrument knobs and what each is a control on; the six traps this span paid for;
+and the three gates that assumed a world with one line in it.*
+
+### Revision r2441+c54.191 — 2026-08-12 (working fork, line/54). **THE ACOUSTICS WORK. THE WHOLE DISAGREEMENT IS THE ACOUSTIC PHASE — ONE NUMBER AND ONE MECHANISM, WHERE THIS FRONT BEGAN WITH FOUR ITEMS AND A RATIO.**
 
 **⌗⌗ P15's TEXT, read at source in the c54.191 file absorbed at r2486, states the front as it was before the last
 two revisions — in three passages:**

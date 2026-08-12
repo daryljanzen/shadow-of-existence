@@ -26,6 +26,12 @@ sources: [chat]
 
 ## The record
 
+> **⌗ `IN-FLIGHT:` — the fork names the revision it is cutting; the node clears the line when it absorbs it.**
+>
+> *Cleared at r2462 for c54.186 and kept current since. A revision neither absorbed nor declared in flight still FAILS, so the gate keeps its teeth.*
+
+IN-FLIGHT: c54.192 c54.193
+
 | fork revision | absorbed at | date |
 |---|---|---|
 | c54.108 | r2377 | 2026-08-10 |
