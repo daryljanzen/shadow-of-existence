@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.193 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**25 open QUESTIONS · 31 open WORK rows · 1 OBSERVED · 1 HELD** *(181 struck of 239 registered).*
+**25 open QUESTIONS · 30 open WORK rows · 1 OBSERVED · 1 HELD** *(182 struck of 239 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -91,7 +91,6 @@ sources: [cowork]
 | **`L-197`** | `CONSOLIDATE` §13 `PHASE 7` | FOLDED r2378 — `CONSOLIDATE` §13 `PHASE 7`. The build — the collapse-excursion model. kind: WORK. |
 | **`L-198`** | `CONSOLIDATE` §13 `PHASE 8` | FOLDED r2378 — `CONSOLIDATE` §13 `PHASE 8`. The claiming campaign — the two bakes. kind: WORK. |
 | **`L-199`** | `CONSOLIDATE` §13 `PHASE 9` | FOLDED r2378 — `CONSOLIDATE` §13 `PHASE 9`. THE LANDING — what the new work owes the corpus. kind: WORK. |
-| **`L-203`** | `THE_PLAN` standing order ④ · `THE_MATHEMATICS_REACH` | R-M's front is Ⓒ, not Ⓕ (read at source r2382; the audit trail is `CORPUS_MAP` r2382 and the package is `THE_STAGED_REVISIONS` §②ʙ). Ⓒ complex analysis/monodromy is HANDED TO by a completed bake — `Q4… |
 | **`L-204`** | `THE_PLAN` standing order ④ · `THE_PHYSICS_REACH` | THE STRIKE IS MADE r2383, in R-P's own table. ①② is struck; ③④ (`P8`/`P9`, GR: field equations, the exact-solution catalogue, Petrov type, the Carter constant) now reads NEXT — the earliest genuinely … |
 | **`L-210`** | `ENTRY_POINT_REGISTER` · `scripts/audit_entry_points.py` | REGISTERED r2397 — THE ENTRY-POINT FRONT, held at weight by Daryl and ranked with `R-M`, `R-P` and the acoustic front. What does the corpus advertise as open, in its own words — and what falls out whe… |
 | **`L-218`** | `THE_HUB` · `SETUP_THE_REPO` · `PROTECTED_OPEN` · `THE_BASE_RATE` | REGISTERED r2415 — THE READER PACKAGE: the book in every reading format, plus an AI companion spun up from this corpus, in one repo. Daryl's idea, and the part that is not ordinary is not the formats.… |

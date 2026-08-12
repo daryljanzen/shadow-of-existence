@@ -1,8 +1,29 @@
 ---
 name: complex-analysis-ledger
 description: R-M's third field bake — complex analysis and monodromy thrown at CR. Opened r1867 (Phase 8), handed to by the quadric bake's Q4 (equianharmonic ⟺ j=0 ⟺ CM by ω). Discharges R-M arc station Ⓒ, marked NO ENTRY since r1805. Baseline, probes, four-part close.
-current: r2491+c54.194
+current: r2494+c54.194
 ---
+
+## ✔✔✔ THE DECK/MONODROMY KNOT IS UNTIED r2494 — four objects, one word, and every group correct for its own
+
+**⌗ THE RULE:** ***a connected cover's deck group acts freely on each fibre, so its order divides the degree — and
+equals the degree only if the cover is normal.***
+
+| object | monodromy | deck |
+|---|---|---|
+| the **3-sheeted cover** of the $2M$-plane | $S_3$ | ***trivial*** — *non-normal, $6\ne3$* |
+| the **cube-root cover** $w^3=z$ | $\mathbb Z_3$ | $\mathbb Z_3$ — *normal* |
+| the **Galois closure**, degree 6 | $S_3$ | $S_3$ — ***the "degree-six dial"*** |
+| the **equianharmonic curve** $y^2=x^3+1$ | — | $\mathrm{Aut}=\mathbb Z_6$ — *not a cover* |
+
+⇒ ***`prop:deck`'s $S_3$ is the MONODROMY of the three-sheeted cover and the DECK of the closure — both true. The
+heading names the wrong COVER, not the wrong GROUP. `rem:equianharmonic`'s $\mathbb Z_3$ is the deck of the
+cube-root cover, also correct.***
+
+**⌗ AND THIS LEDGER'S FIELD IS WHAT SUPPLIED THE DISTINCTION, twice:** *the deck-versus-monodromy correction (item
+23) and the $\mathbb Z_6$ identification (r2491) both came from complex analysis, and* ***the second is what showed
+there were FOUR objects rather than three.***
+
 
 ## ⛭⛭ STATION Ⓒ WALKED r2491 — AND THIS LEDGER'S OWN FIELD SUPPLIES THE DISTINCTION
 

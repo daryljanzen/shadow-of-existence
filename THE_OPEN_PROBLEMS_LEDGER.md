@@ -9,12 +9,12 @@ sources: [cowork, chat]
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r2493
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r2494
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
-> **⌗ NOT COVERED — STRUCK since r2417 (19 rows):**
-> `L-200` `L-201` `L-211` `L-213` `L-214` `L-215` `L-223` `L-224` `L-225` `L-227` `L-229` `L-231` `L-232` `L-233` `L-234` `L-235` `L-236` `L-237` `L-238`
+> **⌗ NOT COVERED — STRUCK since r2417 (20 rows):**
+> `L-200` `L-201` `L-203` `L-211` `L-213` `L-214` `L-215` `L-223` `L-224` `L-225` `L-227` `L-229` `L-231` `L-232` `L-233` `L-234` `L-235` `L-236` `L-237` `L-238`
 >
 > **⌗ NOT COVERED — OPENED since r2417 (20 rows):**
 > `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507`

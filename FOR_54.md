@@ -453,7 +453,43 @@ fuller treatment appended and never moved back.***
 
 ---
 
-## ⌗ 23 · "DECK GROUP $S_3$" ON A THREE-SHEETED COVER IS IMPOSSIBLE — added r2440
+## ✔✔ ANSWERED — 23 · "DECK GROUP $S_3$" ON A THREE-SHEETED COVER IS IMPOSSIBLE — added r2440
+
+> ## ⛭⛭⛭ ANSWERED r2494 — FOUR OBJECTS WERE SHARING ONE WORD, AND EVERY GROUP IN THE CORPUS IS CORRECT FOR ITS OWN
+>
+> **⌗ THE RULE THAT SETTLES IT:** ***a connected cover's deck group acts FREELY on each fibre, so its order divides
+> the degree — and equals the degree only if the cover is NORMAL.***
+>
+> | object | monodromy | deck | why |
+> |---|---|---|---|
+> | **the 3-sheeted cover** of the $2M$-plane | $S_3$ | ***TRIVIAL*** | *non-normal: $\lvert S_3\rvert=6\ne3$* |
+> | **the cube-root cover** $w^3=z$ | $\mathbb Z_3$ | $\mathbb Z_3$ | *normal, $\mathbb Z_3$ acts regularly* |
+> | **the GALOIS CLOSURE**, degree 6 | $S_3$ | $S_3$ | ***the "degree-six dial"*** |
+> | **the equianharmonic curve** $y^2=x^3+1$ | — | $\mathrm{Aut}=\mathbb Z_6$ | *not a cover of the plane at all* |
+>
+> *The horizon cubic $r^3-r+2M$ is irreducible over $\mathbb Q(M)$ with discriminant $-4(27M^2-1)$, not a square in
+> $\mathbb C(2M)$, **so its Galois group is the full $S_3$** — and a degree-3 cover is normal iff its monodromy has
+> order 3.* ⇒ ***Six is not three, so the three-sheeted cover's deck group is trivial.***
+>
+> **⇒ SO EACH TEXT IS RIGHT ABOUT A DIFFERENT COVER, AND NOTHING IN THE CORPUS IS WRONG:**
+> *· **`prop:deck`'s $S_3$ is the MONODROMY of the three-sheeted cover — and the DECK of the Galois closure.** Both
+> true. ***The heading names the wrong COVER, not the wrong GROUP.***
+> *· **`rem:equianharmonic`'s $\mathbb Z_3$ is the deck of the CUBE-ROOT cover** — correct, and the cube-root cover
+> is not the horizon cubic's cover.*
+> *· **$\mathbb Z_6$ is the equianharmonic CURVE's automorphism group** — not a cover of the $2M$-plane (r2491).*
+>
+> ⇒⇒ ***THE KNOT WAS NEVER A MISIDENTIFIED GROUP. It was four objects sharing one word — and three fields of
+> mathematics (`L-203`'s stations Ⓒ, Ⓖ, Ⓗ) each noticed a different face of that.***
+>
+> **⌗ AND IT DISCHARGES WHAT Ⓗ AND Ⓖ WERE WAITING ON:** *P14 says the three zero-modes are permuted by the full
+> $S_3$ and **"the Weyl $S_3$ IS the relation among the three hinges"**.* ⇒ ***The equivariant index is equivariant
+> under the MONODROMY $S_3$, and Ⓖ's $\mathrm{ad}(P)$ is built from that same $S_3$. The group question is settled;
+> what remains for Ⓗ is the computation.***
+>
+> ⚠ ***The wording is still your call and the item stays routed as a suggestion*** *— the smallest fix is
+> `prop:deck`'s heading naming the closure or the word being "monodromy", and **you may prefer to say which cover
+> instead**, which is strictly more informative.*
+
 
 **Where:** `corpus/groupoid_paper.tex`, `prop:deck` (title and opening sentence) and `rem:equianharmonic`.
 

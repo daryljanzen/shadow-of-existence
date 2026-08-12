@@ -26,11 +26,11 @@ without fixing what is still sitting there owed?"**
 | | at c54.27 *(the baseline below)* | **now** |
 |---|---|---|
 | registered | 88 | **239** |
-| struck | 13 | **181** |
+| struck | 13 | **182** |
 | open QUESTIONS | 75 | **27** |
-| open WORK rows *(arcs and phases, folded r2378)* | — | **31** |
+| open WORK rows *(arcs and phases, folded r2378)* | — | **30** |
 | `HOT` | 49 *(60% of open)* | **0** *(0% of open questions)* |
-| struck fraction | 14.0% | **87.0%** |
+| struck fraction | 14.0% | **87.1%** |
 
 **Open leads by state**
 
@@ -104,7 +104,6 @@ without fixing what is still sitting there owed?"**
 | **`L-197`** | WORK · OPEN |
 | **`L-198`** | WORK · OPEN |
 | **`L-199`** | WORK · OPEN |
-| **`L-203`** | WORK · OPEN |
 | **`L-204`** | WORK · OPEN |
 | **`L-210`** | WORK · OPEN |
 | **`L-218`** | WORK · — |

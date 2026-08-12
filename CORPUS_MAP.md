@@ -146,6 +146,46 @@ sources: [cowork, chat]
 
 
 
+### Revision r2494 — 2026-08-11 (main line). **THE KNOT IS UNTIED — item 23 answered, `L-203` STRUCK, and four objects turn out to have been sharing one word.**
+
+**⌗⌗ THE RULE THAT SETTLES IT:** ***a connected cover's deck group acts FREELY on each fibre, so its order divides
+the degree — and equals the degree only if the cover is NORMAL.***
+
+| object | monodromy | deck | why |
+|---|---|---|---|
+| the **3-sheeted cover** of the $2M$-plane | $S_3$ | ***TRIVIAL*** | *non-normal: $\lvert S_3\rvert=6\ne3$* |
+| the **cube-root cover** $w^3=z$ | $\mathbb Z_3$ | $\mathbb Z_3$ | *normal, acts regularly* |
+| the **GALOIS CLOSURE**, degree 6 | $S_3$ | $S_3$ | ***the "degree-six dial"*** |
+| the **equianharmonic curve** $y^2=x^3+1$ | — | $\mathrm{Aut}=\mathbb Z_6$ | *not a cover of the plane* |
+
+*The horizon cubic is irreducible over $\mathbb Q(M)$ with discriminant $-4(27M^2-1)$, not a square in
+$\mathbb C(2M)$, **so its Galois group is the full $S_3$** — and a degree-3 cover is normal iff its monodromy has
+order 3.* ⇒ ***Six is not three, so the three-sheeted cover's deck group is trivial.***
+
+**⇒⇒ SO EACH TEXT IS RIGHT ABOUT A DIFFERENT COVER AND NOTHING IN THE CORPUS IS WRONG.** *`prop:deck`'s $S_3$ is the
+**monodromy** of the three-sheeted cover **and** the **deck** of the closure — both true, so ***the heading names the
+wrong COVER, not the wrong GROUP***. `rem:equianharmonic`'s $\mathbb Z_3$ is the deck of the cube-root cover, also
+correct.*
+
+**⛭⛭ AND THE RULE THIS EARNS:** ***a word attached to the wrong object looks exactly like a wrong word, and the two
+have different repairs — one RENAMES, the other DISAMBIGUATES.*** *Node 23's own fix ("the word is monodromy") is
+true and **loses information**; **saying which cover is true and adds it**.*
+⌗ *And the diagnostic is cheap: ***if each use of the contested word is correct about SOMETHING, you have an object
+count and not a vocabulary error*** — the tell being that the "wrong" statements keep turning out defensible, which
+happened three times here.*
+
+**⌗ AND IT EXPLAINS `L-203`'s CONVERGENCE.** ***Its three stations were not three fields finding one error. They
+were three fields each noticing that four objects shared one name*** *— and convergence on a NAMING collision is
+exactly what you would expect when the underlying mathematics is right.*
+⇒ *It also discharges what Ⓗ and Ⓖ were waiting on: P14's **"the Weyl $S_3$ IS the relation among the three
+hinges"** names the monodromy, so **the equivariant index is equivariant under $S_3$ and $\mathrm{ad}(P)$ is built
+from the same $S_3$**. ***The group question is settled; what remains for Ⓗ is the computation.***
+
+⚠ *The **wording** is Daryl's call and item 23 stays routed as a suggestion — **marked ANSWERED, not applied**.*
+**`L-203` STRUCK: five of five stations walked, and the theatre resolved into one question that is now answered.**
+
+**Register: 239 rows, 190 struck. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2493 — 2026-08-11 (main line). **ALL FIVE MATHEMATICS STATIONS WALKED — and the three that bit CONVERGED on one knot, which is a stronger result than any of them.**
 
 **⌗⌗ STATION Ⓖ, and P12 IS the algebroid paper — so the corpus was checked before the field.** *It builds the
