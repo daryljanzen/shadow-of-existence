@@ -9,8 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.193 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**24 open QUESTIONS · 31 open WORK rows · 1 OBSERVED · 1 HELD** *(181 struck of 238 registered).*
-**21 open QUESTIONS · 33 open WORK rows · 1 OBSERVED · 1 HELD** *(174 struck of 230 registered).*
+**25 open QUESTIONS · 31 open WORK rows · 1 OBSERVED · 1 HELD** *(181 struck of 239 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 

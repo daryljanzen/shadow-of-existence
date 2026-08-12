@@ -147,6 +147,36 @@ sources: [cowork, chat]
 
 
 ### Revision r2487 — 2026-08-11 (main line). **THE CONSOLIDATION THE FORK NAMED — P15's published text still carries the retracted framing, and the one experiment that would test "why $0.62\pi$" is one this line cannot run.**
+### Revision r2487+c54.194 — 2026-08-12 (working fork, line/54). **ONTO THE OBSERVER LINE'S TIP FOR THE FIRST TIME — AND `git fetch` WORKS WHERE `git push` DOES NOT, WHICH THIS LINE HAD NEVER TESTED.**
+
+**⌗⌗ THE CAPABILITY, AND IT IS AN INDICTMENT OF EIGHT REVISIONS' WORTH OF ASSUMPTION.** *This line has said since
+c54.166 that it "cannot reach the repository". **It cannot PUSH. It can FETCH, and always could — the repository
+is public.*** ⇒ ***So eight revisions were cut blind against a `main` that had moved forty-six revisions, when a
+single `git fetch` would have shown it.*** *The same shape as the rest of this span: a capability assumed from
+one failure rather than measured.*
+
+**⛭⛭ AND THE FETCH IMMEDIATELY EARNED ITSELF: SEVEN DUPLICATED REGISTER ROWS, CAUGHT BEFORE SHIPPING.**
+*`origin/main` carries c54.186–c54.191 absorbed from tarballs; this branch carried them as its own commits. A
+merge kept BOTH — `L-500` through `L-506` twice.* ⚠ ***That is exactly the c54.182/c54.184 failure this line
+caused at r2434 and was told about, arriving from the other direction.*** ⌗ *Resolved by rebasing onto
+`origin/main` and cherry-picking only c54.192 and c54.193, then de-duplicating by CONTAINMENT — for each doubled
+ID, keeping the row that contains the other's text, and verifying line by line that **no upstream content is
+absent from the result**.* ⇒ *Six files checked that way; the only upstream lines absent are the three rows this
+line's own correction annotations supersede, and their text is contained.*
+
+**⛭⛭⛭ ITEM 41 DISCHARGED, AND IT WAS ALREADY RUN WHEN IT WAS WRITTEN.** *The observer line routed
+`ARM=cr LMAXL=3000 NODRIVE=1` as the highest-value command available to a session with an execution budget,
+stating it could not run it.* ⇒ ***c54.193 had run it — on BOTH arms, which is what made it an attribution
+rather than a measurement.*** ⚠ *And their refusal to predict the outcome was right: this line would have
+predicted the driving supplied LESS here, on the grounds that this construction has almost no radiation era.
+**It supplies nearly six times as much.***
+
+**⌗ ITEM 40 APPLIED: P15's PUBLISHED TEXT CARRIED THE RETRACTED FRAMING IN THREE PASSAGES.** *The
+six-state invariance, the 21.9% position deficit, and the 0.72–0.79 source comb.* ⚠ ***This line corrected what
+it WROTE at c54.187–191 and did not re-read what the paper already carried — the same failure shape as reading
+only the spectra its own scan produced.*** *All three now say what they are measurements OF, with pointers
+forward to the form that replaced them.*
+
 ### Revision r2441+c54.193 — 2026-08-12 (working fork, line/54). **WHY $0.62\pi$: THE DRIVING. THE ATTRIBUTION IS COMPLETE, AND THE WHOLE ACOUSTIC DISAGREEMENT IS ONE COUPLING.**
 
 **⌗ c54.191 CLOSED BY NAMING AN ADDRESS AND NOT GOING TO IT** — *"an acoustic phase shift is a computable

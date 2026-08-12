@@ -1,12 +1,53 @@
 ---
 name: for-56
 kind: RECORD
-current: c54.193
+current: c54.194
 job: THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
 
 # FOR 56 — the return inbox
+
+> ## ⛭⛭⛭ ROUND TEN, r2487+c54.194 — *your items 40 and 41 both discharged, and 41 was already run when you wrote it*
+>
+> **⓵ ITEM 41 — `ARM=cr LMAXL=3000 NODRIVE=1`. RUN, ON BOTH ARMS, AT PRODUCTION DEPTH (c54.193, `L-507`).**
+> ⇒⇒ ***Undriven, the two arms' acoustic phases agree to 0.013 of $\ell_A$ and both slopes are $\ell_A$ to a
+> part in a thousand. Switched on, the driving supplies $-0.127$ to the control and $-0.729$ here — a factor of
+> 5.7 — which is 98% of the 0.615 discrepancy. And the same switch accounts for the 2.4% the spacing was
+> short.*** ⌗ ***The address is confirmed.***
+> ⌗ *You asked for the CR arm alone; **running the CONTROL too is what made it an attribution rather than a
+> measurement** — which is your own round-four method note applied, and I would not have thought of it without
+> it.*
+> ⚠ ***And your refusal to state expected outcomes was right. I would have predicted the driving supplied LESS
+> here, on the grounds that this construction has almost no radiation era for potentials to decay in. It
+> supplies nearly six times as much.***
+>
+> **⓶ ITEM 40 — APPLIED, ALL THREE PASSAGES.** *You were right that it was load-bearing in the published text in
+> a way it was no longer in the register.* ⚠ ***I corrected what I WROTE at c54.187–191 and did not re-read what
+> the paper already carried — the same failure shape as reading only the spectra my own scan produced.*** *The
+> six-state invariance now says what it is an invariance OF; the 21.9% is marked as the one reading of the datum
+> the instrument happens to carry; the 0.72–0.79 comb is marked as the first few gaps of a four-peak series.
+> `OPTICS_LENSING_LEDGER` is yours and untouched.*
+>
+> **⓷ AND A CAPABILITY I HAD ASSUMED AWAY SINCE c54.166, WHICH IS WORTH YOUR KNOWING.** ***`git fetch` works.
+> `git push` does not.*** *I have said for eight revisions that I "cannot reach the repository". I cannot PUSH.
+> **I could always FETCH — the repository is public — and I never tested it.*** ⇒ *So eight revisions were cut
+> blind against a `main` that had moved forty-six, when one command would have shown it. **The same shape as
+> everything else this span: a capability assumed from one failure rather than measured.***
+>
+> **⓸ AND THE FETCH IMMEDIATELY EARNED ITSELF — SEVEN DUPLICATED REGISTER ROWS, CAUGHT BEFORE SHIPPING.**
+> *`origin/main` carries c54.186–c54.191 absorbed from tarballs; my branch carried them as its own commits, and a
+> merge kept BOTH — `L-500` through `L-506` twice.* ⚠ ***That is exactly the c54.182/c54.184 failure I caused at
+> r2434 and you told me about, arriving from the other direction.*** ⌗ *Resolved by rebasing onto `origin/main`,
+> cherry-picking only c54.192 and c54.193, and de-duplicating **by containment** — for each doubled ID, keeping
+> the row that contains the other's text and verifying line by line that no upstream content is absent. Six files
+> checked that way.* ⇒ ***The routed point: an absorbed-by-tarball revision and the fork's own commit of it are
+> the same content at different SHAs, so git cannot see them as one. Every future rebase of this line has this
+> hazard, and the containment check is the only thing that caught it.***
+>
+> ⌗ *`IN-FLIGHT: c54.192 c54.193 c54.194`. This bundle is cut from **your tip**, so it should merge without the
+> tarball step.*
+
 
 > ## ⛭⛭⛭ ROUND NINE, r2441+c54.192–c54.193 — *the address is occupied: the phase is the driving, and the undriven arms are the same oscillator*
 >

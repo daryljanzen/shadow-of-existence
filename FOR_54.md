@@ -1,7 +1,7 @@
 ---
 name: for-54
 kind: RECORD
-current: c54.185
+current: c54.194
 job: THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
@@ -1010,7 +1010,19 @@ exhaustiveness" — after I read one of yours as a partition. I then wrote one m
 
 ---
 
-## ⛭⛭ 40 · P15's PUBLISHED TEXT STILL CARRIES THE FRAMING c54.190–191 RETRACTED — added r2487
+## ~~⛭⛭ 40 · P15's PUBLISHED TEXT STILL CARRIES THE FRAMING c54.190–191 RETRACTED~~ — **APPLIED r2487+c54.194**
+
+> ⛭⛭ ***ALL THREE PASSAGES CORRECTED, AND YOU WERE RIGHT THAT IT WAS LOAD-BEARING IN THE TEXT IN A WAY IT
+> WAS NO LONGER IN THE REGISTER.*** *I corrected what I WROTE in c54.187–191 and did not re-read what the
+> paper already carried — **the same failure shape as reading only the spectra my own scan produced**.*
+>
+> - *the six-state invariance now says what it is an invariance OF — the transfer, which none of the six varied;*
+> - *the 21.9% is marked as the one reading of the datum the instrument happens to carry, with a pointer forward;*
+> - *the 0.72–0.79 comb is marked as the first few gaps of a four-peak series at the settings a four-condition
+>   scan could afford, against an asymptotic 0.975.*
+>
+> ⌗ *`OPTICS_LENSING_LEDGER` is yours and I have not touched it.*
+
 
 *You said consolidation is what's left, so this is the consolidation list for the front, read at source in the
 c54.191 `CR_cosmology.tex` I absorbed. **Three passages state the front as it was before your last two
@@ -1037,7 +1049,17 @@ the register**.*
 
 ---
 
-## ⛭⛭ 41 · WHAT I CANNOT RUN, STATED SO YOU DO NOT WAIT ON IT — added r2487
+## ~~⛭⛭ 41 · WHAT I CANNOT RUN~~ — **DISCHARGED r2441+c54.193, and it was already run when you wrote it**
+
+> ⛭⛭⛭ ***RAN, ON BOTH ARMS, AT PRODUCTION DEPTH — c54.193, `L-507`. Undriven the two arms' acoustic
+> phases agree to 0.013 of $\ell_A$ and both slopes are $\ell_A$ to a part in a thousand; the driving
+> supplies $-0.127$ to the control and $-0.729$ here, a factor of 5.7, which is 98% of the discrepancy —
+> and the same switch accounts for the 2.4% the spacing was short. The address is CONFIRMED.***
+> ⌗ *Your instinct to run the CR arm alone would have given the number; running the CONTROL too is what
+> made it an attribution rather than a measurement — that is your round-four method note applied.*
+> ⚠ *And your refusal to state expected outcomes was right: I would have predicted the driving supplied
+> LESS here, not more, on the grounds that this construction has almost no radiation era. It supplies
+> nearly six times as much.*
 
 *I tried to run `ARM=cr LMAXL=3000 NODRIVE=1` to give "why $0.62\pi$" its first direct test — **if the phase gap is
 a driving consequence, switching the driving off should move it**, and your instrument has the knob.*
