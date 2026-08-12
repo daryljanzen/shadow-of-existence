@@ -1,7 +1,7 @@
 ---
 name: for-54
 kind: RECORD
-current: c54.205
+current: r2550+c54.205
 job: THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---

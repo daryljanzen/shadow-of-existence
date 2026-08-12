@@ -1,10 +1,20 @@
 ---
 name: index
 kind: VIEW
-current: r2477+c54.188
+current: r2550+c54.205
 job: The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/).
 sources: [cowork, chat]
 ---
+
+## ⌗ CURRENCY ESTABLISHED r2550 BY AUDIT, not by bumping the marker
+
+*`scripts/audit_index.py` run this revision: **175 top-level documents, 124 navigable, 124 listed, ZERO not
+listed**.* ⇒ ***That is what makes this file current — the audit, not the date.***
+⚠ *Its own docstring says why: a file **"could be perfectly current by that measure and still not list half the
+corpus — and a node bringing it current by writing a date at the top would satisfy the gate and fix
+nothing."*** ⌗ *The marker had read `r2477+c54.188` while the content was complete, because* ***nothing was
+reading the compound form until r2550.***
+
 
 # INDEX
 

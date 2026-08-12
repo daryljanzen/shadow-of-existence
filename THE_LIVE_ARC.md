@@ -2,7 +2,7 @@
 name: the-live-arc
 description: The live investigation arc — the spine of work in progress AND the register of every lead, dangler, puzzle and unexamined thing it throws off. Nothing surfaced may leave a turn unregistered. The arc does not close; new leads always go IN FRONT of the end state.
 sources: [cowork]
-current: r2477+c54.188
+current: r2550+c54.205
 ---
 
 # THE LIVE ARC

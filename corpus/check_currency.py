@@ -69,14 +69,32 @@ def declared(path):
     """
     if not os.path.exists(path): return (None, None)
     head = open(path, encoding='utf-8', errors='replace').read(2500)
-    m = re.search(r'^current:\s*(c54\.(\d+)|r(\d{3,4})|none|n/a|frozen)\s*$', head, re.M | re.I)
+    # ** THE COMPOUND FORM `rNNNN+c54.N` IS WHAT THE CORPUS ACTUALLY USES, and until r2550 this regex
+    # rejected it -- ** 40 of 70 declarations did not parse **, so the gate fell back to the body
+    # scrape for most of the corpus without ever reporting them as UNDECLARED, which its own docstring
+    # says it must.
+    #   ⇒ *** A gate whose parser is narrower than the convention it checks reads the corpus as if the
+    #       convention did not exist. ***  The compound form names BOTH bases and is more informative
+    #       than either alone; the mainline number is the one measured, since that is what `cur` counts.
+    m = re.search(r'^current:\s*(?:r(?P<main>\d{3,4})(?:\s*\+\s*c54\.(?P<both>\d+))?'
+                  r'|c54\.(?P<fork>\d+)|(?P<word>none|n/a|frozen))\s*$', head, re.M | re.I)
     if not m: return (None, None)
-    v = m.group(1).lower()
-    if v == 'none': return ('none', None)
-    if v == 'frozen': return ('frozen', None)
-    if v == 'n/a': return ('na', None)
-    if m.group(3): return ('mainline', int(m.group(3)))
-    return ('rev', int(m.group(2)))
+    if m.group('word'):
+        w = m.group('word').lower()
+        if w == 'none': return ('none', None)
+        if w == 'frozen': return ('frozen', None)
+        return ('na', None)
+    # ** THE COMPOUND FORM IS A FORK DECLARATION, NOT A MAINLINE ONE, and getting this backwards is
+    # how a widening becomes a masking. **  The `mainline` bucket exists for documents "the working
+    # fork has never touched (no c54 marker anywhere in the file)" -- and `rNNNN+c54.N` names a c54
+    # revision explicitly, so the fork HAS touched it.
+    #   ⇒ *** A first pass at r2550 returned the mainline number for the compound form, which moved 40
+    #       files out of the lag check entirely and turned the gate green by not checking them.  The
+    #       compound form is lag-checked against its FORK half; the bare rNNNN keeps the mainline
+    #       bucket it was built for. ***
+    if m.group('both'): return ('rev', int(m.group('both')))
+    if m.group('main'): return ('mainline', int(m.group('main')))
+    return ('rev', int(m.group('fork')))
 
 
 def scraped(path):

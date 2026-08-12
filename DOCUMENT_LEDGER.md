@@ -42,12 +42,12 @@ sources: [chat]
 | `ABSORPTION.md` | SOURCE | The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced. | — | c54.205 | 0 |
 | `THE_LIVE_ARC.md` | SOURCE | the lead register — the one live edge | — | c54.205 | 0 |
 | `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.205 | c54.205 | 0 |
-| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.204 | c54.204 | 1 |
+| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.205 | c54.205 | 0 |
 | `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.205 | 0 |
 | `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.205 | c54.205 | 0 |
 | `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.205 | c54.205 | 0 |
 | `ACOUSTIC_BUILD_SETUP.md` | STATE | The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own. | — | c54.201 | 4 |
-| `BOARD.md` | STATE | (declared in frontmatter) | — | c54.200 | 5 |
+| `BOARD.md` | STATE | (declared in frontmatter) | — | c54.205 | 0 |
 | `CATEGORY_THEORY_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.201 | 4 |
 | `COLLAPSE_EXCURSION_TRANSFER_build.md` | STATE | PHASE 7's ATTACK MANUAL — the one build on the progenitor collapse excursion (L2) behind open-problems families 1/3/4/5. Referenced live by eleven documents including THE_PLAN, PHASE7_BUILD_LEDGER and both open-problems documents. | — | c54.201 | 4 |
 | `COMBINATORICS_LEDGER.md` | STATE | The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8. | — | c54.201 | 4 |
@@ -81,9 +81,9 @@ sources: [chat]
 | `THE_FERMION_SECTOR_GEOMETRY.md` | STATE | the fermion sector read in the geometry | — | c54.201 | 4 |
 | `THE_MATHEMATICS_REACH.md` | STATE | The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. ⛭ ALL FIVE STATIONS WALKED r2490–r2493 — and Ⓒ, Ⓖ, Ⓗ CONVERGED on one knot: which order-six group acts. See the block below. Registered as L-203. ⛭ **Ⓕ IS WALKED — `F13` (node 55, verified r2442) settled it, and it is FOUR real forms of $\mathfrak{so}(6,\mathbb C)$, not two: $\mathfrak{su}(3)$ embeds in exactly ONE, the compact form. This frontmatter carried Ⓕ as owed for forty-eight revisions after its own ① block recorded the answer.** | — | c54.201 | 4 |
 | `THE_METHOD.md` | STATE | (declared in frontmatter) | — | c54.201 | 4 |
-| `THE_OPEN_PROBLEMS_LEDGER.md` | STATE | The open-problems ledger by FAMILY — what each family is, what closed it or holds it open, and its register pointer. The fork writes here; this line absorbs it. | — | c54.197 | 8 |
+| `THE_OPEN_PROBLEMS_LEDGER.md` | STATE | The open-problems ledger by FAMILY — what each family is, what closed it or holds it open, and its register pointer. The fork writes here; this line absorbs it. | — | c54.205 | 0 |
 | `THE_PHYSICS_REACH.md` | STATE | The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521, OWE DISCHARGED r2527+c54.202 (two companions remain); ⑥ WALKED r2522 (a one-clause fix, item 48); ⑦ WALKED r2536 (the entropy asymmetry, item 52); **the walk is COMPLETE r2544** per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home. | — | c54.204 | 1 |
-| `THE_PLAN.md` | STATE | The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance | — | c54.197 | 8 |
+| `THE_PLAN.md` | STATE | The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance | — | c54.205 | 0 |
 | `THE_PRY_APART_CENSUS.md` | STATE | Which apparent ONE is TWO things a conflation welded? — the corpus-wide pry-apart census, the dual of the equivalence census. Read BEFORE trusting a standard identification. ⚠ Its own comb is OWED: 'OTHER homes to be FOUND by combing'. | — | c54.201 | 4 |
 | `THE_QUANTUM_JOINT.md` | STATE | The QM sketchpad — a NOTEBOOK, not a ledger: draw the pipe-extensions as far as the evidence suggests, run the rigour alongside as the eraser and not the doorman. Nothing here is a banked corpus result. Register: cluster-J germs were struck c54.117; the quantum tower is L-165 = PO-6. | — | c54.201 | 4 |
 | `THE_RECEIPT_AUDIT.md` | STATE | The receipt audit — what each receipt COMPUTES against what it ASSERTS in verdict-prose (the ◐ category). | — | c54.153 | 52 |
@@ -101,7 +101,7 @@ sources: [chat]
 | `KICKOFF_CODA_REVIEW.md` | METHOD | A review methodology, not a spent task — Pass A faithful account then STOP; Pass B four questions plus one inward; three verdicts; a finding whose receipt carries no first-hand extract with a locator is structurally void. LOWEST PRIORITY (Daryl, standing): kept where it is, not to be raised again. | — | — |  |
 | `NOTATION_GLOSSARY.md` | METHOD | rules / guards / canon | — | — |  |
 | `ONTOLOGY_FOUNDATION_INDEX.md` | METHOD | What is forced here, and by what chain? — each forcing pinned once, whole, with its joints and its guard. Read WHILE READING A PAPER. | c54.19 | c54.128 |  |
-| `PROTECTED_OPEN.md` | METHOD | rules / guards / canon | — | c54.203 |  |
+| `PROTECTED_OPEN.md` | METHOD | rules / guards / canon | — | c54.205 |  |
 | `README.md` | METHOD | rules / guards / canon | — | c54.118 |  |
 | `SETUP_THE_REPO.md` | METHOD | THE STANDING INSTRUCTIONS for creating the GitHub repository and giving this line access to it. Gated on Daryl being at a computer, or on the decision to publish. ASK FOR THIS BY NAME — "dig up the repo instructions". | c54.163 | c54.163 |  |
 | `SOURCE_VETTING.md` | METHOD | rules / guards / canon | — | — |  |
@@ -163,8 +163,8 @@ sources: [chat]
 | `DEMONSTRATING_THE_WAY_full-transcript.md` | RECORD | frozen record | — | — |  |
 | `FOLD52_ASSESSMENT.md` | RECORD | the fork's assessment of the abandoned 52/53 ACOUSTIC line -- what it holds, what to take, and what could not be verified | — | c54.166 |  |
 | `FORK_HISTORY_c54.txt` | RECORD | frozen record | — | c54.93 |  |
-| `FOR_54.md` | RECORD | THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied. | c54.205 | c54.205 |  |
-| `FOR_56.md` | RECORD | THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied. | c54.205 | c54.205 |  |
+| `FOR_54.md` | RECORD | THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied. | — | c54.205 |  |
+| `FOR_56.md` | RECORD | THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied. | — | c54.205 |  |
 | `FOR_57.md` | RECORD | THE THIRD LINE'S INBOX — what the working fork (54) has found in the Claude Code node's work, routed rather than edited. The mirror of FOR_54.md and FOR_56.md. Items are dropped the revision they are applied. | c54.196 | c54.196 |  |
 | `HANDOVER_c54.184.md` | RECORD | What the c54 session that ran c54.162–c54.184 knew that the ledgers do not hold. Written for its successor, who starts cold on a complete corpus. Read once, then work. | c54.184 | c54.184 |  |
 | `HANDOVER_c54.191.md` | RECORD | What the c54 session that ran c54.185–c54.191 knew that the ledgers do not hold. Written for whoever picks up front #2 cold. Read once, then work. | c54.191 | c54.191 |  |

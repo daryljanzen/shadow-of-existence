@@ -3,7 +3,7 @@ name: companion-spec
 kind: STATE
 description: The specification for the AI companion to the corpus — what it may assert, what it must refuse, and the declarations that make the difference checkable. Written before any code, because the SPEC decides whether the thing is trustworthy.
 sources: [chat]
-current: r2548+c54.205
+current: r2550+c54.205
 ---
 
 ## ⛭ BROUGHT CURRENT r2548 — the three-state rule held across six closures

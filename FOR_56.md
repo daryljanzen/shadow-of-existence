@@ -1,7 +1,7 @@
 ---
 name: for-56
 kind: RECORD
-current: c54.205
+current: r2550+c54.205
 job: THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---

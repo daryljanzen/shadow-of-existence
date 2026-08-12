@@ -1,7 +1,7 @@
 ---
 name: absorption
 kind: SOURCE
-current: r2477+c54.188
+current: r2550+c54.205
 job: The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced.
 sources: [chat]
 ---

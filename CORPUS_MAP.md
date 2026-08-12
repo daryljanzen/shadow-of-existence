@@ -1,7 +1,7 @@
 ---
 name: corpus-map
 kind: STATE
-current: r2477+c54.188
+current: r2550+c54.205
 description: The changelog — the papers, their causal order, and the shape we are aiming at. The narrative log is current only to c54.32; the c54.36–c54.93 span is carried at the foot as COPIED COMMIT SUBJECTS, not as changelog entries.
 sources: [cowork, chat]
 ---
@@ -145,6 +145,36 @@ sources: [cowork, chat]
 > **The live queue is [`WHATS_TEED_UP.md`](WHATS_TEED_UP.md); the accounting is [`THE_BURN_DOWN.md`](THE_BURN_DOWN.md).**
 
 
+
+### Revision r2550 — 2026-08-11 (main line). **`check_currency`'s PARSER WAS NARROWER THAN THE CONVENTION — 40 of 70 declarations never parsed — and the first fix turned the gate green by not checking.**
+
+**⛔ THE BUG.** *The regex accepted `c54.N`, `rNNNN`, `none`, `n/a`. The corpus actually writes **`rNNNN+c54.N`**,
+which names both bases.* ⇒ ***40 of 70 declarations did not parse, so for most of the corpus the gate fell back to
+the body scrape — and never reported them as UNDECLARED, which its own docstring says it must.***
+⌗ ***A gate whose parser is narrower than the convention it checks reads the corpus as if the convention did not
+exist.***
+
+**⛔⛔ AND THE FIRST FIX WAS WORSE THAN THE BUG.** *Returning the MAINLINE number for the compound form moved 40
+files into a bucket the gate **does not lag-check at all** — one built for documents "the working fork has never
+touched (no c54 marker anywhere in the file)".*
+⇒ ***The gate went green because those files stopped being checked. A widening that silences is a masking, and it
+looked exactly like a fix.***
+⇒ *Corrected: the compound form **names a c54 revision explicitly**, so the fork HAS touched it — it is a FORK
+declaration, lag-checked against its fork half. **Eight seed cases, including the rejection case.***
+
+**⛭ AND THEN A SECOND MISTAKE, CAUGHT IN THE SAME TURN.** *With the gate finally reading correctly it went red on
+the core registers — and this line **bulk-bumped 55 markers**.* ⇒ ⛔ ***That is the exact move the gate's docstring
+forbids, and the one 54 had declined one revision earlier on the ground that "a declaration written by a pass that
+didn't bring the file current" is worthless.*** *Reverted; only the sixteen this revision genuinely wrote kept their
+marks.*
+
+**⌗ AND TWO REMAINING REDS WERE GENERATED FILES WHOSE MARKER WAS A LITERAL.** *`regen_board.py` hard-coded
+`current: r2500+c54.194`, so **every regeneration rewrote the marker stale** —* ***a file that lies about itself
+every time it is written correctly.*** *Now computed from `CORPUS_MAP` and `ABSORPTION`.*
+✔ *And `INDEX.md`'s currency was established **by running `audit_index.py`** — **175 documents, 124 navigable, 124
+listed, zero missing** — rather than by writing a date, which is what that script's own docstring demands.*
+
+⚠ ⛭ ***THE RULE: when a gate goes green after a change to the gate, ask which files stopped being checked.***
 
 ### Revision r2549 — 2026-08-11 (main line). **cc54's ISOCURVATURE RUN MERGED — the first arrival-path finding settled by a NUMBER, and the answer is that the objection does not reach.**
 
