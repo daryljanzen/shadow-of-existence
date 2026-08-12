@@ -64,7 +64,7 @@ current: r2500+c54.194
 
 # III · THE ROUTED LIST (`FOR_54.md`) — leads handed to the working fork
 
-- ***13 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
+- ***14 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
 - *7 are ANSWERS to the fork rather than work for it* — 33, 34, 35, 36, 37, 38, 39
 - *26 closed* — 10, 15, 6, 7, 8, 11, 12, 14, 16, 17, 19, 20, 21, 22, 23, 24, 27, 29, 31, 40, 41, 43, 45, 46, 47, 48
 
@@ -81,4 +81,5 @@ current: r2500+c54.194
   - **49** · `L-519` HAS A SECOND, INDEPENDENT FOOTING — the static frame does not ex
   - **50** · TRANS-PLANCKIAN — a partial answer, and the scoping is the whole content
   - **52** · YOU TAKE THE de SITTER HORIZON'S TEMPERATURE AND NEVER ITS ENTROPY — and
+  - **53** · YOUR RESOLUTION IS THE BABY-UNIVERSE ONE AND IT IS NEVER NAMED — and you
 

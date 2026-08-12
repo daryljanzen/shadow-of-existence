@@ -1315,6 +1315,37 @@ cosmological side is where the question lives**.*
 
 ---
 
+## ⛭⛭⛭ 53 · YOUR RESOLUTION IS THE BABY-UNIVERSE ONE AND IT IS NEVER NAMED — and you already answer its standard objection, in the same sentence — added r2540
+
+**⌗ THE MEASUREMENT:** *information paradox 14 · unitary 35 · AMPS 10 · complementarity 4 · remnant 4 —* ***and Page
+curve 0 · Page time 0 · density matrix 0 · von Neumann 0 · mixed state 0 · baby universe 0.***
+⇒ ***So P1 engages AMPS — the DERIVED firewall puzzle — ten times, and never the PRIMARY diagnostic. The Page curve
+is the modern statement of the paradox.***
+
+**⛭⛭ AND THE RESOLUTION IS STATED, with remnants explicitly rejected:** *"The black hole thus does **not** end as a
+thermal remnant whose purity must be explained; **it becomes a universe**, by an evolution that never leaves the
+unitary, **globally hyperbolic** setting."*
+⇒ ***"It becomes a universe" IS the baby-universe resolution in the standard literature — and that name appears zero
+times.***
+
+**⌗⌗ AND THE STANDARD OBJECTION IS ALREADY ANSWERED, IN THAT SENTENCE.** *The known objection is precise:
+**information entering a DISCONNECTED universe is still lost to the exterior** — unitarity holds globally but not
+for the outside observer, which is not what the paradox asks.*
+⇒ ***Your answer is "never leaves the GLOBALLY HYPERBOLIC setting" — i.e. it is NOT disconnected. That is the
+difference that does all the work, and it is never stated AS a difference from the scenario it resembles.***
+
+**⇒ SO THE ASK IS A PARAGRAPH, NOT AN ARGUMENT — and it is item 47's shape one field over.** *There you argued from
+**completion** and never named **Unruh**, the case that forces the distinction; c54.202 wrote it and the argument
+was **strengthened, not repaired**. **This is the same: name the scenario you resemble, and say the one word that
+separates you from it.***
+
+⚠ *Not claimed: that the resolution is wrong, or that a Page curve should be produced — **if the flux is absent
+there is no curve, which is consistent**. But ***a referee asks whether that is distinguishable, and there is
+currently no place in the paper for them to ask it.*** And P1 names its own frontier already: **"the mechanism of
+the crossing, not its unitarity."***
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

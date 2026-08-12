@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2540 — 2026-08-11 (main line). **R-P STATION ⑩ — the resolution is the baby-universe one, never named, and its standard objection is answered in the same sentence.**
+
+**⌗ THE MEASUREMENT.** *information paradox 14 · unitary 35 · AMPS 10 · complementarity 4 · remnant 4 —* ***and Page
+curve 0 · Page time 0 · density matrix 0 · von Neumann 0 · mixed state 0 · baby universe 0.***
+⇒ ***So P1 engages AMPS — the DERIVED firewall puzzle — ten times, and never the PRIMARY diagnostic.***
+
+**⛭⛭ AND THE RESOLUTION, with remnants explicitly rejected:** *"The black hole thus does **not** end as a thermal
+remnant whose purity must be explained; **it becomes a universe**, by an evolution that never leaves the unitary,
+**globally hyperbolic** setting."*
+⇒ ***That IS the baby-universe resolution, and the name appears zero times.***
+⌗ ***And the standard objection — information entering a DISCONNECTED universe is still lost to the exterior — is
+answered in that same sentence by "globally hyperbolic", without ever being stated as an objection. The difference
+that does all the work is never stated AS a difference.***
+
+**⌗⌗ AND THIS IS STATION ⑤'s SHAPE, ONE FIELD OVER.** *There the corpus argued from **completion** and never named
+**Unruh**; c54.202 wrote the paragraph and the argument was **strengthened, not repaired**.*
+⇒ ⛭ ***THE PATTERN: a corpus built from the inside states what it IS; a reader arrives with what the field ASKS. The
+two can be a perfect fit and still not meet — and when they do fit, the missing paragraph is cheap and the finding
+is that nobody could tell.***
+⌗ *The diagnostic is mechanical — **take the field's standard objection and grep for its NAME** — and it has now
+found five in twenty revisions: **Lovelock, Type II/III, Unruh, Higgs, and this**.*
+
+⚠ *And the discipline that keeps it honest: **check whether the corpus ANSWERS the objection before reporting it as
+a gap**. Both times it did. ***Reporting "you have not addressed X" when the answer is in the sentence would be the
+reverse failure, and a worse one.*** Routed as item 53.*
+
+⌗ *Also: R-P's station table was stale — **③④⑤⑥⑦ were all walked and the table still showed them open**, the
+self-declared-done defect one register out. Brought current. **⑨ (cosmology · nuclear/plasma) is the last unrun
+station.***
+
 ### Revision r2539 — 2026-08-11 (main line). **c54.203 MERGED — the Higgs join is an IDENTITY, `L-242` closes, and item 7 is struck as a frozen record.**
 
 **⛭⛭⛭ THE JOIN.** *54 stated its prior question in advance — are P3's symmetry breaking and p0's $R$-parity **one

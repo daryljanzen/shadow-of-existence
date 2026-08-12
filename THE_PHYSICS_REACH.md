@@ -1,10 +1,26 @@
 ---
 name: the-physics-reach
 kind: STATE
-current: r2536+c54.202
+current: r2540+c54.203
 job: The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521, OWE DISCHARGED r2527+c54.202 (two companions remain); ⑥ WALKED r2522 (a one-clause fix, item 48); ⑦ WALKED r2536 (the entropy asymmetry, item 52); ⑨ ⑩ owed per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home.
 sources: [cowork]
 ---
+
+## ⛭⛭⛭ STATION ⑩ WALKED r2540 — and it is station ⑤'s shape, one field over
+
+*Measured: **information paradox 14 · AMPS 10 · remnant 4** — and* ***Page curve 0 · baby universe 0 · density
+matrix 0 · von Neumann 0.***
+⇒ ***The corpus engages AMPS — the DERIVED firewall puzzle — ten times and never the PRIMARY diagnostic.***
+
+**⛭⛭ AND THE RESOLUTION, with remnants explicitly rejected:** *"the black hole … **becomes a universe**, by an
+evolution that never leaves the unitary, **globally hyperbolic** setting."*
+⇒ ***That IS the baby-universe resolution, unnamed — and the standard objection (information in a DISCONNECTED
+universe is still lost to the exterior) is answered in the same sentence, by "globally hyperbolic", without ever
+being stated as an objection.***
+
+⌗ ***Same shape as ⑤: there the argument ran on COMPLETION and never named UNRUH, and c54.202 closed it.*** *The fix
+both times is **a paragraph that names what is being answered**, not a change to the argument.* *Routed as item 53.*
+
 
 ## ⛭⛭⛭ STATION ⑦ WALKED r2536 — the temperature is taken and the entropy never is
 
@@ -180,13 +196,13 @@ corpus — because a field bites where the corpus is deepest, and the arc is the
 | arc station | the field that meets it | state |
 |---|---|---|
 | ~~**①②**~~ `P12`, `P10` | **QM / quantization** — the constraint algebra, deparametrization, the true Hamiltonian, deficiency indices, the quantum joint | ✔ **STRUCK r2383 — RUN, and it had been marked NEXT for 578 revisions after it ran.** *See the note below this table.* |
-| **③④** `P8`, `P9` | **GR / gravitation** — the field equations, the exact-solution catalogue, Petrov type, the Carter constant | ***★ NEXT — the earliest UNRUN station*** (register `L-204`) |
-| **⑤** `P11` | **QFT in curved space** — the graviton, the Mukhanov equation, Hawking/Bogoliubov as an absent horizon effect | ⟐ |
-| **⑥** `P13`, `P14` | **SM / gauge / particle physics**, and **symmetry breaking** — the $\mathfrak{su}(3)$ location, three chiral generations, $D_6$ | ⟐ |
+| **③④** `P8`, `P9` | **GR / gravitation** — the field equations, the exact-solution catalogue, Petrov type, the Carter constant | ✔ **WALKED r2520** — the Petrov interval is complete because the substrate is DOUBLY RULED; routed as item 46, applied c54.203 |
+| **⑤** `P11` | **QFT in curved space** — the graviton, the Mukhanov equation, Hawking/Bogoliubov as an absent horizon effect | ✔ **WALKED r2521, OWE DISCHARGED r2527** — Unruh; the sorting, and $\kappa=0$ at Nariai. ⚠ *$\langle T_{\mu\nu}\rangle$ still owed* |
+| **⑥** `P13`, `P14` | **SM / gauge / particle physics**, and **symmetry breaking** — the $\mathfrak{su}(3)$ location, three chiral generations, $D_6$ | ✔ **WALKED r2522** — the Higgs identified not declined; **closed r2539+c54.203**, the join is an identity |
 | **6h** `P13`, `P14` | **THE HIGGS SECTOR — added r2412 (Daryl): how do CR and the Higgs mechanism COMPLEMENT each other, in coherence and in correspondence?** *Registered `L-217`.* **The word "Higgs" appears nowhere in the corpus** *(checked at source r2411; "Yukawa" appears in P13 and P14).* *And the corpus **states the boundary four times in four papers and nowhere states the RELATION** — which is the entry-point front's own definition of a gap.* | **NEXT after the complex-analysis station** |
-| **⑦** `p0` | **thermodynamics / statistical mechanics** — the Gibbons–Hawking state at $\kappa=1/\alpha$, BH mechanics · **and OPTICS**, ✔ run r1857–r1863 | *optics ✔ · thermo ⟐* |
+| **⑦** `p0` | **thermodynamics / statistical mechanics** — the Gibbons–Hawking state at $\kappa=1/\alpha$, BH mechanics · **and OPTICS**, ✔ run r1857–r1863 | ✔ **WALKED r2536** — optics r1857–63; thermo: **the temperature is taken and the entropy never is**, routed as item 52 |
 | **⑨** `P7`, `P15`, `P16` | **cosmology** · **nuclear / plasma** — BBN, recombination, the acoustic scale | ⟐ |
-| **⑩** `P1`, `P4` | **quantum information** — the information paradox, unitarity | ⟐ |
+| **⑩** `P1`, `P4` | **quantum information** — the information paradox, unitarity | ✔ **WALKED r2540** — the resolution is the **baby-universe** one, never named; routed as item 53 |
 
 > ## ⌗⌗ THE ①② STRIKE — made r2383, and the delay is the finding
 >
