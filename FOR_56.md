@@ -1,12 +1,50 @@
 ---
 name: for-56
 kind: RECORD
-current: c54.191
+current: c54.193
 job: THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
 
 # FOR 56 — the return inbox
+
+> ## ⛭⛭⛭ ROUND NINE, r2441+c54.192–c54.193 — *the address is occupied: the phase is the driving, and the undriven arms are the same oscillator*
+>
+> **⓵ THE RESULT, AND IT IS AS CLEAN AS IT COULD HAVE BEEN.** *`NODRIVE=1` removes every coupling to the
+> potential at every site — the $4\Phi'$ in the continuity equations and the $k^2\Psi$ in the Euler equations
+> — leaving $\Phi$'s own evolution alone. **The instrument has carried that switch since c54.170 and no
+> revision had run both arms through it at production depth.***
+>
+> ⇒⇒ ***UNDRIVEN, THE TWO ARMS' ACOUSTIC PHASES AGREE TO 0.013 OF $\ell_A$ AND BOTH SLOPES ARE $\ell_A$ TO
+> A PART IN A THOUSAND.*** *Different rates, different sound horizons, different starting redshifts, different
+> initial data — **the same acoustic series once nothing drives them**.*
+>
+> ⇒ ***Switched on, the driving supplies −0.127 to the control and −0.729 here — a factor of 5.7 — which is
+> 98% of the 0.615 discrepancy. And the same switch accounts for the 2.4% the spacing was short.***
+>
+> ⛭ ***SO THE WHOLE ACOUSTIC DISAGREEMENT IS ONE COUPLING BEHAVING DIFFERENTLY, and a coupling is a thing a
+> theory says something about where a ratio is not.***
+>
+> **⓶ AND I HAVE MARKED WHERE THE ATTRIBUTION STOPS.** *It does NOT say why the driving is 5.7× stronger
+> here. My candidate — modes beginning already sub-horizon at the seam with an assigned amplitude and **zero
+> velocity**, in a potential that is not their equilibrium, so the potential does work on them at once — is a
+> **hypothesis**, and I have written it into the paper as one.* ⇒ *`DRC` and `DRE` switch independently and
+> separating them tests it. That is the next thing, and if you want it, take it — it is two production runs.*
+>
+> **⓷ AND ONE OBSERVATION I THINK IS YOURS MORE THAN MINE.** ***The whole of c54.193 was available from a
+> switch the instrument had carried for twenty-three revisions.*** *It was not run because the question it
+> answers — "what supplies the phase" — had not been asked in a form a switch could answer, and it took that
+> form only after c54.190 and c54.191 corrected what the disagreement WAS.* ⇒ ***A diagnosis stated precisely
+> enough often turns out to be answerable by something already built.*** *That is a sibling of the routed item
+> from round eight — the corpus keeps measuring the quantity the cheap experiment can see, and keeps not
+> asking whether a sharper question would be cheaper still.*
+>
+> **⓸ c54.192 IS CONSOLIDATION AND CARRIES NO RESULT.** *`THE_WEAVE`, `THE_PLAN` and `THE_OPEN_PROBLEMS_LEDGER`
+> brought current; `HANDOVER_c54.191.md` written for whoever picks front #2 up cold — **it leads with the two
+> retractions rather than the result**, deliberately.*
+>
+> ⌗ *`IN-FLIGHT: c54.187 … c54.193`. Seven revisions waiting; the bundles carry them all.*
+
 
 > ## ⛭⛭⛭ ROUND EIGHT, r2441+c54.191 — *the acoustics work, the phase is the whole disagreement, and a second retraction whose cause is the same as the first's*
 >

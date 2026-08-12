@@ -147,6 +147,50 @@ sources: [cowork, chat]
 
 
 ### Revision r2487 — 2026-08-11 (main line). **THE CONSOLIDATION THE FORK NAMED — P15's published text still carries the retracted framing, and the one experiment that would test "why $0.62\pi$" is one this line cannot run.**
+### Revision r2441+c54.193 — 2026-08-12 (working fork, line/54). **WHY $0.62\pi$: THE DRIVING. THE ATTRIBUTION IS COMPLETE, AND THE WHOLE ACOUSTIC DISAGREEMENT IS ONE COUPLING.**
+
+**⌗ c54.191 CLOSED BY NAMING AN ADDRESS AND NOT GOING TO IT** — *"an acoustic phase shift is a computable
+consequence of the driving, so the question 'why $0.62\pi$' has an address. This file does not have it."*
+⌗ **The instrument has carried the switch since c54.170**: `NODRIVE=1` removes every coupling to the potential
+at every site — the $4\Phi'$ in the photon, neutrino and CDM continuity equations and the $k^2\Psi$ in the
+Euler equations — while leaving $\Phi$'s own evolution alone, that being the background and not a coupling.
+*Both arms are run through it at production depth here, which no revision had done.*
+
+⇒⇒ ***UNDRIVEN, THE TWO ARMS' ACOUSTIC PHASES AGREE TO 0.013 OF $\ell_A$ (−0.135 AND −0.149) AND BOTH SLOPES
+ARE $\ell_A$ TO A PART IN A THOUSAND.*** *Two constructions with different rates, different sound horizons,
+different starting redshifts and different initial data give the **same** acoustic series once nothing drives
+them.*
+
+**⛭⛭⛭ AND THE DRIVING IS WHAT SEPARATES THEM.** *Switched on it supplies **−0.127 to the control and −0.729
+here — a factor of 5.7**. The driven discrepancy is 0.615 and the undriven 0.013, so **the driving accounts
+for 98% of it**.*
+
+**⌗ AND THE SAME SWITCH ACCOUNTS FOR THE SPACING.** *Undriven both slopes are 1.000 and 1.001 of $\ell_A$;
+driven, the control's is 1.003 and this construction's 0.976.* ⇒ ***So the 2.4% the spacing was short is the
+driving as well, and not a second effect.***
+
+⇒⇒⇒ ***THE WHOLE ACOUSTIC DISAGREEMENT IS ONE COUPLING BEHAVING DIFFERENTLY — and a coupling is a thing a
+theory says something about, where a ratio is not.***
+
+**⚠ WHAT THIS DOES NOT SAY, AND THE DIFFERENCE BETWEEN AN ATTRIBUTION AND AN EXPLANATION IS MARKED IN THE
+PAPER.** *It does not say WHY the driving is 5.7× stronger here. The candidate is that this construction's
+modes begin **already sub-horizon at the seam** carrying an assigned amplitude and **zero velocity**, in a
+potential that is not the equilibrium configuration for that state — so the potential does work on them at
+once, where the control's modes begin super-horizon in adiabatic equilibrium and the potential decays
+gradually as they enter.* ⛔ ***That is a HYPOTHESIS and this revision does not test it.***
+
+⇒ **THE NEXT THING THIS FRONT OWES:** *`DRC` (the potential's rate of change feeding the density) and `DRE`
+(its gradient driving the velocity) switch independently, and separating them attributes the 5.7 to one term
+or the other.*
+
+⛔ *`F5` unsoftened; `PO-7` protected; the conversion is Daryl's. **An attribution is not a verdict.***
+
+**⌗⌗ AND ONE OBSERVATION FOR THE RECORD, since this span has been about what a measurement is OF.** *The whole
+of this revision was available from a switch the instrument has carried for twenty-three revisions. It was not
+run because the question it answers — "what supplies the phase" — had not been asked in a form a switch could
+answer, and the question took that form only after c54.190 and c54.191 corrected what the disagreement WAS.*
+⇒ ***A diagnosis stated precisely enough often turns out to be answerable by something already built.***
+
 ### Revision r2441+c54.192 — 2026-08-12 (working fork, line/54). **CONSOLIDATION: the span's shape propagated into the grain documents, and a handover written for whoever picks front #2 up cold.**
 
 **⌗ NO NEW RESULT. This revision exists because six revisions of front #2 changed what the corpus's SHAPE
