@@ -200,10 +200,31 @@ def _id_space():
     import re as _re2
     _m2 = _re2.search(r'RETIRED-IDS:([^\n]*)', '\n'.join(_txt))
     _retired = {int(x.split('-')[1]) for x in _re2.findall(r'L-(?:\d+)', _m2.group(1))} if _m2 else set()
-    _gaps = [n for n in range(1, _hi + 1) if n not in seen and n not in _retired]
+    # ** THE GAP CHECK IS PER BAND, AND r2441+c54.186 IS WHY. **  This block read the ID space as one
+    # contiguous run, range(1, hi+1) -- which was true while ONE line allocated and became false the
+    # moment `check_id_bands` reserved L-500-L-799 for the working fork.  The fork's first allocation
+    # in its own band, L-500, made this gate report the 270 unallocated numbers L-230-L-499 as leads
+    # "assigned and NEVER REGISTERED", i.e. as lost work.  ** A number in a band nobody has reached
+    # yet is UNALLOCATED, not lost; a number missing BELOW a band's own high-water mark is lost. **
+    # The band table is imported rather than copied so the two gates cannot drift apart.
+    import importlib.util as _ilu
+    _spec = _ilu.spec_from_file_location('_idb', _os.path.join(ROOT, 'corpus', 'check_id_bands.py'))
+    _idb = _ilu.module_from_spec(_spec)
+    _spec.loader.exec_module(_idb)
+    _gaps = []
+    for _lo, _bhi, _bname in _idb.BANDS:
+        _used = [n for n in seen if _lo <= n <= _bhi]
+        if not _used:
+            continue                                  # band never opened -- nothing can be missing
+        _gaps += [n for n in range(_lo, max(_used) + 1)
+                  if n not in seen and n not in _retired]
+    _gaps.sort()
     _dupes = [n for n, c in sorted(seen.items()) if c > 1]
+    _open = [f"{_lo}-{max(n for n in seen if _lo <= n <= _bhi)}"
+             for _lo, _bhi, _ in _idb.BANDS if any(_lo <= n <= _bhi for n in seen)]
     print(f"\n  ID SPACE: {len(seen)} rows, highest L-{_hi}, {len(_retired)} retired, "
           f"{len(_gaps)} gap(s), {len(_dupes)} duplicate(s)")
+    print(f"    bands with allocations (gaps are checked only inside these): {', '.join(_open)}")
     _bad = 0
     if _gaps:
         print(f"    [FAIL] IDs assigned but NEVER REGISTERED: "

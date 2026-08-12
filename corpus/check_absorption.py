@@ -84,11 +84,32 @@ def main():
     print()
     newest_absorbed = rows[-1][0]
     front = tree_front()
-    if front > newest_absorbed:
+    # ** IN-FLIGHT, AND r2441+c54.186 IS WHY. **  This gate's inference -- "a fork revision in the
+    # documents newer than the newest absorption means an absorption happened and was never
+    # recorded" -- is sound on the OBSERVER's tree and false on the FORK's.  Since r2407 both lines
+    # work in the same repository, so the fork writing its own revision into its own documents trips
+    # a gate that then reports the fork's normal condition as a broken record.  ** The exemption is
+    # DECLARED and not inferred, which is this file's whole philosophy: the fork names the revision
+    # it is cutting and the node clears the line when it absorbs. **  A revision that is neither
+    # absorbed nor declared in flight still FAILS, so the gate keeps its teeth.
+    inflight = set()
+    # ** ANCHORED TO LINE START, and that is not pedantry: unanchored, the paragraph ABOVE the record
+    # explaining what `IN-FLIGHT:` is -- which names c54.186 as the example -- satisfied the marker by
+    # itself, so the gate passed on a tree that had declared nothing.  Caught by seeding the defect
+    # rather than by reading the fix. **
+    _m = re.search(r'^IN-FLIGHT:([^\n]*)', open(REC, encoding='utf-8').read(), re.M)
+    if _m:
+        inflight = {int(x) for x in re.findall(r'c54\.(\d+)', _m.group(1))}
+    if inflight:
+        print('  declared IN FLIGHT (cut by the fork, not yet absorbed): '
+              + ', '.join('c54.%d' % n for n in sorted(inflight)))
+    if front > newest_absorbed and front not in inflight:
         print(f'  [FAIL] the tree names c54.{front} but the newest recorded absorption is '
-              f'c54.{newest_absorbed}.')
+              f'c54.{newest_absorbed}, and c54.{front} is not declared in flight.')
         print('     ** An absorption happened and was never recorded **, which is the one thing this')
         print('     gate can prove.  Add the row; the record is the only thing that moves.')
+        print('     *If instead this tree is the FORK and that is its own revision in progress,')
+        print('      declare it on the `IN-FLIGHT:` line in ABSORPTION.md -- declared, not inferred.*')
         return 1
 
     print(f'  Newest absorbed: c54.{newest_absorbed}.  The tree names nothing newer, which is')

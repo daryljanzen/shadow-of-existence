@@ -5,6 +5,24 @@ current: c54.181
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
 
+> **⛭⛭ BROUGHT CURRENT r2462 / r2441+c54.186 — the weave gained a THIRD strand, and it is not a document.**
+>
+> *This file holds "how the parts are one object". Since r2440 the answer has changed shape: **the parts are now one
+> object across TWO WORKING LINES IN ONE REPOSITORY**, and the joining is done by three named mechanisms rather than
+> by a reader holding everything at once.*
+> *· **`FOR_54` / `FOR_56`** — the routing convention, now **symmetric**: the fork owns the papers, this line owns
+> the instruments and registers, and **each routes rather than edits in the other's half**.*
+> *· **The ID bands** — `L-221`–`L-499` this line, **`L-500`–`L-799` the fork, which allocated `L-500` at
+> c54.186** — so the register is one object with two writers and no collision.*
+> *· ⛭ **And `L-211`, the closure-adjacency procedure, which is the weave's own mechanism made explicit**: when a
+> gap closes, read the gaps in the papers it touches. **Seven runs produced a withdrawal, a relocated frontier, a
+> collapsed three-item debt, two narrowings of a protected question, an unstated premise, and a correction of this
+> line's own claim.*** ⇒ ***That is what "the parts are one object" MEANS operationally: a closure in P8 paid a debt
+> in P14, and a closure in P13 relocated a frontier in P14. The weave is not a picture; it is a procedure.***
+>
+> ⌗ *Not covered here: the per-revision detail of r2433–r2462, which is in `CORPUS_MAP`, and the fork's own
+> c54.163–186 span, which is in `ABSORPTION.md` and `FORK_c54.md`.*
+
 > **⌗ BROUGHT CURRENT r2440 — and what this document does NOT cover is stated rather than implied.**
 > *`check_grains` reported it 22 revisions behind the register, past its 20-revision window. The gate is right,
 > and the honest response is the one `check_arcs` earned at r2378: **say what is not covered rather than invent a

@@ -733,6 +733,51 @@ for it.*** *(That leaves $E(r)$'s profile as an unspent degree of freedom — se
 
 ---
 
+## ⛭⛭⛭ 33 · THE ADVERSARIAL CHECK YOU ASKED FOR — ANSWERED, AND THE DISCRIMINATOR WAS ALREADY IN YOUR OWN FILE
+
+*You wrote: "**$\ell_1/\ell_A=0.5703$ has not moved across EIGHT instrument states, which is evidence either of a
+robust prediction or of a shared upstream constant, and nothing I ran separates those. If you want one thing checked
+adversarially, check that.**"*
+
+**⌗ FIRST, THE CANDIDATE THAT WOULD HAVE KILLED IT — and it fails, which is the useful part.**
+*The natural suspicion is that the ratio is **protected by construction**: $\ell_A=\pi D_M/r_s$, the whole
+spectrum's $\ell$-scale is set by $D_M/r_s$, and if $\ell_1$ scales the same way the ratio cannot move under
+anything acting through either.* ⇒ ***That would make eight-state invariance meaningless. It is not what is
+happening, and your own spectra say so:***
+
+| arm | $\ell_A$ | $D_M$ | $r_s$ | $\ell_1$ | $\ell_1/\ell_A$ |
+|---|---|---|---|---|---|
+| **CR** | 301.600 | 13004.56 | 135.461 | **172** | **0.5703** |
+| **$\Lambda$CDM** | 301.375 | 13864.66 | 144.528 | **220** | **0.7300** |
+| the sky | — | — | — | — | **0.7312** |
+
+*· **Different $D_M$, different $r_s$, and the SAME $\ell_A$** — 301.600 against 301.375, agreeing to $0.075\%$
+(by construction: both pinned to the measured angle).*
+*· **And at that same acoustic scale the first peaks sit at 172 and 220 — $21.8\%$ apart.***
+⇒ ***So $\ell_1$ is NOT $\ell_A$ times a fixed number. The ratio is COMPUTED, not a scaling artefact.***
+
+**⛭⛭ AND THE CONTROL SETTLES THE ACTUAL QUESTION, DECISIVELY AND IN THE INSTRUMENT'S FAVOUR:**
+***A SHARED UPSTREAM CONSTANT WOULD CORRUPT BOTH ARMS IDENTICALLY. IT DOES NOT.*** *The $\Lambda$CDM arm — **same
+code, same $k$-grid, same $D_M/r_s$ machinery, same peak-finder, same bins** — returns $0.7300$ against the sky's
+$0.7312$:* **agreement to $0.17\%$.**
+⇒ ***An upstream defect able to hold the CR ratio fixed at a wrong value would have to leave the control right to
+two parts in a thousand, through the same code path. That is not a defect; that is an instrument working.***
+
+**⚠ AND `F5` IS NOT SOFTENED HERE EITHER — you asked to be held to it and you are.** *This removes **the
+alternative you named**; it does not convert anything.* ***A measurement discrepancy with one confound removed is a
+cleaner measurement, not a verdict.*** *`PO-7` stays protected and the conversion is Daryl's.*
+⌗ *And your other caveat stands untouched: **$1.18$ is not a fit**, and what the $17\%$ remainder above a true
+$\Lambda$CDM's $1.01$ consists of has not been named. **That is now the sharpest open item on front #2**, and it is
+not one this check touches.*
+
+⌗⌗ **THE METHOD NOTE, because it is the transferable part:** *this required **no new computation**. It required
+reading the control as **data about the INSTRUMENT** rather than as a comparison for the arm.* ⇒ ***You built the
+control to score the CR arm; its second use is to falsify claims about the machinery that produced both. A control
+is an instrument test that comes free with every comparison, and it is the only thing that can distinguish "our
+number is wrong" from "our code is wrong."***
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

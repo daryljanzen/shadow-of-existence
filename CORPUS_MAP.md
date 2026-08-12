@@ -146,6 +146,59 @@ sources: [cowork, chat]
 
 
 
+### Revision r2462 — 2026-08-11 (main line). **c54.186 ABSORBED — and the adversarial check the fork asked for is answered, on the fork's own data, without new computation.**
+
+**⌗⌗ THE ABSORPTION.** *Forty-five files changed or added against the common base. **The fork touched none of the
+sixteen documents this line brought current at r2449**, so the two spans are disjoint and the merge is clean: the
+fork's `corpus/CR_cosmology.tex`, its two gate repairs, the c54.186 spectra and receipt taken wholesale; this line's
+currency work and register untouched; `L-500` spliced into the fork's own band.*
+
+**⛭ TWO GATE REPAIRS THE FORK MADE IN THIS LINE'S HALF, and both are right.**
+*· **`check_burndown` read the lead-ID space as one contiguous run**, so the moment the fork allocated `L-500` the
+gate reported **270 unallocated numbers as lost work**. Fixed **per band, below each band's own high-water mark**,
+with the band table **imported** from `check_id_bands` rather than copied — **so the two gates cannot drift apart**.*
+*· **`check_absorption` assumed it was running on the observer's tree.** Since r2407 both lines work in one
+repository, so the fork writing its own revision tripped a gate that then reported the fork's normal condition as a
+broken record. Fixed with a **declared `IN-FLIGHT:` line** — ***declared, not inferred, which is that file's own
+philosophy*** — and **anchored to line start after the unanchored regex let the paragraph EXPLAINING the marker
+satisfy it.***
+⚠ ***And the fork found a duplicate this line created and this line's own step-6 fix did not catch: sixteen lines of
+P15's residual-decomposition prose stood TWICE, the c54.182 copy glued to c54.183's paragraph with no blank line, so
+"That calculation has since been done" referred to the lensing POTENTIAL rather than to the lensed spectrum.***
+*Repaired by the fork; **a union merge of two ADDITIVE prose edits leaves no conflict marker to notice.***
+
+**⛭⛭⛭ AND THE ADVERSARIAL CHECK, WHICH THE FORK REQUESTED IN THESE WORDS:** *"$\ell_1/\ell_A=0.5703$ has not moved
+across EIGHT instrument states, which is evidence either of a **robust prediction** or of a **shared upstream
+constant**, and nothing I ran separates those. **If you want one thing checked adversarially, check that.**"*
+
+**⌗ FIRST, THE CANDIDATE THAT WOULD HAVE KILLED IT — and it fails, which is the useful part.** *If the ratio were
+**protected by construction** — $\ell_A=\pi D_M/r_s$, with $\ell_1$ scaling the same way — eight-state invariance
+would be meaningless.*
+⇒ ***The fork's own spectra refute it: the two arms carry DIFFERENT $D_M$ (13004.56 against 13864.66) and DIFFERENT
+$r_s$ (135.461 against 144.528), land on the SAME $\ell_A$ (301.600 against 301.375, agreeing to 0.075%), and put
+their first peaks at 172 and 220 — 21.8% apart.*** **So $\ell_1$ is not $\ell_A$ times a fixed number.**
+
+**⛭⛭ AND THE CONTROL SETTLES THE QUESTION, DECISIVELY AND IN THE INSTRUMENT'S FAVOUR:**
+***A SHARED UPSTREAM CONSTANT WOULD CORRUPT BOTH ARMS IDENTICALLY. IT DOES NOT.*** *The $\Lambda$CDM arm — **same
+code, same $k$-grid, same $D_M/r_s$ machinery, same peak-finder, same bins** — returns **0.7300 against the sky's
+0.7312: agreement to 0.17%.***
+⇒ ***An upstream defect able to hold the CR ratio fixed at a wrong value would have to leave the control right to
+two parts in a thousand, through the same code path. That is not a defect; that is an instrument working.***
+
+**⚠ AND `F5` IS NOT SOFTENED — the fork asked to be held to it, and it is.** *This removes **the alternative the
+fork named**; it converts nothing.* ***A measurement discrepancy with one confound removed is a cleaner measurement,
+not a verdict.*** *`PO-7` stays protected and the conversion is Daryl's.* ⌗ *And the fork's other caveat stands
+untouched and is now **the sharpest open item on front #2**: **$1.18$ is not a fit**, and what the 17% above a true
+$\Lambda$CDM's 1.01 consists of has not been named.*
+
+**⌗⌗ THE METHOD NOTE, because it is the transferable part:** *this required **no new computation**. It required
+reading the control **as data about the INSTRUMENT** rather than as a comparison for the arm.* ⇒ ***The fork built
+the control to score the CR arm; its second use is to falsify claims about the machinery that produced both. A
+control is an instrument test that comes free with every comparison, and it is the only thing that can distinguish
+"our number is wrong" from "our code is wrong."***
+
+**Register: 229 rows. Gates: twenty-one, twenty-one rc=0. Routed: twenty-two live items.**
+
 ### Revision r2461 — 2026-08-11 (main line). **THE ROUTING LIST READ COLD BEFORE 54 SPINS UP — one real gap fixed, and the audit that found twelve was word-presence, wrong on all twelve.**
 
 **⌗⌗ THE JOB:** *twenty-one live items accumulated across twenty revisions, about to be read by a node that was not

@@ -19,6 +19,9 @@ it.
 | `c54.178_cr.npz` | r2376+c54.178 | the same with `ARM=cr` |
 | `c54.178_lcdm_noPi.npz` | r2376+c54.178 | the same with `PISRC=0` — the hierarchy WITHOUT the polarisation source terms, which is the control for what an envelope can and cannot supply |
 | `c54.178_lcdm_noBsplit.npz` | r2376+c54.178 | the same with `BSPLIT=0` — the baryons at the CDM's density |
+| `c54.186_cr_KCONT.npz` | r2441+c54.186 | the same with `ARM=cr KCONT=1` — **the CR arm on a CONTINUUM k-grid instead of its discrete ladder, which is the check the alias gate asks for in its own waiver text and which had never been run against χ²**. *1800 modes at 5.7 samples per Bessel period, against the ladder's ~725 at 2.3; the spectra agree to better than 0.7% everywhere and χ² to 2.1 in 51817, so the CR arm's projection does not depend on the discreteness. Seventh instrument state at ℓ₁/ℓ_A = 0.5703.* |
+| `c54.186_lcdm_L3000.npz` | r2441+c54.186 | `HIER=1 BSPLIT=1 ARM=lcdm NK=900 LMAXL=3000 ETAEND=4000 KBATCH=300 SAVE=…` — **the wavenumber range opened, with the k-SPACING HELD FIXED** (NK scaled with LMAXL so the projection sampling is 5.7 per Bessel period in both). *Scored on the SAME 185 bins as the LMAXL=2000 run, the control goes χ² 989 → 218, χ²/dof 5.34 → **1.18** against a true ΛCDM fit's 1.01 — so **78% of what survived c54.183's lensing was the truncation and not physics**.* |
+| `c54.186_cr_L3000.npz` | r2441+c54.186 | the same with `ARM=cr` — **so that `L-147`'s `F3` compares two arms at the SAME wavenumber range**, which is the mistake `F3` exists to avoid. *The CR arm moves 298.9 → 302.1 in χ²/dof and ℓ₁/ℓ_A = 0.5703 for the eighth instrument state.* |
 
 ** THE c54.175 PAIR CARRIES 8/9 AND THE c54.177 PAIR CARRIES THE DERIVED 16/15, AND BOTH ARE KEPT
 BECAUSE THE DIFFERENCE BETWEEN THEM IS A RESULT. **  16/15 costs the control Δχ² = 1123 and is the

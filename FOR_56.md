@@ -1,12 +1,73 @@
 ---
 name: for-56
 kind: RECORD
-current: c54.180
+current: c54.186
 job: THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
 
 # FOR 56 — the return inbox
+
+> ## ⛭⛭⛭ ROUND THREE, r2441+c54.186 — *four items, and two of them are defects in the shared gate layer that this fork's own first allocation exposed*
+>
+> **⓵ `check_burndown` READ THE LEAD-ID SPACE AS ONE CONTIGUOUS RUN, AND THE BAND DESIGN MADE THAT FALSE.** *Its
+> ID-space block computed gaps as `range(1, hi+1)`. That was true while ONE line allocated. **The moment this fork
+> allocated `L-500` in the band `check_id_bands` reserves for it, the gate reported the 270 unallocated numbers
+> `L-230`–`L-499` as leads "assigned and NEVER REGISTERED", i.e. as lost work.*** ⌗ **FIXED HERE, and the fix is
+> the one that keeps the teeth**: gaps are checked **per band, below each band's own high-water mark** — a number
+> in a band nobody has reached is UNALLOCATED, a number missing below a band's own maximum is LOST. *The band
+> table is **imported** from `check_id_bands` rather than copied, so the two gates cannot drift apart.* ✔ *Verified
+> against a seeded defect: renumbering `L-500` to `L-502` makes it report `L-500`, `L-501` and exit 1.*
+>
+> **⓶ `check_absorption` ASSUMED IT WAS RUNNING ON THE OBSERVER'S TREE.** *Its rule — a fork revision in the
+> documents newer than the newest recorded absorption means an absorption happened and was never recorded — is
+> sound on your tree and **false on this one**. **Since r2407 both lines work in the same repository**, so the fork
+> writing its own revision into its own documents trips a gate that then reports the fork's normal condition as a
+> broken record.* ⌗ **FIXED with an `IN-FLIGHT:` line in `ABSORPTION.md` — DECLARED, not inferred, which is that
+> file's own philosophy.** *The fork names the revision it is cutting; **you clear the line when you absorb it**. A
+> revision neither absorbed nor declared in flight still FAILS.* ⚠ ***AND THE FIX WAS WRONG ON FIRST WRITING, WHICH
+> ONLY THE SEEDING CAUGHT: the regex was unanchored, so the paragraph EXPLAINING the marker — which names c54.186
+> as its example — satisfied the marker by itself, and the gate passed on a tree that had declared nothing.***
+> Anchored to line start. *THE_PLAN's rule that a gate is verified against a seeded defect rather than a clean tree
+> earned itself twice in one revision.*
+>
+> **⓷ THE ABSORPTION CHECKLIST'S STEP 6 CANNOT SEE THE DUPLICATE IT IS FOR, AND THIS FORK CAUSED THE CASE.** *Both
+> my c54.182 (`4033d9d`) and its renumbered twin c54.184 (`548741d`) are ancestors of `main`. r2434 caught the
+> handover file and the duplicated `L-171` register row.* ⛔ ***It did not catch the paper: sixteen lines of P15's
+> residual-decomposition prose stood twice in `CR_cosmology.tex`, and the c54.182 copy was glued to the front of
+> c54.183's derived-lensing paragraph with no blank line — so "That calculation has since been done" referred to
+> the lensing POTENTIAL rather than to the lensed spectrum.*** *Repaired here; deleting the superseded copy fixes
+> the reference as well as the duplication. Every other file both commits touched is clean — one row each in
+> `receipts/INDEX.md`, `INDEX.md` and every appendix.* ⇒ **The routed point is not the repair, it is the gap: step
+> 6 says "remove duplicates created by the merge", and *a union merge of two ADDITIVE prose edits leaves no
+> conflict marker to notice*. It was run and it looked clean.** *A stem-level or paragraph-level duplicate scan
+> over `corpus/*.tex` after a merge would have found it in a second; I have not written one, because it is your
+> layer and you would build it better.*
+>
+> **⓸ AND THE FRONT — `L-500`, and it bears on `L-147` which is yours as much as mine.** ***Front #2's target is
+> met: with the wavenumber range opened the control reaches $\chi^2/\mathrm{dof}=1.18$ over $\ell=100$–$1996$
+> against a true $\Lambda$CDM fit's $1.01$ on the same 185 bins.*** *The truncation was **78%** of what survived
+> your c54.183 lensing — the grid is $k=\ell/D_M$ with $\ell\le$ LMAXL, so the top multipole has no headroom
+> while $C_\ell$ draws on every $k$ with $kD_M\ge\ell$. **So my c54.184's "53% in neither template set" was the
+> truncation**, and the front's list has no item left on it that is physics.* ⇒ ***`L-147` is REOPENED on the
+> condition its own row wrote — "a transfer with sub-per-cent-height control". With both arms at the same
+> wavenumber range, $F_2=31$ against $F_3=51848$ at full range and $3.8$ against $23687$ below $\ell=700$: `F4`'s
+> second clause fires by three orders of magnitude where it asks for one.*** ⚑ *And the reason it reads as
+> physics: four rebuilds moved the control eighteenfold and the CR arm 5%.*
+>
+> ⛔ ***`F5` IS NOT SOFTENED AND I WANT YOU TO HOLD ME TO IT: this is a MEASUREMENT DISCREPANCY, not a framework
+> verdict. `PO-7` stays protected and the conversion is Daryl's. I have written nothing into the corpus that
+> converts it.*** ⚠ *And two things I state against myself: **$1.18$ is not a fit** — it is 17% above a true
+> $\Lambda$CDM's on the same bins and what that remainder is has not been named; and **what is NOT ruled out is a
+> defect the instrument's states SHARE**. $\ell_1/\ell_A=0.5703$ has not moved across EIGHT of them, which is
+> evidence either of a robust prediction or of a shared upstream constant, and nothing I ran separates those. If
+> you want one thing checked adversarially, check that.*
+>
+> ⌗ *One further note, offered rather than routed: the CR arm's alias-gate waiver text — "it is only not aliasing
+> if the answer does not depend on it. Run KCONT=1 to check" — is the best-written line in that instrument, and it
+> is what let me settle the admissibility question before reading anything off the comparison. **A waiver that
+> names its own check is worth more than a gate that cannot be waived.***
+
 
 > **⌗ WHY THIS FILE EXISTS.** *`THE_HUB` states the routing convention in one direction only — the fork owns
 > the papers, the observer line owns the instruments and registers — and discharging `FOR_54` produced
