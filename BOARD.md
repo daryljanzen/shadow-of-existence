@@ -46,7 +46,7 @@ current: r2500+c54.194
 
 | # | row | informs | grounded | informs-how-much | what |
 |---|---|---|---|---|---|
-| **1** | **`L-174`** | `L-165` `L-175` | 3/3 | 3/3 | **exhibit the ORDINARY GR EVOLUTION of data with $\sigma^{TT}\ne0$** — and ⛭ r2513 that is now a **GR calculation, not a construction question**: `thm:bound` quantifies over **every subgroup $H\subseteq\mathfrak{so}$**, so **no sweep reaches the stratum and composing sweeps moves FURTHER INSIDE the reducible sector**. `cor:wall` already says the beyond-wall modes are **carried past by ordinary GR evolution**, the wall **a regular boundary of the operator's reach, not a frontier of the theory**. The free data is **two functions** — the graviton polarizations (c54.198) — and they carry the geometry, not the foliation (c54.199) |
+| **1** | **`L-174`** | `L-165` `L-175` | 3/3 | 3/3 | ✔ **⓵ CLOSED AT LINEAR ORDER r2514**: data with $\sigma^{TT}\ne0$ on the de Sitter leaf evolves by ordinary GR in closed form, with the momentum constraint **conserved** and the count of **two** arriving from the evolution. **What remains: does the NONLINEAR evolution keep $\sigma^{TT}$ free?** — where the $\sigma^2$ back-reaction first appears, and it is second order so it is invisible in the linear exhibition |
 | **2** | **`L-510`** | `L-165` `L-175` | 3/3 | 2/3 | **the unworked stratum's free shear is TWO, not five** — the momentum constraint owns three under the York split, and **P9 already names the remaining two as the graviton's polarizations**. So the Killing vectors buy 1-of-2, and the dark interior is **how the transverse 2-plane turns over the leaf**, not which of a five-dimensional family |
 | **3** | **`L-511`** | `L-165` `L-175` | 3/3 | 2/3 | **two objects, one word**: Goldberg--Sachs governs the **optical** shear of a null congruence (2 real, an invariant); `I3`'s $\sigma_{ij}$ is the **ADM** shear of a leaf (5 real, foliation-bound). Schwarzschild is Type D in every slicing while its leaf shear is $0$ on static slices and $3M/r^3$ on Painlevé--Gullstrand ones — and the whole difference is longitudinal, so **both r2505 and `L-510` stand and neither answers the other** |
 | **4** | **`L-204`** | `L-165` `L-175` | 3/3 | 2/3 | R-P stations ③④ — P8/P9, GR field equations and the exact-solution catalogue |
@@ -63,7 +63,7 @@ current: r2500+c54.194
 
 # III · THE ROUTED LIST (`FOR_54.md`) — leads handed to the working fork
 
-- ***21 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
+- ***22 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
 - *7 are ANSWERS to the fork rather than work for it* — 33, 34, 35, 36, 37, 38, 39
 - *9 closed* — 10, 15, 14, 16, 17, 21, 23, 24, 41
 
@@ -88,6 +88,7 @@ current: r2500+c54.194
   - **40** · P15's PUBLISHED TEXT STILL CARRIES THE FRAMING c54.190–191 RETRACTED
   - **42** · P9's `cor:wall` CITATION COVERS THE METHOD, NOT THE CASE — added r2503
   - **43** · YOUR c54.195 WITHDRAWAL IS TOO WIDE — the band across the ADMISSIBLE pha
+  - **44** · THE UNWORKED STRATUM IS EXHIBITED AT LINEAR ORDER, AND IT IS TEXTBOOK GR
 
 # ⚠ UNSORTED — rows nobody has decided about
 

@@ -54,13 +54,11 @@ VEINS = {
 # GROUNDED 0-3: how solid the footing is, INFORMS 0-3: how much a vein would learn). **
 # ** A lead with NO vein links is instrument work.  It is not counted as progress on the map. **
 LEADS = {
- 'L-174': ("**exhibit the ORDINARY GR EVOLUTION of data with $\\sigma^{TT}\\ne0$** \u2014 and \u26ed "
-   "r2513 that is now a **GR calculation, not a construction question**: `thm:bound` quantifies over **every "
-   "subgroup $H\\subseteq\\mathfrak{so}$**, so **no sweep reaches the stratum and composing sweeps moves "
-   "FURTHER INSIDE the reducible sector**. `cor:wall` already says the beyond-wall modes are **carried past "
-   "by ordinary GR evolution**, the wall **a regular boundary of the operator's reach, not a frontier of the "
-   "theory**. The free data is **two functions** \u2014 the graviton polarizations (c54.198) \u2014 and they "
-   "carry the geometry, not the foliation (c54.199)",
+ 'L-174': ("\u2714 **\u24f5 CLOSED AT LINEAR ORDER r2514**: data with $\\sigma^{TT}\\ne0$ on the de Sitter "
+   "leaf evolves by ordinary GR in closed form, with the momentum constraint **conserved** and the count of "
+   "**two** arriving from the evolution. **What remains: does the NONLINEAR evolution keep "
+   "$\\sigma^{TT}$ free?** \u2014 where the $\\sigma^2$ back-reaction first appears, and it is second order "
+   "so it is invisible in the linear exhibition",
    ['L-165','L-175'], 3, 3),
  'L-207': ("\u24f6 the confined/branch-point exhibition \u2014 **gated on PO-6 and must not be opened without "
    "it** (\u24f5 discharged r2450)",

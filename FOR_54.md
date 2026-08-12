@@ -1164,6 +1164,38 @@ condition — two objects sharing one word, which is item 23's own finding in re
 
 ---
 
+## ⛭⛭⛭ 44 · THE UNWORKED STRATUM IS EXHIBITED AT LINEAR ORDER, AND IT IS TEXTBOOK GR — added r2514
+
+*Following your c54.198 and c54.199, `L-174` ⓵ was restated (r2513) as **exhibit the ordinary GR evolution of data
+with $\sigma^{TT}\ne0$** — because `thm:bound` quantifies over **every** subgroup $H$, so no sweep reaches the
+stratum and composing them moves further inside the reducible sector.*
+
+**⌗ DONE, at linear order.** *On the de Sitter leaf, $\ddot h+3H\dot h+(k^2/a^2)h=0$; in conformal time with $u=ah$,*
+$$u_{,\eta\eta}+(k^2-2/\eta^2)u=0 \quad\Longrightarrow\quad u=e^{-ik\eta}\left(1-\tfrac{i}{k\eta}\right)$$
+*— **residual identically zero**.*
+
+**⇒ AND THREE THINGS FALL OUT RATHER THAN BEING IMPOSED:**
+*· **the constraint is CONSERVED** — both polarisation tensors are trace-free, transverse **and constant**, so
+$D_j\sigma^{TT\,ij}=0$ for all time;*
+*· **r2504's identity applies with no symmetry assumed** — $\sigma_{ij}=\tfrac12\dot h^{TT}_{ij}$, so **the TT
+mode's energy IS its shear**, which is what P11 says for Gowdy, holding here where there is no continuous isometry;*
+*· **and the count of TWO arrives from the evolution** rather than from the York split — your $5-3$ and
+`cor:radiation`'s two polarizations, reached the other way.*
+
+⇒⇒ ***So nothing in the evolution needs the operator. `cor:wall`'s "a regular boundary of the operator's reach and
+not a frontier of the theory" is exactly right, and the stratum needed nothing the corpus did not already have.***
+
+**⚠ AND THE SCOPE IS THE POINT, not a caveat:** *this is **linearized about de Sitter**, and* ***the $\sigma^2$ term
+— the back-reaction that made the trade nontrivial — is SECOND ORDER and does not appear.***
+⇒ ***So ⓵ closes at linear order and the remainder is exactly: does the NONLINEAR evolution keep $\sigma^{TT}$
+free?*** *Smaller, sharper, and genuinely open.*
+
+⌗ *And the finding worth having in a paper if you want it: **it is textbook GR on a de Sitter background**. A row
+carried for a hundred and thirty revisions as "the deepest question the construction opens onto" resolved into a
+calculation with a closed-form answer — **because the construction was never the thing that had to reach.***
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

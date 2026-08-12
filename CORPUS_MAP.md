@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2514 — 2026-08-11 (main line). **`L-174` ⓵ EXHIBITED AT LINEAR ORDER — the stratum evolves by ordinary GR in closed form, and it is textbook GR on a de Sitter background.**
+
+**⌗ THE EXHIBITION.** *On the de Sitter leaf, $\ddot h+3H\dot h+(k^2/a^2)h=0$; in conformal time with $u=ah$,*
+$$u_{,\eta\eta}+(k^2-2/\eta^2)u=0 \quad\Longrightarrow\quad u=e^{-ik\eta}(1-i/k\eta)$$
+***residual identically zero.***
+
+**⇒ AND THREE THINGS FALL OUT RATHER THAN BEING IMPOSED:**
+*· **the constraint is CONSERVED** — both polarisation tensors ($e_+=\mathrm{diag}(1,-1,0)$, $e_\times$) are
+trace-free, transverse **and constant**, so $D_j\sigma^{TT\,ij}=0$ **for all time**;*
+*· **r2504's identity applies with no symmetry assumed** — $\sigma_{ij}=\tfrac12\dot h^{TT}_{ij}$, so **the TT
+mode's energy IS its shear**, which P11 states for Gowdy and which holds here where there is **no continuous
+isometry**;*
+*· **and the count of TWO arrives from the EVOLUTION** rather than from the York split — c54.198's $5-3$ and
+`cor:radiation`'s two polarizations, reached the other way.*
+⇒⇒ ***SO NOTHING IN THE EVOLUTION NEEDS THE OPERATOR. The wall is a boundary of REACH and not of THEORY, exactly as
+`cor:wall` says.***
+
+**⚠ AND THE SCOPE IS THE POINT RATHER THAN A CAVEAT.** *This is **linearized about de Sitter** — the natural
+background, since the substrate is de Sitter — and* ***the $\sigma^2$ term, the back-reaction that made the trade
+nontrivial at r2504, is SECOND ORDER and does not appear.***
+⇒ ***⓵ closes at LINEAR order. The remainder is exactly: does the NONLINEAR evolution keep $\sigma^{TT}$ free?***
+*Smaller, sharper, genuinely open.*
+
+**⌗⌗ AND THE SHAPE OF THE WHOLE RESOLUTION IS WORTH RECORDING.** *`L-174` was opened at r2376 folding a map item live
+since **r565**, carried as **"the deepest question the construction opens onto"**, and in twelve revisions became: a
+stratification (three of four worked), a general identity, a count corrected from five to two by the fork, an
+attribution withdrawn, a theorem that forecloses the construction question entirely, and finally* ***a closed-form
+linear solution that is textbook GR.***
+⇒ ***Because the construction was never the thing that had to reach — and every one of the twelve steps was the
+corpus turning out to be ahead of its own register.*** *Routed as item 44.*
+
 ### Revision r2513 — 2026-08-11 (main line). **NO SWEEP REACHES THE STRATUM AND `thm:bound` ALREADY SAYS SO — `L-174` ⓵ becomes a GR calculation rather than a construction question.**
 
 **⌗ THE QUESTION r2512 LEFT.** *`cor:radiation` says **a sweep** generates **"a deformation of FIXED orientation"** —
