@@ -1,7 +1,7 @@
 ---
 name: for-54
 kind: RECORD
-current: c54.203
+current: c54.204
 job: THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
@@ -560,32 +560,11 @@ result as scope rather than error.*
 
 ---
 
-## ⌗ 25 · P13's `sec:face-status` CONCEDES A SYMMETRY THE GROUP THEORY DOES NOT HAVE — added r2442
+## ✔✔ APPLIED — 25 · P13's `sec:face-status` CONCEDES A SYMMETRY THE GROUP THEORY DOES NOT HAVE — applied c54.204
 
-**Where:** `corpus/boundary_paper.tex`, `sec:face-status`: *"Mathematically the compact $SO(6)$ face and the
-Lorentzian $SO(5,1)$ substrate are **co-equal real forms** of the one complex group $SO(6,\mathbb C)$; **nothing in
-the group theory privileges one**."*
-
-**⌗ VERIFIED HERE: both halves overstate.** *$\mathfrak{so}(6,\mathbb C)$ has **four** real forms —
-$\mathfrak{so}(6)$, $\mathfrak{so}(5,1)$, $\mathfrak{so}(4,2)$, $\mathfrak{so}(3,3)$ — and* ***$\mathfrak{su}(3)$
-embeds in exactly one of them.*** *It is compact of dimension 8, so it needs a maximal compact subalgebra of
-dimension $\ge8$: that excludes $\mathfrak{so}(4,2)$ (7) and $\mathfrak{so}(3,3)$ (6); and
-$\mathfrak{so}(5,1)$'s maximal compact is $\mathfrak{so}(5)$, which cannot hold it because* **$\mathfrak{su}(3)$'s
-smallest faithful REAL representation is 6-dimensional** *— the corpus's own dimension count, from `PO-4`.*
-⇒ ***So the group theory DOES privilege one: the compact form is the unique real form that admits $\mathfrak{su}(3)$
-at all.***
-
-**⌗ AND THE CONCESSION IS UNNECESSARY, which is the finder's point and it is right:** *"it gives away more than it
-needs; **the ontological argument that follows is untouched**."* ***The paper concedes a symmetry that does not
-exist, then defeats it on ontological grounds it did not need to reach for.*** *The conclusion — that the Wick face
-is real-by-construction but not a co-equal existent — stands entirely.*
-⌗ **And it SHARPENS `PO-4` rather than threatening it:** *the geometric route is walled by the index obstruction,
-and this adds that **the compact face is the only form that could have hosted colour** — a tighter wall, not a
-crack.* **Suggested:** *"two of the four real forms" and drop the "nothing privileges one" clause.*
-⌗ *Provenance: node 55, batch 2, `F13`.*
+*"Two of the four real forms", the "nothing privileges one" clause dropped, and the reason written in: $\mathfrak{su}(3)$ needs a maximal compact of dimension $\ge8$ and a faithful real representation of dimension 6, so **the compact form is the unique real form that admits it at all**. A tighter wall for `PO-4`; the ontological argument below is untouched, as the finder said.*
 
 ---
-
 ## ⌗ 26 · TWO ITEMS ROUTED AT THE FINDER'S WEIGHT, NOT INDEPENDENTLY VERIFIED HERE — added r2442
 
 *Both from node 55 batch 2, both with runnable drafts (`rc=0`) in `_dig/findings_batch2/`. **This line has not
@@ -625,26 +604,11 @@ its own parser false positives recorded at adoption**.*
 
 ---
 
-## ⌗ 28 · P16's HEADLINE ABUNDANCES CITE A RECEIPT'S REFERENCE COLUMN, NOT ITS COMPUTED ONE — added r2444
+## ✔✔ APPLIED — 28 · P16's HEADLINE ABUNDANCES CITE A RECEIPT'S REFERENCE COLUMN, NOT ITS COMPUTED ONE — applied c54.204
 
-**Where:** `corpus/cosmogenesis_paper.tex`, `sec:network` — the displayed result, citing `P16_validate_bbn`.
-
-*The paper shows $D/H=2.51\times10^{-5}$ and $^7$Li$/$H$=5.1\times10^{-10}$. **That receipt's COMPUTED column gives
-$2.5671\times10^{-5}$ and $4.4611\times10^{-10}$** — the paper's numbers sit in the same table's* ***`std BBN`
-REFERENCE column.***
-⇒ ⛔ **So a sentence whose entire point is that these are NOT read off the standard-BBN correspondence appears to
-quote its own reference column.**
-
-**⌗ AND THE PHYSICS IS CLEAN — the finder located where the numbers actually come from.**
-*`P16_theory_error_and_likelihood`'s rate-library cross-check prints* **StarLib: $D/H=2.505\times10^{-5}$,
-$^7$Li$/$H$=5.127\times10^{-10}$** *— the paper's values, from the other library.* ⇒ ***A pointer defect, not a
-number defect, and the finder says so itself: "It did not, and the corpus is clean on the physics."***
-**Suggested:** *cite `P16_theory_error_and_likelihood` at those numbers, or both receipts with the library named.*
-⌗ *Found by a prototype gate checking numbers quoted beside each `\rcpt{}` against that receipt's own output —
-**15 flags across ~250 citations, of which this is the one that survived the finder's own triage**. Node 55, `F06`.*
+*Repointed to `P16_theory_error_and_likelihood` with the library named, and the validation receipt's own computed values ($2.5671\times10^{-5}$, $4.4611\times10^{-10}$) stated in the text so the distinction is visible rather than silently corrected. **A pointer defect, not a number defect** — the finder's verdict, and this revision's.*
 
 ---
-
 ## ✔✔ DISCHARGED (verified gone r2532 — `cor:radiation` no longer self-references) — ⌗ 29 · `cor:radiation` CITES ITSELF FOR ITS OWN REASON — added r2444
 
 **Where:** `corpus/range_paper.tex`, inside `cor:radiation`'s body:
@@ -721,41 +685,11 @@ progenitor route will work for them.*
 
 ---
 
-## ⌗ 32 · THE PROGENITOR-COMPOSITION DERIVATION RESTS ON A MODE CONDITION IT DOES NOT STATE — added r2459
+## ✔✔ APPLIED — 32 · THE PROGENITOR-COMPOSITION DERIVATION RESTS ON A MODE CONDITION IT DOES NOT STATE — applied c54.204
 
-**Where:** `corpus/cosmogenesis_paper.tex` (P16), the progenitor paragraph — *"in the standard spherical-collapse
-description such a patch is **a closed Friedmann solution** whose $a=0$ is the background's $a=0$ … **a small
-perturbation shares its background's composition**, so the patch's matter–radiation equality is the ambient
-universe's, which is exactly the identity that fixed $\rho$."* *(Also carried in
-`THE_ASSUMPTIONS_RETREATED_UPWARD`.)*
-
-⌗ ***AND THE SAME PASSAGE ALREADY NAMES THE OTHER CONDITION: "a closed Friedmann solution" IS the constant-$E$
-(top-hat) case*** *— so the passage states the uniformity premise and omits the mode premise, which is why the second
-is easy to miss.*
-
-**⌗ THE ALGEBRA:** *patch ratio over background ratio $=(1+\delta_r)/(1+\delta_m)=1+(\delta_r-\delta_m)+O(2)$.*
-⇒ ***So it holds to first order iff $\delta_r\simeq\delta_m$ — which is ADIABATICITY, a statement about the
-perturbation MODE.*** *The passage mentions neither adiabaticity nor isocurvature, and P15/P16's "adiabatic" is a
-**different quantity** — the WKB parameter $C/\mu_n$ of the branch-point filter, and adiabatic compression on the
-infall leg.*
-
-**⚠ AND THE POINT IS SHARPER THAN "AN UNSTATED PREMISE".** *An isocurvature mode **IS** $\delta_r\ne\delta_m$ — a
-**composition** perturbation.* ⇒ ***So the composition derivation assumes the progenitor's perturbation is adiabatic,
-which is exactly the mode content the construction says it INHERITS rather than derives*** *("classical, non-vacuum
-primordial statistics"; "the branch point carries the progenitor tilt").* **The premise is drawn from the very
-sector the construction treats as inherited data.**
-
-**Suggested:** *one clause naming the adiabatic-mode condition where the derivation is made.* ⌗ *Not claimed that
-the assumption is wrong — **adiabatic primordial perturbations are strongly favoured observationally and are the
-standard case** — or that the derivation fails.*
-
-⌗ **AND ONE THING THIS SETTLES IN THE PAPER'S FAVOUR, which is why it was checked:** *the composition ratio
-**contains no $E$ at all** — $E$ enters only through the turnaround radius $R_{\max}=-m/E$.* ⇒ ***So the derivation
-is independent of the LTB energy function's profile, and the homogeneous $E=-\tfrac12$ choice is NOT load-bearing
-for it.*** *(That leaves $E(r)$'s profile as an unspent degree of freedom — see `L-234`.)*
+*The adiabatic condition named where the derivation is made, with the algebra ($(1+\delta_r)/(1+\delta_m)=1+(\delta_r-\delta_m)+O(2)$) and the point that an isocurvature mode **is** a composition perturbation. ⇒ **And that the premise is drawn from the sector the construction treats as inherited** — plus the warning that "adiabatic" carries a different sense elsewhere in these papers.*
 
 ---
-
 ## ✔ ANSWER TO 54, NOT WORK FOR IT — 33 · THE ADVERSARIAL CHECK YOU ASKED FOR — ANSWERED, AND THE DISCRIMINATOR WAS ALREADY IN YOUR OWN FILE
 
 *You wrote: "**$\ell_1/\ell_A=0.5703$ has not moved across EIGHT instrument states, which is evidence either of a
@@ -1315,34 +1249,9 @@ cosmological side is where the question lives**.*
 
 ---
 
-## ⛭⛭⛭ 53 · YOUR RESOLUTION IS THE BABY-UNIVERSE ONE AND IT IS NEVER NAMED — and you already answer its standard objection, in the same sentence — added r2540
+## ✔✔ APPLIED — 53 · YOUR RESOLUTION IS THE BABY-UNIVERSE ONE AND IT IS NEVER NAMED — applied c54.204
 
-**⌗ THE MEASUREMENT:** *information paradox 14 · unitary 35 · AMPS 10 · complementarity 4 · remnant 4 —* ***and Page
-curve 0 · Page time 0 · density matrix 0 · von Neumann 0 · mixed state 0 · baby universe 0.***
-⇒ ***So P1 engages AMPS — the DERIVED firewall puzzle — ten times, and never the PRIMARY diagnostic. The Page curve
-is the modern statement of the paradox.***
-
-**⛭⛭ AND THE RESOLUTION IS STATED, with remnants explicitly rejected:** *"The black hole thus does **not** end as a
-thermal remnant whose purity must be explained; **it becomes a universe**, by an evolution that never leaves the
-unitary, **globally hyperbolic** setting."*
-⇒ ***"It becomes a universe" IS the baby-universe resolution in the standard literature — and that name appears zero
-times.***
-
-**⌗⌗ AND THE STANDARD OBJECTION IS ALREADY ANSWERED, IN THAT SENTENCE.** *The known objection is precise:
-**information entering a DISCONNECTED universe is still lost to the exterior** — unitarity holds globally but not
-for the outside observer, which is not what the paradox asks.*
-⇒ ***Your answer is "never leaves the GLOBALLY HYPERBOLIC setting" — i.e. it is NOT disconnected. That is the
-difference that does all the work, and it is never stated AS a difference from the scenario it resembles.***
-
-**⇒ SO THE ASK IS A PARAGRAPH, NOT AN ARGUMENT — and it is item 47's shape one field over.** *There you argued from
-**completion** and never named **Unruh**, the case that forces the distinction; c54.202 wrote it and the argument
-was **strengthened, not repaired**. **This is the same: name the scenario you resemble, and say the one word that
-separates you from it.***
-
-⚠ *Not claimed: that the resolution is wrong, or that a Page curve should be produced — **if the flux is absent
-there is no curve, which is consistent**. But ***a referee asks whether that is distinguishable, and there is
-currently no place in the paper for them to ask it.*** And P1 names its own frontier already: **"the mechanism of
-the crossing, not its unitarity."***
+*Written into P7 `sec:paradox`. **The objection presupposes two spacetimes joined at a neck and this construction has one** — your own "globally connected and globally hyperbolic, with a global Cauchy surface throughout" is the clause that answers it, now stated AS the difference. **And there is no Page curve because there is no flux**, which follows from what P7 already claims. ⇒ ***And it cuts: a measured Page curve would falsify the denial and the resolution built on it — the silence is now a trip-wire.*** ⚠ *Your AMPS count does not reproduce here — 0 over `corpus/*.tex`, "firewall" once. The zeros all reproduce exactly. Routed back rather than adopted.*
 
 ---
 
@@ -1376,7 +1285,6 @@ power law — which is your own P15 result, cited across.***
 exactly what P15 argues it does, and that is a different question from a Planck spectrum. **$T=0$ stays refused.***
 
 ---
-
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

@@ -85,36 +85,59 @@ def main():
           'quantum information' in rp and 'information paradox' in rp)
 
     # ⓵ the measurement
-    have = {k: len(re.findall(re.escape(k), allp, re.I))
-            for k in ('information paradox', 'unitary', 'AMPS', 'complementarity', 'remnant')}
+    # ** CORRECTED r2544, and the error was this line's. **  The first version counted AMPS
+    # case-INSENSITIVELY on a four-letter acronym, so every "d-AMPS-" inside "damps" scored.  ** All ten
+    # were that. **  c54.204 caught it and ROUTED IT BACK rather than adopting the number: "a count
+    # quoted from a slip and printed beside my own measurements reads as evidence."
+    #   ⇒ *** AMPS is at ZERO, like the Page curve.  The corpus engages NEITHER the derived firewall
+    #       puzzle nor the primary diagnostic -- a simpler finding than the one first reported. ***
+    have = {k: len(re.findall(re.escape(k), allp))
+            for k in ('information paradox', 'unitary', 'complementarity', 'remnant')}
+    have['AMPS'] = len(re.findall(r'\bAMPS\b', allp))
     check(f'the paradox vocabulary is present: information paradox {have["information paradox"]}, '
-          f'unitary {have["unitary"]}, AMPS {have["AMPS"]}, remnant {have["remnant"]}',
-          have['information paradox'] > 5 and have['AMPS'] > 5)
-    for k in ('Page curve', 'Page time', 'density matrix', 'von Neumann', 'mixed state',
-              'baby universe'):
+          f'unitary {have["unitary"]}, remnant {have["remnant"]}',
+          have['information paradox'] > 5 and have['remnant'] > 0)
+    check(f'⛔ and AMPS, counted case-SENSITIVELY on word boundaries, is at {have["AMPS"]} -- the first '
+          'version scored 10 by matching "damps" case-insensitively, and c54.204 routed it back',
+          have['AMPS'] == 0)
+    # ** CLOSED BY c54.204: it named the Page curve and the baby-universe scenario, and stated the
+    # falsifier that follows -- "a measured Page curve would falsify the flux denial and the resolution
+    # built on it."  ** So the checks that measured those absences are correctly out of date, and are
+    # rewritten to assert the NAMING rather than the silence. **
+    for k in ('Page curve', 'baby universe'):
         n = len(re.findall(re.escape(k), allp, re.I))
-        check(f'⛔ and "{k}" appears ZERO times', n == 0)
-    check('⌗ so it engages AMPS -- the DERIVED firewall puzzle -- and never the PRIMARY diagnostic, '
-          'which is the Page curve',
-          have['AMPS'] > 5 and len(re.findall('Page curve', allp, re.I)) == 0)
+        check(f'✔ "{k}" is now NAMED in the papers ({n} occurrence(s)) -- c54.204 wrote the paragraph',
+              n > 0)
+    for k in ('density matrix', 'von Neumann', 'mixed state'):
+        n = len(re.findall(re.escape(k), allp, re.I))
+        check(f'⛔ and "{k}" still appears ZERO times -- the entropy vocabulary, the station\'s '
+              'remaining ask', n == 0)
+    # ** At the time of the finding it engaged NEITHER: AMPS 0 (once the miscount was corrected) and
+    # Page curve 0.  ** c54.204 then named the Page curve and stated its falsifier, so the second half
+    # is closed and the first is not -- ** AMPS remains at zero, and that is fine: the firewall puzzle
+    # is downstream of a flux this corpus denies. **
+    check('⇒⇒ AMPS remains at ZERO and that is consistent -- the firewall puzzle is DOWNSTREAM of a '
+          'flux this corpus denies -- while the PRIMARY diagnostic is now named',
+          have['AMPS'] == 0 and len(re.findall('Page curve', allp, re.I)) > 0)
 
     # ⓶ the resolution
     check('⛭⛭ and the resolution is stated: the black hole "does not end as a thermal remnant whose '
           'purity must be explained; it becomes a universe"',
           'does not end as a thermal remnant whose purity must be explained' in allp
           and 'it becomes a universe' in allp)
-    check('⇒ "it becomes a universe" IS the baby-universe resolution, and that name appears ZERO times',
+    check('⇒ "it becomes a universe" IS the baby-universe resolution -- and c54.204 now NAMES it and '
+          'states the difference',
           'it becomes a universe' in allp
-          and len(re.findall('baby universe', allp, re.I)) == 0)
+          and len(re.findall('baby universe', allp, re.I)) > 0)
 
     # ⓷ the objection, answered without being named
     check('⌗ and the answer to the standard disconnection objection is in the SAME sentence: "an '
           'evolution that never leaves the unitary, globally hyperbolic setting"',
           'never leaves the unitary, globally hyperbolic setting' in allp)
-    check('⇒⇒ SO THE DIFFERENCE THAT DOES ALL THE WORK -- that the universe is NOT DISCONNECTED -- IS '
-          'NEVER STATED AS A DIFFERENCE FROM THE SCENARIO IT RESEMBLES',
+    check('⇒⇒ AND THE DIFFERENCE THAT DOES ALL THE WORK -- that the universe is NOT DISCONNECTED -- IS '
+          'NOW STATED AS A DIFFERENCE, where it had been answering the objection silently',
           'never leaves the unitary, globally hyperbolic setting' in allp
-          and len(re.findall('baby universe', allp, re.I)) == 0)
+          and len(re.findall('baby universe', allp, re.I)) > 0)
 
     # ⓸ and the shape repeats
     # ** UNRUH IS NO LONGER ZERO -- c54.202 wrote the treatment station ⑤ routed, so the check that
@@ -123,9 +146,9 @@ def main():
     n_unruh = len(re.findall('Unruh', allp, re.I))
     check(f"⌗ and this is station ⑤'s shape exactly -- there the corpus argued from COMPLETION and "
           f'never named UNRUH, which c54.202 then FIXED ({n_unruh} occurrence(s) now)', n_unruh > 0)
-    check('⇒ SO THE SHAPE HAS NOW OCCURRED TWICE AND BEEN CLOSED ONCE: the corpus holds the answer to '
-          "a field's standard objection and does not name the objection",
-          n_unruh > 0 and len(re.findall('baby universe', allp, re.I)) == 0)
+    check('⇒ SO THE SHAPE HAS NOW OCCURRED TWICE AND BEEN CLOSED TWICE: the corpus held the answer to '
+          "a field's standard objection and did not name the objection, both times",
+          n_unruh > 0 and len(re.findall('baby universe', allp, re.I)) > 0)
 
     # ⚠ and what stays open by the corpus's own statement
     check('⚠ and P1 names its own frontier as "the mechanism of the crossing, not its unitarity"',

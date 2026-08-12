@@ -10,7 +10,7 @@ current: r2500+c54.194
 
 > ***Read `THE_METHOD.md` first.*** *The short form: **the VEINS are areas held open to be known inside and out — never crossed out. The LEADS are everything noticed that could inform one.** Work the top lead, gather what it turns up, re-order, repeat.*
 >
-> *14 live rows: **4 veins**, **10 leads**. 251 struck.*
+> *14 live rows: **4 veins**, **10 leads**. 253 struck.*
 
 # I · THE VEINS — held open, to be known inside and out
 
@@ -61,23 +61,19 @@ current: r2500+c54.194
 
 # III · THE ROUTED LIST (`FOR_54.md`) — leads handed to the working fork
 
-- ***15 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
+- ***11 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
 - *7 are ANSWERS to the fork rather than work for it* — 33, 34, 35, 36, 37, 38, 39
-- *26 closed* — 10, 15, 6, 7, 8, 11, 12, 14, 16, 17, 19, 20, 21, 22, 23, 24, 27, 29, 31, 40, 41, 43, 45, 46, 47, 48
+- *30 closed* — 10, 15, 6, 7, 8, 11, 12, 14, 16, 17, 19, 20, 21, 22, 23, 24, 25, 27, 28, 29, 31, 32, 40, 41, 43, 45, 46, 47, 48, 53
 
   - **9** · A convention worth having, if the fork wants it
   - **18** · p0's FRONTIER ITEM 1, DATUM HALF: THE ANSWER IS THAT IT CANNOT BE DERIVE
-  - **25** · P13's `sec:face-status` CONCEDES A SYMMETRY THE GROUP THEORY DOES NOT HA
   - **26** · TWO ITEMS ROUTED AT THE FINDER'S WEIGHT, NOT INDEPENDENTLY VERIFIED HERE
-  - **28** · P16's HEADLINE ABUNDANCES CITE A RECEIPT'S REFERENCE COLUMN, NOT ITS COM
   - **30** · A CONVENTION WORTH HAVING, OFFERED NOT IMPOSED — the receipt's `COMPUTES
-  - **32** · THE PROGENITOR-COMPOSITION DERIVATION RESTS ON A MODE CONDITION IT DOES
   - **42** · P9's `cor:wall` CITATION COVERS THE METHOD, NOT THE CASE — added r2503
   - **44** · THE UNWORKED STRATUM IS EXHIBITED AT LINEAR ORDER, AND IT IS TEXTBOOK GR
   - **51** · THREE RECEIPTS FAIL THE FULL SWEEP — not on physics, on a prose PIN into
   - **49** · `L-519` HAS A SECOND, INDEPENDENT FOOTING — the static frame does not ex
   - **50** · TRANS-PLANCKIAN — a partial answer, and the scoping is the whole content
   - **52** · YOU TAKE THE de SITTER HORIZON'S TEMPERATURE AND NEVER ITS ENTROPY — and
-  - **53** · YOUR RESOLUTION IS THE BABY-UNIVERSE ONE AND IT IS NEVER NAMED — and you
   - **54** · `L-519` IS ANSWERED, AND P15 HAD THE ANSWER ALREADY — for a different pu
 
