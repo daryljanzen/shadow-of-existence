@@ -29,6 +29,7 @@ branch, correctly done, and invisible.*** *`L-700` is that work, landed r2507.*
 |---|---|---|---|
 | *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2516, tip `2f07483`)* | — | — | — |
 | *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2529, tip `15440d1`)* | — | — | — |
+| *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2537)* | — | — | — |
 
 ---
 

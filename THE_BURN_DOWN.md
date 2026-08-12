@@ -27,8 +27,8 @@ without fixing what is still sitting there owed?"**
 
 | | at c54.27 *(the baseline below)* | **now** |
 |---|---|---|
-| registered | 88 | **261** |
-| struck | 13 | **243** |
+| registered | 88 | **262** |
+| struck | 13 | **244** |
 | open QUESTIONS | 75 | **13** |
 | open WORK rows *(arcs and phases, folded r2378)* | — | **5** |
 | `HOT` | 49 *(60% of open)* | **0** *(0% of open questions)* |
@@ -40,8 +40,8 @@ without fixing what is still sitting there owed?"**
 |---|---|
 | `DARYL` | 1 |
 | `PART` | 1 |
-| `OPEN` | 5 |
-| `—` | 6 |
+| `OPEN` | 6 |
+| `—` | 5 |
 
 **Open leads by origin**
 
@@ -65,10 +65,10 @@ without fixing what is still sitting there owed?"**
 | **`L-221`** | QUESTION · OPEN |
 | **`L-240`** | QUESTION · — |
 | **`L-242`** | QUESTION · — |
-| **`L-245`** | QUESTION · — |
 | **`L-514`** | QUESTION · PART |
 | **`L-519`** | QUESTION · — |
 | **`L-801`** | QUESTION · — |
+| **`L-802`** | QUESTION · OPEN |
 | **`L-204`** | WORK · OPEN |
 | **`L-210`** | WORK · OPEN |
 | **`L-218`** | WORK · — |

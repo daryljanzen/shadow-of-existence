@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r2537 — 2026-08-11 (main line). **cc54's `L-802` MERGED AND `L-245` CLOSED — the one thing handed up as a decision was settled by the corpus.**
+
+**⌗ cc54's GRID.** *The stability question closes cell by cell on **symmetry × data-size**: general/small-data
+covered (Friedrich 1986 vacuum; Ringström 2008 scalar; Rodnianski–Speck 2013 fluid), symmetric/all-data covered
+(Andréasson–Ringström 2016; Wald 1983), symmetric/small-data subsumed —* ***and exactly one open cell: general
+symmetry, ALL data, which is the cosmic no-hair conjecture.***
+⇒ ***General relativity's open problem, not a CR-specific hole — which is what `L-245` suspected when it was split
+out at r2530.***
+
+**⛭⛭ AND THE ONE THING IT LEFT AS A DECISION IS SETTLED BY THE MATERIAL.** *cc54: "does the beyond-wall stratum ever
+need a strongly-nonlinear (large $\sigma^{TT}$) regime?"* ⇒ ***Two steps, both already in print:***
+*· **P11** — "Friedrich is a small-data result, **exactly the perturbative regime of the propagating graviton**";*
+*· **P9's `cor:radiation`** — the stratum's free data **IS** that graviton, the two transverse polarizations a sweep
+cannot carry (c54.198's count);*
+*· and the wall is **"the loss of ALL confining symmetry"** that FREES them, so* ***the stratum is entered from
+$\sigma^{TT}=0$ and departures start small by construction.***
+⇒⇒ ***So the needed cell is the general SMALL-DATA one, and the grid has it covered. `L-245` CLOSES.***
+
+**⌗ THE RULE, r2530's generalised:** ***when a node hands a question up as a decision, run the same check on it as
+on your own — is anything left UNDECIDED BY THE MATERIAL?*** *A deferral does not become legitimate by arriving from
+somewhere else, and **accepting one uncritically is how the pattern spreads between nodes rather than being
+caught**.*
+
+⚠⚠ *And the close is **scoped, per r2505**: **"no mechanism in the corpus drives $\sigma^{TT}$ large" is NOT
+"nothing can."** A strongly-nonlinear regime would need a mechanism **the corpus neither supplies nor claims**; if
+one is supplied, **the row reopens on the cosmic no-hair footing**.*
+
+⌗ *And what cc54 got right is worth copying: it **did not attempt cosmic no-hair**, named it as GR's problem, added
+**Rodnianski–Speck** (a result the corpus does not cite), and **caught a coverage-logic bug in its own grid with a
+failing check before shipping**. It also reported that `check_deferrals` **caught it inheriting the old pattern into
+three new files** — the gate working across nodes, one revision after it was built.*
+
 ### Revision r2536 — 2026-08-11 (main line). **R-P STATION ⑦ — the corpus takes the de Sitter horizon's TEMPERATURE and never its ENTROPY, and the entropy is where $\alpha$ and $\ell_P$ meet.**
 
 **⌗ THE MEASUREMENT.** *temperature 59 · surface gravity 30 · Gibbons–Hawking 11 · entropy 10 · Hartle–Hawking 9 ·
