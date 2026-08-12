@@ -6,6 +6,18 @@ job: How the programme lives in a git repository — branch discipline, the regi
 sources: [chat]
 ---
 
+## ⛭⛭⛭ ARRIVING? THERE ARE TWO WORK ORDERS, AND WHICH ONE IS YOURS DEPENDS ON WHAT YOU ARE — added r2470, split r2472
+
+*· **A chat or research session → `NEXT.md`.*** *Four blocks of research work, each with its object, its first
+move, and what a result would look like.*
+*· **A Claude Code session running unattended → `CLAUDE_CODE_WORK_ORDER.md`.*** *The **mechanical** half — running
+331 receipts, an inflated debt counter whose fix is already declared, an `ORIGIN` drift backlog — **with hard
+prohibitions on the judgement half and a single output channel (`FINDINGS_FOR_REVIEW.md`) for anything that needs
+one**.*
+
+⌗ ***The split is `L-237`'s finding applied to labour rather than to gates: work on what is DECLARED, report what
+would need INFERRING.*** *An unattended session is a gate, not a lint.*
+
 ## ⛭⛭⛭ ARRIVING? READ `NEXT.md` FIRST — the work order, added r2470
 
 ***`NEXT.md` names what to do, in order, with enough detail to start cold and without Daryl.*** *Four blocks, each

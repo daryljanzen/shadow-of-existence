@@ -19,7 +19,7 @@ sources: [chat]
 | **VIEW** | 5 |
 | **STATE** | 43 |
 | **METHOD** | 27 |
-| **RECORD** | 74 |
+| **RECORD** | 75 |
 
 ## ⌗ DECLARED CLASSES
 
@@ -154,6 +154,7 @@ sources: [chat]
 | `C40_EXTRACTION_r1107.md` | RECORD | frozen record | — | — |  |
 | `C40_HARVEST_r1064-r1087.md` | RECORD | frozen record | — | — |  |
 | `CAPSTONE_the-fog-lifting_transcript.md` | RECORD | frozen record | — | — |  |
+| `CLAUDE_CODE_WORK_ORDER.md` | RECORD | THE UNATTENDED WORK ORDER — mechanical, verifiable work a Claude Code session can run for hours without a human, with hard prohibitions on the judgement half. Read with THE_HUB and NEXT.md. | — | — |  |
 | `CREDO_birth_transcript.md` | RECORD | frozen record | — | — |  |
 | `CREDO_from-c1_transcript.md` | RECORD | frozen record | — | — |  |
 | `DEMONSTRATING_THE_WAY_full-transcript.md` | RECORD | frozen record | — | — |  |

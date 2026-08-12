@@ -146,6 +146,41 @@ sources: [cowork, chat]
 
 
 
+### Revision r2472 — 2026-08-11 (main line). **A SECOND WORK ORDER, FOR AN UNATTENDED CLAUDE CODE SESSION — the mechanical half, with hard prohibitions on the judgement half.**
+
+**⌗⌗ WHY A SECOND ONE.** *`NEXT.md` is research work and assumes a judging reader. **A Claude Code session can run
+for hours without a human, which makes a different kind of work available and a different kind dangerous.***
+
+**⛔ THE PROHIBITIONS ARE THE WHOLE SAFETY OF IT, and they are stated as a table:** *never strike a register row ·
+never close anything in `PROTECTED_OPEN` · never edit `corpus/*.tex` (the fork's layer) · never write a verdict or
+disposition · never push with a gate red · never delete · **and never "fix" a failing receipt by weakening its
+check**, which is the defect the corpus most fears.*
+⇒ ***And a single output channel for everything else: `FINDINGS_FOR_REVIEW.md`, where a finding is recorded with
+the command that produced it and what was NOT concluded.***
+
+**⌗ THE FRAMING IS `L-237`'s FINDING APPLIED TO LABOUR RATHER THAN TO GATES:** ***work on what is DECLARED, report
+what would need INFERRING. An unattended session is a gate, not a lint.***
+⌗ *And the stop conditions include one that is unusually reliable:* ***"you find yourself about to write '⇒' or
+'therefore' — that is the signal."***
+
+**⌗ THE THREE TASKS, chosen because each has a mechanical success criterion:**
+*· **⓵ run all 331 receipts** — `check_receipts_run`'s own header records that **two attempts died at the execution
+limit**; an unattended session has the time a chat session does not. ⚠ **And it must FIX NOTHING**: a failing
+receipt may mean the receipt rotted or **the paper moved under it**, and which is a judgement.*
+*· **⓶ the uncited-receipt debt**, which the gate reports as **29** — ***and the information to fix it is already
+declared***. Measured here before shipping the order: **334 registered, 288 cited, 46 uncited, 38 of them declaring
+`NOT-A-PAPER-CLAIM`** ⇒ ***the real debt is 8, one of which is `L8_*`, a GLOB rather than a receipt name.*** **So
+the counter is inflated by the very disposition this line has been declaring all session.**
+*· **⓷ the `ORIGIN` drift backlog** — 24 unexplained: **re-sync the cosmetic ones, and for the substantive ones
+touch neither file**, because which is right is a judgement.*
+
+⌗ ***AND THE ORDER'S OWN PREMISES WERE VERIFIED BEFORE SHIPPING IT*** *— the quoted gate string checked against the
+gate's actual output (a typo in it was found and fixed), and task ⓶'s target numbers measured rather than
+estimated.* **A work order sent to an unattended agent is a routed report, and `r2463`'s rule applies to it as much
+as to anything the fork routes here: check the defect, not just the report.**
+
+**Register: 232 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2471 — 2026-08-11 (main line). **`NEXT.md` — the work order, so the board can be picked up cold and nothing waits on Daryl.**
 
 **⌗ WHY.** *Asked to set work up to run unattended.* ***It cannot: this line executes only when sent a message, and
