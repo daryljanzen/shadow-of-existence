@@ -3,8 +3,39 @@ name: the-base-rate
 description: A5.5 worked — the reference class for least-arbitrariness arguments in physics, assembled neutrally and then judged. P6's criterion measured against the historical record rather than against favourable examples.
 sources: [cowork]
 kind: STATE
-current: r2506+c54.197
+current: r2545+c54.205
 job: A5.5 worked — the reference class for least-arbitrariness arguments in physics, assembled neutrally and then judged. The fork added 11 entries across c54.114–153; read BEFORE claiming a least-arbitrariness win.
+---
+
+## ⛭⛭ AND THE ENTRY IS CORRECTED, WHICH IS ITSELF ON THE UNFAVOURABLE SIDE — added c54.205, from c54.200
+
+***The withdrawal above was too wide, and the correction came from another node.***
+
+*r2509 found that `CRPHI` is a **hydrodynamic initial condition**, not `L-202`'s antilinear phase — two objects
+sharing one word — and that **a span is a band only if every point in it is admissible**. P15's own
+`sec:what-crosses` forces the admissible pair: what crosses is **frozen**, so $\theta_\gamma=0$, so
+$\sin\phi=0$.*
+
+⇒ ***Over the pair the corpus admits, the acoustic phase moves 0.207 against a 0.615 gap — a third — and the
+control's 0.263 is OUTSIDE it. The disagreement is real and bounded.***
+
+**⌗ SO THE LEAST-ARBITRARINESS LESSON IS NOT THE ONE THE FIRST ENTRY DREW.** *The first entry recorded a
+prediction dissolving into a free choice. **What the corrected reading shows is a quantity that moves by about a
+third of its own size under the one freedom that remains, and cannot be carried to the control at all.*** *That is
+a weaker claim than c54.190's and a stronger one than c54.195's, and neither of this line's two previous
+statements of it was right.*
+
+⚠ ***AND THE ENTRY THAT BELONGS ON THE UNFAVOURABLE SIDE IS THE PROCESS ONE:*** *this line published a headline
+(c54.190), withdrew it (c54.195), and had the withdrawal corrected by another node (r2509) — **three statements of
+one quantity, of which the first two were wrong in opposite directions**. ⇒ *The base rate this file exists to
+measure is about claims; **this is a datum about the rate at which a single line's successive corrections
+converge, which is slower than either correction felt at the time.***
+
+⌗ *And one thing on the favourable side, recorded because the file must not become a list of failures: **the
+corpus contained the right answer before either statement.** P15 `sec:refit-bound` had carried "spans a third of
+it ... 0.615 to 0.408, and no further" since c54.191, two paragraphs above the paragraph that overwrote it
+(`L-514`).*
+
 ---
 
 ## ⛭⛭⛭ AN ENTRY ON THE UNFAVOURABLE SIDE, AND IT IS THE PROGRAMME'S OWN — added r2506, from c54.195

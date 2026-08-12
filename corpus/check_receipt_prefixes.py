@@ -65,6 +65,12 @@ BANDS = [
 PREFIX = re.compile(r'^([A-Za-z]+)(\d+)_')
 
 
+def _norm_tag(t):
+    """A paper/station tag with zero-padding normalised: P01 and P1 are one tag."""
+    m = re.match(r'^([A-Za-z]+)0*(\d+)$', t.strip())
+    return (m.group(1).upper() + m.group(2)) if m else t.strip().upper()
+
+
 def prefixes(directory):
     """{(letter, number): [filenames]} for one directory -- the STATION prefixes only.
 
@@ -76,7 +82,14 @@ def prefixes(directory):
     steady output is a wall of false alarms is a gate nobody reads, which this line paid for in
     `check_loci` at c54.197 and is not paying for twice.
     """
-    own = os.path.basename(directory.rstrip('/')).split('_')[0].upper()
+    # ** r2545+c54.205: THE DIRECTORY TAG AND THE FILE TAG DISAGREE ON ZERO-PADDING. **
+    # `receipts/P01_BH_causality/` holds `P1_the_unruh_case...` and `P1_thermality...` -- two
+    # receipts for ONE paper, both correctly named by the paper convention, and the tag comparison
+    # read `P01` against `P1` and called them a two-node collision.  ** Third false-positive class,
+    # found the same way as the first two: by running the gate and reading what it said. **
+    #   *A gate whose steady output is a wall of false alarms is a gate nobody reads -- the reason
+    #    this file excludes the other two classes, and the reason it must exclude this one.*
+    own = _norm_tag(os.path.basename(directory.rstrip('/')).split('_')[0])
     out = defaultdict(list)
     for fn in sorted(os.listdir(directory)):
         if not fn.endswith('.py'):
@@ -84,7 +97,7 @@ def prefixes(directory):
         m = PREFIX.match(fn)
         if not m:
             continue
-        tag = (m.group(1) + m.group(2)).upper()
+        tag = _norm_tag(m.group(1) + m.group(2))
         if tag == own:
             continue                      # the directory's own tag, repeated by design
         # ** AND AN `L<digits>` PREFIX IS A LEAD TAG, NOT A STATION PREFIX. **  Some directories
@@ -142,8 +155,8 @@ def pushed_prefixes():
         m = PREFIX.match(fn)
         if not m:
             continue
-        tag = (m.group(1) + m.group(2)).upper()
-        if tag == sub.split('_')[0].upper() or m.group(1).upper() == 'L':
+        tag = _norm_tag(m.group(1) + m.group(2))
+        if tag == _norm_tag(sub.split('_')[0]) or m.group(1).upper() == 'L':
             continue
         out[sub][(m.group(1).upper(), int(m.group(2)))].append(fn)
     return out
