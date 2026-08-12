@@ -30,6 +30,7 @@ branch, correctly done, and invisible.*** *`L-700` is that work, landed r2507.*
 | *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2516, tip `2f07483`)* | — | — | — |
 | *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2529, tip `15440d1`)* | — | — | — |
 | *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2537)* | — | — | — |
+| `claude/cosmological-relativity-c54-sn2msi` | `e636878` | cc54 | **L-803** — R-P station ⑨ walked (the last unrun, the computational one): the cosmology/nuclear sector rests on N_eff at both ends (BBN Yp + the CMB acoustic scale) and never names it; code fixes the standard 3.046 via (4/11)^{1/3}. Receipt `S1` (8 checks, camb+pynucastro) · INDEX + arc + board · the paragraph routes to 54 · merged current to r2540 |
 
 ---
 
