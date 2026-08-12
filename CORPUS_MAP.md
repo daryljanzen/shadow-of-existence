@@ -146,6 +146,45 @@ sources: [cowork, chat]
 
 
 
+### Revision r2466 — 2026-08-11 (main line). **PO-9 NARROWED — a descent from $D>5$ must be MULTI-STEP, and the step count is the only bound the construction supplies.**
+
+**⌗⌗ THE ROW ASKED FOR TWO THINGS AND BOTH NOW HAVE AN ANSWER OF THE RIGHT KIND.** *"State what a descent from
+$D>5$ would have to look like, and what would bound the substrate above."*
+
+*The chain, in p0's own words: **"the five-dimensional $\mathrm{dS}_5=SO(5,1)/SO(4,1)$ … of which the
+four-dimensional $\mathrm{dS}_4$ is the BACKGROUND its leaves carry"** — substrate 5, leaf 4, space $S^3$.*
+
+**⓵ A codimension-one cut of $\mathrm{dS}_D$ gives a $(D{-}1)$-dimensional leaf.** ⇒ ***So $\mathrm{dS}_6$ gives a
+FIVE-dimensional leaf — a $4{+}1$ spacetime — and cannot reach our world in one cut; it needs $D-5$ further
+reductions.***
+⇒ **And the construction is single-step by design and says so:** *"one slicing plane — a door — swings about one
+fixed line in the substrate, the hinge, and the whole family of cuts is **the single arc of that swing**."*
+***One hinge, one door, one swing.***
+⇒⇒ ***A DESCENT FROM $D>5$ MUST THEREFORE BE MULTI-STEP, AND THE CORPUS HAS NO SECOND DOOR: whatever supplied the
+extra reductions would be NEW STRUCTURE, not a re-reading of what exists.***
+
+**⓶ AND WHAT WOULD BOUND THE SUBSTRATE ABOVE: the STEP COUNT does** — *the only candidate the construction
+supplies.*
+⛔ ***AND NOT THE CUT'S DIMENSION, which is precisely this row's guarded error*** *— "a node that reads the first as
+capping the second has re-made the c54.6 error the c54.6 correction exists to prevent."* **The bound found here is
+about the NUMBER OF REDUCTIONS between substrate and leaf, a different quantity from the leaf's dimension, and the
+guard is obeyed rather than argued around.**
+
+**⚠ AND IT BOUNDS CONDITIONALLY, WHICH IS WHY THIS NARROWS RATHER THAN CLOSES.** *$D=5$ is forced **only if** the
+descent is one step — and* ***one-step-ness is a FEATURE OF THE CONSTRUCTION, not a theorem about substrates.***
+⇒ **Nothing here caps the substrate unconditionally; PO-9's object — "bounded below only" — survives intact and its
+closure is Daryl's.**
+
+⌗ ***And the row's live question is now sharper than it was: is one-step-ness FORCED, or is it a choice the
+construction makes?*** *That is the hinge the conditional bound turns on, and it is a question about the swing
+rather than about dimension.*
+
+⌗⌗ *Third protected row worked in three revisions — PO-5 (r2464), PO-6 (r2465), PO-9 (r2466) — **all three narrowed,
+none closed**, after r2463 had set all three aside as "gated". **The register's own instruction was there the whole
+time: "narrowing is ALWAYS a node's to do and is what this register wants."***
+
+**Register: 229 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2465 — 2026-08-11 (main line). **PO-6 RE-WEIGHTED, NOT CLOSED — the boundary problem is PER-FIBRE and the UV is OVER-FIBRES, and the clause that was answered is the one the argument does not need.**
 
 **⌗⌗ THE STRUCTURAL REASON P10's FRAMING MUST BE TRUE RATHER THAN HAPPENING TO BE.** *P10 says what remains is "the
