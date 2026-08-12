@@ -146,6 +146,47 @@ sources: [cowork, chat]
 
 
 
+### Revision r2450 — 2026-08-11 (main line). **`L-207` ⓵ DISCHARGED — the general inhomogeneous leaf is EXHIBITED, and the exhibit is the corpus's own coordinate system.**
+
+**⌗⌗ WHAT WAS OWED, and W1 had left it precisely.** *r2424 established that P8's general inhomogeneous evolution is
+**not a missing generative law** — "ordinary dynamical evolution of the leaf" — and that the row's "deepest open
+question the construction RAISES" framing came from a `%` comment. **But W1 said what it had not done:** "the
+general inhomogeneous case is called ordinary **without being EXHIBITED**. The open item is an EXHIBITION, not a
+DISCOVERY."*
+
+**⛭ THE EXHIBIT IS LEMAÎTRE–TOLMAN–BONDI WITH $\Lambda$, and it is not an import.** *The general spherically
+symmetric inhomogeneous dust, carrying an **arbitrary mass function $m(r)$** — genuinely inhomogeneous rather than a
+perturbation — and* ***P2's cycloid IS an LTB interior***: *"the Schwarzschild interior in Lemaître–Tolman
+coordinates has areal radius $r(z)=M(1+\cos z)$." **The construction's own coordinates, carrying a general matter
+distribution.***
+
+**⌗ BOTH HALVES COMPUTED FROM THE METRIC HERE, not quoted.**
+*· **The bend-density identity is EXACT for arbitrary $m(r)$:** $G_{tt}-\Lambda = 2m'(r)/(R^2R')$, which is P8's
+$\rho = m'/4\pi R^2R'$ **with no condition on $m$** — and **$E(r)$ drops out of the density entirely**.*
+⇒ ***The slicing operator's kinematic identity does not weaken as the matter is made inhomogeneous.***
+*· **And the evolution is ordinary GR with no extra law:** the constraint $\dot R^2 = 2m/R + 2E + \Lambda R^2/3$
+differentiates to* **$\ddot R = -m(r)/R^2 + \Lambda R/3$** *— **the same equation the homogeneous case obeys**, with
+$m$ and $E$ now functions of $r$, and* ***no term coupling different shells.***
+
+**⇒ SO THE EXHIBITION IS THIS:** ***the general inhomogeneous leaf evolves by ONE equation per comoving shell; the
+shells do not talk to each other; and the inhomogeneity enters ONLY as the $r$-dependence of two free functions.***
+
+**⌗⌗ AND THE POINT, stated so it is not overread:** ***NOTHING FIXES $m(r)$ IN GENERAL RELATIVITY EITHER — it is
+initial data, not a law's output.*** ⇒ **So the construction owes no generative law for the curve for exactly the
+reason GR owes none:** *the theory says **how a given matter distribution evolves**, not **which one obtains**. The
+bend-density identity converts between the curve and the density; the evolution is GR's, unchanged; and the free
+functions are initial data in both.*
+
+⚠ *Not claimed: that LTB exhausts the general case — it is spherically symmetric dust and the general case is
+neither.* ***What is exhibited is that the SPECIFIC WORRY — that genuine inhomogeneity might require a generative
+law the kinematic operator cannot supply — does not arise where it can be checked exactly.***
+
+⌗ **This closes the third and last of W1's three instances:** *the confined case was exhibited in P11 (the
+transverse-traceless mode on a wave equation), the branch-point crossing in P16, and* ***the inhomogeneous one
+here.*** *`L-207` ⓶ remains gated on `PO-6` and is not to be opened without it.*
+
+**Register: 225 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2449 — 2026-08-11 (main line). **`check_currency` IS GREEN FOR THE FIRST TIME — and fourteen of the twenty-four stale documents held REAL MISSED LANDINGS, not stale markers.**
 
 **⌗⌗ THE GATE THAT HAD NEVER PASSED.** *Twenty-one gates; `check_currency` was the one always reported as
