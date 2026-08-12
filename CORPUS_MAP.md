@@ -146,6 +146,51 @@ sources: [cowork, chat]
 
 
 
+### Revision r2448 — 2026-08-11 (main line). **`L-213` ANSWERED BY SUPPLYING ITS OWN PRECONDITION — and meeting the requirement made the argument WORSE.**
+
+**⌗⌗ THE SETUP, and it is why the answer is trustworthy.** *At r2405 `THE_BASE_RATE` separated `L-213` into **two
+arguments wearing one sentence** — an **ADD** ("the SM's factual standing motivates TAKING the compact face as
+physical") and a **DELETE** ("the face is already there and treating only the Lorentzian as physical is the
+restriction being discarded") — and set **three requirements the DELETE reading must supply**, "stated so the
+argument cannot be made without it".* ***The instrument was fixed before the argument.***
+
+**⛭ REQUIREMENT ① IS NOW SUPPLIED, by node 55's `F13` verified at r2442.** *The compact face carries **the capacity
+to host $\mathfrak{su}(3)$, uniquely among the four real forms of $\mathfrak{so}(6,\mathbb C)$** — **not a scale**,
+which is exactly what c54.128 had ruled out, but a **representation-theoretic capacity** that $\mathfrak{so}(5,1)$
+demonstrably lacks (its maximal compact is $\mathfrak{so}(5)$, and $\mathfrak{su}(3)$'s smallest faithful real
+representation is six-dimensional).*
+
+**⛔ AND SUPPLYING IT MADE THE ARGUMENT AN ADD RATHER THAN A DELETE.** *With ① in hand the case can finally be
+**stated**: "take the compact face as physical **because it uniquely hosts $\mathfrak{su}(3)$".* ⇒ ***Which is
+textbook ADD by the discriminant: proposing a venue in order to accommodate content.***
+⌗ **② IS UNTOUCHED AND NOW HARDER, AND ② IS WHAT DECIDES.** *P13 denies the compact face existence by **a stated
+criterion the programme uses elsewhere** — "a thing exists only insofar as it endures; existence is what a clock
+measures … the fully Wick-rotated $S^5$ is Riemannian: **no timelike direction, no clock, no duration**" — so*
+***the face now demonstrably carries something AND still carries no clock. Declining to take it as physical is a
+principle APPLIED, not an arbitrary restriction DISCARDED.*** *③ untouched and independently fatal: `PO-4` still
+walls the geometric ground, and P13 demands **both**.*
+
+**⇒ THE VERDICT INVERTS:** *from "the DELETE reading is **not yet available**" to* ***"the DELETE reading is
+available to state and it is an ADD."*** **The requirement was NECESSARY AND NOT SUFFICIENT, and only supplying it
+showed which.**
+
+**⛭⛭ AND THE ENTRY IN `THE_BASE_RATE` IS NOT ABOUT `L-213` — it is about what a discriminant fixed BEFORE the
+argument buys.** ***Had ① been supplied first and the ledger consulted after, the natural reading would have been
+"we found what the face carries, so the case is stronger."*** *Because the two readings were separated before either
+could be made, the same discovery lands as what it is: **the ADD reading becoming statable, not the DELETE reading
+becoming available**.*
+
+⌗ ***This is the second question this session to close by being PRICED rather than SOLVED*** *(`L-150` was the
+first).* **Both were long-standing, both had a favourable reading available on paper, and in both the instrument
+decided against it** — ***which is the only kind of evidence a self-scoring programme can offer that its scoring is
+not decorative.***
+
+⚠ *Not claimed: that the compact face is unreal — **the corpus's own dissonance guard forbids that reading**, and
+P13 calls it real-by-construction — or that $\mathfrak{su}(3)$ cannot be hosted there, since `F13` shows it
+uniquely can.*
+
+**Register: 224 rows, 179 struck. Gates: twenty-one, twenty rc=0.**
+
 ### Revision r2447 — 2026-08-11 (main line). **A BLIND RUN ANSWERS `L-230`'s INSTRUMENT QUESTION IN THE NEGATIVE — inconsistency and overreach are opposite signatures, and no instrument sees both.**
 
 **⌗⌗ THE RUN.** *`scope_table`, sharpened at r2446, taken across all seventeen papers with no prior.* ⇒ ***Every flag

@@ -90,6 +90,34 @@ empirical grounds, so an external-constraint argument that succeeds still does n
 ⚠ ***Absent ①, the argument is an ADD, and the base rate prices an ADD at worse than a coin flip.***
 
 
+## ⛭⛭⛭ ENTRY: A PRECONDITION MET STRENGTHENED THE OTHER SIDE — `L-213` answered r2448
+
+*This file set three requirements the DELETE reading of `L-213` must supply, **"stated so the argument cannot be
+made without it"**. **Requirement ① is now supplied** — node 55's `F13`, verified r2442: the compact face carries
+**the capacity to host $\mathfrak{su}(3)$, uniquely among the four real forms of $\mathfrak{so}(6,\mathbb C)$** —
+not a scale, which c54.128 had ruled out, but a **representation-theoretic capacity** the Lorentzian form
+demonstrably lacks.*
+
+⇒ ⛔ ***AND MEETING IT MADE THE ARGUMENT AN ADD.*** *With ① in hand the case can finally be **stated** — "take the
+compact face as physical **because it uniquely hosts colour**" — and that is* **proposing a venue in order to
+accommodate content**, *the shape this ledger prices below a coin flip.*
+⌗ *② is untouched and now harder: P13 denies the face existence by **a stated criterion the programme uses
+elsewhere**, not by arbitrariness. **The face now demonstrably carries something and still carries no clock** — so
+declining it is a principle applied, not a restriction discarded.*
+
+**⛭⛭ AND THE ENTRY IS NOT ABOUT `L-213`. IT IS ABOUT WHAT A DISCRIMINANT FIXED BEFORE THE ARGUMENT BUYS.**
+***Had ① been supplied first and this ledger consulted after, the natural reading would have been "we found what the
+face carries, so the case is stronger."*** *Because the two readings were separated **before** either could be made,
+the same discovery lands as what it is: **the ADD reading becoming statable, not the DELETE reading becoming
+available**.*
+⇒ ***A precondition set for the favourable reading was met, and meeting it strengthened the unfavourable one. A
+requirement can be NECESSARY AND NOT SUFFICIENT, and only supplying it shows which.***
+
+⌗ **This is the second question this session to close by being PRICED rather than SOLVED** *(`L-150` was the first).*
+***Both were long-standing, both had a favourable reading available on paper, and in both the instrument decided
+against it — which is the only kind of evidence a self-scoring programme can offer that its scoring is not
+decorative.***
+
 # THE BASE RATE
 *`L-35` / P6 `A5.5`, worked r2376+c54.35.* **P6 calls this "the one genuinely unworked item" of its own
 programme.** *The corpus argues from **least-arbitrariness** — Rule 2 — and a criterion of that kind is only as
