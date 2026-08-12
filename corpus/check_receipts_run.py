@@ -51,6 +51,7 @@ RESULT = os.path.join(ROOT, 'receipts', 'RUN_RESULT.txt')
 UNRUNNABLE = {
     'BUILD_camb_store.py': 'camb',
     'P15_camb_reference.py': 'camb',
+    'P15_derived_lensing_on_the_lcdm_arm.py': 'camb',
     'P15_damping_ratio_clean.py': 'camb',
     'P15_damping_reabsorption.py': 'camb',
     'P15_full_transfer_verdict.py': 'camb',
