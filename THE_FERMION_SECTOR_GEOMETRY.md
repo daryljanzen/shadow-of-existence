@@ -2,8 +2,42 @@
 name: the-fermion-sector-geometry
 description: The Standard Model's fermion content read in the corpus's own hinge/lap/involution geometry — colour, isospin, chirality, fractional charge, confinement, leptons, generations. A SPINE document of the live arc, not an annex. Every correspondence carries what a proof would have to establish and what would refute it.
 sources: [cowork]
-current: c54.163
+current: c54.185
 ---
+
+## ⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **the generation count's index argument has a stated-scope question, and the colour wall got tighter**
+
+> *This is "a SPINE document of the live arc, not an annex", and its own rule is that **every correspondence carries
+> what a proof would have to establish**. Two findings since c54.163 change what a proof would have to establish —
+> in opposite directions.*
+
+**⛔ ① WHAT THE GENERATION COUNT'S INDEX ARGUMENT NOW OWES** *(`F14`, node 55, reproduced independently r2442).*
+*P14 offers **leaf compactness** in place of the bulk index P13's non-compactness obstructs: "the closed slicing has
+finite total length, **so the leaf is compact** and its Dirac operator carries a well-defined analytical index."*
+⇒ ***Its receipt runs at $M=0.12\alpha=0.62\,M_N$, where $f$ has three SIMPLE roots. At the Nariai member the two
+positive roots MERGE — $f'(r_0)=0$, $f''(r_0)=-6/\alpha^2$ exactly — so the proper measure becomes a SIMPLE POLE and
+the leaf length diverges LOGARITHMICALLY.***
+⚠ **And P7 forces the Nariai member.** ⌗ ***So what a proof would have to establish has grown by one item: either
+the member the compactness holds on, or the argument carrying it to the endpoint.*** *Not a refutation — **a
+divergent leaf LENGTH may or may not break a Dirac INDEX**, the operative condition being the zero mode's
+normalisability, and that is the paper's question. Routed as `FOR_54` 24.*
+
+**⛭ ② AND THE COLOUR WALL GOT TIGHTER, not weaker** *(`F13`, verified r2442).* *$\mathfrak{so}(6,\mathbb C)$ has
+**four** real forms, and $\mathfrak{su}(3)$ embeds in **exactly one** — the compact one. It is compact of dimension
+8, so it needs a maximal compact of dimension $\ge8$: $\mathfrak{so}(4,2)$ has 7 and $\mathfrak{so}(3,3)$ has 6, and
+$\mathfrak{so}(5,1)$'s $\mathfrak{so}(5)$ cannot hold it because* **$\mathfrak{su}(3)$'s smallest faithful REAL
+representation is six-dimensional** *— this document's own dimension count, the one behind `PO-4`.*
+⇒ ***So the compact face is not one venue among several: it is the UNIQUE real form that could host colour.***
+⌗ **And that closes the external-constraint route rather than opening it** *(`L-213`, r2448)*: *with the uniqueness
+in hand the argument can finally be stated — "take the compact face as physical **because** it uniquely hosts
+colour" —* ***which is proposing a venue in order to accommodate content, the shape the base rate prices below a
+coin flip.***
+
+⇒ ⛭⛭ **THE SPINE'S POSITION, stated as this document requires:** *the colour correspondence now knows **exactly
+which structure could carry it and why that does not make it physical**; the generation correspondence now knows
+**exactly which member its index argument was verified on**. **Neither is a reversal — both are the sector becoming
+more exactly known, and both raise what a proof would have to establish rather than lowering it.***
+
 
 # THE FERMION SECTOR IN THE GEOMETRY
 

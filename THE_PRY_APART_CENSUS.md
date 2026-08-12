@@ -1,11 +1,49 @@
 ---
 name: the-pry-apart-census
 kind: STATE
-current: c54.163
+current: c54.185
 class: whole-corpus-instrument
 job: Which apparent ONE is TWO things a conflation welded? — the corpus-wide pry-apart census, the dual of the equivalence census. Read BEFORE trusting a standard identification. ⚠ Its own comb is OWED: 'OTHER homes to be FOUND by combing'.
 sources: [cowork]
 ---
+
+## ⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **THREE NEW PRY-APARTS, AND ONE OF THEM IS A LIVE CONFLATION IN A PAPER**
+
+> *A census of what the corpus insists on holding apart gains three entries since c54.163 — **and two of the three
+> were found by outside readers reading cold, which is the census's own argument for why it exists**.*
+
+**⛔ ① THE BRANCH POINT AND THE SEAM — a live conflation in P15, routed as `FOR_54` 21 and flagged to take first.**
+*P15 says **"branch point"** at five sites where **the receipt cited at those very sentences says "seam"** —
+nineteen times to zero.* ⇒ ***And the two loci behave oppositely, which is why the word decides the proposition's
+truth value:*** *computed, $1/aH$ is **1.000 at the seam** (the comoving horizon near its maximum, modes inside) and
+**0.051 at $10^{-3}\alpha$** (as $r\to0$, $2M/r\to\infty$, so **every mode has exited**).* **A proposition titled
+"sub-horizon" is TRUE at the seam and FALSE at the branch point.**
+⚠ *It is the conflation **r2289 retired** — "it INVERTED the physics" — surviving at sites the hand sweep did not
+reach, and **it cost two independent nodes a false finding about CR in one day**.* ⌗ *Found by node 52.*
+
+**⛔ ② THE BRANCH POINT AND THE NARIAI MEMBER — routed as `FOR_54` 20.** *P7 writes "the finite-curvature
+cosmogenesis branch point — **the degenerate Nariai member of the homogeneous kernel**", **an apposition joining a
+LOCUS to a MEMBER** — while the same paper says, in published text:* **"the back of the lap ($r=0$) and the
+merged-horizon radius ($\alpha/\sqrt3$, at which the Nariai member is seeded) are distinct turning points …
+quantities never to be conflated."**
+⌗ ***And this line's `C1` receipt established the same separation from the algebra*** *— the root cover branches at
+$\lvert r\rvert=\alpha/\sqrt3$, the turnaround deck at $r=0$, **disjoint branch sets**.* ⇒ **Node 37 found from the
+prose what `C1` found from the covers, and the census now holds both routes to one separation.**
+
+**⌗ ③ THE DECK GROUP AND THE MONODROMY GROUP — routed as `FOR_54` 23, and it is a pry-apart the corpus had not
+noticed it needed.** *`prop:deck` reads "the deck group of the **three-sheeted** cover is $S_3$" and closes,
+correctly, "$S_3$ is therefore the **MONODROMY** group … not a free relabelling".* ⇒ ⛔ **A deck group acts freely
+on a fibre, so its order divides the degree: $6\nmid3$.** *And `rem:equianharmonic` inherits the wrong word and then
+gives a **third** answer, "the deck action is $\mathbb{Z}_3$".*
+⌗ ***Everything fits once the word is fixed:*** *$\operatorname{disc}(r^3-r+2M)=-4(27M^2-1)$ is not a square, so the
+monodromy is $S_3$, **the cover is non-regular with trivial deck group**, and **its Galois closure has degree six
+with deck $S_3$ — which is exactly what `C3` established from the dial**.*
+
+⇒ ⛭⛭ **AND THE CENSUS'S OWN LESSON FROM THIS ROUND:** ***two of the three were found by readers with no stake, and
+the third by a receipt this line wrote for an unrelated question.*** **A conflation is invisible to the writer by
+construction — it reads as a synonym — which is why a census of them is worth keeping and why cold readers are
+worth inviting.**
+
 
 > **⌗⌗ INDEXED r2380 INTO THE `whole-corpus-instrument` CLASS — it was the only one of the three censuses left out.**
 > *`THE_DISSOLUTION_CENSUS` was already declared a whole-corpus instrument; **its two duals were unclassified**,

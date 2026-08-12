@@ -1,10 +1,42 @@
 ---
 name: the-arsenal-index
 kind: STATE
-current: c54.163
+current: c54.185
 job: The grid — which paper × which tool, run or owed, in what order. Campaign R (the two reach theatres) and Campaign C (opens · closures · dissolutions · equivalences · pry-aparts).
 sources: [cowork]
 ---
+
+## ⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **AND TWO INSTRUMENTS EXIST THAT THIS GRID DOES NOT LIST**
+
+> ⚠ *This index is "the grid — which paper × which tool". **Two tools were adopted at r2443 and r2446 and never
+> entered here**, which is the grid failing at its own job rather than a marker going stale.* ⌗ *Caught by
+> `check_currency` while triaging twenty-four stale documents; **two of the twenty-four were missed landings and
+> not stale markers**, and this is one.*
+
+### ⌗ THE LINT LAYER — new, and deliberately NOT the gate layer
+
+| tool | from | paper × cell | what it asks | why it is not a gate |
+|---|---|---|---|---|
+| `corpus/check_loci.py` | **node 52** | **P15** (2 flags, 1 a predicted false positive) | *does a sentence assert a property of the **locus its receipt computed**?* | ***its contributor measured its own precision before shipping*** — assertion-shape **3/3** against word-presence at **42%** |
+| `corpus/scope_table.py` | **node 55** | **P15 only** — every flag, corpus-wide | *what parameter values does each receipt **actually run at**?* | the `DELIBERATE`/`BY_DESIGN` lists are **maintainer judgements**, and ***a gate can check a declaration, not a judgement*** |
+
+**⇒ AND THE GRID GAINS A NEGATIVE RESULT WORTH MORE THAN EITHER TOOL** *(`L-230`, r2447): a blind run of
+`scope_table` across all seventeen papers put **every flag in P15 and none in P14** — where the class's clearest
+instance lives.* ⌗ **The reason is structural:** *`scope_table` measures **disagreement between receipts**, and that
+defect's signature is **agreement**.* ⇒ ***INCONSISTENCY IS MANY VALUES WHERE ONE IS CLAIMED; OVERREACH IS ONE VALUE
+WHERE MANY ARE CLAIMED — an instrument tuned to the first is blind to the second by construction.***
+⚠ ***So this grid should not record an overreach cell as covered. It is not, and no tool here covers it*** *— the
+route is a **convention** (`COMPUTES:` headers, carried by 39 of 309 receipts), routed to the fork as item 30.*
+
+### ⌗ AND THE GATE LAYER ITSELF MOVED
+
+*· **`check_loci` and `scope_table` are NOT in the CI gate list**, by decision.*
+*· **The fast tier ran none of its text gates from r2427 to r2439** — `classify_documents --check` failed on
+twenty-eight unclassified restored files, and `set -e` aborted the step on its first command (`L-227`). **Fixed:
+the tier now runs every check, collects failures, and fails at the end naming all of them.***
+⇒ ***A suite run by hand and a suite run under `set -e` are different instruments — the first reports every failure,
+the second reports the first and hides the rest.***
+
 
 # THE ARSENAL INDEX — the grid: which paper × which tool, run / owed, in what order
 

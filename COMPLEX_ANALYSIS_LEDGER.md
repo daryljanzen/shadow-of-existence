@@ -1,8 +1,43 @@
 ---
 name: complex-analysis-ledger
 description: R-M's third field bake — complex analysis and monodromy thrown at CR. Opened r1867 (Phase 8), handed to by the quadric bake's Q4 (equianharmonic ⟺ j=0 ⟺ CM by ω). Discharges R-M arc station Ⓒ, marked NO ENTRY since r1805. Baseline, probes, four-part close.
-current: c54.163
+current: c54.185
 ---
+
+## ⛭⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **AND THE FIELD'S OWN VOCABULARY IS MISUSED IN TWO PAPERS**
+
+> *This ledger is the corpus's home for covers, branch points, monodromy and deck actions — **31 uses of "deck",
+> 14 of "monodromy", 11 of "Galois"**. Two findings since c54.163 are squarely its subject, and one of them is a
+> **misuse of the distinction this field exists to keep**.*
+
+**⛔ ① "DECK GROUP $S_3$" ON A THREE-SHEETED COVER IS IMPOSSIBLE — routed as `FOR_54` 23.**
+*P5's `prop:deck` reads **"The deck group of the three-sheeted cover is $S_3$"** and closes, correctly,* ***"$S_3$
+is therefore the MONODROMY group of the branched cover, not a free relabelling of the members."***
+⇒ **A deck (covering-automorphism) group acts FREELY on a fibre, so its order divides the degree: $6\nmid3$.**
+*The proposition corrects its own heading four sentences later, and `rem:equianharmonic` inherits the wrong word
+and then gives a **third** answer — "the deck action is $\mathbb{Z}_3$".* ⌗ ***Three statements, one object.***
+
+**⛭ AND EVERYTHING FITS ONCE THE WORD IS "MONODROMY", which is this ledger's own material:**
+*$\operatorname{disc}(r^3-r+2M)=-4(27M^2-1)$ is **not a square in $\mathbb Q(M)$**, so the Galois group of
+$r^3-r+2M$ is $S_3$;* ⇒ ***the root cover is NON-REGULAR with TRIVIAL deck group, and its Galois closure has degree
+six with deck $S_3$ — which is exactly what `C3` established from the dial.***
+⌗ **So the corpus holds three objects where its prose holds one name:** *the **3-sheeted root cover** (monodromy
+$S_3$, deck trivial); its **6-sheeted Galois closure**, the dial (deck $S_3$, regular); and the **$\mathbb{Z}_3$
+turnaround deck** at $r=0$, which `C2` proved does **not** act on the root cover's fibre.*
+
+**⌗ ② AND THE SKY COVER IS THE ROOT COVER, verified r2447** *(node 17's `D02`, whose proposed edit was declined but
+whose mathematics is exact).* *With $r=\tfrac{2}{\sqrt3}\sin w$ the triple-angle identity gives
+$\tfrac{2}{3\sqrt3}\sin 3w = r-r^3$ **exactly** — so the sky-angle parametrisation **is** $2M(r)$ in trigonometric
+coordinates, and the Nariai branch $2M=\pm\tfrac{2}{3\sqrt3}$ maps precisely onto $\sin 3w=\pm1$.*
+⚠ ***But "same cover" needs care, and this is the ledger's to state: the $120°$ shift $w\mapsto w+120°$ is a
+symmetry of the REAL undercritical trivialisation, not a global automorphism over the complex $2M$-line*** *— which
+is why the monodromy is $S_3$ and not $\mathbb{Z}_3$, and why `prop:deck`'s own closing sentence about the
+over-critical regime realising **only the order-two subgroup** is the correct and careful statement.*
+
+⇒ ⛭⛭ **THE LEDGER'S LESSON FROM THIS ROUND:** ***a field whose whole content is a distinction will have that
+distinction collapse in the prose of papers that use it correctly in the mathematics.*** *P5 computes the monodromy
+right and calls it the deck; the correction is a word, and the word is this field's.*
+
 
 # THE COMPLEX ANALYSIS AND MONODROMY LEDGER — R-M's third bake
 

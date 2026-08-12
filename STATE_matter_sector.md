@@ -2,8 +2,54 @@
 name: state-matter-sector
 description: Where the matter sector and the colour question actually stand — read this before touching P13, P14, or family 12. Position, not history.
 sources: [chat]
-current: c54.163
+current: c54.185
 ---
+
+## ⛭⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **THREE THINGS MOVED IN THIS SECTOR AND THIS DOCUMENT KNEW NONE OF THEM**
+
+> ⚠ *This file says **"read this before touching P13, P14, or family 12"**. It stood at c54.163 and carried nothing
+> about `F13`, `F14`, or `L-213`'s answer.* ***A node reading it would have proceeded on a picture missing the
+> sector's two newest results and its oldest question's verdict.***
+
+**⛔ ① P14's LEAF-COMPACTNESS CLAIM — WHICH CARRIES THE GENERATION INDEX — DIVERGES AT THE MEMBER THE PROGRAMME
+FORCES.** *(`F14`, node 55, reproduced independently r2442.)*
+*The claim: "in the leaf's proper measure the closed slicing has **finite** total length, **so the leaf is
+compact** and its Dirac operator carries a well-defined analytical index — exactly where the bulk index on the
+non-compact substrate is obstructed."* **Its receipt runs at $M=0.12\alpha=0.62\,M_N$**, where $f$ has three
+**simple** roots (leaf length 1.7671, reproduced).
+⇒ ***At the Nariai member the two positive roots MERGE — $f'(r_0)=0$, $f''(r_0)=-6/\alpha^2$ exactly — so
+$1/\sqrt{\lvert f\rvert}$ becomes a SIMPLE POLE and the leaf length diverges LOGARITHMICALLY, at rate
+$\alpha/\sqrt3$ per e-fold.*** ⌗ **And it is the very exponent the receipt's own control fabricates to prove the
+test discriminates.**
+⚠ ***The receipt declares its member honestly in its header; the PAPER's sentence drops the qualifier*** *— and
+**P7 forces the Nariai member** ("the asymptotic alignment of collapse therefore forces the Nariai member").*
+⌗ ***NOT a refutation, and it must not be read as one: a divergent leaf LENGTH may or may not break a Dirac INDEX,
+the operative condition being the zero mode's normalisability.*** *Routed as `FOR_54` 24, as scope plus a question.*
+
+**⛭ ② $\mathfrak{su}(3)$ EMBEDS IN EXACTLY ONE REAL FORM, AND THAT SHARPENS `PO-4` RATHER THAN THREATENING IT.**
+*(`F13`, verified r2442.)* *$\mathfrak{so}(6,\mathbb C)$ has **four** real forms, not two. $\mathfrak{su}(3)$ is
+compact of dimension 8, so it needs a maximal compact of dimension $\ge8$: that excludes $\mathfrak{so}(4,2)$ (7)
+and $\mathfrak{so}(3,3)$ (6), and $\mathfrak{so}(5,1)$'s maximal compact $\mathfrak{so}(5)$ cannot hold it because
+**$\mathfrak{su}(3)$'s smallest faithful REAL representation is six-dimensional** — the sector's own count.*
+⇒ **So P13's "nothing in the group theory privileges one" is false, and the concession gives away more than the
+paper needs** *(routed as item 25).* ⌗ ***The ontological argument that follows is untouched, and the wall gets
+TIGHTER: the compact face is the only real form that could have hosted colour.***
+
+**✔ ③ AND `L-213` IS ANSWERED — the external-constraint question, closed in the negative at r2448.**
+*`THE_BASE_RATE` had split it into an **ADD** and a **DELETE** reading before either could be made, and set three
+requirements the DELETE reading must supply.* **`F13` supplies ①** *— what the compact face carries that the
+Lorentzian one does not.* ⇒ ⛔ ***And supplying it made the argument an ADD: the case can finally be stated —
+"take the compact face as physical because it uniquely hosts colour" — which is proposing a venue in order to
+accommodate content.***
+⌗ *② is untouched and now harder: P13 denies the face existence by **a stated criterion the programme uses
+elsewhere** ("existence is what a clock measures … no timelike direction, no clock, no duration"), so* ***the face
+demonstrably carries something and still carries no clock. Declining it is a principle APPLIED, not a restriction
+DISCARDED.***
+
+⇒ ⛭⛭ **SO THE SECTOR'S POSITION IS: the colour wall is TIGHTER than it was** *(the compact face is the unique
+possible host, and taking it as physical is priced as an ADD)*, **and the generation index has a stated-scope
+question it did not have** *(`F14`)*. ***Neither is a reversal; both are the sector becoming more exactly known.***
+
 
 # STATE — the matter sector and the colour input
 

@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.185 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**12 open QUESTIONS · 32 open WORK rows · 1 OBSERVED · 1 HELD** *(178 struck of 224 registered).*
+**13 open QUESTIONS · 32 open WORK rows · 1 OBSERVED · 1 HELD** *(178 struck of 225 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -31,6 +31,7 @@ sources: [cowork]
 | **`L-207`** | OPEN | REGISTERED r2383 — `OPEN_PROBLEMS_MAP`'s `A·1`, A FOLD MISS FOUND BY THE MAP'S OWN NEW STATUS BLOCK. Why the cut bends — a dynamics for the curve itself, matter's own evolution. The map's row reads "[ADVANCED, NOT resolved — r565 … the general matter dynamics … | `OPEN_PROBLEMS_MAP` A·1 · P8 §open | ⓵ RESTATED r2424 as an EXHIBITION debt: exhibit the general inhomogeneous case as ordinary leaf evolution — the corpus asserts it and does not display… |
 | **`L-221`** | OPEN | REGISTERED r2378 by the observer line's `ARC 14` step-② fold — `PROTECTED_OPEN`'s `PO-5`, which had NO register row at all. The quark/lepton split, and what a baryon IS at the particle level — the five multiplets, and which carries the colour $\mathbf3$. A PRO… | `PROTECTED_OPEN` `PO-5` · `THE_PLAN` standing item ② | ask whether colour plus the branch-point placement already forces the split |
 | **`L-217`** | — | REGISTERED r2412 — R-P STATION ⑥h: HOW DO CR AND THE HIGGS MECHANISM COMPLEMENT EACH OTHER, in coherence and in correspondence? Daryl's question, and it is a genuine gap in the entry-point front's own sense: the word "Higgs" appears NOWHERE in the corpus (chec… | `THE_PHYSICS_REACH` ⑥h · P13 · P14 · `L-212` · the one-constant theorem | state the relation in one place: what CR supplies, what it takes as given, what it forbids itself from supplying, and where the two sectors' claims ac… |
+| **`L-232`** | — | REGISTERED AND STRUCK r2449 — `check_currency` IS GREEN, and it had never been. Twenty-one gates; this was the one that had never passed. Twenty-four documents stood stale. AND IT WAS NOT A MARKER SWEEP: FOURTEEN OF THE TWENTY-FOUR HELD REAL MISSED LANDINGS. T… | `check_currency` · fourteen documents · `THE_HUB` | — |
 
 ## 👁 OBSERVED — measured here, being worked by the FORK
 

@@ -1,10 +1,20 @@
 ---
 name: combinatorics-ledger
 kind: STATE
-current: c54.163
+current: c54.185
 job: The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8.
 sources: [cowork]
 ---
+
+> **⌗ CHECKED AGAINST c54.163→c54.185 AND DECLARED CURRENT r2449.** *The span's substantive content is **the derived
+> lensing and the acoustic front** (c54.181–184), **a lint rebuild** (c54.180), **bibitem repairs** (c54.185), and
+> the fork's application of routed items 1–9. This line's own r2417–r2448 added `ARC 16`/`ARC 17`, the `L-150` and
+> `L-213` closures, six outside readers' findings, and two lints.*
+> ⇒ ***None of it bears on the combinatorial bake — countings, orbits and the discrete skeleton.*** *The question asked was not "what moved in the file" but* ***"did anything the
+> span established or withdrew bear on what this file says"*** *— and the answer here is no.*
+> ⚠ *Stated rather than assumed: **the fourteen documents swept beside this one all turned out to hold real missed
+> landings**, so a declaration of no-effect is a claim and is made as one.*
+
 
 <!-- FORWARD WORKING DOCUMENT. Lane 8's ledger, opened r1145 (Daryl's call: a publication blocker).
      The RESULT is baked (p0 §unification's seventh face — "one circle"; map §1u); this remains the working record + receipts. Every ⊢ is receipted.

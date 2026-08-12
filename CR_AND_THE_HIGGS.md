@@ -1,10 +1,36 @@
 ---
 name: cr-and-the-higgs
 kind: STATE
-current: c54.163
+current: c54.185
 job: R-P station 6h (L-217) — how CR and the Higgs sector relate, in coherence and in correspondence. THE FALSIFICATION CONDITIONS ARE STATED FIRST, BEFORE THE CLAIM. Read before asserting complementarity.
 sources: [chat]
 ---
+
+## ⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **station 6h was WORKED at r2414 and this document stops at r2404**
+
+> *The four falsification conditions below were **stated** here and **worked** ten revisions later (`L-217`,
+> r2414). What the working produced is not in this document, and one of the four moved.*
+
+**⛭⛭ THE RESULT, and it runs OPPOSITE to the direction this document sets up.** *`F3` was written as the danger —
+CR's exact $S_3$ surviving to the observed spectrum, where the Standard Model has none.* ⇒ ***The working found the
+constraint runs the other way: the Higgs sector CONSTRAINS CR. The MANNER of the $S_3$ breaking is a constraint CR
+inherits rather than a prediction CR risks.***
+
+**⌗ AND THE COMPOSITION IS THE FINDING, stated at its weight:**
+***CR is a SELECTION-RULE theory; the Higgs sector is a MAGNITUDE theory. They compose asymmetrically*** *— which is
+why `F2` cannot arise at all (**the one-constant theorem: a dimensionless magnitude needs two invariants and the
+substrate has one, so CR predicts no mass ratio and cannot contradict one**), and why `F4` is not circular (**the
+premise is the EXISTENCE of gauge-invariant mass terms, which is representation-theoretic — not their values**).*
+
+**⚠ AND `F1` LEAVES A TRIP-WIRE IN `PO-4`, which is the live thing this document should carry forward:**
+***if the gauge group is ever promoted from "the ordinary route" to "FORCED", the Higgs conflict reopens.***
+*One clause was routed to the fork (item 12) making the Yukawa-existence premise's representation-theoretic
+character explicit, precisely so that promotion cannot happen silently.*
+
+⌗ *And `L-213` — whether the SM read as an **external** constraint motivates taking the compact face as physical —
+**was answered in the negative at r2448**, by supplying its own precondition and finding that doing so made the
+argument an **ADD**. **That is the neighbouring question to this document's and its verdict belongs here.***
+
 
 # CR AND THE HIGGS SECTOR — station `6h`
 

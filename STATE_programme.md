@@ -2,8 +2,45 @@
 name: state-programme
 description: Where the programme stands — frontiers, what closed, what is owed, what blocks completion. Read this to know the position. Written r2343; all seven frontier rows audited against P7 `sec:frontiers` at r2376 — rows 1, 3, 4, 5 and 6 corrected, 2 and 7 clean; row 5's dimension question answered and its range obstruction closed at r2376+c54.9; the 4D-from-flavour result landed in P14 at c54.9.
 sources: [chat]
-current: c54.163
+current: c54.185
 ---
+
+## ⛭⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **THE PROGRAMME'S WORKING SHAPE CHANGED AND THIS DOCUMENT DID NOT KNOW**
+
+> ⚠ *This file says **"read this to know the position"**. It carried **no mention of the repository, `THE_HUB`, the
+> two lines, or the six outside readers**.* ***The frontier rows below are about the physics and remain the thing
+> to read; what follows is the position they are worked FROM, which is new.***
+
+**⛭⛭ ① THE PROGRAMME IS IN A PUBLIC GIT REPOSITORY, AND THAT IS NOW ITS WORKING SHAPE.**
+*`daryljanzen/shadow-of-existence`, public, CI on every push. **Two lines work it** — the **fork (54)**, which owns
+the papers and the physics, and the **observer line (56)**, which audits, instruments and consolidates.*
+⇒ ***And the asymmetry is a rule, not a habit: when this line finds something in the fork's text it ROUTES rather
+than edits.*** *Thirty items currently stand in `FOR_54.md`; the fork built `FOR_56.md` unprompted, so the channel
+is symmetric.* ⌗ **`THE_HUB.md` is the arrival document** *— a node starting cold reads it first, and the ID bands
+are declared there (`L-221`–`L-499` this line, `L-500`–`L-799` the fork).*
+⚠ *And the bundle relay is **retired**: absorptions now happen **by git merge** (c54.181 onward). The old handoff
+machinery in the body below describes a workflow that no longer runs.*
+
+**⛭ ② SIX OUTSIDE READERS HAVE BEEN THROUGH THE CORPUS, and the standing result belongs in a position document.**
+*Nodes 17, 23, 37, 52, 53 and 55 read it cold. **Eighteen items judged: 5 applied or adopted, 10 routed, 7 rejected
+or superseded.***
+⇒ ***THE CORPUS HELD EVERYWHERE IT WAS LOAD-BEARING EXCEPT ONE EINSTEIN-SPACE INVARIANT, ONE LOCUS WORD, AND A
+HANDFUL OF SCOPE QUALIFIERS.*** *`PROTECTED_OPEN` asserts that base rate; six independent readings measured it.*
+⌗ ⚠ **And two of the defects found were this line's own** *— a CI outage in which fifteen gates never ran for twelve
+revisions, and three residual sites of a propagation the record called complete —* ***both visible only from
+outside the working tree.***
+
+**⌗ ③ AND TWO FRONTIER-ADJACENT POSITIONS MOVED, both closing by being PRICED rather than solved.**
+*· **`L-150`** — the datum half of p0's frontier item 1: ***$\rho_r/\rho_m$ cannot be derived from the crossing, and
+not because of the crossing — because a dimensionless magnitude needs two invariants and the substrate has one.***
+**p0's item does not close: it asked for a derivation and the answer is that there cannot be one** (routed as item
+18).*
+*· **`L-213`** — whether the SM as an **external** constraint motivates taking the compact face as physical:
+**answered in the negative**, by supplying its own precondition and finding that doing so made the argument an
+**ADD**.*
+⇒ ***Both had a favourable reading available on paper, and in both the instrument decided against it — which is the
+only kind of evidence a self-scoring programme can offer that its scoring is not decorative.***
+
 
 # STATE — where the programme is
 

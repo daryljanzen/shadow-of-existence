@@ -2,8 +2,44 @@
 name: physical-values-ledger
 job: What does the corpus compute, under which conventions? Read WHEN QUOTING A VALUE.
 class: whole-corpus-instrument
-current: c54.163
+current: c54.185
 ---
+
+## ⛭⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **THIS LEDGER SAYS "READ WHEN QUOTING A VALUE", AND THE RECEIPT LAYER CARRIES TWO PARAMETER SETS**
+
+> ⚠ *That is this file's whole job, so the finding belongs here before it belongs anywhere else.*
+
+**⛔ ① P15's RECEIPT LAYER CARRIES TWO INTERNALLY CONSISTENT PARAMETER SETS, AND THE PAPER DRAWS ON BOTH**
+*(`F15`, node 55; verified here by reading the receipts, and sharpened at r2446).*
+
+| | $\Omega_m$ | $z_{\rm rec}$ | receipts |
+|---|---|---|---|
+| **Set A** — the C-chain | — | **1100.0** | `C5b_baryon_term`, `C8_diffusion_length`, `C11_early_isw`, `C10_highl_ratio` … **7** |
+| **Set B** — ROBUST / UNC / the-ratio | **0.3066** | **1089.9** | `ROBUST_p1p2_scan`, `UNC_error_budget`, `C11TEST_radiation_zeroed`, `H0_acoustic_angle_and_seam` … **8** |
+
+⇒ ***Not a scatter — a near-even split, 8 against 7.*** ⚠ **AND WHY IT MATTERS IS NOT THE $0.7\%$:** *`sec:refit-bound`'s
+argument is **a ratio in which things are supposed to cancel**, and it reports $z_*$ moving **"by only $-0.11\%$"**.*
+⇒ ***A $0.7\%$ set inconsistency is SIX TIMES the figure the paper calls negligible, exactly where it says nothing
+depends on it.*** *Routed as `FOR_54` 27.*
+⌗ **So the rule this ledger should carry: when quoting a P15 receipt-layer value, name the SET.** *`corpus/scope_table.py`
+prints which receipt runs at which.*
+
+**⌗ ② AND `H0` AT 67.4 AND 73.0 IS NOT DRIFT — it is the Hubble tension itself**, *and `sec:refit-bound` evaluates at
+both ends by construction.* ⇒ ***But that makes it a CITATION question rather than a consistency one: for a
+parameter with two right answers, a sentence quoting a number MUST say which.*** *Recorded in `scope_table` as
+`BY_DESIGN` rather than silenced.*
+
+**✔ ③ A VALUE CORRECTED, and it is the kind this ledger exists to catch** *(r2441)*. *$1+z_{\rm eq}=(1+z_{\rm
+onset})/2$ — and **three live sites carried 3426, which is the RETIRED $z_{\rm onset}=6850$'s value**, while the
+receipt `C7_equality_and_deficit` prints **3399** from the current 6797.* ⚠ ***`FORK_c54` recorded that propagation
+as MADE and "forced", and `ONTOLOGY_FOUNDATION_INDEX` and `PHASE7_BUILD_LEDGER` never received it*** *— one of them
+the card a node reads to learn what the corpus's numbers are. All three corrected.*
+
+⌗ **AND WHAT THIS LEDGER DELIBERATELY DOES NOT TAKE:** *the acoustic-fit statistics — $\chi^2=1320\to989$,
+$\Delta=331$ against the fitted $400$, the derived lensing — **belong to `OPTICS_LENSING_LEDGER` and the acoustic
+front**, not here. ***This ledger holds what the corpus COMPUTES under stated conventions; a fit residual is what a
+comparison RETURNS.*** *Naming the boundary so the next node does not have to guess it.*
+
 
 # THE PHYSICAL VALUES LEDGER — §1w
 

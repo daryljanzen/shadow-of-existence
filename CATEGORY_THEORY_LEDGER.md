@@ -1,8 +1,18 @@
 ---
 name: category-theory-ledger
 description: R-M's fifth field bake — CATEGORY THEORY, the corpus's largest unlisted field. Opened r1892 after the r1890 holes survey found 363 uses and two papers named for its objects, with the field itself absent from the reach list. Its opening question is one the corpus states about itself.
-current: c54.163
+current: c54.185
 ---
+
+> **⌗ CHECKED AGAINST c54.163→c54.185 AND DECLARED CURRENT r2449.** *The span's substantive content is **the derived
+> lensing and the acoustic front** (c54.181–184), **a lint rebuild** (c54.180), **bibitem repairs** (c54.185), and
+> the fork's application of routed items 1–9. This line's own r2417–r2448 added `ARC 16`/`ARC 17`, the `L-150` and
+> `L-213` closures, six outside readers' findings, and two lints.*
+> ⇒ ***None of it bears on the categorical structures bake — functors, adjunctions and the groupoid/algebroid framing.*** *The question asked was not "what moved in the file" but* ***"did anything the
+> span established or withdrew bear on what this file says"*** *— and the answer here is no.*
+> ⚠ *Stated rather than assumed: **the fourteen documents swept beside this one all turned out to hold real missed
+> landings**, so a declaration of no-effect is a claim and is made as one.*
+
 
 # THE CATEGORY THEORY LEDGER — the field the list did not carry
 

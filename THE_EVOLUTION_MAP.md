@@ -2,8 +2,34 @@
 name: the-evolution-map
 job: Working in paper N, what may I stand on and what may I not yet assume? Read BEFORE STANDING ON A RESULT.
 class: whole-corpus-instrument
-current: c54.19
+current: c54.185
 ---
+
+> **⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — and this map was re-read END TO END at r2435–r2438, which is why it
+> carries a fork marker again after 166 revisions without one.**
+>
+> *`ARC 16` took it linearly, p0 → p17, **all eighteen stations, every claim and every quotation checked at
+> source**.* ⇒ **What it produced is filed as `ARC 17`:** ***two kinds of trimming and one structural finding, with
+> the classification stable by the fifth station.***
+> *· **Kind one, six instances** — a posture collapsing from **provisional to settled**, of which P9's is the
+> cleanest: **"either answer is a theorem with physical content" is gone entirely**, a sentence true of an OPEN
+> question that became unattributable the moment the question closed.*
+> *· **Kind two, two instances** — a phrase living **only in a `%` comment**, and P8's is load-bearing: its own
+> comment says **"this is what P16's rate-handoff derivation rests on."***
+> *· **And the structural finding, `L-224`:** the map's coverage collapsed exactly where the corpus meets data.
+> **Four sections were genuinely absent and have been written** — `sec:instrument`, `sec:refit-bound`,
+> `sec:predictions` and `sec:envelope-consequence` for P15, plus `sec:trev` and `sec:verdict` for P16.*
+> ⌗ ⚠ ***And the row's own size was a bad measure: "5 of 19 sections named" counted LABEL MENTIONS, and seven of
+> eight substantive sections were already covered in prose. The gap was four sections, not eleven.***
+>
+> **⌗ THE HARVEST, which is the map's real contribution and belongs at its head:** ***THE CORPUS HAS NO PLACE FOR A
+> SENTENCE THAT IS TRUE-FOR-NOW.*** *In published text such a sentence is **overwritten, leaving no trace**; in a
+> comment it **survives unpromoted and is quoted as though published**. **Same fact, opposite sides.***
+> ⇒ ***And that explains this document rather than excusing it: the map's whole content — "what may be stood on at
+> paper N" — is true-for-now by construction, so it is the corpus's only document made wholly of the kind the
+> corpus does not keep.*** **Of course it is the stalest, and of course the gradient ends at the papers that move
+> most.**
+
 
 # The Evolution Map — how the corpus's forcings build, in order
 

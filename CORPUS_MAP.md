@@ -146,6 +146,49 @@ sources: [cowork, chat]
 
 
 
+### Revision r2449 — 2026-08-11 (main line). **`check_currency` IS GREEN FOR THE FIRST TIME — and fourteen of the twenty-four stale documents held REAL MISSED LANDINGS, not stale markers.**
+
+**⌗⌗ THE GATE THAT HAD NEVER PASSED.** *Twenty-one gates; `check_currency` was the one always reported as
+"measurable" rather than green. Twenty-four live documents stood 22 fork revisions behind.* ⚠ *The natural reading
+is **bookkeeping** — bump the markers and move on.* ⇒ ⛔ ***FOURTEEN OF THEM HAD MISSED SOMETHING REAL, AND EACH
+FAILED AT ITS OWN STATED JOB.***
+
+*· **`OPTICS_LENSING_LEDGER`** — ***a ledger for optics and lensing that did not know lensing had been built***: no
+potential, no $\chi^2$, no $\Delta$. Meanwhile c54.181–184 ran a **derived lensing with no free width** —
+$1320\to989$, $\Delta\chi^2=331$, **under the fitted 400**, which is exactly what a derivation must do, after
+validating where the answer is known (CAMB's own $\Lambda$CDM, $615\to186$).*
+*· **`STATE_matter_sector`** — says **"read this before touching P13, P14, or family 12"** and knew **neither `F13`
+nor `F14`**: not that $\mathfrak{su}(3)$ embeds in exactly one real form, and not that the leaf-compactness claim
+carrying the generation index **diverges at the member the programme forces**.*
+*· **`STATE_programme`** — says **"read this to know the position"** and ***knew nothing of the repository,
+`THE_HUB`, the two lines, or the six outside readers***.*
+*· **`THE_ARSENAL_INDEX`** — **"the grid: which paper × which tool"**, listing **neither lint adopted at r2443 and
+r2446**.*
+*· **`THE_QUANTUM_JOINT`** — its "no free parameter" closure now rests on a **reproduced** $\gamma=\tfrac14$ rather
+than on the paper's assertion, and its real-form closure is **tighter than co-equal**: there was nothing to split
+into.*
+*· **`COMPLEX_ANALYSIS_LEDGER`** — gains **the misuse of its own field's distinction**, deck versus monodromy.*
+*· **`RP_34_GR_BASELINE`** — ***was still describing `G1` as an instrument twenty revisions after this line withdrew
+it***. **A baseline that records only what was found reads stronger than the work was.**
+*· and `THE_PRY_APART_CENSUS`, `PHYSICAL_VALUES_LEDGER`, `THE_FERMION_SECTOR_GEOMETRY`, `THE_MATHEMATICS_REACH`,
+`THE_DIMENSION_DEEPENING_AUDIT`, `ACOUSTIC_BUILD_SETUP`, `ENTRY_POINT_REGISTER`, `THE_EVOLUTION_MAP`.*
+
+**⌗ THE RULE:** ***`check_currency` does not measure tidiness — it measures whether a document still does its job.***
+*The marker is the symptom; **the job is the test**; and the only way to tell a stale marker from a missed landing
+is to **open the file and ask what it claims to be for**.*
+⚠ **And the last seven were declared current with the check stated AS A CLAIM** — *"the question was not what moved
+in the file but **did anything the span established or withdrew bear on what this file says**"* — ***made as a claim
+precisely because the fourteen beside them proved "probably nothing moved" is a bad prior.***
+
+**⚠⚠ AND THE CONDUCT NOTE, because it is instances SEVEN, EIGHT AND NINE of one failure.** *This line reached for
+**word-count probes three times in a single sweep** — grepping "leaf", "deck", "lensing" across the stale set to
+decide which mattered.* ⇒ ***Every document "hit", because those are core CR vocabulary. Word-presence dressed as
+relevance, again.*** ⌗ **What worked all three times was READING ONE DOCUMENT instead of counting across twenty** —
+*and the finding is not that the probes failed but that* ***this line keeps picking up the same broken tool after
+filing the rule against it six times.***
+
+**Register: 225 rows, 180 struck. Gates: twenty-one, TWENTY-ONE rc=0.**
+
 ### Revision r2448 — 2026-08-11 (main line). **`L-213` ANSWERED BY SUPPLYING ITS OWN PRECONDITION — and meeting the requirement made the argument WORSE.**
 
 **⌗⌗ THE SETUP, and it is why the answer is trustworthy.** *At r2405 `THE_BASE_RATE` separated `L-213` into **two

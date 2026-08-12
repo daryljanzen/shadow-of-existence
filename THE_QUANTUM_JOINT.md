@@ -1,10 +1,42 @@
 ---
 name: the-quantum-joint
 kind: STATE
-current: c54.163
+current: c54.185
 job: The QM sketchpad — a NOTEBOOK, not a ledger: draw the pipe-extensions as far as the evidence suggests, run the rigour alongside as the eraser and not the doorman. Nothing here is a banked corpus result. Register: cluster-J germs were struck c54.117; the quantum tower is L-165 = PO-6.
 sources: [cowork]
 ---
+
+## ⛭⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **THE REAL-FORM CLOSURE THIS DOCUMENT TURNS ON IS NOW SHARPER, AND ITS ONE UNREPRODUCED CHECK IS CLOSED**
+
+> *This file leans on the real-form structure harder than any other — **55 uses of "real form"** — and on P10's
+> deficiency-index closure for the "no free parameter" claim. **Both moved since c54.163, and both moved in this
+> document's favour.***
+
+**⛭⛭ ① THE REAL-FORM PICTURE IS TIGHTER THAN "CO-EQUAL"** *(`F13`, node 55, verified r2442).*
+*This document quotes P13's* **"$\su(3)\subset\so(6)$, $\not\subset\so(5)$ co-location of the gauge and thermal
+Euclideans on the one $S^5$"** *— and P13's neighbouring `sec:face-status` concedes that **"nothing in the group
+theory privileges one"** real form.* ⇒ ⛔ ***That concession is false, and correcting it strengthens exactly the
+closure this document reports.***
+*$\so(6,\mathbb C)$ has **four** real forms — $\so(6)$, $\so(5,1)$, $\so(4,2)$, $\so(3,3)$ — and $\su(3)$ embeds in
+**exactly one**: compact of dimension 8, it needs a maximal compact of dimension $\ge8$, which excludes $\so(4,2)$
+(7) and $\so(3,3)$ (6), while $\so(5,1)$'s maximal compact $\so(5)$ cannot hold it because* **$\su(3)$'s smallest
+faithful REAL representation is six-dimensional.**
+⇒ ***So "CLOSURE at the real-form level" is not a coincidence of two readings landing on one form — it is the only
+form available. The fork could not have split, because there was nothing to split into.*** *Routed as `FOR_54` 25.*
+
+**✔ ② AND P10's $\gamma=\tfrac14$ — the closure "without a free parameter" this document rests on — IS NOW
+INDEPENDENTLY REPRODUCED.** *Node 17's cold study marked it **the one of sixteen load-bearing checks it could not
+reproduce**, obtaining $0$ and $-\tfrac14$;* ***it then found its own error — it had reduced the graviton power
+$p^2/a^3$ instead of the scale-factor operator $p_a^2/a$ — and withdrew the caveat.***
+*Re-derived here from `eq:Hphys`: $T_su = u''/a - u'/a^2 - s(s-2)u/a^3$, then $x\sim a^{3/2}$ and $u=a^{1/4}w$,
+under which **the first-derivative term vanishes identically**, leaving*
+$$\Gamma(s) = -\tfrac49 s^2 + \tfrac89 s - \tfrac{7}{36}, \qquad \Gamma(1) = \tfrac14$$
+*a downward parabola.* ⇒ ***So $\tfrac14$ is the MAXIMUM of the family, no ordering reaches the $\tfrac34$
+threshold, and the deficiency indices are $(1,1)$ INDEPENDENTLY OF ORDERING.*** **The paper is exact, including the
+word "attaining"** *— receipt `P10_gamma_is_one_quarter_and_is_the_maximum` (11 checks).*
+⌗ ***So the joint's "one boundary condition, closed by the horizon's thermal state without a free parameter" now
+stands on a reproduced computation rather than on the paper's assertion alone.***
+
 
 # THE QUANTUM JOINT — the QM vantage: a sketchpad
 

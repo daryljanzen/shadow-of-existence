@@ -1,10 +1,42 @@
 ---
 name: rp-34-gr-baseline
 kind: STATE
-current: c54.163
+current: c54.185
 job: R-P station ③④ (L-204), §0 BASELINE — what the corpus already holds in GR's four named areas, surveyed and RUN before any question is asked. Read before opening the station.
 sources: [chat]
 ---
+
+## ⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **the station's own §0 closed, and TWO of its findings were later WITHDRAWN by this line**
+
+> *This baseline stops at r2416, the revision that opened it. **Three things happened after, and two of them are
+> retractions this document must carry** — because a baseline that records only what was found reads as stronger
+> than the work was.*
+
+**⛔ ① `G1`'s ARRIVAL-PATH METRIC WAS STRIPPED AT r2417, and this document still describes it as an instrument.**
+*`G1` scored the **distance** from a claim to its support — `cor:carter` sitting 23,281 characters from the
+shift–shear mechanism.* ⇒ ***`G2`'s blind run returned 7/7 FALSE POSITIVES and the metric was withdrawn: distance
+is not readability, because a result that carries its argument inside itself needs no nearby support.***
+⌗ **It is the first of the six bad measures** *(`G1` · the phrase test · the quotation check · the coverage ratio ·
+the label-mention count · a defined function read for its behaviour), and the diagnostic that names them all:*
+***if the quantity's meaning changes with what the sentence is ABOUT, it is not a measurement.***
+
+**⛔ ② ROUTING ITEM 13 WAS WITHDRAWN AT r2418, and the reason is a rule this document should carry.** *The item
+proposed drawing an arrow from `cor:carter` to the shift–shear mechanism — and* ***`rem:carter-chain` already
+existed in P9 and already drew it.*** ⇒ **CHECK THE FIX, NOT JUST THE DIAGNOSIS:** *a receipt naming a defect is
+evidence it was **FOUND**, never that it is still **THERE**.*
+
+**⌗ ③ AND `G3`'s AXIS OBJECTION WAS A MISPARSE, corrected in the same pass.** *This line read "a single structural
+axis" as referring to the **PND count** and objected. **It refers to the horizon/symmetry axis, which P9 defines
+three times in the same paper.*** ⇒ ***When a passage seems to contradict itself, the corpus has usually defined
+its terms elsewhere in the same paper — search before you object.*** *What survived was **one word** ("along that
+axis"), routed as item 14 and since applied by the fork — which then turned `G3` red, earning the receipt-expiry
+rule: **a receipt asserting that a defect PERSISTS expires the revision the other line fixes it**.*
+
+**⇒ SO §0's STANDING IS: the baseline holds — nine P9 receipts `rc=0`, the Carter constant receipted, Petrov O/D/I
+all filled, the exact-solution catalogue IS the range theorem, the field equations unmodified — and TWO of the
+three instruments built to probe it were withdrawn by this line rather than by the corpus.** *`L-204` ③④ is worked;
+`L-220`'s arrival-path class carries what remains.*
+
 
 # R-P ③④ — §0 BASELINE, surveyed r2416
 

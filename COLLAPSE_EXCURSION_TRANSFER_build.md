@@ -2,10 +2,20 @@
 name: collapse-excursion-transfer-build
 description: Attack manual for the reshaped bounded cluster (open-problems families 1/3/4/5) — ONE build on the progenitor collapse excursion (L2), family 5's high-ℓ acoustic driving envelope the first target. Read WITH THE_OPEN_PROBLEMS_LEDGER family 5 (r1408) + OPEN_PROBLEMS_MAP E3 (r1408).
 kind: STATE
-current: c54.163
+current: c54.185
 job: PHASE 7's ATTACK MANUAL — the one build on the progenitor collapse excursion (L2) behind open-problems families 1/3/4/5. Referenced live by eleven documents including THE_PLAN, PHASE7_BUILD_LEDGER and both open-problems documents.
 sources: [chat]
 ---
+
+> **⌗ CHECKED AGAINST c54.163→c54.185 AND DECLARED CURRENT r2449.** *The span's substantive content is **the derived
+> lensing and the acoustic front** (c54.181–184), **a lint rebuild** (c54.180), **bibitem repairs** (c54.185), and
+> the fork's application of routed items 1–9. This line's own r2417–r2448 added `ARC 16`/`ARC 17`, the `L-150` and
+> `L-213` closures, six outside readers' findings, and two lints.*
+> ⇒ ***None of it bears on the collapse-excursion transfer build's own setup and layer assignment.*** *The question asked was not "what moved in the file" but* ***"did anything the
+> span established or withdrew bear on what this file says"*** *— and the answer here is no.*
+> ⚠ *Stated rather than assumed: **the fourteen documents swept beside this one all turned out to hold real missed
+> landings**, so a declaration of no-effect is a claim and is made as one.*
+
 
 > **⌗ INDEXED r2380, NOT RETIRED — and this is the `ARC 4` lesson instance for this batch.** *It sits in a
 > `*_build.md` filename among four siblings that were all records, and **it is a live resource**: eleven

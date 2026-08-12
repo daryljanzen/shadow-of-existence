@@ -3,9 +3,33 @@ name: dimension-deepening-audit
 description: What the four-dimensionality result owes the reach programme — every R-M and R-P bake, ledger and probe re-read against it, with a verdict for each and the re-runs that earned them. Read this before trusting any bake's constants as structural.
 sources: [cowork]
 kind: STATE
-current: c54.163
+current: c54.185
 job: What the four-dimensionality result owes the reach programme — every R-M and R-P bake re-read against it, with a verdict for each. Read BEFORE trusting any bake's constants as structural.
 ---
+
+## ⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **a dimension count settled a real-form question, which is this audit's own subject**
+
+*`F13` (node 55, verified r2442) is a dimension argument end to end, so it belongs in this audit rather than only in
+the matter sector's file:*
+
+| real form of $\mathfrak{so}(6,\mathbb C)$ | dim | maximal compact | $\ge 8$? |
+|---|---|---|---|
+| $\mathfrak{so}(6)\cong\mathfrak{su}(4)$, compact | 15 | **15** | ✔ |
+| $\mathfrak{so}(5,1)$ | 15 | $\mathfrak{so}(5)$, **10** | ✔ |
+| $\mathfrak{so}(4,2)$ | 15 | $\mathfrak{so}(4)+\mathfrak{so}(2)$, **7** | ⛔ |
+| $\mathfrak{so}(3,3)$ | 15 | $\mathfrak{so}(3)+\mathfrak{so}(3)$, **6** | ⛔ |
+
+*$\mathfrak{su}(3)$ is **compact of dimension 8**, so it must lie inside a maximal compact subalgebra — which
+excludes two forms on dimension alone.* ⇒ **And the third falls to the corpus's own count:** ***$\mathfrak{su}(3)$'s
+smallest faithful REAL representation is six-dimensional, so $\mathfrak{su}(3)\subset\mathfrak{so}(6)$ and
+$\not\subset\mathfrak{so}(5)$*** *— the same 6-versus-5 that walls `PO-4`.*
+⇒ ***FOUR real forms, and $\mathfrak{su}(3)$ embeds in EXACTLY ONE.***
+
+⌗ **AND THE AUDIT'S POINT IS THE REUSE, not the result:** *the **one** dimension count — 6 needed, 5 available —
+does three separate jobs in this corpus: **it walls the geometric colour route (`PO-4`)**, **it selects the unique
+real form that could host colour (`F13`)**, and **it makes the external-constraint argument an ADD rather than a
+DELETE (`L-213`, r2448)**.* ***A single count carrying three verdicts is what this audit exists to notice.***
+
 
 # THE DIMENSION DEEPENING AUDIT — the reach programme, re-read
 

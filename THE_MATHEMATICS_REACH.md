@@ -1,10 +1,33 @@
 ---
 name: the-mathematics-reach
 kind: STATE
-current: c54.163
+current: c54.185
 job: The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. LIVE: stations Ⓕ, Ⓖ, Ⓗ are owed per THE_PLAN's standing order item ④; registered as L-203.
 sources: [cowork]
 ---
+
+## ⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **two fields' results, and one is a misuse of a distinction this reach records**
+
+**⛭ ① REPRESENTATION THEORY: $\mathfrak{su}(3)$ EMBEDS IN EXACTLY ONE REAL FORM OF $\mathfrak{so}(6,\mathbb C)$**
+*(`F13`, node 55, verified r2442).* *Four real forms, not two. $\mathfrak{su}(3)$ is compact of dimension 8, so it
+needs a maximal compact of dimension $\ge8$ — excluding $\mathfrak{so}(4,2)$ (7) and $\mathfrak{so}(3,3)$ (6) — and
+$\mathfrak{so}(5,1)$'s maximal compact $\mathfrak{so}(5)$ cannot hold it because* **$\mathfrak{su}(3)$'s smallest
+faithful REAL representation is six-dimensional.** ⇒ ***The compact form is the unique host, which tightens `PO-4`
+rather than loosening it.***
+
+**⛔ ② COVERING SPACE THEORY: "DECK GROUP $S_3$" ON A THREE-SHEETED COVER IS IMPOSSIBLE, and this reach is where
+that distinction lives.** *A deck (covering-automorphism) group acts **freely** on a fibre, so its order divides the
+degree: $6\nmid3$.* *P5's `prop:deck` says "the deck group of the three-sheeted cover is $S_3$" and closes,
+correctly, **"$S_3$ is therefore the MONODROMY group … not a free relabelling"**.*
+⇒ ⛭ **And the field settles it cleanly:** *$\operatorname{disc}(r^3-r+2M)=-4(27M^2-1)$ is **not a square**, so the
+Galois group is $S_3$;* ***the root cover is NON-REGULAR with trivial deck group, and its Galois closure has degree
+six with deck $S_3$ — which is what `C3` established from the dial.*** *Routed as `FOR_54` 23.*
+
+⌗ ***THE REACH'S OWN LESSON: both entries are the mathematics being RIGHT in the computation and LOOSE in the
+prose*** *— P5 computes the monodromy correctly and calls it the deck; P13 counts the embedding correctly and
+concedes a symmetry the count denies. **A reach document is exactly where that gap should be visible, because it
+holds the field's vocabulary rather than the paper's argument.***
+
 
 # THE MATHEMATICS REACH — the R-M theater: throw a field at the architecture, sift what bites
 

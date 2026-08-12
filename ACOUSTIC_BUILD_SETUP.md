@@ -4,8 +4,29 @@ kind: STATE
 current_main: r2111
 job: The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own.
 sources: [cowork]
-current: c54.163
+current: c54.185
 ---
+
+> **⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — and this setup's front moved twice while the file stood still.**
+>
+> *It says "the setup for the front the working fork is on **right now**", so its own claim obliges it to track that
+> front.* **Two things landed:**
+>
+> **⛭ ① A DERIVED LENSING, RUN WITH NO FREE WIDTH — and it came in UNDER the bound a fit had set** *(c54.181–183)*.
+> *c54.181 **fitted** a growing-width smoothing worth $\Delta\chi^2=400$ on the $\Lambda$CDM arm and stated the
+> discipline before the number was known:* ***"a derived lensing that came in ABOVE 400 would not be a triumph, it
+> would be evidence the operation had a free parameter hiding in it."*** *The derived calculation returned
+> **$1320\to989$, $\Delta\chi^2=331$**, after validating where the answer is known (**CAMB's own $\Lambda$CDM,
+> $615\to186$**).* ⚠ *The operator is **$\Lambda$CDM's own lensed-to-unlensed ratio, imported not fitted**; **`PO-7`
+> stays protected and the CR arm does not fit.***
+>
+> **⛔ ② AND THE SETUP'S OWN VOCABULARY IS AT RISK IN P15** *(routed as `FOR_54` 21, flagged to take first)*: *P15
+> says **"branch point"** at five sites where **the receipt cited at those sentences says "seam"** — nineteen times
+> to zero. And the loci behave oppositely: $1/aH$ is **1.000 at the seam** and **0.051 at $10^{-3}\alpha$**, so*
+> ***a proposition titled "sub-horizon" is TRUE at the seam and FALSE at the branch point.***
+> ⌗ **A build setup is exactly where that distinction must be right**, *since it fixes boundary conditions at a
+> locus — **and the conflation has already cost two independent nodes a false finding in one day**.*
+
 
 > **⌗⌗ INDEXED r2380 — LIVE, and it is the setup for the front the working fork is on right now.**
 > *Its own discipline is why it is worth keeping and is quoted rather than paraphrased:* ***"Written before any

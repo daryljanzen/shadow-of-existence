@@ -1,8 +1,48 @@
 ---
 name: optics-lensing-ledger
 description: R-P's first field bake — observational optics and lensing thrown at CR. Opened r1857 (Phase 8, the physics half), handed to directly by the conformal bake's C4. Baseline, the O1 result (the photon sphere IS Nariai's forcing locus), probes, and the Phase 9 routing.
-current: c54.163
+current: c54.185
 ---
+
+## ⛭⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **AND THE BAKE MISSED ITS OWN SUBJECT LANDING**
+
+> ⚠⚠ **THIS LEDGER STOOD AT c54.163 AND CARRIED NOTHING ABOUT THE LENSING BUILT AT c54.181–184** *— no
+> potential, no $\chi^2$, no $\Delta$. **A ledger for optics and lensing that did not know lensing had been
+> built.*** ⌗ *Caught by `check_currency`, which is the only gate that has never been green, and which was
+> reporting this as one of twenty-four stale markers. **It was not a stale marker. It was a missed landing.***
+
+**⌗ WHAT LANDED, AND IT IS THIS BAKE'S SUBJECT ENTIRELY.**
+
+*· **c54.181 fitted** a Gaussian smoothing whose width grows with $\ell$ and bought $\Delta\chi^2=400$ on the
+$\Lambda$CDM arm ($1320\to921$) —* ***and said in as many words that the width is FITTED, so the 400 BOUNDS what a
+derived lensing has to play for.*** **A derivation has no free width and may return more or less.**
+⇒ ⛭⛭ ***"So a derived lensing that came in ABOVE 400 would not be a triumph, it would be evidence the operation
+had a free parameter hiding in it."*** *That sentence is the whole discipline of this front, and it was written
+before the number was known.*
+
+*· **c54.183 ran the derived calculation**, validated first where the answer is known: **CAMB's own $\Lambda$CDM
+through this instrument goes $\chi^2=615$ unlensed $\to186$ lensed**, so on a true $\Lambda$CDM spectrum the derived
+lensing is worth $\Delta\chi^2\simeq429$ — **the check that the non-perturbative operator and the pipeline are both
+wired right**.*
+*· **Then the same operator on the CR instrument's own $\Lambda$CDM arm, no free parameter: $1320\to989$,
+$\Delta\chi^2=331$** — ***under the fitted 400, which is what a derivation must do.***
+*· ⚠ **And the receipt states its own limits, which this ledger inherits:** "**Not** a measurement of the lensing
+amplitude (the operator is $\Lambda$CDM's, **imposed not fitted**) and **not** a claim the CR arm now fits — **it
+does not**." **`PO-7` stays protected.***
+
+**⌗⌗ AND THE DISTINCTION THIS BAKE SHOULD CARRY, because it is the one that decides what comes next.**
+*Two lensing calculations exist and they are not the same object:*
+*· **the node's** — $\Lambda$CDM's own **lensed-to-unlensed ratio**, the right instrument for that number and
+**imported**;*
+*· **the old session's (c54.184)** — a $C_\ell^{\phi\phi}$ **derived on this construction's own $\Phi$ at no new
+parameter**.*
+⇒ ***A CR-side lensing calculation will need a corpus-native potential; the $\Lambda$CDM ratio is a $\Lambda$CDM
+object.*** **That is this bake's next probe, and it is now stated rather than implied.**
+
+⌗ *And the residual decomposition corroborates from the other side: **positions are 0.1% of the residual — which is
+why the peaks do not move under lensing** — contrast 38% and 13.1% too high, and **53% in neither template set,
+said BEFORE the build**, against which the 331 is that expectation met.*
+
 
 # THE OPTICS AND LENSING LEDGER — R-P's first bake
 

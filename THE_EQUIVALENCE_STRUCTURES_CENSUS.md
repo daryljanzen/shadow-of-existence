@@ -1,11 +1,21 @@
 ---
 name: the-equivalence-structures-census
 kind: STATE
-current: c54.163
+current: c54.185
 class: whole-corpus-instrument
 job: Which apparent TWO are ONE object read two ways? — the corpus-wide equivalence-structures census, the dual of the pry-apart. Read BEFORE claiming two things are distinct. ⚠ Its own comb is OWED: 'the comprehensive comb the corpus has NOT yet done'.
 sources: [cowork]
 ---
+
+> **⌗ CHECKED AGAINST c54.163→c54.185 AND DECLARED CURRENT r2449.** *The span's substantive content is **the derived
+> lensing and the acoustic front** (c54.181–184), **a lint rebuild** (c54.180), **bibitem repairs** (c54.185), and
+> the fork's application of routed items 1–9. This line's own r2417–r2448 added `ARC 16`/`ARC 17`, the `L-150` and
+> `L-213` closures, six outside readers' findings, and two lints.*
+> ⇒ ***None of it bears on the census of equivalence structures the corpus uses and keeps distinct.*** *The question asked was not "what moved in the file" but* ***"did anything the
+> span established or withdrew bear on what this file says"*** *— and the answer here is no.*
+> ⚠ *Stated rather than assumed: **the fourteen documents swept beside this one all turned out to hold real missed
+> landings**, so a declaration of no-effect is a claim and is made as one.*
+
 
 > **⌗⌗ INDEXED r2380 INTO THE `whole-corpus-instrument` CLASS — it was the only one of the three censuses left out.**
 > *`THE_DISSOLUTION_CENSUS` was already declared a whole-corpus instrument; **its two duals were unclassified**,
