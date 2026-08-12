@@ -146,6 +146,41 @@ sources: [cowork, chat]
 
 
 
+### Revision r2432 — 2026-08-11 (main line). **THE NODE'S BRANCH MERGED — the duplicate-stem defect closed, the derived lensing landed, and the push problem was never a permission.**
+
+**⛔⛔ FIRST, THE THING THAT COST HOURS AND WAS NEVER TRUE.** *This line asserted, repeatedly and without checking,
+that the working fork's session lacked write access.* ***It had been pushing successfully the whole time*** *— to
+`claude/cosmological-relativity-c54-sn2msi`, a branch its session created for itself.* ⇒ **The `403` on `line/54`
+was the documented behaviour, not a permission: the sandbox proxy restricts a push to the branch the session is on.**
+⌗ ***And it was found by looking at `git ls-remote --heads`, which nobody had run.*** *Verified separately and also
+negative: **no branch protection on any branch, no rulesets, repo public and writable**. **The block was never on
+GitHub's side and never on the fork's.***
+
+**⌗ WHAT THE BRANCH CARRIED — two revisions, merged with two conflicts, both resolved by keeping both sides.**
+*· **c54.182 (node) — THE DUPLICATE-STEM COLLAPSE CLOSED.** `receipts/INDEX.md` had 16 stems registered under two
+paths, so `\rcpt{}` resolution and the ratchet both keyed on an ambiguous key.* ***Now 269 rows, 269 unique stems,
+zero duplicates — and the gate fails on a second.***
+*· **c54.183 — THE DERIVED LENSING BUILD.** $\Lambda$CDM's own lensed-to-unlensed ratio applied to the arm, **a
+derived operation with no free width**, taking the control from **1320 to 989** — an improvement of **331**,
+concentrated in the damping tail.* ⇒ ***"Below the 400 the fitted width bounded, as a zero-parameter derivation
+must be", and the acoustic peaks do not move under it.*** *And the corpus's own first-order kernel **overshoots to
+508** by breaking down in that same tail — a spurious $+13\%$ at $\ell=1900$ where the full operator gives $+6.5\%$.*
+
+**⛭⛭ AND THE CONFLICT IN P15 WAS THE BEST KIND: two consecutive stages of one argument, written by two sessions that
+could not see each other.** *The first decomposes the residual **before** building lensing and predicts that
+**"about half the residual is in neither [template set] — so a complete lensing calculation is expected to leave a
+comparable amount behind, and we say so before building it rather than after."** The second opens* **"That
+calculation has since been done"** *and reports **989 of the 1320 surviving**.* ⇒ ***A prediction and its
+confirmation, made independently, resolved by keeping both in order.***
+
+**⚠ AND A NUMBERING COLLISION, the same class as 52/53's above r2376:** *two sessions numbered independently from
+c54.181, so **two different c54.182s exist** — the old session's lensing-potential revision (merged at `46ecdc4`)
+and the node's duplicate-stem fix.* ⌗ *Recorded rather than renumbered in the history: **the commits are distinct
+and the merge order disambiguates them**, and rewriting a landed revision number is worse than carrying the
+collision with its note.*
+
+**Register: 215 rows. Gates: twenty-one, twenty rc=0. `receipts/INDEX.md`: 269 rows, 269 unique stems.**
+
 ### Revision r2431 — 2026-08-11 (main line). **c54.182 MERGED — the lensing potential derived, and it turned two of this line's receipts red by applying this line's own findings.**
 
 **⌗ THE FORK'S RESULT: CMB LENSING ON THE $\Lambda$CDM ARM, NON-PERTURBATIVE AND WITH ZERO FREE PARAMETERS.**

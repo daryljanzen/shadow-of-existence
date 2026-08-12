@@ -35,6 +35,7 @@ sources: [chat]
 | c54.178 | r2427 | 2026-08-11 |
 | c54.181 | r2429 | 2026-08-11 | ⛭ **BY MERGE, not by tarball — the first one** |
 | c54.182 | r2431 | 2026-08-11 | *by merge, via bundle relay* |
+| c54.183 | r2432 | 2026-08-11 | ⛭⛭ **BY DIRECT MERGE — the node pushed its own branch** |
 
 ## What each absorption cost, so the next one is planned rather than discovered
 
