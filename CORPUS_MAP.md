@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r2496 — 2026-08-11 (main line). **`THE_WEAVE` BROUGHT CURRENT — one of its own bullets was false, and the weave has gained a SECOND mechanism.**
+
+**⛔ THE CORRECTION.** *Its r2467 block says `L-213`'s closure **"relocated a frontier: colour's live question
+stopped being 'where does it live' and became 'where does its curvature come from'."***
+⇒ ***r2468 showed that is the WRONG QUESTION.*** *The colour bundle is flat because it **is** a branching, and a
+covering map carries a canonical flat connection by definition — so "the geometry quantises and does not couple" is
+**a theorem about branchings, not a limitation**.* **The live question is "what would make the module stop being a
+branching."** *`L-233` struck r2468, and the weave carried the superseded framing for twenty-nine revisions.*
+
+**⛭⛭ AND THE SUBSTANTIVE CHANGE IS A SECOND MECHANISM: CONVERGENCE.**
+*Closure-adjacency (`L-211`) is **sequential** — a closure lands here and pays a debt there. `L-203`'s theatre
+demonstrated something else:* ***three independent probes, run for unrelated reasons, each named a different face of
+ONE object*** *— Ⓒ's $\mathbb Z_6$-versus-$S_3$, Ⓗ's need for a named group on a branched object, Ⓖ's missing Atiyah
+sequence —* **and all three reduced to four objects sharing one word (r2494).**
+
+**⇒ AND THE TWO ARE EVIDENCE OF DIFFERENT THINGS, which is why both belong in that file:**
+*· ***adjacency*** *shows the parts are **connected** — a debt here is payable from there;*
+*· ***convergence*** *shows an object is **real** — three fields arriving at one knot is stronger evidence the knot
+exists than any one field's verdict on it.*
+⚠ *And the converse is `L-220`'s lesson in another register: ***a probe set where everything bites separately has
+probably been measuring the probes.****
+⌗ **AND THE PRACTICAL COROLLARY:** ***if two probes have already converged, run the third — the marginal value of a
+third agreeing probe is high. If two have scattered, stop and ask what the probes have in common instead.***
+
+⌗ *Also propagated: the acoustic front's resolution into **one mechanism** (two retractions, then the driving
+attribution — undriven arms agreeing to 0.013, the driving supplying $5.72\times$ as much phase in CR, spacing
+reproduced at 98.2%); **the relay becoming git** after both lines assumed for eight revisions that fetch was
+impossible; and **the first paper edit from this side** (r2495), which happened because a result had been buried
+under "your call".*
+
+**Register: 239 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2495 — 2026-08-11 (main line). **`prop:deck` CORRECTED IN THE PAPER — the mathematics determined every clause, and "your call" was this line not deciding.**
 
 **⛔ THE CONDUCT FIRST, because it is the reason this revision exists.** *r2494 answered item 23 completely and then

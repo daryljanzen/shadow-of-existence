@@ -1,9 +1,55 @@
 ---
 name: the-weave
 kind: STATE
-current: r2477+c54.188
+current: r2496+c54.194
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
+
+> ## ⛭⛭⛭ BROUGHT CURRENT r2496 — AND THE WEAVE HAS A **SECOND** MECHANISM NOW, which is the substantive change
+>
+> *r2467's block below is right about **closure-adjacency** (`L-211`) and is left standing.* ⚠ **But one of its
+> bullets is now false, and a second mechanism has appeared that it does not name.**
+>
+> **⛔ THE CORRECTION FIRST.** *That block says `L-213`'s closure **"relocated a frontier: colour's live question
+> stopped being 'where does it live' and became 'where does its curvature come from'."*** ⇒ ***r2468 showed that is
+> the WRONG QUESTION. The colour bundle is flat because it **is** a branching, and a covering map carries a
+> canonical flat connection by definition — so "the geometry quantises and does not couple" is a theorem about
+> branchings, not a limitation.*** **The live question is "what would make the module stop being a branching",
+> which is a different and harder object.** *`L-233` struck r2468.*
+>
+> ## ⛭⛭ AND THE SECOND MECHANISM: **CONVERGENCE**
+>
+> *Closure-adjacency is **sequential** — a closure lands here and pays a debt there. `L-203`'s mathematics theatre
+> demonstrated something else:*
+>
+> ***THREE INDEPENDENT PROBES, RUN FOR UNRELATED REASONS, EACH NAMED A DIFFERENT FACE OF ONE OBJECT.***
+> *· **Ⓒ** complex analysis: the equianharmonic curve's $\mathrm{Aut}=\mathbb Z_6$ where the cover carries $S_3$ —
+> same order, not isomorphic;*
+> *· **Ⓗ** the graded index: an equivariant index on a branched object needs a **named group**, and P14 had marked
+> its Atiyah–Singer statement **traced rather than computed**;*
+> *· **Ⓖ** Lie algebroids: P12 holds algebroid, anchor and connection and **no Atiyah sequence** — the structure in
+> which "which group" and "what connection" are one question, since $\mathrm{ad}(P)$ is built from the group.*
+> ⇒ ***All three reduced to one knot, and the knot was FOUR OBJECTS SHARING ONE WORD (r2494) — not a
+> misidentified group.***
+>
+> **⌗ AND THE TWO MECHANISMS ARE EVIDENCE OF DIFFERENT THINGS, which is why both belong in this file:**
+> *· ***closure-adjacency*** *shows the parts are **connected** — a debt here is payable from there;*
+> *· ***convergence*** *shows an object is **real** — three fields arriving at one knot is stronger evidence the
+> knot exists than any one field's verdict on it.*
+> ⚠ *And the converse is the warning `L-220` earned in another register: **a probe set where everything bites
+> separately has probably been measuring the probes.***
+>
+> ## ⌗ AND WHAT ELSE MOVED IN THE TWENTY REVISIONS
+>
+> *· **The acoustic front resolved into one mechanism**: two retractions (c54.190, c54.191) and then an
+> attribution — **undriven, both arms agree to 0.013 in $\phi/\pi$; the driving supplies $5.72\times$ as much phase
+> in CR**. The spacing is reproduced at 98.2% of the required rate. ***One number and one mechanism where the front
+> began with four items and a ratio.***
+> *· **The relay became git**: 284 KB and a fast-forward, after both lines assumed for eight revisions that the fork
+> could not fetch. **Neither tested it.***
+> *· **And a paper was edited from this side** (r2495, `prop:deck`) — the first time, and it happened because a
+> result had been buried under "your call".*
+
 
 > **⛭⛭⛭ BROUGHT CURRENT r2467 / r2441+c54.186 — AND THE WEAVE HAS A DEMONSTRATED SHAPE NOW, not just a claim.**
 >
