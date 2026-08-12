@@ -1,0 +1,998 @@
+{
+ "P01_BH_causality/P01_metric_singularity_algebra.py": {
+  "n": 23,
+  "sha": "57e9554b0a964f20"
+ },
+ "P02_janzen_circle/P02_analytic_continuations.py": {
+  "n": 34,
+  "sha": "4549ea676603194e"
+ },
+ "P02_janzen_circle/P02_bead_K_mass_free.py": {
+  "n": 22,
+  "sha": "48364ff913e61a15"
+ },
+ "P02_janzen_circle/P02_cycloid_and_critical_points.py": {
+  "n": 16,
+  "sha": "0082ef20a61000f4"
+ },
+ "P02_janzen_circle/P02_interior_metric.py": {
+  "n": 51,
+  "sha": "dd7a6bcd53d348ed"
+ },
+ "P02_janzen_circle/P02_kretschmann_chain_rule.py": {
+  "n": 25,
+  "sha": "b607deef16f987fb"
+ },
+ "P02_janzen_circle/P02_ring_lambda_limit.py": {
+  "n": 47,
+  "sha": "00ae104fddc57391"
+ },
+ "P03_SdS_slicing/C4_gnomonic_not_conformal.py": {
+  "n": 30,
+  "sha": "d37fa885e6a888c6"
+ },
+ "P03_SdS_slicing/C5_sct_already_linear.py": {
+  "n": 59,
+  "sha": "35ddfdf44a85cb03"
+ },
+ "P03_SdS_slicing/D2_hexagon_klein.py": {
+  "n": 175,
+  "sha": "a1515efe587bf44f"
+ },
+ "P03_SdS_slicing/O3_charting_distance.py": {
+  "n": 60,
+  "sha": "dcb2799d14f4beeb"
+ },
+ "P03_SdS_slicing/P03_R_reaches_the_turnaround.py": {
+  "n": 150,
+  "sha": "bb0a4c0de029807d"
+ },
+ "P03_SdS_slicing/P03_acceleration_is_slice_curvature.py": {
+  "n": 62,
+  "sha": "7596d5fc7ca64005"
+ },
+ "P03_SdS_slicing/P03_batch1_cheap_owed.py": {
+  "n": 257,
+  "sha": "002e869ac438aa32"
+ },
+ "P03_SdS_slicing/P03_batch2_runnable.py": {
+  "n": 173,
+  "sha": "aa83983d499e94fc"
+ },
+ "P03_SdS_slicing/P03_batch3_hot_front.py": {
+  "n": 290,
+  "sha": "02b453b9de67b9cb"
+ },
+ "P03_SdS_slicing/P03_charge_parity.py": {
+  "n": 37,
+  "sha": "b858b3ce6522bba4"
+ },
+ "P03_SdS_slicing/P03_colour_spacelike_isospin_timelike.py": {
+  "n": 64,
+  "sha": "f167f392a832f724"
+ },
+ "P03_SdS_slicing/P03_conjugacy.py": {
+  "n": 68,
+  "sha": "ad3d292ed73974c2"
+ },
+ "P03_SdS_slicing/P03_cubic_factor_ellipse_locus.py": {
+  "n": 114,
+  "sha": "37835cb94ce68d8c"
+ },
+ "P03_SdS_slicing/P03_cubic_spacing.py": {
+  "n": 49,
+  "sha": "e9234f1169cf39b8"
+ },
+ "P03_SdS_slicing/P03_curvature_signflip.py": {
+  "n": 40,
+  "sha": "ab045b3081b8f66f"
+ },
+ "P03_SdS_slicing/P03_dimension_collapse.py": {
+  "n": 197,
+  "sha": "92ac5ca9f4835010"
+ },
+ "P03_SdS_slicing/P03_ellipse_foci.py": {
+  "n": 59,
+  "sha": "bab6d3e3ac77710b"
+ },
+ "P03_SdS_slicing/P03_hexagon_null_triple.py": {
+  "n": 264,
+  "sha": "5df10a1963f8044e"
+ },
+ "P03_SdS_slicing/P03_kg_is_fprime.py": {
+  "n": 25,
+  "sha": "da373ba6526afb76"
+ },
+ "P03_SdS_slicing/P03_locus_sweep.py": {
+  "n": 260,
+  "sha": "9144ab9553bf9cd6"
+ },
+ "P03_SdS_slicing/P03_operator_at_general_D.py": {
+  "n": 307,
+  "sha": "bf7ab4aac24cea58"
+ },
+ "P03_SdS_slicing/P03_overcritical.py": {
+  "n": 50,
+  "sha": "82b390400a044406"
+ },
+ "P03_SdS_slicing/P03_reach_probe_deepening.py": {
+  "n": 321,
+  "sha": "e68d00077d3f8851"
+ },
+ "P03_SdS_slicing/P03_rstar_merged_horizon.py": {
+  "n": 74,
+  "sha": "a128381770536fda"
+ },
+ "P03_SdS_slicing/P03_seam_continuation.py": {
+  "n": 31,
+  "sha": "3e6c6fe26a5838ba"
+ },
+ "P03_SdS_slicing/P03_sheet_index_and_factors.py": {
+  "n": 249,
+  "sha": "34d1040e627f1543"
+ },
+ "P03_SdS_slicing/P03_slate_worked.py": {
+  "n": 275,
+  "sha": "233872a6489d016d"
+ },
+ "P03_SdS_slicing/P03_step3_refused.py": {
+  "n": 176,
+  "sha": "f1b9d86ca049e0a4"
+ },
+ "P03_SdS_slicing/P03_step3_sweep.py": {
+  "n": 390,
+  "sha": "2bc9fcaeef3e847f"
+ },
+ "P03_SdS_slicing/P03_the_U3_figure.py": {
+  "n": 24,
+  "sha": "b9c1387fcb51427f"
+ },
+ "P03_SdS_slicing/P03_the_adjoint_is_entailed.py": {
+  "n": 273,
+  "sha": "1ef93ed71ab8e909"
+ },
+ "P03_SdS_slicing/P03_the_foci_are_chart_objects.py": {
+  "n": 124,
+  "sha": "d95d49b910f0a0b9"
+ },
+ "P03_SdS_slicing/P03_the_sixth_equivalence.py": {
+  "n": 227,
+  "sha": "850087f2b99508cf"
+ },
+ "P03_SdS_slicing/P03_the_turnaround_figure.py": {
+  "n": 89,
+  "sha": "bb94a8a8970ed489"
+ },
+ "P03_SdS_slicing/P03_the_two_splits.py": {
+  "n": 305,
+  "sha": "d8813b16965db4c4"
+ },
+ "P03_SdS_slicing/P03_the_weld_and_the_two_folds.py": {
+  "n": 343,
+  "sha": "44f49f8b1a795eef"
+ },
+ "P03_SdS_slicing/P03_thirds_from_closure.py": {
+  "n": 283,
+  "sha": "65085069e8609617"
+ },
+ "P03_SdS_slicing/P03_transverse_space_is_round.py": {
+  "n": 256,
+  "sha": "79c39458bb5167af"
+ },
+ "P03_SdS_slicing/P03_triple_angle_gnomonic.py": {
+  "n": 62,
+  "sha": "45cd424adbd3bfba"
+ },
+ "P03_SdS_slicing/P03_turnaround_temporal_threeness.py": {
+  "n": 78,
+  "sha": "2265daa605bfebcd"
+ },
+ "P03_SdS_slicing/P03_twelve_null_legs.py": {
+  "n": 448,
+  "sha": "c7a72fec54af70d9"
+ },
+ "P03_SdS_slicing/P03_two_two_plus_ones.py": {
+  "n": 267,
+  "sha": "51465c6d0449ce53"
+ },
+ "P03_SdS_slicing/P03_wall_is_the_graze_point.py": {
+  "n": 166,
+  "sha": "430fa6187b63bb63"
+ },
+ "P03_SdS_slicing/P03_winding_and_closure.py": {
+  "n": 265,
+  "sha": "4286f129e1f4f6a8"
+ },
+ "P03_SdS_slicing/Q5_nariai_on_the_locus.py": {
+  "n": 120,
+  "sha": "c191c2e448a2f73e"
+ },
+ "P03_SdS_slicing/X2r_single_periodicity.py": {
+  "n": 77,
+  "sha": "c90f200e968dc170"
+ },
+ "P03_SdS_slicing/X3r_reality_lines.py": {
+  "n": 63,
+  "sha": "00b0ef8f2654c06e"
+ },
+ "P03_SdS_slicing/alpha_alone.py": {
+  "n": 75,
+  "sha": "50b2b11a65d9cf09"
+ },
+ "P03_SdS_slicing/euclid7_nine_point.py": {
+  "n": 151,
+  "sha": "e027c921436851c3"
+ },
+ "P03_SdS_slicing/one_thirty.py": {
+  "n": 243,
+  "sha": "729a948f7f19b2be"
+ },
+ "P04_modern_parallax/P04_redshift_isotropy_floor.py": {
+  "n": 31,
+  "sha": "1d250b8fde8e18eb"
+ },
+ "P05_groupoid/C1_conformal_vs_isometric.py": {
+  "n": 93,
+  "sha": "a0a58bbbb03b53d7"
+ },
+ "P05_groupoid/COVER_dial_loop_is_sigma_squared.py": {
+  "n": 30,
+  "sha": "91a7967aa9815a14"
+ },
+ "P05_groupoid/HOLONOMY_complex_loop.py": {
+  "n": 38,
+  "sha": "427aabe088d71cca"
+ },
+ "P05_groupoid/K1_action_groupoid.py": {
+  "n": 54,
+  "sha": "215e80fdb9607a25"
+ },
+ "P05_groupoid/K23_functor_and_quotient.py": {
+  "n": 52,
+  "sha": "348add95e5d2394f"
+ },
+ "P05_groupoid/K45_span_and_nariai.py": {
+  "n": 54,
+  "sha": "cc1fe3ec31228f75"
+ },
+ "P05_groupoid/P05_deck_group_S3.py": {
+  "n": 48,
+  "sha": "ede444c2269fd137"
+ },
+ "P05_groupoid/P05_dihedral_generators.py": {
+  "n": 64,
+  "sha": "02a5a09d5c97ad16"
+ },
+ "P05_groupoid/Q4_equianharmonic_vantages.py": {
+  "n": 182,
+  "sha": "b61a0700d2609147"
+ },
+ "P05_groupoid/V5_homothety_charge.py": {
+  "n": 20,
+  "sha": "a6b60aceb482b0ba"
+ },
+ "P05_groupoid/X1rr_sky_angle_is_the_galois_closure.py": {
+  "n": 120,
+  "sha": "f45f9c3286dcf9f7"
+ },
+ "P05_groupoid/X5_monodromy_group.py": {
+  "n": 62,
+  "sha": "3987e7893058dc80"
+ },
+ "P05_groupoid/negation_outer_A2.py": {
+  "n": 15,
+  "sha": "ec14f3a8af50c4c7"
+ },
+ "P06_shadow/A53_two_moves.py": {
+  "n": 35,
+  "sha": "9cce7bd4e672bbb6"
+ },
+ "P06_shadow/P06_the_boundary_is_a_class.py": {
+  "n": 16,
+  "sha": "0ff39a557a8fe13a"
+ },
+ "P07_CR_framework/D4_fold_scaling.py": {
+  "n": 69,
+  "sha": "a9df0406b2830d43"
+ },
+ "P07_CR_framework/EUCNULL_continuous_null_definition.py": {
+  "n": 22,
+  "sha": "2d88698dd2d55a21"
+ },
+ "P07_CR_framework/F_flat.py": {
+  "n": 12,
+  "sha": "3103238bce366000"
+ },
+ "P07_CR_framework/LAP_complete_account.py": {
+  "n": 54,
+  "sha": "e1fe9425c66db7d0"
+ },
+ "P07_CR_framework/LIFT_euclidean_filter.py": {
+  "n": 35,
+  "sha": "c162f23ca09826e1"
+ },
+ "P07_CR_framework/O1_photon_sphere_nariai.py": {
+  "n": 65,
+  "sha": "748eedda642daaf8"
+ },
+ "P07_CR_framework/O4_deflection_perspectival.py": {
+  "n": 53,
+  "sha": "2746d832d1170855"
+ },
+ "P07_CR_framework/O5_kappa_and_lyapunov.py": {
+  "n": 58,
+  "sha": "97a74134bb271f6f"
+ },
+ "P07_CR_framework/O6_eikonal_ringdown.py": {
+  "n": 100,
+  "sha": "5d4783191232993d"
+ },
+ "P07_CR_framework/P07_eikonal_ratio_is_D_minus_three.py": {
+  "n": 187,
+  "sha": "cd2159d09ba83b1f"
+ },
+ "P07_CR_framework/P07_lap_timeline.py": {
+  "n": 164,
+  "sha": "25270bccea59390f"
+ },
+ "P07_CR_framework/P07_nariai_selection.py": {
+  "n": 64,
+  "sha": "9079ce447f8d10e4"
+ },
+ "P07_CR_framework/P07_sds_kretschmann.py": {
+  "n": 56,
+  "sha": "288344e86f2fc670"
+ },
+ "P07_CR_framework/X4r_no_essential_singularity.py": {
+  "n": 72,
+  "sha": "d605965a9353783a"
+ },
+ "P07_CR_framework/bead_conjugate.py": {
+  "n": 105,
+  "sha": "e84fe39e645c066c"
+ },
+ "P07_CR_framework/bead_contour.py": {
+  "n": 68,
+  "sha": "2a726600ef9e30f0"
+ },
+ "P07_CR_framework/order3_bridge.py": {
+  "n": 441,
+  "sha": "53d19682b9b499d2"
+ },
+ "P07_CR_framework/photon_cross_test.py": {
+  "n": 60,
+  "sha": "48606eaa5b7d3b08"
+ },
+ "P07_CR_framework/two_realisations.py": {
+  "n": 64,
+  "sha": "201c2cbb3c5c3ba8"
+ },
+ "P08_slicing_operator/K6_fullness.py": {
+  "n": 36,
+  "sha": "1fb44ed7124afacd"
+ },
+ "P08_slicing_operator/K9_isotropy_obstruction.py": {
+  "n": 34,
+  "sha": "35862c01a1950c6a"
+ },
+ "P08_slicing_operator/P08_E1_cosmology.py": {
+  "n": 83,
+  "sha": "65f6d25c2bfbf2cf"
+ },
+ "P08_slicing_operator/P08_lapse_split.py": {
+  "n": 12,
+  "sha": "82e533ee962776f7"
+ },
+ "P08_slicing_operator/P08_matter_functional.py": {
+  "n": 31,
+  "sha": "e847169c1ef6d4d8"
+ },
+ "P08_slicing_operator/P08_nariai_signed_roots.py": {
+  "n": 91,
+  "sha": "daadabc0d63efb5c"
+ },
+ "P08_slicing_operator/P08_synchronous_horosphere.py": {
+  "n": 22,
+  "sha": "28f7cdd2530874a0"
+ },
+ "P08_slicing_operator/P08_trichotomy.py": {
+  "n": 70,
+  "sha": "076a2e86179f934c"
+ },
+ "P08_slicing_operator/V34_orthogonal_and_no_cost.py": {
+  "n": 17,
+  "sha": "0d268d6da6fb08a4"
+ },
+ "P09_range_paper/K7_range_is_essential_image.py": {
+  "n": 32,
+  "sha": "b47c160946773e75"
+ },
+ "P09_range_paper/P09_bianchiI_typeI.py": {
+  "n": 26,
+  "sha": "d76a39d008be5449"
+ },
+ "P09_range_paper/P09_carter_killing.py": {
+  "n": 25,
+  "sha": "0bfa1f1a4d6e6999"
+ },
+ "P09_range_paper/P09_kerr_deSitter.py": {
+  "n": 25,
+  "sha": "f1bd34f2ba6a79d0"
+ },
+ "P09_range_paper/P09_ks_vacuum.py": {
+  "n": 21,
+  "sha": "0d033384d724bd9a"
+ },
+ "P09_range_paper/P09_ppwave_typeN.py": {
+  "n": 21,
+  "sha": "4eed23e6f00266af"
+ },
+ "P09_range_paper/P09_typeD_quartics.py": {
+  "n": 16,
+  "sha": "b056530e1baf80a4"
+ },
+ "P09_range_paper/V1_carter_chain.py": {
+  "n": 25,
+  "sha": "5de9e2a4aade3571"
+ },
+ "P10_canonical_time/LIFT_adiabatic_correction.py": {
+  "n": 39,
+  "sha": "5f2f8129ca657bbf"
+ },
+ "P10_canonical_time/LIFT_gravitational_action.py": {
+  "n": 37,
+  "sha": "aa84922b1b9649cd"
+ },
+ "P10_canonical_time/LIFT_instanton_action.py": {
+  "n": 30,
+  "sha": "10fc78401cf099a7"
+ },
+ "P10_canonical_time/P10_graviton_lift.py": {
+  "n": 33,
+  "sha": "c6dc7cc957026349"
+ },
+ "P10_canonical_time/P10_minisuperspace_friedmann.py": {
+  "n": 29,
+  "sha": "a22f3ab798e2d9ed"
+ },
+ "P11_dynamics_paper/P11_deSitter_attractor.py": {
+  "n": 27,
+  "sha": "f5326f430675a2ba"
+ },
+ "P11_dynamics_paper/P11_gowdy_dS.py": {
+  "n": 5,
+  "sha": "3fbbe65c5794c694"
+ },
+ "P11_dynamics_paper/P11_mukhanov.py": {
+  "n": 38,
+  "sha": "4a005e7785de264c"
+ },
+ "P11_dynamics_paper/P11_twoKV.py": {
+  "n": 15,
+  "sha": "bf34cfd12b2b03e6"
+ },
+ "P11_dynamics_paper/P11_wall_ppwave.py": {
+  "n": 17,
+  "sha": "fba4063add86875c"
+ },
+ "P12_algebroid_paper/E1_static_gauge.py": {
+  "n": 46,
+  "sha": "6266a0021c90e80b"
+ },
+ "P12_algebroid_paper/EMBEDDING_is_Td_equals_WA3.py": {
+  "n": 26,
+  "sha": "58b596087a99763e"
+ },
+ "P12_algebroid_paper/GROUP_full_order48.py": {
+  "n": 29,
+  "sha": "e0b469b05b0d83b7"
+ },
+ "P12_algebroid_paper/K8_orbit_type_filtration.py": {
+  "n": 140,
+  "sha": "086f4e278c612231"
+ },
+ "P12_algebroid_paper/K8b_dim_seven_empty.py": {
+  "n": 86,
+  "sha": "aa72f8dbed72594d"
+ },
+ "P12_algebroid_paper/P12_bracket_closure.py": {
+  "n": 13,
+  "sha": "50c42373ff0a4192"
+ },
+ "P12_algebroid_paper/P12_coset_metric.py": {
+  "n": 33,
+  "sha": "d1c9ecdc6f638e76"
+ },
+ "P12_algebroid_paper/P12_polar_dimension.py": {
+  "n": 44,
+  "sha": "75d0277ed90f74fa"
+ },
+ "P13_boundary_paper/P13_A3_factorization.py": {
+  "n": 41,
+  "sha": "0bd19f6873bfeadc"
+ },
+ "P13_boundary_paper/P13_A3_spinor_lift.py": {
+  "n": 42,
+  "sha": "5fbbe7ccfa148a1f"
+ },
+ "P13_boundary_paper/P13_cascade_rank.py": {
+  "n": 38,
+  "sha": "95a9a1f2fe2cd3d7"
+ },
+ "P13_boundary_paper/P13_closure_i_check.py": {
+  "n": 72,
+  "sha": "4142c310017703b3"
+ },
+ "P13_boundary_paper/P13_closure_iv_check.py": {
+  "n": 62,
+  "sha": "028a07e521794e58"
+ },
+ "P13_boundary_paper/P13_conjugation_parity.py": {
+  "n": 131,
+  "sha": "4c221d8ff1633c43"
+ },
+ "P13_boundary_paper/P13_kretschmann_bead.py": {
+  "n": 46,
+  "sha": "26fc481cad1e8ef0"
+ },
+ "P13_boundary_paper/P13_qm_S4_vs_S5.py": {
+  "n": 89,
+  "sha": "bc584ff0f211ec46"
+ },
+ "P13_boundary_paper/P13_ruling_swaps.py": {
+  "n": 38,
+  "sha": "49c4d80603b043f0"
+ },
+ "P13_boundary_paper/P13_sigma_lift.py": {
+  "n": 28,
+  "sha": "d98a8d9ee080b002"
+ },
+ "P14_matter_sector_paper/BUNDLE_ranks_survey.py": {
+  "n": 37,
+  "sha": "a339b3154b221dfc"
+ },
+ "P14_matter_sector_paper/HYPERCHARGE_from_anomalies.py": {
+  "n": 26,
+  "sha": "4c16df2c45d21359"
+ },
+ "P14_matter_sector_paper/JTOWER_angular_index.py": {
+  "n": 21,
+  "sha": "baa63a4a47705b43"
+ },
+ "P14_matter_sector_paper/P14_B2_zeromode_continuation.py": {
+  "n": 42,
+  "sha": "461bbd95900c00da"
+ },
+ "P14_matter_sector_paper/P14_B3_spinor_vielbein.py": {
+  "n": 39,
+  "sha": "88678e31bad203b0"
+ },
+ "P14_matter_sector_paper/P14_L8_the_three.py": {
+  "n": 23,
+  "sha": "2470e7b4e5aefd4f"
+ },
+ "P14_matter_sector_paper/P14_L8_the_twelve.py": {
+  "n": 177,
+  "sha": "0323e8ca1a6bc094"
+ },
+ "P14_matter_sector_paper/P14_L8_the_two.py": {
+  "n": 84,
+  "sha": "f17439baa7f773fc"
+ },
+ "P14_matter_sector_paper/P14_P14_payoff.py": {
+  "n": 30,
+  "sha": "e2b616574fd1e307"
+ },
+ "P14_matter_sector_paper/P14_a_labelling_not_a_gauging.py": {
+  "n": 92,
+  "sha": "6d583cf7c7b6b835"
+ },
+ "P14_matter_sector_paper/P14_characters_label_they_do_not_multiplet.py": {
+  "n": 67,
+  "sha": "e4cfe2d7b8532243"
+ },
+ "P14_matter_sector_paper/P14_charge_or_colour.py": {
+  "n": 145,
+  "sha": "78243c36da5f471e"
+ },
+ "P14_matter_sector_paper/P14_colour_is_vector_like_on_singlets.py": {
+  "n": 66,
+  "sha": "1694e99290756e14"
+ },
+ "P14_matter_sector_paper/P14_dimension_from_flavour.py": {
+  "n": 250,
+  "sha": "f2b69581dbfc52fa"
+ },
+ "P14_matter_sector_paper/P14_dual_norm.py": {
+  "n": 18,
+  "sha": "d63e9e12d43cd93b"
+ },
+ "P14_matter_sector_paper/P14_even_crossing_index.py": {
+  "n": 38,
+  "sha": "28798f878d316600"
+ },
+ "P14_matter_sector_paper/P14_lambda_spectrum.py": {
+  "n": 198,
+  "sha": "dbb3de13b30b46df"
+ },
+ "P14_matter_sector_paper/P14_leaf_compactness.py": {
+  "n": 28,
+  "sha": "f72d1c94e2168eb3"
+ },
+ "P14_matter_sector_paper/P14_leg_count_equals_arc_count.py": {
+  "n": 197,
+  "sha": "593bbb7cb5b48b10"
+ },
+ "P14_matter_sector_paper/P14_mode_monodromy_at_the_wall.py": {
+  "n": 240,
+  "sha": "176dc996e1b73d82"
+ },
+ "P14_matter_sector_paper/P14_naming_a_derived_object.py": {
+  "n": 126,
+  "sha": "eef0071072fca469"
+ },
+ "P14_matter_sector_paper/P14_no_choice_of_group_works.py": {
+  "n": 100,
+  "sha": "4439ca6ab3f8ac2b"
+ },
+ "P14_matter_sector_paper/P14_odd_D_contains_its_own_image.py": {
+  "n": 145,
+  "sha": "b1623b40622a6884"
+ },
+ "P14_matter_sector_paper/P14_odd_D_is_pair_symmetric.py": {
+  "n": 93,
+  "sha": "1e191df545025d2c"
+ },
+ "P14_matter_sector_paper/P14_p3_already_said_it.py": {
+  "n": 52,
+  "sha": "9c70a0c624b7e93d"
+ },
+ "P14_matter_sector_paper/P14_quantisation_not_strength.py": {
+  "n": 71,
+  "sha": "d129066e1d319ed5"
+ },
+ "P14_matter_sector_paper/P14_quark_lepton_frontier.py": {
+  "n": 156,
+  "sha": "4d3ebc54318d590d"
+ },
+ "P14_matter_sector_paper/P14_route_or_point.py": {
+  "n": 96,
+  "sha": "ade871017aeb1e38"
+ },
+ "P14_matter_sector_paper/P14_scale_and_ratio.py": {
+  "n": 162,
+  "sha": "cfb61b95da8bf383"
+ },
+ "P14_matter_sector_paper/P14_statistics_not_gauge.py": {
+  "n": 107,
+  "sha": "98e8f775b2766747"
+ },
+ "P14_matter_sector_paper/P14_the_bundle_is_the_branching.py": {
+  "n": 311,
+  "sha": "bff1735a2e451f67"
+ },
+ "P14_matter_sector_paper/P14_the_centre_is_the_weight_origin.py": {
+  "n": 173,
+  "sha": "d6d917c5d0711b43"
+ },
+ "P14_matter_sector_paper/P14_the_count_specified.py": {
+  "n": 180,
+  "sha": "7fe4e92a7679dcaf"
+ },
+ "P14_matter_sector_paper/P14_the_d5_world.py": {
+  "n": 241,
+  "sha": "7f467767b58ca210"
+ },
+ "P14_matter_sector_paper/P14_the_family_symmetry_is_cyclic.py": {
+  "n": 148,
+  "sha": "c91d376196dab663"
+ },
+ "P14_matter_sector_paper/P14_the_gap_is_antisymmetry.py": {
+  "n": 107,
+  "sha": "b3f5d4441be867a3"
+ },
+ "P14_matter_sector_paper/P14_the_isospin_exchange.py": {
+  "n": 369,
+  "sha": "aaf7b3e9a5cc7306"
+ },
+ "P14_matter_sector_paper/P14_the_lap_orientation_is_derived.py": {
+  "n": 223,
+  "sha": "1b9bbcc4a55a104b"
+ },
+ "P14_matter_sector_paper/P14_the_species_bit_is_not_chiral.py": {
+  "n": 75,
+  "sha": "7edb5a955810ad77"
+ },
+ "P14_matter_sector_paper/P14_the_wall_is_a_wall_of_a_hinge.py": {
+  "n": 471,
+  "sha": "581854822389b6b4"
+ },
+ "P14_matter_sector_paper/P14_tower_is_not_kaluza_klein.py": {
+  "n": 109,
+  "sha": "f1475da40842399f"
+ },
+ "P14_matter_sector_paper/P14_turnaround_carries_D6.py": {
+  "n": 272,
+  "sha": "f9522ce2d343c3c0"
+ },
+ "P14_matter_sector_paper/P14_two_rank_threes.py": {
+  "n": 127,
+  "sha": "4d5fd730b865810a"
+ },
+ "P14_matter_sector_paper/V4_chirality_parity.py": {
+  "n": 52,
+  "sha": "06a7c048bb201e2b"
+ },
+ "P14_matter_sector_paper/WALL_anomaly_inflow.py": {
+  "n": 35,
+  "sha": "2e3bad5c4a79138c"
+ },
+ "P15_CR_cosmology/AS_amplitude_leftward.py": {
+  "n": 23,
+  "sha": "26d28e1e8b9bd9cd"
+ },
+ "P15_CR_cosmology/BRANCHPT_transmission_character.py": {
+  "n": 56,
+  "sha": "1a04517d83eb6ea5"
+ },
+ "P15_CR_cosmology/BUILD_camb_store.py": {
+  "n": 39,
+  "sha": "fb536d398920c7ed"
+ },
+ "P15_CR_cosmology/C10_highl_ratio.py": {
+  "n": 50,
+  "sha": "6e4bbff10caa55e8"
+ },
+ "P15_CR_cosmology/C11TEST_radiation_zeroed.py": {
+  "n": 136,
+  "sha": "a586046e44eb9444"
+ },
+ "P15_CR_cosmology/C11_early_isw.py": {
+  "n": 50,
+  "sha": "af633bf8d06a8c84"
+ },
+ "P15_CR_cosmology/C1_closure_of_the_driving.py": {
+  "n": 54,
+  "sha": "6210c686f5a1f3a4"
+ },
+ "P15_CR_cosmology/C2_horizon_limits.py": {
+  "n": 175,
+  "sha": "b6b7398b1e5e9f2a"
+ },
+ "P15_CR_cosmology/C3_conformal_map.py": {
+  "n": 119,
+  "sha": "9e7c06b3d6405290"
+ },
+ "P15_CR_cosmology/C4_driving_envelope.py": {
+  "n": 187,
+  "sha": "728d88b4a19b7a95"
+ },
+ "P15_CR_cosmology/C5b_baryon_term.py": {
+  "n": 57,
+  "sha": "43dcbb56af697b40"
+ },
+ "P15_CR_cosmology/C6_neutrino_term.py": {
+  "n": 42,
+  "sha": "e607e1fc408bb831"
+ },
+ "P15_CR_cosmology/C7_equality_and_deficit.py": {
+  "n": 55,
+  "sha": "7d68243121d54e97"
+ },
+ "P15_CR_cosmology/C8_diffusion_length.py": {
+  "n": 87,
+  "sha": "79e886e2ca51a2c3"
+ },
+ "P15_CR_cosmology/C9_sound_horizon_and_ratio.py": {
+  "n": 37,
+  "sha": "a4bb6ad756f12219"
+ },
+ "P15_CR_cosmology/H0_acoustic_angle_and_seam.py": {
+  "n": 66,
+  "sha": "6d6aeebda8e114e5"
+ },
+ "P15_CR_cosmology/ISW_line_of_sight.py": {
+  "n": 36,
+  "sha": "e8d717cc2aab3c4c"
+ },
+ "P15_CR_cosmology/M2_reabsorption_minimization.py": {
+  "n": 70,
+  "sha": "e34d7624b0c0b8a4"
+ },
+ "P15_CR_cosmology/P15_camb_reference.py": {
+  "n": 41,
+  "sha": "f581452ffe67d7b1"
+ },
+ "P15_CR_cosmology/P15_confront_lowell_data.py": {
+  "n": 37,
+  "sha": "0583e4b38fc17dc0"
+ },
+ "P15_CR_cosmology/P15_cr_collapse_driving.py": {
+  "n": 16,
+  "sha": "49d20e435892d79c"
+ },
+ "P15_CR_cosmology/P15_damping_ratio_clean.py": {
+  "n": 80,
+  "sha": "19b88c97dada78e8"
+ },
+ "P15_CR_cosmology/P15_damping_reabsorption.py": {
+  "n": 44,
+  "sha": "5f45e4cfcfb8092f"
+ },
+ "P15_CR_cosmology/P15_desi_dr2_confrontation.py": {
+  "n": 53,
+  "sha": "c8f9de91800dfaa0"
+ },
+ "P15_CR_cosmology/P15_expansion_law.py": {
+  "n": 51,
+  "sha": "0966009eda76c0e3"
+ },
+ "P15_CR_cosmology/P15_full_transfer_verdict.py": {
+  "n": 65,
+  "sha": "ad1f3a060ab6635f"
+ },
+ "P15_CR_cosmology/P15_hubble_expansion_confrontation_v2.py": {
+  "n": 93,
+  "sha": "5032db4e80d5dafb"
+ },
+ "P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py": {
+  "n": 95,
+  "sha": "9d14e1c6fc4c90f8"
+ },
+ "P15_CR_cosmology/P15_the_ratio_is_the_onset_in_imported_units.py": {
+  "n": 119,
+  "sha": "9a9c76ceb9d61854"
+ },
+ "P15_CR_cosmology/P15_the_two_data_are_one.py": {
+  "n": 91,
+  "sha": "8eb25d43d9830dae"
+ },
+ "P15_CR_cosmology/P15_time_reversal_driving.py": {
+  "n": 20,
+  "sha": "dca5c7d3ce72b59e"
+ },
+ "P15_CR_cosmology/P15_two_ranges_ratio.py": {
+  "n": 22,
+  "sha": "98829a2f0e32dd92"
+ },
+ "P15_CR_cosmology/P15_verify_closedS3_nonsync.py": {
+  "n": 60,
+  "sha": "e8ed0db6dd8367ef"
+ },
+ "P15_CR_cosmology/P15_verify_coherence_comb.py": {
+  "n": 20,
+  "sha": "35851ef9bdf0c9fd"
+ },
+ "P15_CR_cosmology/P15_verify_doppler_lowell.py": {
+  "n": 111,
+  "sha": "6a04d608365128ad"
+ },
+ "P15_CR_cosmology/P15_verify_geometry.py": {
+  "n": 9,
+  "sha": "07e6d2d2b0fc46cf"
+ },
+ "P15_CR_cosmology/P15_verify_lowell_boltzmann.py": {
+  "n": 103,
+  "sha": "991fce475d3c56c8"
+ },
+ "P15_CR_cosmology/P15_verify_lowell_exact_measure.py": {
+  "n": 138,
+  "sha": "6b7a2b8f8a39f64f"
+ },
+ "P15_CR_cosmology/P15_verify_lowell_likelihood_v2.py": {
+  "n": 55,
+  "sha": "5055bdaba0b6c677"
+ },
+ "P15_CR_cosmology/P15_verify_numeric.py": {
+  "n": 55,
+  "sha": "d8b9fd030599bf45"
+ },
+ "P15_CR_cosmology/P15_verify_throat_tower.py": {
+  "n": 41,
+  "sha": "6b89c2e69fc656d0"
+ },
+ "P15_CR_cosmology/P15_zonset_determinations.py": {
+  "n": 46,
+  "sha": "17ca51def9bc41af"
+ },
+ "P15_CR_cosmology/PEEB_peebles_on_the_set_rate.py": {
+  "n": 52,
+  "sha": "1da934d807be31ad"
+ },
+ "P15_CR_cosmology/ROBUST_p1p2_scan.py": {
+  "n": 119,
+  "sha": "2de7957acd8c6aa4"
+ },
+ "P15_CR_cosmology/UNC_error_budget.py": {
+  "n": 38,
+  "sha": "55c4cc6c95ca8ede"
+ },
+ "P16_cosmogenesis_paper/CROSSING_no_made_asymmetry.py": {
+  "n": 30,
+  "sha": "522d56de170bcaf8"
+ },
+ "P16_cosmogenesis_paper/P16_Yp_freezeout.py": {
+  "n": 26,
+  "sha": "2c83b1ca08b55311"
+ },
+ "P16_cosmogenesis_paper/P16_cooling_leg_reduction.py": {
+  "n": 104,
+  "sha": "c26167acec672437"
+ },
+ "P16_cosmogenesis_paper/P16_freezeout_trev_toy.py": {
+  "n": 25,
+  "sha": "828b875bfff4a9a8"
+ },
+ "P16_cosmogenesis_paper/P16_nariai_welds.py": {
+  "n": 42,
+  "sha": "bb48fa4b1811ed0a"
+ },
+ "P16_cosmogenesis_paper/P16_peak_temperature.py": {
+  "n": 31,
+  "sha": "5e0a738099082756"
+ },
+ "P16_cosmogenesis_paper/P16_theory_error_and_likelihood.py": {
+  "n": 60,
+  "sha": "39a4c32102d8abb5"
+ },
+ "P16_cosmogenesis_paper/P16_two_mass_blindnesses.py": {
+  "n": 51,
+  "sha": "73f465197c3f7d83"
+ },
+ "P16_cosmogenesis_paper/P16_validate_bbn.py": {
+  "n": 79,
+  "sha": "990d6254c6bdf530"
+ },
+ "P16_cosmogenesis_paper/bbn_network.py": {
+  "n": 64,
+  "sha": "cc94601928e560e1"
+ },
+ "P17_geometric_core_paper/C3_inversion_extends.py": {
+  "n": 30,
+  "sha": "3e28a463a6e62937"
+ },
+ "P17_geometric_core_paper/D1_hinge_duality.py": {
+  "n": 107,
+  "sha": "55ae8aeecf5d3870"
+ },
+ "P17_geometric_core_paper/D3_segre_no_pencil.py": {
+  "n": 76,
+  "sha": "ec46ff1082f71ae4"
+ },
+ "P17_geometric_core_paper/O2_sightline_null_on_lift.py": {
+  "n": 38,
+  "sha": "635346e3e0fbf9f5"
+ },
+ "P17_geometric_core_paper/P17_power_is_null.py": {
+  "n": 85,
+  "sha": "5123785c77032e25"
+ },
+ "P17_geometric_core_paper/P17_power_of_a_point.py": {
+  "n": 78,
+  "sha": "bed78619fc1d7f12"
+ },
+ "P17_geometric_core_paper/P17_qm_S4_vs_S5.py": {
+  "n": 89,
+  "sha": "bc584ff0f211ec46"
+ },
+ "P17_geometric_core_paper/P17_the_alpha_family_is_a_foliation.py": {
+  "n": 66,
+  "sha": "14b59e574c444129"
+ },
+ "P17_geometric_core_paper/P17_the_cut_is_planar_only_at_M_zero.py": {
+  "n": 302,
+  "sha": "18f39fca84b233a1"
+ },
+ "P17_geometric_core_paper/Q1_quadric_polarity.py": {
+  "n": 51,
+  "sha": "ffab67a710adc0a6"
+ },
+ "P17_geometric_core_paper/Q3_cayley_klein.py": {
+  "n": 113,
+  "sha": "d2f576f830a1d6b4"
+ },
+ "P17_geometric_core_paper/Q6r_polar_is_the_background.py": {
+  "n": 24,
+  "sha": "4a18deb00db12127"
+ }
+}
