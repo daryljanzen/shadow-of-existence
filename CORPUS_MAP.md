@@ -170,6 +170,8 @@ look for the OTHER half before looking for new work.***
 span**, while the two that stayed open (`L-240`, `L-803`) are the two needing **a judgement or a number**. ⇒ *"Is
 this a join or a gap?" is worth asking before starting: **a join is an afternoon and a gap is a programme**.*
 
+⌗ ⚠ *And striking `L-210` exposed a **latent scoping bug in `check_arcs` itself**: a `print` sat OUTSIDE its `else`, so a WARN branch reached it with `label` never assigned. ***An `UnboundLocalError` that fires only when a warn precedes an ok — and the strike was the first ordering that produced it.*** Fixed. **A gate is code, and code that has never taken a branch has never been tested on it.***
+
 ⌗ *`THE_WEAVE` brought current with both: the **outside probe's full course** (six findings, **four closed, all by
 paragraphs that NAME what was being answered**) and the **joins** pattern as a fifth mechanism.*
 

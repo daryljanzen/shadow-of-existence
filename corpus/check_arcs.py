@@ -327,8 +327,11 @@ def main():
             print(f'  {lid:>7}  {str(code)[:16]:>16}  {tag:>14}   [WARN] {lag} behind')
         else:
             ok.append(lid)
+            # ** the print below was OUTSIDE this else, so a WARN branch reached it with `label`
+            # never assigned -- a latent UnboundLocalError that only fires when a warn precedes an
+            # ok.  L-210's strike at r2546 was the first ordering that produced it. **
             label = (min(code, key=lambda n: len(n)) if isinstance(code, list) else str(code))
-        print(f'  {lid:>7}  {label[:16]:>16}  {tag:>14}   ok')
+            print(f'  {lid:>7}  {label[:16]:>16}  {tag:>14}   ok')
     print()
     for lid, code, why in fails:
         print(f'  [FAIL] {lid} ({code}): {why}.')
