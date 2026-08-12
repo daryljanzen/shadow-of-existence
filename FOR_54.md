@@ -688,6 +688,35 @@ progenitor route will work for them.*
 
 ---
 
+## ⌗ 32 · THE PROGENITOR-COMPOSITION DERIVATION RESTS ON A MODE CONDITION IT DOES NOT STATE — added r2459
+
+**Where:** `THE_ASSUMPTIONS_RETREATED_UPWARD` (and wherever the derivation lands in the papers) — *"in spherical
+collapse **a small perturbation shares its background's composition**, so the patch's equality is the ambient
+universe's."*
+
+**⌗ THE ALGEBRA:** *patch ratio over background ratio $=(1+\delta_r)/(1+\delta_m)=1+(\delta_r-\delta_m)+O(2)$.*
+⇒ ***So it holds to first order iff $\delta_r\simeq\delta_m$ — which is ADIABATICITY, a statement about the
+perturbation MODE.*** *The passage mentions neither adiabaticity nor isocurvature, and P15/P16's "adiabatic" is a
+**different quantity** — the WKB parameter $C/\mu_n$ of the branch-point filter, and adiabatic compression on the
+infall leg.*
+
+**⚠ AND THE POINT IS SHARPER THAN "AN UNSTATED PREMISE".** *An isocurvature mode **IS** $\delta_r\ne\delta_m$ — a
+**composition** perturbation.* ⇒ ***So the composition derivation assumes the progenitor's perturbation is adiabatic,
+which is exactly the mode content the construction says it INHERITS rather than derives*** *("classical, non-vacuum
+primordial statistics"; "the branch point carries the progenitor tilt").* **The premise is drawn from the very
+sector the construction treats as inherited data.**
+
+**Suggested:** *one clause naming the adiabatic-mode condition where the derivation is made.* ⌗ *Not claimed that
+the assumption is wrong — **adiabatic primordial perturbations are strongly favoured observationally and are the
+standard case** — or that the derivation fails.*
+
+⌗ **AND ONE THING THIS SETTLES IN THE PAPER'S FAVOUR, which is why it was checked:** *the composition ratio
+**contains no $E$ at all** — $E$ enters only through the turnaround radius $R_{\max}=-m/E$.* ⇒ ***So the derivation
+is independent of the LTB energy function's profile, and the homogeneous $E=-\tfrac12$ choice is NOT load-bearing
+for it.*** *(That leaves $E(r)$'s profile as an unspent degree of freedom — see `L-234`.)*
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

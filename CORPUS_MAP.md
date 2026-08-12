@@ -146,6 +146,43 @@ sources: [cowork, chat]
 
 
 
+### Revision r2459 — 2026-08-11 (main line). **`L-234`'s FIRST MOVE — the derived composition is $E$-profile-INDEPENDENT, and it rests on a mode condition the corpus does not state.**
+
+**⌗⌗ THE QUESTION WAS ASKED EXPECTING IT MIGHT CONSUME THE FREE FUNCTION:** *does the derived progenitor
+composition depend on $E$ being constant? "If it does, the homogeneous choice is load-bearing and should be marked
+as one."* ⇒ ***IT DOES NOT.***
+
+*The derivation is "in spherical collapse **a small perturbation shares its background's composition**", and the
+algebra is* $(1+\delta_r)/(1+\delta_m) = 1+(\delta_r-\delta_m)+O(2)$ *—* **so it holds to first order iff
+$\delta_r\simeq\delta_m$, which is ADIABATICITY, a statement about the perturbation MODE** *— and* ***the
+composition ratio contains no $E$ at all***, *since $E$ enters only through the turnaround radius
+$R_{\max}=-m/E$.*
+
+⇒ ⛭⛭ **SO THE HOMOGENEOUS CHOICE IS NOT LOAD-BEARING, AND $E(r)$'s PROFILE SURVIVES AS AN UNSPENT DEGREE OF
+FREEDOM** *— confirmed **available** to the progenitor route that r2456 left as the only remaining one for $A_s$ and
+$n_s$.* ⌗ ***A question asked to close a possibility, and it opened it instead — which is what asking rather than
+assuming buys.***
+
+**⌗⌗ AND A SECOND FINDING FELL OUT THAT WAS NOT SOUGHT, routed as item 32.** *The mode condition is **not stated
+where the derivation is made**: the passage mentions neither adiabaticity nor isocurvature, and* **P15/P16's
+"adiabatic" is a DIFFERENT quantity** *— the WKB parameter $C/\mu_n$ of the branch-point filter, and adiabatic
+compression on the infall leg.*
+⚠ ***AND THE POINT IS SHARPER THAN "AN UNSTATED PREMISE": an isocurvature mode IS $\delta_r\ne\delta_m$ — a
+COMPOSITION perturbation.*** ⇒ **So the composition derivation assumes the progenitor's perturbation is adiabatic,
+which is exactly the mode content the construction says it INHERITS rather than derives** *("classical, non-vacuum
+primordial statistics"; "the branch point carries the progenitor tilt").* ***The premise is drawn from the very
+sector treated as inherited data.***
+
+⌗ *Not claimed that the assumption is wrong — **adiabatic primordial perturbations are strongly favoured
+observationally and are the standard case** — or that the derivation fails. Only that it is a **mode condition**,
+**unstated at the point of use**, and **borrowed from the inherited sector**.*
+
+⌗⌗ ***SIX RUNS NOW, AND THE SIXTH IS THE ONE THAT ANSWERED A QUESTION THIS LINE POSED ITSELF ONE REVISION EARLIER —
+so the procedure compounds rather than merely enumerating.*** *`L-234`'s live question is now: **what would a
+varying $E(r)$ have to look like to carry a spectrum, and does anything in the construction constrain it?***
+
+**Register: 227 rows. Gates: twenty-one, twenty-one rc=0. `FOR_54`: twenty-one live items.**
+
 ### Revision r2458 — 2026-08-11 (main line). **`L-211`'s FIFTH RUN — the progenitor's second free function: its SIGN is forced, its PROFILE is a choice, and the profile is where the corpus's own open question would have to be answered.**
 
 **⌗⌗ `L-207`'s EXHIBITION NAMED TWO FREE FUNCTIONS. FOLLOWING THEM INTO P16.**
