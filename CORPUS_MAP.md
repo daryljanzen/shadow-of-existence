@@ -146,6 +146,42 @@ sources: [cowork, chat]
 
 
 
+### Revision r2456 — 2026-08-11 (main line). **`L-211` RUN A THIRD TIME, ON `L-150`'s CLOSURE — P15's three owed derivations are ONE closed boundary, three times.**
+
+**⌗⌗ THE ADJACENT GAP WAS IN THE NEXT CLAUSE OF THE SAME SENTENCE, and nobody had joined them.** *P15 `sec:scope`
+lists what it owes: **"the DERIVATION — as against the measurement — of $A_s$, $n_s$, and the inherited datum the
+composition is run on."** `L-150` closed the third item at r2433.*
+
+⇒ ***AND ITS ARGUMENT REACHES ALL THREE, because all three are DIMENSIONLESS MAGNITUDES*** *— and a dimensionless
+magnitude needs two invariants while the substrate has one by construction.*
+*· **$A_s$**, and `prop:amplitude` already says so in the paper's own voice: the substrate's vacuum power is
+$\sim10^{-122}$ against the observed $2\times10^{-9}$, **"smaller by $\sim10^{113}$"**;*
+*· **$n_s$**, and `sec:predictions` says it too: **"the branch point carries the progenitor tilt"**, and does not
+drive $n_s\to1$ by any inflationary attractor — **inherited, not generated**;*
+*· **$\rho_r/\rho_m$**, closed in the negative.*
+
+**⇒⇒ SO THE LIST IS NOT THREE OPEN ITEMS. IT IS ONE CLOSED ONE, THREE TIMES.** ⌗ *And the corpus had **every piece**
+— `prop:amplitude`'s $10^{113}$, the transmission character, the one-constant theorem — **in three sections, never
+joined**. The same collapse `L-200` underwent when its two halves turned out to be one argument.* *Routed as item
+31.*
+
+**⚠ AND THE DISTINCTION THAT KEEPS THIS A NARROWING RATHER THAN A SWEEP:** ***"cannot be derived FROM THE SUBSTRATE"
+is not "cannot be derived at all."*** *The progenitor is a physical system with its own dynamics, and* **the corpus
+has already walked that route once** *— `THE_ASSUMPTIONS_RETREATED_UPWARD` carries the progenitor's composition
+**derived**: $(\rho_r/\rho_m)_{\max}\simeq7.3\times10^{-4}$, turnaround $z\simeq1.5$, mass $4.3\times10^{52}$ kg.*
+⇒ **The substrate route is closed; the progenitor route is open and has been walked.**
+
+**⌗ AND ONE CHECK IN THIS LINE'S OWN RECEIPT FAILED FIRST, for the twelfth-variant reason.** *It looked for the
+progenitor composition **in `THE_LIVE_ARC`** — this line's own summary — rather than in the capstone that carries
+it.* ⇒ ***Pointing a check at a summary instead of at the source is the same error as reading an instrument's
+surface for its behaviour.*** *Repointed; the check passes against `THE_ASSUMPTIONS_RETREATED_UPWARD`.*
+
+⌗ ***THREE RUNS, THREE RESULTS: r2454 withdrew a routed item, r2455 relocated a frontier, r2456 collapsed a
+three-item debt into one closed boundary.*** **A triggered front has now outperformed an enumerated one three times
+in three revisions.**
+
+**Register: 226 rows. Gates: twenty-one, twenty-one rc=0. `FOR_54`: nineteen live items.**
+
 ### Revision r2455 — 2026-08-11 (main line). **`L-211` RUN ON `L-213`'s CLOSURE — the venue question for colour DISSOLVES, and what remains is curvature.**
 
 **⌗⌗ THE PROCEDURE, run a second time in two revisions, and it delivered again.** *`L-211`: "when a gap closes, the

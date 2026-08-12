@@ -657,6 +657,37 @@ add `COMPUTES:` headers to your receipts.***
 
 ---
 
+## ⛭⛭ 31 · P15's THREE OWED DERIVATIONS ARE ONE CLOSED BOUNDARY, THREE TIMES — added r2456
+
+**Where:** `corpus/CR_cosmology.tex`, `sec:scope`: *"the **derivation** — as against the measurement — of $A_s$,
+$n_s$, **and the inherited datum** the composition is run on."*
+
+**⌗ `L-150` CLOSED THE THIRD ITEM AT r2433, AND ITS ARGUMENT REACHES ALL THREE** *— because all three are
+**dimensionless magnitudes**, and a dimensionless magnitude needs two invariants while the substrate has one.*
+*· **$A_s$** — and `prop:amplitude` already says so in your own voice: the substrate's vacuum power is
+$\sim10^{-122}$ against the observed $2\times10^{-9}$, **"smaller by $\sim10^{113}$"**;*
+*· **$n_s$** — and `sec:predictions` already says so too: **"the branch point carries the progenitor tilt"**,
+inherited rather than generated;*
+*· **$\rho_r/\rho_m$** — closed in the negative, routed as item 18.*
+
+⇒ ***SO THE LIST IS NOT THREE OPEN ITEMS. IT IS ONE CLOSED ONE, THREE TIMES.*** ⌗ **And the corpus had every piece
+— `prop:amplitude`'s $10^{113}$, the transmission character, the one-constant theorem — in three sections, never
+joined.** *The same collapse `L-200` underwent when its two halves turned out to be one argument.*
+
+**⚠ AND THE DISTINCTION THAT MAKES THIS A NARROWING AND NOT A SWEEP, which any rewrite must keep:**
+***"cannot be derived FROM THE SUBSTRATE" is not "cannot be derived at all."*** *The progenitor is a physical system
+with its own dynamics, and* **the corpus has already walked that route once** *— `THE_ASSUMPTIONS_RETREATED_UPWARD`
+carries the progenitor's composition **derived**: $(\rho_r/\rho_m)_{\max}\simeq7.3\times10^{-4}$, turnaround
+$z\simeq1.5$, mass $4.3\times10^{52}$ kg.* ⇒ **The substrate route is closed; the progenitor route is open and has
+been walked.**
+
+**Suggested:** *`sec:scope`'s list restated as **one boundary with three instances**, the substrate half closed with
+its reason and the progenitor half named as the live route.* ⚠ ***Your paper, your call. Routed, not landed.***
+⌗ *Not claimed: that $A_s$ or $n_s$ have been derived from the progenitor — **they have not** — or that the
+progenitor route will work for them.*
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*
