@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.204 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**10 open QUESTIONS · 3 open WORK rows** *(255 struck of 268 registered).*
+**11 open QUESTIONS · 3 open WORK rows** *(255 struck of 269 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -29,6 +29,7 @@ sources: [cowork]
 | **`L-217`** | — | REGISTERED r2412 — R-P STATION ⑥h: HOW DO CR AND THE HIGGS MECHANISM COMPLEMENT EACH OTHER, in coherence and in correspondence? Daryl's question, and it is a genuine gap in the entry-point front's own sense: the word "Higgs" appears NOWHERE in the corpus (chec… | `THE_PHYSICS_REACH` ⑥h · P13 · P14 · `L-212` · the one-constant theorem | the statement exists — `CR_AND_THE_HIGGS.md` §4 · what the row still owes is §5's onward list, and `F1` stays live: the relation breaks if the gauge g… |
 | **`L-240`** | — | REGISTERED r2515 — A LEAD DARYL FOUND: THE CORPUS HOLDS TWO HALVES OF A CONNECTION IT HAS NEVER JOINED, AND THE JOIN LANDS ON `PO-9`. He asked whether r2514's "the constraint is CONSERVED, not re-imposed" touches the second-order-EFE reason for a vanishing cov… | `receipts/L175_dimensional_descent/N1…` · `L-175` · P11 · P12 · HKT 1976 | the interior is charted r2518; what remains is the DECISION it turns on: is uniqueness of the leaf's dynamics a desideratum this programme holds? — be… |
 | **`L-803`** | — | REGISTERED r2541 — cc54 WALKED R-P STATION ⑨ (the last unrun station, and the computational one): THE COSMOLOGY/NUCLEAR SECTOR RESTS ON $N_{\rm eff}$ AT BOTH ENDS AND NEVER NAMES IT. Station ⑨ (`P7`/`P15`/`P16` — BBN, recombination, the acoustic scale) is cc54… | `receipts/L803_station9_neff/S1…` · `THE_PHYSICS_REACH` ⑨ · `L-221` · P16 `sec:network` · P15 | the paragraph is still owed and its SHAPE is settled r2545 — route to 54: name $N_{\rm eff}$, state that CR fixes the $\nu_R$'s place and not its coup… |
+| **`L-804`** | — | REGISTERED r2548 — cc54's FIRST ARRIVAL-PATH FINDING SETTLED BY A NUMBER: THE ISOCURVATURE BOUND POINTED AT ITEM 32's ADIABATIC PREMISE, AND THE PREMISE IS WHAT THE SKY DEMANDS. The CMB literature's standard objection to any non-inflationary coherence mechanis… | `receipts/L804_isocurvature_bound/S1…` · `FOR_54` 32 · `L-202` · P16 `sec:overview` · Planck 2018 X | the paragraph is 54's to place: premise meets objection — state that the adiabatic premise is what the CMB forces ($\Delta\chi^2\sim3\times10^5$ again… |
 
 ## ⌗ WORK — programmes with steps; the content lives in `CONSOLIDATE`
 
