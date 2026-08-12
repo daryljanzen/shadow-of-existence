@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.186 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**14 open QUESTIONS · 31 open WORK rows · 1 OBSERVED · 1 HELD** *(181 struck of 228 registered).*
+**15 open QUESTIONS · 31 open WORK rows · 1 OBSERVED · 1 HELD** *(181 struck of 229 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -33,6 +33,7 @@ sources: [cowork]
 | **`L-217`** | — | REGISTERED r2412 — R-P STATION ⑥h: HOW DO CR AND THE HIGGS MECHANISM COMPLEMENT EACH OTHER, in coherence and in correspondence? Daryl's question, and it is a genuine gap in the entry-point front's own sense: the word "Higgs" appears NOWHERE in the corpus (chec… | `THE_PHYSICS_REACH` ⑥h · P13 · P14 · `L-212` · the one-constant theorem | state the relation in one place: what CR supplies, what it takes as given, what it forbids itself from supplying, and where the two sectors' claims ac… |
 | **`L-232`** | — | REGISTERED AND STRUCK r2449 — `check_currency` IS GREEN, and it had never been. Twenty-one gates; this was the one that had never passed. Twenty-four documents stood stale. AND IT WAS NOT A MARKER SWEEP: FOURTEEN OF THE TWENTY-FOUR HELD REAL MISSED LANDINGS. T… | `check_currency` · fourteen documents · `THE_HUB` | — |
 | **`L-235`** | — | REGISTERED AND STRUCK r2462 — THE ADVERSARIAL CHECK c54.186 ASKED FOR, AND THE DISCRIMINATOR WAS ALREADY IN THE FORK'S OWN FILE. The fork wrote, against itself: "$\ell_1/\ell_A=0.5703$ has not moved across EIGHT instrument states, which is evidence either of a… | `FOR_54` 33 · `L-147` · c54.186's `P15_the_control_entered_the_regime…` | the fork's remaining self-stated caveat is now the sharpest item on front #2: $1.18$ is not a fit, and the 17% above a true $\Lambda$CDM's 1.01 is unn… |
+| **`L-236`** | — | REGISTERED AND STRUCK r2469 — A RECURRING DEBT TURNED INTO A VIEW, after paying it twice. `check_grains` failed on `THE_PLAN` and `THE_OPEN_PROBLEMS_LEDGER` three times: r2440, r2445 (hand-written currency block naming the rows moved since r2417), and r2468 — … | `scripts/regen_grain_currency.py` · `THE_ARSENAL` · `ARC 17` · `L-227` | the hand prose half is now the standing debt, and it is visible rather than recurring |
 
 ## 👁 OBSERVED — measured here, being worked by the FORK
 

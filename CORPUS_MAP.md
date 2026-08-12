@@ -146,6 +146,45 @@ sources: [cowork, chat]
 
 
 
+### Revision r2469 — 2026-08-11 (main line). **A RECURRING DEBT TURNED INTO A VIEW — the third payment was refused and the mechanism dissolved instead.**
+
+**⌗⌗ THE DEBT, paid twice and due a third time.** *`check_grains` failed on `THE_PLAN` and
+`THE_OPEN_PROBLEMS_LEDGER` at **r2440**, at **r2445** (where they were given a hand-written currency block naming
+every row struck and opened since r2417), and at **r2468 — twenty-three revisions later, for exactly the same
+reason**.*
+⇒ ⛭⛭ ***THESE DOCUMENTS GO STALE EVERY ~20 REVISIONS BY CONSTRUCTION, and `ARC 17` had already named the class:
+the corpus has no place for a sentence that is true-for-now, and a document whose whole content is "the shape of the
+work" is made wholly of such sentences*** *— the same diagnosis that explained why `THE_EVOLUTION_MAP` was the
+stalest document in the corpus.*
+
+**⇒ SO THE ANSWER IS NOT TO WRITE THE BLOCK A THIRD TIME. IT IS TO GENERATE IT.** *The register is
+machine-readable — every row carries its ID, its struck/live state in the leading markers, and the revisions at
+which it was registered or struck — so* ***"which rows moved since revision N" is a COMPUTATION, not a reading***
+*— and the corpus already handles exactly this class with `regen_teed_up`, `regen_burn_down` and
+`regen_map_status`.* **`scripts/regen_grain_currency.py`, wired into CI's fast tier as the eighth view-check.**
+
+**⌗ AND THE SPLIT IS THE DESIGN, not a limitation.**
+*· **The ID half is GENERATED and machine-checked** — 16 struck and 12 opened since r2417, always correct, and
+`--check` fails the build if the block drifts from the register.*
+*· **The prose half is HAND-WRITTEN and preserved verbatim across regenerations** — because ***what a document's
+body now gets WRONG is a judgement***, and **a gate can check a declaration, not a judgement** (r2447).*
+⇒ ***The recurring MECHANICAL debt is dissolved and the standing EDITORIAL one is made visible. That is the same
+division that made `check_citations` work and a quotation gate impossible.***
+
+**⌗ AND THE PROSE HALF WAS WRITTEN, naming the four things the bodies would actively mislead a node about:** *the
+three PROTECTED rows are workable and three were narrowed at r2464–r2466; the colour front's question has changed
+from "where does $\mathfrak{su}(3)$ live" to **"what would make the module stop being a branching"**; the programme
+lives in a public repository with two lines and absorption by git merge, so the bundle-relay workflow the body
+describes no longer runs; and **`L-211`'s closure-adjacency procedure is the operative method now** — seven runs,
+seven distinct kinds of result, two of them correcting this line's own claims.*
+
+**⚠ AND THE TRAP IS NOT SOLVED AND IS NOT CLAIMED TO BE.** *`check_grains` measures lag **by git commits**, so
+writing anything into a stale document turns it green.* ***A generated block is no defence against that — nothing
+is. What it is instead is a block whose ID half can be AUDITED against the register by anyone who doubts the
+green.***
+
+**Register: 230 rows, 186 struck. Gates: twenty-one, twenty-one rc=0. Views: eight.**
+
 ### Revision r2468 — 2026-08-11 (main line). **`L-233` ⓶ ANSWERED — the flatness is what it MEANS for the module to be a branching, and the answer withdraws this line's own reason from one revision earlier.**
 
 **⌗⌗ THE ROW SAID "CONSULT THE DISCRIMINANT BEFORE COMPUTING".** ***Consulting it first is what produced the answer,

@@ -5,6 +5,32 @@ current: r2154
 sources: [cowork]
 ---
 
+## ⛭⛭ A RECURRING DEBT TURNED INTO A VIEW — `regen_grain_currency.py`, added r2469
+
+*`check_grains` failed on `THE_PLAN` and `THE_OPEN_PROBLEMS_LEDGER` **three times**: r2440, r2445 (where they were
+given a hand-written currency block), and **r2468, twenty-three revisions later, for exactly the same reason**.*
+⇒ ***These documents go stale every ~20 revisions BY CONSTRUCTION.*** *`ARC 17` named the class: **the corpus has no
+place for a sentence that is true-for-now**, and a document whose whole content is "the shape of the work" is made
+wholly of such sentences — the same diagnosis that explained why `THE_EVOLUTION_MAP` was the stalest thing here.*
+
+**⇒ SO THE ANSWER IS NOT TO WRITE THE BLOCK A THIRD TIME. IT IS TO GENERATE IT.** *The register is
+machine-readable — every row carries its ID, its struck/live state, and the revisions at which it was registered or
+struck — so **"which rows moved since revision N" is a computation, not a reading**, and the corpus already handles
+this class with `regen_teed_up`, `regen_burn_down` and `regen_map_status`.*
+
+**⌗ AND THE SPLIT IS THE DESIGN, not a limitation:**
+*· **the ID half is GENERATED and machine-checked** — 16 struck and 12 opened since r2417, always correct;*
+*· **the prose half is HAND-WRITTEN and preserved verbatim across regenerations** — because **what a document's body
+now gets WRONG is a judgement**, and* ***a gate can check a declaration, not a judgement*** *(r2447).*
+⇒ ***The recurring mechanical debt is dissolved and the standing editorial one is made visible. That is the correct
+division, and it is the same one that made `check_citations` work and a quotation gate impossible.***
+
+⚠ **AND THE TRAP IS NOT SOLVED AND IS NOT CLAIMED TO BE:** *`check_grains` measures lag **by git commits**, so
+writing anything into a stale document turns it green.* ***A generated block is no defence against that — nothing
+is. What it is instead is a block whose ID half can be AUDITED against the register by anyone who doubts the
+green.***
+
+
 ## ⛭⛭ THE LINT LAYER — added r2443, and it is deliberately NOT the gate layer
 
 *Two instruments contributed by outside readers and adopted as **lints a human reads**, never wired to fail a

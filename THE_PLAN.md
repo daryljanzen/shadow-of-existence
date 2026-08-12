@@ -5,6 +5,44 @@ current: c54.181
 job: The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance
 ---
 
+<!-- GRAIN-CURRENCY:BEGIN -->
+
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r2469
+
+> ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
+>
+> **⌗ NOT COVERED — STRUCK since r2417 (17 rows):**
+> `L-200` `L-201` `L-211` `L-213` `L-214` `L-215` `L-223` `L-224` `L-225` `L-227` `L-229` `L-231` `L-232` `L-233` `L-234` `L-235` `L-236`
+>
+> **⌗ NOT COVERED — OPENED since r2417 (12 rows):**
+> `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234`
+>
+> ⌗ ***The ID half is machine-checked against the register; run `regen_grain_currency.py --check`. The prose half below is a JUDGEMENT and is written by hand — the script preserves it verbatim and never invents it, because a gate can check a declaration and not a judgement.***
+
+<!-- GRAIN-CURRENCY:PROSE -->
+> **⌗ AND THE FOUR THINGS THE BODY WOULD ACTIVELY MISLEAD A NODE ABOUT — written by hand r2469, because
+> this half is a judgement and the script will not invent it.**
+>
+> *· **The three PROTECTED rows are not untouchable and three of them have been worked.** `PROTECTED_OPEN`
+> means **a node may not CLOSE**, not may not touch — "a node may write a bounded negative". PO-5, PO-6 and
+> PO-9 were all narrowed at r2464–r2466, and **all three had a concrete next step written in their own rows
+> the whole time**.*
+> *· **The colour front has moved and its question has changed.** Not "where does $\mathfrak{su}(3)$ live" —
+> it is **selected** by the wall monodromy, and the compact face is priced as an ADD — but ***"what would make
+> the module stop being a branching"***, since **a covering map is flat by definition** and that is why the
+> construction supplies no force (`L-233`, r2468).*
+> *· **The programme lives in a public repository with two lines working it**, `THE_HUB` is the arrival
+> document, the ID bands are declared, and **absorption happens by git merge** — the bundle-relay workflow the
+> body describes no longer runs.*
+> *· **And `L-211`'s closure-adjacency procedure is the operative method now**: after a closure, read the gaps
+> in the papers it touches. **Seven runs, seven distinct kinds of result**, including two that corrected this
+> line's own claims. ***A triggered front has outperformed the enumerated ones it sits beside.****
+>
+> ⌗ *Everything else in the body stands: the lanes, the standing orders, and the physics fronts are what they
+> were.*
+
+<!-- GRAIN-CURRENCY:END -->
+
 ## ⌗⌗⌗ CURRENCY, r2444 / r2376+c54.185 — **what this document does NOT cover, DECLARED AS A CHECKABLE LIST**
 
 > ⚠ **THE BODY BELOW STOPS BEFORE r2417 AND TWENTY-SEVEN REVISIONS HAVE LANDED SINCE.** *Read this head before the
