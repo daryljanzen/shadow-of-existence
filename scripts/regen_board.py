@@ -77,6 +77,12 @@ LEADS = {
    "Killing vectors buy 1-of-2, and the dark interior is **how the transverse 2-plane turns over the leaf**, "
    "not which of a five-dimensional family",
    ['L-165','L-175'], 3, 2),
+ 'L-511': ("**two objects, one word**: Goldberg--Sachs governs the **optical** shear of a null congruence "
+   "(2 real, an invariant); `I3`'s $\\sigma_{ij}$ is the **ADM** shear of a leaf (5 real, foliation-bound). "
+   "Schwarzschild is Type D in every slicing while its leaf shear is $0$ on static slices and $3M/r^3$ on "
+   "Painlev\u00e9--Gullstrand ones \u2014 and the whole difference is longitudinal, so **both r2505 and "
+   "`L-510` stand and neither answers the other**",
+   ['L-165','L-175'], 3, 2),
  'L-204': ("R-P stations \u2462\u2463 \u2014 P8/P9, GR field equations and the exact-solution catalogue",
    ['L-165','L-175'], 3, 2),
  'L-217': ("the CR/Higgs relation is stated; **`F1` stays live \u2014 the relation breaks if the gauge group is "

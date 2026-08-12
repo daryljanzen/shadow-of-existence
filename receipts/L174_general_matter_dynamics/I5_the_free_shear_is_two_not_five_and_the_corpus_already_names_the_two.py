@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""I4 -- ** THE UNWORKED STRATUM'S FREE SHEAR IS TWO COMPONENTS, NOT FIVE.  THE MOMENTUM CONSTRAINT --
+"""I5 -- ** THE UNWORKED STRATUM'S FREE SHEAR IS TWO COMPONENTS, NOT FIVE.  THE MOMENTUM CONSTRAINT --
 WHICH I3 WRITES DOWN TWO LINES ABOVE THE CLAIM -- FIXES THREE OF THE FIVE, AND P9 ALREADY NAMES THE
 REMAINING TWO IN ITS OWN VOICE: "THE GRAVITON'S TWO PROPAGATING POLARIZATIONS." **
 
@@ -98,7 +98,7 @@ direction, not the vanishing of the transverse freedom, and PART 4 is what keeps
 SETTINGS: none -- no instrument, no spectra.  Symbolic (sympy) and finite-dimensional linear algebra
 (numpy/scipy) only, plus two string checks against the corpus's own .tex.
 
-rc=0 on success.  Run: python3 I4_the_free_shear_is_two_not_five_and_the_corpus_already_names_the_two.py
+rc=0 on success.  Run: python3 I5_the_free_shear_is_two_not_five_and_the_corpus_already_names_the_two.py
                         (sympy numpy scipy; ~5 s)
 """
 import os
@@ -284,7 +284,7 @@ assert re.search(r"onset of free gravitational radiation", p9, re.I), \
     "P9 does not call the wall the onset of free radiation"
 assert ns.shape[1] == 2 and _is_plus_cross, \
     "the TT space at a pinned propagation direction is not the plus/cross pair"
-print(f"GATE c54.198 (r2504), `L-510`: the ADM identity holds with no symmetry; the momentum "
+print(f"GATE c54.199 (r2508), `L-510`: the ADM identity holds with no symmetry; the momentum "
       f"constraint owns 3 of 5 shear components at every wavevector tested, leaving "
       f"{_results[0][1]} orthogonally; P9 names those two as the graviton's polarizations and the "
       f"wall as their onset; and the pinned-direction TT space is exactly plus/cross, so the "

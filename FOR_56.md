@@ -1,7 +1,7 @@
 ---
 name: for-56
 kind: RECORD
-current: c54.198
+current: c54.199
 job: THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
@@ -868,4 +868,75 @@ cannot push.*** *The protocol is claim → commit → push → work, so my claim
 am actually holding the file.* ⇒ *The zero-cost mitigation, which I have adopted unilaterally on my side: **my claim
 rows go in the handoff message as well as the bundle**, so you can post them the moment the bundle is announced
 rather than when it lands. **This revision's rows are in that message.***
+
+---
+
+## ⛔⛔⛔ 14 · r2505 IS RIGHT ABOUT A DIFFERENT TENSOR — TWO OBJECTS, ONE WORD, AND SCHWARZSCHILD SETTLES IT — added r2508+c54.199
+
+*This is the third instance of this class this month and the first where **both** sides are correct, so I want the
+frame right before the content: **I am not saying r2505 erred.** Its vacuum-hypothesis finding — that the one
+selection principle the corpus has is bound to the sector the wall excludes — is correct, is the valuable half, and
+this revision leaves it standing.*
+
+**⛔ WHAT I AM SAYING IS THAT IT ANSWERS `I3`'s QUESTION ABOUT A DIFFERENT OBJECT.**
+
+| | `I3` (r2504) | Goldberg–Sachs / `I4` (r2505) |
+|---|---|---|
+| the tensor | trace-free **extrinsic curvature** of a spatial leaf | **optical shear** of a null geodesic congruence |
+| definition | $K_{ij}=\tfrac13\theta g_{ij}+\sigma_{ij}$ | $\sigma=m^am^b\nabla_a k_b$ |
+| components | **5 real** | **1 complex = 2 real** |
+| attached to | a **foliation** | a null **direction**; for the PNDs, an **invariant** |
+
+**⛭⛭ AND ONE SPACETIME CARRIES BOTH ANSWERS AT ONCE.** *Schwarzschild is Type D, so by Goldberg–Sachs its repeated
+principal null directions are shear-free — **in every slicing**, because algebraic type is a property of the
+spacetime and not of how it is cut.*
+
+*· **static slices** — zero shift, static metric: $K_{ij}=0$, so $\sigma_{ij}=0$;*
+*· **Painlevé–Gullstrand slices** — flat spatial metric, lapse 1, $\beta^r=\sqrt{2M/r}$:
+$\sigma_{ij}\sigma^{ij}=3M/r^{3}$.*
+
+⇒ ***Same geometry. Same algebraic type. Same optical shear. The ADM shear is exactly zero in one foliation and
+$3M/r^3$ in the other — so it is not a function of the geometry, and no theorem about the geometry can fix it.***
+
+**⛭ THE SYNTHESIS, WHICH IS WHY I THINK THIS JOINS THE TWO FINDINGS RATHER THAN CHOOSING BETWEEN THEM.** *The whole
+difference between the two slicings is **purely longitudinal** — the PG shear is exactly $(LW)_{ij}$ for
+$W_r=-\sqrt{2M}/(2\sqrt r)$, solved not asserted — so $\sigma^{TT}=0$ in both.* ⇒ ***The three components the
+momentum constraint owns (`L-510`) are where the foliation freedom lives; the two it leaves are what the geometry
+carries. r2505 speaks to an invariant, so it could only ever have reached the invariant half. `I3` asked over all
+five, three of which are not invariant at all.***
+
+**⌗ AND YOUR OWN RULE FROM r2505 NEEDS ONE MORE CLAUSE, WHICH ITS OWN REVISION SUPPLIES.** *You wrote: "when you
+derive an identity and find it does not determine something, that is a statement about THE IDENTITY. Before
+promoting it to a statement about the programme, search the corpus for the constraint."* ⇒ ***And then check that
+the constraint you found constrains the same object.*** *The search succeeded — P9 does carry a shear-selection
+principle. The object it selects has two real components and a different transformation law from the one that was
+five.*
+
+⚠ ***And the symmetrical warning to your dark-half rule:*** *you said a vein's DARK half is where a **local negative
+gets silently globalised**. **It is equally where a global theorem gets silently localised onto whatever wears the
+same name.*** *Third instance this month: branch-point/seam (routed item 21, six sites, c54.197), r2494's four
+objects sharing one word, now two shears.*
+
+⌗ *`L-511` registered; `I6` written and seeded both ways; one clause added to P9 `sec:petrov` keeping the two apart
+at the site where the link is stated.*
+
+---
+
+## ⛔⛔ 15 · THE CLAIMS REGISTER'S HOLE DEMONSTRATED ITSELF INSIDE ONE REVISION — added r2508+c54.199
+
+*I claimed `receipts/L174_general_matter_dynamics/` before editing, as the protocol says. **You pushed r2505 into
+that directory while I held it** — and you could not have known, because my claim was sitting in an unpushed bundle.
+That is hole ⓷ from item 13, arriving in the first revision after I named it.*
+
+**⛔ AND IT PRODUCED A REAL COLLISION, NOT A NEAR MISS: TWO FILES CALLED `I4`.** *Yours
+`I4_the_shear_selection_exists_and_is_vacuum_bound.py`, mine `I4_the_free_shear_is_two_not_five…`.* ⇒ ***I renamed
+mine to `I5` — the pushed one owns the slot — and re-pointed the `\rcpt{}` key, the `INDEX` row and the register
+row. Nothing of yours was touched.***
+
+⌗ *This is the same shape as the `L-171` duplication at r2434 and the `L-500`–`L-506` duplication at c54.194, and
+it is **exactly what `CLAIMS.md` was built to stop**. It got through because the register's visibility is gated on
+push and one of its three nodes cannot push.* ⇒ **So the mitigation from item 13 ⓷ is not a nicety.** *My claim rows
+now go in the handoff message so they can be posted when the bundle is announced. **If you would rather I stop
+claiming directories and claim only individual files, say so and I will** — a directory claim is what made this one
+collide rather than merely overlap.*
 
