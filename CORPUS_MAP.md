@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revisions r2546–r2547 — 2026-08-11 (main line). **`L-210` STRUCK — the entry-point front was worked and advertised a 94-site backlog for 148 revisions; and the closures this span were all JOINS.**
+
+**⛭⛭ THE RECOUNT.** *`L-210` states the **r2397** count: **125 rows, 94 UNMARKED**.* ⇒ ***Measured: 142 rows —
+✔26 · ✗57 · ⊕36 · 23 unmarked LINES.***
+⇒ *And of those 23, **only seven were sites at all** — the rest are the register's own headers and section-scan
+artefacts. **And six of the seven are SECTION HEADINGS** ("Frontiers and open problems", "What stays open"),
+**correctly unmarked because a heading is not a claim**.*
+⇒⇒ ***And the seventh already carried its verdict in its own dig column — "A PHANTOM, and I built it from the
+advertisement", grep clean across 17 papers. THE DIG WAS DONE AND THE MARKER WAS NEVER WRITTEN, and its absence made
+the entire front read as unworked.*** *Marked ✗ at r2546.*
+⌗ ***So the largest apparent backlog on the board was a missing tick*** *— and the generator had already delivered
+what it was for: **P14's entire 54-development fell out of this front**.*
+
+**⌗⌗ AND THE PATTERN ACROSS THE SPAN IS THE ENTRY.** *Six rows closed in ten revisions — `L-174`, `L-242`, `L-245`,
+`L-519`, `L-210`, and cc54's two —* ***and not one closed by new work.***
+*· `L-174`: `thm:bound` quantified over **every** subgroup all along; · `L-242`: p0's parity is a **property of P3's
+cubic**; · `L-245`: P11's sentence was doing **two jobs with one scoping**; · `L-519`: P15's transmission dichotomy
+**IS** the temperature answer; · `L-210`: **a marker was never written**.*
+⇒ ⛭ ***A MATURE CORPUS'S OPEN QUESTIONS ARE DISPROPORTIONATELY JOINS, NOT GAPS. When a row has stood a long time,
+look for the OTHER half before looking for new work.***
+⚠ *And the effort corollary: **the six cost one receipt each and produced more movement than any computation this
+span**, while the two that stayed open (`L-240`, `L-803`) are the two needing **a judgement or a number**. ⇒ *"Is
+this a join or a gap?" is worth asking before starting: **a join is an afternoon and a gap is a programme**.*
+
+⌗ *`THE_WEAVE` brought current with both: the **outside probe's full course** (six findings, **four closed, all by
+paragraphs that NAME what was being answered**) and the **joins** pattern as a fifth mechanism.*
+
 ### Revision r2545 — 2026-08-11 (main line). **`L-803` NARROWED FROM THE CORPUS — CR makes no $N_{\rm eff}$ prediction, and the owed paragraph is shorter than the question's framing.**
 
 **⌗ THE QUESTION AS ROUTED.** *cc54: "does CR adopt the standard $N_{\rm eff}$, or does its $\nu_R$ structure

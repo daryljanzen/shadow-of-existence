@@ -113,7 +113,6 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 
 | row | last worked | what its own row says to do next |
 |---|---|---|
-| **`L-210`** | r2402 | work the unmarked sites **one at a time and without rushing**, giving each a verdict marker; the dig is mechanical and re-runnable, **the verdict neve |
 | **`L-228`** | r2440 | extend to the possessive and compound-noun forms the contributor attempted, left unapplied, and **declined to claim precision for** |
 | **`L-207`** | r2450 | ⓵ ✔ **DISCHARGED r2450 — exhibited, not merely asserted** · ⓶ nothing until `PO-6` moves |
 | **`L-202`** | r2457 | **narrowed twice, still open and still do-not-assert both ways** · the live question is now: **does a MASSIVE trajectory carry a phase?** — the null o |
@@ -128,7 +127,7 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-221`** | r2526 | **the question is INVERTED r2526**: not "is there an $R$-odd operator?" but ***what BRIDGE from grading to field exists that is not "be a kernel"?***  |
 | **`L-803`** | r2545 | **the paragraph is still owed and its SHAPE is settled r2545** — route to 54: ***name $N_{\rm eff}$, state that CR fixes the $\nu_R$'s place and not i |
 
-*14 live rows carry a stated next step; the 14 longest-unworked are shown.*
+*13 live rows carry a stated next step; the 13 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session

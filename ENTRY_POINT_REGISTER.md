@@ -2,8 +2,27 @@
 name: entry-point-register
 job: What does the corpus advertise as open, in its own words? Read BEFORE BELIEVING A GAP.
 class: whole-corpus-instrument
-current: r2517+c54.201
+current: r2546+c54.204
 ---
+
+## ⛭⛭⛭ RECOUNTED r2546 — the front is worked, and the count it advertised was 148 revisions stale
+
+*`L-210` states the r2397 count: **125 rows, 94 UNMARKED**.* ⇒ **Measured r2546: *142 rows — ✔26 · ✗56 · ⊕36 · 24
+unmarked LINES*.**
+
+⇒ ***And of those 24, only SEVEN are sites at all*** *— the rest are this register's own table headers and
+section-scan artefacts (`| § | kw | the paper's own words |`).* ⌗ ***And FIVE of the seven are SECTION HEADINGS***
+*— "Frontiers and open problems", "What stays open" — **correctly unmarked, because a heading is not a claim**; they
+are this file's index of where a paper declares its frontier.*
+
+**⇒⇒ AND THE SEVENTH ALREADY CARRIED ITS VERDICT IN ITS OWN DIG COLUMN:** *site 1's dig reads **"A PHANTOM, and I
+built it from the advertisement"**, with the grep clean across 17 papers.* ***The dig was done and the marker was
+never written — and its absence made the whole front read as unworked.*** *Marked ✗ here.*
+
+⌗ ***So the finding is not "94 sites remain" but "every site carries a verdict and one marker was never
+written."*** *And the generator already delivered what it was for: **P14's whole 54-development fell out of this
+front.***
+
 
 > **⌗ BROUGHT CURRENT r2449, TO c54.185 — and one register entry's question is now ANSWERED.**
 > *`B18` asked whether the Standard Model, read as an **external** constraint, motivates taking the compact face as
@@ -234,7 +253,7 @@ corpus, not the suspect claim.**
 
 | # | What was advertised | The dig | Verdict |
 |---|---|---|---|
-| 1 | **"Whether the SPACETIME extends across r=0"** — P2 ×4, P7 §NBC, p0. Read as the corpus's honest open frontier; I routed it as `THE_PLAN` A6.6. | **A PHANTOM, and I built it from the advertisement.** (a) **No paper asserts a spacetime extension** — grep clean across 17. (b) What the corpus *does* assert: *"the substrate is the one smooth de Sitter manifold, C^∞ across the locus the chart labels r=0"* (P3, P7, P15), and P7 §750 bounds it — *"the closure is that of the slicing curve **on the substrate**."* (c) **P2 already has the non-conflict** — *"Sbierski's theorem is left untouched"* — then manufactures a debt in the next clause and defers it to P3. (d) **P3 never mentions Sbierski. Not once** — correctly, because there was nothing to take up. | **A6.6 RETRACTED.** Sbierski concerns the maximal analytic *Schwarzschild manifold*; CR's continuation is of a *curve on the de Sitter substrate*. **Different objects; both stand; no reconciliation is owed.** P2 and p0 **turned around** r1120; **P7 §NBC (the surviving site) turned around r1212** (§750 now states the geometric extension is *established* — substrate $C^\infty$ through $r=0$, refs JanzenSlicing/JanzenCircle; the 774 back-ref removed). *Daryl caught it: "You have to dig the corpus, not the suspect claims, for truth."* |
+| 1 | **"Whether the SPACETIME extends across r=0"** — P2 ×4, P7 §NBC, p0. Read as the corpus's honest open frontier; I routed it as `THE_PLAN` A6.6. | **A PHANTOM, and I built it from the advertisement.** (a) **No paper asserts a spacetime extension** — grep clean across 17. (b) What the corpus *does* assert: *"the substrate is the one smooth de Sitter manifold, C^∞ across the locus the chart labels r=0"* (P3, P7, P15), and P7 §750 bounds it — *"the closure is that of the slicing curve **on the substrate**."* (c) **P2 already has the non-conflict** — *"Sbierski's theorem is left untouched"* — then manufactures a debt in the next clause and defers it to P3. (d) **P3 never mentions Sbierski. Not once** — correctly, because there was nothing to take up. | ✗ **NOT A DOOR — marker written r2546.** *The dig in this very row already reads **"A PHANTOM, and I built it from the advertisement"**, with the grep clean across 17 papers.* ⇒ ***Only the verdict marker was missing — and its absence made the entire front read as 94 sites unworked.*** |
 
 ---
 

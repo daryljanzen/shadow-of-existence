@@ -1,7 +1,7 @@
 ---
 name: open-problems-map
 kind: STATE
-current: r2523+c54.201
+current: r2547+c54.204
 job: The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open
 ---
 > **⌗⌗ AUDITED AGAINST THE REGISTER r2378 (observer line, `ARC 14` step ②) — and the map came out CLEAN.**

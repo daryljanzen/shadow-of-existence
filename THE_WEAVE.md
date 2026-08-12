@@ -1,9 +1,48 @@
 ---
 name: the-weave
 kind: STATE
-current: r2523+c54.201
+current: r2547+c54.204
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
+
+> ## ⛭⛭⛭ BROUGHT CURRENT r2547 — THE OUTSIDE PROBE RAN ITS COURSE, AND THE RESULT IS A CLOSED THEATRE
+>
+> *r2523 recorded the outside probe as a fourth mechanism, with four findings. **It has now run six times and the
+> R-P walk is complete.***
+>
+> | finding | what it was | state |
+> |---|---|---|
+> | **Lovelock** (r2515) | `Teitelboim1973` cited for form, never for content | live — `L-240` |
+> | **Type II/III** (r2520) | "every algebraic type" with four named | ✔ closed c54.203 |
+> | **Unruh** (r2521) | a case the argument must SURVIVE and never mentions | ✔ closed c54.202 |
+> | **Higgs** (r2522) | identified in a subordinate clause, undeveloped | ✔ closed c54.203 |
+> | **baby universe** (r2540) | the resolution named nowhere, its objection answered silently | ✔ closed c54.204 |
+> | **$N_{\rm eff}$** (r2544) | adopted in code, named in no paper | live — `L-803`, narrowed r2545 |
+>
+> ⇒ ***Four of six closed, all four by paragraphs that NAME what was being answered — never by a change to an
+> argument.*** ⌗ *And the two live ones are the two that open a **question** rather than a paragraph: is the
+> leaf's four-ness a reason, and does CR bear on $N_{\rm eff}$.*
+>
+> **⌗⌗ AND THE MECHANISM'S SHAPE IS NOW STATABLE.** ***A corpus built from the inside states what it IS. A reader
+> arrives with what the field ASKS. The two can fit perfectly and not meet*** *— and when they do fit, the missing
+> paragraph is cheap and the finding is **that nobody could tell**.*
+> ⚠ *The discipline that kept it honest: **check whether the corpus ANSWERS the objection before reporting it as a
+> gap**. Every time, it did. ***Reporting "you have not addressed X" when the answer is in the sentence would be the
+> reverse failure, and a worse one.***
+>
+> ## ⌷ AND A FIFTH MECHANISM, WHICH IS NOT A CONVERGENCE AT ALL
+>
+> *Six rows closed in ten revisions — `L-174`, `L-242`, `L-245`, `L-519`, `L-210`, and cc54's two — and **not one
+> closed by new work**.* ⇒ ***Each closed because something already in the corpus decided it, and nobody had set the
+> two halves side by side.***
+> *· `L-174`: P9's `thm:bound` quantified over every subgroup all along;*
+> *· `L-242`: p0's parity is a property of P3's cubic — **the two papers were describing one object**;*
+> *· `L-245`: P11's own sentence was doing two jobs with one scoping;*
+> *· `L-519`: P15's transmission dichotomy IS the temperature answer, derived for something else;*
+> *· `L-210`: **the front was worked and one marker was never written**.*
+> ⇒ ⛭ ***THE PATTERN: a mature corpus's open questions are disproportionately JOINS, not gaps. The work is finding
+> which two things are the same thing.***
+
 
 > ## ⛭⛭⛭ BROUGHT CURRENT r2523 — A FOURTH MECHANISM, AND IT IS THE ONE THAT FINDS WHAT IS ABSENT
 >

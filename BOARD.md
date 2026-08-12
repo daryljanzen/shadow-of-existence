@@ -10,7 +10,7 @@ current: r2500+c54.194
 
 > ***Read `THE_METHOD.md` first.*** *The short form: **the VEINS are areas held open to be known inside and out — never crossed out. The LEADS are everything noticed that could inform one.** Work the top lead, gather what it turns up, re-order, repeat.*
 >
-> *14 live rows: **4 veins**, **10 leads**. 254 struck.*
+> *13 live rows: **4 veins**, **9 leads**. 255 struck.*
 
 # I · THE VEINS — held open, to be known inside and out
 
@@ -26,19 +26,19 @@ current: r2500+c54.194
 
 - **MAPPED** — the cut is four and **says nothing about the substrate**; a descent from $D>5$ must be **multi-step**; the construction is **single-step by design** and one-step-ness is governed by **Rule 2**, not taste
 - ⛔ **DARK** — **whether a second slicing could be non-arbitrary, its selection forced by the first** — and the substrate stays bounded **below only**; and ⛭ r2515 (`L-240`) **whether the CUT’s four-ness carries the FORCING of the dynamics** — the Dirac algebra singles out GR only in four dimensions, so the leaf’s four-ness may be doing work the corpus has never asked it to do. ⛭ r2518 CHARTED: $D=4$ is the **largest dimension in which Lovelock leaves exactly ONE dynamical term**, so the leaf’s dynamics carries **no unfixed coefficient** — Rule 2’s own object. **What stays DARK is the decision it turns on: is uniqueness of the leaf’s dynamics a desideratum this programme holds?** CR takes GR as given, so the forcing is a PROPERTY either way
-- *2 live lead(s) inform this vein*
+- *1 live lead(s) inform this vein*
 
 ## `L-202` · p0 item 4 · WHAT THE SEAM CARRIES
 
 - **MAPPED** — the phase is the **antilinear face $K$**; reality admits **exactly two values**; $K$ acts trivially on the reality set while **$R$ exchanges the branches**; off-real, $K$ **swaps the two wings of the lap** and $R\circ K$ **closes charge conjugation**; $K$ **fixes the photon congruence**
 - ⛔ **DARK** — **whether a MASSIVE trajectory carries a phase** — the null ones are $K$'s fixed set
-- *3 live lead(s) inform this vein*
+- *2 live lead(s) inform this vein*
 
 ## `L-221` · PO-5 · WHAT MAY EXIST, AND WHY THESE
 
 - **MAPPED** — the split is **specified** (12 coloured / 3 colourless, 4 with $\nu_R$); the coloured three are the **index of a Dirac operator** and cross to fields **by being a kernel**; the colourless four are the $D_6$ representations trivial on the deck; the group acting is **$S_3$**
 - ⛔ **DARK** — **no operator whose kernel is the four** — and nothing yet says whether *kernel* is the only bridge from a grading to a field. ⛭ r2525 GIVES IT A DIRECTION: P14 computes on the **massless** ($R$-even) sector and says the splitting is **“external to the geometry”**, while P6 puts **mass = the $R$-odd departure**. ⇒ **any operator whose kernel is the four must be $R$-ODD** — and that is the SAME question as `L-242`’s Higgs identification, asked from the other side. ⛔ r2526 INVERTS IT: a mass term **commutes** with $\gamma^5$, so $\{D+m,\gamma^5\}\ne0$ and **an $R$-odd operator has NO graded index**. ⇒ **“kernel of a graded operator” is a structure only the $R$-EVEN sector has, so the real question is: WHAT BRIDGE from grading to field is not “be a kernel”?**
-- *4 live lead(s) inform this vein*
+- *3 live lead(s) inform this vein*
 
 # II · THE LEADS — ordered by how grounded and how informative
 
@@ -49,13 +49,12 @@ current: r2500+c54.194
 | **1** | **`L-803`** | `L-221` `L-202` | 3/3 | 3/3 | ⛭ **cc54's $N_{\rm eff}$ FINDING — the sixth arrival-path one, and the only one that opens a PHYSICS question rather than a paragraph.** The cosmology sector rests on $N_{\rm eff}$ at both ends (**$dY_p/dN_{\rm eff}\approx+0.010$**; one unit moves $100\theta_*$ by **$-3.2\%$** and $r_{\rm drag}$ by **$-4.7$ Mpc**), **commits to the standard value in `bbn_network.py`**, and **names it in no paper**. ⇒ **And the construction carries a right-handed $\nu_R$ in the colourless four, while $N_{\rm eff}$ counts thermalized relativistic species** — so *does CR adopt the standard value, or does its $\nu_R$ structure predict a departure?* **The unnamed adoption is exactly what hides the question**. ⛭ **NARROWED r2545**: CR's own wall ($\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$, stated six times) means it assigns the $\nu_R$ **a PLACE and no COUPLINGS** — and $N_{\rm eff}$ counts **thermalized** species. ⇒ **CR makes NO $N_{\rm eff}$ prediction, so the standard value is CONSISTENT rather than in tension, and the owed paragraph says that** (trip-wire: `F1`) |
 | **2** | **`L-171`** | `L-202` | 2/3 | 3/3 | **PO-7** — whether the acoustic disagreement is real against the sky. ⛭ *Sharpened at c54.200 (`L-513`): over the phases `sec:what-crosses` ADMITS, the acoustic phase moves **0.207 against a 0.615 gap — a third — with the control OUTSIDE it**, so the disagreement is real and bounded rather than a free choice.* ⇒ **What is open is the confrontation itself: both admissible readings sit 76x and 102x the control, so something other than the seam phase carries the bulk of it — and the SPACING, robust to 1.9%, is what does not move** |
 | **3** | **`L-240`** | `L-175` | 2/3 | 3/3 | ⛭ **a LEAD from OUTSIDE literature, the first**: P12 cites `Teitelboim1973` for the Dirac brackets' FORM and never for the uniqueness theorem they carry (**zero “Lovelock” across 35 .tex files**). ** HKT: Einsteinian geometrodynamics is the ONLY canonical representation of those deformations; Teitelboim–Zanelli: LOVELOCK gravity closes the SAME algebra, and for $n>4$ there are Lovelock gravities other than GR. ** ⇒ **the Dirac algebra forces GR only in FOUR dimensions**, so **the four-ness of the CUT is what makes the dynamics forced** — which is not what `PO-9`'s guard says. ⛭ **WORKED r2518**: $D=4$ is the **largest dimension in which Lovelock leaves exactly ONE dynamical term**, so the leaf’s dynamics carries **no unfixed coefficient**. ⇒ **The decision it turns on: is uniqueness of the leaf’s dynamics a desideratum this programme holds?** CR takes GR as given either way |
-| **4** | **`L-210`** | `L-202` `L-221` `L-175` | 2/3 | 2/3 | the entry-point front — all 44 sites carry verdicts; **live leads are where a paper's own text points at an unexplored interior** |
-| **5** | **`L-217`** | `L-221` | 2/3 | 2/3 | the CR/Higgs relation is stated; **`F1` stays live — the relation breaks if the gauge group is ever promoted to forced** |
-| **6** | **`L-230`** | `L-165` `L-221` | 3/3 | 1/3 | the `COMPUTES:` convention — uptake **flat at 40 of 357** as of r2447 — **the number is unmeasured since**, and a convention whose uptake nobody re-counts is a convention nobody is adopting while the corpus grew a sixth; a receipt that declares what it computed is a receipt a vein can be excavated through |
-| **7** | **`L-207`** | `L-165` | 1/3 | 3/3 | ⓶ the confined/branch-point exhibition — **gated on PO-6 and must not be opened without it** (⓵ discharged r2450) |
-| **8** | **`L-218`** | *— instrument work* | 3/3 | 0/3 | ✔ ⓶ done r2478 (`COMPANION_SPEC`) · ⓵ the reader-package formats via pandoc in CI · ⓷ the contribution, last |
-| **9** | **`L-228`** | *— instrument work* | 3/3 | 0/3 | `check_loci` extended to the possessive and compound-noun forms node 52 declined to claim |
-| **10** | **`L-514`** | *— instrument work* | 2/3 | 0/3 | **nothing in the tree reads UPWARD**: c54.195's withdrawal contradicted text two paragraphs above it in the same section, which had carried the right answer since c54.191. A withdrawal is the edit for which that matters most. Second instance of the class after the c54.182/c54.184 duplicate |
+| **4** | **`L-217`** | `L-221` | 2/3 | 2/3 | the CR/Higgs relation is stated; **`F1` stays live — the relation breaks if the gauge group is ever promoted to forced** |
+| **5** | **`L-230`** | `L-165` `L-221` | 3/3 | 1/3 | the `COMPUTES:` convention — uptake **flat at 40 of 357** as of r2447 — **the number is unmeasured since**, and a convention whose uptake nobody re-counts is a convention nobody is adopting while the corpus grew a sixth; a receipt that declares what it computed is a receipt a vein can be excavated through |
+| **6** | **`L-207`** | `L-165` | 1/3 | 3/3 | ⓶ the confined/branch-point exhibition — **gated on PO-6 and must not be opened without it** (⓵ discharged r2450) |
+| **7** | **`L-218`** | *— instrument work* | 3/3 | 0/3 | ✔ ⓶ done r2478 (`COMPANION_SPEC`) · ⓵ the reader-package formats via pandoc in CI · ⓷ the contribution, last |
+| **8** | **`L-228`** | *— instrument work* | 3/3 | 0/3 | `check_loci` extended to the possessive and compound-noun forms node 52 declined to claim |
+| **9** | **`L-514`** | *— instrument work* | 2/3 | 0/3 | **nothing in the tree reads UPWARD**: c54.195's withdrawal contradicted text two paragraphs above it in the same section, which had carried the right answer since c54.191. A withdrawal is the edit for which that matters most. Second instance of the class after the c54.182/c54.184 duplicate |
 
 > ⛭⛭ **TAKE `L-803` NEXT** — *highest grounded×informative, and it informs 2 vein(s).*
 

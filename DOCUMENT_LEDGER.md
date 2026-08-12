@@ -58,7 +58,7 @@ sources: [chat]
 | `CORPUS_MAP.md` | STATE | (declared in frontmatter) | — | c54.204 | 0 |
 | `CR_AND_THE_HIGGS.md` | STATE | R-P station 6h (L-217) — how CR and the Higgs sector relate, in coherence and in correspondence. THE FALSIFICATION CONDITIONS ARE STATED FIRST, BEFORE THE CLAIM. Read before asserting complementarity. | — | c54.201 | 3 |
 | `CR_COLLAPSE_HELD_PICTURE.md` | STATE | BUILD MATERIAL for THE_PLAN item 2 / PHASE 7 — the contracting-phase picture held whole: the L2 leg the acoustic driving lives on. Read WITH COLLAPSE_EXCURSION_TRANSFER_build.md (the attack manual) before starting that build. | — | c54.114 | 90 |
-| `ENTRY_POINT_REGISTER.md` | STATE | What does the corpus advertise as open, in its own words? Read BEFORE BELIEVING A GAP. | — | c54.201 | 3 |
+| `ENTRY_POINT_REGISTER.md` | STATE | What does the corpus advertise as open, in its own words? Read BEFORE BELIEVING A GAP. | — | c54.204 | 0 |
 | `FIGURE_SWEEP.md` | STATE | The figure programme's state — every figure against what it must carry. | — | c54.201 | 3 |
 | `FIGURE_THEOREM_LEDGER.md` | STATE | The figure–theorem ledger: which classical theorem each figure carries, and its receipts. | — | c54.19 | 185 |
 | `FORK_c54.md` | STATE | the c54 fork's own record | — | c54.197 | 7 |
@@ -88,7 +88,7 @@ sources: [chat]
 | `THE_QUANTUM_JOINT.md` | STATE | The QM sketchpad — a NOTEBOOK, not a ledger: draw the pipe-extensions as far as the evidence suggests, run the rigour alongside as the eraser and not the doorman. Nothing here is a banked corpus result. Register: cluster-J germs were struck c54.117; the quantum tower is L-165 = PO-6. | — | c54.201 | 3 |
 | `THE_RECEIPT_AUDIT.md` | STATE | The receipt audit — what each receipt COMPUTES against what it ASSERTS in verdict-prose (the ◐ category). | — | c54.153 | 51 |
 | `THE_STAGED_REVISIONS.md` | STATE | (declared in frontmatter) | — | c54.197 | 7 |
-| `THE_WEAVE.md` | STATE | How the parts are one object — the per-paper orchestration grid and the record of what joins to what | — | c54.201 | 3 |
+| `THE_WEAVE.md` | STATE | How the parts are one object — the per-paper orchestration grid and the record of what joins to what | — | c54.204 | 0 |
 | `THE_WORK.md` | STATE | The working fork's OWN front-level view of the register — fronts, not rows. Absorbed by this line, never edited by it (ARC 15's prime directive). | — | c54.203 | 1 |
 | `TURNAROUND_CUBIC_geometry_note.md` | STATE | The comoving-turnaround cubic pinned — the COMPLEX/kinematic leg of the substrate's A₂ three-fold (the horizon cubic being the real/causal leg), the E=1 collapse kinematics, and its place on the ℂ_r×ℂ_τ̃ Plate. Read before the acoustic-transfer build. Carries PROTECTED_OPEN PO-3's drill-site. | — | — | never |
 | `VARIATIONAL_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | — | never |

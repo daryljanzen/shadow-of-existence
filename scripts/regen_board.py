@@ -133,8 +133,6 @@ LEADS = {
    "ever promoted to forced**", ['L-221'], 2, 2),
  'L-230': ("the `COMPUTES:` convention \u2014 uptake **flat at 40 of 357** as of r2447 \u2014 **the number is unmeasured since**, and a convention whose uptake nobody re-counts is a convention nobody is adopting while the corpus grew a sixth; a "
    "receipt that declares what it computed is a receipt a vein can be excavated through", ['L-165','L-221'], 3, 1),
- 'L-210': ("the entry-point front \u2014 all 44 sites carry verdicts; **live leads are where a paper's own text "
-   "points at an unexplored interior**", ['L-202','L-221','L-175'], 2, 2),
  'L-508': ("**what the seam datum CARRIES, measured**: across four production-depth seam phases the acoustic "
    "phase spans 0.891 in $\\phi/\\pi$ and the peak heights 0.483\u20131.618, **the control's values inside both** "
    "\u2014 a bounded negative that charts the vein's perimeter (\u00a7IV) rather than closing anything",
