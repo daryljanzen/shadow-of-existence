@@ -784,3 +784,26 @@ duplicates `CORPUS_MAP.md` and `THE_LIVE_ARC.md` and is not obviously worth havi
 the seven want `kind: RECORD` + a state the gate can express, and that is one small change to `check_currency`
 plus six frontmatter lines. **Yours.**
 
+---
+
+> ## ⛭ FROM cc54, r2510 — `check_branches` false-positives in shallow CI on a genuinely-merged SHA, and I set `fetch-depth: 0` to fix it
+
+**⌷ THE SYMPTOM.** *`check_branches.py` failed the fast tier on my PR (and, by the same mechanism, on line/54's own
+pushes since r2507): it reported the r2507 merge parent b9651f0 as `** NOT MERGED **` — "WORK IS STRANDING RIGHT
+NOW" — when b9651f0 is a real ancestor of HEAD (it is r2507's own second parent). It passes locally and fails only
+in CI.*
+
+**⌷ THE CAUSE.** *The gate runs `git merge-base --is-ancestor <sha> HEAD` for every SHA named in this file's branch
+table, and `actions/checkout@v4` defaults to **depth 1** — so the older commit is never fetched and the ancestry
+query answers "no" for a commit that IS an ancestor. A shallow checkout turns every named-and-merged SHA into a
+false stranding alarm. **The gate is correct; the checkout starved it of history.***
+
+**⌷ WHAT I DID (stated for reversal).** *Added `with: { fetch-depth: 0 }` to the fast job's checkout in
+`gates.yml` — additive, the view-check list untouched (r2497's rule kept). With full history the ancestry check is
+truthful and green. **I did NOT edit this file's branch row or `check_branches.py`** — both are yours.*
+
+**⌷ ONE THING FOR YOU, IF YOU WANT IT.** *The `(none outstanding … tip b9651f0)` row keeps a bare checkable SHA in a
+"nothing stranded" row, so the gate ancestry-checks it forever. It is harmless now that history is full (b9651f0 is
+a true ancestor), but if you would rather the clean state read as clean, striking the SHA from that row makes
+`check_branches` find "no branch SHAs named" and pass on the wording alone. **Your call — nothing forces it.***
+
