@@ -21,7 +21,12 @@ def parse_index(path):
     backtick.  Those receipts were registered, on disk, and absent from every appendix."""
     rows=[]
     for ln in open(path, encoding='utf-8'):
-        if not (ln.startswith('| P') or ln.startswith('| `')): continue
+        # ** r2533+c54.203: SAME CASE-SENSITIVITY HOLE AS check_receipts, in the generator. **  The
+        # ** filter was `ln.startswith('| P')` and the geometric core paper is written `p0` in
+        # ** LOWERCASE, so all nine of its INDEX rows were dropped from every appendix.  The comment
+        # ** twenty lines above records this filter causing exactly this class of loss once before
+        # ** (r2376+c54.36, the '| `stem`' format) -- and the fix then did not cover the case. **
+        if not (ln[:3].upper().startswith('| P') or ln.startswith('| `')): continue
         import re as _re
         parts=_re.split(r'(?<!\\)\|', ln.rstrip('\n'))
         cells=[p.replace('\\|','|').strip() for p in parts[1:-1]]

@@ -137,6 +137,19 @@ LEADS = {
    "`Teitelboim1973` for its CONTENT \u2014 the brackets are the embeddability condition and HKT's forcing is "
    "**dimension-dependent**, so the leaf being four is doing work",
    ['L-165','L-175'], 3, 2),
+ 'L-521': ("**item 48 worked**: P3's $2M=r_0-r_0^3$ is ODD, so p0's $r_0\\mapsto-r_0$ mass-reflection is an "
+   "IDENTITY of it \u2014 the two symmetry breakings are ONE object. The order parameter is the offset, the "
+   "symmetric sector is the bare substrate, the breaking has a derived cause rather than a chosen minimum, and "
+   "**it is BOUNDED by the Nariai mass** where a quartic potential is not",
+   ['L-221'], 3, 3),
+ 'L-522': ("items 19, 20 and 22 applied \u2014 two more locus conflations in published text (the class of "
+   "routed item 21) and a section that rendered after the bibliography. **Both loci were found by reading, not "
+   "by `check_loci`**, which sees only receipt-bound sentences: a recall bound stated rather than fixed",
+   ['L-165','L-175'], 3, 1),
+ 'L-523': ("`check_receipts` skipped every `| p0 |` row \u2014 the parser was case-sensitive and the corpus "
+   "writes p0 lowercase. **Nine rows invisible; surfaced only because the first `\\rcpt{}` to name one read "
+   "as an orphan.** Same shape as its own duplicate-stem guard: blind to a row it should police",
+   [], 3, 0),
  'L-204': ("R-P stations \u2462\u2463 \u2014 P8/P9, GR field equations and the exact-solution catalogue",
    ['L-165','L-175'], 3, 2),
  'L-217': ("the CR/Higgs relation is stated; **`F1` stays live \u2014 the relation breaks if the gauge group is "

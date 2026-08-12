@@ -12,7 +12,14 @@ _stem_rows={}   # stem -> [paths], to catch a stem registered at more than one r
 # second (the storyboard bake, 20 rows) was skipped here until r2376+c54.36, so a \rcpt{}
 # naming one of them would have been reported as an orphan that was in fact registered.
 for ln in open(idx, encoding='utf-8'):
-    if not (ln.startswith('| P') or ln.startswith('| `')): continue
+    # ** r2533+c54.203: THE PAPER COLUMN IS CASE-SENSITIVE HERE AND THE CORPUS IS NOT. **  This read
+    # ** `ln.startswith('| P')`, and the geometric core paper is written `p0` in LOWERCASE everywhere
+    # ** by the corpus's own convention -- so ALL NINE of its INDEX rows were invisible to this gate.
+    # ** Nobody hit it because no \rcpt{} had ever named one; c54.203's Higgs receipt is the first,
+    # ** and it read as an orphan while its row sat in the file. **
+    #   *A gate that skips a row silently reports the row's receipt as unregistered -- which is the
+    #    same shape as the duplicate-stem guard below: a gate blind to a row it should be policing.*
+    if not (ln[:3].upper().startswith('| P') or ln.startswith('| `')): continue
     parts=re.split(r'(?<!\\)\|', ln.rstrip('\n'))
     cells=[p.replace('\\|','|').strip() for p in parts[1:-1]]
     if len(cells)<4 or cells[0]=='paper': continue
