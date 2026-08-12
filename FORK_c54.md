@@ -2,7 +2,7 @@
 name: fork-c54
 description: The c54 fork record — forked from r2376, what changed on it, what is carried as known debt, and what will collide on merge. Read this first when merging c54 back.
 sources: [cowork]
-current: r2506+c54.197
+current: frozen
 ---
 
 > ## ⌗ FROZEN RECORD — covers c54.1–c54.35 only, marked r2539

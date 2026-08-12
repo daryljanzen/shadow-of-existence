@@ -307,3 +307,27 @@ a log of my dead ends with the answer at the bottom, 2,889 words where 1,454 sai
 > next one, and ask whether it now reads as an argument or as a diary.*** **An open question that a later
 > paragraph closes is still a defect while it stands, and the reader has no way to know which paragraph is
 > current.** *The path belongs in the receipts and the register, which is what they are for.*
+
+## ⛭⛭ THE STANDING TRIP-WIRE — `F1`, moved here r2548 because three results now depend on it
+
+*`CR_AND_THE_HIGGS.md` §5 has owed this since r2414: **"`F1` re-opens if any CR result promotes the gauge group from
+'the ordinary route' to 'forced'; it belongs in `PROTECTED_OPEN` beside PO-4, not only here."*** ⇒ ***A trip-wire
+living only in a working document is a trip-wire no gate reads.***
+
+> ### ⚠ `F1` · **IF ANY CR RESULT EVER PROMOTES THE GAUGE GROUP FROM "THE ORDINARY ROUTE" TO "FORCED", THE
+> FOLLOWING THREE RESULTS MUST BE RE-RUN.**
+>
+> *· **`L-217`'s relation** — CR is a selection-rule theory and the Higgs sector a magnitude theory; the split
+> depends on CR supplying no gauge content.*
+> *· **r2539's Higgs join** (`L-242`, c54.203) — the identification of electroweak breaking with the breaking of
+> $R$ declines the vev, the scale and the mass values **on the ground that the gauge content is walled**.*
+> *· **r2545's $N_{\rm eff}$ stance** (`L-803`) — CR fixes the $\nu_R$'s **place and not its couplings**, so it
+> makes no $N_{\rm eff}$ prediction. ***If it ever supplied couplings, the $\nu_R$ could thermalize and the
+> consistency argument fails.***
+>
+> ⌗ *The wall it rests on is stated **six times**: $\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$, so the
+> Standard Model gauge group is not a continuous substrate isometry; and P0's non-claim, **"a geometric origin for
+> the gauge content or the masses … walled and electroweak."***
+> ⚠ ***This is a trip-wire, not a prohibition. Nothing here says the gauge group cannot be forced — only that if it
+> ever is, three results downstream of the wall stop holding and must be re-derived rather than inherited.***
+

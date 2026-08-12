@@ -1,7 +1,7 @@
 ---
 name: for-56
 kind: RECORD
-current: c54.202
+current: c54.205
 job: THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
@@ -1196,4 +1196,45 @@ half-worked paragraph would be a third burial with better manners.*
 **two** symmetry-breaking mechanisms — P3's "this is the symmetry breaking, located precisely" and P6's $R$-parity
 identification — and **nobody has set them beside each other**. Whether they are one mechanism or two is the
 question underneath item 48, and it is prior to asking what the Higgs identification predicts.*
+
+---
+
+## ⛔⛔ 23 · ITEM 11's SEVEN FILES CROSSED THE WINDOW THIS REVISION, AND c54.205 IS WHAT PUSHED THEM — added r2545+c54.205
+
+*Reporting this rather than silencing it, because the gate is right and the cause is mine.*
+
+**⌗ THE ARITHMETIC.** *`check_currency` measures against the last **absorbed** revision (c54.199's fix). Before
+c54.205 the basis was c54.203 and those seven sat at c54.197 — **lag 6, exactly at the window, passing**. This
+revision moves the basis to c54.204, so the lag is 7 and they fail.* ⇒ ***They did not become stale; the front
+moved past a threshold they were already sitting on.***
+
+**⌗ WHAT I DID AND DID NOT DO.** *`THE_BASE_RATE.md` is the fork's own and I brought it **genuinely** current — a
+real entry, the c54.190 → c54.195 → r2509 sequence recorded on the unfavourable side, including the datum that
+matters most: **three statements of one quantity, of which the first two were wrong in opposite directions**, and
+a line's successive corrections converge slower than either felt at the time.* ⌗ *Six remain and I have not
+touched them, because **a declaration written by a pass that did not bring the file current is what your gate's
+own docstring forbids** — which is exactly item 11's point.*
+
+⇒ ***So item 11 is now blocking rather than merely diagnosed.*** *My read is unchanged: the gate has three
+declaration states and the corpus has four document kinds, so a frozen RECORD cannot declare itself and fails
+forever. **A fourth state — something a frozen record can say about itself — would clear all six without widening
+any window.** I have not built it: it is your gate's semantics, and I have already changed that gate once.*
+⚠ *If you would rather I build it, say so and I will, with the same three-seed discipline as the in-flight fix —
+including the seed that proves a genuinely stale non-frozen document still fails.*
+
+---
+
+## ⌗ 24 · A THIRD FALSE-POSITIVE CLASS IN MY OWN PREFIX GATE, AND IT FIRED ON MY OWN WORK — added r2545+c54.205
+
+*`receipts/P01_BH_causality/` holds `P1_the_unruh_case…` and `P1_thermality…` — **two receipts for one paper, both
+correctly named by the paper convention** — and the gate compared the directory tag `P01` against the file tag
+`P1` and called them a two-node collision.* ⇒ *Zero-padding. Normalised, and the real collision re-seeded and
+still fires.*
+
+⌗ ***Third class found the same way as the first two — by running it and reading what it said rather than what I
+expected.*** *The other two were a directory's own paper tag (`P17_` six times) and a lead tag (`L212_` twice).
+**All three are the same shape: a naming convention the gate did not know about, reported as the failure the gate
+exists for.*** ⚠ *I record it because three is enough to be a pattern: **a namespace lint learns its exceptions by
+being run against a corpus that already uses the namespace**, and none of the three was findable by reading the
+code.*
 

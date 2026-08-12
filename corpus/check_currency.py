@@ -49,19 +49,31 @@ def declared(path):
                        in them), so the only honest revision to name is a main-line one; measuring
                        those against the fork front would report a lag that means nothing.
       current: none    DECLARED-UNKNOWN -- nobody has brought it current; its position is not known
+      current: frozen  DECLARED-FROZEN -- ** a dated RECORD of past work, not a status document. **
+                       Added r2548, and it is a JOIN rather than new machinery: `check_deferrals`
+                       already carries a named LOGS list on exactly this ground ("rewriting a record
+                       to look better is a different failure"), and `FORK_c54.md` already declares
+                       ** "FROZEN RECORD -- covers c54.1-c54.35 only" ** in its own header while THIS
+                       gate demanded it be brought current.
+                         ⇒ ** Two gates disagreeing about one file is the signature. **
+                       ⚠ A frozen file is exempt from the LAG check and from nothing else: it must
+                       still say what span it covers, and a file that declares frozen without a span
+                       note FAILS.  *** Freezing is a claim about scope, not a way to stop being
+                       measured. ***
                        and is not guessed.  Not a pass: it still cannot be read as current.
       current: n/a     DECLARED-EXEMPT -- a FORWARD document, ahead of the corpus by construction.
                        Dating it invites the inverted-gradient repair its own banner forbids:
                        "stale is a word for the corpus, never for the instrument examining it."
 
-    Returns (kind, value) where kind is 'rev' | 'none' | 'na' | None(no marker at all).
+    Returns (kind, value) where kind is 'rev' | 'none' | 'na' | 'frozen' | None(no marker at all).
     """
     if not os.path.exists(path): return (None, None)
     head = open(path, encoding='utf-8', errors='replace').read(2500)
-    m = re.search(r'^current:\s*(c54\.(\d+)|r(\d{3,4})|none|n/a)\s*$', head, re.M | re.I)
+    m = re.search(r'^current:\s*(c54\.(\d+)|r(\d{3,4})|none|n/a|frozen)\s*$', head, re.M | re.I)
     if not m: return (None, None)
     v = m.group(1).lower()
     if v == 'none': return ('none', None)
+    if v == 'frozen': return ('frozen', None)
     if v == 'n/a': return ('na', None)
     if m.group(3): return ('mainline', int(m.group(3)))
     return ('rev', int(m.group(2)))
@@ -158,6 +170,21 @@ def main():
         if dk == 'none':
             unknown.append(n)
             rows.append((n, 'none (declared unknown -- nobody has brought it current)', False))
+            continue
+        if dk == 'frozen':
+            # ** a dated RECORD, exempt from the lag check and from nothing else. **  It must still
+            # say what span it covers: freezing is a claim about SCOPE, not a way to stop being
+            # measured.  A file that declares frozen with no span note FAILS.
+            _t = open(p, encoding='utf-8', errors='replace').read()
+            _has_span = ('FROZEN RECORD' in _t) or re.search(r'covers\s+c54\.\d+', _t)
+            if _has_span:
+                exempt.append(n)
+                rows.append((n, 'frozen (a dated record -- exempt from the lag check by '
+                                'declaration, with its span stated)', False))
+            else:
+                stale.append((n, None))
+                rows.append((n, 'frozen BUT NO SPAN STATED -- freezing is a claim about scope, not '
+                                'a way to stop being measured', True))
             continue
         basis, how = (d, 'declared') if d is not None else (s, 'scraped')
         lag = None if basis is None else cur - basis

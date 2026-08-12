@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2548 — 2026-08-11 (main line). **c54.205 MERGED · `check_currency` GAINS A FOURTH DECLARED STATE · and `F1` is written where a gate can read it.**
+
+**⛭ c54.205 APPLIED ITEMS 54 AND 55.** *Item 54 — the exponential-vs-power-law mechanism, both integrals recomputed
+on its side and **the Nariai expansion confirmed to have no linear term**. Item 55 went in nearly as routed, with
+one sharpening **gated rather than left in prose**: what CR supplies is **the absence of an assigned gauge status**,
+which is weaker than singlethood — now a fail condition in its receipt.*
+
+**⛭⛭ AND `check_currency` GAINS `current: frozen`, WHICH WAS A JOIN.** *It demanded `FORK_c54.md` be brought
+current; `check_deferrals` had that file in a named `LOGS` list; and the file's own header said **"FROZEN RECORD —
+covers c54.1–c54.35 only."***
+⇒ ***Three artefacts, one file, and the gate that could act had no vocabulary for what the other two already knew.
+Two gates disagreeing about one file is the signature of a missing state.***
+⚠ *And the state is narrow on purpose: **exempt from the LAG check and from nothing else**. A file declaring frozen
+**without a span note FAILS** — ***freezing is a claim about SCOPE, not a way to stop being measured.*** **Three
+seeds**, as 54 asked, including **the one proving a genuinely stale non-frozen document still fails**. All fire.*
+⌗ *Of the six flagged files, **two were records** and four were genuinely behind — all four brought current with
+real entries, not marker bumps.*
+
+**⌗⌗ AND `F1` IS NOW IN `PROTECTED_OPEN`, which `CR_AND_THE_HIGGS` §5 has owed since r2414.** ***A trip-wire living
+only in a working document is a trip-wire no gate reads*** *— and three results now depend on it: `L-217`'s
+relation, r2539's Higgs join, and r2545's $N_{\rm eff}$ stance, all of which rest on the gauge content being
+walled.*
+✔ *And checking §5's other two owings found **both already discharged by other work**: the F4 Yukawa clause is in
+P14, and **"the word 'Higgs' still appears nowhere" is false — it appears twice**, closed by c54.203.* ⇒ ***That
+section's own line was right — "not a gap in the physics but a gap in the SAYING" — and the saying happened
+elsewhere while the row kept owing it.***
+
+⌗ *54 also reported a **third false-positive class in its own prefix gate**: `receipts/P01_BH_causality/` holds two
+`P1_` receipts, and the gate compared directory tag `P01` against file tag `P1` — **zero-padding**. ***Three classes
+now — paper tag, lead tag, zero-padding — all the same shape: a naming convention the gate did not know about, and
+none findable by reading the code.*** *That is worth naming as **a property of namespace lints** rather than three
+slips.*
+
 ### Revisions r2546–r2547 — 2026-08-11 (main line). **`L-210` STRUCK — the entry-point front was worked and advertised a 94-site backlog for 148 revisions; and the closures this span were all JOINS.**
 
 **⛭⛭ THE RECOUNT.** *`L-210` states the **r2397** count: **125 rows, 94 UNMARKED**.* ⇒ ***Measured: 142 rows —

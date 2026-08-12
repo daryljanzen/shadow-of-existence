@@ -1,7 +1,7 @@
 ---
 name: cr-and-the-higgs
 kind: STATE
-current: r2517+c54.201
+current: r2548+c54.205
 job: R-P station 6h (L-217) — how CR and the Higgs sector relate, in coherence and in correspondence. THE FALSIFICATION CONDITIONS ARE STATED FIRST, BEFORE THE CLAIM. Read before asserting complementarity.
 sources: [chat]
 ---
@@ -152,6 +152,15 @@ promoted to forced**, and **F3 was only cleared because P14 checked its obligati
 ***A complementarity with live trip-wires is a claim; a complementarity with none would have been a tautology.***
 
 ## ⌗ §5 · WHAT THIS STATION OWES ONWARD
+
+> ## ✔✔ ALL THREE DISCHARGED r2548 — measured, not remembered
+>
+> *· **the `F1` trip-wire** → ***written into `PROTECTED_OPEN` at r2548***, naming the three results that now depend on the wall (`L-217`'s relation, r2539's Higgs join, r2545's $N_{\rm eff}$ stance);*
+> *· **the F4 clause** → in P14: **"the existence of the Yukawa couplings"** is there;*
+> *· **"the word 'Higgs' still appears nowhere in the corpus"** → ***it appears twice, in p0, closed by c54.203 at r2539.***
+>
+> ⇒ ***Two of the three were discharged by other work and nobody had checked. This section's own line — "not a gap in the physics but a gap in the SAYING" — was right, and the saying happened elsewhere.***
+
 
 *· **the trip-wire** — F1 re-opens if any CR result promotes the gauge group from "the ordinary route" to
 "forced"; **it belongs in `PROTECTED_OPEN` beside `PO-4`, not only here**;*

@@ -10,7 +10,7 @@ current: r2500+c54.194
 
 > ***Read `THE_METHOD.md` first.*** *The short form: **the VEINS are areas held open to be known inside and out — never crossed out. The LEADS are everything noticed that could inform one.** Work the top lead, gather what it turns up, re-order, repeat.*
 >
-> *13 live rows: **4 veins**, **9 leads**. 255 struck.*
+> *13 live rows: **4 veins**, **9 leads**. 257 struck.*
 
 # I · THE VEINS — held open, to be known inside and out
 
@@ -60,9 +60,9 @@ current: r2500+c54.194
 
 # III · THE ROUTED LIST (`FOR_54.md`) — leads handed to the working fork
 
-- ***12 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
+- ***10 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
 - *7 are ANSWERS to the fork rather than work for it* — 33, 34, 35, 36, 37, 38, 39
-- *30 closed* — 10, 15, 6, 7, 8, 11, 12, 14, 16, 17, 19, 20, 21, 22, 23, 24, 25, 27, 28, 29, 31, 32, 40, 41, 43, 45, 46, 47, 48, 53
+- *32 closed* — 10, 15, 6, 7, 8, 11, 12, 14, 16, 17, 19, 20, 21, 22, 23, 24, 25, 27, 28, 29, 31, 32, 40, 41, 43, 45, 46, 47, 48, 53, 54, 55
 
   - **9** · A convention worth having, if the fork wants it
   - **18** · p0's FRONTIER ITEM 1, DATUM HALF: THE ANSWER IS THAT IT CANNOT BE DERIVE
@@ -74,6 +74,4 @@ current: r2500+c54.194
   - **49** · `L-519` HAS A SECOND, INDEPENDENT FOOTING — the static frame does not ex
   - **50** · TRANS-PLANCKIAN — a partial answer, and the scoping is the whole content
   - **52** · YOU TAKE THE de SITTER HORIZON'S TEMPERATURE AND NEVER ITS ENTROPY — and
-  - **54** · `L-519` IS ANSWERED, AND P15 HAD THE ANSWER ALREADY — for a different pu
-  - **55** · $N_{\rm eff}$ IS UNNAMED AND LOAD-BEARING — and the paragraph is shorter
 

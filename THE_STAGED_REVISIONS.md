@@ -1,10 +1,20 @@
 ---
 name: the-staged-revisions
 kind: STATE
-current: r2506+c54.197
+current: r2548+c54.205
 description: The observer line's staging ground — revisions to the papers, computations to run, and consolidation work, PREPARED here and executed when the working fork reaches its target. Nothing here has been applied to the corpus; each entry carries its gate, its locus and its done-test.
 sources: [chat]
 ---
+
+## ⛭ BROUGHT CURRENT r2548 — the staging discipline held through nine merges
+
+*Nine absorptions this span — c54.195 through c54.205 plus three cc54 branches — and the staging rules held: **never
+take `gates.yml` wholesale**, **resolve additively**, **run every receipt the merge brings before landing**.*
+⌗ ***And three failures the staging caught rather than suffered:*** *`L-510`, `L-519`, `L-520` and `L-802` each
+arrived duplicated (**`merge=union` preserves both sides and cannot know they are one row** — `check_id_bands`
+caught every one); a **conflict marker survived into `range_paper.tex`** and broke the build; and **`BOARD.md` taken
+`--theirs` restored a pre-correction copy**, caught by `check_veins` one revision after it was built.*
+⇒ ***A generated file taken wholesale from a merge is a stale file — regenerate, never adopt.***
 
 > ⚠⚠ **WHAT THIS FILE DOES NOT COVER, stated r2477 because nothing had ever said it.**
 >

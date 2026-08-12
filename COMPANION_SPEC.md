@@ -3,8 +3,18 @@ name: companion-spec
 kind: STATE
 description: The specification for the AI companion to the corpus — what it may assert, what it must refuse, and the declarations that make the difference checkable. Written before any code, because the SPEC decides whether the thing is trustworthy.
 sources: [chat]
-current: r2506+c54.197
+current: r2548+c54.205
 ---
+
+## ⛭ BROUGHT CURRENT r2548 — the three-state rule held across six closures
+
+*Nothing in the spec changed. What tested it did: **six rows closed in twelve revisions**, and every closure was
+recorded in the ESTABLISHED/OPEN/DO-NOT-ASSERT form without strain.*
+⌗ ***And two closures exercised the third state properly***: `L-519` closed with **$T=0$ still refused** and a third
+reason to refuse it, and `L-803` narrowed to a **consistency statement** with the standard $N_{\rm eff}$ adopted
+and no CR prediction claimed.
+⇒ *That is the state the spec exists for — **the one where the honest answer is neither a claim nor a gap** — and it
+has now carried real weight twice.*
 
 # COMPANION SPEC — what the companion may say, and how it knows
 

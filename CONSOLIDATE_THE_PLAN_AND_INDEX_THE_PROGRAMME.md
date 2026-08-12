@@ -1,10 +1,19 @@
 ---
 name: consolidate-the-plan-and-index-the-programme
 kind: STATE
-current: r2506+c54.197
+current: frozen
 job: Consolidate the plan and index the programme — the arcs (§2), the sequence (§13), the standing actions (§14), and §16 THE DEVELOPMENT RECORD, which is where RG-1 moves a paper's past state.
 sources: [cowork]
 ---
+
+> ## ⌗ FROZEN RECORD — a dated consolidation log, marked r2548
+>
+> *This file is the **log of a consolidation pass**, not a status document. It is already named in
+> `check_deferrals`' `LOGS` list on exactly that ground —* ***"rewriting a record to look better is a
+> different failure from letting it stand."***
+> ⇒ *Its span is what it recorded when it ran; **for current state read `CORPUS_MAP`, `THE_LIVE_ARC`
+> and `BOARD`**.*
+
 ## ⌖⌖ ARC 14 · THE SINGLE EDGE — *one live list, everything else a view, a method or a record*
 
 *Opened r2377 (Daryl-directed, from the r2377 spin-up's currency audit). **This is LAYER 1's missing
