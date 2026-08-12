@@ -108,7 +108,6 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-216`** | r2409 | Daryl runs it when at a computer or when the publish call lands; **then tell this line the URL (public) or hand it a short-lived token (private)** |
 | **`L-203`** | r2413 | ⌗⌗ **CORRECTED r2382 BY READING R-M AT SOURCE: THE FRONT IS Ⓒ, NOT Ⓕ.** *`THE_PLAN` lists what is **unrun** (Ⓕ Ⓖ Ⓗ); R-M records that **Ⓒ complex anal |
 | **`L-219`** | r2415 | each rung is Daryl's call and taken one at a time; **nothing below a rung starts before it** |
-| **`L-204`** | r2418 | ⌗⌗ **CORRECTED r2382 BY READING R-P AT SOURCE — and the strike is owed HERE, not in `THE_PLAN`.** *R-P's own table still reads **"①② QM — NEXT, the ea |
 | **`L-222`** | r2428 | Daryl invites the fork to the repo; **`THE_HUB`'s arrival section is what it reads first** |
 | **`L-150`** | r2433 | ⓵ **DONE r2433 — closed in the negative** · ⓶ route the disposition to 54 so p0's frontier item's datum half is restated as a **closed negative** rath |
 | **`L-228`** | r2440 | extend to the possessive and compound-noun forms the contributor attempted, left unapplied, and **declined to claim precision for** |
@@ -117,6 +116,7 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-502`** | r2441 | done in the registering revision — eighteen readings, the `CRAMP` knob asserted a no-op at its default |
 | **`L-503`** | r2441 | done in the registering revision — three CAMB references, the model separation, and the reversal |
 | **`L-207`** | r2450 | ⓵ ✔ **DISCHARGED r2450 — exhibited, not merely asserted** · ⓶ nothing until `PO-6` moves |
+| **`L-220`** | r2453 | ✔ **instrument question CLOSED r2453 — no metric exists**; the class stands as a reading discipline, and four unread flags remain as material |
 
 *26 live rows carry a stated next step; the 14 longest-unworked are shown.*
 

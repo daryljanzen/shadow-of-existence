@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2483 — 2026-08-11 (main line). **THE r2482 SWEEP MISSED A CASE, AND THE FILTER THAT MISSED IT HAD THE DEFECT IT WAS LOOKING FOR.**
+
+**⌗⌗ `L-204`'s NEXT STEP READ "First act: make the strike in R-P's table."** ⇒ ***`THE_PHYSICS_REACH` carries
+`~~①②~~ … ✔ STRUCK r2383 — RUN, and it had been marked NEXT`, with a block titled "THE ①② STRIKE — made r2383, and
+the delay is the finding".*** *The act was performed in the revision after the row recorded it as owed, and **the
+field was never updated** — ninety-nine revisions.*
+
+**⚠⚠ AND THIS IS THE CASE r2482 MISSED, WHICH IS THE FINDING THAT MATTERS.** *That sweep concluded **"one case of
+twenty-six — not a class, so no detector"**, and reached the number with a **verb filter**: `state|write|build|
+exhibit`.*
+⇒ ***`L-204` says "MAKE the", with its action buried behind a correction note — so the filter hid it. Reading all
+twenty-six instead of filtering them found it in one tool call.***
+⇒⇒ ***THE COUNT IS TWO OF TWENTY-SIX, NOT ONE. The "no detector" conclusion survives — two of twenty-six is still
+thin — BUT IT SURVIVED BY LUCK RATHER THAN BY THE REASONING GIVEN FOR IT, and that distinction is the entry.***
+
+**⛭ THE SHAPE, and it is the sharpest form of this line's one recurring failure:** ***a filter was run to detect a
+class of stale-field defects, and the filter had exactly that defect — it hid the second case behind its own verb
+list.*** **Sixteenth instance.**
+⌗⌗ *And the compounding form is why it is filed separately: the fourteen earlier instances were **proxies standing
+in for judgements about the CORPUS**.* ***This one was a proxy standing in for a judgement about THIS LINE'S OWN
+RELIABILITY — a count used to decide whether a class of its own errors existed — so the error rate was measured
+with an instrument carrying the error being measured.***
+
+**⌗ THE RULE, narrower and more useful than "beware filters":** ***when the population is small enough to READ,
+reading it is not the careful option — it is the CHEAP one, and a filter over a readable population buys nothing
+while costing a blind spot.*** *Twenty-six rows took one tool call.*
+
+⌗ *And a third defect in the same revision, small and worth the line: **the edit guard asserted the file had GROWN
+by 1200 characters**, and the corrected next-step field is **shorter** than the correction prose it replaced —
+delta 751. ***An assertion that assumes additions only will reject a correct edit that removes text.****
+
+**Register: 235 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2482 — 2026-08-11 (main line). **`L-217`'s NEXT STEP WAS ALREADY DISCHARGED AND THE ROW NEVER SAID SO — and a sweep for the class found ONE case of twenty-six.**
 
 **⌗⌗ THE ROW.** *`L-217`'s next step read **"state the relation in one place: what CR supplies, what it takes as
