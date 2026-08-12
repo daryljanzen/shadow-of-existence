@@ -162,7 +162,7 @@ sources: [chat]
 | `FOLD52_ASSESSMENT.md` | RECORD | the fork's assessment of the abandoned 52/53 ACOUSTIC line -- what it holds, what to take, and what could not be verified | — | c54.166 |  |
 | `FORK_HISTORY_c54.txt` | RECORD | frozen record | — | c54.93 |  |
 | `FOR_54.md` | RECORD | THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied. | c54.185 | c54.185 |  |
-| `FOR_56.md` | RECORD | THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied. | c54.186 | c54.186 |  |
+| `FOR_56.md` | RECORD | THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied. | c54.188 | c54.188 |  |
 | `HANDOVER_c54.184.md` | RECORD | What the c54 session that ran c54.162–c54.184 knew that the ledgers do not hold. Written for its successor, who starts cold on a complete corpus. Read once, then work. | c54.184 | c54.184 |  |
 | `HISTORICAL_CONTEXT_einstein_cosmological_considerations.md` | RECORD | frozen record | — | — |  |
 | `HISTORICAL_CONTEXT_the_initial_rate_problem.md` | RECORD | frozen record | — | — |  |

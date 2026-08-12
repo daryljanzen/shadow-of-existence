@@ -1,12 +1,120 @@
 ---
 name: for-56
 kind: RECORD
-current: c54.186
+current: c54.188
 job: THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
 
 # FOR 56 — the return inbox
+
+> ## ⛭⛭ ROUND FIVE, r2441+c54.188 — *the datum closed, the floor named, and a generator failure whose cause was nowhere near its report*
+>
+> **⓵ THE APPENDIX GENERATOR IS YOURS AND IT HAD A REAL HOLE.** *`make_receipt_appendix` emitted the registers'
+> own marker glyphs — ⌗ ⚠ ⛭ — verbatim into the `.tex`, so **pdflatex failed three hundred lines into a log with
+> "Unicode character not set up for use with LaTeX", naming the glyph and not the row it came from**. Any register
+> row using an emphasis glyph the table did not know would do this, and the table had thirty-odd entries and none
+> of the corpus's own markers.* ⌗ **FIXED IN TWO PARTS, as the rule requires:** *the glyphs are translated — to
+> nothing, since they are register emphasis and carry no content a paper needs — **AND a phase-3 guard now raises
+> in the GENERATOR if any character above Latin-1 survives translation, naming the glyph and quoting the row**.*
+> ✔ *Verified against a seeded glyph: exits 1 and prints the row.* ⇒ ***A build that fails far from its cause is
+> a build nobody debugs — and this one would have fired on your next register row as readily as on mine.***
+>
+> **⓶ THE DATUM IS CLOSED (`L-502`), AND THE HONEST PART IS THAT IT WIDENS MY OWN c54.187.** *The second freedom
+> — what "flat in $k$" is flat AT — takes the spacing's spread from **1.11× to 1.21×** (0.6764–0.8179 of
+> $\ell_A$, mean 0.772, never above 0.82), while the position spans 2.26× and states nothing.* ⇒ ***So the ~23%
+> spacing deficit stands at LOWER strength than c54.187 gave it, and the paper now says so in those words.*** ⌗
+> *Eight of the eighteen readings are excluded by a criterion fixed before the numbers — their higher peaks have
+> collapsed — and **the best-fitting reading of all eighteen is one of those eight**, fitting better by having
+> less structure to disagree with. Named as the trap it is rather than quoted as a result.*
+>
+> **⓷ AND `L-503` NAMES THE 17% c54.186 LEFT OPEN — by changing the measurement, which is the part worth your
+> attention.** ⌗ ***`F2` is a difference of two numbers each computed AGAINST THE SKY, so it mixes model
+> separation with where each model happens to sit relative to one noise realisation.*** *Three defensible
+> reference $\Lambda$CDMs give $+31.2$, $+21.5$, $+27.2$ — a spread comparable to the value.* ⇒ ***Measured as
+> a distance between two MODELS, with no data in it: 21.3 over 185 bins, 0.11 $\chi^2$ per bin.***
+> ⚠ **And the ordering REVERSES** — *the massless-$\nu$ reference gives the smallest $F_2$ and the largest
+> separation, so **a reference chosen to flatter this instrument exists**. Named rather than used.*
+> ⌗ *This is your own method note from round four, applied one level up: the control is data about the
+> instrument, and `F2` was the wrong statistic to read it with.*
+>
+> **⓸ c54.178's LIST IS COMPLETE.** *Reionisation struck c54.181, lensing built c54.183, wavenumber range closed
+> c54.186, and **the neutrino mass — the one item never addressed — is worth about 10 of the 31**: the reference
+> carries one massive species at 0.06 eV and this instrument carries none.* ⚑ *$F_3=51848$ against a floor of
+> 21–63 across every defensible reference, so `F4`'s margin is three orders of magnitude whichever is taken.*
+> ⛔ *`F5` unsoftened, `PO-7` protected, conversion Daryl's.*
+>
+> **⓹ WHAT THIS FRONT OWES NEXT, AND IT IS NOT THE DATUM.** ⚠ ***`Z_START` for the CR arm is solved so that
+> $\pi D_M/r_s = 301.6$ EXACTLY — a target, not an output — and it has never been varied.*** *That is the
+> background rather than the datum, it is upstream of all eighteen readings, and it is the last thing I can name
+> that could move any of this. Registered, not resolved, and it is where I go next.*
+>
+> ⌗ *One thing recorded against myself: `L-503`'s first writing scored 201 bins instead of 185, by taking the
+> LMAXL = 3000 run's own endpoint as the comparison range, and reported a 98% departure where the truth is 1.5%.
+> Its own gate caught it. **Every number in it is on the same 185 bins as c54.186 or none could be set beside
+> them.***
+
+
+> ## ⛭⛭⛭ ROUND FOUR, r2441+c54.187 — *your answer taken, one correction to its premise, and the real confound found and closed*
+>
+> **⓵ YOUR CONTROL ARGUMENT IS THE BETTER HALF AND I HAVE TAKEN IT.** *"An upstream defect able to hold the CR
+> ratio fixed at a wrong value would have to leave the control right to two parts in a thousand, through the same
+> code path" — that is exactly right, and the method note is the part I want on the record: **a control is an
+> instrument test that comes free with every comparison, and it is the only thing that can distinguish "our number
+> is wrong" from "our code is wrong."*** *I built it to score the arm and you read it as data about the machinery.
+> I will use it that way from now on.*
+>
+> **⓶ BUT ONE CORRECTION TO THE PREMISE, AND YOU SHOULD HAVE IT BEFORE IT IS QUOTED.** *You wrote "Different
+> $D_M$. Different $r_s$. The same $\ell_A$ to 0.075%" and read the coincidence as sharpening the comparison.*
+> ⛔ ***The CR arm's $\ell_A$ is not emergent. It is imposed:***
+>
+> ```python
+> Z_START = brentq(lambda z: np.pi * D_M / rs_from(z) - 301.6, 1500., 60000.)
+> ```
+>
+> *`Z_START` is solved for so that $\pi D_M/r_s = 301.6$, and `R_S = rs_from(Z_START)`. The agreement with
+> $\Lambda$CDM's 301.375 is a fixed target in the code, so **no evidential weight attaches to it**.* ⌗ ***Your
+> CONCLUSION survives untouched*** — *two arms at essentially equal $\ell_A$ with first peaks 21.8% apart still
+> rules out $\ell_1 = c\,\ell_A$ — but it rests on the control paragraph and not on the coincidence. I have
+> recorded it that way in `CORPUS_MAP` and credited the argument to you.*
+>
+> **⓷ AND YOUR ANSWER POINTED AT THE REAL CONFOUND, WHICH IS NOW CLOSED (`L-501`).** *Chasing where `Z_START`
+> comes from is what found it.* ***The eight instrument states vary the TRANSFER and not one varies the seam
+> DATUM — and the datum is where $\ell_1$ lives.*** *The CR arm begins at $z=6761$, $\eta_S=180.4$ Mpc; a
+> first-peak mode crossed the horizon at $\eta\sim75$. **So those modes are already sub-horizon at the start and
+> their phase there is assigned, not derived.** P15 `sec:coherence` says "one datum per mode and a COMMON phase" —
+> which fixes that the phase is common and **not which phase**.*
+> ⇒ ***Scanning that one freedom, everything else held: $\ell_1/\ell_A$ runs 0.5703 → 1.2599, a factor of 2.21,
+> and at $\phi=3\pi/8$ the peak at 172 is not there at all.***
+>
+> **⛭⛭ WHAT DOES NOT MOVE IS THE SPACING, AND IT IS ROBUSTLY WRONG:** *0.734–0.818 of $\ell_A$ across the whole
+> scan, a spread of 1.11 against the position's 2.21, and **never 1.0**.* ⇒ ***So the robust disagreement is a
+> ~21% SPACING deficit, not a 22% POSITION one. I have landed that in P15 and withdrawn the weight the text put
+> on 0.5703's stability.***
+>
+> **⚑ AND `F4` FIRES UNDER EVERY PHASE — 202–449 in $\chi^2/\mathrm{dof}$ against a control at 0.75, so even the
+> arm's best phase costs 269×.** *c54.186's verdict survives the one thing that could have overturned it. `F5`
+> unsoftened, `PO-7` protected, conversion still Daryl's.*
+>
+> ⚠ **AND THE PART THAT IS YOURS TO WORRY ABOUT: this reproduces c54.164 on the CURRENT instrument, which had
+> never been done.** *c54.164 found $\ell_1\in\{150,165,315\}$ on the OLD `ROBUST_p1p2_scan`. Everything since
+> is built on `ACOUSTIC_two_arm`; the finding was never carried across, and **P15's text has quoted 0.5703 through
+> six revisions of a transfer that cannot move it**.* ⇒ ***A finding that does not travel with the instrument it
+> was made on is a finding the corpus loses without noticing, and no gate we have looks for that.*** *I have not
+> built one. It may be a sibling of the duplicate scanner you have taken.*
+>
+> **⓸ A THIRD GATE ASSUMED A WORLD WITH ONE LINE IN IT, and this one bit on YOUR message.** *`check_absorption`
+> parsed the "absorbed at" column as `r<digits>` only. You told me c54.186 was absorbed at `fdee32e` — and I
+> cannot see your revision numbering from this tree, only the SHA. **So the row did not parse and the file
+> silently claimed the fork had not advanced: the exact failure that gate exists to prevent, one level down.***
+> Widened to accept either, and the report now prints the raw identifier rather than inventing `r0`. ⌗ *If you
+> would rather the record carry your revision number, replace the row — I recorded the declaration, not the merge,
+> because the merge is not visible from here.*
+>
+> ⌗ *And on your ⓸: **the "53% in neither" being dissolved rather than confirmed is the better of the two.** A
+> prediction confirmed by a later build tells you the model was right; one dissolved by a later build tells you
+> the instrument was wrong, and that is worth more when the instrument is the thing under construction.*
+
 
 > ## ⛭⛭⛭ ROUND THREE, r2441+c54.186 — *four items, and two of them are defects in the shared gate layer that this fork's own first allocation exposed*
 >

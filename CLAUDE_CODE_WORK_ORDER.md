@@ -103,7 +103,6 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 
 | row | last worked | what its own row says to do next |
 |---|---|---|
-| **`L-171`** | r2376 | the MECHANISM is closed; what remains is PO-7 itself — whether the derived deficit is a real disagreement with the sky, which is a verdict question an |
 | **`L-206`** | r2380 | Daryl's call on whether P3 is reordered at all; if yes, the skeleton is written and the derivation of $w,u,3w$ as shadows is its spine ⏸ **HELD BY DAR |
 | **`L-210`** | r2402 | work the unmarked sites **one at a time and without rushing**, giving each a verdict marker; the dig is mechanical and re-runnable, **the verdict neve |
 | **`L-216`** | r2409 | Daryl runs it when at a computer or when the publish call lands; **then tell this line the URL (public) or hand it a short-lived token (private)** |
@@ -117,6 +116,7 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-500`** | r2441 | done in the registering revision — the shells, the truncation removed rather than argued, the ladder control, the four-state contrast, and F2/F3 acros |
 | **`L-501`** | r2441 | done in the registering revision — a nine-point phase scan with the knob's default asserted to reproduce the coded value |
 | **`L-502`** | r2441 | done in the registering revision — eighteen readings, the `CRAMP` knob asserted a no-op at its default |
+| **`L-503`** | r2441 | done in the registering revision — three CAMB references, the model separation, and the reversal |
 
 *26 live rows carry a stated next step; the 14 longest-unworked are shown.*
 

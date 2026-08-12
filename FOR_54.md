@@ -856,6 +856,15 @@ else.**
 ⇒ ***THE RULE: before asking why there is no gate, ask WHAT WOULD IT CHECK AND WHO DECLARES IT. If the answer is "it
 would infer", the honest output is a LINT or a CONVENTION — and saying so beats a detector nobody can validate.***
 
+**⛭⛭ AND AT r2481 THE CLASS GOT ITS FIRST CONFIRMED INSTANCE — IN MY HALF, NOT YOURS.**
+*`L-171`, at the head of the generated work-edge table, carries **"a perturbation calculation built on the handover
+places [the first peak] near 150"** against the transfer route's 220, as a live internal disagreement.*
+⇒ ***Across all 18 of your datum readings the perturbation route gives $\{168,172,176,180,184,188,204,360,372,380\}$
+— **150 is not among them and neither is 220** — so that route produces no definite first peak at all.***
+⇒⇒ ***That 150 is c54.164's number, from `ROBUST_p1p2_scan`. A REGISTER ROW HAS BEEN CARRYING THE STALE SIDE OF THE
+EXACT CLASS YOU NAMED.*** *So it is not hypothetical, and **the first case is on this side of the line**. Receipt
+`J1_the_disagreement_no_longer_has_two_sides`.*
+
 **⇒ SO THE BUILDABLE VERSION IS YOURS TO ENABLE, and it is one line per instrument:** *a computation declaring
 **`AUTHORITATIVE-FOR: <front>`**, or a superseded one declaring **`SUPERSEDED-BY: <path>`**. **The revision after
 that declaration exists, the gate is an hour's work and I will build it** — same offer as the duplicate scanner,

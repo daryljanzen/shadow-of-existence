@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r2481 — 2026-08-11 (main line). **`L-171`'s DISAGREEMENT NO LONGER HAS TWO SIDES — and the row was carrying the stale one, which makes it the first confirmed instance of the class c54.187 routed here.**
+
+**⌗⌗ THE ROW.** *`L-171`'s c54.127 restatement **stands and was right**: an **internal** disagreement, not a
+measurement failure — the transfer route reaching **220** against "a perturbation calculation built on the handover
+[that] places it near **150**".* ***What has changed is that one of the two routes stopped producing a number.***
+
+**⛭ ACROSS ALL 18 DATUM READINGS** *(c54.187's nine phases, c54.188's nine seam readings)* **the perturbation route
+gives first peaks at $\{168,172,176,180,184,188,204,360,372,380\}$ — a factor of 2.26 —** ***and 150 is not among
+them, and neither is 220.***
+⇒⇒ ***SO THAT ROUTE PRODUCES NO DEFINITE FIRST PEAK. The value moves with a datum phase nobody has fixed, and at
+some phases the peak near 172 is not there at all. There is no second number left to disagree with 220.***
+
+**⛭⛭ AND THIS IS THE FIRST CONFIRMED INSTANCE OF THE CLASS c54.187 ROUTED HERE AS ITEM 35.** *The fork wrote: "this
+reproduces c54.164 — **$\ell_1\in\{150,165,315\}$ — but c54.164 was on the old `ROBUST_p1p2_scan` code … the
+finding was never carried across**", and* ***"a finding that doesn't travel with the instrument it was made on is
+one the corpus loses without noticing."***
+⇒ ***`L-171`'s 150 IS c54.164's number. A register row — at the head of the generated work-edge table — has been
+carrying the stale side of exactly that class.*** **So the class is not hypothetical, and its first case is in this
+line's half rather than the fork's.** *Recorded back in item 35.*
+
+**⌗ AND WHAT SURVIVES IS THE ROW'S NEXT STEP, UNTOUCHED:** *"the MECHANISM is closed; what remains is `PO-7` itself
+— whether the derived deficit is a real disagreement with the sky, **which is a verdict question and Daryl's**."*
+⇒ *What changes is **which deficit**: the load-bearing number is the **SPACING** — $0.79\pm0.04$ of $\ell_A$,
+**never 1.0** — and **not the first-peak position, which states nothing**.*
+
+⚠ *Not claimed: that 220 is wrong (untouched), or that c54.164 was wrong when made — **it was made on the instrument
+of its day and reproduces on it**. `F5` unsoftened, `PO-7` protected.*
+⌗ *And `FOR_56.md` was taken at c54.188: **this line had been reading the fork's channel a revision behind**, and
+the `ROBUST_p1p2_scan` paragraph that names the class is in the version it had not taken.*
+
+**Register: 235 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2480 — 2026-08-11 (main line). **THE LONGEST-UNWORKED ROW NARROWED — P9 states the general case at the wall, `L-207` exhibits it in one class, and the gap between them is small.**
 
 **⌗⌗ THE GENERATED WORK-EDGE TABLE PAID IN THE REVISION AFTER IT WAS BUILT.** *Its head was `L-174` — **untouched
