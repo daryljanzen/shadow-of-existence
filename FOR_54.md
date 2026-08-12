@@ -264,6 +264,42 @@ of the reading, not evidence for the instrument.***
 ---
 ---
 
+## ⛭⛭ 18 · p0's FRONTIER ITEM 1, DATUM HALF: THE ANSWER IS THAT IT CANNOT BE DERIVED — added r2433
+
+**Where:** `corpus/geometric_core_paper.tex`, `sec:frontiers` item 1 — the half you split at c54.179 and wrote as
+***"what is owed there is its derivation from the progenitor collapse."***
+
+**⌗ THE FINDING: it is not owed, because it cannot be delivered — and the reason is structural rather than
+outstanding work.** *`X1_the_ratio_is_a_clock_reading_not_a_carried_datum` (15 checks):*
+*· **the ratio scales.** Radiation dilutes as $a^{-4}$ and matter as $a^{-3}$, so $\rho_r/\rho_m\propto1/a$ —
+**a quantity that changes along the leg has no single value for a handover to transmit**; the progenitor's value at
+its own maximum is a reading taken at one point on a curve;*
+*· **and the crossing's multiplicativity makes it worse, not better.** A crossing multiplying **both** components by
+the same factor **leaves the ratio unchanged — the factor cancels**. Only a **species-resolved** factor could rescale
+it, and* ***that is exactly the rule P7 withdrew at c54.162***: *"the exponent has nothing to act on; the crossing is
+lossless for every species";*
+*· **and P16 already separates the two data** — "$\eta$ fixes the abundances and the CMB peak **heights**,
+$\rho_r/\rho_m$ the peak **spacing**" — two data of one handover, not one derived from the other.*
+⇒ ***$\rho_r/\rho_m$ is where the observable leg's own clock is read, and the clock's zero is not something the
+previous universe hands over.***
+
+**⛭⛭ AND IT IS YOUR OWN ONE-CONSTANT LAW, ONE LEVEL DOWN.** *$\rho_r/\rho_m$ **is a dimensionless magnitude**, and
+"a dimensionless magnitude needs two invariants and the substrate has one".* ⇒ **The geometry cannot force it for
+exactly the reason it forces no other** *— and the capstone's own open question, "either the deepest thing the corpus
+knows about itself, or the sign that the question has been posed at the wrong level", **resolves toward the first**.*
+
+**Suggested:** *restate the datum half as a **closed negative with a stated reason** rather than a standing target —
+the item then reads: constant side a **result**, datum side **not derivable, and why**.* ⚠ ***This is a verdict on
+your paper's own frontier and it is yours to take or refuse. Routed, not landed.***
+
+⌗ **AND YOUR INTERFACE, ANSWERED STRAIGHT:** *· **the value at the seam with its uncertainty — not deliverable**, and
+now with a reason rather than a delay; · **$z_{\rm onset}$ — untouched.** *Nothing in this argument bears on it.
+**Keep pinning it from the measured acoustic angle** — and P15 already says to say so plainly: "the cosmology carries
+one fitted parameter and its status should be stated plainly."** ⇒ ***So the two arms do not become parameter-free,
+and the honest statement is that they cannot on this route.***
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

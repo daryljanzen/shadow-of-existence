@@ -6,6 +6,26 @@ kind: STATE
 current: c54.181
 job: A5.5 worked — the reference class for least-arbitrariness arguments in physics, assembled neutrally and then judged. The fork added 11 entries across c54.114–153; read BEFORE claiming a least-arbitrariness win.
 ---
+## ⛭⛭ ENTRY: A CLOSED NEGATIVE IS A RESULT, AND THE DISCRIMINANT SAYS SO — added r2433
+
+*`L-150`'s datum half was the programme's longest-standing target: p0's frontier item 1 asked for $\rho_r/\rho_m$ to
+be **derived from the progenitor collapse**, and forty revisions of the collapse-perturbation arc were spent near it.*
+***r2433 answered it in the negative*** *— the ratio scales as $1/a$ so it has no single value to hand over, and the
+crossing's multiplicativity **cancels** in a ratio.*
+
+**⌗ MEASURED AGAINST THIS FILE'S OWN DISCRIMINANT:** *least-arbitrariness arguments that **remove an exception**
+succeed; ones that **add machinery to explain a number** fail.*
+⇒ ***THIS REMOVES AN EXCEPTION.*** *Before r2433 the corpus held one datum as a standing debt to be derived while
+holding, separately, that the substrate forces no dimensionless magnitude. **Those were the same claim and the corpus
+did not know it.** After r2433 there is one law with no exception: $\rho_r/\rho_m$ is dimensionless, so of course the
+geometry does not force it.* **Nothing was added; a second rule was deleted.** ⇒ **On the favourable side, and by the
+sharpest route this file records.**
+
+⚠ **AND THE ENTRY IS WORTH KEEPING FOR A REASON THAT IS NOT ABOUT THIS RESULT.** *The favourable reading only became
+available once the question was **allowed to close in the negative**. Had the row stayed open as "derive it", the
+programme would have carried an exception indefinitely and called it work.* ⇒ ***A target that cannot be met is a
+result the moment it is stated as one — and the base rate cannot price a target, only a claim.***
+
 ## ⌗⌗ `L-213` MEASURED AGAINST THE DISCRIMINANT — r2405, and the ledger answers before the argument is made
 
 *`L-213` (registered r2401 out of `ENTRY_POINT_REGISTER` B18) asks:* **whether the Standard Model, read as an

@@ -146,6 +146,61 @@ sources: [cowork, chat]
 
 
 
+### Revision r2433 — 2026-08-11 (main line). **`L-150` ANSWERED IN THE NEGATIVE — the programme's longest-standing target cannot be met, and the reason is its own one-constant law one level down.**
+
+**⌗⌗ THE QUESTION, sharpened at r2430: can the crossing fix $\rho_r/\rho_m$ at OUR seam?** *§0 had found the
+derivation already made — **one universe back**: the progenitor's composition, $(\rho_r/\rho_m)_{\max}\simeq
+7.3\times10^{-4}$, turnaround $z\simeq1.5$, mass $4.3\times10^{52}$ kg.* ⇒ **It cannot, and NOT because of the
+crossing:** ***because $\rho_r/\rho_m$ is not the kind of quantity a crossing can carry.***
+
+*· **THE RATIO SCALES.** Radiation dilutes as $a^{-4}$ and matter as $a^{-3}$, so $\rho_r/\rho_m\propto1/a$.*
+⇒ ***A quantity that changes along the leg has no single value for a handover to transmit*** *— the progenitor's value
+at its own maximum is a reading taken at one point on a curve.*
+*· **AND THE MULTIPLICATIVITY MAKES IT WORSE, NOT BETTER.** A crossing multiplying **both** components by the same
+factor **leaves the ratio unchanged — the factor cancels** — so it transmits nothing about it. Only a
+**species-resolved** factor could rescale it, and* ***that is exactly the rule P7 withdrew at c54.162***: *"the
+exponent has nothing to act on; the crossing is lossless for every species."*
+*· **AND THE CORPUS ALREADY TREATS IT AS A READING.** P16: **"$\eta$ fixes the abundances and the CMB peak HEIGHTS,
+$\rho_r/\rho_m$ the peak SPACING"** — two data of one handover, not one derived from the other. And the observable
+rate is read leftward: "radiation and matter are inherited content **read off the clock**, never terms that source the
+rate."*
+⇒ ***$\rho_r/\rho_m$ IS WHERE THE OBSERVABLE LEG'S OWN CLOCK IS READ, AND THE CLOCK'S ZERO IS NOT SOMETHING THE
+PREVIOUS UNIVERSE HANDS OVER.***
+
+**⛭⛭ AND IT IS THE ONE-CONSTANT THEOREM'S SECOND FACE, REACHED FROM THE MATTER SIDE.** *`L-200` showed the
+construction spends no free dimensionless constant because **a dimensionless magnitude needs two invariants and the
+substrate has one**.* ***$\rho_r/\rho_m$ IS a dimensionless magnitude.*** *So the geometry cannot force it for exactly
+the reason it forces no other.* ⇒ **`L-200`'s two halves therefore close by ONE argument rather than two: the constant
+side because the residue is one DIMENSIONFUL parameter, the datum side because the datum is DIMENSIONLESS.**
+⌗ *And the capstone's own open question —* **"either the deepest thing the corpus knows about itself, or the sign that
+the question has been posed at the wrong level. Forty revisions were not enough to tell which"** *— **resolves toward
+the first**.*
+
+**⌗ AND `THE_BASE_RATE` GAINS AN ENTRY, because the discriminant reads this favourably by its sharpest route.**
+*Before r2433 the corpus held one datum as a standing debt to be derived while holding, separately, that the substrate
+forces no dimensionless magnitude.* ***Those were the same claim and the corpus did not know it.*** *After r2433 there
+is one law with no exception.* **Nothing was added; a second rule was deleted.**
+⚠ ***And the entry's real lesson is not about this result: the favourable reading only became available once the
+question was ALLOWED TO CLOSE IN THE NEGATIVE.*** *Had the row stayed open as "derive it", the programme would have
+carried an exception indefinitely and called it work.* ⇒ **A target that cannot be met is a result the moment it is
+stated as one — and the base rate cannot price a target, only a claim.**
+
+**⚠ THE DISPOSITION IS WEAKER THAN CLOSURE, DELIBERATELY.** *p0's frontier item does **not** close: it asked for the
+datum to be **derived**, and the answer is that it **cannot be**. **Routed as item 18 — a verdict on the fork's own
+paper frontier, and its call to take or refuse.***
+⌗ **And the fork's interface is answered straight:** *the value at the seam is **not deliverable, now with a reason
+rather than a delay**; and **$z_{\rm onset}$ is untouched** — keep pinning it from the measured acoustic angle, which
+P15 already instructs ("the cosmology carries one fitted parameter and its status should be stated plainly").*
+⇒ ***So the two arms do not become parameter-free, and the honest statement is that they cannot on this route.***
+
+**⌗ THREE PROBE DEFECTS CAUGHT BEFORE LANDING, ALL BY THIS LINE RATHER THAN BY THE LINT** *— which is the c54.180
+discipline taken up: **two hollow checks** (`.is_commutative`, true for every symbol; and a literal tautology) and
+**one wrong token** (`z_{\rm onset}` where the paper writes `z_{\mathrm{onset}}`).* ⌗ *And the wrong token found
+something better than what was being checked for: **P15 already says "the cosmology carries one fitted parameter and
+its status should be stated plainly."***
+
+**Register: 215 rows. Gates: twenty-one, twenty rc=0.**
+
 ### Revision r2432 — 2026-08-11 (main line). **THE NODE'S BRANCH MERGED — the duplicate-stem defect closed, the derived lensing landed, and the push problem was never a permission.**
 
 **⛔⛔ FIRST, THE THING THAT COST HOURS AND WAS NEVER TRUE.** *This line asserted, repeatedly and without checking,

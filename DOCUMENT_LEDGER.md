@@ -42,9 +42,9 @@ sources: [chat]
 |---|---|---|---|---|---|
 | `ABSORPTION.md` | SOURCE | The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced. | c54.181 | c54.183 | 2 |
 | `THE_LIVE_ARC.md` | SOURCE | the lead register — the one live edge | c54.181 | c54.182 | 2 |
-| `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.182 | c54.182 | 1 |
+| `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.183 | c54.183 | 0 |
 | `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.182 | c54.182 | 1 |
-| `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | c54.181 | c54.182 | 2 |
+| `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | c54.181 | c54.183 | 2 |
 | `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.182 | c54.182 | 1 |
 | `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.182 | c54.182 | 1 |
 | `ACOUSTIC_BUILD_SETUP.md` | STATE | The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own. | c54.163 | c54.163 | 20 |
