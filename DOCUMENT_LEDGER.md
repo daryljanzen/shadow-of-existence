@@ -17,7 +17,7 @@ sources: [chat]
 |---|---|
 | **SOURCE** | 2 |
 | **VIEW** | 5 |
-| **STATE** | 44 |
+| **STATE** | 45 |
 | **METHOD** | 27 |
 | **RECORD** | 76 |
 
@@ -47,6 +47,7 @@ sources: [chat]
 | `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.193 | c54.193 | 1 |
 | `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.193 | c54.193 | 1 |
 | `ACOUSTIC_BUILD_SETUP.md` | STATE | The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own. | — | c54.194 | 0 |
+| `BOARD.md` | STATE | (declared in frontmatter) | — | c54.194 | 0 |
 | `CATEGORY_THEORY_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.194 | 0 |
 | `COLLAPSE_EXCURSION_TRANSFER_build.md` | STATE | PHASE 7's ATTACK MANUAL — the one build on the progenitor collapse excursion (L2) behind open-problems families 1/3/4/5. Referenced live by eleven documents including THE_PLAN, PHASE7_BUILD_LEDGER and both open-problems documents. | — | c54.194 | 0 |
 | `COMBINATORICS_LEDGER.md` | STATE | The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8. | — | c54.194 | 0 |
@@ -155,7 +156,7 @@ sources: [chat]
 | `C40_EXTRACTION_r1107.md` | RECORD | frozen record | — | — |  |
 | `C40_HARVEST_r1064-r1087.md` | RECORD | frozen record | — | — |  |
 | `CAPSTONE_the-fog-lifting_transcript.md` | RECORD | frozen record | — | — |  |
-| `CLAUDE_CODE_WORK_ORDER.md` | RECORD | THE ITERATING WORK ORDER — for a Claude Code session that can run for hours. A ladder from mechanical to edge work, the discipline that makes unattended research safe, and the two ownership boundaries. Read with THE_HUB and NEXT.md. | — | c54.186 |  |
+| `CLAUDE_CODE_WORK_ORDER.md` | RECORD | THE ITERATING WORK ORDER — for a Claude Code session that can run for hours. A ladder from mechanical to edge work, the discipline that makes unattended research safe, and the two ownership boundaries. Read with THE_HUB and NEXT.md. | — | — |  |
 | `CREDO_birth_transcript.md` | RECORD | frozen record | — | — |  |
 | `CREDO_from-c1_transcript.md` | RECORD | frozen record | — | — |  |
 | `DEMONSTRATING_THE_WAY_full-transcript.md` | RECORD | frozen record | — | — |  |

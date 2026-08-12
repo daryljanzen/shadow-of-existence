@@ -108,17 +108,17 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-216`** | r2409 | Daryl runs it when at a computer or when the publish call lands; **then tell this line the URL (public) or hand it a short-lived token (private)** |
 | **`L-219`** | r2415 | each rung is Daryl's call and taken one at a time; **nothing below a rung starts before it** |
 | **`L-222`** | r2428 | Daryl invites the fork to the repo; **`THE_HUB`'s arrival section is what it reads first** |
-| **`L-150`** | r2433 | ⓵ **DONE r2433 — closed in the negative** · ⓶ route the disposition to 54 so p0's frontier item's datum half is restated as a **closed negative** rath |
 | **`L-228`** | r2440 | extend to the possessive and compound-noun forms the contributor attempted, left unapplied, and **declined to claim precision for** |
-| **`L-500`** | r2441 | done in the registering revision — the shells, the truncation removed rather than argued, the ladder control, the four-state contrast, and F2/F3 acros |
-| **`L-501`** | r2441 | done in the registering revision — a nine-point phase scan with the knob's default asserted to reproduce the coded value |
-| **`L-502`** | r2441 | done in the registering revision — eighteen readings, the `CRAMP` knob asserted a no-op at its default |
-| **`L-503`** | r2441 | done in the registering revision — three CAMB references, the model separation, and the reversal |
-| **`L-504`** | r2441 | done in the registering revision — five pins, each asserted to give a four-peak series |
-| **`L-505`** | r2441 | done in the registering revision — read off the production-depth pair c54.186 banked and which no revision since had read for its PEAK SERIES |
-| **`L-506`** | r2441 | done in the registering revision — two production-depth runs against c54.186's pair |
+| **`L-207`** | r2450 | ⓵ ✔ **DISCHARGED r2450 — exhibited, not merely asserted** · ⓶ nothing until `PO-6` moves |
+| **`L-202`** | r2457 | **narrowed twice, still open and still do-not-assert both ways** · the live question is now: **does a MASSIVE trajectory carry a phase?** — the null o |
+| **`L-175`** | r2474 | **the whole row now turns on one question r2474 states**: ***can a second slicing be non-arbitrary — its selection FORCED by the first rather than cho |
+| **`L-165`** | r2475 | ⓵ **the UV clause now has a DEGREE (quartic) and a shape (IR free, UV generic)** — what remains is **defining** the sum, not diagnosing it · ⓶ the clo |
+| **`L-221`** | r2476 | **the question is now an OPERATOR question r2476**: ***is there an operator on this structure whose kernel is the four colourless gradings?*** — and t |
+| **`L-218`** | r2478 | ✔ **② done r2478 — `COMPANION_SPEC.md`** · ① formats via pandoc in CI · ③ contribution, last |
+| **`L-174`** | r2480 | ⓵ **narrowed r2480 — the owed thing is now precise**: ***exhibit, BEYOND spherical symmetry, what P9 states at `cor:wall` and `L-207` ⓵ showed in one  |
+| **`L-217`** | r2482 | ✔ **the statement exists — `CR_AND_THE_HIGGS.md` §4** · what the row still owes is **§5's onward list**, and `F1` stays live: ***the relation breaks i |
 
-*29 live rows carry a stated next step; the 14 longest-unworked are shown.*
+*17 live rows carry a stated next step; the 14 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session

@@ -6,6 +6,17 @@ job: How the programme lives in a git repository — branch discipline, the regi
 sources: [chat]
 ---
 
+## ⛭⛭⛭ WANT THE STATE OF THE PROGRAMME? READ `BOARD.md` — added r2497
+
+***Every live thing, grouped by family, GENERATED from the register.*** *Four families and the routed list, with
+what each row IS rather than a count of them.*
+
+⚠ **Why it is generated:** *at r2497, **39 of 56 rows showing as live were not work** — eight were the fork's
+completed revisions, twenty-four were table-of-contents pointers, seven said "REGISTERED AND STRUCK" in their own
+text.* ⇒ ***A recited row count concealed that rather than reporting it. So the board is computed, and a row with
+no family lands in `UNSORTED`, which is deliberate: an unsorted row is one nobody has decided about.***
+
+
 ## ⛭⛭⛭ ARRIVING? THERE ARE TWO WORK ORDERS, AND WHICH ONE IS YOURS DEPENDS ON WHAT YOU ARE — added r2470, split r2472
 
 *· **A chat or research session → `NEXT.md`.*** *Four blocks of research work, each with its object, its first

@@ -26,26 +26,26 @@ without fixing what is still sitting there owed?"**
 | | at c54.27 *(the baseline below)* | **now** |
 |---|---|---|
 | registered | 88 | **239** |
-| struck | 13 | **182** |
-| open QUESTIONS | 75 | **27** |
-| open WORK rows *(arcs and phases, folded r2378)* | — | **30** |
+| struck | 13 | **222** |
+| open QUESTIONS | 75 | **12** |
+| open WORK rows *(arcs and phases, folded r2378)* | — | **5** |
 | `HOT` | 49 *(60% of open)* | **0** *(0% of open questions)* |
-| struck fraction | 14.0% | **87.1%** |
+| struck fraction | 14.0% | **94.9%** |
 
 **Open leads by state**
 
 | state | count |
 |---|---|
-| `DARYL` | 12 |
-| `OPEN` | 7 |
-| `—` | 8 |
+| `DARYL` | 5 |
+| `OPEN` | 6 |
+| `—` | 1 |
 
 **Open leads by origin**
 
 | origin | count |
 |---|---|
-| folded from OPEN_PROBLEMS_MAP | 4 |
-| this fork | 23 |
+| folded from OPEN_PROBLEMS_MAP | 3 |
+| this fork | 9 |
 
 > **⌗ THE COUNTS ARE PER KIND (r2379).** *`kind:QUESTION` rows are things to answer and carry the burn-down; `kind:WORK` rows are programmes with steps whose freshness is gated by `corpus/check_arcs.py`. **The struck fraction is scoped to questions so it cannot quietly start measuring something else.***
 
@@ -53,7 +53,6 @@ without fixing what is still sitting there owed?"**
 
 | lead | state |
 |---|---|
-| **`L-150`** | QUESTION · OPEN |
 | **`L-165`** | QUESTION · OPEN |
 | **`L-171`** | QUESTION · DARYL |
 | **`L-174`** | QUESTION · OPEN |
@@ -66,48 +65,9 @@ without fixing what is still sitting there owed?"**
 | **`L-219`** | QUESTION · DARYL |
 | **`L-221`** | QUESTION · OPEN |
 | **`L-222`** | QUESTION · DARYL |
-| **`L-226`** | QUESTION · — |
-| **`L-232`** | QUESTION · — |
-| **`L-235`** | QUESTION · — |
-| **`L-236`** | QUESTION · — |
-| **`L-237`** | QUESTION · — |
-| **`L-238`** | QUESTION · — |
-| **`L-500`** | QUESTION · DARYL |
-| **`L-501`** | QUESTION · DARYL |
-| **`L-502`** | QUESTION · DARYL |
-| **`L-503`** | QUESTION · — |
-| **`L-504`** | QUESTION · DARYL |
-| **`L-505`** | QUESTION · DARYL |
-| **`L-506`** | QUESTION · DARYL |
-| **`L-507`** | QUESTION · DARYL |
-| **`L-176`** | WORK · OPEN |
-| **`L-177`** | WORK · OPEN |
-| **`L-178`** | WORK · OPEN |
-| **`L-179`** | WORK · OPEN |
-| **`L-180`** | WORK · OPEN |
-| **`L-181`** | WORK · OPEN |
-| **`L-182`** | WORK · OPEN |
-| **`L-183`** | WORK · OPEN |
-| **`L-184`** | WORK · OPEN |
-| **`L-185`** | WORK · OPEN |
-| **`L-186`** | WORK · OPEN |
-| **`L-187`** | WORK · OPEN |
-| **`L-188`** | WORK · OPEN |
-| **`L-189`** | WORK · OPEN |
-| **`L-190`** | WORK · OPEN |
-| **`L-191`** | WORK · OPEN |
-| **`L-192`** | WORK · OPEN |
-| **`L-193`** | WORK · OPEN |
-| **`L-194`** | WORK · OPEN |
-| **`L-195`** | WORK · OPEN |
-| **`L-196`** | WORK · OPEN |
-| **`L-197`** | WORK · OPEN |
-| **`L-198`** | WORK · OPEN |
-| **`L-199`** | WORK · OPEN |
 | **`L-204`** | WORK · OPEN |
 | **`L-210`** | WORK · OPEN |
 | **`L-218`** | WORK · — |
-| **`L-220`** | WORK · OPEN |
 | **`L-228`** | WORK · OPEN |
 | **`L-230`** | WORK · OPEN |
 

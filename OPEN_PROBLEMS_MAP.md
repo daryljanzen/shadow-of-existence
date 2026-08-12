@@ -517,7 +517,7 @@ job: The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of
 > ⌗ ***The cluster prose below is NOT regenerated, deliberately.*** *Notes like "two residues now converge here" are **findings**, not status, and the priority axis, the readiness sort and the runway exist nowhere else. **The map keeps what only it has; the register keeps what it is the source of.***
 > ⚠ *And the queued task was "the status column as a generated view."* ***There is no status column.*** *That was the file's `description:` field paraphrased — the fifth time in this audit a description has misdescribed its document. The build had to change to the one the file can actually take.*
 
-**32 folded codes — 28 struck, 4 live.**
+**32 folded codes — 29 struck, 3 live.**
 
 ### Cluster A — the matter sector — 5 folded, **1 live**
 
@@ -562,11 +562,11 @@ job: The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of
 | **E·3** | ~~L-148~~ | ✔ struck | STRUCK c54.98 — ITS OPEN CORE WAS BUILT, RECEIPTED ELEVEN TIMES, AND THE MAP NEVER RECORDED IT. E·3's status, carried since r1408 and folded in verbatim: the open core is… |
 | **E·4** | ~~L-149~~ | ✔ struck | STRUCK c54.104 — BOTH HALVES DELIVERED, AND ITS SHARP QUESTION HAS A THIRD ANSWER. E·4 owes two things and both are built and registered: the rate confronted against the … |
 
-### Cluster F — the inherited boundary data — 1 folded, **1 live**
+### Cluster F — the inherited boundary data — 1 folded, **0 live**
 
 | map code | register | state | the register's verdict, first line |
 |---|---|---|---|
-| **F·1** | **L-150** | **OPEN · folded from the map c54.90** | CONSOLIDATED c54.151 — the arc is capstoned in THE_ASSUMPTIONS_RETREATED_UPWARD.md, which carries what stands, what was withdrawn, and the pattern the withdrawals make: t… |
+| **F·1** | ~~L-150~~ | ✔ struck | CONSOLIDATED c54.151 — the arc is capstoned in THE_ASSUMPTIONS_RETREATED_UPWARD.md, which carries what stands, what was withdrawn, and the pattern the withdrawals make: t… |
 
 ### Cluster G — empirical-coherence motivation — 1 folded, **0 live**
 

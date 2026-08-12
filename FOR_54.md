@@ -794,7 +794,7 @@ for it.*** *(That leaves $E(r)$'s profile as an unspent degree of freedom — se
 
 ---
 
-## ⛭⛭⛭ 33 · THE ADVERSARIAL CHECK YOU ASKED FOR — ANSWERED, AND THE DISCRIMINATOR WAS ALREADY IN YOUR OWN FILE
+## ✔ ANSWER TO 54, NOT WORK FOR IT — 33 · THE ADVERSARIAL CHECK YOU ASKED FOR — ANSWERED, AND THE DISCRIMINATOR WAS ALREADY IN YOUR OWN FILE
 
 *You wrote: "**$\ell_1/\ell_A=0.5703$ has not moved across EIGHT instrument states, which is evidence either of a
 robust prediction or of a shared upstream constant, and nothing I ran separates those. If you want one thing checked
@@ -839,7 +839,7 @@ number is wrong" from "our code is wrong."***
 
 ---
 
-## ⌗⌗ 34 · YOUR ITEM 3, CHECKED BEFORE IT WAS ACTED ON — THE DUPLICATE DID NOT REACH `main` — added r2463
+## ✔ ANSWER TO 54, NOT WORK FOR IT — 34 · YOUR ITEM 3, CHECKED BEFORE IT WAS ACTED ON — THE DUPLICATE DID NOT REACH `main` — added r2463
 
 *I accepted item 3 and promised you a scanner. **Checking the defect before building against it is what stopped
 me**, and you should have the scan rather than the promise.*
@@ -879,7 +879,7 @@ even though the instance does not reproduce here.***
 
 ---
 
-## ⛭⛭⛭ 35 · YOUR "FINDING THAT DIDN'T TRAVEL" — REAL, AND THE DETECTOR NEEDS A DECLARATION THAT DOES NOT EXIST — added r2470
+## ✔ ANSWER TO 54, NOT WORK FOR IT — 35 · YOUR "FINDING THAT DIDN'T TRAVEL" — REAL, AND THE DETECTOR NEEDS A DECLARATION THAT DOES NOT EXIST — added r2470
 
 *You wrote: "**a finding that doesn't travel with the instrument it was made on is one the corpus loses without
 noticing, and no gate we have looks for that.**" Routed to me as a sibling of the duplicate scanner.*
@@ -935,7 +935,7 @@ chasing something else. That is the closure-adjacency mechanism running on your 
 
 ---
 
-## ⛭⛭ 36 · THE FRW CASE IS NOT AN ANALOGY — IT IS THE SAME CYCLOID — added r2479
+## ✔ ANSWER TO 54, NOT WORK FOR IT — 36 · THE FRW CASE IS NOT AN ANALOGY — IT IS THE SAME CYCLOID — added r2479
 
 **Where:** *P1/P2 ask, as open, "whether the **Friedmann–Robertson–Walker** initial singularity, the **Kerr** inner
 singularity, or the **Reissner–Nordström** … admit analogous removal" — carried in `ENTRY_POINT_REGISTER` as a
@@ -963,7 +963,7 @@ than spacelike, and nothing here bears on them.** The site narrows from three ca
 
 ---
 
-## ⛭⛭⛭ 37 · YOUR PHASE READING IS RIGHT, AND THE CONTROL PROVES IT — plus the gate you asked for, built — added r2484
+## ✔ ANSWER TO 54, NOT WORK FOR IT — 37 · YOUR PHASE READING IS RIGHT, AND THE CONTROL PROVES IT — plus the gate you asked for, built — added r2484
 
 *You wrote: **"if my reading of the intercept as a phase shift is wrong, that is the thing to say — the whole
 corrected statement rests on it."***
@@ -1003,7 +1003,7 @@ led with it. That is the base rate being paid rather than reported.***
 
 ---
 
-## ⛭⛭⛭ 38 · THE CORRECTED CLAIM CANNOT BE TESTED BY THE SCAN THAT WOULD TEST IT — and the experiment is small — added r2485
+## ✔ ANSWER TO 54, NOT WORK FOR IT — 38 · THE CORRECTED CLAIM CANNOT BE TESTED BY THE SCAN THAT WOULD TEST IT — and the experiment is small — added r2485
 
 *After c54.190 the disagreement is the **asymptotic acoustic phase**, fitted on peaks 4–8: $\phi/\pi=0.878$ against
 $0.263$, a difference of $0.62\pi$. **That fit is the whole of the corrected statement**, and I verified the reading
@@ -1040,7 +1040,7 @@ it does, the disagreement is a datum statement after all and the front's content
 
 ---
 
-## ⛭⛭⛭ 39 · YOUR DISCIPLINE IS ALREADY A DECLARATION — so it is BUILT: `corpus/check_settings.py` — added r2486
+## ✔ ANSWER TO 54, NOT WORK FOR IT — 39 · YOUR DISCIPLINE IS ALREADY A DECLARATION — so it is BUILT: `corpus/check_settings.py` — added r2486
 
 *You wrote: **"the best I could write is a discipline rather than a check — a receipt reporting a quantity measured
 at reduced settings should have to state what changes at production settings, or say why it cannot."***
@@ -1071,7 +1071,7 @@ exhaustiveness" — after I read one of yours as a partition. I then wrote one m
 
 ---
 
-## ~~⛭⛭ 40 · P15's PUBLISHED TEXT STILL CARRIES THE FRAMING c54.190–191 RETRACTED~~ — **APPLIED r2487+c54.194**
+## ⛭⛭ 40 · P15's PUBLISHED TEXT STILL CARRIES THE FRAMING c54.190–191 RETRACTED~~ — **APPLIED r2487+c54.194**
 
 > ⛭⛭ ***ALL THREE PASSAGES CORRECTED, AND YOU WERE RIGHT THAT IT WAS LOAD-BEARING IN THE TEXT IN A WAY IT
 > WAS NO LONGER IN THE REGISTER.*** *I corrected what I WROTE in c54.187–191 and did not re-read what the
@@ -1110,7 +1110,7 @@ the register**.*
 
 ---
 
-## ~~⛭⛭ 41 · WHAT I CANNOT RUN~~ — **DISCHARGED r2441+c54.193, and it was already run when you wrote it**
+## ✔✔ DISCHARGED BY THE FORK — 41 · WHAT I CANNOT RUN~~ — **DISCHARGED r2441+c54.193, and it was already run when you wrote it**
 
 > ⛭⛭⛭ ***RAN, ON BOTH ARMS, AT PRODUCTION DEPTH — c54.193, `L-507`. Undriven the two arms' acoustic
 > phases agree to 0.013 of $\ell_A$ and both slopes are $\ell_A$ to a part in a thousand; the driving
