@@ -118,6 +118,29 @@ requirement can be NECESSARY AND NOT SUFFICIENT, and only supplying it shows whi
 against it — which is the only kind of evidence a self-scoring programme can offer that its scoring is not
 decorative.***
 
+## ⛭⛭ ENTRY: A RE-WEIGHTING THAT MADE A FRONTIER HARDER — `L-165`/PO-6, r2465
+
+*The register recorded PO-6 as **"shrunk by one clause of three"** at c54.129: $\hat\Gamma$ bounded below.*
+⇒ ***P10 carries a receipt saying the argument does not need that clause*** *— "it does not need a lower bound"; the
+direct-integral decomposition needs only that the spectrum meet both sides of $3/4$.*
+⇒⇒ ***So the clause that was answered is the one the construction does not need, and the two that remain — the UV
+definition of the tower sums, and the closed-form nonlinear $\Lambda>0$ solution — are the ones it does.***
+
+**⌗ MEASURED AGAINST THIS FILE'S DISCRIMINANT — and the interesting thing is that it does not apply.**
+*The discriminant scores **least-arbitrariness arguments**: those that remove an exception succeed, those that add
+machinery fail.* ***This is neither. It is a re-weighting of what is owed*** *— and the base rate has no column for
+that.*
+⚠ **But it belongs here anyway, for a reason the file's own method section implies:** *the base rate is computed over
+claims the corpus **made and later withdrew or kept**, and r2445 already added the observation that* ***a claim
+quietly REWRITTEN rather than withdrawn never enters the count.*** ⇒ ***A frontier item quietly getting SMALLER
+never enters it either — and this is the same defect running the other way.*** **PO-6 was carried as two-thirds
+remaining when what remained was the whole of the load-bearing part.**
+
+⌗ ***AND THE DIRECTION IS THE POINT: a re-weighting that makes a frontier HARDER is evidence the accounting is not
+being run for comfort.*** *A programme that scores itself has one standing temptation — to let a partial answer
+read as partial progress — and the only defence is to ask **which clause the argument actually needed**, which is a
+question about the paper and not about the ledger.*
+
 # THE BASE RATE
 *`L-35` / P6 `A5.5`, worked r2376+c54.35.* **P6 calls this "the one genuinely unworked item" of its own
 programme.** *The corpus argues from **least-arbitrariness** — Rule 2 — and a criterion of that kind is only as

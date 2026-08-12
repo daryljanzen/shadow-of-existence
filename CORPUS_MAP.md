@@ -146,6 +146,42 @@ sources: [cowork, chat]
 
 
 
+### Revision r2465 — 2026-08-11 (main line). **PO-6 RE-WEIGHTED, NOT CLOSED — the boundary problem is PER-FIBRE and the UV is OVER-FIBRES, and the clause that was answered is the one the argument does not need.**
+
+**⌗⌗ THE STRUCTURAL REASON P10's FRAMING MUST BE TRUE RATHER THAN HAPPENING TO BE.** *P10 says what remains is "the
+standard problem of the interacting theory rather than a residual freedom in the quantization". With the tower
+coupled, $-\partial_x^2+\hat\Gamma/x^2$ **decomposes as a direct integral over $\hat\Gamma$'s spectrum**, and thermal
+regularity supplies the condition **fibre by fibre**.*
+⇒ ***THE BOUNDARY CLOSURE IS A STATEMENT ABOUT EACH FIBRE; THE UV IS A STATEMENT ABOUT THE SUM OVER FIBRES. A
+PER-FIBRE CONDITION CANNOT BE BROKEN BY THE NUMBER OF FIBRES.***
+⌗ *Verified: deficiency $(1,1)$ at $\Gamma=-5,\,-\tfrac14,\,0,\,\tfrac14,\,0.7499$ **alike**, and $(0,0)$ at
+$\tfrac34,1,10^2,10^6$ — **so the condition's applicability does not vary across the sub-threshold set; only
+membership in it does, and the set's SIZE is irrelevant**. And the straddle survives an **unbounded-below**
+operator, both subspaces staying non-empty, which is all the decomposition uses.*
+
+**⛭⛭ AND THAT RE-WEIGHTS THE ROW'S OWN ACCOUNTING.** *`L-165` records PO-6 **"shrunk by one clause of three"** at
+c54.129 — true — and* ***P10 carries a receipt saying the argument does not need that clause***: `P10_the_straddle_
+does_not_need_a_floor`, **"it does not need a lower bound."**
+⇒ ***THE CLAUSE THAT WAS ANSWERED IS THE ONE THE CONSTRUCTION DOES NOT NEED. The two that remain — the ultraviolet
+definition of the tower sums, and the closed-form nonlinear $\Lambda>0$ solution — are the ones it does.***
+⌗ **So PO-6 did not shrink by a third; it got more exactly weighted:** *one clause off the list that was never
+load-bearing, two on it that are.* ***The remaining frontier is HARDER rather than smaller.***
+
+**⌗ AND `THE_BASE_RATE` GAINS AN ENTRY, for a reason its own method implies.** *The base rate is computed over
+claims the corpus **made and later withdrew or kept**, and r2445 added that **a claim quietly REWRITTEN rather than
+withdrawn never enters the count**.* ⇒ ***A frontier item quietly getting SMALLER never enters it either — the same
+defect running the other way. PO-6 was carried as two-thirds remaining when what remained was the whole of the
+load-bearing part.***
+⚠ ***And the direction is the point: a re-weighting that makes a frontier HARDER is evidence the accounting is not
+being run for comfort.*** *The only defence against letting a partial answer read as partial progress is to ask
+**which clause the argument actually needed** — a question about the paper, not about the ledger.*
+
+⌗ *Not claimed: that c54.129 was wasted — **it answered a real question about the COMPLETE operator**, the cubic's
+apparent unboundedness being the truncation of $\pi^2/(1+\lambda\phi)$, and **an answer that turns out not to be
+needed is still an answer**. Nor anything about the UV's tractability.* ***PO-6 stays open; its closure is Daryl's.***
+
+**Register: 229 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2464 — 2026-08-11 (main line). **A MARKER CONSTRAINS AN ACT, NEVER A SUBJECT — reading `PROTECTED_OPEN` as "do not touch" had taken four live research questions off the board, and working one found two stale premises.**
 
 **⛔⛔ THE MISREADING.** *At r2463 this line reported `L-165` (PO-6), `L-221` (PO-5), `L-175` (PO-9) and `L-202` as
