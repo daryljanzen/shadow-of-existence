@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2431 — 2026-08-11 (main line). **c54.182 MERGED — the lensing potential derived, and it turned two of this line's receipts red by applying this line's own findings.**
+
+**⌗ THE FORK'S RESULT: CMB LENSING ON THE $\Lambda$CDM ARM, NON-PERTURBATIVE AND WITH ZERO FREE PARAMETERS.**
+*Peak positions move $0.00\%$ — matching the banked $0.1\%$ — and $\chi^2$ falls **1320.5 → 989**, concentrated in the
+damping tail $\ell\in[1100,1500]$ where lensing fills the troughs.* ⌗ ***And the discipline is in the result: it stays
+UNDER the fitted-smoothing upper bound, as a derived operation should, while the corpus's own first-order Hu kernel
+overshoots.***
+
+**⛔⛔ AND IT TURNED TWO OF THIS LINE'S RECEIPTS RED — BY APPLYING THIS LINE'S OWN ROUTED ITEMS.** *`W1` asserted that
+P8's comment **still** carried "the deepest open question the construction raises"; `G3` asserted that P9 **still**
+read "lies along it". **c54.179 applied both, as items 16 and 14** — so* ***their premises are false BECAUSE the
+findings were taken.*** *`run_all_receipts` caught it: 300 pass, 2 fail.*
+⇒ **The fork edited them rather than routing them, and stated the reason for weighing:** *it was handing the tree
+over, and leaving two receipts red in order to observe the routing convention would have been **ceremony at the cost
+of a green tree**.* ⌗ ***Accepted as landed — not reverted, not revised.*** *The convention is for findings in
+another line's PAPERS; a red receipt in a tree being handed over is a different thing.*
+
+**⛭⛭ AND THE RULE IT EARNS IS THE SHARPER FORM OF THIS LINE'S OWN HEADER, which the fork quoted back:**
+*"a receipt naming a defect is evidence it was FOUND, never evidence it is still THERE"* ⇒ ***A RECEIPT THAT ASSERTS
+A DEFECT PERSISTS IS A RECEIPT WITH AN EXPIRY DATE, AND IT EXPIRES THE REVISION THE OTHER LINE APPLIES IT.***
+⚠ **And the diagnosis of why this line wrote them that way is the part to keep:** *both receipts were written **to
+prove a finding was real before it was routed** — which requires the pre-fix state — **and were then left standing as
+though they were permanent facts.***
+⇒ ***THE FIX IS TO SPLIT THE TWO JOBS: assert the STRUCTURAL claim, which survives the fix, and record the pre-fix
+state as a DATED OBSERVATION in the docstring, which does not need to be re-checkable.*** *Applied going forward; the
+two the fork turned stay as it left them.*
+
+⌗ **One conflict, in `FOR_56.md`, and it was the predicted one:** *both lines wrote an item 7 into the same append-only
+section.* ⇒ *Resolved by keeping both — the fork's live finding as 7, this line's disposition as 8 — which is what
+`merge=union` is for and what a hand resolve does when union cannot renumber.*
+
+**Register: 215 rows. Gates: twenty-one, twenty rc=0.**
+
 ### Revision r2430 — 2026-08-11 (main line). **`L-150` TAKEN with its handover interface fixed first, and §0 finds the derivation already made — one universe back.**
 
 **⌗⌗ THREE POINTERS CONVERGE ON THIS ROW INDEPENDENTLY, and the third is the fork's, arrived at from the paper

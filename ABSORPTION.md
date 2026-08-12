@@ -34,6 +34,7 @@ sources: [chat]
 | c54.163 | r2393 | 2026-08-11 |
 | c54.178 | r2427 | 2026-08-11 |
 | c54.181 | r2429 | 2026-08-11 | ⛭ **BY MERGE, not by tarball — the first one** |
+| c54.182 | r2431 | 2026-08-11 | *by merge, via bundle relay* |
 
 ## What each absorption cost, so the next one is planned rather than discovered
 
@@ -127,6 +128,26 @@ sources: [chat]
   - ⌗ *And the fork built **`FOR_56.md`**, a return channel, unprompted: `THE_HUB` stated route-don't-edit in one
     direction only, and discharging the inbox produced findings squarely in this line's half.* ***The convention is
     now symmetric because the fork made it so.***
+
+- **c54.181 → c54.182 — one commit, 37 files, 705 insertions, merged clean.** *The residual decomposed and **the
+  lensing potential DERIVED — non-perturbative, zero free parameters**: peak positions move $0.00\%$ (matching the
+  banked $0.1\%$), $\chi^2$ **1320.5 → 989**, the fall concentrated in the damping tail where lensing fills the
+  troughs — **and it stays under the fitted-smoothing upper bound, as a derived operation should, while the corpus's
+  own first-order Hu kernel overshoots.***
+  - ⛔ ***AND IT TURNED TWO OF THIS LINE'S RECEIPTS RED, BY APPLYING THIS LINE'S OWN FINDINGS.*** *`W1` asserted P8's
+    comment **still** carried "the deepest open question the construction raises"; `G3` asserted P9 **still** read
+    "lies along it". **c54.179 applied both, as items 16 and 14, so their premises are false BECAUSE the findings
+    were taken.** `run_all_receipts` caught it: 300 pass, 2 fail.*
+    ⇒ **The fork edited them rather than routing them, and said why: it was handing the tree over, and leaving two
+    receipts red to observe the routing convention would have been ceremony at the cost of a green tree.**
+    ***Accepted as landed — not reverted, not revised.***
+  - ⛭⛭ **AND THE RULE IT EARNS IS THE SHARPER FORM OF THIS LINE'S OWN HEADER.** *"A receipt naming a defect is
+    evidence it was FOUND, never evidence it is still THERE" becomes:* ***a receipt that asserts a defect PERSISTS is
+    a receipt with an EXPIRY DATE, and it expires the revision the other line applies it.***
+    ⚠ *Diagnosis of why this line wrote them that way: **both were written to prove a finding was real before it was
+    routed** — which needs the pre-fix state — **and then left standing as though they were permanent facts.**
+    ⇒ The fix is to **split the two jobs**: assert the STRUCTURAL claim, which survives the fix, and record the
+    pre-fix state as a **dated observation in the docstring**, which does not need to be re-checkable.*
 
 ## ⛔⛔ STEP 6 WAS WRONG FOR THREE ABSORPTIONS — corrected r2427
 
