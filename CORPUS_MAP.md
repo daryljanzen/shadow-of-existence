@@ -146,6 +146,41 @@ sources: [cowork, chat]
 
 
 
+### Revision r2446 — 2026-08-11 (main line). **`scope_table` SHARPENED — three parser defects, each a different reading of "what is a setting", and the finding got STRONGER at every fix.**
+
+**⌗⌗ THE THREE, and they are worth separating because they are three different mistakes.**
+*· **TUPLE ASSIGNMENT.** `ombh2, z_rec = 0.0224, 1089.9` matched the `z_rec` pattern and captured **0.0224**, because
+the regex takes the first value after the `=` rather than the one **positionally** corresponding to the name.*
+⛭ ***AND IT RESOLVED INTO A TRUE POSITIVE ON THE OTHER SIDE OF THE FIX:*** *both sites carry real settings — 1089.9
+(Set B) and 1100.0 (Set A) — so correcting the parser **added one receipt to each set**.* **A false positive that
+becomes a true positive when fixed is the best kind: the tool was seeing something and reporting it under the wrong
+name.**
+*· **THE NUMBER PATTERN.** `M = sp.Matrix([[0,1,0],...` matched the `M` pattern.* ***A parameter pattern must
+require a bare NUMBER, or it reports every use of the letter.***
+*· **STRING LITERALS.** P14's second `M` was `det M = +1` **inside a printed label** — which the narrowed number
+pattern did not touch, because the text was a perfectly good `"M = +1"`.* ⇒ ***A parameter SETTING is code; a
+parameter mentioned in a string is prose the receipt happens to print.*** ⌗ *The same reasoning that already dropped
+comments and the docstring — **literals were simply the case nobody had hit.***
+
+**⛭⛭ AND `F15`'s FINDING SURVIVED ALL THREE AND SHARPENED.** *It rested on `z_rec` at **7-versus-4 with two spurious
+rows**. It is now* ***8-versus-7, clean*** *— **a near-even split across P15's receipt layer, which makes "which set
+is this number at?" a HARDER question for the paper, not an easier one.*** ⌗ *`M`'s spurious spreads in P07 and P14
+are gone entirely, and `Omega_m` fell 6→5, `H0` 6→4.*
+
+**⌗ AND A SECOND CURATION CATEGORY, `BY_DESIGN`, which is not tidiness.** *`H0` at 67.4 and 73.0 is **not drift — it
+is the Hubble tension itself**, and `sec:refit-bound` evaluates at both ends by construction. Reporting it as a
+spread would train a reader to ignore the tool.*
+⇒ ***A RECEIPT-level exclusion says "this file is not about CR"; a PARAMETER-level one says "this quantity has two
+right answers" — and only the second survives a reader asking WHICH VALUE a sentence is at, because for a
+`BY_DESIGN` parameter the sentence MUST say.***
+**So `BY_DESIGN` entries are reported under their own heading rather than silenced:** *a question about **citation**
+rather than about **consistency**.*
+
+⌗ *`L-231` struck. The lint is now usable on the scope class (`L-230`) rather than promising — **and its three
+defects were all recorded at adoption, so fixing them was bookkeeping rather than discovery.***
+
+**Register: 224 rows, 178 struck. Gates: twenty-one, twenty rc=0. Two lints.**
+
 ### Revision r2445 — 2026-08-11 (main line). **THE TWO STALE GRAINS DECLARE THEIR GAP AS AN AUDITABLE LIST — and this line got the gate's mechanism wrong twice on the way there.**
 
 **⌗ WHAT LANDED.** *`THE_PLAN` and `THE_OPEN_PROBLEMS_LEDGER` each carry a currency head naming **the eight rows

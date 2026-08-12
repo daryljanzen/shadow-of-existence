@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.185 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**13 open QUESTIONS · 33 open WORK rows · 1 OBSERVED · 1 HELD** *(176 struck of 224 registered).*
+**13 open QUESTIONS · 32 open WORK rows · 1 OBSERVED · 1 HELD** *(177 struck of 224 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -87,5 +87,4 @@ sources: [cowork]
 | **`L-220`** | `G1_the_arrival_path_metric` · `RP_34_GR_BASELINE` · `L-209` · `U1`/`ENTRY_POINT_REGISTER` | REGISTERED r2416 — THE ARRIVAL-PATH CLASS: the corpus's content is complete and its arrival paths are not. Three instances, three papers, three documents, and none of them a physics defect: `L-209` (r… |
 | **`L-228`** | `THE_HUB.md` — `corpus/check_loci.py` · node 52 | REGISTERED r2440 — `check_loci.py` ADOPTED FROM NODE 52 AS A LINT AND NOT A GATE, on its own measurement. It exploits the thing that makes this corpus checkable: every computed claim is bound to a run… |
 | **`L-230`** | `THE_ARSENAL.md` — `_dig/findings_batch2/` · `FOR_54` 24–26 · `ARC 17` · `L-223` | REGISTERED r2442 — THE POINT-STATED-AS-FAMILY CLASS, and it is `ARC 17`'s finding one axis over. Node 55's batch 2 diagnosed its own pattern before this line saw it: "a claim verified at one point of … |
-| **`L-231`** | `THE_ARSENAL.md` — `corpus/scope_table.py` · node 55 `F15` · `L-230` | REGISTERED r2443 — `scope_table.py` ADOPTED FROM NODE 55 AS A LINT, and it is the instrument `L-230` said the corpus lacks. The contributor's statement of the gap is exact: "`check_receipts` verifies … |
 

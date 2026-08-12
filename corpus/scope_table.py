@@ -37,12 +37,28 @@ consistent parameter sets, and the paper draws on both. **
     "moves by only -0.11%".  ** A 0.7% inconsistency between the receipt sets is six times the 0.11%
     the paper reports as negligible, so WHICH SET a number came from is load-bearing there. **
 
-⚠ KNOWN PARSER DEFECT, recorded at adoption rather than discovered later.  On this tree the table
-reports z_rec taking the values ['0.0224'] (from P15_the_first_peak_figure_is_not_stable) and ['0.307']
-(from P15_the_shear_coefficient_derived_not_remembered).  ** Those are an omega_b h^2 and an Omega_m
-caught by the z_rec regex -- false positives, not settings. **  So the run is not clean and should not
-be read as clean: ** the two-set finding stands on the SEVEN receipts read by hand, not on the table's
-raw counts. **  Narrowing the patterns is the next move on the tool.
+✔ THE PARSER DEFECTS RECORDED AT ADOPTION ARE FIXED (r2446), and there were THREE, each a different
+reading of what counts as a setting:
+
+  * ** TUPLE ASSIGNMENT. **  `ombh2, z_rec = 0.0224, 1089.9` matched z_rec and captured 0.0224,
+    because the pattern takes the first value after the `=` rather than the one POSITIONALLY
+    corresponding to the name.  Fixed by expanding flat tuple assignments before matching.
+    ⌗ ** And it resolved into a TRUE positive on the other side of the fix: ** both sites carry real
+    settings -- 1089.9 (Set B) and 1100.0 (Set A) -- so correcting the parser ADDED one receipt to
+    each set.  ** A false positive that becomes a true positive when fixed is the best kind: the tool
+    was seeing something and reporting it under the wrong name. **
+  * ** THE NUMBER PATTERN. **  `M = sp.Matrix([[0,1,0],...` matched the M pattern.  A parameter
+    pattern must require a bare NUMBER, or it reports every use of the letter.
+  * ** STRING LITERALS. **  P14's second M was `det M = +1` inside a PRINTED LABEL.  Narrowing the
+    number pattern did not touch it, because the text was a perfectly good "M = +1".
+    ⇒ ** A parameter SETTING is code; a parameter mentioned in a string is prose the receipt happens
+      to print. **  The same reasoning that already dropped comments and the docstring -- literals
+      were simply the case nobody had hit.
+
+⇒ ** AND THE FINDING SURVIVED EVERY FIX AND GOT STRONGER. **  F15's two-set claim rested on z_rec at
+7-versus-4 with two spurious rows.  ** It is now 8-versus-7, clean ** -- a near-even split across
+P15's receipt layer, which makes "which set is this number at?" a HARDER question for the paper, not
+an easier one.
 
 Adopted r2443.  Stated for reversal.
 """
@@ -102,15 +118,75 @@ def _find_receipts():
 
 RC = _find_receipts()
 
+# ** r2446: TUPLE ASSIGNMENT, which is where both of this tool's false positives came from. **
+# `ombh2, z_rec = 0.0224, 1089.9` matched the z_rec pattern and captured 0.0224, because the regex
+# takes the first value after the `=` rather than the one POSITIONALLY corresponding to the name.
+# Reported at adoption (r2443) as two false positives; this is the fix.
+#
+# ⌗ AND IT STRENGTHENS THE FINDING RATHER THAN SHRINKING IT: both sites carry real settings --
+# P15_the_first_peak_figure_is_not_stable at z_rec = 1089.9 (Set B) and
+# P15_the_shear_coefficient_derived_not_remembered at z_rec = 1100.0 (Set A) --
+# ** so correcting the parser ADDS two receipts to the two-set picture, one to each side. **
+# A false positive that resolves into a true positive on the other side of the fix is the best kind:
+# the tool was seeing something and reporting it under the wrong name.
+_TUPLE = re.compile(r'^([ \t]*)([A-Za-z_][\w, \t]*?)\s*=\s*([^=\n#][^\n#]*)$', re.M)
+
+
+def _expand_tuples(src):
+    """Rewrite `a, b = x, y` as separate `a = x` / `b = y` lines so the name-patterns below
+    capture the value that belongs to the name.  Left alone when the arities disagree, when
+    either side contains a call or subscript, or when there is no comma at all."""
+    out = []
+    for line in src.split('\n'):
+        m = _TUPLE.match(line)
+        if not m or ',' not in m.group(2):
+            out.append(line)
+            continue
+        names = [n.strip() for n in m.group(2).split(',')]
+        rhs = m.group(3)
+        # only split a FLAT comma list: no brackets, no calls
+        if any(c in rhs for c in '()[]{}'):
+            out.append(line)
+            continue
+        vals = [v.strip() for v in rhs.split(',')]
+        if len(names) != len(vals) or not all(n.isidentifier() for n in names):
+            out.append(line)
+            continue
+        out.extend(f'{m.group(1)}{n} = {v}' for n, v in zip(names, vals))
+    return '\n'.join(out)
+
+
 # name -> regex for an assignment or a default argument
 KEYS = {
-    'M':       r'\bM\s*=\s*([-+0-9][0-9eE+\-*/.()\s]*?)(?=[;\n#,)]|$)',
+    # ** r2446: narrowed.  The original matched `M = sp.Matrix([[0,1,0],...` and `det M = +1`
+    # in P14_the_lap_orientation_is_derived -- a matrix and a determinant, not a mass.
+    # ⇒ ** A parameter pattern must require a bare NUMBER, or it reports every use of the letter. **
+    'M':       r'(?<![\w.])M\s*=\s*([-+]?[0-9]+\.?[0-9]*(?:[eE][-+]?[0-9]+)?)\s*(?=[;\n#,)]|$)',
     'Omega_m': r'\bOm(?:ega_m)?\s*=\s*([0-9][0-9eE+\-*/.()\s]*?)(?=[;\n#,)]|$)',
     'H0':      r'\bH0(?:_kms)?\s*=\s*([0-9][0-9eE+\-*/.()\s]*?)(?=[;\n#,)]|$)',
     'omega_r': r'\b(?:wr|omega_r|Or_content)\s*=\s*([0-9][0-9eE+\-*/.()\s]*?)(?=[;\n#,)]|$)',
     'ombh2':   r'\bombh2\s*=\s*([0-9][0-9eE+\-*/.()\s]*?)(?=[;\n#,)]|$)',
     'eta10':   r'\beta10\s*=\s*([0-9][0-9eE+\-*/.()\s]*?)(?=[;\n#,)]|$)',
     'z_rec':   r'\bz_rec\s*=\s*([0-9][0-9eE+\-*/.()\s]*?)(?=[;\n#,)]|$)',
+}
+
+# ** r2446: TWO CATEGORIES, because they are two different judgements and collapsing them hides one. **
+#
+# DELIBERATE  -- a RECEIPT running someone else's cosmology as the reference CR is measured against.
+#                Excluding it is right: forcing CR's fitted value there would be the error.
+# BY_DESIGN   -- a PARAMETER that legitimately carries two values across the whole layer, because the
+#                paper's argument runs at both.  ** H0 at 67.4 and 73.0 is not drift: it is the Hubble
+#                tension itself, and P15's sec:refit-bound turns on evaluating at both ends. **
+#                Reporting that as a spread would train a reader to ignore the tool.
+#
+# ⚠ AND THE DISTINCTION MATTERS BEYOND TIDINESS: a receipt-level exclusion says "this file is not
+# about CR"; a parameter-level one says "this quantity has two right answers".  ** Only the second
+# survives a reader asking WHICH VALUE a sentence is at -- because for a BY_DESIGN parameter, the
+# sentence must say. **  So BY_DESIGN entries are not silenced; they are reported under their own
+# heading, as a question about citation rather than about consistency.
+BY_DESIGN = {
+    ('P15_CR_cosmology', 'H0'): ("67.4 and 73.0 are the two ends of the Hubble tension; "
+                                 "sec:refit-bound evaluates at both by construction"),
 }
 
 # receipts whose setting is a DELIBERATE reference cosmology, not CR's own.  Curate this.
@@ -124,8 +200,15 @@ DELIBERATE = {
 
 
 def settings(path):
-    t = open(path, encoding='utf-8', errors='replace').read()
+    t = _expand_tuples(open(path, encoding='utf-8', errors='replace').read())
     body = '\n'.join(l for l in t.split('\n') if not l.lstrip().startswith('#'))
+    # ** r2446: STRIP STRING LITERALS.  P14's second `M` setting was `det M = +1` inside a PRINTED
+    # LABEL -- a string, not code.  Narrowing the number pattern did not touch it, because the text
+    # was a perfectly good "M = +1".  ⇒ ** A parameter SETTING is code; a parameter mentioned in a
+    # string is prose the receipt happens to print. **  The same reasoning as dropping comments and
+    # the docstring, which this function already does -- the literals were simply the case nobody
+    # had hit yet.
+    body = re.sub(r'"[^"\n]*"|\'[^\'\n]*\'', '""', body)
     if body.lstrip().startswith('"""'):                     # drop the docstring
         body = body.split('"""', 2)[-1]
     out = {}
@@ -191,14 +274,28 @@ def main():
             if len(bydir[d]) < 2:
                 continue
             total += 1
-            print(f"  {key} takes {len(bydir[d])} distinct settings inside {d}"
-                  f"   (deliberate reference cosmologies excluded)")
+            # ** r2446: BY_DESIGN is reported under its own heading, not silenced. **  A parameter
+            # that legitimately carries two values (H0 at both ends of the Hubble tension) is not a
+            # consistency question -- but it IS a citation question, because ** for such a parameter
+            # a sentence quoting a number MUST say which value it is at. **  Silencing it would hide
+            # the one question it does raise.
+            why = BY_DESIGN.get((d, key))
+            if why:
+                print(f"  ⌗ {key} takes {len(bydir[d])} settings inside {d} BY DESIGN")
+                print(f"      {why}")
+                print(f"      ⇒ not a consistency question. ** A sentence quoting one of these must")
+                print(f"         say which value it is at. **")
+            else:
+                print(f"  {key} takes {len(bydir[d])} distinct settings inside {d}"
+                      f"   (deliberate reference cosmologies excluded)")
             for v, fs in sorted(bydir[d].items(), key=lambda x: -len(x[1])):
                 print(f"      {str(list(v)):<26} {len(fs):>2}x  "
                       f"{', '.join(sorted(fs)[:3])}{' ...' if len(fs) > 3 else ''}")
             print()
     if total:
-        print(f"  {total} parameter(s) carry more than one setting inside a single paper's receipts.")
+        print(f"  {total} parameter(s) carry more than one setting inside a single paper's receipts"
+              f"   (BY_DESIGN entries above are counted here too, and are a CITATION question,"
+              f" not a consistency one).")
         print("  That is a QUESTION, not a failure: either the settings are deliberate and belong")
         print("  in DELIBERATE with a reason, or the paper's sentences should say which one they")
         print("  are at.  ** Nothing else in the suite asks it. **")
