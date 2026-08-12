@@ -31,6 +31,7 @@ branch, correctly done, and invisible.*** *`L-700` is that work, landed r2507.*
 | *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2529, tip `15440d1`)* | — | — | — |
 | *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2537)* | — | — | — |
 | *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2544)* | — | — | — |
+| `claude/cosmological-relativity-c54-sn2msi` | `f1f72e8` | cc54 | **L-804** — the isocurvature bound pointed at item 32's adiabatic premise, settled by a number: the sky excludes pure isocurvature at Δχ²~3.3e5 (first peak 294 vs 220), so CR's adiabatic premise is what the data demands, and CR inherits it — objection disarmed. Receipt `S1` (7 checks, camb+plik_lite) · the paragraph routes to 54 · merged current to r2547b |
 
 ---
 
