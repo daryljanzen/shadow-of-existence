@@ -35,6 +35,25 @@ pattern silently failed and the tool printed "clean".
   available.
 
 Adopted r2440.  Stated for reversal.
+
+── MEASURED AGAIN AT r2501+c54.197, because the shipped tool did NOT catch its own motivating case ──
+
+  ** The check was verified against a clean tree, which measures nothing. **  Seeding P15's
+  prop:subhorizon body back to "inside the horizon at the branch point" -- the sentence routed item
+  21 names FIRST, the exact class the r2289 quote in the header describes -- left this file printing
+  "clean" and exiting 0.  The receipt binding for a proposition lives in its ARGUMENT paragraph, a
+  separate sentence, so the corpus's most load-bearing claim shape was the one shape structurally
+  invisible.  Theorem-body binding added; the scan is otherwise unchanged.
+
+  re-measured on the whole corpus, both states:
+      before  : 11 bindings, 1 flag  (the declared C6 false positive), motivating defect MISSED
+      after   : 12 bindings, 1 flag  (the same, now EXCUSED), motivating defect CAUGHT at line 223
+  ⇒ ** +1 binding, +0 false alarms, and the one site the tool exists for moved from invisible to
+     caught. **  Precision is unchanged, which is the constraint the contributor named as binding.
+
+  ⚠ AND THE DECLARED-EXCEPTION MACHINERY BELOW EXISTS FOR THE SAME REASON IN REVERSE: after the
+  c54.197 sweep the tool's entire steady-state output was one flag known to be bogus, and a lint
+  read that way is a lint not read.  Exceptions are keyed to sentence TEXT and go STALE loudly.
 """
 
 # ── the contributor's own header, kept verbatim ──
@@ -104,6 +123,46 @@ NEGATED = [r'\bno\s+{L}', r'\bnot\s+(?:the\s+)?{L}', r'\brather than\s+(?:the\s+
            r'\bdistinct from\s+(?:the\s+)?{L}', r'\bseparate[sd]?\s+all\s+four']
 
 
+# ── r2501+c54.197: THE DECLARED EXCEPTIONS, and why they are keyed to TEXT and not to a line ──
+#
+# This lint's own header names precision as the binding constraint: "a false alarm in the register
+# costs more than the error, because the next reader inherits a debt that does not exist."  After the
+# item-21 sweep (c54.197) every real mismatch in P15 is fixed, and the ONE flag left standing is a
+# site the finder named as a false positive BEFORE the tool was ever run: the sentence orders the
+# branch point against the neutrinos' decoupling in TEMPERATURE along the excursion, which is not a
+# horizon property at a locus and is true as written.
+#
+# *** A lint whose entire steady-state output is one known-bogus flag trains its readers to skip it,
+#     which is the same failure as a green result from a broken instrument, arriving from the other
+#     side. ***  So the exception is declared here.
+#
+# ⚠ AND THE DISCIPLINE THAT MAKES IT SAFE.  An exception keyed to a FILE AND LINE silently protects
+# whatever text later moves onto that line -- it is a suppression that outlives its reason.  Each
+# entry below therefore carries a distinctive fragment of the sentence it excuses, and:
+#   (a) the exception applies only while that fragment is still present in the flagged sentence;
+#   (b) if the fragment is present NOWHERE in the corpus, the exception is reported as STALE and the
+#       tool exits non-zero -- so a rewritten sentence loses its cover LOUDLY rather than quietly.
+# Verified against a seeded defect both ways at c54.197, not against a clean tree.
+EXCEPTIONS = [
+    {
+        'tex':      'CR_cosmology.tex',
+        'rcpt':     'C6_neutrino_term',
+        'fragment': 'branch point is far below their decoupling',
+        'why':      'a TEMPERATURE ordering along the excursion, not a horizon property at a locus '
+                    '-- named as a false positive by the finder of routed item 21 in advance, and '
+                    'confirmed against C6 (the seam temperature is 1.6 eV; decoupling is ~1 MeV)',
+    },
+]
+
+
+def excused(tex, key, sent):
+    """Is this flag a DECLARED exception, and does its sentence still carry the declared fragment?"""
+    for e in EXCEPTIONS:
+        if e['tex'] == tex and e['rcpt'] == key and e['fragment'] in sent:
+            return e
+    return None
+
+
 def asserted_of(text, name, pats):
     """Is a property ASSERTED OF this locus here (and not merely mentioned or denied)?"""
     for p in pats:
@@ -144,8 +203,33 @@ def find_receipt(key):
     return None
 
 
+# ── r2501+c54.197: THE RECALL HOLE AT THE LINT'S OWN MOTIVATING SITE ──
+#
+# ** This tool did not catch the defect it was built to catch, and that was found by SEEDING it. **
+# Re-breaking P15's prop:subhorizon body -- "inside the horizon at the branch point", the exact
+# sentence routed item 21 names first and the exact class the header's r2289 quote describes --
+# left this lint printing "clean" and exiting 0.
+#
+# THE MECHANISM: the binding between a claim and its receipt is not always intra-sentence.  A
+# `proposition` states its claim in the body and cites its receipt in the SEPARATE argument
+# paragraph below it, so a per-sentence scan sees an assertion with no receipt (skipped: "a sentence
+# citing no receipt is not checked") and a citation with no assertion.  ** The corpus's most
+# load-bearing claim shape was the one shape structurally invisible to the check. **
+#
+#   *** A gate verified only against a clean tree measures nothing.  The header's own lesson --
+#       "a green result from a broken instrument is the worst outcome available" -- had a second
+#       instance sitting inside the instrument that states it. ***
+#
+# THE FIX, kept structural rather than widening the window (which would trade precision for recall,
+# and this tool's header names precision as binding): a theorem-like environment's BODY is bound to
+# the receipt cited in the argument/proof paragraph that immediately follows it.  Nothing else about
+# the scan changes.  Re-measured at c54.197 on the whole corpus -- see MEASURED below.
+THEOREM_ENVS = r'proposition|theorem|lemma|corollary|claim|observation'
+
+
 def sentences_with_rcpt(tex):
-    """Yield (sentence, receipt_key) for each \\rcpt{} call, with its enclosing sentence."""
+    """Yield (sentence, receipt_key, line) for each \\rcpt{} call, with its enclosing sentence --
+    plus, for each theorem-like environment, its BODY bound to the receipt its argument cites."""
     s = re.sub(r'(?m)^%.*$', '', tex)
     for m in re.finditer(r'\\rcpt\{([^}]+)\}', s):
         key = m.group(1).replace('\\_', '_')
@@ -156,9 +240,33 @@ def sentences_with_rcpt(tex):
         hi = len(s) if hi < 0 else hi + 1
         yield s[lo:hi], key, s[:m.start()].count('\n') + 1
 
+    # theorem body ← receipt cited in the argument paragraph that follows it
+    for m in re.finditer(r'\\begin\{(%s)\}(.*?)\\end\{\1\}' % THEOREM_ENVS, s, re.S):
+        body = m.group(2)
+        # The argument/proof paragraph.  Bounded STRUCTURALLY, not by a character count: the search
+        # runs to the next sectioning command or the next theorem-like environment, and the receipt
+        # must sit in the argument's OWN paragraph.  (A fixed 1400-char window was the first attempt
+        # and it silently missed this paper's very first proposition -- the clarification paragraphs
+        # between the statement and its argument are longer than the window, so the binding fell off
+        # the end.  A cap chosen by eye is a recall hole with no error message.)
+        tail = s[m.end():]
+        stop = re.search(r'\\(?:sub)*section\b|\\begin\{(?:%s)\}' % THEOREM_ENVS, tail)
+        if stop:
+            tail = tail[:stop.start()]
+        am = re.search(r'(?:Argument|Proof)\.?\}?', tail)
+        if not am:
+            continue
+        para = tail[am.start():]
+        endp = re.search(r'\n\s*\n', para)
+        if endp:
+            para = para[:endp.start()]
+        for r in re.finditer(r'\\rcpt\{([^}]+)\}', para):
+            yield body, r.group(1).replace('\\_', '_'), s[:m.start()].count('\n') + 1
+
 
 def main():
     problems = []
+    excused_hits = []
     checked = 0
     for tex in sorted(os.listdir(os.path.join(ROOT, 'corpus'))):
         if not tex.endswith('.tex') or tex.startswith('appendix_receipts'):
@@ -183,19 +291,36 @@ def main():
             # says "the branch point sits on its rising branch... rather than a numerical
             # accident of z_onset", and C2 says the SEAM sits there).
             if not (claimed <= named):
-                problems.append((tex, line, key, sorted(claimed), sorted(named),
-                                 re.sub(r'\s+', ' ', sent)[:150]))
+                flat = re.sub(r'\s+', ' ', sent)
+                ex = excused(tex, key, flat)
+                if ex is not None:
+                    excused_hits.append((tex, line, key, ex))
+                    continue
+                problems.append((tex, line, key, sorted(claimed), sorted(named), flat[:150]))
 
     print('check_loci: %d receipt-bound locus claims checked' % checked)
-    if not problems:
+
+    for tex, line, key, ex in excused_hits:
+        print('  EXCUSED  %s:%d cites %s -- %s' % (tex, line, key, ex['why']))
+
+    # an exception whose sentence no longer exists is a suppression outliving its reason
+    stale = [e for e in EXCEPTIONS
+             if not any(e['tex'] == t and e['rcpt'] == k for t, _, k, _ in excused_hits)]
+    for e in stale:
+        print('\n  ** STALE EXCEPTION ** %s / %s' % (e['tex'], e['rcpt']))
+        print('     declared fragment no longer flagged: %r' % e['fragment'])
+        print('     the sentence was rewritten or the flag went away -- REMOVE the entry, do not keep it')
+
+    if not problems and not stale:
         print('  clean -- every locus-naming claim agrees with the receipt it cites')
         return 0
-    print('  %d MISMATCH(ES):' % len(problems))
-    for tex, line, key, claimed, named, sent in problems:
-        print('\n  %s:%d  cites %s' % (tex, line, key))
-        print('    paper names  : %s' % ', '.join(claimed))
-        print('    receipt names: %s' % ', '.join(named))
-        print('    > %s' % sent)
+    if problems:
+        print('  %d MISMATCH(ES):' % len(problems))
+        for tex, line, key, claimed, named, sent in problems:
+            print('\n  %s:%d  cites %s' % (tex, line, key))
+            print('    paper names  : %s' % ', '.join(claimed))
+            print('    receipt names: %s' % ', '.join(named))
+            print('    > %s' % sent)
     return 1
 
 

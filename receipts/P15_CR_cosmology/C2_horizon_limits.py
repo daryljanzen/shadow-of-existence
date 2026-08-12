@@ -98,7 +98,14 @@ print("="*80)
 # from np.isclose(rHE, 1/sqrt3) -- and then only PRINTED it.  It is asserted here, together with
 # pins of its own, so the file can fail.  What is being gated is C2's claim, which
 # CR_cosmology.tex sec:envelope cites: the comoving Hubble radius "has a single turning point on
-# the whole excursion; the branch point sits on its rising branch".
+# the whole excursion; the SEAM sits just inside that turning point, on the rising branch".
+#   ** r2501+c54.197: this comment previously quoted that sentence with "the branch point sits on
+#   ** its rising branch" -- the paper's own wording at the time, and WRONG, which is why quoting a
+#   ** paper verbatim inside the receipt that grounds it does not check the paper.  This file's
+#   ** STEP 5-6 say SEAM sixteen times and branch point never; the loci INVERT (at the seam the
+#   ** comoving horizon is near its maximum and the modes are inside; as r->0 it goes to zero and
+#   ** every mode is outside), so the substitution flips prop:subhorizon's truth value.  Routed
+#   ** item 21, fixed in the paper at c54.197; the quotation above is now the corrected sentence.
 #   (1) the vacuum extremum of (rH)^2 sits at r = (M alpha^2)^{1/3}, and ON THE NARIAI MEMBER
 #       that locus IS the front seam alpha/sqrt3 -- the printed boolean, now a gate, plus a PIN
 #       of the radius itself to 0.5773503;
