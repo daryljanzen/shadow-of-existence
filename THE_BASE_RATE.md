@@ -6,6 +6,30 @@ kind: STATE
 current: c54.181
 job: A5.5 worked — the reference class for least-arbitrariness arguments in physics, assembled neutrally and then judged. The fork added 11 entries across c54.114–153; read BEFORE claiming a least-arbitrariness win.
 ---
+## ⚠⚠ ENTRY: AN UNMEASURED TERM IN THIS FILE'S OWN COUNT — found by `ARC 16`, r2435
+
+*This file's number is computed over claims the corpus **made and later withdrew or kept**. `ARC 16`'s linear re-read
+of `THE_EVOLUTION_MAP` turned up a third possibility that the count cannot see:* ***a claim that was quietly REWRITTEN
+rather than withdrawn.***
+
+**⌗ SEVEN INSTANCES, TWO KINDS, and five of the seven are a document quoting a sentence that no longer exists:**
+*· **six rewrites** where a paper's posture moved from provisional to settled — and at P9, **a sentence true of an
+OPEN question that became unattributable the moment the question closed**;*
+*· **two phrases living only in `%` comments**, sharper than the published text and therefore **the version that gets
+quoted** — one of them load-bearing, since P16's rate-handoff derivation rests on it.*
+
+⇒ ***NONE OF THESE ENTERED THIS FILE'S COUNT, because none was withdrawn. The paper simply says something else now.***
+⚠ **And the direction of the bias is worth naming rather than assumed:** *a rewrite that **strengthens** a claim looks
+like nothing happened, while a withdrawal is recorded and scored.* ⇒ **So the count, as computed, cannot distinguish
+a programme that withdrew little because it was right from one that rewrote instead of withdrawing.** ***That is not
+an accusation about this corpus — thirteen withdrawals are on the record — it is a statement about what the
+instrument can and cannot see.***
+
+⌗ **NOT FIXED HERE, and `ARC 17` states the fork honestly rather than choosing:** *instrument the overwrite (a gate
+noticing when a quoted published sentence has been rewritten) or accept it (a paper's job is to say what is true now,
+and git holds the rest).* ⚠ ***The case against instrumenting is the strong one and should not be skipped: a gate
+that fires whenever a paper is improved would train nodes to stop improving papers.***
+
 ## ⛭⛭ ENTRY: A CLOSED NEGATIVE IS A RESULT, AND THE DISCRIMINANT SAYS SO — added r2433
 
 *`L-150`'s datum half was the programme's longest-standing target: p0's frontier item 1 asked for $\rho_r/\rho_m$ to

@@ -146,6 +146,63 @@ sources: [cowork, chat]
 
 
 
+### Revision r2435 — 2026-08-11 (main line). **`ARC 16` DISCHARGED, ALL FOUR STEPS — and the harvest is that the corpus has no place for a sentence that is true-for-now.**
+
+**⌗⌗ THE LINEAR RE-READ IS COMPLETE: all eighteen stations, p0 → p17, every claim and every quotation checked at
+source.** *And it produced **exactly two kinds of trimming and one structural hole**, with* ***the classification
+stable by the fifth station — which is what makes it a finding rather than eighteen accidents.***
+
+**⛭ KIND ONE — A POSTURE COLLAPSING FROM PROVISIONAL TO SETTLED (six instances).** *p0's abstract (cited at **both**
+p0 and p17 — **one rewrite, two stale citations**); p0's "complementary to P4" **pairing dissolving** because the
+forcing now rests on the substrate; P3's retrospective apology becoming a plain statement; P4's label becoming **a
+named category error**; and* ⛭⛭ ***P9's, the cleanest in the arc: "either answer is a theorem with physical content"
+is GONE ENTIRELY — not in the paper, not in a comment, not in other words. A sentence TRUE OF AN OPEN QUESTION that
+became unattributable the moment the question closed.***
+
+**⚠ KIND TWO — A PHRASE LIVING ONLY IN A `%` COMMENT (two instances).** *P1's, and **P8's "leaf-carried,
+lapse-independent density", whose own comment says "this is what P16's rate-handoff derivation rests on"*** *— so a
+phrase another paper's derivation rests on exists in its source only as a working note.* ⌗ **Fourth and fifth
+instances of the class routed as item 16, found without looking for them.**
+
+**⛔⛔ AND THE STRUCTURAL FINDING (`L-224`): THE MAP HAS A HOLE WHERE THE CORPUS MEETS DATA.** *Coverage per station
+against paper size: **P11/P12 at 0.21, P13 0.13, P14 0.09 — and P15 at 0.01 with ZERO quotations, P16 at 0.04**.*
+⇒ ***P15 is the corpus's largest paper (205 KB) and gets the map's smallest station (2.6 K) — twenty-one times less
+coverage per page than P11.*** *And it carries the Hubble-tension resolution, the acoustic scale, the $17\sigma$
+two-rate result and the falsifiable commitments; P16 the light-element abundances.*
+
+**⛭⛭⛭ THE SYNTHESIS, AND IT IS ONE THING RATHER THAN A LIST (step ④).**
+***THE CORPUS HAS NO PLACE FOR A SENTENCE THAT IS TRUE-FOR-NOW.*** *Kind one is what happens when such a sentence
+sits in **published text** — **it is overwritten and the overwrite leaves no trace**. Kind two is what happens when it
+sits in a **comment** — **it survives unpromoted and is quoted as though published**.* ⇒ **Same fact, opposite
+sides.**
+⌗ ***AND THAT EXPLAINS THE HOLE rather than leaving it a separate finding***: *the map's whole content — "what may be
+stood on at paper N" — **is true-for-now by construction**, so it is* ***the corpus's only document made wholly of
+the kind the corpus does not keep.*** **Of course it is the stalest, of course it is stale in a gradient, and of
+course the gradient ends at the papers that move most.**
+
+**⚠⚠ AND THE PART THAT MATTERS TO THIS PROGRAMME SPECIFICALLY, now an entry in `THE_BASE_RATE`.** *That file's number
+is computed over claims the corpus **made and later withdrew or kept**.* ⇒ ***A claim quietly REWRITTEN rather than
+withdrawn never enters the count — and a rewrite that STRENGTHENS a claim looks like nothing happened, while a
+withdrawal is recorded and scored.*** **So the count cannot distinguish a programme that withdrew little because it
+was right from one that rewrote instead of withdrawing.** *Not an accusation — thirteen withdrawals are on the record
+— **a statement about what the instrument can and cannot see**.*
+
+**⇒ AND THE ARC HANDS FORWARD A FORK RATHER THAN A TASK:** ***instrument the overwrite, or accept it?*** *For:
+**five of seven trimmings are a document quoting a sentence that no longer exists**, and `check_citations` cannot see
+it because the citation is to a paper, not a string. Against, and it is the strong side: **a gate that fires whenever
+a paper is improved would train nodes to stop improving papers.*** ⌗ *`ARC 17` does not choose; it establishes that
+the phenomenon is systematic and that it touches the base rate, **which is what makes it worth a decision rather than
+a preference**.*
+
+**⌗ AND THE GATE CAUGHT A PARSER TRAP OF ITS OWN, correctly.** *`ARC 17`'s first heading read "opened r2435 by
+`ARC 16` ③", and `check_arcs` reported **ARC 16** as carrying no marker — because it finds an arc by
+`^#{2,3}[^\n]*?\bARC N\b` and **naming ARC 16 in another arc's heading made that section match as ARC 16's**.*
+⇒ ***Which is the exact trap the gate's own docstring records itself having fallen into at r2378: it fixed the
+"passing mention" case inside its parser, and the trap moved outward into what a heading may say.*** **Rule recorded:
+an arc heading names its own arc and no other; cross-references go in the body.**
+
+**Register: 217 rows (`L-223`, `L-224` new; `L-214` struck). Gates: twenty-one, twenty rc=0.**
+
 ### Revision r2434 — 2026-08-11 (main line). **c54.184 MERGED AND THE OLD SESSION RETIRED — and the duplicate-ID gate fired for the first time, on a row that differed only by a renumber.**
 
 **⌗⌗ THE SITUATION: two sessions had numbered independently from c54.181, so two different c54.182s existed.**

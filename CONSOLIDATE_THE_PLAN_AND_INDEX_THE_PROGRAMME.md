@@ -296,7 +296,133 @@ forty-four.*
 
 ---
 
+## ⌖⌖⌖ ARC 17 — **THE TRIMMINGS, AND WHAT THEIR SHAPE SAYS** *(opened r2435 by the linear re-read's step ③)*
+
+> **⌗ STATE, r2435 — OPEN, and the write-up below IS the state.** *Kinds one and two are complete across all
+> eighteen stations; the structural hole is registered as `L-224`; the synthesis is `L-223`'s step ④.*
+>
+> ⚠ ***AND A NOTE ON THIS HEADING, because it cost a gate failure and the gate was right.*** *The first draft read
+> "opened r2435 by `ARC 16` ③", and `check_arcs` promptly reported **ARC 16** as carrying no revision marker.*
+> **The cause: the gate finds an arc by `^#{2,3}[^\n]*?\bARC N\b` and reads to the next heading — so naming ARC 16
+> IN THIS HEADING made this section match as ARC 16's, and this body had no marker.**
+> ⇒ ***Which is the exact trap the gate's own docstring records itself having fallen into at r2378: "a first draft
+> matched `ARC N` anywhere and then ran to the next `ARC \d`, which grabbed a passing mention."*** *It fixed that
+> inside its parser and the trap simply moved outward, into what a heading may say.*
+> ⌗ **THE RULE: an arc heading names its own arc and no other.** *Cross-references go in the body.*
+
+> **⌗⌗ WHAT THIS ARC IS.** *`ARC 16` re-read `THE_EVOLUTION_MAP` linearly, p0 → p17, checking every claim and every
+> quotation against the paper as it now stands. **Everything trimmed off lands here**, and the row's promise was
+> that* ***the trimmings are the harvest***. *They are. **Eighteen stations produced exactly two kinds of trimming
+> and one structural hole**, and the classification was stable by the fifth station — which is what makes it a
+> finding rather than eighteen accidents.*
+>
+> ⚠ **AND THE FIRST THING TO SAY IS THAT THE MAP WAS NOT WRONG.** *Nearly every trimming is a **quotation whose
+> source moved**, not a false claim.* ***The map preserved how the corpus talked about itself while it was still
+> unsure, and the diff in confidence is the thing worth having.***
+
+### ⛭⛭ KIND ONE — **A POSTURE COLLAPSING FROM PROVISIONAL TO SETTLED** *(six instances)*
+
+| where | the map quotes | the paper says now | the shift |
+|---|---|---|---|
+| **p0**, and **p17** *(the same rewrite, cited at both ends because p0 is read twice)* | *"opened deliberately so that the propagation of the core through those papers can fill it—and reveal the connections it does not yet contain"* | ***"the seed the corpus grew from and the hub it returns to … the connections their propagation reveals gathered in as they are worked"*** | *a paper announcing its own incompleteness* → *a paper describing a completed relation* |
+| **p0** | *"P1 supplies the structural forcing complementary to P4's empirical one"* | ***"reading its metric-singularity boundary as the structural forcing on which the substrate's everywhere-real boundary rests"*** | ⛭ *the **pairing dissolved**: p0 no longer needs a partner for that half — the forcing now rests on the substrate* |
+| **P3** | *"Most of the confusion the earlier treatment carried came from letting them blur"* | ***"letting them blur is what breeds confusion about it"*** | *a retrospective apology for a predecessor* → *a plain statement about the parameters* |
+| **P4** | *"Isotropy supplied by homogeneity"* | ***"the common supposition that the isotropy is supplied by homogeneity at decoupling is a **category error**"*** | *a label* → *a named error with a verdict* |
+| **P9** | *"either answer is a theorem with physical content"* | ⛔ ***nothing. Not in the paper, not in a comment, not in other words.*** | ⛭⛭ ***the cleanest instance in the arc: a sentence that was TRUE OF AN OPEN QUESTION and became unattributable the moment the question closed.*** *P9 now **answers** the range (the symmetry-reducible sector), so "either answer" names a fork that no longer exists.* |
+
+⇒ ***READ TOGETHER, THESE SAY ONE THING: the corpus's provisional voice is systematically overwritten by its settled
+voice, and nothing records the overwrite.*** **The map was the only place the earlier posture survived, and it
+survived by accident rather than by design.** ⚠ *Which is a reason to keep the trimmings rather than delete them:*
+***a corpus that scores its own arguments needs to know what it used to think, and git alone does not surface it.***
+
+### ⚠ KIND TWO — **A PHRASE LIVING ONLY IN A `%` COMMENT** *(two instances, and the second is load-bearing)*
+
+*· **P1** — *"the present paper reaches the distinction from standard general relativity alone"*: the map attributes
+it to P1's published text; **it appears only in a source comment**.*
+*· **P8** — *"leaf-carried, lapse-independent density"*: **also comment-only** — and the comment itself says*
+***"this is what P16's rate-handoff derivation rests on."*** ⇒ ⛔ **So a phrase another paper's derivation rests on
+exists in its source paper only as a working note.**
+
+⌗ ***This is the class routed to the fork as item 16 (P8's "deepest open question" comment overstating what P8
+publishes), now at its fourth and fifth instances*** *— and `ARC 16` found two of them without looking for them.*
+⇒ **The rule earns its general form here:** ***a `%` comment is a working note, and when it phrases something more
+sharply than the paper does, the comment is what gets quoted — by maps, by register rows, and by other papers.***
+
+### ⛔⛔ AND THE STRUCTURAL FINDING, WHICH OUTWEIGHS BOTH — **THE MAP HAS A HOLE WHERE THE CORPUS MEETS DATA**
+
+*Coverage measured per station against paper size:*
+
+| station | map station | paper | ratio |
+|---|---|---|---|
+| P11 · P12 | 14.6 K · 13.8 K | 68 K · 63 K | **0.21** |
+| P13 · P14 | 16.5 K · 12.5 K | 121 K · 133 K | 0.13 · 0.09 |
+| **P15** | **2.6 K** | **205 KB** | ⛔ **0.01** |
+| **P16** | **3.5 K** | 82 KB | ⛔ **0.04** |
+
+⇒ ***P15 IS THE CORPUS'S LARGEST PAPER AND GETS THE MAP'S SMALLEST STATION — twenty-one times less coverage per page
+than P11, and ZERO quotations.***
+⚠ **And these are not minor papers.** *P15 carries the **Hubble-tension resolution across the distance ladder**, the
+**acoustic scale**, the **$17\sigma$ two-rate result**, and `sec:predictions` with the theory's falsifiable
+commitments; P16 carries the **light-element abundances**.* ⇒ ***The map's answer to its own question — "working in
+paper N, what may I stand on?" — is effectively EMPTY for the two papers that carry the corpus's contact with
+data.***
+
+⌗ **AND THE CAUSE IS THE ARC'S OWN PREMISE, which is why it is worth stating rather than just fixing.** *The map
+"cannot be brought current out of order" because the answer at N depends on every paper below it.* ⇒ ***So the
+stations were built bottom-up and the builder ran out before the top. The map is not uniformly stale; it is stale in
+a GRADIENT, and the gradient ends exactly at the empirical papers.***
+⚠ ***This arc deliberately does NOT fill those two stations.*** *A bottom-up rebuild of two large papers'
+standing-position is real work, and* **doing it fast is how the map got thin in the first place.** *Registered as
+work, sized honestly.*
+
+### ⛭⛭⛭ THE SYNTHESIS — **the corpus does not keep its own drafts, and both kinds of trimming are that fact at two altitudes**
+
+*The row promised "insight into the contrasting potentialities that collapsed, and why". Here is what the eighteen
+stations actually say when read together, and it is one thing rather than a list.*
+
+**⌗ THE TWO KINDS ARE NOT TWO PHENOMENA.**
+*· **Kind one** is a sentence the corpus **rewrote** as its confidence changed: provisional → settled, apology →
+statement, label → adjudicated error, and at P9 **an open fork's sentence vanishing when the fork closed**.*
+*· **Kind two** is a sentence the corpus **wrote in a comment and never promoted**: sharper than the published text,
+and therefore the version that gets quoted.*
+⇒ ***Both are the same fact seen from opposite sides: THE CORPUS HAS NO PLACE FOR A SENTENCE THAT IS TRUE-FOR-NOW.***
+*Kind one is what happens when such a sentence sits in published text — **it is overwritten and the overwrite leaves
+no trace**. Kind two is what happens when it sits in a comment — **it survives, unpromoted, and is quoted as though
+published**.*
+
+**⛭ AND THAT EXPLAINS THE STRUCTURAL HOLE RATHER THAN LEAVING IT A SEPARATE FINDING.** *`THE_EVOLUTION_MAP`'s job is
+to record, for each paper, **what may be stood on there** — which is a **true-for-now** statement by construction: it
+changes every time a paper below moves.* ⇒ ***The map is the corpus's ONLY document whose entire content is of the
+kind the corpus does not keep.*** **So of course it is the stalest, of course it is stale in a gradient, and of
+course the gradient ends at the papers that move most.** *P15 and P16 carry the corpus's contact with data; **contact
+with data is what moves**.*
+
+**⌗⌗ WHAT THE TRIMMINGS ARE WORTH, stated at their weight and not above it.**
+*They are **not** errors, and treating them as a defect list would miss what they are.* ***They are the only surviving
+record of the corpus's earlier posture*** *— and a programme whose distinguishing feature is that **it scores its own
+arguments against a base rate** has a specific use for that: **the base rate is computed over claims the corpus once
+made and later withdrew or kept**, and* ***a claim that was quietly rewritten rather than withdrawn never enters the
+count.*** ⚠ **So the overwrite is not merely a lost draft. It is an unmeasured term in the corpus's own honesty
+instrument.**
+
+**⇒ AND THE QUESTION THIS ARC HANDS FORWARD, which is a real fork and not a task:**
+***should the overwrite be INSTRUMENTED — a gate that notices when a published sentence another document quotes has
+been rewritten — or ACCEPTED, on the ground that a paper's job is to say what is true now and git holds the rest?***
+*The case for instrumenting: **five of this arc's seven trimmings are documents quoting a sentence that no longer
+exists**, and `check_citations` cannot see it because the citation is to a paper, not a string. The case for
+accepting: **the corpus already has twenty-one gates**, and a gate that fires whenever a paper is improved would
+train nodes to stop improving papers.*
+⌗ ***This arc does not choose. It establishes that the phenomenon is systematic (seven instances, two kinds, stable
+classification by the fifth station) and that it touches the base rate, which is what makes it worth a decision
+rather than a preference.***
+
 ## ⌖⌖ ARC 16 — **THE LINEAR RE-READ, AND THE HARVEST OF WHAT IS TRIMMED**
+
+> **⌗ STATE, r2435 — ① and ② DISCHARGED, ③ DISCHARGED INTO `ARC 17` ABOVE, ④ STANDING.**
+> *① the absorption ran (c54.163→178 at r2427, then 181/183/184 by merge); ② the linear re-read is **complete, all
+> eighteen stations, p0 → p17**, every claim and every quotation checked at source; ③ the trimmings are written up as
+> **`ARC 17`**, immediately above this block.* ⇒ **④ the synthesis is what remains, and it now has material rather
+> than an intention.**
 
 *Named by Daryl, r2406, and it is the arc the consolidation has been building toward rather than an addition
 to it.* ***"Let's hold on calling the full arc to a close. The consolidation isn't quite exhausted to the point
