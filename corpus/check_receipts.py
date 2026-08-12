@@ -7,6 +7,7 @@ here=os.path.dirname(__file__); root=os.path.join(here,'..')
 idx=os.path.join(root,'receipts','INDEX.md')
 index_stems={}
 badcols=[]
+_stem_rows={}   # stem -> [paths], to catch a stem registered at more than one row
 # The INDEX carries TWO row formats: '| paper | ...' and '| `stem` | paper ... |'.  The
 # second (the storyboard bake, 20 rows) was skipped here until r2376+c54.36, so a \rcpt{}
 # naming one of them would have been reported as an orphan that was in fact registered.
@@ -18,6 +19,7 @@ for ln in open(idx, encoding='utf-8'):
     path=cells[3].strip('` ')
     if path.startswith('receipts/'): path=path[len('receipts/'):]
     stem=os.path.splitext(os.path.basename(path))[0]
+    _stem_rows.setdefault(stem, []).append(path)
     index_stems[stem]=path
     if len(cells)!=8:  # COLUMN LINT: a data row must have 8 columns; more = an unescaped '|' (escape math bars as \|)
         # PROMOTED TO A FAILURE at r2376+c54.83.  It was a WARNING, and a warning is not enough:
@@ -27,6 +29,20 @@ for ln in open(idx, encoding='utf-8'):
         # nothing downstream to notice.  Two rows were written this way at c54.83.
         badcols.append((stem, len(cells)))
         print(f"  [FAIL] INDEX row for {stem!r} has {len(cells)} columns (expect 8) -- an unescaped '|' math bar; escape it as \\|")
+# --- DUPLICATE-STEM GUARD (added r2376+c54.182) -------------------------------------------
+# index_stems[stem]=path SILENTLY COLLAPSES two rows sharing a stem: whichever row appears
+# LATER in the file wins, so \rcpt{} resolution, the assertion census, and the origin/bound
+# cells all read one row and never see the other -- and WHICH one is decided by file order,
+# not by intent.  This is the receipt-layer twin of the ratchet hole: a gate blind to a row
+# it should be policing.  Eighteen stems sat this way at c54.181 -- seventeen a storyboard
+# origin plus its receipts/<paper>/ copy, one a plain double -- and the census counted each
+# once purely because the copy happened to come later.  A stem is a KEY; it may be registered
+# at exactly one row.  (A storyboard origin needs no INDEX row of its own: its receipts/ copy
+# carries an `ORIGIN:` pointer and the ORIGIN drift guard below ties the two together.)
+dup_stems={s: ps for s, ps in _stem_rows.items() if len(ps) > 1}
+for _s in sorted(dup_stems):
+    print(f"  [FAIL] stem {_s!r} registered at {len(dup_stems[_s])} rows ({', '.join(dup_stems[_s])}) "
+          f"-- one stem, one registration; the later row silently shadows the earlier")
 cited=set()
 for tex in glob.glob(os.path.join(here,'*.tex')):
     for m in re.finditer(r'\\rcpt\{([^}]+)\}', open(tex).read()):
@@ -229,6 +245,10 @@ if os.path.exists(_lint):
 if _arc_unc:
     print(f"\nFAIL: {len(_arc_unc)} receipt(s) built in this fork reach no paper. "
           f"A result that lands in no paper is not banked, it is lost.")
+    sys.exit(1)
+if dup_stems:
+    print(f"\nFAIL: {len(dup_stems)} stem(s) registered at more than one INDEX row -- a duplicate "
+          f"stem is collapsed by file order, so one registration shadows the other unseen.")
     sys.exit(1)
 if badcols:
     print(f"\nFAIL: {len(badcols)} INDEX row(s) with a broken column count -- "
