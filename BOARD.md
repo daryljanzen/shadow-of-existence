@@ -12,16 +12,30 @@ current: r2497+c54.194
 >
 > ⚠ **This file is GENERATED.** *At r2497, **39 of 56 rows showing as live were not work** — eight were the fork's completed revisions, twenty-four were table-of-contents pointers, seven said "REGISTERED AND STRUCK" in their own text. **A recited count concealed that rather than reporting it.** So the board is computed, not written.*
 
-## A · THE PROTECTED QUESTIONS
+## A · THE HELD-OPEN VEINS
 
-- **`L-165`** — PO-6 the interacting tower — UV degree measured **quartic**, IR free; what remains is **DEFINING the sum**, plus the closed-form nonlinear $\Lambda>0$ solution
-- **`L-175`** — PO-9 the dimensional descent — **can a second slicing be non-arbitrary, its selection forced by the first?**
-- **`L-202`** — the seam phase, do-not-assert both ways — **does a MASSIVE trajectory carry a phase?** (the null ones are $K$'s fixed set)
-- **`L-221`** — PO-5 quark/lepton — **is there an operator whose kernel is the four colourless gradings?** (the group is settled: $S_3$, r2494)
+> ## ⛭⛭ WHAT FAMILY A IS, because it is not a queue and must not be read as one
+>
+> ***These are the question families that have not yet been exhaustively explored to a full map of the interior.*** *They are held above the rest because they set the problem's main veins.*
+>
+> **⌷ PROTECTED AGAINST CLOSURE — and specifically against FLATTENING:** *against a premature door closure, a papering-over, a sweep under the rug.* ***A vein is not protected because it is fragile. It is protected because collapsing it would destroy the only thing that tells you which specific questions are worth asking.***
+>
+> **⌷ WORKED DELIBERATELY EVERY TURN, and the direction is inward:** *every action facilitates closure of the arc while keeping the general question open. Specific probes are asked **against** the vein — they go at its nooks and crannies and uncover what it actually is.*
+> ⇒ ***So a vein closes FROM WITHIN, when its interior is completely known — not from outside by a verdict. And “exhaustively earned” is the only condition that ends one.***
+>
+> **⌷ AND THAT IS WHY THE REPORT BELOW IS *MAPPED* AND *DARK* RATHER THAN A QUESTION:** *the useful state of a vein is the shape of its map — what the interior is now known to contain, and where it is still dark.* ***A vein reported as a single open question has already been flattened by the reporting.***
+>
+> ⌷ *Hold each turn's work up against these four and ask **which vein it probes**. Work that probes none is instrument work — family C — and that is fine, but it should be known as that.*
+
+
+- **`L-165`** — **PO-6 · WHAT A QUANTUM OF THIS GEOMETRY IS.** *Mapped:* the boundary condition closes **per fibre** and cannot be broken by the number of fibres; the clause `c54.129` answered was **the one the argument does not need**; the UV degree is **quartic — the ordinary zero-point degree** — and compactness buys the **IR free**. *Dark:* **defining the sum**; the closed-form nonlinear $\Lambda>0$ solution; and whether a theory with **one dimensionful constant** can regulate at all
+- **`L-175`** — **PO-9 · WHAT FIXES THE SUBSTRATE'S DIMENSION.** *Mapped:* the cut is four and **says nothing about the substrate**; a descent from $D>5$ must be **multi-step**; the construction is **single-step by design** and one-step-ness is governed by **Rule 2**, not by taste. *Dark:* **whether a second slicing could be non-arbitrary, its selection forced by the first** — and the substrate stays bounded **below only**
+- **`L-202`** — **p0 item 4 · WHAT THE SEAM CARRIES.** *Mapped:* the phase is the **antilinear face $K$**; reality admits **exactly two values**; $K$ acts trivially on the reality set while **$R$ exchanges the branches**; off-real, $K$ **swaps the two wings of the lap** and $R\circ K$ **closes charge conjugation**; and $K$ **fixes the photon congruence**. *Dark:* **whether a MASSIVE trajectory carries a phase** — the null ones are $K$'s fixed set
+- **`L-221`** — **PO-5 · WHAT MAY EXIST, AND WHY THESE.** *Mapped:* the split is **specified** (12 coloured / 3 colourless, 4 with $\nu_R$); the coloured three are the **index of a Dirac operator** and cross to fields **by being a kernel**; the colourless four are the $D_6$ representations trivial on the deck; the group acting is **$S_3$**, settled r2494. *Dark:* **no operator whose kernel is the four** — and nothing yet says whether *kernel* is the only bridge from a grading to a field
 
 ## B · THE PHYSICS STILL OWED
 
-- **`L-171`** — PO-7 — whether the $0.62\pi$ acoustic-phase disagreement is real against the sky. **What it needs is the seam-phase scan at PRODUCTION depth** (`FOR_54` 38): the 34%-and-stops result was measured at LMAXL=1000
+- **`L-171`** — PO-7 — whether the $0.62\pi$ acoustic-phase disagreement is real against the sky. **What it needs is the seam-phase scan at PRODUCTION depth** (`FOR_54` 38): the 34%-and-stops result was measured at LMAXL = 1000
 - **`L-174`** — **exhibit the general matter dynamics BEYOND spherical symmetry.** P9 states it is ordinary GR at the wall; `L-207` exhibited it in the spherically symmetric class only
 - **`L-207`** — ⓶ gated on PO-6 and must not be opened without it (⓵ discharged r2450)
 
@@ -31,7 +45,7 @@ current: r2497+c54.194
 - **`L-206`** — P3 derives $w$, $u$, $3w$ in §3 and does not introduce the door that throws them until §6 — **move the object ahead of its own shadows**; every piece exists
 - **`L-210`** — the entry-point front — all 44 sites carry verdicts; live leads worked one at a time
 - **`L-217`** — the CR/Higgs relation is stated (`CR_AND_THE_HIGGS` §4); **`F1` stays live — the relation breaks if the gauge group is ever promoted to forced**
-- **`L-218`** — ① the reader-package formats via pandoc in CI (② the companion SPEC done r2478)
+- **`L-218`** — ⓵ the reader-package formats via pandoc in CI (⓶ the companion SPEC done r2478)
 - **`L-228`** — `check_loci` extended to the possessive and compound-noun forms node 52 declined to claim
 - **`L-230`** — the `COMPUTES:` convention — uptake **flat at 40 of 357** while the corpus grew a sixth
 

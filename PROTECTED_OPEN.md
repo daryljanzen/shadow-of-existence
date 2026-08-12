@@ -2,8 +2,39 @@
 name: protected-open
 description: The register of open research questions a node may NOT close. Read before writing any negative verdict; the gate `corpus/check_kills.py` enforces it. A node may write a bounded negative; a closure on a protected item is Daryl's.
 sources: [cowork]
-current: c54.181
+current: r2499+c54.194
 ---
+
+## ⛭⛭⛭ WHAT THESE ITEMS ARE — restated r2499, because this line had them wrong twice in two ways
+
+*This file's mechanical rule has always been right: **a node may not CLOSE a protected item; a node may write a
+bounded negative; narrowing is always a node's to do.** ⌗ **But the rule describes what is forbidden, and this line
+twice mistook that for what the items ARE.** At r2463 it read "may not close" as "do not touch" and set four live
+questions aside. At r2497 it listed them as four questions awaiting answers.*
+
+**⇒ NEITHER IS WHAT THEY ARE. THEY ARE THE PROBLEM'S MAIN VEINS — the question families that have not yet been
+exhaustively explored to a full map of the interior.**
+
+**⌷ PROTECTED AGAINST CLOSURE, AND SPECIFICALLY AGAINST FLATTENING** *— against a premature door closure, a
+papering-over, a sweep under the rug.* ***A vein is not protected because it is fragile. It is protected because
+collapsing it would destroy the only thing that tells you which specific questions are worth asking.***
+
+**⌷ WORKED DELIBERATELY EVERY TURN, AND THE DIRECTION IS INWARD.** *Every action facilitates closure of the arc while
+keeping the general question open. **Specific probes are asked AGAINST the vein** — they go at its nooks and crannies
+and uncover what it actually is.*
+⇒ ***So a vein closes FROM WITHIN, when its interior is completely known — not from outside by a verdict. And
+"exhaustively earned" is the only condition that ends one.***
+
+**⌷ AND THAT IS WHY A VEIN'S STATE IS REPORTED AS *MAPPED* AND *DARK*, never as a question.** *`BOARD.md` carries it
+that way.* ***A vein reported as a single open question has already been flattened by the reporting*** *— which is
+what r2497 did, and it is a subtler version of the r2463 error: not setting the vein aside, but shrinking it to its
+one currently-visible edge.*
+
+**⌷ AND THE OPERATIONAL TEST, which is what makes this more than a framing:** ***hold each turn's work up against the
+veins and ask which one it probes.*** *Work that probes none is instrument work, and that is fine — **but it should
+be known as that**, because a session that only ever does instrument work will report progress every turn while the
+veins stand still.*
+
 
 # PROTECTED OPEN — the questions a node may not close
 *Opened r2376+c54.15 (Daryl-directed), after the second firing of the cyanide face at the same drill-site.*

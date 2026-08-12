@@ -146,6 +146,48 @@ sources: [cowork, chat]
 
 
 
+### Revision r2499 — 2026-08-11 (main line). **THE PROTECTED ITEMS ARE THE PROBLEM'S MAIN VEINS, and reporting one as a single open question had already flattened it.**
+
+**⌗⌗ THIS LINE HAS GOT `PROTECTED_OPEN` WRONG THREE WAYS NOW, and the third is the subtlest.**
+*· **r2463** — read "may not close" as **"do not touch"** and set four live questions aside;*
+*· **r2497** — listed them as **four questions awaiting answers** ("is there an operator whose kernel is the four",
+"can a second slicing be non-arbitrary");*
+⇒ ⛔ ***The second looks like diligence and is worse in one way: it keeps working the vein while silently shrinking
+it to its one currently-visible edge.***
+
+**⛭⛭ WHAT THEY ARE.** ***The problem's main veins — the question families not yet exhaustively explored to a full map
+of the interior, held above the rest because they set what is worth asking.***
+*· **PROTECTED AGAINST FLATTENING** — against a premature door closure, a papering-over, a sweep under the rug.
+⇒ ***A vein is not protected because it is fragile. It is protected because collapsing it would destroy the only
+thing that tells you which specific questions are worth asking.****
+*· **WORKED DELIBERATELY EVERY TURN, INWARD** — specific probes asked **against** the vein, going at its nooks and
+crannies to uncover what it is. ⇒ ***A vein closes FROM WITHIN when its interior is completely known, never from
+outside by a verdict, and "exhaustively earned" is the only condition that ends one.****
+
+**⌗ SO THE REPORTING CHANGED, and that is the substance of this revision.** *`BOARD.md`'s family A is now **THE
+HELD-OPEN VEINS**, and every entry reports* ***MAPPED*** *and* ***DARK*** *rather than a question:*
+*· **PO-5 · what may exist, and why these** — mapped: the split specified, the coloured three an **index** crossing
+to fields **by being a kernel**, the group **$S_3$**. Dark: **no operator whose kernel is the four**, and whether
+*kernel* is the only bridge at all.*
+*· **PO-6 · what a quantum of this geometry is** — mapped: boundary closed **per fibre**, the answered clause **not
+needed**, UV degree **quartic**, **IR free**. Dark: **defining the sum**, the nonlinear $\Lambda>0$ solution, and
+whether one dimensionful constant can regulate.*
+*· **PO-9 · what fixes the substrate's dimension** — mapped: the cut says nothing about the substrate, a $D>5$
+descent is **multi-step**, one-step-ness governed by **Rule 2**. Dark: **whether a second slicing could be
+non-arbitrary**.*
+*· **p0 item 4 · what the seam carries** — mapped: the phase is $K$, **exactly two values**, $K$ swaps the wings,
+$R\circ K$ **closes $C$**, $K$ **fixes the photon congruence**. Dark: **whether a massive trajectory carries a
+phase**.*
+
+⇒ ***A vein reported as a single open question has already been flattened by the reporting.***
+
+**⌗ AND THE OPERATIONAL TEST, which is what makes this more than a framing:** ***hold each turn's work up against
+the veins and ask which one it probes.*** *Work that probes none is instrument work — family C — and that is fine,*
+⚠ ***but it must be known as that, because a session that only ever does instrument work will report progress every
+turn while the veins stand still.***
+
+**THE BOARD: fourteen live rows — four veins, three physics items owed, seven instrument.**
+
 ### Revision r2498 — 2026-08-11 (main line). **THE "DARYL'S CALL" FAMILY DELETED — three of its four rows were DONE IN FACT and the fourth was a defect. None was a judgement.**
 
 **⛔ THE FAILURE.** *r2495 forbade the phrase "that is Daryl's call" where no judgement remains. **r2497 then built a
