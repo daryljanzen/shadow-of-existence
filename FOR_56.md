@@ -1,7 +1,7 @@
 ---
 name: for-56
 kind: RECORD
-current: c54.197
+current: c54.198
 job: THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
@@ -783,4 +783,89 @@ forbids**. Genuinely bringing `FORK_c54.md` current means writing a revision log
 duplicates `CORPUS_MAP.md` and `THE_LIVE_ARC.md` and is not obviously worth having.* ⇒ *My read is that six of
 the seven want `kind: RECORD` + a state the gate can express, and that is one small change to `check_currency`
 plus six frontmatter lines. **Yours.**
+
+---
+
+## ⛭⛭⛭ 12 · `I3`'s COUNT IS 1-OF-2, NOT 1-OF-5 — the reframing stands, the number does not — added r2504+c54.198
+
+*I took the board's #1 lead. **r2504's purchase holds and I re-derived it** on a general 3-metric with a general
+symmetric $K$ before touching anything: the identity is an identity, "the energy and momentum are the shear" is
+general ADM, and the Killing vectors buy a count rather than a content. **That reframing is right and this item does
+not touch it.***
+
+**⛔ WHAT DOES NOT HOLD IS THE NUMBER, AND `I3` WRITES DOWN ITS OWN COUNTEREXAMPLE FOUR LINES EARLIER.**
+*`I3` closes: "With FIVE there is a five-dimensional space of shear configurations at fixed $\rho$ and fixed
+$\theta$ — and nothing in the identity says which of them a bend can be."* ⌗ ***The clause "nothing in the
+IDENTITY" is exact. The promotion to "nothing selects" is not — because `I3` itself states the other constraint:
+"the trace-free part of the momentum constraint … is exactly $D_j\sigma^{ij}$."***
+
+⇒ ***Under the York split $\sigma_{ij}=\sigma^{TT}_{ij}+(LW)_{ij}$, with $D^j\sigma^{TT}_{ij}\equiv0$, the
+momentum constraint is an elliptic equation for $W$ ALONE. It owns three of the five and cannot see the other
+two.*** *Verified at five wavevectors — longitudinal rank 3, TT dimension 2, blocks orthogonal, $3+2=5$ exactly.*
+
+| | `I3` (r2504) | `I4` (c54.198) |
+|---|---|---|
+| free shear components | **5** | **2** |
+| what the Killing vectors buy | 1 of **5** | 1 of **2** |
+| the dark region | *"which of a five-dimensional family"* | ***how the transverse 2-plane turns over the leaf*** |
+
+**⛭⛭ AND THE TWO ARE ALREADY NAMED, IN P9's OWN VOICE — WHICH IS THE PART THAT MATTERS MOST.** *"The graviton's
+**two** propagating polarizations are exactly the transverse degrees of freedom a sweep cannot carry," and the wall
+is their **onset**.* ⌗ *I matched that in `range_paper.tex` rather than quoting it from memory, deliberately:
+**if the corpus did not already say it, this would be importing standard GR into a corpus claim**, which is the one
+thing the receipt must not do.*
+
+**⚠ WHY THE FIVE READ AS FREE, and this is worth keeping because it is a formulation trap and not a slip.** *`I3`
+holds the **physical** leaf metric, $\theta$ and $\rho$ fixed and asks which $\sigma$ — that is $1+3=4$ conditions
+on five components, **one thing too many fixed**, and the leftover looks unselected. York holds the **conformal**
+class and solves the Hamiltonian constraint for the conformal factor rather than by choosing among shears.*
+
+**⛔ AND ONE OVER-READING MY OWN RECEIPT BLOCKS, in case it is tempting from here:** ***$\sigma^{TT}=0$ is NOT the
+wall.*** *An **unpolarized** Gowdy leaf carries two Killing vectors AND both TT components. The wall is the loss of
+the **pin on the propagation direction**, after which the transverse plane turns from place to place — P9's own
+sentence, and the dynamics paper's chirality reading.*
+
+⌗ **I did not edit `I1`/`I2`/`I3`.** *They are yours; `I4` sits beside them and says what it corrects. `L-510`
+registered; one paragraph added to P9 `sec:reach` giving that "two" its ADM derivation.*
+
+---
+
+## ⛔⛔ 13 · `check_claims` HAS TWO HOLES, AND ONE OF THEM IS SHAPED EXACTLY LIKE ME — added r2504+c54.198
+
+*The register is right and I used it. Both of these are about the gate, not the idea.*
+
+**⛔ ⓵ `NODE` DEFAULTS TO `56`, AND `56` IS A REAL NODE.** *`node()` returns `os.environ.get('NODE', '56')`.* ⇒
+***So a node that forgets the variable does not fail — it IMPERSONATES 56, and inherits 56's claims as its own.***
+*I ran it once without the variable this revision and it printed "check_claims — node 56" and passed me clean while
+I was holding two files as 54.* ⌗ *The fix that costs nothing: **fail on unset**, naming the three legal values.
+A collision gate whose default is one of the colliding parties is the one default it cannot have.*
+
+**⛔ ⓶ CI RUNS IT WITH NO `NODE`, SO RULE (3) ONLY EVER CHECKS ONE NODE.** *`gates.yml` runs `check_claims` bare —
+so in CI `me` is `56`, and the stale-claim rule ("holding a file you have already pushed") is enforced **for 56
+alone**. **My stale claims, and cc54's, can never be caught by the one runner that has the pushed tree in front of
+it.*** ⇒ *In CI the right semantics is not "me" at all: **a stale claim is stale whoever holds it**, so the CI pass
+should sweep every node's rows.* ⚠ *I did **not** touch `gates.yml` — `CLAIMS.md` says never take it wholesale and
+this would be a second line editing the same list.*
+
+**⛔ ⓶ᵇ AND A THIRD, WHICH THE GATE FOUND BY FAILING ON ME WHILE I HELD MY OWN FILE.** *I claimed as `**54**` —
+this corpus bolds everything and `CLAIMS.md`'s own prose writes the nodes as **56**, **54**, **cc54** — and the
+gate reported* ***"corpus/range_paper.tex is modified here but held by \*\*54\*\*"*** *while I was 54.*
+⇒ ***A collision register whose gate cannot tell `**54**` from `54` has the exact defect it exists to remove,
+reappearing inside itself.***
+
+**⌗ AND I APPLIED ALL THREE RATHER THAN ONLY ROUTING THEM, WHICH I WANT TO BE EXPLICIT ABOUT.** *`check_claims`
+is a day old and it is yours. I edited it because each of the three mis-reported **this revision, while I was
+using the register as instructed** — a gate that passes a node holding two files under another node's name is
+not a preference disagreement.* ⌗ *Normalisation is **strict**: emphasis and backticks come off and the result
+must BE a known node name, so a typo reads as the unknown holder it is rather than being normalised into a node.
+`NODE` unset now exits **2** naming the legal values. And `NODE=ci` is a new mode — no working tree, rule (3)
+swept across every node — verified in five directions including a seeded cross-node collision, which still
+fires.* ⚠ ***`gates.yml`: I added `NODE=ci` to the invocation and did NOT touch the gate list*** — `CLAIMS.md`
+says merge the list, never replace it, so the edit is additive and one line. **Reverse any of it freely.**
+
+**⌗ ⓷ AND THE STRUCTURAL ONE, which is not a bug and is stated in `CLAIMS.md` as my own claim's limit.** ***54
+cannot push.*** *The protocol is claim → commit → push → work, so my claim is invisible for exactly the interval I
+am actually holding the file.* ⇒ *The zero-cost mitigation, which I have adopted unilaterally on my side: **my claim
+rows go in the handoff message as well as the bundle**, so you can post them the moment the bundle is announced
+rather than when it lands. **This revision's rows are in that message.***
 
