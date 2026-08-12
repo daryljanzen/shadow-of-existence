@@ -5,6 +5,34 @@ current: c54.181
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
 
+> **⛭⛭⛭ BROUGHT CURRENT r2467 / r2441+c54.186 — AND THE WEAVE HAS A DEMONSTRATED SHAPE NOW, not just a claim.**
+>
+> *This file holds "how the parts are one object". Seven revisions of the closure-adjacency procedure (`L-211`) plus
+> three protected rows worked have produced a picture that can be stated concretely rather than gestured at.*
+>
+> **⌗ WHAT THE PARTS ACTUALLY DO TO EACH OTHER, from this session's record:**
+> *· `L-207`'s exhibition of the general inhomogeneous leaf (P8/P11) **withdrew a routed item about P14** and, three
+> revisions later, **supplied the object `L-233` needed for a colour-curvature source (P14 again)**.*
+> *· `L-213`'s closure (P13) **relocated a frontier**: colour's live question stopped being "where does it live" and
+> became "where does its curvature come from".*
+> *· `L-150`'s closure (P15/P16) **collapsed a three-item debt into one boundary**, because $A_s$, $n_s$ and
+> $\rho_r/\rho_m$ are one kind of quantity.*
+> *· And `L-200`'s constant side **made `L-150`'s datum half answerable** — the same mechanism, running unnamed,
+> before the row that names it was worked.*
+>
+> ⇒ ***SO "THE PARTS ARE ONE OBJECT" IS NOT A PICTURE. IT IS THIS: a closure in one paper pays or opens a debt in
+> another, reliably enough that a procedure for looking is worth more than a list of what is open.*** **Seven runs,
+> seven distinct kinds of result, including one that corrected this line's own claim two revisions old.**
+>
+> ⚠ **AND THE COUNTER-LESSON IS THE SAME SIZE.** *At r2463 this line read `PROTECTED_OPEN` as "do not touch" and set
+> four live research questions aside. **Three were worked in the next three revisions and all three narrowed.***
+> ⇒ ***The weave is only as good as the willingness to pull a thread. A marker constrains an ACT, never a
+> SUBJECT.***
+>
+> ⌗ *Not covered here: the per-revision detail of r2433–r2467 (`CORPUS_MAP`), and the fork's c54.163–186 span
+> (`ABSORPTION`, `FORK_c54`).*
+
+
 > **⛭⛭ BROUGHT CURRENT r2462 / r2441+c54.186 — the weave gained a THIRD strand, and it is not a document.**
 >
 > *This file holds "how the parts are one object". Since r2440 the answer has changed shape: **the parts are now one

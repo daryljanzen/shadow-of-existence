@@ -146,6 +146,45 @@ sources: [cowork, chat]
 
 
 
+### Revision r2467 — 2026-08-11 (main line). **`L-233`'s FIRST STEP EXECUTED AND STOPPED WHERE THE ROW SAYS — a curvature source would have to be a spatially varying $m(r)$, and the corpus already has one.**
+
+**⌗⌗ THE INSTRUCTION WAS PRECISE AND IS OBEYED:** *"state what a curvature source would have to be on a flat
+selection bundle, **BEFORE asking where one could come from**."*
+
+**⌗ THE DERIVATION, and it is short.** *A flat connection's content is **monodromy only** — $F=0$ says there is
+nothing to feel at a point. **The bundle IS the branching** ("the module is the branching itself"), the branching is
+set by the **branch points**, and those are the horizon roots of $f=1-2M/r-r^2/\alpha^2$.*
+⇒ ***And the roots MOVE with $M$***: *at $M=0.05,\,0.10,\,0.15,\,0.19$ the positive pair runs
+$0.101/0.946 \to 0.209/0.879 \to 0.339/0.786 \to 0.523/0.630$, merging at the Nariai value.*
+⇒ ⛭⛭ ***IN A HOMOGENEOUS LEAF $M$ IS ONE NUMBER, SO THE BRANCH STRUCTURE IS IDENTICAL EVERYWHERE AND THE CONNECTION
+IS POSITION-INDEPENDENT. The flatness is not an accident of the construction — it is FORCED by the homogeneity of
+the leaf it is built on.***
+⇒⇒ ***SO A CURVATURE SOURCE WOULD HAVE TO BE A SPATIALLY VARYING MASS FUNCTION $m(r)$.***
+
+**⌗⌗ AND THE CORPUS HAS EXACTLY THAT OBJECT — `L-207`'s exhibition at r2450**, *the general inhomogeneous LTB leaf
+with $m(r)$ and $E(r)$ free and the bend-density identity exact for arbitrary $m(r)$*, ***put on the table three
+revisions earlier for an entirely unrelated reason.***
+
+**⛔ AND IT STOPS THERE, DELIBERATELY.** *Whether a varying $m(r)$ actually produces a non-flat connection is **not
+checked** — that is the row's next step. **P14's negative half stands exactly as written**: "flat holonomy supplies
+exact selection rules and no curvature … the geometry quantises and does not couple."*
+⚠ ***And a flag is left for whoever runs it: a candidate that dissolved P14's own sharply-stated negative would be a
+significant claim, and `THE_BASE_RATE`'s discriminant should be consulted BEFORE the computation rather than
+after*** *— which is precisely what `L-213` taught at r2448, where supplying a precondition made the argument WORSE
+and only the pre-fixed instrument caught it.*
+
+**⛭ AND `THE_WEAVE` IS BROUGHT CURRENT WITH A SHAPE IT CAN NOW DEMONSTRATE RATHER THAN CLAIM.** *`L-207`'s
+exhibition **withdrew a routed item about P14** and then **supplied the object `L-233` needed, in P14 again**;
+`L-213`'s closure **relocated a frontier**; `L-150`'s **collapsed a three-item debt**; and `L-200`'s constant side
+**made `L-150`'s datum half answerable** — the mechanism running unnamed before the row that names it was worked.*
+⇒ ***"The parts are one object" is not a picture: a closure in one paper pays or opens a debt in another, reliably
+enough that a PROCEDURE for looking is worth more than a LIST of what is open.***
+⚠ *And the counter-lesson is the same size: **at r2463 this line read `PROTECTED_OPEN` as "do not touch" and set
+four live questions aside; three were worked in the next three revisions and all three narrowed.*** ***The weave is
+only as good as the willingness to pull a thread.***
+
+**Register: 229 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2466 — 2026-08-11 (main line). **PO-9 NARROWED — a descent from $D>5$ must be MULTI-STEP, and the step count is the only bound the construction supplies.**
 
 **⌗⌗ THE ROW ASKED FOR TWO THINGS AND BOTH NOW HAVE AN ANSWER OF THE RIGHT KIND.** *"State what a descent from
