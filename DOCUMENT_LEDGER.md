@@ -43,10 +43,10 @@ sources: [chat]
 | `ABSORPTION.md` | SOURCE | The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced. | c54.181 | c54.181 | 0 |
 | `THE_LIVE_ARC.md` | SOURCE | the lead register — the one live edge | c54.181 | c54.181 | 0 |
 | `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.181 | c54.181 | 0 |
-| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.180 | c54.180 | 1 |
+| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.181 | c54.181 | 0 |
 | `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | c54.181 | c54.181 | 0 |
-| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.180 | c54.180 | 1 |
-| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.180 | c54.180 | 1 |
+| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.181 | c54.181 | 0 |
+| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.181 | c54.181 | 0 |
 | `ACOUSTIC_BUILD_SETUP.md` | STATE | The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own. | c54.163 | c54.163 | 18 |
 | `CATEGORY_THEORY_LEDGER.md` | STATE | field ledger — probes and their verdicts | c54.163 | c54.163 | 18 |
 | `COLLAPSE_EXCURSION_TRANSFER_build.md` | STATE | PHASE 7's ATTACK MANUAL — the one build on the progenitor collapse excursion (L2) behind open-problems families 1/3/4/5. Referenced live by eleven documents including THE_PLAN, PHASE7_BUILD_LEDGER and both open-problems documents. | c54.163 | c54.163 | 18 |
@@ -160,7 +160,7 @@ sources: [chat]
 | `DEMONSTRATING_THE_WAY_full-transcript.md` | RECORD | frozen record | — | — |  |
 | `FORK_HISTORY_c54.txt` | RECORD | frozen record | — | c54.93 |  |
 | `FOR_54.md` | RECORD | THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied. | c54.181 | c54.181 |  |
-| `FOR_56.md` | RECORD | THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied. | c54.180 | c54.180 |  |
+| `FOR_56.md` | RECORD | THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied. | c54.180 | c54.181 |  |
 | `HISTORICAL_CONTEXT_einstein_cosmological_considerations.md` | RECORD | frozen record | — | — |  |
 | `HISTORICAL_CONTEXT_the_initial_rate_problem.md` | RECORD | frozen record | — | — |  |
 | `PROGRAMME_UNFINISHEDNESS_CATALOGUE.md` | RECORD | frozen record | — | — |  |

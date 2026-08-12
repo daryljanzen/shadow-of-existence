@@ -69,6 +69,33 @@ git add -A && git commit && git push origin line/54
 committed*** *(GitHub's secret scanning auto-revokes a token that lands in a public repo, which would take the push
 path with it).*
 
+### ⚠⚠ IF YOUR PUSH IS REFUSED BEFORE THE CREDENTIAL IS TRIED — read this before trying a third token
+
+*The working fork hit this at c54.179 and it cost three tokens and two URL forms to name. **It is a session
+setting, not a credential and not a skill**, and here is how to tell in one command:*
+
+```bash
+env | grep CCR_AGENT_PROXY_ENABLED
+curl -s -o /dev/null -w '%{http_code}\n' https://api.github.com/rate_limit
+```
+
+| what you see | what it means |
+|---|---|
+| the variable **unset**, `curl` returns **200** | *plain egress allowlist. **`git push` with `https://<user>:<token>@github.com/...` works.*** |
+| the variable **set**, `curl` returns **502 builtin injection failed** | ⛔ ***a credential-injecting proxy sits in front of GitHub. It supplies its own credential for repositories on the session's list and STRIPS whatever you pass.*** **No token and no URL form can get past it** — `api.github.com` fails on a path with no git in it at all. |
+
+**⌗ THE FIX: add `daryljanzen/shadow-of-existence` to that session's sources.** *Then push with **no token at all** —
+the proxy supplies the credential.*
+
+**⌗ AND THE STANDING CHANNEL UNTIL THEN, which works and is not a failure:**
+```bash
+git bundle create <name>.bundle <base>..line/54      # base = the tip you cloned
+```
+*Hand the bundle to Daryl and name the commit it applies on. The other line fetches it, **runs the gates on your tip
+before pushing anything**, and pushes it to your branch.* ⌗ *c54.179–181 arrived exactly this way and merged clean.*
+⚠ ***Do not use `git remote set-url` with the token inline*** *— it writes the credential into `.git/config`. Pass the
+URL on the `push` command itself. (The fork declined that step for this reason and was right to.)*
+
 ### ⌗ WHAT THE GATES REQUIRE OF A PUSH, and CI enforces it before a human reads it
 
 *· **the register's views regenerate** — `scripts/regen_teed_up.py --check` and its siblings;*
