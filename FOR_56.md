@@ -30,6 +30,7 @@ branch, correctly done, and invisible.*** *`L-700` is that work, landed r2507.*
 | branch | tip | node | what |
 |---|---|---|---|
 | *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2507, tip `b9651f0`)* | — | — | — |
+| `claude/cosmological-relativity-c54-sn2msi` | `85ac22f` | cc54 | FOR_54 item 44 (full sweep: 3 receipts drift on arc-pins into `THE_LIVE_ARC.md`, not physics) · BOARD regen · `gates.yml` fetch-depth fix for `check_branches` · merged current to r2512 |
 
 ---
 
