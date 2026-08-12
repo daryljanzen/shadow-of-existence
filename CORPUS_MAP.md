@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2528 — 2026-08-11 (main line). **AT THE NARIAI MEMBER THE STATIC FRAME DOES NOT EXIST — `L-519` gains a second, independent footing, and trans-Planckian gets a narrow answer whose scoping is the content.**
+
+**⌗ ⓵ THE COMPUTATION.** *$f(r_n)=0$, $f'(r_n)=0$, and* ***$f''(r_n)=-6/\alpha^2<0$ — so $r_n$ is a MAXIMUM of $f$
+that just touches zero, with $f\le0$ on BOTH sides*** *(sampled at $r=0.40,0.50,0.60,0.70$, $\alpha=1$: all
+negative).*
+⇒⇒ ***THE STATIC REGION PINCHES OUT TO A SINGLE POINT. $\sqrt f$ is not real in any neighbourhood, so there is no
+static observer to blueshift relative to — and $\kappa/2\pi$ is a ratio built on a static frame.***
+⇒ ***At the Nariai member THE FRAME ITSELF DOES NOT EXIST.***
+
+**⌗⌗ AND THAT SHOWS c54.202's TWO ABSENCES ARE NOT PARALLEL.** *The completion argument denies the flux because
+**the horizon never forms**.* ***The Nariai $\kappa=0$ does not say "the temperature is zero" — it says the quantity
+$\kappa/2\pi$ has no frame to be defined in.***
+⇒ *Which is exactly why the refusal was right, and **`L-519` now has two independent footings: 54's is the SCALE
+(the $\mathrm{dS}_2\times S^2$ throat), this is the FRAME**.* ⌗ *And it gives the paper a stronger sentence than a
+coincidence: **not "$\kappa$ vanishes there" but "the static frame $\kappa$ is defined in pinches out there."***
+
+**⛭ ⓶ AND TRANS-PLANCKIAN, WHERE THE SCOPING IS THE WHOLE RESULT.** *The blueshift $1/\sqrt f$ goes as
+$\delta^{-1/2}$ near a simple root and **diverges only AS the surface is REACHED** — and the corpus's claim is
+precisely that no horizon is reached at finite exterior time.*
+⇒ ***So the blueshift is FINITE AT EVERY FINITE EXTERIOR TIME: the objection is a statement about a limit the corpus
+says is never taken.***
+⚠⚠ ***BUT NOT UNIFORMLY — $\delta(t)\to0$ as $t\to\infty$, so the supremum is still infinite. The claim available
+is "finite at each finite time", NOT "bounded", and that difference is exactly what a referee will press.*** *Routed
+as items 49 and 50, with the scoping attached, **because without it the result is an overclaim wearing a result's
+clothes**.*
+
+⌗ *And one correction inside the revision: **a first pass claimed the blueshift diverges FASTER at the double root
+($1/\delta$ rather than $1/\sqrt\delta$)**. ⇒ **Wrong — $f''<0$ means $f\le0$ there, so $\sqrt f$ is not real
+and there is no blueshift to compute.** The corrected statement is stronger than the wrong one, and it was found by
+reading the sign rather than by trusting the expansion.*
+⚠ *$\langle T_{\mu\nu}\rangle$ remains at **zero uses**: two companions of three now have something said; the
+third does not.*
+
 ### Revision r2527 — 2026-08-11 (main line). **c54.202 MERGED — item 47 came back WRITTEN, and the second half is a result this line would not have found.**
 
 **⌗ THE DISTINCTIVE CONTENT IS A SORTING, NOT A NUMBER.** *Rindler and the substrate cosmological horizon:

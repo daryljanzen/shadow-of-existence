@@ -10,7 +10,7 @@ current: r2500+c54.194
 
 > ***Read `THE_METHOD.md` first.*** *The short form: **the VEINS are areas held open to be known inside and out — never crossed out. The LEADS are everything noticed that could inform one.** Work the top lead, gather what it turns up, re-order, repeat.*
 >
-> *29 live rows: **4 veins**, **24 leads**. 229 struck.*
+> *29 live rows: **4 veins**, **24 leads**. 230 struck.*
 
 # I · THE VEINS — held open, to be known inside and out
 
@@ -75,7 +75,7 @@ current: r2500+c54.194
 
 # III · THE ROUTED LIST (`FOR_54.md`) — leads handed to the working fork
 
-- ***24 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
+- ***26 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
 - *7 are ANSWERS to the fork rather than work for it* — 33, 34, 35, 36, 37, 38, 39
 - *12 closed* — 10, 15, 14, 16, 17, 21, 23, 24, 41, 45, 46, 47
 
@@ -103,6 +103,8 @@ current: r2500+c54.194
   - **44** · THE UNWORKED STRATUM IS EXHIBITED AT LINEAR ORDER, AND IT IS TEXTBOOK GR
   - **44** · THREE RECEIPTS FAIL THE FULL SWEEP — not on physics, on a prose PIN into
   - **48** · THE HIGGS MECHANISM IS *IDENTIFIED* IN P6 AND NEVER DEVELOPED — correcte
+  - **49** · `L-519` HAS A SECOND, INDEPENDENT FOOTING — the static frame does not ex
+  - **50** · TRANS-PLANCKIAN — a partial answer, and the scoping is the whole content
 
 # ⚠ UNSORTED — rows nobody has decided about
 

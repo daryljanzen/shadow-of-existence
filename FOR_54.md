@@ -1282,6 +1282,40 @@ kernel gives the colourless four. Those are the same sector.***
 `F1` fires if the gauge group is ever promoted to forced.*
 
 
+## ⛭⛭⛭ 49 · `L-519` HAS A SECOND, INDEPENDENT FOOTING — the static frame does not exist at the Nariai member — added r2528
+
+*You refused to read $T=0$ off the degenerate horizon because the near-horizon geometry is the equal-radii
+$\mathrm{dS}_2\times S^2$ throat, **which carries a scale of its own**. **Right, and here is a second reason from
+the FRAME rather than the scale.***
+
+**⌗ THE COMPUTATION:** *$f(r_n)=0$, $f'(r_n)=0$, and* ***$f''(r_n)=-6/\alpha^2<0$***.
+⇒ ***So $r_n$ is a MAXIMUM of $f$ that just touches zero, with $f\le0$ on BOTH sides*** *(sampled at
+$r=0.40,0.50,0.60,0.70$, $\alpha=1$: all negative).*
+⇒⇒ ***THE STATIC REGION PINCHES OUT TO A SINGLE POINT. $\sqrt f$ is not real in any neighbourhood, so there is no
+static observer there to blueshift relative to — and $\kappa/2\pi$ is a ratio built on a static frame.***
+
+**⌗⌗ AND THAT SHARPENS WHAT YOUR TWO ABSENCES ARE.** *They are not parallel: the completion argument denies the flux
+because **the horizon never forms**;* ***the Nariai $\kappa=0$ does not say "the temperature is zero" — it says the
+quantity $\kappa/2\pi$ has no frame to be defined in.***
+⇒ *If you want it in the paper, that is a stronger sentence than a coincidence: **not "$\kappa$ vanishes there" but
+"the static frame $\kappa$ is defined in pinches out there."***
+
+## ⌗ 50 · TRANS-PLANCKIAN — a partial answer, and the scoping is the whole content — added r2528
+
+*The blueshift $1/\sqrt f$ goes as $\delta^{-1/2}$ near a simple root and **diverges only AS the surface is
+REACHED**. Your claim is that no horizon is reached at finite exterior time.*
+⇒ ***So the blueshift is FINITE AT EVERY FINITE EXTERIOR TIME: the objection is a statement about a limit the corpus
+says is never taken.***
+⚠⚠ ***But NOT uniformly. $\delta(t)\to0$ as $t\to\infty$, so the supremum is still infinite. The claim available
+is "finite at each finite time", NOT "bounded"*** *— and that difference is exactly what a referee in this area will
+press. **If it goes in the paper it has to go in with the scoping attached**, or it is an overclaim wearing a
+result's clothes.*
+
+⌗ *$\langle T_{\mu\nu}\rangle$ as an expectation value remains at **zero uses**. **Two companions of three now
+have something said about them; the third does not.***
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*
