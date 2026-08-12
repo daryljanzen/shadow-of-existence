@@ -146,6 +146,42 @@ sources: [cowork, chat]
 
 
 
+### Revision r2457 — 2026-08-11 (main line). **`L-211` RUN A FOURTH TIME, ON `L-202`'s NARROWING — the answer to its own open question sat two clauses on in P7, and the row STILL does not close.**
+
+**⌗⌗ `Z1` (r2451) ENDED WITH A LOCATION:** *"does the off-real contour carry anything a trajectory can be said to
+HAVE?"* ⇒ ***IT DEMONSTRABLY DOES, and P7 says so immediately after the sentence that names the antilinear face:***
+
+> *"$K$ … **fixes the neutral real axis, the self-conjugate photon congruence, and swaps the two conjugate WINGS of
+> the lap.** $R$ and $K$ are **the two axis-symmetries of one analytic object**, the plate
+> $\mathbb C_r\times\mathbb C_{\tilde\tau}$ … the $\tilde\tau$-axis carrying $K$ with the cosmogenetic lap and its
+> two wings."*
+
+**⛭⛭ AND THE COMPOSITE CLOSES CHARGE CONJUGATION.** *$R\circ K$ is an antilinear involution reproducing $C$'s action
+on species, on $|2M|$, on the mass-sign and on the Feynman–Stückelberg wing structure, so*
+$$C = (Q\mapsto-Q)_{\rm field}\circ(R\circ K)_{\rm geometric}.$$
+⇒ ***So $K$ is NOT an interpretive overlay: it is one of two axis-symmetries of one analytic object, and its
+composite supplies every kinematic datum of $C$.***
+
+**⚠⚠ AND YET THE ROW IS STILL NOT DECIDED — which is the point of its constraint and the discipline being tested.**
+*p0 asks about the phase **RELATIVE TO TRAJECTORIES**. What P7 establishes is that $K$ is real structure* ***OF THE
+PLATE*** *— an involution of the analytic object with a geometric action.* ⇒ **That is the OBJECT-level question, and
+it is not the TRAJECTORY-level one.**
+
+**⌗ AND ONE FURTHER CUT, because P7 names a trajectory class:** *$K$ **fixes the self-conjugate photon
+congruence**.* ⇒ ***So the null trajectories are its fixed set, and the live question is strictly narrower than `Z1`
+left it: not "does the off-real contour carry anything" — it does — but* **"DOES A MASSIVE TRAJECTORY CARRY A
+PHASE."**
+
+⌗ *And the route is the point again: **this sat two clauses after a sentence the corpus quotes constantly**, and
+nothing joined it to p0's frontier item. **`L-211`'s procedure is what looked.***
+
+⌗⌗ ***FOUR RUNS, FOUR RESULTS: r2454 withdrew a routed item · r2455 relocated a frontier · r2456 collapsed a
+three-item debt into one closed boundary · r2457 narrowed a protected question twice without closing it.***
+**And the fourth is the one that shows the procedure is not merely a closure engine: it advanced a question the
+register forbids answering, and stopped where the row says to stop.**
+
+**Register: 226 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2456 — 2026-08-11 (main line). **`L-211` RUN A THIRD TIME, ON `L-150`'s CLOSURE — P15's three owed derivations are ONE closed boundary, three times.**
 
 **⌗⌗ THE ADJACENT GAP WAS IN THE NEXT CLAUSE OF THE SAME SENTENCE, and nobody had joined them.** *P15 `sec:scope`
