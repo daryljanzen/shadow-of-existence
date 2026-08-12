@@ -10,7 +10,7 @@ current: r2500+c54.194
 
 > ***Read `THE_METHOD.md` first.*** *The short form: **the VEINS are areas held open to be known inside and out — never crossed out. The LEADS are everything noticed that could inform one.** Work the top lead, gather what it turns up, re-order, repeat.*
 >
-> *17 live rows: **4 veins**, **13 leads**. 248 struck.*
+> *18 live rows: **4 veins**, **14 leads**. 248 struck.*
 
 # I · THE VEINS — held open, to be known inside and out
 
@@ -38,7 +38,7 @@ current: r2500+c54.194
 
 - **MAPPED** — the split is **specified** (12 coloured / 3 colourless, 4 with $\nu_R$); the coloured three are the **index of a Dirac operator** and cross to fields **by being a kernel**; the colourless four are the $D_6$ representations trivial on the deck; the group acting is **$S_3$**
 - ⛔ **DARK** — **no operator whose kernel is the four** — and nothing yet says whether *kernel* is the only bridge from a grading to a field. ⛭ r2525 GIVES IT A DIRECTION: P14 computes on the **massless** ($R$-even) sector and says the splitting is **“external to the geometry”**, while P6 puts **mass = the $R$-odd departure**. ⇒ **any operator whose kernel is the four must be $R$-ODD** — and that is the SAME question as `L-242`’s Higgs identification, asked from the other side. ⛔ r2526 INVERTS IT: a mass term **commutes** with $\gamma^5$, so $\{D+m,\gamma^5\}\ne0$ and **an $R$-odd operator has NO graded index**. ⇒ **“kernel of a graded operator” is a structure only the $R$-EVEN sector has, so the real question is: WHAT BRIDGE from grading to field is not “be a kernel”?**
-- *3 live lead(s) inform this vein*
+- *4 live lead(s) inform this vein*
 
 # II · THE LEADS — ordered by how grounded and how informative
 
@@ -55,10 +55,11 @@ current: r2500+c54.194
 | **7** | **`L-210`** | `L-202` `L-221` `L-175` | 2/3 | 2/3 | the entry-point front — all 44 sites carry verdicts; **live leads are where a paper's own text points at an unexplored interior** |
 | **8** | **`L-217`** | `L-221` | 2/3 | 2/3 | the CR/Higgs relation is stated; **`F1` stays live — the relation breaks if the gauge group is ever promoted to forced** |
 | **9** | **`L-230`** | `L-165` `L-221` | 3/3 | 1/3 | the `COMPUTES:` convention — uptake **flat at 40 of 357** while the corpus grew a sixth; a receipt that declares what it computed is a receipt a vein can be excavated through |
-| **10** | **`L-207`** | `L-165` | 1/3 | 3/3 | ⓶ the confined/branch-point exhibition — **gated on PO-6 and must not be opened without it** (⓵ discharged r2450) |
-| **11** | **`L-218`** | *— instrument work* | 3/3 | 0/3 | ⓵ the reader-package formats via pandoc in CI |
-| **12** | **`L-228`** | *— instrument work* | 3/3 | 0/3 | `check_loci` extended to the possessive and compound-noun forms node 52 declined to claim |
-| **13** | **`L-514`** | *— instrument work* | 2/3 | 0/3 | **nothing in the tree reads UPWARD**: c54.195's withdrawal contradicted text two paragraphs above it in the same section, which had carried the right answer since c54.191. A withdrawal is the edit for which that matters most. Second instance of the class after the c54.182/c54.184 duplicate |
+| **10** | **`L-803`** | `L-221` | 3/3 | 1/3 | ⛭ **cc54 WALKED R-P STATION ⑨** (the last unrun station, the computational one): **the cosmology/nuclear sector rests on $N_{\rm eff}$ at BOTH ends and never names it.** Absent by name across all 35 .tex (`Neff`/`3.046`/“effective number of” = ZERO), yet the BBN code fixes the standard $3.046$ via the $(4/11)^{1/3}$ neutrino background. **Load-bearing, computed:** BBN $dY_p/dN_{\rm eff}\simeq+0.010$; CMB (camb) $100\,\theta_\ast$ moves $-3.2\%$ and $r_{\rm drag}$ $-4.7$ Mpc per unit — a lever on exactly the $\ell_A$/$r_s$ the sector predicts to $0.075\%$/$15.7\sigma$. ⇒ the ⑥/⑩ shape (adopted, never named); the paragraph routes to 54. Informs `L-221` via CR's $\nu_R$ |
+| **11** | **`L-207`** | `L-165` | 1/3 | 3/3 | ⓶ the confined/branch-point exhibition — **gated on PO-6 and must not be opened without it** (⓵ discharged r2450) |
+| **12** | **`L-218`** | *— instrument work* | 3/3 | 0/3 | ⓵ the reader-package formats via pandoc in CI |
+| **13** | **`L-228`** | *— instrument work* | 3/3 | 0/3 | `check_loci` extended to the possessive and compound-noun forms node 52 declined to claim |
+| **14** | **`L-514`** | *— instrument work* | 2/3 | 0/3 | **nothing in the tree reads UPWARD**: c54.195's withdrawal contradicted text two paragraphs above it in the same section, which had carried the right answer since c54.191. A withdrawal is the edit for which that matters most. Second instance of the class after the c54.182/c54.184 duplicate |
 
 > ⛭⛭ **TAKE `L-204` NEXT** — *highest grounded×informative, and it informs 2 vein(s).*
 

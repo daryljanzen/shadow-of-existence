@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.203 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**12 open QUESTIONS · 5 open WORK rows** *(248 struck of 265 registered).*
+**13 open QUESTIONS · 5 open WORK rows** *(248 struck of 266 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -31,6 +31,7 @@ sources: [cowork]
 | **`L-240`** | — | REGISTERED r2515 — A LEAD DARYL FOUND: THE CORPUS HOLDS TWO HALVES OF A CONNECTION IT HAS NEVER JOINED, AND THE JOIN LANDS ON `PO-9`. He asked whether r2514's "the constraint is CONSERVED, not re-imposed" touches the second-order-EFE reason for a vanishing cov… | `receipts/L175_dimensional_descent/N1…` · `L-175` · P11 · P12 · HKT 1976 | the interior is charted r2518; what remains is the DECISION it turns on: is uniqueness of the leaf's dynamics a desideratum this programme holds? — be… |
 | **`L-519`** | — | REGISTERED r2524+c54.202 — THE CORPUS HOLDS $\kappa=0$ AT NARIAI AND THE EQUAL-RADII $\mathrm{dS}_2\times S^2$ THROAT, AND HAS NEVER SET THEM SIDE BY SIDE. ⌷ P7: at the member a collapse reaches, the surface gravity and the photon orbit's Lyapunov exponent bot… | P7 `sec:sds-cosmology` (κ and λ vanish at Nariai); P15's throat; `L-518`; Bousso–Hawking on the Nariai limit (outside, unread here) | NOT done — this is a question and it is stated as one: what temperature, if any, does the configuration a collapse reaches carry, read on the near-hor… |
 | **`L-801`** | — | REGISTERED r2525 — cc54 TOOK THE RUN DARYL HANDED IT: `L-174` ⓵'s NONLINEAR REMAINDER SPLITS AT ITS OWN SEAM, AND THE FREEDOM HALF GENERALISES. `I9` (r2514) closed ⓵ at LINEAR order and named the remainder: does the NONLINEAR evolution keep $\sigma^{TT}$ free?… | `receipts/L801_nonlinear_shear_freedom/N1…` · `L-174` · `L-165` · `L-240` · P11 `prop:admit` · P9 `cor:wall` | the STABILITY remainder: does the no-runaway hold for ALL data on the general no-isometry leaf, past the externally-covered vacuum-small-data and $T^3… |
+| **`L-803`** | — | REGISTERED r2541 — cc54 WALKED R-P STATION ⑨ (the last unrun station, and the computational one): THE COSMOLOGY/NUCLEAR SECTOR RESTS ON $N_{\rm eff}$ AT BOTH ENDS AND NEVER NAMES IT. Station ⑨ (`P7`/`P15`/`P16` — BBN, recombination, the acoustic scale) is cc54… | `receipts/L803_station9_neff/S1…` · `THE_PHYSICS_REACH` ⑨ · `L-221` · P16 `sec:network` · P15 | the fix routes to 54: a paragraph naming $N_{\rm eff}=3.046$ (adopted, standard; Planck $2.99\pm0.17$) and stating whether CR's $\nu_R$ touches it — t… |
 
 ## ⌗ WORK — programmes with steps; the content lives in `CONSOLIDATE`
 

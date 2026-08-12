@@ -86,6 +86,15 @@ LEADS = {
    "(\u201cexactly the perturbative regime of the propagating graviton\u201d).** Whether a large-data "
    "beyond-wall regime is ever needed is a construction question, open and not settled here",
    ['L-165'], 3, 2),
+ 'L-803': ("\u26ed **cc54 WALKED R-P STATION \u2468** (the last unrun station, the computational one): "
+   "**the cosmology/nuclear sector rests on $N_{\\rm eff}$ at BOTH ends and never names it.** Absent by "
+   "name across all 35 .tex (`Neff`/`3.046`/\u201ceffective number of\u201d = ZERO), yet the BBN code fixes the "
+   "standard $3.046$ via the $(4/11)^{1/3}$ neutrino background. **Load-bearing, computed:** BBN "
+   "$dY_p/dN_{\\rm eff}\\simeq+0.010$; CMB (camb) $100\\,\\theta_\\ast$ moves $-3.2\\%$ and $r_{\\rm "
+   "drag}$ $-4.7$ Mpc per unit \u2014 a lever on exactly the $\\ell_A$/$r_s$ the sector predicts to "
+   "$0.075\\%$/$15.7\\sigma$. \u21d2 the \u2465/\u2469 shape (adopted, never named); the paragraph routes "
+   "to 54. Informs `L-221` via CR's $\\nu_R$",
+   ['L-221'], 3, 1),
  'L-207': ("\u24f6 the confined/branch-point exhibition \u2014 **gated on PO-6 and must not be opened without "
    "it** (\u24f5 discharged r2450)",
    ['L-165'], 1, 3),
