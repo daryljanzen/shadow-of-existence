@@ -146,6 +146,44 @@ sources: [cowork, chat]
 
 
 
+### Revision r2458 — 2026-08-11 (main line). **`L-211`'s FIFTH RUN — the progenitor's second free function: its SIGN is forced, its PROFILE is a choice, and the profile is where the corpus's own open question would have to be answered.**
+
+**⌗⌗ `L-207`'s EXHIBITION NAMED TWO FREE FUNCTIONS. FOLLOWING THEM INTO P16.**
+*· **$m(r)$** carries the inherited datum.*
+*· ⛭ **$E(r)$'s SIGN is FORCED, and P16 forces it independently**: the turnaround needs
+$R_{\max}=-m/E>0$, so **$E<0$**; $E=0$ gives $R\sim\tau^{2/3}$, monotone, **no turnaround** — and
+`sec:trev` says* ***"the heating leg cannot fix a surviving abundance; only a subsequent COOLING pass can.
+The turnaround … is the event that makes them."***
+⇒ ***So the sign of the second free function is fixed by nucleosynthesis, not chosen.***
+*· ⚠ **BUT ITS PROFILE IS A CHOICE.** P2's cycloid $r(z)=M(1+\cos z)$ matches the bound-LTB form
+$R=(m/(-2E))(1-\cos\eta)$ at $m=M$ with* ***$E=-\tfrac12$, a CONSTANT*** *— **a homogeneous progenitor
+interior**, where a varying $E(r)$ would be a genuinely inhomogeneous one.*
+
+**⇒⇒ ⛭⛭ AND THIS JOINS r2456 DIRECTLY.** *There, the substrate was shown unable to force $A_s$, $n_s$ or
+$\rho_r/\rho_m$ — all dimensionless — **with the progenitor route left open and already walked once**.*
+⇒ ***$E(r)$'s PROFILE is the free function that route would use. The progenitor's inhomogeneity is
+precisely the free data that could carry a spectrum, and the corpus runs on the homogeneous choice.***
+
+**⚠⚠ NOT A DEFECT, and it must not be read as one.** *P16's scope statement is **exactly right** — "that
+class is a premise of the construction rather than a gap in it" — and `sec:trev` is correct.*
+***The observation is only that a live degree of freedom is set to a constant, and that this is the one
+place the corpus's own open question could be answered.*** *Registered as `L-234`, whose first move is:
+**ask whether the derived progenitor composition depends on $E$ being constant** — if it does, the
+homogeneous choice is load-bearing and should be marked as one.*
+
+**⌗ AND TWO DEFECTS IN THIS LINE'S OWN RECEIPT, caught before the lint had to.** *A **literal tautology**
+(`True is not False`) stood in for the constant-versus-varying claim, and a check for A2's result looked
+in `THE_LIVE_ARC` when* ***A2's result was ROUTED, not registered*** *— the same summary-versus-source
+error A2's own first draft made, **one revision later**.* ⇒ **Both replaced with the thing actually
+claimed: $dE/dr=0$ against a varying $E$, and the check pointed at `FOR_54`.**
+
+⌗⌗ ***FIVE RUNS, FIVE RESULTS: r2454 withdrew a routed item · r2455 relocated a frontier · r2456
+collapsed a three-item debt · r2457 narrowed a protected question without closing it · r2458 named the
+free function a still-open route would have to use.*** **The mechanism `L-211` registered as a claim in
+r2397 has now produced five distinct kinds of result in five revisions.**
+
+**Register: 227 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2457 — 2026-08-11 (main line). **`L-211` RUN A FOURTH TIME, ON `L-202`'s NARROWING — the answer to its own open question sat two clauses on in P7, and the row STILL does not close.**
 
 **⌗⌗ `Z1` (r2451) ENDED WITH A LOCATION:** *"does the off-real contour carry anything a trajectory can be said to
