@@ -146,6 +146,51 @@ sources: [cowork, chat]
 
 
 
+### Revision r2454 — 2026-08-11 (main line). **`L-211`'s MECHANISM RAN AND WITHDREW A ROUTED ITEM — P14's leaf-compactness claim does NOT fail at the forced member, and the limit is $\pi\alpha/\sqrt3$.**
+
+**⌗⌗ THE PROCEDURE, applied rather than argued.** *`L-211` is the closure-adjacency debt: **"when a gap closes, the
+corpus owes on the gaps in connected regions — the adjacent dots become visible and connectable."** Its deliverable
+is **which adjacent gap the last closure just made answerable**.*
+⇒ *Applied to `L-207` ⓵ (r2450), whose exhibition put the **FAMILY** in front of this line — LTB, two free
+functions, one equation per shell.* ***And looking at the family answered a question sitting in a different paper.***
+
+**⛔⛔ ROUTED ITEM 24 IS WITHDRAWN. The claim holds.**
+*`F14` reported that P14's leaf-compactness — which carries the generation index — **diverges logarithmically at the
+Nariai member**, the member P7 forces. **Every number reproduces**: the roots merge, $f''(r_0)=-6/\alpha^2$ exactly,
+the proper measure becomes a simple pole, and an integral outward from it diverges at rate $\alpha/\sqrt3$ per
+e-fold.* ⚠ ***But that integral and P14's claim are about DIFFERENT DOMAINS.***
+*· **P14's claim takes the BETWEEN-HORIZON leaf** — $f>0$ **strictly between two simple roots**, both endpoints
+$f=0$.*
+*· **The divergent integral runs OUTWARD from the merged root.** At $M=M_N$, **$f\le0$ on both sides** of the double
+root, touching zero only at it.* ⇒ ***So the between-horizon region is EMPTY at Nariai, and the divergent integral is
+taken where $f<0$. The two domains are disjoint in SIGN, not merely in extent.***
+
+**⛭⛭ AND THE LIMIT IS FINITE AND CLOSED-FORM.** *As $M\to M_N$ the interval shrinks like $\sqrt{M_N-M}$ while the
+integrand blows up, and **the two cancel exactly**. Near a double root
+$f\approx\tfrac{\lvert f''\rvert}{2}(\epsilon^2-(r-r_0)^2)$, so $L\to\pi\sqrt{2/\lvert f''\rvert} =$*
+$$\pi\alpha/\sqrt3 = 1.8137993642\ldots$$
+***independent of $\epsilon$.*** *Numerically at $M/M_N=0.5,\,0.9,\,0.99,\,0.999,\,0.9999,\,0.999999$:
+$1.746311,\ 1.803204,\ 1.812787,\ 1.813699,\ 1.813789,\ 1.813799$ —* **rising monotonically, with the receipt's own
+$M=0.12$ value of $1.7671$ on that curve.**
+
+**⌗ SO `L-211` IS DISCHARGED BY DEMONSTRATION:** ***a closure landed in P8 and the debt it created sat in P14, and
+nothing but this row's procedure would have looked there.*** ⌗ *And the mechanism had already run once unnamed:
+**`L-200`'s constant side closing at r2422 is what made `L-150`'s datum half answerable at r2433**, by the same
+argument, in a different row.*
+
+**⌗ AND THE CORRECTION IS THE `L-230` CLASS APPLIED TO A FINDING RATHER THAN A PAPER.** ***`F14` verified its
+computation at one point — the Nariai member — and stated a conclusion about the family, which is exactly the shape
+it was reporting.*** *The class survives on `F13` and `F12`.*
+⚠ *Node 55 declared its integral and reproduced the receipt's own figure before doubting it, and this line verified
+its divergence independently and agreed. **What neither checked, until the family was in view, was that the two
+integrals have different domains.***
+
+**⌗ AND THE HOLLOW-ASSERTION LINT CAUGHT A LITERAL `True` IN THIS LINE'S OWN NEW RECEIPT** *— the exact defect it
+has been auditing others for. Replaced with a real comparison of the two domains' signs.* ***A check that cannot
+fail converts a known gap into an unknown one.***
+
+**Register: 225 rows, 182 struck. Gates: twenty-one, twenty-one rc=0. `FOR_54`: eighteen live items.**
+
 ### Revision r2453 — 2026-08-11 (main line). **`L-220`'s INSTRUMENT QUESTION CLOSED IN THE NEGATIVE — the successor metric was built, and watching it CONVERGE is the answer.**
 
 **⌗⌗ THE ROW ASKED FOR A REBUILT QUANTITY.** *`G1` had measured **distance** from a claim to its support and a blind

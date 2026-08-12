@@ -18,7 +18,7 @@ sources: [chat]
 > inverted form is worse, because the body is what a working node acts on.***
 >
 > **⇒ THE FIVE DISCHARGED ITEMS ARE NOW MARKED `✔✔ DISCHARGED` IN THE BODY, verified still applied at r2452.**
-> ***THE NINETEEN LIVE ONES ARE: 6, 11, 12, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30*** *(plus 7, 8, 9,
+> ***THE LIVE ONES ARE: 6, 11, 12, 18, 19, 20, 21, 22, 23, 25, 26, 27, 28, 29, 30*** — ⛔ **item 24 was WITHDRAWN at r2454; the claim does not fail at the forced member** *(plus 7, 8, 9,
 > reported already-applied at c54.179 and left in place as conventions rather than fixes).*
 > ⌗ **AND ITEM 21 IS FLAGGED TO TAKE FIRST** *— the seam/branch-point word, which decides a proposition's truth
 > value and has already cost two nodes a false finding.*
@@ -462,7 +462,36 @@ what this line's `C3` receipt established from the dial.*** **Three routes, one 
 
 ---
 
-## ⛭⛭⛭ 24 · P14's LEAF-COMPACTNESS CLAIM IS RECEIPTED AT $0.62\,M_N$ AND DIVERGES AT THE MEMBER THE PROGRAMME FORCES — added r2442
+## ⛔⛔ WITHDRAWN — 24 · P14's LEAF-COMPACTNESS CLAIM IS RECEIPTED AT $0.62\,M_N$ AND DIVERGES AT THE MEMBER THE PROGRAMME FORCES — added r2442
+
+> ⛔⛔ **WITHDRAWN r2454 — DO NOT ACT ON THIS ITEM. The claim does not fail at the forced member.**
+>
+> ***Every number in the item below reproduces*** *— the roots do merge, $f''(r_0)=-6/\alpha^2$ exactly, the proper
+> measure does become a simple pole, and an integral taken outward from it does diverge logarithmically at rate
+> $\alpha/\sqrt3$ per e-fold.* ⚠ ***But that integral and P14's claim are about DIFFERENT DOMAINS.***
+>
+> *· **P14's claim, and its receipt, take the BETWEEN-HORIZON leaf** — $\int_{r_b}^{r_c}\!dr/\sqrt f$ with $f>0$
+> strictly **between two simple roots**, both endpoints $f=0$.*
+> *· **The divergent integral runs OUTWARD from the merged root.** At $M=M_N$, **$f\le0$ on BOTH sides** of the
+> double root, touching zero only at it — verified — so* ***the between-horizon region is EMPTY at Nariai and the
+> divergent integral is taken where $f<0$.***
+>
+> **⛭⛭ AND THE LIMIT IS FINITE AND CLOSED-FORM.** *As $M\to M_N$ the interval shrinks like $\sqrt{M_N-M}$ while the
+> integrand blows up, and **the two cancel exactly**: near a double root
+> $f\approx\tfrac{\lvert f''\rvert}{2}(\epsilon^2-(r-r_0)^2)$, so*
+> $$L \to \pi\sqrt{2/\lvert f''\rvert} \;=\; \pi\alpha/\sqrt3 \;=\; 1.8137993642\ldots$$
+> ***independent of $\epsilon$.*** *Numerically at $M/M_N = 0.5,\,0.9,\,0.99,\,0.999,\,0.9999,\,0.999999$:
+> $1.746311,\ 1.803204,\ 1.812787,\ 1.813699,\ 1.813789,\ 1.813799$ —* **rising monotonically to $\pi/\sqrt3$, with
+> the receipt's own $M=0.12$ value of $1.7671$ sitting on that curve.**
+>
+> ⇒ ***SO THE BETWEEN-HORIZON LEAF HAS FINITE LENGTH ON THE WHOLE FAMILY INCLUDING THE LIMIT, AND P14 OWES
+> NOTHING HERE.*** *Receipt `P14_the_between_horizon_leaf_converges_at_nariai` (12 checks).*
+> ⌗ *Node 55 declared its integral and reproduced the receipt's own figure before doubting it, and this line
+> verified its divergence independently and agreed. **What neither checked, until the family was in view, was that
+> the two integrals have different domains.***
+> ⌗ **Found by `L-211`'s procedure** — *"when a gap closes, the corpus owes on the gaps in connected regions".*
+> ***`L-207`'s exhibition put the FAMILY in view, and looking at the family is what made the question answerable.***
+
 
 **Where:** `corpus/matter_sector_paper.tex`, `sec:count` — the sentence carrying the generation index:
 *"in the leaf's proper measure the closed slicing has **finite** total length`\rcpt{P14_leaf_compactness}`, **so the
