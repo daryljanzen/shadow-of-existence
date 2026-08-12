@@ -146,6 +146,50 @@ sources: [cowork, chat]
 
 
 
+### Revision r2430 — 2026-08-11 (main line). **`L-150` TAKEN with its handover interface fixed first, and §0 finds the derivation already made — one universe back.**
+
+**⌗⌗ THREE POINTERS CONVERGE ON THIS ROW INDEPENDENTLY, and the third is the fork's, arrived at from the paper
+rather than the register.** *· **p0's frontier item 1, datum half** — split at c54.179, and the paper's own words for
+what remains are* **"what is owed there is its derivation from the progenitor collapse,"** *which is this row's
+content word for word; · **`F·1`'s residue** — can the collapse **produce** $\rho_r/\rho_m$, $\eta$,
+$z_{\rm onset}$ rather than read them off the sky; · and **`L-200`'s constant half is finished**.*
+⇒ ***IF THIS LANDS, p0's FRONTIER ITEM 1 CLOSES ENTIRELY — no other item on that table closes a paper's frontier
+item.***
+
+**⛭⛭ THE HANDOVER INTERFACE WAS FIXED BEFORE THE WORK STARTED, at the fork's insistence, so it cannot be wasted:**
+*what the acoustic instrument needs to consume a result is ⓵ **the value at the seam WITH ITS UNCERTAINTY**, and ⓶
+**whether the derivation ALSO fixes $z_{\rm onset}$ independently**.* ⇒ **If both, they stop being inputs and become
+predictions and the two arms become a genuinely parameter-free comparison. If only the first, the frontier item still
+closes but $z_{\rm onset}$ stays pinned —** ***and that must be SAID rather than quietly claimed past.***
+⚠ *And priced in the fork's words:* ***"this is a research programme, not a sitting computation."***
+
+**⌗ §0 — AND THE DERIVATION IS ALREADY MADE, ONE UNIVERSE BACK.** *`THE_ASSUMPTIONS_RETREATED_UPWARD` carries
+"the progenitor's composition, **derived**": $\rho\simeq5.4\times10^{-2}$, $(\rho_r/\rho_m)_{\max}\simeq
+7.3\times10^{-4}$, arithmetic closing to three figures (**1.492 Mpc against 1.490**), plus two numbers the
+progenitor never had — **turnaround at $z\simeq1.5$ and a mass of $4.3\times10^{52}$ kg**, "comparable to this
+universe's own matter content."* ⌗ ***"Which is what 'the matter of our hot dense era is that previous universe's
+collapsed matter' requires, and the first time that sentence met a number."***
+⇒ **But it is the PROGENITOR's composition, about $2.5\times$ the observable leg's present value.** *So what p0's
+item asks for — $\rho_r/\rho_m\approx2$ at **our** seam — is not that number.*
+
+**⇒ SO THE QUESTION SHARPENS INTO ONE THAT CAN BE ANSWERED:** ***is the composition at OUR seam fixed by the
+progenitor's composition plus the crossing, or does the crossing's multiplicativity mean it cannot be?***
+⌗ *The capstone states the obstruction in its own voice:* **"the crossing determines how much a perturbation is
+multiplied, and does not determine the perturbation"** *— "either the deepest thing the corpus knows about itself,
+or the sign that the question has been posed at the wrong level. **Forty revisions were not enough to tell which.**"*
+⇒ **If the multiplicative structure carries composition through, the number follows and p0's item closes. If it does
+not,** ***the datum half is not open — it is CLOSED IN THE NEGATIVE by the one-constant theorem's second face, which
+is a result and not a failure.***
+
+**⌗ AND THE DUPLICATE-STEM DEFECT IS THE FORK'S AND STAYS THE FORK'S** *(`FOR_56` item 7).* ⚠ **Its count was right
+where this line's first one was not:** *a loose backtick regex over the whole file gave 21; **parsed on the
+eight-cell rows the gate actually reads it is 16, exactly as the fork said**.* ⇒ ***Do not compare to another line's
+figure with a looser instrument than the one it used.*** ⌗ *And the two census numbers differ for a reason worth
+keeping, since it looked like an error and is not:* **`lint_assertions` counts FILES ON DISK (304),
+`check_receipts` counts REGISTERED ROWS (303).** *Both are right; they measure different things.*
+
+**Register: 215 rows. Gates: twenty-one, twenty rc=0.**
+
 ### Revision r2429 — 2026-08-11 (main line). **ONE PROGRAMME: `line/54` MERGED INTO `main`, the ratchet hole closed, and the first absorption that was a `git merge`.**
 
 **⌗⌗ `main` NOW CARRIES BOTH LINES.** *`git merge --no-ff line/54` — three commits, 45 files, 767 insertions, the
