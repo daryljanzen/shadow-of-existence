@@ -1,7 +1,7 @@
 ---
 name: consolidate-the-plan-and-index-the-programme
 kind: STATE
-current: c54.178
+current: c54.181
 job: Consolidate the plan and index the programme — the arcs (§2), the sequence (§13), the standing actions (§14), and §16 THE DEVELOPMENT RECORD, which is where RG-1 moves a paper's past state.
 sources: [cowork]
 ---

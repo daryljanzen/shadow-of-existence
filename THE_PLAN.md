@@ -1,7 +1,7 @@
 ---
 name: the-plan
 kind: STATE
-current: c54.178
+current: c54.181
 job: The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance
 ---
 ## ⌗⌗ BROUGHT CURRENT r2379 (observer line) — *the plan's own rules were the ones going unenforced, and that is the entry*

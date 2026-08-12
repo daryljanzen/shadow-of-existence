@@ -1,7 +1,7 @@
 ---
 name: the-hub
 kind: METHOD
-current: c54.163
+current: c54.181
 job: How the programme lives in a git repository — branch discipline, the register's merge rule, what CI enforces and what it cannot. Read BEFORE pushing, and BEFORE assuming git has solved a problem it has not.
 sources: [chat]
 ---

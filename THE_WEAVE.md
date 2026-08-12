@@ -1,7 +1,7 @@
 ---
 name: the-weave
 kind: STATE
-current: c54.178
+current: c54.181
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
 ## ⌗⌗ BROUGHT CURRENT r2379 (observer line) — *and the weave's own direction-of-neglect finding predicted every defect this line found*

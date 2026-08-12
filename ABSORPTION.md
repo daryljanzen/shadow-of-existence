@@ -1,7 +1,7 @@
 ---
 name: absorption
 kind: SOURCE
-current: c54.178
+current: c54.181
 job: The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced.
 sources: [chat]
 ---
@@ -33,6 +33,7 @@ sources: [chat]
 | c54.153 | r2385 | 2026-08-10 |
 | c54.163 | r2393 | 2026-08-11 |
 | c54.178 | r2427 | 2026-08-11 |
+| c54.181 | r2429 | 2026-08-11 | ⛭ **BY MERGE, not by tarball — the first one** |
 
 ## What each absorption cost, so the next one is planned rather than discovered
 
@@ -95,6 +96,37 @@ sources: [chat]
     in the fork's environment** ($\ell_1=229.6$ against the required $221.1$), diagnosed as a stale-path import.*
   - ⚠ *The fork's whole c54.164–178 changelog block is **absorbed verbatim** into `CORPUS_MAP`, kept unedited,
     because* ***the fork's account of what it did is the thing a file-level diff cannot produce.***
+
+- ⛭⛭ **c54.178 → c54.181 — THE FIRST ABSORPTION THAT WAS A `git merge`.** *The fork worked in the repo, cut a
+  bundle (its sandbox runs a credential-injecting egress proxy that strips supplied tokens, so it cannot push
+  yet), and this line fetched, gated and merged it.* ***Three commits, 45 files, 767 insertions, `--no-ff` so the
+  join is visible in the history.***
+  - **c54.179 — the whole inbox discharged in one pass.** *Seven live items applied, four found already applied and
+    **reported back with evidence rather than dropped silently**.* ⌗ *And two were applied **differently than
+    offered**: item 10's result re-derived symbolically first and cited to **a receipt the fork wrote itself**,
+    because `C1`/`C2` could not be cited under its own `\rcpt{}` convention; item 15 acted on **p0's own text**
+    because* ***the sentence this line quoted as being "in `sec:ledger`" is not in p0 — it is in this line's own
+    `CORPUS_MAP`.*** **That is this line's error and it is the session's own class: a navigation-layer sentence
+    quoted as published text, committed while routing item 16, which is that exact defect.**
+  - ⛭⛭ **c54.180 — this line's correction accepted, AND THE CORRECTION UNCOVERED A REAL DEFECT THE SAME BLIND SPOT
+    WAS HIDING.** *Twelve of the fork's thirteen "no check of any kind" reports were false positives (case-sensitive
+    on `fail.append`, literal on `SystemExit(1)`). **But the same regex was hiding
+    `P15_expansion_law.py` — registered, cited by P15 — which accumulated `allpass` through four symbolic
+    identities, never read it, and printed `RESULT: ALL PASS` as a string literal: a broken claim printed two FAILs
+    and returned `rc=0`.*** *And `check_receipts` passed it for the entire assertion sweep **because that gate
+    carried the same regex**.*
+    ⇒ ***A RULE LIVING IN TWO PLACES DRIFTS UNTIL BOTH COPIES SHARE ONE BLIND SPOT.*** *Fixed in three parts, and
+    the third is the one to keep: **the two instruments now compare against each other** — `lint_assertions` reads
+    the gate's text and fails naming the drift. Verified here: **"the two-part check rule agrees with
+    `corpus/check_receipts.py`'s"**, census 0 of 279 on the stricter rule.*
+    ⌗ *And the fork's own note on it is the sharpest line in the exchange:* ***"I routed a finding built on my own
+    instrument's output without testing the instrument against the receipts it was judging."***
+  - **c54.181 — both of front #2's named next steps MEASURED BEFORE EITHER WAS BUILT** *(the c54.176 discipline).*
+    ***Reionisation is exactly degenerate with the fitted amplitude — $\Delta\chi^2=0$ to machine precision even at
+    $\tau=0.30$ — so one of the two named items is removed rather than worked.*** **Lensing is what remains.**
+  - ⌗ *And the fork built **`FOR_56.md`**, a return channel, unprompted: `THE_HUB` stated route-don't-edit in one
+    direction only, and discharging the inbox produced findings squarely in this line's half.* ***The convention is
+    now symmetric because the fork made it so.***
 
 ## ⛔⛔ STEP 6 WAS WRONG FOR THREE ABSORPTIONS — corrected r2427
 

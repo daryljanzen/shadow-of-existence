@@ -1,7 +1,7 @@
 ---
 name: the-staged-revisions
 kind: STATE
-current: c54.178
+current: c54.181
 description: The observer line's staging ground — revisions to the papers, computations to run, and consolidation work, PREPARED here and executed when the working fork reaches its target. Nothing here has been applied to the corpus; each entry carries its gate, its locus and its done-test.
 sources: [chat]
 ---

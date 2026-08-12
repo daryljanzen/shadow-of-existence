@@ -3,7 +3,7 @@ name: the-base-rate
 description: A5.5 worked — the reference class for least-arbitrariness arguments in physics, assembled neutrally and then judged. P6's criterion measured against the historical record rather than against favourable examples.
 sources: [cowork]
 kind: STATE
-current: c54.178
+current: c54.181
 job: A5.5 worked — the reference class for least-arbitrariness arguments in physics, assembled neutrally and then judged. The fork added 11 entries across c54.114–153; read BEFORE claiming a least-arbitrariness win.
 ---
 ## ⌗⌗ `L-213` MEASURED AGAINST THE DISCRIMINANT — r2405, and the ledger answers before the argument is made

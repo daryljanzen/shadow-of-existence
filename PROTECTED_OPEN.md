@@ -2,6 +2,7 @@
 name: protected-open
 description: The register of open research questions a node may NOT close. Read before writing any negative verdict; the gate `corpus/check_kills.py` enforces it. A node may write a bounded negative; a closure on a protected item is Daryl's.
 sources: [cowork]
+current: c54.181
 ---
 
 # PROTECTED OPEN — the questions a node may not close

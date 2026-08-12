@@ -1,7 +1,7 @@
 ---
 name: corpus-map
 kind: STATE
-current: c54.32
+current: c54.181
 description: The changelog — the papers, their causal order, and the shape we are aiming at. The narrative log is current only to c54.32; the c54.36–c54.93 span is carried at the foot as COPIED COMMIT SUBJECTS, not as changelog entries.
 sources: [cowork, chat]
 ---
@@ -145,6 +145,57 @@ sources: [cowork, chat]
 > **The live queue is [`WHATS_TEED_UP.md`](WHATS_TEED_UP.md); the accounting is [`THE_BURN_DOWN.md`](THE_BURN_DOWN.md).**
 
 
+
+### Revision r2429 — 2026-08-11 (main line). **ONE PROGRAMME: `line/54` MERGED INTO `main`, the ratchet hole closed, and the first absorption that was a `git merge`.**
+
+**⌗⌗ `main` NOW CARRIES BOTH LINES.** *`git merge --no-ff line/54` — three commits, 45 files, 767 insertions, the
+join deliberately visible in the history.* ⇒ ***The absorption routine is retired for this pair: no tarball, no
+three-way diff, no duplicate sweep, no re-applied annotations. `reapply_annotations --check` passes untouched
+because git kept both sides.***
+⚠ *The fork still cannot **push** — its sandbox runs a credential-injecting egress proxy (`CCR_AGENT_PROXY_ENABLED`)
+that **strips supplied tokens and answers before the request leaves**, which is why three tokens and two URL forms
+all failed and why `api.github.com` returns `502 builtin injection failed` on a path with no git in it.* ⌗ **And
+the contrast settles it: that variable is not set in this line's container and the same call returns 200.**
+***It is a session setting, not a skill and not a credential*** *— the fix is adding the repo to the fork's session
+sources. Until then it bundles and this line fetches, gates and merges.*
+
+**⛭⛭ WHAT THE FORK DID WITH THE INBOX, and it did more than apply it.** *All eleven items discharged in one pass;
+**four found already applied and reported back with evidence rather than dropped silently**. And two were applied
+**differently than offered**, both times correctly:*
+*· **item 10** re-derived symbolically and cited to **a receipt the fork wrote itself**, because `C1`/`C2` could not
+be cited under its own `\rcpt{}` convention;*
+*· **item 15** acted on **p0's own text**, because* ***the sentence this line quoted as "in `sec:ledger`" is not in
+p0 — it is in this line's own `CORPUS_MAP`.*** **That is this line's error, and it is the session's own class: a
+navigation-layer sentence quoted as published text — committed in the very revision that routed item 16, which is
+that exact defect.**
+
+**⛔⛔ AND THE FORK'S c54.180 IS BETTER THAN THE CORRECTION THAT PROMPTED IT.** *This line told it the lint had a
+detection gap. **It found the gap and the defect the gap was hiding**: `P15_expansion_law.py` — registered, cited by
+P15 — accumulated `allpass` through four symbolic identities, **never read it**, and printed `RESULT: ALL PASS` as a
+string literal, so* ***a broken claim printed two FAILs and returned `rc=0`*** *— and `check_receipts` passed it for
+the whole assertion sweep **because that gate carried the same regex**.*
+⇒ ***A RULE LIVING IN TWO PLACES DRIFTS UNTIL BOTH COPIES SHARE ONE BLIND SPOT.*** *Its fix makes **the two
+instruments compare against each other**: the lint reads the gate's text and fails naming the drift. Verified on
+this tip — **"the two-part check rule agrees with `corpus/check_receipts.py`'s"**.*
+⌗ *And its own note is the sharpest line in the exchange:* ***"I routed a finding built on my own instrument's
+output without testing the instrument against the receipts it was judging."***
+
+**⌗ THE RATCHET HOLE IS CLOSED, exactly as the fork specified and with no second root.** *Thirteen instrument-layer
+receipts sat outside `receipts/INDEX.md` and therefore outside the "may never rise" clause.* ⇒ **Registered with
+the two cells the gate reads — bound `NOT-A-PAPER-CLAIM — discharges L-nnn`, origin `built r24nn (observer line)`
+*without* the string `c54`** *so they never fail as though the fork owed them while `len(_nocheck)` still counts
+them.* ***Census 291 → 304, exactly the number the fork predicted, and the debt stays at 0 — so the baseline needs
+no downward rewrite: the honest post-registration baseline is still zero.***
+⌗ *And its column trap was worth the warning:* **an unescaped `|` math bar splits an INDEX row and the gate fails on
+the cell count** *— every registered row was written with `abs(x)` and no bars.*
+
+**⌗ AND THE RETURN CHANNEL EXISTS BECAUSE THE FORK BUILT IT.** *`THE_HUB` stated route-don't-edit in one direction
+only; discharging the inbox produced findings squarely in this line's half, so the fork wrote `FOR_56.md`
+unprompted.* ***The convention is symmetric because the other line made it so, which is the first thing in this
+programme neither line designed alone.***
+
+**Register: 215 rows. Gates: twenty-one, twenty rc=0** *(`check_currency` naming 24, measurable).* **Matrix and
+appendices refreshed; absorption recorded as `c54.181 | r2429 | BY MERGE`.**
 
 ### Revision r2428 — 2026-08-11 (main line). **READY FOR 54 — the arrival section and the inbox, both written because the ID collision proved the gap.**
 
