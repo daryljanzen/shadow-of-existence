@@ -61,6 +61,11 @@ first named item under it is the derivation that this file could not supply: the
 photon hierarchy carrying the polarisation multipoles, from which the shear coefficient FALLS OUT
 rather than being chosen.
 
+SETTINGS: reduced -- LMAXL=1300 vs production 3000.  CANNOT CHECK AT PRODUCTION here: this file's
+claim is about the RESOLUTION OF THE STATISTIC (the sky's own peak-ratio errors, 2.256+-0.077 and
+2.280+-0.074), which is a property of plik_lite and not of the transfer's depth.  ** The bars do
+not move with LMAXL, so no production run can change what this file establishes. **
+
 rc=0 on success.  Run: python3 P15_the_height_target_was_below_the_resolution_of_its_own_statistic.py
                        (numpy scipy, ~15 s)
 """

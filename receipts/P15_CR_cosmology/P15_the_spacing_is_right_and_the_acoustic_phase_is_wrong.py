@@ -54,6 +54,10 @@ the conversion is Daryl's.  ** And this file makes the discrepancy SHARPER rathe
 spacing that is right and a phase that is wrong is a more specific disagreement than a series that is
 uniformly compressed, and it names where to look. **
 
+SETTINGS: production for every number it reports -- it reads the LMAXL=3000 pair.  The LMAXL=1000
+runs are named only as the SOURCE OF THE ERROR being corrected and no quantity is taken from
+them.  ** The knob appears in this file's prose, which is why the lint sees it. **
+
 rc=0 on success.  Run: python3 P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong.py
                         (numpy scipy; ~10 s)
 """

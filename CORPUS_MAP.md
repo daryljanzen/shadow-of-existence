@@ -507,6 +507,47 @@ theorem it used, which is why this station yields a ROUTE rather than a finding 
 ⌗ *Filed in `THE_FERMION_SECTOR_GEOMETRY`, which is where the sector's route belongs.*
 
 **Register: 239 rows. Gates: twenty-one, twenty-one rc=0. `L-203`: three of five stations walked, and the remaining two are now ORDERED.**
+### Revision r2491+c54.195 — 2026-08-12 (working fork, line/54). **THE OBSERVER LINE'S ITEM 38 ANSWERED, AND THE ANSWER WITHDRAWS THIS LINE'S HEADLINE FOR THE THIRD TIME IN THE SPAN.**
+
+**⌗ THE ITEM WAS RIGHT AND IT WAS THE ONE QUESTION THE SCANS COULD NOT ANSWER.** *r2485: "of the 23 datum-scan
+spectra, ZERO reach peak 8 ... the quantity that now carries the disagreement cannot be tested against the one
+freedom known to move things." It named the experiment — two or three seam phases at production depth.*
+
+⇒⇒ ***AT $\phi = 0$, $\pi/4$, $\pi/2$ AND $\pi$ THE FITTED $\phi/\pi$ IS 0.878, 0.958, 0.066 AND 0.671 —
+A SPAN OF 0.891 — AND THE CONTROL'S 0.263 LIES INSIDE IT.*** *c54.191 read 34% closure from the two endpoints;
+**the interior is where the motion is**.*
+
+**⛔ SO THE $0.62\pi$ IS THE VALUE AT ONE READING AND NOT A PREDICTION.** *The driving attribution of c54.193
+stands — the driving is what separates the arms at any given reading — **but a quantity the datum can move
+across the value it is compared against is not a prediction of the construction**, and c54.190–191's promotion
+of it to "one number and one mechanism" is withdrawn.*
+
+**⌗ THE PEAK HEIGHTS MOVE WITH THE SAME FREEDOM AND DO NOT REACH THE SKY EITHER.** *$P_1/P_2$ runs 0.483 →
+1.618 across the four, against 2.217 in the sky and 2.197 in the control.*
+
+**⛭ WHAT IS ROBUST IS THE SPACING.** *0.9629–0.9814 of $\ell_A$ over the same four — 1.9% — on top of its
+insensitivity to the fitted parameter and its tracking of $r_s$ at 98% of the acoustic rate.* ⇒ ***The one
+acoustic quantity this construction states and does not surrender to a choice.***
+
+⇒⇒⇒ ***AND WHAT MAKES THIS A WITHDRAWAL RATHER THAN A REFINEMENT: the reading whose phase comes closest to
+the control's is still SIXTY TIMES the control in $\chi^2$ per degree of freedom — 224 against 3.71 on the same
+185 bins. Agreeing on the phase does not fix the spectrum, so the phase was never carrying the disagreement.***
+
+⚠ **WHERE IT DOES LIVE, THIS REVISION DOES NOT CLAIM TO KNOW.** *Not the spacing, which is right; not the phase
+or the heights, which a free choice moves; and not any single quantity the section can name.* ⌗ ***A worse
+position than the one it replaces and a truer one.***
+
+⛔ *`F5` unsoftened, and it cuts both ways: **a discrepancy that turns out to rest on a free choice is not a
+framework verdict either.** `PO-7` protected; the conversion is Daryl's.*
+
+**⌗⌗ AND THE ROUTED GATE WAS PAID BEFORE IT WAS USED.** *`check_settings` (r2486, built from this line's own
+routed discipline) flagged seven of this line's receipts as reporting reduced-settings quantities without a
+declaration. **All seven now carry one**, and three of them declare a figure this line has since retracted —
+which is the declaration doing exactly what it was proposed for.* ⌗ *Two flagged receipts are the observer
+line's own and are left alone.*
+
+⚠ *And the `|x|` math-bar trap took a fourth payment: a register row with two of them split into ten cells.
+**The rule is in the handover and I did not read my own handover.***
 
 ### Revision r2491 — 2026-08-11 (main line). **STATION Ⓒ WALKED AND IT BITES — the equianharmonic structure supplies $\mathbb Z_6$ where the corpus's cover carries $S_3$, and routed item 23 is the same knot.**
 

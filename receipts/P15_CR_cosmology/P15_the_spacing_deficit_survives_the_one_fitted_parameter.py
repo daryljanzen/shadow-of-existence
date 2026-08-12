@@ -53,6 +53,12 @@ instrument pins ell_A = 301.6 while `P15_zonset_determinations` derives z_onset 
 MEASURED 301.76.  0.05%, and it is why this instrument returns 6761 where that receipt returns
 6797. **  *Named so that the two numbers are not read as a disagreement.*
 
+SETTINGS: reduced -- LMAXL=1000 vs production 3000.  AT PRODUCTION: PART 4's sensitivity is
+retracted -- at LMAXL=3000 the asymptotic series tracks r_s at 98% of the acoustic rate, not
+the 24% read here off the FIRST peak, which sits inside a transient (c54.191).  The pin scan's
+own robustness stands.  ** This is the second figure this depth cost, and both are declared
+here rather than left to the reader. **
+
 rc=0 on success.  Run: python3 P15_the_spacing_deficit_survives_the_one_fitted_parameter.py
                         (numpy scipy; ~10 s)
 """
