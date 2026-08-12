@@ -113,6 +113,41 @@ disagreed about a paper's text, the resolution has been the same every time and 
 edits*** *— see `FOR_54.md`, the inbox. **Five of its first seventeen items were applied by the fork before this
 sentence was written**, which is why the routing convention is kept rather than replaced by direct edits.*
 
+## ⛭⛭ WHEN A QUOTATION LOOKS WRONG, DO NOT RE-READ — RUN `git log -S`
+
+*Added r2436, because `ARC 16` found seven documents quoting sentences their source papers no longer contain, and the
+obvious response — a gate — **was measured and cannot be built** (see below).*
+
+```bash
+git log -S "the sentence you doubt" -- corpus/the_paper.tex     # which commit removed or changed it
+git log -p -S "the sentence you doubt" -- corpus/the_paper.tex  # and what it became
+```
+
+***That returns the commit, the date, the revision number and the message saying why.*** ⇒ **So the cost of a
+suspect quotation is one command at the moment you doubt it, not a re-read of the corpus.**
+⌗ *Verified: `git log -S "no scale-invariant attractor, no consistency relation" -- corpus/CR_cosmology.tex` returns
+`2af0b0b c54.179`, the revision where the fork applied routed item 17.*
+
+**⚠ AND WHY THERE IS NO GATE FOR THIS, stated so it is not attempted a fourth time.** *Three attempts to mechanise a
+class that reading finds easily have failed the same way:*
+*· **`G1`** scored **distance** from a claim to its support — broken by `G2`'s blind run (a result carrying its
+argument inside itself needs no nearby support);*
+*· the **phrase-proximity test** scored closing language near a label — **7/7 false positives**;*
+*· the **quotation check** scored whether a quoted string still exists — **measured on 315 quotations: 158 were
+transliteration (`Λ` vs `\Lambda`), 11 elided with an ellipsis, and the residual is dominated by the document's own
+EMPHASISED PROSE, which is not a quotation at all**.*
+⇒ ***THE DIAGNOSTIC, and it predicted all three: if the quantity's meaning changes with what the sentence is ABOUT,
+it is not a measurement — it is a guess with arithmetic on it.*** *"Is this string a quotation" depends entirely on
+what it is.*
+
+⌗ **AND THE CORPUS ALREADY SOLVED THIS PROBLEM ONCE, WHICH IS THE SHAPE OF ANY REAL FIX.** *`check_citations` works —
+**not by matching text, but because `\rcpt{}` is a MARKER someone declared**. A quotation gate would work for the
+same reason and for no other.* ⚠ *Retrofitting a marker across 315 quotations in one document is a large job for a
+small return, and* ***`ARC 16` demonstrated that reading finds them anyway.***
+
+⛔ **AND THE ARGUMENT AGAINST INSTRUMENTING STANDS UNTOUCHED BY ALL OF THIS:** ***a gate that fires whenever a paper
+is improved would train nodes to stop improving papers.***
+
 ## ⌗ WHAT GIT SOLVES HERE, and these are real
 
 *Four problems this line has been solving by hand, each with a revision number attached:*

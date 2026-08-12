@@ -146,6 +146,48 @@ sources: [cowork, chat]
 
 
 
+### Revision r2436 — 2026-08-11 (main line). **THE FORK `ARC 16` HANDED FORWARD WAS A FALSE FORK — the answer was a capability that already existed, and the gate caught a row this line had answered and never struck.**
+
+**⌗⌗ THE QUESTION WAS "INSTRUMENT THE OVERWRITE OR ACCEPT IT?" AND BOTH HORNS WERE WRONG.**
+
+**⓵ GIT ALREADY HOLDS THE DRAFTS.** *The phenomenon was diagnosed as "the corpus does not keep its own drafts" —*
+***and the corpus had started keeping them, which this line failed to notice while diagnosing it.*** *Verified:
+`git log -S "no scale-invariant attractor, no consistency relation" -- corpus/CR_cosmology.tex` returns
+**`2af0b0b c54.179`**, the revision where the fork applied routed item 17 — commit, date, revision and reason, in
+seconds.*
+
+**⓶ AND THE GATE CANNOT BE BUILT — measured rather than argued.** *315 quotations in `THE_EVOLUTION_MAP`:
+**158 matched after normalising** (transliteration — `Λ` against `\Lambda`, `GM/c²` against `GM/c^{2}`, `\emph{}`),
+**11 were ellipsis-elided**, and* ***the residual is dominated by the document's own EMPHASISED PROSE, which is not a
+quotation at all.***
+⇒ ***THIRD ATTEMPT, SAME FAILURE — and the r2425 diagnostic predicted all three:*** *`G1` scored **distance**
+(broken by `G2`'s blind run), the **phrase test** scored closing language (**7/7 false positives**), and this scored
+**string existence**.* **If the quantity's meaning changes with what the sentence is ABOUT, it is not a measurement.**
+*"Is this string a quotation" depends entirely on what it is.*
+
+**⓷ AND THE CORPUS HAD ALREADY SOLVED THIS ONCE, which is the shape of any real fix.** *`check_citations` works —*
+***not by matching text, but because `\rcpt{}` is a MARKER someone declared.*** ⇒ **A gate can check a DECLARATION;
+it cannot check an INTERPRETATION.** *Retrofitting a marker across 315 quotations is a large job for a small return,
+and `ARC 16` demonstrated that reading finds them anyway.*
+
+**⇒ SO "ACCEPT" IS NO LONGER "RE-READ EVERYTHING": it is ONE COMMAND AT THE MOMENT YOU DOUBT SOMETHING**, *and the
+whole instrument is a paragraph in `THE_HUB` telling a future node which command to run.* ⛭⛭ ***The answer to a
+systematic finding was neither a gate nor a re-read — it was noticing a capability the programme already had.***
+⌗ *And the argument against instrumenting stands untouched by all of it:* **a gate that fires whenever a paper is
+improved would train nodes to stop improving papers.**
+
+**⌗ AND `check_burndown` CAUGHT A ROW THIS LINE HAD ANSWERED AND NEVER STRUCK.** *It reported* **"STALE FALSIFIER:
+`L-200` — open and unrun for more than 5 revisions. A cheap falsifier left unrun is the worst debt in the
+register."** ⇒ ***It was not unrun. It was answered twice and never struck*** *— the constant side at r2422, the
+datum side at r2433.* ⌗ **And its two halves close by ONE argument:** *the constant side because the residue is one
+**dimensionful** parameter, the datum side because the datum is **dimensionless**.* *p0's falsifier was **met rather
+than asserted**: P3's D-dimensional metric function was a place a hidden freedom could have lived, checked, and it
+locked.*
+⇒ ***THE LESSON IS THE GATE'S, NOT THIS LINE'S: a row answered but not struck is indistinguishable from a row
+ignored, and only the burn-down could tell.***
+
+**Register: 217 rows, 171 struck of 185 QUESTIONS (92.4%). Gates: twenty-one, twenty rc=0.**
+
 ### Revision r2435 — 2026-08-11 (main line). **`ARC 16` DISCHARGED, ALL FOUR STEPS — and the harvest is that the corpus has no place for a sentence that is true-for-now.**
 
 **⌗⌗ THE LINEAR RE-READ IS COMPLETE: all eighteen stations, p0 → p17, every claim and every quotation checked at
