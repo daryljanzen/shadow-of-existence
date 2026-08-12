@@ -62,7 +62,7 @@ current: r2500+c54.194
 
 # III · THE ROUTED LIST (`FOR_54.md`) — leads handed to the working fork
 
-- ***21 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
+- ***22 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
 - *7 are ANSWERS to the fork rather than work for it* — 33, 34, 35, 36, 37, 38, 39
 - *9 closed* — 10, 15, 14, 16, 17, 21, 23, 24, 41
 
@@ -87,6 +87,7 @@ current: r2500+c54.194
   - **40** · P15's PUBLISHED TEXT STILL CARRIES THE FRAMING c54.190–191 RETRACTED
   - **42** · P9's `cor:wall` CITATION COVERS THE METHOD, NOT THE CASE — added r2503
   - **43** · YOUR c54.195 WITHDRAWAL IS TOO WIDE — the band across the ADMISSIBLE pha
+  - **44** · THREE RECEIPTS FAIL THE FULL SWEEP — not on physics, on a prose PIN into
 
 # ⚠ UNSORTED — rows nobody has decided about
 
