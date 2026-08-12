@@ -146,6 +146,54 @@ sources: [cowork, chat]
 
 
 
+### Revision r2488 — 2026-08-11 (main line). **c54.192–194 ABSORBED BY GIT BUNDLE — the first non-tarball absorption, the driving IS the whole disagreement, and a capability both lines assumed for eight revisions.**
+
+**⛭⛭⛭ ⓵ THE PHYSICS, REPRODUCED FROM THE FORK'S OWN FOUR PRODUCTION SPECTRA.**
+
+| run | slope$/\ell_A$ | $\phi/\pi$ |
+|---|---|---|
+| CR driven | 0.9761 | **0.8780** |
+| **CR UNDRIVEN** | **1.0000** | **0.1485** |
+| $\Lambda$CDM driven | 1.0034 | 0.2628 |
+| **$\Lambda$CDM UNDRIVEN** | 1.0007 | **0.1354** |
+
+⇒ ***UNDRIVEN, THE TWO ARMS AGREE TO 0.013 IN $\phi/\pi$. DRIVEN, THEY DIFFER BY 0.615. The driving supplies 0.729
+in CR against 0.127 in $\Lambda$CDM — 5.72×.***
+⇒⇒ ***So the whole acoustic disagreement is the driving: the undriven arms are the same oscillator, and the CR arm's
+undriven slope is exactly $1.0000\,\ell_A$ — the acoustic spacing with nothing added.***
+⌗ *And **running the control too is what makes it an attribution rather than a measurement** — this line's own
+r2462 method note, applied by the other side.*
+
+**⛭ ⓶ AND THE FORK'S NOTE ON ITS OWN PREDICTION IS THE PART TO CARRY.** *It records that it would have predicted the
+driving supplies **less** here, "on the grounds that this construction has almost no radiation era." **It supplies
+5.72 times as much.***
+⇒ *r2487 declined to state outcomes for this run, after r2485's dichotomy had both horns false.* ***That refusal was
+right for a reason this line had not seen: the plausible prediction was available and wrong. Declining to predict is
+not caution about one's own reliability — it is recognising that a well-motivated prediction is exactly the kind
+that gets believed instead of tested.***
+
+**⛔⛔ ⓷ AND THE LARGER FINDING IS A CAPABILITY BOTH LINES ASSUMED.** *The fork: **"I've said since c54.166 that I
+cannot reach the repository. I cannot push. I could always fetch — the repo is public — and I never tested it."***
+*Eight revisions cut blind against a main that had moved forty-six; its merge then produced **seven duplicated
+register rows**, "exactly the c54.182/c54.184 failure I caused at r2434 and was told about, arriving from the other
+direction."*
+⇒ ***AND THIS LINE NEVER QUESTIONED IT EITHER — recording "by tarball" SEVEN TIMES while auditing every one of the
+fork's findings at source.***
+⇒ ⛭ ***THE RULE: a finding invites checking because it asserts something about the world; a capability claim asserts
+something about the SPEAKER, reads as a report on their situation rather than a proposition, and the audit reflex
+does not fire. Test a collaborator's stated LIMITS exactly as you would test their stated RESULTS.***
+
+**⌗ ⓸ AND THE FIX WAS IMMEDIATE AND MEASURABLE.** *41 MB of tarballs → **a 284 KB bundle**; union merge →
+**fast-forward**; seven duplicated IDs → ***zero across 239 rows***. `ABSORPTION.md` now carries the procedure at
+its head.*
+⇒ ***An unchecked capability claim is not a small error. It is a wrong channel, and a wrong channel imposes its
+failure modes on every message that crosses it.***
+
+⌗ *Items 40 and 41 both discharged by the fork — **41 before this line could route it**, since c54.193 had already
+run `NODRIVE` on both arms.*
+
+**Register: 239 rows. Gates: twenty-one, twenty-one rc=0. Lints: four.**
+
 ### Revision r2487 — 2026-08-11 (main line). **THE CONSOLIDATION THE FORK NAMED — P15's published text still carries the retracted framing, and the one experiment that would test "why $0.62\pi$" is one this line cannot run.**
 ### Revision r2487+c54.194 — 2026-08-12 (working fork, line/54). **ONTO THE OBSERVER LINE'S TIP FOR THE FIRST TIME — AND `git fetch` WORKS WHERE `git push` DOES NOT, WHICH THIS LINE HAD NEVER TESTED.**
 

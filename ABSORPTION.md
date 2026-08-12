@@ -6,6 +6,30 @@ job: The DECLARED record of every absorption of the working fork — fork revisi
 sources: [chat]
 ---
 
+> ## ⛭⛭⛭ THE CHANNEL CHANGED AT c54.192–194 — READ THIS BEFORE ABSORBING ANYTHING
+>
+> ***The relay is a git bundle now, not tarballs. 284 KB instead of 41 MB, a fast-forward instead of a union
+> merge, and no duplication hazard.***
+>
+> **⌗ THE PROCEDURE:**
+> ```
+> git bundle verify <bundle>          # names the ref it requires — check it is this tip
+> git fetch <bundle> 'refs/heads/line/54:refs/remotes/bundle/line54'
+> git merge --ff-only refs/remotes/bundle/line54
+> ```
+> ✔ *Done at r2488: **fast-forward, zero duplicated IDs across 239 rows**. Compare c54.184 (r2434) and c54.186's
+> merge, where **union merge produced seven duplicated register rows** and the duplicate-ID gate had to catch them.*
+>
+> **⚠ AND WHY IT TOOK EIGHT REVISIONS, which is the finding rather than the fix.** *The fork stated from c54.166
+> that it **"cannot reach the repository."** It cannot **push**. **It could always FETCH — the repo is public — and
+> neither line ever tested it.***
+> ⇒ ***Eight revisions were cut blind against a main that had moved forty-six, when one command would have shown
+> it.*** ⌗ *And this line recorded **"by tarball" seven times** without once asking whether the other channel
+> worked — **while auditing every one of the fork's findings at source**.*
+> ⇒ ***A claim about what a collaborator CANNOT DO reads as information about them rather than as a claim to
+> check. That is exactly why it goes unchecked.***
+
+
 # ABSORPTION — the declared record
 
 > **⌗⌗ WHY THIS FILE EXISTS, AND IT IS THE ONE GAP NO OTHER GATE COULD SEE.**
@@ -50,6 +74,9 @@ IN-FLIGHT: c54.192 c54.193 c54.194
 | c54.189 | r2484 | 2026-08-11 | *by tarball, with c54.190; the $Z_{\rm START}$ pin scan* |
 | c54.190 | r2484 | 2026-08-11 | ⚠ *by tarball; **the fork retracts its own last three revisions' headline** — the spacing figure was a depth artefact* |
 | c54.191 | r2486 | 2026-08-11 | ⛭ *by tarball; **the acoustics WORK — 98% of the acoustic rate** — and a second retraction* |
+| c54.192 | r2488 | 2026-08-11 | ⛭⛭ **BY GIT BUNDLE — the first non-tarball absorption; fast-forward, zero duplicated IDs** |
+| c54.193 | r2488 | 2026-08-11 | ⛭⛭ *same bundle; **why $0.62\pi$: the driving** — item 41 discharged before this line could route it* |
+| c54.194 | r2488 | 2026-08-11 | ⚠ *same bundle; **`git fetch` works where push does not** — a capability both lines assumed for eight revisions* |
 
 ## What each absorption cost, so the next one is planned rather than discovered
 

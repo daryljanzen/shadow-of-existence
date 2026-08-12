@@ -16,8 +16,8 @@ sources: [cowork, chat]
 > **⌗ NOT COVERED — STRUCK since r2417 (19 rows):**
 > `L-200` `L-201` `L-211` `L-213` `L-214` `L-215` `L-223` `L-224` `L-225` `L-227` `L-229` `L-231` `L-232` `L-233` `L-234` `L-235` `L-236` `L-237` `L-238`
 >
-> **⌗ NOT COVERED — OPENED since r2417 (19 rows):**
-> `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506`
+> **⌗ NOT COVERED — OPENED since r2417 (20 rows):**
+> `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507`
 >
 > ⌗ ***The ID half is machine-checked against the register; run `regen_grain_currency.py --check`. The prose half below is a JUDGEMENT and is written by hand — the script preserves it verbatim and never invents it, because a gate can check a declaration and not a judgement.***
 
