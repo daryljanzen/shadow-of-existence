@@ -84,6 +84,15 @@ LEADS = {
    "STABILITY (no runaway) is the SEPARATE remainder**, routed to Friedrich and Andreasson\u2013Ringstr\u00f6m, "
    "Nariai the exception",
    ['L-165'], 3, 2),
+ 'L-802': ("\u26ed\u26ed **cc54 CLOSED `L-245`'s STABILITY BRACKET against the literature** \u2014 a $2\\times2$ "
+   "grid in SYMMETRY\u00d7DATA-SIZE with ONE open cell. **(general, small) COVERED** \u2014 Friedrich 1986 "
+   "(vacuum), Ringstr\u00f6m 2008 (scalar), Rodnianski\u2013Speck 2013 (fluid); **(symmetric, all) COVERED** "
+   "\u2014 Andr\u00e9asson\u2013Ringstr\u00f6m, Wald; **(general, ALL-data) OPEN** = the cosmic no-hair "
+   "CONJECTURE, general GR's problem not CR's. \u21d2 **And the cell CR needs \u2014 the perturbative "
+   "graviton, vacuum, small departures from the dS substrate \u2014 is Friedrich's, which P11 itself names "
+   "(\u201cexactly the perturbative regime of the propagating graviton\u201d).** Whether a large-data "
+   "beyond-wall regime is ever needed is a construction question, open and not settled here",
+   ['L-165'], 3, 2),
  'L-245': ("**does a general no-isometry leaf with $\\sigma^{TT}\\ne0$ evolve without runaway, for ALL "
    "data?** \u2014 split out of `L-174` at r2530 because it was never what that row asked. The **freedom** "
    "generalises (off-shell Bianchi, no Killing vector); P11's shear charge and positive reduced energy close the "

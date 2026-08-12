@@ -118,7 +118,7 @@ is**.*
 | **`L-511`** | r2508 | done in the registering revision — both slicings computed symbolically, the longitudinal solve run, the York split re-checked standalone, and four sou |
 | **`L-512`** | r2512 | done in the registering revision — gate written, grandfathered, two false-positive classes removed, and the historical duplicate re-seeded and caught |
 
-*29 live rows carry a stated next step; the 14 longest-unworked are shown.*
+*30 live rows carry a stated next step; the 14 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session
