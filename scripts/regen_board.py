@@ -28,22 +28,21 @@ FAM = {
  'L-165': ('A · THE PROTECTED QUESTIONS', 'PO-6 the interacting tower — UV degree measured **quartic**, IR free; what remains is **DEFINING the sum**, plus the closed-form nonlinear $\\Lambda>0$ solution'),
  'L-175': ('A · THE PROTECTED QUESTIONS', 'PO-9 the dimensional descent — **can a second slicing be non-arbitrary, its selection forced by the first?**'),
  'L-202': ('A · THE PROTECTED QUESTIONS', 'the seam phase, do-not-assert both ways — **does a MASSIVE trajectory carry a phase?** (the null ones are $K$\'s fixed set)'),
- 'L-174': ('B · THE ONE UNBUILT PHYSICS ITEM', '**exhibit the general matter dynamics BEYOND spherical symmetry.** P9 states it is ordinary GR at the wall; `L-207` exhibited it in the spherically symmetric class only'),
- 'L-207': ('B · THE ONE UNBUILT PHYSICS ITEM', '⓶ gated on PO-6 and must not be opened without it (⓵ discharged r2450)'),
- 'L-171': ('B · THE ONE UNBUILT PHYSICS ITEM', 'PO-7 — whether the acoustic-phase discrepancy is a real disagreement with the sky. **A verdict question: Daryl\'s**'),
- 'L-210': ('C · INSTRUMENT AND RECORD WORK (mine)', 'the entry-point front — all 44 sites carry verdicts; live leads worked one at a time'),
- 'L-228': ('C · INSTRUMENT AND RECORD WORK (mine)', '`check_loci` extended to the possessive and compound-noun forms node 52 declined to claim'),
- 'L-230': ('C · INSTRUMENT AND RECORD WORK (mine)', 'the `COMPUTES:` convention — uptake **flat at 40 of 357** while the corpus grew a sixth'),
- 'L-204': ('C · INSTRUMENT AND RECORD WORK (mine)', 'R-P stations ③④ — P8/P9, GR field equations and the exact-solution catalogue'),
- 'L-218': ('C · INSTRUMENT AND RECORD WORK (mine)', '① the reader-package formats via pandoc in CI (② the companion SPEC done r2478)'),
- 'L-217': ('C · INSTRUMENT AND RECORD WORK (mine)', 'the CR/Higgs relation is stated (`CR_AND_THE_HIGGS` §4); **`F1` stays live — the relation breaks if the gauge group is ever promoted to forced**'),
- 'L-206': ('D · YOURS, WITH A NAMEABLE JUDGEMENT', '**whether P3 is reordered at all** — a presentation decision; the skeleton is built either way'),
- 'L-216': ('D · YOURS, WITH A NAMEABLE JUDGEMENT', '**you run the repo publish step** — needs your GitHub account'),
- 'L-219': ('D · YOURS, WITH A NAMEABLE JUDGEMENT', '**which rung of the access ladder is climbed** — gates `L-218` and first contact. ⛭ *the one of yours that blocks other work*'),
- 'L-222': ('D · YOURS, WITH A NAMEABLE JUDGEMENT', '**inviting 54 to the repo** — now only about PUSH access, since `git fetch` works (r2488)'),
+ 'L-174': ('B · THE PHYSICS STILL OWED', '**exhibit the general matter dynamics BEYOND spherical symmetry.** P9 states it is ordinary GR at the wall; `L-207` exhibited it in the spherically symmetric class only'),
+ 'L-207': ('B · THE PHYSICS STILL OWED', '⓶ gated on PO-6 and must not be opened without it (⓵ discharged r2450)'),
+ 'L-171': ('B · THE PHYSICS STILL OWED', 'PO-7 — whether the $0.62\\pi$ acoustic-phase disagreement is real against the sky. **What it needs is the seam-phase scan at PRODUCTION depth** (`FOR_54` 38): the 34%-and-stops result was measured at LMAXL=1000'),
+ 'L-210': ('C · INSTRUMENT AND RECORD WORK', 'the entry-point front — all 44 sites carry verdicts; live leads worked one at a time'),
+ 'L-228': ('C · INSTRUMENT AND RECORD WORK', '`check_loci` extended to the possessive and compound-noun forms node 52 declined to claim'),
+ 'L-230': ('C · INSTRUMENT AND RECORD WORK', 'the `COMPUTES:` convention — uptake **flat at 40 of 357** while the corpus grew a sixth'),
+ 'L-204': ('C · INSTRUMENT AND RECORD WORK', 'R-P stations ③④ — P8/P9, GR field equations and the exact-solution catalogue'),
+ 'L-218': ('C · INSTRUMENT AND RECORD WORK', '① the reader-package formats via pandoc in CI (② the companion SPEC done r2478)'),
+ 'L-217': ('C · INSTRUMENT AND RECORD WORK', 'the CR/Higgs relation is stated (`CR_AND_THE_HIGGS` §4); **`F1` stays live — the relation breaks if the gauge group is ever promoted to forced**'),
+ 'L-206': ('C · INSTRUMENT AND RECORD WORK', 'P3 derives $w$, $u$, $3w$ in §3 and does not introduce the door that throws them until §6 — **move the object ahead of its own shadows**; every piece exists'),
 }
-ORDER = ['A · THE PROTECTED QUESTIONS', 'B · THE ONE UNBUILT PHYSICS ITEM',
-         'C · INSTRUMENT AND RECORD WORK (mine)', 'D · YOURS, WITH A NAMEABLE JUDGEMENT', 'UNSORTED']
+# ** THERE IS NO "DARYL'S CALL" FAMILY.  It was a fabrication this line was barred from using and
+# used anyway (r2498): three of its four rows were DONE IN FACT and one was a determinate defect. **
+ORDER = ['A · THE PROTECTED QUESTIONS', 'B · THE PHYSICS STILL OWED',
+         'C · INSTRUMENT AND RECORD WORK', 'UNSORTED']
 
 
 def live_rows():

@@ -8,7 +8,7 @@ current: r2497+c54.194
 
 # THE BOARD
 
-> ***17 live rows, 222 struck.*** *Grouped below by family, because a family is what a person can hold and a count is not.*
+> ***14 live rows, 225 struck.*** *Grouped below by family, because a family is what a person can hold and a count is not.*
 >
 > ⚠ **This file is GENERATED.** *At r2497, **39 of 56 rows showing as live were not work** — eight were the fork's completed revisions, twenty-four were table-of-contents pointers, seven said "REGISTERED AND STRUCK" in their own text. **A recited count concealed that rather than reporting it.** So the board is computed, not written.*
 
@@ -19,27 +19,21 @@ current: r2497+c54.194
 - **`L-202`** — the seam phase, do-not-assert both ways — **does a MASSIVE trajectory carry a phase?** (the null ones are $K$'s fixed set)
 - **`L-221`** — PO-5 quark/lepton — **is there an operator whose kernel is the four colourless gradings?** (the group is settled: $S_3$, r2494)
 
-## B · THE ONE UNBUILT PHYSICS ITEM
+## B · THE PHYSICS STILL OWED
 
-- **`L-171`** — PO-7 — whether the acoustic-phase discrepancy is a real disagreement with the sky. **A verdict question: Daryl's**
+- **`L-171`** — PO-7 — whether the $0.62\pi$ acoustic-phase disagreement is real against the sky. **What it needs is the seam-phase scan at PRODUCTION depth** (`FOR_54` 38): the 34%-and-stops result was measured at LMAXL=1000
 - **`L-174`** — **exhibit the general matter dynamics BEYOND spherical symmetry.** P9 states it is ordinary GR at the wall; `L-207` exhibited it in the spherically symmetric class only
 - **`L-207`** — ⓶ gated on PO-6 and must not be opened without it (⓵ discharged r2450)
 
-## C · INSTRUMENT AND RECORD WORK (mine)
+## C · INSTRUMENT AND RECORD WORK
 
 - **`L-204`** — R-P stations ③④ — P8/P9, GR field equations and the exact-solution catalogue
+- **`L-206`** — P3 derives $w$, $u$, $3w$ in §3 and does not introduce the door that throws them until §6 — **move the object ahead of its own shadows**; every piece exists
 - **`L-210`** — the entry-point front — all 44 sites carry verdicts; live leads worked one at a time
 - **`L-217`** — the CR/Higgs relation is stated (`CR_AND_THE_HIGGS` §4); **`F1` stays live — the relation breaks if the gauge group is ever promoted to forced**
 - **`L-218`** — ① the reader-package formats via pandoc in CI (② the companion SPEC done r2478)
 - **`L-228`** — `check_loci` extended to the possessive and compound-noun forms node 52 declined to claim
 - **`L-230`** — the `COMPUTES:` convention — uptake **flat at 40 of 357** while the corpus grew a sixth
-
-## D · YOURS, WITH A NAMEABLE JUDGEMENT
-
-- **`L-206`** — **whether P3 is reordered at all** — a presentation decision; the skeleton is built either way
-- **`L-216`** — **you run the repo publish step** — needs your GitHub account
-- **`L-219`** — **which rung of the access ladder is climbed** — gates `L-218` and first contact. ⛭ *the one of yours that blocks other work*
-- **`L-222`** — **inviting 54 to the repo** — now only about PUSH access, since `git fetch` works (r2488)
 
 ## ⌗ THE ROUTED LIST (`FOR_54.md`)
 

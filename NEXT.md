@@ -93,11 +93,7 @@ is**.*
 
 | row | last worked | what its own row says to do next |
 |---|---|---|
-| **`L-206`** | r2380 | Daryl's call on whether P3 is reordered at all; if yes, the skeleton is written and the derivation of $w,u,3w$ as shadows is its spine ⏸ **HELD BY DAR |
 | **`L-210`** | r2402 | work the unmarked sites **one at a time and without rushing**, giving each a verdict marker; the dig is mechanical and re-runnable, **the verdict neve |
-| **`L-216`** | r2409 | Daryl runs it when at a computer or when the publish call lands; **then tell this line the URL (public) or hand it a short-lived token (private)** |
-| **`L-219`** | r2415 | each rung is Daryl's call and taken one at a time; **nothing below a rung starts before it** |
-| **`L-222`** | r2428 | Daryl invites the fork to the repo; **`THE_HUB`'s arrival section is what it reads first** |
 | **`L-228`** | r2440 | extend to the possessive and compound-noun forms the contributor attempted, left unapplied, and **declined to claim precision for** |
 | **`L-207`** | r2450 | ⓵ ✔ **DISCHARGED r2450 — exhibited, not merely asserted** · ⓶ nothing until `PO-6` moves |
 | **`L-202`** | r2457 | **narrowed twice, still open and still do-not-assert both ways** · the live question is now: **does a MASSIVE trajectory carry a phase?** — the null o |
@@ -107,8 +103,12 @@ is**.*
 | **`L-218`** | r2478 | ✔ **② done r2478 — `COMPANION_SPEC.md`** · ① formats via pandoc in CI · ③ contribution, last |
 | **`L-174`** | r2480 | ⓵ **narrowed r2480 — the owed thing is now precise**: ***exhibit, BEYOND spherical symmetry, what P9 states at `cor:wall` and `L-207` ⓵ showed in one  |
 | **`L-217`** | r2482 | ✔ **the statement exists — `CR_AND_THE_HIGGS.md` §4** · what the row still owes is **§5's onward list**, and `F1` stays live: ***the relation breaks i |
+| **`L-204`** | r2483 | ✔ **the strike was made r2383 — this field was stale for 99 revisions, corrected r2483** · what remains is ***③④: P8/P9, GR field equations and the ex |
+| **`L-171`** | r2484 | P15 `sec:flatlcdm`; receipt `ROBUST_p1p2_scan`; `PO-7` |
+| **`L-230`** | r2490 | ⓵ **the instrument question is closed r2447** — no gate can read a quantifier · ⓶ the live route is **make `COMPUTES:` universal** (39 of 309 today),  |
+| **`L-206`** | r2498 | **move the hinge/door object AHEAD of the parameters it throws** — every piece exists; the move is verified by `check_compile` and by the parameters n |
 
-*17 live rows carry a stated next step; the 14 longest-unworked are shown.*
+*14 live rows carry a stated next step; the 14 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session
