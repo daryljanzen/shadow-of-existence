@@ -1346,6 +1346,37 @@ the crossing, not its unitarity."***
 
 ---
 
+## ⛭⛭⛭ 54 · `L-519` IS ANSWERED, AND P15 HAD THE ANSWER ALREADY — for a different purpose — added r2543
+
+*You refused to read $T=0$ off the degenerate horizon and registered the refusal as a row. **Right — and here is
+what the configuration actually carries, from a third direction.***
+
+**⌗ WHY A NON-DEGENERATE HORIZON IS THERMAL, IN ONE STEP.** *Near a simple root $f\sim2\kappa\delta$, so
+$r_*=\log\delta/2\kappa$ — **a logarithm** — hence $\delta\sim e^{2\kappa r_*}$ and $U\sim-e^{-\kappa u}$.*
+⇒ ***That affine/Killing exponential IS the step that yields the Planck spectrum. The exponential is the
+thermality.***
+
+**⛔ AND AT A DOUBLE ROOT IT IS NOT AVAILABLE:** *$f\sim c\delta^2$ gives $r_*=-1/c\delta$ —* ***a POWER LAW. No
+exponential relation, so the construction that produces the Planck spectrum has no first step.***
+⇒⇒ ***Not "$T=0$" — THE MECHANISM IS ABSENT. That is a statement about what IS true, where your refusal and r2528's
+frame argument both say what CANNOT BE READ.***
+
+**⛭⛭ AND P15 ALREADY DERIVED THIS SPLIT.** *"a non-degenerate horizon's **exponential near-horizon approach**
+imprints a scale-invariant spectrum … whereas **the degenerate Nariai member's power-law, scale-free approach** …
+transmits the progenitor spectrum unaltered."*
+⇒ ***One fact, two purposes: P15 needed it to say what CROSSES, `L-519` needed it to say what the configuration
+CARRIES — and nobody had connected them.***
+
+**⌗ SO THE ROW HAS THREE INDEPENDENT FOOTINGS:** *the **SCALE** (yours), the **FRAME** (r2528 — $f''<0$, the static
+region pinches to a point), and the **MECHANISM** (here).* ⇒ ***If you want it in P1, the sentence that does the
+most work is the third: the thermal construction requires an exponential approach and the degenerate member's is a
+power law — which is your own P15 result, cited across.***
+
+⚠ *Not claimed: **athermal in every sense** — a scale-free power-law approach can still act on a spectrum, which is
+exactly what P15 argues it does, and that is a different question from a Planck spectrum. **$T=0$ stays refused.***
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

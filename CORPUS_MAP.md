@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2543 — 2026-08-11 (main line). **`L-519` CLOSED — the thermal mechanism needs an exponential approach, the degenerate member's is a power law, and P15 already derived that split for a different purpose.**
+
+**⌗ WHY A NON-DEGENERATE HORIZON IS THERMAL, IN ONE STEP.** *Near a simple root $f\sim2\kappa\delta$, so
+$r_*=\log\delta/2\kappa$ — **a logarithm** — hence $\delta\sim e^{2\kappa r_*}$ and $U\sim-e^{-\kappa u}$.*
+⇒ ***That affine/Killing exponential IS the step that yields a Planck spectrum at $T=\kappa/2\pi$. The exponential
+is the thermality; everything else is bookkeeping.***
+
+**⛔ AND AT A DOUBLE ROOT THE STEP IS NOT AVAILABLE.** *$f\sim c\delta^2$ gives $r_*=-1/c\delta$ —* ***a POWER LAW.
+No exponential relation between affine and Killing time, so the construction that produces the Planck spectrum has
+no first step.***
+⇒⇒ ***NOT "$T=0$" — THE MECHANISM IS ABSENT.***
+
+**⛭⛭ AND P15 ALREADY DERIVED THE SPLIT, ONE PAPER OVER.** *"a non-degenerate horizon's **exponential near-horizon
+approach** imprints a scale-invariant spectrum … whereas **the degenerate Nariai member's power-law, scale-free
+approach** … transmits the progenitor spectrum unaltered."*
+⇒ ***One fact, two purposes: P15 needed it to say what CROSSES; `L-519` needed it to say what the configuration
+CARRIES. Nobody had connected them.*** *Routed as item 54.*
+
+**⌗ SO THE ROW HAD THREE FOOTINGS, AND COUNTING THEIR KIND IS WHAT CLOSED IT:** *the **SCALE** (c54.202) and the
+**FRAME** (r2528) both say **what cannot be read**; the **MECHANISM** says **what is true**.*
+⇒ ⛭ ***THE RULE: when a row records a refusal, the thing that closes it is usually not a better reason to refuse —
+it is a mechanism, and the mechanism is often already in the corpus doing another job.***
+
+⚠ *Not claimed: athermal in every sense — **a scale-free power-law approach can still act on a spectrum, which is
+exactly what P15 argues it does**, and that is a different question from a Planck spectrum. **$T=0$ stays
+refused.***
+
 ### Revision r2542 — 2026-08-11 (main line). **A ROW CAN BE STALE BY POINTING FORWARD — cc54's two rows sat at #2 and #3 aiming at a question already closed.**
 
 **⛔ THE DEFECT.** *`L-801`'s next step was **"the STABILITY remainder: does the no-runaway hold for ALL data on the

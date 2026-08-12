@@ -103,11 +103,6 @@ LEADS = {
    "things beyond consistency \u2014 $T(a)$ carries no free parameter because $\\alpha$ is the sole "
    "constant and its rest term does NOT vanish, and $\\kappa=0$ at the member a collapse reaches",
    ['L-165'], 3, 2),
- 'L-519': ("the corpus holds **$\\kappa=0$ at Nariai** (P7) and the **equal-radii $dS_2\\times S^2$ throat** "
-   "(P15) and has never joined them \u2014 the two sides of the degenerate limit. **What temperature, if any, "
-   "does the configuration a collapse reaches carry, read on the near-horizon geometry rather than on "
-   "$\\kappa/2\\pi$?** Registered rather than left in a caveat",
-   ['L-165'], 2, 3),
  'L-520': ("items 45 and 46 applied: the **Petrov interval O-D-I is complete because the substrate is doubly "
    "ruled** (a cut inherits both rulings or neither, and II/III carry exactly one), and P12 now cites "
    "`Teitelboim1973` for its CONTENT \u2014 the brackets are the embeddability condition and HKT's forcing is "

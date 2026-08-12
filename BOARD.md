@@ -10,7 +10,7 @@ current: r2500+c54.194
 
 > ***Read `THE_METHOD.md` first.*** *The short form: **the VEINS are areas held open to be known inside and out — never crossed out. The LEADS are everything noticed that could inform one.** Work the top lead, gather what it turns up, re-order, repeat.*
 >
-> *15 live rows: **4 veins**, **11 leads**. 250 struck.*
+> *14 live rows: **4 veins**, **10 leads**. 251 struck.*
 
 # I · THE VEINS — held open, to be known inside and out
 
@@ -20,7 +20,7 @@ current: r2500+c54.194
 
 - **MAPPED** — the boundary condition closes **per fibre** and cannot be broken by the number of fibres; the clause `c54.129` answered was **the one the argument does not need**; the UV degree is **quartic**, the ordinary zero-point degree; compactness buys the **IR free**
 - ⛔ **DARK** — **defining the sum**; the closed-form nonlinear $\Lambda>0$ solution; and whether a theory with **one dimensionful constant** can regulate at all — and ⛭ r2536 sharpens where that bites: **the corpus takes the de Sitter horizon's TEMPERATURE ($T=1/2\pi\alpha$, depending on $\alpha$ ALONE, and the channel through which $\hbar$ ENTERS the framework) and never its ENTROPY ($S=\pi(\alpha/\ell_P)^2$, depending on the RATIO)**; and ⛔ **CORRECTED r2537**: r2505 recorded this as *what selects among FIVE-component shears without assuming vacuum*, and **both halves of that were withdrawn** — c54.198 made the count **TWO** (the momentum constraint fixes $W$ under the York split) and c54.199 showed **Goldberg–Sachs governs the OPTICAL shear, not $\sigma^{TT}$ at all**. ⇒ **What actually remains dark here is narrower and better posed: the two are the graviton polarizations, they carry the GEOMETRY rather than the foliation, and `L-802` closes their stability for the small-data cell the construction needs**
-- *4 live lead(s) inform this vein*
+- *3 live lead(s) inform this vein*
 
 ## `L-175` · PO-9 · WHAT FIXES THE SUBSTRATE'S DIMENSION
 
@@ -49,20 +49,19 @@ current: r2500+c54.194
 | **1** | **`L-204`** | `L-165` `L-175` `L-202` `L-221` | 3/3 | 2/3 | **the R-P theatre** — the corpus's claims across physics, per domain. ✔ **①② ③④ ⑤ ⑥ ⑦ ⑩ WALKED r2520–r2540**, and each bit differently: ③④ a **missing completeness argument** (the substrate is doubly ruled → types II/III unreachable, item 46, applied); ⑤ a **missing treatment** (Unruh — item 47, written by c54.202); ⑥ the **Higgs identified not declined** (closed r2539, the join is an identity); ⑦ the **temperature taken and the entropy never** (item 52); ⑩ the resolution is the **baby-universe** one, unnamed (item 53). ⇒ **What remains is ⑨ — cosmology · nuclear/plasma: BBN, recombination, the acoustic scale — the last unrun station, and the computational one |
 | **2** | **`L-171`** | `L-202` | 2/3 | 3/3 | **PO-7** — whether the acoustic disagreement is real against the sky. ⛭ *Sharpened at c54.200 (`L-513`): over the phases `sec:what-crosses` ADMITS, the acoustic phase moves **0.207 against a 0.615 gap — a third — with the control OUTSIDE it**, so the disagreement is real and bounded rather than a free choice.* ⇒ **What is open is the confrontation itself: both admissible readings sit 76x and 102x the control, so something other than the seam phase carries the bulk of it — and the SPACING, robust to 1.9%, is what does not move** |
 | **3** | **`L-240`** | `L-175` | 2/3 | 3/3 | ⛭ **a LEAD from OUTSIDE literature, the first**: P12 cites `Teitelboim1973` for the Dirac brackets' FORM and never for the uniqueness theorem they carry (**zero “Lovelock” across 35 .tex files**). ** HKT: Einsteinian geometrodynamics is the ONLY canonical representation of those deformations; Teitelboim–Zanelli: LOVELOCK gravity closes the SAME algebra, and for $n>4$ there are Lovelock gravities other than GR. ** ⇒ **the Dirac algebra forces GR only in FOUR dimensions**, so **the four-ness of the CUT is what makes the dynamics forced** — which is not what `PO-9`'s guard says. ⛭ **WORKED r2518**: $D=4$ is the **largest dimension in which Lovelock leaves exactly ONE dynamical term**, so the leaf’s dynamics carries **no unfixed coefficient**. ⇒ **The decision it turns on: is uniqueness of the leaf’s dynamics a desideratum this programme holds?** CR takes GR as given either way |
-| **4** | **`L-519`** | `L-165` | 2/3 | 3/3 | the corpus holds **$\kappa=0$ at Nariai** (P7) and the **equal-radii $dS_2\times S^2$ throat** (P15) and has never joined them — the two sides of the degenerate limit. **What temperature, if any, does the configuration a collapse reaches carry, read on the near-horizon geometry rather than on $\kappa/2\pi$?** Registered rather than left in a caveat |
-| **5** | **`L-210`** | `L-202` `L-221` `L-175` | 2/3 | 2/3 | the entry-point front — all 44 sites carry verdicts; **live leads are where a paper's own text points at an unexplored interior** |
-| **6** | **`L-217`** | `L-221` | 2/3 | 2/3 | the CR/Higgs relation is stated; **`F1` stays live — the relation breaks if the gauge group is ever promoted to forced** |
-| **7** | **`L-230`** | `L-165` `L-221` | 3/3 | 1/3 | the `COMPUTES:` convention — uptake **flat at 40 of 357** as of r2447 — **the number is unmeasured since**, and a convention whose uptake nobody re-counts is a convention nobody is adopting while the corpus grew a sixth; a receipt that declares what it computed is a receipt a vein can be excavated through |
-| **8** | **`L-207`** | `L-165` | 1/3 | 3/3 | ⓶ the confined/branch-point exhibition — **gated on PO-6 and must not be opened without it** (⓵ discharged r2450) |
-| **9** | **`L-218`** | *— instrument work* | 3/3 | 0/3 | ✔ ⓶ done r2478 (`COMPANION_SPEC`) · ⓵ the reader-package formats via pandoc in CI · ⓷ the contribution, last |
-| **10** | **`L-228`** | *— instrument work* | 3/3 | 0/3 | `check_loci` extended to the possessive and compound-noun forms node 52 declined to claim |
-| **11** | **`L-514`** | *— instrument work* | 2/3 | 0/3 | **nothing in the tree reads UPWARD**: c54.195's withdrawal contradicted text two paragraphs above it in the same section, which had carried the right answer since c54.191. A withdrawal is the edit for which that matters most. Second instance of the class after the c54.182/c54.184 duplicate |
+| **4** | **`L-210`** | `L-202` `L-221` `L-175` | 2/3 | 2/3 | the entry-point front — all 44 sites carry verdicts; **live leads are where a paper's own text points at an unexplored interior** |
+| **5** | **`L-217`** | `L-221` | 2/3 | 2/3 | the CR/Higgs relation is stated; **`F1` stays live — the relation breaks if the gauge group is ever promoted to forced** |
+| **6** | **`L-230`** | `L-165` `L-221` | 3/3 | 1/3 | the `COMPUTES:` convention — uptake **flat at 40 of 357** as of r2447 — **the number is unmeasured since**, and a convention whose uptake nobody re-counts is a convention nobody is adopting while the corpus grew a sixth; a receipt that declares what it computed is a receipt a vein can be excavated through |
+| **7** | **`L-207`** | `L-165` | 1/3 | 3/3 | ⓶ the confined/branch-point exhibition — **gated on PO-6 and must not be opened without it** (⓵ discharged r2450) |
+| **8** | **`L-218`** | *— instrument work* | 3/3 | 0/3 | ✔ ⓶ done r2478 (`COMPANION_SPEC`) · ⓵ the reader-package formats via pandoc in CI · ⓷ the contribution, last |
+| **9** | **`L-228`** | *— instrument work* | 3/3 | 0/3 | `check_loci` extended to the possessive and compound-noun forms node 52 declined to claim |
+| **10** | **`L-514`** | *— instrument work* | 2/3 | 0/3 | **nothing in the tree reads UPWARD**: c54.195's withdrawal contradicted text two paragraphs above it in the same section, which had carried the right answer since c54.191. A withdrawal is the edit for which that matters most. Second instance of the class after the c54.182/c54.184 duplicate |
 
 > ⛭⛭ **TAKE `L-204` NEXT** — *highest grounded×informative, and it informs 4 vein(s).*
 
 # III · THE ROUTED LIST (`FOR_54.md`) — leads handed to the working fork
 
-- ***14 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
+- ***15 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
 - *7 are ANSWERS to the fork rather than work for it* — 33, 34, 35, 36, 37, 38, 39
 - *26 closed* — 10, 15, 6, 7, 8, 11, 12, 14, 16, 17, 19, 20, 21, 22, 23, 24, 27, 29, 31, 40, 41, 43, 45, 46, 47, 48
 
@@ -80,4 +79,5 @@ current: r2500+c54.194
   - **50** · TRANS-PLANCKIAN — a partial answer, and the scoping is the whole content
   - **52** · YOU TAKE THE de SITTER HORIZON'S TEMPERATURE AND NEVER ITS ENTROPY — and
   - **53** · YOUR RESOLUTION IS THE BABY-UNIVERSE ONE AND IT IS NEVER NAMED — and you
+  - **54** · `L-519` IS ANSWERED, AND P15 HAD THE ANSWER ALREADY — for a different pu
 

@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.203 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**10 open QUESTIONS · 5 open WORK rows** *(250 struck of 265 registered).*
+**9 open QUESTIONS · 5 open WORK rows** *(251 struck of 265 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -28,7 +28,6 @@ sources: [cowork]
 | **`L-221`** | OPEN | REGISTERED r2378 by the observer line's `ARC 14` step-② fold — `PROTECTED_OPEN`'s `PO-5`, which had NO register row at all. The quark/lepton split, and what a baryon IS at the particle level — the five multiplets, and which carries the colour $\mathbf3$. A PRO… | `PROTECTED_OPEN` `PO-5` · `THE_PLAN` standing item ② | the question is INVERTED r2526: not "is there an $R$-odd operator?" but what BRIDGE from grading to field exists that is not "be a kernel"? — the kern… |
 | **`L-217`** | — | REGISTERED r2412 — R-P STATION ⑥h: HOW DO CR AND THE HIGGS MECHANISM COMPLEMENT EACH OTHER, in coherence and in correspondence? Daryl's question, and it is a genuine gap in the entry-point front's own sense: the word "Higgs" appears NOWHERE in the corpus (chec… | `THE_PHYSICS_REACH` ⑥h · P13 · P14 · `L-212` · the one-constant theorem | the statement exists — `CR_AND_THE_HIGGS.md` §4 · what the row still owes is §5's onward list, and `F1` stays live: the relation breaks if the gauge g… |
 | **`L-240`** | — | REGISTERED r2515 — A LEAD DARYL FOUND: THE CORPUS HOLDS TWO HALVES OF A CONNECTION IT HAS NEVER JOINED, AND THE JOIN LANDS ON `PO-9`. He asked whether r2514's "the constraint is CONSERVED, not re-imposed" touches the second-order-EFE reason for a vanishing cov… | `receipts/L175_dimensional_descent/N1…` · `L-175` · P11 · P12 · HKT 1976 | the interior is charted r2518; what remains is the DECISION it turns on: is uniqueness of the leaf's dynamics a desideratum this programme holds? — be… |
-| **`L-519`** | — | REGISTERED r2524+c54.202 — THE CORPUS HOLDS $\kappa=0$ AT NARIAI AND THE EQUAL-RADII $\mathrm{dS}_2\times S^2$ THROAT, AND HAS NEVER SET THEM SIDE BY SIDE. ⌷ P7: at the member a collapse reaches, the surface gravity and the photon orbit's Lyapunov exponent bot… | P7 `sec:sds-cosmology` (κ and λ vanish at Nariai); P15's throat; `L-518`; Bousso–Hawking on the Nariai limit (outside, unread here) | NOT done — this is a question and it is stated as one: what temperature, if any, does the configuration a collapse reaches carry, read on the near-hor… |
 
 ## ⌗ WORK — programmes with steps; the content lives in `CONSOLIDATE`
 
