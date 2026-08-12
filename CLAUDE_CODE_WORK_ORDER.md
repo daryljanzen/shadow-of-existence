@@ -128,7 +128,7 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-510`** | r2504 | done in the registering revision — the identity re-derived, the split verified at five wavevectors, P9's wording matched in source, and the polarized- |
 | **`L-511`** | r2508 | done in the registering revision — both slicings computed symbolically, the longitudinal solve run, the York split re-checked standalone, and four sou |
 
-*25 live rows carry a stated next step; the 14 longest-unworked are shown.*
+*26 live rows carry a stated next step; the 14 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session
