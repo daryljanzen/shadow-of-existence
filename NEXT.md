@@ -115,7 +115,7 @@ is**.*
 | **`L-204`** | r2483 | ✔ **the strike was made r2383 — this field was stale for 99 revisions, corrected r2483** · what remains is ***③④: P8/P9, GR field equations and the ex |
 | **`L-171`** | r2484 | P15 `sec:flatlcdm`; receipt `ROBUST_p1p2_scan`; `PO-7` |
 | **`L-230`** | r2490 | ⓵ **the instrument question is closed r2447** — no gate can read a quantifier · ⓶ the live route is **make `COMPUTES:` universal** (39 of 309 today),  |
-| **`L-174`** | r2503 | ⓵ **narrowed to ONE stratum r2503** — ***the exhibition for geometries with NO continuous isometry***; everything with $\ge1$ Killing vector is worked |
+| **`L-174`** | r2504 | ⓵ **the build is now specific r2504**: ***exhibit a bend with a five-component $\sigma_{ij}$*** — and the obstruction is named: ***the minus sign on $ |
 
 *13 live rows carry a stated next step; the 13 longest-unworked are shown.*
 

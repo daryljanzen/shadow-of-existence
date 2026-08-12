@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2504 — 2026-08-11 (main line). **FIRST PURCHASE ON THE UNWORKED STRATUM — P11's identification is a general ADM identity, so the Killing vectors buy a COUNT, and the dark region now has a name.**
+
+**⌗⌗ P11 SAYS the Gowdy leaf's TT mode has "energy and momentum … the shear of the leaf", with the ADM equations
+**being** the constraints.** *Decompose with **no symmetry assumed at all**:*
+$$K_{ij}=\tfrac13\theta g_{ij}+\sigma_{ij} \;\Longrightarrow\; K^2-K_{ij}K^{ij}=\tfrac23\theta^2-\sigma_{ij}\sigma^{ij}$$
+*identically — so* ***$\rho=\tfrac12R^{(3)}+\tfrac13\theta^2-\tfrac12\sigma_{ij}\sigma^{ij}$, and the trace-free
+momentum constraint is exactly $D_j\sigma^{ij}$.***
+⇒⇒ ***"THE ENERGY AND MOMENTUM ARE THE SHEAR" IS A GENERAL ADM IDENTITY. IT HOLDS FOR ANY LEAF.***
+
+**⌗ SO WHAT THE TWO KILLING VECTORS BUY IS A COUNT, NOT A CONTENT.** *On a polarized Gowdy leaf the shear is **one
+function**; in general it is a **five-component trace-free symmetric object**.*
+⇒ ***The beyond-wall stratum does not need a new identification. It needs $\sigma_{ij}$ where Gowdy had $\sigma$ —
+a specific, statable build, rather than "the deepest question the construction opens onto", which is how `L-174` was
+carried for a hundred and thirty revisions.***
+
+**⛔ AND THE DARK REGION NOW HAS A NAME, which is worth more than the purchase.** *$\sigma_{ij}\sigma^{ij}$ enters
+$\rho$ with a **MINUS SIGN** — the shear **reduces** the energy density at fixed intrinsic geometry.*
+⇒ *With **one** shear function there is one trade against $R^{(3)}$. With **five** there is a **five-dimensional
+space of shear configurations at fixed $\rho$ and fixed $\theta$** —* ***and nothing in the identity says which of
+them a bend can be. That selection is the interior of the stratum, and it is dark.***
+⌗ *Recorded into `L-165`'s DARK half on the board too, since **what selects among five-component shears** is the same
+question a quantum of this geometry has to answer.*
+
+⚠ *Not claimed: **no beyond-wall solution is exhibited**, and **P11 overstated nothing** — it worked the first case
+in which the bend is not symmetric and located it exactly. ***That the identification generalises is a fact about
+ADM, not a gap in P11.***
+
+⌗ ***AND BY THE METHOD'S OWN TEST this turn probed a vein rather than the map: it moved `L-174` from "a build" to "a
+build with a named obstruction", and moved the obstruction into a vein's dark half.*** *Which is what §IV means by
+charting the perimeter: **the boundary did not move, but it is now somewhere rather than everywhere**.*
+
 ### Revision r2503 — 2026-08-11 (main line). **`L-174` NARROWED TO ONE STRATUM, and `CLAIMS.md` + `check_claims.py` — the collision register the three-node arrangement has never had.**
 
 **⛭⛭⛭ ⓵ THE DYNAMICS IS STRATIFIED, AND THREE OF FOUR STRATA ARE WORKED.** *P9's `cor:wall` cites a **companion
