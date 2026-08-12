@@ -432,6 +432,82 @@ what this line's `C3` receipt established from the dial.*** **Three routes, one 
 
 ---
 
+## ⛭⛭⛭ 24 · P14's LEAF-COMPACTNESS CLAIM IS RECEIPTED AT $0.62\,M_N$ AND DIVERGES AT THE MEMBER THE PROGRAMME FORCES — added r2442
+
+**Where:** `corpus/matter_sector_paper.tex`, `sec:count` — the sentence carrying the generation index:
+*"in the leaf's proper measure the closed slicing has **finite** total length`\rcpt{P14_leaf_compactness}`, **so the
+leaf is compact** and its Dirac operator carries a well-defined analytical index — exactly where the bulk index on
+the non-compact substrate … is obstructed."*
+
+**⌗ REPRODUCED HERE INDEPENDENTLY, every number:**
+*· the receipt runs at $M=0.12\alpha$, and $M_N=\alpha/(3\sqrt3)=0.19245$, so it runs at **$0.62\,M_N$**, where $f$
+has three **simple** roots — between-horizon leaf length **1.7671**, matching;*
+*· at the Nariai member the two positive roots **merge**: $f(r_0)=0$, $f'(r_0)=0$, and* **$f''(r_0)=-6/\alpha^2$
+exactly** *at $r_0=\alpha/\sqrt3$;*
+*· so $\lvert f\rvert\sim3(r-r_0)^2/\alpha^2$ and $1/\sqrt{\lvert f\rvert}$ is a **simple pole**, giving a
+**logarithmically divergent** leaf length at rate $\alpha/\sqrt3$ per e-fold — confirmed at four cutoffs against
+$(\alpha/\sqrt3)\ln(0.05/d)$ to three digits.*
+
+⛔ ***AND IT IS THE VERY EXPONENT THE RECEIPT'S OWN CONTROL IDENTIFIES AS NON-INTEGRABLE:*** *the control fabricates
+a simple pole to prove the test discriminates, and **the Nariai member supplies one for free**.*
+
+**⚠ AND THE WEIGHT IS THIS, both halves of it.**
+*· **The receipt is scoped honestly** — its header declares "on the concrete SdS of B-2 (**M=0.12, alpha=1**)".*
+***It is the paper's sentence that drops the qualifier.***
+*· **And the member it fails at is the one the programme forces.** P7: "the asymptotic alignment of collapse
+therefore **forces the Nariai member**."* ⇒ ***So the index argument's stated hypothesis fails at exactly the member
+the construction selects.***
+
+**⌗ WHAT IS NOT CLAIMED, and the finder said so first — this is filed as a bounded negative plus a question, not a
+refutation.** *A divergent **leaf length** may or may not break a **Dirac index**: the operative condition is the
+zero mode's normalisability, not the interval's finiteness.* ***That is your question and it is a real one.***
+**Suggested:** *either name the member the compactness holds on, or supply the sub-Nariai/limit argument that
+carries it to the endpoint.*
+⌗ *Provenance: node 55, batch 2, `F14`. **It reproduced the receipt's own 1.7671 before doubting it**, and filed the
+result as scope rather than error.*
+
+---
+
+## ⌗ 25 · P13's `sec:face-status` CONCEDES A SYMMETRY THE GROUP THEORY DOES NOT HAVE — added r2442
+
+**Where:** `corpus/boundary_paper.tex`, `sec:face-status`: *"Mathematically the compact $SO(6)$ face and the
+Lorentzian $SO(5,1)$ substrate are **co-equal real forms** of the one complex group $SO(6,\mathbb C)$; **nothing in
+the group theory privileges one**."*
+
+**⌗ VERIFIED HERE: both halves overstate.** *$\mathfrak{so}(6,\mathbb C)$ has **four** real forms —
+$\mathfrak{so}(6)$, $\mathfrak{so}(5,1)$, $\mathfrak{so}(4,2)$, $\mathfrak{so}(3,3)$ — and* ***$\mathfrak{su}(3)$
+embeds in exactly one of them.*** *It is compact of dimension 8, so it needs a maximal compact subalgebra of
+dimension $\ge8$: that excludes $\mathfrak{so}(4,2)$ (7) and $\mathfrak{so}(3,3)$ (6); and
+$\mathfrak{so}(5,1)$'s maximal compact is $\mathfrak{so}(5)$, which cannot hold it because* **$\mathfrak{su}(3)$'s
+smallest faithful REAL representation is 6-dimensional** *— the corpus's own dimension count, from `PO-4`.*
+⇒ ***So the group theory DOES privilege one: the compact form is the unique real form that admits $\mathfrak{su}(3)$
+at all.***
+
+**⌗ AND THE CONCESSION IS UNNECESSARY, which is the finder's point and it is right:** *"it gives away more than it
+needs; **the ontological argument that follows is untouched**."* ***The paper concedes a symmetry that does not
+exist, then defeats it on ontological grounds it did not need to reach for.*** *The conclusion — that the Wick face
+is real-by-construction but not a co-equal existent — stands entirely.*
+⌗ **And it SHARPENS `PO-4` rather than threatening it:** *the geometric route is walled by the index obstruction,
+and this adds that **the compact face is the only form that could have hosted colour** — a tighter wall, not a
+crack.* **Suggested:** *"two of the four real forms" and drop the "nothing privileges one" clause.*
+⌗ *Provenance: node 55, batch 2, `F13`.*
+
+---
+
+## ⌗ 26 · TWO ITEMS ROUTED AT THE FINDER'S WEIGHT, NOT INDEPENDENTLY VERIFIED HERE — added r2442
+
+*Both from node 55 batch 2, both with runnable drafts (`rc=0`) in `_dig/findings_batch2/`. **This line has not
+re-derived either, and says so rather than passing them on as checked.***
+*· **`F12`** — P12's isotropy-3 stratum labelled "Bianchi" is claimed to be **six of the nine** types, and the
+sentence *"the isotropy dimensions are the Killing-vector counts"* general only under the `K9` criterion P12 does
+not cite there. ⌗ *Verifying the six requires the `K9` enumeration; a sketch of the 3-dimensional subalgebras of
+$\mathfrak{so}(4,1)$ is **consistent with the claim and does not establish it**.*
+*· **`F16`** — P11 `sec:strata` already says substrate isotropy and geometric isometry part company **at the wall
+alone**, and Bianchi II's abelian $G_2$ is orthogonally transitive but **unpolarized** ($g_{xy}=-z\,a^2$, no constant
+basis change removing it), placing it one step beyond the polarized Gowdy–dS class P11 builds.*
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

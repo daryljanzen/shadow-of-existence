@@ -146,6 +146,51 @@ sources: [cowork, chat]
 
 
 
+### Revision r2442 — 2026-08-11 (main line). **NODE 55's BATCH 2 — and its self-diagnosed pattern is `ARC 17`'s finding one axis over: a POINT result written as a FAMILY result.**
+
+**⌗⌗ THE CLASS, named by the contributor before this line saw it:** ***"a claim verified at one point of a family,
+stated as if it held on the family."*** *Three instances in one batch, and the strongest is verified here
+independently.*
+
+**⛔⛔ `F14` — P14's LEAF-COMPACTNESS CLAIM, WHICH CARRIES THE GENERATION INDEX, DIVERGES AT THE MEMBER THE
+PROGRAMME FORCES.** *Reproduced from scratch: the receipt runs at $M=0.12\alpha$, and $M_N=\alpha/(3\sqrt3)$, so it
+runs at **$0.62\,M_N$** where $f$ has three **simple** roots — between-horizon leaf length **1.7671**, matching. At
+the Nariai member the two positive roots **merge**: $f(r_0)=0$, $f'(r_0)=0$, **$f''(r_0)=-6/\alpha^2$ exactly**. So
+$1/\sqrt{\lvert f\rvert}$ is a **simple pole** and the leaf length **diverges logarithmically** at rate
+$\alpha/\sqrt3$ per e-fold — four cutoffs against $(\alpha/\sqrt3)\ln(0.05/d)$, three digits each.*
+⇒ ***AND IT IS THE VERY EXPONENT THE RECEIPT'S OWN CONTROL FABRICATES TO PROVE THE TEST DISCRIMINATES: the control
+invents a simple pole, and the Nariai member supplies one for free.***
+⚠ **AND THE MEMBER IT FAILS AT IS THE ONE THE CONSTRUCTION SELECTS** *— P7: "the asymptotic alignment of collapse
+therefore **forces the Nariai member**" — while* ***the receipt declares its member honestly in its own header and
+it is the PAPER's sentence that drops the qualifier.***
+⌗ ***NOT A REFUTATION, and the finder said so first: a divergent leaf LENGTH may or may not break a Dirac INDEX,
+the operative condition being the zero mode's normalisability rather than the interval's finiteness.*** *Filed as
+scope plus a question, routed as `FOR_54` 24.* **It reproduced the receipt's own figure before doubting it.**
+
+**✔ `F13` — P13 CONCEDES A SYMMETRY THE GROUP THEORY DOES NOT HAVE. Verified.** *$\mathfrak{so}(6,\mathbb C)$ has
+**four** real forms, and $\mathfrak{su}(3)$ embeds in **exactly one**: compact of dimension 8, it needs a maximal
+compact of dimension $\ge8$, which excludes $\mathfrak{so}(4,2)$ (7) and $\mathfrak{so}(3,3)$ (6); and
+$\mathfrak{so}(5,1)$'s maximal compact $\mathfrak{so}(5)$ cannot hold it because* **$\mathfrak{su}(3)$'s smallest
+faithful REAL representation is 6-dimensional** *— the corpus's own count, from `PO-4`.*
+⇒ ***So "nothing in the group theory privileges one" is false, and the concession gives away more than the paper
+needs: the ontological argument that follows is untouched.*** ⌗ **And it SHARPENS `PO-4`:** *the compact face is the
+only real form that could have hosted colour — a tighter wall, not a crack.* *Routed as 25.*
+
+**⌗ `F12` and `F16` ROUTED AT THE FINDER'S WEIGHT AND MARKED NOT RE-DERIVED HERE** *(item 26). Verifying `F12`'s
+six-of-nine needs the `K9` enumeration; a sketch of $\mathfrak{so}(4,1)$'s three-dimensional subalgebras is
+**consistent with the claim and does not establish it**, and saying so is the point.*
+
+**⛭⛭ AND THE CLASS IS THE MIRROR OF `ARC 17`'s, which is why it is registered as `L-230` rather than three items.**
+*`ARC 17` found **a settled voice overwriting a provisional one**. This finds* ***a point result written as a family
+result.*** ⇒ **Same defect one axis over — and both are invisible to every gate the corpus has, because in both
+cases the sentence is TRUE and only its SCOPE is wrong.** *No gate reads scope.*
+
+⌗ *Still unjudged: node 55's batch 1 (`F01`–`F11`). **`F15`'s two internally consistent parameter sets in P15's
+receipt layer** — differing $0.76\%$ in $r_s$ and $0.72\%$ in $\theta_*$, with the paper drawing on both — bears
+directly on the live acoustic front and goes next.*
+
+**Register: 223 rows. Gates: twenty-one, nineteen rc=0.**
+
 ### Revision r2441 — 2026-08-11 (main line). **`L-229` ANSWERED IN TWO RECEIPT READS — the 14% was not a discrepancy, and the reads found a propagation recorded as complete that three documents never received.**
 
 **⌗⌗ THE ANSWER, and node 52's own hedge was it.** *`C7_equality_and_deficit` **uses no $\Omega_r$ at all**:*

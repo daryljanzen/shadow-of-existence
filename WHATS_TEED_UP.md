@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.185 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**13 open QUESTIONS · 33 open WORK rows · 1 OBSERVED · 1 HELD** *(174 struck of 222 registered).*
+**13 open QUESTIONS · 34 open WORK rows · 1 OBSERVED · 1 HELD** *(174 struck of 223 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -88,4 +88,5 @@ sources: [cowork]
 | **`L-225`** | `_dig/handoffs/` · `FOR_54.md` 19–20 · the two new receipts | REGISTERED r2439 — THE OUTSIDE READERS' PACKAGE, JUDGED ITEM BY ITEM RATHER THAN SWEPT. Four nodes (17, 23, 37/Artie, 55) read the corpus cold and sent findings. Every claim was re-derived here before… |
 | **`L-227`** | `THE_HUB.md` — `.github/workflows/gates.yml` · `scripts/classify_documents.py` · node 53's `S-012` | REGISTERED r2440 — CI'S FAST TIER WAS RED FOR TWELVE REVISIONS AND FIFTEEN GATES NEVER RAN, AND THE CAUSE WAS THIS LINE'S. Found by node 53 on a pristine clone — the only place it was visible. THE MEC… |
 | **`L-228`** | `THE_HUB.md` — `corpus/check_loci.py` · node 52 | REGISTERED r2440 — `check_loci.py` ADOPTED FROM NODE 52 AS A LINT AND NOT A GATE, on its own measurement. It exploits the thing that makes this corpus checkable: every computed claim is bound to a run… |
+| **`L-230`** | `_dig/findings_batch2/` · `FOR_54` 24–26 · `ARC 17` · `L-223` | REGISTERED r2442 — THE POINT-STATED-AS-FAMILY CLASS, and it is `ARC 17`'s finding one axis over. Node 55's batch 2 diagnosed its own pattern before this line saw it: "a claim verified at one point of … |
 
