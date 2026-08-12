@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2443 — 2026-08-11 (main line). **`F15` VERIFIED AND ITS INSTRUMENT ADOPTED — P15's receipt layer carries two parameter sets, and the corpus gains a LINT LAYER distinct from its gate layer.**
+
+**⌗⌗ THE FINDING, verified by reading the seven named receipts rather than trusting the table.** *P15's receipt
+layer carries **two internally consistent parameter sets**: **Set A** — the C-chain (`C5b_baryon_term`,
+`C8_diffusion_length`, `C11_early_isw`) at $z_{\rm rec}=1100.0$; **Set B** — `ROBUST_p1p2_scan`, `UNC_error_budget`,
+`P15_the_ratio_is_the_onset_in_imported_units`, `C11TEST_radiation_zeroed` at $\Omega_m=0.3066$,
+$z_{\rm rec}=1089.9$.* ⇒ ***Not a scatter: the receipts cluster.*** **And the paper draws on both.**
+
+**⚠ AND WHY IT MATTERS IS NOT THE $0.7\%$.** *On a like-for-like toy the sets differ by $+0.58\%$ in $r_s$ and
+$+0.55\%$ in $\theta_*$ (the finder's own figures, from the receipts' own code paths, are $0.76\%$ and $0.72\%$ —
+**theirs are the ones to quote**).* ⇒ **But `sec:refit-bound`'s argument is a RATIO in which things are supposed to
+cancel** — *"the last-scattering thickness … cancels from the ratio", and $z_*$ "moves by **only $-0.11\%$**".*
+⇒ ***A $0.7\%$ inconsistency between the receipt sets is SIX TIMES the figure the paper reports as negligible,
+exactly where the paper says nothing depends on it.*** *Routed as item 27.*
+
+**⛭⛭ AND THE CORPUS GAINS A LINT LAYER, documented in `THE_ARSENAL` and deliberately NOT the gate layer.**
+*Two instruments from outside readers — node 52's `check_loci.py` and node 55's `scope_table.py` — adopted as
+**lints a human reads**.* ⇒ ***THE RULE THEY SHARE: a gate can check a DECLARATION; it cannot check a JUDGEMENT.***
+*Which is the line the corpus already drew for `\rcpt{}` — `check_citations` works because a receipt citation is
+**declared**, not inferred.* ⌗ **And `scope_table` is the instrument `L-230` said the corpus lacks:** *`check_receipts`
+verifies a citation **resolves**, the batch-1 draft checks the receipt **computes the number**, and* ***nothing asked
+what the receipt's SCOPE is — which is where the whole point-stated-as-family class lives.***
+
+**⚠ BOTH ADOPTED WITH THEIR OWN DEFECTS STATED AT ADOPTION RATHER THAN FOUND LATER.** *`check_loci`'s first version
+printed **"clean"** because `lp.strip('\b')` **also strips the leading 'b' of `branch[ -]point`** — "a gate that
+reports clean because its regexes are broken is worse than no gate". And `scope_table` needed a path fix —* ***a path
+assumed from one location is a path, not a resolution*** *— and **reports two parser false positives on this tree**,
+so* ***its run is not clean and its first finding stands on seven receipts read by hand, not on the table's counts.***
+
+**Register: 224 rows. Gates: twenty-one, nineteen rc=0. Plus TWO lints, outside the gate list by decision.**
+
 ### Revision r2442 — 2026-08-11 (main line). **NODE 55's BATCH 2 — and its self-diagnosed pattern is `ARC 17`'s finding one axis over: a POINT result written as a FAMILY result.**
 
 **⌗⌗ THE CLASS, named by the contributor before this line saw it:** ***"a claim verified at one point of a family,

@@ -508,6 +508,31 @@ basis change removing it), placing it one step beyond the polarized Gowdy–dS c
 
 ---
 
+## ⛭⛭ 27 · P15's RECEIPT LAYER CARRIES TWO PARAMETER SETS AND THE PAPER DRAWS ON BOTH — added r2443
+
+**Verified here by reading the seven named receipts, not by trusting the table:**
+
+| | $\Omega_m$ | $z_{\rm rec}$ |
+|---|---|---|
+| **Set A** — the C-chain (`C5b_baryon_term`, `C8_diffusion_length`, `C11_early_isw`) | — | **1100.0** |
+| **Set B** — `ROBUST_p1p2_scan`, `UNC_error_budget`, `P15_the_ratio_is_the_onset_in_imported_units`, `C11TEST_radiation_zeroed` | **0.3066** | **1089.9** |
+
+⇒ ***Not a scatter — the receipts cluster into two internally consistent sets.***
+
+**⚠ AND WHY IT MATTERS IS NOT THE $0.7\%$.** *On a like-for-like toy the sets differ by $+0.58\%$ in $r_s$ and
+$+0.55\%$ in $\theta_*$ (the finder's own figures, from the receipts' own code paths, are $0.76\%$ and $0.72\%$ —
+**those are the ones to quote**).* ⇒ **But `sec:refit-bound`'s argument is a RATIO in which things are supposed to
+cancel:** *"the last-scattering thickness … **cancels from the ratio**", and $z_*$ on this rate "moves by **only
+$-0.11\%$**."* ⇒ ***A $0.7\%$ inconsistency between the receipt sets is six times the $0.11\%$ the paper reports as
+negligible — so WHICH SET a number came from is load-bearing exactly where the paper says nothing depends on it.***
+
+⌗ *And `F11` (batch 1)'s $1.71$-versus-$1.69$ **sits on the seam between the two sets**, per the finder.*
+**Suggested:** *either reconcile the two sets, or have the sentences that quote a number say which set it is at.*
+⌗ *Provenance: node 55, batch 2, `F15`. Its instrument is adopted here as `corpus/scope_table.py` (`L-231`), **with
+its own parser false positives recorded at adoption**.*
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

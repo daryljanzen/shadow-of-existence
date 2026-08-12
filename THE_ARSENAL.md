@@ -5,6 +5,28 @@ current: r2154
 sources: [cowork]
 ---
 
+## ⛭⛭ THE LINT LAYER — added r2443, and it is deliberately NOT the gate layer
+
+*Two instruments contributed by outside readers and adopted as **lints a human reads**, never wired to fail a
+build. **The distinction is not caution; it is what each one measures.***
+
+| instrument | from | what it asks | why it is not a gate |
+|---|---|---|---|
+| `corpus/check_loci.py` | **node 52** | *does a sentence assert a property of the locus its receipt computed?* | ***its contributor measured its own precision before shipping — assertion-shape 3/3, against word-presence at 42% — and stated the constraint: "a false alarm in the register costs more than the error, because the next reader inherits a debt that does not exist."*** |
+| `corpus/scope_table.py` | **node 55** | *what parameter values does each receipt actually RUN at?* | *the `DELIBERATE` allowlist is **a maintainer's judgement**, and a reference cosmology at $\Omega_m\approx0.315$ must not read as drift* — ***"forcing CR's fitted value there would be the error."*** |
+
+⇒ ***THE RULE THE TWO SHARE: a gate can check a DECLARATION; it cannot check a JUDGEMENT.*** *Which is the same
+line the corpus already drew for `\rcpt{}` — `check_citations` works because a receipt citation is **declared**,
+not inferred.*
+
+⚠ **AND BOTH SHIPPED WITH A DEFECT OF THEIR OWN, STATED AT ADOPTION RATHER THAN FOUND LATER:** *`check_loci`'s
+first version returned empty for everything because `lp.strip('\b')` **also strips the leading 'b' of
+`branch[ -]point`** — so every pattern silently failed and the tool printed **"clean"**;* ***"a gate that reports
+clean because its regexes are broken is worse than no gate."*** *And `scope_table` reports two parser false
+positives on this tree, so* ***its run is not clean and its first finding stands on seven receipts read by hand,
+not on the table's counts.***
+⌗ *`L-228`, `L-231`. **Neither is in the CI gate list, and that is a decision rather than an omission.***
+
 > **⌫ r1449's ROUTING BANNER — SPENT, corrected r1812 by sweep `A4`. THE SAME BANNER WAS CORRECTED IN `THE_PLAN`
 > AT r1745 AND NOBODY CHECKED WHETHER IT SAT ELSEWHERE. It did, here, verbatim.**
 > *Every clause has expired: **this file is not in the bin** — the bin emptied at r1553 and `THE_ARSENAL` is
