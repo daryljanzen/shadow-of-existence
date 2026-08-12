@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2519 — 2026-08-11 (main line). **c54.200's FORCING VERIFIED — the admissible pair is the paper's own physics, and `PO-7`'s verdict question sharpens to a single sentence.**
+
+**⌗ WHAT THIS LINE HAD.** *r2509 justified $\phi\in\{0,\pi\}$ from the **instrument's comment** — "$\phi=0$ is a
+density extremum with $\theta=0$" — and called them the zero-velocity readings.* ***True, and weaker than the corpus
+can support.***
+
+**⛭⛭ WHAT c54.200 FOUND, IN PRINT BEFORE THE SCAN WAS RUN.** *P15 `sec:what-crosses`: the comoving horizon shrinks
+to zero, so* ***"every mode exits it and FREEZES before the crossing. A frozen mode has no oscillation for the kernel
+to damp."***
+⇒ ***Frozen means $\dot\delta_\gamma=0$; the instrument's own continuity equation gives
+$\theta_\gamma=\tfrac34Dkc_s\sin\phi$; so $\sin\phi=0$ and $\phi\in\{0,\pi\}$ — FORCED, not chosen.***
+⇒ *The corpus does not merely **distinguish** the pair. **It forces it.***
+
+**⛭⛭⛭ AND THAT CHANGES WHAT `PO-7`'s VERDICT IS ABOUT.** *Band **0.6711–0.8780 = 0.2069** against a gap of
+**0.6152**, and* ***the control's 0.2628 is OUTSIDE the band, with the arm still 0.408 away at the nearer admissible
+reading.***
+⇒⇒ ***THE QUESTION IS NO LONGER "is the disagreement real over SOME choice of phases?" It is: "IS 0.408, AT THE ONLY
+TWO READINGS THE CONSTRUCTION PERMITS, A REAL DISAGREEMENT WITH THE SKY?"***
+
+**⌗ AND THE ENDPOINTS ARE DOUBLED.** *54's `c54.186_cr_L3000` and cc54's `item38_cr_phi0.0_prod` agree at
+**0.8780**; 54's `c54.191_cr_phipi` and cc54's `item38_cr_phi3.1416_prod` at **0.6711**.* ***Two nodes, two
+instrument paths, four spectra, four decimals at both endpoints the verdict rests on.***
+
+⚠ *`F5` unsoftened, `PO-7` protected, **the conversion is Daryl's**. r2509's band and arithmetic stand; **what was
+understated was the STATUS of the pair** — and the correction came from the fork reading its own paper more closely
+than this line did.*
+
 ### Revision r2518 — 2026-08-11 (main line). **`L-240` WORKED — $D=4$ is the largest dimension in which the field equations are forced, and the scoring came out as a third thing.**
 
 **⌗ THE COUNT, exact.** *Lovelock's Euler densities: $L_k$ is **topological at $2k=D$** and **vanishes above**, so

@@ -54,11 +54,12 @@ VEINS = {
 # GROUNDED 0-3: how solid the footing is, INFORMS 0-3: how much a vein would learn). **
 # ** A lead with NO vein links is instrument work.  It is not counted as progress on the map. **
 LEADS = {
- 'L-171': ("**PO-7** \u2014 whether the acoustic disagreement is real against the sky. \u26a0 The $0.62\\pi$ was "
-   "**withdrawn** (`L-508`, c54.195) because the phase spans 0.891 with the control inside \u2014 but \u26ed "
-   "r2509 **that span includes $\\phi=\\pi/4,\\pi/2$, at which the mode enters MOVING**. Across the two "
-   "ZERO-VELOCITY phases the band is **0.2069 against a 0.6152 disagreement**, and at $\\phi=\\pi$ the arm is "
-   "**still 0.408 from the control** \u2014 so over the admissible pair *the control is NOT inside*",
+ 'L-171': ("**PO-7 \u2014 THE ONE VERDICT ON THE BOARD, and it is now sharply posed.** \u26ed r2519: the "
+   "admissible pair $\\phi\\in\\{0,\\pi\\}$ is **FORCED** by P15's own transmission argument (every mode "
+   "**freezes** before the crossing; a frozen mode has zero velocity), not merely distinguished. Band "
+   "**0.2069** against a gap of **0.6152**, and **the control is OUTSIDE it** \u2014 still **0.408** away at "
+   "the nearer reading, with both nodes agreeing to four decimals. \u21d2 ***Is 0.408, at the only two "
+   "readings the construction permits, a real disagreement with the sky?***",
    ['L-202'], 2, 3),
  'L-240': ("\u26ed **a LEAD from OUTSIDE literature, the first**: P12 cites `Teitelboim1973` for the Dirac "
    "brackets' FORM and never for the uniqueness theorem they carry (**zero \u201cLovelock\u201d across 35 .tex "
