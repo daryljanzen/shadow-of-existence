@@ -146,6 +146,44 @@ sources: [cowork, chat]
 
 
 
+### Revision r2476 — 2026-08-11 (main line). **PO-5's LIVE QUESTION ANSWERED IN FORM — a count of GRADINGS becomes a count of FIELDS by being the KERNEL of an operator, and what P13 calls unbuilt is an operator rather than a sector.**
+
+**⌗⌗ THE QUESTION, as r2464 restated it:** *not "does colour force the split" — the colourless count is there and
+P14 declines to use it — but **"what would turn a count of GRADINGS into a count of FIELDS".***
+
+**⛭ THE ANSWER IS IN THE CORPUS'S OWN PRACTICE, because the coloured side already crossed.** *P14: "Second
+quantisation — the ordinary step, **available because the three wall modes are ONE OPERATOR'S KERNEL and therefore
+identical particles** — places a three-fermion state in the exterior cube … **baryon 1, diquark 0, meson 1**." And
+what makes it a **count**: "that count is a **well-defined INDEX** … the leaf is compact and **its Dirac operator
+carries a well-defined analytical index**."*
+⇒⇒ ***A COUNT OF GRADINGS BECOMES A COUNT OF FIELDS WHEN THE GRADINGS ARE THE KERNEL OF AN OPERATOR.*** **Kernel ⇒
+identical particles ⇒ second quantisation ⇒ fields — the whole bridge, and the corpus crossed it once.**
+
+**⌗ AND THE TWO SIDES ARE NOW EXACTLY DISTINGUISHED:**
+
+| | what it is | ⇒ |
+|---|---|---|
+| the coloured **3** | the **index of a Dirac operator** on a compact leaf | **fields** |
+| the colourless **4** | the one-dimensional representations of $D_6$ trivial on the deck $\mathbb{Z}_3$ | **gradings** |
+
+⇒ ***So P14's "a count of gradings and not of fields, and this paper draws nothing from it" is EXACTLY RIGHT, and
+now for a stated reason: the four are a representation-theoretic fact about a GROUP; the three are the kernel of
+SOMETHING.***
+
+**⛭⛭ AND IT NAMES WHAT P13's "REMAINS UNBUILT" MEANS.** *"The compact-face fermion sector the obstruction would act
+on remains unbuilt, and its construction is the major undertaking."* ⇒ ***THE UNBUILT THING IS AN OPERATOR, NOT A
+SECTOR.***
+⇒ **So PO-5's live question is buildable and sharply stated:** ***is there an operator on this structure whose
+kernel is the four colourless gradings?*** *— not "can a colourless sector be built" but **"can the operator whose
+index counts four be exhibited."***
+
+⚠ *Nothing here exhibits one or argues one exists.* ***PO-5 stays open; its closure is Daryl's.***
+⌗ *Route: **the same move that answered `L-233` — ask what the corpus DID in the case that worked and read the
+licence it used**, rather than asking what might work in the case that has not.* *`STATE_matter_sector`
+propagated.*
+
+**Register: 232 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2475 — 2026-08-11 (main line). **PO-6's UV CLAUSE MEASURED — quartic, the ordinary degree, and the compactness buys the INFRARED rather than the ultraviolet.**
 
 **⌗⌗ r2465 GAVE THE STRUCTURAL REASON THE BOUNDARY HALF SEPARATES** *(the condition is **per-fibre**, the UV is

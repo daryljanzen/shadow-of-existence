@@ -5,6 +5,30 @@ sources: [chat]
 current: c54.185
 ---
 
+## ⛭⛭ THE QUARK/LEPTON FRONT IS NOW AN OPERATOR QUESTION — added r2476
+
+*Three revisions on `PO-5` (r2464, r2476) leave the front stated differently than this document has carried it.*
+
+**⌗ WHAT IS SETTLED AND WAS NOT KNOWN HERE:**
+*· P14 **specifies the split**: "one generation splits **12 coloured against 3 colourless (4 with a right-handed
+neutrino)**".*
+*· P14 gives **a particle-level baryon**: second quantisation places a three-fermion state in the exterior cube,
+one-dimensional and $\varepsilon$-generated — **baryon 1, diquark 0, meson 1**.*
+*· And the structure supplies a **colourless count of four**: the $D_6$ representations trivial on the deck
+$\mathbb{Z}_3$ — "which is what carrying no colour would mean" — are its four one-dimensional ones.*
+
+**⛭⛭ AND WHAT SEPARATES THE TWO SIDES IS NOW NAMED, which is the useful part:**
+> ***A count of GRADINGS becomes a count of FIELDS when the gradings are the KERNEL of an operator.***
+*The coloured three are the **index of a Dirac operator on a compact leaf** — kernel ⇒ identical particles ⇒ second
+quantisation ⇒ fields. **The colourless four are representations of a group and the kernel of nothing.***
+
+⇒ ***So P14's refusal to draw on the four ("a count of gradings and not of fields") is exactly right, and P13's
+"the compact-face fermion sector remains unbuilt" means something precise:*** **the unbuilt thing is an OPERATOR.**
+
+⌗ **THE FRONT'S QUESTION, restated:** ***is there an operator on this structure whose kernel is the four colourless
+gradings?*** ⚠ *Nothing exhibits one. **`PO-5` is open and its closure is Daryl's.***
+
+
 ## ⛭⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **THREE THINGS MOVED IN THIS SECTOR AND THIS DOCUMENT KNEW NONE OF THEM**
 
 > ⚠ *This file says **"read this before touching P13, P14, or family 12"**. It stood at c54.163 and carried nothing
