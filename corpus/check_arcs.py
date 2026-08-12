@@ -183,6 +183,55 @@ def _selfdone_gate():
     return 1
 
 
+# ** ---- ADDED r2541: THE BOARD-DRIFT CHECK ---- **
+# The board's lead texts live in scripts/regen_board.py as a hand-maintained dict, while the register
+# row is edited every time the lead moves.  ** The two drift, and the board is what a node reads to
+# choose what to work. **  At r2541 four had: L-204's said "stations ③④" after ⑤⑥⑦⑩ were walked;
+# L-218, L-230 and L-240 each lagged by one or more findings.
+#   ⇒ ** The signal is cheap and exact: if the REGISTER's next-step field cites a later revision than
+#     the board's lead text does, the board is behind. **
+def check_board_drift():
+    """Report leads whose register next-step cites a later revision than the board text."""
+    import importlib.util as _ilu
+    import os as _os
+    import re as _re
+    _root = _os.path.abspath(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..'))
+    _gen = _os.path.join(_root, 'scripts', 'regen_board.py')
+    _arc = _os.path.join(_root, 'THE_LIVE_ARC.md')
+    if not (_os.path.exists(_gen) and _os.path.exists(_arc)):
+        return []
+    _spec = _ilu.spec_from_file_location('_rb', _gen)
+    _rb = _ilu.module_from_spec(_spec)
+    _spec.loader.exec_module(_rb)
+    out = []
+    for line in open(_arc, encoding='utf-8', errors='replace').read().split('\n'):
+        m = _re.match(r'\|\s*\*\*(L-\d+)\*\*\s*\|', line)
+        if not m:
+            continue
+        rid = m.group(1)
+        cells = line.split(' | ')
+        if rid not in _rb.LEADS or len(cells) < 4:
+            continue
+        rr = {int(x) for x in _re.findall(r'r(\d{4})', cells[3])}
+        rl = {int(x) for x in _re.findall(r'r(\d{4})', _rb.LEADS[rid][0])}
+        if rr and (not rl or max(rr) > max(rl)):
+            out.append((rid, max(rr), max(rl) if rl else None))
+    return out
+
+
+def _board_drift_gate():
+    bad = check_board_drift()
+    if not bad:
+        print('    OK    no lead text lags its register row')
+        return 0
+    for rid, newest, have in bad:
+        print(f'    [FAIL] {rid}: the register cites r{newest}, the board text stops at '
+              f'{"r"+str(have) if have else "no revision"}')
+    print('    ⛔ THE BOARD IS WHAT A NODE READS TO CHOOSE WHAT TO WORK.  A lead whose text lags its')
+    print('       row sends the next node after a question that has already moved.')
+    return 1
+
+
 def main():
     consol = '\n'.join(read(os.path.join(ROOT, h)) for h in HOMES)
     arctext = read(ARC)
@@ -266,7 +315,7 @@ def main():
         print('  Every WORK row\'s state block is dated and within the window.')
     print()
     # ** the self-declared-done check, added r2535 -- see _selfdone_gate below. **
-    return _selfdone_gate()
+    return _selfdone_gate() or _board_drift_gate()
 
 
 if __name__ == '__main__':

@@ -66,7 +66,7 @@ LEADS = {
    "files**). ** HKT: Einsteinian geometrodynamics is the ONLY canonical representation of those deformations; "
    "Teitelboim\u2013Zanelli: LOVELOCK gravity closes the SAME algebra, and for $n>4$ there are Lovelock gravities "
    "other than GR. ** \u21d2 **the Dirac algebra forces GR only in FOUR dimensions**, so **the four-ness of the "
-   "CUT is what makes the dynamics forced** \u2014 which is not what `PO-9`'s guard says",
+   "CUT is what makes the dynamics forced** \u2014 which is not what `PO-9`'s guard says. \u26ed **WORKED r2518**: $D=4$ is the **largest dimension in which Lovelock leaves exactly ONE dynamical term**, so the leaf\u2019s dynamics carries **no unfixed coefficient**. \u21d2 **The decision it turns on: is uniqueness of the leaf\u2019s dynamics a desideratum this programme holds?** CR takes GR as given either way",
    ['L-175'], 2, 3),
  'L-801': ("\u26ed\u26ed **cc54 WORKED `L-174`'s NONLINEAR REMAINDER** (the run Daryl handed it): does the "
    "nonlinear evolution keep $\\sigma^{TT}$ free? \u2014 and it SPLITS. **The FREEDOM (the count) is the "
@@ -144,11 +144,19 @@ LEADS = {
    "writes p0 lowercase. **Nine rows invisible; surfaced only because the first `\\rcpt{}` to name one read "
    "as an orphan.** Same shape as its own duplicate-stem guard: blind to a row it should police",
    [], 3, 0),
- 'L-204': ("R-P stations \u2462\u2463 \u2014 P8/P9, GR field equations and the exact-solution catalogue",
-   ['L-165','L-175'], 3, 2),
+ 'L-204': ("**the R-P theatre** \u2014 the corpus's claims across physics, per domain. \u2714 "
+   "**\u2460\u2461 \u2462\u2463 \u2464 \u2465 \u2466 \u2469 WALKED r2520\u2013r2540**, and each bit "
+   "differently: \u2462\u2463 a **missing completeness argument** (the substrate is doubly ruled \u2192 "
+   "types II/III unreachable, item 46, applied); \u2464 a **missing treatment** (Unruh \u2014 item 47, "
+   "written by c54.202); \u2465 the **Higgs identified not declined** (closed r2539, the join is an "
+   "identity); \u2466 the **temperature taken and the entropy never** (item 52); \u2469 the resolution is "
+   "the **baby-universe** one, unnamed (item 53). \u21d2 **What remains is \u2468 \u2014 cosmology \u00b7 "
+   "nuclear/plasma: BBN, recombination, the acoustic scale \u2014 the last unrun station, and the "
+   "computational one",
+   ['L-165','L-175','L-202','L-221'], 3, 2),
  'L-217': ("the CR/Higgs relation is stated; **`F1` stays live \u2014 the relation breaks if the gauge group is "
    "ever promoted to forced**", ['L-221'], 2, 2),
- 'L-230': ("the `COMPUTES:` convention \u2014 uptake **flat at 40 of 357** while the corpus grew a sixth; a "
+ 'L-230': ("the `COMPUTES:` convention \u2014 uptake **flat at 40 of 357** as of r2447 \u2014 **the number is unmeasured since**, and a convention whose uptake nobody re-counts is a convention nobody is adopting while the corpus grew a sixth; a "
    "receipt that declares what it computed is a receipt a vein can be excavated through", ['L-165','L-221'], 3, 1),
  'L-210': ("the entry-point front \u2014 all 44 sites carry verdicts; **live leads are where a paper's own text "
    "points at an unexplored interior**", ['L-202','L-221','L-175'], 2, 2),
@@ -181,7 +189,7 @@ LEADS = {
    "stale the moment the fork cut a revision \u2014 **the redness measured the handoff queue, not "
    "currency**. Now measured against the last ABSORBED revision, using `ABSORPTION.md`'s already-gated "
    "`IN-FLIGHT:` line. Changes nothing on 56's tree, which is the test", [], 3, 0),
- 'L-218': ("\u24f5 the reader-package formats via pandoc in CI", [], 3, 0),
+ 'L-218': ("\u2714 \u24f6 done r2478 (`COMPANION_SPEC`) \u00b7 \u24f5 the reader-package formats via pandoc in CI \u00b7 \u24f7 the contribution, last", [], 3, 0),
  'L-228': ("`check_loci` extended to the possessive and compound-noun forms node 52 declined to claim", [], 3, 0),
 }
 

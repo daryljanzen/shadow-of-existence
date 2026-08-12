@@ -146,6 +146,29 @@ sources: [cowork, chat]
 
 
 
+### Revision r2541 — 2026-08-11 (main line). **THE BOARD'S LEAD TEXTS HAD DRIFTED FOUR WAYS FROM THE REGISTER — corrected, and gated.**
+
+**⛔ THE DEFECT.** *`BOARD.md` is generated, but its lead prose lives in a **hand-maintained dict** inside
+`regen_board.py`, while the register row is edited every time the lead moves.*
+⇒ ***`L-204`'s board text still said "stations ③④" after ⑤ ⑥ ⑦ ⑩ had been walked — four findings behind, on the
+board's TOP-RANKED lead.*** *`L-218`, `L-230` and `L-240` each lagged too.*
+
+**⌗ AND THE SIGNAL IS CHEAP AND EXACT:** ***if the register's next-step field cites a later revision than the board's
+lead text does, the board is behind.*** *`check_arcs` now fails on it, seeded both ways.*
+
+**⛭ THE CLASS, and this is the third instance.** *r2483 found a **stale next-step field**; r2535 found **eleven rows
+declaring their own work done while live**; this is the same defect one layer out —* ***a GENERATED file whose
+SOURCE is hand-maintained inherits none of the generation's guarantees.***
+⚠ *And the tell was the same each time: **the artefact was being regenerated faithfully from a stale input**, so
+every freshness check passed while the content was wrong.*
+
+⌗ *`L-204` also gained its true vein set: it now informs **all four**, since the stations have bitten on `PO-5`,
+`PO-6`, `PO-9` and the seam.*
+
+⌗⌗ *And three of the four edits **missed on the first attempt** — one matched `\u2460` where the source held
+`\u24f5`, two matched patterns rewritten since.* ⇒ ***A fix that silently does nothing is indistinguishable from a
+fix that worked, unless the check is re-run — which is why the measurement was taken before AND after each edit.***
+
 ### Revision r2540 — 2026-08-11 (main line). **R-P STATION ⑩ — the resolution is the baby-universe one, never named, and its standard objection is answered in the same sentence.**
 
 **⌗ THE MEASUREMENT.** *information paradox 14 · unitary 35 · AMPS 10 · complementarity 4 · remnant 4 —* ***and Page

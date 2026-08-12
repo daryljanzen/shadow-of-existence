@@ -47,7 +47,7 @@ sources: [chat]
 | `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.203 | c54.203 | 0 |
 | `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.203 | c54.203 | 0 |
 | `ACOUSTIC_BUILD_SETUP.md` | STATE | The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own. | — | c54.201 | 2 |
-| `BOARD.md` | STATE | (declared in frontmatter) | — | c54.200 | 3 |
+| `BOARD.md` | STATE | (declared in frontmatter) | — | c54.202 | 1 |
 | `CATEGORY_THEORY_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.201 | 2 |
 | `COLLAPSE_EXCURSION_TRANSFER_build.md` | STATE | PHASE 7's ATTACK MANUAL — the one build on the progenitor collapse excursion (L2) behind open-problems families 1/3/4/5. Referenced live by eleven documents including THE_PLAN, PHASE7_BUILD_LEDGER and both open-problems documents. | — | c54.201 | 2 |
 | `COMBINATORICS_LEDGER.md` | STATE | The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8. | — | c54.201 | 2 |
