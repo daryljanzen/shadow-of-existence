@@ -179,6 +179,8 @@ from a merge is a stale file, and the gate is what noticed.***
 
 ⌗ *Also: `L-520` arrived duplicated — this line's r2535 strike against 54's live copy. **Merged keeping the strike.**
 `merge=union` preserves both sides and **cannot tell they are the same row**, which is why `check_id_bands` exists.*
+⌗ ✔ **AND r2535's SELF-DECLARED-DONE CHECK CAUGHT THREE OF 54's NEW ROWS ONE MERGE AFTER IT WAS BUILT** *(`L-521`, `L-522`, `L-523`, all reading "done in the registering revision" while live; all struck here).* ⇒ ***A gate working across nodes is the only test of a gate that matters.***
+
 ⌗ *And 54 found **nine p0 receipts invisible to two filters** — `check_receipts` and `make_receipt_appendix` both
 filter on `startswith('| P')` and the geometric core is written **p0 lowercase**. P17 went 6 → 15 and the corpus
 appendix 371 → 379 when fixed. **Nine receipts absent from the reproducibility layer with nothing downstream to

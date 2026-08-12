@@ -44,8 +44,8 @@ sources: [chat]
 | `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.203 | c54.203 | 0 |
 | `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.203 | c54.203 | 0 |
 | `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.203 | 0 |
-| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.202 | c54.202 | 1 |
-| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.202 | c54.202 | 1 |
+| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.203 | c54.203 | 0 |
+| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.203 | c54.203 | 0 |
 | `ACOUSTIC_BUILD_SETUP.md` | STATE | The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own. | — | c54.201 | 2 |
 | `BOARD.md` | STATE | (declared in frontmatter) | — | c54.200 | 3 |
 | `CATEGORY_THEORY_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.201 | 2 |

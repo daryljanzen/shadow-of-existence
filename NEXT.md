@@ -118,7 +118,7 @@ is**.*
 | **`L-519`** | r2524 | **NOT done — this is a question and it is stated as one**: *what temperature, if any, does the configuration a collapse reaches carry, read on the nea |
 | **`L-801`** | r2525 | ***the STABILITY remainder: does the no-runaway hold for ALL data on the general no-isometry leaf, past the externally-covered vacuum-small-data and $ |
 
-*20 live rows carry a stated next step; the 14 longest-unworked are shown.*
+*17 live rows carry a stated next step; the 14 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session
