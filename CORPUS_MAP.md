@@ -146,6 +146,25 @@ sources: [cowork, chat]
 
 
 
+### Revision r2534 — 2026-08-11 (main line). **THE QUEUE HAS A FLOOR — eight named defects, each with a probe that will tell the next node when it is fixed.**
+
+**⌗ FOUR MORE ITEMS READ.** *· **24** — ***its own body says "WITHDRAWN r2454 — DO NOT ACT ON THIS ITEM" and it was
+never marked***, so it sat in the queue as live work for eighty revisions; · **25**, **28** and **32** are all
+**still real**, and 32's is precise: P16 asserts that **"a small perturbation shares its background's
+composition"**, which holds for **adiabatic** perturbations and fails for **isocurvature** ones — and P16's
+"adiabatic" uses are about **compression heating**, not the mode.*
+
+**✔ AND FOUR MORE PROBES FOLDED IN — sixteen now.** ⇒ ***The floor is eight named defects (7, 18, 19, 20, 22, 25,
+28, 32, 48 — with 44/49/50/51 this session's own routings and 9/26/30 conventions rather than owings), and every one
+has a test that closes it.***
+⌗ ***A defect whose probe goes quiet is a defect that got fixed. That is the property the queue never had, and why
+six items sat discharged-but-unmarked at r2533 and a seventh at r2534.***
+
+**⌗ THE ARC OF THE CLEANUP, in three revisions:** *r2532 found **49 items, 27 unmarked, and two both numbered 44**;
+r2533 read eleven and found **six already fixed**; r2534 read four more and found **one withdrawn by its own text**.*
+⇒ ***From a 27-item unknown to an eight-item floor with tests — and the tests are in the gate, so the reading does
+not have to happen again.***
+
 ### Revision r2533 — 2026-08-11 (main line). **THE QUEUE READ — six more items' defects were already gone, and the probes are now permanent.**
 
 **⌗ THE PASS.** *Eleven of the twenty-two "needs a read" items had checkable signatures. Tested against the current

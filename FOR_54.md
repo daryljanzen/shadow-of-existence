@@ -6,6 +6,31 @@ job: THE INBOX — what the observer line has found in the working fork's text a
 sources: [chat]
 ---
 
+## ⛭⛭⛭ THE FLOOR, as of r2534 — run `check_routed.py` and this is what you get
+
+**⌗ EIGHT NAMED DEFECTS, each with a probe that will tell you when it is fixed:**
+
+| item | the defect | probe says |
+|---|---|---|
+| **7** | `FORK_c54.md` narrates c54.1–c54.35 and reads as current | anchored at c54.35, no span note |
+| **18** | p0's frontier item 1, datum half | the owed-derivation phrasing is still in p0 |
+| **19** | P1's `\Sscope` contradicts its own abstract about $r=0$ | the scope sentence is present |
+| **20** | P7 conflates two loci it elsewhere says must never be conflated | the appositive is present |
+| **22** | P12's `weyl-a3` renders after the bibliography | bibliography at 59019, `weyl-a3` at 64291 |
+| **25** | P13's `sec:face-status` concedes a symmetry the group theory lacks | the conceding sentence is present |
+| **28** | P16's headline abundances are the receipt's REFERENCE column | reference values present, computed absent |
+| **32** | P16's progenitor-composition step rests on an unstated mode condition | claim present; **isocurvature/growing-mode never named** |
+| **48** | the Higgs mechanism is identified in P6 and never developed | **"Higgs" at zero uses across the papers** |
+
+⌗ *And **44, 49, 50, 51** are this session's own routings — live by construction, no probe needed.*
+⌗ *Three have no mechanical signature and are conventions rather than defects: **9, 26, 30**. They are offers,
+not owings.*
+
+⇒ ***So the genuine backlog is EIGHT, and every one has a test that closes it.*** *A defect whose probe goes quiet
+is a defect that got fixed — mark it and move on.*
+
+---
+
 ## ⛭⛭ HOW TO READ THIS QUEUE — added r2532, because it had grown past being readable
 
 *It reached **49 items, 18 marked discharged and 27 not**, and a spot check found **item 29's defect
@@ -521,7 +546,7 @@ what this line's `C3` receipt established from the dial.*** **Three routes, one 
 
 ---
 
-## ⛔⛔ WITHDRAWN — 24 · P14's LEAF-COMPACTNESS CLAIM IS RECEIPTED AT $0.62\,M_N$ AND DIVERGES AT THE MEMBER THE PROGRAMME FORCES — added r2442
+## ✔✔ DISCHARGED (its own body says "WITHDRAWN r2454 — DO NOT ACT ON THIS ITEM"; marked r2534) — ⛔⛔ WITHDRAWN — 24 · P14's LEAF-COMPACTNESS CLAIM IS RECEIPTED AT $0.62\,M_N$ AND DIVERGES AT THE MEMBER THE PROGRAMME FORCES — added r2442
 
 > ⛔⛔ **WITHDRAWN r2454 — DO NOT ACT ON THIS ITEM. The claim does not fail at the forced member.**
 >

@@ -157,7 +157,40 @@ def probe_20():
     return hit, f'the appositive is present: {hit}'
 
 
-PROBES = {6: probe_6, 7: probe_7, 8: probe_8, 11: probe_11, 19: probe_19, 20: probe_20,
+def probe_24():
+    """Withdrawn in its own body at r2454 -- 'DO NOT ACT ON THIS ITEM'."""
+    q = _raw('FOR_54.md')
+    blk = [x for x in re.split(r'\n(?=## )', q or '') if re.search(r'^## .*?(?<!\d)24\s*·', x)]
+    if not blk:
+        return None, 'item 24 not found'
+    return ('WITHDRAWN r2454' not in blk[0]), 'the item withdraws itself in its own body'
+
+
+def probe_25():
+    """P13's sec:face-status concedes a symmetry the group theory does not have."""
+    p13 = body(os.path.join(ROOT, 'corpus', 'boundary_paper.tex'))
+    hit = 'co-equal real forms of the one complex group' in p13
+    return hit, f'the conceding sentence is present: {hit}'
+
+
+def probe_28():
+    """P16's headline abundances are the receipt's REFERENCE column, not its COMPUTED one."""
+    p16 = body(os.path.join(ROOT, 'corpus', 'cosmogenesis_paper.tex'))
+    ref = [v for v in ('2.51\\times10^{-5}', '5.1\\times10^{-10}') if v in p16]
+    comp = [v for v in ('2.5671', '4.4611', '2.567', '4.461') if v in p16]
+    return (bool(ref) and not comp), f'reference values {ref or "none"}, computed values {comp or "none"}'
+
+
+def probe_32():
+    """P16's progenitor-composition step rests on an unstated mode condition."""
+    p16 = body(os.path.join(ROOT, 'corpus', 'cosmogenesis_paper.tex'))
+    claim = "a small perturbation shares its background's composition" in p16
+    stated = ('isocurvature' in p16) or ('growing mode' in p16)
+    return (claim and not stated), \
+           f'claim present: {claim}; mode condition named (isocurvature/growing mode): {stated}'
+
+
+PROBES = {24: probe_24, 25: probe_25, 28: probe_28, 32: probe_32, 6: probe_6, 7: probe_7, 8: probe_8, 11: probe_11, 19: probe_19, 20: probe_20,
           22: probe_22, 29: probe_29, 40: probe_40, 45: probe_45, 46: probe_46, 48: probe_48}
 
 
