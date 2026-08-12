@@ -114,9 +114,13 @@ def main():
           'The wall is the complement' in flat)
 
     # ---- the one thing that survives: the antecedent ---------------------------
-    check('the ambiguity is real: the clause "lies along it" follows a definition of algebraic type',
+    # ** UPDATED r2376+c54.182 BY THE WORKING FORK -- and, as with W1, because the finding was
+    # APPLIED.  This asserted the ambiguity was still in P9; c54.179 took FOR_54 item 14 and the
+    # clause now reads "lies along THAT AXIS".  The check therefore asserts the fix, and the
+    # diagnosis stands in the label. **  *Routed in FOR_56.md rather than assumed.*
+    check('the ambiguity is REMOVED: the clause now reads "lies along that axis" (fixed c54.179)',
           re.search(r'Algebraic type is the count of coincident principal null directions, and the '
-                    r'operator\'s whole range[^.]*lies along it', flat) is not None)
+                    r'operator\'s whole range[^.]*lies along that axis', flat) is not None)
 
     print()
     if FAILED:
