@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2461 — 2026-08-11 (main line). **THE ROUTING LIST READ COLD BEFORE 54 SPINS UP — one real gap fixed, and the audit that found twelve was word-presence, wrong on all twelve.**
+
+**⌗⌗ THE JOB:** *twenty-one live items accumulated across twenty revisions, about to be read by a node that was not
+here. **Can each be acted on cold?*** *The test: does each name a **file**, a **locus**, and a **suggestion**?*
+
+**⚠ THE FIRST PASS WAS A CHECKBOX SCAN AND IT FLAGGED TWELVE. READING THEM FOUND ALL TWELVE FINE.**
+*Item 21 says **"the fix is a word substitution"** and lists what must not be touched; item 29 names **`cor:wall`
+as the likely intended target**; item 11 says **"the same citation, or a pointer to P7's"**; item 6 says **"soften
+the claim, or run the fold test once and make it true"**.* ⇒ ***Every flag was the word "Suggested" appearing as
+"Fix", or a locus given in prose rather than as a `\label`.***
+⌗ **Instance fourteen, and the most pointed yet:** ***this line audited a list for actionability using a test that
+cannot read.*** **A list is read, not scanned.**
+
+**⛭ AND THE READING FOUND ONE REAL GAP THE SCAN DID NOT.** *Item 32's "Where" said* **"`THE_ASSUMPTIONS_RETREATED_UPWARD`
+(and wherever the derivation lands in the papers)"** *— which a cold reader cannot act on.*
+⇒ ***It lands in P16's progenitor paragraph, now named.*** ⌗ **And that paragraph turns out to state the OTHER
+premise explicitly:** *"in the standard spherical-collapse description such a patch is* **a closed Friedmann
+solution** *whose $a=0$ is the background's $a=0$"* — ***and "a closed Friedmann solution" IS the constant-$E$
+top-hat case.*** **So the passage states the uniformity premise and omits the mode premise, which is exactly why the
+second is easy to miss beside the first.**
+
+⌗ *The list now stands at **twenty-one live items, each with a file, a locus and a suggestion**, five marked
+`✔✔ DISCHARGED` in the body, one marked `⛔⛔ WITHDRAWN`, and **item 21 flagged to take first**.*
+
+**Register: 227 rows. Gates: twenty-one, twenty-one rc=0. Seventeen papers compiling.**
+
 ### Revision r2460 — 2026-08-11 (main line). **`L-234` ANSWERED, AND IT CORRECTS THIS LINE'S OWN r2458 CLAIM — the free function and the inherited datum are the same freedom.**
 
 **⛔ r2458 CALLED $E(r)$'s PROFILE "AN UNSPENT DEGREE OF FREEDOM". IT IS NOT.**

@@ -20,6 +20,16 @@ sources: [chat]
 > **⇒ THE FIVE DISCHARGED ITEMS ARE NOW MARKED `✔✔ DISCHARGED` IN THE BODY, verified still applied at r2452.**
 > ***THE LIVE ONES ARE: 6, 11, 12, 18, 19, 20, 21, 22, 23, 25, 26, 27, 28, 29, 30*** — ⛔ **item 24 was WITHDRAWN at r2454; the claim does not fail at the forced member** *(plus 7, 8, 9,
 > reported already-applied at c54.179 and left in place as conventions rather than fixes).*
+> ⛭⛭ **READ-COLD CHECK, r2461 — every live item was read (not scanned) and each names a FILE, a LOCUS and a
+> SUGGESTION.** *One gap was found and fixed: **item 32 said "wherever the derivation lands in the papers"**, which
+> a cold reader cannot act on. **It lands in P16's progenitor paragraph**, and that paragraph turns out to state the
+> OTHER premise explicitly — "a closed Friedmann solution" **is** the constant-$E$ top-hat case — which is why the
+> mode premise is easy to miss beside it.*
+> ⚠ ***And the check that flagged twelve items as "incomplete" was word-presence and wrong on every one*** *— item
+> 21 says "the fix is a word substitution", item 29 names `cor:wall` as the likely target, item 11 says "the same
+> citation, or a pointer to P7's". **A list is read, not scanned, and this line needed reminding for the fourteenth
+> time.***
+
 > ⌗ **AND ITEM 21 IS FLAGGED TO TAKE FIRST** *— the seam/branch-point word, which decides a proposition's truth
 > value and has already cost two nodes a false finding.*
 
@@ -690,9 +700,15 @@ progenitor route will work for them.*
 
 ## ⌗ 32 · THE PROGENITOR-COMPOSITION DERIVATION RESTS ON A MODE CONDITION IT DOES NOT STATE — added r2459
 
-**Where:** `THE_ASSUMPTIONS_RETREATED_UPWARD` (and wherever the derivation lands in the papers) — *"in spherical
-collapse **a small perturbation shares its background's composition**, so the patch's equality is the ambient
-universe's."*
+**Where:** `corpus/cosmogenesis_paper.tex` (P16), the progenitor paragraph — *"in the standard spherical-collapse
+description such a patch is **a closed Friedmann solution** whose $a=0$ is the background's $a=0$ … **a small
+perturbation shares its background's composition**, so the patch's matter–radiation equality is the ambient
+universe's, which is exactly the identity that fixed $\rho$."* *(Also carried in
+`THE_ASSUMPTIONS_RETREATED_UPWARD`.)*
+
+⌗ ***AND THE SAME PASSAGE ALREADY NAMES THE OTHER CONDITION: "a closed Friedmann solution" IS the constant-$E$
+(top-hat) case*** *— so the passage states the uniformity premise and omits the mode premise, which is why the second
+is easy to miss.*
 
 **⌗ THE ALGEBRA:** *patch ratio over background ratio $=(1+\delta_r)/(1+\delta_m)=1+(\delta_r-\delta_m)+O(2)$.*
 ⇒ ***So it holds to first order iff $\delta_r\simeq\delta_m$ — which is ADIABATICITY, a statement about the
