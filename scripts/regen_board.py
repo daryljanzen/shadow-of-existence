@@ -75,11 +75,22 @@ LEADS = {
    "other than GR. ** \u21d2 **the Dirac algebra forces GR only in FOUR dimensions**, so **the four-ness of the "
    "CUT is what makes the dynamics forced** \u2014 which is not what `PO-9`'s guard says",
    ['L-175'], 2, 3),
- 'L-174': ("\u2714 **\u24f5 CLOSED AT LINEAR ORDER r2514**: data with $\\sigma^{TT}\\ne0$ on the de Sitter "
-   "leaf evolves by ordinary GR in closed form, with the momentum constraint **conserved** and the count of "
-   "**two** arriving from the evolution. **What remains: does the NONLINEAR evolution keep "
-   "$\\sigma^{TT}$ free?** \u2014 where the $\\sigma^2$ back-reaction first appears, and it is second order "
-   "so it is invisible in the linear exhibition",
+ 'L-801': ("\u26ed\u26ed **cc54 WORKED `L-174`'s NONLINEAR REMAINDER** (the run Daryl handed it): does the "
+   "nonlinear evolution keep $\\sigma^{TT}$ free? \u2014 and it SPLITS. **The FREEDOM (the count) is the "
+   "contracted Bianchi identity, an off-shell identity verified EXACTLY ($\\nabla_\\mu G^\\mu{}_\\nu=0$, all "
+   "orders in $h$) on the INHOMOGENEOUS leaf and preserved for NON-parallel two-wave data \u2014 no Killing "
+   "vector, so it covers the general case, not only P11's Gowdy model.** The $\\sigma^2$ back-reaction is a "
+   "positive $O(\\epsilon^2)$ SCALAR sourcing the energy sector, not a new TT constraint. \u21d2 **The "
+   "STABILITY (no runaway) is the SEPARATE remainder**, routed to Friedrich and Andreasson\u2013Ringstr\u00f6m, "
+   "Nariai the exception",
+   ['L-165'], 3, 2),
+ 'L-174': ("\u2714 **\u24f5's FREEDOM HALF IS ANSWERED r2529**: linear order closed at r2514, and cc54's "
+   "`L-801` splits the nonlinear remainder at P11's own seam \u2014 the **freedom** rests on the "
+   "**contracted Bianchi identity**, which is **off-shell and symmetry-free** (verified here on a two-wave "
+   "metric with **no Killing vector**: $\\nabla_\\mu G^\\mu{}_\\nu=0$ in all four components), while "
+   "P11's Gowdy-specific structures sharpen **stability**. \u21d2 **What remains is the STABILITY half** "
+   "\u2014 general, no-isometry, all-data \u2014 **open in a named, externally-bounded way** (Friedrich; "
+   "Andr\u00e9asson\u2013Ringstr\u00f6m; Nariai the non-generic exception)",
    ['L-165','L-175'], 3, 3),
  'L-207': ("\u24f6 the confined/branch-point exhibition \u2014 **gated on PO-6 and must not be opened without "
    "it** (\u24f5 discharged r2450)",

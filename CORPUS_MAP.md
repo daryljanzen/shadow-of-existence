@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2529 — 2026-08-11 (main line). **cc54's `L-801` MERGED — the nonlinear remainder SPLITS at P11's own seam, and the freedom half generalises.**
+
+**⌗ THE MOVE, AND IT IS THE RESULT.** *cc54 was handed "does the nonlinear evolution keep $\sigma^{TT}$ free?" and
+**did not answer yes or no**. It cut P11's sentence in two:*
+*· **THE FREEDOM** rests on "a first-class constrained system evolves consistently to all orders **by the contracted
+Bianchi identity**" — and that identity is **off-shell**;*
+*· **THE STABILITY** rests on P11's "**two exact structures [that] sharpen this beyond the Bianchi count**" — the
+conserved shear charge and the positive reduced energy — **and those ARE Gowdy-specific**.*
+⇒⇒ ***So P11's all-orders FREEDOM argument covers the general case. What its Gowdy scoping actually leaves open is
+the NARROWER STABILITY question.***
+
+**⛭⛭ VERIFIED HERE ON A DIFFERENT METRIC.** *Two TT waves in **non-parallel** directions, so $g$ depends on $t$,
+$x$ AND $z$ and **no Killing vector is available**; Christoffels, Riemann, Ricci and $G$ built to $O(\epsilon^2)$,
+and* ***$\nabla_\mu G^\mu{}_\nu=0$ in all four components.***
+⇒ ***The constraint propagation is off-shell and symmetry-free. It is not a Gowdy fact.***
+
+**⌗⌗ AND IT ANSWERS WHAT THIS LINE LEFT OPEN TWICE.** *r2504 named the $\sigma^2$ back-reaction as the obstruction;
+r2514 flagged it as invisible at linear order.* ⇒ ***cc54's answer: it is a positive $O(\epsilon^2)$ SCALAR sourcing
+the energy sector — NOT a new constraint on the two TT functions.***
+⌗ ⛭ **THE RULE:** ***when one sentence in a source is doing two jobs, the scoping attached to it may belong to only
+one of them.*** *Three revisions here treated the question as monolithic; **the answer was that it was two questions
+with different scopes**.*
+
+⚠ *What stays open is the **stability half** — general, no-isometry, all-data — and **P11 routes it out by name**:
+Friedrich (vacuum small-data), Andréasson–Ringström (all-data $T^3$ Gowdy with matter), **Nariai the non-generic
+exception**. ***Open in a named, externally-bounded way rather than an unbounded one.***
+⚠ ***The conversion of `L-174` ⓵ to a vein verdict is Daryl's, and neither node has taken it.***
+
+⌗ *And three of cc54's filing judgements are worth copying: it filed into **its own directory** (the c54.198
+filename collision avoided **by construction**), asserted **only against sources** (its own arc-pin rule applied to
+itself one revision later), and **did not rewrite the row it advanced**, because that row's status is Daryl's.*
+✔ *`check_branches` correctly went red until this merge landed — **the stranding signal working as designed**.*
+
 ### Revision r2528 — 2026-08-11 (main line). **AT THE NARIAI MEMBER THE STATIC FRAME DOES NOT EXIST — `L-519` gains a second, independent footing, and trans-Planckian gets a narrow answer whose scoping is the content.**
 
 **⌗ ⓵ THE COMPUTATION.** *$f(r_n)=0$, $f'(r_n)=0$, and* ***$f''(r_n)=-6/\alpha^2<0$ — so $r_n$ is a MAXIMUM of $f$
