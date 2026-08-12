@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2520 — 2026-08-11 (main line). **R-P STATION ③④ WALKED — P9's "every algebraic type" is right, and the reason is a sentence it does not contain.**
+
+**⌗ THE FIND.** *P9 claims the operator fills the sector **"across every algebraic (Petrov) type"** and, in the same
+passage, names the range **"Petrov type O, D, and I"**.* ⇒ ⛔ ***Six types exist, and **Type II and Type III appear
+ZERO times in the entire corpus**.***
+⌗ *And they are not absent by accident — verified by search and marked as outside: **twisting Type II vacuum
+spacetimes with two Killing vectors and $\Lambda$**, and Type III ones, exist.*
+
+**⛭⛭ AND THE REASON IS THE CORPUS'S OWN, ASSEMBLED FROM TWO PAPERS.** *P9: **"the substrate's null rulings are
+shear-free"**, a cut inheriting one is algebraically special — the **Type-D corner** — and shear **forbids a
+repeated PND**, so the operator climbs into **Type I**. P0: **"The surface is doubly ruled by straight null
+lines."***
+⇒⇒ ***A CUT INHERITS BOTH RULINGS — TWO REPEATED PNDs, TYPE D — OR NEITHER — SHEAR, NO REPEATED PND, TYPE I. THERE
+IS NO WAY TO INHERIT EXACTLY ONE, AND TYPES II AND III ARE PRECISELY THE EXACTLY-ONE CASES.***
+⇒ ***So the interval O–D–I is COMPLETE and P9 is right — and "doubly ruled" appears zero times in P9, so the
+mechanism and the claim it justifies sit in different papers.*** *Routed as item 46: **one sentence, and it
+strengthens the paper rather than repairing it**.*
+
+**⌗ THE STATION'S OTHER THREE ITEMS ARE HELD:** *the field equations (unchanged, plus r2518's $D=4$ forcing); the
+catalogue **richly** — Kerr, Schwarzschild, Reissner, NUT, Bianchi, Gowdy, Einstein–Rosen, Zipoy–Voorhees, plane
+wave, C-metric, Weyl, Gödel; the Carter constant via the Type-D Killing tensor.*
+⇒ ***The bite is a MISSING SENTENCE rather than a missing result — which is what a reach station should mostly find
+in a corpus this worked.***
+
+⌗ *And one self-repair in passing: **`N1`'s "zero Lovelock across all .tex" check had been defeated by its own
+INDEX row**, which the appendix generator writes into `.tex`. ***A claim about the absence of a string, undone by
+the sentence reporting it*** — the same class as `check_conflict_markers`' anchoring failure. Now measured over the
+**17 paper files** rather than all 35.*
+
 ### Revision r2519 — 2026-08-11 (main line). **c54.200's FORCING VERIFIED — the admissible pair is the paper's own physics, and `PO-7`'s verdict question sharpens to a single sentence.**
 
 **⌗ WHAT THIS LINE HAD.** *r2509 justified $\phi\in\{0,\pi\}$ from the **instrument's comment** — "$\phi=0$ is a

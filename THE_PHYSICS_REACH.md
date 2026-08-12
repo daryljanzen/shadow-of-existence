@@ -1,10 +1,34 @@
 ---
 name: the-physics-reach
 kind: STATE
-current: r2517+c54.201
-job: The R-P theatre — the corpus's claims across physics, per domain. LIVE: stations ③④ onward are owed per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home.
+current: r2520+c54.201
+job: The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ onward are owed per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home.
 sources: [cowork]
 ---
+
+## ⛭⛭⛭ STATION ③④ WALKED r2520 — and it bit in exactly one place
+
+**⌗ THE FIND:** *P9 claims the operator fills the sector **"across every algebraic (Petrov) type"** and, in the same
+passage, names the range **"Petrov type O, D, and I"**.* ⇒ ⛔ ***There are six types, and Type II and Type III appear
+ZERO times in the entire corpus.***
+
+**⌗ AND THEY ARE NOT ABSENT BY ACCIDENT** *(outside literature, verified by search): **twisting Type II vacuum
+spacetimes with two Killing vectors and $\Lambda$** exist, as do Type III ones.*
+
+**⛭⛭ THE REASON IS STRUCTURAL AND IT IS THE CORPUS'S OWN — assembled from two papers:**
+*· P9: **"the substrate's null rulings are shear-free"**, and a cut inheriting one is algebraically special — **the
+Type-D corner**; shear forbids a repeated PND, so the operator climbs into **Type I**.*
+*· P0: **"The surface is doubly ruled by straight null lines."***
+⇒⇒ ***A cut inherits BOTH rulings — two repeated PNDs, Type D — or NEITHER — shear, no repeated PND, Type I. There
+is no way to inherit exactly ONE. And Types II and III are precisely the exactly-one cases.***
+⇒ ***So the interval O–D–I is COMPLETE and P9 is right — but "doubly ruled" appears zero times in P9, so the
+mechanism and the claim it justifies sit in different papers.***
+
+**⌗ THE STATION'S OTHER THREE ITEMS ARE HELD:** *the field equations (GR's dynamics unchanged, plus r2518's $D=4$
+forcing result); the exact-solution catalogue **richly**; the Carter constant via the Type-D Killing tensor.*
+⇒ ***The bite is a MISSING SENTENCE, not a missing result — which is what a reach station should mostly find in a
+corpus this worked.***
+
 
 # THE PHYSICS REACH — the R-P theater: what the corpus can claim across physics, per domain
 

@@ -1269,6 +1269,38 @@ are wrong — they match today; · not that this line should own the fix.*
 
 ---
 
+## ⛭⛭⛭ 46 · P9's "EVERY ALGEBRAIC TYPE" IS RIGHT AND THE REASON IS MISSING — one sentence, and the word it needs is in P0 — added r2520
+
+**Where:** *`range_paper.tex`, the structural-axis passage. It claims the operator fills the sector **"across every
+algebraic (Petrov) type"** and, two sentences later, names the range **"Petrov type O, D, and I"**.*
+⇒ ⛔ ***There are six types. **Type II and Type III appear ZERO times in the entire corpus** — a reader counting
+stops there.***
+
+**⌗ AND THEY ARE NOT ABSENT BY ACCIDENT** *(outside literature, verified by search and marked as outside): **twisting
+Type II vacuum spacetimes with TWO Killing vectors and $\Lambda$** (Zhang–Finley, including Lun's Type II and III
+and MacCallum–Siklos' Type III), and a **Kundt Type II with a null Killing vector and a three-dimensional abelian
+isometry algebra** (Almeida–Batista). **So the absence needs a reason.***
+
+**⛭⛭ AND YOUR OWN MECHANISM SUPPLIES IT — assembled from two papers:**
+*· **P9**: "the substrate's null rulings are shear-free", and a cut inheriting one is algebraically special — **the
+Type-D corner**; and shear **forbids a repeated principal null direction**, so the operator climbs into **Type I**.*
+*· **P0**: "**The surface is doubly ruled by straight null lines.**"*
+⇒⇒ ***THE SUBSTRATE IS DOUBLY RULED. A cut inherits BOTH rulings — two repeated PNDs, TYPE D — or NEITHER — shear,
+no repeated PND, TYPE I. THERE IS NO WAY TO INHERIT EXACTLY ONE. And Types II and III are precisely the exactly-one
+cases (II one double, III one triple).***
+⇒ ***So they are unreachable BY CONSTRUCTION, the interval O–D–I is COMPLETE, and your claim is right.***
+
+**⌗ THE SUGGESTED FIX IS ONE SENTENCE**, *and it strengthens the paper rather than repairing it: after "Petrov type
+O, D, and I", something like —* ***"Types II and III, which carry exactly one repeated principal null direction, are
+not reachable: the substrate is doubly ruled, so a cut inherits both rulings or neither."***
+⌗ *And the measurable fact behind the suggestion: **"doubly ruled" appears zero times in P9**, so the mechanism and
+the claim it justifies currently sit in different papers.*
+
+⚠ *Not claimed: that P9 is wrong — **this argues FOR its claim** — or that Type II/III are impossible in GR. Receipt
+`P1_the_petrov_interval_is_complete_because_the_substrate_is_doubly_ruled`.*
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

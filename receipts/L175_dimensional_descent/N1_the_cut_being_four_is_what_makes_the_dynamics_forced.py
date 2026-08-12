@@ -111,10 +111,15 @@ def main():
           and 'a structure \\emph{function} rather than a constant' in p12)
     check('and P12 cites Teitelboim1973 for the brackets', 'Teitelboim1973' in p12)
 
-    tex = glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))
+    # ** THE PAPERS, NOT THE GENERATED APPENDICES.  The first version counted every .tex, and the
+    # appendix generator writes the receipts index INTO .tex -- so the row REPORTING this finding
+    # contains the word and defeated the check.  Same class as check_conflict_markers' anchoring
+    # failure: a claim about the ABSENCE of a string, undone by the sentence that reports it. **
+    tex = [f for f in glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))
+           if not os.path.basename(f).startswith('appendix_receipts')]
     lovelock = sum(len(re.findall('Lovelock', open(f, encoding='utf-8', errors='replace').read(), re.I))
                    for f in tex)
-    check(f'⛔ ZERO occurrences of "Lovelock" across all {len(tex)} .tex files (found {lovelock})',
+    check(f'⛔ ZERO occurrences of "Lovelock" across all {len(tex)} PAPER .tex files (found {lovelock})',
           lovelock == 0)
     for w in ('uniquely', 'embeddab', 'determines the'):
         check(f'and ZERO of "{w}" in P12', len(re.findall(w, p12, re.I)) == 0)

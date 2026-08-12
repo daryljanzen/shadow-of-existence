@@ -122,11 +122,11 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-221`** | r2476 | **the question is now an OPERATOR question r2476**: ***is there an operator on this structure whose kernel is the four colourless gradings?*** — and t |
 | **`L-218`** | r2478 | ✔ **② done r2478 — `COMPANION_SPEC.md`** · ① formats via pandoc in CI · ③ contribution, last |
 | **`L-217`** | r2482 | ✔ **the statement exists — `CR_AND_THE_HIGGS.md` §4** · what the row still owes is **§5's onward list**, and `F1` stays live: ***the relation breaks i |
-| **`L-204`** | r2483 | ✔ **the strike was made r2383 — this field was stale for 99 revisions, corrected r2483** · what remains is ***③④: P8/P9, GR field equations and the ex |
 | **`L-230`** | r2490 | ⓵ **the instrument question is closed r2447** — no gate can read a quantifier · ⓶ the live route is **make `COMPUTES:` universal** (39 of 309 today),  |
 | **`L-508`** | r2491 | done in the registering revision — two new production-depth phases, with the peak indexing established by the transient test before any fit is read |
 | **`L-509`** | r2501 | done in the registering revision — six sites repaired, the one true-as-written branch-point sentence kept, the lint's recall hole closed and seeded bo |
 | **`L-510`** | r2504 | done in the registering revision — the identity re-derived, the split verified at five wavevectors, P9's wording matched in source, and the polarized- |
+| **`L-511`** | r2508 | done in the registering revision — both slicings computed symbolically, the longitudinal solve run, the York split re-checked standalone, and four sou |
 
 *24 live rows carry a stated next step; the 14 longest-unworked are shown.*
 
