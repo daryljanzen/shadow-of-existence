@@ -118,7 +118,7 @@ is**.*
 | **`L-508`** | r2491 | done in the registering revision — two new production-depth phases, with the peak indexing established by the transient test before any fit is read |
 | **`L-509`** | r2501 | done in the registering revision — six sites repaired, the one true-as-written branch-point sentence kept, the lint's recall hole closed and seeded bo |
 
-*16 live rows carry a stated next step; the 14 longest-unworked are shown.*
+*17 live rows carry a stated next step; the 14 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session

@@ -46,6 +46,25 @@ you are holding a file you have already pushed.*
 corpus can gate (`L-237`). **Its whole value is that a collision becomes visible before the merge rather than after
 it.***
 
+## ⛔⛔ AND A COLLISION CLASS THE ID BANDS DO NOT COVER — found r2512
+
+***RECEIPT FILENAMES.*** *The ID bands protect **row IDs**. They say nothing about the **`I1`, `I2`, `B4`, `M3`
+prefixes inside a shared receipt directory** — and two nodes filing into `receipts/L174_general_matter_dynamics/`
+picked the same ones.*
+
+**⌗ WHAT HAPPENED.** *This line filed `I4_the_shear_selection…` and `I5_two_not_five…`. The fork filed
+`I4_the_free_shear_is_two…` at c54.198 and then **renamed it to `I5`** at c54.199 — **colliding with both**. The
+merge kept all four names, so the directory carried **two `I4`s and two `I5`s**, and `L-510` appeared **twice**,
+differing by **one character**: the receipt name inside it.*
+⇒ *Resolved by moving the fork's to **`I7`** and repointing every citation — including **two `\rcpt{}` cites in
+`range_paper.tex`**, one of which arrived in the same merge and was missed on the first pass.*
+
+**⇒ THE RULE:** ***a receipt prefix is an allocation in a shared namespace and needs the same discipline as a row
+ID.*** *Until there is a band for them: **56 uses the letters it has used; a node filing into a directory another node
+has written to reads the directory first**.* ⌗ *`check_receipts` catches it after the fact — it fired on both
+duplicate stems — **but only once both are committed, which is after the merge**, and that is exactly the position
+`CLAIMS.md` exists to get ahead of.*
+
 ## ⌗ FILES THAT ARE ALWAYS SHARED, AND HOW
 
 *These are edited by every node and must never be claimed exclusively — **append-only or additive-only**, so a merge

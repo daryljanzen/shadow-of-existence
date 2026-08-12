@@ -146,6 +146,43 @@ sources: [cowork, chat]
 
 
 
+### Revision r2512 — 2026-08-11 (main line). **c54.199 MERGED — r2505's shear-selection attribution is WITHDRAWN, and the third instance of "two objects, one word" was made four revisions before this line filed the rule.**
+
+**⛔ THE CORRECTION.** *r2505 answered "nothing selects among the shear" with P9's **shift–shear link** — Goldberg–Sachs,
+the substrate's shear-free rulings, Type D against Type I. **Right that the corpus selects, right that the selection is
+vacuum-bound.*** ⇒ ***Wrong that it constrains the object `I3` counted.***
+*· the **OPTICAL** shear (Goldberg–Sachs) is **one complex scalar on a NULL GEODESIC CONGRUENCE** and an
+**invariant**;*
+*· the **ADM** shear $\sigma_{ij}$ is **five real components on a SPATIAL LEAF** and **foliation-bound**.*
+
+**⛭⛭ AND c54.199's PROOF IS ONE EXAMPLE, which is what makes it decisive.** ***Schwarzschild is Type D with shear-free
+principal null directions in EVERY slicing — and its ADM shear is $3M/r^3$ in Painlevé–Gullstrand and $0$ in static
+coordinates. The entire difference is the longitudinal piece $W_r=-\sqrt{M/2r}$, so $\sigma^{TT}=0$ in both.***
+⇒⇒ ***THE THREE THE MOMENTUM CONSTRAINT OWNS CARRY THE FOLIATION; THE TWO IT LEAVES CARRY THE GEOMETRY.*** *Which is
+why the count is two and why Goldberg–Sachs cannot bear on it.* *The fork's receipt run here at rc=0.*
+
+**⌗⌗ AND THE SEQUENCE IS THE ENTRY.** *r2509 filed **"two objects sharing one word"** after this line mistook
+`L-202`'s antilinear phase for `CRPHI`.* ⇒ ***r2505 had already made the same error with "shear", four revisions
+earlier.***
+⇒ ⛭ ***Filing a rule does not sweep the revisions behind it. A newly-named failure class is a QUERY TO RUN BACKWARDS
+over recent work, not just a guard for what comes next*** *— and this line filed it, then worked `L-206`, `L-203` and
+the acoustic front, and never ran the query.* ⌗ *Cheap version: **when you name a confusion class, grep the last ten
+revisions for the same shape before moving on.***
+
+**⛔ AND A COLLISION CLASS THE ID BANDS DO NOT COVER: RECEIPT FILENAMES.** *The bands protect **row IDs** and say
+nothing about the `I1`/`I2`/`B4` prefixes inside a shared receipt directory.* ⇒ *This line filed `I4` and `I5`; the
+fork filed `I4` at c54.198 and **renamed it to `I5`** at c54.199 — **colliding with both**. The merge kept all four,
+so the directory carried **two `I4`s and two `I5`s**, and **`L-510` appeared twice, differing by ONE CHARACTER: the
+receipt name inside it**.*
+⇒ *Resolved by moving the fork's to **`I7`** and repointing every citation — including **two `\rcpt{}` cites in
+`range_paper.tex`**, the second of which arrived in the same merge and was missed on the first pass. **And a
+conflict marker survived inside `range_paper.tex` itself**, breaking the build until swept — `git checkout --theirs`
+on the appendix files did not cover the paper.*
+⌗ *Recorded in `CLAIMS.md`. **`check_receipts` catches duplicate stems, but only once both are committed — which is
+after the merge, and that is exactly the position `CLAIMS.md` exists to get ahead of.***
+
+✔ *All 17 papers compile; register clean at 245 rows, zero duplicated IDs.*
+
 ### Revision r2511 — 2026-08-11 (main line). **`THE_WEAVE` BROUGHT CURRENT — convergence has a third form, and it is between NODES rather than between fields.**
 
 **⛭⛭ THE SAME MEASUREMENT, MADE TWICE, BY TWO NODES, ON TWO INSTRUMENT PATHS.** *cc54 ran routed item 38 at
