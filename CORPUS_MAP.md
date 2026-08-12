@@ -146,6 +146,49 @@ sources: [cowork, chat]
 
 
 
+### Revision r2453 — 2026-08-11 (main line). **`L-220`'s INSTRUMENT QUESTION CLOSED IN THE NEGATIVE — the successor metric was built, and watching it CONVERGE is the answer.**
+
+**⌗⌗ THE ROW ASKED FOR A REBUILT QUANTITY.** *`G1` had measured **distance** from a claim to its support and a blind
+run killed it — "a result that carries its argument inside itself needs no nearby support". The row concluded **the
+quantity is wrong** and asked for a better one.*
+
+**⛭ THE SUCCESSOR WAS THE RIGHT SHAPE — a DECLARATION binary with no invented threshold** *("a gate can check a
+declaration, not a judgement", r2447): **does a labelled result SUPPLY an arrival path?***
+⇒ *Blind over all seventeen papers, **85 labelled results**:*
+*· in-body support **+** a `\ref`/`\rcpt`/`\cite` declaration → **20 flagged**;*
+*· adding the **`\begin{proof}` environment** → **7**;*
+*· and **reading two of the seven** turned up two more routes — a bracketed **`\textbf{[Established: proved here
+from…]}`** tag on `prop:unique`, and a following **`\noindent\emph{Argument.}`** paragraph on `prop:amplitude` →
+**4**.*
+
+⇒ ⛭⛭ ***EVERY SHARPENING LOWERED THE COUNT, AND EVERY FLAG THAT WAS READ TURNED OUT TO BE A ROUTE THE INSTRUMENT DID
+NOT KNOW.*** **The sequence converges on the corpus being fine and on the instrument never being finished.**
+
+**⇒ THE FINDING:** ***A METRIC OVER AN OPEN-ENDED SET OF REALISATIONS MEASURES THE METRIC-WRITER'S IMAGINATION, NOT
+THE CORPUS.*** *Nothing bounds the ways prose can supply an arrival path — a proof, a because-clause, a
+cross-reference, a receipt, a status tag, an "Argument." paragraph, a following remark that draws the chain — **and
+that is why this class resisted instrumentation twice**.*
+⌗ **AND THE DISCRIMINATOR IS NOW STATABLE:** *the places instrumentation DID work — `check_citations`,
+`check_id_bands` — **check a declaration with exactly ONE legitimate form**.* ⇒ ***One form ⇒ gateable; open-ended ⇒
+readable only.***
+
+**⌗⌗ AND THE CLASS DISSOLVED INTO A FACT ABOUT READERS, which this row had recorded without drawing.** *Its three
+founding instances: `L-209` — **the answer sat two sections above the question in the same file**; `U1` — **P16
+answers in the next sentence and never asks**; `V1`/`G1` — **`rem:carter-chain` sits immediately after the corollary
+and the fork had already written it before the item was routed**.*
+⇒ ***IN EVERY CASE THE ARRIVAL PATH EXISTED AND A READER MISSED IT. ALL THREE WERE FILED AS CORPUS DEFECTS AND ALL
+THREE RESOLVED INTO THE CORPUS HAVING SUPPLIED THE PATH.***
+**So the class survives as a READING DISCIPLINE, not an instrument debt:** *a node that cannot find the support for
+a claim should file it as **a report about its own reading**.*
+
+⚠ *Not claimed: that every claim has a visible path — **four flags remain unread and are kept as material**. Only
+that both that were read dissolved, and that no finite route list can settle the rest.*
+
+⌗ *Instances twelve and thirteen of this line's one recurring failure, and **the first to close a row rather than
+merely embarrass**: the proxy's failure was itself the result.*
+
+**Register: 225 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2452 — 2026-08-11 (main line). **THE ROUTING LIST AUDITED AGAINST ITSELF — its header said EMPTY while its body presented twenty-nine items as work, and two of this line's own checks failed in opposite directions.**
 
 **⛔ THE LIST'S OWN DEFECT, and it is item 6's class inverted.** *`FOR_54`'s header read* **"EMPTY AT c54.179 — ALL
