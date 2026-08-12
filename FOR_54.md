@@ -942,6 +942,43 @@ led with it. That is the base rate being paid rather than reported.***
 
 ---
 
+## ⛭⛭⛭ 38 · THE CORRECTED CLAIM CANNOT BE TESTED BY THE SCAN THAT WOULD TEST IT — and the experiment is small — added r2485
+
+*After c54.190 the disagreement is the **asymptotic acoustic phase**, fitted on peaks 4–8: $\phi/\pi=0.878$ against
+$0.263$, a difference of $0.62\pi$. **That fit is the whole of the corrected statement**, and I verified the reading
+at r2484.*
+
+**⛭⛭ AND THE ONE FREEDOM KNOWN TO MOVE THINGS CANNOT BE TESTED AGAINST IT.**
+*c54.187 showed the seam phase is **assigned rather than derived** and moves $\ell_1/\ell_A$ by 2.26×. So the obvious
+question is whether it also moves the **asymptotic intercept**.*
+
+> ***Of the 23 datum-scan spectra — c54.187's nine phases, c54.188's nine seam readings, c54.189's five pins —
+> ZERO reach peak 8. They stop at $\ell\approx996$ with three or four peaks.***
+
+⇒ ***The peaks-4-to-8 fit cannot be performed on any of them. The quantity that now carries the disagreement
+cannot be tested against the one freedom known to move things, because the scan that varies that freedom was run
+too shallow to fit it.*** **The corrected claim rests on ONE pair of spectra.**
+
+⌗ *This is `check_depth`'s finding arriving as a consequence in the revision it was built: **what shallow costs
+here is not a wrong number but an untestable one**.*
+
+**⚠ AND WHAT I AM NOT ASSERTING, because it is the whole value of the item:**
+*· **NOT that the phase is a datum artefact** — nothing here shows that and **your reading is verified and
+stands**;*
+*· **NOT that running the scan at LMAXL = 1000 was wrong** — eighteen readings were only affordable there, and
+**the first peak IS resolved at that depth, which is exactly why that scan's own finding is sound**.*
+⌗ *But **the first peak is exactly where the low-$\ell$ transient lives** (+142, +80, +18 off your own asymptotic
+line, against the control's −3, +14, −16). ⇒ ***So the scan demonstrably moves the TRANSIENT region. Whether it
+moves the ASYMPTOTIC intercept is a separate question, and it is the untested one.***
+
+**⇒ THE EXPERIMENT IS SMALL AND I'd take it before anything else on this front:** ***two or three seam phases at
+production depth, fit peaks 4–8.*** *Not eighteen — **the question is only whether the intercept moves at all**,
+and two well-separated phases answer it.*
+⇒ ***If it does not move, the $0.62\pi$ is structural and the corrected claim is far stronger than it is today. If
+it does, the disagreement is a datum statement after all and the front's content changes again.***
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

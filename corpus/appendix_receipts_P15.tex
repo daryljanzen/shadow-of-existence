@@ -398,6 +398,11 @@
 \emph{Computes:} derives the intercept identity, fits both arms on peaks 4-8, reproduces the gap-by-gap series and the low-l transient (14 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- the adversarial check c54.190 requested
 \ \emph{Run:} \texttt{python3 receipts/L147\_two\_arm/B4\_the\_intercept\_is\_a\_phase\_and\_the\_control\_proves\_it.py}
+\item[\label{rcpt:B5_the_scan_cannot_test_the_asymptotic_phase}\texttt{B5\_the\_scan\_cannot\_test\_the\_asymptotic\_phase}]\hfill\textsf{[OK]}\\
+\textit{sec:coherence} \ (the corrected claims load-bearing quantity cannot be tested by the datum scan: all 23 scan spectra stop at three or four peaks and zero reach the peaks-4-to-8 fit). 
+\emph{Computes:} asserts the depth and peak count of every scan spectrum, that the production pair alone supports the fit, and where the transient sits (11 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- names a small affordable experiment
+\ \emph{Run:} \texttt{python3 receipts/L147\_two\_arm/B5\_the\_scan\_cannot\_test\_the\_asymptotic\_phase.py}
 \item[\label{rcpt:P03_acceleration_is_slice_curvature}\texttt{P03\_acceleration\_is\_slice\_curvature}]\hfill\textsf{[OK]}\\
 \textit{sec:curvature \ensuremath{\cdot} rem:twocritical \ensuremath{\cdot} the bend} \ (on ANY member of the energy family (E cancels: (dr/dtau)\textasciicircum{}2 = E\textasciicircum{}2 - f, and E is a constant of the motion) d\textasciicircum{}2r/dtau\textasciicircum{}2 = -f'/2 = r*K\_G identically, so THE SIGN OF THE SLICE'S GAUSSIAN CURVATURE IS THE SIGN OF THE COMOVING ACCELERATION -- and the flat locus is the deceleration-to-acceleration turnover, which on Nariai is the seam and in standard terms is rho\_m = 2 rho\_Lambda (csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2, the seam's phase). A recent cosmological epoch: 7.06 Gyr at H0=73, 7.65 at 67.4, preceding matter-Lambda equality [borrowed from P3 \ensuremath{\cdot} P7 \ensuremath{\cdot} P8]). 
 \emph{Computes:} the identity asserted; the K\_G zero solved and matched to (M alpha\textasciicircum{}2)\textasciicircum{}(1/3); csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2 proved by algebra after simplify() failed on the closed forms; epochs at both H0

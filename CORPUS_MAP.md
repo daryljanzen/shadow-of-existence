@@ -146,6 +146,43 @@ sources: [cowork, chat]
 
 
 
+### Revision r2485 — 2026-08-11 (main line). **THE CORRECTED CLAIM CANNOT BE TESTED BY THE SCAN THAT WOULD TEST IT — and the experiment that would is small.**
+
+**⌗⌗ AFTER c54.190 the disagreement is the ASYMPTOTIC ACOUSTIC PHASE**, *fitted on peaks 4–8:
+$\phi/\pi=0.878$ against $0.263$, a difference of $0.62\pi$. **That fit is the whole of the corrected statement**,
+and its reading was verified here at r2484.*
+
+**⛭⛭ AND THE ONE FREEDOM KNOWN TO MOVE THINGS CANNOT BE TESTED AGAINST IT.** *c54.187 showed the seam phase is
+**assigned rather than derived** and moves $\ell_1/\ell_A$ by 2.26×, so the obvious question is whether it also moves
+the asymptotic intercept.*
+⇒ ***Of the 23 datum-scan spectra, ZERO reach peak 8 — they stop at $\ell\approx996$ with three or four peaks. The
+peaks-4-to-8 fit cannot be performed on any of them.*** **The corrected claim rests on ONE pair of spectra.**
+⌗ *`check_depth`'s finding arriving as a consequence in the revision it was built: **what shallow costs here is not
+a wrong number but an untestable one**.*
+
+**⚠ AND THE TWO FAILURES ARE DISTINCT AND MUST NOT BE COLLAPSED, which is the entry:**
+*· **r2484's** — a quantity measured at an affordable depth and then **named as though it were the asymptotic
+one**. ***That is an error at the time it is made.***
+*· **r2485's** — a scan run at a depth that was **right for its own question** (the first peak IS resolved at
+LMAXL = 1000, which is why that scan's own finding is sound), whose data cannot answer the question that **later
+became load-bearing**. ***That is not an error at all. It is a cost that only appears when the front moves.***
+
+⇒ ⛭ ***THE RULE: when a front's load-bearing quantity CHANGES, re-ask what the existing data can still settle —
+because a body of runs is fit for the question it was built for and for no other, and nothing announces when that
+stops being the current question.***
+
+**⌗ AND THE USEFUL FORM IS THE EXPERIMENT RATHER THAN THE DEFICIENCY:** ***two or three seam phases at production
+depth, fit peaks 4–8. Not eighteen — the question is only whether the intercept moves AT ALL.***
+⇒ *If it does not move, **the $0.62\pi$ is structural and the corrected claim is far stronger than it is today**.
+If it does, **the disagreement is a datum statement after all** and the front's content changes again.* *Routed as
+item 38.*
+
+⚠ *Not asserted: that the phase is a datum artefact — **the fork's reading is verified and stands**. And noticed
+rather than claimed: **the first peak is exactly where the low-$\ell$ transient lives**, so the scan demonstrably
+moves the transient region; the asymptotic intercept is the untested one.*
+
+**Register: 237 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2484 — 2026-08-11 (main line). **c54.189–190 ABSORBED — the fork retracts its own last three revisions' headline, its phase reading is verified here, and the gate it could not name is BUILT.**
 
 **⚠⚠ THE RETRACTION, and this line carried the withdrawn figure.** *c54.187–189 all ran at LMAXL = 1000 so that
