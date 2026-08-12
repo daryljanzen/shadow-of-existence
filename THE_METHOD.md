@@ -96,6 +96,20 @@ it needs to know which vein it is inside and to file what it notices.*
 instrument leads will report progress every turn while every vein stands still.*** *`BOARD.md` shows the vein links
 so that is visible rather than comfortable.*
 
+**⌗ AND A VEIN'S DARK HALF IS GATED NOW, NOT JUST WARNED ABOUT — added r2538.**
+
+*`THE_METHOD` has said since r2505 that **a vein's DARK half is the highest-risk prose in the corpus**, because it
+is where a local negative gets silently globalised.* ⇒ ⛔ ***And at r2537 `PO-6`'s dark half still read "what selects
+among FIVE-component shears without assuming vacuum" — with BOTH halves withdrawn: c54.198 made the count TWO, and
+c54.199 showed Goldberg–Sachs governs the OPTICAL shear, not $\sigma^{TT}$ at all. Twenty-seven revisions, in the
+one document written to tell a node what is unknown.***
+
+**✔ `corpus/check_veins.py` fails the turn if a vein carries a withdrawn claim as live** *— against a table of
+retractions, each with the revision that made it, and forgiving a hit that the vein is **recording** rather than
+stating.*
+⇒ ***THE OBLIGATION: every withdrawal goes into that table in the revision that makes it. A retraction not written
+into the gate is one that lives only in prose — and prose is what the gate exists because of.***
+
 ---
 
 ## V·b · THE THIRD SOURCE OF LEADS: THE OUTSIDE LITERATURE — added r2515

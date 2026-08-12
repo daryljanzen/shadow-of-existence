@@ -146,6 +146,28 @@ sources: [cowork, chat]
 
 
 
+### Revision r2538 — 2026-08-11 (main line). **A VEIN WAS CARRYING A CLAIM ITS OWN LEADS RETRACTED — corrected, and gated.**
+
+**⛔ THE DEFECT.** *`PO-6`'s dark half read **"what selects among FIVE-component shears without assuming vacuum"** —
+and* ***both halves of that had been withdrawn: c54.198 (r2510) made the count TWO, the momentum constraint fixing
+$W$ under the York split; c54.199 (r2512) showed Goldberg–Sachs governs the OPTICAL shear of a null congruence, not
+$\sigma^{TT}$ at all.***
+⇒ ***Twenty-seven revisions, in the one document written to tell a node what is unknown — and `THE_METHOD` has said
+since r2505 that a vein's DARK half is the corpus's highest-risk prose.***
+
+**⌗ CORRECTED, and the correction is better posed than what it replaces:** *the two are the graviton polarizations,
+they carry the **geometry** rather than the foliation (c54.199), and `L-802` closes their stability for the
+small-data cell the construction needs.*
+
+**✔ AND GATED: `corpus/check_veins.py`**, *wired into `gates.yml` and seeded both ways. It checks every vein block
+against a table of **withdrawn claims, each with the revision that withdrew it**, and forgives a hit the vein is
+**recording** rather than stating live.*
+⇒ ***THE OBLIGATION IT CREATES: every withdrawal goes into that table in the revision that makes it. A retraction
+not written into the gate is one that lives only in prose — and prose is what the gate exists because of.***
+
+⌗ *The other three veins checked clean. Seven withdrawn claims in the table: the shear count (twice), the
+vacuum-bound attribution, the $0.62\pi$ phase, the 21% spacing, the 24% rate.*
+
 ### Revision r2537 — 2026-08-11 (main line). **cc54's `L-802` MERGED AND `L-245` CLOSED — the one thing handed up as a decision was settled by the corpus.**
 
 **⌗ cc54's GRID.** *The stability question closes cell by cell on **symmetry × data-size**: general/small-data
