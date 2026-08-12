@@ -570,6 +570,34 @@ perfectly.* *Node 55, `F04`.*
 
 ---
 
+## ⛭ 30 · A CONVENTION WORTH HAVING, OFFERED NOT IMPOSED — the receipt's `COMPUTES:` header — added r2447
+
+**The problem it would solve is `L-230`'s, and it is the one class no gate in the corpus can see.**
+*`F14` is its clearest instance: `P14_leaf_compactness` runs at $M=0.12\alpha$ and **its own header says so** —
+"on the concrete SdS of B-2 (M=0.12, alpha=1)" — while the sentence citing it reads* **"so the leaf is compact"**,
+*unqualified.* ⇒ ***A point result written as a family result.***
+
+**⌗ AND A BLIND RUN ESTABLISHED THAT NO INSTRUMENT CAN CATCH IT BY INSPECTION.** *This line adopted node 55's
+`scope_table`, sharpened it, and ran it across all seventeen papers.* **Every flag is in P15, and P14 shows
+nothing** *— because* ***`scope_table` measures DISAGREEMENT between receipts, and this defect's signature is
+AGREEMENT: every P14 receipt runs at 0.12, and the paper generalises.***
+⇒ ***An instrument that flags inconsistency cannot flag overreach. Inconsistency is many values where one is
+claimed; overreach is one value where many are claimed.***
+
+**⇒ SO THE ROUTE IS A CONVENTION, NOT A GATE — the same shape as `\rcpt{}`.** *A gate can check a **declaration**;
+it cannot read a sentence's quantifier, which is a judgement.* ⌗ **And the declaration already exists in your
+corpus, unevenly:** ***39 of 309 receipts carry a `COMPUTES:` header naming what they ran at.*** *Make it universal
+and the check becomes mechanical: **the receipt declares its member; a sentence quantifying past it is a mismatch a
+gate CAN see.***
+
+**Suggested, and offered at its true cost:** *a `COMPUTES:` line on every new receipt, and on old ones as they are
+touched — **not a sweep**. The payoff is not tidiness: it is that ***the one defect class the corpus has no
+instrument for becomes checkable***, and `F14` is the reason to want that.*
+⚠ ***This is a convention for YOUR layer and it is entirely your call. Routed, not imposed — and this line will not
+add `COMPUTES:` headers to your receipts.***
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

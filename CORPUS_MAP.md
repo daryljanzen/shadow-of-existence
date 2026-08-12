@@ -146,6 +146,41 @@ sources: [cowork, chat]
 
 
 
+### Revision r2447 — 2026-08-11 (main line). **A BLIND RUN ANSWERS `L-230`'s INSTRUMENT QUESTION IN THE NEGATIVE — inconsistency and overreach are opposite signatures, and no instrument sees both.**
+
+**⌗⌗ THE RUN.** *`scope_table`, sharpened at r2446, taken across all seventeen papers with no prior.* ⇒ ***Every flag
+is in P15. Not one in P01–P14, P16 or P17 — and P14 shows NOTHING, because after the string-literal fix its `M` has
+a single setting, 0.12.***
+
+**⚠⚠ SO THE TOOL CANNOT SEE `F14`, THE STRONGEST MEMBER OF THE CLASS IT WAS ADOPTED FOR — and the reason is
+structural rather than a tuning failure.** *`scope_table` measures **DISAGREEMENT between receipts**. `F14`'s defect
+is **AGREEMENT**: every P14 receipt runs at $M=0.12$, and **the paper generalises from that single value**.*
+⇒ ***INCONSISTENCY IS MANY VALUES WHERE ONE IS CLAIMED; OVERREACH IS ONE VALUE WHERE MANY ARE CLAIMED. An instrument
+tuned to the first is blind to the second by construction, and no sharpening crosses that.***
+
+**⌗ AND THE GENERAL FORM IS WORTH MORE THAN THE INSTANCE, so it is filed as a scrap:** ***before adopting an
+instrument for a class, ask what the class's SIGNATURE is in the data the instrument reads.*** *Here the class's
+signature was **uniformity**, and the tool was a **variance detector**. That was decidable before the adoption and
+was not asked.*
+
+**⌗ SO `L-230`'s CLASS HAS TWO HALVES, and the tool serves the one it was not adopted for.**
+*· **overreach** — signature *agreement* — ⛔ **no instrument, and `scope_table` structurally cannot**;*
+*· **inconsistency** — signature *disagreement* — ✔ `scope_table`, whose real yield is `F15`'s two parameter sets.*
+***That is receipt-layer CONSISTENCY, which is worth having and is a different thing from scope.***
+
+**⇒ AND THE ROUTE THAT REMAINS IS ONE THE CORPUS ALREADY INVENTED.** *Detecting overreach means comparing a
+receipt's scope against **the sentence's quantifier** — "the leaf is compact" against "at $M=0.12$" — which is
+reading a claim and therefore a **judgement**.* ⇒ **A gate can check a DECLARATION, not a judgement.**
+⌗ *And the declaration exists already, unevenly:* ***`COMPUTES:` headers, carried by 39 of 309 receipts*** *— and
+`P14_leaf_compactness`'s reads **"on the concrete SdS of B-2 (M=0.12, alpha=1)"**, which is exactly the scope its
+citing sentence drops.* **Make it universal and the check becomes mechanical.** *Routed as item 30, **offered not
+imposed** — the receipts are the fork's, and this line will not add headers to them.*
+
+⌗ ***Twice now the answer to "what instrument sees this?" has been "none — and the corpus already invented the
+convention that would."*** *The first was `\rcpt{}` against quotation-staleness (r2436); this is the second.*
+
+**Register: 224 rows. Gates: twenty-one, twenty rc=0. Two lints, and one of them now correctly named.**
+
 ### Revision r2446 — 2026-08-11 (main line). **`scope_table` SHARPENED — three parser defects, each a different reading of "what is a setting", and the finding got STRONGER at every fix.**
 
 **⌗⌗ THE THREE, and they are worth separating because they are three different mistakes.**
