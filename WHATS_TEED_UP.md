@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.194 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**8 open QUESTIONS · 5 open WORK rows · 1 HELD** *(225 struck of 239 registered).*
+**8 open QUESTIONS · 5 open WORK rows** *(226 struck of 239 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -27,14 +27,6 @@ sources: [cowork]
 | **`L-207`** | OPEN | REGISTERED r2383 — `OPEN_PROBLEMS_MAP`'s `A·1`, A FOLD MISS FOUND BY THE MAP'S OWN NEW STATUS BLOCK. Why the cut bends — a dynamics for the curve itself, matter's own evolution. The map's row reads "[ADVANCED, NOT resolved — r565 … the general matter dynamics … | `OPEN_PROBLEMS_MAP` A·1 · P8 §open | ⓵ DISCHARGED r2450 — exhibited, not merely asserted · ⓶ nothing until `PO-6` moves |
 | **`L-221`** | OPEN | REGISTERED r2378 by the observer line's `ARC 14` step-② fold — `PROTECTED_OPEN`'s `PO-5`, which had NO register row at all. The quark/lepton split, and what a baryon IS at the particle level — the five multiplets, and which carries the colour $\mathbf3$. A PRO… | `PROTECTED_OPEN` `PO-5` · `THE_PLAN` standing item ② | the question is now an OPERATOR question r2476: is there an operator on this structure whose kernel is the four colourless gradings? — and that is wha… |
 | **`L-217`** | — | REGISTERED r2412 — R-P STATION ⑥h: HOW DO CR AND THE HIGGS MECHANISM COMPLEMENT EACH OTHER, in coherence and in correspondence? Daryl's question, and it is a genuine gap in the entry-point front's own sense: the word "Higgs" appears NOWHERE in the corpus (chec… | `THE_PHYSICS_REACH` ⑥h · P13 · P14 · `L-212` · the one-constant theorem | the statement exists — `CR_AND_THE_HIGGS.md` §4 · what the row still owes is §5's onward list, and `F1` stays live: the relation breaks if the gauge g… |
-
-## ⏸ HELD BY DARYL — answered, not waiting
-
-*A held row is **not** open work nobody has got to. The call was made, and it was made **held**. **Do not re-raise it as a question** — that is a manufactured decision point arriving from the register side.*
-
-| lead | what it is | why it is held |
-|---|---|---|
-| **`L-206`** | REGISTERED r2380 by the record cut — the SECOND P3 upgrade, whose skeleton is built and whose reordering has not landed. Lead P3 with the physical object — one hinge, one door, one swing — and DERIVE … | move the hinge/door object AHEAD of the parameters it throws — every piece exists; the move is verified by `check_compile` and by the parameters no longer preceding their own source |
 
 ## ⌗ WORK — programmes with steps; the content lives in `CONSOLIDATE`
 

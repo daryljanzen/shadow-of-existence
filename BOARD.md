@@ -10,7 +10,7 @@ current: r2500+c54.194
 
 > ***Read `THE_METHOD.md` first.*** *The short form: **the VEINS are areas held open to be known inside and out — never crossed out. The LEADS are everything noticed that could inform one.** Work the top lead, gather what it turns up, re-order, repeat.*
 >
-> *14 live rows: **4 veins**, **10 leads**. 225 struck.*
+> *13 live rows: **4 veins**, **9 leads**. 226 struck.*
 
 # I · THE VEINS — held open, to be known inside and out
 
@@ -20,25 +20,25 @@ current: r2500+c54.194
 
 - **MAPPED** — the boundary condition closes **per fibre** and cannot be broken by the number of fibres; the clause `c54.129` answered was **the one the argument does not need**; the UV degree is **quartic**, the ordinary zero-point degree; compactness buys the **IR free**
 - ⛔ **DARK** — **defining the sum**; the closed-form nonlinear $\Lambda>0$ solution; and whether a theory with **one dimensionful constant** can regulate at all
-- *5 live lead(s) inform this vein*
+- *4 live lead(s) inform this vein*
 
 ## `L-175` · PO-9 · WHAT FIXES THE SUBSTRATE'S DIMENSION
 
 - **MAPPED** — the cut is four and **says nothing about the substrate**; a descent from $D>5$ must be **multi-step**; the construction is **single-step by design** and one-step-ness is governed by **Rule 2**, not taste
 - ⛔ **DARK** — **whether a second slicing could be non-arbitrary, its selection forced by the first** — and the substrate stays bounded **below only**
-- *4 live lead(s) inform this vein*
+- *3 live lead(s) inform this vein*
 
 ## `L-202` · p0 item 4 · WHAT THE SEAM CARRIES
 
 - **MAPPED** — the phase is the **antilinear face $K$**; reality admits **exactly two values**; $K$ acts trivially on the reality set while **$R$ exchanges the branches**; off-real, $K$ **swaps the two wings of the lap** and $R\circ K$ **closes charge conjugation**; $K$ **fixes the photon congruence**
 - ⛔ **DARK** — **whether a MASSIVE trajectory carries a phase** — the null ones are $K$'s fixed set
-- *3 live lead(s) inform this vein*
+- *2 live lead(s) inform this vein*
 
 ## `L-221` · PO-5 · WHAT MAY EXIST, AND WHY THESE
 
 - **MAPPED** — the split is **specified** (12 coloured / 3 colourless, 4 with $\nu_R$); the coloured three are the **index of a Dirac operator** and cross to fields **by being a kernel**; the colourless four are the $D_6$ representations trivial on the deck; the group acting is **$S_3$**
 - ⛔ **DARK** — **no operator whose kernel is the four** — and nothing yet says whether *kernel* is the only bridge from a grading to a field
-- *4 live lead(s) inform this vein*
+- *3 live lead(s) inform this vein*
 
 # II · THE LEADS — ordered by how grounded and how informative
 
@@ -46,18 +46,17 @@ current: r2500+c54.194
 
 | # | row | informs | grounded | informs-how-much | what |
 |---|---|---|---|---|---|
-| **1** | **`L-206`** | `L-175` `L-202` `L-221` `L-165` | 3/3 | 3/3 | **P3 derives $w$, $u$, $3w$ in §3 and does not introduce the door that throws them until §6** — the object arrives three sections after its own shadows. Every piece of the move is built |
-| **2** | **`L-174`** | `L-165` `L-175` | 3/3 | 3/3 | **exhibit the general matter dynamics BEYOND spherical symmetry.** P9 states it is ordinary GR at the wall; `L-207` exhibited it only in the spherically symmetric class |
-| **3** | **`L-204`** | `L-165` `L-175` | 3/3 | 2/3 | R-P stations ③④ — P8/P9, GR field equations and the exact-solution catalogue |
-| **4** | **`L-171`** | `L-202` | 2/3 | 3/3 | **PO-7** — whether the $0.62\pi$ acoustic-phase disagreement is real against the sky. Needs the **seam-phase scan at PRODUCTION depth** (`FOR_54` 38); the 34%-and-stops result was at LMAXL = 1000 |
-| **5** | **`L-210`** | `L-202` `L-221` `L-175` | 2/3 | 2/3 | the entry-point front — all 44 sites carry verdicts; **live leads are where a paper's own text points at an unexplored interior** |
-| **6** | **`L-217`** | `L-221` | 2/3 | 2/3 | the CR/Higgs relation is stated; **`F1` stays live — the relation breaks if the gauge group is ever promoted to forced** |
-| **7** | **`L-230`** | `L-165` `L-221` | 3/3 | 1/3 | the `COMPUTES:` convention — uptake **flat at 40 of 357** while the corpus grew a sixth; a receipt that declares what it computed is a receipt a vein can be excavated through |
-| **8** | **`L-207`** | `L-165` | 1/3 | 3/3 | ⓶ the confined/branch-point exhibition — **gated on PO-6 and must not be opened without it** (⓵ discharged r2450) |
-| **9** | **`L-218`** | *— instrument work* | 3/3 | 0/3 | ⓵ the reader-package formats via pandoc in CI |
-| **10** | **`L-228`** | *— instrument work* | 3/3 | 0/3 | `check_loci` extended to the possessive and compound-noun forms node 52 declined to claim |
+| **1** | **`L-174`** | `L-165` `L-175` | 3/3 | 3/3 | **exhibit the general matter dynamics BEYOND spherical symmetry.** P9 states it is ordinary GR at the wall; `L-207` exhibited it only in the spherically symmetric class |
+| **2** | **`L-204`** | `L-165` `L-175` | 3/3 | 2/3 | R-P stations ③④ — P8/P9, GR field equations and the exact-solution catalogue |
+| **3** | **`L-171`** | `L-202` | 2/3 | 3/3 | **PO-7** — whether the $0.62\pi$ acoustic-phase disagreement is real against the sky. Needs the **seam-phase scan at PRODUCTION depth** (`FOR_54` 38); the 34%-and-stops result was at LMAXL = 1000 |
+| **4** | **`L-210`** | `L-202` `L-221` `L-175` | 2/3 | 2/3 | the entry-point front — all 44 sites carry verdicts; **live leads are where a paper's own text points at an unexplored interior** |
+| **5** | **`L-217`** | `L-221` | 2/3 | 2/3 | the CR/Higgs relation is stated; **`F1` stays live — the relation breaks if the gauge group is ever promoted to forced** |
+| **6** | **`L-230`** | `L-165` `L-221` | 3/3 | 1/3 | the `COMPUTES:` convention — uptake **flat at 40 of 357** while the corpus grew a sixth; a receipt that declares what it computed is a receipt a vein can be excavated through |
+| **7** | **`L-207`** | `L-165` | 1/3 | 3/3 | ⓶ the confined/branch-point exhibition — **gated on PO-6 and must not be opened without it** (⓵ discharged r2450) |
+| **8** | **`L-218`** | *— instrument work* | 3/3 | 0/3 | ⓵ the reader-package formats via pandoc in CI |
+| **9** | **`L-228`** | *— instrument work* | 3/3 | 0/3 | `check_loci` extended to the possessive and compound-noun forms node 52 declined to claim |
 
-> ⛭⛭ **TAKE `L-206` NEXT** — *highest grounded×informative, and it informs 4 vein(s).*
+> ⛭⛭ **TAKE `L-174` NEXT** — *highest grounded×informative, and it informs 2 vein(s).*
 
 # III · THE ROUTED LIST (`FOR_54.md`) — leads handed to the working fork
 

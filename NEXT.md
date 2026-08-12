@@ -116,9 +116,8 @@ is**.*
 | **`L-204`** | r2483 | ✔ **the strike was made r2383 — this field was stale for 99 revisions, corrected r2483** · what remains is ***③④: P8/P9, GR field equations and the ex |
 | **`L-171`** | r2484 | P15 `sec:flatlcdm`; receipt `ROBUST_p1p2_scan`; `PO-7` |
 | **`L-230`** | r2490 | ⓵ **the instrument question is closed r2447** — no gate can read a quantifier · ⓶ the live route is **make `COMPUTES:` universal** (39 of 309 today),  |
-| **`L-206`** | r2498 | **move the hinge/door object AHEAD of the parameters it throws** — every piece exists; the move is verified by `check_compile` and by the parameters n |
 
-*14 live rows carry a stated next step; the 14 longest-unworked are shown.*
+*13 live rows carry a stated next step; the 13 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session

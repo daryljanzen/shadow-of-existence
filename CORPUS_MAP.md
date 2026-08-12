@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r2502 — 2026-08-11 (main line). **`L-206` STRUCK — the work landed at r2419 and the row went unread for eighty-two revisions, while this line ranked it the board's top lead.**
+
+**⌗⌗ P3's §1 `sec:ontology`, BEFORE the parameters, already contains the row's entire content:** ***"The construction
+has a single moving part. One slicing plane — a door — swings about one fixed line in the substrate, the hinge, and
+the whole family of cuts is the single arc of that swing. Every angle the paper computes is a shadow that one swing
+throws when it is charted: the sky angle $w$ … the throat angle $u$ … and the horizon angle $3w$ its triple-angle
+image. The paper is written object-first — the swinging door on its hinge is the thing, and $w$, $u$, and $3w$ are
+three projections of it, not three independent parameters that happen to be related."***
+⌗ *And it forward-references the derivation in the same breath — the three hinges $120°$ apart at $2\alpha$,
+**"where that distance is shown to be an OUTPUT of the construction rather than a stipulation"**.*
+⇒ ***The object leads. The parameters arrive as its shadows. The $2\alpha$ is flagged as derived, with a pointer.***
+
+**⛭⛭ AND THE MOVE THE ROW ASKED FOR WAS IMPOSSIBLE ANYWAY, which is the transferable part.** *`sec:hinge-geometry`
+is **31 KB** and depends on **five sections that come after `sec:params`** — `sec:cubic`, `sec:projection`,
+`sec:throat-angle`, `sec:charge`, `sec:tour`.*
+⇒ ***A PAPER CAN NAME ITS OBJECT EARLY AND CAN ONLY DERIVE IT LATE. Those are different requirements, and P3
+satisfies both — so "lead with the object" was never a section move.*** ⌗ **THE RULE:** *"leads with X" is a claim
+about **the reader's first encounter**, not about section order.* ***Check whether the object is INTRODUCED before it
+is used, not whether it is DERIVED before it is used*** *— a derivation depending on five later sections cannot
+precede them, and demanding it confuses exposition with dependency.*
+
+**⚠ AND TWO THINGS THIS LINE GOT WRONG WHILE RANKING IT FIRST AT 3/3 × 3/3 ACROSS FOUR VEINS:**
+*· **the physics** — it read $2/\sqrt3$ as the $2\alpha$ vantage; the abstract says it is **"forced as the unique
+value removing the residual harmonic"**, the triple-angle collapse;*
+*· **the provenance** — `git log -S` puts the object-first paragraph at **r2419, this line's own revision**. ⇒ ***So
+the row sat as the board's top lead eighty-two revisions after the line carrying it did the work.****
+⇒ ⛭ ***BEFORE WORKING A LEAD, READ THE TARGET AS IT STANDS. The corpus is ahead of its own register more often than
+behind it*** *— `L-217`, `L-204`, `L-203`'s station Ⓕ, and now this: **four in twenty revisions**.*
+
+⌗ *The board re-ordered itself on the strike: **`L-174` is now top** — the exhibition of the general matter dynamics
+beyond spherical symmetry, informing `L-165` and `L-175`.*
+
 ### Revision r2501 — 2026-08-11 (main line). **THE SPIN-UP NOW SPINS UP FOR THE METHOD — and the long arc is written down before it arrives.**
 
 **⌗⌗ THE README LEADS WITH IT.** *Every node's first screen now says what the programme is doing: **the veins held

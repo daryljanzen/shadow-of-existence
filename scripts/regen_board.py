@@ -57,9 +57,6 @@ LEADS = {
  'L-174': ("**exhibit the general matter dynamics BEYOND spherical symmetry.** P9 states it is ordinary GR at the "
    "wall; `L-207` exhibited it only in the spherically symmetric class",
    ['L-165','L-175'], 3, 3),
- 'L-206': ("**P3 derives $w$, $u$, $3w$ in \u00a73 and does not introduce the door that throws them until "
-   "\u00a76** \u2014 the object arrives three sections after its own shadows. Every piece of the move is built",
-   ['L-175','L-202','L-221','L-165'], 3, 3),
  'L-171': ("**PO-7** \u2014 whether the $0.62\\pi$ acoustic-phase disagreement is real against the sky. Needs the "
    "**seam-phase scan at PRODUCTION depth** (`FOR_54` 38); the 34%-and-stops result was at LMAXL = 1000",
    ['L-202'], 2, 3),
