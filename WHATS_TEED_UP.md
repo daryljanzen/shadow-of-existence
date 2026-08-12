@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.185 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**14 open QUESTIONS · 33 open WORK rows · 1 OBSERVED · 1 HELD** *(173 struck of 222 registered).*
+**13 open QUESTIONS · 33 open WORK rows · 1 OBSERVED · 1 HELD** *(174 struck of 222 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -31,7 +31,6 @@ sources: [cowork]
 | **`L-207`** | OPEN | REGISTERED r2383 — `OPEN_PROBLEMS_MAP`'s `A·1`, A FOLD MISS FOUND BY THE MAP'S OWN NEW STATUS BLOCK. Why the cut bends — a dynamics for the curve itself, matter's own evolution. The map's row reads "[ADVANCED, NOT resolved — r565 … the general matter dynamics … | `OPEN_PROBLEMS_MAP` A·1 · P8 §open | ⓵ RESTATED r2424 as an EXHIBITION debt: exhibit the general inhomogeneous case as ordinary leaf evolution — the corpus asserts it and does not display… |
 | **`L-213`** | OPEN | REGISTERED r2401 from `ENTRY_POINT_REGISTER` B18 — a frontier the colour-arc closures did NOT touch, and P13 insists on the distinction. Whether the Standard Model, read as an EXTERNAL constraint rather than derived from the bare geometry, motivates taking the… | `ENTRY_POINT_REGISTER` B18 · P13 §What stays open · `THE_BASE_RATE` | state what an external-constraint argument would have to supply, and measure it against the reference class before it is believed |
 | **`L-221`** | OPEN | REGISTERED r2378 by the observer line's `ARC 14` step-② fold — `PROTECTED_OPEN`'s `PO-5`, which had NO register row at all. The quark/lepton split, and what a baryon IS at the particle level — the five multiplets, and which carries the colour $\mathbf3$. A PRO… | `PROTECTED_OPEN` `PO-5` · `THE_PLAN` standing item ② | ask whether colour plus the branch-point placement already forces the split |
-| **`L-229`** | OPEN | REGISTERED r2440 — NODE 52's BOUNDED OBSERVATION, FILED AS MATERIAL AND NOT AS A VERDICT, in its own framing. Two numbers that should agree differ by 14%: the canon's $z_{\rm eq}=(1+z_{\rm onset})/2-1=3426$ implies $\Omega_r=0.3066/3427=8.947\times10^{-5}$, wh… | node 52 `N-08` · `PHYSICAL_VALUES_LEDGER` | the two receipt reads, before any reading is offered |
 | **`L-217`** | — | REGISTERED r2412 — R-P STATION ⑥h: HOW DO CR AND THE HIGGS MECHANISM COMPLEMENT EACH OTHER, in coherence and in correspondence? Daryl's question, and it is a genuine gap in the entry-point front's own sense: the word "Higgs" appears NOWHERE in the corpus (chec… | `THE_PHYSICS_REACH` ⑥h · P13 · P14 · `L-212` · the one-constant theorem | state the relation in one place: what CR supplies, what it takes as given, what it forbids itself from supplying, and where the two sectors' claims ac… |
 
 ## 👁 OBSERVED — measured here, being worked by the FORK

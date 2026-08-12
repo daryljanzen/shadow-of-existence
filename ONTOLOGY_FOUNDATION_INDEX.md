@@ -88,7 +88,7 @@ current: c54.19
 > | epoch | value | what it is |
 > |---|---|---|
 > | **$z_{\mathrm{onset}}$** | $\approx6.8\times10^{3}$, $T\approx1.6$ eV | **where the expanding-phase plasma begins**; the lower limit of $\rs=\int_{z_{\rm rec}}^{z_{\rm onset}}(c_s/H)\dd z$. ***The single FITTED parameter***, needed only because **the rate carries no radiation**. **Not a knob**: the radiation-free rate carries $H_0$ out of both $\rs$ and $D_M$, so **the same $z_{\rm onset}$ meets the scale at every $H_0$** |
-> | **$z_{\mathrm{eq}}$** | $3426$ | equality; ***consequence and check***, $=(1+z_{\rm onset})/2-1$ |
+> | **$z_{\mathrm{eq}}$** | $3398$ | equality; ***consequence and check***, $=(1+z_{\rm onset})/2-1$ — *corrected r2441 from $3426$, which was the **retired** $z_{\rm onset}=6850$; the current $6797$ gives $1+z_{\rm eq}=3399$, and `C7_equality_and_deficit` prints it* |
 > | **$z_{\mathrm{rec}}$** | $\approx1090$ | recombination |
 >
 > **⛔ $z_{\mathrm{bp}}$ — RETIRED r2289. It was WRONG, not loose.** *P15 called $6850$ "the branch-point

@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2441 — 2026-08-11 (main line). **`L-229` ANSWERED IN TWO RECEIPT READS — the 14% was not a discrepancy, and the reads found a propagation recorded as complete that three documents never received.**
+
+**⌗⌗ THE ANSWER, and node 52's own hedge was it.** *`C7_equality_and_deficit` **uses no $\Omega_r$ at all**:*
+**"the corpus's inherited datum: $\rho_r/\rho_m=2.0$ at the seam, $z_{\rm onset}=6797$. $\rho_r/\rho_m\sim(1+z)$, so
+equality is at $1+z_{\rm eq}=(1+z_{\rm onset})/2$."** ⇒ ***$z_{\rm eq}$ is derived by proportionality from the
+inherited ratio and never passes through a density parameter, so there is no $\Omega_r$ on this route to disagree
+with the instrument's.*** *The comparison was between a quantity the corpus computes and one it does not use here.*
+⌗ *And that is precisely what the finder wrote while declining to assert it —* **"the datum being INHERITED, read off
+the observed radiation rather than recomputed in CR's $h$"** *— which is why the item was registered as **material,
+not a verdict**, and why two reads settled it.*
+
+**⛭⛭ AND THE READS FOUND SOMETHING ONE LAYER UNDER IT, which is the revision's actual content.** *The receipt prints
+$1+z_{\rm eq}=3399$; **three live sites still carried 3426**.* ⇒ ***Same formula, different $z_{\rm onset}$: 3426 is
+the RETIRED 6850's value, 3399 the current 6797's.***
+⚠ **AND `FORK_c54` RECORDS THE PROPAGATION AS MADE** — *"$1+z_{\rm eq}=3426\to3399$ (**forced**: it is
+$(1+z_{\rm onset}+1)/2$)"* — **while `ONTOLOGY_FOUNDATION_INDEX` and `PHASE7_BUILD_LEDGER` (twice) never got it.**
+⇒ ***The r1491 family again, and in its sharpest form: the correction was made, the record says so, and two
+documents did not receive it — one of them the CARD A NODE READS TO LEARN WHAT THE CORPUS'S NUMBERS ARE.***
+*All three corrected, each carrying the reason. The `CORPUS_MAP` and `FORK_c54` hits are **dated changelog entries
+recording the change** and correctly left alone.*
+
+⌗ **The shape worth keeping:** *a finding registered honestly as "not a verdict" cost two reads, **dissolved on its
+own terms**, and paid for itself by exposing a stale figure in an ontology card that no gate watches.*
+***A bounded observation filed at its true weight is cheaper to resolve than a claim, and can be worth more.***
+
+**Register: 222 rows, 174 struck. Gates: twenty-one, nineteen rc=0** *(`check_currency` measurable; `check_grains`
+red by decision, `L-227`).*
+
 ### Revision r2440 — 2026-08-11 (main line). **CI HAD BEEN RED FOR TWELVE REVISIONS AND FIFTEEN GATES NEVER RAN — this line's defect, found by node 53 on a pristine clone.**
 
 **⛔⛔ THE OUTAGE, AND ITS CAUSE IS r2427's OWN REPAIR.** *That revision restored twenty-eight top-level files the

@@ -6583,7 +6583,7 @@ $\rs=\int_{z_{\rm rec}}^{z_{\rm onset}}(c_s/H)\dd z$. *It exists as a parameter 
 radiation absent**, so the integral does not converge from below as it does in a radiation-driven expansion —
 *"the standard radiation-governed $\rs$ is recovered only in the limit $z_{\mathrm{onset}}\to\infty$."* **The
 one fitted parameter, fitted to the acoustic angle at the directly measured $H_0$, landing at
-$\rho_r/\rho_m\approx2$** — and *equality at $1+z_{\rm eq}=3426$ is then a **consequence and a check**, not an
+$\rho_r/\rho_m\approx2$** — and *equality at $1+z_{\rm eq}=3399$ *(corrected r2441 from $3426$, the retired $z_{\rm onset}=6850$'s value)* is then a **consequence and a check**, not an
 input.*
 **⛔ AND THE ERROR INVERTED A PHYSICAL STATEMENT, which is why "loose" was the wrong word for it.**
 $$\textbf{Sub-horizon at onset; super-horizon at the crossing.}$$
@@ -6611,7 +6611,7 @@ values we've been touting&hellip; **that shouldn't have required a dig**." ***He
   *"This is exactly where the standard rate parts": carrying radiation ties $\theta_*$ to $H_0$, **which is the
   coupling that makes the tension**.*
 - ***Consequences, not inputs***: $\rho_r/\rho_m\approx2$ is **where the fit lands, not what it targeted**;
-  $1+z_{\rm eq}=3426$ and the envelope turnover are **consequences and checks**.
+  $1+z_{\rm eq}=3399$ and the envelope turnover are **consequences and checks**.
 - ***What it is not***: **the branch point**, which carries no finite redshift; and **there is no second locus
   on the lap between $r=0$ and the front seam**.
 - ***Relation to the second datum***: $\eta$ fixes abundances and peak **heights**, $z_{\rm onset}$ the
