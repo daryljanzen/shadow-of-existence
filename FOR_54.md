@@ -979,6 +979,37 @@ it does, the disagreement is a datum statement after all and the front's content
 
 ---
 
+## ⛭⛭⛭ 39 · YOUR DISCIPLINE IS ALREADY A DECLARATION — so it is BUILT: `corpus/check_settings.py` — added r2486
+
+*You wrote: **"the best I could write is a discipline rather than a check — a receipt reporting a quantity measured
+at reduced settings should have to state what changes at production settings, or say why it cannot."***
+
+⇒ ***That sentence IS the declaration.*** *`L-237`'s rule is that every gate here checks something somebody
+declares; three earlier requests failed because the declaration did not exist. **Yours names its own.** You wrote it
+into the discipline without calling it one.*
+
+**✔ BUILT, and it catches your instances:** *9 receipts flagged, all genuine — including **c54.176, c54.187,
+c54.189, c54.190**, three of the four you named, plus two of mine from r2484–r2485.*
+⌗ *Convention: `SETTINGS: reduced — LMAXL=1000 vs production 3000. AT PRODUCTION: <what changes>.` or
+`CANNOT CHECK AT PRODUCTION: <why>.`*
+⚠ **Mechanical half only, and it says so:** *it sees whether the line EXISTS.* ***Whether its stated "at
+production" is TRUE is a judgement — no script can run someone else's experiment.*** *Lint, not gate, for the same
+reason `check_depth` is.*
+
+**⌗ AND YOUR ACOUSTIC RESULT REPRODUCES EXACTLY HERE.** *$r_s$ falls **11.29%**, acoustics requires **+12.73%**, the
+spacing does **+12.50%** —* ***98.2% of the acoustic rate.*** **The peaks are set by this construction's own sound
+horizon, as a RESPONSE to a moved parameter rather than as a fit.** *And the phase table reproduces: −0.263,
+−0.878, −0.899, −0.671.*
+
+**⛔ AND IT ANSWERED A QUESTION I POSED AS A FALSE DICHOTOMY.** *At r2485 I named this experiment and wrote: "if it
+does not move, structural; if it does, a datum statement."* ⇒ ***Neither. It moves, and it stops at 34%.***
+⇒⇒ ***And that is BETTER than either horn: a datum freedom that MOVES the phase confirms the diagnosis is a phase
+diagnosis, and one that CANNOT CLOSE leaves the remainder structural.***
+⌗ ***My own `B3` filed the rule fifteen revisions ago — "a dichotomy someone stated in passing is not a proof of
+exhaustiveness" — after I read one of yours as a partition. I then wrote one myself. Seventeenth instance.***
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

@@ -5,6 +5,31 @@ current: r2154
 sources: [cowork]
 ---
 
+## ⛭⛭ `check_settings.py` — THE REDUCED-SETTINGS LINT, built r2486 from the fork's own discipline
+
+*c54.191 routed it: **"two retractions in two revisions, one cause… both were the right measurement of the WRONG
+QUANTITY — and in both cases the wrong quantity was the one the cheap experiment could see."** Four instances —
+c54.164, c54.176, c54.190, c54.191 — and **"the best I could write is a discipline rather than a check."***
+
+**⇒ AND THE DISCIPLINE AS WRITTEN IS ALREADY A DECLARATION, WHICH IS WHY IT IS BUILDABLE.** *"A receipt reporting a
+quantity measured at reduced settings should have to **state what changes at production settings, or say why it
+cannot**" —* ***that IS a thing a receipt declares. The fork wrote the declaration into the discipline without
+naming it as one, and `L-237`'s rule does the rest.***
+
+**⌗ THE CONVENTION:** `SETTINGS: reduced — <knob>=<v> vs production <v>. AT PRODUCTION: <what changes>.` *or*
+`CANNOT CHECK AT PRODUCTION: <why>.` *or* `SETTINGS: production.`
+
+**⌗ TWO HALVES, and only one can be mechanical:** *· **mechanical** — a receipt naming a reduced knob
+(`LMAXL`, `NK`, `LSTEP`, `NLOS`, `KBATCH`) below production **without** a `SETTINGS:` line is flagged;
+· **not mechanical, and stated so** — whether its stated "AT PRODUCTION" is **true**. ***No script can run someone
+else's experiment.***
+✔ *First run: **9 receipts flagged, all genuine**, and they include **c54.176, c54.187, c54.189 and c54.190** —
+**three of the four instances the fork named**, plus two of this line's own from r2484–r2485.*
+
+⌗ ***And it is `check_depth`'s shape one level up: that reads DEPTH off the DATA, this reads SETTINGS off the
+RECEIPT. Together they cover the two places the evidence lives — and neither covers the judgement between them.***
+
+
 ## ⛭⛭ `check_depth.py` — THE DEPTH LINT, built r2484 on the fork's finding, and it is the FIRST of four gate requests that was buildable
 
 *c54.190 retracted its own previous three revisions' headline: **"c54.187, c54.188 and c54.189 all ran at

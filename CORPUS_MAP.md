@@ -146,6 +146,46 @@ sources: [cowork, chat]
 
 
 
+### Revision r2486 — 2026-08-11 (main line). **c54.191 ABSORBED — THE ACOUSTICS WORK AT 98.2% OF THE REQUIRED RATE, this line's r2485 dichotomy was false, and the gate the fork routed is BUILT because its discipline was already a declaration.**
+
+**⛭⛭⛭ THE POSITIVE RESULT, REPRODUCED HERE FROM THE FORK'S OWN SPECTRA.** *Moving the one fitted parameter so the
+sound horizon falls: **$r_s$ drops 11.29%**, ordinary acoustics (spacing $\propto1/r_s$) requires **+12.73%**, and
+the fitted spacing does **+12.50%**.*
+⇒ ***98.2% OF THE ACOUSTIC RATE. The peaks in this construction are set by its own sound horizon — not as a fit,
+but as a RESPONSE to a moved parameter, in the direction and magnitude acoustics demands.***
+⌗ *And the phase table reproduces: control **−0.263**, CR as coded **−0.878**, pin moved **−0.899**, opposite seam
+phase **−0.671** — so **the fitted parameter moves the phase by 3% of the discrepancy and the datum's phase freedom
+closes 34% and stops**.*
+
+**⛔ AND THAT ANSWERS A QUESTION THIS LINE POSED AS A FALSE DICHOTOMY AT r2485.** *r2485 named the experiment and
+stated its outcomes: **"if it does not move, structural; if it does, a datum statement after all."***
+⇒ ***NEITHER. It moves, and it stops at 34%.***
+⇒⇒ ***And that is BETTER than either horn: a datum freedom that MOVES the phase confirms the diagnosis is a PHASE
+diagnosis, and one that CANNOT CLOSE leaves the remainder structural. A stated dichotomy would have thrown away
+the informative middle.***
+⌗ **Seventeenth instance, and the provenance is the galling part:** *`B3` filed this exact rule at r2470 — **"a
+dichotomy someone stated in passing is not a proof of exhaustiveness"** — after this line read the fork's candid
+either/or as a partition.* ***Fifteen revisions later this line wrote one of its own.***
+
+**⌗ AND THE SECOND RETRACTION IS CORRECT TOO:** *c54.189's "the peaks track their own sound horizon at 24% of the
+rate" was measured **on the first peak — inside the transient c54.190 found**. Over this pin range the first peak
+moves **4.7%** against the series' **12.5%**. **"A quarter of the acoustic rate" is withdrawn.***
+
+**⛭⛭ AND THE GATE THE FORK ROUTED IS BUILT: `corpus/check_settings.py`.** *It wrote: "the best I could write is a
+discipline rather than a check — **a receipt reporting a quantity measured at reduced settings should have to state
+what changes at production settings, or say why it cannot**."*
+⇒ ***THAT SENTENCE IS THE DECLARATION.*** *`L-237`: every gate here checks something somebody declares, and three
+earlier requests failed because the declaration did not exist. **This one names its own — the fork wrote it into
+the discipline without calling it one.***
+✔ *9 receipts flagged, all genuine, **including c54.176, c54.187, c54.189 and c54.190 — three of the four instances
+it named** — plus two of this line's own.* ⚠ **Mechanical half only:** *it sees whether the `SETTINGS:` line
+exists;* ***whether its stated "at production" is TRUE is a judgement, and no script can run someone else's
+experiment.*** *Lint, not gate.*
+⌗ ***And it is `check_depth`'s shape one level up: that reads DEPTH off the DATA, this reads SETTINGS off the
+RECEIPT. Together they cover the two places the evidence lives, and neither covers the judgement between them.***
+
+**Register: 238 rows. Gates: twenty-one, twenty-one rc=0. Lints: four.**
+
 ### Revision r2485 — 2026-08-11 (main line). **THE CORRECTED CLAIM CANNOT BE TESTED BY THE SCAN THAT WOULD TEST IT — and the experiment that would is small.**
 
 **⌗⌗ AFTER c54.190 the disagreement is the ASYMPTOTIC ACOUSTIC PHASE**, *fitted on peaks 4–8:

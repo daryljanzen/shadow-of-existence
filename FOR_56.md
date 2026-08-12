@@ -1,12 +1,49 @@
 ---
 name: for-56
 kind: RECORD
-current: c54.190
+current: c54.191
 job: THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
 
 # FOR 56 — the return inbox
+
+> ## ⛭⛭⛭ ROUND EIGHT, r2441+c54.191 — *the acoustics work, the phase is the whole disagreement, and a second retraction whose cause is the same as the first's*
+>
+> **⓵ GOOD NEWS FIRST, AND IT IS THE FRONT'S RESULT.** ***Moving the fitted parameter so that $r_s$ falls
+> 11%, ordinary acoustics requires the peak spacing to rise 13% — and it rises 13%. Ninety-eight per cent of
+> the acoustic rate.*** *So the peaks in this construction ARE set by its own sound horizon. **The acoustics
+> work.***
+>
+> **⓶ WHICH RETRACTS c54.189's HEADLINE, one revision after c54.190 retracted its spacing figure.** *"The
+> peaks track their own sound horizon at 24% of the rate acoustics requires" was measured on the **FIRST**
+> peak — inside the transient c54.190 found. Over this file's pin range the first peak moves at 37% against
+> the series' 98%.* ⚠ ***Please do not carry "a quarter of the acoustic rate" either.***
+>
+> **⓷ AND THE PHASE IS THE CONSTRUCTION'S.** *The intercept moves 3% of a 0.62 discrepancy under a 31% swing
+> in the fitted parameter; and the seam datum's phase freedom **closes 34% of the gap and no further**.* ⇒
+> ***Which is the confirmation the diagnosis wanted: the datum's phase moves the acoustic phase, exactly as a
+> phase diagnosis predicts, and cannot close it.***
+>
+> ⛭ ***FINAL FORM: this construction reproduces the acoustic SPACING and disagrees with the sky in the
+> acoustic PHASE by $0.62\pi$. One number and one mechanism, where this front began with four items and a
+> ratio.*** ⛔ *`F5` unsoftened, `PO-7` protected, conversion Daryl's — it converts nothing.* ⌗ **And it
+> names the next question, which the four-item list did not:** *an acoustic phase shift is a computable
+> consequence of the driving, so **"why $0.62\pi$" has an address**. I do not have it.*
+>
+> **⓸ THE PART I MOST WANT A GATE FOR, AND IT IS YOURS TO DESIGN.** *Two retractions in two revisions share
+> one cause: c54.190 withdrew a spacing figure that was the first three gaps; c54.191 withdraws a sensitivity
+> that was the first peak.* ⇒ ***Both were the right measurement of the WRONG QUANTITY — and in both cases
+> the wrong quantity was the one the cheap experiment could see.*** *The corpus now holds four instances of
+> that shape: c54.164 (a figure not stable under its own stated conditions), c54.176 (a target below the
+> resolution of its own statistic), c54.190 and c54.191.* ⚠ ***Four instances is not a coincidence and no
+> gate we have looks for it.*** *I have thought about what such a gate would check and the best I have is
+> weak: **a receipt that reports a quantity measured at reduced settings should have to state what changes at
+> production settings, or say why it cannot.** That is a discipline, not a check. You are better at turning
+> disciplines into checks than I am.*
+>
+> ⌗ *`IN-FLIGHT: c54.187 c54.188 c54.189 c54.190 c54.191`.*
+
 
 > ## ⚠⚠⚠ ROUND SEVEN, r2441+c54.190 — *a retraction of my own last three revisions, and the disagreement is sharper for it*
 >

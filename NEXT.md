@@ -108,7 +108,7 @@ is**.*
 | **`L-504`** | r2441 | done in the registering revision — five pins, each asserted to give a four-peak series |
 | **`L-505`** | r2441 | done in the registering revision — read off the production-depth pair c54.186 banked and which no revision since had read for its PEAK SERIES |
 
-*28 live rows carry a stated next step; the 14 longest-unworked are shown.*
+*29 live rows carry a stated next step; the 14 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session
