@@ -1,10 +1,27 @@
 ---
 name: the-physics-reach
 kind: STATE
-current: r2522+c54.201
-job: The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521 (the Unruh treatment is a BIG OWE, routed as item 47); ⑥ WALKED r2522 (a one-clause fix, item 48); ⑦ onward are owed per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home.
+current: r2527+c54.202
+job: The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521, OWE DISCHARGED r2527+c54.202 (two companions remain); ⑥ WALKED r2522 (a one-clause fix, item 48); ⑦ onward are owed per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home.
 sources: [cowork]
 ---
+
+## ✔✔ STATION ⑤'s OWE IS DISCHARGED r2527 — and the answer was a sorting, not a number
+
+*54 wrote the treatment. **The distinctive content is the sorting:*** *Rindler and the substrate cosmological
+horizon are **complete, observer-dependent and thermal**; eternal Schwarzschild is **complete, not
+observer-dependent, thermal**; astrophysical collapse is **not complete** and the flux is **denied**.*
+⇒ ***Completion sorts all four. Observer-dependence sorts the first two wrongly.*** *Rindler is the row where the
+criteria come apart — **with no gravity anywhere in it, which is why its absence mattered**.*
+
+**⛭ AND TWO THINGS BEYOND CONSISTENCY, both verified here:** *· $T(a)=\sqrt{H^2+a^2}/2\pi$ with $H=1/\alpha$ has
+rest term **exactly the $\kappa=1/\alpha$ P1 already places a Hartle–Hawking state at**, and **no adjustable
+parameter**; · and **$\kappa=0$ identically at the Nariai member a collapse reaches**.*
+⇒ ***The flux is absent twice over, for independent reasons.***
+
+⌗ ⚠ *Still owed from this station: **$\langle T_{\mu\nu}\rangle$ and trans-Planckian, both at zero uses**. One
+companion of three.*
+
 
 ## ⛭⛭ STATION ⑥ WALKED r2522 — a one-clause fix, and the contrast with ⑤ is the finding
 

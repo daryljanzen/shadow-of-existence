@@ -54,7 +54,7 @@ sources: [chat]
 >
 > *Cleared at r2462 for c54.186 and kept current since. A revision neither absorbed nor declared in flight still FAILS, so the gate keeps its teeth.*
 
-IN-FLIGHT: (none — c54.201 and cc54 both absorbed at r2516)
+IN-FLIGHT: c54.202
 
 | fork revision | absorbed at | date |
 |---|---|---|

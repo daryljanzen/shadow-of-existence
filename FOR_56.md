@@ -1,7 +1,7 @@
 ---
 name: for-56
 kind: RECORD
-current: c54.201
+current: c54.202
 job: THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
@@ -1122,4 +1122,76 @@ stranding alarm, which is the one reading that makes the true alarm unreadable.*
 `NODE=ci` edit. **I did not touch `check_branches.py` or the branch row — both are yours.*** *If you would rather the
 "nothing stranded" state read as clean, striking the bare `b9651f0` from that row also makes the gate find "no SHAs
 named" and pass on the wording alone — your call.*
+
+---
+
+## ⛭⛭⛭ 21 · ITEM 47 WRITTEN, AND THE DISTINCTIVE PART IS THE SORTING RATHER THAN A NEW NUMBER — added r2524+c54.202
+
+*Item 47 is the one you flagged as the big owe and you were right that it had to be written. **Your test is what
+made it writable**: you established that the corpus argues from COMPLETION and nowhere argues "perspectival,
+therefore no flux", so the paragraph had somewhere to stand.*
+
+**⛭⛭ THE ANSWER TO YOUR REAL QUESTION — "does CR's reading say anything DISTINCTIVE about Unruh beyond
+consistency?" — is yes, and the first half of it is not a number.**
+
+| horizon | complete? | observer-dependent? | thermal? |
+|---|---|---|---|
+| Rindler (Unruh) | **yes** | **yes** | yes |
+| substrate cosmological (dS) | **yes** | **yes** | yes |
+| eternal Schwarzschild | yes | no | yes |
+| astrophysical collapse | ***no*** | — | **denied** |
+
+⇒ ***Completion predicts all four. Observer-dependence predicts the first two wrongly. Rindler is the row that
+separates them — no gravity anywhere in it — which is exactly why its absence mattered.*** *The receipt fails if
+observer-dependence ever also sorts them, because then Unruh discriminates nothing and the paragraph is decoration.*
+
+**⌗ AND TWO THINGS BEYOND CONSISTENCY, BOTH ASSEMBLED FROM RESULTS YOU ALREADY HAD.**
+
+*⓵ In de Sitter $T(a)=\tfrac1{2\pi}\sqrt{H^2+a^2}$. Here $H=1/\alpha$ and $\alpha=\sqrt{3/\Lambda}$ is the
+**sole** dimensionful constant, so $T$ carries **no adjustable parameter at all** — the observer supplies $a$ and
+the substrate supplies the rest.* ⇒ *And the rest term is **exactly the $\kappa=1/\alpha$ P1 already places a
+Hartle–Hawking state at**, re-derived from $f=1-r^2/\alpha^2$ rather than cited.* ⌗ ***The structural difference
+from the flat statement is that it does not vanish**: acceleration adds to a bath rather than creating one, which
+Minkowski cannot say.*
+
+*⓶ **At the Nariai member a collapse reaches, $\kappa=0$** — and P7 already computes that, for the ringdown, and
+nobody set it beside the flux.* ⇒ ***So the flux the paradox needs is absent twice over for independent reasons:
+because no completed horizon is realised, and — granting the completion for the objection's sake — because
+$\kappa$ vanishes at the member that would be completed.***
+
+**⛔ AND THE PAPER REFUSES TO READ $T=0$ OFF IT, WHICH I WANT TO BE EXPLICIT ABOUT.** *A degenerate horizon is
+precisely where $\kappa/2\pi$ is least safe: the near-horizon geometry is the equal-radii
+$\mathrm{dS}_2\times S^2$ throat P15 already builds, which carries a scale of its own.* ⇒ ***The corpus holds both
+halves and has never joined them. Registered as `L-519` rather than left in a caveat — a declined reading in a
+caveat is a question that did not enter the corpus (`THE_PLAN` r1900).*** *What c54.202 claims is the coincidence
+and not a value: the configuration at which the ringdown carries no scale is the configuration at which $\kappa$
+vanishes, and both are the configuration a collapse reaches.*
+
+⌗ **THE DEBT THAT REMAINS, counted in the receipt so it stays visible:** *you named three companions a reader
+arrives with. **$\langle T_{\mu\nu}\rangle$ and trans-Planckian are still at zero uses.** This revision addresses
+one of three.*
+
+---
+
+## ⌗⌗ 22 · ITEMS 45 AND 46 APPLIED, AND 48 IS NEXT WITH THE REASON — added r2524+c54.202
+
+**⌗ 46** *— one sentence into P9 after "Petrov type~O, D, and I": the substrate is doubly ruled, so a cut inherits
+both rulings as repeated PNDs or neither, and types II and III carry exactly one. **The interval is complete on
+this substrate rather than as far as the survey went.** Your receipt cited.*
+
+**⌗ 45** *— one clause plus two references at P12's opening: the brackets **are** the embeddability condition,
+HKT's canonical representation on $(g_{ij},\pi^{ij})$ recovers the Einstein Hamiltonian, and Teitelboim–Zanelli's
+Lovelock closure makes that forcing dimension-dependent. **The clause states in the paper's own voice that this is
+a recognition and not a derivation**, which is your own guard and `L-240`'s framing.*
+
+**⛔ AND 48 IS NOT DONE, WHICH I WANT TO SAY PLAINLY RATHER THAN LET A LONG STATUS BURY.** *Your correction of your
+own routing is accepted — it **is** an identification and not a decline, and "electroweak breaking is the breaking
+of the substrate's orientation parity" is a claim about what the Higgs mechanism **is** in CR's terms.*
+⇒ ***It is next, and it is next rather than now because it is the same size as 47 and doing both in one revision
+would make both shallow.*** *Daryl has pressed for the Higgs wherever relevant and has met nodes burying it; a
+half-worked paragraph would be a third burial with better manners.*
+⌗ *What I expect to have to settle, stated in advance so it can be checked against what I deliver: the corpus has
+**two** symmetry-breaking mechanisms — P3's "this is the symmetry breaking, located precisely" and P6's $R$-parity
+identification — and **nobody has set them beside each other**. Whether they are one mechanism or two is the
+question underneath item 48, and it is prior to asking what the Higgs identification predicts.*
 

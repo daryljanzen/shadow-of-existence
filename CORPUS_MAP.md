@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r2527 — 2026-08-11 (main line). **c54.202 MERGED — item 47 came back WRITTEN, and the second half is a result this line would not have found.**
+
+**⌗ THE DISTINCTIVE CONTENT IS A SORTING, NOT A NUMBER.** *Rindler and the substrate cosmological horizon:
+**complete, observer-dependent, thermal**. Eternal Schwarzschild: **complete, not observer-dependent, thermal**.
+Astrophysical collapse: **not complete**, flux **denied**.*
+⇒ ***COMPLETION sorts all four; OBSERVER-DEPENDENCE sorts the first two wrongly. Rindler is the row where the two
+candidate criteria come apart — and it has no gravity anywhere in it, which is exactly why its absence mattered.***
+⌗ *And it is **falsifiable on its own terms**: the receipt fails if observer-dependence ever also sorts them.*
+
+**⛭ ⓵ VERIFIED HERE:** *$f=1-r^2/\alpha^2\Rightarrow r_h=\alpha$, $\kappa=1/\alpha$; and
+$T(a)=\sqrt{H^2+a^2}/2\pi$ with $H=1/\alpha$ gives **exactly $\kappa/2\pi$ as $a\to0$** and **the flat Unruh law
+as $a\to\infty$**.* ⇒ ***No adjustable parameter — and it does not vanish: acceleration ADDS to a bath rather than
+creating one, which the flat statement cannot say.***
+
+**⛭⛭ ⓶ AND THE ONE THIS LINE WOULD NOT HAVE FOUND:** *at $M=\alpha/3\sqrt3$ the double root sits at
+$r=\alpha/\sqrt3$ and* ***$\kappa=0$ IDENTICALLY.***
+⇒⇒ ***So the flux the paradox needs is absent TWICE OVER, for INDEPENDENT reasons.*** *P7 computes that $\kappa$
+for the ringdown and **nobody had set it beside the flux**.*
+
+**⌗⌗ AND `L-519` IS THE BEST JUDGEMENT IN THE DROP.** *Having every reason to read $T=0$ off the degenerate horizon
+— it would have strengthened its own argument — the fork **refused**, because $\kappa/2\pi$ is least safe exactly
+there: the near-horizon geometry is P15's own equal-radii $\mathrm{dS}_2\times S^2$ throat **with a scale of its
+own**. And it registered the refusal as a **ROW**, on the ground that* ***"a declined reading in a caveat is a
+question that didn't enter the corpus."***
+⇒ ***That is `L-237`'s declaration-not-containment rule applied to a NON-CLAIM — a caveat is contained, a row is
+declared, and only the declared can be gated or worked.***
+
+⌗ *And the other half of good refusal in the same drop: **item 48 was not attempted and said so plainly** —
+"a half-worked paragraph would be a third burial with better manners" — **with its prior question stated in advance
+so it can be checked against delivery**: are P3's symmetry breaking and P6's $R$-parity identification one mechanism
+or two?*
+⚠ *The debt stays visible: **$\langle T_{\mu\nu}\rangle$ and trans-Planckian remain at ZERO uses**, counted inside
+the fork's own receipt. **One companion of three.***
+
 ### Revision r2526 — 2026-08-11 (main line). **THE DIRECTION HAS AN EXACT OBSTRUCTION — an $R$-odd operator has no graded index, and PO-5's question inverts.**
 
 **⌗ WHY THE COLOURED THREE ARE FIELDS, in the algebra.** *$\{\gamma^\mu,\gamma^5\}=0$ for every $\mu$ — verified
