@@ -10,7 +10,7 @@ current: r2500+c54.194
 
 > ***Read `THE_METHOD.md` first.*** *The short form: **the VEINS are areas held open to be known inside and out — never crossed out. The LEADS are everything noticed that could inform one.** Work the top lead, gather what it turns up, re-order, repeat.*
 >
-> *26 live rows: **4 veins**, **21 leads**. 228 struck.*
+> *29 live rows: **4 veins**, **24 leads**. 228 struck.*
 
 # I · THE VEINS — held open, to be known inside and out
 
@@ -20,13 +20,13 @@ current: r2500+c54.194
 
 - **MAPPED** — the boundary condition closes **per fibre** and cannot be broken by the number of fibres; the clause `c54.129` answered was **the one the argument does not need**; the UV degree is **quartic**, the ordinary zero-point degree; compactness buys the **IR free**
 - ⛔ **DARK** — **defining the sum**; the closed-form nonlinear $\Lambda>0$ solution; and whether a theory with **one dimensionful constant** can regulate at all; and — r2505 — **what selects among five-component shears WITHOUT assuming vacuum**, since the corpus’s only shear-selection principle (Goldberg–Sachs) is vacuum-bound
-- *6 live lead(s) inform this vein*
+- *9 live lead(s) inform this vein*
 
 ## `L-175` · PO-9 · WHAT FIXES THE SUBSTRATE'S DIMENSION
 
 - **MAPPED** — the cut is four and **says nothing about the substrate**; a descent from $D>5$ must be **multi-step**; the construction is **single-step by design** and one-step-ness is governed by **Rule 2**, not taste
 - ⛔ **DARK** — **whether a second slicing could be non-arbitrary, its selection forced by the first** — and the substrate stays bounded **below only**; and ⛭ r2515 (`L-240`) **whether the CUT’s four-ness carries the FORCING of the dynamics** — the Dirac algebra singles out GR only in four dimensions, so the leaf’s four-ness may be doing work the corpus has never asked it to do. ⛭ r2518 CHARTED: $D=4$ is the **largest dimension in which Lovelock leaves exactly ONE dynamical term**, so the leaf’s dynamics carries **no unfixed coefficient** — Rule 2’s own object. **What stays DARK is the decision it turns on: is uniqueness of the leaf’s dynamics a desideratum this programme holds?** CR takes GR as given, so the forcing is a PROPERTY either way
-- *6 live lead(s) inform this vein*
+- *7 live lead(s) inform this vein*
 
 ## `L-202` · p0 item 4 · WHAT THE SEAM CARRIES
 
@@ -50,31 +50,34 @@ current: r2500+c54.194
 | **2** | **`L-513`** | `L-202` | 3/3 | 3/3 | **the admissible band**: `sec:what-crosses` FORCES $\phi\in\{0,\pi\}$ (what crosses is frozen, so $\theta_\gamma=0$), and across that pair the acoustic phase moves **0.207 against a 0.615 gap — a third — with the control OUTSIDE it**. So the disagreement is real and bounded, and both admissible readings sit 76x and 102x the control in $\chi^2$/dof |
 | **3** | **`L-510`** | `L-165` `L-175` | 3/3 | 2/3 | **the unworked stratum's free shear is TWO, not five** — the momentum constraint owns three under the York split, and **P9 already names the remaining two as the graviton's polarizations**. So the Killing vectors buy 1-of-2, and the dark interior is **how the transverse 2-plane turns over the leaf**, not which of a five-dimensional family |
 | **4** | **`L-511`** | `L-165` `L-175` | 3/3 | 2/3 | **two objects, one word**: Goldberg--Sachs governs the **optical** shear of a null congruence (2 real, an invariant); `I3`'s $\sigma_{ij}$ is the **ADM** shear of a leaf (5 real, foliation-bound). Schwarzschild is Type D in every slicing while its leaf shear is $0$ on static slices and $3M/r^3$ on Painlevé--Gullstrand ones — and the whole difference is longitudinal, so **both r2505 and `L-510` stand and neither answers the other** |
-| **5** | **`L-204`** | `L-165` `L-175` | 3/3 | 2/3 | R-P stations ③④ — P8/P9, GR field equations and the exact-solution catalogue |
-| **6** | **`L-508`** | `L-202` | 3/3 | 2/3 | **what the seam datum CARRIES, measured**: across four production-depth seam phases the acoustic phase spans 0.891 in $\phi/\pi$ and the peak heights 0.483–1.618, **the control's values inside both** — a bounded negative that charts the vein's perimeter (§IV) rather than closing anything |
-| **7** | **`L-242`** | `L-221` | 2/3 | 3/3 | ⛭ **THE HIGGS MECHANISM IS IDENTIFIED, NOT DECLINED — and the identification is undeveloped.** P6: **the $R$-symmetric sector IS the offset-free massless vacuum**, mass is the **$R$-odd departure** from it, and **the electroweak breaking that supplies the fermion mass IS the breaking of the substrate's orientation parity**. ⇒ **The one-constant theorem forbids the STRENGTHS; it says nothing about the MECHANISM.** And P3 has the corpus's own symmetry breaking (“located precisely”) — **nobody has set the two beside each other**. ⚠ r2522 recorded this as a decline; that was wrong |
-| **8** | **`L-171`** | `L-202` | 2/3 | 3/3 | **PO-7** — whether the acoustic disagreement is real against the sky. ⛭ *Sharpened at c54.200 (`L-513`): over the phases `sec:what-crosses` ADMITS, the acoustic phase moves **0.207 against a 0.615 gap — a third — with the control OUTSIDE it**, so the disagreement is real and bounded rather than a free choice.* ⇒ **What is open is the confrontation itself: both admissible readings sit 76x and 102x the control, so something other than the seam phase carries the bulk of it — and the SPACING, robust to 1.9%, is what does not move** |
-| **9** | **`L-240`** | `L-175` | 2/3 | 3/3 | ⛭ **a LEAD from OUTSIDE literature, the first**: P12 cites `Teitelboim1973` for the Dirac brackets' FORM and never for the uniqueness theorem they carry (**zero “Lovelock” across 35 .tex files**). ** HKT: Einsteinian geometrodynamics is the ONLY canonical representation of those deformations; Teitelboim–Zanelli: LOVELOCK gravity closes the SAME algebra, and for $n>4$ there are Lovelock gravities other than GR. ** ⇒ **the Dirac algebra forces GR only in FOUR dimensions**, so **the four-ness of the CUT is what makes the dynamics forced** — which is not what `PO-9`'s guard says |
-| **10** | **`L-210`** | `L-202` `L-221` `L-175` | 2/3 | 2/3 | the entry-point front — all 44 sites carry verdicts; **live leads are where a paper's own text points at an unexplored interior** |
-| **11** | **`L-217`** | `L-221` | 2/3 | 2/3 | the CR/Higgs relation is stated; **`F1` stays live — the relation breaks if the gauge group is ever promoted to forced** |
-| **12** | **`L-230`** | `L-165` `L-221` | 3/3 | 1/3 | the `COMPUTES:` convention — uptake **flat at 40 of 357** while the corpus grew a sixth; a receipt that declares what it computed is a receipt a vein can be excavated through |
-| **13** | **`L-509`** | `L-202` | 3/3 | 1/3 | P15 asserted a horizon property of the **branch point** at six sites where its own receipts say **seam**/**onset**, and the two invert — repaired; **and `check_loci`, built for exactly this defect, could not see the worst of them until this revision** (a proposition's receipt binding lives in its argument paragraph). Found by seeding, not by reading |
-| **14** | **`L-207`** | `L-165` | 1/3 | 3/3 | ⓶ the confined/branch-point exhibition — **gated on PO-6 and must not be opened without it** (⓵ discharged r2450) |
-| **15** | **`L-512`** | *— instrument work* | 3/3 | 0/3 | `check_receipt_prefixes` — the receipt-prefix namespace collided twice in two revisions and reached `main`; bands proposed in the register's own order (56 1-49, 54 50-79, cc54 80-99), **grandfathered so nothing has to move**. Fails on a duplicate, only REPORTS out-of-band |
-| **16** | **`L-515`** | *— instrument work* | 3/3 | 0/3 | `check_receipt_prefixes` now reads **`origin/main`'s tree**, which is the half r2512 named ("only once both are committed, which is after the merge"): when 54 filed `I4`, 56's was already PUSHED and not in 54's tree, so no local check could see it. **Rests on `git fetch` working from a node that cannot push** — the capability this line assumed absent for eight revisions |
-| **17** | **`L-516`** | *— instrument work* | 3/3 | 0/3 | `check_conflict_markers` — a merge marker survived into `range_paper.tex` and surfaced only because a compiler happened to read that file. **The same marker in a register is read by no compiler at all.** Anchored to git's own format, because `<<<<<<<` is ordinary content here |
-| **18** | **`L-517`** | *— instrument work* | 3/3 | 0/3 | `check_currency` measured every document against the FORK FRONT, so 25 documents went stale the moment the fork cut a revision — **the redness measured the handoff queue, not currency**. Now measured against the last ABSORBED revision, using `ABSORPTION.md`'s already-gated `IN-FLIGHT:` line. Changes nothing on 56's tree, which is the test |
-| **19** | **`L-218`** | *— instrument work* | 3/3 | 0/3 | ⓵ the reader-package formats via pandoc in CI |
-| **20** | **`L-228`** | *— instrument work* | 3/3 | 0/3 | `check_loci` extended to the possessive and compound-noun forms node 52 declined to claim |
-| **21** | **`L-514`** | *— instrument work* | 2/3 | 0/3 | **nothing in the tree reads UPWARD**: c54.195's withdrawal contradicted text two paragraphs above it in the same section, which had carried the right answer since c54.191. A withdrawal is the edit for which that matters most. Second instance of the class after the c54.182/c54.184 duplicate |
+| **5** | **`L-520`** | `L-165` `L-175` | 3/3 | 2/3 | items 45 and 46 applied: the **Petrov interval O-D-I is complete because the substrate is doubly ruled** (a cut inherits both rulings or neither, and II/III carry exactly one), and P12 now cites `Teitelboim1973` for its CONTENT — the brackets are the embeddability condition and HKT's forcing is **dimension-dependent**, so the leaf being four is doing work |
+| **6** | **`L-204`** | `L-165` `L-175` | 3/3 | 2/3 | R-P stations ③④ — P8/P9, GR field equations and the exact-solution catalogue |
+| **7** | **`L-518`** | `L-165` | 3/3 | 2/3 | **Unruh worked (item 47)**: completion predicts all four horizons and observer-dependence predicts two wrongly, so Rindler is the case that FIXES the criterion rather than a gap in it. And two things beyond consistency — $T(a)$ carries no free parameter because $\alpha$ is the sole constant and its rest term does NOT vanish, and $\kappa=0$ at the member a collapse reaches |
+| **8** | **`L-508`** | `L-202` | 3/3 | 2/3 | **what the seam datum CARRIES, measured**: across four production-depth seam phases the acoustic phase spans 0.891 in $\phi/\pi$ and the peak heights 0.483–1.618, **the control's values inside both** — a bounded negative that charts the vein's perimeter (§IV) rather than closing anything |
+| **9** | **`L-242`** | `L-221` | 2/3 | 3/3 | ⛭ **THE HIGGS MECHANISM IS IDENTIFIED, NOT DECLINED — and the identification is undeveloped.** P6: **the $R$-symmetric sector IS the offset-free massless vacuum**, mass is the **$R$-odd departure** from it, and **the electroweak breaking that supplies the fermion mass IS the breaking of the substrate's orientation parity**. ⇒ **The one-constant theorem forbids the STRENGTHS; it says nothing about the MECHANISM.** And P3 has the corpus's own symmetry breaking (“located precisely”) — **nobody has set the two beside each other**. ⚠ r2522 recorded this as a decline; that was wrong |
+| **10** | **`L-171`** | `L-202` | 2/3 | 3/3 | **PO-7** — whether the acoustic disagreement is real against the sky. ⛭ *Sharpened at c54.200 (`L-513`): over the phases `sec:what-crosses` ADMITS, the acoustic phase moves **0.207 against a 0.615 gap — a third — with the control OUTSIDE it**, so the disagreement is real and bounded rather than a free choice.* ⇒ **What is open is the confrontation itself: both admissible readings sit 76x and 102x the control, so something other than the seam phase carries the bulk of it — and the SPACING, robust to 1.9%, is what does not move** |
+| **11** | **`L-240`** | `L-175` | 2/3 | 3/3 | ⛭ **a LEAD from OUTSIDE literature, the first**: P12 cites `Teitelboim1973` for the Dirac brackets' FORM and never for the uniqueness theorem they carry (**zero “Lovelock” across 35 .tex files**). ** HKT: Einsteinian geometrodynamics is the ONLY canonical representation of those deformations; Teitelboim–Zanelli: LOVELOCK gravity closes the SAME algebra, and for $n>4$ there are Lovelock gravities other than GR. ** ⇒ **the Dirac algebra forces GR only in FOUR dimensions**, so **the four-ness of the CUT is what makes the dynamics forced** — which is not what `PO-9`'s guard says |
+| **12** | **`L-519`** | `L-165` | 2/3 | 3/3 | the corpus holds **$\kappa=0$ at Nariai** (P7) and the **equal-radii $dS_2\times S^2$ throat** (P15) and has never joined them — the two sides of the degenerate limit. **What temperature, if any, does the configuration a collapse reaches carry, read on the near-horizon geometry rather than on $\kappa/2\pi$?** Registered rather than left in a caveat |
+| **13** | **`L-210`** | `L-202` `L-221` `L-175` | 2/3 | 2/3 | the entry-point front — all 44 sites carry verdicts; **live leads are where a paper's own text points at an unexplored interior** |
+| **14** | **`L-217`** | `L-221` | 2/3 | 2/3 | the CR/Higgs relation is stated; **`F1` stays live — the relation breaks if the gauge group is ever promoted to forced** |
+| **15** | **`L-230`** | `L-165` `L-221` | 3/3 | 1/3 | the `COMPUTES:` convention — uptake **flat at 40 of 357** while the corpus grew a sixth; a receipt that declares what it computed is a receipt a vein can be excavated through |
+| **16** | **`L-509`** | `L-202` | 3/3 | 1/3 | P15 asserted a horizon property of the **branch point** at six sites where its own receipts say **seam**/**onset**, and the two invert — repaired; **and `check_loci`, built for exactly this defect, could not see the worst of them until this revision** (a proposition's receipt binding lives in its argument paragraph). Found by seeding, not by reading |
+| **17** | **`L-207`** | `L-165` | 1/3 | 3/3 | ⓶ the confined/branch-point exhibition — **gated on PO-6 and must not be opened without it** (⓵ discharged r2450) |
+| **18** | **`L-512`** | *— instrument work* | 3/3 | 0/3 | `check_receipt_prefixes` — the receipt-prefix namespace collided twice in two revisions and reached `main`; bands proposed in the register's own order (56 1-49, 54 50-79, cc54 80-99), **grandfathered so nothing has to move**. Fails on a duplicate, only REPORTS out-of-band |
+| **19** | **`L-515`** | *— instrument work* | 3/3 | 0/3 | `check_receipt_prefixes` now reads **`origin/main`'s tree**, which is the half r2512 named ("only once both are committed, which is after the merge"): when 54 filed `I4`, 56's was already PUSHED and not in 54's tree, so no local check could see it. **Rests on `git fetch` working from a node that cannot push** — the capability this line assumed absent for eight revisions |
+| **20** | **`L-516`** | *— instrument work* | 3/3 | 0/3 | `check_conflict_markers` — a merge marker survived into `range_paper.tex` and surfaced only because a compiler happened to read that file. **The same marker in a register is read by no compiler at all.** Anchored to git's own format, because `<<<<<<<` is ordinary content here |
+| **21** | **`L-517`** | *— instrument work* | 3/3 | 0/3 | `check_currency` measured every document against the FORK FRONT, so 25 documents went stale the moment the fork cut a revision — **the redness measured the handoff queue, not currency**. Now measured against the last ABSORBED revision, using `ABSORPTION.md`'s already-gated `IN-FLIGHT:` line. Changes nothing on 56's tree, which is the test |
+| **22** | **`L-218`** | *— instrument work* | 3/3 | 0/3 | ⓵ the reader-package formats via pandoc in CI |
+| **23** | **`L-228`** | *— instrument work* | 3/3 | 0/3 | `check_loci` extended to the possessive and compound-noun forms node 52 declined to claim |
+| **24** | **`L-514`** | *— instrument work* | 2/3 | 0/3 | **nothing in the tree reads UPWARD**: c54.195's withdrawal contradicted text two paragraphs above it in the same section, which had carried the right answer since c54.191. A withdrawal is the edit for which that matters most. Second instance of the class after the c54.182/c54.184 duplicate |
 
 > ⛭⛭ **TAKE `L-174` NEXT** — *highest grounded×informative, and it informs 2 vein(s).*
 
 # III · THE ROUTED LIST (`FOR_54.md`) — leads handed to the working fork
 
-- ***27 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
+- ***24 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
 - *7 are ANSWERS to the fork rather than work for it* — 33, 34, 35, 36, 37, 38, 39
-- *9 closed* — 10, 15, 14, 16, 17, 21, 23, 24, 41
+- *12 closed* — 10, 15, 14, 16, 17, 21, 23, 24, 41, 45, 46, 47
 
   - **6** · The map's header claim is stronger than the map
   - **7** · `FORK_c54.md` narrates c54.1–c54.35 and reads as current
@@ -98,10 +101,7 @@ current: r2500+c54.194
   - **42** · P9's `cor:wall` CITATION COVERS THE METHOD, NOT THE CASE — added r2503
   - **43** · YOUR c54.195 WITHDRAWAL IS TOO WIDE — the band across the ADMISSIBLE pha
   - **44** · THE UNWORKED STRATUM IS EXHIBITED AT LINEAR ORDER, AND IT IS TEXTBOOK GR
-  - **45** · P12 CITES `Teitelboim1973` FOR THE FORM AND NEVER FOR THE CONTENT — and
   - **44** · THREE RECEIPTS FAIL THE FULL SWEEP — not on physics, on a prose PIN into
-  - **46** · P9's "EVERY ALGEBRAIC TYPE" IS RIGHT AND THE REASON IS MISSING — one sen
-  - **47** · THE CORPUS NEVER MENTIONS UNRUH — and it is the first question a QFT-in-
   - **48** · THE HIGGS MECHANISM IS *IDENTIFIED* IN P6 AND NEVER DEVELOPED — correcte
 
 # ⚠ UNSORTED — rows nobody has decided about

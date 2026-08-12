@@ -111,6 +111,21 @@ LEADS = {
    "admissible readings sit 76x and 102x the control, so something other than the seam phase carries the "
    "bulk of it \u2014 and the SPACING, robust to 1.9%, is what does not move**",
    ['L-202'], 2, 3),
+ 'L-518': ("**Unruh worked (item 47)**: completion predicts all four horizons and observer-dependence "
+   "predicts two wrongly, so Rindler is the case that FIXES the criterion rather than a gap in it. And two "
+   "things beyond consistency \u2014 $T(a)$ carries no free parameter because $\\alpha$ is the sole "
+   "constant and its rest term does NOT vanish, and $\\kappa=0$ at the member a collapse reaches",
+   ['L-165'], 3, 2),
+ 'L-519': ("the corpus holds **$\\kappa=0$ at Nariai** (P7) and the **equal-radii $dS_2\\times S^2$ throat** "
+   "(P15) and has never joined them \u2014 the two sides of the degenerate limit. **What temperature, if any, "
+   "does the configuration a collapse reaches carry, read on the near-horizon geometry rather than on "
+   "$\\kappa/2\\pi$?** Registered rather than left in a caveat",
+   ['L-165'], 2, 3),
+ 'L-520': ("items 45 and 46 applied: the **Petrov interval O-D-I is complete because the substrate is doubly "
+   "ruled** (a cut inherits both rulings or neither, and II/III carry exactly one), and P12 now cites "
+   "`Teitelboim1973` for its CONTENT \u2014 the brackets are the embeddability condition and HKT's forcing is "
+   "**dimension-dependent**, so the leaf being four is doing work",
+   ['L-165','L-175'], 3, 2),
  'L-204': ("R-P stations \u2462\u2463 \u2014 P8/P9, GR field equations and the exact-solution catalogue",
    ['L-165','L-175'], 3, 2),
  'L-217': ("the CR/Higgs relation is stated; **`F1` stays live \u2014 the relation breaks if the gauge group is "

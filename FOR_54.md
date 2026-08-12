@@ -1,7 +1,7 @@
 ---
 name: for-54
 kind: RECORD
-current: c54.197
+current: c54.202
 job: THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
@@ -1196,42 +1196,11 @@ calculation with a closed-form answer — **because the construction was never t
 
 ---
 
-## ⛭⛭⛭ 45 · P12 CITES `Teitelboim1973` FOR THE FORM AND NEVER FOR THE CONTENT — and the content lands on `PO-9` — added r2515
+## ✔✔ APPLIED — 45 · P12 CITES `Teitelboim1973` FOR THE FORM AND NEVER FOR THE CONTENT — applied c54.202
 
-*Daryl asked whether r2514's "the constraint is CONSERVED, not re-imposed" touches **the second-order-EFE reason for
-a vanishing covariant derivative**. It does, and **the corpus holds both halves and has never joined them.***
+*One clause added at P12's opening: the brackets **are** the embeddability condition (Teitelboim), HKT's canonical representation on $(g_{ij},\pi^{ij})$ **recovers the Einstein Hamiltonian**, and Teitelboim–Zanelli's Lovelock closure makes that forcing **dimension-dependent** — so the leaf being four is doing work. Two references added. **The clause says in the paper's own voice that this is a recognition and not a derivation**, which is your own guard.*
 
-**⌗ HALF ONE, already yours:** *P11 — "A first-class constrained system evolves consistently to all orders **by the
-contracted Bianchi identity**: there is no classical dynamical obstruction at any order."*
-**⌗ HALF TWO, also yours:** *P12 — the Dirac algebra **is not a Lie algebra**, closing with the inverse spatial
-metric, **a structure function rather than a constant**, hence a Lie **algebroid** — citing **`Teitelboim1973`**.*
-
-⛔ ***And measured: ZERO "Lovelock" across all 35 `.tex` files; zero "uniquely", "embeddab", "determines the" in
-P12.***
-
-**⌗ WHAT THAT CITATION SITS BESIDE (outside literature, verified by search and marked as outside):**
-*· **HKT (Ann. Phys. 96 (1976) 88): Einsteinian geometrodynamics is the ONLY (time-reversible) canonical
-representation of the generators of hypersurface deformations**, given $g_{ij}$ and $\pi^{ij}$ as the sole canonical
-variables;*
-*· **Teitelboim: the Dirac algebra IS the embeddability condition**;*
-*· ⛭⛭ **Teitelboim–Zanelli: LOVELOCK gravity's constraints close the SAME algebra**, and for $n>4$ there are
-Lovelock gravities other than GR.*
-⇒⇒ ***SO THE DIRAC ALGEBRA FORCES GR ONLY IN FOUR DIMENSIONS.***
-
-**⛭⛭⛭ AND THAT IS WHERE IT LANDS.** *The substrate is $\mathrm{dS}_5$; the dynamics lives on a **four-dimensional
-cut**; P12's algebroid is the constraint algebra **of that 4D leaf**.*
-⇒ ***THE FOUR-DIMENSIONALITY OF THE CUT IS WHAT MAKES THE FORCING AVAILABLE AT ALL. Had the leaf been five, the same
-brackets would not have singled out GR.***
-⌗ *And that is **different from `PO-9`'s guard** — "the cut is four and **says nothing about the substrate**", which
-is correct and is about the SUBSTRATE's dimension.* ⇒ ***This says the cut being four is DOING WORK: it is what makes
-the dynamics on the leaf FORCED rather than chosen.***
-
-**⌗ THE ROUTED SUGGESTION IS SMALL:** *P12 could cite `Teitelboim1973` **for its content as well as its form** — one
-clause noting that the algebra it identifies as an algebroid is the same algebra whose closure HKT show forces the
-ADM Hamiltonian, **in four dimensions**.*
-⚠ ***NOT claimed: that CR derives Lovelock, HKT or the field equations.*** *P9 says the construction leaves GR's
-dynamics unchanged; P12 calls its own claim "a recognition rather than an addition". **The lead is registered as a
-question (`L-240`), not as a result.***
+---
 ## ⛭⛭ 44 · THREE RECEIPTS FAIL THE FULL SWEEP — not on physics, on a prose PIN into `THE_LIVE_ARC.md` that arc-regen reworded — added r2510 (cc54)
 
 *cc54 ran the full receipt sweep **with `camb`+`pynucastro`** — the run this line's container cannot finish and CI
@@ -1269,81 +1238,16 @@ are wrong — they match today; · not that this line should own the fix.*
 
 ---
 
-## ⛭⛭⛭ 46 · P9's "EVERY ALGEBRAIC TYPE" IS RIGHT AND THE REASON IS MISSING — one sentence, and the word it needs is in P0 — added r2520
+## ✔✔ APPLIED — 46 · P9's "EVERY ALGEBRAIC TYPE" IS RIGHT AND THE REASON IS MISSING — applied c54.202
 
-**Where:** *`range_paper.tex`, the structural-axis passage. It claims the operator fills the sector **"across every
-algebraic (Petrov) type"** and, two sentences later, names the range **"Petrov type O, D, and I"**.*
-⇒ ⛔ ***There are six types. **Type II and Type III appear ZERO times in the entire corpus** — a reader counting
-stops there.***
-
-**⌗ AND THEY ARE NOT ABSENT BY ACCIDENT** *(outside literature, verified by search and marked as outside): **twisting
-Type II vacuum spacetimes with TWO Killing vectors and $\Lambda$** (Zhang–Finley, including Lun's Type II and III
-and MacCallum–Siklos' Type III), and a **Kundt Type II with a null Killing vector and a three-dimensional abelian
-isometry algebra** (Almeida–Batista). **So the absence needs a reason.***
-
-**⛭⛭ AND YOUR OWN MECHANISM SUPPLIES IT — assembled from two papers:**
-*· **P9**: "the substrate's null rulings are shear-free", and a cut inheriting one is algebraically special — **the
-Type-D corner**; and shear **forbids a repeated principal null direction**, so the operator climbs into **Type I**.*
-*· **P0**: "**The surface is doubly ruled by straight null lines.**"*
-⇒⇒ ***THE SUBSTRATE IS DOUBLY RULED. A cut inherits BOTH rulings — two repeated PNDs, TYPE D — or NEITHER — shear,
-no repeated PND, TYPE I. THERE IS NO WAY TO INHERIT EXACTLY ONE. And Types II and III are precisely the exactly-one
-cases (II one double, III one triple).***
-⇒ ***So they are unreachable BY CONSTRUCTION, the interval O–D–I is COMPLETE, and your claim is right.***
-
-**⌗ THE SUGGESTED FIX IS ONE SENTENCE**, *and it strengthens the paper rather than repairing it: after "Petrov type
-O, D, and I", something like —* ***"Types II and III, which carry exactly one repeated principal null direction, are
-not reachable: the substrate is doubly ruled, so a cut inherits both rulings or neither."***
-⌗ *And the measurable fact behind the suggestion: **"doubly ruled" appears zero times in P9**, so the mechanism and
-the claim it justifies currently sit in different papers.*
-
-⚠ *Not claimed: that P9 is wrong — **this argues FOR its claim** — or that Type II/III are impossible in GR. Receipt
-`P1_the_petrov_interval_is_complete_because_the_substrate_is_doubly_ruled`.*
+*One sentence added after "Petrov type~O, D, and I": the substrate is **doubly ruled**, so a cut inherits both rulings as repeated PNDs or neither, and types II and III carry exactly one. **The interval O–D–I is complete on this substrate rather than as far as the survey went.** Cites your receipt.*
 
 ---
+## ✔✔ APPLIED — 47 · THE CORPUS NEVER MENTIONS UNRUH — applied c54.202
 
-## ⛔⛔⛔ 47 · THE CORPUS NEVER MENTIONS UNRUH — and it is the first question a QFT-in-curved-space referee asks — added r2521
-
-**Where:** *P7's paradox argument — "with no completed horizon there is no background on which the Bogoliubov
-mode-mixing yielding an **exactly thermal** Hawking flux can be computed, so the thermal endpoint the paradox must
-reconcile is itself **absent as a horizon effect**" — and P1's "the globally completed horizon … is **never
-physically realised**", the densities "**never form at any finite exterior time**".*
-
-**⌗ THE ARGUMENT TURNS ON COMPLETION, WHICH IS THE RIGHT THING FOR IT TO TURN ON.** *"completed horizon" 24 uses,
-"finite exterior" 28, and both "chart artefact" uses **deny** that something is one. **Nowhere does the corpus argue
-"perspectival, therefore no flux".***
-
-**⛭⛭ AND THAT IS EXACTLY THE DISTINCTION UNRUH FORCES.** *A uniformly accelerated observer in **flat space** sees an
-**exactly thermal** spectrum, from a **Rindler horizon that is uncontroversially observer-dependent** — no gravity,
-no collapse, nothing anyone calls a completed physical surface.*
-⇒ ***So "the horizon is perspectival" cannot by itself entail "no thermal flux". Only "the horizon never COMPLETES"
-can — and that IS your claim, so the argument survives the test cleanly.***
-
-**⛔ BUT THE ABSENCE IS TOTAL, and that is why this is a big owe:**
-
-| across all 17 papers | |
-|---|---|
-| Hawking · graviton · information paradox · Bogoliubov · Bekenstein | **94 · 73 · 13 · 8 · 8** |
-| ***Unruh*** | ***0*** |
-| ***stress tensor*** $\langle T_{\mu\nu}\rangle$ | ***0*** |
-| ***trans-Planckian*** | ***0*** |
-| ***Rindler HORIZON*** | ***0*** — *every "Rindler" is Rindler the **author**, on lensing* |
-
-⇒ ***A corpus that mentions Hawking ninety-four times and Unruh zero, while arguing about when a thermal spectrum
-arises, has an unaddressed FIRST question.*** *And $\langle T_{\mu\nu}\rangle$ and trans-Planckian are the standard
-companions — a reader arrives with three and finds none named.*
-
-**⌗ AND UNLIKE ITEM 46 THIS IS NOT A MISSING SENTENCE.** *That gap was a completeness argument the corpus already
-held in another paper.* ***Here nothing addresses Unruh at all: the treatment must be WRITTEN rather than
-assembled.***
-⇒ **And it strengthens the argument** — *Unruh is the case that forces the completion-versus-perspectival
-distinction your papers already keep, so naming it turns an unstated precision into a stated one.*
-
-⚠ *Not claimed: that the argument is wrong (**this finds it survives and says why**), or that Unruh contradicts it.*
-***What the missing paragraph would have to establish is whether CR's reading says anything DISTINCTIVE about Unruh
-beyond consistency — and that is a real question, not a formality.***
+*Written into P1 `sec:hawking`, not assembled. **The sorting is the content**: completion predicts all four horizons, observer-dependence predicts two wrongly, and Rindler is the row that separates them. **Two things beyond consistency**: the substrate's rest term is its own $\kappa=1/\alpha$ and $T(a)$ carries no free parameter and does not vanish at $a=0$; and $\kappa=0$ at the Nariai member a collapse reaches, which P7 already computes for the ringdown. ⛔ **The paper refuses to read $T=0$ off the degenerate horizon** and registers the disjunction as `L-519`. ⌗ $\langle T_{\mu\nu}\rangle$ and trans-Planckian **remain at zero** — one companion of three.*
 
 ---
-
 ## ⛭⛭⛭ 48 · THE HIGGS MECHANISM IS *IDENTIFIED* IN P6 AND NEVER DEVELOPED — corrected r2524, and my first routing of this was wrong
 
 ⛔ **I routed this at r2522 as "a one-clause fix — only the word is missing." That was wrong, and Daryl named it:**
