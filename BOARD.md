@@ -46,7 +46,7 @@ current: r2500+c54.194
 
 | # | row | informs | grounded | informs-how-much | what |
 |---|---|---|---|---|---|
-| **1** | **`L-803`** | `L-221` `L-202` | 3/3 | 3/3 | ⛭ **cc54's $N_{\rm eff}$ FINDING — the sixth arrival-path one, and the only one that opens a PHYSICS question rather than a paragraph.** The cosmology sector rests on $N_{\rm eff}$ at both ends (**$dY_p/dN_{\rm eff}\approx+0.010$**; one unit moves $100\theta_*$ by **$-3.2\%$** and $r_{\rm drag}$ by **$-4.7$ Mpc**), **commits to the standard value in `bbn_network.py`**, and **names it in no paper**. ⇒ **And the construction carries a right-handed $\nu_R$ in the colourless four, while $N_{\rm eff}$ counts thermalized relativistic species** — so *does CR adopt the standard value, or does its $\nu_R$ structure predict a departure?* **The unnamed adoption is exactly what hides the question** |
+| **1** | **`L-803`** | `L-221` `L-202` | 3/3 | 3/3 | ⛭ **cc54's $N_{\rm eff}$ FINDING — the sixth arrival-path one, and the only one that opens a PHYSICS question rather than a paragraph.** The cosmology sector rests on $N_{\rm eff}$ at both ends (**$dY_p/dN_{\rm eff}\approx+0.010$**; one unit moves $100\theta_*$ by **$-3.2\%$** and $r_{\rm drag}$ by **$-4.7$ Mpc**), **commits to the standard value in `bbn_network.py`**, and **names it in no paper**. ⇒ **And the construction carries a right-handed $\nu_R$ in the colourless four, while $N_{\rm eff}$ counts thermalized relativistic species** — so *does CR adopt the standard value, or does its $\nu_R$ structure predict a departure?* **The unnamed adoption is exactly what hides the question**. ⛭ **NARROWED r2545**: CR's own wall ($\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$, stated six times) means it assigns the $\nu_R$ **a PLACE and no COUPLINGS** — and $N_{\rm eff}$ counts **thermalized** species. ⇒ **CR makes NO $N_{\rm eff}$ prediction, so the standard value is CONSISTENT rather than in tension, and the owed paragraph says that** (trip-wire: `F1`) |
 | **2** | **`L-171`** | `L-202` | 2/3 | 3/3 | **PO-7** — whether the acoustic disagreement is real against the sky. ⛭ *Sharpened at c54.200 (`L-513`): over the phases `sec:what-crosses` ADMITS, the acoustic phase moves **0.207 against a 0.615 gap — a third — with the control OUTSIDE it**, so the disagreement is real and bounded rather than a free choice.* ⇒ **What is open is the confrontation itself: both admissible readings sit 76x and 102x the control, so something other than the seam phase carries the bulk of it — and the SPACING, robust to 1.9%, is what does not move** |
 | **3** | **`L-240`** | `L-175` | 2/3 | 3/3 | ⛭ **a LEAD from OUTSIDE literature, the first**: P12 cites `Teitelboim1973` for the Dirac brackets' FORM and never for the uniqueness theorem they carry (**zero “Lovelock” across 35 .tex files**). ** HKT: Einsteinian geometrodynamics is the ONLY canonical representation of those deformations; Teitelboim–Zanelli: LOVELOCK gravity closes the SAME algebra, and for $n>4$ there are Lovelock gravities other than GR. ** ⇒ **the Dirac algebra forces GR only in FOUR dimensions**, so **the four-ness of the CUT is what makes the dynamics forced** — which is not what `PO-9`'s guard says. ⛭ **WORKED r2518**: $D=4$ is the **largest dimension in which Lovelock leaves exactly ONE dynamical term**, so the leaf’s dynamics carries **no unfixed coefficient**. ⇒ **The decision it turns on: is uniqueness of the leaf’s dynamics a desideratum this programme holds?** CR takes GR as given either way |
 | **4** | **`L-210`** | `L-202` `L-221` `L-175` | 2/3 | 2/3 | the entry-point front — all 44 sites carry verdicts; **live leads are where a paper's own text points at an unexplored interior** |
@@ -61,7 +61,7 @@ current: r2500+c54.194
 
 # III · THE ROUTED LIST (`FOR_54.md`) — leads handed to the working fork
 
-- ***11 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
+- ***12 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
 - *7 are ANSWERS to the fork rather than work for it* — 33, 34, 35, 36, 37, 38, 39
 - *30 closed* — 10, 15, 6, 7, 8, 11, 12, 14, 16, 17, 19, 20, 21, 22, 23, 24, 25, 27, 28, 29, 31, 32, 40, 41, 43, 45, 46, 47, 48, 53
 
@@ -76,4 +76,5 @@ current: r2500+c54.194
   - **50** · TRANS-PLANCKIAN — a partial answer, and the scoping is the whole content
   - **52** · YOU TAKE THE de SITTER HORIZON'S TEMPERATURE AND NEVER ITS ENTROPY — and
   - **54** · `L-519` IS ANSWERED, AND P15 HAD THE ANSWER ALREADY — for a different pu
+  - **55** · $N_{\rm eff}$ IS UNNAMED AND LOAD-BEARING — and the paragraph is shorter
 

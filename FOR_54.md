@@ -1285,6 +1285,41 @@ power law — which is your own P15 result, cited across.***
 exactly what P15 argues it does, and that is a different question from a Planck spectrum. **$T=0$ stays refused.***
 
 ---
+## ⛭⛭⛭ 55 · $N_{\rm eff}$ IS UNNAMED AND LOAD-BEARING — and the paragraph is shorter than cc54's framing suggests — added r2545
+
+**⌗ cc54's FINDING (station ⑨, verified here).** *$N_{\rm eff}$ 0 · `Neff` 0 · 3.046 0 · "effective number of" 0
+across the papers — while the lithium problem is named and worked and D/H and $Y_p$ are everywhere.* ⇒ ***One
+missing NAME, not a missing sector*** *— and **`bbn_network.py` commits to it explicitly**: `r_nu =
+(4.0/11.0)**(1.0/3.0)`, three species.*
+⌗ *Load-bearing at both ends, computed: **$dY_p/dN_{\rm eff}\approx+0.010$**; one extra unit moves
+**$100\theta_*$ by $-3.2\%$** and **$r_{\rm drag}$ by $-4.7$ Mpc** — against a sector predicting $\ell_A/r_s$ to
+0.075% and 15.7σ.*
+
+**⛭⛭ AND THE PARAGRAPH IS SHORTER THAN THE FRAMING SUGGESTS.** *cc54 raised it as an open fork — "does CR adopt the
+standard value, or does its $\nu_R$ structure predict a departure?" — and **routed it rather than attempting it,
+correctly, because the literature does not settle it**.* ⇒ ***Your own wall does.***
+*· $\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$, **stated six times**, so the SM gauge group is not a
+substrate isometry; and P0 declines **"a geometric origin for the gauge content"**.* ⇒ ***CR assigns the $\nu_R$ a
+PLACE IN A GRADING and NO INTERACTIONS, and says so.***
+*· And $N_{\rm eff}$ counts **thermalized** species — **your own `bbn_network.py` computes the neutrino term from a
+decoupling temperature**, i.e. an interaction rate.* ⇒ ***The Standard Model already permits a $\nu_R$ and keeps
+3.046, because a gauge-singlet one does not thermalize. The existence of a $\nu_R$ has never by itself moved
+$N_{\rm eff}$.***
+
+**⇒⇒ SO THE SENTENCE TO WRITE IS:** ***"CR fixes the $\nu_R$'s place in the grading, not its couplings, and
+therefore makes no $N_{\rm eff}$ prediction; the standard value $N_{\rm eff}=3.046$ is adopted, and is CONSISTENT
+with the fourth grading rather than in tension with it."***
+⌗ *Plus the value, its provenance, and Planck's $2.99\pm0.17$ for comparison. **That is a paragraph. The fork form
+is a research programme.***
+
+⚠ **AND THE TRIP-WIRE IS ALREADY YOURS:** *`F1` fires **if the gauge group is ever promoted to forced**. If it ever
+were, the $\nu_R$ would acquire couplings and this consistency argument would have to be re-run.* ⇒ ***Naming that
+dependency puts the $N_{\rm eff}$ stance under an EXISTING trip-wire rather than a new one.***
+⌗ *Not claimed: that the $\nu_R$ is a gauge singlet — **the corpus says nothing about its charges, and "sterile"
+appears zero times**. That is weaker than singlethood and is exactly what the wall gives.*
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

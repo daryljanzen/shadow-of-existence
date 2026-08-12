@@ -126,7 +126,7 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-240`** | r2518 | **the interior is charted r2518**; what remains is the DECISION it turns on: ***is uniqueness of the leaf's dynamics a desideratum this programme hold |
 | **`L-171`** | r2519 | **`PO-7` is the one verdict on the board, and it is now sharply posed**: ***is 0.408 in $\phi/\pi$, at the only two readings the construction PERMITS, |
 | **`L-221`** | r2526 | **the question is INVERTED r2526**: not "is there an $R$-odd operator?" but ***what BRIDGE from grading to field exists that is not "be a kernel"?***  |
-| **`L-803`** | r2541 | ***the fix routes to 54:*** *a paragraph naming $N_{\rm eff}=3.046$ (adopted, standard; Planck $2.99\pm0.17$) and stating whether CR's $\nu_R$ touches |
+| **`L-803`** | r2545 | **the paragraph is still owed and its SHAPE is settled r2545** — route to 54: ***name $N_{\rm eff}$, state that CR fixes the $\nu_R$'s place and not i |
 
 *14 live rows carry a stated next step; the 14 longest-unworked are shown.*
 

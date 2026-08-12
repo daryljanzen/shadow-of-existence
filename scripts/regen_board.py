@@ -60,7 +60,7 @@ LEADS = {
    "drag}$ by **$-4.7$ Mpc**), **commits to the standard value in `bbn_network.py`**, and **names it in no "
    "paper**. \u21d2 **And the construction carries a right-handed $\\nu_R$ in the colourless four, while "
    "$N_{\\rm eff}$ counts thermalized relativistic species** \u2014 so *does CR adopt the standard value, or does "
-   "its $\\nu_R$ structure predict a departure?* **The unnamed adoption is exactly what hides the question**",
+   "its $\\nu_R$ structure predict a departure?* **The unnamed adoption is exactly what hides the question**. \u26ed **NARROWED r2545**: CR's own wall ($\\mathfrak{su}(3)\\not\\subset\\mathfrak{so}(5,1)$, stated six times) means it assigns the $\\nu_R$ **a PLACE and no COUPLINGS** \u2014 and $N_{\\rm eff}$ counts **thermalized** species. \u21d2 **CR makes NO $N_{\\rm eff}$ prediction, so the standard value is CONSISTENT rather than in tension, and the owed paragraph says that** (trip-wire: `F1`)",
    ['L-221','L-202'], 3, 3),
  'L-171': ("**PO-7 \u2014 THE ONE VERDICT ON THE BOARD, and it is now sharply posed.** \u26ed r2519: the "
    "admissible pair $\\phi\\in\\{0,\\pi\\}$ is **FORCED** by P15's own transmission argument (every mode "

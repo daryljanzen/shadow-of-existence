@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2545 — 2026-08-11 (main line). **`L-803` NARROWED FROM THE CORPUS — CR makes no $N_{\rm eff}$ prediction, and the owed paragraph is shorter than the question's framing.**
+
+**⌗ THE QUESTION AS ROUTED.** *cc54: "does CR adopt the standard $N_{\rm eff}$, or does its $\nu_R$ structure
+predict a departure?" — **flagged as physics and routed rather than attempted, correctly, because the literature
+does not settle it**.*
+⇒ ***The corpus does. Not the whole question, but enough to change what sentence is owed.***
+
+**⓵ CR's OWN WALL, STATED SIX TIMES.** *$\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$, so "the Standard Model
+gauge group is **not a continuous substrate isometry**"; and P0 declines "**a geometric origin for the gauge
+content** … walled and electroweak".*
+⇒ ***So the construction assigns the $\nu_R$ a PLACE IN A GRADING and NO INTERACTIONS, and says explicitly that it
+cannot supply them.*** ⌗ *And **"sterile" appears zero times** — the corpus never assigns the $\nu_R$ a gauge
+status at all, which is **weaker than singlethood** and is what the wall gives.*
+
+**⛭⛭ ⓶ AND $N_{\rm eff}$ COUNTS THERMALIZED SPECIES — A STATEMENT ABOUT COUPLINGS.** *The corpus's own
+`bbn_network.py` computes the neutrino term from a **decoupling temperature**, an interaction rate against
+expansion. And the Standard Model already makes this distinction: **a right-handed neutrino is permitted and
+$N_{\rm eff}$ stays 3.046, because a gauge-singlet one does not thermalize**.*
+⇒⇒ ***THE EXISTENCE OF A $\nu_R$ HAS NEVER BY ITSELF MOVED $N_{\rm eff}$. CR predicts a PLACE; $N_{\rm eff}$
+depends on COUPLINGS; CR's own wall says it supplies none.***
+
+**⌗ SO THE OWED SENTENCE CHANGES SHAPE AND GETS EASIER:** ***"CR fixes the $\nu_R$'s place, not its couplings, and
+therefore makes no $N_{\rm eff}$ prediction; the standard value is adopted, and is CONSISTENT with the fourth
+grading rather than in tension with it."***
+⇒ ***That is a paragraph the corpus can already write. The fork form is a research programme.*** *Routed as item
+55.*
+
+⚠ *And the dependency sits under an **existing** trip-wire: **`F1` fires if the gauge group is ever promoted to
+forced**, at which point the $\nu_R$ would acquire couplings and this would have to be re-run.*
+⌗ *And the receipt's first draft carried a **hollow assertion** — a bare `True` under "N_eff counts thermalized
+species" — caught by the lint and replaced with a check against the corpus's own network code. **Instance
+nineteen.***
+
 ### Revision r2544 — 2026-08-11 (main line). **THE R-P WALK IS COMPLETE — six arrival-path findings, three already closed — and an AMPS miscount of this line's was caught and routed back.**
 
 **⛔ THE ERROR FIRST, because it is this line's and it was printed as evidence.** *r2540 reported **"the corpus
