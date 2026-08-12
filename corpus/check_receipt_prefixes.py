@@ -49,6 +49,7 @@ Exit 0 clean, 1 on any duplicate prefix.
 
 import os
 import re
+import subprocess
 import sys
 from collections import defaultdict
 
@@ -105,6 +106,68 @@ def band_of(n):
     return None
 
 
+def pushed_prefixes():
+    """{directory: {(letter, number): [filenames]}} as it stands on `origin/main`.
+
+    ** THIS IS THE HALF 56 NAMED AND THE HALF THAT ACTUALLY BIT. **  r2512: *"check_receipts catches
+    duplicate stems -- but only once both are committed, which is after the merge."*  The same is
+    true of the local half of this gate: when 54 filed `I4`, 56's `I4` was ALREADY PUSHED and was
+    not in 54's working tree at all, so no amount of looking at the local directory would have
+    shown it.
+
+      *** "Read the directory before filing into it" is only mechanisable if the directory you read
+          is the PUSHED one. ***
+
+    ⌗ And 54 can do exactly that: **`git fetch` works from the fork even though `git push` does
+    not** -- the capability this line assumed absent for eight revisions because an adjacent one
+    was (`L-239`'s class).  This function reads `origin/main`'s tree with no network call of its
+    own; if the ref is missing or git is unavailable it returns None and the check is SKIPPED
+    rather than guessed at.
+    """
+    try:
+        r = subprocess.run(['git', 'ls-tree', '-r', '--name-only', 'origin/main', 'receipts/'],
+                           cwd=ROOT, capture_output=True, text=True, timeout=30)
+    except Exception:
+        return None
+    if r.returncode != 0:
+        return None
+    out = defaultdict(lambda: defaultdict(list))
+    for path in r.stdout.split('\n'):
+        if not path.endswith('.py'):
+            continue
+        parts = path.split('/')
+        if len(parts) != 3:
+            continue
+        _, sub, fn = parts
+        m = PREFIX.match(fn)
+        if not m:
+            continue
+        tag = (m.group(1) + m.group(2)).upper()
+        if tag == sub.split('_')[0].upper() or m.group(1).upper() == 'L':
+            continue
+        out[sub][(m.group(1).upper(), int(m.group(2)))].append(fn)
+    return out
+
+
+def scan_against_pushed(root):
+    """Prefixes filed HERE that are already taken on `origin/main` by a different file."""
+    pushed = pushed_prefixes()
+    if pushed is None:
+        return None
+    clashes = []
+    rdir = os.path.join(root, 'receipts')
+    for sub in sorted(os.listdir(rdir)):
+        d = os.path.join(rdir, sub)
+        if not os.path.isdir(d):
+            continue
+        for key, files in sorted(prefixes(d).items()):
+            theirs = pushed.get(sub, {}).get(key, [])
+            new_here = [f for f in files if f not in theirs]
+            if theirs and new_here:
+                clashes.append((sub, f'{key[0]}{key[1]}', new_here, theirs))
+    return clashes
+
+
 def scan(root):
     """(duplicates, unbanded) over every receipt directory under root."""
     dups, unbanded = [], []
@@ -151,6 +214,7 @@ def main():
         return 1
 
     dups, unbanded = scan(ROOT)
+    remote = scan_against_pushed(ROOT)
     ndirs = sum(1 for s in os.listdir(os.path.join(ROOT, 'receipts'))
                 if os.path.isdir(os.path.join(ROOT, 'receipts', s)))
     print(f'  {ndirs} receipt director(ies) scanned')
@@ -163,6 +227,21 @@ def main():
             print(f'      {sub}/{pfx}  ({f})')
         if len(unbanded) > 8:
             print(f'      ... and {len(unbanded) - 8} more')
+
+    if remote is None:
+        print("  [SKIP] origin/main not readable -- the PUSHED-tree check did not run")
+    elif remote:
+        print()
+        print(f'  {len(remote)} PREFIX(ES) ALREADY TAKEN ON origin/main:')
+        for sub, pfx, mine, theirs in remote:
+            print(f'\n  receipts/{sub}/  prefix {pfx}')
+            print(f'      filed here : {", ".join(mine)}')
+            print(f'      already pushed: {", ".join(theirs)}')
+        print('     ** Rename BEFORE committing.  This is the check that would have caught the')
+        print('        c54.198 collision: 56\'s I4 was already pushed and was not in 54\'s tree. **')
+        dups = dups + [('(vs origin/main)', p, m + t) for _, p, m, t in remote]
+    else:
+        print('  and no prefix filed here is already taken on origin/main')
 
     print()
     if not dups:

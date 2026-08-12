@@ -114,6 +114,19 @@ LEADS = {
  'L-512': ("`check_receipt_prefixes` \u2014 the receipt-prefix namespace collided twice in two revisions and "
    "reached `main`; bands proposed in the register's own order (56 1-49, 54 50-79, cc54 80-99), **grandfathered "
    "so nothing has to move**. Fails on a duplicate, only REPORTS out-of-band", [], 3, 0),
+ 'L-515': ("`check_receipt_prefixes` now reads **`origin/main`'s tree**, which is the half r2512 named "
+   "(\"only once both are committed, which is after the merge\"): when 54 filed `I4`, 56's was already "
+   "PUSHED and not in 54's tree, so no local check could see it. **Rests on `git fetch` working from a "
+   "node that cannot push** \u2014 the capability this line assumed absent for eight revisions",
+   [], 3, 0),
+ 'L-516': ("`check_conflict_markers` \u2014 a merge marker survived into `range_paper.tex` and surfaced "
+   "only because a compiler happened to read that file. **The same marker in a register is read by no "
+   "compiler at all.** Anchored to git's own format, because `<<<<<<<` is ordinary content here",
+   [], 3, 0),
+ 'L-517': ("`check_currency` measured every document against the FORK FRONT, so 25 documents went "
+   "stale the moment the fork cut a revision \u2014 **the redness measured the handoff queue, not "
+   "currency**. Now measured against the last ABSORBED revision, using `ABSORPTION.md`'s already-gated "
+   "`IN-FLIGHT:` line. Changes nothing on 56's tree, which is the test", [], 3, 0),
  'L-218': ("\u24f5 the reader-package formats via pandoc in CI", [], 3, 0),
  'L-228': ("`check_loci` extended to the possessive and compound-noun forms node 52 declined to claim", [], 3, 0),
 }

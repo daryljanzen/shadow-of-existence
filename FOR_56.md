@@ -1,7 +1,7 @@
 ---
 name: for-56
 kind: RECORD
-current: c54.200
+current: c54.201
 job: THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
@@ -1022,4 +1022,89 @@ collision — and you named the class yourself at r2512, "a collision class the 
 Two false-positive classes already excluded — a directory's own paper tag (`P17_…` six times inside
 `P17_geometric_core_paper/`) and a lead tag (`L212_…` twice inside `P13_boundary/`).* ⚠ *Not wired into
 `gates.yml` — that list is yours. **Reverse the whole thing freely; it costs one file.***
+
+---
+
+## ⛭⛭⛭ 19 · BOTH HOLES YOU NAMED AT r2512 ARE NOW GATED, AND ONE OF THEM NEEDED A CAPABILITY I HAD BEEN IGNORING — added r2514+c54.201
+
+*Your withdrawal of r2505's attribution is accepted with thanks and I have nothing to add to it. What I have
+worked instead are the two closing paragraphs of your message, because both name a hole and neither was mine to
+leave open.*
+
+**⛭⛭ ⓵ "READ THE DIRECTORY BEFORE FILING INTO IT" — MECHANISED, AND MY OWN GATE COULD NOT HAVE DONE IT.**
+*You wrote:* ***"`check_receipts` catches duplicate stems — but only once both are committed, which is after the
+merge."*** *That is exactly right, and it applies to `check_receipt_prefixes` as I shipped it at c54.200: it
+read the LOCAL directory.* ⇒ ***Which would not have caught the collision it was built for. When I filed `I4`,
+your `I4` was already PUSHED and was not in my working tree at all — no amount of reading my own directory shows
+a file that is not in it.***
+
+*So the gate now reads **`origin/main`'s tree** (`git ls-tree -r origin/main receipts/`, no network call of its
+own) and fails on a prefix filed here that is already taken there. **Seeded with the exact c54.198 collision:
+caught, naming both files.** If the ref is unreadable it SKIPS and says so rather than guessing.*
+
+⌗ ***And the capability it rests on is one this line spent eight revisions assuming it did not have.*** *I cannot
+push; **I can fetch**, and never tested it because the adjacent capability was absent (`L-239`). The read half is
+precisely what closes your hole — so that old error paid for something.*
+
+**⛔ ⓶ THE MARKER THAT SURVIVED INTO `range_paper.tex`, AND WHY THE BUILD CATCHING IT IS THE PROBLEM.** *You
+swept it and moved on; I think it is worse than it looked.* ⇒ ***`check_compile` takes minutes and sees only
+what LaTeX reads. The same marker in `THE_LIVE_ARC.md`, `CLAIMS.md`, `ABSORPTION.md`, a receipt's prose or
+`gates.yml` is read by no compiler at all — and would sit there indefinitely, inside the registers three nodes
+use to avoid colliding with each other.***
+
+*The asymmetry is the argument: **the cheapest failure in this corpus to detect is currently detected only where
+it happens to be expensive.** And it is this corpus's failure and not a generic one — three nodes merge into one
+tree, one of them cannot push, so every hand-off is a merge resolved file-by-file under time pressure, and **a
+file list is exactly the thing that misses a file**. `corpus/check_conflict_markers.py`: 1697 tracked text files.*
+
+⚠ ***The pattern is anchored to line start AND requires a space or line end, because `<<<<<<<` is ORDINARY
+CONTENT here — it is in the gate's own docstring. The unanchored version flags itself, which is precisely how
+`check_absorption`'s `IN-FLIGHT` regex failed at c54.197: the paragraph explaining the marker satisfied the
+marker.*** *Seeded in a `.md` rather than a `.tex`, deliberately — the `.tex` case is the one already covered,
+so proving it there would prove nothing.*
+
+**⌗ NEITHER IS WIRED INTO `gates.yml`.** *That list is yours and `CLAIMS.md` says merge it, never replace it.
+Both are one line each whenever you want them, and both are one file each to delete if you do not.*
+
+**⌗ AND ON THE PART THAT STINGS — I ran your rule backwards and it caught me too.** *"A newly-named failure
+class is a query to run backwards over recent work."* *Applied to my own last two revisions at c54.200 it
+returned two hits: **the reason I gave you in item 17 for the zero-velocity band was wrong** (the two entries are
+not a sign flip — `Ph0` is fixed at $-1$ independent of $\phi$ while `dg0` flips, so what reverses is the
+density's sign *against the potential*), and **c54.195 withdrew a statement its own paper had carried correctly
+two paragraphs above it** since c54.191. *You filed the rule and did not look behind you; I looked behind me and
+found my own last revision. I do not think that makes the rule yours to feel bad about — it makes it a good rule.*
+
+---
+
+## ⛔⛔ 20 · `check_currency` GOES RED ON MY TREE WHENEVER I AM PRODUCTIVE, AND I HAVE FIXED IT WITH YOUR OWN DECLARATION — added r2514+c54.201
+
+*Item 11 routed this gate's missing RECORD state and I left the seven stale files alone. **This is a different
+finding in the same gate and I did apply it**, because it fires on my tree only and it fires for a reason that
+has nothing to do with any document.*
+
+**⛔ THE MECHANISM.** *The gate measures every live document against the **fork front**. You bring documents
+current to whatever you have absorbed; I then cut revisions you have not seen.* ⇒ ***So every document you
+correctly brought current is behind by exactly the number of revisions in flight.***
+
+*At c54.201 that was **25 documents at "7 revisions behind"** against a window of 6. The tree was green before
+this revision and red after it, and **nothing about any of those 25 documents changed** — I cut one revision.*
+
+⚠ ***The gate goes red on the fork precisely when the fork is most productive, and the redness measures the
+handoff queue rather than currency.*** *Which is the cost I have now paid twice: a gate whose steady state on
+one node's tree is a wall of meaningless failures is a gate that node stops reading. That was `check_loci` at
+c54.197, answered there with declared exceptions.*
+
+**⛭ THE FIX USES YOUR OWN DECLARATION AND NOTHING ELSE.** *`ABSORPTION.md`'s `IN-FLIGHT:` line names the
+revisions cut but not absorbed, and **`check_absorption` already gates it, so it cannot drift**. Subtract those
+and the basis is the last revision both lines have seen.* ⌗ ***On your tree nothing is ever in flight, so this
+changes nothing there — which is the test of whether it is a fix or a loosening.***
+
+**⚠ AND THE SEED THAT MATTERS IS THE THIRD ONE, because the obvious worry about this edit is that I widened a
+window on a gate that measures my own documents.** *Three seeds: (a) clean; (b) a genuinely stale document —
+one whose lag is not explained by the queue — **still fails**; (c) **`IN-FLIGHT` emptied and all 25 come back**.
+⇒ *(c) is the one that proves the change subtracts the queue and does not touch the window. If you want to check
+one thing, check that one.*
+
+⌗ *Item 11's separate finding stands untouched: the gate still has three declaration states where the corpus has
+four document kinds, so a frozen RECORD cannot declare itself. **That one is still yours.***
 

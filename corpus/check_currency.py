@@ -26,7 +26,8 @@ ARC 14 step 1.  Three defects were found in this gate at r2377 and all three are
 
 Stated for reversal.
 """
-import os, re, subprocess, sys
+import os
+import re, re, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.join(HERE, '..')
 WINDOW = 6          # revisions a live document may lag before it is stale
 FRONT_EXTRA = ['FORK_HISTORY_c54.txt', 'THE_PLAN.md', 'FORK_c54.md']
@@ -100,7 +101,45 @@ def main():
         print('  [FAIL] cannot read the fork state'); return 1
     cur = max(known)
     front = sorted(n for n, r in scrapes.items() if r == cur)
-    print(f"  fork front: c54.{cur}   (from {', '.join(front)})   window: {WINDOW}")
+
+    # ** r2514+c54.201: MEASURE AGAINST THE LAST ABSORBED REVISION, NOT THE FORK FRONT. **
+    #
+    # ** THE FAILURE, ON THE FORK'S OWN TREE. **  56 brings the documents current to whatever it has
+    # absorbed; the fork then cuts revisions the observer line has not seen yet.  Every document 56
+    # correctly brought current is then "behind" by exactly the number of revisions IN FLIGHT --
+    #
+    #     *** so this gate goes red on the fork precisely when the fork is most productive, and the
+    #         redness measures the handoff queue rather than any document's currency. ***
+    #
+    # At c54.201 that was 25 documents at "7 revisions behind" against a window of 6, every one of
+    # them correct as of the last absorption.  ** A gate whose steady state on one node's tree is a
+    # wall of failures that mean nothing is a gate that node stops reading ** -- the same failure
+    # this line hit in check_loci (c54.197) and answered there with declared exceptions.
+    #
+    # ** THE FIX USES THE CORPUS'S OWN DECLARATION AND NOTHING ELSE. **  ABSORPTION.md carries an
+    # `IN-FLIGHT:` line naming the revisions cut but not yet absorbed -- already gated by
+    # check_absorption, so it cannot drift.  Subtract those and the basis is the last revision both
+    # lines have seen.  ** On 56's tree nothing is ever in flight, so this changes nothing there. **
+    inflight = set()
+    _abs = os.path.join(ROOT, 'ABSORPTION.md')
+    if os.path.exists(_abs):
+        _m = re.search(r'(?m)^IN-FLIGHT:\s*(.+)$', open(_abs, encoding='utf-8').read())
+        if _m and 'none' not in _m.group(1).lower():
+            inflight = {int(x) for x in re.findall(r'c54\.(\d+)', _m.group(1))}
+    if inflight and cur in inflight:
+        _absorbed = [r for r in known if r not in inflight]
+        if _absorbed:
+            _base = max(_absorbed)
+            print(f"  fork front: c54.{cur}   (from {', '.join(front)})   window: {WINDOW}")
+            print(f"  ** measuring against c54.{_base}, the last ABSORBED revision: "
+                  f"{len(inflight)} in flight ({', '.join('c54.%d' % r for r in sorted(inflight))}) **")
+            print("  *a document current as of the last absorption is not stale because the fork "
+                  "has moved since.*")
+            cur = _base
+        else:
+            print(f"  fork front: c54.{cur}   (from {', '.join(front)})   window: {WINDOW}")
+    else:
+        print(f"  fork front: c54.{cur}   (from {', '.join(front)})   window: {WINDOW}")
     print(f"  watching {len(watch)} live document(s), from {origin}")
     print()
     stale, undeclared, unknown, exempt, mainline = [], [], [], [], []
