@@ -37,7 +37,7 @@ VEINS = {
    "answered was **the one the argument does not need**; the UV degree is **quartic**, the ordinary zero-point "
    "degree; compactness buys the **IR free**",
    "**defining the sum**; the closed-form nonlinear $\\Lambda>0$ solution; and whether a theory with **one "
-   "dimensionful constant** can regulate at all; and \u2014 r2504 \u2014 **what selects among five-component shears at fixed $\\rho$**, since $\\sigma^2$ enters with a minus sign"),
+   "dimensionful constant** can regulate at all; and \u2014 r2505 \u2014 **what selects among five-component shears WITHOUT assuming vacuum**, since the corpus\u2019s only shear-selection principle (Goldberg\u2013Sachs) is vacuum-bound"),
  'L-175': ("PO-9 \u00b7 WHAT FIXES THE SUBSTRATE'S DIMENSION",
    "the cut is four and **says nothing about the substrate**; a descent from $D>5$ must be **multi-step**; the "
    "construction is **single-step by design** and one-step-ness is governed by **Rule 2**, not taste",
@@ -60,7 +60,7 @@ LEADS = {
    "identification is a **general ADM identity** \u2014 the Killing vectors buy a **count**, so the build is "
    "**exhibit a bend with a five-component $\\sigma_{ij}$**, and the obstruction is named: **$\\sigma^2$ enters "
    "$\\rho$ with a minus sign, leaving a five-dimensional space of shears at fixed $\\rho$ with nothing selecting "
-   "among them**",
+   "among them. \u26d4 r2505: the corpus DOES select \u2014 Goldberg\u2013Sachs via the shift\u2013shear link \u2014 but **that is a VACUUM theorem and the stratum is where matter is dynamical**, so the gap is: **supply a shear-selection statement that does not assume vacuum**",
    ['L-165','L-175'], 3, 3),
  'L-171': ("**PO-7** \u2014 whether the $0.62\\pi$ acoustic-phase disagreement is real against the sky. Needs the "
    "**seam-phase scan at PRODUCTION depth** (`FOR_54` 38); the 34%-and-stops result was at LMAXL = 1000",

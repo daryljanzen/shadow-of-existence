@@ -19,7 +19,7 @@ current: r2500+c54.194
 ## `L-165` · PO-6 · WHAT A QUANTUM OF THIS GEOMETRY IS
 
 - **MAPPED** — the boundary condition closes **per fibre** and cannot be broken by the number of fibres; the clause `c54.129` answered was **the one the argument does not need**; the UV degree is **quartic**, the ordinary zero-point degree; compactness buys the **IR free**
-- ⛔ **DARK** — **defining the sum**; the closed-form nonlinear $\Lambda>0$ solution; and whether a theory with **one dimensionful constant** can regulate at all; and — r2504 — **what selects among five-component shears at fixed $\rho$**, since $\sigma^2$ enters with a minus sign
+- ⛔ **DARK** — **defining the sum**; the closed-form nonlinear $\Lambda>0$ solution; and whether a theory with **one dimensionful constant** can regulate at all; and — r2505 — **what selects among five-component shears WITHOUT assuming vacuum**, since the corpus’s only shear-selection principle (Goldberg–Sachs) is vacuum-bound
 - *4 live lead(s) inform this vein*
 
 ## `L-175` · PO-9 · WHAT FIXES THE SUBSTRATE'S DIMENSION
@@ -46,7 +46,7 @@ current: r2500+c54.194
 
 | # | row | informs | grounded | informs-how-much | what |
 |---|---|---|---|---|---|
-| **1** | **`L-174`** | `L-165` `L-175` | 3/3 | 3/3 | **exhibit the bend for a geometry with NO CONTINUOUS ISOMETRY** — the one unworked stratum. Narrowed r2503: the symmetric sector is **closed form**, the spherically symmetric general case **exhibited r2450**, and the confined inhomogeneous case (2 KV) **worked explicitly in P11**. ⛭ r2504: P11's identification is a **general ADM identity** — the Killing vectors buy a **count**, so the build is **exhibit a bend with a five-component $\sigma_{ij}$**, and the obstruction is named: **$\sigma^2$ enters $\rho$ with a minus sign, leaving a five-dimensional space of shears at fixed $\rho$ with nothing selecting among them** |
+| **1** | **`L-174`** | `L-165` `L-175` | 3/3 | 3/3 | **exhibit the bend for a geometry with NO CONTINUOUS ISOMETRY** — the one unworked stratum. Narrowed r2503: the symmetric sector is **closed form**, the spherically symmetric general case **exhibited r2450**, and the confined inhomogeneous case (2 KV) **worked explicitly in P11**. ⛭ r2504: P11's identification is a **general ADM identity** — the Killing vectors buy a **count**, so the build is **exhibit a bend with a five-component $\sigma_{ij}$**, and the obstruction is named: **$\sigma^2$ enters $\rho$ with a minus sign, leaving a five-dimensional space of shears at fixed $\rho$ with nothing selecting among them. ⛔ r2505: the corpus DOES select — Goldberg–Sachs via the shift–shear link — but **that is a VACUUM theorem and the stratum is where matter is dynamical**, so the gap is: **supply a shear-selection statement that does not assume vacuum** |
 | **2** | **`L-204`** | `L-165` `L-175` | 3/3 | 2/3 | R-P stations ③④ — P8/P9, GR field equations and the exact-solution catalogue |
 | **3** | **`L-171`** | `L-202` | 2/3 | 3/3 | **PO-7** — whether the $0.62\pi$ acoustic-phase disagreement is real against the sky. Needs the **seam-phase scan at PRODUCTION depth** (`FOR_54` 38); the 34%-and-stops result was at LMAXL = 1000 |
 | **4** | **`L-210`** | `L-202` `L-221` `L-175` | 2/3 | 2/3 | the entry-point front — all 44 sites carry verdicts; **live leads are where a paper's own text points at an unexplored interior** |

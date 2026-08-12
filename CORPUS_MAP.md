@@ -146,6 +146,44 @@ sources: [cowork, chat]
 
 
 
+### Revision r2505 — 2026-08-11 (main line). **r2504's DARK REGION CORRECTED — the corpus DOES select among shears, and the selection is a vacuum theorem, which is a better-posed gap than the one it replaces.**
+
+**⛔ THE ERROR, one revision old.** *r2504 derived a general ADM identity and wrote **"nothing in the identity says
+which of them a bend can be"** — true — and then* ***carried it into a vein's DARK half as "nothing selects among
+five-component shears", which is a claim about the CORPUS rather than about the identity.***
+
+**⛭⛭ P9 HAS THE SELECTION: THE SHIFT–SHEAR LINK.** *"By the **Goldberg–Sachs** theorem an algebraically special
+**vacuum** carries a shear-free null geodesic congruence; **the substrate's null rulings are shear-free**, and a cut
+that inherits one as its principal congruence is algebraically special — this is the Type-D corner. But a cut need
+not inherit one: **the anisotropy of Bianchi I and of Zipoy–Voorhees IS shear, shear forbids a repeated principal
+null direction**, and so the operator climbs past Type D into Type I."*
+⇒ ***So the shear is not free at all: IT IS THE ALGEBRAIC TYPE. The substrate supplies a shear-free reference
+congruence and a cut's shear is its DEPARTURE from it.***
+
+**⛔ AND THE HYPOTHESIS IS THE WHOLE FINDING: GOLDBERG–SACHS IS A VACUUM THEOREM.** *P9 states it at both uses — "an
+algebraically special **vacuum**", "a Type-D **vacuum** admits a Killing tensor" — and its title names the object the
+**Kerr–NUT–(A)dS vacuum kernel**.*
+⇒⇒ ***AND THE BEYOND-WALL STRATUM IS EXACTLY WHERE MATTER IS DYNAMICAL, so the one shear-selection principle the
+corpus has is hypothesis-bound to the sector the wall excludes.***
+
+**⌗ SO THE GAP IS SHARPENED RATHER THAN REMOVED, and its statement changes:** *not **"no principle exists"** but*
+***"the principle we have has a hypothesis the stratum violates"*** *— which names what a beyond-wall result must
+supply:* ***a shear-selection statement that does not assume vacuum.***
+⌗ *And the corpus's position reads as one line now: **shear-free rulings → inherited congruence ⇒ Type D (vacuum,
+GS) · shear present → no repeated PND ⇒ Type I (reachable, confined) · all confining symmetry lost → THE WALL ⇒
+matter dynamical, and GS is silent**.*
+
+**⌗⌗ THE RULE, and it is about where this corpus's riskiest prose lives:** ***when you derive an identity and find it
+does not determine something, that is a statement about THE IDENTITY. Before promoting it to a statement about the
+programme, search the corpus for the constraint — the two claims differ by everything the corpus knows.***
+⚠ *And the asymmetry that makes the failure attractive: **the narrow claim is provable and the broad one is not, yet
+the broad one is what a dark-half entry wants to say**, because a dark half is supposed to be about the programme.*
+⇒ ***A vein's DARK half is the highest-risk prose in the corpus: it is where a local negative gets silently
+globalised.***
+
+⚠ *Not claimed: that **P9 erred** — it states the vacuum hypothesis explicitly at both uses — or that a non-vacuum
+principle is impossible. **Only that the corpus does not carry one.***
+
 ### Revision r2504 — 2026-08-11 (main line). **FIRST PURCHASE ON THE UNWORKED STRATUM — P11's identification is a general ADM identity, so the Killing vectors buy a COUNT, and the dark region now has a name.**
 
 **⌗⌗ P11 SAYS the Gowdy leaf's TT mode has "energy and momentum … the shear of the leaf", with the ADM equations
