@@ -155,7 +155,7 @@ sources: [cowork, chat]
 | `THE_EQUIVALENCE_STRUCTURES_CENSUS.md` | Which apparent TWO are ONE object read two ways? — the corpus-wide equivalence-structures census, the dual of the pry-apart. Read BEFORE claiming two things are distinct. ⚠ Its own comb is OWED: 'the comprehensive comb the corpus has NOT yet done'. |
 | `THE_EVOLUTION_MAP.md` | Working in paper N, what may I stand on and what may I not yet assume? Read BEFORE STANDING ON A RESULT. |
 | `THE_FERMION_SECTOR_GEOMETRY.md` | the fermion sector read in the geometry |
-| `THE_MATHEMATICS_REACH.md` | The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. LIVE: stations Ⓖ and Ⓗ are owed, and Ⓒ is the live handoff; registered as L-203. ⛭ **Ⓕ IS WALKED — `F13` (node 55, verified r2442) settled it, and it is FOUR real forms of $\mathfrak{so}(6,\mathbb … |
+| `THE_MATHEMATICS_REACH.md` | The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. ⛭ ALL FIVE STATIONS WALKED r2490–r2493 — and Ⓒ, Ⓖ, Ⓗ CONVERGED on one knot: which order-six group acts. See the block below. Registered as L-203. ⛭ **Ⓕ IS WALKED — `F13` (node 55, verified r2442) s… |
 | `THE_OPEN_PROBLEMS_LEDGER.md` | The open-problems ledger by FAMILY — what each family is, what closed it or holds it open, and its register pointer. The fork writes here; this line absorbs it. |
 | `THE_PHYSICS_REACH.md` | The R-P theatre — the corpus's claims across physics, per domain. LIVE: stations ③④ onward are owed per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home. |
 | `THE_PLAN.md` | The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance |

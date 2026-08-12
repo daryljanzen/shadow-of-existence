@@ -1,10 +1,37 @@
 ---
 name: the-mathematics-reach
 kind: STATE
-current: r2488+c54.194
-job: The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. LIVE: stations Ⓖ and Ⓗ are owed, and Ⓒ is the live handoff; registered as L-203. ⛭ **Ⓕ IS WALKED — `F13` (node 55, verified r2442) settled it, and it is FOUR real forms of $\mathfrak{so}(6,\mathbb C)$, not two: $\mathfrak{su}(3)$ embeds in exactly ONE, the compact form. This frontmatter carried Ⓕ as owed for forty-eight revisions after its own ① block recorded the answer.**
+current: r2493+c54.194
+job: The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. ⛭ ALL FIVE STATIONS WALKED r2490–r2493 — and Ⓒ, Ⓖ, Ⓗ CONVERGED on one knot: which order-six group acts. See the block below. Registered as L-203. ⛭ **Ⓕ IS WALKED — `F13` (node 55, verified r2442) settled it, and it is FOUR real forms of $\mathfrak{so}(6,\mathbb C)$, not two: $\mathfrak{su}(3)$ embeds in exactly ONE, the compact form. This frontmatter carried Ⓕ as owed for forty-eight revisions after its own ① block recorded the answer.**
 sources: [cowork]
 ---
+
+## ⛭⛭⛭ ALL FIVE STATIONS WALKED r2490–r2493 — AND THREE OF THEM CONVERGED ON ONE KNOT
+
+*This theatre's job is to **throw a whole field of mathematics at the corpus's architecture and sift what bites**.
+Five stations, walked in four revisions:*
+
+| station | verdict |
+|---|---|
+| **Ⓓ** Galois theory | ⌫ *already held* — `rem:galois`, found r1882 |
+| **Ⓕ** representation theory | ✔ **walked by `F13`, verified r2442** — and **this frontmatter carried it as owed for forty-eight revisions afterward** |
+| **Ⓒ** complex analysis / monodromy | ⛭ **BIT** — the equianharmonic curve's $\mathrm{Aut}=\mathbb Z_6$ (cyclic) where the cover carries $S_3$ (non-abelian): **same order, not isomorphic** |
+| **Ⓗ** the $\gamma^5$-graded index | ⛭ **a DECLARED gap** — P14 marks Atiyah–Singer on the branched bead as **traced rather than computed**, and the tool a branched object needs is the **equivariant/orbifold** index |
+| **Ⓖ** Lie algebroids | ⛭ **BIT** — P12 holds algebroid, anchor and connection and **zero "Atiyah sequence"**, which is exactly the structure relating those three |
+
+**⇒⇒ AND THE THREE THAT BIT ARE ONE KNOT:** *Ⓒ asks **which group acts**; Ⓗ **needs that group** for an equivariant
+index; Ⓖ supplies the **sequence in which "which group" and "what connection" are the same question**, since
+$\mathrm{ad}(P)$ is built from the group.*
+⇒ ***ALL THREE REDUCE TO ROUTED ITEM 23: $S_3$, $\mathbb Z_3$ or $\mathbb Z_6$ — and the corpus's texts have at
+points called the same thing all three.***
+
+**⌗ AND THAT IS THIS THEATRE'S STRONGEST RESULT, stronger than any single station:** ***a reach list that CONVERGES
+is more informative than one that scatters, because convergence is evidence the object is real.*** *Three fields
+approached independently and each named a different face of one unresolved thing.*
+
+⚠ *No defect is asserted against any paper. **`Q4` and `rem:galois` are both correct about different objects; P14
+declared the weight of the theorem it used; P12's algebroid is the constraint algebra's and not a bundle's.***
+
 
 ## ⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **two fields' results, and one is a misuse of a distinction this reach records**
 

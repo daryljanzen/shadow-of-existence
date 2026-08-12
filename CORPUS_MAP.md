@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2493 — 2026-08-11 (main line). **ALL FIVE MATHEMATICS STATIONS WALKED — and the three that bit CONVERGED on one knot, which is a stronger result than any of them.**
+
+**⌗⌗ STATION Ⓖ, and P12 IS the algebroid paper — so the corpus was checked before the field.** *It builds the
+**action Lie algebroid $\mathfrak{so}(5,1)\ltimes\mathcal C$** and names the anchor — "the map from an infinitesimal
+cut-deformation to its stress-energy" — carrying **4 "Lie algebroid", 10 "anchor", 3 "connection", and ZERO "Atiyah
+sequence"**.* ⚠ *(Its two "Cartan" uses are the **Cartan–Weyl skeleton**, not Cartan geometry.)*
+⇒ ⛭⛭ ***AND THE ATIYAH SEQUENCE $0\to\mathrm{ad}(P)\to TP/G\to TM\to0$ IS PRECISELY WHAT RELATES THE THREE IT HAS:
+the middle term IS a Lie algebroid, the surjection IS its anchor, and a CONNECTION is exactly a SPLITTING.***
+⌗ *And r2468 in that language is one sentence: **the sequence splits and the splitting has zero curvature**.*
+
+**⇒⇒ THE KNOT, and Ⓖ turns out not to be independent after all:**
+*· **Ⓒ** asks **which group acts** — r2491: $S_3$, $\mathbb Z_3$, $\mathbb Z_6$, unresolved;*
+*· **Ⓗ** needs that group for an **equivariant index** — r2492: Ⓒ is its prerequisite;*
+*· **Ⓖ** supplies the **sequence in which "which group" and "what connection" are the same question**, because
+$\mathrm{ad}(P)$ is built from the group.*
+⇒ ***ALL THREE REDUCE TO ROUTED ITEM 23.***
+
+**⌗ AND THAT IS THE STRONGEST RESULT THIS THEATRE HAS PRODUCED, stronger than any single station:** ***a reach list
+that CONVERGES is more informative than one that scatters, because convergence is evidence the object is real.***
+*Three fields approached independently and each named a different face of one unresolved thing.*
+⚠ *And the converse is the warning: **a reach list where every station bites separately has probably been measuring
+the reach rather than the corpus*** — `L-220`'s lesson in a different register.
+
+**⌗ AND THE CORPUS WAS AHEAD OF THE REACH TWICE:** *Ⓓ was already held (`rem:galois`, r1882) and **Ⓗ was already
+declared traced-weight by the paper itself**.* ⇒ ***A reach's first act should be to check what the corpus holds, not
+what the field says.*** *And **Ⓕ had been answered at r2442 while R-M's own frontmatter carried it as owed for
+forty-eight revisions** — r2490's header-versus-body rule earning itself inside the same row.*
+
+⚠ *No defect asserted against any paper: **`Q4` and `rem:galois` are both correct about different objects; P14
+declared the weight of the theorem it used; P12's algebroid is the constraint algebra's and not a bundle's.***
+
+**Register: 239 rows. Gates: twenty-one, twenty-one rc=0. `L-203`: five of five stations walked, converged on item 23.**
+
 ### Revision r2492 — 2026-08-11 (main line). **STATION Ⓗ WALKED — it is a DECLARED traced-weight gap, and station Ⓒ turns out to be its PREREQUISITE rather than its neighbour.**
 
 **⌗⌗ THE CORPUS NAMED THE GAP BEFORE THE REACH REACHED IT.** *P14, immediately after establishing $\dim\ker_+=3$,
