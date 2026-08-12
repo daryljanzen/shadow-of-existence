@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.184 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**13 open QUESTIONS · 30 open WORK rows · 1 HELD** *(173 struck of 217 registered).*
+**13 open QUESTIONS · 31 open WORK rows · 1 OBSERVED · 1 HELD** *(173 struck of 219 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -32,6 +32,14 @@ sources: [cowork]
 | **`L-213`** | OPEN | REGISTERED r2401 from `ENTRY_POINT_REGISTER` B18 — a frontier the colour-arc closures did NOT touch, and P13 insists on the distinction. Whether the Standard Model, read as an EXTERNAL constraint rather than derived from the bare geometry, motivates taking the… | `ENTRY_POINT_REGISTER` B18 · P13 §What stays open · `THE_BASE_RATE` | state what an external-constraint argument would have to supply, and measure it against the reference class before it is believed |
 | **`L-221`** | OPEN | REGISTERED r2378 by the observer line's `ARC 14` step-② fold — `PROTECTED_OPEN`'s `PO-5`, which had NO register row at all. The quark/lepton split, and what a baryon IS at the particle level — the five multiplets, and which carries the colour $\mathbf3$. A PRO… | `PROTECTED_OPEN` `PO-5` · `THE_PLAN` standing item ② | ask whether colour plus the branch-point placement already forces the split |
 | **`L-217`** | — | REGISTERED r2412 — R-P STATION ⑥h: HOW DO CR AND THE HIGGS MECHANISM COMPLEMENT EACH OTHER, in coherence and in correspondence? Daryl's question, and it is a genuine gap in the entry-point front's own sense: the word "Higgs" appears NOWHERE in the corpus (chec… | `THE_PHYSICS_REACH` ⑥h · P13 · P14 · `L-212` · the one-constant theorem | state the relation in one place: what CR supplies, what it takes as given, what it forbids itself from supplying, and where the two sectors' claims ac… |
+
+## 👁 OBSERVED — measured here, being worked by the FORK
+
+*Not this line's work. **Do not pick these up** — duplicating the working fork's live edge is the prime directive's first refusal (`ARC 15`). What comes back is the fork's correction, by absorption.*
+
+| lead | what was measured | what this line does |
+|---|---|---|
+| **`L-226`** | REGISTERED r2439 — ALL THREE CONTRIBUTORS REPORTED THEIR OWN ERROR RATE BEFORE THIS LINE HAD TO FIND IT, and that is a fact about how much checking their remaining work needs. · Node 37 reversed its own flagship finding … | — |
 
 ## ⏸ HELD BY DARYL — answered, not waiting
 
@@ -77,4 +85,5 @@ sources: [cowork]
 | **`L-211`** | `ENTRY_POINT_REGISTER` · the c54 closure record | REGISTERED r2397 — THE CLOSURE-ADJACENCY DEBT, which is the MECHANISM behind `L-210` rather than a second copy of it. When a gap closes, the corpus owes on the gaps in connected regions — the adjacent… |
 | **`L-218`** | `THE_HUB` · `SETUP_THE_REPO` · `PROTECTED_OPEN` · `THE_BASE_RATE` | REGISTERED r2415 — THE READER PACKAGE: the book in every reading format, plus an AI companion spun up from this corpus, in one repo. Daryl's idea, and the part that is not ordinary is not the formats.… |
 | **`L-220`** | `G1_the_arrival_path_metric` · `RP_34_GR_BASELINE` · `L-209` · `U1`/`ENTRY_POINT_REGISTER` | REGISTERED r2416 — THE ARRIVAL-PATH CLASS: the corpus's content is complete and its arrival paths are not. Three instances, three papers, three documents, and none of them a physics defect: `L-209` (r… |
+| **`L-225`** | `_dig/handoffs/` · `FOR_54.md` 19–20 · the two new receipts | REGISTERED r2439 — THE OUTSIDE READERS' PACKAGE, JUDGED ITEM BY ITEM RATHER THAN SWEPT. Four nodes (17, 23, 37/Artie, 55) read the corpus cold and sent findings. Every claim was re-derived here before… |
 

@@ -146,6 +146,69 @@ sources: [cowork, chat]
 
 
 
+### Revision r2439 — 2026-08-11 (main line). **FOUR OUTSIDE READERS' FINDINGS JUDGED ITEM BY ITEM — one real physics error applied, one verification landed, two routed, two rejected.**
+
+**⌗⌗ THE PACKAGE.** *Nodes 17, 23, 37 (Artie) and 55 read the corpus cold and sent findings, assembled on the fork's
+session branch and merged here with `c54.185` (four empty `\bibitem` entries filled, verified against the papers'
+own titles).* ***Every claim was re-derived here before it was believed — the calls split four ways.***
+
+**⛭⛭ APPLIED — THE ONE PHYSICS ERROR IN THIRTEEN PAPERS (node 23).** *P12 `sec:strata` argued the
+$\so(5,1)$-action non-transitive because* **"the diffeomorphism invariant $R_{ab}R^{ab}=6M^2/r^6+12/\alpha^4$
+separates different-mass cuts."*** ⇒ ***SCHWARZSCHILD–DE SITTER IS AN EINSTEIN SPACE, SO $R_{ab}R^{ab}=4\Lambda^2=
+36/\alpha^4$ — M-INDEPENDENT. The stated separator separates nothing at all, and does not equal the expression
+given.*** *Corrected to the **Kretschmann scalar** $R_{abcd}R^{abcd}=48M^2/r^6+24/\alpha^4$ — **the corpus's own
+recurring invariant**, with $\partial_M=96M/r^6\ne0$ — in both the body and the masthead comment that carried the
+same error.*
+⌗ **The non-transitivity conclusion is unchanged and correct;** ***what was wrong was its witness — a true claim
+resting on an invariant that carries no mass.*** *Receipt `P12_the_separator_must_carry_the_mass`: **8 checks, both
+quantities derived from the metric rather than taken from either party**, because node 23's manifest was ~2000
+revisions behind and its own Group B was obsolete for exactly that reason.*
+
+**✔ LANDED AS A RECEIPT — node 17's V14 closure, which is a change to the RECORD and not to the corpus.** *P10's
+$\gamma=\tfrac14$ was the one of sixteen load-bearing checks it could not reproduce, and* ***it found its own error
+— it had reduced the graviton power $p^2/a^3$ instead of the scale-factor operator $p_a^2/a$ — and withdrew the
+caveat.*** *Reproduced here from `eq:Hphys`: $T_s u=u''/a-u'/a^2-s(s-2)u/a^3$, then $x\sim a^{3/2}$ and
+$u=a^{1/4}w$, under which **the first-derivative term vanishes identically**, leaving*
+$$\Gamma(s)=-\tfrac49 s^2+\tfrac89 s-\tfrac7{36},\qquad \Gamma(1)=\tfrac14$$
+*a downward parabola.* ⇒ ***So $\tfrac14$ is the MAXIMUM of the family, no ordering reaches the $\tfrac34$
+threshold, and the deficiency indices are $(1,1)$ INDEPENDENTLY OF ORDERING. The paper is exact, including the word
+"attaining".***
+
+**⌗ ROUTED — items 19 and 20, both the fork's text.**
+*· **19: P1 contradicts its own abstract about $r=0$, in published text.** `§scope` says the infinite-curvature
+species is where **"infalling worldlines reach an endpoint rather than a crossing"**; the abstract says it is **"the
+finite-curvature branch point at which gravitational collapse, rather than terminating, continues as an expanding
+cosmology."*** ⇒ ***Same paper, same locus, opposite verdicts — and the masthead names the cause: `§scope` is
+pre-r2154 text the r2154 correction never reached.*** **The comment records the fix; the section did not get it.**
+⌗ **Sixth instance of the comment-versus-published class, and the worst kind yet: not a stale quotation but a
+published self-contradiction inside one paper.**
+*· **20: P7 conflates two loci it elsewhere says must never be conflated.** "the finite-curvature cosmogenesis branch
+point — **the degenerate Nariai member of the homogeneous kernel**" joins a **locus** to a **member**, and the same
+paper writes: "the back of the lap ($r=0$) and the merged-horizon radius ($\alpha/\sqrt3$, at which the Nariai
+member is seeded) are **distinct turning points … quantities never to be conflated**."* ⌗ ***And this line's own `C1`
+receipt established the same separation from the algebra — the root cover branches at $\alpha/\sqrt3$, the
+turnaround deck at $r=0$. Node 37 found from the prose what `C1` found from the covers.*** *A one-word fix.*
+
+**⛔ REJECTED — TWO, and the reasons matter more than the verdicts.**
+*· **Node 23's Group B** (the r501 acoustic/Hubble body-completion): **six of its seven target documents no longer
+exist** and the loop was reworked across the whole c54 acoustic front.* ⇒ ***The staleness is the contribution's,
+not the corpus's — `ARC 16`'s finding arriving from outside.***
+*· **Node 37's item A** (adding "on the areal reading" to P7's "genuine infinite-curvature locus"): **the sentence
+already says "areal"**, and* ***"genuine" is load-bearing — the two-boundaries argument is that each is crossable
+for the OTHER'S opposite reason, which collapses if the divergence is not real.***
+
+**⛭⛭ AND ONE OBSERVATION REGISTERED AS `L-226`, because it changes how much checking this material needs.**
+***All three contributors reported their own error rate before this line had to find it.*** *Node 37 **reversed its
+own flagship finding before it propagated** — "catching that my flagship 'finding' had the polarity backwards before
+it caused someone downstream to edit correct, current text"; node 17, three for three — **"every place my work
+flagged uncertainty, the uncertainty was mine"**; node 23 **dated its own base and flagged its own Group B as
+obsolete**.* ⇒ **A contributor that reports its own error rate needs LESS checking, not more** *— and the corpus's
+own discipline produced that behaviour in nodes that had never worked in it.*
+⚠ ***But a retraction is a claim too:*** *node 37's withdrawal concluded "no defect", and its own evidence shows
+otherwise — which is item 19.*
+
+**Register: 219 rows. Gates: twenty-one, twenty rc=0. All 17 papers compile clean.**
+
 ### Revision r2438 — 2026-08-11 (main line). **`L-224` STRUCK AT A QUARTER ITS CLAIMED SIZE — the row's own measure was the fifth bad one, and this time the diagnostic that predicts them had already been written down.**
 
 **⚠⚠ WHAT HAPPENED.** *r2437 reported "P15: 5 of 19 sections named" and treated it as coverage.* ***It was a count of

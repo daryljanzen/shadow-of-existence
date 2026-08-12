@@ -300,6 +300,65 @@ and the honest statement is that they cannot on this route.***
 
 ---
 
+## ⛔⛔ 19 · P1 CONTRADICTS ITS OWN ABSTRACT ABOUT $r=0$, IN PUBLISHED TEXT — added r2439
+
+**Where:** `corpus/BH_causality_v2.tex`, `\S`scope against the abstract of the same paper.
+
+> **`§scope`:** *"The genus admits a second, **infinite-curvature** species — the locus standardly called the
+> curvature singularity at $r=0$, where the curvature diverges and **infalling worldlines reach an endpoint rather
+> than a crossing**."*
+>
+> **The abstract:** *"the metric singularity established here is the **finite-curvature branch point at which
+> gravitational collapse, rather than terminating, continues as an expanding cosmology**."*
+
+⇒ ***`§scope` says worldlines reach an endpoint at $r=0$. The abstract says they cross it and the cosmology
+continues. Same paper, same locus, opposite verdicts.***
+
+**⌗ AND THE PAPER'S OWN MASTHEAD NAMES THE CAUSE.** *"the cosmogenesis branch point, which **IS r=0** (r2154; the
+earlier '**not r=0**' here was the **pre-r2154 belief** that it sat at the Nariai seam a full lap away). It **is
+finite-curvature** … the r-chart divergence is the **areal coordinate degenerating, not a curvature scale of the
+substrate**."* ⇒ ***`§scope` is pre-r2154 text the r2154 correction never reached. The comment records the fix; the
+section did not get it.***
+⌗ *And P1's published text elsewhere holds the corrected reading four separate ways — including* **"a branch point
+and not a barrier, the substrate $C^\infty$ across it and the curvature divergence there a perspectival artefact of
+the areal coordinate."** ***So the paper is self-inconsistent, not wrong.***
+
+**Suggested:** *`§scope`'s second species keeps its curvature statement and loses the endpoint clause — the
+divergence is real **on the areal reading**, and the locus is crossed. P7 already words this correctly:* **"the
+**areal** curvature diverges without limit, and $r=0$ remains a genuine infinite-curvature locus … each boundary is
+crossable; neither is crossable for the other's reason."**
+⚠ ***This is a physics-adjacent sentence in your paper and the call is yours. Routed, not landed.***
+
+**⌗ PROVENANCE, and it is worth stating because the item nearly went the other way.** *Node 37 (Artie) first
+flagged "finite-curvature branch point $r=0$" as a **defect** and proposed dropping the phrase; it then **read
+deeper, reversed its own flagship finding, and withdrew it before it propagated** — correctly, because that
+phrasing is the corpus's current position and the edit would have damaged correct text.* ⇒ ***Its retraction is
+right and its conclusion of "no defect" is the one thing in it that is not: the retraction's own evidence shows
+`§scope` still carries the superseded reading.***
+
+---
+
+## ⌗ 20 · P7 CONFLATES TWO LOCI IT ELSEWHERE SAYS MUST NEVER BE CONFLATED — added r2439
+
+**Where:** `corpus/CR_framework.tex`, the reducible-classification passage:
+*"The Friedmann initial singularity, on this classification, is the finite-curvature cosmogenesis branch point —
+**the degenerate Nariai member of the homogeneous kernel**"*
+
+⚠ **The apposition identifies a LOCUS with a MEMBER** *— and joins the branch point at $r=0$ to the Nariai member,
+which is seeded at $\alpha/\sqrt3$.* ⇒ **The same paper says, in published text:** *"the throat seam ($X=\alpha$),
+the back of the lap ($r=0$), and the merged-horizon radius ($\alpha/\sqrt3$, at which the Nariai member is seeded)
+are **distinct turning points** … **quantities never to be conflated**."*
+
+⌗ **And this line's own `C1` receipt (r2408) established the same separation independently, from the algebra:** *the
+root cover branches at $\lvert r\rvert=\alpha/\sqrt3$, the turnaround deck at $r=0$ —* ***disjoint branch sets,
+"exactly the two loci the corpus insists on prying apart."*** **Node 37 found from the prose what `C1` found from the
+covers.**
+
+**Suggested:** *"the branch point **of** the degenerate Nariai member" — a one-word fix.* ⌗ *Small, and worth it
+precisely because **this paper polices this conflation harder than any other in the corpus**.*
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*
