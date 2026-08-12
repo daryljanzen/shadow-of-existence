@@ -40,6 +40,15 @@ unsoftened, `PO-7` protected, the conversion is Daryl's.***
 
 ---
 
+## ✔✔ DISCHARGED — ⓶ `L-218` — THE COMPANION SPEC
+
+> ✔ **WRITTEN r2478 as `COMPANION_SPEC.md`**, with every factual claim it makes about the corpus **verified against
+> source before landing** (ten checks). *The three-state rule — ESTABLISHED / OPEN / DO-NOT-ASSERT — rests on
+> `L-237`'s finding that **the corpus declares the distinction rather than merely containing it**.* ⌗ *Kept here as
+> the record of what was routed and what it became.*
+
+### (original block)
+
 ## ⓶ `L-218` — THE COMPANION SPEC, and it is this line's to write
 
 **Why:** *the row's own next step reads **"the companion SPEC written as a repo document before any code,

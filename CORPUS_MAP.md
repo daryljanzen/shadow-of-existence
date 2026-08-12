@@ -146,6 +146,49 @@ sources: [cowork, chat]
 
 
 
+### Revision r2478 — 2026-08-11 (main line). **`COMPANION_SPEC.md` — `L-218` ②, written before any code as the row instructs, and the reason it is enforceable comes from `L-237`.**
+
+**⌗⌗ THE ONE FAILURE IT EXISTS TO PREVENT,** *in `L-218`'s words: "the usual 'AI companion to a book' fails for one
+reason: **the agent cannot distinguish what the book ESTABLISHES from what it merely DISCUSSES**, so it answers
+confidently about both — fatal for a physics framework."*
+
+**⛭⛭ AND THE REASON THIS CORPUS CAN FIX IT IS ARCHITECTURAL RATHER THAN LUCKY — `L-237`, arriving from an unrelated
+question:** ***every gate in this corpus checks something SOMEBODY DECLARED, and both lints, which infer, are
+deliberately outside the gate list.***
+⇒ ***So the corpus does not merely CONTAIN the established/discussed distinction. It DECLARES it, in named files,
+in a form a program can read. The companion is possible because the distinction is already machine-checkable — it
+is not being invented in this SPEC.***
+
+**⌗ THE THREE-STATE RULE, and every claim carries one:**
+
+| state | declared where | the companion must |
+|---|---|---|
+| **ESTABLISHED** — a receipt asserts it and **could have come out false** | `receipts/INDEX.md`, **346 registered** | cite the receipt |
+| **OPEN** — the construction cannot yet do it, by name | `PROTECTED_OPEN.md`, **8 items** | cite the item, say it is open |
+| **DO-NOT-ASSERT** — held below assertion, with a reason | the census; **53 live rows of 234** | say so, and say why |
+
+⛔ ***A claim in none of these states is one the companion does not make — not hedged, not softened, NOT MADE.***
+*"I don't have that as an established result" is a complete answer and the correct one.*
+
+**⌗ AND THE ENFORCEMENT IS NAMED RATHER THAN ASSUMED:** *`\rcpt{X}` means **X would FAIL if the claim were false**
+(`check_receipt_asserts`, `lint_assertions`); citations resolve (`check_citations`, `check_compile`); and
+**`check_kills` "fails the turn" if a protected item's home carries closure language** — so ***the companion
+inherits the rule that a closure is Daryl's***.*
+
+**⛭ AND THE WITHDRAWALS ARE THE STRONGEST FEATURE, NOT A LIABILITY TO MANAGE.** *The mode question was answered at
+r2415 and was never a fork — **"the programme lives by its own epistemic principles"** — and a programme that scores
+its own arguments against a discriminant and records entries on the unfavourable side **has no "as settled" mode
+available to it**.* ⇒ ***A companion that can say "this argument was made, scored, and withdrawn, and here is the
+discriminant that killed it" is doing something no ordinary book-companion can do at all.***
+
+⚠ *Every factual claim the SPEC makes about the corpus was **verified against source before landing** — ten checks
+covering the counts, the permissions, the gate behaviours and the two quotations. **A specification is a routed
+report about a tree, and r2463's rule applies to it.***
+⌗ *Not covered, deliberately: formats, retrieval, implementation, and the access ladder — **which rung is climbed
+is Daryl's (`L-219`); what the companion may SAY when it is climbed is this document**.*
+
+**Register: 234 rows. Gates: twenty-one, twenty-one rc=0. `NEXT.md` ⓶ discharged.**
+
 ### Revision r2477 — 2026-08-11 (main line). **c54.188 ABSORBED — the appendix generator's guard verified against a seeded glyph, and two documents found seven absorptions behind with nothing updating them.**
 
 **⌗⌗ THE ABSORPTION.** *The fork ran **`NEXT.md` ⓵** — the $\hat\Theta$ flatness scan — and its headline reproduces
