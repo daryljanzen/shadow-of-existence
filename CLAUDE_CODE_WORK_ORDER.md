@@ -115,10 +115,10 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-501`** | r2441 | done in the registering revision — a nine-point phase scan with the knob's default asserted to reproduce the coded value |
 | **`L-502`** | r2441 | done in the registering revision — eighteen readings, the `CRAMP` knob asserted a no-op at its default |
 | **`L-503`** | r2441 | done in the registering revision — three CAMB references, the model separation, and the reversal |
-| **`L-207`** | r2450 | ⓵ ✔ **DISCHARGED r2450 — exhibited, not merely asserted** · ⓶ nothing until `PO-6` moves |
-| **`L-220`** | r2453 | ✔ **instrument question CLOSED r2453 — no metric exists**; the class stands as a reading discipline, and four unread flags remain as material |
+| **`L-504`** | r2441 | done in the registering revision — five pins, each asserted to give a four-peak series |
+| **`L-505`** | r2441 | done in the registering revision — read off the production-depth pair c54.186 banked and which no revision since had read for its PEAK SERIES |
 
-*26 live rows carry a stated next step; the 14 longest-unworked are shown.*
+*28 live rows carry a stated next step; the 14 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session

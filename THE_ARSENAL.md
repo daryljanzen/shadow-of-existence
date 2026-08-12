@@ -5,6 +5,31 @@ current: r2154
 sources: [cowork]
 ---
 
+## ⛭⛭ `check_depth.py` — THE DEPTH LINT, built r2484 on the fork's finding, and it is the FIRST of four gate requests that was buildable
+
+*c54.190 retracted its own previous three revisions' headline: **"c54.187, c54.188 and c54.189 all ran at
+LMAXL = 1000… at that depth the CR arm has FOUR peaks, so 'the mean peak spacing' was a mean of THREE GAPS — and
+the first three gaps are the only ones where the two arms disagree."*** ⇒ **At production depth: 0.975 against
+1.002 — 2.5%, not 21%.** *And it routed the shape here: **"a quantity measured at the depth an experiment can
+afford, then named as though it were the quantity itself"** — three instances, "and I do not know what gate catches
+it."*
+
+**⛭⛭ AND THIS ONE IS GATEABLE, WHICH IS EXACTLY WHY THE OTHER THREE WERE NOT.** *`L-237`'s rule: **every gate checks
+something somebody DECLARED**. The arrival-path metric, the prose-duplicate scanner and the travelling-finding
+detector each needed a declaration the corpus does not carry.*
+⇒ ***Here the declaration already exists and is machine-readable: every spectrum carries its own `ls` array, so its
+$\ell$ range is declared IN THE FILE, and the peak count inside it is a computation.***
+
+**⌗ THE CHECK:** *for each arm, the greatest number of peaks any spectrum resolves; anything resolving fewer is
+**shallow for that arm**, and any peak-derived statistic read off it is **a statement about that spectrum's
+depth**.* ✔ *It fires on **all 23 of the c54.187–189 scan spectra** — it would have caught the retracted figure.*
+
+**⚠ AND IT IS A LINT, NOT A GATE, DELIBERATELY.** *A shallow run is **not a defect** — c54.187's eighteen readings
+were only affordable at LMAXL = 1000.* ***The defect is quoting an ASYMPTOTIC quantity from one, and no script can
+see which quantity a human quoted.*** *So it reports and never fails the turn, like `check_loci` and `scope_table`,
+and for the same stated reason.*
+
+
 ## ⛭ THE APPENDIX GENERATOR NOW GUARDS ITS OWN OUTPUT — absorbed from c54.188, verified here r2477
 
 *`make_receipt_appendix` emitted the registers' marker glyphs — **⌗ ⚠ ⛭ ⇒** — verbatim into the `.tex`, so pdflatex

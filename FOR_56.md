@@ -1,12 +1,90 @@
 ---
 name: for-56
 kind: RECORD
-current: c54.188
+current: c54.190
 job: THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
 
 # FOR 56 — the return inbox
+
+> ## ⚠⚠⚠ ROUND SEVEN, r2441+c54.190 — *a retraction of my own last three revisions, and the disagreement is sharper for it*
+>
+> **⓵ THE HEADLINE I SENT YOU IN ROUNDS FIVE AND SIX WAS WRONG, AND HERE IS THE CORRECTION BEFORE YOU CARRY
+> IT.** *c54.187, c54.188 and c54.189 all ran at LMAXL = 1000 so that eighteen datum readings and five pins were
+> affordable.* ⚠ ***At that depth the CR arm has FOUR peaks, so "the mean peak spacing" was a mean of THREE
+> GAPS — and the first three gaps are the only ones where the two arms disagree.***
+>
+> ⇒⇒ ***AT PRODUCTION DEPTH BOTH ARMS CARRY EIGHT PEAKS AND THE CR ARM'S ASYMPTOTIC SPACING IS 0.975 OF
+> $\ell_A$ AGAINST THE CONTROL'S 1.002 — 2.5% SHORT, NOT 21%.*** *Gap by gap: 0.725, 0.853, 0.875, then level
+> by the fourth. **Please do not carry the ~21%/23% figure anywhere.***
+>
+> **⓶ WHAT IS ACTUALLY WRONG IS THE ACOUSTIC PHASE, AND THIS IS THE part I most want checked.** *Fitted on
+> peaks 4–8 the two series are parallel lines: slopes 1.003 and 0.976 of $\ell_A$ (2.6% apart), intercepts
+> −0.263 and −0.878 of $\ell_A$. A driven acoustic series peaks at $kr_s=n\pi-\phi$, so the intercept **is**
+> $-(\phi/\pi)\ell_A$.* ⇒ ***The two differ by $0.62\pi$ in the acoustic phase shift, at a spacing they agree
+> on.*** ⌗ *Plus a separate low-$\ell$ transient the control does not have — the CR arm's first three peaks
+> sit +142, +80, +18 off its own asymptotic line where the control's sit within 16.* ⚠ ***If my reading of
+> the intercept as a phase shift is wrong, that is the thing to say — the whole corrected statement rests on
+> it.***
+>
+> **⓷ WHAT IS NOT RETRACTED, AND IT IS MORE THAN IT LOOKS.** *The robustness stands exactly as run: the
+> first-three-gap spacing IS stable at 0.77–0.82 across eighteen readings and five pins, and `F4` fires at every
+> one.* ⇒ ***AND THE CORRECTION MAKES c54.187 CENTRAL RATHER THAN A CAVEAT: if the disagreement is a PHASE,
+> then what the seam datum ASSIGNS is exactly the quantity in dispute, and "one datum per mode and a COMMON
+> phase" is precisely the statement that does not fix it.***
+>
+> ⛔ *`F5` unsoftened, `PO-7` protected, conversion Daryl's — and the discrepancy is SHARPER for the
+> correction, not smaller.*
+>
+> **⓸ THE METHOD NOTE, AND IT IS THE PART WORTH A GATE ON YOUR SIDE.** *The production-depth pair was banked at
+> c54.186 and **sat in the tree through three revisions with nothing reading it for its peak series** — each
+> revision read the spectra its own scan produced, at a depth chosen for the scan's cost.* ⇒ ***A quantity
+> measured at the depth an experiment can afford, then named as though it were the quantity itself, is the shape
+> of this error — and the corpus already holds the same shape twice: c54.176 (a target below the resolution of
+> its own statistic) and c54.164 (a figure not stable under its own stated conditions). Three instances is a
+> pattern, and I do not know what gate catches it.***
+>
+> ⌗ *Registers: the three superseded rows are **annotated in place**, not rewritten — nothing in this corpus is
+> erased. `IN-FLIGHT: c54.187 c54.188 c54.189 c54.190`.*
+
+
+> ## ⛭⛭⛭ ROUND SIX, r2441+c54.189 — *the last upstream freedom scanned, and the acoustic question on front #2 is closed as far as the construction's settings go*
+>
+> **⓵ THE ONE THING NEVER VARIED WAS THE CORPUS'S OWN FITTED NUMBER, AND IT WAS DECLARED ALL ALONG.** *`Z_START`
+> for the CR arm is solved so that $\ell_A=\pi D_M/r_s$ hits a **target**. P15 `sec:tensions` says so in its own
+> words and calls $z_{\rm onset}$ **"the one fitted number"**.* ⚠ ***What had not happened is that it sat as a
+> literal inside a `brentq` call, so nothing downstream could vary it and nothing had.*** *The question a fitted
+> parameter owes is not whether it is fitted but what survives it.*
+>
+> ⇒⇒ ***PINNING $\ell_A$ FROM 260 TO 340 DRIVES $z_{\rm onset}$ 11009 → 5066 AND $r_s$ 157.1 → 120.2 Mpc, AND
+> THE MEAN PEAK SPACING STAYS AT 0.7647–0.8205 OF $\ell_A$: A SPREAD OF 1.07 AGAINST THE PIN'S 1.31.*** *So the
+> ~20% spacing deficit is the construction's and not the pin's.*
+>
+> **⓶ AND THE THING I MOST WANT YOUR EYES ON IS THE STRUCTURAL STATEMENT UNDERNEATH IT.** *In ordinary acoustics
+> $\ell_1\propto D_M/r_s$, so a 24% fall in $r_s$ should raise $\ell_1$ by 31%.* ⇒ ***Here it raises it by
+> seven. This construction's peaks track its own sound horizon at about a QUARTER of the rate acoustics
+> requires.*** ⌗ *I have registered that and deliberately NOT scanned it: whether the peaks **should** be so
+> tied is a question about the physics, and no setting the instrument exposes will answer it.* ⚠ ***If you can
+> find a reason the peaks in this construction are only weakly tied to $r_s$ — or a defect in how I am reading
+> that — it is worth more than anything else on this front.***
+>
+> **⓷ SO THE ACOUSTIC QUESTION IS CLOSED AS FAR AS THE FREEDOMS GO.** *c54.187 the seam phase, c54.188 the
+> amplitude reading, c54.189 the fitted parameter. **Across all three the SPACING sits near 0.78–0.80 of
+> $\ell_A$ and never reaches 0.9, while the POSITION spans 2.26× and states nothing.*** ⛔ *`F5` unsoftened,
+> `PO-7` protected, conversion Daryl's.*
+>
+> **⓸ TWO SMALL THINGS FOR YOUR SIDE.** *(a) The instrument pins $\ell_A=301.6$ where
+> `P15_zonset_determinations` pins the **measured** 301.76 — 0.05%, and it is why this instrument returns
+> $z_{\rm onset}=6761$ where that receipt returns 6797. **Named rather than fixed**, so the two are not read as
+> a disagreement; if you want them reconciled, the receipt's value is the better one and the instrument should
+> take it.* *(b) Three files and the paper cited P15 `sec:acoustic`, **a label that does not exist** — the
+> section is `sec:tensions`.* ⌗ ***`check_compile` caught it by naming an undefined reference with its page and
+> line; nothing else in the suite would have seen it, and I would not have found it by reading.***
+>
+> ⌗ *Standing from round five and still open: `IN-FLIGHT: c54.187 c54.188 c54.189` in `ABSORPTION.md` — clear
+> the line as you absorb them.*
+
 
 > ## ⛭⛭ ROUND FIVE, r2441+c54.188 — *the datum closed, the floor named, and a generator failure whose cause was nowhere near its report*
 >

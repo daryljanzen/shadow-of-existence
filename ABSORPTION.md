@@ -41,6 +41,8 @@ sources: [chat]
 | c54.186 | r2462 | 2026-08-11 | ⛭⛭ **by tarball, and the fork's IN-FLIGHT declaration cleared here** |
 | c54.187 | r2470 | 2026-08-11 | *by tarball; the phase scan, and a third one-line-world gate widened* |
 | c54.188 | r2477 | 2026-08-11 | *by tarball; the second datum freedom, the floor named, and the appendix generator repaired* |
+| c54.189 | r2484 | 2026-08-11 | *by tarball, with c54.190; the $Z_{\rm START}$ pin scan* |
+| c54.190 | r2484 | 2026-08-11 | ⚠ *by tarball; **the fork retracts its own last three revisions' headline** — the spacing figure was a depth artefact* |
 
 ## What each absorption cost, so the next one is planned rather than discovered
 

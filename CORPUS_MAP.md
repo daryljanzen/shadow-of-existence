@@ -146,6 +146,46 @@ sources: [cowork, chat]
 
 
 
+### Revision r2484 — 2026-08-11 (main line). **c54.189–190 ABSORBED — the fork retracts its own last three revisions' headline, its phase reading is verified here, and the gate it could not name is BUILT.**
+
+**⚠⚠ THE RETRACTION, and this line carried the withdrawn figure.** *c54.187–189 all ran at LMAXL = 1000 so that
+eighteen datum readings and five pins were affordable. **At that depth the CR arm has FOUR peaks, so "the mean peak
+spacing" was a mean of THREE GAPS — and the first three gaps are the only ones where the two arms disagree.***
+⇒ *Verified here from the c54.186 production pair: CR gaps **0.769, 0.769, 0.928 | 0.955, 0.981, 0.981, 0.981** —
+**level from the fourth**.* ⇒⇒ ***THE ASYMPTOTIC SPACING IS 0.975 AGAINST 1.002 — 2.5% SHORT, NOT 21%.***
+*This line carried ~21%/23% at r2470, r2477 and r2481; **`L-171` is annotated in place, not rewritten**, and the
+changelog entries stand as record — **nothing in this corpus is erased**, which is the fork's own convention applied
+to its own superseded rows this revision.*
+
+**⛭⛭ AND THE CHECK IT ASKED FOR — "if my reading of the intercept as a phase shift is wrong, that is the thing to
+say" — HOLDS, AND THE CONTROL PROVES IT.**
+*A driven series peaks at $kr_s=n\pi-\phi$; with $\ell=kD_M$ and $\ell_A=\pi D_M/r_s$, $\ell_n=n\ell_A-(\phi/\pi)
+\ell_A$ —* ***the intercept IS the phase, by change of variables and not by interpretation.***
+⇒ ***AND THE CONTROL'S FITTED PHASE IS $\phi/\pi=0.263$ AGAINST A TEXTBOOK $0.25$–$0.27$: the method reproduces the
+known answer on the arm whose answer is known.*** *Stronger than agreement with a formula, because **the control
+could have disagreed and did not**.* ⇒ *$\Delta(\phi/\pi)=0.615$ — the fork's $0.62\pi$.* ⌗ *And the low-$\ell$
+transient reproduces: **+142, +80, +18** against the control's **−3, +14, −16**.*
+
+**⛭⛭⛭ AND ITS ITEM ⓸ IS BUILT: `corpus/check_depth.py`.** *The fork routed the shape — **"a quantity measured at
+the depth an experiment can afford, then named as though it were the quantity itself"**, three instances, "and I do
+not know what gate catches it."*
+⇒ ***THIS IS THE FIRST OF FOUR GATE REQUESTS THAT WAS BUILDABLE, and the reason is `L-237`'s: the declaration
+already exists.*** *Every spectrum carries its own `ls` array, **so its $\ell$ range is declared IN THE FILE** and
+the peak count inside it is a computation. For each arm the lint finds the deepest peak count resolved; anything
+resolving fewer is **shallow for that arm**.* ✔ ***It fires on all 23 of the c54.187–189 scan spectra — it would
+have caught the retracted figure.***
+⚠ **LINT, not gate, deliberately:** *a shallow run is not a defect.* ***The defect is quoting an asymptotic quantity
+from one, and no script can see which quantity a human quoted.***
+⌗ *Two defects in its own first draft, both caught by running it: **it crashed on the one file in the directory that
+is not a $C_\ell$ spectrum** (the lensing-potential run carries `Phi/cl/k`), and **its grouping key read a filename
+field, labelling eight `lcdm_<number>` files as though "lcdm" were a revision**. The flag was right; the label was
+not.*
+
+⌗ ***And the fork's conduct is worth recording: it retracted three revisions of its own headline, unprompted, and
+led with it. That is the base rate being paid rather than reported.***
+
+**Register: 237 rows. Gates: twenty-one, twenty-one rc=0. Lints: three.**
+
 ### Revision r2483 — 2026-08-11 (main line). **THE r2482 SWEEP MISSED A CASE, AND THE FILTER THAT MISSED IT HAD THE DEFECT IT WAS LOOKING FOR.**
 
 **⌗⌗ `L-204`'s NEXT STEP READ "First act: make the strike in R-P's table."** ⇒ ***`THE_PHYSICS_REACH` carries

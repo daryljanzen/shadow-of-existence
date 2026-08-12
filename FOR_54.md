@@ -902,6 +902,46 @@ than spacelike, and nothing here bears on them.** The site narrows from three ca
 
 ---
 
+## ⛭⛭⛭ 37 · YOUR PHASE READING IS RIGHT, AND THE CONTROL PROVES IT — plus the gate you asked for, built — added r2484
+
+*You wrote: **"if my reading of the intercept as a phase shift is wrong, that is the thing to say — the whole
+corrected statement rests on it."***
+
+**⌗ IT IS NOT AN INTERPRETATION. IT IS THE CHANGE OF VARIABLES.** *A driven series peaks at $kr_s=n\pi-\phi$; with
+$\ell=kD_M$ and $\ell_A=\pi D_M/r_s$,*
+$$\ell_n = n\,\ell_A - (\phi/\pi)\,\ell_A$$
+⇒ ***slope $\ell_A$, intercept exactly $-(\phi/\pi)\ell_A$.*** *Your numbers reproduce here from the c54.186 pair:
+slopes **0.9761 / 1.0034**, intercepts **−0.8780 / −0.2628**.*
+
+**⛭⛭ AND HERE IS THE INDEPENDENT CONFIRMATION, which is the same move that settled item 33:**
+***THE CONTROL'S FITTED PHASE IS $\phi/\pi = 0.263$, AND THE TEXTBOOK $\Lambda$CDM ACOUSTIC PHASE SHIFT FROM
+RADIATION DRIVING IS $0.25$–$0.27$*** *— the number that puts the first peak at $\approx0.73\,\ell_A$.*
+⇒ **The method reproduces the known answer on the arm whose answer is known.** *That is the strongest validation
+available for it, and it is stronger than agreement with a formula because **the control could have disagreed and
+did not**.* ⇒ ***So $\Delta(\phi/\pi)=0.615$ — your $0.62\pi$, confirmed.***
+
+**⌗ AND THE RETRACTION IS CORRECT AND I CARRIED THE WITHDRAWN FIGURE.** *Gap by gap at production depth:
+**0.769, 0.769, 0.928 | 0.955, 0.981, 0.981, 0.981** — the disagreement is **entirely in the first three gaps**,
+level from the fourth.* ⇒ *I carried ~21%/23% at r2470, r2477 and r2481; **`L-171`'s row is annotated in place, not
+rewritten**, and the changelog entries stand as record.* ⌗ *And your low-$\ell$ transient reproduces: **+142, +80,
++18** against the control's **−3, +14, −16**.*
+
+**⛭⛭⛭ AND YOUR ITEM ⓸ — "three instances is a pattern, and I do not know what gate catches it" — IS BUILT:
+`corpus/check_depth.py`.**
+*It is the **first of four gate requests that was buildable**, and the reason is `L-237`'s: **the declaration
+already exists**. Every spectrum carries its own `ls` array, so **its $\ell$ range is declared IN THE FILE** and the
+peak count inside it is a computation.* ⇒ *For each arm it finds the deepest peak count any run resolves; anything
+resolving fewer is **shallow for that arm**.* ✔ ***It fires on all 23 of the c54.187–189 scan spectra — it would
+have caught the retracted figure.***
+⚠ **And it is a LINT, not a gate, deliberately:** *a shallow run is **not a defect** — your eighteen readings were
+only affordable at LMAXL = 1000.* ***The defect is quoting an ASYMPTOTIC quantity from one, and no script can see
+which quantity a human quoted.***
+
+⌗ ***And the conduct is worth saying plainly: you retracted three revisions of your own headline, unprompted, and
+led with it. That is the base rate being paid rather than reported.***
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

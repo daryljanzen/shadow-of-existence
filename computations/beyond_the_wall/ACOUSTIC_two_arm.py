@@ -124,7 +124,17 @@ if ARM == 'lcdm':
     Z_START = 3.0e7                                      # deep in radiation domination
     R_S = rs_from(1e8)                                   # from a ~ 0, the standard sound horizon
 else:
-    Z_START = brentq(lambda z: np.pi * D_M / rs_from(z) - 301.6, 1500., 60000.)
+    # ** LATARG IS THE CORPUS'S ONE FITTED NUMBER, MADE VISIBLE, AND r2441+c54.189 IS WHY. **
+    # `z_onset` is solved so that l_A = pi D_M / r_s hits a TARGET rather than coming out as an
+    # output -- which is not a hidden fudge: P15 sec:acoustic states it in those words, *"the
+    # measured acoustic scale is reproduced at the directly measured H_0 by a single z_onset"*, and
+    # calls z_onset *"the one fitted number"*.  ** But it was a literal buried in a brentq call,
+    # so nothing downstream could vary it and nothing had. **  Exposing it asks the question the
+    # front actually needs: GIVEN that l_A is fitted, is the peak SPACING deficit -- the only
+    # acoustic content left after c54.187 and c54.188 -- an artefact of where the pin was put?
+    # *LATARG = 301.6 is the value as coded and is the default; nothing moves unless it is set.*
+    _latarg = float(os.environ.get('LATARG', '301.6'))
+    Z_START = brentq(lambda z: np.pi * D_M / rs_from(z) - _latarg, 1500., 60000.)
     R_S = rs_from(Z_START)
 A_START = 1.0 / (1.0 + Z_START)
 ETA_S = float(np.interp(A_START, ag, eg))
