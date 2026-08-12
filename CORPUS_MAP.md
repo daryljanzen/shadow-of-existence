@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2551 — 2026-08-11 (main line). **THE `COMPUTES:` UPTAKE IS FALLING, NOT FLAT — and the node reading the row was the cause.**
+
+**⛔ THE RECOUNT.** *`L-230` has said for a hundred revisions that the uptake is **"flat at 40 of 357"**. Measured:*
+***39/309 = 12.6% at r2447 → 40/357 = 11.2% → 40/395 = 10.1%.***
+⇒ ***One adoption while eighty-six receipts were written. The COUNT was flat; the SHARE was falling — and a
+convention whose share falls while the corpus grows is not being adopted, it is being left behind.***
+
+**⛭⛭ AND THE CAUSE IS NAMED RATHER THAN DIFFUSE.** *Receipts added this session: **84**. Carrying the header:
+**1**.*
+⇒ ***So the row sat at #6 on the board describing an adoption problem while the node reading the board was the one
+not adopting.***
+
+**⌗ AND THE DESIGN POINT THE RECOUNT EXPOSED.** *`L-230`'s ⓵ closed the instrument question at r2447 because **"no
+gate can read a quantifier"** — which is true of the header's **TRUTH**.*
+⇒ ***But its PRESENCE is mechanical and could always have been required. The closure was about the unreachable half,
+and the reachable half was never addressed*** *— which is how a convention in a corpus with twenty-four gates became
+a thing nobody is reminded of.*
+⚠ *Not built here: **a presence check would make ~84 existing receipts fail**, and that is a decision about work
+rather than a cleanup. The row now states the decision instead of the number.*
+
+⌗ ⛭ **THE MEASUREMENT RULE:** ***a count is not a rate. When a row reports a bare number as "flat", recompute the
+DENOMINATOR.***
+⌗ *And three of the receipt's own runs failed first: it **counted itself** (its docstring contains the token), and
+it **matched two phrases against one source** when one lives in `BOARD.md` and the other in the register. ***A
+measurement that includes the instrument taking it is off by the instrument.***
+
 ### Revision r2550 — 2026-08-11 (main line). **`check_currency`'s PARSER WAS NARROWER THAN THE CONVENTION — 40 of 70 declarations never parsed — and the first fix turned the gate green by not checking.**
 
 **⛔ THE BUG.** *The regex accepted `c54.N`, `rNNNN`, `none`, `n/a`. The corpus actually writes **`rNNNN+c54.N`**,

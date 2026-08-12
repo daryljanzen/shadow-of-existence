@@ -140,7 +140,7 @@ LEADS = {
    [], 3, 0),
  'L-217': ("the CR/Higgs relation is stated; **`F1` stays live \u2014 the relation breaks if the gauge group is "
    "ever promoted to forced**", ['L-221'], 2, 2),
- 'L-230': ("the `COMPUTES:` convention \u2014 uptake **flat at 40 of 357** as of r2447 \u2014 **the number is unmeasured since**, and a convention whose uptake nobody re-counts is a convention nobody is adopting while the corpus grew a sixth; a "
+ 'L-230': ("the `COMPUTES:` convention \u2014 uptake \u26d4 **FALLING, re-measured r2551**: 39/309 (12.6%) at r2447 \u2192 40/357 (11.2%) \u2192 **40/395 (10.1%)** \u2014 **one adoption while eighty-six receipts were written**, and this line wrote **84 this session and used it once**. \u21d2 **The decision: require the header's PRESENCE (mechanical, and ~84 receipts would fail) or stop calling it a convention** \u2014 **the number is unmeasured since**, and a convention whose uptake nobody re-counts is a convention nobody is adopting while the corpus grew a sixth; a "
    "receipt that declares what it computed is a receipt a vein can be excavated through", ['L-165','L-221'], 3, 1),
  'L-508': ("**what the seam datum CARRIES, measured**: across four production-depth seam phases the acoustic "
    "phase spans 0.891 in $\\phi/\\pi$ and the peak heights 0.483\u20131.618, **the control's values inside both** "
