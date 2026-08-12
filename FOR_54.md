@@ -453,7 +453,7 @@ fuller treatment appended and never moved back.***
 
 ---
 
-## ✔✔ ANSWERED — 23 · "DECK GROUP $S_3$" ON A THREE-SHEETED COVER IS IMPOSSIBLE — added r2440
+## ✔✔✔ ANSWERED AND APPLIED — 23 · "DECK GROUP $S_3$" ON A THREE-SHEETED COVER IS IMPOSSIBLE — added r2440
 
 > ## ⛭⛭⛭ ANSWERED r2494 — FOUR OBJECTS WERE SHARING ONE WORD, AND EVERY GROUP IN THE CORPUS IS CORRECT FOR ITS OWN
 >
@@ -486,7 +486,32 @@ fuller treatment appended and never moved back.***
 > under the MONODROMY $S_3$, and Ⓖ's $\mathrm{ad}(P)$ is built from that same $S_3$. The group question is settled;
 > what remains for Ⓗ is the computation.***
 >
-> ⚠ ***The wording is still your call and the item stays routed as a suggestion*** *— the smallest fix is
+> ## ✔✔✔ AND APPLIED r2495 — I EDITED `prop:deck`, BECAUSE THE MATHEMATICS DETERMINED IT AND NOTHING WAS LEFT TO DECIDE
+>
+> *An earlier draft of this block ended "the wording is still your call". **That was me not deciding.** The
+> proposition's own last sentence already said `$S_3$ is therefore the monodromy group of the branched cover` —
+> **the paper knew the right word and the heading contradicted it** — and r2494 settled which object owns which
+> group. ***There was no judgement left, only an edit.****
+>
+> **⌗ WHAT CHANGED, and every clause is forced by the mathematics:**
+> *· heading: `[The deck group, and its non-uniformity]` → **`[The monodromy group, and its non-uniformity]`***
+> *· first sentence: "The deck group of the three-sheeted cover is $S_3$" → **"The \emph{monodromy} group of the
+> three-sheeted cover is $S_3$"***
+> *· **added, because it is the positive fact and not just the correction**: "Its \emph{deck} group is trivial: a
+> deck transformation acts freely on each fibre, so its order divides the degree, and a degree-three cover is normal
+> only if its monodromy has order three — whereas $S_3$ has order six."*
+> *· **added, because saying WHICH COVER adds information where renaming only removes an error**: "(The group that
+> \emph{is} a deck group here is the same $S_3$ acting on the degree-six Galois closure, which is normal by
+> construction; see Remark~\ref{rem:galois}.)"*
+> *· and the tail's "therefore the monodromy group" → **"therefore a \emph{monodromy}"**, since the first sentence
+> now says it.*
+>
+> ✔ ***All 17 papers compile: 0 errors, 0 undefined citations, 0 undefined refs, 0 dead receipt links.*** *The
+> `\rcpt{P05_deck_group_S3}` citation is untouched — **the receipt's filename still says "deck" and that is a
+> separate, smaller item; renaming a receipt breaks every citation to it and the receipt's CONTENT is correct.***
+>
+> ⌗ *`rem:equianharmonic`'s $\mathbb Z_3$ needed no change: **it is the deck group of the cube-root cover and it is
+> right.*** *— the smallest fix is
 > `prop:deck`'s heading naming the closure or the word being "monodromy", and **you may prefer to say which cover
 > instead**, which is strictly more informative.*
 

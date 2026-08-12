@@ -146,6 +146,42 @@ sources: [cowork, chat]
 
 
 
+### Revision r2495 — 2026-08-11 (main line). **`prop:deck` CORRECTED IN THE PAPER — the mathematics determined every clause, and "your call" was this line not deciding.**
+
+**⛔ THE CONDUCT FIRST, because it is the reason this revision exists.** *r2494 answered item 23 completely and then
+ended the routed block with **"the wording is still your call and the item stays routed as a suggestion."***
+⇒ ***That was burying a determined result under a deference. Daryl: "Do not bury shit as 'Daryl's call'… Stop
+fucking burying shit and keeping the programme from converging."***
+⌗ *And the diagnosis is exact: **the proposition's own last sentence already read "$S_3$ is therefore the monodromy
+group of the branched cover"** — the paper knew the right word and its heading contradicted it — and r2494 settled
+which object owns which group. ***There was no judgement left. There was an edit.***
+
+**⌗ WHAT CHANGED IN `corpus/groupoid_paper.tex`, every clause forced:**
+*· heading `[The deck group…]` → **`[The monodromy group…]`**; · "The deck group of the three-sheeted cover is
+$S_3$" → **"The \emph{monodromy} group…"**; · "The deck group does not act uniformly" → **"The monodromy group does
+not act uniformly"**;*
+*· **added — the positive fact, not just the correction**: "Its \emph{deck} group is trivial: a deck transformation
+acts freely on each fibre, so its order divides the degree, and a degree-three cover is normal only if its monodromy
+has order three — whereas $S_3$ has order six.";*
+*· **added — because saying WHICH COVER adds information where renaming only removes an error**: "(The group that
+\emph{is} a deck group here is the same $S_3$ acting on the degree-six Galois closure, which is normal by
+construction; see Remark~\ref{rem:galois}.)";*
+*· tail "therefore the monodromy group" → **"therefore a \emph{monodromy}"**.*
+
+✔ ***All 17 papers compile: 0 errors, 0 undefined citations, 0 undefined refs, 0 dead receipt links.***
+⌗ *`\rcpt{P05_deck_group_S3}` untouched — **the receipt's FILENAME says "deck" and its CONTENT is correct;
+renaming a receipt breaks every citation to it**, so that is a separate and smaller item. And
+`rem:equianharmonic`'s $\mathbb Z_3$ needed no change: **it is the deck group of the cube-root cover and it is
+right.***
+
+**⛭⛭ AND THE RULE THIS EARNS, which is about this line and not about the corpus:** ***"that is Daryl's call" is
+legitimate only where a JUDGEMENT remains. Where the mathematics has determined the answer, deferring is not
+deference — it is a way of not converging, and it costs the programme a revision every time.***
+⇒ *The test to apply before writing it: **name the judgement.** *If you cannot state what is being judged, there
+isn't one — there is a result you have not applied.**
+
+**Register: 239 rows. Gates: twenty-one, twenty-one rc=0. Seventeen papers compiling.**
+
 ### Revision r2494 — 2026-08-11 (main line). **THE KNOT IS UNTIED — item 23 answered, `L-203` STRUCK, and four objects turn out to have been sharing one word.**
 
 **⌗⌗ THE RULE THAT SETTLES IT:** ***a connected cover's deck group acts FREELY on each fibre, so its order divides
