@@ -1,10 +1,32 @@
 ---
 name: the-physics-reach
 kind: STATE
-current: r2520+c54.201
-job: The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ onward are owed per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home.
+current: r2521+c54.201
+job: The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521 (the Unruh treatment is a BIG OWE, routed as item 47); ⑥ onward are owed per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home.
 sources: [cowork]
 ---
+
+## ⛔⛔⛔ STATION ⑤ WALKED r2521 — AND IT IS THE BIGGEST OWE THIS THEATRE HAS FOUND
+
+**⌗ THE CLAIM.** *P7: "with no completed horizon there is no background on which the Bogoliubov mode-mixing yielding
+an **exactly thermal** Hawking flux can be computed." P1: the globally completed horizon "is … **never physically
+realised**".*
+⌗ ***The argument turns on COMPLETION IN FINITE EXTERIOR TIME, not on horizons being chart artefacts*** *— and both
+uses of "chart artefact" in the corpus **deny** that something is one.*
+
+**⛭⛭ AND UNRUH IS THE CASE THAT FORCES THAT DISTINCTION.** *An **uncontroversially observer-dependent Rindler
+horizon** gives an **exactly thermal** spectrum in flat space.* ⇒ ***So "perspectival" cannot entail "no thermal
+flux" — only "never completes" can, and that IS the corpus's claim. The argument survives.***
+
+**⛔ BUT: Hawking 94, graviton 73, Bogoliubov 8 — and Unruh 0, $\langle T_{\mu\nu}\rangle$ 0, trans-Planckian 0,
+Rindler-the-horizon 0.** ***Every "Rindler" in the corpus is Rindler the author, on lensing.***
+⇒ ***A corpus arguing about when a thermal spectrum arises, that never names the standard case, has an unaddressed
+first question.*** *Routed as item 47.*
+
+⌗ **AND UNLIKE ③④, THIS IS NOT A MISSING SENTENCE.** *③④'s gap was assembled from two papers the corpus already had.*
+***Here the treatment must be WRITTEN*** *— and it strengthens the argument, because Unruh forces the precision the
+papers already keep unstated.*
+
 
 ## ⛭⛭⛭ STATION ③④ WALKED r2520 — and it bit in exactly one place
 

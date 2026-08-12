@@ -1301,6 +1301,49 @@ the claim it justifies currently sit in different papers.*
 
 ---
 
+## ⛔⛔⛔ 47 · THE CORPUS NEVER MENTIONS UNRUH — and it is the first question a QFT-in-curved-space referee asks — added r2521
+
+**Where:** *P7's paradox argument — "with no completed horizon there is no background on which the Bogoliubov
+mode-mixing yielding an **exactly thermal** Hawking flux can be computed, so the thermal endpoint the paradox must
+reconcile is itself **absent as a horizon effect**" — and P1's "the globally completed horizon … is **never
+physically realised**", the densities "**never form at any finite exterior time**".*
+
+**⌗ THE ARGUMENT TURNS ON COMPLETION, WHICH IS THE RIGHT THING FOR IT TO TURN ON.** *"completed horizon" 24 uses,
+"finite exterior" 28, and both "chart artefact" uses **deny** that something is one. **Nowhere does the corpus argue
+"perspectival, therefore no flux".***
+
+**⛭⛭ AND THAT IS EXACTLY THE DISTINCTION UNRUH FORCES.** *A uniformly accelerated observer in **flat space** sees an
+**exactly thermal** spectrum, from a **Rindler horizon that is uncontroversially observer-dependent** — no gravity,
+no collapse, nothing anyone calls a completed physical surface.*
+⇒ ***So "the horizon is perspectival" cannot by itself entail "no thermal flux". Only "the horizon never COMPLETES"
+can — and that IS your claim, so the argument survives the test cleanly.***
+
+**⛔ BUT THE ABSENCE IS TOTAL, and that is why this is a big owe:**
+
+| across all 17 papers | |
+|---|---|
+| Hawking · graviton · information paradox · Bogoliubov · Bekenstein | **94 · 73 · 13 · 8 · 8** |
+| ***Unruh*** | ***0*** |
+| ***stress tensor*** $\langle T_{\mu\nu}\rangle$ | ***0*** |
+| ***trans-Planckian*** | ***0*** |
+| ***Rindler HORIZON*** | ***0*** — *every "Rindler" is Rindler the **author**, on lensing* |
+
+⇒ ***A corpus that mentions Hawking ninety-four times and Unruh zero, while arguing about when a thermal spectrum
+arises, has an unaddressed FIRST question.*** *And $\langle T_{\mu\nu}\rangle$ and trans-Planckian are the standard
+companions — a reader arrives with three and finds none named.*
+
+**⌗ AND UNLIKE ITEM 46 THIS IS NOT A MISSING SENTENCE.** *That gap was a completeness argument the corpus already
+held in another paper.* ***Here nothing addresses Unruh at all: the treatment must be WRITTEN rather than
+assembled.***
+⇒ **And it strengthens the argument** — *Unruh is the case that forces the completion-versus-perspectival
+distinction your papers already keep, so naming it turns an unstated precision into a stated one.*
+
+⚠ *Not claimed: that the argument is wrong (**this finds it survives and says why**), or that Unruh contradicts it.*
+***What the missing paragraph would have to establish is whether CR's reading says anything DISTINCTIVE about Unruh
+beyond consistency — and that is a real question, not a formality.***
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

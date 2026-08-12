@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r2521 — 2026-08-11 (main line). **R-P STATION ⑤ — THE CORPUS NEVER MENTIONS UNRUH, and it is the first question a referee in that field asks.**
+
+**⌗ THE CLAIM, and it is precise.** *P7: "with no completed horizon there is no background on which the Bogoliubov
+mode-mixing yielding an **exactly thermal** Hawking flux can be computed, so the thermal endpoint the paradox must
+reconcile is itself **absent as a horizon effect**." P1: the globally completed horizon "is … **never physically
+realised**", the densities "**never form at any finite exterior time**".*
+⌗ ***So the argument turns on COMPLETION IN FINITE EXTERIOR TIME, not on horizons being chart artefacts*** —
+*"completed horizon" 24, "finite exterior" 28, and both "chart artefact" uses **deny** that something is one.*
+
+**⛭⛭ AND THAT IS EXACTLY THE DISTINCTION UNRUH FORCES.** *A uniformly accelerated observer in **flat space** sees an
+**exactly thermal** spectrum from a **Rindler horizon that is uncontroversially observer-dependent**.*
+⇒ ***So "the horizon is perspectival" cannot by itself entail "no thermal flux". Only "the horizon never COMPLETES"
+can — and that IS the corpus's claim, so the argument survives the test cleanly.***
+
+**⛔ BUT THE ABSENCE IS TOTAL.** *Across all seventeen papers: **Hawking 94, graviton 73, information paradox 13,
+Bogoliubov 8, Bekenstein 8** — and* ***Unruh 0, $\langle T_{\mu\nu}\rangle$ 0, trans-Planckian 0, entanglement
+entropy 0, with every "Rindler" being Rindler the AUTHOR on lensing, never a Rindler HORIZON.***
+⇒ ***A corpus that mentions Hawking ninety-four times and Unruh zero, while arguing about when a thermal spectrum
+arises, has an unaddressed FIRST question.***
+
+**⌗⌗ AND UNLIKE ③④ THIS IS NOT A MISSING SENTENCE.** *That gap was a completeness argument already held in another
+paper.* ***Here nothing addresses Unruh at all — the treatment must be WRITTEN rather than assembled.*** *Routed as
+item 47.* ⇒ *And it **strengthens** the argument: Unruh forces the completion-versus-perspectival distinction the
+papers already keep, so naming it turns an unstated precision into a stated one.*
+
+⚠ *Not claimed: that the argument is wrong — **this receipt finds it survives and says why**. **What the missing
+paragraph must establish is whether CR's reading says anything DISTINCTIVE about Unruh beyond consistency**, and
+that is a real question.*
+⌗ *Three measurements in the receipt's first draft were wrong and were corrected by re-reading rather than
+re-asserting: **"chart artefact" is not zero** (it occurs twice, both denials), and **"Rindler" is not zero** (three
+uses, all the author). ***The finding survived all three corrections because it never rested on the counts alone.***
+
 ### Revision r2520 — 2026-08-11 (main line). **R-P STATION ③④ WALKED — P9's "every algebraic type" is right, and the reason is a sentence it does not contain.**
 
 **⌗ THE FIND.** *P9 claims the operator fills the sector **"across every algebraic (Petrov) type"** and, in the same
