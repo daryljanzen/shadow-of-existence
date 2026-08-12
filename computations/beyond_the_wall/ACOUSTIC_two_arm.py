@@ -268,12 +268,38 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         # theta_g = (3/4) D k c_s sin(phi).  phi = 0 is a density extremum with theta = 0.
         _phi = float(os.environ.get('CRPHI', '0.0'))
         xe = float(os.environ.get('CRXE', str(1.0 / np.sqrt(3))))
+
+        def _T(x):
+            """the corpus's own transfer shape 3(sin x - x cos x)/x^3, the C4 form"""
+            x = np.asarray(x, float)
+            return np.where(x < 1e-6, 1.0 - x ** 2 / 10.0,
+                            3 * (np.sin(x) - x * np.cos(np.where(x < 1e-6, 1.0, x)))
+                            / np.where(x < 1e-6, 1.0, x) ** 3)
+
+        # ** CRAMP OPENS THE SECOND DATUM FREEDOM: WHAT "FLAT IN k" IS FLAT AT.  c54.187 scanned the
+        # PHASE and named this one as the remaining one.  The coded reading evaluates the C4 transfer
+        # at a SINGLE argument xe = 1/sqrt(3) for every mode -- which is that shape read at each
+        # mode's OWN horizon crossing (x = k c_s eta with k eta = 1), a self-similar reading and a
+        # defensible one.  ** The alternative reading evaluates the SAME shape at each mode's own
+        # phase AT THE SEAM, x = k c_s eta_S, so modes that crossed earlier get a smaller amplitude.
+        # Both are readings of "one datum per mode"; neither is invented here. **
+        #   CRAMP=flat  Theta-hat = T(xe), k-independent          [the instrument as coded, default]
+        #   CRAMP=seam  Theta-hat = T(k c_s eta_S), k-dependent
+        # *A scan that moves the SPACING is the one that would matter -- the phase moved only the
+        # position.  This knob is a no-op at its default and nothing moves unless it is set.*
+        _cs = 1.0 / np.sqrt(3.0 * (1.0 + float(Rb_of(ETA_S))))
+        _amp = os.environ.get('CRAMP', 'flat')
+        if _amp == 'seam':
+            _That0 = -_T(kk * _cs * ETA_S) / 2.0
+        elif _amp == 'flat':
+            _That0 = (-_T(xe) / 2.0) * np.ones(nk)
+        else:
+            raise SystemExit(f"CRAMP={_amp} is not a reading this instrument knows (flat|seam)")
         A_flat = -(3 * (np.sin(xe) - xe * np.cos(xe)) / xe ** 3) / 2
         Ph0 = -np.ones(nk)
-        That = A_flat * np.ones(nk)
+        That = _That0
         dg0 = 4.0 * (That - Ph0) * np.cos(_phi)
-        _cs = 1.0 / np.sqrt(3.0 * (1.0 + float(Rb_of(ETA_S))))
-        th0 = 0.75 * (4.0 * (A_flat + 1.0)) * kk * _cs * np.sin(_phi)
+        th0 = 0.75 * (4.0 * (That + 1.0)) * kk * _cs * np.sin(_phi)
         y0[:, 0], y0[:, 1] = 0.75 * dg0, th0
         y0[:, 2], y0[:, 3] = dg0, th0
         y0[:, 4], y0[:, 5] = dg0, th0

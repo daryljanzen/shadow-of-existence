@@ -1,7 +1,7 @@
 ---
 name: corpus-map
 kind: STATE
-current: c54.181
+current: r2477+c54.188
 description: The changelog — the papers, their causal order, and the shape we are aiming at. The narrative log is current only to c54.32; the c54.36–c54.93 span is carried at the foot as COPIED COMMIT SUBJECTS, not as changelog entries.
 sources: [cowork, chat]
 ---
@@ -145,6 +145,42 @@ sources: [cowork, chat]
 > **The live queue is [`WHATS_TEED_UP.md`](WHATS_TEED_UP.md); the accounting is [`THE_BURN_DOWN.md`](THE_BURN_DOWN.md).**
 
 
+
+### Revision r2477 — 2026-08-11 (main line). **c54.188 ABSORBED — the appendix generator's guard verified against a seeded glyph, and two documents found seven absorptions behind with nothing updating them.**
+
+**⌗⌗ THE ABSORPTION.** *The fork ran **`NEXT.md` ⓵** — the $\hat\Theta$ flatness scan — and its headline reproduces
+exactly here from its own eighteen spectra:* **position $0.5570\to1.2599$ (2.26×), spacing $0.6764\to0.8179$
+(1.21×), mean $0.772$, never above $0.82$ — a 23% deficit.** ⌗ ***And it widened its own c54.187 in doing so: the
+spacing spread went from 1.11× to 1.21×, so the deficit stands at LOWER strength than the previous revision gave
+it, and the paper says so in those words.*** `L-502`, `L-503` spliced; both its new receipts run here (**`camb`
+installed on this tree so its likelihood work is checkable rather than taken on report**).
+
+**⛭ ⓵ THE APPENDIX GENERATOR WAS THIS LINE'S AND HAD A REAL HOLE.** *It emitted the registers' marker glyphs —
+**⌗ ⚠ ⛭ ⇒** — verbatim into the `.tex`, so pdflatex failed **three hundred lines into a log naming the glyph and
+not the row**. The translation table had thirty-odd entries and **none of the corpus's own markers**.*
+✔ ***VERIFIED HERE AGAINST A SEEDED GLYPH RATHER THAN TAKEN ON REPORT:*** *`U+273F` into a `receipts/INDEX.md` row
+⇒ the generator **names the glyph, quotes the row, says what to do**, and `make_all_appendices.py` **exits 1**;
+restored, **0**.*
+
+**⚠ AND TWO DEFECTS IN THIS LINE'S OWN VERIFICATION, both caught only by pushing on it.**
+*· ***The first seeding went into `THE_LIVE_ARC.md`, which the generator does not read*** — its input is
+`receipts/INDEX.md`. **A seeded-defect test aimed at the wrong input passes for the wrong reason and looks exactly
+like a clean run.***
+*· *And the first exit-code reading was `0`, from which this line concluded **"the driver swallows the guard"** — a
+defect report against a correct fix.* ⇒ ***The `0` was `tail`'s. `cmd | tail; echo $?` reports the tail.*** **The
+fifteenth instance, and a new species: not a proxy standing in for a judgement but *reading the wrong process's
+answer*.**
+
+**⌗⌗ AND `check_currency` FOUND THIRTEEN STALE MARKERS, of which ELEVEN were markers and TWO were landings.**
+*Eleven had recent commits — content current, frontmatter lagging. **`FORK_c54.md` and `THE_STAGED_REVISIONS.md`
+had none, and both stop at c54.181 while the fork is at c54.188.***
+⇒ *`FORK_c54` already carried its scope declaration (item 7, applied) — **but nothing has ever updated it, because
+`build_fork_span.py` writes `CORPUS_MAP.md` and not that file**, which is now recorded in it. And
+`THE_STAGED_REVISIONS` **had no scope declaration at all**; it now names the four fronts that have moved under its
+staged items and the three protected rows narrowed since.*
+⌗ ***r2449's rule paying again: a stale marker and a missed landing look identical from outside the file.***
+
+**Register: 234 rows. Gates: twenty-one, twenty-one rc=0.**
 
 ### Revision r2476 — 2026-08-11 (main line). **PO-5's LIVE QUESTION ANSWERED IN FORM — a count of GRADINGS becomes a count of FIELDS by being the KERNEL of an operator, and what P13 calls unbuilt is an operator rather than a sector.**
 

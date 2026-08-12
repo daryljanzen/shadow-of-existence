@@ -1,7 +1,7 @@
 ---
 name: absorption
 kind: SOURCE
-current: c54.181
+current: r2477+c54.188
 job: The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced.
 sources: [chat]
 ---
@@ -40,6 +40,7 @@ sources: [chat]
 | c54.185 | r2439 | 2026-08-11 | *by merge — node 37's bibitem fix, arriving with the readers' package* |
 | c54.186 | r2462 | 2026-08-11 | ⛭⛭ **by tarball, and the fork's IN-FLIGHT declaration cleared here** |
 | c54.187 | r2470 | 2026-08-11 | *by tarball; the phase scan, and a third one-line-world gate widened* |
+| c54.188 | r2477 | 2026-08-11 | *by tarball; the second datum freedom, the floor named, and the appendix generator repaired* |
 
 ## What each absorption cost, so the next one is planned rather than discovered
 

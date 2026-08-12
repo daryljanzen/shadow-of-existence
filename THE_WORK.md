@@ -1,7 +1,7 @@
 ---
 name: THE_WORK
 kind: STATE
-current: c54.181
+current: r2477+c54.188
 class: fork-view
 job: The working fork's OWN front-level view of the register — fronts, not rows. Absorbed by this line, never edited by it (ARC 15's prime directive).
 description: THE list. Every live front in the Cosmological Relativity programme, ranked, with its register row, its state, and when it last moved. Fronts, not containers.

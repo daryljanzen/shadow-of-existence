@@ -41,10 +41,28 @@ def parse_index(path):
         rows.append(dict(paper=paper,label=label,claim=claim,stem=stem,status=status,computes=computes,bound=bound,path=_pth))
     return rows
 _ASCII=[('\\',r'\textbackslash{}'),('{',r'\{'),('}',r'\}'),('#',r'\#'),('&',r'\&'),('%',r'\%'),('$',r'\$'),('_',r'\_'),('^',r'\textasciicircum{}'),('|',r'\textbar{}'),('~',r'\textasciitilde{}')]
-_UNI={'§':r'\S{}','°':r'\ensuremath{^\circ}','¹':r'\textsuperscript{1}','²':r'\textsuperscript{2}','³':r'\textsuperscript{3}','⁴':r'\textsuperscript{4}','⁶':r'\textsuperscript{6}','¼':r'\ensuremath{\tfrac14}','½':r'\ensuremath{\tfrac12}','¾':r'\ensuremath{\tfrac34}','⅓':r'\ensuremath{\tfrac13}','×':r'\ensuremath{\times}','—':'---','′':r'\ensuremath{{}^\prime}','−':r'\ensuremath{-}','Λ':r'\ensuremath{\Lambda}','α':r'\ensuremath{\alpha}','β':r'\ensuremath{\beta}','η':r'\ensuremath{\eta}','θ':r'\ensuremath{\theta}','π':r'\ensuremath{\pi}','ρ':r'\ensuremath{\rho}','σ':r'\ensuremath{\sigma}','τ':r'\ensuremath{\tau}','ψ':r'\ensuremath{\psi}','₀':r'\ensuremath{_0}','₂':r'\ensuremath{_2}','→':r'\ensuremath{\to}','↔':r'\ensuremath{\leftrightarrow}','↦':r'\ensuremath{\mapsto}','⇒':r'\ensuremath{\Rightarrow}','⟺':r'\ensuremath{\iff}','∀':r'\ensuremath{\forall}','∅':r'\ensuremath{\emptyset}','∘':r'\ensuremath{\circ}','·':r'\ensuremath{\cdot}','√':r'\ensuremath{\surd}','∞':r'\ensuremath{\infty}','⋆':r'\ensuremath{\star}','◐':'(partial)','✔':'','✗':'(x)','̃':'', '–':'--', '⊢':r'\ensuremath{\vdash}', 'κ':r'\ensuremath{\kappa}', 'λ':r'\ensuremath{\lambda}', '±':r'\ensuremath{\pm}', 'γ':r'\ensuremath{\gamma}', 'δ':r'\ensuremath{\delta}', 'μ':r'\ensuremath{\mu}', 'ν':r'\ensuremath{\nu}', 'φ':r'\ensuremath{\varphi}', 'ω':r'\ensuremath{\omega}', 'Δ':r'\ensuremath{\Delta}', 'Ω':r'\ensuremath{\Omega}', '≤':r'\ensuremath{\le}', '≥':r'\ensuremath{\ge}', '≠':r'\ensuremath{\ne}', '≡':r'\ensuremath{\equiv}', '⊂':r'\ensuremath{\subset}', '∈':r'\ensuremath{\in}', '→':r'\ensuremath{\to}', '‘':"`", '’':"'", '“':"``", '”':"''", '…':r'\ldots{}', ' ':' '}
+_UNI={'§':r'\S{}','°':r'\ensuremath{^\circ}','¹':r'\textsuperscript{1}','²':r'\textsuperscript{2}','³':r'\textsuperscript{3}','⁴':r'\textsuperscript{4}','⁶':r'\textsuperscript{6}','¼':r'\ensuremath{\tfrac14}','½':r'\ensuremath{\tfrac12}','¾':r'\ensuremath{\tfrac34}','⅓':r'\ensuremath{\tfrac13}','×':r'\ensuremath{\times}','—':'---','′':r'\ensuremath{{}^\prime}','−':r'\ensuremath{-}','Λ':r'\ensuremath{\Lambda}','α':r'\ensuremath{\alpha}','β':r'\ensuremath{\beta}','η':r'\ensuremath{\eta}','θ':r'\ensuremath{\theta}','π':r'\ensuremath{\pi}','ρ':r'\ensuremath{\rho}','σ':r'\ensuremath{\sigma}','τ':r'\ensuremath{\tau}','ψ':r'\ensuremath{\psi}','₀':r'\ensuremath{_0}','₂':r'\ensuremath{_2}','→':r'\ensuremath{\to}','↔':r'\ensuremath{\leftrightarrow}','↦':r'\ensuremath{\mapsto}','⇒':r'\ensuremath{\Rightarrow}','⟺':r'\ensuremath{\iff}','∀':r'\ensuremath{\forall}','∅':r'\ensuremath{\emptyset}','∘':r'\ensuremath{\circ}','·':r'\ensuremath{\cdot}','√':r'\ensuremath{\surd}','∞':r'\ensuremath{\infty}','⋆':r'\ensuremath{\star}','◐':'(partial)','✔':'','✗':'(x)','̃':'', '–':'--', '⊢':r'\ensuremath{\vdash}', 'κ':r'\ensuremath{\kappa}', 'λ':r'\ensuremath{\lambda}', '±':r'\ensuremath{\pm}', 'γ':r'\ensuremath{\gamma}', 'δ':r'\ensuremath{\delta}', 'μ':r'\ensuremath{\mu}', 'ν':r'\ensuremath{\nu}', 'φ':r'\ensuremath{\varphi}', 'ω':r'\ensuremath{\omega}', 'Δ':r'\ensuremath{\Delta}', 'Ω':r'\ensuremath{\Omega}', '≤':r'\ensuremath{\le}', '≥':r'\ensuremath{\ge}', '≠':r'\ensuremath{\ne}', '≡':r'\ensuremath{\equiv}', '⊂':r'\ensuremath{\subset}', '∈':r'\ensuremath{\in}', '→':r'\ensuremath{\to}', '‘':"`", '’':"'", '“':"``", '”':"''", '…':r'\ldots{}', ' ':' ',
+# ** THE REGISTERS' OWN MARKER GLYPHS, ADDED r2441+c54.188. **  They are emphasis in a register and
+# carry no content a paper needs, so they degrade to nothing rather than to a symbol.  Before this
+# the generator emitted them verbatim and LaTeX failed three hundred lines into a log with 'Unicode
+# character not set up for use with LaTeX' -- a failure whose cause is nowhere near its report.
+'⌗':'', '⚠':'', '⛭':'', '⛔':'', '⚑':'', '⌘':'', '⟐':'',
+'⓵':'(1)', '⓶':'(2)', '⓷':'(3)', '⓸':'(4)', '⓹':'(5)',
+'①':'(1)', '②':'(2)', '③':'(3)', '④':'(4)', '⑤':'(5)',
+'⛯':'', '❓':'', '⇑':'', '⇓':'', '⇐':r'\ensuremath{\Leftarrow}'}
 def tex_escape(s):
     for a,b in _ASCII: s=s.replace(a,b)      # phase 1: ASCII specials -> text escapes
     for a,b in _UNI.items(): s=s.replace(a,b)      # phase 2: unicode -> LaTeX (inserted after, not re-escaped)
+    # ** phase 3, added r2441+c54.188: NOTHING UNTRANSLATED LEAVES THIS FUNCTION. **  Any character
+    # above Latin-1 that phase 2 did not handle reaches pdflatex verbatim and fails there, hundreds
+    # of lines into a log, with a message that names the glyph but not the row it came from.
+    # ** Failing HERE names both. **  Add the glyph to _UNI; do not delete this check.
+    _left = sorted({c for c in s if ord(c) > 0xFF})
+    if _left:
+        raise SystemExit(
+            'make_receipt_appendix: %d glyph(s) with no _UNI translation would reach LaTeX '
+            'verbatim: %s\n  in: %s\n  Add them to _UNI (empty string if register emphasis).'
+            % (len(_left), ' '.join('U+%04X %s' % (ord(c), c) for c in _left), s[:160]))
     return s
 def emit(rows, scope, out):
     title = "Appendix R\\quad Computational Receipts" if scope=='corpus' else "Appendix R\\quad Computational Receipts"

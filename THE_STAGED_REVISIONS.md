@@ -1,10 +1,21 @@
 ---
 name: the-staged-revisions
 kind: STATE
-current: c54.181
+current: r2477+c54.188
 description: The observer line's staging ground — revisions to the papers, computations to run, and consolidation work, PREPARED here and executed when the working fork reaches its target. Nothing here has been applied to the corpus; each entry carries its gate, its locus and its done-test.
 sources: [chat]
 ---
+
+> ⚠⚠ **WHAT THIS FILE DOES NOT COVER, stated r2477 because nothing had ever said it.**
+>
+> *Its staged items were prepared against a fork at **c54.181**; the fork is at **c54.188**, seven absorptions on.*
+> ⌗ ***Nothing below is wrong — it is PREPARED work and preparation does not rot the way a narrative does — but a
+> node should check each item against the current papers before executing it***, *because four fronts have moved
+> since: **the lensing build (c54.183), the wavenumber range (c54.186), the seam datum (c54.187–188), and the
+> $F_2$ floor (c54.188)**.*
+> ⇒ *And on this line's side, `PO-5`, `PO-6` and `PO-9` were all narrowed at r2464–r2476, so any staged item that
+> assumes those rows untouched needs re-reading first.*
+
 
 # THE STAGED REVISIONS
 

@@ -1,21 +1,21 @@
 ---
 name: the-plan
 kind: STATE
-current: c54.181
+current: r2477+c54.188
 job: The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance
 ---
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r2476
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r2477
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
 > **⌗ NOT COVERED — STRUCK since r2417 (18 rows):**
 > `L-200` `L-201` `L-211` `L-213` `L-214` `L-215` `L-223` `L-224` `L-225` `L-227` `L-229` `L-231` `L-232` `L-233` `L-234` `L-235` `L-236` `L-237`
 >
-> **⌗ NOT COVERED — OPENED since r2417 (14 rows):**
-> `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-500` `L-501`
+> **⌗ NOT COVERED — OPENED since r2417 (16 rows):**
+> `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-500` `L-501` `L-502` `L-503`
 >
 > ⌗ ***The ID half is machine-checked against the register; run `regen_grain_currency.py --check`. The prose half below is a JUDGEMENT and is written by hand — the script preserves it verbatim and never invents it, because a gate can check a declaration and not a judgement.***
 

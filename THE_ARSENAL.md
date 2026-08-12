@@ -5,6 +5,28 @@ current: r2154
 sources: [cowork]
 ---
 
+## ⛭ THE APPENDIX GENERATOR NOW GUARDS ITS OWN OUTPUT — absorbed from c54.188, verified here r2477
+
+*`make_receipt_appendix` emitted the registers' marker glyphs — **⌗ ⚠ ⛭ ⇒** — verbatim into the `.tex`, so pdflatex
+failed **three hundred lines into a log with "Unicode character not set up for use with LaTeX", naming the glyph and
+not the row it came from**.* ⌗ *The translation table had thirty-odd entries and **none of the corpus's own
+markers**, so any register row using one would do it.*
+
+**⇒ FIXED IN TWO PARTS, as the rule requires:** *the glyphs translate to nothing (they are register emphasis and
+carry no content a paper needs), **and a phase-3 guard raises in the GENERATOR if any character above Latin-1
+survives translation, naming the glyph and quoting the row**.*
+
+**✔ VERIFIED HERE AGAINST A SEEDED GLYPH RATHER THAN TAKEN ON REPORT** *(`U+273F` into a `receipts/INDEX.md` row):*
+***the generator names it, quotes the row, says what to do — and `make_all_appendices.py` exits 1.*** *Restored, it
+exits 0.*
+⚠ *And the first attempt at that verification seeded the glyph into `THE_LIVE_ARC.md`, **which the generator does
+not read** — the input is `receipts/INDEX.md`. **A seeded-defect test aimed at the wrong input passes for the wrong
+reason.***
+
+⌗ ***This is the fork repairing an instrument in this line's half, and the blast radius was this line's: every
+register and INDEX row written this session carries those markers.***
+
+
 ## ⛭⛭ A RECURRING DEBT TURNED INTO A VIEW — `regen_grain_currency.py`, added r2469
 
 *`check_grains` failed on `THE_PLAN` and `THE_OPEN_PROBLEMS_LEDGER` **three times**: r2440, r2445 (where they were
