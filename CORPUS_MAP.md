@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2475 — 2026-08-11 (main line). **PO-6's UV CLAUSE MEASURED — quartic, the ordinary degree, and the compactness buys the INFRARED rather than the ultraviolet.**
+
+**⌗⌗ r2465 GAVE THE STRUCTURAL REASON THE BOUNDARY HALF SEPARATES** *(the condition is **per-fibre**, the UV is
+**over-fibres**). **This asks what P10's "the standard problem of the interacting theory" means as a NUMBER.***
+
+**⌗ FROM P10's OWN TOWER:** *· $\mu_n^2=n(n+2)-2$, $n\ge2$ ⇒ **$\mu_n\sim n$**; · mode $n$ is an oscillator of
+**mass $a^3$ and frequency $\mu_n/a$**, so the instantaneous ground state gives
+$\langle\pi_n^2\rangle=\tfrac12a^2\mu_n$ ⇒ **$\sim n$**; · $S^3$ harmonic degeneracy at level $n$ ⇒ **$\sim n^2$**.*
+⇒ *shell $\sim n^3$ and $\sum^N n^3 \sim N^4/4$ —* **2% at $N=100$, 0.2% at $N=1000$, and tightening, which is what
+a leading power looks like.**
+⇒⇒ ***QUARTIC IN THE CUTOFF — EXACTLY THE ZERO-POINT DIVERGENCE OF A FIELD IN FOUR DIMENSIONS.***
+
+**⛭ SO "STANDARD" IS NOW A MEASUREMENT RATHER THAN A CHARACTERISATION.** *P10 asserted the remaining difficulty is
+generic;* ***the degree is the generic one, at the generic power, and it is checked rather than said.***
+
+**⌗⌗ AND THE ONE THING CR's STRUCTURE DOES CHANGE IS WORTH STATING PRECISELY BECAUSE IT IS NOT THE DEGREE:**
+***compactness makes this a DISCRETE SUM over a tower starting at $n=2$ — no zero mode, no soft region — so the
+INFRARED IS REGULATED FOR FREE AND THE ULTRAVIOLET IS UNTOUCHED.***
+⇒ **A real asymmetry and in the construction's favour: CR has no infrared problem to solve, and its ultraviolet
+problem is the one every field theory has, at the same power.**
+
+⚠ *Not claimed: that the sum is **defined, regulated or tractable** — nothing here does any of that. Nor that the
+ground-state estimate is the physical state:* ***the power counting is robust to that choice, the coefficient is
+not, and only the power is claimed.*** ⇒ **PO-6 stays open; two clauses stand and this measures the degree of one.**
+
+⌗ *`THE_QUANTUM_JOINT` propagated: with r2465's separation and re-weighting, **the joint's frontier is now defining
+the sum rather than diagnosing it**, plus the closed-form nonlinear $\Lambda>0$ solution.*
+
+**Register: 232 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2474 — 2026-08-11 (main line). **PO-9 NARROWED A SECOND TIME — one-step-ness is governed by Rule 2, and the whole row now turns on one question.**
 
 **⌗⌗ WHERE r2466 LEFT IT.** *"$D=5$ is forced **only if** the descent is one step" — with one-step-ness looking like

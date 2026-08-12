@@ -6,6 +6,29 @@ job: The QM sketchpad — a NOTEBOOK, not a ledger: draw the pipe-extensions as 
 sources: [cowork]
 ---
 
+## ⛭⛭ PO-6's UV CLAUSE NOW HAS A DEGREE AND A SHAPE — added r2475
+
+*The joint's remaining frontier was carried as **"the ultraviolet definition of the tower sums"**, characterised but
+never measured.* ⇒ **Measured at r2475 from P10's own tower:**
+
+*· $\mu_n^2=n(n+2)-2$, $n\ge2$ ⇒ **$\mu_n\sim n$**;*
+*· mode $n$ is an oscillator of mass $a^3$ and frequency $\mu_n/a$ ⇒ **$\langle\pi_n^2\rangle=\tfrac12a^2\mu_n\sim n$**;*
+*· $S^3$ degeneracy at level $n$ ⇒ **$\sim n^2$**.*
+⇒ *shell $\sim n^3$, $\sum^N\sim N^4/4$ —* ***QUARTIC, exactly the zero-point divergence of a field in four
+dimensions.***
+
+**⌗ SO THE CLAUSE'S CHARACTER IS SETTLED EVEN THOUGH THE CLAUSE IS NOT.** *P10 says the remaining difficulty is
+"the standard problem of the interacting theory"; **the degree is the generic one at the generic power**, and that
+is now a measurement.*
+
+**⛭⛭ AND THE ASYMMETRY IS THE PART THIS DOCUMENT SHOULD CARRY:** ***compactness makes the sum DISCRETE over a tower
+starting at $n=2$ — no zero mode, no soft region — so the INFRARED is regulated for free and the ULTRAVIOLET is
+untouched.*** **CR has no infrared problem to solve, and an ultraviolet problem every field theory has.**
+⌗ *Together with r2465's per-fibre/over-fibres separation and r2465's re-weighting (**the clause `c54.129` answered
+is the one the argument does not need**), the joint's frontier is now: **defining the sum, not diagnosing it**, plus
+the closed-form nonlinear $\Lambda>0$ solution.*
+
+
 ## ⛭⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **THE REAL-FORM CLOSURE THIS DOCUMENT TURNS ON IS NOW SHARPER, AND ITS ONE UNREPRODUCED CHECK IS CLOSED**
 
 > *This file leans on the real-form structure harder than any other — **55 uses of "real form"** — and on P10's
