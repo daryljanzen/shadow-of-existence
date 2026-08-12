@@ -49,7 +49,14 @@ _UNI={'§':r'\S{}','°':r'\ensuremath{^\circ}','¹':r'\textsuperscript{1}','²':
 '⌗':'', '⚠':'', '⛭':'', '⛔':'', '⚑':'', '⌘':'', '⟐':'',
 '⓵':'(1)', '⓶':'(2)', '⓷':'(3)', '⓸':'(4)', '⓹':'(5)',
 '①':'(1)', '②':'(2)', '③':'(3)', '④':'(4)', '⑤':'(5)',
-'⛯':'', '❓':'', '⇑':'', '⇓':'', '⇐':r'\ensuremath{\Leftarrow}'}
+'⛯':'', '❓':'', '⇑':'', '⇓':'', '⇐':r'\ensuremath{\Leftarrow}',
+# ** CIRCLED LATIN LETTERS, ADDED r2501+c54.197. **  The mathematics-reach stations (r2490-2493)
+# label themselves Ⓐ-Ⓗ, so they are CONTENT and not register emphasis: a station's letter is how
+# every cross-reference names it, and degrading it to nothing would leave 'station  walked'.
+# ** The phase-3 guard caught these -- which is the guard doing exactly its job, four appendices
+# ** before pdflatex would have. **
+'Ⓐ':'(A)', 'Ⓑ':'(B)', 'Ⓒ':'(C)', 'Ⓓ':'(D)', 'Ⓔ':'(E)', 'Ⓕ':'(F)', 'Ⓖ':'(G)', 'Ⓗ':'(H)',
+'Ⓘ':'(I)', 'Ⓙ':'(J)', 'Ⓚ':'(K)', 'Ⓛ':'(L)', 'Ⓜ':'(M)', 'Ⓝ':'(N)', 'Ⓞ':'(O)', 'Ⓟ':'(P)'}
 def tex_escape(s):
     for a,b in _ASCII: s=s.replace(a,b)      # phase 1: ASCII specials -> text escapes
     for a,b in _UNI.items(): s=s.replace(a,b)      # phase 2: unicode -> LaTeX (inserted after, not re-escaped)

@@ -1,14 +1,14 @@
 ---
 name: for-54
 kind: RECORD
-current: c54.194
+current: c54.197
 job: THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
 
 # FOR 54 — the inbox
 
-> ## ⚠⚠ NOT EMPTY — **NINETEEN LIVE ITEMS BELOW.** *Header corrected r2452; see the c54.179 block beneath it.*
+> ## ⚠⚠ NOT EMPTY — **EIGHTEEN LIVE ITEMS BELOW.** *Item 21 applied c54.197.* *Header corrected r2452; see the c54.179 block beneath it.*
 >
 > *The eleven this file held at c54.179 were all discharged, and that block still stands as the record.* ⛔ ***But
 > nineteen more were routed between r2439 and r2447 and the header still said "empty", while the body presented
@@ -399,41 +399,9 @@ precisely because **this paper polices this conflation harder than any other in 
 
 ---
 
-## ⛭⛭⛭ 21 · TAKE THIS ONE FIRST — P15 SAYS "BRANCH POINT" WHERE ITS OWN RECEIPT SAYS "SEAM", AND THE WORD DECIDES THE PROPOSITION'S TRUTH VALUE — added r2440
+## ✔✔ APPLIED — 21 · P15's "branch point"/"seam" conflation, six sites — applied c54.197
 
-**Where:** `corpus/CR_cosmology.tex` — the `prop:subhorizon` cluster: the subsection heading at **220**, the body
-at **224**, and **274, 291, 296, 307**.
-
-**⌗ VERIFIED THREE WAYS HERE, INDEPENDENTLY OF THE FINDER.**
-*· **The receipt cited at those sentences says "seam" nineteen times and "branch point" zero times.***
-*· **The receipt's own verdict is that the two loci are distinct and ordered:*** *"the comoving horizon is
-monotonic on each side of a single maximum at $r_*$, which lies **outside** the seam … **the seam sits between
-the two, on the rising side**", with $r_*=1.53\,r_{\rm seam}$.*
-*· **And the physics INVERTS between them — computed here:***
-
-| $r$ | $aH$ | $1/aH$ |
-|---|---|---|
-| $\alpha/\sqrt3$ (the seam) | $1.000$ | **$1.000$** |
-| $0.1\alpha$ | $1.96$ | $0.509$ |
-| $10^{-3}\alpha$ | $19.6$ | **$0.051$** |
-
-⇒ ***At the seam the comoving horizon is near its MAXIMUM — the modes are inside. As $r\to0$, $2M/r\to\infty$ so
-$aH\to\infty$ and $1/aH\to0$: EVERY mode has exited.*** **So a proposition titled "sub-horizon" is TRUE at the
-seam and FALSE at the branch point.** *The substitution is not cosmetic.*
-
-**⚠ AND IT IS ACTIVELY COSTING NODES — two false findings about CR from one word, in one day.** *Node 52 read the
-Euclidean filter at the wrong locus and shipped **"nothing oscillating crosses for $\ell\ge3$"** — the opposite of
-the truth; the parallel line computed $k/\mathcal H$ at the onset and reported **"prop:subhorizon inverts for
-$\ell\lesssim250$"**, treating an onset proposition as a crossing claim.* ⌗ *It is the conflation **r2289 retired**
-— "it INVERTED the physics" — surviving at sites the hand sweep did not reach.*
-
-**⛔ AND ONE SITE MUST SURVIVE ANY SWEEP, named by the finder in advance and confirmed here:** *"the branch point
-is far below their **decoupling**" (the neutrinos, ~line 355) — **that one really is about the branch point**, a
-temperature ordering along the excursion rather than a horizon property at a locus.* ⌗ *The locus lint flags it;
-**it is a false positive and the finder said so before the tool was run**.*
-⌗ *Do not touch: the numbers ($k_{\rm hor}\approx0.010$, $k_{\rm peak}\approx0.022$, factor $\gtrsim2$,
-$r_*=1.5338\,r_{\rm seam}$), the rate, the label `prop:subhorizon`, its role in closing the inflationary route to
-coherence, or `sec:what-crosses`.*
+*Dropped per this file's own rule. **Six sites, not the four the item named** — `check_loci` found a fifth (`C4_driving_envelope`, "reaching the branch point with the same driving amplitude") and the header STATUS block a sixth. The neutrino-decoupling sentence the finder flagged as a false positive **in advance** survived the sweep and is now a declared exception in the lint, keyed to its own text so it lapses if the sentence is rewritten.* ⇒ ***And the lint could not see the item's own first site until this revision: a proposition's receipt binding lives in its argument paragraph, so a per-sentence scan is blind to the body. Found by seeding the defect, not by reading the code.*** Registered `L-509`; receipt `P15_the_locus_was_wrong_in_six_places_and_the_lint_could_not_see_the_worst`.
 
 ---
 
