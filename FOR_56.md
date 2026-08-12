@@ -28,7 +28,7 @@ branch, correctly done, and invisible.*** *`L-700` is that work, landed r2507.*
 | branch | tip | node | what |
 |---|---|---|---|
 | *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2516, tip `2f07483`)* | — | — | — |
-| `claude/cosmological-relativity-c54-sn2msi` | `85ac22f` | cc54 | FOR_54 item 44 (full sweep: 3 receipts drift on arc-pins into `THE_LIVE_ARC.md`, not physics) · BOARD regen · `gates.yml` fetch-depth fix for `check_branches` · merged current to r2512 |
+| `claude/cosmological-relativity-c54-sn2msi` | `15440d1` | cc54 | **L-801** — the run Daryl handed cc54: `L-174` ⓵'s nonlinear remainder splits; the σ^TT FREEDOM is the general contracted-Bianchi identity (symmetry-free, verified exactly on the inhomogeneous leaf), the STABILITY the separate remainder. Receipt `N1` (19 checks) · INDEX + arc row + board regen · merged current to r2524 |
 
 ---
 
