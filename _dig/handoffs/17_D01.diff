@@ -1,0 +1,10 @@
+--- a/corpus/geometric_core_paper.tex
++++ b/corpus/geometric_core_paper.tex
+@@ D01: qualify "La~Hire's reciprocity" as the height-free SYMMETRY, so it does not
+@@ read as contradicting the height-carrying "pole--polar relation" used two sentences
+@@ later. One-clause change, single site. Math unchanged. Grounds: FIGURE_THEOREM_LEDGER
+@@ distinguishes the reciprocity symmetry (height-free) from the polar map (height-carrying).
+-Ptolemy, La~Hire's reciprocity, and Casey's bitangent identity~\cite{CoxeterGreitzer1967,Coxeter1987b,Casey1866} each hold on the
+-figure and return nothing, for the three reasons the remark names.
++Ptolemy, La~Hire's reciprocity---the height-free \emph{symmetry} of pole and polar, $\eta(P,\mathrm{pol}(Q))=0\Leftrightarrow\eta(Q,\mathrm{pol}(P))=0$, in which the vantage height does not appear, and so distinct from the height-carrying polar \emph{map} of the preceding paragraph---and Casey's bitangent identity~\cite{CoxeterGreitzer1967,Coxeter1987b,Casey1866} each hold on the
++figure and return nothing, for the three reasons the remark names.

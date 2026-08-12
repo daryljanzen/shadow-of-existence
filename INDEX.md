@@ -199,7 +199,7 @@ sources: [cowork, chat]
 | `capstones/THE_INTERFERENCE_ENGINE.md` | the why-layer — read at spin-up steps 8 and 8b |
 | `capstones/THE_WISDOM_LEDGER.md` | Is the scrap in front of me still live, and what would retire it? Read AT THE MOMENT OF USE. The only one of the six about the NODE rather than the corpus. |
 
-### RECORD (72)
+### RECORD (73)
 
 | document | job |
 |---|---|
@@ -244,6 +244,7 @@ sources: [cowork, chat]
 | `CREDO_birth_transcript.md` | frozen record |
 | `CREDO_from-c1_transcript.md` | frozen record |
 | `DEMONSTRATING_THE_WAY_full-transcript.md` | frozen record |
+| `FOLD52_ASSESSMENT.md` | the fork's assessment of the abandoned 52/53 ACOUSTIC line -- what it holds, what to take, and what could not be verified |
 | `FORK_HISTORY_c54.txt` | frozen record |
 | `FOR_54.md` | THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied. |
 | `FOR_56.md` | THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied. |

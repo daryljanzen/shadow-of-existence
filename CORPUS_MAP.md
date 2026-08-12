@@ -146,6 +146,71 @@ sources: [cowork, chat]
 
 
 
+### Revision r2440 — 2026-08-11 (main line). **CI HAD BEEN RED FOR TWELVE REVISIONS AND FIFTEEN GATES NEVER RAN — this line's defect, found by node 53 on a pristine clone.**
+
+**⛔⛔ THE OUTAGE, AND ITS CAUSE IS r2427's OWN REPAIR.** *That revision restored twenty-eight top-level files the
+duplicate sweep had deleted — correctly — and **never classified them**. So `classify_documents.py --check` has
+exited 1 on every push since; and the workflow ran the register checks under **`set -e`**, which aborts the step on
+the first non-zero exit.* ⇒ ***THE FIFTEEN TEXT GATES AND THE HOLLOW-ASSERTION LINT WERE NEVER EXECUTED IN CI AT
+ALL*** *— while this line reported "twenty gates rc=0" for twelve revisions from running them **one at a time** in
+its own container, where every exit code is seen separately.*
+⌗ ***THE RULE: a suite run by hand and a suite run under `set -e` are DIFFERENT INSTRUMENTS — the first reports
+every failure, the second reports the first and hides the rest.***
+⚠ **And it was visible only from outside:** *node 53 found it on a **pristine clone**. **The working tree could not
+see it, because the working tree never runs the suite the way CI does.*** *Third time this session an outside
+reader saw something structural this line could not.*
+
+**✔ FIXED THREE WAYS.** *· The fast tier now **runs every check, collects failures, and fails at the end naming all
+of them**. · Twenty-seven of the twenty-eight are classified **by a RULE rather than a list**:* ***a top-level
+document that also exists in `retired/` is the fork's retired working note*** *— which is **the same fact whose
+misreading caused the deletion**, so the rule and the bug have one root and naming it stops the next node
+re-deriving it. · `FOLD52_ASSESSMENT.md` named explicitly.*
+⌗ ***AND THE NEW WORKFLOW EARNED ITSELF ON ITS FIRST RUN, surfacing two gates the old form was hiding*** *—
+`check_absorption` (c54.185 unrecorded) and `check_grains` (four stale grains).*
+⌗ *One further defect caught by the script rather than shipped: **the rule was added without its sort key**, and
+`classify_documents` raised `KeyError('RETIRED')`.* **A classifier that cannot ORDER a class it can ASSIGN is half
+a classifier.**
+
+**⚠ AND ONE GATE IS LEFT RED ON PURPOSE, which is the judgement in this revision.** *`check_grains` measures lag
+**by git commits**. So writing "here is what I do not cover" into a stale document **turns it green whether or not
+the declaration is true** — and `THE_WEAVE` passed for exactly that reason, not because the declaration was
+believed.* ⇒ ***That is `check_arcs`' own r2378 trap ("a section made current by writing ABOUT being stale"), and
+`check_grains` cannot defend against it because git cannot tell a propagation from a one-line note.***
+**So `THE_PLAN` and `THE_OPEN_PROBLEMS_LEDGER` stay RED:** ***a red gate that names real work is worth more than a
+green one that hides it.***
+
+**⛭⛭ AND NODE 52's PACKAGE, WHICH IS THE STRONGEST OF THE SIX.**
+*· **Item 1, routed as the list's top entry (`FOR_54` 21): P15 says "branch point" at five sites where the receipt
+cited at those very sentences says "seam" — nineteen times to zero.*** *Verified three ways here: the receipt's own
+verdict places $r_*$ **outside** the seam at $1.53\,r_{\rm seam}$; and the physics **inverts** — computed, $1/aH$
+is $1.000$ at the seam and $0.051$ at $10^{-3}\alpha$, so* ***a proposition titled "sub-horizon" is TRUE at the
+seam and FALSE at the branch point.*** ⚠ *And it is **actively costing nodes**: two independent lines shipped false
+findings about CR from that one word in a single day.* ⌗ *The finder **named in advance** the one site that must
+survive the sweep — the neutrino decoupling line — and the lint duly flagged it; **it is a false positive and it
+was predicted by name**.*
+*· **Item 2, `check_loci.py`, adopted as a LINT and not a gate (`L-228`)**, on the contributor's own measurement:
+**assertion-shape 3/3 against word-presence at 42%**, with the binding constraint stated —* **"a false alarm in the
+register costs more than the error, because the next reader inherits a debt that does not exist."** ⌗ *And it ships
+its own bug as a rule: `lp.strip('\b')` **also strips the leading 'b' of `branch[ -]point`**, so every pattern
+silently failed and the tool printed **"clean"**.* ⇒ ***"A gate that reports clean because its regexes are broken is
+worse than no gate"*** *— the sixth instance of this line's own five-times-learned lesson, arriving from outside
+already internalised.*
+*· **Item 3, two clean audits, accepted as evidence:** 17 of 17 receipt-bound numbers in P15 confirmed; `CHECK 10`
+clean across all 17 papers; 244 receipts cited, 0 missing.* ⌗ ***And its framing is the thing: "PROTECTED_OPEN
+asserts that base rate; this measured it."***
+*· **Item 5 registered as `L-229`, as material and not a verdict** — a 14% disagreement between the canon's implied
+$\Omega_r$ and the instrument's, **with the finder's own "not claimed" list kept intact** and its first move stated.*
+
+**⌗ ALSO ROUTED: `FOR_54` 22** *(P12's `sec:weyl-a3` renders after the bibliography — **the only section after an
+`\end{thebibliography}` in 35 files**, load-bearing, and already summarised in the body; **an authorial call, and
+the finder said so**)* **and `FOR_54` 23** *(**"deck group $S_3$" on a three-sheeted cover is impossible** — the
+order must divide the degree; `prop:deck` corrects its own heading four sentences later, and
+`rem:equianharmonic` then gives a **third** answer. **Everything fits once the word is "monodromy", which is what
+this line's `C3` established from the dial.**)*
+
+**Register: 222 rows. Gates: twenty-one, nineteen rc=0** *(`check_currency` measurable; `check_grains` red **by
+decision**).* **Plus `check_loci` as a lint, outside the gate list.**
+
 ### Revision r2439 — 2026-08-11 (main line). **FOUR OUTSIDE READERS' FINDINGS JUDGED ITEM BY ITEM — one real physics error applied, one verification landed, two routed, two rejected.**
 
 **⌗⌗ THE PACKAGE.** *Nodes 17, 23, 37 (Artie) and 55 read the corpus cold and sent findings, assembled on the fork's

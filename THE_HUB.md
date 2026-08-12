@@ -266,6 +266,34 @@ departures and grain currency**, which `git diff` does not.*
 
 ---
 
+## ⚠⚠ WHAT CI ACTUALLY DID FOR TWELVE REVISIONS — corrected r2440, and the prose below was FALSE
+
+*This section said the fast tier runs the text gates and the lint **on every push**.* ***It did not.***
+*From r2427 to r2439 the job's first command — `classify_documents.py --check` — exited 1 (twenty-eight restored
+files, unclassified), and the step ran under **`set -e`**, which aborts on the first non-zero exit.*
+⇒ ***So the fifteen text gates and the hollow-assertion lint never executed in CI at all*** *— while this line
+reported "twenty gates rc=0" from running them **one at a time** in its own container, where every exit code is
+seen separately.*
+
+**⌗ THE RULE, and it is the one to carry:** ***a suite run by hand and a suite run under `set -e` are DIFFERENT
+INSTRUMENTS — the first reports every failure, the second reports the first and hides the rest.***
+⌗ *Found by **node 53** on a pristine clone, which is the only place it was visible. **The working tree could not
+see it, because the working tree never runs the suite the way CI does.***
+
+**✔ FIXED:** *the fast tier now **runs every check, collects failures, and fails at the end naming all of them**.*
+⌗ *It earned itself on the first run by surfacing **two gates the old form was hiding**.*
+⚠ **AND ONE GATE IS LEFT RED ON PURPOSE:** *`check_grains` measures lag **by git commits**, so writing "here is
+what I do not cover" into a stale document turns it green **whether or not the declaration is true**.* ⇒ ***That
+is `check_arcs`' own r2378 trap, and `check_grains` cannot defend against it.*** **So `THE_PLAN` and
+`THE_OPEN_PROBLEMS_LEDGER` stay red until they are genuinely propagated:** ***a red gate that names real work is
+worth more than a green one that hides it*** *(`L-227`).*
+
+**⌗ AND ONE INSTRUMENT IS DELIBERATELY NOT IN THE GATE LIST.** *`corpus/check_loci.py` — contributed by node 52,
+adopted r2440 — is a **triage lint a human reads**, not a gate. Its contributor measured its own precision before
+shipping (**assertion-shape 3/3, against word-presence at 42%**) and stated the binding constraint:* ***"a false
+alarm in the register costs more than the error, because the next reader inherits a debt that does not exist."***
+*(`L-228`.)*
+
 ## ⌗ CI, AND IT IS TIERED FOR A REASON
 
 *The suite is not uniform in cost, and pretending otherwise would produce a pipeline nobody waits for.*

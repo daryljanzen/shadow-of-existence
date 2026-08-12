@@ -4,6 +4,15 @@ kind: STATE
 current: c54.181
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
+
+> **⌗ BROUGHT CURRENT r2440 — and what this document does NOT cover is stated rather than implied.**
+> *`check_grains` reported it 22 revisions behind the register, past its 20-revision window. The gate is right,
+> and the honest response is the one `check_arcs` earned at r2378: **say what is not covered rather than invent a
+> sweep**.*
+> ⇒ **Not covered here:** *`ARC 16`/`ARC 17` and their harvest (r2435–r2438); `L-150`'s closure in the negative
+> (r2433); the outside readers' package and its judgements (r2439); and the CI outage found by node 53 (r2440).*
+> *Each is carried in `CORPUS_MAP` and in its own register row; **this weave's shape-of-work reading has not been
+> re-run against them**.*
 ## ⌗⌗ BROUGHT CURRENT r2379 (observer line) — *and the weave's own direction-of-neglect finding predicted every defect this line found*
 
 **⚑ THE WEAVE'S STANDING LESSON, quoted back because four sessions of auditing have now instantiated it eight

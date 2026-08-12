@@ -37,6 +37,7 @@ sources: [chat]
 | c54.182 | r2431 | 2026-08-11 | *by merge, via bundle relay* |
 | c54.183 | r2432 | 2026-08-11 | ⛭⛭ **BY DIRECT MERGE — the node pushed its own branch** |
 | c54.184 | r2434 | 2026-08-11 | *by merge; the old session's line, rebased and renumbered* |
+| c54.185 | r2439 | 2026-08-11 | *by merge — node 37's bibitem fix, arriving with the readers' package* |
 
 ## What each absorption cost, so the next one is planned rather than discovered
 

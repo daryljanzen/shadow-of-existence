@@ -19,8 +19,7 @@ sources: [chat]
 | **VIEW** | 5 |
 | **STATE** | 43 |
 | **METHOD** | 27 |
-| **RECORD** | 72 |
-| **UNCLASSIFIED** | 28 |
+| **RECORD** | 73 |
 
 ## ⌗ DECLARED CLASSES
 
@@ -40,13 +39,13 @@ sources: [chat]
 
 | document | kind | job | declared current | newest c54 in body | lag |
 |---|---|---|---|---|---|
-| `ABSORPTION.md` | SOURCE | The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced. | c54.181 | c54.184 | 4 |
-| `THE_LIVE_ARC.md` | SOURCE | the lead register — the one live edge | c54.181 | c54.184 | 4 |
-| `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.184 | c54.184 | 1 |
-| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.184 | c54.184 | 1 |
-| `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | c54.181 | c54.184 | 4 |
-| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.184 | c54.184 | 1 |
-| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.184 | c54.184 | 1 |
+| `ABSORPTION.md` | SOURCE | The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced. | c54.181 | c54.185 | 4 |
+| `THE_LIVE_ARC.md` | SOURCE | the lead register — the one live edge | c54.181 | c54.185 | 4 |
+| `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.185 | c54.185 | 0 |
+| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.185 | c54.185 | 0 |
+| `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | c54.181 | c54.185 | 4 |
+| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.185 | c54.185 | 0 |
+| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.185 | c54.185 | 0 |
 | `ACOUSTIC_BUILD_SETUP.md` | STATE | The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own. | c54.163 | c54.163 | 22 |
 | `CATEGORY_THEORY_LEDGER.md` | STATE | field ledger — probes and their verdicts | c54.163 | c54.163 | 22 |
 | `COLLAPSE_EXCURSION_TRANSFER_build.md` | STATE | PHASE 7's ATTACK MANUAL — the one build on the progenitor collapse excursion (L2) behind open-problems families 1/3/4/5. Referenced live by eleven documents including THE_PLAN, PHASE7_BUILD_LEDGER and both open-problems documents. | c54.163 | c54.163 | 22 |
@@ -158,6 +157,7 @@ sources: [chat]
 | `CREDO_birth_transcript.md` | RECORD | frozen record | — | — |  |
 | `CREDO_from-c1_transcript.md` | RECORD | frozen record | — | — |  |
 | `DEMONSTRATING_THE_WAY_full-transcript.md` | RECORD | frozen record | — | — |  |
+| `FOLD52_ASSESSMENT.md` | RECORD | the fork's assessment of the abandoned 52/53 ACOUSTIC line -- what it holds, what to take, and what could not be verified | — | c54.166 |  |
 | `FORK_HISTORY_c54.txt` | RECORD | frozen record | — | c54.93 |  |
 | `FOR_54.md` | RECORD | THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied. | c54.181 | c54.181 |  |
 | `FOR_56.md` | RECORD | THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied. | c54.180 | c54.181 |  |
@@ -189,34 +189,33 @@ sources: [chat]
 | `gate_session_notes_r754_spinup.md` | RECORD | frozen record | — | — |  |
 | `gate_session_notes_r896_spinup.md` | RECORD | frozen record | — | — |  |
 | `gate_session_notes_session.md` | RECORD | frozen record | — | — |  |
-| `A4_matter_seam_crossing_build.md` | UNCLASSIFIED |  | — | — |  |
-| `A5_fermion_sector_build.md` | UNCLASSIFIED |  | — | — |  |
-| `ANTIMATTER_FRONT_PLAN.md` | UNCLASSIFIED |  | — | — |  |
-| `CMB_ACOUSTIC_FRONTIER_STATUS.md` | UNCLASSIFIED |  | — | — |  |
-| `CONSTANT_LEDGER_receipt.md` | UNCLASSIFIED |  | — | — |  |
-| `CR_PERTURBATION_HELD_PICTURE.md` | UNCLASSIFIED |  | — | — |  |
-| `CR_intake_notebook.md` | UNCLASSIFIED |  | — | — |  |
-| `D3_RECIPROCITY_READING_ORDER.md` | UNCLASSIFIED |  | — | — |  |
-| `E1_CITATION_CATALOGUE.md` | UNCLASSIFIED |  | — | — |  |
-| `FIGURE_STATUS.md` | UNCLASSIFIED |  | — | — |  |
-| `FIGURE_WORK_LOG.md` | UNCLASSIFIED |  | — | — |  |
-| `FOLD52_ASSESSMENT.md` | UNCLASSIFIED |  | — | c54.166 |  |
-| `MATTER_SECTOR_germ.md` | UNCLASSIFIED |  | — | — |  |
-| `PHASE1_seam_crossing_build.md` | UNCLASSIFIED |  | — | — |  |
-| `PHASE3_baryogenesis_analogue.md` | UNCLASSIFIED |  | — | — |  |
-| `PHASE8_DIFF_AUDIT.md` | UNCLASSIFIED |  | — | — |  |
-| `PLANCK_from_CR_build.md` | UNCLASSIFIED |  | — | — |  |
-| `RATE_HANDOFF_DERIVATION.md` | UNCLASSIFIED |  | — | — |  |
-| `SILVER_PLATTER_colour-frontier-arc.md` | UNCLASSIFIED |  | — | — |  |
-| `THE_COLLAPSE_DYNAMICS_ARC.md` | UNCLASSIFIED |  | — | — |  |
-| `THE_NEXT_ARC.md` | UNCLASSIFIED |  | — | — |  |
-| `THE_THIRD_ARC.md` | UNCLASSIFIED |  | — | — |  |
-| `THIRD_ARC_T01_heights_firstrun.md` | UNCLASSIFIED |  | — | — |  |
-| `TIDAL_SHIFT_PLAN.md` | UNCLASSIFIED |  | — | — |  |
-| `WORK_ORDER_cowork_r1103.md` | UNCLASSIFIED |  | — | — |  |
-| `c22_keepers.md` | UNCLASSIFIED |  | — | — |  |
-| `gate_notes_bead_audit.md` | UNCLASSIFIED |  | — | — |  |
-| `lapse_shift_synchrony_reconciliation.md` | UNCLASSIFIED |  | — | — |  |
+| `A4_matter_seam_crossing_build.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `A5_fermion_sector_build.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `ANTIMATTER_FRONT_PLAN.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `CMB_ACOUSTIC_FRONTIER_STATUS.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `CONSTANT_LEDGER_receipt.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `CR_PERTURBATION_HELD_PICTURE.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `CR_intake_notebook.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `D3_RECIPROCITY_READING_ORDER.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `E1_CITATION_CATALOGUE.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `FIGURE_STATUS.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `FIGURE_WORK_LOG.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `MATTER_SECTOR_germ.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `PHASE1_seam_crossing_build.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `PHASE3_baryogenesis_analogue.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `PHASE8_DIFF_AUDIT.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `PLANCK_from_CR_build.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `RATE_HANDOFF_DERIVATION.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `SILVER_PLATTER_colour-frontier-arc.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `THE_COLLAPSE_DYNAMICS_ARC.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `THE_NEXT_ARC.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `THE_THIRD_ARC.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `THIRD_ARC_T01_heights_firstrun.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `TIDAL_SHIFT_PLAN.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `WORK_ORDER_cowork_r1103.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `c22_keepers.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `gate_notes_bead_audit.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `lapse_shift_synchrony_reconciliation.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
 
 > **⚠ THE LAG COLUMN IS A LOOK-SIGNAL, NOT A VERDICT.** *It reads the newest fork revision the file mentions, which any mention satisfies — a document can be made to look current by writing ABOUT the fork. **`declared current` is the honest column**, set only by the pass that actually brings a file current. And a forward document is ahead of the corpus by construction: "stale" is a word for the corpus, never for the instrument examining it.*
 

@@ -359,6 +359,79 @@ precisely because **this paper polices this conflation harder than any other in 
 
 ---
 
+## ⛭⛭⛭ 21 · TAKE THIS ONE FIRST — P15 SAYS "BRANCH POINT" WHERE ITS OWN RECEIPT SAYS "SEAM", AND THE WORD DECIDES THE PROPOSITION'S TRUTH VALUE — added r2440
+
+**Where:** `corpus/CR_cosmology.tex` — the `prop:subhorizon` cluster: the subsection heading at **220**, the body
+at **224**, and **274, 291, 296, 307**.
+
+**⌗ VERIFIED THREE WAYS HERE, INDEPENDENTLY OF THE FINDER.**
+*· **The receipt cited at those sentences says "seam" nineteen times and "branch point" zero times.***
+*· **The receipt's own verdict is that the two loci are distinct and ordered:*** *"the comoving horizon is
+monotonic on each side of a single maximum at $r_*$, which lies **outside** the seam … **the seam sits between
+the two, on the rising side**", with $r_*=1.53\,r_{\rm seam}$.*
+*· **And the physics INVERTS between them — computed here:***
+
+| $r$ | $aH$ | $1/aH$ |
+|---|---|---|
+| $\alpha/\sqrt3$ (the seam) | $1.000$ | **$1.000$** |
+| $0.1\alpha$ | $1.96$ | $0.509$ |
+| $10^{-3}\alpha$ | $19.6$ | **$0.051$** |
+
+⇒ ***At the seam the comoving horizon is near its MAXIMUM — the modes are inside. As $r\to0$, $2M/r\to\infty$ so
+$aH\to\infty$ and $1/aH\to0$: EVERY mode has exited.*** **So a proposition titled "sub-horizon" is TRUE at the
+seam and FALSE at the branch point.** *The substitution is not cosmetic.*
+
+**⚠ AND IT IS ACTIVELY COSTING NODES — two false findings about CR from one word, in one day.** *Node 52 read the
+Euclidean filter at the wrong locus and shipped **"nothing oscillating crosses for $\ell\ge3$"** — the opposite of
+the truth; the parallel line computed $k/\mathcal H$ at the onset and reported **"prop:subhorizon inverts for
+$\ell\lesssim250$"**, treating an onset proposition as a crossing claim.* ⌗ *It is the conflation **r2289 retired**
+— "it INVERTED the physics" — surviving at sites the hand sweep did not reach.*
+
+**⛔ AND ONE SITE MUST SURVIVE ANY SWEEP, named by the finder in advance and confirmed here:** *"the branch point
+is far below their **decoupling**" (the neutrinos, ~line 355) — **that one really is about the branch point**, a
+temperature ordering along the excursion rather than a horizon property at a locus.* ⌗ *The locus lint flags it;
+**it is a false positive and the finder said so before the tool was run**.*
+⌗ *Do not touch: the numbers ($k_{\rm hor}\approx0.010$, $k_{\rm peak}\approx0.022$, factor $\gtrsim2$,
+$r_*=1.5338\,r_{\rm seam}$), the rate, the label `prop:subhorizon`, its role in closing the inflationary route to
+coherence, or `sec:what-crosses`.*
+
+---
+
+## ⌗ 22 · P12's §weyl-a3 RENDERS AFTER THE BIBLIOGRAPHY — added r2440, and it is an authorial call
+
+**Where:** `corpus/algebroid_paper.tex`. *Document order: `\end{thebibliography}` (313) → `\input{appendix_receipts_P12}`
+(316) → **`\section{The discrete structure is the substrate's own Weyl group}\label{sec:weyl-a3}` (319)** →
+`\end{document}` (346).*
+
+**⌗ VERIFIED, three ways:** *· the finder's own corpus-wide scan returns **exactly one hit in 35 files** — this one;
+· it is **load-bearing** (receipt-tagged, and P14 relies on the $W(A_3)$/order-48 result); · and **the same result
+is already summarised in P12's body** before the bibliography.* ⇒ ***So the natural reading is the finder's: a
+fuller treatment appended and never moved back.***
+**Proposed:** *relocate lines 319–344 to before `\begin{thebibliography}`, natural home after `sec:discrete` or
+`sec:scope`. **No text changes — a cut and paste.*** ⚠ ***But placement is authorial and the finder said so:
+"medium-high confidence it's unintended … confirm with the author before committing." Routed on that basis.***
+
+---
+
+## ⌗ 23 · "DECK GROUP $S_3$" ON A THREE-SHEETED COVER IS IMPOSSIBLE — added r2440
+
+**Where:** `corpus/groupoid_paper.tex`, `prop:deck` (title and opening sentence) and `rem:equianharmonic`.
+
+*`prop:deck` reads **"The deck group of the three-sheeted cover is $S_3$"** — and closes, correctly,* ***"$S_3$ is
+therefore the MONODROMY group of the branched cover, not a free relabelling of the members."***
+⇒ ⛔ **A deck (covering-automorphism) group acts freely on a fibre, so its order divides the degree: $6\nmid3$.**
+*The proposition corrects its own heading four sentences later.*
+⌗ **And `rem:equianharmonic` inherits the wrong word and then gives a third answer:** *"three-sheeted … **with deck
+group $S_3$**" and, four lines on, **"the deck action is $\mathbb{Z}_3$."*** *Three statements, one object.*
+
+**⛭ AND EVERYTHING FITS ONCE THE WORD IS FIXED, which is why this is terminology and not physics.**
+*$\operatorname{disc}(r^3-r+2M)=-4(27M^2-1)$ is **not a square**, so the monodromy is $S_3$, **the cover is
+non-regular with trivial deck group**, and* ***its Galois closure has degree six with deck $S_3$ — which is exactly
+what this line's `C3` receipt established from the dial.*** **Three routes, one consistent picture, one wrong word.**
+**Suggested:** *"monodromy group" in the proposition's title and opening; and `rem:equianharmonic` to match.*
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

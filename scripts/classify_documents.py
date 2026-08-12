@@ -134,6 +134,30 @@ def classify():
             kind, job = 'VIEW', f'view of {VIEW[name][0]} via `{VIEW[name][1]}`'
         elif name in METHOD:
             kind, job = 'METHOD', 'rules / guards / canon'
+        # ** r2440: THE RULE THAT CLOSED A CI OUTAGE THIS LINE CAUSED AND DID NOT SEE. **
+        # At r2427 the duplicate sweep was found to have deleted twenty-nine live top-level files, and
+        # they were restored from the fork's pristine tree -- correctly.  ** They were never classified. **
+        # So `--check` has exited 1 on every push since, and because the workflow's `fast` job runs the
+        # register checks under `set -e`, ** the fifteen text gates and the hollow-assertion lint never
+        # executed in CI at all for twelve revisions ** -- while this line reported "twenty gates rc=0"
+        # from running them ONE AT A TIME in its own container, where each exit code is seen separately.
+        # ⇒ ** A gate suite run by hand and a gate suite run under `set -e` are different instruments. **
+        # Found by node 53 on a pristine clone, which is the only place it was visible.
+        #
+        # THE CLASSIFICATION IS A RULE RATHER THAN A LIST, because a list of twenty-seven filenames is a
+        # list that goes stale: ** a top-level document that ALSO exists in retired/ is the fork's own
+        # retired working note, kept in both places because the fork does not retire by moving. **
+        # (That is the same fact whose misreading caused the deletion -- so the rule and the bug have one
+        # root, and naming it here is what stops the next node re-deriving it.)
+        elif name == 'FOLD52_ASSESSMENT.md':
+            # the fork's assessment of the abandoned 52/53 ACOUSTIC line; frontmatter carries a
+            # `description:` but no `kind:`.  Named here rather than annotated into the fork's file,
+            # so there is no cross-line annotation to keep alive through the next absorption.
+            kind, job = 'RECORD', ("the fork's assessment of the abandoned 52/53 ACOUSTIC line -- "
+                                   "what it holds, what to take, and what could not be verified")
+        elif os.path.exists(os.path.join(ROOT, 'retired', name)) and os.sep not in name:
+            kind, job = 'RETIRED', ("the fork's retired working note, carried at top level and in "
+                                    "retired/ both; this line neither owns nor maintains it")
         elif name.startswith('capstones/'):
             kind, job = 'METHOD', (job or 'the why-layer — read at spin-up steps 8 and 8b')
         elif name in RECORD_EXACT or name.startswith(RECORD_PREFIX):
@@ -169,7 +193,11 @@ def write_index_block(rows, front):
     path = os.path.join(ROOT, 'INDEX.md')
     if not os.path.exists(path):
         return
-    order = {'SOURCE': 0, 'VIEW': 1, 'STATE': 2, 'METHOD': 3, 'RECORD': 4, 'UNCLASSIFIED': 5}
+    # RETIRED added r2440 with the retired-duplicate rule above.  ** The first draft added the rule
+    # and not the sort key, and the script raised KeyError('RETIRED') -- caught here rather than in CI,
+    # which is the point: a classifier that cannot ORDER a class it can ASSIGN is half a classifier. **
+    order = {'SOURCE': 0, 'VIEW': 1, 'STATE': 2, 'METHOD': 3, 'RECORD': 4, 'RETIRED': 5,
+             'UNCLASSIFIED': 6}
     o = [INDEX_BEGIN, '']
     o.append('## ⌗ THE DOCUMENT INVENTORY — generated')
     o.append('')
@@ -295,7 +323,11 @@ def main():
     out.append('')
     out.append('| document | kind | job | declared current | newest c54 in body | lag |')
     out.append('|---|---|---|---|---|---|')
-    order = {'SOURCE': 0, 'VIEW': 1, 'STATE': 2, 'METHOD': 3, 'RECORD': 4, 'UNCLASSIFIED': 5}
+    # RETIRED added r2440 with the retired-duplicate rule above.  ** The first draft added the rule
+    # and not the sort key, and the script raised KeyError('RETIRED') -- caught here rather than in CI,
+    # which is the point: a classifier that cannot ORDER a class it can ASSIGN is half a classifier. **
+    order = {'SOURCE': 0, 'VIEW': 1, 'STATE': 2, 'METHOD': 3, 'RECORD': 4, 'RETIRED': 5,
+             'UNCLASSIFIED': 6}
     for n, k, job, dcur, body, klass in sorted(rows, key=lambda r: (order[r[1]], r[0])):
         dc = f'c54.{dcur}' if dcur is not None else '—'
         bd = f'c54.{body}' if body is not None else '—'

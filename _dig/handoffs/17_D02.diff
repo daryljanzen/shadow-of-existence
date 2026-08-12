@@ -1,0 +1,22 @@
+--- a/corpus/groupoid_paper.tex
++++ b/corpus/groupoid_paper.tex
+@@ D02: sharpen rem:equianharmonic. The deck cover (S3, 3-sheeted over the 2M-plane) and the
+@@ SKY cover (s=sin 3w, 3-sheeted, branch sin3w=+-1) coincide via the paper's own triple-angle
+@@ content 2M=(2/(3*sqrt3)) sin 3w -- same base, same branch set, same degree. So the genuinely
+@@ distinct order-three object is the j=0 elliptic DOUBLE cover, and the open coincidence is
+@@ (deck 3-fold) vs (elliptic 2-fold), better-posed. Closes nothing; do-not-assert preserved.
+@@ Receipts: covers_check.py, check_elliptic.py.
+ What the coincidence of
+-order-three structures amounts to is therefore left as noted rather than asserted: the cross-ratio
+-is equianharmonic, the deck action is $\mathbb{Z}_3$, and the two are not here shown to be one
+-thing.
++order-three structures amounts to is therefore left as noted rather than asserted. One simplification
++of \emph{which} two structures is available and sharpens the open item without closing it: the
++three-sheeted deck cover over the $2M$-plane and the three-sheeted cover of the sky angle by
++$s=\sin 3w$ (branched at $s=\pm1$) are the \emph{same} cover in two coordinates, since the horizon
++relation $2M=\tfrac{2}{3\sqrt3}\sin 3w$ carries the one base onto the other and the Nariai branch
++$2M=\pm\tfrac{2}{3\sqrt3}$ exactly onto $s=\pm1$. The genuinely distinct object is therefore the
++degree-two $j=0$ elliptic cover branched at the four points, and the coincidence left open is the
++deck $\mathbb{Z}_3$ of that one three-sheeted cover against the complex-multiplication order-three
++of the elliptic double cover---two order-three structures on two covers of the same configuration,
++not here shown to be one thing.

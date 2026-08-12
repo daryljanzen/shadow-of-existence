@@ -21,25 +21,34 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
       - run: pip install numpy scipy sympy mpmath
+      # ** r2440: `set -e` REMOVED, AND THE REASON IS A TWELVE-REVISION OUTAGE IT CAUSED. **
+      # classify_documents --check began failing at r2427 (twenty-eight restored files, unclassified).
+      # Under `set -e` that aborted the step on its FIRST command, so ** the fifteen text gates and the
+      # hollow-assertion lint never ran in CI at all ** -- while this line reported "twenty gates rc=0"
+      # from running them ONE AT A TIME locally, where every exit code is seen separately.
+      # ⇒ ** A suite run by hand and a suite run under `set -e` are different instruments: the first
+      #      reports every failure, the second reports the first and hides the rest. **
+      # Every check now runs, failures are collected, and the step fails at the END naming all of them.
       - name: the register and view checks
         run: |
-          set -e
-          python3 scripts/classify_documents.py --check
-          python3 scripts/regen_teed_up.py --check
-          python3 scripts/regen_burn_down.py --check
-          python3 scripts/id_space_census.py --check
-          python3 scripts/regen_map_status.py --check
-          python3 scripts/build_fork_span.py --check
-          python3 scripts/reapply_annotations.py --check
+          fails=""
+          for c in classify_documents regen_teed_up regen_burn_down id_space_census \
+                   regen_map_status build_fork_span reapply_annotations; do
+            echo "── $c"
+            python3 scripts/$c.py --check || fails="$fails $c"
+          done
+          if [ -n "$fails" ]; then echo "⛔ FAILED:$fails"; exit 1; fi
       - name: the text gates
         run: |
-          set -e
+          fails=""
           for g in check_id_bands check_kills check_burndown check_supersession \
                    check_grains check_changelog check_depmatrix check_arcs \
                    check_paststate check_receipts check_withdrawn check_queues \
                    check_citations check_absorption check_receipt_asserts; do
-            echo "── $g"; python3 corpus/$g.py
+            echo "── $g"
+            python3 corpus/$g.py || fails="$fails $g"
           done
+          if [ -n "$fails" ]; then echo "⛔ FAILED:$fails"; exit 1; fi
       - name: the hollow-assertion lint
         run: python3 scripts/lint_assertions.py
 
