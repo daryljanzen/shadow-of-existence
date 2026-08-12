@@ -144,6 +144,16 @@ LEADS = {
    "writes p0 lowercase. **Nine rows invisible; surfaced only because the first `\\rcpt{}` to name one read "
    "as an orphan.** Same shape as its own duplicate-stem guard: blind to a row it should police",
    [], 3, 0),
+ 'L-524': ("**item 53 worked**: the resolution IS the baby-universe one, and its standard objection "
+   "presupposes two spacetimes joined at a neck while this construction has ONE \u2014 P7's own "
+   "'globally connected, global Cauchy surface throughout' was answering it silently. **And there is no Page "
+   "curve because there is no flux, so a measured one would FALSIFY the denial**: a silence turned into a "
+   "trip-wire",
+   ['L-165'], 3, 2),
+ 'L-525': ("items 25, 28 and 32 applied \u2014 P13's unnecessary concession withdrawn (**the compact form is "
+   "the unique real form admitting $\\mathfrak{su}(3)$**, a tighter wall for PO-4), P16's abundance pointer "
+   "repointed, and the progenitor composition's **adiabatic** premise named where it is used",
+   ['L-221'], 3, 1),
  'L-204': ("R-P stations \u2462\u2463 \u2014 P8/P9, GR field equations and the exact-solution catalogue",
    ['L-165','L-175'], 3, 2),
  'L-217': ("the CR/Higgs relation is stated; **`F1` stays live \u2014 the relation breaks if the gauge group is "
