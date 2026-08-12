@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r2492 — 2026-08-11 (main line). **STATION Ⓗ WALKED — it is a DECLARED traced-weight gap, and station Ⓒ turns out to be its PREREQUISITE rather than its neighbour.**
+
+**⌗⌗ THE CORPUS NAMED THE GAP BEFORE THE REACH REACHED IT.** *P14, immediately after establishing $\dim\ker_+=3$,
+$\dim\ker_-=0$:* **"stated here at traced weight: the receipt establishes the mechanism … and marks the
+Atiyah–Singer statement on the branched bead as TRACED rather than COMPUTED."**
+⇒ ***So Ⓗ is not an unknown. And unlike Ⓕ at r2490 — where the answer sat in the file and the header was stale —
+the corpus here is not stale but correctly and explicitly humble.***
+
+**⛭ AND THE FIELD SAYS WHY IT CAN ONLY BE TRACED, which is a fact about the theorem rather than about diligence:**
+*the plain Atiyah–Singer theorem is a statement about a **smooth compact manifold**; the object is a **branched
+bead** (P14's own phrase, twice) — and the file carries **zero occurrences of "equivariant" and zero of
+"Kawasaki"**.*
+⇒ ***THE TOOL THAT COMPUTES AN INDEX ON A BRANCHED OBJECT IS THE EQUIVARIANT / ORBIFOLD INDEX. The theorem invoked
+is not the theorem the object needs.***
+
+**⛭⛭ AND THAT IS WHERE Ⓗ AND Ⓒ COMPOSE.** *An equivariant index must be equivariant **under a named group**, and
+P14 supplies one: **"the three zero-modes are permuted by the full $S_3$ … the Weyl $S_3$ IS the relation among the
+three hinges."*** ⚠ *But r2491 found **three order-six-adjacent objects in play and unresolved** — $S_3$ (monodromy),
+$\mathbb Z_3$ (deck), $\mathbb Z_6$ (equianharmonic) — and routed item 23 is the same knot.*
+⇒⇒ ***SO COMPUTING RATHER THAN TRACING NEEDS EXACTLY WHAT Ⓒ FOUND OPEN: an equivariant index over the wrong group
+is not a weaker result — IT IS A DIFFERENT THEOREM.***
+⌗ ***WHICH MEANS Ⓒ IS NOT ADJACENT TO Ⓗ. IT IS A PREREQUISITE FOR IT*** *— and R-M's own standing rule, **"the
+handoff outranks the list order"**, had them in the right sequence for a reason it never stated. **A rule that turns
+out to have been right for an unstated reason is worth more than one that was merely obeyed.***
+
+⚠ *Not a defect: **the count is not in question** — the traced item is the **stability** statement, not
+$\dim\ker_+=3$ — and **nothing here computes an equivariant index**. ***The corpus declared the weight of the
+theorem it used, which is why this station yields a ROUTE rather than a finding against it.***
+⌗ *Filed in `THE_FERMION_SECTOR_GEOMETRY`, which is where the sector's route belongs.*
+
+**Register: 239 rows. Gates: twenty-one, twenty-one rc=0. `L-203`: three of five stations walked, and the remaining two are now ORDERED.**
+
 ### Revision r2491 — 2026-08-11 (main line). **STATION Ⓒ WALKED AND IT BITES — the equianharmonic structure supplies $\mathbb Z_6$ where the corpus's cover carries $S_3$, and routed item 23 is the same knot.**
 
 **⌗⌗ `Q4`'s HANDOFF CHECKS AT THE FIRST STEP.** *With $\lambda=e^{i\pi/3}$ the $j$-invariant is **exactly 0**, so

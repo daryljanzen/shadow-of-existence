@@ -2,8 +2,30 @@
 name: the-fermion-sector-geometry
 description: The Standard Model's fermion content read in the corpus's own hinge/lap/involution geometry — colour, isospin, chirality, fractional charge, confinement, leptons, generations. A SPINE document of the live arc, not an annex. Every correspondence carries what a proof would have to establish and what would refute it.
 sources: [cowork]
-current: r2488+c54.194
+current: r2492+c54.194
 ---
+
+## ⛭⛭ THE INDEX'S OWN STATUS, AND WHAT WOULD COMPUTE IT — added r2492 from station Ⓗ
+
+*P14 marks its own weight, right after establishing $\dim\ker_+=3$, $\dim\ker_-=0$:* **"stated here at traced
+weight … **marks the Atiyah–Singer statement on the branched bead as TRACED rather than COMPUTED**."** ⌗ ***The
+traced item is the STABILITY statement, not the count — the count rests on the mechanism the receipt establishes.***
+
+**⇒ AND THE REASON IT CAN ONLY BE TRACED IS A FACT ABOUT THE THEOREM, not about the corpus's diligence:**
+*the plain Atiyah–Singer index theorem is a statement about a **smooth compact manifold**; this object is a
+**branched bead**.* ⇒ ***The tool that computes an index on a branched object is the EQUIVARIANT / ORBIFOLD index —
+which appears nowhere in P14 (zero "equivariant", zero "Kawasaki").***
+
+**⛭⛭ AND WHAT AN EQUIVARIANT INDEX WOULD FIRST REQUIRE IS A GROUP, WHICH IS NOT YET SETTLED.**
+*P14 names one — **"the three zero-modes are permuted by the full $S_3$ … the Weyl $S_3$ IS the relation among the
+three hinges."*** ⚠ *But r2491 found **three order-six-adjacent objects in play**: $S_3$ (monodromy), $\mathbb Z_3$
+(the deck), $\mathbb Z_6$ (the equianharmonic automorphisms) — and routed item 23 is the same knot.*
+⇒ ***An equivariant index over the wrong group is not a weaker result. It is a different theorem.***
+
+**⌗ SO THE ROUTE FOR THIS SECTOR IS ORDERED, and the order is forced rather than chosen:** ***resolve which group
+acts, then compute the index.*** *R-M's standing rule — "the handoff outranks the list order" — had those two
+stations in that sequence already, for a reason it had not stated.*
+
 
 ## ⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **the generation count's index argument has a stated-scope question, and the colour wall got tighter**
 
