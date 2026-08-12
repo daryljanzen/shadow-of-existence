@@ -146,6 +146,49 @@ sources: [cowork, chat]
 
 
 
+### Revision r2455 — 2026-08-11 (main line). **`L-211` RUN ON `L-213`'s CLOSURE — the venue question for colour DISSOLVES, and what remains is curvature.**
+
+**⌗⌗ THE PROCEDURE, run a second time in two revisions, and it delivered again.** *`L-211`: "when a gap closes, the
+corpus owes on the gaps in connected regions." Applied to `L-213`'s closure (r2448) together with `F13` (r2442).*
+
+**⌗ THE ADJACENT GAP P13 ADVERTISES, in its own words:** *"the compact-face fermion sector the obstruction would act
+on **REMAINS UNBUILT**, and its construction is **the major undertaking any geometric GAUGE-matter route would first
+have to complete**" — by* **"some route other than $\mathfrak{su}(3)$ as a substrate isometry."**
+
+**⛭⛭ AND THAT OTHER ROUTE EXISTS, IS ALREADY BUILT, AND IS NOT THE COMPACT FACE.** *P14: "the bundle the operator
+acts on is **not a bundle of the substrate**: every ambient candidate is real, and a real bundle's complexification
+carries a parallel conjugation, so its holonomy lands in the real form and **none can carry $\mathfrak{su}(3)$**.*
+***The module is the BRANCHING itself.***" *And **the smallest connected group containing the three wall monodromies
+and the hinge 3-cycle is $SU(3)$, with the lap as its centre** — "every channel the Standard Model has, with the
+configuration group **SELECTED rather than chosen**."*
+
+**⇒ SO THE THREE ROUTES COMPOSE INTO ONE STATEMENT THE CORPUS HELD IN PIECES:**
+
+| route to colour | status |
+|---|---|
+| $\mathfrak{su}(3)$ as a **substrate isometry** | ⛔ **walled** — `PO-4`, the 6-versus-5 dimension count |
+| $\mathfrak{su}(3)$ on the **compact face** | ⛔ **priced as an ADD** (`L-213`) — and **`F13` shows it is the ONLY real form that could have hosted it** |
+| $\mathfrak{su}(3)$ from **wall monodromy** | ✔ **BUILT, and SELECTED rather than chosen** — ⚠ ***but the bundle is FLAT*** |
+
+⇒⇒ ***AND THE FLATNESS IS WHERE THE LIVE GAP ACTUALLY SITS***, *in P14's own voice:* **"flat holonomy supplies exact
+selection rules and no curvature, so the construction delivers the discrete content of colour and supplies no
+force."**
+
+**⇒ THE CORPUS WAS NEVER SHORT OF A HOME FOR $\mathfrak{su}(3)$.** ***What `F13` and `L-213` leave is sharper and
+smaller: NOT "where does colour live" but "WHERE DOES ITS CURVATURE COME FROM."*** *Registered as `L-233`.*
+
+**⌗ AND THIS IS THE ROW'S MECHANISM RATHER THAN A COINCIDENCE:** *the three facts sit in **three papers and two
+outside nodes' findings**.* ***No single reading would have joined them, and nothing in the register was looking.
+The procedure is what looked.***
+⌗ *Two runs, two results: r2454 **withdrew a routed item**, r2455 **relocated a frontier**. **A triggered front
+outperformed an enumerated one twice in two revisions**, which is what `L-211` claimed when it was registered and
+had not demonstrated.*
+
+⚠ *Not claimed: that the curvature question is answerable or close; nor that the monodromy route delivers colour as
+a **force** — **P14 says plainly that it does not**.*
+
+**Register: 226 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2454 — 2026-08-11 (main line). **`L-211`'s MECHANISM RAN AND WITHDREW A ROUTED ITEM — P14's leaf-compactness claim does NOT fail at the forced member, and the limit is $\pi\alpha/\sqrt3$.**
 
 **⌗⌗ THE PROCEDURE, applied rather than argued.** *`L-211` is the closure-adjacency debt: **"when a gap closes, the
