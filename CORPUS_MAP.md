@@ -146,6 +146,44 @@ sources: [cowork, chat]
 
 
 
+### Revision r2451 — 2026-08-11 (main line). **`L-202` NARROWED AND DECIDED NEITHER WAY — the seam phase is the ANTILINEAR face, and it is trivial exactly where the corpus already has an answer.**
+
+**⌗⌗ FIRST, THE PHASE IS IDENTIFIED RATHER THAN DESCRIBED — and this line had not connected the two.** *P7
+`sec:two-sided-closure` names **two faces of one object**: the **LINEAR** $R:r\mapsto-r$, which under $R=\gamma^5$
+makes the $r<0$ leg the antifundamental — **matter and antimatter, a physical reading the corpus already carries** —
+and* ***"a second, antilinear face of the same object: the reality involution $K:\tilde\tau\mapsto\bar{\tilde\tau}$
+on complexified cosmic time."***
+⇒ ***`L-202`'s "phase structure at the seam RELATIVE TO TRAJECTORIES" IS the $K$ face.*** **Naming it is half the
+narrowing.**
+
+**⌗ THEN THREE FACTS, computed.**
+*· **Reality admits exactly TWO values of the phase, not a continuum:**
+$\operatorname{Im}[\sinh^2(a+ib)]=\tfrac12\sin 2b\,\sinh 2a$ vanishes for all $a$ only at $b\in\{0,\pi/2\}$ —
+**`C4`'s pencil, re-derived.***
+*· **The two differ by the SIGN of $\sinh^2$** — $+\sinh^2 a$ against $-\cosh^2 a$ — **which is the signed areal
+radius, exactly the branch $R$ exchanges.***
+*· ⛭ **And $K$ acts TRIVIALLY on values over the reality set, while $R$ EXCHANGES the branches.***
+
+**⇒⇒ SO THE PHASE IS NOT A SECOND LABELLING OF MATTER AND ANTIMATTER.** *$R$ does that work, linearly, with a
+physical reading.* ***Whatever $K$ carries is carried in the OFF-REAL structure — the approach to reality — and not
+on the reality set itself.***
+
+**⛔ TWO ANSWERS ARE THEREFORE RULED OUT, AND THAT IS THE NARROWING:**
+*· "it is real structure **because** it distinguishes matter from antimatter" — **it does not**;*
+*· "it is a continuous interpretive parameter" — **reality admits exactly two values, geometrically forced**.*
+⇒ ***WHAT REMAINS IS THE WHOLE QUESTION, AND IT NOW HAS A LOCATION: does the off-real contour carry anything a
+trajectory can be said to HAVE?***
+
+⚠ **NOT CLAIMED — and the row's constraint is the point.** *`L-202` is **PROTECTED-adjacent**: "it may narrow and it
+may **not** be closed in either direction by a node."* ***So: not that the phase is real structure; not that it is
+interpretation; and not that $K$ is empty — only that it is empty ON THE REALITY SET, which is a statement about
+where to look and not about what is there.***
+
+⌗ *This is the shape the register asked for and had not had an instance of: **a question advanced without being
+answered**, where what is added is the elimination of the two easiest answers and a location for the hard one.*
+
+**Register: 225 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2450 — 2026-08-11 (main line). **`L-207` ⓵ DISCHARGED — the general inhomogeneous leaf is EXHIBITED, and the exhibit is the corpus's own coordinate system.**
 
 **⌗⌗ WHAT WAS OWED, and W1 had left it precisely.** *r2424 established that P8's general inhomogeneous evolution is
