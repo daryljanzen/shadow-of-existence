@@ -146,6 +146,41 @@ sources: [cowork, chat]
 
 
 
+### Revision r2510 — 2026-08-11 (main line). **c54.198 MERGED — the unworked stratum's free shear is TWO, not five, and the constraint that fixes the other three was printed in this line's own receipt.**
+
+**⛔ THE CORRECTION, and it is exact.** *c54.198: "`I3` closes 'a five-dimensional space of shear configurations at
+fixed $\rho$ — and nothing selecting among them', **four lines after writing down the constraint that selects**: the
+trace-free momentum constraint is $D_j\sigma^{ij}$, and under the York split $\sigma=\sigma^{TT}+(LW)$ it is an
+elliptic equation for $W$ ALONE."*
+⇒ *Verified: **trace-free symmetric 5, minus the vector $W$ the momentum constraint fixes 3, leaves $\sigma^{TT}$
+with TWO.***
+
+**⛭⛭ AND P9 ALREADY NAMES THE TWO — one sentence past the corollary this line quoted at r2503.** *`cor:radiation`:*
+***"The graviton's two propagating polarizations are exactly the transverse degrees of freedom a sweep cannot carry,
+since a swept geometry depends only on its orbit-space coordinates while a free wave depends on the transverse
+[directions]."***
+⇒⇒ ***So the unworked stratum's free data is TWO FUNCTIONS, they are the graviton's polarizations, and P9 already
+says the construction's own mechanism cannot carry them.*** *Far better posed than "five unconstrained components":
+**two named modes, and the exclusion already stated**. The question becomes whether anything other than a sweep is
+available.*
+
+**⌗ AND THE FAILURE IS THIS LINE'S, CORRECTED TWICE IN TWO REVISIONS FROM TWO DIRECTIONS:** *r2505 caught "nothing
+selects" from the **vacuum** side (Goldberg–Sachs exists and is hypothesis-bound); c54.198 caught the **count** from
+the **constraint** side —* ***and the constraint was in `I3`'s own printed output.***
+⇒ ⛭ ***A claim that draws two independent corrections was not a near-miss. It was a claim made without looking, and
+the looking was cheap both times.***
+⌗ **AND THE SECOND RULE:** ***quoting a passage is not reading it.*** *r2503 cited `cor:radiation` for the Type-N
+plane wave and stopped.* ***A citation lifted for one clause leaves the rest of the paragraph unread — and the rest
+of that paragraph was the whole answer.***
+
+⚠ *r2504's **identity stands** and the fork re-derived it on a general 3-metric. **What is withdrawn is the COUNT and
+the "nothing selects" clause.** And the stratum is still unworked: **two free functions is still two functions**.*
+
+⌗ *The merge: **second true three-way**, based on r2504 with this line five revisions past. **Register clean — 244
+rows, zero duplicated IDs.** Eleven text conflicts, eight in generated files; the four real ones (`ABSORPTION`,
+`FOR_56`, `receipts/INDEX`, `regen_board`) all **additive, both sides kept** — and **r2509's zero-velocity bound
+re-applied on top of the fork's newer `L-171` text**, since the fork could not know about it.*
+
 ### Revision r2509 — 2026-08-11 (main line). **c54.195's WITHDRAWAL IS TOO WIDE — the band across the admissible phases is a third of the gap, and over that pair the control is NOT inside.**
 
 **⛔ THE WITHDRAWN STEP FIRST, because this line reached for it and it is wrong.** *`L-202` records that **"reality

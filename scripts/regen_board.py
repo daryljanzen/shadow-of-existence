@@ -63,24 +63,37 @@ VEINS = {
 # GROUNDED 0-3: how solid the footing is, INFORMS 0-3: how much a vein would learn). **
 # ** A lead with NO vein links is instrument work.  It is not counted as progress on the map. **
 LEADS = {
- 'L-174': ("**exhibit the bend for a geometry with NO CONTINUOUS ISOMETRY** \u2014 the one unworked stratum. "
-   "Narrowed r2503: the symmetric sector is **closed form**, the spherically symmetric general case **exhibited "
-   "r2450**, and the confined inhomogeneous case (2 KV) **worked explicitly in P11**. ⛭ r2504: P11's "
-   "identification is a **general ADM identity** \u2014 the Killing vectors buy a **count**, so the build is "
-   "**exhibit a bend with a five-component $\\sigma_{ij}$**, and the obstruction is named: **$\\sigma^2$ enters "
-   "$\\rho$ with a minus sign, leaving a five-dimensional space of shears at fixed $\\rho$ with nothing selecting "
-   "among them. \u26d4 r2505: the corpus DOES select \u2014 Goldberg\u2013Sachs via the shift\u2013shear link \u2014 but **that is a VACUUM theorem and the stratum is where matter is dynamical**, so the gap is: **supply a shear-selection statement that does not assume vacuum**",
+ 'L-174': ("**exhibit a bend carrying the graviton's TWO transverse polarizations** \u2014 the one unworked "
+   "stratum. \u26ed r2510: the free shear is **two, not five** (the momentum constraint fixes $W$ under the "
+   "York split), and `cor:radiation` already names them \u2014 **'the transverse degrees of freedom a sweep "
+   "cannot carry'**. So the question is whether anything other than a sweep is available. Everything with "
+   "$\\ge1$ Killing vector is worked: closed form / LTB r2450 / Gowdy in P11",
    ['L-165','L-175'], 3, 3),
-'L-171': ("**PO-7** \u2014 whether the acoustic disagreement is real against the sky. ⚠ *The $0.62\\pi$ "
+ # ** L-171 REWRITTEN r2501+c54.197 BY THE FORK, AND THIS IS AN EDIT TO 56's FILE RATHER THAN A ROUTED
+ # ** NOTE -- disclosed in FOR_56 item 9.  The row as written asked for an experiment ALREADY RUN (the
+ # ** production-depth seam-phase scan, four phases, `L-508`, c54.195) and named a quantity that scan
+ # ** WITHDREW (the 0.62 pi).  It sat at #4 on a board an unattended node works top-down, so a stale
+ # ** premise here is not a wording preference -- it sends the next node to finished work.  The
+ # ** replacement is what is actually still open, and it is NARROWER and no less alive.
+ 'L-171': ("**PO-7** \u2014 whether the acoustic disagreement is real against the sky. ⚠ *The $0.62\\pi$ "
    "is **withdrawn** (`L-508`, c54.195): across four production-depth seam phases the acoustic phase spans "
    "0.891 in $\\phi/\\pi$ and the peak heights 0.483–1.618, **with the control's values inside both**.* ⇒ "
    "**What is open is sharper: no reading tried brings the spectrum within sixty times the control, so "
    "where the disagreement lives is not a single named quantity** — and the SPACING, which is robust to "
-   "1.9%, is the one thing that does not move",
+   "1.9%, is the one thing that does not move. \u26ed NARROWED r2509: that span includes $\\phi=\\pi/4$ and "
+   "$\\pi/2$, **at which the mode enters MOVING**. Across the two ZERO-VELOCITY phases ($\\sin\\phi=0$, i.e. "
+   "$\\phi=0,\\pi$) the band is **0.2069 against a 0.6152 disagreement** \u2014 a third, not most \u2014 and at "
+   "$\\phi=\\pi$ the arm is **still 0.408 from the control**, so *over the admissible pair the control is NOT "
+   "inside*",
    ['L-202'], 2, 3),
  'L-207': ("\u24f6 the confined/branch-point exhibition \u2014 **gated on PO-6 and must not be opened without "
    "it** (\u24f5 discharged r2450)",
    ['L-165'], 1, 3),
+ 'L-510': ("**the unworked stratum's free shear is TWO, not five** \u2014 the momentum constraint owns three "
+   "under the York split, and **P9 already names the remaining two as the graviton's polarizations**. So the "
+   "Killing vectors buy 1-of-2, and the dark interior is **how the transverse 2-plane turns over the leaf**, "
+   "not which of a five-dimensional family",
+   ['L-165','L-175'], 3, 2),
  'L-204': ("R-P stations \u2462\u2463 \u2014 P8/P9, GR field equations and the exact-solution catalogue",
    ['L-165','L-175'], 3, 2),
  'L-217': ("the CR/Higgs relation is stated; **`F1` stays live \u2014 the relation breaks if the gauge group is "
