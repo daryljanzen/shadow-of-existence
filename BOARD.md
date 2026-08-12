@@ -76,9 +76,9 @@ current: r2500+c54.194
 
 # III · THE ROUTED LIST (`FOR_54.md`) — leads handed to the working fork
 
-- ***26 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
+- ***23 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
 - *7 are ANSWERS to the fork rather than work for it* — 33, 34, 35, 36, 37, 38, 39
-- *12 closed* — 10, 15, 14, 16, 17, 21, 23, 24, 41, 45, 46, 47
+- *15 closed* — 10, 15, 14, 16, 17, 21, 23, 24, 29, 40, 41, 43, 45, 46, 47
 
   - **6** · The map's header claim is stronger than the map
   - **7** · `FORK_c54.md` narrates c54.1–c54.35 and reads as current
@@ -94,15 +94,12 @@ current: r2500+c54.194
   - **26** · TWO ITEMS ROUTED AT THE FINDER'S WEIGHT, NOT INDEPENDENTLY VERIFIED HERE
   - **27** · P15's RECEIPT LAYER CARRIES TWO PARAMETER SETS AND THE PAPER DRAWS ON BO
   - **28** · P16's HEADLINE ABUNDANCES CITE A RECEIPT'S REFERENCE COLUMN, NOT ITS COM
-  - **29** · `cor:radiation` CITES ITSELF FOR ITS OWN REASON — added r2444
   - **30** · A CONVENTION WORTH HAVING, OFFERED NOT IMPOSED — the receipt's `COMPUTES
   - **31** · P15's THREE OWED DERIVATIONS ARE ONE CLOSED BOUNDARY, THREE TIMES — adde
   - **32** · THE PROGENITOR-COMPOSITION DERIVATION RESTS ON A MODE CONDITION IT DOES
-  - **40** · P15's PUBLISHED TEXT STILL CARRIES THE FRAMING c54.190–191 RETRACTED
   - **42** · P9's `cor:wall` CITATION COVERS THE METHOD, NOT THE CASE — added r2503
-  - **43** · YOUR c54.195 WITHDRAWAL IS TOO WIDE — the band across the ADMISSIBLE pha
   - **44** · THE UNWORKED STRATUM IS EXHIBITED AT LINEAR ORDER, AND IT IS TEXTBOOK GR
-  - **44** · THREE RECEIPTS FAIL THE FULL SWEEP — not on physics, on a prose PIN into
+  - **51** · THREE RECEIPTS FAIL THE FULL SWEEP — not on physics, on a prose PIN into
   - **48** · THE HIGGS MECHANISM IS *IDENTIFIED* IN P6 AND NEVER DEVELOPED — correcte
   - **49** · `L-519` HAS A SECOND, INDEPENDENT FOOTING — the static frame does not ex
   - **50** · TRANS-PLANCKIAN — a partial answer, and the scoping is the whole content

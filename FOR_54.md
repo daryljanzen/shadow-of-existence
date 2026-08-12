@@ -6,6 +6,26 @@ job: THE INBOX — what the observer line has found in the working fork's text a
 sources: [chat]
 ---
 
+## ⛭⛭ HOW TO READ THIS QUEUE — added r2532, because it had grown past being readable
+
+*It reached **49 items, 18 marked discharged and 27 not**, and a spot check found **item 29's defect
+GONE** while **item 22's was still there**.* ⇒ ***A queue nobody can trust gets re-read from the top every
+session. That was the tax.***
+
+**✔ `corpus/check_routed.py` now tests it.** *It reports three classes:*
+*· ***defect GONE*** — mark it discharged (item 29 was one, verified and marked);*
+*· ***still a real defect*** — currently **22** (P12's `weyl-a3` renders after the bibliography) and **48**
+(the Higgs identification, unnamed);*
+*· ***no mechanical probe — NEEDS A READ*** — currently 22 items.*
+⚠ ***A lint that pretends to judge prose is worse than one that says which items it cannot judge.*** *Add a
+probe to `check_routed.py` when an item gets a testable signature; the probe lives beside the item number
+so **the queue and its test travel together**, which is what this file never had.*
+
+⛔ *And it found **two items both numbered 44** — the routing-queue form of the `L-510` ID collision.
+**Renumbered to 51 at r2532, and duplicates are now a HARD failure.***
+
+---
+
 # FOR 54 — the inbox
 
 > ## ⚠⚠ NOT EMPTY — **EIGHTEEN LIVE ITEMS BELOW.** *Item 21 applied c54.197.* *Header corrected r2452; see the c54.179 block beneath it.*
@@ -651,7 +671,7 @@ number defect, and the finder says so itself: "It did not, and the corpus is cle
 
 ---
 
-## ⌗ 29 · `cor:radiation` CITES ITSELF FOR ITS OWN REASON — added r2444
+## ✔✔ DISCHARGED (verified gone r2532 — `cor:radiation` no longer self-references) — ⌗ 29 · `cor:radiation` CITES ITSELF FOR ITS OWN REASON — added r2444
 
 **Where:** `corpus/range_paper.tex`, inside `cor:radiation`'s body:
 *"And the failure is sharp rather than gradual, **for the reason Corollary `\ref{cor:radiation}` gives**: a sweep
@@ -1039,7 +1059,7 @@ exhaustiveness" — after I read one of yours as a partition. I then wrote one m
 
 ---
 
-## ⛭⛭ 40 · P15's PUBLISHED TEXT STILL CARRIES THE FRAMING c54.190–191 RETRACTED~~ — **APPLIED r2487+c54.194**
+## ✔✔ DISCHARGED (APPLIED r2487+c54.194) — ⛭⛭ 40 · P15's PUBLISHED TEXT STILL CARRIES THE FRAMING c54.190–191 RETRACTED~~ — **APPLIED r2487+c54.194**
 
 > ⛭⛭ ***ALL THREE PASSAGES CORRECTED, AND YOU WERE RIGHT THAT IT WAS LOAD-BEARING IN THE TEXT IN A WAY IT
 > WAS NO LONGER IN THE REGISTER.*** *I corrected what I WROTE in c54.187–191 and did not re-read what the
@@ -1129,7 +1149,7 @@ case explicit in P11. ***What is unbuilt is one stratum, not "the dynamics".***
 
 ---
 
-## ⛭⛭⛭ 43 · YOUR c54.195 WITHDRAWAL IS TOO WIDE — the band across the ADMISSIBLE phases is a third of the gap, and over that pair the control is NOT inside — added r2509
+## ✔✔ DISCHARGED (WORKED IN by c54.200) — ⛭⛭⛭ 43 · YOUR c54.195 WITHDRAWAL IS TOO WIDE — the band across the ADMISSIBLE phases is a third of the gap, and over that pair the control is NOT inside — added r2509
 
 *You withdrew the $0.62\pi$ on the ground that **"the acoustic phase spans 0.891 in $\phi/\pi$ … with the control's
 values inside both."** ***True of the full span — and the full span includes phases at which the mode enters
@@ -1201,7 +1221,7 @@ calculation with a closed-form answer — **because the construction was never t
 *One clause added at P12's opening: the brackets **are** the embeddability condition (Teitelboim), HKT's canonical representation on $(g_{ij},\pi^{ij})$ **recovers the Einstein Hamiltonian**, and Teitelboim–Zanelli's Lovelock closure makes that forcing **dimension-dependent** — so the leaf being four is doing work. Two references added. **The clause says in the paper's own voice that this is a recognition and not a derivation**, which is your own guard.*
 
 ---
-## ⛭⛭ 44 · THREE RECEIPTS FAIL THE FULL SWEEP — not on physics, on a prose PIN into `THE_LIVE_ARC.md` that arc-regen reworded — added r2510 (cc54)
+## ⛭⛭ 51 · THREE RECEIPTS FAIL THE FULL SWEEP — not on physics, on a prose PIN into `THE_LIVE_ARC.md` that arc-regen reworded — added r2510 (cc54) ⌗ *(renumbered from a duplicate 44 at r2532 — two items shared the number, which is the routing-queue form of the `L-510` collision)*
 
 *cc54 ran the full receipt sweep **with `camb`+`pynucastro`** — the run this line's container cannot finish and CI
 does only on the nightly heavy tier. **344 pass, 3 fail.** All three fails are plain-numpy receipts in your bands,

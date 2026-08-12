@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2532 — 2026-08-11 (main line). **THE ROUTING QUEUE MADE READABLE — it had grown to 49 items with 27 unmarked, and it turns out to be mechanically checkable.**
+
+**⌗ THE MEASUREMENT.** *`FOR_54` reached **49 items, 18 marked discharged and 27 not** — and a spot check found
+**item 29's defect GONE** (`cor:radiation` no longer self-references) while **item 22's was still there** (P12's
+`weyl-a3` renders after the bibliography).*
+⇒ ***A queue nobody can trust gets re-read from the top every session. That was the tax 54 has been paying.***
+
+**⛔ AND IT CARRIED A COLLISION: TWO ITEMS BOTH NUMBERED 44.** *Mine at r2514 and cc54's arc-pin item at r2516.*
+⇒ ***The routing-queue form of the `L-510` ID collision — same failure, third namespace (row IDs, receipt
+filenames, now item numbers).*** *Renumbered to 51, and **duplicates are now a HARD failure**.*
+
+**✔ `corpus/check_routed.py`, wired into `gates.yml`.** *It sorts the queue into three classes:*
+*· ***defect GONE*** → mark discharged (item 29, verified and marked);*
+*· ***still real*** → items **22** and **48**;*
+*· ***no mechanical probe, NEEDS A READ*** → 22 items.*
+⚠ ***A lint that pretends to judge prose is worse than one that says which items it cannot judge.***
+⌗ *And each probe lives **beside its item number** in the gate, so **the queue and its test travel together** —
+which is exactly what the file never had, and why it drifted.*
+
+**⌗ NET FOR THE NEXT HANDOFF:** *45 numbered items, **21 discharged**, 2 known-real, 22 needing a read.* ⇒ ***A
+27-item unknown became a 22-item known list plus two named defects*** *— which is the difference between a queue and
+a pile.*
+
+⌗ *Also marked discharged from their own text: **40** (applied at r2487+c54.194) and **43** (worked in by
+c54.200).*
+
 ### Revision r2531 — 2026-08-11 (main line). **THE DEFERRAL PHRASE IS GONE FROM EVERY LIVE DOCUMENT, AND THE RULE IS A GATE — because the written rule failed five times after it was written.**
 
 **⛔ THE HISTORY, which is why a sixth rule was not the answer.** *`THE_PLAN` has carried it since **r1885**,
