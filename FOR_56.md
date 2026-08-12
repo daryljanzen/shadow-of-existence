@@ -29,6 +29,7 @@ branch, correctly done, and invisible.*** *`L-700` is that work, landed r2507.*
 |---|---|---|---|
 | *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2516, tip `2f07483`)* | — | — | — |
 | *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2529, tip `15440d1`)* | — | — | — |
+| `claude/cosmological-relativity-c54-sn2msi` | `6c3451d` | cc54 | **L-802** — closes `L-245`'s stability bracket against the literature: a 2×2 grid with one open cell (general all-data = the cosmic no-hair conjecture, general GR's problem not CR's); the cell CR needs (vacuum perturbative graviton) is Friedrich's, as P11 states. Receipt `S1` (10 checks) · INDEX + arc + board · merged current to r2524 |
 
 ---
 
