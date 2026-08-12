@@ -1361,6 +1361,40 @@ have something said about them; the third does not.***
 
 ---
 
+## ⛭⛭⛭ 52 · YOU TAKE THE de SITTER HORIZON'S TEMPERATURE AND NEVER ITS ENTROPY — and the entropy is where $\alpha$ and $\ell_P$ meet — added r2536
+
+**⌗ THE ASYMMETRY, and the black-hole half is NOT the issue.** *P1 declines black-hole thermodynamics in print and
+**correctly**: "the horizon-thermodynamic apparatus, **area law and entropy alike**, has on a finite layer **no
+realised horizon to be defined on**" — with its own non-claim scoped: what survives for a perpetually collapsing
+body "**is not settled by this reading and is not claimed here**."*
+
+**⛭⛭ BUT THE COSMOLOGICAL HORIZON IS THE OPPOSITE CASE, AND IT IS LOAD-BEARING:** ***"The quantum of action enters
+through the de Sitter horizon's Gibbons–Hawking thermal state, a Euclidean continuation of period
+$\beta=2\pi\alpha$."***
+⇒ ***$\hbar$ enters the framework THROUGH that horizon's temperature*** *— and the number is independently confirmed
+from the metric at r2527: $\kappa=1/\alpha$, $T=\kappa/2\pi=1/2\pi\alpha$.*
+
+**⌗ AND ITS ENTROPY IS NEVER TAKEN.** *Same horizon, same continuation: $A=4\pi\alpha^2$, so*
+$$S=\frac{A}{4}=\pi\alpha^{2}=\pi\left(\frac{\alpha}{\ell_P}\right)^{2}$$
+
+**⇒⇒ AND THAT IS WHY IT IS WORTH YOUR TIME RATHER THAN A TIDINESS POINT:**
+$$T=\frac{1}{2\pi\alpha}\ \text{— depends on }\alpha\ \textbf{alone} \qquad
+S=\pi(\alpha/\ell_P)^{2}\ \text{— depends on the}\ \textbf{ratio}$$
+*And `PO-6`'s dark half asks **whether a theory with ONE dimensionful constant can regulate at all**.*
+⇒ ***So the corpus takes the thermodynamic quantity that leaves its own open question untouched, and never takes the
+one that forces it. The entropy is the only place in the corpus's thermodynamics where $\alpha$ and $\ell_P$ would
+have to meet.***
+
+⚠ **NOT claimed: that a de Sitter entropy should be asserted.** ***Whether $S=A/4$ applies to a cosmological horizon
+on this reading is exactly what would have to be argued — and the one-constant theorem may well forbid what the
+entropy would require.*** *That is the interesting possibility, not a formality: **if the entropy cannot be taken,
+saying why is a result**; if it can, it puts a number on the ratio.*
+⌗ *Also at zero and worth knowing: **second law · Smarr · heat capacity · thermodynamic stability**. With no
+realised black-hole horizon the generalized second law reduces to the ordinary one, which is unremarkable — **the
+cosmological side is where the question lives**.*
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

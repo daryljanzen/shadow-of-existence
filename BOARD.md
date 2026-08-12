@@ -19,7 +19,7 @@ current: r2500+c54.194
 ## `L-165` · PO-6 · WHAT A QUANTUM OF THIS GEOMETRY IS
 
 - **MAPPED** — the boundary condition closes **per fibre** and cannot be broken by the number of fibres; the clause `c54.129` answered was **the one the argument does not need**; the UV degree is **quartic**, the ordinary zero-point degree; compactness buys the **IR free**
-- ⛔ **DARK** — **defining the sum**; the closed-form nonlinear $\Lambda>0$ solution; and whether a theory with **one dimensionful constant** can regulate at all; and — r2505 — **what selects among five-component shears WITHOUT assuming vacuum**, since the corpus’s only shear-selection principle (Goldberg–Sachs) is vacuum-bound
+- ⛔ **DARK** — **defining the sum**; the closed-form nonlinear $\Lambda>0$ solution; and whether a theory with **one dimensionful constant** can regulate at all — and ⛭ r2536 sharpens where that bites: **the corpus takes the de Sitter horizon's TEMPERATURE ($T=1/2\pi\alpha$, depending on $\alpha$ ALONE, and the channel through which $\hbar$ ENTERS the framework) and never its ENTROPY ($S=\pi(\alpha/\ell_P)^2$, depending on the RATIO)**; and — r2505 — **what selects among five-component shears WITHOUT assuming vacuum**, since the corpus’s only shear-selection principle (Goldberg–Sachs) is vacuum-bound
 - *6 live lead(s) inform this vein*
 
 ## `L-175` · PO-9 · WHAT FIXES THE SUBSTRATE'S DIMENSION
@@ -65,7 +65,7 @@ current: r2500+c54.194
 
 # III · THE ROUTED LIST (`FOR_54.md`) — leads handed to the working fork
 
-- ***17 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
+- ***18 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
 - *7 are ANSWERS to the fork rather than work for it* — 33, 34, 35, 36, 37, 38, 39
 - *21 closed* — 10, 15, 6, 8, 11, 12, 14, 16, 17, 21, 23, 24, 27, 29, 31, 40, 41, 43, 45, 46, 47
 
@@ -86,4 +86,5 @@ current: r2500+c54.194
   - **48** · THE HIGGS MECHANISM IS *IDENTIFIED* IN P6 AND NEVER DEVELOPED — correcte
   - **49** · `L-519` HAS A SECOND, INDEPENDENT FOOTING — the static frame does not ex
   - **50** · TRANS-PLANCKIAN — a partial answer, and the scoping is the whole content
+  - **52** · YOU TAKE THE de SITTER HORIZON'S TEMPERATURE AND NEVER ITS ENTROPY — and
 

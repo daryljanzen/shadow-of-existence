@@ -146,6 +146,41 @@ sources: [cowork, chat]
 
 
 
+### Revision r2536 — 2026-08-11 (main line). **R-P STATION ⑦ — the corpus takes the de Sitter horizon's TEMPERATURE and never its ENTROPY, and the entropy is where $\alpha$ and $\ell_P$ meet.**
+
+**⌗ THE MEASUREMENT.** *temperature 59 · surface gravity 30 · Gibbons–Hawking 11 · entropy 10 · Hartle–Hawking 9 ·
+area law 3 · Bekenstein–Hawking 2 — and* ***second law 0 · Smarr 0 · heat capacity 0 · thermodynamic stability 0 ·
+de Sitter entropy 0.***
+
+**⌗ AND THE BLACK-HOLE HALF IS DECLINED IN PRINT, CORRECTLY.** *"the horizon-thermodynamic apparatus, **area law and
+entropy alike**, has on a finite layer **no realised horizon to be defined on**" — with its own non-claim scoped:
+what survives for a perpetually collapsing body "**is not settled by this reading and is not claimed here**."*
+⇒ *A properly scoped decline, covering **the collapse horizon, which never completes**.*
+
+**⛭⛭ BUT THE COSMOLOGICAL HORIZON IS THE OPPOSITE CASE — AND LOAD-BEARING:** ***"The quantum of action enters
+through the de Sitter horizon's Gibbons–Hawking thermal state, a Euclidean continuation of period
+$\beta=2\pi\alpha$."***
+⇒ ***$\hbar$ enters the framework THROUGH that horizon's temperature*** *— and the number matches r2527's
+independent derivation from the metric ($\kappa=1/\alpha$, $T=\kappa/2\pi$).*
+
+**⌗⌗ AND ITS ENTROPY IS NEVER TAKEN.** *Same horizon, same continuation: $A=4\pi\alpha^2$, so
+$S=A/4=\pi\alpha^2=\pi(\alpha/\ell_P)^2$.*
+⇒⇒ ***$T=1/2\pi\alpha$ depends on $\alpha$ ALONE. $S=\pi(\alpha/\ell_P)^2$ depends on the RATIO of two lengths.
+And `PO-6`'s dark half asks whether a theory with ONE dimensionful constant can regulate at all.***
+⇒ ***SO THE CORPUS TAKES THE THERMODYNAMIC QUANTITY THAT LEAVES ITS OWN OPEN QUESTION UNTOUCHED, AND NEVER TAKES
+THE ONE THAT FORCES IT*** *— on the same horizon, by the same continuation, with $\alpha$ the sole dimensionful
+constant it admits.*
+
+⚠ *Not claimed that a de Sitter entropy **should** be asserted.* ***Whether $S=A/4$ applies to a cosmological
+horizon on this reading is exactly what would have to be argued, and the one-constant theorem may well forbid what
+the entropy would require*** *— which is the interesting possibility rather than a formality: **if it cannot be
+taken, saying why is a result; if it can, it puts a number on the ratio**. Routed as item 52; `PO-6`'s dark half
+carries it.*
+
+⌗ *Two anchors in the receipt's first draft were wrong and were found by grep: `PO-6`'s clause lives in **`BOARD.md`,
+not the register**, and the R-P row uses an **en-dash**, not `--`. ***Third time this span that matching at source
+beat matching from habit.***
+
 ### Revision r2535 — 2026-08-11 (main line). **ELEVEN LIVE ROWS SAID THEIR OWN WORK WAS DONE — the board goes from 29 live to 18, and the check now fails the turn.**
 
 **⌗ THE DEFECT.** *Eleven live rows carried next-step fields reading **"done in the registering revision"** —

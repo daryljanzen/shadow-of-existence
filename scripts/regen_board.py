@@ -37,7 +37,7 @@ VEINS = {
    "answered was **the one the argument does not need**; the UV degree is **quartic**, the ordinary zero-point "
    "degree; compactness buys the **IR free**",
    "**defining the sum**; the closed-form nonlinear $\\Lambda>0$ solution; and whether a theory with **one "
-   "dimensionful constant** can regulate at all; and \u2014 r2505 \u2014 **what selects among five-component shears WITHOUT assuming vacuum**, since the corpus\u2019s only shear-selection principle (Goldberg\u2013Sachs) is vacuum-bound"),
+   "dimensionful constant** can regulate at all \u2014 and \u26ed r2536 sharpens where that bites: **the corpus takes the de Sitter horizon's TEMPERATURE ($T=1/2\\pi\\alpha$, depending on $\\alpha$ ALONE, and the channel through which $\\hbar$ ENTERS the framework) and never its ENTROPY ($S=\\pi(\\alpha/\\ell_P)^2$, depending on the RATIO)**; and \u2014 r2505 \u2014 **what selects among five-component shears WITHOUT assuming vacuum**, since the corpus\u2019s only shear-selection principle (Goldberg\u2013Sachs) is vacuum-bound"),
  'L-175': ("PO-9 \u00b7 WHAT FIXES THE SUBSTRATE'S DIMENSION",
    "the cut is four and **says nothing about the substrate**; a descent from $D>5$ must be **multi-step**; the "
    "construction is **single-step by design** and one-step-ness is governed by **Rule 2**, not taste",

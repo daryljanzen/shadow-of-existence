@@ -1,10 +1,29 @@
 ---
 name: the-physics-reach
 kind: STATE
-current: r2527+c54.202
-job: The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521, OWE DISCHARGED r2527+c54.202 (two companions remain); ⑥ WALKED r2522 (a one-clause fix, item 48); ⑦ onward are owed per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home.
+current: r2536+c54.202
+job: The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521, OWE DISCHARGED r2527+c54.202 (two companions remain); ⑥ WALKED r2522 (a one-clause fix, item 48); ⑦ WALKED r2536 (the entropy asymmetry, item 52); ⑨ ⑩ owed per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home.
 sources: [cowork]
 ---
+
+## ⛭⛭⛭ STATION ⑦ WALKED r2536 — the temperature is taken and the entropy never is
+
+*Measured: **temperature 59 · Gibbons–Hawking 11 · entropy 10 · area law 3** — and* ***second law 0 · Smarr 0 ·
+heat capacity 0 · de Sitter entropy 0.***
+
+**⌗ THE BLACK-HOLE HALF IS DECLINED IN PRINT AND CORRECTLY** *— "area law and entropy alike, has on a finite layer
+**no realised horizon to be defined on**", with its non-claim scoped.*
+**⛭⛭ BUT THE COSMOLOGICAL HORIZON IS THE OPPOSITE CASE AND LOAD-BEARING:** ***the quantum of action ENTERS through
+its Gibbons–Hawking state, $\beta=2\pi\alpha$*** *— confirmed against r2527's metric derivation.*
+⇒ ***And its entropy is never taken: $S=A/4=\pi(\alpha/\ell_P)^2$.***
+
+**⇒⇒ THE POINT:** *$T=1/2\pi\alpha$ depends on $\alpha$ **alone**; $S=\pi(\alpha/\ell_P)^2$ depends on the
+**ratio** — and `PO-6` asks whether **one** dimensionful constant can regulate.* ⇒ ***The corpus takes the quantity
+that leaves its own open question untouched.*** *Routed as item 52.*
+
+⚠ *Not claimed that the entropy **should** be asserted — **whether $S=A/4$ applies on this reading is what would have
+to be argued, and if it cannot be taken, saying why is a result**.*
+
 
 ## ✔✔ STATION ⑤'s OWE IS DISCHARGED r2527 — and the answer was a sorting, not a number
 

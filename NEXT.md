@@ -115,8 +115,8 @@ is**.*
 | **`L-514`** | r2512 | **NOT done here — this is a lead, and what it needs is a check that a WITHDRAWAL paragraph does not contradict text already in the same section**; I h |
 | **`L-240`** | r2518 | **the interior is charted r2518**; what remains is the DECISION it turns on: ***is uniqueness of the leaf's dynamics a desideratum this programme hold |
 | **`L-171`** | r2519 | **`PO-7` is the one verdict on the board, and it is now sharply posed**: ***is 0.408 in $\phi/\pi$, at the only two readings the construction PERMITS, |
-| **`L-204`** | r2522 | **③④⑤⑥ walked r2520–r2522** — ⑤ is the big owe (Unruh, item 47), ③④ and ⑥ are one-clause fixes (items 46, 48) · what remains is ***⑦ onward*** |
 | **`L-519`** | r2524 | **NOT done — this is a question and it is stated as one**: *what temperature, if any, does the configuration a collapse reaches carry, read on the nea |
+| **`L-242`** | r2524 | ***does CR's structure say anything about the Higgs MECHANISM, as against the magnitudes it provably cannot supply?*** — the identification (electrowe |
 
 *18 live rows carry a stated next step; the 14 longest-unworked are shown.*
 
