@@ -2,7 +2,7 @@
 name: state-programme
 description: Where the programme stands — frontiers, what closed, what is owed, what blocks completion. Read this to know the position. Written r2343; all seven frontier rows audited against P7 `sec:frontiers` at r2376 — rows 1, 3, 4, 5 and 6 corrected, 2 and 7 clean; row 5's dimension question answered and its range obstruction closed at r2376+c54.9; the 4D-from-flavour result landed in P14 at c54.9.
 sources: [chat]
-current: r2488+c54.194
+current: r2517+c54.201
 ---
 
 ## ⛭⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **THE PROGRAMME'S WORKING SHAPE CHANGED AND THIS DOCUMENT DID NOT KNOW**

@@ -1,7 +1,7 @@
 ---
 name: the-arsenal-index
 kind: STATE
-current: r2488+c54.194
+current: r2517+c54.201
 job: The grid — which paper × which tool, run or owed, in what order. Campaign R (the two reach theatres) and Campaign C (opens · closures · dissolutions · equivalences · pry-aparts).
 sources: [cowork]
 ---

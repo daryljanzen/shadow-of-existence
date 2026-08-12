@@ -2,8 +2,25 @@
 name: physical-values-ledger
 job: What does the corpus compute, under which conventions? Read WHEN QUOTING A VALUE.
 class: whole-corpus-instrument
-current: r2488+c54.194
+current: r2517+c54.201
 ---
+
+> ## ⚠⚠ THE ACOUSTIC FIGURES BELOW ARE SUPERSEDED — annotated r2517, not erased
+>
+> ***Four quantities have been withdrawn from this front, and the withdrawals are the fork's own:***
+> *· the **first-peak position** (c54.187) — a seam-datum artefact, moving 2.26×;*
+> *· the **~21% spacing deficit** (c54.190) — a mean of three gaps at LMAXL = 1000; **at production depth 0.975
+> against 1.002, i.e. 2.5%**;*
+> *· the **24%-of-rate sensitivity** (c54.191) — measured on the first peak, inside the transient; **the series
+> moves at 98.2%**;*
+> *· the **$0.62\pi$ phase** (c54.195) — one reading of a datum choice.*
+>
+> **⌗ WHAT SURVIVES, and it is one sentence:** ***the acoustic SPACING is reproduced — 98.2% of the rate ordinary
+> acoustics requires under a moved $r_s$, robust to 1.9% — and it is the one thing that does not move.***
+> ⌗ *And r2509 bounds the phase withdrawal: across the two **zero-velocity** phases ($\sin\phi=0$) the band is
+> **0.2069 against a 0.6152 disagreement**, and at $\phi=\pi$ the arm is **still 0.408 from the control** — so over
+> the admissible pair **the control is NOT inside**.*
+
 
 ## ⛭⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **THIS LEDGER SAYS "READ WHEN QUOTING A VALUE", AND THE RECEIPT LAYER CARRIES TWO PARAMETER SETS**
 

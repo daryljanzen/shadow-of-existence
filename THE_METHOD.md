@@ -3,7 +3,7 @@ name: the-method
 kind: STATE
 description: HOW THIS PROGRAMME WORKS — veins held open to be known inside and out, and leads worked and re-ordered against them. Read this before the board, before the register, before anything.
 sources: [chat]
-current: r2500+c54.194
+current: r2517+c54.201
 ---
 
 # THE METHOD

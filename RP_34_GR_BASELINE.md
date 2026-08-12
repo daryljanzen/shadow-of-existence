@@ -1,7 +1,7 @@
 ---
 name: rp-34-gr-baseline
 kind: STATE
-current: r2488+c54.194
+current: r2517+c54.201
 job: R-P station ③④ (L-204), §0 BASELINE — what the corpus already holds in GR's four named areas, surveyed and RUN before any question is asked. Read before opening the station.
 sources: [chat]
 ---

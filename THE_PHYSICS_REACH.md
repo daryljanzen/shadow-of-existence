@@ -1,7 +1,7 @@
 ---
 name: the-physics-reach
 kind: STATE
-current: r2488+c54.194
+current: r2517+c54.201
 job: The R-P theatre — the corpus's claims across physics, per domain. LIVE: stations ③④ onward are owed per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home.
 sources: [cowork]
 ---

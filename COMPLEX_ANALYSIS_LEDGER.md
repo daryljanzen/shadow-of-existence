@@ -1,7 +1,7 @@
 ---
 name: complex-analysis-ledger
 description: R-M's third field bake — complex analysis and monodromy thrown at CR. Opened r1867 (Phase 8), handed to by the quadric bake's Q4 (equianharmonic ⟺ j=0 ⟺ CM by ω). Discharges R-M arc station Ⓒ, marked NO ENTRY since r1805. Baseline, probes, four-part close.
-current: r2494+c54.194
+current: r2517+c54.201
 ---
 
 ## ✔✔✔ THE DECK/MONODROMY KNOT IS UNTIED r2494 — four objects, one word, and every group correct for its own

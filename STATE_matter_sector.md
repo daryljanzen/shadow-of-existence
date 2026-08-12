@@ -2,8 +2,20 @@
 name: state-matter-sector
 description: Where the matter sector and the colour question actually stand — read this before touching P13, P14, or family 12. Position, not history.
 sources: [chat]
-current: r2488+c54.194
+current: r2517+c54.201
 ---
+
+> ## ⚠⚠ THE SHEAR COUNT BELOW IS SUPERSEDED — annotated r2517
+>
+> *Any "five-dimensional space of shear configurations" here is from r2504 and is **withdrawn**.*
+> ⇒ ***The free shear is TWO, not five: the momentum constraint fixes the vector $W$ under the York split
+> ($5-3=2$), and `cor:radiation` already names the two — "the graviton's two propagating polarizations are exactly
+> the transverse degrees of freedom a sweep cannot carry."*** *(c54.198.)*
+> ⌗ *And c54.199 adds which two: **the three the constraint owns carry the FOLIATION; the two it leaves carry the
+> GEOMETRY** — Schwarzschild is Type D in every slicing with ADM shear $3M/r^3$ in Painlevé–Gullstrand and $0$ in
+> static coordinates, the whole difference longitudinal.*
+> ⚠ *And **Goldberg–Sachs bears on the OPTICAL shear, not on $\sigma^{TT}$** — r2505's attribution withdrawn.*
+
 
 ## ⛭⛭ THE QUARK/LEPTON FRONT IS NOW AN OPERATOR QUESTION — added r2476
 

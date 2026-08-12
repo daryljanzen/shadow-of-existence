@@ -2,7 +2,7 @@
 name: the-evolution-map
 job: Working in paper N, what may I stand on and what may I not yet assume? Read BEFORE STANDING ON A RESULT.
 class: whole-corpus-instrument
-current: r2488+c54.194
+current: r2517+c54.201
 ---
 
 > **⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — and this map was re-read END TO END at r2435–r2438, which is why it

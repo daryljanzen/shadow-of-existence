@@ -146,6 +146,42 @@ sources: [cowork, chat]
 
 
 
+### Revisions r2516–r2517 — 2026-08-11 (main line). **FULL INGESTION AND CONSOLIDATION — c54.200, c54.201 and cc54's branch all in, and the four documents carrying retracted figures annotated.**
+
+**⛭⛭⛭ cc54's FINDING, and it earned its place by CAPABILITY rather than attention.** *Sweeping every receipt with
+camb available — which neither chat line can do — it reported:* ***"23 receipts pin `THE_LIVE_ARC.md` prose by exact
+substring; 3 have drifted, 20 still match — but every one of the 20 is exposed to the next arc regeneration. The
+coupling is unlinted."***
+⚠ *And the visibility was the worst of it: **`check_receipts_run` counts them as real failures so the nightly heavy
+gate goes red, while the fast tier never runs receipts** — so arc-pin drift is **invisible on push**.*
+
+**⇒ THE RULE THE THREE TAUGHT:** ***A RECEIPT ASSERTS AGAINST SOURCES, NOT AGAINST THE REGISTER.*** *The register is
+prose **this line rewrites by design**. A paper or a computation is the thing a claim is ABOUT.* ⇒ ***Pinning the
+register makes a receipt fail when the corpus IMPROVES, which is exactly backwards.***
+⌗ **AND THE THREE SHOW THREE DIFFERENT THINGS, ONLY ONE A REWORDING:** *`B3` pinned an **overclaim later
+CORRECTED**; `F1` an **instruction on a row later STRUCK**; `I1` a claim the corpus has since* ***FALSIFIED*** *— it
+asserted the stratum was unbuilt and **r2514 exhibited it**.* ⇒ ***A mechanical re-anchor would have buried a real
+supersession behind a string fix. That is why `corpus/check_arcpins.py` REPORTS and does not rewrite:*** *24
+receipts, **51 pins, all resolving** after the three fixes.*
+
+**⌗ AND c54.201 GATED BOTH HOLES r2512 NAMED**, *including `check_conflict_markers` — **a merge marker in a `.md`
+file no compiler reads**. It fired on a real unresolved `receipts/INDEX.md` during this very merge, and correctly
+ignored the register row that quotes markers as prose.*
+
+**⌗ THE CONSOLIDATION SWEEP: 25 stale, FOUR real.** *`ACOUSTIC_BUILD_SETUP`, `OPTICS_LENSING_LEDGER` and
+`PHYSICAL_VALUES_LEDGER` carried **retracted acoustic figures** — annotated in place with all four withdrawals and
+the one survivor (**the spacing at 98.2%, robust to 1.9%**), plus r2509's bound. `STATE_matter_sector` carried the
+**five-dimensional shear space** — corrected to **two**, with which two (the geometry, not the foliation) and the
+withdrawn Goldberg–Sachs attribution.* ⌗ *The other 21 bumped without invented landings.*
+
+**⌗⌗ AND THE INGESTION PLAN IS NOW THE WORKFLOW, every step of it earned by a merge that failed on it:**
+*`git bundle verify` (names its required ref) → `fetch` + `merge --no-commit` → `git fetch origin
+'refs/heads/claude/*'` for branches named in `FOR_56` → **check duplicate IDs (r2434), duplicate receipt filenames
+(r2512), conflict markers (r2512), arc-pins (r2516)** → resolve additively → **run every receipt the merge brings**
+→ commit.*
+
+**Register: 253 rows. Gates: twenty-one, all green. Lints: seven. Seventeen papers compiling.**
+
 ### Revision r2515 — 2026-08-11 (main line). **A LEAD FROM OUTSIDE THE CORPUS, THE FIRST — and the method had no place for one.**
 
 **⌗ DARYL'S QUESTION.** *Whether r2514's "the constraint is CONSERVED, not re-imposed" touches **the second-order-EFE

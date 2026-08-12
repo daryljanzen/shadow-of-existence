@@ -1,7 +1,7 @@
 ---
 name: figure-sweep
 kind: STATE
-current: r2488+c54.194
+current: r2517+c54.201
 job: The figure programme's state — every figure against what it must carry.
 sources: [cowork]
 ---

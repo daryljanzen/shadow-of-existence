@@ -2,7 +2,7 @@
 name: collapse-excursion-transfer-build
 description: Attack manual for the reshaped bounded cluster (open-problems families 1/3/4/5) — ONE build on the progenitor collapse excursion (L2), family 5's high-ℓ acoustic driving envelope the first target. Read WITH THE_OPEN_PROBLEMS_LEDGER family 5 (r1408) + OPEN_PROBLEMS_MAP E3 (r1408).
 kind: STATE
-current: r2488+c54.194
+current: r2517+c54.201
 job: PHASE 7's ATTACK MANUAL — the one build on the progenitor collapse excursion (L2) behind open-problems families 1/3/4/5. Referenced live by eleven documents including THE_PLAN, PHASE7_BUILD_LEDGER and both open-problems documents.
 sources: [chat]
 ---
