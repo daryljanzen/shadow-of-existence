@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2522 — 2026-08-11 (main line). **R-P STATION ⑥ — "Higgs" appears zero times in seventeen papers, and the corpus already holds the sentence that fixes it.**
+
+**⛔ THE MEASUREMENT.** *SU(3) 109 · chiral 337 · family 393 · hypercharge 15 · anomaly 13 · electroweak 11 ·
+Yukawa 5 —* ***and Higgs 0, vacuum expectation 0, spontaneous 0, Goldstone 0.***
+
+**⌗ BUT THE OMISSION IS PRINCIPLED AND STATED TWICE, WITHOUT THE WORD:** *P6 — "**the value stays the ordinary
+route**, the electroweak breaking that supplies the fermion mass"; P0 — a geometric origin for "the gauge content or
+the masses" is not claimed, "**those are walled and electroweak**".*
+⇒ ***So the corpus declines the magnitudes deliberately and says so in print. What it never does is NAME the
+mechanism it declines.***
+
+**⌗⌗ AND WALKING ⑤ AND ⑥ TOGETHER PRODUCED THE FINDING: TWO DIFFERENT KINDS OF OWE.**
+*· **⑤ Unruh** — a case the argument must **SURVIVE** and never mentions ⇒ ***the treatment must be WRITTEN***, and
+until it is, a referee's first question is unanswered;*
+*· **⑥ Higgs** — a thing the papers explicitly **DECLINE** and do not name ⇒ ***the argument is complete and only
+the word is missing***.*
+⇒ *Not nothing, though: **a reader searching "Higgs" gets zero hits and cannot distinguish "considered and
+declined" from "not considered"** — and for a corpus this careful about stating its non-claims, that is the one
+place the care is invisible.*
+
+**⌗ AND IT CONVERGES WITH `L-217`.** *The relation is not merely declined but **worked out**:
+`CR_AND_THE_HIGGS.md` §4 — "**CR is a SELECTION-RULE theory; the Higgs sector is a MAGNITUDE theory … CR's own
+one-constant theorem says it cannot supply the strengths**" — and scored against the discriminant.*
+⇒ ***SO THE CORPUS HAS THE ANSWER AND HAS NEVER PUT IT IN A PAPER. A one-clause fix, and it discharges `L-217`'s
+live half.*** *Routed as item 48.*
+
+⚠ *Not claimed: that the corpus should claim a geometric origin for the masses — **it should not, and `F1`/`F3` are
+the trip-wires**.*
+⌗ *And the receipt's first draft looked for the decline in **P14 and P7** and failed; it is in **P6 and P0**.
+***Located by grep rather than by expectation*** — the fourth time this span that reading beat assuming.*
+
 ### Revision r2521 — 2026-08-11 (main line). **R-P STATION ⑤ — THE CORPUS NEVER MENTIONS UNRUH, and it is the first question a referee in that field asks.**
 
 **⌗ THE CLAIM, and it is precise.** *P7: "with no completed horizon there is no background on which the Bogoliubov

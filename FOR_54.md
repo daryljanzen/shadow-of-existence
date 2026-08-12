@@ -1344,6 +1344,35 @@ beyond consistency — and that is a real question, not a formality.***
 
 ---
 
+## ⛭⛭ 48 · "HIGGS" APPEARS ZERO TIMES IN SEVENTEEN PAPERS — and you already wrote the sentence that fixes it — added r2522
+
+**⌗ THE MEASUREMENT:** *SU(3) 109 · chiral 337 · family 393 · hypercharge 15 · anomaly 13 · electroweak 11 ·
+Yukawa 5 —* ***and Higgs 0, vacuum expectation 0, spontaneous 0, Goldstone 0.***
+
+**⌗ AND THE OMISSION IS PRINCIPLED — you say so twice, without the word:** *P6, "**the value stays the ordinary
+route**, the electroweak breaking that supplies the fermion mass"; P0, a geometric origin for "**the gauge content
+or the masses**" is not claimed — "**those are walled and electroweak**."*
+⇒ ***So the decline is deliberate and in print. What is missing is the NAME of what is being declined.***
+
+**⇒ AND THAT MAKES IT A DIFFERENT ITEM FROM 47.** *Unruh is a case the argument must **survive** and never mentions
+— **that treatment has to be written**. The Higgs is a thing you explicitly **decline** — ***the argument is
+complete and only the word is missing***.*
+⚠ *Not nothing, though: **a reader searching "Higgs" gets zero hits and cannot tell "considered and declined" from
+"not considered"** — and for this corpus, which is unusually careful about stating what it does not claim, that is
+the one place the care is invisible.*
+
+**⌗ AND YOU ALREADY HAVE THE SENTENCE.** *`CR_AND_THE_HIGGS.md` §4: **"CR is a SELECTION-RULE theory; the Higgs
+sector is a MAGNITUDE theory … CR supplies WHAT MAY EXIST, the Higgs sector supplies HOW THEY GET MASS AND WITH WHAT
+STRENGTHS — and CR's own one-constant theorem says it cannot supply the strengths."*** *It is even scored against
+`THE_BASE_RATE`'s discriminant.*
+⇒ ***One clause, in P0 or P14 where the decline is already stated, naming the Higgs sector as the magnitude theory
+being deferred to. And it discharges `L-217`'s live half.***
+
+⚠ *Not claimed: that the corpus should claim a geometric origin for the masses. **It should not, and `F1`/`F3` are
+the trip-wires** — `F1` fires if the gauge group is ever promoted to forced.*
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

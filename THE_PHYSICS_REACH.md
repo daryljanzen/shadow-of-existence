@@ -1,10 +1,30 @@
 ---
 name: the-physics-reach
 kind: STATE
-current: r2521+c54.201
-job: The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521 (the Unruh treatment is a BIG OWE, routed as item 47); ⑥ onward are owed per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home.
+current: r2522+c54.201
+job: The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521 (the Unruh treatment is a BIG OWE, routed as item 47); ⑥ WALKED r2522 (a one-clause fix, item 48); ⑦ onward are owed per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home.
 sources: [cowork]
 ---
+
+## ⛭⛭ STATION ⑥ WALKED r2522 — a one-clause fix, and the contrast with ⑤ is the finding
+
+**⛔ ACROSS ALL SEVENTEEN PAPERS:** *SU(3) 109 · chiral 337 · family 393 · hypercharge 15 · anomaly 13 ·
+electroweak 11 · Yukawa 5 —* ***and Higgs 0, vacuum expectation 0, spontaneous 0, Goldstone 0.***
+
+**⌗ BUT THE OMISSION IS PRINCIPLED AND IN PRINT:** *P6 — "**the value stays the ordinary route**, the electroweak
+breaking that supplies the fermion mass"; P0 — a geometric origin for "the gauge content or the masses" is not
+claimed, "**those are walled and electroweak**".* ⇒ ***The corpus declines the magnitudes deliberately. It just
+never names what it declines.***
+
+**⌗⌗ AND THE TWO STATIONS FOUND TWO DIFFERENT KINDS OF OWE, which is the reach earning its keep:**
+*· **⑤ Unruh** — a case the argument must **SURVIVE** and never mentions ⇒ ***the treatment must be written***;*
+*· **⑥ Higgs** — a thing the papers explicitly **DECLINE** and do not name ⇒ ***only the word is missing***.*
+⇒ *A reader searching "Higgs" gets zero hits and **cannot tell "considered and declined" from "not considered"** —
+which for a corpus this careful about stating non-claims is the one place the care is invisible.*
+
+⌗ ***And `CR_AND_THE_HIGGS.md` §4 already holds the sentence*** *— the selection-rule/magnitude split, scored
+against the discriminant. **One clause, and `L-217`'s live half is discharged.*** *Routed as item 48.*
+
 
 ## ⛔⛔⛔ STATION ⑤ WALKED r2521 — AND IT IS THE BIGGEST OWE THIS THEATRE HAS FOUND
 
