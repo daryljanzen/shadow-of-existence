@@ -17,8 +17,8 @@ sources: [chat]
 |---|---|
 | **SOURCE** | 2 |
 | **VIEW** | 5 |
-| **STATE** | 45 |
-| **METHOD** | 27 |
+| **STATE** | 46 |
+| **METHOD** | 26 |
 | **RECORD** | 76 |
 
 ## ⌗ DECLARED CLASSES
@@ -80,6 +80,7 @@ sources: [chat]
 | `THE_EVOLUTION_MAP.md` | STATE | Working in paper N, what may I stand on and what may I not yet assume? Read BEFORE STANDING ON A RESULT. | — | c54.194 | 0 |
 | `THE_FERMION_SECTOR_GEOMETRY.md` | STATE | the fermion sector read in the geometry | — | c54.194 | 0 |
 | `THE_MATHEMATICS_REACH.md` | STATE | The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. ⛭ ALL FIVE STATIONS WALKED r2490–r2493 — and Ⓒ, Ⓖ, Ⓗ CONVERGED on one knot: which order-six group acts. See the block below. Registered as L-203. ⛭ **Ⓕ IS WALKED — `F13` (node 55, verified r2442) settled it, and it is FOUR real forms of $\mathfrak{so}(6,\mathbb C)$, not two: $\mathfrak{su}(3)$ embeds in exactly ONE, the compact form. This frontmatter carried Ⓕ as owed for forty-eight revisions after its own ① block recorded the answer.** | — | c54.194 | 0 |
+| `THE_METHOD.md` | STATE | (declared in frontmatter) | — | c54.194 | 0 |
 | `THE_OPEN_PROBLEMS_LEDGER.md` | STATE | The open-problems ledger by FAMILY — what each family is, what closed it or holds it open, and its register pointer. The fork writes here; this line absorbs it. | — | c54.188 | 6 |
 | `THE_PHYSICS_REACH.md` | STATE | The R-P theatre — the corpus's claims across physics, per domain. LIVE: stations ③④ onward are owed per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home. | — | c54.194 | 0 |
 | `THE_PLAN.md` | STATE | The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance | — | c54.188 | 6 |
@@ -108,7 +109,6 @@ sources: [chat]
 | `THE_CLOSURE_LEDGER.md` | METHOD | Where the closure self-check is DEFINED, with its four verdicts: OPENED · WORKED-SHUT · SURFACED · CODA-FIX. | — | c54.153 |  |
 | `THE_GEOMETRY_AND_THE_PHYSICS.md` | METHOD | The PEDAGOGICAL DISTILLATION of the geometry bake — the argument in order, in prose, every step an identity, a definition or a verified computation. The lens's first depth (THE_CODA §the lens: distillation → conceptual logic → formalised papers). | c54.11 | c54.11 |  |
 | `THE_HUB.md` | METHOD | How the programme lives in a git repository — branch discipline, the register's merge rule, what CI enforces and what it cannot. Read BEFORE pushing, and BEFORE assuming git has solved a problem it has not. | c54.181 | c54.181 |  |
-| `THE_METHOD.md` | METHOD | (declared in frontmatter) | — | — |  |
 | `THE_OPERATING_MANUAL.md` | METHOD | rules / guards / canon | — | c54.28 |  |
 | `VISION_FIELD_GUIDE.md` | METHOD | rules / guards / canon | — | — |  |
 | `capstones/CODA_FIELD_NOTE.md` | METHOD | the why-layer — read at spin-up steps 8 and 8b | — | c54.15 |  |

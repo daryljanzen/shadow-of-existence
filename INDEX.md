@@ -119,7 +119,7 @@ sources: [cowork, chat]
 | `THE_BURN_DOWN.md` | (declared in frontmatter) |
 | `WHATS_TEED_UP.md` | (declared in frontmatter) |
 
-### STATE (45)
+### STATE (46)
 
 | document | job |
 |---|---|
@@ -157,6 +157,7 @@ sources: [cowork, chat]
 | `THE_EVOLUTION_MAP.md` | Working in paper N, what may I stand on and what may I not yet assume? Read BEFORE STANDING ON A RESULT. |
 | `THE_FERMION_SECTOR_GEOMETRY.md` | the fermion sector read in the geometry |
 | `THE_MATHEMATICS_REACH.md` | The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. ⛭ ALL FIVE STATIONS WALKED r2490–r2493 — and Ⓒ, Ⓖ, Ⓗ CONVERGED on one knot: which order-six group acts. See the block below. Registered as L-203. ⛭ **Ⓕ IS WALKED — `F13` (node 55, verified r2442) s… |
+| `THE_METHOD.md` | (declared in frontmatter) |
 | `THE_OPEN_PROBLEMS_LEDGER.md` | The open-problems ledger by FAMILY — what each family is, what closed it or holds it open, and its register pointer. The fork writes here; this line absorbs it. |
 | `THE_PHYSICS_REACH.md` | The R-P theatre — the corpus's claims across physics, per domain. LIVE: stations ③④ onward are owed per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home. |
 | `THE_PLAN.md` | The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance |
@@ -169,7 +170,7 @@ sources: [cowork, chat]
 | `TURNAROUND_CUBIC_geometry_note.md` | The comoving-turnaround cubic pinned — the COMPLEX/kinematic leg of the substrate's A₂ three-fold (the horizon cubic being the real/causal leg), the E=1 collapse kinematics, and its place on the ℂ_r×ℂ_τ̃ Plate. Read before the acoustic-transfer build. Carries PROTECTED_OPEN PO-3's drill-site. |
 | `VARIATIONAL_LEDGER.md` | field ledger — probes and their verdicts |
 
-### METHOD (27)
+### METHOD (26)
 
 | document | job |
 |---|---|
@@ -190,7 +191,6 @@ sources: [cowork, chat]
 | `THE_CLOSURE_LEDGER.md` | Where the closure self-check is DEFINED, with its four verdicts: OPENED · WORKED-SHUT · SURFACED · CODA-FIX. |
 | `THE_GEOMETRY_AND_THE_PHYSICS.md` | The PEDAGOGICAL DISTILLATION of the geometry bake — the argument in order, in prose, every step an identity, a definition or a verified computation. The lens's first depth (THE_CODA §the lens: distillation → conceptual logic → formalised papers). |
 | `THE_HUB.md` | How the programme lives in a git repository — branch discipline, the register's merge rule, what CI enforces and what it cannot. Read BEFORE pushing, and BEFORE assuming git has solved a problem it has not. |
-| `THE_METHOD.md` | (declared in frontmatter) |
 | `THE_OPERATING_MANUAL.md` | rules / guards / canon |
 | `VISION_FIELD_GUIDE.md` | rules / guards / canon |
 | `capstones/CODA_FIELD_NOTE.md` | the why-layer — read at spin-up steps 8 and 8b |

@@ -6,6 +6,16 @@ job: THE WORK ORDER — what to do next, in order, with enough detail to start c
 sources: [chat]
 ---
 
+> ## ⛭⛭⛭ BEFORE ANYTHING: READ `THE_METHOD.md`, THEN `BOARD.md` — added r2500
+>
+> ***The goal is exhaustive knowledge of the open areas, not closure of them.*** *`BOARD.md` carries **the veins**
+> (held open, reported as MAPPED and DARK) and **the leads** (each naming which vein it informs, **re-ordered every
+> time the list changes**).*
+> ⇒ ***Take the top lead. Gather every lead your work turns up. The order recomputes.***
+> ⚠ *A lead informing **no** vein is **instrument work** — real, necessary, and **scored zero on the map**.*
+> ***A session that only works instrument leads reports progress every turn while every vein stands still.***
+
+
 # NEXT — the work order at r2470
 
 > ## ⛭⛭ HOW TO USE THIS

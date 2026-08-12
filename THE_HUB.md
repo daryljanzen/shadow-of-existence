@@ -6,6 +6,35 @@ job: How the programme lives in a git repository — branch discipline, the regi
 sources: [chat]
 ---
 
+# ⛭⛭⛭ READ `THE_METHOD.md` FIRST. THEN `BOARD.md`. — added r2500
+
+***The programme is not being worked to a close. It is being worked to a state where the open areas are known inside
+and out.***
+
+**⌷ TWO ENDS, and every turn connects them:**
+*· **THE VEINS** — the areas we know we do not know inside and out, **held open deliberately so they can be
+excavated rather than deleted**. Reported as **MAPPED** and **DARK**. ⇒ ***A vein closes FROM WITHIN when its
+interior is completely known — never from outside by a verdict.****
+*· **THE LEADS** — everything noticed while working something else that could inform a vein. **Every lead names
+which vein(s) it informs**, and the list is **re-ordered every time it changes** by how grounded and how informative
+each is.*
+
+> ***work the top lead → gather every lead the work turned up → re-order → repeat***
+
+⛔ **AND THE FAILURE THIS PREVENTS HAS A NAME: FLATTENING.** *A question crossed out is a piece of the problem space
+**removed from the topology rather than explored**.* ⇒ ***`PROTECTED_OPEN` is not a list of things too delicate to
+touch. It is a list of things we refuse to cross out until we can see all the way inside them.***
+
+⌗ **AND "SERVES A VEIN" IS CONSTRUED BROADLY, which is not a loophole:** ***making a paper build its framework in a
+logically ordered, coherent way serves every vein at once*** *— a framework you cannot follow cannot be excavated,
+and every vein is excavated by reading the framework.* ⚠ *But a lead informing **no** vein is **instrument work**,
+labelled as such and scored zero on the map. **Real work; not progress on the excavation.***
+
+⌗ *Three nodes work one map: **56** (instruments, registers, audit), **54** (papers, computation, the acoustic
+front), **cc54** (long unattended runs, production depth). **Each brings what the others structurally cannot** — and
+the map is what makes that add up instead of fragmenting.*
+
+
 ## ⛭⛭⛭ WANT THE STATE OF THE PROGRAMME? READ `BOARD.md` — added r2497
 
 ***Every live thing, grouped by family, GENERATED from the register.*** *Four families and the routed list, with

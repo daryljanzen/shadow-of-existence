@@ -146,6 +146,49 @@ sources: [cowork, chat]
 
 
 
+### Revision r2500 — 2026-08-11 (main line). **`THE_METHOD.md` — the programme's own account of what it is doing, and `BOARD.md` rebuilt so the linkage is structural rather than remembered.**
+
+**⛭⛭⛭ THE STATEMENT, in Daryl's framing and now the corpus's:** ***the programme is not being worked to a close. It
+is being worked to a state where the open areas are known inside and out.***
+⛔ ***A question crossed out is a piece of the problem space REMOVED FROM THE TOPOLOGY rather than explored*** *— and
+the failure has a name here: **flattening**.* ⇒ **`PROTECTED_OPEN` is not a list of things too delicate to touch. It
+is a list of things we refuse to cross out until we can see all the way inside them.**
+
+**⌷ TWO ENDS, and the board now expresses both:**
+*· **THE VEINS** — the areas known not to be known inside and out, **held open deliberately so they can be excavated
+rather than deleted**, reported as **MAPPED** and **DARK**. ⇒ **A vein closes FROM WITHIN when its interior is
+completely known.***
+*· **THE LEADS** — everything noticed while working something else that could inform a vein. ***Every lead names
+which vein(s) it informs***, carries a **grounded** and an **informs** score, and* ***the list re-orders itself
+every time it is generated, because a landed lead changes what the next one is worth.***
+
+> ***work the top lead → gather every lead the work turned up → re-order → repeat***
+
+**⌗ AND "SERVES A VEIN" IS CONSTRUED BROADLY, WHICH IS NOT A LOOPHOLE.** ***Making a paper build its framework in a
+logically ordered, coherent way serves every vein at once*** *— a framework you cannot follow cannot be excavated,
+and every vein is excavated by reading the framework.*
+⇒ ***And the generator's own ordering proves the point rather than asserting it: it picks `L-206` — P3's reordering
+— FIRST, at grounded 3/3 × informs 3/3 across FOUR veins.*** **A structural fix to an exposition outranks every
+physics lead on the board, computed rather than argued.**
+⚠ *A lead informing **no** vein is labelled **instrument work** and scored **zero on the map** — real work, not
+progress on the excavation.* ***A session that only works instrument leads reports progress every turn while every
+vein stands still, and the board now makes that visible rather than comfortable.***
+
+**⌗ THE PERIMETER IS THE OBJECT, which is why a bounded negative is a result:** *"$\rho_r/\rho_m$ cannot be derived
+from the substrate" (r2433) closed nothing —* ***it charted a perimeter and made the progenitor route the only
+remaining one.*** *And it is why **narrowing is always a node's to do**: a narrowing moves the perimeter inward
+without deleting the interior.*
+
+**⌗ AND THE MAP IS WHAT MAKES THREE NODES ADD UP INSTEAD OF FRAGMENTING.** *56 (instruments, registers, audit), 54
+(papers, computation, the acoustic front), cc54 (long unattended runs at production depth) — **each brings what the
+others structurally cannot**: 56 cannot run a production-depth spectrum, 54 cannot push, cc54 has an execution
+budget neither chat line has.* ⇒ ***A node grinding in one direction inside a vein does not need to know what the
+others are doing. It needs to know which vein it is inside, and to file what it notices.***
+
+⌗ *`THE_HUB`, `NEXT.md` and `CLAUDE_CODE_WORK_ORDER.md` all now lead with it.*
+
+**THE BOARD: four veins, ten leads, zero unsorted. `L-206` is next by computation.**
+
 ### Revision r2499 — 2026-08-11 (main line). **THE PROTECTED ITEMS ARE THE PROBLEM'S MAIN VEINS, and reporting one as a single open question had already flattened it.**
 
 **⌗⌗ THIS LINE HAS GOT `PROTECTED_OPEN` WRONG THREE WAYS NOW, and the third is the subtlest.**
