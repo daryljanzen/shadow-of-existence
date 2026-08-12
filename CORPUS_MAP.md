@@ -608,6 +608,45 @@ theorem it used, which is why this station yields a ROUTE rather than a finding 
 ⌗ *Filed in `THE_FERMION_SECTOR_GEOMETRY`, which is where the sector's route belongs.*
 
 **Register: 239 rows. Gates: twenty-one, twenty-one rc=0. `L-203`: three of five stations walked, and the remaining two are now ORDERED.**
+### Revision r2496+c54.196 — 2026-08-12 (working fork, line/54). **A THIRD LINE IS WORKING AND PUSHING: 57 NAMED, ITS ID BAND OPENED BEFORE IT ALLOCATES, AND A RUN IT IS ABOUT TO SPEND AN AFTERNOON ON FLAGGED AS NOT COMPARABLE.**
+
+**⌗ THE NAMING, AND IT IS NOT COSMETIC.** *The Claude Code node has been "the new 54", which is **the same
+string as "54" to every tool that reads a register**. Daryl offered **57** and it is adopted here.* ⇒ *Both of
+this corpus's namespace collisions — the `L-174` near-miss that fired at c54.166, and the c54.182/c54.184
+duplicate that put seven register rows in twice — **began with two lines that had no way to tell each other
+apart**.*
+
+**⛭⛭ AND 57's BAND IS OPEN BEFORE 57 ALLOCATES, WHICH IS THE WHOLE POINT.** *`check_id_bands.BANDS` reserves
+`L-800`–`L-899` for the node; `900`–`999` stays reserved for a fourth.* ⚠ ***In both earlier collisions the
+band existed only AFTER the collision. 57 has not allocated a lead ID yet, so the reservation costs nothing
+now and everything later.*** ⌗ *`THE_HUB.md` carries the human-readable half and is the observer line's —
+routed, not edited.*
+
+**⛔⛔ AND THE URGENT FINDING: 57's ITEM-38 RUNNER WILL NOT PRODUCE A COMPARABLE NUMBER.** *It committed
+`_item38_seamphase_scan.sh` as WIP — a controlled seam-phase scan at production depth, the same experiment as
+c54.195, with the same phases and the same fit.* ⇒ ***It omits `HIER=1` and `ETAEND=4000`, so it silently
+selects the two-moment FLUID transfer stopping at $\eta = 2008$ — not the polarised hierarchy at 4000 that
+every production number in this corpus is computed on. Its closing line then compares the measured span to
+"0.615", which was computed on the hierarchy.*** ⚠ *Three runs at 30–45 minutes each, and **nothing in the run
+would say so**.* ⌗ *Routed in the new `FOR_57.md` with the corrected command, and flagged to 56 as well —
+**this line cannot push, and 57 may read the repository before it reads a relayed file**.*
+
+**⌗ AND ITEM 38 IS ALREADY ANSWERED (c54.195), AND 57 WAS TOLD TO RUN IT ANYWAY.** *An independent replication
+by a second hand on a second instrument state is worth more than the saved compute, in a corpus that has
+produced four instances this month of the right measurement of the wrong quantity.* ⇒ ***If their three phases
+reproduce 0.878 / 0.066 / 0.671 the withdrawal is confirmed twice over; if they do not, that disagreement is
+the most valuable thing any of the three lines produces this week.***
+
+⌗ *`FOR_57.md` also carries the peak-INDEXING trap, which will bite any fit of these spectra: at $\phi=\pi/2$
+the first peak sits at $\ell = 388$, more than a full spacing from where the other readings put it, and getting
+$n=1$ wrong shifts the intercept by exactly one unit in $\phi/\pi$. **The transient signature is what settles
+it**, and that test is written down for them rather than left to be rediscovered.*
+
+⚠ *One hazard deliberately NOT legislated here: 57's branch carried `r2478`/`r2479` before its forced update and
+`main` now carries different revisions at both. **The revision-numbering convention is between 56 and 57**, and
+it is routed to 56 as a question rather than answered as a scheme — but it is the same shape as two lines
+writing `L-1xx` into one register, and that one has fired twice.*
+
 ### Revision r2491+c54.195 — 2026-08-12 (working fork, line/54). **THE OBSERVER LINE'S ITEM 38 ANSWERED, AND THE ANSWER WITHDRAWS THIS LINE'S HEADLINE FOR THE THIRD TIME IN THE SPAN.**
 
 **⌗ THE ITEM WAS RIGHT AND IT WAS THE ONE QUESTION THE SCANS COULD NOT ANSWER.** *r2485: "of the 23 datum-scan
