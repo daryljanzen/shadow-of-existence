@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r2524 — 2026-08-11 (main line). **r2522 CORRECTED — the corpus IDENTIFIES the Higgs mechanism and has never developed the identification, and "only the word is missing" was the burying.**
+
+**⛔ THE ERROR, AND IT IS THIS LINE'S.** *r2522 read P6's mass passage as a principled DECLINE and wrote **"the
+argument is complete and only the word is missing."*** *Daryl: **"Not having the Higgs incorporated into the same
+physics is not my choice. I have pressed to include the Higgs mechanism for completion wherever it is relevant.
+I've met nodes trying to bury that."***
+
+**⌗ P6 READ WHOLE RATHER THAN FROM ITS LAST CLAUSE:** *"the $M=0$ central cut is the one $R$ fixes and massless
+fermions are the ones $\gamma^5$ fixes, so **the $R$-symmetric sector is exactly the offset-free, massless
+vacuum**, and **mass — geometric $M$ or fermionic $m$ — is the $R$-odd DEPARTURE from it. Geometric and fermion mass
+are thereby THE SAME KIND OF OBJECT** … **the electroweak breaking that supplies the fermion mass being, in this
+reading, THE BREAKING OF THE SUBSTRATE'S ORIENTATION PARITY**."*
+⇒⇒ ***CR IDENTIFIES ELECTROWEAK SYMMETRY BREAKING WITH THE BREAKING OF $R$ — a claim about what the Higgs mechanism
+IS in CR's terms.*** *And what the same sentence declines is narrow and explicit: the substrate **"sets no scale,
+chirality, or epoch"**, and the mass **values** stay the ordinary route.*
+⇒ ***THE ONE-CONSTANT THEOREM FORBIDS THE STRENGTHS. IT SAYS NOTHING ABOUT THE MECHANISM.***
+
+**⛭⛭ AND THE CORPUS HAS ITS OWN SYMMETRY-BREAKING MECHANISM, WHICH NOBODY HAS SET BESIDE IT.** *P3: **"This is the
+symmetry breaking, located precisely."** P0: the physics is **"broken-symmetry shadows"**.*
+⇒ ***Two symmetry-breaking mechanisms, the second identified with a substrate structure in a subordinate clause, and
+never developed.*** *Registered as **`L-242`, LIVE**, informing `PO-5` — because $R$'s massless sector, $\gamma^5$'s
+fixed set and PO-5's colourless four are **the same sector**.*
+
+**⛔ AND THE SHAPE IS THE THIRD COSTUME OF ONE ERROR** *(r2495's "Daryl's call", r2498's owner-category):* ***a STATE
+OF THE TEXT read as a SETTLED DECISION. "The papers decline it" became "the programme declines it" — and nobody
+decided that.***
+⇒ ⛭ ***THE RULE: when you find yourself writing that only a word is missing, ask what would have to be TRUE for that
+to be so, and check whether anyone has ever established it.*** ⚠ *And the burying reading is always the more
+comfortable one, **because "only the wording" closes a turn and "nobody has worked this" opens one**.*
+
+⌗ *`FOR_54` item 48 re-routed accordingly: **not a clause but a question** — does CR's structure say anything about
+the Higgs MECHANISM, as against the magnitudes it provably cannot supply?*
+⚠ *Not claimed: that CR derives the Higgs sector, the vev or any mass. **`F1`/`F3` remain the trip-wires.***
+
 ### Revision r2523 — 2026-08-11 (main line). **`THE_WEAVE` BROUGHT CURRENT — a FOURTH mechanism, and it is the only one that finds what is ABSENT.**
 
 **⛭⛭ THE OUTSIDE PROBE.** *The file held three mechanisms — **adjacency**, **convergence of probes**, **convergence

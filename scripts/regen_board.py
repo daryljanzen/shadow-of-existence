@@ -54,6 +54,13 @@ VEINS = {
 # GROUNDED 0-3: how solid the footing is, INFORMS 0-3: how much a vein would learn). **
 # ** A lead with NO vein links is instrument work.  It is not counted as progress on the map. **
 LEADS = {
+ 'L-242': ("\u26ed **THE HIGGS MECHANISM IS IDENTIFIED, NOT DECLINED \u2014 and the identification is undeveloped.** "
+   "P6: **the $R$-symmetric sector IS the offset-free massless vacuum**, mass is the **$R$-odd departure** from it, "
+   "and **the electroweak breaking that supplies the fermion mass IS the breaking of the substrate's orientation "
+   "parity**. \u21d2 **The one-constant theorem forbids the STRENGTHS; it says nothing about the MECHANISM.** And "
+   "P3 has the corpus's own symmetry breaking (\u201clocated precisely\u201d) \u2014 **nobody has set the two "
+   "beside each other**. \u26a0 r2522 recorded this as a decline; that was wrong",
+   ['L-221'], 2, 3),
  'L-171': ("**PO-7 \u2014 THE ONE VERDICT ON THE BOARD, and it is now sharply posed.** \u26ed r2519: the "
    "admissible pair $\\phi\\in\\{0,\\pi\\}$ is **FORCED** by P15's own transmission argument (every mode "
    "**freezes** before the crossing; a frozen mode has zero velocity), not merely distinguished. Band "

@@ -1344,34 +1344,39 @@ beyond consistency — and that is a real question, not a formality.***
 
 ---
 
-## ⛭⛭ 48 · "HIGGS" APPEARS ZERO TIMES IN SEVENTEEN PAPERS — and you already wrote the sentence that fixes it — added r2522
+## ⛭⛭⛭ 48 · THE HIGGS MECHANISM IS *IDENTIFIED* IN P6 AND NEVER DEVELOPED — corrected r2524, and my first routing of this was wrong
 
-**⌗ THE MEASUREMENT:** *SU(3) 109 · chiral 337 · family 393 · hypercharge 15 · anomaly 13 · electroweak 11 ·
-Yukawa 5 —* ***and Higgs 0, vacuum expectation 0, spontaneous 0, Goldstone 0.***
+⛔ **I routed this at r2522 as "a one-clause fix — only the word is missing." That was wrong, and Daryl named it:**
+*"Not having the Higgs incorporated into the same physics is not my choice. I have pressed to include the Higgs
+mechanism for completion wherever it is relevant. **I've met nodes trying to bury that.**"*
 
-**⌗ AND THE OMISSION IS PRINCIPLED — you say so twice, without the word:** *P6, "**the value stays the ordinary
-route**, the electroweak breaking that supplies the fermion mass"; P0, a geometric origin for "**the gauge content
-or the masses**" is not claimed — "**those are walled and electroweak**."*
-⇒ ***So the decline is deliberate and in print. What is missing is the NAME of what is being declined.***
+**⌗ P6 READ WHOLE, RATHER THAN FROM ITS LAST CLAUSE:** *"the $M=0$ central cut is the one $R$ fixes and massless
+fermions are the ones $\gamma^5$ fixes, so **the $R$-symmetric sector is exactly the offset-free, massless
+vacuum**, and **mass — geometric $M$ or fermionic $m$ — is the $R$-odd DEPARTURE from it. Geometric and fermion mass
+are thereby THE SAME KIND OF OBJECT** … **the electroweak breaking that supplies the fermion mass being, in this
+reading, THE BREAKING OF THE SUBSTRATE'S ORIENTATION PARITY**."*
 
-**⇒ AND THAT MAKES IT A DIFFERENT ITEM FROM 47.** *Unruh is a case the argument must **survive** and never mentions
-— **that treatment has to be written**. The Higgs is a thing you explicitly **decline** — ***the argument is
-complete and only the word is missing***.*
-⚠ *Not nothing, though: **a reader searching "Higgs" gets zero hits and cannot tell "considered and declined" from
-"not considered"** — and for this corpus, which is unusually careful about stating what it does not claim, that is
-the one place the care is invisible.*
+⇒⇒ ***THAT IS NOT A DECLINE. It is a claim about what the Higgs mechanism IS in CR's terms.*** *And what the same
+sentence declines is **narrow and explicit** — the substrate "sets no scale, chirality, or epoch", and the mass
+**values** stay the ordinary route.*
+⇒ ***THE ONE-CONSTANT THEOREM FORBIDS THE STRENGTHS. IT SAYS NOTHING ABOUT THE MECHANISM.***
 
-**⌗ AND YOU ALREADY HAVE THE SENTENCE.** *`CR_AND_THE_HIGGS.md` §4: **"CR is a SELECTION-RULE theory; the Higgs
-sector is a MAGNITUDE theory … CR supplies WHAT MAY EXIST, the Higgs sector supplies HOW THEY GET MASS AND WITH WHAT
-STRENGTHS — and CR's own one-constant theorem says it cannot supply the strengths."*** *It is even scored against
-`THE_BASE_RATE`'s discriminant.*
-⇒ ***One clause, in P0 or P14 where the decline is already stated, naming the Higgs sector as the magnitude theory
-being deferred to. And it discharges `L-217`'s live half.***
+**⛭⛭ AND THE CORPUS HAS ITS OWN SYMMETRY-BREAKING MECHANISM, WHICH NOBODY HAS SET BESIDE IT.** *P3: **"This is the
+symmetry breaking, located precisely."** P0 frames the whole physics as **"broken-symmetry shadows"**.*
+⇒ ***Two symmetry-breaking mechanisms, the second identified with a substrate structure in a subordinate clause,
+and never developed. That is a live question, not a wording item — registered as `L-242`, informing `PO-5`.***
 
-⚠ *Not claimed: that the corpus should claim a geometric origin for the masses. **It should not, and `F1`/`F3` are
-the trip-wires** — `F1` fires if the gauge group is ever promoted to forced.*
+**⌗ SO THE ASK IS NOT A CLAUSE.** *· **Name it** — "Higgs" appears **zero times in seventeen papers**, so the
+identification is invisible to search; · and ***work it***: **does CR's structure say anything about the Higgs
+MECHANISM, as against the magnitudes it provably cannot supply?** The identification is asserted, and nothing tests
+it, extends it, or asks what it would predict.*
+⌗ *And the sector is already built next door: **$R$ is the orientation parity, $\gamma^5$ fixes the massless
+fermions, the $R$-symmetric sector IS the massless vacuum — and `PO-5`'s live question is whether an operator's
+kernel gives the colourless four. Those are the same sector.***
 
----
+⚠ *Not claimed: that CR derives the Higgs sector, the vev or any mass. **`F1` and `F3` remain the trip-wires**, and
+`F1` fires if the gauge group is ever promoted to forced.*
+
 
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
