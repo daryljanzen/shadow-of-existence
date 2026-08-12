@@ -2,7 +2,7 @@
 name: fork-c54
 description: The c54 fork record — forked from r2376, what changed on it, what is carried as known debt, and what will collide on merge. Read this first when merging c54 back.
 sources: [cowork]
-current: r2477+c54.188
+current: r2506+c54.197
 ---
 
 > ⚠ **THIS FILE NARRATES c54.1–c54.35 AND NOTHING AFTER IT.** *Span named r2376+c54.166 when this was written; **the fork is at c54.188 as of r2477** — seven absorptions further on, and nothing has ever updated this file, because `build_fork_span.py` writes `CORPUS_MAP.md` and not this.

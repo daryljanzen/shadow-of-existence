@@ -125,9 +125,10 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-204`** | r2483 | ✔ **the strike was made r2383 — this field was stale for 99 revisions, corrected r2483** · what remains is ***③④: P8/P9, GR field equations and the ex |
 | **`L-171`** | r2484 | P15 `sec:flatlcdm`; receipt `ROBUST_p1p2_scan`; `PO-7` |
 | **`L-230`** | r2490 | ⓵ **the instrument question is closed r2447** — no gate can read a quantifier · ⓶ the live route is **make `COMPUTES:` universal** (39 of 309 today),  |
-| **`L-174`** | r2505 | ⓵ **the gap is now exactly stated r2505**: ***supply a shear-selection statement that does NOT assume vacuum*** — the corpus has one (Goldberg–Sachs v |
+| **`L-508`** | r2491 | done in the registering revision — two new production-depth phases, with the peak indexing established by the transient test before any fit is read |
+| **`L-509`** | r2501 | done in the registering revision — six sites repaired, the one true-as-written branch-point sentence kept, the lint's recall hole closed and seeded bo |
 
-*13 live rows carry a stated next step; the 13 longest-unworked are shown.*
+*15 live rows carry a stated next step; the 14 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session

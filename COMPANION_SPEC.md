@@ -3,7 +3,7 @@ name: companion-spec
 kind: STATE
 description: The specification for the AI companion to the corpus — what it may assert, what it must refuse, and the declarations that make the difference checkable. Written before any code, because the SPEC decides whether the thing is trustworthy.
 sources: [chat]
-current: r2478+c54.188
+current: r2506+c54.197
 ---
 
 # COMPANION SPEC — what the companion may say, and how it knows

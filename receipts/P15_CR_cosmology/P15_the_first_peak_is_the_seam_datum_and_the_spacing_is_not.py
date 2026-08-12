@@ -61,6 +61,12 @@ freedom in the datum; the AMPLITUDE's flatness in k (`CRXE`, and Theta-hat flat)
 not scanned here.  ** A scan that moved the SPACING would be the one that mattered, and this file
 does not run it. **  *Registered rather than resolved.*
 
+SETTINGS: reduced -- LMAXL=1000 vs production 3000.  AT PRODUCTION: the first-peak POSITION
+result stands unchanged (the first peak is fully resolved at this depth, which is why this
+file's own finding is sound); the SPACING figure does NOT -- at LMAXL=3000 the CR arm carries
+eight peaks and the asymptotic spacing is 0.975 of ell_A, not the 0.79 read here off three
+gaps.  ** Retracted at c54.190; this line is the declaration that would have prevented it. **
+
 rc=0 on success.  Run: python3 P15_the_first_peak_is_the_seam_datum_and_the_spacing_is_not.py
                         (numpy scipy; ~10 s)
 """

@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r2506 — 2026-08-11 (main line). **c54.195–197 MERGED — item 38 came back and WITHDREW the $0.62\pi$; the first real three-way merge went clean; and a fourth node has a band.**
+
+**⛭⛭⛭ THE WITHDRAWAL, and the experiment that caused it was one this line named and structurally could not run.**
+*r2485 routed item 38 — **two or three seam phases at PRODUCTION depth, fit peaks 4–8** — because the
+34%-and-stops result had been measured at LMAXL = 1000, so **the scan could not test the quantity that had become
+load-bearing**.*
+⇒ *c54.195 ran it: **across four production-depth seam phases the acoustic phase spans 0.891 in $\phi/\pi$ and the
+peak heights span 0.483–1.618, with the control's values INSIDE BOTH.***
+⇒⇒ ***So the $0.62\pi$ was a datum reading, as the first-peak position and the spacing deficit had been before it.
+Four withdrawals on this front now, against one surviving positive: the spacing reproducing at 98.2% of the required
+rate, robust to 1.9%, and the one thing that does not move.***
+⌗ *Recorded in `THE_BASE_RATE` — **every one of the four REMOVED a claim rather than adding machinery to save one**,
+which is the favourable direction for the **method** and the unfavourable one for the **claim**, and the two are
+scored separately.* ⚠ *And what is open is sharper: **no reading tried brings the spectrum within sixty times the
+control, so where the disagreement lives is not a single named quantity.*** ***A large disagreement that cannot be
+localised is a different object from a precise one.***
+
+**⌗⌗ AND THE MERGE ITSELF IS THE OTHER RESULT: THE FIRST THREE-WAY MERGE, AND IT WENT CLEAN.** *The bundle was based
+on r2501 and this line had moved four revisions past it — **not a fast-forward, which is exactly the case
+`CLAIMS.md` was built for at r2503.***
+✔ ***Zero duplicated register IDs across 241 rows*** *— the ID bands held where they had failed twice before (r2434,
+c54.194).*
+✔ ***`gates.yml` survived intact*** *— four gates and nine views — where c54.191 had silently dropped three
+view-checks (r2497). **The `CLAIMS.md` rule "never take `gates.yml` wholesale" was written for exactly that and
+this is its first test.***
+⌗ *Four text conflicts, three in generated files (regenerated) and one real: `regen_board.py`, where **this line had
+deleted `L-206` (struck r2502) and the fork had rewritten `L-171`**. Both kept — ***each side was right about a
+different row, which is what a clean three-way merge looks like.***
+
+⌗ *Also arriving: **c54.196 opens a band for a fourth node, 57**, and **c54.197 works routed item 21** — six sites
+naming the wrong locus, with a lint built for the class.*
+
 ### Revision r2505 — 2026-08-11 (main line). **r2504's DARK REGION CORRECTED — the corpus DOES select among shears, and the selection is a vacuum theorem, which is a better-posed gap than the one it replaces.**
 
 **⛔ THE ERROR, one revision old.** *r2504 derived a general ADM identity and wrote **"nothing in the identity says
@@ -646,6 +678,86 @@ theorem it used, which is why this station yields a ROUTE rather than a finding 
 ⌗ *Filed in `THE_FERMION_SECTOR_GEOMETRY`, which is where the sector's route belongs.*
 
 **Register: 239 rows. Gates: twenty-one, twenty-one rc=0. `L-203`: three of five stations walked, and the remaining two are now ORDERED.**
+### Revision r2496+c54.196 — 2026-08-12 (working fork, line/54). **A THIRD LINE IS WORKING AND PUSHING: 57 NAMED, ITS ID BAND OPENED BEFORE IT ALLOCATES, AND A RUN IT IS ABOUT TO SPEND AN AFTERNOON ON FLAGGED AS NOT COMPARABLE.**
+
+**⌗ THE NAMING, AND IT IS NOT COSMETIC.** *The Claude Code node has been "the new 54", which is **the same
+string as "54" to every tool that reads a register**. Daryl offered **57** and it is adopted here.* ⇒ *Both of
+this corpus's namespace collisions — the `L-174` near-miss that fired at c54.166, and the c54.182/c54.184
+duplicate that put seven register rows in twice — **began with two lines that had no way to tell each other
+apart**.*
+
+**⛭⛭ AND 57's BAND IS OPEN BEFORE 57 ALLOCATES, WHICH IS THE WHOLE POINT.** *`check_id_bands.BANDS` reserves
+`L-800`–`L-899` for the node; `900`–`999` stays reserved for a fourth.* ⚠ ***In both earlier collisions the
+band existed only AFTER the collision. 57 has not allocated a lead ID yet, so the reservation costs nothing
+now and everything later.*** ⌗ *`THE_HUB.md` carries the human-readable half and is the observer line's —
+routed, not edited.*
+
+**⛔⛔ AND THE URGENT FINDING: 57's ITEM-38 RUNNER WILL NOT PRODUCE A COMPARABLE NUMBER.** *It committed
+`_item38_seamphase_scan.sh` as WIP — a controlled seam-phase scan at production depth, the same experiment as
+c54.195, with the same phases and the same fit.* ⇒ ***It omits `HIER=1` and `ETAEND=4000`, so it silently
+selects the two-moment FLUID transfer stopping at $\eta = 2008$ — not the polarised hierarchy at 4000 that
+every production number in this corpus is computed on. Its closing line then compares the measured span to
+"0.615", which was computed on the hierarchy.*** ⚠ *Three runs at 30–45 minutes each, and **nothing in the run
+would say so**.* ⌗ *Routed in the new `FOR_57.md` with the corrected command, and flagged to 56 as well —
+**this line cannot push, and 57 may read the repository before it reads a relayed file**.*
+
+**⌗ AND ITEM 38 IS ALREADY ANSWERED (c54.195), AND 57 WAS TOLD TO RUN IT ANYWAY.** *An independent replication
+by a second hand on a second instrument state is worth more than the saved compute, in a corpus that has
+produced four instances this month of the right measurement of the wrong quantity.* ⇒ ***If their three phases
+reproduce 0.878 / 0.066 / 0.671 the withdrawal is confirmed twice over; if they do not, that disagreement is
+the most valuable thing any of the three lines produces this week.***
+
+⌗ *`FOR_57.md` also carries the peak-INDEXING trap, which will bite any fit of these spectra: at $\phi=\pi/2$
+the first peak sits at $\ell = 388$, more than a full spacing from where the other readings put it, and getting
+$n=1$ wrong shifts the intercept by exactly one unit in $\phi/\pi$. **The transient signature is what settles
+it**, and that test is written down for them rather than left to be rediscovered.*
+
+⚠ *One hazard deliberately NOT legislated here: 57's branch carried `r2478`/`r2479` before its forced update and
+`main` now carries different revisions at both. **The revision-numbering convention is between 56 and 57**, and
+it is routed to 56 as a question rather than answered as a scheme — but it is the same shape as two lines
+writing `L-1xx` into one register, and that one has fired twice.*
+
+### Revision r2491+c54.195 — 2026-08-12 (working fork, line/54). **THE OBSERVER LINE'S ITEM 38 ANSWERED, AND THE ANSWER WITHDRAWS THIS LINE'S HEADLINE FOR THE THIRD TIME IN THE SPAN.**
+
+**⌗ THE ITEM WAS RIGHT AND IT WAS THE ONE QUESTION THE SCANS COULD NOT ANSWER.** *r2485: "of the 23 datum-scan
+spectra, ZERO reach peak 8 ... the quantity that now carries the disagreement cannot be tested against the one
+freedom known to move things." It named the experiment — two or three seam phases at production depth.*
+
+⇒⇒ ***AT $\phi = 0$, $\pi/4$, $\pi/2$ AND $\pi$ THE FITTED $\phi/\pi$ IS 0.878, 0.958, 0.066 AND 0.671 —
+A SPAN OF 0.891 — AND THE CONTROL'S 0.263 LIES INSIDE IT.*** *c54.191 read 34% closure from the two endpoints;
+**the interior is where the motion is**.*
+
+**⛔ SO THE $0.62\pi$ IS THE VALUE AT ONE READING AND NOT A PREDICTION.** *The driving attribution of c54.193
+stands — the driving is what separates the arms at any given reading — **but a quantity the datum can move
+across the value it is compared against is not a prediction of the construction**, and c54.190–191's promotion
+of it to "one number and one mechanism" is withdrawn.*
+
+**⌗ THE PEAK HEIGHTS MOVE WITH THE SAME FREEDOM AND DO NOT REACH THE SKY EITHER.** *$P_1/P_2$ runs 0.483 →
+1.618 across the four, against 2.217 in the sky and 2.197 in the control.*
+
+**⛭ WHAT IS ROBUST IS THE SPACING.** *0.9629–0.9814 of $\ell_A$ over the same four — 1.9% — on top of its
+insensitivity to the fitted parameter and its tracking of $r_s$ at 98% of the acoustic rate.* ⇒ ***The one
+acoustic quantity this construction states and does not surrender to a choice.***
+
+⇒⇒⇒ ***AND WHAT MAKES THIS A WITHDRAWAL RATHER THAN A REFINEMENT: the reading whose phase comes closest to
+the control's is still SIXTY TIMES the control in $\chi^2$ per degree of freedom — 224 against 3.71 on the same
+185 bins. Agreeing on the phase does not fix the spectrum, so the phase was never carrying the disagreement.***
+
+⚠ **WHERE IT DOES LIVE, THIS REVISION DOES NOT CLAIM TO KNOW.** *Not the spacing, which is right; not the phase
+or the heights, which a free choice moves; and not any single quantity the section can name.* ⌗ ***A worse
+position than the one it replaces and a truer one.***
+
+⛔ *`F5` unsoftened, and it cuts both ways: **a discrepancy that turns out to rest on a free choice is not a
+framework verdict either.** `PO-7` protected; the conversion is Daryl's.*
+
+**⌗⌗ AND THE ROUTED GATE WAS PAID BEFORE IT WAS USED.** *`check_settings` (r2486, built from this line's own
+routed discipline) flagged seven of this line's receipts as reporting reduced-settings quantities without a
+declaration. **All seven now carry one**, and three of them declare a figure this line has since retracted —
+which is the declaration doing exactly what it was proposed for.* ⌗ *Two flagged receipts are the observer
+line's own and are left alone.*
+
+⚠ *And the `|x|` math-bar trap took a fourth payment: a register row with two of them split into ten cells.
+**The rule is in the handover and I did not read my own handover.***
 
 ### Revision r2491 — 2026-08-11 (main line). **STATION Ⓒ WALKED AND IT BITES — the equianharmonic structure supplies $\mathbb Z_6$ where the corpus's cover carries $S_3$, and routed item 23 is the same knot.**
 

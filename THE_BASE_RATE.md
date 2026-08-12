@@ -3,9 +3,40 @@ name: the-base-rate
 description: A5.5 worked — the reference class for least-arbitrariness arguments in physics, assembled neutrally and then judged. P6's criterion measured against the historical record rather than against favourable examples.
 sources: [cowork]
 kind: STATE
-current: r2477+c54.188
+current: r2506+c54.197
 job: A5.5 worked — the reference class for least-arbitrariness arguments in physics, assembled neutrally and then judged. The fork added 11 entries across c54.114–153; read BEFORE claiming a least-arbitrariness win.
 ---
+
+## ⛭⛭⛭ AN ENTRY ON THE UNFAVOURABLE SIDE, AND IT IS THE PROGRAMME'S OWN — added r2506, from c54.195
+
+***The $0.62\pi$ acoustic-phase discrepancy is WITHDRAWN.***
+
+*It was the front's whole content for eight revisions: c54.191 showed the spacing reproduces at 98.2% of the
+required rate and the disagreement is the acoustic PHASE; c54.193 attributed the phase to **the driving**, with the
+undriven arms agreeing to 0.013 and the driving supplying $5.72\times$ as much in CR. **One number and one
+mechanism, where the front began with four items and a ratio.***
+
+**⛔ AND THE EXPERIMENT THAT KILLED IT WAS ONE THIS LINE NAMED AND COULD NOT RUN.** *r2485 routed item 38 — **two or
+three seam phases at PRODUCTION depth, fit peaks 4–8** — because the 34%-and-stops result had been measured at
+LMAXL = 1000 and the scan could not test the quantity that had become load-bearing.*
+⇒ *c54.195 ran it: **across four production-depth seam phases the acoustic phase spans 0.891 in $\phi/\pi$ and the
+peak heights span 0.483–1.618 — with the control's values INSIDE BOTH.***
+⇒⇒ ***So the phase was a datum reading, as the position and the spacing deficit had been before it.***
+
+**⌗ WHAT THIS COSTS AND WHAT IT DOES NOT.** *Three quantities have now been withdrawn from this front — the
+first-peak position (c54.187), the ~21% spacing deficit (c54.190), the 24%-of-rate sensitivity (c54.191) — and now
+the phase.* ⚠ ***That is four withdrawals against one surviving positive result*** *— the acoustic spacing
+reproducing at 98.2% of the required rate under a moved $r_s$, **robust to 1.9%, and the one thing that does not
+move**.*
+
+**⇒ AND THE DISCRIMINANT SCORES IT PLAINLY: every withdrawal here REMOVED a claim rather than adding machinery to
+save one.** *No epicycle was fitted; each time the instrument was pushed to a depth or a freedom that could
+falsify, and each time the number failed.* ⇒ ***That is the favourable direction for the METHOD and the unfavourable
+one for the CLAIM, and the two must be scored separately.***
+⌗ *What is open is now sharper and is stated by the fork: **no reading tried brings the spectrum within sixty times
+the control, so where the disagreement lives is not a single named quantity.*** ***A large disagreement that cannot
+be localised is a different object from a precise one, and it has not been counted here before.***
+
 ## ⚠⚠ ENTRY: AN UNMEASURED TERM IN THIS FILE'S OWN COUNT — found by `ARC 16`, r2435
 
 *This file's number is computed over claims the corpus **made and later withdrew or kept**. `ARC 16`'s linear re-read

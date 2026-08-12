@@ -71,6 +71,14 @@ a control good enough for that deficit to be read through a likelihood instead o
       either of a robust prediction or of a shared upstream constant.  *This file cannot separate
       those and does not claim to.*
 
+SETTINGS: mixed, and the mixture is the point.  PARTS 1 and 3-5 read the LMAXL=2000 banked
+pair (reduced vs production 3000); PART 2 reads the LMAXL=3000 pair and is what SHOWS the 2000 runs
+were starved.  AT PRODUCTION: every chi^2 quoted from the 2000 pair is 78% truncation artefact and
+the file says so in PART 2 rather than leaving it to the reader -- ** the reduced numbers are
+reported here as the THING BEING CORRECTED, not as measurements. **  *The one figure taken from the
+2000 pair as a measurement is the SHELL LOCATION of the residual, which is what sent PART 2 looking
+and does not depend on the tail being right.*
+
 rc=0 on success.  Run: python3 P15_the_control_entered_the_regime_and_the_arm_did_not_move.py
                         (numpy scipy camb; ~60 s, mostly CAMB)
 """

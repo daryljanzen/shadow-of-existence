@@ -10,7 +10,7 @@ current: r2500+c54.194
 
 > ***Read `THE_METHOD.md` first.*** *The short form: **the VEINS are areas held open to be known inside and out — never crossed out. The LEADS are everything noticed that could inform one.** Work the top lead, gather what it turns up, re-order, repeat.*
 >
-> *13 live rows: **4 veins**, **9 leads**. 226 struck.*
+> *15 live rows: **4 veins**, **11 leads**. 226 struck.*
 
 # I · THE VEINS — held open, to be known inside and out
 
@@ -32,7 +32,7 @@ current: r2500+c54.194
 
 - **MAPPED** — the phase is the **antilinear face $K$**; reality admits **exactly two values**; $K$ acts trivially on the reality set while **$R$ exchanges the branches**; off-real, $K$ **swaps the two wings of the lap** and $R\circ K$ **closes charge conjugation**; $K$ **fixes the photon congruence**
 - ⛔ **DARK** — **whether a MASSIVE trajectory carries a phase** — the null ones are $K$'s fixed set
-- *2 live lead(s) inform this vein*
+- *4 live lead(s) inform this vein*
 
 ## `L-221` · PO-5 · WHAT MAY EXIST, AND WHY THESE
 
@@ -48,21 +48,23 @@ current: r2500+c54.194
 |---|---|---|---|---|---|
 | **1** | **`L-174`** | `L-165` `L-175` | 3/3 | 3/3 | **exhibit the bend for a geometry with NO CONTINUOUS ISOMETRY** — the one unworked stratum. Narrowed r2503: the symmetric sector is **closed form**, the spherically symmetric general case **exhibited r2450**, and the confined inhomogeneous case (2 KV) **worked explicitly in P11**. ⛭ r2504: P11's identification is a **general ADM identity** — the Killing vectors buy a **count**, so the build is **exhibit a bend with a five-component $\sigma_{ij}$**, and the obstruction is named: **$\sigma^2$ enters $\rho$ with a minus sign, leaving a five-dimensional space of shears at fixed $\rho$ with nothing selecting among them. ⛔ r2505: the corpus DOES select — Goldberg–Sachs via the shift–shear link — but **that is a VACUUM theorem and the stratum is where matter is dynamical**, so the gap is: **supply a shear-selection statement that does not assume vacuum** |
 | **2** | **`L-204`** | `L-165` `L-175` | 3/3 | 2/3 | R-P stations ③④ — P8/P9, GR field equations and the exact-solution catalogue |
-| **3** | **`L-171`** | `L-202` | 2/3 | 3/3 | **PO-7** — whether the $0.62\pi$ acoustic-phase disagreement is real against the sky. Needs the **seam-phase scan at PRODUCTION depth** (`FOR_54` 38); the 34%-and-stops result was at LMAXL = 1000 |
-| **4** | **`L-210`** | `L-202` `L-221` `L-175` | 2/3 | 2/3 | the entry-point front — all 44 sites carry verdicts; **live leads are where a paper's own text points at an unexplored interior** |
-| **5** | **`L-217`** | `L-221` | 2/3 | 2/3 | the CR/Higgs relation is stated; **`F1` stays live — the relation breaks if the gauge group is ever promoted to forced** |
-| **6** | **`L-230`** | `L-165` `L-221` | 3/3 | 1/3 | the `COMPUTES:` convention — uptake **flat at 40 of 357** while the corpus grew a sixth; a receipt that declares what it computed is a receipt a vein can be excavated through |
-| **7** | **`L-207`** | `L-165` | 1/3 | 3/3 | ⓶ the confined/branch-point exhibition — **gated on PO-6 and must not be opened without it** (⓵ discharged r2450) |
-| **8** | **`L-218`** | *— instrument work* | 3/3 | 0/3 | ⓵ the reader-package formats via pandoc in CI |
-| **9** | **`L-228`** | *— instrument work* | 3/3 | 0/3 | `check_loci` extended to the possessive and compound-noun forms node 52 declined to claim |
+| **3** | **`L-508`** | `L-202` | 3/3 | 2/3 | **what the seam datum CARRIES, measured**: across four production-depth seam phases the acoustic phase spans 0.891 in $\phi/\pi$ and the peak heights 0.483–1.618, **the control's values inside both** — a bounded negative that charts the vein's perimeter (§IV) rather than closing anything |
+| **4** | **`L-171`** | `L-202` | 2/3 | 3/3 | **PO-7** — whether the acoustic disagreement is real against the sky. ⚠ *The $0.62\pi$ is **withdrawn** (`L-508`, c54.195): across four production-depth seam phases the acoustic phase spans 0.891 in $\phi/\pi$ and the peak heights 0.483–1.618, **with the control's values inside both**.* ⇒ **What is open is sharper: no reading tried brings the spectrum within sixty times the control, so where the disagreement lives is not a single named quantity** — and the SPACING, which is robust to 1.9%, is the one thing that does not move |
+| **5** | **`L-210`** | `L-202` `L-221` `L-175` | 2/3 | 2/3 | the entry-point front — all 44 sites carry verdicts; **live leads are where a paper's own text points at an unexplored interior** |
+| **6** | **`L-217`** | `L-221` | 2/3 | 2/3 | the CR/Higgs relation is stated; **`F1` stays live — the relation breaks if the gauge group is ever promoted to forced** |
+| **7** | **`L-230`** | `L-165` `L-221` | 3/3 | 1/3 | the `COMPUTES:` convention — uptake **flat at 40 of 357** while the corpus grew a sixth; a receipt that declares what it computed is a receipt a vein can be excavated through |
+| **8** | **`L-509`** | `L-202` | 3/3 | 1/3 | P15 asserted a horizon property of the **branch point** at six sites where its own receipts say **seam**/**onset**, and the two invert — repaired; **and `check_loci`, built for exactly this defect, could not see the worst of them until this revision** (a proposition's receipt binding lives in its argument paragraph). Found by seeding, not by reading |
+| **9** | **`L-207`** | `L-165` | 1/3 | 3/3 | ⓶ the confined/branch-point exhibition — **gated on PO-6 and must not be opened without it** (⓵ discharged r2450) |
+| **10** | **`L-218`** | *— instrument work* | 3/3 | 0/3 | ⓵ the reader-package formats via pandoc in CI |
+| **11** | **`L-228`** | *— instrument work* | 3/3 | 0/3 | `check_loci` extended to the possessive and compound-noun forms node 52 declined to claim |
 
 > ⛭⛭ **TAKE `L-174` NEXT** — *highest grounded×informative, and it informs 2 vein(s).*
 
 # III · THE ROUTED LIST (`FOR_54.md`) — leads handed to the working fork
 
-- ***21 live for the fork***, of which **21 is flagged to take first** (the seam/branch-point word, which flips a proposition's truth value)
+- ***20 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
 - *7 are ANSWERS to the fork rather than work for it* — 33, 34, 35, 36, 37, 38, 39
-- *8 closed* — 10, 15, 14, 16, 17, 23, 24, 41
+- *9 closed* — 10, 15, 14, 16, 17, 21, 23, 24, 41
 
   - **6** · The map's header claim is stronger than the map
   - **7** · `FORK_c54.md` narrates c54.1–c54.35 and reads as current
@@ -73,7 +75,6 @@ current: r2500+c54.194
   - **18** · p0's FRONTIER ITEM 1, DATUM HALF: THE ANSWER IS THAT IT CANNOT BE DERIVE
   - **19** · P1 CONTRADICTS ITS OWN ABSTRACT ABOUT $r=0$, IN PUBLISHED TEXT — added r
   - **20** · P7 CONFLATES TWO LOCI IT ELSEWHERE SAYS MUST NEVER BE CONFLATED — added
-  - **21** · TAKE THIS ONE FIRST — P15 SAYS "BRANCH POINT" WHERE ITS OWN RECEIPT SAYS
   - **22** · P12's §weyl-a3 RENDERS AFTER THE BIBLIOGRAPHY — added r2440, and it is a
   - **25** · P13's `sec:face-status` CONCEDES A SYMMETRY THE GROUP THEORY DOES NOT HA
   - **26** · TWO ITEMS ROUTED AT THE FINDER'S WEIGHT, NOT INDEPENDENTLY VERIFIED HERE

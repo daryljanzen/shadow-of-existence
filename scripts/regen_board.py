@@ -62,8 +62,12 @@ LEADS = {
    "$\\rho$ with a minus sign, leaving a five-dimensional space of shears at fixed $\\rho$ with nothing selecting "
    "among them. \u26d4 r2505: the corpus DOES select \u2014 Goldberg\u2013Sachs via the shift\u2013shear link \u2014 but **that is a VACUUM theorem and the stratum is where matter is dynamical**, so the gap is: **supply a shear-selection statement that does not assume vacuum**",
    ['L-165','L-175'], 3, 3),
- 'L-171': ("**PO-7** \u2014 whether the $0.62\\pi$ acoustic-phase disagreement is real against the sky. Needs the "
-   "**seam-phase scan at PRODUCTION depth** (`FOR_54` 38); the 34%-and-stops result was at LMAXL = 1000",
+'L-171': ("**PO-7** \u2014 whether the acoustic disagreement is real against the sky. ⚠ *The $0.62\\pi$ "
+   "is **withdrawn** (`L-508`, c54.195): across four production-depth seam phases the acoustic phase spans "
+   "0.891 in $\\phi/\\pi$ and the peak heights 0.483–1.618, **with the control's values inside both**.* ⇒ "
+   "**What is open is sharper: no reading tried brings the spectrum within sixty times the control, so "
+   "where the disagreement lives is not a single named quantity** — and the SPACING, which is robust to "
+   "1.9%, is the one thing that does not move",
    ['L-202'], 2, 3),
  'L-207': ("\u24f6 the confined/branch-point exhibition \u2014 **gated on PO-6 and must not be opened without "
    "it** (\u24f5 discharged r2450)",
@@ -76,6 +80,15 @@ LEADS = {
    "receipt that declares what it computed is a receipt a vein can be excavated through", ['L-165','L-221'], 3, 1),
  'L-210': ("the entry-point front \u2014 all 44 sites carry verdicts; **live leads are where a paper's own text "
    "points at an unexplored interior**", ['L-202','L-221','L-175'], 2, 2),
+ 'L-508': ("**what the seam datum CARRIES, measured**: across four production-depth seam phases the acoustic "
+   "phase spans 0.891 in $\\phi/\\pi$ and the peak heights 0.483\u20131.618, **the control's values inside both** "
+   "\u2014 a bounded negative that charts the vein's perimeter (\u00a7IV) rather than closing anything",
+   ['L-202'], 3, 2),
+ 'L-509': ("P15 asserted a horizon property of the **branch point** at six sites where its own receipts say "
+   "**seam**/**onset**, and the two invert \u2014 repaired; **and `check_loci`, built for exactly this defect, "
+   "could not see the worst of them until this revision** (a proposition's receipt binding lives in its argument "
+   "paragraph). Found by seeding, not by reading",
+   ['L-202'], 3, 1),
  'L-218': ("\u24f5 the reader-package formats via pandoc in CI", [], 3, 0),
  'L-228': ("`check_loci` extended to the possessive and compound-noun forms node 52 declined to claim", [], 3, 0),
 }
@@ -108,7 +121,11 @@ def routed():
         pre, n, ti = m.group(1), m.group(2), m.group(3).rstrip(' —~*')
         if 'ANSWER TO 54' in pre:
             ans.append(n)
-        elif any(k in pre for k in ('DISCHARGED', 'WITHDRAWN', 'ANSWERED')):
+        # ** 'APPLIED' added r2501+c54.197.  FOR_54's OWN frontmatter says "items are dropped from
+        # ** this file the revision they are applied" -- so APPLIED is the word the file's rule uses,
+        # ** and it was the one word this parser did not know.  Item 21 was applied at c54.197 and
+        # ** kept reporting as LIVE. **
+        elif any(k in pre for k in ('DISCHARGED', 'WITHDRAWN', 'ANSWERED', 'APPLIED')):
             done.append(n)
         else:
             live.append((n, ti))
@@ -176,8 +193,17 @@ def build():
     rl, ra, rd = routed()
     L.append('# III \u00b7 THE ROUTED LIST (`FOR_54.md`) \u2014 leads handed to the working fork')
     L.append('')
-    L.append(f'- ***{len(rl)} live for the fork***, of which **21 is flagged to take first** (the '
-             "seam/branch-point word, which flips a proposition's truth value)")
+    # ** DERIVED r2501+c54.197, previously HARDCODED as "21 is flagged to take first". **  Item 21
+    # ** was applied at c54.197 and this line went on naming it as the standing edge -- a generated
+    # ** file asserting a stale fact in its own summary, which is the class the whole board exists
+    # ** to stop.  Now it reads the flag out of FOR_54 and says so when there is none.
+    _first = [(n, ti) for n, ti in rl if 'TAKE THIS ONE FIRST' in ti.upper()]
+    if _first:
+        L.append(f'- ***{len(rl)} live for the fork***, of which **{_first[0][0]} is flagged to take '
+                 f'first** \u2014 {_first[0][1]}')
+    else:
+        L.append(f'- ***{len(rl)} live for the fork***, and \u26a0 ***none is currently flagged '
+                 '"take this one first"*** \u2014 the standing edge is whatever the LEADS table above ranks')
     L.append(f'- *{len(ra)} are ANSWERS to the fork rather than work for it* \u2014 {", ".join(ra)}')
     L.append(f'- *{len(rd)} closed* \u2014 {", ".join(rd)}')
     L.append('')

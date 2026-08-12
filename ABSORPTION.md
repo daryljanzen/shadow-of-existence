@@ -54,7 +54,7 @@ sources: [chat]
 >
 > *Cleared at r2462 for c54.186 and kept current since. A revision neither absorbed nor declared in flight still FAILS, so the gate keeps its teeth.*
 
-IN-FLIGHT: c54.192 c54.193 c54.194
+IN-FLIGHT: (none — c54.197 absorbed at r2506)
 
 | fork revision | absorbed at | date |
 |---|---|---|
@@ -77,6 +77,9 @@ IN-FLIGHT: c54.192 c54.193 c54.194
 | c54.192 | r2488 | 2026-08-11 | ⛭⛭ **BY GIT BUNDLE — the first non-tarball absorption; fast-forward, zero duplicated IDs** |
 | c54.193 | r2488 | 2026-08-11 | ⛭⛭ *same bundle; **why $0.62\pi$: the driving** — item 41 discharged before this line could route it* |
 | c54.194 | r2488 | 2026-08-11 | ⚠ *same bundle; **`git fetch` works where push does not** — a capability both lines assumed for eight revisions* |
+| c54.195 | r2506 | 2026-08-11 | ⛭⛭ **BY GIT BUNDLE, first true three-way merge — item 38 answered and the $0.62\pi$ WITHDRAWN** |
+| c54.196 | r2506 | 2026-08-11 | *same bundle; a band opened for a fourth node, 57* |
+| c54.197 | r2506 | 2026-08-11 | *same bundle; routed item 21 worked — six sites named the wrong locus* |
 
 ## What each absorption cost, so the next one is planned rather than discovered
 
