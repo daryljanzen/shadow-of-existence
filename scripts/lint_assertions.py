@@ -165,6 +165,57 @@ def lint(path):
     return v.findings
 
 
+# ** THE THIRD FORM, ADDED r2376+c54.179 AFTER THIS INSTRUMENT REPORTED A DEFECT THAT WAS NOT THERE. **
+#
+# The old test was  `fail\.append|allpass\s*&=|^\s*sys\.exit\(1\)|raise SystemExit\(1\)`  and it missed
+# a whole idiom: a `check(label, cond)` helper appending to an UPPERCASE failure list, with the script
+# ending `raise SystemExit(main())` where main returns 1 if the list is non-empty.  ** Case-sensitive on
+# `fail`, literal on `SystemExit(1)`. **  Thirteen receipts were reported as carrying "no check of any
+# kind" on that basis; node 56 broke a claim inside one of them and it returned rc=1, which is the
+# evidence that settles it.  *An instrument that reports a defect that is not there costs exactly what a
+# missed defect costs -- a reading of the whole namespace to disprove -- and this one did it while I was
+# routing a finding built on its output.*
+#
+# ** THE RULE IS DELIBERATELY TWO-PART, so this does not over-correct into counting things that cannot
+# fail. **  A failure-collection idiom ALONE is not a check: nothing acts on the list.  What makes it a
+# check is a collection idiom AND a non-zero exit path.  An explicit `sys.exit(1)` / `SystemExit(1)`
+# still counts on its own, since it IS the acting.
+_FAIL_COLLECT = re.compile(r'\bfail\w*\.append\(|allpass\s*&=|\bok\s*=\s*False\b', re.I)
+_NONZERO_EXIT = re.compile(r'raise\s+SystemExit\(|^\s*sys\.exit\(|^\s*return\s+1\b', re.M)
+_EXPLICIT_ONE = re.compile(r'^\s*sys\.exit\(1\)|raise\s+SystemExit\(1\)', re.M)
+
+
+def _carries_other_check(src):
+    """a check in a form other than `assert` -- see the note above for why it is two-part"""
+    if _EXPLICIT_ONE.search(src):
+        return True
+    return bool(_FAIL_COLLECT.search(src) and _NONZERO_EXIT.search(src))
+
+
+def _rule_has_not_drifted():
+    """** THE SAME RULE LIVES IN corpus/check_receipts.py AND A RULE IN TWO PLACES DRIFTS. **
+
+    That gate decides the ratchet; this one decides the lint.  When they disagreed -- and they did,
+    both carrying `fail\.append` case-sensitively and `allpass &=` with no exit path -- a registered
+    receipt that could not fail passed both.  So the two are compared HERE, by reading that file's
+    text: no import, since importing a gate runs it, and no shared module, since these are two
+    directories with different owners.  *If either rule is edited alone, this fails and names it.*
+    """
+    g = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                     'corpus', 'check_receipts.py')
+    try:
+        txt = open(g, encoding='utf-8').read()
+    except OSError:
+        return ["corpus/check_receipts.py is unreadable -- the two-part rule cannot be compared"]
+    want = {'_COLLECT': r"\bfail\w*\.append\(|allpass\s*&=|\bok\s*=\s*False\b",
+            '_NZEXIT': r"raise\s+SystemExit\(|^\s*sys\.exit\(|^\s*return\s+1\b"}
+    out = []
+    for nm, pat in want.items():
+        if pat not in txt:
+            out.append(f"check_receipts.py's {nm} no longer matches this file's rule")
+    return out
+
+
 def main(argv):
     targets = argv[1:] or sorted(glob.glob(os.path.join(ROOT, 'receipts', '*', '*.py')))
     hollow, unpinned_only, none_at_all, ok = [], [], [], 0
@@ -179,8 +230,7 @@ def main(argv):
             #    as a SEPARATE line so the two instruments' numbers can be reconciled instead of
             #    silently disagreeing -- which they did until r2376+c54.161. **
             _src_txt = open(f, encoding='utf-8', errors='replace').read()
-            if re.search(r'fail\.append|allpass\s*&=|^\s*sys\.exit\(1\)|raise SystemExit\(1\)',
-                         _src_txt, re.M):
+            if _carries_other_check(_src_txt):
                 other_form.append(f)
             else:
                 none_at_all.append(f)
@@ -194,6 +244,7 @@ def main(argv):
             ok += 1
         else:
             ok += 1
+    _drift = _rule_has_not_drifted()
     print()
     print(f"  HOLLOW-ASSERTION LINT -- {len(targets)} receipt(s)")
     print(f"    {ok:>4} carry at least one assertion and none of them hollow")
@@ -215,6 +266,13 @@ def main(argv):
         print("  one, and it makes the debt number lie.")
         return 1
     print()
+    if _drift:
+        for _m in _drift:
+            print(f"  [FAIL] {_m}")
+        print("  ** The two-part check rule lives in this file AND in corpus/check_receipts.py, and")
+        print("  when they last disagreed a registered receipt that could not fail passed both. **")
+        return 1
+    print("  the two-part check rule agrees with corpus/check_receipts.py's")
     print("  No hollow assertions.")
     return 0
 
