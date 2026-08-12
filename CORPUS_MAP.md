@@ -146,6 +146,41 @@ sources: [cowork, chat]
 
 
 
+### Revision r2460 — 2026-08-11 (main line). **`L-234` ANSWERED, AND IT CORRECTS THIS LINE'S OWN r2458 CLAIM — the free function and the inherited datum are the same freedom.**
+
+**⛔ r2458 CALLED $E(r)$'s PROFILE "AN UNSPENT DEGREE OF FREEDOM". IT IS NOT.**
+*· **A varying $E(r)$ is a growing curvature mode:** a bound shell turns around at
+$t_{\rm ta}=\pi m/(-2E)^{3/2}$, so $d\ln t_{\rm ta}=-\tfrac32 d\ln(-E)$ — **different shells turn around at
+different times, which is exactly what an inhomogeneous collapse IS** — and its amplitude is the fractional spread
+in $E$.*
+*· **And the construction already constrains it.** The capstone **"runs the transfer chain backwards from the
+OBSERVED amplitude"** and gets a density contrast peaking at $\sim10^{-6}$ where matter domination ends.*
+⇒ ***That backward run IS a statement about $E(r)$'s spread. The corpus fixed the progenitor's inhomogeneity from
+the observed amplitude, which is the only place it could have come from.***
+
+**⇒⇒ SO THE FREE FUNCTION AND THE INHERITED DATUM ARE THE SAME FREEDOM SEEN FROM TWO ENDS:**
+*$E(r)$ **carries** the spectrum · the spectrum is **measured, not derived** (r2456) · the substrate **cannot supply
+it** because it is dimensionless (`L-150`).* ***Three statements, one fact — and the corpus already had all three,
+in three places.***
+
+**⚠ THE CORRECTION IS TO THIS LINE, NOT TO THE CORPUS.** *r2458 counted a function as free while the corpus was
+already using it, and* ***only following it to the end showed that.*** *The row was well-posed and its answer is
+that **there was never a spare freedom**.*
+⌗ **AND WHAT SURVIVES IS STRONGER THAN THE CLAIM IT REPLACES, in the construction's favour:** ***the SIGN of $E$ is
+forced by nucleosynthesis (`sec:trev`'s turnaround) and its PROFILE SCALE by measurement — so NEITHER half is an
+undeclared free parameter.***
+
+**⌗ THE RULE, filed as a scrap:** ***a degree of freedom is not spare because you can NAME it; it is spare only when
+you have followed every place the corpus could be constraining it and found none.*** *Counting parameters is a
+proxy; tracing them is a reading — **the same discriminator as the thirteen bad-measure instances, arriving in a
+physics argument rather than in an instrument**.*
+
+⌗⌗ ***SEVEN RUNS OF `L-211`: a withdrawal · a relocated frontier · a collapsed three-item debt · two narrowings of a
+protected question · an unstated premise · and a correction of this line's own claim two revisions old.***
+**An enumerated front cannot produce the last one, because it does not revisit.**
+
+**Register: 227 rows, 183 struck. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2459 — 2026-08-11 (main line). **`L-234`'s FIRST MOVE — the derived composition is $E$-profile-INDEPENDENT, and it rests on a mode condition the corpus does not state.**
 
 **⌗⌗ THE QUESTION WAS ASKED EXPECTING IT MIGHT CONSUME THE FREE FUNCTION:** *does the derived progenitor
