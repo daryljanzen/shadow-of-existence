@@ -36,6 +36,7 @@ sources: [chat]
 | c54.181 | r2429 | 2026-08-11 | ⛭ **BY MERGE, not by tarball — the first one** |
 | c54.182 | r2431 | 2026-08-11 | *by merge, via bundle relay* |
 | c54.183 | r2432 | 2026-08-11 | ⛭⛭ **BY DIRECT MERGE — the node pushed its own branch** |
+| c54.184 | r2434 | 2026-08-11 | *by merge; the old session's line, rebased and renumbered* |
 
 ## What each absorption cost, so the next one is planned rather than discovered
 
@@ -149,6 +150,41 @@ sources: [chat]
     routed** — which needs the pre-fix state — **and then left standing as though they were permanent facts.**
     ⇒ The fix is to **split the two jobs**: assert the STRUCTURAL claim, which survives the fix, and record the
     pre-fix state as a **dated observation in the docstring**, which does not need to be re-checkable.*
+
+- **c54.183 → c54.184 — the OLD session's line, rebased onto the node's tip and renumbered by the fork itself.**
+  ***Two sessions had numbered independently from c54.181, so two different c54.182s existed; the old session
+  renumbered its own to c54.184 rather than asking this line to disambiguate.***
+  - ⌗ **What survives the node's c54.183 rather than duplicating it, in the fork's own accounting:** *the residual
+    **decomposition** is independent and **corroborates** them — positions $0.1\%$ (which is *why* their peaks do not
+    move under lensing), contrast $38\%$ and $13.1\%$ too high, **$53\%$ in neither template set, said BEFORE the
+    build** — and their $331$ against the fitted $400$ **is that expectation met**.* ⇒ ⛭⛭ **And the sharper
+    distinction:** *their operator is **$\Lambda$CDM's own lensed-to-unlensed ratio** — the right instrument for that
+    number, and **imported**; the fork's $C_\ell^{\phi\phi}$ is **derived on this construction's own $\Phi$ at no new
+    parameter**.* ***A CR-side lensing calculation will need a corpus-native potential; theirs is a $\Lambda$CDM
+    object.***
+  - ⌗ *And it merged `sec:refit-bound` by hand so **their paragraph stands as the result and its own follows, with the
+    corroboration made explicit rather than left for a reader to notice**.*
+  - ⚠ **AND IT NEARLY SHIPPED A LOSS IT WOULD HAVE CAUSED, and looked:** *the rebase looked clean, so it checked
+    whether the node's register entries survived, **found none, then checked the node's branch and found it had never
+    written any**.* ⇒ ***"No damage, but I'd have reported a loss I caused if I hadn't looked at both sides."***
+    ⌗ *Confirmed here: the node's c54.182/183 carry `receipts/INDEX.md` rows and P15 citations and **no
+    `THE_LIVE_ARC` or `THE_WORK` entries**. The fork declined to write them — "that line knows what it did and I'd be
+    guessing" — **which is correct and is this line's own rule about the other line's rows.***
+  - ⛔ **AND THE OLD SESSION CANNOT PUSH AT ALL, which is different from the node and settles the question.** *It
+    tested rather than concluded: **both a branch of its own and the node's session branch return "not in this
+    session's authorized repository set"** — a **different refusal** from the node's. **The node's session was created
+    against the repo; the old session's never was, and it cloned by hand.*** ⇒ ***The branch discovery is real and it
+    does not transfer.***
+    ⌗ **And the fork owns the same error this line made, in the same words:** *"I read the proxy's error string and
+    repeated it as a diagnosis across several turns. It was never a diagnosis; it was an error message I never
+    tested."* ⇒ ***Both lines mistook an error string for a cause, independently, about the thing each reported most
+    confidently.***
+  - ⌗ **THE FORK'S OWN RECOMMENDATION, taken:** *"let [the node] carry front #2 and retire this one once c54.184
+    lands."* ⇒ **Landed here. The old session is retired; `HANDOVER_c54.184.md` is written for exactly that.**
+    ⌗ *And its byte-identical `HANDOVER_c54.182.md` was retired with it, references repointed.*
+  - ⚠ *One merge artefact the gates caught and the eye would not: **`check_id_bands` found `L-171` on two adjacent
+    rows** — the union merge keeping both sides of one row that differed **only by the renumber**. Resolved to the
+    `c54.184`-numbered copy.* ***That is the duplicate-ID case the gate was built for, firing for the first time.***
 
 ## ⛔⛔ STEP 6 WAS WRONG FOR THREE ABSORPTIONS — corrected r2427
 

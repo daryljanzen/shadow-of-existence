@@ -146,6 +146,52 @@ sources: [cowork, chat]
 
 
 
+### Revision r2434 — 2026-08-11 (main line). **c54.184 MERGED AND THE OLD SESSION RETIRED — and the duplicate-ID gate fired for the first time, on a row that differed only by a renumber.**
+
+**⌗⌗ THE SITUATION: two sessions had numbered independently from c54.181, so two different c54.182s existed.**
+***The old session renumbered its own to c54.184 rather than asking this line to disambiguate*** *— and rebased it onto
+the node's tip so it applied directly.*
+
+**⌗ WHAT SURVIVES THE NODE'S c54.183 RATHER THAN DUPLICATING IT, in the fork's own accounting:** *the residual
+**decomposition** is independent and **corroborates** them — positions $0.1\%$ (**which is why their peaks do not move
+under lensing**), contrast $38\%$ and $13.1\%$ too high, and **$53\%$ in neither template set, said BEFORE the
+build**.* ⇒ ***Their $331$ against the fitted $400$ is that expectation met — a prediction and its confirmation from
+two sessions that could not see each other, for the second time in three revisions.***
+⛭⛭ **AND THE SHARPER DISTINCTION, which is why this was not duplication:** *the node's operator is
+**$\Lambda$CDM's own lensed-to-unlensed ratio** — the right instrument for that number, and **imported**. The old
+session's $C_\ell^{\phi\phi}$ is **derived on this construction's own $\Phi$ at no new parameter**.* ⇒ ***A CR-side
+lensing calculation will need a corpus-native potential; the node's is a $\Lambda$CDM object.***
+
+**⚠ AND THE FORK NEARLY SHIPPED A LOSS IT WOULD HAVE CAUSED, AND LOOKED.** *The rebase looked clean, so it checked
+whether the node's register entries had survived — **found none, then checked the node's branch and found it had never
+written any**.* ⇒ ***"No damage, but I'd have reported a loss I caused if I hadn't looked at both sides."***
+⌗ *Confirmed here. And it **declined to write them** — "that line knows what it did and I'd be guessing" — **which is
+this line's own rule about another line's rows, applied back.***
+
+**⛔ THE PUSH QUESTION IS SETTLED, AND THE TWO SESSIONS DIFFER.** *The old session **tested rather than concluded**:
+both a branch of its own and the node's session branch return **"not in this session's authorized repository set"** —
+a **different refusal** from the node's.* ⇒ ***The node's session was created against the repo; the old session's
+never was, and it cloned by hand. The branch discovery is real and does not transfer.***
+⌗ **And the fork owns the same error this line made, in almost the same words:** *"I read the proxy's error string and
+repeated it as a diagnosis across several turns. **It was never a diagnosis; it was an error message I never
+tested**."* ⇒ ***Both lines mistook an error string for a cause, independently, about the thing each reported most
+confidently.***
+
+**⇒ AND ITS OWN RECOMMENDATION IS TAKEN: the old session is RETIRED and the node carries front #2.**
+*`HANDOVER_c54.184.md` is written for exactly that; its byte-identical `HANDOVER_c54.182.md` retired with it,
+references repointed.*
+
+**⛭⛭ AND THE DUPLICATE-ID GATE FIRED FOR THE FIRST TIME, on the case it was built for and the eye would not catch.**
+*`check_id_bands` found **`L-171` on two adjacent rows** — the union merge keeping both sides of one 46,291-character
+row that differed **only by `c54.182` → `c54.184`**.* ⇒ ***`merge=union` cannot see a duplicate ID; that is exactly
+why the gate exists, and it is why the bands were built before they were needed.*** *Resolved to the renumbered copy.*
+⌗ *Five further conflicts, all resolved by measuring rather than choosing: **three receipts and one INDEX row differed
+only by the renumber** (took the new number); **two appendices are generated** (regenerated); **the PDFs are build
+artefacts**; and **`FOR_56.md`'s incoming side was empty** because the rebase predated this line's r2431 answer — kept
+ours, nothing of theirs lost.*
+
+**Register: 215 rows. Gates: twenty-one, twenty rc=0. `receipts/INDEX.md`: 269 rows, 269 unique stems.**
+
 ### Revision r2433 — 2026-08-11 (main line). **`L-150` ANSWERED IN THE NEGATIVE — the programme's longest-standing target cannot be met, and the reason is its own one-constant law one level down.**
 
 **⌗⌗ THE QUESTION, sharpened at r2430: can the crossing fix $\rho_r/\rho_m$ at OUR seam?** *§0 had found the
