@@ -129,6 +129,60 @@ def state_text(consol, code):
     return m.group(1) if m else None
 
 
+# ** ---- ADDED r2535: THE SELF-DECLARED-DONE CHECK ---- **
+# A row whose own NEXT-STEP field says the work was done, while the row is still LIVE, is a claim the
+# register makes about itself and nothing was checking it.  Four instrument rows (L-512, L-515, L-516,
+# L-517) sat live for twenty revisions with next-step fields reading "done in the registering revision";
+# FOR_54 items 24 and 29 had the same shape.  ** The gates that catch a stale FIELD do not catch a stale
+# STATE. **
+_DONE_PHRASES = (
+    'done in the registering revision',
+    'done in its registering revision',
+    'DO NOT ACT ON THIS ITEM',
+    'nothing remains',
+    'discharged in the same revision',
+)
+
+
+def check_self_declared_done(text):
+    """Report live rows whose own next-step field says the work is finished."""
+    import re as _re
+    bad = []
+    for line in text.split('\n'):
+        m = _re.match(r'\|\s*\*\*(L-\d+)\*\*\s*\|', line)
+        if not m:
+            continue
+        cells = line.split(' | ')
+        if len(cells) < 4:
+            continue
+        step = cells[3]
+        for ph in _DONE_PHRASES:
+            if ph.lower() in step.lower():
+                bad.append((m.group(1), ph))
+                break
+    return bad
+
+
+def _selfdone_gate():
+    """Run the self-declared-done check as part of this gate.  ** Added r2535 so it FAILS rather than
+    merely reports: eleven rows sat live with next-step fields saying the work was done, four of this
+    line's and seven of 54's, some for twenty revisions. **"""
+    import os as _os
+    _root = _os.path.abspath(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..'))
+    _p = _os.path.join(_root, 'THE_LIVE_ARC.md')
+    if not _os.path.exists(_p):
+        return 0
+    _bad = check_self_declared_done(open(_p, encoding='utf-8', errors='replace').read())
+    if not _bad:
+        print('    OK    no live row declares its own work done')
+        return 0
+    for _rid, _ph in _bad:
+        print(f'    [FAIL] {_rid} is LIVE and its next-step field says "{_ph}"')
+    print('    ⛔ A row whose own text says done is a CLAIM about itself, and it is exactly as')
+    print('       auditable as every other claim in the register.  Strike it or give it a real step.')
+    return 1
+
+
 def main():
     consol = '\n'.join(read(os.path.join(ROOT, h)) for h in HOMES)
     arctext = read(ARC)
@@ -211,7 +265,8 @@ def main():
     else:
         print('  Every WORK row\'s state block is dated and within the window.')
     print()
-    return 0
+    # ** the self-declared-done check, added r2535 -- see _selfdone_gate below. **
+    return _selfdone_gate()
 
 
 if __name__ == '__main__':

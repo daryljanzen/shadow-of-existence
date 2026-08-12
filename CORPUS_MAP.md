@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r2535 — 2026-08-11 (main line). **ELEVEN LIVE ROWS SAID THEIR OWN WORK WAS DONE — the board goes from 29 live to 18, and the check now fails the turn.**
+
+**⌗ THE DEFECT.** *Eleven live rows carried next-step fields reading **"done in the registering revision"** —
+**four of this line's instrument rows** (`L-512`, `L-515`, `L-516`, `L-517`) and **seven of 54's findings**
+(`L-508`–`L-511`, `L-513`, `L-518`, `L-520`), some for twenty revisions. Every one of 54's had been **verified
+here** and never struck.*
+⇒ ***The corpus had gates for a field naming a superseded number, a document lagging the register, a receipt whose
+pin no longer resolves — and none for the simplest case: the row saying it is finished while standing open.***
+
+**⛭ THE RULE, r1711's applied one register outward:** ***"this is done" is exactly as auditable as every other
+claim in the file.*** *`check_arcs` now reports and **fails** on it; seeded both ways.*
+
+**⚠ AND THE COST WAS NOT COSMETIC.** *The board showed **29 live rows and 21 leads**; after the sweep, **18 and
+14**.* ⇒ ***A third of what looked like open work was finished work that had never been marked — and the next node
+reads the board to decide what to do.***
+
+⌗ *Same shape found in `FOR_54` two revisions running: item **24** said **"WITHDRAWN — DO NOT ACT ON THIS ITEM"**
+in its own body and sat as live work for eighty revisions; item **29**'s defect was simply gone.*
+
+⌗⌗ *And how it was found is worth the record: **an audit script produced a false positive** — it read a section
+header spanning `L-176`–`L-199` as a live row with no next step, and this line **reported that to Daryl as real
+work**. Re-running it properly is what surfaced the real eleven.* ⇒ ***A wrong measurement that gets checked is
+worth more than a right one that does not.***
+
 ### Revision r2534 — 2026-08-11 (main line). **THE QUEUE HAS A FLOOR — eight named defects, each with a probe that will tell the next node when it is fixed.**
 
 **⌗ FOUR MORE ITEMS READ.** *· **24** — ***its own body says "WITHDRAWN r2454 — DO NOT ACT ON THIS ITEM" and it was
