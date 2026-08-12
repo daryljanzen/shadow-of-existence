@@ -25,12 +25,12 @@ without fixing what is still sitting there owed?"**
 
 | | at c54.27 *(the baseline below)* | **now** |
 |---|---|---|
-| registered | 88 | **234** |
+| registered | 88 | **235** |
 | struck | 13 | **181** |
-| open QUESTIONS | 75 | **22** |
+| open QUESTIONS | 75 | **23** |
 | open WORK rows *(arcs and phases, folded r2378)* | — | **31** |
 | `HOT` | 49 *(60% of open)* | **0** *(0% of open questions)* |
-| struck fraction | 14.0% | **89.2%** |
+| struck fraction | 14.0% | **88.7%** |
 
 **Open leads by state**
 
@@ -38,14 +38,14 @@ without fixing what is still sitting there owed?"**
 |---|---|
 | `DARYL` | 7 |
 | `OPEN` | 8 |
-| `—` | 7 |
+| `—` | 8 |
 
 **Open leads by origin**
 
 | origin | count |
 |---|---|
 | folded from OPEN_PROBLEMS_MAP | 4 |
-| this fork | 18 |
+| this fork | 19 |
 
 > **⌗ THE COUNTS ARE PER KIND (r2379).** *`kind:QUESTION` rows are things to answer and carry the burn-down; `kind:WORK` rows are programmes with steps whose freshness is gated by `corpus/check_arcs.py`. **The struck fraction is scoped to questions so it cannot quietly start measuring something else.***
 
@@ -71,6 +71,7 @@ without fixing what is still sitting there owed?"**
 | **`L-235`** | QUESTION · — |
 | **`L-236`** | QUESTION · — |
 | **`L-237`** | QUESTION · — |
+| **`L-238`** | QUESTION · — |
 | **`L-500`** | QUESTION · DARYL |
 | **`L-501`** | QUESTION · DARYL |
 | **`L-502`** | QUESTION · DARYL |

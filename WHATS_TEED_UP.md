@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.188 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**20 open QUESTIONS · 31 open WORK rows · 1 OBSERVED · 1 HELD** *(181 struck of 234 registered).*
+**21 open QUESTIONS · 31 open WORK rows · 1 OBSERVED · 1 HELD** *(181 struck of 235 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -38,6 +38,7 @@ sources: [cowork]
 | **`L-235`** | — | REGISTERED AND STRUCK r2462 — THE ADVERSARIAL CHECK c54.186 ASKED FOR, AND THE DISCRIMINATOR WAS ALREADY IN THE FORK'S OWN FILE. The fork wrote, against itself: "$\ell_1/\ell_A=0.5703$ has not moved across EIGHT instrument states, which is evidence either of a… | `FOR_54` 33 · `L-147` · c54.186's `P15_the_control_entered_the_regime…` | the fork's remaining self-stated caveat is now the sharpest item on front #2: $1.18$ is not a fit, and the 17% above a true $\Lambda$CDM's 1.01 is unn… |
 | **`L-236`** | — | REGISTERED AND STRUCK r2469 — A RECURRING DEBT TURNED INTO A VIEW, after paying it twice. `check_grains` failed on `THE_PLAN` and `THE_OPEN_PROBLEMS_LEDGER` three times: r2440, r2445 (hand-written currency block naming the rows moved since r2417), and r2468 — … | `scripts/regen_grain_currency.py` · `THE_ARSENAL` · `ARC 17` · `L-227` | the hand prose half is now the standing debt, and it is visible rather than recurring |
 | **`L-237`** | — | REGISTERED AND STRUCK r2470 — WHY "NO GATE WE HAVE LOOKS FOR THAT" KEEPS BEING THE ANSWER: EVERY GATE CHECKS A DECLARATION. c54.187 routed a real finding — c54.164's $\ell_1\in\{150,165,315\}$ was made on `ROBUST_p1p2_scan`, everything since is on `ACOUSTIC_tw… | `FOR_54` 35 · `L-220` · `THE_ARSENAL` · c54.187 | — |
+| **`L-238`** | — | REGISTERED AND STRUCK r2479 — A WORK ORDER NAMED A FINITE LIST WHERE A PROCEDURE BELONGED, AND EIGHT REVISIONS CONSUMED IT. `CLAUDE_CODE_WORK_ORDER` §⓹ named four rows as "the edge": `L-165`, `L-175`, `L-221`, `L-210`. Within eight revisions all four had been … | `scripts/regen_work_edge.py` · `L-236` · `ARC 17` · `NEXT.md` · `CLAUDE_CODE_WORK_ORDER.md` | — |
 | **`L-503`** | — | REGISTERED r2441+c54.188 — `L-500`'s UNNAMED 17% IS NAMED, AND NAMING IT REQUIRED CHANGING THE MEASUREMENT. `F2` as `L-147` defines it is a difference of two numbers each computed AGAINST THE SKY, so it mixes how far the two models are apart with where each si… | `L-500`; `L-147` `F2`/`F3`/`F4`/`F5`; c54.178's remaining-items list; `PO-7` | done in the registering revision — three CAMB references, the model separation, and the reversal |
 
 ## 👁 OBSERVED — measured here, being worked by the FORK

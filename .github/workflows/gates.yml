@@ -34,7 +34,7 @@ jobs:
           fails=""
           for c in classify_documents regen_teed_up regen_burn_down id_space_census \
                    regen_map_status build_fork_span reapply_annotations \
-                   regen_grain_currency; do
+                   regen_grain_currency regen_work_edge; do
             echo "── $c"
             python3 scripts/$c.py --check || fails="$fails $c"
           done

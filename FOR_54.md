@@ -865,6 +865,34 @@ chasing something else. That is the closure-adjacency mechanism running on your 
 
 ---
 
+## ⛭⛭ 36 · THE FRW CASE IS NOT AN ANALOGY — IT IS THE SAME CYCLOID — added r2479
+
+**Where:** *P1/P2 ask, as open, "whether the **Friedmann–Robertson–Walker** initial singularity, the **Kerr** inner
+singularity, or the **Reissner–Nordström** … admit analogous removal" — carried in `ENTRY_POINT_REGISTER` as a
+live site.*
+
+**⌗ THE FRW THIRD IS ALREADY COVERED, AND NOT BY EXTENSION:**
+$$a_{\rm FRW}(\eta)=\tfrac{A}{2}(1-\cos\eta) \qquad r_{\rm P2}(z)=M(1+\cos z)$$
+***Identical under $z=\pi-\eta$, $A=2M$*** *— verified symbolically, exactly, not to leading order.* **And both
+vanish quadratically at the singular end** *($A\eta^2/4$ against $M\eta^2/2$)* — ***a non-degenerate critical point
+of the same analytic character, which is exactly what your own argument turns on:*** *"two endpoints … are
+non-degenerate critical points of identical analytic character on a smooth underlying manifold."*
+
+⇒ ***So the corpus's cycloid IS the closed-FRW solution, and the removal argument applies to it verbatim rather
+than by analogy.***
+
+⌗ **And the other half was already in hand one arc away, unconnected:** *r2458 established **P2's cycloid is the
+bound LTB case with $E=-\tfrac12$, a constant** — and **bound LTB with constant $E$ is closed FRW**.* ***Two facts
+from two fronts, and the site that needed them sat marked LIVE through both.***
+
+**Suggested:** *the sentence could name FRW as **covered** rather than as an open analogy, leaving Kerr and RN as
+the question.* ⚠ ***Your paper, your call — and the reason this is routed rather than asserted is that whether the
+full removal argument transfers is a judgement about P1's causality reading, not about the function.***
+⌗ *Not claimed: that Kerr or RN are touched. **Neither is a cycloid; their singular structures are timelike rather
+than spacelike, and nothing here bears on them.** The site narrows from three cases to two.*
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

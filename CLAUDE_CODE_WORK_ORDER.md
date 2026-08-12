@@ -93,17 +93,53 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 
 ## ⓹ THE EDGE — and this is the part worth staying up for
 
-**`L-211`, the closure-adjacency procedure, out-performed every enumerated front this session: seven runs,
-seven distinct kinds of result, two of them correcting claims one and two revisions old.**
+<!-- WORK-EDGE:BEGIN -->
 
-> ***After any closure — yours or one you find in the log — read the gaps in the papers it touches. The
-> deliverable is which adjacent gap the closure just made answerable.***
+### ⛭⛭ THE LIVE EDGE — **GENERATED** by `scripts/regen_work_edge.py` from `THE_LIVE_ARC.md`
 
-*Live rows with a concrete next step written in them, all workable:*
-*· **`L-165`** (PO-6) — *define the interacting tower: the spectrum of $\hat\Gamma$, the UV of the sums*;*
-*· **`L-175`** (PO-9) — *is one-step-ness FORCED, or a choice the construction makes?*;*
-*· **`L-221`** (PO-5) — *what would turn a count of GRADINGS into a count of FIELDS?*;*
-*· **`L-210`** — the entry-point front, one site at a time.*
+> ⚠ **THIS BLOCK IS REGENERATED, NOT WRITTEN — because a hand-written list of live work goes stale by construction.** *An earlier draft of this file named four rows as "the edge"; **within eight revisions all four had been worked**, and a session reading that list would conclude there was no work left.*
+>
+> ⌗ ***Ordered with the LONGEST-UNWORKED FIRST, so taking them in order does not re-tread what landed an hour ago.***
+
+| row | last worked | what its own row says to do next |
+|---|---|---|
+| **`L-174`** | r2376 | build the classical general matter dynamics — the ungated half, which is owed no gate and has simply never been taken |
+| **`L-171`** | r2376 | the MECHANISM is closed; what remains is PO-7 itself — whether the derived deficit is a real disagreement with the sky, which is a verdict question an |
+| **`L-206`** | r2380 | Daryl's call on whether P3 is reordered at all; if yes, the skeleton is written and the derivation of $w,u,3w$ as shadows is its spine ⏸ **HELD BY DAR |
+| **`L-210`** | r2402 | work the unmarked sites **one at a time and without rushing**, giving each a verdict marker; the dig is mechanical and re-runnable, **the verdict neve |
+| **`L-216`** | r2409 | Daryl runs it when at a computer or when the publish call lands; **then tell this line the URL (public) or hand it a short-lived token (private)** |
+| **`L-203`** | r2413 | ⌗⌗ **CORRECTED r2382 BY READING R-M AT SOURCE: THE FRONT IS Ⓒ, NOT Ⓕ.** *`THE_PLAN` lists what is **unrun** (Ⓕ Ⓖ Ⓗ); R-M records that **Ⓒ complex anal |
+| **`L-217`** | r2414 | state the relation in one place: what CR supplies, what it takes as given, what it forbids itself from supplying, and **where the two sectors' claims  |
+| **`L-219`** | r2415 | each rung is Daryl's call and taken one at a time; **nothing below a rung starts before it** |
+| **`L-204`** | r2418 | ⌗⌗ **CORRECTED r2382 BY READING R-P AT SOURCE — and the strike is owed HERE, not in `THE_PLAN`.** *R-P's own table still reads **"①② QM — NEXT, the ea |
+| **`L-222`** | r2428 | Daryl invites the fork to the repo; **`THE_HUB`'s arrival section is what it reads first** |
+| **`L-150`** | r2433 | ⓵ **DONE r2433 — closed in the negative** · ⓶ route the disposition to 54 so p0's frontier item's datum half is restated as a **closed negative** rath |
+| **`L-228`** | r2440 | extend to the possessive and compound-noun forms the contributor attempted, left unapplied, and **declined to claim precision for** |
+| **`L-500`** | r2441 | done in the registering revision — the shells, the truncation removed rather than argued, the ladder control, the four-state contrast, and F2/F3 acros |
+| **`L-501`** | r2441 | done in the registering revision — a nine-point phase scan with the knob's default asserted to reproduce the coded value |
+
+*26 live rows carry a stated next step; the 14 longest-unworked are shown.*
+
+<!-- WORK-EDGE:PROCEDURE -->
+> ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session
+>
+> ***`L-211`, the closure-adjacency debt: after ANY closure — yours, the fork's, or one you find in the
+> `CORPUS_MAP` log — read the gaps in the papers it touches. The deliverable is which adjacent gap the closure
+> just made answerable.***
+>
+> **Seven runs produced seven distinct kinds of result** *— a routed item withdrawn, a frontier relocated, a
+> three-item debt collapsed into one, a protected question narrowed twice without closing, an unstated premise
+> found, a free function shown already spent, and **two corrections of this line's own claims one and two
+> revisions old**.*
+> ⇒ ***A triggered front cannot run out the way an enumerated one does. That is the whole reason it is here and
+> the table is generated.***
+>
+> ⌗ **AND THE SECOND PROCEDURE, which paid three times tonight:** ***ask what the corpus DID in the case that
+> worked, and read the licence it used*** *— rather than asking what might work in the case that has not. It
+> answered `L-233` (a covering map is flat by definition), `L-221` (gradings become fields by being a kernel),
+> and `L-175` (Rule 2 already governs a count).*
+
+<!-- WORK-EDGE:END -->
 
 ## ⓺ ADD LEADS — this is expected, not exceptional
 

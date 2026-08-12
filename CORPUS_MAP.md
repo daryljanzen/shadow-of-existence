@@ -146,6 +146,43 @@ sources: [cowork, chat]
 
 
 
+### Revision r2479 — 2026-08-11 (main line). **THE ENTRY-POINT FRONT'S FRW CASE IS THE SAME CYCLOID — and the work order's "edge" was a finite list that eight revisions consumed.**
+
+**⛭⛭ THE FRW THIRD IS NOT AN ANALOGY.** *`ENTRY_POINT_REGISTER` carries a live site against P1/P2's open question:
+"whether the **FRW** initial singularity, the **Kerr** inner singularity, or the **Reissner–Nordström** … admit
+analogous removal".*
+$$a_{\rm FRW}(\eta)=\tfrac{A}{2}(1-\cos\eta) \qquad r_{\rm P2}(z)=M(1+\cos z)$$
+***Identical under $z=\pi-\eta$, $A=2M$ — verified symbolically, exactly.*** *And both vanish **quadratically** at
+the singular end ($A\eta^2/4$ against $M\eta^2/2$) —* **a non-degenerate critical point of the same analytic
+character, which is precisely what the removal argument turns on.**
+⇒ ***So the corpus's cycloid IS the closed-FRW solution and the argument applies verbatim rather than by analogy.***
+⌗ *And **r2458 already had the other half unconnected**: P2's cycloid is the **bound LTB case with $E=-\tfrac12$
+constant**, and bound LTB with constant $E$ is closed FRW. **Two fronts, one arc apart, and the site that needed
+them sat marked LIVE through both.*** ⚠ *Kerr and RN are untouched and stay live; **the site narrows from three
+cases to two**.* *Routed as item 36.*
+
+**⛔⛔ AND THE WORK ORDER'S "EDGE" WAS A FINITE LIST WHERE A PROCEDURE BELONGED.** *`CLAUDE_CODE_WORK_ORDER` §⓹
+named four rows — `L-165`, `L-175`, `L-221`, `L-210`.* ***Within eight revisions this line had worked all four
+(r2464–r2479), each carrying a fresh narrowing and a restated next step, so an unattended session reading that list
+finds every item freshly handled and concludes there is no work left.*** *Daryl caught it, not the corpus: "why
+haven't you given it the live edge to work?"*
+
+**⌗⌗ AND `ARC 17` HAD ALREADY DIAGNOSED THE CLASS.** *A document whose content is "what the work is" is made of
+sentences true-for-now, **so it goes stale by construction** — the finding that explained `THE_EVOLUTION_MAP` and
+`THE_PLAN`.* ⇒ ***The error was applying it to REGISTERS and not to INSTRUCTIONS. An instruction document is the
+WORST member of the class: a stale register misleads a reader who can check it against the corpus, while a stale
+work order STOPS a worker who has no reason to look further.***
+
+**⇒ THE FIX IS r2469's, APPLIED A SECOND TIME.** *`scripts/regen_work_edge.py`, wired into CI as the ninth
+view-check.* *· **GENERATED**: which rows are live and what each says to do next — **26 of them**, ordered
+**longest-unworked first**, and the head of the list is **`L-174`, untouched since r2376**. · **HAND-WRITTEN and
+preserved verbatim**: the **PROCEDURE** — `L-211`'s closure-adjacency debt, and the second procedure that paid three
+times tonight, ***ask what the corpus DID in the case that worked and read the licence it used***.*
+⇒ ***A TRIGGERED FRONT CANNOT RUN OUT THE WAY AN ENUMERATED ONE DOES. That is the whole reason it is there and the
+table is generated.***
+
+**Register: 235 rows. Gates: twenty-one, twenty-one rc=0. Views: nine.**
+
 ### Revision r2478 — 2026-08-11 (main line). **`COMPANION_SPEC.md` — `L-218` ②, written before any code as the row instructs, and the reason it is enforceable comes from `L-237`.**
 
 **⌗⌗ THE ONE FAILURE IT EXISTS TO PREVENT,** *in `L-218`'s words: "the usual 'AI companion to a book' fails for one
