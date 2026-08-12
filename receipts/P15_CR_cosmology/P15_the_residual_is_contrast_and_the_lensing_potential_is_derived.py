@@ -4,7 +4,7 @@ RECEIPT -- P15: ** WHAT THE CONTROL'S REMAINING chi^2 IS MADE OF -- POSITIONS 0.
 TOO HIGH AND WORTH 38%, AND 53% IN NEITHER -- AND THE LENSING POTENTIAL BUILT TO ATTACK IT, CARRIED
 ON THIS INSTRUMENT'S OWN Phi WITH NO NEW PARAMETER. **
 
-Built r2376+c54.182, front #2.  Instrument:
+Built r2376+c54.184, front #2.  Instrument:
 `computations/beyond_the_wall/L171x_lensing_potential.py`.
 
 ===================================================================================================
@@ -195,7 +195,7 @@ print("and the rms deflection is 2.69 arcmin on the temperature fit's own normal
 print("=" * 78)
 
 # ============================================================================================
-# GATE — r2376+c54.182.  The successor builds the lensing convolution on these, so each is pinned.
+# GATE — r2376+c54.184.  The successor builds the lensing convolution on these, so each is pinned.
 #   (1) positions are NOT the residual -- if this ever rises the whole diagnosis reorders;
 #   (2) the contrast excess, which is what the convolution must remove;
 #   (3) what survives both, which is the expectation the build must not be allowed to forget;
@@ -207,7 +207,7 @@ assert abs(abs(c_contrast) - 0.131) < 0.02, f"the contrast excess is {abs(c_cont
 assert abs((CHI - d_both) / CHI - 0.53) < 0.05, f"{(CHI-d_both)/CHI:.1%} survives, expected 53%"
 assert worst < 0.10, f"Limber departs by {worst:.1%}"
 assert abs(rms - 2.692) < 0.10, f"the rms deflection is {rms:.3f} arcmin, expected 2.692"
-print(f"GATE c54.182 (r2376): positions {d_pos/CHI:.1%} of the residual, contrast "
+print(f"GATE c54.184 (r2376): positions {d_pos/CHI:.1%} of the residual, contrast "
       f"{abs(c_contrast):.1%} high and {d_osc/CHI:.0%} of it, {(CHI-d_both)/CHI:.0%} in neither; "
       f"Limber good to {worst:.1%}; rms deflection {rms:.3f} arcmin on the temperature fit's own "
       f"normalisation -- pinned against THE_WORK front #2.")

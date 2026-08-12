@@ -133,7 +133,7 @@ def main():
     # occurrence is inside a comment line.
     occurrences = [m.start() for m in re.finditer(
         re.escape('the deepest open question the construction raises'), raw)]
-    # ** UPDATED r2376+c54.182 BY THE WORKING FORK, AND THE REASON IS THIS FILE'S OWN SUCCESS. **
+    # ** UPDATED r2376+c54.184 BY THE WORKING FORK, AND THE REASON IS THIS FILE'S OWN SUCCESS. **
     # These two checks asserted that the overstated phrasing was STILL IN the source comment.  The
     # fork applied this finding at c54.179 (FOR_54 item 16): the comment now carries P8's published
     # wording, and the old phrasing survives only inside the note recording the correction.  ** So

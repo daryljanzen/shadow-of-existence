@@ -4,26 +4,6 @@
 \small\noindent Each computation marked \rcptmarker\ in the text is verified by a runnable receipt in the \texttt{receipts/} directory that ships with this work; status \textsf{OK} = verified (traced, run, output matches the claim). This appendix is generated from the receipt index, not maintained by hand.\par\medskip
 \begingroup\renewcommand{\arraystretch}{1.25}
 \begin{description}
-\item[\label{rcpt:X5_monodromy_group}\texttt{X5\_monodromy\_group}]\hfill\textsf{[OK]}\\
-\textit{`rem:monodromy-group` --- **the generation is verified, and the base has three punctures**} \ (P5 `rem:monodromy-group` --- **the generation is verified, and the base has three punctures**). 
-\emph{Computes:} run r1871, rc=0
- \emph{Bound:} **bound, and it records a caught error: a first pass computed \$c\_\textbackslash\{\}infty\$ based at \$m=60\$ rather than the common base point, and the relation appeared to fail. Permutations compose only when all loops share a base point**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/X5\_monodromy\_group.py}
-\item[\label{rcpt:X1rr_sky_angle_is_the_galois_closure}\texttt{X1rr\_sky\_angle\_is\_the\_galois\_closure}]\hfill\textsf{[OK]}\\
-\textit{`rem:galois-closure` --- **the dial is the splitting cover**} \ (P5 `rem:galois-closure` --- **the dial is the splitting cover**). 
-\emph{Computes:} run r1881, rc=0
- \emph{Bound:} ***supersedes `X1r\_cover\_tower`, which mis-identified both the deck group and the covering involution***
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/X1rr\_sky\_angle\_is\_the\_galois\_closure.py}
-\item[\label{rcpt:C1_conformal_vs_isometric}\texttt{C1\_conformal\_vs\_isometric}]\hfill\textsf{[OK]}\\
-\textit{alpha-action --- **the homothety IS the conformal dilation**} \ (P5 \S{}alpha-action --- **the homothety IS the conformal dilation**). 
-\emph{Computes:} run r1853, rc=0
- \emph{Bound:} **bound: it computes the LINEAR conformal maps. The full conformal group of the null cone includes special conformal transformations not tested here**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/C1\_conformal\_vs\_isometric.py}
-\item[\label{rcpt:Q4_equianharmonic_vantages}\texttt{Q4\_equianharmonic\_vantages}]\hfill\textsf{[OK]}\\
-\textit{`rem:equianharmonic` --- **the groupoid's projective invariant**} \ (P5 `rem:equianharmonic` --- **the groupoid's projective invariant**). 
-\emph{Computes:} run r1850, rc=0
- \emph{Bound:} **bound, stated in the script: three points \$120\textasciicircum{}\textbackslash\{\}circ\$ apart with their centre are equianharmonic AUTOMATICALLY --- the content is that CR's vantages ARE so spaced, which P3 forces. It names a consequence, not a new fact**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/Q4\_equianharmonic\_vantages.py}
 \item[\label{rcpt:negation_outer_A2}\texttt{negation\_outer\_A2}]\hfill\textsf{[OK]}\\
 \textit{rem:orientation} \ (R negates the roots (r->-r) conjugates the rep 3<->3bar ONLY because -1 not in W(A2); -1 in W for A1xA1/B2/G2 (inner)). 
 \emph{Computes:} Weyl groups built from simple reflections; -1 membership across 4 rank-2 systems (others = controls)
@@ -38,6 +18,11 @@
 \textit{prop:relations/completeness} \ (within-single-geometry morphism group = dihedral sigma,tau on the sky-angle circle: sigma\textasciicircum{}2=tau\textasciicircum{}3=(sigma tau)\textasciicircum{}2=id, <sigma,tau> order 6 = D3\textasciitilde{}S3, all 6 preserve sin 3w). 
 \emph{Computes:} builds generators, checks relations + order 6 + sin3w-invariance
 \ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/P05\_dihedral\_generators.py}
+\item[\label{rcpt:C1_conformal_vs_isometric}\texttt{C1\_conformal\_vs\_isometric}]\hfill\textsf{[OK]}\\
+\textit{sec:alpha-action} \ (C1 --- is the substrate's CONFORMAL group its ISOMETRY group? Substrate dS\_5 = \{eta(X,X)=alpha\textasciicircum{}2\} in M\textasciicircum{}6; absolute = \{eta(X,X)=0\}, the null cone.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/C1\_conformal\_vs\_isometric.py}
 \item[\label{rcpt:COVER_dial_loop_is_sigma_squared}\texttt{COVER\_dial\_loop\_is\_sigma\_squared}]\hfill\textsf{[OK]}\\
 \textit{rem:perroot} \ (How does a loop in the DIAL project to the MASS plane? 2M = (2/3sqrt3) a sin 3w. Near a branch point sin3w = +-1 the map is critical, so the projection winds twice.). 
 \emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
@@ -58,11 +43,26 @@
 \emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/K45\_span\_and\_nariai.py}
+\item[\label{rcpt:Q4_equianharmonic_vantages}\texttt{Q4\_equianharmonic\_vantages}]\hfill\textsf{[OK]}\\
+\textit{rem:equianharmonic} \ (Q4 --- is there a cross-ratio on the horizon roots invariant under the groupoid? Roots of r\textasciicircum{}3 - r + 2M with 2M = r0 - r0\textasciicircum{}3: they are r0, and (-r0 +- sqrt(4-3r0\textasciicircum{}2))/2.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/Q4\_equianharmonic\_vantages.py}
 \item[\label{rcpt:V5_homothety_charge}\texttt{V5\_homothety\_charge}]\hfill\textsf{[OK]}\\
 \textit{sec:alpha-action} \ (V5 --- THE DILATION AS A SYMMETRY WITH NO CONSERVED CHARGE. CONFIRMATION 4 --- the object: C1 established that the group preserving the substrate's ABSOLUTE is O(5,1) x R+, one generator larger than the isometry group O(5,1), and that the extra generator is the DILATION carrying alpha -> lambda.alpha. A dilation is a HOMOTHETY: L\_xi g = 2c g with c constant.). 
 \emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/V5\_homothety\_charge.py}
+\item[\label{rcpt:X1rr_sky_angle_is_the_galois_closure}\texttt{X1rr\_sky\_angle\_is\_the\_galois\_closure}]\hfill\textsf{[OK]}\\
+\textit{rem:galois-closure} \ (X1rr --- the cover tower, CORRECTED AGAIN (r1881). The r1874 correction had two errors of its own: (A) it called the dial's deck group D\_6. The deck group must PRESERVE 2M, and P3's D\_6 generators (w -> w+60deg, w -> -w) NEGATE it. D\_6 is the dial's full symmetry INCLUDING the mass flip. (B) it called w -> w+pi the covering involution. A covering involution must FIX the point below; w -> w+pi negates both 2M and r\_0.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/X1rr\_sky\_angle\_is\_the\_galois\_closure.py}
+\item[\label{rcpt:X5_monodromy_group}\texttt{X5\_monodromy\_group}]\hfill\textsf{[OK]}\\
+\textit{rem:monodromy-group} \ (X5 --- the monodromy GROUP of the corpus's cover, not just the map. Cubic r\textasciicircum{}3 - r + m = 0 over the m-plane. Corpus (P5): 'the deck group is S\_3, generated by the monodromies about the branch points'. Two transpositions generate S\_3 only if they DIFFER.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/X5\_monodromy\_group.py}
 \item[\label{rcpt:C3_the_dial_deck_is_S3_not_D6}\texttt{C3\_the\_dial\_deck\_is\_S3\_not\_D6}]\hfill\textsf{[OK]}\\
 \textit{rem:galois-closure} \ (the dial-s deck over the 2M-plane is S3, so the covering is the Galois closure). 
 \emph{Computes:} the two 2M-preserving generators satisfy a\textasciicircum{}3=b\textasciicircum{}2=1, bab=a\textasciicircum{}-1; degree 6 counted from the fibre (13)

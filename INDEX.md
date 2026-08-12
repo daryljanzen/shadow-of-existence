@@ -247,7 +247,7 @@ sources: [cowork, chat]
 | `FORK_HISTORY_c54.txt` | frozen record |
 | `FOR_54.md` | THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied. |
 | `FOR_56.md` | THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied. |
-| `HANDOVER_c54.182.md` | What the c54 session that ran c54.162–c54.182 knew that the ledgers do not hold. Written for its successor, who starts cold on a complete corpus. Read once, then work. |
+| `HANDOVER_c54.184.md` | What the c54 session that ran c54.162–c54.184 knew that the ledgers do not hold — the four things it got wrong and the shape they share, what it ruled out and why, the traps in `ACOUSTIC_two_arm.py` that cost it runs, and what is owed in the order it would take it. **Written because that session was created without the repository attached and so can never push; a successor starts cold on a complete corpus and this is the part that is not in it.** |
 | `HISTORICAL_CONTEXT_einstein_cosmological_considerations.md` | frozen record |
 | `HISTORICAL_CONTEXT_the_initial_rate_problem.md` | frozen record |
 | `PROGRAMME_UNFINISHEDNESS_CATALOGUE.md` | frozen record |

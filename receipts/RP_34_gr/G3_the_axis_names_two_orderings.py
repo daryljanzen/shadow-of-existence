@@ -114,7 +114,7 @@ def main():
           'The wall is the complement' in flat)
 
     # ---- the one thing that survives: the antecedent ---------------------------
-    # ** UPDATED r2376+c54.182 BY THE WORKING FORK -- and, as with W1, because the finding was
+    # ** UPDATED r2376+c54.184 BY THE WORKING FORK -- and, as with W1, because the finding was
     # APPLIED.  This asserted the ambiguity was still in P9; c54.179 took FOR_54 item 14 and the
     # clause now reads "lies along THAT AXIS".  The check therefore asserts the fix, and the
     # diagnosis stands in the label. **  *Routed in FOR_56.md rather than assumed.*
