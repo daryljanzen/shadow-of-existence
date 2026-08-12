@@ -9,21 +9,6 @@
 \emph{Computes:} run r1870, rc=0
  \emph{Bound:} **bound: it licenses a claim the corpus already makes correctly. What is new is the compatibility argument --- that a finite-order branch point and a pole both admit continuation while an essential singularity would admit neither**
 \ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/X4\_singularity\_types.py}
-\item[\label{rcpt:O6_eikonal_ringdown}\texttt{O6\_eikonal\_ringdown}]\hfill\textsf{[OK]}\\
-\textit{the optical face --- **the forced member has no ringdown scale**} \ (P7 \S{}the optical face --- **the forced member has no ringdown scale**). 
-\emph{Computes:} run r1863, rc=0
- \emph{Bound:} **bound: the eikonal correspondence is an asymptotic in \$\textbackslash\{\}ell\$ (Cardoso et al. 2009), and the CR reading is stated as a CONSISTENCY, not an independent prediction**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/O6\_eikonal\_ringdown.py}
-\item[\label{rcpt:O4_deflection_perspectival}\texttt{O4\_deflection\_perspectival}]\hfill\textsf{[OK]}\\
-\textit{perspectival shadow curvature --- **\ensuremath{\Lambda} is in the measurement, not the path**} \ (P7 \S{}perspectival shadow curvature --- **\ensuremath{\Lambda} is in the measurement, not the path**). 
-\emph{Computes:} run r1860, rc=0
- \emph{Bound:} **bound: the physics is STANDARD (Rindler--Ishak 2007) and no new prediction is claimed. What is new is that it instantiates P7's perspectival split exactly, in a place the field itself disputed**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/O4\_deflection\_perspectival.py}
-\item[\label{rcpt:O5_kappa_and_lyapunov}\texttt{O5\_kappa\_and\_lyapunov}]\hfill\textsf{[OK]}\\
-\textit{the seam's rigidity --- **\ensuremath{\kappa} and \ensuremath{\lambda} both vanish at the forced member**} \ (P7 \S{}the seam's rigidity --- **\ensuremath{\kappa} and \ensuremath{\lambda} both vanish at the forced member**). 
-\emph{Computes:} run r1859, rc=0
- \emph{Bound:} **bound: the coincidence of loci is computed; the causal LINK to P7's reframing-freedom argument is NOT claimed --- that remains P7's, established causally**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/O5\_kappa\_and\_lyapunov.py}
 \item[\label{rcpt:photon_cross_test}\texttt{photon\_cross\_test}]\hfill\textsf{[OK]}\\
 \textit{bead: null congruence crosses seam} \ (signed r(tau\textasciitilde{}) real \& odd through r=0; radial null photon crosses the seam with bounded chi -> r=0 passable, not a barrier). 
 \emph{Computes:} integrates dchi/dtau\textasciitilde{}=1/(1+r') across seam; asserts r real/odd/sign-crossing, chi bounded+continuous; control: unsigned law can't cross
@@ -87,6 +72,21 @@
 \emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/LIFT\_euclidean\_filter.py}
+\item[\label{rcpt:O4_deflection_perspectival}\texttt{O4\_deflection\_perspectival}]\hfill\textsf{[OK]}\\
+\textit{sec:CR-applications} \ (O4 --- light deflection in SdS, and what the perspectival reading does to it. f(r) = 1 - 2M/r - r\textasciicircum{}2/alpha\textasciicircum{}2. The orbit equation for null geodesics: (du/dphi)\textasciicircum{}2 = 1/b\textasciicircum{}2 - u\textasciicircum{}2 + 2M u\textasciicircum{}3 + 1/alpha\textasciicircum{}2 , u = 1/r.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/O4\_deflection\_perspectival.py}
+\item[\label{rcpt:O5_kappa_and_lyapunov}\texttt{O5\_kappa\_and\_lyapunov}]\hfill\textsf{[OK]}\\
+\textit{---} \ (O5 --- what coincides at r = alpha/sqrt3 at Nariai, and does the photon orbit's INSTABILITY vanish with the surface gravity? f = 1 - 2M/r - r\textasciicircum{}2/alpha\textasciicircum{}2, alpha = 1.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/O5\_kappa\_and\_lyapunov.py}
+\item[\label{rcpt:O6_eikonal_ringdown}\texttt{O6\_eikonal\_ringdown}]\hfill\textsf{[OK]}\\
+\textit{---} \ (O6 --- the eikonal ringdown at the forced member. Cardoso et al. 2009: omega\_QNM = Omega\_c . l - i (n+1/2) \textbar{}lambda\textbar{} Omega\_c = sqrt(f(r\_ph))/r\_ph (orbital angular velocity of the circular null geodesic) lambda = Lyapunov exponent, lambda\textasciicircum{}2 = f(r\_ph)[2f(r\_ph) - r\_ph\textasciicircum{}2 f''(r\_ph)] / (2 r\_ph\textasciicircum{}2) f = 1 - 2M/r - r\textasciicircum{}2/alpha\textasciicircum{}2, alpha = 1, r\_ph = 3M, Nariai at M = 1/(3 sqrt3).). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/O6\_eikonal\_ringdown.py}
 \item[\label{rcpt:X4r_no_essential_singularity}\texttt{X4r\_no\_essential\_singularity}]\hfill\textsf{[OK]}\\
 \textit{thm:null-boundary} \ (**!! EXTENDED c54.157: THIS ROW CERTIFIED EXIT-ZERO FOR A CLAIM IT DID NOT STATE.** P7 cites the file for 'no essential singularity, in BOTH parametrisations'; the file computed the pole ORDER of the Schwarzschild invariant in the cycloid variable -- which the same sentence credits to the companion paper -- and the sinh half had no computation at all (tau and alpha declared and never used, numpy imported and never used, the branch-point statement a loop over range(3) inside an f-string). **Now computed: r\textasciicircum{}3 = 2M alpha\textasciicircum{}2 sinh\textasciicircum{}2 is ENTIRE, so it has no essential point anywhere finite; the shift identity is verified at three tau\_k; the zero is of order TWO (the first draft of the assertion said one and FIRED -- sinh is squared, which is why the exponent is 2/3); leading coefficient 9M/2; and the cycloid pole coefficient 3072/M\textasciicircum{}4 pinned.** Original claim: X4-REDONE --- what is actually left once P2 is read. P2 prop:Kretschmann ALREADY: K(z) has a TWELFTH-ORDER POLE at z=pi, 'generated by the chain rule applied to the composition at a non-degenerate critical point of r(z)'; bounded at z=0. So the POLE classification and its MECHANISM are the corpus's.). 
 \emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
@@ -97,11 +97,11 @@
 \emph{Computes:} the general-D identity asserted at five dimensions with its factorisation; the photon-sphere radius, Omega\_c\textasciicircum{}2 and lambda\textasciicircum{}2 computed from the metric function and the ratio asserted equal to D-3 at six dimensions
  \emph{Bound:} ** STANDARD eikonal/geodesic correspondence for a static spherically symmetric metric, applied to the D-dimensional Schwarzschild-de Sitter function. Inherits the same altitude the framework already assigns the D=4 case: A CONSISTENCY OF THE READING, NOT AN INDEPENDENT PREDICTION **
 \ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/P07\_eikonal\_ratio\_is\_D\_minus\_three.py}
-\item[\label{rcpt:O1_photon_sphere_nariai}\texttt{O1\_photon\_sphere\_nariai}]\hfill\textsf{[OK]}\\
-\textit{the locus figure --- **the photon sphere IS Nariai's forcing locus**} \ (P3 \S{}the locus figure --- **the photon sphere IS Nariai's forcing locus** [borrowed from P3]). 
-\emph{Computes:} run r1857, rc=0
- \emph{Bound:} **bound, and it records a caught error: the first pass used the SCHWARZSCHILD shadow formula \$b=\textbackslash\{\}sqrt\{27\}M\$ and got \$b=\textbackslash\{\}alpha\$ exactly --- clean and WRONG, since that assumes \$\textbackslash\{\}Lambda=0\$**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/O1\_photon\_sphere\_nariai.py}
+\item[\label{rcpt:C2_the_two_threes_are_not_one_tower}\texttt{C2\_the\_two\_threes\_are\_not\_one\_tower}]\hfill\textsf{[OK]}\\
+\textit{lem:twoturnings} \ (neither three-s deck acts on the other-s fibre, so they are not related as covers). 
+\emph{Computes:} on the cubic (wr)\textasciicircum{}3-wr+2M reduces to r(1-w), vanishing only at r=0; numeric on three fibres (10)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges L-203 probe C2; superseded by the fork P14 receipt
+\ \emph{Run:} \texttt{python3 receipts/RM\_C\_complex\_analysis/C2\_the\_two\_threes\_are\_not\_one\_tower.py}
 \item[\label{rcpt:P03_acceleration_is_slice_curvature}\texttt{P03\_acceleration\_is\_slice\_curvature}]\hfill\textsf{[OK]}\\
 \textit{sec:curvature \ensuremath{\cdot} rem:twocritical \ensuremath{\cdot} the bend} \ (on ANY member of the energy family (E cancels: (dr/dtau)\textasciicircum{}2 = E\textasciicircum{}2 - f, and E is a constant of the motion) d\textasciicircum{}2r/dtau\textasciicircum{}2 = -f'/2 = r*K\_G identically, so THE SIGN OF THE SLICE'S GAUSSIAN CURVATURE IS THE SIGN OF THE COMOVING ACCELERATION -- and the flat locus is the deceleration-to-acceleration turnover, which on Nariai is the seam and in standard terms is rho\_m = 2 rho\_Lambda (csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2, the seam's phase). A recent cosmological epoch: 7.06 Gyr at H0=73, 7.65 at 67.4, preceding matter-Lambda equality [borrowed from P3 \ensuremath{\cdot} P7 \ensuremath{\cdot} P8]). 
 \emph{Computes:} the identity asserted; the K\_G zero solved and matched to (M alpha\textasciicircum{}2)\textasciicircum{}(1/3); csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2 proved by algebra after simplify() failed on the closed forms; epochs at both H0
@@ -117,6 +117,11 @@
 \emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/BRANCHPT\_transmission\_character.py}
+\item[\label{rcpt:O1_photon_sphere_nariai}\texttt{O1\_photon\_sphere\_nariai}]\hfill\textsf{[OK]}\\
+\textit{sec:applications-synthesis} \ (O1 --- the photon sphere of the SdS family, and where it sits at Nariai. f(r) = 1 - 2M/r - r\textasciicircum{}2/alpha\textasciicircum{}2. Photon sphere: d/dr (f/r\textasciicircum{}2) = 0. Impact parameter b\textasciicircum{}2 = r\textasciicircum{}2/f. [borrowed from P7 (+P3)]). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/O1\_photon\_sphere\_nariai.py}
 \item[\label{rcpt:P16_every_mode_is_frozen_at_the_crossing}\texttt{P16\_every\_mode\_is\_frozen\_at\_the\_crossing}]\hfill\textsf{[OK]}\\
 \textit{the collapse excursion} \ (**EVERY MODE IN THE OBSERVED RANGE IS FROZEN BEFORE THE BRANCH POINT, SO THE CROSSING'S SPECIES FILTER HAS NOTHING TO ACT ON AND THE PASSAGE IS LOSSLESS FOR EVERY SPECIES RATHER THAN FOR COLD ONES ALONE.** Built settling front \#1, the construction's recursion, which had headed the programme's list for twelve revisions. P7 gave two incompatible accounts of the Euclidean segment: `sec:lift-quantum` says the kernel acts on OSCILLATORY content and a frozen mode is a fixed point of it, `sec:frontiers` read the same exponent at fixed k as a criterion on SPECIES. **The first account's premise -- that every mode exits the comoving sound horizon before the crunch -- was asserted and cited sideways, never computed.** It is computed here on the progenitor's own exact interior: PART 1 the asymptotics (\textbar{}aH\textbar{} -> 1/x while c\_s saturates at 1/sqrt3, so c\_s k/\textbar{}aH\textbar{} -> c\_s k x -> 0 for EVERY k); PART 2 the freeze-out epoch x\_f across ell = 28..2475, strictly positive throughout, the highest mode freezing with 0.065\% of the leg to spare; PART 3 the species criterion shown vacuous. [borrowed from P16]). 
 \emph{Computes:} \textbar{}aH\textbar{} x asserted -> 1 within 2\% at x = 1e-3, 1e-4, 1e-5; c\_s asserted to reach 1/sqrt3 within 1e-3; every k in 10..900 asserted to freeze strictly on the leg AND to stay frozen a decade past freeze-out; the warm exponent asserted at the computed 204.6 (not P7's quoted \textasciitilde{}1.6e2, whose k is unstated) and asserted large enough to be a filter at all; a pressureless species asserted to have a vanishing exponent.

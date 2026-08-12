@@ -133,9 +133,19 @@ def main():
     # occurrence is inside a comment line.
     occurrences = [m.start() for m in re.finditer(
         re.escape('the deepest open question the construction raises'), raw)]
-    check('the phrase "the deepest open question the construction RAISES" occurs in the source',
-          len(occurrences) >= 1)
-    check('and EVERY occurrence is inside a % comment line, so it is not published text',
+    # ** UPDATED r2376+c54.184 BY THE WORKING FORK, AND THE REASON IS THIS FILE'S OWN SUCCESS. **
+    # These two checks asserted that the overstated phrasing was STILL IN the source comment.  The
+    # fork applied this finding at c54.179 (FOR_54 item 16): the comment now carries P8's published
+    # wording, and the old phrasing survives only inside the note recording the correction.  ** So
+    # the premise is false BECAUSE the item was applied, which is a receipt doing its job rather
+    # than failing. **  What is asserted now is the POST-FIX state, and the diagnosis this file
+    # earned is preserved verbatim in the check labels.
+    # *Edited across the line boundary only because the fork's own edit is what made it red; the
+    # change is routed in FOR_56.md for the observer line to accept, revise or revert.*
+    check('the OVERSTATED phrasing no longer stands as the comment\'s own claim (fixed c54.179)',
+          len(occurrences) == 0 or all(
+              'until r2376+c54.179' in raw[max(0, i - 400):i + 200] for i in occurrences))
+    check('and any surviving occurrence is inside a % comment line, never published text',
           all(raw[raw.rfind('\n', 0, i):i].lstrip().startswith('%') for i in occurrences))
     check('while the PUBLISHED paragraph says "the deepest question the construction opens onto" and '
           'then answers the general case',

@@ -59,31 +59,6 @@
 \emph{Computes:} run r1869, rc=0
  \emph{Bound:} **bound: it names the theorem behind a computation P3 already performs correctly. The continuation was right; what is new is that it is FORCED and that its reality is guaranteed rather than checked**
 \ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/X3\_seam\_schwarz\_reflection.py}
-\item[\label{rcpt:X2r_single_periodicity}\texttt{X2r\_single\_periodicity}]\hfill\textsf{[OK]}\\
-\textit{temporal-threeness --- **why the corpus closes in elementary terms**} \ (P3 \S{}temporal-threeness --- **why the corpus closes in elementary terms**). 
-\emph{Computes:} run r1875, rc=0
- \emph{Bound:} ***supersedes `X2\_single\_period\_not\_lattice`: that reached for genus and leaned on `X1`'s cover. The mechanism is single-vs-double periodicity, and the two objects are the TURNAROUND and HORIZON cubics, which P3 keeps apart***
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/X2r\_single\_periodicity.py}
-\item[\label{rcpt:O3_charting_distance}\texttt{O3\_charting\_distance}]\hfill\textsf{[OK]}\\
-\textit{the projection --- **the chart in which the relation is legible**} \ (P3 \S{}the projection --- **the chart in which the relation is legible**). 
-\emph{Computes:} run r1861, rc=0
- \emph{Bound:} **bound: it confirms P3's forcing and qualifies P3's second clause --- the geometry IS untouched by another chart, but the triple-angle FORM is lost, so the charting distance is not a free gauge for the relation**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/O3\_charting\_distance.py}
-\item[\label{rcpt:O1_photon_sphere_nariai}\texttt{O1\_photon\_sphere\_nariai}]\hfill\textsf{[OK]}\\
-\textit{the locus figure --- **the photon sphere IS Nariai's forcing locus**} \ (P3 \S{}the locus figure --- **the photon sphere IS Nariai's forcing locus**). 
-\emph{Computes:} run r1857, rc=0
- \emph{Bound:} **bound, and it records a caught error: the first pass used the SCHWARZSCHILD shadow formula \$b=\textbackslash\{\}sqrt\{27\}M\$ and got \$b=\textbackslash\{\}alpha\$ exactly --- clean and WRONG, since that assumes \$\textbackslash\{\}Lambda=0\$**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/O1\_photon\_sphere\_nariai.py}
-\item[\label{rcpt:C4_gnomonic_not_conformal}\texttt{C4\_gnomonic\_not\_conformal}]\hfill\textsf{[OK]}\\
-\textit{`prop:gnomonic` --- **the chart is projective, not conformal**} \ (P3 `prop:gnomonic` --- **the chart is projective, not conformal**). 
-\emph{Computes:} run r1854, rc=0
- \emph{Bound:} **bound, and it is a caught error: the first version tested the PRINCIPAL tangent pair, which BOTH projections preserve, and reported the gnomonic as conformal. A generic pair is the test**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/C4\_gnomonic\_not\_conformal.py}
-\item[\label{rcpt:Q5_nariai_on_the_locus}\texttt{Q5\_nariai\_on\_the\_locus}]\hfill\textsf{[OK]}\\
-\textit{`cor:nariai-locus` --- **Nariai is the locus's singular point**} \ (P3 `cor:nariai-locus` --- **Nariai is the locus's singular point**). 
-\emph{Computes:} run r1849, rc=0
- \emph{Bound:} **bound: it adds no new value --- it locates one already fixed algebraically. What is new is the incidence and metric characterisations**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/Q5\_nariai\_on\_the\_locus.py}
 \item[\label{rcpt:P03_kg_is_fprime}\texttt{P03\_kg\_is\_fprime}]\hfill\textsf{[OK]}\\
 \textit{sec:curvature (K\_G = -f'/2r)} \ (the slicing surface's Gaussian curvature and the metric function's derivative are proportional, K\_G = -f'/(2r) identically, and the factor never vanishes for r>0 -- so the flat locus of the slice and the stationary locus of f are ONE locus described two ways, and the Hubble-Eddington radius IS the lap's rate-minimum for every member). 
 \emph{Computes:} the identity asserted (K\_G + f'/2r = 0); the factor shown to have no zero for r>0; the shared zero solved and matched to (M alpha\textasciicircum{}2)\textasciicircum{}(1/3)
@@ -122,11 +97,31 @@
 \emph{Computes:} the A\_2 form's eigenvalues, semi-axes, axis ratio and focal distance with the equality to the Nariai offset asserted; and the Weyl three-cycle's order, its preservation of the form and its non-orthogonality in the chart, both asserted
  \emph{Bound:} ** A STATEMENT ABOUT WHICH METRIC A FOCUS IS DEFINED AGAINST. It does not dispute the number, the axis ratio or the scale convergence, all of which stand; it bounds what KIND of object the focal pair is **
 \ \emph{Run:} \texttt{python3 receipts/P03\_SdS\_slicing/P03\_the\_foci\_are\_chart\_objects.py}
+\item[\label{rcpt:C4_gnomonic_not_conformal}\texttt{C4\_gnomonic\_not\_conformal}]\hfill\textsf{[OK]}\\
+\textit{prop:gnomonic} \ (C4 --- which projection does CR force, and what does it cost? gnomonic: every great circle -> a straight line, NOT conformal. stereographic: conformal, great circles -> circles.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P03\_SdS\_slicing/C4\_gnomonic\_not\_conformal.py}
 \item[\label{rcpt:D2_hexagon_klein}\texttt{D2\_hexagon\_klein}]\hfill\textsf{[OK]}\\
 \textit{eq:tripleathinge} \ (D2 --- THE KLEIN CORRESPONDENCE on the corpus's own line configuration. CONFIRMATION 4 --- the objects, stated before anything runs: * The corpus's doubly-ruled surface is the EQUATORIAL hyperboloid -X0\textasciicircum{}2 + X1\textasciicircum{}2 + X2\textasciicircum{}2 = alpha\textasciicircum{}2, a 2-surface in R\textasciicircum{}3. Its rulings are therefore LINES IN P\textasciicircum{}3 -- which is exactly Klein's setting. * Klein sends a line in P\textasciicircum{}3 to a point of the KLEIN QUADRIC, a signature-(3,3) quadric in P\textasciicircum{}5.). 
 \emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P03\_SdS\_slicing/D2\_hexagon\_klein.py}
+\item[\label{rcpt:O3_charting_distance}\texttt{O3\_charting\_distance}]\hfill\textsf{[OK]}\\
+\textit{eq:x0proj} \ (O3 --- is r\_obs = sqrt7/2 a charting device, and does the triple-angle survive another chart? P3: r\_0 = R sin w with image radius R = tan(theta) = 1/sqrt(r\_obs\textasciicircum{}2 - 1); R is FORCED to 2/sqrt3 by the requirement that 2M = r\_0 - r\_0\textasciicircum{}3 linearise to a pure sin 3w.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P03\_SdS\_slicing/O3\_charting\_distance.py}
+\item[\label{rcpt:Q5_nariai_on_the_locus}\texttt{Q5\_nariai\_on\_the\_locus}]\hfill\textsf{[OK]}\\
+\textit{cor:nariai-locus} \ (Q5 --- the pencil premise, tested. Horizon cubic r\textasciicircum{}3 - r + 2M, with 2M = r0 - r0\textasciicircum{}3.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P03\_SdS\_slicing/Q5\_nariai\_on\_the\_locus.py}
+\item[\label{rcpt:X2r_single_periodicity}\texttt{X2r\_single\_periodicity}]\hfill\textsf{[OK]}\\
+\textit{sec:temporal-threeness} \ (X2-REDONE --- why the corpus computes in closed form. CONFIRMATIONS: (1) rung/level: tau-tilde is the BEAD TIME -- 'cosmic time COMPLEXIFIED... the same cosmic time continued off the real axis, which is what gives it a period' (section 0). The layer's own clock, rung 4. (3) apparatus: WHICH CUBIC? P3 separates two: H = r\textasciicircum{}3 - alpha\textasciicircum{}2 r + 2M alpha\textasciicircum{}2 the HORIZON cubic (the slicing turns;). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P03\_SdS\_slicing/X2r\_single\_periodicity.py}
 \item[\label{rcpt:X3r_reality_lines}\texttt{X3r\_reality\_lines}]\hfill\textsf{[OK]}\\
 \textit{rem:reality-lines} \ (X3-REDONE --- what the seam actually is, analytically. CONFIRMATION 4: state the object and ask what operation is really being performed. r = sin(theta). THIS FUNCTION IS ENTIRE. The Schwarz reflection principle EXTENDS a function defined on one side of a line across it. There is nothing here to extend -- so the principle, invoked at r1869, has no work to do.). 
 \emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
@@ -197,6 +192,11 @@
 \emph{Computes:} the involution comparison is exact matrix algebra; the root-sign counts computed at a sub-critical mass in every D
  \emph{Bound:} THE RETRACTION IS THE POINT: a narrowly-scoped result was chained with two others into an absolute foreclosure of an open search -- the cyanide face, and the second time that drill-site has been imploded and restored. The Nariai/three-quark lead and R3 both stand OPEN
 \ \emph{Run:} \texttt{python3 receipts/P03\_SdS\_slicing/P03\_step3\_refused.py}
+\item[\label{rcpt:C4_the_reality_grid_and_the_pencil}\texttt{C4\_the\_reality\_grid\_and\_the\_pencil}]\hfill\textsf{[OK]}\\
+\textit{sec:tour} \ (sinh-s reality set is a pencil not a grid; sinh\textasciicircum{}2-s two lowest lines are the bead-s branches). 
+\emph{Computes:} Im sin=cos x sinh y vs Im sinh=sin y cosh x; Im sinh\textasciicircum{}2 lines at k pi/2; the bead bound is the second (11)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges L-203 probe C4
+\ \emph{Run:} \texttt{python3 receipts/RM\_C\_complex\_analysis/C4\_the\_reality\_grid\_and\_the\_pencil.py}
 \item[\label{rcpt:P03_acceleration_is_slice_curvature}\texttt{P03\_acceleration\_is\_slice\_curvature}]\hfill\textsf{[OK]}\\
 \textit{sec:curvature \ensuremath{\cdot} rem:twocritical \ensuremath{\cdot} the bend} \ (on ANY member of the energy family (E cancels: (dr/dtau)\textasciicircum{}2 = E\textasciicircum{}2 - f, and E is a constant of the motion) d\textasciicircum{}2r/dtau\textasciicircum{}2 = -f'/2 = r*K\_G identically, so THE SIGN OF THE SLICE'S GAUSSIAN CURVATURE IS THE SIGN OF THE COMOVING ACCELERATION -- and the flat locus is the deceleration-to-acceleration turnover, which on Nariai is the seam and in standard terms is rho\_m = 2 rho\_Lambda (csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2, the seam's phase). A recent cosmological epoch: 7.06 Gyr at H0=73, 7.65 at 67.4, preceding matter-Lambda equality [borrowed from P3 \ensuremath{\cdot} P7 \ensuremath{\cdot} P8]). 
 \emph{Computes:} the identity asserted; the K\_G zero solved and matched to (M alpha\textasciicircum{}2)\textasciicircum{}(1/3); csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2 proved by algebra after simplify() failed on the closed forms; epochs at both H0
@@ -212,6 +212,11 @@
 \emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P03\_SdS\_slicing/C5\_sct\_already\_linear.py}
+\item[\label{rcpt:O1_photon_sphere_nariai}\texttt{O1\_photon\_sphere\_nariai}]\hfill\textsf{[OK]}\\
+\textit{sec:applications-synthesis} \ (O1 --- the photon sphere of the SdS family, and where it sits at Nariai. f(r) = 1 - 2M/r - r\textasciicircum{}2/alpha\textasciicircum{}2. Photon sphere: d/dr (f/r\textasciicircum{}2) = 0. Impact parameter b\textasciicircum{}2 = r\textasciicircum{}2/f. [borrowed from P7 (+P3)]). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/O1\_photon\_sphere\_nariai.py}
 \item[\label{rcpt:P03_operator_at_general_D}\texttt{P03\_operator\_at\_general\_D}]\hfill\textsf{[OK]}\\
 \textit{rem:dimension / thm:kernel} \ (** ASSUMPTION (A1) DISCHARGED. ** CR's OWN operator at general D returns Tangherlini-de Sitter and nothing else. The point previously missed: CR's operator is NOT a metric function -- P8 thm:kernel defines the vacuum sector as the KERNEL OF THE MATTER FUNCTIONAL on a cut in the construction gauge ('derived, not matched'), and that condition runs at any D. Computed from the metric rather than quoted: for ds\textasciicircum{}2 = -f dt\textasciicircum{}2 + dr\textasciicircum{}2/f + r\textasciicircum{}2 dOmega\textasciicircum{}2\_\{D-2\}, G\textasciicircum{}t\_t = (D-2)/(2r\textasciicircum{}2)[r f' + (D-3)(f-1)] (verified at D=4,5,6), so T=0 is the first-order linear ODE r f' + (D-3)(f-1) + 2 Lambda r\textasciicircum{}2/(D-2) = 0 -- P8's own equation at D=4 -- whose ENTIRE solution space at D=4,5,6,7,8 is f = 1 - 2M/r\textasciicircum{}(D-3) - 2 Lambda r\textasciicircum{}2/((D-1)(D-2)) with ONE constant of integration, verified identical to Tangherlini-dS at every D tested. With alpha(D) = sqrt((D-1)(D-2)/2Lambda), which returns sqrt(3/Lambda) at four, this is f = 1 - 2M/r\textasciicircum{}(D-3) - r\textasciicircum{}2/alpha\textasciicircum{}2 at every D, and the dimension result's input 2M = r\_0\textasciicircum{}(D-3) - r\_0\textasciicircum{}(D-1) is that f at a root. THE DIMENSION RESULT THEREFORE STRENGTHENS: the collapse, the fold being D-1 and the mass parity all run on a function the construction GENERATES rather than borrows [borrowed from P3 / P8]). 
 \emph{Computes:} the Einstein tensor computed from the metric at D=4,5,6 and matched to the closed form; the ODE solved by dsolve at D=4..8 and compared term by term with Tangherlini-dS

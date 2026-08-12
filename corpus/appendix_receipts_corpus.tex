@@ -94,11 +94,6 @@
 \emph{Computes:} re-run r1830, ALL PASS, rc=0
  \emph{Bound:} **bound, and the receipt states it: the Atiyah--Singer statement on the branched bead is TRACED, not computed --- P14 now states it at that weight**
 \ \emph{Run:} \texttt{python3 receipts/P14\_matter\_sector\_paper/P14\_even\_crossing\_index.py}
-\item[\label{rcpt:X5_monodromy_group}\texttt{X5\_monodromy\_group}]\hfill\textsf{[OK]}\\
-\textit{`rem:monodromy-group` --- **the generation is verified, and the base has three punctures**} \ (P5 `rem:monodromy-group` --- **the generation is verified, and the base has three punctures**). 
-\emph{Computes:} run r1871, rc=0
- \emph{Bound:} **bound, and it records a caught error: a first pass computed \$c\_\textbackslash\{\}infty\$ based at \$m=60\$ rather than the common base point, and the relation appeared to fail. Permutations compose only when all loops share a base point**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/X5\_monodromy\_group.py}
 \item[\label{rcpt:X4_singularity_types}\texttt{X4\_singularity\_types}]\hfill\textsf{[OK]}\\
 \textit{the closure --- **finite order in both senses, so passable**} \ (P7 \S{}the closure --- **finite order in both senses, so passable**). 
 \emph{Computes:} run r1870, rc=0
@@ -109,86 +104,6 @@
 \emph{Computes:} run r1869, rc=0
  \emph{Bound:} **bound: it names the theorem behind a computation P3 already performs correctly. The continuation was right; what is new is that it is FORCED and that its reality is guaranteed rather than checked**
 \ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/X3\_seam\_schwarz\_reflection.py}
-\item[\label{rcpt:X2r_single_periodicity}\texttt{X2r\_single\_periodicity}]\hfill\textsf{[OK]}\\
-\textit{temporal-threeness --- **why the corpus closes in elementary terms**} \ (P3 \S{}temporal-threeness --- **why the corpus closes in elementary terms**). 
-\emph{Computes:} run r1875, rc=0
- \emph{Bound:} ***supersedes `X2\_single\_period\_not\_lattice`: that reached for genus and leaned on `X1`'s cover. The mechanism is single-vs-double periodicity, and the two objects are the TURNAROUND and HORIZON cubics, which P3 keeps apart***
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/X2r\_single\_periodicity.py}
-\item[\label{rcpt:X1rr_sky_angle_is_the_galois_closure}\texttt{X1rr\_sky\_angle\_is\_the\_galois\_closure}]\hfill\textsf{[OK]}\\
-\textit{`rem:galois-closure` --- **the dial is the splitting cover**} \ (P5 `rem:galois-closure` --- **the dial is the splitting cover**). 
-\emph{Computes:} run r1881, rc=0
- \emph{Bound:} ***supersedes `X1r\_cover\_tower`, which mis-identified both the deck group and the covering involution***
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/X1rr\_sky\_angle\_is\_the\_galois\_closure.py}
-\item[\label{rcpt:O6_eikonal_ringdown}\texttt{O6\_eikonal\_ringdown}]\hfill\textsf{[OK]}\\
-\textit{the optical face --- **the forced member has no ringdown scale**} \ (P7 \S{}the optical face --- **the forced member has no ringdown scale**). 
-\emph{Computes:} run r1863, rc=0
- \emph{Bound:} **bound: the eikonal correspondence is an asymptotic in \$\textbackslash\{\}ell\$ (Cardoso et al. 2009), and the CR reading is stated as a CONSISTENCY, not an independent prediction**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/O6\_eikonal\_ringdown.py}
-\item[\label{rcpt:O3_charting_distance}\texttt{O3\_charting\_distance}]\hfill\textsf{[OK]}\\
-\textit{the projection --- **the chart in which the relation is legible**} \ (P3 \S{}the projection --- **the chart in which the relation is legible**). 
-\emph{Computes:} run r1861, rc=0
- \emph{Bound:} **bound: it confirms P3's forcing and qualifies P3's second clause --- the geometry IS untouched by another chart, but the triple-angle FORM is lost, so the charting distance is not a free gauge for the relation**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/O3\_charting\_distance.py}
-\item[\label{rcpt:O4_deflection_perspectival}\texttt{O4\_deflection\_perspectival}]\hfill\textsf{[OK]}\\
-\textit{perspectival shadow curvature --- **\ensuremath{\Lambda} is in the measurement, not the path**} \ (P7 \S{}perspectival shadow curvature --- **\ensuremath{\Lambda} is in the measurement, not the path**). 
-\emph{Computes:} run r1860, rc=0
- \emph{Bound:} **bound: the physics is STANDARD (Rindler--Ishak 2007) and no new prediction is claimed. What is new is that it instantiates P7's perspectival split exactly, in a place the field itself disputed**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/O4\_deflection\_perspectival.py}
-\item[\label{rcpt:O5_kappa_and_lyapunov}\texttt{O5\_kappa\_and\_lyapunov}]\hfill\textsf{[OK]}\\
-\textit{the seam's rigidity --- **\ensuremath{\kappa} and \ensuremath{\lambda} both vanish at the forced member**} \ (P7 \S{}the seam's rigidity --- **\ensuremath{\kappa} and \ensuremath{\lambda} both vanish at the forced member**). 
-\emph{Computes:} run r1859, rc=0
- \emph{Bound:} **bound: the coincidence of loci is computed; the causal LINK to P7's reframing-freedom argument is NOT claimed --- that remains P7's, established causally**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/O5\_kappa\_and\_lyapunov.py}
-\item[\label{rcpt:O2_sightline_null_on_lift}\texttt{O2\_sightline\_null\_on\_lift}]\hfill\textsf{[OK]}\\
-\textit{the tangent--secant reading --- **where the nullity lives**} \ (p0 \S{}the tangent--secant reading --- **where the nullity lives**). 
-\emph{Computes:} run r1858, rc=0
- \emph{Bound:} **bound: it confirms and locates p0's result rather than adding one --- the picture was correct, the wording placed the nullity in the plane**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/O2\_sightline\_null\_on\_lift.py}
-\item[\label{rcpt:O1_photon_sphere_nariai}\texttt{O1\_photon\_sphere\_nariai}]\hfill\textsf{[OK]}\\
-\textit{the locus figure --- **the photon sphere IS Nariai's forcing locus**} \ (P3 \S{}the locus figure --- **the photon sphere IS Nariai's forcing locus**). 
-\emph{Computes:} run r1857, rc=0
- \emph{Bound:} **bound, and it records a caught error: the first pass used the SCHWARZSCHILD shadow formula \$b=\textbackslash\{\}sqrt\{27\}M\$ and got \$b=\textbackslash\{\}alpha\$ exactly --- clean and WRONG, since that assumes \$\textbackslash\{\}Lambda=0\$**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/O1\_photon\_sphere\_nariai.py}
-\item[\label{rcpt:C3_inversion_extends}\texttt{C3\_inversion\_extends}]\hfill\textsf{[OK]}\\
-\textit{the three routes --- **inversion extends off the equator**} \ (p0 \S{}the three routes --- **inversion extends off the equator**). 
-\emph{Computes:} run r1855, rc=0
- \emph{Bound:} **bound: it extends TRIVIALLY --- the relation is an algebraic identity in \$\textbackslash\{\}eta\$, so the extension adds no reach. \ensuremath{\vdash}58 governs all three of p0's routes in the full space exactly as in the projection**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/C3\_inversion\_extends.py}
-\item[\label{rcpt:C4_gnomonic_not_conformal}\texttt{C4\_gnomonic\_not\_conformal}]\hfill\textsf{[OK]}\\
-\textit{`prop:gnomonic` --- **the chart is projective, not conformal**} \ (P3 `prop:gnomonic` --- **the chart is projective, not conformal**). 
-\emph{Computes:} run r1854, rc=0
- \emph{Bound:} **bound, and it is a caught error: the first version tested the PRINCIPAL tangent pair, which BOTH projections preserve, and reported the gnomonic as conformal. A generic pair is the test**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/C4\_gnomonic\_not\_conformal.py}
-\item[\label{rcpt:C1_conformal_vs_isometric}\texttt{C1\_conformal\_vs\_isometric}]\hfill\textsf{[OK]}\\
-\textit{alpha-action --- **the homothety IS the conformal dilation**} \ (P5 \S{}alpha-action --- **the homothety IS the conformal dilation**). 
-\emph{Computes:} run r1853, rc=0
- \emph{Bound:} **bound: it computes the LINEAR conformal maps. The full conformal group of the null cone includes special conformal transformations not tested here**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/C1\_conformal\_vs\_isometric.py}
-\item[\label{rcpt:Q6r_polar_is_the_background}\texttt{Q6r\_polar\_is\_the\_background}]\hfill\textsf{[OK]}\\
-\textit{rulings --- **the background is the polar slice of a substrate point**} \ (p0 \S{}rulings --- **the background is the polar slice of a substrate point**). 
-\emph{Computes:} run r1878, rc=0
- \emph{Bound:} ***closes A18: the ladder was stated in p0 and the embedding in no paper***
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/Q6r\_polar\_is\_the\_background.py}
-\item[\label{rcpt:Q4_equianharmonic_vantages}\texttt{Q4\_equianharmonic\_vantages}]\hfill\textsf{[OK]}\\
-\textit{`rem:equianharmonic` --- **the groupoid's projective invariant**} \ (P5 `rem:equianharmonic` --- **the groupoid's projective invariant**). 
-\emph{Computes:} run r1850, rc=0
- \emph{Bound:} **bound, stated in the script: three points \$120\textasciicircum{}\textbackslash\{\}circ\$ apart with their centre are equianharmonic AUTOMATICALLY --- the content is that CR's vantages ARE so spaced, which P3 forces. It names a consequence, not a new fact**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/Q4\_equianharmonic\_vantages.py}
-\item[\label{rcpt:Q5_nariai_on_the_locus}\texttt{Q5\_nariai\_on\_the\_locus}]\hfill\textsf{[OK]}\\
-\textit{`cor:nariai-locus` --- **Nariai is the locus's singular point**} \ (P3 `cor:nariai-locus` --- **Nariai is the locus's singular point**). 
-\emph{Computes:} run r1849, rc=0
- \emph{Bound:} **bound: it adds no new value --- it locates one already fixed algebraically. What is new is the incidence and metric characterisations**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/Q5\_nariai\_on\_the\_locus.py}
-\item[\label{rcpt:Q3_cayley_klein}\texttt{Q3\_cayley\_klein}]\hfill\textsf{[OK]}\\
-\textit{core --- **the one scale has a classical name**} \ (p0 \S{}core --- **the one scale has a classical name**). 
-\emph{Computes:} run r1847, rc=0
- \emph{Bound:} **bound, stated in the script: that the SCALE is the CK construction's only free constant is standard Cayley--Klein theory, TRACED not computed. And the spacelike branch wraps past \$\textbackslash\{\}pi\textbackslash\{\}alpha/2\$**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/Q3\_cayley\_klein.py}
-\item[\label{rcpt:Q1_quadric_polarity}\texttt{Q1\_quadric\_polarity}]\hfill\textsf{[OK]}\\
-\textit{`rem:onecircle` / \ensuremath{\vdash}58 --- **the bound extends to the projective setting**} \ (p0 `rem:onecircle` / \ensuremath{\vdash}58 --- **the bound extends to the projective setting**). 
-\emph{Computes:} run r1839, rc=0
- \emph{Bound:} **bound: it computes the invariant classification only. A first pass computed a EUCLIDEAN polar distance (\$1/\textbackslash\{\}sqrt7\$) in a Minkowski space --- a gauge artefact, discarded and recorded in the ledger as this field's characteristic trap**
-\ \emph{Run:} \texttt{python3 receipts/storyboard\_receipts/Q1\_quadric\_polarity.py}
 \item[\label{rcpt:P03_acceleration_is_slice_curvature}\texttt{P03\_acceleration\_is\_slice\_curvature}]\hfill\textsf{[OK]}\\
 \textit{sec:curvature \ensuremath{\cdot} rem:twocritical \ensuremath{\cdot} the bend} \ (on ANY member of the energy family (E cancels: (dr/dtau)\textasciicircum{}2 = E\textasciicircum{}2 - f, and E is a constant of the motion) d\textasciicircum{}2r/dtau\textasciicircum{}2 = -f'/2 = r*K\_G identically, so THE SIGN OF THE SLICE'S GAUSSIAN CURVATURE IS THE SIGN OF THE COMOVING ACCELERATION -- and the flat locus is the deceleration-to-acceleration turnover, which on Nariai is the seam and in standard terms is rho\_m = 2 rho\_Lambda (csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2, the seam's phase). A recent cosmological epoch: 7.06 Gyr at H0=73, 7.65 at 67.4, preceding matter-Lambda equality). 
 \emph{Computes:} the identity asserted; the K\_G zero solved and matched to (M alpha\textasciicircum{}2)\textasciicircum{}(1/3); csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2 proved by algebra after simplify() failed on the closed forms; epochs at both H0
@@ -723,6 +638,11 @@
 \emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C1\_closure\_of\_the\_driving.py}
+\item[\label{rcpt:C1_conformal_vs_isometric}\texttt{C1\_conformal\_vs\_isometric}]\hfill\textsf{[OK]}\\
+\textit{sec:alpha-action} \ (C1 --- is the substrate's CONFORMAL group its ISOMETRY group? Substrate dS\_5 = \{eta(X,X)=alpha\textasciicircum{}2\} in M\textasciicircum{}6; absolute = \{eta(X,X)=0\}, the null cone.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/C1\_conformal\_vs\_isometric.py}
 \item[\label{rcpt:C2_horizon_limits}\texttt{C2\_horizon\_limits}]\hfill\textsf{[OK]}\\
 \textit{sec:envelope} \ (C2 --- THE LIMITS. The comoving Hubble radius across the excursion, from the corpus's own geometry. CONFIRMATION 4 --- the object, and I take it from the corpus rather than from cosmology-by-habit: the E=1 (marginally bound) congruence IS this cosmology. On it (dr/dtau\textasciitilde{})\textasciicircum{}2 = E\textasciicircum{}2 - f = 1 - f, with f = 1 - 2M/r - r\textasciicircum{}2/alpha\textasciicircum{}2. The signed areal radius r is the scale-factor analogue.). 
 \emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
@@ -733,11 +653,21 @@
 \emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C3\_conformal\_map.py}
+\item[\label{rcpt:C3_inversion_extends}\texttt{C3\_inversion\_extends}]\hfill\textsf{[OK]}\\
+\textit{rem:onecircle} \ (C3 --- does INVERSION in the throat extend off the equatorial plane, as polarity did (Q1/Q6)? Minkowski inversion in the quadric eta(X,X)=alpha\textasciicircum{}2: P* = alpha\textasciicircum{}2 P / eta(P,P).). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P17\_geometric\_core\_paper/C3\_inversion\_extends.py}
 \item[\label{rcpt:C4_driving_envelope}\texttt{C4\_driving\_envelope}]\hfill\textsf{[OK]}\\
 \textit{sec:envelope} \ (**!! CORRECTED c54.155: 'entry at x = 1/sqrt3 for every k' IS A LIMIT, NOT AN IDENTITY** (the receipt's own table gives x\_entry = 0.764 at k = k\_s, +32\%), **and the 'residual below a percent' is an average over a 5-point grid that lands near zeros of cos(x\_seam): scanning the receipt's own function over k/k\_s in [10,120] reaches 7.3\% at k/k\_s = 12.** Both qualified in P15. Original claim: C4 --- ASSEMBLE IT. Integrand (C1) + limits (C2) + map (C3), on the collapse leg. CONFIRMATION 4 --- the assumptions, stated up front and not buried: (i) tight coupling, R = 3 rho\_b/4 rho\_gamma -> 0 (pure photon fluid, c\_s\textasciicircum{}2 = 1/3). R is small deep on the leg where the driving happens; near the seam it is not, and that is a stated limit. (ii) NO ANISOTROPIC STRESS, so Phi = Psi. Exact for a perfect photon-baryon fluid;). 
 \emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C4\_driving\_envelope.py}
+\item[\label{rcpt:C4_gnomonic_not_conformal}\texttt{C4\_gnomonic\_not\_conformal}]\hfill\textsf{[OK]}\\
+\textit{prop:gnomonic} \ (C4 --- which projection does CR force, and what does it cost? gnomonic: every great circle -> a straight line, NOT conformal. stereographic: conformal, great circles -> circles.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P03\_SdS\_slicing/C4\_gnomonic\_not\_conformal.py}
 \item[\label{rcpt:C5_sct_already_linear}\texttt{C5\_sct\_already\_linear}]\hfill\textsf{[OK]}\\
 \textit{rem:reality-lines} \ (TWO CLOSURES. (A) X3r's open question: sin is real on the real axis AND on every line Re z = pi/2 + k.pi. The crossings are at z = pi/2 + k.pi. Are the odd ones the corpus's BACK seam as the even ones are its FRONT? (B) The conformal queue's last entry: 'C1 computed the LINEAR conformal maps only; the SPECIAL CONFORMAL TRANSFORMATIONS are untested -- the one place the conformal field could still bite.'). 
 \emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
@@ -948,11 +878,66 @@
 \emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/M2\_reabsorption\_minimization.py}
+\item[\label{rcpt:O1_photon_sphere_nariai}\texttt{O1\_photon\_sphere\_nariai}]\hfill\textsf{[OK]}\\
+\textit{sec:applications-synthesis} \ (O1 --- the photon sphere of the SdS family, and where it sits at Nariai. f(r) = 1 - 2M/r - r\textasciicircum{}2/alpha\textasciicircum{}2. Photon sphere: d/dr (f/r\textasciicircum{}2) = 0. Impact parameter b\textasciicircum{}2 = r\textasciicircum{}2/f.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/O1\_photon\_sphere\_nariai.py}
+\item[\label{rcpt:O2_sightline_null_on_lift}\texttt{O2\_sightline\_null\_on\_lift}]\hfill\textsf{[OK]}\\
+\textit{prop:tangentnull} \ (O2 --- p0's tangent/secant distinction, and whether it is a shadow boundary in the optics sense. p0: 'sightlines of the projection that TOUCH the throat are light rays; those that CUT it are not.'). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P17\_geometric\_core\_paper/O2\_sightline\_null\_on\_lift.py}
+\item[\label{rcpt:O3_charting_distance}\texttt{O3\_charting\_distance}]\hfill\textsf{[OK]}\\
+\textit{eq:x0proj} \ (O3 --- is r\_obs = sqrt7/2 a charting device, and does the triple-angle survive another chart? P3: r\_0 = R sin w with image radius R = tan(theta) = 1/sqrt(r\_obs\textasciicircum{}2 - 1); R is FORCED to 2/sqrt3 by the requirement that 2M = r\_0 - r\_0\textasciicircum{}3 linearise to a pure sin 3w.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P03\_SdS\_slicing/O3\_charting\_distance.py}
+\item[\label{rcpt:O4_deflection_perspectival}\texttt{O4\_deflection\_perspectival}]\hfill\textsf{[OK]}\\
+\textit{sec:CR-applications} \ (O4 --- light deflection in SdS, and what the perspectival reading does to it. f(r) = 1 - 2M/r - r\textasciicircum{}2/alpha\textasciicircum{}2. The orbit equation for null geodesics: (du/dphi)\textasciicircum{}2 = 1/b\textasciicircum{}2 - u\textasciicircum{}2 + 2M u\textasciicircum{}3 + 1/alpha\textasciicircum{}2 , u = 1/r.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/O4\_deflection\_perspectival.py}
+\item[\label{rcpt:O5_kappa_and_lyapunov}\texttt{O5\_kappa\_and\_lyapunov}]\hfill\textsf{[OK]}\\
+\textit{---} \ (O5 --- what coincides at r = alpha/sqrt3 at Nariai, and does the photon orbit's INSTABILITY vanish with the surface gravity? f = 1 - 2M/r - r\textasciicircum{}2/alpha\textasciicircum{}2, alpha = 1.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/O5\_kappa\_and\_lyapunov.py}
+\item[\label{rcpt:O6_eikonal_ringdown}\texttt{O6\_eikonal\_ringdown}]\hfill\textsf{[OK]}\\
+\textit{---} \ (O6 --- the eikonal ringdown at the forced member. Cardoso et al. 2009: omega\_QNM = Omega\_c . l - i (n+1/2) \textbar{}lambda\textbar{} Omega\_c = sqrt(f(r\_ph))/r\_ph (orbital angular velocity of the circular null geodesic) lambda = Lyapunov exponent, lambda\textasciicircum{}2 = f(r\_ph)[2f(r\_ph) - r\_ph\textasciicircum{}2 f''(r\_ph)] / (2 r\_ph\textasciicircum{}2) f = 1 - 2M/r - r\textasciicircum{}2/alpha\textasciicircum{}2, alpha = 1, r\_ph = 3M, Nariai at M = 1/(3 sqrt3).). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/O6\_eikonal\_ringdown.py}
 \item[\label{rcpt:PEEB_peebles_on_the_set_rate}\texttt{PEEB\_peebles\_on\_the\_set\_rate}]\hfill\textsf{[OK]}\\
 \textit{sec:refit-bound} \ (PEEB --- THE PEEBLES IONISATION HISTORY ON THE SET RATE. ZREC used Saha only: right shift, wrong absolute (1283 vs CAMB's 1090), because Saha has no departure from equilibrium. Peebles adds it -- and the departure is itself H-dependent, which is exactly why it must be integrated on the construction's own rate rather than inherited. Standard effective three-level hydrogen atom (Peebles 1968; Seager et al. fits).). 
 \emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/PEEB\_peebles\_on\_the\_set\_rate.py}
+\item[\label{rcpt:Q1_quadric_polarity}\texttt{Q1\_quadric\_polarity}]\hfill\textsf{[OK]}\\
+\textit{rem:onecircle} \ (Q1, invariant form. The first pass computed a EUCLIDEAN distance for the polar hyperplane in a MINKOWSKI space and got 1/sqrt7 = 0.37796 -- a gauge artifact, not an invariant. Redone with the only quantity polarity actually depends on: eta(P,P) against alpha\textasciicircum{}2.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P17\_geometric\_core\_paper/Q1\_quadric\_polarity.py}
+\item[\label{rcpt:Q3_cayley_klein}\texttt{Q3\_cayley\_klein}]\hfill\textsf{[OK]}\\
+\textit{---} \ (Q3 --- Cayley-Klein: is the substrate's metric a log-cross-ratio against the absolute, and is alpha the CK scale constant? Substrate dS\_5 = \{X in M\textasciicircum{}6 : eta(X,X)=alpha\textasciicircum{}2\}.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P17\_geometric\_core\_paper/Q3\_cayley\_klein.py}
+\item[\label{rcpt:Q4_equianharmonic_vantages}\texttt{Q4\_equianharmonic\_vantages}]\hfill\textsf{[OK]}\\
+\textit{rem:equianharmonic} \ (Q4 --- is there a cross-ratio on the horizon roots invariant under the groupoid? Roots of r\textasciicircum{}3 - r + 2M with 2M = r0 - r0\textasciicircum{}3: they are r0, and (-r0 +- sqrt(4-3r0\textasciicircum{}2))/2.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/Q4\_equianharmonic\_vantages.py}
+\item[\label{rcpt:Q5_nariai_on_the_locus}\texttt{Q5\_nariai\_on\_the\_locus}]\hfill\textsf{[OK]}\\
+\textit{cor:nariai-locus} \ (Q5 --- the pencil premise, tested. Horizon cubic r\textasciicircum{}3 - r + 2M, with 2M = r0 - r0\textasciicircum{}3.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P03\_SdS\_slicing/Q5\_nariai\_on\_the\_locus.py}
+\item[\label{rcpt:Q6r_polar_is_the_background}\texttt{Q6r\_polar\_is\_the\_background}]\hfill\textsf{[OK]}\\
+\textit{---} \ (Q6-CONFIRMED --- the polar slice sits at RUNG 2, and that answers A18. CONFIRMATION 1 (ontology): section 0's five-rung ladder. Rung 1 = the substrate dS\_5 = SO(5,1)/SO(4,1). Rung 2 = 'A CUT of the substrate -- a four-geometry. dS\_4 is one such: the maximally symmetric one... A geometry is a cut exactly when its isometry group contains a sweep-subgroup of the substrate's.'). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P17\_geometric\_core\_paper/Q6r\_polar\_is\_the\_background.py}
 \item[\label{rcpt:P17_no_second_scale_on_either_face}\texttt{P17\_no\_second\_scale\_on\_either\_face}]\hfill\textsf{[OK]}\\
 \textit{the constant ledger} \ (**NEITHER REAL FORM OF THE SUBSTRATE SUPPLIES A SECOND SCALE, SO THE CONSTRUCTION CANNOT FORCE A DIMENSIONLESS MAGNITUDE. THE SILENCE IS A PROPERTY, NOT A GAP.** The Wick rotation X0 -> i X0 carries the defining quadric to S\textasciicircum{}5 of the SAME radius alpha -- it acts on the COORDINATE and leaves the right-hand side untouched, so no step exists at which a second radius could enter; the two faces are the two real forms of one complex quadric and a real form does not choose its own radius. Every curvature invariant on both faces is a pure power of 1/alpha\textasciicircum{}2 (asserted by logarithmic derivative), leaving no second constant with which to form a ratio. The remaining candidates are enumerated and each disposed: the horizon period is built from alpha; M and r\_0 are moduli; 2/(3 sqrt 3) is one member's value. **So a dimensionless magnitude cannot be forced, and that is the COMMON ROOT of three verdicts already banked separately -- the winding quantises and cannot measure, the flat bundle selects and cannot couple, the branch point filters and cannot supply.**). 
 \emph{Computes:} the Wick image asserted equal to S\textasciicircum{}5 of radius alpha; each invariant's logarithmic derivative asserted an integer
@@ -1028,11 +1013,21 @@
 \emph{Computes:} the reionisation degeneracy asserted EXACT -- if it ever moves chi\textasciicircum{}2 the amplitude is no longer fitted in closed form and PART 1's algebra no longer describes the pipeline; both smoothing optima pinned; **the growing width asserted to beat the constant one by at least 1.5x, which is the SHAPE claim and the reason the word is 'lensing' rather than 'some smoothing'**; what survives asserted above 60\% of the baseline, so a rewrite is forced rather than a patch if a fitted smoothing ever accounts for most of the residual; and an assert that fires if a smoothing alone would take the control to chi\textasciicircum{}2/dof < 2, since L-147 would then have to be revisited
  \emph{Bound:} **scope: this measures what two candidate builds can be worth on THIS statistic. It is not a result about the sky, not a measurement of the lensing amplitude, and the control does not improve -- the smoothing width is fitted. Reionisation is STRUCK from the front's list rather than deferred, and the condition that would undo the strike is written down: a comparison reaching ell < 30, a second spectrum, or a fixed amplitude.**
 \ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/P15\_what\_is\_left\_is\_lensing\_and\_not\_reionisation.py}
+\item[\label{rcpt:P15_derived_lensing_on_the_lcdm_arm}\texttt{P15\_derived\_lensing\_on\_the\_lcdm\_arm}]\hfill\textsf{[OK]}\\
+\textit{sec:refit-bound} \ (**THE DERIVED LENSING c54.181 TEED UP, RUN WITH NO FREE WIDTH -- AND IT COMES IN UNDER THE FITTED BOUND, WHICH IS WHAT A DERIVATION MUST DO.** \ensuremath{\Lambda}CDM's own non-perturbative lensed/unlensed ratio applied to the c54.178 LCDM arm takes the control 1320 -> 989, d(chi\textasciicircum{}2) = 331 -- UNDER the 400 the c54.181 fitted smoothing bounded, and concentrated in the damping tail (ell 1100-1500) where lensing fills the troughs. The acoustic peaks move 0.0\%. The corpus's own first-order Hu (2000) kernel, run on the SAME C\textasciicircum{}phiphi so only the ORDER differs, OVERSHOOTS to 508 because it BREAKS DOWN in the tail -- a spurious +13\% at ell=1900 against the full operator's +6.5\% -- so the derived number is the full operator's 331, not the first order's 508. Validated on CAMB's own LCDM: 615 unlensed -> 186 lensed (chi\textasciicircum{}2/dof \textasciitilde{} 1). \textasciitilde{}989 of 1320 survives, so lensing is real and NOT the last build.). 
+\emph{Computes:} lensed CAMB LCDM asserted at chi\textasciicircum{}2/dof in (0.75,1.25) so the operator and pipeline are validated before anything is read off the arm; the derived lensing on the arm asserted in (280,385) AND strictly under the c54.181 fitted bound of 400, which is the defining property of a zero-width derivation against a fitted upper bound; the first-order kernel asserted to OVERSHOOT the full operator by more than 80 in d(chi\textasciicircum{}2) via the tail artefact, a live check that LENS\_correction is first order and that the tail is where it fails; and the peak shift asserted below 0.3\%.
+ \emph{Bound:} **scope: the lensing operator is \ensuremath{\Lambda}CDM's, imposed not fitted, so this is not a measurement of the lensing amplitude and the CR arm does not fit -- it measures how much of c54.181's fitted-smoothing headroom a genuine zero-parameter lensing recovers (most of it), with the shortfall against the fit being the fit's free width. The residual \textasciitilde{}989 is the instrument's transfer inaccuracy, not lensing's: CAMB's UNLENSED LCDM already sits at 615 on these same bins. `PO-7` stays protected.**
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/P15\_derived\_lensing\_on\_the\_lcdm\_arm.py}
 \item[\label{rcpt:UNC_error_budget}\texttt{UNC\_error\_budget}]\hfill\textsf{[OK]}\\
 \textit{sec:refit-bound} \ (UNC --- QUANTIFYING WHAT WE DO NOT KNOW. The prediction with an error budget. Corrections folded in first: * the recombination WIDTH scales with the rate (A.22) -- so the thickness contributes \textasciitilde{}nothing to the RATIO and the signature is carried by r\_D essentially alone; * the l\_D anchor affects only the ABSOLUTE r\_D and cancels in the ratio -- it carries NO uncertainty into the prediction;). 
 \emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/UNC\_error\_budget.py}
+\item[\label{rcpt:P15_the_residual_is_contrast_and_the_lensing_potential_is_derived}\texttt{P15\_the\_residual\_is\_contrast\_and\_the\_lensing\_potential\_is\_derived}]\hfill\textsf{[OK]}\\
+\textit{sec:refit-bound} \ (**WHAT THE CONTROL'S REMAINING chi\textasciicircum{}2 IS MADE OF, AND THE LENSING POTENTIAL BUILT TO ATTACK IT.** **PART A** templates projected through the same inverse covariance the chi\textasciicircum{}2 uses: **positions remove 1.4 of 1320 -- 0.1\%, so the peaks are where the sky puts them and that is not where the residual lives**; a smooth envelope 15\%; **the peak-trough oscillation at FIXED position 38\%, with the model's contrast 13.1\% TOO HIGH** -- which is what lensing reduces; and **53\% in NEITHER, so a perfect lensing calculation leaves about half**. *Fitted templates, so each share is an upper bound on what the effect can claim.* **PART B** the line-of-sight solve stops at z = 12.8 but the lensing kernel peaks at z \textasciitilde{} 3.3, so Phi is carried on by the background's own growth factor D prop. H INT da/(aH)\textasciicircum{}3 -- exact in linear theory, no transfer function imported, k-dependence from this instrument's own Phi. **And the normalisation is the amplitude the TEMPERATURE comparison already fits, so lensing enters with NO new parameter.** Limber checked against an EXACT projection (5\% over l = 5-200); the deflection maximum is BROAD, within 10\% over l = 12-42; **rms deflection 2.69 arcmin with nothing tuned to it.**). 
+\emph{Computes:} positions asserted below 2\% of the residual, so the diagnosis reorders loudly if they ever rise; the contrast excess pinned to 13.1\% +- 2 points, since that is what the convolution must remove; what survives BOTH template sets asserted at 53\% +- 5, **so a build that forgets how much remains fails here**; Limber's departure asserted below 10\%, since the convolution will use it; the deflection maximum asserted BROAD; and the absolute rms deflection pinned at 2.692 arcmin, which is the zero-parameter check on the normalisation
+ \emph{Bound:} **scope: PART A's shares are FITTED-template upper bounds, not measurements of physical effects, and the two sets overlap by \textasciitilde{}7 points. And PART B's external agreement is weaker than it looks: the \textasciitilde{}2.7 arcmin and the \textasciitilde{}1e-7 deflection power it matches are RECALLED, not derived here and not checked against a source this corpus holds -- this programme was bitten twice in three revisions by exactly that (the 16/15 coefficient at c54.176, and a Limber suspicion in this very file which was also recollection and also wrong). What PART B establishes is INTERNAL consistency; the external agreement is corroboration at the strength of a memory.**
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/P15\_the\_residual\_is\_contrast\_and\_the\_lensing\_potential\_is\_derived.py}
 \item[\label{rcpt:P15_the_filter_is_a_sound_speed_filter}\texttt{P15\_the\_filter\_is\_a\_sound\_speed\_filter}]\hfill\textsf{[OK]}\\
 \textit{sec:what-crosses} \ (**THE BRANCH-POINT SELECTION RULE'S EXPONENT HAS TWO FACTORS AND THE CORPUS VARIES ONLY ONE.** The damping is e\textasciicircum{}\{-k c\_s \textbar{}Delta eta\textbar{}\}: `sec:what-crosses` holds c\_s at the plasma's value and varies k, reading a SCALE criterion (frozen against oscillating). **Hold k and vary c\_s and the same inequality is a SPECIES criterion -- and a pressureless component has c\_s = 0 IDENTICALLY, so its exponent vanishes at EVERY wavenumber.** ** THAT MAKES THE MATTER SECTOR'S INHERITANCE EXACT RATHER THAN ADIABATIC: ** at c\_s = 0 the segment's mode equation is psi'' = 0, whose constant solution the kernel leaves untouched with no approximation, whereas the frozen-mode argument rests on horizon exit and degrades at small scales. The two agree wherever both apply; only the pressureless one is available everywhere. COMPUTED on the corpus's own segment: (1) \textbar{}Delta eta\textbar{} = 3.3197 (the recorded 3.32); (2) exact transfer-matrix transmission in BOTH k and c\_s, reproducing -k c\_s \textbar{}Delta eta\textbar{} to the digit for every constant c\_s; (3) **ln T = 0 EXACTLY at c\_s = 0 for k = 1, 10, 85.3, 1e3, 1e5 -- uniform in k**; (4) at the first peak the exponent runs \textasciitilde{}1.6e2 c\_s/c, so the filter is opaque above c\_s \textasciitilde{} 3.5e-3. ** CONSEQUENCE: a per-cent sound speed already gives e\textasciicircum{}-1.6 and ten per cent e\textasciicircum{}-16, so THE CROSSING CAN INHERIT PERTURBATIONS FROM A COLD SPECIES AND FROM NO OTHER -- a sharp condition on what the progenitor may hand over. ** **(!! MARKED r2376+c54.162: the ARITHMETIC stands; the SELECTION-RULE INFERENCE is WITHDRAWN. 'the crossing can inherit perturbations from a cold species and from no other' does not hold -- the kernel acts on OSCILLATORY content and nothing arrives oscillating (`P16\_every\_mode\_is\_frozen\_at\_the\_crossing`), so the exponent computed here has nothing to act on and the crossing is lossless for EVERY species. A LOSS of a claimed prediction, recorded as one; P15 `sec:what-crosses` corrected in the same pass.)**). 
 \emph{Computes:} the segment's conformal length asserted at 3.32; the plasma exponent asserted in (-160,-140); ln T asserted zero to 1e-9 at c\_s = 0 across five decades in k
@@ -1098,6 +1093,16 @@
 \emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P14\_matter\_sector\_paper/WALL\_anomaly\_inflow.py}
+\item[\label{rcpt:X1rr_sky_angle_is_the_galois_closure}\texttt{X1rr\_sky\_angle\_is\_the\_galois\_closure}]\hfill\textsf{[OK]}\\
+\textit{rem:galois-closure} \ (X1rr --- the cover tower, CORRECTED AGAIN (r1881). The r1874 correction had two errors of its own: (A) it called the dial's deck group D\_6. The deck group must PRESERVE 2M, and P3's D\_6 generators (w -> w+60deg, w -> -w) NEGATE it. D\_6 is the dial's full symmetry INCLUDING the mass flip. (B) it called w -> w+pi the covering involution. A covering involution must FIX the point below; w -> w+pi negates both 2M and r\_0.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/X1rr\_sky\_angle\_is\_the\_galois\_closure.py}
+\item[\label{rcpt:X2r_single_periodicity}\texttt{X2r\_single\_periodicity}]\hfill\textsf{[OK]}\\
+\textit{sec:temporal-threeness} \ (X2-REDONE --- why the corpus computes in closed form. CONFIRMATIONS: (1) rung/level: tau-tilde is the BEAD TIME -- 'cosmic time COMPLEXIFIED... the same cosmic time continued off the real axis, which is what gives it a period' (section 0). The layer's own clock, rung 4. (3) apparatus: WHICH CUBIC? P3 separates two: H = r\textasciicircum{}3 - alpha\textasciicircum{}2 r + 2M alpha\textasciicircum{}2 the HORIZON cubic (the slicing turns;). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P03\_SdS\_slicing/X2r\_single\_periodicity.py}
 \item[\label{rcpt:X3r_reality_lines}\texttt{X3r\_reality\_lines}]\hfill\textsf{[OK]}\\
 \textit{rem:reality-lines} \ (X3-REDONE --- what the seam actually is, analytically. CONFIRMATION 4: state the object and ask what operation is really being performed. r = sin(theta). THIS FUNCTION IS ENTIRE. The Schwarz reflection principle EXTENDS a function defined on one side of a line across it. There is nothing here to extend -- so the principle, invoked at r1869, has no work to do.). 
 \emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
@@ -1113,6 +1118,11 @@
 \emph{Computes:} the general-D identity asserted at five dimensions with its factorisation; the photon-sphere radius, Omega\_c\textasciicircum{}2 and lambda\textasciicircum{}2 computed from the metric function and the ratio asserted equal to D-3 at six dimensions
  \emph{Bound:} ** STANDARD eikonal/geodesic correspondence for a static spherically symmetric metric, applied to the D-dimensional Schwarzschild-de Sitter function. Inherits the same altitude the framework already assigns the D=4 case: A CONSISTENCY OF THE READING, NOT AN INDEPENDENT PREDICTION **
 \ \emph{Run:} \texttt{python3 receipts/P07\_CR\_framework/P07\_eikonal\_ratio\_is\_D\_minus\_three.py}
+\item[\label{rcpt:X5_monodromy_group}\texttt{X5\_monodromy\_group}]\hfill\textsf{[OK]}\\
+\textit{rem:monodromy-group} \ (X5 --- the monodromy GROUP of the corpus's cover, not just the map. Cubic r\textasciicircum{}3 - r + m = 0 over the m-plane. Corpus (P5): 'the deck group is S\_3, generated by the monodromies about the branch points'. Two transpositions generate S\_3 only if they DIFFER.). 
+\emph{Computes:} runs clean; registered r2376 (c54) from its own docstring and a live run
+ \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
+\ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/X5\_monodromy\_group.py}
 \item[\label{rcpt:P03_batch1_cheap_owed}\texttt{P03\_batch1\_cheap\_owed}]\hfill\textsf{[OK]}\\
 \textit{sec:tour / prop:wall} \ (SIX OWED LEADS WORKED TOGETHER (L-53, L-58, L-62, L-63, L-66, L-80), two of them falsifiers of corpus claims, and both claims survived. L-53: with the hinge figure a regular (D-1)-gon at R = alpha/cos(pi/(D-1)), same-horn nulls are impossible at EVERY D and opposite-horn selects +-ONE STATION STEP at every D, so degree two is a SUBSTRATE fact carrying no dimensional weight -- BUT EXHAUSTION (a triple using up all the stations, which is what makes it a singlet) holds at D=4 ALONE, so the colour reading is dimension-selected by exhaustion rather than by degree: A SECOND SELECTOR, INDEPENDENT OF THE HARMONIC COLLAPSE. L-58: the causal and designation splits AGREE as partitions under P3's canonical hinge->root map but score 2/5 on the criterion (different locus, type and grading quantity), so they are two structures carrying one partition -- the c54.18 three-distinct claim stands with the opposite reason to the one first given. L-62: P14's own sentence ('exchanging the two rulings ... acting on the cut spinor as gamma\textasciicircum{}5') plus the legs being the rulings gives leg handedness = wall chirality, ONE sign. L-63: the twelve legs carry the REGULAR representation of D\_3 x Z\_2 = D\_6, so the two twelves are isomorphic as G-sets -- BOUNDED not closed, since isomorphic G-sets are not the same object. L-66: 12 legs = 6 punctures x 2 chirality. L-80: a wall is a T-FIXED point so carries no horn label -- three walls not six, and the quark/lepton seat split is the T-orbit against the T-fixed locus). 
 \emph{Computes:} the D-sweep exact in sympy; the criterion tabulated; the group action on the twelve legs enumerated with orbit and stabiliser
@@ -1438,4 +1448,59 @@
 \emph{Computes:} \textbar{}aH\textbar{} x asserted -> 1 within 2\% at x = 1e-3, 1e-4, 1e-5; c\_s asserted to reach 1/sqrt3 within 1e-3; every k in 10..900 asserted to freeze strictly on the leg AND to stay frozen a decade past freeze-out; the warm exponent asserted at the computed 204.6 (not P7's quoted \textasciitilde{}1.6e2, whose k is unstated) and asserted large enough to be a filter at all; a pressureless species asserted to have a vanishing exponent.
  \emph{Bound:} **scope: this settles what the segment ACTS ON. It does NOT compute the segment's action on a frozen mode beyond P7's own fixed-point statement, and it says nothing about the harmonic-basis question -- that is answered by reading, not arithmetic. AND IT REMOVES AN ADVERTISED SELECTION RULE: P7's 'a cold species and no other' does not hold. A loss of a claimed prediction, recorded as one.**
 \ \emph{Run:} \texttt{python3 receipts/P16\_cosmogenesis\_paper/P16\_every\_mode\_is\_frozen\_at\_the\_crossing.py}
+\item[\label{rcpt:U2_the_matter_sector_spends_none}\texttt{U2\_the\_matter\_sector\_spends\_none}]\hfill\textsf{[OK]}\\
+\textit{sec:correspondence} \ (the built matter sector spends zero free dimensionless constants). 
+\emph{Computes:} asserts P14 three no-s at source: index not datum, nothing fitted, a coupling a single length cannot build (11)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges L-200 section 1
+\ \emph{Run:} \texttt{python3 receipts/L200\_free\_data\_count/U2\_the\_matter\_sector\_spends\_none.py}
+\item[\label{rcpt:W1_what_remains_between_the_wall_and_a_curve_dynamics}\texttt{W1\_what\_remains\_between\_the\_wall\_and\_a\_curve\_dynamics}]\hfill\textsf{[OK]}\\
+\textit{sec:open} \ (the general inhomogeneous evolution is ordinary leaf evolution, not a new generative law). 
+\emph{Computes:} asserts P8 kinematic split, the Hamiltonian-constraint form, and that the raises phrasing is comment-only (13)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges L-207 section 1
+\ \emph{Run:} \texttt{python3 receipts/L207\_the\_bend/W1\_what\_remains\_between\_the\_wall\_and\_a\_curve\_dynamics.py}
+\item[\label{rcpt:L212_the_factorisation_singles_out_nothing}\texttt{L212\_the\_factorisation\_singles\_out\_nothing}]\hfill\textsf{[OK]}\\
+\textit{sec:open} \ (the horizon cubic factorisation singles out no root). 
+\emph{Computes:} every root satisfies 2M=r-r\textasciicircum{}3, so any root serves as r0; four values of 2M, all three roots each (14)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges L-212 move 1
+\ \emph{Run:} \texttt{python3 receipts/P13\_boundary/L212\_the\_factorisation\_singles\_out\_nothing.py}
+\item[\label{rcpt:L212_the_generation_index_fixes_the_mass}\texttt{L212\_the\_generation\_index\_fixes\_the\_mass}]\hfill\textsf{[OK]}\\
+\textit{sec:whichthree} \ (the generation index fixes the mass parameter, so it cannot grade it). 
+\emph{Computes:} the deck shift leaves r\textasciicircum{}(D-1) and hence 2M invariant; 2M is neither invariant nor equivariant in the root (6)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges L-212
+\ \emph{Run:} \texttt{python3 receipts/P13\_boundary/L212\_the\_generation\_index\_fixes\_the\_mass.py}
+\item[\label{rcpt:C1_the_two_covers_branch_where_the_corpus_pries}\texttt{C1\_the\_two\_covers\_branch\_where\_the\_corpus\_pries}]\hfill\textsf{[OK]}\\
+\textit{sec:homog} \ (the two three-fold covers branch at the two loci the corpus pries apart). 
+\emph{Computes:} disc(r\textasciicircum{}3-r+2M)=-4(27M\textasciicircum{}2-1); double root at alpha/sqrt3; deck fixed point at r=0; branch sets disjoint (12)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges L-203 station C probe C1
+\ \emph{Run:} \texttt{python3 receipts/RM\_C\_complex\_analysis/C1\_the\_two\_covers\_branch\_where\_the\_corpus\_pries.py}
+\item[\label{rcpt:C2_the_two_threes_are_not_one_tower}\texttt{C2\_the\_two\_threes\_are\_not\_one\_tower}]\hfill\textsf{[OK]}\\
+\textit{lem:twoturnings} \ (neither three-s deck acts on the other-s fibre, so they are not related as covers). 
+\emph{Computes:} on the cubic (wr)\textasciicircum{}3-wr+2M reduces to r(1-w), vanishing only at r=0; numeric on three fibres (10)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges L-203 probe C2; superseded by the fork P14 receipt
+\ \emph{Run:} \texttt{python3 receipts/RM\_C\_complex\_analysis/C2\_the\_two\_threes\_are\_not\_one\_tower.py}
+\item[\label{rcpt:C3_the_dial_deck_is_S3_not_D6}\texttt{C3\_the\_dial\_deck\_is\_S3\_not\_D6}]\hfill\textsf{[OK]}\\
+\textit{rem:galois-closure} \ (the dial-s deck over the 2M-plane is S3, so the covering is the Galois closure). 
+\emph{Computes:} the two 2M-preserving generators satisfy a\textasciicircum{}3=b\textasciicircum{}2=1, bab=a\textasciicircum{}-1; degree 6 counted from the fibre (13)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges L-203 probe C3
+\ \emph{Run:} \texttt{python3 receipts/RM\_C\_complex\_analysis/C3\_the\_dial\_deck\_is\_S3\_not\_D6.py}
+\item[\label{rcpt:C4_the_reality_grid_and_the_pencil}\texttt{C4\_the\_reality\_grid\_and\_the\_pencil}]\hfill\textsf{[OK]}\\
+\textit{sec:tour} \ (sinh-s reality set is a pencil not a grid; sinh\textasciicircum{}2-s two lowest lines are the bead-s branches). 
+\emph{Computes:} Im sin=cos x sinh y vs Im sinh=sin y cosh x; Im sinh\textasciicircum{}2 lines at k pi/2; the bead bound is the second (11)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges L-203 probe C4
+\ \emph{Run:} \texttt{python3 receipts/RM\_C\_complex\_analysis/C4\_the\_reality\_grid\_and\_the\_pencil.py}
+\item[\label{rcpt:G1_the_arrival_path_metric}\texttt{G1\_the\_arrival\_path\_metric}]\hfill\textsf{[(partial)]}\\
+\textit{cor:carter} \ (character distance from a claim to its supporting links (SUPERSEDED)). 
+\emph{Computes:} measures distance, which G2 showed is the wrong quantity; kept stating its own supersession
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges L-220; SUPERSEDED IN PART by G2
+\ \emph{Run:} \texttt{python3 receipts/RP\_34\_gr/G1\_the\_arrival\_path\_metric.py}
+\item[\label{rcpt:G2_the_blind_run}\texttt{G2\_the\_blind\_run}]\hfill\textsf{[OK]}\\
+\textit{sec:pd} \ (run blind, the distance metric is wrong about five of six proofless results). 
+\emph{Computes:} enumerates all 16 labelled results in P8/P9; seven justify in-body; cor:carter already repaired (8)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges L-220 correction
+\ \emph{Run:} \texttt{python3 receipts/RP\_34\_gr/G2\_the\_blind\_run.py}
+\item[\label{rcpt:G3_the_axis_names_two_orderings}\texttt{G3\_the\_axis\_names\_two\_orderings}]\hfill\textsf{[OK]}\\
+\textit{sec:range} \ (the structural axis is the horizon/symmetry one, defined three times in the same paper). 
+\emph{Computes:} asserts the three defining passages; I\textasciicircum{}3-27J\textasciicircum{}2=0 identically for SdS; Nariai at Lambda M\textasciicircum{}2=1/9 (13)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- discharges L-204 probe G3
+\ \emph{Run:} \texttt{python3 receipts/RP\_34\_gr/G3\_the\_axis\_names\_two\_orderings.py}
 \end{description}\endgroup
