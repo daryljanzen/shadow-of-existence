@@ -146,6 +146,46 @@ sources: [cowork, chat]
 
 
 
+### Revision r2438 — 2026-08-11 (main line). **`L-224` STRUCK AT A QUARTER ITS CLAIMED SIZE — the row's own measure was the fifth bad one, and this time the diagnostic that predicts them had already been written down.**
+
+**⚠⚠ WHAT HAPPENED.** *r2437 reported "P15: 5 of 19 sections named" and treated it as coverage.* ***It was a count of
+LABEL MENTIONS.*** *Checked by CONTENT before writing anything further:* **seven of the eight substantive sections
+were already covered in the station's prose** *— `sec:properframe` and `sec:flatlcdm` by item 1, `sec:what-crosses`
+by item 3 (the factorization), `sec:largescale` by item 5 (the low-$\ell$ edge).*
+⇒ ***THE GENUINE GAP WAS FOUR SECTIONS, NOT ELEVEN.***
+
+**⌗ AND WHAT SURVIVES INTACT IS THE FINDING ABOUT DATING, which mattered:** *the four genuinely absent sections
+include* ***exactly the three the live front runs through*** *— `sec:instrument`, `sec:refit-bound`,
+`sec:predictions` — plus `sec:envelope-consequence`, written here.* **The map was dated, not careless, and the paper
+it fell furthest behind is the one that moved most.**
+
+**⌗ `sec:envelope-consequence`, added:** *with the envelope derived rather than assumed, **every microphysical
+constant sits outside the integral**, so **the Thomson physics and the ionisation history cancel identically in the
+ratio and the whole difference is carried by $H(a)$**. Diffusion length **$10.8\%$ longer**; $r_s=146.4$ Mpc against
+$145.4$ **taken from the branch point, because there is no observable expansion below it**; $\ell_*=302.2$ against
+the measured ${\sim}301$; and the high-$\ell$ ratio $0.82$ at $\ell_D$, $0.65$ at $1.5\,\ell_D$ with no free
+parameter.* ⚠⚠ ***AND THE SECTION REFUSES ITS OWN CONCLUSION, which is what a node must carry:*** **"whether that is
+a tension is a separate question this paper does not settle"** *— because asserting exclusion would* ***"repeat, at
+one remove, the error of holding everything else fixed while varying one thing."***
+⌗ *And three sections are **deliberately not carried** — `sec:intro`, `sec:background`, `sec:conclusion`, with **zero
+results, receipts or equations between them**.* ***A station that names a paper's Discussion is padding, and padding
+is how a map stops being read.***
+
+**⛭⛭⛭ AND THE FIFTH INSTANCE IS THE ONE WORTH THE ENTRY, because the diagnostic did not stop it.** *`G1`'s distance ·
+the phrase test (7/7 false) · the quotation check (158 of 315 transliteration) · the coverage ratio · and* ***a
+label-mention count, committed at r2437 in the very breath of correcting the ratio.***
+⇒ **The r2425 diagnostic — "if the quantity's meaning changes with what the sentence is ABOUT, it is not a
+measurement" — is CORRECT and was INSUFFICIENT:** ***this line had it written down, had applied it four times, and
+violated it anyway.***
+⌗ ***SO THE RULE BECOMES PROCEDURAL RATHER THAN DIAGNOSTIC: when you replace a judgement with a count, SPOT-CHECK
+THE COUNT AGAINST THE JUDGEMENT — on a handful of cases, by hand — BEFORE REPORTING IT.*** *Here that was one command
+against the station's own prose and it cost nothing; this line acted on the number **twice** before running it
+**once**.*
+⚠ **And the tell was available and ignored:** *the station **READ dense** while the number said **thin**.*
+***When a measure and a reading disagree, the reading is the one that has met the material.***
+
+**Register: 217 rows, 173 struck. Gates: twenty-one, twenty rc=0.**
+
 ### Revision r2437 — 2026-08-11 (main line). **`L-224` WORKED — and the measure was corrected first, because a coverage ratio is the fourth quantity whose meaning depends on its subject.**
 
 **⌗⌗ THE HYPOTHESIS WAS TESTED AND REFUTED, WHICH IS WHY THE FINDING SURVIVED.** *r2435 flagged P15 on a

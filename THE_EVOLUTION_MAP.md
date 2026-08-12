@@ -1072,9 +1072,37 @@ since. These are the three the live front runs through, so their absence cost so
    carry the **qualified** form — routed to the fork as item 17 precisely because the unqualified wording survives in
    two later verdict passages.*
 
+9. **`sec:envelope-consequence` — THE DIFFUSION SIGNATURE, DISENTANGLED, AND THE ONE SECTION GENUINELY ABSENT FROM
+   THIS STATION.** *With the envelope derived rather than assumed, **every microphysical constant sits outside the
+   integral**: $1/k_D^2\propto\int\mathrm{d}a\,g(R)/(Hx_e)$, so **in the ratio the Thomson physics and the ionisation
+   history cancel identically and the whole difference is carried by $H(a)$**.* ⇒ *On the inherited datum the
+   radiation-free rate gives a diffusion length **$10.8\%$ longer**; the sound horizon — **taken from the branch
+   point, because there is no observable expansion below it** — returns $r_s=146.4$ Mpc against $145.4$, within
+   $0.7\%$; and $\ell_*=\pi D_M/r_s=302.2$ against the measured ${\sim}301$.*
+   ⌗ **The high-$\ell$ consequence follows with no free parameter:**
+   $C_\ell^{\rm CR}/C_\ell^{\Lambda\rm CDM}=\exp[-(\ell/\ell_D)^2(r^2-1)]$ *with $r=1.093$ — **0.82 at $\ell_D$,
+   0.65 at $1.5\,\ell_D$**.*
+   ⚠⚠ ***AND THE SECTION REFUSES ITS OWN CONCLUSION, WHICH IS THE PART A NODE MUST CARRY:*** **"Whether that is a
+   tension is a separate question this paper does not settle"** *— because a confrontation **refits** the
+   parameters, which is a likelihood analysis and not a closed form, and* ***"asserting exclusion from these numbers
+   would repeat, at one remove, the error of holding everything else fixed while varying one thing."***
+   ⇒ **What changed is the signature's STANDING, not its size:** *"it was a computed effect whose observable
+   consequence was entangled with an unbuilt transfer; **it is now a requirement of the construction**."*
+   ⌗ *And the section carries its own dating note: **the five figures were quoted at the retired
+   $z_{\rm onset}=6850$ until c54.155** and are now the values the cited receipts produce.*
+
+⌗⌗ **AND THE STATION'S REMAINING GAP, MEASURED BY CONTENT RATHER THAN BY LABEL — r2438.** *An earlier count said
+"5 of 19 sections named" and treated that as coverage.* ***It was a count of LABEL MENTIONS. Checked by content,
+seven of the eight substantive sections were already covered in this station's prose*** *— `sec:properframe` and
+`sec:flatlcdm` by item 1, `sec:what-crosses` by item 3 (the factorization), `sec:largescale` by item 5 (the low-$\ell$
+edge).* ⇒ **The genuine gap was `sec:instrument`, `sec:refit-bound`, `sec:predictions` and `sec:envelope-consequence`
+— four, all now written.**
+⚠ *And `sec:intro`, `sec:background` and `sec:conclusion` are **deliberately not carried**: **zero results, receipts
+or equations between them**.* ***A station that names a paper's Discussion is padding, and padding is how a map stops
+being read.***
+
 ⚠ **STILL NOT WRITTEN, and named so the gap is checkable rather than implied:** *`sec:properframe`, `sec:flatlcdm`,
-`sec:what-crosses`, `sec:envelope`, `sec:envelope-consequence`, `sec:largescale`, `sec:scope`, `sec:background`,
-`sec:intro`, `sec:discussion`, `sec:conclusion`.* ⌗ ***Eleven of the fourteen. `L-224` stays open, and the count is
+`sec:what-crosses`, `sec:envelope`, `sec:envelope-consequence`, `sec:largescale`, `sec:scope`.* ⌗ ***Superseded by the content check above: those are COVERED IN PROSE. `L-224` stays open, and the count is
 the measure — not a coverage ratio, which flagged the right paper for the wrong reason.***
 
 **Available to a node at P15:** the completed, data-confronted cosmology — the derivation, the dissolved tensions, the coherence/heights/amplitude/throat/transmission structure, and the low-ℓ edge. **Not yet:** the cosmogenesis synthesis and the light-element abundances *produced* (P16).

@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.184 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**13 open QUESTIONS · 31 open WORK rows · 1 HELD** *(172 struck of 217 registered).*
+**13 open QUESTIONS · 30 open WORK rows · 1 HELD** *(173 struck of 217 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -77,5 +77,4 @@ sources: [cowork]
 | **`L-211`** | `ENTRY_POINT_REGISTER` · the c54 closure record | REGISTERED r2397 — THE CLOSURE-ADJACENCY DEBT, which is the MECHANISM behind `L-210` rather than a second copy of it. When a gap closes, the corpus owes on the gaps in connected regions — the adjacent… |
 | **`L-218`** | `THE_HUB` · `SETUP_THE_REPO` · `PROTECTED_OPEN` · `THE_BASE_RATE` | REGISTERED r2415 — THE READER PACKAGE: the book in every reading format, plus an AI companion spun up from this corpus, in one repo. Daryl's idea, and the part that is not ordinary is not the formats.… |
 | **`L-220`** | `G1_the_arrival_path_metric` · `RP_34_GR_BASELINE` · `L-209` · `U1`/`ENTRY_POINT_REGISTER` | REGISTERED r2416 — THE ARRIVAL-PATH CLASS: the corpus's content is complete and its arrival paths are not. Three instances, three papers, three documents, and none of them a physics defect: `L-209` (r… |
-| **`L-224`** | `THE_EVOLUTION_MAP` P15/P16 stations · `L-223` | REGISTERED r2435 — THE MAP HAS A HOLE WHERE THE CORPUS MEETS DATA, and it is `ARC 16`'s largest single finding. Coverage measured per station against paper size: P11 and P12 at 0.21, P13 at 0.13, P14 … |
 

@@ -76,7 +76,7 @@ sources: [chat]
 | `THE_DIMENSION_DEEPENING_AUDIT.md` | STATE | What the four-dimensionality result owes the reach programme — every R-M and R-P bake re-read against it, with a verdict for each. Read BEFORE trusting any bake's constants as structural. | c54.163 | c54.163 | 21 |
 | `THE_DISSOLUTION_CENSUS.md` | STATE | Which standard problem does this dissolve, at what weight, and at what ontological cost? Read BEFORE CLAIMING A DISSOLUTION. | — | — | never |
 | `THE_EQUIVALENCE_STRUCTURES_CENSUS.md` | STATE | Which apparent TWO are ONE object read two ways? — the corpus-wide equivalence-structures census, the dual of the pry-apart. Read BEFORE claiming two things are distinct. ⚠ Its own comb is OWED: 'the comprehensive comb the corpus has NOT yet done'. | c54.163 | c54.163 | 21 |
-| `THE_EVOLUTION_MAP.md` | STATE | Working in paper N, what may I stand on and what may I not yet assume? Read BEFORE STANDING ON A RESULT. | c54.19 | c54.118 | 165 |
+| `THE_EVOLUTION_MAP.md` | STATE | Working in paper N, what may I stand on and what may I not yet assume? Read BEFORE STANDING ON A RESULT. | c54.19 | c54.155 | 165 |
 | `THE_FERMION_SECTOR_GEOMETRY.md` | STATE | the fermion sector read in the geometry | c54.163 | c54.163 | 21 |
 | `THE_MATHEMATICS_REACH.md` | STATE | The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. LIVE: stations Ⓕ, Ⓖ, Ⓗ are owed per THE_PLAN's standing order item ④; registered as L-203. | c54.163 | c54.163 | 21 |
 | `THE_OPEN_PROBLEMS_LEDGER.md` | STATE | The open-problems ledger by FAMILY — what each family is, what closed it or holds it open, and its register pointer. The fork writes here; this line absorbs it. | c54.181 | c54.181 | 3 |
