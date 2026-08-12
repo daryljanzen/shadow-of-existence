@@ -42,7 +42,7 @@ sources: [chat]
 | `ABSORPTION.md` | SOURCE | The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced. | — | c54.202 | 0 |
 | `THE_LIVE_ARC.md` | SOURCE | the lead register — the one live edge | — | c54.202 | 0 |
 | `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.202 | c54.202 | 0 |
-| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.201 | c54.201 | 1 |
+| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.202 | c54.202 | 0 |
 | `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.202 | 0 |
 | `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.202 | c54.202 | 0 |
 | `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.202 | c54.202 | 0 |

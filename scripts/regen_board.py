@@ -84,14 +84,14 @@ LEADS = {
    "STABILITY (no runaway) is the SEPARATE remainder**, routed to Friedrich and Andreasson\u2013Ringstr\u00f6m, "
    "Nariai the exception",
    ['L-165'], 3, 2),
- 'L-174': ("\u2714 **\u24f5's FREEDOM HALF IS ANSWERED r2529**: linear order closed at r2514, and cc54's "
-   "`L-801` splits the nonlinear remainder at P11's own seam \u2014 the **freedom** rests on the "
-   "**contracted Bianchi identity**, which is **off-shell and symmetry-free** (verified here on a two-wave "
-   "metric with **no Killing vector**: $\\nabla_\\mu G^\\mu{}_\\nu=0$ in all four components), while "
-   "P11's Gowdy-specific structures sharpen **stability**. \u21d2 **What remains is the STABILITY half** "
-   "\u2014 general, no-isometry, all-data \u2014 **open in a named, externally-bounded way** (Friedrich; "
-   "Andr\u00e9asson\u2013Ringstr\u00f6m; Nariai the non-generic exception)",
-   ['L-165','L-175'], 3, 3),
+ 'L-245': ("**does a general no-isometry leaf with $\\sigma^{TT}\\ne0$ evolve without runaway, for ALL "
+   "data?** \u2014 split out of `L-174` at r2530 because it was never what that row asked. The **freedom** "
+   "generalises (off-shell Bianchi, no Killing vector); P11's shear charge and positive reduced energy close the "
+   "runaway **for Gowdy**; and P11 routes the general case out **by name** (Friedrich; "
+   "Andr\u00e9asson\u2013Ringstr\u00f6m; Nariai the non-generic exception). \u21d2 **Open in a named, "
+   "externally-bounded way \u2014 and it is a LITERATURE question before it is a computation**",
+   ['L-165'], 2, 2),
+ 
  'L-207': ("\u24f6 the confined/branch-point exhibition \u2014 **gated on PO-6 and must not be opened without "
    "it** (\u24f5 discharged r2450)",
    ['L-165'], 1, 3),

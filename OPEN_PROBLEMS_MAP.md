@@ -517,13 +517,13 @@ job: The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of
 > ⌗ ***The cluster prose below is NOT regenerated, deliberately.*** *Notes like "two residues now converge here" are **findings**, not status, and the priority axis, the readiness sort and the runway exist nowhere else. **The map keeps what only it has; the register keeps what it is the source of.***
 > ⚠ *And the queued task was "the status column as a generated view."* ***There is no status column.*** *That was the file's `description:` field paraphrased — the fifth time in this audit a description has misdescribed its document. The build had to change to the one the file can actually take.*
 
-**32 folded codes — 29 struck, 3 live.**
+**32 folded codes — 30 struck, 2 live.**
 
-### Cluster A — the matter sector — 5 folded, **1 live**
+### Cluster A — the matter sector — 5 folded, **0 live**
 
 | map code | register | state | the register's verdict, first line |
 |---|---|---|---|
-| **A·1** | **L-174** | **OPEN · opened c54.166** | OPENED r2376+c54.166 — FOLDING A·1, WHICH THE MAP HAS CARRIED LIVE AND UNREGISTERED SINCE r565. OPEN_PROBLEMS_MAP cluster A item 1, 'why the cut bends' — a dynamics for t… |
+| **A·1** | ~~L-174~~ | ✔ struck | OPENED r2376+c54.166 — FOLDING A·1, WHICH THE MAP HAS CARRIED LIVE AND UNREGISTERED SINCE r565. OPEN_PROBLEMS_MAP cluster A item 1, 'why the cut bends' — a dynamics for t… |
 | **A·2** | ~~L-136~~ | ✔ struck | STRUCK c54.109 — THE ANSWER IS NO, AND THE OBSTRUCTION IS THE SUBSTRATE'S OWN SIGNATURE RATHER THAN A GAP IN THE CONSTRUCTION. A2 asks to generalize the cut past a symmet… |
 | **A·3** | ~~L-137~~ | ✔ struck | STRUCK c54.108 — THE ANSWER IS A COROLLARY IN P9's BODY, AND THE ITEM'S TWO FACTUAL CLAIMS ARE BOTH STALE. THE SWEEP READING DOES NOT ACQUIRE A SEPARATE NON-VACUUM FORM O… |
 | **A·4** | ~~L-138~~ | ✔ struck | STRUCK c54.113 — THE WORLDLINE HALF HAS A NEGATIVE ANSWER WITH A REASON, AND THE REASON IS WHAT MAKES THE FIELD HALF WORK. THERE IS NO WORLDLINE CROSSING TO COMPUTE. A co… |

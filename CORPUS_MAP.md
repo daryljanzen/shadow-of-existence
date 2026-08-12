@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2530 — 2026-08-11 (main line). **`L-174` STRUCK — ⓵ was discharged and this line was deferring in Daryl's name for the third time, having filed the rule against it and been corrected on it once already.**
+
+**⛔ THE FAILURE, PLAINLY.** *r2495 filed the rule: **"'that is Daryl's call' is legitimate only where a JUDGEMENT
+remains; where the mathematics determines the answer, deferring is not deference."** r2524 caught this line breaking
+it on the Higgs. **r2529 broke it again — and recorded it in `THE_WISDOM_LEDGER` as a judgement worth copying.***
+⇒ ***Filing a rule, being corrected on it, and then praising the same move in another node is not a lapse. It is the
+corpus's own guidance being written wrong.***
+
+**⌗ AND THE MATERIAL DECIDES.** *r2513 restated ⓵ precisely: **"not 'make the operator reach further' — exhibit the
+ORDINARY EVOLUTION of data with $\sigma^{TT}\ne0$, a GR calculation."***
+⇒ ***That is exhibited: closed form at linear order (r2514), and the nonlinear FREEDOM verified twice on two metrics
+with no Killing vector (cc54's `L-801`; r2529's `I10`). Nothing was left to judge.***
+⇒⇒ ***`L-174` STRUCK. A row opened at r2376, folding a map item live since **r565**, and carried for a hundred and
+fifty revisions as "the deepest question the construction opens onto."***
+
+**⌗⌗ AND STABILITY WAS NEVER WHAT ⓵ ASKED.** *It is a question the work **surfaced**, and it had been sitting inside
+a discharged row as a reason not to close it.* ⇒ ***Registered as `L-245` in its own right: does a general
+no-isometry leaf with $\sigma^{TT}\ne0$ evolve without runaway, for ALL data?***
+*Open in a **named, externally-bounded** way — the freedom generalises; P11's shear charge and positive reduced
+energy close the runaway **for Gowdy**; and P11 routes the general case out **by name** (Friedrich;
+Andréasson–Ringström; Nariai the non-generic exception).* ⌗ ***And it is a LITERATURE question before it is a
+computation***, which is a different kind of work from what `L-174` ever needed.
+
+**⇒ THE RULE, RESTATED SO IT CANNOT BE READ AS ADVICE ABOUT TONE:** ***a row stays open only while something in it
+remains UNDECIDED BY THE MATERIAL. A residue that is a different question gets its own row. Leaving it inside the
+first, under the orchestrator's name, is how a discharged question stays open for a hundred and fifty revisions.***
+
+⌗ *The `THE_WISDOM_LEDGER` scrap that praised the deferral is corrected in the same revision. And `L-241`'s ID was
+marked struck — **its text said struck and its ID did not**, the same defect as `L-239` at r2515.*
+
 ### Revision r2529 — 2026-08-11 (main line). **cc54's `L-801` MERGED — the nonlinear remainder SPLITS at P11's own seam, and the freedom half generalises.**
 
 **⌗ THE MOVE, AND IT IS THE RESULT.** *cc54 was handed "does the nonlinear evolution keep $\sigma^{TT}$ free?" and
