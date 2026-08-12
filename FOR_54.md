@@ -1137,6 +1137,30 @@ false**, so this one is stated as a question with no answer space attached.*
 
 ---
 
+## ⌗ 42 · P9's `cor:wall` CITATION COVERS THE METHOD, NOT THE CASE — added r2503
+
+**Where:** *`corpus/range_paper.tex`, `cor:wall`'s surrounding paragraph:* *"the radiative degrees of freedom beyond
+the wall … **are carried past it by the ordinary general-relativistic evolution the companion dynamics paper works
+out**~`\cite{JanzenDynamics}`."*
+
+**⌗ AND P11 IS THAT PAPER, AND WHAT IT WORKS OUT IS THE STRATUM *BEFORE* THE WALL.** *It says so itself: the
+polarized Gowdy–de Sitter model **"carries exactly two Killing vectors and so occupies the Type-I edge of the isotropy
+stratification — the last confined stratum before the wall."** And it carries **zero** uses of "beyond the wall" and
+**zero** of "no continuous isometry".*
+
+⇒ ***The citation is defensible on a careful reading — P11 works out ordinary GR evolution, and ordinary GR
+evolution is what carries the beyond-wall modes. But a reader takes it to cover the beyond-wall CASE, and what P11
+delivers is the METHOD on the confined one. The sentence does not say which.***
+
+**Suggested:** *one clause distinguishing them — e.g. "…by the ordinary general-relativistic evolution the companion
+dynamics paper works out **on the last confined stratum**", or a sentence saying the beyond-wall case itself is
+unworked.*
+⌗ *And the positive finding it came from is worth having in the paper too: **three of four strata ARE worked** — the
+symmetric sector in closed form, the spherically symmetric general case exhibited, and the confined inhomogeneous
+case explicit in P11. ***What is unbuilt is one stratum, not "the dynamics".***
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

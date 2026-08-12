@@ -121,11 +121,11 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-165`** | r2475 | ⓵ **the UV clause now has a DEGREE (quartic) and a shape (IR free, UV generic)** — what remains is **defining** the sum, not diagnosing it · ⓶ the clo |
 | **`L-221`** | r2476 | **the question is now an OPERATOR question r2476**: ***is there an operator on this structure whose kernel is the four colourless gradings?*** — and t |
 | **`L-218`** | r2478 | ✔ **② done r2478 — `COMPANION_SPEC.md`** · ① formats via pandoc in CI · ③ contribution, last |
-| **`L-174`** | r2480 | ⓵ **narrowed r2480 — the owed thing is now precise**: ***exhibit, BEYOND spherical symmetry, what P9 states at `cor:wall` and `L-207` ⓵ showed in one  |
 | **`L-217`** | r2482 | ✔ **the statement exists — `CR_AND_THE_HIGGS.md` §4** · what the row still owes is **§5's onward list**, and `F1` stays live: ***the relation breaks i |
 | **`L-204`** | r2483 | ✔ **the strike was made r2383 — this field was stale for 99 revisions, corrected r2483** · what remains is ***③④: P8/P9, GR field equations and the ex |
 | **`L-171`** | r2484 | P15 `sec:flatlcdm`; receipt `ROBUST_p1p2_scan`; `PO-7` |
 | **`L-230`** | r2490 | ⓵ **the instrument question is closed r2447** — no gate can read a quantifier · ⓶ the live route is **make `COMPUTES:` universal** (39 of 309 today),  |
+| **`L-174`** | r2503 | ⓵ **narrowed to ONE stratum r2503** — ***the exhibition for geometries with NO continuous isometry***; everything with $\ge1$ Killing vector is worked |
 
 *13 live rows carry a stated next step; the 13 longest-unworked are shown.*
 

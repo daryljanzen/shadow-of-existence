@@ -146,6 +146,44 @@ sources: [cowork, chat]
 
 
 
+### Revision r2503 — 2026-08-11 (main line). **`L-174` NARROWED TO ONE STRATUM, and `CLAIMS.md` + `check_claims.py` — the collision register the three-node arrangement has never had.**
+
+**⛭⛭⛭ ⓵ THE DYNAMICS IS STRATIFIED, AND THREE OF FOUR STRATA ARE WORKED.** *P9's `cor:wall` cites a **companion
+dynamics paper** for the beyond-wall evolution, and that paper is **P11, "Why the cut bends", in the corpus**.*
+
+| stratum | symmetry | status |
+|---|---|---|
+| the symmetric sector | maximal | ***CLOSED FORM*** — $d^2r/d\tilde\tau^2=-f'/2=rK_G$; **"the rate at which the symmetric cut's bend changes in time is the bend itself"** |
+| spherically symmetric, general | 3 KV | ***EXHIBITED r2450*** — LTB with $\Lambda$, arbitrary $m(r)$ |
+| inhomogeneous, confined | 2 KV | ***WORKED EXPLICITLY IN P11*** — polarized Gowdy–de Sitter; the TT mode's energy and momentum **are** the leaf's shear; the ADM equations **are** the constraints; **"the last confined stratum before the wall"** |
+| beyond the wall | ***none*** | ⛔ ***NOT WORKED*** — P11 carries **zero** "beyond the wall" and **zero** "no continuous isometry" |
+
+⇒⇒ ***SO THE UNBUILT THING IS NOT "THE GENERAL MATTER DYNAMICS". IT IS THE ONE STRATUM WITH NO CONTINUOUS ISOMETRY
+— everything carrying at least one Killing vector is done.***
+⌗ *And P11 settles the **wall's character** without evolving past it: a Type-N plane wave with a **non-degenerate
+metric** and **vanishing curvature invariants**, so it is **neither species**.*
+⚠ *Routed as item 42: **`cor:wall`'s citation covers the METHOD, not the CASE**, and the sentence does not say
+which.* ⌗ ***Fifth case in twenty revisions of the corpus being ahead of its own register*** *(`L-217`, `L-204`,
+station Ⓕ, `L-206`, this).*
+
+**⛭⛭⛭ ⓶ AND THE COLLISION REGISTER, which Daryl identified as the missing piece and the record supports three times
+over.**
+*· **r2434** — a union merge kept both sides of one 46,291-character register row differing only by a renumber,
+**duplicating `L-171` on adjacent rows**;*
+*· **c54.194** — the fork's merge duplicated **`L-500`–`L-506`, seven rows**, and it named the failure itself:
+**"exactly the c54.182/c54.184 failure I caused at r2434 and was told about, arriving from the other direction"**;*
+*· **r2497** — the fork's `gates.yml` had **silently dropped three view-checks this line had added**.*
+⇒ ***Every one is the same shape: two nodes edited one file with no way to know.***
+
+**`CLAIMS.md`** — *claim before you edit, release when you push; a row names **the file, the node, the revision, and
+one line on what you are doing to it**. Plus **the always-shared list** and how to touch each: **append-only, own ID
+band only, and NEVER take `gates.yml` wholesale**.*
+**`corpus/check_claims.py`** — *fails the turn on **uncommitted edits to a file another node holds** or **a file
+claimed twice**, and warns on a **stale claim**.* ✔ ***Verified against a seeded claim: exit 1, naming the file and
+the holder; restored, exit 0.*** *Wired into CI's gate loop; `THE_HUB` leads with it.*
+⚠ ***A claim is not a lock — nothing stops an edit. It is a DECLARATION, which is the only kind of thing this corpus
+can gate (`L-237`), and its whole value is that a collision becomes visible BEFORE the merge rather than after it.***
+
 ### Revision r2502 — 2026-08-11 (main line). **`L-206` STRUCK — the work landed at r2419 and the row went unread for eighty-two revisions, while this line ranked it the board's top lead.**
 
 **⌗⌗ P3's §1 `sec:ontology`, BEFORE the parameters, already contains the row's entire content:** ***"The construction

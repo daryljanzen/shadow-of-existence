@@ -6,6 +6,34 @@ job: How the programme lives in a git repository — branch discipline, the regi
 sources: [chat]
 ---
 
+# ⛔⛔⛔ BEFORE YOU EDIT ANYTHING: `CLAIMS.md` — added r2503
+
+***Three nodes work one repository and until r2503 nothing told any of them what another was editing.***
+
+```
+git pull --ff-only          # then add your rows to CLAIMS.md, commit, push
+…work…
+git pull --ff-only          # then remove your rows, and push them with the work
+```
+
+**⌷ CLAIM BEFORE YOU EDIT. RELEASE WHEN YOU PUSH.** *`corpus/check_claims.py` **fails the turn** if you have
+uncommitted edits to a file another node holds, or if a file is claimed twice.*
+**⌷ IF A FILE YOU WANT IS HELD:** *take something else, or ***write what you want into the holder's routed list***
+(`FOR_54.md` / `FOR_56.md`) rather than editing under them.*
+
+⚠ ***A claim is not a lock — nothing stops an edit.*** *It is a **declaration**, which is the only kind of thing this
+corpus can gate (`L-237`).* ***Its whole value is that a collision becomes visible BEFORE the merge rather than after
+it.***
+
+⌗ **AND THE EVIDENCE IS ON THE RECORD THREE TIMES, in both directions:** *r2434 duplicated `L-171` on adjacent rows
+via a union merge; c54.194 duplicated **`L-500`–`L-506`, seven rows**, and the fork named it "exactly the failure I
+caused at r2434, **arriving from the other direction**"; and r2497 found the fork's `gates.yml` had **silently
+dropped three view-checks this line had added**.* ⇒ ***All three are the same shape: two nodes edited one file with
+no way to know.***
+⌗ *`CLAIMS.md` also lists the **always-shared** files and how to touch them — **append-only, own band only, and never
+take `gates.yml` wholesale**.*
+
+
 # ⛭⛭⛭ READ `THE_METHOD.md` FIRST. THEN `BOARD.md`. — added r2500
 
 ***The programme is not being worked to a close. It is being worked to a state where the open areas are known inside

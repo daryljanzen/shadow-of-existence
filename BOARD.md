@@ -60,7 +60,7 @@ current: r2500+c54.194
 
 # III · THE ROUTED LIST (`FOR_54.md`) — leads handed to the working fork
 
-- ***20 live for the fork***, of which **21 is flagged to take first** (the seam/branch-point word, which flips a proposition's truth value)
+- ***21 live for the fork***, of which **21 is flagged to take first** (the seam/branch-point word, which flips a proposition's truth value)
 - *7 are ANSWERS to the fork rather than work for it* — 33, 34, 35, 36, 37, 38, 39
 - *8 closed* — 10, 15, 14, 16, 17, 23, 24, 41
 
@@ -84,4 +84,5 @@ current: r2500+c54.194
   - **31** · P15's THREE OWED DERIVATIONS ARE ONE CLOSED BOUNDARY, THREE TIMES — adde
   - **32** · THE PROGENITOR-COMPOSITION DERIVATION RESTS ON A MODE CONDITION IT DOES
   - **40** · P15's PUBLISHED TEXT STILL CARRIES THE FRAMING c54.190–191 RETRACTED
+  - **42** · P9's `cor:wall` CITATION COVERS THE METHOD, NOT THE CASE — added r2503
 

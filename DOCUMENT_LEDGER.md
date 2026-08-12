@@ -19,7 +19,7 @@ sources: [chat]
 | **VIEW** | 5 |
 | **STATE** | 46 |
 | **METHOD** | 26 |
-| **RECORD** | 76 |
+| **RECORD** | 77 |
 
 ## ⌗ DECLARED CLASSES
 
@@ -108,7 +108,7 @@ sources: [chat]
 | `THE_ARSENAL.md` | METHOD | (declared in frontmatter) | — | c54.191 |  |
 | `THE_CLOSURE_LEDGER.md` | METHOD | Where the closure self-check is DEFINED, with its four verdicts: OPENED · WORKED-SHUT · SURFACED · CODA-FIX. | — | c54.153 |  |
 | `THE_GEOMETRY_AND_THE_PHYSICS.md` | METHOD | The PEDAGOGICAL DISTILLATION of the geometry bake — the argument in order, in prose, every step an identity, a definition or a verified computation. The lens's first depth (THE_CODA §the lens: distillation → conceptual logic → formalised papers). | c54.11 | c54.11 |  |
-| `THE_HUB.md` | METHOD | How the programme lives in a git repository — branch discipline, the register's merge rule, what CI enforces and what it cannot. Read BEFORE pushing, and BEFORE assuming git has solved a problem it has not. | c54.181 | c54.181 |  |
+| `THE_HUB.md` | METHOD | How the programme lives in a git repository — branch discipline, the register's merge rule, what CI enforces and what it cannot. Read BEFORE pushing, and BEFORE assuming git has solved a problem it has not. | c54.181 | c54.194 |  |
 | `THE_OPERATING_MANUAL.md` | METHOD | rules / guards / canon | — | c54.28 |  |
 | `VISION_FIELD_GUIDE.md` | METHOD | rules / guards / canon | — | — |  |
 | `capstones/CODA_FIELD_NOTE.md` | METHOD | the why-layer — read at spin-up steps 8 and 8b | — | c54.15 |  |
@@ -156,6 +156,7 @@ sources: [chat]
 | `C40_EXTRACTION_r1107.md` | RECORD | frozen record | — | — |  |
 | `C40_HARVEST_r1064-r1087.md` | RECORD | frozen record | — | — |  |
 | `CAPSTONE_the-fog-lifting_transcript.md` | RECORD | frozen record | — | — |  |
+| `CLAIMS.md` | RECORD | (declared in frontmatter) | — | c54.194 |  |
 | `CLAUDE_CODE_WORK_ORDER.md` | RECORD | THE ITERATING WORK ORDER — for a Claude Code session that can run for hours. A ladder from mechanical to edge work, the discipline that makes unattended research safe, and the two ownership boundaries. Read with THE_HUB and NEXT.md. | — | — |  |
 | `CREDO_birth_transcript.md` | RECORD | frozen record | — | — |  |
 | `CREDO_from-c1_transcript.md` | RECORD | frozen record | — | — |  |
