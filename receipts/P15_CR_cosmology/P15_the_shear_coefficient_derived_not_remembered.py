@@ -58,6 +58,12 @@ the half it has is the half that removes power. **  *That is a specification for
 a caveat: the source terms need the hierarchy carried in the spectrum instrument, which is what
 front #2's remaining work is.*
 
+SETTINGS: reduced -- NK=4 vs production 900.  CANNOT CHECK AT PRODUCTION, and it does not apply:
+this file derives a COEFFICIENT from the tight-coupling limit of the photon hierarchy, which is
+an algebraic limit taken per mode.  ** NK sets how many modes are carried and the derivation is
+the same at each; four is enough to exhibit it and nine hundred would exhibit it nine hundred
+times. **
+
 rc=0 on success.  Run: python3 P15_the_shear_coefficient_derived_not_remembered.py  (numpy scipy)
 """
 import os

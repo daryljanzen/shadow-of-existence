@@ -53,6 +53,11 @@ phrase leaves open have been scanned.  *What has NOT been varied is the backgrou
 Z_START is solved so that pi D_M / r_s = 301.6 exactly, which is a target and not an output, and
 that is a separate item from the datum.*  ** Registered rather than resolved. **
 
+SETTINGS: reduced -- LMAXL=1000 vs production 3000.  AT PRODUCTION: the eighteen-reading
+robustness stands as run and the SPACING figure does not -- see c54.190.  ** What this file
+measures is the first-three-gap spacing under eighteen datum readings, and that is a real and
+stable quantity; it is not the acoustic spacing, and c54.190 corrects the name. **
+
 rc=0 on success.  Run: python3 P15_both_datum_freedoms_opened_and_the_spacing_still_holds.py
                         (numpy scipy; ~15 s)
 """
