@@ -2,7 +2,7 @@
 name: the-mathematics-reach
 kind: STATE
 current: r2488+c54.194
-job: The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. LIVE: stations Ⓕ, Ⓖ, Ⓗ are owed per THE_PLAN's standing order item ④; registered as L-203.
+job: The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. LIVE: stations Ⓖ and Ⓗ are owed, and Ⓒ is the live handoff; registered as L-203. ⛭ **Ⓕ IS WALKED — `F13` (node 55, verified r2442) settled it, and it is FOUR real forms of $\mathfrak{so}(6,\mathbb C)$, not two: $\mathfrak{su}(3)$ embeds in exactly ONE, the compact form. This frontmatter carried Ⓕ as owed for forty-eight revisions after its own ① block recorded the answer.**
 sources: [cowork]
 ---
 

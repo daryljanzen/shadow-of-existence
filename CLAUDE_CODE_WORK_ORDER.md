@@ -106,7 +106,6 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-206`** | r2380 | Daryl's call on whether P3 is reordered at all; if yes, the skeleton is written and the derivation of $w,u,3w$ as shadows is its spine ⏸ **HELD BY DAR |
 | **`L-210`** | r2402 | work the unmarked sites **one at a time and without rushing**, giving each a verdict marker; the dig is mechanical and re-runnable, **the verdict neve |
 | **`L-216`** | r2409 | Daryl runs it when at a computer or when the publish call lands; **then tell this line the URL (public) or hand it a short-lived token (private)** |
-| **`L-203`** | r2413 | ⌗⌗ **CORRECTED r2382 BY READING R-M AT SOURCE: THE FRONT IS Ⓒ, NOT Ⓕ.** *`THE_PLAN` lists what is **unrun** (Ⓕ Ⓖ Ⓗ); R-M records that **Ⓒ complex anal |
 | **`L-219`** | r2415 | each rung is Daryl's call and taken one at a time; **nothing below a rung starts before it** |
 | **`L-222`** | r2428 | Daryl invites the fork to the repo; **`THE_HUB`'s arrival section is what it reads first** |
 | **`L-150`** | r2433 | ⓵ **DONE r2433 — closed in the negative** · ⓶ route the disposition to 54 so p0's frontier item's datum half is restated as a **closed negative** rath |
@@ -117,6 +116,7 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-503`** | r2441 | done in the registering revision — three CAMB references, the model separation, and the reversal |
 | **`L-504`** | r2441 | done in the registering revision — five pins, each asserted to give a four-peak series |
 | **`L-505`** | r2441 | done in the registering revision — read off the production-depth pair c54.186 banked and which no revision since had read for its PEAK SERIES |
+| **`L-506`** | r2441 | done in the registering revision — two production-depth runs against c54.186's pair |
 
 *30 live rows carry a stated next step; the 14 longest-unworked are shown.*
 

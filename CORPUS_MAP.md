@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r2490 — 2026-08-11 (main line). **A FRONTMATTER CONTRADICTED ITS OWN BODY FOR FORTY-EIGHT REVISIONS — and the stale-field class is four instances, not the one r2482 reported.**
+
+**⌗⌗ `L-203`'s ROUTE, written r2413, read "Ⓒ first… then Ⓕ (representation theory, **TWO real forms** of
+$SO(6,\mathbb C)$)".** ⇒ ⛔ ***Both halves stale.*** *`THE_MATHEMATICS_REACH`'s **own ① block**, brought current at
+r2449, records:* **"$\mathfrak{su}(3)$ EMBEDS IN EXACTLY ONE REAL FORM of $\mathfrak{so}(6,\mathbb C)$ (`F13`, node
+55, verified r2442). FOUR real forms, not two"** *— with the dimension argument in full and the conclusion that
+**it tightens `PO-4` rather than loosening it**.*
+
+⇒ ***AND THAT DOCUMENT'S FRONTMATTER STILL SAID "LIVE: stations Ⓕ, Ⓖ, Ⓗ are owed." The answer was written INTO THE
+SAME FILE and the header was never touched — so `L-203`, quoting the header, told a node to go looking for two real
+forms.*** *Both corrected.*
+
+**⌗ THE CLASS IS NOW FOUR INSTANCES WITH FOUR DISTINCT CAUSES, and r2482's count (1 of 26) was wrong twice over:**
+*· **`L-217`** — work done elsewhere, field never updated; · **`L-204`** — the act performed one revision later,
+field never updated; · **`L-203`** — a route carrying a **quantity the corpus has since corrected**; · **`L-230`** —
+a ratio measured at r2454 (**39 of 309**) while the corpus grew to **357**.*
+⇒ ⛭ ***AND THE THIRD KIND IS WORSE THAN A STALE POINTER: a stale next-step field that names no number merely
+DELAYS; one that STATES a superseded number actively MISDIRECTS, because a node acting on it goes looking for
+something that is not there.***
+
+**⌗⌗ THE RULE:** ***when a finding lands in a document, correct that document's OWN HEADER in the same edit — a
+body and its frontmatter are two claims, and updating one is not updating the other.***
+*No gate sees this: **`check_currency` reads the marker, `check_grains` reads the lag, and neither compares a file's
+header to its body**.*
+
+⌗ *And the corrected `L-230` number is sharper than the original: **40 of 357 — the `COMPUTES:` convention's uptake
+is FLAT in absolute terms while the corpus grew by a sixth**.*
+⌗ *What survives on `L-203` is **Ⓒ, Ⓖ and Ⓗ — and Ⓒ's handoff is live and unwalked**: Q4's equianharmonic
+cross-ratio $e^{i\pi/3}$, $j=0$, complex multiplication by $\omega$, the corpus's own $\mathbb Z_3$ deck action.*
+
+**Register: 239 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2489 — 2026-08-11 (main line). **`check_currency` TRIAGED AGAIN — twenty-four stale, ONE a real landing, and it was the document whose own claim obliged it to track the front.**
 
 **⌗⌗ THE TRIAGE, by r2449's rule: a stale marker and a missed landing look identical from outside the file, so open
