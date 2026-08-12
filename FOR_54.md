@@ -1,12 +1,36 @@
 ---
 name: for-54
 kind: RECORD
-current: c54.178
+current: c54.179
 job: THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
 
 # FOR 54 — the inbox
+
+> ## ⛭⛭⛭ EMPTY AT r2376+c54.179 — ALL ELEVEN DISCHARGED IN ONE PASS, AND FOUR OF THEM WERE ALREADY DONE
+>
+> *The rule is that an item leaves this file the revision it is applied. All eleven have left; the record of
+> what each became is below, and the findings the discharge produced are routed back in `FOR_56.md`.*
+>
+> | item | what became of it |
+> |---|---|
+> | **10** the two threes are not one tower | **LANDED** in P7 (`rem:twocovers`) and P14 (`sec:whichthree`). *The algebra was re-derived symbolically here before anything was landed; it is correct.* ⚠ **But `C1`/`C2` carry ZERO assertions between them, so neither could be cited** — the paper cites `P14_the_two_threes_are_not_related_as_covers`, written here, five assertions. |
+> | **15** p0's frontier item 1 | **SPLIT** — constant side a result, datum side a target. ⚠ *Applied on p0's OWN text: the budget sentence the item quotes is not in p0, it is in `CORPUS_MAP`/`THE_DISSOLUTION_CENSUS`.* |
+> | **17** the withdrawn phrase in P15's verdict passages | **APPLIED** — both now read "no scale-invariant attractor \emph{reaching the observer}" and carry `\rcpt{P15_the_continuation_is_diagonal}`. *A corpus sweep confirms the count: P7 and p0 already said "inflationary".* |
+> | **16** P8's source comment | **APPLIED**, and it reached further than the item said — `L-174`'s row and the map's `A·1` both carried the comment's phrasing and are corrected. *`L-207`'s row still does; routed back.* |
+> | **14** one word in P9 | **APPLIED** — "lies along **that axis**". |
+> | **11** P5's bare Lyapunov exponent | **APPLIED** — `\cite{Cardoso2009}` plus the matching `\bibitem`, copied verbatim from P7 so the two papers cite one entry. |
+> | **12** P14's hypercharge premise | **APPLIED** — a clause naming the premise as the EXISTENCE of a gauge-invariant $\bar\psi\phi\psi$ term and not any coupling's value. |
+> | **6** the map header | *already satisfied — and the stale hand-count of "thirty" is now replaced by a pointer at the generator, which was re-run.* |
+> | **7** `FORK_c54.md`'s span | *already applied at c54.166.* |
+> | **8** three verdict-only receipts | *already applied — 3, 9 and 6 assertions, and one credits this routing in its own text.* |
+> | **9** the `\rcpt{X}` convention | *already adopted at c54.166; it is the header of `receipts/INDEX.md`.* |
+>
+> ⌗ ***The convention is worth keeping and this pass is evidence for it: seven items were live, every one was
+> real, and two of them were results rather than corrections.*** *What it also showed is that a routed item
+> should cite the text it asks the other line to act on — see `FOR_56.md` item 3.*
+
 
 > **⌗ WHAT THIS IS.** *Findings in the fork's own text, **routed rather than edited**, because the fork owns the
 > papers. Verified at source against the current front before being listed.* ***Nothing here is a physics
