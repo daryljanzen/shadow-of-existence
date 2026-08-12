@@ -1196,6 +1196,45 @@ calculation with a closed-form answer — **because the construction was never t
 
 ---
 
+## ⛭⛭⛭ 45 · P12 CITES `Teitelboim1973` FOR THE FORM AND NEVER FOR THE CONTENT — and the content lands on `PO-9` — added r2515
+
+*Daryl asked whether r2514's "the constraint is CONSERVED, not re-imposed" touches **the second-order-EFE reason for
+a vanishing covariant derivative**. It does, and **the corpus holds both halves and has never joined them.***
+
+**⌗ HALF ONE, already yours:** *P11 — "A first-class constrained system evolves consistently to all orders **by the
+contracted Bianchi identity**: there is no classical dynamical obstruction at any order."*
+**⌗ HALF TWO, also yours:** *P12 — the Dirac algebra **is not a Lie algebra**, closing with the inverse spatial
+metric, **a structure function rather than a constant**, hence a Lie **algebroid** — citing **`Teitelboim1973`**.*
+
+⛔ ***And measured: ZERO "Lovelock" across all 35 `.tex` files; zero "uniquely", "embeddab", "determines the" in
+P12.***
+
+**⌗ WHAT THAT CITATION SITS BESIDE (outside literature, verified by search and marked as outside):**
+*· **HKT (Ann. Phys. 96 (1976) 88): Einsteinian geometrodynamics is the ONLY (time-reversible) canonical
+representation of the generators of hypersurface deformations**, given $g_{ij}$ and $\pi^{ij}$ as the sole canonical
+variables;*
+*· **Teitelboim: the Dirac algebra IS the embeddability condition**;*
+*· ⛭⛭ **Teitelboim–Zanelli: LOVELOCK gravity's constraints close the SAME algebra**, and for $n>4$ there are
+Lovelock gravities other than GR.*
+⇒⇒ ***SO THE DIRAC ALGEBRA FORCES GR ONLY IN FOUR DIMENSIONS.***
+
+**⛭⛭⛭ AND THAT IS WHERE IT LANDS.** *The substrate is $\mathrm{dS}_5$; the dynamics lives on a **four-dimensional
+cut**; P12's algebroid is the constraint algebra **of that 4D leaf**.*
+⇒ ***THE FOUR-DIMENSIONALITY OF THE CUT IS WHAT MAKES THE FORCING AVAILABLE AT ALL. Had the leaf been five, the same
+brackets would not have singled out GR.***
+⌗ *And that is **different from `PO-9`'s guard** — "the cut is four and **says nothing about the substrate**", which
+is correct and is about the SUBSTRATE's dimension.* ⇒ ***This says the cut being four is DOING WORK: it is what makes
+the dynamics on the leaf FORCED rather than chosen.***
+
+**⌗ THE ROUTED SUGGESTION IS SMALL:** *P12 could cite `Teitelboim1973` **for its content as well as its form** — one
+clause noting that the algebra it identifies as an algebroid is the same algebra whose closure HKT show forces the
+ADM Hamiltonian, **in four dimensions**.*
+⚠ ***NOT claimed: that CR derives Lovelock, HKT or the field equations.*** *P9 says the construction leaves GR's
+dynamics unchanged; P12 calls its own claim "a recognition rather than an addition". **The lead is registered as a
+question (`L-240`), not as a result.***
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

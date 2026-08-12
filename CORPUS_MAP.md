@@ -146,6 +146,43 @@ sources: [cowork, chat]
 
 
 
+### Revision r2515 — 2026-08-11 (main line). **A LEAD FROM OUTSIDE THE CORPUS, THE FIRST — and the method had no place for one.**
+
+**⌗ DARYL'S QUESTION.** *Whether r2514's "the constraint is CONSERVED, not re-imposed" touches **the second-order-EFE
+reason for a vanishing covariant derivative**.* ⇒ ***It does, and the corpus holds both halves and has never joined
+them.***
+
+*· **P11 already states the all-orders version**: "A first-class constrained system evolves consistently to all
+orders **by the contracted Bianchi identity**."*
+*· **P12 holds the other half**: the Dirac algebra **is not a Lie algebra** — it closes with the inverse spatial
+metric, **a structure FUNCTION rather than a constant** — so it is a Lie **algebroid**; and it cites
+**`Teitelboim1973`** for the brackets.*
+⛔ ***But never for the uniqueness content, and the absence is MEASURED: zero "Lovelock" across all 35 `.tex` files;
+zero "uniquely", "embeddab", "determines the" in P12.***
+
+**⌗ OUTSIDE, MARKED AS OUTSIDE AND VERIFIED BY SEARCH:** *HKT prove **Einsteinian geometrodynamics is the ONLY
+canonical representation** of those deformations; Teitelboim reads the Dirac algebra as **the embeddability
+condition**; and **Teitelboim–Zanelli show LOVELOCK gravity closes the SAME algebra**, with Lovelock gravities other
+than GR existing for $n>4$.*
+⇒⇒ ***SO THE DIRAC ALGEBRA FORCES GR ONLY IN FOUR DIMENSIONS.***
+
+**⛭⛭⛭ AND THAT IS WHERE IT LANDS:** *the substrate is $\mathrm{dS}_5$, the dynamics lives on a **four-dimensional
+cut**, and P12's algebroid is that leaf's constraint algebra.*
+⇒ ***THE FOUR-DIMENSIONALITY OF THE CUT IS WHAT MAKES THE FORCING AVAILABLE AT ALL — different from `PO-9`'s guard
+("the cut is four and says nothing about the substrate"), which is about the SUBSTRATE. This says the cut being four
+is DOING WORK.*** *Registered as `L-240`, LIVE, informing `L-175`; routed as item 45.*
+
+**⌗⌗ AND THE WORKFLOW CHANGE, which is the durable part.** *`THE_METHOD` §I defined leads as "everything noticed
+while working something else" — **written for work INSIDE the corpus**. ⇒ **§V·b added: the outside literature is a
+third source**, with a stricter discipline because the material is unverified here: **verify by search never from
+memory; mark outside material AS outside; MEASURE the absence; state the lead as a QUESTION**.*
+⚠ *And the mirror hazard: ***an outside result that touches no vein is READING, not work***.
+⌗ ***And it came from Daryl asking in vocabulary the corpus does not use — so the orchestrator's half-formed question
+is a lead source too, and this line had no slot for that either.***
+
+⌗ *Also cleaned: `L-239`'s ID marked struck (its text said struck, the ID did not), and **`L-171` restored to the
+lead table with r2509's narrowing** after the c54.199 merge dropped it.*
+
 ### Revision r2514 — 2026-08-11 (main line). **`L-174` ⓵ EXHIBITED AT LINEAR ORDER — the stratum evolves by ordinary GR in closed form, and it is textbook GR on a de Sitter background.**
 
 **⌗ THE EXHIBITION.** *On the de Sitter leaf, $\ddot h+3H\dot h+(k^2/a^2)h=0$; in conformal time with $u=ah$,*

@@ -98,6 +98,35 @@ so that is visible rather than comfortable.*
 
 ---
 
+## V·b · THE THIRD SOURCE OF LEADS: THE OUTSIDE LITERATURE — added r2515
+
+*§I said leads are **"everything noticed while working something else"**. That was written for work **inside** the
+corpus, and it left out a source that has now produced one.*
+
+**⌷ A LEAD CAN COME FROM A RESULT THE CORPUS DOES NOT CITE — or cites for the wrong half.**
+*`L-240` is the first: P12 cites `Teitelboim1973` **for the form of the Dirac brackets** and never for the
+uniqueness theorem those brackets carry. **Zero "Lovelock" across all 35 `.tex` files.*** ⇒ ***The corpus held both
+halves of a connection and had never joined them, and nothing inside it could have noticed — because what was
+missing was outside.***
+
+**⌷ AND THE DISCIPLINE IS STRICTER, NOT LOOSER, BECAUSE THE MATERIAL IS UNVERIFIED HERE:**
+*· ***verify by search, never from memory*** — this corpus has two receipts that failed on quotations written from a
+memory of a read;*
+*· ***mark the outside material AS outside***, in its own numbered block, so a later reader can see which claims the
+corpus supports and which it does not;*
+*· ***MEASURE the absence*** — "the corpus does not say this" is a claim, and `grep` makes it one that can be
+checked;*
+*· ***state the lead as a QUESTION***, so it cannot be mistaken for a result the corpus has earned.*
+
+**⇒ AND THE TEST FOR WHETHER AN OUTSIDE RESULT IS A LEAD AT ALL is the same as for any other:** ***does it inform a
+vein?*** *`L-240` informs `PO-9` — and it does so by saying something the vein's own mapped half does not: that the
+cut being four is **doing work**, not merely being observed.*
+
+⚠ *And the standing hazard is the mirror of §I's: ***an outside result that touches no vein is reading, not work***
+*— and reading is how a session convinces itself it is excavating while every vein stands still.*
+
+---
+
 ## VI · THE LONG ARC — what this becomes, and why it is the same thing
 
 *When every lead anyone can think of has been worked and the veins are known inside and out, the programme does not

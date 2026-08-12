@@ -42,7 +42,7 @@ VEINS = {
    "the cut is four and **says nothing about the substrate**; a descent from $D>5$ must be **multi-step**; the "
    "construction is **single-step by design** and one-step-ness is governed by **Rule 2**, not taste",
    "**whether a second slicing could be non-arbitrary, its selection forced by the first** \u2014 and the substrate "
-   "stays bounded **below only**"),
+   "stays bounded **below only**; and \u26ed r2515 (`L-240`) **whether the CUT\u2019s four-ness carries the FORCING of the dynamics** \u2014 the Dirac algebra singles out GR only in four dimensions, so the leaf\u2019s four-ness may be doing work the corpus has never asked it to do"),
  'L-202': ("p0 item 4 \u00b7 WHAT THE SEAM CARRIES",
    "the phase is the **antilinear face $K$**; reality admits **exactly two values**; $K$ acts trivially on the "
    "reality set while **$R$ exchanges the branches**; off-real, $K$ **swaps the two wings of the lap** and "
@@ -54,6 +54,19 @@ VEINS = {
 # GROUNDED 0-3: how solid the footing is, INFORMS 0-3: how much a vein would learn). **
 # ** A lead with NO vein links is instrument work.  It is not counted as progress on the map. **
 LEADS = {
+ 'L-171': ("**PO-7** \u2014 whether the acoustic disagreement is real against the sky. \u26a0 The $0.62\\pi$ was "
+   "**withdrawn** (`L-508`, c54.195) because the phase spans 0.891 with the control inside \u2014 but \u26ed "
+   "r2509 **that span includes $\\phi=\\pi/4,\\pi/2$, at which the mode enters MOVING**. Across the two "
+   "ZERO-VELOCITY phases the band is **0.2069 against a 0.6152 disagreement**, and at $\\phi=\\pi$ the arm is "
+   "**still 0.408 from the control** \u2014 so over the admissible pair *the control is NOT inside*",
+   ['L-202'], 2, 3),
+ 'L-240': ("\u26ed **a LEAD from OUTSIDE literature, the first**: P12 cites `Teitelboim1973` for the Dirac "
+   "brackets' FORM and never for the uniqueness theorem they carry (**zero \u201cLovelock\u201d across 35 .tex "
+   "files**). ** HKT: Einsteinian geometrodynamics is the ONLY canonical representation of those deformations; "
+   "Teitelboim\u2013Zanelli: LOVELOCK gravity closes the SAME algebra, and for $n>4$ there are Lovelock gravities "
+   "other than GR. ** \u21d2 **the Dirac algebra forces GR only in FOUR dimensions**, so **the four-ness of the "
+   "CUT is what makes the dynamics forced** \u2014 which is not what `PO-9`'s guard says",
+   ['L-175'], 2, 3),
  'L-174': ("\u2714 **\u24f5 CLOSED AT LINEAR ORDER r2514**: data with $\\sigma^{TT}\\ne0$ on the de Sitter "
    "leaf evolves by ordinary GR in closed form, with the momentum constraint **conserved** and the count of "
    "**two** arriving from the evolution. **What remains: does the NONLINEAR evolution keep "

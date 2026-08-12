@@ -10,7 +10,7 @@ current: r2500+c54.194
 
 > ***Read `THE_METHOD.md` first.*** *The short form: **the VEINS are areas held open to be known inside and out — never crossed out. The LEADS are everything noticed that could inform one.** Work the top lead, gather what it turns up, re-order, repeat.*
 >
-> *18 live rows: **4 veins**, **12 leads**. 227 struck.*
+> *18 live rows: **4 veins**, **14 leads**. 228 struck.*
 
 # I · THE VEINS — held open, to be known inside and out
 
@@ -25,14 +25,14 @@ current: r2500+c54.194
 ## `L-175` · PO-9 · WHAT FIXES THE SUBSTRATE'S DIMENSION
 
 - **MAPPED** — the cut is four and **says nothing about the substrate**; a descent from $D>5$ must be **multi-step**; the construction is **single-step by design** and one-step-ness is governed by **Rule 2**, not taste
-- ⛔ **DARK** — **whether a second slicing could be non-arbitrary, its selection forced by the first** — and the substrate stays bounded **below only**
-- *5 live lead(s) inform this vein*
+- ⛔ **DARK** — **whether a second slicing could be non-arbitrary, its selection forced by the first** — and the substrate stays bounded **below only**; and ⛭ r2515 (`L-240`) **whether the CUT’s four-ness carries the FORCING of the dynamics** — the Dirac algebra singles out GR only in four dimensions, so the leaf’s four-ness may be doing work the corpus has never asked it to do
+- *6 live lead(s) inform this vein*
 
 ## `L-202` · p0 item 4 · WHAT THE SEAM CARRIES
 
 - **MAPPED** — the phase is the **antilinear face $K$**; reality admits **exactly two values**; $K$ acts trivially on the reality set while **$R$ exchanges the branches**; off-real, $K$ **swaps the two wings of the lap** and $R\circ K$ **closes charge conjugation**; $K$ **fixes the photon congruence**
 - ⛔ **DARK** — **whether a MASSIVE trajectory carries a phase** — the null ones are $K$'s fixed set
-- *3 live lead(s) inform this vein*
+- *4 live lead(s) inform this vein*
 
 ## `L-221` · PO-5 · WHAT MAY EXIST, AND WHY THESE
 
@@ -51,19 +51,21 @@ current: r2500+c54.194
 | **3** | **`L-511`** | `L-165` `L-175` | 3/3 | 2/3 | **two objects, one word**: Goldberg--Sachs governs the **optical** shear of a null congruence (2 real, an invariant); `I3`'s $\sigma_{ij}$ is the **ADM** shear of a leaf (5 real, foliation-bound). Schwarzschild is Type D in every slicing while its leaf shear is $0$ on static slices and $3M/r^3$ on Painlevé--Gullstrand ones — and the whole difference is longitudinal, so **both r2505 and `L-510` stand and neither answers the other** |
 | **4** | **`L-204`** | `L-165` `L-175` | 3/3 | 2/3 | R-P stations ③④ — P8/P9, GR field equations and the exact-solution catalogue |
 | **5** | **`L-508`** | `L-202` | 3/3 | 2/3 | **what the seam datum CARRIES, measured**: across four production-depth seam phases the acoustic phase spans 0.891 in $\phi/\pi$ and the peak heights 0.483–1.618, **the control's values inside both** — a bounded negative that charts the vein's perimeter (§IV) rather than closing anything |
-| **6** | **`L-210`** | `L-202` `L-221` `L-175` | 2/3 | 2/3 | the entry-point front — all 44 sites carry verdicts; **live leads are where a paper's own text points at an unexplored interior** |
-| **7** | **`L-217`** | `L-221` | 2/3 | 2/3 | the CR/Higgs relation is stated; **`F1` stays live — the relation breaks if the gauge group is ever promoted to forced** |
-| **8** | **`L-230`** | `L-165` `L-221` | 3/3 | 1/3 | the `COMPUTES:` convention — uptake **flat at 40 of 357** while the corpus grew a sixth; a receipt that declares what it computed is a receipt a vein can be excavated through |
-| **9** | **`L-509`** | `L-202` | 3/3 | 1/3 | P15 asserted a horizon property of the **branch point** at six sites where its own receipts say **seam**/**onset**, and the two invert — repaired; **and `check_loci`, built for exactly this defect, could not see the worst of them until this revision** (a proposition's receipt binding lives in its argument paragraph). Found by seeding, not by reading |
-| **10** | **`L-207`** | `L-165` | 1/3 | 3/3 | ⓶ the confined/branch-point exhibition — **gated on PO-6 and must not be opened without it** (⓵ discharged r2450) |
-| **11** | **`L-218`** | *— instrument work* | 3/3 | 0/3 | ⓵ the reader-package formats via pandoc in CI |
-| **12** | **`L-228`** | *— instrument work* | 3/3 | 0/3 | `check_loci` extended to the possessive and compound-noun forms node 52 declined to claim |
+| **6** | **`L-171`** | `L-202` | 2/3 | 3/3 | **PO-7** — whether the acoustic disagreement is real against the sky. ⚠ The $0.62\pi$ was **withdrawn** (`L-508`, c54.195) because the phase spans 0.891 with the control inside — but ⛭ r2509 **that span includes $\phi=\pi/4,\pi/2$, at which the mode enters MOVING**. Across the two ZERO-VELOCITY phases the band is **0.2069 against a 0.6152 disagreement**, and at $\phi=\pi$ the arm is **still 0.408 from the control** — so over the admissible pair *the control is NOT inside* |
+| **7** | **`L-240`** | `L-175` | 2/3 | 3/3 | ⛭ **a LEAD from OUTSIDE literature, the first**: P12 cites `Teitelboim1973` for the Dirac brackets' FORM and never for the uniqueness theorem they carry (**zero “Lovelock” across 35 .tex files**). ** HKT: Einsteinian geometrodynamics is the ONLY canonical representation of those deformations; Teitelboim–Zanelli: LOVELOCK gravity closes the SAME algebra, and for $n>4$ there are Lovelock gravities other than GR. ** ⇒ **the Dirac algebra forces GR only in FOUR dimensions**, so **the four-ness of the CUT is what makes the dynamics forced** — which is not what `PO-9`'s guard says |
+| **8** | **`L-210`** | `L-202` `L-221` `L-175` | 2/3 | 2/3 | the entry-point front — all 44 sites carry verdicts; **live leads are where a paper's own text points at an unexplored interior** |
+| **9** | **`L-217`** | `L-221` | 2/3 | 2/3 | the CR/Higgs relation is stated; **`F1` stays live — the relation breaks if the gauge group is ever promoted to forced** |
+| **10** | **`L-230`** | `L-165` `L-221` | 3/3 | 1/3 | the `COMPUTES:` convention — uptake **flat at 40 of 357** while the corpus grew a sixth; a receipt that declares what it computed is a receipt a vein can be excavated through |
+| **11** | **`L-509`** | `L-202` | 3/3 | 1/3 | P15 asserted a horizon property of the **branch point** at six sites where its own receipts say **seam**/**onset**, and the two invert — repaired; **and `check_loci`, built for exactly this defect, could not see the worst of them until this revision** (a proposition's receipt binding lives in its argument paragraph). Found by seeding, not by reading |
+| **12** | **`L-207`** | `L-165` | 1/3 | 3/3 | ⓶ the confined/branch-point exhibition — **gated on PO-6 and must not be opened without it** (⓵ discharged r2450) |
+| **13** | **`L-218`** | *— instrument work* | 3/3 | 0/3 | ⓵ the reader-package formats via pandoc in CI |
+| **14** | **`L-228`** | *— instrument work* | 3/3 | 0/3 | `check_loci` extended to the possessive and compound-noun forms node 52 declined to claim |
 
 > ⛭⛭ **TAKE `L-174` NEXT** — *highest grounded×informative, and it informs 2 vein(s).*
 
 # III · THE ROUTED LIST (`FOR_54.md`) — leads handed to the working fork
 
-- ***22 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
+- ***23 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
 - *7 are ANSWERS to the fork rather than work for it* — 33, 34, 35, 36, 37, 38, 39
 - *9 closed* — 10, 15, 14, 16, 17, 21, 23, 24, 41
 
@@ -89,9 +91,5 @@ current: r2500+c54.194
   - **42** · P9's `cor:wall` CITATION COVERS THE METHOD, NOT THE CASE — added r2503
   - **43** · YOUR c54.195 WITHDRAWAL IS TOO WIDE — the band across the ADMISSIBLE pha
   - **44** · THE UNWORKED STRATUM IS EXHIBITED AT LINEAR ORDER, AND IT IS TEXTBOOK GR
-
-# ⚠ UNSORTED — rows nobody has decided about
-
-- **`L-239`** — ***is this a vein, a lead, or done? Decide or strike it.***
-- **`L-171`** — ***is this a vein, a lead, or done? Decide or strike it.***
+  - **45** · P12 CITES `Teitelboim1973` FOR THE FORM AND NEVER FOR THE CONTENT — and
 
