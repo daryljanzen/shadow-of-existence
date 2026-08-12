@@ -178,7 +178,7 @@ own frontier is the author's call, which is why this is routed and not landed.**
 
 ## ⌗ THE STRUCTURAL ONES
 
-## ⌗ 6 · The map's header claim is stronger than the map
+## ✔✔ DISCHARGED (verified gone r2533 — the header phrase is gone from `OPEN_PROBLEMS_MAP`) — ⌗ 6 · The map's header claim is stronger than the map
 
 **Where:** `OPEN_PROBLEMS_MAP.md` header, the c54.90 fold banner.
 **Why it's worth a minute:** *the claim "every live item has been folded" is what makes item 5 above invisible —
@@ -196,7 +196,7 @@ Nothing in it is wrong; it simply does not say what span it covers, so it reads 
 **Suggested fix:** *one line at the head saying which span it narrates.* ***A frozen banner is a good account of
 its span and a bad account of the present, and the cheap fix is to name the span.***
 
-## ⌗ 8 · Three receipts print a verdict with nothing compared
+## ✔✔ DISCHARGED (verified gone r2533 — all three receipts now carry assertions) — ⌗ 8 · Three receipts print a verdict with nothing compared
 
 **Where:** `receipts/P05_groupoid/negation_outer_A2.py` · `receipts/P14_matter_sector_paper/P14_naming_a_derived_object.py` ·
 `receipts/P15_CR_cosmology/P15_verify_numeric.py`.
@@ -221,7 +221,7 @@ what makes a receipt gate mean something** rather than an opinion about style.
 
 ## ⌗ THE SMALL ONES — a word, a clause, a citation
 
-## ⌗ 11 · A one-line citation, found by the bake's own close — added r2413
+## ✔✔ DISCHARGED (verified gone r2533 — P5 now cites Cardoso for the Lyapunov object) — ⌗ 11 · A one-line citation, found by the bake's own close — added r2413
 
 **Where:** `corpus/groupoid_paper.tex` (P5), the sentence naming *"the vanishing of the surface gravity and of the
 photon orbit's **Lyapunov exponent** at that member"*.
@@ -232,7 +232,7 @@ bake form — and it is **the only issue in the whole corpus** on that check.*
 
 ---
 
-## ⌗ 12 · One clause worth adding to P14, found by station `6h` — added r2414
+## ✔✔ DISCHARGED (verified gone r2533 — P14 carries the representation-theoretic clause) — ⌗ 12 · One clause worth adding to P14, found by station `6h` — added r2414
 
 **Where:** `corpus/matter_sector_paper.tex`, `sec:correspondence`, the hypercharge derivation.
 **The situation:** *the hypercharges follow from the anomaly conditions **together with the existence of the Yukawa
@@ -626,7 +626,7 @@ basis change removing it), placing it one step beyond the polarized Gowdy–dS c
 
 ---
 
-## ⛭⛭ 27 · P15's RECEIPT LAYER CARRIES TWO PARAMETER SETS AND THE PAPER DRAWS ON BOTH — added r2443
+## ✔✔ DISCHARGED (verified gone r2533 — P15 no longer carries the two parameter sets) — ⛭⛭ 27 · P15's RECEIPT LAYER CARRIES TWO PARAMETER SETS AND THE PAPER DRAWS ON BOTH — added r2443
 
 **Verified here by reading the seven named receipts, not by trusting the table:**
 
@@ -716,7 +716,7 @@ add `COMPUTES:` headers to your receipts.***
 
 ---
 
-## ⛭⛭ 31 · P15's THREE OWED DERIVATIONS ARE ONE CLOSED BOUNDARY, THREE TIMES — added r2456
+## ✔✔ DISCHARGED (verified gone r2533 — the three-owed phrasing is gone from P15) — ⛭⛭ 31 · P15's THREE OWED DERIVATIONS ARE ONE CLOSED BOUNDARY, THREE TIMES — added r2456
 
 **Where:** `corpus/CR_cosmology.tex`, `sec:scope`: *"the **derivation** — as against the measurement — of $A_s$,
 $n_s$, **and the inherited datum** the composition is run on."*

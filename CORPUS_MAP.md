@@ -146,6 +146,29 @@ sources: [cowork, chat]
 
 
 
+### Revision r2533 — 2026-08-11 (main line). **THE QUEUE READ — six more items' defects were already gone, and the probes are now permanent.**
+
+**⌗ THE PASS.** *Eleven of the twenty-two "needs a read" items had checkable signatures. Tested against the current
+files:*
+*· ***GONE (6)*** — **6** (the header phrase is out of `OPEN_PROBLEMS_MAP`), **8** (all three receipts now carry
+assertions), **11** (P5 cites Cardoso for the Lyapunov object), **12** (P14 carries the representation-theoretic
+clause), **27** (P15 no longer carries two parameter sets), **31** (the three-owed phrasing is gone from P15);*
+*· ***STILL REAL (5)*** — **7**, **18**, **19**, **20**, **42**.*
+
+⇒ ***Six items had been sitting in a work queue after the work was done — and nobody could tell, because the queue
+had no way to check itself.***
+
+**✔ AND THE PROBES ARE FOLDED INTO `check_routed.py` RATHER THAN LEFT IN THIS REVISION.** *Twelve probes now, each
+beside its item number.* ⇒ ***So this pass never has to be repeated: the next node runs the gate and gets the answer,
+instead of re-reading twenty-two items to discover that six of them are stale.***
+
+**⌗ NET:** *45 items · **27 discharged** · **5 known-real defects** (7, 19, 20, 22, 48) · **13 needing a read**.*
+⇒ ***A 27-item unknown two revisions ago is now five named defects and a short list.***
+
+⚠ *And one methodological correction inside the pass: the first run printed **fixed note strings rather than
+measurements**, so items showed a verdict with a note that did not describe what was measured.* ⇒ ***A report whose
+notes are decoration is worse than no notes — it reads as evidence. Redone with the measured values printed.***
+
 ### Revision r2532 — 2026-08-11 (main line). **THE ROUTING QUEUE MADE READABLE — it had grown to 49 items with 27 unmarked, and it turns out to be mechanically checkable.**
 
 **⌗ THE MEASUREMENT.** *`FOR_54` reached **49 items, 18 marked discharged and 27 not** — and a spot check found

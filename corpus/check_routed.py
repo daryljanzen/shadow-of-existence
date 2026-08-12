@@ -98,7 +98,67 @@ def probe_45():
            'Teitelboim cited, Lovelock absent'
 
 
-PROBES = {22: probe_22, 29: probe_29, 40: probe_40, 45: probe_45, 46: probe_46, 48: probe_48}
+def _raw(f):
+    q = os.path.join(ROOT, f)
+    return open(q, encoding='utf-8', errors='replace').read() if os.path.exists(q) else None
+
+
+def probe_6():
+    """OPEN_PROBLEMS_MAP's header claims every live item has been folded."""
+    t = _raw('OPEN_PROBLEMS_MAP.md')
+    if t is None:
+        return None, 'file absent'
+    hit = 'every live item has been folded' in t
+    return hit, f'header phrase present: {hit}'
+
+
+def probe_7():
+    """FORK_c54.md narrates c54.1-c54.35 and reads as current."""
+    t = _raw('FORK_c54.md')
+    if t is None:
+        return False, 'FORK_c54.md absent -- moot by removal'
+    return ('c54.35' in t), 'narrative anchored at c54.35 with no span note'
+
+
+def probe_8():
+    """Three receipts print a verdict with nothing compared."""
+    paths = ('receipts/P05_groupoid/negation_outer_A2.py',
+             'receipts/P14_matter_sector_paper/P14_naming_a_derived_object.py',
+             'receipts/P15_CR_cosmology/P15_verify_numeric.py')
+    have = [p for p in paths if _raw(p) is not None]
+    if not have:
+        return None, 'none of the three receipts found'
+    bad = [os.path.basename(p) for p in have
+           if 'assert' not in _raw(p) and 'check(' not in _raw(p)]
+    return (len(bad) > 0), f'{len(have)}/3 present, {len(bad)} without assertions: {bad or "none"}'
+
+
+def probe_11():
+    """P5 names the Lyapunov object bare where P7 cites Cardoso."""
+    p5 = _raw('corpus/groupoid_paper.tex')
+    if p5 is None:
+        return None, 'P5 not found'
+    return ('Lyapunov' in p5 and 'Cardoso' not in p5), \
+           f'Lyapunov:{"Lyapunov" in p5} Cardoso:{"Cardoso" in p5}'
+
+
+def probe_19():
+    """P1's scope section contradicts its own abstract about r=0."""
+    p1 = body(os.path.join(ROOT, 'corpus', 'BH_causality_v2.tex'))
+    hit = 'curvature singularity at $r=0$' in p1
+    return hit, f'scope sentence present: {hit}'
+
+
+def probe_20():
+    """P7 conflates the Friedmann initial singularity with the degenerate Nariai member."""
+    p7 = body(os.path.join(ROOT, 'corpus', 'CR_framework.tex'))
+    hit = ('is the finite-curvature cosmogenesis branch point' in p7
+           and 'degenerate Nariai member' in p7)
+    return hit, f'the appositive is present: {hit}'
+
+
+PROBES = {6: probe_6, 7: probe_7, 8: probe_8, 11: probe_11, 19: probe_19, 20: probe_20,
+          22: probe_22, 29: probe_29, 40: probe_40, 45: probe_45, 46: probe_46, 48: probe_48}
 
 
 def main():

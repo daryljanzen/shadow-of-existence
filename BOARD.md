@@ -76,26 +76,20 @@ current: r2500+c54.194
 
 # III · THE ROUTED LIST (`FOR_54.md`) — leads handed to the working fork
 
-- ***23 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
+- ***17 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
 - *7 are ANSWERS to the fork rather than work for it* — 33, 34, 35, 36, 37, 38, 39
-- *15 closed* — 10, 15, 14, 16, 17, 21, 23, 24, 29, 40, 41, 43, 45, 46, 47
+- *21 closed* — 10, 15, 6, 8, 11, 12, 14, 16, 17, 21, 23, 24, 27, 29, 31, 40, 41, 43, 45, 46, 47
 
-  - **6** · The map's header claim is stronger than the map
   - **7** · `FORK_c54.md` narrates c54.1–c54.35 and reads as current
-  - **8** · Three receipts print a verdict with nothing compared
   - **9** · A convention worth having, if the fork wants it
-  - **11** · A one-line citation, found by the bake's own close — added r2413
-  - **12** · One clause worth adding to P14, found by station `6h` — added r2414
   - **18** · p0's FRONTIER ITEM 1, DATUM HALF: THE ANSWER IS THAT IT CANNOT BE DERIVE
   - **19** · P1 CONTRADICTS ITS OWN ABSTRACT ABOUT $r=0$, IN PUBLISHED TEXT — added r
   - **20** · P7 CONFLATES TWO LOCI IT ELSEWHERE SAYS MUST NEVER BE CONFLATED — added
   - **22** · P12's §weyl-a3 RENDERS AFTER THE BIBLIOGRAPHY — added r2440, and it is a
   - **25** · P13's `sec:face-status` CONCEDES A SYMMETRY THE GROUP THEORY DOES NOT HA
   - **26** · TWO ITEMS ROUTED AT THE FINDER'S WEIGHT, NOT INDEPENDENTLY VERIFIED HERE
-  - **27** · P15's RECEIPT LAYER CARRIES TWO PARAMETER SETS AND THE PAPER DRAWS ON BO
   - **28** · P16's HEADLINE ABUNDANCES CITE A RECEIPT'S REFERENCE COLUMN, NOT ITS COM
   - **30** · A CONVENTION WORTH HAVING, OFFERED NOT IMPOSED — the receipt's `COMPUTES
-  - **31** · P15's THREE OWED DERIVATIONS ARE ONE CLOSED BOUNDARY, THREE TIMES — adde
   - **32** · THE PROGENITOR-COMPOSITION DERIVATION RESTS ON A MODE CONDITION IT DOES
   - **42** · P9's `cor:wall` CITATION COVERS THE METHOD, NOT THE CASE — added r2503
   - **44** · THE UNWORKED STRATUM IS EXHIBITED AT LINEAR ORDER, AND IT IS TEXTBOOK GR
