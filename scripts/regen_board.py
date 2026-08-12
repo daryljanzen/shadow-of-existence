@@ -68,24 +68,6 @@ LEADS = {
    "other than GR. ** \u21d2 **the Dirac algebra forces GR only in FOUR dimensions**, so **the four-ness of the "
    "CUT is what makes the dynamics forced** \u2014 which is not what `PO-9`'s guard says. \u26ed **WORKED r2518**: $D=4$ is the **largest dimension in which Lovelock leaves exactly ONE dynamical term**, so the leaf\u2019s dynamics carries **no unfixed coefficient**. \u21d2 **The decision it turns on: is uniqueness of the leaf\u2019s dynamics a desideratum this programme holds?** CR takes GR as given either way",
    ['L-175'], 2, 3),
- 'L-801': ("\u26ed\u26ed **cc54 WORKED `L-174`'s NONLINEAR REMAINDER** (the run Daryl handed it): does the "
-   "nonlinear evolution keep $\\sigma^{TT}$ free? \u2014 and it SPLITS. **The FREEDOM (the count) is the "
-   "contracted Bianchi identity, an off-shell identity verified EXACTLY ($\\nabla_\\mu G^\\mu{}_\\nu=0$, all "
-   "orders in $h$) on the INHOMOGENEOUS leaf and preserved for NON-parallel two-wave data \u2014 no Killing "
-   "vector, so it covers the general case, not only P11's Gowdy model.** The $\\sigma^2$ back-reaction is a "
-   "positive $O(\\epsilon^2)$ SCALAR sourcing the energy sector, not a new TT constraint. \u21d2 **The "
-   "STABILITY (no runaway) is the SEPARATE remainder**, routed to Friedrich and Andreasson\u2013Ringstr\u00f6m, "
-   "Nariai the exception",
-   ['L-165'], 3, 2),
- 'L-802': ("\u26ed\u26ed **cc54 CLOSED `L-245`'s STABILITY BRACKET against the literature** \u2014 a $2\\times2$ "
-   "grid in SYMMETRY\u00d7DATA-SIZE with ONE open cell. **(general, small) COVERED** \u2014 Friedrich 1986 "
-   "(vacuum), Ringstr\u00f6m 2008 (scalar), Rodnianski\u2013Speck 2013 (fluid); **(symmetric, all) COVERED** "
-   "\u2014 Andr\u00e9asson\u2013Ringstr\u00f6m, Wald; **(general, ALL-data) OPEN** = the cosmic no-hair "
-   "CONJECTURE, general GR's problem not CR's. \u21d2 **And the cell CR needs \u2014 the perturbative "
-   "graviton, vacuum, small departures from the dS substrate \u2014 is Friedrich's, which P11 itself names "
-   "(\u201cexactly the perturbative regime of the propagating graviton\u201d).** Whether a large-data "
-   "beyond-wall regime is ever needed is a construction question, open and not settled here",
-   ['L-165'], 3, 2),
  'L-207': ("\u24f6 the confined/branch-point exhibition \u2014 **gated on PO-6 and must not be opened without "
    "it** (\u24f5 discharged r2450)",
    ['L-165'], 1, 3),

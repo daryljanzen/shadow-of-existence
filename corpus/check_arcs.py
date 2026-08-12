@@ -232,6 +232,51 @@ def _board_drift_gate():
     return 1
 
 
+# ** ---- ADDED r2542: THE CLOSURE-NEIGHBOUR REPORT ---- **
+# A row can be stale by pointing FORWARD at something already answered, not only by declaring itself
+# finished.  ** L-801 and L-802 both pointed at questions L-245 absorbed and closed at r2537 -- neither
+# said "done in the registering revision", so r2535's check could not see them, and both sat at #2 and
+# #3 on the board for five revisions. **
+#   ⇒ ** A gate for this would have to judge whether one prose next-step is answered by another row's
+#     prose finding.  That is the lint-pretending-to-judge-prose failure, and it is refused here. **
+#   ⇒ *** What IS mechanical, and would have caught it: when a row CLOSES, the live rows sharing its
+#       VEINS are exactly the ones whose next-steps may have just been answered.  L-245, L-801 and
+#       L-802 all fed L-165. ***  This REPORTS them.  It never fails.
+def check_closure_neighbours():
+    """For each vein, list the live leads beside the most recently closed row on it."""
+    import importlib.util as _ilu
+    import os as _os
+    import re as _re
+    _root = _os.path.abspath(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..'))
+    _gen = _os.path.join(_root, 'scripts', 'regen_board.py')
+    if not _os.path.exists(_gen):
+        return {}
+    _spec = _ilu.spec_from_file_location('_rb2', _gen)
+    _rb = _ilu.module_from_spec(_spec)
+    _spec.loader.exec_module(_rb)
+    by_vein = {}
+    for rid, entry in _rb.LEADS.items():
+        for v in (entry[1] or []):
+            by_vein.setdefault(v, []).append(rid)
+    live = set(_rb.live_rows())
+    return {v: sorted(r for r in rs if r in live) for v, rs in by_vein.items()}
+
+
+def _closure_neighbour_report():
+    groups = check_closure_neighbours()
+    if not groups:
+        return 0
+    print()
+    print('    ⌗ LIVE LEADS BY VEIN -- when one of these closes, ** read the others: their next-steps')
+    print('      are the ones its finding may just have answered. **')
+    for v, rs in sorted(groups.items()):
+        if rs:
+            print(f'        {v}: {", ".join(rs)}')
+    print('      (a report, never a failure -- deciding whether one prose next-step is answered by')
+    print('       another row\'s finding is a READ, and no script does it)')
+    return 0
+
+
 def main():
     consol = '\n'.join(read(os.path.join(ROOT, h)) for h in HOMES)
     arctext = read(ARC)
@@ -315,7 +360,7 @@ def main():
         print('  Every WORK row\'s state block is dated and within the window.')
     print()
     # ** the self-declared-done check, added r2535 -- see _selfdone_gate below. **
-    return _selfdone_gate() or _board_drift_gate()
+    return _selfdone_gate() or _board_drift_gate() or _closure_neighbour_report()
 
 
 if __name__ == '__main__':

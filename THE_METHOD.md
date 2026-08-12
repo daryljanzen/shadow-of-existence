@@ -110,6 +110,22 @@ stating.*
 ⇒ ***THE OBLIGATION: every withdrawal goes into that table in the revision that makes it. A retraction not written
 into the gate is one that lives only in prose — and prose is what the gate exists because of.***
 
+**⌗ AND WHEN A LEAD CLOSES, READ THE OTHERS ON ITS VEIN — added r2542.**
+
+*A row can be stale by **pointing forward at something already answered**, not only by declaring itself finished.*
+⇒ ⛔ ***`L-801` and `L-802` both pointed at questions `L-245` absorbed and closed at r2537. Neither said "done in
+the registering revision", so r2535's check could not see them — and both sat at #2 and #3 on the board for five
+revisions.***
+
+**⌗ AND A GATE FOR IT WOULD HAVE TO JUDGE WHETHER ONE PROSE NEXT-STEP IS ANSWERED BY ANOTHER ROW'S PROSE FINDING.**
+***That is the lint-pretending-to-judge-prose failure, and it is refused.***
+⇒ *What IS mechanical: **the live leads sharing a closed row's veins are exactly the ones whose next-steps may have
+just been answered** — `L-245`, `L-801` and `L-802` all fed `PO-6`. `check_arcs` now **reports** them, and never
+fails on them.*
+
+⇒ ***THE OBLIGATION: when you close a lead, read the others on its vein before ending the turn. The report tells you
+which; the reading is yours.***
+
 ---
 
 ## V·b · THE THIRD SOURCE OF LEADS: THE OUTSIDE LITERATURE — added r2515

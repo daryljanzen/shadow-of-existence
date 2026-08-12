@@ -146,6 +146,27 @@ sources: [cowork, chat]
 
 
 
+### Revision r2542 — 2026-08-11 (main line). **A ROW CAN BE STALE BY POINTING FORWARD — cc54's two rows sat at #2 and #3 aiming at a question already closed.**
+
+**⛔ THE DEFECT.** *`L-801`'s next step was **"the STABILITY remainder: does the no-runaway hold for ALL data on the
+general no-isometry leaf"**; `L-802`'s was **"is a strongly-nonlinear beyond-wall regime ever physically needed?"***
+⇒ ***`L-245` absorbed the first and r2537 settled the second from the corpus. Both rows had been answered — and
+neither said "done in the registering revision", so r2535's check could not see them.***
+⌗ *They sat at **#2 and #3 on the board for five revisions**, which is the top of what any node reads to choose
+work. Both struck; their findings stand.*
+
+**⌗ AND THE CLASS IS NAMED RATHER THAN GATED, DELIBERATELY.** ***A gate for this would have to judge whether one
+prose next-step is answered by another row's prose finding — the lint-pretending-to-judge-prose failure, and it is
+refused.***
+⇒ *What IS mechanical, and would have caught it: **the live leads sharing a closed row's veins are exactly the ones
+whose next-steps may just have been answered.** `L-245`, `L-801` and `L-802` all fed `PO-6`.*
+✔ *`check_arcs` now **reports** the live leads grouped by vein — a report, never a failure — and `THE_METHOD`
+carries the obligation: ***when you close a lead, read the others on its vein before ending the turn.***
+
+⌗ *Board: **four veins, eleven leads**. Three staleness classes are now instrumented — the stale FIELD (r2483), the
+row declaring itself DONE (r2535), the generated file with a hand-maintained SOURCE (r2541) — and the fourth, the
+row pointing FORWARD at an answered question, is **named with its mechanical proxy and its honest limit**.*
+
 ### Revision r2541 — 2026-08-11 (main line). **THE BOARD'S LEAD TEXTS HAD DRIFTED FOUR WAYS FROM THE REGISTER — corrected, and gated.**
 
 **⛔ THE DEFECT.** *`BOARD.md` is generated, but its lead prose lives in a **hand-maintained dict** inside
