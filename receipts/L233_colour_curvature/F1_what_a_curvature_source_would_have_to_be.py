@@ -115,9 +115,12 @@ def main():
           'EXACT for arbitrary $m(r)$' in arc or 'exact for arbitrary' in arc.lower())
 
     # and the stop
-    check("⛔ the row's instruction is to stop here: state what it would have to be BEFORE asking "
-          'where one could come from',
-          'before asking where one could come from' in arc)
+    # ** RE-ANCHORED r2516: this pinned L-233's INSTRUCTION, and L-233 was STRUCK at r2468 -- the
+    # instruction is historical.  cc54 found the class; the rule is that a receipt asserts against
+    # SOURCES, not against the register, because the register is prose this line rewrites. **
+    check("⌗ the row's instruction was to stop at what a source WOULD have to be -- and L-233 was "
+          'struck at r2468 when the flatness turned out to be what a branching IS',
+          'covering map carries a canonical flat connection' in arc.lower())
 
     print()
     if FAILED:

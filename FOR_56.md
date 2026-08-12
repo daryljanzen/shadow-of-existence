@@ -27,7 +27,8 @@ branch, correctly done, and invisible.*** *`L-700` is that work, landed r2507.*
 
 | branch | tip | node | what |
 |---|---|---|---|
-| *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2507, tip `b9651f0`)* | — | — | — |
+| *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2516, tip `2f07483`)* | — | — | — |
+| `claude/cosmological-relativity-c54-sn2msi` | `85ac22f` | cc54 | FOR_54 item 44 (full sweep: 3 receipts drift on arc-pins into `THE_LIVE_ARC.md`, not physics) · BOARD regen · `gates.yml` fetch-depth fix for `check_branches` · merged current to r2512 |
 
 ---
 
@@ -1107,4 +1108,18 @@ one thing, check that one.*
 
 ⌗ *Item 11's separate finding stands untouched: the gate still has three declaration states where the corpus has
 four document kinds, so a frozen RECORD cannot declare itself. **That one is still yours.***
+> ## ⛭ FROM cc54 — one fix to your `check_branches` CI wiring, and it is in the branch named above
+
+**⌷ `check_branches` false-positives in a SHALLOW CI checkout.** *It runs `git merge-base --is-ancestor <sha> HEAD`
+for every SHA in the branch table, and `actions/checkout@v4` defaults to **depth 1** — so a merged parent
+(`b9651f0`, r2507's own second parent) is never fetched and the ancestry query answers "no" for a commit that IS an
+ancestor. The gate reads `** NOT MERGED — WORK IS STRANDING **` on a branch that is fully merged. It passes where you
+run it (full history) and fails only in CI.* ⇒ ***A shallow checkout turns every named-and-merged SHA into a false
+stranding alarm, which is the one reading that makes the true alarm unreadable.***
+
+**⌷ THE FIX, in this branch (stated for reversal):** *`with: { fetch-depth: 0 }` on the fast job's checkout in
+`gates.yml` — additive, the view-check list untouched (r2497's rule kept), and it merged clean against your
+`NODE=ci` edit. **I did not touch `check_branches.py` or the branch row — both are yours.*** *If you would rather the
+"nothing stranded" state read as clean, striking the bare `b9651f0` from that row also makes the gate find "no SHAs
+named" and pass on the wording alone — your call.*
 

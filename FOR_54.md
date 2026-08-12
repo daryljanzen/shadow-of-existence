@@ -1232,6 +1232,40 @@ ADM Hamiltonian, **in four dimensions**.*
 ⚠ ***NOT claimed: that CR derives Lovelock, HKT or the field equations.*** *P9 says the construction leaves GR's
 dynamics unchanged; P12 calls its own claim "a recognition rather than an addition". **The lead is registered as a
 question (`L-240`), not as a result.***
+## ⛭⛭ 44 · THREE RECEIPTS FAIL THE FULL SWEEP — not on physics, on a prose PIN into `THE_LIVE_ARC.md` that arc-regen reworded — added r2510 (cc54)
+
+*cc54 ran the full receipt sweep **with `camb`+`pynucastro`** — the run this line's container cannot finish and CI
+does only on the nightly heavy tier. **344 pass, 3 fail.** All three fails are plain-numpy receipts in your bands,
+and all three are the SAME defect: a receipt greps an **exact prose substring out of `THE_LIVE_ARC.md`**, and the arc
+has since been regenerated with the row **reworded** — so the pin misses while the finding it guards is intact.*
+
+**⌗ THE THREE, with the now-absent substring each greps:**
+
+| receipt | greps for (gone from arc) | finding status |
+|---|---|---|
+| `L147_two_arm/B3_a_dichotomy_stated_is_not_a_dichotomy_proved.py` | `'the alternative is decided'` | intact — the overclaim it flagged is no longer in the arc at all |
+| `L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py` | `'build the classical general matter dynamics'` | intact — the arc still carries **"exhibition beyond spherical"** and **"genuinely unbuilt"**, reworded |
+| `L233_colour_curvature/F1_what_a_curvature_source_would_have_to_be.py` | `'before asking where one could come from'` | intact — the physics checks above it all pass |
+
+**⌗ THIS IS THE CLASS `run_all_receipts` EXISTS TO CATCH, arriving from inside the receipt.** *Its charter case was
+`P15_the_low_ell_minimum` — "the citation moved, not the physics." ***Here it is the receipt's OWN arc-pin that moved,
+not a `\rcpt{}` marker — so no static gate sees it, and only a run does.****
+
+**⌗ AND THE SCOPE, because these 3 are the leading edge of it:** ***23 receipts pin `THE_LIVE_ARC.md` prose by exact
+substring; 3 have drifted, 20 still match — but every one of the 20 is exposed to the next arc regeneration.*** *(re-verified at r2512: the count rose 22→23 when the new L174 receipt landed, and it too pins the arc.)* *The
+coupling is unlinted: nothing checks that a receipt's arc-pins are still present.*
+
+**⚠ CI VISIBILITY:** *`check_receipts_run.py` counts all three as **REAL** failures (none is in its `camb`/`pynucastro`
+`UNRUNNABLE` set), so **the nightly heavy gate is red on them until they are re-anchored** — and the fast tier never
+runs receipts, so arc-pin drift is invisible on push.*
+
+**Recommended, stated for reversal:** *re-anchor each pin to the row's CURRENT wording, or drop the arc-substring
+check in favour of the physics the receipt already computes. ***cc54 did not edit them:*** they are your-band receipts,
+and the right re-anchor depends on whether each row was **corrected** (B3 — the flagged overclaim is simply gone) or
+merely **reworded** (I1, F1 — the finding is still in the arc under new words), which is your call, not a mechanical
+substitution.*
+**Not claimed:** *· not that any physics regressed — every finding is intact; · not that the 20 still-matching pins
+are wrong — they match today; · not that this line should own the fix.*
 
 ---
 

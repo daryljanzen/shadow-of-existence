@@ -54,7 +54,7 @@ sources: [chat]
 >
 > *Cleared at r2462 for c54.186 and kept current since. A revision neither absorbed nor declared in flight still FAILS, so the gate keeps its teeth.*
 
-IN-FLIGHT: c54.200 c54.201
+IN-FLIGHT: (none — c54.201 and cc54 both absorbed at r2516)
 
 | fork revision | absorbed at | date |
 |---|---|---|
@@ -81,6 +81,10 @@ IN-FLIGHT: c54.200 c54.201
 | c54.196 | r2506 | 2026-08-11 | *same bundle; a band opened for a fourth node, 57* |
 | c54.197 | r2506 | 2026-08-11 | *same bundle; routed item 21 worked — six sites named the wrong locus* |
 | c54.198 | r2510 | 2026-08-11 | ⛭⛭ *by git bundle; **the unworked stratum's free shear is TWO, not five** — and the constraint was in this line's own receipt* |
+| c54.199 | r2512 | 2026-08-11 | *by git bundle; **two objects one word** — the optical shear is not the ADM shear* |
+| c54.200 | r2516 | 2026-08-11 | *by git bundle; item 43 worked in — the acoustic phase moves a third over the admissible phases* |
+| c54.201 | r2516 | 2026-08-11 | ⛭ *same bundle; **both r2512 holes gated**, incl. `check_conflict_markers` — a marker in a `.md` no compiler reads* |
+| cc54 | r2516 | 2026-08-11 | ⛭⛭ **by BRANCH, named in `FOR_56` as the mechanism asks — the arc-pin coupling found by a full run** |
 
 ## What each absorption cost, so the next one is planned rather than discovered
 

@@ -121,8 +121,9 @@ def main():
     check("B1's argument stands and is credited by the fork: two arms at equal l_A with first "
           'peaks 21.8% apart rules out l_1 = c*l_A',
           '21.8%' in arc or '0.7300' in arc)
-    check("but the row's disposition said 'the alternative is decided', which did not follow",
-          'the alternative is decided' in arc)
+    check("⛔ and the row's disposition overclaimed -- CORRECTED at r2470, so the arc now carries the "
+          'correction rather than the error, which is why this pins the CORRECTION',
+          'ruling out one horn' in arc.lower() or 'seam datum' in arc.lower())
 
     print()
     if FAILED:

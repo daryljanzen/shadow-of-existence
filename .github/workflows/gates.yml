@@ -17,7 +17,12 @@ jobs:
     name: fast — registers, views, IDs
     runs-on: ubuntu-latest
     steps:
+      # ** fetch-depth: 0 -- check_branches.py runs `git merge-base --is-ancestor <sha> HEAD`
+      #    for every SHA named in FOR_56.md, and the default depth-1 checkout cannot reach a
+      #    merged parent, so it false-positives "NOT MERGED" on a commit that IS an ancestor
+      #    (b9651f0, r2507's own merge parent). Full history makes the ancestry check truthful. **
       - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
       - run: pip install numpy scipy sympy mpmath

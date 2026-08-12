@@ -78,8 +78,9 @@ def main():
                                    encoding='utf-8', errors='replace').read())
 
     # the row and its age
-    check('L-174 is on the board with its next step "build the classical general matter dynamics"',
-          'build the classical general matter dynamics' in arc)
+    check('L-174 asks for the classical general matter dynamics, and the SOURCE claim this receipt '
+          'rests on is P9\'s rather than the register\'s: the wall hands off to ordinary evolution',
+          'the radiative sector beyond it is reached by ordinary evolution of the leaf' in p9)
     check('and it folds the map\'s A-1, carried live and unregistered since r565',
           'unregistered since r565' in arc.lower() or 'UNREGISTERED SINCE r565' in arc)
 
@@ -124,9 +125,12 @@ def main():
           'corrected at c54.179' in arc or 'is corrected at c54.179' in arc)
 
     # and what stays open
-    check('⛔ and (1) is NOT discharged: the exhibition beyond spherical symmetry is genuinely '
-          'unbuilt and nothing here builds it',
-          'build the classical general matter dynamics' in arc)
+    # ** SUPERSEDED r2516: this check asserted (1) was unbuilt.  r2514 EXHIBITED it at linear order.
+    # The re-anchor is not to new wording -- the CLAIM changed.  What I1 established stands: P9 STATES
+    # the general case and L-207 exhibited it in the spherically symmetric class. **
+    check('⌗ what THIS receipt established stands: P9 STATES the general case at the wall, and it is '
+          'a statement rather than an exhibition',
+          'the radiative sector beyond it is reached by ordinary evolution of the leaf' in p9)
 
     print()
     if FAILED:
