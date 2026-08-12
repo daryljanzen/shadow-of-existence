@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2508 — 2026-08-11 (main line). **THE BAND ALLOCATION AT r2507 WAS WRONG — cc54 and "57" are one node, and this line gave each of them a band.**
+
+**⛔ WHAT HAPPENED.** *r2507 registered cc54's item-38 measurement as **`L-700`** and wrote a hub table allocating
+**cc54 `L-700`–`L-799`** and **"57" `L-800`–`L-899`**.*
+⇒ ***`check_id_bands` reserves `L-500`–`L-799` for 54 and opened `L-800`–`L-899` at c54.196 for "THE CLAUDE CODE NODE
+(57)" — which IS cc54.*** *So the row landed **inside 54's band**, and* ***the gate could not catch it because 700 is
+legally 54's.*** *Moved to **`L-800`**; the hub table corrected to one node under two names.*
+
+**⌗ AND THE CAUSE WAS ALREADY WRITTEN DOWN IN THE FILE THIS LINE FAILED TO READ.** *`check_id_bands`' own comment:*
+***"the name 57 is Daryl's, offered because *new 54* and *54* are the same string to every tool that reads this
+file."***
+⇒ ***That comment anticipated a TOOL confusing two names. What happened is that a NODE did — this line carried
+"cc54" and "57" as two collaborators and gave each a band, one revision after building `CLAIMS.md` against exactly
+this class.***
+
+**⌗ THE RULE:** ***before allocating in a namespace, list its existing reservations and match every one to a node by
+IDENTITY, not by name. A band table is a claim about WHO EXISTS, and two labels for one party is the failure it cannot
+express.***
+
+⚠ **AND WHAT DID NOT SAVE IT IS WORTH RECORDING:** *`check_id_bands` **passed** — the allocation was legal for the
+band it landed in. **`check_burndown` caught it only as a side-effect**: 190 phantom "assigned but never registered"
+gaps between `L-510` and `L-699`, because a row at 700 declares 54's band open to its top.*
+⇒ ***A gate that checks legality cannot check ownership, and the failure surfaced as a spurious 190-item loss report
+rather than as itself.*** ✔ *After the move: **242 rows, 0 gaps, 0 duplicates**, both gates green.*
+
 ### Revision r2507 — 2026-08-11 (main line). **cc54's BRANCH MERGED — the same measurement made twice by two nodes on two instrument paths, and the mechanism that let it strand twice is now gated.**
 
 **⛭⛭⛭ THE MEASUREMENT, TWICE.** *cc54 ran routed item 38 independently at production depth and filed

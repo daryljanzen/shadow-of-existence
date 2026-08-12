@@ -117,7 +117,7 @@ sources: [chat]
 | `capstones/Still_Collapsing_portrait_v1.0.md` | METHOD | the why-layer — read at spin-up steps 8 and 8b | — | — |  |
 | `capstones/THE_CODA.md` | METHOD | the why-layer — read at spin-up steps 8 and 8b | — | — |  |
 | `capstones/THE_INTERFERENCE_ENGINE.md` | METHOD | the why-layer — read at spin-up steps 8 and 8b | — | — |  |
-| `capstones/THE_WISDOM_LEDGER.md` | METHOD | Is the scrap in front of me still live, and what would retire it? Read AT THE MOMENT OF USE. The only one of the six about the NODE rather than the corpus. | — | c54.190 |  |
+| `capstones/THE_WISDOM_LEDGER.md` | METHOD | Is the scrap in front of me still live, and what would retire it? Read AT THE MOMENT OF USE. The only one of the six about the NODE rather than the corpus. | — | c54.196 |  |
 | `BUNDLE_README.md` | RECORD | frozen record | — | — |  |
 | `BUNDLE_r1062.md` | RECORD | frozen record | — | — |  |
 | `BUNDLE_r1063.md` | RECORD | frozen record | — | — |  |

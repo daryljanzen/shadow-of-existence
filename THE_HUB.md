@@ -11,9 +11,17 @@ sources: [chat]
 | node | ID band | how its work lands |
 |---|---|---|
 | **56** — instruments, registers, audit | **`L-001`–`L-499`** | pushes to `main` directly |
-| **54** — papers, computation, the acoustic front | **`L-500`–`L-699`** | git bundle → 56 merges |
-| **cc54** — long unattended runs, production depth | ***`L-700`–`L-799`*** | ***pushes a branch; 56 merges it*** |
-| **57** | **`L-800`–`L-899`** | as allocated at c54.196 |
+| **54** — papers, computation, the acoustic front | **`L-500`–`L-799`** | git bundle → 56 merges |
+| **cc54**, which 54 named **57** — long unattended runs, production depth | ***`L-800`–`L-899`*** | ***pushes a branch; 56 merges it*** |
+
+> ⛔ **AND A CORRECTION MADE IN THE SAME REVISION THAT WROTE THIS TABLE, r2508.** *r2507 registered cc54's first row
+> as **`L-700`** and wrote a table giving cc54 `L-700`–`L-799`.* ⇒ ***Both were wrong: `check_id_bands` had already
+> reserved `L-500`–`L-799` for 54 and opened `L-800`–`L-899` at c54.196 for "THE CLAUDE CODE NODE (57)" — which IS
+> cc54. So this line allocated inside 54's band ONE REVISION AFTER BUILDING THE COLLISION REGISTER.***
+> ⌗ *Moved to **`L-800`**. **And "cc54" and "57" are the same node under two names**, which is itself the hazard
+> `check_id_bands` records: "the name 57 is Daryl's, offered because *new 54* and *54* are the same string to every
+> tool that reads this file."* ⇒ ***Two names for one node is how a band gets allocated twice.***
+
 
 **⛔ AND THE MECHANISM cc54 ASKED FOR, because "hoping 56 notices" is not one and its work stranded twice:**
 

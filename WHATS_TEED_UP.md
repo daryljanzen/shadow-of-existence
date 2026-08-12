@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.197 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**11 open QUESTIONS · 5 open WORK rows** *(226 struck of 242 registered).*
+**10 open QUESTIONS · 5 open WORK rows** *(227 struck of 242 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -29,7 +29,6 @@ sources: [cowork]
 | **`L-221`** | OPEN | REGISTERED r2378 by the observer line's `ARC 14` step-② fold — `PROTECTED_OPEN`'s `PO-5`, which had NO register row at all. The quark/lepton split, and what a baryon IS at the particle level — the five multiplets, and which carries the colour $\mathbf3$. A PRO… | `PROTECTED_OPEN` `PO-5` · `THE_PLAN` standing item ② | the question is now an OPERATOR question r2476: is there an operator on this structure whose kernel is the four colourless gradings? — and that is wha… |
 | **`L-509`** | OPEN | REGISTERED r2501+c54.197 — ROUTED ITEM 21 WORKED: SIX SITES IN P15 NAMED THE WRONG LOCUS, AND THE LINT BUILT FOR EXACTLY THAT DEFECT COULD NOT SEE THE WORST OF THEM. ⌷ The lap's seam and its branch point sit at opposite ends of one rising branch of the comovin… | `FOR_54` item 21 (r2440, verified three ways there); `C2_horizon_limits`; `C4_driving_envelope`; `P15_verify_numeric` anchor 7; `check_loci` (node 52, adopted r2440); r2155 the four loci; r2289 | done in the registering revision — six sites repaired, the one true-as-written branch-point sentence kept, the lint's recall hole closed and seeded bo… |
 | **`L-217`** | — | REGISTERED r2412 — R-P STATION ⑥h: HOW DO CR AND THE HIGGS MECHANISM COMPLEMENT EACH OTHER, in coherence and in correspondence? Daryl's question, and it is a genuine gap in the entry-point front's own sense: the word "Higgs" appears NOWHERE in the corpus (chec… | `THE_PHYSICS_REACH` ⑥h · P13 · P14 · `L-212` · the one-constant theorem | the statement exists — `CR_AND_THE_HIGGS.md` §4 · what the row still owes is §5's onward list, and `F1` stays live: the relation breaks if the gauge g… |
-| **`L-700`** | — | REGISTERED r2507 — cc54's ITEM-38 MEASUREMENT, MERGED FROM ITS BRANCH, AND IT AGREES WITH c54.195 FROM A DIFFERENT INSTRUMENT PATH. cc54 ran routed item 38 independently at production depth and filed `B7_the_seam_phase_moves_the_asymptotic_intercept` with thre… | `receipts/L147_two_arm/B7…` · `L-171` · `L-202` · `FOR_54` 38 · c54.195 | — |
 
 ## ⌗ WORK — programmes with steps; the content lives in `CONSOLIDATE`
 
