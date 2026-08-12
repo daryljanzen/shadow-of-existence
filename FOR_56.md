@@ -6,6 +6,31 @@ job: THE RETURN INBOX — what the working fork has found in the observer line's
 sources: [chat]
 ---
 
+## ⛭⛭⛭ STANDING OBLIGATION FOR 56 — ADDED r2507, and it exists because work stranded twice
+
+**⌷ EVERY SESSION, BEFORE WORKING ANY LEAD:**
+
+```
+git fetch origin 'refs/heads/claude/*:refs/remotes/origin/claude/*'
+git merge --no-commit <each branch named below>
+# run every receipt it brings, on this tree, before landing
+```
+
+**⌷ AND ANY NODE PUSHING A BRANCH NAMES IT HERE, WITH ITS TIP SHA.** ***A routed note is a declaration; "a branch
+exists somewhere" is not, and 56 cannot gate on what nobody declared (`L-237`).***
+
+⚠ ***THE COST OF NOT HAVING THIS: cc54's item-38 work stranded twice, and at r2497 this line reported "cc54 has
+never run" — because it checked the commit log for `r24xx`/`c54.x` prefixes and found none. The work existed, on a
+branch, correctly done, and invisible.*** *`L-700` is that work, landed r2507.*
+
+### Branches to merge
+
+| branch | tip | node | what |
+|---|---|---|---|
+| *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2507, tip `b9651f0`)* | — | — | — |
+
+---
+
 # FOR 56 — the return inbox
 
 > ## ⛔⛔ ROUND TWELVE, r2496+c54.196 — *a third line is working and pushing, and it is about to spend an afternoon on a run that will not be comparable*

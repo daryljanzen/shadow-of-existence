@@ -10,7 +10,7 @@ current: r2500+c54.194
 
 > ***Read `THE_METHOD.md` first.*** *The short form: **the VEINS are areas held open to be known inside and out — never crossed out. The LEADS are everything noticed that could inform one.** Work the top lead, gather what it turns up, re-order, repeat.*
 >
-> *15 live rows: **4 veins**, **11 leads**. 226 struck.*
+> *16 live rows: **4 veins**, **11 leads**. 226 struck.*
 
 # I · THE VEINS — held open, to be known inside and out
 
@@ -86,4 +86,8 @@ current: r2500+c54.194
   - **32** · THE PROGENITOR-COMPOSITION DERIVATION RESTS ON A MODE CONDITION IT DOES
   - **40** · P15's PUBLISHED TEXT STILL CARRIES THE FRAMING c54.190–191 RETRACTED
   - **42** · P9's `cor:wall` CITATION COVERS THE METHOD, NOT THE CASE — added r2503
+
+# ⚠ UNSORTED — rows nobody has decided about
+
+- **`L-700`** — ***is this a vein, a lead, or done? Decide or strike it.***
 

@@ -45,7 +45,7 @@ jobs:
           for g in check_id_bands check_kills check_burndown check_supersession \
                    check_grains check_changelog check_depmatrix check_arcs \
                    check_paststate check_receipts check_withdrawn check_queues \
-                   check_citations check_absorption check_receipt_asserts check_claims; do
+                   check_citations check_absorption check_receipt_asserts check_claims check_branches; do
             echo "── $g"
             python3 corpus/$g.py || fails="$fails $g"
           done

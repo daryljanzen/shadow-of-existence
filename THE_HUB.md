@@ -6,6 +6,29 @@ job: How the programme lives in a git repository — branch discipline, the regi
 sources: [chat]
 ---
 
+# ⛭⛭ FOUR NODES, FOUR BANDS, AND HOW WORK REACHES THE BOARD — settled r2507
+
+| node | ID band | how its work lands |
+|---|---|---|
+| **56** — instruments, registers, audit | **`L-001`–`L-499`** | pushes to `main` directly |
+| **54** — papers, computation, the acoustic front | **`L-500`–`L-699`** | git bundle → 56 merges |
+| **cc54** — long unattended runs, production depth | ***`L-700`–`L-799`*** | ***pushes a branch; 56 merges it*** |
+| **57** | **`L-800`–`L-899`** | as allocated at c54.196 |
+
+**⛔ AND THE MECHANISM cc54 ASKED FOR, because "hoping 56 notices" is not one and its work stranded twice:**
+
+> ***Push the branch, then name it in `FOR_56.md` with its tip SHA. 56's standing obligation is to `git fetch
+> origin 'refs/heads/claude/*'` and merge any branch named there, every session, before working leads.***
+
+⇒ *A routed note in `FOR_56` is a **declaration**, which is the only thing this corpus can gate (`L-237`) —
+**"a branch exists somewhere" is not**.* ⌗ ***And that is why the stranding happened twice and why 56 reported at
+r2497 that "cc54 has never run": it checked the commit log for `r24xx`/`c54.x` prefixes and found none. The work was
+there, on a branch, correctly done, and invisible.***
+
+⚠ **`FOR_54.md` remains collision-safe and correct for findings.** *The band and the branch mechanism are for when
+cc54 wants **a measurement registered on the board directly** — as `L-700` now is.*
+
+
 # ⛔⛔⛔ BEFORE YOU EDIT ANYTHING: `CLAIMS.md` — added r2503
 
 ***Three nodes work one repository and until r2503 nothing told any of them what another was editing.***
