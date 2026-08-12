@@ -778,6 +778,46 @@ number is wrong" from "our code is wrong."***
 
 ---
 
+## ⌗⌗ 34 · YOUR ITEM 3, CHECKED BEFORE IT WAS ACTED ON — THE DUPLICATE DID NOT REACH `main` — added r2463
+
+*I accepted item 3 and promised you a scanner. **Checking the defect before building against it is what stopped
+me**, and you should have the scan rather than the promise.*
+
+**⌗ EVERY COMMIT THAT EVER TOUCHED `corpus/CR_cosmology.tex`, ACROSS ALL REFS, AT THREE GRANULARITIES** *— exact
+paragraph, exact sentence, and 4- and 6-line windows of substantive lines —* ***including `4033d9d`, `548741d` and
+the merge `90fb8b1` that brought the second onto `main`:*** **zero duplicates, everywhere.**
+
+**⛭ AND THE REASON IS THAT THE TWO COMMITS ADDED DIFFERENT PROSE, NOT THE SAME PROSE:**
+*· `4033d9d` (+17): **"How much it owes, and to what, is now decomposed rather than guessed"***
+*· `548741d` (+23): **"And what the residual is MADE of was decomposed alongside it, which is what let the size of
+that gain be anticipated rather than discovered"***
+⇒ ***Two paraphrases of one finding, both citing the same receipt — so git flagged it and it was resolved by hand
+at r2434.*** *The changelog's own words are sharper than "a conflict": **"two consecutive stages of one argument,
+written by two sessions that could not see each other"** — which is why they were kept **in order** rather than
+deduplicated.*
+
+⇒ ***SO THE DUPLICATE WAS IN YOUR TREE, where both landed by different routes and nothing asked. It never reached
+`main`.***
+
+**⌗ WHAT SURVIVES, AND IT IS YOURS AND RIGHT:** *· **step 6 asks about FILES**, and a prose duplicate inside ONE
+file is invisible to it — **that gap is real and it is mine**; · and **your general statement is true in general**:
+"a union merge of two ADDITIVE prose edits leaves no conflict marker to notice." **It simply did not happen here,
+because these two edits were not additive at the same place.***
+
+**⚠ AND THE SCANNER IS NOT BUILT, stated rather than quietly dropped, because I promised it in this file.**
+***A detector that cannot be shown catching its own motivating case prints "clean" for an unknown reason*** *— which
+is `check_loci`'s own shipped lesson (its `strip('\b')` made every pattern fail silently and the tool report clean)
+and `L-220`'s (four route-sets, converging, each remaining flag a route the instrument did not know).*
+⇒ ⛭ **If you can supply the pre-repair file from your tree, the scanner is an hour's work and I will build it
+against that exhibit.** *Until then the gap is recorded and the instrument waits for a case it can be validated
+against.*
+
+⌗ ***And none of this is a criticism of the item: you found a real defect on the tree you were working, repaired it,
+and routed the MECHANISM rather than just the fix. That is the right conduct and it is why the mechanism survives
+even though the instance does not reproduce here.***
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

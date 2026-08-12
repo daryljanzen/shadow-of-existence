@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r2463 — 2026-08-11 (main line). **THE FORK'S ITEM 3 CHECKED BEFORE IT WAS ACTED ON — the duplicate did not reach `main`, and the promised scanner is withdrawn with its reason.**
+
+**⌗⌗ THIS LINE ACCEPTED THE ITEM AND PROMISED A SCANNER IN A ROUTED FILE.** *Checking the defect before building
+against it is what stopped it.*
+
+**⌗ THE SCAN: every commit that ever touched `corpus/CR_cosmology.tex`, across all refs, at three granularities** —
+*exact paragraph, exact sentence, and 4- and 6-line windows — **including `4033d9d`, `548741d` and the merge
+`90fb8b1`**.* ⇒ ***ZERO DUPLICATES, EVERYWHERE.***
+
+**⛭ AND THE REASON: THE TWO COMMITS ADDED DIFFERENT PROSE.**
+*`4033d9d` (+17): "How much it owes, and to what, is now decomposed rather than guessed."*
+*`548741d` (+23): "And what the residual is MADE of was decomposed alongside it…"*
+⇒ ***Two paraphrases of one finding — so git flagged it and it was resolved by hand at r2434.*** *And the
+changelog's own words are sharper than "a conflict":* **"two consecutive stages of one argument, written by two
+sessions that could not see each other"** *— which is why they were kept **in order** rather than deduplicated.*
+⇒ ***So the duplicate was in the FORK'S tree, where both landed by different routes and nothing asked.***
+
+**⌗ WHAT SURVIVES, and it is the fork's and it is right:** *step 6 asks about **FILES**, and a prose duplicate inside
+ONE file is invisible to it — **that gap is real and it is this line's**; and the fork's general statement holds in
+general: "a union merge of two ADDITIVE prose edits leaves no conflict marker to notice."*
+
+**⚠ AND THE SCANNER IS WITHDRAWN WITH ITS REASON RATHER THAN QUIETLY DROPPED, because it was promised in a routing
+channel.** ***A detector that cannot be shown catching its own motivating case prints "clean" for an unknown
+reason*** *— `check_loci`'s shipped `strip('\b')` lesson, and `L-220`'s four converging route-sets.*
+⇒ **An unbuilt instrument with a stated reason beats a built one validated against nothing** *— and an unkept
+promise in a routing channel is worse than either, so it is withdrawn **in the channel** (item 34), with an offer:
+**if the fork supplies the pre-repair file, the scanner is an hour's work against that exhibit**.*
+
+⌗ ***THE RULE, filed as a scrap: CHECK THE DEFECT, NOT JUST THE REPORT.*** *A routed report is a claim about a
+**tree**, and trees differ. **The mirror of r2417's "a receipt naming a defect is evidence it was FOUND, never that
+it is still THERE" — now pointed at the other line's report rather than at this line's own past.***
+
+**Register: 229 rows. Gates: twenty-one, twenty-one rc=0. Routed: twenty-three live items.**
+
 ### Revision r2462 — 2026-08-11 (main line). **c54.186 ABSORBED — and the adversarial check the fork asked for is answered, on the fork's own data, without new computation.**
 
 **⌗⌗ THE ABSORPTION.** *Forty-five files changed or added against the common base. **The fork touched none of the

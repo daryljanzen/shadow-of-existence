@@ -1563,4 +1563,9 @@
 \emph{Computes:} reads both arms from the c54.186 spectra and asserts the scaling test, the control agreement and the ladder/continuum equality (12 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- the adversarial check c54.186 requested
 \ \emph{Run:} \texttt{python3 receipts/L147\_two\_arm/B1\_the\_control\_separates\_prediction\_from\_shared\_constant.py}
+\item[\label{rcpt:B2_the_prose_duplicate_did_not_reach_main}\texttt{B2\_the\_prose\_duplicate\_did\_not\_reach\_main}]\hfill\textsf{[OK]}\\
+\textit{sec:refit-bound} \ (the reported prose duplicate did not reach main: zero at three granularities across every commit, because the two edits were different paraphrases and git asked). 
+\emph{Computes:} scans every commit that touched the file at paragraph, sentence and line-window level and asserts the two diffs differ (14 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- checks a routed report before acting on it
+\ \emph{Run:} \texttt{python3 receipts/L147\_two\_arm/B2\_the\_prose\_duplicate\_did\_not\_reach\_main.py}
 \end{description}\endgroup
