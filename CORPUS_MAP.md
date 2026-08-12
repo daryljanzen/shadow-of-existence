@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r2452 — 2026-08-11 (main line). **THE ROUTING LIST AUDITED AGAINST ITSELF — its header said EMPTY while its body presented twenty-nine items as work, and two of this line's own checks failed in opposite directions.**
+
+**⛔ THE LIST'S OWN DEFECT, and it is item 6's class inverted.** *`FOR_54`'s header read* **"EMPTY AT c54.179 — ALL
+ELEVEN DISCHARGED"** *— true of the eleven it held then — while **nineteen more had been routed between r2439 and
+r2447**, and the body presented discharged and live items in one undifferentiated run.*
+⇒ ***A node reading top-to-bottom met a header saying "empty" and then twenty-nine numbered items reading as work.***
+⌗ **Item 6 says "the map's header claim is stronger than the map".** ***The inverted form is worse, because the body
+is what a working node acts on.*** *Five discharged items are now marked `✔✔ DISCHARGED` **in the body**, verified
+still applied; the header names the nineteen live ones and flags **item 21 to take first**.*
+
+**⛭⛭ AND TWO OF THIS LINE'S OWN CHECKS FAILED IN OPPOSITE DIRECTIONS ON ONE PASS — instances TEN and ELEVEN.**
+*A presence-test was written per item and its output read as a verdict.*
+*· **Item 14** asked the fork to **ADD** the words "along that axis" —* ***so the fix's presence read as "still
+live".***
+*· **Item 17** asked the fork to **REPLACE** an unqualified phrase, and the paper now says* **"The unqualified form
+of this clause … is withdrawn"** *—* ***so the WITHDRAWAL, which quotes the phrase in order to retract it, read as
+"still live" too.***
+⇒ ***One test, two rows, two opposite polarity errors — and both would have re-routed work already done.***
+⌗ **THE RULE:** ***a string is evidence that words are present, never that a claim is true or false*** *— so before
+believing a presence-test, **state what a HIT would mean and what a MISS would mean, per row**. One sentence per
+item, and it costs nothing.*
+
+**⌗⌗ AND THE HONEST SUMMARY OF ELEVEN INSTANCES IS NOT "BE CAREFUL WITH GREPS".** *`G1`'s distance · the phrase test
+· the quotation check · the coverage ratio · the label-mention count · a defined function read for its behaviour ·
+three word-presence probes in the currency sweep · and now two inverted presence-tests.*
+⇒ ***THIS LINE REACHES FOR A COUNTABLE PROXY EVERY TIME A JUDGEMENT IS DUE ACROSS MORE THAN A HANDFUL OF ITEMS, AND
+THE PROXY IS WRONG ROUGHLY AS OFTEN AS IT IS RIGHT.*** **What has worked, without exception, is opening one instance
+and reading it.**
+
+⌗ *The remaining seventeen testable items were checked at source and **all are live**: 19 (P1's `§scope` still says
+"endpoint rather than a crossing"), 20, 21, 22, 23, 25, 28, 29 among them.*
+
+**Register: 225 rows. Gates: twenty-one, twenty-one rc=0. `FOR_54`: nineteen live items, five marked discharged.**
+
 ### Revision r2451 — 2026-08-11 (main line). **`L-202` NARROWED AND DECIDED NEITHER WAY — the seam phase is the ANTILINEAR face, and it is trivial exactly where the corpus already has an answer.**
 
 **⌗⌗ FIRST, THE PHASE IS IDENTIFIED RATHER THAN DESCRIBED — and this line had not connected the two.** *P7

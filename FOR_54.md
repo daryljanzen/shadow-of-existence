@@ -1,12 +1,27 @@
 ---
 name: for-54
 kind: RECORD
-current: c54.181
+current: c54.185
 job: THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
 
 # FOR 54 — the inbox
+
+> ## ⚠⚠ NOT EMPTY — **NINETEEN LIVE ITEMS BELOW.** *Header corrected r2452; see the c54.179 block beneath it.*
+>
+> *The eleven this file held at c54.179 were all discharged, and that block still stands as the record.* ⛔ ***But
+> nineteen more were routed between r2439 and r2447 and the header still said "empty", while the body presented
+> discharged and live items in one undifferentiated run.*** *A node reading top-to-bottom met a header saying
+> **empty** and then twenty-nine numbered items reading as work.*
+> ⌗ **That is item 6's own class inverted** *— "the map's header claim is stronger than the map" — and* ***the
+> inverted form is worse, because the body is what a working node acts on.***
+>
+> **⇒ THE FIVE DISCHARGED ITEMS ARE NOW MARKED `✔✔ DISCHARGED` IN THE BODY, verified still applied at r2452.**
+> ***THE NINETEEN LIVE ONES ARE: 6, 11, 12, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30*** *(plus 7, 8, 9,
+> reported already-applied at c54.179 and left in place as conventions rather than fixes).*
+> ⌗ **AND ITEM 21 IS FLAGGED TO TAKE FIRST** *— the seam/branch-point word, which decides a proposition's truth
+> value and has already cost two nodes a false finding.*
 
 > ## ⛭⛭⛭ EMPTY AT r2376+c54.179 — ALL ELEVEN DISCHARGED IN ONE PASS, AND FOUR OF THEM WERE ALREADY DONE
 >
@@ -48,7 +63,10 @@ sources: [chat]
 
 ## ⛭ THE TWO THAT ARE RESULTS RATHER THAN CORRECTIONS — take these first
 
-## ⛭⛭ 10 · A RESULT TO CARRY ACROSS, not a correction — added r2410
+## ✔✔ DISCHARGED — 10 · A RESULT TO CARRY ACROSS, not a correction — added r2410
+
+> ✔ **DISCHARGED at c54.179 — LANDED in P7 (`rem:twocovers`) and P14 (`sec:whichthree`).** *Kept here as the record of what was routed and what it became, not as work. **Verified still applied at r2452.***
+
 
 *Everything above is a defect. **This one is not**: it is a result from the main line's R-M station Ⓒ, and it is
 offered because **landing it in a paper is the fork's territory and not this line's**.*
@@ -83,7 +101,10 @@ has degree $D-1$** — which `sec:whichthree` states and this does not touch.*
 
 ---
 
-## ⛭⛭ 15 · p0's OWN FRONTIER ITEM 1 IS NO LONGER A TARGET — added r2422, and only the author can change it
+## ✔✔ DISCHARGED — 15 · p0's OWN FRONTIER ITEM 1 IS NO LONGER A TARGET — added r2422, and only the author can change it
+
+> ✔ **DISCHARGED at c54.179 — SPLIT — constant side a result, datum side a target; see item 18 for the datum half.** *Kept here as the record of what was routed and what it became, not as work. **Verified still applied at r2452.***
+
 
 **Where:** `corpus/geometric_core_paper.tex`, `sec:frontiers` item 1, which reads
 ***"[Reach: stated as a target, not a result --- the falsifier above is what would decide it.]"***
@@ -196,7 +217,10 @@ the derivation is circular and concluded it is not.*
 
 ---
 
-## ⌗ 14 · One word in P9's axis sentence — added r2418, and it is the smallest item on this list
+## ✔✔ DISCHARGED — 14 · One word in P9's axis sentence — added r2418, and it is the smallest item on this list
+
+> ✔ **DISCHARGED at c54.179 — APPLIED — the sentence now reads "lies along **that axis**".** *Kept here as the record of what was routed and what it became, not as work. **Verified still applied at r2452.***
+
 
 **Where:** `corpus/range_paper.tex`, `sec:range`: *"Algebraic type is the count of coincident principal null
 directions, and the operator's whole range — Petrov type O, D, and I — **lies along it** as one interval…"*
@@ -212,7 +236,10 @@ text before sending.*
 
 ---
 
-## ⌗ 16 · A source comment and the published text disagree about P8's own open question — added r2424
+## ✔✔ DISCHARGED — 16 · A source comment and the published text disagree about P8's own open question — added r2424
+
+> ✔ **DISCHARGED at c54.179 — APPLIED, and it reached further than the item said.** *Kept here as the record of what was routed and what it became, not as work. **Verified still applied at r2452.***
+
 
 **Where:** `corpus/slicing_operator.tex`. *A `%` comment near the head reads* **"THE EMERGENCE OF THE BEND — 'a
 statement of WHAT the bend is, not of WHY the cut bends as it does… **the deepest open question the construction
@@ -232,7 +259,10 @@ right and its own note overstates it.***
 
 ---
 
-## ⛭⛭ 17 · P15 WITHDRAWS A PHRASE THAT SURVIVES TWICE IN ITS OWN VERDICT PASSAGES — added r2425
+## ✔✔ DISCHARGED — 17 · P15 WITHDRAWS A PHRASE THAT SURVIVES TWICE IN ITS OWN VERDICT PASSAGES — added r2425
+
+> ✔ **DISCHARGED at c54.179 — APPLIED — both verdict passages now read "no scale-invariant attractor \emph{reaching the observer}".** *Kept here as the record of what was routed and what it became, not as work. **Verified still applied at r2452.***
+
 
 **Where:** `corpus/CR_cosmology.tex`. *`sec:predictions` states:*
 ***"The unqualified form of this clause---that the construction has no scale-invariant attractor at all---is
