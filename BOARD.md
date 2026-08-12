@@ -10,7 +10,7 @@ current: r2500+c54.194
 
 > ***Read `THE_METHOD.md` first.*** *The short form: **the VEINS are areas held open to be known inside and out — never crossed out. The LEADS are everything noticed that could inform one.** Work the top lead, gather what it turns up, re-order, repeat.*
 >
-> *14 live rows: **4 veins**, **10 leads**. 253 struck.*
+> *14 live rows: **4 veins**, **10 leads**. 254 struck.*
 
 # I · THE VEINS — held open, to be known inside and out
 
@@ -20,13 +20,13 @@ current: r2500+c54.194
 
 - **MAPPED** — the boundary condition closes **per fibre** and cannot be broken by the number of fibres; the clause `c54.129` answered was **the one the argument does not need**; the UV degree is **quartic**, the ordinary zero-point degree; compactness buys the **IR free**
 - ⛔ **DARK** — **defining the sum**; the closed-form nonlinear $\Lambda>0$ solution; and whether a theory with **one dimensionful constant** can regulate at all — and ⛭ r2536 sharpens where that bites: **the corpus takes the de Sitter horizon's TEMPERATURE ($T=1/2\pi\alpha$, depending on $\alpha$ ALONE, and the channel through which $\hbar$ ENTERS the framework) and never its ENTROPY ($S=\pi(\alpha/\ell_P)^2$, depending on the RATIO)**; and ⛔ **CORRECTED r2537**: r2505 recorded this as *what selects among FIVE-component shears without assuming vacuum*, and **both halves of that were withdrawn** — c54.198 made the count **TWO** (the momentum constraint fixes $W$ under the York split) and c54.199 showed **Goldberg–Sachs governs the OPTICAL shear, not $\sigma^{TT}$ at all**. ⇒ **What actually remains dark here is narrower and better posed: the two are the graviton polarizations, they carry the GEOMETRY rather than the foliation, and `L-802` closes their stability for the small-data cell the construction needs**
-- *3 live lead(s) inform this vein*
+- *2 live lead(s) inform this vein*
 
 ## `L-175` · PO-9 · WHAT FIXES THE SUBSTRATE'S DIMENSION
 
 - **MAPPED** — the cut is four and **says nothing about the substrate**; a descent from $D>5$ must be **multi-step**; the construction is **single-step by design** and one-step-ness is governed by **Rule 2**, not taste
 - ⛔ **DARK** — **whether a second slicing could be non-arbitrary, its selection forced by the first** — and the substrate stays bounded **below only**; and ⛭ r2515 (`L-240`) **whether the CUT’s four-ness carries the FORCING of the dynamics** — the Dirac algebra singles out GR only in four dimensions, so the leaf’s four-ness may be doing work the corpus has never asked it to do. ⛭ r2518 CHARTED: $D=4$ is the **largest dimension in which Lovelock leaves exactly ONE dynamical term**, so the leaf’s dynamics carries **no unfixed coefficient** — Rule 2’s own object. **What stays DARK is the decision it turns on: is uniqueness of the leaf’s dynamics a desideratum this programme holds?** CR takes GR as given, so the forcing is a PROPERTY either way
-- *3 live lead(s) inform this vein*
+- *2 live lead(s) inform this vein*
 
 ## `L-202` · p0 item 4 · WHAT THE SEAM CARRIES
 
@@ -46,7 +46,7 @@ current: r2500+c54.194
 
 | # | row | informs | grounded | informs-how-much | what |
 |---|---|---|---|---|---|
-| **1** | **`L-204`** | `L-165` `L-175` `L-202` `L-221` | 3/3 | 2/3 | **the R-P theatre** — the corpus's claims across physics, per domain. ✔ **①② ③④ ⑤ ⑥ ⑦ ⑩ WALKED r2520–r2540**, and each bit differently: ③④ a **missing completeness argument** (the substrate is doubly ruled → types II/III unreachable, item 46, applied); ⑤ a **missing treatment** (Unruh — item 47, written by c54.202); ⑥ the **Higgs identified not declined** (closed r2539, the join is an identity); ⑦ the **temperature taken and the entropy never** (item 52); ⑩ the resolution is the **baby-universe** one, unnamed (item 53). ⇒ **What remains is ⑨ — cosmology · nuclear/plasma: BBN, recombination, the acoustic scale — the last unrun station, and the computational one |
+| **1** | **`L-803`** | `L-221` `L-202` | 3/3 | 3/3 | ⛭ **cc54's $N_{\rm eff}$ FINDING — the sixth arrival-path one, and the only one that opens a PHYSICS question rather than a paragraph.** The cosmology sector rests on $N_{\rm eff}$ at both ends (**$dY_p/dN_{\rm eff}\approx+0.010$**; one unit moves $100\theta_*$ by **$-3.2\%$** and $r_{\rm drag}$ by **$-4.7$ Mpc**), **commits to the standard value in `bbn_network.py`**, and **names it in no paper**. ⇒ **And the construction carries a right-handed $\nu_R$ in the colourless four, while $N_{\rm eff}$ counts thermalized relativistic species** — so *does CR adopt the standard value, or does its $\nu_R$ structure predict a departure?* **The unnamed adoption is exactly what hides the question** |
 | **2** | **`L-171`** | `L-202` | 2/3 | 3/3 | **PO-7** — whether the acoustic disagreement is real against the sky. ⛭ *Sharpened at c54.200 (`L-513`): over the phases `sec:what-crosses` ADMITS, the acoustic phase moves **0.207 against a 0.615 gap — a third — with the control OUTSIDE it**, so the disagreement is real and bounded rather than a free choice.* ⇒ **What is open is the confrontation itself: both admissible readings sit 76x and 102x the control, so something other than the seam phase carries the bulk of it — and the SPACING, robust to 1.9%, is what does not move** |
 | **3** | **`L-240`** | `L-175` | 2/3 | 3/3 | ⛭ **a LEAD from OUTSIDE literature, the first**: P12 cites `Teitelboim1973` for the Dirac brackets' FORM and never for the uniqueness theorem they carry (**zero “Lovelock” across 35 .tex files**). ** HKT: Einsteinian geometrodynamics is the ONLY canonical representation of those deformations; Teitelboim–Zanelli: LOVELOCK gravity closes the SAME algebra, and for $n>4$ there are Lovelock gravities other than GR. ** ⇒ **the Dirac algebra forces GR only in FOUR dimensions**, so **the four-ness of the CUT is what makes the dynamics forced** — which is not what `PO-9`'s guard says. ⛭ **WORKED r2518**: $D=4$ is the **largest dimension in which Lovelock leaves exactly ONE dynamical term**, so the leaf’s dynamics carries **no unfixed coefficient**. ⇒ **The decision it turns on: is uniqueness of the leaf’s dynamics a desideratum this programme holds?** CR takes GR as given either way |
 | **4** | **`L-210`** | `L-202` `L-221` `L-175` | 2/3 | 2/3 | the entry-point front — all 44 sites carry verdicts; **live leads are where a paper's own text points at an unexplored interior** |
@@ -57,7 +57,7 @@ current: r2500+c54.194
 | **9** | **`L-228`** | *— instrument work* | 3/3 | 0/3 | `check_loci` extended to the possessive and compound-noun forms node 52 declined to claim |
 | **10** | **`L-514`** | *— instrument work* | 2/3 | 0/3 | **nothing in the tree reads UPWARD**: c54.195's withdrawal contradicted text two paragraphs above it in the same section, which had carried the right answer since c54.191. A withdrawal is the edit for which that matters most. Second instance of the class after the c54.182/c54.184 duplicate |
 
-> ⛭⛭ **TAKE `L-204` NEXT** — *highest grounded×informative, and it informs 4 vein(s).*
+> ⛭⛭ **TAKE `L-803` NEXT** — *highest grounded×informative, and it informs 2 vein(s).*
 
 # III · THE ROUTED LIST (`FOR_54.md`) — leads handed to the working fork
 

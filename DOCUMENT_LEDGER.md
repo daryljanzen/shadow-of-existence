@@ -41,9 +41,9 @@ sources: [chat]
 |---|---|---|---|---|---|
 | `ABSORPTION.md` | SOURCE | The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced. | — | c54.204 | 0 |
 | `THE_LIVE_ARC.md` | SOURCE | the lead register — the one live edge | — | c54.204 | 0 |
-| `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.203 | c54.203 | 1 |
+| `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.204 | c54.204 | 0 |
 | `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.203 | c54.203 | 1 |
-| `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.203 | 1 |
+| `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.204 | 0 |
 | `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.203 | c54.203 | 1 |
 | `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.203 | c54.203 | 1 |
 | `ACOUSTIC_BUILD_SETUP.md` | STATE | The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own. | — | c54.201 | 3 |
@@ -55,14 +55,14 @@ sources: [chat]
 | `COMPLEX_ANALYSIS_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.201 | 3 |
 | `CONFORMAL_GEOMETRY_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.201 | 3 |
 | `CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md` | STATE | Consolidate the plan and index the programme — the arcs (§2), the sequence (§13), the standing actions (§14), and §16 THE DEVELOPMENT RECORD, which is where RG-1 moves a paper's past state. | — | c54.197 | 7 |
-| `CORPUS_MAP.md` | STATE | (declared in frontmatter) | — | c54.203 | 1 |
+| `CORPUS_MAP.md` | STATE | (declared in frontmatter) | — | c54.204 | 0 |
 | `CR_AND_THE_HIGGS.md` | STATE | R-P station 6h (L-217) — how CR and the Higgs sector relate, in coherence and in correspondence. THE FALSIFICATION CONDITIONS ARE STATED FIRST, BEFORE THE CLAIM. Read before asserting complementarity. | — | c54.201 | 3 |
 | `CR_COLLAPSE_HELD_PICTURE.md` | STATE | BUILD MATERIAL for THE_PLAN item 2 / PHASE 7 — the contracting-phase picture held whole: the L2 leg the acoustic driving lives on. Read WITH COLLAPSE_EXCURSION_TRANSFER_build.md (the attack manual) before starting that build. | — | c54.114 | 90 |
 | `ENTRY_POINT_REGISTER.md` | STATE | What does the corpus advertise as open, in its own words? Read BEFORE BELIEVING A GAP. | — | c54.201 | 3 |
 | `FIGURE_SWEEP.md` | STATE | The figure programme's state — every figure against what it must carry. | — | c54.201 | 3 |
 | `FIGURE_THEOREM_LEDGER.md` | STATE | The figure–theorem ledger: which classical theorem each figure carries, and its receipts. | — | c54.19 | 185 |
 | `FORK_c54.md` | STATE | the c54 fork's own record | — | c54.197 | 7 |
-| `OPEN_PROBLEMS_MAP.md` | STATE | The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open | — | c54.203 | 1 |
+| `OPEN_PROBLEMS_MAP.md` | STATE | The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open | — | c54.204 | 0 |
 | `OPTICS_LENSING_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.201 | 3 |
 | `P3_SWING_ONTOLOGY_hinge-and-door.md` | STATE | The usable ontological skeleton for the SECOND major P3 upgrade — lead with the physical object (one hinge, one door, one swing) and DERIVE w, u, 3w as the shadows it throws. Registered as L-206; the upgrade has not landed. | — | — | never |
 | `PHASE7_BUILD_LEDGER.md` | STATE | the Phase-7 build record | — | c54.153 | 51 |
@@ -82,7 +82,7 @@ sources: [chat]
 | `THE_MATHEMATICS_REACH.md` | STATE | The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. ⛭ ALL FIVE STATIONS WALKED r2490–r2493 — and Ⓒ, Ⓖ, Ⓗ CONVERGED on one knot: which order-six group acts. See the block below. Registered as L-203. ⛭ **Ⓕ IS WALKED — `F13` (node 55, verified r2442) settled it, and it is FOUR real forms of $\mathfrak{so}(6,\mathbb C)$, not two: $\mathfrak{su}(3)$ embeds in exactly ONE, the compact form. This frontmatter carried Ⓕ as owed for forty-eight revisions after its own ① block recorded the answer.** | — | c54.201 | 3 |
 | `THE_METHOD.md` | STATE | (declared in frontmatter) | — | c54.201 | 3 |
 | `THE_OPEN_PROBLEMS_LEDGER.md` | STATE | The open-problems ledger by FAMILY — what each family is, what closed it or holds it open, and its register pointer. The fork writes here; this line absorbs it. | — | c54.197 | 7 |
-| `THE_PHYSICS_REACH.md` | STATE | The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521, OWE DISCHARGED r2527+c54.202 (two companions remain); ⑥ WALKED r2522 (a one-clause fix, item 48); ⑦ WALKED r2536 (the entropy asymmetry, item 52); ⑨ ⑩ owed per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home. | — | c54.203 | 1 |
+| `THE_PHYSICS_REACH.md` | STATE | The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521, OWE DISCHARGED r2527+c54.202 (two companions remain); ⑥ WALKED r2522 (a one-clause fix, item 48); ⑦ WALKED r2536 (the entropy asymmetry, item 52); **the walk is COMPLETE r2544** per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home. | — | c54.204 | 0 |
 | `THE_PLAN.md` | STATE | The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance | — | c54.197 | 7 |
 | `THE_PRY_APART_CENSUS.md` | STATE | Which apparent ONE is TWO things a conflation welded? — the corpus-wide pry-apart census, the dual of the equivalence census. Read BEFORE trusting a standard identification. ⚠ Its own comb is OWED: 'OTHER homes to be FOUND by combing'. | — | c54.201 | 3 |
 | `THE_QUANTUM_JOINT.md` | STATE | The QM sketchpad — a NOTEBOOK, not a ledger: draw the pipe-extensions as far as the evidence suggests, run the rigour alongside as the eraser and not the doorman. Nothing here is a banked corpus result. Register: cluster-J germs were struck c54.117; the quantum tower is L-165 = PO-6. | — | c54.201 | 3 |
@@ -117,7 +117,7 @@ sources: [chat]
 | `capstones/Still_Collapsing_portrait_v1.0.md` | METHOD | the why-layer — read at spin-up steps 8 and 8b | — | — |  |
 | `capstones/THE_CODA.md` | METHOD | the why-layer — read at spin-up steps 8 and 8b | — | — |  |
 | `capstones/THE_INTERFERENCE_ENGINE.md` | METHOD | the why-layer — read at spin-up steps 8 and 8b | — | — |  |
-| `capstones/THE_WISDOM_LEDGER.md` | METHOD | Is the scrap in front of me still live, and what would retire it? Read AT THE MOMENT OF USE. The only one of the six about the NODE rather than the corpus. | — | c54.203 |  |
+| `capstones/THE_WISDOM_LEDGER.md` | METHOD | Is the scrap in front of me still live, and what would retire it? Read AT THE MOMENT OF USE. The only one of the six about the NODE rather than the corpus. | — | c54.204 |  |
 | `BUNDLE_README.md` | RECORD | frozen record | — | — |  |
 | `BUNDLE_r1062.md` | RECORD | frozen record | — | — |  |
 | `BUNDLE_r1063.md` | RECORD | frozen record | — | — |  |

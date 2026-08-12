@@ -54,6 +54,14 @@ VEINS = {
 # GROUNDED 0-3: how solid the footing is, INFORMS 0-3: how much a vein would learn). **
 # ** A lead with NO vein links is instrument work.  It is not counted as progress on the map. **
 LEADS = {
+ 'L-803': ("\u26ed **cc54's $N_{\\rm eff}$ FINDING \u2014 the sixth arrival-path one, and the only one that "
+   "opens a PHYSICS question rather than a paragraph.** The cosmology sector rests on $N_{\\rm eff}$ at both ends "
+   "(**$dY_p/dN_{\\rm eff}\\approx+0.010$**; one unit moves $100\\theta_*$ by **$-3.2\\%$** and $r_{\\rm "
+   "drag}$ by **$-4.7$ Mpc**), **commits to the standard value in `bbn_network.py`**, and **names it in no "
+   "paper**. \u21d2 **And the construction carries a right-handed $\\nu_R$ in the colourless four, while "
+   "$N_{\\rm eff}$ counts thermalized relativistic species** \u2014 so *does CR adopt the standard value, or does "
+   "its $\\nu_R$ structure predict a departure?* **The unnamed adoption is exactly what hides the question**",
+   ['L-221','L-202'], 3, 3),
  'L-171': ("**PO-7 \u2014 THE ONE VERDICT ON THE BOARD, and it is now sharply posed.** \u26ed r2519: the "
    "admissible pair $\\phi\\in\\{0,\\pi\\}$ is **FORCED** by P15's own transmission argument (every mode "
    "**freezes** before the crossing; a frozen mode has zero velocity), not merely distinguished. Band "
@@ -121,16 +129,6 @@ LEADS = {
    "writes p0 lowercase. **Nine rows invisible; surfaced only because the first `\\rcpt{}` to name one read "
    "as an orphan.** Same shape as its own duplicate-stem guard: blind to a row it should police",
    [], 3, 0),
- 'L-204': ("**the R-P theatre** \u2014 the corpus's claims across physics, per domain. \u2714 "
-   "**\u2460\u2461 \u2462\u2463 \u2464 \u2465 \u2466 \u2469 WALKED r2520\u2013r2540**, and each bit "
-   "differently: \u2462\u2463 a **missing completeness argument** (the substrate is doubly ruled \u2192 "
-   "types II/III unreachable, item 46, applied); \u2464 a **missing treatment** (Unruh \u2014 item 47, "
-   "written by c54.202); \u2465 the **Higgs identified not declined** (closed r2539, the join is an "
-   "identity); \u2466 the **temperature taken and the entropy never** (item 52); \u2469 the resolution is "
-   "the **baby-universe** one, unnamed (item 53). \u21d2 **What remains is \u2468 \u2014 cosmology \u00b7 "
-   "nuclear/plasma: BBN, recombination, the acoustic scale \u2014 the last unrun station, and the "
-   "computational one",
-   ['L-165','L-175','L-202','L-221'], 3, 2),
  'L-217': ("the CR/Higgs relation is stated; **`F1` stays live \u2014 the relation breaks if the gauge group is "
    "ever promoted to forced**", ['L-221'], 2, 2),
  'L-230': ("the `COMPUTES:` convention \u2014 uptake **flat at 40 of 357** as of r2447 \u2014 **the number is unmeasured since**, and a convention whose uptake nobody re-counts is a convention nobody is adopting while the corpus grew a sixth; a "

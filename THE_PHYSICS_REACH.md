@@ -1,10 +1,26 @@
 ---
 name: the-physics-reach
 kind: STATE
-current: r2540+c54.203
-job: The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521, OWE DISCHARGED r2527+c54.202 (two companions remain); ⑥ WALKED r2522 (a one-clause fix, item 48); ⑦ WALKED r2536 (the entropy asymmetry, item 52); ⑨ ⑩ owed per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home.
+current: r2544+c54.204
+job: The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521, OWE DISCHARGED r2527+c54.202 (two companions remain); ⑥ WALKED r2522 (a one-clause fix, item 48); ⑦ WALKED r2536 (the entropy asymmetry, item 52); **the walk is COMPLETE r2544** per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home.
 sources: [cowork]
 ---
+
+## ✔✔✔ THE WALK IS COMPLETE r2544 — every station, and the class is six-for-six
+
+**⑨, walked by cc54 (it needs `camb` and `pynucastro`):** *the sector rests on **$N_{\rm eff}$** at both ends —
+$N_{\rm eff}$ 0 · `Neff` 0 · 3.046 0 across the papers, while the lithium problem is named and worked —* ***and
+`bbn_network.py` commits to it explicitly: `r_nu = (4.0/11.0)**(1.0/3.0)`, three species.***
+⇒ ***One missing NAME, not a missing sector*** *— and load-bearing: one extra unit moves $100\theta_*$ by $-3.2\%$
+and $r_{\rm drag}$ by $-4.7$ Mpc, against a sector predicting $\ell_A/r_s$ to 0.075%.*
+⌗ ***And the construction carries a right-handed $\nu_R$ in the colourless four, so "does CR adopt the standard
+$N_{\rm eff}$?" is a real unasked question the unnamed adoption hides.***
+
+**⌗ THE THEATRE'S YIELD: six arrival-path findings** — *Lovelock · Type II/III · Unruh · Higgs · baby universe ·
+$N_{\rm eff}$* — ***and three already closed by paragraphs that name what was being answered.***
+⇒ ***The generator is what mattered, not the leads: every finding was a place where the corpus and the field fit
+perfectly and did not meet.***
+
 
 ## ⛭⛭⛭ STATION ⑩ WALKED r2540 — and it is station ⑤'s shape, one field over
 
@@ -201,7 +217,7 @@ corpus — because a field bites where the corpus is deepest, and the arc is the
 | **⑥** `P13`, `P14` | **SM / gauge / particle physics**, and **symmetry breaking** — the $\mathfrak{su}(3)$ location, three chiral generations, $D_6$ | ✔ **WALKED r2522** — the Higgs identified not declined; **closed r2539+c54.203**, the join is an identity |
 | **6h** `P13`, `P14` | **THE HIGGS SECTOR — added r2412 (Daryl): how do CR and the Higgs mechanism COMPLEMENT each other, in coherence and in correspondence?** *Registered `L-217`.* **The word "Higgs" appears nowhere in the corpus** *(checked at source r2411; "Yukawa" appears in P13 and P14).* *And the corpus **states the boundary four times in four papers and nowhere states the RELATION** — which is the entry-point front's own definition of a gap.* | **NEXT after the complex-analysis station** |
 | **⑦** `p0` | **thermodynamics / statistical mechanics** — the Gibbons–Hawking state at $\kappa=1/\alpha$, BH mechanics · **and OPTICS**, ✔ run r1857–r1863 | ✔ **WALKED r2536** — optics r1857–63; thermo: **the temperature is taken and the entropy never is**, routed as item 52 |
-| **⑨** `P7`, `P15`, `P16` | **cosmology** · **nuclear / plasma** — BBN, recombination, the acoustic scale | ⟐ |
+| **⑨** `P7`, `P15`, `P16` | **cosmology** · **nuclear / plasma** — BBN, recombination, the acoustic scale | ✔ **WALKED r2544 by cc54** — the sector rests on **$N_{\rm eff}$** at both ends and names it in no paper; the code commits to it |
 | **⑩** `P1`, `P4` | **quantum information** — the information paradox, unitarity | ✔ **WALKED r2540** — the resolution is the **baby-universe** one, never named; routed as item 53 |
 
 > ## ⌗⌗ THE ①② STRIKE — made r2383, and the delay is the finding

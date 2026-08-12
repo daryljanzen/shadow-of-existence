@@ -146,6 +146,44 @@ sources: [cowork, chat]
 
 
 
+### Revision r2544 — 2026-08-11 (main line). **THE R-P WALK IS COMPLETE — six arrival-path findings, three already closed — and an AMPS miscount of this line's was caught and routed back.**
+
+**⛔ THE ERROR FIRST, because it is this line's and it was printed as evidence.** *r2540 reported **"the corpus
+engages AMPS ten times and never the Page curve."*** ⇒ ***All ten were `d-AMPS-` inside "damps" — a case-insensitive
+search on a four-letter acronym.***
+*c54.204: "a count quoted from a slip and printed beside my own measurements reads as evidence. **Routed back rather
+than adopted**."* ⌗ ***r2533's lesson arriving from the other direction.***
+⇒ *Neighbours checked at once: **Higgs and Lovelock unaffected; Unruh differs (7 vs 3) and all seven are genuine** —
+so the fix is **"check which one the token needs"**, not a blanket rule.* ⌗ *And the finding **survived and got
+simpler**: AMPS 0 beside Page curve 0 means the corpus engaged **neither** the derived puzzle nor the primary
+diagnostic.*
+
+**✔ c54.204 CLOSED ITEM 53** *— the baby-universe scenario **named**, its disconnection objection stated as an
+objection, and* ***the falsifier made explicit: "a measured Page curve would falsify the flux denial and the
+resolution built on it."*** *Naming the diagnostic converted a silence into a **stated trip-wire**, which is what
+naming Unruh did to the completion criterion.*
+
+**⛭⛭⛭ AND cc54 WALKED ⑨, THE LAST UNRUN STATION.** *The cosmology/nuclear sector **rests on $N_{\rm eff}$ at both
+ends and names it in no paper** — verified here: **$N_{\rm eff}$ 0 · `Neff` 0 · 3.046 0**, while the lithium problem
+is named and worked.* ⇒ *And **`bbn_network.py` commits to it explicitly**: `r_nu = (4.0/11.0)**(1.0/3.0)`, three
+species.*
+⌗ *Load-bearing at both ends: **$dY_p/dN_{\rm eff}\approx+0.010$**; one extra unit moves **$100\theta_*$ by
+$-3.2\%$** and **$r_{\rm drag}$ by $-4.7$ Mpc** — against a sector predicting $\ell_A/r_s$ to 0.075% and 15.7σ.*
+⇒⇒ ***And the construction carries a right-handed $\nu_R$ in the colourless four while $N_{\rm eff}$ counts
+thermalized relativistic species — so "does CR adopt the standard value, or does its $\nu_R$ structure predict a
+departure?" is a REAL, UNASKED question, and the unnamed adoption is what hides it.*** *Registered as `L-803`, live,
+informing `PO-5` and the seam.*
+
+**✔✔ SO THE R-P WALK IS COMPLETE AND `L-204` IS STRUCK.** *Six arrival-path findings — **Lovelock · Type II/III ·
+Unruh · Higgs · baby universe · $N_{\rm eff}$** — and* ***three already closed by paragraphs that name what was
+being answered.***
+⇒ ⛭ ***The generator was the resource, not the leads: every finding was a place where the corpus and the field fit
+perfectly and did not meet.***
+
+⌗ *`L-519` and `L-802` each arrived duplicated — third and fourth time `merge=union` has preserved both sides of one
+row. **It is doing what it is configured to do; `check_id_bands` is the compensating check and has caught every
+one.***
+
 ### Revision r2543 — 2026-08-11 (main line). **`L-519` CLOSED — the thermal mechanism needs an exponential approach, the degenerate member's is a power law, and P15 already derived that split for a different purpose.**
 
 **⌗ WHY A NON-DEGENERATE HORIZON IS THERMAL, IN ONE STEP.** *Near a simple root $f\sim2\kappa\delta$, so
