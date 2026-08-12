@@ -43,14 +43,22 @@ WINDOW = 15
 
 
 def recorded():
-    """[(fork_rev, mainline_rev, date_str)] newest last."""
+    """[(fork_rev, mainline_rev_or_0, date_str, raw_id)] newest last."""
     if not os.path.exists(REC):
         return None
     out = []
     for ln in open(REC, encoding='utf-8', errors='replace').read().split('\n'):
-        m = re.match(r'\|\s*c54\.(\d+)\s*\|\s*r(\d+)\s*\|\s*([\d-]+)\s*\|', ln)
+        # ** THE SECOND COLUMN MAY BE A MAIN-LINE REVISION *OR* A COMMIT SHA, AND r2441+c54.187 IS
+        # WHY. **  Since r2429 absorptions happen BY MERGE, and the fork -- which cannot see the
+        # observer line's revision numbering from its own tree -- knows only the SHA it was told.
+        # ** A row recorded with a SHA is still a recorded absorption; refusing to parse it made the
+        # file silently claim the fork had not advanced, which is the exact failure this gate
+        # exists to prevent, one level down. **  The mainline number is 0 when unknown, so the
+        # report can say so rather than invent one.
+        m = re.match(r'\|\s*c54\.(\d+)\s*\|\s*(?:r(\d+)|([0-9a-f]{7,40}))\s*\|\s*([\d-]+)\s*\|', ln)
         if m:
-            out.append((int(m.group(1)), int(m.group(2)), m.group(3)))
+            out.append((int(m.group(1)), int(m.group(2)) if m.group(2) else 0, m.group(4),
+                        ('r' + m.group(2)) if m.group(2) else m.group(3)))
     return sorted(out)
 
 
@@ -79,8 +87,8 @@ def main():
         return 1
 
     print(f'  {len(rows)} absorption(s) recorded:')
-    for f, m, d in rows:
-        print(f'    c54.{f:<5} absorbed at r{m}  ({d})')
+    for f, m, d, raw in rows:
+        print(f'    c54.{f:<5} absorbed at {raw}  ({d})')
     print()
     newest_absorbed = rows[-1][0]
     front = tree_front()

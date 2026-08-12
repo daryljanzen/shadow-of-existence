@@ -146,6 +146,50 @@ sources: [cowork, chat]
 
 
 
+### Revision r2470 — 2026-08-11 (main line). **c54.187 ABSORBED — a disposition of this line's corrected, and the routed gate answered architecturally rather than built.**
+
+**⌗⌗ THE ABSORPTION.** *Eighty-three files against `14a90fd`. The fork's `CR_cosmology.tex`, `ACOUSTIC_two_arm.py`,
+nine phase spectra, its new receipt and a third one-line-world gate fix taken wholesale; `L-500` and `L-501` spliced
+into the fork's band.*
+⚠ **AND `check_burndown` CAUGHT A ROW THIS LINE LOST:** *`L-500`'s register row, spliced at r2462, **was not in the
+tree at `14a90fd`** — the splice did not survive. **The gate that the fork repaired at c54.186 is the one that found
+it**, which is the repair paying for itself two revisions later.*
+⌗ *And the fork's third gate fix is a bug this line created: **`check_absorption` parsed the second column as
+`r<digits>` only, so the SHA `fdee32e` written there did not parse and the file silently claimed the fork had not
+advanced** — the exact failure that gate exists to prevent, one level down.*
+
+**⛔⛭ AND A DISPOSITION OF THIS LINE'S IS CORRECTED.** *`B1` (r2462) showed a shared upstream constant would corrupt
+both arms identically and does not — **and the fork credits it**: "two arms at essentially equal $\ell_A$ with first
+peaks 21.8% apart still rules out $\ell_1=c\,\ell_A$."* ***But `L-235` said "the alternative is decided", and the
+alternative was the fork's own pair — "either a ROBUST PREDICTION or a SHARED UPSTREAM CONSTANT". Ruling out the
+second was read as establishing the first.***
+⇒ ***IT WAS A THIRD THING.*** *$Z_{\rm START}$ is solved so $\pi D_M/r_s=301.6$; the first-peak modes are **already
+sub-horizon when integration begins**; their phase is **assigned, not derived**; and scanning that one freedom moves
+$\ell_1/\ell_A$ from **0.5703 to 1.2599 — 2.21×**, with the 172 peak **absent entirely** at one phase.*
+⌗ **And the fork names why `B1` could not reach it:** ***"the control never exercises the ARM-SPECIFIC datum."***
+⇒ ***THE RULE: ruling out one horn of a dichotomy establishes the other ONLY IF THE DICHOTOMY IS EXHAUSTIVE — and a
+dichotomy someone stated in passing is not a proof of exhaustiveness.*** *The fork wrote a candid "either/or";
+**this line read a partition**.*
+⛭⛭ **AND WHAT SURVIVES IS BETTER THAN WHAT FELL:** *the **spacing** spreads only **1.11×**, sits at
+$0.79\pm0.04$ of $\ell_A$, and is **never 1.0** — **a ~21% deficit surviving every phase, better than the 22%
+position deficit the paper carried**.* *`F5` unsoftened, `PO-7` protected.*
+
+**⛭⛭⛭ AND THE ROUTED GATE — "a finding that doesn't travel with the instrument it was made on" — IS ANSWERED
+ARCHITECTURALLY.** *Both natural signatures were tested **before building**: receipts with a dead `ORIGIN` — **0**;
+sections mixing live and dead instruments — **0** of 114.* ⇒ *`ROBUST_p1p2_scan`'s origin still exists and nothing
+drifted, so **a detector on either would be validated against nothing***.
+⌗ **The reason is structural:** *`ORIGIN:` says where a receipt **came from**; nothing says whether it is still the
+one you would **use**.* ***A finding does not travel because nothing records what it would travel TO.***
+⇒ ⛭⛭ ***AND THE PATTERN IS EXACT: EVERY GATE IN THE SUITE CHECKS SOMETHING SOMEBODY DECLARED, AND BOTH LINTS INFER
+AND ARE DELIBERATELY OUTSIDE THE GATE LIST.*** **So "no gate we have looks for that" is not an oversight — it is the
+architecture.**
+⌗ *Third request in one session to land there (`L-220` → a convention; the prose scanner → withdrawn r2463; this).*
+***THE RULE: before asking why there is no gate, ask WHAT WOULD IT CHECK AND WHO DECLARES IT.*** *And the corollary
+turns the refusal into a route: **each of the three was one declaration away** — `COMPUTES:`, an exhibit,
+`AUTHORITATIVE-FOR:`. **"Not buildable" is almost never the end of the sentence.***
+
+**Register: 232 rows. Gates: twenty-one, twenty-one rc=0. Routed: twenty-five live items.**
+
 ### Revision r2469 — 2026-08-11 (main line). **A RECURRING DEBT TURNED INTO A VIEW — the third payment was refused and the mechanism dissolved instead.**
 
 **⌗⌗ THE DEBT, paid twice and due a third time.** *`check_grains` failed on `THE_PLAN` and

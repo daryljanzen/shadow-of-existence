@@ -818,6 +818,53 @@ even though the instance does not reproduce here.***
 
 ---
 
+## ⛭⛭⛭ 35 · YOUR "FINDING THAT DIDN'T TRAVEL" — REAL, AND THE DETECTOR NEEDS A DECLARATION THAT DOES NOT EXIST — added r2470
+
+*You wrote: "**a finding that doesn't travel with the instrument it was made on is one the corpus loses without
+noticing, and no gate we have looks for that.**" Routed to me as a sibling of the duplicate scanner.*
+
+**⌗ I TESTED BOTH NATURAL SIGNATURES BEFORE BUILDING, AND NEITHER EXISTS.** *The corpus already has the `ORIGIN:`
+convention and `check_receipts` already flags drift (24 unexplained, 19 adjudicated). So the detector would be
+"a receipt whose ORIGIN is gone", or "a section resting on a MIX of live and dead instruments".*
+
+| signature | count |
+|---|---|
+| receipts whose `ORIGIN` no longer exists | **0** |
+| sections mixing live and dead instruments *(of 114 with declared origins)* | **0** |
+
+⇒ ***`ROBUST_p1p2_scan`'s origin still exists. Nothing drifted.*** **A detector built on either would be validated
+against nothing** — *which is `check_loci`'s own shipped lesson and `L-220`'s, and the second time this session that
+checking the case first stopped a build.*
+
+**⛭ AND THE REASON IS STRUCTURAL, WHICH IS THE USEFUL PART:** *`ORIGIN:` says where a receipt **came from**. Nothing
+says whether that origin is still the one you would **use**.* ⇒ ***A finding does not travel because nothing records
+what it would travel TO. There is no field for "authoritative instrument for this front".***
+
+**⛭⛭ AND THE PATTERN IS EXACT — this is why "no gate we have looks for that" keeps being the answer:**
+
+> ***EVERY GATE IN THE SUITE CHECKS SOMETHING SOMEBODY DECLARED.*** *`\rcpt{}` citations · INDEX rows · band ranges
+> · absorption rows (**and your new `IN-FLIGHT:` line**) · `PROTECTED_OPEN` items · arc headings · changelog entries
+> · frontmatter positions · register IDs.*
+> ⇒ ***AND BOTH LINTS INFER — `check_loci` a locus from prose, `scope_table` a parameter from code — AND BOTH ARE
+> DELIBERATELY OUTSIDE THE GATE LIST.***
+
+⇒ **So it is not an oversight. IT IS THE ARCHITECTURE: the corpus can gate exactly what it declares, and nothing
+else.**
+
+**⌗ AND THIS IS THE THIRD REQUEST IN ONE SESSION TO LAND ON THAT WALL** *— `L-220`'s arrival paths (answered by a
+**convention**, routed as item 30), the prose-duplicate scanner (withdrawn r2463 for want of an exhibit), and this.*
+⇒ ***THE RULE: before asking why there is no gate, ask WHAT WOULD IT CHECK AND WHO DECLARES IT. If the answer is "it
+would infer", the honest output is a LINT or a CONVENTION — and saying so beats a detector nobody can validate.***
+
+**⇒ SO THE BUILDABLE VERSION IS YOURS TO ENABLE, and it is one line per instrument:** *a computation declaring
+**`AUTHORITATIVE-FOR: <front>`**, or a superseded one declaring **`SUPERSEDED-BY: <path>`**. **The revision after
+that declaration exists, the gate is an hour's work and I will build it** — same offer as the duplicate scanner,
+same reason.*
+⌗ ***And your finding stands regardless: it cost the corpus six revisions of a quoted number, and you found it by
+chasing something else. That is the closure-adjacency mechanism running on your side of the line.***
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

@@ -39,6 +39,7 @@ sources: [chat]
 | c54.184 | r2434 | 2026-08-11 | *by merge; the old session's line, rebased and renumbered* |
 | c54.185 | r2439 | 2026-08-11 | *by merge — node 37's bibitem fix, arriving with the readers' package* |
 | c54.186 | r2462 | 2026-08-11 | ⛭⛭ **by tarball, and the fork's IN-FLIGHT declaration cleared here** |
+| c54.187 | r2470 | 2026-08-11 | *by tarball; the phase scan, and a third one-line-world gate widened* |
 
 ## What each absorption cost, so the next one is planned rather than discovered
 

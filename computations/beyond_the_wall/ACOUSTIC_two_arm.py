@@ -253,14 +253,30 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         #    the phase common, AND THE VELOCITIES ZERO -- which is what the corpus's own text says
         #    and what c54.164 found ROBUST_p1p2_scan does not impose.  Stated as a choice, and it
         #    is the choice the paper describes. **
-        xe = 1.0 / np.sqrt(3)
+        # ** CRPHI OPENS THE ONE THING "A COMMON PHASE" LEAVES UNSPECIFIED, AND r2441+c54.186 IS
+        # WHY. **  The corpus's datum is "ONE datum per mode and a COMMON phase"; this block picks
+        # the phase at a DENSITY extremum, which is a choice inside that phrase and not the phrase
+        # itself.  ** c54.164 already measured that ell_1 is NOT stable under readings of this same
+        # stated initial condition -- ell_1 in {150, 165, 315} -- while the source comb's SPACING is,
+        # at 0.72-0.79 of pi/r_s under every one. **  Eight instrument states have varied the
+        # TRANSFER and none has varied the DATUM, so an invariance of ell_1/ell_A across them is an
+        # invariance of the transfer and says nothing about the datum.  *CRPHI = 0 is the choice as
+        # coded and is the default; nothing moves unless it is set.*
+        #
+        # For a mode already sub-horizon at the seam, delta_g = D cos(k c_s (eta - eta_S) + phi),
+        # and the code's own continuity equation d(delta_g)/deta = -(4/3) theta_g gives
+        # theta_g = (3/4) D k c_s sin(phi).  phi = 0 is a density extremum with theta = 0.
+        _phi = float(os.environ.get('CRPHI', '0.0'))
+        xe = float(os.environ.get('CRXE', str(1.0 / np.sqrt(3))))
         A_flat = -(3 * (np.sin(xe) - xe * np.cos(xe)) / xe ** 3) / 2
         Ph0 = -np.ones(nk)
         That = A_flat * np.ones(nk)
-        dg0 = 4.0 * (That - Ph0)
-        y0[:, 0], y0[:, 1] = 0.75 * dg0, np.zeros(nk)
-        y0[:, 2], y0[:, 3] = dg0, np.zeros(nk)
-        y0[:, 4], y0[:, 5] = dg0, np.zeros(nk)
+        dg0 = 4.0 * (That - Ph0) * np.cos(_phi)
+        _cs = 1.0 / np.sqrt(3.0 * (1.0 + float(Rb_of(ETA_S))))
+        th0 = 0.75 * (4.0 * (A_flat + 1.0)) * kk * _cs * np.sin(_phi)
+        y0[:, 0], y0[:, 1] = 0.75 * dg0, th0
+        y0[:, 2], y0[:, 3] = dg0, th0
+        y0[:, 4], y0[:, 5] = dg0, th0
         y0[:, 6] = Ph0
         y0[:, I_DB] = 0.75 * dg0
 
