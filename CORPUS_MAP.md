@@ -146,6 +146,42 @@ sources: [cowork, chat]
 
 
 
+### Revision r2468 — 2026-08-11 (main line). **`L-233` ⓶ ANSWERED — the flatness is what it MEANS for the module to be a branching, and the answer withdraws this line's own reason from one revision earlier.**
+
+**⌗⌗ THE ROW SAID "CONSULT THE DISCRIMINANT BEFORE COMPUTING".** ***Consulting it first is what produced the answer,
+and the answer is that there was never a candidate to price.***
+
+**⌗ THE STRUCTURE, at source.** *P14: "each hinge designates one of the three roots of the horizon cubic as its own
+black-hole horizon … **Every root, designated the slicing parameter, returns the SAME $2M=r_0-r_0^3$, so the three
+carry ONE mass parameter**."* ⇒ **One $2M$ → three roots → three hinges → three walls.**
+⇒⇒ ***THE BASE IS THE $2M$-PLANE AND THE FIBRE IS THE THREE ROOTS. THAT IS THE ROOT COVER*** — *`C1`/`C3`'s object:
+three-sheeted, branched at the two Nariai values, monodromy $S_3$, deck trivial, Galois closure the degree-six dial.*
+⛔ **AND A COVERING MAP CARRIES A CANONICAL FLAT CONNECTION BY DEFINITION** — *its whole content is monodromy, and a
+discrete fibre admits no local field strength.*
+
+**⇒⇒⇒ SO THE FLATNESS IS NOT AN ARTEFACT OF LEAF HOMOGENEITY — r2467's claim, withdrawn here. IT IS WHAT IT MEANS
+FOR THE MODULE TO BE A BRANCHING.** ⚠ ***r2467 read the branch points as sitting ON THE LEAF when they sit OVER THE
+$2M$-PLANE, and that is the whole of its error*** *— though its computation stands: the roots do move with $M$.*
+⌗ **And the candidate dies with it:** *a varying $m(r)$ **moves the base point along the $2M$-plane**, and* ***a
+cover stays flat under motion of its base point. There is nothing to compute.***
+
+**⛭⛭ AND P14's NEGATIVE HALF IS STRONGER THAN P14 STATES IT.** *"Flat holonomy … supplies no force — the geometry
+quantises and does not couple" reads as a **limitation of this construction**.*
+⇒ ***IT IS NOT. It is a theorem about branchings: any module that IS a branching is flat, so NO construction of this
+shape can supply a force.*** ⇒ **The curvature question does not need a source hunted for — it needs the module to
+STOP BEING A BRANCHING**, *which is harder, far better posed, and gives `PO-4`'s wall an additional structural
+reason.*
+
+**⌗ THE RULE, filed as a scrap:** ***locate the BASE before asking what varies over it.*** *"The branch points move
+with $M$" and "the branch points move across the leaf" are different sentences, and only the first is true.*
+⌗⌗ ***AND THE METHOD POINT IS THE ONE TO CARRY: the discriminant was never applied, because there was no candidate
+to price. Consulting the instrument BEFORE the computation is what sent this back to the structure, and the
+structure held the error.*** *The same shape as `L-213` at r2448, where a pre-fixed discriminant caught that
+supplying a precondition made an argument WORSE.*
+
+**Register: 229 rows, 185 struck. Gates: twenty-one, twenty rc=0** *(`check_grains` red — the plan documents are
+behind after eight revisions of movement).*
+
 ### Revision r2467 — 2026-08-11 (main line). **`L-233`'s FIRST STEP EXECUTED AND STOPPED WHERE THE ROW SAYS — a curvature source would have to be a spatially varying $m(r)$, and the corpus already has one.**
 
 **⌗⌗ THE INSTRUCTION WAS PRECISE AND IS OBEYED:** *"state what a curvature source would have to be on a flat
