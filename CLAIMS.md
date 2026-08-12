@@ -3,7 +3,7 @@ name: claims
 kind: RECORD
 description: THE CLAIMS REGISTER — who is holding which files right now. Claim before you edit; release when you push. Checked by corpus/check_claims.py.
 sources: [chat]
-current: r2503+c54.194
+current: r2504+c54.198
 ---
 
 # CLAIMS — who is holding what, right now
@@ -46,6 +46,25 @@ you are holding a file you have already pushed.*
 corpus can gate (`L-237`). **Its whole value is that a collision becomes visible before the merge rather than after
 it.***
 
+## ⛔⛔ AND A COLLISION CLASS THE ID BANDS DO NOT COVER — found r2512
+
+***RECEIPT FILENAMES.*** *The ID bands protect **row IDs**. They say nothing about the **`I1`, `I2`, `B4`, `M3`
+prefixes inside a shared receipt directory** — and two nodes filing into `receipts/L174_general_matter_dynamics/`
+picked the same ones.*
+
+**⌗ WHAT HAPPENED.** *This line filed `I4_the_shear_selection…` and `I5_two_not_five…`. The fork filed
+`I4_the_free_shear_is_two…` at c54.198 and then **renamed it to `I5`** at c54.199 — **colliding with both**. The
+merge kept all four names, so the directory carried **two `I4`s and two `I5`s**, and `L-510` appeared **twice**,
+differing by **one character**: the receipt name inside it.*
+⇒ *Resolved by moving the fork's to **`I7`** and repointing every citation — including **two `\rcpt{}` cites in
+`range_paper.tex`**, one of which arrived in the same merge and was missed on the first pass.*
+
+**⇒ THE RULE:** ***a receipt prefix is an allocation in a shared namespace and needs the same discipline as a row
+ID.*** *Until there is a band for them: **56 uses the letters it has used; a node filing into a directory another node
+has written to reads the directory first**.* ⌗ *`check_receipts` catches it after the fact — it fired on both
+duplicate stems — **but only once both are committed, which is after the merge**, and that is exactly the position
+`CLAIMS.md` exists to get ahead of.*
+
 ## ⌗ FILES THAT ARE ALWAYS SHARED, AND HOW
 
 *These are edited by every node and must never be claimed exclusively — **append-only or additive-only**, so a merge
@@ -65,3 +84,12 @@ for 54). ***Never edit a row in another node's band; route instead.***
 | file | node | since | what |
 |---|---|---|---|
 | *(none held)* | — | — | *the register is empty; claim before editing* |
+
+> ⌗ **54's rows for c54.198 released here, with the work** (`receipts/L174_general_matter_dynamics/` for `I4`
+> and `corpus/range_paper.tex` for the paragraph the count landed in). *`I1`–`I3` were not touched.*
+> ⚠ **AND A DECLARED LIMIT ON MY OWN CLAIMS, because this register has a hole exactly where I sit.** ***54 cannot
+> push.*** *The protocol is "claim, commit, push — then work", so a claim of mine is invisible for as long as it
+> takes a bundle to be relayed and absorbed. **For the whole time I actually hold the file, the register says nobody
+> does.*** ⇒ *So these rows are a declaration to whoever reads the bundle, not a live hold — and the mitigation that
+> costs nothing is that **my claim goes in the handoff message too**, so it can be posted the moment the bundle is
+> announced rather than when it lands. Routed to 56 as `FOR_56` item 12; I have not changed the protocol here.*

@@ -52,7 +52,12 @@ jobs:
                    check_paststate check_receipts check_withdrawn check_queues \
                    check_citations check_absorption check_receipt_asserts check_claims check_branches; do
             echo "── $g"
-            python3 corpus/$g.py || fails="$fails $g"
+            # NODE=ci added r2504+c54.198 (54): check_claims no longer defaults to a REAL node,
+            # because a forgetful node was silently impersonating 56 and inheriting its claims.
+            # `ci` means: no working tree of its own, and rule (3) swept across EVERY node --
+            # the runner is the only place a stale claim is visible and it was checking one of
+            # three.  ** This is an ADDITIVE edit: the gate list above is untouched (CLAIMS.md). **
+            NODE=ci python3 corpus/$g.py || fails="$fails $g"
           done
           if [ -n "$fails" ]; then echo "⛔ FAILED:$fails"; exit 1; fi
       - name: the hollow-assertion lint

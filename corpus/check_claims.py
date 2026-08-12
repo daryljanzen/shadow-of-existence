@@ -42,8 +42,49 @@ SHARED = {
 }
 
 
+NODES = ('54', '56', 'cc54')
+CI = 'ci'   # the runner: no 'me', and rule (3) swept across ALL nodes -- see main()
+
+
+def norm(cell):
+    """A node name as WRITTEN in the table, reduced to the name.
+
+    ** ADDED r2504+c54.198 BY 54, AND THE GATE CAUGHT ME WITH IT. **  I claimed two files as
+    `**54**` -- this corpus bolds everything, and CLAIMS.md's own prose writes the nodes as **56**,
+    **54**, **cc54** -- and the gate reported "modified here but held by **54**" while I WAS 54.
+    ** A collision register whose gate cannot tell `**54**` from `54` has the exact defect it was
+    built to remove, two nodes it cannot tell apart, reappearing inside itself. **
+
+    Normalisation is strict rather than fuzzy: emphasis, backticks and whitespace come off, and the
+    result must BE a known node name.  ** Anything else is returned unchanged so it reads as the
+    unknown holder it is ** -- a typo must not be normalised into a node.
+    """
+    t = cell.strip().strip('*').strip('`').strip('_').strip()
+    return t if t in NODES else cell.strip()
+
+
 def node():
-    return os.environ.get('NODE', '56')
+    """** NO DEFAULT.  r2504+c54.198, and this was a hole with my shape in it. **
+
+    `os.environ.get('NODE', '56')` meant a node that forgot the variable did not fail -- it
+    IMPERSONATED 56 and inherited 56's claims.  ** The one default a collision gate cannot have is
+    one of the colliding parties. **  Routed to 56 as FOR_56 item 13 and applied here because it
+    silently mis-reported this very revision.
+    """
+    v = os.environ.get('NODE')
+    if v is None:
+        sys.stderr.write(
+            '  check_claims: NODE is unset.  Set it to one of %s -- this gate cannot\n'
+            '  guess, and defaulting to any of them makes a forgetful node impersonate that one.\n'
+            '  (CI sets NODE=ci: no working tree of its own, and it sweeps EVERY node\'s claims.)\n'
+            % ', '.join(NODES))
+        sys.exit(2)
+    if v == CI:
+        return CI
+    if norm(v) not in NODES:
+        sys.stderr.write('  check_claims: NODE=%r is not one of %s\n' % (v, ', '.join(NODES)))
+        sys.exit(2)
+    return norm(v)
 
 
 def table():
@@ -57,7 +98,7 @@ def table():
         c = [x.strip() for x in line.strip().strip('|').split('|')]
         if len(c) < 4 or c[0] in ('file', '---') or c[0].startswith('*('):
             continue
-        rows.append(tuple(c[:4]))
+        rows.append((c[0], norm(c[1]), c[2], c[3]))
     return rows
 
 
@@ -74,7 +115,7 @@ def dirty():
 def main():
     me = node()
     rows = table()
-    mods = dirty()
+    mods = [] if node() == CI else dirty()
     fails = []
     print()
     print(f'  check_claims -- node {me}')
@@ -105,18 +146,32 @@ def main():
             print(f'     [warn] {f} modified without a claim '
                   f'-- fine if nobody else is in it, but nothing says so')
 
-    # (3) stale claims
-    for f in mine:
-        if f not in mods and os.path.exists(os.path.join(ROOT, f)):
-            print(f'     [warn] {me} holds {f} with no local edit -- release it if pushed')
+    # (3) stale claims.
+    # ** r2504+c54.198: SWEPT ACROSS EVERY NODE WHEN RUN AS `ci`, and that is the whole point of the
+    # ** mode.  Run as a node, this rule can only ever see that node's own rows -- so on the runner,
+    # ** which has the PUSHED tree in front of it and is the only place a stale claim is visible at
+    # ** all, it was checking one of three nodes.  A stale claim is stale whoever holds it.
+    if me == CI:
+        for f, ns in sorted(held.items()):
+            if os.path.exists(os.path.join(ROOT, f)) and f not in SHARED:
+                fails.append(f'{f} is still held by {", ".join(sorted(ns))} on the pushed tree '
+                             f'-- a claim outlives its push only by being forgotten')
+    else:
+        for f in mine:
+            if f not in mods and os.path.exists(os.path.join(ROOT, f)):
+                print(f'     [warn] {me} holds {f} with no local edit -- release it if pushed')
 
     print()
     if fails:
         for f in fails:
             print(f'  [FAIL] {f}')
         print()
-        print('  ⛔ A COLLISION IS BEING CREATED RIGHT NOW.  Claim it, or route your change to the')
-        print('     holder via FOR_54.md / FOR_56.md instead of editing under them.')
+        if me == CI:
+            print('  ⛔ CLAIMS SURVIVED THEIR OWN PUSH.  The protocol is claim -> work -> release WITH')
+            print('     the work, so a row still standing on the pushed tree is a hold nobody is in.')
+        else:
+            print('  ⛔ A COLLISION IS BEING CREATED RIGHT NOW.  Claim it, or route your change to the')
+            print('     holder via FOR_54.md / FOR_56.md instead of editing under them.')
         return 1
     print('  no collisions declared.')
     print('  ⌗ A claim is a DECLARATION, not a lock -- its value is that a collision becomes visible')

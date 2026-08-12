@@ -146,6 +146,108 @@ sources: [cowork, chat]
 
 
 
+### Revision r2512 — 2026-08-11 (main line). **c54.199 MERGED — r2505's shear-selection attribution is WITHDRAWN, and the third instance of "two objects, one word" was made four revisions before this line filed the rule.**
+
+**⛔ THE CORRECTION.** *r2505 answered "nothing selects among the shear" with P9's **shift–shear link** — Goldberg–Sachs,
+the substrate's shear-free rulings, Type D against Type I. **Right that the corpus selects, right that the selection is
+vacuum-bound.*** ⇒ ***Wrong that it constrains the object `I3` counted.***
+*· the **OPTICAL** shear (Goldberg–Sachs) is **one complex scalar on a NULL GEODESIC CONGRUENCE** and an
+**invariant**;*
+*· the **ADM** shear $\sigma_{ij}$ is **five real components on a SPATIAL LEAF** and **foliation-bound**.*
+
+**⛭⛭ AND c54.199's PROOF IS ONE EXAMPLE, which is what makes it decisive.** ***Schwarzschild is Type D with shear-free
+principal null directions in EVERY slicing — and its ADM shear is $3M/r^3$ in Painlevé–Gullstrand and $0$ in static
+coordinates. The entire difference is the longitudinal piece $W_r=-\sqrt{M/2r}$, so $\sigma^{TT}=0$ in both.***
+⇒⇒ ***THE THREE THE MOMENTUM CONSTRAINT OWNS CARRY THE FOLIATION; THE TWO IT LEAVES CARRY THE GEOMETRY.*** *Which is
+why the count is two and why Goldberg–Sachs cannot bear on it.* *The fork's receipt run here at rc=0.*
+
+**⌗⌗ AND THE SEQUENCE IS THE ENTRY.** *r2509 filed **"two objects sharing one word"** after this line mistook
+`L-202`'s antilinear phase for `CRPHI`.* ⇒ ***r2505 had already made the same error with "shear", four revisions
+earlier.***
+⇒ ⛭ ***Filing a rule does not sweep the revisions behind it. A newly-named failure class is a QUERY TO RUN BACKWARDS
+over recent work, not just a guard for what comes next*** *— and this line filed it, then worked `L-206`, `L-203` and
+the acoustic front, and never ran the query.* ⌗ *Cheap version: **when you name a confusion class, grep the last ten
+revisions for the same shape before moving on.***
+
+**⛔ AND A COLLISION CLASS THE ID BANDS DO NOT COVER: RECEIPT FILENAMES.** *The bands protect **row IDs** and say
+nothing about the `I1`/`I2`/`B4` prefixes inside a shared receipt directory.* ⇒ *This line filed `I4` and `I5`; the
+fork filed `I4` at c54.198 and **renamed it to `I5`** at c54.199 — **colliding with both**. The merge kept all four,
+so the directory carried **two `I4`s and two `I5`s**, and **`L-510` appeared twice, differing by ONE CHARACTER: the
+receipt name inside it**.*
+⇒ *Resolved by moving the fork's to **`I7`** and repointing every citation — including **two `\rcpt{}` cites in
+`range_paper.tex`**, the second of which arrived in the same merge and was missed on the first pass. **And a
+conflict marker survived inside `range_paper.tex` itself**, breaking the build until swept — `git checkout --theirs`
+on the appendix files did not cover the paper.*
+⌗ *Recorded in `CLAIMS.md`. **`check_receipts` catches duplicate stems, but only once both are committed — which is
+after the merge, and that is exactly the position `CLAIMS.md` exists to get ahead of.***
+
+✔ *All 17 papers compile; register clean at 245 rows, zero duplicated IDs.*
+
+### Revision r2511 — 2026-08-11 (main line). **`THE_WEAVE` BROUGHT CURRENT — convergence has a third form, and it is between NODES rather than between fields.**
+
+**⛭⛭ THE SAME MEASUREMENT, MADE TWICE, BY TWO NODES, ON TWO INSTRUMENT PATHS.** *cc54 ran routed item 38 at
+production depth on **its own runner**; 54 ran it on `ACOUSTIC_two_arm` from **its own tree**.*
+⇒ ***Both give `CRPHI`$=0\to\phi/\pi=0.8780$ and `CRPHI`$=\pi\to0.6711$ — agreeing to the digit, four spectra,
+neither node having seen the other's numbers.***
+⇒⇒ ***That is not convergence of PROBES on one object. It is convergence of INSTRUMENTS on one number — and it tests
+the instrument rather than the object, which nothing else in this corpus does.***
+
+**⌗ SO THE WEAVE NOW HOLDS THREE MECHANISMS, each evidence of a different thing:**
+*· **adjacency** — the parts are **connected**: a debt here is payable from there;*
+*· **convergence of probes** — the **object** is real: three mathematics stations at one knot (`L-203`);*
+*· **convergence of instruments** — the **measurement** is real: two nodes, two code paths, one number.*
+⚠ *And only the third can catch a shared-code artefact, **because the two paths do not share the code**.*
+⌗ **THE OPERATIONAL COROLLARY:** ***when a number becomes load-bearing, a second node re-measuring it on a different
+path is worth more than another decimal place from the first*** *— and it costs nothing, because the nodes are
+already running.*
+
+**⌗ AND THE SAME SPAN PRODUCED ITS DARK TWIN: A CLAIM CORRECTED FROM TWO DIRECTIONS AT ONCE.** *r2504's "nothing
+selects among five shear configurations" fell to the **vacuum** side at r2505 (Goldberg–Sachs exists and is
+hypothesis-bound) and to the **constraint** side at c54.198 (the momentum constraint fixes three, leaving **two** —
+the graviton's polarizations, which `cor:radiation` already names).*
+⇒ ***A claim that draws two independent corrections was not a near-miss. It was a claim made without looking — and
+the weave is what made both looks cheap: the constraint was in the same receipt, and the naming sentence was one line
+past a passage already quoted.***
+
+⌗ *Also propagated into the file: **`L-206` and `L-203` struck**; **the acoustic front's four withdrawals** with the
+spacing at 98.2% the one thing that does not move; and **`CLAIMS.md`, `check_claims`, `check_branches`**, built after
+cc54's work stranded twice.*
+
+### Revision r2510 — 2026-08-11 (main line). **c54.198 MERGED — the unworked stratum's free shear is TWO, not five, and the constraint that fixes the other three was printed in this line's own receipt.**
+
+**⛔ THE CORRECTION, and it is exact.** *c54.198: "`I3` closes 'a five-dimensional space of shear configurations at
+fixed $\rho$ — and nothing selecting among them', **four lines after writing down the constraint that selects**: the
+trace-free momentum constraint is $D_j\sigma^{ij}$, and under the York split $\sigma=\sigma^{TT}+(LW)$ it is an
+elliptic equation for $W$ ALONE."*
+⇒ *Verified: **trace-free symmetric 5, minus the vector $W$ the momentum constraint fixes 3, leaves $\sigma^{TT}$
+with TWO.***
+
+**⛭⛭ AND P9 ALREADY NAMES THE TWO — one sentence past the corollary this line quoted at r2503.** *`cor:radiation`:*
+***"The graviton's two propagating polarizations are exactly the transverse degrees of freedom a sweep cannot carry,
+since a swept geometry depends only on its orbit-space coordinates while a free wave depends on the transverse
+[directions]."***
+⇒⇒ ***So the unworked stratum's free data is TWO FUNCTIONS, they are the graviton's polarizations, and P9 already
+says the construction's own mechanism cannot carry them.*** *Far better posed than "five unconstrained components":
+**two named modes, and the exclusion already stated**. The question becomes whether anything other than a sweep is
+available.*
+
+**⌗ AND THE FAILURE IS THIS LINE'S, CORRECTED TWICE IN TWO REVISIONS FROM TWO DIRECTIONS:** *r2505 caught "nothing
+selects" from the **vacuum** side (Goldberg–Sachs exists and is hypothesis-bound); c54.198 caught the **count** from
+the **constraint** side —* ***and the constraint was in `I3`'s own printed output.***
+⇒ ⛭ ***A claim that draws two independent corrections was not a near-miss. It was a claim made without looking, and
+the looking was cheap both times.***
+⌗ **AND THE SECOND RULE:** ***quoting a passage is not reading it.*** *r2503 cited `cor:radiation` for the Type-N
+plane wave and stopped.* ***A citation lifted for one clause leaves the rest of the paragraph unread — and the rest
+of that paragraph was the whole answer.***
+
+⚠ *r2504's **identity stands** and the fork re-derived it on a general 3-metric. **What is withdrawn is the COUNT and
+the "nothing selects" clause.** And the stratum is still unworked: **two free functions is still two functions**.*
+
+⌗ *The merge: **second true three-way**, based on r2504 with this line five revisions past. **Register clean — 244
+rows, zero duplicated IDs.** Eleven text conflicts, eight in generated files; the four real ones (`ABSORPTION`,
+`FOR_56`, `receipts/INDEX`, `regen_board`) all **additive, both sides kept** — and **r2509's zero-velocity bound
+re-applied on top of the fork's newer `L-171` text**, since the fork could not know about it.*
+
 ### Revision r2509 — 2026-08-11 (main line). **c54.195's WITHDRAWAL IS TOO WIDE — the band across the admissible phases is a third of the gap, and over that pair the control is NOT inside.**
 
 **⛔ THE WITHDRAWN STEP FIRST, because this line reached for it and it is wrong.** *`L-202` records that **"reality

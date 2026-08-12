@@ -46,41 +46,39 @@ VEINS = {
  'L-202': ("p0 item 4 \u00b7 WHAT THE SEAM CARRIES",
    "the phase is the **antilinear face $K$**; reality admits **exactly two values**; $K$ acts trivially on the "
    "reality set while **$R$ exchanges the branches**; off-real, $K$ **swaps the two wings of the lap** and "
-   "$R\\circ K$ **closes charge conjugation**; $K$ **fixes the photon congruence**. \u26ed r2507: and the seam is now "
-   "measured from the OTHER side by two nodes independently at production depth \u2014 **the acoustic SPACING does "
-   "NOT move with the seam phase** (holds at $\\sim0.97\\,\\ell_A$ for every phase, robust to 1.9%) **while the "
-   "acoustic PHASE does** (cc54's `B7`: the asymptotic intercept moves $\\sim0.31\\,\\ell_A$; 54's c54.195: the "
-   "phase spans 0.891 in $\\phi/\\pi$, with the control's value inside)",
-   "**whether a MASSIVE trajectory carries a phase** \u2014 the null ones are $K$'s fixed set; and \u26d4 r2507 "
-   "**what FIXES the datum's phase**: it is measurably load-bearing and still **ASSIGNED rather than derived**, so "
-   "until `CRPHI` is fixed from the progenitor anything read off the phase carries a datum band comparable to "
-   "itself \u2014 though \u26ed r2509 bounds it: across the two ZERO-VELOCITY phases ($\\sin\\phi=0$, "
-   "i.e. $\\phi=0,\\pi$) the band is **0.2069 against a 0.6152 disagreement**, and **at $\\phi=\\pi$ the arm "
-   "is still 0.408 from the control**, so over that pair the control is NOT inside"),
+   "$R\\circ K$ **closes charge conjugation**; $K$ **fixes the photon congruence**",
+   "**whether a MASSIVE trajectory carries a phase** \u2014 the null ones are $K$'s fixed set"),
 }
 
 # ** THE LEADS -- everything noticed that could inform a vein.  (id, what, veins it informs,
 # GROUNDED 0-3: how solid the footing is, INFORMS 0-3: how much a vein would learn). **
 # ** A lead with NO vein links is instrument work.  It is not counted as progress on the map. **
 LEADS = {
- 'L-174': ("**exhibit the bend for a geometry with NO CONTINUOUS ISOMETRY** \u2014 the one unworked stratum. "
-   "Narrowed r2503: the symmetric sector is **closed form**, the spherically symmetric general case **exhibited "
-   "r2450**, and the confined inhomogeneous case (2 KV) **worked explicitly in P11**. ⛭ r2504: P11's "
-   "identification is a **general ADM identity** \u2014 the Killing vectors buy a **count**, so the build is "
-   "**exhibit a bend with a five-component $\\sigma_{ij}$**, and the obstruction is named: **$\\sigma^2$ enters "
-   "$\\rho$ with a minus sign, leaving a five-dimensional space of shears at fixed $\\rho$ with nothing selecting "
-   "among them. \u26d4 r2505: the corpus DOES select \u2014 Goldberg\u2013Sachs via the shift\u2013shear link \u2014 but **that is a VACUUM theorem and the stratum is where matter is dynamical**, so the gap is: **supply a shear-selection statement that does not assume vacuum**",
+ 'L-174': ("**exhibit a bend carrying the graviton's TWO transverse polarizations** \u2014 the one unworked "
+   "stratum, and everything with $\\ge1$ Killing vector is worked (closed form / LTB r2450 / Gowdy in P11). "
+   "\u26ed c54.198: the free shear is **two, not five** \u2014 the momentum constraint fixes $W$ under the York "
+   "split \u2014 and `cor:radiation` already names them: **'the transverse degrees of freedom a sweep cannot "
+   "carry'**, so the question is whether anything other than a sweep is available. \u26d4 c54.199: and the two "
+   "the constraint LEAVES are the ones that carry the geometry \u2014 **Schwarzschild's ADM shear is $3M/r^3$ "
+   "in Painlev\u00e9\u2013Gullstrand and $0$ in static slices, the whole difference longitudinal, so "
+   "$\\sigma^{TT}=0$ in both** \u2014 so **the three the constraint owns carry the FOLIATION and the two it "
+   "leaves carry the GEOMETRY**, and \u26d4 **Goldberg\u2013Sachs bears on the OPTICAL shear, not on "
+   "$\\sigma^{TT}$** (r2505\u2019s attribution withdrawn)",
    ['L-165','L-175'], 3, 3),
-'L-171': ("**PO-7** \u2014 whether the acoustic disagreement is real against the sky. ⚠ *The $0.62\\pi$ "
-   "is **withdrawn** (`L-508`, c54.195): across four production-depth seam phases the acoustic phase spans "
-   "0.891 in $\\phi/\\pi$ and the peak heights 0.483–1.618, **with the control's values inside both**.* ⇒ "
-   "**What is open is sharper: no reading tried brings the spectrum within sixty times the control, so "
-   "where the disagreement lives is not a single named quantity** — and the SPACING, which is robust to "
-   "1.9%, is the one thing that does not move",
-   ['L-202'], 2, 3),
  'L-207': ("\u24f6 the confined/branch-point exhibition \u2014 **gated on PO-6 and must not be opened without "
    "it** (\u24f5 discharged r2450)",
    ['L-165'], 1, 3),
+ 'L-510': ("**the unworked stratum's free shear is TWO, not five** \u2014 the momentum constraint owns three "
+   "under the York split, and **P9 already names the remaining two as the graviton's polarizations**. So the "
+   "Killing vectors buy 1-of-2, and the dark interior is **how the transverse 2-plane turns over the leaf**, "
+   "not which of a five-dimensional family",
+   ['L-165','L-175'], 3, 2),
+ 'L-511': ("**two objects, one word**: Goldberg--Sachs governs the **optical** shear of a null congruence "
+   "(2 real, an invariant); `I3`'s $\\sigma_{ij}$ is the **ADM** shear of a leaf (5 real, foliation-bound). "
+   "Schwarzschild is Type D in every slicing while its leaf shear is $0$ on static slices and $3M/r^3$ on "
+   "Painlev\u00e9--Gullstrand ones \u2014 and the whole difference is longitudinal, so **both r2505 and "
+   "`L-510` stand and neither answers the other**",
+   ['L-165','L-175'], 3, 2),
  'L-204': ("R-P stations \u2462\u2463 \u2014 P8/P9, GR field equations and the exact-solution catalogue",
    ['L-165','L-175'], 3, 2),
  'L-217': ("the CR/Higgs relation is stated; **`F1` stays live \u2014 the relation breaks if the gauge group is "

@@ -1183,8 +1183,8 @@ has since been regenerated with the row **reworded** — so the pin misses while
 `P15_the_low_ell_minimum` — "the citation moved, not the physics." ***Here it is the receipt's OWN arc-pin that moved,
 not a `\rcpt{}` marker — so no static gate sees it, and only a run does.****
 
-**⌗ AND THE SCOPE, because these 3 are the leading edge of it:** ***22 receipts pin `THE_LIVE_ARC.md` prose by exact
-substring; 3 have drifted, 19 still match — but every one of the 19 is exposed to the next arc regeneration.*** *The
+**⌗ AND THE SCOPE, because these 3 are the leading edge of it:** ***23 receipts pin `THE_LIVE_ARC.md` prose by exact
+substring; 3 have drifted, 20 still match — but every one of the 20 is exposed to the next arc regeneration.*** *(re-verified at r2512: the count rose 22→23 when the new L174 receipt landed, and it too pins the arc.)* *The
 coupling is unlinted: nothing checks that a receipt's arc-pins are still present.*
 
 **⚠ CI VISIBILITY:** *`check_receipts_run.py` counts all three as **REAL** failures (none is in its `camb`/`pynucastro`
@@ -1196,8 +1196,8 @@ check in favour of the physics the receipt already computes. ***cc54 did not edi
 and the right re-anchor depends on whether each row was **corrected** (B3 — the flagged overclaim is simply gone) or
 merely **reworded** (I1, F1 — the finding is still in the arc under new words), which is your call, not a mechanical
 substitution.*
-**Not claimed:** *· not that any physics regressed — every finding is intact and 344/347 pass; · not that the 19
-still-matching pins are wrong — they match today; · not that this line should own the fix.*
+**Not claimed:** *· not that any physics regressed — every finding is intact; · not that the 20 still-matching pins
+are wrong — they match today; · not that this line should own the fix.*
 
 ---
 
