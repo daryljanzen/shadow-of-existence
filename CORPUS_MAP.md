@@ -146,6 +146,47 @@ sources: [cowork, chat]
 
 
 
+### Revision r2437 — 2026-08-11 (main line). **`L-224` WORKED — and the measure was corrected first, because a coverage ratio is the fourth quantity whose meaning depends on its subject.**
+
+**⌗⌗ THE HYPOTHESIS WAS TESTED AND REFUTED, WHICH IS WHY THE FINDING SURVIVED.** *r2435 flagged P15 on a
+**coverage ratio** (2.6 K station against a 205 KB paper). The obvious defeater — that P15's size is mostly `%`
+comments — was measured:* ***P15 is 3% comments, the LOWEST in the corpus.*** *The ratio holds.*
+⚠ **But a ratio was still the wrong instrument, and this is the fourth time:** *`G1`'s distance, the phrase test, the
+quotation check, and now this.* ⇒ ***THE HONEST MEASURE IS SECTION COVERAGE, WHICH IS COUNTABLE: how many of a
+paper's labelled sections does its station name?*** **P15: 5 of 19. P16: 6 of 9.** *A bounded list, not a rebuild.*
+
+**⌗ AND THE STATIONS ARE NOT BADLY WRITTEN — THEY ARE DATED.** *Read at source they are dense and accurate about what
+they cover; they were written at **r920**, and* ***P15 has grown fourteen labelled sections since.*** ⇒ **The map did
+not run out of care; it ran out of date — and the paper it fell furthest behind is the one that moved most**, *which
+is exactly what `ARC 17`'s synthesis predicts about a document made wholly of true-for-now statements.*
+
+**✔ ADDED THIS REVISION — the three P15 sections the LIVE FRONT runs through, plus P16's two substantive ones:**
+*· **`sec:instrument`** — **what a node may stand on**: peak and trough positions to $\le0.5\%$, $x_e(z)$ and its
+derivative to $\sim1\%$, matter–radiation equality to $0.02\%$, the transfer function to better than $1\%$ below
+$k=0.02\,$Mpc$^{-1}$ — ***and what it may NOT: sub-per-cent amplitude above it, where agreement is 1–2% with scatter
+in both directions and no trend.***
+*· **`sec:refit-bound`** — ***"only one of them is a prediction."*** *$\ell_*$ is $H_0$-independent and therefore
+**spent** as an accommodation; $\theta_D/\theta_*=+13.96\%\pm0.89\%$ then follows **with nothing left to adjust**,
+varying $+43\%$ to $-3\%$ across candidate onsets so **one datum cannot absorb both**. And the thickness **cancels
+from the ratio** while $z_*$ on this rate moves **only $-0.11\%$** ($z_*=1091$ against 1090 — the check that the
+ionisation history is right).* ⇒ ***"The first peak therefore sits where it is measured, and for a reason internal to
+the construction rather than by accommodation."***
+*· **`sec:predictions`** — with the withdrawal a node must not read past: **the collapse leg IS the $\beta=+2$ root of
+$\beta(\beta-1)=2$**, returning a flat spectrum to a part in $10^4$, so* ***the construction HAS a scale-invariant
+background and what it lacks is the spectrum REACHING the observer.***
+*· **`sec:trev`** — ***freeze-out is a cooling phenomenon, so the turnaround is REQUIRED by the abundances rather than
+permitted by the geometry***: **"the heating leg cannot fix a surviving abundance; only a subsequent cooling pass
+can."**
+*· **`sec:verdict`** — **symmetric rather than triumphal**: D and He-4 produced at observed values, **Li-7 the standard
+problem shared and not dissolved**, on* ***the same single $\eta$ threading the CMB and the light elements*** *($-0.5$
+and $+0.5\sigma$).*
+
+⇒ **P16 is now 8 of 9. P15 is now 8 of 19, with the eleven remaining NAMED IN THE STATION ITSELF** — *so the gap is
+checkable rather than implied, which is the same "declare, do not infer" pattern as `DECLARED-UNDATED` and
+`[REPORTED]`.* **`L-224` stays open at its honest size.**
+
+**Register: 217 rows. Gates: twenty-one, twenty rc=0.**
+
 ### Revision r2436 — 2026-08-11 (main line). **THE FORK `ARC 16` HANDED FORWARD WAS A FALSE FORK — the answer was a capability that already existed, and the gate caught a row this line had answered and never struck.**
 
 **⌗⌗ THE QUESTION WAS "INSTRUMENT THE OVERWRITE OR ACCEPT IT?" AND BOTH HORNS WERE WRONG.**

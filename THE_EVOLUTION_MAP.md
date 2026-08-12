@@ -1025,6 +1025,58 @@ sweep across all preambles found **only that one stale site**. P6 10pp, 0 undefi
 4. **THE TRANSMISSION DICHOTOMY (the decisive proof)** — the degenerate (κ=0) Nariai seam is scale-free and transmits the progenitor tilt; the non-degenerate horizon would imprint n_s→1. **CR has no inflationary scale-invariant attractor, no consistency relation, no substrate B-modes.**
 5. **THE PARAMETER-FREE LOW-ℓ FALSIFICATION EDGE** — flat distances + closed-S³ source through the flat j_ℓ(k_L D_C) → ℓ₂≈7.8, quadrupole ~0.2 ΛCDM; **lands the quadrupole, over-predicts ℓ=3–4**, the octopole the exposed edge (cosmic-variance-limited).
 
+**⛭⛭ SECTIONS ADDED r2437 (`L-224`) — the station was written at r920 and P15 has grown fourteen labelled sections
+since. These are the three the live front runs through, so their absence cost something today.**
+
+6. **`sec:instrument` — THE ACOUSTIC INSTRUMENT, AND WHAT IT IS VALIDATED AGAINST.** *A Boltzmann transfer built for
+   this programme, and the station's job is to say **what a node may stand on**: a **full photon hierarchy with
+   polarisation, second-order tight coupling, massless neutrinos, and a Peebles recombination history**, the
+   line-of-sight source carrying the monopole with the potential, the Doppler term, the ISW term, and the quadrupole
+   with its own projection kernel $(j_\ell+3j_\ell'')$.* ⌗ **Against an independent Boltzmann code at identical
+   parameters, unlensed and reionisation off:** *peak and trough **positions to $\le0.5\%$** across $P_1$–$P_4$;
+   $x_e(z)$ and its derivative to **$\sim1\%$** through the visibility peak; matter–radiation equality to
+   **$0.02\%$**; the transfer function to **better than $1\%$ for $k<0.02\,$Mpc$^{-1}$**, and $1$–$2\%$ above it
+   **with residual scatter in both directions and no trend**.* ⇒ ***So a node may stand on the instrument's positions
+   and its ionisation history; it may NOT stand on sub-per-cent amplitude above $k=0.02$.***
+
+7. **`sec:refit-bound` — WHICH OF THE TWO ACOUSTIC FEATURES IS A PREDICTION, AND WHICH IS SPENT.** *"Two features of
+   this cosmology's acoustic scale are worth separating, because **only one of them is a prediction**."*
+   *· $\ell_*=\pi D_M/r_s$ is **$H_0$-independent** here — both lengths scale as $1/H_0$ — so **the measured angle
+   does not determine $H_0$**, which is the origin of the low CMB value in flat $\Lambda$CDM. **The branch point's
+   radiation amplitude takes that constraint instead and $H_0$ is left to be the directly measured one.***
+   ⇒ ***"So the acoustic scale is an accommodation, and it is spent. The diffusion scale is not."***
+   *· Holding $\ell_*$ fixes the onset redshift, and then* $\theta_D/\theta_*=+13.96\%\pm0.89\%$ *follows **with
+   nothing left to adjust** — varying from $+43\%$ to $-3\%$ across candidate onsets, so **a single datum cannot
+   absorb both observables**.* ⌗ **And two contributions that might have been expected do not enter:** *the
+   last-scattering thickness **cancels from the ratio** (it scales with the rate in both width and conversion), and
+   $z_*$ integrated on this rate through Peebles moves by **only $-0.11\%$**, returning $z_*=1091$ against the
+   standard $1090$ — **which is the check that the ionisation history is handled correctly**.*
+   ⌗ **And the first peak is a separate matter and does not move:** *its offset from $\ell_*$ — **220 against 301.7**
+   — is largely the driven-decay phase shift, **which has the same closed form on the collapse leg as on an expanding
+   radiation era, so it transfers**; what does not transfer is the early ISW, and that is **a nearly flat
+   multiplicative factor across the first-peak region** (~10% in amplitude, varying two parts in a hundred between
+   $\ell=150$ and $300$), **displacing the maximum by one or two multipoles rather than tens**.* ⇒ ***"The first peak
+   therefore sits where it is measured, and for a reason internal to the construction rather than by
+   accommodation."***
+
+8. **`sec:predictions` — THE SIGNATURES, WITH THEIR MATURITY MARKED, and one withdrawal a node must not read past.**
+   *Classical non-vacuum primordial statistics, **no inflationary consistency relation, no substrate-sourced
+   $B$-modes** (established); and the transmission character — the branch point carries the progenitor tilt and does
+   not drive $n_s\to1$ by any **inflationary** attractor.*
+   ⚠⚠ ***AND THE UNQUALIFIED FORM IS WITHDRAWN IN THE PAPER'S OWN VOICE: "that the construction has no
+   scale-invariant attractor at all — is withdrawn, and what replaces it is stronger rather than weaker."***
+   *Scale invariance needs $\beta(\beta-1)=2$, whose **two** roots are $\beta=-1$ (de Sitter inflation) and
+   $\beta=+2$ (matter-dominated contraction) —* **and the collapse leg is the second root exactly**, *returning a flat
+   spectrum to a part in $10^4$.* ⇒ ***So the construction HAS a scale-invariant background; what it lacks is the
+   spectrum reaching the observer, which the continuation's diagonality settles.*** ⌗ *A node standing here must
+   carry the **qualified** form — routed to the fork as item 17 precisely because the unqualified wording survives in
+   two later verdict passages.*
+
+⚠ **STILL NOT WRITTEN, and named so the gap is checkable rather than implied:** *`sec:properframe`, `sec:flatlcdm`,
+`sec:what-crosses`, `sec:envelope`, `sec:envelope-consequence`, `sec:largescale`, `sec:scope`, `sec:background`,
+`sec:intro`, `sec:discussion`, `sec:conclusion`.* ⌗ ***Eleven of the fourteen. `L-224` stays open, and the count is
+the measure — not a coverage ratio, which flagged the right paper for the wrong reason.***
+
 **Available to a node at P15:** the completed, data-confronted cosmology — the derivation, the dissolved tensions, the coherence/heights/amplitude/throat/transmission structure, and the low-ℓ edge. **Not yet:** the cosmogenesis synthesis and the light-element abundances *produced* (P16).
 
 **Guard:** the observable rate is radiation-free sinh^{2/3} read leftward; the low-ℓ deficit is the falsification edge (throat-tower ℓ ≠ CMB multipole); the heights match by time-reversal *structure*, the digit-level solve open. **Coherence, not correspondence** — the octopole and the radiation-free rate are the data's to judge.
@@ -1046,6 +1098,35 @@ sweep across all preambles found **only that one stale site**. P6 10pp, 0 undefi
 **Available to a node at P16:** the entire corpus made one object — the substrate, its dynamics, its matter sector, its data-confronted cosmology, and now the forced synthesis that lights it. **Nothing above the line:** P16 is the arc's terminus in citation order; p0 (read next as p17) stands *below* all of it, the seven-ways core the whole tower reduces back to.
 
 **Guard:** the two rates are different objects — the scoping *is* the reassignment, asserted now, not assumed. Synthesis, not inheritance (the Big Bang is forced, the abundances produced). **Coherence, not correspondence** — the Y_p/D/H digits and the Li-7 ledger are the data's to judge; CR forces the *structure* of the synthesis, not the last significant figure.
+
+
+**⛭ SECTIONS ADDED r2437 (`L-224`) — the two substantive ones the station never named.**
+
+**`sec:trev` — FREEZE-OUT IS TIME-REVERSAL VIOLATING, AND IT IS WHY THE TURNAROUND IS LOAD-BEARING.** *"Which leg
+matters, because nucleosynthesis is not time-symmetric."* ⌗ *A freeze-out is **a cooling phenomenon**: on a cooling
+history the reaction rate falls through $\lvert\mathcal H\rvert$ and the abundance freezes at a relic value above its
+vanishing equilibrium; **on a heating history the rate rises, equilibrium is maintained, and no relic is left**. A
+Boltzmann two-species toy confirms it directly — **run it cooling and a relic survives; run the same network heating
+and the abundance tracks equilibrium to zero**.*
+⇒ ***"The heating leg — the infall — cannot fix a surviving light-element abundance; only a subsequent COOLING pass
+through the window can. The turnaround from collapse to expansion is therefore not incidental to the abundances: it
+is the event that makes them."*** ⌗ **So a node standing at P16 may rely on the turnaround being *required* by the
+abundances rather than merely permitted by the geometry** — *which is the sharpest form of the paper's own thesis and
+was absent from this station.*
+
+**`sec:verdict` — THE VERDICT, AND IT IS SYMMETRIC RATHER THAN TRIUMPHAL.** *"Deuterium and helium-4: **yes,
+produced at their observed values** by the standard-rate cooling leg with a single inherited datum. Lithium-7: **the
+standard problem, shared, not dissolved**."*
+⇒ ***"On the light elements CR is thus neither better nor worse than flat $\Lambda$CDM — two successes and one shared
+problem — but it obtains them from the collapse rather than from a posited initial hot phase."***
+⌗ **And the confrontation is JOINT, which is the part a node must carry:** *run at the $\eta$ **Planck reads from the
+CMB peak heights** ($\eta_{10}=6.13\pm0.04$), the network meets the independently measured primordial values —
+**deuterium at $-0.5\sigma$, helium-4 at $+0.5\sigma$** — ***the SAME single $\eta$ threading the CMB and the light
+elements***, *with theory errors propagated from the reaction rates.*
+⚠ *So the claim available here is **not** "CR explains the abundances better"; it is **"CR obtains them from
+structure it already has, on one datum shared with the CMB, and inherits lithium's problem unchanged."***
+
+⚠ *Still not written: `sec:intro`.* ⌗ *P16 is now **8 of 9 sections named** — against P15's **8 of 19**.*
 
 ---
 
