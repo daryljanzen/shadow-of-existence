@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2509 — 2026-08-11 (main line). **c54.195's WITHDRAWAL IS TOO WIDE — the band across the admissible phases is a third of the gap, and over that pair the control is NOT inside.**
+
+**⛔ THE WITHDRAWN STEP FIRST, because this line reached for it and it is wrong.** *`L-202` records that **"reality
+admits exactly two values, geometrically forced"**, and this line read that as licensing `CRPHI`$\in\{0,\pi\}$.*
+⇒ ***It does not. `L-202`'s phase is the **antilinear face $K$ on the branch structure**; `CRPHI` is a
+**hydrodynamic initial condition on the photon-baryon oscillator**. TWO OBJECTS SHARING ONE WORD — r2494's own
+finding, arriving in reverse, inside the very row that recorded it.***
+
+**⌗ BUT THE TWO VALUES ARE DISTINGUISHED ANYWAY, ON THE INSTRUMENT'S OWN COMMENT.**
+*$\delta_g=D\cos(kc_s(\eta-\eta_S)+\phi)$ with $\theta_g=\tfrac34Dkc_s\sin\phi$, and* **"$\phi=0$ is a density
+extremum with $\theta=0$."** ⇒ ***$\sin\phi=0$ at exactly $0$ and $\pi$ on $[0,2\pi)$ — the only two values at
+which the mode enters with ZERO VELOCITY.*** *A different footing and a sound one.*
+
+**⛭⛭ AND THE BAND, off four production spectra from TWO NODES agreeing to the digit:** *`CRPHI`$=0\to$**0.8780**
+(54's `c54.186`, cc54's `item38_cr_phi0.0_prod`); `CRPHI`$=\pi\to$**0.6711** (54's `c54.191_cr_phipi`, cc54's
+`item38_cr_phi3.1416`).*
+⇒ ***Zero-velocity band 0.2069 against a disagreement of 0.6152 — a factor of 2.97. A third, not most.***
+⇒⇒ ***And at `CRPHI`$=\pi$ the arm sits at 0.671 against the control's 0.263 — still 0.408 away. So over the
+zero-velocity pair the control is NOT inside, and the disagreement survives at 0.408 rather than at 0.615.***
+⌗ *c54.195's "the control's value is inside the span" is **true of the full span**, and the full span includes
+$\phi=\pi/4$ and $\pi/2$, **at which the mode enters moving**. Routed as item 43.*
+
+**⌗ THE RULE:** ***before concluding from a scan's SPAN, ask what the scanned parameter is allowed to be. A span is
+only a band if every point in it is admissible*** *— and the admissibility statement is usually already in the
+instrument, as a comment on the line that reads the parameter.*
+
+⚠ *Not claimed: that non-extremum phases are **inadmissible** — **whether the seam must sit at a density extremum is
+exactly what is unsettled** — or that the $0.62\pi$ is **reinstated**. `F5` unsoftened, `PO-7` protected.*
+⌗ *`L-239` registered and struck; `L-202`'s DARK half now carries the bound.*
+
 ### Revision r2508 — 2026-08-11 (main line). **THE BAND ALLOCATION AT r2507 WAS WRONG — cc54 and "57" are one node, and this line gave each of them a band.**
 
 **⛔ WHAT HAPPENED.** *r2507 registered cc54's item-38 measurement as **`L-700`** and wrote a hub table allocating

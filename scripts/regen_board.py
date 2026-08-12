@@ -46,8 +46,17 @@ VEINS = {
  'L-202': ("p0 item 4 \u00b7 WHAT THE SEAM CARRIES",
    "the phase is the **antilinear face $K$**; reality admits **exactly two values**; $K$ acts trivially on the "
    "reality set while **$R$ exchanges the branches**; off-real, $K$ **swaps the two wings of the lap** and "
-   "$R\\circ K$ **closes charge conjugation**; $K$ **fixes the photon congruence**",
-   "**whether a MASSIVE trajectory carries a phase** \u2014 the null ones are $K$'s fixed set"),
+   "$R\\circ K$ **closes charge conjugation**; $K$ **fixes the photon congruence**. \u26ed r2507: and the seam is now "
+   "measured from the OTHER side by two nodes independently at production depth \u2014 **the acoustic SPACING does "
+   "NOT move with the seam phase** (holds at $\\sim0.97\\,\\ell_A$ for every phase, robust to 1.9%) **while the "
+   "acoustic PHASE does** (cc54's `B7`: the asymptotic intercept moves $\\sim0.31\\,\\ell_A$; 54's c54.195: the "
+   "phase spans 0.891 in $\\phi/\\pi$, with the control's value inside)",
+   "**whether a MASSIVE trajectory carries a phase** \u2014 the null ones are $K$'s fixed set; and \u26d4 r2507 "
+   "**what FIXES the datum's phase**: it is measurably load-bearing and still **ASSIGNED rather than derived**, so "
+   "until `CRPHI` is fixed from the progenitor anything read off the phase carries a datum band comparable to "
+   "itself \u2014 though \u26ed r2509 bounds it: across the two ZERO-VELOCITY phases ($\\sin\\phi=0$, "
+   "i.e. $\\phi=0,\\pi$) the band is **0.2069 against a 0.6152 disagreement**, and **at $\\phi=\\pi$ the arm "
+   "is still 0.408 from the control**, so over that pair the control is NOT inside"),
 }
 
 # ** THE LEADS -- everything noticed that could inform a vein.  (id, what, veins it informs,

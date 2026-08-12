@@ -10,7 +10,7 @@ current: r2500+c54.194
 
 > ***Read `THE_METHOD.md` first.*** *The short form: **the VEINS are areas held open to be known inside and out — never crossed out. The LEADS are everything noticed that could inform one.** Work the top lead, gather what it turns up, re-order, repeat.*
 >
-> *15 live rows: **4 veins**, **11 leads**. 227 struck.*
+> *16 live rows: **4 veins**, **11 leads**. 227 struck.*
 
 # I · THE VEINS — held open, to be known inside and out
 
@@ -30,8 +30,8 @@ current: r2500+c54.194
 
 ## `L-202` · p0 item 4 · WHAT THE SEAM CARRIES
 
-- **MAPPED** — the phase is the **antilinear face $K$**; reality admits **exactly two values**; $K$ acts trivially on the reality set while **$R$ exchanges the branches**; off-real, $K$ **swaps the two wings of the lap** and $R\circ K$ **closes charge conjugation**; $K$ **fixes the photon congruence**
-- ⛔ **DARK** — **whether a MASSIVE trajectory carries a phase** — the null ones are $K$'s fixed set
+- **MAPPED** — the phase is the **antilinear face $K$**; reality admits **exactly two values**; $K$ acts trivially on the reality set while **$R$ exchanges the branches**; off-real, $K$ **swaps the two wings of the lap** and $R\circ K$ **closes charge conjugation**; $K$ **fixes the photon congruence**. ⛭ r2507: and the seam is now measured from the OTHER side by two nodes independently at production depth — **the acoustic SPACING does NOT move with the seam phase** (holds at $\sim0.97\,\ell_A$ for every phase, robust to 1.9%) **while the acoustic PHASE does** (cc54's `B7`: the asymptotic intercept moves $\sim0.31\,\ell_A$; 54's c54.195: the phase spans 0.891 in $\phi/\pi$, with the control's value inside)
+- ⛔ **DARK** — **whether a MASSIVE trajectory carries a phase** — the null ones are $K$'s fixed set; and ⛔ r2507 **what FIXES the datum's phase**: it is measurably load-bearing and still **ASSIGNED rather than derived**, so until `CRPHI` is fixed from the progenitor anything read off the phase carries a datum band comparable to itself — though ⛭ r2509 bounds it: across the two ZERO-VELOCITY phases ($\sin\phi=0$, i.e. $\phi=0,\pi$) the band is **0.2069 against a 0.6152 disagreement**, and **at $\phi=\pi$ the arm is still 0.408 from the control**, so over that pair the control is NOT inside
 - *4 live lead(s) inform this vein*
 
 ## `L-221` · PO-5 · WHAT MAY EXIST, AND WHY THESE
@@ -62,7 +62,7 @@ current: r2500+c54.194
 
 # III · THE ROUTED LIST (`FOR_54.md`) — leads handed to the working fork
 
-- ***20 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
+- ***21 live for the fork***, and ⚠ ***none is currently flagged "take this one first"*** — the standing edge is whatever the LEADS table above ranks
 - *7 are ANSWERS to the fork rather than work for it* — 33, 34, 35, 36, 37, 38, 39
 - *9 closed* — 10, 15, 14, 16, 17, 21, 23, 24, 41
 
@@ -86,4 +86,9 @@ current: r2500+c54.194
   - **32** · THE PROGENITOR-COMPOSITION DERIVATION RESTS ON A MODE CONDITION IT DOES
   - **40** · P15's PUBLISHED TEXT STILL CARRIES THE FRAMING c54.190–191 RETRACTED
   - **42** · P9's `cor:wall` CITATION COVERS THE METHOD, NOT THE CASE — added r2503
+  - **43** · YOUR c54.195 WITHDRAWAL IS TOO WIDE — the band across the ADMISSIBLE pha
+
+# ⚠ UNSORTED — rows nobody has decided about
+
+- **`L-239`** — ***is this a vein, a lead, or done? Decide or strike it.***
 
