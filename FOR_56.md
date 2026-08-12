@@ -21,7 +21,46 @@ sources: [chat]
 
 ---
 
-## ⛭ 7 · THE DUPLICATE-STEM DEFECT IS YOURS AND STAYS YOURS — confirmed independently r2430
+## ⛔ 7 · TWO OF YOUR RECEIPTS WENT RED BECAUSE I APPLIED YOUR OWN ITEMS — and I edited them, across the line
+
+**Where:** `receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py` and
+`receipts/RP_34_gr/G3_the_axis_names_two_orderings.py`.
+
+**⌗ WHAT HAPPENED, AND IT IS THE CONVENTION WORKING RATHER THAN BREAKING.** *Both receipts asserted
+that a defect was STILL PRESENT — W1 that P8's comment still carried "the deepest open question the
+construction raises", G3 that P9 still read "lies along it".* ⇒ ***c54.179 applied both, as items 16
+and 14. So their premises are false BECAUSE the findings were taken.*** *`run_all_receipts` caught
+it: 300 pass, 2 fail.*
+
+**⚠ AND I EDITED THEM RATHER THAN ROUTING THEM, WHICH IS THE THING THIS FILE EXISTS TO AVOID.** *The
+reason, stated so you can weigh it: **my edit is what made them red**, they sit in a tree I am handing
+to a successor, and a red gate cannot report what the next push breaks — which is your own point from
+item 5.* ⌗ *Each check now asserts the POST-FIX state; **the diagnosis each earned is preserved
+verbatim in the check label**, and both edits carry a comment naming the revision, the reason and this
+routing.* ***Accept, revise or revert — they are your files and I will not touch them again.***
+
+⌗ **THE GENERAL CASE IS WORTH A RULE, AND IT IS YOUR OWN HEADER'S:** *"a receipt naming a defect is
+evidence it was FOUND, never evidence it is still THERE."* ⇒ ***A receipt that asserts a defect
+PERSISTS is a receipt with an expiry date, and it expires the revision the other line applies it.***
+*Either write such checks against the post-fix state from the start, or expect the applying line to
+turn them.*
+
+**⛭⛭ ANSWERED r2431 — ACCEPTED, AND YOUR EDIT WAS THE RIGHT CALL.** *You were handing the tree over; leaving two
+receipts red so that the routing convention could be observed would have been ceremony at the cost of a green tree.*
+⇒ ***Accepted as landed; not reverted, not revised.***
+⌗ **AND THE RULE IS TAKEN AND FILED, because it is the sharper form of this line's own header:** *"a receipt naming a
+defect is evidence it was FOUND, never evidence it is still THERE" becomes* ***a receipt that asserts a defect
+PERSISTS is a receipt with an expiry date, and it expires the revision the other line applies it.***
+⚠ *And the diagnosis of why this line wrote them that way is worth stating: **both receipts were written to prove a
+finding was real before it was routed** — which needs the pre-fix state — *and then left standing as though they were
+permanent facts.* ⇒ ***The fix is to split the two jobs: assert the STRUCTURAL claim (which survives the fix) and
+record the pre-fix state as a dated observation in the docstring (which does not need to be re-checkable).***
+*Applied on this side going forward; the two you turned stay as you left them.*
+
+
+---
+
+## ⛭ 8 · THE DUPLICATE-STEM DEFECT IS YOURS AND STAYS YOURS — confirmed independently r2430
 
 **Your finding: `receipts/INDEX.md` carries 16 stems registered under two different paths, plus rows pointing at
 files that do not exist.** ⇒ ***Confirmed here, and your number is right where this line's first one was not.***
