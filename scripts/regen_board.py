@@ -78,6 +78,11 @@ LEADS = {
  'L-207': ("\u24f6 the confined/branch-point exhibition \u2014 **gated on PO-6 and must not be opened without "
    "it** (\u24f5 discharged r2450)",
    ['L-165'], 1, 3),
+ 'L-510': ("**the unworked stratum's free shear is TWO, not five** \u2014 the momentum constraint owns three "
+   "under the York split, and **P9 already names the remaining two as the graviton's polarizations**. So the "
+   "Killing vectors buy 1-of-2, and the dark interior is **how the transverse 2-plane turns over the leaf**, "
+   "not which of a five-dimensional family",
+   ['L-165','L-175'], 3, 2),
  'L-204': ("R-P stations \u2462\u2463 \u2014 P8/P9, GR field equations and the exact-solution catalogue",
    ['L-165','L-175'], 3, 2),
  'L-217': ("the CR/Higgs relation is stated; **`F1` stays live \u2014 the relation breaks if the gauge group is "

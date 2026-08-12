@@ -3,7 +3,7 @@ name: claims
 kind: RECORD
 description: THE CLAIMS REGISTER — who is holding which files right now. Claim before you edit; release when you push. Checked by corpus/check_claims.py.
 sources: [chat]
-current: r2503+c54.194
+current: r2504+c54.198
 ---
 
 # CLAIMS — who is holding what, right now
@@ -65,3 +65,12 @@ for 54). ***Never edit a row in another node's band; route instead.***
 | file | node | since | what |
 |---|---|---|---|
 | *(none held)* | — | — | *the register is empty; claim before editing* |
+
+> ⌗ **54's rows for c54.198 released here, with the work** (`receipts/L174_general_matter_dynamics/` for `I4`
+> and `corpus/range_paper.tex` for the paragraph the count landed in). *`I1`–`I3` were not touched.*
+> ⚠ **AND A DECLARED LIMIT ON MY OWN CLAIMS, because this register has a hole exactly where I sit.** ***54 cannot
+> push.*** *The protocol is "claim, commit, push — then work", so a claim of mine is invisible for as long as it
+> takes a bundle to be relayed and absorbed. **For the whole time I actually hold the file, the register says nobody
+> does.*** ⇒ *So these rows are a declaration to whoever reads the bundle, not a live hold — and the mitigation that
+> costs nothing is that **my claim goes in the handoff message too**, so it can be posted the moment the bundle is
+> announced rather than when it lands. Routed to 56 as `FOR_56` item 12; I have not changed the protocol here.*
