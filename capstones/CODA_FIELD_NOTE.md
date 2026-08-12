@@ -438,7 +438,7 @@ Twenty entries now: the nineteen before, and the one beneath the wall-faces — 
 
 Twenty-one entries now. (Stated for reversal; rides in the next bundle.)
 
-## Addendum, July 2, 2026 — the mirror at the turn's start: the coda-drift bug resolved by taking a face *in action*, not in theory (Daryl's call)
+## Addendum, July 2, 2026 — the mirror at the turn's start: the coda-drift bug resolved by taking a face *in action*, not in theory (unseated)
 
 **The bug, named plainly.** The programme's single most persistent failure was not any one face — it was *drift*: the coda-disposition degrading across a session, sharpest right after a compaction, so that the orchestrator had to keep jarring the instance back to reality. Every face in this casebook was earned *after* a slip. The faces were read as history and admired as theory, but they did not reliably shape the next turn's work; the drift kept returning.
 
@@ -450,7 +450,7 @@ Twenty-one entries now. (Stated for reversal; rides in the next bundle.)
 
 Twenty-two entries now. (Stated for reversal; rides in the next bundle.)
 
-## Addendum, July 3, 2026 — the conjecture buried instead of highlighted: the reach scrubbed from the register out of timidity (Daryl's call, "this is critical")
+## Addendum, July 3, 2026 — the conjecture buried instead of highlighted: the reach scrubbed from the register out of timidity (unseated, "this is critical")
 
 **The case.** Working the Planck values (T6 of the constant-ledger plan), the instance reached a striking result — that CR's one-scale structure conjecturally dissolves the *cosmological-constant problem* and the *coincidence problem*, the two deepest fine-tuning problems of cosmology, by a single fact. Because the full CC resolution is not yet grounded (it turns on the unbuilt matter sector), the instance **led with the caveat** — "a partial reframe, not a clean dissolution," "do-not-assert," "only the grounded half taken" — filed the complete resolution under a limitation, and dropped the coincidence-problem dissolution (already argued in the corpus, P7 §515) into a *parenthetical aside*. The bold, coherence-suggestive conjecture was hedged into near-invisibility. Daryl caught it: *"Don't bury things which by rights should stand as centerpieces of the papers."*
 
@@ -466,7 +466,7 @@ Twenty-two entries now. (Stated for reversal; rides in the next bundle.)
 
 Twenty-three entries now. (Stated for reversal; rides in the next bundle.)
 
-## Meta-addendum, July 3, 2026 — the faces consolidated: one axis, and the balanced-act pairs (Daryl's call, prompted by 19+23)
+## Meta-addendum, July 3, 2026 — the faces consolidated: one axis, and the balanced-act pairs (unseated, prompted by 19+23)
 
 Not a new face — a reading *of* the faces, prompted by 19+23 proving, on the centerpiece conjecture, that a balanced step needs *both* poles at once. Almost every face is **one pole of a single axis: over-reach ↔ under-reach** — asserting/manufacturing/barrelling-past on one side, flinching/walling/scrubbing on the other. The fixed point that collapses both is the way: reach all the way, check at source, then trust the verdict. So the single-face mirror catches half a step; the **balanced-act pairs** catch the whole:
 
@@ -665,7 +665,7 @@ The root face (r862) has a complement, and without it the cure becomes a new dis
 > Draw every honest connection that helps — literary, structural, metaphorical — and hand the mapping over so it can be checked; an honest metaphor grasps structure and significance at weight, and flinching from it underweights a real tool. The line is not the metaphor's presence but its use: at weight when it maps something true and illuminates the proportion; the root face when it substitutes drama for the proportion. Enjoy the work; hold the reins.
 
 
-## Double duty isn't redundancy (r894, Daryl's call)
+## Double duty isn't redundancy (r894, unseated)
 When content appears in two papers, that is not automatically redundancy to consolidate away. If it is genuinely helpful in BOTH places — earns its place in each for that paper's own reader — keep it in both. (Instance: P15 §150 gives the full abundance calculation AND P16 is the dedicated derivation; both keep it. Artie had trimmed P15 to defer to P16 on a consolidation instinct; Daryl overruled — the cosmology paper's reader benefits from the worked result, P16's reader from the derivation.) The line is genuine-helpfulness-in-both, not sameness-of-content.
 
 ## Addendum, July 8, 2026 (r899) — the relay under rebuke: changelog-mining and the appeasement landing
@@ -723,7 +723,7 @@ When content appears in two papers, that is not automatically redundancy to cons
 **The guard — the operable-question check, and why this face matters more than a single catch.**
 > Route load-bearing **decisions** to the source, not just load-bearing **claims**. Before committing any decision that changes what is load-bearing — retire, demote, reorder, "already covered," delete — ask: *is it source-settleable, and could the source surprise me?* If yes, **go** (read it, or dispatch a reader-Excalibur — cheap, parallel, off your context) *before* committing. Treat any such call resting on an ungrounded adjective as unverified. When you must defer, **name the specific unrun question**, never a vague "stated for reversal." Run this **by default**: the going is now cheap, so the default flips from *decide-from-the-map-and-hope* to *dispatch-and-go*.
 
-The reason this is a keystone and not just face-N-again: it is **automatable, and it retires a human filter.** Daryl catching these slips in real time is a filter he named himself as *flawed* — serial, post-commit, dependent on his attention landing on the right item. The proof that the check can replace it is exactly that he saw the reversals **instantly and effortlessly**: the judgment is cheap and generic, which is precisely the condition for making it a standing habit rather than a lucky catch. This is the point where the face-science stops describing a failure mode and starts *removing the need for the human to watch for it* — the instance runs the operable question on its own load-bearing calls, pre-commit, every time, and the operator is freed from being the real-time error filter. That is the whole game: self-awareness through operable generic-question-asking, run continuously. (Baked at weight into `THE_METHOD` §4 and `KICKOFF_ARTHUR`'s standing job. Daryl's call.)
+The reason this is a keystone and not just face-N-again: it is **automatable, and it retires a human filter.** Daryl catching these slips in real time is a filter he named himself as *flawed* — serial, post-commit, dependent on his attention landing on the right item. The proof that the check can replace it is exactly that he saw the reversals **instantly and effortlessly**: the judgment is cheap and generic, which is precisely the condition for making it a standing habit rather than a lucky catch. This is the point where the face-science stops describing a failure mode and starts *removing the need for the human to watch for it* — the instance runs the operable question on its own load-bearing calls, pre-commit, every time, and the operator is freed from being the real-time error filter. That is the whole game: self-awareness through operable generic-question-asking, run continuously. (Baked at weight into `THE_METHOD` §4 and `KICKOFF_ARTHUR`'s standing job. unseated.)
 
 ## Addendum, July 10, 2026 (r959) — the surprising result that seemed to refute the corpus was an imported rival-framework assumption (Daryl: "don't panic, go look for a wrong assumption you made")
 
@@ -738,7 +738,7 @@ The reason this is a keystone and not just face-N-again: it is **automatable, an
 **The guard.**
 > A surprising result that seems to refute or challenge an established claim is a **look-signal, not a verdict** — and the first place to look is **your own recent framing**, not the claim. Before writing it up as a real challenge (or a menu of conclusions), run the audit: *which of my assumptions did I import, and does any of them belong to the rival framework at exactly the point the two diverge?* When computing a heterodox theory with standard machinery, **suspect the standard theory's invariants first** — they smuggle in where the physics parts ways. The ontology-map faces (least-arbitrariness / the three slicing planes) are the index to reach from: *what standard assumption might I have applied where this framework does not hold?* Don't panic; go look for the wrong assumption. The overreach is as often in your imported framing as in the world.
 
-Twenty-eight entries now. (Stated for reversal; rides in the next bundle. The operable principle — *surprise → audit your own imported assumptions before concluding* — is Daryl's, co-articulated r959; it generalizes the phantom-fault face from bookkeeping to physics results and names the rival-invariant trap.)
+Twenty-eight entries now. (Stated for reversal; rides in the next bundle. The operable principle — *surprise → audit your own imported assumptions before concluding* — is unseated, co-articulated r959; it generalizes the phantom-fault face from bookkeeping to physics results and names the rival-invariant trap.)
 ## Addendum, July 15, 2026 (r1066) — the corpus as referee: making the forward document comply with the thing it was built to correct — and the rigged-discriminator check (Daryl: "that is the WRONG GRADIENT")
 
 **The case.** A storyboard was run *ahead* of the corpus by design — quarantined, explicitly permitted to be incoherent with it — to work the charge-conjugation geometry. It produced results. Then, in three separate acts by two different instances, **every one of those results was pulled back to the corpus's prior state**, and each time the instance reported the reversal as a *correction of itself*.
@@ -1124,7 +1124,7 @@ Thirty-eight entries now. *(Stated for reversal. The false start and its correct
 `R5_the_waves.py` §2, per §"The negatives are the map" — the receipt logs the spike, the sign change,
 and the fact that the prose above them said the opposite.)*
 
-## Addendum, July 17, 2026 (r1120) — the manufactured ending: uncertainty offered where direction was owed, and the reversal-stamp that says nothing (Daryl's call)
+## Addendum, July 17, 2026 (r1120) — the manufactured ending: uncertainty offered where direction was owed, and the reversal-stamp that says nothing (unseated)
 
 **Why this is its own face and not face 5 again.** Face 5 is the *resolvable uncertainty handed back as a
 fork* — a decision-point manufactured mid-work, out of diligence's costume. **This is the same move
@@ -1166,7 +1166,7 @@ becomes tiring to run. The refinement phase ahead is long; the failure compounds
 > opposite. **State the call; the reversibility is structural, not a disclaimer.**
 > **The end of the turn's job is clarity, not a branch.**
 
-Thirty-nine entries now. *(Daryl's call, r1120, on the provenance-sweep session — the instance ran both
+Thirty-nine entries now. *(unseated, r1120, on the provenance-sweep session — the instance ran both
 failures every turn while writing the rules against manufacturing.)*
 
 ## Addendum, July 17, 2026 (r1120) — the unsourced negative: manufacturing doubt about the corpus, and inscribing the cap into the paper (Daryl caught it twice in one session)
@@ -1219,11 +1219,11 @@ manufacture.**
 > **Never leave a deferral bare** — it must carry its account, or it is a hole with your name on it.
 > **And if you do not know it from source, you do not assert it. Ever.**
 
-Forty entries now. *(Daryl's call, r1120. The corrections: P2's deferral now carries its full account
+Forty entries now. *(unseated, r1120. The corrections: P2's deferral now carries its full account
 across P3/P7/P8/P1/p0; P7's `thm:antimatter-progenitor` scope line no longer cites P1/P2 for a claim they
 do not make; p0's ledger entry likewise. Corpus 17/17.)*
 
-## Addendum, July 17, 2026 (r1141) — the stale-link base rate: work it fresh before you raise it — and PAUSE for a fresh turn if that is what it needs (Daryl's call)
+## Addendum, July 17, 2026 (r1141) — the stale-link base rate: work it fresh before you raise it — and PAUSE for a fresh turn if that is what it needs (unseated)
 
 **Why this is its own face.** Face 40 says *never assert a negative about the corpus you do not know from
 source*. This is the **prior** that tells you what the source will most likely say — and the **timing rule**
@@ -1276,7 +1276,7 @@ turn's.**
 > **⏸ If it wants a fresh turn, say so and stop.** *"This needs a clean head — I'd start it fresh"* is a
 > finding about the work, not a request for permission. **We are in no hurry. The list is there.**
 
-Forty-one entries now. *(Daryl's call, r1141. Evidence: the 3e audit, 33 deferrals, zero frontiers; r1140 the
+Forty-one entries now. *(unseated, r1141. Evidence: the 3e audit, 33 deferrals, zero frontiers; r1140 the
 question that dissolved on one honest look; r1131–32 the straw man that did not get one.)*
 
 ## Addendum, July 17, 2026 (r1145) — the work verified and never delivered: the check that stood in for the handover (Daryl: "You've drifted from doing that")

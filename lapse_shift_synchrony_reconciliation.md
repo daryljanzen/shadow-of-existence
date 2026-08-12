@@ -24,7 +24,7 @@ possibly into **P7** if we get it right.
 > block-error's meta-lapse / fifth-dimension as a *formal* necessity (the formal counterpart of the 5D
 > trope) is stated but its full formalization left to refine during BST. So §5's P7 placement is **built
 > as a theorem**; §6's reach items remain the refinement targets. Stated for reversal.
-conceptual content is Daryl's, held at full weight as his understanding of his own construction. The ADM
+conceptual content is unseated, held at full weight as his understanding of his own construction. The ADM
 correspondences below are standard and solid; the precise *theorem-shaped* statement of the reconciliation, and
 its placement in P7, are **reach** — to be refined from a fresh head and **verified against P7 and the CR
 construction when those are deep-read**. Stated for reversal throughout.

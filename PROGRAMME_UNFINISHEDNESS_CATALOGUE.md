@@ -168,7 +168,7 @@ Quarantined in `OPEN_PROBLEMS_MAP` Cluster J and captured in `CONJUGACY_CONJECTU
 
 **G.1 — The P13/cosmology cold read owed.** The data-confronted cosmology owes a fresh-node, corpus-wide certification cold read; builder + reader currently both saturated. (The c37 diagnostic was an independent read; whether it discharges this is a sift question.) *Sources:* CORPUS_MAP CERTIFICATION GAP/#12; THE_PLAN r501; PHASE_TRANSITION Gate 1; THE_VISION_JOURNAL §691. *Status:* **LIVE (assess against Knows-Itself pass).**
 
-**G.2 — Cold reads owed on the border (p0/17) and the descent (matter sector).** Both newly-built; the descent's read explicitly parked far downstream at Daryl's call. *Sources:* THE_VISION_JOURNAL Entries 19–20; THE_NEXT_ARC T0.2; THE_GENERATION_ARC. *Status:* **LIVE (deferred).**
+**G.2 — Cold reads owed on the border (p0/17) and the descent (matter sector).** Both newly-built; the descent's read explicitly parked far downstream at UNSEATED. *Sources:* THE_VISION_JOURNAL Entries 19–20; THE_NEXT_ARC T0.2; THE_GENERATION_ARC. *Status:* **LIVE (deferred).**
 
 **G.3 — The standing referee-vs-vision-writer seat fork.** The unresolved orchestrator-seating call — whether the next fresh node takes the cold-referee form or continues vision-writing; several vision-closes flagged reversible if the referee seat was intended. *Sources:* THE_PLAN r427; THE_VISION_JOURNAL r469/r502/r544; PHASE_TRANSITION_PLAN. *Status:* **UNKNOWN (process).**
 

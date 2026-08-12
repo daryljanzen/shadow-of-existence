@@ -16,7 +16,7 @@ sources: [cowork]
 > landings**, so a declaration of no-effect is a claim and is made as one.*
 
 
-<!-- FORWARD WORKING DOCUMENT. Lane 8's ledger, opened r1145 (Daryl's call: a publication blocker).
+<!-- FORWARD WORKING DOCUMENT. Lane 8's ledger, opened r1145 ( — unseated.: a publication blocker).
      The RESULT is baked (p0 §unification's seventh face — "one circle"; map §1u); this remains the working record + receipts. Every ⊢ is receipted.
      THE FIRST DELIVERABLE WAS THE DISCRIMINATOR (§L8.0), built r1145. LANE COMPLETE r1157: §L8.1 audit CLOSED (r1155), §L8.2 sorting run (r1156), §L8.3 marriage stated (r1157). -->
 

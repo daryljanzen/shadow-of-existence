@@ -589,7 +589,7 @@ reassignment's uniqueness and says nothing about isotropy. ***Two derivations of
 having; I have not checked whether they are the same.***
 
 **⌗ FACT 9 — the isotropy jump is prop:single's MECHANISM, not a second witness (r2326).**
-***[paper-ready: both halves are established corpus results; this is a reading, not a conjecture. Daryl's call
+***[paper-ready: both halves are established corpus results; this is a reading, not a conjecture. unseated
 on whether it goes to P5.]***
 
 **⛔ FIRST, THE HONEST NEGATIVE.** *I asked whether the enhancement gives **a second, independent derivation**

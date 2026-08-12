@@ -38,10 +38,10 @@ without fixing what is still sitting there owed?"**
 
 | state | count |
 |---|---|
-| `DARYL` | 4 |
+| `DARYL` | 1 |
 | `PART` | 1 |
 | `OPEN` | 6 |
-| `—` | 13 |
+| `—` | 16 |
 
 **Open leads by origin**
 
@@ -66,12 +66,12 @@ without fixing what is still sitting there owed?"**
 | **`L-240`** | QUESTION · — |
 | **`L-242`** | QUESTION · — |
 | **`L-245`** | QUESTION · — |
-| **`L-508`** | QUESTION · DARYL |
+| **`L-508`** | QUESTION · — |
 | **`L-509`** | QUESTION · OPEN |
 | **`L-510`** | QUESTION · — |
 | **`L-511`** | QUESTION · — |
 | **`L-512`** | QUESTION · — |
-| **`L-513`** | QUESTION · DARYL |
+| **`L-513`** | QUESTION · — |
 | **`L-514`** | QUESTION · PART |
 | **`L-515`** | QUESTION · — |
 | **`L-516`** | QUESTION · — |
@@ -79,7 +79,7 @@ without fixing what is still sitting there owed?"**
 | **`L-518`** | QUESTION · — |
 | **`L-519`** | QUESTION · — |
 | **`L-520`** | QUESTION · — |
-| **`L-801`** | QUESTION · DARYL |
+| **`L-801`** | QUESTION · — |
 | **`L-204`** | WORK · OPEN |
 | **`L-210`** | WORK · OPEN |
 | **`L-218`** | WORK · — |
@@ -186,7 +186,7 @@ debt: it costs nothing and it is the only thing standing between a claim and a c
 two turns for the batch.** *That takes the register from 75 open to ~58 and removes every item whose only
 reason for being open is that I found something newer.*
 
-### ⌗ PHASE 2 · **THE RETIREMENT SLATE** — *Daryl's call, and it is the legitimate way to shrink*
+### ⌗ PHASE 2 · **THE RETIREMENT SLATE** — *UNSEATED, and it is the legitimate way to shrink*
 
 *The arc's rule: **a lead leaves only by being worked or by Daryl retiring it.*** *Cluster **D** — the ten
 untried queues the bakes left behind — was inherited, not created by this work, and some of it may simply not

@@ -392,7 +392,7 @@ the bake form is a §0 baseline, a question, probes with verdicts, a routing and
 **re-running it against a moved corpus is cheap precisely because the form is fixed**.* ⇒ **So absorption is a
 REFRESH of a reach bake, not a prerequisite for one.**
 
-**⚠ THE ONE STANDING CONSTRAINT, and it is Daryl's:** ***do not go right at the acoustic sector, or do it in a way
+**⚠ THE ONE STANDING CONSTRAINT, it is unseated.:** ***do not go right at the acoustic sector, or do it in a way
 that complements the fork's approach.*** *The fork has been working that front hardest — `beyond_the_wall/`,
 `baryon_edge/`, the collapse-perturbation capstone — and two lines converging on one live front is the one thing
 the absorption routine cannot cheaply reconcile.*
@@ -694,7 +694,7 @@ every id present, none extra, so it returned current while the file was structur
 cannot see a structure defect.*** *It now also requires both headings to exist and the header to state the
 two counts, and it was verified by renaming one heading — which makes it fail — and restoring it.*
 
-## `SC-9` · `HELD` as a first-class register state — ✔ **BUILT r2381 (Daryl's call on `L-206`)**
+## `SC-9` · `HELD` as a first-class register state — ✔ **BUILT r2381 (unseated on `L-206`)**
 
 *Daryl held `L-206` — the P3 reordering — "for a more complete programme and corpus to inform." **The register
 had no way to say that.** An `OPEN · DARYL` row reads as *work nobody has got to*, and the next node to open the

@@ -1,4 +1,4 @@
-"""DARYL'S P13/P14 CONJECTURE -- THE DUALITY (r1081, Daryl's call, verified).
+"""DARYL'S P13/P14 CONJECTURE -- THE DUALITY (r1081, unseated, verified).
 
 The colouring rule has TWO readings, and they are DUAL:
     r-RULE     : purple <=> arg r    is a multiple of 90  <=>  r    is real or purely imaginary

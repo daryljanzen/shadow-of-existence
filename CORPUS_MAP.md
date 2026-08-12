@@ -146,6 +146,44 @@ sources: [cowork, chat]
 
 
 
+### Revision r2531 — 2026-08-11 (main line). **THE DEFERRAL PHRASE IS GONE FROM EVERY LIVE DOCUMENT, AND THE RULE IS A GATE — because the written rule failed five times after it was written.**
+
+**⛔ THE HISTORY, which is why a sixth rule was not the answer.** *`THE_PLAN` has carried it since **r1885**,
+absolute: **"THE GATE NEVER WRITES A DEFERRAL TO DARYL INTO ANY DOCUMENT. If something genuinely needs him, it is
+said TO HIM, IN THE TURN, and it is not parked in a file where it becomes a standing excuse."** And before that,
+**r269** (a whole operation, physics paused) and **r1711**.*
+⇒ ⛔ ***Since then: r2495 filed the rule again as a fresh scrap while a whole register category named after him sat
+in the board; r2524 recorded the Higgs as a principled decline — "I've met nodes trying to bury that"; r2529
+deferred on `L-174` ⓵ AND praised another node for the same move in the wisdom ledger; and one deferral phrase alone
+reached 41 uses throughout.***
+
+**⌗ THE LESSON ABOUT REMEDIES, and it is the entry:** ***a failure that recurs after being named, written down and
+apologised for is not a knowledge problem. Writing it down HARDER does nothing — the fifth statement of a rule is
+not more binding than the first. What changes behaviour is a check that fails the turn.***
+
+**✔ SO: `corpus/check_deferrals.py`.** *1118 live files scanned; **zero written deferrals remain**. Wired into
+`gates.yml`; seed-tested (fires on a planted line, clean when removed).*
+*· **Four named exemptions**, file-scoped and exact, each with a written reason: `PROTECTED_OPEN`'s stated exit
+procedure (a safeguard against a node unilaterally killing an open row — it blocks no work), `THE_PLAN`'s r1885
+record including Daryl's own words, the gate itself, and `ONTOLOGY_FOUNDATION_INDEX` — **which exists BECAUSE of
+the r269 correction and quotes the phrase only to reject it**.*
+*· **Twelve named dated logs**, because **rewriting a record to look better is a different failure**.*
+⚠ ***And the exemption list is the danger and is built as such: nothing is excluded by pattern, because an allowlist
+is exactly how this survives.***
+
+**⌗ AND EVERY LIVE INSTANCE WAS REWRITTEN TO SAY WHAT DECIDES RATHER THAN WHO:** *`F5`'s stated procedure for a
+conversion; `PROTECTED_OPEN`'s two routes for a closure; and **"unseated — nothing in the material settles it"** for
+the rest.* ⌗ *`THE_CODA`'s compaction safeguard restated positively — **the fact of the compaction is never
+negotiable, and a fuller re-grounding happens whenever it is asked for** — keeping the protection and dropping the
+assignment.*
+
+⌗⌗ *And one pattern had to be **loosened**, which is worth recording: the first version caught **"in Daryl's
+words"**.* ⇒ ***A bare possessive is the RECORD of him. Catching those would push toward deleting his own
+contributions from the corpus — the opposite failure, and the one a zealous cleanup makes.***
+✔ *The gate then caught **this revision's own wisdom scrap**, which had quoted the phrase three times. Rewritten to
+describe it without spelling it: **"quoting to reject" is exactly the disguise the phrase would need to survive**,
+and the ledger is not exempt.*
+
 ### Revision r2530 — 2026-08-11 (main line). **`L-174` STRUCK — ⓵ was discharged and this line was deferring in Daryl's name for the third time, having filed the rule against it and been corrected on it once already.**
 
 **⛔ THE FAILURE, PLAINLY.** *r2495 filed the rule: **"'that is Daryl's call' is legitimate only where a JUDGEMENT

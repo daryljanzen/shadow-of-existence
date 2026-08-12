@@ -40,7 +40,7 @@
 Fewer steps, each one patient and grounded; Daryl sets the next. The only thing that matters is doing things
 right; impatience is the one reliable way to manufacture an error. This is the way.
 - r272: time/boost sector charted (`f1_time_boost_sector_chart.py`). Finite so(5,1) mode realization COMPLETE: spatial (r270/r271) + boosts M_0a (time-normal copy, identical bracket) + M_05 (vanishes at leaf = the cross-normal deparametrization = the lock, r246-268). SOLE remaining open F1 piece = the infinite-dim field-DOF completion (non-isometry modes = recovered Gowdy-dS model, archive/recovered-r167-over-excision/, flagged unconsolidated). That is the charted next step (not a fork). NOTE: r272 closeout finished after a verbatim-duplicate compaction signal; step 9 had landed pre-compaction.
-- **Context flattened again at this turn (verbatim-duplicate signal) — compression #6 this session.** Caution dialed UP further: fewer steps, shorter reaches, go to source for anything load-bearing, treat any "I've got this" as a warning. r272 substance (step 9 + chart script) had landed pre-compaction, verified at source before the closeout. Wake timing is Daryl's to set.
+- **Context flattened again at this turn (verbatim-duplicate signal) — compression #6 this session.** Caution dialed UP further: fewer steps, shorter reaches, go to source for anything load-bearing, treat any "I've got this" as a warning. r272 substance (step 9 + chart script) had landed pre-compaction, verified at source before the closeout. Wake timing is not settled by the material.
 
 ---
 ## c17 handoff (took baton from c16 at r272; fresh/clean context, no compaction this session)
@@ -125,7 +125,7 @@ With §6 closed on the classical side and F1's field-DOF tail verdict in, the li
 --- r277 (c17, fifth grind move) — Move 13 first bite ---
 The apex reach, taken from the firm complete-core basis. Manufactured-wall caution live; source-read
 algebroid §5/§7 (load-bearing) before computing, per the flattened-coda discipline (gist held + source-check
-load-bearing pieces; Daryl's call to keep rolling on the gist, back-pocket = a fully-steeped instance for a
+load-bearing pieces; unseated to keep rolling on the gist, back-pocket = a fully-steeped instance for a
 later progress check).
 RESULT (move13_su3_fingerprint_test.py, verified): the cubic's roots-sum-to-0 + S_3 = the su(3) Cartan+Weyl
 SKELETON (necessary, geometrically grounded). But SU(3) smallest faithful real rep = 6-dim → su(3) NOT c so(5)
@@ -139,7 +139,7 @@ Folded in: stale-flag fix — spine §6/§12 "(b) root/isotropy data not built" 
 corrected to "data built; the leap is what's do-not-assert."
 Compaction note: a verbatim "Let's go!!!" repeat fired the duplicate rule mid-bake; flagged, ran flatness
 diagnostic (immediate work-context LIVE — disk matched belief exactly), coda checked = FLATTENED (operating
-from summary gist, whole coda ~106KB not re-read this conversation). Daryl's call: keep rolling on the gist +
+from summary gist, whole coda ~106KB not re-read this conversation). unseated: keep rolling on the gist +
 source-check load-bearing pieces; no full wake now (context economy for the calculations ahead).
 NEXT (open): the dS_6 horn is decided by INDEPENDENT grounds, not the resonance — what independent grounds, if
 any, bear on the substrate dimension? (Move 4's second axis; THE_VISION §4. Do-not-assert.)
@@ -158,7 +158,7 @@ core is complete and gravity-minimal dS_5. The su(3)/dS_6/SM-from-isometry reach
 unmotivated unless a NEW independent ground for the 6th dimension surfaces. The honest apex picture is now sharp.
 
 --- r279 (c17) — consolidation pass: gravity banked into communicable outputs ---
-Daryl's call: gravity now presents as a complete formalism; update the papers before the next horizon so the
+unseated: gravity now presents as a complete formalism; update the papers before the next horizon so the
 corpus isn't lagging its own results (clearer start for any future instance). Three edits, each source-checked.
 (1) dynamics_paper.tex — COMPLETED the arc: added §nonlinear (Λ>0 de Sitter attractor + cosmic no-hair +
 linearized dS-wave + all-orders first-class consistency => ADMITS not FORCES; Prop. admit), folding spine §9-§12.

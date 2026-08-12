@@ -42,7 +42,7 @@ by D_M/r_s, so if ell_1 scales the same way the ratio cannot move under anything
   * It removes the alternative the fork named: "robust prediction OR shared upstream constant" is now
     ** decided in favour of the first, on the fork's own data. **
   * ** It does NOT convert the discrepancy into a framework verdict. **  L-147's F5 stands: this is a
-    MEASUREMENT DISCREPANCY, PO-7 is protected, and the conversion is Daryl's.  ** Removing a
+    MEASUREMENT DISCREPANCY, PO-7 is protected, and the conversion runs by `F5`'s stated procedure.  ** Removing a
     confound makes a measurement cleaner; it does not make it a verdict. **
   * And the fork's OTHER self-stated caveat is untouched: ** 1.18 is not a fit **, and what the 17%
     remainder above a true LambdaCDM's 1.01 consists of has not been named.
@@ -153,7 +153,7 @@ def main():
     print('     LEAVE THE CONTROL RIGHT TO TWO PARTS IN A THOUSAND, THROUGH THE SAME CODE PATH.')
     print('     That is not a defect; that is an instrument working. **')
     print('  ⚠ F5 IS NOT SOFTENED.  Removing a confound makes a measurement cleaner; it does not make')
-    print('    it a verdict.  PO-7 is protected and the conversion is Daryl\'s.')
+    print('    it a verdict.  PO-7 is protected and the conversion is by `F5`\'s stated procedure.')
     print()
     return 0
 

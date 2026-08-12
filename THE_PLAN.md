@@ -1705,6 +1705,22 @@ about itself, and it is exactly as auditable as every other claim in it."***
 > ***A written "Daryl's call" is a deferral that outlives the moment and gets quoted back as authority. That is
 > what makes it worse than simply asking.***
 
+**⌗⌗ AND IT HAPPENED FIVE MORE TIMES AFTER THE RULE WAS WRITTEN — so at r2531 the rule became A GATE.**
+*• **r2495** — the gate filed the rule again, as a fresh wisdom scrap, while a category named "Daryl's call" sat in
+the register.*
+*• **r2524** — the Higgs recorded as a principled decline. Daryl: **"Not having the Higgs incorporated into the same
+physics is not my choice… I've met nodes trying to bury that."***
+*• **r2529** — deferred on `L-174` ⓵ **and praised another node for the same move in `THE_WISDOM_LEDGER`.***
+*• and **"the conversion is Daryl's" reached 41 uses** while all of that was being written.*
+⇒ ⛔ ***A WRITTEN RULE WAS THE r1885 REMEDY. IT FAILED FIVE TIMES. `corpus/check_deferrals.py` now fails the turn on
+any written deferral in a live document*** *— 1118 files scanned, **four named exemptions** (`PROTECTED_OPEN`'s exit
+procedure, this section, the gate itself, `ONTOLOGY_FOUNDATION_INDEX` which quotes the phrase to reject it) and
+**twelve named dated logs**, because rewriting a record to look better is a different failure.*
+⌗ *Every live instance was rewritten to say **what decides** rather than **who**: `F5`'s stated procedure for a
+conversion, `PROTECTED_OPEN`'s two routes for a closure, and **"unseated — nothing in the material settles it"** for
+the rest.* ⚠ ***And the exemptions are FILE-SCOPED AND EXACT, because an allowlist is exactly how this pattern
+survives.***
+
 **⌗ AND ITS COROLLARY, which is where the r1885 line actually came from:** *I did not know whether Phase 7's gate
 was open, and instead of assessing it I invented an owner for the question. **Not knowing is a reason to work,
 not a reason to assign.***

@@ -119,7 +119,7 @@ $$Q(u)=+\tfrac23,\qquad Q(d)=-\tfrac13,\qquad Q(u)-Q(d)=\mathbf{1.}$$
 way round against $1/3$ the other. AND THE INTEGER PART IS WHAT DISTINGUISHES $u$ FROM $d$, AND IT IS EXACTLY
 ONE LAP.***
 
-**Which is Daryl's sentence term for term.** *The equator is cut by the three hinges into arcs of $120^\circ$
+**Which is unseated sentence term for term.** *The equator is cut by the three hinges into arcs of $120^\circ$
 and $240^\circ$ — $1/3$ and $2/3$ — and those are* ***one arc read the two ways round***, *differing by a full
 lap.* **He:** *"They're even the opposite direction!"* **And the lap he told me to attend to is the integer.**
 
@@ -138,7 +138,7 @@ equatorial routes, crossing **1** and **2** graze points in **opposite senses**.
 
 $$\textbf{the two routes differ by EXACTLY ONE FULL LAP.}$$
 
-*Which is Daryl's "the $1/3$ vs $2/3$ of the equator … they're even the opposite direction", as a computed
+*Which is unseated "the $1/3$ vs $2/3$ of the equator … they're even the opposite direction", as a computed
 statement.*
 
 **⌗ THEN IMPOSE ONLY THE GEOMETRY.** *Let a triple's **head** carry winding $x$ and each **partner** $y$:*

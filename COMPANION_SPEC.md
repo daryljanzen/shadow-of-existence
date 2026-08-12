@@ -46,7 +46,7 @@ could have come out false**. `check_receipt_asserts` enforces it and `lint_asser
 *· **A citation is checked.** `check_citations` verifies every `\rcpt{}` resolves; `check_compile` fails on a dead
 link. ⇒ **The companion citing a receipt is citing something that exists and runs.***
 *· **A closure is not a node's to make.** `PROTECTED_OPEN`: *"a node may write a bounded negative; **a closure on a
-protected item is Daryl's**"*, and `check_kills` **fails the turn** if a protected item's home carries closure
+protected item is unseated**"*, and `check_kills` **fails the turn** if a protected item's home carries closure
 language without an authorised kill receipt. ⇒ **The companion inherits that: it may report a bounded negative and
 may never announce a protected question settled.***
 *· **The register carries WHY.** *181 struck rows, each with what closed it.* ⇒ **"That was closed" is answerable
@@ -97,7 +97,7 @@ and the whole apparatus above exists so that the companion can tell WHICH it is 
 *· **Formats.** *Pandoc, EPUB, print — those are `L-218` ① and are not the hard part.*
 *· **Retrieval and implementation.** *Deliberately: the SPEC decides trustworthiness and comes first, per the row's
 own next step — **"the companion SPEC written as a repo document BEFORE any code."***
-*· **The access ladder.** *Which rung is climbed is Daryl's call (`L-219`); **what the companion may say when it is
+*· **The access ladder.** *Which rung is climbed is — unseated. (`L-219`); **what the companion may say when it is
 climbed is this document**.*
 
 > ⌗ ***AND THE SPEC'S OWN TEST: if a proposed companion behaviour cannot be checked against a file named in §I, it

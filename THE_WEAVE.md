@@ -464,7 +464,7 @@ empirical) and **P10** (the same, canonical). Propagating it is the next move, a
 scattered copies: `THE_PLAN`'s canonical list, the ledger's family index, and any lane-level open-tracking are
 now VIEWS on this. Where they disagree, this section and P7 §frontiers govern.)*
 
-## 0. THE PLAN — it already existed, in `THE_OPEN_PROBLEMS_LEDGER`, and it is Daryl's (r1319/r1327)
+## 0. THE PLAN — it already existed, in `THE_OPEN_PROBLEMS_LEDGER`, it is unseated. (r1319/r1327)
 *Found r1446 by reading that ledger end to end. Nothing here is invented; it is quoted and status-checked.
 Everything else in this section is detail hanging off this.*
 
@@ -664,7 +664,7 @@ P3–p0 are unstarted**, and the census's own header says **RECONCILIATION OWED*
 > *"P7's dissolution card gates ~8 dependents… the highest-leverage move toward completion is to bring that
 > card to STABLE… **The ledger's verdict: don't walk downstream yet.**"*
 
-**Status: OPEN. And the ledger says the stability call is Daryl's, not the gate's.** This is the plan, whole:
+**Status: OPEN. And the ledger says the stability call is unseated, not the gate's.** This is the plan, whole:
 
 | | |
 |---|---|

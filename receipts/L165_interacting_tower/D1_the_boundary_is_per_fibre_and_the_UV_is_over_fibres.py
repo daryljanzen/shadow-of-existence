@@ -2,7 +2,7 @@
 """D1 -- PO-6 re-weighted, NOT closed: the boundary problem is PER-FIBRE and the UV is OVER-FIBRES.
 
 ** PROTECTED_OPEN PO-6 (= L-165), the interacting tower.  A protected row may be worked and may carry a
-bounded negative; only its CLOSURE is Daryl's.  This receipt closes nothing. **
+bounded negative; only its closure runs by `PROTECTED_OPEN`'s two stated routes.  This receipt closes nothing. **
 
 ** WHAT P10 CLAIMS: ** "what remains open is not the boundary condition but the *definition of the
 interacting tower* --- ** the standard problem of the interacting theory rather than a residual freedom

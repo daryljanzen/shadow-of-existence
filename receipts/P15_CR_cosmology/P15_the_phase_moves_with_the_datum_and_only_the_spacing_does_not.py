@@ -48,7 +48,7 @@ quantity, and this file does not supply one -- which is a worse position than c5
 truer one.*
 
 ** F5 IS NOT SOFTENED, AND IT CUTS BOTH WAYS HERE. **  A measurement discrepancy is not a framework
-verdict; `PO-7` is protected; the conversion is Daryl's.  ** And a discrepancy that turns out to rest
+verdict; `PO-7` is protected; the conversion runs by `F5`'s stated procedure.  ** And a discrepancy that turns out to rest
 on a free choice is not a framework verdict either -- the withdrawal is as much a correction of this
 line's overreach as the earlier ones were. **
 
@@ -174,7 +174,7 @@ print("     ⇒ ***So the phase was never carrying the disagreement, and c54.190
 print("     it to \"one number and one mechanism\" is withdrawn.***")
 print()
 print("  ⛔ ***F5 UNSOFTENED, AND IT CUTS BOTH WAYS: a discrepancy that turns out to rest on a free")
-print("     choice is not a framework verdict either. `PO-7` protected; the conversion is Daryl's.***")
+print("     choice is not a framework verdict either. `PO-7` protected; the conversion runs by `F5`'s stated procedure.***")
 if R[best]['dof'] < 10 * CTRL['dof']:
     fail.append(f"the phase-matched reading is only {R[best]['dof']/CTRL['dof']:.0f}x the control -- "
                 "matching the phase DOES largely fix the spectrum and PART 5 is wrong")

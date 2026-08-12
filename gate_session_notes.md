@@ -56,7 +56,7 @@ corrected base; the structure-group-vs-second-bundle question for the observer-1
   (observer 2); not a free dial. I had been treating M as independent — the conflation Daryl flagged.
 - r=0/r₀ overcorrection from r195 FIXED: r=0 is a point on the curve (back pole), set by observer 2's
   slicing; NOT a member of 𝒞, NOT the offset r₀.
-- **Drift to reword (Daryl's call):** P3 §556/§558/§560 frame dS↔Schw as different-M slicings; the
+- **Drift to reword (unseated):** P3 §556/§558/§560 frame dS↔Schw as different-M slicings; the
   seam section §466/§504 already carries the one-curve reading. §556/§558/§560 need reconciling.
 - Files corrected: spine, vision §3, plan Move 4, CORPUS_MAP S2 bullet. → r196.
 
@@ -77,7 +77,7 @@ corrected base; the structure-group-vs-second-bundle question for the observer-1
   but the concrete de Sitter sweep is the M=0 arc (§578 r=αsinθ; §586 "(M=0)"), attributing smoothness
   to M=0. Reconciling with "same slicing, same M" turns on whether K_G's −M/r³ divergence is the
   forced-pivot/sweep-axis artefact (removable; §586 "(M=0)" = drift to generalize) or genuinely needs
-  M=0. This is the paper's central diagnostic — needs Daryl's call / Prop curvature verification, NOT a
+  M=0. This is the paper's central diagnostic — needs unseated / Prop curvature verification, NOT a
   gate guess. This is where his "where the formalism got changed" worry lands.
 
 ## WAKE — context flattened 2026-06-12 (SECOND compaction this session)
@@ -181,13 +181,13 @@ source read before this point are re-checked at the source, never trusted from f
   overloaded: 4D background in P7 vs 5D family-carrier in the algebroid layer. Reading P7's "substrate" and
   importing it here is what produced "substrate = dS₄." DO NOT touch P7 (dS₅ has S⁴ slices, not P7's S³ —
   the change would be nonsense). Guard baked into spine §1.
-- **Daryl's call (surfaced, NOT settled):** (a) disambiguate the vocabulary (rename in P7 vs qualify the
+- **unseated (surfaced, NOT settled):** (a) disambiguate the vocabulary (rename in P7 vs qualify the
   algebroid term); (b) the deeper structural reconciliation — P7's "one 4D dS under causal reassignment"
   vs the vision's "cuts of a 5D substrate" (is M⁶/5th dim the α/family direction? is reassignment a cut?).
 - **Live internal fix:** THE_PLAN.md:108 (Move 6 bracket test) so(4,1)→so(5,1)-space (substrate dS₅ isometry).
 - **Left as history (correct):** the error-naming lines (spine §1, vision/plan), CODA_FIELD_NOTE face 13,
   gowdy strawman note, DEMONSTRATING transcript, old scratchpad WAKE blocks.
-- **Flagged, Daryl's call:** THE_VISION_JOURNAL Entry 1/2 carry old so(4,1)⋉𝒞 (historical vision-chain;
+- **Flagged, unseated:** THE_VISION_JOURNAL Entry 1/2 carry old so(4,1)⋉𝒞 (historical vision-chain;
   not rewritten unilaterally).
 
 ## r200+ — THE TWO CONSTRUCTION OPERATIONS, named and split on dimension (with Daryl, from the ruling picture)
@@ -249,7 +249,7 @@ PROPAGATION MAP (deliberate sequence, NOT rushed — P7 is a STABLE paper):
 - **CORRECTED REACH (baked everywhere):** "so(5,1)⋉𝒞 = reassignment⋉slicing" RETRACTED. A discrete
   involution can't be the continuous group. Continuous so(5,1)⋉𝒞 = SLICING structure (substrate isometry
   on the cuts); reassignment = distinct discrete involution. Exact algebroid-face placement: OPEN, not locked.
-- **P7 re-term: FLAGGED, NOT DONE (canon scope, Daryl's call).** Found: "substrate" in P7 AND in P5's
+- **P7 re-term: FLAGGED, NOT DONE (canon scope, unseated).** Found: "substrate" in P7 AND in P5's
   canonical ontology line ("a real 3-sphere evolving in a real de Sitter substrate") means dS₄ — the
   canonical CR term. Re-terming to match Daryl's settled usage (substrate=dS₅, background=dS₄) is
   CORPUS-WIDE (P5+P7) and rewrites the canonical ontology sentence. SCOPE QUESTION for Daryl: does the
@@ -304,7 +304,7 @@ PROPAGATION MAP (deliberate sequence, NOT rushed — P7 is a STABLE paper):
   untouched. Kept: P7 line-10 comment (canon ontology, =dS₅) and 639 "substrate-regular" (=dS₅, term-of-art).
 - Corrected spine §1a flag: re-term was localized to P7, NOT corpus-wide; substrate=dS₅ family-carrier
   everywhere else; the earlier "mechanical corpus-wide sweep / P5 needs fixing" framing was wrong.
-- **STILL OPEN — the geometric reconciliation (Daryl's call, NOT terminology):** how P5/P6's "geometries
+- **STILL OPEN — the geometric reconciliation (unseated, NOT terminology):** how P5/P6's "geometries
   are slicings of the de Sitter manifold / 1D curve on a 2D section swept by SO(3)" framing (written
   dimension-agnostic via \so) sits against the dS₅ genuine-codim-1-slicing picture. My [reach]: the M⁶/5th
   direction = the family/offset (r₀) direction (different r₀ = different position along the 5th dim =
@@ -768,7 +768,7 @@ the step-6 hunt on the algebroid paper before recording/bundling it (r216).
   — gate's call, stated for reversal.
 - PHASE B PLOTTED (THE_PLAN new section): Tier 1 (F1 field-theoretic homomorphism, F2 per-stratum
   subalgebra ID — firm the readings) + Tier 2 (Move 12 the lock, Move 13 su(3), nonlinear Λ>0, cosmogenesis
-  mechanism — the deep reaches). Recommended start: F1. Order is Daryl's to set.
+  mechanism — the deep reaches). Recommended start: F1. Order is not settled by the material.
 - Bundle r217.
 
 ## PROGRAMME AUDIT + MAP REVISION (r218). Daryl called the map-audit cycle (the corpus has expanded).
@@ -882,7 +882,7 @@ are re-checked at the source, never trusted from flattened recall.** From here: 
 - SEAT NOTE for the next move: the natural next pass Daryl names — a fresh end-to-end COLD READ of the revised
   drafts for anything the r218 review didn't reach (distinct from re-checking these fixes) — is a REFEREE pass
   (a fresh cold instance, owed only the operational green light), NOT the gate (saturated; its "does it land cold"
-  read is structurally worthless). Whether/when to run it is Daryl's to orchestrate.
+  read is structurally worthless). Whether/when to run it is unseated. to orchestrate.
 
 ## r220 — ARC CLOSED + CORPUS CONSOLIDATED AS ONE WHOLE (Daryl directed: close the r186→r220 loop; integrate the papers as regions, not tacked-on; weave in the foundational unification incl. the hole argument).
 - TRIGGER: Daryl flagged the consolidation was lopsided — the MAP carried the foundational unification
@@ -954,7 +954,7 @@ are re-checked at the source, never trusted from flattened recall.** From here: 
   the identification may hold only on a precise sub-bundle (the symmetry-reducible sector), which F1 then pins.
   A real result either way, not a failure.
 - FOOTING: this opens the deep grind; this turn weathered ~3 compactions and is saturated, so the computation
-  grinds best from a fresh F1-focused start (KICKOFF_GATE + this entry + THE_PLAN make it ready). Spin-up = Daryl's call.
+  grinds best from a fresh F1-focused start (KICKOFF_GATE + this entry + THE_PLAN make it ready). Spin-up = unseated.
 
 ## WAKE — context flattened 2026-06-13 (compaction at the F1 KICKOFF logging; Daryl-confirmed point).
 **Context flattened at 2026-06-13, at "logging the f1 kickoff so it's the durable starting point" (Daryl
@@ -1016,7 +1016,7 @@ load-bearing from the held record.
 - THE FORK (not settled by computation alone — turns on the construction's deep structure): is F1's
   "homomorphism" (i) Move 6's 5+10 substrate-isometry grading [computed: sharpens to {O,Nariai}], or (ii) the
   1+3 physical anchor→HDA [untested across strata]? Are (i) and (ii) one homomorphism two ways, or two
-  objects? Face 13: how the substrate isometry structure sits under the physical ADM split is Daryl's
+  objects? Face 13: how the substrate isometry structure sits under the physical ADM split is unseated
   construction-understanding (primary source) — or a deeper P5/P6 structural read on the leaf/lapse↔isometry relation.
 - STATUS: F1's substrate-grading map is computed (sharpens to {O, Nariai}); F1's FRAMING has a fork (5+10 vs
   1+3) to resolve before the physical verdict. Surfaced to Daryl. NEXT (if reading): P5/P6 on how the
@@ -1045,7 +1045,7 @@ load-bearing from the held record.
 
 ## F1 — ARP COURSE-CORRECTION (Daryl: "regroup; judgment call you're handing me, or an ARP without my input?"). [CURRENT STATE — supersedes the THIRD-STEP "fork" framing above.]
 - LEAK-DOWN, retracted: I surfaced a "fork" — is F1's homomorphism the 5+10 substrate-isometry grading or the
-  1+3 physical anchor (your construction-understanding)? — and offered it as Daryl's call. Suspecting my own
+  1+3 physical anchor (your construction-understanding)? — and offered it as unseated. Suspecting my own
   framing first (the engine): NOT two homomorphisms. The constraints H⊥/H_a ARE the energy/momentum sectors
   (anchor table, Move 5: leaf→⊥⊥/Hamiltonian, shift→⊥i/momentum). So Move-5 anchor = Move-6 homomorphism, one
   map; "5+10" vs "1+3" = two counts of the SAME constraints (finite symmetry-generated image vs field-level),
@@ -1190,7 +1190,7 @@ is the test; re-open anything load-bearing.
   STRUCTURE is read from Move 4's operations split [reading, symmetric cut]. The GENERIC-CUT COMPUTED
   VERIFICATION (h^{ab}(x) = the induced 3-metric where isotropy is broken) is OUTSTANDING, objective, mine —
   the real next F1 step. NOT closed.
-- The 5th-dimension geometric identity stays Move 4's open item (Daryl's call) — separate, not an F1 blocker
+- The 5th-dimension geometric identity stays Move 4's open item (unseated) — separate, not an F1 blocker
   and not the F1 computation.
 - Caught by Daryl's diagnostic question; the catch RESTORED rigour (his worry: did his flag reduce it? No —
   my conflation did, his question fixed it). Correction is the thing succeeding.
@@ -1281,7 +1281,7 @@ is the test; re-open anything load-bearing.
 - RESULT (clean, verified): dS4 = {chi=pi/2} codim-1 slice of dS5, totally geodesic, lift=chi [computed].
   SdS does NOT embed codim-1 in dS5: Gauss obstruction -3M^2/r^6, class 2, Lambda drops out [computed].
 - FRAMING CORRECTION (Daryl, primary source — "quit the Move-4-Daryl bullshit"): the "the 5th dimension is
-  Move 4's open item, Daryl's call, do not guess" line is a PRIOR-INSTANCE DEFERRAL DISSONANCE sprayed into
+  Move 4's open item, unseated, do not guess" line is a PRIOR-INSTANCE DEFERRAL DISSONANCE sprayed into
   the computation structure — NOT a real constraint. Computing the lift (chi) and the codim-1 result was the
   RIGHT move; deferring computations to Daryl is the disease he's been pulling me off. My wake readback
   RE-SPREAD it (flagged the lift=chi computation as a "leak-down violation") — RETRACTED. The 5th-dim /

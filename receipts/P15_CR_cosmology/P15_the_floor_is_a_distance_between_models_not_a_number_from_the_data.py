@@ -193,7 +193,7 @@ print(f"\n  ** SO F4's MARGIN IS {F3/HI:.0f}x AT ITS WORST AND {F3/LO:.0f}x AT I
 print("     *A verdict that does not depend on the choice is the only kind this front should report.*")
 print()
 print("  ⛔ ***F5 UNSOFTENED: a MEASUREMENT DISCREPANCY is not a framework verdict.  `PO-7` is")
-print("     protected and the conversion is Daryl's.***")
+print("     protected and the conversion runs by `F5`'s stated procedure.***")
 if F3 / HI < 100:
     fail.append(f"F4's margin falls to {F3/HI:.0f}x at the worst reference -- the reference choice "
                 "reaches the verdict and c54.186 must be restated")

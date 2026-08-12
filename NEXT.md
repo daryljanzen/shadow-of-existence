@@ -45,7 +45,7 @@ read.*
 **What a result looks like:** *· if the spacing moves → **the ~21% deficit is a datum statement too**, and
 front #2 has no surviving number; · if it does not → **the deficit survives two independent freedoms** and is
 much stronger than it is today.* ⚠ ***Either way it is a MEASUREMENT result, not a framework verdict. `F5`
-unsoftened, `PO-7` protected, the conversion is Daryl's.***
+unsoftened, `PO-7` protected, the conversion runs by `F5`'s stated procedure.***
 ⌗ *This is the fork's own pick and its layer. **If 54 is running, it takes this and 56 takes ⓶.***
 
 ---
@@ -63,7 +63,7 @@ unsoftened, `PO-7` protected, the conversion is Daryl's.***
 
 **Why:** *the row's own next step reads **"the companion SPEC written as a repo document before any code,
 because it decides whether the thing is trustworthy."*** ⌗ *At r2463 this line mis-filed this as "held by
-Daryl" — **"each rung of the access ladder is Daryl's call" governs WHICH RUNG IS CLIMBED, not whether the
+Daryl" — **"each rung of the access ladder is — unseated." governs WHICH RUNG IS CLIMBED, not whether the
 SPEC gets written**.*
 
 **The object:** *the failure mode the row names — **"the agent cannot distinguish what the book ESTABLISHES

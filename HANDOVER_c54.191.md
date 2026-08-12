@@ -23,7 +23,7 @@ mechanism.**
 > sky in the acoustic PHASE by 0.62π, a discrepancy robust to the fitted parameter and only a third reachable
 > by the one freedom the seam datum leaves open.***
 
-`F5` is unsoftened, `PO-7` is protected, and none of it is converted. **The conversion is Daryl's.**
+`F5` is unsoftened, `PO-7` is protected, and none of it is converted. **the conversion runs by `F5`'s stated procedure.**
 
 ---
 

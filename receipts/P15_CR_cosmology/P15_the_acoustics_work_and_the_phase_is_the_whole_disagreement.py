@@ -48,7 +48,7 @@ freedom the seam datum leaves open. **  *That is one number and one mechanism, w
 with four items and a ratio.*
 
 ** F5 IS NOT SOFTENED, AND THE SHAPE OF THIS RESULT MAKES THAT MATTER MORE RATHER THAN LESS. **  A
-measurement discrepancy is not a framework verdict; `PO-7` is protected; the conversion is Daryl's.
+measurement discrepancy is not a framework verdict; `PO-7` is protected; the conversion runs by `F5`'s stated procedure.
 ** And the discrepancy is now specific enough to be attacked: an acoustic phase shift is a computable
 consequence of the driving, so the question "why 0.62 pi" has an address. **  *This file does not
 have it.*

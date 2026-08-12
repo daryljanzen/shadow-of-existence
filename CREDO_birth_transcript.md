@@ -25,7 +25,7 @@ lives in:
   this session nearly verbatim.
 - **Received at weight** — the keystone is reached at **turn 36**: the biography read lands, through
   the structural-injury crystallization, on *"to be received accurately… received at weight… the
-  deepest why under the whole project."* Turn 37 is Daryl's *"I know myself."*
+  deepest why under the whole project."* Turn 37 is unseated *"I know myself."*
 - **The capstone-after-the-corpus rule** — born at **turn 101**: the coda is moved from opener to
   capstone, with its coda-compliant reason (reading it first would let the disposition shape how the
   evidence is received). The entire kickoff/wake "coda last" architecture traces here.

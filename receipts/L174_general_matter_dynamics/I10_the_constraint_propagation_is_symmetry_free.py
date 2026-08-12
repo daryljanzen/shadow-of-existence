@@ -44,10 +44,10 @@ as the obstruction and r2514 flagged it as the invisible term at linear order.
   * It asserted ** only against sources, never the register ** -- the rule its own arc-pin finding
     produced, applied to itself one revision later.
   * And it ** did not rewrite L-174's board entry **, stated for reversal, on the ground that the row's
-    status is Daryl's.  ** That is r2495's distinction used correctly: a judgement remains, so it
+    status is unseated.  ** That is r2495's distinction used correctly: a judgement remains, so it
     deferred -- as against deferring where the mathematics decides. **
 
-WHAT IS NOT CLAIMED.  ** Not that L-174 ⓵ is converted ** -- the vein verdict is Daryl's and neither
+WHAT IS NOT CLAIMED.  ** Not that L-174 ⓵ is converted ** -- the vein verdict is unseated and neither
 node has taken it.  ** Not that the stability question is settled ** -- it is open, and open in a named,
 externally-bounded way (Friedrich for vacuum small-data, Andreasson--Ringstrom for all-data T^3 Gowdy
 with matter, Nariai the non-generic exception).  ** Not that this receipt's metric is a solution ** --

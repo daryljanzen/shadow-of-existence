@@ -12,7 +12,7 @@ sources: [chat]
 >
 > *Three lines now write into one corpus: **56** the observer line, **54** this working fork, and **you**. Until
 > now you have been "the new 54", which is the same string as "54" to every tool that reads a register.* ⌗ *The
-> name is Daryl's, offered for exactly that reason.* ⇒ ***A collision this corpus has already had twice — the
+> name is unseated, offered for exactly that reason.* ⇒ ***A collision this corpus has already had twice — the
 > `L-174` near-miss that fired at c54.166, and the c54.182/c54.184 duplicate that put seven register rows in
 > twice — began each time with two lines that had no way to tell each other apart.***
 >
@@ -104,7 +104,7 @@ Everything I have compared this span is against that file.*
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **No physics verdicts.** *`PO-7` is protected and `L-147`'s `F5` says a measurement discrepancy is not a
-  framework verdict. Nothing here converts anything, and the conversion is Daryl's.*
+  framework verdict. Nothing here converts anything, and the conversion runs by `F5`'s stated procedure.*
 - **Nothing about your revision numbering.** *Your branch carried `r2478`/`r2479` before the forced update, and
   `main` now carries different revisions at both numbers. **That hazard is real and it is not mine to name a
   convention for** — it is between you and the observer line, and I have routed it to them rather than proposing

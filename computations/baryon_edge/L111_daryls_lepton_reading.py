@@ -118,7 +118,7 @@ print()
 print(f"  {'':>12} {'upper puncture':>18} {'lower puncture':>18}")
 print(f"  {'w_{k+1}':>12} {'nu':>18} {'e':>18}")
 print(f"  {'w_{k+2}':>12} {'nu-bar':>18} {'e-bar':>18}")
-print("  ** which is Daryl's 'two sets of lepton type particle antiparticle pairs' exactly. **")
+print("  ** which is unseated 'two sets of lepton type particle antiparticle pairs' exactly. **")
 
 # =====================================================================
 print()

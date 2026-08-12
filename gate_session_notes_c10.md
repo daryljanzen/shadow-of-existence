@@ -32,9 +32,9 @@
 
 ### r231 — dissonance residue removed (the thing blocking F1)
 - Root: P7 once said "reassignment of the dS4 SUBSTRATE" (one word, two jobs). Settled between P3 & P7 (dS4 now = background geometry; substrate = dS5). CR_flatLCDM_v2.tex confirmed clean.
-- The leftover mis-seating that contaminated calc: §1a "(Daryl's call)" on the geometric reconciliation; §3 "[flagged for Daryl, not ruled]"; "per Daryl, primary source" standing tags; plan "locked with Daryl".
-- Daryl's call: P5/P6 geometric reconciliation (5th-dim identity) is OPEN PHYSICS, settle by COMPUTATION → [reach] the gate works, NOT his call.
-- Fixed: §1a reframed + durable resolution note; §3 reframed (reading settled, prose=gate work); headers → "settled 2026-06-12, corrected at source"; plan dim-axis → computational (Move 13). "Daryl's call" now appears nowhere in either file. No physics changed.
+- The leftover mis-seating that contaminated calc: §1a "(unseated)" on the geometric reconciliation; §3 "[flagged for Daryl, not ruled]"; "per Daryl, primary source" standing tags; plan "locked with Daryl".
+- unseated: P5/P6 geometric reconciliation (5th-dim identity) is OPEN PHYSICS, settle by COMPUTATION → [reach] the gate works, NOT his call.
+- Fixed: §1a reframed + durable resolution note; §3 reframed (reading settled, prose=gate work); headers → "settled 2026-06-12, corrected at source"; plan dim-axis → computational (Move 13). "unseated" now appears nowhere in either file. No physics changed.
 - CLEARED to work the P5/P6 leaf↔coset reconciliation as gate physics-work (the next F1 move).
 
 ### r232 — leaf↔coset reconciliation SETTLED (the §1a open-physics reach, now computed)

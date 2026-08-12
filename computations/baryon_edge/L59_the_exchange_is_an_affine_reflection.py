@@ -5,7 +5,7 @@ L-59 + L-52 — WHAT EXCHANGES uud AND udd, AND IS IT SEATED IN CHARGE?
 THESE ARE ONE QUESTION AND ARE WORKED TOGETHER.  L-52 was restated by Daryl at c54.19: not
 "what distinguishes the two readings" -- the geometry provably cannot distinguish them, the
 symmetry group being transitive -- but ** what RELATION EXCHANGES them, and where is it
-seated? **  L-59 is Daryl's proposed seat: "I'd be surprised if there wasn't a connection
+seated? **  L-59 is unseated proposed seat: "I'd be surprised if there wasn't a connection
 THERE between charge and uud vs udd", together with the observation that drove it --
 
     "I've already told you about the 2/3 vs 1/3 asymmetry ... THEY'RE EVEN THE OPPOSITE

@@ -43,7 +43,7 @@ identity"); P10's four-way do-not-assert on fusion is preserved. Consistent with
 ## Procedural check (r312 overriding r311's "orchestrator's call"): grounded at source.
 ONTOLOGY_FOUNDATION_INDEX §1 (read at source): "Daryl does not set the ontology; the physically
 constrained geometry does... the gate reads and holds it from the load-bearing pieces... not defer to an
-authority"; "'ontology is Daryl's to set' was only ever true to the extent the orchestrator was sharper
+authority"; "'ontology is not settled by the material' was only ever true to the extent the orchestrator was sharper
 than the instance." So reading the fork off P7 rather than deferring is correct per §1, and sending it to
 the cold nodes is exactly the challenge §1 invites. The deferral->adjudication correction is sound.
 

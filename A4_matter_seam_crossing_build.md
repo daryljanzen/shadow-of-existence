@@ -197,6 +197,6 @@ The matter transition is: a **well-posed characteristic-data crossing on the fin
 
 ## Next
 
-Milestone 3 is a coherent unit → logs as r564 + bundle. The matter-sector frontier's next open pieces are a genuine strategic fork (the material doesn't pick for us): (a) the matter *dynamics* — the worldline/field propagation through the now-well-posed seam for a concrete matter model; (b) the **wall** as the onset of free gravitational radiation (P8/P9, `range_paper` cor:radiation); (c) the **chiral matter forced across the branch point**, AH-walled and non-geometric (P14 `boundary_paper`). Which of these is Daryl's call.
+Milestone 3 is a coherent unit → logs as r564 + bundle. The matter-sector frontier's next open pieces are a genuine strategic fork (the material doesn't pick for us): (a) the matter *dynamics* — the worldline/field propagation through the now-well-posed seam for a concrete matter model; (b) the **wall** as the onset of free gravitational radiation (P8/P9, `range_paper` cor:radiation); (c) the **chiral matter forced across the branch point**, AH-walled and non-geometric (P14 `boundary_paper`). Which of these is — unseated.
 
 *Milestones 1–3 banked. Source-grounded, scope guard held and mechanism-confirmed, extensions marked as extensions, the chimera dissolved at source. Stated for reversal.*

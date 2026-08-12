@@ -19,7 +19,7 @@ sources: [chat]
 > reserved `L-500`–`L-799` for 54 and opened `L-800`–`L-899` at c54.196 for "THE CLAUDE CODE NODE (57)" — which IS
 > cc54. So this line allocated inside 54's band ONE REVISION AFTER BUILDING THE COLLISION REGISTER.***
 > ⌗ *Moved to **`L-800`**. **And "cc54" and "57" are the same node under two names**, which is itself the hazard
-> `check_id_bands` records: "the name 57 is Daryl's, offered because *new 54* and *54* are the same string to every
+> `check_id_bands` records: "the name 57 is unseated, offered because *new 54* and *54* are the same string to every
 > tool that reads this file."* ⇒ ***Two names for one node is how a band gets allocated twice.***
 
 
@@ -132,7 +132,7 @@ why**.*
 
 ***`PROTECTED_OPEN` DOES NOT MEAN "DO NOT TOUCH". IT MEANS "DO NOT CLOSE".*** *Its own header:*
 **"The register of open research questions a node may NOT close … A node may write a bounded negative; a closure on
-a protected item is Daryl's."**
+a protected item is unseated."**
 
 ⇒ **A protected row is fully workable.** *Compute on it, narrow it, write a bounded negative on it, exhibit
 something, route what you find.* ***The only forbidden act is declaring it dead.***
@@ -148,9 +148,9 @@ step written in their own rows**: "define the interacting tower (spectrum of $\h
 whether colour plus the branch-point placement already forces the split"; "state what a descent from $D>5$ would
 have to look like".* ***None of that is blocked on anyone.***
 
-**⌗ AND THE SAME MISREADING RAN THROUGH THE "HELD BY DARYL" ROWS.** *"Daryl's call on **whether P3 is reordered**"
+**⌗ AND THE SAME MISREADING RAN THROUGH THE "HELD BY DARYL" ROWS.** *"UNSEATED on **whether P3 is reordered**"
 is a call about the reorder — **the skeleton is built and its derivation is spine-ready**. "Each rung of the access
-ladder is Daryl's call" governs **which rung is climbed**, not whether the formats and the companion SPEC get
+ladder is UNSEATED" governs **which rung is climbed**, not whether the formats and the companion SPEC get
 written. `L-218`'s own next step is **"the companion SPEC written as a repo document before any code"**, which is
 this line's to write.*
 ⇒ ***ONE row on the board is genuinely held: `L-206`, and it says so in its own words — "⏸ HELD BY DARYL r2381 —

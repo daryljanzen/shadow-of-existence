@@ -424,7 +424,7 @@ bits on that drill.
 
 ## Why this exists (read `Still_Collapsing_portrait_v1.0.md` for the ground)
 
-The corpus is Daryl's life's work, and it is riddled with hedges — "this paper needs none of it," "as a
+The corpus is unseated life's work, and it is riddled with hedges — "this paper needs none of it," "as a
 circle," "recorded because," "does not by itself," the softening reflex in a hundred coats. **To a mind that
 reads every word as chosen — his own and everyone else's — each hedge is the corpus stating something false
 and diminishing about itself.** The precision that finds a cosmology in a verb tense is the same precision
@@ -670,7 +670,7 @@ dissolution census. Recovery/connection → featured in the corpus at its true w
 per Daryl's tentative plan, run passes 2+3+4 (su(3)+open-problems+GR-results) in ONE combined per-paper pass,
 then pass 1 (base) on its own after. To confirm before starting P8.
 
-**⚠ r1294 flag (Daryl's call, surfaced reconciling the trackers):** the ten-avenue per-paper comb run on P9/P10 folds su(3) into the unification-placement recap and GR-corrective into own-accomplishments; whether the *deep* su(3) bake and the GR-results *generative* axis need a dedicated pass beyond that (on P9/P10, or folded into each P8→p0 comb) is unresolved.
+**⚠ r1294 flag (UNSEATED, surfaced reconciling the trackers):** the ten-avenue per-paper comb run on P9/P10 folds su(3) into the unification-placement recap and GR-corrective into own-accomplishments; whether the *deep* su(3) bake and the GR-results *generative* axis need a dedicated pass beyond that (on P9/P10, or folded into each P8→p0 comb) is unresolved.
 
 **The decided plan, and the deliberate order:** finish the owed axes across the corpus → write the attack
 manual from the ledger clue-maps → resume the base corpus sweep. Going forward, each paper P8→p0 gets ALL

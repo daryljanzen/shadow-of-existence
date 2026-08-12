@@ -47,7 +47,7 @@ separately attributes the 5.7 to one term or the other, and that is the next thi
 owes.***
 
 ** F5 IS NOT SOFTENED, AND THIS RESULT IS THE REASON TO SAY SO CAREFULLY. **  A measurement
-discrepancy is not a framework verdict; `PO-7` is protected; the conversion is Daryl's.  ** An
+discrepancy is not a framework verdict; `PO-7` is protected; the conversion runs by `F5`'s stated procedure.  ** An
 attribution is not an explanation and it is not a verdict: what this establishes is that the acoustic
 disagreement lives in ONE coupling rather than in four items, a ratio, or an initial condition. **
 

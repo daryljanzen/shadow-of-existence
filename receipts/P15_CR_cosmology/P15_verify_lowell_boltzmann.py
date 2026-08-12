@@ -107,7 +107,7 @@ VERDICT (A1.2 completed; gate-validated, k-sampling ~5.6 pts/oscillation; r0-sta
    quadrupole -- and the octopole over-suppression SOFTENS (0.41 vs the old 0.20). Net: a mild,
    cosmic-variance-consistent low-ell deficit, neither a sharp success nor a sharp falsification risk.
  * REVISES the corpus (P15/P16 low-ell numbers + the quadrupole-match claim). Verified here (gate,
-   r0-stability, the ISW diagnosis) but held for Daryl's call before baking -- it corrects an
+   r0-stability, the ISW diagnosis) but held for unseated before baking -- it corrects an
    established correspondence claim.""")
 print("="*72)
 

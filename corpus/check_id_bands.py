@@ -54,7 +54,7 @@ BANDS = [
 # bitten twice by a line allocating into a namespace another line was already using: the c54.166
 # L-174 collision (near-miss twice by luck before it fired) and the c54.182/c54.184 duplicate.  In
 # both cases the band existed only AFTER the collision.  ** A third line is now working and pushing;
-# the reservation is made now, while it costs nothing. **  *The name 57 is Daryl's, offered because
+# the reservation is made now, while it costs nothing. **  *The name 57 is unseated, offered because
 # "new 54" and "54" are the same string to every tool that reads this file.*
 
 # Which band this tree writes in.  A node changes this line and nothing else.

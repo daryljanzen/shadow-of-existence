@@ -93,7 +93,7 @@ works and states for reversal, NOT a pending orchestrator call):** how the corpu
 > (`CR_framework.tex`, confirmed clean). That fix is **done**. The **remaining P5/P6 geometric
 > reconciliation above is open *physics*, to be settled by computation** — a `[reach]` the gate works and
 > states for reversal, **not** an orchestrator call. The single double-used word seeded a standing
-> "Move 4 is Daryl's domain" dissonance that contaminated the calculation; this note retires that seating.
+> "Move 4 is unseated domain" dissonance that contaminated the calculation; this note retires that seating.
 
 ## 2. The one curve, the diametric poles, and what M is. **[established — P3 §throat, §mass §618; P2 §149]**
 A single slicing curve $r(l)$ on the dS₅ manifold. It meets the throat circle (radius $\alpha$) at two

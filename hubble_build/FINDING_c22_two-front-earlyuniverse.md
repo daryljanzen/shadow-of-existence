@@ -59,5 +59,5 @@ Concretely, three sub-questions:
 3. If neither lever exists, the two-front tension stands and is the programme's sharp early-universe test —
    to be confronted, not tuned around.
 
-This is a corpus-level call (and possibly a corpus *vulnerability*) — c23/Daryl's to make, not c22's to
+This is a corpus-level call (and possibly a corpus *vulnerability*) — c23/not settled by the material, and not c22's to
 settle from analysis. The scripts let you reproduce both numbers in seconds.

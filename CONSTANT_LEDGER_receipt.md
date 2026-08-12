@@ -48,7 +48,7 @@ So the receipt directly **orients the matter sector**: it is not merely "where t
 
 - **The gravitational–quantum ledger: solid** (three source-verified facts read in the maximal-symmetry frame). It is a real first result on G0-unification, not a restatement of geometrized units.
 - **The matter-side count: open** — the fermion sector is unbuilt, so its free-data count is the matter build's own work; and whether ρ_r/ρ_m is truly the *sole* free matter IC (Entry 18's precise claim) is to be settled as the sector is built.
-- **This bears on p0/15** (a concrete result for its §sec:unification / the G0-unification frontier) and **P7 §662 / P10 §179** (where the constants live). Propagation and any strike are Daryl's call, on the strike bar; banked here as the receipt record first.
+- **This bears on p0/15** (a concrete result for its §sec:unification / the G0-unification frontier) and **P7 §662 / P10 §179** (where the constants live). Propagation and any strike are — unseated., on the strike bar; banked here as the receipt record first.
 - **Dissonance guard held:** this is CR's built-and-real register — the gauges are real unit-conversions, the one scale Λ is real; nothing here is "unreal." And it is **coherence, not correspondence**: the free-data count closing on zero (gravitational–quantum) is an internal-economy fact; whether the world is CR's is still P1 and the rate, do-not-assert.
 
 Stated for reversal. The receipt paid off: p0/15 handed us its first active nugget, and it walks straight onto the matter sector — which now carries the whole free-data budget.

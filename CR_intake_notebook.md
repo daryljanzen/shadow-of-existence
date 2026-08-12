@@ -131,6 +131,6 @@ JanzenRange, JanzenCRcosmology, JanzenCanonicalTime, JanzenFramework), NOT by fi
   no JanzenDynamics key defined. Verify + reconcile as part of folding the two into the ten.
 - **Also:** KICKOFF_GATE's own status list ("Stable / In flux / Tabled") names operator/range as "in flux"
   and does NOT place dynamics/algebroid/canonical at all — the operational layer predates them too. Lower
-  priority (Daryl's call whether to touch the kickoff vs just the map).
+  priority ( — unseated. whether to touch the kickoff vs just the map).
 - **Structural (file tree):** prior scratchpads `gate_session_notes.md` + `_c10.md` at top level not retired;
   no `archive/` dir present though README/kickoff/map reference it. Confirm whether archive excluded from bundle.

@@ -33,7 +33,7 @@ to one measurement at c54.164-168 -- so the fence comes down. **
       two, and F6 states why that is arithmetic rather than special pleading.
   F5  ** AND WHAT A NEGATIVE IS NOT. **  `PO-7` is protected precisely here: a negative is a
       measurement discrepancy, not a framework verdict.  This file may report a number and may not
-      convert it into a verdict on the construction -- which is Daryl's, and is the reason the row
+      convert it into a verdict on the construction -- which is unseated, and is the reason the row
       is protected.
 
 ===================================================================================================

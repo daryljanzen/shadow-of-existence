@@ -45,7 +45,7 @@ sequence in which "which group" and "what connection" are one question.
   ⇒ ** The group question is settled; what remains for Ⓗ is the computation, and for Ⓖ whether the two
     structures should be bridged at all. **
 
-WHAT IS NOT CLAIMED.  ** Not that the papers' wording should change ** -- that is Daryl's call and the
+WHAT IS NOT CLAIMED.  ** Not that the papers' wording should change ** - — unseated: nothing in the material settles it.and the
 item stays routed.  ** Not that an equivariant index has been computed **, or that the Atiyah sequence
 should be introduced.  Only that ** the group question underneath all three stations has a determinate
 answer, and it is that four objects were sharing one word. **

@@ -48,7 +48,7 @@ this file can scan: it is whether the construction's peaks SHOULD be tied to its
 is a question about the physics and not about a setting.*
 
 ** F5 IS NOT SOFTENED. **  A measurement discrepancy is not a framework verdict; `PO-7` is protected;
-the conversion is Daryl's.  ** And one small inconsistency is recorded rather than fixed here: the
+the conversion runs by `F5`'s stated procedure.  ** And one small inconsistency is recorded rather than fixed here: the
 instrument pins ell_A = 301.6 while `P15_zonset_determinations` derives z_onset = 6797 by pinning the
 MEASURED 301.76.  0.05%, and it is why this instrument returns 6761 where that receipt returns
 6797. **  *Named so that the two numbers are not read as a disagreement.*
@@ -151,7 +151,7 @@ print("     with the sky is registering, and it is a question about the physics 
 print("     setting, so this file registers it and does not scan it.*")
 print()
 print("  ⛔ ***F5 UNSOFTENED: a MEASUREMENT DISCREPANCY is not a framework verdict.  `PO-7` is")
-print("     protected and the conversion is Daryl's.***")
+print("     protected and the conversion runs by `F5`'s stated procedure.***")
 if not (0.0 < _sens < 0.6):
     fail.append(f"the peaks track the sound horizon at {_sens:.0%} of the acoustic rate -- PART 4's "
                 "reading is not what the scan shows")

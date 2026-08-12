@@ -99,7 +99,7 @@ catalogue — which lists only `Friedmann 6×` for this paper.**
   Friedmann readout of the slicing operator"*. Ordinary terms throughout, several already routed
   internally (`Sec~\ref{sec:rate}`) or to `\cite{JanzenOperator}`.
 
-**⚠ REPORTED, NOT ACTED ON — a corpus-wide house convention, and it is Daryl's call, not the pass's.**
+**⚠ REPORTED, NOT ACTED ON — a corpus-wide house convention, and it is — unseated., not the pass's.**
 P16 routes to companions **both** by `\cite{JanzenX}` **and** by a bare **`(P8)`**-style parenthetical
 (15× in P16 alone). That is not a lapse: it is systematic — **260 bare `(PN)` parentheticals across all
 17 papers**, and the bibitems resolve them (*"companion paper (P3)"*). **So the loop closes.** But for a
@@ -503,7 +503,7 @@ Misner–Sharp); treat as one entry. **Entries are candidates, not verdicts.**
 ---
 
 ## ⛔ NO GLOBAL CONSTRAINTS. THIS IS THE LIST TO START, NOT THE RESULT.
-### Daryl's call, r1143 — correcting the gate, which built this catalogue and then tried to shortcut two-thirds of it.
+### — unseated., r1143 — correcting the gate, which built this catalogue and then tried to shortcut two-thirds of it.
 
 **The gate proposed a "one decision clears ~40 entries" rule** — strike `Friedmann`/`Robertson`/`Walker`/
 `Lemaître` corpus-wide as ordinary terms. **That is wrong twice over, and it is the failure this whole arc
@@ -549,7 +549,7 @@ cannot vanish, here corrected and grounded"*. **Same string, opposite verdicts, 
 site.** That is the argument against global rules, not for them.
 
 ## ⌗ THE CRITERION — what a citation IS, and the prior on every door
-### Daryl's call, r1143, defining the constraint the "no global constraints" ruling left to be set. This is the standard the judgment pass runs on. Stated for reversal.
+### — unseated., r1143, defining the constraint the "no global constraints" ruling left to be set. This is the standard the judgment pass runs on. Stated for reversal.
 
 **The model, and everything follows from it:**
 

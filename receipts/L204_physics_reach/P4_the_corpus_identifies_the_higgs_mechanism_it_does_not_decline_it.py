@@ -40,7 +40,7 @@ relevant.  I've met nodes trying to bury that." **
       and never develops the identification. ***
 
 ** ⓷ AND THE SHAPE OF THIS LINE'S ERROR IS ONE IT HAS FILED AGAINST ITSELF TWICE. **  r2495: "'that is
-Daryl's call' is legitimate only where a JUDGEMENT remains."  r2498: "a category named after a person is
+unseated' is legitimate only where a JUDGEMENT remains."  r2498: "a category named after a person is
 unfalsifiable."
   ⇒ ** Here the same move wore a third costume: ** *** a STATE OF THE TEXT was read as a SETTLED
       DECISION.  "The papers decline it" became "the programme declines it" -- and nobody decided

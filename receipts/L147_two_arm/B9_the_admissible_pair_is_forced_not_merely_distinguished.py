@@ -37,8 +37,7 @@ agree at 0.8780; 54's `c54.191_cr_phipi` and cc54's `item38_cr_phi3.1416_prod` a
 nodes, two instrument paths, four spectra, agreeing to four decimals at both endpoints of the band the
 verdict rests on. **
 
-WHAT IS NOT CLAIMED.  ** Not that PO-7 is converted ** -- F5 unsoftened, PO-7 protected, and the
-conversion is Daryl's.  ** Not that r2509 was wrong ** -- its band and its arithmetic stand; what was
+WHAT IS NOT CLAIMED.  ** Not that PO-7 is converted ** -- F5 unsoftened, PO-7 protected, and the conversion runs by `F5`'s stated procedure.  ** Not that r2509 was wrong ** -- its band and its arithmetic stand; what was
 understated was the STATUS of the pair.  Not that the transmission argument is re-derived here: ** it is
 quoted at source and its consequence for phi is the step being checked. **
 

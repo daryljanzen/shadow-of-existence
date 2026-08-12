@@ -39,7 +39,7 @@ thing to get pulled back to the opposite of what it is supposed to be."*
 connection between CPT and cosmology"* — and then a corpus-wide enrichment that brings the
 synthetic ontology into every paper **on its own terms**.
 
-**The staging is Daryl's, not mine** (r1066):
+**The staging is unseated, not mine** (r1066):
 
 ```
 not outright inconsistent → compliant → consistent → coherent → cohesive → thorough & fulsome

@@ -55,7 +55,7 @@ consequential may be read at all.*
 
 ** WHAT THIS IS AND IS NOT, AND F5 IS NOT SOFTENED HERE. **  `L-147`'s F5 says a negative is a
 MEASUREMENT DISCREPANCY and not a framework verdict, and that `PO-7` is protected precisely here.
-** This file reports a number and does not convert it.  The conversion is Daryl's. **  *And the
+** This file reports a number and does not convert it.  the conversion runs by `F5`'s stated procedure. **  *And the
 number is not new physics: the corpus has carried ell_1/ell_A = 0.5703 against the sky's 0.7312 --
 a 22% deficit -- since c54.168, stated in P15's own text at 21.9%.  What is new is that there is now
 a control good enough for that deficit to be read through a likelihood instead of through a ratio.*
@@ -295,7 +295,7 @@ print("     LambdaCDM's own lensed/unlensed ratio and applying it to the CR arm 
 print("     than helping.*")
 print()
 print("  ⛔ ***AND F5 IS NOT SOFTENED: this is a MEASUREMENT DISCREPANCY, not a framework verdict.")
-print("     `PO-7` is protected precisely here, and the conversion is Daryl's, not this file's.***")
+print("     `PO-7` is protected precisely here, and the conversion runs by `F5`'s stated procedure.***")
 if not (FULL[1] > 10 * max(FULL[0], 1e-9)):
     fail.append("F3 does not exceed F2 by an order of magnitude at full range -- F4 does NOT fire "
                 "and this file's title is wrong")

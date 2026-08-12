@@ -47,7 +47,7 @@ figure (code + pdf + png): `corpus/_figure_backup_pre_storyboard/`.
   New F = the ONE privileged worldline strung out: antimatter black hole (RED, r<0) collapsing
   through r=0 into our matter universe (BLUE, r>0), in (Re tau~, Im tau~, r). The LAP IS UNFURLED
   (the vertical lift at Re tau~=0), not flattened to one X0. Branch: arg r=+pi (negative-imaginary).
-- Structural finding (Daryl's call, confirmed): the collapse side and the cosmology side are
+- Structural finding ( — unseated., confirmed): the collapse side and the cosmology side are
   DIFFERENT CURVES -- collapse = horizontal run at Im tau~=-pi/3 THEN vertical lift at Re tau~=0;
   cosmology = a single simple real curve. Not mirrors.
 - NEW EXACT RESULT: the Nariai seam points (E's boing roots) land at |sinh|=2 (r=-2a/sqrt3) and

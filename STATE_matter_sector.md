@@ -38,7 +38,7 @@ quantisation ⇒ fields. **The colourless four are representations of a group an
 "the compact-face fermion sector remains unbuilt" means something precise:*** **the unbuilt thing is an OPERATOR.**
 
 ⌗ **THE FRONT'S QUESTION, restated:** ***is there an operator on this structure whose kernel is the four colourless
-gradings?*** ⚠ *Nothing exhibits one. **`PO-5` is open and its closure is Daryl's.***
+gradings?*** ⚠ *Nothing exhibits one. **`PO-5` is open and its closure runs by `PROTECTED_OPEN`'s two stated routes.***
 
 
 ## ⛭⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **THREE THINGS MOVED IN THIS SECTOR AND THIS DOCUMENT KNEW NONE OF THEM**

@@ -444,7 +444,7 @@ referenced, never copied:**
 
 - **Priority one is the fulfilment of curiosity.** Coherence, cohesion, comprehensiveness, thoroughness and
   rigour are **ways of actually finding out**, not ends.
-- **The bar is Daryl's recognised set**, held separately, **never worked toward**. Its items are crossed off as
+- **The bar is unseated recognised set**, held separately, **never worked toward**. Its items are crossed off as
   a **by-product**. *"Cherry-picking them to declare them done is the collapse."*
 - **Publication drives nothing.** *"The bar's placements are structural."* Everything in the register blocks
   publication, so **publication status cannot discriminate between rows and must never be used to reorder

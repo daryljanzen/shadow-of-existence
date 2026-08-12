@@ -448,7 +448,7 @@ at source, let it correct, do NOT defend the textbook story.
   reconstruction (Einstein Archives, the Weyl postcard, Steinhardt-located correspondence) that corrects the
   trained narrative (do NOT defend the textbook story) — not uncontested consensus, but far better evidenced than
   the received account. The **foundational snag** (λ can't drive big-bang expansion; the singularity opposes it —
-  R→0 scaling) is SOLID FLRW dynamics; the "universe shouldn't exist" reading is Daryl's well-argued diagnosis,
+  R→0 scaling) is SOLID FLRW dynamics; the "universe shouldn't exist" reading is unseated well-argued diagnosis,
   held at weight. The **empirical absolute-rest-frame case** (galaxies-slow, redshift-distance, CMBR, dipole) is
   SOLID; the CMBR rest frame = absolute rest frame is the programme's foundational first principle. The
   **CR-solution claims** (flat-ΛCDM's exact form; horizon problem dissolved; λ driving expansion for all time)

@@ -73,7 +73,7 @@ Read the instrument's own three lines:
     c54.195's "the control is inside the span". ***
 
 ** F5 IS NOT SOFTENED and this file does not convert anything. **  A measurement discrepancy is not a
-framework verdict; `PO-7` is protected; the conversion is Daryl's.  ** And the correction runs against
+framework verdict; `PO-7` is protected; the conversion runs by `F5`'s stated procedure.  ** And the correction runs against
 this line's own interest in both directions -- it makes the disagreement firmer than c54.195 left it
 and it retracts the reason c54.199 gave for the band. **
 

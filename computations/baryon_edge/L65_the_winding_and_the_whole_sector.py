@@ -84,7 +84,7 @@ print("  ⇒ ** THE FRACTIONAL PART DOES NOT DISTINGUISH u FROM d.  IT DISTINGUI
 print("       FROM ANTIQUARK -- and it does so as 2/3 ONE WAY ROUND against 1/3 THE OTHER. **")
 print("  ⇒ ** THE INTEGER PART IS WHAT DISTINGUISHES u FROM d, AND IT IS EXACTLY ONE LAP. **")
 print()
-print("  Which is Daryl's sentence, term for term: the 2/3 vs 1/3 of the equator IS the")
+print("  Which is unseated sentence, term for term: the 2/3 vs 1/3 of the equator IS the")
 print("  charge distinction, and 'they're even the opposite direction'.  The equator is cut")
 print("  by the three hinges into arcs of 120 and 240 degrees -- 1/3 and 2/3 -- and those")
 print("  are ONE arc read the two ways round, differing by a full lap.")

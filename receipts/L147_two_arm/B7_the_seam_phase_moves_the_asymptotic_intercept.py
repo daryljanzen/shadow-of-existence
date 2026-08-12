@@ -48,7 +48,7 @@ WHAT IS NOT CLAIMED, stated for reversal.
   and the movement is non-monotonic (-0.066 -> +0.066 -> -0.244), so what is established is THAT it
   moves, not its functional form. ** Not that the 0.62pi is refuted ** -- it is shown datum-contingent,
   which is item 38's own "datum statement" horn, not a refutation. The conversion of any of this to a
-  verdict on PO-7 is Daryl's; F5 unsoftened.
+  verdict on PO-7 is unseated; F5 unsoftened.
 
 Written r2502 (cc54, production run). Stated for reversal.
 """
@@ -132,7 +132,7 @@ def main():
     print('  ⇒ Until CRPHI is fixed from the progenitor, the disagreement carries a datum-uncertainty')
     print('    band comparable to itself, so the 0.62pi cannot yet be read as a structural')
     print('    falsification against the sky. Informs L-202 (what the seam carries); answers L-171.')
-    print('    F5 unsoftened, PO-7 protected, the conversion is Daryl\'s.')
+    print('    F5 unsoftened, PO-7 protected, the conversion is by `F5`\'s stated procedure.')
     print()
     return 0
 

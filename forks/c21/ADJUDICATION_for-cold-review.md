@@ -3,7 +3,7 @@
 
 ## What changed since the r311 consolidation you may have seen
 r311 §5 held the SO(6)-face fork OPEN — "the orchestrator's ontology call." That was the deferral reflex.
-`ONTOLOGY_FOUNDATION_INDEX.md` §1 is explicit: the ontology is not Daryl's to set; it is the corpus's, read
+`ONTOLOGY_FOUNDATION_INDEX.md` §1 is explicit: the ontology is not not a node's to set; it is the corpus's, read
 and held from the load-bearing pieces. Routed through the foundation hub + P1/P7 at source, the fork is
 **adjudicated, not open**. This note isolates the single step that carries the result, so you can audit it
 cold rather than re-derive the whole chain.

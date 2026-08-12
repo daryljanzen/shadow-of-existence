@@ -25,7 +25,7 @@ THE RULE (computed): a null ruling through the equator at azimuth th reaches X =
     on the geometry; it IS the hinge/crossing structure of the substrate's own null rulings.
 
 STATUS: the GEOMETRY here is computed and exact (the hinge positions, the +-60 rule, the closed skew
-hexagon, the three-crossings-twice). The COLOURING is Daryl's conjecture, carried over from the ray
+hexagon, the three-crossings-twice). The COLOURING is unseated conjecture, carried over from the ray
 map, and is NOT derived. [6*] stands: no face settles it. THE RHYME STAYS A RHYME.
 """
 import numpy as np, matplotlib; matplotlib.use('Agg'); import matplotlib.pyplot as plt

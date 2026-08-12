@@ -192,7 +192,7 @@ that is Steiner's framing. **So: the minus sign, AND power-as-a-property-of-a-po
 second move — from a relation among segments to an invariant of the point — is the corpus's own: it is
 the same move as reading `r₀` as the offset that IS the mass.)***
 
-**The honest shape of the deliverable, and it is Daryl's to size:** *"A book, or another large paper,
+**The honest shape of the deliverable — unseated. to size:** *"A book, or another large paper,
 or maybe just a few pages extra in p0/17 to capture the MAIN theorems fully."* **The ledger's Parts
 I–V are the first draft of exactly that** — fourteen objects from one input, every step an identity or a
 definition.

@@ -148,7 +148,7 @@ print(f"     because it is the best number in the table and a reader would find 
 print(f"     direction.*  (usable series: {'yes' if USED[_bi] else 'NO'})")
 print()
 print("  ⛔ ***F5 UNSOFTENED: a MEASUREMENT DISCREPANCY is not a framework verdict.  `PO-7` is")
-print("     protected and the conversion is Daryl's.***")
+print("     protected and the conversion runs by `F5`'s stated procedure.***")
 if min(DOF) < 50 * CTRL:
     fail.append(f"the arm's best reading is only {min(DOF)/CTRL:.0f}x the control -- c54.186 must be "
                 "RESTATED rather than defended")

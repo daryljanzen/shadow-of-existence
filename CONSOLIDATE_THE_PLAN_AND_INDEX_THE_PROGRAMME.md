@@ -198,7 +198,7 @@ its `INDEX`.*** *This is the long step and the one that must not be batched.*
 the one grain where a claim and its later correction sit in the same record, and manufacturing 76 narrative
 entries from the register would be inventing that record.* ***The honest instrument is already in the
 bundle***: `FORK_HISTORY_c54.txt` carries 57 commit subjects, each one revision, written at the time.
-**⇒ THE PROPOSAL, and it is Daryl's call:** *append a **fork-span section** to `CORPUS_MAP` carrying those
+**⇒ THE PROPOSAL, and it is — unseated.:** *append a **fork-span section** to `CORPUS_MAP` carrying those
 rows **verbatim and marked as commit subjects rather than changelog entries**, with the gap stated at its
 head — an honest record of what happened, at the weight it actually has, rather than a fabricated one at
 the weight a changelog claims.* **⚠ And the standing fix beneath it: the four-step state advance already
@@ -1295,7 +1295,7 @@ document links is current by construction — and check the links resolve while 
       arguments* — e.g. the existence-criterion card cites `five-dimensional-trope.md` **"verified at source"**
       for *"existence implies a span of time — 'things do not exist atemporally' is oxymoronic"* and
       *"existence is what the clock measures."* **The map has verified against documents the bundle does not
-      contain.** Neither directory exists here. **This is Daryl's to resolve: are they to be brought in?**
+      contain.** Neither directory exists here. ** — unseated. to resolve: are they to be brought in?**
 - [x] **Four older broken links — RESOLVED r1733, and they were two different things.** *`ONTOLOGY_DEEP_READ_NOTES.md` and `RESOURCES_README.md` **exist and always did** — at `resources/`, recovered with the rest of that directory at r1519; the links were path-relative misses, not losses, and the field note names neither. **`KICKOFF.md` (×1) and `WAKE_PROTOCOL.md` (×4) are genuinely absent and are cited only in `CODA_FIELD_NOTE`** — pre-programme documents the casebook quotes as history. **Left as they are, deliberately: the field note is a record of what happened, and a record may cite a document that no longer exists.** *A live document must not; a record may.*
       `ONTOLOGY_DEEP_READ_NOTES.md` (map + coda), `RESOURCES_README.md` / `resources/RESOURCES_README.md`.
 - **The false-positive lesson:** my first checker tested only top-level names, so **every subdirectory path
@@ -1397,7 +1397,7 @@ kind out of five.***
 
 | lane | what was actually wrong | how it was found |
 |---|---|---|
-| **1** | items **closed but not marked**, and one whose gate said *"Daryl's call"* about the very thing under audit | the per-item test |
+| **1** | items **closed but not marked**, and one whose gate said *" — unseated."* about the very thing under audit | the per-item test |
 | **2** | **the heading**: *"waiting on the world"* described **two of five** — A1.4 is **tested and passing** on DESI DR2, A1.1 waits on a refutation not a measurement, A1.3 was honestly downgraded | reading the items against the corpus's results |
 | **3** | items **under-sharpened by their own papers** — *the plan's wording predates the paper that now poses the question exactly*, five times running; **three of them binaries that were two questions** | transcribing each owning paper's own words |
 | **4** | items **unassembled, not unworked** — five of six had their inputs at source; **A5.4's own named test had gone unrun for 755 revisions** | asking what each item's parts already are |
@@ -3316,7 +3316,7 @@ neither is closed until the other is.**
   fully closed**; both title flags had been pending ~290 revisions.
 - **r1591** — P13 retitled, and **the flag's own suggestion NOT taken** — the paper is still a boundary paper,
   so the title names the **convergence**. Ten sibling bibitems propagated in the same turn.
-- **r1590** — item 13's node-side work complete; the two title flags surfaced as Daryl's call.
+- **r1590** — item 13's node-side work complete; the two title flags surfaced as — unseated.
 - **r1589** — **⚠ EIGHT PLAN ITEMS DESTROYED AT r1585 AND RECOVERED** from the r1584 bundle. A span-replace
   whose end-anchor over-matched. **Rule added: after a span edit, diff the line count and check a landmark on
   the far side.**
@@ -3385,7 +3385,7 @@ neither is closed until the other is.**
   with `P3_SWING_ONTOLOGY`. **Four retired on verified landing:** the P7 grind, the P13 epistemic comparison,
   the seam-frontier orientation, the telescope image. Root .md 181 → 177; retired 24 → 30.
 - **r1533** — **the seven dropped two of the programme's own four standing documents.** `THE_VISION` and
-  `THE_SYNTHESIS` indexed as a standing-documents group; whether the top level is seven or nine is Daryl's.
+  `THE_SYNTHESIS` indexed as a standing-documents group; whether the top level is seven or nine is unseated.
   **✔ ANSWERED r1534 — recorded here r1627, 93 revisions late.** `INDEX.md` §The standing documents settles it:
   *"Two remain standing; two were retired — functionally superseded by the ontology documents, **confirmed
   r1534**."* `THE_VISION` retired (Lane 2 is the standing falsification ledger, the map's CURRENT STATE holds

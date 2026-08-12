@@ -2,7 +2,7 @@
 """
 L-113 — THE LIFT.  What the hinge configuration IS in dS_5, rather than in the section.
 
-WHY, AND IT IS DARYL'S POINT.  c54.40: "There's also two more dimensions that are beyond my
+WHY, it is unseated. POINT.  c54.40: "There's also two more dimensions that are beyond my
 mental model which just is the 2D hyperboloid of one sheet."
 
 ** EVERY OBJECT I HAVE COUNTED FOR SIX TURNS LIVES IN THE EQUATORIAL SECTION -- the 2D

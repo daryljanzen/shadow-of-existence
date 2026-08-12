@@ -149,7 +149,7 @@ The cone-tip and three-questions pictures are clean **as pedagogy** — they rid
 truths (a swept surface's curvature divides by distance-to-axis; curves can meet to first
 order and split at second) and need no caveat. The **rigorous** first-order claim (no
 first-order invariant; the crack at the singular point) is **settled** (§4, receipt) and may
-now be asserted in the formal papers. **Chapter X is not edited** (Daryl's call); **the
+now be asserted in the formal papers. **Chapter X is not edited** (unseated); **the
 daggers are.**
 
 ---
@@ -179,7 +179,7 @@ daggers are.**
   the de Sitter pivot is off-axis and nothing diverges). The circle seats it ("two $r$-poles
   of one homogeneous circle; the grid's origin the only asymmetry; curvature reads it"). This
   is where the r154 three-questions insight migrates, in cone form.
-- **Chapter X — not edited (Daryl's call).**
+- **Chapter X — not edited (unseated).**
 
 ---
 
@@ -223,7 +223,7 @@ dovetails with what 3 and 4 already argue (the asymmetry is the sweep, not the c
 - **Canonical-time paper.** Orthogonal to the singularity taxonomy. No add.
 - **Frontier papers (slicing_operator, range_paper).** In flux; bringing them up waits until the
   frontier stabilises (per kickoff). Deferred.
-- **Chapter X.** Not edited (Daryl's call).
+- **Chapter X.** Not edited (unseated).
 
 ---
 
@@ -266,4 +266,4 @@ the understanding forward. Done. Each add genuine; one honest blank.
 With r157–r158, every corpus paper now carries the taxonomy where it adds value: Paper 1 (already
 genus/species), Paper 2 (circle + order index + front matter), Paper 3 (§586 $K_G$ pivot
 signature), the framework paper (§157), Papers 5/6/4/7 + the methodological essay (this round). Chapter X not
-edited (Daryl's call); the daggers complete (cone-tip staged for the double-dagger, his register).
+edited (unseated); the daggers complete (cone-tip staged for the double-dagger, his register).

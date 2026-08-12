@@ -4,7 +4,7 @@ specified in P14.
 
 ** WHAT PROTECTED MEANS, because this receipt exists partly because it was misread. **
 PROTECTED_OPEN's own header: "The register of open research questions a node may NOT close ... ** A
-node may write a bounded negative; a closure on a protected item is Daryl's. **"  ⇒ ** A protected row
+node may write a bounded negative; a closure on a protected item is unseated. **"  ⇒ ** A protected row
 is fully workable.  The forbidden act is declaring it dead, not touching it. **  At r2463 this line
 reported PO-5, PO-6, PO-9 and L-202 as "gated or protected" and set them aside -- ** four live research
 questions, three with a concrete next step written in their own rows. **  This receipt is the
@@ -52,7 +52,7 @@ correction, and it closes nothing.
     here. **  A grading count matching a field count is a coincidence until a map is built.
   * ** NOT that leptons are constructed. **  Nothing here builds a colourless mode; it records that the
     structure has room for exactly four gradings that carry no colour.
-  * ** NOT a closure of any kind. **  PO-5 remains open and its closure is Daryl's.
+  * ** NOT a closure of any kind. **  PO-5 remains open and its closure runs by `PROTECTED_OPEN`'s two stated routes.
 
 ⌗ THE ROW'S NEXT STEP, RESTATED FROM WHAT IS NOW KNOWN: ** not "does colour force the split" -- the
 count is there and the paper declines to use it -- but "what would turn a count of GRADINGS into a

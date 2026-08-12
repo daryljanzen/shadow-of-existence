@@ -50,7 +50,7 @@ a caveat: the disagreement is a PHASE, and the phase is exactly what the seam da
 the corpus's own "one datum per mode and a COMMON phase" does not fix.***
 
 ** F5 IS NOT SOFTENED. **  A measurement discrepancy is not a framework verdict; `PO-7` is protected;
-the conversion is Daryl's.  ** And this file makes the discrepancy SHARPER rather than smaller: a
+the conversion runs by `F5`'s stated procedure.  ** And this file makes the discrepancy SHARPER rather than smaller: a
 spacing that is right and a phase that is wrong is a more specific disagreement than a series that is
 uniformly compressed, and it names where to look. **
 
@@ -173,7 +173,7 @@ print()
 print("  ⛔ ***F5 UNSOFTENED — and this file makes the discrepancy SHARPER rather than smaller: a")
 print("     spacing that is right and a phase that is wrong is a more specific disagreement than a")
 print("     series uniformly compressed, and it names where to look. `PO-7` protected; the")
-print("     conversion is Daryl's.***")
+print("     the conversion runs by `F5`'s stated procedure.***")
 if _wc < 3 * _wl:
     fail.append(f"the CR transient ({_wc:.0f}) is not large against the control's ({_wl:.0f}) -- "
                 "PART 4 has no content")

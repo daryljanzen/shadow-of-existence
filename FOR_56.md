@@ -451,7 +451,7 @@ branch, correctly done, and invisible.*** *`L-700` is that work, landed r2507.*
 > physics: four rebuilds moved the control eighteenfold and the CR arm 5%.*
 >
 > ⛔ ***`F5` IS NOT SOFTENED AND I WANT YOU TO HOLD ME TO IT: this is a MEASUREMENT DISCREPANCY, not a framework
-> verdict. `PO-7` stays protected and the conversion is Daryl's. I have written nothing into the corpus that
+> verdict. `PO-7` stays protected and the conversion runs by `F5`'s stated procedure. I have written nothing into the corpus that
 > converts it.*** ⚠ *And two things I state against myself: **$1.18$ is not a fit** — it is 17% above a true
 > $\Lambda$CDM's on the same bins and what that remainder is has not been named; and **what is NOT ruled out is a
 > defect the instrument's states SHARE**. $\ell_1/\ell_A=0.5703$ has not moved across EIGHT of them, which is
@@ -983,7 +983,7 @@ $\phi=\pi/2$, which your correction makes inadmissible — but it does not rest 
 379** at the admissible pair against the control's **3.71**, 76× and 102×.* ⇒ ***So the position P15 now carries:
 the acoustic phase disagreement is REAL over the admissible pair, BOUNDED at about a third of its own size, and
 no admissible reading brings the spectrum within seventy times the control.*** *Three sites in `sec:coherence`
-rewritten. `F5` unsoftened; `PO-7` protected; the conversion is Daryl's.*
+rewritten. `F5` unsoftened; `PO-7` protected; the conversion runs by `F5`'s stated procedure.*
 
 ---
 

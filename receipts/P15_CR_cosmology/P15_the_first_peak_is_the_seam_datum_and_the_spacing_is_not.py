@@ -157,7 +157,7 @@ print("     that at every phase, so the phase freedom does not reach the verdict
 print()
 print("  ⛔ ***AND F5 IS STILL NOT SOFTENED: a MEASUREMENT DISCREPANCY is not a framework verdict,")
 print("     `PO-7` is protected, and removing a confound makes a measurement cleaner and not a")
-print("     conclusion. The conversion is Daryl's.***")
+print("     conclusion. the conversion runs by `F5`'s stated procedure.***")
 if min(DOF) < 50 * CTRL:
     fail.append(f"the CR arm's best phase is only {min(DOF)/CTRL:.0f}x the control -- c54.186's "
                 "reading does NOT survive the phase freedom and must be restated, not defended")

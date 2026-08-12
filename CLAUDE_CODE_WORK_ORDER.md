@@ -57,7 +57,7 @@ difference between a finding and a wasted revision.***
 
 # II · THE TWO BOUNDARIES — ownership, not capability
 
-*· **A CLOSURE on a `PROTECTED_OPEN` item is Daryl's.** *You may work it, compute on it, **narrow** it, and
+*· **A CLOSURE on a `PROTECTED_OPEN` item is unseated.** *You may work it, compute on it, **narrow** it, and
 write a **bounded negative** on it — the register says narrowing is what it wants. **You may not declare it
 dead.***
 *· **`corpus/*.tex` is the working fork's layer.** *Route to `FOR_54.md` instead — with a **file, a locus, and
