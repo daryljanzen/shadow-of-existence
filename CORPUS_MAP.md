@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2525 — 2026-08-11 (main line). **PO-5's MISSING OPERATOR AND `L-242`'s UNDEVELOPED IDENTIFICATION ARE ONE GAP — and the vein gains a direction.**
+
+**⌗ P14 NAMES THE OPENING AS TWO DISCRETE STRUCTURES, NOT ONE.** *"What that boundary leaves standing is the
+substrate's **discrete** structure — **the orientation parity and the threefold symmetry of the slicing** — recorded
+there as **the one opening through which matter might enter** … This paper **takes up that opening concretely**."*
+⇒ *And its delivered result — three chiral generations with a family symmetry — spends the **$S_3$** half.*
+
+**⛭ AND THE CALCULATION IS ON THE MASSLESS SIDE THROUGHOUT:** *the **massless radial Dirac problem**, the **massless
+Dirac operator's** first-order pair, and P14's own boundary — **"the zero-modes are massless, and their splitting is
+electroweak physics, EXTERNAL TO THE GEOMETRY."***
+⇒ *While P6 says what that sector IS: **"the $R$-symmetric sector is exactly the offset-free, massless vacuum"**,
+with mass **"the $R$-odd DEPARTURE from it"**.*
+⇒⇒ ***SO P14 COMPUTES ON $R$'s EVEN SECTOR, AND THE HIGGS MECHANISM — IN CR'S OWN TERMS — IS EXACTLY WHAT TAKES YOU
+OFF IT. That is not an omission: it is the BOUNDARY OF THE CALCULATION, stated from opposite sides by two papers,
+neither naming the other's structure.***
+
+**⛭⛭ AND THAT IS WHY PO-5's FOUR HAVE NO OPERATOR.** *r2476 found the asymmetry: **the coloured three are the INDEX
+of a Dirac operator**, crossing from gradings to fields by being a kernel, while **the colourless four are $D_6$
+representations trivial on the deck** — a fact about a group.*
+⇒ ***And P14's operator is the MASSLESS $\gamma^5$-graded one, so any operator whose kernel were the colourless four
+must live OFF the massless sector — precisely where P6 puts electroweak breaking.***
+⇒⇒ ***PO-5's "is there an operator whose kernel is the four?" and `L-242`'s "does CR say anything about the Higgs
+MECHANISM?" ARE ONE QUESTION: both ask what happens when you leave $R$'s even sector.***
+
+**⌗ SO THE VEIN GAINS A DIRECTION IT DID NOT HAVE:** ***the search is not for ANY operator but for an $R$-ODD one,
+on the sector the corpus has already called electroweak.***
+
+⚠ *`PO-5` stays open — **nothing here builds an operator** — and no mass is derived: **P14 itself says the splitting
+is external to the geometry**, and `F1`/`F3` remain the trip-wires.*
+⌗ *And the receipt's first draft carried a **hollow assertion** — `True is not False` under "PO-5 stays open" —
+caught by the lint and replaced with a real check. **Instance eighteen, and the lint caught it before the gate
+did.***
+
 ### Revision r2524 — 2026-08-11 (main line). **r2522 CORRECTED — the corpus IDENTIFIES the Higgs mechanism and has never developed the identification, and "only the word is missing" was the burying.**
 
 **⛔ THE ERROR, AND IT IS THIS LINE'S.** *r2522 read P6's mass passage as a principled DECLINE and wrote **"the

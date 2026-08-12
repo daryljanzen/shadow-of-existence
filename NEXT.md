@@ -109,7 +109,6 @@ is**.*
 | **`L-202`** | r2457 | **narrowed twice, still open and still do-not-assert both ways** · the live question is now: **does a MASSIVE trajectory carry a phase?** — the null o |
 | **`L-175`** | r2474 | **the whole row now turns on one question r2474 states**: ***can a second slicing be non-arbitrary — its selection FORCED by the first rather than cho |
 | **`L-165`** | r2475 | ⓵ **the UV clause now has a DEGREE (quartic) and a shape (IR free, UV generic)** — what remains is **defining** the sum, not diagnosing it · ⓶ the clo |
-| **`L-221`** | r2476 | **the question is now an OPERATOR question r2476**: ***is there an operator on this structure whose kernel is the four colourless gradings?*** — and t |
 | **`L-218`** | r2478 | ✔ **② done r2478 — `COMPANION_SPEC.md`** · ① formats via pandoc in CI · ③ contribution, last |
 | **`L-217`** | r2482 | ✔ **the statement exists — `CR_AND_THE_HIGGS.md` §4** · what the row still owes is **§5's onward list**, and `F1` stays live: ***the relation breaks i |
 | **`L-230`** | r2490 | ⓵ **the instrument question is closed r2447** — no gate can read a quantifier · ⓶ the live route is **make `COMPUTES:` universal** (39 of 309 today),  |
@@ -117,6 +116,7 @@ is**.*
 | **`L-509`** | r2501 | done in the registering revision — six sites repaired, the one true-as-written branch-point sentence kept, the lint's recall hole closed and seeded bo |
 | **`L-510`** | r2504 | done in the registering revision — the identity re-derived, the split verified at five wavevectors, P9's wording matched in source, and the polarized- |
 | **`L-511`** | r2508 | done in the registering revision — both slicings computed symbolically, the longitudinal solve run, the York split re-checked standalone, and four sou |
+| **`L-512`** | r2512 | done in the registering revision — gate written, grandfathered, two false-positive classes removed, and the historical duplicate re-seeded and caught |
 
 *25 live rows carry a stated next step; the 14 longest-unworked are shown.*
 
