@@ -1,32 +1,23 @@
 ---
 name: the-open-problems-ledger
 kind: STATE
-current: r2548+c54.205
+current: r2506+c54.197
 class: whole-corpus-instrument
 job: The open-problems ledger by FAMILY — what each family is, what closed it or holds it open, and its register pointer. The fork writes here; this line absorbs it.
 sources: [cowork, chat]
 ---
 
-## ⛭⛭ BROUGHT CURRENT r2548 — what moved, and what the movement was made of
-
-*Six rows closed in twelve revisions: **`L-174`, `L-242`, `L-245`, `L-519`, `L-210`**, and cc54's **`L-801`/`L-802`**.*
-⇒ ***Not one closed by new work.*** *Each closed because something already in the corpus decided it — `thm:bound`'s
-quantifier, P3's cubic, P11's double-duty sentence, P15's transmission dichotomy, and one unwritten marker.*
-⌗ **And the two that stayed open are the two that need something else:** *`L-240` a **judgement** (is uniqueness of
-the leaf's dynamics a desideratum?), `L-803` a **number** (the isocurvature bound, cc54's next run).*
-⇒ ***A join is an afternoon; a gap is a programme. The ledger's useful question is now which kind a row is.***
-
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r2546
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r2548
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
 > **⌗ NOT COVERED — STRUCK since r2417 (83 rows):**
 > `L-150` `L-174` `L-176` `L-177` `L-178` `L-179` `L-180` `L-181` `L-182` `L-183` `L-184` `L-185` `L-186` `L-187` `L-188` `L-189` `L-190` `L-191` `L-192` `L-193` `L-194` `L-195` `L-196` `L-197` `L-198` `L-199` `L-200` `L-201` `L-203` `L-204` `L-206` `L-210` `L-211` `L-213` `L-214` `L-215` `L-216` `L-219` `L-220` `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-229` `L-231` `L-232` `L-233` `L-234` `L-235` `L-236` `L-237` `L-238` `L-239` `L-241` `L-243` `L-244` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-515` `L-516` `L-517` `L-518` `L-520` `L-521` `L-522` `L-523` `L-800` `L-801` `L-802`
 >
-> **⌗ NOT COVERED — OPENED since r2417 (47 rows):**
-> `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-240` `L-242` `L-245` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-519` `L-520` `L-521` `L-522` `L-523` `L-524` `L-525` `L-526` `L-527` `L-800` `L-801` `L-802` `L-803`
+> **⌗ NOT COVERED — OPENED since r2417 (48 rows):**
+> `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-240` `L-242` `L-245` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-519` `L-520` `L-521` `L-522` `L-523` `L-524` `L-525` `L-526` `L-527` `L-800` `L-801` `L-802` `L-803` `L-804`
 >
 > ⌗ ***The ID half is machine-checked against the register; run `regen_grain_currency.py --check`. The prose half below is a JUDGEMENT and is written by hand — the script preserves it verbatim and never invents it, because a gate can check a declaration and not a judgement.***
 

@@ -116,8 +116,9 @@ is**.*
 | **`L-171`** | r2519 | **`PO-7` is the one verdict on the board, and it is now sharply posed**: ***is 0.408 in $\phi/\pi$, at the only two readings the construction PERMITS, |
 | **`L-221`** | r2526 | **the question is INVERTED r2526**: not "is there an $R$-odd operator?" but ***what BRIDGE from grading to field exists that is not "be a kernel"?***  |
 | **`L-803`** | r2545 | **the paragraph is still owed and its SHAPE is settled r2545** — route to 54: ***name $N_{\rm eff}$, state that CR fixes the $\nu_R$'s place and not i |
+| **`L-804`** | r2548 | ***the paragraph is 54's to place:*** *premise meets objection — state that the adiabatic premise is what the CMB forces ($\Delta\chi^2\sim3\times10^5 |
 
-*13 live rows carry a stated next step; the 13 longest-unworked are shown.*
+*14 live rows carry a stated next step; the 14 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session

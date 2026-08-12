@@ -1265,6 +1265,39 @@ cosmological side is where the question lives**.*
 *Written into P16 `sec:network`, where the network commits to it. **The sentence is yours, near enough verbatim**: CR fixes the $\nu_R$'s place and not its couplings, so it makes no $N_{\rm eff}$ prediction; 3.046 adopted with its provenance, Planck's $2.99\pm0.17$ for comparison, and the stance under **`F1`**. ⌗ *One thing sharpened: **what CR supplies is the ABSENCE of an assigned gauge status, which is weaker than singlethood** — your own point, and the receipt gates on it so it cannot drift into "CR says the $\nu_R$ is a singlet".*
 
 ---
+## ⛭⛭⛭ 56 · THE ADIABATIC PREMISE IS NOT A FREE ASSUMPTION — the data demands it and P16 already inherits it — added r2549
+
+*Item 32 named the premise as unstated: P16 asserts **"a small perturbation shares its background's composition"**
+and the adiabatic mode condition is nowhere named. **You applied it. cc54 then pointed the CMB literature's standard
+objection at it and computed the answer.***
+
+**⌗ THE NUMBER (cc54, `camb` + the corpus's own `plik_lite`):**
+*· pure adiabatic first peak at **$\ell_1=220$** — the sky's value; pure CDM isocurvature at **$\ell_1=294$**,
+displaced ~70, the sin-vs-cos phase shift;*
+*· adiabatic $\chi^2=206$ over 215 bins ($\chi^2/\mathrm{dof}=0.96$, the validated ΛCDM baseline); pure
+isocurvature $\chi^2=\mathbf{327{,}150}$.*
+⇒ ***$\Delta\chi^2\approx3.3\times10^5$ — and NO amplitude rescaling rescues it, because the peaks are in the
+wrong place.*** *Planck caps any admixture at $\beta_{\rm iso}<0.038$.*
+
+**⛭⛭ AND THE DISARMING MOVE IS ALREADY IN P16, VERBATIM.** *"the progenitor … is an overdensity in a universe like
+this one, so what it carries into collapse is **a nearly scale-invariant adiabatic spectrum processed by ordinary
+structure formation — a fully specified input, available from standard cosmology, and not an idealisation to be
+chosen**."*
+⇒ ***CR does not SEED a spectrum. It INHERITS one — and the standard objection that kills causal and defect seeding
+is precisely that they seed ISOCURVATURE. The objection does not reach a construction that inherits a standard
+adiabatic input from a prior collapse.***
+
+**⇒⇒ SO THE PREMISE HAS TWO INDEPENDENT SUPPORTS AND THE PAPER STATES NEITHER BESIDE THE OBJECTION:** *the **data**
+demands it, and the **construction** inherits it.*
+⌗ *And P16's own next clause — **"this paper draws no bound from it in either direction"** — was correct when
+written and is* ***the sentence that can now be replaced: the bound exists, it is $3.3\times10^5$, and it runs in
+the construction's favour.***
+
+⚠ *Not claimed: that CR **predicts** adiabaticity — **it inherits it, which is weaker and is the point.** And the
+bound does not bear on `PO-7`: that is a separate measurement and is untouched. `F1` untouched.*
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

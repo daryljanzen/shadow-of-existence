@@ -1,50 +1,21 @@
 ---
 name: the-plan
 kind: STATE
-current: r2548+c54.205
+current: r2506+c54.197
 job: The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance
----
-
-## ⛭⛭⛭ BROUGHT CURRENT r2548 — six rows closed in twelve revisions, and not one by new work
-
-**⌗ WHAT MOVED.** *`L-174` (opened r2376, folding a map item live since **r565**) · `L-242` · `L-245` · `L-519` ·
-`L-210` · and cc54's `L-801`/`L-802`.*
-⇒ ***Each closed because something already in the corpus decided it, and nobody had set the two halves side by
-side:*** *`thm:bound` quantified over **every** subgroup all along; p0's parity is a **property of P3's cubic**;
-P11's sentence was doing **two jobs with one scoping**; P15's transmission dichotomy **IS** the temperature answer;
-and `L-210`'s front was worked with **one marker never written**.*
-
-**⛭ THE STANDING ORDER GAINS ONE LINE:** ***when a row has stood a long time, look for the OTHER half before
-looking for new work.*** *A join is an afternoon; a gap is a programme, and asking which before starting is the
-cheapest decision available.*
-
-**⌗ AND THE R-P WALK IS COMPLETE** *(item ④ of the standing order): every station, **six arrival-path findings** —
-Lovelock · Type II/III · Unruh · Higgs · baby universe · $N_{\rm eff}$ — and **four already closed in the papers**.*
-⇒ *What remains of that generator is not more stations but **the two findings that open a question rather than a
-paragraph**: `L-240` (is uniqueness of the leaf's dynamics a desideratum?) and `L-803` (narrowed to a consistency
-statement r2545).*
-
-**⚠ AND THE DEFERRAL RULE IS NOW A GATE.** *This file has carried it since **r1885**, absolute — and it was broken
-five more times after that (r2495, r2524, r2529, and one phrase reaching 41 uses).* ⇒ ***`corpus/check_deferrals.py`
-fails the turn on any written deferral in a live document; 1118 files scanned, zero remain.*** *Recorded in §r1885
-above.*
-
-⌗ *Board: **four veins, nine leads**, zero unsorted. **Twenty-four gates.** `FOR_54` at a floor of items 25/28/32
-plus the two just delivered.*
-
 ---
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r2546
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r2548
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
 > **⌗ NOT COVERED — STRUCK since r2417 (83 rows):**
 > `L-150` `L-174` `L-176` `L-177` `L-178` `L-179` `L-180` `L-181` `L-182` `L-183` `L-184` `L-185` `L-186` `L-187` `L-188` `L-189` `L-190` `L-191` `L-192` `L-193` `L-194` `L-195` `L-196` `L-197` `L-198` `L-199` `L-200` `L-201` `L-203` `L-204` `L-206` `L-210` `L-211` `L-213` `L-214` `L-215` `L-216` `L-219` `L-220` `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-229` `L-231` `L-232` `L-233` `L-234` `L-235` `L-236` `L-237` `L-238` `L-239` `L-241` `L-243` `L-244` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-515` `L-516` `L-517` `L-518` `L-520` `L-521` `L-522` `L-523` `L-800` `L-801` `L-802`
 >
-> **⌗ NOT COVERED — OPENED since r2417 (47 rows):**
-> `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-240` `L-242` `L-245` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-519` `L-520` `L-521` `L-522` `L-523` `L-524` `L-525` `L-526` `L-527` `L-800` `L-801` `L-802` `L-803`
+> **⌗ NOT COVERED — OPENED since r2417 (48 rows):**
+> `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-240` `L-242` `L-245` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-519` `L-520` `L-521` `L-522` `L-523` `L-524` `L-525` `L-526` `L-527` `L-800` `L-801` `L-802` `L-803` `L-804`
 >
 > ⌗ ***The ID half is machine-checked against the register; run `regen_grain_currency.py --check`. The prose half below is a JUDGEMENT and is written by hand — the script preserves it verbatim and never invents it, because a gate can check a declaration and not a judgement.***
 

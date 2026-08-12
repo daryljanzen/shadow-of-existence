@@ -42,10 +42,10 @@ sources: [chat]
 | `ABSORPTION.md` | SOURCE | The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced. | — | c54.205 | 0 |
 | `THE_LIVE_ARC.md` | SOURCE | the lead register — the one live edge | — | c54.205 | 0 |
 | `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.205 | c54.205 | 0 |
-| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.205 | c54.205 | 0 |
+| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.204 | c54.204 | 1 |
 | `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.205 | 0 |
-| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.204 | c54.204 | 1 |
-| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.204 | c54.204 | 1 |
+| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.205 | c54.205 | 0 |
+| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.205 | c54.205 | 0 |
 | `ACOUSTIC_BUILD_SETUP.md` | STATE | The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own. | — | c54.201 | 4 |
 | `BOARD.md` | STATE | (declared in frontmatter) | — | c54.200 | 5 |
 | `CATEGORY_THEORY_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.201 | 4 |
@@ -81,9 +81,9 @@ sources: [chat]
 | `THE_FERMION_SECTOR_GEOMETRY.md` | STATE | the fermion sector read in the geometry | — | c54.201 | 4 |
 | `THE_MATHEMATICS_REACH.md` | STATE | The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. ⛭ ALL FIVE STATIONS WALKED r2490–r2493 — and Ⓒ, Ⓖ, Ⓗ CONVERGED on one knot: which order-six group acts. See the block below. Registered as L-203. ⛭ **Ⓕ IS WALKED — `F13` (node 55, verified r2442) settled it, and it is FOUR real forms of $\mathfrak{so}(6,\mathbb C)$, not two: $\mathfrak{su}(3)$ embeds in exactly ONE, the compact form. This frontmatter carried Ⓕ as owed for forty-eight revisions after its own ① block recorded the answer.** | — | c54.201 | 4 |
 | `THE_METHOD.md` | STATE | (declared in frontmatter) | — | c54.201 | 4 |
-| `THE_OPEN_PROBLEMS_LEDGER.md` | STATE | The open-problems ledger by FAMILY — what each family is, what closed it or holds it open, and its register pointer. The fork writes here; this line absorbs it. | — | c54.205 | 0 |
+| `THE_OPEN_PROBLEMS_LEDGER.md` | STATE | The open-problems ledger by FAMILY — what each family is, what closed it or holds it open, and its register pointer. The fork writes here; this line absorbs it. | — | c54.197 | 8 |
 | `THE_PHYSICS_REACH.md` | STATE | The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521, OWE DISCHARGED r2527+c54.202 (two companions remain); ⑥ WALKED r2522 (a one-clause fix, item 48); ⑦ WALKED r2536 (the entropy asymmetry, item 52); **the walk is COMPLETE r2544** per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home. | — | c54.204 | 1 |
-| `THE_PLAN.md` | STATE | The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance | — | c54.205 | 0 |
+| `THE_PLAN.md` | STATE | The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance | — | c54.197 | 8 |
 | `THE_PRY_APART_CENSUS.md` | STATE | Which apparent ONE is TWO things a conflation welded? — the corpus-wide pry-apart census, the dual of the equivalence census. Read BEFORE trusting a standard identification. ⚠ Its own comb is OWED: 'OTHER homes to be FOUND by combing'. | — | c54.201 | 4 |
 | `THE_QUANTUM_JOINT.md` | STATE | The QM sketchpad — a NOTEBOOK, not a ledger: draw the pipe-extensions as far as the evidence suggests, run the rigour alongside as the eraser and not the doorman. Nothing here is a banked corpus result. Register: cluster-J germs were struck c54.117; the quantum tower is L-165 = PO-6. | — | c54.201 | 4 |
 | `THE_RECEIPT_AUDIT.md` | STATE | The receipt audit — what each receipt COMPUTES against what it ASSERTS in verdict-prose (the ◐ category). | — | c54.153 | 52 |

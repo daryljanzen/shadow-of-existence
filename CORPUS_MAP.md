@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r2549 — 2026-08-11 (main line). **cc54's ISOCURVATURE RUN MERGED — the first arrival-path finding settled by a NUMBER, and the answer is that the objection does not reach.**
+
+**⌗ THE RUN.** *cc54 pointed the CMB literature's standard objection to any non-inflationary coherence mechanism —
+**the isocurvature bound** — at item 32's now-named adiabatic premise.* ⇒ ***The generator working exactly as named:
+a field's standard question, aimed at a place cc54 could compute the answer.***
+
+**⛭ THE NUMBER.** *Pure adiabatic first peak at **$\ell_1=220$** — the sky's value; pure CDM isocurvature at
+**$\ell_1=294$**, the sin-vs-cos phase shift. And on the corpus's own `plik_lite`: adiabatic $\chi^2=206$ over 215
+bins ($\chi^2/\mathrm{dof}=0.96$), pure isocurvature $\chi^2=\mathbf{327{,}150}$.*
+⇒ ***$\Delta\chi^2\approx3.3\times10^5$, and no amplitude rescaling rescues it because the peaks are in the wrong
+place.*** *Planck caps any admixture at $\beta_{\rm iso}<0.038$.*
+
+**⛭⛭ AND THE DISARMING MOVE WAS ALREADY IN P16, VERBATIM.** *"the progenitor … is an overdensity in a universe like
+this one, so what it carries into collapse is **a nearly scale-invariant adiabatic spectrum processed by ordinary
+structure formation — a fully specified input, available from standard cosmology, and not an idealisation to be
+chosen**."*
+⇒⇒ ***CR does not SEED a spectrum. It INHERITS one — and the standard objection that kills causal and defect seeding
+is precisely that they SEED isocurvature. The objection does not reach a construction that inherits a standard
+adiabatic input from a prior collapse.***
+
+**⌗ SO THE PREMISE HAS TWO INDEPENDENT SUPPORTS AND THE PAPER STATES NEITHER BESIDE THE OBJECTION** *— the **data**
+demands it, and the **construction** inherits it.* ⇒ ***Item 32 was right that the premise was unstated; what it
+could not see is that stating it costs nothing, because both reasons were already in hand.*** *Routed as item 56.*
+
+**⛭ THE RULE:** ***when a field's standard objection is aimed at a premise, compute it before assuming the premise
+is exposed — the likeliest outcome in a worked corpus is that the objection targets a mechanism the construction
+does not use.***
+⚠ *And the honest half is P16's own: **"this paper draws no bound from it in either direction"** was correct when
+written.* ⇒ ***That is the sentence a number replaces — and replacing a correct non-claim with a measured one is
+what a computational node is FOR.***
+
+⌗ *Not claimed: that CR **predicts** adiabaticity — **it inherits it, which is weaker and is the point**. The bound
+does not bear on `PO-7`, and `F1` is untouched.*
+
 ### Revision r2548 — 2026-08-11 (main line). **c54.205 MERGED · `check_currency` GAINS A FOURTH DECLARED STATE · and `F1` is written where a gate can read it.**
 
 **⛭ c54.205 APPLIED ITEMS 54 AND 55.** *Item 54 — the exponential-vs-power-law mechanism, both integrals recomputed

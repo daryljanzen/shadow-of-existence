@@ -62,6 +62,15 @@ LEADS = {
    "$N_{\\rm eff}$ counts thermalized relativistic species** \u2014 so *does CR adopt the standard value, or does "
    "its $\\nu_R$ structure predict a departure?* **The unnamed adoption is exactly what hides the question**. \u26ed **NARROWED r2545**: CR's own wall ($\\mathfrak{su}(3)\\not\\subset\\mathfrak{so}(5,1)$, stated six times) means it assigns the $\\nu_R$ **a PLACE and no COUPLINGS** \u2014 and $N_{\\rm eff}$ counts **thermalized** species. \u21d2 **CR makes NO $N_{\\rm eff}$ prediction, so the standard value is CONSISTENT rather than in tension, and the owed paragraph says that** (trip-wire: `F1`)",
    ['L-221','L-202'], 3, 3),
+ 'L-804': ("⛭⛭ **cc54's FIRST ARRIVAL-PATH FINDING SETTLED BY A NUMBER**: the isocurvature "
+   "bound (the CMB's standard objection to non-inflationary coherence) pointed at item 32's **adiabatic "
+   "premise**. **Computed (camb + plik_lite):** pure adiabatic $\\ell_1=220$ (the sky's value), pure CDM "
+   "isocurvature $\\ell_1=294$; adiabatic $\\chi^2=206/215$ bins vs isocurvature $\\chi^2=327{,}150$ — "
+   "**$\\Delta\\chi^2\\sim3.3\\times10^5$**, Planck capping any admixture at $\\beta_{\\rm iso}<0.038$. "
+   "⇒ the adiabatic premise is **not a free assumption but what the data DEMANDS**, and CR "
+   "**inherits** a standard adiabatic spectrum rather than seeding isocurvature — so the objection is "
+   "**disarmed, not fatal**. The paragraph is 54's to place; `F1` untouched",
+   ['L-202'], 3, 2),
  'L-171': ("**PO-7 \u2014 THE ONE VERDICT ON THE BOARD, and it is now sharply posed.** \u26ed r2519: the "
    "admissible pair $\\phi\\in\\{0,\\pi\\}$ is **FORCED** by P15's own transmission argument (every mode "
    "**freezes** before the crossing; a frozen mode has zero velocity), not merely distinguished. Band "
