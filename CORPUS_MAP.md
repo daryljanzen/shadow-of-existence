@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2480 — 2026-08-11 (main line). **THE LONGEST-UNWORKED ROW NARROWED — P9 states the general case at the wall, `L-207` exhibits it in one class, and the gap between them is small.**
+
+**⌗⌗ THE GENERATED WORK-EDGE TABLE PAID IN THE REVISION AFTER IT WAS BUILT.** *Its head was `L-174` — **untouched
+since r2376**, folding the map's `A·1` which had been **carried live and unregistered since r565**.*
+
+**⛭ P9 ANSWERS THE GENERAL CASE IN THE VERY PARAGRAPH THAT STATES THE WALL.** *`cor:wall` — "the wall is
+inhomogeneity" — and immediately after:* **"It is not a defect: since the construction leaves the dynamics of
+general relativity unchanged, **the radiative sector beyond it is reached by ORDINARY EVOLUTION OF THE LEAF**
+rather than by generation from a sweep, so **the wall is the seam at which GENERATION-BY-SYMMETRY HANDS OFF TO
+EVOLUTION-BY-DYNAMICS**."**
+⇒ ***So the general matter dynamics beyond the wall is ordinary GR by statement — the construction owes no
+generative law there BECAUSE IT HANDS OFF.***
+
+**⌗ AND `L-207` ⓵ EXHIBITED EXACTLY THAT AT r2450, FROM THE METRIC — IN ONE CLASS:** *LTB with $\Lambda$,
+bend-density identity exact for arbitrary $m(r)$, $\ddot R=-m(r)/R^2+\Lambda R/3$, one equation per comoving shell.*
+⇒⇒ ***THE GAP IS EXACTLY THE DISTANCE BETWEEN THEM: P9 STATES the general case; `L-207` EXHIBITS it only in the
+spherically symmetric class. What is actually unbuilt is the exhibition BEYOND spherical symmetry*** — *much smaller
+and better-posed than "the deepest question the construction opens onto", which is how the row has been carried.*
+
+**⛭⛭ AND WHY IT SAT, which is the transferable part.** *The row was carried at the weight of **P8's % SOURCE
+COMMENT**, phrasing the item as an open **DISCOVERY**; the **published** text had already downgraded it to **an
+exhibition owed** and answers the general case in the same paragraph. **c54.179 corrected the quotation — and
+nobody re-read the row's DIFFICULTY afterward.***
+⇒ ***THE RULE: A CORRECTION TO A ROW'S EVIDENCE IS NOT A CORRECTION TO ITS WEIGHT. Evidence and weight are separate
+fields, fixing one does not touch the other, and the failure is silent — because a row with corrected evidence
+reads as freshly checked.*** *Companion to r2417's "check the fix, not just the diagnosis" and r2463's "check the
+defect, not just the report", **applied to a row's own history rather than to a defect or a tree**.*
+
+⚠ *Not discharged: **the exhibition beyond spherical symmetry is genuinely unbuilt and nothing here builds it**;
+⓶ stays gated on `PO-6`.*
+
+**Register: 235 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2479 — 2026-08-11 (main line). **THE ENTRY-POINT FRONT'S FRW CASE IS THE SAME CYCLOID — and the work order's "edge" was a finite list that eight revisions consumed.**
 
 **⛭⛭ THE FRW THIRD IS NOT AN ANALOGY.** *`ENTRY_POINT_REGISTER` carries a live site against P1/P2's open question:
