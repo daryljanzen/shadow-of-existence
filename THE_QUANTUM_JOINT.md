@@ -1,7 +1,7 @@
 ---
 name: the-quantum-joint
 kind: STATE
-current: c54.185
+current: r2488+c54.194
 job: The QM sketchpad — a NOTEBOOK, not a ledger: draw the pipe-extensions as far as the evidence suggests, run the rigour alongside as the eraser and not the doorman. Nothing here is a banked corpus result. Register: cluster-J germs were struck c54.117; the quantum tower is L-165 = PO-6.
 sources: [cowork]
 ---

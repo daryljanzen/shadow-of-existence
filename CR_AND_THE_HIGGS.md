@@ -1,7 +1,7 @@
 ---
 name: cr-and-the-higgs
 kind: STATE
-current: c54.185
+current: r2488+c54.194
 job: R-P station 6h (L-217) — how CR and the Higgs sector relate, in coherence and in correspondence. THE FALSIFICATION CONDITIONS ARE STATED FIRST, BEFORE THE CLAIM. Read before asserting complementarity.
 sources: [chat]
 ---

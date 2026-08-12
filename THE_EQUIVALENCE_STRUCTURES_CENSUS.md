@@ -1,7 +1,7 @@
 ---
 name: the-equivalence-structures-census
 kind: STATE
-current: c54.185
+current: r2488+c54.194
 class: whole-corpus-instrument
 job: Which apparent TWO are ONE object read two ways? — the corpus-wide equivalence-structures census, the dual of the pry-apart. Read BEFORE claiming two things are distinct. ⚠ Its own comb is OWED: 'the comprehensive comb the corpus has NOT yet done'.
 sources: [cowork]

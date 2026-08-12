@@ -1,7 +1,7 @@
 ---
 name: optics-lensing-ledger
 description: R-P's first field bake — observational optics and lensing thrown at CR. Opened r1857 (Phase 8, the physics half), handed to directly by the conformal bake's C4. Baseline, the O1 result (the photon sphere IS Nariai's forcing locus), probes, and the Phase 9 routing.
-current: c54.185
+current: r2488+c54.194
 ---
 
 > ⚠⚠ **THE $0.72$–$0.79$ SPACING FIGURE IN THIS DOCUMENT IS RETRACTED — annotated r2487, not erased.**

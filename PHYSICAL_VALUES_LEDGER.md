@@ -2,7 +2,7 @@
 name: physical-values-ledger
 job: What does the corpus compute, under which conventions? Read WHEN QUOTING A VALUE.
 class: whole-corpus-instrument
-current: c54.185
+current: r2488+c54.194
 ---
 
 ## ⛭⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **THIS LEDGER SAYS "READ WHEN QUOTING A VALUE", AND THE RECEIPT LAYER CARRIES TWO PARAMETER SETS**

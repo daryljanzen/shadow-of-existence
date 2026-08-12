@@ -1,7 +1,7 @@
 ---
 name: the-pry-apart-census
 kind: STATE
-current: c54.185
+current: r2488+c54.194
 class: whole-corpus-instrument
 job: Which apparent ONE is TWO things a conflation welded? — the corpus-wide pry-apart census, the dual of the equivalence census. Read BEFORE trusting a standard identification. ⚠ Its own comb is OWED: 'OTHER homes to be FOUND by combing'.
 sources: [cowork]

@@ -2,7 +2,7 @@
 name: state-matter-sector
 description: Where the matter sector and the colour question actually stand — read this before touching P13, P14, or family 12. Position, not history.
 sources: [chat]
-current: c54.185
+current: r2488+c54.194
 ---
 
 ## ⛭⛭ THE QUARK/LEPTON FRONT IS NOW AN OPERATOR QUESTION — added r2476

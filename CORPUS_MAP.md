@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2489 — 2026-08-11 (main line). **`check_currency` TRIAGED AGAIN — twenty-four stale, ONE a real landing, and it was the document whose own claim obliged it to track the front.**
+
+**⌗⌗ THE TRIAGE, by r2449's rule: a stale marker and a missed landing look identical from outside the file, so open
+it and ask what it claims to be for.** *Twenty-four flagged; twenty-three carry markers that lag while their
+content stands.*
+⇒ ⛭ ***`ACOUSTIC_BUILD_SETUP.md` is the one, and its own header names the obligation: "the setup for the front the
+working fork is on RIGHT NOW". At r2449 it already recorded that the front had moved twice while it stood still.***
+**It has moved four more times since — and it knew nothing of any of them: no phase, no driving, no $0.62\pi$.**
+
+**⌗ BROUGHT CURRENT WITH THE ROUTE, because two of the four steps are RETRACTIONS and a node reading old figures
+needs to know which:**
+*· **c54.187** — the first-peak position is a **seam-datum artefact**, moving 2.26× under a phase that is assigned
+rather than derived ⇒ **$\ell_1/\ell_A=0.5703$ states nothing**;*
+*· ⚠ **c54.190 retracts the spacing deficit** — "$\sim21\%$" was a mean of three gaps at LMAXL = 1000 ⇒ **0.975
+against 1.002, 2.5%**;*
+*· ⚠ **c54.191 retracts the sensitivity** — "24% of the acoustic rate" was the first peak, inside the transient ⇒
+**the series moves at 98.2%**;*
+*· ⛭⛭ **c54.193 answers "why $0.62\pi$": the DRIVING** — undriven, both arms give $\phi/\pi\approx0.14$, agreeing to
+**0.013**, and the CR arm's undriven slope is exactly **$1.0000\,\ell_A$**.*
+
+**⌗ AND THE CONSEQUENCE FOR THE SETUP ITSELF IS WHY THE BLOCK SITS AT ITS HEAD:** *§§1–5 were written for a build
+whose output would be judged on **peak POSITION**.* ⇒ ***The output is now judged on the acoustic PHASE, fitted on
+peaks 4–8 — which needs production depth and an identically-run control. A build resolving four peaks cannot be
+scored against the current front at all.*** *And the two lints that see exactly that — `check_depth` and
+`check_settings` — are named in it.*
+
+⌗ *The other twenty-three markers bumped without invented landings: **their content stands and only the marker
+lagged**, which is the distinction r2449 exists to preserve.*
+
+**Register: 239 rows. Gates: twenty-one, twenty-one rc=0.**
+
 ### Revision r2488 — 2026-08-11 (main line). **c54.192–194 ABSORBED BY GIT BUNDLE — the first non-tarball absorption, the driving IS the whole disagreement, and a capability both lines assumed for eight revisions.**
 
 **⛭⛭⛭ ⓵ THE PHYSICS, REPRODUCED FROM THE FORK'S OWN FOUR PRODUCTION SPECTRA.**

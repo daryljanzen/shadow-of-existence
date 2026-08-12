@@ -2,7 +2,7 @@
 name: entry-point-register
 job: What does the corpus advertise as open, in its own words? Read BEFORE BELIEVING A GAP.
 class: whole-corpus-instrument
-current: c54.185
+current: r2488+c54.194
 ---
 
 > **⌗ BROUGHT CURRENT r2449, TO c54.185 — and one register entry's question is now ANSWERED.**

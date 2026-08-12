@@ -1,7 +1,7 @@
 ---
 name: combinatorics-ledger
 kind: STATE
-current: c54.185
+current: r2488+c54.194
 job: The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8.
 sources: [cowork]
 ---

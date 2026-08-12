@@ -1,7 +1,7 @@
 ---
 name: category-theory-ledger
 description: R-M's fifth field bake — CATEGORY THEORY, the corpus's largest unlisted field. Opened r1892 after the r1890 holes survey found 363 uses and two papers named for its objects, with the field itself absent from the reach list. Its opening question is one the corpus states about itself.
-current: c54.185
+current: r2488+c54.194
 ---
 
 > **⌗ CHECKED AGAINST c54.163→c54.185 AND DECLARED CURRENT r2449.** *The span's substantive content is **the derived

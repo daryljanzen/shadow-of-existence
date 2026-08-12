@@ -4,8 +4,47 @@ kind: STATE
 current_main: r2111
 job: The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own.
 sources: [cowork]
-current: c54.185
+current: r2488+c54.194
 ---
+
+> ## ⛭⛭⛭ BROUGHT CURRENT r2488, TO c54.194 — AND THE FRONT MOVED FOUR MORE TIMES, INCLUDING TWO RETRACTIONS AND AN ANSWER
+>
+> *This file's own claim — **"the setup for the front the working fork is on right now"** — obliges it to track the
+> front, and at r2449 it already recorded that the front had moved twice while it stood still.* ***It has moved
+> four more times since, and the front's content is now a different statement than the one this setup was written
+> under.***
+>
+> **⌗ WHAT THE FRONT NOW SAYS, in one line:** ***this construction reproduces the acoustic spacing and disagrees
+> with the sky in the acoustic PHASE, by $0.62\pi$ — and the phase is supplied by the DRIVING.***
+>
+> **⌗ AND THE ROUTE THERE, because two of the four steps are RETRACTIONS and a node reading old figures needs to
+> know which:**
+> *· **c54.187** — the first-peak position is a **seam-datum artefact**: the modes that set $\ell_1$ are already
+> sub-horizon when integration begins, and their phase is **assigned rather than derived**. Scanning it moves
+> $\ell_1/\ell_A$ by **2.26×**. ⇒ **$\ell_1/\ell_A = 0.5703$ states nothing.***
+> *· ⚠ **c54.190 RETRACTS the spacing deficit.** "$\sim21\%$/$23\%$" was measured at LMAXL = 1000, **where the CR
+> arm has four peaks — so a "mean spacing" was a mean of three gaps, and the first three gaps are the only place
+> the arms disagree.** ⇒ **At production depth: $0.975$ against $1.002$ — 2.5%, not 21%. Do not carry the 21%.***
+> *· ⚠ **c54.191 RETRACTS the sensitivity too.** "The peaks track their own sound horizon at 24% of the acoustic
+> rate" was measured **on the first peak, inside the transient**. ⇒ **The series moves at 98.2%: $r_s$ falls
+> 11.29%, acoustics requires $+12.73\%$, the spacing does $+12.50\%$. Do not carry "a quarter of the acoustic
+> rate".*** ⌗ ***The peaks in this construction are set by its own sound horizon — as a RESPONSE to a moved
+> parameter, not as a fit.***
+> *· ⛭⛭ **c54.193 ANSWERS "why $0.62\pi$": the DRIVING.** Undriven, both arms give $\phi/\pi \approx 0.14$ —
+> **agreeing to 0.013** — and **the CR arm's undriven slope is exactly $1.0000\,\ell_A$**. Driven, they differ by
+> **0.615**. ⇒ ***The driving supplies 5.72× as much phase in CR as in $\Lambda$CDM, and the undriven arms are the
+> same oscillator.***
+>
+> **⌗ WHAT THIS MEANS FOR THE SETUP BELOW, which is why this block is at the head and not a footnote:** *the
+> boundaries, layer assignment and rate in §§1–5 were written for a build whose output was going to be judged on
+> **peak POSITION**.* ⇒ ***The output is now judged on the acoustic PHASE, fitted on peaks 4–8 — which needs
+> production depth ($\ell_{\max}=3000$, eight peaks) and a control arm run identically. A build that resolves four
+> peaks cannot be scored against the current front at all.***
+> ⌗ *And two lints now exist for exactly that: **`check_depth`** (reads depth off the data) and
+> **`check_settings`** (reads reduced settings off the receipt).*
+>
+> ⚠ *`F5` unsoftened, `PO-7` protected, the conversion Daryl's — **none of the above converts anything**.*
+
 
 > **⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — and this setup's front moved twice while the file stood still.**
 >

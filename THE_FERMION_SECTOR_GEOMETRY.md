@@ -2,7 +2,7 @@
 name: the-fermion-sector-geometry
 description: The Standard Model's fermion content read in the corpus's own hinge/lap/involution geometry — colour, isospin, chirality, fractional charge, confinement, leptons, generations. A SPINE document of the live arc, not an annex. Every correspondence carries what a proof would have to establish and what would refute it.
 sources: [cowork]
-current: c54.185
+current: r2488+c54.194
 ---
 
 ## ⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **the generation count's index argument has a stated-scope question, and the colour wall got tighter**

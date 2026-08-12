@@ -3,7 +3,7 @@ name: dimension-deepening-audit
 description: What the four-dimensionality result owes the reach programme — every R-M and R-P bake, ledger and probe re-read against it, with a verdict for each and the re-runs that earned them. Read this before trusting any bake's constants as structural.
 sources: [cowork]
 kind: STATE
-current: c54.185
+current: r2488+c54.194
 job: What the four-dimensionality result owes the reach programme — every R-M and R-P bake re-read against it, with a verdict for each. Read BEFORE trusting any bake's constants as structural.
 ---
 

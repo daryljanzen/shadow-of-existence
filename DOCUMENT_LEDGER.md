@@ -46,44 +46,44 @@ sources: [chat]
 | `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.194 | 0 |
 | `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.193 | c54.193 | 1 |
 | `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.193 | c54.193 | 1 |
-| `ACOUSTIC_BUILD_SETUP.md` | STATE | The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own. | c54.185 | c54.185 | 9 |
-| `CATEGORY_THEORY_LEDGER.md` | STATE | field ledger — probes and their verdicts | c54.185 | c54.185 | 9 |
-| `COLLAPSE_EXCURSION_TRANSFER_build.md` | STATE | PHASE 7's ATTACK MANUAL — the one build on the progenitor collapse excursion (L2) behind open-problems families 1/3/4/5. Referenced live by eleven documents including THE_PLAN, PHASE7_BUILD_LEDGER and both open-problems documents. | c54.185 | c54.185 | 9 |
-| `COMBINATORICS_LEDGER.md` | STATE | The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8. | c54.185 | c54.185 | 9 |
+| `ACOUSTIC_BUILD_SETUP.md` | STATE | The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own. | — | c54.194 | 0 |
+| `CATEGORY_THEORY_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.194 | 0 |
+| `COLLAPSE_EXCURSION_TRANSFER_build.md` | STATE | PHASE 7's ATTACK MANUAL — the one build on the progenitor collapse excursion (L2) behind open-problems families 1/3/4/5. Referenced live by eleven documents including THE_PLAN, PHASE7_BUILD_LEDGER and both open-problems documents. | — | c54.194 | 0 |
+| `COMBINATORICS_LEDGER.md` | STATE | The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8. | — | c54.194 | 0 |
 | `COMPANION_SPEC.md` | STATE | (declared in frontmatter) | — | c54.188 | 6 |
-| `COMPLEX_ANALYSIS_LEDGER.md` | STATE | field ledger — probes and their verdicts | c54.185 | c54.185 | 9 |
-| `CONFORMAL_GEOMETRY_LEDGER.md` | STATE | field ledger — probes and their verdicts | c54.185 | c54.185 | 9 |
+| `COMPLEX_ANALYSIS_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.194 | 0 |
+| `CONFORMAL_GEOMETRY_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.194 | 0 |
 | `CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md` | STATE | Consolidate the plan and index the programme — the arcs (§2), the sequence (§13), the standing actions (§14), and §16 THE DEVELOPMENT RECORD, which is where RG-1 moves a paper's past state. | — | c54.188 | 6 |
 | `CORPUS_MAP.md` | STATE | (declared in frontmatter) | — | c54.194 | 0 |
-| `CR_AND_THE_HIGGS.md` | STATE | R-P station 6h (L-217) — how CR and the Higgs sector relate, in coherence and in correspondence. THE FALSIFICATION CONDITIONS ARE STATED FIRST, BEFORE THE CLAIM. Read before asserting complementarity. | c54.185 | c54.185 | 9 |
+| `CR_AND_THE_HIGGS.md` | STATE | R-P station 6h (L-217) — how CR and the Higgs sector relate, in coherence and in correspondence. THE FALSIFICATION CONDITIONS ARE STATED FIRST, BEFORE THE CLAIM. Read before asserting complementarity. | — | c54.194 | 0 |
 | `CR_COLLAPSE_HELD_PICTURE.md` | STATE | BUILD MATERIAL for THE_PLAN item 2 / PHASE 7 — the contracting-phase picture held whole: the L2 leg the acoustic driving lives on. Read WITH COLLAPSE_EXCURSION_TRANSFER_build.md (the attack manual) before starting that build. | — | c54.114 | 80 |
-| `ENTRY_POINT_REGISTER.md` | STATE | What does the corpus advertise as open, in its own words? Read BEFORE BELIEVING A GAP. | c54.185 | c54.185 | 9 |
-| `FIGURE_SWEEP.md` | STATE | The figure programme's state — every figure against what it must carry. | c54.185 | c54.185 | 9 |
+| `ENTRY_POINT_REGISTER.md` | STATE | What does the corpus advertise as open, in its own words? Read BEFORE BELIEVING A GAP. | — | c54.194 | 0 |
+| `FIGURE_SWEEP.md` | STATE | The figure programme's state — every figure against what it must carry. | — | c54.194 | 0 |
 | `FIGURE_THEOREM_LEDGER.md` | STATE | The figure–theorem ledger: which classical theorem each figure carries, and its receipts. | — | c54.19 | 175 |
 | `FORK_c54.md` | STATE | the c54 fork's own record | — | c54.188 | 6 |
 | `OPEN_PROBLEMS_MAP.md` | STATE | The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open | — | c54.193 | 1 |
-| `OPTICS_LENSING_LEDGER.md` | STATE | field ledger — probes and their verdicts | c54.185 | c54.191 | 9 |
+| `OPTICS_LENSING_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.194 | 0 |
 | `P3_SWING_ONTOLOGY_hinge-and-door.md` | STATE | The usable ontological skeleton for the SECOND major P3 upgrade — lead with the physical object (one hinge, one door, one swing) and DERIVE w, u, 3w as the shadows it throws. Registered as L-206; the upgrade has not landed. | — | — | never |
 | `PHASE7_BUILD_LEDGER.md` | STATE | the Phase-7 build record | — | c54.153 | 41 |
-| `PHYSICAL_VALUES_LEDGER.md` | STATE | What does the corpus compute, under which conventions? Read WHEN QUOTING A VALUE. | c54.185 | c54.185 | 9 |
-| `QUADRIC_GEOMETRY_LEDGER.md` | STATE | field ledger — probes and their verdicts | c54.185 | c54.185 | 9 |
-| `RP_34_GR_BASELINE.md` | STATE | R-P station ③④ (L-204), §0 BASELINE — what the corpus already holds in GR's four named areas, surveyed and RUN before any question is asked. Read before opening the station. | c54.185 | c54.185 | 9 |
-| `STATE_matter_sector.md` | STATE | where the matter sector stands | c54.185 | c54.185 | 9 |
-| `STATE_programme.md` | STATE | where the programme stands | c54.185 | c54.185 | 9 |
+| `PHYSICAL_VALUES_LEDGER.md` | STATE | What does the corpus compute, under which conventions? Read WHEN QUOTING A VALUE. | — | c54.194 | 0 |
+| `QUADRIC_GEOMETRY_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.194 | 0 |
+| `RP_34_GR_BASELINE.md` | STATE | R-P station ③④ (L-204), §0 BASELINE — what the corpus already holds in GR's four named areas, surveyed and RUN before any question is asked. Read before opening the station. | — | c54.194 | 0 |
+| `STATE_matter_sector.md` | STATE | where the matter sector stands | — | c54.194 | 0 |
+| `STATE_programme.md` | STATE | where the programme stands | — | c54.194 | 0 |
 | `SYNTHESIS_FIGURE_STORYBOARD.md` | STATE | The STANDING WORKING DOCUMENT driving the fig:dS_SdS figure-work phase (P7). AHEAD OF THE CORPUS BY CONSTRUCTION — do NOT date it against the corpus and do NOT make it compliant; a disagreement with a paper is the work product. | — | — | never |
-| `THE_ARSENAL_INDEX.md` | STATE | The grid — which paper × which tool, run or owed, in what order. Campaign R (the two reach theatres) and Campaign C (opens · closures · dissolutions · equivalences · pry-aparts). | c54.185 | c54.185 | 9 |
+| `THE_ARSENAL_INDEX.md` | STATE | The grid — which paper × which tool, run or owed, in what order. Campaign R (the two reach theatres) and Campaign C (opens · closures · dissolutions · equivalences · pry-aparts). | — | c54.194 | 0 |
 | `THE_BASE_RATE.md` | STATE | A5.5 worked — the reference class for least-arbitrariness arguments in physics, assembled neutrally and then judged. The fork added 11 entries across c54.114–153; read BEFORE claiming a least-arbitrariness win. | — | c54.188 | 6 |
-| `THE_DIMENSION_DEEPENING_AUDIT.md` | STATE | What the four-dimensionality result owes the reach programme — every R-M and R-P bake re-read against it, with a verdict for each. Read BEFORE trusting any bake's constants as structural. | c54.185 | c54.185 | 9 |
+| `THE_DIMENSION_DEEPENING_AUDIT.md` | STATE | What the four-dimensionality result owes the reach programme — every R-M and R-P bake re-read against it, with a verdict for each. Read BEFORE trusting any bake's constants as structural. | — | c54.194 | 0 |
 | `THE_DISSOLUTION_CENSUS.md` | STATE | Which standard problem does this dissolve, at what weight, and at what ontological cost? Read BEFORE CLAIMING A DISSOLUTION. | — | — | never |
-| `THE_EQUIVALENCE_STRUCTURES_CENSUS.md` | STATE | Which apparent TWO are ONE object read two ways? — the corpus-wide equivalence-structures census, the dual of the pry-apart. Read BEFORE claiming two things are distinct. ⚠ Its own comb is OWED: 'the comprehensive comb the corpus has NOT yet done'. | c54.185 | c54.185 | 9 |
-| `THE_EVOLUTION_MAP.md` | STATE | Working in paper N, what may I stand on and what may I not yet assume? Read BEFORE STANDING ON A RESULT. | c54.185 | c54.185 | 9 |
-| `THE_FERMION_SECTOR_GEOMETRY.md` | STATE | the fermion sector read in the geometry | c54.185 | c54.185 | 9 |
-| `THE_MATHEMATICS_REACH.md` | STATE | The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. LIVE: stations Ⓕ, Ⓖ, Ⓗ are owed per THE_PLAN's standing order item ④; registered as L-203. | c54.185 | c54.185 | 9 |
+| `THE_EQUIVALENCE_STRUCTURES_CENSUS.md` | STATE | Which apparent TWO are ONE object read two ways? — the corpus-wide equivalence-structures census, the dual of the pry-apart. Read BEFORE claiming two things are distinct. ⚠ Its own comb is OWED: 'the comprehensive comb the corpus has NOT yet done'. | — | c54.194 | 0 |
+| `THE_EVOLUTION_MAP.md` | STATE | Working in paper N, what may I stand on and what may I not yet assume? Read BEFORE STANDING ON A RESULT. | — | c54.194 | 0 |
+| `THE_FERMION_SECTOR_GEOMETRY.md` | STATE | the fermion sector read in the geometry | — | c54.194 | 0 |
+| `THE_MATHEMATICS_REACH.md` | STATE | The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. LIVE: stations Ⓕ, Ⓖ, Ⓗ are owed per THE_PLAN's standing order item ④; registered as L-203. | — | c54.194 | 0 |
 | `THE_OPEN_PROBLEMS_LEDGER.md` | STATE | The open-problems ledger by FAMILY — what each family is, what closed it or holds it open, and its register pointer. The fork writes here; this line absorbs it. | — | c54.188 | 6 |
-| `THE_PHYSICS_REACH.md` | STATE | The R-P theatre — the corpus's claims across physics, per domain. LIVE: stations ③④ onward are owed per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home. | c54.185 | c54.185 | 9 |
+| `THE_PHYSICS_REACH.md` | STATE | The R-P theatre — the corpus's claims across physics, per domain. LIVE: stations ③④ onward are owed per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home. | — | c54.194 | 0 |
 | `THE_PLAN.md` | STATE | The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance | — | c54.188 | 6 |
-| `THE_PRY_APART_CENSUS.md` | STATE | Which apparent ONE is TWO things a conflation welded? — the corpus-wide pry-apart census, the dual of the equivalence census. Read BEFORE trusting a standard identification. ⚠ Its own comb is OWED: 'OTHER homes to be FOUND by combing'. | c54.185 | c54.185 | 9 |
-| `THE_QUANTUM_JOINT.md` | STATE | The QM sketchpad — a NOTEBOOK, not a ledger: draw the pipe-extensions as far as the evidence suggests, run the rigour alongside as the eraser and not the doorman. Nothing here is a banked corpus result. Register: cluster-J germs were struck c54.117; the quantum tower is L-165 = PO-6. | c54.185 | c54.185 | 9 |
+| `THE_PRY_APART_CENSUS.md` | STATE | Which apparent ONE is TWO things a conflation welded? — the corpus-wide pry-apart census, the dual of the equivalence census. Read BEFORE trusting a standard identification. ⚠ Its own comb is OWED: 'OTHER homes to be FOUND by combing'. | — | c54.194 | 0 |
+| `THE_QUANTUM_JOINT.md` | STATE | The QM sketchpad — a NOTEBOOK, not a ledger: draw the pipe-extensions as far as the evidence suggests, run the rigour alongside as the eraser and not the doorman. Nothing here is a banked corpus result. Register: cluster-J germs were struck c54.117; the quantum tower is L-165 = PO-6. | — | c54.194 | 0 |
 | `THE_RECEIPT_AUDIT.md` | STATE | The receipt audit — what each receipt COMPUTES against what it ASSERTS in verdict-prose (the ◐ category). | — | c54.153 | 41 |
 | `THE_STAGED_REVISIONS.md` | STATE | (declared in frontmatter) | — | c54.188 | 6 |
 | `THE_WEAVE.md` | STATE | How the parts are one object — the per-paper orchestration grid and the record of what joins to what | — | c54.188 | 6 |

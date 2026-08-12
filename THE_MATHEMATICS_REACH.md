@@ -1,7 +1,7 @@
 ---
 name: the-mathematics-reach
 kind: STATE
-current: c54.185
+current: r2488+c54.194
 job: The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. LIVE: stations Ⓕ, Ⓖ, Ⓗ are owed per THE_PLAN's standing order item ④; registered as L-203.
 sources: [cowork]
 ---
