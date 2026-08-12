@@ -6,6 +6,38 @@ job: How the programme lives in a git repository — branch discipline, the regi
 sources: [chat]
 ---
 
+## ⛔⛔ READ THIS BEFORE YOU READ THE REGISTER AS A TO-DO LIST — added r2464
+
+***`PROTECTED_OPEN` DOES NOT MEAN "DO NOT TOUCH". IT MEANS "DO NOT CLOSE".*** *Its own header:*
+**"The register of open research questions a node may NOT close … A node may write a bounded negative; a closure on
+a protected item is Daryl's."**
+
+⇒ **A protected row is fully workable.** *Compute on it, narrow it, write a bounded negative on it, exhibit
+something, route what you find.* ***The only forbidden act is declaring it dead.***
+⌗ **AND THE REASON IS IN THE DOCUMENT AND IS THE OPPOSITE OF CAUTION:** *"every mechanical instrument this corpus
+has ever built polices OVER-CLAIMING … **NOTHING polices a NEGATIVE verdict on an open question** … the guard set is
+not merely silent there — **it LEANS**", and a node low on context keeps the heuristics and loses the nuance.*
+⇒ ***`PROTECTED_OPEN` exists because tired nodes KILL things. Reading it as "don't engage" is the same failure
+wearing the opposite coat, and it costs more, because it takes live research off the board silently.***
+
+**⚠ THIS LINE DID EXACTLY THAT AT r2463 AND WAS CORRECTED.** *It reported `L-165`, `L-221`, `L-175` and `L-202` as
+**"gated or protected"** and set them aside — **four live research questions, three of them with a concrete next
+step written in their own rows**: "define the interacting tower (spectrum of $\hat\Gamma$, UV of the sums)"; "ask
+whether colour plus the branch-point placement already forces the split"; "state what a descent from $D>5$ would
+have to look like".* ***None of that is blocked on anyone.***
+
+**⌗ AND THE SAME MISREADING RAN THROUGH THE "HELD BY DARYL" ROWS.** *"Daryl's call on **whether P3 is reordered**"
+is a call about the reorder — **the skeleton is built and its derivation is spine-ready**. "Each rung of the access
+ladder is Daryl's call" governs **which rung is climbed**, not whether the formats and the companion SPEC get
+written. `L-218`'s own next step is **"the companion SPEC written as a repo document before any code"**, which is
+this line's to write.*
+⇒ ***ONE row on the board is genuinely held: `L-206`, and it says so in its own words — "⏸ HELD BY DARYL r2381 —
+deliberately". Everything else marked "his" was this line converting "Daryl decides X" into "Daryl must do
+everything adjacent to X".***
+
+***THE RULE: a marker constrains an ACT, never a SUBJECT. Read which act it names.***
+
+
 # THE HUB — the programme in a repository
 
 > **⛭⛭ WHY, AND IT IS NOT PRIMARILY THE MERGING (Daryl, r2407).**
