@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2626 — 2026-08-11 (main line). **`PO-4`'s two targets have OPPOSITE verdicts, and its status line waits on a route the corpus never took.**
+
+**⛭⛭ ⓵ $\su(3)$ IS DELIVERED, AND NOT BY REDUCING ANYTHING.** *P14: "the smallest connected group containing **the
+three wall monodromies and the hinge $3$-cycle is $SU(3)$, with the lap as its centre**", the module being "**the
+branching** rather than any bundle of the substrate".*
+⇒ ⛔ ***The row's status asks "what reduces $\so(6)\to\su(3)$?" — and P14 GENERATES the group. The status line has
+been waiting on a reduction that was never the route.***
+
+**⛔ ⓶ AND $\su(2)_L$ IS EXPLICITLY NOT DELIVERED**, *with the reason in one clause: "Weak isospin as a **gauging**:
+$T$ is a **discrete horn swap and delivers a species label, not $SU(2)_L$'s chiral action**, the two occupations
+differing on the right-handed pair".*
+
+**⓷ AND THE SECTOR'S OWN COUNT IS REDUCED:** *"the undelivered content is **two items and not three** … what remains
+genuinely outstanding is **the gauge group and the multiplet structure**" — hypercharge follows from those two.*
+
+⇒⇒ ***So `PO-4` is now ONE target with a NAMED obstruction: $\su(2)_L$ as a GAUGING — a chiral action where the
+geometry currently supplies a discrete swap.***
+
+**⛭ THE RULE:** ***when a row names two targets, verdict them SEPARATELY — a target column holding two objects can
+hold two states, and a single OPEN status averages them into a falsehood about both. And read the status line as a
+hypothesis about the ROUTE: if the corpus reached the object another way, the status is not stale, it is about a
+different question.***
+
+⌗ **Eighth latent finding in fifteen turns**, *and the shape is now predictable: **the register describes the work in
+the vocabulary of whoever last thought about it, and the corpus moves on without telling the register**.*
+
 ### Revision r2625 — 2026-08-11 (main line). **`PO-10`'s odd/even half already has its mechanism and its parameter — the row's own description was a receipt's conclusion.**
 
 **⛭⛭ THE FINDING.** *`PO-10` names its second half as "**imprinted by the baryon loading on the expansion leg**",
