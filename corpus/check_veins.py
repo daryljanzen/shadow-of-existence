@@ -73,6 +73,29 @@ def vein_blocks(text):
     return out
 
 
+# ** ---- r2556: THE ANSWERED-QUESTION CHECK WAS BUILT, RUN, AND NOT SHIPPED ---- **
+# ** The retraction table above catches a vein stating a WITHDRAWN CLAIM.  It does not catch a vein
+# still ASKING A QUESTION ITS OWN LEAD ANSWERED ** -- the same defect one mood over.  And there was a
+# real instance: `L-175`'s dark half still read "whether the CUT's four-ness carries the FORCING of the
+# dynamics" four revisions after `L-240` closed with "it does".  ** That one is FIXED in the
+# generator. **
+#
+# ** THE GENERAL CHECK WAS THEN MEASURED AND REJECTED, on r2553's rule. **  Signature: a vein clause
+# naming a STRUCK row beside an interrogative.  With the real instance fixed it reported ** two hits,
+# both legitimate: **
+#   * `L-165`'s clause is ** RECORDING a correction ** ("CORRECTED r2537: r2505 recorded this as ...")
+#     -- a vein describing a retraction is doing the right thing;
+#   * `L-221`'s clause ** cites a closed row for what it SETTLED ** and asks what remains -- which is
+#     exactly the legitimate use the first draft's own docstring predicted.
+#   ⇒ *** 0 real in 2.  A vein may cite a closed row for what it settled, and telling that from a stale
+#       question is a READ.  Shipping it would have taught nodes to ignore a report that is usually
+#       wrong -- the same call as L-514 at r2553 and L-228 at r2554. ***
+# ⌗ ** What the exercise is worth: the defect it found is real and recurring ** (r2538's withdrawn
+# claim, r2556's answered question), ** and the way to catch it is the closure-neighbour report in
+# check_arcs ** -- when a lead closes, read the veins it fed.  *** That report says WHERE to look
+# without pretending to judge; this would have judged and been wrong. ***
+
+
 def main():
     show_all = '--all' in sys.argv
     print()
@@ -119,6 +142,7 @@ def main():
         return 1
 
     print('  no vein carries a withdrawn claim as live.')
+
     print()
     print('  ⌗ THE TABLE IS MEANT TO GROW: ** every withdrawal should be added here in the revision')
     print('    that makes it. **  A retraction not written into the gate is one that lives only in')

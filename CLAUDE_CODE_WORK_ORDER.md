@@ -119,12 +119,10 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-165`** | r2475 | ⓵ **the UV clause now has a DEGREE (quartic) and a shape (IR free, UV generic)** — what remains is **defining** the sum, not diagnosing it · ⓶ the clo |
 | **`L-218`** | r2478 | ✔ **② done r2478 — `COMPANION_SPEC.md`** · ① formats via pandoc in CI · ③ contribution, last |
 | **`L-221`** | r2526 | **the question is INVERTED r2526**: not "is there an $R$-odd operator?" but ***what BRIDGE from grading to field exists that is not "be a kernel"?***  |
-| **`L-803`** | r2545 | **the paragraph is still owed and its SHAPE is settled r2545** — route to 54: ***name $N_{\rm eff}$, state that CR fixes the $\nu_R$'s place and not i |
-| **`L-804`** | r2548 | ***the paragraph is 54's to place:*** *premise meets objection — state that the adiabatic premise is what the CMB forces ($\Delta\chi^2\sim3\times10^5 |
 | **`L-230`** | r2551 | **the number is re-measured r2551 and the diagnosis inverted**: not flat but **falling** (10.1%), and the cause is this line · ***the decision: requir |
 | **`L-171`** | r2552 | **NARROWED r2552 by `kills/PO-7.md`**: the object is now ***does every mode of interest freeze before the crossing?*** — P15 `sec:what-crosses`, the o |
 
-*10 live rows carry a stated next step; the 10 longest-unworked are shown.*
+*8 live rows carry a stated next step; the 8 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session

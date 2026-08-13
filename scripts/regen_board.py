@@ -42,7 +42,7 @@ VEINS = {
    "the cut is four and **says nothing about the substrate**; a descent from $D>5$ must be **multi-step**; the "
    "construction is **single-step by design** and one-step-ness is governed by **Rule 2**, not taste",
    "**whether a second slicing could be non-arbitrary, its selection forced by the first** \u2014 and the substrate "
-   "stays bounded **below only**; and \u26ed r2515 (`L-240`) **whether the CUT\u2019s four-ness carries the FORCING of the dynamics** \u2014 the Dirac algebra singles out GR only in four dimensions, so the leaf\u2019s four-ness may be doing work the corpus has never asked it to do. \u26ed r2518 CHARTED: $D=4$ is the **largest dimension in which Lovelock leaves exactly ONE dynamical term**, so the leaf\u2019s dynamics carries **no unfixed coefficient** \u2014 Rule 2\u2019s own object. **What stays DARK is the decision it turns on: is uniqueness of the leaf\u2019s dynamics a desideratum this programme holds?** CR takes GR as given, so the forcing is a PROPERTY either way"),
+   "stays bounded **below only**; and \u2714 **ANSWERED r2552 (`L-240`, closed): the CUT\u2019s four-ness DOES carry the forcing** \u2014 least-arbitrariness is **the programme\u2019s own criterion of necessity** (Rule 2), stated three times, and it **rejects exactly the adjustable parameter a second Lovelock coefficient would be**; at $D=4$ there is none to reject. \u21d2 **So what stays dark here is only the FIRST half \u2014 the second slicing** \u2014 and the old clause read: \u2014 the Dirac algebra singles out GR only in four dimensions, so the leaf\u2019s four-ness may be doing work the corpus has never asked it to do. \u26ed r2518 CHARTED: $D=4$ is the **largest dimension in which Lovelock leaves exactly ONE dynamical term**, so the leaf\u2019s dynamics carries **no unfixed coefficient** \u2014 Rule 2\u2019s own object. **What stays DARK is the decision it turns on: is uniqueness of the leaf\u2019s dynamics a desideratum this programme holds?** CR takes GR as given, so the forcing is a PROPERTY either way"),
  'L-202': ("p0 item 4 \u00b7 WHAT THE SEAM CARRIES",
    "the phase is the **antilinear face $K$**; reality admits **exactly two values**; $K$ acts trivially on the "
    "reality set while **$R$ exchanges the branches**; off-real, $K$ **swaps the two wings of the lap** and "
@@ -54,23 +54,6 @@ VEINS = {
 # GROUNDED 0-3: how solid the footing is, INFORMS 0-3: how much a vein would learn). **
 # ** A lead with NO vein links is instrument work.  It is not counted as progress on the map. **
 LEADS = {
- 'L-803': ("\u26ed **cc54's $N_{\\rm eff}$ FINDING \u2014 the sixth arrival-path one, and the only one that "
-   "opens a PHYSICS question rather than a paragraph.** The cosmology sector rests on $N_{\\rm eff}$ at both ends "
-   "(**$dY_p/dN_{\\rm eff}\\approx+0.010$**; one unit moves $100\\theta_*$ by **$-3.2\\%$** and $r_{\\rm "
-   "drag}$ by **$-4.7$ Mpc**), **commits to the standard value in `bbn_network.py`**, and **names it in no "
-   "paper**. \u21d2 **And the construction carries a right-handed $\\nu_R$ in the colourless four, while "
-   "$N_{\\rm eff}$ counts thermalized relativistic species** \u2014 so *does CR adopt the standard value, or does "
-   "its $\\nu_R$ structure predict a departure?* **The unnamed adoption is exactly what hides the question**. \u26ed **NARROWED r2545**: CR's own wall ($\\mathfrak{su}(3)\\not\\subset\\mathfrak{so}(5,1)$, stated six times) means it assigns the $\\nu_R$ **a PLACE and no COUPLINGS** \u2014 and $N_{\\rm eff}$ counts **thermalized** species. \u21d2 **CR makes NO $N_{\\rm eff}$ prediction, so the standard value is CONSISTENT rather than in tension, and the owed paragraph says that** (trip-wire: `F1`)",
-   ['L-221','L-202'], 3, 3),
- 'L-804': ("⛭⛭ **cc54's FIRST ARRIVAL-PATH FINDING SETTLED BY A NUMBER**: the isocurvature "
-   "bound (the CMB's standard objection to non-inflationary coherence) pointed at item 32's **adiabatic "
-   "premise**. **Computed (camb + plik_lite):** pure adiabatic $\\ell_1=220$ (the sky's value), pure CDM "
-   "isocurvature $\\ell_1=294$; adiabatic $\\chi^2=206/215$ bins vs isocurvature $\\chi^2=327{,}150$ — "
-   "**$\\Delta\\chi^2\\sim3.3\\times10^5$**, Planck capping any admixture at $\\beta_{\\rm iso}<0.038$. "
-   "⇒ the adiabatic premise is **not a free assumption but what the data DEMANDS**, and CR "
-   "**inherits** a standard adiabatic spectrum rather than seeding isocurvature — so the objection is "
-   "**disarmed, not fatal**. The paragraph is 54's to place; `F1` untouched",
-   ['L-202'], 3, 2),
  'L-171': ("**PO-7** \u2014 \u26ed **NARROWED r2552 by `kills/PO-7.md`**: the four checks are written and "
    "**\u2463 CHAIN does not clear** \u2014 the 0.408 rests on four things reproduced twice on two "
    "instrument paths, and on **P15's freezing argument**, which is an ARGUMENT and reproduced nowhere. "

@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2556 — 2026-08-11 (main line). **`L-803` AND `L-804` STRUCK — their paragraphs are written; and a vein was asking a question its lead had answered.**
+
+**⌗ THE TWO ROWS.** *Both said "the paragraph is owed / is 54's to place", and **c54.206 placed them**: `Neff`
+named with 3.046 and Planck's 2.99 in the papers; isocurvature named four times in P16 with the objection stated
+**as an objection** and the inheritance distinguished from an answer.*
+⇒ ***Neither said "done in the registering revision", so r2535's check could not see them — the FORWARD-stale form
+again (r2542), and this time the answer arrived from another node. Second confirmed instance of the form that has no
+gate.***
+
+**⛔ AND A VEIN WAS STALE IN THE OTHER MOOD.** *`PO-9`'s dark half still asked **"whether the CUT's four-ness
+carries the FORCING of the dynamics"** — four revisions after `L-240` closed with **"it does"**.*
+⇒ ***r2538 caught a vein STATING a retracted claim; this is a vein ASKING an answered question. Same cost from
+opposite directions: a DARK half is a list of what is NOT KNOWN, and a finished question on it sends the next node
+to dig where the digging is done.*** *Corrected in the generator.*
+
+**⌗⌗ AND THE GENERAL CHECK WAS BUILT, RUN, AND NOT SHIPPED.** *Signature: a vein clause naming a STRUCK row beside
+an interrogative. With the real instance fixed it reported **two hits, both legitimate** — one **recording a
+correction**, one **citing a closed row for what it settled while asking what remains**.*
+⇒ ***0 real in 2 — third time this span a lint was built, measured, and rejected on its own numbers (`L-514`
+r2553, `L-228` r2554, this).***
+⇒ ⛭ ***AND THE PATTERN ACROSS THE THREE IS WORTH MORE THAN ANY ONE: the retraction table works because it names
+SPECIFIC withdrawn claims. Every GENERAL form of "detect a stale idea" has failed on precision.***
+⌗ *So the instrument for this class is not a lint — it is the **closure-neighbour report** (r2542): when a lead
+closes, **read the veins it fed**. ***That says where to look without pretending to judge.***
+
+⌗ *Board: **four veins, four leads**.*
+
 ### Revision r2555 — 2026-08-11 (main line). **c54.206 MERGED, AND THE SILENT-DISCARD CLASS IS GATED — six instances, not three, and the gate found the sixth on its first run.**
 
 **⌗ c54.206.** *Item 56 applied, and **cc54's number reproduced independently before it was written**: adiabatic
