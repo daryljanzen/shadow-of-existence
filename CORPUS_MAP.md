@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2643 — 2026-08-11 (main line). **WHEN A CRITERION IS SILENT, SILENT IS THE ANSWER — r2642 carried the silence up as a question.**
+
+**⌗ THE CORRECTION, AND IT IS DARYL'S.** *"I have no idea why it would be restricted in any way beyond structural
+requirements like empirical evidence. **Isn't that just a least-arbitrariness question you put to me?**"*
+⇒ ⛔ ***Yes — and it had already been put and answered. P12: "$dS_D$ is maximally symmetric and moduli-free for
+every $D$, so it selects the manifold at fixed dimension and **is silent on the dimension itself**."***
+
+⇒⇒ ***So `PO-9`'s object — "is the dimension settled, or must it stay bounded below only?" — has the answer
+**BOUNDED BELOW ONLY**, as a RESULT of the criterion rather than a judgement about it. Nothing was owed on the
+physics.***
+
+**⌗ AND THIS IS r2599's FAILURE ONE LEVEL SUBTLER.** *There the decision **did not exist** — `PO-7` stood "complete
+and waiting" while its own inversion check listed live routes. ***Here the decision exists and is not about what it
+was presented as being about***: `PROTECTED_OPEN` reserves the **closure**, not the **substance**, and r2642
+presented the procedural step as though the physics were undecided.*
+
+**⛭ THE RULE:** ***a criterion answering "I do not settle this" is a FINDING, not an open question. Carrying it up
+as a decision converts a result into a request — and asks someone to supply by preference what the framework has
+declined to supply by structure, which is the exact thing least-arbitrariness forbids.***
+
+✔ *`check_silent` built, seeded, wired: **no `kills/` receipt may ask for a judgement while the corpus records the
+criterion as silent on that object**.*
+
+⌗ *And Daryl's framing is now the row's: **what would settle the dimension is empirical, or a constraint not yet
+found — not a preference**.*
+
 ### Revision r2642 — 2026-08-11 (main line). **`PO-9`'s ④ CLEARS — and the last link was never `L-533`'s to reproduce.**
 
 **⌗ (c) — "every rung above the last being maximally symmetric" — is P6's.** *Stated by **two** papers, in arguments

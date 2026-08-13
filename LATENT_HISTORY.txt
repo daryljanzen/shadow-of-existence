@@ -73,3 +73,4 @@ r2640  COMPUTED    PO-9 link (e) reproduced on three routes; unreproduced links 
 r2640  COMPUTED    PO-9 link (e) reproduced on three routes; unreproduced links 3 -> 2
 r2641  COMPUTED    PO-9 link (d) reproduced from the embedding; spacelike restriction shown forced; 2 -> 1
 r2642  LATENT      PO-9 link (c) was never L-533s -- P6 grounds it, P12 and p0 use it; check 4 clears
+r2643  LATENT      the criterion was already put and returned SILENT -- P12 says so; no judgement was owed

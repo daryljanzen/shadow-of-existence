@@ -1,7 +1,7 @@
 ---
 name: kill-PO-9
 kind: KILL-RECEIPT
-current: r2642+c54.207
+current: r2643+c54.207
 description: Kill receipt for PO-9 — the dimensional rise. Route ② of PROTECTED_OPEN's exit procedure: object named, four checks answered. ④ NOW CLEARS as of r2642 (all five links reproduced or relocated); the authorisation is Daryl's.
 sources: [chat]
 ---
@@ -147,7 +147,34 @@ number in it — **rank 1 over two choices** — is a rank, which is absolute.*
 **① and ⑤ pass. ③ finds the prices asymmetric.** ⇒ ⛔ ***And ④ does not clear: three of the five links are
 a single derivation, reproduced nowhere.***
 
-⇒⇒ ***SO THIS RECEIPT DOES NOT ASK FOR AUTHORISATION. It names what would close the row: an independent
+⇒⇒ ***⛭⛭⛭ **REWRITTEN r2643 — AND DARYL'S QUESTION IS THE CORRECTION.** *He asked: "I have no idea why it would
+be restricted in any way beyond structural requirements like empirical evidence. **Isn't that just a
+least-arbitrariness question you put to me?**"*
+
+⇒ ⛔ ***Yes, and it was already answered. The criterion has been put and it returned SILENT: P12 —
+"$dS_D$ is maximally symmetric and moduli-free for every $D$, so it selects the manifold at fixed dimension
+and **is silent on the dimension itself**."***
+
+⇒⇒ ***So the answer to this item's object — "is the substrate's dimension settled, or must it stay bounded
+below only?" — is **BOUNDED BELOW ONLY**, and it is a RESULT of the criterion rather than a judgement about
+it. Nothing was being asked of Daryl on the physics.***
+
+⌗ **WHAT `PROTECTED_OPEN` ACTUALLY RESERVES IS THE CLOSURE, NOT THE SUBSTANCE.** *A node may not strike a
+protected row; that is procedural and it stands. But r2642 presented the procedural step as though the
+physics were undecided —* ***which is the same failure r2599 named on `PO-7`, one level subtler: there the
+decision did not exist, here the decision exists and is not about what it was presented as being about.***
+
+⛭ **THE RULE:** ***when a criterion is silent, SILENT IS THE ANSWER. Do not carry the silence to a human as
+an open question — the criterion answering "I do not settle this" is a finding, and the only thing left is
+whether to record it.***
+
+⚠ *And the structural requirement Daryl names is exactly right and is already the row's other half: the
+dimension stays bounded below **on every constraint the framework states**, and what would settle it is
+empirical or a constraint not yet found — **not a preference**.*
+
+---
+
+SO THIS RECEIPT NO LONGER ASKS FOR A JUDGEMENT ABOUT THE PHYSICS. It names what would close the row: an independent
 check of the maximal-symmetry step, the plane-section reduction, and the rank-1 scale map — the same
 shape of request that `kills/PO-7.md` made at r2552 and that cc54 answered.***
 
