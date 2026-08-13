@@ -1,7 +1,7 @@
 ---
 name: consolidate-the-plan-and-index-the-programme
 kind: STATE
-current: r2582+c54.207
+current: r2583+c54.207
 job: Consolidate the plan and index the programme — the arcs (§2), the sequence (§13), the standing actions (§14), and §16 THE DEVELOPMENT RECORD, which is where RG-1 moves a paper's past state.
 sources: [cowork]
 ---
@@ -11,6 +11,22 @@ sources: [cowork]
 *Opened r2581. **This is where the STORY goes.** A paper is a map of the present state; when its horizon moves back,
 the newly-known content is rehomed upstream into the physics and **the account of what was known when belongs
 here** — not in the paper, where it reads as a changelog.*
+
+### ⓷ `cosmogenesis_paper` (P16) · `sec:verdict` · rehomed r2583
+
+**WHAT SAT THERE.** *The multi-abundance network result, written as a **debt discharged**: "…**was the one
+computation not yet run**… **It has now been run**… **That debt is therefore paid**, and the title's ``produces``
+**now stands earned** … **rather than marked open**."*
+⇒ ⛭ ***The physics — the network returns D, He-4 and He-3 at observed values and Li-7 at the shared standard
+over-prediction, jointly from the single inherited $\eta$ — was true and stated. It was framed as the settling of an
+account rather than as a result.***
+
+**WHAT CHANGED.** *Rewritten in the present: "**It does.** The multi-abundance network … returns … **The pattern is
+required, not permitted, and the title's ``produces`` is earned at the criterion of necessity**."* ⌗ ***Same claim,
+same citations, same numbers. No debt, no "now", no "was not yet run".***
+
+⌗ **Net −214 characters**, *and the third confirmation of the signal: the removed text was **the accounting**, not
+the physics.*
 
 ### ⓶ `matter_sector_paper` (P14) · `sec:scope` · rehomed r2582
 

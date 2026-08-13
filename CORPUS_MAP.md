@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r2583 — 2026-08-11 (main line). **REHOMING PASS 3 — a result written as a debt discharged; and the discriminator failed in BOTH directions.**
+
+**⌗ P16's PARAGRAPH.** *The multi-abundance network result, written as an account settled: "…**was the one
+computation not yet run**… **It has now been run**… **That debt is therefore paid**, and the title's ``produces``
+**now stands earned** … rather than **marked open**."*
+⇒ ***The physics was true and stated — the network returns D, He-4 and He-3 at observed values and Li-7 at the
+shared standard over-prediction, jointly from the single inherited $\eta$. It was framed as the settling of an
+account rather than as a result.***
+⇒ *Rewritten in the present: **"It does."** — same claim, same citations, same numbers. **Net −214 characters, and
+what went was the ACCOUNTING.***
+
+**⛔⛔ AND THE DISCRIMINATOR FAILED IN BOTH DIRECTIONS IN ONE TURN.**
+*· ***TOO LOOSE***: `boundary_paper` flagged on **"where the count no longer bites"** — **ordinary physics prose
+about where a count applies**, nothing to do with the paper's past. **P13 is clean.***
+*· ***TOO TIGHT***: a self-referential-only test scoped the campaign to **five paragraphs in one paper** — and
+**dropped this one**, whose tell is "was the one computation not yet run".*
+⇒⇒ ***NO KEYWORD TEST IS RIGHT. Use the loose test as TRIAGE and READ each hit.***
+⌗ ***Which is what `THE_REHOMING_CAMPAIGN` said before this line drifted into trying to auto-scope it — and the
+drift is the fourth time this span a general classifier was mistaken for a verdict.***
+
+⌗ *Three papers done, **three confirmations of the signal**: P8 **1,265 → 784** in the right place, P14 **−72**,
+P16 **−214**. ***What disappears each time is the prose that explained why the content was where it was.***
+⇒ *Left: **`CR_cosmology` (51 paragraphs, 8 flagged)** and P7's story-move.*
+
 ### Revision r2582 — 2026-08-11 (main line). **REHOMING PASS 2 — a third $D=4$ argument was filed under "scope". And the tense test is recorded as a seventh mechanism.**
 
 **⛭⛭ THE PARAGRAPH.** *P14's "What the flavour skeleton fixes about the dimension" is a **derivation**, not a scope

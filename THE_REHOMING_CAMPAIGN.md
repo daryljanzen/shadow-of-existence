@@ -38,6 +38,24 @@ thing" — and a smaller, diminished section: "this is what we still don't know.
 
 ---
 
+## ✔✔ PASS 3 DONE — `cosmogenesis` (P16), r2583. **And the discriminator's limits are now known from both sides.**
+
+**⌗ THE PARAGRAPH.** *The multi-abundance network result, written as a **debt discharged**: "was the one computation
+**not yet run**… **It has now been run**… **That debt is therefore paid**, and the title's ``produces`` **now stands
+earned** … rather than **marked open**."*
+⇒ ***The physics was true and stated. It was framed as the settling of an account rather than as a result.***
+⇒ *Rewritten in the present. **Net −214 characters**, and the removed text was **the accounting**, not the physics.*
+
+**⛔ AND THE DISCRIMINATOR FAILED IN BOTH DIRECTIONS, WHICH IS WORTH MORE THAN EITHER PASS.**
+*· **Too loose**: `boundary_paper` flagged on **"where the count no longer bites"** — ***ordinary physics prose
+about where a count applies***, nothing to do with the paper's past. **P13 is clean.***
+*· **Too tight**: a self-referential-only test scoped the campaign to five paragraphs in one paper — ***and dropped
+this one***, whose tell is "was the one computation not yet run".*
+⇒⇒ ***No keyword test is right. Use the LOOSE test as triage and READ each hit — which is what the campaign plan
+said before I drifted into trying to auto-scope it.***
+
+---
+
 ## ✔✔ PASS 2 DONE — `matter_sector` (P14), r2582. **A third $D=4$ argument was filed under "scope".**
 
 *The paragraph — "What the flavour skeleton fixes about the dimension" — is a **derivation**: $2M=r_0^{D-3}-r_0^{D-1}$
@@ -98,8 +116,8 @@ signature.*** *Nothing else needs judging.*
 | paper | frontier paras | temporal | |
 |---|---|---|---|
 | **`CR_cosmology`** | 51 | **8** | ⛔ |
-| **`cosmogenesis`** | 5 | **2** | ⛔ |
-| **`boundary_paper`** | 12 | **1** | ⛔ |
+| ~~**`cosmogenesis`**~~ | 5 | ✔ **0** | ***DONE r2583*** |
+| ~~**`boundary_paper`**~~ | 12 | ✔ **clean** | ***FALSE POSITIVE — "no longer bites" is physics prose about where a COUNT applies, not the paper's past*** |
 | ~~**`matter_sector`**~~ | 10 | ✔ **0** | ***DONE r2582*** |
 | ~~**`slicing_operator`**~~ | 5 | ✔ **0** | ***DONE r2581*** |
 | `CR_framework` (P7) · `SdS-slicing-curve` · `algebroid` · `dynamics` · `geometric_core` · `groupoid` · `janzen_circle` · `range_paper` | 41 | **0** | ✔ clean |
