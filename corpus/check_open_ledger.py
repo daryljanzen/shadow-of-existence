@@ -99,8 +99,13 @@ OPENWORD = re.compile(r"(remains open|stays open|is open\b|not yet|unbuilt|undel
 # has been walked" uses `open` to mean AVAILABLE, not UNRESOLVED.  ⇒ *** Loosening OPENWORD to dodge it
 # would blind the check to real cases; naming the sense here keeps the pattern tight and the exception
 # visible. ***
+# ** SECOND NAMED SENSE, r2597. **  "reduces the count of what this sector leaves UNDELIVERED", "the
+# hypercharges are NOT a third UNDELIVERED item" -- here the trigger word is *the subject being
+# REDUCED*, not a debt being declared.  ⇒ *** Same shape as the first exclusion: the sentence says a
+# thing is no longer owed, using the word for what it is no longer. ***
 _OPEN_MEANS_AVAILABLE = re.compile(r"(gate is open and has been walked|the gate is open|route is open"
-                                   r"|is open to)", re.I)
+                                   r"|is open to|reduces the count of what|not a third undelivered"
+                                   r"|is the first of the undelivered items on which)", re.I)
 
 
 def _backlog(led):

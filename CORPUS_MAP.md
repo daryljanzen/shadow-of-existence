@@ -146,6 +146,29 @@ sources: [cowork, chat]
 
 
 
+### Revision r2598 — 2026-08-11 (main line). **18 → 8 unverdicted, and a new verdict class: `DISCOVERABLE-PROOF`.**
+
+**⛭ THE CLASS THE READING FORCED.** *P4: **"no derivation producing $\{0,1,2\}$ from a single condition has been
+exhibited, and the audit's verdict on that claim is accordingly open."***
+⇒ ***A FORMAL STATEMENT, ABSENT — and its absence is what holds the claim open. That is a different thing from a
+construction not built (`NAMED-UNBUILT`) or a question not asked (`REGISTERED`): it is a proof someone could find,
+and the corpus says exactly what it would have to produce.***
+
+**⌗ A SECOND `NAMED-UNBUILT` SURFACED:** *P14's **"a genuine test would compute the triality from the colour content
+independently of the charge, and this sector does not yet do so"** — a named test, specified, not run.*
+
+**⌗ AND `PO-4` SHARPENED FROM THE LEDGER.** *P14: **"the undelivered content is TWO items and not three: the gauge
+group and the multiplet structure"**, with hypercharge following from the per-wall anomaly conditions together with
+the existence of the Yukawa couplings, **uniquely up to normalisation**.*
+
+**⛔ AND THE BACKLOG GATE FIRED THREE MORE TIMES, ON A SECOND NAMED SENSE.** *"reduces the count of what this sector
+leaves **undelivered**", "the hypercharges are **not a third undelivered item**" —* ***the trigger word as the
+SUBJECT BEING REDUCED, not a debt being declared.***
+⇒ ***Same shape as "the gate is open and has been walked", and named in the gate rather than dodged in its regex —
+because loosening the pattern would blind it to real cases.***
+
+⌗ *Ledger: **111 entries, 8 unverdicted**.*
+
 ### Revision r2597 — 2026-08-11 (main line). **`PO-11`, `PO-12`, and the convergence named — the front edge's three remaining items, done.**
 
 **⌗ `PO-11` — THE FULL PROPAGATING SPINOR FIELD SECTOR.** ***The largest genuinely unbuilt thing in the corpus, and
