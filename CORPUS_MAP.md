@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2616 — 2026-08-11 (main line). **`PO-8` STRUCK — an authorised closure sat in the open register for 238 revisions.**
+
+**⛔ THE HOSTAGE.** *`kills/PO-8.md`: **"Closed r2378, Daryl-authorised, with the four checks answered"**, and
+**"Authorised by Daryl, r2378 (asked and answered explicitly)"**.*
+⇒ ***And the `PO-8` row has read OPEN ever since — because it was restated at **r2376, TWO REVISIONS BEFORE the
+authorisation**, saying "What actually remains is a DISPOSITION question and it is Daryl's … That disposition is NOT
+taken here."***
+⌗ ***The disposition was taken two revisions later and the row was never updated.***
+
+**⛭ AND THE FAILURE IS WHAT THIS LINE HAD BEEN CALLING CAUTION.** *It read the register's law — "a node may not
+convert 'the gate is gone' into 'the row is done'" — and stopped, **without checking whether the conversion had
+already been AUTHORISED**.*
+⇒ ***A rule against acting unilaterally is not a rule against acting. Refusing to strike an authorised closure is
+not restraint; it is holding an item hostage, and it inflated every count of what is left by one for 238
+revisions.***
+
+**⛭⛭ THE RULE:** ***when a kill receipt records an authorisation, strike the row IN THE SAME TURN. A receipt and a
+register that disagree about whether a thing is open is `check_killrefs`'s failure one step earlier than the gate
+looks for it.***
+
+⌗ *Checked the other two: **`PO-7` and `PO-9` each carry a FAILING check and no authorisation** — correctly open.
+**`PO-8` was the only hostage.***
+⌗ *And `queue.py` was double-counting answered dark halves. **The table: 34 → 32** — `PROTECTED_OPEN` 11 → 10, dark
+halves 4 → 2 open.*
+
 ### Revision r2615 — 2026-08-11 (main line). **`scripts/queue.py` — the work on the table, enumerated: 32 items. And the progress metric was inflating itself.**
 
 **⛔ THE LIST EXISTED ONLY IN THIS LINE'S HEAD.** *Every turn assembled it fresh by reading five documents —

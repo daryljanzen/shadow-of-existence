@@ -30,6 +30,7 @@ ROOT = os.path.abspath(os.path.join(HERE, '..'))
 
 def po_rows():
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
+    # ** struck rows are `| ~~PO-N~~ |` and are excluded: a closed item is not open work. **
     return {re.search(r'PO-\d+', l).group(0): l
             for l in raw.split('\n') if re.match(r'\|\s*\*\*PO-\d+\*\*', l)}
 

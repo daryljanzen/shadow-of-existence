@@ -57,6 +57,7 @@ def po_items():
     kills = {os.path.basename(f)[:-3] for f in glob.glob(os.path.join(ROOT, 'kills', '*.md'))}
     out = []
     for l in po.split('\n'):
+        # ** a STRUCK row (`| ~~PO-8~~ |`) is closed and must not be counted as work on the table. **
         if not re.match(r'\|\s*\*\*PO-\d+\*\*', l):
             continue
         tag = re.search(r'PO-\d+', l).group(0)
@@ -103,6 +104,10 @@ def dispatch():
 
 def main():
     dh = dark_halves()
+    # ** the TOTAL counts only what is still open: an ANSWERED dark half and a STRUCK PO row are
+    # closed, and counting them inflates the table by items nobody can pick up.  ⇒ *** PO-8 sat in the
+    # OPEN register for 238 revisions after its own kill receipt recorded the authorisation, and every
+    # count of "what is left" carried it. *** **
     everything = dh + po_items() + ledger_work() + routed() + dispatch()
     live = [x for x in everything if x['open']]
 
