@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r2618 — 2026-08-11 (main line). **THE TABLE: 32 → 27, all duplicates — and `scripts/table.py`, one command for the whole picture.**
+
+**⌗ FIVE LEDGER ENTRIES WERE COUNTED AS SEPARATE WORK AND WERE NOT.**
+*· **three** are p0's "full propagating spinor field sector" seen from `boundary_paper` and `groupoid_paper` —
+***`PO-11` already carries it as a register row***;*
+*· **two** are P14's traced Atiyah–Singer statement, written **once in the abstract and once in the body**.*
+⇒ ⛭ *And one of the five **was never unbuilt at all**: "the descent onto a spinor sector **is built** as bound
+leaf-modes" — **the clause says BUILT**, and it was bucketed `NAMED-UNBUILT` by its trigger word.*
+⌗ *A sixth is discharged rather than duplicated: **r2608 computed the mod-2 invariant** carrying the traced
+statement's conclusion, so what stays traced is the **integer** index alone.*
+
+**✔ `scripts/table.py`** — *one command: **every item on one line each, with when it last moved**, then the two
+numbers that mean something — **how many items are on the table** and **how many dark halves are answered**.*
+⌗ ***No gate counts, no receipt counts: those rise when the bookkeeping is kept and say nothing about the
+physics.***
+
+**⛭ THE RULE:** ***a work queue assembled from multiple sources will double-count by construction, because each
+source names the same object in its own vocabulary. Dedupe before ranking — the first pass over a newly-printed list
+is worth more than the next three turns of work on it.***
+
+⚠ **AND THE HONEST ACCOUNTING: this revision moved no physics.** *The table fell by five and `DARK HALVES ANSWERED`
+stayed at **2 of 4** — ***which is exactly right, and is why both numbers are reported. A table that shrinks while
+the dark halves hold is bookkeeping; a table that shrinks with them is progress.***
+
 ### Revision r2617 — 2026-08-11 (main line). **EVERY ITEM PRINTS — and printing them showed two duplicates the bucket count concealed.**
 
 **⛔ A SUMMARY LINE IS A LIST WITHHELD.** *`queue.py` printed `NAMED-UNBUILT 6 · STATED-AT-WEIGHT 5 ·
