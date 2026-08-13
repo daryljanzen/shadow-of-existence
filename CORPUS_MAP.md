@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2597 — 2026-08-11 (main line). **`PO-11`, `PO-12`, and the convergence named — the front edge's three remaining items, done.**
+
+**⌗ `PO-11` — THE FULL PROPAGATING SPINOR FIELD SECTOR.** ***The largest genuinely unbuilt thing in the corpus, and
+it was on no register at all.*** *Named independently by **three papers**: p0 — "what stays open beyond the discrete
+skeleton is the **full propagating spinor field sector** (the built modes being leaf-bound, not the propagating
+theory)"; `boundary_paper` — "the **compact-face fermion sector** the obstruction would act on remains unbuilt, and
+its construction is the **major undertaking**"; `groupoid_paper` — "the **descent onto a full propagating
+spinor**".*
+⇒ ***One object, three namings, and the compact face is where a construction of it would act.***
+⚠ *Not the discrete skeleton: **the generation count, the chirality and the family symmetry are a RESULT, forced
+within CR**.*
+
+**⌗ `PO-12` — THE BESPOKE TRANSFER**, *stated by `CR_cosmology` in its own voice: **"not a missing idea but a
+computation this sequence owes and has not yet run, and the paper's own open edge rather than another's"**, with
+the halves separated — **"the build is ours, and the verdict it would expose is the world's"**.*
+
+**⛭⛭⛭ AND `PO-5` NOW NAMES THE CONVERGENCE THE REGISTER HAD NOT.** *Its **mod-2 route** (r2568), P14's **traced**
+Atiyah–Singer statement ("stated here at traced weight", with the receipt establishing one mode per wall, the
+even-crossing obstruction, and the necessity of the $r=0$ branch point), and P14's **multiplicity gap** ($\lambda =
+j+\tfrac12$ labels partial waves, each contributing exactly one bound mode) —* ***all three ask whether a
+$\mathbb{Z}_2$-graded index exists on this structure and what it delivers. ONE calculation would move all three,
+and they were carried as three unconnected things.***
+
+**⌗ AND THE BACKLOG GATE EARNED ITSELF TWICE IN ONE TURN.** *It caught **two of this line's own verdicts**:
+`88201ec8bb` — the paper **narrows** ("stated at its true size, which is smaller than it was") but does not close,
+and ***narrowing is not closing***; and `dffeaf48d5` — the hit is a **section heading**, not a claim.*
+⇒ ***A gate built to catch stale prose caught stale JUDGEMENT, which is the better catch.***
+
+⌗ *Ledger: **30 → 18 unverdicted**. `PROTECTED_OPEN`: **eleven items**.*
+
 ### Revision r2596 — 2026-08-11 (main line). **`THE_FRONT_EDGE` — the protocol that keeps the corpus and the residual register current with each other, and the gate that was missing.**
 
 **⌗ THE FIVE INSTRUMENTS, AND WHAT EACH GUARANTEES.** *`open_ledger` — **every qualification has a verdict with its

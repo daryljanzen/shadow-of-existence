@@ -121,7 +121,7 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-218`** | r2561 | ✔ ⓶ done r2478 · ***the RULE is tested r2561 and needs a fourth bucket (DISCUSSED), which is the default*** · ⓵ pandoc-in-CI and ⓷ the contribution re |
 | **`L-536`** | r2579 | **TWO HALVES.** ⓵ `PO-10`'s two runs (the full-spectrum likelihood comparison, the odd/even height pattern) · ⓶ ***the FRONTIER-PLACEMENT AUDIT across |
 | **`L-538`** | r2595 | ***30 unverdicted***; and the owed list is now **two unbuilt things, one precision item, three downstream** — with the $\mathbb{Z}_2$-index convergenc |
-| **`L-539`** | r2596 | ***verdict the 30*** · **give the two genuinely unbuilt things register rows** (the propagating spinor sector, the bespoke transfer) · **name the $\ma |
+| **`L-539`** | r2597 | ***18 unverdicted*** — the only remaining bucket that means work |
 
 *9 live rows carry a stated next step; the 9 longest-unworked are shown.*
 
