@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2575 — 2026-08-11 (main line). **THE ROUTED QUEUE AT 49 OF 51 — and item 26's residue is a citation LOOP, not what F12 said.**
+
+**⌗ THE CLEANUP.** *Items **18** and **57** marked discharged — both delivered by c54.207 — with **register-keyed
+probes** so each marks itself: `probe_18` tests whether `L-530` is registered, `probe_57` whether all seven of the
+dispatch block are done.*
+⇒ *Queue: **49 of 51**, and the two left are **9** and **26**.*
+
+**⛭⛭ AND 26 HAD A TESTABLE CLAIM IN IT.** *It was routed at the finder's weight — "this line has not re-derived
+either, and says so" — and verifying it found something the finder had not.*
+*· ⓵ ***F12's characterisation does not exist***: `isotropy-3` **0**, `six of the nine` **0**, `nine types` **0**,
+and P12's only `Bianchi` is a label on one stratum. ***Routing at the finder's weight was right.***
+*· ⛭⛭ ⓶ ***But the sentence it pointed at carries a real defect.*** P12 gives **$\{6,7,10\}$** and cites **P9**;
+P9 says the isotropy tabulation is **"the companion algebroid paper"**'s and cites **P12**.*
+⇒⇒ ***Each cites the other for the same fact — and `6,7,10` appears ZERO times in P9, which names isotropies as
+GROUPS rather than as a dimension triple.***
+
+**⌗ AND WHY IT SURVIVED IS THE INTERESTING PART:** ***the fact is TRUE and recoverable from those groups by
+inspection, so nothing downstream ever broke.***
+
+**⛭ THE RULE:** ***`check_citations` verifies a cited key EXISTS, not that the cited paper CONTAINS the fact. A
+citation loop between two papers written together is invisible to it — and it is a property of the PAIR, not a
+mistake in either alone.***
+⌗ *This is **item 45's class** (`Teitelboim1973` cited for FORM where the CONTENT is elsewhere), and **the second
+instance is what makes it a class rather than a slip**.*
+⚠ *Discharge is one clause — **one paper derives the triple, or P12 states it as its own** — and which paper owns it
+is authorial. **F16 is untouched and stays at the finder's weight.***
+
 ### Revision r2574 — 2026-08-11 (main line). **`THE_CLOSURE_PLAN` — can the list end all-struck? No, and the count of why is the value. Plus `kills/PO-9.md`.**
 
 **⌗ THE COUNT.** *Nine `PROTECTED_OPEN` items and two leads. **Eleven things.***

@@ -224,7 +224,20 @@ def probe_51():
            'check_arcpins.py present'
 
 
-PROBES = {30: probe_30, 44: probe_44, 49: probe_49, 51: probe_51, 24: probe_24, 25: probe_25, 28: probe_28, 32: probe_32, 6: probe_6, 7: probe_7, 8: probe_8, 11: probe_11, 19: probe_19, 20: probe_20,
+def probe_18():
+    """p0's frontier datum -- discharged when L-530 registered it as a result."""
+    return ('L-530' not in _arc()), 'L-530 in the register'
+
+
+def probe_57():
+    """The dispatch block for 54 -- discharged when all seven are marked done."""
+    d = _raw('THE_DISPATCH.md') or ''
+    seven = ('A1', 'A3', 'A4', 'A5', 'A11', 'A12', 'A13')
+    left = [a for a in seven if f'~~**{a}**~~' not in d]
+    return (len(left) > 0), f'still open in THE_DISPATCH: {left or "none"}'
+
+
+PROBES = {18: probe_18, 57: probe_57, 30: probe_30, 44: probe_44, 49: probe_49, 51: probe_51, 24: probe_24, 25: probe_25, 28: probe_28, 32: probe_32, 6: probe_6, 7: probe_7, 8: probe_8, 11: probe_11, 19: probe_19, 20: probe_20,
           22: probe_22, 29: probe_29, 40: probe_40, 45: probe_45, 46: probe_46, 48: probe_48}
 
 

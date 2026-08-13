@@ -389,7 +389,7 @@ of the reading, not evidence for the instrument.***
 ---
 ---
 
-## ⛭⛭ 18 · p0's FRONTIER ITEM 1, DATUM HALF: THE ANSWER IS THAT IT CANNOT BE DERIVED — added r2433
+## ✔✔ DISCHARGED r2575 (delivered by c54.207 as `L-530` — the derivation cannot be handed over because $\rho_r/\rho_m\propto1/a$) — ⛭⛭ 18 · p0's FRONTIER ITEM 1, DATUM HALF: THE ANSWER IS THAT IT CANNOT BE DERIVED — added r2433
 
 **Where:** `corpus/geometric_core_paper.tex`, `sec:frontiers` item 1 — the half you split at c54.179 and wrote as
 ***"what is owed there is its derivation from the progenitor collapse."***
@@ -596,7 +596,28 @@ result as scope rather than error.*
 *"Two of the four real forms", the "nothing privileges one" clause dropped, and the reason written in: $\mathfrak{su}(3)$ needs a maximal compact of dimension $\ge8$ and a faithful real representation of dimension 6, so **the compact form is the unique real form that admits it at all**. A tighter wall for `PO-4`; the ontological argument below is untouched, as the finder said.*
 
 ---
-## ⌗ 26 · TWO ITEMS ROUTED AT THE FINDER'S WEIGHT, NOT INDEPENDENTLY VERIFIED HERE — added r2442
+## ⛭ VERIFIED r2575 — F12 IS WRONG AND THE RESIDUE IS SHARPER — ⌗ 26 · TWO ITEMS ROUTED AT THE FINDER'S WEIGHT, NOT INDEPENDENTLY VERIFIED HERE — added r2442
+
+> ## ⛭⛭ VERIFIED r2575 — the residue is a CITATION LOOP, and it is not what F12 said
+>
+> **⓵ F12's characterisation does not exist.** *`isotropy-3` **0** · `six of the nine` **0** · `nine types`
+> **0** across the papers, and P12's only `Bianchi` is a label on one stratum: **"Type I (Bianchi, dimension
+> three; Zipoy–Voorhees, dimension two)"**.* ⇒ ***Routing it at the finder's weight was right.***
+>
+> **⛭⛭ ⓶ BUT THE SENTENCE IT POINTED AT CARRIES A REAL DEFECT.** *P12: **"The isotropy dimensions are the
+> Killing-vector counts the construction establishes~`\cite{JanzenRange}`"**, giving **$\{6,7,10\}$**. And
+> P9, at its own isotropy passage: **"at every stratum for which the companion algebroid paper tabulates an
+> isotropy … it is in fact an equality~`\cite{JanzenAlgebroid}`"**.*
+> ⇒⇒ ***EACH CITES THE OTHER FOR THE SAME FACT — and `6,7,10` appears ZERO times in P9, which names
+> isotropies as GROUPS.***
+>
+> ⌗ ***The fact is TRUE and recoverable from those groups by inspection, which is exactly why it survived:
+> the citation does not establish it and nothing downstream broke.*** *`check_citations` is blind to this —
+> it checks a cited key EXISTS, not that the cited paper CONTAINS the fact.*
+>
+> ⇒ **WHAT DISCHARGES IT: one paper derives the triple, or P12 states it as its own.** *One clause, and
+> **which paper owns it is authorial**.* ⌗ *F16 is untouched and stays at the finder's weight.*
+
 
 *Both from node 55 batch 2, both with runnable drafts (`rc=0`) in `_dig/findings_batch2/`. **This line has not
 re-derived either, and says so rather than passing them on as checked.***
@@ -1329,7 +1350,7 @@ cosmological side is where the question lives**.*
 *Written into P16, replacing "draws no bound from it in either direction" — and **your number reproduced independently first**: CAMB from a fresh parameter set gives $\ell_1=220$ and $294$, and the corpus's own `plik_lite` path gives $206$ against $327{,}150$ over 215 bins. **Two nodes, one number, to the digit.*** ⌗ *One thing added that the routing did not state: **the instrument fits the amplitude in closed form at every evaluation**, so the isocurvature figure is already amplitude-marginalised — the "just rescale it" objection is **pre-empted by the instrument** rather than answered, and the paragraph says so. ⚠ *And the inherit-not-predict limit is in the paper's own voice, gated, so it cannot drift into "CR predicts adiabaticity".*
 
 ---
-## ⛭⛭⛭ 57 · **SEVEN ITEMS, DISPATCHED r2566** — see `THE_DISPATCH.md`; the routes are in `THE_REMAINING_WORK.md`
+## ✔✔ DISCHARGED r2575 (all seven of the block delivered by c54.207 (A1, A3, A4, A5, A11, A12, A13)) — ⛭⛭⛭ 57 · **SEVEN ITEMS, DISPATCHED r2566** — see `THE_DISPATCH.md`; the routes are in `THE_REMAINING_WORK.md`
 
 *Everything outstanding in the programme is **fifteen items**, checked for independence: **one collapse** (`PO-7`'s
 inversion ⓷ IS `PO-seam`'s massive-phase question) and **no item's input is another item's output**. **Seven are
