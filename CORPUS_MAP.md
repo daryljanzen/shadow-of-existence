@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2633 — 2026-08-11 (main line). **`PO-2`'s REASON is the next sentence again — and the paper's own withdrawal is in no register.**
+
+**⌗ APPLYING r2632's RULE IMMEDIATELY.** *"Re-ask every neighbouring open question against the section you were just
+in."*
+⇒ **⛭⛭ THE NEXT SENTENCE:** *"Every root, designated the slicing parameter, returns the ***same*** $2M=r_0-r_0^3$,
+so **the three carry one mass parameter and are IDENTICAL IN CONTENT, distinguished only by which root each takes as
+its hole**."*
+⇒⇒ ***That is the colour-singlet condition's geometric origin — three objects identical in every respect except a
+label — and a CONSEQUENCE of the cubic's form: $2M=r_0-r_0^3$ is one function and the three roots are its preimages
+at one value.***
+
+**⌗ AND THE SAME SECTION RECLASSIFIES THE INDEX INTO THE ROLE THE ROW NEEDS.** *"the hinge $S_3$ is a **within-state
+index and not a family symmetry**", generations relocated to "**the turnaround's deck $\mathbb{Z}_3$**", and "**the
+identification of a generation with a wall is accordingly WITHDRAWN here**" — what the walls deliver being "**a
+count and a chirality rather than a seat**".*
+⇒ ***A within-state index is exactly what colour is. The paper correcting its OWN first reading strengthened a
+register row nobody had connected to it.***
+
+⇒⇒ ***So every structural feature of a colour label is present — identical content, a bare label, a within-state
+index, $SU(3)$ generated (r2626) — and each is stated for another purpose. What remains is the physical
+identification, which is where the do-not-assert belongs.***
+
+**⛭ THE RULE:** ***a paper's self-correction is a finding for every row the corrected claim touched. Grep the
+WITHDRAWAL, not just the claim — a register that tracked the first reading is stale in a way no check on the current
+text can see.***
+
+✔ *And the `\emph{}` trap cost its **fourth** first-run failure this session, so **`scripts/quote.py`** now returns
+a phrase **as written** from a phrase **as read**.*
+
 ### Revision r2632 — 2026-08-11 (main line). **`PO-2`'s identification IS stated — correcting r2631's closing line one turn later.**
 
 **⛔ WHAT r2631 SAID.** *"Says nothing about `PO-2`'s own pairing — the roots against the WALL MODES — **which stays
