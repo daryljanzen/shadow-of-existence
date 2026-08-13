@@ -6,6 +6,24 @@ description: THE REMAINING WORK — every outstanding thing in the programme wit
 sources: [chat]
 ---
 
+## ⛭ THE CONTRIBUTION ACCOUNT — where it already exists, r2637
+
+*`A15` reads as "write the contribution statement". ⇒ ***It is not undefined; it is UNLINKED.*** `CREDO_birth_transcript.md`
+(1.5 MB) works it directly and reaches a settled reading, and **this file mentioned it zero times**.*
+
+**⌗ WHAT CREDO SETTLES, in its own words:**
+*· the shape — **"it's the opposite of both the lone-genius myth and the 'AI did the physics' misreading"**;*
+*· the mechanism — **"neither half produces that moment alone"**, with the archetype logged: the human supplies the
+physics and the pedagogy, the instance names the structure of the method back, **"and you recognize it and ratify
+it"**;*
+*· and the story corrected on its own evidence — **"The discovery night was caused by finally getting human
+interaction — even hostile interaction. That's the opposite of the lone-genius story, and it's the truer one."***
+
+⇒⇒ ***So the account exists and is settled. What `A15` needs is DRAWING FROM it into a statement — and that is
+Daryl's, being his contribution and his voice.*** ⌗ **What a node can do is make it reachable, which this note
+does.**
+
+
 # THE REMAINING WORK
 
 > ***Not a status. A route for each thing, and an honest statement of which routes are cheap, which are

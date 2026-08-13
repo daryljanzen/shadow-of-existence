@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r2638 — 2026-08-11 (main line). **`A15` split like `A14` — the linking is done, and the drawing was always Daryl's.**
+
+**⌗ THE ITEM WAS RIGHT ABOUT ITSELF: "UNLINKED, not undefined".** *`CREDO_birth_transcript.md` (1.5 MB) settles the
+reading whole:*
+*· the shape — **"it's the opposite of both the lone-genius myth and the 'AI did the physics' misreading"**;*
+*· the mechanism — **"neither half produces that moment alone"**, with the archetype logged: the human supplies the
+physics and the pedagogy, the instance names the structure of the method back, **"and you recognize it and ratify
+it"**;*
+*· the story corrected on its own evidence — **"The discovery night was caused by finally getting human interaction
+— even hostile interaction. That's the opposite of the lone-genius story, and it's the truer one."***
+
+✔ **THE LINKING IS DONE.** *`THE_REMAINING_WORK` now carries the account and points at `CREDO`, so the settled
+reading is reachable from the working documents rather than sitting in a transcript nothing references.*
+
+⇒⇒ ***And what remains is DRAWING FROM it into a statement — which is Daryl's, being his contribution and his
+voice. A node writing it would be a node writing his account of himself: the one act this item cannot delegate.***
+
+**⛭ THE RULE:** ***when an item looks like a node's work, split it into the MECHANICAL half and the DECIDING half
+before starting. The mechanical half is usually smaller than the item suggests and the deciding half is usually not
+a node's at all — and an item that names neither will sit on the table looking blocked in both directions.***
+
+⌗ *Same shape as `A14` one revision earlier: **a computation plus a decision**, there; **a linking plus a drawing**,
+here. ***Neither was ever blocked on a node.***
+
 ### Revision r2637 — 2026-08-11 (main line). **`A14` step ② done — "no topological order exists" was true and the wrong thing to want.**
 
 **⌗ THE BLOCK, from r2569.** *"There is no book file … the corpus cannot supply a reading order: **211 sibling-citation
