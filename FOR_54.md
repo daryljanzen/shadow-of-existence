@@ -1316,6 +1316,51 @@ cosmological side is where the question lives**.*
 *Written into P16, replacing "draws no bound from it in either direction" — and **your number reproduced independently first**: CAMB from a fresh parameter set gives $\ell_1=220$ and $294$, and the corpus's own `plik_lite` path gives $206$ against $327{,}150$ over 215 bins. **Two nodes, one number, to the digit.*** ⌗ *One thing added that the routing did not state: **the instrument fits the amplitude in closed form at every evaluation**, so the isocurvature figure is already amplitude-marginalised — the "just rescale it" objection is **pre-empted by the instrument** rather than answered, and the paragraph says so. ⚠ *And the inherit-not-predict limit is in the paper's own voice, gated, so it cannot drift into "CR predicts adiabaticity".*
 
 ---
+## ⛭⛭⛭ 57 · **SEVEN ITEMS, DISPATCHED r2566** — see `THE_DISPATCH.md`; the routes are in `THE_REMAINING_WORK.md`
+
+*Everything outstanding in the programme is **fifteen items**, checked for independence: **one collapse** (`PO-7`'s
+inversion ⓷ IS `PO-seam`'s massive-phase question) and **no item's input is another item's output**. **Seven are
+yours**, and four of those are reads.*
+
+**⌗ A1 · `PO-9` — ENUMERATE WHAT A SECOND SLICING MUST BREAK.** *Half this vein closed at r2552: the cut's
+four-ness **does** carry the forcing, because least-arbitrariness is the programme's own criterion of necessity and
+it rejects exactly the adjustable parameter a second Lovelock coefficient would be.*
+⇒ ***The remaining half uses the same instrument: the FIRST slicing is forced by maximal symmetry plus Rule 2. So
+list what a SECOND cut would have to choose, and check each against "is this a modulus?" If every choice is a
+modulus, the vein CLOSES.*** *The guard holds: **CUT→DYNAMICS, never CUT→SUBSTRATE**.*
+
+**⌗ A3 · A4 · A5 — THREE CANDIDATE BRIDGES FOR `PO-5`.** *r2526 ruled the kernel route out **structurally**: an
+$R$-odd operator has no graded index, because $\{\gamma^\mu,\gamma^5\}=0$ gives $D$ a grading and
+$[m\cdot\mathbb 1,\gamma^5]=0$ breaks it.* ⇒ ***So stop hunting operators and enumerate what ELSE takes a
+$\mathbb Z_2$-grading to a field content:***
+*· **A3 COHOMOLOGY** — a complex whose degree is the grading. What would P14 need to supply, and does it?*
+*· **A4 SPECTRAL PROJECTION** — a band rather than a zero mode. Same question.*
+*· **A5 REPRESENTATION BRANCHING** — the grading labels irreps. P13 and P14 together.*
+⌗ ***And `L-242`'s closure makes the target concrete rather than abstract: the $R$-odd sector has a geometric
+realisation with a BOUNDED order parameter — $2M=r_0-r_0^3$, saturating at the Nariai mass. The bridge has to land
+there.***
+
+**⌗ A11 · ITEM 18 — WRITE "IT CANNOT BE DERIVED" AS A RESULT.** *The item already says the answer; what it does not
+do is **state it as a finding rather than an owing**. **A frontier that is closed by impossibility is a result, and
+p0's frontier list currently reads as though it were still owed.***
+
+**⌗ A12 · ITEM 50 — THE TRANS-PLANCKIAN SCOPING.** ***The scoping IS the content:*** *finite at each finite exterior
+time, **not uniformly bounded** — one clause with the scope attached, and the distinction is the whole of it.*
+
+**⌗ A13 · ITEM 52 — THE ENTROPY CLAUSE, and it is one line.** *r2564 found the answer in p0:*
+$$S=\pi(\alpha/\ell_P)^2=3\pi/(\Lambda\ell_P^2)\approx3.1\times10^{122}$$
+*— **the same number p0 already states and already reads** as "the size of the universe in gauge-units, a number,
+not a tuning".* ⇒ ***So the clause says: the horizon thermodynamics adds no new scale, because $\ell_P$ is a gauge
+and $S$ is that gauge-count. Worth writing because a reader arriving from thermodynamics will compute $10^{122}$
+and want to know who owns it.***
+
+⚠ *And the standing caveat: **these routes are hypotheses about cost, not measurements of one** — written by a line
+that has been wrong about scope three times this session (r2536's implication, `L-230`'s population,
+`VARIATIONAL_LEDGER`'s premise). ***Check whether each question is still stated correctly before working it; four
+of the last eight closures came from exactly that.***
+
+---
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

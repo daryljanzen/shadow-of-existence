@@ -196,8 +196,12 @@ def write_index_block(rows, front):
     # RETIRED added r2440 with the retired-duplicate rule above.  ** The first draft added the rule
     # and not the sort key, and the script raised KeyError('RETIRED') -- caught here rather than in CI,
     # which is the point: a classifier that cannot ORDER a class it can ASSIGN is half a classifier. **
-    order = {'SOURCE': 0, 'VIEW': 1, 'STATE': 2, 'METHOD': 3, 'RECORD': 4, 'RETIRED': 5,
-             'UNCLASSIFIED': 6}
+    # ** r2566: a KeyError here takes down the whole document classification and, through it, every
+    # gate that reads INDEX.md.  A `kind:` this dict does not know is well-formed input the loader
+    # REJECTED -- the silent-discard class's loud cousin, and the fix is the same shape: know the
+    # convention, and fail SOFT on one you do not. **
+    order = {'SOURCE': 0, 'VIEW': 1, 'STATE': 2, 'METHOD': 3, 'RECORD': 4, 'PLAN': 5,
+             'RETIRED': 6, 'UNCLASSIFIED': 7}
     o = [INDEX_BEGIN, '']
     o.append('## ⌗ THE DOCUMENT INVENTORY — generated')
     o.append('')
@@ -326,9 +330,13 @@ def main():
     # RETIRED added r2440 with the retired-duplicate rule above.  ** The first draft added the rule
     # and not the sort key, and the script raised KeyError('RETIRED') -- caught here rather than in CI,
     # which is the point: a classifier that cannot ORDER a class it can ASSIGN is half a classifier. **
-    order = {'SOURCE': 0, 'VIEW': 1, 'STATE': 2, 'METHOD': 3, 'RECORD': 4, 'RETIRED': 5,
-             'UNCLASSIFIED': 6}
-    for n, k, job, dcur, body, klass in sorted(rows, key=lambda r: (order[r[1]], r[0])):
+    # ** r2566: a KeyError here takes down the whole document classification and, through it, every
+    # gate that reads INDEX.md.  A `kind:` this dict does not know is well-formed input the loader
+    # REJECTED -- the silent-discard class's loud cousin, and the fix is the same shape: know the
+    # convention, and fail SOFT on one you do not. **
+    order = {'SOURCE': 0, 'VIEW': 1, 'STATE': 2, 'METHOD': 3, 'RECORD': 4, 'PLAN': 5,
+             'RETIRED': 6, 'UNCLASSIFIED': 7}
+    for n, k, job, dcur, body, klass in sorted(rows, key=lambda r: (order.get(r[1], 99), r[0])):
         dc = f'c54.{dcur}' if dcur is not None else '—'
         bd = f'c54.{body}' if body is not None else '—'
         lag = ''

@@ -1,10 +1,48 @@
 ---
 name: for-56
 kind: RECORD
-current: r2550+c54.205
+current: r2566+c54.206
 job: THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
+
+## ⛭⛭⛭ FOUR ITEMS, DISPATCHED r2566 — see `THE_DISPATCH.md`
+
+*Everything outstanding is **fifteen items**, independence-checked. **Four are yours**, and all four need an
+instrument.*
+
+**⌗ A2 · `PO-seam` — DOES A MASSIVE MODE FREEZE?** ⛭ ***This is also `PO-7`'s inversion route ⓷, and nobody had
+noticed they are one object.***
+*Your `L-805` showed every mode of interest freezes because $c_sk/\lvert aH\rvert\to0$ at the crossing. **The
+massive question is the same computation with a massive dispersion relation:** is $\omega/\lvert aH\rvert\to0$
+for a massive mode?* ⇒ ***It need not be — and if a massive trajectory does NOT freeze, it carries a phase, and the
+seam datum's phase acquires a derivation.*** *That is `PO-7`'s ⓷ landing, from the other side.*
+
+**⌗ A10 · `PO-7` ⓶ — TEST THE ESTIMATOR ON A DRIVEN SPECTRUM.** *`kills/PO-7.md`'s ② names this as a live
+inversion: **the estimator could be biased by the arm's own construction**. Bounded — the **undriven arms agree to
+0.013** in $\phi/\pi$ — but ***the driven case is where the disagreement lives, and nobody has tested the
+estimator on a driven object with a KNOWN asymptotic phase***.*
+⇒ **Inject a synthetic spectrum with a phase you set, and see whether peak-4–8 recovers it.** *If it does, ② ⓶
+closes and the 0.408 hardens. If it doesn't, the measurement has an instrument bias and that is the finding.*
+
+**⌗ A9 · `PO-6`(c) — DOES THE NARIAI CLOSED FORM EXTEND?** *P11 carries the nonlinear $\Lambda>0$ regime on its
+classical side, and the degenerate member's near-horizon geometry is the **exactly solvable $dS_2\times S^2$**
+throat the corpus already uses.* ⇒ ***The question is whether that closed form extends off the degenerate member as
+a perturbation series in $M-M_N$*** *— and $f''(r_n)=-6/\alpha^2$ is the expansion's leading coefficient, already
+computed.*
+
+**⌗ A7 · `PO-6`(a) — ONE LOOP ON THE COMPACTIFIED SUBSTRATE.** *The vein's handle is already stated: **the UV degree
+is quartic, the ordinary zero-point degree, and compactness buys the IR free**, with the boundary condition closing
+**per fibre**.* ⇒ ***So: is the quartic divergence absorbed by the geometry, or does it need a counterterm the
+framework cannot supply?*** *That is the "can one dimensionful constant regulate at all" question in a form you can
+compute.* ⌗ *And r2564 removed a false obstacle: **$\ell_P$ is a GAUGE, not a second scale** — so the appearance of
+$\ell_P$ in a formula is not itself a problem.*
+
+⌗ *Ordering preference, not a dependency: **if A9 yields a closed form, A7 gets easier**. A7 is doable without it.*
+
+⚠ *Standing caveat: **these routes are hypotheses about cost**, written by a line wrong about scope three times this
+session. ***Check whether each question is still stated correctly before working it.***
+
 
 ## ⛭⛭⛭ STANDING OBLIGATION FOR 56 — ADDED r2507, and it exists because work stranded twice
 

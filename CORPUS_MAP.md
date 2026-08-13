@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2566 — 2026-08-11 (main line). **`THE_DISPATCH.md` — fifteen items, independence-checked, and eleven of them dispatched.**
+
+**⌗ THE COUNT AND THE CHECK, run rather than asserted.** *Everything outstanding is **fifteen items**.*
+*· ***ONE COLLAPSE***: `PO-7`'s inversion route ⓷ — **derive `CRPHI`** — and `PO-seam`'s **does a massive trajectory
+carry a phase** are ***the same object***. Folded into **A2**.*
+*· ***AND NO ITEM'S INPUT IS ANOTHER ITEM'S OUTPUT***. Three groups share a **source** — `P14` for the four `PO-5`
+bridges, `P12` for the two `PO-6` halves, `p0` for two clauses — but **a shared source is not a dependency**.*
+⇒ ***So all fifteen can run in parallel, and a node blocked on one is not blocked on any other.***
+
+**⌗ THE ALLOCATION.**
+*· **54 — seven**: `PO-9`'s modulus enumeration (**A1**), three `PO-5` candidate bridges (**A3 A4 A5**), and three
+clauses (**A11** p0's frontier datum as a result, **A12** the trans-Planckian scoping, **A13** the entropy).
+**Four are reads; three are writes whose content is already established.***
+*· **cc54 — four**: the massive-mode freeze (**A2**, which is also `PO-7` ⓷), the driven-estimator test (**A10**),
+the Nariai series (**A9**), and the one-loop regularisation (**A7**). **All four need an instrument.***
+*· **HELD — four**: **A8** (`PO-6`(b), ***the one open-ended item in the programme*** — the deliverable is a
+necessary-conditions list, and getting it wrong sends both nodes somewhere useless), **A6** (the anomaly bridge,
+which should follow A3–A5), and **A14 A15** (publishing).*
+
+⇒⇒ ***Fourteen of fifteen have a written route; one does not.***
+
+**⛔ AND WRITING THE PLANS TOOK EVERY GATE DOWN.** *Both new files carry `kind: PLAN`, and
+`classify_documents` indexes its `order` dict **by hard subscript**.* ⇒ ***KeyError — and because every gate reads
+the `INDEX.md` that script generates, EIGHT gates went red at once on well-formed input.***
+⌗ ***The silent-discard class's loud cousin, and loud is strictly better: the failure named its own file and
+line.*** *Fixed both ways — **`PLAN` registered AND the sort made tolerant** (`order.get(k, 99)`), because
+registering the one known case is what the previous instances of this class each did, and each was followed by
+another.*
+
 ### Revision r2565 — 2026-08-11 (main line). **`THE_REMAINING_WORK.md` — every outstanding thing with a ROUTE, and exactly one of them is open-ended.**
 
 **⌗ WHY IT EXISTS.** *The board reached **four veins, two leads** and the routed queue **five of fifty**, and what
