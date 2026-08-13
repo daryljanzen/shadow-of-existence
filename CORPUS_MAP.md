@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2602 — 2026-08-11 (main line). **THE r2599 CORRECTION HAD NOT REACHED `L-171` — and `check_killrefs` found a fourth place it had not reached either.**
+
+**⛔ THE FIND.** *r2599 corrected `kills/PO-7.md` (② does not clear) and the `PROTECTED_OPEN` row in the same turn.*
+⇒ ***And `L-171`'s next-step still read "all four now pass" and "the next step is the register's own: and Daryl
+authorises" for three revisions after.***
+⌗ ***That is `check_depmatrix`'s two-place lesson at a THIRD place, and the same shape as the r2570/r2559
+contradiction that survived inside one file for twenty-nine revisions: a correction lands where it was written and
+stops.***
+
+**✔ `check_killrefs` BUILT, WIRED, SEEDED.** *For every receipt under `kills/` that reports a check which **does not
+clear**, no register row or lead may say the item is **awaiting authorisation** or that **all four checks pass**.*
+⇒ ***A receipt that does not clear is not waiting on anyone. Saying it is manufactures a decision, and a
+manufactured decision left in a register is one somebody may act on.***
+
+**⌗ AND IT IMMEDIATELY FOUND A FOURTH PLACE.** *`BOARD.md`, generated from a passage of `L-171` this line had
+**appended past rather than edited** — the same append-don't-edit habit that put five absorption rows in the wrong
+table at r2570.*
+⚠ *One exclusion, named rather than patched into the regex: **the exit procedure's own text is QUOTED in places that
+then say the quotation no longer applies**, and the tell is a supersession marker in the same clause.*
+
+**⛭ THE RULE:** ***when you correct a claim, grep the claim's own words across the corpus before closing the turn.
+The places that carry it are never only the places you were looking at.***
+
+⌗ *`L-171` now reads correctly in all four: **② does not clear · nothing is pending on Daryl · the order is
+`PO-seam`'s progenitor derivation first, then ②**.*
+
 ### Revision r2601 — 2026-08-11 (main line). **CONSOLIDATION — two landed rows struck, both stale grains brought current, and the ledger recorded as an eighth mechanism.**
 
 **✔ `L-536` STRUCK.** *Both halves landed elsewhere: ⓵ **`PO-10` is registered** and carries the two runs as its

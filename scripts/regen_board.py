@@ -55,7 +55,7 @@ VEINS = {
 # ** A lead with NO vein links is instrument work.  It is not counted as progress on the map. **
 LEADS = {
  'L-171': ("**PO-7** \u2014 \u26ed **NARROWED r2552 by `kills/PO-7.md`**: the four checks are written and "
-   "\u2714 **\u2463 CHAIN NOW CLEARS r2559** (cc54 `L-805`) \u2014 the 0.408 rested on four things "
+   "\u26d4 **\u2461 DOES NOT CLEAR \u2014 corrected r2599/r2602**: check \u2461 asks what would have to be true for the item to stay open, and `kills/PO-7.md`'s own closing line answers it \u2014 ***\u201cwhat remains of \u24b7 is a PROGENITOR derivation of the datum's phase\u201d***. **That is live, so nothing is pending on Daryl and none ever was.** \u21d2 ***And \u24b7's derivation is `PO-seam`'s dark half: the ORDER is `PO-seam` first, this second.*** \u2714 **\u2463 CHAIN CLEARS r2559** (cc54 `L-805`) \u2014 the 0.408 rested on four things "
    "reproduced twice and on **P15's freezing argument**, reproduced nowhere; cc54 ran it: **every "
    "multipole 28\u20132475 freezes before the crossing** and $c_sk/|aH|\\to0$ at the crossing for all of "
    "them, so **the band stays 0.2069 and the control is outside it**. \u21d2 **All five links reproduced "

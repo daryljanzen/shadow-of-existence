@@ -50,7 +50,7 @@ jobs:
           for g in check_id_bands check_kills check_burndown check_supersession \
                    check_grains check_changelog check_depmatrix check_arcs \
                    check_paststate check_receipts check_withdrawn check_queues \
-                   check_citations check_absorption check_receipt_asserts check_claims check_branches check_deferrals check_routed check_veins check_loaders check_computes check_provenance check_revleak check_open_ledger; do
+                   check_citations check_absorption check_receipt_asserts check_claims check_branches check_deferrals check_routed check_veins check_loaders check_computes check_provenance check_revleak check_open_ledger check_killrefs; do
             echo "── $g"
             # NODE=ci added r2504+c54.198 (54): check_claims no longer defaults to a REAL node,
             # because a forgetful node was silently impersonating 56 and inheriting its claims.
