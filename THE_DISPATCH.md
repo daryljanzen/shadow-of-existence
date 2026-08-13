@@ -1,7 +1,7 @@
 ---
 name: the-dispatch
 kind: PLAN
-current: r2571+c54.206
+current: r2572+c54.207
 description: THE DISPATCH — the fifteen outstanding items, checked for independence, allocated between 54, cc54 and the observer line. Written r2566.
 sources: [chat]
 ---
@@ -32,13 +32,13 @@ A7 is doable without it.*
 
 | tag | the work | kind |
 |---|---|---|
-| **A1** | `PO-9` · ***enumerate what a second slicing must break, and check whether any of it is a MODULUS*** — if all of it is, the vein closes | read |
-| **A3** | `PO-5` · candidate bridge **COHOMOLOGY** — a complex whose degree is the grading | read |
-| **A4** | `PO-5` · candidate bridge **SPECTRAL PROJECTION** — a band rather than a zero mode | read |
-| **A5** | `PO-5` · candidate bridge **REPRESENTATION BRANCHING** — the grading labels irreps | read |
-| **A11** | item 18 · p0's frontier datum — ***write "it cannot be derived" as a RESULT, not an owing*** | write |
-| **A12** | item 50 · trans-Planckian — ***finite at each finite exterior time, NOT uniformly bounded***, with the scope attached | write |
-| **A13** | item 52 · ***$S=3\pi/(\Lambda\ell_P^2)$ is p0's own gauge-count***, so horizon thermodynamics adds no new scale | write |
+| ~~**A1**~~ | ✔ ***DONE r2572 (`L-533`) — and the answer is a THIRD BRANCH.*** The routed test could not run as written: **"is it a modulus?" needs P6's three-sense guard, and the offset IS the mass**, which P6 names as the sense the criterion does **not** exclude. ⇒ ***With the guard attached: Rule 2 neither forbids a second slicing step nor forces one — it EMPTIES it.*** Every rung above the last must be maximally symmetric ⇒ a plane section ⇒ scale-only; the scale map has **rank 1 over two choices**; the cut fixes $\alpha$ from $\Lambda$ and $r_0$ from the mass and is **blind above**. ⇒⇒ ***So the dimension is unbounded above because nothing below can SEE the difference — which makes CUT→SUBSTRATE a CONSEQUENCE rather than a rule of conduct.*** | read |
+| ~~**A3**~~ | ✔ ***DONE r2572 (`L-534`) — cohomology is NOT an alternative: on a $\mathbb{Z}_2$ grading it IS the kernel.*** No odd nilpotent ($D^2$ is the metric), and the two-term complex has $\ker\oplus\mathrm{coker}$. | read |
+| ~~**A4**~~ | ⛭ ***WORKED r2572 (`L-534`) — the spectral route SURVIVES structurally***, and its only canonical rung has **multiplicity 2**. | read |
+| ~~**A5**~~ | ✔ ***DONE r2572 (`L-534`) — branching returns a CHARACTER***, because $R$ **grades** rather than exchanges, and $D_6$'s largest irrep is **2**. | read |
+| ~~**A11**~~ | ✔ ***DONE r2572 (`L-530`).*** The derivation cannot be delivered: $\rho_r/\rho_m\propto1/a$, so **no single value exists to hand over**, and a crossing multiplying both components alike **leaves the ratio unchanged**. Cites X1 rather than re-deriving. | write |
+| ~~**A12**~~ | ✔ ***DONE r2572 (`L-531`).*** $\delta\propto e^{-2\kappa t}$, so the blueshift factor grows as $e^{+\kappa t}$ — **the same $\kappa$ `L-526` identified as thermality's mechanism** — and **the supremum is infinite**. The Planck value is reached **in milliseconds at a stellar mass**, so ***the finiteness is not a shield***. | write |
+| ~~**A13**~~ | ✔ ***DONE r2572 (`L-532`) — and it had one more thing in it than r2564 found.*** $S=3\pi/(\Lambda\ell_P^2)$ and the cosmological-constant factor is $8\pi/(\Lambda\ell_P^2)$: ***they differ by $3/8$ and by nothing else.*** ⇒ ***The two $10^{122}$s are ONE dimensionless combination sitting two paragraphs apart, so p0's existing dissolution of the second is already the dissolution of the first.*** | write |
 
 ⌗ **Why these:** *four are readable from `P14` and `P0` without computation, three are clauses whose
 content is already established. **54's instrument is the papers.***

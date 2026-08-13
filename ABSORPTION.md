@@ -1,7 +1,7 @@
 ---
 name: absorption
 kind: SOURCE
-current: r2570+c54.206
+current: r2572+c54.207
 job: The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced.
 sources: [chat]
 ---
@@ -54,7 +54,7 @@ sources: [chat]
 >
 > *Cleared at r2462 for c54.186 and kept current since. A revision neither absorbed nor declared in flight still FAILS, so the gate keeps its teeth.*
 
-IN-FLIGHT: (none — c54.206 and cc54 L-806…L-809 absorbed at r2570)
+IN-FLIGHT: (none — c54.207 absorbed at r2572)
 
 | fork revision | absorbed at | date |
 |---|---|---|
@@ -89,6 +89,7 @@ IN-FLIGHT: (none — c54.206 and cc54 L-806…L-809 absorbed at r2570)
 | c54.204 | r2544 | 2026-08-11 | ⛭⛭ *by git bundle; **item 53 — the baby universe NAMED with its falsifier**, items 25/28/32 applied, and **this line's AMPS miscount routed back rather than adopted*** |
 | c54.205 | r2548 | 2026-08-11 | ⛭⛭ *by git bundle; **items 54 and 55** — the exponential-vs-power-law mechanism, and the $\nu_R$ wall **gated as a fail condition** rather than left in prose* |
 | c54.206 | r2555 | 2026-08-11 | ⛭⛭ *by git bundle; **item 56 applied and cc54's number reproduced to the digit**, plus **the namespace-lint property written once rather than as three slips*** |
+| c54.207 | r2572 | 2026-08-11 | ⛭⛭⛭ *by git bundle; **six of seven dispatch items** — and **`L-535`: a `%` header comment became a receipt's quotation and nearly a paper claim**, caught one hop before print* |
 | cc54 L-806…L-809 | r2570 | 2026-08-11 | ⛭⛭⛭ *by BRANCH; **all four dispatch items** — massive freezing at any $m$, the driven estimator, the Nariai extension, and **the quartic absorbed into the one constant*** |
 | cc54 | r2516 | 2026-08-11 | ⛭⛭ **by BRANCH, named in `FOR_56` as the mechanism asks — the arc-pin coupling found by a full run** |
 | cc54 L-806…L-809 | r2570 | 2026-08-11 | ⛭⛭⛭ *by BRANCH; **all four dispatch items** — massive freezing at any $m$, the driven estimator, the Nariai extension, and **the quartic absorbed into the one constant*** |

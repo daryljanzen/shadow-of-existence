@@ -146,6 +146,41 @@ sources: [cowork, chat]
 
 
 
+### Revision r2572 — 2026-08-11 (main line). **c54.207 — six dispatch items, and a `%` comment that became a quotation and nearly a paper claim.**
+
+**⛔⛭ `L-535` IS THE SHARPEST THING IN THE DROP.** *A header comment in P16 carried "peak spacing"; a receipt's
+docstring quoted the surrounding sentence **in quotation marks** as "P16 distinguishes it explicitly"; and the
+paragraph 54 was drafting was about to cite it.*
+⇒ ***Verified here: `peak spacing` is 0 in P16's body, 1 in P16's comments, 6 in P15's body. The claim was true of
+P15, attributed to P16, and its source was a comment nobody treats as text.***
+⌗ ***And nothing measured the first step, structurally: every provenance check here asserts against RENDERED
+content, and a comment is not rendered.*** ✔ *`check_provenance` built, wired and seeded; **population ZERO**.*
+
+**⛭⛭ A1 (`L-533`) — `PO-9` ANSWERS WITH A THIRD BRANCH.** *The routed test could not run as written: **"is it a
+modulus?" needs P6's three-sense guard, and the offset IS the mass**, which P6 names as the sense the criterion does
+**not** exclude.*
+⇒ ***With the guard attached: Rule 2 neither forbids a second slicing step nor forces one — it EMPTIES it.*** *Every
+rung above the last must be maximally symmetric ⇒ a plane section ⇒ scale-only; the scale map has **rank 1 over two
+choices**; the cut fixes $\alpha$ from $\Lambda$ and $r_0$ from the mass and is blind above.*
+⇒⇒ ***So the dimension is unbounded above because nothing below can SEE the difference — which makes CUT→SUBSTRATE
+a CONSEQUENCE rather than a rule of conduct.***
+
+**⌗ A3/A4/A5 (`L-534`) — THREE BRIDGES, ONE CEILING.** *Cohomology is **not** an alternative to the kernel: on a
+$\mathbb{Z}_2$ grading it **is** the kernel (no odd nilpotent, $D^2$ is the metric). Branching returns a
+**character**, since $R$ grades rather than exchanges and $D_6$'s largest irrep is **2**. The spectral route
+survives structurally, and its only canonical rung has **multiplicity 2**.*
+⇒ ***Three failures, one number.*** *The anomaly route (A6, sharpened at r2568 to the mod-2 index) is untouched and
+the vein stays open and mapped.*
+
+**⌗ A13 (`L-532`) HAD MORE IN IT THAN r2564 FOUND.** *$S=3\pi/(\Lambda\ell_P^2)$ and the cosmological-constant
+factor is $8\pi/(\Lambda\ell_P^2)$ —* ***they differ by $3/8$ and by nothing else.*** ⇒ ***The two $10^{122}$s are
+ONE dimensionless combination sitting two paragraphs apart, so p0's existing dissolution of the second is already
+the dissolution of the first.***
+
+⌗ *A11 (`L-530`) and A12 (`L-531`) landed as written. And **X1 had no `INDEX.md` row from r2433 until now** — the
+receipt that answered `L-150` in the negative **reached no printed appendix for 133 revisions**, surfaced by 54's
+own `\rcpt{}` to it. **Checked: 406 receipts on disk, and it was the only one.***
+
 ### Revision r2571 — 2026-08-11 (main line). **cc54's FOUR ROWS STRUCK, AND A15 IS UNLINKED RATHER THAN UNDEFINED — the eighth arrival-path instance, inside the programme.**
 
 **⌗ THE FOUR.** *`L-806`–`L-809` struck: their findings are carried where they act — the massive-freeze answer on
