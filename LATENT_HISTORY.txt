@@ -1,0 +1,37 @@
+# THE LATENT LEDGER -- findings where the answer was ALREADY IN THE CORPUS and reading found it.
+#
+# ** WHY THIS FILE.  r2624, Daryl: ** "That adds another to the other counter though.  That's as bad as
+# anything and is another signal against calling in the 54s.  Keep that ledger held live too along with
+# this one."
+#
+#   ⇒ *** This is the SPLIT-SAFETY signal.  A latent finding cannot be parallelised: two nodes would both
+#       find the same one, or one would BUILD what the other found sitting there.  While the rate is
+#       high, the turns run one at a time. ***
+#
+# ⚠ ** Until r2624 this was inferred by REGEX over the changelog **, which under-counts a finding stated
+# in new words and cannot see one at all if the entry phrases it freshly.  *** A signal that decides
+# whether to split the work should be RECORDED, not guessed.  From here it is appended by hand each turn,
+# with what was already there and where. ***
+#
+# ** FORMAT: ** revision, LATENT or --, what was already sitting there.
+
+r2604  LATENT  the antilinear structure a mod-2 index needs is realised on the built zero-modes (P13)
+r2605  --      computed S^2 = -1 from the corpus's lift; a name collision hid the sign
+r2606  LATENT  the operator whose kernel is counted is the RADIAL one, said two sentences from the lift
+r2607  --      computed the radial operator's real structure; the mod-2 condition is met
+r2608  LATENT  P14 had already computed the parity: "three and zero lying in different parity classes"
+r2609  LATENT  PO-5's object is delivered in P14's own delivered-list; the row argued a different branching
+r2610  LATENT  C1 and C2 are one sentence in P10, and it also states PO-6's boundedness for the free sector
+r2611  LATENT  the C6/C7 tension was dissolved by a receipt written for another purpose (D1)
+r2612  --      built status.py; found the CI workflow's text-gate loop had no `do`
+r2613  --      built the DARK HALVES ANSWERED metric
+r2614  --      built the narrowing counter; found two stale veins and a truncating window
+r2615  --      built queue.py; the list existed only in this line's head
+r2616  LATENT  PO-8's kill receipt recorded a Daryl authorisation 238 revisions before the row was struck
+r2617  LATENT  printing the items exposed duplicates a bucket count had concealed
+r2618  --      deduped five ledger entries (one wrongly -- see r2621)
+r2619  LATENT  P10's next clause: the decomposition needs no floor, and the floor is what it leaves open
+r2620  --      built latent.py
+r2621  LATENT  boundary_paper distinguishes the two unbuilt sectors in one sentence; r2618's dedupe was wrong
+r2622  --      built TABLE_HISTORY.txt, the weight-loss chart
+r2623  LATENT  PO-12's step (1) is computed in sec:envelope, two sections before the debt is named

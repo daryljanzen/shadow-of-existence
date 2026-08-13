@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2624 — 2026-08-11 (main line). **`LATENT_HISTORY.txt` — the split-safety ledger held live, and the regex was under-counting.**
+
+**⌗ THE POINT.** *`PO-12` turning out half-built **"adds another to the other counter"** — ***a narrowing that comes
+from READING rather than computing is progress on the table AND a mark against splitting, and the same turn moves
+both ledgers in opposite senses.***
+
+**⛔ AND THE REGEX WAS MISSING THEM.** *r2620's `latent.py` inferred the rate by matching phrasings in the
+changelog, and a latent finding stated in fresh words is invisible to it.*
+⇒ ***Measured by regex: 40–45%. **Measured by the hand-kept ledger: 60% then 50%.** The regex under-counted — and in
+the direction that would have let us split too early.***
+
+**✔ `LATENT_HISTORY.txt`** — *appended by hand each turn, with what was already sitting there and where. Same
+discipline as `TABLE_HISTORY.txt`: **appended, never rewritten**. `latent.py` reads it and falls back to the regex
+only if the file is absent.*
+
+*The last twenty, recorded: **r2604** the antilinear structure realised on the built modes · **r2606** the counted
+operator is the radial one · **r2608** P14 had already computed the parity · **r2609** `PO-5`'s object delivered in
+P14's own list · **r2610** C1 and C2 are one sentence · **r2611** the C6/C7 tension dissolved by a receipt written
+for another purpose · **r2616** `PO-8` authorised 238 revisions before it was struck · **r2617** duplicates a bucket
+count concealed · **r2619** P10's next clause · **r2621** two sectors distinguished in one sentence · **r2623**
+`PO-12`'s step ① computed two sections earlier.*
+
+**⛭ THE RULE:** ***two ledgers, held live together: one for what is LEFT and one for how it is being FOUND. A turn
+that shrinks the first by reading grows the second — and a report that shows only the first will recommend
+parallelising exactly when parallelising is worst.***
+
+⌗ ***DO NOT SPLIT: 6 of the last 13 are latent.***
+
 ### Revision r2623 — 2026-08-11 (main line). **`PO-12` IS HALF BUILT — the debt's first step is computed two sections before the debt is named.**
 
 **⌗ THE DEBT IS STATED AS TWO STEPS.** *"This is a genuine build, not a plug-in: it requires **first specifying how
