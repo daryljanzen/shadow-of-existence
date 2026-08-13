@@ -101,7 +101,7 @@ sources: [chat]
 | `KICKOFF_CODA_REVIEW.md` | METHOD | A review methodology, not a spent task — Pass A faithful account then STOP; Pass B four questions plus one inward; three verdicts; a finding whose receipt carries no first-hand extract with a locator is structurally void. LOWEST PRIORITY (Daryl, standing): kept where it is, not to be raised again. | — | — |  |
 | `NOTATION_GLOSSARY.md` | METHOD | rules / guards / canon | — | — |  |
 | `ONTOLOGY_FOUNDATION_INDEX.md` | METHOD | What is forced here, and by what chain? — each forcing pinned once, whole, with its joints and its guard. Read WHILE READING A PAPER. | c54.19 | c54.128 |  |
-| `PROTECTED_OPEN.md` | METHOD | rules / guards / canon | — | c54.205 |  |
+| `PROTECTED_OPEN.md` | METHOD | rules / guards / canon | — | c54.207 |  |
 | `README.md` | METHOD | rules / guards / canon | — | c54.118 |  |
 | `SETUP_THE_REPO.md` | METHOD | THE STANDING INSTRUCTIONS for creating the GitHub repository and giving this line access to it. Gated on Daryl being at a computer, or on the decision to publish. ASK FOR THIS BY NAME — "dig up the repo instructions". | c54.163 | c54.163 |  |
 | `SOURCE_VETTING.md` | METHOD | rules / guards / canon | — | — |  |
@@ -196,6 +196,7 @@ sources: [chat]
 | `gate_session_notes_r754_spinup.md` | RECORD | frozen record | — | — |  |
 | `gate_session_notes_r896_spinup.md` | RECORD | frozen record | — | — |  |
 | `gate_session_notes_session.md` | RECORD | frozen record | — | — |  |
+| `THE_CLOSURE_PLAN.md` | PLAN | (declared in frontmatter) | — | c54.207 |  |
 | `THE_DISPATCH.md` | PLAN | (declared in frontmatter) | — | c54.207 |  |
 | `THE_REMAINING_WORK.md` | PLAN | (declared in frontmatter) | — | c54.206 |  |
 | `A4_matter_seam_crossing_build.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |

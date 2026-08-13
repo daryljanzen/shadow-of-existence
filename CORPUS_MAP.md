@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2574 — 2026-08-11 (main line). **`THE_CLOSURE_PLAN` — can the list end all-struck? No, and the count of why is the value. Plus `kills/PO-9.md`.**
+
+**⌗ THE COUNT.** *Nine `PROTECTED_OPEN` items and two leads. **Eleven things.***
+*· ***FOUR can be struck by work or decision***: `PO-9`'s kill receipt (mine, now), `PO-7` and `PO-8` (both
+**complete**, waiting on the authorisation line the register wrote itself), and `L-218`'s A14 (three steps, only the
+third an afternoon) and A15 (editorial).*
+*· ⛔ ***FIVE ARE OPEN PHYSICS***: `PO-2`, `PO-3`, `PO-4`, `PO-5`, `PO-6`.*
+*· *and `PO-seam` is **answered except a progenitor derivation**, which is open physics too.*
+
+⇒⇒ ***So no — and that is the right state. These are not backlog; they are what the programme is FOR, and a register
+that could strike them on a schedule would be one that had stopped asking anything hard.***
+⌗ ***And each is MAPPED rather than blank*** *— `PO-5` knows three bridges fail on one number and where the fourth
+lives; `PO-6` knows the quartic is absorbed, the Nariai expansion parameter, and the sum's seven necessary
+conditions.* ***Mapped-and-open is the strongest state an open question can be in.***
+
+**⇒ SO "FINISHING THE LIST" MEANS: every item STRUCK or MAPPED-AND-OPEN with its next question stated.** *By that
+measure it is **four items from done**, and three of the four are this line's work.*
+⚠ ***And the move to refuse: striking an open physics question to clear a board would destroy what the register is
+for.*** *`F5` and the exit procedure make that expensive, and they have held all session — **both nodes declined to
+convert `PO-7` even with every computation done**.*
+
+**⛭⛭ AND `kills/PO-9.md` IS WRITTEN — the first item on that plan.** *`L-533` answered the dark half, so the object
+was nameable for the first time and the four checks were written **the revision after that became true**.*
+⇒ ⛔ ***④ CHAIN DOES NOT CLEAR: three of the five links — the maximal-symmetry step, the plane-section reduction, the
+rank-1 scale map — are `L-533`'s own derivation and are reproduced nowhere else. `PO-7`'s ④ failed on ONE
+unreproduced link; this fails on THREE.***
+⌗ ***So `PO-9` NARROWS rather than closes: "do (c), (d) and (e) hold on a second path?" — three specific steps in
+one derivation, and nothing else.*** *Which is what a kill receipt is for: **its failing check is its output**.*
+
 ### Revision r2573 — 2026-08-11 (main line). **`PO-9`'s DARK HALF BROUGHT CURRENT, `L-535` STRUCK — and the dispatch is 13 of 15.**
 
 **⛔ THE VEIN WAS TWO REVISIONS STALE, in the same mood as r2556.** *`PO-9`'s dark half still asked **"whether a
