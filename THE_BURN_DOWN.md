@@ -28,26 +28,25 @@ without fixing what is still sitting there owed?"**
 | | at c54.27 *(the baseline below)* | **now** |
 |---|---|---|
 | registered | 88 | **274** |
-| struck | 13 | **266** |
-| open QUESTIONS | 75 | **7** |
+| struck | 13 | **268** |
+| open QUESTIONS | 75 | **5** |
 | open WORK rows *(arcs and phases, folded r2378)* | — | **1** |
 | `HOT` | 49 *(60% of open)* | **0** *(0% of open questions)* |
-| struck fraction | 14.0% | **97.4%** |
+| struck fraction | 14.0% | **98.2%** |
 
 **Open leads by state**
 
 | state | count |
 |---|---|
 | `DARYL` | 1 |
-| `OPEN` | 5 |
-| `—` | 1 |
+| `OPEN` | 4 |
 
 **Open leads by origin**
 
 | origin | count |
 |---|---|
-| folded from OPEN_PROBLEMS_MAP | 2 |
-| this fork | 5 |
+| folded from OPEN_PROBLEMS_MAP | 1 |
+| this fork | 4 |
 
 > **⌗ THE COUNTS ARE PER KIND (r2379).** *`kind:QUESTION` rows are things to answer and carry the burn-down; `kind:WORK` rows are programmes with steps whose freshness is gated by `corpus/check_arcs.py`. **The struck fraction is scoped to questions so it cannot quietly start measuring something else.***
 
@@ -59,9 +58,7 @@ without fixing what is still sitting there owed?"**
 | **`L-171`** | QUESTION · DARYL |
 | **`L-175`** | QUESTION · OPEN |
 | **`L-202`** | QUESTION · OPEN |
-| **`L-207`** | QUESTION · OPEN |
 | **`L-221`** | QUESTION · OPEN |
-| **`L-805`** | QUESTION · — |
 | **`L-218`** | WORK · — |
 
 *⌗ The gate that enforces the budget is `corpus/check_burndown.py`; the ID-space integrity check lives there too.*

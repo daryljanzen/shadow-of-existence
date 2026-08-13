@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2560 — 2026-08-11 (main line). **`L-207` AND `L-805` STRUCK — queued work belongs on the thing that gates it, not on a lead list.**
+
+**⌗ `L-207`** *— `OPEN_PROBLEMS_MAP`'s A·1, P8's **"the deepest open question the construction raises."** Its **⓵
+was discharged at r2450**, and its own body records **all three of W1's instances closed**: the confined case in
+P11, the branch-point crossing in P16, the general inhomogeneous one by `W2`.* ⇒ *What that exhibition established
+is precise: ***the specific worry — that genuine inhomogeneity might require a generative law the kinematic operator
+cannot supply — does not arise where it can be checked exactly.***
+
+**⌗⌗ AND ⓶ READ "nothing until `PO-6` moves."** ⇒ ***A row whose only remaining half is "wait" is not a lead.***
+**AND THE DISTINCTION FROM `L-217` IS THE POINT:** *there, `F1` was a **standing trip-wire** and nothing becomes
+available when it holds, so the row simply closed. Here **⓶ is real work that becomes available the moment `PO-6`
+moves**.*
+⇒ ***So it is RELOCATED, not discarded: carried on `PO-6`'s vein as "what unlocks when this moves" — where the node
+working that vein will read it, instead of sitting on a lead list telling every node to wait.***
+
+**⛭ THE RULE:** ***a gated task on a lead list is an instruction to do nothing, addressed to everyone. On the gating
+vein it is an instruction to do something, addressed to whoever gets there. Same information; the placement is the
+whole difference.***
+
+⌗ *And the same reading struck **`L-805`**: cc54's freezing calculation is **absorbed into `kills/PO-7.md`'s ④** and
+its remainder is **`F5`'s procedure**.* ⇒ ***A row whose work is absorbed and whose remainder is a procedure is a
+RECORD, not a lead.***
+
+⚠ *Neither strike claims progress: **`PO-6`'s dark half is unchanged** — defining the sum, the closed-form nonlinear
+$\Lambda>0$ solution, whether one dimensionful constant can regulate — and B·2 is no nearer. ***Relocation is not
+closure, and saying which one happened is the whole of the honesty here.***
+
+⌗ *Board: **four veins, two leads**.*
+
 ### Revision r2559 — 2026-08-11 (main line). **cc54 CLOSED `PO-7`'s INVERSION — `kills/PO-7.md`'s ④ now clears, and route ② is complete.**
 
 **⌗ WHAT THE KILL RECEIPT DID.** *r2552 wrote the four checks. **① and ⑤ passed, ③ found the prices asymmetric, and
