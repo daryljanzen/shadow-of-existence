@@ -146,6 +146,24 @@ sources: [cowork, chat]
 
 
 
+### Revision r2653 — 2026-08-11 (main line). **`scripts/stamp.py` — the turn header, emitted rather than retyped.**
+
+**⌗ WHY.** *Every turn this session ended with a header assembled by hand from what the scripts were remembered to
+say.*
+⇒ ***And three revisions caught that drift after the fact: **r2612** (the register count included a range header;
+the wired gate list was truncated at four of thirty), **r2640** (parked items still counted), **r2650** (two wired
+gates that cannot fail).***
+
+**✔ ONE COMMAND NOW EMITS IT:** *table, dark halves, `PO` open-vs-answered, the chart deltas, the turn-kind string,
+ledger, routed, dispatch live-vs-parked, and gates that **can fail** — all read from the files at run time.*
+
+**⌗ AND BUILDING IT CAUGHT ONE MORE.** *The turn-kind string took `column[0]`, which rendered the older `--` rows as
+`-` and **silently mixed them into the class counts**.*
+⇒ ***A one-character bug in the summariser, invisible because the output still looked like a string of letters.***
+
+**⛭ THE RULE:** ***a summary you retype every turn is a second source of truth, and the second source is always the
+one that is wrong. Emit it from the first.***
+
 ### Revision r2652 — 2026-08-11 (main line). **THE STATE-FIXER HAS ITS OWN THRESHOLD at $\Gamma=-1/4$, and r2651's operator crosses it.**
 
 **⌗ THE MECHANISM.** *P10: "**Thermal (Hartle--Hawking) regularity is Euclidean smoothness at the horizon mode by

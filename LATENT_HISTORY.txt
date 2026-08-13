@@ -83,3 +83,4 @@ r2649  COMPUTED    check_dupes fixed: the preamble swallowed every papers first 
 r2650  --         gate_audit: 2 of 34 wired gates have no failure path; the count was 2 too high
 r2651  COMPUTED    the floor fails at cubic order: pi^2 phi is a square times a SIGNED field
 r2652  COMPUTED    thermal regularity selects a branch only for Gamma >= -1/4; r2651s operator reaches -47.8
+r2653  INSTRUMENT  scripts/stamp.py: one command emits the header, so it cannot drift from the files
