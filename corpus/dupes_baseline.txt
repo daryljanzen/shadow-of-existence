@@ -1,4 +1,4 @@
 # ** near-duplicate sentence pairs, as last AUDITED. **  A rewrite must REPLACE, not
 # accompany.  ⇒ *** When this rises, a paragraph was written beside the one it was meant
 #     to replace -- which compiles, passes every other gate, and reads as a stutter. ***
-12
+13

@@ -79,3 +79,4 @@ r2645  LATENT      PO-3 held its own complete answer for hundreds of revisions a
 r2646  LATENT      PO-12 gates BOTH of PO-10s runs -- both halves are statements about C_l
 r2647  COMPUTED    the corpus cancellation is between two RATES; odd/even needs one between two MULTIPOLES
 r2648  --         found and repaired my own r2588 duplication in sec:diffusion-scale; dupes gate unverified
+r2649  COMPUTED    check_dupes fixed: the preamble swallowed every papers first sentence; seed test now passes

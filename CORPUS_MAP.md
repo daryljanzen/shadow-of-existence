@@ -146,6 +146,26 @@ sources: [cowork, chat]
 
 
 
+### Revision r2649 — 2026-08-11 (main line). **`check_dupes` FIXED — it was blind to the opening of every paper.**
+
+**⌗ r2648 RECORDED THE FAILURE RATHER THAN DRESSING IT AS A PASS.** *Four attempts to make the gate fire on an
+injected duplicate did not fire it, and the cause was not isolated. This turn diagnosed it.*
+
+**⛭ THE CAUSE.** ***The LaTeX preamble contains no sentence-ending punctuation**, so the first real sentence of every
+paper glued onto the package-loading text and could never match its own duplicate.*
+⇒ ***The gate was blind to the opening of all seventeen papers.***
+
+✔ *Cutting at `\begin{document}` before splitting fixed it. **Seed test passes: clean 0, seeded 1, restored 0.**
+And the baseline rose **12 → 13** — ***one real duplicate pair had been hiding in the swallowed region.***
+
+**⛭ THE RULE:** ***a check that never fires is not necessarily wrong about the corpus — it may be reading a
+different corpus than you think. Diagnose by tracing ONE known-positive input through every stage; four attempts at
+fixing the matcher never asked whether the input arrived.***
+
+⌗ ***And the shape recurs: `latent.py` under-counted (r2624); `status.py` counted a range header as a live row
+(r2612); the wired gate list was truncated at four (r2612). **Every instrument this session that reported a number
+wrong reported it LOW — and low is the direction that looks like success.***
+
 ### Revision r2648 — 2026-08-11 (main line). **A REWRITE ACCOMPANIED INSTEAD OF REPLACING — my own, sixty revisions old, in `sec:diffusion-scale`.**
 
 **⛔ THE DEFECT.** *At r2588 this line de-narrated the section by writing a clean paragraph — **and left the original

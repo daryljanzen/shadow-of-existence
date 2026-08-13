@@ -27,13 +27,13 @@ above a similarity threshold. **
     python3 corpus/check_dupes.py
     python3 corpus/check_dupes.py --rebuild
 
-⚠ ** SEED TEST NOT PASSED, AND THAT IS RECORDED RATHER THAN HIDDEN. **  Four attempts to make the gate
-fire on an injected duplicate did not fire it -- the injected pair was not detected, and the cause was not
-isolated before the turn closed.  *** So this gate reports and does not yet PROVE it can catch the class
-it was built for.  It found nothing on its own; the r2588 duplication it was written from was found by
-reading, not by it. ***
-  ⇒ ** Treat its baseline as a measurement and not as a guarantee until a seeded injection fails the
-    run. **
+✔ ** SEED TEST PASSES as of r2649 -- clean 0, seeded 1, restored 0. **  ⛭ ** And the cause of the four
+earlier failures was worth having: ** the LaTeX preamble contains no sentence-ending punctuation, so the
+first real sentence of every paper glued onto it and could never match its own duplicate.  *** The gate
+was blind to the opening of all seventeen papers.  Cutting at `\begin{document}` before splitting fixed
+it and raised the baseline 12 -> 13 -- one real pair had been hiding in the swallowed region. ***
+  ⌗ ** The gate still cannot judge whether a repetition is WANTED ** -- a paper may restate a claim in its
+  abstract and its body.  *** So it baselines and fails on a RISE, as `check_withdrawals` does. ***
 
 Written r2648.  Stated for reversal.
 """
@@ -66,7 +66,13 @@ def scan():
     for f in sorted(glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))):
         if os.path.basename(f).startswith('appendix_receipts'):
             continue
-        t = re.sub(r'\s+', ' ', body(f))
+        # ** the preamble has no sentence-ending punctuation, so the first body sentence glues onto
+        # it and never matches its own duplicate.  ⇒ *** Cut at \begin{document} before splitting:
+        # what precedes it is package loading, not prose, and it was silently swallowing the first
+        # real sentence of every paper. *** **
+        raw = body(f)
+        d = raw.find('\\begin{document}')
+        t = re.sub(r'\s+', ' ', raw[d:] if d > 0 else raw)
         sents = [norm(s) for s in re.split('(?<=[.!?])' + chr(92) + 's+', t)]
         sents = [s for s in sents if len(s) >= 40]
         # ** bucket by the first six words: a near-duplicate shares its opening, and comparing every
