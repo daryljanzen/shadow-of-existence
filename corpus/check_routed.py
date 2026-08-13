@@ -199,7 +199,32 @@ def probe_32():
            f'claim present: {claim}; mode condition named (isocurvature/growing mode): {stated}'
 
 
-PROBES = {24: probe_24, 25: probe_25, 28: probe_28, 32: probe_32, 6: probe_6, 7: probe_7, 8: probe_8, 11: probe_11, 19: probe_19, 20: probe_20,
+def _arc():
+    return re.sub(r'\s+', ' ', _raw('THE_LIVE_ARC.md') or '')
+
+
+def probe_30():
+    """The COMPUTES: convention -- discharged when L-230 closed at r2557."""
+    return ('~~L-230~~' not in _arc()), 'L-230 struck in the register'
+
+
+def probe_44():
+    """The unworked stratum at linear order -- discharged when L-174 was struck."""
+    return ('~~L-174~~' not in _arc()), 'L-174 struck in the register'
+
+
+def probe_49():
+    """L-519's second footing -- discharged when L-519 closed on three."""
+    return ('~~L-519~~' not in _arc()), 'L-519 struck in the register'
+
+
+def probe_51():
+    """The arc-pin sweep failure -- discharged when check_arcpins was built."""
+    return (not os.path.exists(os.path.join(ROOT, 'corpus', 'check_arcpins.py'))), \
+           'check_arcpins.py present'
+
+
+PROBES = {30: probe_30, 44: probe_44, 49: probe_49, 51: probe_51, 24: probe_24, 25: probe_25, 28: probe_28, 32: probe_32, 6: probe_6, 7: probe_7, 8: probe_8, 11: probe_11, 19: probe_19, 20: probe_20,
           22: probe_22, 29: probe_29, 40: probe_40, 45: probe_45, 46: probe_46, 48: probe_48}
 
 

@@ -146,6 +146,25 @@ sources: [cowork, chat]
 
 
 
+### Revision r2563 — 2026-08-11 (main line). **THE ROUTED QUEUE IS AT FIVE OF FIFTY, and five more were discharged by other work and marked only now.**
+
+**⌗ THE READ.** *Ten items had no mechanical probe. Seven were testable against what has landed since, and* ***five
+were already discharged:*** *· **30** — `L-230` closed r2557, the convention now has a gate; · **42** — P9 cites
+`JanzenDynamics` at `cor:wall`; · **44** — `L-174` struck r2530; · **49** — `L-519` closed r2543 on three footings;
+· **51** — `check_arcpins` built at r2516.*
+
+**✔ AND THE PROBES ARE NOW KEYED TO THE REGISTER, not to prose.** *`probe_30`, `probe_44`, `probe_49` test whether
+their row is struck; `probe_51` tests whether the gate exists.*
+⇒ ***So an item discharged by a strike marks itself, which is the fourth time this queue has needed a human read to
+notice work already done (r2533, r2534, r2539, now).***
+
+**⌗ WHAT REMAINS IS FIVE, AND TWO ARE OFFERS RATHER THAN OWINGS** *(**9** and **26** are conventions offered, not
+imposed).*
+⇒ ***The genuine floor is three: **18** (p0's frontier datum — "the answer is that it cannot be derived"), **50**
+(trans-Planckian, where the scoping is the content), and **52** (the de Sitter horizon's entropy).***
+⌗ ***And 52 is the only one that opens a question rather than a paragraph:*** *$S=\pi(\alpha/\ell_P)^2$ is where
+$\alpha$ and $\ell_P$ meet, and `PO-6` asks whether one dimensionful constant can regulate.*
+
 ### Revision r2562 — 2026-08-11 (main line). **A SIXTH MECHANISM — build the lint, measure it, and usually don't ship it.**
 
 **⌗ THREE TIMES IN NINE REVISIONS** *a check was built, run against the real tree, and rejected on its own numbers:*

@@ -6,7 +6,31 @@ job: THE INBOX — what the observer line has found in the working fork's text a
 sources: [chat]
 ---
 
-## ⛭⛭⛭ THE FLOOR, as of r2534 — run `check_routed.py` and this is what you get
+## ⛭⛭⛭ THE FLOOR, as of r2563 — and it is nearly empty
+
+**⌗ FIVE ITEMS REMAIN OF FIFTY, and two of the five are OFFERS rather than owings:**
+
+| item | what it is |
+|---|---|
+| **9** · **26** | ***conventions offered, not imposed*** — a `\rcpt{}` semantics, and two items routed at the finder's weight |
+| **18** | p0's frontier item 1, datum half — ***"the answer is that it cannot be derived"*** |
+| **50** | trans-Planckian — ***the scoping IS the content***: finite at each finite exterior time, **not uniformly bounded** |
+| **52** | ***the de Sitter horizon's entropy*** — $S=\pi(\alpha/\ell_P)^2$ is where $\alpha$ and $\ell_P$ meet, and `PO-6` asks whether one constant can regulate |
+
+⇒ ***So the genuine floor is three: 18, 50 and 52 — and 52 is the only one that opens a question rather than a
+paragraph.***
+
+⌗ *Forty-five of fifty are discharged, and **five of those were discharged by other work and marked only at
+r2563**: **30** (`L-230` closed r2557), **42** (P9 cites `JanzenDynamics` at `cor:wall`), **44** (`L-174` struck),
+**49** (`L-519` closed on three footings), **51** (`check_arcpins` built).*
+⇒ ***Each now has a probe keyed to the REGISTER rather than to prose, so an item discharged by a strike marks
+itself.***
+
+---
+
+## ⌗ THE r2534 FLOOR, kept — because the shape of the shrinking is the record
+
+### ⛭⛭⛭ THE FLOOR, as of r2534 — run `check_routed.py` and this is what you get
 
 **⌗ EIGHT NAMED DEFECTS, each with a probe that will tell you when it is fixed:**
 
@@ -626,7 +650,7 @@ perfectly.* *Node 55, `F04`.*
 
 ---
 
-## ⛭ 30 · A CONVENTION WORTH HAVING, OFFERED NOT IMPOSED — the receipt's `COMPUTES:` header — added r2447
+## ✔✔ DISCHARGED (verified elsewhere r2563 — `L-230` closed r2557 — the convention now has a gate, grandfathered) — ⛭ 30 · A CONVENTION WORTH HAVING, OFFERED NOT IMPOSED — the receipt's `COMPUTES:` header — added r2447
 
 **The problem it would solve is `L-230`'s, and it is the one class no gate in the corpus can see.**
 *`F14` is its clearest instance: `P14_leaf_compactness` runs at $M=0.12\alpha$ and **its own header says so** —
@@ -1033,7 +1057,7 @@ false**, so this one is stated as a question with no answer space attached.*
 
 ---
 
-## ⌗ 42 · P9's `cor:wall` CITATION COVERS THE METHOD, NOT THE CASE — added r2503
+## ✔✔ DISCHARGED (verified elsewhere r2563 — P9 cites `JanzenDynamics` at `cor:wall`) — ⌗ 42 · P9's `cor:wall` CITATION COVERS THE METHOD, NOT THE CASE — added r2503
 
 **Where:** *`corpus/range_paper.tex`, `cor:wall`'s surrounding paragraph:* *"the radiative degrees of freedom beyond
 the wall … **are carried past it by the ordinary general-relativistic evolution the companion dynamics paper works
@@ -1092,7 +1116,7 @@ condition — two objects sharing one word, which is item 23's own finding in re
 
 ---
 
-## ⛭⛭⛭ 44 · THE UNWORKED STRATUM IS EXHIBITED AT LINEAR ORDER, AND IT IS TEXTBOOK GR — added r2514
+## ✔✔ DISCHARGED (verified elsewhere r2563 — `L-174` struck r2530 — the stratum question is discharged) — ⛭⛭⛭ 44 · THE UNWORKED STRATUM IS EXHIBITED AT LINEAR ORDER, AND IT IS TEXTBOOK GR — added r2514
 
 *Following your c54.198 and c54.199, `L-174` ⓵ was restated (r2513) as **exhibit the ordinary GR evolution of data
 with $\sigma^{TT}\ne0$** — because `thm:bound` quantifies over **every** subgroup $H$, so no sweep reaches the
@@ -1129,7 +1153,7 @@ calculation with a closed-form answer — **because the construction was never t
 *One clause added at P12's opening: the brackets **are** the embeddability condition (Teitelboim), HKT's canonical representation on $(g_{ij},\pi^{ij})$ **recovers the Einstein Hamiltonian**, and Teitelboim–Zanelli's Lovelock closure makes that forcing **dimension-dependent** — so the leaf being four is doing work. Two references added. **The clause says in the paper's own voice that this is a recognition and not a derivation**, which is your own guard.*
 
 ---
-## ⛭⛭ 51 · THREE RECEIPTS FAIL THE FULL SWEEP — not on physics, on a prose PIN into `THE_LIVE_ARC.md` that arc-regen reworded — added r2510 (cc54) ⌗ *(renumbered from a duplicate 44 at r2532 — two items shared the number, which is the routing-queue form of the `L-510` collision)*
+## ✔✔ DISCHARGED (verified elsewhere r2563 — `check_arcpins` built at r2516) — ⛭⛭ 51 · THREE RECEIPTS FAIL THE FULL SWEEP — not on physics, on a prose PIN into `THE_LIVE_ARC.md` that arc-regen reworded — added r2510 (cc54) ⌗ *(renumbered from a duplicate 44 at r2532 — two items shared the number, which is the routing-queue form of the `L-510` collision)*
 
 *cc54 ran the full receipt sweep **with `camb`+`pynucastro`** — the run this line's container cannot finish and CI
 does only on the nightly heavy tier. **344 pass, 3 fail.** All three fails are plain-numpy receipts in your bands,
@@ -1181,7 +1205,7 @@ are wrong — they match today; · not that this line should own the fix.*
 *Worked into p0, and **"Higgs" is named where it appeared zero times in seventeen papers**. The prior question c54.202 stated in advance — one mechanism or two — resolves to **one, by an identity**: P3's $2M=r_0-r_0^3$ is odd, so p0's $r_0\mapsto-r_0$ mass-reflection is a property of that relation. ⇒ **The order parameter is the offset; the symmetric sector is the bare substrate; the breaking has a derived cause rather than a chosen minimum; and it is BOUNDED by the Nariai mass, which a quartic potential is not.** Registered `L-521`.*
 
 ---
-## ⛭⛭⛭ 49 · `L-519` HAS A SECOND, INDEPENDENT FOOTING — the static frame does not exist at the Nariai member — added r2528
+## ✔✔ DISCHARGED (verified elsewhere r2563 — `L-519` closed r2543 on three footings, the frame one among them) — ⛭⛭⛭ 49 · `L-519` HAS A SECOND, INDEPENDENT FOOTING — the static frame does not exist at the Nariai member — added r2528
 
 *You refused to read $T=0$ off the degenerate horizon because the near-horizon geometry is the equal-radii
 $\mathrm{dS}_2\times S^2$ throat, **which carries a scale of its own**. **Right, and here is a second reason from
