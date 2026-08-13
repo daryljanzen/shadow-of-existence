@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2631 — 2026-08-11 (main line). **THE $\{0,1,2\}$ DERIVATION IS DISCHARGED — negatively, by a type argument. First COMPUTED turn in nineteen.**
+
+**⌗ THE QUESTION.** *P4, the corpus's one `DISCOVERABLE-PROOF`: "**Whether the two triples are one structure** …
+**no derivation producing $\{0,1,2\}$ from a single condition has been exhibited**."*
+
+**⛭ ⓵ THE ROOT TRIPLE IS THE $f=0$ LOCUS.** *Clearing $f=1-2M/r-r^2/\alpha^2=0$ gives
+**$r^3-\alpha^2r+2M\alpha^2=0$ — the same cubic as the offset-to-mass map**. At the Nariai mass:*
+
+    roots = {1/√3, 1/√3, -2/√3}      sum = 0
+
+⇒ ***A DOUBLE root at the designated value and a simple one at the merged — **exactly the pair `PO-2`'s row already
+names**, now shown to be the double and simple root of one cubic, with the zero-sum the vanishing $r^2$
+coefficient.***
+
+**⛭⛭ ⓶ AND THE CAUSAL TRIPLE IS THREE *VALUES* OF $f$**, *each with its own single locus: $f=0\to r=-1.154701$,
+$f=1\to-0.727416$, $f=2\to-0.344142$.*
+
+**⇒⇒ ⓷ SO THEY ARE THREE-ELEMENT SETS OF DIFFERENT KINDS.** ***One is three ROOTS at a single $f$; the other is
+three VALUES of $f$. A derivation "from a single condition" would have to produce a set of ROOTS and a set of LEVELS
+from one statement, and those are not the same type.***
+
+**⛭ THE RULE:** ***when two structures share only a cardinality, check their TYPE before hunting a bijection. Three
+roots and three levels are both "three", and that is the entire resemblance.***
+
+⌗ ***This LOCATES the resemblance rather than refuting it: both triples live on the same excursion and are forced by
+the same $f$. Co-location is a fact even where identification is not.***
+
+⚠ *Says nothing about `PO-2`'s **own** pairing — the roots against the WALL MODES — which stays open.*
+
+⌗ **Table 28 → 27, the first drop from a COMPUTATION rather than a dedupe. `LATENT` 10, `COMPUTED` 1.**
+
 ### Revision r2630 — 2026-08-11 (main line). **THREE three-fold structures, TWO open identifications, TWO registers unaware of each other.**
 
 **⌗ HOW IT SURFACED.** *The open ledger's twelve work items had each been verdicted individually and **never read

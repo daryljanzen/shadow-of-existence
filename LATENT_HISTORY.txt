@@ -60,3 +60,4 @@ r2627  LATENT      PO-3's why: P14's parity clause answers it dimensionally; the
 r2628  INSTRUMENT  three kinds, not two: LATENT / COMPUTED / INSTRUMENT, and COMPUTED is what parallelises
 r2629  LATENT      PO-2: the row's own epsilon fact is P14's baryon construction read forward
 r2630  LATENT      three three-fold structures, two identification questions, two registers unaware of each other
+r2631  COMPUTED    the Nariai cubic: root triple = f=0 locus; causal triple = three VALUES of f
