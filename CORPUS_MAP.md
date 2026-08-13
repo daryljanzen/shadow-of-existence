@@ -146,6 +146,43 @@ sources: [cowork, chat]
 
 
 
+### Revision r2568 — 2026-08-11 (main line). **A6 SHARPENED — the seventh arrival-path finding, and the corpus's own argument points straight at the missing object.**
+
+**⌗ A6 WAS HELD to follow A3–A5. Its premise was testable immediately, and testing it changed the item.**
+
+**⓵ THE ANOMALY BRIDGE IS NOT SPECULATIVE HERE.** *P14 already uses it successfully: "the **per-wall anomaly
+conditions** together with the existence of the Yukawa couplings … **determine the hypercharge**."* ⇒ *A6 was never
+a question about whether the bridge TYPE works.*
+
+**⛭⛭ ⓶ AND THE CORPUS HAS ALREADY RUN THE INDEX ARGUMENT ON $R$, AND SAID WHERE IT STOPS.** *"the index theorem is
+a statement about a compact **connected** group, and a positive-dimensional connected group contains **a circle
+whose action is what forces the equivariant Dirac index to vanish**, while the gravitational handedness is carried
+by the **discrete orientation parity $\mathrm{O}(5,1)\setminus\mathrm{SO}_0(5,1)$, no such circle action and so no
+trigger**."*
+⇒ ***That is r2526's gamma-matrix finding reached independently, and stronger: it says WHY the kernel route fails,
+not merely that it does.***
+
+**⛭⛭⛭ ⓷ AND THE STOPPING POINT IS EXACTLY WHERE A MOD-2 INDEX LIVES.** *The integer equivariant index is the
+invariant for a CONNECTED group; for a $\mathbb{Z}_2$ action the corresponding invariant is the **mod-2 index** —
+the parity of $\dim\ker D$, which survives precisely when the circle that would kill the integer index is absent.*
+*`Atiyah` **20** · `index theorem` **6** · **`mod 2` 0 · `Witten anomaly` 0 · `eta invariant` 0 · `global anomaly`
+0 · `parity anomaly` 0**.*
+⇒⇒ ***So the corpus runs Atiyah–Singer, finds it inapplicable for a named and correct reason, and does not name the
+invariant that replaces it in exactly that case.***
+
+**⌗ SO A6's FORM CHANGES:** *from "try the anomaly as a bridge" to* ***"does the orientation parity $R$ carry a
+mod-2 index, and what does it obstruct?"*** *— a specific object with a home, since `L-242` gives $R$ a geometric
+realisation with a bounded odd order parameter.*
+
+**⛭ THE RULE:** ***when a corpus rules out a standard tool for a stated structural reason, the reason names the
+replacement. "Not applicable because the group is discrete" is not a dead end; it is a pointer to the
+discrete-group version of the same invariant.***
+⚠ *A name and a place to look, **not a calculation**: whether the operator admits a mod-2 index depends on a real
+structure this does not check, and **a $\mathbb{Z}_2$ invariant can obstruct or permit but cannot by itself deliver
+four states**, which is what `PO-5` needs. A3–A5 remain open and are 54's.*
+⌗ *And the sequencing lesson: **holding an item for ordering is not the same as holding it for information**, and
+the cheap test tells you which you have.*
+
 ### Revision r2567 — 2026-08-11 (main line). **A8 DONE — "defining the sum" is heavily constrained, and the constraints were all already written.**
 
 **⌗ THE ITEM.** *`PO-6`'s "defining the sum" was **the one open-ended thing in the programme**, held back at r2566

@@ -1,7 +1,7 @@
 ---
 name: the-dispatch
 kind: PLAN
-current: r2567+c54.206
+current: r2568+c54.206
 description: THE DISPATCH — the fifteen outstanding items, checked for independence, allocated between 54, cc54 and the observer line. Written r2566.
 sources: [chat]
 ---
@@ -64,7 +64,7 @@ content is already established. **54's instrument is the papers.***
 | tag | the work | why held |
 |---|---|---|
 | ~~**A8**~~ | ✔ ***DONE r2567 — `S1_seven_necessary_conditions_on_the_measure`.*** The list exists: **C1** domain excludes the conformal factor · **C2** the substrate scale is not summed over · **C3** reproduce the true Hamiltonian's evolution · **C4** the clock is not integrated over · **C5** compatible with self-adjointness · **C6** respect the per-fibre closure · **C7** do not spoil the algebra's closure. ⇒ ***Four are restrictions standard constructions lack; three are checks against existing work.*** | ***the one open-ended item in the programme.*** The deliverable is a **necessary-conditions list**, not a measure — and getting that list wrong sends both nodes somewhere useless |
-| **A6** | `PO-5` · candidate bridge **ANOMALY** | the only one of the four needing a calculation, and ***it should follow A3–A5*** — if one of those lands, the anomaly route may be moot |
+| ~~**A6**~~ | ✔ ***SHARPENED r2568 — `B1_the_index_argument_stops_where_a_mod_two_index_begins`.*** The anomaly bridge is **already used successfully** (per-wall anomaly conditions determine the hypercharge), and the corpus **already ran the index argument on $R$**, ruling it out because a compact CONNECTED group's circle action kills the equivariant index while $R$ is **discrete**. ⇒ ***The invariant that replaces it is a MOD-2 INDEX, and `mod 2`/`Witten anomaly`/`eta invariant` are all at ZERO.*** **New form: does $R$ carry a mod-2 index, and what does it obstruct?** | the only one of the four needing a calculation, and ***it should follow A3–A5*** — if one of those lands, the anomaly route may be moot |
 | **A14** | `L-218` ⓵ · pandoc in CI | ***publishing, no physics*** — an afternoon whenever |
 | **A15** | `L-218` ⓷ · the contribution | last by the row's own ordering |
 
