@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2589 — 2026-08-11 (main line). **STEP ⓷b RESHAPED — the section is physics wearing narrative framing, so the operation is DE-NARRATION IN PLACE.**
+
+**⌗ THE PLAN'S THIRD REVISION, EACH EARNED BY READING MORE.** *r2586 said **six claims**. r2587's draft **dropped
+eleven live results**. Reading all forty remaining paragraphs shows the section carries* ***twelve-plus live
+results***: *$\ell_A=301.4$ against $301.6$ with $D_M$ and $r_s$ each differing by six per cent and cancelling ·
+$\ell_1/\ell_A=0.570$ against the control's $0.743$ and the sky's $0.731$ · $P_1/P_2=0.87$ against $1.93$ ·
+**the driving measured by subtraction**, undriven calibration $0.9968$–$1.0003$ · **the two couplings localised**
+(continuity $1.23$–$1.28$, gradient $0.73$–$0.87$, composing to $0.77$–$0.86$) · the lensing potential on the
+construction's own $\Phi$ at $2.69$ arcminutes · the neutrino content moving the floor by a factor of three ·
+**the datum's phase assigned rather than derived, so the invariance is an invariance of the wrong thing**.*
+
+⇒⇒ ***THE SECTION IS NOT NARRATION WEARING PHYSICS. IT IS PHYSICS WEARING NARRATIVE FRAMING — and the framing is
+one or two clauses per paragraph, not the paragraph.***
+
+**⌗ DEMONSTRATED ON THE THREE WORST:**
+*· "This was reported here as a transfer argument contradicted by a direct computation, and **at r2376+c54.164 that
+reading is withdrawn**" → ***"The first peak's position is fixed by the initial data, not by the transfer."***
+*· "That missing propagation **is built at r2376+c54.168**" → ***"The propagation is carried with a live control and
+a guard that can fail."***
+*· "**We wrote at this point** … **the third thing in this section we now withdraw**" → ***"The acoustic statement is
+not one number and one mechanism, and the reason is the seam phase's freedom."***
+
+⇒ ***−252 characters, ALL 32 RECEIPTS STILL BOUND, two revision references drained from `check_revleak`'s
+baseline.*** *And the two thousand characters of physics after each framing did not move at all.*
+
+**⛭ THE RULE:** ***when a rewrite keeps losing content, the operation is probably too large. Ask what the SMALLEST
+edit is that fixes the defect — and if the defect is framing, the answer is a clause, not a section.***
+⚠ *The r2587 failure is now fully diagnosed: **it treated "rehome" as "rewrite"** because the first four passes were
+moves and the fifth looked like a bigger one. ⇒ ***A method that worked four times is a hypothesis about the fifth
+case, not a plan for it.***
+
+⌗ *Thirteen narrating paragraphs remain, each a one-or-two-clause treatment.*
+
 ### Revision r2588 — 2026-08-11 (main line). **STEP ⓷a — the eleven orphaned results have homes, and all 32 receipts survive.**
 
 **⌗ FOUR NEW SUBSECTIONS IN P15**, *each named for **what it establishes** rather than for when it was worked:*

@@ -1,7 +1,7 @@
 ---
 name: the-refit-bound-plan
 kind: PLAN
-current: r2588+c54.207
+current: r2589+c54.207
 description: THE sec:refit-bound PLAN — 46 paragraphs, 57 KB, 59% narration, chronologically interleaved. Why it cannot go paragraph-by-paragraph, what the present state actually is, and the order of operations that keeps it lossless. Written r2586.
 sources: [chat]
 ---
@@ -73,6 +73,42 @@ surviving claims listed beside them.** ***The paper is untouched. Every later st
 claim it binds**, because the rewritten section must keep each receipt attached to the claim it checks.*
 ⇒ *`check_receipts` and `check_loci` will catch a dropped binding — **but only if the claim survives**; a claim
 deleted with its receipt fails nothing.* ⚠ ***That is the failure mode this step exists to prevent.***
+
+## ⛭⛭⛭ STEP ⓷b RESHAPED r2589 — it is DE-NARRATION IN PLACE, not a rewrite
+
+**⌗ READING ALL FORTY CHANGED THE PLAN AGAIN, AND THIS IS THE THIRD REVISION IT HAS EARNED.**
+*r2586 said "six claims". r2587's draft dropped eleven live results. **Reading every remaining paragraph shows the
+section carries twelve-plus live results**, not six:*
+*· $\ell_A=301.4$ against $301.6$ with $D_M$ and $r_s$ differing by six per cent each and cancelling ·
+$\ell_1/\ell_A=0.570$ against the control's $0.743$ and the sky's $0.731$ · $P_1/P_2=0.87$ against $1.93$ ·
+**the driving measured by subtraction**, with the undriven calibration at $0.9968$–$1.0003$ · **the two couplings
+localised** — continuity $1.23$–$1.28$, gradient $0.73$–$0.87$, composing to $0.77$–$0.86$ · the lensing potential
+on the construction's own $\Phi$ giving $2.69$ arcminutes · the neutrino content moving the floor by a factor of
+three · **the datum's phase assigned rather than derived, so the invariance is an invariance of the wrong thing** ·
+and more.*
+
+⇒⇒ ***So the section is not mostly narration wearing physics. It is mostly PHYSICS WEARING NARRATIVE FRAMING —
+and the framing is one or two clauses per paragraph, not the paragraph.***
+
+**⌗ WHICH MAKES STEP ⓷b A SENTENCE-LEVEL EDIT AND NOT A REWRITE:**
+
+| was | is |
+|---|---|
+| *"This was reported here as a transfer argument contradicted by a direct computation, and **at r2376+c54.164 that reading is withdrawn**: the computation does not hold still."* | *"The first peak's position is fixed by the initial data, not by the transfer."* |
+| *"That missing propagation **is built at r2376+c54.168**, with the two things whose absence made every earlier figure unreadable…"* | *"The propagation is carried with a live control and a guard that can fail…"* |
+| *"**We wrote at this point** that the acoustic statement had reached its final form … and that is **the third thing in this section we now withdraw**"* | *"The acoustic statement is not one number and one mechanism, and the reason is the seam phase's freedom"* |
+
+⇒ ***Three framings replaced, −252 characters, **all 32 receipts still bound**, two revision references drained from
+the baseline. `check_compile` green.***
+
+⌗ ***And this is what Daryl described from the start: the content stays and the framing changes. The r2587 draft
+failed because it treated "rehome" as "rewrite" — the correct operation is far smaller and cannot lose anything,
+because no result is ever lifted out.***
+
+⚠ *Thirteen narrating paragraphs remain, each needing the same one-or-two-clause treatment. **Mechanical in shape,
+a reading in each instance.***
+
+---
 
 ## ✔✔ STEP ⓷a DONE r2588 — the orphans have homes, and all 32 receipts survive
 
