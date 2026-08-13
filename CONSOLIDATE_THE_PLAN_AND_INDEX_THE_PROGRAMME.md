@@ -1,7 +1,7 @@
 ---
 name: consolidate-the-plan-and-index-the-programme
 kind: STATE
-current: r2581+c54.207
+current: r2582+c54.207
 job: Consolidate the plan and index the programme — the arcs (§2), the sequence (§13), the standing actions (§14), and §16 THE DEVELOPMENT RECORD, which is where RG-1 moves a paper's past state.
 sources: [cowork]
 ---
@@ -11,6 +11,27 @@ sources: [cowork]
 *Opened r2581. **This is where the STORY goes.** A paper is a map of the present state; when its horizon moves back,
 the newly-known content is rehomed upstream into the physics and **the account of what was known when belongs
 here** — not in the paper, where it reads as a changelog.*
+
+### ⓶ `matter_sector_paper` (P14) · `sec:scope` · rehomed r2582
+
+**WHAT SAT IN THE SCOPE SECTION.** *"What the flavour skeleton fixes about the dimension" — a **derivation**, not a
+scope statement: in $D$-dimensional Schwarzschild–de~Sitter the mass is $2M=r_0^{D-3}-r_0^{D-1}$, and **two
+conditions the construction already imposes** then bear on $D$ — the **collapse** (the harmonics below the top
+number one at $D=4,5$ and two or more from $D=6$, while the construction has one scale to spend) and the **parity**
+(the mass function is odd in the signed offset exactly when $D$ is even).*
+
+⇒ ⛭ ***That is a THIRD independent argument that $D=4$ is picked out*** *— beside `L-240`'s (Lovelock leaves exactly
+one dynamical term, and Rule 2 rejects the second coefficient) and `L-533`'s (Rule 2 EMPTIES a second slicing step).*
+⇒⇒ ***And it was filed under "Scope, and consistency with the boundary."***
+
+**WHERE IT WENT.** *Rehomed to **`\section{Three walls: the count}`**, immediately after the boxed
+$\text{number of chiral generations}=3$ — because ***the constraint runs from the count to the dimension***, and it
+belongs with the count.*
+
+⌗ *Net **−72 characters**: the paragraph's own framing ("it is worth asking what the sector would deliver at other
+dimensions… it runs the other way") was **redundant once the paragraph sat where the constraint is stated**, and a
+two-line lead replaced it.* ⇒ ***That is the campaign's signal working as Daryl named it: content in the wrong place
+needs prose to explain why it is there.***
 
 ### ⓵ `slicing_operator` (P8) · `sec:open` · rehomed r2581
 

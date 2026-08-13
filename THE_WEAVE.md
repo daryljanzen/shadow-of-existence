@@ -1,9 +1,41 @@
 ---
 name: the-weave
 kind: STATE
-current: r2562+c54.206
+current: r2582+c54.207
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
+
+> ## ⛭⛭⛭ A SEVENTH MECHANISM r2582 — THE TENSE TEST, and it scoped a campaign from 114 to 13
+>
+> *Daryl named a structural principle: **a paper is a MAP OF THE PRESENT STATE and a frontier section is
+> a POINTER TO THE HORIZON**, so newly-known content is **rehomed UPSTREAM** and the **story of how it
+> moved goes to `CONSOLIDATE`**.*
+>
+> ⇒ ⛭ **AND THE MECHANISM THAT MADE IT TRACTABLE IS A TENSE TEST.** *Scope-delimitation is **timeless**
+> ("this paper covers X and not Y"). A resolved frontier is **temporal** ("has since", "no longer", "we
+> wrote", "opened at").*
+> ⇒⇒ ***A paper is a map of the PRESENT, so a tense referring to the paper's own past IS the defect's
+> signature — and nothing else needs judging.***
+>
+> **⌗ AND IT SUCCEEDED WHERE THREE PROSE CLASSIFIERS FAILED THIS SPAN** *(r2553, r2554, r2556, all built
+> and rejected on precision).* ⇒ ***Because it does not classify MEANING. It classifies TENSE, which is
+> a surface property — and the semantic fact it stands for is exact rather than approximate.***
+> *Scope: **114 paragraphs → 13**, five papers, **eight clean**.*
+>
+> **⚠ AND IT CORRECTED A MEASUREMENT FROM THE REVISION BEFORE.** *r2579 measured P7's frontier section as
+> 35% below-the-list and inferred misfiled physics; the tense test found **P7 clean** — that content is
+> **prose ABOUT the list**, which is story, and moves to `CONSOLIDATE` rather than upstream.*
+> ⇒ ***The size was right and the inference was wrong, and the discriminator is what separated them.***
+>
+> ## ⌗ AND PASS 1 SHOWED WHAT THE MECHANISM IS WORTH
+>
+> *`slicing_operator`'s single temporal paragraph contained* ***the general form of the paper's own
+> central identity*** *— $16\pi\rho={}^{3}R+K^{2}-K_{ij}K^{ij}-2\Lambda$, of which its proven
+> $\rho=m'/4\pi r^{2}$ is the spherical case — **filed under "what is open"**.*
+> ⇒ ***A tense test found a theorem's generalisation. That is not what a surface property should be able
+> to do, and the reason it can is that the defect ALWAYS carries the tense: content only ends up in a
+> frontier section by having once been frontier.***
+
 
 > ## ⛭⛭⛭ A SIXTH MECHANISM r2562 — BUILD THE LINT, MEASURE IT, AND USUALLY DON'T SHIP IT
 >

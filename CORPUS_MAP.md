@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2582 — 2026-08-11 (main line). **REHOMING PASS 2 — a third $D=4$ argument was filed under "scope". And the tense test is recorded as a seventh mechanism.**
+
+**⛭⛭ THE PARAGRAPH.** *P14's "What the flavour skeleton fixes about the dimension" is a **derivation**, not a scope
+statement: in $D$-dimensional Schwarzschild–de~Sitter the mass is $2M=r_0^{D-3}-r_0^{D-1}$, and two conditions the
+construction already imposes bear on $D$ — the **collapse** (harmonics below the top number one at $D=4,5$ and two
+or more from $D=6$, while the construction has one scale to spend) and the **parity** (the mass function is odd in
+the signed offset exactly when $D$ is even).*
+⇒ ⛭ ***A THIRD INDEPENDENT ARGUMENT THAT $D=4$ IS PICKED OUT*** *— beside `L-240`'s (Lovelock leaves exactly one
+dynamical term, and Rule 2 rejects the second coefficient) and `L-533`'s (Rule 2 EMPTIES a second slicing step) —*
+***and it was sitting in "Scope, and consistency with the boundary".***
+⇒ *Rehomed to `\section{Three walls: the count}`, immediately after the boxed
+$\text{number of chiral generations}=3$, **because the constraint runs from the count to the dimension**.*
+
+**⌗⌗ NET −72 CHARACTERS, AND THAT IS THE CAMPAIGN'S OWN SIGNAL.** *The paragraph's framing — "it is worth asking
+what the sector would deliver at other dimensions… it runs the other way" — was **redundant once it sat where the
+constraint is stated**.*
+⇒ ***Daryl named it after pass 1 and it has now confirmed twice: content in the wrong place needs prose to explain
+why it is there, and that prose is what disappears.*** *Pass 1: **1,265 wrong-place characters became 784 in the
+right place**.*
+
+**⛭ AND THE TENSE TEST IS RECORDED IN `THE_WEAVE` AS A SEVENTH MECHANISM.** ***It succeeded where three prose
+classifiers failed this span (r2553, r2554, r2556) because it does not classify MEANING — it classifies TENSE, a
+surface property, and the semantic fact it stands for is exact.***
+⌗ ***And pass 1 showed what that is worth: a tense test found a theorem's GENERALISATION. The reason a surface
+property can do that is that the defect always carries the tense — content only ends up in a frontier section by
+having once been frontier.***
+
+⌗ *Also cleared: `check_depmatrix`, which caught P8's rehoming in **both** places — the LaTeX table and its HTML
+companion — **the correction-reaches-one-grain failure the gate exists for**, firing correctly.*
+
 ### Revision r2581 — 2026-08-11 (main line). **REHOMING PASS 1 — `slicing_operator`, and the first paragraph rehomed contained the general form of the paper's own central identity.**
 
 **⌗ THE PARAGRAPH.** *"The emergence of the bend" — **3,061 characters** in `\section{Scope and open problems}`,

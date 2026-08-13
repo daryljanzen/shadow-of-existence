@@ -38,6 +38,22 @@ thing" — and a smaller, diminished section: "this is what we still don't know.
 
 ---
 
+## ✔✔ PASS 2 DONE — `matter_sector` (P14), r2582. **A third $D=4$ argument was filed under "scope".**
+
+*The paragraph — "What the flavour skeleton fixes about the dimension" — is a **derivation**: $2M=r_0^{D-3}-r_0^{D-1}$
+in $D$ dimensions, with the **collapse** and the **parity** conditions between them selecting $D=4$.*
+⇒ ⛭ ***A THIRD independent argument that $D=4$ is picked out*** *— beside `L-240`'s Lovelock/Rule 2 and `L-533`'s
+emptying — **sitting in "Scope, and consistency with the boundary".***
+⇒ *Rehomed to **`\section{Three walls: the count}`**, after the boxed $=3$, because **the constraint runs from the
+count to the dimension**.*
+
+⌗ **Net −72 characters.** *The paragraph's own framing — "it is worth asking what the sector would deliver at other
+dimensions… it runs the other way" — was **redundant once it sat where the constraint is stated**.*
+⇒ ***Daryl's signal, confirmed twice: content in the wrong place needs prose to explain why it is there, and that
+prose is what disappears.***
+
+---
+
 ## ✔✔ PASS 1 DONE — `slicing_operator` (P8), r2581. **The method works and here is what it looks like.**
 
 **⌗ THE PARAGRAPH:** *"The emergence of the bend" — 3,061 characters in `\section{Scope and open problems}`,
@@ -84,7 +100,7 @@ signature.*** *Nothing else needs judging.*
 | **`CR_cosmology`** | 51 | **8** | ⛔ |
 | **`cosmogenesis`** | 5 | **2** | ⛔ |
 | **`boundary_paper`** | 12 | **1** | ⛔ |
-| **`matter_sector`** | 10 | **1** | ⛔ |
+| ~~**`matter_sector`**~~ | 10 | ✔ **0** | ***DONE r2582*** |
 | ~~**`slicing_operator`**~~ | 5 | ✔ **0** | ***DONE r2581*** |
 | `CR_framework` (P7) · `SdS-slicing-curve` · `algebroid` · `dynamics` · `geometric_core` · `groupoid` · `janzen_circle` · `range_paper` | 41 | **0** | ✔ clean |
 
