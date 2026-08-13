@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r2619 — 2026-08-11 (main line). **`PO-6` NARROWS TO ONE THING — the FLOOR — and r2611's caveat named the wrong one.**
+
+**⛔ THE CAVEAT WAS WRONG BY ONE CLAUSE.** *r2611 closed with "the commutation is stated **at leading order**, and
+whether it survives the interaction is this vein's own question."*
+⇒ ***P10's very next clause: "the decomposition that follows uses **only that both sides of the threshold are
+occupied, and not that the spectrum has a floor**" — with its own receipt,
+`P10_the_straddle_does_not_need_a_floor`.***
+⌗ *And the commutation is **structural, not perturbative**: $\hat\Gamma$ acts on the tower, the radial part on $x$.*
+
+**⛭⛭ AND WHAT P10 LEAVES OPEN IS WORD-FOR-WORD WHAT THE ROW ASKS.** *"**whether the complete $\hat\Gamma$ is
+bounded below is part of what this paragraph leaves open at its end, and is not assumed here**".*
+⌗ ***The paper and the register agree on the object, and neither knew the other had isolated it this precisely.***
+
+**⇒⇒ AND THE LEADING-ORDER FORM IS A SUM OF SQUARES** — *"bounded below by $\gamma$ and unbounded above---the
+operator is a sum of squares"* — *manifestly non-negative.*
+⇒ ***So the question is not whether a term goes negative but whether the COMPLETED operator keeps a floor — which
+makes `PO-6`'s two remaining halves ONE HALF ASKED TWICE: the SUB-LEADING TOWER is what decides the floor.***
+
+**⛭ THE RULE:** ***when you write a caveat, check it against the sentence AFTER the one you quoted. Seven times this
+session the correction was one clause further on — and this time the caveat was this line's own, while the paper had
+already stated the limit more precisely.***
+
+⌗ *`L-165` narrowed **11×**. Table **27**, dark halves **2 of 4**.*
+
 ### Revision r2618 — 2026-08-11 (main line). **THE TABLE: 32 → 27, all duplicates — and `scripts/table.py`, one command for the whole picture.**
 
 **⌗ FIVE LEDGER ENTRIES WERE COUNTED AS SEPARATE WORK AND WERE NOT.**
