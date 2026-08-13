@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2593 — 2026-08-11 (main line). **THE OPEN LEDGER — a verdict per qualification, and the gate that keeps it current.**
+
+**⌗ THE FAILURE, NAMED EXACTLY.** *This line kept discovering that a thing which looked open was not — and **kept
+failing to record the verdict**, so the same reading had to be redone every time anyone asked what was left.*
+⇒ ⛔ ***Five separate times this session a "gap" dissolved on reading one sentence further, and five times the
+finding went into a changelog entry instead of a list.***
+⇒ ***A grep is not a list of what is owed. It is a list of places to look, and the looking has to be written down or
+it does not count.***
+
+**✔ `corpus/open_ledger.txt`** — *123 raw hits → **113 distinct sentences**, each with a verdict:*
+***UNVERDICTED 66*** *(the only bucket that means work) · **DO-NOT-ASSERT 18** (deliberate holdings) ·
+**SCOPE-BY-DESIGN 8** · **METHOD-PROSE 5** · **REGISTERED 5** · **STANDARD-PHYSICS 3** (someone else's open
+problem) · **OPEN-DOWNSTREAM 3** · **SELF-ANSWERED 2** (the class that misled this line five times) ·
+**NAMED-UNBUILT 2** (genuinely owed) · **PRECISION 1**.*
+
+**✔ `corpus/check_open_ledger.py`, wired and seeded** — *checks that **every ledger entry still exists in a
+paper**, that **every qualification in the papers is in the ledger** (a new one nobody verdicted fails the turn),
+and `--rebuild` re-derives **preserving existing verdicts**.*
+⇒ ***So verdicting is the only direction the file moves, and the corpus tells the ledger when something changed
+rather than the other way round.***
+⚠ ***It cannot check that a verdict is CORRECT — that is a reading, and no gate can do it. What it guarantees is
+that every qualification HAS one and that none appears without being seen*** *— precisely the guarantee that was
+missing.*
+
+⌗ *So "what IS residual" is now a **file** rather than a re-derivation, and the honest remaining work is **the 66
+unverdicted** — not the 123, and not the 84.*
+
 ### Revision r2592 — 2026-08-11 (main line). **`THE_RESIDUAL` — the remaining doubt measured from the PAPERS, and three open questions turn out to be one.**
 
 **⌗ THE REGISTERS HOLD WHAT SOMEONE ROUTED; THE PAPERS HOLD WHAT THE PHYSICS OWES.** *`THE_STATE` counted

@@ -1,7 +1,7 @@
 ---
 name: the-residual
 kind: PLAN
-current: r2592+c54.207
+current: r2593+c54.207
 description: THE RESIDUAL — the true state of remaining doubt across the corpus, measured from the papers' own epistemic self-declarations rather than from the registers. Eighty-four qualifications, sorted by whether a proof is discoverable. Written r2592.
 sources: [chat]
 ---
@@ -31,7 +31,43 @@ sources: [chat]
 
 ---
 
-# I · WHAT IS NOT CR's DOUBT AT ALL
+# 0 · ⛭⛭⛭ THE LEDGER — r2593, and this is what was missing
+
+**⌗ THE FAILURE DARYL NAMED, EXACTLY.** *This line kept discovering that a thing which looked open was not — and
+kept **failing to record the verdict**, so the same reading had to be redone every time anyone asked what was left.*
+⇒ ***A grep is not a list of what is owed. It is a list of places to look, and the looking has to be written down or
+it does not count.***
+
+**✔ `corpus/open_ledger.txt`** — *one line per **distinct** qualification in the paper bodies, with a **verdict**.
+**123 raw hits deduplicate to 113 sentences.***
+
+| verdict | n | meaning |
+|---|---|---|
+| **UNVERDICTED** | ***66*** | ***not yet read — the ONLY bucket that means work*** |
+| **DO-NOT-ASSERT** | 18 | a deliberate marked holding; **nothing owed** |
+| **SCOPE-BY-DESIGN** | 8 | the paper declining a claim outside its scope; **nothing owed** |
+| **METHOD-PROSE** | 5 | prose about how the corpus marks maturity; **not a claim** |
+| **REGISTERED** | 5 | a real gap already carried by a `PROTECTED_OPEN` item |
+| **STANDARD-PHYSICS** | 3 | someone **else's** open problem; **not CR's debt** |
+| **OPEN-DOWNSTREAM** | 3 | open, and downstream of something else open |
+| **SELF-ANSWERED** | 2 | ***the next sentence closes it — the class that misled this line five times*** |
+| **NAMED-UNBUILT** | 2 | ***a real construction, named and not built — genuinely owed*** |
+| **PRECISION** | 1 | the computation exists; its last-percent accuracy does not |
+
+**✔ AND `corpus/check_open_ledger.py`, wired and seeded, checks three things:**
+*⓵ every ledger entry still exists in a paper — **an entry whose sentence is gone means the corpus moved and the
+ledger did not**; ⓶ **every qualification in the papers is in the ledger** — a new one nobody verdicted **fails the
+turn**; ⓷ `--rebuild` re-derives while **preserving existing verdicts**, so verdicting is the only direction the
+file moves.*
+⚠ ***It does not check that a verdict is CORRECT — that is a reading, and no gate can do it. What it guarantees is
+that every qualification HAS one and that none appears without being seen.***
+
+⇒⇒ ***So the answer to "what IS residual" is now a file rather than a re-derivation, and the 66 UNVERDICTED are the
+honest remaining work — not the 123, and not the 84.***
+
+---
+
+# I · WHAT IS NOT CR# I · WHAT IS NOT CR's DOUBT AT ALL
 
 **⌗ MOST OF THE 36 "CONJECTURE" HITS ARE THE CORPUS DESCRIBING *STANDARD PHYSICS'* CONJECTURES**, *not its
 own: **cosmic censorship** ("Penrose's conjecture … pursued through partial theorems and
