@@ -146,6 +146,42 @@ sources: [cowork, chat]
 
 
 
+### Revision r2579 — 2026-08-11 (main line). **RESOLVED CONTENT SITS INSIDE THE FRONTIER SECTIONS — 191 KB of them, and P7's is 35% below-the-list. And the BOUNDED/UNBOUNDED split.**
+
+**⌗ THE QUESTION.** *"If items are crossed off P7's frontiers list, don't they get properly shifted to the synthesis
+and physics sections — as if they were written when the final product had already been sorted?"* ⇒ **Tested.**
+
+**⛭⛭ P7 SAYS THREE ITEMS WERE "MOVED BELOW THE LIST" AND "RECORDED THERE".** ⇒ ⛭ ***But
+`\section{Frontiers and open problems}` is P7's LAST section — so "below the list" means below the enumerate
+INSIDE it.***
+*Measured: the frontier section is **32,368 chars, 11% of P7's body**, and **11,359 of those — 35% — sit below the
+list**.* ⇒ ***Roughly eleven thousand characters of settled physics filed under a heading that says it is not
+done.***
+⌗ *And **`causal reassignment` appears 21 times in P7**, so the content IS present elsewhere.* ⇒⇒ ***The defect is
+PLACEMENT, not absence — and that is worse in one specific way: the same result appears both as worked physics and
+as a resolved frontier, so a reader meeting it first in the frontier section reads settled work as an open edge.***
+
+**⌗ CORPUS-WIDE: 191,530 CHARACTERS of frontier/open sections across thirteen papers** *— `boundary_paper` **33% of
+its body**, `CR_cosmology` **29%**, `matter_sector` **17%**.*
+⚠ *How much of that is RESOLVED is **not** established: the resolved-language proxy finds **20 markers**, far too
+few to count with, **and is reported as a proxy rather than a number**.*
+⇒ ***So the deliverable is an AUDIT: for each of the thirteen sections, which paragraphs state an OPEN edge and
+which a RESOLVED one. Bounded work with a known end, and nobody has done it.***
+
+**⛭ THE RULE, AND P7 WROTE IT FIRST:** *"a frontier list whose entries quietly empty is worse than none: a reader
+uses it to choose what to work."* ⇒ ***The corollary nobody drew is that an entry which empties INTO ITS OWN SECTION
+is exactly that failure, wearing the paper's own honesty as cover.***
+
+**⌗⌗ AND THE SPLIT, added to `THE_STATE`:**
+*· **BOUNDED — nine**: 3 authorisations · 2 paragraphs · 1 editorial · 2 runs (`PO-10`) · **1 audit** (the
+frontier-placement sweep);*
+*· **UNBOUNDED — six**: `PO-2`, `PO-3`, `PO-4`, `PO-5`, `PO-6`, `PO-seam` — ***each MAPPED, which is the most that
+can be true of them***;*
+*· **AFTER — the production phase**: the book structure, pandoc, the webpage.*
+⌗ ***And `L-218` A14 splits across the line: steps 1–2 are BOUNDED (decisions about what the corpus IS), step 3 is
+AFTER (production).***
+⇒ ***The audit is the one that LANDS the final revision.***
+
 ### Revision r2578 — 2026-08-11 (main line). **THE COUNT WAS WRONG BY TWO — a frontier item in no register, found by testing the completeness claim against the papers.**
 
 **⛔ THE QUESTION THAT FOUND IT.** *`THE_STATE` said **twelve** and implied that was everything. Asked whether it

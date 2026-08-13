@@ -18,15 +18,13 @@ sources: [chat]
 
 | namespace | file | codes | unfolded | state | what only it has |
 |---|---|---|---|---|---|
-| **PROTECTED_OPEN** | `PROTECTED_OPEN.md` | 13 | 1 | UNFOLDED | *the closure bar — a node may not close these* |
+| **PROTECTED_OPEN** | `PROTECTED_OPEN.md` | 13 | 0 | ✔ FOLDED | *the closure bar — a node may not close these* |
 | **OPEN_PROBLEMS_LEDGER families** | `THE_OPEN_PROBLEMS_LEDGER.md` | 8 | 0 | ✔ FOLDED | *the families and their worked content — a VIEW of the register since c54.121* |
 | **P7 sec:frontiers** | `corpus/CR_framework.tex` | 4 | 0 | ✔ FOLDED | *the framework paper's own frontier list* |
 | **p0 sec:frontiers** | `corpus/geometric_core_paper.tex` | 3 | 0 | ✔ FOLDED | *the geometric core's frontier list* |
 | **CONSOLIDATE arcs** | `CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md` | 17 | 0 | ✔ FOLDED | *the arcs — FOLDED r2378 as kind:WORK rows; §2 keeps their steps* |
 | **CONSOLIDATE phases** | `CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md` | 9 | 0 | ✔ FOLDED | *the sequence — FOLDED r2378 as kind:WORK rows; §13 keeps their content* |
 | **OPEN_PROBLEMS_MAP codes** | `OPEN_PROBLEMS_MAP.md` | 0 | 0 | no codes | *FOLDED c54.90 — the worked example* |
-
-**PROTECTED_OPEN — unfolded codes:** `PO-10`
 
 > **⌗ THE ORDER WITHIN THE FOLD (`ARC 14` step ②): the PAPERS' frontier sections go LAST.** *A paper's `sec:frontiers` is published prose, not a register; it gets an alias comment, never a rewrite into register voice.*
 

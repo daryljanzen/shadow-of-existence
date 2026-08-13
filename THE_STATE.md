@@ -1,7 +1,7 @@
 ---
 name: the-state
 kind: PLAN
-current: r2578+c54.207
+current: r2579+c54.207
 description: THE STATE — everything unfinished across the corpus, counted honestly, with what each is and what act would move it. No ownership language; the axis is the KIND OF ACT. Written r2577.
 sources: [chat]
 ---
@@ -42,6 +42,35 @@ flat $\Lambda$CDM, and the odd/even height pattern.***
 papers); R-M's five stations are walked and its HOLES list was corrected at r2558.*
 ⚠ ***So the rule this file already carried — "check the count before acting on it" — was right, and the count was
 wrong by two.***
+
+---
+
+# 0 · THE SPLIT — **bounded, unbounded, and after** *(added r2579)*
+
+**⌗ BOUNDED — a thing with a known end, and you can tell when it is done.** *Nine.*
+*· **3 AUTHORISATIONS** (`PO-7`, `PO-8`, `PO-9`) — the act is written into the procedure;*
+*· **2 PARAGRAPHS** (item 26's citation loop; `L-218` A14 steps 1–2);*
+*· **1 EDITORIAL** (A15, drawn from `CREDO`);*
+*· **2 RUNS** (`PO-10`'s full-spectrum likelihood comparison and odd/even height pattern — P7 calls the first "**a
+parameter refit rather than a further calculation**");*
+*· **1 AUDIT** ⛭ **NEW r2579** — ***the frontier-placement audit***: **191,530 characters of frontier/open sections
+across thirteen papers**, and P7's is **35% "moved below the list"** — settled physics filed under a heading that
+says it is not done. **For each of the thirteen: which paragraphs state an OPEN edge and which a RESOLVED one.***
+
+**⛔ UNBOUNDED — finishes when the physics does, and no schedule applies.** *Six.*
+*`PO-2` · `PO-3` · `PO-4` · `PO-5` · `PO-6` · `PO-seam`. **Each is MAPPED — it names what would move it — and that
+is the most that can be true of them.***
+
+**⌗ AFTER — does not begin until the above is done.** *The book structure, the reader package's step 3 (pandoc), the
+webpage.* ⇒ ***`L-218` A14 steps 1–2 are BOUNDED and above; step 3 is AFTER, and the distinction is that steps 1–2
+are decisions about what the corpus IS and step 3 is production.***
+
+⇒⇒ ***NINE BOUNDED · SIX UNBOUNDED · AND THE PRODUCTION PHASE AFTER BOTH.***
+
+⚠ **AND THE AUDIT IS THE ONE THAT LANDS THE FINAL REVISION.** *P7 says why, in its own voice: **"a frontier list
+whose entries quietly empty is worse than none: a reader uses it to choose what to work."*** ⇒ ***A paper that
+resolves an item and leaves the resolution in the frontier section has written a changelog, not a result. The reader
+of the finished thing should meet the physics in the physics.***
 
 ---
 
