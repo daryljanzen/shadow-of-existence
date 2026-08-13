@@ -97,7 +97,7 @@ def main():
         if d < 0:
             continue
         veins.append(m.group(1))
-        if 'ANSWERED' in re.sub(r'\s+', ' ', seg[d:d + 900]):
+        if re.search(r'\u2714 \*\*ANSWERED', re.sub(r'\s+', ' ', seg[d:d + 4000])):
             answered.append(m.group(1))
     print(f'  ⛭ DARK HALVES ANSWERED: {len(answered)} of {len(veins)}   '
           f'{"  ".join(sorted(answered)) if answered else "(none)"}')

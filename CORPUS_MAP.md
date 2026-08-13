@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2615 — 2026-08-11 (main line). **`scripts/queue.py` — the work on the table, enumerated: 32 items. And the progress metric was inflating itself.**
+
+**⛔ THE LIST EXISTED ONLY IN THIS LINE'S HEAD.** *Every turn assembled it fresh by reading five documents —
+`BOARD`'s dark halves, `PROTECTED_OPEN`, the open ledger's work buckets, the routed queue, the dispatch — and
+reported the RESULT while never printing the queue it came from.*
+
+**✔ ONE NUMBERED LIST, 32 ITEMS, NOTHING INVENTED:**
+*· **DARK HALVES 4** (2 open) — `L-165` defining the sum, `L-221` the coupling;*
+*· **PROTECTED OPEN 11**, three with kill receipts;*
+*· **LEDGER WORK 16** — NAMED-UNBUILT 6, STATED-AT-WEIGHT 5, OPEN-DOWNSTREAM 3, PRECISION 1,
+DISCOVERABLE-PROOF 1;*
+*· **ROUTED 2** · **DISPATCH 2** (A14, A15).*
+⌗ ***And the total is the report: a turn takes one off, adds one, or leaves it — all three informative, because
+finding a new item IS work and hiding that it was found is not.***
+
+**⛔⛭ AND BUILDING IT CAUGHT THE PROGRESS METRIC LYING.** *The dark-half test was `'ANSWERED' in window` — a
+**substring** test — and `L-165` and `L-202` matched on the word appearing anywhere in their text, including in prose
+about other veins.*
+⇒ ***It reported 3 of 4 answered when the truth is 2. A metric that inflates itself on a substring is worse than
+none, and it inflated in the flattering direction.*** *Now requires the literal marker `✔ **ANSWERED`, and `status`
+and `queue` agree.*
+
+**⛭ THE RULE:** ***when you find yourself assembling the same list from the same sources every turn, that list is a
+FILE you have not written. Write it, print it, and let its total be the report — the work you choose is only legible
+against the work you did not.***
+
 ### Revision r2614 — 2026-08-11 (main line). **NARROWING IS NOW REPORTED — and adding it exposed two stale veins and a truncating window.**
 
 **⌗ THE DEFECT IN r2613's METRIC.** *`DARK HALVES ANSWERED` is **binary**, and most turns do not flip it.*
