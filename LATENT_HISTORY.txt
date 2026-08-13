@@ -77,3 +77,4 @@ r2643  LATENT      the criterion was already put and returned SILENT -- P12 says
 r2644  --         PO-9s two-branch question had its answer already; the row said OPEN
 r2645  LATENT      PO-3 held its own complete answer for hundreds of revisions and still read OPEN
 r2646  LATENT      PO-12 gates BOTH of PO-10s runs -- both halves are statements about C_l
+r2647  COMPUTED    the corpus cancellation is between two RATES; odd/even needs one between two MULTIPOLES

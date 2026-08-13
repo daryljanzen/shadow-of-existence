@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2647 — 2026-08-11 (main line). **THE CANCELLATION DOES NOT REACH THE ODD/EVEN RATIO — r2646's gate survives its own test.**
+
+**⌗ THE ESCAPE THAT WOULD HAVE OVERTURNED IT.** *`CR_cosmology`: "**in the ratio the Thomson physics and the
+ionisation history cancel identically and the whole difference is carried by $H(a)$**". If a ratio can be
+transfer-free, `PO-10`'s pattern is a ratio and the gate would not hold.*
+
+**⛭⛭ AND THE TWO RATIOS DIFFER IN WHAT IS HELD FIXED.**
+*· the corpus's compares **the SAME quantity on TWO RATES** — the microphysics is identical on both sides and
+cancels **identically**;*
+*· an odd/even ratio compares **DIFFERENT MULTIPOLES on ONE rate** — the envelope is not the same at $\ell_n$ and
+$\ell_{n+1}$, so nothing cancels.*
+
+**⌗ AND THE RESIDUE IS LARGE.** *Writing $C_\ell=A(\ell)O(\ell)$, the adjacent-peak ratio carries
+$A(\ell_n)/A(\ell_{n+1})$ — at $\{220,540,810,1120\}$ that is **1.13, 1.20, 1.36** on a damping envelope:
+**13% at the first pair, rising to 36% by the third**.*
+⇒ ***And the growth is the damping tail biting, which is precisely the regime the pattern lives in.***
+
+**⛭ THE RULE:** ***when a corpus establishes that "the ratio cancels", find out WHICH ratio. A cancellation is a
+statement about what two things share, and two quantities can both be ratios while sharing nothing — the word
+carries none of the structure that does the work.***
+
+⌗ ***And the test names what DOES work: a quantity comparing the same multipole on the two rates inherits the
+cancellation — the shape of the results already computed ($10.8\%$ longer diffusion length; $r_s=146.4$ against
+$145.4$~Mpc). The transfer-free route is real and it produces RATE-RATIOS, not SHAPE.***
+
 ### Revision r2646 — 2026-08-11 (main line). **`PO-12` GATES BOTH of `PO-10`'s runs — and the obvious route would have answered one item by assuming the other.**
 
 **⛔ THE TRAP.** *`PO-10` owes the odd/even height pattern and $R_b=0.60$ is computed, so the textbook ratios follow
