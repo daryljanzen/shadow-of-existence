@@ -63,3 +63,4 @@ r2630  LATENT      three three-fold structures, two identification questions, tw
 r2631  COMPUTED    the Nariai cubic: root triple = f=0 locus; causal triple = three VALUES of f
 r2632  LATENT      PO-2s identification stated in P14 -- roots to hinges to walls to modes, same S_3
 r2633  LATENT      PO-2s reason: every root returns the same 2M, identical in content; hinge S_3 is a within-state index
+r2634  INSTRUMENT  check_withdrawals: 8 self-corrections found; registers audited clean against all of them

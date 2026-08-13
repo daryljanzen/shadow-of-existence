@@ -146,6 +146,28 @@ sources: [cowork, chat]
 
 
 
+### Revision r2634 — 2026-08-11 (main line). **`check_withdrawals` — the corpus has self-corrected eight times, and nothing was comparing the registers against them.**
+
+**⌗ r2633's RULE, RUN PROPERLY.** *"Grep the withdrawal, not just the claim." Across all seventeen papers:*
+***eight self-corrections*** *— the generation-wall identification (**twice**, in two sections), the species
+reading, the $\rho_r/\rho_m$ bound "withdrawn here, **together with four successors of it**", the $0.5703$
+stability weight, and the first-three-gap figure.*
+
+**✔ AUDITED: THE REGISTERS ARE CLEAN AGAINST ALL EIGHT.** *The only hit is `PO-2` quoting the withdrawal itself,
+which is the opposite of stale.*
+
+**⌗ AND THE GATE'S DESIGN IS THE INTERESTING PART.** *It **cannot** detect a stale row automatically — ***knowing a
+claim was withdrawn does not tell you which rows depended on it***, and a regex over the withdrawn phrasing catches
+the row that QUOTES the withdrawal as readily as the row that still believes it.*
+⇒ ***So it fails when the COUNT changes, which is exactly the moment a node must re-read its rows. Same design as
+`check_open_ledger`: where a gate cannot check a judgement, it guarantees the judgement is not skipped.***
+
+**⛭ THE RULE:** ***a stale register row is invisible to every check on the current text — the corpus is right, the
+row is right against the OLD corpus, and nothing compares them. The comparison has to be triggered by the corpus
+CHANGING ITS MIND, which is a countable event.***
+
+⌗ *Built, seeded, wired. Baseline **8**.*
+
 ### Revision r2633 — 2026-08-11 (main line). **`PO-2`'s REASON is the next sentence again — and the paper's own withdrawal is in no register.**
 
 **⌗ APPLYING r2632's RULE IMMEDIATELY.** *"Re-ask every neighbouring open question against the section you were just
