@@ -277,6 +277,40 @@ def _closure_neighbour_report():
     return 0
 
 
+# ** ---- ADDED r2552: THE DUPLICATE-KEY CHECK ---- **
+# ** A duplicate key in a Python dict literal is SILENT: the later entry wins and the earlier one is
+# discarded at load. **  regen_board.py's LEADS dict carried TWO `L-171` entries, so an r2552 edit to
+# the first was thrown away every time the module was imported -- and the board-drift check (r2541)
+# caught the SYMPTOM ("the board text stops at no revision") while the CAUSE was invisible to it.
+#   ⇒ *** A generated file's source is code, and a dict literal with a repeated key is a source that
+#       silently ignores an edit.  This reads the file as TEXT, because the parsed dict cannot show
+#       what it discarded. ***
+def check_duplicate_lead_keys():
+    """Report LEADS/VEINS keys that appear more than once in the generator's source text."""
+    import collections as _c
+    import os as _os
+    import re as _re
+    _root = _os.path.abspath(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..'))
+    _gen = _os.path.join(_root, 'scripts', 'regen_board.py')
+    if not _os.path.exists(_gen):
+        return []
+    src = open(_gen, encoding='utf-8', errors='replace').read()
+    keys = _re.findall(r"^\s*'(L-\d+)':\s*\(", src, _re.M)
+    return sorted(k for k, n in _c.Counter(keys).items() if n > 1)
+
+
+def _duplicate_key_gate():
+    bad = check_duplicate_lead_keys()
+    if not bad:
+        print('    OK    no duplicate lead key in the board generator')
+        return 0
+    for k in bad:
+        print(f'    [FAIL] {k} appears more than once in regen_board.py')
+    print('    ⛔ A DUPLICATE KEY IN A DICT LITERAL IS SILENT: the later entry wins and any edit to')
+    print('       the earlier one is discarded at load, with no error anywhere.')
+    return 1
+
+
 def main():
     consol = '\n'.join(read(os.path.join(ROOT, h)) for h in HOMES)
     arctext = read(ARC)
@@ -363,7 +397,8 @@ def main():
         print('  Every WORK row\'s state block is dated and within the window.')
     print()
     # ** the self-declared-done check, added r2535 -- see _selfdone_gate below. **
-    return _selfdone_gate() or _board_drift_gate() or _closure_neighbour_report()
+    return (_duplicate_key_gate() or _selfdone_gate() or _board_drift_gate()
+            or _closure_neighbour_report())
 
 
 if __name__ == '__main__':

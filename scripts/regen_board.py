@@ -71,20 +71,16 @@ LEADS = {
    "**inherits** a standard adiabatic spectrum rather than seeding isocurvature — so the objection is "
    "**disarmed, not fatal**. The paragraph is 54's to place; `F1` untouched",
    ['L-202'], 3, 2),
- 'L-171': ("**PO-7 \u2014 THE ONE VERDICT ON THE BOARD, and it is now sharply posed.** \u26ed r2519: the "
+ 'L-171': ("**PO-7** \u2014 \u26ed **NARROWED r2552 by `kills/PO-7.md`**: the four checks are written and "
+   "**\u2463 CHAIN does not clear** \u2014 the 0.408 rests on four things reproduced twice on two "
+   "instrument paths, and on **P15's freezing argument**, which is an ARGUMENT and reproduced nowhere. "
+   "\u21d2 **The object is now: DOES EVERY MODE OF INTEREST FREEZE BEFORE THE CROSSING?** \u26ed r2519: the "
    "admissible pair $\\phi\\in\\{0,\\pi\\}$ is **FORCED** by P15's own transmission argument (every mode "
    "**freezes** before the crossing; a frozen mode has zero velocity), not merely distinguished. Band "
    "**0.2069** against a gap of **0.6152**, and **the control is OUTSIDE it** \u2014 still **0.408** away at "
    "the nearer reading, with both nodes agreeing to four decimals. \u21d2 ***Is 0.408, at the only two "
    "readings the construction permits, a real disagreement with the sky?***",
    ['L-202'], 2, 3),
- 'L-240': ("\u26ed **a LEAD from OUTSIDE literature, the first**: P12 cites `Teitelboim1973` for the Dirac "
-   "brackets' FORM and never for the uniqueness theorem they carry (**zero \u201cLovelock\u201d across 35 .tex "
-   "files**). ** HKT: Einsteinian geometrodynamics is the ONLY canonical representation of those deformations; "
-   "Teitelboim\u2013Zanelli: LOVELOCK gravity closes the SAME algebra, and for $n>4$ there are Lovelock gravities "
-   "other than GR. ** \u21d2 **the Dirac algebra forces GR only in FOUR dimensions**, so **the four-ness of the "
-   "CUT is what makes the dynamics forced** \u2014 which is not what `PO-9`'s guard says. \u26ed **WORKED r2518**: $D=4$ is the **largest dimension in which Lovelock leaves exactly ONE dynamical term**, so the leaf\u2019s dynamics carries **no unfixed coefficient**. \u21d2 **The decision it turns on: is uniqueness of the leaf\u2019s dynamics a desideratum this programme holds?** CR takes GR as given either way",
-   ['L-175'], 2, 3),
  'L-207': ("\u24f6 the confined/branch-point exhibition \u2014 **gated on PO-6 and must not be opened without "
    "it** (\u24f5 discharged r2450)",
    ['L-165'], 1, 3),
@@ -108,13 +104,6 @@ LEADS = {
  # ** RUN (the production-depth seam-phase scan, `L-508`) and named a quantity that scan then bounded.
  # ** It sat high on a board an unattended node works top-down, so a stale premise sends the next node
  # ** to finished work.  Disclosed in FOR_56; reverse freely.
- 'L-171': ("**PO-7** \u2014 whether the acoustic disagreement is real against the sky. \u26ed *Sharpened "
-   "at c54.200 (`L-513`): over the phases `sec:what-crosses` ADMITS, the acoustic phase moves **0.207 "
-   "against a 0.615 gap \u2014 a third \u2014 with the control OUTSIDE it**, so the disagreement is real "
-   "and bounded rather than a free choice.* \u21d2 **What is open is the confrontation itself: both "
-   "admissible readings sit 76x and 102x the control, so something other than the seam phase carries the "
-   "bulk of it \u2014 and the SPACING, robust to 1.9%, is what does not move**",
-   ['L-202'], 2, 3),
  'L-518': ("**Unruh worked (item 47)**: completion predicts all four horizons and observer-dependence "
    "predicts two wrongly, so Rindler is the case that FIXES the criterion rather than a gap in it. And two "
    "things beyond consistency \u2014 $T(a)$ carries no free parameter because $\\alpha$ is the sole "

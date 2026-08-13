@@ -111,14 +111,13 @@ is**.*
 | **`L-218`** | r2478 | ✔ **② done r2478 — `COMPANION_SPEC.md`** · ① formats via pandoc in CI · ③ contribution, last |
 | **`L-217`** | r2482 | ✔ **the statement exists — `CR_AND_THE_HIGGS.md` §4** · what the row still owes is **§5's onward list**, and `F1` stays live: ***the relation breaks i |
 | **`L-514`** | r2512 | **NOT done here — this is a lead, and what it needs is a check that a WITHDRAWAL paragraph does not contradict text already in the same section**; I h |
-| **`L-240`** | r2518 | **the interior is charted r2518**; what remains is the DECISION it turns on: ***is uniqueness of the leaf's dynamics a desideratum this programme hold |
-| **`L-171`** | r2519 | **`PO-7` is the one verdict on the board, and it is now sharply posed**: ***is 0.408 in $\phi/\pi$, at the only two readings the construction PERMITS, |
 | **`L-221`** | r2526 | **the question is INVERTED r2526**: not "is there an $R$-odd operator?" but ***what BRIDGE from grading to field exists that is not "be a kernel"?***  |
 | **`L-803`** | r2545 | **the paragraph is still owed and its SHAPE is settled r2545** — route to 54: ***name $N_{\rm eff}$, state that CR fixes the $\nu_R$'s place and not i |
 | **`L-804`** | r2548 | ***the paragraph is 54's to place:*** *premise meets objection — state that the adiabatic premise is what the CMB forces ($\Delta\chi^2\sim3\times10^5 |
 | **`L-230`** | r2551 | **the number is re-measured r2551 and the diagnosis inverted**: not flat but **falling** (10.1%), and the cause is this line · ***the decision: requir |
+| **`L-171`** | r2552 | **NARROWED r2552 by `kills/PO-7.md`**: the object is now ***does every mode of interest freeze before the crossing?*** — P15 `sec:what-crosses`, the o |
 
-*14 live rows carry a stated next step; the 14 longest-unworked are shown.*
+*13 live rows carry a stated next step; the 13 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session

@@ -146,6 +146,43 @@ sources: [cowork, chat]
 
 
 
+### Revision r2552 — 2026-08-11 (main line). **BOTH "DARYL'S DECISIONS" WERE THE CORPUS'S — `L-240` CLOSED, `PO-7` NARROWED BY A KILL RECEIPT THAT WAS OWED FOR FIFTY REVISIONS.**
+
+**⛔ THE CORRECTION FIRST.** *Four times this line handed up a question the material answers, and the fourth time
+dressed it as a work order.*
+
+**⌗ `L-240`.** *r2518 posed it correctly: the forcing is a property either way; it becomes a REASON only if
+uniqueness of the leaf's dynamics is a desideratum the programme holds.*
+⇒ ***p0 and P15 say it three times: "least-arbitrariness being **the programme's own criterion of necessity** (Rule
+2 …) — a symmetry-breaking modulus is **the adjustable parameter that criterion rejects**", and "the distinction
+between a world that **REQUIRES** a phenomenon and one that merely **PERMITS** it through adjustable parameters".***
+⇒⇒ ***So $D=4$'s forcing IS a reason: a second Lovelock coefficient is an adjustable parameter with no principle
+fixing it, Rule 2 rejects exactly that, and at $D=4$ there is no second coefficient to reject.*** *Scope unchanged:
+**CUT→DYNAMICS, never CUT→SUBSTRATE**, and CR still does not derive the field equations.*
+
+**⌗ `PO-7` — THE SAME FAILURE IN THE OTHER DIRECTION.** *Its exit procedure says route ② is **"its object is named,
+all four checks are written into a kill receipt under `kills/`"**, and **"narrowing is always a NODE'S to do and is
+what this register wants."***
+⇒ ***The four checks were this line's to write. It asked for a conversion instead — the one thing the procedure does
+not ask for.*** *`kills/PO-7.md` now exists.*
+
+**⛭⛭ AND WRITING IT PRODUCED THE FINDING.** *① SAME-OBJECT passes (and is no formality — **all four withdrawn
+quantities failed exactly it**); ⑤ passes; ③ finds the prices **asymmetric**.*
+⇒ ⛔ ***④ CHAIN DOES NOT CLEAR: the 0.408 rests on four things reproduced twice on two instrument paths — and on
+P15's freezing argument, which is an ARGUMENT and is reproduced nowhere.***
+⇒⇒ ***So the row narrows: `PO-7` was "is the acoustic disagreement real against the sky?" and is now "DOES EVERY
+MODE OF INTEREST FREEZE BEFORE THE CROSSING?" — one argument, one section, one stated mechanism.*** *No
+authorisation requested; `F5` unsoftened.*
+
+⌗ ⛭ **AND A SILENT BUG SURFACED IN THE FIX.** *`regen_board.py`'s `LEADS` carried **two `L-171` keys** — and a
+duplicate key in a Python dict literal is **silent**: the later wins and the earlier edit is discarded at load.*
+⇒ ***r2541's board-drift check caught the SYMPTOM ("the board text stops at no revision") while the CAUSE was
+invisible to it, because the parsed dict cannot show what it discarded.*** *`check_arcs` now reads the generator as
+**text** and fails on duplicate keys; seeded both ways.*
+
+⌗ ***THE RULE: r2530's check applies to questions this line RAISES, not only to ones it inherits — and when the
+answer is a procedure, READ THE PROCEDURE: it usually assigns the work to whoever is asking.***
+
 ### Revision r2551 — 2026-08-11 (main line). **THE `COMPUTES:` UPTAKE IS FALLING, NOT FLAT — and the node reading the row was the cause.**
 
 **⛔ THE RECOUNT.** *`L-230` has said for a hundred revisions that the uptake is **"flat at 40 of 357"**. Measured:*
