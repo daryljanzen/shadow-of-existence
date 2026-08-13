@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r2590 — 2026-08-11 (main line). **STEP ⓷b DONE — `sec:refit-bound` is at ZERO paper-past paragraphs, and not one result moved.**
+
+***57,451 → 48,578 characters · 16 → 0 narrating paragraphs · 32 of 32 receipts bound · `check_revleak`'s baseline
+drained by two.***
+
+**⌗ AND THE LAST DISCRIMINATION IS THE ONE WORTH KEEPING.** *Seven paragraphs remained after the eight-clause pass,
+and **four should stay**: "the measurement does not support it at its own error bar, **and we withdraw it**"; "**we
+withdraw the weight** the paragraph above put on its stability"; "**We withdraw it in those terms**"; and one
+ordinary internal cross-reference.*
+⇒⇒ ***WITHDRAWING A CLAIM ON EVIDENCE IS A PRESENT-STATE STATEMENT ABOUT WHAT THE PAPER CLAIMS. NARRATING THAT THE
+CORPUS CHANGED ITS MIND OVER TIME IS NOT. A paper should say the first and never the second.***
+
+**⌗ THE THREE THAT WENT, AND THE SENTENCE THAT NARRATED ITSELF:**
+*"Half of that **has since been** done" → "Half of that cost **is removable**" · "That remainder **has since been**
+named" → "That remainder **is** named" · "The second freedom **has since been opened too**" → "The second freedom
+**widens that range**".*
+⇒ ⛭ *And: **"This sentence read ``not a spacing deficit but an acoustic phase'' until r2501+c54.197"** →
+***"The disagreement is not a spacing deficit, and neither is it simply an acoustic phase."***
+
+**⇒⇒ THE WHOLE OF STEP ⓷b WAS FOURTEEN CLAUSE REPLACEMENTS ACROSS 48 KB. Not one result was moved, and not one was
+lost.***
+⌗ ***Which is the answer to the question the campaign opened with: the papers were fine. They said the things in the
+wrong way, and the wrong way was a clause at a time.***
+
 ### Revision r2589 — 2026-08-11 (main line). **STEP ⓷b RESHAPED — the section is physics wearing narrative framing, so the operation is DE-NARRATION IN PLACE.**
 
 **⌗ THE PLAN'S THIRD REVISION, EACH EARNED BY READING MORE.** *r2586 said **six claims**. r2587's draft **dropped

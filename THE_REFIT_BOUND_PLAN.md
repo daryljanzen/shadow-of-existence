@@ -1,7 +1,7 @@
 ---
 name: the-refit-bound-plan
 kind: PLAN
-current: r2589+c54.207
+current: r2590+c54.207
 description: THE sec:refit-bound PLAN — 46 paragraphs, 57 KB, 59% narration, chronologically interleaved. Why it cannot go paragraph-by-paragraph, what the present state actually is, and the order of operations that keeps it lossless. Written r2586.
 sources: [chat]
 ---
@@ -73,6 +73,38 @@ surviving claims listed beside them.** ***The paper is untouched. Every later st
 claim it binds**, because the rewritten section must keep each receipt attached to the claim it checks.*
 ⇒ *`check_receipts` and `check_loci` will catch a dropped binding — **but only if the claim survives**; a claim
 deleted with its receipt fails nothing.* ⚠ ***That is the failure mode this step exists to prevent.***
+
+## ✔✔✔ STEP ⓷b DONE r2590 — `sec:refit-bound` is at ZERO paper-past paragraphs
+
+| | |
+|---|---|
+| section | **57,451 → 48,578 characters** |
+| paper-past paragraphs | ***16 → 0*** |
+| receipts bound | ***32 of 32*** |
+| `check_revleak` baseline | ***drained by two*** |
+
+**⌗ AND THE LAST DISCRIMINATION IS THE ONE WORTH KEEPING.** *Seven paragraphs remained after the eight-clause pass,
+and **four of them should stay**:*
+*· ***"the measurement does not support it at its own error bar, and we withdraw it"*** — *a claim withdrawn on
+evidence;*
+*· ***"we withdraw the weight the paragraph above put on its stability"*** — *the same;*
+*· ***"We withdraw it in those terms"*** — *the same;*
+*· *and one ordinary internal cross-reference.*
+⇒⇒ ***Withdrawing a claim ON EVIDENCE is a PRESENT-STATE statement about what the paper claims. Narrating that the
+corpus changed its mind over TIME is not. A paper should say the first and never the second.***
+
+**⌗ THE THREE THAT DID GO, AND THE ONE SENTENCE THAT NARRATED ITSELF:**
+*· "Half of that **has since been** done" → "Half of that cost **is removable**";*
+*· "That remainder **has since been** named" → "That remainder **is** named";*
+*· "The second freedom **has since been opened too**" → "The second freedom **widens that range**";*
+*· ⛭ and: **"This sentence read ``not a spacing deficit but an acoustic phase'' until r2501+c54.197"** →
+***"The disagreement is not a spacing deficit, and neither is it simply an acoustic phase."*** *A sentence
+narrating its own former wording.*
+
+⇒ ***The whole of step ⓷b was fourteen clause replacements across 48 KB. Not one result was moved, and not one was
+lost.***
+
+---
 
 ## ⛭⛭⛭ STEP ⓷b RESHAPED r2589 — it is DE-NARRATION IN PLACE, not a rewrite
 
