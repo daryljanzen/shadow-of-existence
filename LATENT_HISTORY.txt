@@ -80,3 +80,4 @@ r2646  LATENT      PO-12 gates BOTH of PO-10s runs -- both halves are statements
 r2647  COMPUTED    the corpus cancellation is between two RATES; odd/even needs one between two MULTIPOLES
 r2648  --         found and repaired my own r2588 duplication in sec:diffusion-scale; dupes gate unverified
 r2649  COMPUTED    check_dupes fixed: the preamble swallowed every papers first sentence; seed test now passes
+r2650  --         gate_audit: 2 of 34 wired gates have no failure path; the count was 2 too high

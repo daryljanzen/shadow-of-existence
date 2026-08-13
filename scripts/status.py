@@ -164,9 +164,19 @@ def main():
             if not L[k].rstrip().endswith('\\'):
                 break
             k += 1
-    gates = len(names)
+    # ** r2650: two wired gates have NO failure path (check_arcpins, check_citations) -- they run,
+    # print, and return 0.  ⇒ *** Reporting them in the gate count is a green tick nobody earned, so
+    # the number reported is the one that can FAIL. *** **
+    import re as _re
+    _F = _re.compile(r'return 1|exit\(1\)|sys\.exit\(1\)')
+    can = {n for n in names
+           if os.path.exists(os.path.join(ROOT, 'corpus', n + '.py'))
+           and _F.search(open(os.path.join(ROOT, 'corpus', n + '.py'),
+                              encoding='utf-8', errors='replace').read())}
+    gates = len(can)
+    reports = len(names) - len(can)
     rcpts = len(glob.glob(os.path.join(ROOT, 'receipts', '**', '*.py'), recursive=True))
-    print(f'  GATES: {gates}   RECEIPTS: {rcpts}')
+    print(f'  GATES: {gates} that can fail (+{reports} report-only)   RECEIPTS: {rcpts}')
     print()
     # ** ---- WHAT GOT BUILT, added r2614 ---- **
     # ** Daryl: "along with what gets built." **  ⇒ *** The receipts count alone says nothing -- 423

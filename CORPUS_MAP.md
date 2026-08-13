@@ -146,6 +146,29 @@ sources: [cowork, chat]
 
 
 
+### Revision r2650 — 2026-08-11 (main line). **TWO WIRED GATES CANNOT FAIL — the one number that only ever rose was two too high.**
+
+**⌗ THE INVERSE QUESTION.** *r2649 closed on a pattern: `latent.py` under-counted, `status.py` counted a range
+header as a row, the wired list was truncated at four, `check_dupes` was blind to every paper's opening —
+***all LOW, the direction that looks like success***.*
+⇒ ***So this turn asked the inverse about the one number that only rises: the gate count.***
+
+**⛔ OF 34 WIRED GATES, TWO HAVE NO FAILURE PATH AT ALL.** *`check_arcpins` and `check_citations` run, print, and
+return 0 unconditionally.*
+*· `check_citations` **says so in its own docstring** — "like `check_supersession` it is a REPORT and not a verdict"
+— **so the gate is honest and its presence in the wired list is the mislabelling**;*
+*· `check_arcpins` is a **LINT**, and r2562's own rule covers it: "build the lint, measure it, and **usually don't
+ship it** — the lint is the instrument, not the deliverable".*
+
+⇒⇒ ***So "35 gates" was two too many. The honest number is **thirty-two that can fail plus two that report** — and a
+report in the failing list is a green tick nobody earned.***
+
+**⛭ THE RULE:** ***when you find a class of error all running one way, check the numbers that run the other way
+with the same suspicion. A count that only ever rises is never corrected by the process that produces it, because
+nothing in that process is looking for a reason to subtract.***
+
+✔ *`scripts/gate_audit.py` prints it; `status.py` now reports **32 that can fail (+2 report-only)**.*
+
 ### Revision r2649 — 2026-08-11 (main line). **`check_dupes` FIXED — it was blind to the opening of every paper.**
 
 **⌗ r2648 RECORDED THE FAILURE RATHER THAN DRESSING IT AS A PASS.** *Four attempts to make the gate fire on an
