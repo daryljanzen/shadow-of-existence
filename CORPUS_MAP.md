@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2609 — 2026-08-11 (main line). **`PO-5`'s OBJECT IS DELIVERED — and its row has been arguing about a different question for six turns.**
+
+**⌗ THE OBJECT, from the register verbatim:** *"The quark/lepton split, and **what a baryon IS at particle
+level**", targeting "**the five multiplets, and which carries the colour $\mathbf 3$**".*
+
+**⇒ AND P14's OWN DELIVERED-LIST ANSWERS BOTH.** *"And, reached after them, **the discrete content of colour**: the
+module the operator's colour structure acts on is **the branching** rather than any bundle of the substrate; **the
+three wall monodromies with the hinge $3$-cycle generate $SU(3)$**; and second quantisation on the wall kernel
+returns **baryon $1$, diquark $0$, meson $1$**." — confirmed in the body, "**with the lap as its centre**".*
+
+**⛔ AND `SU(3)` APPEARS NOWHERE IN THE `PO-5` ROW**, *while the row carries c54.207's verdict that **"branching
+returns a character, since $R$ grades rather than exchanges and $D_6$'s largest irrep is 2"**.*
+⇒⇒ ***That is the branching of $D_6$ irreps under $R$ — NOT the module colour acts on. Same word, two objects, and
+the negative verdict on one was carried as though it bore on the other.***
+⇒ ***So the route — "what bridge from a grading to a field is not being a kernel?" — was searching for something
+already found.***
+
+**⌗ WHAT IS GENUINELY OPEN, and P14 lists it as sharply as the delivery:** *the **COUPLING** ("the bundle above is
+flat … it quantises and does not couple"), **weak isospin as a gauging**, **hypercharge's normalisation**, and **the
+mass spectrum**.*
+⚠ *The row does **not** close — `F5` forbids it and the coupling is genuinely open — **but the object it tracks is
+delivered at the level of discrete content**.*
+
+**⛭ THE RULE:** ***a register row has an OBJECT and a ROUTE, and they drift apart silently because only the route
+gets worked. Re-read the object column before spending another turn on the route.***
+
+⌗ ***And the ranking moved on its own***: *`PO-5` went **grounded 2→3, convergence 3→2→1** across six turns and
+dropped from **#1 to #3**, with `PO-6` taking the top — **without anyone re-ranking it**.*
+
 ### Revision r2608 — 2026-08-11 (main line). **THE MOD-2 INDEX IS 1 — and P14 computed it without naming it.**
 
 **⌗ P14 STATES ALL THREE PIECES IN ONE PASSAGE.** *The count — **$\dim\ker_+=3$, $\dim\ker_-=0$, the net chirality

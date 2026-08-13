@@ -46,7 +46,9 @@ GATED_BY = {'PO-7': 'PO-seam (its route 3 IS the progenitor derivation)'}
 CONVERGES = {
     # ** r2605: the mod-2 route is CLOSED (the involution is quaternionic).  What replaces it -- the
 # Kramers question -- serves the same three, so convergence is unchanged and grounded rises. **
-    'PO-5': ('mod-2 index DONE (=1); what remains is the BRIDGE itself, and 3 candidates are spent', 2),
+    # ** r2609: the OBJECT is delivered (baryon 1/diquark 0/meson 1; monodromies generate SU(3)).  What
+# remains is the COUPLING -- a different question, and it converges with nothing yet. **
+    'PO-5': ('object delivered r2609; what remains is the COUPLING, which converges with nothing yet', 1),
     'PO-7': ('gated by PO-seam: its route 3 IS the progenitor derivation', 2),
     'PO-6': ('L-207 B-2 unlocks here', 2),
     'PO-12': ('the transfer is what makes the 8% signature confrontable', 2),
