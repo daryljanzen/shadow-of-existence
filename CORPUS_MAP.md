@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2642 — 2026-08-11 (main line). **`PO-9`'s ④ CLEARS — and the last link was never `L-533`'s to reproduce.**
+
+**⌗ (c) — "every rung above the last being maximally symmetric" — is P6's.** *Stated by **two** papers, in arguments
+needing it for **opposite** purposes:*
+*· **P12**: "$dS_D$ is maximally symmetric and moduli-free for every $D$, so it selects the manifold at fixed
+dimension and **is silent on the dimension itself**" — to show the criterion is silent;*
+*· **p0**: "the substrate is maximally symmetric and moduli-free in every dimension" — to **exclude** a $D=4$
+argument from the maximal-symmetry list.*
+⇒ *And both rest on **P6's Rule-2 argument**, which P12 cites: "a structure with a free modulus is not a single
+world but a family $W_\lambda$ … **the moduli-free structure is the sole determinate answer**".*
+
+⇒⇒ ***So ④'s third failure was a MIS-ATTRIBUTION, not a gap. The receipt had absorbed into "`L-533`'s own
+derivation" a claim the corpus established before `L-533` was written.***
+
+**⛭ THE RULE:** ***when a receipt lists what its conclusion "rests on", check each item's PROVENANCE separately. A
+derivation naturally reads its own inputs as its own — and a link that arrived from elsewhere will be counted as
+unreproduced by the one document that never had to reproduce it.***
+
+**⌗ THE CHAIN NOW: (a) ✔ r2552 · (b) ✔ P6 · (c) ✔ P6 via P12 and p0 · (d) ✔ r2641 · (e) ✔ r2640.**
+*Three → two → one → **zero** in three revisions, and only two of the four steps were computation.*
+
+⚠ **AND THAT PRODUCES A REAL DECISION — the first this session.** *r2599 found that `PO-7`'s pending authorisation
+was manufactured and no decision existed anywhere. ***`PO-9`'s ④ now clears, so for the first time there is
+something for `PROTECTED_OPEN`'s exit procedure to reserve.*** The row does not close on a node's say-so.*
+
 ### Revision r2641 — 2026-08-11 (main line). **`PO-9`'s link (d) reproduced — and the reproduction shows the spacelike restriction is FORCED. Three → two → one.**
 
 **⌗ THE REDUCTION.** *Sectioning $-X_0^2+\sum X_i^2=\alpha^2$ at $X_D=c$ gives

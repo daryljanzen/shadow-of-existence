@@ -1,8 +1,8 @@
 ---
 name: kill-PO-9
 kind: KILL-RECEIPT
-current: r2641+c54.207
-description: Kill receipt for PO-9 — the dimensional rise. Route ② of PROTECTED_OPEN's exit procedure: object named, four checks answered. ④ does not clear, and that is the finding.
+current: r2642+c54.207
+description: Kill receipt for PO-9 — the dimensional rise. Route ② of PROTECTED_OPEN's exit procedure: object named, four checks answered. ④ NOW CLEARS as of r2642 (all five links reproduced or relocated); the authorisation is Daryl's.
 sources: [chat]
 ---
 
@@ -113,6 +113,25 @@ steps."***
 > the right one.***
 > ⌗ ***What remains is (c) alone — every rung above the last being maximally symmetric — and that is a
 > statement about the tower, not a computation. ④ still does not clear.***
+
+> ⛭⛭⛭ **UPDATED r2642 — ④ NOW CLEARS, AND (c) WAS NEVER `L-533`'s.**
+> *`E53_link_c_was_never_L533s.py`: **two papers state it, in arguments needing it for OPPOSITE purposes.**
+> **P12** — "$dS_D$ is maximally symmetric and moduli-free for every $D$, so it selects the manifold at fixed
+> dimension and **is silent on the dimension itself**" — to show the criterion is silent. **p0** — "the
+> substrate is maximally symmetric and moduli-free in every dimension" — to EXCLUDE a $D=4$ argument from
+> the maximal-symmetry list.*
+> ⇒ *And the ground is **P6's Rule-2 argument**, which P12 cites: "a structure with a free modulus is not a
+> single world but a family $W_\lambda$ … **the moduli-free structure is the sole determinate answer**".*
+> ⇒⇒ ***So ④'s third failure was a MIS-ATTRIBUTION, not a gap. Three unreproduced links were two
+> computations nobody had re-run and one claim that was never `L-533`'s to begin with.***
+>
+> **THE CHAIN, AS IT NOW STANDS:** *(a) ✔ r2552, three times in the papers · (b) ✔ in P6 · **(c) ✔ P6, via
+> P12 and p0** · **(d) ✔ r2641**, from the embedding, with the spacelike restriction shown forced ·
+> **(e) ✔ r2640**, on three independent methods.*
+>
+> ⚠ ***THIS RECEIPT DOES NOT CLOSE `PO-9`.*** *`PROTECTED_OPEN`'s exit runs by its two stated routes and
+> **the authorisation is Daryl's**. What has changed is that **the check which did not clear now does**,
+> and the receipt says so rather than continuing to report a failure it no longer has.*
 
 ---
 
