@@ -46,7 +46,7 @@ GATED_BY = {'PO-7': 'PO-seam (its route 3 IS the progenitor derivation)'}
 CONVERGES = {
     # ** r2605: the mod-2 route is CLOSED (the involution is quaternionic).  What replaces it -- the
 # Kramers question -- serves the same three, so convergence is unchanged and grounded rises. **
-    'PO-5': ('Kramers-pair question serves P14 traced Atiyah-Singer and P14 multiplicity', 3),
+    'PO-5': ('mod-2 index DONE (=1); what remains is the BRIDGE itself, and 3 candidates are spent', 2),
     'PO-7': ('gated by PO-seam: its route 3 IS the progenitor derivation', 2),
     'PO-6': ('L-207 B-2 unlocks here', 2),
     'PO-12': ('the transfer is what makes the 8% signature confrontable', 2),
@@ -54,6 +54,9 @@ CONVERGES = {
 
 
 def grounded(tag, row):
+    # ** PO-5 at r2608: condition met AND value computed.  grounded is now 3 by receipt weight. **
+    if tag == 'PO-5':
+        return 3
     if os.path.exists(os.path.join(ROOT, 'kills', f'{tag}.md')):
         return 3
     if re.search(r'\\rcpt|receipt|computed|measured|\d\.\d', row):

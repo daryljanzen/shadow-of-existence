@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2608 — 2026-08-11 (main line). **THE MOD-2 INDEX IS 1 — and P14 computed it without naming it.**
+
+**⌗ P14 STATES ALL THREE PIECES IN ONE PASSAGE.** *The count — **$\dim\ker_+=3$, $\dim\ker_-=0$, the net chirality
+a $\gamma^5$-graded index**. The holonomy action — it acts on the walls' chiralities, **"changing their signs only
+in *pairs*"**. And the conclusion — **"three and zero lying in different parity classes"**.*
+
+**⛭⛭ ENUMERATED:** *the orbit of $(+,+,+)$ under pair-flips is **four of eight** states, $\dim\ker_+\in\{1,3\}$,
+and **$\dim\ker_+\bmod 2 = 1$ throughout**; $(-,-,-)$ has parity $0$ and is unreachable.*
+⇒⇒ ***The pair-flip group is the EVEN SUBGROUP of $(\mathbb{Z}_2)^3$; its two orbits ARE the two parity classes;
+and $\dim\ker_+\bmod 2$ is the invariant separating them. The mod-2 index is 1.***
+
+**⌗ AND IT UPGRADES P14's OWN WEIGHT-MARKING, WHICH IS THE PART THAT MATTERS.** *That paper states index-theoretic
+stability **"at traced weight"**, marking the Atiyah–Singer statement as **traced rather than computed**.*
+⇒ ***The mod-2 invariant is NOT traced — it is an orbit computation on a three-element set — so it delivers the
+stability the paper wanted at a weight the paper did not claim.***
+
+**⛭⛭ THE RULE:** ***when a paper marks something "traced rather than computed", ask whether a WEAKER invariant would
+carry the same conclusion computably. The integer index needed Atiyah–Singer; the parity needed an orbit of four
+states — and the paper had already written the orbit down.***
+
+⚠ *Not Atiyah–Singer: **the integer index remains traced; what is computed is the $\mathbb{Z}_2$ one — a weaker
+invariant and a stronger warrant**. And not the bridge: **the index is 1 while the count is 3** — it says the count
+is ODD and immovable, not that it is three.*
+
+⌗ *Six turns on `PO-5`, and the ranking tracked it: **grounded 2 → 3, convergence 3 → 2**, so it stays #1 for a
+different reason than it started.*
+
 ### Revision r2607 — 2026-08-11 (main line). **THE RADIAL OPERATOR CARRIES A REAL STRUCTURE — `PO-5`'s mod-2 condition is MET.**
 
 **⌗ THE CORRECTED QUESTION, ON THE CORRECTED OPERATOR, AND P14 SUPPLIES BOTH.** *"The zero-mode equation $H\psi=0$
