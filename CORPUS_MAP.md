@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2654 — 2026-08-11 (main line). **`THE_HANDOFF` — the split signal turned, and the risk is three judgements a script cannot derive.**
+
+**⌗ THE SIGNAL.** *r2620 set the condition: **do not split while `LATENT` exceeds `COMPUTED`**.*
+
+    r2604-r2615:  LATENT 6   COMPUTED 2
+    r2616-r2627:  LATENT 8   COMPUTED 0
+    last 13 @ r2653:  LATENT 4   COMPUTED 5
+
+⇒ ***First window where computation outnumbers catch-up — and the latent stock thinned not because the corpus
+stopped talking but because seventeen turns of reading exhausted the rows that had answers sitting in them.***
+⚠ *And the proposal is **not a split**: 54 runs automated turns (**construction, which parallelises**) and
+ingestion is **reading, which does not** — the division r2620 identified as safe even under the old rate.*
+
+**⛔ THE RISK IS THREE HAND-MAINTAINED JUDGEMENTS**, *and an automated turn will fill them with plausible values:*
+*· **`rank_open`'s REACH** — what a result would BUY, not derivable from the register;*
+*· **`LATENT_HISTORY`'s KIND** — ***a 54 marking its own turns will mark a reading as a computation, because from
+inside a turn they feel identical***;*
+*· **`TABLE_HISTORY`'s REASON** — the count is derivable, the reason is not, and r2622's smooth-decline diagnostic
+depends on it.*
+⇒⇒ ***So the ingestion's first job on any batch is to re-verdict those three, not to check the physics. The physics
+carries receipts; the judgements carry nothing.***
+
+**⛭ THE RULE:** ***when handing an apparatus to another node, enumerate what it CANNOT compute before what it can.
+The computable parts defend themselves; the judgements are where a competent automated turn will be confidently
+wrong and leave no trace.***
+
+⌗ *The file also fixes the turn order, and the four things an automated turn must not do — strike a protected row,
+ask for authorisation on a question the criterion declined, write the contribution statement, or **mark its own turn
+`COMPUTED` when it read rather than computed**.*
+
+⚠ *Honest state: **four instrument corrections this session, every one reporting LOW**. The apparatus is stable
+enough to hand over and not stable enough to trust unaudited — **and those are compatible**.*
+
 ### Revision r2653 — 2026-08-11 (main line). **`scripts/stamp.py` — the turn header, emitted rather than retyped.**
 
 **⌗ WHY.** *Every turn this session ended with a header assembled by hand from what the scripts were remembered to

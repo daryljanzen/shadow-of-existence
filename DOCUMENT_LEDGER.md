@@ -18,7 +18,7 @@ sources: [chat]
 | **SOURCE** | 2 |
 | **VIEW** | 5 |
 | **STATE** | 46 |
-| **METHOD** | 28 |
+| **METHOD** | 29 |
 | **RECORD** | 78 |
 | **UNCLASSIFIED** | 2 |
 
@@ -110,6 +110,7 @@ sources: [chat]
 | `THE_CLOSURE_LEDGER.md` | METHOD | Where the closure self-check is DEFINED, with its four verdicts: OPENED · WORKED-SHUT · SURFACED · CODA-FIX. | — | c54.153 |  |
 | `THE_FRONT_EDGE.md` | METHOD | (declared in frontmatter) | — | c54.207 |  |
 | `THE_GEOMETRY_AND_THE_PHYSICS.md` | METHOD | The PEDAGOGICAL DISTILLATION of the geometry bake — the argument in order, in prose, every step an identity, a definition or a verified computation. The lens's first depth (THE_CODA §the lens: distillation → conceptual logic → formalised papers). | c54.11 | c54.11 |  |
+| `THE_HANDOFF.md` | METHOD | (declared in frontmatter) | — | c54.207 |  |
 | `THE_HUB.md` | METHOD | How the programme lives in a git repository — branch discipline, the register's merge rule, what CI enforces and what it cannot. Read BEFORE pushing, and BEFORE assuming git has solved a problem it has not. | c54.181 | c54.196 |  |
 | `THE_OPERATING_MANUAL.md` | METHOD | rules / guards / canon | — | c54.28 |  |
 | `THE_PRIORITY.md` | METHOD | (declared in frontmatter) | — | c54.207 |  |
