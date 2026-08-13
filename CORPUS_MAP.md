@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2580 — 2026-08-11 (main line). **THE REHOMING CAMPAIGN — and its scope is five papers, not thirteen.**
+
+**⛭⛭⛭ THE PRINCIPLE, and it names what this line has been getting wrong all session.** *Daryl: **"pull every unknown
+to its proper place UPSTREAM of the frontier section. The horizon moved further back, and the paper should have
+become properly informed about its previous frontier stuff that became part of the rest."***
+⇒ ***A PAPER IS A MAP OF THE PRESENT STATE. A FRONTIER SECTION IS A POINTER TO THE HORIZON. Newly-known content is
+REHOMED UPSTREAM into the physics, and the STORY of how it moved goes to `CONSOLIDATE`.***
+⇒ ⛔ ***What this line did instead: revised sentences IN PLACE, so an entry reads "this was open and now is known" —
+neither destination.***
+
+**⌗ AND THE TEST CASE GAVE THE DISCRIMINATOR.** *`algebroid_paper` has **one** frontier paragraph, so the whole pass
+is visible — and its three items (`Computed:`, the handoff, the sector itself) are **scope-delimitation**. **P12 is
+clean.***
+⇒⇒ ***TIMELESS vs TEMPORAL: scope-delimitation says "this paper covers X and not Y"; a resolved frontier says "has
+since", "no longer", "we wrote", "opened at". A paper is a map of the PRESENT, so a tense referring to the paper's
+own past IS the signature — and nothing else needs judging.***
+
+**⇒ SCOPE: FIVE PAPERS, THIRTEEN PARAGRAPHS.** *`CR_cosmology` **8** · `cosmogenesis` **2** · `boundary` ·
+`matter_sector` · `slicing_operator` **1** each.* ***Eight papers clean.*** *An afternoon per paper, not a rewrite of
+the corpus.*
+
+**⚠ AND IT CORRECTS r2579 THE SAME DAY.** *P7's 35% below-the-list is **prose ABOUT the list** ("it opened at seven
+and stands at four"), not misfiled physics.* ⇒ ***So P7's item is a MOVE to `CONSOLIDATE`, not a rehoming. r2579
+measured the size right and inferred the defect wrong.***
+⌗ ***Start a campaign on the case where the whole pass is visible, and the first thing it tells you is whether the
+campaign is the right shape.***
+
+⌗ *Losslessness is the hard rule: **nothing deleted, every paragraph to one of three destinations, and one that
+cannot be assigned STAYS**. Registered as `L-537`; the plan is `THE_REHOMING_CAMPAIGN.md`.*
+
 ### Revision r2579 — 2026-08-11 (main line). **RESOLVED CONTENT SITS INSIDE THE FRONTIER SECTIONS — 191 KB of them, and P7's is 35% below-the-list. And the BOUNDED/UNBOUNDED split.**
 
 **⌗ THE QUESTION.** *"If items are crossed off P7's frontiers list, don't they get properly shifted to the synthesis
