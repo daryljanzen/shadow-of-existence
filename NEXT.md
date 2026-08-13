@@ -110,7 +110,7 @@ is**.*
 | **`L-171`** | r2559 | **`kills/PO-7.md` is COMPLETE r2559** — object named, four checks written, ***all four now pass*** · ***the next step is the register's own: "and Dary |
 | **`L-218`** | r2561 | ✔ ⓶ done r2478 · ***the RULE is tested r2561 and needs a fourth bucket (DISCUSSED), which is the default*** · ⓵ pandoc-in-CI and ⓷ the contribution re |
 | **`L-536`** | r2579 | **TWO HALVES.** ⓵ `PO-10`'s two runs (the full-spectrum likelihood comparison, the odd/even height pattern) · ⓶ ***the FRONTIER-PLACEMENT AUDIT across |
-| **`L-537`** | r2580 | ***five passes, smallest first: `slicing_operator`, `matter_sector`, `boundary` (1 each), `cosmogenesis` (2), `CR_cosmology` (8)*** — plus P7's story- |
+| **`L-537`** | r2581 | **four passes left**: `matter_sector` · `boundary` (1 each) · `cosmogenesis` (2) · ***`CR_cosmology` (8, and it is half the campaign)*** — plus P7's s |
 
 *8 live rows carry a stated next step; the 8 longest-unworked are shown.*
 

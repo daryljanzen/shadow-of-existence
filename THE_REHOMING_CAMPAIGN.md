@@ -38,6 +38,30 @@ thing" — and a smaller, diminished section: "this is what we still don't know.
 
 ---
 
+## ✔✔ PASS 1 DONE — `slicing_operator` (P8), r2581. **The method works and here is what it looks like.**
+
+**⌗ THE PARAGRAPH:** *"The emergence of the bend" — 3,061 characters in `\section{Scope and open problems}`,
+carrying **"the corpus has since substantially worked it"**.*
+
+**⓵ WHAT WENT UPSTREAM.** *Buried in it: **"for a general spatial leaf the energy density is the leaf's
+intrinsic-curvature departure from the de Sitter substrate, $16\pi\rho={}^{3}R+K^{2}-K_{ij}K^{ij}-2\Lambda$, the
+Hamiltonian constraint, of which $\rho=m'/4\pi r^{2}$ is the spherical instance."***
+⇒ ⛭ ***That is the GENERAL FORM of this paper's own central identity — `prop:bend` — and it was filed under "what
+is open." Rehomed beside the proposition as `eq:bend-general`, with a paragraph saying the reading is not an
+artefact of the symmetry.***
+
+**⓶ WHAT WENT TO `CONSOLIDATE`.** *The account of what was known when, and where each piece came from — opened as
+**THE REHOMING RECORD**, which is where every pass's story goes from here.*
+
+**⓷ WHAT STAYED, AND IT IS NARROWER.** ⇒ ***Not "the emergence of the bend" but the matter content's own generative
+law where the construction does not supply one — a dynamics for the CURVE, as against the ordinary leaf evolution
+that carries it.***
+
+⌗ **3,061 → 1,796 characters, and the paper GREW by 784** *(the rehomed identity).* ***Nothing lost: the identity
+moved, the results kept their citations, the story is recorded.*** *`check_compile` green.*
+
+---
+
 # 0 · ⛭⛭⛭ THE SCOPE IS FIVE PAPERS AND THIRTEEN PARAGRAPHS, NOT 114 — measured r2580
 
 **⌗ THE FIRST TEST CASE FOUND THE DISCRIMINATOR.** *`algebroid_paper` has **one** frontier paragraph, so the whole
@@ -61,7 +85,7 @@ signature.*** *Nothing else needs judging.*
 | **`cosmogenesis`** | 5 | **2** | ⛔ |
 | **`boundary_paper`** | 12 | **1** | ⛔ |
 | **`matter_sector`** | 10 | **1** | ⛔ |
-| **`slicing_operator`** | 5 | **1** | ⛔ |
+| ~~**`slicing_operator`**~~ | 5 | ✔ **0** | ***DONE r2581*** |
 | `CR_framework` (P7) · `SdS-slicing-curve` · `algebroid` · `dynamics` · `geometric_core` · `groupoid` · `janzen_circle` · `range_paper` | 41 | **0** | ✔ clean |
 
 ⇒⇒ ***FIVE PAPERS, THIRTEEN PARAGRAPHS. The campaign is an afternoon per paper, not a rewrite of the corpus.***

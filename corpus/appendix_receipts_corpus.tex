@@ -1973,6 +1973,36 @@
 \emph{Computes:} derives S from alpha = sqrt(3/Lambda), matches it to the corpus stated Lambda ell\_P\textasciicircum{}2, and asserts the gauge-versus-scale and cross-register passages verbatim (11 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- corrects an earlier reading; S = A/4 is imported not derived
 \ \emph{Run:} \texttt{python3 receipts/L204\_physics\_reach/P13\_the\_entropy\_is\_the\_corpuss\_own\_number.py}
+\item[\label{rcpt:S1_seven_necessary_conditions_on_the_measure}\texttt{S1\_seven\_necessary\_conditions\_on\_the\_measure}]\hfill\textsf{[OK]}\\
+\textit{sec:intro} \ (A8s deliverable: SEVEN necessary conditions the measure on the space of cuts must satisfy, every one already forced by something the corpus states for another purpose). 
+\emph{Computes:} asserts each condition at its source in the papers --- the conformal-factor exclusion, the fixed substrate scale, the true Hamiltonian, Brown--Kuchar, deficiency indices, the per-fibre closure and the algebras closure (10 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- necessary conditions only; no measure and no existence claim
+\ \emph{Run:} \texttt{python3 receipts/L165\_defining\_the\_sum/S1\_seven\_necessary\_conditions\_on\_the\_measure.py}
+\item[\label{rcpt:B1_the_index_argument_stops_where_a_mod_two_index_begins}\texttt{B1\_the\_index\_argument\_stops\_where\_a\_mod\_two\_index\_begins}]\hfill\textsf{[OK]}\\
+\textit{sec:chirality} \ (A6 answered: the corpus runs Atiyah--Singer on R, finds it inapplicable because the discrete orientation parity has no circle action --- and never names the MOD-2 index that replaces it in exactly that case). 
+\emph{Computes:} asserts the per-wall anomaly use, the connected-group index argument and its stopping point verbatim, against six zero-counts for the Z2 invariants (14 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- a name and a place to look; no mod-2 index computed or claimed to exist
+\ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B1\_the\_index\_argument\_stops\_where\_a\_mod\_two\_index\_begins.py}
+\item[\label{rcpt:S1_a_massive_mode_freezes_too_and_the_mass_term_vanishes_at_the_branch_point}\texttt{S1\_a\_massive\_mode\_freezes\_too\_and\_the\_mass\_term\_vanishes\_at\_the\_branch\_point}]\hfill\textsf{[OK]}\\
+\textit{sec:what-crosses} \ (A2 (PO-seam / PO-7 inversion 3): a massive mode freezes too, for ANY mass --- the branch point a->0 annihilates the mass term m\textasciicircum{}2 a\textasciicircum{}2 while \textbar{}aH\textbar{} diverges, so omega/\textbar{}aH\textbar{} -> c\_s k x -> 0 independent of m; a massive trajectory carries no phase from non-freezing, closing PO-7 route 3 from the massive side). 
+\emph{Computes:} derives the mass term +m\textasciicircum{}2 a\textasciicircum{}2 from the covariant action (sympy), shows omega/\textbar{}aH\textbar{} at the crossing is m-independent to the digit up to m=1e5 across ell 28-2475, freeze-out epoch unmoved (5 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- A2; informs L-202/L-171; CRPHI stays assigned; F5 unsoftened
+\ \emph{Run:} \texttt{python3 receipts/L806\_massive\_freezing/S1\_a\_massive\_mode\_freezes\_too\_and\_the\_mass\_term\_vanishes\_at\_the\_branch\_point.py}
+\item[\label{rcpt:S1_the_peak_estimator_recovers_a_set_phase_independent_of_the_envelope}\texttt{S1\_the\_peak\_estimator\_recovers\_a\_set\_phase\_independent\_of\_the\_envelope}]\hfill\textsf{[OK]}\\
+\textit{sec:coherence} \ (A10 (PO-7 inversion 2): the peak-4-8 estimator recovers a SET asymptotic phase to <0.005 in phi/pi and is envelope-independent (spread <0.006) across six damping/width/tilt variations spanning the CR-vs-control transfer differences --- so the 0.408 is not an estimator artefact; inversion route 2 closes and the disagreement hardens). 
+\emph{Computes:} injects synthetic acoustic combs with known phi\_in under six envelopes, runs the exact B7/B8 estimator, checks faithfulness and envelope-invariance (4 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- A10; informs L-171; F5 unsoftened, no conversion claimed
+\ \emph{Run:} \texttt{python3 receipts/L807\_driven\_estimator/S1\_the\_peak\_estimator\_recovers\_a\_set\_phase\_independent\_of\_the\_envelope.py}
+\item[\label{rcpt:S1_the_nariai_closed_form_extends_as_a_series_in_the_horizon_separation}\texttt{S1\_the\_nariai\_closed\_form\_extends\_as\_a\_series\_in\_the\_horizon\_separation}]\hfill\textsf{[OK]}\\
+\textit{sec:nonlinear} \ (A9 (PO-6(c)): the Nariai closed form extends off the degenerate member --- dS\_2 x S\textasciicircum{}2 with both radii r\_n=alpha/sqrt3=1/sqrt(Lambda) is the leading term, the geometry is a series in the horizon separation epsilon \textasciitilde{} sqrt(M\_N-M), and f''(r\_n)=-6/alpha\textasciicircum{}2 is its leading coefficient). 
+\emph{Computes:} solves f=0 \& f'=0 for the Nariai member symbolically, recovers r\_n/M\_N/f''(r\_n), shows the throat is dS\_2 x S\textasciicircum{}2 with equal radii and the horizon separation goes as sqrt(M\_N-M) (8 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- A9; informs L-165 (PO-6); the closed form extends
+\ \emph{Run:} \texttt{python3 receipts/L808\_nariai\_extension/S1\_the\_nariai\_closed\_form\_extends\_as\_a\_series\_in\_the\_horizon\_separation.py}
+\item[\label{rcpt:S1_the_quartic_is_a_constant_vacuum_energy_and_the_geometry_absorbs_it}\texttt{S1\_the\_quartic\_is\_a\_constant\_vacuum\_energy\_and\_the\_geometry\_absorbs\_it}]\hfill\textsf{[OK]}\\
+\textit{sec:oneScale} \ (A7 (PO-6(a)): the one-loop QUARTIC divergence Lambda\_c\textasciicircum{}4/(16 pi\textasciicircum{}2) is a mass/field-independent CONSTANT vacuum energy (computed), and p0 already absorbs exactly a constant vacuum energy into the one curvature Lambda (the profile's Lambda r\textasciicircum{}2/3 term, no bare-Lambda-vs-vacuum split) --- so its counterterm is a CC = the framework's one constant, ell\_P a gauge; the quartic is absorbed). 
+\emph{Computes:} computes the vacuum-energy divergence structure (quartic mass-independent, quadratic mass-dependent) and anchors p0's CC-problem dissolution and ell\_P-as-gauge at source (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- A7; informs L-165 (PO-6); the sub-leading tower is the deeper question
+\ \emph{Run:} \texttt{python3 receipts/L809\_one\_loop\_quartic/S1\_the\_quartic\_is\_a\_constant\_vacuum\_energy\_and\_the\_geometry\_absorbs\_it.py}
 \item[\label{rcpt:P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way}\texttt{P17\_the\_frontier\_item\_is\_a\_result\_and\_the\_cosmogenesis\_paper\_reaches\_it\_the\_other\_way}]\hfill\textsf{[OK]}\\
 \textit{sec:seven} \ (**ITEM 18: p0's FRONTIER DATUM IS A RESULT, NOT AN OWING** --- the derivation of \$\textbackslash\{\}rho\_r/\textbackslash\{\}rho\_m\$ from the progenitor collapse CANNOT BE DELIVERED (the ratio scales as 1/a, so no single value exists to transmit), and P16 reaches the same line by a conservation law. Lead `L-530`; VEIN `L-202`). 
 \emph{Computes:} asserts the old owing sentence ABSENT; eight checks on the replacement incl. the `X1` cite; four that P16's body says what is now attributed to it; and 'peak spacing' counted 0 in P16's body, 0 in p0, 6 in P15 --- plus the header-comment provenance of the withdrawn draft
@@ -2003,4 +2033,14 @@
 \emph{Computes:} the \$1/a\$ scaling on both legs; the multiplicative crossing's cancellation; and the corpus's own withdrawal of the species-selection rule that would have been needed
  \emph{Bound:} CONVERTS the datum half from an OPEN TARGET into a CLOSED NEGATIVE with a stated reason --- weaker than closure; nothing here bears on \$z\_\{\textbackslash\{\}rm onset\}\$.  **INDEXED r2566+c54.207 by 54, having sat unindexed since r2433** --- the row was missing, not the receipt
 \ \emph{Run:} \texttt{python3 receipts/L150\_the\_datum/X1\_the\_ratio\_is\_a\_clock\_reading\_not\_a\_carried\_datum.py}
+\item[\label{rcpt:C3_the_isotropy_citation_runs_in_a_loop}\texttt{C3\_the\_isotropy\_citation\_runs\_in\_a\_loop}]\hfill\textsf{[OK]}\\
+\textit{sec:strata} \ (item 26s residue: P12 and P9 cite EACH OTHER for the isotropy dimensions, and the triple \{6,7,10\} appears in neither derivation --- F12s six-of-nine characterisation does not exist). 
+\emph{Computes:} three zero-counts against F12s wording, both citation sentences asserted verbatim, and the triples absence from P9 confirmed (11 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- the triple is not disputed; the citation is
+\ \emph{Run:} \texttt{python3 receipts/L204\_physics\_reach/C3\_the\_isotropy\_citation\_runs\_in\_a\_loop.py}
+\item[\label{rcpt:F1_resolved_content_sits_in_the_frontier_sections}\texttt{F1\_resolved\_content\_sits\_in\_the\_frontier\_sections}]\hfill\textsf{[OK]}\\
+\textit{sec:frontiers} \ (resolved content sits inside the frontier sections --- P7s is 35\% below-the-list, and 191,530 characters of frontier/open sections span thirteen papers). 
+\emph{Computes:} asserts P7s own accounting verbatim, shows Frontiers is its LAST section, measures the below-the-list share, and states the resolved-language proxys inadequacy (11 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- names an audit; no paragraph reclassified
+\ \emph{Run:} \texttt{python3 receipts/L536\_frontier\_placement/F1\_resolved\_content\_sits\_in\_the\_frontier\_sections.py}
 \end{description}\endgroup

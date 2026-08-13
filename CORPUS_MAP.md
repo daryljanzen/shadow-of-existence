@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2581 — 2026-08-11 (main line). **REHOMING PASS 1 — `slicing_operator`, and the first paragraph rehomed contained the general form of the paper's own central identity.**
+
+**⌗ THE PARAGRAPH.** *"The emergence of the bend" — **3,061 characters** in `\section{Scope and open problems}`,
+carrying the tell: **"the corpus has since substantially worked it."***
+
+**⛭⛭⛭ AND WHAT WAS BURIED IN IT.** *"for a general spatial leaf the energy density is the leaf's intrinsic-curvature
+departure from the de~Sitter substrate, $16\pi\rho={}^{3}R+K^{2}-K_{ij}K^{ij}-2\Lambda$, **the Hamiltonian
+constraint, of which $\rho=m'/4\pi r^{2}$ is the spherical instance**."*
+⇒⇒ ***That is the GENERAL FORM of this paper's own central identity — `prop:bend`, which it proves and works a check
+on — and it was sitting in the open-problems section.*** *Rehomed beside the proposition as `eq:bend-general`, with
+a paragraph stating that the departure-from-substrate reading is not an artefact of the symmetry the rest of the
+paper works in.*
+
+**⌗ THE THREE DESTINATIONS, EXERCISED:**
+*· **UPSTREAM** — the general identity, to `prop:bend`;*
+*· **`CONSOLIDATE`** — the account of what was known when, opened as **THE REHOMING RECORD**, where every pass's
+story goes from here;*
+*· **STAYS** — and it is narrower: ***not "the emergence of the bend" but the matter content's own generative law
+where the construction does not supply one — a dynamics for the CURVE, as against the ordinary leaf evolution that
+carries it.***
+
+⌗ ***3,061 → 1,796 characters in the frontier section, and the PAPER GREW by 784. Nothing lost: the identity moved,
+the results kept their citations, the story is recorded.*** *`check_compile` green, P8 now at **zero** temporal
+paragraphs.*
+
+⇒ *Four passes left: `matter_sector`, `boundary` (1 each), `cosmogenesis` (2), and **`CR_cosmology` (8, half the
+campaign)** — plus P7's story-move.*
+
 ### Revision r2580 — 2026-08-11 (main line). **THE REHOMING CAMPAIGN — and its scope is five papers, not thirteen.**
 
 **⛭⛭⛭ THE PRINCIPLE, and it names what this line has been getting wrong all session.** *Daryl: **"pull every unknown

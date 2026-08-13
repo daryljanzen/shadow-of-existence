@@ -1,10 +1,43 @@
 ---
 name: consolidate-the-plan-and-index-the-programme
 kind: STATE
-current: frozen
+current: r2581+c54.207
 job: Consolidate the plan and index the programme — the arcs (§2), the sequence (§13), the standing actions (§14), and §16 THE DEVELOPMENT RECORD, which is where RG-1 moves a paper's past state.
 sources: [cowork]
 ---
+
+## ⛭⛭ THE REHOMING RECORD — where each paper's horizon moved, and when
+
+*Opened r2581. **This is where the STORY goes.** A paper is a map of the present state; when its horizon moves back,
+the newly-known content is rehomed upstream into the physics and **the account of what was known when belongs
+here** — not in the paper, where it reads as a changelog.*
+
+### ⓵ `slicing_operator` (P8) · `sec:open` · rehomed r2581
+
+**WHAT WAS OPEN WHEN THE PAPER WAS WRITTEN.** *"The emergence of the bend" — **why** a cut bends as it does, as
+against **what** the bend is. The paper had the spherical identity $\rho=m'/4\pi r^{2}$ (`prop:bend`) and named the
+dynamics as "the deepest question the construction opens onto".*
+
+**WHAT MOVED, AND WHERE IT CAME FROM.**
+*· **the general leaf** — $16\pi\rho={}^{3}R+K^{2}-K_{ij}K^{ij}-2\Lambda$, the Hamiltonian constraint, of which the
+spherical identity is one case. ⇒ ***Rehomed upstream beside `prop:bend` as `eq:bend-general`, where it belongs: it
+is the general form of this paper's own central identity and had been sitting in the open-problems section.***
+*· **the confined case** — the TT mode on a wave equation, the wave's energy carried by the leaf's shear
+(`JanzenDynamics`);*
+*· **the boundary** — the wall of `JanzenRange`, the rigidity of a single global sweep;*
+*· **beyond it** — ordinary leaf evolution, since the framework leaves GR's dynamics unchanged, with the canonical
+formulation in `JanzenCanonicalTime`;*
+*· **the branch-point crossing** — well posed at $r=0$ and structurally governed, with a concrete matter model in
+`JanzenCosmogenesis`.*
+
+**WHAT STAYED OPEN, AND IT IS NARROWER THAN THE ORIGINAL FRAMING.** ⇒ ***Not "the emergence of the bend" but the
+matter content's own generative law where the construction does not supply one — a dynamics for the CURVE, as
+against the ordinary leaf evolution that carries it.***
+
+⌗ *The frontier paragraph went from **3,061 to 1,796 characters** and now states only what is open. **Nothing was
+lost**: the general identity moved upstream, the results kept their citations, and the account of the move is
+this entry.*
+
 
 > ## ⌗ FROZEN RECORD — a dated consolidation log, marked r2548
 >
