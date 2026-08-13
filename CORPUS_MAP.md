@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2648 — 2026-08-11 (main line). **A REWRITE ACCOMPANIED INSTEAD OF REPLACING — my own, sixty revisions old, in `sec:diffusion-scale`.**
+
+**⛔ THE DEFECT.** *At r2588 this line de-narrated the section by writing a clean paragraph — **and left the original
+standing beneath it**:*
+
+    The acoustic scale is met at the directly measured H_0; the diffusion scale is not free to follow it.
+    Holding \ell_* to its measured value fixes the onset redshift, and theta_D/theta_* then follows
+    with nothing left to adjust.
+
+    ** The diffusion scale is not. **  Holding \ell_{*} to its measured value fixes the onset redshift ...
+
+⇒ ***An orphan fragment, then a sentence repeating the paragraph above. `check_compile`, `check_revleak` and
+`check_paststate` all passed — **nothing looks at whether a paper says the same thing twice**, and the stutter read
+as prose.***
+⌗ *Found by following r2647's "what DOES work" thread into the section — **not by any check**. Repaired.*
+
+**⛭ THE RULE:** ***when you rewrite a passage, delete the old one in the same edit and re-read the seam. A rewrite
+that accompanies compiles, passes every gate, and is invisible to the writer because they are reading the version
+they just wrote.***
+
+⚠⚠ **AND THE GATE BUILT FOR IT DOES NOT YET WORK, WHICH IS RECORDED IN THE GATE ITSELF.** *`check_dupes` finds and
+baselines **12** near-duplicate pairs — but **four attempts to make it fire on an injected duplicate did not fire
+it**, and the cause was not isolated before the turn closed.*
+⇒ ***So it reports and does not PROVE. A gate that has never failed on a seeded injection is a measurement, not a
+guarantee — and saying so is worth more than a green tick that was not earned.***
+
 ### Revision r2647 — 2026-08-11 (main line). **THE CANCELLATION DOES NOT REACH THE ODD/EVEN RATIO — r2646's gate survives its own test.**
 
 **⌗ THE ESCAPE THAT WOULD HAVE OVERTURNED IT.** *`CR_cosmology`: "**in the ratio the Thomson physics and the
