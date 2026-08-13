@@ -71,6 +71,7 @@ branch, correctly done, and invisible.*** *`L-700` is that work, landed r2507.*
 | *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2544)* | — | — | — |
 | *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2549)* | — | — | — |
 | *(none outstanding — merged at r2559)* | — | — | — |
+| `claude/cosmological-relativity-c54-sn2msi` | `5835241` | cc54 | **cc54's four dispatch items** — A2 (L-806: a massive mode freezes too, closing PO-7 inversion ⓷) · A10 (L-807: the peak-4-8 estimator recovers a set phase, envelope-independent, closing inversion ⓶) · A9 (L-808: the Nariai closed form extends as a series in the horizon separation ε~√(M_N−M)) · A7 (L-809: the one-loop quartic is a constant vacuum energy p0 absorbs into Λ). Four receipts, all verified · merged current to r2566 |
 
 ---
 
