@@ -416,15 +416,11 @@ it is a change of \emph{shape} at high multipole, and rescaling the amplitude to
 worsen the tail rather than repair it. \emph{What stands between the derivation and a verdict is therefore the
 likelihood confrontation alone}---a parameter refit, not a further calculation of this kind. That refit is bounded in \S\ref{sec:refit-bound} below.
 
-\subsection{The signature at the directly measured rate}\label{sec:refit-bound}
-Two features of this cosmology's acoustic scale are worth separating, because only one of them is a
-prediction. The angular scale $\ell_{*}=\pi D_{M}/r_{s}$ is \emph{independent of $H_{0}$} here: both lengths
-scale as $1/H_{0}$ on a matter-and-substrate rate, so the ratio does not know about it. In flat $\Lambda$CDM
-there is no free early datum---the sound horizon is fixed by the matter and baryon densities---so the measured
-angle \emph{does} determine $H_{0}$, and that is the origin of the lower value inferred from the microwave
-background. Here the branch point's radiation amplitude takes that constraint instead, and $H_{0}$ is left to be the
-directly measured one\rcpt{H0_acoustic_angle_and_seam}. \emph{So the acoustic scale is an accommodation, and
-it is spent.}
+\subsection{The diffusion scale, and the error budget}\label{sec:diffusion-scale}
+
+The acoustic scale is met at the directly measured $H_0$; the diffusion scale is not free to follow it.
+Holding $\ell_*$ to its measured value fixes the onset redshift, and $\theta_D/\theta_*$ then follows
+with nothing left to adjust.
 
 The diffusion scale is not. Holding $\ell_{*}$ to its measured value fixes the onset redshift, and
 $\theta_{D}/\theta_{*}$ then follows with nothing left to adjust: it varies from $+43\%$ to $-3\%$ across the
@@ -444,6 +440,8 @@ $-0.11\%$\rcpt{PEEB_peebles_on_the_set_rate}. The same integration returns $z_{*
 radiation-included rate, against the $1090$ of the standard treatment, which is the check that the ionisation
 history is being handled correctly.
 
+\subsection{The integrated Sachs--Wolfe contribution across the first-peak region}\label{sec:isw}
+
 The first acoustic peak is a separate matter and it does not move. Its offset from $\ell_{*}$---$220$ against
 $301.7$---is largely the phase shift the potential's decay imparts while the modes are driven, and that decay
 has the same closed form on the collapse leg as on an expanding radiation era (\S\ref{sec:envelope}), so it
@@ -462,6 +460,80 @@ not a refit but a different cosmology. \emph{So the shift has a floor, and the f
 state this as a bound and not as a likelihood: a full comparison fits the whole spectrum with every parameter
 and its covariances, where this fixes one observable and minimises one derived ratio. It settles that the
 signature does not dissolve under reabsorption; it does not settle the verdict.
+
+\subsection{What the instrument's residual is made of}\label{sec:residual-decomposition}
+
+The two-arm comparison's floor is set by components of the instrument rather than by either
+cosmology. Two candidates for the accuracy it lacks were measured before either was built, and what
+they turn out to be is stated here.
+
+\emph{Two of the candidates for that accuracy were measured before either was built, and one of them
+cannot pay at all}\rcpt{P15_what_is_left_is_lensing_and_not_reionisation}. Above $\ell\simeq40$ the
+whole effect of reionisation on the temperature spectrum is the constant screening $e^{-2\tau}$---the
+second visibility bump contributes only below $\ell\simeq30$, outside this comparison's range---and
+the comparison fits one amplitude in closed form. \emph{An amplitude fitted as
+$A=(m^{\mathsf T}Fd)/(m^{\mathsf T}Fm)$ is homogeneous of degree $-1$ in the model, so rescaling the
+model returns $A/s$ and leaves the residual unchanged}: the degeneracy is exact rather than
+approximate, and it is a property of the statistic rather than of the size of $\tau$. Checked at
+$\tau=0.054$, $0.10$ and $0.30$, the change in $\chi^{2}$ is zero to machine precision at all three.
+\emph{Lensing is a different matter.} A smoothing in multipole, scanned in width, takes the control
+from $1320$ to $921$; and a width that \emph{grows} with $\ell$ beats a constant one by a factor of
+$1.8$ in the improvement, each compared at its own optimum, so the preference is for a shape and not
+merely for a size---\emph{which is lensing's own signature, since a deflection of fixed angle
+subtends a larger fraction of an acoustic wavelength at high $\ell$}. \emph{We state what that is and
+is not.} The width is fitted, so the improvement bounds what a derived calculation has to play for
+rather than measuring a lensing amplitude; and even at its own optimum some $70\%$ of the residual
+survives it. \emph{So the lensed spectrum is the next thing this instrument owes, and it is not the
+last one.}
+
+\emph{That calculation has since been done, and it comes in under the bound the fit set.} Applying
+$\Lambda$CDM's own lensed-to-unlensed ratio to the arm---a derived operation with no free width---takes
+the control from $1320$ to $989$, an improvement of $331$, concentrated in the damping tail where a
+fixed-angle deflection fills the troughs. \emph{That is below the $400$ the fitted width bounded, as a
+zero-parameter derivation must be}, and the acoustic peaks do not move under it. The corpus's own
+first-order kernel overshoots the bound to $508$ by breaking down in that same tail---returning a
+spurious $+13\%$ at $\ell=1900$ where the full operator gives $+6.5\%$---which is why the derived
+number is the full operator's. \emph{Most of the fitted headroom is recovered by a genuine lensing,
+and about $989$ of the $1320$ survives it}: the verdict of the last paragraph stands from the derived
+side, lensing real and not the last build\rcpt{P15_derived_lensing_on_the_lcdm_arm}.
+
+\emph{And what the residual is MADE of was decomposed alongside it, which is what let the size of that
+gain be anticipated rather than
+discovered}\rcpt{P15_the_residual_is_contrast_and_the_lensing_potential_is_derived}. Projecting named
+templates through the same inverse covariance the comparison uses, the peak \emph{positions} account for
+a tenth of a per cent of the residual---\emph{which is why the acoustic peaks do not move under the
+lensing above, and the two findings corroborate each other}---while the peak-trough \emph{contrast} at
+fixed position accounts for two-fifths of it, this transfer's contrast running some thirteen per cent
+too high. \emph{Reducing contrast without moving peaks is what lensing does.} A smooth multiplicative
+envelope accounts for a further sixth, and \emph{about half the residual is in neither}---so a complete
+lensing calculation was expected to leave a comparable amount behind, and it did.
+
+\subsection{The shear coefficient, derived}\label{sec:shear-coefficient}
+
+\emph{That derivation is now in hand, and it settles the question against the
+fit}\rcpt{P15_the_shear_coefficient_derived_not_remembered}. The coefficient is measured by running the same
+oscillator twice on the same background: once as the perfect tight-coupled fluid, which is undamped by
+construction, and once as a photon hierarchy carried to $\ell=24$ with Thomson scattering, the polarisation
+multipoles evolved alongside and the baryons given their own velocity. \emph{Their ratio is the damping and
+nothing else}---the slowly varying prefactor, the drift of the sound speed and the baryon-loading dependence
+of the oscillation are common to the two runs and divide out identically---and reading it locally, between
+consecutive extrema, lets the residual be extrapolated in $(k/\tau')^{2}$ rather than smeared over an
+interval. With the polarisation multipoles suppressed the quadrupole's scattering term reduces to
+$-\tfrac{9}{10}\tau'F_{2}$, which is the unpolarised closure, and the coefficient comes back as $0.8852$
+against $8/9$; with them carried it is $1.0618$ against $16/15$. \emph{The polarisation correction itself,
+which is the quantity in dispute, is a factor $1.1996$ against $6/5$: three parts in ten thousand.} Both
+absolute values sit about half a per cent low by an amount proportional to the coefficient, so the residual is
+a common normalisation and cancels in the ratio.
+
+\subsection{The signature at the directly measured rate}\label{sec:refit-bound}
+Two features of this cosmology's acoustic scale are worth separating, because only one of them is a
+prediction. The angular scale $\ell_{*}=\pi D_{M}/r_{s}$ is \emph{independent of $H_{0}$} here: both lengths
+scale as $1/H_{0}$ on a matter-and-substrate rate, so the ratio does not know about it. In flat $\Lambda$CDM
+there is no free early datum---the sound horizon is fixed by the matter and baryon densities---so the measured
+angle \emph{does} determine $H_{0}$, and that is the origin of the lower value inferred from the microwave
+background. Here the branch point's radiation amplitude takes that constraint instead, and $H_{0}$ is left to be the
+directly measured one\rcpt{H0_acoustic_angle_and_seam}. \emph{So the acoustic scale is an accommodation, and
+it is spent.}
 
 \emph{This was reported here as a transfer argument contradicted by a direct computation, and at
 r2376+c54.164 that reading is withdrawn: the computation does not hold still.} The reasoning above
@@ -660,21 +732,6 @@ absorb, which is precisely the reason it must not be permitted to.} The derivati
 named and owed: the free-streaming photon hierarchy carrying the polarisation multipoles, from which the
 coefficient falls out instead of being chosen.
 
-\emph{That derivation is now in hand, and it settles the question against the
-fit}\rcpt{P15_the_shear_coefficient_derived_not_remembered}. The coefficient is measured by running the same
-oscillator twice on the same background: once as the perfect tight-coupled fluid, which is undamped by
-construction, and once as a photon hierarchy carried to $\ell=24$ with Thomson scattering, the polarisation
-multipoles evolved alongside and the baryons given their own velocity. \emph{Their ratio is the damping and
-nothing else}---the slowly varying prefactor, the drift of the sound speed and the baryon-loading dependence
-of the oscillation are common to the two runs and divide out identically---and reading it locally, between
-consecutive extrema, lets the residual be extrapolated in $(k/\tau')^{2}$ rather than smeared over an
-interval. With the polarisation multipoles suppressed the quadrupole's scattering term reduces to
-$-\tfrac{9}{10}\tau'F_{2}$, which is the unpolarised closure, and the coefficient comes back as $0.8852$
-against $8/9$; with them carried it is $1.0618$ against $16/15$. \emph{The polarisation correction itself,
-which is the quantity in dispute, is a factor $1.1996$ against $6/5$: three parts in ten thousand.} Both
-absolute values sit about half a per cent low by an amount proportional to the coefficient, so the residual is
-a common normalisation and cancels in the ratio.
-
 \emph{So the coefficient is $16/15$, and adopting it makes the control worse}: $\chi^{2}$ per degree of
 freedom on the $\Lambda$CDM arm moves from $22.5$ to $28.6$, the $1123$ units the previous paragraph
 recorded. \emph{We take the derivation and pay the $\chi^{2}$}, because a coefficient chosen because it fits
@@ -722,47 +779,6 @@ before: a control seven times worse than a fit cannot certify what it is compare
 is the size of the gap and the fact that no missing sector remains named}---what stands between this
 instrument and a control that could arbitrate is accuracy rather than a piece of physics we know we
 have left out.
-
-\emph{Two of the candidates for that accuracy were measured before either was built, and one of them
-cannot pay at all}\rcpt{P15_what_is_left_is_lensing_and_not_reionisation}. Above $\ell\simeq40$ the
-whole effect of reionisation on the temperature spectrum is the constant screening $e^{-2\tau}$---the
-second visibility bump contributes only below $\ell\simeq30$, outside this comparison's range---and
-the comparison fits one amplitude in closed form. \emph{An amplitude fitted as
-$A=(m^{\mathsf T}Fd)/(m^{\mathsf T}Fm)$ is homogeneous of degree $-1$ in the model, so rescaling the
-model returns $A/s$ and leaves the residual unchanged}: the degeneracy is exact rather than
-approximate, and it is a property of the statistic rather than of the size of $\tau$. Checked at
-$\tau=0.054$, $0.10$ and $0.30$, the change in $\chi^{2}$ is zero to machine precision at all three.
-\emph{Lensing is a different matter.} A smoothing in multipole, scanned in width, takes the control
-from $1320$ to $921$; and a width that \emph{grows} with $\ell$ beats a constant one by a factor of
-$1.8$ in the improvement, each compared at its own optimum, so the preference is for a shape and not
-merely for a size---\emph{which is lensing's own signature, since a deflection of fixed angle
-subtends a larger fraction of an acoustic wavelength at high $\ell$}. \emph{We state what that is and
-is not.} The width is fitted, so the improvement bounds what a derived calculation has to play for
-rather than measuring a lensing amplitude; and even at its own optimum some $70\%$ of the residual
-survives it. \emph{So the lensed spectrum is the next thing this instrument owes, and it is not the
-last one.}
-
-\emph{That calculation has since been done, and it comes in under the bound the fit set.} Applying
-$\Lambda$CDM's own lensed-to-unlensed ratio to the arm---a derived operation with no free width---takes
-the control from $1320$ to $989$, an improvement of $331$, concentrated in the damping tail where a
-fixed-angle deflection fills the troughs. \emph{That is below the $400$ the fitted width bounded, as a
-zero-parameter derivation must be}, and the acoustic peaks do not move under it. The corpus's own
-first-order kernel overshoots the bound to $508$ by breaking down in that same tail---returning a
-spurious $+13\%$ at $\ell=1900$ where the full operator gives $+6.5\%$---which is why the derived
-number is the full operator's. \emph{Most of the fitted headroom is recovered by a genuine lensing,
-and about $989$ of the $1320$ survives it}: the verdict of the last paragraph stands from the derived
-side, lensing real and not the last build\rcpt{P15_derived_lensing_on_the_lcdm_arm}.
-
-\emph{And what the residual is MADE of was decomposed alongside it, which is what let the size of that
-gain be anticipated rather than
-discovered}\rcpt{P15_the_residual_is_contrast_and_the_lensing_potential_is_derived}. Projecting named
-templates through the same inverse covariance the comparison uses, the peak \emph{positions} account for
-a tenth of a per cent of the residual---\emph{which is why the acoustic peaks do not move under the
-lensing above, and the two findings corroborate each other}---while the peak-trough \emph{contrast} at
-fixed position accounts for two-fifths of it, this transfer's contrast running some thirteen per cent
-too high. \emph{Reducing contrast without moving peaks is what lensing does.} A smooth multiplicative
-envelope accounts for a further sixth, and \emph{about half the residual is in neither}---so a complete
-lensing calculation was expected to leave a comparable amount behind, and it did.
 
 \emph{One further object is built here and it is not the one the number above rests on.} The operator
 applied above is $\Lambda$CDM's own lensed-to-unlensed ratio---validated, and the right instrument for
@@ -1012,7 +1028,6 @@ identified above, and the series is not}.
 since it is not downstream of this spectrum's shape: the metric-singularity structure, the continuation, the
 light-element abundances, the acoustic \emph{scale} met at the directly measured $H_{0}$, and the
 expansion-rate resolution.
-
 
 A second check fell out of the same setup, and it is stated here at its actual strength. Pinning the
 \emph{measured} acoustic angle $100\theta_{*}=1.04109$---equivalently $\ell_{A}=\pi/\theta_{*}=301.76$---on the

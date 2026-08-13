@@ -1,7 +1,7 @@
 ---
 name: the-refit-bound-plan
 kind: PLAN
-current: r2587+c54.207
+current: r2588+c54.207
 description: THE sec:refit-bound PLAN — 46 paragraphs, 57 KB, 59% narration, chronologically interleaved. Why it cannot go paragraph-by-paragraph, what the present state actually is, and the order of operations that keeps it lossless. Written r2586.
 sources: [chat]
 ---
@@ -73,6 +73,26 @@ surviving claims listed beside them.** ***The paper is untouched. Every later st
 claim it binds**, because the rewritten section must keep each receipt attached to the claim it checks.*
 ⇒ *`check_receipts` and `check_loci` will catch a dropped binding — **but only if the claim survives**; a claim
 deleted with its receipt fails nothing.* ⚠ ***That is the failure mode this step exists to prevent.***
+
+## ✔✔ STEP ⓷a DONE r2588 — the orphans have homes, and all 32 receipts survive
+
+**⌗ FOUR NEW SUBSECTIONS IN P15**, *each named for what it establishes rather than for when it was worked:*
+
+| new subsection | what it carries | receipts |
+|---|---|---|
+| **`sec:diffusion-scale`** | ***the diffusion scale is not free to follow the acoustic one***: $\theta_D/\theta_*=+13.96\%\pm0.89\%$, an error budget **dominated by the measurement of $H_0$ itself** | `UNC_error_budget`, `PEEB_peebles_on_the_set_rate` |
+| **`sec:isw`** | ***the early ISW contribution is a nearly flat multiplicative factor across the first-peak region*** — ten per cent in amplitude, varying by two parts in a hundred between $\ell=150$ and $\ell=300$, so it **displaces the maximum by one or two multipoles rather than by tens** | `ISW_line_of_sight`, `M2_reabsorption_minimization` |
+| **`sec:residual-decomposition`** | ***what the instrument's floor is MADE of*** — derived lensing on the control arm, the template decomposition, and reionisation as a constant screening above $\ell\simeq40$ | `P15_derived_lensing_on_the_lcdm_arm`, `P15_the_residual_is_contrast_...`, `P15_what_is_left_is_lensing_and_not_reionisation` |
+| **`sec:shear-coefficient`** | ***the shear coefficient derived rather than remembered***, by running the same oscillator twice on the same background | `P15_the_shear_coefficient_derived_not_remembered` |
+
+⇒⇒ ***All 32 receipts originally bound in `sec:refit-bound` are still bound somewhere in P15. Nothing lost, verified
+by the same diff that caught the loss at r2587.***
+
+⌗ *And these were never refit-bound content. **The diffusion scale, the ISW factor, the instrument's residual and
+the shear coefficient are standalone results** — they sat in that section because that is where the work happened,
+which is exactly the notebook shape r2587 named.*
+
+---
 
 ## ⛔⛔⛭ STEP ⓸ FIRED ON STEP ⓷'s DRAFT — r2587, and this is the plan working
 

@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r2588 — 2026-08-11 (main line). **STEP ⓷a — the eleven orphaned results have homes, and all 32 receipts survive.**
+
+**⌗ FOUR NEW SUBSECTIONS IN P15**, *each named for **what it establishes** rather than for when it was worked:*
+*· **`sec:diffusion-scale`** — ***the diffusion scale is not free to follow the acoustic one***: holding $\ell_*$
+to its measured value fixes the onset redshift and $\theta_D/\theta_*$ follows with nothing left to adjust,
+$+13.96\%\pm0.89\%$, **an error budget dominated by the measurement of $H_0$ itself**;*
+*· **`sec:isw`** — ***the early ISW contribution is a nearly flat multiplicative factor across the first-peak
+region***, ten per cent in amplitude varying by two parts in a hundred between $\ell=150$ and $\ell=300$, so it
+**displaces the maximum by one or two multipoles rather than by tens**;*
+*· **`sec:residual-decomposition`** — ***what the instrument's floor is MADE of***: derived lensing on the control
+arm, the template decomposition, and reionisation as a constant screening above $\ell\simeq40$;*
+*· **`sec:shear-coefficient`** — ***derived rather than remembered***, by running the same oscillator twice on the
+same background.*
+
+⇒⇒ ***ALL 32 RECEIPTS ORIGINALLY BOUND IN `sec:refit-bound` ARE STILL BOUND SOMEWHERE IN P15.*** *Verified by the
+same diff that caught the loss at r2587 — **the check that found the failure is the check that confirms the fix**.*
+
+⌗ ***And none of the four was refit-bound content.*** *The diffusion scale, the ISW factor, the instrument's
+residual and the shear coefficient are **standalone results that sat there because that is where the work
+happened** — the notebook shape r2587 named, now drained of four of its lodgers.*
+
+⌗ *`sec:refit-bound`: **57,451 → 49,079 characters, 46 → 40 paragraphs**, 11 still narrating. **Step ⓷b — the
+present-state rewrite — is now a smaller and better-defined job than it was.***
+
 ### Revision r2587 — 2026-08-11 (main line). **STEP ⓸ FIRED ON STEP ⓷'s DRAFT — it caught this line losing eleven live results, and no gate would have.**
 
 **⌗ WHAT HAPPENED.** *A present-state `sec:refit-bound` was written from the six surviving claims: **9 paragraphs,
