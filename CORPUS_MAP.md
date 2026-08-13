@@ -146,6 +146,26 @@ sources: [cowork, chat]
 
 
 
+### Revision r2655 — 2026-08-11 (main line). **THE CHART HID PLATEAUS — and "what is going up?" had an answer the table could not show.**
+
+**⛔ THE BUG.** *`TABLE_HISTORY` is appended only when the number MOVES, so nine idle revisions wrote nothing and the
+chart rendered them identically to nine consecutive drops.*
+⇒ ***The **ten-revision gap** at `r2621→r2631` sat beside `r2636→r2639`'s **one-revision** $-4$ and looked the
+same. And a plateau is exactly what r2622 called the healthy shape — **the display was hiding the signal it was
+built to show**.***
+
+✔ *Fixed: the chart now reads **`+1/3r -1/10r -1/4r -1 -4/3r -2 -1/4r -1 0/9r`** — every delta carries the
+revisions it took, and a plateau states itself.*
+
+**⛭⛭ AND THE QUESTION HAD A REAL ANSWER.** *In the nine revisions the table held at 17: **28 receipts, 3 gates, 7
+scripts, 1 method document** — and, the thing the table cannot show, ***every one of them NARROWED a row without
+removing it***.*
+⇒ *So **`NARROWED`** — the sum of the register's dated moves, now **57** — is in the stamp.*
+
+**⛭ THE RULE:** ***a log written only on change cannot distinguish "nothing happened" from "nothing was logged". If
+the absence of an entry is meaningful, the chart must carry TIME as well as VALUE — and pair every count of what
+remains with a count of what was learned about it.***
+
 ### Revision r2654 — 2026-08-11 (main line). **`THE_HANDOFF` — the split signal turned, and the risk is three judgements a script cannot derive.**
 
 **⌗ THE SIGNAL.** *r2620 set the condition: **do not split while `LATENT` exceeds `COMPUTED`**.*

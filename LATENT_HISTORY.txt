@@ -85,3 +85,4 @@ r2651  COMPUTED    the floor fails at cubic order: pi^2 phi is a square times a 
 r2652  COMPUTED    thermal regularity selects a branch only for Gamma >= -1/4; r2651s operator reaches -47.8
 r2653  INSTRUMENT  scripts/stamp.py: one command emits the header, so it cannot drift from the files
 r2654  INSTRUMENT  THE_HANDOFF: the signal turned (C5>L4); three hand-maintained judgements named as the risk
+r2655  INSTRUMENT  the chart hid plateaus -- appended only on moves; NARROWED added as the depth counter

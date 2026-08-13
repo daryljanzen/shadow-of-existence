@@ -28,3 +28,4 @@ r2639  21  2/4  OPEN-DOWNSTREAM retired and PRECISION reclassified -- the bucket
 r2640  19  2/4  parked items no longer counted (book x2); PO-9 link (e) reproduced
 r2644  18  2/4  PO-9 ANSWERED: the dimension is not settled by least-arbitrariness and stays bounded below only
 r2645  17  2/4  PO-3 ANSWERED -- both clauses, and both were already in its own row since c54.42-c54.62
+r2655  17  2/4  no move -- and the chart now SAYS so: nine revisions at 17 while NARROWED rose to 57
