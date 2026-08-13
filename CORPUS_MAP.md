@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2561 — 2026-08-11 (main line). **THE COMPANION'S THREE-WAY RULE IS A FOUR-WAY RULE, and the fourth bucket is the default and the largest.**
+
+**⌗ THE CLAIM UNDER TEST.** *`L-218`: "the companion's rule is **enforceable rather than aspirational**: every claim
+it makes is ESTABLISHED (cite the receipt), OPEN (cite `PROTECTED_OPEN`), or DO-NOT-ASSERT (say so and say why)."*
+
+**⓵ THE r2415 FIGURES ARE STALE IN THE FAVOURABLE DIRECTION:** *receipts **279 → 399**, struck rows **165 → 268**.
+The machinery is **stronger** than the row claims.*
+
+**⛭⛭ ⓶ BUT THE RULE'S SHAPE IS AN ANCHOR COUNT, NOT A COVERAGE FRACTION.** *Measured as what a companion can cite:*
+***ESTABLISHED 308 distinct receipts · OPEN 9 items · DO-NOT-ASSERT 16 phrases = 333 anchors, against 7480 sentences
+of substance.***
+⇒⇒ ***So the honest default for everything unanchored is "the corpus DISCUSSES this; it is not receipt-bound" — and
+that covers the overwhelming majority of what a reader will ask.***
+
+**⌗ AND THAT IS THE RULE WORKING, NOT FAILING.** *The usual companion's failure is **answering confidently about
+discussion**; this one cites an anchor or it does not.*
+⇒ ***The price of enforceability is saying "discussed, not established" most of the time — and naming the fourth
+state is what keeps it honest rather than SILENT, because a companion with no legal answer to an unanchored question
+will invent one.*** *Written into `COMPANION_SPEC` as the fourth bucket.*
+
+**⛭ THE RULE:** ***when a scheme sorts claims into N states, check what fraction of the material falls outside all
+N. If it is most of it, the scheme has an unnamed default — and an unnamed default is where the dishonesty goes.***
+
+⚠ **AND ONE MEASUREMENT WAS DISCARDED RATHER THAN REPORTED.** *A first attempt scored **1360 `\emph{}` passages**
+against **104 nearby `\rcpt{}`** and produced **"8% coverage"**.* ⇒ ***Meaningless: `\emph{}` is this corpus's
+EMPHASIS voice, not a claim marker, so the denominator counted every emphasised phrase in seventeen papers. A wrong
+denominator produces a number that looks like a finding, and the only defence is asking what the denominator IS
+before dividing.***
+
 ### Revision r2560 — 2026-08-11 (main line). **`L-207` AND `L-805` STRUCK — queued work belongs on the thing that gates it, not on a lead list.**
 
 **⌗ `L-207`** *— `OPEN_PROBLEMS_MAP`'s A·1, P8's **"the deepest open question the construction raises."** Its **⓵

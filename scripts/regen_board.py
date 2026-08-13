@@ -140,7 +140,7 @@ LEADS = {
    "stale the moment the fork cut a revision \u2014 **the redness measured the handoff queue, not "
    "currency**. Now measured against the last ABSORBED revision, using `ABSORPTION.md`'s already-gated "
    "`IN-FLIGHT:` line. Changes nothing on 56's tree, which is the test", [], 3, 0),
- 'L-218': ("\u2714 \u24f6 done r2478 (`COMPANION_SPEC`) \u00b7 \u24f5 the reader-package formats via pandoc in CI \u00b7 \u24f7 the contribution, last", [], 3, 0),
+ 'L-218': ("\u26ed **THE RULE TESTED r2561: enforceable, and enforceable means SEVERE** \u2014 **308 receipts + 9 `PROTECTED_OPEN` items + 16 non-claim phrases = 333 citable anchors against 7480 sentences**. \u21d2 **So the three-way rule is in practice FOUR-way and the fourth bucket \u2014 DISCUSSED \u2014 is the default and the largest.** \u2714 \u24f6 done r2478 (`COMPANION_SPEC`) \u00b7 \u24f5 the reader-package formats via pandoc in CI \u00b7 \u24f7 the contribution, last", [], 3, 0),
  }
 
 

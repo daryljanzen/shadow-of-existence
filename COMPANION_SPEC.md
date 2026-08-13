@@ -3,8 +3,35 @@ name: companion-spec
 kind: STATE
 description: The specification for the AI companion to the corpus — what it may assert, what it must refuse, and the declarations that make the difference checkable. Written before any code, because the SPEC decides whether the thing is trustworthy.
 sources: [chat]
-current: r2550+c54.205
+current: r2561+c54.206
 ---
+
+## ⛭⛭⛭ THE FOURTH BUCKET — added r2561, and it is the default and the largest
+
+*The rule this spec enforces is **ESTABLISHED / OPEN / DO-NOT-ASSERT**. Measured against the corpus it would run on:*
+
+| bucket | anchors a companion can cite |
+|---|---|
+| **ESTABLISHED** | ***308*** distinct receipts cited in the papers |
+| **OPEN** | ***9*** `PROTECTED_OPEN` items |
+| **DO-NOT-ASSERT** | ***16*** explicit non-claim phrases |
+| ***DISCUSSED*** | ***everything else — and the corpus has 7480 sentences of substance*** |
+
+⇒⇒ ***So the three-way rule is in practice a FOUR-way one, and the fourth bucket is the default and by far the
+largest.***
+
+**⌗ AND THAT IS THE RULE WORKING, NOT FAILING.** *The usual companion's failure is **answering confidently about
+discussion**. This one cites an anchor or it does not —* ***and the price of enforceability is that it must say
+"the corpus discusses this; it is not receipt-bound" most of the time.***
+⇒ ***Naming the fourth state is what keeps it honest rather than silent: without it, an unanchored question has no
+legal answer at all, and a companion with no legal answer will invent one.***
+
+⚠ *Not a criticism of the anchor count: **308 anchors is 308 more than an ordinary book has, and every one can
+fail**. The scale is given so the count means something, not as a denominator to divide by.*
+⌗ *And one measurement was **discarded rather than reported**: an attempt to score `\emph{}` passages against
+nearby `\rcpt{}` gave "8% coverage", which is meaningless — **`\emph{}` is the corpus's emphasis voice, not a
+claim marker.***
+
 
 ## ⛭ BROUGHT CURRENT r2548 — the three-state rule held across six closures
 

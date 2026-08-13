@@ -51,7 +51,7 @@ sources: [chat]
 | `CATEGORY_THEORY_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.201 | 5 |
 | `COLLAPSE_EXCURSION_TRANSFER_build.md` | STATE | PHASE 7's ATTACK MANUAL — the one build on the progenitor collapse excursion (L2) behind open-problems families 1/3/4/5. Referenced live by eleven documents including THE_PLAN, PHASE7_BUILD_LEDGER and both open-problems documents. | — | c54.201 | 5 |
 | `COMBINATORICS_LEDGER.md` | STATE | The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8. | — | c54.201 | 5 |
-| `COMPANION_SPEC.md` | STATE | (declared in frontmatter) | — | c54.205 | 1 |
+| `COMPANION_SPEC.md` | STATE | (declared in frontmatter) | — | c54.206 | 0 |
 | `COMPLEX_ANALYSIS_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.201 | 5 |
 | `CONFORMAL_GEOMETRY_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.201 | 5 |
 | `CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md` | STATE | Consolidate the plan and index the programme — the arcs (§2), the sequence (§13), the standing actions (§14), and §16 THE DEVELOPMENT RECORD, which is where RG-1 moves a paper's past state. | — | c54.174 | 32 |

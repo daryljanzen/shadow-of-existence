@@ -106,9 +106,9 @@ is**.*
 | **`L-202`** | r2457 | **narrowed twice, still open and still do-not-assert both ways** · the live question is now: **does a MASSIVE trajectory carry a phase?** — the null o |
 | **`L-175`** | r2474 | **the whole row now turns on one question r2474 states**: ***can a second slicing be non-arbitrary — its selection FORCED by the first rather than cho |
 | **`L-165`** | r2475 | ⓵ **the UV clause now has a DEGREE (quartic) and a shape (IR free, UV generic)** — what remains is **defining** the sum, not diagnosing it · ⓶ the clo |
-| **`L-218`** | r2478 | ✔ **② done r2478 — `COMPANION_SPEC.md`** · ① formats via pandoc in CI · ③ contribution, last |
 | **`L-221`** | r2526 | **the question is INVERTED r2526**: not "is there an $R$-odd operator?" but ***what BRIDGE from grading to field exists that is not "be a kernel"?***  |
 | **`L-171`** | r2559 | **`kills/PO-7.md` is COMPLETE r2559** — object named, four checks written, ***all four now pass*** · ***the next step is the register's own: "and Dary |
+| **`L-218`** | r2561 | ✔ ⓶ done r2478 · ***the RULE is tested r2561 and needs a fourth bucket (DISCUSSED), which is the default*** · ⓵ pandoc-in-CI and ⓷ the contribution re |
 
 *6 live rows carry a stated next step; the 6 longest-unworked are shown.*
 
