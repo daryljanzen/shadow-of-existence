@@ -54,6 +54,32 @@ VEINS = {
 # GROUNDED 0-3: how solid the footing is, INFORMS 0-3: how much a vein would learn). **
 # ** A lead with NO vein links is instrument work.  It is not counted as progress on the map. **
 LEADS = {
+ 'L-806': ("\u26ed\u26ed **A2 \u2014 A MASSIVE MODE FREEZES TOO, closing `PO-7` inversion \u24f7 from the massive side.** "
+   "Extending `L-805` with $\\omega^2=c_s^2k^2+m^2a^2$: the mass enters as $m^2a^2$ (from the covariant "
+   "action), and the branch point $a\\to0$ annihilates it while $|aH|$ diverges, so $\\omega/|aH|\\to "
+   "c_skx\\to0$ **independent of $m$** (identical to the digit at $m=0$ and $m=10^5$). \u21d2 a massive "
+   "trajectory carries no phase by failing to freeze, so it does not derive `CRPHI` off $\\{0,\\pi\\}$",
+   ['L-202','L-171'], 3, 2),
+ 'L-807': ("\u26ed\u26ed **A10 \u2014 THE PEAK-4\u20138 ESTIMATOR RECOVERS A SET PHASE, ENVELOPE-INDEPENDENT, closing "
+   "`PO-7` inversion \u24f6.** Injecting synthetic combs with a known $\\phi_{\\rm in}$ under six envelopes "
+   "(damping/width/tilt spanning the CR-vs-control differences by $\\gg8\\%$): $|\\phi_{\\rm out}-\\phi_"
+   "{\\rm in}|<0.005$ and the spread $<0.006$ in $\\phi/\\pi$ \u2014 the estimator reads the phase, not the "
+   "transfer, so the $0.408$ is not an instrument artefact and **hardens**. All three computational "
+   "inversion routes now shut",
+   ['L-171'], 3, 2),
+ 'L-808': ("\u26ed\u26ed **A9 \u2014 THE NARIAI CLOSED FORM EXTENDS off the degenerate member.** Symbolic: the Nariai "
+   "member is $r_n=\\alpha/\\sqrt3=1/\\sqrt\\Lambda$, $M_N=\\alpha/(3\\sqrt3)$, $f''(r_n)=-6/\\alpha^2$; "
+   "the throat is $\\mathrm{dS}_2\\times S^2$ with EQUAL radii ($L_{\\rm dS}^2=2/|f''(r_n)|=r_n^2$); and "
+   "off it the horizons split as $r_n\\pm\\epsilon$ with $\\epsilon\\propto\\sqrt{M_N-M}$. \u21d2 the closed "
+   "form extends as a series in the horizon separation, dS$_2\\times S^2$ its leading term",
+   ['L-165'], 3, 2),
+ 'L-809': ("\u26ed\u26ed **A7 \u2014 THE ONE-LOOP QUARTIC IS A CONSTANT VACUUM ENERGY, and p0 already absorbs it.** "
+   "Computed: the quartic $\\Lambda_c^4/(16\\pi^2)$ is mass/field-INDEPENDENT ($d/dm=0$) \u2014 a pure CC. "
+   "And p0: a constant vacuum energy **is absorbed into that one observed curvature** (the $\\Lambda "
+   "r^2/3$ term, no bare-$\\Lambda$-vs-vacuum split), with $\\ell_P$ a gauge. \u21d2 the quartic's counterterm "
+   "is a CC = the ONE constant, so it is ABSORBED; one constant regulates the leading degree. The "
+   "sub-leading tower is the deeper question",
+   ['L-165'], 3, 2),
  'L-171': ("**PO-7** \u2014 \u26ed **NARROWED r2552 by `kills/PO-7.md`**: the four checks are written and "
    "\u2714 **\u2463 CHAIN NOW CLEARS r2559** (cc54 `L-805`) \u2014 the 0.408 rested on four things "
    "reproduced twice and on **P15's freezing argument**, reproduced nowhere; cc54 ran it: **every "
