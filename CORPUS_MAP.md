@@ -146,6 +146,25 @@ sources: [cowork, chat]
 
 
 
+### Revision r2617 — 2026-08-11 (main line). **EVERY ITEM PRINTS — and printing them showed two duplicates the bucket count concealed.**
+
+**⛔ A SUMMARY LINE IS A LIST WITHHELD.** *`queue.py` printed `NAMED-UNBUILT 6 · STATED-AT-WEIGHT 5 ·
+OPEN-DOWNSTREAM 3 …` — **bucket counts**. Sixteen actual items, each a specific sentence in a specific paper,
+collapsed into five numbers.*
+⇒ ***The counts were honest and the list was still hidden.***
+
+**✔ NOW EVERY ITEM PRINTS ITS OWN LINE** — *all 32, across dark halves, `PROTECTED_OPEN`, ledger work, routed and
+dispatch — ***because the choice of what to attack next is only legible against everything that was not chosen***.
+
+**⌗⌗ AND PRINTING THEM IMMEDIATELY SHOWED TWO DUPLICATES.** *`boundary_paper`'s "the descent onto a spinor sector is
+built as bound leaf-modes" and `groupoid_paper`'s "the discrete skeleton this grades" are **the same object as p0's
+"full propagating spinor field sector"**, which `PO-11` already carries as its own register row.*
+⇒ ***Three ledger lines and one register row for one piece of work — so `NAMED-UNBUILT 6` was overstating the table.
+You cannot see a duplicate in a number.***
+
+**⛭ THE RULE:** ***print the items, not the count of them. A bucket count is compressible precisely because it
+discards what makes two entries the same or different — which is the only thing you needed it for.***
+
 ### Revision r2616 — 2026-08-11 (main line). **`PO-8` STRUCK — an authorised closure sat in the open register for 238 revisions.**
 
 **⛔ THE HOSTAGE.** *`kills/PO-8.md`: **"Closed r2378, Daryl-authorised, with the four checks answered"**, and

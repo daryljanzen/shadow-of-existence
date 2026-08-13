@@ -130,18 +130,28 @@ def main():
               f'{x["narrowed"]:>2}x last r{x["last"] or "—"}   {x["what"][:48]}')
     print()
 
+    # ** r2617: EVERY ITEM, not a bucket count.  Daryl: "That's five separate lists you just pulled
+    # from and you're withholding from me every one of those lists."  ⇒ *** A summary line is a list
+    # withheld.  If a thing is on the table it gets a line, because the choice of what to attack next
+    # is only legible against everything that was not chosen. ***
     lw = ledger_work()
     print(f'  LEDGER WORK -- {len(lw)} qualifications that mean work')
-    for k, n in Counter(x['kind'] for x in lw).most_common():
-        who = ', '.join(sorted({x['paper'] for x in lw if x['kind'] == k}))
-        print(f'     {k:<20} {n:>2}   {who[:46]}')
+    for x in sorted(lw, key=lambda y: (y['kind'], y['paper'])):
+        txt = re.sub(r'\\[a-zA-Z]+|[{}$~\\]', '', x['what'])
+        print(f'     {x["kind"]:<19} {x["paper"][:16]:<16} {txt[:52]}')
     print()
 
     rt, dp = routed(), dispatch()
     print(f'  ROUTED -- {len(rt)}')
     for x in rt:
-        print(f'     {x["id"]:<8} {x["what"][:60]}')
-    print(f'  DISPATCH -- {len(dp)}: {" ".join(x["id"] for x in dp)}')
+        print(f'     {x["id"]:<9} {x["what"][:64]}')
+    print()
+    d = open(os.path.join(ROOT, 'THE_DISPATCH.md'), encoding='utf-8', errors='replace').read()
+    print(f'  DISPATCH -- {len(dp)}')
+    for x in dp:
+        m = re.search(r'\| \*\*' + x['id'] + r'\*\* \|(.{0,240})', d, re.S)
+        txt = re.sub(r'\s+', ' ', re.sub(r'[*`|]', '', m.group(1))) if m else ''
+        print(f'     {x["id"]:<9} {txt[:64]}')
     print()
     print(f'  ⇒⇒ TOTAL ON THE TABLE: {len(live)}')
     print('     ** A turn takes one off, adds one, or leaves it.  All three are informative --')
