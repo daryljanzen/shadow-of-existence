@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2639 — 2026-08-11 (main line). **`OPEN-DOWNSTREAM` retired — the bucket name inverted the relation the papers state. Table 25 → 21.**
+
+**⛔ THE INVERSION.** *The ledger defined the class as "**open, and downstream of something else that is open**" —
+**blocked behind**. The papers say "**downstream-IRRELEVANT**" (P16, twice) and "**None of these unsettles the
+result obtained**" (P15) — meaning ***nothing depends on it***.*
+⇒ ***The opposite relation, and the shared word "downstream" is why.***
+
+**⌗ AND THE PAPERS SAY WHY IT IS IRRELEVANT**, *which makes it scope rather than hope: "once dissociation is total,
+**the memory of the peak is erased**, and the abundances are fixed by the conditions in the window on the cooling
+leg … **not by the peak's value**".*
+
+**⌗⌗ TWO OF THE THREE WERE ALSO ONE FACT** — *the body sentence and the `fig:history` caption. **Third time this
+session a bucket count concealed a duplicate.***
+
+**⌗ AND THE FOURTH WAS MARKED "NOT A DEBT" IN THE SAME SENTENCE AS "OPEN":** *"a data-confrontation frontier **the
+title does not stake itself on, not a debt**".*
+
+**⛭ THE RULE:** ***a taxonomy invented by the reader will name relations the corpus never claimed, and the failure
+is invisible because the bucket's word appears in the text. Define each class by QUOTING a paper that exemplifies it
+— a class whose name and whose examples disagree will collect items for as long as nobody reads them together.***
+
+⌗ *Also: `A14` and `A15` **deprioritised** at Daryl's direction — "preparing a book stays at the very bottom of this
+list. No interest till it's earned." **Both halves parked; the mechanical ones are done and the deciding ones are
+not being asked for.***
+
 ### Revision r2638 — 2026-08-11 (main line). **`A15` split like `A14` — the linking is done, and the drawing was always Daryl's.**
 
 **⌗ THE ITEM WAS RIGHT ABOUT ITSELF: "UNLINKED, not undefined".** *`CREDO_birth_transcript.md` (1.5 MB) settles the
