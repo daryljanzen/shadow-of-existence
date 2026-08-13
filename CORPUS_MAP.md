@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2558 — 2026-08-11 (main line). **THE VARIATIONAL LEDGER'S PREMISE IS FALSE — the corpus performs variational work and names the field nowhere.**
+
+**⌗ WHERE IT CAME FROM.** *With **fewer leads than veins**, the generators are the work — and R-M was the one never
+actually read. Its stations are all walked, but its **HOLES** list carried one with no worked-marker:
+**"VARIATIONAL / ACTION | ZERO."** And `VARIATIONAL_LEDGER.md` has stood since **r1901** titled ***"the field with
+no footprint at all"***, with Daryl's r1891 adjudication attached and the route unthrown.*
+
+**⛔ THE PREMISE IS FALSE.** *`Lagrangian` 0 · `action principle` 0 · `Euler–Lagrange` 0 · `stationary action` 0 —*
+***but "Einstein–Hilbert" appears FOUR times and every one is load-bearing:***
+*· P12's opening — **"the Einstein–Hilbert action is recast in Hamiltonian form"**;*
+*· an objection answered ON it — "**the conformal factor entering the Einstein–Hilbert action with the opposite
+sign** … **that objection does not reach this construction**";*
+*· "the deparametrized gravitational Hamiltonian **reduced from the Einstein–Hilbert action**";*
+*· ⛭ ***and "The SECOND-ORDER Einstein–Hilbert action in the transverse-traceless sector reduces, mode by mode, to
+that of a harmonic oscillator."***
+⇒⇒ ***That last is variational work PERFORMED in this corpus — an action expanded to second order, the mode
+Lagrangian read off — with the field named nowhere.***
+
+**⌗ SO IT IS THE ARRIVAL-PATH SHAPE AT ITS LARGEST SCALE.** *The six earlier instances were **a missing name beside
+a held ARGUMENT**.* ⇒ ***This is a missing name beside a performed COMPUTATION, standing 657 revisions in a ledger
+titled for the opposite.***
+
+**⛭ AND THE METHOD POINT IS WORTH MORE THAN THE FINDING:** ***a hole survey by word count finds the fields the
+corpus does not USE. It cannot find the fields the corpus uses UNDER ANOTHER NAME — and those are exactly the ones
+where the corpus is doing the work and failing to say so.***
+⚠ *The r1890 survey was not careless: **it was reading the only signal it had**. The fix is to check the named
+OBJECTS a field owns — here, the action itself — before writing "zero".*
+
+⌗ *Both the ledger's title and R-M's holes row now say what is true, **with the original readings kept beside
+them** — rewriting a record to look better is a different failure.*
+
 ### Revision r2557 — 2026-08-11 (main line). **`L-230` CLOSED — the convention was asking the wrong population, and the fix was to shrink it, not to push harder.**
 
 **⛔ THE ROUTE THE ROW CARRIED.** *"Make `COMPUTES:` universal" — while the share fell **12.6% → 11.2% → 10.1%**

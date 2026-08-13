@@ -91,7 +91,7 @@ sources: [chat]
 | `THE_WEAVE.md` | STATE | How the parts are one object — the per-paper orchestration grid and the record of what joins to what | — | c54.204 | 2 |
 | `THE_WORK.md` | STATE | The working fork's OWN front-level view of the register — fronts, not rows. Absorbed by this line, never edited by it (ARC 15's prime directive). | — | c54.203 | 3 |
 | `TURNAROUND_CUBIC_geometry_note.md` | STATE | The comoving-turnaround cubic pinned — the COMPLEX/kinematic leg of the substrate's A₂ three-fold (the horizon cubic being the real/causal leg), the E=1 collapse kinematics, and its place on the ℂ_r×ℂ_τ̃ Plate. Read before the acoustic-transfer build. Carries PROTECTED_OPEN PO-3's drill-site. | — | — | never |
-| `VARIATIONAL_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | — | never |
+| `VARIATIONAL_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.206 | 0 |
 | `BIBKEY_ALIAS_MAP.md` | METHOD | rules / guards / canon | — | — |  |
 | `DISPATCHING_COWORK.md` | METHOD | rules / guards / canon | — | — |  |
 | `FOUNDATIONAL_DEPENDENCY_MAP.md` | METHOD | rules / guards / canon | — | — |  |

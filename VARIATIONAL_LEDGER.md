@@ -1,10 +1,42 @@
 ---
 name: variational-ledger
 description: R-M's sixth field bake — VARIATIONAL / ACTION, the corpus's starkest absence. Opened r1901 from the r1890 holes survey. Its opening question is whether the corpus's central claim about the Carter constant — that it EXPLAINS what GR carries as an unexplained gift — is a claim the variational apparatus supports.
-current: r1905
+current: r2558+c54.206
 ---
 
-# THE VARIATIONAL LEDGER — the field with no footprint at all
+## ⛔⛔⛭ THE PREMISE IS FALSE — corrected r2558, 657 revisions after this ledger opened
+
+***"The field with no footprint at all" is wrong.*** *The Einstein–Hilbert action appears **four times** and every
+one is load-bearing:*
+*· P12's opening — **"the Einstein–Hilbert action is recast in Hamiltonian form"**, the starting point of the whole
+canonical programme;*
+*· an objection answered ON it — "a Euclidean kernel needs a Hamiltonian bounded below … **the conformal factor
+entering the Einstein–Hilbert action with the opposite sign** … **that objection does not reach this
+construction**";*
+*· a reduction — "the deparametrized gravitational Hamiltonian **reduced from the Einstein–Hilbert action**";*
+*· ⛭ **and a COMPUTATION** — ***"The second-order Einstein–Hilbert action in the transverse-traceless sector
+reduces, mode by mode, to that of a harmonic oscillator with time-dependent mass $a^3$ and frequency
+$\mu_n/a$."***
+
+⇒⇒ ***That last is variational work PERFORMED in this corpus — an action expanded to second order in a sector, with
+the mode Lagrangian read off — and the field is named nowhere.***
+
+**⌗ SO IT IS NOT AN ABSENCE. It is the arrival-path shape at its largest scale** *— and the six earlier instances
+(Lovelock, Type II/III, Unruh, Higgs, baby universe, $N_{\rm eff}$) were **a missing name beside a held argument**.*
+⇒ ***This is a missing name beside a performed computation.***
+
+**⚠ AND THE METHOD POINT IS WORTH MORE THAN THE FINDING.** *This ledger's title was written from a **word count** —
+`Lagrangian` 0, `action principle` 0, `Euler–Lagrange` 0 — and the corpus's variational content is carried under a
+different name.*
+⇒ ***A word-bounded count is the right first instrument, and this is a case where the right first instrument gives
+the wrong answer. The r1890 survey was not careless; it was reading the only signal it had.***
+
+⌗ *Not claimed: that the corpus should derive its dynamics variationally. **P9 is explicit that the construction
+leaves GR's dynamics unchanged**, and the four uses are uses of a standard action inside a canonical programme,
+which is the ordinary thing to do.* *Receipt `V1_the_variational_ledgers_premise_is_false` (14 checks).*
+
+
+# THE VARIATIONAL LEDGER — ~~the field with no footprint at all~~ **the field the corpus USES and never names** *(title corrected r2558)*
 
 *Opened r1901. **Phase 8, seventh field**, and the second opened from a **hole**. The r1890 survey found the
 absence and Daryl adjudicated it at r1891: **"all absences so far are circumstantial"** — not a commitment, so
