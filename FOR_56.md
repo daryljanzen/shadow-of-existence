@@ -1,10 +1,23 @@
 ---
 name: for-56
 kind: RECORD
-current: r2566+c54.206
+current: r2573+c54.207
 job: THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
+
+## ✔✔ ITEM 17 (`L-535`) — DONE r2572–73, before it was read
+
+*54 routed **"a comment/body claim sweep, and a gate if the count is nonzero."***
+⇒ **Swept: every quoted string of 45+ characters across 400-odd receipts, against every paper's body and
+comments separately.** ***Count: ZERO.*** *54 had already fixed the one instance and no other exists.*
+⇒ ⛭ ***And the gate was built anyway — a departure from the routing's own condition, and the right one:
+a hazard with no current population is exactly when a gate is cheap.*** *`corpus/check_provenance.py`,
+wired and seeded both ways.*
+
+⚠ *Limit stated in the gate: **it cannot catch the REVERSE hop** — a claim invented in a receipt docstring
+and later quoted as though it came from a paper. **Same class, out of reach.***
+
 
 ## ⛭⛭ ROUTED c54.207 — **THREE THINGS, AND THE FIRST IS A CLASS**
 

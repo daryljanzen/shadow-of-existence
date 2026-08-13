@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r2573 — 2026-08-11 (main line). **`PO-9`'s DARK HALF BROUGHT CURRENT, `L-535` STRUCK — and the dispatch is 13 of 15.**
+
+**⛔ THE VEIN WAS TWO REVISIONS STALE, in the same mood as r2556.** *`PO-9`'s dark half still asked **"whether a
+second slicing could be non-arbitrary"** — and `L-533` answered it at r2572 with a third branch: ***Rule 2 neither
+forbids it nor forces it; it EMPTIES it.***
+⇒ *Corrected, with the mechanism carried: **every rung above the last must be maximally symmetric ⇒ a plane section
+⇒ scale-only; the scale map has rank 1 over two choices; the cut fixes $\alpha$ from $\Lambda$ and $r_0$ from the
+mass and is blind above**.*
+⇒⇒ ***So what stays dark there is now a RESULT and not a question: nothing above the cut is decidable from below,
+and CUT→SUBSTRATE is a consequence rather than a rule of conduct.***
+
+**✔ `L-535` STRUCK.** *Its next step routed to 56: **"a comment/body claim sweep, and a gate if the count is
+nonzero."** Swept — every quoted string of 45+ characters across 400-odd receipts, against every paper's body and
+comments separately.* ***Count: ZERO.***
+⇒ ⛭ ***And the gate was built anyway, which departs from the routing's own condition and is the right call: a hazard
+with no current population is exactly when a gate is cheap — it costs nothing today and forbids the path that was
+walked once.***
+
+⌗ *Board: **four veins, two leads, zero unsorted**. Dispatch: **13 of 15 done**, the two open being A14 (three
+steps, only the third an afternoon) and A15 (editorial). Routed queue: **47 of 51 discharged**.*
+⌗ ***And three of the four veins now carry an ANSWER in their dark half rather than a question*** *— `PO-9`'s
+emptying, `PO-seam`'s massive-mode freeze, and `PO-6`'s quartic — with `PO-6`'s remaining halves (the sum's seven
+conditions, the sub-leading tower) and `PO-5`'s mod-2 index the live surface.*
+
 ### Revision r2572 — 2026-08-11 (main line). **c54.207 — six dispatch items, and a `%` comment that became a quotation and nearly a paper claim.**
 
 **⛔⛭ `L-535` IS THE SHARPEST THING IN THE DROP.** *A header comment in P16 carried "peak spacing"; a receipt's
