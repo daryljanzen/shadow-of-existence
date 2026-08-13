@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2652 — 2026-08-11 (main line). **THE STATE-FIXER HAS ITS OWN THRESHOLD at $\Gamma=-1/4$, and r2651's operator crosses it.**
+
+**⌗ THE MECHANISM.** *P10: "**Thermal (Hartle--Hawking) regularity is Euclidean smoothness at the horizon mode by
+mode**" — imposing the regular branch $x^{1/2+\nu}$, $\nu=\sqrt{\hat\Gamma+\tfrac14}$, on each sub-threshold
+fibre, the surface gravity being "**common to every fibre**".*
+
+**⛭⛭ BUT $\nu$ IS REAL ONLY FOR $\Gamma\ge-1/4$:**
+
+    Gamma =  0.75 -> nu = 1.00      limit-point, no condition needed
+    Gamma = -0.24 -> nu = 0.10      branch selectable
+    Gamma = -0.26 -> nu IMAGINARY   no regular branch exists
+
+⇒ ***Below $-1/4$ both exponents go complex, $x^{1/2\pm i|\nu|}$ oscillates infinitely as $x\to0$, and **neither
+branch is regular — there is nothing for thermal regularity to select**. And $-1/4$ is the classical
+**fall-to-the-centre** threshold, not an artefact.***
+⇒⇒ ***And r2651's operator reaches $-47.8$ on attainable $(\pi,\phi)$. The two results meet.***
+
+**⌗ SO `PO-6`'s SUCCESSOR QUESTION SHARPENS** *from the open-ended "what fixes the state?" to the determinate:*
+***does the interacting dynamics keep $\hat\Gamma$ above $-1/4$ on the states it actually realises, or does the
+sub-$(-1/4)$ region carry support?***
+⌗⌗ ***And that is a question about the MEASURE on the tower — this row's other half. Third time this session a row's
+two remaining halves turned out to be one question from two ends.***
+
+**⛭ THE RULE:** ***when a result opens a successor question, check whether the corpus's existing answer to that
+question has a DOMAIN. A mechanism stated without its range of validity reads as universal — and the range is
+usually the first thing a new result violates.***
+
+⚠ *An oscillatory endpoint still admits a one-parameter family of extensions. **What is lost is the canonical one —
+and with it "closed without a free parameter", which is what the free-sector argument earns.***
+
 ### Revision r2651 — 2026-08-11 (main line). **`PO-6`'s FLOOR QUESTION ANSWERED — NO, at the order the paper names.**
 
 **⌗ THE QUESTION, narrowed to one thing at r2619:** *does the completed $\hat\Gamma$ keep a floor? P10 leaves it
