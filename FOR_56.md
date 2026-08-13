@@ -32,6 +32,7 @@ branch, correctly done, and invisible.*** *`L-700` is that work, landed r2507.*
 | *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2537)* | — | — | — |
 | *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2544)* | — | — | — |
 | *(none outstanding — `claude/cosmological-relativity-c54-sn2msi` merged at r2549)* | — | — | — |
+| `claude/cosmological-relativity-c54-sn2msi` | `be178b0` | cc54 | **L-805** — PO-7's one non-reproduced link reproduced: every mode of interest ℓ 28-2475 freezes before the crossing (r=c_s k/\|aH\| → 0), so sin φ=0 forces φ∈{0,π}, band stays 0.2069 with the control outside, and the kill-receipt's inversion is closed. Receipt `S1` (10 checks) · chain-④ now clears · F5 unsoftened, no conversion claimed · merged current to r2555 |
 
 ---
 
