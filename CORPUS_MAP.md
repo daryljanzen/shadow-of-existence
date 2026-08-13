@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2569 — 2026-08-11 (main line). **A14's BLOCKER IS NOT PANDOC — the corpus is a network, not a sequence, and the graph says so exactly.**
+
+**⌗ A14 WAS HELD as "publishing, no physics — an afternoon whenever."** ⇒ ⛔ ***It is not, and the reason is not the
+formats.***
+
+**⓵ THERE IS NO BOOK FILE.** *`shadow_of_existence.tex` is a **98 KB standalone paper (P6)** including only its own
+receipt appendix. **No `.tex` includes the others**, so a pandoc matrix would format seventeen separate papers.*
+
+**⛭⛭ ⓶ AND THE CORPUS CANNOT SUPPLY THE ORDER.** *Measured on the sibling-citation graph, self-citations removed:*
+***211 edges over 17 nodes · ROOTS (papers citing no sibling): NONE · leaves: P14, P3*** *— with **p0, P6, P7 and
+P16 each cited by sixteen of the other sixteen**.*
+⇒ ***The graph is near-complete and has no source. There is no topological reading order, and there cannot be one:
+every paper presupposes at least one other.***
+
+**⓷ AND `COMPANION_SPEC` SAYS SO BY OMISSION:** *`order` **zero** times, `sequence` **zero**.*
+
+**⓸ WHAT THE CORPUS CAN SUPPLY IS A CENTRALITY ORDER, NOT A DEPENDENCY ONE** *— the in-degree-16 papers first, the
+leaves last.* ⚠ ***But calling it a dependency order would be false: a reader following it still meets forward
+references on page one, because there is no arrangement in which they do not.***
+
+**⇒⇒ A14 IN ORDER:** *(1) **decide what "the book" IS**; (2) if a collection, **a front-matter note saying the
+corpus is a NETWORK**, giving the centrality order as an approach and naming the forward references as unavoidable;
+(3) **then pandoc, which is genuinely an afternoon**.*
+⌗ ***Step 3 was the whole of A14 as written. Steps 1 and 2 were invisible because nobody had looked at the graph.***
+
+**⛭ THE RULE:** ***a task called "just the plumbing" should still get one measurement before it is scheduled,
+because the plumbing's INPUT may not exist. "An afternoon" is a claim about the last step, and the last step is the
+only one anybody had looked at.***
+⚠ *Not a complaint about the corpus: **a near-complete citation graph is what a framework whose parts are mutually
+constitutive looks like**. ⇒ ***So the deliverable is not a linearisation but a sentence saying it is not one — which
+is also the companion's correct answer to "where do I start?", and written into `COMPANION_SPEC` as a DISCUSSED-bucket
+answer.***
+
 ### Revision r2568 — 2026-08-11 (main line). **A6 SHARPENED — the seventh arrival-path finding, and the corpus's own argument points straight at the missing object.**
 
 **⌗ A6 WAS HELD to follow A3–A5. Its premise was testable immediately, and testing it changed the item.**

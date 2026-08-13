@@ -3,8 +3,24 @@ name: companion-spec
 kind: STATE
 description: The specification for the AI companion to the corpus — what it may assert, what it must refuse, and the declarations that make the difference checkable. Written before any code, because the SPEC decides whether the thing is trustworthy.
 sources: [chat]
-current: r2561+c54.206
+current: r2569+c54.206
 ---
+
+## ⛔⛭ THE CORPUS IS A NETWORK, NOT A SEQUENCE — measured r2569, and it bears on the companion too
+
+*Measured on the sibling-citation graph, self-citations removed:* ***211 edges over 17 nodes · ROOTS: NONE ·
+leaves: P14, P3*** *— with **four papers (p0, P6, P7, P16) cited by sixteen of the other sixteen**.*
+⇒ ***So no topological reading order exists, and there cannot be one: every paper presupposes at least one other.***
+
+**⌗ WHY THIS BELONGS IN THE COMPANION'S SPEC AND NOT ONLY THE READER PACKAGE'S.** *A companion asked "where do I
+start?" has **no correct answer of the form "paper N"** — and the honest answer is structural:* ***the corpus is
+mutually constitutive, the centrality order (p0/P6/P7/P16 first, P14 and P3 last) is an approach rather than a
+dependency chain, and a reader following it still meets forward references on page one.***
+⇒ ***That is a legitimate answer under the rule, in the DISCUSSED bucket — and inventing a linear order would be
+the confident-about-discussion failure this spec exists to prevent.***
+
+⌗ *This document mentions `order` and `sequence` **zero times**, which is how the gap stayed invisible.*
+
 
 ## ⛭⛭⛭ THE FOURTH BUCKET — added r2561, and it is the default and the largest
 
