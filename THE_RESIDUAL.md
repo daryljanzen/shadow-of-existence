@@ -1,7 +1,7 @@
 ---
 name: the-residual
 kind: PLAN
-current: r2595+c54.207
+current: r2600+c54.207
 description: THE RESIDUAL — the true state of remaining doubt across the corpus, measured from the papers' own epistemic self-declarations rather than from the registers. Eighty-four qualifications, sorted by whether a proof is discoverable. Written r2592.
 sources: [chat]
 ---
@@ -28,6 +28,32 @@ sources: [chat]
 | **RECALLED, not derived** | 1 | 1 |
 
 ⇒ ***84 across the corpus. But the classes are not equally load-bearing, and sorting them is the work.***
+
+---
+
+## ✔✔✔ ZERO UNVERDICTED — r2600. **All 111 read and recorded.**
+
+| verdict | n | what it means |
+|---|---|---|
+| **REGISTERED** | 22 | a real gap, carried by a `PROTECTED_OPEN` item |
+| **SCOPE-BY-DESIGN** | 22 | the paper declining a claim outside its scope; **nothing owed** |
+| **DO-NOT-ASSERT** | 19 | a deliberate marked holding; **nothing owed** |
+| **SELF-ANSWERED** | 15 | ***the next sentence closes it*** |
+| **METHOD-PROSE** | 14 | how the corpus marks maturity; **not a claim** |
+| ***NAMED-UNBUILT*** | ***6*** | ***a real construction, named and not built*** |
+| **STATED-AT-WEIGHT** | 5 | a claim deliberately held below the weight it could carry |
+| **OPEN-DOWNSTREAM** | 3 · **STANDARD-PHYSICS** 3 · **PRECISION** 1 | |
+| ***DISCOVERABLE-PROOF*** | ***1*** | ***a formal statement absent, whose absence holds the claim open*** |
+
+⇒⇒ ***So of 111 places the corpus says something is not settled: **70 are correctly stated and owe nothing** (scope,
+do-not-assert, method-prose, self-answered, standard-physics), **22 are gaps already on the register**, and
+**19 are the real work** — six unbuilt constructions, five weight-marked claims, three downstream, one precision
+item, one discoverable proof.***
+
+⌗ **AND THE GATE CAUGHT FIVE OF THIS LINE'S OWN VERDICTS ACROSS THE PASS**, *twice on the same principle —*
+***narrowing is not closing.*** *"What remains open should be stated at its true size, which is smaller than it
+was" and "What is open is narrower than that framing suggests" both **narrow and stay open**, and both were
+verdicted `SELF-ANSWERED` before the gate said otherwise.*
 
 ---
 

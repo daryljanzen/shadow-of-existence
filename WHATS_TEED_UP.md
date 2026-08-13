@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.207 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**8 open QUESTIONS · 1 open WORK rows** *(279 struck of 288 registered).*
+**7 open QUESTIONS · 1 open WORK rows** *(280 struck of 288 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -26,7 +26,6 @@ sources: [cowork]
 | **`L-221`** | OPEN | REGISTERED r2378 by the observer line's `ARC 14` step-② fold — `PROTECTED_OPEN`'s `PO-5`, which had NO register row at all. The quark/lepton split, and what a baryon IS at the particle level — the five multiplets, and which carries the colour $\mathbf3$. A PRO… | `PROTECTED_OPEN` `PO-5` · `THE_PLAN` standing item ② | the question is INVERTED r2526: not "is there an $R$-odd operator?" but what BRIDGE from grading to field exists that is not "be a kernel"? — the kern… |
 | **`L-536`** | — | REGISTERED r2578 — P7's SCALAR-PERTURBATION FRONTIER HAS A STATED REMAINDER AND IT IS IN NO REGISTER. Daryl asked whether `THE_STATE`'s twelve covered the theatres and the papers' own frontier sections. Tested: 18 frontier/open sections across 13 papers, and P… | P7 `sec:frontiers` · `CR_cosmology` | TWO HALVES. ⓵ `PO-10`'s two runs (the full-spectrum likelihood comparison, the odd/even height pattern) · ⓶ the FRONTIER-PLACEMENT AUDIT across thirte… |
 | **`L-538`** | — | REGISTERED r2592 — `THE_RESIDUAL`: the corpus's remaining doubt measured from the PAPERS, not the registers. `THE_STATE` counted fourteen things someone had routed. This counts eighty-four self-declared epistemic qualifications in the papers themselves — 36 co… | `THE_RESIDUAL.md` | 30 unverdicted; and the owed list is now two unbuilt things, one precision item, three downstream — with the $\mathbb{Z}_2$-index convergence named in… |
-| **`L-539`** | — | REGISTERED r2596 — `THE_FRONT_EDGE`: the protocol that keeps the corpus and the residual register current WITH EACH OTHER as work is done. Five instruments now exist and each guarantees one thing: `open_ledger` every qualification has a verdict with its reason… | `THE_FRONT_EDGE.md` | 8 unverdicted — the last of them |
 
 ## ⌗ WORK — programmes with steps; the content lives in `CONSOLIDATE`
 

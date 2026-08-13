@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2600 — 2026-08-11 (main line). **ZERO UNVERDICTED — all 111 qualifications read and recorded, and the `PO-7`/`PO-seam` dependency named.**
+
+**⌗ THE FINAL DISTRIBUTION.** *REGISTERED **22** · SCOPE-BY-DESIGN **22** · DO-NOT-ASSERT **19** · SELF-ANSWERED
+**15** · METHOD-PROSE **14** · **NAMED-UNBUILT 6** · STATED-AT-WEIGHT **5** · OPEN-DOWNSTREAM **3** ·
+STANDARD-PHYSICS **3** · PRECISION **1** · **DISCOVERABLE-PROOF 1**.*
+⇒⇒ ***Of 111 places the corpus says something is not settled: **70 owe nothing** (scope, do-not-assert,
+method-prose, self-answered, standard-physics), **22 are gaps already on the register**, and **19 are the real
+work**.***
+
+**⌗ AND THE BACKLOG GATE CAUGHT FIVE OF THIS LINE'S OWN VERDICTS ACROSS THE PASS**, *twice on the same principle:*
+***narrowing is not closing.*** *"What remains open should be stated at its true size, which is smaller than it was"
+and "What is open is narrower than that framing suggests" **both narrow and stay open**, and both were verdicted
+`SELF-ANSWERED` before the gate said otherwise.*
+
+**⛭⛭ AND THE `PO-7`/`PO-seam` DEPENDENCY IS NAMED ON BOTH SIDES, having sat unstated since r2586.** *`PO-7`'s one
+live inversion route ⓷ is **a progenitor derivation of `CRPHI` landing off $\{0,\pi\}$**; `PO-seam`'s remaining
+dark half is **a progenitor derivation of the seam datum's phase**.*
+⇒ ***The same derivation. Producing it either moves the phase off the pair — inverting `PO-7` — or lands on it and
+closes ⓷ for good.***
+⚠ *Not merged, and they should not be: **`PO-7` asks whether the deficit is a real disagreement with the sky;
+`PO-seam` asks where the datum's phase comes from**.*
+⇒⇒ ***So the order of work is fixed and was written nowhere: `PO-seam` first, `PO-7`'s ② second. Nothing else moves
+`PO-7`, because all three computational routes are shut.***
+
+⌗ *`L-539` struck: the front edge is operating.*
+
 ### Revision r2599 — 2026-08-11 (main line). **THERE WAS NO DECISION — `PO-7`'s ② does not clear, and this line manufactured a pending authorisation for forty revisions.**
 
 **⌗ THE QUESTION THAT FOUND IT.** *Daryl: "I don't understand the question that's being asked of me … why is the

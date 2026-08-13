@@ -47,19 +47,13 @@ VEINS = {
    "the phase is the **antilinear face $K$**; reality admits **exactly two values**; $K$ acts trivially on the "
    "reality set while **$R$ exchanges the branches**; off-real, $K$ **swaps the two wings of the lap** and "
    "$R\\circ K$ **closes charge conjugation**; $K$ **fixes the photon congruence**",
-   "**\u2714 **ANSWERED r2570 by cc54's A2** \u2014 *whether a MASSIVE trajectory carries a phase*: **NO, not by failing to freeze.** The mass enters the mode equation as $m^2a^2$, and **the branch point $a\\to0$ annihilates it while $|aH|$ diverges**, so $\\omega/|aH|\\to0$ **independent of $m$** \u2014 identical to the digit at $m=0$ and $m=10^5$. \u21d2 ***So the massive route does NOT derive `CRPHI` off $\\{0,\\pi\\}$, the seam datum stays ASSIGNED, and `PO-7`'s inversion \u2462 is closed from the massive side as `L-805` closed \u2460 from the acoustic one.*** \u26a0 **What stays dark is narrower and is now the whole of it: a PROGENITOR derivation of the datum's phase** \u2014 not a dynamical one, since **no trajectory of any mass carries a phase through the crossing**** \u2014 the null ones are $K$'s fixed set"),
+   "**\u26ed\u26ed **AND THIS VEIN FEEDS `PO-7` \u2014 named r2600.** *Its remaining dark half is **a progenitor derivation of the seam datum's phase**, and `PO-7`'s one live inversion route \u24b7 is **a progenitor derivation of `CRPHI` landing off $\\{0,\\pi\\}$**.* \u21d2 ***Same derivation. Producing it either moves the phase off the pair \u2014 inverting `PO-7` \u2014 or lands on it and closes \u24b7 for good.*** \u26a0 *Not the same QUESTION: `PO-7` asks whether the deficit disagrees with the sky; this asks where the phase comes from.* \u21d2 ***So the ORDER is fixed: this vein first, `PO-7`'s \u2461 second \u2014 nothing else moves `PO-7`, because all three computational routes are shut.*** \u2714 **ANSWERED r2570 by cc54's A2** \u2014 *whether a MASSIVE trajectory carries a phase*: **NO, not by failing to freeze.** The mass enters the mode equation as $m^2a^2$, and **the branch point $a\\to0$ annihilates it while $|aH|$ diverges**, so $\\omega/|aH|\\to0$ **independent of $m$** \u2014 identical to the digit at $m=0$ and $m=10^5$. \u21d2 ***So the massive route does NOT derive `CRPHI` off $\\{0,\\pi\\}$, the seam datum stays ASSIGNED, and `PO-7`'s inversion \u2462 is closed from the massive side as `L-805` closed \u2460 from the acoustic one.*** \u26a0 **What stays dark is narrower and is now the whole of it: a PROGENITOR derivation of the datum's phase** \u2014 not a dynamical one, since **no trajectory of any mass carries a phase through the crossing**** \u2014 the null ones are $K$'s fixed set"),
 }
 
 # ** THE LEADS -- everything noticed that could inform a vein.  (id, what, veins it informs,
 # GROUNDED 0-3: how solid the footing is, INFORMS 0-3: how much a vein would learn). **
 # ** A lead with NO vein links is instrument work.  It is not counted as progress on the map. **
 LEADS = {
- 'L-539': ("\u26ed\u26ed **`THE_FRONT_EDGE`** \u2014 the protocol keeping the corpus and the residual register "
-   "current **with each other as work is done**: five instruments, an **eight-step closure protocol**, and the "
-   "backlog gate that fires on *an item advertised as owed after the work that closed it was done*. \u21d2 "
-   "Remaining: **verdict the 30**, **give the two genuinely unbuilt things register rows** (the propagating spinor "
-   "sector; the bespoke transfer), and **name the $\\mathbb{Z}_2$-index convergence once**",
-   ['L-221'], 3, 2),
  'L-538': ("\u26ed\u26ed **`THE_RESIDUAL`** \u2014 the corpus's remaining doubt measured from the PAPERS "
    "rather than the registers: **84 self-declared epistemic qualifications**. \u21d2 Sorted, the "
    "**discoverable** residual is about **five items, and THREE CONVERGE ON ONE OBJECT** \u2014 the "
