@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2612 — 2026-08-11 (main line). **THE REPORTED NUMBERS WERE WRONG, AND BUILDING THE REPORTER FOUND A BROKEN CI WORKFLOW.**
+
+**⌗ THE COMPLAINT, AND IT WAS RIGHT.** *"You're using all these codes like C1-7, but those codes don't appear in any
+of your enumeration at all and it looks like sideways progress the whole way along."*
+⇒ ⛔ ***The state table reported gates, ledger and board — **none of which move when a `PROTECTED_OPEN` item is
+worked** — while the turn's content was narrated in codes appearing in no count. Work on the thing that mattered was
+invisible in the reporting of it.***
+
+**✔ `scripts/status.py`** — *prints only quantities that MOVE when work is done: every `PO` item with its kill-receipt
+state and last dated move, **the measure's conditions list with its current length**, the ledger, the register, the
+gates.* ⌗ *Its closing line: **"If a turn changes nothing above, the turn changed nothing."***
+
+**⛔ AND WRITING IT FOUND THREE REAL DEFECTS:**
+*· **the register count included a RANGE HEADER** (`| **L-176**--**L-199** |`) as a live row — ***a phantom row in
+every status this session***;*
+*· **"31 gates" was never true** — the workflow's `for g in` list spans continuation lines and this line had been
+counting one;*
+*· ⛔⛔ ***and the text-gates loop had NO `do` at all***, *so **CI's text gates could not run** — and ***the six gates
+"wired" this session were never in the file***, because the wiring regex required a `; do` that did not exist.*
+
+⇒ *Workflow repaired: `do` restored and **30 gates now wired**, including `check_provenance`, `check_revleak`,
+`check_open_ledger`, `check_killrefs`, `check_computes` and `check_loaders`.*
+
+**⛭ THE RULE:** ***a number you report every turn and never compute is a number you are asserting. Compute it — and
+when the computation disagrees with what you have been saying, the computation is not the thing that is wrong.***
+⚠ *And the deeper one: **the gates were run locally every turn and passed, so the broken CI was invisible from
+inside the loop that was supposed to catch it.** The local run and the wired run are two places, and only one was
+ever checked.*
+
 ### Revision r2611 — 2026-08-11 (main line). **THE C6/C7 TENSION CANNOT ARISE — C6 is not a condition.**
 
 **⌗ THE TENSION, NAMED AT r2610.** *C6 requires the measure to "respect the per-fibre closure"; C7 requires it not
