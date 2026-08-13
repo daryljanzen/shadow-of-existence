@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r2567 — 2026-08-11 (main line). **A8 DONE — "defining the sum" is heavily constrained, and the constraints were all already written.**
+
+**⌗ THE ITEM.** *`PO-6`'s "defining the sum" was **the one open-ended thing in the programme**, held back at r2566
+with its deliverable named: **not a measure, but what one would have to satisfy**.*
+
+**⛭⛭ SEVEN NECESSARY CONDITIONS, each read off something the corpus states FOR ANOTHER PURPOSE:**
+*· **C1** the domain **excludes the conformal factor** — stated to answer the Euclidean unboundedness objection
+("the path integral ranges over the conformal factor of the metric. **Here it does not**");*
+*· **C2** the substrate scale is **not summed over** — "fixed, not chosen, but required";*
+*· **C3** reproduce the **TRUE Hamiltonian's evolution** — a strictly stronger classical limit than "the constraint
+is satisfied";*
+*· **C4** the **clock is not integrated over** (Brown–Kuchař dust) — the condition an off-the-shelf construction is
+most likely to violate, since standard measures have no distinguished clock to omit;*
+*· **C5** compatible with **self-adjointness** — and the deficiency-index analysis is already done. ⌗ **"Inner
+product" appears ZERO times, so C5 constrains an object the papers never name;***
+*· **C6** respect the **per-fibre closure** — `PO-6`'s own mapped half, and why the UV degree is quartic rather than
+worse;*
+*· **C7** do not spoil the **algebra's closure**, which `L-240` established forces the dynamics uniquely in $D=4$ —
+**so an anomaly would break the uniqueness the programme rests on**.*
+
+⇒⇒ ***FOUR OF THE SEVEN (C1, C2, C4, C6) ARE RESTRICTIONS STANDARD CONSTRUCTIONS DO NOT HAVE.*** *So the sum is not
+an ordinary quantum-gravity path integral with an extra difficulty — **it is a much smaller object, and the general
+problem's difficulty is not automatically inherited**.*
+⌗ *And **three (C3, C5, C7) are CHECKS against work already done**, so a candidate measure can be tested against
+three existing results before anything new is computed.*
+
+**⛭ THE RULE:** ***when a question reads as open-ended, ask what the corpus already FORBIDS before asking what it
+permits. A question with seven constraints scattered across five papers looks empty only because nobody collected
+them.***
+
+⚠ *Not a measure, not an existence claim. ***It is entirely possible C1–C7 are jointly unsatisfiable — which would
+itself be a result, and the list is what makes it checkable.***
+⌗ *`THE_DISPATCH` updated: **all fifteen items now have a written route**.*
+
 ### Revision r2566 — 2026-08-11 (main line). **`THE_DISPATCH.md` — fifteen items, independence-checked, and eleven of them dispatched.**
 
 **⌗ THE COUNT AND THE CHECK, run rather than asserted.** *Everything outstanding is **fifteen items**.*

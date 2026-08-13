@@ -1,7 +1,7 @@
 ---
 name: the-dispatch
 kind: PLAN
-current: r2566+c54.206
+current: r2567+c54.206
 description: THE DISPATCH — the fifteen outstanding items, checked for independence, allocated between 54, cc54 and the observer line. Written r2566.
 sources: [chat]
 ---
@@ -63,7 +63,7 @@ content is already established. **54's instrument is the papers.***
 
 | tag | the work | why held |
 |---|---|---|
-| **A8** | `PO-6`(b) · ***what must the measure on the space of cuts SATISFY?*** | ***the one open-ended item in the programme.*** The deliverable is a **necessary-conditions list**, not a measure — and getting that list wrong sends both nodes somewhere useless |
+| ~~**A8**~~ | ✔ ***DONE r2567 — `S1_seven_necessary_conditions_on_the_measure`.*** The list exists: **C1** domain excludes the conformal factor · **C2** the substrate scale is not summed over · **C3** reproduce the true Hamiltonian's evolution · **C4** the clock is not integrated over · **C5** compatible with self-adjointness · **C6** respect the per-fibre closure · **C7** do not spoil the algebra's closure. ⇒ ***Four are restrictions standard constructions lack; three are checks against existing work.*** | ***the one open-ended item in the programme.*** The deliverable is a **necessary-conditions list**, not a measure — and getting that list wrong sends both nodes somewhere useless |
 | **A6** | `PO-5` · candidate bridge **ANOMALY** | the only one of the four needing a calculation, and ***it should follow A3–A5*** — if one of those lands, the anomaly route may be moot |
 | **A14** | `L-218` ⓵ · pandoc in CI | ***publishing, no physics*** — an afternoon whenever |
 | **A15** | `L-218` ⓷ · the contribution | last by the row's own ordering |
@@ -78,7 +78,7 @@ land fast***;*
 *· **Two are publishing** (A14, A15);*
 *· ***and ONE is genuinely open-ended*** (A8).*
 
-⇒⇒ ***So the outstanding set is 15, of which 14 have a written route and 1 does not. If the seven reads
+⇒⇒ ***So the outstanding set is 15, of which **15 now have a written route** — A8's deliverable landed at r2567 and the sum turns out to be **heavily constrained rather than open-ended**. If the seven reads
 and writes land, the programme's open surface is four calculations, two publishing tasks, one
 open-ended question, and one verdict.***
 
