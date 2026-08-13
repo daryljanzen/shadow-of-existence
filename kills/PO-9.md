@@ -1,7 +1,7 @@
 ---
 name: kill-PO-9
 kind: KILL-RECEIPT
-current: r2574+c54.207
+current: r2640+c54.207
 description: Kill receipt for PO-9 — the dimensional rise. Route ② of PROTECTED_OPEN's exit procedure: object named, four checks answered. ④ does not clear, and that is the finding.
 sources: [chat]
 ---
@@ -86,6 +86,19 @@ on ONE unreproduced link and cc54 closed it in a revision; this fails on THREE.*
 
 ⌗ ***So the honest state is not "nearly closed" but "answered on one path and unchecked on three
 steps."***
+
+> ⛭⛭ **UPDATED r2640 — (e) NOW HAS A SECOND PATH, so the count is TWO, not three.**
+> *`E51_the_scale_map_rank_reproduced.py` reproduces the rank on **three independent methods**: the symbolic
+> Jacobian of $\alpha_{\rm eff}=\sqrt{\alpha_{\rm top}^2-c_2^2}$; the **level sets** — three distinct
+> $(\alpha_{\rm top},c_2)$ pairs return each target exactly, so **the preimage is a CURVE, which is rank
+> deficiency exhibited rather than differentiated**; and the **numerical rank over 200 random admissible
+> points, $\{1\}$ with no exceptions**.*
+> ⇒ *And the one-parameter fibre is **arithmetic** once the rank is fixed: domain 2, image 1, rank 1 ⇒ fibre
+> dimension 1.*
+> ⚠ ***(c) and (d) still stand alone*** *— (c) is a statement about every rung of the tower, (d) is the
+> plane-section reduction itself, and **all three routes take that reduction as GIVEN**, so they are
+> independent of each other's METHOD and not of (d).*
+> ⇒⇒ ***④ still does not clear.***
 
 ---
 

@@ -60,11 +60,13 @@ def main():
         print(f'    ⛔ {x["kind"]:<18} {x["paper"][:16]:<16} {t[:46]}')
     print()
 
-    print(f'  ROUTED -- {len(rt)}    DISPATCH -- {len(dp)}')
+    live_dp = [x for x in dp if x['open']]
+    print(f'  ROUTED -- {len(rt)}    DISPATCH -- {len(live_dp)} live, '
+          f'{len(dp) - len(live_dp)} parked')
     for x in rt:
         print(f'    ⛔ {x["id"]:<9} {x["what"][:58]}')
     for x in dp:
-        print(f'    ⛔ {x["id"]:<9} (L-218)')
+        print(f'    {"PARK" if not x["open"] else "⛔  "} {x["id"]:<9} (L-218)')
     # ** ---- THE CHART, added r2622 ---- **
     # ** Daryl: "I expect the whole deal will end up working like a weight loss chart ... If it were to
     # go down at a REGULAR RATE we should be wary of that." **

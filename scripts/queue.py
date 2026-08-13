@@ -97,9 +97,18 @@ def routed():
 
 
 def dispatch():
+    """** PARKED items are listed and NOT counted.  r2640, Daryl: ** "Preparing a book stays at the very
+    bottom of this list.  No interest till it's earned."  ⇒ *** An item nobody is waiting on is not work
+    on the table -- the total should say what is WORKABLE, and a parked item inflates it while looking
+    like progress when it is finally struck. ***"""
     d = open(os.path.join(ROOT, 'THE_DISPATCH.md'), encoding='utf-8', errors='replace').read()
-    return [{'id': a, 'kind': 'DISPATCH', 'open': True, 'what': ''}
-            for a in re.findall(r'\| \*\*(A\d+)\*\* \|', d)]
+    out = []
+    for a in re.findall(r'\| \*\*(A\d+)\*\* \|', d):
+        m = re.search(r'\| \*\*' + a + r'\*\* \|(.{0,400})', d, re.S)
+        parked = bool(m and 'DEPRIORITISED' in m.group(1))
+        out.append({'id': a, 'kind': 'DISPATCH', 'open': not parked,
+                    'parked': parked, 'what': ''})
+    return out
 
 
 def main():
@@ -147,7 +156,8 @@ def main():
         print(f'     {x["id"]:<9} {x["what"][:64]}')
     print()
     d = open(os.path.join(ROOT, 'THE_DISPATCH.md'), encoding='utf-8', errors='replace').read()
-    print(f'  DISPATCH -- {len(dp)}')
+    live_dp = [x for x in dp if x['open']]
+    print(f'  DISPATCH -- {len(live_dp)} live, {len(dp) - len(live_dp)} parked')
     for x in dp:
         m = re.search(r'\| \*\*' + x['id'] + r'\*\* \|(.{0,240})', d, re.S)
         txt = re.sub(r'\s+', ' ', re.sub(r'[*`|]', '', m.group(1))) if m else ''

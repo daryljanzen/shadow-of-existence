@@ -69,3 +69,5 @@ r2636  LATENT      item 9s convention was enforced by check_receipt_asserts from
 r2637  COMPUTED    A14 step 2: the approach order from depmatrix column totals; P3 +74 to P7 -82
 r2638  LATENT      A15 was UNLINKED not undefined -- CREDO settles it; the drawing is Daryls, the linking is done
 r2639  LATENT      downstream-IRRELEVANT is the opposite of downstream-blocked; all four items are scope
+r2640  COMPUTED    PO-9 link (e) reproduced on three routes; unreproduced links 3 -> 2
+r2640  COMPUTED    PO-9 link (e) reproduced on three routes; unreproduced links 3 -> 2

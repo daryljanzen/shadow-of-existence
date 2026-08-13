@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2640 — 2026-08-11 (main line). **Parked items no longer counted — 19 workable — and `PO-9`'s link (e) reproduced on three routes.**
+
+**⌗ THE COUNT.** *"Are you counting the book ones as 2? So does that mean 19 physics left?"* ⇒ ***Yes, and the total
+said 21. An item nobody is waiting on inflates the number while it sits and then looks like progress when it is
+struck.*** *`queue.py` and `table.py` now list parked items and exclude them: **19 workable, 2 parked**.*
+
+**⛭⛭ AND THE PHYSICS.** *`PO-9`'s ④ fails on **three** links reproduced nowhere but `L-533`: (c) every rung above
+the last maximally symmetric, (d) the plane-section scale-only reduction, (e) the scale map's rank being 1.*
+⇒ ***(e) is a pure computation, and it now has a second path — three, in fact:***
+*· the **symbolic Jacobian** of $\alpha_{\rm eff}=\sqrt{\alpha_{\rm top}^2-c_2^2}$;*
+*· the **level sets** — three distinct $(\alpha_{\rm top},c_2)$ pairs return each target exactly, so ***the preimage
+is a CURVE, which is rank deficiency exhibited rather than differentiated***;*
+*· the **numerical rank** over 200 random admissible points, **$\{1\}$ with no exceptions**.*
+⌗ *And the one-parameter fibre is **arithmetic** once the rank is fixed: domain 2, image 1, rank 1 ⇒ fibre
+dimension 1.*
+
+⇒⇒ ***`PO-9`'s unreproduced count goes THREE → TWO.***
+
+**⛭ THE RULE:** ***when a chain fails on several unreproduced links, sort them by KIND before attacking. A link that
+is a pure computation has a second path available immediately; a link that is a statement about every rung of a
+tower does not — and treating them as one backlog makes the tractable one wait behind the hard one.***
+
+⚠ *Honest limit, stated in the receipt: **all three routes take the plane-section reduction as GIVEN**, so they are
+independent of each other's METHOD and not of link (d). **④ still does not clear.***
+
 ### Revision r2639 — 2026-08-11 (main line). **`OPEN-DOWNSTREAM` retired — the bucket name inverted the relation the papers state. Table 25 → 21.**
 
 **⛔ THE INVERSION.** *The ledger defined the class as "**open, and downstream of something else that is open**" —
