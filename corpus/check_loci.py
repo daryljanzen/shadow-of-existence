@@ -97,6 +97,18 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, '..')
 
 # the four loci of the lap, with the spellings each is actually written in
+# ** r2554: the POSSESSIVE and COMPOUND-NOUN forms added, which node 52 attempted, left unapplied, and
+# declined to claim precision for. **  Measured before adding, the way r2376 measured the assertion
+# patterns:
+#   * ** 25 possessive and 73 compound-noun sites across the papers ** -- which reads as a large change;
+#   * ** but check_loci examines RECEIPT-BOUND sentences only, and only 3 + 5 = 8 of those 98 are
+#     receipt-bound. **  ⇒ *** The extension adds EIGHT newly-checked sites, not ninety-eight. ***
+#   * ** All eight read clean ** -- legitimate uses, no conflation.  ⇒ ** Which is the right result for a
+#     lint: green on a clean corpus, and there to catch the drift that has not happened yet. **
+# ⚠ ** AND WHAT IT DOES NOT FIX, stated because 54 named the gap and this is not it: ** items 19 and 20
+# (P1's scope against its own abstract, P7's conflated loci) were found ** by reading **, because they
+# are ** not receipt-bound at all **.  *** This extension widens the FORMS matched inside the bound
+# sentences; it does not widen the BOUND.  Two different gaps, and only the cheap one closes here. ***
 LOCI = {
     'branch point': [r'branch[ -]point', r'\br\s*=\s*0\b'],
     'seam':         [r'\bseam\b', r'z_\{?\\?mathrm\{?onset', r'\bonset\b'],

@@ -155,8 +155,7 @@ LEADS = {
    "currency**. Now measured against the last ABSORBED revision, using `ABSORPTION.md`'s already-gated "
    "`IN-FLIGHT:` line. Changes nothing on 56's tree, which is the test", [], 3, 0),
  'L-218': ("\u2714 \u24f6 done r2478 (`COMPANION_SPEC`) \u00b7 \u24f5 the reader-package formats via pandoc in CI \u00b7 \u24f7 the contribution, last", [], 3, 0),
- 'L-228': ("`check_loci` extended to the possessive and compound-noun forms node 52 declined to claim", [], 3, 0),
-}
+ }
 
 
 def _current_marker():

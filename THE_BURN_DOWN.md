@@ -28,9 +28,9 @@ without fixing what is still sitting there owed?"**
 | | at c54.27 *(the baseline below)* | **now** |
 |---|---|---|
 | registered | 88 | **271** |
-| struck | 13 | **260** |
+| struck | 13 | **261** |
 | open QUESTIONS | 75 | **8** |
-| open WORK rows *(arcs and phases, folded r2378)* | — | **3** |
+| open WORK rows *(arcs and phases, folded r2378)* | — | **2** |
 | `HOT` | 49 *(60% of open)* | **0** *(0% of open questions)* |
 | struck fraction | 14.0% | **97.0%** |
 
@@ -64,7 +64,6 @@ without fixing what is still sitting there owed?"**
 | **`L-803`** | QUESTION · — |
 | **`L-804`** | QUESTION · — |
 | **`L-218`** | WORK · — |
-| **`L-228`** | WORK · OPEN |
 | **`L-230`** | WORK · OPEN |
 
 *⌗ The gate that enforces the budget is `corpus/check_burndown.py`; the ID-space integrity check lives there too.*

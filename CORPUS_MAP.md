@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2554 — 2026-08-11 (main line). **`L-228` STRUCK — the extension was not expensive, it was WRONG, and the grammar said so.**
+
+**⌗ THE ROW.** *Extend `check_loci` to **possessive and compound-noun** forms. Node 52 built it, **left it
+unapplied, and declined to claim a precision** — and it has sat as owed work for a hundred revisions with nobody
+able to say why.*
+
+**⓵ MEASURED: 25 possessive and 73 compound sites** *across the papers, which reads as a large change.*
+**⓶ BUT the gate reads RECEIPT-BOUND sentences only, and just 3 + 5 = 8 of those 98 are bound.*** ⇒ ***The
+extension would have added EIGHT sites — so the cost objection was never the real one.***
+
+**⛭⛭ ⓷ AND THEN THE GRAMMAR SETTLED IT.** *The `ASSERT` patterns require the verb to follow the locus — "the {L}
+**is/sits/carries**". A possessive puts a noun in between:* ***"the branch point's RADIATION AMPLITUDE takes …"
+asserts about the amplitude, not about the branch point.***
+⇒⇒ ***A possessive is a MODIFIER, not a subject; and "branch-point crossing" names the CROSSING, a different object
+again. NEITHER FORM IS A LOCUS CLAIM, so neither belongs in a gate that checks locus claims against their
+receipts.***
+
+**⛭ THE RULE:** ***when an instrument change has sat unapplied for a long time and nobody can say why, the reason is
+often that it is WRONG rather than expensive — and the way to find out is to build it and look at what it
+matches.*** *Three measurements in order: the site count said "large", the bound said "eight", the grammar said
+"none of them".*
+
+⚠ *And the distinction that had to be kept: **this was never the recall gap 54 named**. Items 19 and 20 were found
+**by reading**, because they are **not receipt-bound at all**. ***This widens the FORMS inside the bound; that gap
+is the BOUND. Conflating them would have justified the wrong build.***
+
+⌗ *Reverted after being built and run, with **the reasoning written into `check_loci.py` itself** — so the next node
+finds it where the attempt would be made, not in a changelog.*
+⌗ *Board: **four veins, six leads**.*
+
 ### Revision r2553 — 2026-08-11 (main line). **`L-217` AND `L-514` STRUCK — one owed nothing, the other's lint was measured instead of guessed.**
 
 **⌗ `L-217`.** *Its next step read "what the row still owes is §5's onward list, and `F1` stays live."* ⇒ **⓵ *All

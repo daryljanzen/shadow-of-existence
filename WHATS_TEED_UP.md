@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.205 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**8 open QUESTIONS · 3 open WORK rows** *(260 struck of 271 registered).*
+**8 open QUESTIONS · 2 open WORK rows** *(261 struck of 271 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -35,6 +35,5 @@ sources: [cowork]
 | lead | source section | what it is |
 |---|---|---|
 | **`L-218`** | `THE_HUB` · `SETUP_THE_REPO` · `PROTECTED_OPEN` · `THE_BASE_RATE` | REGISTERED r2415 — THE READER PACKAGE: the book in every reading format, plus an AI companion spun up from this corpus, in one repo. Daryl's idea, and the part that is not ordinary is not the formats.… |
-| **`L-228`** | `THE_HUB.md` — `corpus/check_loci.py` · node 52 | REGISTERED r2440 — `check_loci.py` ADOPTED FROM NODE 52 AS A LINT AND NOT A GATE, on its own measurement. It exploits the thing that makes this corpus checkable: every computed claim is bound to a run… |
 | **`L-230`** | `THE_ARSENAL.md` — `_dig/findings_batch2/` · `FOR_54` 24–26 · `ARC 17` · `L-223` | REGISTERED r2442 — THE POINT-STATED-AS-FAMILY CLASS, and it is `ARC 17`'s finding one axis over. Node 55's batch 2 diagnosed its own pattern before this line saw it: "a claim verified at one point of … |
 

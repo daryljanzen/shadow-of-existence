@@ -103,7 +103,6 @@ is**.*
 
 | row | last worked | what its own row says to do next |
 |---|---|---|
-| **`L-228`** | r2440 | extend to the possessive and compound-noun forms the contributor attempted, left unapplied, and **declined to claim precision for** |
 | **`L-207`** | r2450 | ⓵ ✔ **DISCHARGED r2450 — exhibited, not merely asserted** · ⓶ nothing until `PO-6` moves |
 | **`L-202`** | r2457 | **narrowed twice, still open and still do-not-assert both ways** · the live question is now: **does a MASSIVE trajectory carry a phase?** — the null o |
 | **`L-175`** | r2474 | **the whole row now turns on one question r2474 states**: ***can a second slicing be non-arbitrary — its selection FORCED by the first rather than cho |
@@ -115,7 +114,7 @@ is**.*
 | **`L-230`** | r2551 | **the number is re-measured r2551 and the diagnosis inverted**: not flat but **falling** (10.1%), and the cause is this line · ***the decision: requir |
 | **`L-171`** | r2552 | **NARROWED r2552 by `kills/PO-7.md`**: the object is now ***does every mode of interest freeze before the crossing?*** — P15 `sec:what-crosses`, the o |
 
-*11 live rows carry a stated next step; the 11 longest-unworked are shown.*
+*10 live rows carry a stated next step; the 10 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session
