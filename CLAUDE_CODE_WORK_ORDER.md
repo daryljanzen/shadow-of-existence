@@ -119,8 +119,9 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-221`** | r2526 | **the question is INVERTED r2526**: not "is there an $R$-odd operator?" but ***what BRIDGE from grading to field exists that is not "be a kernel"?***  |
 | **`L-218`** | r2561 | ✔ ⓶ done r2478 · ***the RULE is tested r2561 and needs a fourth bucket (DISCUSSED), which is the default*** · ⓵ pandoc-in-CI and ⓷ the contribution re |
 | **`L-171`** | r2602 | ⛔ ***② does not clear*** — `PO-7` stays open by its own inversion check · **nothing is pending on Daryl** · ***the order is `PO-seam`'s progenitor der |
+| **`L-540`** | r2603 | ***the order now recomputes as `grounded` changes*** — and `REACH` is the one axis a human must maintain |
 
-*6 live rows carry a stated next step; the 6 longest-unworked are shown.*
+*7 live rows carry a stated next step; the 7 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session

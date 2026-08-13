@@ -54,6 +54,13 @@ VEINS = {
 # GROUNDED 0-3: how solid the footing is, INFORMS 0-3: how much a vein would learn). **
 # ** A lead with NO vein links is instrument work.  It is not counted as progress on the map. **
 LEADS = {
+ 'L-540': ("\u26ed\u26ed **`THE_PRIORITY`** \u2014 how the open work is ranked, **imported from this repo's own "
+   "`score(k) = grounded \u00d7 informs`** rather than invented. \u21d2 Applying it to the eleven "
+   "`PROTECTED_OPEN` items ranked **`PO-11` LAST**, which exposed that it measures **TRACTABILITY, not "
+   "importance**. \u21d2\u21d2 Two axes added: **REACH** (what a result BUYS, judged by hand) and "
+   "**CONVERGENCE** (how many items one result moves) \u2014 *and a fourth the first run forced:* ***WORKABLE***, "
+   "*because it put `PO-7` second and `PO-7` is gated by `PO-seam`*",
+   ['L-221'], 3, 2),
  'L-171': ("**PO-7** \u2014 \u26ed **NARROWED r2552 by `kills/PO-7.md`**: the four checks are written and "
    "\u26d4 **\u2461 DOES NOT CLEAR \u2014 corrected r2599/r2602**: check \u2461 asks what would have to be true for the item to stay open, and `kills/PO-7.md`'s own closing line answers it \u2014 ***\u201cwhat remains of \u24b7 is a PROGENITOR derivation of the datum's phase\u201d***. **That is live, so nothing is pending on Daryl and none ever was.** \u21d2 ***And \u24b7's derivation is `PO-seam`'s dark half: the ORDER is `PO-seam` first, this second.*** \u2714 **\u2463 CHAIN CLEARS r2559** (cc54 `L-805`) \u2014 the 0.408 rested on four things "
    "reproduced twice and on **P15's freezing argument**, reproduced nowhere; cc54 ran it: **every "

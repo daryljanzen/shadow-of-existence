@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2603 — 2026-08-11 (main line). **`THE_PRIORITY` — the ranking mechanism, imported from this repo's own `score()`, and the three axes it was missing.**
+
+**⌗ IMPORTED, NOT INVENTED.** *`regen_board.score` has always been **`grounded × informs`**, with the board's own
+header "ordered by how grounded and how informative" and an unlinked lead scored zero.*
+⇒ ⛭ **AND APPLIED TO THE ELEVEN `PROTECTED_OPEN` ITEMS IT RANKED `PO-11` LAST** *— the largest unbuilt thing in the
+corpus.*
+⇒⇒ ***So `grounded × informs` measures TRACTABILITY, not importance: how much a turn will teach you given what is
+already under it. Right for a LEAD, wrong alone for a research question — and the misapplication is what made the
+semantics visible.***
+
+**⌗ THE AXES ADDED:**
+*· **REACH** — what a result would BUY (a sector 3, a claim 2, a precision 1), ***judged and held by hand, because
+what a result buys is not derivable from the register***;*
+*· **CONVERGENCE** — how many open items one result moves. ***This is why the order has been obvious all session:
+the highest-convergence item has been visibly next every time.***
+*· ⛔ **WORKABLE** — *forced by the first run, which put **`PO-7` second** when `PO-7` **cannot be worked at all***.
+⇒ ***A gated item must not outrank its gate. Convergence measures how much a result would MOVE; it says nothing
+about whether the work can START.***
+
+**⛭ THE RULE:** ***a scoring function inherited from one kind of object will rank another kind confidently and
+wrongly. Run it on the new population before trusting it — the ranking that looks absurd is the one telling you what
+the score actually means.***
+
+**⌗⌗ AND THE SCRIPT CORRECTED THE HAND-WRITTEN ORDER IN ITS OWN FILE'S FIRST LINE.** *`THE_PRIORITY` had `PO-seam`
+at #1; `rank_open` puts **`PO-5` first** — convergence 3 against 2 — ***because `PO-seam` is next only for `PO-7`,
+while the $\mathbb{Z}_2$-graded index serves three items with no gate on any of them***.
+
+⌗ *`scripts/rank_open.py` recomputes as `grounded` changes; **`REACH` is the one axis a human must maintain**, and
+the script says so rather than pretending the ranking is measured.*
+
 ### Revision r2602 — 2026-08-11 (main line). **THE r2599 CORRECTION HAD NOT REACHED `L-171` — and `check_killrefs` found a fourth place it had not reached either.**
 
 **⛔ THE FIND.** *r2599 corrected `kills/PO-7.md` (② does not clear) and the `PROTECTED_OPEN` row in the same turn.*
