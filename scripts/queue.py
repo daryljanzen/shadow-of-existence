@@ -61,10 +61,15 @@ def po_items():
         if not re.match(r'\|\s*\*\*PO-\d+\*\*', l):
             continue
         tag = re.search(r'PO-\d+', l).group(0)
+        # ** an item whose question is ANSWERED and whose checks all pass is a RECORD awaiting a
+        # procedural strike, not open work.  r2644: PO-9's object is a two-branch question and the
+        # second branch is the answer -- counting it as open overstates what is left. **
+        answered = 'THE QUESTION IS ANSWERED' in l
         cells = l.split(' | ')
         what = re.sub(r'[*`⌗]', '', cells[1] if len(cells) > 1 else '').strip()
         dates = sorted(set(re.findall(r'\br(2\d{3})\b', l)))
-        out.append({'id': tag, 'kind': 'PROTECTED OPEN', 'open': True,
+        out.append({'id': tag, 'kind': 'PROTECTED OPEN', 'open': not answered,
+                    'answered': answered,
                     'kill': tag in kills, 'narrowed': len(dates),
                     'last': dates[-1] if dates else None, 'what': what[:78]})
     return out

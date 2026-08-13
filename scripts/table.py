@@ -48,10 +48,13 @@ def main():
         print(f'    {m} {x["id"]:<7} {x["narrowed"]:>2}x  r{x["last"] or "----"}  {x["what"][:56]}')
     print()
 
-    print(f'  PROTECTED OPEN -- {len(po)}')
+    live_po = [x for x in po if x['open']]
+    print(f'  PROTECTED OPEN -- {len(live_po)} open, {len(po) - len(live_po)} answered')
     for x in po:
         k = 'kill' if x['kill'] else '    '
-        print(f'    ⛔ {x["id"]:<7} {x["narrowed"]:>2}x  r{x["last"] or "----"}  {k}  {x["what"][:50]}')
+        mark = '✔ ' if not x['open'] else '⛔'
+        print(f'    {mark} {x["id"]:<7} {x["narrowed"]:>2}x  r{x["last"] or "----"}  {k}  '
+              f'{x["what"][:50]}')
     print()
 
     print(f'  LEDGER WORK -- {len(lw)}')

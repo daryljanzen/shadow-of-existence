@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2644 — 2026-08-11 (main line). **`PO-9` IS ANSWERED — the second branch of its own question was the answer, and the row said OPEN.**
+
+**⌗ THE PROMPT, one line: "Didn't that settle something?"**
+⇒ ***It did. `PO-9`'s object is "is the substrate's dimension settled, **or must it stay bounded below only**?" —
+and r2643 established exactly the second branch: the criterion "selects the manifold at fixed dimension and **is
+silent on the dimension itself**".***
+
+**⇒⇒ THE ANSWER, STATED PLAINLY:** ***the substrate's dimension is NOT settled by least-arbitrariness and stays
+BOUNDED BELOW ONLY.*** *① ✔ · ③ ✔ asymmetric · **④ ✔ all five links sourced** (a: r2552; b: P6; c: P6 via P12 and
+p0; d: r2641 from the embedding; e: r2640 on three methods) · ⑤ ✔.*
+⚠ *What would change it is what Daryl named: **empirical evidence, or a structural constraint not yet found — not a
+preference**.*
+
+**⛭ AND r2643 HAD WRITTEN "the row stays open as a record", WHICH IS TWO THINGS AT ONCE:** *the row stays **because
+`PROTECTED_OPEN` reserves the strike** — true — and the physics **is undecided** — false.*
+⇒ ***Those come apart, and folding them into one phrase let a settled item keep counting as open work.***
+
+**⛭⛭ THE RULE:** ***when a question offers two branches, establishing the second IS the answer — not a narrowing
+toward one. And a row held open by PROCEDURE must be reported separately from a row held open by IGNORANCE, or the
+count of what is left includes things nobody is still asking.***
+
+✔ *`queue.py` and `table.py` now report **9 open, 1 answered**, and the answered row is listed rather than hidden.
+**Table 19 → 18.***
+
+⌗ *Third time in five revisions that the honest move was to stop calling something open: **parked** (r2640), **scope
+not work** (r2639), **answered not open** (here).*
+
 ### Revision r2643 — 2026-08-11 (main line). **WHEN A CRITERION IS SILENT, SILENT IS THE ANSWER — r2642 carried the silence up as a question.**
 
 **⌗ THE CORRECTION, AND IT IS DARYL'S.** *"I have no idea why it would be restricted in any way beyond structural
