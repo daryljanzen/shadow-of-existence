@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2623 — 2026-08-11 (main line). **`PO-12` IS HALF BUILT — the debt's first step is computed two sections before the debt is named.**
+
+**⌗ THE DEBT IS STATED AS TWO STEPS.** *"This is a genuine build, not a plug-in: it requires **first specifying how
+the fluctuations gravitate on the radiation-free background**---the piece that sets the high-$\ell$ driving
+envelope, and which the standard Boltzmann codes cannot supply because they tie radiation's gravity to its
+presence---**and then a bespoke transfer against that specification**."*
+
+**⛭⛭ AND STEP ① IS BUILT.** *"That driving is computed below (`\S\ref{sec:envelope}`), and the calculation removes
+the licence the shortcut lacked: **the envelope is derived on the collapse leg rather than imported**."*
+⇒ ***"The piece that sets the high-$\ell$ driving envelope" is step ① word for word, and `sec:envelope` computes
+it. The specification the bespoke transfer would run against EXISTS — and a genuine Boltzmann transfer is already in
+use at large angles.***
+⇒⇒ ***What has not been run is the two against each other.***
+
+**⌗ AND THE ROW WAS WIDER THAN THE PAPER.** *It read "the transfer is what makes the 8% signature confrontable at
+all". The paper: **"The peak HEIGHTS are then carried by a structural argument rather than a bespoke transfer."***
+⇒ *The transfer is owed for the **tilt-irreducible residual** — "the part the transfer would isolate" — not for the
+heights.*
+
+**⛭ THE RULE:** ***when a paper names a debt in two clauses, check each clause separately against the rest of the
+paper. A debt is quoted where it is FELT and discharged where the WORK happens, and those are different sections.***
+
+⚠ *Three assertions failed before landing — twice because the phrase sits inside `\emph{}`, once because a comment
+carried a variant. ***The body-stripper and the markup are the two standing sources of false negatives in this
+line's assertions, and both were hit again.***
+
+⌗ *Table **28**, dark halves **2 of 4** — unchanged: `PO-12` narrowed, it did not close.*
+
 ### Revision r2622 — 2026-08-11 (main line). **`TABLE_HISTORY.txt` — the weight-loss chart, and a smooth decline is the warning sign.**
 
 **⌗ THE DIAGNOSTIC, AND IT IS ONE RATHER THAN AN ANALOGY.** *"If it were to go down at a regular rate we should be
