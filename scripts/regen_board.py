@@ -71,6 +71,16 @@ LEADS = {
    "**inherits** a standard adiabatic spectrum rather than seeding isocurvature — so the objection is "
    "**disarmed, not fatal**. The paragraph is 54's to place; `F1` untouched",
    ['L-202'], 3, 2),
+ 'L-805': ("\u26ed\u26ed **cc54 REPRODUCED PO-7's ONE NON-REPRODUCED LINK**: `kills/PO-7.md`'s chain check "
+   "found the 0.408 rests on four things reproduced twice and ONE \u2014 **(d) P15's freezing argument fixing "
+   "$\\phi\\in\\{0,\\pi\\}$** \u2014 reproduced nowhere. **Computed:** on cc54's own progenitor interior, the "
+   "sub-horizon ratio $c_sk/|aH|$ crosses $1$ **strictly before the crunch for every $\\ell=28$\u2013$2475$** "
+   "(matching P16 to the digit), and **$\\to0$ at the crossing for every mode** (max $5.2\\times10^{-4}$) "
+   "\u2014 so each crosses at a density extremum, $\\dot\\delta_\\gamma\\to0$, forcing $\\sin\\phi=0$. \u21d2 **The "
+   "inversion (a mode crossing UNfrozen, widening the band to $0.891$ and putting the control inside) is "
+   "CLOSED by the divergence of $|aH|$; the band stays $0.2069$, the control OUTSIDE.** chain-\u2463 now "
+   "clears; `F5` unsoftened, no conversion claimed",
+   ['L-202'], 3, 3),
  'L-171': ("**PO-7** \u2014 \u26ed **NARROWED r2552 by `kills/PO-7.md`**: the four checks are written and "
    "**\u2463 CHAIN does not clear** \u2014 the 0.408 rests on four things reproduced twice on two "
    "instrument paths, and on **P15's freezing argument**, which is an ARGUMENT and reproduced nowhere. "

@@ -123,8 +123,9 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-804`** | r2548 | ***the paragraph is 54's to place:*** *premise meets objection — state that the adiabatic premise is what the CMB forces ($\Delta\chi^2\sim3\times10^5 |
 | **`L-230`** | r2551 | **the number is re-measured r2551 and the diagnosis inverted**: not flat but **falling** (10.1%), and the cause is this line · ***the decision: requir |
 | **`L-171`** | r2552 | **NARROWED r2552 by `kills/PO-7.md`**: the object is now ***does every mode of interest freeze before the crossing?*** — P15 `sec:what-crosses`, the o |
+| **`L-805`** | r2556 | ***chain-④ now clears — the four checks are all reproduced;*** *the conversion runs by `F5`'s stated procedure (route ② authorisation), no node acting |
 
-*10 live rows carry a stated next step; the 10 longest-unworked are shown.*
+*11 live rows carry a stated next step; the 11 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session

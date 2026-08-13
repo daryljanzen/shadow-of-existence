@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.206 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**8 open QUESTIONS · 2 open WORK rows** *(263 struck of 273 registered).*
+**9 open QUESTIONS · 2 open WORK rows** *(263 struck of 274 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -27,6 +27,7 @@ sources: [cowork]
 | **`L-221`** | OPEN | REGISTERED r2378 by the observer line's `ARC 14` step-② fold — `PROTECTED_OPEN`'s `PO-5`, which had NO register row at all. The quark/lepton split, and what a baryon IS at the particle level — the five multiplets, and which carries the colour $\mathbf3$. A PRO… | `PROTECTED_OPEN` `PO-5` · `THE_PLAN` standing item ② | the question is INVERTED r2526: not "is there an $R$-odd operator?" but what BRIDGE from grading to field exists that is not "be a kernel"? — the kern… |
 | **`L-803`** | — | REGISTERED r2541 — cc54 WALKED R-P STATION ⑨ (the last unrun station, and the computational one): THE COSMOLOGY/NUCLEAR SECTOR RESTS ON $N_{\rm eff}$ AT BOTH ENDS AND NEVER NAMES IT. Station ⑨ (`P7`/`P15`/`P16` — BBN, recombination, the acoustic scale) is cc54… | `receipts/L803_station9_neff/S1…` · `THE_PHYSICS_REACH` ⑨ · `L-221` · P16 `sec:network` · P15 | the paragraph is still owed and its SHAPE is settled r2545 — route to 54: name $N_{\rm eff}$, state that CR fixes the $\nu_R$'s place and not its coup… |
 | **`L-804`** | — | REGISTERED r2548 — cc54's FIRST ARRIVAL-PATH FINDING SETTLED BY A NUMBER: THE ISOCURVATURE BOUND POINTED AT ITEM 32's ADIABATIC PREMISE, AND THE PREMISE IS WHAT THE SKY DEMANDS. The CMB literature's standard objection to any non-inflationary coherence mechanis… | `receipts/L804_isocurvature_bound/S1…` · `FOR_54` 32 · `L-202` · P16 `sec:overview` · Planck 2018 X | the paragraph is 54's to place: premise meets objection — state that the adiabatic premise is what the CMB forces ($\Delta\chi^2\sim3\times10^5$ again… |
+| **`L-805`** | — | REGISTERED r2556 — cc54 REPRODUCED PO-7's ONE NON-REPRODUCED LINK: EVERY MODE OF INTEREST FREEZES BEFORE THE CROSSING, AND THE INVERSION IS CLOSED. `kills/PO-7.md`'s chain check (④) found the 0.408 disagreement is a conjunction of four things reproduced twice … | `receipts/L805_freezing_reproduced/S1…` · `kills/PO-7.md` ④ · `L-171` · `L-202` · P15 `sec:what-crosses` | chain-④ now clears — the four checks are all reproduced; the conversion runs by `F5`'s stated procedure (route ② authorisation), no node acting alone |
 
 ## ⌗ WORK — programmes with steps; the content lives in `CONSOLIDATE`
 
