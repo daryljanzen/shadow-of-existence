@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2620 — 2026-08-11 (main line). **`scripts/latent.py` — the rate of latent findings is RISING, and it says do not split.**
+
+**⌗ THE JUDGEMENT, AND THE REASON IS STRUCTURAL.** *"Can't split while turns like this last one are still
+happening."*
+⇒ ***A LATENT finding is one where the answer was already in the corpus and reading further found it. **Two nodes
+working in parallel would both find the same latent thing, or one would BUILD what the other found sitting
+there.*** ⇒ ***Parallel work is safe on CONSTRUCTION and unsafe on DISCOVERY-BY-READING.***
+
+**⛭ MEASURED across the last forty revisions:**
+*· `r2580–r2599`: **5 of 20 (25%)***
+*· `r2600–r2619`: **8 of 20 (40%)***
+⇒⇒ ⛔ ***The rate is RISING, not falling. The corpus is telling us MORE as the instruments improve, not less —
+because each new gate and each printed list exposes another place where the answer was already sitting.***
+
+**⛭ THE RULE:** ***before splitting work across nodes, measure whether the recent turns were CONSTRUCTION or
+DISCOVERY-BY-READING. Construction parallelises; reading does not, because the thing being read is shared and the
+finding is not divisible.***
+
+⚠ *The classifier matches phrasings, so a latent finding stated in new words is missed. **The printed rate is a
+FLOOR — the right side to err on for this decision.*** *The script says **DO NOT SPLIT** while three or more of the
+last thirteen turns were latent; currently **8**.*
+
+⌗ *Table **27**, dark halves **2 of 4** — unchanged this revision, which is correct: **this one built an instrument
+for deciding how to work, not a result**.*
+
 ### Revision r2619 — 2026-08-11 (main line). **`PO-6` NARROWS TO ONE THING — the FLOOR — and r2611's caveat named the wrong one.**
 
 **⛔ THE CAVEAT WAS WRONG BY ONE CLAUSE.** *r2611 closed with "the commutation is stated **at leading order**, and
