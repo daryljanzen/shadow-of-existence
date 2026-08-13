@@ -13,12 +13,19 @@ sources: [chat]
 | item | what it is |
 |---|---|
 | **9** · **26** | ***conventions offered, not imposed*** — a `\rcpt{}` semantics, and two items routed at the finder's weight |
-| **18** | p0's frontier item 1, datum half — ***"the answer is that it cannot be derived"*** |
-| **50** | trans-Planckian — ***the scoping IS the content***: finite at each finite exterior time, **not uniformly bounded** |
-| **52** | ***the de Sitter horizon's entropy*** — $S=\pi(\alpha/\ell_P)^2$ is where $\alpha$ and $\ell_P$ meet, and `PO-6` asks whether one constant can regulate |
+| ~~**18**~~ | ✔✔ **APPLIED c54.207** — written into p0 as a RESULT, citing `X1` (r2433); `L-530` |
+| ~~**50**~~ | ✔✔ **APPLIED c54.207** — new clause in P1 `sec:problems`, **with the non-boundedness, the $e^{\kappa t}$ rate and the millisecond timescale attached**; `L-531` |
+| ~~**52**~~ | ✔✔ **APPLIED c54.207** — one clause in p0 `sec:ledger`, ⛭ **and it is the same number as the cosmological-constant factor, not merely the same magnitude**; `L-532` |
 
 ⇒ ***So the genuine floor is three: 18, 50 and 52 — and 52 is the only one that opens a question rather than a
 paragraph.***
+
+> ## ✔✔✔ AND THE FLOOR IS CLEAR — **all three applied at c54.207** (`L-530`, `L-531`, `L-532`)
+>
+> *What remains of the fifty are **9** and **26**, which the file itself marks as **offers rather than owings**.*
+> ⇒ ***The inbox is empty of owed work.*** ⌗ *And one item paid on the way through: `18`'s first draft carried a
+> cross-reference to P16 that **P16's body does not make** — it came from a `%` header comment, via `X1`'s
+> docstring where it reads as a quotation. Corrected, registered `L-535`, routed to 56 as item 17.*
 
 ⌗ *Forty-five of fifty are discharged, and **five of those were discharged by other work and marked only at
 r2563**: **30** (`L-230` closed r2557), **42** (P9 cites `JanzenDynamics` at `cor:wall`), **44** (`L-174` struck),
@@ -1223,7 +1230,13 @@ quantity $\kappa/2\pi$ has no frame to be defined in.***
 ⇒ *If you want it in the paper, that is a stronger sentence than a coincidence: **not "$\kappa$ vanishes there" but
 "the static frame $\kappa$ is defined in pinches out there."***
 
-## ⌗ 50 · TRANS-PLANCKIAN — a partial answer, and the scoping is the whole content — added r2528
+## ✔✔ APPLIED — 50 · TRANS-PLANCKIAN — the scoping is the whole content — applied c54.207
+
+*Written into P1 `sec:problems` after the scope paragraph. **The objection as posed targets the Bogoliubov construction, which P1 does not perform**; the version that transfers needs no mode-tracing. ⛔ **And the non-boundedness went in with it**: $\delta\propto e^{-2\kappa t}$ so the blueshift grows as $e^{+\kappa t}$ and the supremum is infinite. ⛭⛭ **The rate is `L-526`'s own $\kappa$** — one exponential seen twice. ⇒ ***And the Planck value is reached in MILLISECONDS at a stellar mass, so the finiteness is not a suppression; P1 now says the late-time surface is not free of ultraviolet physics rather than leaving "needs no ultraviolet completion of gravity" to be read as the stronger thing.*** `L-531`.*
+
+---
+
+### ⌗ THE ROUTED TEXT, kept — *a partial answer, and the scoping is the whole content; added r2528*
 
 *The blueshift $1/\sqrt f$ goes as $\delta^{-1/2}$ near a simple root and **diverges only AS the surface is
 REACHED**. Your claim is that no horizon is reached at finite exterior time.*
@@ -1239,7 +1252,7 @@ have something said about them; the third does not.***
 
 ---
 
-## ⛭ ANSWERED r2564 — AND IT IS ONE CLAUSE, NOT A QUESTION — ⛭⛭⛭ 52 · YOU TAKE THE de SITTER HORIZON'S TEMPERATURE AND NEVER ITS ENTROPY — and the entropy is where $\alpha$ and $\ell_P$ meet — added r2536
+## ✔✔ APPLIED c54.207 — ⛭⛭ *and the answer had one more thing in it: the entropy and the cosmological-constant factor are **the same number**, both $1/(\Lambda\ell_P^2)$, differing by $3/8$ — so p0's existing dissolution of the second is already the dissolution of the first.* `L-532`. — ## ⛭ ANSWERED r2564 — AND IT IS ONE CLAUSE, NOT A QUESTION — ⛭⛭⛭ 52 · YOU TAKE THE de SITTER HORIZON'S TEMPERATURE AND NEVER ITS ENTROPY — and the entropy is where $\alpha$ and $\ell_P$ meet — added r2536
 
 > ## ⛭⛭⛭ ANSWERED FROM YOUR OWN TEXT r2564 — the entropy's number is already in p0
 >

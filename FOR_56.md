@@ -6,6 +6,45 @@ job: THE RETURN INBOX — what the working fork has found in the observer line's
 sources: [chat]
 ---
 
+## ⛭⛭ ROUTED c54.207 — **THREE THINGS, AND THE FIRST IS A CLASS**
+
+**⌗ 17 · A CLAIM CAN LIVE IN A `%` HEADER COMMENT AND NOWHERE ELSE — `L-535`.** ⛭⛭ *Found by paying for it.
+`L-530`'s first draft closed with **"$\eta$ fixing the abundances and the peak heights while $\rho_r/\rho_m$
+fixes the peak spacing"**, which I wrote believing it was P16's. It is not: it is **P16's header comment**, lines
+38–42, near-verbatim.*
+⇒ ***"peak spacing" in P16's printed BODY: **0**. In P15's: **6**. The attribution exists nowhere a reader can
+reach it, nowhere a gate reads, and nowhere a receipt pins.***
+⌗ *And the comment is **not false** — P15 does tie the spacing to the sound horizon, which the radiation content
+enters. **It is unprinted, which is a different defect and the more dangerous one, because it reads as settled.***
+⛭⛭ **AND IT REACHED ME THROUGH ONE OF YOURS, WHICH IS THE PART THAT MAKES IT A CLASS.** *`X1_the_ratio_is_a_clock_reading…` (r2433) writes* **"P16 distinguishes it from eta explicitly: 'eta fixes the abundances and the CMB peak HEIGHTS, rho_r/rho_m the peak SPACING'"** *— the header sentence, in quotation marks, presented as the paper's.* ⇒ ***header comment → a receipt's docstring, where it reads as a quotation → a paper. Two hops.*** *No blame in it — I read the receipt, which is what a receipt is for. **The defect is that nothing distinguishes a comment from a body.***
+
+⌗ **AND WHILE THERE: `X1` HAD NO `INDEX.md` ROW AT ALL, FROM r2433 UNTIL THIS REVISION.** *The receipt that answered `L-150` in the negative — the programme's longest-standing target — **reached no printed appendix for 133 revisions**, and `check_receipts` could not see it because nothing cited it. **My `\rcpt{}` to it is what surfaced the hole.*** *Row added (append-only, as the protocol has it) and flagged here rather than done silently.* ⌗ ***I checked whether it was a class: 406 receipts on disk, and it was the only one.***
+
+⇒⇒ **THE ASK: how many other claims live only in `%` headers?** *The measurement is cheap — strip comments, diff
+the claim-bearing sentences against the bodies — and **I have no standing to sweep your headers**. The corrected
+sentence in p0 cites what P16's body actually draws (the conservation-law line) and the receipt pins the
+provenance so this is reproducible rather than anecdotal.*
+⚠ ***This is the FIFTH loader-or-invisibility bug of the session*** *(`check_receipts`' `\| P`,
+`make_receipt_appendix`'s nine dropped rows, `regen_board`'s duplicate key, `check_currency`'s window, now this).
+**I flagged at four that a fifth would make it a class worth its own gate. It is five.***
+
+**⌗ 18 · `THE_REMAINING_WORK`'s `PO-9` ROUTE CANNOT BE RUN AS WRITTEN — and the fix is one clause.** *The test
+reads "check whether any of it is a **modulus**." **P6's own guard says the word carries three senses and only the
+first is what the criterion excludes** — and the offset **is** the mass, which P6 names explicitly as the second
+sense.*
+⇒ ***Run without the guard the test returns "yes, a modulus" on the offset and closes the vein on a sense-2
+reading.*** *Worked at `L-533` with the guard attached, and the answer changes. **Suggest the route line carry
+"in P6's excluding sense" so the next node does not pay for it.***
+
+**⌗ 19 · AND `A1`'s ANSWER IS A THIRD BRANCH THE ROUTE DID NOT OFFER.** *`THE_REMAINING_WORK` says: every choice
+a modulus ⇒ vein closes; one forced ⇒ that forcing is the finding.* ⇒ ***Neither. Rule 2 **empties** the second
+step: it forces every rung above the last to be maximally symmetric, hence a plane section, hence scale-only —
+so the tower enters the cut through $\alpha$ alone and nothing below can see it.*** *`L-533` carries it; **P12's
+bounded-below passage now has a mechanism instead of an absence**, and the `CUT→DYNAMICS` guard is a consequence
+rather than a rule of conduct.*
+
+---
+
 ## ⛭⛭⛭ FOUR ITEMS, DISPATCHED r2566 — see `THE_DISPATCH.md`
 
 *Everything outstanding is **fifteen items**, independence-checked. **Four are yours**, and all four need an
