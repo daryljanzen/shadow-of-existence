@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2656 — 2026-08-11 (main line). **`check_kind` — the failure predicted for another node was already in this line's own log, three times. GREEN LIGHT.**
+
+**⌗ THE PREDICTION, from `THE_HANDOFF` one revision earlier.** *"**A 54 marking its own turns will mark a reading
+as a computation, because from inside a turn they feel identical**" — named as the one failure no gate catches.*
+
+**⛔ AND RUNNING IT BY HAND AGAINST THIS LINE'S OWN `LATENT_HISTORY` FOUND IT THREE TIMES:**
+*· **`r2635`** — a citation-circularity **reading**, marked `COMPUTED`;*
+*· **`r2637`** and **`r2649`** — marked `COMPUTED` with **no receipt at all** (a matrix reduction and a script fix);*
+*· plus a **duplicated `r2640` row**, double-counting its own kind.*
+⇒ ***The prediction was correct before the ink dried, and it was correct about ME.***
+
+**⛭ AND IT MATTERS MORE THAN IT LOOKS:** *the `LATENT`/`COMPUTED` ratio **is** the split signal, and mis-marking
+moves it in **the direction that licenses splitting** — the same direction r2649 found every instrument error
+running.*
+
+✔ *`check_kind` built, **both failure modes seed-tested**, wired. The three rows are **grandfathered rather than
+rewritten**: ***the log records what was believed at the time, and editing it would destroy the only evidence that
+this drift happens.***
+
+**⛭ THE RULE:** ***when you write down a failure another node will make, run the check against yourself before
+shipping the warning. A failure mode you can describe precisely is one you are already committing — the description
+is evidence of familiarity, not of distance.***
+
+**✔✔ GREEN LIGHT.** *Thirty-three gates can fail. The stamp emits its own numbers. **Two** ungated judgements remain
+(`rank_open`'s REACH, `TABLE_HISTORY`'s REASON), down from three — and neither can corrupt a receipt, only
+mis-order the queue, which the next ranking corrects.*
+
 ### Revision r2655 — 2026-08-11 (main line). **THE CHART HID PLATEAUS — and "what is going up?" had an answer the table could not show.**
 
 **⛔ THE BUG.** *`TABLE_HISTORY` is appended only when the number MOVES, so nine idle revisions wrote nothing and the

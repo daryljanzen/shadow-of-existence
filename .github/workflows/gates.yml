@@ -50,7 +50,7 @@ jobs:
           for g in check_id_bands check_kills check_burndown check_supersession \
                    check_grains check_changelog check_depmatrix check_arcs \
                    check_paststate check_receipts check_withdrawn check_queues \
-                   check_citations check_absorption check_receipt_asserts check_claims check_branches check_deferrals check_routed check_veins check_loaders check_computes check_provenance check_dupes check_silent check_withdrawals check_receipt_prefixes check_revleak check_open_ledger check_killrefs; do \
+                   check_citations check_absorption check_receipt_asserts check_claims check_branches check_deferrals check_routed check_veins check_loaders check_computes check_provenance check_dupes check_kind check_silent check_withdrawals check_receipt_prefixes check_revleak check_open_ledger check_killrefs; do \
                    check_conflict_markers check_arcpins check_routed check_veins \
                    check_loci check_loaders check_computes check_provenance \
                    check_revleak check_open_ledger check_killrefs check_compile; do

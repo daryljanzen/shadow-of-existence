@@ -89,7 +89,39 @@ to get the string as written.*
 *· **ask for authorisation on a question the criterion has declined** — `check_silent`, built r2643 after
 this happened twice;*
 *· **write the contribution statement** (`A15`) — that is Daryl's account of himself;*
-*· **mark its own turn `COMPUTED` when it read rather than computed** — the one failure no gate catches.*
+*· **mark its own turn `COMPUTED` when it read rather than computed** — ✔ ***now gated: `check_kind`,
+r2656.***
+
+---
+
+## ✔✔ GREEN LIGHT — r2656
+
+**`check_kind` closes the last structural risk.** *It was written as "the one failure no gate catches",
+and running it by hand against this line's own log found it **three times**: `r2635` (a citation reading
+marked `COMPUTED`), `r2637` and `r2649` (**no receipt at all**) — plus a **duplicated `r2640` row**
+double-counting its own kind.*
+
+⇒ ***The prediction in this file was correct before the ink dried, and it was correct about ME. That is
+the strongest evidence that a 54 rolling unattended needs it.***
+
+**WHAT IS NOW ENFORCED RATHER THAN ASKED FOR:**
+*· a receipt must be able to FAIL (`check_receipt_asserts`, `lint_assertions`);*
+*· a protected row cannot be struck by a node (`check_kills`);*
+*· a receipt cannot ask for authorisation on a question the criterion declined (`check_silent`);*
+*· a paper cannot say the same thing twice (`check_dupes`, seed-tested r2649);*
+*· a self-correction cannot enter unseen (`check_withdrawals`);*
+*· ***a turn cannot claim to have computed when it read*** (`check_kind`, both failure modes
+seed-tested).*
+
+**WHAT REMAINS UNGATED, AND MUST BE RE-VERDICTED AT INGESTION:**
+*· `rank_open`'s **REACH** — a judgement about what a result would buy;*
+*· `TABLE_HISTORY`'s **REASON** — the count is derivable, the reason is not.*
+
+⌗ ***Two judgements, down from three. Both are cheap to re-read and neither can silently corrupt a
+receipt — they only mis-order the queue, which the next ranking corrects.***
+
+**⇒⇒ 54 CAN ROLL.** *The apparatus emits its own numbers, thirty-three gates can fail, and the two
+remaining judgements are visible in one file each.*
 
 ---
 

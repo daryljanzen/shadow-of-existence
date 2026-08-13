@@ -70,7 +70,6 @@ r2637  COMPUTED    A14 step 2: the approach order from depmatrix column totals; 
 r2638  LATENT      A15 was UNLINKED not undefined -- CREDO settles it; the drawing is Daryls, the linking is done
 r2639  LATENT      downstream-IRRELEVANT is the opposite of downstream-blocked; all four items are scope
 r2640  COMPUTED    PO-9 link (e) reproduced on three routes; unreproduced links 3 -> 2
-r2640  COMPUTED    PO-9 link (e) reproduced on three routes; unreproduced links 3 -> 2
 r2641  COMPUTED    PO-9 link (d) reproduced from the embedding; spacelike restriction shown forced; 2 -> 1
 r2642  LATENT      PO-9 link (c) was never L-533s -- P6 grounds it, P12 and p0 use it; check 4 clears
 r2643  LATENT      the criterion was already put and returned SILENT -- P12 says so; no judgement was owed
@@ -86,3 +85,4 @@ r2652  COMPUTED    thermal regularity selects a branch only for Gamma >= -1/4; r
 r2653  INSTRUMENT  scripts/stamp.py: one command emits the header, so it cannot drift from the files
 r2654  INSTRUMENT  THE_HANDOFF: the signal turned (C5>L4); three hand-maintained judgements named as the risk
 r2655  INSTRUMENT  the chart hid plateaus -- appended only on moves; NARROWED added as the depth counter
+r2656  INSTRUMENT  check_kind: found 3 mismarked COMPUTED turns and a duplicate row in my own log
