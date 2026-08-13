@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2606 — 2026-08-11 (main line). **CORRECTING r2605 ONE REVISION LATER — the computation was right and the inference ran one step past it.**
+
+**⌗ WHAT r2605 CLAIMED.** *$S=\gamma^{0}\gamma^{1}\gamma^{3}$ squares to $-\mathbb{1}$, so the antilinear structure
+is quaternionic, **so `PO-5`'s mod-2 route is closed**.*
+⇒ ***The first half stands. The second does not.***
+
+**⛔ $S$ IS A LIFT IN THE FOUR-DIMENSIONAL SPACETIME CLIFFORD ALGEBRA**, *and that is what the corpus states it for —
+charge conjugation's kinematic face on the cut spinor.* ⚠ *But the operator whose kernel `PO-5` counts is not that
+one: P14 says **"the signed areal radius forces the RADIAL Dirac superpotential to change sign at the throat,
+binding exactly one chiral zero-mode there"**, on a leaf whose **"closed slicing has finite total length"**.*
+⇒⇒ ***A ONE-DIMENSIONAL Jackiw–Rebbi zero-mode problem. Its reality structure is the radial operator's, and
+$S^2=-1$ says nothing about it.***
+
+**⌗ AND THE CORPUS ANSWERS THE SKIPPED QUESTION TWO SENTENCES FROM WHERE THE LIFT IS DEFINED.** ***The step missed
+was "which operator's kernel is being counted?", and it was one sentence away — the sixth time this session, and the
+first caught within a revision.***
+
+**⛭ THE RULE:** ***a computation about an object named in the corpus is not automatically a computation about the
+object the QUESTION is about. Check that the thing you computed on is the thing the claim is over — the shared
+symbol is not enough, and it was a shared symbol that hid the sign in the first place.***
+
+**⌗⌗ AND THE TENSION IS KEPT RATHER THAN BURIED.** *In the 4D algebra $K\gamma^5K^{-1}=+\gamma^5$ and $K^2=-1$ —
+**exactly Kramers' condition**. ⇒ ***So if an analogous structure held on the radial operator, TWO modes per wall
+would be forced against `prop:wall`'s exactly one. That is a CHECK on the corpus nobody has run, and it is now
+stated as one.***
+
+⇒ *`PO-5`'s question is unchanged and better specified: **does the RADIAL operator admit an antilinear involution,
+and does it square to $+1$?** — computable from the superpotential the paper gives.*
+
 ### Revision r2605 — 2026-08-11 (main line). **`PO-5`'s MOD-2 ROUTE IS CLOSED — the involution is quaternionic, and a name collision hid the sign.**
 
 **⌗ THE QUESTION TURNED ON ONE SIGN.** *A mod-2 index exists iff the antilinear involution squares to **$+1$** (a

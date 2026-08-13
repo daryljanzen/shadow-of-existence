@@ -28,7 +28,31 @@ reality-involution lift $S=\\gamma^0\\gamma^1\\gamma^3$ gives $\\gamma^5S=-i\\ga
   The representation-independent statement is the Clifford one: ** a product of THREE gammas in signature
   $(1,3)$ squares to $-1$ **, and $S$ is such a product by the corpus's own definition.
 
-** ⇒⇒ SO THE STRUCTURE IS QUATERNIONIC AND `PO-5`'s MOD-2 ROUTE IS CLOSED. **  Not by absence of
+** ⛔⛔ CORRECTED r2606, ONE REVISION LATER, AND THE CORRECTION IS THIS RECEIPT'S OWN PATTERN. **  The
+verdict below read: "*the structure is quaternionic and `PO-5`'s mod-2 route is closed*".
+  ⇒ *** The first half stands.  The second overreached. ***
+
+  ** $S=\gamma^{0}\gamma^{1}\gamma^{3}$ is a lift in the FOUR-DIMENSIONAL spacetime Clifford algebra **,
+  and that is what the corpus states it for: charge conjugation's kinematic face on the cut spinor.
+  ⚠ ** But the operator whose kernel `PO-5` counts is not that one. **  P14: "the signed areal radius
+  forces the ** radial Dirac superpotential ** to change sign at the throat, binding exactly one chiral
+  zero-mode there", on a leaf whose "** closed slicing has finite total length **".
+  ⇒ *** That is a ONE-DIMENSIONAL Jackiw--Rebbi zero-mode problem.  Its reality structure is the radial
+      operator's, not the 4D lift's, and $S^2=-1$ says nothing about it. ***
+
+  ⌗ ** So what this receipt establishes is narrower and still worth having: ** the corpus's antilinear
+  lift is quaternionic, the square was never stated, and a name collision (`K^2` = extrinsic curvature,
+  twice) is why nobody noticed.  *** What it does NOT establish is that the mod-2 route is closed. ***
+
+  ⚠⚠ ** AND THE PATTERN IS THE ONE THIS SESSION HAS HIT SIX TIMES: ** a computation lands, the inference
+  runs one step past what it supports, and reading one step further in the corpus corrects it.  *** Here
+  the step further was "which operator's kernel is being counted?", and the corpus answers it plainly two
+  sentences from where the lift is defined. ***
+
+---
+
+** ⇒⇒ THE ORIGINAL VERDICT, KEPT BECAUSE THE CORRECTION IS THE FINDING: **  "SO THE STRUCTURE IS
+QUATERNIONIC AND `PO-5`'s MOD-2 ROUTE IS CLOSED." **  Not by absence of
 structure -- the structure is built and realised -- but *** because the structure that IS built is the
 wrong one for a parity: it doubles rather than grades. ***
 
@@ -124,7 +148,11 @@ def main():
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print('  VERDICT: ** the structure is QUATERNIONIC, and PO-5\'s mod-2 route is closed. **')
+    print('  VERDICT (corrected r2606): ** the corpus\'s 4D antilinear lift is QUATERNIONIC. **')
+    print('  ⛔ ** And that does NOT close PO-5\'s mod-2 route. **  S = g0 g1 g3 lives in the FOUR-')
+    print('     dimensional spacetime Clifford algebra, and the operator whose kernel PO-5 counts is the')
+    print('     ** RADIAL Dirac superpotential on a closed slicing of finite total length ** -- a')
+    print('     one-dimensional Jackiw-Rebbi problem whose reality structure is its own.')
     print('  ⓵ ** A mod-2 index needs the antilinear involution to square to +1 (a REAL structure). **')
     print('     When it squares to -1 the structure is QUATERNIONIC, Kramers doubles every eigenvalue,')
     print('     and the index is valued in 2Z -- ** an even integer, not a parity. **')
