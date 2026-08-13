@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2557 — 2026-08-11 (main line). **`L-230` CLOSED — the convention was asking the wrong population, and the fix was to shrink it, not to push harder.**
+
+**⛔ THE ROUTE THE ROW CARRIED.** *"Make `COMPUTES:` universal" — while the share fell **12.6% → 11.2% → 10.1%**
+across a hundred revisions.*
+⇒ ***But ~85% of receipts name no concrete parameter at all. A universal check would demand a scope declaration
+from receipts that HAVE no scope — which is why nobody complied and why nobody could say what was wrong.***
+
+**⛭⛭ THE HEADER EXISTS FOR THE F14 CLASS** *— a receipt running at ONE parameter while the sentence citing it means
+ANOTHER — and* ***that class only exists for receipts that RUN at a parameter. So the population is 102, not 397.***
+*Measured: **102 pin a concrete parameter · 11 declare · 91 do not · 30 declare without a numeric pin**.*
+
+**⌗ AND IT SHIPS GRANDFATHERED, which is the whole design.** *91 failures on day one is a gate nobody runs, and
+r2553's own rule says a check at that rate teaches nodes to ignore it.*
+⇒ ***The 91 freeze into a baseline of PATHS — a COUNT would let a new offender hide behind a removed one — and a
+receipt added after r2557 that pins a concrete parameter MUST declare its scope. The numerator then grows with the
+denominator, which is the only thing that turns a falling share around, and exactly what would have caught this
+line's 84-in-1.*** *Gate `check_computes`, seeded three ways.*
+
+**⚠ AND THE PRIOR CLOSURE IS CORRECTED, NOT OVERTURNED.** *r2447 closed the instrument question because **"no gate
+can read a quantifier"** —* ***true of the header's TRUTH, false of its PRESENCE. A closure about the unreachable
+half left the reachable half unaddressed for a hundred revisions.***
+
+⌗ ⛭ **THE RULE:** ***when a convention is not being adopted, check whether it is asking the wrong POPULATION before
+concluding it is being ignored — and when it is, grandfather the past and gate the future. A rule that makes 91
+existing things fail is not a rule, it is a wish.***
+
+⚠ *Limit stated in the gate itself: **"pins a parameter" is a regex PROXY**; 30 receipts declare without matching
+it, so the gate **under-counts the population it should police — and that direction of error is the safe one**.*
+
+⌗ *Board: **four veins, three leads**.*
+
 ### Revision r2556 — 2026-08-11 (main line). **`L-803` AND `L-804` STRUCK — their paragraphs are written; and a vein was asking a question its lead had answered.**
 
 **⌗ THE TWO ROWS.** *Both said "the paragraph is owed / is 54's to place", and **c54.206 placed them**: `Neff`

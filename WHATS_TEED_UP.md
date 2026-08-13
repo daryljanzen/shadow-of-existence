@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.206 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**6 open QUESTIONS · 2 open WORK rows** *(265 struck of 273 registered).*
+**6 open QUESTIONS · 1 open WORK rows** *(266 struck of 273 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -33,5 +33,4 @@ sources: [cowork]
 | lead | source section | what it is |
 |---|---|---|
 | **`L-218`** | `THE_HUB` · `SETUP_THE_REPO` · `PROTECTED_OPEN` · `THE_BASE_RATE` | REGISTERED r2415 — THE READER PACKAGE: the book in every reading format, plus an AI companion spun up from this corpus, in one repo. Daryl's idea, and the part that is not ordinary is not the formats.… |
-| **`L-230`** | `THE_ARSENAL.md` — `_dig/findings_batch2/` · `FOR_54` 24–26 · `ARC 17` · `L-223` | REGISTERED r2442 — THE POINT-STATED-AS-FAMILY CLASS, and it is `ARC 17`'s finding one axis over. Node 55's batch 2 diagnosed its own pattern before this line saw it: "a claim verified at one point of … |
 
