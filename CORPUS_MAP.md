@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r2604 — 2026-08-11 (main line). **THE RANKING'S FIRST TURN — `PO-5` worked, and a mod-2 index's prerequisite turns out to be already built.**
+
+**⌗ THE QUESTION.** *A mod-2 index is **not defined on a bare $\mathbb{Z}_2$-graded operator**. It needs a REAL or
+QUATERNIONIC structure — an antilinear involution — because the parity of $\dim\ker D$ is a deformation invariant
+only when such a structure pins it.*
+⇒ ***So the first question is not "does the index exist" but "does the corpus supply the structure".***
+
+**⛭ MEASURED:** *`antilinear` **38** · `charge conjugation` **58** · `reality` **36** · `real structure` **4** ·
+`quaternionic` **2** — and **`Majorana` 0, `symplectic` 0**.*
+⇒ ***The material is saturated and the standard names are absent, which is r2568's shape exactly, one level in.***
+
+**⌗⌗ AND IT IS REALISED ON THE BUILT ZERO-MODES, THE STRONGEST FORM IT COULD TAKE.** *P13: "it is **realised on the
+built fermion sector, where $R\circ K$ acts on the actual zero-modes as charge conjugation's kinematic face**".*
+⇒⇒ ***$R$ is the $\mathbb{Z}_2$ grading whose index is in question, $K$ is antilinear, and their composite acts on
+THE VERY MODES a mod-2 index would count — one chiral zero-mode per throat wall. Not a structure that would have to
+be supplied; one the matter sector already built, for another purpose.***
+
+**⌗ AND A SECOND, INDEPENDENT $\mathbb{Z}_2$-ON-A-REAL-STRUCTURE SITS IN P5 AND IS CONNECTED TO NOTHING.** *"the
+monodromy group does not act uniformly on the real structure … **only the order-two subgroup — complex conjugation
+of the pair — is realised on the real structure**" — on the same cubic whose three zero-sum roots are the $A_2$
+weights $S_3$ permutes.*
+
+**⇒⇒ SO `PO-5`'s QUESTION CHANGES SHAPE:** ***not whether the substrate could support such an index, but whether
+$R\circ K$'s action makes $\dim\ker D$'s parity a deformation invariant — a calculation on objects the corpus
+already has, rather than a search for missing structure.***
+
+**⛭ THE RULE:** ***before asking whether an invariant exists, ask whether its PREREQUISITE is present — and check
+the corpus for the STRUCTURE rather than the NAME. A programme that built a thing for one purpose will not have
+called it by the name the other purpose uses.***
+
+⚠ *Not claimed: that the index exists (the commutation relations making the parity invariant are unchecked), that
+P5's monodromy $\mathbb{Z}_2$ is $R$, or that a mod-2 index would deliver the bridge — **a $\mathbb{Z}_2$
+invariant can obstruct or permit but cannot by itself deliver four states**.*
+
 ### Revision r2603 — 2026-08-11 (main line). **`THE_PRIORITY` — the ranking mechanism, imported from this repo's own `score()`, and the three axes it was missing.**
 
 **⌗ IMPORTED, NOT INVENTED.** *`regen_board.score` has always been **`grounded × informs`**, with the board's own
