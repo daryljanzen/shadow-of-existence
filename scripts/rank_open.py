@@ -30,7 +30,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..'))
 
 # ** REACH and CONVERGENCE, entered by hand and dated.  Update when an item's standing changes. **
-# ** PO-5 grounded 2 -> 3 at r2604: the prerequisite is measured and realised on built modes. **
+# ** PO-5 at r2607: the mod-2 CONDITION is met on the radial operator (A=sz∘conj, A^2=+1, preserves the
+# counted eigenspace).  What remains is the index's VALUE -- a computation, not a search. **
 REACH = {'PO-2': 2, 'PO-3': 2, 'PO-4': 3, 'PO-5': 3, 'PO-6': 3, 'PO-7': 2, 'PO-8': 1,
          'PO-9': 2, 'PO-10': 2, 'PO-11': 3, 'PO-12': 2}
 # ** GATED_BY, added r2603 the moment the ranking first ran. **  ⛔ The first run put `PO-7` SECOND --

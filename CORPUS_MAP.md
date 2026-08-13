@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r2607 — 2026-08-11 (main line). **THE RADIAL OPERATOR CARRIES A REAL STRUCTURE — `PO-5`'s mod-2 condition is MET.**
+
+**⌗ THE CORRECTED QUESTION, ON THE CORRECTED OPERATOR, AND P14 SUPPLIES BOTH.** *"The zero-mode equation $H\psi=0$
+for **$H=-i\sigma_x\partial_x+m(x)\sigma_z$**, with $m(x)$ the wall profile crossing zero at the throat", solving
+to "$\psi=\exp(-\int_0^x m)\chi_+$, with **$\chi_+$ the $\sigma_y=+1$ eigenspinor**".*
+
+**⓵ OF THE FOUR CANDIDATES $A=U\circ\overline{\;}$, ONLY $U=\sigma_z$ COMMUTES WITH $H$.** *By hand:
+$\overline{-i\sigma_x\partial_x}=+i\sigma_x\partial_x$ since $\sigma_x$ is real, and
+$\sigma_z(i\sigma_x)\sigma_z=-i\sigma_x$; while $\overline{m\sigma_z}=m\sigma_z$ and
+$\sigma_z\sigma_z\sigma_z=\sigma_z$. **Both terms returned.***
+
+**⛭⛭ ⓶ AND $A^2=+\mathbb 1$** *— a **REAL** structure, ***the opposite of the 4D lift's $S^2=-1$***, and it is the
+radial operator's that governs the count.*
+**⓷ AND $A\sigma_yA^{-1}=+\sigma_y$** *— it **preserves the eigenspace the mode sits in**.*
+
+**⇒⇒ TWO CONSEQUENCES:**
+*· ***NO KRAMERS DOUBLING*** — Kramers needs $A^2=-1$. **So `prop:wall`'s "each throat wall binds exactly one
+normalizable chiral zero-mode" is consistent, and r2606's own worry dissolves.***
+*· ***THE MOD-2 INDEX'S CONDITION IS MET*** — a real structure commuting with the operator and preserving the
+counted space is exactly what makes $\dim\ker$ a mod-2 deformation invariant.*
+⌗ ***So the route is OPEN, and the structure supporting it is one the corpus already wrote down — two sentences from
+the operator it wrote it for.***
+
+**⛭ THE RULE:** ***a wrong answer arrived at carefully is worth more than no answer, because each correction narrows
+the question. r2605's error was not the computation — it was computing on the object that shared a name. Fixing
+WHICH object turned a closed route into an open one with its condition satisfied.***
+
+⚠ *And `check_receipts` caught a **hollow assertion** in the first draft — a line asserting `True` for a rhetorical
+contrast. **Replaced with the real comparison**: the 4D lift squares to $-1$ and this squares to $+1$. ***An
+assertion that cannot fail is not a check, and the gate said so on the turn it was written.***
+
+⌗ *Untouched: the index's VALUE; whether $A$ is $R\circ K$ in another frame; and the standing limit that a
+$\mathbb{Z}_2$ invariant cannot by itself deliver four states.*
+
 ### Revision r2606 — 2026-08-11 (main line). **CORRECTING r2605 ONE REVISION LATER — the computation was right and the inference ran one step past it.**
 
 **⌗ WHAT r2605 CLAIMED.** *$S=\gamma^{0}\gamma^{1}\gamma^{3}$ squares to $-\mathbb{1}$, so the antilinear structure
