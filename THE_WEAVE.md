@@ -1,9 +1,45 @@
 ---
 name: the-weave
 kind: STATE
-current: r2547+c54.204
+current: r2562+c54.206
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
+
+> ## ⛭⛭⛭ A SIXTH MECHANISM r2562 — BUILD THE LINT, MEASURE IT, AND USUALLY DON'T SHIP IT
+>
+> *Three times in nine revisions a check was **built, run against the real tree, and rejected on its own numbers**:*
+>
+> | lint | what it would catch | measured | shipped |
+> |---|---|---|---|
+> | **`L-514`** r2553 | a withdrawal contradicting its own section | ***~1 real in 20*** | ✗ |
+> | **`L-228`** r2554 | possessive/compound locus forms | ***8 sites, and the GRAMMAR says none are locus claims*** | ✗ |
+> | **`L-175`** r2556 | a vein asking a question its lead answered | ***0 real in 2*** | ✗ |
+>
+> ⇒ ⛭ ***And the pattern across the three is worth more than any one: the checks that DO work name SPECIFIC things —
+> `check_veins`' retraction table, `check_computes`' baseline of paths, `check_loaders`' instance list. Every GENERAL
+> form of "detect a stale idea" has failed on precision.***
+>
+> **⌗ SO THE MECHANISM IS: *build it anyway, then measure.*** *Each of the three produced a real finding **in the
+> building** — `L-514`'s instance was already fixed in P15; `L-228`'s grammar showed the extension was **wrong, not
+> expensive**; `L-175`'s single true positive was a live defect on a vein.*
+> ⇒ ***The lint was the instrument, not the deliverable. "The precision is bad" is a finding; "I didn't build it" is
+> not.***
+>
+> **⚠ AND THE COMPLEMENT, WHICH IS WHERE THIS CLASS ACTUALLY GETS CAUGHT:** *the **closure-neighbour report**
+> (r2542) — when a lead closes, read the veins it fed.* ⇒ ***It says WHERE to look without pretending to judge, and
+> every one of the three rejected lints was trying to do the judging part.***
+>
+> ## ⌗ AND THE JOINS PATTERN HELD FOR ANOTHER TEN ROWS
+>
+> *r2547 recorded that six rows had closed and **not one by new work**. Since: **`L-217`, `L-514`, `L-228`, `L-230`,
+> `L-240`, `L-207`, `L-803`, `L-804`, `L-805`** — and the same reading holds for every one.* ⇒ ***Two new shapes
+> emerged: a row held open by a STANDING CONDITION (`L-217`'s trip-wire, `L-805`'s procedure), and a row holding
+> GATED WORK that belongs on the vein that gates it (`L-207`).***
+> ⌗ *And two rows closed on **their own wrong premise**: `L-230`'s route asked the wrong POPULATION, and
+> `VARIATIONAL_LEDGER`'s title was **false for 657 revisions**.*
+> ⇒ ***So the joins pattern has a sibling: a long-open row is often not a join OR a gap but a MIS-STATED QUESTION,
+> and re-measuring the question is cheaper than working it.***
+
 
 > ## ⛭⛭⛭ BROUGHT CURRENT r2547 — THE OUTSIDE PROBE RAN ITS COURSE, AND THE RESULT IS A CLOSED THEATRE
 >

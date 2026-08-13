@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2562 — 2026-08-11 (main line). **A SIXTH MECHANISM — build the lint, measure it, and usually don't ship it.**
+
+**⌗ THREE TIMES IN NINE REVISIONS** *a check was built, run against the real tree, and rejected on its own numbers:*
+*· **`L-514`** (a withdrawal contradicting its own section) — ***~1 real in 20***;*
+*· **`L-228`** (possessive and compound locus forms) — ***8 sites, and the GRAMMAR says none of them are locus
+claims***;*
+*· **`L-175`** (a vein asking a question its lead answered) — ***0 real in 2***.*
+**None shipped.**
+
+⇒ ⛭ ***AND THE PATTERN ACROSS THE THREE IS THE ENTRY: the checks that DO work name SPECIFIC things — `check_veins`'
+retraction table, `check_computes`' baseline of paths, `check_loaders`' instance list. Every GENERAL form of "detect
+a stale idea" has failed on precision.***
+
+**⌗ SO WHY BUILD THEM.** *Each produced a real finding **in the building** — `L-514`'s instance was **already fixed
+in P15**; `L-228`'s grammar showed the extension was **wrong rather than expensive**, which a hundred revisions of
+deferral had never established; `L-175`'s one true positive was **a live defect on a vein**.*
+⇒ ***The lint was the INSTRUMENT, not the deliverable.***
+
+**⚠ AND THE COMPLEMENT IS WHERE THE CLASS ACTUALLY GETS CAUGHT:** *the **closure-neighbour report** (r2542) — when a
+lead closes, read the veins it fed.* ⇒ ***It says WHERE to look without pretending to judge, and all three rejected
+lints were trying to do the judging part.***
+
+**⌗⌗ AND A SIBLING TO THE JOINS PATTERN.** *r2547 recorded six rows closed and **not one by new work**. Nine more
+since — `L-217`, `L-514`, `L-228`, `L-230`, `L-240`, `L-207`, `L-803`, `L-804`, `L-805` — and two new shapes
+appeared: **a row held open by a STANDING CONDITION**, and **a row holding GATED WORK that belongs on the vein that
+gates it**.*
+⇒ *And two closed on **their own wrong premise**: `L-230`'s route asked the wrong POPULATION, and
+`VARIATIONAL_LEDGER`'s title was **false for 657 revisions**.*
+⇒⇒ ***So the joins pattern has a sibling: a long-open row is often not a join OR a gap but a MIS-STATED QUESTION,
+and re-measuring the question is cheaper than working it.***
+
+⌗ *`THE_WEAVE` and `OPEN_PROBLEMS_MAP` brought current with both.*
+
 ### Revision r2561 — 2026-08-11 (main line). **THE COMPANION'S THREE-WAY RULE IS A FOUR-WAY RULE, and the fourth bucket is the default and the largest.**
 
 **⌗ THE CLAIM UNDER TEST.** *`L-218`: "the companion's rule is **enforceable rather than aspirational**: every claim

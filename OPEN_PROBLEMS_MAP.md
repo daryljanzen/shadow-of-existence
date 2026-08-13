@@ -1,9 +1,26 @@
 ---
 name: open-problems-map
 kind: STATE
-current: r2547+c54.204
+current: r2562+c54.206
 job: The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open
 ---
+
+## ⛭⛭ BROUGHT CURRENT r2562 — what moved on this map's own items
+
+*· **A·1** (why the cut bends — P8's "the deepest open question the construction raises"): its **kinematic half is
+exhibited**, all three of W1's instances closed. **`L-207` struck r2560** and its remaining half — **B·2, the
+non-perturbative quantization** — is now carried on **`PO-6`'s vein** as what unlocks when that moves, rather than
+on a lead list telling every node to wait.*
+*· **A·5, B·1, B·2, G·1** — unchanged; B·2 is **no nearer**, and `PO-6`'s dark half is unchanged.*
+
+**⌗ AND THIS MAP'S OWN HEADER CLAIM WAS CORRECTED AT r2533** *— "every live item has been folded" is gone, verified
+by `check_routed`'s probe.*
+
+⌗ *The map's entry-point front (`L-210`) was **recounted and struck at r2546**: it advertised **94 unmarked sites**
+and the true figure was **six section headings and one site whose verdict was written but never marked**.*
+⇒ ***The largest apparent backlog on this map was a missing tick — and the front had already delivered P14's entire
+54-development.***
+
 > **⌗⌗ AUDITED AGAINST THE REGISTER r2378 (observer line, `ARC 14` step ②) — and the map came out CLEAN.**
 > *Every code is folded; **the map has been fully folded since c54.90 and stayed that way**,
 > which is the c54.90 fold's own claim holding up under an independent check.*
