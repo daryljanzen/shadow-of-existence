@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2651 — 2026-08-11 (main line). **`PO-6`'s FLOOR QUESTION ANSWERED — NO, at the order the paper names.**
+
+**⌗ THE QUESTION, narrowed to one thing at r2619:** *does the completed $\hat\Gamma$ keep a floor? P10 leaves it
+open in its own voice — and **names exactly what enters**: "At leading order
+$\hat\Gamma=\gamma+c\sum_n\hat\pi_n^2$; but **the cubic and higher self-interactions enter at the same
+inverse-square order at the origin ($\pi_n^2\phi_m/a^3$ in kind)**".*
+
+**⛭⛭ AND THE STRUCTURE DECIDES IT.** *Grouped, $\hat\Gamma=\gamma+\hat\pi^2(c+g_3\hat\phi)$ — where
+$\hat\pi^2$ is a **square** and $\hat\phi$ is a **signed field amplitude**.*
+⇒ ***The coefficient of $\pi^2$ turns negative wherever $\phi<-c/g_3$, and $\hat\Gamma\to-\infty$ as $\pi^2$
+grows.*** *(Sampled over 200,000 points at $\gamma=0.25$, $c=g_3=1$: minimum $-209$.)*
+⇒⇒ ***So the leading-order "sum of squares" is destroyed by the FIRST correction — the correction is not a square
+but a square times a signed field.***
+
+**⌗ AND THE PAPER BUILT ITS DECOMPOSITION NOT TO NEED IT:** *"uses only that both sides of the threshold are
+occupied, **and not that the spectrum has a floor**".*
+⇒ ***That reads as modesty until the floor fails; then it reads as foresight. A construction arranged so nothing
+rests on an open question is not hedging — it is the shape of an argument built by someone who suspected the
+answer.***
+
+**⛭ THE RULE:** ***when a paper marks a property as "not assumed here", ask whether the property is TRUE before
+assuming the caution was routine. The most informative caveats are written by an author who could see how it would
+go.***
+
+⚠ *The vein stays dark: **what remains is not the floor but what fixes the STATE** — an operator unbounded below is
+a standard situation, and the question changes rather than closing. `L-165` narrowed **12×**.*
+
 ### Revision r2650 — 2026-08-11 (main line). **TWO WIRED GATES CANNOT FAIL — the one number that only ever rose was two too high.**
 
 **⌗ THE INVERSE QUESTION.** *r2649 closed on a pattern: `latent.py` under-counted, `status.py` counted a range
