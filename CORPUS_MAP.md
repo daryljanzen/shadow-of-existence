@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2586 — 2026-08-11 (main line). **`sec:refit-bound` PLANNED, and its first two steps done — the 57 KB is copied out BEFORE any edit.**
+
+**⌗ WHY IT IS A REWRITE AND NOT A MOVE.** *Classified paragraph by paragraph: **17 STORY+NUM · 21 RESULT · 8
+connective** — and* ***the section is CHRONOLOGICAL, so the physics is interleaved with the narrative.*** *A RESULT
+paragraph routinely opens by referring to the STORY one before it: "That derivation is now in hand", "The prediction
+of the previous paragraph is checked", "Both halves of that were then carried to the same depth".*
+⇒ ***Lift the story and the result loses its subject. The other four passes were each one misplaced paragraph; this
+one is the only rewrite.***
+
+**⌗ AND THE SHAPE IS VISIBLE IN WHERE THE SURVIVING NUMBERS SIT.** *`0.5703` ×6 at **49–71%** · `1.9\%` at **71%** ·
+`0.408` at **82%** · `1.18` ×3 at **61–68%**.*
+⇒ ***They cluster in the last third; the first two-thirds is how they were reached.*** *The present state is **six
+claims** against forty-six paragraphs.*
+
+**✔✔ STEP ⓵ DONE — EXTRACT, DO NOT CUT.** ***57,451 characters copied verbatim into `CONSOLIDATE` before a single
+character is removed from the paper.***
+⇒ ⛭ ***Nothing can be lost if the whole thing exists elsewhere before the edit begins. That is the one step that
+makes every later step recoverable.***
+
+**✔ STEP ⓶ DONE — the 32 receipts it binds are inventoried**, *because the rewritten section must keep each attached
+to the claim it checks.* ⚠ ***`check_receipts` catches a dropped binding only if the claim survives — a claim
+deleted with its receipt fails nothing, and that is the failure mode the inventory exists to prevent.***
+
+⌗ *Steps ⓷–⓹ remain: write the present-state section fresh, **diff the 32 receipts against old and new**, regenerate
+and gate — with `check_revleak`'s baseline expected to **fall** by the five revision numbers this subsection
+carries.*
+
 ### Revision r2585 — 2026-08-11 (main line). **REHOMING PASS 5 — P7's story-move, and the paper had already done half the separation itself.**
 
 **⌗ P7 STATED THE PRINCIPLE BEFORE THIS CAMPAIGN DID.** *"a frontier list is a map of where the work is, and **an

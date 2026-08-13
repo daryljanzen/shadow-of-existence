@@ -110,7 +110,7 @@ is**.*
 | **`L-171`** | r2559 | **`kills/PO-7.md` is COMPLETE r2559** — object named, four checks written, ***all four now pass*** · ***the next step is the register's own: "and Dary |
 | **`L-218`** | r2561 | ✔ ⓶ done r2478 · ***the RULE is tested r2561 and needs a fourth bucket (DISCUSSED), which is the default*** · ⓵ pandoc-in-CI and ⓷ the contribution re |
 | **`L-536`** | r2579 | **TWO HALVES.** ⓵ `PO-10`'s two runs (the full-spectrum likelihood comparison, the odd/even height pattern) · ⓶ ***the FRONTIER-PLACEMENT AUDIT across |
-| **`L-537`** | r2585 | ***only `CR_cosmology`'s `sec:refit-bound` remains*** — 57 KB, 59% narration, needing its own planned campaign paragraph by paragraph |
+| **`L-537`** | r2586 | **steps ⓷–⓹ of `THE_REFIT_BOUND_PLAN`**: write the present-state section fresh from the six claims · ***diff the 32 receipts against old and new*** ·  |
 
 *8 live rows carry a stated next step; the 8 longest-unworked are shown.*
 

@@ -1,7 +1,7 @@
 ---
 name: consolidate-the-plan-and-index-the-programme
 kind: STATE
-current: r2585+c54.207
+current: r2586+c54.207
 job: Consolidate the plan and index the programme — the arcs (§2), the sequence (§13), the standing actions (§14), and §16 THE DEVELOPMENT RECORD, which is where RG-1 moves a paper's past state.
 sources: [cowork]
 ---
@@ -11,6 +11,706 @@ sources: [cowork]
 *Opened r2581. **This is where the STORY goes.** A paper is a map of the present state; when its horizon moves back,
 the newly-known content is rehomed upstream into the physics and **the account of what was known when belongs
 here** — not in the paper, where it reads as a changelog.*
+
+### ⓹ `CR_cosmology` (P15) · `sec:refit-bound` · **THE ACOUSTIC FRONT'S WORKING RECORD — copied here r2586, BEFORE any edit**
+
+> ⛭⛭⛭ ***This is step ⓵ of `THE_REFIT_BOUND_PLAN`, and it is the step that makes the rest safe: the entire
+> subsection is copied here VERBATIM before a single character is removed from the paper. Nothing can be lost if the
+> whole thing exists elsewhere before the edit begins.***
+
+**⌗ WHAT IT IS.** *57,451 characters, 46 paragraphs, **27 of them (59%) narrating the paper's own revision
+history** — the acoustic front's entire working account: the four withdrawn quantities, the protocol correction,
+the instrument rebuilds, the phase attribution, and five internal revision numbers (`r2376+c54.160`, `.164`,
+`.168`, `.173`, `r2501+c54.197`).*
+⇒ ***It is the most valuable record in the corpus of how a hard result was actually reached. It is also the most
+likely thing to be damaged by a hasty pass — which is why it is here first.***
+
+**⌗ THE 32 RECEIPTS IT BINDS** *(step ⓶ of the plan — the rewritten section must keep each one attached to the claim
+it checks, and a receipt appearing in neither the new section nor this record is **content lost**):*
+
+*1.* `H0_acoustic_angle_and_seam`  
+*2.* `ISW_line_of_sight`
+
+*3.* `M2_reabsorption_minimization`  
+*4.* `P15_both_datum_freedoms_opened_and_the_spacing_still_holds`
+
+*5.* `P15_derived_lensing_on_the_lcdm_arm`  
+*6.* `P15_the_acoustics_work_and_the_phase_is_the_whole_disagreement`
+
+*7.* `P15_the_admissible_band_is_a_third_and_the_two_entries_differ_against_the_potential`  
+*8.* `P15_the_control_entered_the_regime_and_the_arm_did_not_move`
+
+*9.* `P15_the_derived_diffusion_damping`  
+*10.* `P15_the_driving_shift_by_subtraction`
+
+*11.* `P15_the_first_peak_figure_is_not_stable`  
+*12.* `P15_the_first_peak_is_the_seam_datum_and_the_spacing_is_not`
+
+*13.* `P15_the_floor_is_a_distance_between_models_not_a_number_from_the_data`  
+*14.* `P15_the_gradient_coupling_in_closed_form`
+
+*15.* `P15_the_height_target_was_below_the_resolution_of_its_own_statistic`  
+*16.* `P15_the_line_of_sight_transfer`
+
+*17.* `P15_the_phase_is_the_driving_and_the_undriven_arms_agree`  
+*18.* `P15_the_phase_moves_with_the_datum_and_only_the_spacing_does_not`
+
+*19.* `P15_the_photon_hierarchy_in_the_transfer`  
+*20.* `P15_the_residual_is_contrast_and_the_lensing_potential_is_derived`
+
+*21.* `P15_the_shear_coefficient_derived_not_remembered`  
+*22.* `P15_the_spacing_deficit_survives_the_one_fitted_parameter`
+
+*23.* `P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong`  
+*24.* `P15_two_arm_control_and_guard`
+
+*25.* `P15_verify_coherence_comb`  
+*26.* `P15_what_is_left_is_lensing_and_not_reionisation`
+
+*27.* `P15_where_the_likelihood_sits`  
+*28.* `P15_which_coupling_carries_the_k_dependence`
+
+*29.* `P15_zonset_determinations`  
+*30.* `PEEB_peebles_on_the_set_rate`
+
+*31.* `ROBUST_p1p2_scan`  
+*32.* `UNC_error_budget`
+
+
+**⌗ AND WHAT SURVIVES AS PRESENT STATE — six claims, against forty-six paragraphs:**
+*the spacing at **98.2%** of the required rate robust to **1.9%** · the phase missing by **0.408** with the band
+**0.2069** against a gap of **0.6152** and the control outside it · the arm's invariance $\ell_1/\ell_A=**0.5703**$
+through six instrument states · the first peak **23%** low against a **1.5%** control floor, its cause derived ·
+the likelihood floor **1.18**, a distance between models rather than a number from the data · the damping
+coefficient **16/15**, derived and making the control worse.*
+
+---
+
+#### THE SUBSECTION AS IT STOOD — verbatim, r2586
+
+```latex
+\subsection{The signature at the directly measured rate}\label{sec:refit-bound}
+Two features of this cosmology's acoustic scale are worth separating, because only one of them is a
+prediction. The angular scale $\ell_{*}=\pi D_{M}/r_{s}$ is \emph{independent of $H_{0}$} here: both lengths
+scale as $1/H_{0}$ on a matter-and-substrate rate, so the ratio does not know about it. In flat $\Lambda$CDM
+there is no free early datum---the sound horizon is fixed by the matter and baryon densities---so the measured
+angle \emph{does} determine $H_{0}$, and that is the origin of the lower value inferred from the microwave
+background. Here the branch point's radiation amplitude takes that constraint instead, and $H_{0}$ is left to be the
+directly measured one\rcpt{H0_acoustic_angle_and_seam}. \emph{So the acoustic scale is an accommodation, and
+it is spent.}
+
+The diffusion scale is not. Holding $\ell_{*}$ to its measured value fixes the onset redshift, and
+$\theta_{D}/\theta_{*}$ then follows with nothing left to adjust: it varies from $+43\%$ to $-3\%$ across the
+onset redshifts one might consider, so a single datum cannot absorb both observables. \emph{One inherited
+number, two observables, and the first is spent on the first.} Run at the directly measured $H_{0}=73$, the
+matter density this construction's own baryon-acoustic fit returns, its own light-element baryon density, and
+the measured photon temperature---with the acoustic angle the single microwave-background input---the seam
+falls at $z\simeq6.8\times10^{3}$ and
+\[
+\theta_{D}/\theta_{*}\;=\;+13.96\%\;\pm\;0.89\%,
+\]
+an error budget dominated by the measurement of $H_{0}$ itself\rcpt{UNC_error_budget}. Two contributions that
+might have been expected do not enter: the last-scattering surface's thickness scales with the rate in both
+its width and its conversion to comoving distance, so it cancels from the ratio; and the recombination
+redshift, integrated on this rate through the Peebles equation~\cite{Peebles1968} rather than inherited, moves by only
+$-0.11\%$\rcpt{PEEB_peebles_on_the_set_rate}. The same integration returns $z_{*}=1091$ on the
+radiation-included rate, against the $1090$ of the standard treatment, which is the check that the ionisation
+history is being handled correctly.
+
+The first acoustic peak is a separate matter and it does not move. Its offset from $\ell_{*}$---$220$ against
+$301.7$---is largely the phase shift the potential's decay imparts while the modes are driven, and that decay
+has the same closed form on the collapse leg as on an expanding radiation era (\S\ref{sec:envelope}), so it
+transfers. What does not transfer is the early integrated Sachs--Wolfe contribution, and that turns out to be
+a nearly \emph{flat} multiplicative factor across the first-peak region---some ten per cent in amplitude,
+varying by two parts in a hundred between $\ell=150$ and $\ell=300$---so it displaces the maximum by one or
+two multipoles rather than by tens\rcpt{ISW_line_of_sight}. \emph{The first peak therefore sits where it is
+measured, and for a reason internal to the construction rather than by accommodation.} That refit can be bounded here, and bounding it is
+worth doing because the reabsorption question is the whole of what a likelihood would decide about this
+signature. Pinning $\ell_{*}$ to the measured $301$ and minimising the residual in $\theta_{D}/\theta_{*}$ over
+the baryon density and the matter density---the former held to the one per cent primordial deuterium allows,
+the latter to the five per cent the distance and growth data allow---leaves a residual of several per cent
+\rcpt{M2_reabsorption_minimization}. The baryon density cannot absorb it, having one per cent of freedom
+against a nine per cent effect; the matter density can, but only by moving some thirty-seven per cent, which is
+not a refit but a different cosmology. \emph{So the shift has a floor, and the floor is the prediction.} We
+state this as a bound and not as a likelihood: a full comparison fits the whole spectrum with every parameter
+and its covariances, where this fixes one observable and minimises one derived ratio. It settles that the
+signature does not dissolve under reabsorption; it does not settle the verdict.
+
+\emph{This was reported here as a transfer argument contradicted by a direct computation, and at
+r2376+c54.164 that reading is withdrawn: the computation does not hold still.} The reasoning above
+establishes that the driving phase shift carries over from the leg, and infers from that a first peak near the
+same fraction of $\ell_{*}$ as flat $\Lambda$CDM's---which is how $220$ enters. A perturbation calculation
+built on the branch point handover was quoted against it, placing the peak near $\ell=150$, at half of
+$\ell_{*}$ rather than at $0.73$, with a first-to-second peak ratio of ${\simeq}1.45$ against the measured
+$2.21$\rcpt{ROBUST_p1p2_scan}. \emph{Neither figure survives an examination of what fixes it.} Substituting
+the instrument's initial-data block and leaving every other line of it byte-identical---the background, the
+hierarchy, the opacity, the damping, the discrete ladder, the projection---moves the first peak across
+$\ell_{1}\in\{150,165,315\}$ and the ratio across $P_{1}/P_{2}\in\{0.93,1.21,1.45,2.02\}$, over four readings
+of the \emph{same} stated initial condition\rcpt{P15_the_first_peak_figure_is_not_stable}. \emph{Two of those
+readings are the instrument's own text.} Its amplitude is taken from a smooth matched envelope while its
+initial velocity is taken from a numerical derivative of the oscillatory closed form---two different
+functions---and its docstring describes a common phase taken at an extremum, \emph{with the velocities zero},
+which the code does not impose. Imposing it returns $P_{1}/P_{2}=2.02$ against the measured $2.21$, where the
+figure quoted here as the disagreement was $1.45$. \emph{So the disagreement this paper has been recording is
+a property of one implementation and not of the construction}, and $150$ is withdrawn as a quotable figure.
+The numerics are not the source of it: the integrator runs at a stability number of $0.47$ against its own
+limit of $2.8$ with at worst $120$ steps per acoustic oscillation, and quadrupling the step count reproduces
+the peaks exactly.
+
+\emph{What survives is smaller, harder, and is not what this item was posed as.} Under \emph{every} one of the
+four initial conditions the instrument's source comb comes out at $0.72$--$0.79$ of $\pi/\rs$ rather than at
+$\pi/\rs$: the initial data move the first peak by $165$ multipoles and do not move this. \emph{That reading has
+since been carried to a depth it could not reach}\rcpt{P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong}:
+the figure is the first few gaps of a series that was only four peaks long at the settings a four-condition scan
+could afford, and at the depth the transfer actually reaches the \emph{asymptotic} spacing is $0.975$ of the
+acoustic scale. \emph{What is left of this item is therefore not a spacing deficit}, and the paragraphs at the
+end of \S\ref{sec:refit-bound} say what it is instead. \emph{This sentence read ``not a spacing deficit but an
+acoustic phase'' until r2501+c54.197, and that is the framing those very paragraphs
+withdraw}\rcpt{P15_the_phase_moves_with_the_datum_and_only_the_spacing_does_not}: a free choice in the seam
+datum moves the acoustic phase across the control's own value, so the phase is not carrying the disagreement
+either, and no single quantity this section can name is. \emph{That is a
+disagreement with the acoustic scale inside the one instrument in this programme that propagates modes}, and
+it is not caused by the initial data. \emph{It is also not answered by the coherence argument of
+\S\ref{sec:coherence}}, whose comb is written down rather than propagated---$\rs$ and $D_{C}$ entering its
+receipt as literals and the mode function as $\cos(k\rs)$, as that receipt's own scope note
+says\rcpt{P15_verify_coherence_comb}. \emph{So the peak spacing is asserted in one place and computed nowhere,
+and where it is computed it comes out short.} We record that rather than resolve it. \emph{The figure of $220$
+should still be read as what the transfer argument gives, and the first peak's position, together with the
+spacing, treated as open}---but the ground for treating it as open is now the missing propagation, not a rival
+number.
+
+\emph{That missing propagation is built at r2376+c54.168, with the two things whose absence made every earlier
+figure unreadable: a live control and a guard that can fail}\rcpt{P15_two_arm_control_and_guard}. Both arms run
+on one set of equations, so nothing below is a difference of machinery. \emph{The guard first, because it is
+what licenses the rest.} With every coupling to the potential removed at every site---the $4\Phi'$ in the
+photon, neutrino and cold-matter continuity equations and the $k^{2}\Psi$ in the photon--baryon and neutrino
+Euler equations, in both the tightly-coupled and post-switch branches---the source comb lands on the integers
+on \emph{both} arms, at $1.015$ and $2.000$ for flat $\Lambda$CDM and $1.012$ and $1.997$ here. \emph{So the
+sound horizon, the measure, the wavenumber grid and the phase extraction are validated as an ensemble, and
+every departure from $n\pi/\rs$ in a driven run is the driving and nothing else.} \emph{The control next, with
+its floor, which is the point of running one.} The $\Lambda$CDM arm returns peaks at $224$, $536$ and $808$
+against the measured $220.6$, $538.1$ and $809.8$: positions good to $1.5\%$ at the first peak and to $0.4\%$
+and $0.2\%$ at the second and third, and \emph{heights good only to $13$--$26\%$, so no height claim from this
+instrument is meaningful below about a quarter}. \emph{And one objection to any figure of ours is closed by
+measurement rather than by argument}: run on the physical discrete ladder $k_L=\sqrt{L(L+2)}/r_0$ and on a
+dense continuum sampling, this cosmology's arm returns \emph{identical} peaks, so the discreteness is not what
+sets the position.
+
+\emph{The measurement is then stated in the only form comparable across arms}, the two running at different
+$H_{0}$ and $\Omega_{m}$ so that $D_{M}$ and $\rs$ differ by some six per cent each and cancel, $\ell_{A}$
+coming out $301.4$ against $301.6$. \emph{On the initial datum this paper's own text describes}---the effective
+temperature flat in $k$, the phase common, and \emph{the velocities zero}---the first peak sits at
+$\ell_{1}/\ell_{A}=0.570$ against the control's $0.743$ and the sky's $0.731$. \emph{That is a twenty-three per
+cent deficit against a one-and-a-half per cent floor}, and the height ratio compounds rather than cancels it,
+$P_{1}/P_{2}=0.87$ against the control's $1.93$. \emph{We state what this is and what it is not.} It is not a
+prediction: \S\ref{sec:refit-bound} has just recorded that the figure moves with the initial datum, and it
+moves here too. \emph{What has changed is that it now moves against something}---a control, a floor, and a
+guard---where before it moved against nothing at all. The first peak's position remains open, and the
+open question is now sharp: on this rate nothing before the onset can imprint an acoustic phase
+(\S\ref{sec:what-crosses}), so whatever sets it must act on modes already inside the sound horizon when the
+plasma begins.
+
+\emph{With the guard in place the driving itself can be measured rather than modelled, and it is}
+\rcpt{P15_the_driving_shift_by_subtraction}. Each wavenumber is integrated twice on the same equations,
+driven and undriven, differing in one multiplicative switch and in nothing else; $Q(k)$ is the accumulated
+sound phase in half-periods at the first acoustic turnover, and \emph{the undriven column, which a free
+oscillator must return at exactly one, is the calibration}---it comes out between $0.9968$ and $1.0003$ on
+both arms. Read against it, \emph{flat $\Lambda$CDM's acoustic phase is flat in $k$}, running from $0.791$ to
+$0.774$ across $k=0.045$--$0.16\,\mathrm{Mpc}^{-1}$, a spread of two per cent: every mode crosses the sound
+horizon during radiation domination, where the potential decays on the sound-crossing time by construction, so
+each acquires the same shift. \emph{This cosmology's varies by a factor of $3.9$ across the same band},
+$0.457$ to $0.117$. \emph{That is the deficit of \S\ref{sec:refit-bound} seen at the level of a single mode
+rather than of a spectrum}, and it is what a rate carrying no radiation source predicts: there is no crossing
+at which a universal shift could be acquired, and the interval before the onset is scale-free. \emph{The
+scaling is quoted for what it is and not more.} A power-law fit returns $Q\propto k^{-0.62}$, which collapses
+the measurements to a factor of $1.2$ where $k^{-2}$ spans a factor of $16$; \emph{we record that the exponent
+is not the $-2$ a relaxation on $3\mathcal{H}/k^{2}$ would give}, and leave the identification of the process
+open rather than name one the measurement does not support.
+
+\emph{Splitting the driving into its two couplings localises the dependence, and the result is not where a
+relaxation timescale would put it}\rcpt{P15_which_coupling_carries_the_k_dependence}. The potential enters the
+plasma twice: as $4\Phi'$ in the continuity equations, its rate of change feeding the density, and as
+$k^{2}\Psi$ in the Euler equations, its gradient driving the velocity. Switched independently on the same
+integration, \emph{flat $\Lambda$CDM's two couplings are each flat in $k$ and they oppose}: continuity alone
+puts the turnover at $Q=1.23$--$1.28$, \emph{later} than a free half-period, and the gradient alone at
+$0.73$--$0.87$, earlier, the two composing to $0.77$--$0.86$. \emph{So the universality of the standard driving
+shift is a cancellation between two flat terms rather than the signature of one.} On the radiation-free rate
+there is no cancellation left---continuity gives $0.11$--$0.18$ and the gradient $0.06$--$0.57$, both earlier
+than a free half-period, so they add---\emph{and the wavenumber dependence sits in the gradient}: the
+continuity channel varies by a factor $1.6$ across the band, as $k^{-0.17}$, while the gradient varies by
+$8.9$, as $k^{-1.04}$. \emph{That is the reverse of what a relaxation would give.} A timescale acts on how the
+potential decays, and decay is the continuity channel, which is the one measured flat. \emph{And neither
+coupling alone is the answer either}: the driven exponent, $-0.62$, lies between the two, so the observed
+scaling is their interference. \emph{And the process that makes the gradient coupling run as $k^{-1}$ can then be given in closed
+form}\rcpt{P15_the_gradient_coupling_in_closed_form}. The potential's own equation carries a damping term
+$-k^{2}\Phi/3\mathcal{H}$, so $\Phi$ relaxes on the time $\tau=3\mathcal{H}/k^{2}$. With the continuity
+coupling off, the oscillator obeys $\Theta_{0}''+c_{s}^{2}k^{2}\Theta_{0}=-(k^{2}/3)\Psi$, and \emph{the
+$k^{2}$ in the forcing's amplitude is cancelled by the $k^{-2}$ in its duration}: the delivered impulse
+$\int(k^{2}/3)\Psi\,\dd\eta\sim\mathcal{H}\Psi_{0}$ carries no $k$ at all. \emph{So the first turnover is not
+at an acoustic phase but at the moment the impulse has been delivered}---at a fixed multiple of $\tau$,
+measured constant at $\kappa=1.79$ across a factor of eight in $k$. Since $Q$ is the accumulated phase in
+half-periods, $Q=k\int c_{s}\dd\eta/\pi$, \emph{it already carries one factor of $k$}, and
+\[
+  Q(k)\;=\;\frac{3\kappa c_{s}\mathcal{H}}{\pi}\,\frac1k ,
+\]
+predicting $0.01040\,\mathrm{Mpc}^{-1}$ for $Qk$ against a measured $0.01037$, and reproducing $Q$ itself to
+$1.6\%$ across the sub-horizon band with nothing fitted but $\kappa$. \emph{The complementary channel is flat
+for the complementary reason}: the $4\Phi'$ term feeds the density with the potential's \emph{total} change,
+$\int\Phi'\dd\eta=-\Phi_{0}$, which is the same however fast the relaxation runs. \emph{The observed
+$k^{-0.62}$ is therefore not a power law of anything}---it is the crossover between a flat channel and a
+$1/k$ one.
+
+\emph{This closes the mechanism and does not close the discrepancy, and the two should not be confused.} The
+first peak still sits where \S\ref{sec:refit-bound} measures it, $23\%$ low against a $1.5\%$ control floor.
+\emph{What has changed is that its cause is now derived rather than described}: a rate carrying no radiation
+source has no era in which the potential decays on the sound-crossing time, so the two couplings that oppose
+one another in flat $\Lambda$CDM instead add, and the one that survives as a driving impulse delivers a
+$k$-independent kick to an oscillator whose frequency is proportional to $k$.
+
+\emph{A likelihood-level comparison can then be attempted, and the result is that it cannot yet be made}
+\rcpt{P15_where_the_likelihood_sits}. The criterion was fixed before the data were opened: the pipeline is
+wired if a Boltzmann-code flat-$\Lambda$CDM best fit returns the banked $\chi^{2}=206.4$ over $215$ Planck
+\texttt{plik\_lite} TT bins ($\chi^{2}/\mathrm{dof}=0.96$); the instrument's own floor is what \emph{its}
+$\Lambda$CDM arm costs through the same likelihood on the same bins; and the only readable quantity is the
+difference between the two arms of one instrument, since comparing this construction's spectrum against a
+Boltzmann code's would charge it for the instrument's error. \emph{Run that way, on $185$ covered bins with a
+single fitted amplitude, the $\Lambda$CDM arm returns $\chi^{2}/\mathrm{dof}=103$ and this cosmology's arm
+$558$.} \emph{The ordering is a fact and the ratio is not a $p$-value.} Planck's binned errors are a few
+tenths of a per cent while this instrument's peak heights carry $13$--$26\%$, which is tens of standard
+deviations in a single bin: \emph{both arms sit far outside the regime in which that likelihood discriminates
+between models}, and a control a hundred times too poor certifies nothing about what it is compared with.
+\emph{So the honest verdict is that the likelihood cannot arbitrate here}, and the number that survives is a
+statement about this instrument rather than about the sky---\emph{the construction's arm costs $5.4$ times
+its own control}. \emph{Half of that has since been done, and the half that has been done is the one that matters for
+the position}\rcpt{P15_the_line_of_sight_transfer}. Until r2376+c54.173 the transfer evaluated its source at a
+single $\eta_{*}$---an instantaneous last scattering. The visibility $g=\tau'e^{-\tau}$ in fact peaks at
+$\eta=280.75$ with a full width at half maximum of $37.8$~Mpc, a tenth of a wavelength at the first peak and
+more at the third, and rebuilding the transfer as the standard line-of-sight integral across it takes the
+control's first-peak position from $1.66\%$ to $0.16\%$. \emph{The heights it did not fix, and the reason was diagnosable from their sign}: both ratios came out low,
+so the second and third peaks were too high, and worse the higher the multipole---which is under-damping. The
+cause was that the tight-coupling closure switches off at $\tau'=0.6\,\mathrm{Mpc}^{-1}$ while the visibility
+peaks at $0.06$, ten times lower, so the photon quadrupole and the baryon slip were absent through the whole
+of last scattering and the transfer carried no diffusion damping at all. \emph{Restoring it from the standard
+tight-coupling integral evaluated on each arm's own opacity and rate},
+$k_{D}^{-2}=\int[R^{2}/(1{+}R)+8/9]\,\dd\eta/[6(1{+}R)\tau']$, returns $r_{D}=6.58$~Mpc where a Boltzmann code
+gives $6$--$7$, with nothing fitted, and takes the height ratios from $-12.9\%$ and $-33.5\%$ to $-2.8\%$ and
+$-2.1\%$\rcpt{P15_the_derived_diffusion_damping}. \emph{One double count had to be removed for it to work}:
+with the hierarchy's own tight-coupling damping left in over the same range the control came out
+\emph{over}-damped, and the sign flipping either side of the correction is what identifies a double count
+rather than a wrong coefficient. \emph{So the instrument's floor falls by a factor of five---the likelihood's
+control moves from $\chi^{2}/\mathrm{dof}=103$ to $23$---without its verdict turning over}: two to three per
+cent is not sub-per-cent, and the comparison of \S\ref{sec:refit-bound} still cannot arbitrate. \emph{What the
+floor moving while the verdict does not gives is the measure of how much further the instrument has to go.}
+
+\emph{That last sentence was measured against a target that could not carry it, and we correct our own
+protocol here rather than leave it standing}\rcpt{P15_the_height_target_was_below_the_resolution_of_its_own_statistic}.
+Every height figure above compares $P_{1}/P_{2}$ and $P_{1}/P_{3}$ with two bare numbers. Read off the
+\texttt{plik\_lite} bandpowers with the published covariance---the full $2\times2$ block for the two peak bins,
+propagated through the ratio---the sky's own values are $2.256\pm0.077$ and $2.280\pm0.074$, which is $3.4\%$
+and $3.2\%$. \emph{The $12.9\%$ and $33.5\%$ were therefore four and ten standard deviations and stand; the
+$2.8\%$ and $2.1\%$ are about one, and do not.} A target of sub-per-cent \emph{heights} asks for several times
+more precision than the statistic it is quoted against possesses, and it is withdrawn in favour of the one
+that was doing the work throughout: $\chi^{2}$ over the $185$ covered bins, where the control sits at
+$22.5$ per degree of freedom against a five-parameter fit's $0.96$. \emph{The numerics were cleared before any
+of this was attributed}: raising the mode count by $1.4$, the wavenumber range by $1.3$ and the conformal-time
+sampling by $1.8$ moves the two ratios by $0.09\%$ and $0.37\%$, and the two- and seven-per-cent swings that
+prompted the check came from a multipole ceiling that was truncating the wavenumber integral beneath the third
+peak.
+
+\emph{The same correction disposes of a stronger claim we were in a position to make and cannot.} Sliding a
+single multiplier on $k_{D}^{-2}$---which moves the damping \emph{scale} and cannot change the envelope's
+\emph{shape}---the second-peak ratio selects $1.094\pm0.184$ and the third selects $0.897\pm0.055$: a split of
+$1.03$ standard deviations. \emph{One would have liked to say that no single damping scale fits both, so that
+the residual is the shape of the envelope rather than its size; the measurement does not support it at its own
+error bar, and we withdraw it.} What $\chi^{2}$ does resolve is the coefficient in the shear term, and the
+result is instructive in a direction that does not flatter: its minimum sits at $0.865$ against the $0.859$
+that corresponds to $8/9$, so the polarisation-corrected $16/15$ costs $1123$ units of $\chi^{2}$, some seven
+inflated standard deviations. \emph{We keep $8/9$, and not because it fits better.} Neither value has been
+derived in this programme---\S\ref{sec:envelope-consequence}'s receipt names the ambiguity in its own
+text---and a coefficient chosen by a fit is a fitted parameter whatever it is called. \emph{What the $1123$
+measures is a residual error in this instrument's damping tail of a size that a shear coefficient could
+absorb, which is precisely the reason it must not be permitted to.} The derivation that would settle it is
+named and owed: the free-streaming photon hierarchy carrying the polarisation multipoles, from which the
+coefficient falls out instead of being chosen.
+
+\emph{That derivation is now in hand, and it settles the question against the
+fit}\rcpt{P15_the_shear_coefficient_derived_not_remembered}. The coefficient is measured by running the same
+oscillator twice on the same background: once as the perfect tight-coupled fluid, which is undamped by
+construction, and once as a photon hierarchy carried to $\ell=24$ with Thomson scattering, the polarisation
+multipoles evolved alongside and the baryons given their own velocity. \emph{Their ratio is the damping and
+nothing else}---the slowly varying prefactor, the drift of the sound speed and the baryon-loading dependence
+of the oscillation are common to the two runs and divide out identically---and reading it locally, between
+consecutive extrema, lets the residual be extrapolated in $(k/\tau')^{2}$ rather than smeared over an
+interval. With the polarisation multipoles suppressed the quadrupole's scattering term reduces to
+$-\tfrac{9}{10}\tau'F_{2}$, which is the unpolarised closure, and the coefficient comes back as $0.8852$
+against $8/9$; with them carried it is $1.0618$ against $16/15$. \emph{The polarisation correction itself,
+which is the quantity in dispute, is a factor $1.1996$ against $6/5$: three parts in ten thousand.} Both
+absolute values sit about half a per cent low by an amount proportional to the coefficient, so the residual is
+a common normalisation and cancels in the ratio.
+
+\emph{So the coefficient is $16/15$, and adopting it makes the control worse}: $\chi^{2}$ per degree of
+freedom on the $\Lambda$CDM arm moves from $22.5$ to $28.6$, the $1123$ units the previous paragraph
+recorded. \emph{We take the derivation and pay the $\chi^{2}$}, because a coefficient chosen because it fits
+is a fitted parameter whatever it is called. \emph{And what the $1123$ measures is now nameable rather than
+mysterious.} Polarisation enters the transfer twice: it raises the damping coefficient, and it contributes to
+the source through $g\Pi/4$ and $(3/4k^{2})\,\dd^{2}(g\Pi)/\dd\eta^{2}$ with
+$\Pi=\Theta_{2}+\Theta^{P}_{0}+\Theta^{P}_{2}$. \emph{This transfer has the first and not the second, and
+the half it has is the half that removes power}---which is the specification of what remains, and it is not a
+question about this construction. \emph{One figure that might have been expected to move does not}: the
+diffusion-length ratio of \S\ref{sec:envelope-consequence} goes from $+10.83\%$ to $+10.87\%$, because the
+coefficient very nearly cancels in a ratio of two rates.
+
+\emph{Carrying the multipoles instead of the envelope is what the previous paragraph specified, and doing it
+takes the control most of the remaining
+distance}\rcpt{P15_the_photon_hierarchy_in_the_transfer}. The photons are now evolved as a Boltzmann
+hierarchy with the polarisation multipoles alongside, the baryons are given their own velocity and their own
+density contrast, and the source carries $g\Pi/4$ and $(3/4k^{2})\,\dd^{2}(g\Pi)/\dd\eta^{2}$. \emph{The
+first four peaks land at $220$, $540$, $812$ and $1124$ against the sky's $220.6$, $538.1$, $809.8$ and
+$1147.8$}---the second peak $0.35\%$ out and the third $0.27\%$, where the fluid transfer placed them at $524$
+and $804$---and $\chi^{2}$ per degree of freedom falls from $28.6$ to $7.1$, or to $4.2$ over the range in
+which the wavenumber integral is not starved by the instrument's own truncation.
+
+\emph{The prediction of the previous paragraph is checked against the number it predicted rather than against
+a story.} Running the same hierarchy with only the two polarisation source terms removed---which is exactly
+the half an envelope can supply---costs $702$ units of $\chi^{2}$, against the $1123$ that adopting the
+derived coefficient cost. \emph{And a second lesson arrived in the same shape as the first}: giving the
+baryons their own density while they still shared the photons' velocity made the control \emph{worse}, because
+the density they then carry is the photons' own and nothing lets them fall into the potential wells after
+decoupling; giving them both halves the residual again. \emph{A physical effect taken in half is not a small
+error but a different and inconsistent model, and this programme has now met that twice in consecutive
+revisions.} What is arbitrary in the construction is measured rather than argued: doubling the hierarchy depth
+moves $\chi^{2}$ by nothing at the printed precision, and doubling the opacity at which the fluid hands over
+moves it by $1.5\%$. \emph{The handover also makes a double count impossible rather than merely absent}, since
+the envelope is frozen where the multipoles begin and the two therefore act on disjoint intervals.
+
+\emph{Under all of it this cosmology's arm has not moved.} $\ell_{1}/\ell_{A}=0.5703$ through six distinct
+states of the instrument---a delta-function transfer, a line-of-sight transfer, a derived damping envelope, a
+scan of that envelope's scale, a derived shear coefficient, and now the full hierarchy---while the control's
+$\chi^{2}$ per degree of freedom fell from about a hundred to seven. \emph{We record at once what that
+invariance is of, because it is easy to read as more}: every one of the six varies the \emph{transfer}, and
+none varies the seam datum---so it says the transfer does not set the first peak, and says nothing about what
+does. \emph{What does is established below}\rcpt{P15_the_first_peak_is_the_seam_datum_and_the_spacing_is_not}. \emph{We report that and convert it into
+nothing.} The comparison of \S\ref{sec:refit-bound} still cannot arbitrate, for the same reason it could not
+before: a control seven times worse than a fit cannot certify what it is compared with. \emph{What has changed
+is the size of the gap and the fact that no missing sector remains named}---what stands between this
+instrument and a control that could arbitrate is accuracy rather than a piece of physics we know we
+have left out.
+
+\emph{Two of the candidates for that accuracy were measured before either was built, and one of them
+cannot pay at all}\rcpt{P15_what_is_left_is_lensing_and_not_reionisation}. Above $\ell\simeq40$ the
+whole effect of reionisation on the temperature spectrum is the constant screening $e^{-2\tau}$---the
+second visibility bump contributes only below $\ell\simeq30$, outside this comparison's range---and
+the comparison fits one amplitude in closed form. \emph{An amplitude fitted as
+$A=(m^{\mathsf T}Fd)/(m^{\mathsf T}Fm)$ is homogeneous of degree $-1$ in the model, so rescaling the
+model returns $A/s$ and leaves the residual unchanged}: the degeneracy is exact rather than
+approximate, and it is a property of the statistic rather than of the size of $\tau$. Checked at
+$\tau=0.054$, $0.10$ and $0.30$, the change in $\chi^{2}$ is zero to machine precision at all three.
+\emph{Lensing is a different matter.} A smoothing in multipole, scanned in width, takes the control
+from $1320$ to $921$; and a width that \emph{grows} with $\ell$ beats a constant one by a factor of
+$1.8$ in the improvement, each compared at its own optimum, so the preference is for a shape and not
+merely for a size---\emph{which is lensing's own signature, since a deflection of fixed angle
+subtends a larger fraction of an acoustic wavelength at high $\ell$}. \emph{We state what that is and
+is not.} The width is fitted, so the improvement bounds what a derived calculation has to play for
+rather than measuring a lensing amplitude; and even at its own optimum some $70\%$ of the residual
+survives it. \emph{So the lensed spectrum is the next thing this instrument owes, and it is not the
+last one.}
+
+\emph{That calculation has since been done, and it comes in under the bound the fit set.} Applying
+$\Lambda$CDM's own lensed-to-unlensed ratio to the arm---a derived operation with no free width---takes
+the control from $1320$ to $989$, an improvement of $331$, concentrated in the damping tail where a
+fixed-angle deflection fills the troughs. \emph{That is below the $400$ the fitted width bounded, as a
+zero-parameter derivation must be}, and the acoustic peaks do not move under it. The corpus's own
+first-order kernel overshoots the bound to $508$ by breaking down in that same tail---returning a
+spurious $+13\%$ at $\ell=1900$ where the full operator gives $+6.5\%$---which is why the derived
+number is the full operator's. \emph{Most of the fitted headroom is recovered by a genuine lensing,
+and about $989$ of the $1320$ survives it}: the verdict of the last paragraph stands from the derived
+side, lensing real and not the last build\rcpt{P15_derived_lensing_on_the_lcdm_arm}.
+
+\emph{And what the residual is MADE of was decomposed alongside it, which is what let the size of that
+gain be anticipated rather than
+discovered}\rcpt{P15_the_residual_is_contrast_and_the_lensing_potential_is_derived}. Projecting named
+templates through the same inverse covariance the comparison uses, the peak \emph{positions} account for
+a tenth of a per cent of the residual---\emph{which is why the acoustic peaks do not move under the
+lensing above, and the two findings corroborate each other}---while the peak-trough \emph{contrast} at
+fixed position accounts for two-fifths of it, this transfer's contrast running some thirteen per cent
+too high. \emph{Reducing contrast without moving peaks is what lensing does.} A smooth multiplicative
+envelope accounts for a further sixth, and \emph{about half the residual is in neither}---so a complete
+lensing calculation was expected to leave a comparable amount behind, and it did.
+
+\emph{One further object is built here and it is not the one the number above rests on.} The operator
+applied above is $\Lambda$CDM's own lensed-to-unlensed ratio---validated, and the right instrument for
+the figure. \emph{The lensing potential can also be derived on this construction's own $\Phi$}, carried
+past the transfer's endpoint by the background's growth factor and normalised by the amplitude the
+temperature comparison already fits, so that it introduces no parameter and imports no transfer
+function; the photon deflection it implies is $2.69$ arcminutes. \emph{We record what that agreement is
+and is not}: the figure it matches is recalled rather than derived here, so what is established is
+internal consistency between the growth, the projection and the temperature normalisation, and the
+agreement with the literature is corroboration at the strength of a memory. \emph{It is kept because a
+corpus-native potential is what a later CR-side lensing calculation would need}, the imported ratio
+being a $\Lambda$CDM object.
+
+\emph{And the residual that survives has now been located, and it turns out not to be
+physics}\rcpt{P15_the_control_entered_the_regime_and_the_arm_did_not_move}. Of the $989$ left after the
+derived lensing, $725$---$73\%$---sat in the thirty bins above $\ell=1500$, which is a sixth of the
+bins. \emph{That is where this instrument's wavenumber integral is starved by construction}, since the
+mode grid is built as $k=\ell/D_{M}$ with $\ell$ below the truncation, so the highest multipole computed
+has no wavenumber headroom at all while $C_{\ell}$ draws on every $k$ with $kD_{M}\ge\ell$. \emph{So the
+question was settled by removing the truncation rather than by arguing about it.} Re-run with the grid
+carried half again as far and the sampling density held fixed, and scored on the same one hundred and
+eighty-five bins, the control falls from $989$ to $218$---$\chi^{2}$ per degree of freedom from $5.34$
+to $1.18$, against $1.01$ for a reference $\Lambda$CDM lensed spectrum on those bins---and the ratio to
+that reference in the last band rises from $0.42$ to $0.99$. \emph{The truncation was $78\%$ of what
+remained.} \emph{So the half of the residual that the template decomposition could not name was numerical, and
+the list of things standing between this transfer and the sky no longer has an item on it that is
+physics.}
+
+\emph{We state at once what that does not mean.} $1.18$ is not a fit: it is seventeen per cent above a
+true $\Lambda$CDM's $\chi^{2}$ on the same bins. \emph{That remainder has since been named, and naming it
+required changing the measurement}\rcpt{P15_the_floor_is_a_distance_between_models_not_a_number_from_the_data}.
+The floor as the pre-registered rule defines it is a difference of two numbers each computed \emph{against
+the sky}, so it mixes how far the two models are apart from where each happens to sit relative to one noise
+realisation---and across three defensible reference $\Lambda$CDMs it takes the values $31$, $22$ and $27$,
+\emph{a spread comparable to the quantity being reported}. \emph{Measured instead as what it actually is}, a
+$\chi^{2}$ distance between the two models in the comparison's own metric and with no data in it, the two
+sit $21$ apart over one hundred and eighty-five bins: \emph{about a ninth of a $\chi^{2}$ unit per bin, or a
+third of a standard deviation}. Amplitude-matched, this construction's arm tracks the reference to better
+than $1.6\%$ everywhere, and the departure is a slow undulation in multipole rather than a mis-phased
+oscillation.
+
+\emph{Two things follow and we state both.} \emph{The reference's own neutrino content moves the floor by a
+factor of three}---it carries one massive species and this instrument carries none---so the neutrino mass,
+the last of the four items named as outstanding when the hierarchy went in, is now measured at roughly a
+third of what remains rather than left open. \emph{And the ordering between the two measures reverses}: the
+reference giving the smallest floor through the data is the one this construction is furthest from as a
+model, so \emph{a reference chosen to flatter the instrument is available and we name it rather than use
+it}. \emph{What this does to the separation of the last section is nothing except make it safer}: the floor
+is between $21$ and $63$ across every reference defensible here, against a separation of $51848$, so the
+rule's margin is three orders of magnitude whichever is taken.
+
+\emph{That has a consequence for the comparison of \S\ref{sec:refit-bound} which we state carefully,
+because the condition for stating it was written down before the answer was
+known}\rcpt{P15_the_control_entered_the_regime_and_the_arm_did_not_move}. That comparison was fenced on
+a pre-registered rule whose own correction recorded the defect that disabled it: the rule was a ratio
+test and never asked whether the instrument's floor was small in absolute terms, and it was not---the
+control sat near a hundred times the data's precision. \emph{That objection is now gone.} With both arms
+carried at the same wavenumber range---so that the construction is not charged for the instrument's
+truncation, which is the mistake the rule's third clause exists to avoid---the floor is $31$ over the
+full range and $3.8$ below $\ell=700$, while the separation between the two arms on the same bins is
+$51848$ and $23687$. Below $\ell=500$ the floor is $-0.2$: the control scores no worse there than the
+reference, so the statistic cannot see the instrument's error at all. \emph{The rule's second clause asks
+for one order of magnitude and receives three.} \emph{And the reason to read that as physics rather than
+as arithmetic is that the instrument was rebuilt four times and only one arm followed}: across a
+two-moment fluid, a fluid carrying the derived shear coefficient, the full polarised hierarchy, and the
+same with the wavenumber range opened, the control went $21.2\to27.7\to5.34\to1.18$ while this
+cosmology's arm went $290.7\to304.2\to298.9\to302.1$. \emph{An error the instrument carries moves both
+arms; this moved one.}
+
+\emph{We say exactly what that is and stop there.} It is a measurement discrepancy and not a verdict on
+the construction---the pre-registered rule says so in its own terms, and nothing here converts a number
+into a framework judgement. \emph{Nor is the deficit itself new}: $\ell_{1}/\ell_{A}=0.5703$ against the
+sky's $0.7312$ is the same $22\%$ this section has carried throughout. \emph{What is new is a control
+good enough for it to be read through a likelihood instead of through a ratio.} \emph{And we record what
+is not ruled out}: a defect shared by every state of the instrument would not show up in any of these
+comparisons, and the honest form of that worry is that $0.5703$ has not moved across eight of them---which
+is evidence either of a robust prediction or of a shared upstream constant, and these measurements cannot
+separate them. \emph{One candidate for such a defect was removed here rather than argued away}: the
+discrete wavenumber ladder this cosmology's arm uses samples the projection below the rate the
+instrument's own aliasing gate demands, and that gate waives itself on the claim that the ladder is
+physical, with the check named in its own text and never run against $\chi^{2}$. \emph{Run on a continuum
+grid at two and a half times the sampling, the spectrum agrees to better than $0.7\%$ and the $\chi^{2}$
+to two parts in fifty thousand.}
+
+\emph{What that buys is a statement about the deficit rather than about the instrument.} Under the same
+rebuild this cosmology's arm does not move at all---$\ell_{1}/\ell_{A}=0.5703$ on both transfers, to four
+figures---while the control's error fell by a factor of ten. \emph{The most suspect component of the
+instrument was replaced wholesale and the deficit did not follow it down}, which on that reading stands at
+$21.9\%$ against a position floor of $0.16\%$. \emph{We state it at that strength and no higher, and the
+paragraphs below lower it further}: the first peak's position on this rate is not an artefact of how last
+scattering was modelled---but it is a function of the seam phase, which is upstream of last scattering, and
+the figure quoted here is the one reading of the datum the instrument happens to
+carry\rcpt{P15_the_first_peak_is_the_seam_datum_and_the_spacing_is_not}. \emph{The quantity that survives every
+reading is not this one}, and it is given its final form at the end of this section.
+
+\emph{And we now state something narrower still, because the invariance quoted just above is an invariance
+of the wrong thing}\rcpt{P15_the_first_peak_is_the_seam_datum_and_the_spacing_is_not}. Every rebuild
+listed here varies the \emph{transfer}; none of them varies the \emph{initial datum}, and the datum is
+where the first peak lives. This construction's perturbations begin at the seam, at $z=6761$, and a mode
+that sets the first peak crossed the horizon well before that---so its phase at the seam is assigned
+rather than derived, and the datum \S\ref{sec:coherence} states, one amplitude per mode and a
+\emph{common} phase, fixes that the phase is common without fixing which phase it is. \emph{Scanning that
+one freedom and holding everything else, the first peak runs from $0.5703$ to $1.2599$ of $\ell_{A}$---a
+factor of $2.2$}, and at one phase the peak near $172$ is not present at all. \emph{So $0.5703$ is a
+statement about the seam datum and we withdraw the weight the paragraph above put on its stability.}
+
+\emph{What does not move is the spacing, and the spacing is where the disagreement actually lives.} Across
+the same scan the mean interval between peaks stays between $0.734$ and $0.818$ of $\ell_{A}$---a spread of
+one part in nine against the position's factor of two---and it is never $1$. \emph{Both figures are read on
+the first three gaps, which is all a scan at that depth can see, and the paragraph after next corrects what
+they were taken to mean.}
+
+\emph{The second freedom in the datum has since been opened too, and it widens that range rather than
+confirming it}\rcpt{P15_both_datum_freedoms_opened_and_the_spacing_still_holds}. What the amplitude is
+``flat in wavenumber'' \emph{at} is the remaining choice: the construction evaluates its transfer shape at a
+single argument for every mode---which is that shape read at each mode's own horizon crossing, a
+self-similar reading---where the alternative reads it at each mode's own phase at the seam. \emph{Across all
+eighteen readings of the two freedoms together, the first peak spans a factor of $2.26$ and states nothing;
+the spacing spans $0.676$ to $0.818$, a factor of $1.21$, at a mean of $0.77$ and never above $0.82$.}
+\emph{We record the widening against ourselves}: the one-freedom scan gave $1.11$, and the honest range is
+the wider one. \emph{Eight of the eighteen readings are excluded from the spacing by a criterion fixed
+before the numbers}---four peaks with the fourth at least a twentieth of the first---because those readings
+return a spectrum whose higher peaks have collapsed, and an interval read off three features one of which is
+absent is not a spacing. \emph{Those scans ran shallow enough that eighteen readings were affordable, and at
+that depth this cosmology's arm carries four peaks---so the quantity they were reading was the mean of three
+gaps.}
+
+\emph{Carried to the depth the transfer actually reaches, that turns out to be the wrong quantity, and we
+correct it here}\rcpt{P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong}. Both arms then carry eight
+peaks, and \emph{this cosmology's asymptotic spacing is $0.975$ of $\ell_{A}$ against the control's
+$1.002$---two and a half per cent, not twenty-one}. The disagreement is confined to the first three gaps,
+which run at $0.73$, $0.85$ and $0.88$ of the control's and are level with it by the fourth. \emph{So the
+series is not uniformly compressed}, and the figure the scans reported was the first-three-gap value under
+another name. \emph{We withdraw it in those terms.}
+
+\emph{What is actually wrong is the acoustic phase, and saying so makes the disagreement sharper rather than
+smaller.} Fitted on their asymptotic peaks the two series are parallel lines: slopes $1.003$ and $0.976$ of
+$\ell_{A}$, agreeing to two and a half per cent, and intercepts of $-0.263$ and $-0.878$ of $\ell_{A}$. A
+driven acoustic series peaks at $k\rs=n\pi-\phi$, so the intercept \emph{is} $-(\phi/\pi)\ell_{A}$:
+\emph{the two differ by $0.62\pi$ in the acoustic phase shift, at a spacing they agree on}. And there is a
+second, separate thing---\emph{a low-multipole transient this cosmology has and the control does not}. Measured
+each against its own asymptotic line, the control's first three peaks sit within $16$ of it while this arm's sit
+$142$, $80$ and $18$ above, converging. \emph{That transient is what compressed the early gaps.}
+
+\emph{The correction makes the scans above more relevant and not less.} If the disagreement is a phase, then
+what the seam datum assigns is exactly the quantity in dispute---and \S\ref{sec:coherence}'s ``one datum per
+mode and a \emph{common} phase'' is precisely the statement that does not fix it.
+
+\emph{Both halves of that were then carried to the same depth, and the acoustics come out
+working}\rcpt{P15_the_acoustics_work_and_the_phase_is_the_whole_disagreement}. Moving the fitted parameter so
+that $\rs$ falls by $11\%$, ordinary acoustics requires the peak spacing to rise by $13\%$---and \emph{it
+rises by $13\%$, ninety-eight per cent of the acoustic rate}. So the peaks in this construction \emph{are} set
+by its own sound horizon, and the sentence above about the first peak's insensitivity is a statement about the
+transient rather than about the acoustics. \emph{The phase, meanwhile, does not move with the fitted
+parameter}: the intercept shifts by three per cent of a discrepancy of $0.62$. \emph{And the seam datum's own
+phase freedom is a real lever on it and spans a third of it}---at the opposite phase the gap to the control
+closes from $0.615$ to $0.408$, thirty-four per cent, and no further. \emph{That is the confirmation the
+diagnosis wanted}: the datum's phase moves the acoustic phase, as a phase diagnosis predicts, and cannot close
+the discrepancy.
+
+\emph{We wrote at this point that the acoustic statement had reached its final form---one number and one
+mechanism---and that is the third thing in this section we now
+withdraw}\rcpt{P15_the_phase_moves_with_the_datum_and_only_the_spacing_does_not}. The $0.62\pi$ was read at one
+value of the seam phase, and the two-point estimate of how far that phase could move it used only the
+endpoints. \emph{Carried to four phases at the depth the fit requires, the asymptotic phase spans $0.891$ in
+$\phi/\pi$, and the control's $0.263$ lies inside that span.} \emph{That reading was too wide, and the
+correction is entered here rather than left standing}\rcpt{P15_the_admissible_band_is_a_third_and_the_two_entries_differ_against_the_potential}: \emph{a span is a band only if every point
+in it is admissible}, and two of the four are not. The seam phase enters the transfer as a hydrodynamic
+initial condition---$\delta_{\gamma}=D\cos(kc_{s}(\eta-\eta_{S})+\phi)$, with continuity giving
+$\theta_{\gamma}=\tfrac34 Dkc_{s}\sin\phi$---and \S\ref{sec:what-crosses} settles which values of it this
+cosmology admits: what crosses is \emph{frozen}, a frozen mode has $\dot\delta_{\gamma}=0$, hence
+$\theta_{\gamma}=0$, hence $\sin\phi=0$. \emph{The admissible readings are therefore $\phi=0$ and
+$\phi=\pi$ and no others}, and that is this paper's own transmission argument read at the seam rather than a
+condition imposed on the scan. \emph{Across the admissible pair the acoustic phase runs from $0.671$ to
+$0.878$---a band of $0.207$ against a discrepancy of $0.615$, a third of it---and the control's $0.263$ lies
+\emph{outside}}. \emph{So the disagreement in the acoustic phase is real and it is bounded}: the one freedom
+the seam datum leaves moves it by about a third of its own size and cannot carry it to the control. \emph{The
+attribution to the driving stands}---the driving is what separates the two arms at any given reading---\emph{but
+its promotion to ``the whole disagreement'' does not, since a third of a quantity is not none of it and is not
+all of it either.} \emph{The two admissible entries are not a redundancy}: the photon perturbation reverses
+sign between them while the potential does not, so one enters as a compression correlated with the well and the
+other as a rarefaction against it.
+
+\emph{And the peak heights move with the same freedom, and do not reach the sky either.} The ratio of the
+first peak to the second runs from $0.48$ to $1.62$ across the four---$0.88$ and $1.62$ across the admissible
+pair---against $2.22$ in the sky and $2.20$ in the control. \emph{What is left robust is the spacing}: $0.963$ to $0.981$ of $\ell_{A}$ over the same four
+readings, two per cent, on top of its insensitivity to the fitted parameter. \emph{That is the one acoustic
+quantity this cosmology states and does not surrender to a choice.}
+
+\emph{And the reason to call this a withdrawal rather than a refinement is the last measurement.} The reading
+whose phase comes closest to the control's is still \emph{sixty times} the control in $\chi^{2}$ per degree of
+freedom on the same bins---$224$ against $3.71$---\emph{and that reading is one of the two the admissibility
+condition above excludes, so the measurement is quoted here in the stronger form the pair supplies}: at
+$\phi=0$ and $\phi=\pi$ the same statistic is $281$ and $379$, seventy-six and a hundred and two times the
+control. \emph{Agreeing on the phase does not fix the spectrum}, so
+the phase was never carrying the disagreement. \emph{Where it does live we do not now claim to know}: not the
+spacing, which is right; not the phase or the heights, which a free choice moves; and not any single quantity
+this section can name. \emph{That is a worse position than the one it replaces and a truer one.}
+\emph{We record what that buys and what it does not}: it converts nothing, and \S\ref{sec:refit-bound}'s
+verdict is untouched. \emph{But an acoustic phase shift is a computable consequence of the driving}, so the
+question ``why $0.62\pi$'' now has an address, which the four-item list it replaces did not.
+
+\emph{That address is occupied, and the attribution is
+complete}\rcpt{P15_the_phase_is_the_driving_and_the_undriven_arms_agree}. With every coupling to the
+potential removed---the potential's rate of change feeding the densities and its gradient driving the
+velocities, at every site, leaving the potential's own evolution alone---\emph{the two arms' acoustic phases
+agree to $0.013$ of $\ell_{A}$ and both spacings are $\ell_{A}$ to a part in a thousand}. Two constructions
+with different rates, different sound horizons, different starting redshifts and different initial data give
+the same acoustic series once nothing drives it. \emph{Switching the driving on supplies $-0.127$ to the
+control and $-0.729$ here---a factor of $5.7$---which is $98\%$ of the discrepancy}; and the same switch
+accounts for the two and a half per cent the spacing was short, so that is not a second effect either.
+\emph{The whole acoustic disagreement is one coupling behaving differently}, and a coupling is a thing a
+theory says something about where a ratio is not.
+
+\emph{What that does not say is why the coupling behaves differently, and we mark the difference between an
+attribution and an explanation.} The candidate is that this cosmology's modes begin already sub-horizon at the
+seam carrying an assigned amplitude and zero velocity, in a potential that is not the equilibrium
+configuration for that state, so the potential does work on them at once---where the control's modes begin
+super-horizon in adiabatic equilibrium and the potential decays gradually as they enter. \emph{That is a
+hypothesis and it is not tested here.} The two halves of the coupling can be switched independently, and
+separating them is what would test it.
+
+\emph{And the likelihood separation of the last section survives the freedom that moved the peak}: on
+identical bins the arm costs between two hundred and four hundred and sixty times the control at every one
+of the eighteen, so the pre-registered rule fires throughout. \emph{We report the one thing that looks like
+a rescue and is not}: the best-fitting reading of all eighteen is among the eight excluded ones, and its
+spacing improves precisely because its higher peaks are gone---\emph{a reading fits better by having less
+structure to disagree with}. \emph{Both freedoms the construction's own phrase leaves open are now closed.}
+
+\emph{And so is the one upstream of them, which is this paper's own fitted
+number}\rcpt{P15_the_spacing_deficit_survives_the_one_fitted_parameter}. The starting redshift is solved so
+that $\ell_{A}=\pi D_{M}/\rs$ meets a target rather than coming out as an output---which \S\ref{sec:tensions}
+states plainly and calls the one fitted number, though it had sat as a literal inside a root-find where
+nothing downstream could reach it. \emph{The question a fitted parameter owes is not whether it is fitted but
+what survives it.} Pinning the target anywhere between $260$ and $340$ drives $z_{\mathrm{onset}}$ from
+$11009$ to $5066$ and the sound horizon from $157$ to $120$ Mpc, and \emph{the mean peak spacing stays
+between $0.765$ and $0.821$ of $\ell_{A}$ throughout}---a spread of one part in fifteen against a pin moved by
+nearly a third. \emph{So the spacing deficit is a property of the construction and not of the value its one
+fitted parameter was fitted to.} The first peak is twice as sensitive and still never approaches the sky's
+$0.731$.
+
+\emph{The first peak is far less sensitive to that than acoustics would require}---a $24\%$ fall in $\rs$
+should raise it by about $31\%$ and raises it by seven---\emph{but the first peak is inside the transient
+identified above, and the series is not}.
+
+\emph{And we record what is not in question either way},
+since it is not downstream of this spectrum's shape: the metric-singularity structure, the continuation, the
+light-element abundances, the acoustic \emph{scale} met at the directly measured $H_{0}$, and the
+expansion-rate resolution.
+
+
+A second check fell out of the same setup, and it is stated here at its actual strength. Pinning the
+\emph{measured} acoustic angle $100\theta_{*}=1.04109$---equivalently $\ell_{A}=\pi/\theta_{*}=301.76$---on the
+derived integrals returns $z_{\mathrm{onset}}=6797$, and returns it \emph{identically} at $H_{0}=67.4$, $70.0$
+and $73.0$: the same $H_{0}$-independence that carries the acoustic scale out of the Hubble tension, recovered
+here from the onset side rather than assumed\rcpt{P15_zonset_determinations}. \emph{An earlier form of this
+check pinned the rounded $\ell_{*}=301$, reported a recovered redshift of $6873$ against the $6850$ then in use,
+and read the agreement as a corroboration; that reading is withdrawn.} \emph{Recomputed on the current integrals
+that same pinning returns $6844$ rather than $6873$---nearer still to $6850$, which sharpens rather than
+softens the point, and is entered here at r2376+c54.160 because the cited receipt returns the second
+number and the sentence carried the first.} The rounded target sits $0.25\%$ from the
+measured angle, and $6850$ itself returns $\ell_{*}=300.90$---so a discriminator pinned to a value the quantity
+under test already produces could not have returned otherwise, whatever the integrals did.
+
+\emph{One thing the same computation shows should be held apart from it.} The inherited datum taken
+\emph{alone}---$\rho_{r}/\rho_{m}=2$ exactly at onset---fixes $1+z_{\mathrm{onset}}=2\omega_{m}/\omega_{r}$, and
+that determination is \emph{not} $H_{0}$-independent: at fixed $\Omega_{m}$, with $\omega_{r}$ set by the
+measured $T_{\mathrm{CMB}}$, it returns $z_{\mathrm{onset}}=6840$, $7378$ and $8024$ at $H_{0}=67.4$, $70.0$ and
+$73.0$. It therefore agrees with the angle-fixed value near $H_{0}=67.4$ and not across the range; at the
+directly measured $H_{0}$ the angle-fixed onset carries $\rho_{r}/\rho_{m}=1.69$ rather than $2.0$. This does
+not bear on the datum's standing---it is inherited and measured, and the first-sample argument is that a
+complete collapse hands over radiation of \emph{order} the matter density rather than a finely tuned value,
+which $1.69$ meets as well as $2.0$ does---but the closeness to $2$ holds at one $H_{0}$ and is not a further
+$H_{0}$-independent check.
+```
 
 ### ⓸ `CR_framework` (P7) · `sec:frontiers` · the lift account moved here r2585
 

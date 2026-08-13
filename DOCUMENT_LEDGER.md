@@ -198,6 +198,7 @@ sources: [chat]
 | `gate_session_notes_session.md` | RECORD | frozen record | — | — |  |
 | `THE_CLOSURE_PLAN.md` | PLAN | (declared in frontmatter) | — | c54.207 |  |
 | `THE_DISPATCH.md` | PLAN | (declared in frontmatter) | — | c54.207 |  |
+| `THE_REFIT_BOUND_PLAN.md` | PLAN | (declared in frontmatter) | — | c54.207 |  |
 | `THE_REHOMING_CAMPAIGN.md` | PLAN | (declared in frontmatter) | — | c54.207 |  |
 | `THE_REMAINING_WORK.md` | PLAN | (declared in frontmatter) | — | c54.206 |  |
 | `THE_STATE.md` | PLAN | (declared in frontmatter) | — | c54.207 |  |
