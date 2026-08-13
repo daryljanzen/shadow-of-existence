@@ -44,6 +44,27 @@ not do.*
 was sitting on `main` when it was written, so its first run was a real detection and not a drill.
 The self-test below re-creates that state in memory so the detection survives the fix.
 
+⌗ ** AND ONE PROPERTY OF NAMESPACE LINTS, WRITTEN ONCE RATHER THAN AS THREE SLIPS. **  This gate has
+now been corrected three times, and every correction was the same shape:
+
+    class                     what it flagged                         what it actually was
+    the directory's own tag   six `P17_` files in `P17_geometric_...`  the paper convention working
+    a lead tag                two `L212_` files in `P13_boundary/`     two receipts for ONE lead
+    zero-padding              two `P1_` files in `P01_BH_causality/`   `P01` compared against `P1`
+
+*** Each is a naming convention the corpus already used and the lint did not know about, reported as
+    the failure the lint exists for.  None of the three was findable by reading the code: each
+    surfaced only by running the gate against a corpus that already uses the namespace, and reading
+    what it said instead of what was expected. ***
+
+  ⇒ ** SO THE PROPERTY IS: a namespace lint cannot be specified in advance, because its false
+    positives are the conventions of the namespace it polices, and those live in the corpus rather
+    than in the rule. **  *Its exception list is therefore not a defect record but part of the
+    specification, and it is finished only when the corpus stops inventing conventions.*
+  ⚠ *The practical consequence, and it is why the three are written up together: ** the first run of
+  such a gate against a real tree is data collection, not verification. **  Reading its output as a
+  defect list on that run would have renamed nine correctly-named files.*
+
 Exit 0 clean, 1 on any duplicate prefix.
 """
 
