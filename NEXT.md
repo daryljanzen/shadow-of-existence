@@ -110,8 +110,9 @@ is**.*
 | **`L-171`** | r2559 | **`kills/PO-7.md` is COMPLETE r2559** — object named, four checks written, ***all four now pass*** · ***the next step is the register's own: "and Dary |
 | **`L-218`** | r2561 | ✔ ⓶ done r2478 · ***the RULE is tested r2561 and needs a fourth bucket (DISCUSSED), which is the default*** · ⓵ pandoc-in-CI and ⓷ the contribution re |
 | **`L-536`** | r2579 | **TWO HALVES.** ⓵ `PO-10`'s two runs (the full-spectrum likelihood comparison, the odd/even height pattern) · ⓶ ***the FRONTIER-PLACEMENT AUDIT across |
+| **`L-538`** | r2592 | ***the $\mathbb{Z}_2$-index convergence is the highest-value target: one calculation may serve `PO-5`, P14's traced statement and P14's multiplicity g |
 
-*7 live rows carry a stated next step; the 7 longest-unworked are shown.*
+*8 live rows carry a stated next step; the 8 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session

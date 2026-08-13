@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2592 — 2026-08-11 (main line). **`THE_RESIDUAL` — the remaining doubt measured from the PAPERS, and three open questions turn out to be one.**
+
+**⌗ THE REGISTERS HOLD WHAT SOMEONE ROUTED; THE PAPERS HOLD WHAT THE PHYSICS OWES.** *`THE_STATE` counted
+**fourteen**. The papers' own epistemic self-declarations number* ***eighty-four***: *36 conjecture/hypothesis · 27
+open · **10 explicit declinations** · 6 stated-at-a-weight · **2 traced-not-computed** · 2 inherited-not-derived · 1
+recalled-not-derived.*
+
+**⌗ AND SORTING THEM IS THE WORK.** *~36 of the conjecture hits are the corpus describing **standard physics'**
+conjectures — cosmic censorship "pursued through partial theorems and counterexample-hunting rather than proof",
+chronology protection "a proposal about physics the classical theory does not contain, and unproven".* ⇒ ***Those are
+the framework's ARGUMENT, not its debt.*** *And **7 of the 10 declinations are SCOPE**, correctly stated.*
+
+**⇒⇒ THE DISCOVERABLE RESIDUAL IS ABOUT FIVE ITEMS, AND THREE CONVERGE ON ONE OBJECT** *— the
+$\mathbb{Z}_2$-graded index: **`PO-5`'s mod-2 route** (r2568), **P14's traced-not-computed Atiyah–Singer
+statement**, and **P14's multiplicity gap** ($\lambda=j+\tfrac12$ labels partial waves, each contributing exactly
+one bound mode).* ***One calculation may serve all three.***
+
+**⛔ AND THE FILE CORRECTED ITSELF ON ITS OWN HEADLINE ENTRY.** *p0's generation conjecture names "the one open
+step---the conjecture proper---is the descent", and this line called it the corpus's most precisely-bounded open
+question.* ⇒ ***The next sentence reads "That construction is built~`\cite{JanzenMatter}`." The count is three, the
+$S_3$ is the family symmetry, and "the physical identification is therefore a RESULT, forced within CR".***
+⇒ ***What stays open is p0's own narrower statement: "the full PROPAGATING spinor field sector (the built modes
+being leaf-bound, not the propagating theory)" — a SECTOR, not a lemma, and on no register at all.***
+
+**⛭ THE RULE:** ***a self-declared gap is only as current as the sentence after it. The corpus updates in place, so a
+paragraph that opens by naming an open question may close by reporting it answered — and a keyword landing on the
+first half will find a debt that was paid two sentences later.***
+⚠ *Fifth time this session that reading one sentence further changed the finding.* *Registered `L-538`.*
+
 ### Revision r2591 — 2026-08-11 (main line). **THE REHOMING CAMPAIGN IS COMPLETE — 24 → 2 paper-past narrations, and the two that remain are correct.**
 
 **⌗ THE FINAL PASS FOUND WHAT THE EARLIER SCANS COULD NOT**, *because they only looked **inside frontier

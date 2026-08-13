@@ -201,6 +201,7 @@ sources: [chat]
 | `THE_REFIT_BOUND_PLAN.md` | PLAN | (declared in frontmatter) | — | c54.207 |  |
 | `THE_REHOMING_CAMPAIGN.md` | PLAN | (declared in frontmatter) | — | c54.207 |  |
 | `THE_REMAINING_WORK.md` | PLAN | (declared in frontmatter) | — | c54.206 |  |
+| `THE_RESIDUAL.md` | PLAN | (declared in frontmatter) | — | c54.207 |  |
 | `THE_STATE.md` | PLAN | (declared in frontmatter) | — | c54.207 |  |
 | `A4_matter_seam_crossing_build.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
 | `A5_fermion_sector_build.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
