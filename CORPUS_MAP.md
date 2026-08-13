@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2627 — 2026-08-11 (main line). **`PO-3`'s "why" is answered dimensionally — and it is the first finding in a row nobody had ever worked.**
+
+**⌗ THE ROW, with ZERO dated moves in the register's history**, *asks "**why does the SdS geometry produce a zero-sum
+triple with a $\mathbf3/\bar{\mathbf3}$ parity doubling**", targeting "the $A_2$ skeleton and the parity
+doubling".*
+
+**⛭⛭ ⓵ THE SKELETON IS THE OFFSET-TO-MASS CUBIC.** *P13: "it is a cubic, $2M=((r_0/\alpha)-(r_0/\alpha)^3)$,
+**whose three zero-sum roots are the $A_2$ weights that $S_3$ permutes**---mass-tied, moving with $2M$".*
+⇒ ***An identity, not a resemblance.***
+
+**⛭⛭⛭ ⓶ AND THE "WHY" IS A DIMENSIONAL FACT, IN P14.** *"**The mass function is odd in the signed offset exactly
+when $D$ is even**, so at $D=5$ the orientation parity $r_0\mapsto-r_0$ ***fixes*** each geometry rather than
+exchanging it with its conjugate: **there is no mass-reflection $\mathbb{Z}_2$, hence no
+$\mathbf3\oplus\bar{\mathbf3}$ Nariai hexad, no outer factor of $\mathrm{Aut}(A_2)$, and no $\gamma^5$**."*
+⇒⇒ ***Read forward: at $D=4$ the parity EXCHANGES each geometry with its conjugate — and that exchange IS the
+doubling, supplying the outer $\mathbb{Z}_2$ and $\gamma^5$ with it.***
+
+**⓷ AND THE ROW'S SECOND CLAUSE IS ANSWERED TOO.** *P14 uses the parity as **one of the two $D$-selection
+conditions** — "The second condition is the parity, and it separates those two" — ruling out $D=5$, where the
+harmonic collapse alone "returns a four-fold".*
+⇒ ***So the reason is not a local curiosity: it is what selects $D=4$ — the third $D=4$ argument seen from the other
+end.***
+
+**⛭⛭ THE RULE:** ***a row with ZERO dated moves is not a hard row — it is an UNREAD one. Work the never-touched
+rows before the well-worked ones: the well-worked row has had its corpus searched, and the untouched row has not.***
+
+⌗ *The answer was stated as a **premise of a different argument** — which is why nobody following `PO-3` ever met
+it. **Ninth latent in sixteen turns, and the first found in a row nobody had ever opened.***
+
 ### Revision r2626 — 2026-08-11 (main line). **`PO-4`'s two targets have OPPOSITE verdicts, and its status line waits on a route the corpus never took.**
 
 **⛭⛭ ⓵ $\su(3)$ IS DELIVERED, AND NOT BY REDUCING ANYTHING.** *P14: "the smallest connected group containing **the
