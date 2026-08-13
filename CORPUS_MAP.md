@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2605 — 2026-08-11 (main line). **`PO-5`'s MOD-2 ROUTE IS CLOSED — the involution is quaternionic, and a name collision hid the sign.**
+
+**⌗ THE QUESTION TURNED ON ONE SIGN.** *A mod-2 index exists iff the antilinear involution squares to **$+1$** (a
+REAL structure). At **$-1$** the structure is **QUATERNIONIC**: Kramers doubles every eigenvalue and the index is
+valued in **$2\mathbb{Z}$** — an even integer, **not a parity**.*
+
+**⛔ AND THE SQUARE IS STATED NOWHERE.** *`K^2` appears twice in the corpus and **both are the extrinsic curvature**
+in $16\pi\rho={}^3R+K^2-K_{ij}K^{ij}-2\Lambda$.*
+⇒ ***The antilinear involution and the extrinsic curvature share a letter, so the grep that would have found the
+missing sign returns the wrong object twice. A name collision, not an absence.***
+
+**⌗ BUT THE LIFT IS EXPLICIT, SO THE SIGN IS COMPUTABLE FROM WHAT THE CORPUS ALREADY STATES.** *"the
+reality-involution lift $S=\gamma^{0}\gamma^{1}\gamma^{3}$ gives $\gamma^{5}S=-\mathrm{i}\gamma^{2}$" —
+reproduced in **Dirac and Weyl**, Clifford algebra verified in both, and* ***$S^2=-\mathbb{1}$.***
+
+⇒⇒ ***So the route closes NOT by absence of structure — the structure is built and realised on the zero-modes —
+but because the structure that IS built is the wrong one for a parity: it DOUBLES rather than grades.***
+
+**⌗⌗ AND THE DOUBLING IS CONTENT, WHICH IS WHAT REPLACES THE ROUTE.** *A quaternionic structure means the modes come
+in **Kramers pairs**, so* ***the three-wall count is a count of PAIRS or of SINGLETS depending on how $R\circ K$
+acts WITHIN a wall*** *— a determinate question about an object the corpus has already built.*
+
+**⛭ THE RULE:** ***when a question turns on a single sign, check whether the corpus states it before assuming it
+does — and when the search comes back with the right symbol in the wrong role, that is a name collision, not an
+answer.***
+⌗ *A rejected computation is recorded rather than hidden: **$K^2=S\bar S$ is basis-dependent** and reads $+1$ in a
+would-be real basis, so the invariant statement is the Clifford one — **a product of three gammas in signature
+$(1,3)$ squares to $-1$**.*
+
 ### Revision r2604 — 2026-08-11 (main line). **THE RANKING'S FIRST TURN — `PO-5` worked, and a mod-2 index's prerequisite turns out to be already built.**
 
 **⌗ THE QUESTION.** *A mod-2 index is **not defined on a bare $\mathbb{Z}_2$-graded operator**. It needs a REAL or
