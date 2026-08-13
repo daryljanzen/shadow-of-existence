@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2576 — 2026-08-11 (main line). **THE TWO VEINS CARRYING THE MOST WORK WERE THE THINNEST ROWS IN `PROTECTED_OPEN` — brought current, and gated.**
+
+**⌗ THE MEASUREMENT.** *`THE_CLOSURE_PLAN` states the target state for every item: **STRUCK, or MAPPED-AND-OPEN with
+its next question stated**. Checked against the register:*
+*· `PO-2`, `PO-3`, `PO-4` — **mapped**, with a leg removed, a half answered, and a remaining route written;*
+*· `PO-7`, `PO-8`, `PO-9` — **kill receipts**;*
+*· ⛔ ***`PO-5` at 305 characters reading "OPEN. Queued, never worked", and `PO-6` at 269*** — *the two thinnest rows
+in the register, and* ***the two veins that carried the most work of the session.***
+
+**⛔ WHAT THE REGISTER HAD NOT BEEN TOLD.** *`PO-5`: the **kernel route ruled out structurally** (r2526), the
+**mod-2 index located** (r2568), and **three candidate bridges failing on one number** (c54.207). `PO-6`: **the
+quartic answered**, **the Nariai expansion parameter named**, **the one-constant obstacle removed**, and **the sum
+given seven necessary conditions**.*
+⇒ *Both rows brought current, 305 → 1800 and 269 → 1671 characters.*
+
+**⌗ AND THE MECHANISM IS ORDINARY, WHICH IS WHY IT PERSISTED.** *Findings were written to the **veins**
+(`BOARD.md`), the **register rows** (`THE_LIVE_ARC`), and the **changelog** — all three of which a node reads.*
+⇒ ***`PROTECTED_OPEN` is read when something is CLOSING, not when something is progressing — so it accumulated
+nothing while everything else accumulated everything.***
+⛭ ***THE RULE: a document read only at one moment in a lifecycle goes stale between those moments, and the staler it
+is the less anyone consults it. Write to it on PROGRESS, not only on closure.***
+
+**✔ AND GATED:** *`check_kills` now fails on an **open item with no kill receipt that names no route** — the one
+state `THE_CLOSURE_PLAN` says should not exist. Seeded both ways.*
+⚠ *Deliberately loose (length plus a small route vocabulary): **a row can be mapped in prose no keyword predicts,
+and a false FAIL would push toward writing markers rather than routes**.*
+
 ### Revision r2575 — 2026-08-11 (main line). **THE ROUTED QUEUE AT 49 OF 51 — and item 26's residue is a citation LOOP, not what F12 said.**
 
 **⌗ THE CLEANUP.** *Items **18** and **57** marked discharged — both delivered by c54.207 — with **register-keyed

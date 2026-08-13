@@ -112,6 +112,61 @@ def home_files(homes):
     return out
 
 
+# ** ---- ADDED r2576: THE MAPPED CHECK ---- **
+# `THE_CLOSURE_PLAN` (r2574) states the target state for every item: ** STRUCK, or MAPPED-AND-OPEN with
+# its next question stated. **  ⇒ ** So an item that is open and names NO route is the one state the
+# plan says should not exist. **
+#   ⚠ And it was not hypothetical: at r2576 ** `PO-5` and `PO-6` were the two THINNEST rows in the
+#   register ** -- 305 and 269 characters, `PO-5` still reading "Queued, never worked" -- while being
+#   ** the two veins that had carried the most work of the session **.  *** The register had been told
+#   none of it. ***
+#
+# ** WHAT COUNTS AS MAPPED: ** a row that says what would MOVE it.  Detected by length plus any of a
+# small vocabulary of route-markers -- ** deliberately loose, because a row can be mapped in prose no
+# keyword predicts, and a false FAIL here would push toward writing markers rather than routes. **
+_ROUTE_MARKERS = ('ROUTE', 'NARROWED', 'ANSWERED', 'REMAINS', 'WHAT REMAINS', 'MOVED', 'WORKED',
+                  'what would', 'would have to', 'LEG IS REMOVED', 'CONSTRAINED')
+_THIN = 600
+
+
+def check_mapped():
+    """Report OPEN PROTECTED_OPEN rows that name no route and are thin."""
+    import os as _os
+    import re as _re
+    _root = _os.path.abspath(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..'))
+    _p = _os.path.join(_root, 'PROTECTED_OPEN.md')
+    if not _os.path.exists(_p):
+        return []
+    out = []
+    for line in open(_p, encoding='utf-8', errors='replace'):
+        m = _re.match(r'\| \*\*(PO-\d+)\*\*', line)
+        if not m:
+            continue
+        tag = m.group(1)
+        if _os.path.exists(_os.path.join(_root, 'kills', f'{tag}.md')):
+            continue                       # a kill receipt IS the route, written out
+        if len(line) >= _THIN:
+            continue
+        if any(k in line for k in _ROUTE_MARKERS):
+            continue
+        out.append((tag, len(line)))
+    return out
+
+
+def _mapped_gate():
+    bad = check_mapped()
+    if not bad:
+        print('    OK    every open item is mapped or has a kill receipt')
+        return 0
+    for tag, n in bad:
+        print(f'    [FAIL] {tag} is open, has no kill receipt, and names no route ({n} chars)')
+    print('    ⛔ THE_CLOSURE_PLAN states the target state: STRUCK, or MAPPED-AND-OPEN with its next')
+    print('       question stated.  ** An open item naming no route is the one state it says should not')
+    print('       exist -- and a register that cannot say what would move an item cannot route work to')
+    print('       it. **')
+    return 1
+
+
 def main():
     items = parse_register()
     print(f"  PROTECTED OPEN: {len(items)} registered items")
@@ -190,7 +245,7 @@ def main():
         print("  SAME-OBJECT, INVERSION, PRICE, CHAIN answered and AUTHORISED BY set.")
         return 1
     print("  No unauthorised closures on protected open questions.")
-    return 0
+    return _mapped_gate()
 
 
 if __name__ == '__main__':
