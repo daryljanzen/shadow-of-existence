@@ -596,7 +596,7 @@ result as scope rather than error.*
 *"Two of the four real forms", the "nothing privileges one" clause dropped, and the reason written in: $\mathfrak{su}(3)$ needs a maximal compact of dimension $\ge8$ and a faithful real representation of dimension 6, so **the compact form is the unique real form that admits it at all**. A tighter wall for `PO-4`; the ontological argument below is untouched, as the finder said.*
 
 ---
-## ⛭ VERIFIED r2575 — F12 IS WRONG AND THE RESIDUE IS SHARPER — ⌗ 26 · TWO ITEMS ROUTED AT THE FINDER'S WEIGHT, NOT INDEPENDENTLY VERIFIED HERE — added r2442
+## ✔ ⛭ VERIFIED r2575 — F12 IS WRONG AND THE RESIDUE IS SHARPER — ⌗ 26 · TWO ITEMS ROUTED AT THE FINDER'S WEIGHT, NOT INDEPENDENTLY VERIFIED HERE — added r2442
 
 > ## ⛭⛭ VERIFIED r2575 — the residue is a CITATION LOOP, and it is not what F12 said
 >
@@ -630,6 +630,9 @@ alone**, and Bianchi II's abelian $G_2$ is orthogonally transitive but **unpolar
 basis change removing it), placing it one step beyond the polarized Gowdy–dS class P11 builds.*
 
 ---
+
+
+> ✔✔ **DISCHARGED r2635.** *The triple is **an algebra fact**: the symmetric decompositions of $\so(5,1)$ are $\so(5)$ and $\so(4,1)$ at **ten**, $\so(1,1)\oplus\so(4)$ at **seven**, $\so(2,1)\oplus\so(3)$ at **six** — computed in .* ⇒ ***And P9 could never have established it: its three tabulated stratum isotropies are $SO(4,1)$, $SO(2,1)\times SO(3)$ and $\mathbb{R}_t\times SO(3)$ — dimensions **{10, 6, 4}**, a DIFFERENT SET. Two of three coincide because two strata ARE symmetric; the generic stratum sits at FOUR, which P12 itself calls generic in the same sentence. **That two-of-three overlap is why the loop survived.*** ⌗ *P12 now states the decompositions in its own voice, so the citation no longer carries the fact.*
 
 ## ✔✔ DISCHARGED (verified gone r2533 — P15 no longer carries the two parameter sets) — ⛭⛭ 27 · P15's RECEIPT LAYER CARRIES TWO PARAMETER SETS AND THE PAPER DRAWS ON BOTH — added r2443
 

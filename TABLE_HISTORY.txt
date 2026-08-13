@@ -22,3 +22,4 @@ r2616  32  2/4  PO-8 struck (authorised at r2378, held 238 revisions); answered 
 r2618  27  2/4  five ledger entries deduped -- three onto PO-11, two the same traced statement twice
 r2621  28  2/4  ONE dedupe reversed: the compact-face sector is a second unbuilt object, not PO-11's
 r2631  27  2/4  the {0,1,2} derivation discharged NEGATIVELY -- the two triples are typed differently
+r2635  26  2/4  FOR_54 item 26 discharged: {6,7,10} computed from so(5,1) symmetric decompositions; P12 now owns it

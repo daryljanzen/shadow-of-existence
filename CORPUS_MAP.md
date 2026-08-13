@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2635 — 2026-08-11 (main line). **`FOR_54` item 26 discharged — $\{6,7,10\}$ is an algebra fact, and the citation loop survived because two of its three numbers coincided.**
+
+**⌗ THE LOOP, routed r2442 and verified r2575.** *P12 cites P9 for $\{6,7,10\}$; P9 cites P12 at its own isotropy
+passage; **the triple appears zero times in P9**. `check_citations` is blind to it — it checks a cited key EXISTS,
+not that the cited paper CONTAINS the fact.*
+
+**⛭⛭ THE DISCHARGE IS A COMPUTATION.** *$\{6,7,10\}$ are the dimensions of $\mathfrak{so}(5,1)$'s **symmetric
+decompositions**:*
+
+    so(5)             10        so(1,1) + so(4)    7
+    so(4,1)           10        so(2,1) + so(3)    6
+
+⇒ ***An ALGEBRA fact, computable with no geometry — and P12 is the paper that works the algebra.***
+
+**⛔ AND P9's SET IS DIFFERENT.** *Its three tabulated stratum isotropies — $SO(4,1)$, $SO(2,1)\times SO(3)$,
+$\mathbb{R}_t\times SO(3)$ — have dimensions **$\{10, 6, 4\}$**.*
+⇒⇒ ***And that is why the loop survived: two of the three coincide, because two strata ARE symmetric. The generic
+stratum sits at FOUR — which P12 itself calls generic in the same sentence — so the sets agree wherever anyone would
+have checked.***
+
+**⛭ THE RULE:** ***a wrong citation between two true statements is invisible exactly when the statements OVERLAP.
+Check the entries where they DIFFER: a citation that survives review is usually one whose disagreement lives in the
+case nobody reads.***
+
+✔ *P12 now states the decompositions in its own voice; the citation no longer carries the fact. **Table 27 → 26.***
+
+⚠ *A false alarm mid-turn: computed $\{10,6,4\}$ and nearly reported a corpus discrepancy, when **reading P12's
+sentence whole shows it distinguishes symmetric from generic strata explicitly**. Fifth time this session the paper
+was more careful than the first pass.*
+✔ *`scripts/quote.py`, built last turn, resolved both markup failures on the first try.*
+
 ### Revision r2634 — 2026-08-11 (main line). **`check_withdrawals` — the corpus has self-corrected eight times, and nothing was comparing the registers against them.**
 
 **⌗ r2633's RULE, RUN PROPERLY.** *"Grep the withdrawal, not just the claim." Across all seventeen papers:*
