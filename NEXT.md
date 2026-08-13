@@ -109,9 +109,10 @@ is**.*
 | **`L-165`** | r2475 | ⓵ **the UV clause now has a DEGREE (quartic) and a shape (IR free, UV generic)** — what remains is **defining** the sum, not diagnosing it · ⓶ the clo |
 | **`L-218`** | r2478 | ✔ **② done r2478 — `COMPANION_SPEC.md`** · ① formats via pandoc in CI · ③ contribution, last |
 | **`L-221`** | r2526 | **the question is INVERTED r2526**: not "is there an $R$-odd operator?" but ***what BRIDGE from grading to field exists that is not "be a kernel"?***  |
-| **`L-171`** | r2552 | **NARROWED r2552 by `kills/PO-7.md`**: the object is now ***does every mode of interest freeze before the crossing?*** — P15 `sec:what-crosses`, the o |
+| **`L-805`** | r2556 | ***chain-④ now clears — the four checks are all reproduced;*** *the conversion runs by `F5`'s stated procedure (route ② authorisation), no node acting |
+| **`L-171`** | r2559 | **`kills/PO-7.md` is COMPLETE r2559** — object named, four checks written, ***all four now pass*** · ***the next step is the register's own: "and Dary |
 
-*7 live rows carry a stated next step; the 7 longest-unworked are shown.*
+*8 live rows carry a stated next step; the 8 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session

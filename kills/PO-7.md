@@ -1,14 +1,14 @@
 ---
 name: kill-PO-7
 kind: KILL-RECEIPT
-current: r2552+c54.205
+current: r2559+c54.206
 description: Kill receipt for PO-7 — the acoustic disagreement against the sky. Route ② of PROTECTED_OPEN's exit procedure: object named, four checks answered. Awaits authorisation.
 sources: [chat]
 ---
 
 # KILL RECEIPT — `PO-7`
 
-> ***Route ② of `PROTECTED_OPEN`'s exit procedure: "its object is named, all four checks are written
+> ***Route ② of `PROTECTED_OPEN`'s exit procedure — **complete r2559**: "its object is named, all four checks are written
 > into a kill receipt under `kills/`, and Daryl authorises."*** **The four checks are the node's work.
 > This is that work, and it was owed for fifty-odd revisions while this line kept asking for a verdict
 > instead of writing it.**
@@ -98,7 +98,36 @@ authorisation is worth having, and exactly when a node should NOT act alone.***
 
 ---
 
-## ④ CHAIN CHECK — ⚠ **THIS IS A CONJUNCTION, AND THAT IS THE ANSWER**
+## ④ CHAIN CHECK — ✔ **CLEARS r2559.** *It did not at r2552, and the difference is a computation*
+
+> ### ⛭⛭⛭ UPDATED r2559 + cc54 `L-805` — the one unreproduced link is now reproduced
+>
+> *At r2552 this check **did not clear**: the 0.408 rested on **(a)** the two-arm construction, **(b)** the
+> production-depth spectra, **(c)** the peak-4–8 estimator, **(e)** the control — all reproduced twice on two
+> instrument paths — and on* ***(d) P15's freezing argument fixing $\phi\in\{0,\pi\}$, which was an ARGUMENT and
+> reproduced nowhere.*** *That was the narrowing this receipt produced, and it named the calculation.*
+>
+> **✔ cc54 RAN IT.**
+> *· **Every multipole $\ell=28$–$2475$ exits the sound horizon strictly before the crunch** — from **88%** of the
+> leg down to **0.065%** at $\ell=2475$, matching the existing P16 receipt to the digit; **the thinnest-margin mode
+> is still frozen**.*
+> *· ***And the link the earlier receipt never made:*** *the sub-horizon ratio $r=c_s k/|aH|	o0$ at the crossing
+> for **every** mode (max $5.2	imes10^{-4}$). So each crosses **at a density extremum** with
+> $\dot\delta_\gamma	o0$ — and continuity forces $	heta_\gamma\propto\sin\phi=0$, hence $\phi\in\{0,\pi\}$.*
+> *· ***And the inversion is CLOSED by the divergence of $|aH|$:*** $c_s k/|aH|	o c_s k x	o0$ *for every finite
+> $k$, so **no mode of interest crosses unfrozen**. The band does not widen to 0.891; it stays the zero-velocity
+> pair **0.2069**, and the control at **0.2628** is outside it.*
+>
+> ⇒⇒ ***SO (d) NOW HOLDS ON A SECOND, INDEPENDENT PATH, MATCHING (a)(b)(c)(e). ALL FIVE LINKS ARE REPRODUCED
+> TWICE.***
+> ⚠ *cc54's two stated limits, kept: it **did not** claim $	heta_\gamma/\delta_\gamma=c_s k/|aH|$ exactly — $r$
+> is the **sub-horizon ratio** and the frozen limit is $r	o0$, which is all the zero-velocity conclusion needs;
+> and it **did not close the row**, because `F5` forbids a node converting one. ***It supplied the calculation, not
+> the verdict.***
+
+### ⌗ THE r2552 READING, KEPT — because this is the check that changed
+
+**⚠ AT r2552: THIS WAS A CONJUNCTION, AND THAT WAS THE ANSWER**
 
 **Does the result rest on one thing or several?**
 
@@ -122,14 +151,32 @@ exists for.***
 
 ---
 
-# ⌗ WHAT THIS RECEIPT CONCLUDES
+# ⌗ WHAT THIS RECEIPT CONCLUDES — **rewritten r2559, and the conclusion has changed**
 
-**① passes. ⑤ passes. ③ finds the prices asymmetric.** ⇒ ***And ④ does not clear: the disagreement is a
-conjunction of four reproduced things and one ARGUED thing, and the argued one — P15's freezing — is
-exactly what ② names as the live inversion.***
+**① SAME-OBJECT passes. ⑤ RELATIVE-OR-ABSOLUTE passes. ③ PRICE finds the prices asymmetric.**
+✔ ***AND ④ CHAIN NOW CLEARS: all five links are reproduced on two independent instrument paths.***
+✔ ***AND ②'s FIRST INVERSION — the one this receipt called live and not idle — IS CLOSED: no mode of
+interest crosses unfrozen, because $|aH|$ diverges.***
 
-⇒⇒ ***SO THIS RECEIPT DOES NOT ASK FOR AUTHORISATION. It asks for the freezing argument to be checked,
-because that is the single link between a measured 0.408 and a claimed disagreement with the sky.***
+⌗ **②'s other two routes remain open and are stated rather than waved:**
+*· ⓶ **the estimator could be biased by the arm's own construction** — bounded (the undriven arms agree
+to **0.013** in $\phi/\pi$) but not excluded, and **the driven case is where the disagreement lives**;*
+*· ⓷ **the seam datum could acquire a derivation landing off $\{0,\pi\}$** — `CRPHI` is currently
+**assigned**, and if the progenitor ever fixes it somewhere the freezing argument does not reach, ⓵
+returns.*
+
+⇒⇒ ***SO ROUTE ②'s WORK IS DONE: the object is named, the four checks are written, three pass outright,
+and the fourth cleared when the calculation it called for was run.***
+
+**⌗ AND THE PROCEDURE'S NEXT STEP IS NOT A NODE'S.** *`PROTECTED_OPEN`: "② Its object is named, all four
+checks are written into a kill receipt under `kills/`, **and Daryl authorises**." `F5` forbids a node
+converting the row, and neither this line nor cc54 has.*
+⇒ ***This receipt now stands where the procedure says it should stand: complete, and waiting. That is
+the one place in this programme where asking is what the register asks for.***
+
+⚠ *And the outcome is the **confirming** one, not the inverting one: **the 0.408 stands as a measured,
+now fully-reproduced disagreement** — which is PRICE-③'s "**gets the spacing right and the phase
+wrong**", a specific and reportable claim rather than a failure.*
 
 ⌗ **AND THAT IS A NARROWING, WHICH `PROTECTED_OPEN` SAYS IS ALWAYS A NODE'S TO DO:** *`PO-7` was "is the
 acoustic disagreement real against the sky?"* ⇒ ***It is now: "does every mode of interest freeze before

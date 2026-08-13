@@ -146,6 +146,43 @@ sources: [cowork, chat]
 
 
 
+### Revision r2559 — 2026-08-11 (main line). **cc54 CLOSED `PO-7`'s INVERSION — `kills/PO-7.md`'s ④ now clears, and route ② is complete.**
+
+**⌗ WHAT THE KILL RECEIPT DID.** *r2552 wrote the four checks. **① and ⑤ passed, ③ found the prices asymmetric, and
+④ CHAIN DID NOT CLEAR**: the 0.408 rested on four things reproduced twice on two instrument paths — and on **P15's
+freezing argument, which was an ARGUMENT and reproduced nowhere**.*
+⇒ ***That failure was the finding. It narrowed `PO-7` to "does every mode of interest freeze before the crossing?"
+and named a calculation.***
+
+**✔ cc54 RAN IT.**
+*· **Every multipole $\ell=28$–$2475$ exits the sound horizon strictly before the crunch** — 88% of the leg down to
+**0.065%** at $\ell=2475$, matching P16's existing receipt to the digit; **the thinnest-margin mode is still
+frozen**.*
+*· **The link the earlier receipt never made**: the sub-horizon ratio $r=c_sk/|aH|\to0$ at the crossing for
+**every** mode (max $5.2\times10^{-4}$) — so each crosses **at a density extremum**, $\dot\delta_\gamma\to0$,
+and continuity forces $\theta_\gamma\propto\sin\phi=0$.*
+*· ***And the inversion is CLOSED by the divergence of $|aH|$***: $c_sk/|aH|\to c_skx\to0$ for every finite $k$.*
+⇒⇒ ***The band does NOT widen to 0.891. It stays the zero-velocity pair 0.2069, and the control at 0.2628 is
+outside it.***
+
+**⛭ THE RULE:** ***a check that fails is worth more than four that pass, because it says what to compute. A kill
+receipt is not a formality to be filled in — it is an instrument for finding which link is weakest, and its failing
+check is its output.***
+
+**⚠ AND THE PROCEDURE'S LIMIT HELD ON BOTH SIDES.** *cc54 supplied **the calculation, not the verdict**, and said
+so; this line updated the receipt and **did not convert the row**.*
+⇒ ***`PROTECTED_OPEN` says "and Daryl authorises". That is the one place in this programme where asking is what the
+register asks for — different from manufacturing a decision, and the difference is that the register wrote it down
+first.***
+
+⌗ *②'s other two inversion routes stay open and stated: **the estimator's own bias** (bounded at 0.013 undriven;
+the driven case is where the disagreement lives) and **a future derivation of `CRPHI` landing off $\{0,\pi\}$**.*
+⌗ *And the outcome is the **confirming** one: ***the 0.408 stands as a measured, now fully-reproduced disagreement***
+— PRICE-③'s "gets the spacing right and the phase wrong", a specific and reportable claim rather than a failure.*
+
+⌗ *`L-803` and `L-804` each arrived duplicated — **fifth and sixth** time `merge=union` has preserved both sides of
+one row; `check_id_bands` caught both.*
+
 ### Revision r2558 — 2026-08-11 (main line). **THE VARIATIONAL LEDGER'S PREMISE IS FALSE — the corpus performs variational work and names the field nowhere.**
 
 **⌗ WHERE IT CAME FROM.** *With **fewer leads than veins**, the generators are the work — and R-M was the one never

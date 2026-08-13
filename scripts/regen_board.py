@@ -55,7 +55,12 @@ VEINS = {
 # ** A lead with NO vein links is instrument work.  It is not counted as progress on the map. **
 LEADS = {
  'L-171': ("**PO-7** \u2014 \u26ed **NARROWED r2552 by `kills/PO-7.md`**: the four checks are written and "
-   "**\u2463 CHAIN does not clear** \u2014 the 0.408 rests on four things reproduced twice on two "
+   "\u2714 **\u2463 CHAIN NOW CLEARS r2559** (cc54 `L-805`) \u2014 the 0.408 rested on four things "
+   "reproduced twice and on **P15's freezing argument**, reproduced nowhere; cc54 ran it: **every "
+   "multipole 28\u20132475 freezes before the crossing** and $c_sk/|aH|\\to0$ at the crossing for all of "
+   "them, so **the band stays 0.2069 and the control is outside it**. \u21d2 **All five links reproduced "
+   "on two paths; route \u2461's work is DONE and the next step is the register's: \"and Daryl "
+   "authorises\".** The old reading: the 0.408 rests on four things reproduced twice on two "
    "instrument paths, and on **P15's freezing argument**, which is an ARGUMENT and reproduced nowhere. "
    "\u21d2 **The object is now: DOES EVERY MODE OF INTEREST FREEZE BEFORE THE CROSSING?** \u26ed r2519: the "
    "admissible pair $\\phi\\in\\{0,\\pi\\}$ is **FORCED** by P15's own transmission argument (every mode "
