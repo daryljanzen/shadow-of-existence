@@ -114,6 +114,7 @@ reading the compound form until r2550.***
 
 ### SOURCE (2)
 
+| `THE_REMAINING_WORK.md` | PLAN | **every outstanding thing with a ROUTE, not a status** — four veins, one verdict, two paragraphs, one publishing task; and the finding that ***exactly one item is open-ended*** |
 | document | job |
 |---|---|
 | `ABSORPTION.md` | The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced. |

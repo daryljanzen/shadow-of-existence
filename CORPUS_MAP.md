@@ -146,6 +146,42 @@ sources: [cowork, chat]
 
 
 
+### Revision r2565 — 2026-08-11 (main line). **`THE_REMAINING_WORK.md` — every outstanding thing with a ROUTE, and exactly one of them is open-ended.**
+
+**⌗ WHY IT EXISTS.** *The board reached **four veins, two leads** and the routed queue **five of fifty**, and what
+was missing was not a status — those are generated — but ***a route for each thing***.*
+
+**⛭⛭ THE FOUR VEINS, AND THEY ARE NOT FOUR PROGRAMMES:**
+*· **`PO-9`** — could a SECOND slicing be non-arbitrary? ***The route is the one the first slicing used:*** *enumerate
+what a second cut would have to break and check whether any of it is a **modulus**. If all of it is, the vein closes.
+**Most likely to close outright; one session.***
+*· **`PO-seam`** — does a MASSIVE trajectory carry a phase? ***The route is the one `L-805` just walked for the null
+case***, with a massive dispersion relation: whether $\omega/|aH|\to0$, ***which it need not***. **One cc54 run.**
+⇒ ⛭ ***And this is the SAME OBJECT as `PO-7`'s inversion route ⓷ approached from the other side — nobody had said
+so.***
+*· **`PO-5`** — the bridge from a grading to a field. ***The kernel route is structurally ruled out*** (an $R$-odd
+operator has no graded index), ***so the work is enumerating the alternatives***: cohomology, spectral projection,
+representation branching, anomaly. **Four candidates, three readable without computation** — and `L-242`'s closure
+makes the target concrete, since the $R$-odd sector now has a geometric realisation with a bounded order parameter.
+*· **`PO-6`** — three questions of very different size. **(a)** can one constant regulate — ***partly answered r2564***,
+and what remains is a one-loop calculation on the compactified substrate. **(c)** the closed-form nonlinear
+$\Lambda>0$ solution — ***the Nariai limit is exactly solvable and the question is whether it extends off the
+degenerate member as a series in $M-M_N$***. **(b)** ***defining the sum — the genuine programme***, and the honest
+route is not to define the measure but to **write down what it must satisfy**, which is a session and is not
+currently written.
+
+**⇒⇒ SO OF EVERYTHING OUTSTANDING, EXACTLY ONE ITEM IS OPEN-ENDED: `PO-6`(b). Everything else has a route, and most
+are a session or a run.***
+
+**⌗ AND `PO-7` IS NOT BLOCKED ON A DECISION ALONE.** *②'s other two inversions are real work and are now specified:
+***test the estimator on a driven synthetic spectrum with a known asymptotic phase*** (the undriven arms agree to
+0.013, but the driven case is where the disagreement lives), and ***derive `CRPHI`***, which is `PO-seam`'s route.*
+
+⚠ **AND THE FILE CARRIES ITS OWN CAVEAT:** *it is written by the line that has been **wrong about scope repeatedly
+this session** — r2536's implication, `L-230`'s population, `VARIATIONAL_LEDGER`'s premise.* ⇒ ***So every route in
+it is a hypothesis about cost, not a measurement of one, and the first thing each session should do is check whether
+the question is still stated correctly.***
+
 ### Revision r2564 — 2026-08-11 (main line). **ITEM 52 ANSWERED FROM p0 — the de Sitter entropy is the number the corpus already states, and r2536's implication is corrected.**
 
 **⌗ WHAT r2536 GOT RIGHT AND WHAT IT GOT WRONG.** *Right: **"de Sitter entropy" at zero**, the temperature taken,
