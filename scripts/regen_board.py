@@ -54,14 +54,6 @@ VEINS = {
 # GROUNDED 0-3: how solid the footing is, INFORMS 0-3: how much a vein would learn). **
 # ** A lead with NO vein links is instrument work.  It is not counted as progress on the map. **
 LEADS = {
- 'L-537': ("\u26ed\u26ed **THE REHOMING CAMPAIGN** \u2014 *a paper is a **map of the present state**; a "
-   "frontier section is a **pointer to the horizon**. When the horizon moves back the newly-known content is "
-   "**REHOMED UPSTREAM into the physics**, and the **story of how it moved goes to `CONSOLIDATE`**.* \u21d2 "
-   "**Scope measured r2580 and it is FIVE papers, THIRTEEN paragraphs** \u2014 not 114: the discriminator is "
-   "**TIMELESS vs TEMPORAL**, since a paper is a map of the present and *a tense referring to the paper's own "
-   "past is the signature*. `CR_cosmology` **8** \u00b7 `cosmogenesis` **2** \u00b7 `boundary` \u00b7 "
-   "`matter_sector` \u00b7 `slicing_operator` **1** each; **eight papers clean, including P7**",
-   ['L-202'], 3, 2),
  'L-536': ("\u26d4\u26ed **P7's SCALAR-PERTURBATION FRONTIER HAS A STATED REMAINDER AND IT WAS IN NO "
    "REGISTER** \u2014 found by testing whether `THE_STATE`'s twelve covered the papers' own frontier "
    "sections. **18 frontier/open sections across 13 papers**, and P7 keeps its own count honestly "

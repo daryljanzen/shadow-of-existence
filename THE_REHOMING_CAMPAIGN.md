@@ -1,7 +1,7 @@
 ---
 name: the-rehoming-campaign
 kind: PLAN
-current: r2580+c54.207
+current: r2591+c54.207
 description: THE REHOMING CAMPAIGN — 114 paragraphs across 13 frontier sections, to be rehomed upstream into the physics or into CONSOLIDATE, so each paper reads as a map of the present state rather than an accident of when it was written. Written r2580.
 sources: [chat]
 ---
@@ -35,6 +35,40 @@ list** — roughly eleven thousand characters of settled physics under a heading
 
 **⇒ THE END STATE, stated so it can be checked:** ***"this is what we currently know about the whole
 thing" — and a smaller, diminished section: "this is what we still don't know."***
+
+---
+
+## ✔✔✔ THE CAMPAIGN IS COMPLETE — r2591
+
+| | |
+|---|---|
+| paper-past narrations, corpus-wide | ***24 → 2*** |
+| the two that remain | **P7's frontier accounting** — *"it opened at seven and stands at four"*, ***which is correct***: a frontier list stating that it shrank is telling the reader what to work |
+| `check_revleak` baseline | ***29 → 22 drained*** |
+| receipts | ***32/32 still bound; nothing lost anywhere*** |
+
+**⌗ THE FINAL PASS FOUND WHAT THE EARLIER SCANS COULD NOT, because they only looked inside frontier sections.**
+*Twenty-four narrations were scattered through paper **bodies**, in two kinds:*
+
+*· ***TENSE ONLY*** — "a sector of bound modes **has since been built**" → **"is built"**. ***Sixteen corrections
+across seven papers.*** The claim is unchanged; only its relation to the paper's own past goes.*
+*· ***CORRECTION NOTICES*** — ***"This sentence read \`\`infalling worldlines reach an endpoint rather than a
+crossing'' until r2533+c54.203"***, *"The apposition here read … until r2533+c54.203", "This paragraph read
+\`\`co-equal real forms …'' until r2540+c54.204", "the citation here named the wrong receipt until r2540+c54.204".*
+⇒ ***Seven of them, and in every case the physics was the clause AFTER the colon.*** *Removed the notice, kept what
+it established — e.g. "The group theory does privilege one, and says so on dimension alone".*
+
+**⛭ AND THE WHOLE CAMPAIGN, IN ITS FINAL SHAPE:**
+*· **P8** — a theorem's generalisation rehomed beside the theorem;*
+*· **P14** — a third $D=4$ argument rehomed from "scope" to the count;*
+*· **P16** — a result rewritten from a debt discharged into a result;*
+*· **P7** — 8,638 characters of record moved to `CONSOLIDATE`, one physics clause rescued upstream first;*
+*· **P15** — four new subsections for orphaned results, then **fourteen clause replacements** taking
+`sec:refit-bound` from **57,451 to 48,578 characters and 16 narrating paragraphs to zero**;*
+*· **corpus-wide** — sixteen tense corrections and seven correction-notices.*
+
+⇒⇒ ***Every paper is now a map of its present state. Not one result was lost, and the whole record of how the
+horizon moved is in `CONSOLIDATE` where a reader can find it.***
 
 ---
 

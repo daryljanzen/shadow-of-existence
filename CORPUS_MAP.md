@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2591 — 2026-08-11 (main line). **THE REHOMING CAMPAIGN IS COMPLETE — 24 → 2 paper-past narrations, and the two that remain are correct.**
+
+**⌗ THE FINAL PASS FOUND WHAT THE EARLIER SCANS COULD NOT**, *because they only looked **inside frontier
+sections**. Twenty-four narrations were scattered through paper **bodies**, in two kinds:*
+*· ***TENSE ONLY*** — *"a sector of bound modes **has since been built**" → **"is built"**. **Sixteen corrections
+across seven papers**; the claim is unchanged and only its relation to the paper's own past goes.*
+*· ***CORRECTION NOTICES*** — *"**This sentence read** \`\`infalling worldlines reach an endpoint rather than a
+crossing'' **until r2533+c54.203**", "The apposition here read … until r2533+c54.203", "This paragraph read
+\`\`co-equal real forms …'' until r2540+c54.204", "the citation here named the wrong receipt until r2540+c54.204".*
+⇒ ***Seven of them, and in every case the physics was the clause AFTER the colon.*** *The notice went; what it
+established stayed — "The group theory does privilege one, and says so on dimension alone".*
+
+**⇒⇒ THE CAMPAIGN, IN FULL:** *· **P8** a theorem's generalisation rehomed beside the theorem · **P14** a third
+$D=4$ argument rehomed from "scope" to the count · **P16** a result rewritten from a debt discharged into a result ·
+**P7** 8,638 characters of record moved to `CONSOLIDATE`, one physics clause rescued upstream first · **P15** four
+new subsections for orphaned results, then **fourteen clause replacements** taking `sec:refit-bound` from **57,451
+to 48,578 characters and 16 narrating paragraphs to zero** · **corpus-wide** sixteen tenses and seven notices.*
+
+***32/32 receipts still bound · `check_revleak` drained 29 → 22 · dependency matrix matching in both copies ·
+`check_compile` green.***
+
+**⚠ AND THE TWO NARRATIONS LEFT ARE CORRECT, WHICH IS THE OTHER HALF OF THE RULE.** *P7's **"it opened at seven and
+stands at four"** is a frontier list telling a reader what to work — ***which P7 itself says is what a frontier list
+is for***.
+⇒ ***A rule applied without its exception is a different rule. "Remove the paper's past" would have deleted the one
+place the past belongs.***
+
+⌗ ***Every paper is now a map of its present state. Not one result was lost, and the whole record of how the horizon
+moved is in `CONSOLIDATE` where a reader can find it.*** *`L-537` struck.*
+
 ### Revision r2590 — 2026-08-11 (main line). **STEP ⓷b DONE — `sec:refit-bound` is at ZERO paper-past paragraphs, and not one result moved.**
 
 ***57,451 → 48,578 characters · 16 → 0 narrating paragraphs · 32 of 32 receipts bound · `check_revleak`'s baseline
