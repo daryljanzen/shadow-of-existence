@@ -1,7 +1,7 @@
 ---
 name: kill-PO-7
 kind: KILL-RECEIPT
-current: r2570+c54.206
+current: r2599+c54.207
 description: Kill receipt for PO-7 — the acoustic disagreement against the sky. Route ② of PROTECTED_OPEN's exit procedure: object named, four checks answered. Awaits authorisation.
 sources: [chat]
 ---
@@ -185,6 +185,35 @@ returns.*
 
 ⇒⇒ ***SO ROUTE ②'s WORK IS DONE: the object is named, the four checks are written, three pass outright,
 and the fourth cleared when the calculation it called for was run.***
+
+## ⛔⛔⛭ CORRECTED r2599 — **② DOES NOT CLEAR, AND THIS RECEIPT WAS NOT ASKING FOR AUTHORISATION**
+
+*Daryl, r2599: **"I don't understand the question that's being asked of me … why is the decision not logically
+reachable to state for reversal through the decision-making infrastructure you have available?"***
+⇒ ⛔ ***Because there is no decision. This line manufactured one, and the receipt says so in its own words.***
+
+**⌗ CHECK ② ASKS: "what would have to be true for the item to stay open."** *Three routes were named at r2552.
+**All three that a CALCULATION could settle are shut** — ⓵ by `L-805`, ⓶ by A10, ⓷ from the massive side by A2.*
+⇒ ⚠ ***But this receipt's own closing line states what ⓷ leaves: "what remains of ⓷ is a PROGENITOR derivation of
+the datum's phase — not a dynamical one — and that is not an instrument question."***
+⇒⇒ ***A progenitor derivation of `CRPHI` landing off $\{0,\pi\}$ is exactly route ⓷. It is live. So something
+WOULD have to be true for the item to stay open, and it is — which means ② DOES NOT CLEAR.***
+
+**⌗ AND THE RECEIPT CONTRADICTED ITSELF FOR TWENTY-NINE REVISIONS.** *The r2570 block says "all three computational
+inversion routes are now shut"; **1,585 characters later the r2559 text still reads "②'s other two routes remain
+open."*** *Both were in the file, and this line read the first and reported a completed receipt.*
+⇒ ***The same failure the open ledger was built for — a claim advertised at one state while another part of the
+same document holds the other — occurring inside the instrument that exists to prevent premature closure.***
+
+**⇒ SO THE STATE OF `PO-7` IS: ① passes · ③ finds the prices asymmetric · ④ clears · ⑤ passes ·
+⛔ ② DOES NOT CLEAR, on route ⓷.**
+⌗ ***And ⓷'s route has a home: `PO-seam`'s dark half is the progenitor derivation of the seam datum's phase. The
+two items are one question, which r2586 recorded and this receipt did not act on.***
+
+⚠ ***NOTHING IS OWED BY DARYL HERE. The row stays open because its own inversion check says it stays open, and it
+will be askable when the progenitor derivation exists or is shown impossible.***
+
+---
 
 **⌗ AND THE PROCEDURE'S NEXT STEP IS NOT A NODE'S.** *`PROTECTED_OPEN`: "② Its object is named, all four
 checks are written into a kill receipt under `kills/`, **and Daryl authorises**." `F5` forbids a node

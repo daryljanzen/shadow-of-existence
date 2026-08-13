@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2599 — 2026-08-11 (main line). **THERE WAS NO DECISION — `PO-7`'s ② does not clear, and this line manufactured a pending authorisation for forty revisions.**
+
+**⌗ THE QUESTION THAT FOUND IT.** *Daryl: "I don't understand the question that's being asked of me … why is the
+decision not logically reachable to state for reversal through the decision-making infrastructure you have
+available?"*
+⇒ ⛔ ***Because there is no decision.***
+
+**⌗ CHECK ② ASKS: "what would have to be true for the item to stay open."** *And `kills/PO-7.md`'s **own closing
+line** answers it: **"what remains of ⓷ is a PROGENITOR derivation of the datum's phase — not a dynamical one — and
+that is not an instrument question."***
+⇒⇒ ***A progenitor derivation of `CRPHI` landing off $\{0,\pi\}$ IS route ⓷. It is live. So ② does not clear, and
+the row stays open by its own inversion check.***
+
+**⛔ AND THE RECEIPT CONTRADICTED ITSELF IN ONE FILE.** *The r2570 block reads "all three computational inversion
+routes are now shut"; **1,585 characters later the r2559 text still reads "②'s other two routes remain open."***
+⇒ ***The exact failure the open ledger exists to prevent — a claim advertised at one state while another part of the
+same document holds the other — occurring INSIDE the instrument built to prevent premature closure.***
+
+**⛭ THE RULE:** ***when a procedure's last step is "and a human decides", state WHAT THE DECISION IS in the same
+breath. If you cannot say what would change, there is no decision — you are asking someone to ratify your reading,
+which is the opposite of what the procedure is for.***
+⚠ **AND THE SECOND, WHICH DARYL NAMED:** ***never say "yours" without laying the item in front of him right then. A
+decision named but not presented is a decision left languishing*** *— and this was forty revisions of that, to a
+decision that did not exist.*
+
+⌗ *And ⓷'s route already had a home: **`PO-seam`'s dark half IS the progenitor derivation**, recorded at r2586 and
+not acted on. **The connection was in the file and the receipt did not use it.*** *Receipt and register row both
+corrected.*
+
 ### Revision r2598 — 2026-08-11 (main line). **18 → 8 unverdicted, and a new verdict class: `DISCOVERABLE-PROOF`.**
 
 **⛭ THE CLASS THE READING FORCED.** *P4: **"no derivation producing $\{0,1,2\}$ from a single condition has been
