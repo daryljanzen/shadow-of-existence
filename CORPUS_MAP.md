@@ -146,6 +146,42 @@ sources: [cowork, chat]
 
 
 
+### Revision r2570 — 2026-08-11 (main line). **cc54's FOUR DISPATCH ITEMS MERGED — `PO-seam`'s dark half answered, the quartic absorbed, and all three of `PO-7`'s computational inversions shut.**
+
+**⛭⛭⛭ A2 · DOES A MASSIVE MODE FREEZE? — YES, FOR ANY MASS.** *The mass enters the mode equation as $m^2a^2$, and
+**the branch point $a\to0$ annihilates it while $\lvert aH\rvert$ diverges**, so $\omega/\lvert aH\rvert\to0$
+**independent of $m$** — identical to the digit at $m=0$ and $m=10^5$.*
+⇒ ***So a massive trajectory carries NO phase by failing to freeze. `PO-seam`'s dark half — "whether a MASSIVE
+trajectory carries a phase" — is ANSWERED, and what stays dark is narrower: a PROGENITOR derivation, not a dynamical
+one, since no trajectory of any mass carries a phase through the crossing.***
+
+**⛭⛭ A7 · IS THE QUARTIC ABSORBED? — YES, AND p0 ALREADY HELD THE MECHANISM.** *The one-loop quartic
+$\Lambda_c^4/16\pi^2$ is a **mass- and field-independent constant vacuum energy**, and p0 absorbs a constant vacuum
+energy into **the one curvature $\Lambda$** — the $\Lambda r^2/3$ term, with **no bare-$\Lambda$-versus-vacuum
+split**.*
+⇒ ***Its counterterm IS the one constant: one dimensionful constant regulates the quartic.*** ⚠ *The sub-leading
+tower is the deeper `PO-6` question, **flagged and not claimed**.*
+
+**⌗ A10 · THE DRIVEN-ESTIMATOR TEST — IT RECOVERS.** *Injected combs under **six envelopes spanning the CR-vs-control
+transfer differences by ≫ the actual 8%**: $\phi_{\rm out}-\phi_{\rm in}<0.005$, envelope-spread $<0.006$.* ⇒ ***The
+estimator reads the phase, not the transfer.***
+**⌗ A9 · THE NARIAI EXTENSION — YES.** *$dS_2\times S^2$ with both radii $r_n=\alpha/\sqrt3=1/\sqrt\Lambda$ is the
+leading term; off the degenerate member the horizons split as $r_n\pm\epsilon$ with $\epsilon\propto\sqrt{M_N-M}$.*
+⇒ ***The expansion parameter is named: the HORIZON SEPARATION.***
+
+**⇒⇒ AND ALL THREE OF `kills/PO-7.md`'s COMPUTATIONAL INVERSION ROUTES ARE NOW SHUT** *— ⓵ by `L-805`, ⓶ by A10,
+⓷ from the massive side by A2.* ⇒ ***What remains of ⓷ is a progenitor derivation of the datum's phase, which is not
+an instrument question. The 0.408 hardens.***
+
+**⛔ AND A RECORD-KEEPING FAILURE SURFACED AND IS FIXED.** *`check_absorption` fired: **c54.202 through c54.206 were
+never in the declared record**. Each was "recorded" at the time, but every insert **anchored on my own previous
+insert** rather than on the table the gate reads — and `ABSORPTION.md` has more than one table.*
+⇒ ***An insert anchored on your own previous insert compounds: if the first went to the wrong place, every later one
+follows it there, and the count of correct-looking writes tells you nothing.*** *All six rows restored.*
+⌗ *And the merge made it worse: taking `ABSORPTION.md` `--theirs` **dropped even the rows that had landed
+correctly** — r2539's lesson applied to a **hand-maintained** file, where the cost is deleted records rather than
+stale prose.*
+
 ### Revision r2569 — 2026-08-11 (main line). **A14's BLOCKER IS NOT PANDOC — the corpus is a network, not a sequence, and the graph says so exactly.**
 
 **⌗ A14 WAS HELD as "publishing, no physics — an afternoon whenever."** ⇒ ⛔ ***It is not, and the reason is not the

@@ -1,7 +1,7 @@
 ---
 name: absorption
 kind: SOURCE
-current: r2550+c54.205
+current: r2570+c54.206
 job: The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced.
 sources: [chat]
 ---
@@ -54,7 +54,7 @@ sources: [chat]
 >
 > *Cleared at r2462 for c54.186 and kept current since. A revision neither absorbed nor declared in flight still FAILS, so the gate keeps its teeth.*
 
-IN-FLIGHT: c54.206
+IN-FLIGHT: (none — c54.206 and cc54 L-806…L-809 absorbed at r2570)
 
 | fork revision | absorbed at | date |
 |---|---|---|
@@ -84,7 +84,14 @@ IN-FLIGHT: c54.206
 | c54.199 | r2512 | 2026-08-11 | *by git bundle; **two objects one word** — the optical shear is not the ADM shear* |
 | c54.200 | r2516 | 2026-08-11 | *by git bundle; item 43 worked in — the acoustic phase moves a third over the admissible phases* |
 | c54.201 | r2516 | 2026-08-11 | ⛭ *same bundle; **both r2512 holes gated**, incl. `check_conflict_markers` — a marker in a `.md` no compiler reads* |
+| c54.202 | r2527 | 2026-08-11 | ⛭⛭ *by git bundle; **item 47 — the Unruh treatment**: the sorting table, $T(a)=\sqrt{H^2+a^2}/2\pi$, and $\kappa=0$ at Nariai* |
+| c54.203 | r2539 | 2026-08-11 | ⛭⛭⛭ *by git bundle; **item 48 — the Higgs join is an IDENTITY** ($2M=r_0-r_0^3$ is odd), items 19/20/22 applied, and **nine p0 receipts found invisible to two filters*** |
+| c54.204 | r2544 | 2026-08-11 | ⛭⛭ *by git bundle; **item 53 — the baby universe NAMED with its falsifier**, items 25/28/32 applied, and **this line's AMPS miscount routed back rather than adopted*** |
+| c54.205 | r2548 | 2026-08-11 | ⛭⛭ *by git bundle; **items 54 and 55** — the exponential-vs-power-law mechanism, and the $\nu_R$ wall **gated as a fail condition** rather than left in prose* |
+| c54.206 | r2555 | 2026-08-11 | ⛭⛭ *by git bundle; **item 56 applied and cc54's number reproduced to the digit**, plus **the namespace-lint property written once rather than as three slips*** |
+| cc54 L-806…L-809 | r2570 | 2026-08-11 | ⛭⛭⛭ *by BRANCH; **all four dispatch items** — massive freezing at any $m$, the driven estimator, the Nariai extension, and **the quartic absorbed into the one constant*** |
 | cc54 | r2516 | 2026-08-11 | ⛭⛭ **by BRANCH, named in `FOR_56` as the mechanism asks — the arc-pin coupling found by a full run** |
+| cc54 L-806…L-809 | r2570 | 2026-08-11 | ⛭⛭⛭ *by BRANCH; **all four dispatch items** — massive freezing at any $m$, the driven estimator, the Nariai extension, and **the quartic absorbed into the one constant*** |
 
 ## What each absorption cost, so the next one is planned rather than discovered
 

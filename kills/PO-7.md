@@ -1,7 +1,7 @@
 ---
 name: kill-PO-7
 kind: KILL-RECEIPT
-current: r2559+c54.206
+current: r2570+c54.206
 description: Kill receipt for PO-7 — the acoustic disagreement against the sky. Route ② of PROTECTED_OPEN's exit procedure: object named, four checks answered. Awaits authorisation.
 sources: [chat]
 ---
@@ -150,6 +150,24 @@ does not move with the fitted parameter: **the intercept shifts by three per cen
 exists for.***
 
 ---
+
+> ### ⛭⛭⛭ ALL THREE COMPUTATIONAL INVERSION ROUTES ARE NOW SHUT — r2570 + cc54
+>
+> *②'s three routes were named at r2552 as what would keep the row open. **All three that a calculation
+> could settle are closed:***
+> *· **⓵ a third admissible phase** → ***closed by `L-805`***: every multipole 28–2475 freezes and
+> $c_sk/\lvert aH\rvert\to0$ at the crossing;*
+> *· **⓶ estimator bias from the arm's own construction** → ***closed by A10***: injected combs under
+> **six envelopes spanning the transfer differences by ≫ the actual 8%** give
+> $\phi_{\rm out}-\phi_{\rm in}<0.005$, envelope-spread $<0.006$. ***The estimator reads the phase, not
+> the transfer.***
+> *· **⓷ a derivation of `CRPHI` landing off $\{0,\pi\}$** → ***closed from the massive side by A2***:
+> $m$ enters as $m^2a^2$, the branch point annihilates it while $\lvert aH\rvert$ diverges, so
+> $\omega/\lvert aH\rvert\to0$ **independent of $m$**. ***No trajectory of any mass carries a phase by
+> failing to freeze.***
+>
+> ⇒⇒ ***So what remains of ⓷ is a PROGENITOR derivation of the datum's phase — not a dynamical one —
+> and that is not an instrument question. The 0.408 HARDENS.***
 
 # ⌗ WHAT THIS RECEIPT CONCLUDES — **rewritten r2559, and the conclusion has changed**
 

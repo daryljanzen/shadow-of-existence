@@ -49,10 +49,10 @@ content is already established. **54's instrument is the papers.***
 
 | tag | the work | kind |
 |---|---|---|
-| **A2** | `PO-seam` · ***does a MASSIVE mode freeze?*** — the `L-805` computation with a massive dispersion relation: is $\omega/\lvert aH\rvert\to0$ at the crossing? ***It need not be.*** ⛭ **This is also `PO-7`'s inversion ⓷** | run |
-| **A9** | `PO-6`(c) · ***does the Nariai closed form extend off the degenerate member*** as a series in $M-M_N$? $dS_2\times S^2$ is exactly solvable and the corpus already uses it | calc |
-| **A10** | `PO-7` ⓶ · ***test the estimator on a DRIVEN synthetic spectrum with a known asymptotic phase*** — the undriven arms agree to **0.013**, but the driven case is where the disagreement lives | run |
-| **A7** | `PO-6`(a) · ***one-loop on the compactified substrate: is the quartic divergence absorbed by the geometry, or does it need a counterterm the framework cannot supply?*** | calc |
+| ~~**A2**~~ | ✔ ***DONE r2570 — YES, for any mass.*** $m$ enters as $m^2a^2$ and the branch point annihilates it while $|aH|$ diverges: $\omega/|aH|\to0$ **independent of $m$**. ⇒ ***A massive trajectory carries NO phase by failing to freeze — `PO-7` ⓷ closed from the massive side, and `PO-seam`'s dark half ANSWERED.*** | run |
+| ~~**A9**~~ | ✔ ***DONE r2570 — YES.*** $dS_2\times S^2$ with both radii $r_n=\alpha/\sqrt3=1/\sqrt\Lambda$ is the leading term; off the degenerate member the horizons split as $r_n\pm\epsilon$ with $\epsilon\propto\sqrt{M_N-M}$. ⇒ ***The expansion parameter is named: the HORIZON SEPARATION.*** | calc |
+| ~~**A10**~~ | ✔ ***DONE r2570 — the estimator RECOVERS.*** Six envelopes spanning the transfer differences by ≫ the actual 8%: $\phi_{\rm out}-\phi_{\rm in}<0.005$, envelope-spread $<0.006$. ⇒ ***It reads the phase, not the transfer — inversion ⓶ closed and the 0.408 HARDENS.*** | run |
+| ~~**A7**~~ | ✔ ***DONE r2570 — YES, and p0 already held the mechanism.*** The one-loop quartic is a **constant vacuum energy**, and p0 absorbs a constant vacuum energy into the one curvature $\Lambda$ with **no bare-vs-vacuum split**. ⇒ ***Its counterterm IS the one constant. The sub-leading tower is flagged, not claimed.*** | calc |
 
 ⌗ **Why these:** *all four need an instrument — `camb`, the two-arm code, or a real expansion.
 **cc54's instrument is computation**, and A2 and A10 both bear directly on the one open verdict.*
