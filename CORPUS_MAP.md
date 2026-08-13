@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r2585 — 2026-08-11 (main line). **REHOMING PASS 5 — P7's story-move, and the paper had already done half the separation itself.**
+
+**⌗ P7 STATED THE PRINCIPLE BEFORE THIS CAMPAIGN DID.** *"a frontier list is a map of where the work is, and **an
+item that has been answered is no longer part of that map**" — and it had already split the physics from the
+record: **"The detail belongs to §`sec:lift-initial-rate` and is not repeated; what follows is the account as the
+frontier item carried it, kept because the item's own framing … is the record of how the question closed."***
+⇒ ***It named its own content as the RECORD. So the account moved to `CONSOLIDATE` — intact, 8,638 characters.***
+
+**⚠ AND ONE THING WAS REHOMED UPSTREAM FIRST, because a story-move is only safe after the physics in it is found.**
+*Checked: **`0.78899` and the Euclidean null were already upstream**; the clause that **the lap is the portion of
+history the $dS_4$ background represents on a single minimal $S^3$ at the throat** — and is therefore ***the region
+in which the background's null rulings, and the synchronous reading built on the second ruling, are not available
+as they are on the horns*** — was **not**. Moved into `sec:lift-initial-rate`.*
+
+⌗ **P7's below-the-list content: 11,344 → 3,264 characters.** *Net **−8,095** from the paper and **+10,263** to
+`CONSOLIDATE`.* ⇒ ***Nothing lost, and the growth is where the record belongs.***
+
+⌗ *The move tripped `check_depmatrix` — P7's citation counts fell by two — **in the `\textbf`-wrapped row that
+c54.206 reported its own patch script silently skipping**. ***The same row, found again from the other side.***
+Both copies updated.*
+
+⇒ ***Four papers rehomed, one story-moved. Only `CR_cosmology`'s `sec:refit-bound` remains — 57 KB, 59% narration,
+and it needs its own planned campaign.***
+
 ### Revision r2584 — 2026-08-11 (main line). **PASS 4 SCOPED — a physics section written as a lab notebook, and the mechanical half gated.**
 
 **⛔⛔ THE FINDING.** *The campaign's first three passes were **one misplaced paragraph each**. `CR_cosmology`'s

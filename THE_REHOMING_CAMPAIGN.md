@@ -38,6 +38,28 @@ thing" — and a smaller, diminished section: "this is what we still don't know.
 
 ---
 
+## ✔✔ PASS 5 DONE — `CR_framework` (P7)'s story-move, r2585. **The paper had already done half the separation itself.**
+
+**⌗ P7 STATED THE PRINCIPLE BEFORE WE DID.** *"a frontier list is a map of where the work is, and **an item that has
+been answered is no longer part of that map**" — and: **"The detail belongs to §`sec:lift-initial-rate` and is not
+repeated; what follows is the account as the frontier item carried it, kept because the item's own framing … is the
+record of how the question closed."***
+⇒ ***It named its own content as the RECORD. So the account moved to `CONSOLIDATE` — intact, 8,638 characters.***
+
+**⚠ AND ONE THING WAS REHOMED UPSTREAM FIRST, because a story-move is only safe after the physics in it is found.**
+*Checked: **`0.78899` and the Euclidean null were already upstream**; the clause that **the lap is the portion of
+history the $dS_4$ background represents on a single minimal $S^3$ at the throat** — and is therefore ***the region
+where the null rulings and the synchronous reading are not available as they are on the horns*** — was **not**.
+Moved into `sec:lift-initial-rate`.*
+
+⌗ **P7's below-the-list content: 11,344 → 3,264 characters.** *Net **−8,095** from the paper, **+10,263** to
+`CONSOLIDATE` (the account plus its framing).* ⇒ ***Nothing lost, and the growth is where the record belongs.***
+
+⌗ *And the move tripped `check_depmatrix` — P7's citation counts fell by two — **in the `\textbf`-wrapped row that
+c54.206 reported its own patch script skipping**. Both copies updated by hand.*
+
+---
+
 ## ⛔⛔⛭ PASS 4 SCOPED, NOT DONE — `CR_cosmology`, and it is a different animal
 
 **⌗ WHAT THE FIRST THREE PASSES WERE:** *one misplaced paragraph each, rehomed in a turn.*
