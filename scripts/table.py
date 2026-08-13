@@ -65,6 +65,32 @@ def main():
         print(f'    ⛔ {x["id"]:<9} {x["what"][:58]}')
     for x in dp:
         print(f'    ⛔ {x["id"]:<9} (L-218)')
+    # ** ---- THE CHART, added r2622 ---- **
+    # ** Daryl: "I expect the whole deal will end up working like a weight loss chart ... If it were to
+    # go down at a REGULAR RATE we should be wary of that." **
+    #   ⇒ *** A real diagnostic: a smooth linear decline means the number is being MANAGED rather than
+    #       measured.  The healthy shape is big early drops, PLATEAUS while genuine work is done, and
+    #       UPTICKS when a correction adds a real item. ***
+    hp = os.path.join(ROOT, 'TABLE_HISTORY.txt')
+    if os.path.exists(hp):
+        rows = [l.split() for l in open(hp, encoding='utf-8')
+                if l.strip() and not l.startswith('#')]
+        pts = [(r[0], int(r[1])) for r in rows]
+        print('  THE CHART -- the table over time')
+        top = max(n for _, n in pts)
+        for rev, n in pts:
+            print(f'    {rev}  {n:>3}  {chr(9608) * n}')
+        deltas = [b - a for (_, a), (_, b) in zip(pts, pts[1:])]
+        if len(deltas) >= 3:
+            uniform = len(set(deltas[-3:])) == 1 and deltas[-1] != 0
+            print()
+            print(f'    deltas: {deltas}')
+            if uniform:
+                print('    ⚠ ** THE LAST THREE MOVES ARE IDENTICAL.  A regular rate means the number is')
+                print('      being MANAGED, not measured. **')
+            else:
+                print('    ⌗ ** irregular -- drops, plateaus and upticks.  That is the healthy shape. **')
+        print()
     print()
     return 0
 

@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2622 — 2026-08-11 (main line). **`TABLE_HISTORY.txt` — the weight-loss chart, and a smooth decline is the warning sign.**
+
+**⌗ THE DIAGNOSTIC, AND IT IS ONE RATHER THAN AN ANALOGY.** *"If it were to go down at a regular rate we should be
+wary of that. Experience suggests something more like a healthy weight loss chart."*
+⇒ ***A smooth linear decline means the number is being MANAGED rather than measured — a node shaving one item per
+turn to show progress. The healthy shape is big early drops as bloat comes off, PLATEAUS while genuine work is done,
+and UPTICKS when a correction or a discovery adds a real item.***
+
+**⛭ AND WE ALREADY HAVE THAT SHAPE:**
+
+    r2615  34   the queue is first assembled -- five sources, nothing deduped
+    r2616  32   PO-8 struck (authorised r2378, held 238 revisions)
+    r2618  27   five ledger entries deduped
+    r2621  28   ONE dedupe reversed -- the compact-face sector is a second object
+
+⇒ ***`[-2, -5, +1]` — irregular, and the **uptick** is the signature that the number is measured rather than
+steered.***
+
+**✔ `TABLE_HISTORY.txt`** — *appended each turn the table moves, **never rewritten**; `table.py` prints the chart and
+**warns when the last three deltas are identical**.*
+
+⚠ **AND THE HONEST LIMIT, WRITTEN INTO THE FILE:** *`queue.py` was built at **r2615**, so **nothing before it was
+counted**. ***The chart starts where the instrument does, and saying so is better than reconstructing numbers nobody
+measured.***
+
+**⛭ THE RULE:** ***a progress number needs a SHAPE you expect, not just a direction. Without one, any monotone
+series looks like success — and the series most likely to be monotone is the one being produced rather than
+observed.***
+
 ### Revision r2621 — 2026-08-11 (main line). **TWO unbuilt fermion sectors, not one — r2618's dedupe was wrong, and the table goes 27 → 28.**
 
 **⛔ THE CORRECTION.** *r2618 collapsed three `NAMED-UNBUILT` entries onto `PO-11` and reported **32 → 27** as pure

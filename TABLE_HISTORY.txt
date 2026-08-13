@@ -1,0 +1,23 @@
+# THE TABLE OVER TIME -- the weight-loss chart.
+#
+# ** WHY THIS FILE.  r2622, Daryl: ** "I expect the whole deal will end up working like a weight loss
+# chart.  That would be a sign of it working -- and working right ... The big gains due to bloating right
+# at the start and all the plateaus and such.  ** If it were to go down at a regular rate we should be
+# wary of that. **  Experience suggests something more like a healthy weight loss chart."
+#
+#   ⇒ *** And that is a real diagnostic rather than an analogy.  A smooth linear decline would mean the
+#       number is being MANAGED rather than measured -- a node shaving one item per turn to show
+#       progress.  The healthy shape is: big early drops as bloat comes off, PLATEAUS while genuine work
+#       is done, and UPTICKS when a correction or a discovery adds a real item. ***
+#
+# ** FORMAT: ** revision, table count, dark halves answered, one-line reason.
+# ** Appended each turn the table moves.  Never rewritten. **
+#
+# ⚠ ** The first four rows are the only history that exists: ** `queue.py` was built at r2615, so
+# nothing before it was counted.  *** The chart starts where the instrument does, and saying so is
+# better than reconstructing numbers nobody measured. ***
+
+r2615  34  2/4  the queue is first assembled and printed -- five sources, nothing deduped
+r2616  32  2/4  PO-8 struck (authorised at r2378, held 238 revisions); answered dark halves no longer double-counted
+r2618  27  2/4  five ledger entries deduped -- three onto PO-11, two the same traced statement twice
+r2621  28  2/4  ONE dedupe reversed: the compact-face sector is a second unbuilt object, not PO-11's
