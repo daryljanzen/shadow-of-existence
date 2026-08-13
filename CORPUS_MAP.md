@@ -146,6 +146,27 @@ sources: [cowork, chat]
 
 
 
+### Revision r2646 — 2026-08-11 (main line). **`PO-12` GATES BOTH of `PO-10`'s runs — and the obvious route would have answered one item by assuming the other.**
+
+**⛔ THE TRAP.** *`PO-10` owes the odd/even height pattern and $R_b=0.60$ is computed, so the textbook ratios follow
+at once: **3.50 / 4.00 / 3.06**.*
+⇒ ***And those are $\Lambda$CDM peak-height formulae. They assume a transfer from the primordial spectrum to the
+observed $C_\ell$ — which is exactly `PO-12`, "a genuine build, not a plug-in … a bespoke transfer against that
+specification".***
+⇒⇒ ***Producing the pattern that way would have answered `PO-10` by ASSUMING `PO-12`, and the numbers would have
+looked right because they ARE right — for $\Lambda$CDM.***
+
+**⌗ AND THE SAME GATE HOLDS THE OTHER HALF:** *a full-spectrum likelihood comparison is a comparison of $C_\ell$
+spectra, and $C_\ell$ is what a transfer produces.*
+⇒ ***So `PO-12` gates BOTH runs — not by convention, but by what the quantities are. Neither row said so.***
+
+**⛭ THE RULE:** ***when a formula from the standard framework fits an open item, ask what it ASSUMES before using
+it. A borrowed formula carries the borrowed framework's structure — and the sign that you have imported one is that
+the open item stops being open without anything having been built.***
+
+⌗ *The ranking moved on it: **`PO-12` is now #1**. Its step ① is already computed (`sec:envelope`), so ***the gate
+is one step deep and one computation unblocks two runs.***
+
 ### Revision r2645 — 2026-08-11 (main line). **`PO-3` IS ANSWERED — both clauses, and both were already in its own row.**
 
 **⌗ THE OBJECT HAS TWO CLAUSES:** *"**why** does the SdS geometry produce a zero-sum triple with a

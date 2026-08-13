@@ -41,7 +41,10 @@ REACH = {'PO-2': 2, 'PO-3': 2, 'PO-4': 3, 'PO-5': 3, 'PO-6': 3, 'PO-7': 2, 'PO-8
 #       it says nothing about whether the work can START. ***
 #   ⌗ ** So the rank is (workable, convergence, reach × grounded) ** -- and a gated item is listed with
 #   its gate named, below everything that can actually be picked up.
-GATED_BY = {'PO-7': 'PO-seam (its route 3 IS the progenitor derivation)'}
+GATED_BY = {'PO-7': 'PO-seam (its route 3 IS the progenitor derivation)',
+            # ** r2646: both of PO-10's halves are statements about C_l, and C_l is what a transfer
+            # produces.  PO-12 step (2) unblocks them both. **
+            'PO-10': 'PO-12 step 2 (both halves are statements about C_l)'}
 
 CONVERGES = {
     # ** r2605: the mod-2 route is CLOSED (the involution is quaternionic).  What replaces it -- the
@@ -51,7 +54,7 @@ CONVERGES = {
     'PO-5': ('object delivered r2609; what remains is the COUPLING, which converges with nothing yet', 1),
     'PO-7': ('gated by PO-seam: its route 3 IS the progenitor derivation', 2),
     'PO-6': ('L-207 B-2 unlocks here', 2),
-    'PO-12': ('the transfer is what makes the 8% signature confrontable', 2),
+    'PO-12': ('step 2 unblocks BOTH of PO-10s runs; step 1 already computed', 3),
 }
 
 
