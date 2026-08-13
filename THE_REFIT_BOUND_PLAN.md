@@ -1,7 +1,7 @@
 ---
 name: the-refit-bound-plan
 kind: PLAN
-current: r2586+c54.207
+current: r2587+c54.207
 description: THE sec:refit-bound PLAN — 46 paragraphs, 57 KB, 59% narration, chronologically interleaved. Why it cannot go paragraph-by-paragraph, what the present state actually is, and the order of operations that keeps it lossless. Written r2586.
 sources: [chat]
 ---
@@ -73,6 +73,41 @@ surviving claims listed beside them.** ***The paper is untouched. Every later st
 claim it binds**, because the rewritten section must keep each receipt attached to the claim it checks.*
 ⇒ *`check_receipts` and `check_loci` will catch a dropped binding — **but only if the claim survives**; a claim
 deleted with its receipt fails nothing.* ⚠ ***That is the failure mode this step exists to prevent.***
+
+## ⛔⛔⛭ STEP ⓸ FIRED ON STEP ⓷'s DRAFT — r2587, and this is the plan working
+
+**⌗ WHAT HAPPENED.** *A present-state section was written from the six claims: **9 paragraphs, 18 receipts**, down
+from 46 paragraphs and 32.*
+⇒ ⛔ ***The receipt diff found FOURTEEN dropped, and of those ELEVEN bind LIVE results the draft simply left out***
+*— the ISW displacement of the maximum, the reabsorption residual the densities cannot absorb, lensing derived on
+the control arm, the residual decomposed by template, the shear coefficient derived, reionisation as a constant
+screening above $\ell\simeq40$, the Peebles-equation cross-check, the $p_1/p_2$ scan, the error budget on the
+acoustic angle, "the acoustics work and the phase is the whole disagreement", and the admissible-band correction.*
+*(Two were genuinely withdrawn claims; one appears elsewhere in P15.)*
+
+**⇒⇒ THE DRAFT WAS NOT INSTALLED.** *It is parked at `_dig/refit_bound_draft_r2587.tex`.*
+⌗ ***Step ⓶ existed precisely for this: a claim deleted with its receipt fails nothing, so no gate would have caught
+it. The inventory did.***
+
+**⛭⛭ AND THE REASON THOSE ELEVEN EXIST IS THE CAMPAIGN'S OWN PRINCIPLE, ONE LEVEL DOWN.** *Checked against P15's
+section list: **no section hosts any of them**. The candidates — `The acoustic scale and the dissolved tensions`,
+`The collapse-phase driving envelope`, `What the envelope buys` — cover none.*
+⇒ ***`sec:refit-bound` is not one section carrying narration. It is a NOTEBOOK holding results that never got
+sections of their own — ISW, reionisation, lensing, the error budget, the Peebles check are separate findings parked
+where the work happened.***
+
+**⇒ SO STEP ⓷ IS NOT "WRITE THE SECTION". IT IS TWO STEPS:**
+*· **⓷a** — ***give the eleven orphaned results their own homes***, which means new subsections in P15 or rehoming
+into existing ones. **That is a structural edit to the paper, not a rewrite of one section.***
+*· **⓷b** — *then* write the present-state `sec:refit-bound` from the six claims that are actually about the refit
+bound.*
+
+⚠ ***And this is the second time in the campaign that the honest move was to stop at the finding rather than push
+the edit*** *(the first was pass 4's scoping). **Both times the thing that would have been lost was content, and
+both times the stopping rule was the same: name the job's real shape and do not attempt it in the turn that
+discovered it.***
+
+---
 
 **⓷ WRITE THE PRESENT-STATE SECTION FRESH.** *From the six claims above, in logical rather than chronological
 order: **what the instrument measures, what it finds, what the finding means, what remains open**.*

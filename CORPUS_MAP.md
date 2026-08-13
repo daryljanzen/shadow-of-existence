@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2587 — 2026-08-11 (main line). **STEP ⓸ FIRED ON STEP ⓷'s DRAFT — it caught this line losing eleven live results, and no gate would have.**
+
+**⌗ WHAT HAPPENED.** *A present-state `sec:refit-bound` was written from the six surviving claims: **9 paragraphs,
+18 receipts**, down from 46 and 32. **It read well.***
+⇒ ⛔ ***The step-⓸ receipt diff found FOURTEEN dropped, and ELEVEN of those bind LIVE results the draft simply left
+out*** *— the ISW displacement of the maximum, the reabsorption residual the densities cannot absorb, lensing
+derived on the control arm, the residual decomposed by template, the shear coefficient derived, reionisation as a
+constant screening above $\ell\simeq40$, the Peebles-equation cross-check, the $p_1/p_2$ scan, the error budget on
+the acoustic angle, and two more.* *(Two were genuinely withdrawn; one appears elsewhere.)*
+
+**⌗ AND WHY NO GATE WOULD HAVE CAUGHT IT IS EXACT.** ***`check_receipts` verifies that a receipt CITED by a claim
+resolves. A claim DELETED WITH ITS RECEIPT cites nothing and fails nothing.*** *The inventory was written for that
+failure mode at r2586 and is the only thing that fired.*
+⇒ **The draft is parked at `_dig/refit_bound_draft_r2587.tex`. It was not installed.**
+
+**⛭⛭ AND THE FINDING UNDERNEATH IS BIGGER THAN THE SAVE.** *Checked against P15's section list: **no section hosts
+any of the eleven**. The candidates — `The acoustic scale and the dissolved tensions`, `The collapse-phase driving
+envelope`, `What the envelope buys` — cover none.*
+⇒⇒ ***`sec:refit-bound` is not one section carrying narration. It is a NOTEBOOK holding results that never got
+sections of their own: ISW, reionisation, lensing, the error budget and the Peebles check are separate findings
+parked where the work happened.***
+
+**⇒ SO STEP ⓷ SPLITS:** *· **⓷a** give the eleven orphaned results their own homes — **a structural edit to the
+paper, not a rewrite of one section**; · **⓷b** then write the present-state section from the six claims that are
+actually about the refit bound.*
+
+**⛭ THE RULE:** ***when a rewrite drops a citation, ask whether the CLAIM went with it. A shrinking section that
+still passes every gate is exactly what content loss looks like from the inside.***
+⚠ *Second time this campaign the honest move was to stop at the finding rather than push the edit. ***Both times the
+stopping rule was the same: name the job's real shape and do not attempt it in the turn that discovered it.***
+
 ### Revision r2586 — 2026-08-11 (main line). **`sec:refit-bound` PLANNED, and its first two steps done — the 57 KB is copied out BEFORE any edit.**
 
 **⌗ WHY IT IS A REWRITE AND NOT A MOVE.** *Classified paragraph by paragraph: **17 STORY+NUM · 21 RESULT · 8
