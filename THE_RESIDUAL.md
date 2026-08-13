@@ -1,7 +1,7 @@
 ---
 name: the-residual
 kind: PLAN
-current: r2594+c54.207
+current: r2595+c54.207
 description: THE RESIDUAL — the true state of remaining doubt across the corpus, measured from the papers' own epistemic self-declarations rather than from the registers. Eighty-four qualifications, sorted by whether a proof is discoverable. Written r2592.
 sources: [chat]
 ---
@@ -28,6 +28,40 @@ sources: [chat]
 | **RECALLED, not derived** | 1 | 1 |
 
 ⇒ ***84 across the corpus. But the classes are not equally load-bearing, and sorting them is the work.***
+
+---
+
+## ⛭⛭⛭ 66 → 30, AND THE OWED LIST IS SMALLER THAN FOUR — r2595
+
+| verdict | n |
+|---|---|
+| ***UNVERDICTED*** | ***30*** |
+| **DO-NOT-ASSERT** | 19 |
+| **SCOPE-BY-DESIGN** | 16 |
+| **REGISTERED** | 13 |
+| **METHOD-PROSE** | 11 |
+| **SELF-ANSWERED** | 11 |
+| ***NAMED-UNBUILT*** | ***4*** |
+| **OPEN-DOWNSTREAM** | 3 · **STANDARD-PHYSICS** 3 · **STATED-AT-WEIGHT** 2 · **PRECISION** 1 |
+
+**⌗ AND READING THE FOUR `NAMED-UNBUILT` COLLAPSES THEM FURTHER:**
+*· `boundary_paper`: **"the compact-face fermion sector the obstruction would act on remains unbuilt"***
+*· `geometric_core`: **"the full PROPAGATING spinor field sector (the built modes being leaf-bound)"***
+⇒⇒ ***These are the same object seen from two papers. The built modes are leaf-bound; what is unbuilt is the
+propagating sector, and the compact face is where a construction of it would act.***
+*· `boundary_paper`: "the descent onto a spinor sector **is built** as bound leaf-modes: it delivers the …" —
+***which is the same sentence pattern that misled this line five times; it is SELF-ANSWERED in its own clause and
+was mis-bucketed by the trigger.***
+*· `CR_cosmology`: **"a computation this sequence owes and has not yet run"** — the bespoke transfer.*
+
+⇒ ***So the genuinely unbuilt is TWO: the propagating spinor sector, and the bespoke transfer.*** *Plus one
+`PRECISION` item (light-nuclide rates' last percent) and three `OPEN-DOWNSTREAM` (the exact regulated peak, twice,
+and one scalar-spectrum consequence behind it).*
+
+⌗ **AND `137a168c2f` IS THE CONVERGENCE TARGET, NOW RECORDED AS SUCH:** *P14's index-theoretic stability is
+**"stated here at TRACED weight"** — the receipt establishes the mechanism, the Atiyah–Singer statement is traced.*
+⇒ ***That is `PO-5`'s mod-2 question, P14's multiplicity gap, and this traced statement: one calculation, three
+names — and the ledger now says so in the file rather than in a changelog.***
 
 ---
 

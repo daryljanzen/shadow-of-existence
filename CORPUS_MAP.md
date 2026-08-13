@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2595 — 2026-08-11 (main line). **66 → 30 UNVERDICTED, and the genuinely owed list collapses to TWO.**
+
+**⌗ THE VERDICT DISTRIBUTION, after thirty-six reads:** *UNVERDICTED **30** · DO-NOT-ASSERT **19** ·
+SCOPE-BY-DESIGN **16** · REGISTERED **13** · METHOD-PROSE **11** · SELF-ANSWERED **11** · NAMED-UNBUILT **4** ·
+OPEN-DOWNSTREAM **3** · STANDARD-PHYSICS **3** · STATED-AT-WEIGHT **2** · PRECISION **1**.*
+
+**⛭ AND READING THE FOUR `NAMED-UNBUILT` COLLAPSES THEM FURTHER.**
+*· `boundary_paper`'s **"the compact-face fermion sector the obstruction would act on remains unbuilt"** and p0's
+**"the full PROPAGATING spinor field sector (the built modes being leaf-bound)"** are* ***the same object seen from
+two papers***;*
+*· a third is **SELF-ANSWERED in its own clause** — "the descent onto a spinor sector **is built** as bound
+leaf-modes" — and was mis-bucketed by the trigger, ***which is the fifth-time-pattern showing up inside the ledger
+itself***;*
+*· the fourth is `CR_cosmology`'s **"a computation this sequence owes and has not yet run"** — the bespoke
+transfer.*
+
+⇒⇒ ***SO THE GENUINELY UNBUILT IS TWO: the propagating spinor sector, and the bespoke transfer.*** *Plus one
+PRECISION item (light-nuclide rates' last percent) and three OPEN-DOWNSTREAM.*
+
+**⌗ AND THE CONVERGENCE TARGET IS NOW IN THE FILE RATHER THAN A CHANGELOG.** *P14's index-theoretic stability is
+**"stated here at TRACED weight"** — the receipt establishes the mechanism (one mode per wall, the even-crossing
+obstruction, the necessity of the $r=0$ branch point) and marks the Atiyah–Singer statement as traced.*
+⇒ ***That, `PO-5`'s mod-2 question, and P14's multiplicity gap are one calculation under three names.***
+
+⌗ *Also recorded: `boundary_paper`'s orbifold-type route as **DO-NOT-ASSERT** — "reads more openly than a first pass
+had it", held on a stated structural reason; and P13's own sentence **"its one open step, the descent, is built"**,
+which is the correction r2592 made to this file's headline, ***stated by the corpus itself two papers away***.*
+
 ### Revision r2594 — 2026-08-11 (main line). **THE VERDICTING PASS — 66 → 51, and it found a stale "open problem" for something already resolved.**
 
 **⛔ THE FIND.** *P7 said of the Euclidean null: **"what it governs along the lift is not yet worked … is an open
