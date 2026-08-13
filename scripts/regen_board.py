@@ -54,23 +54,6 @@ VEINS = {
 # GROUNDED 0-3: how solid the footing is, INFORMS 0-3: how much a vein would learn). **
 # ** A lead with NO vein links is instrument work.  It is not counted as progress on the map. **
 LEADS = {
- 'L-538': ("\u26ed\u26ed **`THE_RESIDUAL`** \u2014 the corpus's remaining doubt measured from the PAPERS "
-   "rather than the registers: **84 self-declared epistemic qualifications**. \u21d2 Sorted, the "
-   "**discoverable** residual is about **five items, and THREE CONVERGE ON ONE OBJECT** \u2014 the "
-   "$\\mathbb{Z}_2$-graded index: `PO-5`'s mod-2 route, P14's **traced-not-computed** Atiyah\u2013Singer "
-   "statement, and P14's **multiplicity** gap are one question asked three ways. \u26d4 And the largest "
-   "genuinely open thing is **on no register**: p0's *\u201cfull PROPAGATING spinor field sector\u201d*, the "
-   "built modes being leaf-bound",
-   ['L-221'], 3, 2),
- 'L-536': ("\u26d4\u26ed **P7's SCALAR-PERTURBATION FRONTIER HAS A STATED REMAINDER AND IT WAS IN NO "
-   "REGISTER** \u2014 found by testing whether `THE_STATE`'s twelve covered the papers' own frontier "
-   "sections. **18 frontier/open sections across 13 papers**, and P7 keeps its own count honestly "
-   "(**\u201copened at seven and stands at four\u201d**). \u21d2 Of the four, `PROTECTED_OPEN` had taken up "
-   "**three**. \u21d2\u21d2 ***The remainder is two named runs, in P7's own words: the FULL-SPECTRUM "
-   "LIKELIHOOD-LEVEL COMPARISON against flat $\\Lambda$CDM (\u201ca parameter refit rather than a further "
-   "calculation\u201d), and the ODD/EVEN HEIGHT PATTERN (\u201cimprinted by the baryon loading on the "
-   "expansion leg\u201d).*** Registered as **`PO-10`**",
-   ['L-202'], 3, 3),
  'L-171': ("**PO-7** \u2014 \u26ed **NARROWED r2552 by `kills/PO-7.md`**: the four checks are written and "
    "\u2714 **\u2463 CHAIN NOW CLEARS r2559** (cc54 `L-805`) \u2014 the 0.408 rested on four things "
    "reproduced twice and on **P15's freezing argument**, reproduced nowhere; cc54 ran it: **every "

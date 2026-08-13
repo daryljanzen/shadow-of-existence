@@ -1,9 +1,38 @@
 ---
 name: the-weave
 kind: STATE
-current: r2582+c54.207
+current: r2601+c54.207
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
+
+> ## ⛭⛭⛭ AN EIGHTH MECHANISM r2601 — THE VERDICT LEDGER, and what it caught about this line
+>
+> *A grep over the papers finds **123 places** the corpus says a thing is not settled. **Reading them shows
+> most are not gaps.*** ⇒ ***And without a RECORDED verdict per item, that reading has to be redone every
+> time — which is exactly what kept happening: five separate times this session a "gap" dissolved on
+> reading one sentence further, and five times the finding went into a changelog entry instead of a
+> list.***
+>
+> **⌗ THE MECHANISM:** *`corpus/open_ledger.txt` — 123 raw hits → **111 distinct sentences**, each with a
+> verdict **and the reasoning beside it**. `check_open_ledger` fails when a new qualification appears
+> unverdicted, and `--rebuild` re-derives **preserving existing verdicts**.*
+> ⇒ ***Verdicting is the only direction the file moves, and the corpus tells the ledger when something
+> changed rather than the other way round.***
+>
+> **⛭⛭ AND THE BACKLOG HALF IS WHAT MAKES IT AN INSTRUMENT RATHER THAN A LIST.** *An entry verdicted
+> `SELF-ANSWERED` whose text still advertises openness is* ***an item advertised as owed after the work
+> that closed it was done.***
+> ⇒ ⛔ ***It caught FIVE of this line's own verdicts across the pass, twice on the same principle:
+> NARROWING IS NOT CLOSING.*** *"stated at its true size, which is smaller than it was" and "What is open
+> is narrower than that framing suggests" **both narrow and stay open**.*
+> ⌗ ***A gate built to catch stale prose caught stale JUDGEMENT, which is the better catch — and it is the
+> first instrument here that checks the OBSERVER rather than the corpus.***
+>
+> **⚠ AND ITS TWO EXCLUSIONS ARE NAMED RATHER THAN PATCHED INTO ITS REGEX**, *because loosening the
+> pattern would blind it to real cases: **"the gate is open and has been walked"** uses *open* to mean
+> **available**; **"reduces the count of what this sector leaves undelivered"** uses the trigger word as
+> **the subject being reduced**.*
+
 
 > ## ⛭⛭⛭ A SEVENTH MECHANISM r2582 — THE TENSE TEST, and it scoped a campaign from 114 to 13
 >

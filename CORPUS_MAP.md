@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2601 — 2026-08-11 (main line). **CONSOLIDATION — two landed rows struck, both stale grains brought current, and the ledger recorded as an eighth mechanism.**
+
+**✔ `L-536` STRUCK.** *Both halves landed elsewhere: ⓵ **`PO-10` is registered** and carries the two runs as its
+own item; ⓶ **the frontier-placement audit WAS the rehoming campaign** — thirteen papers swept, five carrying the
+defect, **24 → 2 paper-past narrations corpus-wide**.*
+**✔ `L-538` STRUCK.** *Its next step asked for the 30 to be verdicted; ***all 111 are, and `check_open_ledger` holds
+it***.*
+
+**⌗ `OPEN_PROBLEMS_MAP` BROUGHT CURRENT — 28 revisions behind, and it had never carried three register items.**
+*`PO-10` (the scalar sector's stated remainder, **the fourth of P7's four that no register had taken up**), `PO-11`
+(the propagating spinor sector, **named independently by three papers**), `PO-12` (the bespoke transfer).*
+⌗ *And its **A·1** is recorded as settled in its deepest half, with what P8 now states as remaining written in the
+paper's own post-rehoming words: ***"a dynamics for the CURVE itself, as against the ordinary leaf evolution that
+carries it."***
+
+**⛭⛭ AND `THE_WEAVE` GAINS AN EIGHTH MECHANISM: THE VERDICT LEDGER.** *And the entry names what makes it an
+instrument rather than a list —* ***its backlog half is the first gate here that checks the OBSERVER rather than the
+corpus.***
+⇒ ⛔ ***It caught five of this line's own verdicts in one pass, twice on the same principle: NARROWING IS NOT
+CLOSING.***
+⌗ *`check_revleak` checks the papers; `check_provenance` checks the receipts; `check_depmatrix` checks a table
+against its corpus.* ***This one checks a JUDGEMENT against the text it was a judgement about.***
+
+**⛭ THE RULE:** ***a register of verdicts is worth building only if something can fail it. A list of readings nobody
+can contradict is a list of opinions; a list a gate can overturn is an instrument.***
+
+⌗ *Board: **four veins, two leads**.*
+
 ### Revision r2600 — 2026-08-11 (main line). **ZERO UNVERDICTED — all 111 qualifications read and recorded, and the `PO-7`/`PO-seam` dependency named.**
 
 **⌗ THE FINAL DISTRIBUTION.** *REGISTERED **22** · SCOPE-BY-DESIGN **22** · DO-NOT-ASSERT **19** · SELF-ANSWERED

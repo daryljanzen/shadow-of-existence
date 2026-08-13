@@ -119,10 +119,8 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-221`** | r2526 | **the question is INVERTED r2526**: not "is there an $R$-odd operator?" but ***what BRIDGE from grading to field exists that is not "be a kernel"?***  |
 | **`L-171`** | r2559 | **`kills/PO-7.md` is COMPLETE r2559** — object named, four checks written, ***all four now pass*** · ***the next step is the register's own: "and Dary |
 | **`L-218`** | r2561 | ✔ ⓶ done r2478 · ***the RULE is tested r2561 and needs a fourth bucket (DISCUSSED), which is the default*** · ⓵ pandoc-in-CI and ⓷ the contribution re |
-| **`L-536`** | r2579 | **TWO HALVES.** ⓵ `PO-10`'s two runs (the full-spectrum likelihood comparison, the odd/even height pattern) · ⓶ ***the FRONTIER-PLACEMENT AUDIT across |
-| **`L-538`** | r2595 | ***30 unverdicted***; and the owed list is now **two unbuilt things, one precision item, three downstream** — with the $\mathbb{Z}_2$-index convergenc |
 
-*8 live rows carry a stated next step; the 8 longest-unworked are shown.*
+*6 live rows carry a stated next step; the 6 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session

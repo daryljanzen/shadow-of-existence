@@ -1,9 +1,44 @@
 ---
 name: open-problems-map
 kind: STATE
-current: r2562+c54.206
+current: r2601+c54.207
 job: The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open
 ---
+
+## ⛭⛭⛭ BROUGHT CURRENT r2601 — and the register grew three items this map never carried
+
+**⌗ `PO-10` · THE SCALAR PERTURBATION SECTOR'S STATED REMAINDER** *(registered r2578).* *P7 keeps its own frontier
+count honestly — **"it opened at seven and stands at four"** — and `PROTECTED_OPEN` had taken up **three of the
+four**. The fourth was in no register at all.*
+⇒ ***Two named runs, in the paper's own words: the FULL-SPECTRUM LIKELIHOOD comparison against flat $\Lambda$CDM
+("a parameter refit rather than a further calculation"), and the ODD/EVEN HEIGHT PATTERN ("imprinted by the baryon
+loading on the expansion leg").***
+
+**⌗ `PO-11` · THE FULL PROPAGATING SPINOR FIELD SECTOR** *(registered r2597).* ***The largest genuinely unbuilt
+thing in the corpus, named independently by THREE papers*** *— p0's "the built modes being leaf-bound, not the
+propagating theory", `boundary_paper`'s "the compact-face fermion sector … the major undertaking",
+`groupoid_paper`'s "the descent onto a full propagating spinor".*
+⚠ *Not the discrete skeleton: **the generation count, the chirality and the family symmetry are a RESULT, forced
+within CR**.*
+
+**⌗ `PO-12` · THE BESPOKE TRANSFER** *(registered r2597).* *`CR_cosmology` in its own voice: **"not a missing idea
+but a computation this sequence owes and has not yet run, and the paper's own open edge rather than another's."***
+
+---
+
+## ⌗ AND THIS MAP'S A·1 IS SETTLED IN ITS DEEPEST HALF
+
+*A·1 — "why the cut bends", P8's **"the deepest open question the construction raises"** — had its **kinematic half
+exhibited** (all three of W1's instances), and `L-207` was struck at r2560 with **B·2 relocated to `PO-6`'s vein**.*
+⇒ *What P8 now states as remaining, after the r2581 rehoming, is narrower and is its own sentence: ***"the matter
+content's own generative law where the construction does not supply one: a dynamics for the CURVE itself, as
+against the ordinary leaf evolution that carries it."***
+
+⌗ **AND THE MAP'S OWN CROSS-REFERENCES ARE NOW GATED.** *`corpus/open_ledger.txt` holds **all 111 epistemic
+qualifications in the papers with a verdict**, and `check_open_ledger` fails the turn if a new one appears
+unverdicted or if a `SELF-ANSWERED` entry still advertises openness.* ⇒ ***So this map can no longer silently
+disagree with the papers about what is open.***
+
 
 ## ⛭⛭ BROUGHT CURRENT r2562 — what moved on this map's own items
 
