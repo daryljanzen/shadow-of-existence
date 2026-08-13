@@ -54,6 +54,12 @@ VEINS = {
 # GROUNDED 0-3: how solid the footing is, INFORMS 0-3: how much a vein would learn). **
 # ** A lead with NO vein links is instrument work.  It is not counted as progress on the map. **
 LEADS = {
+ 'L-539': ("\u26ed\u26ed **`THE_FRONT_EDGE`** \u2014 the protocol keeping the corpus and the residual register "
+   "current **with each other as work is done**: five instruments, an **eight-step closure protocol**, and the "
+   "backlog gate that fires on *an item advertised as owed after the work that closed it was done*. \u21d2 "
+   "Remaining: **verdict the 30**, **give the two genuinely unbuilt things register rows** (the propagating spinor "
+   "sector; the bespoke transfer), and **name the $\\mathbb{Z}_2$-index convergence once**",
+   ['L-221'], 3, 2),
  'L-538': ("\u26ed\u26ed **`THE_RESIDUAL`** \u2014 the corpus's remaining doubt measured from the PAPERS "
    "rather than the registers: **84 self-declared epistemic qualifications**. \u21d2 Sorted, the "
    "**discoverable** residual is about **five items, and THREE CONVERGE ON ONE OBJECT** \u2014 the "

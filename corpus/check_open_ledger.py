@@ -80,6 +80,59 @@ def read_ledger():
     return out
 
 
+# ** ---- ADDED r2596: THE BACKLOG CHECK ---- **
+# ** THE FAILURE IT PREVENTS: an item advertised as owed in the papers AFTER the work that closed it was
+# done. **  ⇒ *** An entry verdicted SELF-ANSWERED whose claim text still says "remains open" / "not yet"
+# / "unbuilt" is precisely that: the ledger knows the thing is answered and the prose has not caught up. ***
+#
+#   ⚠ ** It fires ONLY on SELF-ANSWERED. **  A `REGISTERED` item SHOULD read as open -- the paper is right
+#   and the register carries the gap.  *** Measured at r2596: 13 candidates across both verdicts, of which
+#   11 were correct REGISTERED entries and only 2 were real. ***
+#   ⚠ ** And its precision depends on the verdicts being right. **  One of this line's own verdicts was
+#   wrong within two revisions of being written -- which is why the reasoning is recorded beside each, so
+#   the next reader can overturn it cheaply.
+OPENWORD = re.compile(r"(remains open|stays open|is open\b|not yet|unbuilt|undelivered|cannot yet"
+                      r"|is not settled|has not yet run)", re.I)
+
+
+# ** THE ONE EXCLUSION, and it is stated rather than patched into the pattern. **  "The gate IS OPEN and
+# has been walked" uses `open` to mean AVAILABLE, not UNRESOLVED.  ⇒ *** Loosening OPENWORD to dodge it
+# would blind the check to real cases; naming the sense here keeps the pattern tight and the exception
+# visible. ***
+_OPEN_MEANS_AVAILABLE = re.compile(r"(gate is open and has been walked|the gate is open|route is open"
+                                   r"|is open to)", re.I)
+
+
+def _backlog(led):
+    out = []
+    for k, (paper, verdict, claim) in led.items():
+        if verdict != 'SELF-ANSWERED':
+            continue
+        body = claim.split('##')[0]
+        if _OPEN_MEANS_AVAILABLE.search(body):
+            continue
+        m = OPENWORD.search(body)
+        if m:
+            out.append((k, paper, m.group(0), body))
+    return out
+
+
+def _backlog_gate(led):
+    bad = _backlog(led)
+    if not bad:
+        print('  no SELF-ANSWERED entry still advertises openness.')
+        return 0
+    print()
+    for k, paper, word, body in bad:
+        print(f'    [FAIL] {k} ({paper}) is verdicted SELF-ANSWERED but its text still says "{word}"')
+        print(f'           "{body[:88]}"')
+    print()
+    print('    ⛔ AN ITEM ADVERTISED AS OWED AFTER THE WORK THAT CLOSED IT WAS DONE.')
+    print('       ** Either the prose needs de-narrating (THE_FRONT_EDGE step 4) or the verdict is')
+    print('       wrong. **  Both happen; the reasoning beside the entry says which.')
+    return 1
+
+
 def main():
     print()
     print('  check_open_ledger -- is the ledger of what is open current with the papers?')
@@ -89,13 +142,18 @@ def main():
 
     if '--rebuild' in sys.argv:
         import subprocess  # noqa
+        # ** preserve BOTH the verdict and the reasoning: the `##` note is why the verdict was
+        # given, and rebuilding the claim text from the paper must not drop it. **
         keep = {k: v[1] for k, v in led.items()}
+        why = {k: ('##' + v[2].split('##', 1)[1]) if '##' in v[2] else ''
+               for k, v in led.items()}
         lines = [l.rstrip('\n') for l in open(LEDGER, encoding='utf-8')
                  if l.startswith('#') or not l.strip()]
         for k, (paper, claim) in sorted(cur.items(), key=lambda x: (keep.get(x[0], 'UNVERDICTED'), x[1][0])):
             v = keep.get(k, 'UNVERDICTED')
             c = re.sub(r'\s+', ' ', re.sub(r'\\rcpt\{[^}]*\}', '', claim)).strip()[:180]
-            lines.append(f'{k} | {paper} | {v} | {c}')
+            note = ('   ' + why[k]) if why.get(k) else ''
+            lines.append(f'{k} | {paper} | {v} | {c}{note}')
         open(LEDGER, 'w', encoding='utf-8').write('\n'.join(lines) + '\n')
         print(f'  rebuilt: {len(cur)} entries, {sum(1 for k in cur if k not in keep)} new')
         return 0
@@ -126,11 +184,12 @@ def main():
         print('       SELF-ANSWERED / REGISTERED / NAMED-UNBUILT / PRECISION / OPEN-DOWNSTREAM')
         return 1
 
+    rc = _backlog_gate(led)
     print('  every qualification in the papers has a verdict in the ledger.')
     if unv:
         print(f'  ⌗ {len(unv)} still UNVERDICTED -- the only bucket that means work.')
     print()
-    return 0
+    return rc
 
 
 if __name__ == '__main__':

@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2596 — 2026-08-11 (main line). **`THE_FRONT_EDGE` — the protocol that keeps the corpus and the residual register current with each other, and the gate that was missing.**
+
+**⌗ THE FIVE INSTRUMENTS, AND WHAT EACH GUARANTEES.** *`open_ledger` — **every qualification has a verdict with its
+reasoning**; `check_open_ledger` — **a new one cannot appear unverdicted**; `check_revleak` — **the working record
+cannot enter the published text**; `check_provenance` — **a `%` comment cannot become a quotation**;
+`PROTECTED_OPEN`+`kills/`+`F5` — **an open question cannot be closed by a node**.*
+⇒ ***Between them: what is open is listed, what is claimed is sourced, what is closed was authorised, and the
+working record stays out of the papers.***
+
+**⌗ AND THE EIGHT-STEP CLOSURE PROTOCOL, in the order the campaign learned it:** *receipt first · **inventory what
+the prose binds** (a claim deleted with its receipt fails nothing) · **rehome, do not annotate** · de-narrate by the
+tense test · ⛭ ***follow the cross-references*** · update the ledger with reasoning · **update `PROTECTED_OPEN` on
+PROGRESS, not only on closure** · regenerate and gate.*
+
+**✔✔ AND THE ONE MISSING GATE IS BUILT.** *`check_open_ledger` now fails on an entry verdicted `SELF-ANSWERED`
+whose text still advertises openness —* ***an item advertised as owed after the work that closed it was done.***
+⚠ *It fires **only** on `SELF-ANSWERED`, which is the design: **a `REGISTERED` item SHOULD read as open — the paper
+is right and the register carries the gap**. Measured: 13 candidates, **11 correct, 2 real**.*
+
+**⌗ AND BUILDING IT SURFACED TWO MORE THINGS.**
+*· ⛔ ***`--rebuild` was dropping the reasoning*** — it re-derives claim text from the paper and the `##` notes lived
+in that field. **It ran clean, reported "0 new", and had silently discarded thirty-five reasoning notes.** Fixed.*
+*· ⚠ **one false positive, excluded by NAMING the sense**: "the gate is open and has been walked" uses *open* to
+mean **available**. ⇒ ***Loosening the pattern to dodge it would blind the check to real cases, so the exception is
+written into the gate rather than smuggled into its regex.***
+
+**⛭ THE RULE:** ***a system that records verdicts must be tested on whether it can LOSE one.***
+
+⌗ *Two real corrections landed too: a **tense defect outside any frontier section** ("It WAS a computed effect … it
+IS NOW a requirement" → "The signature is a requirement of the construction"), and **one of this line's own verdicts
+overturned** — the "cannot yet be made" likelihood is the **full-spectrum** one against the banked $\chi^2=206.4$
+over 215 bins, which is `PO-10`a and genuinely open, not the 185-bin comparison sited at 1.18.*
+
 ### Revision r2595 — 2026-08-11 (main line). **66 → 30 UNVERDICTED, and the genuinely owed list collapses to TWO.**
 
 **⌗ THE VERDICT DISTRIBUTION, after thirty-six reads:** *UNVERDICTED **30** · DO-NOT-ASSERT **19** ·
