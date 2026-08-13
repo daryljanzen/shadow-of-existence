@@ -38,6 +38,38 @@ thing" — and a smaller, diminished section: "this is what we still don't know.
 
 ---
 
+## ⛔⛔⛭ PASS 4 SCOPED, NOT DONE — `CR_cosmology`, and it is a different animal
+
+**⌗ WHAT THE FIRST THREE PASSES WERE:** *one misplaced paragraph each, rehomed in a turn.*
+**⌗ WHAT THIS IS:** *`sec:refit-bound` — ***57,452 characters, 46 paragraphs, and 59% of it (37,902 chars) narrates
+the paper's own revision history***.*
+
+*· "This was reported here as a transfer argument contradicted by a direct computation, and **at
+r2376+c54.164** that…"*
+*· "That missing propagation **is built at r2376+c54.168**…"*
+*· "That last sentence was measured against a target that could not carry it, and **we correct our own protocol
+here**"*
+*· "**We wrote at this point** that the acoustic statement had reached its final form … and that is **the third
+thing in this section we now withdraw**"*
+
+⇒⇒ ***A physics section written as a lab notebook — and it is the most valuable record in the corpus of how a hard
+result was actually reached, which is exactly why it must go to `CONSOLIDATE` intact rather than be cut.***
+
+**⚠ NOT ATTEMPTED IN THIS TURN, DELIBERATELY.** *Losslessness is the campaign's hard rule, and **38 KB of
+interleaved narrative and physics cannot be split safely in one pass**. ⇒ ***This needs its own planned campaign:
+paragraph by paragraph, each to CONSOLIDATE or to the present-state rewrite, with the receipts re-resolving after
+each move.***
+
+**✔ WHAT WAS DONE INSTEAD — the one part that IS mechanical.** *Measured corpus-wide: ***29 internal revision
+references in published paper bodies across thirteen papers*** (`r2376+c54.9` alone appears in nine).*
+⇒ *`corpus/check_revleak.py`, **wired and seeded**, **grandfathered at 29** on r2557's rule. ***A reference added
+after r2584 fails, so the leak stops growing while the campaign drains it — and each pass removes baseline entries
+as it goes.***
+⌗ ***Deciding where a paragraph belongs is a reading. Deciding that `r2376+c54.164` does not belong in a physics
+paper is not.***
+
+---
+
 ## ✔✔ PASS 3 DONE — `cosmogenesis` (P16), r2583. **And the discriminator's limits are now known from both sides.**
 
 **⌗ THE PARAGRAPH.** *The multi-abundance network result, written as a **debt discharged**: "was the one computation

@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2584 — 2026-08-11 (main line). **PASS 4 SCOPED — a physics section written as a lab notebook, and the mechanical half gated.**
+
+**⛔⛔ THE FINDING.** *The campaign's first three passes were **one misplaced paragraph each**. `CR_cosmology`'s
+`sec:refit-bound` is* ***57,452 characters, 46 paragraphs, and 59% of it — 37,902 chars — narrates the paper's own
+revision history.***
+*· "This was reported here as a transfer argument contradicted by a direct computation, and **at r2376+c54.164**
+that…"; · "That missing propagation **is built at r2376+c54.168**"; · "**we correct our own protocol here**"; ·
+"**We wrote at this point** that the acoustic statement had reached its final form … and that is **the third thing
+in this section we now withdraw**".*
+
+⇒ ⛭ ***AND IT IS NOT WASTE: it is the most valuable record in the corpus of how a hard result was actually reached —
+which is precisely why it goes to `CONSOLIDATE` INTACT rather than being cut.***
+
+**⚠ NOT ATTEMPTED, DELIBERATELY.** *Losslessness is the campaign's hard rule, and **38 KB of interleaved narrative
+and physics cannot be split safely in one pass**.*
+⇒ ***Naming a job too big for the turn and stopping is the whole of not losing content. The three small passes each
+took a turn; this one would have taken the same turn and lost things.***
+
+**✔ AND THE MECHANICAL HALF WAS DONE INSTEAD.** *Measured corpus-wide: ***29 internal revision references in
+published paper bodies across thirteen papers*** — `r2376+c54.9` alone appears in **nine**.*
+⇒ *`corpus/check_revleak.py` — wired, seeded, **grandfathered at 29** on r2557's rule. ***A reference added after
+r2584 fails, so the leak stops growing while the campaign drains it, and each pass removes baseline entries as it
+goes.***
+
+**⛭ THE RULE:** ***deciding where a paragraph belongs is a READING; deciding that `r2376+c54.164` does not belong in
+a physics paper is not. So when a campaign is mostly judgement, find the part that isn't and gate that first — it
+stops the problem growing while the judgement proceeds.***
+
 ### Revision r2583 — 2026-08-11 (main line). **REHOMING PASS 3 — a result written as a debt discharged; and the discriminator failed in BOTH directions.**
 
 **⌗ P16's PARAGRAPH.** *The multi-abundance network result, written as an account settled: "…**was the one

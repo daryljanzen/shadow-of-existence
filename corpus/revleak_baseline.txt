@@ -1,0 +1,32 @@
+# ** THE GRANDFATHERED SET, frozen r2584. **  Internal revision references already
+# present in paper bodies when this gate was built.  ** A reference ADDED after
+# r2584 fails. **  Entries are removed as the rehoming campaign drains them.
+BH_causality_v2.tex::r2154
+BH_causality_v2.tex::r2376+c54.9
+BH_causality_v2.tex::r2533+c54.203
+CR_cosmology.tex::r2154
+CR_cosmology.tex::r2376+c54.155
+CR_cosmology.tex::r2376+c54.160
+CR_cosmology.tex::r2376+c54.162
+CR_cosmology.tex::r2376+c54.164
+CR_cosmology.tex::r2376+c54.167
+CR_cosmology.tex::r2376+c54.168
+CR_cosmology.tex::r2376+c54.173
+CR_cosmology.tex::r2376+c54.9
+CR_cosmology.tex::r2501+c54.197
+CR_framework.tex::r2376+c54.162
+CR_framework.tex::r2376+c54.9
+CR_framework.tex::r2533+c54.203
+SdS-slicing-curve_v2.tex::r2376+c54.9
+algebroid_paper.tex::r2376+c54.9
+boundary_paper.tex::r2540+c54.204
+canonical_time.tex::r2376+c54.9
+cosmogenesis_paper.tex::r2376+c54.156
+cosmogenesis_paper.tex::r2540+c54.204
+geometric_core_paper.tex::r1137
+geometric_core_paper.tex::r1609
+geometric_core_paper.tex::r2376+c54.9
+groupoid_paper.tex::r2376+c54.9
+janzen_circle_v3.tex::r2376+c54.9
+matter_sector_paper.tex::r2376+c54.9
+shadow_of_existence.tex::r2376+c54.9
