@@ -81,6 +81,31 @@ def main():
         print(f'    {tag:<7} {("yes" if tag in kills else "-"):>4} {len(l):>10}   last dated move: r{last}')
     print()
 
+    # ** ---- THE PROGRESS NUMBER, added r2613 ---- **
+    # ** Daryl: "which numbers am I actually supposed to see moving?" **  ⇒ *** Most of these should
+    # NOT move.  GATES and RECEIPTS grow with instrument-building and can grow forever without the
+    # physics advancing.  The LEDGER is saturated at 111/0 and only moves when a paper changes.  The
+    # PO COUNT goes UP when work finds something (PO-10, 11, 12 were added by finding them), so a
+    # rising count is discovery wearing the costume of regress. ***
+    #   ⇒ ** The number that measures the programme closing is DARK HALVES ANSWERED: each vein has a
+    #     MAPPED half and a DARK half, and the dark half is the physics that is not yet known. **
+    board = open(os.path.join(ROOT, 'BOARD.md'), encoding='utf-8', errors='replace').read()
+    veins, answered = [], []
+    for m in re.finditer(r'## `(L-\d+)`', board):
+        seg = board[m.start():m.start() + 3000]
+        d = seg.find('DARK')
+        if d < 0:
+            continue
+        veins.append(m.group(1))
+        if 'ANSWERED' in re.sub(r'\s+', ' ', seg[d:d + 900]):
+            answered.append(m.group(1))
+    print(f'  ⛭ DARK HALVES ANSWERED: {len(answered)} of {len(veins)}   '
+          f'{"  ".join(sorted(answered)) if answered else "(none)"}')
+    print(f'    still dark: {"  ".join(sorted(set(veins) - set(answered)))}')
+    print('    ⌗ ** This is the number that measures the programme closing.  The others measure how')
+    print('      well it is being kept. **')
+    print()
+
     named, removed = conditions()
     if named is not None:
         live = [c for c in named if c not in removed]

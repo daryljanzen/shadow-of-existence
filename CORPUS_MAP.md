@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r2613 — 2026-08-11 (main line). **THE PROGRESS NUMBER IS `DARK HALVES ANSWERED` — 2 of 4 — and it refused to move for a rewrite.**
+
+**⌗ THE QUESTION: "which numbers am I actually supposed to see moving?"** ⇒ ***Most of them should not.***
+*· `GATES` and `RECEIPTS` **grow with instrument-building and can grow forever without the physics advancing**;*
+*· the `LEDGER` is **saturated at 111/0** and moves only when a paper changes;*
+*· and the `PO` count **goes UP when work finds something** — `PO-10`, `PO-11`, `PO-12` were added by finding them —
+so ***a rising count is discovery wearing the costume of regress***.*
+
+**⛭ SO THE NUMBER THAT MEASURES THE PROGRAMME CLOSING IS `DARK HALVES ANSWERED`.** *Each vein carries a **MAPPED**
+half and a **DARK** half; the dark half is the physics not yet known.* ⇒ ***2 of 4: `L-175` and `L-202` answered,
+`L-165` and `L-221` still dark.***
+⌗ ***It was in the board the whole time and in no status this line ever gave.***
+
+**⛭⛭ AND THE FIRST THING IT DID WAS REFUSE TO MOVE.** *`L-221`'s dark half was three revisions stale — "no operator
+whose kernel is the four", a bridge question r2609 showed the object did not need. **Rewritten to what is actually
+dark: the COUPLING** — "the bundle above is flat … it quantises and does not couple". And the count **stayed at 2 of
+4**.*
+⇒ ***Because narrowing is not answering — the principle the backlog gate caught this line on twice — and a progress
+metric that moved when a question was merely sharpened would be worth nothing.***
+
+**⛭ THE RULE:** ***report the number that goes DOWN when the work is done, not the ones that go up when the work is
+recorded. And build it so it refuses to move for a rewrite — a metric you can improve by editing prose is a metric
+measuring your prose.***
+
 ### Revision r2612 — 2026-08-11 (main line). **THE REPORTED NUMBERS WERE WRONG, AND BUILDING THE REPORTER FOUND A BROKEN CI WORKFLOW.**
 
 **⌗ THE COMPLAINT, AND IT WAS RIGHT.** *"You're using all these codes like C1-7, but those codes don't appear in any
