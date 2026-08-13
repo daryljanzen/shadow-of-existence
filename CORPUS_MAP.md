@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2594 — 2026-08-11 (main line). **THE VERDICTING PASS — 66 → 51, and it found a stale "open problem" for something already resolved.**
+
+**⛔ THE FIND.** *P7 said of the Euclidean null: **"what it governs along the lift is not yet worked … is an open
+problem of the programme rather than a settled reading (`\S\ref{sec:frontiers}`)."***
+⇒ ***But P7's frontier list RESOLVED item seven — "the structure of the lap, and the physics of the lift" — and its
+account moved to `CONSOLIDATE` at r2585. The frontier emptied and this upstream sentence did not follow.***
+*Corrected to point at `\S\ref{sec:lift-initial-rate}`, where the positive account lives.*
+⌗ ***This is the rehoming campaign's defect one level down: not content in the wrong section, but a CROSS-REFERENCE
+to a frontier that no longer holds the item.***
+
+**⌗ FIFTEEN VERDICTS RECORDED, and they show the shape:**
+*· ***SCOPE-BY-DESIGN keeps winning*** — "a theory that fits is not a theory confirmed" (**what any theory owes the
+world**, with falsifiable commitments staked beside it); "the reach is a coherence and not yet a correspondence"
+(**"it is not, and is not offered as, evidence that the world is so built"**); the UV regime "is not settled here
+and is not claimed" (**with the companion programme named as where the question has its home**);*
+*· ***SELF-ANSWERED twice more*** — the likelihood comparison that "cannot yet be made" (**sited at 1.18 against
+1.01 on 185 bins**) and the high-$\ell$ shape turning on "the early ISW term, which is what remains open"
+(**computed at r2588 as `sec:isw`**);*
+*· ***NAMED-UNBUILT once*** — "not a missing idea but **a computation this sequence owes and has not yet run**";*
+*· *and a new class the reading required: ***STATED-AT-WEIGHT***, "corroboration at the strength of a memory" —
+**neither a gap nor a scope statement but a claim deliberately held below the weight it could carry**.*
+
+⇒ ***Each verdict is recorded with its reasoning in `open_ledger.txt`, so none of these readings has to be done
+twice.***
+
 ### Revision r2593 — 2026-08-11 (main line). **THE OPEN LEDGER — a verdict per qualification, and the gate that keeps it current.**
 
 **⌗ THE FAILURE, NAMED EXACTLY.** *This line kept discovering that a thing which looked open was not — and **kept

@@ -1,7 +1,7 @@
 ---
 name: the-residual
 kind: PLAN
-current: r2593+c54.207
+current: r2594+c54.207
 description: THE RESIDUAL — the true state of remaining doubt across the corpus, measured from the papers' own epistemic self-declarations rather than from the registers. Eighty-four qualifications, sorted by whether a proof is discoverable. Written r2592.
 sources: [chat]
 ---
@@ -28,6 +28,32 @@ sources: [chat]
 | **RECALLED, not derived** | 1 | 1 |
 
 ⇒ ***84 across the corpus. But the classes are not equally load-bearing, and sorting them is the work.***
+
+---
+
+## ⛭⛭ THE VERDICTING PASS — r2594, and it is already finding stale claims
+
+**⌗ 66 → 51 UNVERDICTED**, *fifteen read and recorded. And the reading is doing what the ledger was built for:*
+
+**⛔ ONE STALE "OPEN PROBLEM" FOUND AND FIXED.** *P7 said of the Euclidean null: **"what it governs along the lift is
+not yet worked … is an open problem of the programme rather than a settled reading."***
+⇒ ***But P7's frontier list resolved item seven — "the structure of the lap, and the physics of the lift" — and its
+account moved to `CONSOLIDATE` at r2585. The frontier emptied and this upstream sentence did not follow.***
+*Corrected to point at `\S\ref{sec:lift-initial-rate}`, which is where the positive account lives.*
+⌗ ***This is the rehoming campaign's defect one level down: not content in the wrong section, but a CROSS-REFERENCE
+to a frontier that no longer holds the item.***
+
+**⌗ AND THE VERDICTS SO FAR SHOW THE SHAPE:**
+*· **SCOPE-BY-DESIGN** keeps winning — "a theory that fits is not a theory confirmed" (**what any theory owes the
+world**, with falsifiable commitments staked beside it); "the reach is a coherence and not yet a correspondence"
+(**"it is not, and is not offered as, evidence that the world is so built"**);*
+*· **SELF-ANSWERED** twice more — the likelihood comparison "cannot yet be made" (**it is sited at 1.18 against
+1.01 on 185 bins**), and the high-$\ell$ shape turning on "the early ISW term, which is what remains open"
+(**computed at r2588, `sec:isw`**);*
+*· ***NAMED-UNBUILT once***: "not a missing idea but **a computation this sequence owes and has not yet run**" — the
+bespoke transfer, and the paper says so in its own voice;*
+*· *and a new class the reading required: ***STATED-AT-WEIGHT*** — "corroboration at the strength of a memory",
+which is neither a gap nor a scope statement but **a claim deliberately held below the weight it could carry**.*
 
 ---
 
