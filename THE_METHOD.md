@@ -126,6 +126,20 @@ fails on them.*
 ⇒ ***THE OBLIGATION: when you close a lead, read the others on its vein before ending the turn. The report tells you
 which; the reading is yours.***
 
+**⌗ AND A LINT'S PRECISION IS A MEASURABLE THING — measure it before deciding not to build it, added r2553.**
+
+*`L-514` asked for a check that a **withdrawal paragraph does not contradict text already in its own section**. 54
+declined: **"I have not built it and do not want to guess its precision."*** ⇒ ***Right instinct — and the precision
+is measurable, so it was measured instead of guessed.***
+*· **Signature A** (a withdrawal sharing a number with its section): **10 hits**, and it is the ***normal*** case —
+a withdrawal restating the number it withdraws is what an honest one does.*
+*· **Signature B** (a bound "and no further", then a larger value in the same section): **20 hits, and it catches
+the real one first** — the other nineteen are coincidences of magnitude.*
+⇒ ***~1 real in 20. A gate at that rate teaches nodes to ignore it, which costs more than the defect it catches.***
+
+⇒ ⛭ ***THE RULE: "I don't want to guess its precision" is a correct refusal, and the completion of it is to MEASURE
+the precision. "The precision is bad" is a finding; "I didn't build it" is not.***
+
 ---
 
 ## V·b · THE THIRD SOURCE OF LEADS: THE OUTSIDE LITERATURE — added r2515

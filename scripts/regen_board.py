@@ -127,8 +127,6 @@ LEADS = {
    "writes p0 lowercase. **Nine rows invisible; surfaced only because the first `\\rcpt{}` to name one read "
    "as an orphan.** Same shape as its own duplicate-stem guard: blind to a row it should police",
    [], 3, 0),
- 'L-217': ("the CR/Higgs relation is stated; **`F1` stays live \u2014 the relation breaks if the gauge group is "
-   "ever promoted to forced**", ['L-221'], 2, 2),
  'L-230': ("the `COMPUTES:` convention \u2014 uptake \u26d4 **FALLING, re-measured r2551**: 39/309 (12.6%) at r2447 \u2192 40/357 (11.2%) \u2192 **40/395 (10.1%)** \u2014 **one adoption while eighty-six receipts were written**, and this line wrote **84 this session and used it once**. \u21d2 **The decision: require the header's PRESENCE (mechanical, and ~84 receipts would fail) or stop calling it a convention** \u2014 **the number is unmeasured since**, and a convention whose uptake nobody re-counts is a convention nobody is adopting while the corpus grew a sixth; a "
    "receipt that declares what it computed is a receipt a vein can be excavated through", ['L-165','L-221'], 3, 1),
  'L-508': ("**what the seam datum CARRIES, measured**: across four production-depth seam phases the acoustic "
@@ -140,10 +138,6 @@ LEADS = {
    "could not see the worst of them until this revision** (a proposition's receipt binding lives in its argument "
    "paragraph). Found by seeding, not by reading",
    ['L-202'], 3, 1),
- 'L-514': ("**nothing in the tree reads UPWARD**: c54.195's withdrawal contradicted text two paragraphs "
-   "above it in the same section, which had carried the right answer since c54.191. A withdrawal is the edit "
-   "for which that matters most. Second instance of the class after the c54.182/c54.184 duplicate",
-   [], 2, 0),
  'L-512': ("`check_receipt_prefixes` \u2014 the receipt-prefix namespace collided twice in two revisions and "
    "reached `main`; bands proposed in the register's own order (56 1-49, 54 50-79, cc54 80-99), **grandfathered "
    "so nothing has to move**. Fails on a duplicate, only REPORTS out-of-band", [], 3, 0),

@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2553 — 2026-08-11 (main line). **`L-217` AND `L-514` STRUCK — one owed nothing, the other's lint was measured instead of guessed.**
+
+**⌗ `L-217`.** *Its next step read "what the row still owes is §5's onward list, and `F1` stays live."* ⇒ **⓵ *All
+three of §5's owings are discharged*** *— the `F1` trip-wire **written into `PROTECTED_OPEN` at r2548** with its
+three dependents named; the F4 clause **in P14**; and **"the word 'Higgs' still appears nowhere" is false — it
+appears twice**, closed by c54.203.* ⌗ *Two had been discharged by other work and nobody had checked.*
+⇒ **⓶ *And "`F1` stays live" was never an owing.*** *A trip-wire staying live is what a trip-wire **does** — a
+standing condition, not a task.* ⇒ ***A row cannot be closed by satisfying a trip-wire, and keeping it open on that
+ground would keep it open forever.***
+
+**⛭⛭ `L-514`, and this one is a method result.** *It asked for a check that a withdrawal paragraph does not
+contradict text in its own section. **54 declined: "I have not built it and do not want to guess its precision."***
+⇒ ***Right instinct — and precision is measurable, so it was measured.***
+*· **Signature A** (a withdrawal sharing a number with its section): **10 hits**, and it is the ***normal*** case —
+a withdrawal restating the number it withdraws is what an honest one does.*
+*· **Signature B** (a bound "and no further", then a larger value in the same section): **20 hits, catching the real
+one first**; the other nineteen are coincidences of magnitude.*
+⇒⇒ ***~1 real in 20. Not a precision worth shipping: a gate at that rate teaches nodes to ignore it, which costs
+more than the defect it catches.***
+⇒ ⛭ ***THE RULE: "the precision is bad" is a FINDING; "I didn't build it" is not. The refusal was right and is now
+backed by a number instead of an instinct.***
+
+**⌗ AND THE INSTANCE WAS ALREADY DISCHARGED IN THE CORPUS.** *P15 carries the over-withdrawal and its correction
+**in sequence in the same section** — "the gap closes from 0.615 to **0.408** … **and no further**", and the
+withdrawal paragraph ending **"That reading was too wide, and the correction is entered here."***
+⇒ ***The paper kept both, which is what the row wanted, and nobody had gone back to look.***
+
+⌗ *Board: **four veins, seven leads**.*
+
 ### Revision r2552 — 2026-08-11 (main line). **BOTH "DARYL'S DECISIONS" WERE THE CORPUS'S — `L-240` CLOSED, `PO-7` NARROWED BY A KILL RECEIPT THAT WAS OWED FOR FIFTY REVISIONS.**
 
 **⛔ THE CORRECTION FIRST.** *Four times this line handed up a question the material answers, and the fourth time

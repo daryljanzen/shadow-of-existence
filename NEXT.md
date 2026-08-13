@@ -109,15 +109,13 @@ is**.*
 | **`L-175`** | r2474 | **the whole row now turns on one question r2474 states**: ***can a second slicing be non-arbitrary — its selection FORCED by the first rather than cho |
 | **`L-165`** | r2475 | ⓵ **the UV clause now has a DEGREE (quartic) and a shape (IR free, UV generic)** — what remains is **defining** the sum, not diagnosing it · ⓶ the clo |
 | **`L-218`** | r2478 | ✔ **② done r2478 — `COMPANION_SPEC.md`** · ① formats via pandoc in CI · ③ contribution, last |
-| **`L-217`** | r2482 | ✔ **the statement exists — `CR_AND_THE_HIGGS.md` §4** · what the row still owes is **§5's onward list**, and `F1` stays live: ***the relation breaks i |
-| **`L-514`** | r2512 | **NOT done here — this is a lead, and what it needs is a check that a WITHDRAWAL paragraph does not contradict text already in the same section**; I h |
 | **`L-221`** | r2526 | **the question is INVERTED r2526**: not "is there an $R$-odd operator?" but ***what BRIDGE from grading to field exists that is not "be a kernel"?***  |
 | **`L-803`** | r2545 | **the paragraph is still owed and its SHAPE is settled r2545** — route to 54: ***name $N_{\rm eff}$, state that CR fixes the $\nu_R$'s place and not i |
 | **`L-804`** | r2548 | ***the paragraph is 54's to place:*** *premise meets objection — state that the adiabatic premise is what the CMB forces ($\Delta\chi^2\sim3\times10^5 |
 | **`L-230`** | r2551 | **the number is re-measured r2551 and the diagnosis inverted**: not flat but **falling** (10.1%), and the cause is this line · ***the decision: requir |
 | **`L-171`** | r2552 | **NARROWED r2552 by `kills/PO-7.md`**: the object is now ***does every mode of interest freeze before the crossing?*** — P15 `sec:what-crosses`, the o |
 
-*13 live rows carry a stated next step; the 13 longest-unworked are shown.*
+*11 live rows carry a stated next step; the 11 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session
