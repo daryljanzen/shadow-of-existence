@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2611 — 2026-08-11 (main line). **THE C6/C7 TENSION CANNOT ARISE — C6 is not a condition.**
+
+**⌗ THE TENSION, NAMED AT r2610.** *C6 requires the measure to "respect the per-fibre closure"; C7 requires it not
+to spoil the constraint algebra's closure — **and the constraint algebra is not fibre-local**.*
+
+**⛭⛭ AND A RECEIPT WRITTEN FOR ANOTHER PURPOSE HAD ALREADY DISSOLVED IT.**
+*`D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres`: the boundary coefficient is an operator
+$\hat\Gamma=\gamma+c\sum_n\hat\pi_n^2$, **"and since it commutes with the radial part"**,
+$-\partial_x^2+\hat\Gamma/x^2$ **"decomposes as a DIRECT INTEGRAL over its spectrum"**, with thermal regularity
+supplying the condition **"FIBRE BY FIBRE"**.*
+⇒⇒ ***The per-fibre structure is a CONSEQUENCE of a commutation relation, not a requirement on a measure. Nothing
+chooses it and nothing can violate it — so C7 has nothing to conflict with, and the list is FIVE CONDITIONS PLUS ONE
+THEOREM.***
+
+**⛭ THE RULE:** ***before testing whether two conditions conflict, check that both are CONDITIONS. A necessary
+condition is something a candidate must satisfy and might FAIL; a structure forced by an operator identity is
+neither, and listing it among the conditions invents conflicts that cannot occur.***
+
+**⌗ AND THE LIST HAS SHRUNK TWICE IN TWO REVISIONS** *— seven → six (C1 and C2 are one sentence, r2610) → five (C6
+is a theorem).* ⇒ ***Neither removal is a physics result. Both were found by reading the passage that ARGUES a
+condition rather than the ones that quote it — the same move twice, and now the standing method for this list.***
+
+⌗ *D1 also says why the separation is structural rather than lucky: the sub-threshold set's size — finite,
+countable, or a continuum — is **"irrelevant to whether each of its fibres receives a condition"**. ⇒ ***A per-fibre
+condition cannot be broken by the number of fibres, which is why `PO-6`'s two halves are two halves rather than one
+entangled question.***
+⚠ *And the limit is D1's own: the commutation is stated **at leading order**, so **whether it survives the
+interaction is the interacting tower's own question**.*
+
 ### Revision r2610 — 2026-08-11 (main line). **C1 AND C2 ARE ONE CONDITION — and the sentence stating them answers part of `PO-6`.**
 
 **⛔ ⓵ THE LIST IS SIX, NOT SEVEN.** *r2567 credited **C1** to P12 and **C2** to p0. **Both are one passage in P10,
