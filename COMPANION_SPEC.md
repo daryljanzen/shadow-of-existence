@@ -3,8 +3,24 @@ name: companion-spec
 kind: STATE
 description: The specification for the AI companion to the corpus — what it may assert, what it must refuse, and the declarations that make the difference checkable. Written before any code, because the SPEC decides whether the thing is trustworthy.
 sources: [chat]
-current: r2569+c54.206
+current: r2571+c54.206
 ---
+
+## ⌗ THE CONTRIBUTION QUESTION IS ALREADY WORKED — linked r2571
+
+*This spec, `THE_DISPATCH` and `THE_REMAINING_WORK` mentioned **`CREDO_birth_transcript.md` zero times**, while that
+file — **1.5 MB** — works the contribution question directly and reaches a settled reading:*
+⇒ ***"the opposite of BOTH the lone-genius myth and the 'AI did the physics' misreading"***, *with the mechanism
+named — **"neither half produces that moment alone"** — and the story corrected on its own evidence: the discovery
+night came from **finally getting human interaction, even hostile interaction**.*
+
+**⌗ WHY IT BELONGS HERE.** *A companion asked **"who did what?"** is asked the question this corpus is most likely
+to be misread on, in **both** directions.* ⇒ ***And the answer is not the companion's to improvise: it is an
+ESTABLISHED-bucket answer if it cites `CREDO`, and a DISCUSSED-bucket one otherwise. Without the link it had
+neither, which is exactly the state that produces invention.***
+
+⌗ *`DEMONSTRATING_THE_WAY_full-transcript.md` carries related material and is likewise unlinked.*
+
 
 ## ⛔⛭ THE CORPUS IS A NETWORK, NOT A SEQUENCE — measured r2569, and it bears on the companion too
 

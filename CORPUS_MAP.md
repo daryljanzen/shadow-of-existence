@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2571 — 2026-08-11 (main line). **cc54's FOUR ROWS STRUCK, AND A15 IS UNLINKED RATHER THAN UNDEFINED — the eighth arrival-path instance, inside the programme.**
+
+**⌗ THE FOUR.** *`L-806`–`L-809` struck: their findings are carried where they act — the massive-freeze answer on
+`PO-seam` and in `kills/PO-7.md`, the estimator result in the kill receipt, the horizon separation and the quartic
+on `PO-6`.*
+⌗ ***And `L-806` and `L-807` arrived with NO next step at all*** *— cc54 treating them as records rather than leads,
+which is **the habit r2535's check was built to force, now arriving without being asked**.*
+
+**⛭⛭⛭ AND A15.** *`L-218` ⓷ reads **"the contribution"**, ordered last, and the label is **never expanded** — not
+in the row, not in `COMPANION_SPEC`, not in either plan. First reading: undefined.*
+⇒ ⛔ ***Wrong. `CREDO_birth_transcript.md` is 1.5 MB and works it directly*** *— `contribution-parsing` **9**,
+`lone-genius` **8**, `credit` **10** — reaching a settled reading:* ***"the opposite of BOTH the lone-genius myth
+and the 'AI did the physics' misreading"***, *with the mechanism named — **"neither half produces that moment
+alone"** — and the story corrected on its own evidence: **the discovery night came from finally getting human
+interaction, even hostile interaction**.*
+⌗ ***And `COMPANION_SPEC`, `THE_DISPATCH` and `THE_REMAINING_WORK` mention it ZERO times.***
+
+⇒ ⛭ ***So the shape is exactly the seven before it — the material is held, worked, and not named where it is needed
+— except that here the corpus and the "field" are BOTH the corpus. An unlinked document is an arrival-path gap with
+no outside party involved.***
+
+**⛭⛭ THE RULE:** ***a one-word label on a row is a claim that everyone knows what it means. Before treating one as
+undefined, grep the corpus for the WORD — the thing may be worked at length somewhere written for a different
+audience.***
+
+⚠ *And the correction changes what A15 IS: **not "write a contribution statement from scratch"** — which the blank
+label invited, and which would discard 1.5 MB of worked material — **but "draw it FROM `CREDO` and link it"**.
+***The drawing is editorial and concerns attribution of Daryl's own work, so it stays his.*** *Linked in
+`COMPANION_SPEC`, where a companion asked "who did what?" now has an ESTABLISHED-bucket answer instead of none.*
+
 ### Revision r2570 — 2026-08-11 (main line). **cc54's FOUR DISPATCH ITEMS MERGED — `PO-seam`'s dark half answered, the quartic absorbed, and all three of `PO-7`'s computational inversions shut.**
 
 **⛭⛭⛭ A2 · DOES A MASSIVE MODE FREEZE? — YES, FOR ANY MASS.** *The mass enters the mode equation as $m^2a^2$, and
