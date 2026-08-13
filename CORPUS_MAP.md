@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2645 — 2026-08-11 (main line). **`PO-3` IS ANSWERED — both clauses, and both were already in its own row.**
+
+**⌗ THE OBJECT HAS TWO CLAUSES:** *"**why** does the SdS geometry produce a zero-sum triple with a
+$\mathbf3/\bar{\mathbf3}$ parity doubling, **and does that reason bridge to $\su(3)$**?"*
+*· the **WHY** (r2627): "the mass function is odd in the signed offset **exactly when $D$ is even**" — so at $D=4$
+the parity EXCHANGES conjugates, and **that exchange IS the doubling**;*
+*· the **BRIDGE**: the row's own status text has carried it since **c54.42–c54.62** — "The bridge was **BUILT** … no
+ambient bundle can carry $\su(3)$ … **the module is the branching itself** … the smallest connected group
+containing the three wall monodromies and the hinge $3$-cycle is **$SU(3)$**".*
+⇒⇒ ***So the row has held its own complete answer for hundreds of revisions and still read OPEN. Nothing had to be
+assembled — only read.***
+
+**⛔ AND THIS LINE'S FIRST DRAFT ASSERTED THE OPPOSITE** — *that the halves sat in `PO-3` and `PO-4` separately,
+"two rows that do not cite each other". **The check failed, and the failure was the finding.***
+⌗ ***The r2630 pattern (three triples, two registers) was reached for because it fit the shape, and the row
+disagreed.***
+
+**⛭ THE RULE:** ***when a finding matches a pattern you established recently, that is a reason to check it harder,
+not to trust it. A recent rule is the most available explanation and therefore the one most likely to be applied
+where it does not hold.***
+
+⌗ *And the answer is **stronger than the question anticipated**: the bridge is a **GENERATION** from the skeleton,
+not a reduction — which is why `PO-4`'s stale "what reduces $\so(6)\to\su(3)$?" never matched it.*
+⌗ *Table **18 → 17**; **two rows answered**, awaiting only the reserved strike.*
+
 ### Revision r2644 — 2026-08-11 (main line). **`PO-9` IS ANSWERED — the second branch of its own question was the answer, and the row said OPEN.**
 
 **⌗ THE PROMPT, one line: "Didn't that settle something?"**

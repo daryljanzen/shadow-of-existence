@@ -75,3 +75,4 @@ r2641  COMPUTED    PO-9 link (d) reproduced from the embedding; spacelike restri
 r2642  LATENT      PO-9 link (c) was never L-533s -- P6 grounds it, P12 and p0 use it; check 4 clears
 r2643  LATENT      the criterion was already put and returned SILENT -- P12 says so; no judgement was owed
 r2644  --         PO-9s two-branch question had its answer already; the row said OPEN
+r2645  LATENT      PO-3 held its own complete answer for hundreds of revisions and still read OPEN

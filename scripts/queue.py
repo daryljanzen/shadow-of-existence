@@ -64,7 +64,7 @@ def po_items():
         # ** an item whose question is ANSWERED and whose checks all pass is a RECORD awaiting a
         # procedural strike, not open work.  r2644: PO-9's object is a two-branch question and the
         # second branch is the answer -- counting it as open overstates what is left. **
-        answered = 'THE QUESTION IS ANSWERED' in l
+        answered = 'THE QUESTION IS ANSWERED' in l or 'QUESTION IS ANSWERED' in l
         cells = l.split(' | ')
         what = re.sub(r'[*`⌗]', '', cells[1] if len(cells) > 1 else '').strip()
         dates = sorted(set(re.findall(r'\br(2\d{3})\b', l)))

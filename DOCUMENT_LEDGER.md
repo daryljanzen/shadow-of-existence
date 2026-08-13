@@ -234,7 +234,7 @@ sources: [chat]
 | `gate_notes_bead_audit.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
 | `lapse_shift_synchrony_reconciliation.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
 | `LATENT_HISTORY.txt` | UNCLASSIFIED |  | — | — |  |
-| `TABLE_HISTORY.txt` | UNCLASSIFIED |  | — | — |  |
+| `TABLE_HISTORY.txt` | UNCLASSIFIED |  | — | c54.62 |  |
 
 > **⚠ THE LAG COLUMN IS A LOOK-SIGNAL, NOT A VERDICT.** *It reads the newest fork revision the file mentions, which any mention satisfies — a document can be made to look current by writing ABOUT the fork. **`declared current` is the honest column**, set only by the pass that actually brings a file current. And a forward document is ahead of the corpus by construction: "stale" is a word for the corpus, never for the instrument examining it.*
 
