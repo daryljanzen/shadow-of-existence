@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r2564 — 2026-08-11 (main line). **ITEM 52 ANSWERED FROM p0 — the de Sitter entropy is the number the corpus already states, and r2536's implication is corrected.**
+
+**⌗ WHAT r2536 GOT RIGHT AND WHAT IT GOT WRONG.** *Right: **"de Sitter entropy" at zero**, the temperature taken,
+$T=1/2\pi\alpha$ the channel through which $\hbar$ enters. Then it implied that **$S$ depends on the RATIO
+$\alpha/\ell_P$ while $T$ depends on $\alpha$ alone**, so the entropy is where the two would have to **meet** — and
+that this bites on `PO-6`'s "can one dimensionful constant regulate?"*
+⇒ ⛔ ***p0 had already met them.***
+
+**⓵ THE ARITHMETIC.** *With $\alpha=\sqrt{3/\Lambda}$:*
+$$S=\pi\left(\frac{\alpha}{\ell_P}\right)^{2}=\frac{3\pi}{\Lambda\ell_P^{2}}\approx3.14\times10^{122}$$
+
+**⛭⛭ ⓶ AND p0 STATES THAT NUMBER AND READS IT.** *"a Planck value is **not** a physical scale but what
+unit-counting yields when it has only gauges to count. **The one physical length is $\alpha$, not $\ell_P$; their
+ratio $\alpha/\ell_P\sim10^{61}$** (from $\Lambda\ell_P^2\approx3\times10^{-122}$) **is the size of the universe
+in gauge-units — a number, not a tuning**."*
+⇒ ***So the entropy would be a THIRD statement of one number, and $\ell_P$ is a GAUGE rather than a scale.***
+
+**⓷ AND "CROSS-REGISTER" IS p0's OWN WORD:** *the Planck values are "combinations of these gauges, and
+**cross-register** ones, **mixing the thermal $\hbar$ with the real-geometric $c$ and $G$**."*
+⇒ ***$T$ is a one-register quantity; $S$ is a gauge-count across two. A STRUCTURAL reason for the asymmetry — not a
+decline, not an oversight — and the ratio is the one-constant claim's OWN CONSEQUENCE, not a threat to it.***
+
+**⛭ THE RULE:** ***a zero-count tells you a WORD is absent. It does not tell you the CONTENT is absent — and when
+the count is right, the next question is not "why is this missing?" but "under what other name is it already
+here?"***
+⚠ *This is `VARIATIONAL_LEDGER`'s failure at r2558, one register in: **there a word count read content as absent;
+here it read content as unreconciled.** Both times the corpus had the material under another name, and both times
+**the instrument was right and the inference was not**.*
+
+⌗ ***And the correction leaves something smaller and better: not a question for the veins but ONE CLAUSE*** *— that
+$S=3\pi/(\Lambda\ell_P^2)$ is the same gauge-count, so the horizon thermodynamics adds no new scale. **Worth
+writing because a reader arriving from thermodynamics will compute $10^{122}$ and want to know who owns it.***
+⌗ *`PO-6`'s vein corrected where r2536 put the wrong implication, with the original reading kept beside it.*
+
 ### Revision r2563 — 2026-08-11 (main line). **THE ROUTED QUEUE IS AT FIVE OF FIFTY, and five more were discharged by other work and marked only now.**
 
 **⌗ THE READ.** *Ten items had no mechanical probe. Seven were testable against what has landed since, and* ***five

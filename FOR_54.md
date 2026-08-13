@@ -1239,7 +1239,29 @@ have something said about them; the third does not.***
 
 ---
 
-## ⛭⛭⛭ 52 · YOU TAKE THE de SITTER HORIZON'S TEMPERATURE AND NEVER ITS ENTROPY — and the entropy is where $\alpha$ and $\ell_P$ meet — added r2536
+## ⛭ ANSWERED r2564 — AND IT IS ONE CLAUSE, NOT A QUESTION — ⛭⛭⛭ 52 · YOU TAKE THE de SITTER HORIZON'S TEMPERATURE AND NEVER ITS ENTROPY — and the entropy is where $\alpha$ and $\ell_P$ meet — added r2536
+
+> ## ⛭⛭⛭ ANSWERED FROM YOUR OWN TEXT r2564 — the entropy's number is already in p0
+>
+> *r2536 routed this as an asymmetry that **bites on `PO-6`**: T depends on $\alpha$ alone, S on the ratio
+> $\alpha/\ell_P$, and `PO-6` asks whether one dimensionful constant can regulate.* ⇒ ⛔ ***That implication
+> was half wrong, and p0 says so.***
+>
+> **⓵ THE ARITHMETIC:** *$S=\pi(\alpha/\ell_P)^2=3\pi/(\Lambda\ell_P^2)\approx3.14\times10^{122}$.*
+> **⓶ AND p0 ALREADY STATES THAT NUMBER AND READS IT:** *"a Planck value is **not** a physical scale but what
+> unit-counting yields when it has only gauges to count. **The one physical length is $\alpha$, not
+> $\ell_P$; their ratio $\alpha/\ell_P\sim10^{61}$ … is the size of the universe in gauge-units — a number,
+> not a tuning.**"*
+> ⇒ ***So the entropy would be a THIRD statement of one number, and $\ell_P$ is a GAUGE, not a scale.***
+> **⓷ AND "CROSS-REGISTER" IS YOUR OWN WORD:** *the Planck values "mix the thermal $\hbar$ with the
+> real-geometric $c$ and $G$".* ⇒ ***$T$ is one-register; $S$ is a gauge-count across two. A structural
+> reason for the asymmetry — not a decline and not an oversight.***
+>
+> ⇒⇒ ***SO WHAT IS OWED IS ONE CLAUSE, not an argument: that $S=3\pi/(\Lambda\ell_P^2)$ is the same
+> gauge-count, so the horizon thermodynamics adds no new scale.*** ⌗ *Worth having because **a reader arriving
+> from thermodynamics will compute $10^{122}$ and want to know whether the framework owns it** — and it does,
+> twice over.*
+
 
 **⌗ THE ASYMMETRY, and the black-hole half is NOT the issue.** *P1 declines black-hole thermodynamics in print and
 **correctly**: "the horizon-thermodynamic apparatus, **area law and entropy alike**, has on a finite layer **no
