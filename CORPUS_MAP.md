@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2610 — 2026-08-11 (main line). **C1 AND C2 ARE ONE CONDITION — and the sentence stating them answers part of `PO-6`.**
+
+**⛔ ⓵ THE LIST IS SIX, NOT SEVEN.** *r2567 credited **C1** to P12 and **C2** to p0. **Both are one passage in P10,
+joined by "so"**: "The conformal-factor problem arises when the path integral ranges over the conformal factor of
+the metric. **Here it does not.** The substrate's scale is $\alpha$ and is fixed---not chosen, but required---**so
+there is no conformal mode to integrate over**."*
+⌗ *Invisible because r2567 found the halves by **separate greps** and credited the papers they were **quoted** in
+rather than the paper that **argues** them.*
+
+**⛭⛭ ⓶ AND THE SAME PASSAGE STATES WHAT `PO-6` ASKS.** *That row's object includes **"whether it is bounded
+below"**, and the very next clause reads: "the propagating gravitational degree of freedom of the layer is the
+**transverse-traceless shear** … precisely the sector the conformal mode is absent from. **Mode by mode that sector
+is a harmonic oscillator, whose Hamiltonian is bounded below.**"*
+⇒⇒ ***So boundedness below is SETTLED for the free TT sector, and the row never carried it.***
+⚠ *The row asks about the **INTERACTING** tower, so this is partial — **but it names exactly what is left: whether
+the interaction preserves a boundedness the free sector has**.*
+
+**⓷ AND THE CLAUSE AFTER THAT SUPPLIES THE DOMAIN:** *the areal radius **"confined … on an interval fixed by the
+progenitor mass, with the substrate curvature finite throughout"** — **a confined domain with finite curvature is
+the other half of what a UV definition needs**.*
+
+**⛭ THE RULE:** ***when a condition is assembled from fragments, find the passage that ARGUES it rather than the
+passages that quote it — the arguing passage will contain the neighbours, and the neighbours are what the fragments
+cost you.***
+⚠ *Third time this session a `%`-stripped body hid the source (`12 coloured`, the `K^2` collision, this). **The
+stripper is right for prose checks and wrong for finding where a claim is made**, and both uses run through the same
+helper.*
+
+⌗ *Joint satisfiability remains untested; **the likeliest tension — C6's per-fibre factorisation against C7's
+algebra closure — is now named and not resolved**. `PO-6` grounded 2 → 3.*
+
 ### Revision r2609 — 2026-08-11 (main line). **`PO-5`'s OBJECT IS DELIVERED — and its row has been arguing about a different question for six turns.**
 
 **⌗ THE OBJECT, from the register verbatim:** *"The quark/lepton split, and **what a baryon IS at particle

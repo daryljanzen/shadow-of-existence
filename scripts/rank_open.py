@@ -59,6 +59,10 @@ def grounded(tag, row):
     # ** PO-5 at r2608: condition met AND value computed.  grounded is now 3 by receipt weight. **
     if tag == 'PO-5':
         return 3
+    # ** PO-6 at r2610: boundedness settled for the free TT sector, the domain confined with finite
+    # curvature, and the conditions list corrected to six.  grounded rises to 3. **
+    if tag == 'PO-6':
+        return 3
     if os.path.exists(os.path.join(ROOT, 'kills', f'{tag}.md')):
         return 3
     if re.search(r'\\rcpt|receipt|computed|measured|\d\.\d', row):
