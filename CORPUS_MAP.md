@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2637 — 2026-08-11 (main line). **`A14` step ② done — "no topological order exists" was true and the wrong thing to want.**
+
+**⌗ THE BLOCK, from r2569.** *"There is no book file … the corpus cannot supply a reading order: **211 sibling-citation
+edges over 17 nodes, NO roots, so no topological order exists and none can**."*
+
+**⛭ AND A TOPOLOGICAL ORDER IS WHAT A SEQUENCE NEEDS.** *A network needs an **APPROACH** order — computable from
+the citation matrix `depmatrix` has been producing all along, as **drawn-on minus draws-on**:*
+
+    P3 +74   P1 +56   P14 +35   P4 +34   P9 +29   P8 +18   P16 +8   P6 +7   P10 +4
+    P12  0   P13 -13  P15 -20   P11 -28  P2 -31   P5 -37   p0 -54   P7 -82
+
+⇒ ***The corpus draws most on the slicing curve and the wedge; `P7` and `p0` draw most on everything else. The
+approach runs from most-cited toward most-citing, and the two synthesis papers land at the end where they belong —
+which is the front-matter note's entire content.***
+
+**⛭ THE RULE:** ***when a structure refuses the order you asked for, ask which order it DOES support. "No
+topological sort" and "no reading order" are different claims, and the second does not follow — a network orders by
+centrality even where it cannot order by dependency.***
+
+⌗ *And the matrix was already being computed every turn by the dependency-matrix generator: **the blocked step needed
+no new data, only a different reduction of data already on disk**.*
+
+⚠ *Step ① — deciding what "the book" IS — stays Daryl's, and step ③ (pandoc) is downstream of it. **Nothing is
+blocked on a node.***
+
 ### Revision r2636 — 2026-08-11 (main line). **`FOR_54` item 9 discharged — the convention was enforced by a gate built fifty-eight revisions before it was offered. THE ROUTED QUEUE IS EMPTY.**
 
 **⌗ THE ITEM, routed r2442.** *"**A convention worth having, if the fork wants it** … it was never written down
