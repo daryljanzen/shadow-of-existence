@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2630 — 2026-08-11 (main line). **THREE three-fold structures, TWO open identifications, TWO registers unaware of each other.**
+
+**⌗ HOW IT SURFACED.** *The open ledger's twelve work items had each been verdicted individually and **never read
+together**. Swept as a group, the `DISCOVERABLE-PROOF` entry collided with what r2629 had just left `PO-2` asking.*
+
+**⛭ THE THREE STRUCTURES, each built and each three-fold:**
+*· **the ROOT TRIPLE** — the offset-to-mass cubic's "three zero-sum roots are the $A_2$ weights that $S_3$
+permutes" (P13);*
+*· **the CAUSAL-CHARACTER TRIPLE** — "$1-f\in\{+1,0,-1\}$ across the excursion: **the three critical loci are the
+three causal characters**" (P4);*
+*· **the WALL MODES** — "the three wall modes are **one operator's kernel** and therefore identical particles"
+(P14).*
+
+**⇒ AND TWO OPEN QUESTIONS ASK WHETHER PAIRS COINCIDE, IN TWO REGISTERS THAT NEVER MENTION EACH OTHER:**
+*· **P4**, in the open ledger as the corpus's one `DISCOVERABLE-PROOF`: "**Whether the two triples are one
+structure** … **no derivation producing $\{0,1,2\}$ from a single condition has been exhibited**" — root triple
+against causal-character triple;*
+*· **`PO-2`**, after r2629: roots' $A_2$ against the wall modes'.*
+⇒⇒ ***Same shape, different pairs — and the ROOT TRIPLE is the shared vertex of both, appearing in neither as
+such.***
+
+⚠ **THEY MUST NOT BE MERGED** — *r2621's lesson, one revision old.* ⌗ ***But they share a term, and that is a fact
+about PRIORITY: any derivation producing the root triple from a single condition bears on BOTH.***
+
+**⛭ THE RULE:** ***a bucket verdicted item-by-item has never been read as a bucket. Sweep each class together once
+it is complete — the relations BETWEEN items are invisible to a pass that considers them one at a time, and those
+relations are what tell you which item is load-bearing.***
+
+⌗ *And the third pairing — **causal characters against wall modes** — is **asked nowhere**.*
+
 ### Revision r2629 — 2026-08-11 (main line). **`PO-2`'s resemblance is now a construction — the row's own fact, read forward.**
 
 **⌗ THE ROW USED $\varepsilon$ DESTRUCTIVELY.** *`PO-2`, the last row at zero dated moves: "$\Lambda^3$ of the wall
