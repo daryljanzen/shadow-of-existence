@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2641 — 2026-08-11 (main line). **`PO-9`'s link (d) reproduced — and the reproduction shows the spacelike restriction is FORCED. Three → two → one.**
+
+**⌗ THE REDUCTION.** *Sectioning $-X_0^2+\sum X_i^2=\alpha^2$ at $X_D=c$ gives
+**$-X_0^2+\dots+X_{D-1}^2=\alpha^2-c^2$** — a $dS_{D-1}$ of radius $\sqrt{\alpha^2-c^2}$, **with the $-X_0^2$ term
+surviving**. Checked at $D=5$ and $D=6$.*
+
+**⛭⛭ AND RUNNING THE OTHER TWO NORMAL CHARACTERS IS WHAT THE REPRODUCTION ADDED.**
+*· **TIMELIKE** ($X_0=c$): $X_1^2+\dots+X_D^2=\alpha^2+c^2$ — ***a SPHERE. The signature CHANGES.***
+*· **NULL** ($X_0-X_D=c$): a ***linear*** term in $X_0$ appears — ***not a quadric of the same form, and no radius
+to shift.***
+⇒⇒ ***So "scale-only" is not a property of plane sections generally. It holds on the spacelike orbit and fails off
+it, in two different ways.***
+
+**⌗ AND THAT REPAIRS A GAP IN THE ORIGINAL.** *E50 classifies the normal direction as **gauge** because "the
+isometry group is **transitive on unit spacelike normals**" — which makes the CHOICE gauge and says nothing about
+why that ORBIT is the right one.*
+⇒ ***Off it there is nothing for the gauge argument to act on. The restriction was doing structural work while
+reading as a convenience.***
+
+**⛭ THE RULE:** ***reproducing a step is not repeating it. Run the cases the original EXCLUDED — the exclusions are
+where the assumptions live, and a second path that only re-walks the first checks arithmetic rather than
+reasoning.***
+
+⌗ *`PO-9`'s unreproduced count: **three → two → one** in two revisions. What remains is (c), **a statement about
+every rung of the tower — not a computation**, exactly as r2640's kind-sort predicted. **④ still does not clear.***
+
 ### Revision r2640 — 2026-08-11 (main line). **Parked items no longer counted — 19 workable — and `PO-9`'s link (e) reproduced on three routes.**
 
 **⌗ THE COUNT.** *"Are you counting the book ones as 2? So does that mean 19 physics left?"* ⇒ ***Yes, and the total

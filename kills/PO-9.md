@@ -1,7 +1,7 @@
 ---
 name: kill-PO-9
 kind: KILL-RECEIPT
-current: r2640+c54.207
+current: r2641+c54.207
 description: Kill receipt for PO-9 — the dimensional rise. Route ② of PROTECTED_OPEN's exit procedure: object named, four checks answered. ④ does not clear, and that is the finding.
 sources: [chat]
 ---
@@ -99,6 +99,20 @@ steps."***
 > plane-section reduction itself, and **all three routes take that reduction as GIVEN**, so they are
 > independent of each other's METHOD and not of (d).*
 > ⇒⇒ ***④ still does not clear.***
+
+> ⛭⛭ **UPDATED AGAIN r2641 — (d) NOW HAS A SECOND PATH, so the count is ONE.**
+> *`E52_the_plane_section_reduction_reproduced.py` derives the reduction from the embedding directly:
+> sectioning $-X_0^2+\sum X_i^2=\alpha^2$ at $X_D=c$ gives $-X_0^2+\dots+X_{D-1}^2=\alpha^2-c^2$ —
+> **a $dS_{D-1}$ of radius $\sqrt{\alpha^2-c^2}$, with the $-X_0^2$ term surviving**, checked at $D=5$
+> and $D=6$.*
+> ⛭ **AND IT SHOWS WHY THE SPACELIKE RESTRICTION IS FORCED, not a convenience:** *a **TIMELIKE** normal
+> gives $X_1^2+\dots+X_D^2=\alpha^2+c^2$ — **a SPHERE; the signature CHANGES**. A **NULL** normal leaves
+> a **linear term in $X_0$** — **not a quadric of the same form, and no radius to shift**.*
+> ⇒⇒ ***"Scale-only" is not a property of plane sections generally. It holds on the spacelike orbit and
+> fails off it — so E50's transitivity argument makes the CHOICE gauge, and this shows why that ORBIT is
+> the right one.***
+> ⌗ ***What remains is (c) alone — every rung above the last being maximally symmetric — and that is a
+> statement about the tower, not a computation. ④ still does not clear.***
 
 ---
 
