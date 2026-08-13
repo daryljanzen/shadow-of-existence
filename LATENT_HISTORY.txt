@@ -65,3 +65,4 @@ r2632  LATENT      PO-2s identification stated in P14 -- roots to hinges to wall
 r2633  LATENT      PO-2s reason: every root returns the same 2M, identical in content; hinge S_3 is a within-state index
 r2634  INSTRUMENT  check_withdrawals: 8 self-corrections found; registers audited clean against all of them
 r2635  COMPUTED    so(5,1) symmetric-pair dims {6,7,10}; P9s stratum isotropies are {10,6,4}, a different set
+r2636  LATENT      item 9s convention was enforced by check_receipt_asserts from r2384, offered at r2442

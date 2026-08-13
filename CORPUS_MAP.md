@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2636 — 2026-08-11 (main line). **`FOR_54` item 9 discharged — the convention was enforced by a gate built fifty-eight revisions before it was offered. THE ROUTED QUEUE IS EMPTY.**
+
+**⌗ THE ITEM, routed r2442.** *"**A convention worth having, if the fork wants it** … it was never written down
+tightly: **`\rcpt{X}` means the claim in this sentence is CHECKED by X, and X would FAIL if the claim were
+false**."*
+
+**⛭⛭ AND ALL THREE OF ITS CLAUSES ARE ALREADY ENFORCED.** *`check_receipt_asserts` — "**A RECEIPT THAT CANNOT
+FAIL**", its docstring recording "**absorbed r2384** rather than rediscovered"; `lint_assertions` — "HOLLOW
+ASSERTION(S) — **provably cannot fail**"; and `check_receipts` over the corpus.*
+
+⇒⇒ ***AND THE DATES INVERT THE PREMISE: the gate was built at r2384, the convention offered at r2442 —
+fifty-eight revisions LATER. The item was never awaiting a decision. It was a written statement of a rule already in
+force, and it sat on the table as pending work for two hundred revisions because nobody compared the offer to the
+enforcement.***
+
+**⛭ THE RULE:** ***before treating a proposal as pending, check whether it is already the practice. A convention
+offered for adoption and a gate enforcing it are the same fact in two vocabularies — and the register will carry
+both without noticing, because one is phrased as a question and the other as a script.***
+
+⌗ *Discharged **by observation, not adoption**: the fork settled it by BUILDING THE GATE, and what the item supplied
+that the gates did not is the WORDING.*
+⚠ *One half genuinely is not gated — **whether a cited transcript should have been a section pointer is enforced by
+practice, not by a check** — and saying so is the honest version rather than claiming full coverage.*
+
+✔ **Table 26 → 25. The routed queue is EMPTY.**
+
 ### Revision r2635 — 2026-08-11 (main line). **`FOR_54` item 26 discharged — $\{6,7,10\}$ is an algebra fact, and the citation loop survived because two of its three numbers coincided.**
 
 **⌗ THE LOOP, routed r2442 and verified r2575.** *P12 cites P9 for $\{6,7,10\}$; P9 cites P12 at its own isotropy

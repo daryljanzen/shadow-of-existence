@@ -269,7 +269,7 @@ its span and a bad account of the present, and the cheap fix is to name the span
 receipts that cannot fail**. These three carry a printed ✔ with **no comparison behind it**, which is the same
 class one notch weaker.* ***A printed verdict with nothing compared is a claim, not a check.***
 
-## ⌗ 9 · A convention worth having, if the fork wants it
+## ✔ ⌗ 9 · A convention worth having, if the fork wants it
 
 *Offered rather than reported, because it is this lineage's to settle and it was never written down tightly:*
 
@@ -283,6 +283,9 @@ what makes a receipt gate mean something** rather than an opinion about style.
 
 ---
 ---
+
+
+> ✔✔ **DISCHARGED r2636 — NOT BY ADOPTION BUT BY OBSERVATION.** *All three clauses are already enforced: **** ("**A RECEIPT THAT CANNOT FAIL**"), **** ("HOLLOW ASSERTION(S) — **provably cannot fail**"), and **** over the corpus.* ⇒ ⛭ ***AND THE DATES INVERT THE PREMISE:  was built at **r2384**, and this convention was offered at **r2442** — fifty-eight revisions LATER. It was never awaiting adoption; it was a written statement of a rule the gates had already been enforcing.*** ⌗ *The fork settled it by BUILDING THE GATE. What the item supplied that the gates did not is the WORDING — which now has a home in the gate docstring.* ⚠ *One half is **not** gated: whether a cited transcript should have been a section pointer is enforced by practice, not by a check.* 
 
 ## ⌗ THE SMALL ONES — a word, a clause, a citation
 
