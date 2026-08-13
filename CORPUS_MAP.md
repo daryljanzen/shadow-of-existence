@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2577 — 2026-08-11 (main line). **`THE_STATE.md` — twelve unfinished things, sorted by the KIND OF ACT that finishes each. And a miscount of twenty-four.**
+
+**⛔ THE MISCOUNT FIRST.** *An audit of "everything unfinished" read `FOR_56`'s **26 unmarked headings as 26 open
+items**, and `FOR_57`'s as more — arriving at **28**.*
+⇒ ***Both files are `kind: RECORD`. `FOR_56` says so in its own job line: "THE RETURN INBOX — what the working fork
+has found." Its numbered sections are things 54 REPORTED, each acted on or accepted at the time. Twenty-four of the
+twenty-eight were never work.***
+⛭ ***THE RULE: a heading count measures FORMAT, not obligation. Read `kind:` before counting — a RECORD's unmarked
+heading means "this was reported" and a QUEUE's means "this is owed", and nothing in the text distinguishes them.***
+
+**⌗ AND THE AXIS THAT SURVIVED THE MISCOUNT.** *Not who owns a thing —* ***what kind of act finishes it.*** *Four
+kinds, and every unfinished thing is exactly one.*
+
+**⇒⇒ TWELVE THINGS: 6 CALCULATIONS · 3 AUTHORISATIONS · 2 PARAGRAPHS · 1 EDITORIAL** *(plus 2 conventions that are
+not work).*
+*· **CALCULATION** — `PO-2`, `PO-3`, `PO-4`, `PO-5`, `PO-6`, `PO-seam`. ***These are the programme. Each is MAPPED:
+it names what would move it.***
+*· **AUTHORISATION** — `PO-7`, `PO-8`, `PO-9`, all three with kill receipts. ***The exit procedure's last clause is
+a named act in a written procedure, not a gap*** *— and `PO-9`'s ④ does not clear, so its alternative is a second
+path through three steps.*
+*· **PARAGRAPH** — item 26's citation loop (one clause), and `L-218` A14 steps 1–2 (a page).*
+*· **EDITORIAL** — `L-218` A15, drawn from `CREDO`.*
+
+**⌗ WHAT "ALL CLEAR" MEANS HERE:** ***three finish by an act already specified in a procedure; three more by a
+paragraph or a page; six are physics and finish when the physics does.***
+⇒ ***So the corpus is six items from having nothing left but its own open questions — which is the state it was
+built to reach.***
+
+⚠ *And the caveat is in the file: **written by a line that miscounted by twenty-four in the same session**. ***The
+kinds are more reliable than the totals.***
+
 ### Revision r2576 — 2026-08-11 (main line). **THE TWO VEINS CARRYING THE MOST WORK WERE THE THINNEST ROWS IN `PROTECTED_OPEN` — brought current, and gated.**
 
 **⌗ THE MEASUREMENT.** *`THE_CLOSURE_PLAN` states the target state for every item: **STRUCK, or MAPPED-AND-OPEN with

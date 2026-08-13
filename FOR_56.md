@@ -1,10 +1,23 @@
 ---
 name: for-56
 kind: RECORD
-current: r2573+c54.207
+current: r2577+c54.207
 job: THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
+
+> ## ⌗ THIS FILE IS AN INBOX, NOT A QUEUE — stated r2577 because it was miscounted
+>
+> *`kind: RECORD`. **THE RETURN INBOX** — what the working fork has found in the observer line's
+> instruments and register.* ⇒ ***Its numbered sections are things 54 REPORTED, each already acted on or
+> accepted at the time. They are not owings and do not need discharging.***
+>
+> ⚠ *At r2577 an audit of "everything unfinished" read this file's **26 unmarked headings as 26 open
+> items**, and `FOR_57`'s as more.* ⇒ ⛔ ***Twenty-four of twenty-eight were never work. The real total
+> across the corpus is twelve.***
+> ⌗ ***A RECORD and a QUEUE look identical to a heading count, and only the `kind:` line distinguishes
+> them — which is what `kind:` is for, and it was not read.***
+
 
 ## ✔✔ ITEM 17 (`L-535`) — DONE r2572–73, before it was read
 
