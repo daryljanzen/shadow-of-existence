@@ -35,3 +35,5 @@ r2620  --      built latent.py
 r2621  LATENT  boundary_paper distinguishes the two unbuilt sectors in one sentence; r2618's dedupe was wrong
 r2622  --      built TABLE_HISTORY.txt, the weight-loss chart
 r2623  LATENT  PO-12's step (1) is computed in sec:envelope, two sections before the debt is named
+r2624  --      built LATENT_HISTORY.txt; the regex was under-counting 60% as 40%
+r2625  LATENT  PO-10's odd/even half: C5b_baryon_term already puts it on the expansion leg at Rb=0.60

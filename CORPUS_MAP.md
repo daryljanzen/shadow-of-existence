@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2625 — 2026-08-11 (main line). **`PO-10`'s odd/even half already has its mechanism and its parameter — the row's own description was a receipt's conclusion.**
+
+**⛭⛭ THE FINDING.** *`PO-10` names its second half as "**imprinted by the baryon loading on the expansion leg**",
+reading as a description of unstarted work.*
+⇒ ***That is `C5b_baryon_term`'s result: "the driving is set at the seam with $R_b$ negligible; **the asymmetry is
+imprinted afterwards on the expansion leg, where $R_b$ grows by a factor $(1+z_{onset})/(1+z_{rec})=6.17$**", with
+**$R_b=0.60$ at recombination** — and P15 carries it in its own voice.***
+
+**⌗ SETTLED:** *where the asymmetry is imprinted (post-seam, expansion leg), why it does **not** correct the driving
+envelope, and the value of the parameter that sets it.*
+**⚠ NOT SETTLED:** ***the height PATTERN itself.*** *Knowing $R_b$ and where it acts is not the same as producing
+the odd/even heights and putting them against the sky.*
+⇒⇒ ***So the run owed is narrower: not "work out the odd/even physics" but "produce the pattern from an $R_b$
+already computed on a leg already identified".***
+
+**⛭ THE RULE:** ***read a register row's OBJECT column as a claim and ask whether it is already established. A row
+states what the item is for in the language of whatever settled it — so the more precisely a row describes its own
+object, the more likely part of it is done.***
+
+⌗ *`C5b` was written to answer whether the baryon term corrects the driving envelope. **Its answer to that was "no,
+it acts somewhere else"** — which is precisely why nobody followed it to where it does act.*
+
+⌗ *Also: a **receipt-prefix collision** (a second `C11_` in `P15_CR_cosmology`) made the new receipt run the wrong
+file. Renamed `C12_`, and **`check_receipt_prefixes` — which exists for exactly this — is now wired**.*
+
+⌗ **LATENT: seventh in fourteen. Table 28, dark halves 2 of 4.**
+
 ### Revision r2624 — 2026-08-11 (main line). **`LATENT_HISTORY.txt` — the split-safety ledger held live, and the regex was under-counting.**
 
 **⌗ THE POINT.** *`PO-12` turning out half-built **"adds another to the other counter"** — ***a narrowing that comes
