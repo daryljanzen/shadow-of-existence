@@ -48,7 +48,7 @@ def recorded():
         if not l.strip() or l.startswith('#'):
             continue
         parts = l.split(None, 2)
-        out.append((parts[0], parts[1] == 'LATENT', parts[2].strip() if len(parts) > 2 else ''))
+        out.append((parts[0], parts[1], parts[2].strip() if len(parts) > 2 else ''))
     return out
 
 
@@ -58,24 +58,31 @@ def main():
         print()
         print('  latent.py -- is it safe to split the work yet?   (hand-kept ledger)')
         print()
-        for lo, hi in ((0, 10), (10, 20)):
+        for lo, hi in ((0, 12), (12, 24)):
             w = rec[lo:hi]
             if not w:
                 continue
-            n = sum(1 for _, a, _ in w if a)
-            print(f'    {w[0][0]}-{w[-1][0]}: {n} of {len(w)} LATENT  ({n / len(w):.0%})')
+            from collections import Counter
+            c = Counter(k for _, k, _ in w)
+            print(f'    {w[0][0]}-{w[-1][0]}:  LATENT {c["LATENT"]}  COMPUTED {c["COMPUTED"]}  '
+                  f'INSTRUMENT {c["INSTRUMENT"]}')
         print()
         recent = rec[-13:]
-        n = sum(1 for _, a, _ in recent if a)
-        print(f'    last 13: {"".join("L" if a else "." for _, a, _ in recent)}   {n} latent')
+        n = sum(1 for _, k, _ in recent if k == 'LATENT')
+        comp = sum(1 for _, k, _ in recent if k == 'COMPUTED')
+        print(f'    last 13: {"".join(k[0] for _, k, _ in recent)}   '
+              f'(L)atent {n}  (C)omputed {comp}  (I)nstrument {13 - n - comp}')
         print()
-        for rev, a, what in rec[-6:]:
-            print(f'      {rev}  {"LATENT" if a else "--    "}  {what[:62]}')
+        for rev, k, what in rec[-6:]:
+            print(f'      {rev}  {k:<11}{what[:60]}')
         print()
-        if n >= 3:
-            print('    ⛔ ** DO NOT SPLIT. **  *** The corpus is still telling us things.  Two nodes would')
-            print('       both find the same latent thing, or one would BUILD what the other found')
-            print('       sitting there. ***')
+        # ** the decision is not "is LATENT low" but "is COMPUTED high RELATIVE to LATENT" -- two nodes
+        # computing different things is safe; two nodes reading the same corpus is not. **
+        if n > comp:
+            print(f'    ⛔ ** DO NOT SPLIT: LATENT {n} > COMPUTED {comp}. **  *** Two nodes computing')
+            print('       different things is safe; two nodes READING the same corpus is not -- they')
+            print('       would both find the same latent thing, or one would BUILD what the other')
+            print('       found sitting there. ***')
         else:
             print('    ✔ ** The latent stock looks thin.  What remains is construction, which')
             print('      parallelises. **')

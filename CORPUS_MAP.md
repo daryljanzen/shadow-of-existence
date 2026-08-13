@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2628 — 2026-08-11 (main line). **THREE KINDS OF TURN, NOT TWO — and `COMPUTED` has gone to zero.**
+
+**⌗ THE TAXONOMY, PROPOSED AND TESTED.** *"A 0 and L means the whole thing was behind and it took a turn for the
+programme to learn better what it holds. A 0 and a 0 is me injecting yet another thing into the engine. And anything
+else means something happened to advance the corpus."*
+⇒ ***Applied to the recorded history it classified **21 of 24** turns correctly. **r2605 and r2607 broke it** — they
+read as INJECTION and were **computations**: $S^2=-1$ from the corpus's own lift, and the radial operator's real
+structure.***
+
+**⛭ SO THE SECOND AXIS TAKES THREE STATES:**
+*· **LATENT** — the answer was already in the corpus and reading found it. ***Does not parallelise.***
+*· **COMPUTED** — a new result produced by calculation. ***This is what parallelises.***
+*· **INSTRUMENT** — a tool, ledger or gate built to run the work better.*
+
+⇒⇒ ***And that sharpens the split decision from "is LATENT low" to "is COMPUTED HIGH RELATIVE TO LATENT". Two nodes
+computing different things is safe; two nodes reading the same corpus is not.***
+
+**⛔ AND THE REFINED NUMBER IS WORSE THAN THE OLD ONE, WHICH IS WHY IT IS BETTER:**
+
+    r2604-r2615:  LATENT 6   COMPUTED 2   INSTRUMENT 4
+    r2616-r2627:  LATENT 8   COMPUTED 0   INSTRUMENT 4
+
+⇒ ***The parallelisable work has gone to ZERO while catch-up accelerated. The old signal said "do not split"; this
+one says why, and says the gap is widening.***
+
+**⛭ THE RULE:** ***when someone hands you a classification, run it over the recorded history before adopting it.
+The cases it misfiles are where the real distinction lives — and here the misfiled cases were precisely the ones that
+would have licensed splitting.***
+
 ### Revision r2627 — 2026-08-11 (main line). **`PO-3`'s "why" is answered dimensionally — and it is the first finding in a row nobody had ever worked.**
 
 **⌗ THE ROW, with ZERO dated moves in the register's history**, *asks "**why does the SdS geometry produce a zero-sum

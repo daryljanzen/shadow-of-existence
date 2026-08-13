@@ -13,29 +13,48 @@
 # whether to split the work should be RECORDED, not guessed.  From here it is appended by hand each turn,
 # with what was already there and where. ***
 #
-# ** FORMAT: ** revision, LATENT or --, what was already sitting there.
+# ** FORMAT: ** revision, KIND, what the turn did.
+#
+# ** THREE KINDS, r2628 -- Daryl's taxonomy, refined where it broke. **  He proposed: "A 0 and L means
+# the whole thing was behind and it took a turn for the programme to learn better what it holds.  A 0 and
+# a 0 is me injecting yet another thing into the engine to help it run more.  And anything else I'd guess
+# means something happened to advance the corpus."
+#
+#   ⇒ ** It holds on 21 of 24 turns, and the three breaks are the useful part: **  *** r2605 and r2607
+#       read as INJECTION under the two-state rule, and they were not -- they were COMPUTATIONS ($S^2=-1$
+#       from the corpus's own lift; the radial operator's real structure).  A computed result is neither
+#       catch-up nor an injection: it is the programme advancing BY CONSTRUCTION. ***
+#
+#   ** LATENT **    the answer was already in the corpus and reading found it.  ** Does NOT parallelise. **
+#   ** COMPUTED **  a new result produced by calculation.  *** THIS is what parallelises. ***
+#   ** INSTRUMENT ** a tool, a ledger, or a gate built to run the work better.
+#
+#   ⌗ *** And that sharpens the split signal: the decision is not "is LATENT low" but "is COMPUTED
+#       high relative to LATENT".  Two nodes computing different things is safe; two nodes reading the
+#       same corpus is not. ***
 
-r2604  LATENT  the antilinear structure a mod-2 index needs is realised on the built zero-modes (P13)
-r2605  --      computed S^2 = -1 from the corpus's lift; a name collision hid the sign
-r2606  LATENT  the operator whose kernel is counted is the RADIAL one, said two sentences from the lift
-r2607  --      computed the radial operator's real structure; the mod-2 condition is met
-r2608  LATENT  P14 had already computed the parity: "three and zero lying in different parity classes"
-r2609  LATENT  PO-5's object is delivered in P14's own delivered-list; the row argued a different branching
-r2610  LATENT  C1 and C2 are one sentence in P10, and it also states PO-6's boundedness for the free sector
-r2611  LATENT  the C6/C7 tension was dissolved by a receipt written for another purpose (D1)
-r2612  --      built status.py; found the CI workflow's text-gate loop had no `do`
-r2613  --      built the DARK HALVES ANSWERED metric
-r2614  --      built the narrowing counter; found two stale veins and a truncating window
-r2615  --      built queue.py; the list existed only in this line's head
-r2616  LATENT  PO-8's kill receipt recorded a Daryl authorisation 238 revisions before the row was struck
-r2617  LATENT  printing the items exposed duplicates a bucket count had concealed
-r2618  --      deduped five ledger entries (one wrongly -- see r2621)
-r2619  LATENT  P10's next clause: the decomposition needs no floor, and the floor is what it leaves open
-r2620  --      built latent.py
-r2621  LATENT  boundary_paper distinguishes the two unbuilt sectors in one sentence; r2618's dedupe was wrong
-r2622  --      built TABLE_HISTORY.txt, the weight-loss chart
-r2623  LATENT  PO-12's step (1) is computed in sec:envelope, two sections before the debt is named
-r2624  --      built LATENT_HISTORY.txt; the regex was under-counting 60% as 40%
-r2625  LATENT  PO-10's odd/even half: C5b_baryon_term already puts it on the expansion leg at Rb=0.60
-r2626  LATENT  PO-4: P14 GENERATES SU(3) from the wall monodromies; the row asks what REDUCES so(6)
-r2627  LATENT  PO-3's why: P14's parity clause answers it dimensionally; the row had never been worked
+r2604  LATENT      the antilinear structure a mod-2 index needs is realised on the built zero-modes (P13)
+r2605  COMPUTED   computed S^2 = -1 from the corpus's lift; a name collision hid the sign
+r2606  LATENT      the operator whose kernel is counted is the RADIAL one, said two sentences from the lift
+r2607  COMPUTED   computed the radial operator's real structure; the mod-2 condition is met
+r2608  LATENT      P14 had already computed the parity: "three and zero lying in different parity classes"
+r2609  LATENT      PO-5's object is delivered in P14's own delivered-list; the row argued a different branching
+r2610  LATENT      C1 and C2 are one sentence in P10, and it also states PO-6's boundedness for the free sector
+r2611  LATENT      the C6/C7 tension was dissolved by a receipt written for another purpose (D1)
+r2612  INSTRUMENT  built status.py; found the CI workflow's text-gate loop had no `do`
+r2613  INSTRUMENT  built the DARK HALVES ANSWERED metric
+r2614  INSTRUMENT  built the narrowing counter; found two stale veins and a truncating window
+r2615  INSTRUMENT  built queue.py; the list existed only in this line's head
+r2616  LATENT      PO-8's kill receipt recorded a Daryl authorisation 238 revisions before the row was struck
+r2617  LATENT      printing the items exposed duplicates a bucket count had concealed
+r2618  INSTRUMENT  deduped five ledger entries (one wrongly -- see r2621)
+r2619  LATENT      P10's next clause: the decomposition needs no floor, and the floor is what it leaves open
+r2620  INSTRUMENT  built latent.py
+r2621  LATENT      boundary_paper distinguishes the two unbuilt sectors in one sentence; r2618's dedupe was wrong
+r2622  INSTRUMENT  built TABLE_HISTORY.txt, the weight-loss chart
+r2623  LATENT      PO-12's step (1) is computed in sec:envelope, two sections before the debt is named
+r2624  INSTRUMENT  built LATENT_HISTORY.txt; the regex was under-counting 60% as 40%
+r2625  LATENT      PO-10's odd/even half: C5b_baryon_term already puts it on the expansion leg at Rb=0.60
+r2626  LATENT      PO-4: P14 GENERATES SU(3) from the wall monodromies; the row asks what REDUCES so(6)
+r2627  LATENT      PO-3's why: P14's parity clause answers it dimensionally; the row had never been worked
+r2628  INSTRUMENT  three kinds, not two: LATENT / COMPUTED / INSTRUMENT, and COMPUTED is what parallelises
