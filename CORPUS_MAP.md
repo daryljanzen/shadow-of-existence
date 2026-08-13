@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2621 — 2026-08-11 (main line). **TWO unbuilt fermion sectors, not one — r2618's dedupe was wrong, and the table goes 27 → 28.**
+
+**⛔ THE CORRECTION.** *r2618 collapsed three `NAMED-UNBUILT` entries onto `PO-11` and reported **32 → 27** as pure
+gain.* ⇒ ***One was not a duplicate, and `boundary_paper` says so in the sentence before:*** *the built sector "**is
+a spinor on the real Lorentzian slicing structure, NOT a gauge-acted sector on the compact face**", so it "supplies
+**no equivariant index for the obstruction to act on**" — and "**the compact-face fermion sector the obstruction
+would act on remains unbuilt**".*
+
+**⌗ TWO SECTORS:**
+*· **`PO-11`'s** — the full **PROPAGATING** spinor field sector on the **Lorentzian** slicing structure;*
+*· **`boundary_paper`'s** — the **COMPACT-FACE**, **gauge-acted** sector an equivariant index would act on.*
+
+**⇒ AND THE TEST THAT SETTLES IT IS WHY EACH IS UNBUILT.** *The first because **the delivered modes are BOUND** —
+normalizable in the leaf's proper measure where the propagating Dirac-norm mode is not. The second because **the
+substrate supplies no such face**, $\mathfrak{su}(3)$ "being no isometry of the non-compact substrate to begin
+with".*
+⇒⇒ ***Building one does not build the other. A single construction cannot be both Lorentzian and on the compact
+face.***
+
+**⛭ THE RULE:** ***a dedupe pass is a CLAIM that two things are the same, and a claim needs a check. r2618 deduped
+on SHARED VOCABULARY — both entries said "fermion sector … unbuilt" — and the paper distinguishes them by a clause
+the vocabulary does not carry. The test: ASK WHY EACH IS UNBUILT. Two things unbuilt for different reasons are two
+things.***
+
+⚠ *Table **27 → 28**. ***A correction that ADDS an item is one a dedupe pass will never produce on its own — which
+is exactly why the pass needed auditing rather than celebrating.***
+
 ### Revision r2620 — 2026-08-11 (main line). **`scripts/latent.py` — the rate of latent findings is RISING, and it says do not split.**
 
 **⌗ THE JUDGEMENT, AND THE REASON IS STRUCTURAL.** *"Can't split while turns like this last one are still
