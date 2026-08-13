@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2555 — 2026-08-11 (main line). **c54.206 MERGED, AND THE SILENT-DISCARD CLASS IS GATED — six instances, not three, and the gate found the sixth on its first run.**
+
+**⌗ c54.206.** *Item 56 applied, and **cc54's number reproduced independently before it was written**: adiabatic
+first peak 220, isocurvature 294, displacement +74; 206 over 215 bins against 327,150. **Two nodes, one number, to
+the digit.*** ⌗ *And the routing had omitted the part that makes it carry: **the instrument solves
+$A=(m^TFd)/(m^TFm)$ at every evaluation, so the figure is already amplitude-marginalised** — the "just rescale it"
+objection is **pre-empted by the instrument**, not answered by the revision, and **no scaling moves a peak**.*
+
+**⛭⛭⛭ AND 54's CLASS QUESTION IS THE ENTRY.** *It named three instances of **a loader that silently discards input,
+with the gate downstream reporting the consequence**, and said a fourth would warrant a gate of its own.*
+⇒ ***There were six.***
+*· `check_receipts` and `make_receipt_appendix` filtering on `startswith('| P')` while the core is **`p0`
+lowercase** (c54.203); · `regen_board`'s LEADS dict with **two `L-171` keys** (r2552); · `check_currency`'s regex
+rejecting `rNNNN+c54.N` — **40 of 70 declarations** (r2550); · **`run_all_receipts` and `work_entry_points` with the
+first filter unfixed — twelve receipts the runner never ran** — plus a **SECOND load site inside `check_receipts`
+itself**; · and **`check_supersession`, found by the new gate on its first run**.*
+
+**✔ `corpus/check_loaders.py`, wired and seeded three ways.** *Duplicate dict keys via `ast`; live case-sensitive
+paper-column filters; and every `current:` declaration put through the real parser.*
+
+**⌗ TWO SUB-RULES EARNED IN THE BUILDING:**
+*· ***one fix per FILE is not one fix per LOAD SITE*** — a file loading the same table twice can be half-fixed with
+nothing to show it;*
+*· ***a lint that cannot tell a quoted mention from a call punishes documentation*** — the first version flagged
+`make_receipt_appendix`'s **own docstring account of the c54.36 fix** as a live filter. **Tokenising, not string
+tests.***
+
+⚠ ***THE LIMIT: a silent discard is by construction invisible, so the gate can only encode the shapes already
+caught. The instance list is the SPECIFICATION, not a defect record*** *— which is c54.206's namespace-lint property
+one register out, and it said so first.*
+
 ### Revision r2554 — 2026-08-11 (main line). **`L-228` STRUCK — the extension was not expensive, it was WRONG, and the grammar said so.**
 
 **⌗ THE ROW.** *Extend `check_loci` to **possessive and compound-noun** forms. Node 52 built it, **left it

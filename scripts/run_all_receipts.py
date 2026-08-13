@@ -57,7 +57,13 @@ def registered():
     idx = os.path.join(ROOT, 'receipts', 'INDEX.md')
     out, seen = [], set()
     for ln in open(idx, encoding='utf-8'):
-        if not (ln.startswith('| P') or ln.startswith('| `')):
+        # ** r2555: the paper column is CASE-SENSITIVE here and the geometric core is written
+        # `p0` lowercase, so this runner skipped TWELVE receipts -- the fourth instance of the
+        # silent-discard class (c54.203 fixed check_receipts and make_receipt_appendix; the
+        # duplicate dict key at r2552 and check_currency's parser at r2550 were the others).
+        #   ⇒ ** A runner that skips a receipt leaves NO trace: the receipt simply never runs,
+        #     and a green run means nothing about it. **
+        if not (ln[:3].upper().startswith('| P') or ln.startswith('| `')):
             continue
         c = [x.replace('\\|', '|').strip() for x in re.split(r'(?<!\\)\|', ln.rstrip('\n'))[1:-1]]
         if len(c) < 4 or c[0] == 'paper':

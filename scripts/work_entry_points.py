@@ -136,7 +136,9 @@ def struck_rows():
 def receipts():
     out = []
     for ln in read(RIDX).split('\n'):
-        if ln.startswith('| P') and ln.count('|') >= 3:
+        # ** r2555: case-sensitive on the paper column, and p0 is lowercase -- the same
+        # silent-discard shape fixed in run_all_receipts and check_receipts. **
+        if ln[:3].upper().startswith('| P') and ln.count('|') >= 3:
             cells = [c.strip() for c in ln.split('|')[1:-1]]
             out.append((cells[0][:60], ' '.join(cells[1:3])))
     return out

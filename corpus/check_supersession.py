@@ -98,7 +98,10 @@ def main():
     # receipts: INDEX rows, with their build revision if present
     receipts = []
     for ln in idx.split("\n"):
-        if not ln.startswith("| P"):
+        # ** r2555: found by check_loaders on its FIRST RUN -- a sixth instance of the
+        # silent-discard class, in a file nobody had looked at.  The paper column is
+        # case-sensitive here and the geometric core is `p0` lowercase. **
+        if not ln[:3].upper().startswith("| P"):
             continue
         stem = re.search(r"`([A-Za-z0-9_/]+\.py)`", ln)
         # r2382: the build-revision regex required "built rN (c54.N)" and matched only 85 of 266

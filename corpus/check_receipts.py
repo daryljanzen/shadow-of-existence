@@ -110,7 +110,12 @@ for _p,_o,_w in _ad: print(f"    [ok]   {os.path.relpath(_p,root)} vs {_o}: {_w}
 _origin = {}
 _bound = {}
 for _ln in open(idx, encoding='utf-8'):
-    if not (_ln.startswith('| P') or _ln.startswith('| `')):
+    # ** r2555: a SECOND load site in this same file, missed when the first was fixed at
+    # c54.203.  ** The paper column is case-sensitive and the geometric core is `p0` lowercase,
+    # so this dict was built without p0's rows while the check above had been corrected.
+    #   ⇒ *** One fix per FILE is not one fix per LOAD SITE, and a file that loads the same
+    #       table twice can be half-fixed with nothing to show it. ***
+    if not (_ln[:3].upper().startswith('| P') or _ln.startswith('| `')):
         continue
     _c = [x.replace('\\|', '|').strip() for x in re.split(r'(?<!\\)\|', _ln.rstrip('\n'))[1:-1]]
     if len(_c) != 8 or _c[0] == 'paper':
