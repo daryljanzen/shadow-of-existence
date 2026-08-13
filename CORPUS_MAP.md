@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2614 — 2026-08-11 (main line). **NARROWING IS NOW REPORTED — and adding it exposed two stale veins and a truncating window.**
+
+**⌗ THE DEFECT IN r2613's METRIC.** *`DARK HALVES ANSWERED` is **binary**, and most turns do not flip it.*
+⇒ ***What a turn usually does is NARROW a dark half — and a report showing only the flip renders six turns of
+narrowing as zero.***
+
+**✔ ADDED: per dark half, how many times it has narrowed and when it last did.**
+*`L-221` **6× last r2609** · `L-165` **4× last r2611** · `L-175` 3× last r2572 · `L-202` 2× last r2600.*
+
+**⌗ AND ADDING IT EXPOSED THREE THINGS:**
+*· ⛔ **`L-165`'s vein text had none of r2610 or r2611** — the `PO-6` register row got them and the board did not;*
+*· ⛔ **`L-221`'s dark half was three revisions stale** — still "no operator whose kernel is the four", a bridge
+question r2609 showed the object did not need. Rewritten to what is actually dark: **the COUPLING**;*
+*· ⛔ **the first implementation used a fixed 1400-character window** on the DARK section, so it reported **r2570 for
+a vein narrowed twice since**. ⇒ ***A truncating window is worse than no metric: it reports a number that looks
+measured and is a function of the buffer size.***
+
+**✔ ALSO ADDED: what got BUILT recently, by item.** *`RECEIPTS: 423` is a number that only rises; **which receipts,
+against which item** is the trace of a turn on the physics rather than on the bookkeeping. Currently **111 receipts,
+13 gates, 2 kill receipts** in the window.*
+
+**⛭ THE RULE:** ***a progress metric needs a coarse axis and a fine one. The coarse says whether the thing is done;
+the fine says whether the turn moved it. Report both, or every turn that does real work reports as a turn that did
+none.***
+
+⌗ *And `L-221`'s rewrite did **not** move the coarse number — it stayed at **2 of 4** — because **narrowing is not
+answering**.*
+
 ### Revision r2613 — 2026-08-11 (main line). **THE PROGRESS NUMBER IS `DARK HALVES ANSWERED` — 2 of 4 — and it refused to move for a rewrite.**
 
 **⌗ THE QUESTION: "which numbers am I actually supposed to see moving?"** ⇒ ***Most of them should not.***

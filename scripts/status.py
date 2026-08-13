@@ -101,7 +101,26 @@ def main():
             answered.append(m.group(1))
     print(f'  ⛭ DARK HALVES ANSWERED: {len(answered)} of {len(veins)}   '
           f'{"  ".join(sorted(answered)) if answered else "(none)"}')
-    print(f'    still dark: {"  ".join(sorted(set(veins) - set(answered)))}')
+    print()
+    # ** ---- NARROWING, added r2614 ---- **
+    # ** Daryl: "I want all gaps that narrow as you work reported." **  ⇒ *** ANSWERED is binary and
+    # most turns do not flip it.  What a turn usually does is NARROW a dark half -- and a report that
+    # shows only the flip makes six turns of narrowing look like nothing. ***
+    #   ⌗ ** A narrowing is dated in the vein text.  The LAST date on a dark half is when it last
+    #   moved; the count of dates is how many times. **
+    print('    each dark half, with when it last narrowed:')
+    for v in sorted(veins, key=lambda x: int(x[2:])):
+        m = re.search(r'## `' + v + r'`', board)
+        seg = board[m.start():m.start() + 3000]
+        d = seg.find('DARK')
+        # ** the DARK section runs to the next bullet or the section end -- a fixed window silently
+        # truncated it and reported r2570 for a vein narrowed twice since. **
+        end = seg.find('\n- ', d)
+        win = re.sub(r'\s+', ' ', seg[d:end if end > d else d + 4000])
+        dates = sorted(set(re.findall(r'\br(2\d{3})\b', win)))
+        mark = '✔' if v in answered else '⛔'
+        print(f'      {mark} {v:<7} narrowed {len(dates):>2}x, last r{dates[-1] if dates else "—"}')
+    print()
     print('    ⌗ ** This is the number that measures the programme closing.  The others measure how')
     print('      well it is being kept. **')
     print()
@@ -147,6 +166,25 @@ def main():
     gates = len(names)
     rcpts = len(glob.glob(os.path.join(ROOT, 'receipts', '**', '*.py'), recursive=True))
     print(f'  GATES: {gates}   RECEIPTS: {rcpts}')
+    print()
+    # ** ---- WHAT GOT BUILT, added r2614 ---- **
+    # ** Daryl: "along with what gets built." **  ⇒ *** The receipts count alone says nothing -- 423
+    # is a number that only rises.  What is informative is what was built RECENTLY and against which
+    # item, because that is the trace of a turn on the physics rather than on the bookkeeping. ***
+    import subprocess as _sp
+    out = _sp.run(['git', 'log', '--since=40.hours', '--diff-filter=A', '--name-only',
+                   '--pretty=format:'], cwd=ROOT, capture_output=True, text=True).stdout
+    built = sorted({l for l in out.split('\n')
+                    if l.startswith('receipts/') and l.endswith('.py')})
+    kills_new = sorted({l for l in out.split('\n') if l.startswith('kills/')})
+    gates_new = sorted({l for l in out.split('\n')
+                        if l.startswith('corpus/check_') and l.endswith('.py')})
+    print(f'  BUILT RECENTLY: {len(built)} receipts, {len(gates_new)} gates, {len(kills_new)} kill receipts')
+    for b in built[-8:]:
+        item = b.split('/')[1] if '/' in b else '?'
+        print(f'    {item:<26} {os.path.basename(b)[:52]}')
+    for g in gates_new:
+        print(f'    {"[GATE]":<26} {os.path.basename(g)}')
     print()
     print('  ⌗ ** If a turn changes nothing above, the turn changed nothing. **')
     print()
