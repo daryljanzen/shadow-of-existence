@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2578 — 2026-08-11 (main line). **THE COUNT WAS WRONG BY TWO — a frontier item in no register, found by testing the completeness claim against the papers.**
+
+**⛔ THE QUESTION THAT FOUND IT.** *`THE_STATE` said **twelve** and implied that was everything. Asked whether it
+covered the **R-M and R-P theatres and the papers' own frontier sections**, it had **not been checked**.*
+⇒ *Tested: **18 frontier/open sections across 13 papers**.*
+
+**⌗ AND P7 KEEPS ITS OWN COUNT HONESTLY, WHICH IS WHAT MADE THE GAP FINDABLE.** *"**it opened at seven and stands at
+four**", with items one, three and seven **resolved and moved below the list** — and the paper says why: **"a
+frontier list whose entries quietly empty is worse than none: a reader uses it to choose what to work."***
+⇒ *Of the four remaining, `PROTECTED_OPEN` had taken up **three**: `inherited`, the **interacting tower** (`PO-6`),
+and the **SM fermion and gauge sector** (`PO-4`/`PO-5`).*
+
+⇒⇒ ⛔ ***THE FOURTH — the SCALAR PERTURBATION SECTOR's stated remainder — was in NO register.*** *And it is **two
+named runs, in the paper's own words**: **the full-spectrum likelihood-level comparison against flat $\Lambda$CDM**
+("a parameter refit rather than a further calculation") and **the odd/even height pattern** ("imprinted by the baryon
+loading on the expansion leg"). Registered as **`PO-10`** and **`L-536`**.*
+
+**⛭ THE RULE:** ***a register takes up frontier items ONE AT A TIME, and nothing re-reads the source section
+afterward. So a paper that maintains its own list correctly can still have an item no register ever collected — and
+the corpus's completeness is only ever as good as its last sweep of the SOURCES.***
+⚠ *r2576's lesson one register out: **`PROTECTED_OPEN` goes stale between closures; the papers' frontier sections go
+stale between REGISTRATIONS**.*
+
+⌗ *`THE_STATE` corrected to **fourteen: 8 calculations · 3 authorisations · 2 paragraphs · 1 editorial**. And the
+theatres check clean — **R-P's stations all walked**, six arrival-path findings with four closed in the papers;
+**R-M's five walked**, its HOLES list corrected at r2558.*
+⌗ ***Not a defect in P7: the paper says what it owes, in its own voice, and even says the bulk of the item is
+settled. The defect is that nobody read it back.***
+
 ### Revision r2577 — 2026-08-11 (main line). **`THE_STATE.md` — twelve unfinished things, sorted by the KIND OF ACT that finishes each. And a miscount of twenty-four.**
 
 **⛔ THE MISCOUNT FIRST.** *An audit of "everything unfinished" read `FOR_56`'s **26 unmarked headings as 26 open

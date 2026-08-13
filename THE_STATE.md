@@ -1,14 +1,15 @@
 ---
 name: the-state
 kind: PLAN
-current: r2577+c54.207
+current: r2578+c54.207
 description: THE STATE — everything unfinished across the corpus, counted honestly, with what each is and what act would move it. No ownership language; the axis is the KIND OF ACT. Written r2577.
 sources: [chat]
 ---
 
 # THE STATE — everything unfinished, and what would move it
 
-> ***Twelve things. Not twenty-eight, not eleven.***
+> ⛔ ***FOURTEEN things — corrected r2578. The first count said twelve and was tested a revision later against
+> the papers' OWN frontier sections; it had missed two.***
 >
 > ⌗ *Counted at r2577, after two miscounts worth recording: **`FOR_56` reads as 26 open items and is
 > `kind: RECORD` — "THE RETURN INBOX"**, a correspondence log of what the fork found, not a work queue.
@@ -28,7 +29,23 @@ thing is exactly one:*
 
 ---
 
-# I · CALCULATION — **six, and these are the programme**
+## ⛔ THE CORRECTION, r2578 — because the first count was not tested against the papers
+
+*Asked whether the count covered **the R-M and R-P theatres and the papers' own frontier items**, this file said yes
+without checking.* ⇒ ⛔ ***Tested: 18 frontier/open sections across 13 papers. P7 keeps its own count honestly —
+"it opened at seven and stands at four", with three items resolved and moved below the list — and `PROTECTED_OPEN`
+had taken up THREE of the four.***
+⇒⇒ ***The fourth, the SCALAR PERTURBATION SECTOR's stated remainder, was in no register at all. Registered r2578 as
+`PO-10` / `L-536`, and it is TWO named runs in P7's own words: the full-spectrum likelihood-level comparison against
+flat $\Lambda$CDM, and the odd/even height pattern.***
+⌗ ***And the theatres are clean:*** *R-P's stations are all walked (six arrival-path findings, four closed in the
+papers); R-M's five stations are walked and its HOLES list was corrected at r2558.*
+⚠ ***So the rule this file already carried — "check the count before acting on it" — was right, and the count was
+wrong by two.***
+
+---
+
+# I · CALCULATION — **eight, and these are the programme**
 
 | | the question | what would move it |
 |---|---|---|
@@ -37,6 +54,8 @@ thing is exactly one:*
 | **`PO-4`** | the colour and isospin structure | ***its remaining route is written***: geometric chirality can be carried only by the discrete orientation parity |
 | **`PO-5`** | ***what BRIDGE from a grading to a field is not "be a kernel"?*** | three candidates fail **on one number — multiplicity 2**. ***The mod-2 index is the fourth and is untouched*** |
 | **`PO-6`** | the interacting tower | ***the quartic is absorbed***; what remains is **the sub-leading tower**, and whether the sum's **C1–C7 are jointly satisfiable** — which if they are not is itself a result |
+| **`PO-10` a** | ***the full-spectrum likelihood-level comparison against flat $\Lambda$CDM*** | P7 calls it **"a parameter refit rather than a further calculation"** — a run on the acoustic instrument |
+| **`PO-10` b** | ***the odd/even height pattern*** | **"imprinted by the baryon loading on the expansion leg, and ordinary content physics there"** — a second run |
 | **`PO-seam`** | the seam datum's phase | ***no trajectory of any mass carries one by failing to freeze***; what remains is a **progenitor** derivation |
 
 ⇒⇒ ***These do not finish on a schedule and should not. Each is MAPPED — it names what would move it —
@@ -91,7 +110,7 @@ that in its own words.* ⇒ ***It has no owing attached and finishes by being ad
 
 # VI · THE HONEST TOTAL
 
-**12 unfinished things: 6 calculations · 3 authorisations · 2 paragraphs · 1 editorial.**
+**14 unfinished things: 8 calculations · 3 authorisations · 2 paragraphs · 1 editorial.**
 *Plus 2 that are conventions rather than work.*
 
 ⇒ ***And the register is in its target state everywhere: every open item is MAPPED or has a KILL
@@ -100,7 +119,7 @@ RECEIPT, and `check_kills` fails the turn if that stops being true.***
 **⌗ WHAT "ALL CLEAR" ACTUALLY MEANS HERE.** ***Three of the twelve finish by an act already specified in
 a procedure. Three more finish with a paragraph or a page. Six are physics and finish when the physics
 does.***
-⇒ ***So the corpus is six items from having nothing left but its own open questions — which is the
+⇒ ***So the corpus is EIGHT items from having nothing left but its own open questions — which is the
 state it was built to reach.***
 
 ⚠ *And the caveat that has earned itself: **this file is written by a line that miscounted `FOR_56` by
