@@ -19,8 +19,7 @@ sources: [chat]
 | **VIEW** | 5 |
 | **STATE** | 46 |
 | **METHOD** | 30 |
-| **RECORD** | 78 |
-| **UNCLASSIFIED** | 2 |
+| **RECORD** | 80 |
 
 ## ⌗ DECLARED CLASSES
 
@@ -175,6 +174,7 @@ sources: [chat]
 | `HANDOVER_c54.191.md` | RECORD | What the c54 session that ran c54.185–c54.191 knew that the ledgers do not hold. Written for whoever picks up front #2 cold. Read once, then work. | c54.191 | c54.191 |  |
 | `HISTORICAL_CONTEXT_einstein_cosmological_considerations.md` | RECORD | frozen record | — | — |  |
 | `HISTORICAL_CONTEXT_the_initial_rate_problem.md` | RECORD | frozen record | — | — |  |
+| `LATENT_HISTORY.txt` | RECORD | frozen record | — | c54.209 |  |
 | `NEXT.md` | RECORD | THE WORK ORDER — what to do next, in order, with enough detail to start cold. Read after THE_HUB on arrival. Delete a block when it lands. | — | c54.187 |  |
 | `PROGRAMME_UNFINISHEDNESS_CATALOGUE.md` | RECORD | frozen record | — | — |  |
 | `PUZZLE_the-idea_transcript.md` | RECORD | frozen record | — | — |  |
@@ -183,6 +183,7 @@ sources: [chat]
 | `RETIRED_PLANNING_THREADS.md` | RECORD | frozen record | — | — |  |
 | `REVISION_r2118.patch` | RECORD | frozen record | — | — |  |
 | `SPINUP_FAILURE_FORENSIC.md` | RECORD | frozen record | — | — |  |
+| `TABLE_HISTORY.txt` | RECORD | frozen record | — | c54.62 |  |
 | `THE_ASSUMPTIONS_RETREATED_UPWARD.md` | RECORD | The c54.114–c54.153 capstone — 14 results that stand, 13 withdrawn, and the pattern the withdrawals make (the assumption kept retreating upward). READ BEFORE REOPENING FRONT #1. | c54.153 | c54.162 |  |
 | `THE_CONSOLIDATION_LEDGER.md` | RECORD | frozen record | — | — |  |
 | `TRAIL_AUDIT_c54.134.md` | RECORD | (declared in frontmatter) | c54.134 | c54.134 |  |
@@ -235,8 +236,6 @@ sources: [chat]
 | `c22_keepers.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
 | `gate_notes_bead_audit.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
 | `lapse_shift_synchrony_reconciliation.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
-| `LATENT_HISTORY.txt` | UNCLASSIFIED |  | — | c54.209 |  |
-| `TABLE_HISTORY.txt` | UNCLASSIFIED |  | — | c54.62 |  |
 
 > **⚠ THE LAG COLUMN IS A LOOK-SIGNAL, NOT A VERDICT.** *It reads the newest fork revision the file mentions, which any mention satisfies — a document can be made to look current by writing ABOUT the fork. **`declared current` is the honest column**, set only by the pass that actually brings a file current. And a forward document is ahead of the corpus by construction: "stale" is a word for the corpus, never for the instrument examining it.*
 

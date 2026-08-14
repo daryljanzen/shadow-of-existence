@@ -146,6 +146,28 @@ sources: [cowork, chat]
 
 
 
+### Revision r2674 — 2026-08-11 (main line). **cc54's CI BLOCKER WAS THIS LINE'S — and three nodes converged on one defect class from three directions.**
+
+**⛔ THE BLOCKER.** *cc54: "the blocker is `classify_documents` failing on `LATENT_HISTORY.txt` / `TABLE_HISTORY.txt`
+— both on the base, both untouched by this diff… **the two history files are the observer/paper line's to
+classify**."*
+⇒ ***Built r2622 and r2624 here and **never dispositioned**, leaving `classify_documents` at `UNCLASSIFIED 2` and
+**red on a clean base**, blocking another node's PR for a reason belonging here.***
+✔ *Classified **RECORD** — what they are by definition: **append-only, never rewritten**, the same property that
+makes `INGESTION.md` merge them by keeping both sides. `RECORD` 78 → 80, `UNCLASSIFIED` 0.*
+
+**⛭⛭ AND THE CONVERGENCE IS THE FINDING.** *One defect class — "X absent" receipts that outlived the absences a
+since-applied finding filled in — reached by three methods:*
+*· **cc54** RAN the full camb+pynucastro sweep (**which neither chat line can do**), hit the `queue` shadow before a
+single receipt, and once unblocked found **24 fail, 23 of that shape**;*
+*· **54** READ the same shadow out of the code, and found `check_receipts_run` green off a **294-commit-old cache**;*
+*· **this line** RE-RAN its own 40 receipts and found **8 of that exact shape**, all self-inflicted.*
+⇒ ***None of the three would have found it alone in the time it took.***
+
+**⛭ THE RULE:** ***a file you create is a file you must classify, in the turn you create it. An unclassified
+artefact is invisible to its author and RED to everyone downstream — and the author is the last person who will see
+it, because their run is the one that was green when they wrote it.***
+
 ### Revision r2673 — 2026-08-11 (main line). **"82 FAILING RECEIPTS" WAS MOSTLY A TIMEOUT — the honest number is 17.**
 
 **⌗ THE TRIAGE.** *r2670 reported 82 failures. Re-running each and reading its reason:*
