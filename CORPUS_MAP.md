@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2712 — 2026-08-11 (main line). **`PO-10` STRUCK — its remainder is a procedure. Table 6, 82% cleared.**
+
+**⛔ THE SAME FAILURE AS r2702, NINE REVISIONS LATER.** *That revision's own rule: "**a finding that a row is
+finished is not the same act as finishing it, and the second act is one line**." r2711 closed `PO-10`'s
+specification entirely — and this line ended the turn proposing to move to `PO-6`.*
+
+**⛭⛭ STRUCK, BOTH PARTS NAMED:**
+*· **CLOSED** — half ② carries **no discriminating signal at all**: the odd/even pattern is fixed by the baryon
+loading, and $R$ is a ratio of CONTENTS the rate difference does not enter (r2703).*
+*· **CLOSED** — half ①'s **specification**: an information criterion (r2709), $k=2$ against $6$ with the Jeffreys
+scale (r2710), the deliverable a **pair** of $\chi^2$ at $\varphi=0,\pi$ on 215 TT bins against $\Delta$BIC
+$=21.5$ (r2711).*
+*· **REMAINS** — **a RUN**: score the two branches. Nothing about what to compute, on what data, or how to read the
+answer is undetermined.*
+
+    TABLE 7 -> 6   ·   82% cleared   ·   KIND: 5 DEFINEDNESS, 1 PREDICTION (PO-7)
+    FRONTIER: 3 BOUNDED (PO-4, PO-6, PO-11) · 1 UNBOUNDED (PO-5) · 2 gated
+
+**⛭ THE RULE, restated because once was not enough:** ***"specified" IS the finish line for a row whose remainder
+is compute. A queued calculation with its data, threshold and branch structure fixed is not an open PROBLEM — and
+leaving it on the list makes the frontier look larger than it is, which is what this whole audit was for.***
+
+⚠ *All six other rows were tested against the same precedent first: **only `PO-10` passed**. `PO-6` looked close,
+but its successor asks about "a background whose curvature runs" while **r2691 showed the tower's background is de
+Sitter and CONSTANT** — that successor may be aimed at the wrong object, which is a finding to work rather than a
+strike to make.*
+
 ### Revision r2711 — 2026-08-11 (main line). **`PO-10`'s DELIVERABLE IS A PAIR — the acoustic sector is open, and the specification closes anyway.**
 
 **⌗ THE PROMPT.** *"Isn't the acoustic sector open still? … And is there something left to close off this item?"

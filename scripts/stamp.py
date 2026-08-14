@@ -151,7 +151,8 @@ def main():
     # ** r2685, Daryl: "Has the unknown space actually narrowed?  Is the remaining work finite?"
     # ⇒ *** The row count could not answer it -- a row asking a sharp question and a row asking a
     #     vague one both count as one.  So the stamp now carries the FRONTIER's shape. *** **
-    BOUNDED = {'PO-4', 'PO-6', 'PO-10', 'PO-11'}
+    # ** r2712: PO-10 STRUCK -- its remainder is a procedure, not a question. **
+    BOUNDED = {'PO-4', 'PO-6', 'PO-11'}
     UNBOUNDED = {'PO-5'}
     # ** r2702: PO-12 STRUCK, so PO-10 is UNGATED and moves to BOUNDED. **
     GATED = {'PO-2': 'PO-5', 'PO-7': 'PO-seam'}
@@ -163,7 +164,7 @@ def main():
     #     a PREDICTION row closes by a run against the sky and cannot be settled by
     #     construction. ***  Derived from P15's own "the whole difference is carried by H(a)".
     DEFINEDNESS = ('PO-2', 'PO-4', 'PO-5', 'PO-6', 'PO-11')
-    PREDICTION = ('PO-7', 'PO-10')
+    PREDICTION = ('PO-7',)
     print(f'**KIND: {len(DEFINEDNESS)} DEFINEDNESS ({", ".join(DEFINEDNESS)}) · '
           f'{len(PREDICTION)} PREDICTION ({", ".join(PREDICTION)})**')
     print()
