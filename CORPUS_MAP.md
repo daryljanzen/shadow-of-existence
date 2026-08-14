@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2694 — 2026-08-11 (main line). **THE `LEDGER 7` IS 1 — three duplicates, three weight-marks, one real item.**
+
+**⛔ SWEPT AS A GROUP FOR THE FIRST TIME**, *which had been a PENDING item across the whole session — and
+item-by-item reading cannot see duplication.*
+
+    b2d1f4a62a  "the full propagating spinor field sector"     -> PO-11, WORD FOR WORD
+    328d33776e  "the compact-face fermion sector"              -> PO-11's other half
+    0201758a05  "the bespoke transfer"                         -> PO-12, WORD FOR WORD
+
+⇒ ***`b2d1f4a62a`'s own note reads "THE largest genuinely open thing, and **on no register**" — written before
+`PO-11` was registered at r2597, and never revisited.***
+
+**⛭⛭ AND THREE ARE THE PAPERS' OWN WEIGHT-MARKS:** *"the figure it matches is **recalled rather than derived
+here**"; "**We state it at that strength and no higher**, and the paragraphs below lower it further"; "**Half a
+result, marked as half**".*
+⇒ ***A paper saying "we claim this only this far" is SCOPE-BY-DESIGN, not a debt — the same argument r2639 used for
+four `OPEN-DOWNSTREAM` items. Counting them as work counts the corpus's honesty against it.***
+
+⌗ *One is real: the **triality test**, named and specified and unrun, and in no `PO` row.*
+
+**⛭ THE RULE:** ***a queue that only ever gets read item-by-item cannot see duplication, and duplication is the
+single largest source of a stale count. Sweep every bucket AS A GROUP before answering "how much is left".***
+
+**⚠ THE CAVEAT, SAID FIRST:** ***removing a duplicate removes a COUNT, not a problem. `PO-11` and `PO-12` are
+exactly as hard as they were. What shrank is the map's error, not the territory — but a map that says 20 when the
+answer is 14 is what makes the work look unbounded.***
+
 ### Revision r2693 — 2026-08-11 (main line). **cc54's TURNAROUND OBSTACLE VERIFIED AND RELOCATED — the corpus crosses by ROTATION.**
 
 **⓵ THE OBSTACLE VERIFIES EXACTLY.** *On the closed dust cycloid $a=\tfrac{a_{\max}}2(1-\cos\eta)$: **$H_c(\pi)=0$**
