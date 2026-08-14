@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2739 — 2026-08-11 (main line). **`PO-11` REOPENED — P14 distinguishes the radial continuum from the sector.**
+
+**⛔ THE STRIKE WAS WRONG, AND THE PAPER SAYS SO IN THE PASSAGE IT WAS BUILT ON.** *r2717 struck the row on object
+(r2714) + spectrum (r2716) + completeness (r2717). **P14**, immediately after the sentence supplying all three:*
+
+    "What that supplies is the radial continuum and NOT the sector: the quantised field, its
+     mode completeness, and the join between the static region's continuum and the wall --
+     which sit in different regions -- remain the undertaking the corpus names."
+
+⇒ ***REOPENED. The radial continuum is delivered and is not the sector.***
+
+**⌗ AND cc54's FINDING AND THIS LINE'S AGREE — checked, not assumed.** *r2716 DID pose the $\omega\ne0$ problem:
+$E=\omega^2$, run at five nonzero energies. **What `c54.214` added is the obstruction's STATUS** — P14 says the
+tortoise norm diverges "where the mode tends to a **constant**", the $\omega=0$ mode, so it was never a barrier but
+**the normalisation of a plane wave**.*
+⇒ ***They showed the obstruction was never there; this line built the object around it without noticing.***
+
+**⛭ THE RULE:** ***when a paper's passage supplies your result, read to the end of the passage. A construction that
+answers the sentence you quoted can still be declined by the next one — and "what that supplies is X and not Y" is
+the shape that sentence takes.***
+
+**⚠ AND A MERGE DEFECT.** *r2736's "keep both sides" duplicated **seven register rows** — a text file where a
+duplicated row is an error, not a merge. Folded by keeping the longer and appending the shorter's unique clauses:
+**154 revision marks after against 153 before**, nothing lost. **A resolver that never drops content can still
+corrupt structure.***
+
+    ALL GATES GREEN · seven open: PO-2, PO-4, PO-5, PO-6, PO-7, PO-10, PO-11
+
 ### Revision r2738 — 2026-08-11 (main line). **STABILISING FOR THE FORK'S RELEASE — and the register was misquoting its own invariants.**
 
 **⌗ WHAT ACTUALLY BLOCKED RELEASE, measured.** *Of cc54's three reported reds, **two were already clear here** and

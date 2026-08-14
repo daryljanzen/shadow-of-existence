@@ -22,3 +22,4 @@ sources: [chat]
 - [ ] (424) PO-4: the two ABSENT su(2) directions -- cc54 c54.218 shows <T,w> = N(T) is dimension 1 against 3; r2718's 'one factor short' framing is withdrawn
 - [ ] (424) PO-11: re-verdict cc54's c54.214 -- the omega != 0 problem was never posed, and posing it builds the object; my r2717 strike used the omega = 0 reading
 - [ ] (424) PO-5: cc54 c54.216 bounds the residue to ONE TEST -- a fixed pure number -- which contradicts nothing in r2729 and sharpens it
+- [ ] (428) PO-11 (REOPENED r2739): the quantised field, mode completeness, and the JOIN between the static region's continuum and the wall -- P14's own words for what remains; the radial continuum is delivered and is NOT the sector
