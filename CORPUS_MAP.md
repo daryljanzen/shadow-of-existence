@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2684 — 2026-08-11 (main line). **`PO-6`'s TWO HALVES RESTATED — half one FINISHED, half two with a stated successor. And a gate so a declared structure cannot stay unaudited.**
+
+**⛔ THE SAME DEFECT AS r2683, ONE ROW OVER.** *`PO-6` declares "**this item's two halves are two halves rather than
+one entangled question**" — and **seven revisions of this session sit in the row with none filed against a half**.*
+
+**⓵ HALF ONE — THE CONDITION LIST — IS FINISHED, and was finished by READING.** *r2610 (C1 and C2 are ONE
+condition: seven → **six**), r2611 (C6 is **derived**, not a condition: six → **five plus one theorem**). The row
+itself says it: "**neither removal is a physics result**".*
+
+**⛭⛭ ⓶ HALF TWO — JOINT SATISFIABILITY — HAS TURNED OVER COMPLETELY.** *r2619 named the FLOOR; r2651 said it fails
+(**withdrawn r2671**); r2652 found the state-fixer's threshold at $-1/4$; **r2671: the floor DOES survive**, which
+**empties** that region; r2677 adds a **one-dimensional counterterm basis** whose transfer to the **running** layer
+is unproved.*
+⇒ ***So half two is not "open" — it has a STATED SUCCESSOR: does the one-dimensional basis survive on a background
+whose curvature runs? Registered `L-543`, and it is 54's calculation.***
+
+**⌗ AND THE TWO HALVES ARE ASYMMETRIC:** ***one done by reading, one a calculation nobody has run. A row reporting
+neither shows a frontier where it has a finished half and a well-posed question.***
+
+✔ *`check_declared_parts` built, **seed-tested clean → 1 → 0**, wired: a row declaring "three levels" or "two
+halves" must NAME them, or have a kill receipt that does.*
+
+**⛭ THE RULE:** ***a declaration of structure is a promise to report against it. When a row says how many parts it
+has, every later note must say WHICH — otherwise the parts complete one at a time and the row never notices.***
+
 ### Revision r2683 — 2026-08-11 (main line). **`PO-2`'s THREE NAMED LEVELS AUDITED — level (2) is passed and level (3) is on the FORCE, not the map.**
 
 **⛔ FOUR REVISIONS ANSWERED AGAINST THEM WITHOUT READING THE NAMES.** *The row says "held at do-not-assert on

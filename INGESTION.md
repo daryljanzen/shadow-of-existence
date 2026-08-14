@@ -96,7 +96,8 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2680   ---     monomial was sympys API; unbanked.py now counts prose only. 91 -> 46.
     r2681   ---     certified = meta-vocabulary; found 12 cited receipts that cannot exit non-zero.
     r2682   ---     absence class measured: 4 ended, 3 stand. 2 fixed, 5 reverted, routed item 31.
-    r2683   PO-2    CLAIMED: what the do-not-assert now covers, given both halves delivered.
+    r2683   PO-2    three levels audited: (1) grounded (2) PASSED (3) walled on the FORCE not the map.
+    r2684   ---     CLAIMED: do other held rows have NAMED levels nobody has audited against?
 
 ## ⓸ WHAT THIS LINE IS TAKING
 
