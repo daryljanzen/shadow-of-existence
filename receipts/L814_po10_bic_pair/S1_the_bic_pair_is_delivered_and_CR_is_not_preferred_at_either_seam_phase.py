@@ -31,15 +31,21 @@ selects the physical one. **
      BOTH branches: ** CR is NOT preferred at either seam phase, and PO-7's branch selection does not
      change that. ** (phi=pi is WORSE, not better: its first-peak gap is smaller -- l_1/l_A = 0.6233 vs
      phi=0's 0.5703, against the sky's 0.7312 -- but its peak HEIGHTS/shape cost more chi^2.)
-  3. THE THRESHOLD, WITH BOTH NUMBERS IT SITS BETWEEN (the standing rule): dBIC = 21.5 is the parameter
-     penalty (6-2) ln 215; the Jeffreys/Liddle strong-evidence line is 6, so the threshold is 3.5x the
-     strong line. A CR preference would have needed F3 < 21.5; the measured F3 is >1e4.
-  4. THE INSTRUMENT FLOOR, AND WHY THE LIKELIHOOD STILL CANNOT ARBITRATE IN ABSOLUTE TERMS (F5-safe):
-     F2 = chi^2(LCDM arm) - chi^2(CAMB) ~ +1114, i.e. this instrument's own control sits at chi^2/dof ~ 7
-     against CAMB's 0.96. The F3 pair exceeds that floor by ~45x (a ratio-test "measurement discrepancy"),
-     but the floor is large in ABSOLUTE terms, so the honest verdict of P15_where_the_likelihood_sits --
-     "the likelihood cannot arbitrate" -- stands. The BIC mechanically disfavours CR; the instrument
-     limits how much that can be read as physics.
+  3. THE THRESHOLD AND ITS REFERENCE (the standing rule -- state what a threshold is scored AGAINST, so
+     it is not scored against whatever is nearest): F3 is scored against dBIC = 21.5, and 21.5 is the
+     SAME-INSTRUMENT parameter penalty (6-2) ln 215 -- NOT against CAMB's 206.4 (the framing withdrawn at
+     r2719, a number CAMB never had to pay). On the Jeffreys/Liddle scale 21.5 is 3.5x the strong-evidence
+     line of 6. CR is preferred IFF F3 < 21.5 -- stated as the numeric bar, so the reading is not chosen
+     after the number.
+  4. THE FLOOR CUTS BOTH WAYS AND DOES NOT SOFTEN THE NEGATIVE (F5-safe, and explicitly NOT laundering).
+     F2 = chi^2(LCDM arm) - chi^2(CAMB) ~ +1114: no model here fits Planck well (this instrument's own
+     control sits at chi^2/dof ~ 7 vs CAMB's 0.96), so the likelihood cannot arbitrate on ABSOLUTE fit.
+     ** But the arbitration the floor prevents is ONLY between models whose F3 differ by LESS than the
+     floor -- roughly |F3| <~ 1114; the measured F3, +5.05e4 and +6.76e4, are 45-60x the floor, so the
+     RELATIVE gap is real physics, not instrument. ** So the negatives are DECISIVE and BOUNDED: CR is
+     disfavoured at phi=0 (dBIC +50475) and at phi=pi (+67603), each a bounded negative on its seam-phase
+     reading. The floor could no more BANK a decisive positive than RESCUE this decisive negative -- a
+     "cannot arbitrate" note that neutralised +50475 would be laundering, and this receipt refuses it.
 
 ** WHAT IS NOT CLAIMED, stated for reversal. ** NOT a framework verdict on CR: PO-7 is PROTECTED and F5
 says a measurement discrepancy is not a verdict on the construction, which is unseated. This receipt
@@ -114,20 +120,21 @@ def main():
           'closer position saves',
           F3_pi > F3_0)
 
-    # 3. the threshold with both numbers it sits between
-    check('THE THRESHOLD, both numbers it sits between: 21.5 = (6-2) ln 215 (the parameter penalty), and '
-          f'the Jeffreys/Liddle strong line is 6, so 21.5 is 3.5x strong (got (6-2)ln215={THR:.1f}); a '
-          'CR preference needed F3 < 21.5 and the measured F3 is > 1e4',
+    # 3. the threshold AND its reference (state what it is scored against, not the threshold alone)
+    check('THE THRESHOLD AND ITS REFERENCE: F3 is scored against 21.5 = (6-2) ln 215 (the SAME-INSTRUMENT '
+          f'parameter penalty, got {THR:.1f}), NOT against CAMB\'s 206.4 (withdrawn r2719); on the '
+          'Jeffreys scale 21.5 is 3.5x the strong line of 6. CR preferred IFF F3 < 21.5 -- the numeric '
+          'bar, so the reading is not chosen after the number',
           abs(THR - 21.5) < 0.2)
 
-    # 4. the instrument floor and the cannot-arbitrate caveat
+    # 4. the floor cuts BOTH ways: the relative gap is decisive, above the floor -- NOT laundered
     F2 = chi_lcdm - chi_camb
-    check('THE FLOOR (F2): chi^2(LCDM arm) - chi^2(CAMB) = '
-          f'{F2:+.0f} (control at chi^2/dof ~ {chi_lcdm/185:.0f} vs CAMB\'s 0.96). The F3 pair is ~45x '
-          'the floor (ratio-test "discrepancy"), but the floor is large in ABSOLUTE terms, so the honest '
-          'verdict "the likelihood cannot arbitrate" stands -- the BIC disfavours CR, the instrument '
-          'limits how much that is physics',
-          F2 > 500)
+    check('THE FLOOR CUTS BOTH WAYS, does not soften the negative: F2 = chi^2(LCDM arm) - chi^2(CAMB) = '
+          f'{F2:+.0f} (control at chi^2/dof ~ {chi_lcdm/185:.0f}), so no model fits well -- but the floor '
+          'only prevents arbitration between models whose F3 differ by <~ the floor (~1114); the measured '
+          f'F3 ({F3_0:.0f}, {F3_pi:.0f}) are 45-60x it, so the RELATIVE gap is real and the negatives are '
+          'DECISIVE and BOUNDED. The floor could no more bank a positive than rescue this negative',
+          F2 > 500 and F3_0 > 40 * F2 and F3_pi > 40 * F2)
 
     # 5. F5 guard: no framework verdict; PO-7 protected; the run is delivered, not converted
     src = open(__file__, encoding='utf-8').read()
@@ -140,10 +147,11 @@ def main():
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
     print('  VERDICT (PO-10 run delivered): the BIC pair is F3(phi=0) ~ +5.05e4 and F3(phi=pi) ~ +6.76e4,')
-    print('  both ~2000-3000x the 21.5 threshold, so CR is NOT preferred at either seam phase and PO-7\'s')
-    print('  branch selection does not rescue it. The instrument floor (chi^2/dof ~ 7 control) keeps the')
-    print('  honest reading at "cannot arbitrate" in absolute terms. F5 unsoftened: a measurement')
-    print('  discrepancy, not a framework verdict; PO-7 stays protected. cc54 supplied the run.')
+    print('  both ~2000-3000x the 21.5 threshold AND 45-60x the instrument floor, so the RELATIVE gap is')
+    print('  real physics: CR is DECISIVELY disfavoured at BOTH seam phases -- two bounded negatives, and')
+    print('  PO-7\'s branch selection does not rescue either. The floor (chi^2/dof ~ 7 control) means no')
+    print('  model fits well ABSOLUTELY, but it cuts both ways and does not soften the negative. F5')
+    print('  unsoftened: a measurement discrepancy, not a framework verdict; PO-7 protected. cc54 ran it.')
     print()
     return 0
 
