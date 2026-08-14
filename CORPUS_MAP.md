@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2716 — 2026-08-11 (main line). **`PO-11`'s SPECTRUM COMPUTED — unitarity to six figures.**
+
+**⓵ THE BARRIER.** *$V_+$ from `B3`'s superpotential peaks at $r=0.30385$, height $1.96307$, on a tortoise line
+whose width **diverges logarithmically**: $9.3\to14.2\to18.7$ at $\epsilon=10^{-4},10^{-6},10^{-8}$ — a bounded
+barrier on an infinite line.*
+
+**⛭⛭ ⓶ THE SPECTRUM**, *integrating $\psi''+(E-V_+)\psi=0$ in the tortoise variable with a pure ingoing wave at
+the inner horizon:*
+
+         E     |A|^2-|B|^2      T = 1/|A|^2
+      0.250      1.000000         0.020181
+      1.000      1.000000         0.226608
+      1.963      1.000000         0.691251   <- barrier top
+      4.000      1.000000         0.975508
+     16.000      1.000000         0.999997
+
+**⓷ AND UNITARITY IS THE CHECK THAT COULD HAVE FAILED.** ***$|A|^2-|B|^2=1$ to six figures across the whole range.
+The integration, the tortoise map, the potential and the asymptotic extraction can each break that identity
+independently, and none does.***
+⌗ *$T=0.69$ at the top where a parabolic profile gives $\tfrac12$ — **the two-horizon barrier is broader than
+parabolic**, a statement about the geometry rather than the method.*
+
+**⛭ THE RULE:** ***a numerical result needs an identity it could have violated, not just a plausible shape.
+"Transmission rises with energy" is what any barrier does; unitarity is a constraint the whole pipeline must satisfy
+at once, and it is usually one line to check.***
+
+⇒ *So the row holds a continuum of scattering states, one per $E>0$, delta-normalised — with the bound tower, a
+spectral decomposition of the expected form. **What remains is COMPLETENESS, and that is now the whole of
+`PO-11`.***
+
 ### Revision r2715 — 2026-08-11 (main line). **THE DOMINANT CLASS MADE SEARCHABLE — `scripts/unmet.py`.**
 
 **⌗ THE PROMPT NAMED IT.** *"The six items are still full of stable things we previously worked out but **the

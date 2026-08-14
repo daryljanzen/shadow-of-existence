@@ -124,7 +124,8 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2712   PO-10   STRUCK -- remainder is a procedure. Table 6, 82%.
     r2713   PO-6    L-543 WITHDRAWN -- misaimed. The real dark half is BACK-REACTION, P10s own limit.
     r2714   PO-11   the object EXISTS -- B3s superpotential gives RW partners vanishing at both horizons.
-    r2715   ---     CLAIMED: the dominant class -- rows that do not know the corpus already holds their answer.
+    r2715   ---     unmet.py built -- the dominant class made searchable. 3 citation gaps closed.
+    r2716   PO-11   CLAIMED: compute the spectrum. The object exists (r2714); this is the calculation.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 
