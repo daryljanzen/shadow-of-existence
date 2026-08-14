@@ -88,9 +88,18 @@ def main():
           'available from standard cosmology' in p16)
 
     # ⓸ the honest clause that now has a number
-    check('⌗ and P16\'s own next clause is "this paper draws no bound from it in either direction" -- '
-          'correct when written, and now the sentence that can be replaced',
-          'draws no bound from it in either direction' in p16)
+    # ------------------------------------------------------------------ c54.213, `L-546`
+    # ⛭⛭ ** THIS RECEIPT NAMED A SENTENCE AS REPLACEABLE AND IT WAS REPLACED. **  It read: "that was
+    # correct when written and is now the sentence that CAN BE REPLACED: the bound exists, it is
+    # 3.3e5 in Delta chi^2, and it runs in the construction's favour."  c54.206 (`L-528`) replaced it.
+    #   ⇒ *** So the check failed because its recommendation was TAKEN.  Flipping it would assert the
+    #       old sentence is still there; the honest conversion is the guard on the NEW one. ***
+    check('⛭ and P16\'s "draws no bound from it in either direction" is GONE -- this receipt named it '
+          'as the sentence that could be replaced, and c54.206 (`L-528`) replaced it',
+          'draws no bound from it in either direction' not in p16)
+    check('⌗ and what stands in its place carries the bound this receipt said existed, in the '
+          'construction\'s favour',
+          'the data demand it' in p16 or 'two independent supports' in p16)
 
     # ⓵ the run is on the tree
     d = os.path.join(ROOT, 'receipts', 'L804_isocurvature_bound')

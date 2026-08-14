@@ -125,3 +125,4 @@ r2688  COMPUTED    the onset is FIXED (z~6797, fitted to the acoustic angle); th
 r2689  COMPUTED    P15s +9.4% bracketed: Saha +7.0% < Peebles < unweighted +13.1%, ordering forced
 c54.211  LATENT      withdrew my own c54.210 scope: P10s slicing is a(T)=alpha*cosh(T/alpha), exactly de Sitter, so the degeneracy holds on the towers own background
 c54.212  LATENT      item 30s twelve are a complete false-positive class: all satisfy the gates own CAN_EXIT predicate, at r2680 before any repair
+c54.213  LATENT      item 60s absence-outlived receipts are FOUR classes not one: genuine endings, a proxy broken by unrelated prose, a proxy broken by a citation marker, and one blind both ways

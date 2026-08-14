@@ -113,9 +113,30 @@ def main():
     check('⛭ AND P0 SUPPLIES THE LOAD-BEARING WORD: "The surface is \\emph{doubly ruled by straight '
           'null lines}"',
           'doubly ruled by straight null lines' in p0)
-    check('⛔ while "doubly ruled" appears ZERO times in P9 -- the mechanism and the type claim are in '
-          'different papers',
-          len(re.findall('doubly.ruled', p9, re.I)) == 0)
+    # ------------------------------------------------------------------ c54.213, `L-546`
+    # ⛭⛭ ** THIS CHECK WAS BLIND IN BOTH DIRECTIONS AT ONCE, AND ITS FINDING HAD BEEN ACTED ON. **
+    #   ⓵ `doubly.ruled` with an unescaped `.` matched the UNDERSCORE inside a `\rcpt{}` filename --
+    #     so it read non-zero off a citation marker, not off a sentence.  ** A filename is not prose. **
+    #   ⓶ And it could not see the sentence that ANSWERED it: c54.202 wrote into P9 "the de~Sitter
+    #     surface is \emph{doubly} ruled by straight null lines … so a cut inherits both rulings as
+    #     repeated principal null directions or neither" -- and `doubly.ruled` cannot match
+    #     `doubly} ruled`, which is two characters, not one.
+    #   ⇒ *** SO THE GAP THIS RECEIPT NAMED IS CLOSED, AND THE CHECK COULD SEE NEITHER THE CLOSING NOR
+    #       ITS OWN FALSE POSITIVE.  Measured on a READING VIEW -- markup resolved, citation markers
+    #       removed -- and converted to the REGRESSION GUARD on the sentence that closed it. ***
+    _prose = re.sub(r'\\(?:rcpt|cite)\{[^}]*\}', '', p9)
+    _view = re.sub(r'\\(?:emph|textit|textbf|texttt|mathrm)\{([^}]*)\}', r'\1', _prose)
+    check('⌗ FALSE POSITIVE RETIRED: on the prose alone, with `\\rcpt{}`/`\\cite{}` arguments removed, '
+          'the old `doubly.ruled` pattern matches NOTHING in P9 -- its one hit was an underscore in a '
+          'receipt filename',
+          len(re.findall('doubly.ruled', _prose, re.I)) == 0)
+    check('⛭ AND THE GAP IS CLOSED: read as a reader reads it, P9 now carries "doubly ruled" -- absent '
+          'when this receipt was written, supplied at c54.202.  This is the regression guard on that '
+          'sentence, not a re-assertion of the gap',
+          len(re.findall('doubly ruled', _view, re.I)) > 0)
+    check('⌗ and the MECHANISM travelled with the words, which is what the finding was actually about: '
+          'P9 states that a cut inherits both rulings, or neither',
+          'inherits both rulings' in _view)
 
     # the counting argument
     types = {'O': 0, 'I': 0, 'D': 2, 'II': 1, 'III': 1, 'N': 1}   # count of REPEATED PNDs
@@ -150,8 +171,9 @@ def main():
     print('     Type D -- or NEITHER -- shear, no repeated PND, Type I.  There is no way to inherit')
     print('     exactly ONE, and Types II and III are precisely the exactly-one cases. **')
     print('  ⇒⇒ ** So the interval O--D--I is COMPLETE, and P9 is right. **')
-    print('  ⌗ What is missing is the SENTENCE: ** "doubly ruled" appears zero times in P9 **, so the')
-    print('    mechanism and the claim it justifies sit in different papers.')
+    print('  ⛭ c54.213: what WAS missing -- the sentence -- is no longer missing.  c54.202 wrote the')
+    print('    doubly-ruled mechanism into P9 itself, so the mechanism and the claim it justifies now')
+    print('    sit in the same paper, and the checks above guard that rather than assert the gap.')
     print()
     return 0
 

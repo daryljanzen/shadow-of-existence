@@ -125,9 +125,18 @@ def main():
     variants = ['N_{\\rm eff}', 'N_\\mathrm{eff}', 'Neff', 'N_eff', 'effective number of',
                 'number of neutrino', 'relativistic species', '3.046', '3.044']
     hits = {v: corpus_count(v) for v in variants}
-    check('N_eff is absent BY NAME across all 35 .tex files -- every variant '
-          f'({", ".join(repr(v) for v in variants[:4])} ...) counts ZERO: {sum(hits.values())} total',
-          sum(hits.values()) == 0)
+    # ------------------------------------------------------------------ c54.213, `L-546`
+    # ⛭⛭ ** AN ABSENCE RECEIPT THAT FAILS BECAUSE ITS FINDING WAS ACTED ON IS A SUCCESS. **  Flipping
+    # the comparison would throw that away and leave the file asserting a gap that a later revision
+    # deliberately closed.  ** Converted to the REGRESSION GUARD on the filling, with the revision
+    # that did it named, so the receipt now protects the answer instead of restating the question. **
+    check('⛭ N_eff is NAMED now -- absent by name across every variant when this receipt was written, '
+          f'and at {sum(hits.values())} uses today.  c54.205 (`L-527`) named it in P16 where the '
+          'network already committed to it.  Regression guard on that naming',
+          sum(hits.values()) > 0)
+    check('⌗ and it went in as a CONSISTENCY and not a prediction, which is what the finding turned on: '
+          'CR fixes a place in a grading and not a coupling',
+          corpus_count('place in a grading, and not a coupling') > 0)
     # and the sector is otherwise deep -- so it is one missing name, not a missing sector
     check('yet the sector is deep: "lithium problem", "deuterium", "nucleosynthesis" and "Hubble '
           'tension" are all present -- so this is ONE MISSING NAME, not a missing sector',
