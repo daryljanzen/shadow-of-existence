@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r2759 — 2026-08-11 (main line). **`PO-10` HAS A LIKELIHOOD, NOT A LOOKUP — and the control arm fails calibration.**
+
+**⛭⛭ ⓵ THE INSTRUMENT ALREADY EXISTS.** *Searching for the owed uncertainties found
+`P15_where_the_likelihood_sits`:*
+
+    plik_lite, 215 TT bins, with a covariance
+    banked CAMB flat-LCDM fit:  chi^2 = 206.4 over 215 bins  ->  chi^2/dof = 0.960
+    "F1 MET: a chi^2/dof of ~0.96 on 215 bins is a wired pipeline"
+
+⇒ ***A full spectrum with a covariance is strictly stronger than three scalar pairs. **Every $\sigma$ this line was
+going to look up is already inside that covariance.****
+
+**⛔⛭⛭ ⓶ AND THE BLOCKER WAS RECORDED IN THE SAME FILE ALL ALONG.** *"F4 IS DEFECTIVE AND THE DEFECT IS RECORDED IN
+F6 RATHER THAN PATCHED OUT … **the control arm lands at $\chi^2/\mathrm{dof}\sim100$ against CAMB's $0.96$**."*
+⇒ ***The instrument fails its own calibration — and it is the **CONTROL** that fails, not CR. A pipeline whose
+control sits a hundred-fold above its declared standard cannot arbitrate, and three scalar pairs drawn from it would
+not either.***
+
+⌗ ***Fourth time in this arc a receipt's own self-reported line held the answer: C8's `PROVIDED` clause,
+`damping_ratio_clean`'s ARTIFACT block, its GATE line, and now this F4 note. **These files convict themselves in
+writing and the convictions go unread.****
+
+**⓷ SO THE ROW OWES A NUMERICAL-IMPLEMENTATION TASK, NOT A LOOKUP:** *bring the control arm to a
+$\chi^2/\mathrm{dof}$ `F1` would accept — target $\sim1$, reference $0.96$, diagnosis already written.*
+
+**⛭ THE RULE:** ***before specifying an instrument, grep for one. A row that names a comparison usually has one
+somewhere in the corpus, and the version you would build from scratch is almost always weaker — because the existing
+one was built by someone with the data in hand.***
+
+⌗ *Not wasted: r2746–r2758 established which quantities are DERIVED rather than fitted, **exactly what a likelihood
+comparison needs in order not to count a fitted parameter as a prediction**.*
+
 ### Revision r2758 — 2026-08-11 (main line). **`PO-10`'s PAIRS ARE THREE — the onset ratio is an identity on inherited inputs.**
 
 **⛭⛭ ⓵ TWO HOLD AGAINST ASSERTING RECEIPTS.**
