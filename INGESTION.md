@@ -78,6 +78,7 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2660   PO-12   sharpest form: TWO legs joined at the branch point, L1 rate for every expansion-leg observable
     r2661   PO-12   THE JOIN IS COMPUTED: Phi_exp/Phi_coll = 9/10, super-horizon. Sub-horizon modes next.
     r2662   PO-12   caveat removed -- at the branch point EVERY mode is outside. The join is unrestricted.
+    r2663   PO-12   SUPER-HORIZON TRANSFER CLOSES: Phi_exp(k) = (9/10) Phi_i(k), scale-invariant.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2663 — 2026-08-11 (main line). **THE SUPER-HORIZON TRANSFER CLOSES — $\Phi_{\rm exp}(k)=\tfrac9{10}\Phi_i(k)$, scale-invariantly.**
+
+**⌗ THE LAST PIECE: the collapse leg's evolution UP TO the branch point.** *`sec:envelope`'s closed form gives it —
+at $x=k\eta/\sqrt3\to0$:*
+
+    Phi -> Phi_i   EXACTLY, for every k
+    Phi/Phi_i = 1 - x^2/10 + x^4/280 + ...   so the departure is O(k^2 eta^2)
+
+⇒ ***which is r2662's geometric statement ($k\ll aH$ at the branch point) restated analytically.***
+
+**⛭⛭ SO WITH r2661's JOIN:** ***$\Phi_{\rm expansion}(k)=\tfrac9{10}\,\Phi_i(k)$ for every $k$ — no
+$k$-dependence in the ratio.***
+⇒ ***The branch point does not FILTER. Whatever $k$-dependence the expansion leg carries is inherited from
+$\Phi_i$, not manufactured at the crossing — which is P15's own "**transmits that content rather than imprinting
+one of its own**", argued there from a degeneracy and **now derived from the driving's own limit**.***
+
+**⚠⚠ A NEAR-MISS NAMED BEFORE IT BECOMES A CLAIM.** *The join is $1-\tfrac1{10}$; the series' leading correction is
+$-\tfrac{x^2}{10}$. **Same number, different origin** — $(5+3w)/(3+3w)$ at two equations of state, against the
+expansion of $(\sin x-x\cos x)/x^3$.*
+⇒ ***Two $1/10$s in one derivation is exactly the shape that becomes a spurious "deep connection" three revisions
+later, so it is recorded as a coincidence at the moment it appears.***
+
+**⛭ THE RULE:** ***when the same number arises twice in one derivation from different sources, say so in the
+receipt. A coincidence you name is inert; a coincidence you leave is a claim waiting for someone to make it.***
+
+⚠ *Scalar super-horizon only. **The acoustic evolution from the branch point to recombination is what the
+instrument already runs; joining the two as a single calculation is unrun.***
+
 ### Revision r2662 — 2026-08-11 (main line). **r2661's CAVEAT NAMED AN EMPTY SET — the $9/10$ join is unrestricted.**
 
 **⌗ THE CAVEAT.** *r2661 closed: "**super-horizon only; modes inside the horizon at the branch point are not
