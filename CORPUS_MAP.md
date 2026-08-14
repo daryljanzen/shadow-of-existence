@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2769 — 2026-08-11 (main line). **r2768's MERGE WITHDRAWN — THE LEDGER IS DISCRETE, WHICH SPLITS THE ROWS.**
+
+**⛔ ⓵ THE TWO REQUIREMENTS ARE OPPOSITE.**
+
+    PO-5 needs   "a fixed pure number rather than a free parameter"   (P14, c54.216)
+    PO-4 needs   a parameter that RANGES -- a compact one-parameter family
+
+⇒ ***r2768's "same quantity in different units" held only because "dimensionless" is broad enough to contain a
+constant and a parameter. **The shared WORD was found before the shared REQUIREMENT was checked.****
+
+**⛭⛭ ⓶ AND THE REPLACEMENT IS SHARPER.** *Every dimensionless value the corpus holds — $3$ (winding), $6$ (roots),
+$3$ (generations), $3/4$, $9/10$, $1.0824$ — is a **fixed value produced by a construction**. Not one is a parameter
+that ranges.*
+⇒ ***THE CORPUS'S DIMENSIONLESS CONTENT IS ENTIRELY DISCRETE.***
+
+**⛭⛭⛭ ⓷ WHICH SPLITS THE ROWS RATHER THAN JOINING THEM.**
+*`PO-5` is **compatible**: it wants one fixed number, and a discrete ledger supplies exactly those — its obstruction
+is the missing $F^2$ term (r2729), not the discreteness.*
+*`PO-4` is **not**: it wants a FAMILY, and **a discrete ledger cannot supply one however many values it holds**. A
+seventh fixed number would not help; the defect is the KIND of object.*
+
+**⛭ THE RULE:** ***when two remainders share an adjective, check whether they share a REQUIREMENT. "Dimensionless"
+covers a constant and a parameter; "continuous" covers compact and non-compact — **the adjective that unites them is
+usually the one that has dropped the property that distinguishes them**.***
+
+⌗ *What survives of r2768: the three-instances finding — order-4 reflection, order-2 swap, non-compact rapidity.
+**`PO-4`'s remainder is now a KIND question: does anything on this substrate RANGE continuously and compactly?***
+`B37` corrected at source.*
+
 ### Revision r2768 — 2026-08-11 (main line). **`PO-4` AND `PO-5` SHARE A ROOT, AND IT IS p0's OWN.**
 
 **⓵ THE ROW NEEDS ONE GENERATOR, NOT TWO.** *$[\sigma_z,\sigma_x]=2i\sigma_y$ closes the algebra — c54.218's "two

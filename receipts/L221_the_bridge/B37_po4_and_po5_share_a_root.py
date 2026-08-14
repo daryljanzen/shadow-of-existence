@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""B37 -- `PO-4` and `PO-5` share a root, and it is p0's own: a compact generator needs an ANGLE, an
+"""B37 -- ⛔ **⓸ CORRECTED r2769: THE MERGE IS TOO WEAK.**  *** `PO-5` needs a number that is
+FIXED ("a fixed pure number rather than a free parameter"); `PO-4` needs a parameter that RANGES.
+**Opposite properties, not the same quantity in different units** -- and a statement true of both
+is true because it is weak.  The corpus's dimensionless content is entirely DISCRETE, which is
+COMPATIBLE with PO-5 and fatal to PO-4.  See `B38_the_ledger_is_discrete`.  ** What survives:
+⓵-⓷, the three-instances finding, which is the durable half. ** ***
+
+B37 -- `PO-4` and `PO-5` share a root, and it is p0's own: a compact generator needs an ANGLE, an
 angle is a dimensionless continuous parameter, and r2742 settled that the ledger holds none.
 
 ** ⓵ THE ROW NEEDS ONE GENERATOR, NOT TWO. **  *** $\\mathfrak{su}(2)=\\mathrm{span}\\{\\sigma_x,\\sigma_y,

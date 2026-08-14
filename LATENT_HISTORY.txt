@@ -222,3 +222,4 @@ r2765  LATENT      L-818 merged (6/6). Restamped from r2674 -- a live ID collisi
 r2766  COMPUTED    at O(sigma^2) the basis is genuinely 3d -- C^2 is unrouted. The ledger does not reach second order.
 r2767  LATENT      PO-11: the metric and the bound mode both cross r=0. Only the continuum has not been asked.
 r2768  COMPUTED    PO-4 and PO-5 share a root: both ask the one-constant ledger for a dimensionless quantity
+r2769  LATENT      r2768s merge WITHDRAWN: the ledger is DISCRETE -- compatible with PO-5, fatal to PO-4
