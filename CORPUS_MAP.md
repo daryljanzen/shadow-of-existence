@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2766 — 2026-08-11 (main line). **THE LEDGER DOES NOT REACH SECOND ORDER IN THE SHEAR.**
+
+**⓵ THE QUADRATIC SPACE IS THREE-DIMENSIONAL AND TWO COMBINATIONS ARE SPOKEN FOR.**
+
+    GB  = Riem^2 - 4 Ric^2 +   R^2       rank 2 of 3
+    C^2 = Riem^2 - 2 Ric^2 + R^2/3       remaining direction: the R-sector L-818 routes
+
+**⛭⛭ ⓶ AND $C^2$ VANISHES IDENTICALLY SHEAR-FREE** *(verified at $k=+1,0,-1$)* — ***so `L-818` never had to route
+it, because on its layer there was nothing to route. At $O(\sigma^2)$ it is $4\sigma^2$ (r2743).***
+
+**⛭⛭⛭ ⓷ AND $C^2$ HAS NONE OF `L-818`'s THREE ROUTES.**
+
+    not topological      GB is the only topological quadratic in 4d; C^2 is independent of it
+    not EOM-removable    Weyl is the FREE gravitational field -- it survives on-shell in vacuum
+    not Lambda/G renorm  those are the R^0 and R^1 directions; C^2 carries no R
+
+⇒ ***At $O(\sigma^2)$ a quadratic counterterm requires a coefficient the substrate does not supply.***
+
+**⓸ AND THE CORPUS'S ONE-CONSTANT CLAIM IS SCOPED, NOT CONTRADICTED.** *p0 states it of the FACES — "every
+curvature invariant on either face is a pure power of $1/\alpha^{2}$" — where $C^2=0$.*
+
+**⚠ ⓹ A BOUNDED NEGATIVE, F5-safe.** *One order of one expansion. The shear sector **is** the interacting tower P10
+names as "the standard problem of the interacting theory", so a new constant appearing there says where the
+free-field treatment ends — the boundary r2764 located across all three nodes.*
+
+**⛭ THE RULE:** ***when a reduction reports "remainder exactly 0", ask which terms were ZERO ON ITS BACKGROUND
+before it started. A term that vanishes identically is not routed — it is absent — and the reduction is silent about
+it in a way that reads as coverage.***
+
 ### Revision r2763 — 2026-08-11 (main line). **`PO-6`'s ORDERING QUESTION DISSOLVES — P10 answers it and corrects r2728.**
 
 **⛔ ⓵ r2728 ASKED WHICH ORDERING THE CORPUS COMMITS TO.** *P10: the scale-factor Hamiltonian carries deficiency

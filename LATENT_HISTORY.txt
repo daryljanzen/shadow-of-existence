@@ -219,3 +219,4 @@ r2762  COMPUTED    the banked spectra FAIL the instruments own sampling guard --
 r2763  LATENT      PO-6s ordering question DISSOLVES -- P10: indices (1,1) independent of ordering, coeff <= 1/4
 r2764  COMPUTED    cc54s L-818 boundary IS r2743s shear IS P10s tower -- three statements, one object
 r2765  LATENT      L-818 merged (6/6). Restamped from r2674 -- a live ID collision. OPEN_PROBLEMS_MAP and THE_WEAVE rewritten.
+r2766  COMPUTED    at O(sigma^2) the basis is genuinely 3d -- C^2 is unrouted. The ledger does not reach second order.
