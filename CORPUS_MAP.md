@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2717 — 2026-08-11 (main line). **`PO-11` STRUCK — completeness FOLLOWS. Five open.**
+
+**⌗ "COMPLETENESS REMAINS" WAS A WORD, NOT A QUESTION.** *r2716 left it as "the physics question". It closes,
+because the two properties that give completeness were already computed.*
+
+    sup|V_+| = 1.96307 over 20,000 points               BOUNDED
+    |V| falls by a constant factor per unit x            EXPONENTIALLY DECAYING
+      (structural: f ~ e^{2 kappa x} near a horizon, and V ~ f)
+
+⇒⇒ ***Bounded + real is **Kato–Rellich**'s hypothesis ⇒ essentially self-adjoint on $C_c^\infty(\mathbb R)$;
+self-adjoint ⇒ the **spectral theorem** gives the expansion; exponential decay is far stronger than the
+short-range condition ⇒ **no singular continuous spectrum**, a.c. spectrum $[0,\infty)$, finitely many bound
+states. **Bound tower plus continuum is COMPLETE.***
+
+**⛭ THE RULE:** ***when you write "X remains", check whether X is a THEOREM whose hypotheses you have already
+verified. Three turns running this line ended with a named remainder — "a different object", "the spectrum",
+"completeness" — and each time the next step was one search away in standard theory. A remainder named in the
+corpus's own vocabulary can be a solved problem in the field's.***
+
+**`PO-11` STRUCK:** *object (r2714) · spectrum with unitarity to six figures (r2716) · completeness (r2717).*
+⇒ ***The propagating Dirac sector exists as states.***
+
+    OPEN: PO-2, PO-4, PO-5, PO-6, PO-7
+    KIND: 4 DEFINEDNESS · 1 PREDICTION      FRONTIER: 2 BOUNDED · 1 UNBOUNDED · 2 gated
+
+⚠ *Scoped: the angular and flavour structure, any coupling, and the $\lambda$-scan are untouched. **What closed is
+the question the row asked.***
+
 ### Revision r2716 — 2026-08-11 (main line). **`PO-11`'s SPECTRUM COMPUTED — unitarity to six figures.**
 
 **⓵ THE BARRIER.** *$V_+$ from `B3`'s superpotential peaks at $r=0.30385$, height $1.96307$, on a tortoise line

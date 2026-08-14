@@ -156,3 +156,4 @@ r2713  COMPUTED    L-543 withdrawn -- aimed at a running background the free tow
 r2714  COMPUTED    PO-11s object exists: W=lam sqrt(f)/r gives RW partners vanishing at both horizons
 r2715  INSTRUMENT  unmet.py: the dominant class made searchable -- rows that do not cite what the corpus holds
 r2716  COMPUTED    PO-11s spectrum: T from 0.020 to 0.9997, unitarity to six figures. Completeness remains.
+r2717  COMPUTED    PO-11 STRUCK -- completeness follows from boundedness and exponential decay. Five open.
