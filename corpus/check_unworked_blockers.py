@@ -75,6 +75,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..'))
 REG = os.path.join(ROOT, 'PROTECTED_OPEN.md')
 
+# ** a sentence that REMOVES a blocker rather than asserting one. **
+RETRACTED = re.compile(
+    r'REMOVES THE WORD|WITHDRAWN|withdraws|no longer|was never earned|lived only in'
+    r'|is NOT unbounded|dissolve', re.I)
+
 BLOCKER = re.compile(
     r'\bUNBOUNDED\b|reserves the strike|is [A-Z0-9]+\'s band|another node\'s band'
     r'|a stated calculation|recorded rather than rushed|nothing bounds the search'
@@ -120,6 +125,15 @@ def main():
         n += 1
         hits = sorted({h.lower() for h in BLOCKER.findall(l)})
         if not hits:
+            continue
+        # ** r2763: a blocker QUOTED INSIDE ITS OWN WITHDRAWAL is not a live blocker.  *** The
+        # docstring named this false positive at r2731 and left it for a human read; it has now
+        # fired twice on PO-2 and PO-5, whose rows carry "UNBOUNDED" only in the sentences that
+        # remove it.  A pairing surfaced twice with the same resolution is noise, and noise in a
+        # gate is worse than silence -- it trains the reader to skip the output. ***
+        #   ⌗ Still not a word-matcher for the BLOCKER: the test is whether the row also carries a
+        #   retraction, which is a structural property of the row's history.
+        if RETRACTED.search(l):
             continue
         age = last_touch(pid)
         if age is not None and age > window:
