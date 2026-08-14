@@ -112,3 +112,4 @@ r2676  COMPUTED    a horn swap is the WEYL Z_2 not the centre; the missing piece
 c54.210  LATENT      PO-6 UV half: the counterterm basis is one-dimensional because the background family is; p0 said the invariant fact for another job
 r2677  COMPUTED    re-derived c54.210: invariants all const x alpha^-4 at D=4,5,6; the layers R runs, so the scope is necessary
 r2678  LATENT      unbanked sweep: excentre at 35 uses in receipts, ZERO in print -- a sixth equivalence unbanked
+r2679  COMPUTED    colour at the CENTRE, isospin at the WEYL element -- opposite ends, so the debts differ in kind

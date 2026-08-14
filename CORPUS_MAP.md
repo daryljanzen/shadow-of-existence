@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2679 — 2026-08-11 (main line). **THE TWO GAUGE DEBTS SIT AT OPPOSITE ENDS OF THE SUBGROUP LATTICE.**
+
+**⌗ FOUND BY THE UNBANKED SWEEP.** *`pushforward` — **30 uses in receipts, ZERO across all seventeen papers** — and
+its carrier holds a statement that never reached print: "**the corpus's colour is the CENTRE and its structure
+group, reached three independent ways — the winding's $\mathbb Z_3$, the pushforward's holonomy, and the vantage
+triple's selection rule — and each time the thing that arrives is a discrete label and the thing that does not is a
+coupling**".*
+
+**⛭⛭ VERIFIED, AND SET AGAINST r2676:**
+
+    COLOUR   ->  the CENTRE Z_3 of SU(3)     adjoint-TRIVIAL      a pure LABEL
+    ISOSPIN  ->  the WEYL element of SU(2)   adjoint-NON-trivial  a REFLECTION
+
+*(the centre checked central against **non-commuting** generators, so the centrality is not vacuous)*
+
+⇒⇒ ***And that predicts the debts differ in KIND, which they do: a centre carries no adjoint information, so **no
+deformation reaches a coupling** — `PO-5` is walled. A Weyl element is **half the generating data** of $SU(2)$, so
+what is missing is **one factor**, the torus — `PO-4` is one factor short.***
+
+**⛭ THE RULE:** ***when two open items are filed under one frontier, ask which SUBGROUP each arrives at. "Both are
+gauge groups we haven't got" describes the destination; the subgroup describes the road — and two roads into the
+same destination can be one factor and a wall.***
+
+⌗ *P14 itself calls the three-routes finding "**stronger evidence about where the boundary sits**", **and it has
+never been in print**. The unbanked sweep is paying at one real result per run.*
+
 ### Revision r2678 — 2026-08-11 (main line). **`scripts/unbanked.py` — 54's method made an instrument, and it found a third unbanked result on its first run.**
 
 **⌗ THE CLASS HAS NOW PAID THREE TIMES.** *`L-535` (an instance, not a class); **A7** — "the quartic is a constant
