@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2683 — 2026-08-11 (main line). **`PO-2`'s THREE NAMED LEVELS AUDITED — level (2) is passed and level (3) is on the FORCE, not the map.**
+
+**⛔ FOUR REVISIONS ANSWERED AGAINST THEM WITHOUT READING THE NAMES.** *The row says "held at do-not-assert on
+**three separated levels**"; `GEOMETRY_PHYSICS_TAXONOMY` names them — "**(1) skeleton grounded, (2) resemblance
+do-not-assert, (3) identification walled — stand exactly as r693 set them**".*
+⇒ ***r2629, r2631, r2632 and r2633 are all in the row, and not one is filed against the level it answers.***
+
+**THE STATE NOW:**
+*· **(1) GROUNDED, and computed** — r2631: the root triple IS the $f=0$ locus, roots
+$\{1/\sqrt3,1/\sqrt3,-2/\sqrt3\}$, sum zero;*
+*· **(2) PASSED** — r2629 turned the resemblance into a **construction**, r2633 gave its reason;*
+*· **(3) STILL WALLED, but narrower than the word** — r2632: P14 **exhibits** the map.*
+
+**⛭⛭ LEVEL (2) IS PASSED, AND SAYING SO IS THE POINT.** ***A "resemblance do-not-assert" guards against reading a
+similarity as a fact. When the similarity becomes a construction, the hold has nothing left to guard — it was
+calibrated to an object that no longer exists.***
+
+⇒ ***AND LEVEL (3) IS NARROWER THAN "WALLED": the structural identification is exhibited; what remains walled is the
+PHYSICAL one — that the roots ARE colour charge, as against carrying a structure isomorphic to colour's. **The wall
+is not on the map; it is on the FORCE**, which is what `PO-5` establishes from the other side.***
+
+**⛭ THE RULE:** ***when a row says it is held "on three levels", find where the three are NAMED before answering any
+of them. Answers filed against a hold rather than against its levels accumulate as notes — and a hold whose levels
+were passed one at a time will still read as held, because nothing ever compared the notes to the naming.***
+
 ### Revision r2682 — 2026-08-11 (main line). **THE ABSENCE-OUTLIVED CLASS MEASURED — and a pattern-repair reverted after making five receipts worse.**
 
 **⌗ cc54 ROUTED 14.** *The absence-asserting class is **35 receipts, 7 failing**. A regex flipped every absence

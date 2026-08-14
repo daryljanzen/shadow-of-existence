@@ -95,7 +95,8 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2679   ---     unbanked: pushforward -> colour at the CENTRE vs isospin at the WEYL element.
     r2680   ---     monomial was sympys API; unbanked.py now counts prose only. 91 -> 46.
     r2681   ---     certified = meta-vocabulary; found 12 cited receipts that cannot exit non-zero.
-    r2682   ---     CLAIMED: the 14 absence-outlived receipts cc54 routed. Mine by class (r2672).
+    r2682   ---     absence class measured: 4 ended, 3 stand. 2 fixed, 5 reverted, routed item 31.
+    r2683   PO-2    CLAIMED: what the do-not-assert now covers, given both halves delivered.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

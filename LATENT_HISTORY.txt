@@ -116,3 +116,4 @@ r2679  COMPUTED    colour at the CENTRE, isospin at the WEYL element -- opposite
 r2680  INSTRUMENT  monomial was sympys API -- unbanked.py now counts prose only; 91 -> 46 candidates
 r2681  LATENT      12 cited receipts cannot exit non-zero, 38 citations; check_receipt_asserts green on all of them
 r2682  INSTRUMENT  measured the absence-outlived class: 4 absences ended, 3 stand; 2 fixed, 5 reverted and routed
+r2683  LATENT      PO-2s hold has three NAMED levels; level 2 is passed and level 3 is on the FORCE, not the map
