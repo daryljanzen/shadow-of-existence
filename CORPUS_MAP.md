@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2666 — 2026-08-11 (main line). **`PO-5`'s COUPLING SETTLED NEGATIVELY — it cannot come from the colour bundle.**
+
+**⌗ THE TWO FACTS THAT LOOKED LIKE A TENSION.** *P14: "the bundle is flat … **the geometry quantises and does not
+couple**" — and also "the residue pairing the horizon roots' surface gravities carry **has a holonomy about the
+branch points**", which "**closes the Weyl group of the substrate's own complexified isometry algebra**".*
+⇒ ***Not a tension: a flat bundle over a PUNCTURED base carries non-trivial holonomy about the punctures while its
+curvature vanishes identically. That is why the row survived — the group is real, so a coupling felt available.***
+
+**⛭⛭ BUT HOLONOMY IS NOT CURVATURE.** *For $A=c\,T\,d\varphi$:*
+
+    F_{r,phi} = d_r A_phi - d_phi A_r = 0     A ^ A = 0     =>  F = 0 everywhere off the puncture
+    holonomy  = exp(2 pi i c)                 non-trivial;  generates Z_3 at c = 1/3
+
+⇒⇒ ***A force needs $F\ne0$ (Lorentz: $f=qFv$). $F=0$ everywhere the particle can be, so there is **no force at any
+separation** — what survives is an Aharonov–Bohm PHASE: interference, not attraction.***
+
+**⌗ SO IT IS NOT "not yet extracted" BUT CANNOT.** ***The same flatness that makes the selection rules EXACT makes a
+force IMPOSSIBLE. One fact read twice.***
+
+**⛭ THE RULE:** ***when a construction delivers a group but not a force, check whether the thing delivering the
+group is the same thing forbidding the force. If it is, the question is settled rather than open — and a row reading
+"the coupling remains" is asking for something its own mechanism excludes.***
+
+⌗ *A determinate negative that points: **a coupling, if the programme has one, must come from a structure other than
+the colour bundle**.*
+
 ### Revision r2665 — 2026-08-11 (main line). **THE GAP SIZED — ~19% down at the peaks, so the deviation is BROAD rather than tail-confined. Stamp now shows trajectory.**
 
 **⌗ THE RATE THAT SETS THE GAP IS BUILT FROM THE THING THAT DIFFERS.** *P15 gives the decay rate as

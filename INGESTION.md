@@ -81,6 +81,7 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2663   PO-12   SUPER-HORIZON TRANSFER CLOSES: Phi_exp(k) = (9/10) Phi_i(k), scale-invariant.
     r2664   PO-12   NUMBERS: 7.5% low-ell deficit; 0.823 at l_D; 0.459 at 2 l_D. Peaks are the gap.
     r2665   PO-10   gap SIZED (estimate): ~0.813 at the peaks. Deviation is BROAD, not tail-confined.
+    r2666   PO-5    coupling CANNOT come from the colour bundle -- flat holonomy gives phases, never force.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 
