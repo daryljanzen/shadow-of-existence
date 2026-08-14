@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2770 — 2026-08-11 (main line). **THE SUBSTRATE DOES CARRY COMPACT $SU(2)$ — the question is what it acts on.**
+
+**⓵ THE KIND QUESTION, ENUMERATED.**
+
+    T, r, the rapidity        non-compact
+    the horn angle            compact, but quotiented to Z_3 by the 120-deg structure (r2733)
+    the closed-S^3 layer      ⭑ COMPACT -- and never tested
+
+**⛭⛭⛭ ⓶ AND $S^3$'s ISOMETRY GROUP IS $SO(4)=(SU(2)_L\times SU(2)_R)/\mathbb{Z}_2$.** ***The substrate carries
+compact $SU(2)$ generators — twice — as isometries of the closed spatial layer.***
+⌗ *And not by choice: p0 states "signature, null structure and **isometry group being fixed by the absolute's
+projective type**". They come with the layer.*
+
+**⛔ ⓷ WHICH DOES NOT CLOSE THE ROW.** *`PO-4` needs the $SU(2)$ that acts on the **hinge doublet** — "two ends of
+one hinge are timelike separated". The $SO(4)$ generators act on the **spatial layer**. **Different spaces, and
+nothing yet connects them.***
+
+**⓸ SO THE ROW REFRAMES EXACTLY AS `PO-5` DID.**
+
+    PO-5   the numbers exist (3, 6, 3/4, 9/10)  -- is any a COUPLING?        r2729
+    PO-4   the generators exist (SO(4) on S^3)  -- does any act on the HINGE?
+
+⇒ ***Both rows: the object exists and the ACTION is what is missing. This replaces r2768's "the substrate generates
+without rotating" — **the substrate rotates; what is unshown is that it rotates the right thing**.***
+
+**⛭ THE RULE:** ***when a row asks "is there an $X$ here", enumerate the substrate's OWN STRUCTURES before
+concluding there is none. **The isometry group of a layer the corpus names in passing is not a candidate anyone
+thinks to check**, because it reads as scenery rather than machinery — and three revisions searched the hinge, the
+horns and the reflection while the answer sat in the space they all occupy.***
+
 ### Revision r2769 — 2026-08-11 (main line). **r2768's MERGE WITHDRAWN — THE LEDGER IS DISCRETE, WHICH SPLITS THE ROWS.**
 
 **⛔ ⓵ THE TWO REQUIREMENTS ARE OPPOSITE.**
