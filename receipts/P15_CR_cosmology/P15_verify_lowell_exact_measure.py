@@ -70,6 +70,9 @@ if __name__ == "__main__":
     # --- 4. ROBUSTNESS: does the measure differentiate ell=2 from ell=3? -------------------------
     # vary the low-L measure: w_L ~ (L+1)/(L(L+2)) * (L)^(-q) for a range of q (tilts the low-L
     # weighting); a blue/red primordial tilt and plausible measure conventions live in this family.
+# ** r2726: the tilt here is INHERITED, not posited -- the corpus does not derive a primordial
+# spectrum, and this family is a robustness band around a datum taken from outside.  *** Named
+# because a foreign entity used silently reads as one the corpus owns. ***
     print("\n[4] MEASURE-ROBUSTNESS of the D2/D3 ratio (the octopole-differentiation test):")
     print("    q    weight family                 D2     D3     D2/D3")
     for q in (-0.4, -0.2, 0.0, 0.2, 0.4):

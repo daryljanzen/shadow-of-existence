@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2726 — 2026-08-11 (main line). **THE ROOT ERROR — counting parameters in an ontology the corpus does not inhabit.**
+
+**⛔ THE TILT WAS THE SYMPTOM.** *r2709 framed `PO-10` as model selection — AIC/BIC on parameter COUNT, CR at $k=2$
+against $\Lambda$CDM at $k=6$.*
+
+    omega_b   a baryon density in a flat FRW expansion history
+    omega_c   COLD DARK MATTER -- an entity CR does not posit
+    tau       reionization optical depth in a LCDM thermal history
+    n_s       a primordial tilt from an INFLATON power spectrum
+    A_s       that spectrum's amplitude
+    theta_*   the acoustic angle -- the ONE of the six CR derives
+
+⇒ ***Five of six are objects the corpus does not have. The error was never "I held $n_s$ fixed" — it was importing a
+foreign parameter vector and negotiating how many of ITS dimensions each side was allowed.***
+
+**⛔⛔ AND AIC/BIC PRESUPPOSES EXACTLY WHAT IS FALSE HERE.** ***Model selection by parameter count assumes both
+models live in ONE parameter space and differ only in DIMENSION. CR and $\Lambda$CDM are different ONTOLOGIES.
+Counting across them is arithmetic on a category error.***
+
+**⛭ THE RULE:** ***before importing any quantity, ask whether the CORPUS POSITS IT. If not, it is derived from
+corpus objects or named as INHERITED with what that costs. And if the computation's FRAME — not just its inputs —
+comes from the other theory, the answer belongs to that theory whatever number comes out. A standard tool is not
+neutral: AIC/BIC carries an ontological assumption in its definition.***
+
+**✔ `corpus/check_foreign_ontology.py`** *flags any receipt resting on cold dark matter, a reionization depth, a
+primordial tilt, an inflaton or a six-parameter basis without naming it inherited.*
+⚠ *Second pass needed: the first version matched SYMBOLS and flagged `omega_c` as a cornering frequency and `n_s` as
+a mode index. **A gate that flags a variable NAME flags physics that has nothing to do with $\Lambda$CDM** — every
+pattern now names the entity in words. Seed-tested clean → 1 → 0, wired.*
+
 ### Revision r2725 — 2026-08-11 (main line). **`L-814`'s NUMBER WITHDRAWN — the comparison was never matched.**
 
 **⛔ THE DEFECT, and it is r2710's.** *The $\Lambda$CDM arm carries **six** free parameters. The CR arm was given
