@@ -43,7 +43,12 @@ WHAT IS NOT CLAIMED.  ** Not that C8 is worthless ** -- *** its reduction to a s
 elimination of the Boltzmann code from the RATIO, and its baryon correction all stand; one factor was
 wrongly moved outside. ***  ** Not that $+8.37\\%$ is the answer ** -- the full Hu--Sugiyama with baryon
 weighting gives $+5.66\\%$ and the receipt's own figure is $+8.97\\%$; ** which of those is P15's claimed
-signature is a separate question this receipt does not settle. **  ** Not that P15's $\\sim8\\%$ should
+signature is NAMED BY P15 and this receipt's first draft wrongly declined to say so: ** "the
+observable, in which the common distance cancels, is then $\theta_D/\theta_*$ larger by
+$9.4\%$" **, and the receipt computes exactly that ratio as $1.0816 = +8.16\%$.  *** So P15
+carries THREE values for ONE defined observable -- $9.4\%$, $\sim8\%$ nine times, and $8.16\%$
+in its own receipt.  ** That is the open item, and it is a numbers problem, not a
+definitional one. ** ***
 now change ** -- it sits between the candidates, and r2749's test still governs.
 
 ** COMPUTES: the $r_D$ ratio with $x_e$ toggled on a fixed range and measure, using CAMB's own $x_e(z)$;
