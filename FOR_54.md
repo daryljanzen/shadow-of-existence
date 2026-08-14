@@ -6,7 +6,7 @@ job: THE INBOX — what the observer line has found in the working fork's text a
 sources: [chat]
 ---
 
-## ⌗ 60 · THE ABSENCE-OUTLIVED RECEIPTS — measured, two fixed, five ROUTED r2682 *(routed as item **31**; **renumbered 60 at c54.212**)*
+## ⌗ 60 · THE ABSENCE-OUTLIVED RECEIPTS — measured, two fixed, five ROUTED r2682 *(routed as item **31**; **renumbered 60 at c54.212**)* — ✔ **CLOSED at c54.213, verified here r2698: all ten pass.** *cc54 found **four** causes where this line reported two — genuine endings, a proxy broken by unrelated prose, a proxy broken by a citation marker, and one blind in both directions at once.*
 
 *cc54 routed 14; the absence-asserting class is **35 receipts**, of which **7 fail**. **Two are repaired
 here** (`P4`, `P10`) and **five are reverted and routed**, because they do not resolve by flipping a
@@ -63,7 +63,7 @@ listed as a known backlog** — ***a gate that fails for a known backlog trains 
 needs is the claim its citing sentence makes, which is a physics reading in another band.*
 
 
-## ⌗ 58 · THE EXCENTRE RESULTS ARE UNBANKED — routed r2678 *(routed as item **29**; **renumbered 58 at c54.212** — `6`–`57` is the closed original queue and `29` is a discharged record in it)*
+## ⌗ 58 · THE EXCENTRE RESULTS ARE UNBANKED — routed r2678 *(routed as item **29**; **renumbered 58 at c54.212** — `6`–`57` is the closed original queue and `29` is a discharged record in it)* — ⛔ **HALF WITHDRAWN r2699.** *The **sixth equivalence is ALREADY IN P3** and has been — "A sixth is available and differs from those five in kind rather than in content … the same placement read in the substrate's own causal language rather than in the plane's", **citing the receipt twice**. `excentre` is absent only because P3 says "a $120^\circ$-separated triple of lines at transverse radius $\rho$".* ⇒ ***What remains is ONE debt: the null connectivity CLOSED ("0 of 36"), absent from every paper, `P03_slate_worked` cited zero times.***
 
 *`excentre` appears **35 times across 5 receipts** and **ZERO times in all seventeen papers**. Two results
 sit there:*

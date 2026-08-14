@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2699 — 2026-08-11 (main line). **ITEM 58 HALF-WITHDRAWN — the sixth equivalence was already in print, and the sweep's floor is now measured.**
+
+**⛔ ⓵ ALREADY BANKED.** *P3, immediately after its five equivalences: "**A sixth is available and differs from
+those five in kind rather than in content** … $s^2=4\alpha^2-\rho^2$, so **$2\alpha$ is the unique transverse
+radius at which those pairs are null** — the same placement read in the substrate's own causal language rather than
+in the plane's" — **citing `P03_the_sixth_equivalence` twice**.*
+
+**⛭⛭ ⓶ AND `excentre` IS ABSENT FOR A REASON NO MATCHER CAN SEE:** *P3 says "a $120^\circ$-separated triple of
+lines at transverse radius $\rho$" — **which IS the excentre set, said geometrically**.*
+
+    station  (r2678)  a banked term in another INFLECTION    -> fixed: stem matching
+    monomial (r2680)  an API name read as receipt content    -> fixed: prose-only counting
+    excentre (r2699)  a banked RESULT under a different NAME -> NOT FIXABLE by matching
+
+⇒ ***`unbanked.py` detects VOCABULARY gaps, not BANKING gaps. The two coincide only when paper and receipt happen to
+share a word.***
+
+**⓷ THE SECOND RESULT IS GENUINELY UNBANKED:** *"0 of 36", "null-inert", "36 pairs" absent from every paper;
+`P03_slate_worked` cited zero times.*
+⇒ *Item 58 shrinks to **one** banking debt in P3's band.*
+
+**⛭ THE RULE:** ***a term-based sweep produces CANDIDATES, and every candidate must be checked by reading the papers
+for the RESULT rather than for the word. Item 58 was routed without that step — and the half that was real would
+have survived it.***
+
+⌗ *Also r2699: **item 60 CLOSED**, all ten receipts verified passing after cc54's c54.213 repair. The geometry was
+re-derived independently — excentres at twice the circumradius, so $4\alpha$ against the wall's $\alpha$ and the
+hinge's $2\alpha$.*
+
 ### Revision r2697 — 2026-08-11 (main line). **`unbanked.py` WAS READING RECEIPT FILENAMES AS PAPER PROSE — the r2680 fix, applied to the other side.**
 
 **⛔ THE SAME CLASS, TWICE.** *r2680 made `unbanked.py` read **prose, not code** — on the RECEIPT side. cc54's

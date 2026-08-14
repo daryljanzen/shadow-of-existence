@@ -138,3 +138,4 @@ c54.212  LATENT      item 30s twelve are a complete false-positive class: all sa
 c54.213  LATENT      item 60s absence-outlived receipts are FOUR classes not one: genuine endings, a proxy broken by unrelated prose, a proxy broken by a citation marker, and one blind both ways
 r2697  INSTRUMENT  unbanked.py was reading receipt filenames as paper prose -- same class as r2680, other side
 r2697a INSTRUMENT  collapsed a duplicate S50 INDEX row my own merge re-added -- cc54 had collapsed it at c54.212
+r2699  LATENT      item 58 half-withdrawn: the sixth equivalence was already in P3. The sweeps floor is measured.

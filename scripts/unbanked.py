@@ -25,6 +25,19 @@
       *** the counter reads DOCSTRINGS, COMMENTS AND PRINTED VERDICTS only: a receipt states its RESULT
       there and its METHOD in the code. ***  Candidates fell 91 -> 46.
 
+  ⛔ ** AND THE FLOOR IS NOW MEASURED, r2699 -- a THIRD failure mode, and this one is not a bug. **
+    `excentre` was routed as unbanked at r2678.  *** The SIXTH EQUIVALENCE it named is ALREADY IN P3, has
+    been, and P3 cites its receipt twice -- because P3 states the fact as "a $120^\\circ$-separated triple
+    of lines at transverse radius $\\rho$", which IS the excentre set, said geometrically. ***
+
+      *** station  (r2678)  a banked term in another INFLECTION   -> fixed: stem matching
+          monomial (r2680)  an API name read as receipt content   -> fixed: prose-only counting
+          excentre (r2699)  a banked RESULT under a different NAME -> NOT FIXABLE by matching ***
+
+    ⇒ ** This tool detects VOCABULARY gaps, not BANKING gaps. **  *** The two coincide only when the paper
+      and the receipt happen to share a word.  Every candidate must be checked by READING the papers for
+      the RESULT, not for the term -- and half of item 58 was routed because that step was skipped. ***
+
   ⚠ ** It still cannot distinguish a RESULT from a TOOL. **  *** `simplify`, `linspace` and `abspath` top the
       raw list; a human must read the candidates.  The gate is the SURFACING, not the verdict -- which is
       why this is a script and not a `check_`. ***

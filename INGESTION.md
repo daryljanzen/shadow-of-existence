@@ -109,7 +109,9 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2693   PO-7    turnaround is a segment endpoint crossed by rotation, not a singularity.
     r2694   ---     LEDGER 7 -> 1. Three duplicated PO rows, three were the papers own weight-marks.
     r2695   ---     4 stale row heads corrected; routed() taught 5 close-markers; check_row_state built.
-    r2696   ---     CLAIMED: the two DARK HALVES -- the last unaudited bucket.
+    r2696   ---     DARK 2 -> 0 distinct; audit complete. Table 11.
+    r2697   ---     unbanked.py paper-side citation blindness fixed; Unruh misattribution corrected.
+    r2698   ---     item 60 CLOSED (10/10 verified). CLAIMED: item 58, the excentre banking.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 
