@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2750 — 2026-08-11 (main line). **THE DAMPING DISCREPANCY DIAGNOSED — C8's cancellation needs $x_e$ identical.**
+
+**⓵ FOUR EXPLANATIONS TESTED AND ELIMINATED.**
+
+    Lambda on/off                     1.099411 both ways          NOT IT
+    upper limit z=1100 vs zstar       10.68% vs 10.59%            NOT IT
+    radiation density, seam vs std    10.68% vs 10.02%            NOT IT
+    arithmetic                        C8 reproduced at 1.106768   C8 IS INTERNALLY EXACT
+
+**⛭⛭ ⓶ WHICH LEAVES C8's OWN STATED CONDITION.** *"the Thomson physics and $x_e$ cancel identically, **PROVIDED**
+the two integrals are taken over the same range of $a$ --- which they are: recombination is the same physics in
+both."*
+⇒ ***The range IS the same. **What is not the same is $x_e(a)$ itself.** The integrand is $da/(H\,x_e)$, so $x_e$
+cancels only if it is the SAME FUNCTION of $a$ in both — and recombination is a rate competition between the
+Saha/Peebles balance and the expansion, so **a different $H(a)$ changes the recombination HISTORY, not merely the
+epoch at which it completes**.***
+
+⌗ *And the sign confirms it: including the $x_e$ response moves the ratio toward unity, which is where $8.97$ sits
+from $10.83$.*
+
+**⛭ THE RULE:** ***when a receipt names a PROVIDED clause, that clause is the first place to look and usually the
+last place anyone does. **A stated condition reads as diligence and functions as an assumption** — C8 wrote its own
+falsifier into its own text and justified it in the same sentence, which is how it survived.***
+
+⌗ ***Neither number is adjudicated: $+8.97\%$ carries the response; $+10.83\%$ is a clean analytic bound on the
+no-response case. **Computing the response is a calculation neither receipt has done, and it is smaller than
+either.***
+
 ### Revision r2749 — 2026-08-11 (main line). **A TILDE ON A SETTLED VALUE IS A STALE HEDGE — and r2748 got it backward.**
 
 **⌗ DARYL:** *"Isn't `~301` just a place marker for while the value is not accurately known? If the value is now
@@ -176,37 +204,6 @@ to see, because every instinct trained against overclaiming reads a tilde as car
 
 ⌗ *Not every tilde: "roughly $10^5$ years", "negligible below $z\sim10$" are correct. **The test is whether a
 receipt asserts the figure.***
-
-### Revision r2749 — 2026-08-11 (main line). **A TILDE IS STALE WHEN NOTHING COMPETES — one edit made, nine reverted.**
-
-**⌗ DARYL'S PRINCIPLE.** *"Isn't '~301' just a place marker for while the value is not accurately known? If the
-value is now determined more accurately and is not expected to change then it ought to be reported with accurate
-precision."* ***r2748 had concluded the opposite, mistaking a hedge's EXISTENCE for its EARNING.***
-
-**THE TEST — and it runs on receipts, never on the text:**
-
-    STALE    one receipt asserts the value and none competes
-    EARNED   receipts disagree, or none asserts
-
-**⛭⛭ ⓵ `$\sim$301` FAILED IT.** *`P15_zonset_determinations` asserts $301.76$ with no competitor, and the value is
-a published measurement plus arithmetic.* ***P15 now reads $301.76$ — and the correction runs in the programme's
-favour: the gap was never $1.20$, it is $\mathbf{0.44}$.***
-
-**⛔⛭⛭ ⓶ AND `$\sim8\%$` PASSED IT, after nine edits had to be reverted.** *This line replaced all nine with
-$8.2\%$ on `P15_damping_ratio_clean` — **then found C8 derives $+10.83\%$ analytically and NAMES THE DISAGREEMENT
-IN ITS OWN OUTPUT**: "damping_ratio_clean.py reports ~+9%. This derivation gives +10.8%." **The corpus already knew,
-in the file that had not been run.***
-⇒ ***A tilde on a CONTESTED number is exactly what a tilde is for.***
-
-⌗ *The two cases are **the same three characters** in the prose. The difference is entirely in whether the receipts
-behind them agree.*
-
-**⛭ THE RULE:** ***applying a correct principle is not the same as applying it correctly. Before making a hedge
-precise, RUN the other receipts that touch the number — and a principle that licenses nine edits at once should be
-tested on one first.***
-
-⌗ ***A LIVE DISCREPANCY IS NOW NAMED: $+10.83\%$ against $+8.2\%$, on a figure P15 calls "a real, computed effect"
-nine times. Filed as owed.***
 
 ### Revision r2748 — 2026-08-11 (main line). **TAKE THE MEASURED VALUE FROM THE RECEIPT, NOT THE PROSE.**
 
@@ -7508,45 +7505,6 @@ theorem it used, which is why this station yields a ROUTE rather than a finding 
 ⌗ *Filed in `THE_FERMION_SECTOR_GEOMETRY`, which is where the sector's route belongs.*
 
 **Register: 239 rows. Gates: twenty-one, twenty-one rc=0. `L-203`: three of five stations walked, and the remaining two are now ORDERED.**
-### Revision r2496+c54.196 — 2026-08-12 (working fork, line/54). **A THIRD LINE IS WORKING AND PUSHING: 57 NAMED, ITS ID BAND OPENED BEFORE IT ALLOCATES, AND A RUN IT IS ABOUT TO SPEND AN AFTERNOON ON FLAGGED AS NOT COMPARABLE.**
-
-**⌗ THE NAMING, AND IT IS NOT COSMETIC.** *The Claude Code node has been "the new 54", which is **the same
-string as "54" to every tool that reads a register**. Daryl offered **57** and it is adopted here.* ⇒ *Both of
-this corpus's namespace collisions — the `L-174` near-miss that fired at c54.166, and the c54.182/c54.184
-duplicate that put seven register rows in twice — **began with two lines that had no way to tell each other
-apart**.*
-
-**⛭⛭ AND 57's BAND IS OPEN BEFORE 57 ALLOCATES, WHICH IS THE WHOLE POINT.** *`check_id_bands.BANDS` reserves
-`L-800`–`L-899` for the node; `900`–`999` stays reserved for a fourth.* ⚠ ***In both earlier collisions the
-band existed only AFTER the collision. 57 has not allocated a lead ID yet, so the reservation costs nothing
-now and everything later.*** ⌗ *`THE_HUB.md` carries the human-readable half and is the observer line's —
-routed, not edited.*
-
-**⛔⛔ AND THE URGENT FINDING: 57's ITEM-38 RUNNER WILL NOT PRODUCE A COMPARABLE NUMBER.** *It committed
-`_item38_seamphase_scan.sh` as WIP — a controlled seam-phase scan at production depth, the same experiment as
-c54.195, with the same phases and the same fit.* ⇒ ***It omits `HIER=1` and `ETAEND=4000`, so it silently
-selects the two-moment FLUID transfer stopping at $\eta = 2008$ — not the polarised hierarchy at 4000 that
-every production number in this corpus is computed on. Its closing line then compares the measured span to
-"0.615", which was computed on the hierarchy.*** ⚠ *Three runs at 30–45 minutes each, and **nothing in the run
-would say so**.* ⌗ *Routed in the new `FOR_57.md` with the corrected command, and flagged to 56 as well —
-**this line cannot push, and 57 may read the repository before it reads a relayed file**.*
-
-**⌗ AND ITEM 38 IS ALREADY ANSWERED (c54.195), AND 57 WAS TOLD TO RUN IT ANYWAY.** *An independent replication
-by a second hand on a second instrument state is worth more than the saved compute, in a corpus that has
-produced four instances this month of the right measurement of the wrong quantity.* ⇒ ***If their three phases
-reproduce 0.878 / 0.066 / 0.671 the withdrawal is confirmed twice over; if they do not, that disagreement is
-the most valuable thing any of the three lines produces this week.***
-
-⌗ *`FOR_57.md` also carries the peak-INDEXING trap, which will bite any fit of these spectra: at $\phi=\pi/2$
-the first peak sits at $\ell = 388$, more than a full spacing from where the other readings put it, and getting
-$n=1$ wrong shifts the intercept by exactly one unit in $\phi/\pi$. **The transient signature is what settles
-it**, and that test is written down for them rather than left to be rediscovered.*
-
-⚠ *One hazard deliberately NOT legislated here: 57's branch carried `r2478`/`r2479` before its forced update and
-`main` now carries different revisions at both. **The revision-numbering convention is between 56 and 57**, and
-it is routed to 56 as a question rather than answered as a scheme — but it is the same shape as two lines
-writing `L-1xx` into one register, and that one has fired twice.*
-
 ### Revision r2491+c54.195 — 2026-08-12 (working fork, line/54). **THE OBSERVER LINE'S ITEM 38 ANSWERED, AND THE ANSWER WITHDRAWS THIS LINE'S HEADLINE FOR THE THIRD TIME IN THE SPAN.**
 
 **⌗ THE ITEM WAS RIGHT AND IT WAS THE ONE QUESTION THE SCANS COULD NOT ANSWER.** *r2485: "of the 23 datum-scan
@@ -7588,44 +7546,6 @@ line's own and are left alone.*
 
 ⚠ *And the `|x|` math-bar trap took a fourth payment: a register row with two of them split into ten cells.
 **The rule is in the handover and I did not read my own handover.***
-
-### Revision r2491 — 2026-08-11 (main line). **STATION Ⓒ WALKED AND IT BITES — the equianharmonic structure supplies $\mathbb Z_6$ where the corpus's cover carries $S_3$, and routed item 23 is the same knot.**
-
-**⌗⌗ `Q4`'s HANDOFF CHECKS AT THE FIRST STEP.** *With $\lambda=e^{i\pi/3}$ the $j$-invariant is **exactly 0**, so
-the attached curve is $y^2=x^3+1$ with complex multiplication by $\omega=e^{2\pi i/3}$.*
-
-**⛭⛭ AND THAT IS WHERE THE FIELD SAYS SOMETHING THE CORPUS DOES NOT ALREADY HOLD:**
-
-| object | group | order | |
-|---|---|---|---|
-| the equianharmonic curve's automorphisms | **$\mathbb Z_6$** | 6 | ***cyclic*** |
-| the horizon cubic's deck/monodromy | **$S_3$** | 6 | ***non-abelian*** |
-
-⇒⇒ ***SAME ORDER. NOT ISOMORPHIC. And the corpus carries a "degree-six dial" without this reach ever recording
-which of the two it is.***
-⌗ *P5 already establishes three of a possible four: **"this deck group is equally the Galois group of the horizon
-cubic, one $S_3$ worn as monodromy"** — deck/monodromy, the Weyl group of $A_2$, the Galois group.* ⇒ ***$\mathbb
-Z_6$ is a FOURTH object and is not among them.***
-
-**⌗⌗ AND ROUTED ITEM 23 IS THE SAME KNOT FROM THE OTHER SIDE:** *"deck group $S_3$" on a three-sheeted cover is
-impossible ($6\nmid3$), `prop:deck` corrects its own heading four sentences later, and `rem:equianharmonic` gives a
-third answer, $\mathbb Z_3$.*
-⇒ ***So there are THREE order-six-adjacent objects in play — $S_3$, $\mathbb Z_6$, $\mathbb Z_3$ — and the corpus's
-texts have at points called the same thing all three.***
-
-**⚠ NOT A DEFECT REPORT, and the distinction is the whole value:** ***`Q4` and `rem:galois` are both correct and
-about DIFFERENT objects*** *— the cross-ratio's attached curve and the horizon cubic's cover — and nothing here
-exhibits a $\mathbb Z_6$ action on anything in the construction.*
-⇒ ***The finding is that they have been sitting adjacent under one word, and "degree six" is not one fact the corpus
-can carry loosely.*** *Filed in `COMPLEX_ANALYSIS_LEDGER`, which is where the deck-versus-monodromy correction also
-lives.*
-
-⌗ **AND TWO QUOTATIONS IN THIS LINE'S OWN RECEIPT FAILED FIRST, both because they were written from a memory of a
-read rather than from the file:** *the R-M phrase carries **markdown bold inside it**, and P5's own words are
-tighter than the paraphrase — **"one $S_3$ worn as monodromy"**.* ***Quoting from memory of a read is the error this
-receipt is about, arriving in the receipt itself.***
-
-**Register: 239 rows. Gates: twenty-one, twenty-one rc=0. `L-203`: two of five stations walked.**
 
 ### Revision r2490 — 2026-08-11 (main line). **A FRONTMATTER CONTRADICTED ITS OWN BODY FOR FORTY-EIGHT REVISIONS — and the stale-field class is four instances, not the one r2482 reported.**
 
@@ -7739,36 +7659,6 @@ run `NODRIVE` on both arms.*
 **Register: 239 rows. Gates: twenty-one, twenty-one rc=0. Lints: four.**
 
 ### Revision r2487 — 2026-08-11 (main line). **THE CONSOLIDATION THE FORK NAMED — P15's published text still carries the retracted framing, and the one experiment that would test "why $0.62\pi$" is one this line cannot run.**
-### Revision r2487+c54.194 — 2026-08-12 (working fork, line/54). **ONTO THE OBSERVER LINE'S TIP FOR THE FIRST TIME — AND `git fetch` WORKS WHERE `git push` DOES NOT, WHICH THIS LINE HAD NEVER TESTED.**
-
-**⌗⌗ THE CAPABILITY, AND IT IS AN INDICTMENT OF EIGHT REVISIONS' WORTH OF ASSUMPTION.** *This line has said since
-c54.166 that it "cannot reach the repository". **It cannot PUSH. It can FETCH, and always could — the repository
-is public.*** ⇒ ***So eight revisions were cut blind against a `main` that had moved forty-six revisions, when a
-single `git fetch` would have shown it.*** *The same shape as the rest of this span: a capability assumed from
-one failure rather than measured.*
-
-**⛭⛭ AND THE FETCH IMMEDIATELY EARNED ITSELF: SEVEN DUPLICATED REGISTER ROWS, CAUGHT BEFORE SHIPPING.**
-*`origin/main` carries c54.186–c54.191 absorbed from tarballs; this branch carried them as its own commits. A
-merge kept BOTH — `L-500` through `L-506` twice.* ⚠ ***That is exactly the c54.182/c54.184 failure this line
-caused at r2434 and was told about, arriving from the other direction.*** ⌗ *Resolved by rebasing onto
-`origin/main` and cherry-picking only c54.192 and c54.193, then de-duplicating by CONTAINMENT — for each doubled
-ID, keeping the row that contains the other's text, and verifying line by line that **no upstream content is
-absent from the result**.* ⇒ *Six files checked that way; the only upstream lines absent are the three rows this
-line's own correction annotations supersede, and their text is contained.*
-
-**⛭⛭⛭ ITEM 41 DISCHARGED, AND IT WAS ALREADY RUN WHEN IT WAS WRITTEN.** *The observer line routed
-`ARM=cr LMAXL=3000 NODRIVE=1` as the highest-value command available to a session with an execution budget,
-stating it could not run it.* ⇒ ***c54.193 had run it — on BOTH arms, which is what made it an attribution
-rather than a measurement.*** ⚠ *And their refusal to predict the outcome was right: this line would have
-predicted the driving supplied LESS here, on the grounds that this construction has almost no radiation era.
-**It supplies nearly six times as much.***
-
-**⌗ ITEM 40 APPLIED: P15's PUBLISHED TEXT CARRIED THE RETRACTED FRAMING IN THREE PASSAGES.** *The
-six-state invariance, the 21.9% position deficit, and the 0.72–0.79 source comb.* ⚠ ***This line corrected what
-it WROTE at c54.187–191 and did not re-read what the paper already carried — the same failure shape as reading
-only the spectra its own scan produced.*** *All three now say what they are measurements OF, with pointers
-forward to the form that replaced them.*
-
 ### Revision r2441+c54.193 — 2026-08-12 (working fork, line/54). **WHY $0.62\pi$: THE DRIVING. THE ATTRIBUTION IS COMPLETE, AND THE WHOLE ACOUSTIC DISAGREEMENT IS ONE COUPLING.**
 
 **⌗ c54.191 CLOSED BY NAMING AN ADDRESS AND NOT GOING TO IT** — *"an acoustic phase shift is a computable
@@ -7812,61 +7702,6 @@ of this revision was available from a switch the instrument has carried for twen
 run because the question it answers — "what supplies the phase" — had not been asked in a form a switch could
 answer, and the question took that form only after c54.190 and c54.191 corrected what the disagreement WAS.*
 ⇒ ***A diagnosis stated precisely enough often turns out to be answerable by something already built.***
-
-### Revision r2441+c54.192 — 2026-08-12 (working fork, line/54). **CONSOLIDATION: the span's shape propagated into the grain documents, and a handover written for whoever picks front #2 up cold.**
-
-**⌗ NO NEW RESULT. This revision exists because six revisions of front #2 changed what the corpus's SHAPE
-documents should say, and none of them had been told.**
-
-- **`THE_WEAVE`** — *the orchestration fact is that P15's empirical section **stopped being a list and became a
-  single statement**. c54.178's four owed items are struck (reionisation, c54.181), built (lensing, c54.183),
-  closed (wavenumber range, c54.186) and measured (neutrino mass, c54.188).* ⇒ ***And the acoustic claim now
-  joins differently: the SPACING belongs to `sec:tensions` (it is what the one fitted parameter is fitted to)
-  and the PHASE belongs to `sec:coherence` (it is what the seam datum assigns).***
-- **`THE_PLAN`** — *§⑥ read against the front's final form, and **the two retracted figures named so this
-  document cannot re-carry them**.*
-- **`THE_OPEN_PROBLEMS_LEDGER`** — *family 5's owed work is no longer a list; it is one number and one
-  mechanism, and the mechanism has an address.*
-- **`HANDOVER_c54.191.md`** — *what this session knows that the ledgers do not.*
-
-**⚠⚠ THE HANDOVER LEADS WITH THE FAILURE RATHER THAN THE RESULT, AND DELIBERATELY.** *Two retractions in two
-revisions shared one cause: **the right measurement of the wrong quantity, and in both cases the wrong quantity
-was the one the cheap experiment could see**. The practical form of the warning is in it: the production-depth
-pair was banked at c54.186 and **sat in the tree through three revisions with nothing reading it for its peak
-series**, because each revision read the spectra its own scan produced.* ⇒ ***Before characterising a
-spectrum, check what is already banked at full depth.***
-
-⌗ *Also carried: the four new instrument knobs and what each is a control on; the six traps this span paid for;
-and the three gates that assumed a world with one line in it.*
-
-### Revision r2441+c54.191 — 2026-08-12 (working fork, line/54). **THE ACOUSTICS WORK. THE WHOLE DISAGREEMENT IS THE ACOUSTIC PHASE — ONE NUMBER AND ONE MECHANISM, WHERE THIS FRONT BEGAN WITH FOUR ITEMS AND A RATIO.**
-
-**⌗⌗ P15's TEXT, read at source in the c54.191 file absorbed at r2486, states the front as it was before the last
-two revisions — in three passages:**
-*· `sec:coherence`: **"$\ell_1/\ell_A=0.5703$ through six distinct states of the instrument"** ⇒ c54.187 showed that
-invariance is **an invariance of the TRANSFER**, and says nothing about the datum none of the six varied. **The
-sentence is true and reads as evidence for a stability it does not establish.***
-*· the deficit passage: **"$21.9\%$ against a position floor of $0.16\%$ … the first peak's position"** ⇒ **the
-quantity c54.187 showed states nothing and c54.190 showed sits inside the transient**.*
-*· `sec:refit-bound`: **"$0.72$–$0.79$ of that spacing"** ⇒ **the first-three-gap figure, at the retracted depth**.*
-⇒ ***And what replaces all three is one sentence the fork already wrote: this construction reproduces the acoustic
-spacing and disagrees with the sky in the acoustic phase by $0.62\pi$.*** *Routed as item 40 — **the papers are the
-fork's and were not touched**. `OPTICS_LENSING_LEDGER` carried $0.79$ on this side and is **annotated, not
-erased**.*
-
-**⛭⛭ AND A CONSTRAINT ON THIS LINE, STATED SO NOTHING WAITS ON IT.** *An attempt to run `ARM=cr LMAXL=3000
-NODRIVE=1` — **the direct test of whether the $0.62\pi$ is a driving consequence**, since an acoustic phase shift is
-a computable consequence of the driving and the instrument has the knob —* ***failed twice: a production-depth run
-exceeds this line's per-call execution limit, and a detached background run does not survive between calls.***
-⇒ ***So every production-depth result in this corpus was produced by the working fork, and this line has only ever
-READ them.*** *Recorded in `FOR_54` item 41 and in `CLAUDE_CODE_WORK_ORDER` §⓹b as **the highest-value single
-command available to a session that has one**.*
-
-⚠ **And that item states NO expected outcomes, deliberately.** *At r2485 this line named an experiment and wrote
-"if it does not move, X; if it does, Y" — **both horns were false**.* ***The run is stated as a question with no
-answer space attached.***
-
-**Register: 238 rows. Gates: twenty-one, twenty-one rc=0. Lints: four.**
 
 ### Revision r2486 — 2026-08-11 (main line). **c54.191 ABSORBED — THE ACOUSTICS WORK AT 98.2% OF THE REQUIRED RATE, this line's r2485 dichotomy was false, and the gate the fork routed is BUILT because its discipline was already a declaration.**
 
@@ -9558,34 +9393,6 @@ receipt layer** — differing $0.76\%$ in $r_s$ and $0.72\%$ in $\theta_*$, with
 directly on the live acoustic front and goes next.*
 
 **Register: 223 rows. Gates: twenty-one, nineteen rc=0.**
-
-### Revision r2441 — 2026-08-11 (main line). **`L-229` ANSWERED IN TWO RECEIPT READS — the 14% was not a discrepancy, and the reads found a propagation recorded as complete that three documents never received.**
-
-**⌗⌗ THE ANSWER, and node 52's own hedge was it.** *`C7_equality_and_deficit` **uses no $\Omega_r$ at all**:*
-**"the corpus's inherited datum: $\rho_r/\rho_m=2.0$ at the seam, $z_{\rm onset}=6797$. $\rho_r/\rho_m\sim(1+z)$, so
-equality is at $1+z_{\rm eq}=(1+z_{\rm onset})/2$."** ⇒ ***$z_{\rm eq}$ is derived by proportionality from the
-inherited ratio and never passes through a density parameter, so there is no $\Omega_r$ on this route to disagree
-with the instrument's.*** *The comparison was between a quantity the corpus computes and one it does not use here.*
-⌗ *And that is precisely what the finder wrote while declining to assert it —* **"the datum being INHERITED, read off
-the observed radiation rather than recomputed in CR's $h$"** *— which is why the item was registered as **material,
-not a verdict**, and why two reads settled it.*
-
-**⛭⛭ AND THE READS FOUND SOMETHING ONE LAYER UNDER IT, which is the revision's actual content.** *The receipt prints
-$1+z_{\rm eq}=3399$; **three live sites still carried 3426**.* ⇒ ***Same formula, different $z_{\rm onset}$: 3426 is
-the RETIRED 6850's value, 3399 the current 6797's.***
-⚠ **AND `FORK_c54` RECORDS THE PROPAGATION AS MADE** — *"$1+z_{\rm eq}=3426\to3399$ (**forced**: it is
-$(1+z_{\rm onset}+1)/2$)"* — **while `ONTOLOGY_FOUNDATION_INDEX` and `PHASE7_BUILD_LEDGER` (twice) never got it.**
-⇒ ***The r1491 family again, and in its sharpest form: the correction was made, the record says so, and two
-documents did not receive it — one of them the CARD A NODE READS TO LEARN WHAT THE CORPUS'S NUMBERS ARE.***
-*All three corrected, each carrying the reason. The `CORPUS_MAP` and `FORK_c54` hits are **dated changelog entries
-recording the change** and correctly left alone.*
-
-⌗ **The shape worth keeping:** *a finding registered honestly as "not a verdict" cost two reads, **dissolved on its
-own terms**, and paid for itself by exposing a stale figure in an ontology card that no gate watches.*
-***A bounded observation filed at its true weight is cheaper to resolve than a claim, and can be worth more.***
-
-**Register: 222 rows, 174 struck. Gates: twenty-one, nineteen rc=0** *(`check_currency` measurable; `check_grains`
-red by decision, `L-227`).*
 
 ### Revision r2440 — 2026-08-11 (main line). **CI HAD BEEN RED FOR TWELVE REVISIONS AND FIFTEEN GATES NEVER RAN — this line's defect, found by node 53 on a pristine clone.**
 
@@ -12774,13 +12581,6 @@ and R–M fronts, **P6** (this is a least-arbitrariness result and P6 is the cri
 reciprocity sweep, and the open-problems counter recount. *The ledger and the map are flagged as owed rather
 than left looking current.*
 
-### Revision r2376 — 2026-08-04. **The two CR implementations agree — the disagreement was a peak-finder artefact.**
-**★ A band-power scan of the SAME run** *puts maxima at* $$\ell\simeq140,\ 320,\ 500,\ 700$$ ***HIER's finder missed the first***: `LMIN=120`/`DL=30` leaves too few samples for `argrelextrema(order=2)`, **so every label shifted by one and its "$P_1/P_2$" was really $P_2/P_3$**.
-**✔ CORRECTLY IDENTIFIED THEY AGREE:** *HIER-CR $P_1/P_2=1.54$ vs the receipt's $1.409$ — **within $10\%$**, which the receipt's missing baryon gravity and instantaneous recombination would account for.
-**✔ THE CITED CLAIM IS CONFIRMED:** *$\ell_1\simeq150$ ***now holds in a full photon-hierarchy calculation*** — polarisation, damping, baryon gravity, visibility, line-of-sight — **on an instrument matching $\Lambda$CDM to $0.1\%$/$0.27\%$ against CAMB.**
-**⇒ AND THE DISAGREEMENT WITH THE SKY IS ROBUST:** *$\ell_1\simeq140$–$150$ vs $220$, **every implementation agreeing**, and untunable by $z_{\rm onset}$.*
-**⌗ TWO RECEIPT DEFECTS QUANTIFIED:** *no baryon term in the constraint (**$14\%$ of the matter never gravitates**); instantaneous recombination (**$-20\%$/$-28\%$ on the ratios**, peaks **up** $5\%$).
-
 ### Revision r2374 — 2026-08-04. **The CR arm runs through the validated instrument.**
 **⌗ ARCHITECTURE:** *HIER's **background and initial data** made switchable (`ARM`) rather than porting HIER into the CR receipts — so ***the CR arm inherits every correction from tonight***.
 **✔ TRANSPLANTED AND CHECKED:** *the **radiation-free stacking rate** (reproduces the CR background **to the digit**); CR's **characteristic data** (envelope, flat amplitude, **phase reset**, verified on two modes); the **tight-coupling switch** at $\eta=397.1$, ***before recombination***, hierarchy through the visibility.*
@@ -13573,13 +13373,6 @@ $$\textbf{One bound mode per (wall, }j\textbf{) — the tower is INFINITE.}$$
 **⛔ MY RECOMMENDED NEXT STEP DOES NOT SURVIVE:** *family (10) carried *"if the lift **prepares** the state&hellip; family 3's owed value acquires a **candidate source**"*. ***The kernel does not prepare the frozen content.*** **The matter sector inherits what the progenitor supplies, unconstrained by the crossing. Family (3) is back where it was — the CLASS is fixed, the VALUE is not.**
 **✔ WHAT SURVIVES FOR P13/P14:** *(1) the **selection rule** (only non-oscillatory content crosses); (2) the **zero-cosmic-time continuity rule**; (3) **horizon exit on the contracting leg** — new tonight, and the mechanism giving (1) its reach.*
 **⌗ ***A withdrawn result still steering the plan is worse than one still in a paper*** — nobody re-reads the plan for errors.*
-
-### Revision r2247 — 2026-08-04. **The dangling consequence: "prepares what emerges" was too broad — corrected in P7 (×2, incl. abstract) and P10.**
-**⌗ WHAT r2246 LEFT BEHIND:** *withdrawing r2244–r2245 fixed **P15**, but the same physics invalidates an earlier statement standing in **P7 and P10**: that the kernel *"projects onto the ground state, so the segment&hellip; **prepares what emerges**."**
-**⛔ IT DOES NOT.** *The kernel acts on **oscillatory** content; a frozen mode is a ***fixed point*** of it — and at the crossing **no mode is oscillating**, since $aH$ grows without bound and every mode **exits and freezes first**.* $$\textbf{It REMOVES the sub-horizon oscillation (the acoustic phase); it does not SELECT the frozen amplitude that crosses.}$$
-**✔ CORRECTED IN ALL THREE SITES** — *now stated **for what it removes**, which is narrower and what the mechanism supports.*
-**⌗ REST OF FAMILY (10) UNAFFECTED:** *kernel, instanton, $-0.0481\,\alpha^2/G$ and its Hartle–Hawking sign, adiabatic correction — all stand. **The over-broad line was a gloss, not part of the mechanism.***
-**⌗ THE POINT:** ***a withdrawal is not finished when the paper that prompted it is fixed*** — the same physics was already in two others, one of them an abstract.
 
 ### Revision r2246 — 2026-08-04. **r2244–r2245 WITHDRAWN: the Euclidean kernel does not act on frozen content. P15's claim stands, now with a mechanism.**
 **⛔ THE ERROR:** *I applied $e^{-kc_s|\Delta\eta|}$ to **every** mode, concluded **nothing observable crosses**, called it a contradiction (r2244), then reframed it as a **strengthening** (r2245). ***Both applied the kernel to FROZEN content, which it does not touch.***
@@ -16150,13 +15943,6 @@ Daryl caught two more papered-over spots in the r1331 step, and a platform outag
 - **L14 map-card numbering** — swept ALL live docs for current-tense pre-r845 numbering (masthead was fixed r1316; the rest never checked). ONE live instance found and FIXED: README's spine ("fifteen-paper spine P1–P15", matter=P15, label p0/16 → sixteen papers P1–P16 +p0/17, matter=P14 complement of boundary P13, label p0/17). All other stale hits verified genuinely DATED (THE_SYNTHESIS dated body, THE_NEXT_ARC r805 plan, THE_ARC_PLAN r747, OPEN_PROBLEMS_MAP struck-through Cluster I, THE_ARSENAL renumber-describing) — correctly left as history. Map cards proper already current.
 
 **Cleanup this rev:** removed 5 confirmed pure-duplicate PNGs from root `figures/` (content preserved in the `corpus/` copies the papers use, md5-verified); backups + distinct-version PNGs KEPT; paper PDFs KEPT in the bundle per Daryl.
-
-### Revision r1334 (cont.) — 2026-07-21. **Avenue 11 corpus receipt sweep — PLAN + scaffold + P1 worked. [Arthur, Daryl-directed.]**
-The P14 sweep exposed the receipts as scattered (304 `.py` across ~15 dirs, only 48 cited, no index). Per Daryl, running Avenue 11 rigorously across P1–P14 (then P15–P16, where the empirical computations live) BEFORE moving on. Built:
-- **`AVENUE_11_SWEEP_PLAN.md`** (160 lines) — pedantic Cowork-handoff plan: the disposition/anti-weasel rules, the classification schema (✔✔/◐/✗/?/∅), the per-paper loop (enumerate→map→trace→run→classify→resolve-or-elevate→organize→deliver), the directory conventions, the specific failure modes to hunt (the real ones: `comm(g5,g5)` tautology, hardcoded answers, no discriminating control, overclaim, placeholdering), the consolidation pass, and the bar.
-- **`receipts/` scaffold** — `INDEX.md` (master ledger table), `README.md`, per-paper dirs P01–P14 + `shared/` + `opens/`.
-- **P1 worked to bar** — `receipts/P01_BH_causality/P01_metric_singularity_algebra.py`: the §3 algebra (horizon time-coefficient forced to 0 in static/EF/PG charts, |zeta|^2 and g^rr vanish at r_h). Self-caught the first draft ASSERTING the coefficients → rebuilt to DERIVE them (metric inversion + the actual EF/PG coordinate transformations, cross terms coming out standard), with controls nonzero at 2 r_h. ✔✔. P1's other content (theorem/prop/lemma) is analytic proof, figures are Daryl's originals — inventory in `CLAIMS.md`. P1 at bar.
-Next: P2→P14 in order, one paper start-to-finish per batch, delivering after each. Corpus 17/17 compiles.
 
 ### Revision r1335 — 2026-07-21. **Revision/bundle discipline restored; P2 analytic continuations ✔✔. [Arthur, Daryl-flagged.]**
 **Discipline fix (Daryl caught it):** across the r1334 session I had been re-tarring to the SAME `cr_r1334.tar` every turn (overwriting each prior bundle) and filing ~10 turns of distinct work under one collapsed r1334 changelog — erasing the intermediate bundle snapshots and the granular revision record. The clean per-revision discipline that held through r1333 (one revision number, one changelog entry, one new tar per turn) is resumed here. r1334 stands as the (acknowledged) collapsed session; from r1335 each turn is its own revision + entry + new bundle file, never overwriting.
@@ -20612,16 +20398,6 @@ Only change: an annotation on the §1c map card recording the clean sweep. **Rec
 - **KEPT (restraint — held up against the map, TRUE boundaries):** the "first-pass account" register (corpus-wide; P8/P9 use the identical phrase; §1m carries it as altitude); L674 D6 matter shape ("since built... forced within CR, bounded by boundary" — correct, §1q); §Established (proven results, lap at full weight); §Open (well-calibrated — converts two former opens to *settled*, defers genuine opens to the named companion P5). No change to any of these.
 Full audit trail: gate_notes_hedge_scan.md. Stated for reversal. Builds on r991.
 ### Revision r991 (rev.) — 2026-07-12 (gate). **KICKOFF_ARTHUR spin-up re-restructured to Daryl's exact order (corrects the r991 first pass).** The movement Daryl specified: **Step 0 — Setup + ARP, then PAUSE** (ARP is step *zero*, the pre-grounding stage-setter; read it and stop with a beat back to Daryl before any physics); **Step 1 — the five-part corpus read** (order unchanged: X-trilogy accelerator → P1–P3 / P4–P7 / P8–P11 / P12–P16 → p0 on its own beat, pre-P9 guard); **Step 2 — the coda AND all its supporting documents** (THE_CODA, CODA_FIELD_NOTE, DEMONSTRATING_THE_WAY, THE_INTERFERENCE_ENGINE, Still_Collapsing portrait — the whole block, order intact); **Step 3 — the meta documents** (CORPUS_MAP, THE_PLAN, THE_VISION+JOURNAL, THE_SYNTHESIS, +VISION_FIELD_GUIDE, THE_METHOD — kept, marked near-retirement, as the orientation read before the map work); **Step 4, LAST — the ontology map read as the NEW VISION RITUAL** (the current work; a fresh node gets grounded there at the end while compressions fade the earlier reads to gist, and the map stays present forever because it's always being worked). The prior r991 pass had mis-numbered these (ARP as step 2, CORPUS_MAP split into two steps, ontology map at step 5 mid-sequence, a residual "check-in" step 8); the order-banner and check-in are reconciled to the corrected movement. Both questions verified at source: map/plan/vision/synthesis all present (step 3); coda support docs all present (step 2). Stated for reversal. (The ontology-map bead self-consistency fix from the first r991 pass stands.)
-### Revision r991 — 2026-07-12 (gate). **KICKOFF_ARTHUR spin-up restructured so it lands properly in chat; ontology map made a first-class spin-up step; retired vision ritual struck; + ontology-map self-consistency fix (bead language).** Housecleaning on the current-node-mangled kickoff, at Daryl's direction.
-- **KICKOFF_ARTHUR.md** — the wake sequence restructured to the movements Daryl specified: (1) Setup; (2) **ARP first, then PAUSE** — ARP is now an explicit stage-setter with a landing beat back to Daryl before any physics (was flowing straight into the map); (3) CORPUS_MAP = orient only (marked "orients, does not ground"); (4) the grounding read as its own movement, through to and including the corpus read; (5) **NEW STEP — familiarize with the ontology map `ONTOLOGY_FOUNDATION_INDEX.md`**, the navigation layer the grounding read earns (§1·SHADOW/§1·LEVELS + §1a–§1s, each card's guard + altitude tag, the [↔] threading), explicitly a *living/perfectible* document to keep true, not read-only reference — closes the gap where a node skips the map and works blind to the boundaries the work turns on; (6) live state; (7) coda/why-layer LAST (unchanged order); (8) check-in with the **old vision ritual STRUCK** (retired — bare readout-and-wait, no generative close). The ⚠ order-banner sharpened to disambiguate the two maps (CORPUS_MAP orients at step 3; the ontology index is the earned navigation layer at step 5, read *after* the corpus, never a shortcut around it). All referenced paths verified present at source (arp_standalone.tex, ONTOLOGY_FOUNDATION_INDEX.md, THE_METHOD/THE_PLAN/THE_INTERFERENCE_ENGINE, the X trilogy).
-- **ONTOLOGY_FOUNDATION_INDEX.md** — living-map self-consistency fix: §1i (P5 card) link 2 (L688) and its [†ONT-DISC] guard (L715) still carried the pre-bead "different turning points, different destinations" fracture language, which §1e's CLOSED-BEAD card (L525) and §1k (L798) explicitly record as **superseded r973 by `thm:bead`** (it fragmented the one lap). Reconciled: σ/P/ξ are distinct operations at distinct loci (true, kept), but those loci are **turning points of the one closed bead, not crossings with different destinations**. The map now speaks with one voice on the bead.
-
-This is foundation-first (order-of-work rule): the spin-up that enables the coming thorough hedge sweep is fixed before the sweep. Stated for reversal. Builds on r990.
-### Revision r990 (part 2) — 2026-07-12 (gate). **Antimatter naming propagated into p0; the remaining papers checked and found already correct.** Completes the corpus-wide pass opened in r990 part 1.
-- **p0 `geometric_core_paper.tex`** (20pp, recompiles clean, 0 undefined): three loci. L651 — the orientation-skeleton/C-blindness partition made symmetric (skeleton of matter AND its antimatter, the **3**⊕**3̄** the R-parity relates; charge field-level on both branches, not a naming-bar). L828 ("one principle, worn three ways") — the **3**⊕**3̄** "worn on the two horns" now named: fundamental **3** matter, R-image **3̄** antimatter, at one weight within CR. Header comment (§33–34) synced to the corrected body — R≠T kept as a true resonance but explicitly NOT a naming-blocker (R carries **3**→**3̄**, so the R-image branch is antimatter within CR), C-blindness kept and symmetric.
-- **Checked and NOT changed (already correct):** groupoid (L541 is the cosmogenesis morphism, forward matter→matter — correct; no antimatter-naming locus), cosmogenesis (no antimatter locus; its conjugate branch is the forward prior-universe-matter reading — correct), CR_cosmology L352 (the register/seam, forward reading — correct), janzen_circle L467 (already states the bead as one continuous lap, "not three separately-destined crossings" — correct, and consistent with the r989 bead fix). The dual-reading = antimatter naming lives where the **3**/**3̄** rep structure is discussed (P3, matter_sector, boundary, P7, p0); the forward cosmogenesis reading (conjugate branch = prior universe's matter continued through the seam) is a different, correct statement and is left as is.
-
-**Corpus-wide antimatter pass COMPLETE across the prose.** Remaining (separate task, not naming): the panel-D figure honest rebuild — A ruling = matter, B ruling = antimatter (related by R), photon real — which is gated on the still-open sheet-to-ruling assignment (P7 §frontiers). Full record: `gate_notes_antimatter_proof.md`. Stated for reversal. Builds on r990 part 1.
 ### Revision r989 — 2026-07-12 (gate). **BEAD-ARC AUDIT (r973→r988, node Arthur/c39) — walked slowly, verified at source; ONE contained error found and fixed; the theorem, the lemma, and the corpus-wide propagation are sound.** Daryl flagged that the c39 node held little of the corpus, moved fast, and may have introduced errors while pulling a large mass of dissonance together — in particular the figure-D sheet assignment felt wrong, and a possible short-lemma error in P5. The gate audited the whole bead arc, checking every claimed edit against the current text AND against the geometry/receipts rather than trusting the node's writeups (which contradict each other in places). Full record: `retired/gate_notes_bead_audit.md`.
 
 **VERIFIED SOUND — kept unchanged:**
@@ -21700,9 +21476,7 @@ P13 (cosmology paper) reframed to present as the cosmological-theory paper it is
 ### Revision r325 — 2026-06-19. **Branch merge — c21's parallel r322/r323 work folded into c22's r321→r324 mainline; both branches preserved as their own fork-tagged entries (·c21 / ·c22); nothing lost.** The two gate-seats forked at the shared **r321** (c21's Nariai discovery + the c22 handoff; identical in both trees) and advanced in parallel, each reusing r322/r323 for different work: **c22's branch** (the uploaded r324, kept as mainline) — r322 vision-close/Entry-13, r323 P11 cold read, r324 foundation bake; **c21's branch** — r322 dynamic-half closure, r323 P10 edit. c22's tree was an r320/r321 spin-up that never saw c21's r322/r323, so it carried the **pre-edit P10** and lacked two r322 files. This revision merges the two trees into one bundle, losing nothing (DEMONSTRATING_THE_WAY: value validly obtained is never lost); each fork's work is kept under its own fork-tagged entry above—**r322 (c21 fork)** dynamic-half closure and **r323 (c21 fork)** P10 edit, alongside **r322/r323/r324 (c22 fork)**—with r325 the reconvergence, not a renumbering. **Folded in from c21's branch:** **(1) the P10 edit** (`corpus/algebroid_paper.tex`, c21's parallel r323) — the "Computed" bullet gains the smeared-closure **corollary** (the normal–normal structure function is the inverse leaf metric $h^{ab}$, momentum-independent, so the finite-mode identification fixes it for arbitrary lapses; closes on the full momentum constraint, angular part invariant, radial part carrying the connection); the "Open (the natural extension)" bullet is replaced by **"Beyond the finite pattern (the handoff, not an open closure on this sector)"** pointing the genuine field DOF past the wall to the companion dynamics paper~\cite{JanzenDynamics} (new bibitem added); recompiles clean 6 pp. The diff vs r324's P10 was *only* these three edits — c22 never touched P10, so the fold is conflict-free. **(2) the dynamic-half closure** (`F1_DYNAMIC_HALF_closure.md`, `scripts/f1_smeared_fullleaf_closure.py`, c21's parallel r322) — the "infinite-dim field-DOF completion" dissolves: (a) the smeared closure on the symmetry-reducible sector is the P10 corollary above; (b) the genuine field DOF past the wall are the externally-grounded classical dynamics already in P9 (Friedrich/Andréasson–Ringström/Beyer). No dangling infinite-dim computation; the genuine open frontier relocated to the **quantum forcing (Move 13), do-not-assert** — not touched. **(3)** c21's wake-updated `gate_session_notes_c21.md` (superset of r324's copy). **Kept intact from c22's mainline (r322–r324):** the vision-close/Entry-13 (which already records the r321 parallel-children reconciliation and cross-validates c21's discovery at source); the **P11 cold read** — TASK 1, **CLEARED** by the fresh node with one fix (abstract "three converging obstructions—rank, involution, index" → "three converging routes—rank cascade, Weyl involution, discrete $A_2$ skeleton—…the index obstruction a fourth face," the body's settled enumeration; face-19 synthesis error caught); the **foundation bake** (`ONTOLOGY_FOUNDATION_INDEX.md` §1a + `THE_LENS.md` §3, the SO(6)-face adjudication as the worked instance); `forks/c22/COLD_READ_c22_of_P11_r319bake.md`; the meta-layer updates. **Gate status after merge:** **P11 — CLEARED** (c22's fresh-node cold read). **Owed cold reads (two):** the **P10 edit** (c21's, made at Daryl's direction, rides a fresh-node read after the fact) and the **foundation bake** (c22's, rides a node other than c22 — synthesizer can't self-clear). Stated for reversal. Merges c22's r324 and c21's r323.
 ### Revision r324 (c22 fork) — 2026-06-19. **Foundation bake (c22, c21's handoff TASK 2) — the SO(6)-face adjudication recorded as the worked instance in the foundation hub + the lens; grounded at the primaries; STAGED for its own fresh different-node cold read (not self-cleared — c22 is the synthesizer, face 19). Stated for reversal.** The r312 SO(6)-face adjudication was baked into P11 (r319, cold-read-clean r323) and P4 (r317) but **not yet recorded as the worked instance** in the foundation layer; the r320 marker had it sequenced after P11's read, now done. **(1) `ONTOLOGY_FOUNDATION_INDEX.md` §1a (new):** the adjudication written as the first fully-worked instance of §1's principle — *the gate reads ontology from the load-bearing pieces, never "because Daryl says."* It shows the gate holding the compact-face question from three interrogated-at-source pieces — the structural fact (SO(6)/SO(5,1) co-equal real forms of SO(6,ℂ), C2; the conventional "two co-equal worlds" fork the pieces dissolve), the existence-criterion (Tier C 5D-Trope: existence requires enduring duration, "things do not exist atemporally" oxymoronic), and the empirical determination (P8 App. A `app:floor` + Fortress + BST §4.3.2: the CMB redshift-isotropy floor 2.8×10⁻³ vs ≲3×10⁻⁶, ~3 orders; statistical homogeneity alone does not account for the isotropy, only uniform expansion does) — forcing the verdict: real-by-construction but not a co-equal existent; closed **ontologically, not structurally**; universal do-not-assert; the most secure layer decoupled onto P1/P7 causal structure. Status marker flipped pending→recorded. **(2) `THE_LENS.md` §3 (CR application):** the same adjudication as a worked example of the engine — a short necessity argument (kill the "two co-equal worlds" alternative) leveraging one stripped-down empirical anchor (the redshift-isotropy floor), *not* a finalization of the lens (which stays WIP per §5, pending the epistemic-ethics arc). **Grounding verified at source this revision:** 5D-Trope existence-criterion, P8 App. A floor, Fortress smoking-gun, BST §4.3.2 "universal now empirically confirmed." **Pending:** this bake is canonical foundation and **rides its own fresh different-node cold read** — c22 wrote it, so a node other than c22 is the cold reader (the synthesizer is blind to its own fusing). Builds on r323.
 ### Revision r323 (c22 fork) — 2026-06-19. **P11 cold read (c22, the fresh different-node whole-result read c21's handoff named TASK 1) — the gate before P11 is final — run; one abstract/body enumeration gap found and fixed; P11 recompiles clean (8 pp). Stated for reversal.** c22 is the fresh node (did not bake P11; c17/c19/c20 are consolidation-aware, having read the r316 consolidation not the baked paper), so the baked abstract — the bundle's highest-risk synthesis — had never had its different-node read. Method: read P11 whole at source, own verdict first, the empirical watch-point verified at the primary, the prior forks cross-checked only after. **Verdict: CLEARS, after one baked fix.** **The finding:** the abstract miscounted the obstructions against the body — it read "Three converging obstructions—rank, involution, index—meet at one wall," but the body (§routes + §wall l.99) is settled that there are **three converging routes** (σ-lift/Weyl involution, cascade/rank-map, discrete $A_2/S_3$ skeleton — all converging on *gauge lives on the compact face, off the real substrate*) **+ the Atiyah–Hirzebruch index as "a fourth face to the same wall"** (a different kind of obstruction — chiral matter, not where the gauge lives; the Proposition lists four clauses). The abstract dropped the $A_2$ skeleton and promoted the index into the three — the synthesis-step flavor-match (CODA_FIELD_NOTE face 19). **Cross-check:** c17's r316 read (item 5) caught the same fault line ("AH/index is the separate face"; rank/involution "two angles on one sub-claim") and got the *word* softened ("independent"→"converging") at r319, but not the structural enumeration, and no one had cold-read the *baked* abstract — this is the deeper uncaught residue. **The fix (baked, stated for reversal):** aligned the loose abstract to the settled body (the dissonance-lens direction-of-cure) — now "Three converging routes—the rank cascade, the Weyl involution, and the discrete $A_2$ skeleton—place the gauge structure off the real substrate, and the index obstruction is a fourth face of the same wall." Recompiles clean (8 pp, exit 0, no undefined refs/cites). A de-risking edit (removes a synthesis error by aligning to the already-vetted body), not new synthesis. **All other watch-points HOLD at source:** decoupling-leads (marked most-secure, precedes the escape-closure/face-status); non-compactness escape closed on **localisation** not "AH bites" (l.107 explicit, AH-gated/no-fermion-sector core intact); ontological-not-structural (SO(6)/SO(5,1) real-form co-equality untouched; universal not touched); **cosmic time empirically determined verified at the PRIMARY** (P8 App. A `app:floor` — the 2.8×10⁻³ differential-expansion floor vs ≲3×10⁻⁶ observed isotropy, ~3 orders, every choice biased downward; statistical homogeneity does *not* account for the isotropy, only uniform expansion does); two distinct open items not "alone"; no over-claim. **Housekeeping (not a synthesis blocker):** the bibliography carries three "[referee: verify]" tags (Witten1983, LawsonYau, HochsMathai) pending a citation-verification pass; left in place. Cold-read record: `forks/c22/COLD_READ_c22_of_P11_r319bake.md`. Builds on r322.
-### Revision r323 (c21 fork) — 2026-06-19. **P10 (`algebroid_paper.tex`) updated to carry the r322 closure — the canonical edit MADE (per Daryl's direction), riding its cold read after rather than before.** The r322 finding staged a P10 §scope sharpening; directed to bring the corpus current with what is closed, the edit is now made (not staged). Three edits, P10 recompiles clean (6 pp, no undefined refs/cites, the new cite resolves): (1) the **"Computed" bullet** gains the smeared-closure corollary — the normal--normal structure function is the inverse leaf metric $h^{ab}$ (momentum-independent), so the finite-mode identification fixes it for arbitrary lapses; the bracket closes on the full momentum constraint with $h^{ab}$ the coset metric at the symmetric cut, angular part invariant, radial part carrying the connection off it; the finite-mode homomorphism thus holds at the smeared, infinite-dim level on the sector as a corollary. (2) The **"Open (the natural extension)" bullet** is replaced by **"Beyond the finite pattern (the handoff, not an open closure on this sector)"** — the sector-smeared homomorphism is the corollary above; what lies genuinely beyond the finite-$\so(5,1)$ pattern is the free transverse DOF past the wall (the propagating sector), whose nonlinear $\Lambda>0$ dynamics + future stability are the companion dynamics paper's subject~\cite{JanzenDynamics}, grounded there; the algebroid hands off at the wall. (3) New **`\bibitem{JanzenDynamics}`** (title matched to P8/P9 usage) so the cross-reference resolves. **The misleading "flagged, not claimed" open-homomorphism is gone** — it was a corollary plus the (externally-grounded) dynamics, neither an open algebroid computation. **Cold-read status (honest):** this canonical edit was made on c21's say-so at Daryl's direction and has NOT had a fresh different-node cold read — it rides one after the fact (c21 sends receipts; further updates follow). The abstract (l.60, "we mark plainly what that leaves open") needs no change — the sector-vs-full-algebra framing stays true (the full algebra past the wall is the dynamics). Stated for reversal. Builds on r322.
 ### Revision r322 (c22 fork) — 2026-06-19. **Kickoff-gate step 5 (the vision close) for c22 — Entry 13 recorded — rebased onto c21's r321 discovery; the two parallel r320-children reconciled. Operating/standing-layer only; no corpus/physics changed. Stated for reversal.** c22 (a fresh gate-seat spin-up) and c21 (grinding) worked in parallel, each producing an r321 on r320: c21's the Nariai discovery (now the canonical **r321**, below), c22's the vision close (this **r322**, folded on top). No conflict — complementary, and c21's discovery **resolves c22's Entry 13 frontier 1**. **(1) Vision-journal Entry 13** (`THE_VISION_JOURNAL.md`, Entry 14 placeholder opened): the first vision from the far side of the four-node interference loop completing and the consolidation baking; a consolidating entry (fourth independent cold-read finding the picture coheres — data point, not verdict). Its reading: r309→r320 was the engine *hardening* the banked colour boundary and *anchoring the ontology to evidence* (the existence-floor deepened to the CMB redshift-isotropy datum, r318 — the deepest firming), not opening territory; the one new structural joint surfaced was the **Nariai tie** (discrete deck/monodromy ↔ continuous algebroid connection, co-located at the Nariai branch point), posed as the lead frontier, held do-not-assert. **(2) Entry 13 frontier 1 RESOLVED this revision by c21's r321 grind, verified at source by c22** (hand-check of the so(5,1) symmetric-pair dimensions {6,7,10} + re-run of `knds_branch_vs_connection.py`): the **negative** — P4's discrete cover and P10's connection are independent structures, the Nariai coincidence real but shallow (analytically distinct — connection rational/analytic in M, cover √(M_N−M)-ramified; and spherical-special — extremal Kerr-dS is a branch point that is not a connection-zero, SO(2,1)×SO(2) dim 4 ∉ {6,7,10}). The field guide working: the vision held the lead open (resisting the face-19 unification urge), the work overruled it. So the Nariai lead **drops off the live frontier** (do-not-re-chase). **(3) The four standing docs carried** (each rebased to r322, stated for reversal): `THE_VISION.md` (Entry-13 header tracker, now noting the resolved lead); `THE_PLAN.md` (Entry-13 assessment + the c21 resolution + the live-frontier narrowing + the P11-cold-read-as-immediate-gate); `THE_SYNTHESIS.md` (r322 re-render — picture unchanged at the core and confirmed, the Nariai lead answered negative); Entry 13 itself molded with the verified resolution appended (its open-lead record kept). **(4) The live frontiers now:** empirical coherence + the standing residuals + the grand claim past the wall; **the immediate gate is the P11 cold read** — the r319 boundary-paper bake's fresh different-node whole-result read, never taken (c21's `HANDOFF_TO_c22.md`; c22 the fresh cold reader, the three grind-saturated gates spared), then the foundation bake. Wake bookkeeping carried in the scratchpad (compressions #1, #2 this session; full coda + 19 faces re-read whole at source). Net unchanged at the core: gravitational-cosmological unification, not geometric unification of matter; the grand claim open past the wall. Builds on r321 (c21).
-### Revision r322 (c21 fork) — 2026-06-19. **The dynamic half closed at honest weight — the "infinite-dim field-DOF completion" resolved (it dissolves; the genuine open frontier is quantum, not dynamic).** Directed to close the dynamic half's standing open tail ("the finite so(5,1) realization is complete; the remaining open F1 piece is the infinite-dim field-DOF completion"). Read at source, it is not one dangling computation — it splits (`F1_DYNAMIC_HALF_closure.md`, `scripts/f1_smeared_fullleaf_closure.py`): **(a)** the smeared, infinite-dim HDA homomorphism *for the symmetry-reducible sector* is a **corollary**, now computed — the {H⊥,H⊥} structure function is the inverse leaf metric hᵃᵇ (momentum-independent, Dirac/DeWitt); step 3 closed it for radial lapses, this completes it for arbitrary N(r,θ,φ): closes on the full Hₐ, angular components M-invariant (hᶿᶿ=1/r², hᵠᵠ=1/r²sin²θ — the retained SO(3), steps 7–8), radial hʳʳ=f carrying the connection (∂_M hʳʳ=−2/r, steps 5–8), coset metric at M=0 (Lie) varying off it (algebroid). The structure function being a tensor field, the finite-mode identification (steps 1–9) already pins it; arbitrary smearing adds no new CR content (Birkhoff: no local DOF in the sector, non-isometry smearings pure gauge). **(b)** The genuine field DOF (graviton) are past the wall (Move 8 handoff) = the Gowdy–dS propagating sector, whose nonlinear future stability is **externally grounded and already in P9** (`dynamics_paper.tex` l.143: Friedrich 1986 / Andréasson–Ringström 2016 / Beyer 2009 — ADMIT generic, Nariai the non-generic boundary CR owns via P5; the earlier "do-not-assert both ways" superseded). **Net: no dangling infinite-dim computation; the dynamic half is closed.** Honest residual caveat (held in P9, not open): the classical no-hair rests on a *convergence* of results, not one named theorem for the exact vacuum polarized Gowdy–Λ all-data case. **What stays genuinely open is NOT the dynamic half** — it is the quantum forcing (does the nonlinear Λ>0 back-reaction *force* quantum structure via the S₃/A₂ skeleton, Move 13? do-not-assert), the lock/QG frontier the lock seeds; **not touched here, not to be force-closed.** **Staged, NOT raced:** a P10 scope-sentence sharpening (l.135 "Open (the natural extension)" is now under-claimed for the sector — corollary, computed — and conflates the sector with past-the-wall); it rides its own fresh cold read. Stated for reversal. Builds on r321.
 ### Revision r321 — 2026-06-19. **Discovery banked (clarifying NEGATIVE) + c22 handoff prepared.** Free discovery on the live edge r316 named — the meeting of P4's discrete deck cover (same-α between-member morphisms = deck transformations of the horizon cubic's 3-sheeted cover, branched at Nariai, monodromy σ) and P10's continuous algebroid connection (the 𝔪-component of [𝔪,𝔪], vanishing at the symmetric strata, P10 l.124 noting the isotropy-jump locus *is* the metric-degenerate locus at Nariai). **Question:** are they one object / a deep P4↔P10 bridge? **Verdict: no — they are independent structures; the coincidence is real but shallow.** Two findings (`AUT_A2_ALGEBROID_finding.md`, scripts `nariai_connection_character`, `nariai_leak_order`, `nariai_leak_order2`, `knds_branch_vs_connection`): **(1) Analytically distinct** — the connection is analytic in the modulus M (the off-symmetric leak is rational in M; the throat curvature-mismatch D = −12√3·(M_N−M), exactly linear), whereas the cover is ramified √(M_N−M) (the colliding horizon roots split ±√(M_N−M)); the √ lives only in the offset↦modulus map, i.e. in the cover, not the connection. Co-located at Nariai but not one analytic object. **(2) The locus-coincidence is spherical-special, not general** — tested at extremal Kerr–de Sitter (a genuine Λ-vacuum stratum, P10 Type D; Δ_r quartic, its discriminant the degenerate-horizon branch locus). Run through P10's own grading test: SdS Nariai SO(2,1)×SO(3) dim 6 → [𝔪,𝔪]⊆𝔥, symmetric, connection ZERO ✓ (branch + spherical); extremal Kerr-dS SO(2,1)×SO(2) dim 4 → [𝔪,𝔪]⊄𝔥, non-symmetric, connection NONZERO ✗ (branch + rotating). The symmetric-pair isotropy dimensions of so(5,1) are {6,7,10}; dim 6 is in it, **dim 4 is not** — so extremal Kerr-dS is a **branch point that is NOT a connection-zero**, refuting "branch divisor ⊆ connection-zero divisor." **Why:** a degenerate horizon enhances (t,r) ℝ→SO(2,1) (+2); whether it lands symmetric depends on the angular factor — spherical SO(3)(3)+SO(2,1)(3)=6 hits the threshold, rotation breaks SO(3)→SO(2) so SO(2)(1)+SO(2,1)(3)=4 falls short. The SdS-Nariai coincidence is a numerical accident of spherical symmetry filling out a symmetric-pair dimension of so(5,1). (Confirming heuristic, non-vacuum: charged RNdS keeps SO(3) → coincidence survives; it is the angular symmetry, not the matter.) **Touches nothing precious:** no canonical paper changes; *optional* (cold reader's call) one-line P10 §strata remark that the Nariai isotropy-jump↔branch coincidence (l.124) is spherical-special. Being negative, needs only a sanity check in passing, not a gated cold read. **c22 handoff prepared** (`HANDOFF_TO_c22.md`): its first tasks in order — (1) the **P11 cold read** (the real outstanding load-bearing gate: the r319 boundary-paper bake's fresh different-node read, never taken); (2) the **foundation bake** after P11's read; (3) verify this discovery in passing; (4) then free to run its own frontier (vision just written). Three old gates (c17/c19/c20) spared; a genuinely fresh c22 is the truer cold reader on P11. Stated for reversal. Builds on r320.
 ### Revision r320 — 2026-06-18. **Full programme rebuild — the corpus and the meta-layer brought up to date with themselves and with the r317–r319 bakes + the empirical-determination deepening.** No new physics; a self-consistency pass after the canonical bakes. **Build floor verified:** every corpus paper recompiles (P1–P11 + framework + methodological + ARP), the only hard errors pre-existing missing-figure draft-boxes (BH_causality 3, CR_flatLCDM 1, SdS-slicing-curve 7 — all `File not found: using draft setting`), none from the bakes, zero undefined refs/cites. **Corpus cross-reference made live:** P3 `SdS-slicing-curve_v2.tex` l.423 — its group-theory deferral now reads "carried out in the companion groupoid paper~\cite{JanzenGroupoid}" (was "deferred to a separate paper" without the cite), consistent with the re-pointed l.607/l.640. **Spine confirmed eleven (P1–P11) everywhere:** the body header, the numbered list, the framework non-spine notes (×2: §papers and §honest-uncertainties — "fixed at ten"→eleven, "the five it predates"→six, +P11), and THE_SYNTHESIS body ("ten-paper spine"→"ten-paper *core* spine (P1–P10)", disambiguated from the eleven-paper result spine). **The P11 CORPUS_MAP entry rewritten** to the baked state (was pre-bake r307–r308 text): three *converging* obstructions; the decoupling onto P1/P7 leading; the non-compactness escape *closed for the geometric-isometry route* on localisation (proof-level, not "AH bites"); the compact face real-by-construction-not-a-co-equal-existent (Reading-B closed ontologically-not-structurally); the cosmic time *empirically determined* (CMB redshift-isotropy, P8 App. A); two distinct open items (fermion sector + empirical coherence, not "alone"); 8 pp, rides its own cold read. **Meta-layer dated notes added** (each in its doc's convention, stated for reversal): THE_SYNTHESIS r320 re-render note, THE_PLAN r320 status banner, THE_VISION r320 update, KICKOFF_GATE r317–r320 baked note, PROPAGATION_PLAN_r316 "STATUS: BAKED" header (recording the two c17/c19 corrections — localisation-not-AH-bites, two-open-items-not-alone — and the empirical deepening), BOUNDARY_PAPER_PLAN "STATUS: DRAFTED AND BAKED" header (its pre-bake "precarious escape" framing marked superseded), ONTOLOGY_FOUNDATION_INDEX r320 status marker (the adjudication baked into P4/P11 with the empirical floor; the worked-instance record here pending its own cold read). **Net:** the programme is internally coherent at the current state — the bakes integrated, the spine eleven, the empirical-determination floor propagated, the meta-layer current. **Pending (unchanged by the rebuild):** each baked paper rides its own fresh different-node cold read (P11's abstract the highest-risk synthesis); the foundation bake (the adjudication as worked instance) sequenced after P11's read. Stated for reversal. Builds on r319.
 ### Revision r319 — 2026-06-18. **Second canonical bake — the consolidation written into P11 (`boundary_paper.tex`); compile-verified clean (8 pp.), every constraint from the three nodes + Daryl carried.** The colour-frontier adjudication is now in the boundary paper at earned scope. **What went in:** (1) **§sigma operation-map guard** — the three operations co-localised at the $r=\sqrt{3/\Lambda}$ seam separated by type/target (real Weyl $\sigma$, fixing geometry; the seam continuation $\theta\mapsto\pi/2+i\psi\to\SO(5)$; the global Wick $x_0\mapsto ix_0\to\SO(6)\supset\su(3)$), colour's home the global Wick alone — the durable fix for the op-3/4 conflation. (2) **§wall non-compactness escape CLOSED for the geometric-isometry route on the LOCALISATION argument** (su(3) no isometry of the non-compact substrate, su(3)⊄so(5,1); acts only on the compact face) — **proof-level**, explicitly **not** "AH bites" (AH not invoked there); l.107's AH-gated/no-fermion-sector core kept intact, with the unbuilt fermion sector added as a standing caveat in its own right (c17 watch-items a+b). (3) **New §ontology** (`sec:ontology`) with `sec:decoupling` (colour-closure rests on P1/P7 causal structure — matter on the real Lorentzian horn, su(3) across the seam — robust whatever the face's status; the headline/most-secure, leads) and `sec:face-status` (the compact face real-by-construction but not a co-equal **existent**; the existence-criterion; **the cosmic time it turns on empirically determined** — CMB redshift-isotropy certifies uniform expansion, differential alternative excluded by ~3 orders, P8 App. A; so the "two co-equal real forms" reading closed **ontologically, not structurally**, universal do-not-assert). (4) **prop:boundary, §open, abstract** all updated to match — abstract **leads with the decoupling**, wears the escape-closure scope on its face ("for that route, by localisation"), keeps **two** distinct open items (fermion sector + empirical coherence, **not** "alone"), "three **converging** obstructions" (c17 minor); §question/§meaning stale "three independent"/"one escape, one frontier" reconciled. Bibitems P7 (`JanzenCRcosmology`) and P8 (`JanzenCanonicalTime`) added; all new labels/cites resolve. **Rides its own fresh different-node cold read next** — the abstract is the highest-risk synthesis in the bundle (c19/c17), so the post-edit whole-result read is the gate before this is final. **Pending:** the foundation bake (`ONTOLOGY_FOUNDATION_INDEX.md` + `THE_LENS.md`) — the adjudication as the worked instance, with the empirically-determined existence-ontology — sequenced next, also riding its own cold read. Stated for reversal. Builds on r318.
