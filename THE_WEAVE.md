@@ -1,7 +1,7 @@
 ---
 name: the-weave
 kind: STATE
-current: r2676+c54.211
+current: r2713+c54.215
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
 
@@ -315,6 +315,49 @@ job: How the parts are one object — the per-paper orchestration grid and the r
 > (r2433); the outside readers' package and its judgements (r2439); and the CI outage found by node 53 (r2440).*
 > *Each is carried in `CORPUS_MAP` and in its own register row; **this weave's shape-of-work reading has not been
 > re-run against them**.*
+## ⛭⛭⛭ BROUGHT CURRENT c54.215 — **four edges from two revisions, and three of them run BACKWARD into papers that already carried the fact**
+
+*`check_grains` caught this document 50 revisions behind. **Both revisions that made it stale were this
+fork's**, so the debt was this fork's to clear.* ⌗ *And the shape of what they added is worth naming: **three
+of the four edges are cases where the receiving paper already carried the fact and nothing pointed at it** —
+which is the same direction-of-neglect this grid found for itself at r2379.*
+
+**⌗ ⓵ P1/P15 → P14, and it is ONE exponential doing a THIRD job** (`L-548`, c54.214). *`L-526`'s $p{=}1$
+against $p{=}2$ split says a **simple** root gives $f\sim2\kappa\delta$, so $r_{*}=\log\delta/2\kappa$ and
+the approach is exponential — which is what carries a mode's positive frequencies into a **Planck spectrum**
+(P1), and what decides what **crosses the branch point** (P15).* ⇒ ***That same exponential is what makes
+P14's radial Dirac potential SHORT-RANGE: $W=\lambda\sqrt f/r$ and both partners $W^{2}\pm\dd W/\dd r_{*}$
+decay at the surface gravity, which is exactly the condition for an ordinary continuum.*** ⌗ *So the thermal
+mechanism and the existence of a propagating spinor sector rest on one geometric fact. **One fact, three
+purposes, and the third edge was never drawn.***
+
+**⌗ ⓶ P14 → p0, and the edge was a CORRECTION** (`L-548`, c54.214). *p0 summarised P14's dual-norm result as
+"normalizable in the leaf's proper measure, **where** the propagating Dirac-norm mode does not".* ⇒ ***Read as
+"whereas" it is true; read as "in which measure" it is FALSE, because on the static region
+$L^{2}(\dd r_{*})\subset L^{2}(\dd\ell)$ — the leaf norm is strictly the weaker one.*** *Disambiguated.*
+⌗ ***A false edge misleads exactly like a missing one, and this grid says so; this is one that was drawn
+ambiguously rather than wrongly, which is harder to see than either.***
+
+**⌗ ⓷ P15 → P10, and it is the edge that DECIDES `PO-6`'s dark half** (`L-549`, c54.215). *P15's radiation-free
+layer $a=\sinh^{2/3}(3Ht/2)$ has a Ricci scalar that RUNS, $\infty\to12H^{2}$; P10's own slicing
+$a=\alpha\cosh(T/\alpha)$ has $R=12/\alpha^{2}$ constant.* ⇒ ***Twenty-one revisions of register traffic
+turned on which of those the tower sits on — and the answer is that for the QUADRATIC counterterms it does not
+matter: every FRW is conformally flat for every scale factor, so the degeneracy holds on both. The edge
+between the two papers is real; what it carries is that the distinction the register was drawing does not
+bear on the question it was drawn for.***
+
+**⌗ ⓸ P1/P3 → P10, the CONTROL edge** (`L-549`, c54.215). *The deficit $\mathrm{Riem}^{2}-2\mathrm{Ric}^{2}
++\tfrac13R^{2}$ is exactly $C^{2}$, and on the corpus's own SdS it is $48M^{2}/r^{6}$.* ⇒ ***So the
+substrate-with-a-hole is precisely what breaks the degeneracy the layer enjoys — the counterterm collapse is a
+property of a CONFORMAL CLASS and not of a symmetry group, which is why every attempt to locate it in the
+background FAMILY mislocated it.*** ⌗ *This edge is the one that makes the `QUADRIC_GEOMETRY_LEDGER`'s
+subject matter — conformal and projective structure — load-bearing on a quantization question, which it had
+not been before.*
+
+**⚠ AND WHAT THIS PASS DOES NOT COVER, stated here rather than left to be found:** *the **PER-PAPER HARVEST
+GRID** below and the arc sections are as of **r2376–c54.211** and were not re-walked; 56's r2677–r2713 joins
+are not entered, and the four edges above are 54's own. **The joins record is current; the grid is not.***
+
 ## ⛭⛭⛭ BROUGHT CURRENT c54.211 — **five joins made since c54.207, and one of them is three papers deep**
 
 *This grid's job is how the parts are one object. **Five new edges, and the last is a join that turned

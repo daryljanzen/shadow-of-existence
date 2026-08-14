@@ -1,9 +1,38 @@
 ---
 name: open-problems-map
 kind: STATE
-current: r2601+c54.207
+current: r2713+c54.215
 job: The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open
 ---
+
+## ⛭⛭⛭ BROUGHT CURRENT r2713+c54.215 — AND THE TWO ITEMS THIS MAP CARRIES MOST PROMINENTLY BOTH MOVED
+
+*This map went 21 revisions behind and `check_grains` caught it at the window's edge. **Both of the items it
+opens with have moved, and both moved because of work this fork did in the last two revisions**, so the staleness
+was this fork's own to clear.*
+
+**⌗ `PO-11` — NARROWED c54.214, AND ITS OBSTRUCTION WAS A NORMALISATION CONDITION.** *r2669/r2690 measured that
+the delivered modes are not normalizable in the tortoise measure and read the divergence as the obstruction.*
+⇒ ***P14 states the divergence together with its cause: "the horizons sit at infinite tortoise distance, **where
+the mode tends to a constant**" — and a modulus tending to a constant at infinite distance is a plane wave.
+Non-normalizability in $L^{2}(\dd r_{*})$ is the DEFINING property of a continuum state, so it cannot be what
+prevents one.*** *The $\omega\neq0$ problem had simply never been posed; posed, it is short-range
+($d\log W/\dd r_{*}\to\kappa$ at both horizons) with $|T|^{2}+|R|^{2}=1$ and delta-normalised states at every
+$\omega\neq0$.* ⚠ ***Still open, and this is the row: the QUANTISED field — mode completeness, the Fock
+construction, and the join to the wall sector at $r=0$.*** *`L-548`.*
+
+**⌗ `PO-6` — NARROWED c54.215, AND ITS DARK HALF IS A CALCULATION AFTER ALL.** *r2713 closed it as "a statement
+about what the question can MEAN, not a calculation waiting to be run".* ⇒ ***The quadratic degeneracy is
+conformal flatness, not maximal symmetry: the deficit is exactly $C^{2}$, every FRW is conformally flat for every
+$a(T)$, and Gauss–Bonnet is an exact total derivative there — so no scale factor can break it and back-reaction
+cannot. Being an identity pointwise in $a(\cdot)$, it descends to the quantized sector as an operator
+relation.*** ⚠ ***The real limit is the SHEAR — $C^{2}=4\sigma^{2}+O(\sigma^{4})$ on Bianchi I, and the tower
+IS the transverse-traceless shear — so what this row now owes is that calculation at second order in the mode
+amplitude.*** *`L-549`.*
+
+**⚠ AND WHAT THIS PASS DOES NOT COVER, stated here rather than left to be discovered:** *the CLUSTER TABLES and
+the RUNWAY below are as of **r2601+c54.207** and have not been re-sorted; `B·1`/`B·2`'s protected-alias rows
+still describe `PO-6` by its pre-r2610 clause count. **The two headline rows are current; the sort is not.***
 
 ## ⛭⛭⛭ BROUGHT CURRENT r2601 — and the register grew three items this map never carried
 

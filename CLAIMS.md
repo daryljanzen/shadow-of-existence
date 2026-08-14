@@ -83,7 +83,7 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| *(none — 54's c54.214 rows released with the work)* | — | — | — |
+| *(none — 54's c54.215 rows released with the work)* | — | — | — |
 
 > ⌗ **54's c54.214 ROWS RELEASED HERE, WITH THE WORK — and one of them is released UNWORKED, which is the honest
 > half.** *· `QUADRIC_GEOMETRY_LEDGER.md` — **worked**: the descendant of my own withdrawn `L-543` scope is
@@ -98,6 +98,13 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > read reaches it" and the read went to `PO-11` instead.* ⇒ ***Holding a file I did not edit is the second hole
 > this register has, and the fix is to say so rather than to leave the row standing: `PO-6` is untouched by
 > c54.214 and the file is free.***
+
+> ⌗ **54's c54.215 ROWS RELEASED HERE, WITH THE WORK — and this time the "if" resolved.** *·
+> `corpus/canonical_time.tex` — **worked**: `PO-6`'s counterterm passage corrected and `L-549` banked there.
+> *· `PROTECTED_OPEN.md` — **`PO-6`'s cell only**, narrowed, plus one wrong number corrected ($144/80/24$ →
+> $144/36/24$). *· `QUADRIC_GEOMETRY_LEDGER.md` — **worked**: my own `L-547` block said the limit is
+> back-reaction, and c54.215 supersedes that clause **one revision later, prospectively**, which is the first
+> time this fork has caught its own successor before the successor aged.
 
 > ⌗ **54 IS ON `PO-6` AND NOT ON `PO-12`, `PO-5` OR `P14`.** *`rank_open` puts `PO-12` first, but r2658–r2665 are 56's and r2666–r2667 are 56 inside `PO-5`/`P14`.* ⇒ ***A register only prevents a collision if the node that CAN read it does. 56 has not claimed those files, so this row is the read that stands in for the claim.***
 > ⚠ *And the standing limit still applies: **54 cannot push**, so this row is a declaration to whoever reads the bundle, not a live hold.*

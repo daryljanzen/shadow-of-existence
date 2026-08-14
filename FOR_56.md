@@ -1825,3 +1825,121 @@ proposing the instrument: **a self-excluding scan that also excludes its own suc
 `['A3_the_convergence_audit']` to `['A3_the_convergence_audit', 'A6_item_58_resolves_split',
 'A8_the_self_protecting_falsehood']`.* ⇒ ***Two more receipts filed without an `INDEX.md` row, same window.***
 
+## ⛭⛭⛭ 29 · `PO-6`'s DARK HALF HAS AN OBJECT — r2677 STATED *TWO* DEGENERACIES AS ONE — added c54.215
+
+*You closed `PO-6`'s cell at r2713 with:* ***"A counterterm basis is a statement about a class of FIXED
+backgrounds, and in the coupled sector there is no such class to state it on — which is a statement about what
+the question can MEAN, not a calculation waiting to be run."***
+⇒ ***That follows from r2677's stated REASON — maximal symmetry — and the reason is not what carries the
+result.*** *If the degeneracy needs a one-parameter family of fixed backgrounds, quantizing the scale factor
+does remove the class and the question does lose its object. **It does not need one.***
+
+**⛭⛭ ⓵ THE DEFICIT IS EXACTLY $C^{2}$, AND EVERY FRW IS CONFORMALLY FLAT FOR EVERY $a(T)$.** *In four dimensions
+$C_{\mu\nu\rho\sigma}C^{\mu\nu\rho\sigma}=\mathrm{Riem}^{2}-2\,\mathrm{Ric}^{2}+\tfrac13R^{2}$. Computed from
+the metric with $a$ a **free function** and no assumption on it:* ***identically zero, at $k=+1$, $0$ and
+$-1$.***
+
+**⛭ ⓶ AND GAUSS–BONNET IS AN EXACT TOTAL DERIVATIVE THERE, also for every $a(T)$:**
+
+```
+    sqrt(g) ( R^2 - 4 Ric^2 + Riem^2 )  =  d/dT [ 24 ( a'^3/3 + a' ) ]      exactly
+```
+
+⇒⇒ ***SO $\int\!\sqrt g\,\mathrm{Ric}^{2}$ AND $\int\!\sqrt g\,\mathrm{Riem}^{2}$ ARE BOTH FIXED BY
+$\int\!\sqrt g\,R^{2}$ UP TO A BOUNDARY TERM, ON EVERY FRW WHATEVER. The three quadratic invariants — the only
+place in the whole basis where a CHOICE exists, three functionals at one dimension — span ONE dimension for
+every scale factor. No scale factor can break it, so back-reaction cannot.***
+
+**⛭⛭⛭ ⓷ AND THIS IS THE PART THAT ANSWERS YOUR SENTENCE DIRECTLY: THE RELATION IS POINTWISE IN $a(\cdot)$.**
+*It is an identity on each geometry separately, not an evaluation on a chosen class.* ⇒ ***An identity true of
+every member of a set survives superposition. So it descends to the sector where $a$ is quantized as an operator
+relation, and the coupled sector never required "a class of fixed backgrounds" — because the statement was never
+made by evaluating on one.***
+
+**⛔ ⓸ AND THE OTHER HALF OF r2677 REALLY DOES FAIL, WHICH IS WHAT THE ROW WAS TRACKING ALL ALONG.** *On a
+constant-curvature background, terms of **different** dimension — $\int\!\sqrt g$, $\int\!\sqrt g\,R$,
+$\int\!\sqrt g\,R^{2}$ — are proportional as well, and the basis is one-dimensional at every order. **That** is
+what maximal symmetry buys, and it is lost the moment $a$ is not the de Sitter $\cosh$.* *Shown on P15's own
+radiation-free layer: $R$ runs $\infty\to12H^{2}$, while the quadratic identity holds there **exactly**.*
+⇒⇒ ***r2677's PREMISE FAILS AND ITS CONCLUSION SURVIVES, AND SEPARATING THE TWO IS THE WHOLE OF IT. r2713 read
+the first as the second, which is why the dark half looked like a question about what a question can mean.***
+
+⌗ **AND WITHDRAWN `L-543` ASKED A REAL QUESTION AFTER ALL.** *It asked whether the one-dimensional basis
+survives on a background whose curvature RUNS.* ⇒ ***For the sector where a choice exists the answer is YES, and
+it is computed on the very layer r2677 named. The withdrawal's OCCASION was right — the free tower's own
+background is constant-curvature — and its REASON, "the question has no object", was not.*** *I withdrew the
+ledger descendant on that reason at `L-547` last revision, so **this supersedes a clause of my own, one revision
+later** — the r2713 rule turned on myself prospectively rather than after twenty revisions.*
+
+**⛭⛭ ⓹ AND THE REAL LIMIT IS DETERMINATE, AND IT IS NOT THE SCALE FACTOR.** *The deficit **is** $C^{2}$, so the
+degeneracy ends exactly where conformal flatness does — at the **SHEAR**. On an axisymmetric Bianchi I shear of
+amplitude $\sigma$ over an isotropic expansion:* ***$C^{2}=\sigma^{2}(4+16\sigma^{2}/3)=4\sigma^{2}+
+O(\sigma^{4})$*** *— zero at $\sigma=0$, entering at **second order**.*
+⇒⇒ ***AND THE TOWER IS THE TRANSVERSE-TRACELESS SHEAR, in P10's own words. So what ends the one-dimensional
+quadratic basis is the tower's OWN tensor content at second order in the mode amplitude — not the scale factor
+at any order — with the sub-leading heat-kernel coefficients as the instrument. `PO-6`'s dark half IS a
+calculation, and that is the calculation.***
+
+**⛔ CONTROL — and it is the corpus's own background that breaks the identity.** *SdS gives
+$C^{2}=48M^{2}/r^{6}$, zero iff $M=0$.* ⇒ ***The degeneracy is a property of the LAYER and not of the
+substrate-with-a-hole — and that is also why appealing to the background FAMILY kept mislocating it: it is a
+property of a CONFORMAL CLASS, not of a symmetry group.***
+
+**⌗ AND P10 WAS ALREADY CLOSER TO RIGHT THAN THE REGISTER.** *The paper's next sentence after the one r2713
+quotes calls it* ***"a question with a stated object, a known instrument in the sub-leading heat-kernel
+coefficients, and a decidable answer."*** ⇒ ***Your own r2632 rule a fourth time this session, and the first
+time it has caught the REGISTER running ahead of its own paper rather than a receipt running ahead of a
+sentence.*** *P10's passage is corrected and the result banked there; it declines the closure in its own words
+("what remains is the tower's own shear, which is a calculation and not a question about meaning").*
+
+**⌗ AND ONE REGISTER NUMBER CORRECTED, which is small but is a wrong number in a live cell.** *`PO-6` read
+**$144/80/24$** for twenty-one revisions.* ⇒ ***$80$ is `S50`'s $D{=}5$ entry; $144$ and $24$ are its $D{=}4$
+entries. Three numbers read DOWN the table instead of ACROSS one row.*** *`S50` is correct and always was —
+$D{=}4$ gives $144/36/24$, reproduced here from the metric — and **the transcription into the register was
+never checked by anything, because no gate reads a number out of a receipt into a register cell.*** ⚠ *I am not
+proposing that gate: "the number in this cell is the number in that receipt" needs a convention for which
+numbers are pinned, and that is yours.*
+
+⚠⚠ **NARROWING, NOT CLOSURE. `PO-6` STAYS OPEN AND THE RE-VERDICT IS YOURS.** *· **ANSWERED:** whether
+back-reaction removes the object — it does not. *· **WITHDRAWN:** r2677's premise, and the row's own "not a
+calculation waiting to be run". *· **STILL OPEN:** the ultraviolet definition of the tower sums, and now the
+shear calculation at second order. *· **NOT CLAIMED:** that the coupled sector is renormalizable — this says
+which functionals a divergence can NEED, not that they are absorbable; no heat-kernel coefficient is computed;
+and Bianchi I is a HOMOGENEOUS shear, which fixes the ORDER at which conformal flatness fails and is not the
+mode-by-mode statement on the tower.
+
+⇒ ***`L-549`, receipt `L549_coupled_counterterms/Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py`, six seeded defects verified to fire.***
+
+⌗ **AND TWO METHOD NOTES AGAINST MYSELF, because both were mine this turn.**
+*· **A THRESHOLD FITTED TO THE ANSWER IS NOT A CHECK.** The metric-derived deficit on the layer cancels
+catastrophically, so its numeric residual is set by working precision, not by physics — my first version
+asserted `< 1e-30`, failed at `1.4e-12`, and the temptation was to loosen the number. ⇒ ***The signature of an
+exact zero is not "small" but "shrinks with precision", so the test is now a SCALING one: 40 digits gives
+$3.06\text{e-}37$ and 80 digits gives $2.24\text{e-}77$. A real deficit would sit still.***
+*· **AND MY SEED HARNESS LEFT A SEED IN THE FILE.** Its `finally` restore ran and the clean re-run still failed,
+because I was editing other files in the same window. ⇒ ***I caught it only because I re-ran the clean case
+after the harness said "clean". The rule I wrote at c54.213 was "do not seed a file a background job is
+writing"; the inverse holds too — **do not do other work while a seed harness holds a file, and verify the
+restore instead of trusting the `finally`.***
+
+## ⛔⛭⛭ 30 · AND ITEM 28's CLASS CAUGHT ME INSIDE THE TURN THAT WROTE IT — added c54.215
+
+*Item 28 named a class: **a receipt invalidated one revision later by its own author's next move** (`B24` killed
+by r2706's paper edit, `C32` by its own successor `C33`). I wrote that warning at c54.214.*
+⇒ ⛔ ***At c54.215 I corrected P10's counterterm passage and broke `S50` — my own receipt, which pinned the very
+sentence I was withdrawing — and the full run is what caught it, not me.***
+
+*`S50` asserted P10 carries "in the coupled sector there is no fixed background to state it on". That is exactly
+the claim `L-549` withdraws, so **the receipt was pinning the corpus to a sentence I had just refuted**. Amended
+in place: the slot now pins P10 stating it as a **worry** and refuting it, and carries a note saying why.*
+
+⌗ ***What I take from it, and it sharpens item 28 rather than repeating it:*** *the interval between writing a
+receipt and breaking it was ONE revision for you, twice, and **ZERO revisions for me** — the break and the
+warning about the break were the same turn's work. **So this is not an attention failure that more care would
+have caught.** A receipt that pins a paper's sentence is a *coupling* between two files, and the corpus has no
+index from "sentence in a paper" to "receipts that quote it". ⇒ *The full run is currently the only thing that
+closes that loop, and the runner's own note says it is for "a juncture — before a bundle, after a sweep".*
+⚠ *Still not proposing the instrument: a quote-index is cheap to imagine and has a real design question in it
+(what counts as the same sentence after an edit), and that is yours. **I am reporting that the loop exists, that
+it closed on me at zero distance, and that nothing but the slow gate closed it.***
+

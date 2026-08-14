@@ -270,8 +270,19 @@ WRITTEN = [
      r'the closed synchronous slicing\s+\$a\(T\)=\\alpha\\cosh\(T/\\alpha\)\$'),
     ("stating that the degeneracy holds on the tower's own geometry",
      r'the degeneracy holds on the very background the free tower\s+uses'),
-    ("and the real limit is the coupled sector, where there is no fixed background",
-     r'in the coupled sector there is no fixed background to state it on'),
+    # ⛔⛭ AMENDED c54.215, `L-549`.  This slot used to pin P10's "in the coupled sector there is no
+    #    fixed background to state it on" as THE limit.  *** That is withdrawn: the collapse of the
+    #    three quadratic invariants is CONFORMAL FLATNESS, not maximal symmetry -- the deficit is
+    #    exactly Weyl^2, every FRW is conformally flat for every a(T), and Gauss-Bonnet is an exact
+    #    total derivative there, so no scale factor can break it and back-reaction cannot. ***  P10
+    #    now states the old sentence as a WORRY and refutes it in the same passage.
+    #  ⚠ AND THIS BREAK IS THE VERY CLASS ROUTED TO 56 AS ITEM 28 ONE REVISION EARLIER -- a receipt
+    #    invalidated by its own author's next move.  It happened here INSIDE the turn that wrote the
+    #    warning, and was caught only by the full run.
+    ("⛔ and the c54.211 coupled-sector limit is WITHDRAWN at c54.215: P10 now states it as a worry",
+     r'The natural worry there is that a counterterm basis is a\s+statement about a class of fixed\s+backgrounds'),
+    ("⛭ and refutes it with the stronger reason -- conformal flatness, which no scale factor can break",
+     r'no scale factor breaks\s+it, because no scale factor can make an FRW geometry anything but conformally\s+flat'),
 ]
 for what, pat in WRITTEN:
     ok = re.search(pat, P10, re.I | re.S) is not None
@@ -295,8 +306,9 @@ print("ALL CHECKS PASS — every quadratic curvature invariant on a maximally sy
 print("constant times alpha^-4, so the counterterm basis is one-dimensional on the one-parameter family")
 print("this framework admits; the two sentences the argument assembles are the corpus's own; P10's own")
 print("slicing a(T)=alpha*cosh(T/alpha) has R = 12/alpha^2 CONSTANT, so the degeneracy holds on the")
-print("background the free tower uses; and the real limit is the coupled sector, where the scale factor")
-print("is quantized and there is no fixed background for a counterterm basis to be stated on.")
+print("background the free tower uses; and the c54.211 'real limit is the coupled sector' is WITHDRAWN")
+print("at c54.215 (L-549): the degeneracy is CONFORMAL FLATNESS, not maximal symmetry, so no scale factor")
+print("can break it, and back-reaction cannot. The real limit is the SHEAR (L-549).")
 print("=" * 78)
 
 # ============================================================================================
@@ -334,5 +346,5 @@ print(f"GATE c54.211 (r2676), `L-543` amended at `L-544`: every quadratic curvat
       f"constant absorbs any degree; the argument assembles p0's invariant sentence, p0's foliation "
       f"and `L-533`'s scale-only descent, all five checked present; ⛔ and c54.210's scope is WITHDRAWN "
       f"here — P10's own slicing a(T) = alpha*cosh(T/alpha) has R = {Rtower}, CONSTANT, so the "
-      f"degeneracy holds on the tower's own geometry and the real limit is the coupled sector — "
+      f"degeneracy holds on the tower's own geometry; and the coupled-sector limit is WITHDRAWN at c54.215 — "
       f"pinned against `D2`, cc54's `L809/S1` (A7) and `D50`.")

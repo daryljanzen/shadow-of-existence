@@ -156,3 +156,7 @@ r2713  COMPUTED    L-543 withdrawn -- aimed at a running background the free tow
 c54.214  LATENT      PO-11s obstruction is a NORMALISATION CONDITION: P14 says the tortoise norm diverges "where the mode tends to a constant" -- which is a plane wave, not a failed bound state
 c54.214a COMPUTED    and the omega!=0 continuum BUILT: V_pm short-range at the surface gravity, |T|^2+|R|^2=1, SUSY partners isospectral, and L^2(tortoise) STRICTLY inside L^2(leaf)
 c54.214b LATENT      PO-10s strike orphaned family 5s pointer, and check_family_pointers second stated remedy is not implemented -- tested, exit 1 unchanged
+c54.215  COMPUTED    PO-6: the quadratic degeneracy is CONFORMAL FLATNESS, not maximal symmetry -- Weyl^2 = 0 on every FRW for every a(T), so no scale factor can break it
+c54.215a LATENT      and r2677 stated TWO degeneracies as one: the different-dimension half does fail under running, the quadratic half does not, and r2713 read the first as the second
+c54.215b LATENT      P10's own next sentence already said the question has "a stated object ... and a decidable answer" -- the REGISTER ran ahead of its own paper
+c54.215c INSTRUMENT  amended S50: my own P10 edit broke my own receipt -- item 28's class at ZERO revisions distance, caught only by the full run
