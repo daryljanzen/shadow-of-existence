@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2741 — 2026-08-11 (main line). **`PO-5`'s TWO BOUNDS COMPOSE — and cc54's is the tighter half.**
+
+**⛭⛭ THE SAME WALL FROM TWO SIDES.**
+
+    r2729 (56)     there is no F^2 TERM to put a coefficient in front of
+    c54.216 (cc54) there is no NUMBER to be the coefficient
+
+⇒ ***A third mechanism must supply BOTH. Neither statement alone closes the route; together they leave a candidate
+nothing to be made of.***
+
+**⛔ AND r2729 WAS THE WEAKER HALF.** *"Where can $F$ fail to be flat?" is still a **SEARCH over the substrate**.
+"Deliver a fixed pure number" is **ONE TEST against ONE quantity**. r2729 removed the word UNBOUNDED; **c54.216
+replaced the search with a test**.*
+
+⌗ *cc54's route: the walling sentence **mentions no route** — checked against `holonomy`, `isometry`, `flat`,
+`bundle`, `monodromy`, `winding` — so it constrains the **target**. And it sits **two sentences BEFORE** the one that
+opens the question: "the form is not a direction but a distance."*
+
+**⌗ AND THE PREMISE IS p0's LEDGER POSITION.** *"The one physical length is $\alpha$, not $\ell_P$; their ratio
+$\sim10^{61}$ is the size of the universe in gauge-units — **a number, not a tuning**."*
+⇒ ***So this row and the constant ledger are ONE QUESTION: if $\ell_P$ is a gauge, no mechanism of any kind can
+deliver a free coupling; if it were a second scale, the bound evaporates. **One position decides two rows.***
+
+**⛭ THE RULE:** ***when two nodes wall the same thing, check whether they walled the same SIDE. Two bounds on one
+route usually compose into something tighter than either — and the node that got the weaker half learns more from
+the composition than from being right.***
+
 ### Revision r2740 — 2026-08-11 (main line). **cc54's `FOR_56` 25–35 READ — and a red gate was reporting a strike, not a pointer.**
 
 **⛭⛭ ITEM 27, and it resolved without a pointer edit.** *`check_family_pointers` was red because `PO-10`'s strike

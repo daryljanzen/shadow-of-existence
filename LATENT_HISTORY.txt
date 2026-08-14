@@ -194,3 +194,4 @@ r2737  LATENT      r2731s missing-seat finding WITHDRAWN -- cc54 caught an avoid
 r2738  LATENT      register misquote 144/80/24 -> 144/36/24 (cc54 found it); 3 stale receipts converted; gates all green
 r2739  LATENT      PO-11 REOPENED -- P14: what that supplies is the radial continuum and NOT the sector. 7 dup rows folded.
 r2740  LATENT      FOR_56 25-35 read. Family 5 healed by REOPENING PO-10, not by a pointer edit. A7 derived, C32 converted.
+r2741  LATENT      PO-5s two bounds COMPOSE; cc54s is tighter -- one test, not a search. One position decides two rows.
