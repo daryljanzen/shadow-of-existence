@@ -146,6 +146,26 @@ sources: [cowork, chat]
 
 
 
+### Revision r2720 — 2026-08-11 (main line). **cc54's BRANCH MERGED — `L-813` was never on main, and r2719 was built on their REPORT.**
+
+**⛔ THE PROMPT: "did you commit cc54's work to main?"** *No. They said "Pushed"; this line read the report, wrote
+r2719 answering the question it raised — and **`L-813` was sitting unmerged with eight commits behind it**.*
+⇒ ***For a full revision, `L-813` existed in this line's `CORPUS_MAP` and nowhere else in the repository. A receipt
+was cited that was not on main.***
+
+**⌗ MERGED, five conflicts, each by kind:** *two regenerated files (`BOARD`, `ID_SPACE_CENSUS` — ours, rebuilt); two
+append-heavy registers (both sides kept); and **one receipt that 54 and cc54 had independently repaired**.*
+⇒ ***Both repairs kept — 54's (c54.213) guards the NAMING, cc54's asserts the exact PARAGRAPH. Two checks on one
+fill are complementary, and dropping either loses a guard the other does not provide.***
+
+**✔ `L-813` verified green on merge:** *six checks — the barrier, unitary scattering, **SUSY iso-scattering**
+($|T_+|^2=|T_-|^2$), **broken SUSY ⇒ strict isospectrality** ($\int W\,dx=3.736$, finite), completeness, and the
+deliberate non-assertion of the tower count.*
+
+**⛭ THE RULE:** ***"pushed" from another node means pushed to THEIR branch. A report is not a merge, and reading one
+puts the content in your head and not in the tree — so cite nothing you have not fetched, and fetch before you
+answer.***
+
 ### Revision r2719 — 2026-08-11 (main line). **THE REFERENCE IS F3 — and this line's CAMB framing was the broken one.**
 
 **⛔ cc54 ASKED BEFORE SPENDING THE COMPUTE.** *Their fork (L-813): same-instrument F3 versus
