@@ -121,3 +121,4 @@ r2684  LATENT      PO-6s two halves restated: half one FINISHED, half two has a 
 r2685  LATENT      convergence audit: 3 crossings in 70 revisions, but 4 of 5 independent rows are now BOUNDED
 r2686  COMPUTED    the substitution itemised: r_s ~ H^-1 but r_D ~ H^-1/2, so the ratio does not cancel
 r2687  COMPUTED    integrated the rate difference: +7.1% to +14.4% across onsets, P15s +9.4% at z~2500
+r2688  COMPUTED    the onset is FIXED (z~6797, fitted to the acoustic angle); the residual is the weight g(R)/x_e

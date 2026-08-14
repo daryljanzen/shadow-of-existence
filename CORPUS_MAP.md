@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2688 — 2026-08-11 (main line). **`PO-12`'s LAST FREE PARAMETER IS NOT FREE — and the residual is the WEIGHT.**
+
+**⛭ THE ONSET IS FIXED, TWICE.** *"$z_{\rm onset}\simeq6797$" (`prop:subhorizon`); and "**It is fitted to the
+acoustic angle at the *directly* measured $H_0$** and lands at $z_{\rm onset}\simeq6.8\times10^3$, $T_{\rm
+onset}\simeq1.6$ eV, near $\rho_r/\rho_m\simeq2$" — with "**the same $z_{\rm onset}$ meets the scale at every
+$H_0$ across the range**".*
+⇒ ***r2687's one-parameter family has ONE MEMBER. The onset is inherited, not chosen — and r2687 scanned it.***
+⌗ *Model checks there: $\rho_r/\rho_m=1.87$ against the paper's $\simeq2$.*
+
+**⚠⚠ AND THE RESIDUAL MOVED SOMEWHERE ELSE.** *Unweighted at the true onset gives **+13.1%**, not $+9.4\%$ —
+because the integrand is $\int da\,g(R)/(Hx_e)$ and **$x_e$ collapses at recombination**, so the integral is
+dominated by the last decade, where the rate difference is **smallest**.*
+
+    unweighted  +13.1%      a^3  +8.7%      a^6  +7.8%      <- P15's +9.4% lies between
+
+⇒⇒ ***Three revisions moved the discrepancy from the SCALING (r2686) to the ONSET (r2687) to the WEIGHT (r2688) —
+and each move was a real narrowing, because each named a different object.***
+
+**⛭ THE RULE:** ***before scanning a parameter, grep for it. A quantity you are treating as free is usually pinned
+somewhere in the corpus — and the scan will look like careful work while producing a family of answers where one
+exists.***
+
+⌗ ***`PO-12`'s debt is now not a parameter at all: carry $g(R)/x_e$ through the integral on both legs — an
+integration with no free constants.***
+
 ### Revision r2687 — 2026-08-11 (main line). **THE 2.6-POINT GAP CLOSED BY INTEGRATION — and the answer is set by the ONSET.**
 
 **⛔ THE FIRST INTEGRATION WAS NONSENSE, AND THAT LOCATED THE VARIABLE.** *Running from $a\to0$ made $r_s$ larger by
