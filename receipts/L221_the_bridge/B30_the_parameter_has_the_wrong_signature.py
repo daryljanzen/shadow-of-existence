@@ -57,6 +57,11 @@ real structure and may serve elsewhere.  ** Not that $\\sigma_z$ is the right em
 Cartan direction the Weyl element reflects (r2676), and the signature result is independent of the
 embedding's normalisation.
 
+** COMPUTES: the horn rotation's stabiliser on the three-horn configuration, and the rapidity
+family exp(chi sigma_z/2) with its unitarity residual.  *** Both parameters are the corpus's
+own -- the 120-degree horn separation and the Cartan direction the Weyl element reflects.
+Nothing is imported. *** **
+
 Written r2733.  Stated for reversal.
 """
 import os
