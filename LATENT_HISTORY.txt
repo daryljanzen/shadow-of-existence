@@ -166,3 +166,4 @@ c54.216b INSTRUMENT  amended U2: a COUNT pin broken by an addition that AGREES w
 c54.217  LATENT      PO-4's row was CORRUPT for 368 commits -- object column 5069 chars, a block twice, a third copy starting MID-WORD -- and check_family_pointers was being PASSED by it
 c54.217a INSTRUMENT  and three rows split on unescaped math bars; PO-11 went 15 -> 29 cells at my own c54.214, the same defect a gate caught me on in INDEX.md two revisions earlier
 c54.217b INSTRUMENT  my own repair-verification was file-level and passed while a word was dropped from one row -- sound check, wrong object; tightened to per-row and per-glyph
+c54.218  COMPUTED    PO-4 is not "one factor short": <T, Weyl> = N(T), dimension 1 against SU(2)'s 3 -- the Weyl group is a QUOTIENT, not a complement
