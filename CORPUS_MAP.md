@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2755 — 2026-08-11 (main line). **THE HEDGED NUMBER WAS RIGHT — nine $\sim8\%$ stand, the one $9.4\%$ was the error.**
+
+**⓵ TRACED IN THREE STEPS.** *P15's $9.4\%$ cites `C10` ($+9.26\%$), which cites `C9`, which computes:*
+
+    r_s(CR)/r_s(LCDM) = 1.0067        r_D(CR)/r_D(LCDM) = 1.1015
+    theta_D/theta_*   = 1.1015/1.0067 = 1.0941   ->  +9.41%
+
+⇒ ***NOT r2700's category error — the natural guess, and it cost four revisions last time. **$9.41\%$ IS the angle
+ratio, divided correctly.****
+
+**⛭⛭ ⓶ WHAT IT INHERITS IS THE $x_e$ CANCELLATION r2753 FOUND.**
+
+    r_D = 1.1015  (x_e omitted, C8 family)  ->  1.0942   +9.42%   <- P15's sentence
+    r_D = 1.0837  (x_e weighted, r2753)     ->  1.0765   +7.65%
+    r_D = 1.0897  (the receipt's full r_D)  ->  1.0824   +8.24%
+
+⇒ ***Correcting $r_D$ lands the angle ratio at $+7.6\%$ to $+8.2\%$ — what `P15_damping_ratio_clean` computes
+directly ($1.0816$) and what the hedged figure said nine times.***
+
+**⛭ THE RULE:** ***a number's authority comes from its derivation chain, not its decimals — and a chain can carry
+an error the whole way down while every link is internally correct. **`C9` and `C10` are both right in their own
+terms; they inherit an $r_D$.** When two numbers for one observable disagree, trace the confident one first: it has
+more places to be wrong.***
+
+**✔ PAPER EDITED, ten instances now $8.2\%$.** *And r2749's tilde test resolves the other way now: it was EARNED
+when two receipts disagreed, and **they no longer disagree — one is corrected**. **The same edit r2749 reverted,
+made correctly six revisions later because the competing receipt was fixed rather than out-voted.*** *17/17 compile.*
+
 ### Revision r2753 — 2026-08-11 (main line). **THE DAMPING DISCREPANCY RESOLVED — $x_e$ does not cancel from a ratio of INTEGRALS.**
 
 **⓵ MEASURED: same range, same measure, only $x_e$ toggled.**
