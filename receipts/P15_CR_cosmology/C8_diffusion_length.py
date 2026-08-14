@@ -1,4 +1,13 @@
-"""C8 — DERIVE r_D HERE, FROM FIRST PRINCIPLES, ON THE SAME FOOTING AS THE DRIVING.
+"""⛔ **CORRECTED r2753: THE $x_e$ CANCELLATION IS AN ERROR.**  *** STEP 1 states "every
+microphysical constant is outside the integral" -- true of $\\sigma_T$ and $n_{e0}$, **and $x_e$ is
+the one member of that group that VARIES**: $0.13$ at recombination to $1.16$ above it.  A common
+weight cancels from a ratio of INTEGRANDS and NOT from a ratio of INTEGRALS, because it reweights
+where the two rates are compared.  Measured: including $x_e$ moves the ratio $+9.94\\%$ to
+$+8.37\\%$ on the same range and measure.  See `C45_xe_does_not_cancel_from_a_ratio_of_integrals`.
+** What survives: the reduction to one integral, the elimination of the Boltzmann code from the
+RATIO, and the baryon correction. ** ***
+
+C8 — DERIVE r_D HERE, FROM FIRST PRINCIPLES, ON THE SAME FOOTING AS THE DRIVING.
 Nothing imported from the damping_tail/ files.  Nothing that needs CAMB.
 CONFIRMATION 4: the object.  Silk damping is a diffusion length built from the Thomson opacity and
 the expansion.  The standard definition (Kaiser 1983; Hu-Sugiyama), in the Rb -> 0 limit:

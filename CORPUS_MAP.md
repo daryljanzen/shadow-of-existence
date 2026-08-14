@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2753 — 2026-08-11 (main line). **THE DAMPING DISCREPANCY RESOLVED — $x_e$ does not cancel from a ratio of INTEGRALS.**
+
+**⓵ MEASURED: same range, same measure, only $x_e$ toggled.**
+
+    x_e OMITTED (C8's cancellation step)     ratio 1.0994    +9.94%
+    x_e INCLUDED (Hu-Sugiyama)               ratio 1.0837    +8.37%
+                                                             1.57pp   <- the whole gap
+
+**⛭⛭⛭ ⓶ AND C8's ERROR IS NOT WHAT THREE EARLIER REVISIONS SAID.** *r2750 blamed the $x_e$ RESPONSE (real,
+$\sim0.05$pp). r2751 blamed a normalisation (**cancels**). r2752 blamed truncation (**converges**).*
+⇒ ***The error is **assuming $x_e$ CANCELS — and it does not cancel even when identical**, because
+$\int f/H_1\big/\int f/H_2$ depends on $f$: a common weight reweights WHERE the two rates are compared. $x_e$ runs
+$0.13$ at recombination to $1.16$ above it, a factor of nine, concentrated exactly where the rates differ most.***
+
+**⛔ ⓷ AND THIS CORRECTS r2752's OWN RULE, written one revision earlier.** *"a shared normalisation, a shared $x_e$,
+a shared baryon term all divide out." **A shared CONSTANT divides out. A shared FUNCTION does not.** The sentence
+was right about the $\sqrt{12}$ and wrong about $x_e$ — and both halves were written at once, with only the holding
+half verified.*
+
+**⛭ THE RULE:** ***"it cancels" is a claim about an ALGEBRAIC form, and it survives the integral only if the factor
+is constant over the range. C8 said "every microphysical constant is outside the integral" — true of $\sigma_T$ and
+$n_{e0}$, **and $x_e$ is the one member of that group that VARIES**. Check which members of a group actually have
+the property the group is named for.***
+
+⌗ *`C8` and `C44` both corrected at source. **What survives in C8: its reduction to one integral, its elimination of
+the Boltzmann code from the ratio, and its baryon correction.***
+
+⌗ ***Three of four diagnoses wrong, each found by running the next cheapest test rather than defending the last. The
+one that held is the one that could be toggled.***
+
 ### Revision r2752 — 2026-08-11 (main line). **THE DAMPING GAP IS TRUNCATION — and r2751 is withdrawn on a structural point.**
 
 **⛔ ⓵ A NORMALISATION FACTOR CANCELS IN A RATIO.** *r2751 blamed a "$7.1\%$ miss". CAMB's `thetad` implies

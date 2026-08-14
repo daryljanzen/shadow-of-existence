@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""C44 -- the damping gap is TRUNCATION, and r2751's diagnosis is withdrawn too: a convention factor
+"""C44 -- ⛔ **⓷'s RULE CORRECTED r2753.**  *** This receipt wrote "a shared normalisation, a
+shared $x_e$, a shared baryon term all divide out".  **A shared CONSTANT divides out; a shared
+FUNCTION does not** -- $\\int f/H_1 \\big/ \\int f/H_2$ depends on $f$.  The rule is right for the
+$\\sqrt{12}$ normalisation and wrong for $x_e$ in the same sentence, and $x_e$ turns out to be the
+whole gap.  See `C45`.  ** What survives: ⓵ and ⓶ -- the normalisation genuinely cancels and the
+truncation genuinely does not converge until $z\\sim5\\times10^4$. ** ***
+
+C44 -- the damping gap is TRUNCATION, and r2751's diagnosis is withdrawn too: a convention factor
 cancels in a ratio, and the upper limit does not.
 
 ** ⛔ ⓵ r2751 WAS ALSO WRONG, FOR A STRUCTURAL REASON WORTH KEEPING. **  *** r2751 blamed a $7.1\\%$
