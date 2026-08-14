@@ -101,7 +101,8 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2685   ---     convergence audit: 4 BOUNDED, 1 UNBOUNDED, 3 gated. Frontier line in the stamp.
     r2686   PO-12   substitution itemised; r_D carries a square root so the ratio does not cancel.
     r2687   PO-12   gap closed by integration; the answer is set by the ONSET.
-    r2688   PO-12   CLAIMED: is the onset redshift fixed by the construction, or genuinely free?
+    r2688   PO-12   the onset is FIXED; the residual is the weight g(R)/x_e.
+    r2689   PO-12   CLAIMED: run the weighted integral with a real Saha x_e and the tight-coupling g(R).
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

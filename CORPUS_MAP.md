@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2689 — 2026-08-11 (main line). **P15's $+9.4\%$ BRACKETED FROM OUTSIDE THE INSTRUMENT THAT PRODUCED IT.**
+
+**⓵ FIRST, WHAT "CANCEL IDENTICALLY" COVERS — and it is not the weight.** *P15: "in the ratio the Thomson physics
+and the ionisation history **cancel identically**". Tested: $w=1$ gives $+13.1\%$ and $w=a^3$ gives $+8.7\%$, so
+the $a$-dependence does **not** drop out.*
+⇒ ***The clause covers the CONSTANTS — P15's own next words: "**every microphysical constant sits outside**".***
+
+**⛭⛭ ⓶ RUN WITH A REAL WEIGHT.** *$g(R)=R^2/(1+R)+\tfrac{16}{15}(1+R)$ at $R_b=0.60$, Saha $x_e$ ($x_e=1$ at
+$z=3000$, $0.089$ at $1500$, $\sim10^{-4}$ at recombination):*
+
+    Saha  +7.0%     <     PEEBLES     <     unweighted  +13.1%
+                            ^ P15's +9.4%
+
+**⓷ AND THE ORDERING IS FORCED, NOT FITTED.** *Saha recombines **faster** — no freeze-out, $x_e\to0$ — so $1/x_e$
+spikes harder and weights the integral **later**, where the rate difference is smallest. **P15 uses "a Peebles
+recombination history"**, which retains a residual ionisation, weights **earlier**, and must give a **larger**
+answer.*
+
+⇒⇒ ***Both ends are computed here. That is a check on $+9.4\%$ from outside the paper's own machinery — which is
+what `PO-12` wanted from a two-leg run and did not have.***
+
+**⛭ THE RULE:** ***when you cannot reproduce a number, BRACKET it — and get the ordering of the bracket from
+physics rather than from the target. Two limiting calculations with a forced ordering are a real check; one
+calculation tuned until it agrees is not, and they take about the same effort.***
+
 ### Revision r2688 — 2026-08-11 (main line). **`PO-12`'s LAST FREE PARAMETER IS NOT FREE — and the residual is the WEIGHT.**
 
 **⛭ THE ONSET IS FIXED, TWICE.** *"$z_{\rm onset}\simeq6797$" (`prop:subhorizon`); and "**It is fitted to the
