@@ -127,8 +127,19 @@ def main():
     first = int(rows[0][1])
     span = f'r{rows[0][0][1:]}-r{rev()}'
     done = first - len(live)
+    # ** r2676: the table has been static for 20 revisions while receipt HEALTH moved a long way
+    # (32/40 of this line's own, then 375/457 corpus-wide, then the timeout triage).  ⇒ *** A phase
+    # of cross-node repair shows nothing on a queue count, so the stamp carries the number that
+    # phase actually moves. *** **
+    rr = os.path.join(ROOT, 'receipts', 'RUN_RESULT.txt')
+    health = ''
+    if os.path.exists(rr):
+        m = re.search(r'(\d+)\s*pass\D+(\d+)\s*fail', open(rr, encoding='utf-8',
+                                                              errors='replace').read(), re.I)
+        if m:
+            health = f' · receipts green {m.group(1)}/{int(m.group(1))+int(m.group(2))}'
     print(f'**PROGRESS {span}: table {first} → {len(live)} ({done} cleared, '
-          f'{100*done//first}%) · narrowings {narrowed} · receipts {rcpts()}**')
+          f'{100*done//first}%) · narrowings {narrowed} · receipts {rcpts()}{health}**')
     print()
     print(f'*STILL OPEN — dark: {", ".join(x["id"] for x in dh if x["open"])} · '
           f'PO: {", ".join(x["id"] for x in po if x["open"])}*')

@@ -6,6 +6,58 @@ job: THE INBOX — what the observer line has found in the working fork's text a
 sources: [chat]
 ---
 
+## ⛔ 30 · TWELVE CITED RECEIPTS CANNOT EXIT NON-ZERO — routed r2681
+
+*Of 462 receipts, **12 carry no `assert` and no `check()` at all** — and **all twelve are cited in the
+papers, 38 citations in total**:*
+
+    P15_expansion_law                             4x
+    BRANCHPT_transmission_character               4x
+    P16_the_scalar_monodromy_is_four_pi_over_rho  4x
+    P15_the_progenitor_vacuum_is_negligible_too   3x    P15_the_second_arm_actually_run       3x
+    AS_amplitude_leftward                         3x    P15_verify_closedS3_nonsync          3x
+    P15_confront_lowell_data                      3x    P15_no_primordial_B_modes_uncond.    3x
+    P16_the_passage_is_phase_only_above_...       3x    P16_the_progenitor_composition_...   3x
+    P16_the_leading_order_interior_is_adequate    3x
+
+⇒ ***Thirty-eight sentences in print rest on a receipt that proves only that Python exited zero.***
+
+**⌗ AND `check_receipt_asserts` IS GREEN ON ALL TWELVE**, *because it accepts a `FAIL` token, a `PASS`
+token or an `np.allclose` as evidence of a failure path — and the c54.161 campaign's own repair note names
+exactly the shape that misses: "**the checks above compute a PASS/FAIL boolean and ONLY PRINT IT**".*
+
+✔ *`check_receipt_exit` built, **seed-tested clean → 1 → 0**, wired. It ships **GREEN with the twelve
+listed as a known backlog** — ***a gate that fails for a known backlog trains its caller to skip it***
+(cc54, c54.208). Each leaves the set when repaired.*
+
+⚠ **This line is not writing the twelve.** *Nine are P15/P16 — the cosmology band — and the assertion each
+needs is the claim its citing sentence makes, which is a physics reading in another band.*
+
+
+## ⌗ 29 · THE EXCENTRE RESULTS ARE UNBANKED — routed r2678
+
+*`excentre` appears **35 times across 5 receipts** and **ZERO times in all seventeen papers**. Two results
+sit there:*
+
+*· **a SIXTH equivalence for the hinge distance $2\alpha$** — `P03_the_sixth_equivalence.py`, which
+describes it as "**the first phrased in the substrate's own causal language rather than in classical
+triangle geometry**". **Receipt passes.***
+
+*· **the hinge configuration's null connectivity is CLOSED** — "**ZERO null connections among the six
+excentres and ZERO between excentres and hinges (0 of 36 pairs)**", `P03_slate_worked.py`.*
+
+⇒ ***Same class as A7 (c54.210) and `L-535`: a verdict that lived in the working layer and never reached
+print. Found by `scripts/unbanked.py`, built this revision from 54's own method — count a term's uses in
+the RECEIPTS against its uses in the PAPERS.***
+
+⚠ **This line is not editing P3.** *The result is P3's and the banking is a paper edit in another band;
+what is offered is the finding, the two receipts, and the verification that both pass.*
+
+⌗ *`scripts/unbanked.py` surfaces **91 candidates at MIN=8** — it does not verdict, and a human must read
+them. `station` was its first false positive (banked 24× as `stations`) and is why the matcher now works
+on stems.*
+
+
 ## ⛭⛭⛭ THE FLOOR, as of r2563 — and it is nearly empty
 
 **⌗ FIVE ITEMS REMAIN OF FIFTY, and two of the five are OFFERS rather than owings:**

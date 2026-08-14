@@ -1,7 +1,7 @@
 ---
 name: quadric-geometry-ledger
 description: R-M's first field bake — projective geometry of quadrics thrown at the CR substrate. Opened r1838 (Phase 8). What the corpus already reaches, the boundary the throat protocol states for itself, and the bites this field can take that the classical catalogue could not.
-current: r2517+c54.201
+current: r2671+c54.210
 ---
 
 > **⌗ CHECKED AGAINST c54.163→c54.185 AND DECLARED CURRENT r2449.** *The span's substantive content is **the derived
@@ -47,6 +47,32 @@ current: r2517+c54.201
 a field at the architecture, keep what bites, and the bounce-off is data.** The ordering lens is
 `INTRODUCTION` §2's mathematician's arc; this is its **station Ⓔ**, which both that arc and R-M's own list
 independently rank first — R-M: **"probably the richest untapped vein."***
+
+---
+
+## ⛭⛭ BROUGHT CURRENT c54.210 — **two results since c54.201 are this bake's own object, and neither was filed here**
+
+**⌗ ⓵ `L-533` (c54.207) — THE DESCENT IS A PLANE SECTION, AND THAT IS WHY IT IS SCALE-ONLY.** *A hyperplane
+section $\{X:\eta(n,X)=c\}$ of a $\mathrm{dS}_D$ of radius $\alpha$ returns $\mathrm{dS}_{D-1}$ of radius
+$\sqrt{\alpha^{2}-c^{2}}$, for **every** admissible $n$ — the normal is gauge because the isometry group is
+transitive on unit spacelike normals, and the offset enters only through the scale.* ⇒ ***The scale map has
+RANK 1 over two choices, so a multi-step descent carries a one-parameter fibre no cut can resolve.*** ⌗ *This
+is a quadric fact doing ontological work: it is why `PO-9`'s ceiling is absent for a reason rather than for
+want of an argument.*
+
+**⌗ ⓶ `L-543` (c54.210) — AND THE INVARIANTS OF THAT QUADRIC COLLAPSE THE COUNTERTERM BASIS.** *On the
+maximally symmetric quadric $R_{abcd}=(1/\alpha^{2})(g_{ac}g_{bd}-g_{ad}g_{bc})$, computed at $D=4,5,6$:*
+$$R=\tfrac{D(D-1)}{\alpha^{2}},\qquad R_{ab}R^{ab}=\tfrac{D(D-1)^{2}}{\alpha^{4}},\qquad
+R_{abcd}R^{abcd}=\tfrac{2D(D-1)}{\alpha^{4}}$$
+⇒ ***every quadratic invariant is $\mathrm{const}\times\alpha^{-4}$, so $\int\!\sqrt g\,R^{2}$,
+$\int\!\sqrt g\,R_{ab}R^{ab}$, $\int\!\sqrt g\,R_{abcd}R^{abcd}$ and $\int\!\sqrt g$ are four multiples of
+one functional.*** ⌗ *p0 already carried the fact — "every curvature invariant on either face is a pure power
+of $1/\alpha^{2}$" — **written to show the construction cannot force a coupling**. Read at the counterterm
+basis it says the construction does not need one.*
+
+⚠ ***THE SCOPE, and it belongs in a quadric ledger because it is a statement about which quadrics:*** *the
+degeneracy holds on the ONE-PARAMETER family of maximally symmetric quadrics. **The layer is not one of
+them** — its $\sinh^{2/3}$ rate has a Ricci scalar that runs — so this bake's reach stops at the substrate.
 
 ---
 

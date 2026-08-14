@@ -44,7 +44,15 @@ RECORD_PREFIX = ('BUNDLE_r', 'gate_session_notes', 'RETIRED_', 'CREDO_', 'RECALL
                  'CAPSTONE_', 'PUZZLE_', 'C40_', 'DEMONSTRATING_THE_WAY_full', 'FORK_HISTORY',
                  'HISTORICAL_CONTEXT_', 'SPINUP_FAILURE_FORENSIC', 'KICKOFF_')
 RECORD_EXACT = {'BUNDLE_README.md', 'REVISION_r2118.patch', 'THE_CONSOLIDATION_LEDGER.md',
-                'PROGRAMME_UNFINISHEDNESS_CATALOGUE.md', 'RETIRED_PLANNING_THREADS.md'}
+                'PROGRAMME_UNFINISHEDNESS_CATALOGUE.md', 'RETIRED_PLANNING_THREADS.md',
+                # ** r2674: the two turn ledgers, built r2622 and r2624 on the observer line and
+                # never dispositioned -- which left classify_documents at UNCLASSIFIED 2 and, per
+                # cc54's c54.209 report, *** RED IN THE FAST CI TIER ON A CLEAN BASE ***, blocking
+                # another node's PR for a reason belonging to this line.
+                #   ⇒ ** They are RECORD by the definition: APPEND-ONLY, never rewritten. **  A line
+                #     is added each turn and no line is ever edited -- r2624's own rule, and the
+                #     reason `INGESTION.md` merges them by keeping BOTH sides.
+                'LATENT_HISTORY.txt', 'TABLE_HISTORY.txt'}
 
 # state-carrying documents: hand-maintained today, and the arc's targets.
 # kind is recorded as the kind they SHOULD be, with `now` saying what they are.

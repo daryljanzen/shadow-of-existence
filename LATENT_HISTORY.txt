@@ -106,3 +106,12 @@ c54.209  LATENT      the floor DOES survive: D3 read a truncation P10 names as a
 r2671  LATENT      54 found D3 backwards: P10 resums the cubic; verified termwise to 8th order and on 200k points
 r2672  INSTRUMENT  10 self-falsifying receipts converted to assert the state the turn LEAVES; 40/40 pass
 r2673  INSTRUMENT  triage: of 82 failures 41 were TIMEOUTS and 21 now pass; 15 real + 3 pynucastro
+r2674  INSTRUMENT  cleared cc54s CI blocker -- my two turn ledgers were UNCLASSIFIED; three nodes converged on one class
+r2675  INSTRUMENT  check_no_stdlib_shadow built+seeded+wired; all four namespace-collision classes now gated
+r2676  COMPUTED    a horn swap is the WEYL Z_2 not the centre; the missing piece is the torus
+c54.210  LATENT      PO-6 UV half: the counterterm basis is one-dimensional because the background family is; p0 said the invariant fact for another job
+r2677  COMPUTED    re-derived c54.210: invariants all const x alpha^-4 at D=4,5,6; the layers R runs, so the scope is necessary
+r2678  LATENT      unbanked sweep: excentre at 35 uses in receipts, ZERO in print -- a sixth equivalence unbanked
+r2679  COMPUTED    colour at the CENTRE, isospin at the WEYL element -- opposite ends, so the debts differ in kind
+r2680  INSTRUMENT  monomial was sympys API -- unbanked.py now counts prose only; 91 -> 46 candidates
+r2681  LATENT      12 cited receipts cannot exit non-zero, 38 citations; check_receipt_asserts green on all of them
