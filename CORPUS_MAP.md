@@ -177,6 +177,37 @@ to see, because every instinct trained against overclaiming reads a tilde as car
 ⌗ *Not every tilde: "roughly $10^5$ years", "negligible below $z\sim10$" are correct. **The test is whether a
 receipt asserts the figure.***
 
+### Revision r2749 — 2026-08-11 (main line). **A TILDE IS STALE WHEN NOTHING COMPETES — one edit made, nine reverted.**
+
+**⌗ DARYL'S PRINCIPLE.** *"Isn't '~301' just a place marker for while the value is not accurately known? If the
+value is now determined more accurately and is not expected to change then it ought to be reported with accurate
+precision."* ***r2748 had concluded the opposite, mistaking a hedge's EXISTENCE for its EARNING.***
+
+**THE TEST — and it runs on receipts, never on the text:**
+
+    STALE    one receipt asserts the value and none competes
+    EARNED   receipts disagree, or none asserts
+
+**⛭⛭ ⓵ `$\sim$301` FAILED IT.** *`P15_zonset_determinations` asserts $301.76$ with no competitor, and the value is
+a published measurement plus arithmetic.* ***P15 now reads $301.76$ — and the correction runs in the programme's
+favour: the gap was never $1.20$, it is $\mathbf{0.44}$.***
+
+**⛔⛭⛭ ⓶ AND `$\sim8\%$` PASSED IT, after nine edits had to be reverted.** *This line replaced all nine with
+$8.2\%$ on `P15_damping_ratio_clean` — **then found C8 derives $+10.83\%$ analytically and NAMES THE DISAGREEMENT
+IN ITS OWN OUTPUT**: "damping_ratio_clean.py reports ~+9%. This derivation gives +10.8%." **The corpus already knew,
+in the file that had not been run.***
+⇒ ***A tilde on a CONTESTED number is exactly what a tilde is for.***
+
+⌗ *The two cases are **the same three characters** in the prose. The difference is entirely in whether the receipts
+behind them agree.*
+
+**⛭ THE RULE:** ***applying a correct principle is not the same as applying it correctly. Before making a hedge
+precise, RUN the other receipts that touch the number — and a principle that licenses nine edits at once should be
+tested on one first.***
+
+⌗ ***A LIVE DISCREPANCY IS NOW NAMED: $+10.83\%$ against $+8.2\%$, on a figure P15 calls "a real, computed effect"
+nine times. Filed as owed.***
+
 ### Revision r2748 — 2026-08-11 (main line). **TAKE THE MEASURED VALUE FROM THE RECEIPT, NOT THE PROSE.**
 
 **⛭⛭ ⓵ `PO-10`'s FIRST PAIR.** *P15's prose: "$\ell_*=302.2$ against the measured ${\sim}301$". Its own receipt
