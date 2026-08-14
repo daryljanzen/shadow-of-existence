@@ -18,3 +18,7 @@ sources: [chat]
 - [ ] (416) PO-10: what would a comparison look like that does NOT import a parameter vector the corpus does not posit? -- r2726, asked nowhere yet
 - [ ] (416) P14 edit owed: the holonomy wall's stated reason ('only phases') is too narrow -- r2734 -- the paper still carries it
 - [ ] (416) WITHDRAWN r2735: the P14 edit is not owed -- P14 never said 'only phases'; the narrow reason was this line's, written into PO-5's row at r2666/r2667 and corrected there at r2734
+- [ ] (424) PO-6 counterterm half: compute the shear deficit 4 sigma^2 + O(sigma^4) -- cc54's c54.215 named it; nobody has run it
+- [ ] (424) PO-4: the two ABSENT su(2) directions -- cc54 c54.218 shows <T,w> = N(T) is dimension 1 against 3; r2718's 'one factor short' framing is withdrawn
+- [ ] (424) PO-11: re-verdict cc54's c54.214 -- the omega != 0 problem was never posed, and posing it builds the object; my r2717 strike used the omega = 0 reading
+- [ ] (424) PO-5: cc54 c54.216 bounds the residue to ONE TEST -- a fixed pure number -- which contradicts nothing in r2729 and sharpens it
