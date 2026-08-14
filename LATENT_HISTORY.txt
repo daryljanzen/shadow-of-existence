@@ -139,4 +139,4 @@ c54.213  LATENT      item 60s absence-outlived receipts are FOUR classes not one
 r2697  INSTRUMENT  unbanked.py was reading receipt filenames as paper prose -- same class as r2680, other side
 r2697a INSTRUMENT  collapsed a duplicate S50 INDEX row my own merge re-added -- cc54 had collapsed it at c54.212
 r2699  LATENT      item 58 half-withdrawn: the sixth equivalence was already in P3. The sweeps floor is measured.
-r2700  COMPUTED    9.4% is an ANGLE ratio and 10.8% a LENGTH ratio; four revisions compared one to the other
+r2700  LATENT      9.4% is an ANGLE ratio and 10.8% a LENGTH ratio; four revisions compared one to the other
