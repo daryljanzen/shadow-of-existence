@@ -3,8 +3,31 @@ name: dimension-deepening-audit
 description: What the four-dimensionality result owes the reach programme — every R-M and R-P bake, ledger and probe re-read against it, with a verdict for each and the re-runs that earned them. Read this before trusting any bake's constants as structural.
 sources: [cowork]
 kind: STATE
-current: r2517+c54.201
+current: r2671+c54.210
 job: What the four-dimensionality result owes the reach programme — every R-M and R-P bake re-read against it, with a verdict for each. Read BEFORE trusting any bake's constants as structural.
+---
+
+## ⛭⛭⛭ BROUGHT CURRENT c54.210 — **`L-533` (c54.207) is this audit's own object and changes what the four-dimensionality result OWES**
+
+*This audit asks what the four-dimensionality result owes the reach programme.* ⇒ ***`L-533` pays part of it,
+from the other end: it does not argue the CUT's dimension at all — it shows the SUBSTRATE's cannot be argued
+from below.***
+
+**⌗ THE FINDING.** *Rule 2 neither forbids a second slicing step nor forces one — **it empties it**. Every rung
+above the last must be maximally symmetric (a non-symmetric rung would carry a sense-1 modulus), hence a plane
+section, hence scale-only; the cut fixes $\alpha$ from $\Lambda$ and $r_0$ from the mass and is **blind to
+everything above**.*
+⇒ ***The substrate's dimension is unbounded above BECAUSE NOTHING BELOW CAN SEE THE DIFFERENCE*** — *which
+converts "no upper bound is established" into "none can be established from below".*
+
+**⌗ WHAT THIS AUDIT SHOULD NOW CARRY:** ***the CUT→DYNAMICS / never CUT→SUBSTRATE guard is a CONSEQUENCE, not a
+rule of conduct.*** *The descent is scale-degenerate, so there is nothing for a cut-to-substrate inference to
+carry — and any re-run in this audit that tried to reach the substrate's dimension from a cut-side result was
+attempting something the geometry forbids rather than something the programme merely discourages.*
+
+⚠ *Unchanged: the **cut's** dimension stays settled at four by the matter sector's content, which is a
+different object and is untouched.*
+
 ---
 
 ## ⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **a dimension count settled a real-form question, which is this audit's own subject**
