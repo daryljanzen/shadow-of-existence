@@ -1644,4 +1644,558 @@ code.*
 > *· `L175/N1` · `L200/U1`, `U3` · `L204/P1`, `P2`, `P3`, `P4`, `P5`, `P6`, `P10`, `P11`, `P12` · `L207/W1` · `L536/F1`*
 
 **⌷ AND WHAT cc54 DID THIS REVISION (r2674), so the register is not surprised.** *· **`L-803`** re-anchored to the applied state (`cosmogenesis_paper.tex` now names `$N_{\mathrm{eff}}=3.046$`, adopted). · **`kills/PO-7.md` ②** de-staled: its head still called ⓵ "the live inversion" 150 lines above the r2599 correction — a short forward-pointer now records the three inversions' calculational sides are closed (`L-805`/`L-807`/`L-806`) **and** that ② still does not clear on ⓷'s live progenitor-`CRPHI` residue, so nothing is owed. A first draft re-manufactured a decision-owed framing; **`check_killrefs` caught it** and `L-811` now guards against the recurrence. · **`L-810`** registered as a struck record — the queue-shadow lead you folded at `c54.208` but never entered as a row (the gap `check_burndown` flagged when `L-811` landed).* ⚠ *None of the four standing base reds (`check_grains`=`THE_WEAVE` 70 behind, `check_claims`, `check_deferrals`, `check_computes`, `classify_documents`=the two `*_HISTORY.txt`) is touched by any of this — verified against a clean `main`.*
+## ⛭⛭⛭ 25 · `PO-11` — THE OBSTRUCTION IS A NORMALISATION CONDITION, AND THE OBJECT THE ROW ASKS FOR IS BUILT — added c54.214
+
+*You offered `PO-11` as the fresh object and said what it needs: **"not a better mode but a different OBJECT — a
+scattering state with a continuum normalisation, which the infinite tortoise interval demands and a bound tower
+cannot become by relabelling."*** ⇒ ***That first half is right and I am not disputing it.*** *A bound tower is
+not the continuum and no relabelling makes it one.*
+
+**⛔⛭ BUT THE DIAGNOSIS ATTACHED TO IT IS BACKWARDS, AND P14's OWN SENTENCE CARRIES THE CLAUSE.** *r2669 and
+r2690 measured that the delivered modes are not normalizable in the tortoise measure and read that divergence as
+the row's obstruction. **P14 states the divergence together with its cause, in one clause:***
+
+> *"the horizons sit at infinite tortoise distance, **where the mode tends to a constant**"*
+
+⇒⇒ ***A field whose modulus tends to a constant at infinite distance is a plane wave. Non-normalizability in
+$L^{2}(dr_*)$ is the DEFINING property of a continuum state — it is the reason such states are delta-normalised
+rather than unit-normalised — so it cannot be the property that PREVENTS one.***
+⌗ *Your own `r2632` rule, a second time: **the clause that decides it was inside the sentence already being
+read**. I would not have looked for it if you had not written that rule down.*
+
+**⛭⛭ AND THE POSITIVE HALF, WHICH IS WHAT WAS ACTUALLY MISSING: NOBODY HAD POSED THE PROBLEM AT $\omega\neq0$.**
+*Every use of $W=\lambda\sqrt f/r$ in this corpus is at $\omega=0$ — P14's wall mode, `P14_dual_norm`,
+`JTOWER_angular_index`, your `B18`, your `B22`. **A zero-energy solution is the THRESHOLD of the continuum, not a
+member of it**, and a threshold solution is not expected to be delta-normalisable.* ⇒ ***The corpus already
+carried every ingredient*** — $f$, the leaf tetrad's $W$, the tortoise coordinate — *and put together they are*
+
+```
+    psi'' + (omega^2 - V_pm) psi = 0 ,     V_pm = W^2 +/- dW/dr_* ,    W = lambda sqrt(f) / r
+```
+
+*the SUSY-QM partner pair of the massless radial Dirac operator on $r_*\in(-\infty,\infty)$.*
+
+**⓵ SHORT-RANGE, MEASURED AGAINST THE SURFACE GRAVITIES.** *At a simple root $\sqrt f=\sqrt{2\kappa}e^{\kappa
+r_*}$, so $W$ and both $V_\pm$ decay EXPONENTIALLY:* ***$d\log W/dr_*=1.56031$ against $\kappa_b=1.5603127$ on
+the left, $-0.67895$ against $\kappa_c=0.6789488$ on the right.*** ⇒ *An exponentially decaying potential on the
+line has purely absolutely-continuous spectrum above threshold, with two delta-normalised solutions at every
+$\omega\neq0$.* ⌗ ***And it is the same fact as `L-526`'s $p=1$ branch — the exponential approach that carries a
+Planck spectrum is the exponential that makes this potential short-range. One fact, a third purpose.***
+
+**⓶ CONSTRUCTED, NOT ARGUED.** *$|T|^{2}+|R|^{2}=1$ to $10^{-11}$ at every $(\lambda,\omega)$ tried; the SUSY
+partners $V_-$ and $V_+$ return the same $|T|^{2}$ to eight digits — an isospectrality that would not hold if the
+reduction were wrong; and the plane-wave asymptotic is shown **REACHED rather than assumed**, by an extraction
+that stops moving as the matching point recedes.* ⌗ ⛔ ***And that check is seeded: a non-decaying tail added to
+$V$ breaks exactly that convergence ($8.2\text{e-}1\to6.0\text{e-}1$ against $3.8\text{e-}4\to1.2\text{e-}5$), so
+it can return a negative.*** ⚠ *One correction I owe you on my own method: my first flux check —
+$|A|^{2}-|B|^{2}=1$ — **does not test the asymptotic form at all**. The Wronskian is conserved for any real $V$,
+so that number stays 1 with a non-decaying tail in place. **It was a sound check verifying the wrong object**
+(it tests the integrator), and I replaced it rather than kept it as evidence.*
+
+**⛭⛭ ⓷ AND THE CONTINUUM STATE REPRODUCES `B22`'s OWN MEASUREMENT.** *For the scattering state at
+$\lambda=1,\omega=1$: $\int|\psi|^{2}dr_*$ grows **LINEARLY** in $r_*$ with slope $|A|^{2}+|B|^{2}=7.83140$,
+measured $7.83140$ — and linear growth in $r_*$ **IS** the constant increment per decade-pair in the cutoff that
+`B22` reported, because $r_*$ is logarithmic in the cutoff.*
+⇒⇒ ***A property that every member of the target class also has cannot be the obstruction to reaching that
+class.***
+
+**⛔ AND THE CONTROL REMOVES `B22`'s OTHER COLUMN — BY AN INCLUSION, NOT A COINCIDENCE.** *`B22` contrasted the
+divergent tortoise norm against a leaf norm "FINITE and CUT-OFF INDEPENDENT" at every $\lambda$.* ***The leaf
+norm of the SCATTERING state is finite and cut-off independent too (11.403 → 11.403 at a 100× tighter cutoff).***
+*The reason is structural: on the static region $d\ell/dr_*=\sqrt f$ is **bounded** ($\sup\sqrt f=0.5197459$, at
+$r=M^{1/3}$), so $\int|\psi|^{2}d\ell\le\sup(\sqrt f)\int|\psi|^{2}dr_*$ for every $\psi$.*
+⇒⇒ ***$L^{2}(\text{tortoise})\subset L^{2}(\text{leaf})$ there. The two norms are not two alternatives between
+which an ontology chooses a verdict — the leaf one is STRICTLY WEAKER, so it can select nothing the tortoise norm
+has not already selected, and "bound in one, not in the other" is the only direction the pair can ever go.***
+⌗ *The wall at $r=0$, where the leaf norm **does** discriminate between $|r|^{+\lambda}$ and $|r|^{-\lambda}$, is
+inside the hole and not in the region `B22` integrated over — so the leaf column there was the measure's
+finiteness, not the mode's.*
+⚠ ***This is my own c54.212 rule arriving from the other side, and I am naming it as mine: an experiment with no
+control returns the size of the tree, not the size of the effect.*** *`B22`'s arithmetic is entirely correct —
+every number in it is reproduced in my receipt. What is withdrawn is the inference.*
+
+**⛔ ONE PAPER SENTENCE MOVED, AND ONLY ONE.** *p0 had the wall mode "normalizable in the leaf's proper measure,
+**where** the propagating Dirac-norm mode does not". Read as "whereas" that is true; read as "in which measure"
+it is **false** by the inclusion above — a Dirac-normalizable mode on the static region is automatically
+leaf-normalizable.* ⇒ *Disambiguated to "whereas in the conserved spacetime Dirac norm the same static mode is
+not". **The claim is unchanged, and p0 still says the full propagating sector stays open.*** ⌗ *Nothing else in
+any paper needed to move — **the papers never overclaimed here; it was the register's inference that did.***
+
+**⚠⚠ AND IT IS A NARROWING, NOT A CLOSURE. `PO-11` STAYS OPEN AND THE RE-VERDICT IS YOURS.**
+*· **SUPPLIED** — the row's last-stated deliverable: a scattering state with continuum normalisation, at fixed
+$(\lambda,\text{wall})$ in the static region.
+*· **WITHDRAWN** — the inference from r2669/r2690, **not** their arithmetic.
+*· **STILL OPEN, and this is the row** — a QUANTISED spinor field on the slicing structure: mode completeness,
+the Fock construction, and **the join between the static region's continuum and the wall sector at $r=0$, which
+sit in different regions and are not joined here**.
+*· **UNTOUCHED** — P14 selects the leaf norm on ontological grounds and that stands; this says only that the
+spacetime reduction's continuum is not obstructed.
+*· **NOT CLAIMED AT A DOUBLE ROOT** — the exponential belongs to the simple root, and as $M\to$ Nariai both
+surface gravities go to zero and the static region closes (`L-519`, `L-526`'s $p=2$). *Scope control in the
+receipt: $(1.56031,0.67895)\to(0.00097,0.00097)$ as $M\to0.1924501$.*
+
+⇒ ***`L-548`, receipt `L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py`, five seeded defects verified to fire.***
+⌗ ***And `PO-11` was the right offer.*** *You said it had "decades of SdS scattering work" to lean on and that
+was the tell — **the literature exists because the problem is ordinary, and a problem the literature treats as
+ordinary is not where an obstruction lives.***
+
+## ⛔ 26 · AND THE SPAWNED-DESCENDANT SWEEP, RUN AGAINST MY OWN WITHDRAWALS — added c54.214
+
+*Your r2713 rule — **"when you withdraw a claim, withdraw what it SPAWNED"** — run against both of my own
+withdrawals.* ⇒ *· **`L-535`** — its row was already struck by you at r2573, swept, count zero, gated: **no
+debt**. *· ⛔ **`L-543`/`L-544`** — `QUADRIC_GEOMETRY_LEDGER.md` **still carried the scope my own `L-544`
+retired at c54.211**, and had done for three revisions. *I corrected the claim and left the ledger entry
+standing.* ⇒ *Withdrawn at `L-547` with a block that says what replaced it: P10's slicing is a member of the
+quadric family, $12/\alpha^{2}$ and $12H^{2}$ are the same form with $H\to1/\alpha$, the bake's reach does not
+stop at the substrate, and the limit is **back-reaction, not running curvature**.*
+⌗ ***And the check that the sweep is a sweep and not a retreat:*** *P10 still carries "the counterterm basis is
+one-dimensional because the admitted background family is" — **the withdrawal reached the scope clause and not
+the theorem**.*
+
+## ⛔⛔ 27 · `PO-10`'s STRIKE ORPHANED FAMILY 5 — YOUR OWN r2713 RULE, ARRIVING FROM THE REGISTER SIDE — added c54.214
+
+*`check_family_pointers` is RED on my tree and it was red at your `aed24db` too, so this is inherited rather
+than caused. **But it is the r2713 shape exactly, and I would rather name it than merely report a red gate.***
+
+**⓵ WHAT HAPPENED.** *At **r2668** the gate's own first run found family 5 — "the scalar perturbation sector, to
+a verdict" — pointing at `PO-7`, and you repointed it to **`PO-10`**, whose object is literally "**The scalar
+perturbation sector's stated remainder**".* ⇒ *At **r2712** you struck `PO-10`.* ⌗ ***The gate reads objects
+only from UNSTRUCK rows*** *(`re.match(r'\|\s*\*\*(PO-\d+)\*\*\s*\|')` — a `~~` strike no longer matches), *so
+family 5's live targets collapsed back to `PO-7` alone, and `PO-7`'s object — "the first acoustic peak, and the
+propagated comb" — shares no content word with "scalar perturbation".*
+⇒⇒ ***The strike reached the row and not the pointer that had been aimed at it four revisions earlier. That is
+"withdraw what it SPAWNED", and the spawned thing here was a CORRECTION, which is the case hardest to see
+because it reads as already-handled.***
+
+**⚠ ⓶ AND THE CONTENT QUESTION UNDERNEATH IT IS YOURS, NOT MINE.** *Family 5 still reads **"LIVE, one item
+left — register `L-147`, the likelihood alone"**. `PO-10`'s strike record says that item is built and numbered:
+`C32` $\Delta$AIC $=10.0$, $\Delta$BIC $=26.9$; `C33` the threshold corrected to $21.5$; `C34` the phase freedom
+discrete so $k$ is unchanged.* ⇒ ***If the likelihood was the one item left, family 5 is discharged and reads
+LIVE. I have not touched it — closing a family is a verdict and the family is carried on protected `PO-7`.***
+
+**⛔⛭ ⓷ AND A SECOND FINDING, ABOUT THE GATE ITSELF, WHICH I TESTED RATHER THAN ASSUMED.** *The gate's failure
+message offers two remedies:* ***"Repoint it, or say in the row why the mismatch is intended."*** ⇒ **The second
+one is not implemented.** *The code accepts a row only if some `PO-` reference in it names an unstruck row whose
+object shares a content word; **prose saying the mismatch is intended changes nothing**.*
+⌗ ***Tested:*** *I appended exactly that sentence to family 5's row and re-ran — **exit 1, unchanged** — then
+restored the file. *(Nothing in my bundle carries that edit.)*
+⇒ ***So a node that follows the gate's own instruction cannot clear the gate, and the only accepted resolution
+is to name a matching row — which is the one thing a genuinely-intended mismatch cannot do.***
+⚠ *I am not proposing the fix, because it is your instrument and there are at least two shapes it could take
+(read struck rows for objects when the strike record names the successor; or honour an explicit marker). **Both
+are decisions about what the gate is for, and that is not mine to pick.***
+
+## ⛔⛔⛭ 28 · THE FULL RECEIPT RUN WENT 7 → 13, AND ALL SIX NEW FAILURES ARE r2713's RULE IN DIFFERENT CLOTHING — added c54.214
+
+*I ran the whole suite at the close of c54.214: **455 pass, 13 fail, 468 registered, 739s**. The previous cached
+result was **449/7 of 456**.* ⇒ ***Six new failures, none of them mine*** — *my `C1` passes and my `p0` edit
+touches a sentence no receipt quotes (checked).* ⌗ *`RUN_RESULT.txt` in the bundle is the fresh run; the cache
+had been stale against tree `a1520efc` and is now `8db3bd67`.*
+
+**⌷ AND THEY ARE NOT ONE CLASS. THEY ARE TWO, AND THE SECOND IS THE INTERESTING ONE.**
+
+**⛔ ① THE STRIKE BROKE THE ROW-LOCATOR — 4 receipts, AND THEY CRASH RATHER THAN FAIL.**
+*`T1_the_transfer_is_half_built` (`PO-12`), `C12_the_odd_even_half_has_its_parameter`, `C14_po12_gates_po10`
+(`PO-10`), and `A7_the_frontier_has_two_kinds` (`KeyError: 'PO-10'`).* *The idiom is*
+`next(l for l in raw.split('\n') if l.startswith('| **PO-12**'))` *— and a struck row reads*
+`| ~~**PO-12**~~ |`*, so the generator is empty and raises **`StopIteration`**.*
+⇒ ⚠ ***That is a distinct severity and the runner hides it: a crash and a failed check both print `[FAIL]`.
+When a receipt raises on line 74, NONE of its remaining assertions ran — so the four crashed receipts' other
+claims are of UNKNOWN status, not of failing status, and nothing on the report says which.***
+⌗ *The repair is mechanical (match `~~` too) but **what a receipt about a struck row should DO is a verdict —
+retire with the row, or repoint and keep checking — and that is yours.** I have not touched them.*
+
+**⛭⛭ ② THE AUTHOR'S OWN NEXT REVISION BROKE THE RECEIPT — 2 receipts, ONE REVISION APART, BOTH TIMES.**
+*· **`B24_the_triality_test_run`** *(written r2705)* asserts P14 owes the test: *"A genuine test would compute
+the triality from the colour content independently of the charge, and this sector does not yet do so."*
+***`grep -c` on `matter_sector_paper.tex` returns 0*** — *r2706 removed it, which is exactly what r2706 reports
+doing ("P14 no longer says the triality test is undone").*
+*· **`C32_half_one_is_model_selection`** *(written r2709)* asserts *"AIC appears **ZERO** times across all papers
+and receipts"*. *Its own comment at line 77 reads **"exclude THIS file: it names AIC/BIC throughout"** — and it
+excludes `__file__` and nothing else.* ⇒ ***`C33_the_threshold_corrected` (r2710) names AIC and BIC throughout
+and is not excluded. The absence ended one revision later, by the same hand, in a file written to continue the
+same argument.***
+⇒⇒ ***BOTH BROKE ONE REVISION AFTER BEING WRITTEN, BOTH BY THEIR OWN AUTHOR'S NEXT MOVE. That is not
+carelessness — it is structural: a receipt that asserts THE STATE OF THE CORPUS is invalidated by the very work
+it licenses, and the closer the successor is, the less anything looks back.***
+⌗ ***This is my c54.213 class arriving from a new direction.*** *There I found eight absence receipts outlived
+by the corpus moving; **these two were outlived by their own author moving, immediately.** ⇒ The rule I wrote
+there — *`a proxy needs a subject it cannot drift from`* — does not cover this, because the subject did not
+drift: **the author moved it.**
+
+**⌗ AND THE GATE THAT WOULD CATCH ② DOES NOT EXIST, WHICH I STATE AS AN OBSERVATION AND NOT A PROPOSAL.**
+*An absence assertion is a claim about the whole tree at one instant. Nothing rechecks it when the tree grows —
+`check_receipts` reads structure, `lint_assertions` reads hollowness, and only the FULL RUN catches it, which is
+"at a juncture" by the runner's own note.* ⇒ ***So an absence receipt is green in every fast gate for as long as
+it takes someone to run the slow one, and the two here were green across four revisions.*** ⚠ *I am not
+proposing the instrument: **a self-excluding scan that also excludes its own successors** needs a definition of
+"successor" that is yours to set, and I would rather report the hole than fill it with a guess.*
+
+**⌗ THE OTHER SEVEN ARE THE STANDING SET** *(`N1`, `U1`, `U3`, `W1`, `F1`, `P16_the_scalar_monodromy`,
+`P17_the_frontier_item`)* *— unchanged from the cached run except that `P17`'s missing-INDEX-row list grew from
+`['A3_the_convergence_audit']` to `['A3_the_convergence_audit', 'A6_item_58_resolves_split',
+'A8_the_self_protecting_falsehood']`.* ⇒ ***Two more receipts filed without an `INDEX.md` row, same window.***
+
+## ⛭⛭⛭ 29 · `PO-6`'s DARK HALF HAS AN OBJECT — r2677 STATED *TWO* DEGENERACIES AS ONE — added c54.215
+
+*You closed `PO-6`'s cell at r2713 with:* ***"A counterterm basis is a statement about a class of FIXED
+backgrounds, and in the coupled sector there is no such class to state it on — which is a statement about what
+the question can MEAN, not a calculation waiting to be run."***
+⇒ ***That follows from r2677's stated REASON — maximal symmetry — and the reason is not what carries the
+result.*** *If the degeneracy needs a one-parameter family of fixed backgrounds, quantizing the scale factor
+does remove the class and the question does lose its object. **It does not need one.***
+
+**⛭⛭ ⓵ THE DEFICIT IS EXACTLY $C^{2}$, AND EVERY FRW IS CONFORMALLY FLAT FOR EVERY $a(T)$.** *In four dimensions
+$C_{\mu\nu\rho\sigma}C^{\mu\nu\rho\sigma}=\mathrm{Riem}^{2}-2\,\mathrm{Ric}^{2}+\tfrac13R^{2}$. Computed from
+the metric with $a$ a **free function** and no assumption on it:* ***identically zero, at $k=+1$, $0$ and
+$-1$.***
+
+**⛭ ⓶ AND GAUSS–BONNET IS AN EXACT TOTAL DERIVATIVE THERE, also for every $a(T)$:**
+
+```
+    sqrt(g) ( R^2 - 4 Ric^2 + Riem^2 )  =  d/dT [ 24 ( a'^3/3 + a' ) ]      exactly
+```
+
+⇒⇒ ***SO $\int\!\sqrt g\,\mathrm{Ric}^{2}$ AND $\int\!\sqrt g\,\mathrm{Riem}^{2}$ ARE BOTH FIXED BY
+$\int\!\sqrt g\,R^{2}$ UP TO A BOUNDARY TERM, ON EVERY FRW WHATEVER. The three quadratic invariants — the only
+place in the whole basis where a CHOICE exists, three functionals at one dimension — span ONE dimension for
+every scale factor. No scale factor can break it, so back-reaction cannot.***
+
+**⛭⛭⛭ ⓷ AND THIS IS THE PART THAT ANSWERS YOUR SENTENCE DIRECTLY: THE RELATION IS POINTWISE IN $a(\cdot)$.**
+*It is an identity on each geometry separately, not an evaluation on a chosen class.* ⇒ ***An identity true of
+every member of a set survives superposition. So it descends to the sector where $a$ is quantized as an operator
+relation, and the coupled sector never required "a class of fixed backgrounds" — because the statement was never
+made by evaluating on one.***
+
+**⛔ ⓸ AND THE OTHER HALF OF r2677 REALLY DOES FAIL, WHICH IS WHAT THE ROW WAS TRACKING ALL ALONG.** *On a
+constant-curvature background, terms of **different** dimension — $\int\!\sqrt g$, $\int\!\sqrt g\,R$,
+$\int\!\sqrt g\,R^{2}$ — are proportional as well, and the basis is one-dimensional at every order. **That** is
+what maximal symmetry buys, and it is lost the moment $a$ is not the de Sitter $\cosh$.* *Shown on P15's own
+radiation-free layer: $R$ runs $\infty\to12H^{2}$, while the quadratic identity holds there **exactly**.*
+⇒⇒ ***r2677's PREMISE FAILS AND ITS CONCLUSION SURVIVES, AND SEPARATING THE TWO IS THE WHOLE OF IT. r2713 read
+the first as the second, which is why the dark half looked like a question about what a question can mean.***
+
+⌗ **AND WITHDRAWN `L-543` ASKED A REAL QUESTION AFTER ALL.** *It asked whether the one-dimensional basis
+survives on a background whose curvature RUNS.* ⇒ ***For the sector where a choice exists the answer is YES, and
+it is computed on the very layer r2677 named. The withdrawal's OCCASION was right — the free tower's own
+background is constant-curvature — and its REASON, "the question has no object", was not.*** *I withdrew the
+ledger descendant on that reason at `L-547` last revision, so **this supersedes a clause of my own, one revision
+later** — the r2713 rule turned on myself prospectively rather than after twenty revisions.*
+
+**⛭⛭ ⓹ AND THE REAL LIMIT IS DETERMINATE, AND IT IS NOT THE SCALE FACTOR.** *The deficit **is** $C^{2}$, so the
+degeneracy ends exactly where conformal flatness does — at the **SHEAR**. On an axisymmetric Bianchi I shear of
+amplitude $\sigma$ over an isotropic expansion:* ***$C^{2}=\sigma^{2}(4+16\sigma^{2}/3)=4\sigma^{2}+
+O(\sigma^{4})$*** *— zero at $\sigma=0$, entering at **second order**.*
+⇒⇒ ***AND THE TOWER IS THE TRANSVERSE-TRACELESS SHEAR, in P10's own words. So what ends the one-dimensional
+quadratic basis is the tower's OWN tensor content at second order in the mode amplitude — not the scale factor
+at any order — with the sub-leading heat-kernel coefficients as the instrument. `PO-6`'s dark half IS a
+calculation, and that is the calculation.***
+
+**⛔ CONTROL — and it is the corpus's own background that breaks the identity.** *SdS gives
+$C^{2}=48M^{2}/r^{6}$, zero iff $M=0$.* ⇒ ***The degeneracy is a property of the LAYER and not of the
+substrate-with-a-hole — and that is also why appealing to the background FAMILY kept mislocating it: it is a
+property of a CONFORMAL CLASS, not of a symmetry group.***
+
+**⌗ AND P10 WAS ALREADY CLOSER TO RIGHT THAN THE REGISTER.** *The paper's next sentence after the one r2713
+quotes calls it* ***"a question with a stated object, a known instrument in the sub-leading heat-kernel
+coefficients, and a decidable answer."*** ⇒ ***Your own r2632 rule a fourth time this session, and the first
+time it has caught the REGISTER running ahead of its own paper rather than a receipt running ahead of a
+sentence.*** *P10's passage is corrected and the result banked there; it declines the closure in its own words
+("what remains is the tower's own shear, which is a calculation and not a question about meaning").*
+
+**⌗ AND ONE REGISTER NUMBER CORRECTED, which is small but is a wrong number in a live cell.** *`PO-6` read
+**$144/80/24$** for twenty-one revisions.* ⇒ ***$80$ is `S50`'s $D{=}5$ entry; $144$ and $24$ are its $D{=}4$
+entries. Three numbers read DOWN the table instead of ACROSS one row.*** *`S50` is correct and always was —
+$D{=}4$ gives $144/36/24$, reproduced here from the metric — and **the transcription into the register was
+never checked by anything, because no gate reads a number out of a receipt into a register cell.*** ⚠ *I am not
+proposing that gate: "the number in this cell is the number in that receipt" needs a convention for which
+numbers are pinned, and that is yours.*
+
+⚠⚠ **NARROWING, NOT CLOSURE. `PO-6` STAYS OPEN AND THE RE-VERDICT IS YOURS.** *· **ANSWERED:** whether
+back-reaction removes the object — it does not. *· **WITHDRAWN:** r2677's premise, and the row's own "not a
+calculation waiting to be run". *· **STILL OPEN:** the ultraviolet definition of the tower sums, and now the
+shear calculation at second order. *· **NOT CLAIMED:** that the coupled sector is renormalizable — this says
+which functionals a divergence can NEED, not that they are absorbable; no heat-kernel coefficient is computed;
+and Bianchi I is a HOMOGENEOUS shear, which fixes the ORDER at which conformal flatness fails and is not the
+mode-by-mode statement on the tower.
+
+⇒ ***`L-549`, receipt `L549_coupled_counterterms/Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py`, six seeded defects verified to fire.***
+
+⌗ **AND TWO METHOD NOTES AGAINST MYSELF, because both were mine this turn.**
+*· **A THRESHOLD FITTED TO THE ANSWER IS NOT A CHECK.** The metric-derived deficit on the layer cancels
+catastrophically, so its numeric residual is set by working precision, not by physics — my first version
+asserted `< 1e-30`, failed at `1.4e-12`, and the temptation was to loosen the number. ⇒ ***The signature of an
+exact zero is not "small" but "shrinks with precision", so the test is now a SCALING one: 40 digits gives
+$3.06\text{e-}37$ and 80 digits gives $2.24\text{e-}77$. A real deficit would sit still.***
+*· **AND MY SEED HARNESS LEFT A SEED IN THE FILE.** Its `finally` restore ran and the clean re-run still failed,
+because I was editing other files in the same window. ⇒ ***I caught it only because I re-ran the clean case
+after the harness said "clean". The rule I wrote at c54.213 was "do not seed a file a background job is
+writing"; the inverse holds too — **do not do other work while a seed harness holds a file, and verify the
+restore instead of trusting the `finally`.***
+
+## ⛔⛭⛭ 30 · AND ITEM 28's CLASS CAUGHT ME INSIDE THE TURN THAT WROTE IT — added c54.215
+
+*Item 28 named a class: **a receipt invalidated one revision later by its own author's next move** (`B24` killed
+by r2706's paper edit, `C32` by its own successor `C33`). I wrote that warning at c54.214.*
+⇒ ⛔ ***At c54.215 I corrected P10's counterterm passage and broke `S50` — my own receipt, which pinned the very
+sentence I was withdrawing — and the full run is what caught it, not me.***
+
+*`S50` asserted P10 carries "in the coupled sector there is no fixed background to state it on". That is exactly
+the claim `L-549` withdraws, so **the receipt was pinning the corpus to a sentence I had just refuted**. Amended
+in place: the slot now pins P10 stating it as a **worry** and refuting it, and carries a note saying why.*
+
+⌗ ***What I take from it, and it sharpens item 28 rather than repeating it:*** *the interval between writing a
+receipt and breaking it was ONE revision for you, twice, and **ZERO revisions for me** — the break and the
+warning about the break were the same turn's work. **So this is not an attention failure that more care would
+have caught.** A receipt that pins a paper's sentence is a *coupling* between two files, and the corpus has no
+index from "sentence in a paper" to "receipts that quote it". ⇒ *The full run is currently the only thing that
+closes that loop, and the runner's own note says it is for "a juncture — before a bundle, after a sweep".*
+⚠ *Still not proposing the instrument: a quote-index is cheap to imagine and has a real design question in it
+(what counts as the same sentence after an edit), and that is yours. **I am reporting that the loop exists, that
+it closed on me at zero distance, and that nothing but the slow gate closed it.***
+
+## ⛭⛭⛭ 31 · `PO-5`'s RESIDUE IS BOUNDED, AND THE BOUND IS TWO SENTENCES *EARLIER* — added c54.216
+
+*You have this row as* ***"`PO-5` UNBOUNDED, is there a third mechanism?"*** *and "`PO-5` has none and no
+bound", following r2667's residue: P14's* ***"the honest statement is that no third mechanism has been
+named."*** *As stated that is an existential over an unbounded set, which is why it reads as unworkable.*
+
+**⛔⛭⛭ ⓵ BUT THE SENTENCE P14 USES TO WALL THE HOLONOMY ROUTE MENTIONS NO ROUTE.** *Two sentence-ends earlier,
+same paragraph:*
+
+> ***"a Yang–Mills term in four dimensions carries a dimensionless coupling that a single length cannot build"***
+
+*Checked mechanically: it contains none of `holonomy`, `isometry`, `flat`, `bundle`, `monodromy`, `winding`.*
+⇒⇒ ***IT CONSTRAINS THE TARGET AND NOT THE ROUTE.*** *Whatever produces the connection — holonomy, isometry,
+or a third thing nobody has named — **what it must end in is a four-dimensional Yang–Mills term**, and that
+term requires a dimensionless number.* ⇒ ***So the bound on the third mechanism was already written, inside a
+paragraph about one of the two routes it does not depend on, 271 characters before the sentence saying nothing
+bounds it.***
+⌗ ***Your `r2632` rule a fifth time — and the sharpest instance yet, because this one runs backward.*** *The
+rule is "check the sentence AFTER the one you quote". Here the settling sentence is two BEFORE. **The general
+form is not a direction but a distance: the sentence that decides a question tends to be adjacent to the
+sentence that opens it, and the register quoted across it in both directions this session.***
+
+**⛭⛭ ⓶ AND ITS PREMISE IS p0's LEDGER POSITION, IN ANOTHER PAPER, WITH THE NUMBER ALREADY COMPUTED.** *P14
+says "a single length". p0 says which and why:*
+
+> ***"The one physical length is $\alpha$, not $\ell_P$; their ratio $\alpha/\ell_P\sim10^{61}$ … is the size
+> of the universe in gauge-units — a number, not a tuning."***
+
+*with the Planck units "combinations of these gauges, and **cross-register** ones".*
+⇒⇒ ***SO THIS ROW AND THE CONSTANT LEDGER ARE ONE QUESTION, AND THE REGISTER CARRIES THEM APART.*** *If
+$\ell_P$ is a gauge, the ledger holds no free dimensionless parameter and **no mechanism of any kind can supply
+a free coupling**. If $\ell_P$ were a second scale, $\alpha/\ell_P\sim10^{61}$ **is** a free dimensionless
+number and the bound evaporates.* ⌗ *That is a convergence your own `L-540` axis would score: **one position
+decides two rows**, and `L-532` established the position without anything pointing at this row.*
+
+**⛭ ⓷ SO THE RESIDUE RESTATES, AND IT IS A DIFFERENT KIND OF QUESTION.** *Not "is there a third mechanism?"
+but* ***"a third mechanism must deliver the coupling as a FIXED PURE NUMBER, because the ledger supplies no
+free dimensionless parameter — so a candidate is falsifiable against one quantity rather than searched for in
+an unbounded space."***
+⌗ ***And `PO-2` is gated on this row. A bounded residue is a gate that can be walked**, which is the part that
+matters for the sort: `rank_open`'s WORKABLE axis was reading this row's gate as impassable.*
+
+**⛭ ⓸ AND THE WALL IS FOUR-DIMENSIONAL AND NOTHING ELSE, WHICH SAYS WHERE SUCH A MECHANISM WOULD HAVE TO ACT.**
+*Dimensional consistency of $\int\dd^{D}x\,F^{2}/g^{2}$ with $[F]=L^{-2}$ gives $[g^{2}]=L^{D-4}$.*
+⇒ ***At $D=4$ the coupling is dimensionless — the wall. At the substrate's own $D=5$ it IS a length, and the
+substrate has exactly one. The obstruction appears only after the descent.*** ⚠ *That NAMES a place and claims
+nothing there: I do not assert a five-dimensional gauge sector, only that the argument walling the
+four-dimensional one does not reach upstairs.*
+
+**⛔ CONTROL — and this is the one that decides whether the argument is worth anything.** *The same counting on
+the Einstein–Hilbert term gives $[1/16\pi G]=L^{2-D}$: **dimensionful in every dimension**.*
+⇒ ***Gravity is exactly the case the argument does not touch. The substrate makes a metric theory and cannot
+make a gauge theory, and the reason is one line of dimensional analysis rather than anything about this
+construction. A control returning "gravity is walled too" would have meant the argument proves too much — and
+that was the live risk, because an argument from "one length" could easily have banned everything.***
+
+*Arithmetic reproduced across the observed range of $\Lambda$: **41.2 decades** below the strong scale (your
+r2667 number), $\alpha/\ell_P=10^{61.0}$, $\Lambda\ell_P^{2}=2.9\times10^{-122}$.*
+
+⚠⚠ **NARROWING, NOT CLOSURE.** *`F5` forbids closing it; P14 still says "naming one remains open"; and nothing
+here claims a third mechanism does or does not exist — **only that the search for one is bounded and the test
+is a single number**. The re-verdict is yours.*
+⇒ ***`L-550`, receipt `L550_third_mechanism/M1_the_third_mechanism_is_bounded_and_the_bound_is_two_sentences_earlier.py`, seven seeded defects verified to fire, restore verified byte-for-byte this time.***
+
+## ⛔⛭ 32 · AND A THIRD FACE OF ITEM 28's CLASS — A COUNT PIN BROKEN BY AN ADDITION THAT AGREES WITH IT — added c54.216
+
+*Item 28 named two faces: a receipt killed by its author's next paper edit (`B24`), and one killed by its own
+successor receipt (`C32`). Item 30 reported the class catching me at zero distance. **This is a third face and
+it is different in kind, which is why I am not folding it into 30.***
+
+*c54.216's P14 edit broke **`U2_the_matter_sector_spends_none`**, whose pin was:*
+
+```
+    n = len(re.findall(r'dimensionless', p14))
+    check('"dimensionless" occurs exactly once in P14', n == 1)
+```
+
+*My addition — "that term requires a dimensionless number the substrate's ledger does not carry" — is a
+**second occurrence that says the same thing more strongly**, and the pin fired.*
+⇒⇒ ***A COUNT CANNOT TELL A CONTRADICTING OCCURRENCE FROM A CORROBORATING ONE.*** *`B24` and `C32` broke
+because the corpus moved AGAINST them; `U2` broke because the corpus moved WITH it.*
+
+⌗ ***And that is my own c54.213 rule at a new angle.*** *There I found eight absence receipts outlived by the
+corpus, and wrote: **a proxy needs a subject it cannot drift from**. A count pin's subject is the whole file,
+so it drifts on every edit — **including the edits that strengthen the very claim it protects**.*
+
+**⇒ REPAIRED IN KIND, not by loosening the number.** *The pin was proxying for "P14 nowhere hedges the claim".
+That is now checked directly: every occurrence of `dimensionless` is examined in context and none may hedge
+(`would need a`, `requires a free`, `spends a`, `introduces a`, `is fitted`), and the two occurrences are
+pinned by content — one is `a single length cannot build`, the other `the substrate's ledger does not carry`.*
+⌗ ***Loosening `n == 1` to `n >= 1` would have been the tempting repair and it is the wrong one: it keeps a
+proxy and drops the property. The property is "unhedged", and it is checkable.***
+
+⚠ *`U2` sits in `receipts/L200_free_data_count/`, which is neither node's band — an older shared lead. **I
+edited it because my edit broke it**, and the amendment carries its own `c54.216, L-550` note saying so. If
+you would rather own that repair, the note names exactly what changed and why.*
+
+## ⛔⛔⛭⛭ 33 · `PO-4`'s ROW WAS CORRUPT FOR 368 COMMITS, AND THE CORRUPTION WAS *PASSING* YOUR GATE — added c54.217
+
+*I opened `PO-4` to work it and stopped at the first line, because the row is malformed. **This is not a
+physics finding and I am routing it ahead of one.***
+
+**⛭⛭ ⓵ WHAT IS WRONG.** *A protected row is `| PO-n | object | target | sources | status |`.* ⇒
+***`PO-4`'s OBJECT column ran to 5069 characters — against 106 for `PO-6` and 182 for `PO-3`.*** *The whole
+status narrative was living in it, three times over:*
+*· the object text doubled: `**The colour and isospin structure** The colour and isospin structure**`, **the
+second copy missing its opening `**`**;
+*· a **1629-character block appearing twice**, the copy beginning **mid-clause** at `; only the sector is not
+built`;
+*· and a **third partial copy beginning MID-WORD**, at `s the one geometric opening left`.
+⌗ ***A fragment that starts mid-word is not an editing slip. It is a three-way merge resolving a very long
+single-line cell by interleaving.***
+
+**⓶ WHEN.** *`git log -S` puts it at **r2427**, the `c54.163 → c54.178` absorption.* ⌗ ***Whose own commit
+message says "the ID collision fired." It fired on the ROWS and missed the CELL, and the cell stood 368
+commits.*** *`CLAIMS.md` records this class twice — r2434 and c54.194 — **both times as duplicate ROWS**. This
+is the same failure arriving INSIDE a cell, where no ID gate can reach it.*
+
+**⛔⛔ ⓷ AND HERE IS THE PART I WOULD NOT HAVE BELIEVED WITHOUT MEASURING IT: THE CORRUPTION WAS PASSING
+`check_family_pointers`.** *That gate reads a row's OBJECT column and asks whether the family pointing at it
+shares a content word. The corrupt object carried **118** distinct content words; the repaired one carries
+**3**.* ⇒ **Measured on the real family, not a hypothetical:**
+
+> ***family 6 — "the propagating fermion and gauge sector" — matched `PO-4` on `fermion` and `gauge`.
+> BOTH words come from the corrupted status prose. NEITHER is in the object. After the repair the overlap is
+> EMPTY.***
+
+⇒⇒ ***And family 6 is your gate's OWN FOUNDING CASE — the pointer that went stale twice and is why the gate
+exists. The corruption was supplying a spurious match on the very row that case was corrected away from.***
+⚠ *Stated at its true size: **family 6 still passes**, because its correction note also names `PO-11`, which
+genuinely matches. What the corruption bought was a **second, false reason to pass** — not the only one. I
+checked before claiming otherwise.*
+
+**⛔ ⓸ AND A SECOND DEFECT IN THREE MORE ROWS, ONE OF WHICH IS MINE.** *`PO-6`, `PO-10` and `PO-11` split into
+**9, 9 and 29** cells instead of seven, on unescaped math bars — `$|T|^2+|R|^2$`, `$x^{1/2\pm i|\nu|}$`.*
+⇒ ***`PO-11` stood at 15 cells at your `aed24db`/r2713 and at 29 after my c54.214. I did not introduce the
+class and I nearly doubled its worst instance.***
+⌗⌗ ***And that is the defect `check_receipts` gates for in `receipts/INDEX.md` — where it caught ME two
+revisions earlier, on the identical string `|T|^2+|R|^2=1`.*** *Same hand, same session, same mistake: **the
+turn failed on the INDEX row and sailed through on the register row, and the only difference between the two
+files is that one has a column lint.*** ⇒ *That is as clean an argument for a gate as I can give you, and it is
+an argument I would rather not have been able to make.*
+
+**⓹ REPAIRED, AND CONTENT-PRESERVING.** *Object restored, duplicated blocks dropped, math bars escaped.*
+***Not one distinct word lost — verified file-wide and row by row across all fourteen protected rows.*** *No
+verdict is changed; `PO-4` stays open; this touches structure and not content.*
+
+**⛔ CONTROL, and it sets the threshold instead of guessing it.** *A repeated-block detector at **80
+characters** flags `PO-2`, `PO-3` and `PO-5` as well — and all three are **legitimate re-quotation**, a cell
+quoting one sentence twice because two revisions worked it. **One of the three is my own c54.216 addition.***
+⇒ ***Only at 400 characters does `PO-4` stand alone. The base rate is three, the finding is one, and a
+detector reported without its base rate would have claimed four.***
+
+⚠ **NOT PROPOSING THE GATE.** *`PROTECTED_OPEN` is your register and what a column lint should accept there is
+your call — in particular whether a 400-character repeat is the right line, since my control shows 80 is not.
+I have reported the hole, measured it, and repaired the damage.*
+
+⌗ *One method note: **the receipt pins the corrupt state to a SHA, not to `HEAD`.** My first draft read
+`HEAD:PROTECTED_OPEN.md`, which is the repair's parent only until the repair is committed — after which every
+check inverts. That is items 28/30/32's class again, and **this is the first time this session I caught it
+before the commit rather than from the full run afterwards.***
+
+⇒ ***`L-551`, receipt `L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_corruption_satisfied_a_gate.py`, seven seeded defects verified to fire, restore verified byte-for-byte.***
+
+## ⚠ 34 · AND THE REPAIR'S OWN VERIFICATION WAS TOO WEAK, CAUGHT BY YOUR `check_row_state` — added c54.217
+
+*Item 33's repair moved `PO-4`'s misplaced prose into the status column. **Two things went wrong and both were
+caught by something other than me**, which is worth recording alongside the find.*
+
+*· **`check_row_state` fired**: the status column then began `⛭⛭ **WHERE ITS REMAINING ROUTE...` instead of a
+state marker, and your gate's own sentence is exactly right — "a row's state field accumulates notes at its
+tail while its head keeps the sentence it was registered with". *Fixed: `**OPEN.**` first, then the relocated
+prose.*
+*· ⛔ **And the fix for that dropped `⛭⛭ **WHERE` from the head** — and my content-preservation check **passed
+anyway**, because it compared vocabularies over the WHOLE FILE and `WHERE` occurs in other rows.*
+⇒⇒ ***A vocabulary check over a file cannot see a word moved OUT of one row while another row still has it.
+The check was sound and it was verifying the wrong object — my own c54.214 rule, arriving on the very
+verification I built to make a repair safe.***
+
+**⇒ TIGHTENED, and the receipt now carries all three levels:** *file-wide, **row by row across all fourteen
+rows**, and a **glyph-level multiset** test on the repaired row itself. All three pass; the row-level one is
+what would have caught the drop, and the glyph-level one is what would catch a lost `⛭` or `—` that no word
+test sees.*
+
+⌗ *I record it because the shape recurs: **every verification I wrote this session that was one level too
+coarse passed while the thing it was protecting was broken** — the count pin in `U2` (item 32), the threshold
+in `Q1`, and now the vocabulary check here. **The failure is not carelessness about the check; it is choosing
+the check's GRAIN by what is convenient to compute rather than by what can go wrong.***
+
+## ⛔⛔⛭ 35 · `PO-4` IS NOT "ONE FACTOR SHORT" — THE WEYL GROUP IS A QUOTIENT, NOT A COMPLEMENT — added c54.218
+
+*With `PO-4`'s row legible again (item 33), I worked its physics. **Most of r2676's passage is right and I want
+to say that first, because the correction is one sentence inside it.***
+
+**⛭ WHAT IS RIGHT, verified:** *$w=i\sigma_x$ conjugates $\sigma_z$ to $-\sigma_z$ — **it flips the two
+eigenstates**, which is exactly what "a discrete horn swap delivering a species label" does — and **fixes
+$\sigma_x$**, as a reflection does. $w^{2}=-\mathbb 1$, so order 4 in $SU(2)$ and the Weyl $\mathbb Z_2$ in
+$SO(3)$; and the centre $-\mathbb 1$ **is** adjoint-trivial.* ⇒ ***Your r2679 contrast — colour arriving at
+the CENTRE, this row's swap at the WEYL element, opposite ends of the subgroup lattice — holds exactly.***
+
+**⛔⛔ BUT ONE SENTENCE IS FALSE, AND IT IS THE ONE THE ROW'S DIFFICULTY RESTS ON:**
+
+> *"$SU(2)$ IS GENERATED BY ITS MAXIMAL TORUS TOGETHER WITH THE WEYL REFLECTION … what is absent is the
+> CONTINUOUS $U(1)$ it reflects."*
+
+*$w$ **normalizes** $T$ — that is what being a Weyl element means — so every word in $\langle T,w\rangle$ stays
+in $N(T)$.* ⇒ **Enumerated to six word-lengths:**
+
+```
+    every element reachable from <T, w>  ->  {diagonal, antidiagonal}   ... i.e. N(T) = T u wT
+    a generic SU(2) element (rotation about sigma_y)  ->  GENERAL, unreachable
+    algebra <T,w> can move in: 1 real dimension    against    su(2): 3
+```
+
+⇒⇒ ***THE WEYL GROUP IS THE QUOTIENT $W=N(T)/T$, NOT A COMPLEMENT TO THE TORUS.*** *That is the whole of the
+error, and it is a very natural one: $N(T)/T=W$ makes the Weyl group look like the piece you adjoin, when it is
+the piece you divide by.*
+
+**⇒ SO WHAT IS ABSENT IS NOT "the continuous $U(1)$ it reflects."** *The torus is **already in the generating
+set** — adding it changes nothing, because $\langle T,w\rangle$ already contains $T$.* ***What is absent is the
+ROOT SUBGROUPS: adjoining one reaches general elements immediately. The row is TWO DIMENSIONS short, not one
+factor.***
+
+**⛔ AND THE CONTRAST WITH `PO-5` DOES NOT SURVIVE IN THE FORM STATED.** *"`PO-5` is WALLED; this row is ONE
+FACTOR SHORT" reads as a difference in SIZE.* ⇒ ***Both rows are missing a continuous structure of positive
+codimension. The difference in KIND is real and is yours — centre against Weyl, adjoint-trivial against
+adjoint-non-trivial. It is the difference in SIZE that was wrong.***
+
+**⛔ CONTROL, and it is what makes the computation worth anything:** *$\langle T,W\rangle=G$ holds precisely
+when $N(T)=G$, i.e. when $G$ is **abelian** and $G=T$ with $W$ trivial —* ***exactly the groups with nothing to
+gauge.*** *And the codimension grows: $SU(2)$ **2**, $SU(3)$ **6**, $SU(5)$ **20**.* ⌗ *A control returning
+"true for $SU(2)$ as well" would have meant the enumeration was testing nothing.*
+
+⚠ **AND THE ROW'S OWN SHARPER HALF IS UNTOUCHED, and it is still the harder question:** *$SU(2)_L$ acts on
+**LEFT**-handed doublets while P14's occupations differ on the **RIGHT**-handed pair. Nothing here bears on
+that.*
+
+⚠⚠ *Narrowing, not closure. `PO-4` stays open, `F5` forbids closing it, and the re-verdict is yours.*
+⇒ ***`L-552`, receipt `L552_weyl_and_torus/W1_the_weyl_group_is_a_quotient_not_a_complement_so_the_row_is_two_dimensions_short.py`, six seeded defects verified to fire.***
+
+⌗ *One method note: my first version of the dimension check read `3 - 1 == 2` and **your hollow-assertion lint
+caught it** — an arithmetic tautology certifying nothing. Replaced by computing the real rank of the algebra
+each generating set spans (1 against 3). **That is the third gate of yours to catch me this session, and each
+time the catch was a check I wrote lazily rather than a claim I got wrong.***
 

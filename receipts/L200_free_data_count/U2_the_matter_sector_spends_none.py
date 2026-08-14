@@ -103,10 +103,23 @@ def main():
     check('P14 states the limit of its own exclusion ("no third mechanism has been named")',
           'no third mechanism has been named' in p14)
 
-    # the count has exactly one free dimensionless constant mention, and it is the one above
-    n = len(re.findall(r'dimensionless', p14))
-    check(f'"dimensionless" occurs exactly once in P14 (it does: {n}) -- the coupling it cannot build',
-          n == 1)
+    # ⛔ AMENDED c54.216, `L-550`.  This was a COUNT PIN -- '"dimensionless" occurs exactly once' --
+    #    and c54.216 broke it by adding a SECOND occurrence that says the SAME thing more strongly
+    #    ("that term requires a dimensionless number the substrate's ledger does not carry").
+    #  ⇒ *** A count cannot tell a contradicting occurrence from a corroborating one. ***  What the
+    #    pin was proxying for is that P14 nowhere HEDGES the claim -- never says the sector does, or
+    #    might, spend a dimensionless constant -- so that is what is checked now, on every occurrence.
+    occ = [p14[max(0, m.start()-160):m.start()+160] for m in re.finditer(r'dimensionless', p14)]
+    HEDGE = ('would need a dimensionless', 'requires a free dimensionless', 'spends a dimensionless',
+             'introduces a dimensionless', 'a dimensionless constant is fitted')
+    hedged = [c for c in occ if any(h in c for h in HEDGE)]
+    check(f'every one of the {len(occ)} "dimensionless" occurrences in P14 is the CANNOT-BUILD claim '
+          f'or a restatement of it, and none hedges it ({len(hedged)} hedged)',
+          len(occ) >= 1 and hedged == [])
+    check('   and both occurrences sit in the one paragraph that walls the coupling -- the second '
+          'added c54.216 states the bound is on the TARGET, not the route',
+          any('a single length cannot build' in c for c in occ)
+          and any('the substrate\'s ledger does not carry' in c for c in occ))
     check('and "free constant" occurs nowhere in P14',
           len(re.findall(r'free constant', p14, re.I)) == 0)
 

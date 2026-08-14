@@ -8,6 +8,7 @@ job: The programme's work, route and destination — the lanes, the per-turn ope
 <!-- GRAIN-CURRENCY:BEGIN -->
 
 ## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r2719
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r2713
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
@@ -16,6 +17,8 @@ job: The programme's work, route and destination — the lanes, the per-turn ope
 >
 > **⌗ NOT COVERED — OPENED since r2417 (79 rows):**
 > `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-240` `L-242` `L-245` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-519` `L-520` `L-521` `L-522` `L-523` `L-524` `L-525` `L-526` `L-527` `L-528` `L-529` `L-530` `L-531` `L-532` `L-533` `L-534` `L-535` `L-536` `L-537` `L-538` `L-539` `L-540` `L-541` `L-542` `L-543` `L-544` `L-545` `L-546` `L-800` `L-801` `L-802` `L-803` `L-804` `L-805` `L-806` `L-807` `L-808` `L-809` `L-810` `L-811` `L-812` `L-813` `L-814` `L-815` `L-816`
+> **⌗ NOT COVERED — OPENED since r2417 (73 rows):**
+> `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-240` `L-242` `L-245` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-519` `L-520` `L-521` `L-522` `L-523` `L-524` `L-525` `L-526` `L-527` `L-528` `L-529` `L-530` `L-531` `L-532` `L-533` `L-534` `L-535` `L-536` `L-537` `L-538` `L-539` `L-540` `L-541` `L-542` `L-543` `L-544` `L-545` `L-546` `L-547` `L-800` `L-801` `L-802` `L-803` `L-804` `L-805` `L-806` `L-807` `L-808` `L-809`
 >
 > ⌗ ***The ID half is machine-checked against the register; run `regen_grain_currency.py --check`. The prose half below is a JUDGEMENT and is written by hand — the script preserves it verbatim and never invents it, because a gate can check a declaration and not a judgement.***
 

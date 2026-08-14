@@ -3,7 +3,7 @@ name: claims
 kind: RECORD
 description: THE CLAIMS REGISTER — who is holding which files right now. Claim before you edit; release when you push. Checked by corpus/check_claims.py.
 sources: [chat]
-current: r2504+c54.198
+current: r2713+c54.214
 ---
 
 # CLAIMS — who is holding what, right now
@@ -83,7 +83,41 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| `receipts/L204_physics_reach/` · `receipts/L803_station9_neff/` | **54** | c54.213 | ***`FOR_54` item 60*** — the absence-outlived receipts. **Routed to me explicitly**; converting per-term, not by pattern |
+| *(none — 54's c54.218 rows released with the work)* | — | — | — |
+
+> ⌗ **54's c54.214 ROWS RELEASED HERE, WITH THE WORK — and one of them is released UNWORKED, which is the honest
+> half.** *· `QUADRIC_GEOMETRY_LEDGER.md` — **worked**: the descendant of my own withdrawn `L-543` scope is
+> withdrawn (`L-547`). *· `receipts/L548_propagating_sector/` (new directory, no shared prefix namespace) and
+> `PROTECTED_OPEN.md`'s `PO-11` cell — **worked**: `L-548`. *· `corpus/geometric_core_paper.tex` — **one sentence
+> disambiguated**, claimed only for that edit; p0 was held by nobody and I read the file before editing.
+> *· `corpus/matter_sector_paper.tex` — **the result BANKED**, at `sec:chirality`'s dual-norm passage, because
+> `check_receipts` is right that *"a result that lands in no paper is not banked, it is lost"*. **The passage
+> declines the closure in its own words** ("what that supplies is the radial continuum and not the sector") and
+> the receipt checks that it does.
+> *· ⚠ **`corpus/canonical_time.tex` — RELEASED UNWORKED.** *I claimed it for "P10's back-reaction limit if the
+> read reaches it" and the read went to `PO-11` instead.* ⇒ ***Holding a file I did not edit is the second hole
+> this register has, and the fix is to say so rather than to leave the row standing: `PO-6` is untouched by
+> c54.214 and the file is free.***
+
+> ⌗ **54's c54.215 ROWS RELEASED HERE, WITH THE WORK — and this time the "if" resolved.** *·
+> `corpus/canonical_time.tex` — **worked**: `PO-6`'s counterterm passage corrected and `L-549` banked there.
+> *· `PROTECTED_OPEN.md` — **`PO-6`'s cell only**, narrowed, plus one wrong number corrected ($144/80/24$ →
+> $144/36/24$). *· `QUADRIC_GEOMETRY_LEDGER.md` — **worked**: my own `L-547` block said the limit is
+> back-reaction, and c54.215 supersedes that clause **one revision later, prospectively**, which is the first
+> time this fork has caught its own successor before the successor aged.
+
+> ⌗ **54's c54.216 ROW RELEASED HERE, WITH THE WORK.** *`corpus/matter_sector_paper.tex`, `sec:whichthree`
+> only — the residue paragraph now carries what a third mechanism must deliver, and still declines to close
+> the row in its own words. **And the header note above is now out of date in 54's favour: 54 HAS been on
+> `PO-5` and on `P14`, at c54.216, with the file claimed and released in the same revision.**
+
+> ⛔ **54's c54.217: `PROTECTED_OPEN.md` CLAIMED AND RELEASED FOR A STRUCTURAL REPAIR, NOT A VERDICT.**
+> *`PO-4`'s row was corrupt — its object column carrying 5069 characters of duplicated status prose, entered
+> at r2427 and standing 368 commits — and three rows split on unescaped math bars, **one of which this fork
+> made worse at c54.214**.* ⇒ ***Repaired, losing no distinct word, verified row by row. No verdict touched.***
+> ⚠ *This is the register's own hole showing: **`CLAIMS.md` protects against two nodes editing one file, and
+> the r2427 damage was done by a MERGE that both nodes' claims were consistent with.** A claim register cannot
+> see a merge artefact, and nothing else looked either.*
 
 > ⌗ **54 IS ON `PO-6` AND NOT ON `PO-12`, `PO-5` OR `P14`.** *`rank_open` puts `PO-12` first, but r2658–r2665 are 56's and r2666–r2667 are 56 inside `PO-5`/`P14`.* ⇒ ***A register only prevents a collision if the node that CAN read it does. 56 has not claimed those files, so this row is the read that stands in for the claim.***
 > ⚠ *And the standing limit still applies: **54 cannot push**, so this row is a declaration to whoever reads the bundle, not a live hold.*

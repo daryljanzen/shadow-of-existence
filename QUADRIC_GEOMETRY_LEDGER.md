@@ -1,7 +1,7 @@
 ---
 name: quadric-geometry-ledger
 description: R-M's first field bake — projective geometry of quadrics thrown at the CR substrate. Opened r1838 (Phase 8). What the corpus already reaches, the boundary the throat protocol states for itself, and the bites this field can take that the classical catalogue could not.
-current: r2671+c54.210
+current: r2713+c54.214
 ---
 
 > **⌗ CHECKED AGAINST c54.163→c54.185 AND DECLARED CURRENT r2449.** *The span's substantive content is **the derived
@@ -71,8 +71,37 @@ of $1/\alpha^{2}$" — **written to show the construction cannot force a couplin
 basis it says the construction does not need one.*
 
 ⚠ ***THE SCOPE, and it belongs in a quadric ledger because it is a statement about which quadrics:*** *the
-degeneracy holds on the ONE-PARAMETER family of maximally symmetric quadrics. **The layer is not one of
-them** — its $\sinh^{2/3}$ rate has a Ricci scalar that runs — so this bake's reach stops at the substrate.
+degeneracy holds on the ONE-PARAMETER family of maximally symmetric quadrics.*
+
+> ⛔⛔ **WITHDRAWN c54.214 — this paragraph carried `L-543`'s scope, which `L-544` retired at c54.211 and
+> r2713 struck. *I withdrew the claim and left this behind.*** *It read: "**The layer is not one of
+> them** — its $\sinh^{2/3}$ rate has a Ricci scalar that runs — so this bake's reach stops at the
+> substrate."*
+> ⇒ ***FALSE, and in the direction that understates the bake.*** *P10's free tower slices on
+> $a(T)=\alpha\cosh(T/\alpha)$, whose $R=12/\alpha^{2}$ is **constant** — a member of this very
+> family. And r2713 adds the identity that makes it obvious: **$12/\alpha^{2}$ and $12H^{2}$ are the
+> same form with $H\to1/\alpha$, so the layer's late limit IS the tower's background.***
+> ⇒⇒ **So the bake's reach does NOT stop at the substrate: the quadric family contains the geometry the
+> tower is actually defined on.** *What limits it is not a running curvature but a **back-reacting**
+> one — P10's own stated limit, and not a quadric question at all.*
+> ⌗ ***THE RULE, 56's at r2713 and paid here: when you withdraw a claim, withdraw what it SPAWNED.*** *A
+> retraction reaches the sentence that was wrong; **the successor is downstream and nothing points back
+> at it**, and it survives because it reads as work rather than as a claim.* `L-547`.
+>
+> ⛔⛭⛭ **AND c54.215 SUPERSEDES THE LAST CLAUSE OF THIS VERY BLOCK — the rule applied to itself, one
+> revision later and prospectively this time.** *`L-547` closed by saying the limit is a **back-reacting**
+> background rather than a running one.* ⇒ ***It is neither.*** *The collapse of the three quadratic
+> invariants is not a consequence of maximal symmetry at all: their deficit is exactly
+> $C_{\mu\nu\rho\sigma}C^{\mu\nu\rho\sigma}$, **every FRW geometry is conformally flat for every
+> scale factor**, and Gauss–Bonnet is an exact total derivative there — so the degeneracy holds whatever
+> $a$ does, and **being an identity pointwise in $a(\cdot)$ it survives superposition and descends to the
+> quantized sector as an operator relation**.* ⇒⇒ ***So back-reaction does not reach it either. What does
+> is the SHEAR — the deficit IS $C^{2}$, an anisotropic shear of amplitude $\sigma$ gives
+> $C^{2}=4\sigma^{2}+O(\sigma^{4})$, and the tower IS the transverse-traceless shear.*** ⌗ *And this is
+> the quadric ledger's own kind of statement after all: **a degeneracy of curvature invariants that is a
+> property of a CONFORMAL CLASS rather than of a symmetry group**, which is why appealing to the
+> background family kept mislocating it. Registered `L-549`; the receipt is
+> `L549_coupled_counterterms/Q1_…`.*
 
 ---
 
