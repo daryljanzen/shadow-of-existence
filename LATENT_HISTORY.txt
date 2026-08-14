@@ -143,3 +143,4 @@ r2700  LATENT      9.4% is an ANGLE ratio and 10.8% a LENGTH ratio; four revisio
 r2701  LATENT      PO-12s remaining half has no content: at w=0 the potential equation loses k entirely
 r2702  LATENT      PO-12 STRUCK (debt discharged, one clause relocated to PO-7); PO-10 UNGATED. Table 8.
 r2703  LATENT      PO-10 half 2 carries no CR-vs-LCDM signal: R is a content ratio. The row is ONE half.
+r2704  COMPUTED    the frontier is 5 DEFINEDNESS rows and 2 PREDICTION rows; they fail differently

@@ -116,7 +116,8 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2700   PO-12   9.4% is an ANGLE ratio; four revisions compared it to a LENGTH ratio. Debt smaller.
     r2701   PO-12   remaining half has NO CONTENT -- at w=0 the potential equation loses k.
     r2702   PO-12   STRUCK. PO-10 UNGATED. Table 8. Frontier 4 BOUNDED, 1 UNBOUNDED, 2 gated.
-    r2703   PO-10   CLAIMED: newly ungated and least explored -- what are its two halves, exactly?
+    r2703   PO-10   half 2 carries no signal (R is a content ratio). The row is ONE half.
+    r2704   ---     CLAIMED: apply the H-sorting rule to PO-6 and PO-11 -- know them before dwelling.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

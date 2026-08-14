@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r2704 — 2026-08-11 (main line). **THE FRONTIER HAS TWO KINDS — five DEFINEDNESS rows, two PREDICTION rows.**
+
+**⌗ THE RULE IS r2703's, AND IT IS P15's OWN.** *"The whole difference is carried by $H(a)$" ⇒ an observable that is
+not a function of $H$ **cannot discriminate**. Applied to the whole table:*
+
+    DEFINEDNESS -- not a function of H, not answerable by data
+      PO-4   supply the continuous U(1)       PO-5   is there a third mechanism?
+      PO-6   the interacting tower            PO-11  a propagating Dirac sector
+      PO-2   do the roots ARE colour  (gated on PO-5)
+
+    PREDICTION -- a number against the sky
+      PO-10  the full-spectrum likelihood refit      PO-7   the first acoustic peak / CRPHI
+
+**⓶ THE OBJECTS CONFIRM IT INDEPENDENTLY.** *`PO-6`'s $\hat\Gamma$ lives on P10's slicing with **$R=12/\alpha^2$
+CONSTANT** (r2691); `PO-11`'s norms are built from $f(r)$ on a **static** slice, and the tortoise interval is
+infinite **regardless of the rate** (r2690).*
+
+**⛭⛭ ⓷ AND THE CLASSES FAIL DIFFERENTLY.** ***A definedness row closes by CONSTRUCTION or by a WALL and cannot be
+settled by data — `PO-5` shows a wall is a real outcome. A prediction row closes by a RUN against the sky and cannot
+be settled by construction.***
+⇒ ***So "which is smaller" does not order them. The question when choosing is which KIND of answer the programme
+needs next.***
+
+**⛭ THE RULE:** ***classify a frontier by what would COUNT as an answer before ranking it by effort. Two rows can be
+the same size and yet one is unfalsifiable by every measurement ever made and the other is settled by one run.***
+
+**⚠ AND THE BALANCE IS THE FINDING:** ***five of seven ask whether the theory is DEFINED. A programme whose frontier
+is five-sevenths definedness is not near a confrontation with data — it is near a decision about what it IS.*** *Not
+a criticism; the shape, and it was invisible while the rows were sorted by size.*
+
+⌗ *`scripts/stamp.py` now carries the **KIND** line above the frontier line.*
+
 ### Revision r2703 — 2026-08-11 (main line). **`PO-10`'s HALF ② CARRIES NO DISCRIMINATING SIGNAL — the row is ONE half, not two.**
 
 **⓵ P7 NAMES BOTH HALVES ITSELF.** *① the full-spectrum likelihood comparison — "**a parameter refit rather than a

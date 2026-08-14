@@ -158,6 +158,15 @@ def main():
     print(f'*STILL OPEN — dark: {", ".join(x["id"] for x in dh if x["open"])} · '
           f'PO: {", ".join(x["id"] for x in po if x["open"])}*')
     print()
+    # ** r2704: SIZE does not order the frontier, because the two KINDS fail differently.
+    # *** A DEFINEDNESS row closes by construction or by a wall and cannot be settled by data;
+    #     a PREDICTION row closes by a run against the sky and cannot be settled by
+    #     construction. ***  Derived from P15's own "the whole difference is carried by H(a)".
+    DEFINEDNESS = ('PO-2', 'PO-4', 'PO-5', 'PO-6', 'PO-11')
+    PREDICTION = ('PO-7', 'PO-10')
+    print(f'**KIND: {len(DEFINEDNESS)} DEFINEDNESS ({", ".join(DEFINEDNESS)}) · '
+          f'{len(PREDICTION)} PREDICTION ({", ".join(PREDICTION)})**')
+    print()
     print(f'**FRONTIER: {len(BOUNDED)} BOUNDED ({", ".join(sorted(BOUNDED))}) · '
           f'{len(UNBOUNDED)} UNBOUNDED ({", ".join(UNBOUNDED)}) · '
           f'{len(GATED)} gated ({", ".join(f"{k}←{v}" for k, v in GATED.items())})**')
