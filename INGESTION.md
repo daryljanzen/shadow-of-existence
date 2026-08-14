@@ -103,7 +103,10 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2687   PO-12   gap closed by integration; the answer is set by the ONSET.
     r2688   PO-12   the onset is FIXED; the residual is the weight g(R)/x_e.
     r2689   PO-12   +9.4% BRACKETED [7.0, 13.1] from outside the papers instrument. Ordering forced.
-    r2690   PO-11   CLAIMED: bracket the propagating sector the same way -- what does the tower cost?
+    r2690   PO-11   obstruction UNIFORM in lambda -- no high-j corner rescues the tower.
+    r2691   ---     folded c54.211/212; BACKLOG emptied, r2677 scope withdrawn. Both errors mine.
+    r2692   ---     gates.yml stray do fixed -- MY insertion, misattributed to 54. CI unblocked.
+    r2693   PO-7    CLAIMED: does the corpus already handle the turnaround H_c=0 cc54 named?
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

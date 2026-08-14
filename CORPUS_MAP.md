@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2693 — 2026-08-11 (main line). **cc54's TURNAROUND OBSTACLE VERIFIED AND RELOCATED — the corpus crosses by ROTATION.**
+
+**⓵ THE OBSTACLE VERIFIES EXACTLY.** *On the closed dust cycloid $a=\tfrac{a_{\max}}2(1-\cos\eta)$: **$H_c(\pi)=0$**
+at maximum expansion, and **$k^2/(3H_c)\to-\infty$** there. A real-$\eta$ integration dies at the turnaround, as
+L-812 reports.*
+
+**⛭⛭ ⓶ BUT THE CORPUS DOES NOT CROSS IN REAL $\eta$, AND SAYS SO.** *P7: "Along the lift — the stretch on which
+$\mathrm{Re}$ does not advance while **the areal radius climbs from the comoving turnaround to the branch point** —
+**the conformal time is purely imaginary**", with the rate "**carried continuously from *zero* at the
+turnaround**".*
+
+    eta = pi + i s   ->   H_c = -i sinh(s)/(cosh(s) + 1)      purely imaginary, 0 at s=0, monotone after
+
+⇒⇒ ***So $H_c=0$ is not a singularity to be regularised: it is the ENDPOINT of a segment the framework already
+parametrises, and the crossing is a ROTATION rather than a passage.***
+
+**⌗ WHICH BEARS ON THE PROPOSED BUILD.** *A turnaround-regular variable is the right tool for a **bounce in real
+time**. The lift is not a bounce — cosmic time does not advance along it at all.*
+⇒ ***A variable built to regularise a real-time zero would be solving a problem the contour does not pose, and would
+need checking against the imaginary-time parametrisation before its output could be read.***
+
+**⛭ THE RULE:** ***when a calculation hits a singularity, check whether the corpus's own geometry passes through
+that point by a different route before building a tool to survive it. A divergence in one parametrisation is often a
+coordinate statement — and the programme will usually have a name for the segment where it sits.***
+
+⌗ *The shape is this session's most common: **the obstacle correctly found and incorrectly located** — the class of
+r2677's scope clause and r2681's backlog, arriving this time from the other node.*
+
 ### Revision r2691 — 2026-08-11 (main line). **TWO FINDINGS WITHDRAWN ON c54.211/212 — both a check that was sound about the wrong object.**
 
 **⛔ ⓵ `check_receipt_exit`'s BACKLOG IS EMPTIED.** *r2681 **measured** with `assert|check(`, recorded twelve
