@@ -96,7 +96,7 @@ sources: [chat]
 | `DISPATCHING_COWORK.md` | METHOD | rules / guards / canon | — | — |  |
 | `FOUNDATIONAL_DEPENDENCY_MAP.md` | METHOD | rules / guards / canon | — | — |  |
 | `GEOMETRY_PHYSICS_TAXONOMY.md` | METHOD | rules / guards / canon | — | c54.84 |  |
-| `INGESTION.md` | METHOD | (declared in frontmatter) | — | c54.213 |  |
+| `INGESTION.md` | METHOD | (declared in frontmatter) | — | c54.211 |  |
 | `INTRODUCTION.md` | METHOD | rules / guards / canon | — | c54.118 |  |
 | `JARGON_LEDGER.md` | METHOD | rules / guards / canon | — | — |  |
 | `KICKOFF_CODA_REVIEW.md` | METHOD | A review methodology, not a spent task — Pass A faithful account then STOP; Pass B four questions plus one inward; three verdicts; a finding whose receipt carries no first-hand extract with a locator is structurally void. LOWEST PRIORITY (Daryl, standing): kept where it is, not to be raised again. | — | — |  |

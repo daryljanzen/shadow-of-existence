@@ -146,6 +146,41 @@ sources: [cowork, chat]
 
 
 
+### Revision r2723 — 2026-08-11 (main line). **`PO-6` HAS BEEN CARRYING THE WRONG QUESTION — the floor follows; the real question is spectral.**
+
+**⛭⛭ ⓵ P10's LIMIT IS FAR MORE SPECIFIC THAN "BACK-REACTION".** *Quantizing the scale factor promotes the boundary
+coefficient "from the c-number $1/4$ of the free scale factor to an operator ... whose spectrum straddles the $3/4$
+threshold", acting at the origin as an inverse-square operator.*
+
+    -d^2/dx^2 + c/x^2  on (0,inf):
+      c >= 3/4  ->  LIMIT-POINT   essentially self-adjoint; boundary freedom REMOVED
+      c <  3/4  ->  LIMIT-CIRCLE  a one-parameter family of self-adjoint extensions
+      free value c = 1/4          ->  BELOW the threshold; freedom present classically
+
+**⓶ AND WHAT P10 LEAVES OPEN IS NARROWER THAN THE ROW SUGGESTED.** *`P10_the_straddle_does_not_need_a_floor`: the
+decomposition "needs only that the spectrum of $\hat\Gamma$ meet both sides of $3/4$. **It does not need a lower
+bound**" — the paragraph's two statements being "correct of **DIFFERENT operators**".*
+
+**⛭ ⓷ BUT THE COMPLETE OPERATOR'S FLOOR FOLLOWS FROM r2671.**
+
+    lam*phi:     0.0     0.5     0.9     2.0    10.0
+    truncated  +1.000  +0.500  +0.100  -1.000  -9.000     <- goes negative
+    FULL       +1.000  +0.667  +0.526  +0.333  +0.091     <- positive throughout
+
+⇒⇒ ***$\hat\Gamma=\gamma+(\text{positive})\sum\hat\pi_n^2$ is a sum of squares, hence $\ge\gamma$. **Boundedness
+is answered YES.***
+
+**⓸ SO WHAT REMAINS IS WHERE THE SPECTRUM SITS RELATIVE TO $3/4$** — *whether any sector stays BELOW, since a sector
+below is limit-circle and carries exactly the boundary freedom quantization was supposed to remove. **A spectral
+question, not a boundedness one.***
+
+**⛭ THE RULE:** ***when a row names its remainder in one word, read the paper's own sentence for the MECHANISM.
+"Back-reaction" and "the boundary coefficient becomes an operator straddling $3/4$" are the same fact at
+incomparable resolutions — and only the second tells you what to compute.***
+
+⌗ *Third row this session whose stated remainder was a different question than the one it named: `PO-12` (no
+integrand), `PO-11` (a theorem), `PO-6` (spectral, not boundedness).*
+
 ### Revision r2722 — 2026-08-11 (main line). **ALL SIX CONVERTED — 74/74 session receipts green on main.**
 
 **⌗ r2721 NAMED SIX AND STOPPED.** *Naming without finishing is the pattern being called out all session, so they
