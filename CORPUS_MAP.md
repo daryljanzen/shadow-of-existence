@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2725 — 2026-08-11 (main line). **`L-814`'s NUMBER WITHDRAWN — the comparison was never matched.**
+
+**⛔ THE DEFECT, and it is r2710's.** *The $\Lambda$CDM arm carries **six** free parameters. The CR arm was given
+**two** — $\Omega_m$ and $A_s$ — with $\omega_b$, $\omega_c$, $\tau$ and **$n_s$ held at $\Lambda$CDM's fitted
+values**. **The CR arm was scored on a spectrum whose tilt was fitted for a different model.***
+
+    n_s HELD  (as run)   chi^2 = 1.55e5    threshold 21.5    ->  7200x over
+    n_s FREE             chi^2 = 9.95e3    threshold 16.1    ->   622x over
+    at dn_s = -0.245                                             15.6x removed
+
+⇒ ***A number that moves by more than an order of magnitude under a parameter the comparison should have varied is
+not a measurement of the model. It is a measurement of the constraint.***
+
+**⛔⛔ AND r2724's "INDEPENDENT" CHECK WAS NOT INDEPENDENT.** *It scored the envelope against cosmic variance, got
+the same order, and reported that as confirmation the negative was "the theory speaking and not the pipeline". **It
+held $n_s$ fixed too.** Agreeing to the same order confirmed only that both calculations made the same assumption.*
+
+**⇒ AND THE CATEGORY ERROR THE TILT DOES NOT TOUCH:** *P15's envelope is a damping-tail **MODIFICATION FACTOR**;
+scoring it bin-by-bin treats it as a complete spectrum. **What was tested is "$\Lambda$CDM × CR's damping
+correction"** — a test OF THE CORRECTION, not of CR computing its own spectrum, which at this detail it does not
+do.*
+
+**⌗ WHAT SURVIVES:** *the machinery runs and is instrumented; the floor is measured at $F2=+1114$; and
+$\varphi=\pi$ scores worse than $\varphi=0$ — a **relative** statement between two CR configurations on identical
+footing, unaffected by the mismatch.*
+**⚠ THE ABSOLUTE VERDICT IS NOT ESTABLISHED AND IS NOT TO BE CITED.**
+
+**⛭ THE RULE:** ***a comparison must be able to come out either way before it is run. Ask what the losing side is
+ALLOWED to adjust — and if the answer is "less than the winning side", the result is arithmetic on the constraint.
+An independent check must vary what the original held fixed, or it is the same calculation twice.***
+
+⌗ *cc54 ran the specification exactly and flagged the floor rather than laundering it. **The defect is r2710's.***
+
 ### Revision r2724 — 2026-08-11 (main line). **cc54's FOUR MERGED — and `L-814`'s negative is P15's own envelope scored.**
 
 **⌗ MERGED:** *`L-813` (PO-11 spectrum), `L-814` (PO-10's BIC pair), `L-815` (CRPHI derived $=0$), `L-816` (PO-6's
@@ -168,8 +201,14 @@ units.****
 ⌗ *cc54 measured the instrument floor at $F2=+1114$, **45× too small to absorb it**, and flagged rather than
 laundered it.*
 
-**⛭ THE RULE:** ***when a run returns a large negative, estimate it independently from the theory's own published
-formula BEFORE anything else. If the orders agree the result is the theory speaking and not the pipeline.***
+**⛔⛔ WITHDRAWN AT r2725 — THE COMPARISON IS NOT MATCHED.** *The CR arm was held at $k=2$ with **$n_s$ fixed at
+$\Lambda$CDM's fitted value**; freeing the tilt alone removes **15.6×**. **The number is withdrawn as a model
+comparison.** And the independent check above inherited the SAME defect — it scored the envelope against a
+spectrum whose tilt was not free either, which is why the orders agreed.*
+
+**⛭ THE RULE, AMENDED:** ***estimating a negative independently is right, but an independent estimate that
+shares the original's ASSUMPTIONS is not independent. Agreeing to the same order confirmed only that both
+calculations held the same parameter fixed.***
 
 **⚠ SCOPE, narrower than "CR is ruled out":** *`plik_lite` TT only, no polarisation, no $\ell<30$, no lensing,
 against flat $\Lambda$CDM at $k=6$. **What is established is that the high-$\ell$ envelope P15 states is decisively
