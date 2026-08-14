@@ -27,3 +27,4 @@ sources: [chat]
 - [ ] (430) PO-5 + the constant ledger are ONE QUESTION (c54.216): does the corpus commit that ell_P is a GAUGE? p0 states it; the test is whether any paper treats it as a second scale
 - [ ] (432) PO-6: compute the counterterm basis at SECOND order in the shear -- r2743 established the degeneracy survives to first order and breaks at two gravitons; what the second-order basis CONTAINS is unrun
 - [ ] (433) PO-11: do JanzenGeometricCore / JanzenBoundary already carry the horizon matching P14 cites them for? r2744 named the KIND of problem; whether the two papers supply it is UNCHECKED
+- [ ] (435) P14 EDIT: the join sentence cites JanzenGeometricCore/JanzenBoundary for a horizon crossing neither carries; JanzenSlicing and janzen_circle carry the C-infinity continuation through r=0 (r2745). A citation aimed at the wrong two papers.

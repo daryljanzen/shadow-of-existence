@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2745 — 2026-08-11 (main line). **THE CONTINUATION EXISTS — and P14's join sentence cited the two papers without it.**
+
+**⛔ ⓵ THE CITED PAIR CARRY NO CROSSING.** *`geometric_core` and `boundary`: "across the horizon" 0, "matching" 0,
+"junction" 0, "inner horizon" 0. Their `continuation` hits are the **seam** — signature flips, the Wick rotation.
+**That continuation crosses a signature, not a horizon.***
+
+**⛭⛭ ⓶ BUT THE MACHINERY IS IN THE CORPUS.**
+
+    janzen_circle     Kruskal 20 · Eddington 2
+    slicing_operator  horizon-regular · Painleve 4
+    BH_causality      "regular across" · Painleve 2
+
+**⛭⛭⛭ ⓷ AND THE CIRCLE PAPER CONTINUES THROUGH THIS ROW'S OWN LOCUS.** *"The slicing paper carries the continuation
+… **the one smooth manifold, $C^\infty$ across the locus the chart labels $r=0$, where the signed areal radius
+passes through zero … a branch point and not a barrier**."*
+⇒ ***P14's wall is at that same signed zero. A reader following the citation for the join's machinery was sent to
+the two papers that do not have it.***
+
+**✔ P14 EDITED** *(r2706's rule — the edit is one clause, so it is made and not routed): the geometric half is named
+as done, citing `JanzenSlicing,JanzenCircle`. **17/17 compile.***
+
+**⚠ AND THE LIMIT KEPT IN THE PAPER:** *a classical continuation of the METRIC through $r=0$ is **not** a matching
+of QUANTUM MODES across it — the continuum's stationary states and the wall's zero-mode still have no common time.
+**What closed is the geometric half.***
+
+**⛭ THE RULE:** ***when a paper calls something an undertaking and cites papers for it, check that the cited papers
+contain it. A citation is a claim about where a thing is, and it can be wrong in the direction that makes real work
+look undone — the expensive direction, because nobody re-opens what a paper says is open.***
+
 ### Revision r2744 — 2026-08-11 (main line). **`PO-11`'s JOIN CROSSES THE INNER HORIZON.**
 
 **⓵ P14 GIVES $W$ TWO KINDS OF ZERO, at different places.** *"it vanishes at the horizons ($f=0$)" AND "is odd in
