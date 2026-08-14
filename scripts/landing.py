@@ -68,6 +68,31 @@ def owed_items():
             if l.startswith('- [ ]')]
 
 
+def discharge(needle, by):
+    """mark an owed item DONE.  r2757 -- the half r2735 forgot to build.
+
+    ** r2735 built `OWED.md` because "every register here counts things going away; nothing
+    tracked work a turn PUT THERE."  *** And then built only the APPEND half.  `--owe` adds and
+    nothing ever marks done, so the count grows monotonically BY CONSTRUCTION -- and "the owed
+    list grew again" became a fact about the instrument rather than about the work. ***
+
+      ⛭ ** The irony is exact: ** *** r2735 diagnosed the old registers as one-sided (discharge
+      only) and built the mirror-image defect (creation only).  **A register needs BOTH halves or
+      it is a monotone counter.** ***
+    """
+    if not os.path.exists(OWED):
+        print('  no OWED.md')
+        return
+    lines = open(OWED, encoding='utf-8', errors='replace').read().split('\n')
+    n = 0
+    for i, l in enumerate(lines):
+        if l.startswith('- [ ]') and needle.lower() in l.lower():
+            lines[i] = l.replace('- [ ]', '- [x]', 1) + f'  -> DONE {by}'
+            n += 1
+    open(OWED, 'w', encoding='utf-8').write('\n'.join(lines))
+    print(f"  {n} item(s) discharged by {by}")
+
+
 def record(text):
     rev = subprocess.run(['git', 'rev-list', '--count', 'HEAD'],
                          cwd=ROOT, capture_output=True, text=True).stdout.strip()
@@ -88,6 +113,9 @@ def record(text):
 def main():
     if len(sys.argv) > 2 and sys.argv[1] == '--owe':
         record(' '.join(sys.argv[2:]))
+        return 0
+    if len(sys.argv) > 3 and sys.argv[1] == '--done':
+        discharge(sys.argv[2], sys.argv[3])
         return 0
 
     rs = rows()

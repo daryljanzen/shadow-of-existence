@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2757 — 2026-08-11 (main line). **THE OWED LIST ONLY APPENDED — 19 of 25 were done or duplicate.**
+
+**⌗ THE PROMPT.** *"Note how we grew number of things owed again … we can't pick one and finish it without leaving
+it to grow stale."*
+
+**⛔ THE DEFECT IS THE INSTRUMENT.** *r2735 built `OWED.md` on the finding that "every register here counts things
+going away; nothing tracked work a turn PUT THERE" — **and then built only the APPEND half**. `--owe` adds and
+nothing ever marked done, so **the count grew monotonically by construction**.*
+⇒ ***r2735 diagnosed the old registers as one-sided (discharge only) and built the mirror-image defect (creation
+only). **A register needs both halves or it is a monotone counter.****
+
+**✔ `--done` BUILT, and the backlog discharged against the revisions that did the work.**
+
+    25 items  ->  17 discharged (already done)
+                   2 deduped   (PO-4 stated twice; one PO-10 answered at r2746)
+                   6 GENUINELY OPEN across 4 rows
+
+    PO-4   the two absent su(2) directions
+    PO-6   which operator ordering the corpus commits to  ·  the second-order shear basis
+    PO-10  the published uncertainties  ·  the other three pairs against their receipts
+    PO-11  the mode matching across the locus the geometry already crosses
+    PO-5   nothing owed
+
+**⛭ THE RULE:** ***when a count only goes up, suspect the counter before the work. A monotone metric is not a
+measurement — and the first thing to check about any register is whether anything can ever LEAVE it.***
+
 ### Revision r2756 — 2026-08-11 (main line). **THE LAST DISAGREEMENT CLOSED — r2752 omitted neutrinos.**
 
 **⛭⛭ ⓵ THE RECEIPT'S RADIATION DENSITY INCLUDES NEUTRINOS.**
