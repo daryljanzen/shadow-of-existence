@@ -122,8 +122,9 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-540`** | r2603 | ***the order now recomputes as `grounded` changes*** — and `REACH` is the one axis a human must maintain |
 | **`L-812`** | r2677 | ***HELD — build ONLY when the turnaround-regular result can be made checkable INDEPENDENTLY of the sign it produces (a bracket, a limit, a known case  |
 | **`L-813`** | r2714 | ***next (optional, informative not gating): enumerate the discrete tower as a QNM-grade solve — complex-$\omega$ resonances or a Prüfer count on the t |
+| **`L-814`** | r2719 | ***PO-10's run is discharged; the residual is PO-7's branch selection when CRPHI closes*** |
 
-*9 live rows carry a stated next step; the 9 longest-unworked are shown.*
+*10 live rows carry a stated next step; the 10 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session
