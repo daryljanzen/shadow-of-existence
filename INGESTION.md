@@ -122,7 +122,8 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2707   ---     diagnosis of the deadlock; check_routed_falsehood built.
     r2708-11 PO-10   half 1 is model selection; k=2; threshold dBIC=21.5; deliverable is a PAIR.
     r2712   PO-10   STRUCK -- remainder is a procedure. Table 6, 82%.
-    r2713   PO-6    CLAIMED: is L-543 aimed at the wrong background? r2691 says the tower sits on dS.
+    r2713   PO-6    L-543 WITHDRAWN -- misaimed. The real dark half is BACK-REACTION, P10s own limit.
+    r2714   PO-11   CLAIMED: what does the corpus hold toward a scattering state on the SdS background?
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

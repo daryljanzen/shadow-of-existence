@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2714 — 2026-08-11 (main line). **`PO-11`'s MISSING OBJECT IS ONE LINE FROM THE CORPUS'S OWN SUPERPOTENTIAL.**
+
+**⌗ r2690 LEFT THE ROW NEEDING "not a better mode but a different OBJECT".** *`B3` already derives what builds one:
+"the massless radial Dirac operator carries **superpotential $W=\lambda\sqrt f/r$** — exactly P13's deferred eq",
+with "$W=0$ at every horizon".*
+⇒ ***A radial Dirac operator with a superpotential is a SUSY-QM pair; its partners $V_\pm=W^2\pm dW/dx$ on the
+tortoise line are the **Regge–Wheeler form** — which the corpus has never written (`Regge-Wheeler`, `effective
+potential`: zero occurrences).***
+
+    M=0.12, alpha=1        r        f       W^2       V_+       V_-
+      inner horizon  0.25697  0.00000   0.00005   0.01081  -0.01072
+                     0.40000  0.24000   1.50000   1.19381   1.80619
+                     0.60000  0.24000   0.66667   0.12234   1.21100
+      outer horizon  0.84644  0.00000   0.00000  -0.00094   0.00094
+
+⇒⇒ ***Both partners VANISH AT BOTH HORIZONS and are bounded and non-zero between. On the tortoise line that is a
+barrier with plane-wave asymptotics at both ends — **scattering states are DEFINED**, with the continuum
+normalisation the row asks for.***
+
+**⌗ SO THE DEBT RELOCATES:** *not "construct an object" but the **SPECTRUM** — transmission and reflection across
+that barrier, and whether bound tower plus continuum is complete. **The ordinary Regge–Wheeler problem on SdS**,
+with decades of literature.*
+
+**⛭ THE RULE:** ***when a row needs "a different object", search the receipts for the operator before concluding it
+must be built. A superpotential IS a scattering problem one algebraic step away.***
+
+⌗ *Second time in six revisions that a **missing tool was a missing WORD** — `AIC`/`BIC` at r2709, `Regge-Wheeler`
+here. **A gap in the corpus's vocabulary reads as a gap in the physics**, and both times the gap was only in the
+vocabulary.*
+
 ### Revision r2713 — 2026-08-11 (main line). **`L-543` WITHDRAWN — a withdrawal that reached the claim and not the successor it had spawned.**
 
 **⛔ THE CHAIN.** *r2677 wrote "the tower lives on the LAYER, whose $\sinh^{2/3}$ Ricci scalar RUNS" and
