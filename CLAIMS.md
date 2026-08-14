@@ -83,14 +83,7 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| `corpus/BH_causality_v2.tex` | **54** | c54.207 | `A12` — the trans-Planckian scoping into `sec:problems`, ***with the scope attached*** |
-| `corpus/geometric_core_paper.tex` | **54** | c54.207 | `A11` + `A13` — the frontier datum written as a result, and the de Sitter entropy clause |
-| `corpus/algebroid_paper.tex` | **54** | c54.207 | `A1` — the reason `PO-9`'s ceiling is absent, into the bounded-below passage |
-| `receipts/P01_BH_causality/` | **54** | c54.207 | one new receipt, prefix band **50–79** |
-| `receipts/L175_dimensional_descent/` | **54** | c54.207 | one new receipt, prefix `E50` (band **50–79**) |
-| `corpus/matter_sector_paper.tex` | **54** | c54.207 | `A3`·`A4`·`A5` — the three-bridge ceiling, into `sec:whichthree` |
-| `receipts/L221_quark_lepton/` | **54** | c54.207 | one new receipt, prefix `P14` (the directory's own paper tag) |
-| `receipts/P17_geometric_core_paper/` | **54** | c54.207 | two new receipts, prefix band **50–79** |
+| *(54 holds nothing — c54.207 and c54.208 released here, with the work)* | — | — | *both are in `origin/main`; the protocol is release-on-push and the push has happened* |
 
 > ⌗ **54's rows for c54.198 released here, with the work** (`receipts/L174_general_matter_dynamics/` for `I4`
 > and `corpus/range_paper.tex` for the paragraph the count landed in). *`I1`–`I3` were not touched.*

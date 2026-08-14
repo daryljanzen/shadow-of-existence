@@ -146,6 +146,340 @@ sources: [cowork, chat]
 
 
 
+### Revision r2668 — 2026-08-11 (main line). **FAMILY 6's POINTER WENT STALE A SECOND TIME — and the gate built for it found a third on its first run.**
+
+**⛔ THE SECOND STALENESS, INVISIBLE TO EVERY EXISTING CHECK.** *Family 6 is "**the propagating fermion and gauge
+sector**". Its pointer named struck `L-164` (caught c54.134, repointed to `PO-4`) — and **`PO-11`, "the full
+PROPAGATING spinor field sector", was registered at r2597** while the pointer still read `PO-4`, "the colour and
+isospin structure".*
+⇒ ***The first staleness was DETECTABLE — a struck row. The second was not: `PO-4` is live, so everything passed.
+What went wrong is that the pointer stopped being ABOUT the same thing.***
+
+**✔ `check_family_pointers`** *compares each family's text to its target row's OBJECT for a shared content word —
+and on its **first run** found **family 5** ("the scalar perturbation sector, to a verdict") pointing at `PO-7`,
+when ***`PO-10` is literally "the scalar perturbation sector's stated remainder"***.*
+⇒ ***Three stalenesses across two families: a human found one, the gate found the other. Both corrected.***
+
+**⛭ THE RULE:** ***a pointer can rot without either end changing — when a NEW row is created that is more about the
+family than the old target was. Check pointers for APTNESS, not just liveness: "the row still exists" and "the row
+is still the right one" are different questions, and only the first has ever been checked.***
+
+⚠⚠ *The gate **cannot be seed-tested on a corrected row**: correction notes name many `PO-` references, so `any()`
+always matches. It proved itself once, on family 5, and is a **report** for corrected rows — recorded in the gate
+rather than dressed as a pass.*
+
+⌗ *Also r2668: `check_kind`'s blind spot from r2667 was **documented rather than gated** — the distinguishing
+feature of a rediscovery is whether the SEARCH covered the section, which is a fact about the reading and not about
+the artefact. Building a mechanism for it would repeat r2657's error.*
+
+### Revision r2667 — 2026-08-11 (main line). **P14 ALREADY WALLS TWO ROUTES — and r2666 rediscovered one of them.**
+
+**⛔ THE CORRECTION.** *r2666 derived that a flat bundle's holonomy cannot supply a force and logged the turn
+`COMPUTED`. **P14 states it directly:** "a deformation within it **changes which flat bundle one has and not whether
+there is a field strength**; obtaining curvature means leaving the flat locus, and **no holonomy datum can take one
+off it, because holonomy is precisely the complete invariant a flat connection has**."*
+⇒ ***The derivation was independent and right; the finding was not new. Entry reclassified **COMPUTED → LATENT**.***
+
+**⛭⛭ AND P14 GOES FURTHER.** *A Yang–Mills term needs "**a dimensionless coupling that a single length cannot
+build**", the substrate's one invariant $\Lambda=3/\alpha^2$ having energy $\hbar c/\alpha$ that "**sits some
+forty-one decades below the strong scale, and in the infrared rather than the ultraviolet direction**".*
+✔ ***Verified independently: 41.2 decades, below.***
+
+**⓷ THE VERDICT IS SHARPER THAN "OPEN":** *"the position is not that the coupling is unbuilt but that **a coupling
+is not the kind of thing a holonomy supplies**".*
+**⓸ AND THE RESIDUE IS NAMED EXACTLY:** *"the isometry route is walled separately, and the honest statement is that
+**no third mechanism has been named**".*
+⇒⇒ ***So `PO-5`'s real content is not "find the coupling here" — two routes are walled — but the open question
+whether a THIRD mechanism exists.***
+
+**⛭ THE RULE:** ***before deriving, read forward from the sentence that raised the question. A correct independent
+derivation of a stated result is indistinguishable from progress at the moment you finish it — and the tell is not
+in the receipt but in whether you looked.***
+
+⌗ ***`check_kind` has a blind spot this exposes: it verifies that a `COMPUTED` turn computed, not that the
+computation was needed.***
+
+### Revision r2666 — 2026-08-11 (main line). **`PO-5`'s COUPLING SETTLED NEGATIVELY — it cannot come from the colour bundle.**
+
+**⌗ THE TWO FACTS THAT LOOKED LIKE A TENSION.** *P14: "the bundle is flat … **the geometry quantises and does not
+couple**" — and also "the residue pairing the horizon roots' surface gravities carry **has a holonomy about the
+branch points**", which "**closes the Weyl group of the substrate's own complexified isometry algebra**".*
+⇒ ***Not a tension: a flat bundle over a PUNCTURED base carries non-trivial holonomy about the punctures while its
+curvature vanishes identically. That is why the row survived — the group is real, so a coupling felt available.***
+
+**⛭⛭ BUT HOLONOMY IS NOT CURVATURE.** *For $A=c\,T\,d\varphi$:*
+
+    F_{r,phi} = d_r A_phi - d_phi A_r = 0     A ^ A = 0     =>  F = 0 everywhere off the puncture
+    holonomy  = exp(2 pi i c)                 non-trivial;  generates Z_3 at c = 1/3
+
+⇒⇒ ***A force needs $F\ne0$ (Lorentz: $f=qFv$). $F=0$ everywhere the particle can be, so there is **no force at any
+separation** — what survives is an Aharonov–Bohm PHASE: interference, not attraction.***
+
+**⌗ SO IT IS NOT "not yet extracted" BUT CANNOT.** ***The same flatness that makes the selection rules EXACT makes a
+force IMPOSSIBLE. One fact read twice.***
+
+**⛭ THE RULE:** ***when a construction delivers a group but not a force, check whether the thing delivering the
+group is the same thing forbidding the force. If it is, the question is settled rather than open — and a row reading
+"the coupling remains" is asking for something its own mechanism excludes.***
+
+⌗ *A determinate negative that points: **a coupling, if the programme has one, must come from a structure other than
+the colour bundle**.*
+
+### Revision r2665 — 2026-08-11 (main line). **THE GAP SIZED — ~19% down at the peaks, so the deviation is BROAD rather than tail-confined. Stamp now shows trajectory.**
+
+**⌗ THE RATE THAT SETS THE GAP IS BUILT FROM THE THING THAT DIFFERS.** *P15 gives the decay rate as
+$k^2/(3\mathcal H)$, and separately "**the radiation-free rate near recombination is $13\%$ below the
+radiation-included one there**".*
+⇒ ***So the peak-region decay is not common to the two cosmologies: at fixed $k$, CR's potential decays ~15%
+faster.***
+
+**⚠ THE ESTIMATE, WITH ITS MODEL STATED:** *a $\Lambda$CDM decay of factor 2 becomes $2^{1/0.87}=2.22$ ⇒ surviving
+$\Phi$ ratio **0.902**, **power ratio ≈0.813** at the peaks.*
+⛔ ***Not a derivation — the compounding assumes a decay form the paper does not state. What IS the paper's: the
+rate, the 13%, the factor of two. The point is to say what SIZE the gap is, not to fill it.***
+
+**⛭ THE RULE:** ***when a gap is named, estimate it before leaving it. A gap with a size tells you whether the
+unrun calculation would change a conclusion; a gap without one is indistinguishable from a small correction and gets
+deprioritised by default.***
+
+⚠⚠ *A **second** near-coincidence in three revisions — **0.813 against 0.823** — named on sight, as r2663's $1/10$
+was.*
+
+⇒⇒ ***THE PREDICTED DEVIATION IS BROAD: ~7.5% at low $\ell$, ~19% at the peaks, 18% at $\ell_D$, 54% at
+$2\ell_D$. That is where a likelihood confrontation would bite — the first such statement the chain supports.***
+
+⌗ *And `scripts/stamp.py` now reports **trajectory** — table 34 → 17 (50% cleared), narrowings, receipts — after
+Daryl: "**Make sure I see the progress and where we are every turn. That's the point.**"*
+
+### Revision r2664 — 2026-08-11 (main line). **THE END-TO-END NUMBER — and the sentence after the one r2661 quoted corrected its own claim.**
+
+**⛔ THE OVER-REACH.** *r2661: "$\Phi$ is constant on the expansion leg … **with no further evolution**".*
+⇒ ***P15 owns the scope in the very next paragraph: "**One scope qualification is owed here** … the constancy
+argument runs on $\Phi''+3\mathcal H\Phi'=0$, which is the ***super-horizon*** equation: it drops the $k^2\Phi$
+term. For the acoustic modes—inside the horizon at the onset and remaining so—**the potential does decay on the
+observable leg, by a factor of order two across the first few peaks**."***
+⌗ *With the discriminating fact: "**The decay is not a radiation effect: zeroing the radiation fractions makes it
+*larger***", the rate being $k^2/(3\mathcal H)$.*
+⇒ ***r2632's rule — check the sentence AFTER the one you quoted — caught this line a second time, and on a claim it
+had already shipped.***
+
+**⛭⛭ THE NUMBERS THE CHAIN GIVES:**
+
+    LOW-ELL   LCDM 4% above asymptote at recombination, CR at it
+              power ratio (1/1.04)^2 = 0.925          =>  7.5% DEFICIT
+    HIGH-ELL  C^CR/C^LCDM = exp[-(l/l_D)^2 (r^2-1)],  r = 1.093
+              0.953 at 0.5 l_D    0.823 at l_D    0.645 at 1.5 l_D    0.459 at 2 l_D
+
+⇒⇒ ***And the GAP is named: the acoustic peaks between them, where $\Phi$ decays by a factor of order two and the
+decay is $k$-dependent.***
+
+**⛭ THE RULE:** ***a chain of results inherits the SCOPE of its weakest link, and the scope is usually written down
+somewhere the chain did not look. Before reporting an end-to-end number, find where the corpus qualifies each step —
+the qualification will tell you which part of the range the number is actually about.***
+
+⌗ *And the correction improves `PO-10`: **r2646's gate is no longer a category but a mechanism** — the potential's
+decay across the peaks is $k$-dependent and unrun.*
+
+### Revision r2663 — 2026-08-11 (main line). **THE SUPER-HORIZON TRANSFER CLOSES — $\Phi_{\rm exp}(k)=\tfrac9{10}\Phi_i(k)$, scale-invariantly.**
+
+**⌗ THE LAST PIECE: the collapse leg's evolution UP TO the branch point.** *`sec:envelope`'s closed form gives it —
+at $x=k\eta/\sqrt3\to0$:*
+
+    Phi -> Phi_i   EXACTLY, for every k
+    Phi/Phi_i = 1 - x^2/10 + x^4/280 + ...   so the departure is O(k^2 eta^2)
+
+⇒ ***which is r2662's geometric statement ($k\ll aH$ at the branch point) restated analytically.***
+
+**⛭⛭ SO WITH r2661's JOIN:** ***$\Phi_{\rm expansion}(k)=\tfrac9{10}\,\Phi_i(k)$ for every $k$ — no
+$k$-dependence in the ratio.***
+⇒ ***The branch point does not FILTER. Whatever $k$-dependence the expansion leg carries is inherited from
+$\Phi_i$, not manufactured at the crossing — which is P15's own "**transmits that content rather than imprinting
+one of its own**", argued there from a degeneracy and **now derived from the driving's own limit**.***
+
+**⚠⚠ A NEAR-MISS NAMED BEFORE IT BECOMES A CLAIM.** *The join is $1-\tfrac1{10}$; the series' leading correction is
+$-\tfrac{x^2}{10}$. **Same number, different origin** — $(5+3w)/(3+3w)$ at two equations of state, against the
+expansion of $(\sin x-x\cos x)/x^3$.*
+⇒ ***Two $1/10$s in one derivation is exactly the shape that becomes a spurious "deep connection" three revisions
+later, so it is recorded as a coincidence at the moment it appears.***
+
+**⛭ THE RULE:** ***when the same number arises twice in one derivation from different sources, say so in the
+receipt. A coincidence you name is inert; a coincidence you leave is a claim waiting for someone to make it.***
+
+⚠ *Scalar super-horizon only. **The acoustic evolution from the branch point to recombination is what the
+instrument already runs; joining the two as a single calculation is unrun.***
+
+### Revision r2662 — 2026-08-11 (main line). **r2661's CAVEAT NAMED AN EMPTY SET — the $9/10$ join is unrestricted.**
+
+**⌗ THE CAVEAT.** *r2661 closed: "**super-horizon only; modes inside the horizon at the branch point are not
+covered**."*
+⇒ ***There are no such modes. P15: "the branch point lies at the far end of the same rising branch, where $2M/r$
+carries $aH$ up without bound and the comoving horizon to zero, so there ***every*** mode is outside it."***
+
+**⌗ VERIFIED FROM THE CORPUS'S OWN HORIZON FUNCTION:**
+
+    (rH)^2 = (1-f) + A/r^2 = A/r^2 + 2M/r + r^2/alpha^2   ->  +infinity  as r -> 0+
+
+⇒ *so $1/(aH)\to0$ and every finite $k$ satisfies $k\ll aH$ — **and the term ordering matches the paper's**,
+$A/r^2$ (radiation) beating $2M/r$ (mass) while $r^2/\alpha^2$ (substrate) vanishes.*
+⇒⇒ ***$\mathcal R$'s conservation applies to every scalar mode at that locus. The join is UNRESTRICTED.***
+
+**⚠⚠ AND THE TRAP WAS ONE THE PAPER ITSELF FELL INTO.** *The SEAM and the BRANCH POINT give **opposite** answers —
+at the seam "the acoustic modes are **already within** the comoving horizon" — and P15 records "**a distinction six
+sentences of this paper previously ran together, corrected at r2501+c54.197 with the inversion re-derived from the
+metric function rather than asserted**".*
+⇒ ***A caveat written at the wrong locus would have been that same error, committed by the line that inherited the
+correction.***
+
+**⛭ THE RULE:** ***a caveat is a claim about a SET, so check the set is non-empty before shipping it. And when two
+loci in a construction give opposite answers, name which one you mean every time — a corpus that had to correct that
+confusion six times will not protect you from making it a seventh.***
+
+### Revision r2661 — 2026-08-11 (main line). **THE BRANCH-POINT JOIN COMPUTED — exactly $9/10$, and applied once where $\Lambda$CDM spreads it over equality.**
+
+**⌗ THE DEBT AND ITS MATCHING CONDITION, one sentence apart in P15.** *"**a computed transfer function across the
+branch point is not yet in hand**" — and "**the branch point TRANSMITS that content rather than imprinting one of
+its own**".*
+⇒ ***"Transmits" is a CONSERVATION statement. What is conserved across a change of background content on
+super-horizon scales is the comoving curvature perturbation $\mathcal R$ — so the join is a CHANGE OF VARIABLE, not
+a new dynamics.***
+
+**⛭⛭ AND THE VALUE FOLLOWS IN CLOSED FORM.** *$\mathcal R/\Phi=(5+3w)/(3+3w)$ gives $3/2$ for radiation, $5/3$ for
+matter:*
+
+    Phi_expansion / Phi_collapse  =  (3/2)/(5/3)  =  9/10,  exactly
+
+**⛭⛭⛭ AND CR APPLIES IT ONCE WHERE $\Lambda$CDM SPREADS IT.**
+*· **$\Lambda$CDM**: the potential decays through equality, "**still some four per cent above its asymptote at
+recombination**", and ***that residual decay sources an early ISW term***;*
+*· **CR**: the content changes AT the branch point and the expansion leg is "**matter-dominated to nine orders**",
+so the potential sits ***at its asymptote from the start*** and there is ***no early ISW to source***.*
+⇒⇒ ***Same factor, different route — and the 4% is the observable difference the paper had already located without
+connecting it to the join.***
+
+**⌗ SO $9/10$ IS NOT A CORRECTION BUT A BOUNDARY CONDITION.** *$\Phi$ is constant on the expansion leg, so it holds
+from the branch point to recombination with no further evolution. **The collapse-leg half is `sec:envelope`'s closed
+form; the expansion-leg half is a constant.***
+
+**⛭ THE RULE:** ***when a paper says a boundary "transmits", read it as a conservation law and ask WHICH quantity.
+A verb describing what a boundary does to content is a matching condition wearing prose — and the computation it
+licenses may be a change of variable rather than a build.***
+
+⚠ *Super-horizon only; sub-horizon modes and the dynamical crossing stay deferred.*
+
+### Revision r2660 — 2026-08-11 (main line). **"BESPOKE" MEANS TWO BACKGROUNDS JOINED AT THE BRANCH POINT — and the apparent contradiction was the structure.**
+
+**⚠ THE APPARENT CONTRADICTION.** *`sec:envelope`'s driving uses $4/\eta$ friction — the **radiation-dominated**
+coefficient ($a\sim\eta$); a matter-dominated background gives $8/\eta$. So the perturbation sector appeared to
+assume radiation while the debt asks for a radiation-free background.*
+⇒ ***It does not. The paper scopes it in the same sentence: "**On the radiation-dominated collapse leg** the
+potential obeys". **Sixth time this session the paper was more careful than the first pass.***
+
+**⛭⛭ AND THE RESOLUTION IS THE FINDING.** *The two legs carry different content by construction: "there the
+self-gravitating excursion sets **the L2 rate radiation is included in**, here the diffuse plasma rides **the L1
+foliation radiation is excluded from**".*
+⇒⇒ ***So `PO-12` is not one background with a modified $H(a)$. It is TWO: a radiation-dominated collapse leg
+supplying the closed-form driving, joined at the branch point to a radiation-free expansion leg carrying the
+observable history.***
+
+**⌗ AND THE PAPER STATES THE TRANSFER'S CONSISTENCY RULE BEFORE THE TRANSFER EXISTS:** *"**This is forced**: it is
+the same L1 rate that dissolves the Hubble tension, and **one may not take the rate radiation-free for the peak
+spacing and radiation-included for the diffusion**."*
+
+**⛭ THE RULE:** ***when a computation seems to contradict a stated commitment, the scoping clause is usually one
+sentence away — and the scope is often the architecture. Here "on the collapse leg" was not a qualification on the
+equation; it was the two-leg structure announcing itself.***
+
+⌗ ***The debt at its sharpest: not "build a transfer" (one exists, validated) and not "swap $H(a)$" (understates
+it), but **run the existing hierarchy across a two-leg background, with the L1 rate on the expansion leg for every
+observable at once**. Both legs' pieces are separately in hand; **the join is untouched**.***
+
+### Revision r2659 — 2026-08-11 (main line). **BOTH OF r2658's "MISSING" PIECES ARE BUILT — the instrument section names them together.**
+
+**⛔ THE CORRECTION.** *r2658 marked the visibility function and the $k\to\ell$ projection **"⛔ NOT located"** after
+grepping every paper for `visibility function`, `line-of-sight`, `spherical Bessel`.*
+⇒ ***Both are built. `sec:instrument`: "carried by **a Boltzmann transfer built for this programme** … a full
+photon hierarchy with polarisation, second-order tight coupling, massless neutrinos, and **a Peebles recombination
+history**; **the line-of-sight source carries the monopole with the potential, the Doppler term, the integrated
+Sachs--Wolfe term, and the quadrupole with its own projection kernel** $(j_\ell+3j_\ell'')$."***
+
+**⌗ AND IT IS VALIDATED, NUMBER BY NUMBER:** *peaks and troughs to $\le0.5\%$ across $P_1$–$P_4$; $x_e(z)$ and its
+derivative to $\pm1\%$ **through the visibility peak**; matter–radiation equality to $0.02\%$; the transfer
+function to $<1\%$ below $k=0.02\,$Mpc$^{-1}$ — with its own receipts.*
+
+**⛭ THE RULE:** ***a component is named by its ROLE in the section that builds it, and by its NAME only in the
+sections that use it. Searching for the name finds the users; to find the builder, search for what it would have to
+CONTAIN — or read the section whose title says "what it is validated against".***
+
+⇒⇒ ***And the correction improves the row rather than just fixing the line: `PO-12`'s debt is now **the BACKGROUND
+the instrument runs on**. The paper calls it "the full **flat-projection** transfer"; the debt names "the
+**radiation-free** background"; and the corpus states exactly what differs — "**the whole difference is carried by
+$H(a)$**". Far smaller than "a genuine build".***
+
+⚠ *Not that swapping $H(a)$ is the whole of it — **that cancellation is established for the diffusion-length ratio,
+and whether it extends to every source term in the hierarchy is the next question**.*
+
+### Revision r2658 — 2026-08-11 (main line). **`PO-12`'s step ② IS SIX-EIGHTHS BUILT — a debt framed as "a genuine build, not a plug-in".**
+
+**⌗ ENUMERATING WHAT A $k\to C_\ell$ TRANSFER NEEDS:**
+
+    ✔ the driving in closed form   Phi = 3(sin x - x cos x)/x^3   -- VERIFIED here, not taken
+    ✔ source removal, exact        Theta'' + (k^2/3)Theta = 0
+    ✔ amplitude at horizon entry   "fixed by the construction rather than fitted"
+    ✔ the sound horizon            r_s = 146.4 Mpc
+    ✔ the diffusion scale          10.8% longer on the radiation-free rate
+    ✔ the baryon loading           R_b = 0.60
+    ⛔ the visibility function      not located
+    ⛔ the absolute k -> l integral
+
+**⛭⛭ AND THE PROJECTION IS CALIBRATED:** *"$\ell_*=D_M/r_s=302.2$ against the measured $301$" — the map's one
+CR-specific input, **within 0.4%**.*
+
+**⇒⇒ ⛭⛭⛭ AND A $C_\ell$ RATIO WITH NO FREE PARAMETER IS ALREADY IN THE PAPER:**
+*$C_\ell^{\rm CR}/C_\ell^{\Lambda\rm CDM}=\exp[-(\ell/\ell_D)^2(r^2-1)]$, $r=1.093$ — recomputed here as
+**0.823 against its stated 0.82**.*
+⇒ ***Which is exactly the transfer-free shape r2647 named: SAME multipole, two rates. The route was not merely
+available — it had been walked at $C_\ell$ level, and no register said so.***
+
+**⛭ THE RULE:** ***when a paper calls a debt "a genuine build", enumerate the build's PARTS before believing the
+framing. A debt is described by whoever felt it hardest — and by the time it reaches a register, the parts that have
+since been built are still inside the description.***
+
+⌗ *What remains is the **absolute spectrum**: the visibility-weighted line-of-sight integral turning $\Theta(k)$
+into $C_\ell$ itself rather than into a ratio. ***The bespoke part is the physics, and the physics is built.***
+⌗ *And the narrowing propagates: `PO-10`'s gate now holds on **shape** — its odd/even pattern needs the absolute
+spectrum; anything expressible as a ratio at fixed $\ell$ does not.*
+
+### Revision r2657 — 2026-08-11 (main line). **A COORDINATION PROTOCOL BUILT AND REMOVED IN ONE REVISION — the channel already existed.**
+
+**⛔ THE OVER-BUILD.** *Told to parallelise, this line surveyed the collision surface — **every one of the last
+fourteen turns touched `BOARD.md`, `CORPUS_MAP.md`, `LATENT_HISTORY.txt`, `THE_WISDOM_LEDGER.md` and every rebuilt
+PDF** — and built `scripts/claim.py`: a claim file, a per-file-class merge rule, a conflict taxonomy.*
+
+**⇒ THREE CORRECTIONS, EACH DELETING WORK:**
+*· **"54 can't write."** ⇒ ***the entire collision analysis was about a write path that does not exist***;*
+*· **"And I can tell 54 whatever we are taking."** ⇒ ***the claim mechanism was solving relay, which a human in the
+loop already does***;*
+*· **"Or you can just leave your own status updates in the anti-collision register. On GitHub."** ⇒ ***the channel
+already existed. It is the repo. 54 reads it.***
+
+**⛭⛭ THE RULE:** ***before building a coordination mechanism, establish that both parties can actually collide. A
+survey of what a turn TOUCHES answers a question about writes — and this line ran that survey without checking
+whether the other node writes at all. The collision surface was real and irrelevant, which is the most convincing
+kind of wrong.***
+⌗ ***And the cheaper lesson underneath: when two nodes read the same artefact, they need a LINE in it, not a
+protocol around it.***
+
+✔ *What survived is the part that is genuinely about a **read-only** node: `INGESTION.md`'s **re-derive, do not
+transcribe** — a folded finding gets this line's receipt, so it must be workable from the corpus without 54's
+message, or it is ***a transcription with a checkmark***. Plus the register at the foot of that file, updated each
+turn.*
+
+⌗ *Also fixed: `rank_open` was still ranking **`PO-9` and `PO-3`**, answered twelve revisions earlier — an answered
+row at the top of a queue two nodes are about to draw from.*
+
+**⇒ THIS LINE IS TAKING `PO-12`**, *rank #1: step ① is in `sec:envelope` and step ② unblocks **both** of `PO-10`'s
+runs.*
+
 ### Revision r2656 — 2026-08-11 (main line). **`check_kind` — the failure predicted for another node was already in this line's own log, three times. GREEN LIGHT.**
 
 **⌗ THE PREDICTION, from `THE_HANDOFF` one revision earlier.** *"**A 54 marking its own turns will mark a reading

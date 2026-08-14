@@ -86,4 +86,16 @@ r2653  INSTRUMENT  scripts/stamp.py: one command emits the header, so it cannot 
 r2654  INSTRUMENT  THE_HANDOFF: the signal turned (C5>L4); three hand-maintained judgements named as the risk
 r2655  INSTRUMENT  the chart hid plateaus -- appended only on moves; NARROWED added as the depth counter
 r2656  INSTRUMENT  check_kind: found 3 mismarked COMPUTED turns and a duplicate row in my own log
+r2657  INSTRUMENT  claim.py built and removed in one revision; the repo already coordinates. INGESTION + register
+r2658  COMPUTED    PO-12 six-eighths built; the driving verified, the C_l ratio recomputed as 0.823 vs 0.82
+r2659  LATENT      sec:instrument already carries visibility AND projection; r2658 searched by name and missed it
+r2660  COMPUTED    the driving friction is 4/eta (radiation) vs 8/eta (matter); the two legs differ by construction
+r2661  COMPUTED    the branch-point join: R conserved => Phi_exp/Phi_coll = 9/10 exactly, applied once
+r2662  COMPUTED    (rH)^2 diverges at the branch point => every mode outside; r2661s caveat was empty
+r2663  COMPUTED    Phi -> Phi_i at the branch point for every k; super-horizon transfer closes at 9/10
+r2664  COMPUTED    end-to-end: 7.5% low-ell deficit, 0.823 at l_D, 0.459 at 2 l_D; the peaks are the gap
+r2665  COMPUTED    peak-gap estimate ~0.813; CRs potential decays 15% faster because the rate carries 1/calH
+r2666  LATENT      [reclassified r2667: P14 states this directly -- derivation independent, finding not new] flat connection: holonomy non-trivial while F=0
+r2667  LATENT      P14 walls holonomy AND isometry; 41.2 decades verified; no third mechanism named
+r2668  INSTRUMENT  family 6 stale AGAIN (PO-4 -> PO-11); the new gate found family 5 stale too (PO-7 -> PO-10)
 c54.208  INSTRUMENT  ran r2656's own rule against myself: L-535 is one instance not a class, and the control found check_receipts_run green on a 294-commit-old cache while 23 receipts fail

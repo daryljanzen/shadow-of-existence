@@ -26,6 +26,22 @@ revision which imports `numpy` or `sympy`, or calls one of them.  ** Not a proof
     is a record of what was believed at the time and editing it would destroy the only evidence that this
     drift happens. ***
 
+⚠ ** A BLIND SPOT, NAMED r2667 AND DELIBERATELY NOT GATED r2668. **  This gate verifies that a `COMPUTED`
+turn COMPUTED something.  *** It cannot verify the computation was NEEDED. ***  r2666 derived, correctly
+and independently, a result P14 states directly -- and passed here, because the receipt does compute.
+
+  ** r2668 tried to gate it and stopped. **  The tell tried was "the receipt quotes the paper stating its
+  own conclusion", and it fires on five receipts of which the two inspected are ** legitimate **:
+  `P03_locus_sweep` establishes identities P3 states only CONDITIONALLY, and
+  `P14_no_choice_of_group_works` exposes a silent modelling assumption.
+
+  ⇒ *** The distinguishing feature of a rediscovery is not what the receipt quotes but whether the
+      SEARCH covered the section the conclusion lands in -- which is a fact about the reading, not about
+      the artefact, and nothing on disk records it. ***
+  ⌗ ** So this is a DISCIPLINE and not a gate, and it has a rule (r2667): ** *** before deriving, read
+    forward from the sentence that raised the question. ***  Building a mechanism for it would repeat
+    r2657's error -- a protocol around something a line in a file already handles.
+
     python3 corpus/check_kind.py
 
 Written r2656.  Stated for reversal.
