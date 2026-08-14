@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.212 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**7 open QUESTIONS · 1 open WORK rows · 1 HELD** *(288 struck of 297 registered).*
+**8 open QUESTIONS · 1 open WORK rows · 1 HELD** *(288 struck of 298 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -26,6 +26,7 @@ sources: [cowork]
 | **`L-202`** | OPEN | FOLDED r2378 — p0 `sec:frontiers` item 4, unregistered. The phase structure at the seam. The everywhere-real claim is established for the substrate and for the seam as a geometric object; the hypothesised phase structure at the seam relative to trajectories is… | p0 `sec:frontiers` item 4 | narrowed twice, still open and still do-not-assert both ways · the live question is now: does a MASSIVE trajectory carry a phase? — the null ones are … |
 | **`L-221`** | OPEN | REGISTERED r2378 by the observer line's `ARC 14` step-② fold — `PROTECTED_OPEN`'s `PO-5`, which had NO register row at all. The quark/lepton split, and what a baryon IS at the particle level — the five multiplets, and which carries the colour $\mathbf3$. A PRO… | `PROTECTED_OPEN` `PO-5` · `THE_PLAN` standing item ② | the question is INVERTED r2526: not "is there an $R$-odd operator?" but what BRIDGE from grading to field exists that is not "be a kernel"? — the kern… |
 | **`L-540`** | — | REGISTERED r2603 — `THE_PRIORITY`: how the open work is ranked, IMPORTED from the predecessor rather than invented. `regen_board.score` has always been `grounded × informs`, with the board's own header "ordered by how grounded and how informative". AND APPLYIN… | `THE_PRIORITY.md` · `scripts/rank_open.py` | the order now recomputes as `grounded` changes — and `REACH` is the one axis a human must maintain |
+| **`L-813`** | — | REGISTERED r2674 — cc54 DELIVERED `PO-11`'s OWED SPECTRUM (56's r2714 entry point, and it UNGATES the propagating-fermion sector). 56 routed it: B3's superpotential $W=\lambda\sqrt f/r$ ($W=0$ at every horizon) makes the massless radial Dirac operator a SUSY-Q… | `receipts/L813_po11_dirac_barrier_spectrum/S1…` · `L-175`/family-6 · `PO-11` · B3 | next (optional, informative not gating): enumerate the discrete tower as a QNM-grade solve — complex-$\omega$ resonances or a Prüfer count on the true… |
 
 ## ⏸ HELD BY DARYL — answered, not waiting
 
