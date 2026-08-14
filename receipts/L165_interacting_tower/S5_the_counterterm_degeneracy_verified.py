@@ -1,5 +1,33 @@
 #!/usr/bin/env python3
-"""S5 -- c54.210's counterterm degeneracy re-derived here, and its SCOPE shown necessary rather than
+"""S5 -- ⛔⛔ **THE SCOPE CLAUSE IS WITHDRAWN, r2691.**  The degeneracy stands and is STRONGER; the
+"scope is necessary" half verified the WRONG OBJECT.
+
+** WHAT WENT WRONG, and it is inherited rather than invented. **  This receipt wrote "the tower does not
+live on the substrate; it lives on the layer" and computed the Ricci scalar of
+$a\\sim\\sinh^{2/3}(3Ht/2)$, finding it RUNS.  *** That is P15's OBSERVABLE LAYER.  P10's free tower lives
+on P10's own slicing, stated one sentence into its section: "its closed synchronous slicing is the
+evolving round three-sphere of radius $a(T)=\\alpha\\cosh(T/\\alpha)$ in cosmic time $T$." ***
+
+  ** Verified here: ** closed FRW with $k=+1$ and $a=\\alpha\\cosh(T/\\alpha)$ gives
+  $R=6(\\ddot a/a+(\\dot a/a)^2+1/a^2)=\\mathbf{12/\\alpha^2}$ -- ** CONSTANT, exactly de Sitter, no $T$
+  dependence at all. **
+
+  ⇒ *** So the correction makes `L-543` STRONGER, not weaker: the counterterm-basis degeneracy holds on
+      the very background the free tower uses.  This receipt UNDERSTATED it by appealing to a nearby
+      object. ***
+  ⌗ ** And the real limit is one P10 already names: ** "the free tower above evolves on $a(T)$ as a FIXED
+    CLASSICAL background ... the coupling question is what happens once the scale factor is itself
+    quantized and back-reacts."  *** A counterterm basis is a statement about a class of FIXED
+    backgrounds; in the coupled sector there is none to state it on. ***
+
+  ⚠ ** THIS LINE'S SHARE OF THE ERROR: ** *** r2677 wrote "the scope is necessary, CHECKED rather than
+    assumed" -- and the check was sound about the $\\sinh$ object while verifying the wrong one.  A check
+    can be sound and still verify the wrong object; re-deriving a claim does not re-derive its
+    REFERENT. ***  Found by cc54 at c54.211, confirmed here.
+
+--- ORIGINAL DOCSTRING, RETAINED ---
+
+c54.210's counterterm degeneracy re-derived here, and its SCOPE shown necessary rather than
 cautious: the substrate's invariants are one functional, and the layer's curvature runs.
 
 ** WHAT 54 CLAIMED (c54.210), folded per `INGESTION.md` -- re-derived, not transcribed. **  p0: "** every
@@ -106,7 +134,10 @@ def main():
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print("  VERDICT: ** both halves hold -- the degeneracy is exact, and the scope is necessary. **")
+    print('  ⛔⛔ THE SCOPE HALF IS WITHDRAWN r2691.  ** The degeneracy stands and is STRONGER. **')
+    print('  P10\'s own slicing is a(T) = alpha cosh(T/alpha), closed FRW k=+1, giving R = 12/alpha^2')
+    print('  -- ** CONSTANT, exactly de Sitter. **  The sinh object computed below is P15\'s OBSERVABLE')
+    print('  LAYER, not P10\'s slicing.  *** A check can be sound and still verify the wrong object. ***')
     print('  ⓵ ** At D=4,5,6 every quadratic invariant is a RATIONAL CONSTANT times alpha^-4. **  So the')
     print('     three quadratic counterterms and the volume term are ** four multiples of one')
     print('     functional **: a divergence of any degree needs ONE counterterm where a generic theory')

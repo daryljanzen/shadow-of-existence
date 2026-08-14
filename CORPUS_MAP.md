@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2691 — 2026-08-11 (main line). **TWO FINDINGS WITHDRAWN ON c54.211/212 — both a check that was sound about the wrong object.**
+
+**⛔ ⓵ `check_receipt_exit`'s BACKLOG IS EMPTIED.** *r2681 **measured** with `assert|check(`, recorded twelve
+receipts, then wrote `CAN_EXIT` to also match `^\s*raise\b` — **and never reconciled the two**. Verified here: all
+twelve satisfy the gate's own predicate, using the corpus's idiom `if _fail: … raise SystemExit(1)`.*
+⇒ ***The gate shipped GREEN carrying a list its own predicate contradicts.***
+⌗ *And cc54 did not stop at the predicate: they forced each verdict false (**12/12 rc=1**) and seeded two with real
+defects. Reproduced here on the flags this line could locate, including `P15_expansion_law`.*
+
+**⛔ ⓶ r2677's SCOPE CLAUSE IS WITHDRAWN.** *It computed the Ricci scalar of $a\sim\sinh^{2/3}(3Ht/2)$ — **P15's
+observable layer**. P10's slicing is $a(T)=\alpha\cosh(T/\alpha)$; closed FRW $k=+1$ gives ***$R=12/\alpha^2$,
+CONSTANT — exactly de Sitter***.*
+⇒ ***The correction makes `L-543` STRONGER: the degeneracy holds on the very background the free tower uses, and
+r2677 understated it by reaching for a nearby object. The real limit is one P10 already names — "the free tower
+evolves on $a(T)$ as a **fixed classical background** … the coupling question is what happens once the scale factor
+is itself quantized and back-reacts".***
+
+**⛭ cc54's METHOD POINT, WHICH IS THE KEEPER:** ***"seed-testing a gate proves it can fire; it does not verify any
+particular firing. A gate's true positives need their own check, and a list recorded as a backlog is a set of
+firings nobody re-ran."***
+
+**⛭⛭ THE RULE:** ***a gate's FIRINGS are claims and need receipts of their own. "Seed-tested clean → 1 → 0"
+licenses the gate, not its output — and a backlog is the most dangerous form of output, because it looks like work
+queued rather than a claim unverified.***
+
+⌗ *Both errors are this line's, and both are the same shape: **a check that was sound about the wrong object**.
+Re-deriving a claim does not re-derive its referent.*
+
 ### Revision r2690 — 2026-08-11 (main line). **`PO-11`'s OBSTRUCTION IS UNIFORM IN THE TOWER — the angular index does not rescue it.**
 
 **⌗ r2669 PROVED IT ON THE MEASURE ALONE.** *This runs both norms on the modes P14 delivers — $\psi\sim|r|^\lambda$,
