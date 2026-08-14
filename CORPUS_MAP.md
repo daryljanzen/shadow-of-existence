@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2773 — 2026-08-11 (main line). **THE ISOMETRIES ACT — AND REACH COLOUR, NOT ISOSPIN.**
+
+**⛭⛭ ⓵ THE ACTION IS AUTOMATIC.** *P14: "the leaf is compact and its Dirac operator carries a well-defined
+analytical index" — so an isometry of the leaf acts on the spinor bundle, hence on the kernel where the hinge
+zero-modes live.* ***The action was never the missing piece.***
+
+**⛔ ⓶ BUT THERE ARE TWO CANDIDATE SPACES AND THEY ARE DIFFERENT.**
+
+    THREE-HINGE   "three throat walls, hence three chiral zero-modes"    dim 3  -> ADJOINT
+    TWO-END       "two ends of one hinge are timelike separated"          dim 2  -> FUNDAMENTAL, what PO-4 needs
+
+⇒ ***An isometry MOVES POINTS of the leaf, so it permutes hinges. **It acts on the three-space and cannot act
+within one.****
+
+**⛭⛭⛭ ⓷ AND THE THREE-SPACE IS ALREADY SPOKEN FOR.** *r2679 put colour at the centre $\mathbb Z_3$; r2706 ran the
+triality test on it; r2733 found the horn rotation's stabiliser is that same $\mathbb Z_3$.*
+⇒ ***The isometry reaches COLOUR, not ISOSPIN.***
+
+**⓸ WHICH GIVES A MECHANISM FOR AN ASYMMETRY P14 ONLY STATED:** *colour gets "exact selection rules"; isospin
+"delivers a species label, not $SU(2)_L$'s chiral action". **The substrate's compact symmetry acts on the index
+colour uses and not on the index isospin needs.***
+
+**⛭ THE RULE:** ***when repeated searches keep returning the same negative, ask what they have in common rather than
+trying a fourth. **Three candidates that all fail identically are usually one candidate** — and the shared structure
+is the finding, not the failures.***
+
+⌗ *`PO-4` now owes: what acts on the two ends of a SINGLE hinge? Any $SU(2)_L$ must come from a structure internal
+to a hinge, and nothing in the corpus has been asked for one.*
+
 ### Revision r2772 — 2026-08-11 (main line). **THE REGISTER GETS THE COLUMN LINT THE INDEX ALREADY HAD.**
 
 **⌗ cc54's ARGUMENT, c54.219.** *"My register edit broke `PO-6`'s cell count on unescaped `|_{...}` bars — **fourth
