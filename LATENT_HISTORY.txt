@@ -154,3 +154,4 @@ r2711  COMPUTED    PO-10 delivers a PAIR: the phase freedom is discrete, so k is
 r2712  LATENT      PO-10 STRUCK -- its remainder is a procedure, not a question. Table 6, 82% cleared.
 r2713  COMPUTED    L-543 withdrawn -- aimed at a running background the free tower does not use
 r2714  COMPUTED    PO-11s object exists: W=lam sqrt(f)/r gives RW partners vanishing at both horizons
+r2715  INSTRUMENT  unmet.py: the dominant class made searchable -- rows that do not cite what the corpus holds

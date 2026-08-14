@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2715 — 2026-08-11 (main line). **THE DOMINANT CLASS MADE SEARCHABLE — `scripts/unmet.py`.**
+
+**⌗ THE PROMPT NAMED IT.** *"The six items are still full of stable things we previously worked out but **the
+problems that need them don't know they exist**."*
+
+    PO-11    needed "a different object"        -> B3 held the superpotential          r2714
+    PO-10    needed a comparison rule           -> AIC/BIC, standard                   r2709
+    L-543    asked about a RUNNING background   -> r2691 had shown it de Sitter        r2713
+    PO-12    last piece "unrun"                 -> P15: no integrand at w=0            r2701
+    PO-2     "three separated levels"           -> the taxonomy named them             r2683
+    PO-3/9   rows read OPEN                     -> answered 50 revisions earlier       r2695
+    triality P14 "does not yet do so"           -> r2679 supplied the ingredient       r2705
+    PO-6     "three of its four halves"         -> the row declares TWO                r2695
+
+⇒ ***Eight instances, one shape: the row states a NEED, the corpus HOLDS what meets it, and nothing connects the
+two. Each was found by a human reading — which does not scale.***
+
+**✔ `scripts/unmet.py`** *reports, for each open row, receipts whose `INDEX` summary shares its vocabulary and which
+the row does not cite.*
+⌗ ***Its first run flagged `B20` and `B25` — receipts this line wrote at r2679 and r2714 and never cited into the
+rows that needed them.*** *Three rows now cite; 6 → 4 with gaps.*
+
+**⚠ AND ITS FLOOR IS THE HONEST HALF.** *`PO-10`'s case would NOT have been caught — **AIC/BIC is absent from the
+corpus entirely**. **A tool cannot find what the corpus has never named**, so this addresses the INTERNAL half; the
+external half stays a reading problem, and is the half Daryl solved in one line at r2709.*
+
+**⛭ THE RULE:** ***when the same failure recurs, stop fixing instances and ask what would have found them. Eight
+repairs of one class is seven more than the class deserved — and the check is twenty lines.***
+
 ### Revision r2714 — 2026-08-11 (main line). **`PO-11`'s MISSING OBJECT IS ONE LINE FROM THE CORPUS'S OWN SUPERPOTENTIAL.**
 
 **⌗ r2690 LEFT THE ROW NEEDING "not a better mode but a different OBJECT".** *`B3` already derives what builds one:
