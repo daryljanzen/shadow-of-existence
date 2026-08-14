@@ -145,8 +145,17 @@ def main():
                                                               errors='replace').read(), re.I)
         if m:
             health = f' · receipts green {m.group(1)}/{int(m.group(1))+int(m.group(2))}'
-    print(f'**PROGRESS {span}: table {first} → {len(live)} ({done} cleared, '
-          f'{100*done//first}%) · narrowings {narrowed} · receipts {rcpts()}{health}**')
+    # ** r2730, on the coda's TWO HORNS (r1581): letting "can we call this done" reach the
+    # ORDERING replaces WHAT DO I WANT TO KNOW? with WHAT CAN I SAY IS FINISHED? -- and
+    # "every cut corner in this programme's history is the second question winning a turn."
+    #   *** This printed a FALLING COMPLETION METRIC every turn, and this node opened nearly
+    #   every report of the r2615-r2729 session with it.  A falling count is a reward signal
+    #   and a strike is the cheapest way to move it: the instrument built to track the work
+    #   was PROMOTING the closure lean CODA_FIELD_NOTE (r2376) had already diagnosed. ***
+    #   ⌗ The count stays -- a register whose size is hidden is worse.  What goes is the
+    #   FRAMING as achievement: no "cleared", no percentage, no arrow from a high-water mark.
+    print(f'**REGISTER {span}: {len(live)} live · narrowings {narrowed} · '
+          f'receipts {rcpts()}{health}**')
     print()
     # ** r2685, Daryl: "Has the unknown space actually narrowed?  Is the remaining work finite?"
     # ⇒ *** The row count could not answer it -- a row asking a sharp question and a row asking a

@@ -19,7 +19,7 @@ sources: [chat]
 | **VIEW** | 5 |
 | **STATE** | 46 |
 | **METHOD** | 30 |
-| **RECORD** | 80 |
+| **RECORD** | 81 |
 
 ## ⌗ DECLARED CLASSES
 
@@ -162,6 +162,7 @@ sources: [chat]
 | `CAPSTONE_the-fog-lifting_transcript.md` | RECORD | frozen record | — | — |  |
 | `CLAIMS.md` | RECORD | (declared in frontmatter) | — | c54.213 |  |
 | `CLAUDE_CODE_WORK_ORDER.md` | RECORD | THE ITERATING WORK ORDER — for a Claude Code session that can run for hours. A ladder from mechanical to edge work, the discipline that makes unattended research safe, and the two ownership boundaries. Read with THE_HUB and NEXT.md. | — | — |  |
+| `CODA_READ_NOTES_r2730.md` | RECORD | (declared in frontmatter) | — | c54.213 |  |
 | `CREDO_birth_transcript.md` | RECORD | frozen record | — | — |  |
 | `CREDO_from-c1_transcript.md` | RECORD | frozen record | — | — |  |
 | `DEMONSTRATING_THE_WAY_full-transcript.md` | RECORD | frozen record | — | — |  |

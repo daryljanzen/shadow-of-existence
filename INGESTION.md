@@ -133,7 +133,8 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2721   ---     main complete but NOT coherent: 8 of 74 stale, 5 repaired.
     r2722   ---     all six converted. 74/74 session receipts green on main.
     r2723-28 PO-6   floor follows; ORDERING decides the spectral question. THE_WEAVE papered over, fixed.
-    r2729   PO-5    CLAIMED: stop calling it UNBOUNDED. What would a third mechanism have to BE?
+    r2729   PO-5    NOT unbounded -- the two walls are one. UNBOUNDED lived only in my own stamp.
+    r2730   ---     CLAIMED: coda read complete (42 notes). Build 1 -- check_kills watches STRUCTURE.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

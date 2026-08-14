@@ -18,7 +18,7 @@ sources: [chat]
 
 | namespace | file | codes | unfolded | state | what only it has |
 |---|---|---|---|---|---|
-| **PROTECTED_OPEN** | `PROTECTED_OPEN.md` | 11 | 0 | ✔ FOLDED | *the closure bar — a node may not close these* |
+| **PROTECTED_OPEN** | `PROTECTED_OPEN.md` | 12 | 0 | ✔ FOLDED | *the closure bar — a node may not close these* |
 | **OPEN_PROBLEMS_LEDGER families** | `THE_OPEN_PROBLEMS_LEDGER.md` | 8 | 0 | ✔ FOLDED | *the families and their worked content — a VIEW of the register since c54.121* |
 | **P7 sec:frontiers** | `corpus/CR_framework.tex` | 4 | 0 | ✔ FOLDED | *the framework paper's own frontier list* |
 | **p0 sec:frontiers** | `corpus/geometric_core_paper.tex` | 3 | 0 | ✔ FOLDED | *the geometric core's frontier list* |

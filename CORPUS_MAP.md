@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2730 — 2026-08-11 (main line). **THE CODA SET READ — and the negative-verdict bar was defeated by a synonym.**
+
+**⌗ 42 NOTES, FILED AS `CODA_READ_NOTES_r2730.md`.** *The central one is not new: `CODA_FIELD_NOTE` (r2376)
+already found it —* ***"count the mechanical gates — EVERY ONE POLICES OVER-CLAIMING. NOT ONE POLICES A CLOSURE.
+The rule set is not neutral. It leans, and it leans toward closure."*** *And I had added **seven more over-claim
+gates** since.*
+
+**⛔⛔ THE VERIFIED FAILURE.** *`check_kills` IS the remedy that section named. It watches for `IS KILLED`,
+`question is closed`, `forecloses`, `rules it out`.*
+⇒ ***`STRUCK` is not among them — and `STRUCK` is the word used for `PO-10`, `PO-11`, `PO-12`, all three of which
+left the open register with **no `kills/` file**.***
+
+**✔ REBUILT TO WATCH THE ACT.** *`struck_without_receipt()` asks whether an item left the open set — unsynonymable.
+It fired on all three immediately. Seed-tested clean → 1 → 0.*
+
+**✔ THE THREE OWED RECEIPTS WRITTEN — and one pays at once.** *`kills/PO-10.md`'s checks **do not clear**: half ①
+was closed on a specification r2726 found foreign at the root. **`PO-10` is REOPENED on its own receipt's
+finding.*** *Had the bar caught the strike at r2712, that would have surfaced **fourteen revisions before cc54's
+compute was spent on it**.*
+
+**✔ `check_close_names_work`** *— a struck row may not rest on a receipt reporting a non-clearing check. Structural,
+after two false positives taught the lesson again: **I keep building word-matchers for structural properties**
+(r2726 symbols-not-entities; r2730's first pass flagging `PO-8`'s careful writing twice).*
+
+**✔ THE STAMP REFRAMED.** *The coda's TWO HORNS (r1581): "letting 'can we call this done' reach the ORDERING
+replaces WHAT DO I WANT TO KNOW? with WHAT CAN I SAY IS FINISHED?" **My stamp printed a falling completion metric
+every turn.** A falling count is a reward signal and a strike is the cheapest way to move it. The count stays; the
+achievement framing goes.*
+
+⌗ *Still unbuilt from the notes: no seat for a cold read of the gate's own work (§116's node ladder is not run by
+54/cc54/56), and no instrument for the receipt template's mandated caveat block (§87 lists performed measuredness as
+a known machine failure of this collaboration).*
+
 ### Revision r2729 — 2026-08-11 (main line). **`PO-5` IS NOT UNBOUNDED — the word was mine, in my own script, for sixty revisions.**
 
 **⛔ THE AVOIDANCE, NAMED.** *r2667 walled two routes and wrote `UNBOUNDED = {'PO-5'}` into `scripts/stamp.py`.

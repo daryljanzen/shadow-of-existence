@@ -169,3 +169,4 @@ r2726  INSTRUMENT  the root error: counting parameters in LCDMs ontology. check_
 r2727  INSTRUMENT  cleanup: 4 COMPUTES scopes, 8 parked deferrals removed, map brought current. All gates green.
 r2728  INSTRUMENT  PO-6: ordering decides it -- normal gives 1/4 (below), symmetric gives 3/4. P10 names neither.
 r2729  LATENT      PO-5 is NOT unbounded: the two walls are one, and UNBOUNDED lived only in my own stamp
+r2730  INSTRUMENT  coda set read (42 notes). check_kills watched words not the act -- 3 strikes slipped. PO-10 reopened.

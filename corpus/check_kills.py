@@ -167,8 +167,61 @@ def _mapped_gate():
     return 1
 
 
+def struck_without_receipt():
+    """r2730 -- THE BAR HAD A HOLE EXACTLY THE WIDTH OF A SYNONYM.
+
+    ** This gate watched PROSE for closure WORDS: `IS KILLED`, `question is closed`,
+    `forecloses`, `rules it out`.  *** `STRUCK` was not among them -- and `STRUCK` is the word
+    this line used for PO-10, PO-11 and PO-12, all three of which left the open register with
+    no `kills/` file. *** **
+
+      ⛭ THE FIX IS TO WATCH THE ACT, NOT THE WORDING.  A closure is STRUCTURAL: striking a
+      tag to `~~**PO-11**~~` drops the row out of `po_items()` and off the table.  *** A
+      word-matcher can always be stepped around by a synonym -- and it was, without anyone
+      trying.  What cannot be stepped around is the question "did this item leave the open
+      set?" ***
+
+    ⚠ ** This does not say a strike is wrong. **  *** `CODA_FIELD_NOTE` (r2376): "a node may
+    write a BOUNDED NEGATIVE; a CLOSURE on a registered item requires kills/<ID>.md with all
+    four checks answered.  Bounded negatives are the node's; closures are Daryl's."  The file
+    is what makes an authorisation INSPECTABLE instead of remembered -- and a strike taken on
+    a turn's say-so leaves nothing a later reader can audit. ***
+    """
+    if not os.path.exists(REG):
+        return []
+    whole = open(REG, encoding='utf-8', errors='replace').read()
+    out = []
+    for l in whole.split('\n'):
+        m = re.match(r'\|\s*~~\s*\*\*(PO-\d+)\*\*\s*~~', l)
+        if not m:
+            continue
+        pid = m.group(1)
+        if not os.path.exists(os.path.join(ROOT, 'kills', f'{pid}.md')):
+            out.append(pid)
+    return out
+
+
 def main():
     items = parse_register()
+    # ** r2730: the STRUCTURAL check runs first -- it cannot be stepped around by wording. **
+    orphans = struck_without_receipt()
+    if orphans:
+        print()
+        print(f"  [FAIL] {len(orphans)} item(s) STRUCK OFF THE OPEN REGISTER WITH NO KILL "
+              f"RECEIPT: {', '.join(orphans)}")
+        print("    ⛔⛭ ** THIS GATE WATCHED PROSE FOR CLOSURE WORDS AND MISSED THE ACT. **")
+        print("       *** `STRUCK` was not among `IS KILLED`, `question is closed`,")
+        print("       `forecloses`, `rules it out` -- so three rows left the open set without")
+        print("       tripping the bar built to catch exactly that.  A word-matcher can be")
+        print("       stepped around by a synonym; the question \"did this item leave the open")
+        print("       set?\" cannot. ***")
+        print("    ⚠ ** A strike is not thereby wrong. **  A node may write a BOUNDED NEGATIVE;")
+        print("      a CLOSURE on a registered item needs `kills/<ID>.md` with its four checks")
+        print("      answered.  *** The file is what makes an authorisation INSPECTABLE rather")
+        print("      than remembered -- a strike taken on a turn's say-so leaves a later reader")
+        print("      nothing to audit. ***")
+        return 1
+
     print(f"  PROTECTED OPEN: {len(items)} registered items")
     unnamed = [i for i in items if 'NOT NAMED' in i['object'].upper()]
     if unnamed:
