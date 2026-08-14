@@ -1,6 +1,6 @@
 
-  RUN-ALL-RECEIPTS -- 447 registered receipt(s), 4 at a time, 300s each, each from ITS OWN DIRECTORY
-  TREE-DIGEST: e18ed8a76c33e4a1
+  RUN-ALL-RECEIPTS -- 449 registered receipt(s), 4 at a time, 300s each, each from ITS OWN DIRECTORY
+  TREE-DIGEST: 49bc1722828bce4a
 
     [FAIL] receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py  (0s)
                FAIL  ⛔ and the PO-6 row does not carry it: "bounded below" appears in the row only as the QUESTION /     OK    ⓷ and the same passage supplies the domain: "The areal radius along the lift is likewise confined ... on an interval fixed by the progenitor mass, with the substrate curvature finite t
@@ -49,7 +49,7 @@
     [FAIL] receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py  (0s)
                OK    ⓷ and the third is marked NOT A DEBT in the same sentence as "open": "What remains open is not the computation but its last-percent precision" /     OK    "a data-confrontation frontier the title does not stake itself on ... not a debt" /   1 check(s) FAILED
 
-  424 pass, 23 fail, 0 over timeout, in 495s wall
-  slowest that passed: P16_validate_bbn.py 193s, P15_the_second_arm_actually_run.py 132s, P15_the_collapse_leg_is_scale_invariant.py 104s, P16_theory_error_and_likelihood.py 95s, P15_verify_lowell_exact_measure.py 86s
+  426 pass, 23 fail, 0 over timeout, in 496s wall
+  slowest that passed: P16_validate_bbn.py 205s, P15_the_second_arm_actually_run.py 135s, P15_the_collapse_leg_is_scale_invariant.py 105s, P15_verify_lowell_exact_measure.py 86s, P16_theory_error_and_likelihood.py 82s
 
   ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.

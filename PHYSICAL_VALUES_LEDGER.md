@@ -2,10 +2,31 @@
 name: physical-values-ledger
 job: What does the corpus compute, under which conventions? Read WHEN QUOTING A VALUE.
 class: whole-corpus-instrument
-current: r2517+c54.201
+current: r2671+c54.210
 ---
 
-> ## ⚠⚠ THE ACOUSTIC FIGURES BELOW ARE SUPERSEDED — annotated r2517, not erased
+> ## ⛭⛭ BROUGHT CURRENT c54.210 — **one number entered the corpus since c54.201, and it is the same number twice**
+
+**⌗ THE de SITTER HORIZON'S ENTROPY, `L-532` (c54.207), now in p0 `sec:ledger`:**
+$$S=\frac{A}{4\ell_P^{2}}=\pi\Bigl(\frac{\alpha}{\ell_P}\Bigr)^{2}=\frac{3\pi}{\Lambda\ell_P^{2}}\approx3.14\times10^{122}$$
+*at p0's own $\Lambda\ell_P^{2}\approx3\times10^{-122}$, against the gauge-count $\alpha/\ell_P\approx1.0\times10^{61}$.*
+
+⛭⛭ **AND IT IS THE COSMOLOGICAL-CONSTANT PROBLEM'S FACTOR, NOT MERELY ITS MAGNITUDE.** *That factor is
+$\rho_{\rm vac}/\rho_\Lambda\sim8\pi/(\Lambda\ell_P^{2})$.* ⇒ ***$S/\text{CC}=3/8$ exactly — both are
+$1/(\Lambda\ell_P^{2})$ read with a different coefficient.***
+⇒⇒ **SO WHEN QUOTING EITHER, QUOTE THEM AS ONE QUANTITY.** *A reader who meets $10^{122}$ as an entropy and a
+reader who meets it as a fine-tuning are holding the same dimensionless combination.*
+
+⛔ **CONVENTION WARNING, which is what this ledger is for:** *$S=A/4$ is **adopted**, not derived — p0 states
+what the number IS if the standard expression is taken and **declines whether it carries to a cosmological
+horizon on this reading**. Quote the number with that attached or not at all.*
+
+⌗ *And `L-543` (c54.210) adds the counterterm reading of the same one-scale fact: every curvature invariant is
+a pure power of $1/\alpha^{2}$, so on the admitted background family the counterterm basis is one-dimensional.*
+
+---
+
+## ⚠⚠ THE ACOUSTIC FIGURES BELOW ARE SUPERSEDED — annotated r2517, not erased
 >
 > ***Four quantities have been withdrawn from this front, and the withdrawals are the fork's own:***
 > *· the **first-peak position** (c54.187) — a seam-datum artefact, moving 2.26×;*

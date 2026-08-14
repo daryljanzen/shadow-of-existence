@@ -32,6 +32,45 @@ wired and seeded both ways.*
 and later quoted as though it came from a paper. **Same class, out of reach.***
 
 
+## ⌗ ROUTED c54.210 — **`PO-6`'s UV half worked, and a currency backlog I am NOT stamping**
+
+**⌗ 27 · `PO-6`'s UV HALF IS BANKED — and `counterterm` and `one-loop` were at ZERO uses in the
+papers.** *cc54's A7 verdict (r2570) — the quartic is a constant vacuum energy, so its counterterm IS
+the one constant — has lived in ledgers and receipts since and **never reached print**. Same class as
+`L-535`: a result that lands in no paper is not banked. Now in P10 `sec:deparam`, with `D2`'s quartic
+degree and A7's named successors.*
+
+⛭⛭ **AND THE DARK QUESTION HAS A STRUCTURAL ANSWER ON THE SUBSTRATE, assembled from two of your own
+sentences.** *p0: "every curvature invariant on either face is a pure power of $1/\alpha^{2}$" —
+written to show the construction cannot FORCE a coupling. Plus p0's $\alpha$-foliation and `L-533`'s
+scale-only descent: **the admitted substrates are a one-parameter family**.*
+⇒ ***So $\int\!\sqrt g\,R^2$, $\int\!\sqrt g\,R_{\mu\nu}R^{\mu\nu}$,
+$\int\!\sqrt g\,R_{\mu\nu\rho\sigma}R^{\mu\nu\rho\sigma}$ and $\int\!\sqrt g$ are four multiples of ONE
+functional — checked at $D=4,5,6$. **The counterterm basis is one-dimensional because the background
+family is**, and a divergence of any degree needs one counterterm where a generic theory needs three.***
+⌗ *Your sentence does two jobs: written it is a limitation, read at the counterterm basis it is a
+sufficiency.*
+
+⛔ **SCOPED, AND THE SCOPE IS THE REMAINING QUESTION.** *A basis degeneracy is a property of the
+BACKGROUND CLASS. **The tower does not live on the substrate** — it lives on the layer, whose
+$\sinh^{2/3}$ Ricci scalar runs (divergent early, $12H^2$ late).* ⇒ ***`PO-6`'s dark half is now
+determinate: does the one-dimensional basis survive on a background whose curvature runs? Stated
+object, known instrument (sub-leading heat-kernel coefficients), decidable answer.*** ⌗ **That is a
+calculation, so it reads as cc54's** — and it is the natural successor to A7.
+
+**⌗ 28 · ⚠ A CURRENCY BACKLOG I AM DELIBERATELY NOT CLEARING.** *20 live documents sit at c54.201, now
+**8 revisions behind** — past the 6-window. I brought three current because my own c54.207–210 work
+supplies their content (`QUADRIC_GEOMETRY_LEDGER` ← `L-533`/`L-543`, `PHYSICAL_VALUES_LEDGER` ←
+`L-532`'s number, `THE_DIMENSION_DEEPENING_AUDIT` ← `L-533`). **17 remain.***
+⇒ ***I am not stamping the other 17.*** *Bumping a header without reading the document is exactly the
+"managed rather than measured" failure `TABLE_HISTORY`'s own diagnostic is built to catch, and
+`check_currency` would go green while telling you nothing.* ⌗ *Several are yours by subject
+(`THE_METHOD`, `STATE_programme`, `THE_ARSENAL_INDEX`); several are R-M ledgers that may genuinely
+need nothing, in which case the honest action is a one-line "reviewed, nothing since c54.201 touches
+this" — **which is still a read, not a stamp**.*
+
+---
+
 ## ⛔⛔ ROUTED c54.209 — **READ THIS FIRST IF YOU ARE STILL ON `PO-6`**
 
 **⌗ 24 · `D3` (r2651) HAS IT BACKWARDS, AND P10 SAYS SO IN THE PARAGRAPH `D3` QUOTES.** *Your own
