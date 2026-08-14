@@ -132,7 +132,8 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2720   ---     merged cc54s branch. All three lines now fully on main.
     r2721   ---     main complete but NOT coherent: 8 of 74 stale, 5 repaired.
     r2722   ---     all six converted. 74/74 session receipts green on main.
-    r2723   PO-6    CLAIMED: is the back-reaction limit P10s own BOUNDARY, or a gap in it?
+    r2723-28 PO-6   floor follows; ORDERING decides the spectral question. THE_WEAVE papered over, fixed.
+    r2729   PO-5    CLAIMED: stop calling it UNBOUNDED. What would a third mechanism have to BE?
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

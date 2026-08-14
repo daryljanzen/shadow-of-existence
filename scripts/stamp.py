@@ -153,8 +153,13 @@ def main():
     #     vague one both count as one.  So the stamp now carries the FRONTIER's shape. *** **
     # ** r2712: PO-10 STRUCK -- its remainder is a procedure, not a question. **
     # ** r2717: PO-11 STRUCK -- the propagating sector exists as states. **
-    BOUNDED = {'PO-4', 'PO-6'}
-    UNBOUNDED = {'PO-5'}
+    BOUNDED = {'PO-4', 'PO-5', 'PO-6'}
+    # ** r2729: UNBOUNDED WITHDRAWN.  *** The word was never in the register -- it was written
+    # into THIS script at r2667 and repeated for sixty revisions as though the corpus held it.
+    # B29 shows the two walls are ONE wall (a coupling is the coefficient of an F^2 term; where
+    # F = 0 there is no term for it to multiply), so the question is bounded: WHERE CAN A GAUGE
+    # CONNECTION ON THIS SUBSTRATE FAIL TO BE FLAT? ***
+    UNBOUNDED = set()
     # ** r2702: PO-12 STRUCK, so PO-10 is UNGATED and moves to BOUNDED. **
     GATED = {'PO-2': 'PO-5', 'PO-7': 'PO-seam'}
     print(f'*STILL OPEN — dark: {", ".join(x["id"] for x in dh if x["open"])} · '

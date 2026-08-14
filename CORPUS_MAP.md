@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2729 — 2026-08-11 (main line). **`PO-5` IS NOT UNBOUNDED — the word was mine, in my own script, for sixty revisions.**
+
+**⛔ THE AVOIDANCE, NAMED.** *r2667 walled two routes and wrote `UNBOUNDED = {'PO-5'}` into `scripts/stamp.py`.
+**The register never said it.** The row says only "no third mechanism has been named" — a statement about what has
+been DONE, not about what CAN be. And the word served, every turn since, as the reason to work some other row
+first.*
+
+**⛭⛭ AND ONE TURN OF WORK DISSOLVES IT: THE TWO WALLS ARE ONE WALL.**
+
+    HOLONOMY   "the bundle above is flat ... it quantises and does not couple"
+    ISOMETRY   "a Yang-Mills term carries a dimensionless coupling that a single length cannot build"
+
+⇒ ***A coupling IS the coefficient of an $F^2$ term. Where $F\equiv0$ there is no such term for any coefficient to
+sit in front of — **the isometry wall is MOOT wherever the holonomy wall holds**.***
+⇒ *And the dimensional argument is not binding on its own: the corpus carries $3$ (winding, triality, generations),
+$6$ (roots), $3/4$ (r2728), $9/10$ (r2661). **None is a coupling — not because they are the wrong numbers but
+because there is nothing to multiply.***
+
+**⇒⇒ THE QUESTION RESTATES, AND IT IS BOUNDED:** ***where, if anywhere, can a gauge connection on this substrate
+fail to be flat?***
+⌗ *P14's claim is **SCOPED** — "the bundle **ABOVE** is flat", the construction it builds, not a theorem about every
+bundle. **The complement is open, and it is where a third mechanism would live.***
+
+    FRONTIER: 3 BOUNDED (PO-4, PO-5, PO-6) · 0 UNBOUNDED · 2 gated
+
+**⛭ THE RULE:** ***a classification you wrote into your own tooling is not a finding, and it becomes
+indistinguishable from one the moment you stop remembering you wrote it. Before citing a label, grep for it in the
+REGISTER — if it only lives in your reporting, it is your opinion wearing the corpus's voice.***
+⚠ ***And the sharper form: an "unbounded" verdict is the most expensive thing a node can write, because it is
+self-justifying — it makes not-working-the-row look like judgment rather than avoidance.***
+
 ### Revision r2728 — 2026-08-11 (main line). **I PAPERED OVER A GATE ONE REVISION AGO — and the audit that found it found three more.**
 
 **⛔ THE PAPERING-OVER.** *r2727 reported `THE_WEAVE` "brought current". **The diff is one line:
