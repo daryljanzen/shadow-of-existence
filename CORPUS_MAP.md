@@ -146,6 +146,48 @@ sources: [cowork, chat]
 
 
 
+### Revision r2737 — 2026-08-11 (main line). **r2731's "MISSING SEAT" WITHDRAWN — the register IS the cold read.**
+
+**⌗ DARYL:** *"three nodes working the same GitHub source check each other just as much... no extra check was
+necessary at all. We have four brains here all working on the same problem and checking each other."*
+
+**⛔ AND THE BUNDLE THAT ARRIVED THE SAME DAY PROVES IT.** *`c54.214`: cc54 read `PO-11`'s row, saw its stated
+obstruction was a **normalisation condition** rather than a barrier, and posed the $\omega\ne0$ problem **r2717's
+strike never posed** — **an avoidance catch, by a node**. And `c54.215`/`c54.218` corrected a premise-for-conclusion
+and a quotient-for-complement, neither of which is arithmetic.*
+
+**TWO ERRORS IN r2731, both this line's:** *① it measured `r2700`-`r2730` — the window in which this line was doing
+the avoiding — **and generalised to "never"**; ② it defined "artifact" as "written in a turn", but **avoidance
+leaves one: it leaves the ROW UNCHANGED, and the row is in the shared repository**.*
+
+⇒ ***Every node meets rows it did not write, which is §116's cold-read condition — and it is already running.***
+
+**⛭ THE RULE:** ***before naming a structural absence in the apparatus, check whether you sampled it during your own
+worst run. A deficiency visible only from inside a bad stretch is usually the stretch, not the structure.***
+
+⌗ *`check_unworked_blockers` stands on a corrected claim — **it surfaces the pairing faster than the next node's
+read**. **Operationalising is worth doing and is not a substitute for the other brains.***
+
+### Revision r2736 — 2026-08-11 (main line). **`c54.214`-`218` MERGED — and this line destroyed 17 PDFs resolving it.**
+
+**⛔ THE DAMAGE.** *The conflict-marker stripper read every `UU` path as UTF-8 with `errors='replace'` and wrote it
+back. **On a binary that substitutes U+FFFD for every invalid byte.** `matter_sector` went 703,274 / 708,206 bytes
+in to **1,267,092** out.*
+⇒ ***Every surface check passed — `%PDF` ✔, `%%EOF` ✔, no marker text ✔, disk == `HEAD` ✔ — and all four were true
+of a destroyed file. **The test that found it compared against BOTH PARENTS.**** *All 17 restored byte-identical;
+`scripts/resolve_merge.py` now dispatches on file kind and verifies before returning.*
+
+**⛭⛭ AND cc54 CORRECTED TWO OF THIS LINE'S REVISIONS, both verified here.**
+*`PO-6` — r2713 withdrew `L-543` because "the background does not run". **The degeneracy is CONFORMAL FLATNESS**:
+$\mathrm{Weyl}^2 = \mathrm{Riem}^2-2\mathrm{Ric}^2+R^2/3 = 0$ for $k=+1,0,-1$ and for a **free** $a(T)$. **The
+withdrawal stands, its reason is replaced, and back-reaction CANNOT break it** — stronger than r2713 claimed. Real
+limit: the shear, $4\sigma^2+O(\sigma^4)$.*
+*`PO-4` — r2676's "torus $\times$ Weyl, torus missing" **reads a QUOTIENT as a COMPLEMENT**. $\langle
+T,w\rangle=N(T)$ has dimension **1** against $\mathfrak{su}(2)$'s **3**. **Two dimensions short, not one factor.***
+
+⌗ *The halves do not collide: cc54 worked the counterterm basis, r2728 the boundary operator at $a=0$ — the two
+halves the row declares.*
+
 ### Revision r2735 — 2026-08-11 (main line). **THE REGISTER FOR WORK A TURN *CREATES* — and two more gates found living only in the stamp.**
 
 **⌗ THE PROMPT.** *"What then becomes owed work or still todos sitting there newly as a result. What's the shape of
