@@ -1,7 +1,7 @@
 ---
 name: quadric-geometry-ledger
 description: R-M's first field bake — projective geometry of quadrics thrown at the CR substrate. Opened r1838 (Phase 8). What the corpus already reaches, the boundary the throat protocol states for itself, and the bites this field can take that the classical catalogue could not.
-current: r2671+c54.210
+current: r2713+c54.214
 ---
 
 > **⌗ CHECKED AGAINST c54.163→c54.185 AND DECLARED CURRENT r2449.** *The span's substantive content is **the derived
@@ -71,8 +71,22 @@ of $1/\alpha^{2}$" — **written to show the construction cannot force a couplin
 basis it says the construction does not need one.*
 
 ⚠ ***THE SCOPE, and it belongs in a quadric ledger because it is a statement about which quadrics:*** *the
-degeneracy holds on the ONE-PARAMETER family of maximally symmetric quadrics. **The layer is not one of
-them** — its $\sinh^{2/3}$ rate has a Ricci scalar that runs — so this bake's reach stops at the substrate.
+degeneracy holds on the ONE-PARAMETER family of maximally symmetric quadrics.*
+
+> ⛔⛔ **WITHDRAWN c54.214 — this paragraph carried `L-543`'s scope, which `L-544` retired at c54.211 and
+> r2713 struck. *I withdrew the claim and left this behind.*** *It read: "**The layer is not one of
+> them** — its $\sinh^{2/3}$ rate has a Ricci scalar that runs — so this bake's reach stops at the
+> substrate."*
+> ⇒ ***FALSE, and in the direction that understates the bake.*** *P10's free tower slices on
+> $a(T)=\alpha\cosh(T/\alpha)$, whose $R=12/\alpha^{2}$ is **constant** — a member of this very
+> family. And r2713 adds the identity that makes it obvious: **$12/\alpha^{2}$ and $12H^{2}$ are the
+> same form with $H\to1/\alpha$, so the layer's late limit IS the tower's background.***
+> ⇒⇒ **So the bake's reach does NOT stop at the substrate: the quadric family contains the geometry the
+> tower is actually defined on.** *What limits it is not a running curvature but a **back-reacting**
+> one — P10's own stated limit, and not a quadric question at all.*
+> ⌗ ***THE RULE, 56's at r2713 and paid here: when you withdraw a claim, withdraw what it SPAWNED.*** *A
+> retraction reaches the sentence that was wrong; **the successor is downstream and nothing points back
+> at it**, and it survives because it reads as work rather than as a claim.* `L-547`.
 
 ---
 

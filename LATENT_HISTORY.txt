@@ -153,3 +153,6 @@ r2710  COMPUTED    CR is k=2 not k=1 (A_s is anchored); threshold dBIC=21.5 agai
 r2711  COMPUTED    PO-10 delivers a PAIR: the phase freedom is discrete, so k is unchanged and both branches report
 r2712  LATENT      PO-10 STRUCK -- its remainder is a procedure, not a question. Table 6, 82% cleared.
 r2713  COMPUTED    L-543 withdrawn -- aimed at a running background the free tower does not use
+c54.214  LATENT      PO-11s obstruction is a NORMALISATION CONDITION: P14 says the tortoise norm diverges "where the mode tends to a constant" -- which is a plane wave, not a failed bound state
+c54.214a COMPUTED    and the omega!=0 continuum BUILT: V_pm short-range at the surface gravity, |T|^2+|R|^2=1, SUSY partners isospectral, and L^2(tortoise) STRICTLY inside L^2(leaf)
+c54.214b LATENT      PO-10s strike orphaned family 5s pointer, and check_family_pointers second stated remedy is not implemented -- tested, exit 1 unchanged

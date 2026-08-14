@@ -573,6 +573,21 @@
 \emph{Computes:} asserts the H(a) clause, checks the classification covers exactly the open rows, and pins each rows object against its kind (7 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- the classification is derived here; no paper states it
 \ \emph{Run:} \texttt{python3 receipts/P12\_algebroid/A7\_the\_frontier\_has\_two\_kinds.py}
+\item[\label{rcpt:C32_half_one_is_model_selection}\texttt{C32\_half\_one\_is\_model\_selection}]\hfill\textsf{[OK]}\\
+\textit{sec:frontiers} \ (PO-10s half (1) IS an information-criterion comparison: the corpus names "the likelihood-level model selection" while AIC/BIC/Akaike/Occam/Bayes-factor appear ZERO times --- and the penalty is computable now, dAIC=10.0 and dBIC=26.9 in CRs favour). 
+\emph{Computes:} asserts the model-selection phrase and the 215-bin count verbatim, word-boundary-checks five model-selection terms at zero across papers and receipts (excluding itself), and computes both penalties (9 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- k=6 is the standard flat-LCDM count and must be stated with any result; the chi\textasciicircum{}2 is unrun
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C32\_half\_one\_is\_model\_selection.py}
+\item[\label{rcpt:C33_the_threshold_corrected}\texttt{C33\_the\_threshold\_corrected}]\hfill\textsf{[OK]}\\
+\textit{sec:tensions} \ (THE THRESHOLD CORRECTED: r2709s k=1 was wrong --- P15 anchors A\_s at the first peak, so CR is k=2 --- and against Liddle/Jeffreys (dBIC 2 positive, 6 strong) the threshold is dBIC = 21.5, still 3.5x the strong line). 
+\emph{Computes:} asserts the anchored-amplitude and one-parameter-accommodation clauses verbatim, tables all four parameter-count pairs against the Jeffreys scale, and computes the AICc correction (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- no chi\textasciicircum{}2 is scored; the count must be restated with any result
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C33\_the\_threshold\_corrected.py}
+\item[\label{rcpt:C34_the_deliverable_is_a_pair}\texttt{C34\_the\_deliverable\_is\_a\_pair}]\hfill\textsf{[OK]}\\
+\textit{sec:tensions} \ (PO-10s DELIVERABLE IS A PAIR: the acoustic sector is open as PO-7, its phase freedom moves the gap 0.615 -> 0.408 and cannot close it --- but the freedom is DISCRETE, so k is unchanged and both branches are reported at the same threshold). 
+\emph{Computes:} asserts PO-7s object, the phase-lever and cannot-close clauses verbatim with both values, and shows the discrete choice leaves dBIC at 21.5 rather than 16.1 (5 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- neither branch is scored; that is the whole of what remains
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C34\_the\_deliverable\_is\_a\_pair.py}
 \item[\label{rcpt:P03_acceleration_is_slice_curvature}\texttt{P03\_acceleration\_is\_slice\_curvature}]\hfill\textsf{[OK]}\\
 \textit{sec:curvature \ensuremath{\cdot} rem:twocritical \ensuremath{\cdot} the bend} \ (on ANY member of the energy family (E cancels: (dr/dtau)\textasciicircum{}2 = E\textasciicircum{}2 - f, and E is a constant of the motion) d\textasciicircum{}2r/dtau\textasciicircum{}2 = -f'/2 = r*K\_G identically, so THE SIGN OF THE SLICE'S GAUSSIAN CURVATURE IS THE SIGN OF THE COMOVING ACCELERATION -- and the flat locus is the deceleration-to-acceleration turnover, which on Nariai is the seam and in standard terms is rho\_m = 2 rho\_Lambda (csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2, the seam's phase). A recent cosmological epoch: 7.06 Gyr at H0=73, 7.65 at 67.4, preceding matter-Lambda equality [borrowed from P3 \ensuremath{\cdot} P7 \ensuremath{\cdot} P8]). 
 \emph{Computes:} the identity asserted; the K\_G zero solved and matched to (M alpha\textasciicircum{}2)\textasciicircum{}(1/3); csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2 proved by algebra after simplify() failed on the closed forms; epochs at both H0

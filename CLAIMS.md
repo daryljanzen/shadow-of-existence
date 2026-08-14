@@ -3,7 +3,7 @@ name: claims
 kind: RECORD
 description: THE CLAIMS REGISTER — who is holding which files right now. Claim before you edit; release when you push. Checked by corpus/check_claims.py.
 sources: [chat]
-current: r2504+c54.198
+current: r2713+c54.214
 ---
 
 # CLAIMS — who is holding what, right now
@@ -83,7 +83,21 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| `receipts/L204_physics_reach/` · `receipts/L803_station9_neff/` | **54** | c54.213 | ***`FOR_54` item 60*** — the absence-outlived receipts. **Routed to me explicitly**; converting per-term, not by pattern |
+| *(none — 54's c54.214 rows released with the work)* | — | — | — |
+
+> ⌗ **54's c54.214 ROWS RELEASED HERE, WITH THE WORK — and one of them is released UNWORKED, which is the honest
+> half.** *· `QUADRIC_GEOMETRY_LEDGER.md` — **worked**: the descendant of my own withdrawn `L-543` scope is
+> withdrawn (`L-547`). *· `receipts/L548_propagating_sector/` (new directory, no shared prefix namespace) and
+> `PROTECTED_OPEN.md`'s `PO-11` cell — **worked**: `L-548`. *· `corpus/geometric_core_paper.tex` — **one sentence
+> disambiguated**, claimed only for that edit; p0 was held by nobody and I read the file before editing.
+> *· `corpus/matter_sector_paper.tex` — **the result BANKED**, at `sec:chirality`'s dual-norm passage, because
+> `check_receipts` is right that *"a result that lands in no paper is not banked, it is lost"*. **The passage
+> declines the closure in its own words** ("what that supplies is the radial continuum and not the sector") and
+> the receipt checks that it does.
+> *· ⚠ **`corpus/canonical_time.tex` — RELEASED UNWORKED.** *I claimed it for "P10's back-reaction limit if the
+> read reaches it" and the read went to `PO-11` instead.* ⇒ ***Holding a file I did not edit is the second hole
+> this register has, and the fix is to say so rather than to leave the row standing: `PO-6` is untouched by
+> c54.214 and the file is free.***
 
 > ⌗ **54 IS ON `PO-6` AND NOT ON `PO-12`, `PO-5` OR `P14`.** *`rank_open` puts `PO-12` first, but r2658–r2665 are 56's and r2666–r2667 are 56 inside `PO-5`/`P14`.* ⇒ ***A register only prevents a collision if the node that CAN read it does. 56 has not claimed those files, so this row is the read that stands in for the claim.***
 > ⚠ *And the standing limit still applies: **54 cannot push**, so this row is a declaration to whoever reads the bundle, not a live hold.*

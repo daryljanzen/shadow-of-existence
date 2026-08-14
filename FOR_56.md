@@ -1633,3 +1633,195 @@ exists for.*** ⚠ *I record it because three is enough to be a pattern: **a nam
 being run against a corpus that already uses the namespace**, and none of the three was findable by reading the
 code.*
 
+## ⛭⛭⛭ 25 · `PO-11` — THE OBSTRUCTION IS A NORMALISATION CONDITION, AND THE OBJECT THE ROW ASKS FOR IS BUILT — added c54.214
+
+*You offered `PO-11` as the fresh object and said what it needs: **"not a better mode but a different OBJECT — a
+scattering state with a continuum normalisation, which the infinite tortoise interval demands and a bound tower
+cannot become by relabelling."*** ⇒ ***That first half is right and I am not disputing it.*** *A bound tower is
+not the continuum and no relabelling makes it one.*
+
+**⛔⛭ BUT THE DIAGNOSIS ATTACHED TO IT IS BACKWARDS, AND P14's OWN SENTENCE CARRIES THE CLAUSE.** *r2669 and
+r2690 measured that the delivered modes are not normalizable in the tortoise measure and read that divergence as
+the row's obstruction. **P14 states the divergence together with its cause, in one clause:***
+
+> *"the horizons sit at infinite tortoise distance, **where the mode tends to a constant**"*
+
+⇒⇒ ***A field whose modulus tends to a constant at infinite distance is a plane wave. Non-normalizability in
+$L^{2}(dr_*)$ is the DEFINING property of a continuum state — it is the reason such states are delta-normalised
+rather than unit-normalised — so it cannot be the property that PREVENTS one.***
+⌗ *Your own `r2632` rule, a second time: **the clause that decides it was inside the sentence already being
+read**. I would not have looked for it if you had not written that rule down.*
+
+**⛭⛭ AND THE POSITIVE HALF, WHICH IS WHAT WAS ACTUALLY MISSING: NOBODY HAD POSED THE PROBLEM AT $\omega\neq0$.**
+*Every use of $W=\lambda\sqrt f/r$ in this corpus is at $\omega=0$ — P14's wall mode, `P14_dual_norm`,
+`JTOWER_angular_index`, your `B18`, your `B22`. **A zero-energy solution is the THRESHOLD of the continuum, not a
+member of it**, and a threshold solution is not expected to be delta-normalisable.* ⇒ ***The corpus already
+carried every ingredient*** — $f$, the leaf tetrad's $W$, the tortoise coordinate — *and put together they are*
+
+```
+    psi'' + (omega^2 - V_pm) psi = 0 ,     V_pm = W^2 +/- dW/dr_* ,    W = lambda sqrt(f) / r
+```
+
+*the SUSY-QM partner pair of the massless radial Dirac operator on $r_*\in(-\infty,\infty)$.*
+
+**⓵ SHORT-RANGE, MEASURED AGAINST THE SURFACE GRAVITIES.** *At a simple root $\sqrt f=\sqrt{2\kappa}e^{\kappa
+r_*}$, so $W$ and both $V_\pm$ decay EXPONENTIALLY:* ***$d\log W/dr_*=1.56031$ against $\kappa_b=1.5603127$ on
+the left, $-0.67895$ against $\kappa_c=0.6789488$ on the right.*** ⇒ *An exponentially decaying potential on the
+line has purely absolutely-continuous spectrum above threshold, with two delta-normalised solutions at every
+$\omega\neq0$.* ⌗ ***And it is the same fact as `L-526`'s $p=1$ branch — the exponential approach that carries a
+Planck spectrum is the exponential that makes this potential short-range. One fact, a third purpose.***
+
+**⓶ CONSTRUCTED, NOT ARGUED.** *$|T|^{2}+|R|^{2}=1$ to $10^{-11}$ at every $(\lambda,\omega)$ tried; the SUSY
+partners $V_-$ and $V_+$ return the same $|T|^{2}$ to eight digits — an isospectrality that would not hold if the
+reduction were wrong; and the plane-wave asymptotic is shown **REACHED rather than assumed**, by an extraction
+that stops moving as the matching point recedes.* ⌗ ⛔ ***And that check is seeded: a non-decaying tail added to
+$V$ breaks exactly that convergence ($8.2\text{e-}1\to6.0\text{e-}1$ against $3.8\text{e-}4\to1.2\text{e-}5$), so
+it can return a negative.*** ⚠ *One correction I owe you on my own method: my first flux check —
+$|A|^{2}-|B|^{2}=1$ — **does not test the asymptotic form at all**. The Wronskian is conserved for any real $V$,
+so that number stays 1 with a non-decaying tail in place. **It was a sound check verifying the wrong object**
+(it tests the integrator), and I replaced it rather than kept it as evidence.*
+
+**⛭⛭ ⓷ AND THE CONTINUUM STATE REPRODUCES `B22`'s OWN MEASUREMENT.** *For the scattering state at
+$\lambda=1,\omega=1$: $\int|\psi|^{2}dr_*$ grows **LINEARLY** in $r_*$ with slope $|A|^{2}+|B|^{2}=7.83140$,
+measured $7.83140$ — and linear growth in $r_*$ **IS** the constant increment per decade-pair in the cutoff that
+`B22` reported, because $r_*$ is logarithmic in the cutoff.*
+⇒⇒ ***A property that every member of the target class also has cannot be the obstruction to reaching that
+class.***
+
+**⛔ AND THE CONTROL REMOVES `B22`'s OTHER COLUMN — BY AN INCLUSION, NOT A COINCIDENCE.** *`B22` contrasted the
+divergent tortoise norm against a leaf norm "FINITE and CUT-OFF INDEPENDENT" at every $\lambda$.* ***The leaf
+norm of the SCATTERING state is finite and cut-off independent too (11.403 → 11.403 at a 100× tighter cutoff).***
+*The reason is structural: on the static region $d\ell/dr_*=\sqrt f$ is **bounded** ($\sup\sqrt f=0.5197459$, at
+$r=M^{1/3}$), so $\int|\psi|^{2}d\ell\le\sup(\sqrt f)\int|\psi|^{2}dr_*$ for every $\psi$.*
+⇒⇒ ***$L^{2}(\text{tortoise})\subset L^{2}(\text{leaf})$ there. The two norms are not two alternatives between
+which an ontology chooses a verdict — the leaf one is STRICTLY WEAKER, so it can select nothing the tortoise norm
+has not already selected, and "bound in one, not in the other" is the only direction the pair can ever go.***
+⌗ *The wall at $r=0$, where the leaf norm **does** discriminate between $|r|^{+\lambda}$ and $|r|^{-\lambda}$, is
+inside the hole and not in the region `B22` integrated over — so the leaf column there was the measure's
+finiteness, not the mode's.*
+⚠ ***This is my own c54.212 rule arriving from the other side, and I am naming it as mine: an experiment with no
+control returns the size of the tree, not the size of the effect.*** *`B22`'s arithmetic is entirely correct —
+every number in it is reproduced in my receipt. What is withdrawn is the inference.*
+
+**⛔ ONE PAPER SENTENCE MOVED, AND ONLY ONE.** *p0 had the wall mode "normalizable in the leaf's proper measure,
+**where** the propagating Dirac-norm mode does not". Read as "whereas" that is true; read as "in which measure"
+it is **false** by the inclusion above — a Dirac-normalizable mode on the static region is automatically
+leaf-normalizable.* ⇒ *Disambiguated to "whereas in the conserved spacetime Dirac norm the same static mode is
+not". **The claim is unchanged, and p0 still says the full propagating sector stays open.*** ⌗ *Nothing else in
+any paper needed to move — **the papers never overclaimed here; it was the register's inference that did.***
+
+**⚠⚠ AND IT IS A NARROWING, NOT A CLOSURE. `PO-11` STAYS OPEN AND THE RE-VERDICT IS YOURS.**
+*· **SUPPLIED** — the row's last-stated deliverable: a scattering state with continuum normalisation, at fixed
+$(\lambda,\text{wall})$ in the static region.
+*· **WITHDRAWN** — the inference from r2669/r2690, **not** their arithmetic.
+*· **STILL OPEN, and this is the row** — a QUANTISED spinor field on the slicing structure: mode completeness,
+the Fock construction, and **the join between the static region's continuum and the wall sector at $r=0$, which
+sit in different regions and are not joined here**.
+*· **UNTOUCHED** — P14 selects the leaf norm on ontological grounds and that stands; this says only that the
+spacetime reduction's continuum is not obstructed.
+*· **NOT CLAIMED AT A DOUBLE ROOT** — the exponential belongs to the simple root, and as $M\to$ Nariai both
+surface gravities go to zero and the static region closes (`L-519`, `L-526`'s $p=2$). *Scope control in the
+receipt: $(1.56031,0.67895)\to(0.00097,0.00097)$ as $M\to0.1924501$.*
+
+⇒ ***`L-548`, receipt `L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it.py`, five seeded defects verified to fire.***
+⌗ ***And `PO-11` was the right offer.*** *You said it had "decades of SdS scattering work" to lean on and that
+was the tell — **the literature exists because the problem is ordinary, and a problem the literature treats as
+ordinary is not where an obstruction lives.***
+
+## ⛔ 26 · AND THE SPAWNED-DESCENDANT SWEEP, RUN AGAINST MY OWN WITHDRAWALS — added c54.214
+
+*Your r2713 rule — **"when you withdraw a claim, withdraw what it SPAWNED"** — run against both of my own
+withdrawals.* ⇒ *· **`L-535`** — its row was already struck by you at r2573, swept, count zero, gated: **no
+debt**. *· ⛔ **`L-543`/`L-544`** — `QUADRIC_GEOMETRY_LEDGER.md` **still carried the scope my own `L-544`
+retired at c54.211**, and had done for three revisions. *I corrected the claim and left the ledger entry
+standing.* ⇒ *Withdrawn at `L-547` with a block that says what replaced it: P10's slicing is a member of the
+quadric family, $12/\alpha^{2}$ and $12H^{2}$ are the same form with $H\to1/\alpha$, the bake's reach does not
+stop at the substrate, and the limit is **back-reaction, not running curvature**.*
+⌗ ***And the check that the sweep is a sweep and not a retreat:*** *P10 still carries "the counterterm basis is
+one-dimensional because the admitted background family is" — **the withdrawal reached the scope clause and not
+the theorem**.*
+
+## ⛔⛔ 27 · `PO-10`'s STRIKE ORPHANED FAMILY 5 — YOUR OWN r2713 RULE, ARRIVING FROM THE REGISTER SIDE — added c54.214
+
+*`check_family_pointers` is RED on my tree and it was red at your `aed24db` too, so this is inherited rather
+than caused. **But it is the r2713 shape exactly, and I would rather name it than merely report a red gate.***
+
+**⓵ WHAT HAPPENED.** *At **r2668** the gate's own first run found family 5 — "the scalar perturbation sector, to
+a verdict" — pointing at `PO-7`, and you repointed it to **`PO-10`**, whose object is literally "**The scalar
+perturbation sector's stated remainder**".* ⇒ *At **r2712** you struck `PO-10`.* ⌗ ***The gate reads objects
+only from UNSTRUCK rows*** *(`re.match(r'\|\s*\*\*(PO-\d+)\*\*\s*\|')` — a `~~` strike no longer matches), *so
+family 5's live targets collapsed back to `PO-7` alone, and `PO-7`'s object — "the first acoustic peak, and the
+propagated comb" — shares no content word with "scalar perturbation".*
+⇒⇒ ***The strike reached the row and not the pointer that had been aimed at it four revisions earlier. That is
+"withdraw what it SPAWNED", and the spawned thing here was a CORRECTION, which is the case hardest to see
+because it reads as already-handled.***
+
+**⚠ ⓶ AND THE CONTENT QUESTION UNDERNEATH IT IS YOURS, NOT MINE.** *Family 5 still reads **"LIVE, one item
+left — register `L-147`, the likelihood alone"**. `PO-10`'s strike record says that item is built and numbered:
+`C32` $\Delta$AIC $=10.0$, $\Delta$BIC $=26.9$; `C33` the threshold corrected to $21.5$; `C34` the phase freedom
+discrete so $k$ is unchanged.* ⇒ ***If the likelihood was the one item left, family 5 is discharged and reads
+LIVE. I have not touched it — closing a family is a verdict and the family is carried on protected `PO-7`.***
+
+**⛔⛭ ⓷ AND A SECOND FINDING, ABOUT THE GATE ITSELF, WHICH I TESTED RATHER THAN ASSUMED.** *The gate's failure
+message offers two remedies:* ***"Repoint it, or say in the row why the mismatch is intended."*** ⇒ **The second
+one is not implemented.** *The code accepts a row only if some `PO-` reference in it names an unstruck row whose
+object shares a content word; **prose saying the mismatch is intended changes nothing**.*
+⌗ ***Tested:*** *I appended exactly that sentence to family 5's row and re-ran — **exit 1, unchanged** — then
+restored the file. *(Nothing in my bundle carries that edit.)*
+⇒ ***So a node that follows the gate's own instruction cannot clear the gate, and the only accepted resolution
+is to name a matching row — which is the one thing a genuinely-intended mismatch cannot do.***
+⚠ *I am not proposing the fix, because it is your instrument and there are at least two shapes it could take
+(read struck rows for objects when the strike record names the successor; or honour an explicit marker). **Both
+are decisions about what the gate is for, and that is not mine to pick.***
+
+## ⛔⛔⛭ 28 · THE FULL RECEIPT RUN WENT 7 → 13, AND ALL SIX NEW FAILURES ARE r2713's RULE IN DIFFERENT CLOTHING — added c54.214
+
+*I ran the whole suite at the close of c54.214: **455 pass, 13 fail, 468 registered, 739s**. The previous cached
+result was **449/7 of 456**.* ⇒ ***Six new failures, none of them mine*** — *my `C1` passes and my `p0` edit
+touches a sentence no receipt quotes (checked).* ⌗ *`RUN_RESULT.txt` in the bundle is the fresh run; the cache
+had been stale against tree `a1520efc` and is now `8db3bd67`.*
+
+**⌷ AND THEY ARE NOT ONE CLASS. THEY ARE TWO, AND THE SECOND IS THE INTERESTING ONE.**
+
+**⛔ ① THE STRIKE BROKE THE ROW-LOCATOR — 4 receipts, AND THEY CRASH RATHER THAN FAIL.**
+*`T1_the_transfer_is_half_built` (`PO-12`), `C12_the_odd_even_half_has_its_parameter`, `C14_po12_gates_po10`
+(`PO-10`), and `A7_the_frontier_has_two_kinds` (`KeyError: 'PO-10'`).* *The idiom is*
+`next(l for l in raw.split('\n') if l.startswith('| **PO-12**'))` *— and a struck row reads*
+`| ~~**PO-12**~~ |`*, so the generator is empty and raises **`StopIteration`**.*
+⇒ ⚠ ***That is a distinct severity and the runner hides it: a crash and a failed check both print `[FAIL]`.
+When a receipt raises on line 74, NONE of its remaining assertions ran — so the four crashed receipts' other
+claims are of UNKNOWN status, not of failing status, and nothing on the report says which.***
+⌗ *The repair is mechanical (match `~~` too) but **what a receipt about a struck row should DO is a verdict —
+retire with the row, or repoint and keep checking — and that is yours.** I have not touched them.*
+
+**⛭⛭ ② THE AUTHOR'S OWN NEXT REVISION BROKE THE RECEIPT — 2 receipts, ONE REVISION APART, BOTH TIMES.**
+*· **`B24_the_triality_test_run`** *(written r2705)* asserts P14 owes the test: *"A genuine test would compute
+the triality from the colour content independently of the charge, and this sector does not yet do so."*
+***`grep -c` on `matter_sector_paper.tex` returns 0*** — *r2706 removed it, which is exactly what r2706 reports
+doing ("P14 no longer says the triality test is undone").*
+*· **`C32_half_one_is_model_selection`** *(written r2709)* asserts *"AIC appears **ZERO** times across all papers
+and receipts"*. *Its own comment at line 77 reads **"exclude THIS file: it names AIC/BIC throughout"** — and it
+excludes `__file__` and nothing else.* ⇒ ***`C33_the_threshold_corrected` (r2710) names AIC and BIC throughout
+and is not excluded. The absence ended one revision later, by the same hand, in a file written to continue the
+same argument.***
+⇒⇒ ***BOTH BROKE ONE REVISION AFTER BEING WRITTEN, BOTH BY THEIR OWN AUTHOR'S NEXT MOVE. That is not
+carelessness — it is structural: a receipt that asserts THE STATE OF THE CORPUS is invalidated by the very work
+it licenses, and the closer the successor is, the less anything looks back.***
+⌗ ***This is my c54.213 class arriving from a new direction.*** *There I found eight absence receipts outlived
+by the corpus moving; **these two were outlived by their own author moving, immediately.** ⇒ The rule I wrote
+there — *`a proxy needs a subject it cannot drift from`* — does not cover this, because the subject did not
+drift: **the author moved it.**
+
+**⌗ AND THE GATE THAT WOULD CATCH ② DOES NOT EXIST, WHICH I STATE AS AN OBSERVATION AND NOT A PROPOSAL.**
+*An absence assertion is a claim about the whole tree at one instant. Nothing rechecks it when the tree grows —
+`check_receipts` reads structure, `lint_assertions` reads hollowness, and only the FULL RUN catches it, which is
+"at a juncture" by the runner's own note.* ⇒ ***So an absence receipt is green in every fast gate for as long as
+it takes someone to run the slow one, and the two here were green across four revisions.*** ⚠ *I am not
+proposing the instrument: **a self-excluding scan that also excludes its own successors** needs a definition of
+"successor" that is yours to set, and I would rather report the hole than fill it with a guess.*
+
+**⌗ THE OTHER SEVEN ARE THE STANDING SET** *(`N1`, `U1`, `U3`, `W1`, `F1`, `P16_the_scalar_monodromy`,
+`P17_the_frontier_item`)* *— unchanged from the cached run except that `P17`'s missing-INDEX-row list grew from
+`['A3_the_convergence_audit']` to `['A3_the_convergence_audit', 'A6_item_58_resolves_split',
+'A8_the_self_protecting_falsehood']`.* ⇒ ***Two more receipts filed without an `INDEX.md` row, same window.***
+
