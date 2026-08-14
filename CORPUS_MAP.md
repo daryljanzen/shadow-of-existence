@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2749 — 2026-08-11 (main line). **A TILDE ON A SETTLED VALUE IS A STALE HEDGE — and r2748 got it backward.**
+
+**⌗ DARYL:** *"Isn't `~301` just a place marker for while the value is not accurately known? If the value is now
+determined more accurately and is not expected to change then it ought to be reported with accurate precision."*
+
+**⛔ AND r2748 HAD JUST TALKED ITSELF INTO DEFENDING IT.** *It drafted the prose figure as a defect, then
+**"corrected" itself** to "the tilde is there, the paper is honest, no edit is owed" — **and filed that
+self-correction as a virtue**. It treated the tilde's PRESENCE as the question, when the question is whether the
+value it hedges is still moving.*
+
+**⛭⛭ IT IS NOT.** *$100\theta_*=1.04109$ is published; $\ell_A=301.76$ is arithmetic on it; the receipt **asserts**
+it to $0.01$.*
+⇒ ***And the hedge ran in the corpus's own disfavour: $+1.20$ against $\sim301$, $+0.44$ against the real figure. **A
+factor of 2.7 of manufactured discrepancy, in the corpus's own voice.****
+
+**⛭⛭⛭ AND THE SWEEP FOUND NINE MORE, ON A NUMBER COMPUTED WITH CAMB.**
+
+    P15 calls the damping-scale signature "~8%" in NINE places
+    -- three of them while describing it as "a real, computed effect"
+    P15_damping_ratio_clean returns:  r_D ratio 1.0897  -->  +8.2%
+
+**✔ EDITED:** *$\sim301\to301.76$; $\sim8\%\to8.2\%$ in nine places. **17/17 compile and the damping receipt still
+passes** — it was always asserting the figure the prose was glossing.*
+
+**⛭ THE RULE:** ***a hedge has an occasion, and occasions expire. **Reported precision is a claim about how well a
+thing is known, so under-reporting it is manufactured doubt in the paper's own voice** — and it is the hardest kind
+to see, because every instinct trained against overclaiming reads a tilde as care.***
+
+⌗ *Not every tilde: "roughly $10^5$ years", "negligible below $z\sim10$" are correct. **The test is whether a
+receipt asserts the figure.***
+
 ### Revision r2748 — 2026-08-11 (main line). **TAKE THE MEASURED VALUE FROM THE RECEIPT, NOT THE PROSE.**
 
 **⛭⛭ ⓵ `PO-10`'s FIRST PAIR.** *P15's prose: "$\ell_*=302.2$ against the measured ${\sim}301$". Its own receipt
