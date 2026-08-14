@@ -167,4 +167,4 @@ r2724  LATENT      merged L-814/815/816; L-814s negative matches P15s own envelo
 r2725  COMPUTED    L-814s number WITHDRAWN: not a matched comparison, n_s held. Tilt alone is 15.6x.
 r2726  INSTRUMENT  the root error: counting parameters in LCDMs ontology. check_foreign_ontology built.
 r2727  INSTRUMENT  cleanup: 4 COMPUTES scopes, 8 parked deferrals removed, map brought current. All gates green.
-r2728  COMPUTED    PO-6: ordering decides it -- normal gives 1/4 (below), symmetric gives 3/4. P10 names neither.
+r2728  INSTRUMENT  PO-6: ordering decides it -- normal gives 1/4 (below), symmetric gives 3/4. P10 names neither.
