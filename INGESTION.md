@@ -127,7 +127,8 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2715   ---     unmet.py built -- the dominant class made searchable. 3 citation gaps closed.
     r2716   PO-11   spectrum computed, unitarity to six figures.
     r2717   PO-11   STRUCK -- completeness FOLLOWS from boundedness + exponential decay. Five open.
-    r2718   PO-4    CLAIMED: the U(1). Is continuous-from-discrete a named standard problem?
+    r2718   PO-4    gap is CARDINALITY: order 4 vs a continuum. PO-5s wall does NOT transfer.
+    r2719   PO-10   CLAIMED: pin the reference cc54 asks for -- F3 same-instrument vs BIC-against-CAMB.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

@@ -158,3 +158,4 @@ r2715  INSTRUMENT  unmet.py: the dominant class made searchable -- rows that do 
 r2716  COMPUTED    PO-11s spectrum: T from 0.020 to 0.9997, unitarity to six figures. Completeness remains.
 r2717  COMPUTED    PO-11 STRUCK -- completeness follows from boundedness and exponential decay. Five open.
 r2718  COMPUTED    PO-4s gap is CARDINALITY: order 4 against a continuum. PO-5s wall does not transfer.
+r2719  COMPUTED    the reference is F3, not CAMB -- BIC uses only differences, so the instrument floor cancels

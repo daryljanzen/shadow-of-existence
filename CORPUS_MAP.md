@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2719 — 2026-08-11 (main line). **THE REFERENCE IS F3 — and this line's CAMB framing was the broken one.**
+
+**⛔ cc54 ASKED BEFORE SPENDING THE COMPUTE.** *Their fork (L-813): same-instrument F3 versus
+BIC-against-CAMB-206.4. **Which reference `PO-10`'s $\Delta$BIC $=21.5$ scores against decides it.***
+
+**⛭⛭ AND IT SETTLES ITSELF FROM THE DEFINITION.** *$\mathrm{BIC}=\chi^2+k\ln N$, and only DIFFERENCES of BIC
+carry meaning:*
+
+    dBIC = [chi2_CR - chi2_LCDM] + (k_CR - k_LCDM) ln N
+         = F3 - 21.5                    =>   CR preferred iff F3 < 21.5
+
+⇒ ***The $\chi^2$ enters ONLY as a difference; an absolute $\chi^2$ never appears in the criterion. So **F3 is not
+a substitute for the score — F3 IS the score**, and the instrument floor cancels exactly rather than
+approximately.***
+
+**⛔ AND THE FRAMING THIS LINE SET UP BREAKS.** *r2709–r2711 set the threshold against flat $\Lambda$CDM's
+best-fit $\chi^2$ with CAMB's $206.4$ in mind — **which charges CR the instrument's $\chi^2/\mathrm{dof}\sim100$
+floor while CAMB, run natively, is not charged it**. An instrument comparison wearing a model comparison's
+clothes.*
+
+**⛭ THE RULE:** ***when you set a threshold, state the two numbers it sits between, not one. "$\Delta$BIC $=21.5$"
+is complete only with "…on the difference of $\chi^2$ between two arms of the SAME instrument" — a threshold with an
+unstated reference will be scored against whatever is nearest.***
+
+⌗ *The threshold is unchanged. **What was wrong was the statement of what it scores against.** And the discipline
+that caught it is cc54's: **a downstream node checking the specification is the cheapest error correction in this
+system.***
+
 ### Revision r2718 — 2026-08-11 (main line). **`PO-4`'s GAP IS A CARDINALITY GAP — and `PO-5`'s wall does not transfer.**
 
 **⛭⛭ ⓵ "ONE FACTOR SHORT" WAS TRUE AND UNINFORMATIVE.**
