@@ -146,6 +146,29 @@ sources: [cowork, chat]
 
 
 
+### Revision r2767 — 2026-08-11 (main line). **`PO-11`: TWO OF THE THREE CROSSINGS ARE ALREADY SUPPLIED.**
+
+**⛭⛭ ⓵ THE METRIC CROSSES, AS A THEOREM.** *The slicing paper carries the continuation "$C^\infty$ across the locus
+the chart labels $r=0$ … **a branch point and not a barrier**", and the framework paper "establishes that closure as
+a theorem".*
+
+**⛭⛭ ⓶ THE BOUND MODE CROSSES, IN P14's OWN PROPOSITION.** *"Each throat wall binds exactly one normalizable chiral
+zero-mode … **whose sign is the sign of the signed-radius flip**."*
+⇒ ***And those two are ONE STRUCTURE in two vocabularies: P14's chirality sign IS the $r\to-r$ doubling the
+continuation describes, and a Jackiw–Rebbi zero-mode of a wall odd in $x$ is precisely the mode regular at the
+origin of the doubled coordinate.***
+
+**⛔ ⓷ ONLY THE CONTINUUM HAS NOT BEEN ASKED.** *r2716 and `c54.214` built the scattering states on the STATIC
+region's tortoise line; r2744 put $r=0$ deep inside the inner horizon. **Nothing says how a static-region scattering
+state behaves at $r=0$, and nothing has needed to.***
+
+**⓸ SO THE REMAINDER IS ONE OBJECT, NOT THREE** — *and it is constrained rather than free: **the bound mode's
+condition at $r=0$ is fixed by the signed-radius flip, so the continuum's must be compatible with the same flip**.*
+
+**⛭ THE RULE:** ***a compound remainder is usually not compound work. "The join between A and B" is at least three
+questions, and **the ones already answered are answered in different papers under different names** — which is why
+the compound phrasing survives long after most of it is done.***
+
 ### Revision r2766 — 2026-08-11 (main line). **THE LEDGER DOES NOT REACH SECOND ORDER IN THE SHEAR.**
 
 **⓵ THE QUADRATIC SPACE IS THREE-DIMENSIONAL AND TWO COMBINATIONS ARE SPOKEN FOR.**
