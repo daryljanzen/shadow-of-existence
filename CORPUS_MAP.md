@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2732 — 2026-08-11 (main line). **A SUSPECTED FLAW MEASURED AND WITHDRAWN — and the effort spent on a real one.**
+
+**⌗ N8 FROM THE CODA READ:** *the engine's failure-tell is "announcing one's own measuredness", and the receipt
+template mandates a `WHAT IS NOT CLAIMED` block on every receipt. §87 lists performed measuredness as a known
+machine failure of this collaboration, so the suspicion was well-founded.*
+
+    82/82 receipts carry the block      -- but 96% of clauses are UNIQUE
+    "Stated for reversal"  1.07/receipt -- a REVERSIBILITY COMMITMENT, not a self-certification
+    "held at weight" 0 · "rigorous" 0 · "carefully" 0 · "NOT-A-PAPER-CLAIM" 0
+
+⇒ ***N8 WITHDRAWN. `KICKOFF_CODA_REVIEW`: "**do not invent a flaw to look rigorous**, and do not wave a real problem
+through. Both are failures." A gate here would have been the first — and would have looked like thoroughness.***
+
+**⛭ THE EFFORT WENT TO N10 INSTEAD — reception at weight, turned on the register.** *P10 states its limit
+precisely: "the boundary coefficient is promoted from the c-number $1/4$ to an **operator on the tower whose
+spectrum straddles the $3/4$ threshold**". **`PO-6`'s row carried that as "back-reaction"** — deflated into a vague
+word, and it sat so for twenty revisions until someone read the paper. r2728 then answered it in one turn.*
+
+⇒ ***DEFLATION LEAVES NO FALSE STATEMENT TO FIND. The row was TRUE and too WEAK — which is exactly why no
+over-claim gate could see it, and it is the second half of the asymmetry `CODA_FIELD_NOTE` named at r2376.***
+
+**✔ `check_received_at_weight`** *— an open row must carry a mechanism token its paper named; the test is whether a
+reader working from the ROW ALONE could tell what to compute. Seed-tested against the historical `PO-6` state and it
+reproduces the failure.*
+
+**⛭ THE RULE:** ***measure the flaw before you build the gate. A suspicion that survives the coda's own language can
+still be false, and an instrument built against a phantom costs twice — the effort, and the credibility of every
+gate beside it.***
+
 ### Revision r2731 — 2026-08-11 (main line). **THE MISSING SEAT, MEASURED — and the first gate that watches ABSENCE.**
 
 **⛔ WHO CATCHES WHAT, across `r2700`-`r2730`:**

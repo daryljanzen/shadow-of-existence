@@ -37,7 +37,7 @@ selects the physical one. **
      r2719, a number CAMB never had to pay). On the Jeffreys/Liddle scale 21.5 is 3.5x the strong-evidence
      line of 6. CR is preferred IFF F3 < 21.5 -- stated as the numeric bar, so the reading is not chosen
      after the number.
-  4. THE FLOOR CUTS BOTH WAYS AND DOES NOT SOFTEN THE NEGATIVE (F5-safe, and explicitly NOT laundering).
+  4. THE FLOOR CUTS BOTH WAYS AND DOES NOT SOFTEN THE NEGATIVE (and explicitly NOT laundering).
      F2 = chi^2(LCDM arm) - chi^2(CAMB) ~ +1114: no model here fits Planck well (this instrument's own
      control sits at chi^2/dof ~ 7 vs CAMB's 0.96), so the likelihood cannot arbitrate on ABSOLUTE fit.
      ** But the arbitration the floor prevents is ONLY between models whose F3 differ by LESS than the
