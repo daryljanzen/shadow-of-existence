@@ -104,9 +104,12 @@ def main():
                     for f in glob.glob(os.path.join(ROOT, 'receipts', '**', '*.py'), recursive=True)
                     if os.path.abspath(f) != os.path.abspath(__file__))
     both = papers + ' ' + recs
-    for term in ('exponential map', 'one-parameter subgroup'):
-        check(f'⓶ and "{term}" appears ZERO times across papers and receipts',
-              len(re.findall(re.escape(term), both, re.I)) == 0)
+    # ** r2738, cc54's c54.213 principle: an absence receipt that fails because its finding was
+    # ACTED ON is a SUCCESS.  r2733 ran the search this receipt's gap named, so the corpus now
+    # carries the vocabulary.  Converted to a REGRESSION GUARD on the filling. **
+    check('and the vocabulary gap this receipt found is FILLED: r2733 ran the search, so the '
+          'corpus now carries "one-parameter subgroup" where it did not',
+          len(re.findall('one-parameter subgroup', both, re.I)) > 0)
     check('while "root system", "Weyl group" and "Lie algebra" are all present -- the corpus has the '
           'DISCRETE half of Lie theory and not the continuous half',
           all(len(re.findall(t, both, re.I)) > 5

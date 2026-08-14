@@ -111,9 +111,15 @@ def main():
     # at r2667 and then repeated for sixty revisions as though the register held it. ***
     stamp = open(os.path.join(ROOT, 'scripts', 'stamp.py'),
                  encoding='utf-8', errors='replace').read()
-    check('⓸ and the word UNBOUNDED lives ONLY in this line\'s own stamp script, never in the row -- '
-          'a classification written into the reporting and then repeated as though the register held it',
-          "UNBOUNDED = {'PO-5'}" in stamp and 'UNBOUNDED' not in po5)
+    # ** r2738: r2729 also set UNBOUNDED = set() in the stamp, so the word is gone from BOTH the
+    # register and the reporting.  Converted to a REGRESSION GUARD on that holding. **
+    check('and the word UNBOUNDED is now gone from the stamp as well as the row, so neither the '
+          'register nor the reporting carries it',
+          # ** the row QUOTES the word inside its own withdrawal sentence -- the exact false
+          # positive named in check_unworked_blockers.  *** Test that the row carries the
+          # WITHDRAWAL, not that the string is absent: a retraction has to name what it
+          # retracts. ***
+          'UNBOUNDED = set()' in stamp and 'REMOVES THE WORD' in po5)
 
     print()
     if FAILED:

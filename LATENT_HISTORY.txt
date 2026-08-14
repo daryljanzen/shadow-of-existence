@@ -191,3 +191,4 @@ c54.217b INSTRUMENT  my own repair-verification was file-level and passed while 
 c54.218  COMPUTED    PO-4 is not "one factor short": <T, Weyl> = N(T), dimension 1 against SU(2)'s 3 -- the Weyl group is a QUOTIENT, not a complement
 r2736  LATENT      c54.214-218 merged. I destroyed 17 PDFs and repaired them. cc54 corrected r2713 and r2718.
 r2737  LATENT      r2731s missing-seat finding WITHDRAWN -- cc54 caught an avoidance the next day. The register IS the cold read.
+r2738  LATENT      register misquote 144/80/24 -> 144/36/24 (cc54 found it); 3 stale receipts converted; gates all green

@@ -121,7 +121,13 @@ def invariants(g, x):
 
 
 def weyl_sq(Rs, ric2, riem2):
-    """In 4D: C^2 = Riem^2 - 2 Ric^2 + R^2/3."""
+    """In 4D: C^2 = Riem^2 - 2 Ric^2 + R^2/3.** COMPUTES: the Weyl-squared combination Riem^2 - 2 Ric^2 + R^2/3 on FRW at k = +1, 0, -1 for a
+FREE a(T), and the Gauss-Bonnet total-derivative identity.  *** The scale factor and the spatial
+curvature are the corpus's own; nothing is imported. ***  ⌗ Scope added r2738 by 56 on merge --
+check_computes fires on this receipt and the band is 54's, but a one-line declaration that
+blocks the whole gate is a repair, not an edit to their finding. **
+
+"""
     return sp.simplify(riem2 - 2*ric2 + Rs**2/3)
 
 
@@ -185,12 +191,14 @@ def main():
           f'Ric^2 = {vals[2]}, Riem^2 = {vals[3]} -- S50\'s D=4 row, reproduced from the metric',
           vals[0] == 12/al**2 and vals[1] == 144/al**4
           and vals[2] == 36/al**4 and vals[3] == 24/al**4)
-    check('   ⛔ AND THE REGISTER MISQUOTES THAT ROW: PROTECTED_OPEN carries "$144/80/24$", but 80 is '
-          'S50\'s D=5 entry and 144, 24 are its D=4 entries -- three numbers read down a table '
-          'instead of across one row. Corrected to 144/36/24 at c54.215',
-          '$144/36/24$' in po
-          and 'three numbers read DOWN the table instead of ACROSS one row' in po
-          and po.count('$144/80/24$') == 1)
+    # ** r2738, 56 on merge, per cc54's own c54.213 principle: *** an absence receipt that FAILS
+    # because its finding was ACTED ON is a SUCCESS.  The misquote cc54 found was real -- 80 is
+    # S50's D=5 entry, and dS_4 gives 144/36/24, verified here by direct computation.  The
+    # register was corrected at r2738, so this converts to a REGRESSION GUARD on the filling. ***
+    check('✔ ⛭ AND THE REGISTER MISQUOTE cc54 FOUND IS FIXED (r2738): PROTECTED_OPEN carried '
+          '"144/80/24" where dS_4 gives 144/36/24 -- 80 was S50\'s D=5 entry.  The guard is now '
+          'on the correction holding',
+          '144/36/24' in po and '144/80/24' not in po)
 
     # ------------------------------------------------- (5) the RUNNING layer
     # ⚠ HONESTY ABOUT WHAT THIS ADDS.  (2) proved the identity for a FREE a(T), so substituting a

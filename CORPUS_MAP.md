@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2738 — 2026-08-11 (main line). **STABILISING FOR THE FORK'S RELEASE — and the register was misquoting its own invariants.**
+
+**⌗ WHAT ACTUALLY BLOCKED RELEASE, measured.** *Of cc54's three reported reds, **two were already clear here** and
+the third was a single missing `COMPUTES:` line. The real cost was **stale receipts whose findings were acted on** —
+the class r2722 converted six of.*
+
+**⛭ AND cc54's `Q1` WAS FAILING BECAUSE IT WAS RIGHT.** *It asserted `PROTECTED_OPEN` misquotes the de Sitter
+invariants as "$144/80/24$". Verified by direct computation on dS$_4$:*
+
+    R^2 = 144 / alpha^4      Ric^2 = 36 / alpha^4      Riem^2 = 24 / alpha^4
+
+⇒ ***80 was `S50`'s $D=5$ entry, carried into the $D=4$ triple. **Two occurrences corrected**, and their check
+converted to a regression guard on the correction holding.***
+
+⌗ *`B28` and `B29` converted likewise — both asserted absences that r2733 and r2729 had ended. **`B29` needed a
+second pass**: the row QUOTES `UNBOUNDED` inside its own withdrawal, which is the exact false positive named in
+`check_unworked_blockers`. Now tests that the row carries the **withdrawal**, since a retraction has to name what it
+retracts.*
+
+**⛭ THE RULE:** ***the fallout that costs a morning is not disagreement between nodes — it is receipts asserting a
+state the next node's work changed. **Every finding acted on breaks the receipt that found it**: success wearing
+failure's face. Convert on the spot or pay for it in someone's morning.***
+
+⚠ *And this line wrote a broken file before validating it — `ast.parse` AFTER `write` leaves the corpus holding a
+syntax error. **Validate the candidate, then write.***
+
+    ALL GATES GREEN · six open · WORKABLE: PO-4, PO-5, PO-6, PO-10 · GATED: PO-2, PO-7
+
 ### Revision r2737 — 2026-08-11 (main line). **r2731's "MISSING SEAT" WITHDRAWN — the register IS the cold read.**
 
 **⌗ DARYL:** *"three nodes working the same GitHub source check each other just as much... no extra check was
