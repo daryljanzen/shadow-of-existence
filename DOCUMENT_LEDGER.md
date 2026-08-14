@@ -17,7 +17,7 @@ sources: [chat]
 |---|---|
 | **SOURCE** | 2 |
 | **VIEW** | 5 |
-| **STATE** | 46 |
+| **STATE** | 47 |
 | **METHOD** | 30 |
 | **RECORD** | 81 |
 
@@ -64,6 +64,7 @@ sources: [chat]
 | `FORK_c54.md` | STATE | the c54 fork's own record | — | c54.188 | 25 |
 | `OPEN_PROBLEMS_MAP.md` | STATE | The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open | — | c54.213 | 0 |
 | `OPTICS_LENSING_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.201 | 12 |
+| `OWED.md` | STATE | (declared in frontmatter) | — | — | never |
 | `P3_SWING_ONTOLOGY_hinge-and-door.md` | STATE | The usable ontological skeleton for the SECOND major P3 upgrade — lead with the physical object (one hinge, one door, one swing) and DERIVE w, u, 3w as the shadows it throws. Registered as L-206; the upgrade has not landed. | — | — | never |
 | `PHASE7_BUILD_LEDGER.md` | STATE | the Phase-7 build record | — | c54.153 | 60 |
 | `PHYSICAL_VALUES_LEDGER.md` | STATE | What does the corpus compute, under which conventions? Read WHEN QUOTING A VALUE. | — | c54.210 | 3 |

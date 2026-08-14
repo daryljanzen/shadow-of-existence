@@ -174,3 +174,4 @@ r2731  INSTRUMENT  check_unworked_blockers: the first gate that watches ABSENCE.
 r2732  INSTRUMENT  N8 tested and WITHDRAWN (caveats are real scope work). check_received_at_weight built instead.
 r2733  COMPUTED    PO-4s parameter EXISTS and is the wrong signature: a rapidity generates SL(2,R), not SU(2)
 r2734  COMPUTED    no strike owed on PO-4; and the holonomy walls reason is too narrow -- only phases assumes compact
+r2735  INSTRUMENT  landing.py + OWED.md -- the register for work a turn CREATES. Both gates found in stamp only.

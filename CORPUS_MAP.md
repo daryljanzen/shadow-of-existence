@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2735 — 2026-08-11 (main line). **THE REGISTER FOR WORK A TURN *CREATES* — and two more gates found living only in the stamp.**
+
+**⌗ THE PROMPT.** *"What then becomes owed work or still todos sitting there newly as a result. What's the shape of
+the open region then as a result."*
+⇒ ***Every register here — the table, the ledger, the routed queue, the kill files — **counts things going away**.
+Nothing tracked work a turn PUT THERE, so newly-owed work lived only in whatever a turn happened to say and
+evaporated at the next compaction.***
+
+**✔ `OWED.md` + `scripts/landing.py`.** *The renderer composes ② what it touches and ④ the shape from the register;
+`--owe` files ③ in the turn that creates it.*
+
+**⛔⛭⛭ AND IT FOUND TWO MORE OF THE `UNBOUNDED` CLASS AT ONCE.** *`landing.py` reported **GATED (0)** while the
+stamp printed two. **`PO-2` is gated on `PO-5`, `PO-7` on `PO-seam` — and BOTH lived only in `scripts/stamp.py`'s
+`GATED` dict.*** *Written into the register at r2735.*
+⇒ ***A register that does not carry its own dependency structure is not the source of truth its readers treat it as
+— and the disagreement between two readers of the same programme is what surfaced it.***
+
+**⌗ AND ONE OWED ITEM DISSOLVED ON INSPECTION.** *Filed: "P14 still carries the too-narrow reason." **P14 never said
+"only phases"** — its wording is "the bundle above is flat … it quantises and does not couple", which IS the
+$F\equiv0$ reason. **The narrow reason was this line's, written into `PO-5`'s row at r2666.** Filing an owed item
+is not verifying one is owed.*
+
+    WORKABLE NOW (4): PO-4, PO-5, PO-6, PO-10
+    GATED (2):        PO-2 waits on PO-5 · PO-7 waits on PO-seam
+    OWED (5):         four row-successors and one withdrawal
+
+**⛭ THE RULE:** ***if the only thing you count is what leaves, the work looks finite because the arithmetic makes
+it so. Count what a turn PUTS THERE, in the turn that puts it there, or the open region is a fiction maintained by
+a subtraction.***
+
 ### Revision r2734 — 2026-08-11 (main line). **THE OPERATIVE ASSESSMENT r2733 OWED — no strike, and a wall's reason withdrawn.**
 
 **⌗ THE PROMPT.** *"Is there a landing strike or something still owed? You need to be assessing that operatively."
