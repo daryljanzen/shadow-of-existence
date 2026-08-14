@@ -17,7 +17,15 @@
 ** WHAT THIS PRINTS. **  Technical terms (7+ letters) used at least `MIN` times across `receipts/` and
 ** zero times in any paper body **, with the receipts that carry them.
 
-  ⚠ ** It cannot distinguish a RESULT from a TOOL. **  *** `simplify`, `linspace` and `abspath` top the
+  ⌗ ** TWO FALSE POSITIVES HAVE ALREADY SHAPED IT, and both are recorded because the shaping is the
+    instrument: **
+    * ** `station` (r2678) ** -- 85 uses, top of the list, ** banked 24 times as `stations` **.  ⇒ the
+      matcher works on STEMS.
+    * ** `monomial` (r2680) ** -- 25 uses, position 4, and it is ** sympy's `coeff_monomial` API **.  ⇒
+      *** the counter reads DOCSTRINGS, COMMENTS AND PRINTED VERDICTS only: a receipt states its RESULT
+      there and its METHOD in the code. ***  Candidates fell 91 -> 46.
+
+  ⚠ ** It still cannot distinguish a RESULT from a TOOL. **  *** `simplify`, `linspace` and `abspath` top the
       raw list; a human must read the candidates.  The gate is the SURFACING, not the verdict -- which is
       why this is a script and not a `check_`. ***
   ⌗ ** And a term absent from print is not always a defect: ** a receipt may legitimately use a working
@@ -34,6 +42,7 @@ import os
 import re
 import sys
 
+Q3 = chr(34) * 3
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..'))
 
@@ -72,7 +81,16 @@ def main():
 
     rfiles = glob.glob(os.path.join(ROOT, 'receipts', '**', '*.py'), recursive=True)
     texts = {f: open(f, encoding='utf-8', errors='replace').read() for f in rfiles}
-    rc = collections.Counter(w.lower() for t in texts.values()
+    # ** r2680: count PROSE, not code.  `monomial` reached position 4 at 25 uses and is
+    # sympy's `coeff_monomial` API -- a false positive of the `station` kind, costing a turn
+    # to read out.  *** A receipt states its RESULT in docstrings, comments and printed
+    #     verdicts; the code is where it states its METHOD. ***
+    prose = []
+    for t in texts.values():
+        prose += re.findall(Q3 + '(.*?)' + Q3, t, re.S)
+        prose += re.findall(r'^\s*#(.*)$', t, re.M)
+        prose += re.findall(r'print\(\s*[fr]?.(.*?).\)', t)
+    rc = collections.Counter(w.lower() for t in prose
                              for w in re.findall(r'[A-Za-z][a-z]{6,}', t))
 
     cand = [(w, n) for w, n in rc.most_common()

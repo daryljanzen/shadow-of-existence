@@ -146,6 +146,27 @@ sources: [cowork, chat]
 
 
 
+### Revision r2680 — 2026-08-11 (main line). **THE SWEEP'S SECOND FALSE POSITIVE — and fixing it halved the list.**
+
+**⌗ `monomial` SAT AT POSITION 4** *with 25 uses and zero in print — **and it is sympy's `coeff_monomial` API**,
+appearing in nine receipts as a method call.*
+⇒ *Reading it out was the cost. Its carrier's one real claim — a group order corrected from an impossible **29** to
+**81 and 27** — is **already banked**: `order $81$` is in the papers.*
+
+**⛭ THE FIX IS THE FINDING:** ***count PROSE, not code. A receipt states its RESULT in docstrings, comments and
+printed verdicts; it states its METHOD in the code — and an unbanked-result sweep that reads code is reading the
+wrong layer.***
+*Candidates **91 → 46**, and the top turned from API names into programme vocabulary.*
+
+**⌗ TWO FALSE POSITIVES HAVE NOW SHAPED THIS TOOL, AND BOTH ARE RECORDED IN IT:**
+*· `station` — banked 24× as `stations` ⇒ **stem matching** (r2678);*
+*· `monomial` — an API name ⇒ **prose-only counting** (r2680).*
+⇒ ***The shaping IS the instrument. A surfacing tool is defined by what it has learned to ignore, and a tool whose
+false positives are undocumented will have them rediscovered by its next reader.***
+
+**⛭ THE RULE:** ***when a sweep costs a turn on a false positive, fix the sweep in that turn. The alternative is a
+list you re-read forever, paying the same cost each time and never quite deciding it is broken.***
+
 ### Revision r2679 — 2026-08-11 (main line). **THE TWO GAUGE DEBTS SIT AT OPPOSITE ENDS OF THE SUBGROUP LATTICE.**
 
 **⌗ FOUND BY THE UNBANKED SWEEP.** *`pushforward` — **30 uses in receipts, ZERO across all seventeen papers** — and
