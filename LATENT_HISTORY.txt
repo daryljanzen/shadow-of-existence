@@ -91,3 +91,4 @@ r2658  COMPUTED    PO-12 six-eighths built; the driving verified, the C_l ratio 
 r2659  LATENT      sec:instrument already carries visibility AND projection; r2658 searched by name and missed it
 r2660  COMPUTED    the driving friction is 4/eta (radiation) vs 8/eta (matter); the two legs differ by construction
 r2661  COMPUTED    the branch-point join: R conserved => Phi_exp/Phi_coll = 9/10 exactly, applied once
+r2662  COMPUTED    (rH)^2 diverges at the branch point => every mode outside; r2661s caveat was empty

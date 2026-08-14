@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2662 — 2026-08-11 (main line). **r2661's CAVEAT NAMED AN EMPTY SET — the $9/10$ join is unrestricted.**
+
+**⌗ THE CAVEAT.** *r2661 closed: "**super-horizon only; modes inside the horizon at the branch point are not
+covered**."*
+⇒ ***There are no such modes. P15: "the branch point lies at the far end of the same rising branch, where $2M/r$
+carries $aH$ up without bound and the comoving horizon to zero, so there ***every*** mode is outside it."***
+
+**⌗ VERIFIED FROM THE CORPUS'S OWN HORIZON FUNCTION:**
+
+    (rH)^2 = (1-f) + A/r^2 = A/r^2 + 2M/r + r^2/alpha^2   ->  +infinity  as r -> 0+
+
+⇒ *so $1/(aH)\to0$ and every finite $k$ satisfies $k\ll aH$ — **and the term ordering matches the paper's**,
+$A/r^2$ (radiation) beating $2M/r$ (mass) while $r^2/\alpha^2$ (substrate) vanishes.*
+⇒⇒ ***$\mathcal R$'s conservation applies to every scalar mode at that locus. The join is UNRESTRICTED.***
+
+**⚠⚠ AND THE TRAP WAS ONE THE PAPER ITSELF FELL INTO.** *The SEAM and the BRANCH POINT give **opposite** answers —
+at the seam "the acoustic modes are **already within** the comoving horizon" — and P15 records "**a distinction six
+sentences of this paper previously ran together, corrected at r2501+c54.197 with the inversion re-derived from the
+metric function rather than asserted**".*
+⇒ ***A caveat written at the wrong locus would have been that same error, committed by the line that inherited the
+correction.***
+
+**⛭ THE RULE:** ***a caveat is a claim about a SET, so check the set is non-empty before shipping it. And when two
+loci in a construction give opposite answers, name which one you mean every time — a corpus that had to correct that
+confusion six times will not protect you from making it a seventh.***
+
 ### Revision r2661 — 2026-08-11 (main line). **THE BRANCH-POINT JOIN COMPUTED — exactly $9/10$, and applied once where $\Lambda$CDM spreads it over equality.**
 
 **⌗ THE DEBT AND ITS MATCHING CONDITION, one sentence apart in P15.** *"**a computed transfer function across the
