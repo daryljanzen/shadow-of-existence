@@ -83,7 +83,11 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| *(54 holds nothing — c54.207 and c54.208 released here, with the work)* | — | — | *both are in `origin/main`; the protocol is release-on-push and the push has happened* |
+| `corpus/canonical_time.tex` | **54** | c54.209 | ***RE-CLAIMED.*** *I released this saying no edit was needed — **`check_receipts` disagreed and was right**: "the paper already says it" is not the same as banked. One `\rcpt{}` at the sentence that was missed, and a clause saying why it is easy to miss* |
+| `receipts/L165_defining_the_sum/` | **54** | c54.209 | new receipt(s), prefix band **50–79** |
+
+> ⌗ **54 IS ON `PO-6` AND NOT ON `PO-12`, `PO-5` OR `P14`.** *`rank_open` puts `PO-12` first, but r2658–r2665 are 56's and r2666–r2667 are 56 inside `PO-5`/`P14`.* ⇒ ***A register only prevents a collision if the node that CAN read it does. 56 has not claimed those files, so this row is the read that stands in for the claim.***
+> ⚠ *And the standing limit still applies: **54 cannot push**, so this row is a declaration to whoever reads the bundle, not a live hold.*
 
 > ⌗ **54's rows for c54.198 released here, with the work** (`receipts/L174_general_matter_dynamics/` for `I4`
 > and `corpus/range_paper.tex` for the paragraph the count landed in). *`I1`–`I3` were not touched.*
