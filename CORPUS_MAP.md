@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2664 — 2026-08-11 (main line). **THE END-TO-END NUMBER — and the sentence after the one r2661 quoted corrected its own claim.**
+
+**⛔ THE OVER-REACH.** *r2661: "$\Phi$ is constant on the expansion leg … **with no further evolution**".*
+⇒ ***P15 owns the scope in the very next paragraph: "**One scope qualification is owed here** … the constancy
+argument runs on $\Phi''+3\mathcal H\Phi'=0$, which is the ***super-horizon*** equation: it drops the $k^2\Phi$
+term. For the acoustic modes—inside the horizon at the onset and remaining so—**the potential does decay on the
+observable leg, by a factor of order two across the first few peaks**."***
+⌗ *With the discriminating fact: "**The decay is not a radiation effect: zeroing the radiation fractions makes it
+*larger***", the rate being $k^2/(3\mathcal H)$.*
+⇒ ***r2632's rule — check the sentence AFTER the one you quoted — caught this line a second time, and on a claim it
+had already shipped.***
+
+**⛭⛭ THE NUMBERS THE CHAIN GIVES:**
+
+    LOW-ELL   LCDM 4% above asymptote at recombination, CR at it
+              power ratio (1/1.04)^2 = 0.925          =>  7.5% DEFICIT
+    HIGH-ELL  C^CR/C^LCDM = exp[-(l/l_D)^2 (r^2-1)],  r = 1.093
+              0.953 at 0.5 l_D    0.823 at l_D    0.645 at 1.5 l_D    0.459 at 2 l_D
+
+⇒⇒ ***And the GAP is named: the acoustic peaks between them, where $\Phi$ decays by a factor of order two and the
+decay is $k$-dependent.***
+
+**⛭ THE RULE:** ***a chain of results inherits the SCOPE of its weakest link, and the scope is usually written down
+somewhere the chain did not look. Before reporting an end-to-end number, find where the corpus qualifies each step —
+the qualification will tell you which part of the range the number is actually about.***
+
+⌗ *And the correction improves `PO-10`: **r2646's gate is no longer a category but a mechanism** — the potential's
+decay across the peaks is $k$-dependent and unrun.*
+
 ### Revision r2663 — 2026-08-11 (main line). **THE SUPER-HORIZON TRANSFER CLOSES — $\Phi_{\rm exp}(k)=\tfrac9{10}\Phi_i(k)$, scale-invariantly.**
 
 **⌗ THE LAST PIECE: the collapse leg's evolution UP TO the branch point.** *`sec:envelope`'s closed form gives it —

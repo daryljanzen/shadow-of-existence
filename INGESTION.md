@@ -79,6 +79,7 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2661   PO-12   THE JOIN IS COMPUTED: Phi_exp/Phi_coll = 9/10, super-horizon. Sub-horizon modes next.
     r2662   PO-12   caveat removed -- at the branch point EVERY mode is outside. The join is unrestricted.
     r2663   PO-12   SUPER-HORIZON TRANSFER CLOSES: Phi_exp(k) = (9/10) Phi_i(k), scale-invariant.
+    r2664   PO-12   NUMBERS: 7.5% low-ell deficit; 0.823 at l_D; 0.459 at 2 l_D. Peaks are the gap.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 
