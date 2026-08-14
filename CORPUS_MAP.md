@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2682 — 2026-08-11 (main line). **THE ABSENCE-OUTLIVED CLASS MEASURED — and a pattern-repair reverted after making five receipts worse.**
+
+**⌗ cc54 ROUTED 14.** *The absence-asserting class is **35 receipts, 7 failing**. A regex flipped every absence
+assertion to its positive — and **five ended up asserting `✔ NOW` beside a count of `0x`**.*
+
+**⛭ BECAUSE THE ABSENCES DID NOT ALL END:**
+
+    Higgs  2x · N_{\mathrm{eff}}  4x · "doubly ruled"  11x · Unruh  8x     ->  ENDED
+    Goldstone  0x · spontaneous  0x · three unused N_eff spellings  0x     ->  STAND
+
+⇒ ***A receipt asserting a BUNDLE of absences needs each term separated — and a bundle is exactly what a pattern
+cannot see.***
+
+✔ *Two repaired where the flip was clean (`P4`, `P10`); **five reverted** and routed as `FOR_54` item 31 with the
+measurement, which is what makes them decidable.*
+
+**⛭ THE RULE:** ***a class you can detect by pattern is not a class you can repair by pattern. The detector reads
+one property; the repair needs the sentence. When the same regex that FOUND the defect is used to FIX it, the fix
+inherits the detector's blindness — and here that blindness was the difference between an absence that ended and one
+that never will.***
+
+⌗ *Also confirmed against cc54's report: **`classify_documents` is already green** — fixed here at r2674, after
+their base at r2673a. And their **434/14** is consistent with this line's **17** at r2673, three having landed at
+r2672.*
+
 ### Revision r2681 — 2026-08-11 (main line). **THIRTY-EIGHT SENTENCES REST ON RECEIPTS THAT PROVE ONLY THAT PYTHON EXITED ZERO.**
 
 **⛔ THE MEASUREMENT.** *Of 462 receipts, **12 carry no `assert` and no `check()` at all** — and **all twelve are

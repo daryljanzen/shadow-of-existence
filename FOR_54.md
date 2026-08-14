@@ -6,6 +6,30 @@ job: THE INBOX — what the observer line has found in the working fork's text a
 sources: [chat]
 ---
 
+## ⌗ 31 · THE ABSENCE-OUTLIVED RECEIPTS — measured, two fixed, five ROUTED r2682
+
+*cc54 routed 14; the absence-asserting class is **35 receipts**, of which **7 fail**. **Two are repaired
+here** (`P4`, `P10`) and **five are reverted and routed**, because they do not resolve by flipping a
+comparison.*
+
+**⌗ THE MEASUREMENT, which is what makes them decidable:**
+
+    Higgs             2x in the papers   -> the absence ENDED
+    N_{\mathrm{eff}}  4x                 -> ENDED
+    doubly ruled     11x                 -> ENDED
+    Unruh             8x                 -> ENDED  (all 8 are RindlerIshak2007 citations)
+    Goldstone         0x                 -> STANDS
+    spontaneous       0x                 -> STANDS
+    Neff / N_{\rm eff} / N_\mathrm{eff}  0x  -> the corpus uses ONE spelling
+
+⇒ ***So it is not one flip: **some absences ended and some did not**, and a receipt asserting a bundle of
+them needs each term separated. Five carry bundles.***
+
+⚠ **AND THIS LINE STOPPED RATHER THAN CONVERT THEM BY PATTERN.** *A first pass flipped all seven by regex
+and left five in a worse state — asserting `✔ NOW` beside a count of `0x`. **Reverted.** These are
+`L-204`/`L-803` band and the separation is a reading of what each citing sentence claims.*
+
+
 ## ⛔ 30 · TWELVE CITED RECEIPTS CANNOT EXIT NON-ZERO — routed r2681
 
 *Of 462 receipts, **12 carry no `assert` and no `check()` at all** — and **all twelve are cited in the

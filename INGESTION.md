@@ -94,7 +94,8 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2678   ---     unbanked.py built; excentre found and routed as FOR_54 item 29.
     r2679   ---     unbanked: pushforward -> colour at the CENTRE vs isospin at the WEYL element.
     r2680   ---     monomial was sympys API; unbanked.py now counts prose only. 91 -> 46.
-    r2681   ---     CLAIMED: certified (22 uses, verify_ receipts) -- the next real unbanked candidate.
+    r2681   ---     certified = meta-vocabulary; found 12 cited receipts that cannot exit non-zero.
+    r2682   ---     CLAIMED: the 14 absence-outlived receipts cc54 routed. Mine by class (r2672).
 
 ## ⓸ WHAT THIS LINE IS TAKING
 
