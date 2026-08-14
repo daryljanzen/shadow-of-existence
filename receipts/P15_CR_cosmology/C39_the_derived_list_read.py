@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
-"""C39 -- `PO-10`'s derived-quantity list, taken from P15's OWN marker language: four pairs, each with
+"""C39 -- ⛔ **CORRECTED r2758: THE FOURTH PAIR IS NOT A PAIR.**  *** The onset ratio "returns
+1.99 ... the quoted value to one per cent, from standard thermodynamics" -- an IDENTITY on
+$\\eta$ and $\\omega_m/\\omega_b$, both inherited.  **Same class as $N_{\\rm eff}$ and $A_s$, which
+this receipt correctly excluded** -- and the receipt it was read from says so in the sentence
+quoted.  See `C48_the_pairs_are_three`.  ⌗ *This receipt named the risk correctly ("the
+exclusion list decides the comparison's size") and then took the generous read on the one entry
+it had just discovered.*  ** What survives: the marker-phrase SEARCH METHOD, and the three
+genuine pairs. ** ***
+
+C39 -- `PO-10`'s derived-quantity list, taken from P15's OWN marker language: four pairs, each with
 the paper's own accuracy statement attached, and each fitted quantity excluded by the paper's own words.
 
 ** THE OWED HALF. **  r2746 left the row owing two things: ** the published uncertainties ** (data, not

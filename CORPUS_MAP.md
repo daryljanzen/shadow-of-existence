@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2758 — 2026-08-11 (main line). **`PO-10`'s PAIRS ARE THREE — the onset ratio is an identity on inherited inputs.**
+
+**⛭⛭ ⓵ TWO HOLD AGAINST ASSERTING RECEIPTS.**
+
+    r_s      C9_sound_horizon_and_ratio   assert abs(rs_LC - 145.38) < 0.05
+    1+z_eq   P15_desi_dr2_confrontation   assert abs((1+zo)/3402 - 2.0) < 0.05
+
+*Unlike $\theta_*$ at r2748, both agree with P15's prose.*
+
+**⛔⛭⛭ ⓶ AND THE THIRD IS NOT DERIVED.** *The onset ratio "returns $1.99$ at $T=1.6$eV --- the quoted value to one
+per cent, **from standard thermodynamics**" — an identity on $\eta$ and $\omega_m/\omega_b$, both inherited.*
+⇒ ***Same class as $N_{\rm eff}$ and $A_s$, which C39 correctly excluded — **and the disqualifying clause was in
+the sentence C39 quoted from**.***
+
+**⓷ SO C39 NAMED THE RISK AND THEN RAN INTO IT.** *Its own framing: the exclusion list "decides the comparison's
+size, and it is decided by reading rather than by choosing." **It then took the generous read on the one entry it
+had just discovered** — the one it was pleased to have found by searching marker phrases.*
+⌗ ***The method was right and the verdict on its find was not. Being pleased with how you found something is not
+evidence about what you found.***
+
+**⚠ A NEAR-MISS WORTH KEEPING.** *`P15_two_arm_control_and_guard` carries `CR 1.9968` / `LambdaCDM 2.0005` — **the
+source comb landing on integers, a different quantity with the same digits**. Matching on the number alone would
+have found an asserting receipt that asserts something else.*
+
+**⛭ THE RULE:** ***a number needs its ATTRIBUTION checked, not just its value — "which returns 1.99" and "which
+returns 1.99 FROM STANDARD THERMODYNAMICS" are the same number and opposite claims. Read to the end of the sentence
+that supplies it.***
+
+⌗ *`C39` corrected at source. `PO-10` is three pairs plus a shape test; **one item remains: the published
+uncertainties.***
+
 ### Revision r2757 — 2026-08-11 (main line). **THE OWED LIST ONLY APPENDED — 19 of 25 were done or duplicate.**
 
 **⌗ THE PROMPT.** *"Note how we grew number of things owed again … we can't pick one and finish it without leaving
