@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r2677 — 2026-08-11 (main line). **c54.210 FOLDED BY RE-DERIVATION — the counterterm basis is one-dimensional, and the scope is necessary.**
+
+**⌗ A SENTENCE WRITTEN AS A LIMITATION, READ AT A DIFFERENT QUESTION.** *p0: "**every curvature invariant on either
+face is a pure power of $1/\alpha^2$**" — written to show the construction **cannot force a coupling**. 54 read it
+at the counterterm basis.*
+
+**⛭⛭ RE-DERIVED HERE at $D=4,5,6$:**
+
+    D=4:  R^2 = 144/a^4    Ric^2 = 36/a^4    Riem^2 = 24/a^4
+    D=5:  R^2 = 400/a^4    Ric^2 = 80/a^4    Riem^2 = 40/a^4
+    D=6:  R^2 = 900/a^4    Ric^2 = 150/a^4   Riem^2 = 60/a^4
+
+⇒⇒ ***Each a rational constant times $\alpha^{-4}$, so the three quadratic counterterms and the volume term are
+FOUR MULTIPLES OF ONE FUNCTIONAL. A divergence of any degree needs ONE counterterm where a generic theory needs
+three — the basis is one-dimensional because the background family is.***
+
+**⛭ AND THE SCOPE IS NECESSARY, CHECKED RATHER THAN ASSUMED.** *A basis degeneracy is a property of the BACKGROUND
+CLASS, and **the tower lives on the LAYER**. For $a\sim\sinh^{2/3}(3Ht/2)$:*
+
+    R(t) = H^2 (12 cosh 3Ht - 6)/(cosh 3Ht - 1)     ->  infinity  early,  12H^2  late
+
+⇒ ***The layer's curvature RUNS where the substrate's does not, so the transfer needs argument.***
+
+**⇒ `PO-6`'s DARK HALF IS NOW A STATED CALCULATION:** ***does the one-dimensional basis survive on a background
+whose curvature runs?*** *Stated object, known instrument (sub-leading heat-kernel coefficients), decidable answer.
+Registered `L-543`; **the calculation is 54's**.*
+
+**⛭ THE RULE:** ***a negative result and a sufficiency can be the same sentence. When a paper says "X is only ever
+Y", ask what QUESTION makes that a resource — the author wrote it against the question they had, and a constraint is
+a degeneracy seen from the other side.***
+
+⌗ *And A7's r2570 verdict had sat in ledgers for a hundred revisions at **zero uses in print** — the `L-535` class,
+**caught by counting uses rather than by reading**.*
+
 ### Revision r2676 — 2026-08-11 (main line). **`PO-4`'s GAP IS THE TORUS, NOT THE GROUP — and the stamp now carries receipt health.**
 
 **⌗ THE NAIVE COUNT MAKES IT HOPELESS.** *$\langle T\rangle\cong\mathbb Z_2$ has dimension 0 against $SU(2)$'s 3,
