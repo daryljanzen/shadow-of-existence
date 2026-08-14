@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r2756 — 2026-08-11 (main line). **THE LAST DISAGREEMENT CLOSED — r2752 omitted neutrinos.**
+
+**⛭⛭ ⓵ THE RECEIPT'S RADIATION DENSITY INCLUDES NEUTRINOS.**
+
+    Ogamma = 2.4728e-5 / h^2 * (TCMB/2.7255)^4
+    Onu    = Ogamma * (7/8) * (4/11)^(4/3) * 3.046      Onu/Ogamma = 0.6918
+    Orad   = Ogamma + Onu
+
+*r2752 used $\Omega_\gamma$ alone — **a $69\%$ underestimate of what sources $H$ in the $\Lambda$CDM arm**.*
+
+**⓶ AND IT WAS ASYMMETRIC BY CONSTRUCTION.** ***The CR arm has no radiation in $H$ at all, so the omission changed
+ONE ARM ONLY — which is why it moved the ratio when four earlier candidates did not.***
+
+    photons only (r2752)          ratio 1.0563   +5.63%
+    photons + neutrinos           ratio 1.0896   +8.96%
+    the receipt reports           ratio 1.0897   +8.97%
+
+⌗ *The absolute $r_D$ still differ by $\sim3\%$ — grid and quadrature — **and that cancels from the ratio, exactly
+as r2752's own rule predicts for a shared defect. The rule held; it was being applied to the wrong quantity.***
+
+**⛭ THE ARC.** *Six revisions, five wrong diagnoses: the $x_e$ response (too small), a normalisation (cancels),
+truncation (converges), the $x_e$ WEIGHT (**held**), and finally this line's own missing neutrinos.*
+⇒ ***The one that held was the one that could be toggled on a fixed range. The one that closed was found by diffing
+constants, not by reasoning about physics.***
+
+**⛭⛭ THE RULE:** ***when two implementations of the same calculation disagree, read the other one's CONSTANTS
+before you theorise about its METHOD. A missing term in a density is invisible to every argument about integrands,
+and it is the first thing a diff would have shown.***
+
+⌗ *Every route now agrees: $\theta_D/\theta_*=1.0816$ direct, $1.0824$ through `C9`'s division, and the $r_D$ ratio
+underneath both confirmed. **P15's ten instances read $8.2\%$ and nothing in the corpus contests it.***
+
 ### Revision r2755 — 2026-08-11 (main line). **THE HEDGED NUMBER WAS RIGHT — nine $\sim8\%$ stand, the one $9.4\%$ was the error.**
 
 **⓵ TRACED IN THREE STEPS.** *P15's $9.4\%$ cites `C10` ($+9.26\%$), which cites `C9`, which computes:*

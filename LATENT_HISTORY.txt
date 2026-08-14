@@ -209,3 +209,4 @@ r2752  COMPUTED    the damping gap is TRUNCATION: the ratio converges only by z~
 r2753  COMPUTED    RESOLVED: x_e does not cancel from a ratio of INTEGRALS. +9.94 -> +8.37, the whole gap. C8 corrected.
 r2754  LATENT      P15 carries 9.4 / ~8 / 8.16 for ONE named observable, theta_D/theta_*. A deferral removed from C45.
 r2755  LATENT      the 9.4% inherits C8s x_e omission. Nine ~8% were RIGHT; ten instances now 8.2%.
+r2756  COMPUTED    +5.66% reconciled: r2752 omitted neutrinos from Omega_rad. Ratio 1.0896 vs the receipts 1.0897.
