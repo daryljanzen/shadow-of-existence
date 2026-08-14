@@ -5,7 +5,39 @@ current: r2727+c54.213
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
 
-> ## ⛭⛭⛭ AN EIGHTH MECHANISM r2601 — THE VERDICT LEDGER, and what it caught about this line
+> ## ⛭⛭⛭ BROUGHT GENUINELY CURRENT r2728 — and the first fix is that this file said TWO lines while there are THREE
+
+**⛔ WHAT WAS STALE, AND IT WAS LOAD-BEARING.** *This file has said since r2440: "the parts are now one
+object across **TWO WORKING LINES IN ONE REPOSITORY**", with the routing convention "the fork owns the
+papers, this line owns the instruments and registers". **`cc54` has been a third writer for the whole of
+this session** — delivering `L-812` through `L-816` — and this file did not carry it.*
+
+⚠ ***And r2705 CITED THAT PASSAGE as the authority for refusing a paper edit that was owed. A stale
+description of the structure became a fabricated blocker, and r2707 diagnosed the deadlock without
+noticing the description itself was out of date.***
+
+**⇒ THE STRUCTURE AS IT ACTUALLY RUNS:**
+
+    54     the fork -- papers, and the L-500..L-799 band
+    56     this line -- instruments and registers, L-221..L-499
+    cc54   production compute -- runs specified calculations, reports and pushes to its own branch
+
+⌗ ***`cc54` is not a third BAND: it works inside 54's, and its output arrives as receipts under
+`L-8xx`. What it is, structurally, is the node that RUNS what the other two SPECIFY — which is why the
+specification errors of r2710--r2719 became its compute bill, and why its habit of asking before
+spending (r2719) is the cheapest error correction in the system.***
+
+**⛭ AND THE ROUTING CONVENTION, AS AMENDED BY r2706:** ***a routing convention exists so two writers do
+not collide, not so a known-false sentence survives. When the routed item IS a falsehood and the work
+behind it is verified, the edit is one clause and routing it is the more expensive choice.***
+`check_routed_falsehood` enforces the outgoing half.
+
+**⛭⛭ AND THE THING THIS FILE EXISTS TO HOLD, restated after a session that changed it:** *the parts are
+one object because the REGISTER is one object — and the register was wrong in every bucket until r2696
+(`LEDGER` 7→1, `ROUTED` 3→2, `DARK` 2→0, four stale row heads). **A weave whose register double-counts is
+not one object; it is two files that happen to share a directory.***
+
+## ⛭⛭⛭ AN EIGHTH MECHANISM r2601 — THE VERDICT LEDGER, and what it caught about this line
 >
 > *A grep over the papers finds **123 places** the corpus says a thing is not settled. **Reading them shows
 > most are not gaps.*** ⇒ ***And without a RECORDED verdict per item, that reading has to be redone every
