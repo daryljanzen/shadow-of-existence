@@ -1,7 +1,7 @@
 ---
 name: conformal-geometry-ledger
 description: R-M's second field bake — conformal / Möbius geometry thrown at the CR substrate. Opened r1853 (Phase 8), handed to directly by the quadric bake's Cayley–Klein identification. Baseline, opening question, probes, and the Phase 9 routing.
-current: r2517+c54.201
+current: r2676+c54.211
 ---
 
 > **⌗ CHECKED AGAINST c54.163→c54.185 AND DECLARED CURRENT r2449.** *The span's substantive content is **the derived
@@ -56,6 +56,26 @@ geometry is precisely what preserves a null cone.***
 available · verdicts of **BITES / CONFIRMS / BOUNCES** · and a theorems section in four parts —
 **imported-and-exact · imported-and-BOUNDED · does-NOT-import-and-why · untried.** **The third part is the
 load-bearing one and only a worked application can supply it.***
+
+---
+
+## ⛭⛭ BROUGHT CURRENT c54.211 — **the conformal direction is where the tower's floor question was decided, and this bake never carried it**
+
+*P10, on why $\hat\Gamma$ is bounded below after all (`L-542`, c54.209):* ***"The DeWitt form carries
+exactly one negative direction and it is the conformal one, which is why the Wheeler–DeWitt equation is
+hyperbolic; on transverse-traceless momenta that term drops and the form is $\mathrm{tr}((g\pi)^{2})$
+… positive definite for every non-degenerate spatial metric."***
+
+⇒ ***SO THE ENTIRE SIGN PROBLEM OF THE GRAVITATIONAL KINETIC FORM IS CONFORMAL, AND REMOVING THE
+CONFORMAL MODE IS WHAT MAKES THE HAMILTONIAN BOUNDED BELOW.*** ⌗ *P10 says the same move does two jobs
+at once: "the deparametrization that yields a true Hamiltonian is the same move that yields a
+bounded-below one, **both being the removal of the conformal direction**."*
+
+**⌗ WHAT THIS BAKE SHOULD RECORD:** *conformal geometry is not a decorative lane here — **the one
+negative eigenvalue of the DeWitt supermetric is the conformal factor**, and the corpus's
+transverse-traceless restriction is a conformal statement doing quantum-gravitational work.* ⚠ *And
+its limit is conformal too: the positivity holds on **non-degenerate** metrics, the degenerate boundary
+being where the thermal condition takes over.*
 
 ---
 

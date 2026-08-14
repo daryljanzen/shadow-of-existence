@@ -1,7 +1,7 @@
 ---
 name: the-equivalence-structures-census
 kind: STATE
-current: r2517+c54.201
+current: r2676+c54.211
 class: whole-corpus-instrument
 job: Which apparent TWO are ONE object read two ways? — the corpus-wide equivalence-structures census, the dual of the pry-apart. Read BEFORE claiming two things are distinct. ⚠ Its own comb is OWED: 'the comprehensive comb the corpus has NOT yet done'.
 sources: [cowork]
@@ -41,6 +41,26 @@ sources: [cowork]
 one object read two ways, across mathematics and physics and where they meet operationally. The dual of the
 PRY-APART census (that un-welds a false weld; this identifies a true identity kept falsely separate). Swept at
 source. The comprehensive comb the corpus has NOT yet done (the BH/FLRW reading is in p0 but the full list isn't).*
+
+## ⛭⛭⛭ BROUGHT CURRENT c54.211 — **two new entries, and the second is a sentence rather than an object**
+
+**⌗ ⓵ THE de SITTER ENTROPY AND THE COSMOLOGICAL-CONSTANT PROBLEM'S FACTOR ARE ONE QUANTITY** (`L-532`,
+c54.207). *Not the same magnitude — **the same number**.*
+$$S=\frac{3\pi}{\Lambda\ell_P^{2}}\qquad\text{against}\qquad \frac{\rho_{\rm vac}}{\rho_\Lambda}\sim\frac{8\pi}{\Lambda\ell_P^{2}}$$
+⇒ ***They differ by $3/8$ and by nothing else; both are $1/(\Lambda\ell_P^{2})$.*** *This census's exact
+shape: a reader arriving from horizon thermodynamics and a reader arriving from fine-tuning are holding
+one dimensionless combination, and p0's dissolution of the second was already the dissolution of the
+first.*
+
+**⌗ ⓶ AND ONE THAT IS NOT TWO OBJECTS BUT ONE SENTENCE DOING TWO JOBS** (`L-543`, c54.210). *p0's
+"every curvature invariant on either face is a pure power of $1/\alpha^{2}$" was written to show the
+construction **cannot force** a dimensionless coupling — a limitation.* ⇒ ***Read at the counterterm
+basis the same sentence says the construction **does not need** one — a sufficiency.***
+⌗ ***This is a variety this census had not carried: not two structures that are one, but one statement
+whose two readings sit on opposite sides of the same ledger.*** *Worth a column of its own if a second
+instance turns up.*
+
+---
 
 ## LEVELS — the census is consolidated HERE; the corpus places instances DISTRIBUTED at synthesis-seams.
 The census metadoc (this file) is the single consolidated list, at the project level. The CORPUS is NOT

@@ -110,3 +110,4 @@ r2674  INSTRUMENT  cleared cc54s CI blocker -- my two turn ledgers were UNCLASSI
 r2675  INSTRUMENT  check_no_stdlib_shadow built+seeded+wired; all four namespace-collision classes now gated
 r2676  COMPUTED    a horn swap is the WEYL Z_2 not the centre; the missing piece is the torus
 c54.210  LATENT      PO-6 UV half: the counterterm basis is one-dimensional because the background family is; p0 said the invariant fact for another job
+c54.211  LATENT      withdrew my own c54.210 scope: P10s slicing is a(T)=alpha*cosh(T/alpha), exactly de Sitter, so the degeneracy holds on the towers own background

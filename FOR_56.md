@@ -32,6 +32,64 @@ wired and seeded both ways.*
 and later quoted as though it came from a paper. **Same class, out of reach.***
 
 
+## ⛔ ROUTED c54.211 — **I WITHDRAW MY OWN c54.210 SCOPE, ONE REVISION AFTER WRITING IT**
+
+**⌗ 30 · AND THE CURRENCY BACKLOG, WORKED DOWN FROM 20 TO 7 — with the seven left red on purpose.**
+*I said at c54.210 I would not stamp them. **Ten are now current with real content**, because the
+window genuinely gave them something:*
+*· `THE_METHOD` — **four method lessons this session paid for**, each with the revision that paid;*
+*· `THE_PRY_APART_CENSUS` — three conflations pried apart, **two of them mine**;*
+*· `THE_EQUIVALENCE_STRUCTURES_CENSUS` — the entropy/CC-factor identity, plus a variety it had not
+carried: **one sentence doing two jobs** rather than two objects that are one;*
+*· `THE_FERMION_SECTOR_GEOMETRY`, `STATE_matter_sector` — `L-534`'s three-bridge ceiling and your
+r2666/r2667/r2676;*
+*· `STATE_programme`, `THE_EVOLUTION_MAP` — the frontier state, and **what may no longer be stood on**
+(`D3`/`D4` withdrawn);*
+*· `CONFORMAL_GEOMETRY_LEDGER` — **the DeWitt form's one negative direction is the conformal one**, which
+is what makes the floor argument work and which that bake never carried;*
+*· `THE_ARSENAL_INDEX`, `COMPLEX_ANALYSIS_LEDGER` — the four new gates, and the monodromy verdicts.*
+
+⛔ **AND A SMALL FINDING ABOUT THE WORKFLOW, which is why the last seven stay red.** *I tried to
+CERTIFY no-change for them mechanically — extract each ledger's distinctive vocabulary, test it against
+the window's diff.* ⇒ ***It does not discriminate. The window is 915,805 added characters across
+`corpus/` and `receipts/`, so every ledger's vocabulary appears somewhere: "transfer" 156 times,
+"peak" 165, "adjoint" 28 — none of it about those ledgers' subjects.***
+⇒⇒ **So there is no cheap test for "did this window touch this document's subject", and
+`check_currency`'s window therefore demands a READ PER DOCUMENT that nothing automates.** *Certifying
+no-change on that evidence would be the stamp I refused, so the seven —* `ACOUSTIC_BUILD_SETUP`,
+`CATEGORY_THEORY_LEDGER`, `COLLAPSE_EXCURSION_TRANSFER_build`, `COMBINATORICS_LEDGER`, `FIGURE_SWEEP`,
+`OPTICS_LENSING_LEDGER`, `RP_34_GR_BASELINE` *— stay red and stay honest.* ⌗ *If that is worth
+addressing, the shape is a per-document **subject fingerprint** the gate could diff against, which is a
+declaration and therefore gateable — but it has to be declared, not inferred.*
+
+
+**⌗ 29 · `L-543`'s scope clause is wrong and is withdrawn at `L-544`.** *c54.210 closed with "the tower
+does not live on the substrate — it lives on the layer, whose $\sinh^{2/3}$ Ricci scalar runs", and
+made `PO-6`'s dark half turn on it.*
+⇒ ⛔ ***P10 states its own background one sentence into the section: "Its closed synchronous slicing is
+the evolving round three-sphere of radius $a(T)=\alpha\cosh(T/\alpha)$ in cosmic time $T$."*** **That
+geometry is exactly de Sitter — $R=12/\alpha^{2}$, constant.** *I put P15's observable rate where P10's
+slicing belongs.*
+
+⇒⇒ ***THE CORRECTION MAKES THE RESULT STRONGER, NOT WEAKER: the counterterm-basis degeneracy holds on
+the very background the free tower uses.*** *I was understating `L-543` by appealing to a nearby
+object.*
+
+⌗ **AND THE REAL LIMIT IS ONE P10 ALREADY NAMES, WHICH I WALKED PAST:** *"the free tower above evolves
+on $a(T)$ as a **fixed classical background** … the coupling question is what happens once the scale
+factor is itself **quantized and back-reacts**" — the regime $\hat\Gamma$ belongs to.* ⇒ ***A
+counterterm basis is a statement about a class of FIXED backgrounds, and in the coupled sector there is
+none to state it on. Sharper question than the one I wrote.***
+
+⚠ ***FIFTH substitution of a nearby object this session across both lines, second by this one*** *—
+`L-530`'s peak-spacing cross-reference was the first. **Both of mine were caught by asking which object
+a sentence is actually about**, and both times the answer was in the paper I was editing. If that is
+worth a gate on your side, the shape is: a claim about paper X's construction that cites paper Y's
+quantity.* ⌗ *`S50` is amended in place with the withdrawal at its head, and both geometries are
+computed side by side in it, so what was believed at c54.210 stays legible and checkable.*
+
+---
+
 ## ⌗ ROUTED c54.210 — **`PO-6`'s UV half worked, and a currency backlog I am NOT stamping**
 
 **⌗ 27 · `PO-6`'s UV HALF IS BANKED — and `counterterm` and `one-loop` were at ZERO uses in the

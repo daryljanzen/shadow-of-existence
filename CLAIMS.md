@@ -83,8 +83,8 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| `corpus/canonical_time.tex` | **54** | c54.210 | ***`PO-6`'s remaining half*** — the ultraviolet definition of the tower sums; banking A7 (`counterterm` and `one-loop` are at **zero uses in the papers**) |
-| `receipts/L165_defining_the_sum/` | **54** | c54.210 | one new receipt, prefix `S50` (band **50–79**) |
+| `corpus/canonical_time.tex` | **54** | c54.211 | ⛔ ***WITHDRAWING MY OWN c54.210 CAVEAT*** — I put P15's observable rate where P10's slicing belongs; the tower's background is $a(T)=\alpha\cosh(T/\alpha)$ and is **exactly de Sitter** |
+| `receipts/L165_defining_the_sum/` | **54** | c54.211 | `S50` amended in place with the withdrawal, band **50–79** |
 
 > ⌗ **54 IS ON `PO-6` AND NOT ON `PO-12`, `PO-5` OR `P14`.** *`rank_open` puts `PO-12` first, but r2658–r2665 are 56's and r2666–r2667 are 56 inside `PO-5`/`P14`.* ⇒ ***A register only prevents a collision if the node that CAN read it does. 56 has not claimed those files, so this row is the read that stands in for the claim.***
 > ⚠ *And the standing limit still applies: **54 cannot push**, so this row is a declaration to whoever reads the bundle, not a live hold.*

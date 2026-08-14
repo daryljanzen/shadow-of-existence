@@ -1,10 +1,34 @@
 ---
 name: the-pry-apart-census
 kind: STATE
-current: r2517+c54.201
+current: r2676+c54.211
 class: whole-corpus-instrument
 job: Which apparent ONE is TWO things a conflation welded? — the corpus-wide pry-apart census, the dual of the equivalence census. Read BEFORE trusting a standard identification. ⚠ Its own comb is OWED: 'OTHER homes to be FOUND by combing'.
 sources: [cowork]
+---
+
+## ⛭⛭⛭ BROUGHT CURRENT c54.211 — **three conflations pried apart, and two of them were this line's own**
+
+**⌗ ⓵ "FINITE AT EACH FINITE TIME" IS NOT "BOUNDED"** (`L-531`, c54.207). *The static-frame blueshift at
+a still-collapsing surface is finite at every finite exterior time and **its supremum is infinite** —
+$\delta\propto e^{-2\kappa t}$, so the factor grows as $e^{+\kappa t}$.* ⇒ ***One welded phrase, two
+claims, and only the weaker is available. P1 now carries the distinction in print because a referee in
+that area presses exactly there.***
+
+**⌗ ⓶ A TRUNCATION IS NOT THE FUNCTION IT TRUNCATES** (`L-542`, c54.209). *$\hat\Gamma$'s cubic term
+$-\lambda\phi\pi^{2}$ is a square times a signed field and goes arbitrarily negative; it is the
+**first-order term** of $\pi^{2}/(1+\lambda\phi)$, which is positive wherever the metric is
+non-degenerate.* ⇒ ***Reading the truncation as the operator cost a physics conclusion for twenty
+revisions.***
+
+**⌗ ⓷ ⛔ AND P10's SLICING IS NOT P15's OBSERVABLE RATE** (`L-544`, c54.211 — *this line's own error,
+one revision old*). *P10's tower lives on $a(T)=\alpha\cosh(T/\alpha)$, whose $R=12/\alpha^{2}$ is
+**constant**; P15's radiation-free $\sinh^{2/3}$ has an $R$ that **runs**. c54.210 substituted the
+second for the first and scoped a result on the wrong geometry.*
+⇒ ***THE SHAPE WORTH CARRYING: a claim about paper X's construction that reaches for paper Y's
+quantity. Both of this line's two substitutions this session were that, and both were caught by asking
+which object the sentence is actually about.***
+
 ---
 
 ## ⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **THREE NEW PRY-APARTS, AND ONE OF THEM IS A LIVE CONFLATION IN A PAPER**

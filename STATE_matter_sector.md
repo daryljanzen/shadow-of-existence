@@ -2,7 +2,7 @@
 name: state-matter-sector
 description: Where the matter sector and the colour question actually stand — read this before touching P13, P14, or family 12. Position, not history.
 sources: [chat]
-current: r2517+c54.201
+current: r2676+c54.211
 ---
 
 > ## ⚠⚠ THE SHEAR COUNT BELOW IS SUPERSEDED — annotated r2517
@@ -16,6 +16,24 @@ current: r2517+c54.201
 > static coordinates, the whole difference longitudinal.*
 > ⚠ *And **Goldberg–Sachs bears on the OPTICAL shear, not on $\sigma^{TT}$** — r2505's attribution withdrawn.*
 
+
+## ⛭⛭ BROUGHT CURRENT c54.211 — **read this before touching P13/P14: three verdicts landed since c54.201**
+
+*· **`L-534` (c54.207, 54):** the three named bridges off the $R$-grading — cohomology, representation
+branching, spectral projection — **fail in three different ways and all three terminate at dimension
+2**. Cohomology IS the kernel on a two-term grading; $R$ grades rather than exchanges so branching
+returns a character; the only canonical spectral rung has multiplicity 2. ⇒ ***The obstruction is the
+size of the discrete residue, not the choice of bridge.*** ⌗ *The **anomaly** route stays untested.*
+*· **r2666 (56):** `PO-5`'s coupling settled **negatively** — it cannot come from the colour bundle.*
+*· **r2667 (56):** and P14 already walled two of the routes, so r2666 rediscovered one of them.*
+*· **r2676 (56):** `PO-4`'s gap is **the torus, not the group**.*
+
+⇒ ***So the sector's open surface is narrower and more precisely shaped than at c54.201: what is
+missing is not a bridge to try but a structure large enough to carry a multiplet.*** ⚠ *Unchanged: the
+built spinor sector delivers count, chirality and family symmetry; the coupling and $\mathrm{SU}(2)_L$
+as a gauging are not delivered, and `F1` still fires if the gauge group is promoted to forced.*
+
+---
 
 ## ⛭⛭ THE QUARK/LEPTON FRONT IS NOW AN OPERATOR QUESTION — added r2476
 

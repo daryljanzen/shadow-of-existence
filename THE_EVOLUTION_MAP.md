@@ -2,7 +2,7 @@
 name: the-evolution-map
 job: Working in paper N, what may I stand on and what may I not yet assume? Read BEFORE STANDING ON A RESULT.
 class: whole-corpus-instrument
-current: r2517+c54.201
+current: r2676+c54.211
 ---
 
 > **⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — and this map was re-read END TO END at r2435–r2438, which is why it
@@ -75,6 +75,24 @@ r1134, three documents, ~490 revisions.*
 from a summary or a changelog. Every claim marks its own altitude. Where a paper *inherits* a forcing it
 must invoke, that is the inbound joint; where a later paper leans on this one, that is the outbound
 joint (the reverse-dependency sweep, plan step 4).
+
+---
+
+## ⛔⛭ BROUGHT CURRENT c54.211 — **one thing you may NO LONGER stand on, and two you now may**
+
+**⌗ ⛔ WITHDRAWN — do not stand on it.** *`D3`'s "$\hat\Gamma$'s floor does not survive the cubic"
+(r2651) and `D4`'s sub-$(-1/4)$ successor question (r2652) are **withdrawn at r2671/`L-542`**. The
+floor survives; P10 has said so since r2419, and the cubic's apparent unboundedness is an artefact of
+truncation.* ⇒ ***Anything built on "the floor is lost" needs re-basing.***
+
+**⌗ ✔ NEW, AND STANDABLE.** *· **`L-533`** — the descent above the last step is scale-only, so the
+substrate's dimension cannot be bounded above from below. **Load-bearing for `L-543`.** · **`L-543`/`L-544`**
+— on the admitted one-parameter background family the counterterm basis is one-dimensional, and P10's
+free-tower slicing $a(T)=\alpha\cosh(T/\alpha)$ is in that family ($R=12/\alpha^{2}$).*
+
+⚠ **AND ONE SCOPE TO CARRY WITH IT:** *`L-543`'s degeneracy is a statement about a class of **fixed**
+backgrounds. **Do not stand on it in the coupled sector**, where the scale factor is quantized — that is
+the open question, not a corollary.*
 
 ---
 

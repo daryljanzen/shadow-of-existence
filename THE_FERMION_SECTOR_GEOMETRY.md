@@ -2,7 +2,36 @@
 name: the-fermion-sector-geometry
 description: The Standard Model's fermion content read in the corpus's own hinge/lap/involution geometry — colour, isospin, chirality, fractional charge, confinement, leptons, generations. A SPINE document of the live arc, not an annex. Every correspondence carries what a proof would have to establish and what would refute it.
 sources: [cowork]
-current: r2517+c54.201
+current: r2676+c54.211
+---
+
+## ⛭⛭⛭ BROUGHT CURRENT c54.211 — **the three routes off the $R$-grading are closed, and they close on ONE NUMBER**
+
+*`L-534` (c54.207) worked `PO-5`'s three named alternatives to "be a kernel". They fail in three
+different ways and **all three terminate at dimension 2**.*
+
+**⌗ COHOMOLOGY is not an alternative — on a $\mathbb{Z}_2$ grading it IS the kernel.** *A complex needs
+an odd NILPOTENT differential. Odd is available ($\{\gamma^\mu,\gamma^5\}=0$); nilpotent is not —
+**an odd operator on a Clifford module squares to the METRIC**, $D(p)^2=p^2\cdot\mathbb 1$. Zero one of
+the two maps and the two-term complex has $\ker\oplus\operatorname{coker}$ for its cohomology: the
+graded index again.* ⌗ *This **explains** an absence rather than recording one — the corpus carries no
+differential anywhere in seventeen papers, including the algebroid paper where Chevalley–Eilenberg
+cohomology is the natural object. **On a two-term grading there is nothing for a complex to be.***
+
+**⌗ BRANCHING returns a CHARACTER, because $R$ GRADES and does not EXCHANGE** — *P13's own sentence,
+written for another purpose. A $\mathbb{Z}_2$ that fixes rather than pairs adds a sign and no dimension;
+and $D_6=S_3\times\mathbb{Z}_2$ has irreducible dimensions $1,1,2$ twice over, solved from the class
+equation.* ⇒ **Max multiplet: a doublet.**
+
+**⌗ SPECTRAL PROJECTION is the only one not closed structurally, and it returns a doublet too.** *The
+angular spectrum $\lambda=\pm1,\pm2,\dots$ is uniformly spaced so no band is canonical — **but
+$\lambda=0$ is excluded by the construction ($W=0$, no wall), so the lowest rung is**, at multiplicity
+$2\lvert\lambda\rvert=2$.*
+
+⇒⇒ ***THE OBSTRUCTION IS THE SIZE OF THE DISCRETE RESIDUE, NOT THE CHOICE OF BRIDGE.*** *Three routes,
+one wall, three sides — and a Standard Model generation is fifteen Weyl states.* ⚠ *The **anomaly**
+route (`A6`) is untested and nothing above bears on it; the vein is MAPPED, not closed.*
+
 ---
 
 ## ⛭⛭ THE INDEX'S OWN STATUS, AND WHAT WOULD COMPUTE IT — added r2492 from station Ⓗ
