@@ -146,6 +146,163 @@ sources: [cowork, chat]
 
 
 
+### Revision r2682 — 2026-08-11 (main line). **THE ABSENCE-OUTLIVED CLASS MEASURED — and a pattern-repair reverted after making five receipts worse.**
+
+**⌗ cc54 ROUTED 14.** *The absence-asserting class is **35 receipts, 7 failing**. A regex flipped every absence
+assertion to its positive — and **five ended up asserting `✔ NOW` beside a count of `0x`**.*
+
+**⛭ BECAUSE THE ABSENCES DID NOT ALL END:**
+
+    Higgs  2x · N_{\mathrm{eff}}  4x · "doubly ruled"  11x · Unruh  8x     ->  ENDED
+    Goldstone  0x · spontaneous  0x · three unused N_eff spellings  0x     ->  STAND
+
+⇒ ***A receipt asserting a BUNDLE of absences needs each term separated — and a bundle is exactly what a pattern
+cannot see.***
+
+✔ *Two repaired where the flip was clean (`P4`, `P10`); **five reverted** and routed as `FOR_54` item 31 with the
+measurement, which is what makes them decidable.*
+
+**⛭ THE RULE:** ***a class you can detect by pattern is not a class you can repair by pattern. The detector reads
+one property; the repair needs the sentence. When the same regex that FOUND the defect is used to FIX it, the fix
+inherits the detector's blindness — and here that blindness was the difference between an absence that ended and one
+that never will.***
+
+⌗ *Also confirmed against cc54's report: **`classify_documents` is already green** — fixed here at r2674, after
+their base at r2673a. And their **434/14** is consistent with this line's **17** at r2673, three having landed at
+r2672.*
+
+### Revision r2681 — 2026-08-11 (main line). **THIRTY-EIGHT SENTENCES REST ON RECEIPTS THAT PROVE ONLY THAT PYTHON EXITED ZERO.**
+
+**⛔ THE MEASUREMENT.** *Of 462 receipts, **12 carry no `assert` and no `check()` at all** — and **all twelve are
+cited in the papers, 38 citations**: `P15_expansion_law` 4×, `BRANCHPT_transmission_character` 4×,
+`P16_the_scalar_monodromy_is_four_pi_over_rho` 4×, nine more at 3× each.*
+
+**⌗ AND `check_receipt_asserts` (r2384) IS GREEN ON ALL TWELVE**, *because it accepts a `FAIL` token, a `PASS` token
+or an `np.allclose` as evidence of a failure path.*
+⇒ ***The c54.161 campaign's own repair note names the shape that misses: "**the checks above compute a PASS/FAIL
+boolean and ONLY PRINT IT**." The campaign fixed dozens of these by hand — and the gate written alongside it never
+learned the pattern.***
+
+**⛭ THE SHARPER TEST:** ***can the receipt change its EXIT CODE? `rc=0` is what a caller reads; the printed verdict
+is what nobody reads.***
+
+✔ *`check_receipt_exit` built, **seed-tested clean → 1 → 0**, wired — shipping **GREEN with the twelve as a declared
+backlog**, because ***a gate that fails for a known backlog trains its caller to skip it*** (cc54, c54.208). Routed
+as `FOR_54` item 30; nine are P15/P16 and the assertion each needs is a physics reading in another band.*
+
+**⛭⛭ THE RULE:** ***when a repair campaign fixes a class by hand, check that its GATE learned the pattern. The
+campaign's commit messages describe the defect precisely — and the gate written alongside it will usually test the
+symptom the first instance showed, not the shape the campaign kept finding.***
+
+⌗ *And a third false-positive kind for the unbanked sweep: **`certified` is corpus meta-vocabulary** about receipt
+quality, not physics.*
+
+### Revision r2680 — 2026-08-11 (main line). **THE SWEEP'S SECOND FALSE POSITIVE — and fixing it halved the list.**
+
+**⌗ `monomial` SAT AT POSITION 4** *with 25 uses and zero in print — **and it is sympy's `coeff_monomial` API**,
+appearing in nine receipts as a method call.*
+⇒ *Reading it out was the cost. Its carrier's one real claim — a group order corrected from an impossible **29** to
+**81 and 27** — is **already banked**: `order $81$` is in the papers.*
+
+**⛭ THE FIX IS THE FINDING:** ***count PROSE, not code. A receipt states its RESULT in docstrings, comments and
+printed verdicts; it states its METHOD in the code — and an unbanked-result sweep that reads code is reading the
+wrong layer.***
+*Candidates **91 → 46**, and the top turned from API names into programme vocabulary.*
+
+**⌗ TWO FALSE POSITIVES HAVE NOW SHAPED THIS TOOL, AND BOTH ARE RECORDED IN IT:**
+*· `station` — banked 24× as `stations` ⇒ **stem matching** (r2678);*
+*· `monomial` — an API name ⇒ **prose-only counting** (r2680).*
+⇒ ***The shaping IS the instrument. A surfacing tool is defined by what it has learned to ignore, and a tool whose
+false positives are undocumented will have them rediscovered by its next reader.***
+
+**⛭ THE RULE:** ***when a sweep costs a turn on a false positive, fix the sweep in that turn. The alternative is a
+list you re-read forever, paying the same cost each time and never quite deciding it is broken.***
+
+### Revision r2679 — 2026-08-11 (main line). **THE TWO GAUGE DEBTS SIT AT OPPOSITE ENDS OF THE SUBGROUP LATTICE.**
+
+**⌗ FOUND BY THE UNBANKED SWEEP.** *`pushforward` — **30 uses in receipts, ZERO across all seventeen papers** — and
+its carrier holds a statement that never reached print: "**the corpus's colour is the CENTRE and its structure
+group, reached three independent ways — the winding's $\mathbb Z_3$, the pushforward's holonomy, and the vantage
+triple's selection rule — and each time the thing that arrives is a discrete label and the thing that does not is a
+coupling**".*
+
+**⛭⛭ VERIFIED, AND SET AGAINST r2676:**
+
+    COLOUR   ->  the CENTRE Z_3 of SU(3)     adjoint-TRIVIAL      a pure LABEL
+    ISOSPIN  ->  the WEYL element of SU(2)   adjoint-NON-trivial  a REFLECTION
+
+*(the centre checked central against **non-commuting** generators, so the centrality is not vacuous)*
+
+⇒⇒ ***And that predicts the debts differ in KIND, which they do: a centre carries no adjoint information, so **no
+deformation reaches a coupling** — `PO-5` is walled. A Weyl element is **half the generating data** of $SU(2)$, so
+what is missing is **one factor**, the torus — `PO-4` is one factor short.***
+
+**⛭ THE RULE:** ***when two open items are filed under one frontier, ask which SUBGROUP each arrives at. "Both are
+gauge groups we haven't got" describes the destination; the subgroup describes the road — and two roads into the
+same destination can be one factor and a wall.***
+
+⌗ *P14 itself calls the three-routes finding "**stronger evidence about where the boundary sits**", **and it has
+never been in print**. The unbanked sweep is paying at one real result per run.*
+
+### Revision r2678 — 2026-08-11 (main line). **`scripts/unbanked.py` — 54's method made an instrument, and it found a third unbanked result on its first run.**
+
+**⌗ THE CLASS HAS NOW PAID THREE TIMES.** *`L-535` (an instance, not a class); **A7** — "the quartic is a constant
+vacuum energy" — **a hundred revisions in ledgers at zero uses in print**; and now:*
+⇒ ***`excentre`: **35 uses across 5 receipts, ZERO across all seventeen papers**.***
+
+**TWO RESULTS SIT THERE, both receipts passing:**
+*· **a SIXTH equivalence for the hinge distance $2\alpha$** — "**the first phrased in the substrate's own causal
+language rather than in classical triangle geometry**";*
+*· the hinge configuration's null connectivity is **CLOSED** — "**0 of 36 pairs**".*
+
+**⛭ THE METHOD, WHICH IS 54's:** ***count a term's uses in the RECEIPTS against its uses in the PAPERS. A term the
+working layer relies on and the printed layer never says is a result that did not land.***
+
+**⚠ AND THE TOOL'S FIRST FALSE POSITIVE WAS INSTRUCTIVE.** *`station` topped the list at 85 uses — **and is banked
+24 times, as `stations`**. An exact-word matcher put a non-defect at position 1.*
+⇒ ***A false positive at position 1 is what teaches a reader to ignore the tool.*** *Stem matching now; 105 → 91
+candidates.*
+
+**⛭⛭ THE RULE:** ***a surfacing tool must be RIGHT AT THE TOP, not right on average. Its first three lines are the
+only ones anyone reads twice, and a tool that spends them on noise has spent its credibility before its finding.***
+
+⌗ *Routed as `FOR_54` item 29 — **the banking is a P3 edit in another band**, so what is offered is the finding, the
+two receipts, and the verification that both pass.*
+
+### Revision r2677 — 2026-08-11 (main line). **c54.210 FOLDED BY RE-DERIVATION — the counterterm basis is one-dimensional, and the scope is necessary.**
+
+**⌗ A SENTENCE WRITTEN AS A LIMITATION, READ AT A DIFFERENT QUESTION.** *p0: "**every curvature invariant on either
+face is a pure power of $1/\alpha^2$**" — written to show the construction **cannot force a coupling**. 54 read it
+at the counterterm basis.*
+
+**⛭⛭ RE-DERIVED HERE at $D=4,5,6$:**
+
+    D=4:  R^2 = 144/a^4    Ric^2 = 36/a^4    Riem^2 = 24/a^4
+    D=5:  R^2 = 400/a^4    Ric^2 = 80/a^4    Riem^2 = 40/a^4
+    D=6:  R^2 = 900/a^4    Ric^2 = 150/a^4   Riem^2 = 60/a^4
+
+⇒⇒ ***Each a rational constant times $\alpha^{-4}$, so the three quadratic counterterms and the volume term are
+FOUR MULTIPLES OF ONE FUNCTIONAL. A divergence of any degree needs ONE counterterm where a generic theory needs
+three — the basis is one-dimensional because the background family is.***
+
+**⛭ AND THE SCOPE IS NECESSARY, CHECKED RATHER THAN ASSUMED.** *A basis degeneracy is a property of the BACKGROUND
+CLASS, and **the tower lives on the LAYER**. For $a\sim\sinh^{2/3}(3Ht/2)$:*
+
+    R(t) = H^2 (12 cosh 3Ht - 6)/(cosh 3Ht - 1)     ->  infinity  early,  12H^2  late
+
+⇒ ***The layer's curvature RUNS where the substrate's does not, so the transfer needs argument.***
+
+**⇒ `PO-6`'s DARK HALF IS NOW A STATED CALCULATION:** ***does the one-dimensional basis survive on a background
+whose curvature runs?*** *Stated object, known instrument (sub-leading heat-kernel coefficients), decidable answer.
+Registered `L-543`; **the calculation is 54's**.*
+
+**⛭ THE RULE:** ***a negative result and a sufficiency can be the same sentence. When a paper says "X is only ever
+Y", ask what QUESTION makes that a resource — the author wrote it against the question they had, and a constraint is
+a degeneracy seen from the other side.***
+
+⌗ *And A7's r2570 verdict had sat in ledgers for a hundred revisions at **zero uses in print** — the `L-535` class,
+**caught by counting uses rather than by reading**.*
+
 ### Revision r2676 — 2026-08-11 (main line). **`PO-4`'s GAP IS THE TORUS, NOT THE GROUP — and the stamp now carries receipt health.**
 
 **⌗ THE NAIVE COUNT MAKES IT HOPELESS.** *$\langle T\rangle\cong\mathbb Z_2$ has dimension 0 against $SU(2)$'s 3,

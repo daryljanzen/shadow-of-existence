@@ -110,4 +110,10 @@ r2674  INSTRUMENT  cleared cc54s CI blocker -- my two turn ledgers were UNCLASSI
 r2675  INSTRUMENT  check_no_stdlib_shadow built+seeded+wired; all four namespace-collision classes now gated
 r2676  COMPUTED    a horn swap is the WEYL Z_2 not the centre; the missing piece is the torus
 c54.210  LATENT      PO-6 UV half: the counterterm basis is one-dimensional because the background family is; p0 said the invariant fact for another job
+r2677  COMPUTED    re-derived c54.210: invariants all const x alpha^-4 at D=4,5,6; the layers R runs, so the scope is necessary
+r2678  LATENT      unbanked sweep: excentre at 35 uses in receipts, ZERO in print -- a sixth equivalence unbanked
+r2679  COMPUTED    colour at the CENTRE, isospin at the WEYL element -- opposite ends, so the debts differ in kind
+r2680  INSTRUMENT  monomial was sympys API -- unbanked.py now counts prose only; 91 -> 46 candidates
+r2681  LATENT      12 cited receipts cannot exit non-zero, 38 citations; check_receipt_asserts green on all of them
+r2682  INSTRUMENT  measured the absence-outlived class: 4 absences ended, 3 stand; 2 fixed, 5 reverted and routed
 c54.211  LATENT      withdrew my own c54.210 scope: P10s slicing is a(T)=alpha*cosh(T/alpha), exactly de Sitter, so the degeneracy holds on the towers own background

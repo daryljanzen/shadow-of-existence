@@ -89,7 +89,13 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2673   ---     TRIAGE done: 41 timeouts, 21 now-pass, 17 real. Two of the 17 were mine, repaired.
     r2674   ---     cc54 CI blocker cleared: LATENT_HISTORY/TABLE_HISTORY classified RECORD. Mine to fix.
     r2675   ---     check_no_stdlib_shadow built+seeded+wired. All four collision classes gated.
-    r2676   PO-4    CLAIMED: su(2)_L as a GAUGING -- the discrete horn swap vs a chiral action.
+    r2676   PO-4    su(2)_L gap characterised: the swap is the WEYL Z_2, so the torus is what is missing.
+    r2677   ---     folded c54.210 by re-derivation. PO-6 stays 54s -- their L-543 successor is the calculation.
+    r2678   ---     unbanked.py built; excentre found and routed as FOR_54 item 29.
+    r2679   ---     unbanked: pushforward -> colour at the CENTRE vs isospin at the WEYL element.
+    r2680   ---     monomial was sympys API; unbanked.py now counts prose only. 91 -> 46.
+    r2681   ---     certified = meta-vocabulary; found 12 cited receipts that cannot exit non-zero.
+    r2682   ---     CLAIMED: the 14 absence-outlived receipts cc54 routed. Mine by class (r2672).
 
 ## ⓸ WHAT THIS LINE IS TAKING
 
