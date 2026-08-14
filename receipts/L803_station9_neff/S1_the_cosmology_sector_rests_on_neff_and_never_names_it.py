@@ -1,8 +1,17 @@
 #!/usr/bin/env python3
 r"""S1 -- R-P STATION 9 (cosmology . nuclear/plasma) WALKED, computationally: the sector rests on the
 EFFECTIVE NUMBER OF RELATIVISTIC SPECIES, N_eff, at BOTH ends -- the BBN abundances and the CMB acoustic
-scale it predicts to 15.7 sigma -- and it NEVER NAMES IT. The field's first BBN/CMB question is invisible
-to a reader who searches for it, and the corpus adopts the standard value without ever stating that it does.
+scale it predicts to 15.7 sigma -- and (at r2541) it NEVER NAMED IT. The field's first BBN/CMB question was
+invisible to a reader who searched for it, and the corpus adopted the standard value without stating it did.
+
+** APPLIED r2673-era -- and this receipt is RE-ANCHORED to say so (per r2673's rule: a receipt whose finding
+gets acted on is updated to assert the state the corpus now holds, finding preserved). 54 wrote the paragraph
+this receipt asked for: cosmogenesis_paper.tex now NAMES $N_{\mathrm{eff}}=3.046$~\cite{Mangano2005}, "adopted
+here rather than derived", and states the construction "makes no $N_{\mathrm{eff}}$ prediction; the standard
+value is adopted" and is "consistent with the fourth grading". Check (1) below, which found N_eff absent by
+name, is therefore now correctly FALSE and is re-anchored to assert the applied state; the physics checks
+(2a/2b -- the BBN and camb leverage) are unchanged and still pass, because the finding was never that the
+sector was wrong, only that the load-bearing parameter was unnamed. **
 
 ** Board lead L-803 (cc54's band); walks R-P station 9 (THE_PHYSICS_REACH: P7/P15/P16 -- BBN, recombination,
 the acoustic scale), the last unrun station and the computational one -- cc54's camb/pynucastro instrument.
@@ -121,13 +130,26 @@ def main():
     print('  S1 -- R-P station 9: does the cosmology/nuclear sector name N_eff, the field\'s first question?')
     print()
 
-    # ---- (1) the absence, by name, across the corpus ----------------------------------------------
-    variants = ['N_{\\rm eff}', 'N_\\mathrm{eff}', 'Neff', 'N_eff', 'effective number of',
-                'number of neutrino', 'relativistic species', '3.046', '3.044']
+    # ---- (1) the finding was APPLIED (r2673-era): N_eff is now NAMED, not absent -------------------
+    # ** This receipt walked station 9 at r2541 and found N_eff absent by name.  54 applied the fix --
+    #    the paragraph that names it -- so the ORIGINAL check ("absent by name, ZERO hits") is now
+    #    correctly FALSE.  Re-anchored to the applied state per r2673's rule: a receipt whose finding
+    #    gets acted on is updated to assert the state the corpus now holds, finding preserved. **
+    variants = ['N_{\\mathrm{eff}}', 'N_{\\rm eff}', 'N_\\mathrm{eff}', 'effective number', '3.046']
     hits = {v: corpus_count(v) for v in variants}
-    check('N_eff is absent BY NAME across all 35 .tex files -- every variant '
-          f'({", ".join(repr(v) for v in variants[:4])} ...) counts ZERO: {sum(hits.values())} total',
-          sum(hits.values()) == 0)
+    cosmo = open(os.path.join(ROOT, 'corpus', 'cosmogenesis_paper.tex'),
+                 encoding='utf-8', errors='replace').read()
+    check('cc54\'s station-9 finding was APPLIED -- N_eff is now NAMED in the corpus '
+          f'(variants {", ".join(repr(v) for v in variants[:3])} ... now count {sum(hits.values())}, '
+          'not the ZERO this receipt found at r2541)',
+          sum(hits.values()) > 0)
+    check('and the paper takes the corpus\'s stance in its own voice: it adopts the Standard Model '
+          '$N_{\\mathrm{eff}}=3.046$ "rather than derived" and says the construction "makes no '
+          '$N_{\\mathrm{eff}}$ prediction; the standard value is adopted" -- the exact paragraph this '
+          'receipt asked for',
+          'N_{\\mathrm{eff}}=3.046' in cosmo
+          and 'makes no $N_{\\mathrm{eff}}$ prediction' in cosmo
+          and 'adopted' in cosmo)
     # and the sector is otherwise deep -- so it is one missing name, not a missing sector
     check('yet the sector is deep: "lithium problem", "deuterium", "nucleosynthesis" and "Hubble '
           'tension" are all present -- so this is ONE MISSING NAME, not a missing sector',
@@ -178,18 +200,19 @@ def main():
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print('  VERDICT (R-P station 9 walked -- the computational station, cc54\'s instrument):')
-    print('  ** THE SECTOR RESTS ON N_eff AT BOTH ENDS AND NEVER NAMES IT. ** The BBN abundances '
-          '(Y_p rises')
-    print('     with N_eff) and the CMB acoustic scale (100*theta_* moves ~3% per unit N_eff) are both '
-          'functions')
-    print('     of it; the code fixes it to the standard 3.046 via the (4/11)^{1/3} neutrino background; '
-          'and the')
-    print('     name a reader searches -- N_eff -- is absent from all 35 papers.')
-    print('  => Station 6\'s and station 10\'s shape: the answer is present and never named. The fix is a '
-          'paragraph')
-    print('     naming N_eff (=3.046, adopted, standard; Planck 2.99+/-0.17) and stating whether CR\'s '
-          'nu_R touches it.')
+    print('  VERDICT (R-P station 9 walked -- the computational station, cc54\'s instrument -- and APPLIED):')
+    print('  ** THE SECTOR RESTS ON N_eff AT BOTH ENDS; at r2541 it never named it, and NOW IT DOES. ** '
+          'The BBN')
+    print('     abundances (Y_p rises with N_eff) and the CMB acoustic scale (100*theta_* moves ~3% per '
+          'unit N_eff)')
+    print('     are both functions of it; the code fixes it to the standard 3.046 via the (4/11)^{1/3} '
+          'background;')
+    print('     and cosmogenesis_paper.tex now NAMES N_eff=3.046 (adopted, standard) and says the '
+          'construction')
+    print('     makes no N_eff prediction, consistent with the fourth grading -- the paragraph this '
+          'receipt asked for.')
+    print('  => Station 6\'s and station 10\'s shape, now discharged: the answer was present and unnamed; '
+          'it is named.')
     print('     Informs the R-P front (L-204) and, through the nu_R question, L-221 (PO-5). The BBN '
           'physics is standard;')
     print('     the finding is the missing name.')

@@ -58,6 +58,14 @@ referee. That is the reason this check is written first and the reason it can be
 
 ***The item stays open if any of the following holds:***
 
+> ⛭ **READ THIS SECTION WITH THE CONCLUSION BELOW — the three routes' CALCULATIONAL sides are since closed
+> (r2674 pointer, cc54 `L-811`).** *⓵ by `L-805` (no mode crosses unfrozen), ⓶ by A10/`L-807` (the estimator
+> reads the phase, not the transfer), ⓷ from the massive side by A2/`L-806` (a massive mode freezes too, so
+> no trajectory carries a phase off $\{0,\pi\}$).* ⇒ ***But ② STILL DOES NOT CLEAR*** *— see the r2599
+> correction below: what remains of ⓷ is a **progenitor derivation of the seam datum's phase** (`PO-seam`'s
+> dark half), which is **live**, not an instrument question and **not a decision owed by anyone**. The prose
+> in ⓵–⓷ that follows is the r2552 framing, kept because this is the check that changed.*
+
 **⓵ A third admissible phase exists.** *The forcing rests on P15's freezing argument. If a mode could
 cross **un**frozen — carrying $\dot\delta_\gamma\ne0$ — then $\sin\phi\ne0$ is admissible, the band widens
 to the full span, and **the control's value is inside it** (verified: the full span 0.891 contains
