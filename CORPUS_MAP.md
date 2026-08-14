@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2667 — 2026-08-11 (main line). **P14 ALREADY WALLS TWO ROUTES — and r2666 rediscovered one of them.**
+
+**⛔ THE CORRECTION.** *r2666 derived that a flat bundle's holonomy cannot supply a force and logged the turn
+`COMPUTED`. **P14 states it directly:** "a deformation within it **changes which flat bundle one has and not whether
+there is a field strength**; obtaining curvature means leaving the flat locus, and **no holonomy datum can take one
+off it, because holonomy is precisely the complete invariant a flat connection has**."*
+⇒ ***The derivation was independent and right; the finding was not new. Entry reclassified **COMPUTED → LATENT**.***
+
+**⛭⛭ AND P14 GOES FURTHER.** *A Yang–Mills term needs "**a dimensionless coupling that a single length cannot
+build**", the substrate's one invariant $\Lambda=3/\alpha^2$ having energy $\hbar c/\alpha$ that "**sits some
+forty-one decades below the strong scale, and in the infrared rather than the ultraviolet direction**".*
+✔ ***Verified independently: 41.2 decades, below.***
+
+**⓷ THE VERDICT IS SHARPER THAN "OPEN":** *"the position is not that the coupling is unbuilt but that **a coupling
+is not the kind of thing a holonomy supplies**".*
+**⓸ AND THE RESIDUE IS NAMED EXACTLY:** *"the isometry route is walled separately, and the honest statement is that
+**no third mechanism has been named**".*
+⇒⇒ ***So `PO-5`'s real content is not "find the coupling here" — two routes are walled — but the open question
+whether a THIRD mechanism exists.***
+
+**⛭ THE RULE:** ***before deriving, read forward from the sentence that raised the question. A correct independent
+derivation of a stated result is indistinguishable from progress at the moment you finish it — and the tell is not
+in the receipt but in whether you looked.***
+
+⌗ ***`check_kind` has a blind spot this exposes: it verifies that a `COMPUTED` turn computed, not that the
+computation was needed.***
+
 ### Revision r2666 — 2026-08-11 (main line). **`PO-5`'s COUPLING SETTLED NEGATIVELY — it cannot come from the colour bundle.**
 
 **⌗ THE TWO FACTS THAT LOOKED LIKE A TENSION.** *P14: "the bundle is flat … **the geometry quantises and does not

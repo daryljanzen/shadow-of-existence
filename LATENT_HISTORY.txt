@@ -95,4 +95,5 @@ r2662  COMPUTED    (rH)^2 diverges at the branch point => every mode outside; r2
 r2663  COMPUTED    Phi -> Phi_i at the branch point for every k; super-horizon transfer closes at 9/10
 r2664  COMPUTED    end-to-end: 7.5% low-ell deficit, 0.823 at l_D, 0.459 at 2 l_D; the peaks are the gap
 r2665  COMPUTED    peak-gap estimate ~0.813; CRs potential decays 15% faster because the rate carries 1/calH
-r2666  COMPUTED    flat connection: holonomy exp(2 pi i c) non-trivial while F=0; no force at any separation
+r2666  LATENT      [reclassified r2667: P14 states this directly -- derivation independent, finding not new] flat connection: holonomy non-trivial while F=0
+r2667  LATENT      P14 walls holonomy AND isometry; 41.2 decades verified; no third mechanism named
