@@ -2268,9 +2268,44 @@
 \emph{Computes:} asserts the cancel-identically, constants-outside and Peebles-history clauses verbatim, shows the weight does not drop out, runs g(R) with a Saha x\_e, and checks 9.4 lies strictly inside (8 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- brackets rather than reproduces; the Peebles direction is argued, not computed
 \ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C27\_the\_number\_bracketed.py}
+\item[\label{rcpt:B22_the_tower_is_uniform}\texttt{B22\_the\_tower\_is\_uniform}]\hfill\textsf{[OK]}\\
+\textit{sec:chirality} \ (PO-11s obstruction is UNIFORM IN THE TOWER: run on the actual modes between the true horizons, the leaf norm is finite and cut-off independent at every lambda while the tortoise norm diverges logarithmically --- no high-j corner rescues it). 
+\emph{Computes:} asserts the tower and single-branch clauses verbatim, checks the horizons are cubic roots, and runs both norms at lambda = 1, 3, 10 across three cut-offs with a logarithmic-growth test (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- confirms an obstruction; the scattering problem is untouched
+\ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B22\_the\_tower\_is\_uniform.py}
 \item[\label{rcpt:S50_the_counterterm_basis_is_one_dimensional_because_the_background_family_is}\texttt{S50\_the\_counterterm\_basis\_is\_one\_dimensional\_because\_the\_background\_family\_is}]\hfill\textsf{[OK]}\\
 \textit{sec:deparam} \ (**`PO-6`'s UV HALF: THE COUNTERTERM BASIS IS ONE-DIMENSIONAL BECAUSE THE ADMITTED BACKGROUND FAMILY IS.** Every curvature invariant on a maximally symmetric background is a pure power of \$1/\textbackslash\{\}alpha\textasciicircum{}2\$, and the substrates form a one-parameter family, so a divergence of any degree needs exactly one counterterm --- which the framework carries.  Scoped: the tower lives on the layer, whose \$R\$ runs. Lead `L-543`; VEIN `L-165`). 
 \emph{Computes:}  **AMENDED c54.211 (`L-544`): c54.210's SCOPE IS WITHDRAWN.** It put P15's observable rate where P10's slicing belongs; P10's own \$a(T)=\textbackslash\{\}alpha\textbackslash\{\}cosh(T/\textbackslash\{\}alpha)\$ has \$R=12/\textbackslash\{\}alpha\textasciicircum{}2\$ CONSTANT, so the degeneracy holds on the tower's own background and the result is STRONGER than claimed. The real limit is the coupled sector, where the scale factor is quantized and there is no fixed background. Both geometries computed side by side so the error stays checkable. --- computes the quadratic invariants at \$D=4,5,6\$ and pins their \$\textbackslash\{\}alpha\$-exponent at exactly 4; five standing-sentence checks (p0's invariant fact, p0's foliation, `L-533`'s scale-only descent); computes the \$\textbackslash\{\}sinh\textasciicircum{}\{2/3\}\$ layer's Ricci scalar and asserts it NON-constant with a \$12H\textasciicircum{}2\$ late limit; and counts `counterterm` in P10 from git HEAD (0) against now (7)
  \emph{Bound:} LATENT, and an ASSEMBLY not a discovery. NOT claimed: that `PO-6` closes, that the sub-leading divergences vanish, that this is renormalisability, or that the layer breaks it --- **that is the question**
 \ \emph{Run:} \texttt{python3 receipts/L165\_defining\_the\_sum/S50\_the\_counterterm\_basis\_is\_one\_dimensional\_because\_the\_background\_family\_is.py}
+\item[\label{rcpt:B23_the_corpus_crosses_by_rotation}\texttt{B23\_the\_corpus\_crosses\_by\_rotation}]\hfill\textsf{[OK]}\\
+\textit{sec:lift} \ (cc54s turnaround obstacle VERIFIED and RELOCATED: H\_c=0 at maximum expansion and k\textasciicircum{}2/(3H\_c) diverges, but the corpus crosses by rotating into IMAGINARY conformal time --- H\_c(pi+is) = -i sinh s/(cosh s + 1), so it is a segment endpoint, not a singularity). 
+\emph{Computes:} computes H\_c and the divergence on the closed dust cycloid, asserts P7s purely-imaginary, climbs-from-the-turnaround and carried-continuously clauses verbatim, and evaluates the imaginary continuation (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- bears on whether to build a turnaround-regular variable; the derivation is untouched
+\ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B23\_the\_corpus\_crosses\_by\_rotation.py}
+\item[\label{rcpt:C28_length_against_angle}\texttt{C28\_length\_against\_angle}]\hfill\textsf{[OK]}\\
+\textit{sec:envelope-consequence} \ (THERE WAS NEVER A DISCREPANCY: 9.4\% is an ANGLE ratio (C10s r=1.0926, already netting the 0.7\% sound-horizon shift) and 10.8\% a LENGTH ratio (C8) --- r2686-r2689 compared one to the other). 
+\emph{Computes:} asserts both statements and the 0.7\% clause verbatim, reads C10s own r, and shows the two do not compose as this line assumed (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- corrects four of this lines revisions; C8 and C10 are run, not re-derived
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C28\_length\_against\_angle.py}
+\item[\label{rcpt:C29_nothing_to_calculate_across_the_join}\texttt{C29\_nothing\_to\_calculate\_across\_the\_join}]\hfill\textsf{[OK]}\\
+\textit{sec:what-crosses} \ (PO-12s remaining half has NO CONTENT: the pre-onset stretch is pressureless and at w=0 the potential equation loses k entirely, so there is no scale-dependent evolution for a single calculation across the join to compute). 
+\emph{Computes:} asserts the no-k, pressureless, boundary-mode and residue clauses verbatim, and verifies symbolically that k is present in the general equation and absent at w=0 (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- F5 reserves the strike; the residue routes to PO-7
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C29\_nothing\_to\_calculate\_across\_the\_join.py}
+\item[\label{rcpt:C30_the_odd_even_half_is_shared}\texttt{C30\_the\_odd\_even\_half\_is\_shared}]\hfill\textsf{[OK]}\\
+\textit{frontier:scalar} \ (PO-10s half (2) carries NO CR-vs-LCDM signal: the odd/even pattern is fixed by the baryon loading R, and R is a ratio of CONTENTS the rate difference does not enter --- so the row is ONE half, not two). 
+\emph{Computes:} asserts P7s statement of both halves and P15s R-values verbatim, computes the 1+3R displacement, and pins the whole-difference-carried-by-H clause (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- C5b is the papers receipt for R; the 1+3R form is textbook, quoted not proved
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C30\_the\_odd\_even\_half\_is\_shared.py}
+\item[\label{rcpt:A7_the_frontier_has_two_kinds}\texttt{A7\_the\_frontier\_has\_two\_kinds}]\hfill\textsf{[OK]}\\
+\textit{sec:envelope-consequence} \ (THE FRONTIER SORTS INTO TWO KINDS on P15s own H(a) rule: FIVE rows ask whether the theory is DEFINED (PO-2/4/5/6/11) and TWO ask what it PREDICTS (PO-7/10) --- and they fail differently, so size does not order them). 
+\emph{Computes:} asserts the H(a) clause, checks the classification covers exactly the open rows, and pins each rows object against its kind (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- the classification is derived here; no paper states it
+\ \emph{Run:} \texttt{python3 receipts/P12\_algebroid/A7\_the\_frontier\_has\_two\_kinds.py}
+\item[\label{rcpt:B24_the_triality_test_run}\texttt{B24\_the\_triality\_test\_run}]\hfill\textsf{[OK]}\\
+\textit{sec:whichthree} \ (THE TRIALITY TEST RUN: computed from the COLOUR CONTENT alone via the centres Z\_3 grading, t=(p-q) mod 3 gives meson 0, baryon 0, diquark 2 --- exactly P14s own "baryon 1, diquark 0, meson 1", with no charge on either side). 
+\emph{Computes:} asserts the owed-test and circularity clauses verbatim, computes the triality of four channels, and matches the count against P14s own sentence (8 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- the SELECTION agrees; the derived-vs-assumed identification is untouched, and the paper edit is routed
+\ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B24\_the\_triality\_test\_run.py}
 \end{description}\endgroup

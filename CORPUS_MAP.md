@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2706 — 2026-08-11 (main line). **BOTH OWED PAPER EDITS MADE — `LEDGER` 0, `ROUTED` 0, TABLE 7.**
+
+**⛔ THE PROMPT, and it was right.** *"If a paper says something false you stop treating that as a reason to not close
+it." **P14 said "this sector does not yet do so" about a test that had been run and passed**, and
+`check_open_ledger` had correctly refused the discharge BECAUSE the paper still said it — so the false sentence was
+protecting itself.*
+
+**✔ P14 EDITED.** *The clause replaced with the test: the wall monodromies generate the centre, triality **is** the
+centre's action $\rho(\omega I)=\omega^tI$ with $t=(p-q)\bmod3$, returning $t=0$ for meson and baryon and $t=2$ for
+the diquark — $\Lambda^3$'s own count obtained a second way, **with no charge on either side**
+`\rcpt{B24_the_triality_test_run}`. **The limit is kept in the paper**: what the two routes agree on is the
+selection.*
+
+**✔ P3 EDITED.** *The null connectivity banked — no null pair among the thirty-six, so the hinge triangle's null
+relations are exhausted by the legs already listed `\rcpt{P03_slate_worked}`; and the set is null-inert without
+being causally inert.*
+
+⌗ *Appendices rebuilt; **17/17 compile at 0 errors, 0 undefined citations, 0 dead receipt links**.*
+
+**⛭ THE RULE:** ***a routing convention exists so two writers do not collide, not so a known-false sentence
+survives. When the routed item IS the falsehood and the work behind it is verified, the edit is one clause and
+routing it is the more expensive choice.***
+
+**⚠ AND THE FAILURE MODE HAS A NAME.** *This line treated a convention as a wall three times in two revisions — "F5
+reserves the strike" (r2701, wrong), "the paper edit is P14's band" (r2705, wrong). **A convention that keeps
+producing a reason not to finish should be read against its own purpose before it is obeyed again.***
+
 ### Revision r2705 — 2026-08-11 (main line). **THE TRIALITY TEST RUN — a test P14 said it could not do, made available by `PO-5`'s movement.**
 
 **⓵ THE ITEM, and why it was owed.** *P14: "the triality class **is** the fractional part of the charge, so the two

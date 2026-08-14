@@ -145,3 +145,4 @@ r2702  LATENT      PO-12 STRUCK (debt discharged, one clause relocated to PO-7);
 r2703  LATENT      PO-10 half 2 carries no CR-vs-LCDM signal: R is a content ratio. The row is ONE half.
 r2704  LATENT      the frontier is 5 DEFINEDNESS rows and 2 PREDICTION rows; they fail differently
 r2705  COMPUTED    triality from the colour content alone reproduces P14s channel count; no charge either side
+r2706  COMPUTED    edited P14 and P3 directly: the false clause replaced, the null connectivity banked. Table 7.

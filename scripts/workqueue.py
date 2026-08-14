@@ -120,9 +120,14 @@ def routed():
         # "⛔⛔ AND ANSWERED AT c54.212" IN ITS OWN HEADER and was still counted live, because
         # the reader tested for one glyph.  A queue whose CLOSE marker is a single character
         # will count every other way of closing as open. ***
+        # ** r2706: markers are read only BEFORE the first parenthesis.  *** Item 58's header
+        # carries a renumbering note -- "6-57 is the closed original queue" -- and `CLOSED`
+        # inside that PARENTHETICAL closed a live item.  A marker in explanatory prose is not a
+        # verdict on the item; a marker in its title is. ***
+        head = re.sub(r'\(routed as[^)]*\)', '', l)
         DONE = ('✔', 'ANSWERED', 'WITHDRAWN', 'DISCHARGED', 'CLOSED', 'RETIRED')
         if (l.startswith('## ') and re.search(r'(?<!\d)\d+\s*·', l)
-                and not any(d in l for d in DONE)):
+                and not any(d in head for d in DONE)):
             n = re.search(r'(?<!\d)(\d+)\s*·', l).group(1)
             out.append({'id': f'item {n}', 'kind': 'ROUTED', 'open': True,
                         'what': re.sub(r'[*#`]', '', l).split('·', 1)[-1].strip()[:70]})

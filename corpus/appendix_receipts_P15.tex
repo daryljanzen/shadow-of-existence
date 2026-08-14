@@ -558,6 +558,21 @@
 \emph{Computes:} asserts the cancel-identically, constants-outside and Peebles-history clauses verbatim, shows the weight does not drop out, runs g(R) with a Saha x\_e, and checks 9.4 lies strictly inside (8 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- brackets rather than reproduces; the Peebles direction is argued, not computed
 \ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C27\_the\_number\_bracketed.py}
+\item[\label{rcpt:C28_length_against_angle}\texttt{C28\_length\_against\_angle}]\hfill\textsf{[OK]}\\
+\textit{sec:envelope-consequence} \ (THERE WAS NEVER A DISCREPANCY: 9.4\% is an ANGLE ratio (C10s r=1.0926, already netting the 0.7\% sound-horizon shift) and 10.8\% a LENGTH ratio (C8) --- r2686-r2689 compared one to the other). 
+\emph{Computes:} asserts both statements and the 0.7\% clause verbatim, reads C10s own r, and shows the two do not compose as this line assumed (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- corrects four of this lines revisions; C8 and C10 are run, not re-derived
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C28\_length\_against\_angle.py}
+\item[\label{rcpt:C29_nothing_to_calculate_across_the_join}\texttt{C29\_nothing\_to\_calculate\_across\_the\_join}]\hfill\textsf{[OK]}\\
+\textit{sec:what-crosses} \ (PO-12s remaining half has NO CONTENT: the pre-onset stretch is pressureless and at w=0 the potential equation loses k entirely, so there is no scale-dependent evolution for a single calculation across the join to compute). 
+\emph{Computes:} asserts the no-k, pressureless, boundary-mode and residue clauses verbatim, and verifies symbolically that k is present in the general equation and absent at w=0 (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- F5 reserves the strike; the residue routes to PO-7
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C29\_nothing\_to\_calculate\_across\_the\_join.py}
+\item[\label{rcpt:A7_the_frontier_has_two_kinds}\texttt{A7\_the\_frontier\_has\_two\_kinds}]\hfill\textsf{[OK]}\\
+\textit{sec:envelope-consequence} \ (THE FRONTIER SORTS INTO TWO KINDS on P15s own H(a) rule: FIVE rows ask whether the theory is DEFINED (PO-2/4/5/6/11) and TWO ask what it PREDICTS (PO-7/10) --- and they fail differently, so size does not order them). 
+\emph{Computes:} asserts the H(a) clause, checks the classification covers exactly the open rows, and pins each rows object against its kind (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- the classification is derived here; no paper states it
+\ \emph{Run:} \texttt{python3 receipts/P12\_algebroid/A7\_the\_frontier\_has\_two\_kinds.py}
 \item[\label{rcpt:P03_acceleration_is_slice_curvature}\texttt{P03\_acceleration\_is\_slice\_curvature}]\hfill\textsf{[OK]}\\
 \textit{sec:curvature \ensuremath{\cdot} rem:twocritical \ensuremath{\cdot} the bend} \ (on ANY member of the energy family (E cancels: (dr/dtau)\textasciicircum{}2 = E\textasciicircum{}2 - f, and E is a constant of the motion) d\textasciicircum{}2r/dtau\textasciicircum{}2 = -f'/2 = r*K\_G identically, so THE SIGN OF THE SLICE'S GAUSSIAN CURVATURE IS THE SIGN OF THE COMOVING ACCELERATION -- and the flat locus is the deceleration-to-acceleration turnover, which on Nariai is the seam and in standard terms is rho\_m = 2 rho\_Lambda (csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2, the seam's phase). A recent cosmological epoch: 7.06 Gyr at H0=73, 7.65 at 67.4, preceding matter-Lambda equality [borrowed from P3 \ensuremath{\cdot} P7 \ensuremath{\cdot} P8]). 
 \emph{Computes:} the identity asserted; the K\_G zero solved and matched to (M alpha\textasciicircum{}2)\textasciicircum{}(1/3); csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2 proved by algebra after simplify() failed on the closed forms; epochs at both H0

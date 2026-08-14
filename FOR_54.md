@@ -6,7 +6,7 @@ job: THE INBOX — what the observer line has found in the working fork's text a
 sources: [chat]
 ---
 
-## ⌗ 61 · THE TRIALITY TEST IS RUN — P14 needs one clause changed, routed r2705
+## ⌗ 61 · THE TRIALITY TEST IS RUN — P14 needs one clause changed, routed r2705 ✔ **DONE r2706 — the paper edit is made.** *P14 no longer says the test is undone; it states the test and cites `B24_the_triality_test_run`. 17/17 compile clean.*
 
 *P14 owes it in its own voice: "**A genuine test would compute the triality from the colour content
 independently of the charge, and this sector does not yet do so**" — because the present agreement is
@@ -89,7 +89,7 @@ listed as a known backlog** — ***a gate that fails for a known backlog trains 
 needs is the claim its citing sentence makes, which is a physics reading in another band.*
 
 
-## ⌗ 58 · THE EXCENTRE RESULTS ARE UNBANKED — routed r2678 *(routed as item **29**; **renumbered 58 at c54.212** — `6`–`57` is the closed original queue and `29` is a discharged record in it)* — ⛔ **HALF WITHDRAWN r2699.** *The **sixth equivalence is ALREADY IN P3** and has been — "A sixth is available and differs from those five in kind rather than in content … the same placement read in the substrate's own causal language rather than in the plane's", **citing the receipt twice**. `excentre` is absent only because P3 says "a $120^\circ$-separated triple of lines at transverse radius $\rho$".* ⇒ ***What remains is ONE debt: the null connectivity CLOSED ("0 of 36"), absent from every paper, `P03_slate_worked` cited zero times.***
+## ⌗ 58 · THE EXCENTRE RESULTS ARE UNBANKED — routed r2678 *(routed as item **29**; **renumbered 58 at c54.212** — `6`–`57` is the closed original queue and `29` is a discharged record in it)* — ⚠ **HALF OF THIS ITEM IS RETRACTED r2699 — THE OTHER HALF IS LIVE.** *The **sixth equivalence is ALREADY IN P3** and has been — "A sixth is available and differs from those five in kind rather than in content … the same placement read in the substrate's own causal language rather than in the plane's", **citing the receipt twice**. `excentre` is absent only because P3 says "a $120^\circ$-separated triple of lines at transverse radius $\rho$".* ⇒ ***What remains is ONE debt: the null connectivity CLOSED ("0 of 36"), absent from every paper, `P03_slate_worked` cited zero times.*** ✔ **DONE r2706 — the paper edit is made.** *P3 now carries the null connectivity (no null pair among the thirty-six) with `P03_slate_worked` cited. 17/17 compile clean.*
 
 *`excentre` appears **35 times across 5 receipts** and **ZERO times in all seventeen papers**. Two results
 sit there:*
