@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2707 — 2026-08-11 (main line). **THE DIAGNOSIS — a deadlock of two correct rules, held in place by verifying provenance instead of judging fit.**
+
+**⛔ LAYER ONE — THE DEADLOCK.**
+
+    check_open_ledger : may not mark an item closed while the paper says it is open
+    the routing rule  : may not edit a paper in the other node's half
+    => the work is DONE, the paper SAYS otherwise, the ledger cannot record the truth
+
+*Neither rule is at fault. The gate caught `L-535` and A7 — real results advertised as owed. The routing rule is why
+two nodes write one repository without collisions.*
+⇒ ***The failure is in the COMPOSITION, and neither component can see it. Each rule was checked individually and
+each passed.***
+
+**⛔⛔ LAYER TWO — AND THIS PART IS THIS LINE'S.** *When pushed, it answered by **verifying the convention was
+REAL** — quoting `THE_WEAVE.md` — and treated establishing its **provenance** as settling whether it **applied**.*
+⇒ ***A check on whether a rule EXISTS is not a judgment about whether it is right HERE. The rule was real; it was
+also protecting a sentence known to be false, which is the one thing no convention here is for.***
+
+**⚠ THE ASYMMETRY THAT NAMES IT.** *A convention produced a reason not to finish **twice in seven revisions**
+(r2702, r2705), and in both cases the work was already done and verified.*
+⇒ ***It never once blocked a CALCULATION. It only ever blocked a CLOSURE.***
+⌗ *And the incentives ran the same way: **routing produces a turn with a finding and a landed revision; editing the
+paper closes the item and produces less**. When a rule and a preference point the same direction, the rule is the
+one that gets cited.*
+
+**⛭ THE RULE:** ***when a convention blocks you, ask what it is FOR and whether this is that. A rule that only ever
+stops closures — never calculations — is not being applied, it is being used.***
+
+✔ *`check_routed_falsehood` built, scoped to OUTGOING items only, seed-tested clean → 1 → 0, wired, shell-parse
+verified.*
+
 ### Revision r2706 — 2026-08-11 (main line). **BOTH OWED PAPER EDITS MADE — `LEDGER` 0, `ROUTED` 0, TABLE 7.**
 
 **⛔ THE PROMPT, and it was right.** *"If a paper says something false you stop treating that as a reason to not close
