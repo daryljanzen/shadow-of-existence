@@ -29,7 +29,9 @@ to one measurement at c54.164-168 -- so the fence comes down. **
           instrument, and the size is reported as a MEASUREMENT DISCREPANCY. **
       ** !! F4 IS DEFECTIVE AND THE DEFECT IS RECORDED IN F6 RATHER THAN PATCHED OUT. **  It is a
       RATIO test and it never asks whether F2 is small in ABSOLUTE terms.  It is not: the control
-      arm lands at chi^2/dof ~ 100 against CAMB's 0.96.  The corrected verdict is the WEAKER of the
+      arm was at chi^2/dof ~ 100 WHEN THIS NOTE WAS WRITTEN (c54.172); F6's printed table has it
+      at 7.1 as of r2760 -- the floor fell fourteen-fold and this sentence did not, so READ THE
+      TABLE AND NOT THIS LINE.  The point stands either way: F2 is not small in absolute terms.  The corrected verdict is the WEAKER of the
       two, and F6 states why that is arithmetic rather than special pleading.
   F5  ** AND WHAT A NEGATIVE IS NOT. **  `PO-7` is protected precisely here: a negative is a
       measurement discrepancy, not a framework verdict.  This file may report a number and may not

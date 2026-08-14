@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2760 — 2026-08-11 (main line). **THE CONTROL IS AT 7.14, NOT ~100 — the receipt's prose aged and r2759 quoted it.**
+
+**⛔ ⓵ THE FILE DISAGREES WITH ITSELF.**
+
+    F4 PROSE:   "the control arm lands at chi^2/dof ~ 100 against CAMB's 0.96"
+    F6 PRINT:               chi^2    bins   chi^2/dof
+      CAMB LambdaCDM        206.4     215        0.96
+      this LCDM arm        1320.5     185        7.14
+      this CR arm         51817.0     185      280.09
+
+*F6 says why: "the floor has fallen from 103 (c54.172) through 22.5 and 28.6 to 7.1, **a factor of 14 across the
+arc**". **The F4 sentence carries the c54.172 number and was never updated.***
+
+**⛭⛭ ⓶ AND r2759 QUOTED THE PROSE — r2748's RULE, NOT CARRIED ACROSS.** *r2748: "take the value from the thing that
+would FAIL if it were wrong."* ⇒ ***The same holds INSIDE a receipt: a printed $\chi^2/\mathrm{dof}$ is recomputed
+every run and cannot go stale; a docstring sentence about it can, and did.***
+
+**⓷ THE CORRECTION CHANGES THE ROW.** *$\sim100$ means the instrument is hopeless and `PO-10` is blocked
+indefinitely. **$7.14$ means it is a factor of seven from usable after already improving fourteen-fold** — a control
+moving $103\to22.5\to28.6\to7.1$ is being worked and converging.*
+
+**⓸ TWO FACTS ONLY THE PRINT CARRIED.** *The arm uses **185 bins against CAMB's 215**, so a raw $\chi^2$ comparison
+spans different data. And the **CR arm is at $280.09$** — whatever the control's residual defect is, the CR arm
+carries it AND something else.*
+
+**⛭ THE RULE:** ***a docstring is prose and ages like prose. When a file contains both a claim and a computation of
+the same quantity, the computation is the file and the claim is a comment — and the older the file, the wider the
+gap.***
+
+⌗ *F4's prose fixed at source, now pointing the reader at the printed table; `C50` converted to a guard on that fix.*
+
 ### Revision r2759 — 2026-08-11 (main line). **`PO-10` HAS A LIKELIHOOD, NOT A LOOKUP — and the control arm fails calibration.**
 
 **⛭⛭ ⓵ THE INSTRUMENT ALREADY EXISTS.** *Searching for the owed uncertainties found

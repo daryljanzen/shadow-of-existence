@@ -213,3 +213,4 @@ r2756  COMPUTED    +5.66% reconciled: r2752 omitted neutrinos from Omega_rad. Ra
 r2757  INSTRUMENT  OWED.md only appended -- 19 of 25 were done or duplicate. --done built. True state: 6 items, 4 rows.
 r2758  LATENT      PO-10s pairs are THREE: the onset ratio is an identity on inherited inputs. C39 corrected.
 r2759  LATENT      PO-10 has a likelihood, not a lookup. The CONTROL arm fails calibration at chi2/dof ~ 100.
+r2760  LATENT      the control is at 7.14 not ~100 -- the receipts F4 prose carried a floor that fell fourteen-fold
