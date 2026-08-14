@@ -113,7 +113,8 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2697   ---     unbanked.py paper-side citation blindness fixed; Unruh misattribution corrected.
     r2698   ---     item 60 CLOSED (10/10 verified).
     r2699   ---     item 58 HALVED -- the sixth equivalence was already in print. ROUTED now 0.
-    r2700   PO-12   CLAIMED: carry g(R)/x_e through the integral on BOTH legs -- no free constants.
+    r2700   PO-12   9.4% is an ANGLE ratio; four revisions compared it to a LENGTH ratio. Debt smaller.
+    r2701   PO-12   CLAIMED: can the existing instrument already run the acoustic evolution across the join?
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2701 — 2026-08-11 (main line). **`PO-12`'s REMAINING HALF HAS NO CONTENT — the pre-onset equation loses $k$ entirely.**
+
+**⌗ THE SENTENCE THIS ROW HAS CARRIED SINCE r2663:** *"joining the two as a single calculation is unrun."*
+⇒ ***P15 answers it in its own voice: "the crossing occurs under **pressureless matter** to better than a part in
+$10^4$, and the potential equation for a pressureless component … **contains no $k$ at all once $w=0$** — the
+wavenumber enters only through the pressure term."***
+
+    general:  Phi'' + 3H(1+w)Phi' + [2H' + (1+3w)H^2]Phi + w k^2 Phi = 0     k PRESENT
+    at w=0:   Phi'' + 3H Phi'     + (H^2 + 2H')Phi            = 0            k ABSENT
+
+⇒⇒ ***Every mode obeys the SAME equation there. There is no scale-dependent evolution, so there is nothing for a
+"single calculation across the join" to calculate.***
+
+**⌗ AND THE GEOMETRY AGREES FROM BOTH ENDS.** *Comoving horizon $\to0$ at the branch point (**every mode outside**,
+r2662) against peaks **inside by 2.2** at the onset — so every acoustic mode crosses in between, and P15 names the
+boundary mode $k=0.0111$ Mpc$^{-1}$, $\ell\simeq144$: "**every mode at and above the acoustic peaks crossed before
+the plasma began**".*
+
+**⇒ THE RESIDUE IS `PO-7`'s, and P15 states it:** *"on this rate **nothing before the onset can imprint an acoustic
+phase**, so whatever sets it must act on modes **already inside the sound horizon when the plasma begins**."*
+
+**⛭ THE RULE:** ***when a row names an unrun calculation, check whether the calculation has an INTEGRAND. "Unrun"
+and "empty" look identical from the register, and the difference is usually one clause in the paper stating which
+term carries the dependence.***
+
+⌗ *Second time in two revisions that `PO-12` shrank rather than moved — r2700 found there was no discrepancy, r2701
+finds there is no calculation. **Both were in the paper the whole time.***
+
 ### Revision r2700 — 2026-08-11 (main line). **THERE WAS NEVER A DISCREPANCY — $9.4\%$ is an ANGLE ratio and $10.8\%$ a LENGTH ratio.**
 
 **⛔ FOUR REVISIONS CHASED IT.** *r2686 ($+6.8\%$), r2687 ($+7.1$–$14.4\%$), r2688 ($+13.1\%$), r2689 (bracket
