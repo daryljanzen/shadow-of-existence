@@ -91,6 +91,7 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2675   ---     check_no_stdlib_shadow built+seeded+wired. All four collision classes gated.
     r2676   PO-4    su(2)_L gap characterised: the swap is the WEYL Z_2, so the torus is what is missing.
     r2677   ---     folded c54.210 by re-derivation. PO-6 stays 54s -- their L-543 successor is the calculation.
+    r2678   ---     CLAIMED: systematic UNBANKED sweep -- verdicts in ledgers at zero uses in print.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

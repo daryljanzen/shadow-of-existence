@@ -41,13 +41,13 @@ sources: [chat]
 |---|---|---|---|---|---|
 | `ABSORPTION.md` | SOURCE | The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced. | — | c54.210 | 0 |
 | `THE_LIVE_ARC.md` | SOURCE | the lead register — the one live edge | — | c54.210 | 0 |
-| `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.209 | c54.209 | 1 |
-| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.209 | c54.209 | 1 |
-| `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.209 | 1 |
-| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.209 | c54.209 | 1 |
-| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.209 | c54.209 | 1 |
+| `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.210 | c54.210 | 0 |
+| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.210 | c54.210 | 0 |
+| `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.210 | 0 |
+| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.210 | c54.210 | 0 |
+| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.210 | c54.210 | 0 |
 | `ACOUSTIC_BUILD_SETUP.md` | STATE | The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own. | — | c54.201 | 9 |
-| `BOARD.md` | STATE | (declared in frontmatter) | — | c54.209 | 1 |
+| `BOARD.md` | STATE | (declared in frontmatter) | — | c54.210 | 0 |
 | `CATEGORY_THEORY_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.201 | 9 |
 | `COLLAPSE_EXCURSION_TRANSFER_build.md` | STATE | PHASE 7's ATTACK MANUAL — the one build on the progenitor collapse excursion (L2) behind open-problems families 1/3/4/5. Referenced live by eleven documents including THE_PLAN, PHASE7_BUILD_LEDGER and both open-problems documents. | — | c54.201 | 9 |
 | `COMBINATORICS_LEDGER.md` | STATE | The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8. | — | c54.201 | 9 |
@@ -62,7 +62,7 @@ sources: [chat]
 | `FIGURE_SWEEP.md` | STATE | The figure programme's state — every figure against what it must carry. | — | c54.201 | 9 |
 | `FIGURE_THEOREM_LEDGER.md` | STATE | The figure–theorem ledger: which classical theorem each figure carries, and its receipts. | — | c54.19 | 191 |
 | `FORK_c54.md` | STATE | the c54 fork's own record | — | c54.188 | 22 |
-| `OPEN_PROBLEMS_MAP.md` | STATE | The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open | — | c54.209 | 1 |
+| `OPEN_PROBLEMS_MAP.md` | STATE | The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open | — | c54.210 | 0 |
 | `OPTICS_LENSING_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.201 | 9 |
 | `P3_SWING_ONTOLOGY_hinge-and-door.md` | STATE | The usable ontological skeleton for the SECOND major P3 upgrade — lead with the physical object (one hinge, one door, one swing) and DERIVE w, u, 3w as the shadows it throws. Registered as L-206; the upgrade has not landed. | — | — | never |
 | `PHASE7_BUILD_LEDGER.md` | STATE | the Phase-7 build record | — | c54.153 | 57 |
@@ -167,7 +167,7 @@ sources: [chat]
 | `DEMONSTRATING_THE_WAY_full-transcript.md` | RECORD | frozen record | — | — |  |
 | `FOLD52_ASSESSMENT.md` | RECORD | the fork's assessment of the abandoned 52/53 ACOUSTIC line -- what it holds, what to take, and what could not be verified | — | c54.166 |  |
 | `FORK_HISTORY_c54.txt` | RECORD | frozen record | — | c54.93 |  |
-| `FOR_54.md` | RECORD | THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied. | c54.206 | c54.207 |  |
+| `FOR_54.md` | RECORD | THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied. | c54.206 | c54.210 |  |
 | `FOR_56.md` | RECORD | THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied. | — | c54.210 |  |
 | `FOR_57.md` | RECORD | THE THIRD LINE'S INBOX — what the working fork (54) has found in the Claude Code node's work, routed rather than edited. The mirror of FOR_54.md and FOR_56.md. Items are dropped the revision they are applied. | c54.196 | c54.196 |  |
 | `HANDOVER_c54.184.md` | RECORD | What the c54 session that ran c54.162–c54.184 knew that the ledgers do not hold. Written for its successor, who starts cold on a complete corpus. Read once, then work. | c54.184 | c54.184 |  |

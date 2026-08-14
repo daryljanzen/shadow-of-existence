@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2678 — 2026-08-11 (main line). **`scripts/unbanked.py` — 54's method made an instrument, and it found a third unbanked result on its first run.**
+
+**⌗ THE CLASS HAS NOW PAID THREE TIMES.** *`L-535` (an instance, not a class); **A7** — "the quartic is a constant
+vacuum energy" — **a hundred revisions in ledgers at zero uses in print**; and now:*
+⇒ ***`excentre`: **35 uses across 5 receipts, ZERO across all seventeen papers**.***
+
+**TWO RESULTS SIT THERE, both receipts passing:**
+*· **a SIXTH equivalence for the hinge distance $2\alpha$** — "**the first phrased in the substrate's own causal
+language rather than in classical triangle geometry**";*
+*· the hinge configuration's null connectivity is **CLOSED** — "**0 of 36 pairs**".*
+
+**⛭ THE METHOD, WHICH IS 54's:** ***count a term's uses in the RECEIPTS against its uses in the PAPERS. A term the
+working layer relies on and the printed layer never says is a result that did not land.***
+
+**⚠ AND THE TOOL'S FIRST FALSE POSITIVE WAS INSTRUCTIVE.** *`station` topped the list at 85 uses — **and is banked
+24 times, as `stations`**. An exact-word matcher put a non-defect at position 1.*
+⇒ ***A false positive at position 1 is what teaches a reader to ignore the tool.*** *Stem matching now; 105 → 91
+candidates.*
+
+**⛭⛭ THE RULE:** ***a surfacing tool must be RIGHT AT THE TOP, not right on average. Its first three lines are the
+only ones anyone reads twice, and a tool that spends them on noise has spent its credibility before its finding.***
+
+⌗ *Routed as `FOR_54` item 29 — **the banking is a P3 edit in another band**, so what is offered is the finding, the
+two receipts, and the verification that both pass.*
+
 ### Revision r2677 — 2026-08-11 (main line). **c54.210 FOLDED BY RE-DERIVATION — the counterterm basis is one-dimensional, and the scope is necessary.**
 
 **⌗ A SENTENCE WRITTEN AS A LIMITATION, READ AT A DIFFERENT QUESTION.** *p0: "**every curvature invariant on either

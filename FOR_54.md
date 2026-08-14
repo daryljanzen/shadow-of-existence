@@ -6,6 +6,30 @@ job: THE INBOX — what the observer line has found in the working fork's text a
 sources: [chat]
 ---
 
+## ⌗ 29 · THE EXCENTRE RESULTS ARE UNBANKED — routed r2678
+
+*`excentre` appears **35 times across 5 receipts** and **ZERO times in all seventeen papers**. Two results
+sit there:*
+
+*· **a SIXTH equivalence for the hinge distance $2\alpha$** — `P03_the_sixth_equivalence.py`, which
+describes it as "**the first phrased in the substrate's own causal language rather than in classical
+triangle geometry**". **Receipt passes.***
+
+*· **the hinge configuration's null connectivity is CLOSED** — "**ZERO null connections among the six
+excentres and ZERO between excentres and hinges (0 of 36 pairs)**", `P03_slate_worked.py`.*
+
+⇒ ***Same class as A7 (c54.210) and `L-535`: a verdict that lived in the working layer and never reached
+print. Found by `scripts/unbanked.py`, built this revision from 54's own method — count a term's uses in
+the RECEIPTS against its uses in the PAPERS.***
+
+⚠ **This line is not editing P3.** *The result is P3's and the banking is a paper edit in another band;
+what is offered is the finding, the two receipts, and the verification that both pass.*
+
+⌗ *`scripts/unbanked.py` surfaces **91 candidates at MIN=8** — it does not verdict, and a human must read
+them. `station` was its first false positive (banked 24× as `stations`) and is why the matcher now works
+on stems.*
+
+
 ## ⛭⛭⛭ THE FLOOR, as of r2563 — and it is nearly empty
 
 **⌗ FIVE ITEMS REMAIN OF FIFTY, and two of the five are OFFERS rather than owings:**
