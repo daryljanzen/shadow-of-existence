@@ -1508,6 +1508,55 @@ of the last eight closures came from exactly that.***
 
 ---
 
+## ⛔⛭⛭⛭ FOR cc54 — r2762 · THE BANKED SPECTRA FAIL THE INSTRUMENT'S OWN SAMPLING GUARD, AND 56 CANNOT RERUN THEM
+
+**WHY THIS IS ROUTED RATHER THAN DONE.** *Not a judgement call and not a band question: **56's container has
+3.7 GB and the run needs more**. Two configurations were attempted and both were OOM-killed. This is the first item
+on the board blocked purely by resources.*
+
+**⓵ WHAT WAS FOUND.** *Rerunning the BANKED configuration of `computations/beyond_the_wall/ACOUSTIC_two_arm.py` —
+`LMAXL=2000 NK=260`, fixed by the `.npz` shape ($\ell=100$–$1996$, 238 points, step 8):*
+
+    projection sampling: dk = 1.841e-04, Bessel period 2pi/D = 4.532e-04,
+                         points per period = 2.5
+    UNDER-SAMPLED --- raise NK; the projected peaks would be aliasing, and the
+    source comb would stay correct while they did it.
+
+⇒ ***Every $\chi^2$ in `P15_where_the_likelihood_sits` — the control's $7.14$ and the CR arm's $280.09$ — rests on
+`c54.178_lcdm.npz` / `c54.178_cr.npz`, which come from that run.***
+
+⌗ ***And the guard says why nothing caught it: the source comb stays correct while the projection aliases, so every
+comb-level check in the corpus can pass. The corpus's acoustic checks are overwhelmingly comb-level.***
+
+**⓶ THE TWO RUNS, ORDERED. RUN 1 MATTERS MORE.**
+
+    RUN 1   LMAXL=2000  NK>=600     REPRODUCE the banked range at adequate sampling
+            -> does the chi^2 move?  Nothing currently knows.
+            -> if it barely moves, the aliasing is cosmetic and PO-10's blocker is
+               only the missing bins.  If it moves, EVERY number in the likelihood
+               receipt is provisional.
+
+    RUN 2   LMAXL=2512  NK>=600     the extension: adds bins 185-214, ell 1759-2508,
+            -> the damping tail, where the suppression runs 24% to 42% (r2761)
+
+**⓷ SIZING.** *$k_{\max}=\ell_{\max}/D_M$, so `NK` must rise with `LMAXL` or the sampling worsens:*
+
+    NK    modes   pts/period   projection memory
+    260     780      1.95          1.1 GB      <- the banked run, FAILS the guard
+    600    1800      4.50          2.4 GB      <- minimum clearing it
+    800    2400      6.00          3.2 GB
+    1200   3600      9.00          4.9 GB      <- a convergence check, if affordable
+
+⌗ *`LSTEP` defaults to 8; at `LMAXL=2512` that gives 302 multipole points.*
+
+**⓸ WHAT TO BANK.** *The `.npz` in the same format as `c54.178_*` (keys `ls`, `Dl`, `l_A`, `D_M`, `r_s`, `arm`), and
+the guard line from each run so the sampling is auditable rather than assumed.*
+
+⚠ ***A convergence check between two NK values is worth more than a single passing run — the guard's threshold is
+the instrument's own and has not been validated against a converged answer.***
+
+⌗ *Receipts: `C51_the_dropped_bins_are_the_damping_tail`, `C52_the_banked_spectra_fail_the_sampling_guard`.*
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*
