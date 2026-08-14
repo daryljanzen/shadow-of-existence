@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2711 — 2026-08-11 (main line). **`PO-10`'s DELIVERABLE IS A PAIR — the acoustic sector is open, and the specification closes anyway.**
+
+**⌗ THE PROMPT.** *"Isn't the acoustic sector open still? … And is there something left to close off this item?"
+**Yes to both** — it is `PO-7`, and r2709–r2710 set `PO-10` up as though its input were settled.*
+
+**⛭⛭ THE DEPENDENCY, IN P15's OWN NUMBERS.** *"the seam datum's own phase freedom is **a real lever on it and spans
+a third of it** — at the opposite phase the gap to the control closes from **$0.615$ to $0.408$, thirty-four per
+cent, and no further**", and it "**cannot close the discrepancy**".*
+⇒ ***So a $\chi^2$ scored while `PO-7` is open carries a two-valued input.***
+
+**⛭ BUT THE FREEDOM IS DISCRETE, AND THAT KEEPS THE ROW TRACTABLE.**
+
+    CR k=2 (Omega_m + A_s)                 dBIC = 21.5      <- threshold holds
+    if CRPHI were counted as a parameter   dBIC = 16.1      <- it is not one
+
+⇒ ***A discrete two-valued choice is not a continuous parameter and does not enter $k$. Standard practice is to
+report both branches, not to penalise half a parameter.***
+
+**⓸ THE SPECIFICATION, CLOSED:** ***`PO-10` delivers $\chi^2(\varphi{=}0)$ and $\chi^2(\varphi{=}\pi)$, each at
+CR's best $\Omega_m$ on `L-147`'s 215 TT bins, each against $\Delta$BIC $=21.5$ — and `PO-7`, when it closes,
+SELECTS the physical branch.***
+
+**⛭ THE RULE:** ***before specifying a comparison, check every INPUT against the open list. A specification built on
+an open row is not wrong, but it is incomplete in a way that looks complete — and the missing piece will be a row
+you have been treating as background.***
+
+⌗ *So: the acoustic sector is open; this **is** machinery that runs as the computation proceeds; and what was left
+to close was the **specification**, which is now closed. **What remains is compute.***
+
 ### Revision r2710 — 2026-08-11 (main line). **THE THRESHOLD CORRECTED — CR is $k=2$, and the literature supplies the scale.**
 
 **⛔ ⓵ r2709's PARAMETER COUNT WAS WRONG, AND P15 SAYS SO.** *"the first peak is where the amplitude is
