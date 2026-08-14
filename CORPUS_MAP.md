@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2660 — 2026-08-11 (main line). **"BESPOKE" MEANS TWO BACKGROUNDS JOINED AT THE BRANCH POINT — and the apparent contradiction was the structure.**
+
+**⚠ THE APPARENT CONTRADICTION.** *`sec:envelope`'s driving uses $4/\eta$ friction — the **radiation-dominated**
+coefficient ($a\sim\eta$); a matter-dominated background gives $8/\eta$. So the perturbation sector appeared to
+assume radiation while the debt asks for a radiation-free background.*
+⇒ ***It does not. The paper scopes it in the same sentence: "**On the radiation-dominated collapse leg** the
+potential obeys". **Sixth time this session the paper was more careful than the first pass.***
+
+**⛭⛭ AND THE RESOLUTION IS THE FINDING.** *The two legs carry different content by construction: "there the
+self-gravitating excursion sets **the L2 rate radiation is included in**, here the diffuse plasma rides **the L1
+foliation radiation is excluded from**".*
+⇒⇒ ***So `PO-12` is not one background with a modified $H(a)$. It is TWO: a radiation-dominated collapse leg
+supplying the closed-form driving, joined at the branch point to a radiation-free expansion leg carrying the
+observable history.***
+
+**⌗ AND THE PAPER STATES THE TRANSFER'S CONSISTENCY RULE BEFORE THE TRANSFER EXISTS:** *"**This is forced**: it is
+the same L1 rate that dissolves the Hubble tension, and **one may not take the rate radiation-free for the peak
+spacing and radiation-included for the diffusion**."*
+
+**⛭ THE RULE:** ***when a computation seems to contradict a stated commitment, the scoping clause is usually one
+sentence away — and the scope is often the architecture. Here "on the collapse leg" was not a qualification on the
+equation; it was the two-leg structure announcing itself.***
+
+⌗ ***The debt at its sharpest: not "build a transfer" (one exists, validated) and not "swap $H(a)$" (understates
+it), but **run the existing hierarchy across a two-leg background, with the L1 rate on the expansion leg for every
+observable at once**. Both legs' pieces are separately in hand; **the join is untouched**.***
+
 ### Revision r2659 — 2026-08-11 (main line). **BOTH OF r2658's "MISSING" PIECES ARE BUILT — the instrument section names them together.**
 
 **⛔ THE CORRECTION.** *r2658 marked the visibility function and the $k\to\ell$ projection **"⛔ NOT located"** after

@@ -89,3 +89,4 @@ r2656  INSTRUMENT  check_kind: found 3 mismarked COMPUTED turns and a duplicate 
 r2657  INSTRUMENT  claim.py built and removed in one revision; the repo already coordinates. INGESTION + register
 r2658  COMPUTED    PO-12 six-eighths built; the driving verified, the C_l ratio recomputed as 0.823 vs 0.82
 r2659  LATENT      sec:instrument already carries visibility AND projection; r2658 searched by name and missed it
+r2660  COMPUTED    the driving friction is 4/eta (radiation) vs 8/eta (matter); the two legs differ by construction
