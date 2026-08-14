@@ -137,3 +137,4 @@ c54.211  LATENT      withdrew my own c54.210 scope: P10s slicing is a(T)=alpha*c
 c54.212  LATENT      item 30s twelve are a complete false-positive class: all satisfy the gates own CAN_EXIT predicate, at r2680 before any repair
 c54.213  LATENT      item 60s absence-outlived receipts are FOUR classes not one: genuine endings, a proxy broken by unrelated prose, a proxy broken by a citation marker, and one blind both ways
 r2697  INSTRUMENT  unbanked.py was reading receipt filenames as paper prose -- same class as r2680, other side
+r2697a INSTRUMENT  collapsed a duplicate S50 INDEX row my own merge re-added -- cc54 had collapsed it at c54.212
