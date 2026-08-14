@@ -13,6 +13,12 @@ CRPHI=0 -> phi/pi = 0.878 (disagreement 0.615), CRPHI=pi -> 0.671 (disagreement 
 So the derivation is: evolve the inherited adiabatic mode through the progenitor interior and read the
 sign of delta_g/Phi where it freezes at the seam.
 
+COMPUTES: the super-horizon potential transfer Phi_MD/Phi_RD (machinery validation on an expanding
+radiation+matter background), the interior sound speed and freezing ratio r=c_s k/|aH| at the seam, and
+the turnaround singularity H_c(eta_T)=0. ** It does NOT run at a pinned CRPHI: the "CRPHI=0"/"CRPHI=pi"
+above are the two-arm code's parametrisation being DIAGNOSED (0.878 vs 0.671), not a scope this receipt
+evaluates at -- NO value of phi is asserted, which is the whole point (check 5). **
+
 ** WHAT THIS RECEIPT ASSERTS (the solid part). **
   1. THE MACHINERY IS VALIDATED. A minimal tightly-coupled conformal-Newtonian system (delta_g, theta_g,
      Phi), matching ACOUSTIC_two_arm.py's own equations, reproduces the textbook 9/10 super-horizon
