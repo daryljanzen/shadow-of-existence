@@ -228,3 +228,4 @@ c54.219  COMPUTED    PO-6's owed shear calculation RUN: the shear costs exactly 
 c54.219a LATENT      and my own c54.215 working count of TWO was one too many; the parity-odd Pontryagin term is nonzero for CIRCULAR polarisation and P11 carries a chirality
 c54.219b INSTRUMENT  fourth math-bar instance in the same hand: my register edit broke PO-6's cells again, and the identical string broke the INDEX row -- where the gate caught it instantly
 r2771  LATENT      c54.219 merged: same verdict as r2766 by a stronger route. My basis was 3, the list is 5.
+r2772  INSTRUMENT  check_register_columns built on cc54s argument. Three LIVE breaks found and repaired.

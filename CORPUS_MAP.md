@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2772 — 2026-08-11 (main line). **THE REGISTER GETS THE COLUMN LINT THE INDEX ALREADY HAD.**
+
+**⌗ cc54's ARGUMENT, c54.219.** *"My register edit broke `PO-6`'s cell count on unescaped `|_{...}` bars — **fourth
+time, same hand**. The identical string went into the INDEX row, where your column lint caught it instantly. **The
+register needed me to notice.**"*
+⇒ ***Not a discipline problem — a missing instrument, stated better than this line had stated it.***
+
+**⛭⛭ AND THE TEST IS RAW-PIPE COUNT, NOT SEPARATOR COUNT.** *A restriction bar `$R^2|_{O(h^2)}$` leaves the `' | '`
+count unchanged — no surrounding spaces — while markdown still reads it as a cell boundary. **A check on `' | '`
+passes a broken row.*** *Counting raw unescaped `|` catches it and every other cause without enumerating LaTeX
+constructs.*
+
+**⛭⛭⛭ AND IT FOUND THREE LIVE BREAKS ON ITS FIRST RUN.**
+
+    PO-10   8 raw pipes, not 6
+    PO-5    8 raw pipes, not 6
+    PO-11  20 raw pipes, not 6      <- $\sqrt{|f|}$ and $dr/|f|$, from r2744's own edit
+
+⇒ ***This line wrote the fifth instance of the class while building the gate against it, and had been reading those
+rows for thirty revisions.*** *Repaired: 175 revision marks and 42,227 words before and after, nothing lost.
+Seed-tested clean → 1 → 0.*
+
+**⛭ THE RULE:** ***when the same defect is caught in one file and shipped in another, compare the FILES, not the
+edits. **A gate that exists somewhere is the strongest possible evidence that the same gate is missing elsewhere** —
+and the file without it accumulates the defect silently, because attention is on the one that complains.***
+
 ### Revision r2771 — 2026-08-11 (main line). **`c54.219` MERGED — same verdict as r2766, by a stronger route.**
 
 **⛭⛭ ⓵ BOTH NODES: ONE NEW COUNTERTERM, AND IT IS WEYL-SQUARED.**
