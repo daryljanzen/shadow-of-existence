@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2668 — 2026-08-11 (main line). **FAMILY 6's POINTER WENT STALE A SECOND TIME — and the gate built for it found a third on its first run.**
+
+**⛔ THE SECOND STALENESS, INVISIBLE TO EVERY EXISTING CHECK.** *Family 6 is "**the propagating fermion and gauge
+sector**". Its pointer named struck `L-164` (caught c54.134, repointed to `PO-4`) — and **`PO-11`, "the full
+PROPAGATING spinor field sector", was registered at r2597** while the pointer still read `PO-4`, "the colour and
+isospin structure".*
+⇒ ***The first staleness was DETECTABLE — a struck row. The second was not: `PO-4` is live, so everything passed.
+What went wrong is that the pointer stopped being ABOUT the same thing.***
+
+**✔ `check_family_pointers`** *compares each family's text to its target row's OBJECT for a shared content word —
+and on its **first run** found **family 5** ("the scalar perturbation sector, to a verdict") pointing at `PO-7`,
+when ***`PO-10` is literally "the scalar perturbation sector's stated remainder"***.*
+⇒ ***Three stalenesses across two families: a human found one, the gate found the other. Both corrected.***
+
+**⛭ THE RULE:** ***a pointer can rot without either end changing — when a NEW row is created that is more about the
+family than the old target was. Check pointers for APTNESS, not just liveness: "the row still exists" and "the row
+is still the right one" are different questions, and only the first has ever been checked.***
+
+⚠⚠ *The gate **cannot be seed-tested on a corrected row**: correction notes name many `PO-` references, so `any()`
+always matches. It proved itself once, on family 5, and is a **report** for corrected rows — recorded in the gate
+rather than dressed as a pass.*
+
+⌗ *Also r2668: `check_kind`'s blind spot from r2667 was **documented rather than gated** — the distinguishing
+feature of a rediscovery is whether the SEARCH covered the section, which is a fact about the reading and not about
+the artefact. Building a mechanism for it would repeat r2657's error.*
+
 ### Revision r2667 — 2026-08-11 (main line). **P14 ALREADY WALLS TWO ROUTES — and r2666 rediscovered one of them.**
 
 **⛔ THE CORRECTION.** *r2666 derived that a flat bundle's holonomy cannot supply a force and logged the turn
