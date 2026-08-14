@@ -498,6 +498,46 @@
 \emph{Computes:} asserts the cancellation sentence and both rate-ratio results verbatim, and computes adjacent-peak envelope ratios on three envelopes (9 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- supplies the reason behind r2646s gate
 \ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C15\_the\_cancellation\_does\_not\_reach\_the\_ratio.py}
+\item[\label{rcpt:C16_the_transfer_is_six_eighths_built}\texttt{C16\_the\_transfer\_is\_six\_eighths\_built}]\hfill\textsf{[OK]}\\
+\textit{sec:envelope} \ (PO-12s step 2 is six-eighths built: the driving verified in closed form, source removal exact, projection calibrated at l\_*=302.2 vs 301, and a C\_l RATIO with no free parameter already in the paper (0.823 recomputed vs 0.82)). 
+\emph{Computes:} verifies the driving satisfies its ODE, is even, and normalises; asserts the genuine-build, projection and no-free-parameter clauses verbatim; recomputes the high-ell ratio (8 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- narrows a debt to the absolute spectrum
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C16\_the\_transfer\_is\_six\_eighths\_built.py}
+\item[\label{rcpt:C17_the_instrument_already_carries_both}\texttt{C17\_the\_instrument\_already\_carries\_both}]\hfill\textsf{[OK]}\\
+\textit{sec:instrument} \ (CORRECTS r2658: both pieces it marked NOT LOCATED are built and validated --- the Peebles recombination history IS the visibility function and the line-of-sight source with its j\_l kernel IS the projection). 
+\emph{Computes:} asserts sec:instruments description, its validation figures and its flat-projection wording verbatim, against the debts radiation-free clause (9 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- corrects a prior lines audit; the debt is now what the instrument RUNS ON
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C17\_the\_instrument\_already\_carries\_both.py}
+\item[\label{rcpt:C18_bespoke_means_two_legs}\texttt{C18\_bespoke\_means\_two\_legs}]\hfill\textsf{[OK]}\\
+\textit{sec:envelope} \ (what BESPOKE means for PO-12: the transfer must carry TWO backgrounds joined at the branch point --- radiation-dominated collapse leg, radiation-free expansion leg --- and the paper forbids mixing the rates). 
+\emph{Computes:} computes the friction coefficient for both contents, asserts the collapse-leg scoping, the L1/L2 division and the forced consistency rule verbatim (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- sharpens a debt; the branch-point join is untouched
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C18\_bespoke\_means\_two\_legs.py}
+\item[\label{rcpt:C19_the_branch_point_join}\texttt{C19\_the\_branch\_point\_join}]\hfill\textsf{[OK]}\\
+\textit{sec:transmission} \ (THE BRANCH-POINT JOIN COMPUTED: transmission is conservation of R, so the join is a change of variable worth exactly 9/10 --- applied ONCE where LCDM spreads it over equality, which is why CR has no early ISW). 
+\emph{Computes:} asserts the not-yet-in-hand and transmits clauses, the matter-dominated-to-nine-orders and four-per-cent clauses verbatim, and derives 9/10 from R/Phi=(5+3w)/(3+3w) (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- super-horizon join only; sub-horizon modes and the dynamical crossing stay open
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C19\_the\_branch\_point\_join.py}
+\item[\label{rcpt:C20_the_caveat_named_an_empty_set}\texttt{C20\_the\_caveat\_named\_an\_empty\_set}]\hfill\textsf{[OK]}\\
+\textit{sec:what-crosses} \ (r2661s super-horizon caveat named an EMPTY SET: at the branch point (rH)\textasciicircum{}2 diverges, the comoving horizon goes to zero, and every mode is outside --- so the 9/10 join is unrestricted). 
+\emph{Computes:} asserts the every-mode-outside and seam clauses verbatim, computes the divergence of (rH)\textasciicircum{}2 and the vanishing comoving horizon, and confirms the radiation term dominates (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- removes a caveat from a prior receipt; the crossing dynamics stay deferred
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C20\_the\_caveat\_named\_an\_empty\_set.py}
+\item[\label{rcpt:C21_the_superhorizon_transfer_closes}\texttt{C21\_the\_superhorizon\_transfer\_closes}]\hfill\textsf{[OK]}\\
+\textit{sec:envelope} \ (THE SUPER-HORIZON TRANSFER CLOSES: Phi -> Phi\_i exactly at the branch point for every k (departure O(k\textasciicircum{}2 eta\textasciicircum{}2)), so with r2661s join Phi\_exp(k) = (9/10) Phi\_i(k) scale-invariantly --- the branch point does not filter). 
+\emph{Computes:} computes the branch-point limit and the series coefficients, re-derives the join, and asserts the transmits clause verbatim; flags the 1/10 near-miss as different-origin (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- scalar super-horizon only; the single end-to-end run stays unrun
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C21\_the\_superhorizon\_transfer\_closes.py}
+\item[\label{rcpt:C22_the_end_to_end_number}\texttt{C22\_the\_end\_to\_end\_number}]\hfill\textsf{[OK]}\\
+\textit{sec:earlyisw} \ (THE END-TO-END NUMBER: 7.5\% low-ell power deficit from the absent early ISW, 18\% at l\_D rising to 54\% at 2 l\_D from damping --- and the acoustic peaks BETWEEN them are where the chain stops, correcting r2661s no-further-evolution). 
+\emph{Computes:} asserts the scope qualification, the super-horizon-equation clause, the order-two decay and the not-a-radiation-effect clause verbatim, and computes both ratios (8 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- corrects a prior receipts scope; not a prediction against data
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C22\_the\_end\_to\_end\_number.py}
+\item[\label{rcpt:C23_the_gap_estimated}\texttt{C23\_the\_gap\_estimated}]\hfill\textsf{[OK]}\\
+\textit{sec:earlyisw} \ (ESTIMATE for the peak-region gap: the decay rate k\textasciicircum{}2/(3H) is built from the thing that differs, so CRs potential decays \textasciitilde{}15\% faster and the peak power ratio is \textasciitilde{}0.813 --- BROAD deviation, not tail-confined). 
+\emph{Computes:} asserts the rate, the 13\% and the factor-of-two clauses verbatim, computes the compounding, and flags the 0.813/0.823 near-coincidence as different-origin (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- an ESTIMATE with its model stated, labelled as one; a hierarchy run would replace it
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C23\_the\_gap\_estimated.py}
 \item[\label{rcpt:P03_acceleration_is_slice_curvature}\texttt{P03\_acceleration\_is\_slice\_curvature}]\hfill\textsf{[OK]}\\
 \textit{sec:curvature \ensuremath{\cdot} rem:twocritical \ensuremath{\cdot} the bend} \ (on ANY member of the energy family (E cancels: (dr/dtau)\textasciicircum{}2 = E\textasciicircum{}2 - f, and E is a constant of the motion) d\textasciicircum{}2r/dtau\textasciicircum{}2 = -f'/2 = r*K\_G identically, so THE SIGN OF THE SLICE'S GAUSSIAN CURVATURE IS THE SIGN OF THE COMOVING ACCELERATION -- and the flat locus is the deceleration-to-acceleration turnover, which on Nariai is the seam and in standard terms is rho\_m = 2 rho\_Lambda (csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2, the seam's phase). A recent cosmological epoch: 7.06 Gyr at H0=73, 7.65 at 67.4, preceding matter-Lambda equality [borrowed from P3 \ensuremath{\cdot} P7 \ensuremath{\cdot} P8]). 
 \emph{Computes:} the identity asserted; the K\_G zero solved and matched to (M alpha\textasciicircum{}2)\textasciicircum{}(1/3); csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2 proved by algebra after simplify() failed on the closed forms; epochs at both H0

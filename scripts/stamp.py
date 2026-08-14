@@ -23,7 +23,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 ROOT = os.path.abspath(os.path.join(HERE, '..'))
 
-import queue as Q                                    # noqa: E402
+import workqueue as Q                                    # noqa: E402
 
 
 def rev():

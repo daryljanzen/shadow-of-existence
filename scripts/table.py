@@ -26,7 +26,7 @@ sys.path.insert(0, HERE)
 ROOT = os.path.abspath(os.path.join(HERE, '..'))
 
 import re                                        # noqa: E402
-import queue as Q                                # noqa: E402
+import workqueue as Q                                # noqa: E402
 
 
 def main():

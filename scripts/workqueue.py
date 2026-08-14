@@ -18,7 +18,7 @@ routed queue, or the dispatch. ***
   or leaves it -- and *** all three are informative, because finding a new item is work and hiding that
   it was found is not. ***
 
-    python3 scripts/queue.py
+    python3 scripts/workqueue.py
 
 Written r2615.  Stated for reversal.
 """

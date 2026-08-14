@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2670 — 2026-08-11 (main line). **54's c54.208 FOLDED — it found a bug of mine that made the receipt runner unrunnable, and running it exposed a class of mine.**
+
+**⛔ THE BUG IS MINE.** *`scripts/queue.py` (**r2615**) shadows the stdlib `queue`, which `concurrent.futures`
+imports lazily — so it survives import and **dies on first use**: `module 'queue' has no attribute 'SimpleQueue'`.*
+✔ ***Re-derived independently before folding, per `INGESTION.md`. Renamed to `workqueue.py`; all instruments
+green.***
+
+**⌗ AND 54's OTHER FIND IS r2650's RULE ARRIVING FROM THE OTHER NODE.** *`check_receipts_run` printed "No receipt
+fails" while reading a cache **last written 294 commits earlier** — **green-because-old, the direction that looks
+like success**. 54's fix stamps a tree-digest and rejects a forged or absent stamp, both modes seeded.*
+⌗ *54 also withdrew its own routed warning `L-535` as a class after running a control: 27 fail stripped, **24 fail
+anyway**, one accidental instance. "An experiment with no control returns the size of the tree, not the size of the
+effect."*
+
+**⛭⛭ AND THE LIVE RUN, ONCE THE SHADOW WAS GONE: 375 pass, 82 FAIL.**
+⛔ ***Checked before reporting: at least **14 of the 82 assert an ABSENCE** — "neither row records the dependency",
+"the row never says" — in a receipt whose own turn then added the thing. `C14` (r2646) asserts neither row records a
+dependency **that r2646 recorded on both rows**.***
+
+**⛭ THE RULE:** ***never assert an absence you are about to end. A receipt written in the turn that changes the
+corpus must assert the state it LEAVES, not the state it found — otherwise it is green exactly once, at the moment
+it can least be trusted.***
+
+⌗ *A defect in how this line writes receipts, not 82 physics failures — **and invisible for as long as the runner
+was**.*
+
 ### Revision r2669 — 2026-08-11 (main line). **`PO-11`'s OBSTRUCTION IS HORIZON-LOCATED — and $r=0$ is integrable in both norms.**
 
 **⌗ P14 GIVES BOTH MEASURES.** *"the fermion is a mode of the existent spatial leaf, and **in that induced proper
