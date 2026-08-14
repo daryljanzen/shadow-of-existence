@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2744 — 2026-08-11 (main line). **`PO-11`'s JOIN CROSSES THE INNER HORIZON.**
+
+**⓵ P14 GIVES $W$ TWO KINDS OF ZERO, at different places.** *"it vanishes at the horizons ($f=0$)" AND "is odd in
+the signed radius … $W$ changes sign at $r=0$: a domain wall".*
+
+    CONTINUUM   lives where f > 0        the static region, 0.257 < r < 0.846
+    WALL        lives at r = 0           where the signed radius passes through zero
+
+    f(0.300) = +0.11   f(0.257) = 0.00 (inner horizon)   f(0.200) = -0.24   f(0.010) = -23.0
+
+**⛭⛭ ⓶ AND $r=0$ IS DEEP INSIDE THE INNER HORIZON** — *as $r\to0^+$ the $-2M/r$ term dominates and
+$f\to-\infty$.* ***The wall sits where $f<0$: $t$ and $r$ have swapped roles, and there is no static Killing time
+in which to pose a stationary problem.***
+
+**⛭ ⓷ SO THE UNDERTAKING IS A MATCHING ACROSS A KILLING HORIZON** — ***not a harder version of the scattering
+problem r2716 solved, but a different KIND: the continuum's modes are stationary states of a static region, the
+wall's zero-mode is not, and **no single time coordinate covers both**.***
+
+**⌗ AND THAT RETROSPECTIVELY EXPLAINS r2717.** *The strike was taken entirely inside the static region, on an object
+that by construction could not reach the wall. **The completeness argument was correct and the region was wrong** —
+which is why it survived every check run against it and failed the one sentence of P14 that had not been read.*
+
+**⛭ THE RULE:** ***when a paper says two things "sit in different regions", find the regions before deciding how
+hard the join is. A join within one region is a calculation; a join across a horizon is a different kind of problem
+— and the phrase reads identically either way.***
+
 ### Revision r2743 — 2026-08-11 (main line). **`PO-6`'s TWO HALVES MEET AT THE SHEAR — and the tower IS the shear.**
 
 **⓵ THE DEFICIT, checked.** *On an axisymmetric shear $\mathrm{diag}(-2\sigma,\sigma,\sigma)$ over isotropic

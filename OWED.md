@@ -26,3 +26,4 @@ sources: [chat]
 - [ ] (429) cc54 FOR_56 items 26/28/30/32 (the stale-receipt class): converted A7 and C32 at r2740; the class recurs every time a finding is acted on, and the standing habit is in the wisdom ledger rather than a gate
 - [ ] (430) PO-5 + the constant ledger are ONE QUESTION (c54.216): does the corpus commit that ell_P is a GAUGE? p0 states it; the test is whether any paper treats it as a second scale
 - [ ] (432) PO-6: compute the counterterm basis at SECOND order in the shear -- r2743 established the degeneracy survives to first order and breaks at two gravitons; what the second-order basis CONTAINS is unrun
+- [ ] (433) PO-11: do JanzenGeometricCore / JanzenBoundary already carry the horizon matching P14 cites them for? r2744 named the KIND of problem; whether the two papers supply it is UNCHECKED
