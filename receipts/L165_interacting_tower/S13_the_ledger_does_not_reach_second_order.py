@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
-"""S13 -- at second order in the shear the quadratic basis is genuinely THREE-dimensional, and the
+"""S13 -- ⛭⛭ **CONFIRMED AND CORRECTED BY c54.219.**  *** The verdict AGREES -- one new counterterm
+and it is Weyl-squared -- and cc54 reached it by a stronger route: $\\delta^{(1)}R=0$ for a TT
+perturbation and $\\sqrt g$ is $h$-independent, so $\\int\\sqrt g\\,R^2$ at second order **IS** a shift
+of Einstein--Hilbert, pointwise and with no integration by parts.  This receipt said the $R$-sector
+is ROUTED by L-818; cc54 shows it COLLAPSES. ***
+  ⛔ ** AND THE BASIS HERE IS INCOMPLETE: ** *** the dimension-four list is FIVE, not three -- this
+  receipt's rank argument used $\\{$Riem$^2$, Ric$^2$, $R^2\\}$ and never saw $\\Box R$ or the
+  PARITY-ODD $R\\tilde R$.  cc54: $R\\tilde R$ is zero for linear polarisation and $\\pm4.977310$ for
+  circular -- **a mode-choice artefact this receipt would also have concealed**.  The count stays one
+  (it is a total derivative), but the rank argument was made on the wrong space. ***
+
+S13 -- at second order in the shear the quadratic basis is genuinely THREE-dimensional, and the
 third direction is $C^2$: it vanishes identically shear-free, so L-818 never had to route it, and it
 has no route.
 

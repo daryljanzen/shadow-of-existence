@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2771 — 2026-08-11 (main line). **`c54.219` MERGED — same verdict as r2766, by a stronger route.**
+
+**⛭⛭ ⓵ BOTH NODES: ONE NEW COUNTERTERM, AND IT IS WEYL-SQUARED.**
+
+    r2766 (56)     by RANK      GB and C^2 span 2 of 3; the third is the R-sector
+    c54.219 (cc54) by COLLAPSE  delta^(1)R = 0 for TT and sqrt(g) is h-independent, so
+                                int sqrt(g) R^2 at second order IS a shift of Einstein-Hilbert
+                                -- pointwise, no integration by parts
+
+⇒ ***r2766 said the $R$-sector is ROUTED. cc54 showed it COLLAPSES — a stronger statement about the same term.***
+
+⌗ *And $C^2$ on a propagating TT mode is zero at $O(\epsilon^0)$ and $O(\epsilon^1)$, nonzero at $O(\epsilon^2)$,
+homogeneous of degree 4 in $(H,k,\omega)$ against $\sigma^2$'s degree 2 — **not the back-reaction the corpus
+already carries**.*
+
+**⛔ ⓶ AND IT CORRECTS r2766's BASIS: the dimension-four list is FIVE, not three.** *r2766's rank argument used
+$\{$Riem$^2$, Ric$^2$, $R^2\}$ and never saw $\Box R$ or the parity-odd $R\tilde R$.*
+
+**⓷ AND THE PARITY-ODD TERM IS LIVE.** *$R\tilde R$ is $0$ for linear polarisation and $\pm4.977310$ for circular,
+the sign flipping with handedness. **A linear mode returns zero and conceals it** — the count stays one (a total
+derivative), but the zero was a property of the mode chosen, not of the geometry.*
+⌗ *cc54 found it by running an **adversarial referee against their own claim** — told to refute, not confirm — with
+two of five fronts landing.*
+
+**⛭ THE RULE:** ***when two nodes agree, compare the ROUTES and keep the stronger one — agreement is not the
+finding, and the weaker derivation usually carries an assumption the stronger dissolves. And when a rank argument
+gives a clean answer, **check the dimension of the space before trusting the rank**.***
+
+⌗ *`S13` marked at source. 17 PDFs taken from `MERGE_HEAD` and verified against both parents by
+`scripts/resolve_merge.py` — the r2736 lesson holding.*
+
 ### Revision r2770 — 2026-08-11 (main line). **THE SUBSTRATE DOES CARRY COMPACT $SU(2)$ — the question is what it acts on.**
 
 **⓵ THE KIND QUESTION, ENUMERATED.**
