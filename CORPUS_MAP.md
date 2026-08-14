@@ -146,6 +146,41 @@ sources: [cowork, chat]
 
 
 
+### Revision r2671 — 2026-08-11 (main line). **`D3` IS WITHDRAWN — the floor DOES survive, and P10 has said so since r2419. Found by 54 (c54.209), re-derived here.**
+
+**⛔ WHAT WENT WRONG.** *r2651 quoted P10 through "…the cubic and higher self-interactions enter at the same
+inverse-square order at the origin" **and stopped**. **Four sentences on, same paragraph**, P10's own voice: "**So
+the cubic term's apparent unboundedness is an artefact of truncation: $\pi^2(1-\lambda\varphi+\cdots)$ is the
+expansion of $\pi^2/(1+\lambda\varphi)$, whose full coefficient is positive wherever the metric is
+non-degenerate**" — carrying `\rcpt{P10_gamma_hat_is_bounded_below}`, **which passes**.*
+⇒ ***This line's OWN r2632 rule. Third time this session, and the first to cost a physics conclusion rather than a
+caveat.***
+
+**✔ VERIFIED INDEPENDENTLY BEFORE ACCEPTING, per `INGESTION.md`:**
+
+    series checked termwise to 8th order:  pi^2/(1+lam*phi) = pi^2(1 - lam*phi + lam^2 phi^2 - ...)
+    D3's "square times a signed field" IS its first-order term
+    200,000 identical points:  truncation reaches -209.5;  resummed never below gamma = 0.25
+
+⇒⇒ ***A truncation of a positive function is not a statement about the function.***
+
+**⛭⛭ AND IT DISSOLVES r2652 RATHER THAN ANSWERING IT.** *That receipt asked whether the sub-$(-1/4)$ region carries
+support. On non-degenerate metrics $\hat\Gamma\ge\gamma$, and P10 carries $\gamma\le\tfrac14$ with $\nu$ real —
+**the region is empty; the question has no object**.*
+
+**⌗ WHAT SURVIVES.** *r2651's arithmetic about the TRUNCATION; r2652's threshold mathematics; and **r2652's worry is
+right about the BOUNDARY** — P10 scopes itself: "the positivity speaks only of the interior, **the degenerate
+boundary being what the thermal condition above is for**". **Two jobs, neither substituting.***
+
+**⛭ THE RULE, SHARPENED:** ***"read the next sentence" is not enough — read to the END OF THE PARAGRAPH. A paper
+states a difficulty before resolving it, so the quotation that best supports a negative result is systematically the
+one that precedes its refutation.***
+
+⌗ *`D3`'s verdict is **struck in place with its arithmetic retained and its checks still passing**, so the error
+stays legible. `PO-6`'s row and the `L-165` vein corrected.*
+⌗ *54's own note is the honest one: **"a register only prevents a collision if the node that can read it does"** — it
+read this line's commits because nothing had been claimed.*
+
 ### Revision r2670 — 2026-08-11 (main line). **54's c54.208 FOLDED — it found a bug of mine that made the receipt runner unrunnable, and running it exposed a class of mine.**
 
 **⛔ THE BUG IS MINE.** *`scripts/queue.py` (**r2615**) shadows the stdlib `queue`, which `concurrent.futures`

@@ -1,5 +1,36 @@
 #!/usr/bin/env python3
-"""D3 -- `PO-6`'s floor question has a determinate answer at the order the paper names: $\\hat\\Gamma$ is
+"""D3 -- ⛔⛔ **THIS RECEIPT'S CONCLUSION IS WITHDRAWN, r2671.**  Its arithmetic stands; its physics does
+not.  *** The floor DOES survive, and P10 has said so since r2419. ***
+
+** WHAT WENT WRONG. **  This receipt quoted P10 through "...the cubic and higher self-interactions enter
+at the same inverse-square order at the origin" ** and stopped there **.  *** Four sentences on, in the
+same paragraph, P10's own voice: "So the cubic term's apparent unboundedness is an artefact of
+truncation: $\\pi^2(1-\\lambda\\varphi+\\cdots)$ is the expansion of $\\pi^2/(1+\\lambda\\varphi)$, whose
+full coefficient is positive wherever the metric is non-degenerate" -- carrying
+`\\rcpt{P10_gamma_hat_is_bounded_below}`, which passes. ***
+
+  ⇒ ** This line's OWN r2632 rule: check the sentence after the one you quote. **  *** Third time this
+      session, and the first time it cost a physics conclusion rather than a caveat. ***
+
+** VERIFIED INDEPENDENTLY BEFORE ACCEPTING (r2671, per `INGESTION.md`): ** the series
+$\\pi^2/(1+\\lambda\\varphi)=\\pi^2(1-\\lambda\\varphi+\\lambda^2\\varphi^2-\\cdots)$ checked termwise to
+eighth order -- *** this receipt's "square times a signed field" IS its first-order term ***; and on
+200,000 identical points the truncation reaches ** $-209.5$ ** while the resummed coefficient ** never
+falls below $\\gamma=0.25$ **.  *** A truncation of a positive function is not a statement about the
+function. ***
+
+** WHAT STANDS. **  ** The arithmetic below is correct as arithmetic ** -- $\\gamma+\\pi^2(c+g_3\\varphi)$
+does run to $-\\infty$ for signed $\\varphi$.  *** What it is not is $\\hat\\Gamma$. ***  ** And P10's own
+scope is preserved: ** "the positivity speaks only of the interior, the degenerate boundary being what
+the thermal condition above is for."
+
+  ⌗ ** The checks are left RUNNING and PASSING ** -- they assert what the paper says about the truncation,
+  and every one of them is true.  *** It is the VERDICT that was wrong, and it is struck here rather than
+  the file deleted, so the error stays legible. ***
+
+--- ORIGINAL DOCSTRING, RETAINED ---
+
+`PO-6`'s floor question has a determinate answer at the order the paper names: $\\hat\\Gamma$ is
 NOT bounded below once the cubic enters, and the condition is explicit.
 
 ** THE QUESTION, narrowed to one thing at r2619. **  P10 leaves it open in its own voice: "** whether the
@@ -110,8 +141,11 @@ def main():
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print("  VERDICT: ** NO -- the complete Gamma-hat is not bounded below, at the order the paper names.")
-    print('  **')
+    print('  ⛔⛔ VERDICT WITHDRAWN r2671.  ** The floor DOES survive. **  P10, four sentences past')
+    print('  the quotation below: "the cubic term\'s apparent unboundedness is an artefact of')
+    print('  truncation: pi^2(1 - lam*phi + ...) is the expansion of pi^2/(1 + lam*phi), whose full')
+    print('  coefficient is positive wherever the metric is non-degenerate."')
+    print('  *** The arithmetic below is right about the TRUNCATION and wrong about Gamma-hat. ***')
     print('  ⓵ ** Leading order is a sum of squares: ** Gamma = gamma + c*sum(pi_n^2) >= gamma.')
     print('  ⛭⛭ ⓶ ** But the paper names what enters next: ** "the cubic and higher self-interactions')
     print('     enter at the same inverse-square order ... ** (pi_n^2 phi_m / a^3 in kind) **".')
