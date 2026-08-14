@@ -88,7 +88,8 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2672   ---     CLAIMED: the 14 self-falsifying absence-assertions (my defect, r2670). DONE 40/40.
     r2673   ---     TRIAGE done: 41 timeouts, 21 now-pass, 17 real. Two of the 17 were mine, repaired.
     r2674   ---     cc54 CI blocker cleared: LATENT_HISTORY/TABLE_HISTORY classified RECORD. Mine to fix.
-    r2675   ---     CLAIMED: check_no_stdlib_shadow -- the root fix cc54 routed and nobody has built.
+    r2675   ---     check_no_stdlib_shadow built+seeded+wired. All four collision classes gated.
+    r2676   PO-4    CLAIMED: su(2)_L as a GAUGING -- the discrete horn swap vs a chiral action.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 
