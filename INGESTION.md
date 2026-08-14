@@ -97,7 +97,9 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2681   ---     certified = meta-vocabulary; found 12 cited receipts that cannot exit non-zero.
     r2682   ---     absence class measured: 4 ended, 3 stand. 2 fixed, 5 reverted, routed item 31.
     r2683   PO-2    three levels audited: (1) grounded (2) PASSED (3) walled on the FORCE not the map.
-    r2684   ---     CLAIMED: do other held rows have NAMED levels nobody has audited against?
+    r2684   ---     PO-6 halves restated; check_declared_parts built.
+    r2685   ---     convergence audit: 4 BOUNDED, 1 UNBOUNDED, 3 gated. Frontier line in the stamp.
+    r2686   PO-12   CLAIMED: the two-leg run -- what exactly the instrument would need changed.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

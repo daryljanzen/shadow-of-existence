@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2686 — 2026-08-11 (main line). **`PO-12`'s SUBSTITUTION ITEMISED — and the ratio does not cancel, because $r_D$ carries a square root.**
+
+**⓵ THE RATE DIFFERENCE RECONSTRUCTS.** *At $\rho_r/\rho_m=0.3$: $1/\sqrt{1.3}=0.877$ — **12.3% below**, matching
+P15's stated 13%.*
+
+**⛭⛭ ⓶ AND THE INSTRUMENT SPLITS CLEANLY:**
+
+    CARRIES H     eta = int da/(a^2 H)  ·  r_s = int c_s d(eta)  ·  1/(aH)
+                  1/k_D^2 = int da g/(H x_e)          <- UNDER A SQUARE ROOT
+    CARRIES NONE  Thomson rate n_e sigma_T a  ·  x_e(z), Saha/Peebles in z
+
+⇒ ***P15's "the whole difference is carried by $H(a)$" itemised rather than asserted: the microphysics is untouched
+and only the geometry moves.***
+
+**⛭ ⓷ BUT THE EXPONENTS DIFFER:** *$r_s$ IS the integral ($H^{-1}$, ×1.140); **$r_D$ is the SQUARE ROOT of one**
+($H^{-1/2}$, ×1.068).*
+⇒⇒ ***A naive "everything is a length so the ratio cancels" is WRONG — a scaling argument that treats both as
+lengths gets zero where the answer is $+6.8\%$.***
+
+**⚠ ⓸ AND THE REMAINING GAP IS THE FINDING.** *P15 states $+9.4\%$. The **13% is LOCAL** at recombination while the
+integrals **ACCUMULATE** over a history where $\rho_r/\rho_m$ is larger earlier.*
+⇒ ***A constant-ratio shortcut understates, and the 2.6-point gap is exactly what integrating the rate difference
+over the history is worth — which sets the bar for the two-leg run rather than casting doubt on the paper.***
+
+**⛭ THE RULE:** ***before scaling a ratio, check the POWER each side carries. Two quantities with the same
+dimensions can carry different powers of the same background function — an integral and the square root of an
+integral are both lengths — and a dimensional argument cannot see the difference.***
+
 ### Revision r2685 — 2026-08-11 (main line). **THE CONVERGENCE AUDIT — the row count is right and it is not the thing that moved.**
 
 **⛔ THE COUNT, HONESTLY.** *Across `r2615`–`r2684`: **one row struck** (`PO-8`), **two answered** (`PO-3`, `PO-9`).
