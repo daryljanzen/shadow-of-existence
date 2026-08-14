@@ -136,12 +136,23 @@ def main():
     gates = [os.path.basename(f)[:-3]
              for f in glob.glob(os.path.join(ROOT, 'corpus', 'check_*.py'))]
     check(f'the suite has {len(gates)} check_* scripts', len(gates) >= 17)
-    check('and the two LINTS that INFER -- check_loci and scope_table -- are NOT among the gates '
-          'CI runs',
-          'check_loci' not in open(os.path.join(ROOT, '.github', 'workflows', 'gates.yml'),
-                                   encoding='utf-8', errors='replace').read()
-          and 'scope_table' not in open(os.path.join(ROOT, '.github', 'workflows', 'gates.yml'),
-                                        encoding='utf-8', errors='replace').read())
+    # ---------------------------------------------------------------- r2656+c54.208
+    # ** THIS CHECK WAS FALSIFIED BY THE CORPUS GETTING BETTER, WHICH IS A RECEIPT DOING ITS JOB. **
+    # It asserted that NEITHER inferring lint is wired into CI.  `check_loci` has since been wired,
+    # after the c54.197 work gave it a theorem-body binding and a declared exception list -- so the
+    # thing this receipt flagged as unwired got fixed, and the receipt went red saying so.
+    #   ⇒ *** It went red at some revision nobody can name, because nothing re-ran it: the runner's
+    #       cached result had not moved in 294 commits (`L-541`).  The claim is therefore SPLIT
+    #       rather than relaxed -- the wired one is asserted wired, the unwired one unwired --
+    #       so the row keeps its edge instead of being widened until it passes. ***
+    _ci = open(os.path.join(ROOT, '.github', 'workflows', 'gates.yml'),
+               encoding='utf-8', errors='replace').read()
+    check('⛭ check_loci -- an INFERRING lint -- is now wired into CI, which it was not when this '
+          'receipt was written: the exception list it grew is what made it gateable',
+          'check_loci' in _ci)
+    check('and scope_table, the other inferring lint, is STILL not wired -- so the distinction the '
+          'receipt draws survives and has not been widened to fit',
+          'scope_table' not in _ci)
     arsenal = open(os.path.join(ROOT, 'THE_ARSENAL.md'), encoding='utf-8', errors='replace').read()
     check('and THE_ARSENAL records the rule the two lints share: a gate can check a DECLARATION, '
           'it cannot check a JUDGEMENT',

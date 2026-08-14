@@ -33,11 +33,28 @@ at a juncture -- before a bundle, after a sweep -- rather than every revision.  
 rather than quietly wiring it in, because a gate nobody runs is worth what a receipt nobody runs
 is worth.
 """
-import argparse
 import os
+import sys
+
+# ---------------------------------------------------------------- r2656+c54.208
+# ** `scripts/queue.py` SHADOWS THE STDLIB `queue`, WHICH `concurrent.futures` IMPORTS. **
+# Running this file as `python3 scripts/run_all_receipts.py` puts `scripts/` first on sys.path,
+# so ThreadPoolExecutor dies on `queue.SimpleQueue` before a single receipt runs.  The runner has
+# therefore been UNRUNNABLE since `scripts/queue.py` was added -- which is why the cached
+# `RUN_RESULT.txt` this gate reads had not moved in 294 commits.
+#   ⇒ *** A 9-minute out-of-band job that crashes in its first second leaves the LAST GOOD RESULT
+#       sitting on disk, so the failure presents as a stale success rather than as a failure. ***
+# Dropping this file's own directory from sys.path fixes THIS script.  The hazard is general --
+# any script here that touches threads inherits it -- and the rename is the observer line's to
+# make, so it is routed rather than done under them.
+_HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path[:] = [p for p in sys.path if os.path.abspath(p or '.') != _HERE]
+
+import argparse
+import glob
+import hashlib
 import re
 import subprocess
-import sys
 import time
 from concurrent.futures import ThreadPoolExecutor
 
@@ -95,6 +112,23 @@ def run_one(path, timeout):
         return ('FAIL', path, time.time() - t0, f'{type(e).__name__}: {e}'[:300])
 
 
+def tree_digest():
+    """A digest of everything a receipt can check: the papers it quotes and the receipts themselves.
+
+    ** Deliberately NOT the git HEAD. **  Requiring an exact-HEAD match would fail the gate on every
+    commit that touches a register file, which trains the caller to skip it; hashing only what a
+    receipt can actually READ fails exactly when the result could have gone stale and at no other
+    time.  The digest is over content, so a revert restores the old digest and the cached run is
+    valid again -- which is correct, because it is.
+    """
+    h = hashlib.sha256()
+    for pat in ('corpus/*.tex', 'receipts/**/*.py', 'computations/**/*.py'):
+        for f in sorted(glob.glob(os.path.join(ROOT, pat), recursive=True)):
+            h.update(os.path.relpath(f, ROOT).encode())
+            h.update(open(f, 'rb').read())
+    return h.hexdigest()[:16]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--timeout', type=int, default=300)
@@ -111,6 +145,11 @@ def main():
     print()
     print(f"  RUN-ALL-RECEIPTS -- {len(files)} registered receipt(s), {a.jobs} at a time, "
           f"{a.timeout}s each, each from ITS OWN DIRECTORY")
+    # r2656+c54.208: the result of this run is CACHED and read by check_receipts_run.  A cache with
+    # no expiry is a green verdict about a tree that no longer exists -- the file on disk at r2419
+    # was still being read as current at r2656, 294 commits later, and reported "no receipt fails
+    # for a reason inside the corpus" while 24 did.  So the run stamps WHAT IT RAN AGAINST.
+    print(f"  TREE-DIGEST: {tree_digest()}")
     print()
     t0 = time.time()
     with ThreadPoolExecutor(max_workers=a.jobs) as ex:
