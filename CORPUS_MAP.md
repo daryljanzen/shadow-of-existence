@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r2695 — 2026-08-11 (main line). **THE LIST AUDITED END TO END — four stale row heads, a reader that could not see a close, and a gate so neither recurs.**
+
+**⛔ WHAT THE AUDIT FOUND.**
+*· **`PO-3` and `PO-9` opened with `OPEN`** while the stamp reported them ANSWERED — **fifty revisions** after the
+answers landed at r2645 and r2644. A reader opening either row saw the opposite of the truth.*
+*· **`PO-6`** read "three of its **four** halves" when r2684 had established it declares **two**.*
+*· **`PO-5`** read "worked four times r2525–r2572" after three more workings.*
+*· **`FOR_54` item 59** carried "⛔⛔ AND ANSWERED AT c54.212" **in its own header** and counted LIVE, because
+`routed()` tested for the single glyph `✔`.*
+
+**⛭⛭ THE MECHANISM IS ONE THING:** ***a row's state field accumulates notes at its TAIL while its HEAD keeps the
+sentence it was registered with. Every reader sees the head; every writer appends to the tail; nothing reconciles
+them.***
+
+⌗ *Same shape one level up — r2694's `LEDGER 7` was 1 because nobody read the bucket as a group, and `routed()`
+counted closed items open because a close can be written six ways and the reader knew one.*
+
+**⛭ THE RULE:** ***a queue is only a queue if its ENTRY POINT is current. Notes accumulate where they are written;
+state must be maintained where it is READ — and those are opposite ends of the same field, so a queue with no rule
+about the head will always drift.***
+
+✔ *Four heads corrected · `routed()` taught the other five close-markers (`ANSWERED`, `WITHDRAWN`, `DISCHARGED`,
+`CLOSED`, `RETIRED`) · **`check_row_state`** built, seed-tested clean → 1 → 0, wired, shell-parse verified.*
+
 ### Revision r2694 — 2026-08-11 (main line). **THE `LEDGER 7` IS 1 — three duplicates, three weight-marks, one real item.**
 
 **⛔ SWEPT AS A GROUP FOR THE FIRST TIME**, *which had been a PENDING item across the whole session — and

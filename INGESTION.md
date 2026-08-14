@@ -106,7 +106,9 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2690   PO-11   obstruction UNIFORM in lambda -- no high-j corner rescues the tower.
     r2691   ---     folded c54.211/212; BACKLOG emptied, r2677 scope withdrawn. Both errors mine.
     r2692   ---     gates.yml stray do fixed -- MY insertion, misattributed to 54. CI unblocked.
-    r2693   PO-7    CLAIMED: does the corpus already handle the turnaround H_c=0 cc54 named?
+    r2693   PO-7    turnaround is a segment endpoint crossed by rotation, not a singularity.
+    r2694   ---     LEDGER 7 -> 1. Three duplicated PO rows, three were the papers own weight-marks.
+    r2695   ---     CLAIMED: FULL AUDIT of all 14 remaining items. No physics until the list is real.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

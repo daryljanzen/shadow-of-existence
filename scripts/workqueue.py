@@ -94,7 +94,13 @@ def routed():
     t = open(os.path.join(ROOT, 'FOR_54.md'), encoding='utf-8', errors='replace').read()
     out = []
     for l in t.split('\n'):
-        if l.startswith('## ') and re.search(r'(?<!\d)\d+\s*·', l) and '✔' not in l:
+        # ** r2695: '✔' alone is not the only way an item closes.  *** Item 59 carried
+        # "⛔⛔ AND ANSWERED AT c54.212" IN ITS OWN HEADER and was still counted live, because
+        # the reader tested for one glyph.  A queue whose CLOSE marker is a single character
+        # will count every other way of closing as open. ***
+        DONE = ('✔', 'ANSWERED', 'WITHDRAWN', 'DISCHARGED', 'CLOSED', 'RETIRED')
+        if (l.startswith('## ') and re.search(r'(?<!\d)\d+\s*·', l)
+                and not any(d in l for d in DONE)):
             n = re.search(r'(?<!\d)(\d+)\s*·', l).group(1)
             out.append({'id': f'item {n}', 'kind': 'ROUTED', 'open': True,
                         'what': re.sub(r'[*#`]', '', l).split('·', 1)[-1].strip()[:70]})
