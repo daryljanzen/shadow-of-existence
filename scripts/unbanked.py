@@ -68,6 +68,13 @@ def main():
     print()
     papers = ' '.join(body(f) for f in glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))
                       if not os.path.basename(f).startswith('appendix_receipts'))
+    # ** r2697, on cc54's c54.213: STRIP CITATION MARKERS before treating this as prose.
+    # *** 1,923 markers carry 4,383 word-like tokens -- 3.2% of what this read as PAPER
+    #     PROSE was RECEIPT FILENAMES.  A term appearing only inside \\rcpt{...} counted as
+    #     BANKED, which is exactly backwards: a filename is not a sentence. ***
+    #   ⌗ ** And it is the SAME CLASS as r2680's `monomial` fix ** -- prose-vs-machinery --
+    #     applied there to the RECEIPT side and never here to the PAPER side.
+    papers = re.sub(r'\\(?:rcpt|cite|label|ref|eqref)\{[^}]*\}', ' ', papers)
     # ** match on the STEM, not the exact word: `station` is banked 24 times as `stations`,
     # and an exact-word set put it top of the candidate list -- a false positive at position 1
     # is what teaches a reader to ignore the tool. **

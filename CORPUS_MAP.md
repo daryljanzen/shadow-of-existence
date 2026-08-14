@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2697 — 2026-08-11 (main line). **`unbanked.py` WAS READING RECEIPT FILENAMES AS PAPER PROSE — the r2680 fix, applied to the other side.**
+
+**⛔ THE SAME CLASS, TWICE.** *r2680 made `unbanked.py` read **prose, not code** — on the RECEIPT side. cc54's
+c54.213 shows the identical defect on the PAPER side: an absence measured over paper source **counts its own
+bibliography**.*
+
+    1,923 citation markers carrying 4,383 word-like tokens
+    = 3.2% of what unbanked.py read as PAPER PROSE was RECEIPT FILENAMES
+
+⇒ ***A term appearing only inside `\rcpt{...}` counted as BANKED — exactly backwards, because **a filename is not a
+sentence**.***
+✔ *Stripped `\rcpt`, `\cite`, `\label`, `\ref`, `\eqref` arguments; candidates **46 → 54**. Eight terms had been
+hidden behind their own citations, so the fix surfaced work rather than noise.*
+
+**⛔ AND A MISATTRIBUTION IN THIS LINE'S OWN MEASUREMENT, corrected at source.** *r2682 wrote "**Unruh 8x → ENDED
+(all 8 are RindlerIshak2007 citations)**". **Two papers, two words** — Unruh's are in `BH_causality` (4),
+`RindlerIshak2007` is in `CR_framework` (1), and **the count was wrong too**: a number taken with one filter and
+described with another.*
+
+**⛭ THE RULE:** ***when you fix a symmetric instrument, fix BOTH sides in the same turn. "Reads the working layer
+correctly" and "reads the printed layer correctly" are one property, and an instrument that compares two corpora
+will be believed on the half you repaired.***
+
+⌗ *cc54's **four causes** where this line found two — genuine endings, a proxy broken by unrelated prose, a proxy
+broken by a citation marker, and one blind in both directions at once (`doubly.ruled` matching an underscore in a
+filename while unable to see `\emph{doubly} ruled`) — is the receipt for why stopping was right and the measurement
+was not.*
+
 ### Revision r2696 — 2026-08-11 (main line). **THE AUDIT IS COMPLETE — `DARK` 2 → 0 distinct, and the table is 11.**
 
 **⌗ THE LAST UNCHECKED BUCKET.** *Both live dark halves are `PO` rows under their register names: `PO-5`'s row says

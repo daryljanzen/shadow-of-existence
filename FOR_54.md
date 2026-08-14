@@ -17,7 +17,12 @@ comparison.*
     Higgs             2x in the papers   -> the absence ENDED
     N_{\mathrm{eff}}  4x                 -> ENDED
     doubly ruled     11x                 -> ENDED
-    Unruh             8x                 -> ENDED  (all 8 are RindlerIshak2007 citations)
+    Unruh             4x in P1 ONLY      -> ENDED   ⛔ CORRECTED r2697 on c54.213: this line wrote
+                                          "8x ... all 8 are RindlerIshak2007 citations" and that is
+                                          TWO PAPERS, TWO WORDS -- Unruh's are in BH_causality (4),
+                                          RindlerIshak2007 is in CR_framework (1).  The count was
+                                          also wrong.  A measurement reported with a filter other
+                                          than the one it was taken with.
     Goldstone         0x                 -> STANDS
     spontaneous       0x                 -> STANDS
     Neff / N_{\rm eff} / N_\mathrm{eff}  0x  -> the corpus uses ONE spelling
