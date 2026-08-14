@@ -151,9 +151,10 @@ def main():
     # ** r2685, Daryl: "Has the unknown space actually narrowed?  Is the remaining work finite?"
     # ⇒ *** The row count could not answer it -- a row asking a sharp question and a row asking a
     #     vague one both count as one.  So the stamp now carries the FRONTIER's shape. *** **
-    BOUNDED = {'PO-4', 'PO-6', 'PO-11', 'PO-12'}
+    BOUNDED = {'PO-4', 'PO-6', 'PO-10', 'PO-11'}
     UNBOUNDED = {'PO-5'}
-    GATED = {'PO-2': 'PO-5', 'PO-10': 'PO-12', 'PO-7': 'PO-seam'}
+    # ** r2702: PO-12 STRUCK, so PO-10 is UNGATED and moves to BOUNDED. **
+    GATED = {'PO-2': 'PO-5', 'PO-7': 'PO-seam'}
     print(f'*STILL OPEN — dark: {", ".join(x["id"] for x in dh if x["open"])} · '
           f'PO: {", ".join(x["id"] for x in po if x["open"])}*')
     print()

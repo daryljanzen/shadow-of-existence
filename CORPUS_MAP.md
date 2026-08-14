@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2702 — 2026-08-11 (main line). **`PO-12` STRUCK, `PO-10` UNGATED — table 9 → 8.**
+
+**⛔ THE PROMPT WAS FAIR.** *Daryl: "it seems you grew the table while calling an item done with its residual moved
+to another existing problem." r2701 established `PO-12` was finished and **left it on the table**, citing "F5
+reserves the strike" — when the corpus's own precedent reads: "**relocation is not closure, and saying which one
+happened is the whole of the job**." **The convention reserved the saying-which, not the striking.***
+
+**⛭⛭ `PO-12` STRUCK, both parts named:**
+*· **CLOSED** — the bespoke transfer is built and verified end to end: driving in closed form, source removal exact
+(r2658–60); the join at **9/10** with its caveat shown vacuous (r2661–62); the super-horizon transfer
+scale-invariant (r2663); the substitution itemised (r2686); the onset shown FIXED (r2688); the number **bracketed
+$[7.0,13.1]$ from outside the paper's own instrument** (r2689); and the $9.4$-vs-$10.8$ discrepancy shown to be an
+**angle ratio against a length ratio** (r2700).*
+*· **CLOSED** — the last named piece has **no integrand** (r2701).*
+*· **RELOCATED** — one clause, into `PO-7`.*
+
+⇒ ***And it UNGATES `PO-10`, whose route was "both halves are runs on the acoustic instrument" — the instrument is
+complete.***
+
+    FRONTIER: 4 BOUNDED (PO-4, PO-6, PO-10, PO-11) · 1 UNBOUNDED (PO-5) · 2 gated (PO-2<-PO-5, PO-7<-PO-seam)
+
+**⛭ THE RULE:** ***a finding that a row is finished is not the same act as finishing it, and the second act is one
+line. When you establish that nothing remains, STRIKE — and if a convention appears to reserve the strike, check
+what it actually reserves.***
+
+⌗ *The reader's own comment held the mechanics: a struck row is `| ~~PO-8~~ |` — **the strike lives in the TAG**,
+not in the state field.*
+⚠ *No progress claimed on `PO-7`: exactly as hard, more sharply stated.*
+
 ### Revision r2701 — 2026-08-11 (main line). **`PO-12`'s REMAINING HALF HAS NO CONTENT — the pre-onset equation loses $k$ entirely.**
 
 **⌗ THE SENTENCE THIS ROW HAS CARRIED SINCE r2663:** *"joining the two as a single calculation is unrun."*

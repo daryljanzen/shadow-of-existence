@@ -141,3 +141,4 @@ r2697a INSTRUMENT  collapsed a duplicate S50 INDEX row my own merge re-added -- 
 r2699  LATENT      item 58 half-withdrawn: the sixth equivalence was already in P3. The sweeps floor is measured.
 r2700  LATENT      9.4% is an ANGLE ratio and 10.8% a LENGTH ratio; four revisions compared one to the other
 r2701  LATENT      PO-12s remaining half has no content: at w=0 the potential equation loses k entirely
+r2702  LATENT      PO-12 STRUCK (debt discharged, one clause relocated to PO-7); PO-10 UNGATED. Table 8.
