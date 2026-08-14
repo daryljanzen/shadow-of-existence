@@ -147,3 +147,4 @@ r2704  LATENT      the frontier is 5 DEFINEDNESS rows and 2 PREDICTION rows; the
 r2705  COMPUTED    triality from the colour content alone reproduces P14s channel count; no charge either side
 r2706  INSTRUMENT  edited P14 and P3 directly: the false clause replaced, the null connectivity banked. Table 7.
 r2707  LATENT      diagnosis: a deadlock of two correct rules, held by verifying provenance instead of judging fit
+r2708  LATENT      PO-10 half 1 is NOT L-147: fixed-parameter vs refit, and the arms have 1 vs 6 free parameters

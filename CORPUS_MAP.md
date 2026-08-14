@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2708 — 2026-08-11 (main line). **`PO-10`'s HALF ① IS NOT THE BANKED TEST — and "a parameter refit" is not defined on both arms.**
+
+**⓵ THE IDENTITY CHECK FIRST**, *since this line got exactly that wrong twice today.*
+*· `L-147` / `P15_where_the_likelihood_sits` (discharged c54.172): the likelihood at the **inherited datum with
+parameters FIXED**, CAMB's best fit used as a **reference** for the instrument's floor.*
+*· `PO-10` half ①: "**a parameter refit** rather than a further calculation."*
+⇒ ***Different objects. A fixed-parameter comparison does not discharge a refit.***
+
+**⛭⛭ ⓶ AND THE ARMS ARE ASYMMETRIC.** *P15 states CR's freedom three times: "$\theta_*$ is **fixed by $\Omega_m$
+alone** and the same $z_{\rm onset}$ **meets the scale at every $H_0$**"; the DESI confrontation runs on "**the
+single CMB-calibrated $\Omega_m\simeq0.31$**"; the high-$\ell$ ratio follows "**with no free parameter**".*
+⇒⇒ ***CR has essentially ONE adjustable number where flat $\Lambda$CDM analyses carry six.***
+
+**⓷ WHICH SHARPENS THE ROW RATHER THAN SHRINKING IT.** ***"Refit both and compare $\chi^2$" rewards the arm with
+more freedom for having it. The comparison must be at MATCHED FREEDOM — $\Lambda$CDM held to one parameter, or the
+$\chi^2$ penalised for five extra — and P7's phrase does not say which. No receipt in the corpus makes the
+choice.***
+
+**⛭ THE RULE:** ***when a frontier item names a standard procedure, check the procedure is DEFINED on both sides.
+"Refit and compare" is meaningless between a one-parameter model and a six-parameter one — and the phrase will look
+like a small task precisely because the procedure is familiar.***
+
+⇒ *What the row owes **first** is the comparison's **RULE**, not its number.*
+⌗ *Also established: all seven open rows have been worked; **`PO-10` and `PO-11` have never been touched by 54 or
+cc54**.*
+
 ### Revision r2707 — 2026-08-11 (main line). **THE DIAGNOSIS — a deadlock of two correct rules, held in place by verifying provenance instead of judging fit.**
 
 **⛔ LAYER ONE — THE DEADLOCK.**

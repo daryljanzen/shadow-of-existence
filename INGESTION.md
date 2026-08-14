@@ -118,7 +118,9 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2702   PO-12   STRUCK. PO-10 UNGATED. Table 8. Frontier 4 BOUNDED, 1 UNBOUNDED, 2 gated.
     r2703   PO-10   half 2 carries no signal (R is a content ratio). The row is ONE half.
     r2704   ---     the frontier has TWO KINDS: 5 DEFINEDNESS, 2 PREDICTION. They fail differently.
-    r2705   ---     CLAIMED: the LEDGER 1 -- the triality test, the smallest thing left.
+    r2705   ---     triality test RUN. r2706: BOTH paper edits made directly. LEDGER 0, ROUTED 0.
+    r2707   ---     diagnosis of the deadlock; check_routed_falsehood built.
+    r2708   PO-10   CLAIMED: is L-147s likelihood test the SAME OBJECT as PO-10s half 1?
 
 ## ⓸ WHAT THIS LINE IS TAKING
 
