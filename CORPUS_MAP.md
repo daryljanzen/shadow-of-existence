@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r2768 — 2026-08-11 (main line). **`PO-4` AND `PO-5` SHARE A ROOT, AND IT IS p0's OWN.**
+
+**⓵ THE ROW NEEDS ONE GENERATOR, NOT TWO.** *$[\sigma_z,\sigma_x]=2i\sigma_y$ closes the algebra — c54.218's "two
+dimensions short" is two dimensions of SPAN reached by one new direction.*
+
+**⛭⛭ ⓶ AND THE CORPUS SUPPLIES AN OFF-DIAGONAL OBJECT — AS AN ELEMENT.** *P14: "$T$ is a **discrete horn swap**".
+That is $\sigma_x$ at order 2 ($\sigma_x^2=I$), the $\theta=\pi$ member of $\exp(i\theta\sigma_x/2)$.*
+
+    r2718   the Weyl reflection    order 4      a group ELEMENT
+    r2768   the horn swap          order 2      a group ELEMENT
+    r2733   the rapidity           continuous   and NON-COMPACT
+
+⇒ ***The corpus supplies group ELEMENTS wherever $SU(2)$ needs a family, and the one family it does supply has the
+wrong signature. Three separate "missing pieces" are one wall seen three times.***
+
+**⛭⛭⛭ ⓷ AND THE WALL IS `PO-5`'s.** *A compact generator needs an ANGLE. **An angle is a dimensionless continuous
+parameter** — exactly what r2742 settled the ledger has none of, three papers committing and none dissenting.*
+⇒ ***`PO-5` needs a fixed pure number to be a coupling; `PO-4` needs a dimensionless parameter to be an angle.
+**Both ask the one-constant ledger for a dimensionless quantity, and its whole content is that it has one
+LENGTH.****
+
+**⓸ AND p0 NAMED THAT ROOT FOR THREE VERDICTS ALREADY** — *the winding "quantises without measuring", the flat
+bundle "selects without coupling", the branch point "filters without supplying".*
+⇒ ***`PO-4`'s is a fourth in the same voice: **the substrate GENERATES WITHOUT ROTATING**.***
+
+**⛭ THE RULE:** ***when two open rows have each been narrowed to a precise remainder, check whether the remainders
+are the same quantity in different units. A coupling and an angle look like different objects and are both
+dimensionless numbers — and a corpus that has settled it holds none has answered both rows at once, without either
+row noticing.***
+
+⌗ *A narrowing, not a resolution: a construction supplying a dimensionless angle would meet both.*
+
 ### Revision r2767 — 2026-08-11 (main line). **`PO-11`: TWO OF THE THREE CROSSINGS ARE ALREADY SUPPLIED.**
 
 **⛭⛭ ⓵ THE METRIC CROSSES, AS A THEOREM.** *The slicing paper carries the continuation "$C^\infty$ across the locus

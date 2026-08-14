@@ -19,7 +19,7 @@ sources: [chat]
 - [x] (416) P14 edit owed: the holonomy wall's stated reason ('only phases') is too narrow -- r2734 -- the paper still carries it  -> DONE r2735
 - [x] (416) WITHDRAWN r2735: the P14 edit is not owed -- P14 never said 'only phases'; the narrow reason was this line's, written into PO-5's row at r2666/r2667 and corrected there at r2734  -> DONE r2735
 - [x] (424) PO-6 counterterm half: compute the shear deficit 4 sigma^2 + O(sigma^4) -- cc54's c54.215 named it; nobody has run it  -> DONE r2743
-- [ ] (424) PO-4: the two ABSENT su(2) directions -- cc54 c54.218 shows <T,w> = N(T) is dimension 1 against 3; r2718's 'one factor short' framing is withdrawn
+- [x] (424) PO-4: the two ABSENT su(2) directions -- cc54 c54.218 shows <T,w> = N(T) is dimension 1 against 3; r2718's 'one factor short' framing is withdrawn  -> DONE r2768 — narrowed to one generator, and its wall located inside PO-5's settled bound
 - [x] (424) PO-11: re-verdict cc54's c54.214 -- the omega != 0 problem was never posed, and posing it builds the object; my r2717 strike used the omega = 0 reading  -> DONE r2739
 - [x] (424) PO-5: cc54 c54.216 bounds the residue to ONE TEST -- a fixed pure number -- which contradicts nothing in r2729 and sharpens it  -> DONE r2741
 - [x] (428) PO-11 (REOPENED r2739): the quantised field, mode completeness, and the JOIN between the static region's continuum and the wall -- P14's own words for what remains; the radial continuum is delivered and is NOT the sector  -> DONE r2767 — narrowed: metric and bound mode both cross; only the continuum remains
@@ -43,3 +43,4 @@ sources: [chat]
 - [ ] (457) PO-10 (r2762, ORDERED): (1) rerun the banked spectra at an NK that clears the instrument's sampling guard -- the current ones give 2.5 pts/Bessel period and every chi^2 rests on them; (2) THEN extend to ell=2508. Both need >2.4 GB for the projection; 3.7 GB available and NK=600/800 were OOM-killed.
 - [ ] (465) PO-6: the VALUE of the O(sigma^2) Weyl-squared coefficient. r2766 established the direction is independent and unrouted; its coefficient is a heat-kernel calculation nobody has run, and it is the size of the second constant the ledger would need.
 - [ ] (466) PO-11: does the static region's CONTINUUM continue through r=0, and with what condition? r2767: the metric crosses as a theorem and the bound mode in P14's proposition; the continuum is the only one of three not asked. Constrained, not free -- it must be compatible with the signed-radius flip the wall already fixes.
+- [ ] (467) PO-4 + PO-5 (SHARED, r2768): does any construction on this substrate supply a DIMENSIONLESS CONTINUOUS PARAMETER? PO-5 needs it as a fixed pure number (a coupling); PO-4 needs it as an angle (a compact generator). One question, two rows.
