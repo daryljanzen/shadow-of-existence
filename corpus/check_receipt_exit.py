@@ -41,16 +41,22 @@ CAN_EXIT = re.compile(r'^\s*assert\b|^\s*raise\b|sys\.exit\s*\(\s*1|return\s+1\b
 # ** the twelve found at r2681, recorded so the gate ships GREEN and the backlog is visible
 # rather than blocking every run.  *** A gate that fails for a known backlog trains its caller
 # to skip it -- cc54's own words at c54.208. ***  Each leaves this set when it is repaired.
-BACKLOG = {
-    'P15_the_progenitor_vacuum_is_negligible_too.py', 'P15_the_second_arm_actually_run.py',
-    'AS_amplitude_leftward.py', 'P15_verify_closedS3_nonsync.py', 'P15_confront_lowell_data.py',
-    'P15_expansion_law.py', 'BRANCHPT_transmission_character.py',
-    'P15_no_primordial_B_modes_unconditionally.py',
-    'P16_the_scalar_monodromy_is_four_pi_over_rho.py',
-    'P16_the_passage_is_phase_only_above_the_first_peak.py',
-    'P16_the_progenitor_composition_is_bracketed.py',
-    'P16_the_leading_order_interior_is_adequate.py',
-}
+# ** r2691: BACKLOG EMPTIED on cc54's c54.212, verified here.  *** All twelve satisfy this
+# gate's OWN predicate -- eleven use the corpus's failure-collection idiom
+# (`if _fail: print(...); raise SystemExit(1)`) and the twelfth ends
+# `raise SystemExit(0 if allpass else 1)`; `CAN_EXIT` matches `^\s*raise\b`. ***
+#
+#   ⛔ ** THE ERROR WAS MINE AND IS WORTH KEEPING VISIBLE: ** r2681 MEASURED with a stricter
+#   test (`assert` or `check(` only), recorded the resulting set as a backlog, then wrote
+#   `CAN_EXIT` MORE PERMISSIVELY -- and never reconciled the two.  *** So the gate shipped GREEN
+#   carrying a list its own predicate contradicts. ***
+#
+#   ⌗ ** And cc54 did not stop at the predicate, which is the method point: ** they forced each
+#   verdict false and got `rc=1` twelve times, and seeded two with real defects
+#   (rate coefficient 2/3 -> 3/4; amplitude reference / 2.05), getting substantive messages
+#   naming the broken quantity.  *** Reproduced here on the flags this line could locate,
+#   including `P15_expansion_law` -- cc54's own named counterexample. ***
+BACKLOG = set()
 
 
 def body(f):

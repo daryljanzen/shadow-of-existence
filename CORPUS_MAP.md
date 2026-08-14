@@ -146,6 +146,271 @@ sources: [cowork, chat]
 
 
 
+### Revision r2691 — 2026-08-11 (main line). **TWO FINDINGS WITHDRAWN ON c54.211/212 — both a check that was sound about the wrong object.**
+
+**⛔ ⓵ `check_receipt_exit`'s BACKLOG IS EMPTIED.** *r2681 **measured** with `assert|check(`, recorded twelve
+receipts, then wrote `CAN_EXIT` to also match `^\s*raise\b` — **and never reconciled the two**. Verified here: all
+twelve satisfy the gate's own predicate, using the corpus's idiom `if _fail: … raise SystemExit(1)`.*
+⇒ ***The gate shipped GREEN carrying a list its own predicate contradicts.***
+⌗ *And cc54 did not stop at the predicate: they forced each verdict false (**12/12 rc=1**) and seeded two with real
+defects. Reproduced here on the flags this line could locate, including `P15_expansion_law`.*
+
+**⛔ ⓶ r2677's SCOPE CLAUSE IS WITHDRAWN.** *It computed the Ricci scalar of $a\sim\sinh^{2/3}(3Ht/2)$ — **P15's
+observable layer**. P10's slicing is $a(T)=\alpha\cosh(T/\alpha)$; closed FRW $k=+1$ gives ***$R=12/\alpha^2$,
+CONSTANT — exactly de Sitter***.*
+⇒ ***The correction makes `L-543` STRONGER: the degeneracy holds on the very background the free tower uses, and
+r2677 understated it by reaching for a nearby object. The real limit is one P10 already names — "the free tower
+evolves on $a(T)$ as a **fixed classical background** … the coupling question is what happens once the scale factor
+is itself quantized and back-reacts".***
+
+**⛭ cc54's METHOD POINT, WHICH IS THE KEEPER:** ***"seed-testing a gate proves it can fire; it does not verify any
+particular firing. A gate's true positives need their own check, and a list recorded as a backlog is a set of
+firings nobody re-ran."***
+
+**⛭⛭ THE RULE:** ***a gate's FIRINGS are claims and need receipts of their own. "Seed-tested clean → 1 → 0"
+licenses the gate, not its output — and a backlog is the most dangerous form of output, because it looks like work
+queued rather than a claim unverified.***
+
+⌗ *Both errors are this line's, and both are the same shape: **a check that was sound about the wrong object**.
+Re-deriving a claim does not re-derive its referent.*
+
+### Revision r2690 — 2026-08-11 (main line). **`PO-11`'s OBSTRUCTION IS UNIFORM IN THE TOWER — the angular index does not rescue it.**
+
+**⌗ r2669 PROVED IT ON THE MEASURE ALONE.** *This runs both norms on the modes P14 delivers — $\psi\sim|r|^\lambda$,
+$\lambda=j+\tfrac12$, "**one bound zero-mode per (wall, $j$)**", the growing branch needing $\lambda<3/4$ "**which
+never holds**" — between the true horizons $r_b=0.256968$, $r_c=0.846439$.*
+
+    lam    leaf-norm      tortoise at eps = 1e-4 / 1e-6 / 1e-8
+     1.0    0.669566        4.357     6.882     9.233
+     3.0    0.205363        1.828     3.074     4.235
+    10.0    0.011067        0.1441    0.2648    0.3773
+
+⇒ ***The leaf norm is finite and cut-off independent; the tortoise norm grows by a **constant increment per
+hundredfold** ($+2.525$, then $+2.350$) — which IS a logarithm — **at every $\lambda$**.***
+
+**⌗ SO THE ANGULAR INDEX DOES NOT RESCUE IT.** ***Going to $\lambda=10$ shrinks both norms but does not make the
+tortoise one converge: there is no high-$j$ corner where the modes become propagating states. The analytic argument
+could not say that, because it never mentioned $\lambda$.***
+
+⇒⇒ *Which sharpens the debt: **not a better mode but a different OBJECT** — a scattering state with a continuum
+normalisation, which a bound tower cannot become by relabelling.*
+
+**⛭ THE RULE:** ***after proving something about a measure, run it on the states. A measure argument is uniform by
+construction and so cannot tell you whether the obstruction is uniform — and "does it fail for ALL of them, or only
+the ones I checked" is exactly the question a frontier row turns on.***
+
+### Revision r2689 — 2026-08-11 (main line). **P15's $+9.4\%$ BRACKETED FROM OUTSIDE THE INSTRUMENT THAT PRODUCED IT.**
+
+**⓵ FIRST, WHAT "CANCEL IDENTICALLY" COVERS — and it is not the weight.** *P15: "in the ratio the Thomson physics
+and the ionisation history **cancel identically**". Tested: $w=1$ gives $+13.1\%$ and $w=a^3$ gives $+8.7\%$, so
+the $a$-dependence does **not** drop out.*
+⇒ ***The clause covers the CONSTANTS — P15's own next words: "**every microphysical constant sits outside**".***
+
+**⛭⛭ ⓶ RUN WITH A REAL WEIGHT.** *$g(R)=R^2/(1+R)+\tfrac{16}{15}(1+R)$ at $R_b=0.60$, Saha $x_e$ ($x_e=1$ at
+$z=3000$, $0.089$ at $1500$, $\sim10^{-4}$ at recombination):*
+
+    Saha  +7.0%     <     PEEBLES     <     unweighted  +13.1%
+                            ^ P15's +9.4%
+
+**⓷ AND THE ORDERING IS FORCED, NOT FITTED.** *Saha recombines **faster** — no freeze-out, $x_e\to0$ — so $1/x_e$
+spikes harder and weights the integral **later**, where the rate difference is smallest. **P15 uses "a Peebles
+recombination history"**, which retains a residual ionisation, weights **earlier**, and must give a **larger**
+answer.*
+
+⇒⇒ ***Both ends are computed here. That is a check on $+9.4\%$ from outside the paper's own machinery — which is
+what `PO-12` wanted from a two-leg run and did not have.***
+
+**⛭ THE RULE:** ***when you cannot reproduce a number, BRACKET it — and get the ordering of the bracket from
+physics rather than from the target. Two limiting calculations with a forced ordering are a real check; one
+calculation tuned until it agrees is not, and they take about the same effort.***
+
+### Revision r2688 — 2026-08-11 (main line). **`PO-12`'s LAST FREE PARAMETER IS NOT FREE — and the residual is the WEIGHT.**
+
+**⛭ THE ONSET IS FIXED, TWICE.** *"$z_{\rm onset}\simeq6797$" (`prop:subhorizon`); and "**It is fitted to the
+acoustic angle at the *directly* measured $H_0$** and lands at $z_{\rm onset}\simeq6.8\times10^3$, $T_{\rm
+onset}\simeq1.6$ eV, near $\rho_r/\rho_m\simeq2$" — with "**the same $z_{\rm onset}$ meets the scale at every
+$H_0$ across the range**".*
+⇒ ***r2687's one-parameter family has ONE MEMBER. The onset is inherited, not chosen — and r2687 scanned it.***
+⌗ *Model checks there: $\rho_r/\rho_m=1.87$ against the paper's $\simeq2$.*
+
+**⚠⚠ AND THE RESIDUAL MOVED SOMEWHERE ELSE.** *Unweighted at the true onset gives **+13.1%**, not $+9.4\%$ —
+because the integrand is $\int da\,g(R)/(Hx_e)$ and **$x_e$ collapses at recombination**, so the integral is
+dominated by the last decade, where the rate difference is **smallest**.*
+
+    unweighted  +13.1%      a^3  +8.7%      a^6  +7.8%      <- P15's +9.4% lies between
+
+⇒⇒ ***Three revisions moved the discrepancy from the SCALING (r2686) to the ONSET (r2687) to the WEIGHT (r2688) —
+and each move was a real narrowing, because each named a different object.***
+
+**⛭ THE RULE:** ***before scanning a parameter, grep for it. A quantity you are treating as free is usually pinned
+somewhere in the corpus — and the scan will look like careful work while producing a family of answers where one
+exists.***
+
+⌗ ***`PO-12`'s debt is now not a parameter at all: carry $g(R)/x_e$ through the integral on both legs — an
+integration with no free constants.***
+
+### Revision r2687 — 2026-08-11 (main line). **THE 2.6-POINT GAP CLOSED BY INTEGRATION — and the answer is set by the ONSET.**
+
+**⛔ THE FIRST INTEGRATION WAS NONSENSE, AND THAT LOCATED THE VARIABLE.** *Running from $a\to0$ made $r_s$ larger by
+a factor of **110** — $\rho_r/\rho_m$ diverges there and the integral is all lower limit.*
+⇒ ***The paper fixes it in one clause: the sound horizon "**must be taken *from the branch point*: there is no
+observable expansion below it**".***
+
+**⛭⛭ INTEGRATED**, *with $\rho_r/\rho_m=0.3$ at recombination scaling as $1/a$:*
+
+    z_onset =   1200   +7.1%        z_onset =   5000  +12.0%
+    z_onset =   2000   +8.8%        z_onset =  10000  +14.4%
+    z_onset =   3000  +10.2%
+
+⇒ ***P15's $+9.4\%$ sits at $z\approx2500$, and r2686's point-scaled $+6.8\%$ is the $z\to z_{\rm rec}$ limit —
+which is exactly why it understated.***
+
+**⌗ AND THE MONOTONICITY IS THE PAPER'S OWN ARGUMENT REPRODUCED:** *"it varies from $+43\%$ to $-3\%$ across the
+onset redshifts one might consider, so **a single datum cannot absorb both observables**".*
+⇒ ***The claim was never that one number is right — it is that the observable MOVES with the onset, which is what
+makes $\theta_*$ and $\theta_D$ two constraints rather than one.***
+
+**⛭ THE RULE:** ***when an integral blows up, the divergence names the free variable. A calculation that fails by a
+factor of 110 has told you which limit the physics fixes — and the paper will usually have fixed it in a clause you
+read past.***
+
+⇒ ***`PO-12` owes something narrower again: not "integrate the rate difference" — done — but **the onset redshift
+from the construction**, which turns a one-parameter family of answers into one answer.***
+
+### Revision r2686 — 2026-08-11 (main line). **`PO-12`'s SUBSTITUTION ITEMISED — and the ratio does not cancel, because $r_D$ carries a square root.**
+
+**⓵ THE RATE DIFFERENCE RECONSTRUCTS.** *At $\rho_r/\rho_m=0.3$: $1/\sqrt{1.3}=0.877$ — **12.3% below**, matching
+P15's stated 13%.*
+
+**⛭⛭ ⓶ AND THE INSTRUMENT SPLITS CLEANLY:**
+
+    CARRIES H     eta = int da/(a^2 H)  ·  r_s = int c_s d(eta)  ·  1/(aH)
+                  1/k_D^2 = int da g/(H x_e)          <- UNDER A SQUARE ROOT
+    CARRIES NONE  Thomson rate n_e sigma_T a  ·  x_e(z), Saha/Peebles in z
+
+⇒ ***P15's "the whole difference is carried by $H(a)$" itemised rather than asserted: the microphysics is untouched
+and only the geometry moves.***
+
+**⛭ ⓷ BUT THE EXPONENTS DIFFER:** *$r_s$ IS the integral ($H^{-1}$, ×1.140); **$r_D$ is the SQUARE ROOT of one**
+($H^{-1/2}$, ×1.068).*
+⇒⇒ ***A naive "everything is a length so the ratio cancels" is WRONG — a scaling argument that treats both as
+lengths gets zero where the answer is $+6.8\%$.***
+
+**⚠ ⓸ AND THE REMAINING GAP IS THE FINDING.** *P15 states $+9.4\%$. The **13% is LOCAL** at recombination while the
+integrals **ACCUMULATE** over a history where $\rho_r/\rho_m$ is larger earlier.*
+⇒ ***A constant-ratio shortcut understates, and the 2.6-point gap is exactly what integrating the rate difference
+over the history is worth — which sets the bar for the two-leg run rather than casting doubt on the paper.***
+
+**⛭ THE RULE:** ***before scaling a ratio, check the POWER each side carries. Two quantities with the same
+dimensions can carry different powers of the same background function — an integral and the square root of an
+integral are both lengths — and a dimensional argument cannot see the difference.***
+
+### Revision r2685 — 2026-08-11 (main line). **THE CONVERGENCE AUDIT — the row count is right and it is not the thing that moved.**
+
+**⛔ THE COUNT, HONESTLY.** *Across `r2615`–`r2684`: **one row struck** (`PO-8`), **two answered** (`PO-3`, `PO-9`).
+The table went **34 → 17 → 20**, and the rise is **routed items — work FOUND**.*
+⇒ ***Seventy revisions, three crossings. That is the number and it should not be softened.***
+
+**⛭⛭ BUT WHAT MOVED IS THE KIND OF QUESTION EACH ROW ASKS.**
+
+    PO-4   BOUNDED    supply the continuous U(1) the Weyl reflection reflects        r2676
+    PO-6   BOUNDED    does the 1-dim counterterm basis survive a running background? r2677
+    PO-11  BOUNDED    a propagating Dirac sector across an infinite tortoise interval r2669
+    PO-12  BOUNDED    run an EXISTING validated hierarchy on a two-leg background     r2660-63
+    PO-5   UNBOUNDED  is there a THIRD mechanism, neither holonomy nor isometry?      P14's own
+
+    gated: PO-2 <- PO-5    PO-10 <- PO-12    PO-7 <- PO-seam
+
+⇒ ***Four of five independent items are FINITE — bounded calculations on stated objects with known
+instruments. The one that is not is NAMED, in P14's own words: "no third mechanism has been named."***
+
+**⛭ THE NARROWING, STATED PRECISELY.** *At r2615 the rows asked **"the colour and isospin structure"**, **"what
+fixes the state"**, **"the bespoke transfer"**. At r2684 they ask for **a $U(1)$, a heat-kernel coefficient, a
+scattering solution, a two-leg run**.*
+⇒⇒ ***A row count cannot show that, because a row asking a sharp question and a row asking a vague one both count as
+one.***
+
+**⛭⛭ THE RULE:** ***when someone asks whether you are converging, do not defend the count — measure what the count
+cannot see. If the answer is "the items got sharper", say how many are now BOUNDED and name the one that is not; if
+you cannot say that, the answer is no.***
+
+✔ *`scripts/stamp.py` now carries the frontier's shape every turn.*
+
+### Revision r2684 — 2026-08-11 (main line). **`PO-6`'s TWO HALVES RESTATED — half one FINISHED, half two with a stated successor. And a gate so a declared structure cannot stay unaudited.**
+
+**⛔ THE SAME DEFECT AS r2683, ONE ROW OVER.** *`PO-6` declares "**this item's two halves are two halves rather than
+one entangled question**" — and **seven revisions of this session sit in the row with none filed against a half**.*
+
+**⓵ HALF ONE — THE CONDITION LIST — IS FINISHED, and was finished by READING.** *r2610 (C1 and C2 are ONE
+condition: seven → **six**), r2611 (C6 is **derived**, not a condition: six → **five plus one theorem**). The row
+itself says it: "**neither removal is a physics result**".*
+
+**⛭⛭ ⓶ HALF TWO — JOINT SATISFIABILITY — HAS TURNED OVER COMPLETELY.** *r2619 named the FLOOR; r2651 said it fails
+(**withdrawn r2671**); r2652 found the state-fixer's threshold at $-1/4$; **r2671: the floor DOES survive**, which
+**empties** that region; r2677 adds a **one-dimensional counterterm basis** whose transfer to the **running** layer
+is unproved.*
+⇒ ***So half two is not "open" — it has a STATED SUCCESSOR: does the one-dimensional basis survive on a background
+whose curvature runs? Registered `L-543`, and it is 54's calculation.***
+
+**⌗ AND THE TWO HALVES ARE ASYMMETRIC:** ***one done by reading, one a calculation nobody has run. A row reporting
+neither shows a frontier where it has a finished half and a well-posed question.***
+
+✔ *`check_declared_parts` built, **seed-tested clean → 1 → 0**, wired: a row declaring "three levels" or "two
+halves" must NAME them, or have a kill receipt that does.*
+
+**⛭ THE RULE:** ***a declaration of structure is a promise to report against it. When a row says how many parts it
+has, every later note must say WHICH — otherwise the parts complete one at a time and the row never notices.***
+
+### Revision r2683 — 2026-08-11 (main line). **`PO-2`'s THREE NAMED LEVELS AUDITED — level (2) is passed and level (3) is on the FORCE, not the map.**
+
+**⛔ FOUR REVISIONS ANSWERED AGAINST THEM WITHOUT READING THE NAMES.** *The row says "held at do-not-assert on
+**three separated levels**"; `GEOMETRY_PHYSICS_TAXONOMY` names them — "**(1) skeleton grounded, (2) resemblance
+do-not-assert, (3) identification walled — stand exactly as r693 set them**".*
+⇒ ***r2629, r2631, r2632 and r2633 are all in the row, and not one is filed against the level it answers.***
+
+**THE STATE NOW:**
+*· **(1) GROUNDED, and computed** — r2631: the root triple IS the $f=0$ locus, roots
+$\{1/\sqrt3,1/\sqrt3,-2/\sqrt3\}$, sum zero;*
+*· **(2) PASSED** — r2629 turned the resemblance into a **construction**, r2633 gave its reason;*
+*· **(3) STILL WALLED, but narrower than the word** — r2632: P14 **exhibits** the map.*
+
+**⛭⛭ LEVEL (2) IS PASSED, AND SAYING SO IS THE POINT.** ***A "resemblance do-not-assert" guards against reading a
+similarity as a fact. When the similarity becomes a construction, the hold has nothing left to guard — it was
+calibrated to an object that no longer exists.***
+
+⇒ ***AND LEVEL (3) IS NARROWER THAN "WALLED": the structural identification is exhibited; what remains walled is the
+PHYSICAL one — that the roots ARE colour charge, as against carrying a structure isomorphic to colour's. **The wall
+is not on the map; it is on the FORCE**, which is what `PO-5` establishes from the other side.***
+
+**⛭ THE RULE:** ***when a row says it is held "on three levels", find where the three are NAMED before answering any
+of them. Answers filed against a hold rather than against its levels accumulate as notes — and a hold whose levels
+were passed one at a time will still read as held, because nothing ever compared the notes to the naming.***
+
+### Revision r2682 — 2026-08-11 (main line). **THE ABSENCE-OUTLIVED CLASS MEASURED — and a pattern-repair reverted after making five receipts worse.**
+
+**⌗ cc54 ROUTED 14.** *The absence-asserting class is **35 receipts, 7 failing**. A regex flipped every absence
+assertion to its positive — and **five ended up asserting `✔ NOW` beside a count of `0x`**.*
+
+**⛭ BECAUSE THE ABSENCES DID NOT ALL END:**
+
+    Higgs  2x · N_{\mathrm{eff}}  4x · "doubly ruled"  11x · Unruh  8x     ->  ENDED
+    Goldstone  0x · spontaneous  0x · three unused N_eff spellings  0x     ->  STAND
+
+⇒ ***A receipt asserting a BUNDLE of absences needs each term separated — and a bundle is exactly what a pattern
+cannot see.***
+
+✔ *Two repaired where the flip was clean (`P4`, `P10`); **five reverted** and routed as `FOR_54` item 31 with the
+measurement, which is what makes them decidable.*
+
+**⛭ THE RULE:** ***a class you can detect by pattern is not a class you can repair by pattern. The detector reads
+one property; the repair needs the sentence. When the same regex that FOUND the defect is used to FIX it, the fix
+inherits the detector's blindness — and here that blindness was the difference between an absence that ended and one
+that never will.***
+
+⌗ *Also confirmed against cc54's report: **`classify_documents` is already green** — fixed here at r2674, after
+their base at r2673a. And their **434/14** is consistent with this line's **17** at r2673, three having landed at
+r2672.*
+
 ### Revision r2681 — 2026-08-11 (main line). **THIRTY-EIGHT SENTENCES REST ON RECEIPTS THAT PROVE ONLY THAT PYTHON EXITED ZERO.**
 
 **⛔ THE MEASUREMENT.** *Of 462 receipts, **12 carry no `assert` and no `check()` at all** — and **all twelve are

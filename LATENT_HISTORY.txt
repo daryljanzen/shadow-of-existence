@@ -110,8 +110,22 @@ r2674  INSTRUMENT  cleared cc54s CI blocker -- my two turn ledgers were UNCLASSI
 r2675  INSTRUMENT  check_no_stdlib_shadow built+seeded+wired; all four namespace-collision classes now gated
 r2676  COMPUTED    a horn swap is the WEYL Z_2 not the centre; the missing piece is the torus
 c54.210  LATENT      PO-6 UV half: the counterterm basis is one-dimensional because the background family is; p0 said the invariant fact for another job
-r2677  COMPUTED    re-derived c54.210: invariants all const x alpha^-4 at D=4,5,6; the layers R runs, so the scope is necessary
+r2677  COMPUTED    re-derived c54.210: invariants all const x alpha^-4 at D=4,5,6; the layers R runs, so the scope is necessary  [SCOPE HALF WITHDRAWN r2691 -- verified the wrong object]
 r2678  LATENT      unbanked sweep: excentre at 35 uses in receipts, ZERO in print -- a sixth equivalence unbanked
 r2679  COMPUTED    colour at the CENTRE, isospin at the WEYL element -- opposite ends, so the debts differ in kind
 r2680  INSTRUMENT  monomial was sympys API -- unbanked.py now counts prose only; 91 -> 46 candidates
-r2681  LATENT      12 cited receipts cannot exit non-zero, 38 citations; check_receipt_asserts green on all of them
+r2681  LATENT      12 cited receipts cannot exit non-zero, 38 citations; check_receipt_asserts green on all of them  [BACKLOG EMPTIED r2691 -- all twelve satisfy the gates own predicate]
+r2682  INSTRUMENT  measured the absence-outlived class: 4 absences ended, 3 stand; 2 fixed, 5 reverted and routed
+r2683  LATENT      PO-2s hold has three NAMED levels; level 2 is passed and level 3 is on the FORCE, not the map
+r2684  LATENT      PO-6s two halves restated: half one FINISHED, half two has a stated successor; gate built
+r2685  LATENT      convergence audit: 3 crossings in 70 revisions, but 4 of 5 independent rows are now BOUNDED
+r2686  COMPUTED    the substitution itemised: r_s ~ H^-1 but r_D ~ H^-1/2, so the ratio does not cancel
+r2687  COMPUTED    integrated the rate difference: +7.1% to +14.4% across onsets, P15s +9.4% at z~2500
+r2688  COMPUTED    the onset is FIXED (z~6797, fitted to the acoustic angle); the residual is the weight g(R)/x_e
+r2689  COMPUTED    P15s +9.4% bracketed: Saha +7.0% < Peebles < unweighted +13.1%, ordering forced
+r2690  COMPUTED    the tortoise divergence is uniform in lambda -- no high-j corner rescues the tower
+c54.211  LATENT      withdrew my own c54.210 scope: P10s slicing is a(T)=alpha*cosh(T/alpha), exactly de Sitter, so the degeneracy holds on the towers own background
+c54.212  LATENT      item 30s twelve are a complete false-positive class: all satisfy the gates own CAN_EXIT predicate, at r2680 before any repair
+
+r2691  LATENT      folded c54.211/212: BACKLOG emptied, r2677 scope withdrawn. Both errors mine.
+r2692  INSTRUMENT  fixed the gates.yml stray do -- MY gate insertion, misattributed to 54. CI unblocked.

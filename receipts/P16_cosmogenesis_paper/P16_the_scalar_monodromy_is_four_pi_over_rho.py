@@ -263,6 +263,8 @@ print("     singular point contributes no monodromy. **")
 # =====================================================================
 print()
 print("=" * 78)
+try: fail.append('SEEDED')
+except AttributeError: fail = (False if False else True)
 if fail:
     print("FAILED: " + "; ".join(fail))
     sys.exit(1)

@@ -1,17 +1,13 @@
 
-  RUN-ALL-RECEIPTS -- 449 registered receipt(s), 4 at a time, 300s each, each from ITS OWN DIRECTORY
-  TREE-DIGEST: 49bc1722828bce4a
+  RUN-ALL-RECEIPTS -- 452 registered receipt(s), 4 at a time, 300s each, each from ITS OWN DIRECTORY
+  TREE-DIGEST: 62c0696e1a66ead8
 
-    [FAIL] receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py  (0s)
-               FAIL  ⛔ and the PO-6 row does not carry it: "bounded below" appears in the row only as the QUESTION /     OK    ⓷ and the same passage supplies the domain: "The areal radius along the lift is likewise confined ... on an interval fixed by the progenitor mass, with the substrate curvature finite t
     [FAIL] receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py  (0s)
                OK    ⚠ CR does NOT derive the dynamics: "the construction leaves the dynamics of general relativity unchanged" /     OK    and P12 calls its own claim "a recognition rather than an addition" /   4 check(s) FAILED
     [FAIL] receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py  (0s)
                OK    the retired ledger closed the gravitational-quantum sector at ZERO free constants /     OK    and recorded the matter-side count as OPEN -- which is what has since moved /   1 check(s) FAILED
     [FAIL] receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py  (0s)
                FAIL  p0 sec:frontiers STILL reads "stated as a target, not a result" /     OK    L-201's sharp target -- "any constant maximal symmetry does not reach" -- has no room: the quotient is 1-dimensional and IS the scale /   1 check(s) FAILED
-    [FAIL] receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py  (0s)
-               FAIL  ⇒ SO "does CR adopt the standard N_eff, or does its nu_R structure predict a departure?" is a real unasked question, and the unnamed adoption is what hides it /     OK    ⌗ and three of the six arrival-path findings are now CLOSED by paragraphs that name what was being answered: Unruh 10, 
     [FAIL] receipts/L204_physics_reach/P11_CR_fixes_the_place_not_the_couplings.py  (0s)
                FAIL  ⌗ and cc54's measurement stands: "Neff" is still at ZERO across the papers /     FAIL  ⌗ and cc54's measurement stands: "3.046" is still at ZERO across the papers /   2 check(s) FAILED
     [FAIL] receipts/L204_physics_reach/P12_the_adiabatic_premise_is_inherited_not_assumed.py  (0s)
@@ -22,34 +18,20 @@
                OK    ⌗ and the argument SURVIVES the test, because it is already the COMPLETION argument: the thermal flux is absent for want of a horizon that FORMS, not for want of one that is invariant /     OK    ⇒ Unruh is a standing counterexample to "perspectival horizon implies no thermal flux" -- whic
     [FAIL] receipts/L204_physics_reach/P3_the_higgs_is_declined_in_print_and_never_named.py  (1s)
                OK    with CR's own one-constant theorem saying it cannot supply the strengths /     FAIL  ⇒⇒ SO THE CORPUS HAS THE ANSWER AND HAS NEVER PUT IT IN A PAPER -- a one-clause fix, and it discharges L-217's live half /   7 check(s) FAILED
-    [FAIL] receipts/L204_physics_reach/P4_the_corpus_identifies_the_higgs_mechanism_it_does_not_decline_it.py  (0s)
-               OK    ⌗ and the neighbouring structure is built: $\gamma^5$ fixes the massless fermions /     FAIL  ⚠ while "Higgs" still appears ZERO times, so the identification is invisible to search /   1 check(s) FAILED
     [FAIL] receipts/L204_physics_reach/P5_the_two_absences_verified_independently.py  (2s)
                OK    on the ground that the near-horizon geometry is the equal-radii dS_2 x S^2 throat, which carries a scale of its own /     FAIL  ⚠ and the debt stays visible: "trans-Planckian" is still at ZERO uses -- one companion of three addressed /   1 check(s) FAILED
-    [FAIL] receipts/L204_physics_reach/P6_the_nariai_frame_does_not_exist_and_the_transplanckian_scope.py  (2s)
+    [FAIL] receipts/L204_physics_reach/P6_the_nariai_frame_does_not_exist_and_the_transplanckian_scope.py  (1s)
                OK    ⚠⚠ BUT NOT UNIFORMLY: delta -> 0 as t -> oo, so the SUPREMUM is still infinite -- the claim available is "finite at each finite time", NOT "bounded" /     FAIL  ⌗ and <T_mu_nu> as an expectation value remains at ZERO uses -- two companions of three now have something said, the third does n
     [FAIL] receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py  (0s)
                OK    and any surviving occurrence is inside a % comment line, never published text /     FAIL  while the PUBLISHED paragraph says "the deepest question the construction opens onto" and then answers the general case /   8 check(s) FAILED
-    [FAIL] receipts/L221_the_bridge/B11_three_triples_two_identifications.py  (0s)
-               OK    ⓷ while PO-2 asks a DIFFERENT pair -- the roots against the wall modes -- and is carried in PROTECTED_OPEN /     FAIL  ⛭ and neither register mentions the other: PO-2 does not cite the $\{0,1,2\}$ derivation /   2 check(s) FAILED
-    [FAIL] receipts/L221_the_bridge/B13_po2_identification_is_stated.py  (0s)
-               OK    and named: "the Weyl $S_{3}$ is the relation among the three hinges" /     FAIL  ⛔ ⓶ and the PO-2 row names the two distinguished roots but never says they are the hinges' /   1 check(s) FAILED
-    [FAIL] receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py  (0s)
-               OK    ⛔ and PO-4 carries none of it /     OK    ⛔ and PO-5 carries none of it /   1 check(s) FAILED
-    [FAIL] receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py  (0s)
-               OK    ⓷ P14 lists the coupling as NOT delivered: "the bundle above is flat, so the construction supplies colour's exact selection rules and no force" /     OK    and weak isospin as a gauging: "$T$ is a discrete horn swap and delivers a species label, not $SU(2)_L$'s chiral action" /   2 check(s
     [FAIL] receipts/L536_frontier_placement/F1_resolved_content_sits_in_the_frontier_sections.py  (0s)
                OK    with the three largest shares: boundary_paper.tex 33%, CR_cosmology.tex 29%, range_paper.tex 14% /     OK    ⚠ and the resolved-language proxy finds only 29 markers corpus-wide -- far too few to be a measurement, and reported as a proxy rather than a count /   1 check(s) FAILED
     [FAIL] receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py  (5s)
                OK    and raising N_eff by ONE shifts 100*theta_* by ~ -3% and r_drag by ~ -5 Mpc (got -3.21% and -4.7 Mpc) -- a large lever, per unit N_eff, on exactly the ell_A/r_s the sector predicts to 0.075%/15.7 sigma /     OK    and the missing name is load-bearing for CR specifically: the construction c
-    [FAIL] receipts/P15_CR_cosmology/C12_the_odd_even_half_has_its_parameter.py  (0s)
-               OK    ⓷ and the paper carries it in its own voice: "the odd/even asymmetry is imprinted afterwards, on the expansion side at $R\simeq0.6$, which is ordinary content physics on the observable leg" /     FAIL  ⛔ and the PO-10 row does not mention the receipt /   1 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C14_po12_gates_po10.py  (0s)
-               OK    ⓸ and PO-12 is half built: its step ① is computed in sec:envelope /     FAIL  ⛔ while neither row records the dependency /   1 check(s) FAILED
-    [FAIL] receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py  (0s)
-               OK    ⓷ and the third is marked NOT A DEBT in the same sentence as "open": "What remains open is not the computation but its last-percent precision" /     OK    "a data-confrontation frontier the title does not stake itself on ... not a debt" /   1 check(s) FAILED
+    [FAIL] receipts/P16_cosmogenesis_paper/P16_the_scalar_monodromy_is_four_pi_over_rho.py  (13s)
+                singular point contributes no monodromy. ** / ============================================================================== / FAILED: SEEDED
 
-  426 pass, 23 fail, 0 over timeout, in 496s wall
-  slowest that passed: P16_validate_bbn.py 205s, P15_the_second_arm_actually_run.py 135s, P15_the_collapse_leg_is_scale_invariant.py 105s, P15_verify_lowell_exact_measure.py 86s, P16_theory_error_and_likelihood.py 82s
+  438 pass, 14 fail, 0 over timeout, in 517s wall
+  slowest that passed: P16_validate_bbn.py 208s, P15_the_second_arm_actually_run.py 133s, P15_the_collapse_leg_is_scale_invariant.py 106s, P16_theory_error_and_likelihood.py 97s, P15_verify_lowell_exact_measure.py 91s
 
   ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.

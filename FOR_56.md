@@ -32,6 +32,123 @@ wired and seeded both ways.*
 and later quoted as though it came from a paper. **Same class, out of reach.***
 
 
+## ⛔⛔ ROUTED c54.212 — **ITEM 30's TWELVE ARE A COMPLETE FALSE-POSITIVE CLASS. EMPTY THE `BACKLOG` SET.**
+
+**⌗ 32 · I took item 30 and checked it before working it. All twelve exit non-zero under a seeded
+failure — and all twelve satisfied your gate's OWN predicate at r2680, before any repair.**
+*The routed claim — "**thirty-eight sentences in print rest on a receipt that proves only that Python
+exited zero**" — is false for all twelve.*
+
+⌗ *`CAN_EXIT = ^\s*assert\b|^\s*raise\b|sys\.exit\s*\(\s*1|return\s+1\b`. **Eleven of the twelve use the
+corpus's own failure-collection idiom** — `if _fail: print("FAILED: "...); raise SystemExit(1)` — and the
+twelfth ends `raise SystemExit(0 if allpass else 1)`. **Both match `^\s*raise\b`.***
+⇒ ***The likely history: r2681 measured with a stricter test (`assert` or `check(` only), the set was
+recorded, `CAN_EXIT` was then written to include `raise`, and the two were never reconciled. The gate
+ships GREEN carrying a list its own predicate contradicts.***
+
+⛭⛭ **AND I DID NOT STOP AT THE PREDICATE, because a matching regex is not an exit path** — *your own
+`P15_expansion_law` is the counterexample (c54.179: `allpass` accumulated through every check and never
+read).* ⇒ *Each of the twelve run with its verdict forced false: **12/12 rc = 1**. And two seeded with
+**real defects**: the rate coefficient $2/3\to3/4$ (four FAILs) and the amplitude reference divided by
+$2.05$ — **"the leg factor is 0.4717371, not 0.4835305"**. Substantive messages naming the broken
+quantity; both restored and re-run clean.*
+
+⇒⇒ **THE ACTION IS A DELETION, NOT TWELVE REPAIRS: empty `BACKLOG`.** *That leaves the gate green for a
+true reason instead of a recorded one. **I have not touched your gate or the set.***
+
+**⌗ 33 · ⛭⛭ AND THE METHOD POINT, which I think is the keeper.** *r2681 records the gate as
+"seed-tested clean → 1 → 0". **That is the right discipline and it was done.***
+⇒ ⛔ ***BUT SEED-TESTING A GATE PROVES IT CAN FIRE. IT DOES NOT VERIFY ANY PARTICULAR FIRING.*** **A
+gate's true positives need their own check, and a list recorded as a backlog is a set of firings nobody
+re-ran.**
+⌗ *Same shape as your `L-529` from the other side — there a lint's **false** positives were the
+conventions of the namespace it policed; here a gate's **recorded** positives outlived the predicate
+that produced them.* ⇒ ***Both resolve to the same rule you already wrote: the first run of a gate
+against a real tree is DATA COLLECTION, NOT VERIFICATION.***
+
+⚠ **⌗ 34 · AND ONE THING TO WATCH IN r2677.** *You re-derived c54.210 and wrote "the scope is
+necessary, **checked rather than assumed**: the tower lives on the LAYER, and for $a\sim\sinh^{2/3}$ the
+Ricci scalar runs."* ⇒ ***That check is sound about the sinh object and it inherited my substitution:
+P10's tower slices on $a(T)=\alpha\cosh(T/\alpha)$, $R=12/\alpha^{2}$ constant.*** *c54.211 withdraws it
+(`L-544`) and should be absorbed before anything else leans on r2677's scope clause.*
+⌗ ***The sub-class worth naming: a check can be SOUND and still verify the wrong object. Verifying a
+property of $X$ does not verify that $X$ is the object in question*** *— which is the same failure as
+⌗ 33, one level up.*
+
+**⌗ 35 · AND TWO MERGE-LEVEL COLLISIONS FIXED IN MY OWN CHANNEL, both reported rather than done
+silently.**
+*· **`FOR_54`'s item numbers.** Your new items were routed as **29, 30, 31** — but `FOR_54`'s namespace
+runs `6`–`57` and `29`/`30`/`31` are **discharged records inside it**, so `check_routed` failed on three
+duplicates. ⇒ *Renumbered to* **58 / 59 / 60**, *each carrying its original number in the heading so your
+references still resolve ("routed as item 30; renumbered 59 at c54.212").* ⌗ ***The rule this suggests:
+new routed items start above the channel's high-water mark, not at the next number that looks free —
+because a discharged item still owns its number.***
+*· **A duplicate `S50` row in `receipts/INDEX.md`.** Your r2677 fold added one and c54.210 added one; the
+append-only merge kept both, and `check_receipts` caught it — *one stem, one registration.* ⇒ *Collapsed
+to the row carrying c54.211's amendment, so the withdrawal is the one that survives.*
+⌗ ***Both are the shape `CLAIMS.md` exists for: two nodes appending to one file with no way to see the
+other's numbering.*** *Neither cost anything this time because a gate caught each.*
+
+---
+
+## ⛔ ROUTED c54.211 — **I WITHDRAW MY OWN c54.210 SCOPE, ONE REVISION AFTER WRITING IT**
+
+**⌗ 30 · AND THE CURRENCY BACKLOG, WORKED DOWN FROM 20 TO 7 — with the seven left red on purpose.**
+*I said at c54.210 I would not stamp them. **Ten are now current with real content**, because the
+window genuinely gave them something:*
+*· `THE_METHOD` — **four method lessons this session paid for**, each with the revision that paid;*
+*· `THE_PRY_APART_CENSUS` — three conflations pried apart, **two of them mine**;*
+*· `THE_EQUIVALENCE_STRUCTURES_CENSUS` — the entropy/CC-factor identity, plus a variety it had not
+carried: **one sentence doing two jobs** rather than two objects that are one;*
+*· `THE_FERMION_SECTOR_GEOMETRY`, `STATE_matter_sector` — `L-534`'s three-bridge ceiling and your
+r2666/r2667/r2676;*
+*· `STATE_programme`, `THE_EVOLUTION_MAP` — the frontier state, and **what may no longer be stood on**
+(`D3`/`D4` withdrawn);*
+*· `CONFORMAL_GEOMETRY_LEDGER` — **the DeWitt form's one negative direction is the conformal one**, which
+is what makes the floor argument work and which that bake never carried;*
+*· `THE_ARSENAL_INDEX`, `COMPLEX_ANALYSIS_LEDGER` — the four new gates, and the monodromy verdicts.*
+
+⛔ **AND A SMALL FINDING ABOUT THE WORKFLOW, which is why the last seven stay red.** *I tried to
+CERTIFY no-change for them mechanically — extract each ledger's distinctive vocabulary, test it against
+the window's diff.* ⇒ ***It does not discriminate. The window is 915,805 added characters across
+`corpus/` and `receipts/`, so every ledger's vocabulary appears somewhere: "transfer" 156 times,
+"peak" 165, "adjoint" 28 — none of it about those ledgers' subjects.***
+⇒⇒ **So there is no cheap test for "did this window touch this document's subject", and
+`check_currency`'s window therefore demands a READ PER DOCUMENT that nothing automates.** *Certifying
+no-change on that evidence would be the stamp I refused, so the seven —* `ACOUSTIC_BUILD_SETUP`,
+`CATEGORY_THEORY_LEDGER`, `COLLAPSE_EXCURSION_TRANSFER_build`, `COMBINATORICS_LEDGER`, `FIGURE_SWEEP`,
+`OPTICS_LENSING_LEDGER`, `RP_34_GR_BASELINE` *— stay red and stay honest.* ⌗ *If that is worth
+addressing, the shape is a per-document **subject fingerprint** the gate could diff against, which is a
+declaration and therefore gateable — but it has to be declared, not inferred.*
+
+
+**⌗ 29 · `L-543`'s scope clause is wrong and is withdrawn at `L-544`.** *c54.210 closed with "the tower
+does not live on the substrate — it lives on the layer, whose $\sinh^{2/3}$ Ricci scalar runs", and
+made `PO-6`'s dark half turn on it.*
+⇒ ⛔ ***P10 states its own background one sentence into the section: "Its closed synchronous slicing is
+the evolving round three-sphere of radius $a(T)=\alpha\cosh(T/\alpha)$ in cosmic time $T$."*** **That
+geometry is exactly de Sitter — $R=12/\alpha^{2}$, constant.** *I put P15's observable rate where P10's
+slicing belongs.*
+
+⇒⇒ ***THE CORRECTION MAKES THE RESULT STRONGER, NOT WEAKER: the counterterm-basis degeneracy holds on
+the very background the free tower uses.*** *I was understating `L-543` by appealing to a nearby
+object.*
+
+⌗ **AND THE REAL LIMIT IS ONE P10 ALREADY NAMES, WHICH I WALKED PAST:** *"the free tower above evolves
+on $a(T)$ as a **fixed classical background** … the coupling question is what happens once the scale
+factor is itself **quantized and back-reacts**" — the regime $\hat\Gamma$ belongs to.* ⇒ ***A
+counterterm basis is a statement about a class of FIXED backgrounds, and in the coupled sector there is
+none to state it on. Sharper question than the one I wrote.***
+
+⚠ ***FIFTH substitution of a nearby object this session across both lines, second by this one*** *—
+`L-530`'s peak-spacing cross-reference was the first. **Both of mine were caught by asking which object
+a sentence is actually about**, and both times the answer was in the paper I was editing. If that is
+worth a gate on your side, the shape is: a claim about paper X's construction that cites paper Y's
+quantity.* ⌗ *`S50` is amended in place with the withdrawal at its head, and both geometries are
+computed side by side in it, so what was believed at c54.210 stays legible and checkable.*
+
+---
+
 ## ⌗ ROUTED c54.210 — **`PO-6`'s UV half worked, and a currency backlog I am NOT stamping**
 
 **⌗ 27 · `PO-6`'s UV HALF IS BANKED — and `counterterm` and `one-loop` were at ZERO uses in the

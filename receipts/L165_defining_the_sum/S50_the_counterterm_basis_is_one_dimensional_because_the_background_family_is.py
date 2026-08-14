@@ -8,6 +8,21 @@ $\int\!\sqrt g$, and one constant absorbs whatever the degree. *** AND THE LAYER
 LIFT, WHICH MAKES THE REMAINING QUESTION DETERMINATE RATHER THAN OPEN-ENDED. **
 
 Built r2671+c54.210, lead `L-543`.  VEIN: `L-165` (PO-6, what a quantum of this geometry is).
+** ⛔⛔ AMENDED c54.211 -- PART 4's SCOPE WAS WRONG AND IS WITHDRAWN HERE.  `L-544`. **
+*c54.210 wrote: "the tower does not live on the substrate, it lives on the layer, whose $\sinh^{2/3}$
+Ricci scalar runs."*  ⇒ ** THAT PUT P15's OBSERVABLE RATE WHERE P10's SLICING BELONGS. **  P10 states
+its own background one sentence into the section: *"Its closed synchronous slicing is the evolving
+round three-sphere of radius $a(T)=\alpha\cosh(T/\alpha)$ in cosmic time $T$"* -- and that geometry has
+** $R=12/\alpha^2$, constant.  It is exactly de Sitter. **
+  ⇒⇒ *** SO THE DEGENERACY HOLDS ON THE VERY BACKGROUND THE FREE TOWER USES, AND THE RESULT IS
+      STRONGER THAN c54.210 CLAIMED, NOT WEAKER.  The caveat was about a different object. ***
+  ⌗ ** AND THE REAL LIMIT IS THE ONE P10 ALREADY NAMES: ** the free tower evolves on $a(T)$ as a FIXED
+  CLASSICAL background; the coupled sector is where the scale factor is quantized and back-reacts, and
+  that is the regime $\hat\Gamma$ belongs to.  *A counterterm basis is a statement about a class of
+  fixed backgrounds, and in the coupled sector there is no fixed background to state it on.*
+  ⚠ *This is the FIFTH substitution of a nearby object this session across both lines, and the second
+  by this one.  It was found by asking which background the tower is actually defined on -- a question
+  c54.210 should have asked before importing an answer from another paper.*
 ** KIND: LATENT ** -- *p0 states the invariant fact for a different job; nothing here is new physics.*
 
 ===================================================================================================
@@ -206,29 +221,36 @@ print("     counterterm basis it says the construction does not NEED one.  Same 
 # =====================================================================
 print()
 print("=" * 78)
-print("PART 4 — ⛔ AND THE SCOPE: THE TOWER'S BACKGROUND IS NOT CONSTANT-CURVATURE")
+print("PART 4 — ⛔ WITHDRAWN AND REPLACED c54.211: THE TOWER'S BACKGROUND IS CONSTANT-CURVATURE")
 print("=" * 78)
+T, alx = sp.symbols('T alpha', positive=True)
+aT = alx * sp.cosh(T / alx)
+HT = sp.simplify(sp.diff(aT, T) / aT)
+Rtower = sp.simplify(6 * (sp.diff(aT, T, 2) / aT + HT ** 2 + 1 / aT ** 2))   # closed FRW, k = +1
+_const_tower = sp.simplify(sp.diff(Rtower, T)) == 0
+print(f"  P10's own words: the closed synchronous slicing is the round three-sphere of radius")
+print(f"                   a(T) = {aT}")
+print(f"  its Ricci scalar : R = {Rtower}")
+print(f"  ** constant in T : {_const_tower}   -> EXACTLY DE SITTER, maximally symmetric **")
+print()
+print("  ⇒ *** SO THE DEGENERACY HOLDS ON THE BACKGROUND THE FREE TOWER ACTUALLY USES. ***")
+print()
+print("  ⛔ AND THE OBJECT c54.210 SUBSTITUTED, kept here so the error is checkable:")
 t, H = sp.symbols('t H', positive=True)
 a_ = sp.sinh(sp.Rational(3, 2) * H * t) ** sp.Rational(2, 3)
-Hu = sp.simplify(sp.diff(a_, t) / a_)
-Rlayer = sp.simplify(6 * (Hu ** 2 + sp.diff(a_, t, 2) / a_))
-_const = sp.simplify(sp.diff(Rlayer, t)) == 0
-_late = sp.simplify(sp.limit(Rlayer, t, sp.oo))
-print(f"  P15's observable rate : a(t) = {a_}")
-print(f"  is R constant in t?   : {_const}")
-print(f"  R at late time        : {_late}   (de Sitter)")
-for x in (0.2, 1.0, 5.0):
-    print(f"     R(t={x})/H^2 = {float(Rlayer.subs({H: 1, t: x})):.3f}")
-print()
-print("  *** SO THE DEGENERATE BASIS IS THE SUBSTRATE'S.  On a background whose curvature RUNS, the")
-print("      invariants are independent functions and the basis is not degenerate. ***")
-print("  ⇒ ** `PO-6`'s dark half becomes DETERMINATE: does the one-dimensional counterterm basis")
-print("     survive on the layer?  Stated object, stated instrument, decidable answer. **")
-if _const:
-    fail.append("the layer's Ricci scalar came out constant — the scope caveat would be unnecessary "
-                "and this file's whole scoping is wrong")
-if _late != 12 * H ** 2:
-    fail.append(f"the layer's late-time R is {_late}, not 12H^2 — the de Sitter limit fails")
+Rlayer = sp.simplify(6 * ((sp.diff(a_, t) / a_) ** 2 + sp.diff(a_, t, 2) / a_))
+_const_layer = sp.simplify(sp.diff(Rlayer, t)) == 0
+print(f"     P15's observable rate a(t) = {a_} : R constant in t = {_const_layer}")
+print("     *That object's R does run -- it is simply not P10's slicing.*")
+print("  ⇒ ** THE REAL LIMIT IS P10's OWN: the free tower has a FIXED CLASSICAL background; the")
+print("     coupled sector quantizes the scale factor, and there is no fixed background there. **")
+if not _const_tower:
+    fail.append("P10's slicing came out non-constant-curvature — the withdrawal's premise fails")
+if Rtower != 12 / alx ** 2:
+    fail.append(f"P10's slicing gives R = {Rtower}, not 12/alpha^2")
+if _const_layer:
+    fail.append("the substituted object came out constant too — the two would then not be distinguishable "
+                "and the withdrawal would have nothing to correct")
 
 # =====================================================================
 print()
@@ -244,10 +266,12 @@ WRITTEN = [
      r'quadratic and\s+logarithmic successors\} carry the mass'),
     ("the basis degeneracy is stated with its reason",
      r'the counterterm basis is\s+one-dimensional because the admitted background family is'),
-    ("⛔ and the scope is attached in the same breath",
-     r'the tower does not live on the substrate'),
-    ("with the remaining question stated as determinate",
-     r'whether that degeneracy survives on a background whose curvature runs'),
+    ("⛔ and the scope names P10's OWN slicing, not another paper's rate",
+     r'the closed synchronous slicing\s+\$a\(T\)=\\alpha\\cosh\(T/\\alpha\)\$'),
+    ("stating that the degeneracy holds on the tower's own geometry",
+     r'the degeneracy holds on the very background the free tower\s+uses'),
+    ("and the real limit is the coupled sector, where there is no fixed background",
+     r'in the coupled sector there is no fixed background to state it on'),
 ]
 for what, pat in WRITTEN:
     ok = re.search(pat, P10, re.I | re.S) is not None
@@ -269,9 +293,10 @@ if fail:
     sys.exit(1)
 print("ALL CHECKS PASS — every quadratic curvature invariant on a maximally symmetric background is a")
 print("constant times alpha^-4, so the counterterm basis is one-dimensional on the one-parameter family")
-print("this framework admits; the two sentences the argument assembles are the corpus's own; the layer's")
-print("Ricci scalar runs, so the degeneracy is the substrate's and the layer is where it would lift; and")
-print("P10 now carries the quartic's counterterm, its successors, the degeneracy and the scope.")
+print("this framework admits; the two sentences the argument assembles are the corpus's own; P10's own")
+print("slicing a(T)=alpha*cosh(T/alpha) has R = 12/alpha^2 CONSTANT, so the degeneracy holds on the")
+print("background the free tower uses; and the real limit is the coupled sector, where the scale factor")
+print("is quantized and there is no fixed background for a counterterm basis to be stated on.")
 print("=" * 78)
 
 # ============================================================================================
@@ -298,15 +323,16 @@ print("=" * 78)
 assert _exps == {4}, "the quadratic invariants are not all alpha^-4"
 for what, pat in STANDING:
     assert re.search(pat, ALL, re.I | re.S), f"standing sentence missing: {what}"
-assert not _const, "THE LAYER CAME OUT CONSTANT-CURVATURE — the scope caveat is wrong"
-assert _late == 12 * H ** 2, "the layer's late-time limit is not de Sitter"
+assert _const_tower and Rtower == 12 / alx ** 2, "P10's slicing is not the constant-curvature de Sitter one"
+assert not _const_layer, "the substituted object is not distinguishable from P10's slicing"
 for what, pat in WRITTEN:
     assert re.search(pat, P10, re.I | re.S), f"P10 does not carry: {what}"
 assert _now > 0, "'counterterm' is still at zero in P10"
-print(f"GATE c54.210 (r2671), `L-543`: every quadratic curvature invariant on a maximally symmetric "
-      f"background is const*alpha^-4 (checked at D = 4,5,6), so on this framework's one-parameter "
-      f"background family the counterterm basis is one-dimensional and one constant absorbs any "
-      f"degree; the argument assembles p0's invariant sentence, p0's foliation and `L-533`'s "
-      f"scale-only descent, all five checked present; the layer's R runs to {_late} rather than "
-      f"sitting constant, so the degeneracy is the substrate's; and 'counterterm' has gone from "
-      f"{_before} to {_now} uses in P10 — pinned against `D2`, cc54's `L809/S1` (A7) and `D50`.")
+print(f"GATE c54.211 (r2676), `L-543` amended at `L-544`: every quadratic curvature invariant on a "
+      f"maximally symmetric background is const*alpha^-4 (checked at D = 4,5,6), so on this "
+      f"framework's one-parameter background family the counterterm basis is one-dimensional and one "
+      f"constant absorbs any degree; the argument assembles p0's invariant sentence, p0's foliation "
+      f"and `L-533`'s scale-only descent, all five checked present; ⛔ and c54.210's scope is WITHDRAWN "
+      f"here — P10's own slicing a(T) = alpha*cosh(T/alpha) has R = {Rtower}, CONSTANT, so the "
+      f"degeneracy holds on the tower's own geometry and the real limit is the coupled sector — "
+      f"pinned against `D2`, cc54's `L809/S1` (A7) and `D50`.")

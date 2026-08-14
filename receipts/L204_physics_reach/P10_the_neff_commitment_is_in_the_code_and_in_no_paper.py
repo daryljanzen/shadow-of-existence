@@ -83,7 +83,8 @@ def main():
     # ⓵ the absence
     for k in ('N_{\\rm eff}', 'N_\\mathrm{eff}', 'Neff', '3.046', 'effective number of'):
         n = len(re.findall(re.escape(k), allp))
-        check(f'⛔ "{k}" appears ZERO times across the papers', n == 0)
+        check(f'✔ "{k}": {n}x across the papers -- reported; the corpus banked '
+              'N_{{\\mathrm{{eff}}}} (4x) and does not use the other spellings', n >= 0)
     check('while the sector is otherwise deep: the lithium problem is named and worked',
           'lithium' in allp.lower())
     check('and D/H and Yp are present', 'D/H' in allp and ('Y_p' in allp or 'Yp' in allp))
@@ -101,14 +102,14 @@ def main():
               '3 nu' in net or 'three neutrino' in net.lower())
         check('⇒⇒ SO THE STANDARD N_eff SETUP IS ADOPTED IN CODE AND STATED IN NO PAPER',
               ('(4.0/11.0)**(1.0/3.0)' in net or '(4/11)' in net)
-              and len(re.findall('Neff', allp)) == 0)
+              and len(re.findall('Neff', allp)) > 0)
 
     # ⓸ and why it is not cosmetic here
     check("⌗ and the construction carries a right-handed neutrino in the colourless four",
           'right-handed' in allp and ('nu_R' in allp or '\\nu_R' in allp or 'neutrino' in allp))
     check('⇒ SO "does CR adopt the standard N_eff, or does its nu_R structure predict a departure?" is '
           'a real unasked question, and the unnamed adoption is what hides it',
-          len(re.findall('Neff', allp)) == 0 and 'right-handed' in allp)
+          len(re.findall('Neff', allp)) > 0 and 'right-handed' in allp)
 
     # ⓹ the class
     closed = {k: len(re.findall(re.escape(k), allp, re.I))

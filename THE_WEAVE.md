@@ -1,7 +1,7 @@
 ---
 name: the-weave
 kind: STATE
-current: r2601+c54.207
+current: r2676+c54.211
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
 
@@ -315,6 +315,48 @@ job: How the parts are one object — the per-paper orchestration grid and the r
 > (r2433); the outside readers' package and its judgements (r2439); and the CI outage found by node 53 (r2440).*
 > *Each is carried in `CORPUS_MAP` and in its own register row; **this weave's shape-of-work reading has not been
 > re-run against them**.*
+## ⛭⛭⛭ BROUGHT CURRENT c54.211 — **five joins made since c54.207, and one of them is three papers deep**
+
+*This grid's job is how the parts are one object. **Five new edges, and the last is a join that turned
+out not to be one** — which this document should carry too, because a false edge misleads exactly like
+a missing one.*
+
+**⌗ ⓵ p0 → p0, TWO PARAGRAPHS APART** (`L-532`, c54.207). *The de Sitter horizon's entropy
+$S=3\pi/(\Lambda\ell_P^{2})$ and the cosmological-constant problem's factor $8\pi/(\Lambda\ell_P^{2})$
+are **one dimensionless quantity differing by $3/8$** — and p0's dissolution of the second, written in
+the next paragraph, was already the dissolution of the first.* ⇒ ***The shortest edge in the grid, and
+it went unread for the length of the paper.***
+
+**⌗ ⓶ p0 → P12** (`L-533`, c54.207). *p0's "a plane section of the substrate is Schwarzschild–de Sitter
+exactly when the mass vanishes" is what forces every descent step above the last to be scale-only.* ⇒
+***P12's "no upper bound is established anywhere" gains a MECHANISM: none can be established from
+below, because nothing below can see the difference.***
+
+**⌗ ⓷ P13 → P14** (`L-534`, c54.207). *P13's "$R$ does not exchange the two chirality eigenspaces but
+GRADES them", written to place chirality on the discrete component, is what closes the
+representation-branching bridge: a $\mathbb{Z}_2$ that fixes rather than pairs contributes a character
+and no dimension.* ⇒ ***P14's character ceiling stops being the deck's and becomes the residue's.***
+
+**⌗ ⓸ ⛭⛭ p0 + p0 + P12 → P10** (`L-543`, c54.210). ***The deepest join this grid has recorded.*** *p0's
+"every curvature invariant on either face is a pure power of $1/\alpha^{2}$" (written to show the
+construction cannot FORCE a coupling), plus p0's $\alpha$-foliation, plus `L-533`'s scale-only descent
+in P12* ⇒ ***the counterterm basis in P10 is one-dimensional because the admitted background family
+is.*** ⌗ *Three sources, none written for this, and the conclusion is in a fourth paper.*
+
+**⌗ ⓹ ⛔ AND ONE EDGE THAT IS NOT THERE: P15 ↛ P10** (`L-544`, c54.211). *c54.210 scoped a P10 result
+using P15's observable rate. **They are different objects**: P10's tower slices on
+$a(T)=\alpha\cosh(T/\alpha)$, exactly de Sitter with $R=12/\alpha^{2}$; P15's radiation-free
+$\sinh^{2/3}$ has an $R$ that runs.* ⇒ ***A grid of joins needs its non-joins recorded, because the
+failure mode of a weave document is inviting an edge the geometry does not support. This one cost a
+scope clause and was caught one revision later.***
+
+⌗ ***THE PATTERN ACROSS ⓵–⓸: every join was a sentence written for another job.*** *None of the four
+required new physics; all four required reading a paper for what it says rather than for what it was
+filed under. **That is what this grid is for, and it is why it goes stale in a way the register does
+not.***
+
+---
+
 ## ⌗⌗ BROUGHT CURRENT r2379 (observer line) — *and the weave's own direction-of-neglect finding predicted every defect this line found*
 
 **⚑ THE WEAVE'S STANDING LESSON, quoted back because four sessions of auditing have now instantiated it eight

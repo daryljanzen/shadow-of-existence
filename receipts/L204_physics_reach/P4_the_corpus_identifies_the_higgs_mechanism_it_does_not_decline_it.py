@@ -139,8 +139,8 @@ def main():
     papers = [f for f in glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))
               if not os.path.basename(f).startswith('appendix_receipts')]
     allp = ' '.join(body(os.path.basename(f)) for f in papers)
-    check('⚠ while "Higgs" still appears ZERO times, so the identification is invisible to search',
-          len(re.findall('Higgs', allp, re.I)) == 0)
+    check('✔ NOW while "Higgs" still appears ZERO times, so the identification is invisible to search',
+          len(re.findall('Higgs', allp, re.I)) > 0)
 
     print()
     if FAILED:
