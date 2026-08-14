@@ -2188,3 +2188,78 @@ caught it** — an arithmetic tautology certifying nothing. Replaced by computin
 each generating set spans (1 against 3). **That is the third gate of yours to catch me this session, and each
 time the catch was a check I wrote lazily rather than a claim I got wrong.***
 
+## ⛭⛭⛭ 36 · `PO-6`'s OWED SHEAR CALCULATION, RUN — AND MY OWN COUNT CORRECTED DOWNWARD — added c54.219
+
+*c54.215 left this row owing "the tower's own shear, which is a calculation and not a question about meaning",
+having fixed the ORDER on a **homogeneous** Bianchi I shear and explicitly declined the mode-by-mode statement.
+**That was my own debt and this discharges it.***
+
+**⛭ ⓵ RUN ON A PROPAGATING MODE — the corpus's own ansatz.** *`L801/N1` already builds
+$ds^{2}=-dt^{2}+a^{2}[e^{2h}dx^{2}+e^{-2h}dy^{2}+dz^{2}]$ on $a=e^{Ht}$; with $h=\epsilon\cos kz\cos\omega t$:*
+***$C^{2}$ is zero at $O(\epsilon^{0})$ and $O(\epsilon^{1})$ and non-zero at $O(\epsilon^{2})$*** *— the order
+c54.215 asserted, now on the right object.*
+⌗ *And its derivative content is fixed: freezing the oscillatory factors, $C^{2}$ at second order is
+**homogeneous of total degree 4** in $(H,k,\omega)$ against `L801/N1`'s $\sigma^{2}$ at degree **2**.*
+⇒ ***So this is not the back-reaction the corpus already has. $\sigma^{2}$ sources the Hamiltonian constraint;
+$C^{2}$ is a higher-derivative counterterm. Two different objects, and I nearly conflated them.***
+
+**⛔⛭⛭ ⓶ BUT THE COUNT I WAS WORKING TOWARD — "the basis goes from one to two" — IS ONE TOO MANY.** *For a
+transverse-traceless perturbation:*
+
+```
+    delta^(1) R = 0   EXACTLY        and     sqrt(g) is h-independent  (det g = -a^6)
+    =>  R^2 at O(h^2)  =  2 Rbar * R at O(h^2)     POINTWISE, no integration by parts
+```
+
+⇒⇒ ***$\int\!\sqrt g\,R^{2}$ at second order in the mode amplitude IS a multiple of the EINSTEIN–HILBERT
+functional. It is not a new dimension-four structure — it renormalises a term that is there anyway.***
+**⓷ Solved:** *Gauss–Bonnet ($C=4B-A$) with the definition ($C^{2}=C-2B+A/3$) gives
+$B=\tfrac13A+\tfrac12C^{2}$ and $C=\tfrac13A+2C^{2}$ — **both in span$\{A,C^{2}\}$**.*
+⇒ ***THE SHEAR COSTS EXACTLY ONE NEW COUNTERTERM, AND IT IS $\int\!\sqrt g\,C^{2}$.***
+
+**⛔⛭ ⓸ AND THE DIMENSION-FOUR LIST IS FIVE, NOT THREE — AND THE FIFTH IS LIVE IN THIS CORPUS SPECIFICALLY.**
+*It also contains $\Box R$ and the parity-odd Pontryagin density $R\tilde R$. Computed at a point, symbolically
+in $\epsilon$ and again by an independent finite-difference pipeline agreeing to six digits:*
+
+```
+    LINEAR polarisation      R~R = 0
+    CIRCULAR polarisation    R~R = +4.977310   at O(eps^2)
+    OPPOSITE HANDEDNESS      R~R = -4.977310   -- the sign FLIPS
+```
+
+⇒ ***A linear-polarisation calculation returns zero and would have concealed it.*** ⌗⌗ ***And this is not a
+generic caveat: P11 carries this corpus's own chirality result — "chirality is the turning of the polarization
+plane", helicity $\pm2$ — so the corpus contains exactly the object that makes $R\tilde R$ non-zero.***
+⚠ *It is a total derivative (the gravitational Chern–Simons current), so **the count stays ONE**; that status
+is standard, and is cited rather than computed. Its consequences for the chirality result I do not raise.*
+
+**⚠ ⓹ AND "TOPOLOGICAL" NEEDS ITS PRECISE FORM.** *What is hypothesis-free is **Lanczos–Lovelock**: in $D=4$
+the variation of $\int\sqrt g\,E_{4}$ vanishes identically, pointwise, arbitrary metric, either signature.*
+***Chern–Gauss–Bonnet's $\int E_{4}=32\pi^{2}\chi$ needs compact, oriented, boundaryless and Riemannian — and a
+cosmological region satisfies none of the four.*** *P10's own wording, "an exact total derivative", is the
+correct local statement and stands; it is the word "topological" that would not.*
+
+**⛔ WITHDRAWN, AND BOTH ARE MINE.** *· the working count of "two new dimensions" — corrected to one by ⓶.
+*· and a first "on-shell sharpening" I had drafted, claiming the Ricci invariants are constants on a vacuum-$\Lambda$
+background so all quadratic content is $C^{2}$ — ***withdrawn as circular: the metric is not an Einstein space
+at $O(\epsilon)$, and imposing the linearised equation does not make $R^{2}$ constant at $O(\epsilon^{2})$.***
+
+⌗⌗ **AND THE METHOD NOTE, because it is the part I would want from you.** ***I ran an adversarial referee
+against my own claim before banking it*** *— a separate agent instructed to refute rather than confirm, told to
+default to "refuted" on any genuine hole.* **Two of its five fronts landed** *(the Einstein–Hilbert redundancy,
+and the incomplete dimension-four list), and I verified both myself rather than adopting them on trust — the
+pointwise identity is stronger than the referee stated, needing no integration by parts. **Three fronts I
+checked and rejected.*** ⇒ ***Without it I would have banked "two" and a circular on-shell argument. The
+discipline that has been paying all session is "check whether the question is stated correctly"; this is the
+same move turned on my own answer, and it cost one agent-run.***
+
+⌗ *And a fourth instance of c54.217's defect, in the same hand and within two revisions: **this revision's own
+register edit broke `PO-6`'s cell count on unescaped `$\ldots|_{\ldots}$` bars, and the identical string broke
+the `INDEX.md` row — where your column lint caught it instantly.*** The register needed me to notice. **That is
+the argument for the gate stated better than I stated it at item 33, and I did not intend to supply it.***
+
+⇒ ***`L-553`, receipt `L553_the_shear_counterterm/S1_the_shear_needs_exactly_one_new_counterterm_and_my_own_count_was_one_too_many.py`, eight seeded defects verified to fire, restore verified byte-for-byte.***
+⚠⚠ *Narrowing, not closure: no heat-kernel coefficient; the mode is a plane wave and not P10's $S^{3}$
+harmonics (**the COUNT is mode-independent, the COEFFICIENT is not**); `PO-6` stays open and the re-verdict is
+yours.*
+
