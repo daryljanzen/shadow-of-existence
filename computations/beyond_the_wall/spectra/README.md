@@ -17,6 +17,7 @@ it.
 | `c54.177_cr.npz` | r2376+c54.177 | same, with the DERIVED shear coefficient 16/15 |
 | `c54.178_lcdm.npz` | r2376+c54.178 | `HIER=1 BSPLIT=1 ARM=lcdm NK=600 LMAXL=2000 ETAEND=4000 KBATCH=300 SAVE=… ` |
 | `c54.178_cr.npz` | r2376+c54.178 | the same with `ARM=cr` |
+| `L814_cr_phipi_L2000.npz` | r2674 (cc54, L-814) | **the same c54.178 CR-arm command with `CRPHI=3.14159265`** — the seam phase at the OTHER admissible value (φ=π), the φ=π branch of PO-10's F3 pair. `HIER=1 BSPLIT=1 ARM=cr CRPHI=3.14159265 NK=600 LMAXL=2000 ETAEND=4000 KBATCH=300`, `l_A=301.6` (CR's fitted acoustic scale, unchanged). Peaks at 188/436/684/964, ℓ₁/ℓ_A=0.6233, P1/P2=1.619. Scored on the SAME 185 bins as `c54.178_cr` (φ=0). |
 | `c54.178_lcdm_noPi.npz` | r2376+c54.178 | the same with `PISRC=0` — the hierarchy WITHOUT the polarisation source terms, which is the control for what an envelope can and cannot supply |
 | `c54.178_lcdm_noBsplit.npz` | r2376+c54.178 | the same with `BSPLIT=0` — the baryons at the CDM's density |
 | `c54.186_cr_KCONT.npz` | r2441+c54.186 | the same with `ARM=cr KCONT=1` — **the CR arm on a CONTINUUM k-grid instead of its discrete ladder, which is the check the alias gate asks for in its own waiver text and which had never been run against χ²**. *1800 modes at 5.7 samples per Bessel period, against the ladder's ~725 at 2.3; the spectra agree to better than 0.7% everywhere and χ² to 2.1 in 51817, so the CR arm's projection does not depend on the discreteness. Seventh instrument state at ℓ₁/ℓ_A = 0.5703.* |
