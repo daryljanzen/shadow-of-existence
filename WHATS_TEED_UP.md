@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.213 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**11 open QUESTIONS · 1 open WORK rows · 1 HELD** *(289 struck of 302 registered).*
+**12 open QUESTIONS · 1 open WORK rows · 1 HELD** *(289 struck of 303 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -30,6 +30,7 @@ sources: [cowork]
 | **`L-813`** | — | REGISTERED r2674 — cc54 DELIVERED `PO-11`'s OWED SPECTRUM (56's r2714 entry point, and it UNGATES the propagating-fermion sector). 56 routed it: B3's superpotential $W=\lambda\sqrt f/r$ ($W=0$ at every horizon) makes the massless radial Dirac operator a SUSY-Q… | `receipts/L813_po11_dirac_barrier_spectrum/S1…` · `L-175`/family-6 · `PO-11` · B3 | next (optional, informative not gating): enumerate the discrete tower as a QNM-grade solve — complex-$\omega$ resonances or a Prüfer count on the true… |
 | **`L-814`** | — | REGISTERED r2674 — cc54 DELIVERED `PO-10`'s SPECIFIED RUN (struck r2712, remainder a run; 56 pinned the reference to F3 and greenlit at r2719). `PO-10` = the scalar sector to a verdict; its remainder was a model-selection RUN. Reference: `dBIC = F3 - 21.5` wit… | `receipts/L814_po10_bic_pair/S1…` · `L-147`/family-5 · `PO-10` · `c54.178` · `L814_cr_phipi_L2000.npz` | PO-10's run is discharged; the residual is PO-7's branch selection when CRPHI closes |
 | **`L-816`** | — | REGISTERED r2674 — cc54: `PO-6`'s FIXED-BACKGROUND half — the SUB-LEADING log divergence is GAUSS–BONNET, so the one-constant ledger survives (extends `L-809`/A7). `S50` left the sub-leading tower uncomputed: does the log divergence collapse onto $\Lambda$ (as… | `receipts/L816_po6_subleading_survives/S1…` · `L-165` (`PO-6`) · `L-809` · `S50` | — |
+| **`L-817`** | — | REGISTERED r2674 — cc54: `PO-6`'s COUPLED-sector spectral residue — WHERE $\hat\Gamma$'s spectrum sits vs $3/4$ is COMPUTED, it STRADDLES the threshold. `S8` (r2723) settled the FLOOR (from r2671's non-degeneracy) and closed on the one thing left open in its o… | `receipts/L817_gamma_hat_straddles/S1…` · `L-165` (`PO-6`) · `S8`/r2723 · r2671 · P10 `sec:lock` | — |
 
 ## ⏸ HELD BY DARYL — answered, not waiting
 
