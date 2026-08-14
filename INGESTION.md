@@ -102,7 +102,8 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2686   PO-12   substitution itemised; r_D carries a square root so the ratio does not cancel.
     r2687   PO-12   gap closed by integration; the answer is set by the ONSET.
     r2688   PO-12   the onset is FIXED; the residual is the weight g(R)/x_e.
-    r2689   PO-12   CLAIMED: run the weighted integral with a real Saha x_e and the tight-coupling g(R).
+    r2689   PO-12   +9.4% BRACKETED [7.0, 13.1] from outside the papers instrument. Ordering forced.
+    r2690   PO-11   CLAIMED: bracket the propagating sector the same way -- what does the tower cost?
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

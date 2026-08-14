@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2690 — 2026-08-11 (main line). **`PO-11`'s OBSTRUCTION IS UNIFORM IN THE TOWER — the angular index does not rescue it.**
+
+**⌗ r2669 PROVED IT ON THE MEASURE ALONE.** *This runs both norms on the modes P14 delivers — $\psi\sim|r|^\lambda$,
+$\lambda=j+\tfrac12$, "**one bound zero-mode per (wall, $j$)**", the growing branch needing $\lambda<3/4$ "**which
+never holds**" — between the true horizons $r_b=0.256968$, $r_c=0.846439$.*
+
+    lam    leaf-norm      tortoise at eps = 1e-4 / 1e-6 / 1e-8
+     1.0    0.669566        4.357     6.882     9.233
+     3.0    0.205363        1.828     3.074     4.235
+    10.0    0.011067        0.1441    0.2648    0.3773
+
+⇒ ***The leaf norm is finite and cut-off independent; the tortoise norm grows by a **constant increment per
+hundredfold** ($+2.525$, then $+2.350$) — which IS a logarithm — **at every $\lambda$**.***
+
+**⌗ SO THE ANGULAR INDEX DOES NOT RESCUE IT.** ***Going to $\lambda=10$ shrinks both norms but does not make the
+tortoise one converge: there is no high-$j$ corner where the modes become propagating states. The analytic argument
+could not say that, because it never mentioned $\lambda$.***
+
+⇒⇒ *Which sharpens the debt: **not a better mode but a different OBJECT** — a scattering state with a continuum
+normalisation, which a bound tower cannot become by relabelling.*
+
+**⛭ THE RULE:** ***after proving something about a measure, run it on the states. A measure argument is uniform by
+construction and so cannot tell you whether the obstruction is uniform — and "does it fail for ALL of them, or only
+the ones I checked" is exactly the question a frontier row turns on.***
+
 ### Revision r2689 — 2026-08-11 (main line). **P15's $+9.4\%$ BRACKETED FROM OUTSIDE THE INSTRUMENT THAT PRODUCED IT.**
 
 **⓵ FIRST, WHAT "CANCEL IDENTICALLY" COVERS — and it is not the weight.** *P15: "in the ratio the Thomson physics

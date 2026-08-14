@@ -123,3 +123,4 @@ r2686  COMPUTED    the substitution itemised: r_s ~ H^-1 but r_D ~ H^-1/2, so th
 r2687  COMPUTED    integrated the rate difference: +7.1% to +14.4% across onsets, P15s +9.4% at z~2500
 r2688  COMPUTED    the onset is FIXED (z~6797, fitted to the acoustic angle); the residual is the weight g(R)/x_e
 r2689  COMPUTED    P15s +9.4% bracketed: Saha +7.0% < Peebles < unweighted +13.1%, ordering forced
+r2690  COMPUTED    the tortoise divergence is uniform in lambda -- no high-j corner rescues the tower
