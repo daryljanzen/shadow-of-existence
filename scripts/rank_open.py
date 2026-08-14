@@ -79,6 +79,11 @@ def main():
     out = []
     for l in rows:
         tag = re.search(r'PO-\d+', l).group(0)
+        # ** r2657: a row whose QUESTION IS ANSWERED is awaiting a procedural strike, not work.
+        # ⇒ *** Ranking it puts an answered item at the top of a queue two nodes are about to draw
+        #     from -- and PO-9 and PO-3 sat at #4 and #6 for twelve revisions after being answered. *** **
+        if 'QUESTION IS ANSWERED' in l:
+            continue
         flat = re.sub(r'\s+', ' ', l)
         g = grounded(tag, flat)
         r = REACH.get(tag, 1)

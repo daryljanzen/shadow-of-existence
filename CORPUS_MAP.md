@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2657 — 2026-08-11 (main line). **A COORDINATION PROTOCOL BUILT AND REMOVED IN ONE REVISION — the channel already existed.**
+
+**⛔ THE OVER-BUILD.** *Told to parallelise, this line surveyed the collision surface — **every one of the last
+fourteen turns touched `BOARD.md`, `CORPUS_MAP.md`, `LATENT_HISTORY.txt`, `THE_WISDOM_LEDGER.md` and every rebuilt
+PDF** — and built `scripts/claim.py`: a claim file, a per-file-class merge rule, a conflict taxonomy.*
+
+**⇒ THREE CORRECTIONS, EACH DELETING WORK:**
+*· **"54 can't write."** ⇒ ***the entire collision analysis was about a write path that does not exist***;*
+*· **"And I can tell 54 whatever we are taking."** ⇒ ***the claim mechanism was solving relay, which a human in the
+loop already does***;*
+*· **"Or you can just leave your own status updates in the anti-collision register. On GitHub."** ⇒ ***the channel
+already existed. It is the repo. 54 reads it.***
+
+**⛭⛭ THE RULE:** ***before building a coordination mechanism, establish that both parties can actually collide. A
+survey of what a turn TOUCHES answers a question about writes — and this line ran that survey without checking
+whether the other node writes at all. The collision surface was real and irrelevant, which is the most convincing
+kind of wrong.***
+⌗ ***And the cheaper lesson underneath: when two nodes read the same artefact, they need a LINE in it, not a
+protocol around it.***
+
+✔ *What survived is the part that is genuinely about a **read-only** node: `INGESTION.md`'s **re-derive, do not
+transcribe** — a folded finding gets this line's receipt, so it must be workable from the corpus without 54's
+message, or it is ***a transcription with a checkmark***. Plus the register at the foot of that file, updated each
+turn.*
+
+⌗ *Also fixed: `rank_open` was still ranking **`PO-9` and `PO-3`**, answered twelve revisions earlier — an answered
+row at the top of a queue two nodes are about to draw from.*
+
+**⇒ THIS LINE IS TAKING `PO-12`**, *rank #1: step ① is in `sec:envelope` and step ② unblocks **both** of `PO-10`'s
+runs.*
+
 ### Revision r2656 — 2026-08-11 (main line). **`check_kind` — the failure predicted for another node was already in this line's own log, three times. GREEN LIGHT.**
 
 **⌗ THE PREDICTION, from `THE_HANDOFF` one revision earlier.** *"**A 54 marking its own turns will mark a reading
