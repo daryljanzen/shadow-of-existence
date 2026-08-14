@@ -98,3 +98,4 @@ r2665  COMPUTED    peak-gap estimate ~0.813; CRs potential decays 15% faster bec
 r2666  LATENT      [reclassified r2667: P14 states this directly -- derivation independent, finding not new] flat connection: holonomy non-trivial while F=0
 r2667  LATENT      P14 walls holonomy AND isometry; 41.2 decades verified; no third mechanism named
 r2668  INSTRUMENT  family 6 stale AGAIN (PO-4 -> PO-11); the new gate found family 5 stale too (PO-7 -> PO-10)
+r2669  COMPUTED    leaf vs tortoise: both finite at r=0, tortoise log-divergent at the horizons only

@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r2669 — 2026-08-11 (main line). **`PO-11`'s OBSTRUCTION IS HORIZON-LOCATED — and $r=0$ is integrable in both norms.**
+
+**⌗ P14 GIVES BOTH MEASURES.** *"the fermion is a mode of the existent spatial leaf, and **in that induced proper
+measure the horizons sit at finite distance and the modes are bound**, whereas **in the conserved spacetime Dirac
+norm the horizons are infinitely distant and the static mode does not normalize**".*
+
+**⛭⛭ COMPUTED, AT BOTH LOCI:**
+
+    at a HORIZON (f ~ c(r-r_h)):   leaf  int dr/sqrt|f| = 2/sqrt(c)   FINITE
+                                   tortoise  int dr/|f|              LOG DIVERGENT
+    at r=0 (|f| ~ 2M/r):           leaf  = sqrt2/(3 sqrt M)          FINITE
+                                   tortoise = 1/(4M)                 FINITE
+
+⇒⇒ ***So the singularity is NOT where the two norms part company. The entire difference is at the horizons —
+$1/\sqrt u$ against $1/u$ — and $r=0$, the locus this corpus discusses constantly, is integrable in both.***
+
+**⌗ AND THAT CHANGES THE ROW'S CHARACTER.** *A propagating Dirac sector must handle a mode spread over an infinite
+tortoise interval — ***the ordinary scattering problem on a black-hole background***. **The obstruction is not
+CR-specific**, so the descent is a KNOWN hard problem rather than an unnamed one.*
+
+**⛭ THE RULE:** ***when a construction has a famous difficult locus, check whether the difficulty you are facing is
+actually there. A corpus organised around one singular point will attribute every hard thing to it — and the
+integral that decides is usually two lines.***
+
 ### Revision r2668 — 2026-08-11 (main line). **FAMILY 6's POINTER WENT STALE A SECOND TIME — and the gate built for it found a third on its first run.**
 
 **⛔ THE SECOND STALENESS, INVISIBLE TO EVERY EXISTING CHECK.** *Family 6 is "**the propagating fermion and gauge

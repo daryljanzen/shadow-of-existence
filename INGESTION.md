@@ -83,6 +83,7 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2665   PO-10   gap SIZED (estimate): ~0.813 at the peaks. Deviation is BROAD, not tail-confined.
     r2666   PO-5    coupling CANNOT come from the colour bundle -- flat holonomy gives phases, never force.
     r2667   PO-5    P14 already walls holonomy AND isometry. Real content: is there a THIRD mechanism?
+    r2669   PO-11   obstruction is HORIZON-located, not singularity-located -- the ordinary scattering problem
 
 ## ⓸ WHAT THIS LINE IS TAKING
 
