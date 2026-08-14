@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2710 — 2026-08-11 (main line). **THE THRESHOLD CORRECTED — CR is $k=2$, and the literature supplies the scale.**
+
+**⛔ ⓵ r2709's PARAMETER COUNT WAS WRONG, AND P15 SAYS SO.** *"the first peak is where the amplitude is
+**anchored**, by an $A_s$ this construction inherits rather than predicts", and the framework scopes it as "**a
+one-parameter accommodation**".*
+⇒ ***Anchored to the data IS fitted. The CR arm carries $\Omega_m$ AND $A_s$: $k=2$.***
+
+**⛭⛭ ⓶ AND THE LITERATURE SUPPLIES THE INTERPRETATION SCALE r2709 LACKED.** *Liddle (2004), quoting Jeffreys
+(1961): **a $\Delta$BIC of 2 is positive evidence, 6 or more is strong evidence** against the model with the larger
+value.*
+⌗ *Liddle's own count is **five** with $n=1$ held; at Planck precision $n_s\ne1$ is significant so 6 is right — and
+the choice must be stated with any result, so all four pairs are tabled.*
+
+    N = 215 TT bins
+      CR k=1 vs LCDM k=5 :  dAIC  8.0   dBIC 21.5   STRONG
+      CR k=1 vs LCDM k=6 :  dAIC 10.0   dBIC 26.9   STRONG   <- r2709's, wrong k_CR
+      CR k=2 vs LCDM k=5 :  dAIC  6.0   dBIC 16.1   STRONG
+      CR k=2 vs LCDM k=6 :  dAIC  8.0   dBIC 21.5   STRONG   <- corrected
+
+⇒⇒ ***The threshold is $\Delta$BIC $=21.5$ — still three and a half times the strong-evidence line. The correction
+moved the number by 5.4 and did not touch the conclusion.***
+
+⓸ *AICc negligible at this $N$: a $0.34$ shift in $\Delta$AIC.*
+
+**⛭ THE RULE:** ***a number without its interpretation scale is not a result. This line computed a penalty and
+could not say whether it was large — and the scale was one search away in a field that has used the tool for twenty
+years.***
+
+⚠ *The receipt's first draft carried `True or None` as a check — hollow, and passed by `lint_assertions` because it
+is syntactically a comparison. Replaced.*
+
 ### Revision r2709 — 2026-08-11 (main line). **HALF ① IS AN INFORMATION CRITERION — and the corpus names the target while never using the tool.**
 
 **⌗ r2708 STOPPED AT "THE ROW OWES A RULE".** *Daryl named it in one line: **that is an AIC/BIC-type comparison**.
