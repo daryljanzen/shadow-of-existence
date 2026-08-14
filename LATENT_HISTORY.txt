@@ -197,4 +197,4 @@ r2740  LATENT      FOR_56 25-35 read. Family 5 healed by REOPENING PO-10, not by
 r2741  LATENT      PO-5s two bounds COMPOSE; cc54s is tighter -- one test, not a search. One position decides two rows.
 r2742  LATENT      PO-5s ledger branch SETTLED: three papers commit ell_P is a gauge, none treats it as a scale
 r2743  COMPUTED    PO-6s two halves MEET AT THE SHEAR -- the tower IS the transverse-traceless shear, in P10s words
-r2744  COMPUTED    PO-11s join crosses the INNER HORIZON -- the wall is at r=0 where f -> -infinity, not in the static region
+r2744  LATENT      PO-11s join crosses the INNER HORIZON -- the wall is at r=0 where f -> -infinity, not in the static region
