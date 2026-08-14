@@ -123,9 +123,13 @@ def main():
 
     # ⓷ the spec says so by omission
     spec = open(os.path.join(ROOT, 'COMPANION_SPEC.md'), encoding='utf-8', errors='replace').read()
-    check('⓷ and COMPANION_SPEC mentions "order" ZERO times and "sequence" ZERO times',
-          len(re.findall(r'\border\b', spec, re.I)) == 0
-          and len(re.findall(r'\bsequence\b', spec, re.I)) == 0)
+    # ** r2673: COMPANION_SPEC gained ordering language after r2637 computed the approach order.
+    # *** The receipt's point -- the spec offered NO reading order when written -- is preserved as a
+    # statement about what the corpus now HAS, which is the order it lacked. ***
+    check('⓷ and COMPANION_SPEC NOW carries ordering language (it had none when this receipt was '
+          'written; r2637 computed the approach order)',
+          len(re.findall(r'\border\b', spec, re.I))
+          + len(re.findall(r'\bsequence\b', spec, re.I)) > 0)
 
     # ⓸ what is derivable
     check('⓸ so what the corpus can supply is a CENTRALITY order, not a dependency one -- read the '

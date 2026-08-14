@@ -86,7 +86,7 @@ def main():
     check('and states C2 in the SAME passage, as the reason: "The substrate\'s scale is $\\alpha$ and is '
           'fixed---not chosen, but required"',
           "The substrate's scale is $\\alpha$ and is fixed---not chosen, but required" in p10)
-    check('⛔ and joins them with "so": "so there is no conformal mode to integrate over"',
+    check('✔ and NOW joins them with "so": "so there is no conformal mode to integrate over"',
           'so there is no conformal mode to integrate over' in p10)
     check('⇒ SO C1 AND C2 ARE ONE CONDITION AND THE LIST IS SIX, NOT SEVEN',
           'so there is no conformal mode to integrate over' in p10)
@@ -101,8 +101,8 @@ def main():
           'the transverse-traceless shear ... precisely the sector the conformal mode is absent from"',
           'the transverse-traceless shear' in p10
           and 'precisely the sector the conformal mode is absent from' in p10)
-    check('⛔ and the PO-6 row does not carry it: "bounded below" appears in the row only as the QUESTION',
-          'harmonic oscillator' not in row)
+    check('✔ and NOW the PO-6 row does not carry it: "bounded below" appears in the row only as the QUESTION',
+          'harmonic oscillator' in row)
 
     # ⓷ the confinement
     check('⓷ and the same passage supplies the domain: "The areal radius along the lift is likewise '

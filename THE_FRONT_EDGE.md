@@ -6,6 +6,31 @@ description: THE FRONT EDGE — how the corpus and the residual register stay cu
 sources: [chat]
 ---
 
+## ⛔ NEVER ASSERT AN ABSENCE YOU ARE ABOUT TO END — r2672
+
+*A receipt written in the turn that changes the corpus must assert the state it **LEAVES**, not the state
+it **found**.*
+
+⇒ ***Otherwise it is green exactly once — at the moment it can least be trusted — and red for every
+revision after.***
+
+**THE MEASUREMENT.** *Of 40 receipts this line wrote in `r2626`–`r2671`, **8 failed**, and every one had
+the same shape:*
+
+    check('⛔ and the PO-5 row does not mention $SU(3)$ at all',  'SU(3)' not in row)
+                                                    ↑ and the same turn put it there
+
+*Two more asserted a ledger BUCKET LABEL — `DISCOVERABLE-PROOF`, `OPEN-DOWNSTREAM` — that this line's own
+later revisions retired. **Same shape, one level up.***
+
+**⇒ THE FORM THAT SURVIVES:**
+
+    check('✔ and NOW the PO-5 row carries the delivery (this receipt put it there)', 'SU(3)' in row)
+
+⌗ *All ten converted at r2672; **40 of 40 pass**. And the defect was invisible for as long as the receipt
+runner was — `scripts/queue.py` shadowed the stdlib `queue` from r2615 to r2670, which 54 found.*
+
+
 # THE FRONT EDGE
 
 > ***One operable surface where the corpus and the register are both current, and closing an item updates

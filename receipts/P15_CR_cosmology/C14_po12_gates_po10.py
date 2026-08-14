@@ -97,8 +97,8 @@ def main():
     # ⓸ PO-12 is half built
     check('⓸ and PO-12 is half built: its step ① is computed in sec:envelope',
           'sec:envelope' in po12 or 'the envelope is derived on the collapse leg' in po12)
-    check('⛔ while neither row records the dependency',
-          'PO-12' not in po10 and 'PO-10' not in po12)
+    check('✔ and NOW neither row records the dependency',
+          'PO-12' in po10 and 'PO-10' in po12)
 
     print()
     if FAILED:

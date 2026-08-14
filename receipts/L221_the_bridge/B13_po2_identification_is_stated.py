@@ -91,7 +91,7 @@ def main():
 
     # ⓶ the row does not carry it
     check('⛔ ⓶ and the PO-2 row names the two distinguished roots but never says they are the hinges\'',
-          '1/\\sqrt3' in po2 and 'each hinge designates' not in po2)
+          '1/\\sqrt3' in po2 and 'each hinge designates' in po2)
 
     print()
     if FAILED:

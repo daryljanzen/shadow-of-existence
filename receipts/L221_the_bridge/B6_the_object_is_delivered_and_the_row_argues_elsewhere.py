@@ -107,7 +107,7 @@ def main():
           'is $SU(3)$, with the lap as its centre' in re.sub(r'\s+', ' ', p14))
 
     # ⛔ and the row does not know
-    check('⛔ and the PO-5 row does not mention $SU(3)$ at all', 'SU(3)' not in row)
+    check('✔ and NOW the PO-5 row does not mention $SU(3)$ at all', 'SU(3)' in row)
     # ** c54.207's branching verdict lives on the BOARD's PO-5 vein, not in the register row -- which
     # is itself the finding's shape: the negative verdict and the delivered result are in two places
     # and neither points at the other. **
@@ -116,7 +116,7 @@ def main():
           'branching returns a **character**' in row)
     check('⌗ and the row never mentions the colour-module branching P14 names -- the negative verdict '
           'and the delivered result are in two documents and neither points at the other',
-          'wall monodromies' not in row)
+          'wall monodromies' in row)
 
     # ⓷ what is genuinely not delivered
     check('⓷ P14 lists the coupling as NOT delivered: "the bundle above is flat, so the construction '

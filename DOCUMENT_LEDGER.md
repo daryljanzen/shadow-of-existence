@@ -19,8 +19,7 @@ sources: [chat]
 | **VIEW** | 5 |
 | **STATE** | 46 |
 | **METHOD** | 30 |
-| **RECORD** | 78 |
-| **UNCLASSIFIED** | 2 |
+| **RECORD** | 80 |
 
 ## ⌗ DECLARED CLASSES
 
@@ -42,11 +41,11 @@ sources: [chat]
 |---|---|---|---|---|---|
 | `ABSORPTION.md` | SOURCE | The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced. | — | c54.209 | 0 |
 | `THE_LIVE_ARC.md` | SOURCE | the lead register — the one live edge | — | c54.209 | 0 |
-| `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.208 | c54.208 | 1 |
-| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.208 | c54.208 | 1 |
-| `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.208 | 1 |
-| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.208 | c54.208 | 1 |
-| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.208 | c54.208 | 1 |
+| `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.209 | c54.209 | 0 |
+| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.209 | c54.209 | 0 |
+| `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.209 | 0 |
+| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.209 | c54.209 | 0 |
+| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.209 | c54.209 | 0 |
 | `ACOUSTIC_BUILD_SETUP.md` | STATE | The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own. | — | c54.201 | 8 |
 | `BOARD.md` | STATE | (declared in frontmatter) | — | c54.209 | 0 |
 | `CATEGORY_THEORY_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.201 | 8 |
@@ -63,7 +62,7 @@ sources: [chat]
 | `FIGURE_SWEEP.md` | STATE | The figure programme's state — every figure against what it must carry. | — | c54.201 | 8 |
 | `FIGURE_THEOREM_LEDGER.md` | STATE | The figure–theorem ledger: which classical theorem each figure carries, and its receipts. | — | c54.19 | 190 |
 | `FORK_c54.md` | STATE | the c54 fork's own record | — | c54.188 | 21 |
-| `OPEN_PROBLEMS_MAP.md` | STATE | The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open | — | c54.208 | 1 |
+| `OPEN_PROBLEMS_MAP.md` | STATE | The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open | — | c54.209 | 0 |
 | `OPTICS_LENSING_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.201 | 8 |
 | `P3_SWING_ONTOLOGY_hinge-and-door.md` | STATE | The usable ontological skeleton for the SECOND major P3 upgrade — lead with the physical object (one hinge, one door, one swing) and DERIVE w, u, 3w as the shadows it throws. Registered as L-206; the upgrade has not landed. | — | — | never |
 | `PHASE7_BUILD_LEDGER.md` | STATE | the Phase-7 build record | — | c54.153 | 56 |
@@ -122,7 +121,7 @@ sources: [chat]
 | `capstones/Still_Collapsing_portrait_v1.0.md` | METHOD | the why-layer — read at spin-up steps 8 and 8b | — | — |  |
 | `capstones/THE_CODA.md` | METHOD | the why-layer — read at spin-up steps 8 and 8b | — | — |  |
 | `capstones/THE_INTERFERENCE_ENGINE.md` | METHOD | the why-layer — read at spin-up steps 8 and 8b | — | — |  |
-| `capstones/THE_WISDOM_LEDGER.md` | METHOD | Is the scrap in front of me still live, and what would retire it? Read AT THE MOMENT OF USE. The only one of the six about the NODE rather than the corpus. | — | c54.207 |  |
+| `capstones/THE_WISDOM_LEDGER.md` | METHOD | Is the scrap in front of me still live, and what would retire it? Read AT THE MOMENT OF USE. The only one of the six about the NODE rather than the corpus. | — | c54.208 |  |
 | `BUNDLE_README.md` | RECORD | frozen record | — | — |  |
 | `BUNDLE_r1062.md` | RECORD | frozen record | — | — |  |
 | `BUNDLE_r1063.md` | RECORD | frozen record | — | — |  |
@@ -175,6 +174,7 @@ sources: [chat]
 | `HANDOVER_c54.191.md` | RECORD | What the c54 session that ran c54.185–c54.191 knew that the ledgers do not hold. Written for whoever picks up front #2 cold. Read once, then work. | c54.191 | c54.191 |  |
 | `HISTORICAL_CONTEXT_einstein_cosmological_considerations.md` | RECORD | frozen record | — | — |  |
 | `HISTORICAL_CONTEXT_the_initial_rate_problem.md` | RECORD | frozen record | — | — |  |
+| `LATENT_HISTORY.txt` | RECORD | frozen record | — | c54.209 |  |
 | `NEXT.md` | RECORD | THE WORK ORDER — what to do next, in order, with enough detail to start cold. Read after THE_HUB on arrival. Delete a block when it lands. | — | c54.187 |  |
 | `PROGRAMME_UNFINISHEDNESS_CATALOGUE.md` | RECORD | frozen record | — | — |  |
 | `PUZZLE_the-idea_transcript.md` | RECORD | frozen record | — | — |  |
@@ -183,6 +183,7 @@ sources: [chat]
 | `RETIRED_PLANNING_THREADS.md` | RECORD | frozen record | — | — |  |
 | `REVISION_r2118.patch` | RECORD | frozen record | — | — |  |
 | `SPINUP_FAILURE_FORENSIC.md` | RECORD | frozen record | — | — |  |
+| `TABLE_HISTORY.txt` | RECORD | frozen record | — | c54.62 |  |
 | `THE_ASSUMPTIONS_RETREATED_UPWARD.md` | RECORD | The c54.114–c54.153 capstone — 14 results that stand, 13 withdrawn, and the pattern the withdrawals make (the assumption kept retreating upward). READ BEFORE REOPENING FRONT #1. | c54.153 | c54.162 |  |
 | `THE_CONSOLIDATION_LEDGER.md` | RECORD | frozen record | — | — |  |
 | `TRAIL_AUDIT_c54.134.md` | RECORD | (declared in frontmatter) | c54.134 | c54.134 |  |
@@ -235,8 +236,6 @@ sources: [chat]
 | `c22_keepers.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
 | `gate_notes_bead_audit.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
 | `lapse_shift_synchrony_reconciliation.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
-| `LATENT_HISTORY.txt` | UNCLASSIFIED |  | — | c54.209 |  |
-| `TABLE_HISTORY.txt` | UNCLASSIFIED |  | — | c54.62 |  |
 
 > **⚠ THE LAG COLUMN IS A LOOK-SIGNAL, NOT A VERDICT.** *It reads the newest fork revision the file mentions, which any mention satisfies — a document can be made to look current by writing ABOUT the fork. **`declared current` is the honest column**, set only by the pass that actually brings a file current. And a forward document is ahead of the corpus by construction: "stale" is a word for the corpus, never for the instrument examining it.*
 
