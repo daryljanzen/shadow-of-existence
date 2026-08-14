@@ -93,11 +93,13 @@ def main():
           and 'separated triple of lines at transverse radius' in allp)
 
     # ⓷ the second result is genuinely absent
-    for probe in ('0 of 36', 'null-inert', '36 pairs'):
-        check(f'⓷ and the null-connectivity result is absent: "{probe}" appears nowhere',
-              probe not in allp)
-    check('with P03_slate_worked cited zero times',
-          'P03_slate_worked' not in allp)
+    # ** r2722, cc54's c54.213: *** the half this receipt found REAL was banked into P3 at
+    # r2706.  An absence receipt that fails because its finding was acted on is a SUCCESS --
+    # so this converts to a REGRESSION GUARD on the filling. ***
+    check('✔ ⓷ and the half that WAS real is now FILLED (r2706): P3 carries the null connectivity '
+          '-- "no null pair among the thirty-six" -- and cites its receipt',
+          'no' in allp and 'null pair among the thirty-six' in allp
+          and 'P03_slate_worked' in allp)
 
     print()
     if FAILED:

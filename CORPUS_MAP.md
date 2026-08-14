@@ -146,6 +146,27 @@ sources: [cowork, chat]
 
 
 
+### Revision r2722 — 2026-08-11 (main line). **ALL SIX CONVERTED — 74/74 session receipts green on main.**
+
+**⌗ r2721 NAMED SIX AND STOPPED.** *Naming without finishing is the pattern being called out all session, so they
+are done.*
+
+    STRUCK-TAG lookup (3)   T1, C12, C14 -- `startswith('| **PO-12**')` raises StopIteration the
+                            moment the row closes; widened to accept `~~**PO-12**~~`
+    absence acted on (3)    S6 ("never restates the two halves", filled r2684); B21 ("never names
+                            the three levels", filled r2683); A6 ("null-inert appears nowhere",
+                            banked into P3 at r2706)
+
+⇒ ***Each of the second kind converted to a **regression guard on the FILLING**, naming the revision that did it —
+cc54's c54.213 principle applied rather than quoted.***
+
+⌗ *And `B21` needed a second pass: the guard probed for `"level (1)"` while the row says **"(1) skeleton
+grounded"**. **A guard written from memory of the row rather than from the row is a new absence assertion.***
+
+**⛭ THE RULE:** ***a stale receipt is a record whose finding was acted on, and the repair is to guard the filling,
+not to delete the record. But write the guard against what the corpus SAYS, not what you remember writing — the
+second is how the stale assertion got there in the first place.***
+
 ### Revision r2721 — 2026-08-11 (main line). **MAIN WAS COMPLETE AND NOT COHERENT — 8 of 74 session receipts stale.**
 
 **⌗ COMPLETE, VERIFIED:** *`line/54`, `line/56` and cc54's branch all show **0 commits not on main**.*

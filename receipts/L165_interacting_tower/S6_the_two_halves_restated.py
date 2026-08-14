@@ -85,8 +85,12 @@ def main():
                       ('r2677', 'the counterterm basis is one-dimensional; the LAYER runs')):
         check(f'⛭⛭ HALF TWO, {rev}: {what}', rev in po6)
 
-    check('⛔ and the row never restates the two halves against any of them',
-          'HALF ONE' not in po6 and 'half one' not in po6)
+        # ** r2722, cc54's c54.213: *** an absence receipt that FAILS because its finding was acted
+        # on is a SUCCESS -- flipping the comparison would throw that away.  Converted to a
+        # REGRESSION GUARD on the FILLING, naming the revision that did it. ***
+    check('✔ FILLED r2684 -- the row now restates both halves, and the guard is that it keeps doing '
+          'so: HALF ONE and HALF TWO are both named',
+          ('HALF ONE' in po6 or 'HALF ①' in po6) and ('HALF TWO' in po6 or 'HALF ②' in po6))
 
     print()
     if FAILED:

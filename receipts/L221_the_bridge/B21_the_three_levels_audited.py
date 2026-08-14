@@ -78,9 +78,14 @@ def main():
                       ('r2632', 'level (3): P14 exhibits the structural map')):
         check(f'⓶ {rev} is in the row -- {what}', rev in po2)
 
-    check('⛔ but the row never names the three levels alongside them, so it reads as four independent '
-          'findings rather than a level-by-level state change',
-          'skeleton grounded' not in po2)
+        # ** r2722, cc54's c54.213: *** an absence receipt that FAILS because its finding was acted
+        # on is a SUCCESS -- flipping the comparison would throw that away.  Converted to a
+        # REGRESSION GUARD on the FILLING, naming the revision that did it. ***
+    check('✔ FILLED r2683 -- the row now names the three levels, and the guard is that it keeps '
+          'doing so',
+          '(1) skeleton grounded' in po2 and '(2) resemblance do-not-assert' in po2
+          and '(3) identification walled' in po2
+          and 'THE STATE NOW' in po2.upper())
 
     print()
     if FAILED:

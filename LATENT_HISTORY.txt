@@ -161,3 +161,4 @@ r2718  COMPUTED    PO-4s gap is CARDINALITY: order 4 against a continuum. PO-5s 
 r2719  COMPUTED    the reference is F3, not CAMB -- BIC uses only differences, so the instrument floor cancels
 r2720  INSTRUMENT  merged cc54s branch -- L-813 was never on main; I built r2719 on their REPORT, not their commit
 r2721  INSTRUMENT  main verified coherent: 74 session receipts run, 8 stale, 5 repaired, 6 remain (one class)
+r2722  INSTRUMENT  all six remaining stale receipts converted -- 74/74 of this sessions receipts green on main

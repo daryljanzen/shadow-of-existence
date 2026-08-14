@@ -65,9 +65,12 @@ def main():
     print('  C14 -- can PO-10 be produced without PO-12?')
     print()
     p15 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')))
+        # ** r2722: a STRUCK row's tag is `~~**PO-12**~~`.  *** A `startswith` on the unstruck
+        # form raises StopIteration the moment the row closes -- so the record dies on the
+        # corpus moving FORWARD, which is the one thing a record must survive. ***
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
-    po10 = next(l for l in raw.split('\n') if l.startswith('| **PO-10**'))
-    po12 = next(l for l in raw.split('\n') if l.startswith('| **PO-12**'))
+    po10 = next(l for l in raw.split('\n') if re.match(r'\|\s*~*\*\*PO-10\*\*', l))
+    po12 = next(l for l in raw.split('\n') if re.match(r'\|\s*~*\*\*PO-12\*\*', l))
 
     # ⓵ what PO-10 still owes
     check('⓵ PO-10 owes the height PATTERN: "knowing $R_b$ and where it acts is not the same as '

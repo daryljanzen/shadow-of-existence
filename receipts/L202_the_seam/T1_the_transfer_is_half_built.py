@@ -70,8 +70,11 @@ def main():
     print()
     p15 = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
                                    encoding='utf-8', errors='replace').read())
+        # ** r2722: a STRUCK row's tag is `~~**PO-12**~~`.  *** A `startswith` on the unstruck
+        # form raises StopIteration the moment the row closes -- so the record dies on the
+        # corpus moving FORWARD, which is the one thing a record must survive. ***
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
-    row = next(l for l in raw.split('\n') if l.startswith('| **PO-12**'))
+    row = next(l for l in raw.split('\n') if re.match(r'\|\s*~*\*\*PO-12\*\*', l))
 
     # ⓵ two steps
     check('⓵ the paper states the debt as TWO steps: "it requires first specifying how the fluctuations '

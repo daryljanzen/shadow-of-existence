@@ -70,8 +70,11 @@ def main():
     print()
     print("  C11 -- does PO-10's odd/even half already have a receipt?")
     print()
+        # ** r2722: a STRUCK row's tag is `~~**PO-12**~~`.  *** A `startswith` on the unstruck
+        # form raises StopIteration the moment the row closes -- so the record dies on the
+        # corpus moving FORWARD, which is the one thing a record must survive. ***
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
-    row = next(l for l in raw.split('\n') if l.startswith('| **PO-10**'))
+    row = next(l for l in raw.split('\n') if re.match(r'\|\s*~*\*\*PO-10\*\*', l))
     p15 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')))
     c5b = glob.glob(os.path.join(ROOT, 'receipts', '**', 'C5b_baryon_term.py'), recursive=True)
 
