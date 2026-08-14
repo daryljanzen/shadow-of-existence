@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2734 — 2026-08-11 (main line). **THE OPERATIVE ASSESSMENT r2733 OWED — no strike, and a wall's reason withdrawn.**
+
+**⌗ THE PROMPT.** *"Is there a landing strike or something still owed? You need to be assessing that operatively."
+r2733 stated a finding and stopped. **A finding is not an assessment.***
+
+**① NO STRIKE OWED ON `PO-4`.** *Against the kill-receipt checks: **② is NOT excluded** — the enumeration exhausted
+what the SUBSTRATE supplies, not what exists — and **④ clears for a narrowing, not a closure**. The row stays open;
+r2733 is a **bounded negative**, which is the node's to write.*
+
+**⛭⛭ ② AND IT TOUCHES `PO-5`.** *r2667 walled the holonomy route as giving "only phases". **A flat connection's
+holonomy is a homomorphism $\pi_1\to G$, and boundedness depends ENTIRELY on $G$.***
+
+    U(1)      compact      |hol| = 1 always
+    SU(2)     compact      unitary, bounded
+    SL(2,R)   NON-COMPACT  n-fold loop at unit rapidity:  1.65 -> 4.48 -> 20.09 -> 148.41
+
+⇒ ***And r2733 established the corpus's own candidate one-parameter subgroup generates exactly $SL(2,\mathbb R)$.
+So "only phases" is a fact about COMPACT groups quoted as though it were a fact about flat connections — and on this
+corpus's own candidate it is FALSE.***
+
+**⛔ ③ AND YET THE WALL STANDS.** *$F$ is identically zero, so there is still no $F^2$ term — which r2729 established
+is the whole of the wall. **Unbounded holonomy is not a force. What changes is the REASON, not the verdict.***
+
+**⛭ THE RULE:** ***a finding is owed an operative assessment in the same turn — does it strike, does it ungate, does
+it correct a stated reason elsewhere? And check the REASONS other rows rest on, not only their verdicts: a wall
+resting on a reason narrower than its verdict will be argued around the first time someone notices, and it survives
+audit because the verdict is right.***
+
 ### Revision r2733 — 2026-08-11 (main line). **`PO-4`'s SEARCH RUN — the parameter exists and has the wrong SIGNATURE.**
 
 **⌗ THE AVOIDANCE, CLOSED.** *r2718 said the row "owes a source for a one-parameter subgroup" and this line moved
