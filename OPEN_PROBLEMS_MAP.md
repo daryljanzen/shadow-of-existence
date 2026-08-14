@@ -1,9 +1,37 @@
 ---
 name: open-problems-map
 kind: STATE
-current: r2727+c54.213
+current: r2765+c54.218
 job: The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open
 ---
+
+## ⛭⛭⛭ THE r2730–r2765 ARC — three rows shrank, one reopened, and every remainder is now a named object
+
+**THE BOARD AS IT STANDS.** *Seven open. `PO-2` and `PO-7` gated — **and both gates are now IN THE REGISTER**,
+where until r2735 they lived only in `scripts/stamp.py`'s dict.*
+
+    PO-4    two absent su(2) directions.  r2733: the corpus supplies ONE continuous parameter and it is
+            a RAPIDITY -- continuous, diagonal, non-unitary.  SL(2,R), not SU(2).  cc54 c54.218: <T,w> =
+            N(T) is dimension 1 against 3.  ** The row needs a COMPACT direction and signature is not
+            something a construction can be talked into. **
+    PO-5    whether any construction yields a FIXED PURE NUMBER.  Both sides bounded: no F^2 term to put
+            a coefficient in front of (r2729), and no free number to be the coefficient (c54.216 +
+            r2742, the ledger branch settled across three papers).
+    PO-6    the second-order shear basis.  ** The ordering question DISSOLVED at r2763 ** -- P10 gives
+            deficiency indices (1,1) independently of ordering.  cc54's L-818 settles the running layer
+            coefficient-independently, and r2764 locates its boundary AT THE SHEAR.
+    PO-10   parked with cc54 on a resource wall: the banked spectra fail the instrument's own sampling
+            guard (r2762), and the extension to ell=2508 OOMs at the NK the guard requires.
+    PO-11   REOPENED r2739.  P14: "what that supplies is the radial continuum and NOT the sector."  The
+            geometric half of the join is DONE and was cited to the wrong two papers (r2745).
+
+**⛭⛭ WHAT CHANGED IN KIND, not just in count.** *Every remaining item names an object rather than a search.
+`PO-4` needs a compact generator; `PO-5` needs a construction yielding one number; `PO-6` needs a basis at second
+order in a computed deficit; `PO-11` needs a mode matching across a locus **the geometry already crosses**.*
+
+**⌗ AND THE COUNT WENT UP TWICE, HONESTLY.** *`PO-10` reopened at r2730 on its own kill receipt's finding;
+`PO-11` at r2739 on P14's own sentence. **A falling table count was the reward signal r2730 removed from the
+stamp** — and the two reopenings are what that removal was for.*
 
 ## ⛭⛭⛭ BROUGHT CURRENT r2727 — the table is FIVE, and three rows were struck since r2601
 

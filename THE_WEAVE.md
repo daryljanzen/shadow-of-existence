@@ -1,12 +1,36 @@
 ---
 name: the-weave
 kind: STATE
-current: r2727+c54.213
+current: r2765+c54.218
 current: r2713+c54.215
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
 
-> ## ⛭⛭⛭ BROUGHT GENUINELY CURRENT r2728 — and the first fix is that this file said TWO lines while there are THREE
+> ## ⛭⛭⛭ r2765 — THE THREE STRANDS MET ON ONE OBJECT, FROM THREE DIRECTIONS
+
+**WHAT THE ARC ACTUALLY DEMONSTRATED.** *`PO-6` has two declared halves (r2684). They were worked independently by
+two nodes who did not coordinate on them — and they converged:*
+
+    cc54 c54.215 / L-818   the counterterm half: the degeneracy is CONFORMAL FLATNESS, and the
+                           one-constant ledger survives on the running layer, coefficient-independently
+    56   r2743             the halves MEET AT THE SHEAR: C^2 = 4 sigma^2 + O(sigma^4), and P10 names
+                           the tower as the TRANSVERSE-TRACELESS graviton modes -- so THE TOWER IS THE SHEAR
+    P10  (56 r2763/r2764)  "the definition of the interacting tower --- the standard problem of the
+                           interacting theory"
+
+⇒ ***cc54's honest caveat ("the back-reacting sector stays untouched"), 56's shear finding, and P10's open item are
+**one boundary named three ways**. Neither node was looking for the other's result.***
+
+**⛭⛭ AND THAT IS WHAT THE WEAVE IS FOR.** *Not that the parts agree — that **each node meets rows it did not
+write**, which is §116's cold-read condition. r2731 claimed this apparatus lacked that seat and r2737 withdrew the
+claim: **the register IS the cold read**, and `c54.214`'s catch of an avoidance in 56's `PO-11` strike proved it
+inside a day.*
+
+⌗ ***Measured across this arc: cc54 corrected 56 at r2736 (twice), r2739 and r2758; 56 corrected cc54's stale
+prose at r2760 and its `r2674` ID collision at r2765. **Correction ran both ways, which is the only evidence that
+matters for whether three strands are one object.****
+
+## ⛭⛭⛭ BROUGHT GENUINELY CURRENT r2728 — and the first fix is that this file said TWO lines while there are THREE
 
 **⛔ WHAT WAS STALE, AND IT WAS LOAD-BEARING.** *This file has said since r2440: "the parts are now one
 object across **TWO WORKING LINES IN ONE REPOSITORY**", with the routing convention "the fork owns the

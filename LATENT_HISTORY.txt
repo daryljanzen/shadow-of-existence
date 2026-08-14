@@ -218,3 +218,4 @@ r2761  COMPUTED    the thirty dropped bins are ell 1759-2508 -- the damping tail
 r2762  COMPUTED    the banked spectra FAIL the instruments own sampling guard -- 2.5 pts/period. Extension OOMs.
 r2763  LATENT      PO-6s ordering question DISSOLVES -- P10: indices (1,1) independent of ordering, coeff <= 1/4
 r2764  COMPUTED    cc54s L-818 boundary IS r2743s shear IS P10s tower -- three statements, one object
+r2765  LATENT      L-818 merged (6/6). Restamped from r2674 -- a live ID collision. OPEN_PROBLEMS_MAP and THE_WEAVE rewritten.

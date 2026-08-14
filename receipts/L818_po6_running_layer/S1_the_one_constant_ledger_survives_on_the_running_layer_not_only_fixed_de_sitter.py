@@ -79,7 +79,7 @@ coefficient-independent regardless.
 (L-165), the residue S50 named. Companion to L-816 (fixed de Sitter). Informs L-165. Does NOT convert
 PO-6, and does NOT enter the quantised-background sector. **
 
-Written r2674 (cc54, L-818). Asserts against the FLRW curvature algebra and the cited one-loop graviton
+Written r2765 (cc54, L-818). Asserts against the FLRW curvature algebra and the cited one-loop graviton
 divergence -- never the register. 't Hooft & Veltman, Ann. IHP A20 (1974) 69; Gilkey, J. Diff. Geom. 10
 (1975) 601; Christensen & Duff, Nucl. Phys. B170 (1980) 480; Deser & van Nieuwenhuizen, Phys. Rev. D10
 (1974) 401. Stated for reversal.
