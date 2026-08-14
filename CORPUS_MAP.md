@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2747 — 2026-08-11 (main line). **`PO-10`'s DERIVED LIST READ — half the row's remaining debt cleared.**
+
+**⌗ SIZED FIRST.** *Of the five workable rows, **`PO-10` is the only one whose remaining work is entirely READS** —
+`PO-6` and `PO-11` are calculations, `PO-4` and `PO-5` are constructions.*
+
+**⛭⛭ THE LIST, from P15's own marker language — four pairs, each with the paper's own accuracy clause:**
+
+    theta_*   = D_M/r_s = 302.2  against the measured 301
+    r_s       = 146.4 Mpc        against 145.4, "within 0.7% of each other"
+    1+z_eq    = 3399             "a consequence and a check, NOT AN INPUT"
+    eta       = 1.99 at 1.6 eV   "the quoted datum, TO ONE PER CENT"
+
+⌗ ***The fourth was not in r2746's draft. Searching by the paper's MARKER PHRASES rather than by the quantities
+expected surfaced one this line did not know was there.***
+
+**⇒ AND THE EXCLUSIONS ARE THE PAPER'S OWN SENTENCES:** *$\Omega_m$ "the single CMB-calibrated"; $A_s$ "inherits
+rather than predicts"; $N_{\rm eff}$ adopted.*
+⇒ ***The size question r2746 flagged is decided by READING rather than by CHOOSING — the only way it could have been
+decided honestly by the node that also wants the comparison to be large.***
+
+⌗ *The high-$\ell$ ratio is derived with **no measured partner** — a shape test, not a pair.*
+
+**⛭ THE RULE:** ***when a paper states a result, it usually states its own status in the same sentence — derived,
+fitted, adopted, inherited. **Search the STATUS MARKERS, not the quantities you expect**: the quantities you expect
+are a list of what you already thought; the markers are a list of what the paper actually claims.***
+
+⇒ *`PO-10` now owes **one item**: the published uncertainties for four measured values. **Data, and not this line's
+to invent.***
+
 ### Revision r2746 — 2026-08-11 (main line). **`PO-10`'s NON-FOREIGN COMPARISON — a score on DERIVATIONS, and a refusal to score it.**
 
 **⛭⛭ ⓵ A DERIVATION HAS NO $k$.** *r2726 left the row asking what comparison imports no foreign parameter vector.
