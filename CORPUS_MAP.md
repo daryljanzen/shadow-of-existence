@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2718 — 2026-08-11 (main line). **`PO-4`'s GAP IS A CARDINALITY GAP — and `PO-5`'s wall does not transfer.**
+
+**⛭⛭ ⓵ "ONE FACTOR SHORT" WAS TRUE AND UNINFORMATIVE.**
+
+    <i sigma_x>                       closes at ORDER 4        FINITE
+    exp(i theta sigma_z / 2)          distinct at every theta  CONTINUUM
+
+⇒ ***No product of reflections lands in the torus and no number of them approaches it. **The shortfall is not a
+missing construction but that a finite set cannot exhaust a continuum** — "extend the reflection" is provably
+impossible.***
+
+**⌗ ⓶ AND THE VOCABULARY CONFIRMS IT.** *`exponential map` and `one-parameter subgroup` at **ZERO** across papers
+and receipts, while `root system` (30), `Weyl group` (21) and `Lie algebra` (12) are present.*
+⇒ ***The corpus has the discrete half of Lie theory and not the continuous half — third instance in ten revisions
+of a missing tool showing up as a missing WORD.***
+
+**⛭ ⓷ AND `PO-5`'s WALL DOES NOT TRANSFER, which is worth stating because it looks as if it should.** *That wall
+turns on holonomy being **the complete invariant of a flat connection**. `PO-4`'s datum is a group **element**, not
+connection data — the flat-locus argument has nothing to bite on.*
+⇒ ***Same cardinality gap, different mechanism, and NO WALL.***
+
+**⛭⛭ THE RULE:** ***when two rows look like one problem, check whether the ARGUMENT that settles one reaches the
+other — not whether the SHAPE matches. `PO-4` and `PO-5` share a shape and share nothing else, and treating the wall
+as transferable would have closed a row that is genuinely open.***
+
+⇒ *What `PO-4` owes: **a source for a one-parameter subgroup** — something in the geometry supplying a continuous
+parameter that exponentiates into the Cartan direction.*
+
 ### Revision r2717 — 2026-08-11 (main line). **`PO-11` STRUCK — completeness FOLLOWS. Five open.**
 
 **⌗ "COMPLETENESS REMAINS" WAS A WORD, NOT A QUESTION.** *r2716 left it as "the physics question". It closes,

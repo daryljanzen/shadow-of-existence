@@ -125,7 +125,9 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2713   PO-6    L-543 WITHDRAWN -- misaimed. The real dark half is BACK-REACTION, P10s own limit.
     r2714   PO-11   the object EXISTS -- B3s superpotential gives RW partners vanishing at both horizons.
     r2715   ---     unmet.py built -- the dominant class made searchable. 3 citation gaps closed.
-    r2716   PO-11   CLAIMED: compute the spectrum. The object exists (r2714); this is the calculation.
+    r2716   PO-11   spectrum computed, unitarity to six figures.
+    r2717   PO-11   STRUCK -- completeness FOLLOWS from boundedness + exponential decay. Five open.
+    r2718   PO-4    CLAIMED: the U(1). Is continuous-from-discrete a named standard problem?
 
 ## ⓸ WHAT THIS LINE IS TAKING
 
