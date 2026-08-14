@@ -152,3 +152,4 @@ r2709  COMPUTED    half 1 is AIC/BIC: dAIC=10.0, dBIC=26.9 in CRs favour; the te
 r2710  COMPUTED    CR is k=2 not k=1 (A_s is anchored); threshold dBIC=21.5 against Jeffreys strong line of 6
 r2711  COMPUTED    PO-10 delivers a PAIR: the phase freedom is discrete, so k is unchanged and both branches report
 r2712  LATENT      PO-10 STRUCK -- its remainder is a procedure, not a question. Table 6, 82% cleared.
+r2713  COMPUTED    L-543 withdrawn -- aimed at a running background the free tower does not use

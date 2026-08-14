@@ -120,7 +120,9 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2704   ---     the frontier has TWO KINDS: 5 DEFINEDNESS, 2 PREDICTION. They fail differently.
     r2705   ---     triality test RUN. r2706: BOTH paper edits made directly. LEDGER 0, ROUTED 0.
     r2707   ---     diagnosis of the deadlock; check_routed_falsehood built.
-    r2708   PO-10   CLAIMED: is L-147s likelihood test the SAME OBJECT as PO-10s half 1?
+    r2708-11 PO-10   half 1 is model selection; k=2; threshold dBIC=21.5; deliverable is a PAIR.
+    r2712   PO-10   STRUCK -- remainder is a procedure. Table 6, 82%.
+    r2713   PO-6    CLAIMED: is L-543 aimed at the wrong background? r2691 says the tower sits on dS.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

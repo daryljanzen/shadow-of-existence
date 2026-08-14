@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2713 — 2026-08-11 (main line). **`L-543` WITHDRAWN — a withdrawal that reached the claim and not the successor it had spawned.**
+
+**⛔ THE CHAIN.** *r2677 wrote "the tower lives on the LAYER, whose $\sinh^{2/3}$ Ricci scalar RUNS" and
+**registered `L-543` on it**. r2691 withdrew that scope clause on cc54's c54.211. **But `L-543` was never
+revisited** — it sat in `PO-6`'s row for twenty revisions asking whether the basis survives "on a background whose
+curvature runs".*
+
+    P10's slicing  a = alpha cosh(T/alpha), k=+1  ->  R = 12/alpha^2      CONSTANT
+    P15's layer    a ~ sinh^(2/3)(3Ht/2), k=0     ->  runs, 12 H^2 late
+
+⌗ ***And the two constants are the SAME FORM — $12/\alpha^2$ and $12H^2$ are the de Sitter value with
+$H\to1/\alpha$. **The layer's late limit IS the tower's background**; it does not merely fail to be it, it
+asymptotes to it.***
+
+⇒⇒ ***So `L-543`'s question has no object: the free tower sits on constant curvature, where r2677's own
+computation already shows the degeneracy is exact.***
+
+**⌗ AND `PO-6`'s REAL DARK HALF IS THE ONE P10 STATES:** *not a running background but a **BACK-REACTING** one —
+"once the scale factor is itself quantized and back-reacts". A counterterm basis is a statement about a class of
+FIXED backgrounds, and in the coupled sector there is no such class to state it on.*
+
+**⛭ THE RULE:** ***when you withdraw a claim, withdraw what it SPAWNED. A retraction naturally reaches the sentence
+that was wrong; the registered successor, the routed item and the gate built on it are downstream and nothing points
+back at them — and a successor outlives its premise silently, because it reads as work rather than as a claim.***
+
 ### Revision r2712 — 2026-08-11 (main line). **`PO-10` STRUCK — its remainder is a procedure. Table 6, 82% cleared.**
 
 **⛔ THE SAME FAILURE AS r2702, NINE REVISIONS LATER.** *That revision's own rule: "**a finding that a row is
