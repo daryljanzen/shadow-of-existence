@@ -203,3 +203,4 @@ r2746  LATENT      PO-10s comparison is a SCORE ON DERIVATIONS -- no k to count.
 r2747  LATENT      PO-10s derived list READ -- four pairs, three exclusions, all P15s own words. One item left.
 r2748  LATENT      PO-10s first pair: take 301.76 from the receipt, not ~301 from the prose. Gap is 0.44 not 1.20.
 r2749  INSTRUMENT  a tilde on a SETTLED value is a stale hedge -- ~301 -> 301.76, ~8% -> 8.2% x9. r2748 got it backward.
+r2750  COMPUTED    the damping gap is x_e: C8s cancellation needs it identical, and a different H(a) changes the history
