@@ -538,6 +538,26 @@
 \emph{Computes:} asserts the rate, the 13\% and the factor-of-two clauses verbatim, computes the compounding, and flags the 0.813/0.823 near-coincidence as different-origin (7 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- an ESTIMATE with its model stated, labelled as one; a hierarchy run would replace it
 \ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C23\_the\_gap\_estimated.py}
+\item[\label{rcpt:C24_the_substitution_itemised}\texttt{C24\_the\_substitution\_itemised}]\hfill\textsf{[OK]}\\
+\textit{sec:instrument} \ (PO-12s substitution ITEMISED: conformal time, r\_s, the comoving horizon and the diffusion integral carry H while the Thomson rate and x\_e do not --- and the ratio does NOT cancel because r\_D carries a square root that r\_s does not). 
+\emph{Computes:} asserts the 13\% clause and reconstructs it from rho\_r/rho\_m=0.3, asserts the microphysics-outside and theta\_*-pinned clauses, and computes both scaling exponents (8 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- sets the bar for the two-leg run; P15s 9.4\% is not re-derived
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C24\_the\_substitution\_itemised.py}
+\item[\label{rcpt:C25_the_gap_closed_by_integration}\texttt{C25\_the\_gap\_closed\_by\_integration}]\hfill\textsf{[OK]}\\
+\textit{sec:diffusion-scale} \ (the 2.6-point gap closed by INTEGRATION: theta\_D/theta\_* runs +7.1\% at z=1200 to +14.4\% at z=10000, with P15s +9.4\% at z\textasciitilde{}2500 --- and the dependence is MONOTONIC, which is the papers own two-constraint argument). 
+\emph{Computes:} asserts the branch-point lower-limit clause and the single-datum clause verbatim, integrates the rate difference over five onset redshifts, and checks monotonicity (6 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- reproduces the papers shape on a simplified rho\_r/rho\_m model; the onset is the remaining unknown
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C25\_the\_gap\_closed\_by\_integration.py}
+\item[\label{rcpt:C26_the_onset_is_not_free}\texttt{C26\_the\_onset\_is\_not\_free}]\hfill\textsf{[OK]}\\
+\textit{sec:tensions} \ (PO-12s last free parameter is NOT free: the onset is fitted to the acoustic angle at z\textasciitilde{}6797 and meets the scale at every H\_0 --- and the residual +13.1\% vs +9.4\% is the WEIGHT g(R)/x\_e, not the onset). 
+\emph{Computes:} asserts the onset value, the fitted-to-the-acoustic-angle clause and the not-a-knob clause verbatim, checks the model at the onset, and integrates under four weightings (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- power-law weights are stand-ins for g(R)/x\_e, shown for direction and size
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C26\_the\_onset\_is\_not\_free.py}
+\item[\label{rcpt:C27_the_number_bracketed}\texttt{C27\_the\_number\_bracketed}]\hfill\textsf{[OK]}\\
+\textit{sec:envelope-consequence} \ (P15s +9.4\% BRACKETED from outside its own machinery: Saha +7.0\% < Peebles < unweighted +13.1\%, with the ordering FORCED by which history recombines faster --- and cancel identically covers the CONSTANTS, not the weight). 
+\emph{Computes:} asserts the cancel-identically, constants-outside and Peebles-history clauses verbatim, shows the weight does not drop out, runs g(R) with a Saha x\_e, and checks 9.4 lies strictly inside (8 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- brackets rather than reproduces; the Peebles direction is argued, not computed
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C27\_the\_number\_bracketed.py}
 \item[\label{rcpt:P03_acceleration_is_slice_curvature}\texttt{P03\_acceleration\_is\_slice\_curvature}]\hfill\textsf{[OK]}\\
 \textit{sec:curvature \ensuremath{\cdot} rem:twocritical \ensuremath{\cdot} the bend} \ (on ANY member of the energy family (E cancels: (dr/dtau)\textasciicircum{}2 = E\textasciicircum{}2 - f, and E is a constant of the motion) d\textasciicircum{}2r/dtau\textasciicircum{}2 = -f'/2 = r*K\_G identically, so THE SIGN OF THE SLICE'S GAUSSIAN CURVATURE IS THE SIGN OF THE COMOVING ACCELERATION -- and the flat locus is the deceleration-to-acceleration turnover, which on Nariai is the seam and in standard terms is rho\_m = 2 rho\_Lambda (csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2, the seam's phase). A recent cosmological epoch: 7.06 Gyr at H0=73, 7.65 at 67.4, preceding matter-Lambda equality [borrowed from P3 \ensuremath{\cdot} P7 \ensuremath{\cdot} P8]). 
 \emph{Computes:} the identity asserted; the K\_G zero solved and matched to (M alpha\textasciicircum{}2)\textasciicircum{}(1/3); csch\textasciicircum{}2 w = 2 <=> sinh w = 1/sqrt2 proved by algebra after simplify() failed on the closed forms; epochs at both H0
