@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
-"""S9 -- `PO-6`'s spectral question is decided by OPERATOR ORDERING, which P10 never names -- and the
+"""S9 -- ⛔ **CORRECTED r2763: THE ORDERING DOES NOT DECIDE IT.**  *** P10 states the deficiency
+indices are $(1,1)$ "independently of operator ordering", with the coefficient "attaining $\\le1/4$
+across the natural ordering family, strictly below the essential-self-adjointness threshold
+$3/4$".  **$3/4$ is the family's exclusive upper bound, not an attained value** -- so this
+receipt's symmetric branch is outside the family P10 means.  And the coupled straddle is closed
+"fibre by fibre" by the same thermal regularity.  See `S11_the_ordering_question_dissolves`.
+** What survives: the $3/4 = 1/4 + 1/2$ identity, and the observation that P10 names no
+ordering -- which turns out to be because it needs none. ** ***
+
+S9 -- `PO-6`'s spectral question is decided by OPERATOR ORDERING, which P10 never names -- and the
 threshold is the free coefficient plus exactly one zero-point quantum.
 
 ** WHY THIS EXISTS. **  r2723 established that `PO-6`'s remainder is not the floor but "** where

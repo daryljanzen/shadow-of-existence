@@ -14,7 +14,7 @@ sources: [chat]
 
 - [x] (416) PO-4: a COMPACT one-parameter subgroup, if one exists -- r2733 exhausted what the substrate supplies and found only a non-compact rapidity (SL(2,R))  -> DONE r2733/c54.218 — same gap as the two-absent-directions entry, stated twice
 - [x] (416) PO-5: where can a gauge connection on this substrate FAIL TO BE FLAT? -- r2729's restatement, never worked  -> DONE r2742
-- [ ] (416) PO-6: which OPERATOR ORDERING does the corpus commit to? r2728 computed both branches and the corpus fixes neither
+- [x] (416) PO-6: which OPERATOR ORDERING does the corpus commit to? r2728 computed both branches and the corpus fixes neither  -> DONE r2763 — dissolved: the corpus commits to none and needs none
 - [x] (416) PO-10: what would a comparison look like that does NOT import a parameter vector the corpus does not posit? -- r2726, asked nowhere yet  -> DONE r2746 — answered: a score on DERIVATIONS
 - [x] (416) P14 edit owed: the holonomy wall's stated reason ('only phases') is too narrow -- r2734 -- the paper still carries it  -> DONE r2735
 - [x] (416) WITHDRAWN r2735: the P14 edit is not owed -- P14 never said 'only phases'; the narrow reason was this line's, written into PO-5's row at r2666/r2667 and corrected there at r2734  -> DONE r2735

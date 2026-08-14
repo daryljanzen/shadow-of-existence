@@ -216,3 +216,4 @@ r2759  LATENT      PO-10 has a likelihood, not a lookup. The CONTROL arm fails c
 r2760  LATENT      the control is at 7.14 not ~100 -- the receipts F4 prose carried a floor that fell fourteen-fold
 r2761  COMPUTED    the thirty dropped bins are ell 1759-2508 -- the damping tail, where the signature is strongest
 r2762  COMPUTED    the banked spectra FAIL the instruments own sampling guard -- 2.5 pts/period. Extension OOMs.
+r2763  LATENT      PO-6s ordering question DISSOLVES -- P10: indices (1,1) independent of ordering, coeff <= 1/4

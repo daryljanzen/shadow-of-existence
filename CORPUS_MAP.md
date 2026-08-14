@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2763 — 2026-08-11 (main line). **`PO-6`'s ORDERING QUESTION DISSOLVES — P10 answers it and corrects r2728.**
+
+**⛔ ⓵ r2728 ASKED WHICH ORDERING THE CORPUS COMMITS TO.** *P10: the scale-factor Hamiltonian carries deficiency
+indices $(1,1)$ **"independently of operator ordering --- the inverse-square coefficient attaining $\le1/4$ across
+the natural ordering family, strictly below the essential-self-adjointness threshold $3/4$"**.*
+⇒ ***$3/4$ is the family's EXCLUSIVE UPPER BOUND, not an attained value. r2728's symmetric branch is outside the
+family P10 means, and the coefficient never crosses the threshold under any member.***
+
+⌗ ***And r2728 had already noticed the evidence and misread it: it recorded "P10 never names the ordering ---
+`normal-order` and `symmetric order` both ZERO" and treated that as a GAP. **It is a paper not naming a choice it
+does not need to make.****
+
+**⓶ P10 STATES THE CONSEQUENCE.** *"The ordering ambiguity **cannot render the quantization unique**; the residual
+reduces to the physical choice of that boundary condition"* — *which is then **closed without a free parameter** by
+the de Sitter horizon's Hartle–Hawking state selecting the Friedrichs extension.*
+
+**⛭⛭ ⓷ AND THE COUPLED STRADDLE IS ANSWERED IN THE SAME SENTENCE.** *"With the tower coupled … **the same thermal
+regularity supplies the condition fibre by fibre**, so that what remains open is not the boundary condition but
+**the definition of the interacting tower --- the standard problem of the interacting theory rather than a residual
+freedom in the quantization**."*
+
+⇒ ***So `PO-6`'s tower half owes the interacting tower, and P10 names that as the standard problem rather than a gap
+in this construction. `S9` corrected at source.***
+
+**⛭ THE RULE:** ***an absence in a paper has two readings — a gap, or a choice the construction does not need.
+**Before calling it a gap, search for the sentence that would make it the second**; a paper that has dissolved a
+question rarely mentions the question again, so grepping for the missing term will keep returning zero.***
+
 ### Revision r2762 — 2026-08-11 (main line). **THE BANKED SPECTRA FAIL THE INSTRUMENT'S OWN SAMPLING GUARD.**
 
 **⌗ THE ATTEMPT.** *r2761's blocker looked like a parameter — `ACOUSTIC_two_arm.py` takes `LMAXL` from the
