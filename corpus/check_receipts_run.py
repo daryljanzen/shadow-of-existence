@@ -41,11 +41,21 @@ exclusion is DECLARED here rather than inferred from an error string.
 
 Written r2394.  Stated for reversal.
 """
-import os, re, sys, subprocess
+import glob, hashlib, os, re, sys, subprocess
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..'))
 RESULT = os.path.join(ROOT, 'receipts', 'RUN_RESULT.txt')
+
+
+def tree_digest():
+    """The same digest `scripts/run_all_receipts.py` stamps: everything a receipt can READ."""
+    h = hashlib.sha256()
+    for pat in ('corpus/*.tex', 'receipts/**/*.py', 'computations/**/*.py'):
+        for f in sorted(glob.glob(os.path.join(ROOT, pat), recursive=True)):
+            h.update(os.path.relpath(f, ROOT).encode())
+            h.update(open(f, 'rb').read())
+    return h.hexdigest()[:16]
 
 # Declared, not inferred: the receipts this container cannot run, and what each needs.
 UNRUNNABLE = {
@@ -103,6 +113,32 @@ def main():
         return rc
 
     res = open(RESULT, encoding='utf-8', errors='replace').read()
+
+    # ------------------------------------------------------------------ r2656+c54.208
+    # ** THE CACHE HAD NO EXPIRY, AND A CACHE WITH NO EXPIRY IS NOT A MEASUREMENT. **
+    # The file this gate reads was written at r2419 and was still being read as current at
+    # r2656 -- 294 commits and 160 registered receipts later.  It said "no receipt fails for a
+    # reason inside the corpus"; a live run of the corpus-reading receipts found 24 that did,
+    # several falsified by the very revisions that filled the absences they assert.
+    #   ⇒ *** The gate was green because it was OLD, which is the direction that looks like
+    #       success -- the fourth instrument this session to report LOW. ***
+    # The fix is not a date: it is a digest of everything a receipt can READ.  It goes stale
+    # exactly when a paper or a receipt changes, and at no other time.
+    stamp = re.search(r'TREE-DIGEST:\s*([0-9a-f]{8,})', res)
+    if not stamp:
+        print('  ⛔ [FAIL] the runner result carries NO TREE-DIGEST, so nothing says which tree it')
+        print('     ran against.  Re-run it: `python3 corpus/check_receipts_run.py --how`.')
+        print('     ** A cached verdict that cannot be dated is a verdict about an unknown tree. **')
+        return 1
+    now = tree_digest()
+    if stamp.group(1) != now:
+        print(f'  ⛔ [FAIL] STALE RESULT.  The cached run is against tree {stamp.group(1)}; the tree')
+        print(f'     is now {now}.  A paper or a receipt has changed since, which is exactly when a')
+        print('     source check can have gone stale -- so the cached verdict says nothing.')
+        print('     Re-run: `python3 corpus/check_receipts_run.py --how`  (~9 min, detached).')
+        return 1
+    print(f'  result is against the current tree ({now}) -- not a cached verdict about an older one')
+
     m = re.search(r'(\d+) pass, (\d+) fail, (\d+) over timeout, in (\d+)s', res)
     if not m:
         print('  [FAIL] the runner result file has no verdict line -- it may have been truncated.')

@@ -1,9 +1,53 @@
 ---
 name: the-mathematics-reach
 kind: STATE
-current: r2517+c54.201
+current: r2656+c54.208
 job: The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. ⛭ ALL FIVE STATIONS WALKED r2490–r2493 — and Ⓒ, Ⓖ, Ⓗ CONVERGED on one knot: which order-six group acts. See the block below. Registered as L-203. ⛭ **Ⓕ IS WALKED — `F13` (node 55, verified r2442) settled it, and it is FOUR real forms of $\mathfrak{so}(6,\mathbb C)$, not two: $\mathfrak{su}(3)$ embeds in exactly ONE, the compact form. This frontmatter carried Ⓕ as owed for forty-eight revisions after its own ① block recorded the answer.**
 sources: [cowork]
+---
+
+## ⛭⛭⛭ TWO FIELDS THREW BACK A *NEGATIVE* AND IT WAS THE SAME NEGATIVE — added c54.208
+
+*This theatre sifts what BITES. c54.207 threw two fields at `PO-5` and one at `PO-9`, and what came back is worth
+recording here precisely because **two of the three bit on nothing, and bit on nothing for a reason that is itself
+mathematics**.*
+
+**⌗ Ⓘ HOMOLOGICAL ALGEBRA — and it does not reach, by an identity rather than by absence.** *The route was "a
+complex whose degree is the grading." A complex needs a differential: ODD for the grading, with $d^2=0$.*
+*· ODD is available — $\{\gamma^\mu,\gamma^5\}=0$, so $D$ is odd;*
+*· **NILPOTENT is not, and the obstruction is what a Clifford module IS**: $D(p)^2=p^2\cdot\mathbb 1$ — an odd
+operator on a Clifford module squares to **the metric**, not to zero.*
+⇒ ***Zero one of the two maps and the two-term complex that remains has $\ker\oplus\operatorname{coker}$ for its
+cohomology — the graded index. **On a $\mathbb{Z}_2$ grading, cohomology IS the kernel route.****
+⌗ ***And that EXPLAINS an absence this theatre had noticed and not accounted for**: the corpus carries no
+differential, no complex, no characteristic class, no exact sequence anywhere in seventeen papers — including the
+Lie algebroid paper, where Chevalley--Eilenberg cohomology is the natural object.* ⇒ **Not an oversight. On a
+two-term grading there is nothing for a complex to be.**
+
+**⌗ Ⓙ FINITE-GROUP REPRESENTATION THEORY — it reaches, and what it reaches is a ceiling.** *$R$ **grades** the
+chirality eigenspaces rather than **exchanging** them (P13's own sentence, written for another purpose), and a
+$\mathbb{Z}_2$ that fixes rather than pairs contributes a character and no dimension.* ⇒ *The residue's own
+ceiling, solved from the class equation rather than quoted: $D_6=S_3\times\mathbb{Z}_2$ has irreducible dimensions
+$1,1,2$ twice over.* ⇒⇒ ***MAX MULTIPLET = 2.*** ⌗ *And the spectral route lands on the same number: the angular
+spectrum is uniformly spaced so no band is canonical, but $\lambda=0$ is excluded by the construction, so the
+lowest rung is — and its multiplicity is $2\lvert\lambda\rvert=2$.*
+⇒ ***THREE ROUTES OFF THE GRADING, THREE DIFFERENT FAILURES, ONE NUMBER. The obstruction is the SIZE OF THE
+DISCRETE RESIDUE and not the choice of bridge.*** *(`L-534`.)*
+
+**⌗ Ⓚ PROJECTIVE / QUADRIC GEOMETRY at `PO-9` — this one bit, and gave a mechanism where there had been an
+absence.** *A plane section $\{X:\eta(n,X)=c\}$ of a $\mathrm{dS}_D$ of radius $\alpha$ returns $\mathrm{dS}_{D-1}$
+of radius $\sqrt{\alpha^2-c^2}$, for every admissible $n$ — checked at $D=5,6,7,8$. The normal is gauge (the
+isometry group is transitive on unit spacelike normals); the offset enters only through the scale; and the scale
+map has **rank 1** over two choices, so the tower carries a **one-parameter fibre no cut can resolve**.*
+⇒ ***So Rule 2 neither forbids a second slicing step nor forces one — it EMPTIES it, and the substrate's dimension
+is unbounded above because nothing below can see the difference.*** *(`L-533`.)*
+
+⚠ **THE METHOD NOTE THIS THEATRE SHOULD CARRY, because it is about throwing fields rather than about any one
+field.** *Ⓘ is the more instructive of the three: **a field that reaches nothing can still deliver a theorem**, and
+the theorem here — cohomology collapses to the index on a two-term grading — is what turns "we have no
+differential" from a gap into a consequence.* ⇒ ***A station that bites on nothing is not a station that returned
+nothing.***
+
 ---
 
 ## ⛭⛭⛭ ALL FIVE STATIONS WALKED r2490–r2493 — AND THREE OF THEM CONVERGED ON ONE KNOT

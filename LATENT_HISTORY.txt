@@ -99,3 +99,4 @@ r2666  LATENT      [reclassified r2667: P14 states this directly -- derivation i
 r2667  LATENT      P14 walls holonomy AND isometry; 41.2 decades verified; no third mechanism named
 r2668  INSTRUMENT  family 6 stale AGAIN (PO-4 -> PO-11); the new gate found family 5 stale too (PO-7 -> PO-10)
 r2669  COMPUTED    leaf vs tortoise: both finite at r=0, tortoise log-divergent at the horizons only
+c54.208  INSTRUMENT  ran r2656's own rule against myself: L-535 is one instance not a class, and the control found check_receipts_run green on a 294-commit-old cache while 23 receipts fail

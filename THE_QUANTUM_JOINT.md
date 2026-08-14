@@ -1,9 +1,41 @@
 ---
 name: the-quantum-joint
 kind: STATE
-current: r2517+c54.201
+current: r2656+c54.208
 job: The QM sketchpad — a NOTEBOOK, not a ledger: draw the pipe-extensions as far as the evidence suggests, run the rigour alongside as the eraser and not the doorman. Nothing here is a banked corpus result. Register: cluster-J germs were struck c54.117; the quantum tower is L-165 = PO-6.
 sources: [cowork]
+---
+
+## ⛭⛭⛭ THE JOINT'S OTHER SIDE NOW HAS A NUMBER, AND IT IS A NUMBER THE LEDGER ALREADY HELD — added c54.208
+
+*The joint is where $\hbar$ enters: through the de Sitter horizon's Gibbons--Hawking state, $\beta=2\pi\alpha$.*
+⇒ **c54.207 took the quantity on the OTHER side of that horizon, which the corpus had never taken — its
+entropy** — *and the result belongs on this page because it bears on `PO-6`'s dark half rather than on the
+tower.*
+
+$$S=\frac{A}{4\ell_P^{2}}=\pi\Bigl(\frac{\alpha}{\ell_P}\Bigr)^{2}=\frac{3\pi}{\Lambda\ell_P^{2}}\approx3\times10^{122}$$
+
+**⌗ AND THE TWO REGISTERS ARE WHY IT IS WORTH DRAWING HERE.** *$T=1/2\pi\alpha$ depends on $\alpha$ **alone** —
+one register, the real-geometric one, with the thermal gauge setting only the unit. $S$ is a ratio of $\alpha$ to
+$\ell_P$ and is therefore a count taken **across** p0's register split.*
+⇒ ***So the corpus takes the one-register thermodynamic quantity and never the cross-register one — and the
+cross-register one is exactly what would TEST the one-constant ledger.***
+
+**⛭⛭ WHAT IT RETURNS IS THE LEDGER'S OWN NUMBER BACK.** *The cosmological-constant problem's factor is
+$\rho_{\rm vac}/\rho_\Lambda\sim8\pi/(\Lambda\ell_P^{2})$; the entropy is $3\pi/(\Lambda\ell_P^{2})$.*
+⇒ ***They differ by $3/8$ and by nothing else — both are $1/(\Lambda\ell_P^{2})$, so the two $10^{122}$'s are ONE
+dimensionless combination and not a coincidence of size.***
+⇒⇒ **Horizon thermodynamics adds no new scale, and p0's existing dissolution of the fine-tuning is already the
+dissolution of the entropy's number.**
+
+⚠ **AND WHAT IS NOT DRAWN, because this page erases freely and should say what it has not drawn.** *Whether
+$S=A/4$ carries to a cosmological horizon **on this reading** is not settled — p0 states the number if the standard
+expression is taken and declines the expression's applicability.* ⇒ ***If the entropy CANNOT be taken, saying why
+is a result: a one-scale ledger forbidding a thermodynamic relation rather than merely accommodating one. That is
+the live sketch here, and it is `PO-6`'s dark half approached from the thermodynamic side rather than the tower's.***
+⌗ *Receipt: `P17_geometric_core_paper/P17_the_ds_entropy_is_the_gauge_count_squared_and_is_the_cc_number`; lead
+`L-532`.*
+
 ---
 
 ## ⛭⛭ PO-6's UV CLAUSE NOW HAS A DEGREE AND A SHAPE — added r2475
