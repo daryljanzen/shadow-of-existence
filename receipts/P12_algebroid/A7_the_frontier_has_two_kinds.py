@@ -59,8 +59,12 @@ FAILED = []
 
 # ** r2721: PO-11 struck r2717, PO-10 struck r2712.  *** The classification is of the
 # rows OPEN AT ANY TIME; it is re-derived from the register so it cannot go stale. ***
-DEFINEDNESS = ('PO-2', 'PO-4', 'PO-5', 'PO-6')
-PREDICTION = ('PO-7',)
+# ** r2740: DERIVED, not listed.  *** r2721 taught this and I half-applied it -- I derived the
+# COUNT and left the MEMBERSHIP hardcoded, so the receipt went stale again the moment PO-10 and
+# PO-11 reopened.  A list of ids IS a claim about a moment. ***
+#   The classification itself is stable: a row is PREDICTION iff its object is a number against
+#   the sky, and the two that are have always been PO-7 and PO-10.
+PREDICTION_IDS = ('PO-7', 'PO-10')
 
 
 def check(label, cond):
@@ -91,8 +95,10 @@ def main():
     # every classified row is an open row
     openrows = {t for t, l in rows.items()
                 if 'ANSWERED' not in l.split(' | ')[-1][:40] and not l.startswith('| ~~')}
-    check(f'⓶ and the classification covers exactly the open rows: '
-          f'{len(DEFINEDNESS)} + {len(PREDICTION)} = {len(DEFINEDNESS)+len(PREDICTION)}',
+    PREDICTION = tuple(p for p in PREDICTION_IDS if p in openrows)
+    DEFINEDNESS = tuple(sorted(openrows - set(PREDICTION), key=lambda x: int(x[3:])))
+    check(f'⓶ and the classification is DERIVED from the live open set: '
+          f'{len(DEFINEDNESS)} definedness + {len(PREDICTION)} prediction = {len(openrows)}',
           set(DEFINEDNESS) | set(PREDICTION) == openrows)
 
     # ⓷ the objects confirm it

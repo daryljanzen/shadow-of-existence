@@ -84,16 +84,25 @@ def main():
                     # ** r2721: C33 and C35 were written ON this finding and now name the terms.
                     # *** A survey must exclude the work its own finding PRODUCED, not only
                     #     itself -- otherwise acting on a result erases the record of it. ***
-                    and 'C33_the_threshold_corrected' not in f
-                    and 'C35_the_reference_is_F3' not in f)
+                    )
+    # ** r2740: the C33/C35 exclusions REMOVED.  *** They were right while this receipt asserted
+    # an ABSENCE -- a survey must not count the work its own finding produced.  They are exactly
+    # backwards now that it guards the FILLING: excluding the receipts that filled the gap means
+    # the guard can never see it filled. ***  A conversion has to revisit the exclusions the
+    # original needed, or it inherits a scope built for the opposite claim.
     both = papers + ' ' + recs
 
     # ⓵ the corpus names the target
     check('⓵ P15 names the target: "the likelihood-level model selection"',
           'likelihood-level model selection' in re.sub(r'\s+', ' ', papers))
-    for term in ('AIC', 'BIC', 'Akaike', 'Occam', 'Bayes factor'):
-        check(f'⛔ but "{term}" appears ZERO times across all papers and receipts (word-boundary)',
-              len(re.findall(r'\b' + re.escape(term) + r'\b', both)) == 0)
+    # ** r2740, cc54's c54.213 principle: an absence receipt that fails because its finding was
+    # ACTED ON is a SUCCESS.  This receipt's finding WAS the absence, and r2709-r2711 filled it
+    # -- so the exclusion list grew with each new receipt and was never going to hold.
+    #   *** Converted to a REGRESSION GUARD on the filling: the corpus now HAS the vocabulary,
+    #   and what matters is that it keeps it. ***
+    check('and the vocabulary gap this receipt found is FILLED: r2709-r2711 brought the criterion '
+          'into the corpus, so "BIC" and "AIC" are now present where they were absent',
+          len(re.findall(r'\bBIC\b', both)) > 0 and len(re.findall(r'\bAIC\b', both)) > 0)
 
     # ⓶ the penalty
     N = 215

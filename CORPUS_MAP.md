@@ -146,6 +146,29 @@ sources: [cowork, chat]
 
 
 
+### Revision r2740 — 2026-08-11 (main line). **cc54's `FOR_56` 25–35 READ — and a red gate was reporting a strike, not a pointer.**
+
+**⛭⛭ ITEM 27, and it resolved without a pointer edit.** *`check_family_pointers` was red because `PO-10`'s strike
+orphaned family 5: the gate reads objects only from UNSTRUCK rows, so striking `PO-10` — whose object is literally
+"the scalar perturbation sector's stated remainder" — left `PO-7` as family 5's only live target, sharing no content
+word with it.*
+⇒ ***Reopening `PO-10` at r2730, on its own kill receipt's finding, turned the gate green. **The pointer had been
+right and the strike had been wrong**, and cc54's "second stated remedy not implemented" is moot — the remedy was
+never the fix.***
+
+**⛭ THE RULE:** ***when a pointer breaks after a strike, suspect the strike. A reference correct for four revisions
+that broke on a verdict is evidence about the verdict — and repairing the pointer would have papered over what the
+pointer was reporting.***
+
+**⌗ AND TWO STALE RECEIPTS, both this line's, both the same lesson twice over.**
+*`A7` — r2721 taught "derive the count"; **this line derived the COUNT and left the MEMBERSHIP hardcoded**, so it
+went stale the moment two rows reopened. Now derived from the live open set.*
+*`C32` — converting an absence receipt to a filling guard, it **inherited the exclusions the ABSENCE version
+needed**: it excluded exactly the receipts that filled the gap. **A conversion must revisit the scope the original
+required, or it carries a scope built for the opposite claim.***
+
+    ALL GATES GREEN · seven open · WORKABLE: PO-4, PO-5, PO-6, PO-10, PO-11 · GATED: PO-2, PO-7
+
 ### Revision r2739 — 2026-08-11 (main line). **`PO-11` REOPENED — P14 distinguishes the radial continuum from the sector.**
 
 **⛔ THE STRIKE WAS WRONG, AND THE PAPER SAYS SO IN THE PASSAGE IT WAS BUILT ON.** *r2717 struck the row on object
