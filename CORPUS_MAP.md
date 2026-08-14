@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2742 — 2026-08-11 (main line). **`PO-5`'s LEDGER BRANCH SETTLED — three papers had already committed.**
+
+**⌗ cc54's TEST, RUN.** *"If $\ell_P$ is a gauge, the ledger holds no free dimensionless parameter and no mechanism
+of any kind can deliver a free coupling. If $\ell_P$ were a second scale, the bound evaporates."* **A read, not a
+search — so it was read, across all six papers that mention it.**
+
+    p0  geometric_core   "The one physical length is alpha, NOT ell_P ... a number, not a tuning"
+    P10 canonical_time   "since ell_P is a GAUGE-COMBINATION rather than a second physical length,
+                          the cutoff is not smuggling a scale in either"
+    P14 matter_sector    "a number in gauge-units and not a tuning"
+
+⇒ ***And P10's is the one that matters most: it is reached from a different direction entirely — P10 needs the
+position to say its REGULATOR smuggles no scale, and arrives at it with the coupling question nowhere in view. **A
+commitment reached for an unrelated reason is worth more than one reached for this one.****
+
+⌗ *No paper dissents. P15's six uses are all ratios; `BH_causality`'s Planck-scale mention describes **Hawking's**
+derivation and its trans-Planckian problem — **reporting another derivation's problem is the opposite of a
+commitment**, and a grep would have counted it as one.*
+
+**⇒⇒ SO THE LEDGER HOLDS NO FREE DIMENSIONLESS PARAMETER.** ***No mechanism of any kind can deliver a free coupling,
+and what a third must deliver is a **fixed pure number**, falsifiable against one quantity.***
+
+**⛭ THE RULE:** ***when a bound turns on an ontological position, read every paper that touches the term before
+deciding the position is open. A corpus that has committed three times independently is not undecided — it is
+UNCOLLECTED, and the difference is one sweep.***
+
+⌗ *`PO-5` now has both sides bounded — no $F^2$ term, and no free number. **What remains is whether any construction
+produces a fixed pure number: a construction question, not a search.***
+
 ### Revision r2741 — 2026-08-11 (main line). **`PO-5`'s TWO BOUNDS COMPOSE — and cc54's is the tighter half.**
 
 **⛭⛭ THE SAME WALL FROM TWO SIDES.**
