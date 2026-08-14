@@ -127,8 +127,18 @@ def main():
     allp = ' '.join(re.sub(r'\s+', ' ', '\n'.join(
         l for l in open(g, encoding='utf-8', errors='replace').read().split('\n')
         if not l.lstrip().startswith('%'))) for g in papers)
-    check('⚠ and the debt stays visible: "trans-Planckian" is still at ZERO uses -- one companion of '
-          'three addressed', len(re.findall('trans-Planckian', allp, re.I)) == 0)
+    # ------------------------------------------------------------------ c54.213, `L-546`
+    # ⛭⛭ ** AN ABSENCE RECEIPT THAT FAILS BECAUSE ITS FINDING WAS ACTED ON IS A SUCCESS. **  Flipping
+    # the comparison would throw that away and leave the file asserting a gap that a later revision
+    # deliberately closed.  ** Converted to the REGRESSION GUARD on the filling, with the revision
+    # that did it named, so the receipt now protects the answer instead of restating the question. **
+    check('⛭ and the debt is DISCHARGED: "trans-Planckian" was at ZERO uses when this receipt was '
+          'written and is in print now -- c54.207 (`L-531`) wrote the scoping into P1, finite at each '
+          'finite exterior time and NOT uniformly bounded.  Regression guard on that clause',
+          len(re.findall('trans-Planckian', allp, re.I)) > 0)
+    check('⌗ and the SCOPE went in with it, which is the whole content of that clause -- without the '
+          'non-boundedness the paragraph would be an overclaim wearing a result\'s clothes',
+          re.search(r'not that the blueshift is\s+bounded', allp, re.I) is not None)
 
     print()
     if FAILED:

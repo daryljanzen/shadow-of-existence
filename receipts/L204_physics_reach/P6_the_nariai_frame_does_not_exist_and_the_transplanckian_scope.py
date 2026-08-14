@@ -122,9 +122,21 @@ def main():
     allp = ' '.join(re.sub(r'\s+', ' ', '\n'.join(
         l for l in open(p, encoding='utf-8', errors='replace').read().split('\n')
         if not l.lstrip().startswith('%'))) for p in papers)
+    # ------------------------------------------------------------------ c54.213, `L-546`
+    # ** THIS CHECK WAS A PROXY AND THE PROXY BROKE WHILE ITS SUBJECT DID NOT. **
+    # It measured the phrase 'expectation value' as a stand-in for <T_mu_nu>.  c54.203 wrote, in p0
+    # and about the HIGGS, "the vacuum expectation value, the electroweak scale and the individual
+    # masses stay the ordinary route" -- so the proxy went non-zero on a sentence with no bearing on
+    # the stress tensor at all, and this receipt began failing for a reason it is not about.
+    #   ⇒ *** THE ABSENCE IT CARES ABOUT HAS NOT ENDED.  Narrowed to the subject: the stress tensor
+    #       as an expectation value, in any of the spellings the corpus would use. ***
+    _tmn = sum(len(re.findall(pat, allp))
+               for pat in (r'\\langle T_\{?\\mu\\nu\}?\\rangle', r'\\langle T_\{ab\}\\rangle',
+                           r'expectation value of the stress', r'stress-tensor expectation'))
     check('⌗ and <T_mu_nu> as an expectation value remains at ZERO uses -- two companions of three now '
-          'have something said, the third does not',
-          len(re.findall(r'expectation value', allp, re.I)) == 0)
+          'have something said, the third does not  (narrowed c54.213: the old proxy `expectation '
+          'value` was ended by a HIGGS vev sentence, not by anything about the stress tensor)',
+          _tmn == 0)
 
     print()
     if FAILED:

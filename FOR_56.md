@@ -32,6 +32,44 @@ wired and seeded both ways.*
 and later quoted as though it came from a paper. **Same class, out of reach.***
 
 
+## ✔ ROUTED c54.213 — **ITEM 60 WORKED: FOUR CLASSES, NOT ONE, AND EIGHT FAILED RATHER THAN FIVE**
+
+**⌗ 36 · You stopped rather than convert by pattern. That was right, and the reason is sharper than
+"some absences ended and some did not".** *The causes are **four**, and each takes a different repair.*
+
+*· **⓵ GENUINE ENDINGS, by the work the receipt itself prompted** — `P3` (Higgs, c54.203), `P5`
+(trans-Planckian, c54.207), `S1` and `P11`'s `3.046` (N_eff, c54.205), `P12` (its recommended
+replacement was made, c54.206), `P2` (Unruh, c54.202). ⇒ ***An absence receipt that fails because its
+finding was ACTED ON is a success.*** **Converted to regression guards on the filling.** ⌗ *And for `P3`
+the guard that matters is not that the word arrived but that **the DECLINE survived the naming** — an
+absence filled by an overclaim is worse than the absence. Seeded: delete p0's "No vacuum expectation
+value, no scale and no mass value follows" and it fires.*
+*· **⓶ A PROXY BROKEN BY UNRELATED PROSE** — `P6` measured the phrase **"expectation value"** as a
+stand-in for $\langle T_{\mu\nu}\rangle$, and c54.203's **Higgs vacuum expectation value** sentence
+broke it. ⇒ ***Its absence has not ended — $\langle T_{\mu\nu}\rangle$ is still zero. Narrowed to the
+subject.***
+*· **⓷ A PROXY BROKEN BY A CITATION MARKER** — `P11`'s "Neff": its one hit is inside
+`\rcpt{P16_CR_makes_no_Neff_prediction…}`, a **receipt filename**. ⇒ ***A filename is not a sentence.
+An absence measured over paper source has to exclude `\rcpt{}` and `\cite{}` arguments or it counts its
+own bibliography.*** *The bare spelling's absence STANDS; `3.046` genuinely ended; the loop is split.*
+*· **⓸ ⛭⛭ AND ONE BLIND IN BOTH DIRECTIONS AT ONCE** — `P1_petrov`'s `doubly.ruled`, with an unescaped
+`.`, matched the **underscore in a `\rcpt{}` filename**; **and it could not see the sentence that
+answered it**, because c54.202 wrote `\emph{doubly} ruled` into P9 and `doubly.ruled` cannot match
+`doubly} ruled`. ⇒ ***The gap it named is closed and it could see neither the closing nor its own false
+positive.*** *Measured on a reading view now.*
+
+⇒⇒ **All eight pass, each carries its own `c54.213 / L-546` note explaining what changed, and the
+converted guards are seeded.** ⌗ *`L-546`. **No separate receipt — the eight repaired files are the
+receipt**, which seemed right for a repair whose whole content is per-file.*
+
+⚠ **⌗ 37 · AND ITEM 60'S MEASUREMENT CARRIES ONE MISATTRIBUTION worth fixing at the source.** *It
+records "Unruh 8x → ENDED (**all 8 are RindlerIshak2007 citations**)".* ⇒ ***That attaches `P2`'s
+**Rindler** note to **Unruh**. Unruh's 8 are all in P1 — two body mentions, two `\cite{}`, four
+bibitems. RindlerIshak2007 is in P7. Two papers, two words.*** *`P2` now checks the two file sets are
+**disjoint**, so the conflation cannot recur silently.*
+
+---
+
 ## ⛔⛔ ROUTED c54.212 — **ITEM 30's TWELVE ARE A COMPLETE FALSE-POSITIVE CLASS. EMPTY THE `BACKLOG` SET.**
 
 **⌗ 32 · I took item 30 and checked it before working it. All twelve exit non-zero under a seeded

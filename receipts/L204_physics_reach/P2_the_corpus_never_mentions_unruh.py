@@ -144,17 +144,49 @@ def main():
     # cosmological-constant lensing.  ** ZERO Rindler HORIZONS. **  Measured that way instead. **
     # ** two forms: the citation key RindlerIshak2007 and the bibliography's "W.~Rindler". **
     rind_author = len(re.findall(r'RindlerIshak|W\.~Rindler', allp))
-    check(f'⛔ AND Rindler appears {counts["Rindler"]} times -- ALL of them RindlerIshak2007, Rindler '
-          'the AUTHOR on lensing.  ZERO Rindler HORIZONS',
-          counts['Rindler'] == rind_author and rind_author > 0)
-    check('⛔ AND Unruh: ZERO', counts['Unruh'] == 0)
+    # ------------------------------------------------------------------ c54.213, `L-546`
+    # ⛭⛭ ** THIS RECEIPT'S FINDING WAS ACTED ON THREE TIMES OVER, AND ONE OF ITS LINES WAS MISREAD
+    # DOWNSTREAM. **  It found Unruh, the Rindler HORIZON and trans-Planckian all at zero while the
+    # corpus argued about when a thermal spectrum arises.  c54.202 (`L-518`) wrote the Unruh treatment
+    # and the four-horizon sorting into P1; c54.207 (`L-531`) wrote the trans-Planckian scoping.
+    #   ⚠ ** AND THE MISREADING: ** `FOR_54` item 60 (r2682) records "Unruh 8x -> ENDED (all 8 are
+    #   RindlerIshak2007 citations)".  *** That attaches THIS check's RINDLER note to UNRUH.  Unruh's
+    #   8 are all in P1 -- two body mentions, two \cite{}, four bibitems -- and RindlerIshak2007 lives
+    #   in P7, a different paper. ***  Measured below rather than argued.
+    _prose = re.sub(r'\\(?:rcpt|cite)\{[^}]*\}', '', allp)
+    _unruh_files, _ishak_files = set(), set()
+    for _p in P:
+        _t = open(_p, encoding='utf-8', errors='replace').read()
+        if 'Unruh' in _t:
+            _unruh_files.add(os.path.basename(_p))
+        if 'RindlerIshak' in _t:
+            _ishak_files.add(os.path.basename(_p))
+    _rh_prose = len(re.findall('Rindler horizon', _prose))
+    check(f'⛭ AND Rindler now splits TWO WAYS, where it did not: {rind_author} are RindlerIshak2007 -- '
+          f'Rindler the AUTHOR, on lensing, in P7 -- and the rest are the Rindler HORIZON in P1, '
+          f'{_rh_prose} of them in prose once `\\rcpt{{}}`/`\\cite{{}}` arguments are excluded.  At ZERO '
+          'when this receipt was written; supplied at c54.202',
+          rind_author > 0 and _rh_prose > 0)
+    check('⚠ ⌗ AND THE LINE ABOVE IS THE ONE `FOR_54` item 60 MISREAD: it records "Unruh 8x -> ENDED '
+          '(all 8 are RindlerIshak2007 citations)", attaching THIS check\'s Rindler note to Unruh.  '
+          'Unruh\'s uses are all in P1; RindlerIshak2007 is in P7.  Two papers, two words',
+          counts['Unruh'] > 0 and _unruh_files.isdisjoint(_ishak_files)
+          and _unruh_files and _ishak_files)
+    check(f'⛭ AND Unruh is NAMED now ({counts["Unruh"]} uses, all in P1) -- at ZERO when this receipt '
+          'was written, supplied at c54.202.  Regression guard on that treatment',
+          counts['Unruh'] > 0)
+    check('⌗ and the Unruh case kept the job it was written for: COMPLETION, not observer-dependence, '
+          'is what sorts the four horizons -- the sorting is the content',
+          'completion sorts all four' in allp)
     check('⛔ AND "stress tensor": ZERO -- the central object of QFT in curved space',
           counts['stress tensor'] == 0)
-    check('⛔ AND "trans-Planckian": ZERO -- the standard objection to any Hawking derivation',
-          counts['trans-Planckian'] == 0)
-    check('⇒⇒ SO A CORPUS THAT MENTIONS HAWKING NINETY-FOUR TIMES AND UNRUH ZERO TIMES, WHILE ARGUING '
-          'ABOUT WHEN A THERMAL SPECTRUM ARISES, HAS AN UNADDRESSED FIRST QUESTION',
-          counts['Hawking'] > 50 and counts['Unruh'] == 0)
+    check('⛭ AND "trans-Planckian" is in print -- at ZERO when this receipt was written, supplied at '
+          'c54.207 WITH its scoping, which is the whole content of that clause',
+          counts['trans-Planckian'] > 0)
+    check('⇒⇒ THE UNADDRESSED FIRST QUESTION IS ADDRESSED: the corpus mentions Hawking '
+          f'{counts["Hawking"]} times and Unruh {counts["Unruh"]}, and the Unruh case is now the one '
+          'that fixes the criterion rather than the one nobody had asked',
+          counts['Hawking'] > 50 and counts['Unruh'] > 0)
 
     # ⓶ and why the argument survives
     check('⌗ and the argument SURVIVES the test, because it is already the COMPLETION argument: the '

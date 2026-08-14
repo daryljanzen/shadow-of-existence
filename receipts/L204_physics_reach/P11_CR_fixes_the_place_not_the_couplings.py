@@ -124,10 +124,24 @@ def main():
     check('⇒ so the N_eff stance sits under an EXISTING trip-wire rather than a new one',
           'F1' in arc)
 
-    # and cc54's measurement stands
-    for k in ('Neff', '3.046'):
-        check(f'⌗ and cc54\'s measurement stands: "{k}" is still at ZERO across the papers',
-              len(re.findall(re.escape(k), allp)) == 0)
+    # ------------------------------------------------------------------ c54.213, `L-546`
+    # ** TWO TERMS, TWO DIFFERENT FATES, AND THE OLD LOOP TREATED THEM AS ONE. **
+    #   · `3.046` -- ** the absence GENUINELY ENDED ** at c54.205 (`L-527`), which named N_eff in P16
+    #     with its provenance.  A receipt whose finding was ACTED ON should record that, not assert
+    #     the gap is still open.
+    #   · `Neff` -- ** the absence STANDS. **  Its one apparent hit is inside
+    #     `\\rcpt{P16_CR_makes_no_Neff_prediction_because_it_fixes_a_place_and_not_a_coupling}` -- a
+    #     RECEIPT FILENAME, not prose.  *** A citation marker is not a sentence, and an absence
+    #     measured over paper source has to exclude `\\rcpt{}` and `\\cite{}` arguments or it counts
+    #     its own bibliography. ***
+    _prose = re.sub(r'\\(?:rcpt|cite)\{[^}]*\}', '', allp)
+    check('⌗ and cc54\'s measurement stands for the BARE spelling: "Neff" is still at ZERO in the '
+          'papers\' prose  (c54.213: excluding \\rcpt{} and \\cite{} arguments -- the one apparent '
+          'hit is a receipt FILENAME)',
+          len(re.findall('Neff', _prose)) == 0)
+    check('⛭ and "3.046" is NO LONGER at zero -- the absence ENDED at c54.205 (`L-527`), which named '
+          'N_eff in P16 with its provenance.  This check is now the REGRESSION GUARD on that filling',
+          len(re.findall(re.escape('3.046'), allp)) > 0)
 
     print()
     if FAILED:

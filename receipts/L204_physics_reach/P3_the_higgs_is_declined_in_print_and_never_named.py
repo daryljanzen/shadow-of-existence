@@ -107,7 +107,14 @@ def main():
           f'hypercharge {have["hypercharge"]}, anomaly {have["anomaly"]}, electroweak '
           f'{have["electroweak"]}, Yukawa {have["Yukawa"]}',
           have['SU(3)'] > 50 and have['hypercharge'] > 5 and have['electroweak'] > 5)
-    for k, v in zero.items():
+    # c54.213, `L-546`: `Higgs` and `vacuum expectation` are NO LONGER at zero -- c54.203 (`L-521`)
+    # named the mechanism in p0.  `spontaneous` and `Goldstone` still are, and that split is the
+    # point: ** the absence ended for two terms and stands for two, so one loop cannot cover it. **
+    _ended = {k: v for k, v in zero.items() if k in ('Higgs', 'vacuum expectation')}
+    for k, v in _ended.items():
+        check(f'⛭ and "{k}" is NO LONGER at zero ({v} uses) -- supplied at c54.203; regression guard',
+              v > 0)
+    for k, v in {k: v for k, v in zero.items() if k not in _ended}.items():
         check(f'⛔ and "{k}" appears ZERO times across all {len(P)} papers', v == 0)
 
     # ⓶ but it is principled and stated
@@ -117,20 +124,32 @@ def main():
     check('and P0 (geometric core) states it: a geometric origin for the gauge content or the masses '
           'is NOT claimed -- "those are walled and electroweak"',
           'walled and electroweak' in p0)
-    check('⇒ SO THE CORPUS DECLINES THE MAGNITUDES DELIBERATELY AND SAYS SO IN PRINT -- it simply '
-          'never NAMES the mechanism it declines',
+    # ------------------------------------------------------------------ c54.213, `L-546`
+    # ⛭⛭ ** BOTH OF THIS RECEIPT'S FINDINGS WERE ACTED ON, AND THE RISK IN THAT IS THE OPPOSITE ONE. **
+    # It found (a) the Higgs declined in print and never NAMED, and (b) Unruh never mentioned at all.
+    # c54.203 (`L-521`) named the Higgs in p0; c54.202 (`L-518`) wrote the Unruh treatment into P1.
+    #   ⇒ *** So the checks below are inverted deliberately -- but the guard that matters is NOT that
+    #       the words arrived.  ** It is that NAMING did not become CLAIMING. **  An absence filled by
+    #       an overclaim is worse than the absence, so the decline is asserted alongside the name. ***
+    check('⇒ SO THE CORPUS DECLINES THE MAGNITUDES DELIBERATELY AND SAYS SO IN PRINT -- and c54.203 '
+          'supplied the missing word, so it now names the mechanism it declines',
           'the value stays the ordinary route' in p6 and 'walled and electroweak' in p0
-          and zero['Higgs'] == 0)
+          and zero['Higgs'] > 0)
+    check('⛔ AND THE DECLINE SURVIVED THE NAMING, which is the thing worth guarding: p0 still refuses '
+          'the vacuum expectation value, the electroweak scale and the mass values',
+          re.search(r'No vacuum expectation value, no scale and no mass value follows', p0) is not None)
 
     # ⓷ the contrast with station ⑤
-    check('⌗ and that is a DIFFERENT kind of owe from station ⑤: Unruh is a case the argument must '
-          'SURVIVE and never mentions, so its treatment must be written',
-          len(re.findall('Unruh', allp, re.I)) == 0)
-    check('while the Higgs is a thing the papers explicitly DECLINE and do not name -- the argument is '
-          'complete and only the word is missing',
-          'walled and electroweak' in p0 and zero['Higgs'] == 0)
-    check('⇒ but not nothing: a reader searching "Higgs" gets zero hits and cannot distinguish '
-          '"considered and declined" from "not considered"', zero['Higgs'] == 0)
+    check('⌗ and that is a DIFFERENT kind of owe from station ⑤: Unruh was a case the argument must '
+          'SURVIVE and never mentioned -- ⛭ and c54.202 wrote its treatment, so this is now the '
+          'regression guard on that',
+          len(re.findall('Unruh', allp, re.I)) > 0)
+    check('⌗ and the Unruh treatment kept the criterion it was written to establish -- COMPLETION, not '
+          'observer-dependence, is what sorts the four horizons',
+          'completion sorts all four' in allp)
+    check('⇒ and the thing this receipt was FOR is done: a reader searching "Higgs" no longer gets '
+          'zero hits, so "considered and declined" is now distinguishable from "not considered"',
+          zero['Higgs'] > 0)
 
     # ⓸ the corpus already holds the sentence
     check('⌗ and the relation is WORKED OUT in CR_AND_THE_HIGGS.md §4: "CR is a SELECTION-RULE theory; '
@@ -138,9 +157,10 @@ def main():
           'CR is a \\emph{selection-rule}' in higgs_doc or 'SELECTION-RULE' in higgs_doc.upper())
     check("with CR's own one-constant theorem saying it cannot supply the strengths",
           'one-constant theorem' in higgs_doc)
-    check('⇒⇒ SO THE CORPUS HAS THE ANSWER AND HAS NEVER PUT IT IN A PAPER -- a one-clause fix, and it '
-          "discharges L-217's live half",
-          zero['Higgs'] == 0 and 'one-constant theorem' in higgs_doc)
+    check('⇒⇒ AND THE ANSWER IS IN A PAPER NOW -- the one-clause fix this receipt asked for was made '
+          "at c54.203, discharging L-217's live half.  The ledger's own sentence must still be there "
+          'for the paper clause to be the application it claims to be',
+          zero['Higgs'] > 0 and 'one-constant theorem' in higgs_doc)
 
     print()
     if FAILED:

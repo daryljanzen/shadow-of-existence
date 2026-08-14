@@ -2238,11 +2238,6 @@
 \emph{Computes:} asserts the horn-swap and right-handed-pair clauses verbatim, and computes both Z\_2 embeddings adjoint actions on sigma\_z and sigma\_x (7 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- characterises a gap; whether P14s T realises the Weyl element is not read here
 \ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B19\_the\_swap\_is\_the\_weyl\_z2\_not\_the\_centre.py}
-\item[\label{rcpt:S50_the_counterterm_basis_is_one_dimensional_because_the_background_family_is}\texttt{S50\_the\_counterterm\_basis\_is\_one\_dimensional\_because\_the\_background\_family\_is}]\hfill\textsf{[OK]}\\
-\textit{sec:deparam} \ (**`PO-6`'s UV HALF: THE COUNTERTERM BASIS IS ONE-DIMENSIONAL BECAUSE THE ADMITTED BACKGROUND FAMILY IS.** Every curvature invariant on a maximally symmetric background is a pure power of \$1/\textbackslash\{\}alpha\textasciicircum{}2\$, and the substrates form a one-parameter family, so a divergence of any degree needs exactly one counterterm --- which the framework carries.  Scoped: the tower lives on the layer, whose \$R\$ runs. Lead `L-543`; VEIN `L-165`). 
-\emph{Computes:} computes the quadratic invariants at \$D=4,5,6\$ and pins their \$\textbackslash\{\}alpha\$-exponent at exactly 4; five standing-sentence checks (p0's invariant fact, p0's foliation, `L-533`'s scale-only descent); computes the \$\textbackslash\{\}sinh\textasciicircum{}\{2/3\}\$ layer's Ricci scalar and asserts it NON-constant with a \$12H\textasciicircum{}2\$ late limit; and counts `counterterm` in P10 from git HEAD (0) against now (7)
- \emph{Bound:} LATENT, and an ASSEMBLY not a discovery. NOT claimed: that `PO-6` closes, that the sub-leading divergences vanish, that this is renormalisability, or that the layer breaks it --- **that is the question**
-\ \emph{Run:} \texttt{python3 receipts/L165\_defining\_the\_sum/S50\_the\_counterterm\_basis\_is\_one\_dimensional\_because\_the\_background\_family\_is.py}
 \item[\label{rcpt:S5_the_counterterm_degeneracy_verified}\texttt{S5\_the\_counterterm\_degeneracy\_verified}]\hfill\textsf{[OK]}\\
 \textit{sec:counterterm} \ (c54.210 RE-DERIVED: at D=4,5,6 every quadratic invariant is a rational constant times alpha\textasciicircum{}-4, so four counterterms are one functional --- AND the layer Ricci scalar RUNS (divergent early, 12H\textasciicircum{}2 late), so the scope is necessary). 
 \emph{Computes:} asserts p0s pure-power clause and P10s banking, computes all three quadratic invariants at three dimensions, and computes the layers Ricci limits (8 checks)
@@ -2253,4 +2248,29 @@
 \emph{Computes:} asserts P14s unbanked three-routes statement verbatim, verifies the SU(3) centre is central against non-commuting generators and adjoint-trivial, and the SU(2) Weyl element is not (7 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- connects two rows; the three colour routes are P14s and are used, not re-proved
 \ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B20\_centre\_and\_weyl\_are\_opposite\_ends.py}
+\item[\label{rcpt:C24_the_substitution_itemised}\texttt{C24\_the\_substitution\_itemised}]\hfill\textsf{[OK]}\\
+\textit{sec:instrument} \ (PO-12s substitution ITEMISED: conformal time, r\_s, the comoving horizon and the diffusion integral carry H while the Thomson rate and x\_e do not --- and the ratio does NOT cancel because r\_D carries a square root that r\_s does not). 
+\emph{Computes:} asserts the 13\% clause and reconstructs it from rho\_r/rho\_m=0.3, asserts the microphysics-outside and theta\_*-pinned clauses, and computes both scaling exponents (8 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- sets the bar for the two-leg run; P15s 9.4\% is not re-derived
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C24\_the\_substitution\_itemised.py}
+\item[\label{rcpt:C25_the_gap_closed_by_integration}\texttt{C25\_the\_gap\_closed\_by\_integration}]\hfill\textsf{[OK]}\\
+\textit{sec:diffusion-scale} \ (the 2.6-point gap closed by INTEGRATION: theta\_D/theta\_* runs +7.1\% at z=1200 to +14.4\% at z=10000, with P15s +9.4\% at z\textasciitilde{}2500 --- and the dependence is MONOTONIC, which is the papers own two-constraint argument). 
+\emph{Computes:} asserts the branch-point lower-limit clause and the single-datum clause verbatim, integrates the rate difference over five onset redshifts, and checks monotonicity (6 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- reproduces the papers shape on a simplified rho\_r/rho\_m model; the onset is the remaining unknown
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C25\_the\_gap\_closed\_by\_integration.py}
+\item[\label{rcpt:C26_the_onset_is_not_free}\texttt{C26\_the\_onset\_is\_not\_free}]\hfill\textsf{[OK]}\\
+\textit{sec:tensions} \ (PO-12s last free parameter is NOT free: the onset is fitted to the acoustic angle at z\textasciitilde{}6797 and meets the scale at every H\_0 --- and the residual +13.1\% vs +9.4\% is the WEIGHT g(R)/x\_e, not the onset). 
+\emph{Computes:} asserts the onset value, the fitted-to-the-acoustic-angle clause and the not-a-knob clause verbatim, checks the model at the onset, and integrates under four weightings (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- power-law weights are stand-ins for g(R)/x\_e, shown for direction and size
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C26\_the\_onset\_is\_not\_free.py}
+\item[\label{rcpt:C27_the_number_bracketed}\texttt{C27\_the\_number\_bracketed}]\hfill\textsf{[OK]}\\
+\textit{sec:envelope-consequence} \ (P15s +9.4\% BRACKETED from outside its own machinery: Saha +7.0\% < Peebles < unweighted +13.1\%, with the ordering FORCED by which history recombines faster --- and cancel identically covers the CONSTANTS, not the weight). 
+\emph{Computes:} asserts the cancel-identically, constants-outside and Peebles-history clauses verbatim, shows the weight does not drop out, runs g(R) with a Saha x\_e, and checks 9.4 lies strictly inside (8 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- brackets rather than reproduces; the Peebles direction is argued, not computed
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C27\_the\_number\_bracketed.py}
+\item[\label{rcpt:S50_the_counterterm_basis_is_one_dimensional_because_the_background_family_is}\texttt{S50\_the\_counterterm\_basis\_is\_one\_dimensional\_because\_the\_background\_family\_is}]\hfill\textsf{[OK]}\\
+\textit{sec:deparam} \ (**`PO-6`'s UV HALF: THE COUNTERTERM BASIS IS ONE-DIMENSIONAL BECAUSE THE ADMITTED BACKGROUND FAMILY IS.** Every curvature invariant on a maximally symmetric background is a pure power of \$1/\textbackslash\{\}alpha\textasciicircum{}2\$, and the substrates form a one-parameter family, so a divergence of any degree needs exactly one counterterm --- which the framework carries.  Scoped: the tower lives on the layer, whose \$R\$ runs. Lead `L-543`; VEIN `L-165`). 
+\emph{Computes:}  **AMENDED c54.211 (`L-544`): c54.210's SCOPE IS WITHDRAWN.** It put P15's observable rate where P10's slicing belongs; P10's own \$a(T)=\textbackslash\{\}alpha\textbackslash\{\}cosh(T/\textbackslash\{\}alpha)\$ has \$R=12/\textbackslash\{\}alpha\textasciicircum{}2\$ CONSTANT, so the degeneracy holds on the tower's own background and the result is STRONGER than claimed. The real limit is the coupled sector, where the scale factor is quantized and there is no fixed background. Both geometries computed side by side so the error stays checkable. --- computes the quadratic invariants at \$D=4,5,6\$ and pins their \$\textbackslash\{\}alpha\$-exponent at exactly 4; five standing-sentence checks (p0's invariant fact, p0's foliation, `L-533`'s scale-only descent); computes the \$\textbackslash\{\}sinh\textasciicircum{}\{2/3\}\$ layer's Ricci scalar and asserts it NON-constant with a \$12H\textasciicircum{}2\$ late limit; and counts `counterterm` in P10 from git HEAD (0) against now (7)
+ \emph{Bound:} LATENT, and an ASSEMBLY not a discovery. NOT claimed: that `PO-6` closes, that the sub-leading divergences vanish, that this is renormalisability, or that the layer breaks it --- **that is the question**
+\ \emph{Run:} \texttt{python3 receipts/L165\_defining\_the\_sum/S50\_the\_counterterm\_basis\_is\_one\_dimensional\_because\_the\_background\_family\_is.py}
 \end{description}\endgroup
