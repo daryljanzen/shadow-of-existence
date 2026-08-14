@@ -168,4 +168,4 @@ r2725  COMPUTED    L-814s number WITHDRAWN: not a matched comparison, n_s held. 
 r2726  INSTRUMENT  the root error: counting parameters in LCDMs ontology. check_foreign_ontology built.
 r2727  INSTRUMENT  cleanup: 4 COMPUTES scopes, 8 parked deferrals removed, map brought current. All gates green.
 r2728  INSTRUMENT  PO-6: ordering decides it -- normal gives 1/4 (below), symmetric gives 3/4. P10 names neither.
-r2729  COMPUTED    PO-5 is NOT unbounded: the two walls are one, and UNBOUNDED lived only in my own stamp
+r2729  LATENT      PO-5 is NOT unbounded: the two walls are one, and UNBOUNDED lived only in my own stamp
