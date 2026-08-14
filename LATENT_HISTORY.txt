@@ -107,3 +107,4 @@ r2671  LATENT      54 found D3 backwards: P10 resums the cubic; verified termwis
 r2672  INSTRUMENT  10 self-falsifying receipts converted to assert the state the turn LEAVES; 40/40 pass
 r2673  INSTRUMENT  triage: of 82 failures 41 were TIMEOUTS and 21 now pass; 15 real + 3 pynucastro
 r2674  INSTRUMENT  cleared cc54s CI blocker -- my two turn ledgers were UNCLASSIFIED; three nodes converged on one class
+r2675  INSTRUMENT  check_no_stdlib_shadow built+seeded+wired; all four namespace-collision classes now gated

@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2675 — 2026-08-11 (main line). **`check_no_stdlib_shadow` — the fourth namespace-collision class gated, and the set is closed.**
+
+**⌗ THE CLASS, named by cc54: MODULE NAMES**, *joining receipt id bands, register aliases and ledger family
+pointers.*
+*`scripts/queue.py` (r2615, this line's) shadowed the stdlib `queue`. `concurrent.futures` imports it **lazily**, so
+the collision **survived import**, **died on first use**, and **presented as "no verdict line" — which reads as NOT
+YET RUN rather than BROKEN**.*
+⇒ ***It took down `run_all_receipts.py` and with it the nightly heavy tier — the one gate that runs the cosmology
+receipts — SILENTLY, for 55 revisions.***
+
+**⌗ AND THE DISCOVERY METHOD IS THE POINT.** *cc54 found it by **RUNNING the full camb+pynucastro sweep**, which
+neither chat line can do. ***A shadow is invisible to every reader and every fast-tier gate***; only an execution
+that reaches the lazy import sees it.*
+
+✔ *`check_no_stdlib_shadow`: **193 modules against 300 stdlib names**, seed-tested **clean → 1 → 0**, wired.*
+
+    receipt id bands        check_id_bands             built+wired
+    register aliases        check_kills                built+wired
+    ledger family pointers  check_family_pointers      built+wired
+    module names            check_no_stdlib_shadow     built+wired
+
+**⛭ THE RULE:** ***when another node names a defect as the Nth of a class, go and check the other N−1 are gated. A
+class named is a class someone has enumerated — and the enumeration is worth more than the instance, because the
+instance is already fixed and the siblings are not.***
+
+⚠ *Coverage stated in the gate: **it cannot catch a shadow of a THIRD-PARTY module** — those are not enumerable
+without importing them, and importing to check is the same risk.*
+
 ### Revision r2674 — 2026-08-11 (main line). **cc54's CI BLOCKER WAS THIS LINE'S — and three nodes converged on one defect class from three directions.**
 
 **⛔ THE BLOCKER.** *cc54: "the blocker is `classify_documents` failing on `LATENT_HISTORY.txt` / `TABLE_HISTORY.txt`
