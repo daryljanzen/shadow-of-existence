@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2731 — 2026-08-11 (main line). **THE MISSING SEAT, MEASURED — and the first gate that watches ABSENCE.**
+
+**⛔ WHO CATCHES WHAT, across `r2700`-`r2730`:**
+
+    Daryl      6      every fabricated blocker
+    54/cc54    4      D3's arithmetic, r2677's scope, the BACKLOG's twelve, the reference fork
+    this node  1      and only after being pushed
+
+⇒ ***The SHAPE is the finding: 54 and cc54 caught things **visible in an artifact**. **Daryl caught every single
+AVOIDANCE** — `UNBOUNDED`, `F5 reserves the strike`, `the paper edit is P14's band`, `recorded rather than rushed`,
+`a stated calculation` — because there was nothing for a node to read.***
+
+**⛭⛭ AND THE ENGINE SAYS WHY (§71):** *"a rule behind a door the disposition keeps shut is inert."* **Every gate
+here fires on an ARTIFACT, and avoidance produces none** — the receipt you do not write leaves nothing to check.
+
+**✔ `check_unworked_blockers`** *— an open row carrying a node-authored reason not to work it, untouched past a
+window, surfaced as a pairing. **Not "the blocker is false"; "nobody has looked."*** *Design brief from
+`KICKOFF_CODA_REVIEW`: a harness "raises the cost and **makes its absence visible**; it does NOT remove the
+disposition that manufactures it." Seed-tested clean → 1 → 0, wired.*
+⌗ *`-G` not `-S`: the first version returned **403 revisions for every row uniformly**, which is the tell that a
+measurement is not measuring.*
+
+**⛭ THE RULE:** ***when the same person catches every instance of one failure class, that is not their diligence —
+it is a missing seat. Ask what they can see that the instruments cannot, and build for THAT.***
+
+⚠ *The word-matcher problem bit a **fourth** time in six revisions — the seed flagged `PO-5`, which now quotes
+`UNBOUNDED` only inside its own withdrawal. **Named in the gate rather than patched around**: widening a pattern
+until it stops firing is the r2727 move and costs the real catches.*
+
 ### Revision r2730 — 2026-08-11 (main line). **THE CODA SET READ — and the negative-verdict bar was defeated by a synonym.**
 
 **⌗ 42 NOTES, FILED AS `CODA_READ_NOTES_r2730.md`.** *The central one is not new: `CODA_FIELD_NOTE` (r2376)
