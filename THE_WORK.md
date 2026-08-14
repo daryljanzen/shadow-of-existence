@@ -1,7 +1,7 @@
 ---
 name: THE_WORK
 kind: STATE
-current: r2533+c54.203
+current: r2682+c54.212
 class: fork-view
 job: The working fork's OWN front-level view of the register — fronts, not rows. Absorbed by this line, never edited by it (ARC 15's prime directive).
 description: THE list. Every live front in the Cosmological Relativity programme, ranked, with its register row, its state, and when it last moved. Fronts, not containers.
@@ -364,6 +364,38 @@ audit trail is followable, but the unit of work is the front.
 `check_kills`-protected: I may not close them without authorisation. *That is a reason to leave them open,
 not a reason to leave them unlisted, and this file had them unlisted.* The order is the standing one: residual theory first, the
 acoustic correspondence and the verdict last.
+
+---
+
+## ⛭⛭⛭ BROUGHT CURRENT c54.212 — **the fork's fronts at c54.204–c54.212, and the shape of them has changed**
+
+**⌗ WHAT THIS LINE ACTUALLY DID ACROSS NINE REVISIONS, sorted by kind rather than by revision:**
+
+*· **PAPER WORK, banked** — the trans-Planckian scoping into P1 with its non-boundedness and its
+millisecond timescale (`L-531`); the de Sitter entropy into p0, and it is the cosmological-constant
+factor (`L-532`); p0's frontier datum written as a result (`L-530`); `PO-9` emptied into P12 (`L-533`);
+the three-bridge ceiling into P14 (`L-534`); and `PO-6`'s UV half into P10 (`L-543`).*
+*· **CORRECTIONS OF OTHER WORK** — `D3`'s floor conclusion, wrong for twenty revisions (`L-542`); and
+`FOR_54` item 30's twelve, a complete false-positive class (`L-545`).*
+*· **CORRECTIONS OF MY OWN** — `L-535` withdrawn as a class (it is one instance); and `L-543`'s scope
+withdrawn one revision after writing it, because I put P15's rate where P10's slicing belongs (`L-544`).*
+*· **INSTRUMENT** — the receipt-runner gate green on a 294-commit-old cache, and the stdlib shadow that
+made the runner unrunnable (`L-541`).*
+
+⛭⛭ **AND THE FRONT-LEVEL FACT WORTH RECORDING, because it is what this file is for:**
+***SEVEN OF THE LAST NINE REVISIONS WERE `LATENT` — the answer was already in the corpus and reading
+found it.*** *Not one of them needed an instrument this line did not already have.*
+⇒ ***So the fork's front is no longer "compute the next thing". It is "read the corpus against
+itself", and the yield has been higher than the computed front's for nine revisions running.***
+⚠ **AND THAT IS THE SIGNAL `THE_HANDOFF` SAYS TO WATCH**: *`LATENT` outnumbering `COMPUTED` is the
+condition under which splitting is unsafe, because two nodes would both find the same thing. **Three
+LATENT turns in a row from this line, two of them inside another node's recent work, is that condition
+and not a report of productivity.***
+
+⌗ **WHAT THIS LINE IS NOT DOING, and should be read as declining rather than missing:** *the runs and
+the calculations — `A2` (does a massive mode freeze), `A10` (the driven estimator), the sub-leading
+heat-kernel coefficients `L-543` names. **Those are cc54's, and this line has been careful to route
+them rather than reach.***
 
 ---
 

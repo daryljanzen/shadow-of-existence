@@ -117,3 +117,4 @@ r2680  INSTRUMENT  monomial was sympys API -- unbanked.py now counts prose only;
 r2681  LATENT      12 cited receipts cannot exit non-zero, 38 citations; check_receipt_asserts green on all of them
 r2682  INSTRUMENT  measured the absence-outlived class: 4 absences ended, 3 stand; 2 fixed, 5 reverted and routed
 c54.211  LATENT      withdrew my own c54.210 scope: P10s slicing is a(T)=alpha*cosh(T/alpha), exactly de Sitter, so the degeneracy holds on the towers own background
+c54.212  LATENT      item 30s twelve are a complete false-positive class: all satisfy the gates own CAN_EXIT predicate, at r2680 before any repair
