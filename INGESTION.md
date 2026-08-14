@@ -99,7 +99,8 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2683   PO-2    three levels audited: (1) grounded (2) PASSED (3) walled on the FORCE not the map.
     r2684   ---     PO-6 halves restated; check_declared_parts built.
     r2685   ---     convergence audit: 4 BOUNDED, 1 UNBOUNDED, 3 gated. Frontier line in the stamp.
-    r2686   PO-12   CLAIMED: the two-leg run -- what exactly the instrument would need changed.
+    r2686   PO-12   substitution itemised; r_D carries a square root so the ratio does not cancel.
+    r2687   PO-12   CLAIMED: integrate the rate difference over the history -- closing the 6.8/9.4 gap.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

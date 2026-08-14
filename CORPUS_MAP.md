@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2687 — 2026-08-11 (main line). **THE 2.6-POINT GAP CLOSED BY INTEGRATION — and the answer is set by the ONSET.**
+
+**⛔ THE FIRST INTEGRATION WAS NONSENSE, AND THAT LOCATED THE VARIABLE.** *Running from $a\to0$ made $r_s$ larger by
+a factor of **110** — $\rho_r/\rho_m$ diverges there and the integral is all lower limit.*
+⇒ ***The paper fixes it in one clause: the sound horizon "**must be taken *from the branch point*: there is no
+observable expansion below it**".***
+
+**⛭⛭ INTEGRATED**, *with $\rho_r/\rho_m=0.3$ at recombination scaling as $1/a$:*
+
+    z_onset =   1200   +7.1%        z_onset =   5000  +12.0%
+    z_onset =   2000   +8.8%        z_onset =  10000  +14.4%
+    z_onset =   3000  +10.2%
+
+⇒ ***P15's $+9.4\%$ sits at $z\approx2500$, and r2686's point-scaled $+6.8\%$ is the $z\to z_{\rm rec}$ limit —
+which is exactly why it understated.***
+
+**⌗ AND THE MONOTONICITY IS THE PAPER'S OWN ARGUMENT REPRODUCED:** *"it varies from $+43\%$ to $-3\%$ across the
+onset redshifts one might consider, so **a single datum cannot absorb both observables**".*
+⇒ ***The claim was never that one number is right — it is that the observable MOVES with the onset, which is what
+makes $\theta_*$ and $\theta_D$ two constraints rather than one.***
+
+**⛭ THE RULE:** ***when an integral blows up, the divergence names the free variable. A calculation that fails by a
+factor of 110 has told you which limit the physics fixes — and the paper will usually have fixed it in a clause you
+read past.***
+
+⇒ ***`PO-12` owes something narrower again: not "integrate the rate difference" — done — but **the onset redshift
+from the construction**, which turns a one-parameter family of answers into one answer.***
+
 ### Revision r2686 — 2026-08-11 (main line). **`PO-12`'s SUBSTITUTION ITEMISED — and the ratio does not cancel, because $r_D$ carries a square root.**
 
 **⓵ THE RATE DIFFERENCE RECONSTRUCTS.** *At $\rho_r/\rho_m=0.3$: $1/\sqrt{1.3}=0.877$ — **12.3% below**, matching
