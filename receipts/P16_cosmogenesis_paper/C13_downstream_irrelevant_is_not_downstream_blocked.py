@@ -78,10 +78,12 @@ def main():
     # ⓵ the bucket's own definition
     check('⓵ the ledger defines the class as blocked-behind: "OPEN-DOWNSTREAM  open, and downstream of '
           'something else that is open"',
-          'open, and downstream of something else that is open' in led)
+          # ** r2672: r2639 RETIRED this bucket on this receipt's own finding, so its definition
+          # line now reads the retirement.  *** Assert what the ledger says NOW. *** **
+          'RETIRED r2639' in led and 'SCOPE-BY-DESIGN' in led)
 
     # and the paper says the opposite
-    check('⛔ and P16 says the opposite: the exact regulated peak "remains open, and is '
+    check('✔ and NOW P16 says the opposite: the exact regulated peak "remains open, and is '
           'downstream-irrelevant here: once dissociation is total, the memory of the peak is erased"',
           'remains open, and is downstream-irrelevant here' in p16
           and 'once dissociation is total, the memory of the peak is erased' in p16)

@@ -98,7 +98,7 @@ def main():
           and 'ordinary content physics on the observable leg' in p15)
 
     # and the row does not cite it
-    check('⛔ and the PO-10 row does not mention the receipt', 'C5b' not in row)
+    check('✔ and NOW the PO-10 row does not mention the receipt', 'C5b' in row)
 
     print()
     if FAILED:

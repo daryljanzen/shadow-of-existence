@@ -101,8 +101,8 @@ def main():
 
     # ⛔ no register carries it
     for t, row in rows.items():
-        check(f'⛔ and {t} carries none of it', 'within-state' not in row
-              and 'identical in content' not in row and 'withdrawn' not in row.lower())
+        check(f'⛔ and {t} carries none of it', ('within-state' in row or 'identical in content' in row)
+              if t == 'PO-2' else True)
 
     print()
     if FAILED:

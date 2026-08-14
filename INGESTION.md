@@ -84,6 +84,8 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2666   PO-5    coupling CANNOT come from the colour bundle -- flat holonomy gives phases, never force.
     r2667   PO-5    P14 already walls holonomy AND isometry. Real content: is there a THIRD mechanism?
     r2669   PO-11   obstruction is HORIZON-located, not singularity-located -- the ordinary scattering problem
+    r2671   PO-6    D3 WITHDRAWN on 54's finding. PO-6 is FREE -- 54 has the live thread there.
+    r2672   ---     CLAIMED: the 14 self-falsifying absence-assertions (my defect, r2670). Not a PO row.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

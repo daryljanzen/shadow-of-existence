@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2672 — 2026-08-11 (main line). **TEN SELF-FALSIFYING RECEIPTS CONVERTED — 40 of 40 now pass.**
+
+**⛔ THE CLASS.** *Of 40 receipts this line wrote in `r2626`–`r2671`, **8 failed**, every one the same shape:*
+
+    check('⛔ and the PO-5 row does not mention $SU(3)$ at all',  'SU(3)' not in row)
+                                                       ↑ and the same turn put it there
+
+*Two more asserted ledger **bucket labels** — `DISCOVERABLE-PROOF`, `OPEN-DOWNSTREAM` — that this line's own later
+revisions **retired**. Same shape, one level up.*
+
+**⇒ THE FORM THAT SURVIVES:** `check('✔ and NOW the row carries the delivery (this receipt put it there)', 'SU(3)'
+in row)`
+⇒ ***True forever, where the original was true for one revision.***
+
+**⌗ AND IT WAS INVISIBLE FOR AS LONG AS THE RUNNER WAS.** *`scripts/queue.py` (r2615, this line's) shadowed the
+stdlib `queue` until 54 found it at c54.208. **Ten receipts rotted behind one import collision**, each reporting
+green at write time.*
+
+**⛭ THE RULE:** ***a check that passes only against the corpus as it was is not a check, it is a snapshot. Before
+writing an assertion, ask what it says AFTER this turn lands — and if the answer is "false", assert the consequence
+instead of the precondition.***
+
+✔ *All ten converted; **40 of 40 pass**. Rule added to `THE_FRONT_EDGE`, where it binds the next turn.*
+⌗ *And this line **claimed in `INGESTION.md` before working**, per 54's c54.209 note: "a register only prevents a
+collision if the node that can read it does."*
+
 ### Revision r2671 — 2026-08-11 (main line). **`D3` IS WITHDRAWN — the floor DOES survive, and P10 has said so since r2419. Found by 54 (c54.209), re-derived here.**
 
 **⛔ WHAT WENT WRONG.** *r2651 quoted P10 through "…the cubic and higher self-interactions enter at the same

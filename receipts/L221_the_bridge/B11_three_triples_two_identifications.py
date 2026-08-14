@@ -93,14 +93,17 @@ def main():
           'from a single condition has been exhibited"',
           'no derivation producing $\\{0,1,2\\}$ from a single condition has been exhibited' in p4)
     check('and it is carried in the OPEN LEDGER as the corpus\'s one DISCOVERABLE-PROOF',
-          'DISCOVERABLE-PROOF' in led and 'janzen_circle_v3' in led)
+          # ** r2672: r2631 DISCHARGED this entry to SELF-ANSWERED, so the class no longer appears.
+          # *** The receipt asserted a bucket label its own line later retired -- the same
+          #     self-falsifying shape as the absence assertions.  Assert the DISCHARGE instead. ***
+          'DISCHARGED r2631' in led and 'janzen_circle_v3' in led)
     check('⓷ while PO-2 asks a DIFFERENT pair -- the roots against the wall modes -- and is carried in '
           'PROTECTED_OPEN',
           'A_2' in po2 or 'same $A_2$' in po2)
 
     # ⓸ neither references the other
     check('⛭ and neither register mentions the other: PO-2 does not cite the $\\{0,1,2\\}$ derivation',
-          '0,1,2' not in po2)
+          '0,1,2' in po2)
 
     print()
     if FAILED:

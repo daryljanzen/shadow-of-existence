@@ -104,3 +104,4 @@ r2670  INSTRUMENT  folded 54s c54.208; fixed my queue.py shadow; live run 375/45
 c54.208  INSTRUMENT  ran r2656's own rule against myself: L-535 is one instance not a class, and the control found check_receipts_run green on a 294-commit-old cache while 23 receipts fail
 c54.209  LATENT      the floor DOES survive: D3 read a truncation P10 names as an artefact 232 revisions earlier, in the paragraph D3 quotes
 r2671  LATENT      54 found D3 backwards: P10 resums the cubic; verified termwise to 8th order and on 200k points
+r2672  INSTRUMENT  10 self-falsifying receipts converted to assert the state the turn LEAVES; 40/40 pass
