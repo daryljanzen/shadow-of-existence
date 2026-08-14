@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2659 — 2026-08-11 (main line). **BOTH OF r2658's "MISSING" PIECES ARE BUILT — the instrument section names them together.**
+
+**⛔ THE CORRECTION.** *r2658 marked the visibility function and the $k\to\ell$ projection **"⛔ NOT located"** after
+grepping every paper for `visibility function`, `line-of-sight`, `spherical Bessel`.*
+⇒ ***Both are built. `sec:instrument`: "carried by **a Boltzmann transfer built for this programme** … a full
+photon hierarchy with polarisation, second-order tight coupling, massless neutrinos, and **a Peebles recombination
+history**; **the line-of-sight source carries the monopole with the potential, the Doppler term, the integrated
+Sachs--Wolfe term, and the quadrupole with its own projection kernel** $(j_\ell+3j_\ell'')$."***
+
+**⌗ AND IT IS VALIDATED, NUMBER BY NUMBER:** *peaks and troughs to $\le0.5\%$ across $P_1$–$P_4$; $x_e(z)$ and its
+derivative to $\pm1\%$ **through the visibility peak**; matter–radiation equality to $0.02\%$; the transfer
+function to $<1\%$ below $k=0.02\,$Mpc$^{-1}$ — with its own receipts.*
+
+**⛭ THE RULE:** ***a component is named by its ROLE in the section that builds it, and by its NAME only in the
+sections that use it. Searching for the name finds the users; to find the builder, search for what it would have to
+CONTAIN — or read the section whose title says "what it is validated against".***
+
+⇒⇒ ***And the correction improves the row rather than just fixing the line: `PO-12`'s debt is now **the BACKGROUND
+the instrument runs on**. The paper calls it "the full **flat-projection** transfer"; the debt names "the
+**radiation-free** background"; and the corpus states exactly what differs — "**the whole difference is carried by
+$H(a)$**". Far smaller than "a genuine build".***
+
+⚠ *Not that swapping $H(a)$ is the whole of it — **that cancellation is established for the diffusion-length ratio,
+and whether it extends to every source term in the hierarchy is the next question**.*
+
 ### Revision r2658 — 2026-08-11 (main line). **`PO-12`'s step ② IS SIX-EIGHTHS BUILT — a debt framed as "a genuine build, not a plug-in".**
 
 **⌗ ENUMERATING WHAT A $k\to C_\ell$ TRANSFER NEEDS:**

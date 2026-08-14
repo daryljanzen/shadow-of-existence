@@ -74,6 +74,7 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
 
     r2657   PO-12   the bespoke transfer, step 2 -- unblocks BOTH of PO-10's runs
     r2658   PO-12   six-eighths built; what remains is the ABSOLUTE spectrum (visibility + LOS integral)
+    r2659   PO-12   CORRECTED: the instrument carries both. The debt is the BACKGROUND it runs on -- H(a).
 
 ## ⓸ WHAT THIS LINE IS TAKING
 
