@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2748 — 2026-08-11 (main line). **TAKE THE MEASURED VALUE FROM THE RECEIPT, NOT THE PROSE.**
+
+**⛭⛭ ⓵ `PO-10`'s FIRST PAIR.** *P15's prose: "$\ell_*=302.2$ against the measured ${\sim}301$". Its own receipt
+`P15_zonset_determinations` carries **and asserts**: $100\theta_*=1.04109$, $\ell_A=\pi/\theta_*=\mathbf{301.76}$.*
+
+    against 301.00 (the prose)      +1.20   (+0.399%)
+    against 301.76 (the receipt)    +0.44   (+0.146%)      a factor of 2.7
+
+⇒ ***The gap is $0.44$, and the loose reading runs in the direction that makes CR look worse.***
+
+**⓶ AND THIS IS THE MIRROR OF r2746's DEFECT, one revision later.** *That one forbade **inventing** an uncertainty;
+this is taking an **approximate** value from prose as the datum. Both put a number into the comparison the
+measurement does not support — **and the prose one is harder to catch because it is the corpus's own sentence, so
+reading it feels like sourcing rather than guessing**.*
+
+**⛭ ⓷ AND A SELF-CORRECTION MADE BEFORE BANKING.** *The first draft called this the paper's defect. **P15 writes
+"${\sim}301$" — the tilde is there and the paper is honest.** Checking the LaTeX before writing "the paper rounds"
+is what turned an accusation into a finding. **No paper edit is owed.***
+
+**⛭ THE RULE:** ***prose states results; receipts assert them. When a comparison needs a number, go to the thing
+that would FAIL if the number were wrong — and a paper's sentence cannot fail, which is exactly why it is the wrong
+source.***
+
+⌗ *The other three pairs have not been checked this way. Filed as owed.*
+
 ### Revision r2747 — 2026-08-11 (main line). **`PO-10`'s DERIVED LIST READ — half the row's remaining debt cleared.**
 
 **⌗ SIZED FIRST.** *Of the five workable rows, **`PO-10` is the only one whose remaining work is entirely READS** —
