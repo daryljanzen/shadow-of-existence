@@ -196,3 +196,4 @@ r2739  LATENT      PO-11 REOPENED -- P14: what that supplies is the radial conti
 r2740  LATENT      FOR_56 25-35 read. Family 5 healed by REOPENING PO-10, not by a pointer edit. A7 derived, C32 converted.
 r2741  LATENT      PO-5s two bounds COMPOSE; cc54s is tighter -- one test, not a search. One position decides two rows.
 r2742  LATENT      PO-5s ledger branch SETTLED: three papers commit ell_P is a gauge, none treats it as a scale
+r2743  COMPUTED    PO-6s two halves MEET AT THE SHEAR -- the tower IS the transverse-traceless shear, in P10s words

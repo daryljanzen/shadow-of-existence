@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2743 — 2026-08-11 (main line). **`PO-6`'s TWO HALVES MEET AT THE SHEAR — and the tower IS the shear.**
+
+**⓵ THE DEFICIT, checked.** *On an axisymmetric shear $\mathrm{diag}(-2\sigma,\sigma,\sigma)$ over isotropic
+expansion:*
+
+    sigma_ij sigma^ij = 6 sigma^2
+    C^2 = sigma^2 (4 + 16 sigma^2 / 3) = 4 sigma^2 + O(sigma^4)
+    C^2(0) = 0  ·  C^2(1/2) = 4/3        zero at sigma=0, quadratic leading, trace-free source
+
+**⛭⛭ ⓶ AND P10 NAMES THE TOWER IN ITS OWN WORDS.** *"the **transverse-traceless graviton modes form a discrete
+tower** that deparametrizes to a unitary evolution in cosmic time" — and again, "the transverse-traceless graviton
+tower, advanced unitarily in cosmic time".*
+⇒ ***Transverse-traceless perturbation IS shear. **THE TOWER IS THE SHEAR.****
+
+**⛭ ⓷ SO THE ROW'S TWO DECLARED HALVES ARE NOT INDEPENDENT.** *The counterterm half ends where conformal flatness
+ends — at the shear. The tower half quantises the transverse-traceless modes — which are the shear.*
+⇒ ***A convergence, and it was **invisible until both halves were named right**: while one read "maximal symmetry"
+(withdrawn c54.215) and the other read "back-reaction" (sharpened r2723), the two descriptions had no vocabulary in
+common.***
+
+**⓸ AND THE ORDER CARRIES PHYSICS.** ***Entering at $\sigma^2$ means the degeneracy **survives to first order in
+the graviton amplitude**: a one-graviton process cannot break the one-dimensional basis; a two-graviton process
+can.***
+
+**⛭ THE RULE:** ***when a row declares parts, check whether they name the same object once each part is stated at
+the paper's own precision. Two halves described loosely will look independent no matter how tightly they are
+coupled.***
+
 ### Revision r2742 — 2026-08-11 (main line). **`PO-5`'s LEDGER BRANCH SETTLED — three papers had already committed.**
 
 **⌗ cc54's TEST, RUN.** *"If $\ell_P$ is a gauge, the ledger holds no free dimensionless parameter and no mechanism
