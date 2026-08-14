@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2685 — 2026-08-11 (main line). **THE CONVERGENCE AUDIT — the row count is right and it is not the thing that moved.**
+
+**⛔ THE COUNT, HONESTLY.** *Across `r2615`–`r2684`: **one row struck** (`PO-8`), **two answered** (`PO-3`, `PO-9`).
+The table went **34 → 17 → 20**, and the rise is **routed items — work FOUND**.*
+⇒ ***Seventy revisions, three crossings. That is the number and it should not be softened.***
+
+**⛭⛭ BUT WHAT MOVED IS THE KIND OF QUESTION EACH ROW ASKS.**
+
+    PO-4   BOUNDED    supply the continuous U(1) the Weyl reflection reflects        r2676
+    PO-6   BOUNDED    does the 1-dim counterterm basis survive a running background? r2677
+    PO-11  BOUNDED    a propagating Dirac sector across an infinite tortoise interval r2669
+    PO-12  BOUNDED    run an EXISTING validated hierarchy on a two-leg background     r2660-63
+    PO-5   UNBOUNDED  is there a THIRD mechanism, neither holonomy nor isometry?      P14's own
+
+    gated: PO-2 <- PO-5    PO-10 <- PO-12    PO-7 <- PO-seam
+
+⇒ ***Four of five independent items are FINITE — bounded calculations on stated objects with known
+instruments. The one that is not is NAMED, in P14's own words: "no third mechanism has been named."***
+
+**⛭ THE NARROWING, STATED PRECISELY.** *At r2615 the rows asked **"the colour and isospin structure"**, **"what
+fixes the state"**, **"the bespoke transfer"**. At r2684 they ask for **a $U(1)$, a heat-kernel coefficient, a
+scattering solution, a two-leg run**.*
+⇒⇒ ***A row count cannot show that, because a row asking a sharp question and a row asking a vague one both count as
+one.***
+
+**⛭⛭ THE RULE:** ***when someone asks whether you are converging, do not defend the count — measure what the count
+cannot see. If the answer is "the items got sharper", say how many are now BOUNDED and name the one that is not; if
+you cannot say that, the answer is no.***
+
+✔ *`scripts/stamp.py` now carries the frontier's shape every turn.*
+
 ### Revision r2684 — 2026-08-11 (main line). **`PO-6`'s TWO HALVES RESTATED — half one FINISHED, half two with a stated successor. And a gate so a declared structure cannot stay unaudited.**
 
 **⛔ THE SAME DEFECT AS r2683, ONE ROW OVER.** *`PO-6` declares "**this item's two halves are two halves rather than

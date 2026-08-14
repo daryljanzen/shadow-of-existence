@@ -118,3 +118,4 @@ r2681  LATENT      12 cited receipts cannot exit non-zero, 38 citations; check_r
 r2682  INSTRUMENT  measured the absence-outlived class: 4 absences ended, 3 stand; 2 fixed, 5 reverted and routed
 r2683  LATENT      PO-2s hold has three NAMED levels; level 2 is passed and level 3 is on the FORCE, not the map
 r2684  LATENT      PO-6s two halves restated: half one FINISHED, half two has a stated successor; gate built
+r2685  COMPUTED    convergence audit: 3 crossings in 70 revisions, but 4 of 5 independent rows are now BOUNDED
