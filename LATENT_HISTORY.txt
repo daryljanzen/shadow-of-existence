@@ -160,3 +160,6 @@ c54.215  COMPUTED    PO-6: the quadratic degeneracy is CONFORMAL FLATNESS, not m
 c54.215a LATENT      and r2677 stated TWO degeneracies as one: the different-dimension half does fail under running, the quadratic half does not, and r2713 read the first as the second
 c54.215b LATENT      P10's own next sentence already said the question has "a stated object ... and a decidable answer" -- the REGISTER ran ahead of its own paper
 c54.215c INSTRUMENT  amended S50: my own P10 edit broke my own receipt -- item 28's class at ZERO revisions distance, caught only by the full run
+c54.216  LATENT      PO-5's residue is BOUNDED and the bound is TWO SENTENCES EARLIER: P14's dimensional sentence mentions no route, so it constrains the target and bounds a third mechanism too
+c54.216a LATENT      and its premise is p0's ledger position -- the coupling question and the constant-ledger question are ONE question the register carries apart
+c54.216b INSTRUMENT  amended U2: a COUNT pin broken by an addition that AGREES with it -- a count cannot tell a contradicting occurrence from a corroborating one

@@ -1,6 +1,6 @@
 
-  RUN-ALL-RECEIPTS -- 470 registered receipt(s), 1 at a time, 300s each, each from ITS OWN DIRECTORY
-  TREE-DIGEST: 50f9488cab4dc7b0
+  RUN-ALL-RECEIPTS -- 471 registered receipt(s), 1 at a time, 300s each, each from ITS OWN DIRECTORY
+  TREE-DIGEST: 1b80197ec755442d
 
     [FAIL] receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py  (0s)
                OK    ⚠ CR does NOT derive the dynamics: "the construction leaves the dynamics of general relativity unchanged" /     OK    and P12 calls its own claim "a recognition rather than an addition" /   4 check(s) FAILED
@@ -24,12 +24,12 @@
                po10 = next(l for l in raw.split('\n') if l.startswith('| **PO-10**')) /            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / StopIteration
     [FAIL] receipts/P15_CR_cosmology/C32_half_one_is_model_selection.py  (1s)
                OK    so $\Delta$AIC $=2(6-1)=10.0$ and $\Delta$BIC $=5\ln215=26.9$ in CR's favour before any $\chi^2$ is scored /     OK    ⓷ with CR's single parameter stated by P15: "the single CMB-calibrated $\Omega_{m}" /   2 check(s) FAILED
-    [FAIL] receipts/P16_cosmogenesis_paper/P16_the_scalar_monodromy_is_four_pi_over_rho.py  (6s)
+    [FAIL] receipts/P16_cosmogenesis_paper/P16_the_scalar_monodromy_is_four_pi_over_rho.py  (5s)
                 singular point contributes no monodromy. ** / ============================================================================== / FAILED: SEEDED
     [FAIL] receipts/P17_geometric_core_paper/P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py  (0s)
              OK   and the no-single-value conclusion / ============================================================================== / FAILED: 3 receipt(s) still have no INDEX row: ['A3_the_convergence_audit', 'A6_item_58_resolves_split', 'A8_the_self_protecting_falsehood']
 
-  457 pass, 13 fail, 0 over timeout, in 775s wall
-  slowest that passed: P16_validate_bbn.py 71s, Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py 69s, P15_the_second_arm_actually_run.py 47s, I10_the_constraint_propagation_is_symmetry_free.py 47s, P15_the_collapse_leg_is_scale_invariant.py 34s
+  458 pass, 13 fail, 0 over timeout, in 756s wall
+  slowest that passed: Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py 69s, P16_validate_bbn.py 68s, P15_the_second_arm_actually_run.py 47s, I10_the_constraint_propagation_is_symmetry_free.py 45s, P15_the_collapse_leg_is_scale_invariant.py 34s
 
   ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.

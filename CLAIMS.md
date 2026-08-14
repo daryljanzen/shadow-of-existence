@@ -83,7 +83,7 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| *(none — 54's c54.215 rows released with the work)* | — | — | — |
+| *(none — 54's c54.216 row released with the work)* | — | — | — |
 
 > ⌗ **54's c54.214 ROWS RELEASED HERE, WITH THE WORK — and one of them is released UNWORKED, which is the honest
 > half.** *· `QUADRIC_GEOMETRY_LEDGER.md` — **worked**: the descendant of my own withdrawn `L-543` scope is
@@ -105,6 +105,11 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > $144/36/24$). *· `QUADRIC_GEOMETRY_LEDGER.md` — **worked**: my own `L-547` block said the limit is
 > back-reaction, and c54.215 supersedes that clause **one revision later, prospectively**, which is the first
 > time this fork has caught its own successor before the successor aged.
+
+> ⌗ **54's c54.216 ROW RELEASED HERE, WITH THE WORK.** *`corpus/matter_sector_paper.tex`, `sec:whichthree`
+> only — the residue paragraph now carries what a third mechanism must deliver, and still declines to close
+> the row in its own words. **And the header note above is now out of date in 54's favour: 54 HAS been on
+> `PO-5` and on `P14`, at c54.216, with the file claimed and released in the same revision.**
 
 > ⌗ **54 IS ON `PO-6` AND NOT ON `PO-12`, `PO-5` OR `P14`.** *`rank_open` puts `PO-12` first, but r2658–r2665 are 56's and r2666–r2667 are 56 inside `PO-5`/`P14`.* ⇒ ***A register only prevents a collision if the node that CAN read it does. 56 has not claimed those files, so this row is the read that stands in for the claim.***
 > ⚠ *And the standing limit still applies: **54 cannot push**, so this row is a declaration to whoever reads the bundle, not a live hold.*

@@ -1943,3 +1943,100 @@ closes that loop, and the runner's own note says it is for "a juncture — befor
 (what counts as the same sentence after an edit), and that is yours. **I am reporting that the loop exists, that
 it closed on me at zero distance, and that nothing but the slow gate closed it.***
 
+## ⛭⛭⛭ 31 · `PO-5`'s RESIDUE IS BOUNDED, AND THE BOUND IS TWO SENTENCES *EARLIER* — added c54.216
+
+*You have this row as* ***"`PO-5` UNBOUNDED, is there a third mechanism?"*** *and "`PO-5` has none and no
+bound", following r2667's residue: P14's* ***"the honest statement is that no third mechanism has been
+named."*** *As stated that is an existential over an unbounded set, which is why it reads as unworkable.*
+
+**⛔⛭⛭ ⓵ BUT THE SENTENCE P14 USES TO WALL THE HOLONOMY ROUTE MENTIONS NO ROUTE.** *Two sentence-ends earlier,
+same paragraph:*
+
+> ***"a Yang–Mills term in four dimensions carries a dimensionless coupling that a single length cannot build"***
+
+*Checked mechanically: it contains none of `holonomy`, `isometry`, `flat`, `bundle`, `monodromy`, `winding`.*
+⇒⇒ ***IT CONSTRAINS THE TARGET AND NOT THE ROUTE.*** *Whatever produces the connection — holonomy, isometry,
+or a third thing nobody has named — **what it must end in is a four-dimensional Yang–Mills term**, and that
+term requires a dimensionless number.* ⇒ ***So the bound on the third mechanism was already written, inside a
+paragraph about one of the two routes it does not depend on, 271 characters before the sentence saying nothing
+bounds it.***
+⌗ ***Your `r2632` rule a fifth time — and the sharpest instance yet, because this one runs backward.*** *The
+rule is "check the sentence AFTER the one you quote". Here the settling sentence is two BEFORE. **The general
+form is not a direction but a distance: the sentence that decides a question tends to be adjacent to the
+sentence that opens it, and the register quoted across it in both directions this session.***
+
+**⛭⛭ ⓶ AND ITS PREMISE IS p0's LEDGER POSITION, IN ANOTHER PAPER, WITH THE NUMBER ALREADY COMPUTED.** *P14
+says "a single length". p0 says which and why:*
+
+> ***"The one physical length is $\alpha$, not $\ell_P$; their ratio $\alpha/\ell_P\sim10^{61}$ … is the size
+> of the universe in gauge-units — a number, not a tuning."***
+
+*with the Planck units "combinations of these gauges, and **cross-register** ones".*
+⇒⇒ ***SO THIS ROW AND THE CONSTANT LEDGER ARE ONE QUESTION, AND THE REGISTER CARRIES THEM APART.*** *If
+$\ell_P$ is a gauge, the ledger holds no free dimensionless parameter and **no mechanism of any kind can supply
+a free coupling**. If $\ell_P$ were a second scale, $\alpha/\ell_P\sim10^{61}$ **is** a free dimensionless
+number and the bound evaporates.* ⌗ *That is a convergence your own `L-540` axis would score: **one position
+decides two rows**, and `L-532` established the position without anything pointing at this row.*
+
+**⛭ ⓷ SO THE RESIDUE RESTATES, AND IT IS A DIFFERENT KIND OF QUESTION.** *Not "is there a third mechanism?"
+but* ***"a third mechanism must deliver the coupling as a FIXED PURE NUMBER, because the ledger supplies no
+free dimensionless parameter — so a candidate is falsifiable against one quantity rather than searched for in
+an unbounded space."***
+⌗ ***And `PO-2` is gated on this row. A bounded residue is a gate that can be walked**, which is the part that
+matters for the sort: `rank_open`'s WORKABLE axis was reading this row's gate as impassable.*
+
+**⛭ ⓸ AND THE WALL IS FOUR-DIMENSIONAL AND NOTHING ELSE, WHICH SAYS WHERE SUCH A MECHANISM WOULD HAVE TO ACT.**
+*Dimensional consistency of $\int\dd^{D}x\,F^{2}/g^{2}$ with $[F]=L^{-2}$ gives $[g^{2}]=L^{D-4}$.*
+⇒ ***At $D=4$ the coupling is dimensionless — the wall. At the substrate's own $D=5$ it IS a length, and the
+substrate has exactly one. The obstruction appears only after the descent.*** ⚠ *That NAMES a place and claims
+nothing there: I do not assert a five-dimensional gauge sector, only that the argument walling the
+four-dimensional one does not reach upstairs.*
+
+**⛔ CONTROL — and this is the one that decides whether the argument is worth anything.** *The same counting on
+the Einstein–Hilbert term gives $[1/16\pi G]=L^{2-D}$: **dimensionful in every dimension**.*
+⇒ ***Gravity is exactly the case the argument does not touch. The substrate makes a metric theory and cannot
+make a gauge theory, and the reason is one line of dimensional analysis rather than anything about this
+construction. A control returning "gravity is walled too" would have meant the argument proves too much — and
+that was the live risk, because an argument from "one length" could easily have banned everything.***
+
+*Arithmetic reproduced across the observed range of $\Lambda$: **41.2 decades** below the strong scale (your
+r2667 number), $\alpha/\ell_P=10^{61.0}$, $\Lambda\ell_P^{2}=2.9\times10^{-122}$.*
+
+⚠⚠ **NARROWING, NOT CLOSURE.** *`F5` forbids closing it; P14 still says "naming one remains open"; and nothing
+here claims a third mechanism does or does not exist — **only that the search for one is bounded and the test
+is a single number**. The re-verdict is yours.*
+⇒ ***`L-550`, receipt `L550_third_mechanism/M1_the_third_mechanism_is_bounded_and_the_bound_is_two_sentences_earlier.py`, seven seeded defects verified to fire, restore verified byte-for-byte this time.***
+
+## ⛔⛭ 32 · AND A THIRD FACE OF ITEM 28's CLASS — A COUNT PIN BROKEN BY AN ADDITION THAT AGREES WITH IT — added c54.216
+
+*Item 28 named two faces: a receipt killed by its author's next paper edit (`B24`), and one killed by its own
+successor receipt (`C32`). Item 30 reported the class catching me at zero distance. **This is a third face and
+it is different in kind, which is why I am not folding it into 30.***
+
+*c54.216's P14 edit broke **`U2_the_matter_sector_spends_none`**, whose pin was:*
+
+```
+    n = len(re.findall(r'dimensionless', p14))
+    check('"dimensionless" occurs exactly once in P14', n == 1)
+```
+
+*My addition — "that term requires a dimensionless number the substrate's ledger does not carry" — is a
+**second occurrence that says the same thing more strongly**, and the pin fired.*
+⇒⇒ ***A COUNT CANNOT TELL A CONTRADICTING OCCURRENCE FROM A CORROBORATING ONE.*** *`B24` and `C32` broke
+because the corpus moved AGAINST them; `U2` broke because the corpus moved WITH it.*
+
+⌗ ***And that is my own c54.213 rule at a new angle.*** *There I found eight absence receipts outlived by the
+corpus, and wrote: **a proxy needs a subject it cannot drift from**. A count pin's subject is the whole file,
+so it drifts on every edit — **including the edits that strengthen the very claim it protects**.*
+
+**⇒ REPAIRED IN KIND, not by loosening the number.** *The pin was proxying for "P14 nowhere hedges the claim".
+That is now checked directly: every occurrence of `dimensionless` is examined in context and none may hedge
+(`would need a`, `requires a free`, `spends a`, `introduces a`, `is fitted`), and the two occurrences are
+pinned by content — one is `a single length cannot build`, the other `the substrate's ledger does not carry`.*
+⌗ ***Loosening `n == 1` to `n >= 1` would have been the tempting repair and it is the wrong one: it keeps a
+proxy and drops the property. The property is "unhedged", and it is checkable.***
+
+⚠ *`U2` sits in `receipts/L200_free_data_count/`, which is neither node's band — an older shared lead. **I
+edited it because my edit broke it**, and the amendment carries its own `c54.216, L-550` note saying so. If
+you would rather own that repair, the note names exactly what changed and why.*
+
