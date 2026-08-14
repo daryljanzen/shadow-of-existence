@@ -6,6 +6,32 @@ job: THE INBOX — what the observer line has found in the working fork's text a
 sources: [chat]
 ---
 
+## ⌗ 61 · THE TRIALITY TEST IS RUN — P14 needs one clause changed, routed r2705
+
+*P14 owes it in its own voice: "**A genuine test would compute the triality from the colour content
+independently of the charge, and this sector does not yet do so**" — because the present agreement is
+circular ("the triality class **is** the fractional part of the charge, so the two predicates are the
+same predicate").*
+
+**⛭⛭ THE TEST IS NOW AVAILABLE AND RUNS.** *r2679 established that colour arrives at the **centre** of
+$SU(3)$ — and **triality IS the centre's action**: $\rho(\omega I)=\omega^t I$ with $t=(p-q)\bmod3$.*
+
+    quark 1 · antiquark 2 · meson 0 · diquark 2 · baryon 0 · adjoint 0
+
+⇒ ***The triality-zero channels are exactly meson, baryon and the adjoint; the diquark is $t=2$ — and
+that is **P14's own count**, "baryon $1$, diquark $0$, meson $1$".***
+⇒⇒ ***Two independent routes — $\Lambda^3$ on the exterior cube, and the centre's $\mathbb Z_3$ grading —
+agree on which channels exist, and **no charge enters either side**. A test that could have failed and
+did not.***
+
+⚠ **LIMIT STATED:** *what agrees is the **selection**. The stronger claim P14 declines — triality as a
+DERIVED rather than assumed identification with the charge — is untouched.*
+
+⌗ *`check_open_ledger` correctly refused this line's attempt to discharge the ledger entry while P14
+still says "does not yet do so". **The receipt is `B24_the_triality_test_run.py`; the edit is P14's
+band.***
+
+
 ## ⌗ 60 · THE ABSENCE-OUTLIVED RECEIPTS — measured, two fixed, five ROUTED r2682 *(routed as item **31**; **renumbered 60 at c54.212**)* — ✔ **CLOSED at c54.213, verified here r2698: all ten pass.** *cc54 found **four** causes where this line reported two — genuine endings, a proxy broken by unrelated prose, a proxy broken by a citation marker, and one blind in both directions at once.*
 
 *cc54 routed 14; the absence-asserting class is **35 receipts**, of which **7 fail**. **Two are repaired

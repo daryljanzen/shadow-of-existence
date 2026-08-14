@@ -117,7 +117,8 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2701   PO-12   remaining half has NO CONTENT -- at w=0 the potential equation loses k.
     r2702   PO-12   STRUCK. PO-10 UNGATED. Table 8. Frontier 4 BOUNDED, 1 UNBOUNDED, 2 gated.
     r2703   PO-10   half 2 carries no signal (R is a content ratio). The row is ONE half.
-    r2704   ---     CLAIMED: apply the H-sorting rule to PO-6 and PO-11 -- know them before dwelling.
+    r2704   ---     the frontier has TWO KINDS: 5 DEFINEDNESS, 2 PREDICTION. They fail differently.
+    r2705   ---     CLAIMED: the LEDGER 1 -- the triality test, the smallest thing left.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

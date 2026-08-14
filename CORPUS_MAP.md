@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2705 — 2026-08-11 (main line). **THE TRIALITY TEST RUN — a test P14 said it could not do, made available by `PO-5`'s movement.**
+
+**⓵ THE ITEM, and why it was owed.** *P14: "the triality class **is** the fractional part of the charge, so the two
+predicates are the same predicate … **A genuine test would compute the triality from the colour content
+independently of the charge, and this sector does not yet do so**."*
+
+**⛭⛭ ⓶ AND r2679 SUPPLIED THE MISSING INGREDIENT:** *colour arrives at the **centre** of $SU(3)$, and **triality IS
+the centre's action** — $\rho(\omega I)=\omega^tI$ with $t=(p-q)\bmod3$.*
+
+    quark 1 · antiquark 2 · meson 0 · diquark 2 · baryon 0 · adjoint 0
+
+⇒⇒ ***The triality-zero channels are exactly meson, baryon and the adjoint — which is P14's own count, "baryon $1$,
+diquark $0$, meson $1$". Two independent routes ($\Lambda^3$ on the exterior cube; the centre's $\mathbb Z_3$
+grading) agree on which channels exist, and **no charge enters either side**.***
+
+**⛭ THE RULE:** ***when a paper says a test is unavailable, check whether a LATER result supplied the missing
+ingredient. A "cannot yet" is a statement about what was known when it was written, and a frontier that has moved
+since will have made some of its own declines obsolete without noticing.***
+
+**⚠ AND A GATE STOPPED AN OVERCLAIM.** *`check_open_ledger` refused the discharge — "an item advertised as owed
+after the work that closed it was done" — because **P14 still says "does not yet do so"**. Restored to
+`NAMED-UNBUILT`, routed as `FOR_54` item 61; **the edit is P14's band**.*
+⌗ *Table stays at 8 — the item moved `LEDGER` → `ROUTED`, which is the honest bookkeeping.*
+⚠ *Limit stated: what agrees is the **selection**; triality as a DERIVED identification with the charge is
+untouched.*
+
 ### Revision r2704 — 2026-08-11 (main line). **THE FRONTIER HAS TWO KINDS — five DEFINEDNESS rows, two PREDICTION rows.**
 
 **⌗ THE RULE IS r2703's, AND IT IS P15's OWN.** *"The whole difference is carried by $H(a)$" ⇒ an observable that is
