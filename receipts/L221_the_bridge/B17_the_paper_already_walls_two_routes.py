@@ -42,6 +42,10 @@ was wrong ** -- its derivation is correct and its curvature computation stands; 
 its classification of the turn and its implicit claim to novelty. ***  ** Not that the isometry wall is
 audited here ** -- P14 says it is "walled separately" and that is taken as stated.
 
+** COMPUTES: the substrate invariant Lambda = 3/alpha^2 and its energy hbar c/alpha against the strong
+scale -- a decade count, 41.2, verifying P14s own stated figure.  *** No CR-vs-LCDM comparison and no
+foreign parameter: alpha is the corpuss own length. *** **
+
 Written r2667.  Stated for reversal.
 """
 import os

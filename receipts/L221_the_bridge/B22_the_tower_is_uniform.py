@@ -38,6 +38,9 @@ removed. ***  ** Not that $M=0.12$ is special ** -- it is the undercritical valu
 and the divergence is a property of the linear zero of $f$, not of the parameter.  ** Not that the leaf
 reading is preferred ** -- P14 states the two are not interchangeable and reads the leaf; that stands.
 
+** COMPUTES: the tortoise-norm divergence increment per decade in cut-off, at fixed lambda -- a
+RELATIVE measure on one background.  *** The parameter is the corpuss own lambda = j + 1/2. *** **
+
 Written r2690.  Stated for reversal.
 """
 import os

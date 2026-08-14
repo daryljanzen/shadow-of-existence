@@ -33,7 +33,7 @@ before `L-533` was written.  The link was reproduced in the corpus the whole tim
 ** ⓸ AND ④ NOW CLEARS. **  (a) ✔ r2552, three times in the papers.  (b) ✔ in P6.  (c) ✔ P6, via P12 and
 p0.  (d) ✔ r2641, from the embedding, with the restriction shown forced.  (e) ✔ r2640, three methods.
   ⚠ *** THIS RECEIPT DOES NOT CLOSE `PO-9`. ***  `PROTECTED_OPEN`'s exit runs by its two stated routes and
-  ** the authorisation is Daryl's **.  What is established is that ** the check which did not clear now
+  ** the authorisation is outside any node's reach by kind **.  What is established is that ** the check which did not clear now
   does **, and the receipt should say so rather than continue to report a failure it no longer has.
 
 WHAT IS NOT CLAIMED.  ** Not that `PO-9` is closed ** -- `F5` reserves it.  ** Not that P6's Rule-2

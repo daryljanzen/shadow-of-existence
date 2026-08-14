@@ -1,9 +1,51 @@
 ---
 name: open-problems-map
 kind: STATE
-current: r2601+c54.207
+current: r2727+c54.213
 job: The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open
 ---
+
+## ⛭⛭⛭ BROUGHT CURRENT r2727 — the table is FIVE, and three rows were struck since r2601
+
+**⌗ WHAT CHANGED, and none of it by a verdict on a hard problem.**
+
+    PO-3, PO-9   ANSWERED (r2645, r2644) -- rows had read OPEN for ~50 revisions
+    PO-12        STRUCK r2702 -- the transfer is built and verified; its last named piece has
+                 NO INTEGRAND (pre-onset is pressureless, and at w=0 the potential equation
+                 loses k entirely, r2701).  One clause RELOCATED into PO-7.
+    PO-10        STRUCK r2712 -- half 2 carries no discriminating signal (R is a ratio of
+                 CONTENTS); half 1's specification closed.  ⛔ AND ITS NUMBER WITHDRAWN r2725:
+                 the comparison was never matched, and r2726 found the root -- it counted
+                 parameters in LCDM's ontology, five of whose six entities CR does not posit.
+    PO-11        STRUCK r2717 -- object (B3's superpotential gives a Regge-Wheeler barrier),
+                 spectrum (T = 0.020 to 0.9997, unitarity to six figures), and COMPLETENESS,
+                 which FOLLOWS from boundedness + exponential decay rather than remaining.
+
+**⇒ THE FIVE THAT REMAIN, sorted by what would COUNT as an answer (r2704):**
+
+    DEFINEDNESS -- not a function of H, not answerable by data
+      PO-4   supply a source for a ONE-PARAMETER SUBGROUP exponentiating into the Cartan.
+             r2718: the gap is CARDINALITY -- the reflection generates a group of ORDER 4
+             against a continuum, so "extend the reflection" is provably impossible.  And
+             PO-5's wall does NOT transfer: it turns on connection data, this row's datum
+             is a group ELEMENT.
+      PO-5   is there a THIRD mechanism, neither holonomy nor isometry?  UNBOUNDED.
+      PO-6   r2723: the FLOOR follows from r2671's non-degeneracy, so boundedness is
+             answered YES.  What remains is WHERE Gamma-hat's spectrum sits relative to
+             3/4 -- the Weyl alternative, limit-point above and limit-circle below.
+             A SPECTRAL question, not a boundedness one.  (L-543 withdrawn r2713: it
+             asked about a running background the free tower does not use.)
+      PO-2   gated on PO-5.  Levels (1) and (2) closed; (3) is the PHYSICAL identification.
+
+    PREDICTION -- a number against the sky
+      PO-7   the acoustic phase.  r2701 sharpened it: nothing before the onset can imprint
+             a phase, so CRPHI must be set on the observable leg.  cc54's L-815 derives
+             CRPHI = 0; the verdict is not asserted.
+
+**⚠ AND THE STANDING GUARD, r2726:** *before importing any quantity into a computation, ask whether the
+CORPUS POSITS IT. If the computation's FRAME comes from the other theory, the answer belongs to that
+theory whatever number comes out. `check_foreign_ontology` enforces the input half; the frame half is a
+reading discipline.*
 
 ## ⛭⛭⛭ BROUGHT CURRENT r2601 — and the register grew three items this map never carried
 

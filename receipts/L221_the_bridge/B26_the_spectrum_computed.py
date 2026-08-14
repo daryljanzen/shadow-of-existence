@@ -45,6 +45,9 @@ solved ** -- the SUSY partner has the same transmission by construction and is n
 that this is the physical fermion sector ** -- it is the radial problem `B3` derives, at one parameter
 value, and the $\\lambda$-dependence is not scanned.
 
+** COMPUTES: transmission across that barrier at five energies, and the unitarity residual, at the same
+M=0.12, alpha=1.  *** One parameter value; the lambda-scan is NOT claimed. *** **
+
 Written r2716.  Stated for reversal.
 """
 import os

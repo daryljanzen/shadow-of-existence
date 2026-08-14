@@ -2003,6 +2003,16 @@
 \emph{Computes:} computes the vacuum-energy divergence structure (quartic mass-independent, quadratic mass-dependent) and anchors p0's CC-problem dissolution and ell\_P-as-gauge at source (7 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- A7; informs L-165 (PO-6); the sub-leading tower is the deeper question
 \ \emph{Run:} \texttt{python3 receipts/L809\_one\_loop\_quartic/S1\_the\_quartic\_is\_a\_constant\_vacuum\_energy\_and\_the\_geometry\_absorbs\_it.py}
+\item[\label{rcpt:S1_the_seam_phase_is_derived_compression_correlated_on_the_observable_leg}\texttt{S1\_the\_seam\_phase\_is\_derived\_compression\_correlated\_on\_the\_observable\_leg}]\hfill\textsf{[OK]}\\
+\textit{sec:what-crosses} \ (PO-7/PO-seam: the seam phase CRPHI is DERIVED, not free = CRPHI=0 (a compression correlated with the well), on the observable leg --- the pre-onset is pressureless (r2701) so no oscillation swings the inherited adiabatic overdensity's sign; bracket-checked against the LCDM control's own adiabatic IC; the \{0,pi\} band collapses to 0.878, disagreement pinned at 0.615, CRPHI=pi (0.408, a rarefaction) anti-adiabatic and inadmissible). 
+\emph{Computes:} reads the code's CRPHI convention (overdensity in a well = CRPHI=0), shows a pressureless mode's sign is fixed while a pressured one swings, confirms the adiabatic bracket, and anchors the pressureless-onset statement in CR\_cosmology.tex (4 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- closes PO-7 route (3)'s residue; informs L-171/L-202; F5 unsoftened, one assumption (Phi-continuity) flagged
+\ \emph{Run:} \texttt{python3 receipts/L815\_seam\_phase\_derived/S1\_the\_seam\_phase\_is\_derived\_compression\_correlated\_on\_the\_observable\_leg.py}
+\item[\label{rcpt:S1_the_subleading_log_divergence_is_gauss_bonnet_and_the_ledger_survives}\texttt{S1\_the\_subleading\_log\_divergence\_is\_gauss\_bonnet\_and\_the\_ledger\_survives}]\hfill\textsf{[OK]}\\
+\textit{---} \ (PO-6 fixed-background half: the SUB-LEADING (log) one-loop divergence on the tower's own de Sitter slicing is the Gauss-Bonnet term (topological in D=4), so it forces NO curvature-squared coupling outside the one-constant ledger --- extending L-809's quartic result to the log order; on de Sitter Weyl\textasciicircum{}2=0, and the on-shell graviton divergence reduces to GB (t Hooft-Veltman/Christensen-Duff)). 
+\emph{Computes:} verifies R\textasciicircum{}2/Ric\textasciicircum{}2/Riem\textasciicircum{}2=144/36/24 per alpha\textasciicircum{}4 (S50) and Weyl\textasciicircum{}2=0, that GB=24/alpha\textasciicircum{}4 is the topological Euler density, the on-shell R=4Lambda, and the ledger-survival conclusion (4 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- the fixed-background half of PO-6; extends L-809; does NOT touch the coupled-sector dark half (54's/definitional)
+\ \emph{Run:} \texttt{python3 receipts/L816\_po6\_subleading\_survives/S1\_the\_subleading\_log\_divergence\_is\_gauss\_bonnet\_and\_the\_ledger\_survives.py}
 \item[\label{rcpt:P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way}\texttt{P17\_the\_frontier\_item\_is\_a\_result\_and\_the\_cosmogenesis\_paper\_reaches\_it\_the\_other\_way}]\hfill\textsf{[OK]}\\
 \textit{sec:seven} \ (**ITEM 18: p0's FRONTIER DATUM IS A RESULT, NOT AN OWING** --- the derivation of \$\textbackslash\{\}rho\_r/\textbackslash\{\}rho\_m\$ from the progenitor collapse CANNOT BE DELIVERED (the ratio scales as 1/a, so no single value exists to transmit), and P16 reaches the same line by a conservation law. Lead `L-530`; VEIN `L-202`). 
 \emph{Computes:} asserts the old owing sentence ABSENT; eight checks on the replacement incl. the `X1` cite; four that P16's body says what is now attributed to it; and 'peak spacing' counted 0 in P16's body, 0 in p0, 6 in P15 --- plus the header-comment provenance of the withdrawn draft
@@ -2146,7 +2156,7 @@
 \item[\label{rcpt:E53_link_c_was_never_L533s}\texttt{E53\_link\_c\_was\_never\_L533s}]\hfill\textsf{[OK]}\\
 \textit{sec:rules} \ (PO-9 link (c) was never L-533s: P6s Rule-2 argument grounds it, P12 and p0 both use it, and the chain is P6 to P12 and P6 to p0 --- so check 4s third failure was a mis-attribution and 4 now clears). 
 \emph{Computes:} asserts PO-9s own listing of (c), P12s and p0s statements verbatim, P12s citation to P6, and P6s Rule-2 argument (7 checks)
- \emph{Bound:} NOT-A-PAPER-CLAIM --- clears a kill receipts check; the authorisation is Daryls
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- clears a kill receipts check; the authorisation is outside any nodes reach by kind
 \ \emph{Run:} \texttt{python3 receipts/L175\_dimensional\_descent/E53\_link\_c\_was\_never\_L533s.py}
 \item[\label{rcpt:B15_po3_both_clauses_answered}\texttt{B15\_po3\_both\_clauses\_answered}]\hfill\textsf{[OK]}\\
 \textit{sec:whichthree} \ (PO-3 is answered in BOTH clauses --- the WHY by the mass functions parity in the signed offset, and the BRIDGE by the wall monodromies generating SU(3) --- and both were already in its own row). 
@@ -2308,4 +2318,69 @@
 \emph{Computes:} asserts the owed-test and circularity clauses verbatim, computes the triality of four channels, and matches the count against P14s own sentence (8 checks)
  \emph{Bound:} NOT-A-PAPER-CLAIM --- the SELECTION agrees; the derived-vs-assumed identification is untouched, and the paper edit is routed
 \ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B24\_the\_triality\_test\_run.py}
+\item[\label{rcpt:C31_half_one_owes_a_rule}\texttt{C31\_half\_one\_owes\_a\_rule}]\hfill\textsf{[OK]}\\
+\textit{frontier:scalar} \ (PO-10s half (1) is NOT the banked test: L-147 holds parameters FIXED while half (1) is a REFIT --- and the arms are asymmetric (CR fits on one calibrated Omega\_m; flat LCDM analyses carry six), so what is owed FIRST is the comparisons RULE). 
+\emph{Computes:} asserts P7s refit phrase, L-147s fixed-parameter wiring clause and its discharge line, and P15s three statements of CRs single free parameter (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- L-147s scope stands; whether the refit is runnable from this line is not established
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C31\_half\_one\_owes\_a\_rule.py}
+\item[\label{rcpt:C32_half_one_is_model_selection}\texttt{C32\_half\_one\_is\_model\_selection}]\hfill\textsf{[OK]}\\
+\textit{sec:frontiers} \ (PO-10s half (1) IS an information-criterion comparison: the corpus names "the likelihood-level model selection" while AIC/BIC/Akaike/Occam/Bayes-factor appear ZERO times --- and the penalty is computable now, dAIC=10.0 and dBIC=26.9 in CRs favour). 
+\emph{Computes:} asserts the model-selection phrase and the 215-bin count verbatim, word-boundary-checks five model-selection terms at zero across papers and receipts (excluding itself), and computes both penalties (9 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- k=6 is the standard flat-LCDM count and must be stated with any result; the chi\textasciicircum{}2 is unrun
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C32\_half\_one\_is\_model\_selection.py}
+\item[\label{rcpt:C33_the_threshold_corrected}\texttt{C33\_the\_threshold\_corrected}]\hfill\textsf{[OK]}\\
+\textit{sec:tensions} \ (THE THRESHOLD CORRECTED: r2709s k=1 was wrong --- P15 anchors A\_s at the first peak, so CR is k=2 --- and against Liddle/Jeffreys (dBIC 2 positive, 6 strong) the threshold is dBIC = 21.5, still 3.5x the strong line). 
+\emph{Computes:} asserts the anchored-amplitude and one-parameter-accommodation clauses verbatim, tables all four parameter-count pairs against the Jeffreys scale, and computes the AICc correction (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- no chi\textasciicircum{}2 is scored; the count must be restated with any result
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C33\_the\_threshold\_corrected.py}
+\item[\label{rcpt:C34_the_deliverable_is_a_pair}\texttt{C34\_the\_deliverable\_is\_a\_pair}]\hfill\textsf{[OK]}\\
+\textit{sec:tensions} \ (PO-10s DELIVERABLE IS A PAIR: the acoustic sector is open as PO-7, its phase freedom moves the gap 0.615 -> 0.408 and cannot close it --- but the freedom is DISCRETE, so k is unchanged and both branches are reported at the same threshold). 
+\emph{Computes:} asserts PO-7s object, the phase-lever and cannot-close clauses verbatim with both values, and shows the discrete choice leaves dBIC at 21.5 rather than 16.1 (5 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- neither branch is scored; that is the whole of what remains
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C34\_the\_deliverable\_is\_a\_pair.py}
+\item[\label{rcpt:S7_the_successor_was_misaimed}\texttt{S7\_the\_successor\_was\_misaimed}]\hfill\textsf{[OK]}\\
+\textit{sec:tower} \ (L-543 INHERITS r2677s WITHDRAWN OBJECT: it asks about a RUNNING background and the free tower sits on P10s own slicing at R = 12/alpha\textasciicircum{}2, CONSTANT --- and the layers late limit IS that value, so it asymptotes to it). 
+\emph{Computes:} computes both Ricci scalars, shows the layers late limit equals P10s constant under H -> 1/alpha, and pins the successors wording and the back-reaction clause from the row (6 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- withdraws a successor this line registered; the back-reaction question stands
+\ \emph{Run:} \texttt{python3 receipts/L165\_interacting\_tower/S7\_the\_successor\_was\_misaimed.py}
+\item[\label{rcpt:B25_the_scattering_object_exists}\texttt{B25\_the\_scattering\_object\_exists}]\hfill\textsf{[OK]}\\
+\textit{prop:wall} \ (PO-11s missing OBJECT is one line from the corpus own superpotential: W = lambda sqrt(f)/r gives Regge-Wheeler partners V\_pm = W\textasciicircum{}2 +- dW/dx that VANISH AT BOTH HORIZONS, so scattering states with continuum normalisation are DEFINED). 
+\emph{Computes:} asserts B3s superpotential and vanishing-at-every-horizon clauses verbatim, computes both partners at both horizons and mid-region, and confirms Regge-Wheeler appears nowhere in the papers (6 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- the SUSY-QM partner form is standard and applied not proved; completeness is untouched
+\ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B25\_the\_scattering\_object\_exists.py}
+\item[\label{rcpt:B26_the_spectrum_computed}\texttt{B26\_the\_spectrum\_computed}]\hfill\textsf{[OK]}\\
+\textit{prop:wall} \ (PO-11s SPECTRUM COMPUTED: the barrier from B3s superpotential solved on the tortoise line --- transmission 0.020 to 0.9997 across two decades, T=0.691 at the barrier top, and UNITARITY to six figures). 
+\emph{Computes:} locates the barrier peak, shows the tortoise width diverges logarithmically, integrates the scattering problem at five energies and checks abs(A)\textasciicircum{}2-abs(B)\textasciicircum{}2 = 1 throughout (5 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- one parameter value, V\_- not run, and COMPLETENESS is what remains
+\ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B26\_the\_spectrum\_computed.py}
+\item[\label{rcpt:B27_completeness_follows}\texttt{B27\_completeness\_follows}]\hfill\textsf{[OK]}\\
+\textit{prop:wall} \ (PO-11 CLOSES: completeness FOLLOWS rather than remaining --- V\_+ is bounded (sup 1.963) and exponentially decaying in x, which is Kato-Rellich plus the short-range condition, so bound tower plus continuum is complete). 
+\emph{Computes:} measures the sup over 20,000 points, shows a constant decay factor per unit tortoise length at two successive scales, and confirms the decay rate is scale-independent (5 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- Kato-Rellich and the spectral theorem are cited not re-derived; angular/flavour structure and coupling are untouched
+\ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B27\_completeness\_follows.py}
+\item[\label{rcpt:B28_a_cardinality_gap}\texttt{B28\_a\_cardinality\_gap}]\hfill\textsf{[OK]}\\
+\textit{sec:whichthree} \ (PO-4s gap is a CARDINALITY gap: the reflection generates a group of order 4 while the maximal torus is a continuum, so no product of reflections reaches it --- and PO-5s wall does NOT transfer, since it turns on connection data). 
+\emph{Computes:} computes the reflections group order and the tori distinctness, checks exponential-map and one-parameter-subgroup at zero while root-system/Weyl/Lie-algebra are present, and pins PO-5s wall clause (8 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- the cardinality argument fells one route, not every route; PO-4 is NOT walled
+\ \emph{Run:} \texttt{python3 receipts/L221\_the\_bridge/B28\_a\_cardinality\_gap.py}
+\item[\label{rcpt:C35_the_reference_is_F3}\texttt{C35\_the\_reference\_is\_F3}]\hfill\textsf{[OK]}\\
+\textit{sec:tensions} \ (THE REFERENCE FORK SETTLES ITSELF AND AGAINST THIS LINES FRAMING: BIC uses only DIFFERENCES, so F3 (same-instrument) is the score and the CAMB-206.4 comparison charges CR an instrument floor CAMB never pays). 
+\emph{Computes:} asserts L-147s floor definition and pipeline-wiring clauses verbatim, shows dBIC contains only a chi\textasciicircum{}2 difference, and confirms the threshold is invariant under the pair choice (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- corrects r2709-r2711s statement of what the threshold scores against; the threshold itself is unchanged
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C35\_the\_reference\_is\_F3.py}
+\item[\label{rcpt:S8_the_floor_follows}\texttt{S8\_the\_floor\_follows}]\hfill\textsf{[OK]}\\
+\textit{sec:lock} \ (PO-6 HAS BEEN CARRYING THE WRONG QUESTION: the complete Gamma-hat inherits its floor from the same non-degeneracy r2671 established, so boundedness is answered YES --- what remains is WHERE the spectrum sits relative to 3/4). 
+\emph{Computes:} asserts P10s promotion, inverse-square and Weyl-alternative clauses verbatim, quotes the straddle receipts does-not-need-a-lower-bound line, and shows the truncated coefficient goes negative where the full one stays positive (7 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- the spectrum is untouched; P10 explicitly declines the floor and the decomposition survives without it
+\ \emph{Run:} \texttt{python3 receipts/L165\_interacting\_tower/S8\_the\_floor\_follows.py}
+\item[\label{rcpt:C36_the_negative_is_the_envelope}\texttt{C36\_the\_negative\_is\_the\_envelope}]\hfill\textsf{[OK]}\\
+\textit{sec:envelope-consequence} \ ( SUPERSEDED r2725 (the check shared the runs own n\_s-held assumption, so agreeing to the same order confirmed only that both held it fixed) --- L-814s NEGATIVE IS NOT AN ARTEFACT: P15s own published envelope, scored against cosmic variance on 215 bins with no pipeline or fit, gives chi\textasciicircum{}2 \textasciitilde{} 1.6e5 against cc54s measured 5.05e4 --- the same order). 
+\emph{Computes:} evaluates the papers own exp[-(l/l\_D)\textasciicircum{}2(r\textasciicircum{}2-1)] across the band, scores it against cosmic-variance errors, reads cc54s floor finding from their receipt, and pins L-147s scope clause (6 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- no framework verdict; PO-7 protected and F5 reserves it
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C36\_the\_negative\_is\_the\_envelope.py}
+\item[\label{rcpt:C37_the_comparison_is_not_matched}\texttt{C37\_the\_comparison\_is\_not\_matched}]\hfill\textsf{[OK]}\\
+\textit{sec:envelope-consequence} \ (L-814s COMPARISON IS NOT MATCHED and its number is WITHDRAWN as a result: the CR arm was held at k=2 with n\_s fixed at LCDMs fitted value, and freeing the tilt alone removes 15.6x). 
+\emph{Computes:} computes the envelope chi\textasciicircum{}2 with the tilt held and free, shows the threshold barely moves for the extra parameter, and reads cc54s own relative statement from their receipt (5 checks)
+ \emph{Bound:} NOT-A-PAPER-CLAIM --- the k=2 spec was this lines at r2710; a matched comparison is not claimed to pass
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/C37\_the\_comparison\_is\_not\_matched.py}
 \end{description}\endgroup

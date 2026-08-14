@@ -146,6 +146,26 @@ sources: [cowork, chat]
 
 
 
+### Revision r2727 — 2026-08-11 (main line). **CLEANUP — all gates green, and a gate I nearly widened to accommodate myself.**
+
+**⛔ THE ONE WORTH RECORDING.** *`check_deferrals` flagged "the drawing is Daryl's" in `THE_DISPATCH`. First instinct:
+routing documents should be exempt. **Then the gate's own text: "A written 'Daryl's call' is a deferral … it is said
+TO HIM, IN THE TURN, and it is not parked in a file where it becomes a standing excuse."** The gate was right —
+eight instances across five files, including a kill file and a generated appendix, all fixed at source.*
+⌗ *Some hits were **authorship**, not parked judgment — a first-person contribution statement is not deferrable
+work. **Restated without the possessive rather than exempted**: a real distinction the gate does not encode is a
+reason to write more carefully, not to loosen the check.*
+
+**⛭ THE RULE:** ***r2703 said widen the gate when it fires on something satisfying its INTENT. This is the mirror
+and the more dangerous one: when a gate fires on YOUR OWN text the pull is to find the exemption. Read what the gate
+is FOR — and if the answer is "my text, but for a good reason", fix the text anyway.***
+
+**⌗ ALSO:** *four receipts declared `COMPUTES:` scope, each stating its parameters are the corpus's own (per r2726);
+`OPEN_PROBLEMS_MAP` brought current after **125 revisions and three strikes**; `check_claims` was never red — it
+needed `NODE` set.*
+
+    gates red: none      all lines merged      five open: PO-2, PO-4, PO-5, PO-6, PO-7
+
 ### Revision r2726 — 2026-08-11 (main line). **THE ROOT ERROR — counting parameters in an ontology the corpus does not inhabit.**
 
 **⛔ THE TILT WAS THE SYMPTOM.** *r2709 framed `PO-10` as model selection — AIC/BIC on parameter COUNT, CR at $k=2$

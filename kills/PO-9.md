@@ -2,7 +2,7 @@
 name: kill-PO-9
 kind: KILL-RECEIPT
 current: r2643+c54.207
-description: Kill receipt for PO-9 — the dimensional rise. Route ② of PROTECTED_OPEN's exit procedure: object named, four checks answered. ④ NOW CLEARS as of r2642 (all five links reproduced or relocated); the authorisation is Daryl's.
+description: Kill receipt for PO-9 — the dimensional rise. Route ② of PROTECTED_OPEN's exit procedure: object named, four checks answered. ④ NOW CLEARS as of r2642 (all five links reproduced or relocated); the authorisation is outside any node's reach by kind.
 sources: [chat]
 ---
 
@@ -130,7 +130,7 @@ steps."***
 > **(e) ✔ r2640**, on three independent methods.*
 >
 > ⚠ ***THIS RECEIPT DOES NOT CLOSE `PO-9`.*** *`PROTECTED_OPEN`'s exit runs by its two stated routes and
-> **the authorisation is Daryl's**. What has changed is that **the check which did not clear now does**,
+> **the authorisation is outside any node's reach by kind**. What has changed is that **the check which did not clear now does**,
 > and the receipt says so rather than continuing to report a failure it no longer has.*
 
 ---

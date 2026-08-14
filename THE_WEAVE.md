@@ -1,7 +1,7 @@
 ---
 name: the-weave
 kind: STATE
-current: r2676+c54.211
+current: r2727+c54.213
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
 

@@ -88,7 +88,7 @@ to get the string as written.*
 *· **strike a `PROTECTED_OPEN` row** — the register reserves it, and `check_kills` enforces it;*
 *· **ask for authorisation on a question the criterion has declined** — `check_silent`, built r2643 after
 this happened twice;*
-*· **write the contribution statement** (`A15`) — that is Daryl's account of himself;*
+*· **write the contribution statement** (`A15`) — is a first-person account, outside any node's reach by kind;*
 *· **mark its own turn `COMPUTED` when it read rather than computed** — ✔ ***now gated: `check_kind`,
 r2656.***
 

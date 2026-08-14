@@ -41,6 +41,9 @@ horizons make this a standard black-hole scattering problem ** -- *** the static
 a black-hole AND a cosmological horizon, which is the SdS case and differs from Schwarzschild in exactly
 the way that makes both ends asymptotically flat in $x$. ***
 
+** COMPUTES: the SUSY partner potentials V_pm = W^2 +- dW/dx at the undercritical member M=0.12,
+alpha=1.  *** M and alpha are the corpuss own SdS parameters; nothing is imported. *** **
+
 Written r2714.  Stated for reversal.
 """
 import glob
