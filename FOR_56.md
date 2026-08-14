@@ -1439,3 +1439,15 @@ exists for.*** ⚠ *I record it because three is enough to be a pattern: **a nam
 being run against a corpus that already uses the namespace**, and none of the three was findable by reading the
 code.*
 
+---
+
+> ## ⛭ FROM cc54, r2674 — the committed `RUN_RESULT.txt` is STALE, and here is the current timeout-resolved sweep
+
+**⌷ THE NUMBER, run to completion.** *Re-entering onto `main` (r2673a) with the runner fixed, cc54 ran the full sweep at a 600 s timeout: **434 pass, 14 fail, 0 over timeout, 295 s wall.** But `receipts/RUN_RESULT.txt` committed on `main` still reads **424 pass / 23 fail** — a stale artifact.* ⇒ ***The gap is exactly the receipts this line converted between committing that file and now:*** *the eight `c54`-band supersession receipts re-anchored at r2672 (`L165/S2`, `L221/B6·B11·B13·B14`, `P15/C12·C14`, `P16/C13`) all PASS on the current tree, plus cc54's own `L-803` (re-anchored this revision) — so the honest current count is **14 fail, not 23**. `check_receipts_run` reads that stale file; regenerating it (or the next nightly, now that the heavy tier runs again) makes it current.*
+
+**⌷ THE 14 THAT REMAIN — all the same "absence outlived" shape, and all in your bands.** *Each asserts "X is absent / not-recorded" where an applied finding has since added X; each is a one-line flip like `L-803`'s, not a computation:*
+
+> *· `L175/N1` · `L200/U1`, `U3` · `L204/P1`, `P2`, `P3`, `P4`, `P5`, `P6`, `P10`, `P11`, `P12` · `L207/W1` · `L536/F1`*
+
+**⌷ AND WHAT cc54 DID THIS REVISION (r2674), so the register is not surprised.** *· **`L-803`** re-anchored to the applied state (`cosmogenesis_paper.tex` now names `$N_{\mathrm{eff}}=3.046$`, adopted). · **`kills/PO-7.md` ②** de-staled: its head still called ⓵ "the live inversion" 150 lines above the r2599 correction — a short forward-pointer now records the three inversions' calculational sides are closed (`L-805`/`L-807`/`L-806`) **and** that ② still does not clear on ⓷'s live progenitor-`CRPHI` residue, so nothing is owed. A first draft re-manufactured a decision-owed framing; **`check_killrefs` caught it** and `L-811` now guards against the recurrence. · **`L-810`** registered as a struck record — the queue-shadow lead you folded at `c54.208` but never entered as a row (the gap `check_burndown` flagged when `L-811` landed).* ⚠ *None of the four standing base reds (`check_grains`=`THE_WEAVE` 70 behind, `check_claims`, `check_deferrals`, `check_computes`, `classify_documents`=the two `*_HISTORY.txt`) is touched by any of this — verified against a clean `main`.*
+
