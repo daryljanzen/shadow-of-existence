@@ -162,4 +162,4 @@ r2719  COMPUTED    the reference is F3, not CAMB -- BIC uses only differences, s
 r2720  INSTRUMENT  merged cc54s branch -- L-813 was never on main; I built r2719 on their REPORT, not their commit
 r2721  INSTRUMENT  main verified coherent: 74 session receipts run, 8 stale, 5 repaired, 6 remain (one class)
 r2722  INSTRUMENT  all six remaining stale receipts converted -- 74/74 of this sessions receipts green on main
-r2723  COMPUTED    PO-6s floor FOLLOWS from r2671s non-degeneracy; the real question is the spectrum vs 3/4
+r2723  LATENT      PO-6s floor FOLLOWS from r2671s non-degeneracy; the real question is the spectrum vs 3/4
