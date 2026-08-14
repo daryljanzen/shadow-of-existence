@@ -148,3 +148,4 @@ r2705  COMPUTED    triality from the colour content alone reproduces P14s channe
 r2706  INSTRUMENT  edited P14 and P3 directly: the false clause replaced, the null connectivity banked. Table 7.
 r2707  LATENT      diagnosis: a deadlock of two correct rules, held by verifying provenance instead of judging fit
 r2708  LATENT      PO-10 half 1 is NOT L-147: fixed-parameter vs refit, and the arms have 1 vs 6 free parameters
+r2709  COMPUTED    half 1 is AIC/BIC: dAIC=10.0, dBIC=26.9 in CRs favour; the terms are at ZERO in the corpus

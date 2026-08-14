@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2709 — 2026-08-11 (main line). **HALF ① IS AN INFORMATION CRITERION — and the corpus names the target while never using the tool.**
+
+**⌗ r2708 STOPPED AT "THE ROW OWES A RULE".** *Daryl named it in one line: **that is an AIC/BIC-type comparison**.
+It is, and the standard machinery answers it.*
+
+**⛔ AND THE CORPUS NAMES THE TARGET WITHOUT THE TOOL.** *P15 lists "the likelihood-level **model selection**" among
+its reaches — while, word-boundary matched across all seventeen papers and every receipt:*
+
+    AIC 0 · BIC 0 · Akaike 0 · Occam 0 · Bayes factor 0
+
+⇒ ***The programme has asked "does the likelihood arbitrate?" without ever writing the criterion that arbitrates
+between models of different SIZE.***
+
+**⛭⛭ AND THE PENALTY FOLLOWS FROM BANKED NUMBERS** — *`L-147`'s **215 TT bins**, CR at $k=1$ ("the single
+CMB-calibrated $\Omega_m$"), flat $\Lambda$CDM at $k=6$:*
+
+    Delta AIC = 2(6-1)   = 10.0          Delta BIC = 5 ln 215 = 26.9        both in CR's favour
+
+⇒⇒ ***CR may score up to 10 worse in $\chi^2$ (AIC) or 26.9 worse (BIC) and still be the PREFERRED model.***
+
+**⛭ THE RULE:** ***when a comparison looks bespoke, check whether it is a named standard problem first. Framing "one
+parameter against six" as something the corpus must invent a rule for was wrong — a reader who knew the field named
+it immediately. **A gap in the corpus's vocabulary reads as a gap in the field.****
+
+⚠ *The receipt counted its own text on the first run — **a survey must not be in its own sample**, the same class as
+r2697's citation-marker blindness one turn earlier.*
+
+⇒ *`PO-10` now owes a **number**, not a rule: the $\chi^2$ at CR's best $\Omega_m$ on the same bins, with the
+threshold stated — **preferred on BIC unless it exceeds $\Lambda$CDM's by 26.9**.*
+
 ### Revision r2708 — 2026-08-11 (main line). **`PO-10`'s HALF ① IS NOT THE BANKED TEST — and "a parameter refit" is not defined on both arms.**
 
 **⓵ THE IDENTITY CHECK FIRST**, *since this line got exactly that wrong twice today.*
