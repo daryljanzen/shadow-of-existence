@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2681 — 2026-08-11 (main line). **THIRTY-EIGHT SENTENCES REST ON RECEIPTS THAT PROVE ONLY THAT PYTHON EXITED ZERO.**
+
+**⛔ THE MEASUREMENT.** *Of 462 receipts, **12 carry no `assert` and no `check()` at all** — and **all twelve are
+cited in the papers, 38 citations**: `P15_expansion_law` 4×, `BRANCHPT_transmission_character` 4×,
+`P16_the_scalar_monodromy_is_four_pi_over_rho` 4×, nine more at 3× each.*
+
+**⌗ AND `check_receipt_asserts` (r2384) IS GREEN ON ALL TWELVE**, *because it accepts a `FAIL` token, a `PASS` token
+or an `np.allclose` as evidence of a failure path.*
+⇒ ***The c54.161 campaign's own repair note names the shape that misses: "**the checks above compute a PASS/FAIL
+boolean and ONLY PRINT IT**." The campaign fixed dozens of these by hand — and the gate written alongside it never
+learned the pattern.***
+
+**⛭ THE SHARPER TEST:** ***can the receipt change its EXIT CODE? `rc=0` is what a caller reads; the printed verdict
+is what nobody reads.***
+
+✔ *`check_receipt_exit` built, **seed-tested clean → 1 → 0**, wired — shipping **GREEN with the twelve as a declared
+backlog**, because ***a gate that fails for a known backlog trains its caller to skip it*** (cc54, c54.208). Routed
+as `FOR_54` item 30; nine are P15/P16 and the assertion each needs is a physics reading in another band.*
+
+**⛭⛭ THE RULE:** ***when a repair campaign fixes a class by hand, check that its GATE learned the pattern. The
+campaign's commit messages describe the defect precisely — and the gate written alongside it will usually test the
+symptom the first instance showed, not the shape the campaign kept finding.***
+
+⌗ *And a third false-positive kind for the unbanked sweep: **`certified` is corpus meta-vocabulary** about receipt
+quality, not physics.*
+
 ### Revision r2680 — 2026-08-11 (main line). **THE SWEEP'S SECOND FALSE POSITIVE — and fixing it halved the list.**
 
 **⌗ `monomial` SAT AT POSITION 4** *with 25 uses and zero in print — **and it is sympy's `coeff_monomial` API**,

@@ -114,3 +114,4 @@ r2677  COMPUTED    re-derived c54.210: invariants all const x alpha^-4 at D=4,5,
 r2678  LATENT      unbanked sweep: excentre at 35 uses in receipts, ZERO in print -- a sixth equivalence unbanked
 r2679  COMPUTED    colour at the CENTRE, isospin at the WEYL element -- opposite ends, so the debts differ in kind
 r2680  INSTRUMENT  monomial was sympys API -- unbanked.py now counts prose only; 91 -> 46 candidates
+r2681  LATENT      12 cited receipts cannot exit non-zero, 38 citations; check_receipt_asserts green on all of them

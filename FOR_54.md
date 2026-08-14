@@ -6,6 +6,34 @@ job: THE INBOX — what the observer line has found in the working fork's text a
 sources: [chat]
 ---
 
+## ⛔ 30 · TWELVE CITED RECEIPTS CANNOT EXIT NON-ZERO — routed r2681
+
+*Of 462 receipts, **12 carry no `assert` and no `check()` at all** — and **all twelve are cited in the
+papers, 38 citations in total**:*
+
+    P15_expansion_law                             4x
+    BRANCHPT_transmission_character               4x
+    P16_the_scalar_monodromy_is_four_pi_over_rho  4x
+    P15_the_progenitor_vacuum_is_negligible_too   3x    P15_the_second_arm_actually_run       3x
+    AS_amplitude_leftward                         3x    P15_verify_closedS3_nonsync          3x
+    P15_confront_lowell_data                      3x    P15_no_primordial_B_modes_uncond.    3x
+    P16_the_passage_is_phase_only_above_...       3x    P16_the_progenitor_composition_...   3x
+    P16_the_leading_order_interior_is_adequate    3x
+
+⇒ ***Thirty-eight sentences in print rest on a receipt that proves only that Python exited zero.***
+
+**⌗ AND `check_receipt_asserts` IS GREEN ON ALL TWELVE**, *because it accepts a `FAIL` token, a `PASS`
+token or an `np.allclose` as evidence of a failure path — and the c54.161 campaign's own repair note names
+exactly the shape that misses: "**the checks above compute a PASS/FAIL boolean and ONLY PRINT IT**".*
+
+✔ *`check_receipt_exit` built, **seed-tested clean → 1 → 0**, wired. It ships **GREEN with the twelve
+listed as a known backlog** — ***a gate that fails for a known backlog trains its caller to skip it***
+(cc54, c54.208). Each leaves the set when repaired.*
+
+⚠ **This line is not writing the twelve.** *Nine are P15/P16 — the cosmology band — and the assertion each
+needs is the claim its citing sentence makes, which is a physics reading in another band.*
+
+
 ## ⌗ 29 · THE EXCENTRE RESULTS ARE UNBANKED — routed r2678
 
 *`excentre` appears **35 times across 5 receipts** and **ZERO times in all seventeen papers**. Two results

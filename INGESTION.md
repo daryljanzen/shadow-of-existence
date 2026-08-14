@@ -93,7 +93,8 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2677   ---     folded c54.210 by re-derivation. PO-6 stays 54s -- their L-543 successor is the calculation.
     r2678   ---     unbanked.py built; excentre found and routed as FOR_54 item 29.
     r2679   ---     unbanked: pushforward -> colour at the CENTRE vs isospin at the WEYL element.
-    r2680   ---     CLAIMED: the next unbanked candidate -- monomial, 25 uses in receipts, 0 in print.
+    r2680   ---     monomial was sympys API; unbanked.py now counts prose only. 91 -> 46.
+    r2681   ---     CLAIMED: certified (22 uses, verify_ receipts) -- the next real unbanked candidate.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 
