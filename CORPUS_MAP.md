@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2761 — 2026-08-11 (main line). **THE THIRTY DROPPED BINS ARE THE DAMPING TAIL.**
+
+**⛭⛭ ⓵ THEY ARE $\ell=1759$–$2508$.** *`plik_lite` TT declares 215 bins over $\ell=30$–$2508$; the arm's binner
+writes `nan` when a bin exceeds the model array, and **exactly 185 survive when the model ends near
+$\ell=1760$**.*
+
+    bin 185 spans ell 1759 .. 1775        bin 214 spans ell 2476 .. 2508
+
+**⛔⛭⛭ ⓶ WHICH IS THE ONE REGION THE ROW EXISTS FOR.** *P15 names its exposed edge as "the $8.2\%$ damping-scale
+signature … whose observable consequence awaits the **high-$\ell$ acoustic transfer**".*
+⇒ ***The thirty missing bins ARE the high-$\ell$ acoustic transfer. The instrument discards exactly the region the
+signature lives in.***
+
+**⓷ AND THE SIGNAL THERE IS THE LARGEST IT GETS.**
+
+    ell = 1000    8.4% down
+    ell = 1760   23.8% down      <- the cut
+    ell = 2508   42.3% down      <- the last dropped bin
+
+⇒ ***The thirty bins thrown away are the thirty where the prediction is strongest.***
+
+**⓸ AND IT SUPERSEDES r2760's BLOCKER.** *That named a calibration fix on the control's $\chi^2/\mathrm{dof}=7$.
+**That is a defect on the bins that ARE scored; this is a defect in WHICH bins are scored, and no improvement in the
+first reaches the second.***
+
+**⛭ THE RULE:** ***when an instrument fails to discriminate, check WHAT IT MEASURED before you tune HOW WELL it
+measured. A calibration number is loud and a missing range is silent — and the range usually decides whether the
+test could have worked at all.***
+
+⌗ *It also explains F6's verdict mechanically: "both arms remain outside the regime in which plik_lite
+discriminates" is partly true **because the arm removed the regime in which it would discriminate for this
+prediction**.*
+
 ### Revision r2760 — 2026-08-11 (main line). **THE CONTROL IS AT 7.14, NOT ~100 — the receipt's prose aged and r2759 quoted it.**
 
 **⛔ ⓵ THE FILE DISAGREES WITH ITSELF.**
