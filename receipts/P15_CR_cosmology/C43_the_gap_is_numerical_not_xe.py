@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""C43 -- r2750's diagnosis is WITHDRAWN: the $x_e$ response is two orders too small, and the damping
+"""C43 -- ⛔ **SUPERSEDED r2752 ON ITS OWN ⓶.**  *** The "7.1% miss" is not 7% and not a defect:
+CAMB's `thetad` implies $r_D=22.30$Mpc on the convention `thetastar` uses, against the
+integrator's ~6.6 -- a factor of 3.39, consistent with a Hu--Sugiyama normalisation.  **And a
+normalisation acts on BOTH arms, so it cancels identically in a ratio.**  The real cause is
+TRUNCATION at $z=12000$; see `C44_the_gap_is_truncation`.  ** What survives: ⓵ stands -- the
+$x_e$ response IS two orders too small, measured. ** ***
+
+C43 -- r2750's diagnosis is WITHDRAWN: the $x_e$ response is two orders too small, and the damping
 gap is a numerical one the CAMB receipt reports on itself.
 
 ** ⛔ ⓵ r2750 WAS WRONG, AND THIS RECEIPT RETRACTS IT FIRST. **  *** r2750 diagnosed the $10.83$-vs-

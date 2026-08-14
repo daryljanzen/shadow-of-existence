@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2752 — 2026-08-11 (main line). **THE DAMPING GAP IS TRUNCATION — and r2751 is withdrawn on a structural point.**
+
+**⛔ ⓵ A NORMALISATION FACTOR CANCELS IN A RATIO.** *r2751 blamed a "$7.1\%$ miss". CAMB's `thetad` implies
+$r_D=22.30$Mpc on the convention `thetastar` uses (verified: $\theta_*/100\times D_A = 144.443 =$ `rstar`
+exactly), against the integrator's $\sim6.6$ — **a factor of $3.39$**, consistent with a Hu–Sugiyama normalisation
+($\sqrt{12}=3.46$).*
+⇒ ***And it acts on BOTH arms, so it cannot move their ratio. **r2751 withdrawn.****
+
+**⛭⛭ ⓶ THE UPPER LIMIT DOES NOT CANCEL.**
+
+    z_max = 2000    +8.33%        z_max = 12000   +9.87%   <- the receipt's grid ceiling
+    z_max = 5000    +9.56%        z_max = 50000   +9.94%   converged
+
+⇒ ***The receipt's grid stops at $z=12000$, **still climbing**. And it does not cancel for a reason: **the two arms
+differ precisely in their high-$z$ behaviour**, which is exactly what the cutoff removes.***
+
+**⓷ RESIDUAL NAMED AND ACCOUNTED.** *Converged $+9.94\%$ against C8's $+10.83\%$; the $0.9$pp is C8's STEP 6 baryon
+weighting ($+10.68\to+10.83$) plus its seam-carried radiation density ($+10.68$ vs $+10.02$, measured r2750).*
+
+**⛭ THE RULE:** ***for a discrepancy in a RATIO, ask FIRST what differs between the two arms — not what might be
+wrong in general. A shared normalisation, a shared $x_e$, a shared baryon term all divide out, and any hypothesis
+that touches both equally is dead before it is sized.***
+
+⌗ ***Two withdrawals in three revisions, both caught by pushing one step further. Each time the next test was
+cheaper than defending the last answer.***
+
 ### Revision r2751 — 2026-08-11 (main line). **r2750 WITHDRAWN — the mechanism was real and two orders too small.**
 
 **⛔ ⓵ SIZED, AND IT FAILS.** *r2750 blamed C8's $x_e$ cancellation. Varying $N_{\rm eff}$ is a **pure $H$ probe** —
