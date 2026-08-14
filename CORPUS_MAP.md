@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2658 — 2026-08-11 (main line). **`PO-12`'s step ② IS SIX-EIGHTHS BUILT — a debt framed as "a genuine build, not a plug-in".**
+
+**⌗ ENUMERATING WHAT A $k\to C_\ell$ TRANSFER NEEDS:**
+
+    ✔ the driving in closed form   Phi = 3(sin x - x cos x)/x^3   -- VERIFIED here, not taken
+    ✔ source removal, exact        Theta'' + (k^2/3)Theta = 0
+    ✔ amplitude at horizon entry   "fixed by the construction rather than fitted"
+    ✔ the sound horizon            r_s = 146.4 Mpc
+    ✔ the diffusion scale          10.8% longer on the radiation-free rate
+    ✔ the baryon loading           R_b = 0.60
+    ⛔ the visibility function      not located
+    ⛔ the absolute k -> l integral
+
+**⛭⛭ AND THE PROJECTION IS CALIBRATED:** *"$\ell_*=D_M/r_s=302.2$ against the measured $301$" — the map's one
+CR-specific input, **within 0.4%**.*
+
+**⇒⇒ ⛭⛭⛭ AND A $C_\ell$ RATIO WITH NO FREE PARAMETER IS ALREADY IN THE PAPER:**
+*$C_\ell^{\rm CR}/C_\ell^{\Lambda\rm CDM}=\exp[-(\ell/\ell_D)^2(r^2-1)]$, $r=1.093$ — recomputed here as
+**0.823 against its stated 0.82**.*
+⇒ ***Which is exactly the transfer-free shape r2647 named: SAME multipole, two rates. The route was not merely
+available — it had been walked at $C_\ell$ level, and no register said so.***
+
+**⛭ THE RULE:** ***when a paper calls a debt "a genuine build", enumerate the build's PARTS before believing the
+framing. A debt is described by whoever felt it hardest — and by the time it reaches a register, the parts that have
+since been built are still inside the description.***
+
+⌗ *What remains is the **absolute spectrum**: the visibility-weighted line-of-sight integral turning $\Theta(k)$
+into $C_\ell$ itself rather than into a ratio. ***The bespoke part is the physics, and the physics is built.***
+⌗ *And the narrowing propagates: `PO-10`'s gate now holds on **shape** — its odd/even pattern needs the absolute
+spectrum; anything expressible as a ratio at fixed $\ell$ does not.*
+
 ### Revision r2657 — 2026-08-11 (main line). **A COORDINATION PROTOCOL BUILT AND REMOVED IN ONE REVISION — the channel already existed.**
 
 **⛔ THE OVER-BUILD.** *Told to parallelise, this line surveyed the collision surface — **every one of the last
