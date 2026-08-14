@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""C42 -- the damping discrepancy DIAGNOSED: C8's cancellation needs $x_e(a)$ identical in both
+"""C42 -- ⛔ **SUPERSEDED r2751: THE MECHANISM IS REAL AND TWO ORDERS TOO SMALL.**  *** A pure
+$H$ probe (varying $N_{\\rm eff}$, which changes $H$ and does no recombination physics) moves $z_*$
+by $-0.195\\%$; scaled by this receipt's own measured sensitivity that is ~$0.05$pp against a
+$1.86$pp gap.  The real cause is a $7.1\\%$ validation miss the CAMB receipt prints about its own
+arm.  See `C43_the_gap_is_numerical_not_xe`.  ** What survives: the cancellation condition IS
+unmet, and the eliminations in ⓵ stand. ** ***
+
+C42 -- the damping discrepancy DIAGNOSED: C8's cancellation needs $x_e(a)$ identical in both
 cosmologies, and a different $H(a)$ changes the recombination HISTORY and not only its epoch.
 
 ** THE DISCREPANCY, surfaced at r2749. **  *** `C8` derives $+10.83\\%$; `P15_damping_ratio_clean`

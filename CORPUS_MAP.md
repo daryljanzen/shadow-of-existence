@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r2751 — 2026-08-11 (main line). **r2750 WITHDRAWN — the mechanism was real and two orders too small.**
+
+**⛔ ⓵ SIZED, AND IT FAILS.** *r2750 blamed C8's $x_e$ cancellation. Varying $N_{\rm eff}$ is a **pure $H$ probe** —
+neutrinos change $H(a)$ and do no recombination physics:*
+
+    N_eff 3.046 -> 1.000    zstar 1089.904 -> 1087.780    = -0.195%
+    scaled by r2750's own sensitivity (0.92% in z_* -> 0.09pp in r_D):  ~0.02pp
+    all the radiation:                                                  ~0.05pp
+    THE GAP:                                                             1.86pp
+
+⇒ ***A correct mechanism is not a diagnosis until it is sized. r2750 had a plausible story, checked that it was
+physically real, and never asked whether it was BIG ENOUGH.***
+
+**⛭⛭ ⓶ AND THE REAL CAUSE IS PRINTED BY THE CAMB RECEIPT ABOUT ITSELF.**
+
+    [GATE] radincl pi*r_D/r_s = 0.1434  vs CAMB thetad/thetastar = 0.1544     a 7.1% miss
+
+⇒ ***Its own $\Lambda$CDM arm misses CAMB's derived damping scale, and its ratio $1.0897$ is built from two $r_D$
+values each carrying that error — the right size to move a ratio by $1.86$pp.***
+
+⌗ ***Third time in this arc a receipt's own self-reported line held the answer: C8's `PROVIDED` clause,
+`damping_ratio_clean`'s ARTIFACT block, and now its GATE line. **These receipts are written honestly enough to
+convict themselves, and nobody was reading the lines where they do.****
+
+**⓷ SO THE ADJUDICATION RUNS THE OTHER WAY:** *$+10.83\%$ is better founded. ⚠ **Not a licence to make the tilde
+precise** — two receipts still disagree, one now with a KNOWN defect, and the honest next step is fixing the CAMB
+arm's $r_D$ integration.*
+
+**⛭ THE RULE:** ***size the mechanism before you name it the cause. "Could this explain it?" and "is this the right
+ORDER?" are different questions, and only the second one closes.***
+
+⌗ *`check_kind` did not know CAMB or scipy exist — **a whitelist of tools is a proxy for the property, and it goes
+stale the moment a receipt reaches for a tool nobody had used yet**. Widened.*
+
 ### Revision r2750 — 2026-08-11 (main line). **THE DAMPING DISCREPANCY DIAGNOSED — C8's cancellation needs $x_e$ identical.**
 
 **⓵ FOUR EXPLANATIONS TESTED AND ELIMINATED.**

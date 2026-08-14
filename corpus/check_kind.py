@@ -54,7 +54,13 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..'))
 
 GRANDFATHERED = {'r2635', 'r2637', 'r2649'}
-NUMERIC = re.compile(r'import numpy|import sympy|np\.\w|sp\.\w')
+# ** r2751: the test did not know CAMB or scipy exist, so a receipt that runs a Boltzmann
+# code five times read as computing nothing.  *** The gate was measuring which LIBRARY was
+# imported, not whether anything was computed -- and numpy/sympy happened to be the two this
+# corpus reached for first.  A whitelist of tools is a proxy for the property, and it goes
+# stale the moment a receipt reaches for a tool nobody had used yet. ***
+NUMERIC = re.compile(r'import numpy|import sympy|import camb|import scipy|from scipy'
+                     r'|np\.\w|sp\.\w|camb\.\w|quad\(|solve_ivp\(|brentq\(')
 
 
 def main():
