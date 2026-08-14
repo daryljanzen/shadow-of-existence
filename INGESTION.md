@@ -76,6 +76,7 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2658   PO-12   six-eighths built; what remains is the ABSOLUTE spectrum (visibility + LOS integral)
     r2659   PO-12   CORRECTED: the instrument carries both. The debt is the BACKGROUND it runs on -- H(a).
     r2660   PO-12   sharpest form: TWO legs joined at the branch point, L1 rate for every expansion-leg observable
+    r2661   PO-12   THE JOIN IS COMPUTED: Phi_exp/Phi_coll = 9/10, super-horizon. Sub-horizon modes next.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

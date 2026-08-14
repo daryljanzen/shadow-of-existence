@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r2661 — 2026-08-11 (main line). **THE BRANCH-POINT JOIN COMPUTED — exactly $9/10$, and applied once where $\Lambda$CDM spreads it over equality.**
+
+**⌗ THE DEBT AND ITS MATCHING CONDITION, one sentence apart in P15.** *"**a computed transfer function across the
+branch point is not yet in hand**" — and "**the branch point TRANSMITS that content rather than imprinting one of
+its own**".*
+⇒ ***"Transmits" is a CONSERVATION statement. What is conserved across a change of background content on
+super-horizon scales is the comoving curvature perturbation $\mathcal R$ — so the join is a CHANGE OF VARIABLE, not
+a new dynamics.***
+
+**⛭⛭ AND THE VALUE FOLLOWS IN CLOSED FORM.** *$\mathcal R/\Phi=(5+3w)/(3+3w)$ gives $3/2$ for radiation, $5/3$ for
+matter:*
+
+    Phi_expansion / Phi_collapse  =  (3/2)/(5/3)  =  9/10,  exactly
+
+**⛭⛭⛭ AND CR APPLIES IT ONCE WHERE $\Lambda$CDM SPREADS IT.**
+*· **$\Lambda$CDM**: the potential decays through equality, "**still some four per cent above its asymptote at
+recombination**", and ***that residual decay sources an early ISW term***;*
+*· **CR**: the content changes AT the branch point and the expansion leg is "**matter-dominated to nine orders**",
+so the potential sits ***at its asymptote from the start*** and there is ***no early ISW to source***.*
+⇒⇒ ***Same factor, different route — and the 4% is the observable difference the paper had already located without
+connecting it to the join.***
+
+**⌗ SO $9/10$ IS NOT A CORRECTION BUT A BOUNDARY CONDITION.** *$\Phi$ is constant on the expansion leg, so it holds
+from the branch point to recombination with no further evolution. **The collapse-leg half is `sec:envelope`'s closed
+form; the expansion-leg half is a constant.***
+
+**⛭ THE RULE:** ***when a paper says a boundary "transmits", read it as a conservation law and ask WHICH quantity.
+A verb describing what a boundary does to content is a matching condition wearing prose — and the computation it
+licenses may be a change of variable rather than a build.***
+
+⚠ *Super-horizon only; sub-horizon modes and the dynamical crossing stay deferred.*
+
 ### Revision r2660 — 2026-08-11 (main line). **"BESPOKE" MEANS TWO BACKGROUNDS JOINED AT THE BRANCH POINT — and the apparent contradiction was the structure.**
 
 **⚠ THE APPARENT CONTRADICTION.** *`sec:envelope`'s driving uses $4/\eta$ friction — the **radiation-dominated**
