@@ -85,7 +85,8 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2667   PO-5    P14 already walls holonomy AND isometry. Real content: is there a THIRD mechanism?
     r2669   PO-11   obstruction is HORIZON-located, not singularity-located -- the ordinary scattering problem
     r2671   PO-6    D3 WITHDRAWN on 54's finding. PO-6 is FREE -- 54 has the live thread there.
-    r2672   ---     CLAIMED: the 14 self-falsifying absence-assertions (my defect, r2670). Not a PO row.
+    r2672   ---     CLAIMED: the 14 self-falsifying absence-assertions (my defect, r2670). DONE 40/40.
+    r2673   ---     CLAIMED: TRIAGE of the remaining receipt failures by CLASS. Not repairs -- 54 owns 23.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

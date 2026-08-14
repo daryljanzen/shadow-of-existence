@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r2673 — 2026-08-11 (main line). **"82 FAILING RECEIPTS" WAS MOSTLY A TIMEOUT — the honest number is 17.**
+
+**⌗ THE TRIAGE.** *r2670 reported 82 failures. Re-running each and reading its reason:*
+
+    41  TIMEOUT                  -- this line's 45-second limit, not a failure
+    21  NOW PASSES               -- the first run was against a pre-merge tree
+    17  CHECK FAILED             -- real
+     3  ModuleNotFoundError      -- pynucastro absent from the environment
+
+⇒ ***The 82 was an artefact of the instrument — **the fifth measurement error this session**, and this time in the
+direction that makes the corpus look WORSE than it is, which at least inverts the usual bias.***
+
+**⛔ AND TWO OF THE 17 WERE FALSIFIED BY THIS LINE, IN ANOTHER BAND.** *`R2_the_contribution_is_unlinked_not_undefined`
+asserts "`COMPANION_SPEC.md` mentions CREDO ZERO times" — and **r2638 linked it, acting on that receipt's own
+finding**. `R1` asserts the spec carries no ordering language — **r2637 computed the approach order**.*
+⇒⇒ ***The receipts were RIGHT, their findings were ACTED ON, and the acting is what broke them.***
+
+**⛭ THE RULE:** ***before reporting a failure count, re-run and read WHY each failed — a count from one runner with
+one timeout is a claim about the runner, not the corpus. And a receipt whose finding gets acted on must be updated
+BY the turn that acts: the action is what falsifies it, and nobody else will connect the two.***
+
+✔ *Both repaired to assert the state the corpus now holds, findings preserved. **`L-218` is another band, so the
+edits are minimal and stated.***
+
 ### Revision r2672 — 2026-08-11 (main line). **TEN SELF-FALSIFYING RECEIPTS CONVERTED — 40 of 40 now pass.**
 
 **⛔ THE CLASS.** *Of 40 receipts this line wrote in `r2626`–`r2671`, **8 failed**, every one the same shape:*

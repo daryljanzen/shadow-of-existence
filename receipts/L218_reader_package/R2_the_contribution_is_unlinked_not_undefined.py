@@ -98,11 +98,19 @@ def main():
 
     # ⓶ nothing points at it
     for doc in ('COMPANION_SPEC.md', 'THE_DISPATCH.md', 'THE_REMAINING_WORK.md'):
-        check(f'⛔ and {doc} mentions CREDO ZERO times', 'CREDO' not in read(doc))
+        # ** r2673: r2638 LINKED CREDO from THE_REMAINING_WORK and THE_DISPATCH on the observer
+        # line, so this assertion -- true when written -- is now false.  *** Assert the state the
+        # corpus HOLDS: the account is reachable.  The receipt's finding is unchanged; what was
+        # unlinked has been linked, which is what it asked for. *** **
+        check(f'✔ and {doc} NOW carries CREDO (r2638 linked it; it was ZERO when this receipt '
+              'was written)', 'CREDO' in read(doc))
 
-    check('⇒⇒ SO A15 IS NOT UNDEFINED AND NOT HELD FOR SEQUENCING -- its content was worked for an '
-          'ARTICLE and never linked to the reader package',
-          len(credo) > 500000 and 'CREDO' not in read('COMPANION_SPEC.md'))
+    # ** r2673: the second conjunct was falsified by r2638's linking.  *** The receipt's FINDING --
+    # A15 is unlinked, not undefined -- is what prompted the linking, so the size claim is what
+    # survives as a check and the linkage is now asserted positively above. ***
+    check('⇒⇒ SO A15 WAS NOT UNDEFINED BUT UNLINKED -- its content was worked at length for an '
+          'ARTICLE, and r2638 linked it to the reader package on that finding',
+          len(credo) > 500000 and 'CREDO' in read('COMPANION_SPEC.md'))
 
     print()
     if FAILED:
