@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r2721 — 2026-08-11 (main line). **MAIN WAS COMPLETE AND NOT COHERENT — 8 of 74 session receipts stale.**
+
+**⌗ COMPLETE, VERIFIED:** *`line/54`, `line/56` and cc54's branch all show **0 commits not on main**.*
+**⛔ COHERENT, NOT:** *running this session's 74 receipts against merged main, **8 failed**.*
+
+    KeyError on a STRUCK row (2)   a struck tag is `~~**PO-11**~~`; a reader matching only the
+                                   unstruck form loses the row and dies on the corpus moving FORWARD
+    stale assertion (6)            B24 asserting P14 "owes" a test edited out at r2706; C32 asserting
+                                   AIC appears nowhere while C33/C35 now name it; A7 asserting a 5+2
+                                   balance two strikes out of date
+
+**✔ FIVE REPAIRED.** *`B24` now asserts the paper's new sentence; `C32` excludes the work its own finding produced;
+`A7` **derives** its balance from the register rather than naming it, and its row lookup survives a strike; `A3` and
+`A4` read struck tags, and `A4` converts to a regression guard on the filling.*
+
+**⛭ THE RULE:** ***a receipt must assert what the corpus HOLDS, never what it LACKS or how MANY of something there
+are. Both go stale the moment the finding is acted on — and acting on the finding is the point. Where a count is
+genuinely the claim, DERIVE it.***
+
+⌗ *cc54's c54.213 principle is the conversion for the rest: **an absence receipt that fails because its finding was
+acted on is a SUCCESS** — convert to a regression guard on the filling, naming the revision that did it. **6
+remain**, recorded rather than rushed: each needs reading individually, and converting by pattern is what r2682
+warned against.*
+
 ### Revision r2720 — 2026-08-11 (main line). **cc54's BRANCH MERGED — `L-813` was never on main, and r2719 was built on their REPORT.**
 
 **⛔ THE PROMPT: "did you commit cc54's work to main?"** *No. They said "Pushed"; this line read the report, wrote

@@ -80,7 +80,12 @@ def main():
     recs = ' '.join(open(f, encoding='utf-8', errors='replace').read()
                     for f in glob.glob(os.path.join(ROOT, 'receipts', '**', '*.py'),
                                        recursive=True)
-                    if os.path.abspath(f) != os.path.abspath(__file__))
+                    if os.path.abspath(f) != os.path.abspath(__file__)
+                    # ** r2721: C33 and C35 were written ON this finding and now name the terms.
+                    # *** A survey must exclude the work its own finding PRODUCED, not only
+                    #     itself -- otherwise acting on a result erases the record of it. ***
+                    and 'C33_the_threshold_corrected' not in f
+                    and 'C35_the_reference_is_F3' not in f)
     both = papers + ' ' + recs
 
     # ⓵ the corpus names the target

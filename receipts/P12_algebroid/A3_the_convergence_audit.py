@@ -64,8 +64,11 @@ def main():
     print('  A3 -- has the unknown space narrowed, and is the remaining work finite?')
     print()
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
+    # ** r2721: a STRUCK row's tag is `~~**PO-11**~~`.  *** A reader that matches only the
+    # unstruck form loses the row entirely and raises KeyError -- so the receipt dies on
+    # the corpus moving FORWARD, which is the one thing a record must survive. ***
     rows = {re.search(r'PO-\d+', l).group(0): l
-            for l in raw.split('\n') if re.match(r'\|\s*\*\*PO-\d+\*\*', l)}
+            for l in raw.split('\n') if re.match(r'\|\s*~*\*\*PO-\d+\*\*', l)}
 
     answered = [t for t, l in rows.items() if 'QUESTION IS ANSWERED' in l]
     check(f'⓵ exactly {len(answered)} rows are marked ANSWERED ({", ".join(sorted(answered))}) -- and '

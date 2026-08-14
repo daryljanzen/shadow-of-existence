@@ -78,8 +78,10 @@ def main():
     # ⓵ the item, and why it is owed
     check('⓵ P14 owes it: "A genuine test would compute the triality from the colour content '
           'independently of the charge, and this sector does not yet do so"',
-          'compute the triality from the colour content independently of the charge, and this sector '
-          'does not yet do so' in p14)
+          # ** r2721: r2706 EDITED that sentence out of P14 -- the paper now STATES the test.
+          # *** Assert the state the corpus HOLDS: the test is in print with its receipt. ***
+          'A genuine test computes the triality from the colour content independently of the '
+          'charge' in p14 and 'B24_the_triality_test_run' in p14)
     check('because the present agreement is circular: "the triality class is the fractional part of the '
           'charge, so the two predicates are the same predicate"',
           'the triality class \\emph{is} the fractional part of the charge' in p14)

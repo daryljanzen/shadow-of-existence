@@ -64,6 +64,10 @@ def check(label, cond):
 
 
 def main():
+    _raw14 = open(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex'),
+                  encoding='utf-8', errors='replace').read()
+    p14 = re.sub(r'\s+', ' ', '\n'.join(x for x in _raw14.split('\n')
+                                        if not x.lstrip().startswith('%')))
     print()
     print('  A4 -- the LEDGER 7, swept as a group')
     print()
@@ -77,7 +81,7 @@ def main():
 
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
     po = {re.search(r'PO-\d+', l).group(0): l
-          for l in raw.split('\n') if re.match(r'\|\s*\*\*PO-\d+\*\*', l)}
+          for l in raw.split('\n') if re.match(r'\|\s*~*\*\*PO-\d+\*\*', l)}
 
     # ⓶ the three duplicates
     for hid, phrase, tag in (
@@ -98,10 +102,15 @@ def main():
           'Half a result, marked as half' in led['3e6a969eb5'][1])
 
     # ⓸ the one real item
-    check('⓸ while 3ebe33bce1 is a real unrun test: "A genuine test would compute the triality from the '
-          'colour content independently of the charge, and this sector does not yet do so"',
-          'compute the triality from the colour content independently of the charge, and this sector '
-          'does not yet do so' in led['3ebe33bce1'][1])
+    # ** r2721, on cc54's c54.213 principle: *** an absence receipt that fails because its
+    # finding was ACTED ON is a success -- flipping the comparison would throw that away.
+    # The triality test was RUN at r2705 and P14 EDITED at r2706, so this converts to a
+    # REGRESSION GUARD on the filling, naming the revision that did it. ***
+    check('⓸ while 3ebe33bce1 was a real unrun test when this swept -- RUN at r2705 and banked '
+          'into P14 at r2706, so the guard is now on the FILLING: the paper states the test '
+          'and cites its receipt',
+          'A genuine test computes the triality from the colour content' in p14
+          and 'B24_the_triality_test_run' in p14)
     check('and it is NOT a duplicate -- the phrase appears in no PO row',
           not any('triality from the colour content' in v.lower() for v in po.values()))
 

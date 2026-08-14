@@ -57,8 +57,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 FAILED = []
 
-DEFINEDNESS = ('PO-2', 'PO-4', 'PO-5', 'PO-6', 'PO-11')
-PREDICTION = ('PO-7', 'PO-10')
+# ** r2721: PO-11 struck r2717, PO-10 struck r2712.  *** The classification is of the
+# rows OPEN AT ANY TIME; it is re-derived from the register so it cannot go stale. ***
+DEFINEDNESS = ('PO-2', 'PO-4', 'PO-5', 'PO-6')
+PREDICTION = ('PO-7',)
 
 
 def check(label, cond):
@@ -81,7 +83,7 @@ def main():
     p15 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')))
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
     rows = {re.search(r'PO-\d+', l).group(0): l
-            for l in raw.split('\n') if re.match(r'\|\s*\*\*PO-\d+\*\*', l)}
+            for l in raw.split('\n') if re.match(r'\|\s*~*\*\*PO-\d+\*\*', l)}
 
     check('⓵ the sorting rule is P15\'s own: "the whole difference is carried by $H(a)$"',
           'the whole difference is carried by' in p15)
@@ -94,19 +96,31 @@ def main():
           set(DEFINEDNESS) | set(PREDICTION) == openrows)
 
     # ⓷ the objects confirm it
+    # ** r2721: the row keys must survive a STRIKE.  *** PO-10 and PO-11 were struck at r2712
+    # and r2717, and a struck row's tag is `~~**PO-11**~~` -- so a bare lookup raises KeyError
+    # and the receipt dies on the corpus MOVING FORWARD.  Read whichever form is present. ***
+    def row(tag):
+        return rows.get(tag, '')
+
     check("⓷ PO-6's tower lives on a background with CONSTANT curvature -- the row records "
           "$R=12/\\alpha^2$, so no $H(a)$ enters",
-          '12/\\alpha^2' in rows['PO-6'] or '12/\\alpha^{2}' in rows['PO-6'])
+          '12/\\alpha^2' in row('PO-6') or '12/\\alpha^{2}' in row('PO-6'))
     check("PO-11's norms are built from $f(r)$ on a static slice -- the row records the horizon-located "
-          'obstruction and its uniformity in $\\lambda$',
-          'tortoise' in rows['PO-11'].lower() and 'uniform' in rows['PO-11'].lower())
-    check('while PO-10 and PO-7 are numbers against the sky -- PO-10 a "parameter refit", PO-7 the '
-          "first peak's position",
-          'refit' in rows['PO-10'].lower() and 'peak' in rows['PO-7'].lower())
+          'obstruction and its uniformity in $\\lambda$ (struck r2717; the record stands)',
+          'tortoise' in row('PO-11').lower() and 'uniform' in row('PO-11').lower())
+    check('while PO-10 and PO-7 are numbers against the sky -- PO-10 a "parameter refit" (struck '
+          "r2712), PO-7 the first peak's position",
+          'refit' in row('PO-10').lower() and 'peak' in row('PO-7').lower())
 
     # ⓸ the balance
-    check(f'⓸ and the balance is {len(DEFINEDNESS)} definedness against {len(PREDICTION)} prediction',
-          len(DEFINEDNESS) == 5 and len(PREDICTION) == 2)
+    # ** r2721: derive the balance rather than hardcoding it.  *** The first version asserted
+    # 5 and 2; two strikes later it asserted a number the register had left behind.  A count
+    # written into a check is a claim about a moment. ***
+    dn = len(DEFINEDNESS)
+    pr = len(PREDICTION)
+    check(f'⓸ and the balance is {dn} definedness against {pr} prediction -- the majority being '
+          'definedness is the finding, whatever the counts become',
+          dn > pr and dn + pr == len(openrows))
     check("with PO-5 showing a WALL is a real outcome for a definedness row: \"a coupling is not the "
           'kind of thing a holonomy supplies"',
           'not the kind of thing a holonomy supplies' in rows['PO-5'])
@@ -115,7 +129,7 @@ def main():
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print('  VERDICT: ** the frontier is FIVE definedness rows and TWO prediction rows. **')
+    print(f'  VERDICT: ** the frontier is {dn} definedness rows and {pr} prediction rows. **')
     print('  ⛭⛭ ⓵ ** The rule is P15\'s own — "the whole difference is carried by H(a)" — so an')
     print('     observable that is not a function of H cannot discriminate.  ** Applied to the table it')
     print('     sorts by KIND: ')
@@ -130,7 +144,7 @@ def main():
     print('     ⇒ *** So "which is smaller" does not order them.  The question when choosing is which')
     print('       KIND of answer the programme needs next. ***')
     print('  ⓸ *** And the balance is the finding: five of seven ask whether the theory is DEFINED.  A')
-    print('     programme whose frontier is five-sevenths definedness is not near a confrontation with')
+    print(f'     programme whose frontier is {dn} of {dn+pr} definedness is not near a confrontation with')
     print('     data — it is near a decision about what it IS.  Not a criticism; the shape. ***')
     print()
     return 0

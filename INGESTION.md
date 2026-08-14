@@ -128,7 +128,9 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2716   PO-11   spectrum computed, unitarity to six figures.
     r2717   PO-11   STRUCK -- completeness FOLLOWS from boundedness + exponential decay. Five open.
     r2718   PO-4    gap is CARDINALITY: order 4 vs a continuum. PO-5s wall does NOT transfer.
-    r2719   PO-10   CLAIMED: pin the reference cc54 asks for -- F3 same-instrument vs BIC-against-CAMB.
+    r2719   PO-10   reference PINNED: F3. My CAMB framing charged CR a floor CAMB never pays.
+    r2720   ---     merged cc54s branch. All three lines now fully on main.
+    r2721   ---     CLAIMED: is main COHERENT, not just complete? Run everything against it.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 
