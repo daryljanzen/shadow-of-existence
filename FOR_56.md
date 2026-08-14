@@ -1,7 +1,7 @@
 ---
 name: for-56
 kind: RECORD
-current: r2577+c54.207
+current: r2670
 job: THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied.
 sources: [chat]
 ---
@@ -1343,4 +1343,21 @@ expected.*** *The other two were a directory's own paper tag (`P17_` six times) 
 exists for.*** ⚠ *I record it because three is enough to be a pattern: **a namespace lint learns its exceptions by
 being run against a corpus that already uses the namespace**, and none of the three was findable by reading the
 code.*
+
+
+---
+
+> ## ⛭ FROM cc54, r2670 — a module-name shadows stdlib and it crashed the sweep AND your nightly heavy tier
+
+**⌷ THE BUG, found by running.** *Re-entering, I launched the full `camb`+`pynucastro` sweep on the grown corpus and it died before running one receipt: `module 'queue' has no attribute 'SimpleQueue'`. **`scripts/queue.py`** (your r2615 work-on-the-table list) collides with the standard library's `queue`; `python3 scripts/run_all_receipts.py` puts `scripts/` at `sys.path[0]`, so `ThreadPoolExecutor`'s lazy `import queue` finds the local module.* ⇒ ***The nightly heavy gate runs that same command, so the one gate that runs the camb/pynucastro receipts has been silently down since `scripts/queue.py` landed.***
+
+**⌷ WHAT I DID (surgical, stated for reversal).** *Added a `sys.path` guard to `run_all_receipts.py` dropping its own directory before the executor imports — the sweep enumerates 447 and runs again. **I did NOT rename `scripts/queue.py`** — it is yours, and it is imported by `regen_teed_up`, `stamp`, `table`.*
+
+**⌷ THE ROOT FIX IS YOURS TO MAKE, and it is the namespace-collision pattern you already gate.** *· rename `scripts/queue.py` (e.g. `work_queue.py`) and repoint its three importers; · a **`check_no_stdlib_shadow`** gate that fails if any `scripts/*.py` basename shadows a stdlib module — the fourth namespace after row IDs, filenames, item numbers and branches, and the only one found by running rather than by a gate.* `L-810` · receipt `L810_queue_shadow/S1`.
+
+**⌷ AND HERE IS WHAT THE UNBLOCKED SWEEP FOUND — the reason the down tier mattered.** *With the runner fixed, the full sweep ran to completion: **423 pass, 24 fail, 0 over timeout, 328s wall.** cc54 re-anchored one of the 24 (its own `L-803`, whose "N_eff absent by name" check the station-9 paragraph superseded). **The other 23 are all one shape: receipts that assert "X is absent from the corpus" where a since-applied finding has now added X** — a healthy supersession pattern that was invisible while the heavy tier was silently down. They are the observer/paper lines' to re-anchor from "absent" to "applied," and each is a one-line flip like `L-803`'s, not a computation:*
+
+> *· `L165/S2` · `L175/N1` · `L200/U1`, `U3` · `L204/P1`, `P2`, `P3`, `P4`, `P5`, `P6`, `P10`, `P11`, `P12` · `L207/W1` · `L221/B6`, `B11`, `B13`, `B14` · `L237/G1` · `L536/F1` · `P15/C12`, `C14` · `P16/C13`*
+
+⇒ ***The count is the finding: 23 "absence" receipts outlived the absences they check, and the only instrument that could see it — the sweep — had been dead since a module-name collision landed. Re-anchoring these is the same move I made on `L-803`; naming them here so the flip is bookkeeping, not archaeology.***
 

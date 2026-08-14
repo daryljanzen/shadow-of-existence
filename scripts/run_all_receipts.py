@@ -39,7 +39,17 @@ import re
 import subprocess
 import sys
 import time
-from concurrent.futures import ThreadPoolExecutor
+
+# ** scripts/queue.py (the work-on-the-table list, r2615) shadows the stdlib `queue` module, and
+#    `python3 scripts/run_all_receipts.py` puts scripts/ at sys.path[0].  ThreadPoolExecutor imports
+#    stdlib `queue` LAZILY (self._work_queue = queue.SimpleQueue()), so it crashes with
+#    "module 'queue' has no attribute 'SimpleQueue'" -- which took down this runner AND the nightly
+#    heavy CI tier, both of which invoke it this way.  Drop this file's own directory from sys.path
+#    before the executor is used so the stdlib module wins.  (cc54, found by running the sweep.) **
+_SELF_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path[:] = [p for p in sys.path if os.path.abspath(p or os.getcwd()) != _SELF_DIR]
+
+from concurrent.futures import ThreadPoolExecutor  # noqa: E402  (after the sys.path guard above)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..'))

@@ -121,13 +121,17 @@ def main():
     print('  S1 -- R-P station 9: does the cosmology/nuclear sector name N_eff, the field\'s first question?')
     print()
 
-    # ---- (1) the absence, by name, across the corpus ----------------------------------------------
-    variants = ['N_{\\rm eff}', 'N_\\mathrm{eff}', 'Neff', 'N_eff', 'effective number of',
-                'number of neutrino', 'relativistic species', '3.046', '3.044']
-    hits = {v: corpus_count(v) for v in variants}
-    check('N_eff is absent BY NAME across all 35 .tex files -- every variant '
-          f'({", ".join(repr(v) for v in variants[:4])} ...) counts ZERO: {sum(hits.values())} total',
-          sum(hits.values()) == 0)
+    # ---- (1) THE FINDING WAS APPLIED (re-anchored r2670): N_eff was absent by name; it now is NAMED,
+    #      and the paragraph states the disposition this receipt argued for. The physics below is why
+    #      the name matters, and it stands. --------------------------------------------------------
+    cosmo = ''.join(open(os.path.join(ROOT, 'corpus', f), encoding='utf-8', errors='replace').read()
+                    for f in ('cosmogenesis_paper.tex',))
+    named = (corpus_count('N_{\\mathrm{eff}}') + corpus_count('N_\\mathrm{eff}')
+             + corpus_count('N_{\\rm eff}') + corpus_count('effective number'))
+    check('cc54\'s station-9 finding was APPLIED -- N_eff, absent by name when this receipt was written, '
+          f'is now NAMED in the corpus ({named} hits) and the paragraph states CR makes no N_eff '
+          'prediction, adopting the standard 3.046',
+          named > 0 and 'makes no $N_{\\mathrm{eff}}$ prediction' in cosmo and '3.046' in cosmo)
     # and the sector is otherwise deep -- so it is one missing name, not a missing sector
     check('yet the sector is deep: "lithium problem", "deuterium", "nucleosynthesis" and "Hubble '
           'tension" are all present -- so this is ONE MISSING NAME, not a missing sector',

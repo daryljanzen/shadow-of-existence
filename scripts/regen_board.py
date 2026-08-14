@@ -54,6 +54,13 @@ VEINS = {
 # GROUNDED 0-3: how solid the footing is, INFORMS 0-3: how much a vein would learn). **
 # ** A lead with NO vein links is instrument work.  It is not counted as progress on the map. **
 LEADS = {
+ 'L-810': ("\u26ed **cc54 FOUND BY RUNNING** \u2014 `scripts/queue.py` (the r2615 work-list) shadows stdlib "
+   "`queue`, so `ThreadPoolExecutor`'s `queue.SimpleQueue` crashed **the full sweep AND the nightly heavy "
+   "CI tier** (both run `python3 scripts/run_all_receipts.py`, which puts scripts/ at sys.path[0]). Fixed "
+   "with a sys.path guard in the runner; the sweep enumerates 447 and runs again. The FOURTH "
+   "namespace-collision class \u2014 after row IDs, filenames, item numbers, branches \u2014 now **module names**. "
+   "Root fix (rename + a no-stdlib-shadow gate) routed to 56",
+   [], 3, 0),
  'L-540': ("\u26ed\u26ed **`THE_PRIORITY`** \u2014 how the open work is ranked, **imported from this repo's own "
    "`score(k) = grounded \u00d7 informs`** rather than invented. \u21d2 Applying it to the eleven "
    "`PROTECTED_OPEN` items ranked **`PO-11` LAST**, which exposed that it measures **TRACTABILITY, not "
