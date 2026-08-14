@@ -172,3 +172,4 @@ r2729  LATENT      PO-5 is NOT unbounded: the two walls are one, and UNBOUNDED l
 r2730  INSTRUMENT  coda set read (42 notes). check_kills watched words not the act -- 3 strikes slipped. PO-10 reopened.
 r2731  INSTRUMENT  check_unworked_blockers: the first gate that watches ABSENCE. Daryl caught every avoidance; no node ever did.
 r2732  INSTRUMENT  N8 tested and WITHDRAWN (caveats are real scope work). check_received_at_weight built instead.
+r2733  COMPUTED    PO-4s parameter EXISTS and is the wrong signature: a rapidity generates SL(2,R), not SU(2)

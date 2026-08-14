@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2733 — 2026-08-11 (main line). **`PO-4`'s SEARCH RUN — the parameter exists and has the wrong SIGNATURE.**
+
+**⌗ THE AVOIDANCE, CLOSED.** *r2718 said the row "owes a source for a one-parameter subgroup" and this line moved
+on; Daryl's r2729 audit listed it. The search takes one turn.*
+
+**⛔ ⓵ THE HORN ANGLE FAILS AS THE WRONG GROUP.** *Rotation preserves the three-horn configuration only at
+$\{0,120,240\}$ — **$\mathbb{Z}_3$, the CENTRE r2679 banked as colour**, not $SU(2)$'s Cartan.*
+⌗ *Not wasted: the continuous angle EXISTS on the throat and the $120^\circ$ structure quotients it to three
+points — **the same cardinality wall one level down**.*
+
+**⛭⛭ ⓶ AND THE SENTENCE THAT KILLED IT LOCATES THE DOUBLET.** *P14: "**two ends of one hinge are TIMELIKE
+separated**, two on one horn spacelike, and only the cross pairs null."*
+⇒ *So the two-state object carries a **rapidity**.*
+
+    exp(chi sigma_z / 2):   chi = 0.5  diag(+1.2840, +0.7788)
+                            chi = 2.0  diag(+2.7183, +0.3679)
+    continuous ✔   diagonal (Cartan direction) ✔   UNITARY ✘   det = 1
+
+⇒⇒ ***$M^\dagger M=\mathrm{diag}(7.389,0.135)\ne I$ while $\det M=1$ — the failure is **signature, not
+normalisation**. The corpus supplies a one-parameter subgroup of the right SHAPE, through the right SUBALGEBRA, and
+of the wrong SIGNATURE: $SL(2,\mathbb R)$, not $SU(2)$.***
+
+**⓷ WHICH IS SHARPER THAN "ONE FACTOR SHORT":** *the row does not need a continuous parameter — it HAS one. It
+needs a **COMPACT** one, and the geometry offers a timelike pair where a compact generator needs a spacelike or
+internal one.* ⌗ *Pairs with r2676's chirality mismatch: a wrong-signature generator and a wrong-handedness action
+are the same defect twice.*
+
+**⛭ THE RULE:** ***"we need X and do not have it" is almost never the true state. Run the enumeration and the answer
+is usually "we have something X-shaped that fails in ONE nameable way" — and the name is the finding. A wrong
+candidate tested is a map; a candidate not tested is nothing.***
+
 ### Revision r2732 — 2026-08-11 (main line). **A SUSPECTED FLAW MEASURED AND WITHDRAWN — and the effort spent on a real one.**
 
 **⌗ N8 FROM THE CODA READ:** *the engine's failure-tell is "announcing one's own measuredness", and the receipt
