@@ -111,7 +111,9 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2695   ---     4 stale row heads corrected; routed() taught 5 close-markers; check_row_state built.
     r2696   ---     DARK 2 -> 0 distinct; audit complete. Table 11.
     r2697   ---     unbanked.py paper-side citation blindness fixed; Unruh misattribution corrected.
-    r2698   ---     item 60 CLOSED (10/10 verified). CLAIMED: item 58, the excentre banking.
+    r2698   ---     item 60 CLOSED (10/10 verified).
+    r2699   ---     item 58 HALVED -- the sixth equivalence was already in print. ROUTED now 0.
+    r2700   PO-12   CLAIMED: carry g(R)/x_e through the integral on BOTH legs -- no free constants.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

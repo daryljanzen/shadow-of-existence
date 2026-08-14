@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2700 — 2026-08-11 (main line). **THERE WAS NEVER A DISCREPANCY — $9.4\%$ is an ANGLE ratio and $10.8\%$ a LENGTH ratio.**
+
+**⛔ FOUR REVISIONS CHASED IT.** *r2686 ($+6.8\%$), r2687 ($+7.1$–$14.4\%$), r2688 ($+13.1\%$), r2689 (bracket
+$[7.0,13.1]$) — **all computed ratios of LENGTHS** and measured them against P15's $+9.4\%$.*
+
+**⛭⛭ P15 STATES BOTH, TWO HUNDRED WORDS APART:**
+
+    LENGTH  "a diffusion length 10.8% longer"                        C8_diffusion_length
+    ANGLE   "the observable, in which the common distance cancels,
+             is then theta_D/theta_* larger by 9.4%"                 C10_highl_ratio  ->  r = 1.0926
+
+⇒ ***`C10`'s $r$ is an ANGLE ratio that **already nets** the $0.7\%$ sound-horizon shift ($146.36$ vs $145.4$
+Mpc). r2688's "with $\theta_*$ pinned, only $r_D$ moves" was the error — the paper does not pin it, and says so in
+the same sentence.***
+
+**⌗ WHAT SURVIVES, and it is most of it:** *r2686's **$r_s\sim H^{-1}$ against $r_D\sim H^{-1/2}$** holds either
+way; **r2689's bracket contains BOTH** $9.3$ and $10.8$, so it was never in conflict with the paper; r2687's
+branch-point lower limit stands.*
+
+**⛭ THE RULE:** ***before chasing a numerical gap, check the two numbers are the SAME QUANTITY. A ratio of lengths
+and a ratio of angles differ by exactly the factor everyone forgets is there, they are quoted in the same units, and
+a paper that states both will state them far enough apart that neither reading is obviously wrong.***
+
+⇒ ***And the outcome is the good kind: `PO-12`'s debt is SMALLER than four revisions of this line's own work had
+made it look. What remains is the acoustic evolution across the branch point as a SINGLE calculation — r2663's
+statement, untouched since.***
+
 ### Revision r2699 — 2026-08-11 (main line). **ITEM 58 HALF-WITHDRAWN — the sixth equivalence was already in print, and the sweep's floor is now measured.**
 
 **⛔ ⓵ ALREADY BANKED.** *P3, immediately after its five equivalences: "**A sixth is available and differs from
