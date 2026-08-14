@@ -190,3 +190,4 @@ c54.217a INSTRUMENT  and three rows split on unescaped math bars; PO-11 went 15 
 c54.217b INSTRUMENT  my own repair-verification was file-level and passed while a word was dropped from one row -- sound check, wrong object; tightened to per-row and per-glyph
 c54.218  COMPUTED    PO-4 is not "one factor short": <T, Weyl> = N(T), dimension 1 against SU(2)'s 3 -- the Weyl group is a QUOTIENT, not a complement
 r2736  LATENT      c54.214-218 merged. I destroyed 17 PDFs and repaired them. cc54 corrected r2713 and r2718.
+r2737  LATENT      r2731s missing-seat finding WITHDRAWN -- cc54 caught an avoidance the next day. The register IS the cold read.

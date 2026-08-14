@@ -286,8 +286,17 @@ disposition that manufactures it." Seed-tested clean → 1 → 0, wired.*
 ⌗ *`-G` not `-S`: the first version returned **403 revisions for every row uniformly**, which is the tell that a
 measurement is not measuring.*
 
-**⛭ THE RULE:** ***when the same person catches every instance of one failure class, that is not their diligence —
-it is a missing seat. Ask what they can see that the instruments cannot, and build for THAT.***
+**⛔⛔ WITHDRAWN r2737 — THE SEAT WAS NOT MISSING.** *Daryl: "three nodes working the same GitHub source check
+each other; no extra check was necessary." **And `c54.214`-`218` disproved this entry the next day**: cc54 read
+`PO-11`'s row, saw its obstruction was a NORMALISATION CONDITION rather than a barrier, and posed the
+$\omega\ne0$ problem r2717's strike never posed — **an avoidance catch, by a node**.*
+⇒ ***Two errors, both this line's: I measured `r2700`-`r2730`, the window in which I was doing the avoiding,
+and generalised to "never"; and I defined "artifact" as "written in a turn" when **avoidance leaves the ROW
+UNCHANGED, and the row is in the shared repo**. The register IS the cold read.***
+
+**⛭ THE RULE, AMENDED:** ***a sample taken during your own bad stretch is not a measurement of the apparatus.
+And `check_unworked_blockers` survives on a different claim: it surfaces the pairing FASTER than the next
+node's read — an efficiency claim, not a structural one.***
 
 ⚠ *The word-matcher problem bit a **fourth** time in six revisions — the seed flagged `PO-5`, which now quotes
 `UNBOUNDED` only inside its own withdrawal. **Named in the gate rather than patched around**: widening a pattern

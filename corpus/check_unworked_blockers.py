@@ -10,6 +10,25 @@ it, by construction. **
   ⇒ *** THIS ONE WATCHES ABSENCE: not "is this claim wrong" but "has this row been left alone while
       carrying a reason not to work it?" ***
 
+** ⛔ THE RATIONALE THIS SHIPPED WITH WAS WRONG, CORRECTED r2737. **  *** r2731 claimed "no node has
+ever caught this node declining to do work" and called it a MISSING SEAT.  **Both halves are false, and
+c54.214--218 disproved them the next day**: cc54 read `PO-11`'s row, saw its stated obstruction was a
+NORMALISATION CONDITION rather than a barrier, and posed the $\omega\ne0$ problem this line's r2717
+strike never posed.  That is an avoidance catch. ***
+
+  ** TWO ERRORS IN r2731, both this line's. **
+  * *** I measured `r2700`-`r2730` -- the window in which I was doing the avoiding and the other nodes
+      were on other work -- and generalised to "never".  A sample taken during one's own bad stretch is
+      not a measurement of the apparatus. ***
+  * *** And I defined "artifact" as "something written in a turn".  **Avoidance DOES leave an artifact:
+      it leaves the ROW UNCHANGED, and the row is in the shared repository.**  Three nodes on one source
+      cannot avoid checking each other -- the register IS the cold read, because each node meets rows it
+      did not write. ***
+
+** SO WHAT THIS GATE IS ACTUALLY FOR. **  *** Not "nobody is watching" -- somebody is.  It surfaces the
+pairing FASTER than the next node's read, and that is an efficiency claim, not a structural one.
+Operationalising is worth doing; it is not a substitute for the other brains. ***
+
 ** THE MEASURED CASE.  ** Across `r2700`-`r2730` the structural errors were caught by ** Daryl 6 ·
 54/cc54 4 · this node 1 ** (that one only after being pushed).  *** And the SHAPE is the finding: 54
 and cc54 caught ARITHMETIC and SCOPE errors -- things visible in an artifact.  **Daryl caught every
