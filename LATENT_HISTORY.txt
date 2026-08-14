@@ -199,3 +199,4 @@ r2742  LATENT      PO-5s ledger branch SETTLED: three papers commit ell_P is a g
 r2743  COMPUTED    PO-6s two halves MEET AT THE SHEAR -- the tower IS the transverse-traceless shear, in P10s words
 r2744  LATENT      PO-11s join crosses the INNER HORIZON -- the wall is at r=0 where f -> -infinity, not in the static region
 r2745  LATENT      the continuation through r=0 EXISTS (janzen_circle/JanzenSlicing); P14s join sentence cites the wrong two
+r2746  LATENT      PO-10s comparison is a SCORE ON DERIVATIONS -- no k to count. Refused to score on invented sigmas.

@@ -28,3 +28,4 @@ sources: [chat]
 - [ ] (432) PO-6: compute the counterterm basis at SECOND order in the shear -- r2743 established the degeneracy survives to first order and breaks at two gravitons; what the second-order basis CONTAINS is unrun
 - [ ] (433) PO-11: do JanzenGeometricCore / JanzenBoundary already carry the horizon matching P14 cites them for? r2744 named the KIND of problem; whether the two papers supply it is UNCHECKED
 - [ ] (435) P14 EDIT: the join sentence cites JanzenGeometricCore/JanzenBoundary for a horizon crossing neither carries; JanzenSlicing and janzen_circle carry the C-infinity continuation through r=0 (r2745). A citation aimed at the wrong two papers.
+- [ ] (436) PO-10: (a) the published measurement uncertainties for each derived quantity -- data, legitimately imported; (b) the list of which corpus quantities are DERIVED not fitted, from the papers' own statements. r2746 specified the comparison and refused to score it on invented sigmas.

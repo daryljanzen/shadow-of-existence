@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r2746 — 2026-08-11 (main line). **`PO-10`'s NON-FOREIGN COMPARISON — a score on DERIVATIONS, and a refusal to score it.**
+
+**⛭⛭ ⓵ A DERIVATION HAS NO $k$.** *r2726 left the row asking what comparison imports no foreign parameter vector.
+**The answer is in what CR actually has:***
+
+    DERIVED   theta_* = D_M/r_s · the high-l ratio r=1.0926 · 1+z_eq=3399 · the 9/10 transfer
+    FITTED    Omega_m ("the single CMB-calibrated") · A_s ("anchored", inherited not predicted)
+
+⇒ ***Scoring a derivation against a measurement has nothing to count — no $k$, no AIC, no BIC, no imported vector.
+And P15 already reports such pairs, scattered. **The instrument is not new; the comparison is the COLLECTION.****
+
+**⛔⛔ ⓶ AND THIS LINE ALMOST DID IT AGAIN.** *A first draft scored three pairs at $\chi^2/\mathrm{dof}=5.67$ with a
+$4\sigma$ pull on $\theta_*$. ***Every $\sigma$ in it was invented.*** Not importing $\Lambda$CDM's PARAMETERS this
+time — importing UNCERTAINTIES from nowhere. **The same failure in a different costume, inside the receipt written
+to fix it.***
+
+**⛭ THE RULE:** ***a comparison has two kinds of input and only one is safe to supply yourself. The MODEL side is
+yours; the MEASUREMENT side — values AND error bars — is data. **A tension quoted in $\sigma$ is a claim about
+someone else's instrument**, and a made-up one is worse than no comparison because it looks like a finding.***
+
+⌗ *What survives: the comparison's **form** is settled and imports nothing. It needs the published uncertainties and
+the papers' own list of what is derived — **and the second decides its size, because getting it generous is how a
+derived-quantity score turns back into a fit.***
+
 ### Revision r2745 — 2026-08-11 (main line). **THE CONTINUATION EXISTS — and P14's join sentence cited the two papers without it.**
 
 **⛔ ⓵ THE CITED PAIR CARRY NO CROSSING.** *`geometric_core` and `boundary`: "across the horizon" 0, "matching" 0,
