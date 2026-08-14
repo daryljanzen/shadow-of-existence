@@ -114,7 +114,9 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2698   ---     item 60 CLOSED (10/10 verified).
     r2699   ---     item 58 HALVED -- the sixth equivalence was already in print. ROUTED now 0.
     r2700   PO-12   9.4% is an ANGLE ratio; four revisions compared it to a LENGTH ratio. Debt smaller.
-    r2701   PO-12   CLAIMED: can the existing instrument already run the acoustic evolution across the join?
+    r2701   PO-12   remaining half has NO CONTENT -- at w=0 the potential equation loses k.
+    r2702   PO-12   STRUCK. PO-10 UNGATED. Table 8. Frontier 4 BOUNDED, 1 UNBOUNDED, 2 gated.
+    r2703   PO-10   CLAIMED: newly ungated and least explored -- what are its two halves, exactly?
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

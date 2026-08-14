@@ -142,3 +142,4 @@ r2699  LATENT      item 58 half-withdrawn: the sixth equivalence was already in 
 r2700  LATENT      9.4% is an ANGLE ratio and 10.8% a LENGTH ratio; four revisions compared one to the other
 r2701  LATENT      PO-12s remaining half has no content: at w=0 the potential equation loses k entirely
 r2702  LATENT      PO-12 STRUCK (debt discharged, one clause relocated to PO-7); PO-10 UNGATED. Table 8.
+r2703  LATENT      PO-10 half 2 carries no CR-vs-LCDM signal: R is a content ratio. The row is ONE half.

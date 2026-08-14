@@ -34,7 +34,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..'))
 
 DECLARES = re.compile(r'(three separated levels|three levels|two halves|four checks|three routes)', re.I)
-NAMES = re.compile(r'\(1\)|\(2\)|⓵|⓶|HALF ONE|HALF TWO|level \(|check ⓵')
+# ** r2703: widened.  PO-10 named its parts `HALF ①`/`HALF ②` -- circled digits, which the
+# original pattern did not list -- and the gate reported a row that DOES name them.  *** A gate
+# enumerating the ways a thing can be written will miss one; when it fires on a row that
+# satisfies its INTENT, widen the gate rather than reword the row. ***
+NAMES = re.compile(r'\(1\)|\(2\)|⓵|⓶|①|②|HALF ONE|HALF TWO|HALF ①|HALF ②|level \(|check ⓵')
 
 
 def main():

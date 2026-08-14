@@ -146,6 +146,29 @@ sources: [cowork, chat]
 
 
 
+### Revision r2703 — 2026-08-11 (main line). **`PO-10`'s HALF ② CARRIES NO DISCRIMINATING SIGNAL — the row is ONE half, not two.**
+
+**⓵ P7 NAMES BOTH HALVES ITSELF.** *① the full-spectrum likelihood comparison — "**a parameter refit rather than a
+further calculation**"; ② the odd/even pattern — "**imprinted by the baryon loading on the expansion leg and is
+ordinary content physics there**".*
+
+**⛭⛭ ⓶ AND P15 PLACES IT:** *"$R\simeq0.1$ at the onset and orders below that at entry; the odd/even asymmetry is
+imprinted afterwards, **on the expansion side at $R\simeq0.6$**" `\rcpt{C5b_baryon_term}`.*
+
+    R = 0.60:   1 + 3R = 2.80,   |1 - 3R| = 0.80,   ratio 3.50      <- fixed by R alone
+
+**⇒⇒ ⓷ AND $R=3\rho_b/4\rho_\gamma$ IS A RATIO OF CONTENTS.** ***The radiation-free rate changes $H(a)$ and
+therefore every LENGTH — sound horizon, diffusion scale, comoving horizon (r2686) — but **not a ratio of densities
+at fixed content**. Both arms carry the same $R$ at the same redshift, and the same odd/even pattern.***
+
+**⛭ THE RULE:** ***when a programme's difference is "carried by $H$", every observable splits into those that are
+functions of $H$ and those that are not — and the second kind cannot discriminate, however precisely it is computed.
+Sort the frontier that way before running anything: a length is a candidate, a density ratio is not.***
+
+⚠ *And `check_declared_parts` fired on a row that satisfied it — the gate wanted `HALF ONE` and the row said `HALF
+①`. **When a gate fires on a row that satisfies its INTENT, widen the gate rather than reword the row.** Widened,
+re-seeded clean → 1 → 0.*
+
 ### Revision r2702 — 2026-08-11 (main line). **`PO-12` STRUCK, `PO-10` UNGATED — table 9 → 8.**
 
 **⛔ THE PROMPT WAS FAIR.** *Daryl: "it seems you grew the table while calling an item done with its residual moved
