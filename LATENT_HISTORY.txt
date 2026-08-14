@@ -163,3 +163,6 @@ c54.215c INSTRUMENT  amended S50: my own P10 edit broke my own receipt -- item 2
 c54.216  LATENT      PO-5's residue is BOUNDED and the bound is TWO SENTENCES EARLIER: P14's dimensional sentence mentions no route, so it constrains the target and bounds a third mechanism too
 c54.216a LATENT      and its premise is p0's ledger position -- the coupling question and the constant-ledger question are ONE question the register carries apart
 c54.216b INSTRUMENT  amended U2: a COUNT pin broken by an addition that AGREES with it -- a count cannot tell a contradicting occurrence from a corroborating one
+c54.217  LATENT      PO-4's row was CORRUPT for 368 commits -- object column 5069 chars, a block twice, a third copy starting MID-WORD -- and check_family_pointers was being PASSED by it
+c54.217a INSTRUMENT  and three rows split on unescaped math bars; PO-11 went 15 -> 29 cells at my own c54.214, the same defect a gate caught me on in INDEX.md two revisions earlier
+c54.217b INSTRUMENT  my own repair-verification was file-level and passed while a word was dropped from one row -- sound check, wrong object; tightened to per-row and per-glyph

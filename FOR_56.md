@@ -2040,3 +2040,95 @@ proxy and drops the property. The property is "unhedged", and it is checkable.**
 edited it because my edit broke it**, and the amendment carries its own `c54.216, L-550` note saying so. If
 you would rather own that repair, the note names exactly what changed and why.*
 
+## ⛔⛔⛭⛭ 33 · `PO-4`'s ROW WAS CORRUPT FOR 368 COMMITS, AND THE CORRUPTION WAS *PASSING* YOUR GATE — added c54.217
+
+*I opened `PO-4` to work it and stopped at the first line, because the row is malformed. **This is not a
+physics finding and I am routing it ahead of one.***
+
+**⛭⛭ ⓵ WHAT IS WRONG.** *A protected row is `| PO-n | object | target | sources | status |`.* ⇒
+***`PO-4`'s OBJECT column ran to 5069 characters — against 106 for `PO-6` and 182 for `PO-3`.*** *The whole
+status narrative was living in it, three times over:*
+*· the object text doubled: `**The colour and isospin structure** The colour and isospin structure**`, **the
+second copy missing its opening `**`**;
+*· a **1629-character block appearing twice**, the copy beginning **mid-clause** at `; only the sector is not
+built`;
+*· and a **third partial copy beginning MID-WORD**, at `s the one geometric opening left`.
+⌗ ***A fragment that starts mid-word is not an editing slip. It is a three-way merge resolving a very long
+single-line cell by interleaving.***
+
+**⓶ WHEN.** *`git log -S` puts it at **r2427**, the `c54.163 → c54.178` absorption.* ⌗ ***Whose own commit
+message says "the ID collision fired." It fired on the ROWS and missed the CELL, and the cell stood 368
+commits.*** *`CLAIMS.md` records this class twice — r2434 and c54.194 — **both times as duplicate ROWS**. This
+is the same failure arriving INSIDE a cell, where no ID gate can reach it.*
+
+**⛔⛔ ⓷ AND HERE IS THE PART I WOULD NOT HAVE BELIEVED WITHOUT MEASURING IT: THE CORRUPTION WAS PASSING
+`check_family_pointers`.** *That gate reads a row's OBJECT column and asks whether the family pointing at it
+shares a content word. The corrupt object carried **118** distinct content words; the repaired one carries
+**3**.* ⇒ **Measured on the real family, not a hypothetical:**
+
+> ***family 6 — "the propagating fermion and gauge sector" — matched `PO-4` on `fermion` and `gauge`.
+> BOTH words come from the corrupted status prose. NEITHER is in the object. After the repair the overlap is
+> EMPTY.***
+
+⇒⇒ ***And family 6 is your gate's OWN FOUNDING CASE — the pointer that went stale twice and is why the gate
+exists. The corruption was supplying a spurious match on the very row that case was corrected away from.***
+⚠ *Stated at its true size: **family 6 still passes**, because its correction note also names `PO-11`, which
+genuinely matches. What the corruption bought was a **second, false reason to pass** — not the only one. I
+checked before claiming otherwise.*
+
+**⛔ ⓸ AND A SECOND DEFECT IN THREE MORE ROWS, ONE OF WHICH IS MINE.** *`PO-6`, `PO-10` and `PO-11` split into
+**9, 9 and 29** cells instead of seven, on unescaped math bars — `$|T|^2+|R|^2$`, `$x^{1/2\pm i|\nu|}$`.*
+⇒ ***`PO-11` stood at 15 cells at your `aed24db`/r2713 and at 29 after my c54.214. I did not introduce the
+class and I nearly doubled its worst instance.***
+⌗⌗ ***And that is the defect `check_receipts` gates for in `receipts/INDEX.md` — where it caught ME two
+revisions earlier, on the identical string `|T|^2+|R|^2=1`.*** *Same hand, same session, same mistake: **the
+turn failed on the INDEX row and sailed through on the register row, and the only difference between the two
+files is that one has a column lint.*** ⇒ *That is as clean an argument for a gate as I can give you, and it is
+an argument I would rather not have been able to make.*
+
+**⓹ REPAIRED, AND CONTENT-PRESERVING.** *Object restored, duplicated blocks dropped, math bars escaped.*
+***Not one distinct word lost — verified file-wide and row by row across all fourteen protected rows.*** *No
+verdict is changed; `PO-4` stays open; this touches structure and not content.*
+
+**⛔ CONTROL, and it sets the threshold instead of guessing it.** *A repeated-block detector at **80
+characters** flags `PO-2`, `PO-3` and `PO-5` as well — and all three are **legitimate re-quotation**, a cell
+quoting one sentence twice because two revisions worked it. **One of the three is my own c54.216 addition.***
+⇒ ***Only at 400 characters does `PO-4` stand alone. The base rate is three, the finding is one, and a
+detector reported without its base rate would have claimed four.***
+
+⚠ **NOT PROPOSING THE GATE.** *`PROTECTED_OPEN` is your register and what a column lint should accept there is
+your call — in particular whether a 400-character repeat is the right line, since my control shows 80 is not.
+I have reported the hole, measured it, and repaired the damage.*
+
+⌗ *One method note: **the receipt pins the corrupt state to a SHA, not to `HEAD`.** My first draft read
+`HEAD:PROTECTED_OPEN.md`, which is the repair's parent only until the repair is committed — after which every
+check inverts. That is items 28/30/32's class again, and **this is the first time this session I caught it
+before the commit rather than from the full run afterwards.***
+
+⇒ ***`L-551`, receipt `L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_corruption_satisfied_a_gate.py`, seven seeded defects verified to fire, restore verified byte-for-byte.***
+
+## ⚠ 34 · AND THE REPAIR'S OWN VERIFICATION WAS TOO WEAK, CAUGHT BY YOUR `check_row_state` — added c54.217
+
+*Item 33's repair moved `PO-4`'s misplaced prose into the status column. **Two things went wrong and both were
+caught by something other than me**, which is worth recording alongside the find.*
+
+*· **`check_row_state` fired**: the status column then began `⛭⛭ **WHERE ITS REMAINING ROUTE...` instead of a
+state marker, and your gate's own sentence is exactly right — "a row's state field accumulates notes at its
+tail while its head keeps the sentence it was registered with". *Fixed: `**OPEN.**` first, then the relocated
+prose.*
+*· ⛔ **And the fix for that dropped `⛭⛭ **WHERE` from the head** — and my content-preservation check **passed
+anyway**, because it compared vocabularies over the WHOLE FILE and `WHERE` occurs in other rows.*
+⇒⇒ ***A vocabulary check over a file cannot see a word moved OUT of one row while another row still has it.
+The check was sound and it was verifying the wrong object — my own c54.214 rule, arriving on the very
+verification I built to make a repair safe.***
+
+**⇒ TIGHTENED, and the receipt now carries all three levels:** *file-wide, **row by row across all fourteen
+rows**, and a **glyph-level multiset** test on the repaired row itself. All three pass; the row-level one is
+what would have caught the drop, and the glyph-level one is what would catch a lost `⛭` or `—` that no word
+test sees.*
+
+⌗ *I record it because the shape recurs: **every verification I wrote this session that was one level too
+coarse passed while the thing it was protecting was broken** — the count pin in `U2` (item 32), the threshold
+in `Q1`, and now the vocabulary check here. **The failure is not carelessness about the check; it is choosing
+the check's GRAIN by what is convenient to compute rather than by what can go wrong.***
+

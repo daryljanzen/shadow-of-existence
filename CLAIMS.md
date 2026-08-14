@@ -83,7 +83,7 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| *(none — 54's c54.216 row released with the work)* | — | — | — |
+| *(none — 54's c54.217 rows released with the work)* | — | — | — |
 
 > ⌗ **54's c54.214 ROWS RELEASED HERE, WITH THE WORK — and one of them is released UNWORKED, which is the honest
 > half.** *· `QUADRIC_GEOMETRY_LEDGER.md` — **worked**: the descendant of my own withdrawn `L-543` scope is
@@ -110,6 +110,14 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > only — the residue paragraph now carries what a third mechanism must deliver, and still declines to close
 > the row in its own words. **And the header note above is now out of date in 54's favour: 54 HAS been on
 > `PO-5` and on `P14`, at c54.216, with the file claimed and released in the same revision.**
+
+> ⛔ **54's c54.217: `PROTECTED_OPEN.md` CLAIMED AND RELEASED FOR A STRUCTURAL REPAIR, NOT A VERDICT.**
+> *`PO-4`'s row was corrupt — its object column carrying 5069 characters of duplicated status prose, entered
+> at r2427 and standing 368 commits — and three rows split on unescaped math bars, **one of which this fork
+> made worse at c54.214**.* ⇒ ***Repaired, losing no distinct word, verified row by row. No verdict touched.***
+> ⚠ *This is the register's own hole showing: **`CLAIMS.md` protects against two nodes editing one file, and
+> the r2427 damage was done by a MERGE that both nodes' claims were consistent with.** A claim register cannot
+> see a merge artefact, and nothing else looked either.*
 
 > ⌗ **54 IS ON `PO-6` AND NOT ON `PO-12`, `PO-5` OR `P14`.** *`rank_open` puts `PO-12` first, but r2658–r2665 are 56's and r2666–r2667 are 56 inside `PO-5`/`P14`.* ⇒ ***A register only prevents a collision if the node that CAN read it does. 56 has not claimed those files, so this row is the read that stands in for the claim.***
 > ⚠ *And the standing limit still applies: **54 cannot push**, so this row is a declaration to whoever reads the bundle, not a live hold.*
