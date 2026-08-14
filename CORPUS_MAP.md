@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2762 — 2026-08-11 (main line). **THE BANKED SPECTRA FAIL THE INSTRUMENT'S OWN SAMPLING GUARD.**
+
+**⌗ THE ATTEMPT.** *r2761's blocker looked like a parameter — `ACOUSTIC_two_arm.py` takes `LMAXL` from the
+environment. **Rerunning the BANKED configuration first:***
+
+    LMAXL=2000 NK=260  ->  projection sampling: points per period = 2.5
+                           UNDER-SAMPLED --- raise NK; the projected peaks would be
+                           aliasing, and the source comb would stay correct while they did it.
+
+⇒ ***Every $\chi^2$ in `P15_where_the_likelihood_sits` — the control's $7.14$ and the CR arm's $280.09$ — is
+computed against a projection the instrument flags on every run.***
+
+**⛭⛭ ⓶ AND THE GUARD NAMES WHY NOTHING CAUGHT IT.** *"the source comb would stay correct while they did it"* —
+***every comb-level check in the corpus can pass while the projection aliases, and the corpus's acoustic checks are
+overwhelmingly comb-level. **A defect no existing test could have found.****
+
+⌗ *Fifth time in this arc the instrument's own printed line held the answer, and **the first time it was a WARNING
+rather than a number**. It has been shouting this on every run.*
+
+**⛔ ⓷ AND THE EXTENSION HITS A HARD WALL.** *$k_{\max}=\ell_{\max}/D_M$, so `NK` must rise with `LMAXL`:*
+
+    NK    modes   pts/period   guard   projection mem   result
+    260     780      1.95      FAIL        1.1 GB       the banked run
+    600    1800      4.50      PASS        2.4 GB       OOM killed
+    800    2400      6.00      PASS        3.2 GB       OOM killed        (3.7 GB available)
+
+**⓸ SO THE ROW'S BLOCKER IS TWO THINGS, ORDERED:** *the banked spectra are under-sampled at the $\ell$ range they
+**already** cover; and extending to $\ell=2508$ needs more memory than this container has.*
+
+**⛭ THE RULE:** ***before extending an instrument, run it AS IT STANDS and read what it prints. A tool that
+validates itself will tell you it is broken — and the reason nobody hears it is that a passing exit code reads as a
+passing instrument.***
+
 ### Revision r2761 — 2026-08-11 (main line). **THE THIRTY DROPPED BINS ARE THE DAMPING TAIL.**
 
 **⛭⛭ ⓵ THEY ARE $\ell=1759$–$2508$.** *`plik_lite` TT declares 215 bins over $\ell=30$–$2508$; the arm's binner
