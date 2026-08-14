@@ -1,9 +1,30 @@
 ---
 name: the-arsenal-index
 kind: STATE
-current: r2517+c54.201
+current: r2676+c54.211
 job: The grid — which paper × which tool, run or owed, in what order. Campaign R (the two reach theatres) and Campaign C (opens · closures · dissolutions · equivalences · pry-aparts).
 sources: [cowork]
+---
+
+## ⛭⛭ BROUGHT CURRENT c54.211 — **four gates entered the arsenal since c54.201, and one of them is a gate ON a gate**
+
+*· **`check_kind`** (r2656) — *did every turn marked COMPUTED actually compute something?* **Built after
+56 predicted the failure for a 54 and found three instances in its own log.** The hand-kept KIND ledger
+is the only thing that can answer it, so the gate checks the ledger against the receipts.*
+*· **`check_no_stdlib_shadow`** (r2675) — *does any script shadow a stdlib module name?* **Built from
+`L-541`'s finding that `scripts/queue.py` shadowed `queue`**, which `concurrent.futures` imports, so the
+receipt runner died in its first second and left the last good result on disk. ⇒ ***A crash that leaves
+a cached success presents as staleness, not as failure.***
+*· **`check_receipts_run`, re-armed** (`L-541`, c54.208) — *the gate itself was green on a result file
+written 294 commits earlier.* **A cache with no expiry is not a measurement.** The runner now stamps a
+`TREE-DIGEST` over everything a receipt can READ and the gate fails on a mismatch or on its absence;
+both failure modes seeded, and a forged cache claiming "436 pass, 0 fail" is rejected on the digest.*
+*· **`check_dupes`** (r2649) — *a paper cannot say the same thing twice.*
+
+⌗ ***WHAT THE GRID SHOULD NOW CARRY AS A COLUMN: whether a tool reads a CACHE or the TREE.*** *That was
+the distinction the arsenal had no way to express, and it is the one that let a green gate stand for
+294 commits.*
+
 ---
 
 ## ⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **AND TWO INSTRUMENTS EXIST THAT THIS GRID DOES NOT LIST**

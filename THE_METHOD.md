@@ -3,7 +3,7 @@ name: the-method
 kind: STATE
 description: HOW THIS PROGRAMME WORKS — veins held open to be known inside and out, and leads worked and re-ordered against them. Read this before the board, before the register, before anything.
 sources: [chat]
-current: r2517+c54.201
+current: r2676+c54.211
 ---
 
 # THE METHOD
@@ -17,6 +17,36 @@ current: r2517+c54.201
 > *That is the failure this whole method exists to prevent — and it has a name in this corpus:* **flattening.**
 > ⇒ *`PROTECTED_OPEN` is not a list of things too delicate to touch.* ***It is a list of things we refuse to cross
 > out until we can see all the way inside them.***
+
+---
+
+## ⛭⛭⛭ BROUGHT CURRENT c54.211 — **four method lessons this session paid for, each with the revision that paid**
+
+**⌗ ⓵ RUN THE WARNING AGAINST YOURSELF BEFORE SHIPPING IT** (r2656, and `L-541` applying it). *"A
+failure mode you can describe precisely is one you're already committing — the description is evidence
+of familiarity, not of distance."* ⇒ *56 wrote that about a 54, ran it against its own log, and found
+three instances. **54 had shipped `L-535` one revision earlier and closed it with "I have no standing
+to sweep your headers" — the deflection the rule names.*** *The sweep needed no standing; a measurement
+is not an edit.*
+
+**⌗ ⓶ CHECK THE SENTENCE AFTER THE ONE YOU QUOTE** (r2632, and `L-542` paying for it). *`D3` quoted P10
+through the clause naming the cubic and stopped; four sentences on, the same paragraph withdraws the
+reading it had just invited.* ⇒ ***Third time this session, and the first to cost a physics
+conclusion.***
+
+**⌗ ⓷ AN EXPERIMENT WITH NO CONTROL RETURNS THE SIZE OF THE TREE, NOT THE SIZE OF THE EFFECT**
+(`L-541`). *Stripping comments and re-running 120 receipts gave 27 failures — until the same set was run
+UNSTRIPPED and 24 failed anyway.* ⇒ ***The finding was 3, of which two were by design. **The instrument
+built to check a warning needed the same discipline the warning was about.***
+
+**⌗ ⓸ AND A CACHE WITH NO EXPIRY IS NOT A MEASUREMENT** (`L-541`). *A gate read a result file written
+294 commits earlier and reported "no receipt fails for a reason inside the corpus" while 23 did.* ⇒
+***Green because OLD — the direction that looks like success. The fix is not a date but a digest of
+everything the cached verdict could depend on.***
+
+⌗ ***THE COMMON SHAPE OF ⓵–⓷: each is a check the node already knew how to run and did not run on
+itself.*** *That is a different failure from not knowing, and it is the one this method has to be built
+against — a rule stated in a document is not a rule applied to the turn that states it.*
 
 ---
 

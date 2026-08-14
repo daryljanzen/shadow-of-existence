@@ -2,7 +2,30 @@
 name: state-programme
 description: Where the programme stands — frontiers, what closed, what is owed, what blocks completion. Read this to know the position. Written r2343; all seven frontier rows audited against P7 `sec:frontiers` at r2376 — rows 1, 3, 4, 5 and 6 corrected, 2 and 7 clean; row 5's dimension question answered and its range obstruction closed at r2376+c54.9; the 4D-from-flavour result landed in P14 at c54.9.
 sources: [chat]
-current: r2517+c54.201
+current: r2676+c54.211
+---
+
+## ⛭⛭⛭ BROUGHT CURRENT c54.211 — **where the frontiers stand after c54.202–c54.211 and r2657–r2676**
+
+*· **`PO-9` ANSWERED** (`L-533`, c54.207): Rule 2 neither forbids a second slicing step nor forces one —
+***it empties it***. Every rung above the last is a plane section and therefore scale-only, so the
+substrate's dimension is unbounded above **because nothing below can see the difference**. The
+`CUT→DYNAMICS` guard is a consequence, not a rule of conduct.*
+*· **`PO-6` NARROWED TWICE.** *The floor question was answered affirmatively and had been since r2419
+(`L-542`); and the UV half now has a structural answer — **the counterterm basis is one-dimensional
+because the admitted background family is** (`L-543`), on the free tower's own de Sitter slicing
+(`L-544`). ⇒ **What remains is the coupled sector, where the scale factor is quantized and there is no
+fixed background for a counterterm basis to be stated on.***
+*· **`PO-5` MAPPED** (`L-534` + r2666/r2667): three of four bridges closed, the anomaly route untested.*
+*· **`PO-12`** is 56's live front (r2658–r2665): the branch-point join at exactly $9/10$, and a ~19%
+peak-level gap.*
+*· **`PO-4`** (r2676): the gap is the torus, not the group.*
+
+⛔ ***AND WHAT BLOCKS COMPLETION IS NOT PHYSICS RIGHT NOW.*** *The receipt layer carried 23 failing
+receipts behind a gate that was green on a 294-commit-old cache (`L-541`); 56 cleared most at
+r2672–r2673. **The lesson is the standing one: a result that lands in no paper is not banked, and a
+gate that reads a cache is not a measurement.***
+
 ---
 
 ## ⛭⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **THE PROGRAMME'S WORKING SHAPE CHANGED AND THIS DOCUMENT DID NOT KNOW**

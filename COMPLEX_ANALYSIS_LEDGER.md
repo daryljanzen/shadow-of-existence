@@ -1,7 +1,27 @@
 ---
 name: complex-analysis-ledger
 description: R-M's third field bake — complex analysis and monodromy thrown at CR. Opened r1867 (Phase 8), handed to by the quadric bake's Q4 (equianharmonic ⟺ j=0 ⟺ CM by ω). Discharges R-M arc station Ⓒ, marked NO ENTRY since r1805. Baseline, probes, four-part close.
-current: r2517+c54.201
+current: r2676+c54.211
+---
+
+## ⛭⛭ BROUGHT CURRENT c54.211 — **the monodromy lane moved twice, and once it was a rediscovery**
+
+*· **r2666 (56):** `PO-5`'s coupling **settled negatively — it cannot come from the colour bundle**. The
+bundle is FLAT, and a flat connection's holonomy is its complete invariant, so no holonomy datum takes
+one off the flat locus. ⇒ ***Monodromy delivers exact selection rules and no force; that is now a
+verdict rather than an observation.***
+*· **r2667 (56):** and **P14 already walled two of those routes**, so r2666 rediscovered one. ⌗ *This
+lane's own hazard, named: **a monodromy argument is easy to re-derive because it is short**, and the
+corpus's holonomy results are scattered across P14's `sec:count` and its rigidity paragraph.*
+
+**⌗ AND ONE PIECE OF COMPLEX ANALYSIS DOING QUANTUM WORK, which this bake never carried** (`L-542`,
+c54.209): *the indicial exponents $x^{1/2\pm\nu}$, $\nu=\sqrt{\hat\Gamma+\tfrac14}$, are real only for
+$\hat\Gamma\ge-1/4$; below it both branches go complex and $x^{1/2\pm i|\nu|}$ oscillates infinitely as
+$x\to0$, so **neither is regular and there is nothing for thermal regularity to select**.* ⇒ ***The
+$-1/4$ threshold is a branch-point statement, and $-1/4$ is the classical fall-to-the-centre value
+rather than an artefact.*** ⌗ *The region turned out empty (`L-542`), but **the analysis is the lane's
+and stands independently of that**.*
+
 ---
 
 ## ✔✔✔ THE DECK/MONODROMY KNOT IS UNTIED r2494 — four objects, one word, and every group correct for its own
