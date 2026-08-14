@@ -52,6 +52,28 @@ def dark_halves():
     return out
 
 
+def dark_halves_distinct():
+    """Live dark halves that are NOT a PO row under another name.
+
+    ** r2696: both live halves were duplicates. **  `PO-5`'s row states "register alias:
+    `L-221`" in print, and the board's vein header reads "`L-165` · PO-6".  *** The stamp read
+    DARK and PO from different files and added them, so one problem counted twice, twice. ***
+      ⌗ ** A vein is a working space and is not deleted ** -- what is removed is its
+        contribution to the COUNT.
+    """
+    raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
+    board = open(os.path.join(ROOT, 'BOARD.md'), encoding='utf-8', errors='replace').read()
+    out = []
+    for d in dark_halves():
+        if not d['open']:
+            continue
+        tag = d['id']
+        aliased = (tag in raw) or re.search(re.escape(tag) + r'`?\s*·\s*PO-\d+', board)
+        if not aliased:
+            out.append(d)
+    return out
+
+
 def po_items():
     po = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
     kills = {os.path.basename(f)[:-3] for f in glob.glob(os.path.join(ROOT, 'kills', '*.md'))}

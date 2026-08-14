@@ -108,7 +108,8 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2692   ---     gates.yml stray do fixed -- MY insertion, misattributed to 54. CI unblocked.
     r2693   PO-7    turnaround is a segment endpoint crossed by rotation, not a singularity.
     r2694   ---     LEDGER 7 -> 1. Three duplicated PO rows, three were the papers own weight-marks.
-    r2695   ---     CLAIMED: FULL AUDIT of all 14 remaining items. No physics until the list is real.
+    r2695   ---     4 stale row heads corrected; routed() taught 5 close-markers; check_row_state built.
+    r2696   ---     CLAIMED: the two DARK HALVES -- the last unaudited bucket.
 
 ## ⓸ WHAT THIS LINE IS TAKING
 

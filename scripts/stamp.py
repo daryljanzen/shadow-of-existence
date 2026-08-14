@@ -71,10 +71,17 @@ def rcpts():
 
 def main():
     dh = Q.dark_halves()
+    # ** r2696: both live halves are PO rows under their register names (PO-5 states
+    # "register alias: `L-221`"; the board heads the vein "`L-165` · PO-6").  *** Count
+    # DISTINCT problems, not files. ***
+    dhd = Q.dark_halves_distinct()
     po = Q.po_items()
     lw = Q.ledger_work()
     rt, dp = Q.routed(), Q.dispatch()
-    live = [x for x in dh + po + lw + rt + dp if x['open']]
+    # ** r2696: `dh` -> `dhd`.  *** Both live dark halves are PO rows under their register
+    # names, so adding both lists counted one problem twice, twice.  The TABLE is a count of
+    # DISTINCT problems. *** **
+    live = [x for x in dhd + po + lw + rt + dp if x['open']]
     answered = [x for x in dh if not x['open']]
     po_ans = [x for x in po if not x['open']]
     parked = [x for x in dp if not x['open']]
@@ -107,7 +114,7 @@ def main():
              if l.startswith('r') and len(l.split()) > 1][-13:]
 
     print()
-    print(f'# `{sha()}` · **TABLE {len(live)}** · DARK **{len(answered)}/{len(dh)}** · '
+    print(f'# `{sha()}` · **TABLE {len(live)}** · DARK **{len(answered)}/{len(dh)}, {len(dhd)} distinct** · '
           f'PO **{len(po) - len(po_ans)} open, {len(po_ans)} answered**')
     print()
     print(f'**CHART `{" ".join(deltas)}`** · **TURNS `{"".join(kinds)}`** — '

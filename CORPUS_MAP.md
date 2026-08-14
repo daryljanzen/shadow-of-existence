@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2696 — 2026-08-11 (main line). **THE AUDIT IS COMPLETE — `DARK` 2 → 0 distinct, and the table is 11.**
+
+**⌗ THE LAST UNCHECKED BUCKET.** *Both live dark halves are `PO` rows under their register names: `PO-5`'s row says
+"**register alias: `L-221`**" in print, and the board heads the vein "**`L-165` · PO-6**".*
+⚠ *`PROTECTED_OPEN` mentions `L-165` **zero times** — so unlike `L-221`, that pairing lives only in the board, and a
+register reader sees two problems where there is one.*
+⇒ ***The stamp read `DARK` and `PO` from different files and ADDED them. One problem counted twice, twice.***
+
+**⛭⛭ THE FULL TALLY OF ONE AUDIT:**
+
+    LEDGER    7 -> 1    three duplicated PO rows verbatim; three were the papers' own weight-marks
+    ROUTED    3 -> 2    an item carrying "ANSWERED" in its own header, missed by a one-glyph reader
+    row heads   4       reading OPEN, or a stale count, while their tails said otherwise
+    DARK      2 -> 0    both live halves are PO rows aliased
+
+⇒ ***TABLE 20 → 11, and not one line of it is physics.***
+
+**⛭ THE RULE, and it is the same rule four times:** ***a count assembled from several files is a count of FILES until
+something checks whether an item appears in more than one. Every bucket in this corpus was assembled that way, and
+every bucket was wrong.***
+
+**⚠ AND THE THING TO KEEP SAYING:** *the eight `PO` rows are **exactly as hard as they were**. What shrank is the
+map's error — **but a map that says 20 when the answer is 11 is what makes the work look unbounded**.*
+
+⌗ *`workqueue.dark_halves_distinct()` added and the stamp's `live` set now builds from it.*
+
 ### Revision r2695 — 2026-08-11 (main line). **THE LIST AUDITED END TO END — four stale row heads, a reader that could not see a close, and a gate so neither recurs.**
 
 **⛔ WHAT THE AUDIT FOUND.**

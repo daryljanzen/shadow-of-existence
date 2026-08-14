@@ -132,3 +132,4 @@ r2692  INSTRUMENT  fixed the gates.yml stray do -- MY gate insertion, misattribu
 r2693  COMPUTED    the turnaround is a segment endpoint crossed by rotation, not a singularity to regularise
 r2694  LATENT      LEDGER 7 swept as a group: 3 duplicate PO rows, 3 are the papers own weight-marks, 1 real
 r2695  INSTRUMENT  full list audit: 4 stale row heads corrected, routed reader fixed, check_row_state built
+r2696  LATENT      DARK 2 -> 0 distinct: both live halves are PO rows aliased. Audit complete; table 11.
