@@ -36,6 +36,12 @@ jobs:
       # Every check now runs, failures are collected, and the step fails at the END naming all of them.
       - name: the register and view checks
         run: |
+          # ** r2692: a stray `; do` sat mid-continuation, opening the for-loop before its list
+          # ended, so `bash -n` failed at the real `do` seven lines later.  *** Introduced by
+          #     THIS line's gate insertions, not 54's -- cc54 routed it as 54/56's and the
+          #     attribution was wrong.  CI was red for everyone. ***
+          # ⌷ ** And it was invisible because YAML PARSED FINE: ** the break is inside the
+          #   shell string, and every local run types the loop by hand.
           fails=""
           for c in classify_documents regen_teed_up regen_burn_down id_space_census \
                    regen_map_status build_fork_span reapply_annotations \
@@ -50,7 +56,7 @@ jobs:
           for g in check_id_bands check_kills check_burndown check_supersession \
                    check_grains check_changelog check_depmatrix check_arcs \
                    check_paststate check_receipts check_withdrawn check_queues \
-                   check_citations check_absorption check_receipt_exit check_receipt_asserts check_claims check_branches check_deferrals check_routed check_veins check_loaders check_computes check_provenance check_dupes check_declared_parts check_family_pointers check_no_stdlib_shadow check_kind check_silent check_withdrawals check_receipt_prefixes check_revleak check_open_ledger check_killrefs; do \
+                   check_citations check_absorption check_receipt_exit check_receipt_asserts check_claims check_branches check_deferrals check_routed check_veins check_loaders check_computes check_provenance check_dupes check_declared_parts check_family_pointers check_no_stdlib_shadow check_kind check_silent check_withdrawals check_receipt_prefixes check_revleak check_open_ledger check_killrefs \
                    check_conflict_markers check_arcpins check_routed check_veins \
                    check_loci check_loaders check_computes check_provenance \
                    check_revleak check_open_ledger check_killrefs check_compile; do

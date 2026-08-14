@@ -128,3 +128,4 @@ c54.211  LATENT      withdrew my own c54.210 scope: P10s slicing is a(T)=alpha*c
 c54.212  LATENT      item 30s twelve are a complete false-positive class: all satisfy the gates own CAN_EXIT predicate, at r2680 before any repair
 
 r2691  LATENT      folded c54.211/212: BACKLOG emptied, r2677 scope withdrawn. Both errors mine.
+r2692  INSTRUMENT  fixed the gates.yml stray do -- MY gate insertion, misattributed to 54. CI unblocked.
