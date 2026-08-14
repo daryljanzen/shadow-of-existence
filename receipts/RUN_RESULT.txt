@@ -1,6 +1,6 @@
 
-  RUN-ALL-RECEIPTS -- 456 registered receipt(s), 4 at a time, 300s each, each from ITS OWN DIRECTORY
-  TREE-DIGEST: a1520efce205075b
+  RUN-ALL-RECEIPTS -- 478 registered receipt(s), 4 at a time, 300s each, each from ITS OWN DIRECTORY
+  TREE-DIGEST: cc15ff190993a377
 
     [FAIL] receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py  (0s)
                OK    ⚠ CR does NOT derive the dynamics: "the construction leaves the dynamics of general relativity unchanged" /     OK    and P12 calls its own claim "a recognition rather than an addition" /   4 check(s) FAILED
@@ -12,12 +12,14 @@
                OK    and any surviving occurrence is inside a % comment line, never published text /     FAIL  while the PUBLISHED paragraph says "the deepest question the construction opens onto" and then answers the general case /   8 check(s) FAILED
     [FAIL] receipts/L536_frontier_placement/F1_resolved_content_sits_in_the_frontier_sections.py  (0s)
                OK    with the three largest shares: boundary_paper.tex 33%, CR_cosmology.tex 29%, range_paper.tex 14% /     OK    ⚠ and the resolved-language proxy finds only 29 markers corpus-wide -- far too few to be a measurement, and reported as a proxy rather than a count /   1 check(s) FAILED
-    [FAIL] receipts/P16_cosmogenesis_paper/P16_the_scalar_monodromy_is_four_pi_over_rho.py  (14s)
+    [FAIL] receipts/P15_CR_cosmology/C32_half_one_is_model_selection.py  (1s)
+               OK    so $\Delta$AIC $=2(6-1)=10.0$ and $\Delta$BIC $=5\ln215=26.9$ in CR's favour before any $\chi^2$ is scored /     OK    ⓷ with CR's single parameter stated by P15: "the single CMB-calibrated $\Omega_{m}" /   1 check(s) FAILED
+    [FAIL] receipts/P16_cosmogenesis_paper/P16_the_scalar_monodromy_is_four_pi_over_rho.py  (6s)
                 singular point contributes no monodromy. ** / ============================================================================== / FAILED: SEEDED
     [FAIL] receipts/P17_geometric_core_paper/P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py  (0s)
-             OK   and the no-single-value conclusion / ============================================================================== / FAILED: 1 receipt(s) still have no INDEX row: ['A3_the_convergence_audit']
+             OK   and the no-single-value conclusion / ============================================================================== / FAILED: 3 receipt(s) still have no INDEX row: ['A3_the_convergence_audit', 'A6_item_58_resolves_split', 'A8_the_self_protecting_falsehood']
 
-  449 pass, 7 fail, 0 over timeout, in 499s wall
-  slowest that passed: P16_validate_bbn.py 196s, P15_the_second_arm_actually_run.py 128s, P15_the_collapse_leg_is_scale_invariant.py 105s, P16_theory_error_and_likelihood.py 94s, P15_verify_lowell_exact_measure.py 86s
+  470 pass, 8 fail, 0 over timeout, in 274s wall
+  slowest that passed: P16_validate_bbn.py 86s, I10_the_constraint_propagation_is_symmetry_free.py 67s, P15_the_second_arm_actually_run.py 57s, P15_the_progenitor_vacuum_is_negligible_too.py 45s, P15_the_collapse_leg_is_scale_invariant.py 44s
 
   ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.
