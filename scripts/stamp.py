@@ -64,6 +64,11 @@ def gates():
     return len(can), len(names) - len(can)
 
 
+def rcpts():
+    import glob as _g
+    return len(_g.glob(os.path.join(ROOT, 'receipts', '**', '*.py'), recursive=True))
+
+
 def main():
     dh = Q.dark_halves()
     po = Q.po_items()
@@ -116,8 +121,17 @@ def main():
           f'{len(parked)} parked · GATES {g_can} that can fail (+{g_rep} report-only) · '
           f'NARROWED {narrowed}**')
     print()
-    print(f'*r{rev()} · dark halves still open: '
-          f'{", ".join(x["id"] for x in dh if x["open"])}*')
+    # ** r2665, Daryl: "Make sure I see the progress and where we are every turn.  That's the point.
+    # Tracking where we are." **  ⇒ *** A position is not progress.  The stamp showed where the table
+    # IS and never where it STARTED, so a reader had to hold the trajectory in their head. ***
+    first = int(rows[0][1])
+    span = f'r{rows[0][0][1:]}-r{rev()}'
+    done = first - len(live)
+    print(f'**PROGRESS {span}: table {first} → {len(live)} ({done} cleared, '
+          f'{100*done//first}%) · narrowings {narrowed} · receipts {rcpts()}**')
+    print()
+    print(f'*STILL OPEN — dark: {", ".join(x["id"] for x in dh if x["open"])} · '
+          f'PO: {", ".join(x["id"] for x in po if x["open"])}*')
     print()
     return 0
 

@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2665 — 2026-08-11 (main line). **THE GAP SIZED — ~19% down at the peaks, so the deviation is BROAD rather than tail-confined. Stamp now shows trajectory.**
+
+**⌗ THE RATE THAT SETS THE GAP IS BUILT FROM THE THING THAT DIFFERS.** *P15 gives the decay rate as
+$k^2/(3\mathcal H)$, and separately "**the radiation-free rate near recombination is $13\%$ below the
+radiation-included one there**".*
+⇒ ***So the peak-region decay is not common to the two cosmologies: at fixed $k$, CR's potential decays ~15%
+faster.***
+
+**⚠ THE ESTIMATE, WITH ITS MODEL STATED:** *a $\Lambda$CDM decay of factor 2 becomes $2^{1/0.87}=2.22$ ⇒ surviving
+$\Phi$ ratio **0.902**, **power ratio ≈0.813** at the peaks.*
+⛔ ***Not a derivation — the compounding assumes a decay form the paper does not state. What IS the paper's: the
+rate, the 13%, the factor of two. The point is to say what SIZE the gap is, not to fill it.***
+
+**⛭ THE RULE:** ***when a gap is named, estimate it before leaving it. A gap with a size tells you whether the
+unrun calculation would change a conclusion; a gap without one is indistinguishable from a small correction and gets
+deprioritised by default.***
+
+⚠⚠ *A **second** near-coincidence in three revisions — **0.813 against 0.823** — named on sight, as r2663's $1/10$
+was.*
+
+⇒⇒ ***THE PREDICTED DEVIATION IS BROAD: ~7.5% at low $\ell$, ~19% at the peaks, 18% at $\ell_D$, 54% at
+$2\ell_D$. That is where a likelihood confrontation would bite — the first such statement the chain supports.***
+
+⌗ *And `scripts/stamp.py` now reports **trajectory** — table 34 → 17 (50% cleared), narrowings, receipts — after
+Daryl: "**Make sure I see the progress and where we are every turn. That's the point.**"*
+
 ### Revision r2664 — 2026-08-11 (main line). **THE END-TO-END NUMBER — and the sentence after the one r2661 quoted corrected its own claim.**
 
 **⛔ THE OVER-REACH.** *r2661: "$\Phi$ is constant on the expansion leg … **with no further evolution**".*
