@@ -121,10 +121,11 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-171`** | r2602 | ⛔ ***② does not clear*** — `PO-7` stays open by its own inversion check · **nothing is pending on Daryl** · ***the order is `PO-seam`'s progenitor der |
 | **`L-540`** | r2603 | ***the order now recomputes as `grounded` changes*** — and `REACH` is the one axis a human must maintain |
 | **`L-812`** | r2677 | ***HELD — build ONLY when the turnaround-regular result can be made checkable INDEPENDENTLY of the sign it produces (a bracket, a limit, a known case  |
+| **`L-815`** | r2701 | ***routed to Daryl/56: route ⓷'s residue is supplied (CRPHI=0, bracket-checked, one assumption) — does ② now clear? their call, not a node's*** |
 | **`L-813`** | r2714 | ***next (optional, informative not gating): enumerate the discrete tower as a QNM-grade solve — complex-$\omega$ resonances or a Prüfer count on the t |
 | **`L-814`** | r2719 | ***PO-10's run is discharged; the residual is PO-7's branch selection when CRPHI closes*** |
 
-*10 live rows carry a stated next step; the 10 longest-unworked are shown.*
+*11 live rows carry a stated next step; the 11 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session

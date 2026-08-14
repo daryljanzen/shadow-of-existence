@@ -163,3 +163,4 @@ r2720  INSTRUMENT  merged cc54s branch -- L-813 was never on main; I built r2719
 r2721  INSTRUMENT  main verified coherent: 74 session receipts run, 8 stale, 5 repaired, 6 remain (one class)
 r2722  INSTRUMENT  all six remaining stale receipts converted -- 74/74 of this sessions receipts green on main
 r2723  LATENT      PO-6s floor FOLLOWS from r2671s non-degeneracy; the real question is the spectrum vs 3/4
+r2724  LATENT      merged L-814/815/816; L-814s negative matches P15s own envelope to the same order

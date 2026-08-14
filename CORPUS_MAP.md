@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2724 — 2026-08-11 (main line). **cc54's FOUR MERGED — and `L-814`'s negative is P15's own envelope scored.**
+
+**⌗ MERGED:** *`L-813` (PO-11 spectrum), `L-814` (PO-10's BIC pair), `L-815` (CRPHI derived $=0$), `L-816` (PO-6's
+fixed-background half: the sub-leading log divergence is Gauss–Bonnet, so the one-constant ledger survives at log
+order). All verified green here.*
+
+**⛔ THE RESULT THAT MATTERS.** *`L-814`: **$F3(\varphi{=}0)=+50{,}497$ and $F3(\varphi{=}\pi)=+67{,}624$ against a
+threshold of $21.5$** — CR decisively disfavoured on `plik_lite` TT at both seam phases.*
+
+**⛭⛭ AND IT IS NOT AN ARTEFACT — checked from the paper's own formula.**
+
+    C_CR/C_LCDM = exp[-(l/l_D)^2 (r^2-1)],  r = 1.0926     (P15, C10)
+      l= 200  0.996      l=1400  0.824      l=2500  0.539
+    scored against cosmic variance on 215 bins:  chi^2 ~ 1.6e5
+    cc54 measured:                               5.05e4      SAME ORDER
+
+⇒ ***No pipeline, no likelihood, no fit. So the negative cannot be blamed on cc54's implementation — and it is not
+new physics found by the run. **The suppression was published; what was missing was its size in likelihood
+units.****
+⌗ *cc54 measured the instrument floor at $F2=+1114$, **45× too small to absorb it**, and flagged rather than
+laundered it.*
+
+**⛭ THE RULE:** ***when a run returns a large negative, estimate it independently from the theory's own published
+formula BEFORE anything else. If the orders agree the result is the theory speaking and not the pipeline.***
+
+**⚠ SCOPE, narrower than "CR is ruled out":** *`plik_lite` TT only, no polarisation, no $\ell<30$, no lensing,
+against flat $\Lambda$CDM at $k=6$. **What is established is that the high-$\ell$ envelope P15 states is decisively
+disfavoured by Planck TT.** F5 reserves the framework verdict; `PO-7` is protected.*
+
 ### Revision r2723 — 2026-08-11 (main line). **`PO-6` HAS BEEN CARRYING THE WRONG QUESTION — the floor follows; the real question is spectral.**
 
 **⛭⛭ ⓵ P10's LIMIT IS FAR MORE SPECIFIC THAN "BACK-REACTION".** *Quantizing the scale factor promotes the boundary
