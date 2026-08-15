@@ -351,3 +351,5 @@ r2827  INSTRUMENT  PO-6 was reported closed for four status reports and reads OP
 r2828  INSTRUMENT  OWED was 6 and is 1: five were superseded, done, or not tasks. check_owed_are_tasks built.
 r2829  CLAIMED    the map holds my reconstruction of PO-5, not its object. Fix, then check the class.
 r2829  INSTRUMENT  the map held the ROUTE not PO-5s object. Fixed; check_gap_is_held built, seeded 4x.
+r2830  CLAIMED    the register gates closure on a person, not on physics. Replace and strike what is answered.
+r2830  INSTRUMENT  the register now gates on the OBJECT being answered, not on a person. Two strikes tried, both reverted by physics.
