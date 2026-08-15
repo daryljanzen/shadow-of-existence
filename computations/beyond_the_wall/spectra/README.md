@@ -42,5 +42,7 @@ kept: through plik_lite TT the control prefers 8/9 over 16/15 by Δχ² = 1123, 
 reported as the size of a residual error in the damping tail rather than used to pick the
 coefficient — see `P15_the_height_target_was_below_the_resolution_of_its_own_statistic.py`.
 
+| `L830_cr_lat280.npz` / `L830_cr_lat302.npz` / `L830_cr_lat320.npz` | r2803 (cc54, L-830) | **the pin test 56 routed — the CR arm at `LATARG = 280 / 301.6 / 320`** (`HIER=1 BSPLIT=1 ARM=cr NK=600 LMAXL=2000 ETAEND=4000 KBATCH=300 LATARG=<v>`), the runs 56's container OOM'd at projection. *Peaks track LATARG: mean spacing Δℓ = 240 / 258 / 274, so **Δℓ/L_A = 0.857 / 0.855 / 0.856 is constant** (slope d(Δℓ)/d(L_A) = 0.85) — the ~14% spacing deficit is a fixed structural ratio, not an artefact. Meanwhile l₁ = 164 / 172 / 172 is nearly pinned, so l₁/L_A = 0.586 / 0.570 / 0.537 drifts — the first-peak offset is a separate phase (PO-7).* |
+
 Each is a few kilobytes: a strided ℓ grid and its D_ℓ, nothing else.  They are inputs to receipts,
 not results in themselves, and every one of them is reproducible from the command in the table.
