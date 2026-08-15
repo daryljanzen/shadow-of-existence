@@ -366,7 +366,7 @@ retired** — functionally superseded by the ontology documents, confirmed r1534
 | | | |
 |---|---|---|
 | **0a** | ⟐ **THE LIVE ARC** — *the spine of work in progress **and the register of every lead it has thrown off** (49 and counting). **Nothing surfaced may leave a turn unregistered**, and new leads always go IN FRONT of the end state.* | `THE_LIVE_ARC.md` |
-| **0** | ⛔ **THE PROTECTED-OPEN REGISTER** — *the questions a node may NOT close, each with **its object**; the gate is `corpus/check_kills.py`. **Read before writing any negative verdict.** A node may write a bounded negative; closures on protected items are Daryl's.* | `PROTECTED_OPEN.md` |
+| **0** | ⛔ **THE PROTECTED-OPEN REGISTER** — *the questions a node may NOT close, each with **its object**; the gate is `corpus/check_kills.py`. **Read before writing any negative verdict.** A node may write a bounded negative; closures on protected items are Daryl's.* | `PROTECTED_OPEN.md` | ⌗ **⟨r2834: the register's PRE-r2830 rule. **The person-gate is gone** — a row is struck when its OBJECT is answered and the answer is receipted, and nothing else gates it. `PROTECTED_OPEN`'s own header carries the current rule.⟩**
 | 1 | **The changelog** — what happened, when | `CORPUS_MAP.md` |
 | **1b** | **The wisdom ledger** — the **scraps of wisdom** dropped across the programme at the places that need them: what each protects, **its discharge condition**, and what became of it. **Pairs with `retired/`: that archives whole documents with their arc placement, this archives the scraps.** A retired scrap stops being operative and stays part of the learned wisdom. Kept fed by `CONSOLIDATE` §14 SA-6. | `THE_WISDOM_LEDGER.md` |
 | 2 | **The plan** — what is left, and how the work is done | `THE_PLAN.md` |

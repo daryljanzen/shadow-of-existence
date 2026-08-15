@@ -442,7 +442,7 @@ by it.* **A runway, not a pause point.**
 trends** — is the only one no single bake can produce, and it is the reason to run several rather than one.
 `GEOMETRY_PHYSICS_TAXONOMY`'s standing question is that same signal read from the other side: **which discrete
 structures recur, and does recurrence mean anything?*** *`PO-3` protects the sharpest instance of it — whether
-the geometric $A_2$ and $\su(3)$'s coincide structurally — and* ***a node may not close it.***
+the geometric $A_2$ and $\su(3)$'s coincide structurally — and* ***a node may not close it.*** ⌗ **⟨r2834: the register's PRE-r2830 rule. **The person-gate is gone** — a row is struck when its OBJECT is answered and the answer is receipted, and nothing else gates it. `PROTECTED_OPEN`'s own header carries the current rule.⟩**
 
 ---
 

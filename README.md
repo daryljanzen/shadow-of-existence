@@ -58,8 +58,8 @@
 > on context keeps the heuristics and loses the nuance, and closes a live investigation while feeling rigorous.*
 >
 > **A node may write a BOUNDED NEGATIVE** — *route $Y$, on object $Z$, did not produce $X$* — **scope stated,
-> object named, filed as material. A node may NOT close a question registered in `PROTECTED_OPEN.md`.**
-> *Bounded negatives are the node's; closures on protected items are Daryl's.*
+> object named, filed as material. A node may NOT close a question registered in `PROTECTED_OPEN.md`.** ⌗ **⟨r2834: the register's PRE-r2830 rule. **The person-gate is gone** — a row is struck when its OBJECT is answered and the answer is receipted, and nothing else gates it. `PROTECTED_OPEN`'s own header carries the current rule.⟩**
+> *Bounded negatives are the node's; closures on protected items are Daryl's.* ⌗ **⟨r2834: the register's PRE-r2830 rule. **The person-gate is gone** — a row is struck when its OBJECT is answered and the answer is receipted, and nothing else gates it. `PROTECTED_OPEN`'s own header carries the current rule.⟩**
 >
 > **And the asymmetry that settles it:** *on the record, every time a node reached a result reading "CR does
 > not deliver here", it was **the node's error**.* ***Your failure to find something in this corpus is evidence

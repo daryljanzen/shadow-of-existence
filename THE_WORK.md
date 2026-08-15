@@ -61,7 +61,7 @@ follows is the FRONT level — the actual live questions.** The register row is 
 audit trail is followable, but the unit of work is the front.
 
 **Five live fronts under four register rows, plus ten protected-open items.** Rows 7–16 are
-`check_kills`-protected: I may not close them without authorisation. *That is a reason to leave them open,
+`check_kills`-protected: I may not close them without authorisation. *That is a reason to leave them open, ⌗ **⟨r2834: the register's PRE-r2830 rule. **The person-gate is gone** — a row is struck when its OBJECT is answered and the answer is receipted, and nothing else gates it. `PROTECTED_OPEN`'s own header carries the current rule.⟩**
 not a reason to leave them unlisted, and this file had them unlisted.* The order is the standing one: residual theory first, the
 acoustic correspondence and the verdict last.
 
@@ -211,7 +211,7 @@ follows is the FRONT level — the actual live questions.** The register row is 
 audit trail is followable, but the unit of work is the front.
 
 **Four live fronts under four register rows, plus ten protected-open items** *(five until c54.162, when front #1 settled; front #5 de-merged out of it in the same pass, so the count falls by one rather than two).* Rows 7–16 are
-`check_kills`-protected: I may not close them without authorisation. *That is a reason to leave them open,
+`check_kills`-protected: I may not close them without authorisation. *That is a reason to leave them open, ⌗ **⟨r2834: the register's PRE-r2830 rule. **The person-gate is gone** — a row is struck when its OBJECT is answered and the answer is receipted, and nothing else gates it. `PROTECTED_OPEN`'s own header carries the current rule.⟩**
 not a reason to leave them unlisted, and this file had them unlisted.* The order is the standing one: residual theory first, the
 acoustic correspondence and the verdict last.
 
@@ -361,7 +361,7 @@ follows is the FRONT level — the actual live questions.** The register row is 
 audit trail is followable, but the unit of work is the front.
 
 **Four live fronts under four register rows, plus ten protected-open items** *(five until c54.162, when front #1 settled; front #5 de-merged out of it in the same pass, so the count falls by one rather than two).* Rows 7–16 are
-`check_kills`-protected: I may not close them without authorisation. *That is a reason to leave them open,
+`check_kills`-protected: I may not close them without authorisation. *That is a reason to leave them open, ⌗ **⟨r2834: the register's PRE-r2830 rule. **The person-gate is gone** — a row is struck when its OBJECT is answered and the answer is receipted, and nothing else gates it. `PROTECTED_OPEN`'s own header carries the current rule.⟩**
 not a reason to leave them unlisted, and this file had them unlisted.* The order is the standing one: residual theory first, the
 acoustic correspondence and the verdict last.
 

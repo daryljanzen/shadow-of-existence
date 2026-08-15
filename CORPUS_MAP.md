@@ -9187,7 +9187,7 @@ others are doing. It needs to know which vein it is inside, and to file what it 
 ### Revision r2499 — 2026-08-11 (main line). **THE PROTECTED ITEMS ARE THE PROBLEM'S MAIN VEINS, and reporting one as a single open question had already flattened it.**
 
 **⌗⌗ THIS LINE HAS GOT `PROTECTED_OPEN` WRONG THREE WAYS NOW, and the third is the subtlest.**
-*· **r2463** — read "may not close" as **"do not touch"** and set four live questions aside;*
+*· **r2463** — read "may not close" as **"do not touch"** and set four live questions aside;* ⌗ **⟨r2834: the register's PRE-r2830 rule. **The person-gate is gone** — a row is struck when its OBJECT is answered and the answer is receipted, and nothing else gates it. `PROTECTED_OPEN`'s own header carries the current rule.⟩**
 *· **r2497** — listed them as **four questions awaiting answers** ("is there an operator whose kernel is the four",
 "can a second slicing be non-arbitrary");*
 ⇒ ⛔ ***The second looks like diligence and is worse in one way: it keeps working the vein while silently shrinking
@@ -10470,7 +10470,7 @@ needed is still an answer**. Nor anything about the UV's tractability.* ***PO-6 
 
 **⛔⛔ THE MISREADING.** *At r2463 this line reported `L-165` (PO-6), `L-221` (PO-5), `L-175` (PO-9) and `L-202` as
 **"gated or protected"** and set them aside.* ⇒ ***`PROTECTED_OPEN`'s own header says the opposite:*** **"The
-register of open research questions a node may NOT CLOSE … a node may write a bounded negative; a closure on a
+register of open research questions a node may NOT CLOSE … a node may write a bounded negative; a closure on a ⌗ **⟨r2834: the register's PRE-r2830 rule. **The person-gate is gone** — a row is struck when its OBJECT is answered and the answer is receipted, and nothing else gates it. `PROTECTED_OPEN`'s own header carries the current rule.⟩**
 protected item is Daryl's."**
 ⌗ **AND ITS OWN REASONING MAKES THE MISREADING WORSE:** *it exists because "every mechanical instrument this corpus
 has ever built polices OVER-CLAIMING … **NOTHING polices a NEGATIVE verdict on an open question** … the guard set is

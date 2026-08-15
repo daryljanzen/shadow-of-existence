@@ -18,7 +18,7 @@ sources: [chat]
 
 | namespace | file | codes | unfolded | state | what only it has |
 |---|---|---|---|---|---|
-| **PROTECTED_OPEN** | `PROTECTED_OPEN.md` | 12 | 0 | ✔ FOLDED | *the closure bar — a node may not close these* |
+| **PROTECTED_OPEN** | `PROTECTED_OPEN.md` | 12 | 0 | ✔ FOLDED | *the closure bar — a node may not close these* | ⌗ **⟨r2834: the register's PRE-r2830 rule. **The person-gate is gone** — a row is struck when its OBJECT is answered and the answer is receipted, and nothing else gates it. `PROTECTED_OPEN`'s own header carries the current rule.⟩**
 | **OPEN_PROBLEMS_LEDGER families** | `THE_OPEN_PROBLEMS_LEDGER.md` | 8 | 0 | ✔ FOLDED | *the families and their worked content — a VIEW of the register since c54.121* |
 | **P7 sec:frontiers** | `corpus/CR_framework.tex` | 4 | 0 | ✔ FOLDED | *the framework paper's own frontier list* |
 | **p0 sec:frontiers** | `corpus/geometric_core_paper.tex` | 3 | 0 | ✔ FOLDED | *the geometric core's frontier list* |

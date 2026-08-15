@@ -140,7 +140,7 @@ That is why this failure lands on long sessions and not short ones.***
 **THE BAR.** *A node **may** write a **bounded negative** — "route $Y$, run on object $Z$, did not produce
 $X$", scope stated and object named, **filed as material**. A node **may not** write a **closure** on a
 question registered in* **`PROTECTED_OPEN.md`** *— any wording a later reader would take as licence to stop
-looking.* **Bounded negatives are the node's; closures on protected items are Daryl's.**
+looking.* **Bounded negatives are the node's; closures on protected items are Daryl's.** ⌗ **⟨r2834: the register's PRE-r2830 rule. **The person-gate is gone** — a row is struck when its OBJECT is answered and the answer is receipted, and nothing else gates it. `PROTECTED_OPEN`'s own header carries the current rule.⟩**
 
 **⚠ AND THIS IS NOT A MANUFACTURED DEFERRAL** *(r1907 forbids inventing an owner for work the node can do, and
 that stands).* ***The node does the work. What it may not do is convert the work's bounded result into a

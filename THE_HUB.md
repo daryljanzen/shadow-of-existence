@@ -131,7 +131,7 @@ why**.*
 ## ⛔⛔ READ THIS BEFORE YOU READ THE REGISTER AS A TO-DO LIST — added r2464
 
 ***`PROTECTED_OPEN` DOES NOT MEAN "DO NOT TOUCH". IT MEANS "DO NOT CLOSE".*** *Its own header:*
-**"The register of open research questions a node may NOT close … A node may write a bounded negative; a closure on
+**"The register of open research questions a node may NOT close … A node may write a bounded negative; a closure on ⌗ **⟨r2834: the register's PRE-r2830 rule. **The person-gate is gone** — a row is struck when its OBJECT is answered and the answer is receipted, and nothing else gates it. `PROTECTED_OPEN`'s own header carries the current rule.⟩**
 a protected item is unseated."**
 
 ⇒ **A protected row is fully workable.** *Compute on it, narrow it, write a bounded negative on it, exhibit

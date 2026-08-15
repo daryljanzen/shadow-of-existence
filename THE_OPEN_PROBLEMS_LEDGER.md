@@ -27,7 +27,7 @@ sources: [cowork, chat]
 >
 > *· **The three PROTECTED rows are not untouchable and three of them have been worked.** `PROTECTED_OPEN`
 > means **a node may not CLOSE**, not may not touch — "a node may write a bounded negative". PO-5, PO-6 and
-> PO-9 were all narrowed at r2464–r2466, and **all three had a concrete next step written in their own rows
+> PO-9 were all narrowed at r2464–r2466, and **all three had a concrete next step written in their own rows ⌗ **⟨r2834: `PO-9` is STRUCK (r2832) — the object is answered BOUNDED BELOW ONLY and the receipt clears on all four checks. This sentence is the narrowing's record, not live work.⟩**
 > the whole time**.*
 > *· **The colour front has moved and its question has changed.** Not "where does $\mathfrak{su}(3)$ live" —
 > it is **selected** by the wall monodromy, and the compact face is priced as an ADD — but ***"what would make
@@ -1796,4 +1796,4 @@ $$\textbf{Total dissociation destroys nuclear binding. It cannot destroy baryon 
 
 **⇒ SO THE LINE BETWEEN INHERITED AND PREDICTED IS DRAWN BY CONSERVATION.** *A quantity carried by a conservation law is **a datum of the handover**; one fixed by nuclear binding is **a consequence of the cooling leg**. ***Not two attitudes to one kind of thing — two kinds of thing.***
 
-**⌘ AND IT SHARPENS THE FRONTIER.** ***A derivation of $\eta$ must reach a conserved charge of the progenitor***, and **can draw on nothing the peak erases** — which excludes the entire nuclear history and **leaves the baryon asymmetry itself as what would have to be explained**. *Baked in P16 at the erasure passage and in P7's frontier item 2.*
+**⌘ AND IT SHARPENS THE FRONTIER.** ***A derivation of $\eta$ must reach a conserved charge of the progenitor***, and **can draw on nothing the peak erases** — which excludes the entire nuclear history and **leaves the baryon asymmetry itself as what would have to be explained**. *Baked in P16 at the erasure passage and in P7's frontier item 2.* ⌗ **⟨r2834: this quotes the register's PRE-r2830 rule. **The person-gate is gone**: a row is now struck when its OBJECT is answered and the answer is receipted, and nothing else gates it. The clause below is otherwise unchanged — a bounded negative was always the node's.⟩**

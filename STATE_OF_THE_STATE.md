@@ -67,9 +67,9 @@ appendix and the body agree.** Not gated — done once, by reading.*
 |---|---|---|
 | `CORPUS_MAP.md` | 5,084,410 | **SWEPT r2834.** *2,156 entries; **28 named as overturned and 19 said nothing** — including `r696`, the cyanide-face implosion, sitting unmarked beside `r697`'s retraction of it. All marked at their own heads.* `check_map_overturns` holds it |
 | `THE_LIVE_ARC.md` | 980,454 | **9 overturns READ r2833 — all nine are SELF-MARKING**, stating their own withdrawal in the same sentence ("I MUST WITHDRAW c54.138's TIGHTENING", "THE COUNT IS WITHDRAWN r2510"). ⌗ *That is the correct form; the register's separate-mark convention is not required here.* **Still unchecked: cross-lead duplication, and whether any live lead's framing is stale** (two were, r2832) |
-| `THE_PLAN.md` | 517,382 | only for struck rows |
+| `THE_PLAN.md` | 517,382 | **SWEPT r2834** — *zero overturn statements (it is a forward document, not a log), and no live item names a struck row.* Carried one PRE-r2830 rule statement, now marked |
 | `FOR_56.md` | 248,149 | **never read this session** |
-| `THE_OPEN_PROBLEMS_LEDGER.md` | 211,923 | only for struck rows |
+| `THE_OPEN_PROBLEMS_LEDGER.md` | 211,923 | **SWEPT r2834** — *one live sentence named `PO-9` as open (marked), and it quoted the PRE-r2830 person-gate as current (marked)* |
 | `FOR_54.md` | 133,752 | written to, never audited |
 | `THE_WEAVE.md` | 89,981 | written to, never audited |
 | the 17 papers | — | **5 claims spot-checked. No systematic pass** |
@@ -90,7 +90,11 @@ be allowed to move only after it is read.
 
 **⌗ DONE r2834 — and sizing it first is what made it workable.** *5.08M characters sounded unbounded. **Counted: 32 overturn statements, 29 distinct victims, 19 unmarked.** A morning's work, not a week's — and **the gate then found two more my hand-sweep had missed**, which is the argument for building the gate rather than declaring the sweep done.*
 
-**NEXT: `THE_PLAN.md` (517,382) and `THE_OPEN_PROBLEMS_LEDGER.md` (211,923).** *Both checked only for struck rows. **Neither has been read for its own stale verdicts** — the `CORPUS_MAP` pattern applied to the two documents that say what to DO rather than what happened. ⌗ Size first: count overturn statements and unmarked victims before deciding the shape.*
+**⌗ DONE r2834 — and the pattern did NOT transfer, which was the finding.** *`CORPUS_MAP`'s defect was overturned verdicts; **both forward documents have ZERO overturn statements**, because they say what to do rather than what happened. ⇒ **Their defect is a different one: a rule quoted from before it changed.***
+
+**⛔ AND IT WAS EVERYWHERE.** *r2830 replaced the register's closure rule with a physics one. **The old person-gate survived, verbatim and unmarked, in 33 places across 14 documents** — `README`, `THE_HUB`, `THE_OPERATING_MANUAL`, `THE_WISDOM_LEDGER`. **A stale FINDING misleads about one result; a stale RULE misgoverns every future one.** All marked; `check_rule_current` holds it.*
+
+**NEXT: `FOR_56.md` (248,149) and `FOR_54.md` (133,752).** *The routing documents — never audited, only written to. **These are where one line hands the other its findings**, so a stale claim here propagates across the line boundary, which is the one direction no gate covers. ⌗ Size first.*
 
 ---
 
