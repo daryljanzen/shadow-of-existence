@@ -239,3 +239,4 @@ r2777  LATENT      PO-4s route was TAKEN -- P14 says so outright. The row record
 r2778  LATENT      PO-4 STRUCK -- the ask is answered in the negative, determined not deferred. 4 dup rows folded.
 r2779  LATENT      the corpus is coherent; my kill receipt was not -- dropped OBSERVED FERMION from a quote. Gate built.
 r2780  LATENT      L-820 merged: C52 WITHDRAWN (banked spectra are NK=600), C51 discharged. Aliasing is cosmetic.
+r2781  COMPUTED    the k-range fixes the control (7.14->3.81) and not CR (280->281). Radiation is the difference.

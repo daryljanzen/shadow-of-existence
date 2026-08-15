@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2781 — 2026-08-11 (main line). **THE $k$-RANGE FIXES ONE ARM ONLY — the control is diagnosed, CR is not.**
+
+**⛭⛭ ⓵ `L-820 S2`'s INCIDENTAL FIGURES ANSWER r2760.**
+
+    arm         LMAXL=2000    LMAXL=2512    change
+    control           7.14          3.81      -47%      <- on the SAME 185 bins
+    CR                 280           281      +0.4%
+
+*r2760 called the control's factor of seven "undiagnosed". **It is a $k$-range truncation.***
+
+**⛔ ⓶ BUT THE ASYMMETRY IS THE FINDING, NOT THE IMPROVEMENT.** *If the excess were plain truncation **both arms
+would gain**. The response ratio is over twenty to one.*
+⇒ ***By r2752's own rule — for a two-arm discrepancy, ask what DIFFERS — the answer is fixed: **the control's $H$
+carries radiation and CR's does not**. Radiation dominates at high $z$, where high-$k$ modes are sourced, so
+truncating $k$ truncates the control's radiation-driven transfer and leaves CR's untouched.***
+
+**⛭⛭⛭ ⓷ SO THE TWO RESIDUALS HAVE DIFFERENT STATUS AND HAD BEEN CARRIED AS ONE.** *The control's $3.81$: a
+numerical truncation, responding to a parameter, with a stated cure. **CR's $281$: unresponsive to that parameter
+and diagnosed by nothing.*** ⇒ ***That is the row's real remainder, and it was hidden inside "both arms are outside
+the discriminating regime".***
+
+**⓸ AND IT EXPLAINS THE WIDENING $F_3$ ($50497\to51547$) WITHOUT NEW PHYSICS** — *the gap grows because the CONTROL
+improves. **Exactly the case F5 protects: "a negative is a measurement discrepancy, not a framework verdict."***
+
+**⛭ THE RULE:** ***read the incidental numbers in someone else's receipt. **A run made for one purpose reports
+figures its author had no reason to interpret** — cc54 had no reason to care that the control halved, because
+`C51` was about bins.***
+
+⚠ *The convergence trend is **two points**: excess $\sim L^{-3.4}$, reaching $\sim1.1$ by $L\sim6000$. Reported as
+an extrapolation. A third at $L\approx3200$ would make it a measurement.*
+
 ### Revision r2780 — 2026-08-11 (main line). **`L-820` MERGED — `C52` WITHDRAWN, `C51` DISCHARGED, `PO-10`'s BLOCKER GONE.**
 
 **⛔ ⓵ `C52` IS WITHDRAWN AND THE ERROR IS INSTRUCTIVE.** *r2762 observed the banked `.npz` has
