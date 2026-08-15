@@ -73,7 +73,7 @@ appendix and the body agree.** Not gated — done once, by reading.*
 | `FOR_54.md` | 133,752 | written to, never audited |
 | `THE_WEAVE.md` | 89,981 | written to, never audited |
 | the 17 papers | — | **5 claims spot-checked. No systematic pass** |
-| `receipts/` | 598 files | run, not read. `kills/PO-9.md` proved a receipt can pass and still assert two verdicts |
+| `receipts/` + `kills/` | 606 files | **SWEPT r2833 — ZERO.** *Both directions: a heading saying a check clears while the body says it does not, and the reverse (the shape `PO-9` actually had). **The pattern was verified against the known `PO-9` instance BEFORE the clean result was believed** — a scan that cannot find the defect it was built for returns clean either way.* `check_receipt_verdicts` holds it |
 
 ---
 
@@ -86,7 +86,9 @@ be allowed to move only after it is read.
 
 **⌗ DONE r2833 — 26 live leads read against their rows' heads.** *One genuine stale framing: **`L-165`, 357 revisions out of date and live**, calling the closed-form nonlinear $\Lambda>0$ solution "untouched" when `PO-6`'s head says its expansion parameter is NAMED, and saying "what remains is defining the sum" when the row says the remainder is joint satisfiability. Marked, and `check_lead_framings` now holds it.* ⌗ *A revision LAG turned out not to be the signal — most lagging leads are records of completed work. **The signal is a lead calling something untouched that its row reports settled.***
 
-**NEXT: the 598 receipts.** *`kills/PO-9.md` proved a receipt can pass its own run and still assert two verdicts in its text — a heading saying DOES NOT CLEAR beneath a header saying NOW CLEARS. **Nothing has ever read a receipt for internal contradiction**; they are only run. Bounded: 598 files, one pattern.*
+**⌗ DONE r2833 — 606 receipt files swept, zero defects.** *A debt discharged by reading, not by assuming. **And the method matters more than the result**: the scan was first run against the one instance known to have the defect, because a pattern that cannot catch its own case reports clean whether or not the corpus is.*
+
+**NEXT: `CORPUS_MAP.md`, 5,084,410 characters, never swept.** *It is the revision log — append-only by design, so most of it is correctly historical. **The question is whether any of its VERDICTS are stated as current and have since been overturned.** ⌗ **Not bounded. First move is to SIZE it**: count the verdict-shaped statements and how many carry a later contradiction, before deciding whether a sweep is a turn's work or a week's.*
 
 ⌗ *After that: `CORPUS_MAP` at 5.08M is the largest unswept surface in the programme and nothing has
 ever checked it. **Not bounded — size it before starting it.***
