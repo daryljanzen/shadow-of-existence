@@ -235,3 +235,4 @@ r2775  LATENT      PO-4s kill receipt written and CONCLUDES NOT TO STRIKE -- che
 c54.220  COMPUTED    the degeneracy carrying PO-6's quartic was never derived: it is g(n)=2(n-1)(n+3), n>=2, so the shell is 2n^3 and the constant is the component count
 c54.220a LATENT      and D2's "(any tensor rank)" is false -- scalar leading 1/3 against tensor 2/3; the scaling it needed is right, so the degree stands and the coefficient moves
 r2776  LATENT      c54.220 merged and verified. Its SHA rule turned on me: 4 of my 5 absence claims were unpinned.
+r2777  LATENT      PO-4s route was TAKEN -- P14 says so outright. The row records what it returned, not an untaken route.

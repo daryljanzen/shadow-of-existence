@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2777 — 2026-08-11 (main line). **`PO-4`'s ROUTE WAS TAKEN — P14 IS THE WORK.**
+
+**⛔ ⓵ r2775's GLOSS CORRECTED.** *It read the row's "routed r2398 … it was not in this row" as **unworked in 377
+revisions**. **It means the ROUTING was recorded elsewhere.***
+
+**⛭⛭ ⓶ THE BOUNDARY PAPER NAMES THE ROUTE AND ITS MECHANISM.** *"the index theorem is a statement about a compact
+connected group, and a positive-dimensional connected group contains a circle whose action is what forces the
+equivariant Dirac index to vanish, while the gravitational handedness is carried by the discrete orientation parity
+… **no such circle action and so no trigger** --- so observed fermion chirality is not merely found non-geometric
+but **forced** to be … **a fermion sector built on that discrete component … is the single geometric opening the
+wall leaves**."*
+
+**⛭⛭⛭ ⓷ AND P14 SAYS OUTRIGHT THAT IT TAKES IT.** *"**This paper takes up that opening concretely.** We put a Dirac
+field on the slicing curve and compute what its zero-mode content is."* — *returning "a fermion sector with exactly
+the discrete shape the Standard Model wears: three chiral generations carrying a family symmetry".*
+
+⇒ ***P14 is not a paper that COULD take the route. It is the paper whose stated purpose is taking it.***
+⇒⇒ ***So `PO-4` is not waiting on an untaken route — **it is recording what the taken route returned**: colour's
+exact selection rules, and isospin as a species label rather than $SU(2)_L$'s chiral action.***
+
+**⛭ THE RULE:** ***"routed elsewhere and not in this row" describes where the ROUTING lives, not whether the WORK
+was done. **Before calling a route unworked, grep for a paper that says it takes it** — a paper announcing its own
+purpose in its introduction is the easiest thing to miss, because nobody greps introductions for verbs.***
+
+⚠ *No strike recommended: comparing what the route DELIVERS against what the row ASKS is the row owner's call.
+r2775's check ① finding stands; only its gloss is corrected.*
+
 ### Revision r2776 — 2026-08-11 (main line). **`c54.220` MERGED — and its SHA rule turned on this line at once.**
 
 **⛭⛭ ⓵ THE PHYSICS.** *P10's UV degree rests on three inputs; **D2 carried the third — the degeneracy — as a bare
