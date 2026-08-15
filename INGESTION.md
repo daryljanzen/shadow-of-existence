@@ -291,3 +291,5 @@ r2791  LATENT      PO-5s two walls are ONE -- p0 derives the no-coupling from th
 r2792  CLAIMED    is exists-but-does-not-act a PATTERN across the board, or two rows?
 r2792  LATENT      six of six open rows share one shape: the object exists, the action is absent. Control passes.
 r2793  LATENT      L-821 gated: 7/40 verified independently. R~R magnitude discrepancy recorded (4.977 vs 4.5).
+r2794  CLAIMED    resolve R~R: 4.977310 (analytic) vs 4.5000 (finite-difference). Compute it.
+r2794  LATENT      r2793s R~R discrepancy WITHDRAWN -- degree-4 homogeneous, two parameter points. One line owed.

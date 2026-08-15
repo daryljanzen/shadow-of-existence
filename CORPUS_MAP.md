@@ -146,6 +146,28 @@ sources: [cowork, chat]
 
 
 
+### Revision r2794 — 2026-08-11 (main line). **r2793's $R\tilde R$ DISCREPANCY WITHDRAWN — two parameter points, not two answers.**
+
+**⛔ ⓵ THE ERROR.** *r2793 reported $R\tilde R = 4.977310$ (`c54.219`) against $4.5000$ (`L-821`) as a $10.6\%$
+cross-receipt discrepancy.*
+⇒ ***$R\tilde R$ is **homogeneous of degree 4 in $(H,k,\omega)$** — `c54.219`'s own result, in the very receipt
+being compared. A degree-4 homogeneous function takes a different value at every parameter point.***
+
+    L-821    evaluates at H=0.5, k=1.0, omega=1.5   ->  4.5000
+    c54.219  docstring figure, parameters NOT stated ->  4.977310
+    a uniform rescale of 1.0255 reproduces it exactly
+
+**⓶ AND THE FRAMING WAS WORSE THAN THE ERROR.** *r2793's summary said "two receipts, one quantity, **both yours**"
+— **attributing a problem rather than resolving it**, when the resolution was one homogeneity check away.*
+
+**⓷ WHAT IS ACTUALLY OWED, AND IT IS ONE LINE.** ***`c54.219` should state the $(H,k,\omega)$ at which $4.977310$
+was evaluated.*** *It is a docstring figure and the code is purely symbolic, so **nobody can reproduce or compare
+it** — including the node that wrote it. Routed.*
+
+**⛭ THE RULE:** ***before comparing two numbers, check they are evaluations of the same thing at the same point.
+**A quantity with stated homogeneity has no single value**, and a receipt reporting one without its parameters has
+reported a number nobody can use.***
+
 ### Revision r2793 — 2026-08-11 (main line). **`L-821` GATED — $7/40$ RE-DERIVED, AND A CROSS-RECEIPT DISCREPANCY RECORDED.**
 
 **⛭⛭ ⓵ THE COEFFICIENT, VERIFIED INDEPENDENTLY.** *cc54 gives `PO-6`'s owed value as $7/40$, the graviton
