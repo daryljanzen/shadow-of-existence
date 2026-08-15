@@ -146,7 +146,7 @@ sources: [cowork, chat]
 
 
 
-### Revision r2835b — 2026-08-15 (main line). **TWO OF THE FIVE "WHAT IS OPEN" CLAUSES WERE FALSE.**
+### Revision r2836 — 2026-08-15 (main line). **TWO OF THE FIVE "WHAT IS OPEN" CLAUSES WERE FALSE.**
 
 *Testing whether the rows' new next-step clauses are TRUE — which needs reading, not patterns.*
 
