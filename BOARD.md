@@ -100,8 +100,8 @@ current: r2825+c54.229
 *A gated row is OPEN and its remainder is real. It is listed here so that **waiting is visible**, which is what `PO-2` was not for 170 revisions (r2803).*
 
 - **`PO-2`** — gated on **`PO-5`** · *last moved r2822*
-- **`PO-5`** — gated on **`PO-11`** · *last moved r2823*
-- **`PO-7`** — gated on **`PO-seam`** · *last moved r2807*
+- **`PO-5`** — gated on **`PO-11`** · *last moved r2832*
+- **`PO-7`** — gated on **`PO-seam`** · *last moved r2832*
 
 ⌘ *`check_gate_currency` verifies that each gated row's holding document has heard of the row's own findings.*
 
