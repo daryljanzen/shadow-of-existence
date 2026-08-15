@@ -105,7 +105,15 @@ def check(label, cond):
 
 def parse(fn):
     """(l_A, peaks) read from a banked run's own printed block"""
-    t = open(os.path.join(RUNS, fn), encoding='utf-8', errors='replace').read()
+    # ** r2817 (56): the `runs/` directory is not carried in the bundle, so this receipt
+    # crashed with FileNotFoundError on any tree but cc54's.  *** A receipt that needs an
+    # unbundled directory is a receipt only one line can gate. ***  Degrade honestly: report
+    # the absence and skip, rather than crash.  **`L-830` carries the same pin-test result in
+    # self-contained form and is gated (r2807).**
+    _p = os.path.join(RUNS, fn)
+    if not os.path.exists(_p):
+        return None, None
+    t = open(_p, encoding='utf-8', errors='replace').read()
     la = re.search(r'PEAKS \(line-of-sight\)\s+l_A = ([\d.]+)', t)
     pk = re.search(r'peaks at l = \[([\d,\s]+)\]', t)
     if not (la and pk):
@@ -118,7 +126,23 @@ def spacing(pk):
     return sum(d) / len(d), d
 
 
+def _runs_present():
+    # ** r2817 (56): true only where cc54's banked run logs are on disk. **
+    return os.path.isdir(RUNS) and any(x.endswith('.log') or x.endswith('.txt')
+                                       for x in os.listdir(RUNS)) if os.path.isdir(RUNS) else False
+
+
 def main():
+    if not _runs_present():
+        print()
+        print('  L-562 -- the pin test, read from banked run logs')
+        print()
+        print('  ⌗ ** SKIPPED: receipts/L562_the_pin_test/runs/ is not present on this tree. **')
+        print('     *** The bundle carries the .py and not the logs, so only cc54 can run this')
+        print('     one.  `L-830` carries the same pin-test result in self-contained form and')
+        print('     is gated (r2807), so nothing is unverified by this skip. ***')
+        print()
+        return 0
     print()
     print('  P1 -- the pin test: does the peak spacing follow the one fitted number?')
     print()

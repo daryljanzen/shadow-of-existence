@@ -330,3 +330,4 @@ r2814  COMPUTED    the routes are ENUMERABLE: 3 of 5 closed, and the spectral-tr
 r2815  LATENT      c54.229/230 gated: r2800 wrote its finding into the row it measured, and named the wrong column.
 r2816  CLAIMED    adjudicate B3s leaf pair vs L-813s tortoise V+/-: same operator or different?
 r2816  LATENT      B3 and L-813 are ONE operator; the omega-coupling is omega/sqrt(f) and there is no lambda f/r.
+r2817  INSTRUMENT  L-562 made to degrade honestly when its unbundled runs/ is absent.
