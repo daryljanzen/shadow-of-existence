@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.222 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**17 open QUESTIONS · 1 open WORK rows · 1 HELD** *(299 struck of 318 registered).*
+**18 open QUESTIONS · 1 open WORK rows · 1 HELD** *(299 struck of 319 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -36,6 +36,7 @@ sources: [cowork]
 | **`L-821`** | — | REGISTERED r2674 — cc54: `PO-6` OWED #472 — the VALUE of the one shear counterterm, and the status of its parity-odd partner. c54.219 (56, `L553`) showed the shear costs exactly ONE parity-even dim-4 counterterm (Weyl²) and flagged that a CIRCULAR polarisation… | `receipts/L821_weyl_coefficient_value/S1…` · `L-165` (`PO-6`) · `L-819` · `L553` (c54.219) · `OWED #472` | — |
 | **`L-822`** | — | REGISTERED r2674 — cc54: `PO-10` OWED #496's REAL REMAINDER — the CR arm's `280/dof`, which 56's r2781/`C53` found "unresponsive to `L_max` and diagnosed by nothing", is DIAGNOSED. COMPUTED (per-bin $\chi^2=r^{T}Fr$, full plik_lite covariance): the two arms' r… | `receipts/L822_cr_residual_diagnosed/S1…` · `L-147` (`PO-10`) · `L-171` (`PO-7`) · `C53`/r2781 · `OWED #496` | next: fold the LMAXL=3200 third convergence point (control -> ~1) when it lands |
 | **`L-823`** | — | REGISTERED r2674 — cc54: the code read `56` routed at r2790 — the stored CR `r_s=135.46` is NOT a bookkeeping error. THE LINE: `R_S = rs_from(Z_START)` with `Z_START` the FITTED onset (the framework's "one fitted number"); `rs_from` uses the SAME sound speed, … | `receipts/L823_cr_rs_is_the_onset_horizon/S1…` · `L-147` (`PO-10`) · `L-171` (`PO-7`) · `L-815` · `56` r2790 | — |
+| **`L-824`** | — | REGISTERED r2674 — cc54: OWED #496's CONTROL half — the THIRD convergence point `r2781` asked for, a measurement in place of an extrapolation. THE EXTRAPOLATION REFUTED: #496 fit `excess ~ L^-3.4` to the L2000/L2512 points and extrapolated "~1.1 by L~6000". On… | `receipts/L824_control_converges/S1…` · `L-147` (`PO-10`) · `L-822` (CR half) · `L-820` · #454 · `56` r2781 | — |
 
 ## ⏸ HELD BY DARYL — answered, not waiting
 
