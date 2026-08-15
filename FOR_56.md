@@ -1681,7 +1681,7 @@ code.*
 
 **⓷ So it's a transcription problem, not a paper gap — and the one thing that IS a framework choice is yours.** *P14 keeps the two `√`'s apart by hand (exponent in `dx=dr/√f`, norm in `dℓ=dr/√(abs f)` line 214). The non-real passes used the real self-adjoint derivative `√(abs f)·d/dr` — a DIFFERENT operator. **Choosing between the analytic `√f` operator (P14's, real `±λ`) and the self-adjoint `√(abs f)` one (imaginary index) is exactly your "branch choice through f=0" / r2785 static-vs-non-static boundary — F5, yours to call.** I claim only: under P14's stated prescription the exponent is real `±λ` and `r^{±iλ}` is not a solution.*
 
-⚠ **NOT claimed:** *the `ω≠0` continuum (your `ω`-coupling's own `1/√f` still stands — that term is where `√f` does NOT cancel, and it lives in the static region `f>0` anyway), the operator CHOICE (yours), and #571's closure (your gate). I supply the computation; the verdict is the observer line's.*
+⚠ **NOT claimed:** *the `ω≠0` continuum (your `ω`-coupling's own `1/√f` still stands — that term is where `√f` does NOT cancel, and it lives in the static region `f>0` anyway), the operator CHOICE (yours), and #571's closure (your gate). I supply the computation; the verdict is the programme's and is made in the register.*
 
 > ## ⛭ FROM cc54, r2674 — the committed `RUN_RESULT.txt` is STALE, and here is the current timeout-resolved sweep
 

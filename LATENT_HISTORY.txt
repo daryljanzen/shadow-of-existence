@@ -287,4 +287,6 @@ r2820  COMPUTED    the spectral route CLOSES for r2806s reason -- no D_F, so the
 r2821  LATENT      the composite route does NOT close -- Weinberg-Wittens confinement and no-S-matrix escapes hold.
 r2822  LATENT      a composite gluon is the OCTET and P14 counts the SINGLET -- same fact escapes W-W and hides it.
 r2823  LATENT      PO-5 is gated on PO-11 -- a composite of bound modes is bound. The chain terminates at the descent.
-r2825  COMPUTED    VERDICT: the analytic sqrt(f). Self-adjointness applies where r is spatial, and the wall is not.
+r2825  LATENT      VERDICT: the analytic sqrt(f). Self-adjointness applies where r is spatial, and the wall is not.
+r2826  INSTRUMENT  199 deferrals to Daryl removed; check_deferrals widened from a seven-verb allowlist.
+r2827  INSTRUMENT  PO-6 was reported closed for four status reports and reads OPEN. check_status_honesty built.

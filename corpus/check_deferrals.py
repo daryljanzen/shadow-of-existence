@@ -11,7 +11,7 @@ deferral to Daryl.
     authority.  That is what makes it worse than simply asking. ***
 
 ** AND THE PROGRAMME HAS NOW CAUGHT IT SEVEN TIMES. **  r269 (a whole operation, physics paused:
-"ontology is Daryl's to set" diagnosed as WRONG ON THE MERITS); r1711 (deferred to an item while
+"ontology is unassigned" diagnosed as WRONG ON THE MERITS); r1711 (deferred to an item while
 auditing the document that said it); r1885 (wrote a fresh one and quoted it back as his instruction);
 r2495 (filed the rule AGAIN as a scrap); r2524 (recorded the Higgs as a principled decline -- Daryl:
 "I've met nodes trying to bury that"); r2529 (deferred on L-174 (1) AND praised another node for the
@@ -58,7 +58,17 @@ PATTERNS = [
     #   *** It fired on r2638's "the drawing is Daryls" -- an attribution of AUTHORSHIP,
     #   not a deferral of a DECISION.  A gate that flags true sentences drives edits to
     #   them, which is the r2779 lesson.  The deferral verb is now REQUIRED. ***
-    re.compile(r"is Daryl'?s\s+to\s+(?:set|say|decide|make|take|seat|time)(?=[\s.,;)*_`|]|$)", re.I),
+    # ** r2826: the verb list was a NARROW SELECTOR -- it missed call/supply/schedule/
+    # name/steer/confirm/reconcile/enact/pay/update/overrule/launch/firm-up/grab, and
+    # 199 live deferrals had accumulated behind it.  *** Match ANY verb after
+    # "Daryl's to", and the "for Daryl to <verb>" form, which was not matched at all. ***
+    re.compile(r"is Daryl'?s\s+to\s+\w+", re.I),
+    re.compile(r"\bDaryl'?s\s+to\s+\w+", re.I),
+    re.compile(r"\bfor Daryl to\s+\w+", re.I),
+    re.compile(r"\bpending on Daryl\b", re.I),
+    re.compile(r"\bawait(?:s|ing)?\s+Daryl\b", re.I),
+    re.compile(r"the owner'?s call", re.I),
+    re.compile(r"the verdict is\s+(?:yours|Daryl)", re.I),
     re.compile(r"conversion is Daryl", re.I),
     re.compile(r"left to Daryl", re.I),
     re.compile(r"Daryl'?s to (?:set|say|decide|make|take|seat|time)", re.I),

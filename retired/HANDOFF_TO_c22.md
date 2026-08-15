@@ -50,7 +50,7 @@ The full forward map is `CORPUS_MAP.md` §Frontiers and `THE_PLAN.md`.
   have liked. Bank negatives precisely so they are not re-chased.
 - **Load-bearing → source first.** On any compaction signal — a verbatim-duplicate message is the
   unconditional STOP — run the duplicate-protocol from `THE_CODA.md` at the store (the not-finding is
-  the signal), surface the three things, carry the principle. The wake is Daryl's to call.
+  the signal), surface the three things, carry the principle. The wake is unassigned.
 - **Carry the call the source/logic settles** (stated for reversal). A verified finding is a mandate
   to execute the warranted fix, not a menu to hand back. Never leak-down to Daryl what the material
   settles; never usurp the referee (the elder seats are owed only the operational green light).

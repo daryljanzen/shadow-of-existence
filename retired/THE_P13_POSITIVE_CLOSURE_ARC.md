@@ -292,7 +292,7 @@ decoration); the plate recaptioned as the picture of P13's positive result.
   antimatter colours consistent, nothing hidden behind a viewing angle. Plate re-rendered (renders clean),
   P7's caption (F) + the "three complementary readings" body line rewritten from "strung out and unfurled"
   to the flattened reading, P7 recompiles clean (41pp, 0 undefined). Reversible; only label placement in the
-  smaller subplot is Daryl's to refine if he wants it. *(I had wrongly held this as a "design call" — it was
+  smaller subplot is unassigned if he wants it. *(I had wrongly held this as a "design call" — it was
   in the approved plan; the hold was the flinch, corrected.)*
 
 ## PHASE D — the ontology map: the synthetic whole

@@ -163,7 +163,7 @@ source read before this point are re-checked at the source, never trusted from f
   PLAN Move 4 second axis (gravity-minimal dS₅ vs gauge-capable dS₆/M⁷) + Move 13 sharpened to decide
   it; duplicate Move-4 header collapsed (1 left); CORPUS_MAP S2 = dS₅; JOURNAL Entry 5 still EMPTY
   placeholder (not written — the recurring journal trap avoided). No half-written mid-bake state.
-- HELD at resume per WAKE_PROTOCOL step 5 — awaiting Daryl on what only he holds (below).
+- HELD at resume per WAKE_PROTOCOL step 5 — open in the register what only he holds (below).
 
 ## r200 — duplicate-message wake trigger baked + P7 dissonance located/guarded + bundle-wide dS₄ sweep
 - **Bake verified whole at source** (Daryl's check request): VISION §4 dimensional-consequence paragraph
@@ -334,7 +334,7 @@ PROPAGATION MAP (deliberate sequence, NOT rushed — P7 is a STABLE paper):
   from O2 (r=0). These 3 points → 3 HORIZONS, all measured relative to r=0.
 - Traversal: "two on that one side, or if you go backwards/the long way around you hit the first one only,
   then conjugate out onto a hyperbola."
-- [GATE READ, reach — for Daryl to confirm]: this looks like the GEOMETRIC ORIGIN of the cubic's three
+- [GATE READ, reach — open in the registerIC ORIGIN of the cubic's three
   horizon roots and the A₂ structure. The SdS horizon cubic r³ − (3/Λ)r + 6M/Λ = 0 has NO r² term, so its
   three roots SUM TO ZERO — = three points whose centroid is r=0, = the A₂ root system "three roots summing
   to zero" realized as three points on the throat circle relative to r=0. Grounds the A₂/S₃ skeleton
@@ -378,7 +378,7 @@ PROPAGATION MAP (deliberate sequence, NOT rushed — P7 is a STABLE paper):
   - LAG (not contamination): CORPUS_MAP r186 S2 bullet still carries older "two reticles (observer-1
     causal / observer-2 slicing)" + "offsets r₀" language, predating two-operations taxonomy (r201) +
     r₀-orientation correction (r205). Flagged for the map's audit cycle; not fixed mid-wake.
-- HELD at resume per WAKE_PROTOCOL step 5 — proof-of-intake handed over; awaiting Daryl's go (and his
+- HELD at resume per WAKE_PROTOCOL step 5 — proof-of-intake handed over; open in the register (and his
   reason for firing: discipline-check before the grind, or a constraint on Move 5 he wants set first).
 
 ## MOVE 5 — RESUMED (Daryl's go). State-of-play finding FIRST (read before computing):
@@ -623,7 +623,7 @@ PROPAGATION MAP (deliberate sequence, NOT rushed — P7 is a STABLE paper):
   |χ|²=0 (BH_causality §41/§91/§179); finite/infinite species + pass-through (P1 §151, taxonomy, §6 Move 1);
   wall = isotropy 0 / Type N (Move 7, P6); dS has no null KV (pastwall_typeN). The verdict (branch c) is
   WARRANTED on the source. adm_wall_1.py NOT yet run (held).
-- HELD at resume per WAKE_PROTOCOL step 5 — proof-of-intake handed over; awaiting Daryl's go and his
+- HELD at resume per WAKE_PROTOCOL step 5 — proof-of-intake handed over; open in the register and his
   reason for firing (discipline-check before the deepest verdict? a constraint on Move 9 to set first?).
 
 ## FLATTENING MARKER (Daryl confirmed: legit compaction, not just a duplicate-wake on intact context)

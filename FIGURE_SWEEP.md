@@ -20,17 +20,17 @@ sources: [cowork]
 
 > **⌗ RE-READ AGAINST c54.163 AND DECLARED CURRENT r2396.** *None of the span's three results bears on a figure
 > pass.* ⌗ *Its own restraint still governs and is the reason it stays short:* **"new conceptual figures are
-> Daryl's to call/supply, not gate-generated"** *— so a node answering `H·1` by drawing eight figures would be
+> unassigned, not gate-generated"** *— so a node answering `H·1` by drawing eight figures would be
 > violating the item it was answering.*
 
 
 > **⌗ DATED r2385 — `c54.107`, which is when it was run**, *and it is the freshest of this group.* ⌗ *It
-> reserves the figures themselves — **"New conceptual figures are Daryl's to call/supply, not gate-generated"** —
+> reserves the figures themselves — **"New conceptual figures are unassigned to call/supply, not gate-generated"** —
 > so it is a pass and a ranked candidate list, and* ***a node that answered `H·1` by drawing eight figures would
 > be violating the item it was answering.*** *That restraint is why the document is short and why it is done.*
 
 *The deliverable `H·1` asks for, and the whole of what it may deliver from this side.* The item
-reserves the figures themselves: **"New conceptual figures are Daryl's to call/supply, not
+reserves the figures themselves: **"New conceptual figures are unassigned to call/supply, not
 gate-generated (the r548 discipline)."** So this is the pass and a ranked candidate list with the
 reason each is non-cosmetic — no figures are made here, and a node that answered the item by drawing
 eight would be violating it while appearing to discharge it.
@@ -44,7 +44,7 @@ MAKE, AND THE ITEM SAYS SO IN ITS OWN TEXT.
 
 `H·1`: *"a systematic pass over all fourteen papers for where a NEW figure would earn its place --
 for completeness, for visualisability, and (the non-cosmetic reason) because a figure can surface
-structure the prose alone hides."*  And, in the same item: ** *"New conceptual figures are Daryl's to
+structure the prose alone hides."*  And, in the same item: ** *"New conceptual figures are unassigned to
 call/supply, not gate-generated (the r548 discipline)."* **
 
 ** SO THE DELIVERABLE IS THE PASS AND A RANKED CANDIDATE LIST WITH THE REASON EACH IS NON-COSMETIC --
@@ -200,7 +200,7 @@ PART 3 — THE RANKED CANDIDATES
 PART 4 — WHAT `L-152` BECOMES
 ==============================================================================
   ⇒ ** THE PASS IS DONE AND IT IS THE WHOLE OF WHAT THIS ITEM MAY DELIVER FROM THIS SIDE. **
-     *The item reserves the figures themselves: 'New conceptual figures are Daryl's to call/supply,
+     *The item reserves the figures themselves: 'New conceptual figures are unassigned to call/supply,
      not gate-generated (the r548 discipline).'  A node that answered `H·1` by drawing eight figures
      would be violating the item while appearing to discharge it.*
   

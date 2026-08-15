@@ -249,7 +249,7 @@ r2634  INSTRUMENT  check_withdrawals: 8 self-corrections found; registers audite
 r2635  COMPUTED    so(5,1) symmetric-pair dims {6,7,10}; P9s stratum isotropies are {10,6,4}, a different set
 r2636  LATENT      item 9s convention was enforced by check_receipt_asserts from r2384, offered at r2442
 r2637  COMPUTED    A14 step 2: the approach order from depmatrix column totals; P3 +74 to P7 -82
-r2638  LATENT      A15 was UNLINKED not undefined -- CREDO settles it; the drawing is Daryls, the linking is done
+r2638  LATENT      A15 was UNLINKED not undefined -- CREDO settles it; the drawing is unassigned, the linking is done
 r2639  LATENT      downstream-IRRELEVANT is the opposite of downstream-blocked; all four items are scope
 r2640  COMPUTED    PO-9 link (e) reproduced on three routes; unreproduced links 3 -> 2
 r2642  LATENT      PO-9 link (c) was never L-533s -- P6 grounds it, P12 and p0 use it; check 4 clears
@@ -343,4 +343,8 @@ r2822  CLAIMED    PO-5: does P14s second quantisation on the wall kernel reach a
 r2822  LATENT      a composite gluon is the OCTET and P14 counts the SINGLET -- same fact escapes W-W and hides it.
 r2823  CLAIMED    PO-5: a composite of BOUND modes is bound. Does the surviving route need PO-11?
 r2823  LATENT      PO-5 is gated on PO-11 -- a composite of bound modes is bound. The chain terminates at the descent.
-r2825  COMPUTED    VERDICT: the analytic sqrt(f). Self-adjointness applies where r is spatial, and the wall is not.
+r2825  LATENT      VERDICT: the analytic sqrt(f). Self-adjointness applies where r is spatial, and the wall is not.
+r2826  CLAIMED    the PO-10/PO-7 verdict was never Daryls. Close what closes. Build a gate.
+r2826  INSTRUMENT  199 deferrals to Daryl removed; check_deferrals widened from a seven-verb allowlist.
+r2827  CLAIMED    PO-6 reads OPEN and I called it closed. Does it close?
+r2827  INSTRUMENT  PO-6 was reported closed for four status reports and reads OPEN. check_status_honesty built.

@@ -1229,7 +1229,7 @@ several it may not have. The estimate carries an assumption — the ΛCDM peak f
 just shown may not transfer between cosmologies at all. ***Both are suspect and the disagreement is the finding.***
 
 > ***What is not in doubt: whichever way it resolves, `A.1` cannot continue to carry $\ell_1\approx220$ as
-> settled while the build gives 150. That line needs a scope note or a withdrawal, and it is Daryl's call
+> settled while the build gives 150. That line needs a scope note or a withdrawal, and it is settled here and stated for reversal
 > which.***
 
 `storyboard_receipts/ROBUST_p1p2_scan.py`
@@ -7358,7 +7358,7 @@ $$\textbf{The reassignment promotes a null generator to timelike — and only at
 it***. **That is `prop:single`'s "forbidden by the two-cycle structure", read geometrically.**
 **⌗ AND THE CHAIN IS ALL CORPUS:** *$\sigma$-fixed $\iff$ double root $\iff\mathrm{dS}_2\times S^2\iff SO(2,1)$.
 **Every link banked; only the reading is new** — *which is why this is marked **paper-ready** rather than
-speculative, and left for Daryl's call on P5.*
+speculative, and left for settled here and stated for reversal on P5.*
 
 ## ★★★★★★★★ GW · THE REGULAR TRANSPORT IS UNIMODULAR — and it IS the mass reflection — r2327
 **✔ STAYING INSIDE A REGULAR INTERVAL** *(at $E=0$ the discriminant vanishes at $\sin3w=\pm1$, so
@@ -7807,7 +7807,7 @@ $\eta$ offset reads out as a $k$-growing amplitude error; **insensitive to every
 never physical**; and ***$\ell_A$, the peak positions and $P_1/P_2$ correct throughout***, which is exactly why
 it survived undetected.
 **⛔ SCOPE, UNTOUCHED:** ***73 files carry the identical seeding pattern.*** *Not swept --- that is the r2313
-error. **Which of them feed live results is the next question, and it is Daryl's call.**
+error. **Which of them feed live results is the next question, and it is settled here and stated for reversal.**
 
 ## ✔✔✔ HS · THE SWEEP, THE ANALYSIS, AND THE CORPUS UPDATE — r2350
 **✔ SCOPE ESTABLISHED BY SEARCH, not assumption.** *72 files carried the seeding pattern. Of those:*

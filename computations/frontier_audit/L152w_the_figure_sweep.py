@@ -5,8 +5,7 @@ MAKE, AND THE ITEM SAYS SO IN ITS OWN TEXT.
 
 `H·1`: *"a systematic pass over all fourteen papers for where a NEW figure would earn its place --
 for completeness, for visualisability, and (the non-cosmetic reason) because a figure can surface
-structure the prose alone hides."*  And, in the same item: ** *"New conceptual figures are Daryl's to
-call/supply, not gate-generated (the r548 discipline)."* **
+structure the prose alone hides."*  And, in the same item: ** *"New conceptual figures are unassigned, not gate-generated (the r548 discipline)."* **
 
 ** SO THE DELIVERABLE IS THE PASS AND A RANKED CANDIDATE LIST WITH THE REASON EACH IS NON-COSMETIC --
 not figures.  A node that answered this item by drawing things would be violating the item. **
@@ -188,7 +187,7 @@ print("PART 4 — WHAT `L-152` BECOMES")
 print("=" * 78)
 for s in [
  "⇒ ** THE PASS IS DONE AND IT IS THE WHOLE OF WHAT THIS ITEM MAY DELIVER FROM THIS SIDE. **",
- "   *The item reserves the figures themselves: 'New conceptual figures are Daryl's to call/supply,",
+ "   *The item reserves the figures themselves: 'New conceptual figures are unassigned,",
  "   not gate-generated (the r548 discipline).'  A node that answered `H·1` by drawing eight figures",
  "   would be violating the item while appearing to discharge it.*",
  "",

@@ -114,7 +114,7 @@ re-confirmed at source) + model is exact vacuum-Λ GR → first-class constraint
 open piece (infinite-dim field-DOF) its classical verdict: ADMIT. Spine §12 + §6 status. NOT a constructed
 non-perturbative quantization; NOT "nothing can force"; classical side closed, quantum (b) open. Like r268.
 
-## CHARTING THE NEXT (post-r276 — for Daryl to steer the why/priority)
+## CHARTING THE NEXT (post-r276 — open in the register
 With §6 closed on the classical side and F1's field-DOF tail verdict in, the live frontier candidates:
 1. Dynamics-paper assembly (Move 8 full paper) + the wall handoff (Move 9 pass-through / Move 10 transport).
 2. The one-clock test's narrow general-strata along-orbit residual (r268 left it; the only loose thread there).

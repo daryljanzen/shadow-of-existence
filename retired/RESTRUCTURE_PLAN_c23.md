@@ -65,7 +65,7 @@
 - **Swap P7↔P8 positions:** seat the upgraded `modern_parallax` BEFORE `CR_flatLCDM`. New order:
   `… P6 range → [upgraded modern_parallax] → CR_flatLCDM → canonical_time → dynamics → algebroid → boundary`.
 - This foundation is what **kicks off the dynamics half**.
-- READING (for Daryl to steer): the occurrence/existence categorical ground migrates UP into the
+- READING (open in the register): the occurrence/existence categorical ground migrates UP into the
   upgraded foundation; `canonical_time` refocuses to the canonical-formalism consequence
   (deparametrization + lock) that the foundation licenses, citing it for the ground.
 

@@ -1304,7 +1304,7 @@ paper. Work the wording here; splice later.)*
   can be checked *in the splice*, not in isolation.
 - `⟶ KEEP` marks unchanged text shown only for the seam. `⟶ NEW` marks the draft. `⟶ CUT` marks text
   the draft removes (kept visible here so the loss is deliberate and reviewable).
-- **Status per draft:** `DRAFT` (written, awaiting Daryl) · `HELD` (blocked on a dissonance) ·
+- **Status per draft:** `DRAFT` (written, open in the register) · `HELD` (blocked on a dissonance) ·
   `READY` (approved, queued for the wholesale pass).
 
 ---

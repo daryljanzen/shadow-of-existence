@@ -35,7 +35,7 @@ MINIMAL FIX (one clause each site, no restructuring):
        height does not appear..."
   (b) the height-carrying paragraph: name the polar MAP, not "the pole–polar relation" bare —
       "...the polar *map* P↦polar(P) gives the chord of contact..."
-CONFIDENCE: high that this is a real (small) prose collision; the fix is Daryl's to phrase. Full draft with the
+CONFIDENCE: high that this is a real (small) prose collision; the fix is unassigned. Full draft with the
 ledger quotes: study/drafts/D01_p0_lahire_polepolar_two_senses.md
 
 ## 2. DRAFT D02 — groupoid_paper.tex, rem:equianharmonic: "two order-three structures" are really THREE covers

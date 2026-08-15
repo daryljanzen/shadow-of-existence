@@ -495,7 +495,7 @@ failed. ***A character-name is a handle later work can collide with; a hypothesi
 along.***
 
 **★ RULE 2 — REPORT AN ANOMALY YOU CANNOT PLACE, BARE, AND DO NOT TIDY IT AWAY.** *The finding was reported
-with no story attached. **That left it available** — for Daryl to ask for a name, and for it to still be
+with no story attached. **That left it available** — open in the register
 sitting there unexplained when the acoustic work reached the lift. ***The instinct to omit a feature because
 one cannot say what it is for is the kill switch wearing a tidier coat.***
 

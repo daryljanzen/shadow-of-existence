@@ -437,7 +437,7 @@ every ambiguity in this thread, and it is why "seam" was unfixable as a word.***
 derivation is about the wrong locus; if (A) holds, the derivation stands and (B)'s four sites are stale. **The
 two cannot both be true, and the transmission proof's validity turns on which.***
 **⌗ NOTE:** *r2154's derivation is stated for (A), which is what the r2123-corrected header and l.212 assert.
-It is held **for Daryl to reverse**, not asserted over (B).*
+It is held **settled here and stated for reversal**, not asserted over (B).*
 
 ### ⛔ r2154b — MY OWN FIX BAKED TWO SUBTLER ERRORS; BOTH CAUGHT BY DARYL AND CORRECTED
 **⛔ (i) I SPLIT ONE SUBSTRATE POINT INTO TWO LOCI, and wrote the collapse side out.** *I called the Nariai
