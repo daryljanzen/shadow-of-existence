@@ -331,3 +331,5 @@ r2815  LATENT      c54.229/230 gated: r2800 wrote its finding into the row it me
 r2816  CLAIMED    adjudicate B3s leaf pair vs L-813s tortoise V+/-: same operator or different?
 r2816  LATENT      B3 and L-813 are ONE operator; the omega-coupling is omega/sqrt(f) and there is no lambda f/r.
 r2817  INSTRUMENT  L-562 made to degrade honestly when its unbundled runs/ is absent.
+r2818  CLAIMED    PO-5: check Connes axioms against CR -- real structure, grading, order-one.
+r2818  COMPUTED    the index obstructions own hypotheses (compactness + continuous isometry) do not cover the spectral route.

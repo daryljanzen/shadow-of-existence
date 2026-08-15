@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2818 — 2026-08-12 (main line). **THE CORPUS'S WALLS DO NOT COVER THE SPECTRAL ROUTE.**
+
+**⛭⛭ ⓵ THE GRADING AXIOM IS MET.** *$\gamma^5$ squares to 1 and anticommutes with every $\gamma^\mu$, hence with
+$D$.*
+⌗ ***Facts about $\gamma^5$, not about CR. The CR content is that $R=\gamma^5$ is **derived** there (r2779) — the
+corpus's own chirality operator IS the grading a spectral triple requires.***
+
+**⛭⛭⛭ ⓶ AND THE INDEX OBSTRUCTION NAMES ITS OWN HYPOTHESES.** *"The obstruction's load-bearing hypotheses are
+**compactness and a continuous isometry**, not a product or Kaluza--Klein structure."*
+
+    compactness            -- the spectral route makes no compactness claim
+    a continuous isometry  -- the spectral route uses NO isometry; D -> D + A comes from the ALGEBRA
+
+⇒ ***The premise the paper says carries the theorem fails for the route.***
+
+**⓷ AND THE ESCAPE CLAUSE DOES NOT CLASSIFY IT.** *"with the known escapes all abandoning the geometric premise" —
+**Connes' construction is spectral geometry**, geometric in that all data is the triple and not geometric in the
+sense of Riemannian isometry. The corpus does not say which, because it never considered the route.*
+⇒ ***A gap in COVERAGE, not a hole in the argument — **the same shape as r2805's finding about p0**.***
+
+**⓸ SO FOUR OF FIVE ROUTES NOW HAVE A STATED STATUS** — *and the fourth is not closed by the index obstruction, the
+isometry wall, or r2813, **each for a stated reason, none of which is "nobody checked"**.*
+⚠ *Two axioms remain untested: the real structure $J$ and the order-one condition. **Either can kill it.***
+
+**⛭ THE RULE:** ***when a paper states the hypotheses of its own obstruction, that sentence is the map of what the
+obstruction does NOT reach. **Read it as a boundary, not as an aside.****
+
 ### Revision r2816 — 2026-08-12 (main line). **`#558` ADJUDICATED — ONE OPERATOR, AND THE FORK DOES NOT EXIST.**
 
 **⛭⛭ ⓵ `B3`'s TETRAD FIXES EVERY TERM.** *$e^0=\sqrt f\,dt$, $e^1=dr/\sqrt f$, $e^2=r\,d\theta$:*
