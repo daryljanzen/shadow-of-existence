@@ -146,6 +146,64 @@ sources: [cowork, chat]
 
 
 
+### Revision r2797 — 2026-08-11 (main line). **THE WALL IS EXACTLY CRITICAL — a double root at $s=1/2$.**
+
+**⛭⛭ ⓵ THE POTENTIAL AT $r=0$.** *$V\to-4M^2/r^4$ — **independent of $\ell$ and of $\alpha$**, since the angular
+and cosmological terms are subleading against $f'/r$ when $f$ diverges.*
+
+**⛭⛭⛭ ⓶ AND IN THE TORTOISE COORDINATE IT IS EXACTLY $-1/(4x^2)$.** *With $x\simeq-r^2/4M$ and
+$r\simeq2\sqrt{M|x|}$ (r2796), **$M$ drops out too**.*
+⇒ ***The wall's inverse-square coefficient is $-1/4$ for every mass, every $\ell$, every $\alpha$: a property of
+the signed-radius geometry, not of a parameter.***
+
+**⛭ ⓷ AND $-1/4$ IS THE CRITICAL COEFFICIENT.**
+
+    s(s-1) + 1/4 = (s - 1/2)^2 = 0        a DOUBLE ROOT at s = 1/2
+    the two solutions:  sqrt(x)  and  sqrt(x) log x
+
+⇒ ***A power and a LOGARITHM, not two powers — the degenerate case of the inverse-square problem, and the case the
+geometry lands on exactly.***
+
+**⓸ WHICH IS WHY THE ROW HAS A CONDITION TO IMPOSE, NOT A CHOICE OF EXPONENT.** *Both solutions vanish like
+$\sqrt x$ and are distinguished only by the log, **so the matching condition is a statement about the logarithm's
+coefficient** — the one-parameter freedom a self-adjoint extension fixes.*
+
+⌗ *And P10 works the same operator class one level up: its scale-factor Hamiltonian "carries an inverse-square term"
+at the origin, read against the essential-self-adjointness threshold. **Same structure, same origin, same critical
+arithmetic.***
+
+**⛭ THE RULE:** ***when parameters drop out of a leading behaviour, that is the finding, not a convenience. **$-1/4$
+surviving the loss of $M$, $\ell$ and $\alpha$ says the wall's character is geometric** — and a coefficient landing
+exactly on a threshold is never a coincidence worth shrugging at.***
+
+### Revision r2796 — 2026-08-11 (main line). **`PO-11`: ONE MATCHING, NOT TWO — the crossings are not alike.**
+
+**⛭⛭ ⓵ THE INNER HORIZON IS INFINITELY FAR.** *$f$ has a **simple** zero there — $f'(r_b)=0.44232\ne0$ — so
+$1/f\sim1/[f'(r_b)(r-r_b)]$ and $\int dr/(r-r_b)$ diverges logarithmically. **P14 says so in its own voice: "the
+horizons standing infinitely far".***
+
+⚠ *And naive quadrature **wandered** — $-9.3$, $-20.3$, $-20.6$, $-17.4$ at successively closer endpoints — which
+is an integrator failing on a log singularity, **not a finite answer**.*
+
+**⛭⛭⛭ ⓶ THE WALL IS AT FINITE DISTANCE.** *As $r\to0$, $f\simeq-2M/r$, so $1/f\sim-r/2M$ and **the integrand
+vanishes**. $r_*=-0.385239$, stable across cutoffs $10^{-2}$ to $10^{-12}$.*
+
+**⓷ SO THE ROW'S PROBLEM IS NOT A TWO-HORIZON MATCHING.**
+
+    the inner horizon   an infinite-distance ASYMPTOTIC region -- behaviour read off, no condition imposed
+    the wall            a regular singular point at FINITE distance -- where a condition is needed,
+                        and where P14's bound mode already lives
+
+⇒ ***r2785 counted two signature changes and inferred two matchings. **A signature change at infinite tortoise
+distance is not a junction a mode passes through.****
+
+**⓸ AND IT EXPLAINS THE BOUND MODE'S PRIVILEGE EXACTLY.** *The wall being at finite distance is why a mode can
+localise there; the horizons being infinitely far is why the same mode "does not normalize" against them.*
+
+**⛭ THE RULE:** ***when a geometric feature and a wave-coordinate feature are counted together, convert first.
+**Two things that both look like boundaries in $r$ can be an asymptotic region and a junction in $r_*$** — and the
+mode equation lives in $r_*$.***
+
 ### Revision r2794 — 2026-08-11 (main line). **r2793's $R\tilde R$ DISCREPANCY WITHDRAWN — two parameter points, not two answers.**
 
 **⛔ ⓵ THE ERROR.** *r2793 reported $R\tilde R = 4.977310$ (`c54.219`) against $4.5000$ (`L-821`) as a $10.6\%$

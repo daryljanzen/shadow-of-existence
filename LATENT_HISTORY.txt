@@ -259,3 +259,5 @@ r2792  LATENT      six of six open rows share one shape: the object exists, the 
 r2793  LATENT      L-821 gated: 7/40 verified independently. R~R magnitude discrepancy recorded (4.977 vs 4.5).
 r2794  LATENT      r2793s R~R discrepancy WITHDRAWN -- degree-4 homogeneous, two parameter points. One line owed.
 r2795  LATENT      L-822 merged: the CR residual is ACOUSTIC STRUCTURE -- confirms r2789 independently.
+r2796  COMPUTED    PO-11: ONE matching not two -- the inner horizon is infinitely far, the wall is finite.
+r2797  COMPUTED    the wall is EXACTLY CRITICAL -- V -> -1/(4x^2), double root at s=1/2, sqrt(x) and sqrt(x)log x.
