@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r2778 — 2026-08-11 (main line). **`PO-4` STRUCK — the ask is answered in the negative, determined rather than deferred.**
+
+**⛔ ⓵ THE DEFERRAL, NAMED.** *r2777: "comparing what the route DELIVERS against what the row ASKS is the row
+owner's call." Daryl: **"That's not for me to decide. It must be determinable. Stop leaking decisions to me."***
+
+**⛭⛭ ⓶ IT IS DETERMINABLE, AND IT TOOK ONE COMPARISON.**
+
+    THE ASK       su(3) and su(2)_L AS STRUCTURES ON THE CUT -- gauge structures, things that couple
+    THE DELIVERY  su(3):   "colour's exact selection rules and NO FORCE -- it quantises and does not couple"
+                  su(2)_L: "a species label, NOT SU(2)_L's chiral action"
+
+⇒ ***Neither meets the ask, and no interpretation is needed to see it.***
+
+**⛭⛭⛭ ⓷ AND WHETHER IT COULD STILL BE MET IS EQUALLY DETERMINABLE.** *The boundary paper calls the discrete
+component "**THE SINGLE geometric opening the wall leaves**" and says chirality is "**forced** to be"
+non-geometric, "the boundary **the conclusion of a mechanism**"; P14 gives
+$\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$ **structurally**.*
+⇒ ***The single opening was taken — P14 is that work (r2777) — and returned less than the ask. **The ask cannot be
+met geometrically, and the corpus states it as a theorem.****
+
+**✔ ⓸ STRUCK on five clearing checks.** *`kills/PO-4.md` rewritten from the r2775 version, which failed ① correctly
+and then deferred.*
+
+⌗ *Four revisions of mechanism survive as content: r2773 (the leaf isometries reach colour's index, not isospin's),
+r2774 (the doublet exists in $D_6$, which is finite), r2777 (P14 is the work on the route).*
+
+**⛭ THE RULE:** ***"that's the owner's call" is almost never true of a comparison. **If both sides are written down,
+the comparison is arithmetic** — and handing it over is not deference, it is declining to read two sentences next to
+each other.***
+
+⚠ *Also repaired: **four duplicate register rows** created during this session — `PO-4`, `PO-5`, `PO-6`, `PO-7`. Each
+folded (the copy's tail preserved into the row with this session's marks) then removed. 138 revision marks after
+against 137 before; nothing lost.*
+
 ### Revision r2777 — 2026-08-11 (main line). **`PO-4`'s ROUTE WAS TAKEN — P14 IS THE WORK.**
 
 **⛔ ⓵ r2775's GLOSS CORRECTED.** *It read the row's "routed r2398 … it was not in this row" as **unworked in 377

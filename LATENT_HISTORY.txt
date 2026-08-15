@@ -236,3 +236,4 @@ c54.220  COMPUTED    the degeneracy carrying PO-6's quartic was never derived: i
 c54.220a LATENT      and D2's "(any tensor rank)" is false -- scalar leading 1/3 against tensor 2/3; the scaling it needed is right, so the degree stands and the coefficient moves
 r2776  LATENT      c54.220 merged and verified. Its SHA rule turned on me: 4 of my 5 absence claims were unpinned.
 r2777  LATENT      PO-4s route was TAKEN -- P14 says so outright. The row records what it returned, not an untaken route.
+r2778  LATENT      PO-4 STRUCK -- the ask is answered in the negative, determined not deferred. 4 dup rows folded.
