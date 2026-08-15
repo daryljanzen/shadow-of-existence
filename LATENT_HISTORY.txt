@@ -240,3 +240,4 @@ r2778  LATENT      PO-4 STRUCK -- the ask is answered in the negative, determine
 r2779  LATENT      the corpus is coherent; my kill receipt was not -- dropped OBSERVED FERMION from a quote. Gate built.
 r2780  LATENT      L-820 merged: C52 WITHDRAWN (banked spectra are NK=600), C51 discharged. Aliasing is cosmetic.
 r2781  COMPUTED    the k-range fixes the control (7.14->3.81) and not CR (280->281). Radiation is the difference.
+r2782  INSTRUMENT  integration sweep: cc54 fully in. Found 106 INGESTION claim-lines lost to silent no-ops.

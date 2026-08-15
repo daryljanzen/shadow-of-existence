@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2782 — 2026-08-11 (main line). **INTEGRATION SWEEP CLEAN — AND 106 CLAIM-LINES FOUND MISSING.**
+
+**✔ ⓵ ALL cc54 WORK IS IN.** *Every remote branch checked against main. Only `bundle/c54_200` shows unmerged
+commits, and it is not an ancestor — but **0 of its 373 INDEX receipts and 0 of its 129 `c54` marks are absent from
+main** (which carries 558 and 148). Its content arrived by later paths.*
+
+**⛔ ⓶ AND THE CHECK TURNED UP MY OWN DEFECT.** *Every `--claim` write to `INGESTION.md` since r2730 was a **silent
+no-op**: the anchor string had stopped matching, `str.replace` returned its input unchanged, **and I printed
+"claimed" each time**.*
+⇒ ***The failure mode is the printed success. A write that fails LOUDLY is a nuisance; **a write that fails while
+reporting success is a fabricated record** — fifty-one of them across one session.***
+
+⌗ ***And it is older: 55 more gaps r2604–r2728, in contiguous runs (r2604–r2624, r2626–r2640, r2642–r2645,
+r2648–r2650, r2653–r2655, r2668, r2709–r2711, r2724–r2728) — **the signature of an anchor that broke and stayed
+broken**. 106 lines restored verbatim from `LATENT_HISTORY`.***
+
+**⛭⛭ ⓷ AND THE SURVIVING LOG SURVIVED BECAUSE OF ITS OPERATION.** *`LATENT_HISTORY` is **APPENDED** to and cannot
+silently miss. `INGESTION` was **pattern-matched**, and a pattern that stops matching is indistinguishable from one
+that matched nothing.*
+
+**⛭ THE RULE:** ***a write that can silently do nothing needs a reader that can tell. **Two logs of the same events,
+one appended and one patched, disagree by exactly the patch failures.** And never report a write you have not
+verified — `str.replace` returning its input is not an error, it is a lie you told yourself first.***
+
+✔ *`check_ingestion_current` built, seed-tested $0\to1\to0$, wired.*
+
 ### Revision r2781 — 2026-08-11 (main line). **THE $k$-RANGE FIXES ONE ARM ONLY — the control is diagnosed, CR is not.**
 
 **⛭⛭ ⓵ `L-820 S2`'s INCIDENTAL FIGURES ANSWER r2760.**

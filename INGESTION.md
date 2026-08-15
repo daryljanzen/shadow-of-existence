@@ -146,3 +146,129 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
 ledger items**.*
 
 *Written r2657. Stated for reversal.*
+
+## ⛔⛭⛭ RESTORED r2782 — 51 CLAIM-LINES THAT NEVER LANDED (r2731–r2781)
+
+*Every `--claim` write to this file since r2730 was a **silent no-op**: the anchor string I was
+replacing stopped matching, `str.replace` returned the input unchanged, and I printed "claimed" each
+time. **`LATENT_HISTORY` is the load-bearing log and is complete; this slate was not.** Restored below
+from it, verbatim.*
+
+```
+r2731  INSTRUMENT  check_unworked_blockers: the first gate that watches ABSENCE. Daryl caught every avoidance; no node ever did.
+r2732  INSTRUMENT  N8 tested and WITHDRAWN (caveats are real scope work). check_received_at_weight built instead.
+r2733  COMPUTED    PO-4s parameter EXISTS and is the wrong signature: a rapidity generates SL(2,R), not SU(2)
+r2734  COMPUTED    no strike owed on PO-4; and the holonomy walls reason is too narrow -- only phases assumes compact
+r2735  INSTRUMENT  landing.py + OWED.md -- the register for work a turn CREATES. Both gates found in stamp only.
+r2736  LATENT      c54.214-218 merged. I destroyed 17 PDFs and repaired them. cc54 corrected r2713 and r2718.
+r2737  LATENT      r2731s missing-seat finding WITHDRAWN -- cc54 caught an avoidance the next day. The register IS the cold read.
+r2738  LATENT      register misquote 144/80/24 -> 144/36/24 (cc54 found it); 3 stale receipts converted; gates all green
+r2739  LATENT      PO-11 REOPENED -- P14: what that supplies is the radial continuum and NOT the sector. 7 dup rows folded.
+r2740  LATENT      FOR_56 25-35 read. Family 5 healed by REOPENING PO-10, not by a pointer edit. A7 derived, C32 converted.
+r2741  LATENT      PO-5s two bounds COMPOSE; cc54s is tighter -- one test, not a search. One position decides two rows.
+r2742  LATENT      PO-5s ledger branch SETTLED: three papers commit ell_P is a gauge, none treats it as a scale
+r2743  COMPUTED    PO-6s two halves MEET AT THE SHEAR -- the tower IS the transverse-traceless shear, in P10s words
+r2744  LATENT      PO-11s join crosses the INNER HORIZON -- the wall is at r=0 where f -> -infinity, not in the static region
+r2745  LATENT      the continuation through r=0 EXISTS (janzen_circle/JanzenSlicing); P14s join sentence cites the wrong two
+r2746  LATENT      PO-10s comparison is a SCORE ON DERIVATIONS -- no k to count. Refused to score on invented sigmas.
+r2747  LATENT      PO-10s derived list READ -- four pairs, three exclusions, all P15s own words. One item left.
+r2748  LATENT      PO-10s first pair: take 301.76 from the receipt, not ~301 from the prose. Gap is 0.44 not 1.20.
+r2749  INSTRUMENT  a tilde on a SETTLED value is a stale hedge -- ~301 -> 301.76, ~8% -> 8.2% x9. r2748 got it backward.
+r2750  COMPUTED    the damping gap is x_e: C8s cancellation needs it identical, and a different H(a) changes the history
+r2751  COMPUTED    r2750 WITHDRAWN: x_e response is ~0.05pp against a 1.86pp gap; the CAMB arm misses its own gate by 7.1%
+r2752  COMPUTED    the damping gap is TRUNCATION: the ratio converges only by z~5e4; the receipts grid stops at 12000
+r2753  COMPUTED    RESOLVED: x_e does not cancel from a ratio of INTEGRALS. +9.94 -> +8.37, the whole gap. C8 corrected.
+r2754  LATENT      P15 carries 9.4 / ~8 / 8.16 for ONE named observable, theta_D/theta_*. A deferral removed from C45.
+r2755  LATENT      the 9.4% inherits C8s x_e omission. Nine ~8% were RIGHT; ten instances now 8.2%.
+r2756  COMPUTED    +5.66% reconciled: r2752 omitted neutrinos from Omega_rad. Ratio 1.0896 vs the receipts 1.0897.
+r2757  INSTRUMENT  OWED.md only appended -- 19 of 25 were done or duplicate. --done built. True state: 6 items, 4 rows.
+r2758  LATENT      PO-10s pairs are THREE: the onset ratio is an identity on inherited inputs. C39 corrected.
+r2759  LATENT      PO-10 has a likelihood, not a lookup. The CONTROL arm fails calibration at chi2/dof ~ 100.
+r2760  LATENT      the control is at 7.14 not ~100 -- the receipts F4 prose carried a floor that fell fourteen-fold
+r2761  COMPUTED    the thirty dropped bins are ell 1759-2508 -- the damping tail, where the signature is strongest
+r2762  COMPUTED    the banked spectra FAIL the instruments own sampling guard -- 2.5 pts/period. Extension OOMs.
+r2763  LATENT      PO-6s ordering question DISSOLVES -- P10: indices (1,1) independent of ordering, coeff <= 1/4
+r2764  COMPUTED    cc54s L-818 boundary IS r2743s shear IS P10s tower -- three statements, one object
+r2765  LATENT      L-818 merged (6/6). Restamped from r2674 -- a live ID collision. OPEN_PROBLEMS_MAP and THE_WEAVE rewritten.
+r2766  COMPUTED    at O(sigma^2) the basis is genuinely 3d -- C^2 is unrouted. The ledger does not reach second order.
+r2767  LATENT      PO-11: the metric and the bound mode both cross r=0. Only the continuum has not been asked.
+r2768  COMPUTED    PO-4 and PO-5 share a root: both ask the one-constant ledger for a dimensionless quantity
+r2769  LATENT      r2768s merge WITHDRAWN: the ledger is DISCRETE -- compatible with PO-5, fatal to PO-4
+r2770  LATENT      the substrate DOES carry compact SU(2) -- SO(4) on the closed S^3 layer. The action is what is missing.
+r2771  LATENT      c54.219 merged: same verdict as r2766 by a stronger route. My basis was 3, the list is 5.
+r2772  INSTRUMENT  check_register_columns built on cc54s argument. Three LIVE breaks found and repaired.
+r2773  LATENT      the SO(4) isometries act on the zero-modes and reach COLOUR, not isospin -- they permute hinges
+r2774  LATENT      PO-4s KIND question RESOLVED: the doublet exists in D_6 and D_6 is FINITE -- no Lie algebra
+r2775  LATENT      PO-4s kill receipt written and CONCLUDES NOT TO STRIKE -- check 1 fails, the row routes through the discrete part
+r2776  LATENT      c54.220 merged and verified. Its SHA rule turned on me: 4 of my 5 absence claims were unpinned.
+r2777  LATENT      PO-4s route was TAKEN -- P14 says so outright. The row records what it returned, not an untaken route.
+r2778  LATENT      PO-4 STRUCK -- the ask is answered in the negative, determined not deferred. 4 dup rows folded.
+r2779  LATENT      the corpus is coherent; my kill receipt was not -- dropped OBSERVED FERMION from a quote. Gate built.
+r2780  LATENT      L-820 merged: C52 WITHDRAWN (banked spectra are NK=600), C51 discharged. Aliasing is cosmetic.
+r2781  COMPUTED    the k-range fixes the control (7.14->3.81) and not CR (280->281). Radiation is the difference.
+```
+
+## ⛔⛭ ALSO RESTORED r2782 — 55 EARLIER CLAIM-LINES (r2604–r2728)
+
+*The same silent-no-op class, from sessions before this one. **Not fabricated: copied verbatim from
+`LATENT_HISTORY`, which is appended to and therefore complete.** The gaps are contiguous runs —
+r2604–r2624, r2626–r2640, r2642–r2645, r2648–r2650, r2653–r2655, r2668, r2709–r2711, r2724–r2728 —
+which is the signature of an anchor that broke and stayed broken until someone re-anchored it.*
+
+```
+r2604  LATENT      the antilinear structure a mod-2 index needs is realised on the built zero-modes (P13)
+r2605  COMPUTED   computed S^2 = -1 from the corpus's lift; a name collision hid the sign
+r2606  LATENT      the operator whose kernel is counted is the RADIAL one, said two sentences from the lift
+r2607  COMPUTED   computed the radial operator's real structure; the mod-2 condition is met
+r2608  LATENT      P14 had already computed the parity: "three and zero lying in different parity classes"
+r2609  LATENT      PO-5's object is delivered in P14's own delivered-list; the row argued a different branching
+r2610  LATENT      C1 and C2 are one sentence in P10, and it also states PO-6's boundedness for the free sector
+r2611  LATENT      the C6/C7 tension was dissolved by a receipt written for another purpose (D1)
+r2612  INSTRUMENT  built status.py; found the CI workflow's text-gate loop had no `do`
+r2613  INSTRUMENT  built the DARK HALVES ANSWERED metric
+r2614  INSTRUMENT  built the narrowing counter; found two stale veins and a truncating window
+r2615  INSTRUMENT  built queue.py; the list existed only in this line's head
+r2616  LATENT      PO-8's kill receipt recorded a Daryl authorisation 238 revisions before the row was struck
+r2617  LATENT      printing the items exposed duplicates a bucket count had concealed
+r2618  INSTRUMENT  deduped five ledger entries (one wrongly -- see r2621)
+r2619  LATENT      P10's next clause: the decomposition needs no floor, and the floor is what it leaves open
+r2620  INSTRUMENT  built latent.py
+r2621  LATENT      boundary_paper distinguishes the two unbuilt sectors in one sentence; r2618's dedupe was wrong
+r2622  INSTRUMENT  built TABLE_HISTORY.txt, the weight-loss chart
+r2623  LATENT      PO-12's step (1) is computed in sec:envelope, two sections before the debt is named
+r2624  INSTRUMENT  built LATENT_HISTORY.txt; the regex was under-counting 60% as 40%
+r2626  LATENT      PO-4: P14 GENERATES SU(3) from the wall monodromies; the row asks what REDUCES so(6)
+r2627  LATENT      PO-3's why: P14's parity clause answers it dimensionally; the row had never been worked
+r2628  INSTRUMENT  three kinds, not two: LATENT / COMPUTED / INSTRUMENT, and COMPUTED is what parallelises
+r2629  LATENT      PO-2: the row's own epsilon fact is P14's baryon construction read forward
+r2630  LATENT      three three-fold structures, two identification questions, two registers unaware of each other
+r2631  COMPUTED    the Nariai cubic: root triple = f=0 locus; causal triple = three VALUES of f
+r2632  LATENT      PO-2s identification stated in P14 -- roots to hinges to walls to modes, same S_3
+r2633  LATENT      PO-2s reason: every root returns the same 2M, identical in content; hinge S_3 is a within-state index
+r2634  INSTRUMENT  check_withdrawals: 8 self-corrections found; registers audited clean against all of them
+r2635  COMPUTED    so(5,1) symmetric-pair dims {6,7,10}; P9s stratum isotropies are {10,6,4}, a different set
+r2636  LATENT      item 9s convention was enforced by check_receipt_asserts from r2384, offered at r2442
+r2637  COMPUTED    A14 step 2: the approach order from depmatrix column totals; P3 +74 to P7 -82
+r2638  LATENT      A15 was UNLINKED not undefined -- CREDO settles it; the drawing is Daryls, the linking is done
+r2639  LATENT      downstream-IRRELEVANT is the opposite of downstream-blocked; all four items are scope
+r2640  COMPUTED    PO-9 link (e) reproduced on three routes; unreproduced links 3 -> 2
+r2642  LATENT      PO-9 link (c) was never L-533s -- P6 grounds it, P12 and p0 use it; check 4 clears
+r2643  LATENT      the criterion was already put and returned SILENT -- P12 says so; no judgement was owed
+r2644  --         PO-9s two-branch question had its answer already; the row said OPEN
+r2645  LATENT      PO-3 held its own complete answer for hundreds of revisions and still read OPEN
+r2648  --         found and repaired my own r2588 duplication in sec:diffusion-scale; dupes gate unverified
+r2649  COMPUTED    check_dupes fixed: the preamble swallowed every papers first sentence; seed test now passes
+r2650  --         gate_audit: 2 of 34 wired gates have no failure path; the count was 2 too high
+r2653  INSTRUMENT  scripts/stamp.py: one command emits the header, so it cannot drift from the files
+r2654  INSTRUMENT  THE_HANDOFF: the signal turned (C5>L4); three hand-maintained judgements named as the risk
+r2655  INSTRUMENT  the chart hid plateaus -- appended only on moves; NARROWED added as the depth counter
+r2668  INSTRUMENT  family 6 stale AGAIN (PO-4 -> PO-11); the new gate found family 5 stale too (PO-7 -> PO-10)
+r2709  COMPUTED    half 1 is AIC/BIC: dAIC=10.0, dBIC=26.9 in CRs favour; the terms are at ZERO in the corpus
+r2710  COMPUTED    CR is k=2 not k=1 (A_s is anchored); threshold dBIC=21.5 against Jeffreys strong line of 6
+r2711  COMPUTED    PO-10 delivers a PAIR: the phase freedom is discrete, so k is unchanged and both branches report
+r2724  LATENT      merged L-814/815/816; L-814s negative matches P15s own envelope to the same order
+r2725  COMPUTED    L-814s number WITHDRAWN: not a matched comparison, n_s held. Tilt alone is 15.6x.
+r2726  INSTRUMENT  the root error: counting parameters in LCDMs ontology. check_foreign_ontology built.
+r2727  INSTRUMENT  cleanup: 4 COMPUTES scopes, 8 parked deferrals removed, map brought current. All gates green.
+r2728  INSTRUMENT  PO-6: ordering decides it -- normal gives 1/4 (below), symmetric gives 3/4. P10 names neither.
+```
