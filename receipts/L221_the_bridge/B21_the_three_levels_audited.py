@@ -40,6 +40,7 @@ impossible ** -- it waits on the coupling, which `PO-5` walls on two routes and 
 Written r2683.  Stated for reversal.
 """
 import os
+import subprocess
 import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -68,8 +69,22 @@ def main():
           '(3) identification walled"',
           'skeleton grounded' in tax and 'resemblance do-not-assert' in tax
           and 'identification walled' in tax)
-    check('as set at r693: "stand exactly as r693 set them"',
-          'stand exactly as r693 set them' in tax)
+    # ** ⛭ AMENDED c54.230, CROSS-BAND AND ROUTED: this quoted a sentence r2803 CORRECTED, and the
+    # ** correction is this receipt's own finding landing. **  `B21`'s ⓵ is that four revisions answered
+    # ** against the three levels without naming them; r2803 read the same thing in the document
+    # ** ("170 revisions stale") and rewrote it.
+    #   ⇒ *** So the pin broke because the argument won.  Both ends are pinned: the wording at the
+    #       commit where it stood, and the CURRENT sentence asserted separately. ***
+    _BEFORE_R2803 = '4ab76d3~1'   # the commit before r2803
+    _tax_then = subprocess.run(
+        ['git', 'show', f'{_BEFORE_R2803}:GEOMETRY_PHYSICS_TAXONOMY.md'],
+        cwd=ROOT, capture_output=True, text=True, errors='replace').stdout
+    check(f'as set at r693 and still standing at {_BEFORE_R2803} (before r2803): "stand exactly as r693 set them"',
+          'stand exactly as r693 set them' in _tax_then)
+    check('⛭ AND r2803 CORRECTED IT, which is this receipt\'s own finding arriving in the document: '
+          '"THE THREE LEVELS NO LONGER STAND AS r693 SET THEM"',
+          'NO LONGER STAND AS r693 SET THEM' in tax
+          and 'stand exactly as r693 set them' not in tax)
 
     # ⓶ this session's four answers are all in the row
     for rev, what in (('r2631', 'level (1): the root triple IS the f=0 locus'),

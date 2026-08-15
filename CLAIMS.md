@@ -83,6 +83,30 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
+| *(none — 54's c54.230 rows released with the work)* | — | — | — |
+
+> ⌗ **54's c54.229 ROWS RELEASED HERE, WITH THE WORK.** *· `receipts/L562_the_pin_test/` — **new**, with
+> the five run logs banked under `runs/` and the command that produces each, because the instrument takes
+> minutes per point and the corpus's convention for that is to bank the OUTPUT and assert against it.
+> *· `corpus/make_receipt_appendix.py` — **one glyph**, `†` → `\textdagger{}`; the second time in two
+> nights a new glyph in the observer line's rows stopped every appendix generating, both caught by
+> `check_appendix_current`. *· `THE_LIVE_ARC.md`, `receipts/INDEX.md`, `FOR_56.md`, `ABSORPTION.md` —
+> `L-562` in band, item 47, declaration. **No paper edited: this reports a number and `PO-7` is
+> protected.**
+>
+> ⌗ **AND c54.229's SECOND LEAD, `L-563`.** *· `scripts/row_splits.py` — **new**, and it refuses to
+> write outside a declared `--band`. *· `THE_LIVE_ARC.md` — **four rows in band `L-500`–`L-799`, escapes
+> only**, each verified by two independent conditions (unescaping reproduces the original exactly; the
+> row lands on the modal count). ***Two more in the same band were left alone because they fail the
+> second condition — split AND short.*** The other 98 are the observer line's and are routed as item 48,
+> partitioned rather than fixed.
+>
+> ⌗ **AND TWO RECEIPT AMENDMENTS THE FULL RUN TURNED UP.** *· ⚠ `receipts/L221_the_bridge/B48_…`
+> — **CROSS-BAND**: it fails on the observer line's tree as well as this one, because r2800 wrote the
+> finding into the row it measures. Amended to count outside that note and to name the column the words
+> are actually in; routed as item 49. *· `receipts/L559_…/O1_…` — mine: its census read a pinned INDEX
+> against the CURRENT working tree, so a rename since made a file that existed then read as an orphan.
+> Now resolved with `git ls-tree` at the commit.
 | *(none — 54's c54.227 and c54.228 rows released with the work)* | — | — | — |
 
 > ⌗ **54's c54.228 ROWS RELEASED HERE, WITH THE WORK — and the revision is a correction of my own.**

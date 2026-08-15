@@ -71,9 +71,31 @@ def main():
 
     nd = len(re.findall('Dirac', row))
     ns = len(re.findall('scalar', row, re.I))
-    check(f'⛭⛭ ⓵ the row names the field in its object column: "a propagating DIRAC sector on the '
-          f'slicing structure" -- ** "Dirac" {nd} times, "scalar" {ns} **',
-          nd >= 5 and ns == 0)
+    # ** ⛭⛭ AMENDED c54.229 (`L-562`/`L-563` revision), CROSS-BAND AND ROUTED.  THIS CHECK FAILED ON
+    # ** BOTH LINES, AND ITS CAUSE IS THAT r2800 WROTE THE FINDING INTO THE ROW IT MEASURES. **
+    # The note added there reads *"Dirac eight times, scalar zero"* and goes on to name `B47`'s scalar
+    # result and the scalar branch -- ** three occurrences of the word, so the count it records is no
+    # longer the count it would now take. **
+    #   ⇒ *** An absence pin broken by the text that AGREES with it -- `FOR_56` item 32's class, and the
+    #       same shape as r2738's `144/80/24` guard, which c54.221 repaired the same way. ***
+    # ** AND THE PREMISE WAS OFF BY A COLUMN. **  `PROTECTED_OPEN` rows are
+    # `| PO-n | object | target | sources | status |`: the object cell holds NEITHER word.  "Dirac" is
+    # in the TARGET cell once and eight times in the STATUS prose.
+    #   ⇒ ** So the check now asserts what is true and checkable: the target names it, the status prose
+    #     is Dirac-dominated, and EVERY scalar mention lies inside the r2800 note that records this
+    #     finding -- counted OUTSIDE that note, scalar is still zero. **
+    _cells = [c for c in re.split(r'(?<!\\)\|', row)[1:-1]]
+    _target = _cells[2] if len(_cells) > 2 else ''
+    _status = _cells[4] if len(_cells) > 4 else ''
+    _note = re.search(r'Dirac eight times, scalar zero.*', _status, re.S)
+    _outside = _status.replace(_note.group(0), '') if _note else _status
+    check(f'⛭⛭ ⓵ the row names the field: "Dirac" in the TARGET cell and {nd} times in the row, '
+          f'against {ns} "scalar" -- and ALL {len(re.findall("scalar", _note.group(0), re.I)) if _note else 0} '
+          f'of the scalar mentions are inside r2800\'s own note recording this finding, so outside it '
+          f'the count is {len(re.findall("scalar", _outside, re.I))}',
+          'Dirac' in _target and nd >= 5
+          and _note is not None
+          and len(re.findall('scalar', _outside, re.I)) == 0)
     check('and contrasts it with the bound case: "as against the bound zero-modes the matter paper '
           'delivers"',
           'as against the bound zero-modes' in row)

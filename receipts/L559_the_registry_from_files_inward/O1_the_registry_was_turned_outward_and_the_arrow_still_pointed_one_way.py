@@ -87,14 +87,23 @@ def main():
     idx_before = git('show', f'{BEFORE}:receipts/INDEX.md')
     tmp_idx = os.path.join(tempfile.mkdtemp(prefix='L559idx.'), 'INDEX.md')
     open(tmp_idx, 'w', encoding='utf-8').write(idx_before)
+    # ** ⛭ CORRECTED c54.229: THIS WAS A MIXED-EPOCH MEASUREMENT. **  It read the INDEX at `BEFORE` and
+    # ** resolved its path cells against the CURRENT working tree, so a file that existed then and has
+    # ** since been RENAMED counted as an orphan that never was.  The observer line renamed
+    # ** `C41_a_tilde_on_a_settled_value_is_a_stale_hedge.py` to `C41b_...` at r2802, and this census --
+    # ** a claim about one commit -- silently became a claim about two. **
+    #   ⇒ *** A census of a past tree must resolve against THAT tree.  `git ls-tree` is the file list at
+    #       the commit; the working tree is a different object with the same shape, which is exactly why
+    #       the error is invisible. ***
+    tree_before = set(l for l in git('ls-tree', '-r', '--name-only', BEFORE).split('\n') if l)
     reg_before = set()
-    for r in index_rows.rows(index=tmp_idx, resolve_paths=True, root=ROOT):
-        for p in (r.paths or []):
-            reg_before.add(os.path.realpath(p))
-    files_before = [l for l in git('ls-tree', '-r', '--name-only', BEFORE, '--', 'receipts').split('\n')
-                    if l.endswith('.py')]
-    orph_before = sorted(f for f in files_before
-                         if os.path.realpath(os.path.join(ROOT, f)) not in reg_before)
+    for r in index_rows.rows(index=tmp_idx):
+        tok = r.token[len('receipts/'):] if r.token.startswith('receipts/') else r.token
+        import fnmatch as _fn
+        for base in ('receipts/', ''):
+            reg_before |= {f for f in tree_before if _fn.fnmatch(f, base + tok)}
+    files_before = [f for f in tree_before if f.startswith('receipts/') and f.endswith('.py')]
+    orph_before = sorted(f for f in files_before if f not in reg_before)
     check(f'⓵ at {BEFORE}: {len(files_before)} receipt files, {len(orph_before)} with NO INDEX row '
           f'-- {", ".join(os.path.basename(f) for f in orph_before)}',
           sorted(orph_before) == sorted(FOUR))
