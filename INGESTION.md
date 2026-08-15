@@ -304,3 +304,5 @@ r2800  LATENT      PO-11 verdict: the field is DIRAC, so L-828s fermion branch a
 r2801  LATENT      the pin test attempted twice more and killed at projection both times. Resource wall, routed.
 r2802  CLAIMED    are the two backlogs actually blind-fixable? I claimed not without testing.
 r2802  INSTRUMENT  both not-blind-fixable backlogs cleared: 41 pinned from git, arc breaks 98 -> 33.
+r2803  CLAIMED    PO-2: does level (3)s do-not-assert still guard anything, now P14 exhibits the map?
+r2803  COMPUTED    PO-2s gate was a stale taxonomy sentence. Levels (1) and (2) gate nothing; only (3) waits on PO-5.

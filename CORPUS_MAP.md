@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2803 — 2026-08-12 (main line). **`PO-2` WAS GATED BY A STALE SENTENCE, AND IT IS NOW CURRENT.**
+
+**⛔ ⓵ THE GATE WAS A SENTENCE, STALE IN TWO PLACES.** *`GEOMETRY_PHYSICS_TAXONOMY.md` — the document that HOLDS
+the three levels — read "the three levels … **stand exactly as r693 set them**", and separately "the three levels
+stand exactly as r693 separated them". **It had never heard of r2629–r2633.** 170 revisions stale.*
+⇒ ***`PO-2`'s own row records those four findings and argues from them. The argument was live in the row and absent
+from the document the row defers to.***
+
+**✔ ⓶ THE STATE, WRITTEN IN AT SOURCE.**
+
+    (1) SKELETON       grounded AND computed -- the root triple IS the f=0 locus, sum zero
+    (2) RESEMBLANCE    PASSED -- r2629 made it a CONSTRUCTION; a resemblance-hold has nothing
+                       left to guard once the similarity is one
+    (3) IDENTIFICATION still walled, NARROWER than the word -- P14 exhibits the structural map;
+                       the PHYSICAL identification is what remains
+
+**⛭ ⓷ AND LEVEL (1) IS SIZED, NOT BANKED.** *The zero sum is **arithmetic**: $f=0$ is a depressed cubic
+($r^3/\alpha^2-r+2M=0$, no $r^2$ term), so the roots sum to zero for every $M$ and $\alpha$.*
+⇒ ***Both halves: a structure that must vanish BY CONSTRUCTION is a better ground for colour-neutrality than one
+that happens to — **and it distinguishes nothing on its own**, since every SdS geometry has it. The content is the
+$1{:}1{:}{-}2$ pattern.***
+
+**⓸ SO THE ROW IS GATED ON ONE LEVEL, NOT THREE.** *`PO-5` gates level (3) alone — whether a coupling can arise at
+all. **Levels (1) and (2) gate nothing.***
+
+**⛭ THE RULE:** ***when a row defers to a document, the document is the gate. **A finding written into the row and
+not into what the row cites changes nothing** — and the failure is invisible from the row, which reads as correctly
+held by a reader who never opens the citation.***
+
 ### Revision r2802 — 2026-08-12 (main line). **BOTH "NOT BLIND-FIXABLE" BACKLOGS CLEARED IN ONE TURN.**
 
 **⛔ ⓵ THE 40 UNPINNED ABSENCE CLAIMS.** *r2776 filed them as "not retro-pinnable without guessing which commit each
