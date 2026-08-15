@@ -359,3 +359,4 @@ r2832  INSTRUMENT  every row given a CURRENT STATE head; PO-3 and PO-9 struck on
 r2833  INSTRUMENT  STATE_OF_THE_STATE opened; 26 leads read (L-165 stale); 606 receipts swept clean.
 r2834  INSTRUMENT  CORPUS_MAP swept (19); the PRE-r2830 rule survived in 33 places; both routing docs swept.
 r2835  INSTRUMENT  five open rows named nothing that is open; all now state their next step.
+r2835b LATENT      two of the five WHAT IS OPEN clauses were false; both written from the head, not the corpus.

@@ -146,6 +146,21 @@ sources: [cowork, chat]
 
 
 
+### Revision r2835b — 2026-08-15 (main line). **TWO OF THE FIVE "WHAT IS OPEN" CLAUSES WERE FALSE.**
+
+*Testing whether the rows' new next-step clauses are TRUE — which needs reading, not patterns.*
+
+**⛔ `PO-1b`** *said "nothing has been worked since" the retracted kill. **`appendix_receipts_P03` records
+established content from the same session**: $\mathrm{sign}(r)$ IS species (which withdrew the row's own
+objection), **the sign $2{+}1$ tracks $D$'s parity exactly so it is the mass-parity in another register**,
+and the corpus carries two $2{+}1$s the catalogues had not distinguished.*
+
+**⛔ `PO-10`** *said the comparison question is "asked nowhere". **`M2_reabsorption_minimization` asks it** —
+free $\Omega_m$, $\omega_b$, inherited $\rho_r/\rho_m$, all corpus-posited, $\ell_*$ pinned to 301.*
+
+⇒ ***Both written the same turn, from the row's own head, without going to the corpus. **A form requirement
+satisfied by inference manufactures content** — and it reads as identical to content that was checked.***
+
 ### Revision r2835 — 2026-08-15 (main line). **THE REGISTER RECORDED WHAT IS KNOWN AND NOT WHAT IS LEFT.**
 
 *With no named relation ungated, the coverage lesson was applied to the gates themselves. **That surfaced
