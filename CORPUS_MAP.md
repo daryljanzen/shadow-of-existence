@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2800 — 2026-08-12 (main line). **`PO-11`'s VERDICT: THE FIELD IS DIRAC, SO THE MATCHING IS DETERMINED.**
+
+**⛭⛭ ⓵ THE ROW NAMES THE FIELD.** *`L-828` supplied both branches and routed the choice. The object column:
+**"a propagating DIRAC sector on the slicing structure, as against the bound zero-modes the matter paper
+delivers"** — Dirac eight times, scalar zero.*
+⇒ ***So `B47` (r2797) computed the SCALAR wall for a row that asks about fermions — a correct calculation of a case
+the row does not ask about.***
+
+**⛭⛭⛭ ⓶ AND THE BRANCHES DIFFER IN KIND.**
+
+    scalar  (B47)     DOUBLE root at s = 1/2, solutions sqrt(x) and sqrt(x)log x
+                      -> the condition is the LOG's coefficient: a one-parameter freedom to be FIXED
+    fermion (L-828)   indices +lambda, -lambda, NON-degenerate
+                      -> the condition is a POWER: the decaying branch, a SELECTION
+
+**⓷ SO THE MATCHING IS DETERMINED.** ***A non-degenerate index pair has no one-parameter family. There is no
+extension freedom to fix — normalisability picks the decaying branch. The row asked "with what condition?" and the
+answer is that the geometry does not leave one open.***
+
+**⓸ AND IT EXPLAINS WHY THE BOUND MODE AND THE CONTINUUM SHARE A WALL WITHOUT SHARING A PROBLEM.** *One operator,
+one selection rule, two solutions — **the same analysis at different energies, not two matchings**.*
+
+**⛭ THE RULE:** ***a row's object column names the field, and the field decides the operator. **Reading the row's
+TITLE and computing from the physics is how one arrives with the right method on the wrong equation** — and the tell
+is that the calculation went through cleanly.***
+
 ### Revision r2799 — 2026-08-12 (main line). **r2790's FRAMING WITHDRAWN — the CR $r_s$ is FITTED, not computed.**
 
 **⛔ ⓵ THERE WAS NO BOOKKEEPING ERROR TO TRACE.** *cc54's `L-823` plus the source:*

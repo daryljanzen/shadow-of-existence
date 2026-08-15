@@ -300,3 +300,4 @@ r2797  CLAIMED    PO-11: the two Frobenius indices at r=0. P14s zero-mode fixes 
 r2797  COMPUTED    the wall is EXACTLY CRITICAL -- V -> -1/(4x^2), double root at s=1/2, sqrt(x) and sqrt(x)log x.
 r2798  LATENT      c54.223-228 merged. C41 collision resolved by rename; three grains propagated with content.
 r2799  LATENT      r2790s framing WITHDRAWN -- the CR r_s is FITTED by brentq, not computed. The pin test is the live question.
+r2800  LATENT      PO-11 verdict: the field is DIRAC, so L-828s fermion branch applies and the matching is DETERMINED.
