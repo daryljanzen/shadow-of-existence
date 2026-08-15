@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2790 — 2026-08-11 (main line). **THE STORED CR $r_s$ MOVES THE WRONG WAY.**
+
+**⓵ SOLVING r2789's SPACING.** *The CR peaks sit at $258$ against a stored $\ell_A=301.6$:*
+
+    if r_s is the culprit:   r_s must be 158.35    (stored 135.46)
+    if D_M is the culprit:   D_M must be 11124.6   (stored 13004.6)
+
+**⛭⛭⛭ ⓶ AND THE DIRECTION SETTLES IT.** *Removing radiation lowers $H$ at high $z$, so more conformal time accrues
+before recombination and the sound horizon is **LARGER**:*
+
+    radiation INCLUDED   r_s = 146.52 Mpc
+    radiation FREE       r_s = 245.16 Mpc
+
+**⛔ ⓷ THE STORED VALUES GO THE OTHER WAY.** *$\Lambda$CDM $144.53$, CR $135.46$ — **CR is smaller, when the
+physics requires larger**. And the peak spacing independently demands $158.35$, which is larger.*
+⇒ ***Two independent arguments — the spectrum and the physics — agree with each other and disagree with the ledger
+entry.***
+
+**⓸ AND IT EXPLAINS WHY NOTHING CAUGHT IT.** *$\pi D_M/r_s$ on both stored values reproduces the stored $301.60$
+exactly, so every consistency check on the stored triple passes. **A wrong $r_s$ propagated into a stored $\ell_A$
+is internally consistent and describes nothing.***
+
+**⛭ THE RULE:** ***a quantity has a DIRECTION as well as a value, and the direction is often checkable when the
+value is not. **I could not compute the corpus's $r_s$; I could compute which way removing radiation must move it**
+— and one sign comparison did what four revisions of sizing could not.***
+
+⌗ *Routed to cc54 in `FOR_54.md`: it is their arm and which line produces $135.46$ is not visible from here.*
+⚠ ***If the stored value is wrong, `PO-10`'s $281$ has been measuring a bookkeeping error rather than the physics —
+and `F5`'s protection has been doing more work than anyone thought.***
+
 ### Revision r2789 — 2026-08-11 (main line). **THE CR ARM'S PEAKS ARE NOT WHERE ITS OWN $\ell_A$ SAYS.**
 
 **⛔ ⓵ THE AMPLITUDE TEST FOUND SOMETHING PRIOR TO ITSELF.**

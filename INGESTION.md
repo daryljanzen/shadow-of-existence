@@ -284,3 +284,5 @@ r2788  CLAIMED    PO-10: is the phase slip PHYSICAL or NUMERICAL? l_A = pi D_M /
 r2788  COMPUTED    l_A is COMPUTED and its cancellation is real -- but the residual is 100x too small. Amplitude remains.
 r2789  CLAIMED    PO-10: the AMPLITUDE test. Per-peak heights, both arms, peak-by-peak.
 r2789  COMPUTED    the CR arms peaks sit at spacing 258, not its stored l_A of 301.6. LCDM is self-consistent.
+r2790  CLAIMED    PO-10: which of D_M, r_s or the projection? Solve for what gives spacing 258.
+r2790  COMPUTED    the stored CR r_s moves the WRONG WAY -- radiation-free must raise it, stored lowers it.

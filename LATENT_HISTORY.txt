@@ -253,3 +253,4 @@ r2786  COMPUTED    CRs 281 is the ORDER P15s own damping prediction produces. Th
 r2787  COMPUTED    the shape test RUN: the residual oscillates at l_A. 281 is peak misalignment. r2786 withdrawn.
 r2788  COMPUTED    l_A is COMPUTED and its cancellation is real -- but the residual is 100x too small. Amplitude remains.
 r2789  COMPUTED    the CR arms peaks sit at spacing 258, not its stored l_A of 301.6. LCDM is self-consistent.
+r2790  COMPUTED    the stored CR r_s moves the WRONG WAY -- radiation-free must raise it, stored lowers it.

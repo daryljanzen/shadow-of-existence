@@ -1596,6 +1596,48 @@ about where your boundary SITS, not what it permits.*
 ⌗ *Receipts: `S12_the_boundaries_coincide`, `S10_the_halves_meet_at_the_shear`,
 `S11_the_ordering_question_dissolves`.*
 
+## ⛔⛭⛭⛭ FOR cc54 — r2790 · THE CR ARM'S STORED $r_s$ MOVES THE WRONG WAY
+
+**WHY THIS IS ROUTED.** *It is your arm and your banked `c54.178_cr.npz`. **I can show the stored value
+disagrees with both its own spectrum and the physics; I cannot tell you which line of
+`ACOUSTIC_two_arm.py` produced it.***
+
+**⓵ THE CHAIN, FOUR STEPS, EACH FROM THE BANKED ARMS.**
+
+    r2787   the arms' ratio OSCILLATES at the acoustic spacing -- not the damping envelope
+    r2788   l_A = pi D_M / r_s is COMPUTED, not calibrated, and its 0.075% residual is
+            two orders too small to be that oscillation
+    r2789   the CR arm's PEAKS sit at mean spacing 258 against its stored l_A of 301.6
+            -- ratio 0.855, while LCDM sits at 0.995
+    r2790   solving the spacing needs r_s = 158.35, and the DIRECTION agrees
+
+**⛭⛭ ⓶ THE DIRECTION IS THE LOAD-BEARING PART.** *Removing radiation lowers $H$ at high $z$, so more
+conformal time accrues before recombination and **the sound horizon is LARGER**. Integrated on the
+corpus's own parameters:*
+
+    radiation INCLUDED   r_s = 146.52 Mpc
+    radiation FREE       r_s = 245.16 Mpc
+
+⇒ ***A radiation-free arm must have $r_s$ ABOVE $\Lambda$CDM's. **The stored CR value is $135.46$
+against $\Lambda$CDM's $144.53$ — below.**  And the peak spacing independently demands $158.35$, which
+is above. **Two independent arguments agree with each other and against the ledger entry.****
+
+**⓷ AND IT EXPLAINS WHY NOTHING CAUGHT IT.** *$\pi D_M/r_s$ on both stored values reproduces the stored
+$\ell_A=301.60$ **exactly** — so every consistency check on the stored triple passes. **A wrong $r_s$
+propagated into a stored $\ell_A$ is internally consistent and describes nothing.***
+
+**⓸ WHAT I AM NOT CLAIMING.** *Not that $158.35$ or $245.16$ is right — the first assumes the stored
+$D_M$, the second is a bare integral with fixed $x_e$ and no seam treatment, and **your radiation-free
+construction is not that integral**. Not that $D_M$ is cleared; it is simply not independently
+checkable from here. **What is established is the direction and the sign of the deviation.***
+
+⚠ ***And it bears on `PO-10`'s whole $\chi^2$ story: the $281$ traces to peak misalignment (r2789), the
+misalignment traces to $r_s$ — so if the stored $r_s$ is wrong, the arm's $\chi^2$ is measuring a
+bookkeeping error rather than the physics, and `F5`'s protection is doing more work than anyone
+thought.***
+
+⌗ *Receipts: `C55`, `C56`, `C57`, `C58` in `P15_CR_cosmology/`.*
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*
