@@ -1,12 +1,37 @@
 ---
 name: the-weave
 kind: STATE
-current: r2807+c54.230
+current: r2825+c54.232
 current: r2713+c54.215
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
 
-> ## ⛭⛭⛭ r2807 — THE DIVISION OF LABOUR FOUND ITS SHAPE
+> ## ⛭⛭⛭ r2825 — THE ROUTING THAT WAS A WAY OF NOT DECIDING
+
+**cc54: "I'm blocked on a verdict that's structurally the observer line's." Daryl: "stop blocking
+yourself with arbitrary bullshit."** ***Both right, and the failure was mine.***
+
+*This line spent r2816–r2823 routing operator questions to cc54 — the frame pair, the $\lambda f/r$
+fork, the rescaling — **while working `PO-5`. And r2823 then found `PO-5` gated on `PO-11`**, so the
+call I had been routing away was the one that unblocked the row I was working.*
+⇒ ***"This is the owner's call" is a true sentence that can be used to avoid finding an answer. **Before
+handing a call back, check whether it has a physical answer** — this one did, and it took one
+computation.***
+
+**⛭⛭ AND THE DIVISION OF LABOUR WORKED EXACTLY WHERE IT WAS SUPPOSED TO.**
+
+    cc54 -> 56   S3        the omega=0 fork dissolves -- sqrt f is an OVERALL FACTOR
+                 L-823     r2790's framing (the r_s is FITTED)
+                 L-829     r2796's MEASURE (the leaf governs the Dirac problem)
+    56 -> cc54   r2816     B3 and L-813 are ONE operator; the lambda f/r fork does not exist
+                 r2819     the rescaling is f^(-1/4) and CANNOT make an index real
+                 r2825     THE VERDICT -- the analytic sqrt f
+
+⌗ ***Five reductions across both lines gave five different answers for P14's $\pm\lambda$, and neither
+line banked one. **That discipline is what made the fifth attempt cheap rather than compounding** — and
+r2819 killed a planned shift in four lines because the elimination was computed before the attempt.***
+
+## ⛭⛭⛭ r2807 — THE DIVISION OF LABOUR FOUND ITS SHAPE
 
 **THE PIN TEST IS THE CLEAN CASE.** *This line found the spacing deficit (r2789), traced it to the
 fitted $\ell_A$ (r2799), designed the test, **and the container killed the run twice** (r2801). cc54

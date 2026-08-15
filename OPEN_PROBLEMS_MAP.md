@@ -1,9 +1,37 @@
 ---
 name: open-problems-map
 kind: STATE
-current: r2807+c54.230
+current: r2825+c54.232
 job: The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open
 ---
+
+## ⛭⛭⛭ r2825 — THE BOARD HAS ONE ROOT, AND IT IS `PO-11`
+
+**THE KNOT RESOLVED INTO A CHAIN.**
+
+    PO-2  --gated on-->  PO-5  --gated on-->  PO-11  --gated on-->  (nothing)
+
+*`PO-5` is gated on `PO-11` **not by decision but by what a composite is made of** (r2823): the wall
+kernel's modes are wall-bound with disjoint support, so a composite of them is localised — and a gauge
+field must propagate. **The propagating sector IS `PO-11`.***
+⇒ ***Three rows, one dependency chain, no circularity. What looked like three separate open problems is
+one unbuilt sector with two consequences.***
+
+**⛭⛭ AND `PO-5`'s ROUTES ARE NOW ENUMERATED AND FOUR OF FIVE ARE CLOSED.**
+
+    (X) isometry / Kaluza-Klein   WALLED   su(3) does not embed in so(5,1)
+    (X) holonomy / flat bundle    CLOSED   r2813
+    (X) index / anomaly inflow    CLOSED   boundary paper's own words
+    (X) spectral triple (Connes)  CLOSED   r2820 -- no D_F, so the inner fluctuations vanish
+        composite / emergent      OPEN     Weinberg-Witten's confinement and no-S-matrix
+                                           escapes both hold -- and both are real CR properties
+
+⌗ *And the surviving route's remainder is specific (r2822): **does the OCTET channel of $3\otimes\bar3$
+on the wall kernel contain a massless spin-1 state?** P14's second quantisation counts the singlet.*
+
+**⛭ AND `PO-11` HAS ITS OPERATOR SETTLED (r2825):** *the analytic $\sqrt f$, because self-adjointness is
+a requirement on a **spatial** operator and $r$ is timelike at the wall. **The propagating descent
+proceeds from a real-index foundation.***
 
 ## ⛭⛭⛭ r2807 — THE BOARD AFTER THE r2788–r2807 SPAN
 
