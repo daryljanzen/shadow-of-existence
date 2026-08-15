@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
-"""C58 -- the CR arm's stored $r_s$ moves the WRONG WAY: removing radiation must RAISE the sound
+"""C58 -- ⛔ **FRAMING WITHDRAWN r2799 by cc54's `L-823` and the source read.**  *** The stored CR
+$r_s$ is not a computed value that disagrees with the physics -- it is a **FITTED** one:
+`Z_START = brentq(lambda z: pi*D_M/rs_from(z) - LATARG, 1500, 60000)` and `R_S = rs_from(Z_START)`,
+with the corpus's own comment calling $z_{\\rm onset}$ **"the one fitted number"**.  Varying the pin
+moves it: `LATARG` $280\\to r_s=145.91$, $301.6\\to135.46$ (banked), $320\\to127.67$.
+  ⇒ ** Disagreeing with a from-$a{\\sim}0$ integral is what a fitted value DOES.  There is no
+  bookkeeping error and nothing for cc54 to trace. **
+  ⌗ *What survives: the DIRECTION arithmetic is correct at both limits (radiation-free exceeds
+  radiation-included from-onset as well as from $a{\\sim}0$), and the peak-spacing deficit r2789
+  measured is untouched -- **whether THAT follows the pin is the live question**.* ***
+
+C58 -- the CR arm's stored $r_s$ moves the WRONG WAY: removing radiation must RAISE the sound
 horizon, the peak spacing needs it raised, and the stored value is lowered.
 
 ** THE THREE-WAY r2789 LEFT. **  *** Which of $D_M$, $r_s$ or the projection does the CR arm's transfer

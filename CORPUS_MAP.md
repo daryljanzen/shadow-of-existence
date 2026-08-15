@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r2799 — 2026-08-12 (main line). **r2790's FRAMING WITHDRAWN — the CR $r_s$ is FITTED, not computed.**
+
+**⛔ ⓵ THERE WAS NO BOOKKEEPING ERROR TO TRACE.** *cc54's `L-823` plus the source:*
+
+    Z_START = brentq(lambda z: np.pi * D_M / rs_from(z) - LATARG, 1500., 60000.)
+    R_S     = rs_from(Z_START)
+
+*$r_s$ is **the value that makes $\ell_A$ hit a pinned target**, and the source comment calls $z_{\rm onset}$
+"the one fitted number".*
+⇒ ***Disagreeing with a from-$a{\sim}0$ integral is what a fitted value does. r2790 routed a code read for a stated
+design choice.***
+
+⌗ ***And this line had the source throughout — it read the `.npz`, the stored triple and the spectrum across four
+revisions (r2787–r2790) without opening the file that computes them.***
+
+**⛭⛭ ⓶ WHAT SURVIVES IS THE PART THAT MATTERS.** *r2789's peak-spacing deficit is untouched: $258$ against a stored
+$301.6$ (ratio $0.855$), while $\Lambda$CDM sits at $0.995$.*
+
+**⓷ AND THE SOURCE COMMENT POSES THE LIVE QUESTION ITSELF:** *"GIVEN that $\ell_A$ is fitted, is the peak SPACING
+deficit an artefact of where the pin was put?"*
+
+    LATARG = 280     ->  r_s = 145.91
+    LATARG = 301.6   ->  r_s = 135.46   (banked)
+    LATARG = 320     ->  r_s = 127.67
+
+*The pin moves $r_s$ by $14\%$. **This line launched `ARM=cr` at both ends and the container killed the runs after
+the header** — routed with the one number per run that settles it.*
+
+**⛭ THE RULE:** ***before calling a stored value wrong, read the code that stores it. **A value disagreeing with an
+independent calculation is evidence of an error only if it was supposed to BE that calculation** — and "fitted" is
+something a comment says in one line and a receipt cannot infer from three.***
+
 ### Revision r2797 — 2026-08-11 (main line). **THE WALL IS EXACTLY CRITICAL — a double root at $s=1/2$.**
 
 **⛭⛭ ⓵ THE POTENTIAL AT $r=0$.** *$V\to-4M^2/r^4$ — **independent of $\ell$ and of $\alpha$**, since the angular
