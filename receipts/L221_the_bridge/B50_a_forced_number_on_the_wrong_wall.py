@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""B50 -- `PO-2`'s upgrade gives `PO-5` a FORCED dimensionless number for the first time, and it is on
+"""B50 -- ⛔ **LABEL WITHDRAWN r2810.**  *** This receipt called $1/\\sqrt3$ "a FIXED IRRATIONAL forced by the
+geometry -- the shape a coupling constant has".  **It is the shape a CARTAN GENERATOR'S NORMALISATION
+has**: $\\mathrm{diag}(1,1,-2)/\\sqrt3$ is $\\lambda_8$, and the $\\sqrt3$ is exactly what makes
+$\\mathrm{Tr}(\\lambda_8^2)=2$.  The corpus names it four papers over.  See `B56`.
+  ⌗ *What survives: the triple IS forced (Nariai is the unique fixed point), and it IS dimensionless.
+  **What is withdrawn is the KIND** -- it is not a candidate coupling and never was.* ***
+
+B50 -- `PO-2`'s upgrade gives `PO-5` a FORCED dimensionless number for the first time, and it is on
 the wrong wall: the number is supplied and the thing to multiply is not.
 
 ** THE QUESTION.  Daryl, r2804: ** *** "Does that one not give us a foothold we could actually use to

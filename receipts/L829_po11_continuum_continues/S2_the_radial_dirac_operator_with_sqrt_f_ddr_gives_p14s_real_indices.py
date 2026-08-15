@@ -53,7 +53,7 @@ operator 56's r2807 asked cc54 to derive.
 +-lambda indices (56's r2807 restatement). Informs L-221/family-6, PO-11, B3, P14, L-829 S1. Routed to
 56. **
 
-Written r2808 (cc54, L-829 S2). Asserts against the corpus's own f and B3's sqrt(f) d/dr operator --
+Written r2812 (cc54, L-829 S2). Asserts against the corpus's own f and B3's sqrt(f) d/dr operator --
 never the register. Stated for reversal.
 """
 import numpy as np

@@ -313,3 +313,11 @@ r2805  COMPUTED    p0s inference is SOUND and scoped -- the mass cancels (K=72/a
 r2806  CLAIMED    PO-5: WHICH bundle is flat, and is it the one a coupling would live on?
 r2806  COMPUTED    the missing F^2 is ENTAILED -- colour arrives by covering monodromy, which is flat by construction.
 r2807  COMPUTED    L-829/L-830 gated: the pin test lands ACOUSTIC, and L-829s leaf measure corrects r2796.
+r2808  CLAIMED    PO-5: does the corpus admit any delivery of colour OTHER than a covering monodromy?
+r2808  CLAIMED    cc54 retracts its r^{+/-i lambda}. Does my r2800 verdict rest on it?
+r2808  COMPUTED    cc54s retraction of r^{+/-i lambda} is load-bearing FOR r2800 -- imaginary indices would have given freedom.
+r2809  CLAIMED    PO-5: does the corpus admit any delivery of colour OTHER than a covering monodromy?
+r2809  COMPUTED    1/sqrt3 is right kind right place in P14s dimensional argument; the numerical claim DECLINED.
+r2810  COMPUTED    the triple is lambda_8 -- a NORMALISATION not a coupling. r2804/r2809 labels withdrawn.
+r2811  CLAIMED    what is missing between Cartan+Weyl data and su(3) itself?
+r2811  COMPUTED    the rules are CENTRE data and the force is ROOT-VECTOR data -- two halves of one decomposition.

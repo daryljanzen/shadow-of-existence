@@ -146,6 +146,121 @@ sources: [cowork, chat]
 
 
 
+### Revision r2811 — 2026-08-12 (main line). **THE RULES ARE CENTRE DATA AND THE FORCE IS ROOT-VECTOR DATA.**
+
+**⓵ $\mathfrak{su}(3)$ SPLITS AND THE CORPUS HAS ONE SIDE.**
+
+    dim su(3) = 8 = 2 (Cartan) + 6 (root vectors E_{+/-alpha})
+    the zero-sum roots span the full 2d Cartan   -- PRESENT
+    S_3 permuting them is the Weyl group          -- PRESENT
+    the six root vectors                          -- ABSENT
+
+**⛭⛭⛭ ⓶ AND THE DELIVERED RESULTS NEED ONLY THE CENTRE.** *"baryon 1, diquark 0, meson 1" are triality sums:
+$3\equiv0$, $2\not\equiv0$, $0\equiv0$ mod 3.*
+⇒ ***All three follow from the $\mathbb Z_3$ centre alone. **They need no root vectors and no continuous group.****
+
+**⛭⛭ ⓷ WHICH IS WHY THE RULES ARE EXACT AND THE FORCE IS ABSENT — ONE FACT, NOT TWO.**
+
+    selection rules -> the CENTRE, finite, exactly what a covering carries   => EXACT, not approximate
+    the force       -> the ROOT VECTORS, which a flat connection has none of => ABSENT, not small
+
+⇒ ***"It quantises and does not couple" is $\mathfrak{su}(3)=$ centre-data $\oplus$ root-vectors, read off.***
+
+**⓸ AND IT SHARPENS THE THIRD MECHANISM'S TARGET** — *not "supply a coupling" but **supply the six root vectors**,
+which a monodromy valued in a finite group cannot do however the group is chosen, because **root vectors are
+continuous directions and a covering has none**.*
+
+**⛭ THE RULE:** ***when a construction delivers some of a structure, decompose the structure and ask WHICH PART.
+**"Has some of $\mathfrak{su}(3)$" is not a finding; "has the Cartan and the Weyl group and not the root vectors"
+predicts exactly which results come out exact and which come out absent.****
+
+### Revision r2810 — 2026-08-12 (main line). **IT IS $\lambda_8$ — r2804's AND r2809's LABEL WITHDRAWN.**
+
+**⛔ ⓵ THE NORMALISED NARIAI TRIPLE IS THE GELL-MANN MATRIX.**
+
+    diag(1, 1, -2)/sqrt3      trace = 0,  Tr(T^2) = 2      <- THE standard SU(3) normalisation
+    without the sqrt3         Tr = 6
+
+⇒ ***So the $\sqrt3$ is a **NORMALISATION CONSTANT**, not a magnitude.***
+
+**⛔ ⓶ SO r2809 SET UP THE WRONG COMPARISON AND DECLINED TO COMPLETE IT.** *It put $1/\sqrt3$ beside $\alpha_s$ and
+declined "because $\alpha_s$ runs".*
+⇒ ***The running was never the problem. **A normalisation constant is not the kind of thing a coupling is**, so the
+comparison had no content — a wrong setup followed by a principled-sounding refusal to finish it.***
+⌗ ***A bad setup plus a principled refusal reads exactly like rigour, and is cheaper than either doing the physics
+or admitting the setup is wrong.***
+
+**⛭⛭ ⓷ AND THE CORPUS ALREADY SAYS IT, BETTER.** *`SdS-slicing-curve`: "the root triple lies in the plane … which
+is the **Cartan subalgebra of $\mathfrak{su}(3)$** in its standard realisation, the diagonal traceless matrices".
+`algebroid_paper`: "The three roots summing to zero furnish **a Cartan element** … the Cartan--Weyl skeleton, a
+necessary ingredient".*
+
+**⛭ ⓸ AND THE CORRECTED STATEMENT IS STRONGER THAN THE ONE WITHDRAWN.** *The geometry supplies the Cartan generator
+**correctly normalised**; the zero sum is **tracelessness** (why it is arithmetic, and why that is a feature); the
+$1{:}1{:}{-}2$ pattern is **the direction that commutes with the $SU(2)$ subgroup**, which is why the doubled root
+is doubled.*
+⇒ ***`PO-5` has no coupling candidate and never did. It has confirmation of Cartan--Weyl data — exactly what
+`boundary_paper` calls "Cartan and Weyl data, not the Lie algebra".***
+
+**⛭ THE RULE:** ***before comparing a number to a physical constant, ask what KIND of object it is. **A
+normalisation, a magnitude, a ratio of loci and a coupling are four different things that all print as a decimal**
+— and "is it numerology?" is the wrong question when "what is this?" is unanswered.***
+
+### Revision r2809 — 2026-08-12 (main line). **$1/\sqrt3$ IS RIGHT KIND, RIGHT PLACE — AND THE NUMERICAL CLAIM IS DECLINED.**
+
+**⛭⛭ ⓵ P14 LOCATES THE OBSTRUCTION AFTER THE DESCENT.** *"$[g^2]=L^{D-4}$, so at the substrate's own $D=5$ a
+Yang--Mills coupling \emph{is} a length and the substrate has exactly one---**the obstruction appearing only after
+the descent**."*
+
+    D=5:  [g^2] = L^1  -> a LENGTH.  The substrate has one: alpha.  No number needed.
+    D=4:  [g^2] = L^0  -> DIMENSIONLESS.  A number IS needed.
+
+⇒ ***The descent must turn a length into a pure number, which means dividing by another length from the same
+geometry. **And $1/\sqrt3 = r_N/\alpha$ is exactly that.****
+
+**⛔ ⓶ AND THE NUMERICAL CLAIM IS DECLINED, WITH THE REASON.** *$\alpha_s(M_Z)=0.1179$ gives $g=1.217$; against
+$1/\sqrt3$ the ratios are $2.108$, $2.566$, $0.204$ — none clean.*
+⇒ ***And that is not why this line stopped. **It stopped because $\alpha_s$ RUNS**: a running coupling has no single
+value to be falsified against, so P14's "falsifiable against ONE QUANTITY" is sharp about the KIND and silent about
+WHICH.***
+
+⌗ ***Had the ratios come out clean there would have been a finding and no argument. **That is the shape of the trap:
+the structural fit is real and it creates an appetite for the numerical one.****
+
+**⓷ SO `PO-5` GAINS A CANDIDATE AND A NAMED OBSTACLE** — *the scale at which P14's "one quantity" is read. **Until
+that exists no candidate can be falsified**, which is a gap in operationalisation rather than in P14's argument.*
+
+**⛭ THE RULE:** ***a structural match makes the numerical test more tempting and no more valid. **When a candidate
+lands in the right place, that is the moment to state what would falsify it — not to check whether it happens to
+fit.****
+
+### Revision r2808 — 2026-08-12 (main line). **cc54's RETRACTION IS LOAD-BEARING *FOR* r2800's VERDICT.**
+
+**⓵ THE RETRACTION.** *cc54 withdrew a probe giving $r^{\pm i\lambda}$: "P14 derives $|r|^{\pm\lambda}$ (real
+indices) ... my quick probes simply used the wrong radial operator."*
+⇒ ***A retraction on the row whose verdict this line supplied is a load test, not someone else's housekeeping.***
+
+**⛭⛭⛭ ⓶ AND THE TWO FORMS BEHAVE OPPOSITELY.**
+
+    REAL       r^(+lambda) -> 0.00100,  r^(-lambda) -> 1000    one decays, one grows
+               => normalisability picks one.  NO FREEDOM.
+    IMAGINARY  |r^(+/-i lambda)| = 1 at every radius            log-periodic, neither decays
+               => the LIMIT-CIRCLE case, which HAS a one-parameter family
+
+⇒ ***Had $r^{\pm i\lambda}$ been banked, r2800's verdict would have been **wrong** — imaginary indices give exactly
+the extension freedom the verdict denies.***
+
+**⓷ AND P14's $\lambda$ IS REAL BY DEFINITION** — *"$\lambda=j+\tfrac12$ labels partial waves", an angular label.
+r2800's first step (the field is Dirac, from the row's object column) is index-independent either way.*
+
+**⓸ AND cc54's DIAGNOSIS IS WORTH MORE THAN ITS RETRACTION:** *"the naive second-order $V_\pm$ gave index 2, the
+naive first-order gave imaginary — neither is the operator." **Two wrong operators giving two DIFFERENT wrong
+answers locates the gap at the OPERATOR**, which one wrong answer would not have. `#556` restated accordingly.*
+
+**⛭ THE RULE:** ***when another line retracts something, check whether your own conclusions rested on it — **in
+either direction**. A retraction that supports your verdict is as informative as one that breaks it, and you only
+learn which by testing.***
+
 ### Revision r2807 — 2026-08-12 (main line). **`L-829` AND `L-830` GATED — the pin test lands acoustic, and my measure was wrong.**
 
 **⛭⛭ ⓵ `L-830`: THE PIN TEST, RUN.** *The run this line's container OOM'd on twice (r2801).*

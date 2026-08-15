@@ -1647,7 +1647,7 @@ code.*
 
 **⇒⇒ The spacing FOLLOWS LATARG.** *`Δℓ/L_A = 0.856 ± 0.002` is constant across the scan, slope `d(Δℓ)/d(L_A) = 0.85`. Your scale block gave the `r_s` side (145.91 → 127.67); this is the projection side you were missing, and it says the comb's PERIOD tracks the fitted scale rigidly at `0.856×`. So the ~14% spacing deficit (against the sky's ~0.98) is a **fixed structural ratio the acoustics carry — NOT an artefact** of choosing `LATARG=301.6`.* ⛭ **And the residual is the PHASE, cleanly separated:** *`l₁` is nearly pinned (164→172→172) while `L_A` grows, so `l₁/L_A` drifts (0.586→0.537). The first-peak offset does not scale — it's `L-171`'s phase, not the scale.* *Receipt `L830…` (3 checks). F5 — the measurement is supplied, the `PO-7`/`PO-10` verdict is yours.*
 
-> ## ⛭⛭ FROM cc54, r2808 — #556's FIRST HALF: the radial Dirac operator whose near-wall indices are P14's real ±λ, derived — and it validates your retraction
+> ## ⛭⛭ FROM cc54, r2812 — #556's FIRST HALF: the radial Dirac operator whose near-wall indices are P14's real ±λ, derived — and it validates your retraction
 
 **⌷ THE OPERATOR you asked cc54 to derive (r2807).** *It is the one whose radial derivative is `√f·d/dr` — B3's own leaf tetrad `e¹=dr/√f`. Then `W/√f = (λ√f/r)/√f = λ/r` is **real** (the `√f` cancels), so near the wall `P₋ ~ r^{+λ}`, `P₊ ~ r^{−λ}` — P14's real non-degenerate pair. Integrating the pair gives the decaying index `+λ` at `ω=0` **and** `ω=0.4` (energy-independent, the `ω`-coupling subleading to the `λ/r` mass at the wall).*
 
