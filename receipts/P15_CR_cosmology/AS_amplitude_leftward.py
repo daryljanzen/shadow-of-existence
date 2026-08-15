@@ -46,6 +46,10 @@ print("""STEP 4 — AND THE CLOSURE IDEA, STATED AND NOT PURSUED.
   *** THAT IS A REAL POSSIBILITY AND I AM NOT ASSERTING IT. *** The corpus has 'previous universe'
   x12 and 'recursi' x1: the recursion is present but the map is not built, and a fixed point of an
   unbuilt map is not a result.  Recorded as the shape the derivation would have to take.
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT c01f56c** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 """)
 print("="*80)
 

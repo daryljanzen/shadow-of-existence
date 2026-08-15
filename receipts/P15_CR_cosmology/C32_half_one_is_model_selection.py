@@ -42,6 +42,10 @@ $k=1$ is settled ** -- P15's three statements support it, but a refit that touch
 raise it.  ** Not that the $\\chi^2$ is known ** -- it is not, and it is what remains.  ** Not that AIC and
 BIC agree in general ** -- here they point the same way, which is worth saying because they often do not.
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT fd7e032** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2709.  Stated for reversal.
 """
 import glob

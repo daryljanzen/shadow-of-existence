@@ -39,7 +39,11 @@ edit the origin, not this copy.
 ORIGIN-DIVERGENCE: DELIBERATE AND SUBTRACTIVE.  The origin also disposes of three register items
 about a ledger row's pairing of objects to targets, which are bookkeeping rather than paper
 claims.  ** This copy carries the paper-facing subset: every assertion here appears in the origin
-verbatim, and nothing here is absent from it. **"""
+verbatim, and nothing here is absent from it. **⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT c01f56c** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
+"""
 import sympy as sp
 
 print(__doc__)

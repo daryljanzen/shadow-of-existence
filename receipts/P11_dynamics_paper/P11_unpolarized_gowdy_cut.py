@@ -44,6 +44,10 @@ STATUS: ✔✔ (six nonzero field-equation components asserted; BOTH wave-map re
   solution integrated with its first integral asserted conserved)
 RUN: python3 P11_unpolarized_gowdy_cut.py   RUNTIME: ~10-20 min (sympy solve; then scipy)
 ORIGIN: computations/beyond_the_wall/L163_the_unpolarized_gowdy_cut.py, built r2376 (c54.110).
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT c01f56c** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 """
 import numpy as np
 import sympy as sp

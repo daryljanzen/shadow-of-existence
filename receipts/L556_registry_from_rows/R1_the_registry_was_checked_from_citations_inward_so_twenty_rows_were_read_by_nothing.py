@@ -74,6 +74,10 @@ CONTENT column as a membership test.  ** Not that the appendix content is now co
 is now what the ledger generates.
 
 Written c54.222 (`L-556`).  Stated for reversal.
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT d98bf61** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 """
 import ast
 import fnmatch

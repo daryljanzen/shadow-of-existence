@@ -64,6 +64,10 @@ one-constant theorem stands and F1/F3 remain the trip-wires.  ** Not that P6's i
 correct ** -- it is asserted in the corpus and is not tested here.  Only that ** it is an
 IDENTIFICATION rather than a decline, that it is undeveloped, and that r2522 mis-recorded it. **
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT fa28446** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2524.  Stated for reversal.
 """
 import glob

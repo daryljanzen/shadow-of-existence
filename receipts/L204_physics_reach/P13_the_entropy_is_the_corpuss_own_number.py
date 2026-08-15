@@ -52,6 +52,10 @@ and whether it applies to a cosmological horizon on this reading is untouched.  
 fine-tuning conjecture is evaluated **: the corpus states it "as the hypothesis it is, to be grounded
 through the matter sector", and this receipt does not ground it.
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT 69985dc** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2564.  Stated for reversal.
 """
 import glob

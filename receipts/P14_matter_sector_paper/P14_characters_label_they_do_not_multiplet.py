@@ -73,7 +73,11 @@ print()
 
 
 def irrep_dims_abelian_check(mult, n, name):
-    """Sum of squares of irrep dimensions = |G|; an abelian group has |G| one-dim irreps."""
+    """Sum of squares of irrep dimensions = |G|; an abelian group has |G| one-dim irreps.⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT c01f56c** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
+"""
     els = list(range(n))
     abelian = all(mult(a, b) == mult(b, a) for a in els for b in els)
     return abelian

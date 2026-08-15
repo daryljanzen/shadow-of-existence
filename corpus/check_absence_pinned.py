@@ -37,8 +37,11 @@ ABSENCE = re.compile(
     r'appears? ZERO times|ZERO occurrences|both ZERO|appeared NOWHERE'
     r'|appears nowhere|never names|is absent from', re.I)
 # ** a commit, or an explicit statement that the claim is about the live tree. **
+# ** r2802: was case-SENSITIVE on 'at', so "MEASURED AT <sha>" -- the form the retro-pinning
+# writes -- did not match.  *** A gate that only recognises one casing of its own convention
+# reports unpinned receipts that are pinned. *** **
 PINNED = re.compile(r'\bat [0-9a-f]{7,40}\b|\b[0-9a-f]{40}\b|as of [0-9a-f]{7,}'
-                    r'|LIVE-TREE CLAIM')
+                    r'|LIVE-TREE CLAIM', re.I)
 
 
 def main():

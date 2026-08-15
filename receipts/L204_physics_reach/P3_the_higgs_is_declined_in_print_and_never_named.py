@@ -52,6 +52,10 @@ explicitly should not, and F3/F1 are the trip-wires on that.  ** Not that the om
 the disclaimer is in print and is correct.  Only that ** the declined mechanism is unnamed, so the
 decline is invisible to search **, and that the corpus already holds the sentence that would name it.
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT 93aa338** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2522.  Stated for reversal.
 """
 import glob

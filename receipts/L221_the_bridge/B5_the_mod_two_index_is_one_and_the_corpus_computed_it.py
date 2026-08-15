@@ -44,6 +44,10 @@ is $3$; the invariant says the count is ODD and cannot be moved to an even one, 
 invariant can obstruct or permit but cannot by itself deliver four states. ***  ** Not that the holonomy's
 pair-flip property is re-derived here ** -- it is P14's, cited and used.
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT 5355051** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2608.  Stated for reversal.
 """
 import itertools

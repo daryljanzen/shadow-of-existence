@@ -265,3 +265,4 @@ r2798  LATENT      c54.223-228 merged. C41 collision resolved by rename; three g
 r2799  LATENT      r2790s framing WITHDRAWN -- the CR r_s is FITTED by brentq, not computed. The pin test is the live question.
 r2800  LATENT      PO-11 verdict: the field is DIRAC, so L-828s fermion branch applies and the matching is DETERMINED.
 r2801  LATENT      the pin test attempted twice more and killed at projection both times. Resource wall, routed.
+r2802  INSTRUMENT  both not-blind-fixable backlogs cleared: 41 pinned from git, arc breaks 98 -> 33.

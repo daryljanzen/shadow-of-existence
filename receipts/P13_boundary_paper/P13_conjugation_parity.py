@@ -186,5 +186,9 @@ print("""  Honest claim the proposition may assert:
       renderings (check 1 mass-TERM under areal vs check 4 mass-PARAM
       under offset are two renderings within the one residue).
   Phrasing that passes: "same discrete residue, opposite parity-faces",
-  NOT "one reflection".""")
+  NOT "one reflection".⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT c01f56c** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
+""")
 print("ALL CHECKS PASSED.")

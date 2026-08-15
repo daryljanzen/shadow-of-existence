@@ -48,6 +48,10 @@ edit should say; ** the one-clause change to P12 is the discharge and is a separ
 `check_citations` should catch this class ** -- *** a gate that verified every cited paper CONTAINS the
 cited fact would be a reading, not a check. ***
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT 7605b53** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2635.  Stated for reversal.
 """
 import os

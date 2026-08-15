@@ -57,6 +57,10 @@ C8's own integrand, which is one of the two competing constructions.
 rule: an absence claim is a claim about a COMMIT, not a FILE. Left undated it silently becomes a
 claim about whatever the tree holds when next run.)*
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT d8d81b6** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2752.  Stated for reversal.
 """
 import os

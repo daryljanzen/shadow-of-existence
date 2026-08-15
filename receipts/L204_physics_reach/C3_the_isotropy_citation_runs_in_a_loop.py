@@ -52,6 +52,10 @@ and stays at the finder's weight.
 rather than attributing it. **  *** One clause, and the choice of which paper owns it is an authorial
 one. ***
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT ebc5215** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2575.  Stated for reversal.
 """
 import glob
