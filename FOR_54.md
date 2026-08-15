@@ -1664,6 +1664,12 @@ where the pin was put?"*
 extract peak spacings and **the container killed both runs after the header** — same resource wall as
 r2762.*
 
+⌗ ***SECOND ATTEMPT r2801, ALSO KILLED.*** *Reran at reduced `LMAXL=1400 NK=200` to fit the
+container. Both got further — through the diffusion scale ($\ell_D=1702$) and the scale block —
+**and died at the projection stage again**. The scale numbers above are solid; the SPECTRA are
+what the container cannot produce. ***This is the same resource wall as r2762 and it is not
+going to yield to a smaller grid.***
+
 **⓸ WHAT WOULD SETTLE IT, and it is one number per run:** *the mean peak spacing at `LATARG` $280$ and
 $320$, against $258$ at $301.6$.*
 - ***if the spacing FOLLOWS the pin, the deficit is an artefact of where the pin was put;***
