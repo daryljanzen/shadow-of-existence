@@ -76,8 +76,13 @@ def main():
             # ** r2831a: a +/-60-character window is an arbitrary scope and rejected a mark
             # sitting a few characters further into the block.  *** The honest test is that the
             # BLOCK carries the mark -- so bound the search by the next block delimiter. ***
+            # ** r2832: the j-90 LOOKBACK was the same arbitrary-window flaw as the forward
+            # one -- a long mark's opener sits further back than 90 characters.  *** Bound the
+            # lookback by the PREVIOUS block delimiter, so the search is the block, both ways. ***
+            prev = [mo.end() for mo in re.finditer(SPLIT, s[:j])]
+            start = prev[-1] if prev else 0
             nxt = re.search(SPLIT, s[j+1:])
-            block = s[max(0, j-90):j + 1 + (nxt.start() if nxt else len(s))]
+            block = s[start:j + 1 + (nxt.start() if nxt else len(s))]
             if MARK not in block:
                 unmarked.append((m.group(2), victim, mm.group(1).upper()))
 
