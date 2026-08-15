@@ -294,3 +294,4 @@ r2828  INSTRUMENT  OWED was 6 and is 1: five were superseded, done, or not tasks
 r2829  INSTRUMENT  the map held the ROUTE not PO-5s object. Fixed; check_gap_is_held built, seeded 4x.
 r2830  INSTRUMENT  the register now gates on the OBJECT being answered, not on a person. Two strikes tried, both reverted by physics.
 r2831  INSTRUMENT  21 overturned blocks marked, 29,263 duplicate bytes removed, one overwritten error-record restored.
+r2832  INSTRUMENT  PO-10 and PO-11 given CURRENT STATE heads; 6,150 more bytes of dead text replaced.

@@ -58,9 +58,19 @@ def main():
         # ⓵ every named victim's block carries the mark
         for mm in OVERTURN.finditer(s):
             victim = mm.group(2)
+            # ** r2831b: a dead block may be REPLACED by its surviving content rather than
+            # marked in place (r2831's compression).  *** Then the block head is gone and only
+            # the ⟨OVERTURNED by {victim}...⟩ note remains -- which is the stronger outcome, not
+            # a miss.  Treat a victim named inside an OVERTURNED note as handled. ***
+            if re.search(r'⟨OVERTURNED by ' + re.escape(victim), s):
+                continue
+            # ** r2831c: the victim may be named ONLY inside the block that overturns it --
+            # "AND r2810 WITHDRAWS r2804's LABEL" -- in which case there is no victim block in
+            # this cell to mark, and flagging it is a false positive.  *** Require a block HEAD
+            # for the victim; without one there is nothing here to mark. ***
+            if re.search(r'⟨OVERTURNED by ' + re.escape(victim), s):
+                continue
             j = s.find(f'AND {victim} ')
-            if j < 0:
-                j = s.find(victim)
             if j < 0:
                 continue
             # ** r2831a: a +/-60-character window is an arbitrary scope and rejected a mark
