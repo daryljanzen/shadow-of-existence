@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2806 — 2026-08-12 (main line). **THE MISSING $F^2$ IS ENTAILED BY THE DELIVERY.**
+
+**⛭⛭ ⓵ P14 SAYS WHERE COLOUR LIVES.** *"the module the operator's colour structure acts on is **the branching**
+rather than any bundle of the substrate; the three wall monodromies with the hinge 3-cycle generate $SU(3)$."*
+
+**⛭⛭⛭ ⓶ AND A BRANCHING IS A COVERING, WHOSE ASSOCIATED BUNDLE IS FLAT BY CONSTRUCTION.**
+
+    a covering's structure is carried by MONODROMY -- a representation of pi_1 of the base
+    a bundle associated to a pi_1-representation has a LOCALLY CONSTANT connection
+    => F = 0 identically, hence F^2 = 0
+
+⇒ ***The absence of an $F^2$ term is not an oversight and not a gap. **It is what "the bundle above is flat" MEANS
+— entailed by delivering colour through a branching, not assumed alongside it.****
+
+**⓷ WHICH MAKES P14's PHRASE EXACT RATHER THAN APT.** *"it **quantises** and does not **couple**": monodromy
+quantises — discrete holonomy gives exact selection rules — and curvature couples. **Holonomy without curvature.**
+And the exactness of the selection rules and the absence of force are the SAME fact.*
+
+**⓸ SO `PO-5` IS NOT WAITING ON A TERM.** ***Any mechanism giving colour as a covering monodromy gives it flat, so a
+coupling requires colour to arrive some OTHER way. That names what would have to change: not the ledger, the
+DELIVERY.***
+
+**⛭ THE RULE:** ***when something is "missing", ask whether the construction ENTAILS its absence. **A gap and an
+entailed absence look identical in a register and are opposite in kind** — one is waiting for work, the other is a
+result.***
+
 ### Revision r2805 — 2026-08-12 (main line). **p0's INFERENCE IS SOUND AND SCOPED — $1/\sqrt3$ falls outside it.**
 
 **⓵ THE PREMISE IS A TWO-SCALE ARGUMENT.** *"neither real form supplies a second invariant and **a dimensionless

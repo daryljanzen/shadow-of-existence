@@ -310,3 +310,5 @@ r2804  CLAIMED    does PO-2s upgrade give PO-5 a foothold? Test the root triple 
 r2804  COMPUTED    PO-2s triple is FORCED (Nariai roots over alpha) -- a real foothold for PO-5, on the wrong wall.
 r2805  CLAIMED    PO-5: read p0s inference. Does it close over a non-curvature dimensionless quantity?
 r2805  COMPUTED    p0s inference is SOUND and scoped -- the mass cancels (K=72/alpha^4) and 1/sqrt3 survives outside it.
+r2806  CLAIMED    PO-5: WHICH bundle is flat, and is it the one a coupling would live on?
+r2806  COMPUTED    the missing F^2 is ENTAILED -- colour arrives by covering monodromy, which is flat by construction.
