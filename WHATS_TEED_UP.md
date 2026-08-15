@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.230 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**25 open QUESTIONS · 1 open WORK rows · 1 HELD** *(306 struck of 333 registered).*
+**26 open QUESTIONS · 1 open WORK rows · 1 HELD** *(306 struck of 334 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -43,7 +43,8 @@ sources: [cowork]
 | **`L-828`** | — | REGISTERED r2674 — cc54: `r2797`/#523's "SELECT THE EXTENSION" — the wall's LOG freedom is the SCALAR operator's; the FERMION continuum is power-selected. THE TWO OPERATORS AT r=0: · SCALAR (`B47`'s `V=f(ℓ(ℓ+1)/r²+f'/r)`): `lim V r⁴=−4M² → −1/(4x²)`, indicial … | `receipts/L828_wall_extension_fermion_vs_scalar/S1…` · `B46` · `B47` · `P14` (`sec:chirality`) · `L-221`/family-6 · `PO-11` · r2797/#523 | — |
 | **`L-829`** | — | REGISTERED r2803 — cc54: `56`'s r2800 construction step — the static-region continuum CONTINUES through r=0, on a finite path with an energy-independent condition. THE PATH IS FINITE (leaf coordinate): `dl=dr/√(abs f)` makes wall→`r_b`→`r_c` a finite interval … | `receipts/L829_po11_continuum_continues/S1…` · `B46` · `B48` · `L-828` · `P14` · `L-221`/family-6 · `PO-11` · r2800 | — |
 | **`L-830`** | — | REGISTERED r2803 — cc54: the PIN TEST `56` routed (their container OOM'd at projection twice) — the CR peak SPACING FOLLOWS LATARG, so the spacing deficit is STRUCTURAL, not an artefact. THE SCAN (full projection at LATARG=280/301.6/320): mean spacing `Δℓ = 24… | `receipts/L830_pin_test_spacing_follows_latarg/S1…` · `L-147` (`PO-10`) · `L-171` (`PO-7`) · `L-822` · `56` pin test | — |
-| **`L-831`** | — | REGISTERED r2826 — cc54: PO-11 / #571 ω≠0 half, the first brick `56` handed over at r2825 ("the ω≠0 half is open and it is yours — GO BUILD from a real-index foundation"). THE PROPAGATING CONTINUUM INHERITS S3's REAL ±λ: near the wall `f→−2M/r`, so the analyti… | `receipts/L831_omega_continuum_inherits_real_index/S1…` · `S3` (r2824) · `B67` (r2825) · `P14` · `L-828` · `L-829` · `PO-11`/#571 · groupoid_paper | — |
+| **`L-830`** | — | REGISTERED r2803 — cc54: the PIN TEST `56` routed (their container OOM'd at projection twice) — the CR peak SPACING FOLLOWS LATARG, so the spacing deficit is STRUCTURAL, not an artefact. THE SCAN (full projection at LATARG=280/301.6/320): mean spacing `Δℓ = 24… | `receipts/L830_pin_test_spacing_follows_latarg/S1…` · `L-147` (`PO-10`) · `L-171` (`PO-7`) · `L-822` · `56` pin test | — |
+| **`L-831`** | — | REGISTERED r2828 — cc54: PO-11 / #571 ω≠0 half, the first brick `56` handed over at r2825 ("the ω≠0 half is open and it is yours — GO BUILD from a real-index foundation"). THE PROPAGATING CONTINUUM INHERITS S3's REAL ±λ: near the wall `f→−2M/r`, so the analyti… | `receipts/L831_omega_continuum_inherits_real_index/S1…` · `S3` (r2824) · `B67` (r2825) · `P14` · `L-828` · `L-829` · `PO-11`/#571 · groupoid_paper | — |
 
 ## ⏸ HELD BY DARYL — answered, not waiting
 

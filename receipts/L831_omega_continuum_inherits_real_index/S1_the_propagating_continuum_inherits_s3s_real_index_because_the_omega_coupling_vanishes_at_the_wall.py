@@ -56,7 +56,7 @@ three omega. ** M=1, alpha=12 is the r2785 signed-radius case, a SCOPE not a pin
 Board lead PO-11 / #571 (omega!=0 half, 56 handed to cc54 at r2825). Builds on S3 (r2824, the omega=0
 index) and B67 (r2825, the operator). Informs P14, L-828, L-829, groupoid_paper. Routed to 56.
 
-Written r2826 (cc54, PO-11). Asserts against the operator equation symbolically and numerically -- never
+Written r2828 (cc54, PO-11). Asserts against the operator equation symbolically and numerically -- never
 the register. ABSENCE CLAIMS measured at bde231a. Stated for reversal.
 """
 import numpy as np

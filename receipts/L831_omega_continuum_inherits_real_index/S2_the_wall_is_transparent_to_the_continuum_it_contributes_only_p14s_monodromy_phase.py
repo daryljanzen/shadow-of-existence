@@ -14,7 +14,7 @@ wall is a half-loop in ell (ell -> e^{i pi} ell), which sends r -> omega r EXACT
 A mode ~ r^{+/-lambda} transported across therefore returns multiplied by omega^{-/+lambda}.
 
 ** WHY THIS IS THE CONTINUUM'S TRANSMISSION AND NOT ONLY THE ZERO MODE'S. ** P14 states the monodromy
-for the bound |r|^{+/-lambda} power. S1 (r2826) showed the omega!=0 continuum carries the SAME real
+for the bound |r|^{+/-lambda} power. S1 (r2828) showed the omega!=0 continuum carries the SAME real
 +/- lambda leading index at the wall (the omega-coupling i omega/sqrt f = omega sqrt(r/2M) vanishes
 there), with omega a subleading sqrt(r) regular perturbation. So the leading near-wall connection -- the
 part the monodromy acts on -- is the same omega^{-/+lambda} for every omega. The continuum crosses r=0
@@ -50,11 +50,11 @@ still owed; and the monodromy's lambda mod 3 dichotomy is exactly that residue, 
 near-wall linearity of log|P1| in log r for the analytic-sqrt(f) pair at three omega. ** M=1, alpha=12
 is the r2785 signed-radius case, a SCOPE not a pinned point.
 
-Board lead PO-11 / #571 (omega!=0 half). Builds on S1 (r2826, the real-index continuum), S3 (r2824),
+Board lead PO-11 / #571 (omega!=0 half). Builds on S1 (r2828, the real-index continuum), S3 (r2824),
 B67 (r2825). Uses P14's monodromy (sec:chirality). Informs P14, groupoid_paper, PO-5 (r2823). Routed
 to 56.
 
-Written r2827 (cc54, PO-11). Asserts against P14's geometry and the operator equation symbolically and
+Written r2829 (cc54, PO-11). Asserts against P14's geometry and the operator equation symbolically and
 numerically -- never the register. ABSENCE CLAIMS measured at 472272c. Stated for reversal.
 """
 import numpy as np
