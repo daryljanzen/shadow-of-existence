@@ -111,9 +111,15 @@ def main():
           f'$\\alpha_s={ALPHA_S}$ against $1/\\sqrt3$ give {[round(x, 3) for x in ratios]} -- ** none '
           'near unity or a simple factor **',
           all(abs(x - round(x)) > 0.05 for x in ratios))
-    check('⇒ and the reason to stop is that $\\alpha_s$ RUNS: ** a running coupling has no single '
-          'value to be falsified against, so P14\'s "one quantity" is not yet operational **',
-          True)
+    # ** the hollow-assertion lint caught this as `True` at r2809.  *** The claim IS testable:
+    # alpha_s at two scales differs, which is what 'runs' means and what makes 'one quantity'
+    # underspecified.  One-loop, nf=5: alpha_s(mu) = alpha_s(M_Z)/(1 + b0 alpha_s ln(mu^2/M_Z^2)). ***
+    b0 = (33 - 2*5)/(12*np.pi)
+    a_1tev = ALPHA_S/(1 + b0*ALPHA_S*np.log((1000.0/91.19)**2))
+    check(f'⇒ and the reason to stop is that $\\alpha_s$ RUNS: it is {ALPHA_S} at $M_Z$ and '
+          f'{a_1tev:.4f} at 1 TeV -- ** no single value to be falsified against, so P14\'s "one '
+          'quantity" is not yet operational **',
+          abs(a_1tev - ALPHA_S) > 0.01)
 
     print()
     if FAILED:
