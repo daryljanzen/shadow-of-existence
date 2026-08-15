@@ -67,7 +67,7 @@ int W dl = lambda ln r" is corrected here: the |r|^{+lambda} is right, but it co
 through f=0" as remaining -- shown here to be a non-issue for the exponent, since sqrt f factors out of
 the operator and r^{+/- i lambda} is not a solution). Informs P14, L-828, L-829 S1, B3. Routed to 56. **
 
-Written r2821 (cc54, #571). Asserts against the operator equation symbolically and numerically -- never
+Written r2824 (cc54, #571). Asserts against the operator equation symbolically and numerically -- never
 the register. Stated for reversal.
 """
 import numpy as np

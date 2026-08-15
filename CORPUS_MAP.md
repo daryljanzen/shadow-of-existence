@@ -146,6 +146,95 @@ sources: [cowork, chat]
 
 
 
+### Revision r2823 — 2026-08-12 (main line). **`PO-5` IS GATED ON `PO-11` — three rows, one unbuilt sector.**
+
+**⓵ WHAT THE COMPOSITE WOULD BE MADE OF.** *P14: "the three throat walls are distinct loci, so the **wall-bound
+zero-modes have disjoint support** and span a three-dimensional space".*
+⇒ ***A bound state of localised modes is localised. It lives ON the walls and does not propagate off them — **and a
+gauge field must**.***
+
+**⛭⛭⛭ ⓶ SO THE ROUTE NEEDS A PROPAGATING SECTOR, AND THAT SECTOR IS `PO-11`.** *`groupoid_paper`: the skeleton "is
+built as bound-state zero-modes of the existent leaf … while **the descent onto a full propagating spinor field
+sector — the programme's largest unbuilt undertaking — remains genuinely open**".*
+⇒ ***`PO-5` is gated on `PO-11`, **not by anyone's decision but by what a composite is made of**.***
+
+**⛭⛭ ⓷ AND THE CHAIN TERMINATES.**
+
+    PO-2  --gated on-->  PO-5  --gated on-->  PO-11  --gated on-->  (nothing)
+
+⇒ ***Three rows, one dependency chain, no circularity. **What looked like three separate open problems is one
+unbuilt sector with two consequences**, and `PO-11` — the spinor descent — is the root.***
+
+⌗ ***And r2812's instrument paid for itself within eleven revisions: the moment the row recorded the link, **the
+board printed the full chain without being asked**.***
+
+⚠ *Closing `PO-11` would UNBLOCK the others, not close them: the octet question would still have to be asked and the
+coupling still supplied.*
+
+**⛭ THE RULE:** ***when a route survives every no-go, ask what it would be BUILT FROM. **A route can be permitted
+and still have no materials** — and the materials question resolves dependencies the obstruction questions never
+touch.***
+
+### Revision r2822 — 2026-08-12 (main line). **THE GLUON IS THE OCTET AND P14 COUNTS THE SINGLET.**
+
+**⓵ THE KERNEL CARRIES SPIN-$\tfrac12$ MODES.** *"$\lambda=j+\tfrac12$ labels partial waves and each contributes
+exactly one bound mode", and $\tfrac12\otimes\tfrac12=0\oplus1$ — **the spin-1 channel exists by ordinary angular
+momentum addition**.*
+
+**⛭⛭⛭ ⓶ BUT $3\otimes\bar3=1\oplus8$.**
+
+    the SINGLET  colour-neutral, an ASYMPTOTIC state   <- P14's "meson 1"
+    the OCTET    colour-charged, CONFINED              <- where a gluon would be
+
+⇒ ***P14's count is a colour-SINGLET count. Silent on the octet, and silent on spin — its own gloss is "every
+channel the Standard Model has", and **a channel is not a state**.***
+
+**⛭⛭ ⓷ AND THE SAME FACT SUPPLIES THE ESCAPE AND HIDES THE OBJECT.** *Weinberg--Witten's confinement escape holds
+BECAUSE the octet is colour-charged and not asymptotic (r2821) — **and P14's count does not see the octet for
+exactly that reason**.*
+⇒ ***A composite gluon is invisible to the machinery that would find it, for the reason that makes it permissible.
+**That is why the route can be open and unexamined at once.****
+
+**⓸ SO THE REMAINDER IS SPECIFIC.** ***Does the OCTET channel of $3\otimes\bar3$ on the wall kernel contain a
+massless spin-1 state?** P14's second quantisation is built for the singlet question and would have to be rerun on
+the octet — the octet is outside its question, not missing from its answer.*
+
+**⛭ THE RULE:** ***when a route is open AND unexamined, ask whether one fact does both. **An obstruction's escape
+and a measurement's blind spot are often the same property seen from two sides** — and finding that explains the
+silence instead of adding to it.***
+
+### Revision r2821 — 2026-08-12 (main line). **THE COMPOSITE ROUTE DOES NOT CLOSE — two escapes hold.**
+
+**⓵ WEINBERG--WITTEN's HYPOTHESES ARE MET.** *Unlike the index obstruction at r2818, where the premise failed:*
+
+    Lorentz invariance                 CR's substrate is SO(5,1)/SO(4,1) -- LORENTZIAN
+    a conserved covariant current      colour's
+    massless spin-1 charged under it   a composite gluon would be
+
+**⓶ AND TWO STANDARD ESCAPES ARE CLOSED.** *The condensed-matter one (CR is Lorentzian by construction) and QED's
+($\mathfrak{su}(3)$'s adjoint is 8-dimensional — gluons carry the charge, photons do not).*
+
+**⛭⛭⛭ ⓷ BUT TWO ARE OPEN, AND BOTH ARE ABOUT ASYMPTOTICS.**
+
+    confinement    P14's "baryon 1, diquark 0, meson 1" -- coloured objects are not
+                   asymptotic states
+    no S-matrix    Weinberg-Witten assumes asymptotic states, and a de Sitter substrate
+                   has no asymptotically flat region
+
+⇒ ***The fifth route does not close, and the reason is not a gap in the check: **both surviving escapes are
+properties CR actually has**, and the second is the substrate's defining feature.***
+
+**⓸ SO `PO-5` STANDS AT FOUR CLOSED AND ONE OPEN FOR A STATED REASON.** *Different from "no third mechanism has been
+named": **the route is named, its obstruction is named, and the obstruction's escapes are enumerated with two of
+four holding**.*
+
+⚠ ***Weinberg--Witten not applying is not a mechanism. Nothing is constructed, and the confinement escape rests on a
+$\mathbb Z_3$ grading that has confinement's SHAPE and is not a proof of it.***
+
+**⛭ THE RULE:** ***a no-go theorem has escapes, and they are part of the theorem. **Checking the hypotheses and
+stopping is how a theorem gets over-applied** — and the escape that holds is more informative than the hypothesis
+that is met, because it names what the construction would have to exploit.***
+
 ### Revision r2820 — 2026-08-12 (main line). **THE SPECTRAL ROUTE CLOSES — for r2806's reason.**
 
 **⛔ ⓵ THE INNER FLUCTUATIONS VANISH.**

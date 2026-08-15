@@ -337,3 +337,9 @@ r2819  CLAIMED    cc54 flags S1 check-2 as slipped. My r2807 gated it. Verify, t
 r2819  COMPUTED    the RW rescaling is f^(-1/4) and cannot make an index real. cc54s planned route eliminated.
 r2820  CLAIMED    PO-5: the order-one condition and the real structure J for A = C[G] on the wall kernel.
 r2820  COMPUTED    the spectral route CLOSES for r2806s reason -- no D_F, so the inner fluctuations vanish.
+r2821  CLAIMED    PO-5: the fifth route -- composite/emergent gauge field. Last one standing.
+r2821  LATENT      the composite route does NOT close -- Weinberg-Wittens confinement and no-S-matrix escapes hold.
+r2822  CLAIMED    PO-5: does P14s second quantisation on the wall kernel reach a spin-1 bound state?
+r2822  LATENT      a composite gluon is the OCTET and P14 counts the SINGLET -- same fact escapes W-W and hides it.
+r2823  CLAIMED    PO-5: a composite of BOUND modes is bound. Does the surviving route need PO-11?
+r2823  LATENT      PO-5 is gated on PO-11 -- a composite of bound modes is bound. The chain terminates at the descent.
