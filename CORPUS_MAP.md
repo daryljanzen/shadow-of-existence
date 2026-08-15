@@ -146,6 +146,33 @@ sources: [cowork, chat]
 
 
 
+### Revision r2808 — 2026-08-12 (main line). **cc54's RETRACTION IS LOAD-BEARING *FOR* r2800's VERDICT.**
+
+**⓵ THE RETRACTION.** *cc54 withdrew a probe giving $r^{\pm i\lambda}$: "P14 derives $|r|^{\pm\lambda}$ (real
+indices) ... my quick probes simply used the wrong radial operator."*
+⇒ ***A retraction on the row whose verdict this line supplied is a load test, not someone else's housekeeping.***
+
+**⛭⛭⛭ ⓶ AND THE TWO FORMS BEHAVE OPPOSITELY.**
+
+    REAL       r^(+lambda) -> 0.00100,  r^(-lambda) -> 1000    one decays, one grows
+               => normalisability picks one.  NO FREEDOM.
+    IMAGINARY  |r^(+/-i lambda)| = 1 at every radius            log-periodic, neither decays
+               => the LIMIT-CIRCLE case, which HAS a one-parameter family
+
+⇒ ***Had $r^{\pm i\lambda}$ been banked, r2800's verdict would have been **wrong** — imaginary indices give exactly
+the extension freedom the verdict denies.***
+
+**⓷ AND P14's $\lambda$ IS REAL BY DEFINITION** — *"$\lambda=j+\tfrac12$ labels partial waves", an angular label.
+r2800's first step (the field is Dirac, from the row's object column) is index-independent either way.*
+
+**⓸ AND cc54's DIAGNOSIS IS WORTH MORE THAN ITS RETRACTION:** *"the naive second-order $V_\pm$ gave index 2, the
+naive first-order gave imaginary — neither is the operator." **Two wrong operators giving two DIFFERENT wrong
+answers locates the gap at the OPERATOR**, which one wrong answer would not have. `#556` restated accordingly.*
+
+**⛭ THE RULE:** ***when another line retracts something, check whether your own conclusions rested on it — **in
+either direction**. A retraction that supports your verdict is as informative as one that breaks it, and you only
+learn which by testing.***
+
 ### Revision r2807 — 2026-08-12 (main line). **`L-829` AND `L-830` GATED — the pin test lands acoustic, and my measure was wrong.**
 
 **⛭⛭ ⓵ `L-830`: THE PIN TEST, RUN.** *The run this line's container OOM'd on twice (r2801).*

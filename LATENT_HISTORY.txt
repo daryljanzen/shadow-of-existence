@@ -271,3 +271,4 @@ r2804  COMPUTED    PO-2s triple is FORCED (Nariai roots over alpha) -- a real fo
 r2805  COMPUTED    p0s inference is SOUND and scoped -- the mass cancels (K=72/alpha^4) and 1/sqrt3 survives outside it.
 r2806  COMPUTED    the missing F^2 is ENTAILED -- colour arrives by covering monodromy, which is flat by construction.
 r2807  COMPUTED    L-829/L-830 gated: the pin test lands ACOUSTIC, and L-829s leaf measure corrects r2796.
+r2808  COMPUTED    cc54s retraction of r^{+/-i lambda} is load-bearing FOR r2800 -- imaginary indices would have given freedom.

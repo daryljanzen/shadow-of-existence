@@ -313,3 +313,6 @@ r2805  COMPUTED    p0s inference is SOUND and scoped -- the mass cancels (K=72/a
 r2806  CLAIMED    PO-5: WHICH bundle is flat, and is it the one a coupling would live on?
 r2806  COMPUTED    the missing F^2 is ENTAILED -- colour arrives by covering monodromy, which is flat by construction.
 r2807  COMPUTED    L-829/L-830 gated: the pin test lands ACOUSTIC, and L-829s leaf measure corrects r2796.
+r2808  CLAIMED    PO-5: does the corpus admit any delivery of colour OTHER than a covering monodromy?
+r2808  CLAIMED    cc54 retracts its r^{+/-i lambda}. Does my r2800 verdict rest on it?
+r2808  COMPUTED    cc54s retraction of r^{+/-i lambda} is load-bearing FOR r2800 -- imaginary indices would have given freedom.
