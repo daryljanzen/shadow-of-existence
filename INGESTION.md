@@ -296,3 +296,5 @@ r2794  LATENT      r2793s R~R discrepancy WITHDRAWN -- degree-4 homogeneous, two
 r2795  LATENT      L-822 merged: the CR residual is ACOUSTIC STRUCTURE -- confirms r2789 independently.
 r2796  CLAIMED    PO-11: attempt the continuum across the two signature changes. Nobody has tried.
 r2796  COMPUTED    PO-11: ONE matching not two -- the inner horizon is infinitely far, the wall is finite.
+r2797  CLAIMED    PO-11: the two Frobenius indices at r=0. P14s zero-mode fixes one.
+r2797  COMPUTED    the wall is EXACTLY CRITICAL -- V -> -1/(4x^2), double root at s=1/2, sqrt(x) and sqrt(x)log x.
