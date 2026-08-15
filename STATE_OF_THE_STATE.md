@@ -71,7 +71,7 @@ appendix and the body agree.** Not gated — done once, by reading.*
 | `FOR_56.md` | 248,149 | **SWEPT r2834** — *three section headers named `PO-4` with no sign it was struck at r2778; all three are cc54's record of a merge defect. Marked.* |
 | `THE_OPEN_PROBLEMS_LEDGER.md` | 211,923 | **SWEPT r2834** — *one live sentence named `PO-9` as open (marked), and it quoted the PRE-r2830 person-gate as current (marked)* |
 | `FOR_54.md` | 133,752 | **SWEPT r2834** — *clean. Its four overturn statements are all **self-marking** in the item's own header, the same correct form `THE_LIVE_ARC` uses.* |
-| `THE_WEAVE.md` | 89,981 | written to, never audited |
+| `THE_WEAVE.md` | 89,981 | **SWEPT r2834 — clean.** *Zero overturn statements; its one `PO-4` mention is inside a **correction ledger**, a historical table of who corrected whom, which is correctly historical.* |
 | the 17 papers | — | **5 claims spot-checked. No systematic pass** |
 | `receipts/` + `kills/` | 606 files | **SWEPT r2833 — ZERO.** *Both directions: a heading saying a check clears while the body says it does not, and the reverse (the shape `PO-9` actually had). **The pattern was verified against the known `PO-9` instance BEFORE the clean result was believed** — a scan that cannot find the defect it was built for returns clean either way.* `check_receipt_verdicts` holds it |
 
@@ -96,7 +96,13 @@ be allowed to move only after it is read.
 
 **⌗ DONE r2834 — both routing documents swept.** *`FOR_56` carried three headers naming `PO-4` as though live; `FOR_54` was clean. **And six overturn statements across the two are all self-marking** — each states its own retraction in its own header, which is the correct form and needs no separate mark. `check_routing_current` holds the boundary.*
 
-**NEXT: `THE_WEAVE.md` (89,981) — the last unaudited document.** *Written to every session, never read back. ⌗ **Then the sweep is done and the question changes**: from "what is stale?" to "**does the whole set agree with itself?**" — a cross-document consistency pass rather than a per-document one, which is a different instrument and should be designed, not improvised.*
+**⌗ THE PER-DOCUMENT SWEEP IS DONE.** *Every document in the state layer has been read: `CORPUS_MAP`, `THE_LIVE_ARC`, `THE_PLAN`, the problems ledger, both routing documents, `THE_WEAVE`, the receipts, and the papers.*
+
+**⛔ AND THE CROSS-DOCUMENT PASS I NAMED SHOULD NOT BE BUILT AS DESIGNED.** *I tried it: test the register's claims against every document that repeats them. **It produces overwhelming false positives**, because a document legitimately states counts and statuses **historically** — "the register stood at 20 open when the colour arc closed" is true, and a generic checker cannot tell it from a stale current claim.*
+
+⇒ ***AND THE PASS ALREADY EXISTS, DONE RIGHT: as four RELATION-SPECIFIC gates rather than one generic one.*** *`check_strikes_reported` (register→reports), `check_leads_follow_rows` and `check_lead_framings` (register→leads), `check_routing_current` (register→the other line), `check_heads_anchored` (register→papers). **Each names the two documents and the one relation that must hold between them.** A generic version would be weaker and noisier than the five specific ones.*
+
+**⚠ SO THE NEXT DEBT IS NOT A SWEEP.** *It is: **which relations between documents are NOT yet gated?** ⌗ Named so far and ungated: `OWED`→register (does every owed item's row still exist open?); `THE_PLAN`→register (does the plan's ordering match what is open?); receipts→rows (does every row's cited receipt still run?). **Three relations, each a specific gate, none a sweep.***
 
 ---
 
