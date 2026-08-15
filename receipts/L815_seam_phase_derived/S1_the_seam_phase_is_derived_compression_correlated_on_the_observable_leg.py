@@ -157,7 +157,7 @@ def main():
     print('  a compression correlated with the well = CRPHI=0. Bracket-checked against the LambdaCDM')
     print('  control\'s own adiabatic IC. The {0,pi} band collapses to 0.878, the disagreement is pinned at')
     print('  0.615 (the corpus\'s primary value), and CRPHI=pi (0.408, a rarefaction) is anti-adiabatic and')
-    print('  inadmissible. F5 unsoftened: cc54 supplied the derivation; the verdict is Daryl\'s. One')
+    print('  inadmissible. F5 unsoftened: cc54 supplied the derivation; the verdict is recorded here. One')
     print('  assumption flagged: Phi does not flip sign across the onset.')
     print()
     return 0

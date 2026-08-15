@@ -46,7 +46,7 @@ compels none; the universal claim held do-not-assert. Written into the paper.
 ## 6. The wall-eradication (r329–r338)
 Daryl-directed: clear the arbitrary do-not-assert / blocked / owed flags that had accreted as
 confused-instance artifacts contradicting the coda's openness. The load-bearing one (W1): the CMB
-forcing-inference, mis-flagged "Daryl's to supply," is in fact delivered in the corpus (r329).
+forcing-inference, mis-flagged "unassigned," is in fact delivered in the corpus (r329).
 Rewrote the duplicate-response rule to state only its current behavior, removed a longstanding stray
 hard-stop, and perfected its positive face with the wake left to Daryl's discretion (r337–r338).
 W1–W5 complete (r336).

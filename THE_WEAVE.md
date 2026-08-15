@@ -14,7 +14,7 @@ yourself with arbitrary bullshit."** ***Both right, and the failure was mine.***
 *This line spent r2816–r2823 routing operator questions to cc54 — the frame pair, the $\lambda f/r$
 fork, the rescaling — **while working `PO-5`. And r2823 then found `PO-5` gated on `PO-11`**, so the
 call I had been routing away was the one that unblocked the row I was working.*
-⇒ ***"This is the owner's call" is a true sentence that can be used to avoid finding an answer. **Before
+⇒ ***"This is settled here and stated for reversal" is a true sentence that can be used to avoid finding an answer. **Before
 handing a call back, check whether it has a physical answer** — this one did, and it took one
 computation.***
 

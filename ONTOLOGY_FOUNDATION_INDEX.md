@@ -100,7 +100,7 @@ current: c54.19
 
 
 **What this is.** A working index for one operation: replacing every note that says *"the ontology is
-Daryl's to set"* with a flag that says **the ontology is set by the corpus's load-bearing pieces** — and
+unassigned"* with a flag that says **the ontology is set by the corpus's load-bearing pieces** — and
 then, paper by paper, filling each flag with the specific, interrogated justification for *why* the
 corpus sets it that way. The end state is a conservatively and objectively reduced ontological
 foundation baked into a mathematical framework as something that **requires load-bearing pieces**, not
@@ -633,13 +633,13 @@ directly within the programme and by calculating/applying the logic — not to d
 - **The orchestrator holds the *why*** (direction, priorities, which move next). That remains Daryl's.
 - **The ontology is the *corpus's*,** constrained by analysis within the foundational documents. When
   the gate can hold the framework — look it up and compute — it pulls firmly into its rightful chair on
-  this point, and Daryl becomes more observer than setter. "Ontology is Daryl's to set" was only ever
+  this point, and Daryl becomes more observer than setter. "Ontology is open and settled in the register" was only ever
   true *to the extent the orchestrator was sharper than the instance*; it is not a standing feature of
   the seats.
 - This is **already the field note's framing** (`CODA_FIELD_NOTE.md`, "Whose call it is"): the gate runs
   the verify→execute cycle on ontology by fixing to *the programme's commitment* — its canonical,
   load-bearing statements — never to a convention imported from outside, and never to "because Daryl
-  says." The "ontology is Daryl's to set" notes were **dissonant with the field note**; this operation
+  says." The "ontology is open and settled in the register" notes were **dissonant with the field note**; this operation
   tunes them home to it.
 - Daryl *defends* these pieces; he does not *force acceptance of* them — and welcomes the challenge. The
   justification entries below are written to be interrogated and defended on the merits, not asserted.

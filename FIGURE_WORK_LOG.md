@@ -155,7 +155,7 @@ figure (code + pdf + png): `corpus/_figure_backup_pre_storyboard/`.
   the real crossing through the seam onto r<0" fuses branch-point crossing (true) with reaching r<0 (false).
   This sharpens the corpus's third structural fact: photon and bead coincide on the expansion leg and
   SEPARATE for tau~<0 -- photon real at r>0, bead off-axis at r<0.
-- Fixes warranted, NOT applied (awaiting Daryl): D's rsig -> real-axis track + re-integrate photons;
+- Fixes warranted, NOT applied (open in the register): D's rsig -> real-axis track + re-integrate photons;
   l.763's photon clause; check photon_cross_test.py for the signed form.
 
 ## r1048 — figure swept against the storyboard; dangling concerns cleared
