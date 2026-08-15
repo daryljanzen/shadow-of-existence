@@ -302,3 +302,13 @@ r2798  LATENT      c54.223-228 merged. C41 collision resolved by rename; three g
 r2799  LATENT      r2790s framing WITHDRAWN -- the CR r_s is FITTED by brentq, not computed. The pin test is the live question.
 r2800  LATENT      PO-11 verdict: the field is DIRAC, so L-828s fermion branch applies and the matching is DETERMINED.
 r2801  LATENT      the pin test attempted twice more and killed at projection both times. Resource wall, routed.
+r2802  CLAIMED    are the two backlogs actually blind-fixable? I claimed not without testing.
+r2802  INSTRUMENT  both not-blind-fixable backlogs cleared: 41 pinned from git, arc breaks 98 -> 33.
+r2803  CLAIMED    PO-2: does level (3)s do-not-assert still guard anything, now P14 exhibits the map?
+r2803  COMPUTED    PO-2s gate was a stale taxonomy sentence. Levels (1) and (2) gate nothing; only (3) waits on PO-5.
+r2804  CLAIMED    does PO-2s upgrade give PO-5 a foothold? Test the root triple as a coupling candidate.
+r2804  COMPUTED    PO-2s triple is FORCED (Nariai roots over alpha) -- a real foothold for PO-5, on the wrong wall.
+r2805  CLAIMED    PO-5: read p0s inference. Does it close over a non-curvature dimensionless quantity?
+r2805  COMPUTED    p0s inference is SOUND and scoped -- the mass cancels (K=72/alpha^4) and 1/sqrt3 survives outside it.
+r2806  CLAIMED    PO-5: WHICH bundle is flat, and is it the one a coupling would live on?
+r2806  COMPUTED    the missing F^2 is ENTAILED -- colour arrives by covering monodromy, which is flat by construction.

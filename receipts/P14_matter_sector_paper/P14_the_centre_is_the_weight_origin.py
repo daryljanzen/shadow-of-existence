@@ -54,7 +54,11 @@ register bookkeeping rather than paper claims -- which two open leads name the s
 the whole-lap "tower" is not a tower (a statement about the fermion-sector document's F-6, not
 about this paper), and the strikes that follow.  ** This copy carries the paper-facing subset:
 every assertion here appears in the origin verbatim, and nothing here is absent from it. **  The
-subset was taken so the reproducibility layer does not import the lead register."""
+subset was taken so the reproducibility layer does not import the lead register.⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT c01f56c** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
+"""
 import itertools
 import sympy as sp
 

@@ -52,6 +52,10 @@ is $R$ ** -- they act on different objects (root labelling versus spinor grading
 would need proving.  ** Not that a mod-2 index would deliver the bridge **: r2568's standing limit holds
 -- *** a $\\mathbb{Z}_2$ invariant can obstruct or permit but cannot by itself deliver four states. ***
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT 8631387** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2604.  Stated for reversal.
 """
 import glob

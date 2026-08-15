@@ -233,8 +233,27 @@ the correction is an ADDITION, not a re-ordering.*** *A better-typed candidate f
 was the row's stated blocker and it is gone. (ii) The **sign** $2{+}1$ tracks the parity of $D$ exactly
 ($2{+}1$ at even $D$, $2{+}2$ at odd), so it is **the mass-parity in another register** rather than a second
 fact. (iii) **The conflation itself is a finding**: the corpus has two $2{+}1$s and this catalogue had never
-distinguished them.* ***None of the three licenses a verdict on the lead, and the three levels — (1) skeleton
-grounded, (2) resemblance do-not-assert, (3) identification walled — stand exactly as r693 set them.***
+distinguished them.* ***None of the three licenses a verdict on the lead.***
+
+⛭⛭⛭ **BUT THE THREE LEVELS NO LONGER STAND AS r693 SET THEM — UPDATED r2803 (56), and this sentence was 170
+revisions stale.** *r2629–r2633 moved two of them and this catalogue had not heard of any of it:*
+
+* **(1) SKELETON — GROUNDED AND NOW COMPUTED.** *r2631: the root triple **is** the $f=0$ locus,
+  $\{1/\sqrt3,\ 1/\sqrt3,\ -2/\sqrt3\}$, sum zero.* ⌗ *r2803 sizes it honestly: **the zero sum is
+  arithmetic, not coincidence** — $f=0$ is a DEPRESSED cubic ($r^3/\alpha^2-r+2M=0$, no $r^2$ term), so the
+  roots sum to zero for every $M$ and $\alpha$. **That is a better ground than a coincidence and it
+  distinguishes nothing on its own**: the content is the $1{:}1{:}{-}2$ PATTERN, a degeneracy statement.*
+* ✔ **(2) RESEMBLANCE do-not-assert — PASSED, AND SAYING SO IS THE POINT.** *r2629 turned the resemblance
+  into a CONSTRUCTION; r2633 gave the reason ("the three carry one mass parameter and are identical in
+  content"). **A "resemblance do-not-assert" guards against reading a similarity as a fact, and when the
+  similarity becomes a construction the hold has nothing left to guard.** It was calibrated to an object
+  that no longer exists.*
+* ⚠ **(3) IDENTIFICATION — STILL WALLED, BUT NARROWER THAN THE WORD.** *r2632: P14 **exhibits** the map,
+  roots → hinges → walls → modes. **The STRUCTURAL identification is exhibited; what remains walled is the
+  PHYSICAL one** — that the roots ARE colour charge, as against carrying a structure isomorphic to it.*
+
+⇒ ***SO THE GATE THIS DOCUMENT HOLDS IS ONE LEVEL, NOT THREE.*** *`PO-2` remains gated on `PO-5` for level
+(3) alone — whether a coupling can arise at all — and **levels (1) and (2) gate nothing**.*
 *(`P03_step3_refused`.)*
 
 ---
@@ -298,7 +317,9 @@ $$\textbf{So the conjunction — a zero-sum } (D{-}1)\textbf{-tuple WITH a parit
 
 **⌗ AND IT MOVES A TAG, which is what this catalogue exists to do.** *The discriminator set at the head of this document:* **"A bare number-match ('three = three') is numerology. A **structural mechanism** that forces the number *and* a symmetry/relation/further consequence has teeth."** *The mechanism **forces the number** ($D-1$), **forces the symmetry** (the parity, at even $D$), and **carries a further consequence** (the conjunction at one dimension).* ⇒ ***the geometric side of the $S_3\times Z_2$ row is no longer an alignment held at do-not-assert but a mechanism with a stated reason. Item 0's fundamental ellipse — the $A_2$ norm locus — is a degree-3 object because the cut is four-dimensional.***
 
-**⛔ AND THE SECOND HALF IS UNTOUCHED — the three levels stand exactly as r693 separated them.** *"…and does that reason bridge to $\su(3)$?"* **It does not, and nothing here helps it.** *What the dimension excursion did to colour is recorded in `STATE_matter_sector`: the obstruction **moved** — from "$\su(3)$ cannot act internally at all" (true at $\dS_5$, where a cut has no normal directions to rotate) to **"what reduces the normal structure group $\so(6)\to\su(3)$?"** — and a rise leaves colour **permitted**, not **required**, which is the case the criterion of necessity condemns.* ⇒ **(1) skeleton grounded · (2) resemblance do-not-assert · (3) identification WALLED — all three unchanged. Nothing here licenses the hat.**
+**⛔ AND THE SECOND HALF WAS UNTOUCHED WHEN THIS WAS WRITTEN — ⛭ SUPERSEDED r2803: levels (1) and (2) have
+since moved (r2629–r2633), and only level (3), the PHYSICAL identification, still gates. See the updated
+three-level statement above.** *"…and does that reason bridge to $\su(3)$?"* **It does not, and nothing here helps it.** *What the dimension excursion did to colour is recorded in `STATE_matter_sector`: the obstruction **moved** — from "$\su(3)$ cannot act internally at all" (true at $\dS_5$, where a cut has no normal directions to rotate) to **"what reduces the normal structure group $\so(6)\to\su(3)$?"** — and a rise leaves colour **permitted**, not **required**, which is the case the criterion of necessity condemns.* ⇒ **(1) skeleton grounded · (2) resemblance do-not-assert · (3) identification WALLED — all three unchanged. Nothing here licenses the hat.**
 
 **⚠ AND THE COUNTING TRAP, quoted from the ledger that owns it:** *`FIGURE` ⊢54 — "at Nariai there are **two** rulings and **two** colliding roots. **The count matches and the match means nothing.** … **A count is not a map.**"* ***Every dimension statement above descends from ONE fold. They are one fact wearing several faces, not several confirmations.***
 

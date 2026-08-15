@@ -59,6 +59,10 @@ superseded ** -- cohomology, spectral projection and representation branching re
 ** Not that the corpus was wrong ** anywhere: its index argument is correct and its conclusion (chirality
 forced non-geometric) stands.
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT 315084d** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2568.  Stated for reversal.
 """
 import glob

@@ -51,7 +51,11 @@ the bound matters: a text sweep cannot see a closure stated correctly and reason
 census.
 
 ORIGIN: computations/baryon_edge/BATCH3_the_hot_front.py -- built r2376 (c54.33); edit the
-origin, not this copy."""
+origin, not this copy.⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT c01f56c** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
+"""
 import itertools, os, re
 import numpy as np
 import sympy as sp

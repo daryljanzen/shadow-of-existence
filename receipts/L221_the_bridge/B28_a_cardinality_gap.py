@@ -43,6 +43,10 @@ route fails, not that every route does; `PO-5`'s wall is a stronger statement an
 where the tools are, not as an instruction.  ** Not that $T$ IS the Weyl element ** -- r2676's caveat
 stands: what is shown is that a swap has the Weyl adjoint action.
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT 48e4e8e** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2718.  Stated for reversal.
 """
 import glob

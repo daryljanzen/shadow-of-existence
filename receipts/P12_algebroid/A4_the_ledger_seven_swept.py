@@ -47,6 +47,10 @@ weight-marks should be deleted ** -- they are reclassified to `SCOPE-BY-DESIGN`,
 corpus keeps deliberate self-limitation.  ** Not that the triality test is easy ** -- it is unrun and
 stays unrun here.
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT d13805b** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2694.  Stated for reversal.
 """
 import os

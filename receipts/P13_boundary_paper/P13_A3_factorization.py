@@ -179,4 +179,8 @@ SCOPE (what this establishes, and what it does NOT):
   DO-NOT-ASSERT (Phase E / P14): that R o K acts on P14's actual fermion zero-modes
     as C's kinematic conjugation; the identification of a wing with a specific
     charged particle; a full geometric CPT (the charge still closes from the field).
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT c01f56c** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 """)

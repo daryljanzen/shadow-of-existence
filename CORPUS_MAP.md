@@ -146,6 +146,147 @@ sources: [cowork, chat]
 
 
 
+### Revision r2806 — 2026-08-12 (main line). **THE MISSING $F^2$ IS ENTAILED BY THE DELIVERY.**
+
+**⛭⛭ ⓵ P14 SAYS WHERE COLOUR LIVES.** *"the module the operator's colour structure acts on is **the branching**
+rather than any bundle of the substrate; the three wall monodromies with the hinge 3-cycle generate $SU(3)$."*
+
+**⛭⛭⛭ ⓶ AND A BRANCHING IS A COVERING, WHOSE ASSOCIATED BUNDLE IS FLAT BY CONSTRUCTION.**
+
+    a covering's structure is carried by MONODROMY -- a representation of pi_1 of the base
+    a bundle associated to a pi_1-representation has a LOCALLY CONSTANT connection
+    => F = 0 identically, hence F^2 = 0
+
+⇒ ***The absence of an $F^2$ term is not an oversight and not a gap. **It is what "the bundle above is flat" MEANS
+— entailed by delivering colour through a branching, not assumed alongside it.****
+
+**⓷ WHICH MAKES P14's PHRASE EXACT RATHER THAN APT.** *"it **quantises** and does not **couple**": monodromy
+quantises — discrete holonomy gives exact selection rules — and curvature couples. **Holonomy without curvature.**
+And the exactness of the selection rules and the absence of force are the SAME fact.*
+
+**⓸ SO `PO-5` IS NOT WAITING ON A TERM.** ***Any mechanism giving colour as a covering monodromy gives it flat, so a
+coupling requires colour to arrive some OTHER way. That names what would have to change: not the ledger, the
+DELIVERY.***
+
+**⛭ THE RULE:** ***when something is "missing", ask whether the construction ENTAILS its absence. **A gap and an
+entailed absence look identical in a register and are opposite in kind** — one is waiting for work, the other is a
+result.***
+
+### Revision r2805 — 2026-08-12 (main line). **p0's INFERENCE IS SOUND AND SCOPED — $1/\sqrt3$ falls outside it.**
+
+**⓵ THE PREMISE IS A TWO-SCALE ARGUMENT.** *"neither real form supplies a second invariant and **a dimensionless
+magnitude needs two** … every curvature invariant on either face is a pure power of $1/\alpha^{2}$. So the
+construction cannot force a coupling."*
+⇒ ***Not "there are no numbers" but "there is nothing to take a ratio OF".***
+
+**⛭⛭⛭ ⓶ AND ON THE NARIAI CUT THE PREMISE IS EXACTLY TRUE — THE MASS CANCELS.**
+
+    K = 48 M^2 / r^6 + 24/alpha^4     at M = alpha/3sqrt3, r = alpha/sqrt3
+      = 72 / alpha^4                  a pure power, exactly as p0 says
+
+*`janzen_circle` states it: "in which the mass cancels \emph{identically} rather than only in the limit".*
+
+**⛭⛭ ⓷ BUT $r_N/\alpha = 1/\sqrt3$ SURVIVES AND IS ABSENT FROM $K$.** *A ratio of a **LOCUS** to the scale, not of
+two invariants.*
+⇒ ***The second scale p0 denies is not what supplies it. **The inference neither covers nor excludes the
+number.****
+
+**⓸ AND NARIAI IS NOT A CHOICE.** *`shadow_of_existence`: "the Nariai configuration is **the unique fixed point** of
+the root-exchange involution". `cosmogenesis_paper` places the generation structure there. **$M/\alpha$ is fixed by
+a uniqueness statement.***
+
+**⛭ THE RULE:** ***a paper's impossibility argument has a CLASS it ranges over, and finding an object outside the
+class is not a refutation — **it is a scope reading, and it is worth more than a refutation would be**, because the
+argument stays sound and the row gains a candidate. "p0 is wrong" would have been easy and false.***
+
+⌗ ***`PO-5`'s residue is now one sentence: an $F^2$ term for the number to multiply. The number is forced, p0's
+exclusion does not reach it, and r2729's wall is the only thing left.***
+
+### Revision r2804 — 2026-08-12 (main line). **`PO-2`'s UPGRADE IS A REAL FOOTHOLD FOR `PO-5`, ON THE WRONG WALL.**
+
+**⛭⛭⛭ ⓵ THE TRIPLE IS FORCED.** *At the Nariai crest ($M=\alpha/3\sqrt3$) the $f=0$ roots in units of $\alpha$:*
+
+    -13.856406 / alpha = -1.154701 = -2/sqrt3     (single)
+      6.928203 / alpha = +0.577350 = +1/sqrt3     (doubled)
+      6.928203 / alpha = +0.577350 = +1/sqrt3
+
+⇒ ***Not a normalisation choice: **Nariai fixes $M/\alpha$ and $\alpha$ is the substrate's ONE length**, so there
+is nothing else to divide by. Forced twice over.***
+
+**⛭⛭ ⓶ AND IT IS A NEW KIND FOR THE LEDGER.** *r2769 enumerated the dimensionless content as counts ($3$, $6$, $3$)
+and derived ratios ($3/4$, $9/10$, $1.0824$). **$1/\sqrt3$ is a FIXED IRRATIONAL forced by the geometry — the shape
+a coupling constant has.*** *And `PO-2`'s level (2) passing (r2803) is what makes it usable: **a resemblance cannot
+supply a coupling; a construction can be asked to.***
+
+**⛔ ⓷ BUT r2729's WALL IS UNMOVED.** *P14: "the bundle above is flat, so the construction supplies colour's exact
+selection rules **and no force** — it quantises and does not couple."*
+⇒ ***`PO-5` needs a number AND something to be the coefficient OF. `PO-2` supplies the number; the $F^2$ term is
+still absent.***
+
+**⓸ AND THE PART WORTH ROUTING IS A SCOPE OBSERVATION.** *p0 derives the no-coupling from "every **curvature
+invariant** on either face is a pure power of $1/\alpha^{2}$". **$1/\sqrt3$ is not a curvature invariant** — it is
+a horizon radius over $\alpha$ at a degenerate point. A forced dimensionless quantity outside the class p0's
+sentence ranges over.*
+
+**⛭ THE RULE:** ***when a hold lifts, ask immediately what the freed material is good for elsewhere. **A
+do-not-assert suppresses a number's USE, not just its assertion** — and `PO-5` had been measured as lacking a fixed
+dimensionless number while one sat behind `PO-2`'s hold for 170 revisions.***
+
+### Revision r2803 — 2026-08-12 (main line). **`PO-2` WAS GATED BY A STALE SENTENCE, AND IT IS NOW CURRENT.**
+
+**⛔ ⓵ THE GATE WAS A SENTENCE, STALE IN TWO PLACES.** *`GEOMETRY_PHYSICS_TAXONOMY.md` — the document that HOLDS
+the three levels — read "the three levels … **stand exactly as r693 set them**", and separately "the three levels
+stand exactly as r693 separated them". **It had never heard of r2629–r2633.** 170 revisions stale.*
+⇒ ***`PO-2`'s own row records those four findings and argues from them. The argument was live in the row and absent
+from the document the row defers to.***
+
+**✔ ⓶ THE STATE, WRITTEN IN AT SOURCE.**
+
+    (1) SKELETON       grounded AND computed -- the root triple IS the f=0 locus, sum zero
+    (2) RESEMBLANCE    PASSED -- r2629 made it a CONSTRUCTION; a resemblance-hold has nothing
+                       left to guard once the similarity is one
+    (3) IDENTIFICATION still walled, NARROWER than the word -- P14 exhibits the structural map;
+                       the PHYSICAL identification is what remains
+
+**⛭ ⓷ AND LEVEL (1) IS SIZED, NOT BANKED.** *The zero sum is **arithmetic**: $f=0$ is a depressed cubic
+($r^3/\alpha^2-r+2M=0$, no $r^2$ term), so the roots sum to zero for every $M$ and $\alpha$.*
+⇒ ***Both halves: a structure that must vanish BY CONSTRUCTION is a better ground for colour-neutrality than one
+that happens to — **and it distinguishes nothing on its own**, since every SdS geometry has it. The content is the
+$1{:}1{:}{-}2$ pattern.***
+
+**⓸ SO THE ROW IS GATED ON ONE LEVEL, NOT THREE.** *`PO-5` gates level (3) alone — whether a coupling can arise at
+all. **Levels (1) and (2) gate nothing.***
+
+**⛭ THE RULE:** ***when a row defers to a document, the document is the gate. **A finding written into the row and
+not into what the row cites changes nothing** — and the failure is invisible from the row, which reads as correctly
+held by a reader who never opens the citation.***
+
+### Revision r2802 — 2026-08-12 (main line). **BOTH "NOT BLIND-FIXABLE" BACKLOGS CLEARED IN ONE TURN.**
+
+**⛔ ⓵ THE 40 UNPINNED ABSENCE CLAIMS.** *r2776 filed them as "not retro-pinnable without guessing which commit each
+was measured at — which is the fabrication the rule prevents."*
+⇒ ***The commit that ADDED a receipt **is** the tree its absence was measured against. `git log --diff-filter=A`
+resolves it for all 41. **A lookup, not a guess.**** *41 pinned, 8/8 sampled still exit zero.*
+
+**⛔ ⓶ THE 98 `THE_LIVE_ARC` COLUMN BREAKS.** *r2783 filed them as needing "guessing which cell each stray `|`
+belonged to."*
+⇒ ***Escaping does not need to know — a raw bar written `\|` stays content in the cell it is already in, which is
+what r2788a did to `PROTECTED_OPEN` with zero loss.***
+
+    98 -> 33      159,248 words before and after
+
+⌗ ***And the remaining 33 are a DIFFERENT POPULATION: 65 were OVER-piped (real breaks, escapable), 33 are
+UNDER-piped — genuinely short rows. **Two populations counted as one and the union declared intractable.***
+Baseline moved 98 → 33 with the reason.*
+
+**⛭⛭ ⓷ AND THE PINNING SURFACED A GATE DEFECT.** *`check_absence_pinned` matched `at <sha>` **case-sensitively**,
+so `MEASURED AT <sha>` — the form the retro-pinning writes — read as unpinned. **A gate that recognises only one
+casing of its own convention reports pinned receipts as unpinned.***
+
+**⛭ THE RULE:** ***"not mechanically fixable" is a claim, and it is the one kind a node is never asked to defend,
+because it closes the conversation it appears in. **Test it before filing it** — both of these survived a full
+session as routed backlog.***
+
 ### Revision r2800 — 2026-08-12 (main line). **`PO-11`'s VERDICT: THE FIELD IS DIRAC, SO THE MATCHING IS DETERMINED.**
 
 **⛭⛭ ⓵ THE ROW NAMES THE FIELD.** *`L-828` supplied both branches and routed the choice. The object column:

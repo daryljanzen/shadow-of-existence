@@ -53,6 +53,10 @@ interacting tower is the item and boundedness of the free sector is not boundedn
 r2567's list was wrong ** -- six of its seven stand, and *** the redundant pair was redundant in the
 corpus's own argument, not in the reading of it. ***
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT bc42319** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2610.  Stated for reversal.
 """
 import os

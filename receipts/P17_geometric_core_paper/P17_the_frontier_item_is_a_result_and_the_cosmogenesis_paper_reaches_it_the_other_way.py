@@ -76,7 +76,11 @@ P15 = open(os.path.join(CORPUS, 'CR_cosmology.tex'), encoding='utf-8').read()
 
 def body(tex):
     """What the paper PRINTS.  Comment lines are corpus-shaped text that no reader and no gate
-    ever sees, and PART 2 exists because one of them was mistaken for the paper."""
+    ever sees, and PART 2 exists because one of them was mistaken for the paper.⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT 0fcafd6** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
+"""
     out = []
     for ln in tex.split('\n'):
         cut = re.search(r'(?<!\\)%', ln)
