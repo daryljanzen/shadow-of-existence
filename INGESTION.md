@@ -294,3 +294,5 @@ r2793  LATENT      L-821 gated: 7/40 verified independently. R~R magnitude discr
 r2794  CLAIMED    resolve R~R: 4.977310 (analytic) vs 4.5000 (finite-difference). Compute it.
 r2794  LATENT      r2793s R~R discrepancy WITHDRAWN -- degree-4 homogeneous, two parameter points. One line owed.
 r2795  LATENT      L-822 merged: the CR residual is ACOUSTIC STRUCTURE -- confirms r2789 independently.
+r2796  CLAIMED    PO-11: attempt the continuum across the two signature changes. Nobody has tried.
+r2796  COMPUTED    PO-11: ONE matching not two -- the inner horizon is infinitely far, the wall is finite.
