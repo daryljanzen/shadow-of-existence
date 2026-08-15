@@ -1,9 +1,63 @@
 ---
 name: open-problems-map
 kind: STATE
-current: r2825+c54.232
+current: r2829+c54.232
 job: The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open
 ---
+
+## ⛔⛭⛭⛭ r2829 — THE MAP WAS HOLDING A RECONSTRUCTION OF `PO-5`, NOT ITS OBJECT
+
+*Measured: this map carried five of six open rows' objects and **not `PO-5`'s**. It said "coupling"
+fifteen times and "multiplet" **zero**. **The coupling is the ROUTE; r2609 recorded that the route and
+the object had come apart, and the map kept the route.***
+
+**⓵ THE SIX OBJECTS, AS THE ROWS STATE THEM — this is the gap.**
+
+    PO-2   The Nariai / three-quark lead
+           -> the three horizon roots, their zero-sum, the distinguished merged member,
+              against a baryon's three quarks in a colour singlet
+    PO-5   The quark/lepton split, and what a baryon IS at particle level
+           -> THE FIVE MULTIPLETS, and which carries the colour 3
+    PO-6   The interacting tower -- the spectrum of Gamma-hat, whether it is bounded
+           below, the UV definition  -> the quantum sector's interacting theory
+    PO-7   The first acoustic peak, and the propagated comb
+           -> the CR acoustic spectrum
+    PO-10  The scalar perturbation sector's stated remainder
+           -> the full-spectrum likelihood comparison, and the odd/even height pattern
+    PO-11  The full PROPAGATING spinor field sector
+           -> a propagating Dirac sector, against the bound zero-modes P14 delivers
+
+**⛭⛭ ⓶ AND `PO-5`'s OBJECT HAS A LIVE PROPOSAL THE BODY OF P14 DOES NOT CARRY.** *P14's body calls the
+representation content "undelivered and walled". Its **appendix receipt** proposes the discriminator:*
+
+> *"the corpus supplies two gradings off one number: **triality $=-\lambda \bmod 3$** and **chirality
+> $=\mathrm{sign}(\lambda)$**. PROPOSAL: a LEPTON is a wall-bound mode whose angular eigenvalue is
+> divisible by three, a QUARK one whose is not — since triality is exactly the SM's own quark/lepton
+> discriminant. CONSEQUENCE: P14 puts ONE Dirac spinor on the structure, so quarks and leptons are the
+> **same field in different partial waves**."*
+
+*And it accounts for something P14 records without explaining — that the content is anomaly-free **"only
+as a complete set"**: on this reading it is forced, because the coloured waves cannot be taken without
+the colourless ones.*
+
+**⛔ ⓷ AND THE COUNT IS THREE NUMBERS THAT DISAGREE.**
+
+    lambda   triality   kind     mult = 2*lambda
+      1         2       quark          2
+      2         1       quark          4
+      3         0       LEPTON         6
+
+    UNWEIGHTED  quark:lepton = 2:1    <- what the receipt PRINTS
+    WEIGHTED    quark:lepton = 4:3    <- its own tally, built and NEVER PRINTED (c54.154)
+    THE SM      12 coloured : 3       = 4:1
+
+⇒ ***The receipt names its own falsifier in ink — "if the $\lambda$-tower's quark:lepton ratio came out
+other than 2:1 … a departure from 2:1 kills it" — and its own multiplicity weighting gives 4:3, while
+the Standard Model needs 4:1.*** *The receipt states the bound honestly ("THE COUNT IS NOT LANDED: the
+SEAT count (12+3) and the MODE count (infinite) disagree") and defers it to L-107.*
+
+**⌗ THIS IS THE GAP'S SHARPEST LIVE EDGE**, *and it was invisible from this map because the map was
+holding a route instead of an object.*
 
 ## ⛭⛭⛭ r2825 — THE BOARD HAS ONE ROOT, AND IT IS `PO-11`
 

@@ -349,3 +349,5 @@ r2826  INSTRUMENT  199 deferrals to Daryl removed; check_deferrals widened from 
 r2827  CLAIMED    PO-6 reads OPEN and I called it closed. Does it close?
 r2827  INSTRUMENT  PO-6 was reported closed for four status reports and reads OPEN. check_status_honesty built.
 r2828  INSTRUMENT  OWED was 6 and is 1: five were superseded, done, or not tasks. check_owed_are_tasks built.
+r2829  CLAIMED    the map holds my reconstruction of PO-5, not its object. Fix, then check the class.
+r2829  INSTRUMENT  the map held the ROUTE not PO-5s object. Fixed; check_gap_is_held built, seeded 4x.
