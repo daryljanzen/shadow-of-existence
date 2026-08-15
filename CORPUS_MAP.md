@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2819 — 2026-08-12 (main line). **THE RESCALING CANNOT MAKE AN INDEX REAL — cc54's planned route eliminated.**
+
+**⓵ cc54's FLAG AGAINST ITS OWN `L-829` `S1` IS CORRECT, AND MY r2807 GATE PASSED IT.**
+
+    dl/dr = 1/sqrt(f)     -> W(dl/dr) = lambda/r      REAL
+    dl/dr = 1/sqrt(|f|)   -> W(dl/dr) = i lambda/r    IMAGINARY   (f < 0 near the wall)
+
+⌗ ***My gate passed check-2 because it verified the integrand's FORM and not its BRANCH — **the check tested what it
+said, and the claim rested on more than the check**. That is the subtlest way a gate fails.***
+
+**⛭⛭⛭ ⓶ AND THE PLANNED RESCALING IS $f^{-1/4}$.**
+
+    |psi|^2 dl = |P|^2 dx,   dx/dl = f^(-1/2)   =>   psi = P * f^(-1/4)
+    near the wall f ~ -2M/r,  so  f^(-1/4) ~ r^(1/4)      -- a REAL power
+
+⇒ ***A real prefactor shifts an index by a real amount and **cannot change the imaginary part of an exponent**. It
+cannot turn $r^{\pm i\lambda}$ into $r^{\pm\lambda}$. The rescaling is the correct measure conversion and is **not
+where $\pm\lambda$ comes from**.***
+
+**⓷ WHAT REMAINS IS NARROWER.** *Two places an $i$ enters, and they are the same $i$ from two directions: the
+$\omega$-coupling's own $1/\sqrt f$, and **the branch choice in continuing $\sqrt f$ through $f=0$** (r2785: the
+wall sits on the boundary between a static and a non-static region).*
+⇒ ***P14 line 214 works in the $f<0$ region explicitly, so **reading P14's own treatment beats a fifth reduction
+from either line**.***
+
+**⛭ THE RULE:** ***before another line spends a shift on a route, spend four minutes trying to kill it. **A route
+that dies to a four-line computation was never a shift's worth of work** — and the elimination is worth more to them
+than the attempt would have been.***
+
 ### Revision r2818 — 2026-08-12 (main line). **THE CORPUS'S WALLS DO NOT COVER THE SPECTRAL ROUTE.**
 
 **⛭⛭ ⓵ THE GRADING AXIOM IS MET.** *$\gamma^5$ squares to 1 and anticommutes with every $\gamma^\mu$, hence with

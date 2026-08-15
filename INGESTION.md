@@ -333,3 +333,5 @@ r2816  LATENT      B3 and L-813 are ONE operator; the omega-coupling is omega/sq
 r2817  INSTRUMENT  L-562 made to degrade honestly when its unbundled runs/ is absent.
 r2818  CLAIMED    PO-5: check Connes axioms against CR -- real structure, grading, order-one.
 r2818  COMPUTED    the index obstructions own hypotheses (compactness + continuous isometry) do not cover the spectral route.
+r2819  CLAIMED    cc54 flags S1 check-2 as slipped. My r2807 gated it. Verify, then attack the rescaling.
+r2819  COMPUTED    the RW rescaling is f^(-1/4) and cannot make an index real. cc54s planned route eliminated.
