@@ -99,6 +99,25 @@ def theta_D(w):
     return 100*(np.sqrt(n/d) - 1)
 
 
+
+# ** ⛭⛭ RE-PINNED c54.223 (`L-557`).  THIS RECEIPT IS ONE OF THE SEVEN THAT PRODUCED r2755's
+# ** CORRECTION, AND THE CORRECTION BROKE ITS OWN PIN. **  Each of the seven quotes P15's `9.4%`
+# ** because that is the sentence they were arguing about; r2755 replaced it with `8.2%` and none of
+# ** the seven was re-pinned, so all seven have failed every full run since.
+#   ⇒ *** A claim about the paper AS IT WAS is a claim about a COMMIT (c54.220's rule), so the
+#       historical quote is read at `b4f1931^` and the CURRENT text is asserted separately.  A
+#       receipt that argued for a correction must survive the correction landing. ***
+_BEFORE_R2755 = 'b4f1931^'
+
+
+def _p15_at(rev):
+    """CR_cosmology.tex as it read at a commit -- whitespace-flattened, same as the live read"""
+    import subprocess
+    out = subprocess.run(['git', 'show', f'{rev}:corpus/CR_cosmology.tex'],
+                         cwd=ROOT, capture_output=True, text=True, errors='replace').stdout
+    return re.sub(r'\s+', ' ', out)
+
+
 def main():
     print()
     print("  C27 -- run the weight, and bracket P15's +9.4%")
@@ -130,7 +149,7 @@ def main():
           'and a Peebles recombination history' in p15)
     check(f'⇒ and $+9.4\\%$ lies strictly inside the bracket [{saha:.1f}, {unw:.1f}] -- Saha recombines '
           'FASTER so it weights later and understates; Peebles retains a residual and weights earlier',
-          saha < 9.4 < unw and '9.4' in p15)
+          saha < 9.4 < unw and '9.4' in _p15_at(_BEFORE_R2755) and '8.2' in p15)
 
     print()
     if FAILED:

@@ -39,7 +39,7 @@ own statements **.  *** The second is a read of P15, and this is it. ***
       choosing. ** ***
 
 ** ⛭ ⓷ AND ONE MORE THE PAPER MARKS AS DERIVED WITHOUT A MEASURED PARTNER. **  *** The high-$\\ell$
-ratio: "the high-$\\ell$ consequence follows ** with no free parameter **", $r=1.0926$.  It has no
+ratio: "the high-$\\ell$ consequence follows ** with no free parameter **", $r=1.0816$ (RE-PINNED c54.223 -- was 1.0926).  It has no
 single measured number to sit against -- it is a spectrum-shape prediction -- so it belongs in the
 comparison as a SHAPE test rather than a pair, and r2725 already established that scoring it wrongly is
 how the last attempt failed. ***

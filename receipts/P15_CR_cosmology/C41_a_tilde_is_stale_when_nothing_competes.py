@@ -72,6 +72,25 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+
+# ** ⛭⛭ RE-PINNED c54.223 (`L-557`).  THIS RECEIPT IS ONE OF THE SEVEN THAT PRODUCED r2755's
+# ** CORRECTION, AND THE CORRECTION BROKE ITS OWN PIN. **  Each of the seven quotes P15's `9.4%`
+# ** because that is the sentence they were arguing about; r2755 replaced it with `8.2%` and none of
+# ** the seven was re-pinned, so all seven have failed every full run since.
+#   ⇒ *** A claim about the paper AS IT WAS is a claim about a COMMIT (c54.220's rule), so the
+#       historical quote is read at `b4f1931^` and the CURRENT text is asserted separately.  A
+#       receipt that argued for a correction must survive the correction landing. ***
+_BEFORE_R2755 = 'b4f1931^'
+
+
+def _p15_at(rev):
+    """CR_cosmology.tex as it read at a commit -- whitespace-flattened, same as the live read"""
+    import subprocess
+    out = subprocess.run(['git', 'show', f'{rev}:corpus/CR_cosmology.tex'],
+                         cwd=ROOT, capture_output=True, text=True, errors='replace').stdout
+    return re.sub(r'\s+', ' ', out)
+
+
 def main():
     print()
     print("  C41 -- is a tilde in P15 a stale hedge or an earned one?")
@@ -89,8 +108,22 @@ def main():
           'MEAS_L - 301.76' in rcpt('P15_zonset_determinations.py'))
 
     # ⓶ the 8% case: receipts disagree -> tilde stays
-    check('⛔ ⓶ while $\\sim8\\%$ REMAINS tilde-marked in P15, nine times',
-          len(re.findall(r'\{\\sim\}8\\%', p15)) == 9)
+    # ** ⓶ RE-PINNED c54.223 (`L-557`), AND THE THESIS WAS ACTED ON RATHER THAN OVERTURNED. **
+    # At `b4f1931^` the paper carried `{\sim}8\%` NINE times, which is what this check asserted and
+    # what the receipt argued was correct: *a tilde on a CONTESTED number is what a tilde is for*.
+    #   ⇒ *** r2755 then RESOLVED the contest -- the 9.4% was the error and the ~8% was right -- and
+    #       replaced all nine hedges with the bare `8.2\%`.  Zero remain.  So this receipt's rule
+    #       held and its STATE moved: the tilde was right while something competed and became a
+    #       stale hedge the moment nothing did, which is the OTHER `C41`'s thesis exactly. ***
+    _p15_before = _p15_at(_BEFORE_R2755)
+    _n_before = len(re.findall(r'\{\\sim\}8\\%', _p15_before))
+    _n_now = len(re.findall(r'\{\\sim\}8\\%', p15))
+    check(f'⛔ ⓶ $\\sim8\\%$ was tilde-marked in P15 {_n_before} times at {_BEFORE_R2755} -- which is '
+          f'what this receipt asserted, and asserted was RIGHT while the number was contested',
+          _n_before == 9)
+    check(f'⛭ and r2755 resolved the contest and took every hedge off: {_n_now} remain, replaced by '
+          f'the bare 8.2% ({p15.count("8.2")} occurrences) -- *** the rule held; the STATE moved ***',
+          _n_now == 0 and p15.count('8.2') >= 9)
     c8 = rcpt('C8_diffusion_length.py')
     # ** C8 prints the figure from an f-string, so the number is COMPUTED and not literal --
     # which is stronger: it cannot go stale against its own derivation. **
@@ -102,9 +135,12 @@ def main():
           'damping_ratio_clean.py reports' in c8 and 'This derivation gives' in c8)
 
     # ⓷ the two look identical in the paper
-    check('⓷ and the two cases are indistinguishable from the prose alone -- both were the same '
-          'three characters before this revision',
-          '{\\sim}8\\%' in p15)
+    check('⓷ and the two cases WERE indistinguishable from the prose alone -- ${\\sim}301$ and '
+          '${\\sim}8\\%$ are the same three characters, which is why the test runs on the receipts '
+          'and never on the text -- and BOTH have now resolved the same way, by the receipts ceasing '
+          'to compete rather than by anyone rereading the prose',
+          '{\\sim}8\\%' in _p15_before and '{\\sim}8\\%' not in p15
+          and '{\\sim}301' not in p15 and '301.76' in p15)
 
     print()
     if FAILED:

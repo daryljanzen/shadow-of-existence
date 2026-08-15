@@ -1,6 +1,6 @@
 
-  RUN-ALL-RECEIPTS -- 550 registered receipt(s), 6 at a time, 900s each, each from ITS OWN DIRECTORY
-  TREE-DIGEST: 09fae38204561649
+  RUN-ALL-RECEIPTS -- 557 registered receipt(s), 6 at a time, 900s each, each from ITS OWN DIRECTORY
+  TREE-DIGEST: e3f10dd498986ed2
 
     [FAIL] receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py  (0s)
                OK    ⚠ CR does NOT derive the dynamics: "the construction leaves the dynamics of general relativity unchanged" /     OK    and P12 calls its own claim "a recognition rather than an addition" /   4 check(s) FAILED
@@ -10,26 +10,16 @@
                FAIL  p0 sec:frontiers STILL reads "stated as a target, not a result" /     OK    L-201's sharp target -- "any constant maximal symmetry does not reach" -- has no room: the quotient is 1-dimensional and IS the scale /   1 check(s) FAILED
     [FAIL] receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py  (0s)
                OK    and any surviving occurrence is inside a % comment line, never published text /     FAIL  while the PUBLISHED paragraph says "the deepest question the construction opens onto" and then answers the general case /   8 check(s) FAILED
-    [FAIL] receipts/L536_frontier_placement/F1_resolved_content_sits_in_the_frontier_sections.py  (1s)
+    [FAIL] receipts/L536_frontier_placement/F1_resolved_content_sits_in_the_frontier_sections.py  (0s)
                OK    with the three largest shares: boundary_paper.tex 33%, CR_cosmology.tex 29%, range_paper.tex 14% /     OK    ⚠ and the resolved-language proxy finds only 29 markers corpus-wide -- far too few to be a measurement, and reported as a proxy rather than a count /   1 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C24_the_substitution_itemised.py  (0s)
-               OK    ⓸ and P15 pins $\theta_*$: "Holding $\ell_{*}$ to its measured value fixes the onset redshift" /     FAIL  so only $r_D$ moves, by +6.8% -- against P15's stated $+9.4\%$, the gap being that the 13% is LOCAL while the integrals ACCUMULATE /   1 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C25_the_gap_closed_by_integration.py  (2s)
-               OK    ⓷ and the dependence is MONOTONIC in the onset redshift, which is what makes $\theta_*$ and $\theta_D$ two constraints rather than one /     OK    as P15 argues: "it varies from $+43\%$ to $-3\%$ across the onset redshifts one might consider, so a single datum cannot absorb both observable
-    [FAIL] receipts/P15_CR_cosmology/C27_the_number_bracketed.py  (2s)
-               OK    ⓷ P15 uses a Peebles history: "a full photon hierarchy with polarisation, second-order tight coupling, massless neutrinos, and a Peebles recombination history" /     FAIL  ⇒ and $+9.4\%$ lies strictly inside the bracket [7.0, 13.1] -- Saha recombines FASTER so it weights later and understa
-    [FAIL] receipts/P15_CR_cosmology/C28_length_against_angle.py  (0s)
-               OK    while the length ratio ALONE is +10.8% and the angle ratio ALONE is +9.3% -- both stated, both with passing receipts /     OK    ⓸ and r2689's bracket [7.0, 13.1] contains BOTH numbers, so it was never in conflict with the paper /   1 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C41_a_tilde_is_stale_when_nothing_competes.py  (0s)
-               OK    ⛭⛭ and C8 NAMES THE DISAGREEMENT IN ITS OWN TEXT: "damping_ratio_clean.py reports ~+9%. This derivation gives +10.8%" /     FAIL  ⓷ and the two cases are indistinguishable from the prose alone -- both were the same three characters before this revision /   2 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C46_the_nine_are_right_and_the_one_is_wrong.py  (0s)
-               OK    ⓷ and feeding the CORRECTED $r_D$ through C9's own division gives +7.65% and +8.24% -- not $9.4\%$ /     OK    which brackets what P15 says nine times, and matches the direct computation $\theta_D/\theta_*=1.0816$ in P15_damping_ratio_clean /   1 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C49_the_row_has_a_likelihood_not_a_lookup.py  (0s)
-               FAIL  and names it: "the control arm lands at chi^2/dof ~ 100 against CAMB's 0.96" -- ** the CONTROL, not CR ** /     OK    ⓷ and F5 keeps the verdict off the construction: "a negative is a measurement discrepancy, not a framework verdict" /   1 check(s) FAILED
+    [FAIL] receipts/L549_coupled_counterterms/Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py  (94s)
+               OK    ⛭ and the result is BANKED in P10, not only here: "no scale factor breaks it, because no scale factor can make an FRW geometry anything but conformally flat" /     OK       ⚠ and P10 DECLINES the closure in the same passage: "what remains is the tower's own shear, which is a calculation an
+    [FAIL] receipts/L555_merge_duplication/M1_the_merge_of_my_own_revision_duplicated_four_protected_rows_and_no_gate_saw_it.py  (1s)
+               OK       and ROW BY ROW across all 14 protected ids: {} /     FAIL     with one row per id remaining: {'PO-4': 2, 'PO-7': 2, 'PO-6': 2, 'PO-5': 2} /   1 check(s) FAILED
     [FAIL] receipts/P17_geometric_core_paper/P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py  (0s)
              OK   and the no-single-value conclusion / ============================================================================== / FAILED: 3 receipt(s) still have no INDEX row: ['A3_the_convergence_audit', 'A6_item_58_resolves_split', 'A8_the_self_protecting_falsehood']
 
-  537 pass, 13 fail, 0 over timeout, in 597s wall
-  slowest that passed: P16_validate_bbn.py 264s, P15_the_second_arm_actually_run.py 178s, I10_the_constraint_propagation_is_symmetry_free.py 124s, P15_the_collapse_leg_is_scale_invariant.py 124s, P16_theory_error_and_likelihood.py 121s
+  549 pass, 8 fail, 0 over timeout, in 604s wall
+  slowest that passed: P16_validate_bbn.py 276s, P15_the_second_arm_actually_run.py 207s, P16_theory_error_and_likelihood.py 142s, P15_verify_lowell_exact_measure.py 141s, P15_the_collapse_leg_is_scale_invariant.py 120s
 
   ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.

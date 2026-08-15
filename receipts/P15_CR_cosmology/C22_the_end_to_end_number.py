@@ -27,9 +27,10 @@ carries $\\Theta+\\Psi=\\Phi/3$ with $\\Phi$ super-horizon and constant.  $\\Lam
       *** power ratio  =  (1/1.04)^2  =  0.925    ⇒  a 7.5% LOW-ELL POWER DEFICIT ***
 
 ** ⓷ AND AT THE OTHER END, THE PAPER'S OWN DAMPING RATIO. **  $C_\\ell^{\\rm CR}/C_\\ell^{\\Lambda\\rm CDM}
-=\\exp[-(\\ell/\\ell_D)^2(r^2-1)]$, $r=1.093$:
+=\\exp[-(\\ell/\\ell_D)^2(r^2-1)]$, $r=1.082$ (RE-PINNED c54.223 -- was 1.093):
 
-      *** l = 0.5 l_D : 0.953     l = l_D : 0.823     l = 1.5 l_D : 0.645     l = 2 l_D : 0.459 ***
+      *** l = 0.5 l_D : 0.958     l = l_D : 0.843     l = 1.5 l_D : 0.681     l = 2 l_D : 0.505 ***
+      (RE-PINNED c54.223 (`L-557`) from r = 1.093 -- see the note in `C10_highl_ratio`)
 
 ** ⇒⇒ ⓸ THE END-TO-END STATEMENT, AND ITS GAP. **  *** low-$\\ell$: $7.5\\%$ deficit from the absent early
 ISW.  High-$\\ell$: $18\\%$ at $\\ell_D$ rising to $54\\%$ at $2\\ell_D$ from the longer diffusion length.
@@ -103,13 +104,13 @@ def main():
           abs(ratio - 0.925) < 0.002)
 
     # ⓷ the high-ell numbers
-    r = 1.093
+    r = 1.082          # ** RE-PINNED c54.223 (`L-557`) -- was 1.093 **
     vals = {x: float(np.exp(-(x**2) * (r**2 - 1))) for x in (0.5, 1.0, 1.5, 2.0)}
     check(f'⓷ and the damping ratio at l/l_D = 0.5, 1, 1.5, 2 gives '
           f'{ {k: round(v,3) for k,v in vals.items()} }',
-          abs(vals[1.0] - 0.823) < 0.002 and abs(vals[2.0] - 0.459) < 0.002)
-    check('from the paper\'s own no-free-parameter form with $r=1.093$',
-          'with no free parameter' in p15 and '1.093' in p15)
+          abs(vals[1.0] - 0.843) < 0.002 and abs(vals[2.0] - 0.505) < 0.002)
+    check('from the paper\'s own no-free-parameter form with $r=1.082$',
+          'with no free parameter' in p15 and '1.082' in p15)
 
     print()
     if FAILED:
@@ -124,7 +125,7 @@ def main():
     print('       it LARGER", the rate being k²/(3H).')
     print('  ⛭⛭ ⓶ ** LOW-ELL: ** LCDM sits 4% above asymptote at recombination; CR sits AT it.')
     print(f'     ⇒ ** power ratio (1/1.04)² = {ratio:.3f}, a {100*(1-ratio):.1f}% DEFICIT. **')
-    print('  ⓷ ** HIGH-ELL, the paper\'s own ratio: ** 0.953 at 0.5 l_D, ** 0.823 at l_D **, 0.645 at')
+    print('  ⓷ ** HIGH-ELL, the paper\'s own ratio: ** 0.958 at 0.5 l_D, ** 0.843 at l_D **, 0.681 at')
     print('     1.5 l_D, ** 0.459 at 2 l_D. **')
     print('  ⇒⇒ ⓸ ** AND THE GAP IS NAMED: ** between them -- ** the acoustic peaks ** -- the chain does')
     print('     not reach, because Φ decays by ~2 there and the decay is k-dependent through k²/(3H).')

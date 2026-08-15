@@ -10,7 +10,7 @@ $F3$ and cannot account for it. ***
 
 ** ⛭⛭ ⓵ AND AN INDEPENDENT ESTIMATE FROM P15's OWN ENVELOPE LANDS IN THE SAME PLACE. **  The paper's
 high-$\\ell$ statement is $C_\\ell^{\\rm CR}/C_\\ell^{\\Lambda\\rm CDM}=\\exp[-(\\ell/\\ell_D)^2(r^2-1)]$ with
-$r=1.0926$ (`C10`).  Evaluated across the band:
+$r=1.0816$ (`C10`, RE-PINNED c54.223 -- was 1.0926).  Evaluated across the band:
 
       *** l =  200   ratio 0.996        l = 1400   ratio 0.824   <- l_D
           l =  500   ratio 0.976        l = 2000   ratio 0.673
@@ -78,10 +78,10 @@ def main():
     # ⓵ the envelope is the paper's
     check('⓵ the envelope is P15\'s own: the high-$\\ell$ consequence "follows with no free parameter"',
           'with no free parameter' in p15)
-    check('with $r=1.093$ stated in the paper', '1.093' in p15 or '1.0926' in p15)
+    check('with $r=1.082$ stated in the paper', '1.082' in p15 or '1.0816' in p15)
 
     # ⓶ the estimate
-    r, lD = 1.0926, 1400.0
+    r, lD = 1.0816, 1400.0   # ** RE-PINNED c54.223 (`L-557`) -- was 1.0926 **
     ls = np.linspace(30, 2500, 215)
     ratio = np.exp(-(ls/lD)**2*(r**2 - 1))
     check(f'⛭⛭ ⓶ evaluated across the band it gives {ratio[0]:.3f} at the low end and '
@@ -119,7 +119,7 @@ def main():
         return 1
     print("  VERDICT: ** the negative is NOT an artefact — P15's own envelope gives the same order. **")
     print(f'  ⛭⛭ ⓵ ** From the paper\'s published formula alone ** — C_CR/C_ΛCDM = exp[−(ℓ/ℓ_D)²(r²−1)],')
-    print(f'     r = 1.0926 — the suppression runs {ratio[0]:.3f} → {ratio[-1]:.3f} across the band, and')
+    print(f'     r = 1.0816 — the suppression runs {ratio[0]:.3f} → {ratio[-1]:.3f} across the band, and')
     print(f'     scored against cosmic variance on 215 bins gives χ² ~ {chi2:.2g}.')
     print('     ⇒ *** cc54 measured 5.05e4.  SAME ORDER, from no pipeline, no likelihood and no fit. ***')
     print('  ⓶ ** Which cuts both ways: ** the negative cannot be blamed on cc54\'s implementation — and')

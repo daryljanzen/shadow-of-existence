@@ -14,7 +14,7 @@ posit?"  Asked nowhere yet. ***
           A_s        anchored at the first peak: INHERITED, not predicted
           z_onset    FIXED; "meets the scale at every H_0" -- not a knob (r2688)
           theta_*    DERIVED as D_M/r_s
-          r=1.0926   DERIVED, "with no free parameter"
+          r=1.0816   DERIVED (RE-PINNED c54.223 -- was 1.0926), "with no free parameter"
           9/10       DERIVED, the branch-point transfer ***
 
   ⇒ *** A comparison that scores DERIVED quantities against MEASURED ones has no parameter vector to

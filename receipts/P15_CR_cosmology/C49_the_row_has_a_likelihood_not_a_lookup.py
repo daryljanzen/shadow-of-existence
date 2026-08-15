@@ -88,9 +88,16 @@ def main():
     check('⛔⛭⛭ ⓶ while the same file records the blocker: "F4 IS DEFECTIVE AND THE DEFECT IS '
           'RECORDED IN F6 RATHER THAN PATCHED OUT"',
           'IS DEFECTIVE AND THE DEFECT IS RECORDED' in lik)
-    check('and names it: "the control arm lands at chi^2/dof ~ 100 against CAMB\'s 0.96" -- ** the '
-          'CONTROL, not CR **',
-          'arm lands at chi^2/dof ~ 100' in lik)
+    # ** RE-PINNED c54.223 (`L-557`).  The quoted PROSE aged and r2760 rewrote it: "the control is at
+    # ** 7.14, not ~100 -- the receipt's prose aged and r2759 quoted it." **  This receipt was r2759's
+    # ** kind of quoter, one revision earlier, and the rewrite left the quote here dangling.
+    #   ⇒ *** So the check now reads the SENTENCE'S OWN STRUCTURE rather than one of its numbers: the
+    #       note pins its figure to when it was written AND names the current one.  A quote of a
+    #       number ages; a quote of the thing the sentence DOES does not. ***
+    check('and names it -- the note now dates its own figure ("~ 100 WHEN THIS NOTE WAS WRITTEN") '
+          'and carries the current one ("at 7.1 as of r2760"), and it is the CONTROL either way',
+          'chi^2/dof ~ 100' in lik and 'WHEN THIS NOTE WAS WRITTEN' in lik
+          and 'as of r2760' in lik and 'F2 is not small in absolute terms' in lik)
 
     # ⓷ and F5 protects the verdict
     check('⓷ and F5 keeps the verdict off the construction: "a negative is a measurement '

@@ -68,6 +68,25 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+
+# ** ⛭⛭ RE-PINNED c54.223 (`L-557`).  THIS RECEIPT IS ONE OF THE SEVEN THAT PRODUCED r2755's
+# ** CORRECTION, AND THE CORRECTION BROKE ITS OWN PIN. **  Each of the seven quotes P15's `9.4%`
+# ** because that is the sentence they were arguing about; r2755 replaced it with `8.2%` and none of
+# ** the seven was re-pinned, so all seven have failed every full run since.
+#   ⇒ *** A claim about the paper AS IT WAS is a claim about a COMMIT (c54.220's rule), so the
+#       historical quote is read at `b4f1931^` and the CURRENT text is asserted separately.  A
+#       receipt that argued for a correction must survive the correction landing. ***
+_BEFORE_R2755 = 'b4f1931^'
+
+
+def _p15_at(rev):
+    """CR_cosmology.tex as it read at a commit -- whitespace-flattened, same as the live read"""
+    import subprocess
+    out = subprocess.run(['git', 'show', f'{rev}:corpus/CR_cosmology.tex'],
+                         cwd=ROOT, capture_output=True, text=True, errors='replace').stdout
+    return re.sub(r'\s+', ' ', out)
+
+
 def main():
     print()
     print('  C28 -- is 9.4% a length ratio or an angle ratio?')
@@ -81,7 +100,7 @@ def main():
           'a diffusion length' in p15 and '10.8' in p15)
     check('the ANGLE: "The observable, in which the common distance cancels, is then '
           '$\\theta_{D}/\\theta_{*}$ larger by $9.4\\%$"',
-          'in which the common distance cancels' in p15 and '9.4' in p15)
+          'in which the common distance cancels' in p15 and '9.4' in _p15_at(_BEFORE_R2755) and '8.2' in p15)
     check('and the sound horizon moves rather than being pinned: "within $0.7\\%$ of each other at the '
           'onset redshift the inherited datum fixes"',
           'within $0.7\\%$ of each other at the onset redshift' in p15)

@@ -71,6 +71,25 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+
+# ** ⛭⛭ RE-PINNED c54.223 (`L-557`).  THIS RECEIPT IS ONE OF THE SEVEN THAT PRODUCED r2755's
+# ** CORRECTION, AND THE CORRECTION BROKE ITS OWN PIN. **  Each of the seven quotes P15's `9.4%`
+# ** because that is the sentence they were arguing about; r2755 replaced it with `8.2%` and none of
+# ** the seven was re-pinned, so all seven have failed every full run since.
+#   ⇒ *** A claim about the paper AS IT WAS is a claim about a COMMIT (c54.220's rule), so the
+#       historical quote is read at `b4f1931^` and the CURRENT text is asserted separately.  A
+#       receipt that argued for a correction must survive the correction landing. ***
+_BEFORE_R2755 = 'b4f1931^'
+
+
+def _p15_at(rev):
+    """CR_cosmology.tex as it read at a commit -- whitespace-flattened, same as the live read"""
+    import subprocess
+    out = subprocess.run(['git', 'show', f'{rev}:corpus/CR_cosmology.tex'],
+                         cwd=ROOT, capture_output=True, text=True, errors='replace').stdout
+    return re.sub(r'\s+', ' ', out)
+
+
 def main():
     print()
     print("  C46 -- where does P15's 9.4% come from?")
@@ -82,11 +101,20 @@ def main():
                     encoding='utf-8', errors='replace').read()
 
     # ⓵ the trace
-    check('⓵ P15\'s sentence cites C10: "$\\theta_{D}/\\theta_{*}$ larger by $9.4\\%$ ... '
-          '\\rcpt{C10_highl_ratio}"',
-          'larger by $9.4\\%$' in p15 and 'C10_highl_ratio' in p15)
-    check('and C10 cites C9 for it: "theta_D/theta_* is +9.26% larger (DERIVED, C9)"',
-          'DERIVED, C9' in rcpt('C10_highl_ratio.py'))
+    # ** RE-PINNED c54.223 (`L-557`): THIS RECEIPT ARGUED FOR THE EDIT AND THE EDIT LANDED. **  At
+    # `b4f1931^` the sentence read "larger by $9.4\%$"; r2755 made it `8.2\%` on this receipt's own
+    # finding.  *The historical quote is read at the commit; the current text is asserted separately.*
+    _p15_before = _p15_at(_BEFORE_R2755)
+    check('⓵ P15\'s sentence cited C10: "$\\theta_{D}/\\theta_{*}$ larger by $9.4\\%$ ... '
+          '\\rcpt{C10_highl_ratio}" at ' + _BEFORE_R2755,
+          'larger by $9.4\\%$' in _p15_before and 'C10_highl_ratio' in _p15_before)
+    check('⛭ AND THE EDIT LANDED: r2755 made it $8.2\\%$, and c54.223 carried the same correction '
+          'into `r` one paragraph later, which r2755 had left at 1.093',
+          'larger by $8.2\\%$' in p15 and 'r=\\theta_{D}/\\theta_{*}=1.082' in p15
+          and 'larger by $9.4\\%$' not in p15)
+    check('and C10 cited C9 for it: "theta_D/theta_* is +9.26% larger (DERIVED, C9)"',
+          'DERIVED, C9' in rcpt('C10_highl_ratio.py')
+          or 'DERIVED in C9' in rcpt('C10_highl_ratio.py'))
     c9 = rcpt('C9_sound_horizon_and_ratio.py')
     check('while C9 computes it from an $r_D$ ratio and an $r_s$ ratio -- it prints both and their '
           'quotient as theta_D/theta_*',

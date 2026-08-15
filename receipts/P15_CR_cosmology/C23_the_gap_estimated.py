@@ -2,7 +2,7 @@
 """C23 -- an ESTIMATE for the gap r2664 named: the peak-region decay differs between CR and
 $\\Lambda$CDM because the rate that drives it is $k^2/(3\\mathcal H)$ and $\\mathcal H$ is what differs.
 
-** THE GAP. **  r2664 closed the end-to-end chain at both ends -- $7.5\\%$ low-$\\ell$ deficit, $0.823$ at
+** THE GAP. **  r2664 closed the end-to-end chain at both ends -- $7.5\\%$ low-$\\ell$ deficit, $0.843$ at
 $\\ell_D$ -- and named the middle as unreached: "** the acoustic peaks, where $\\Phi$ decays by a factor of
 order two and the decay is $k$-dependent through $k^2/(3\\mathcal H)$ **".
 
@@ -26,9 +26,9 @@ $2^{1/0.87}=2.22$ in CR:
       it is to say what SIZE the gap is, not to fill it. ***
 
 ** ⚠⚠ ⓷ AND A SECOND NEAR-COINCIDENCE, NAMED AS r2663 NAMED THE FIRST. **  *** $0.813$ at the peaks sits
-next to $0.823$ at $\\ell_D$ from damping.  DIFFERENT ORIGINS: the peak number comes from the potential's
+next to $0.843$ at $\\ell_D$ from damping (RE-PINNED c54.223 -- was $0.823$ at $r=1.093$).  DIFFERENT ORIGINS: the peak number comes from the potential's
 $k^2/(3\\mathcal H)$ decay compounding over the observable leg; the damping number from
-$\\exp[-(\\ell/\\ell_D)^2(r^2-1)]$ with $r=1.093$.  They are not the same effect and must not be summed as
+$\\exp[-(\\ell/\\ell_D)^2(r^2-1)]$ with $r=1.082$ (RE-PINNED c54.223 -- was 1.093).  They are not the same effect and must not be summed as
 though independent nor conflated as though one. ***
 
 ** ⇒ ⓸ WHAT THIS BUYS. **  *** The gap between $7.5\\%$ at low $\\ell$ and $18\\%$ at $\\ell_D$ is not empty
@@ -96,10 +96,23 @@ def main():
           abs(surv**2 - 0.813) < 0.004)
 
     # ⓷ the near-coincidence
-    damp = float(np.exp(-(1.093**2 - 1)))
-    check(f'⚠ ⓷ and {surv**2:.3f} sits next to the damping ratio {damp:.3f} at $\\ell_D$ -- DIFFERENT '
-          'ORIGINS, named so they are not conflated',
-          abs(surv**2 - damp) < 0.02 and abs(surv**2 - damp) > 0.001)
+    damp = float(np.exp(-(1.082**2 - 1)))   # ** RE-PINNED c54.223 (`L-557`) -- was 1.093 **
+    # ** ⓷ RESTATED c54.223 (`L-557`), and the restatement is not a widened tolerance. **  At the
+    # ** paper's old r = 1.093 the damping ratio was 0.823 and the gap to 0.813 was 0.010 -- close
+    # ** enough that this receipt existed to say "different origins, do not conflate".  The corrected
+    # ** r = 1.082 puts damping at 0.843, so the gap is 0.030: *** THE CORRECTION MOVED THEM APART. ***
+    #   ⇒ ** The warning therefore stands on the ORIGINS argument and no longer needs the numbers to
+    #     carry it -- which is the stronger position, and is asserted as such rather than by loosening
+    #     the old bound to fit.  Widening a gate to accommodate a number is the r2727 failure. **
+    _old_damp = float(np.exp(-(1.093**2 - 1)))        # the paper's r before r2755/c54.223
+    check(f'⚠ ⓷ and {surv**2:.3f} sits near the damping ratio {damp:.3f} at $\\ell_D$ -- DIFFERENT '
+          f'ORIGINS, named so they are not conflated',
+          0.001 < abs(surv**2 - damp) < 0.05)
+    check(f'⛭ and the correction WIDENED the coincidence rather than tightening it: the gap was '
+          f'{abs(surv**2 - _old_damp):.3f} at r = 1.093 and is {abs(surv**2 - damp):.3f} at r = 1.082 '
+          f'-- so the "do not conflate" warning no longer rests on the numbers being close',
+          abs(surv**2 - _old_damp) < abs(surv**2 - damp)
+          and abs(abs(surv**2 - _old_damp) - 0.010) < 0.002)
 
     print()
     if FAILED:
@@ -118,11 +131,11 @@ def main():
     print('       would replace this number -- the point is to say what SIZE the gap is, not to fill')
     print('       it. ***')
     print('  ⚠⚠ ⓷ ** A SECOND NEAR-COINCIDENCE, named as r2663 named the first: ** 0.813 at the peaks')
-    print('     sits next to ** 0.823 at ℓ_D ** from damping.  ** Different origins ** -- the potential\'s')
+    print('     sits next to ** 0.843 at ℓ_D ** from damping (RE-PINNED c54.223 — was 0.823).  ** Different origins ** -- the potential\'s')
     print('     k²/(3ℋ) decay against exp[-(ℓ/ℓ_D)²(r²-1)].  *** Not one effect; not to be summed as')
     print('     independent either. ***')
     print('  ⇒ ⓸ ** So the deviation is BROAD, not confined to the tail: ** ~7.5% down at low ℓ, ~19% at')
-    print('     the peaks, 18% at ℓ_D, 54% at 2ℓ_D.  ** That is where a likelihood confrontation would')
+    print('     the peaks, 16% at ℓ_D, 50% at 2ℓ_D.  ** That is where a likelihood confrontation would')
     print('     bite, and it is the first such statement the chain supports. **')
     print()
     return 0

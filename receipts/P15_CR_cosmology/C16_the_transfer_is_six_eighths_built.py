@@ -27,9 +27,9 @@ computed and lands within $0.4\\%$. ***
 
 ** ⛭⛭⛭ ⓷ AND A $C_\\ell$ RATIO WITH NO FREE PARAMETER IS ALREADY IN THE PAPER. **  "The high-$\\ell$
 consequence follows with no free parameter: ** $C_\\ell^{\\rm CR}/C_\\ell^{\\Lambda\\rm CDM}
-=\\exp[-(\\ell/\\ell_D)^2(r^2-1)]$ with $r=1.093$ **, so the ratio is $0.82$ at $\\ell_D$".
+=\\exp[-(\\ell/\\ell_D)^2(r^2-1)]$ with $r=1.082$ **, so the ratio is $0.84$ at $\\ell_D$".
 
-  ** Recomputed: ** $\\exp[-(1)(1.093^2-1)]=0.823$ -- *** matches the paper's $0.82$. ***
+  ** Recomputed: ** $\\exp[-(1)(1.082^2-1)]=0.844$ -- *** matches the paper's $0.84$. ***
   ⇒⇒ *** That is a TRANSFER-LEVEL statement: a ratio of $C_\\ell$ spectra, no free parameter -- and it is
       exactly the shape r2647 identified as the transfer-free route (SAME multipole, two rates).  The
       route is not merely available; it has been walked at $C_\\ell$ level. ***
@@ -101,14 +101,14 @@ def main():
           '302.2' in p15 and '301' in p15)
 
     # ⓷ the ratio, recomputed
-    r = 1.093
+    r = 1.082          # ** RE-PINNED c54.223 (`L-557`) -- was 1.093; see the note below **
     ratio = float(np.exp(-(1.0**2) * (r**2 - 1)))
     check('⛭⛭⛭ ⓸ and a $C_\\ell$ ratio with no free parameter is already in the paper: '
           '"$C_{\\ell}^{\\rm CR}/C_{\\ell}^{\\Lambda\\rm CDM}=\\exp[-(\\ell/\\ell_{D})^{2}(r^{2}-1)]$ with '
-          '$r=1.093$"',
-          'with no free parameter' in p15 and '1.093' in p15)
-    check(f'and recomputing it at $\\ell=\\ell_D$ gives {ratio:.3f}, matching the paper\'s $0.82$',
-          abs(ratio - 0.82) < 0.005)
+          '$r=1.082$"',
+          'with no free parameter' in p15 and '1.082' in p15)
+    check(f'and recomputing it at $\\ell=\\ell_D$ gives {ratio:.3f}, matching the paper\'s $0.84$',
+          abs(ratio - 0.84) < 0.005)
 
     print()
     if FAILED:
@@ -122,8 +122,8 @@ def main():
     print('  ⛭⛭ ⓶ ** And the projection is calibrated: ** l_* = D_M/r_s = 302.2 against the measured 301')
     print('     -- ** the k -> l map\'s one CR-specific input, within 0.4%. **')
     print('  ⛭⛭⛭ ⓷ ** And a C_l RATIO with no free parameter is already in the paper: **')
-    print('     C_l^CR/C_l^LCDM = exp[-(l/l_D)^2 (r^2-1)], r = 1.093 ⇒ ** 0.823 at l_D, matching its')
-    print('     stated 0.82. **')
+    print('     C_l^CR/C_l^LCDM = exp[-(l/l_D)^2 (r^2-1)], r = 1.082 ⇒ ** 0.844 at l_D, matching its')
+    print('     stated 0.84. **')
     print('     ⇒⇒ *** That is exactly the shape r2647 identified as the transfer-free route -- SAME')
     print('       multipole, two rates.  The route is not merely available; it has been walked at C_l')
     print('       level. ***')

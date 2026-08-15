@@ -64,7 +64,7 @@ def main():
     print()
     print('  C37 -- is L-814 a matched comparison?')
     print()
-    r, lD = 1.0926, 1400.0
+    r, lD = 1.0816, 1400.0   # ** RE-PINNED c54.223 (`L-557`) -- was 1.0926 **
     ls = np.linspace(30, 2500, 215)
     bw = (2500-30)/215
     env = np.exp(-(ls/lD)**2*(r**2 - 1))

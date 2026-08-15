@@ -74,6 +74,25 @@ def body(f):
     return b[:j] if j > 0 else b
 
 
+
+# ** ⛭⛭ RE-PINNED c54.223 (`L-557`).  THIS RECEIPT IS ONE OF THE SEVEN THAT PRODUCED r2755's
+# ** CORRECTION, AND THE CORRECTION BROKE ITS OWN PIN. **  Each of the seven quotes P15's `9.4%`
+# ** because that is the sentence they were arguing about; r2755 replaced it with `8.2%` and none of
+# ** the seven was re-pinned, so all seven have failed every full run since.
+#   ⇒ *** A claim about the paper AS IT WAS is a claim about a COMMIT (c54.220's rule), so the
+#       historical quote is read at `b4f1931^` and the CURRENT text is asserted separately.  A
+#       receipt that argued for a correction must survive the correction landing. ***
+_BEFORE_R2755 = 'b4f1931^'
+
+
+def _p15_at(rev):
+    """CR_cosmology.tex as it read at a commit -- whitespace-flattened, same as the live read"""
+    import subprocess
+    out = subprocess.run(['git', 'show', f'{rev}:corpus/CR_cosmology.tex'],
+                         cwd=ROOT, capture_output=True, text=True, errors='replace').stdout
+    return re.sub(r'\s+', ' ', out)
+
+
 def main():
     print()
     print('  C24 -- what does the two-leg substitution change?')
@@ -109,7 +128,7 @@ def main():
           'to its measured value fixes the onset redshift' in p15)
     check(f'so only $r_D$ moves, by {100*(rd-1):+.1f}% -- against P15\'s stated $+9.4\\%$, the gap being '
           'that the 13% is LOCAL while the integrals ACCUMULATE',
-          abs(100*(rd-1) - 6.8) < 0.3 and '9.4' in p15)
+          abs(100*(rd-1) - 6.8) < 0.3 and '9.4' in _p15_at(_BEFORE_R2755) and '8.2' in p15)
 
     print()
     if FAILED:

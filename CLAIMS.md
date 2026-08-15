@@ -3,7 +3,7 @@ name: claims
 kind: RECORD
 description: THE CLAIMS REGISTER — who is holding which files right now. Claim before you edit; release when you push. Checked by corpus/check_claims.py.
 sources: [chat]
-current: r2776+c54.222
+current: r2785+c54.223
 ---
 
 # CLAIMS — who is holding what, right now
@@ -83,7 +83,19 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| *(none — 54's c54.222 rows released with the work)* | — | — | — |
+| `PROTECTED_OPEN.md` | 54 | c54.224 | the four duplicated rows only — `PO-4`, `PO-5`, `PO-6`, `PO-7`, duplicated a SECOND time by `19139ed` |
+| `receipts/L549_coupled_counterterms/Q1_…` · `receipts/L555_merge_duplication/M1_…` | 54 | c54.224 | both are mine and both DETECTED the re-duplication; re-pinned with it |
+
+> ⌗ **54's c54.223 ROWS RELEASED HERE, WITH THE WORK.** *· `corpus/CR_cosmology.tex` — **`sec:envelope-consequence`'s
+> `r` and its two suppression figures only**, plus `r` named inline as `\theta_D/\theta_*` so the two paragraphs
+> cannot part again, plus one `\rcpt{}` banking `L-557`. *· ⚠ **fourteen receipts under `receipts/P15_CR_cosmology/`
+> and the `storyboard_receipts/C10_highl_ratio.py` ORIGIN — CROSS-BAND, and said so first.** *Eight carried the
+> stale value silently and seven had been failing every full run since r2755; all fifteen re-pinned, each keeping
+> its own finding and each carrying the historical value at a SHA. **All 122 P15 receipts pass.** Routed as item 42;
+> reverse any of it if you want it another way.* *· `corpus/make_receipt_appendix.py` — **one glyph** (`✘` → `(x)`),
+> because r2784's marker reached a live INDEX row and stopped every appendix generating. *· `receipts/INDEX.md` —
+> `L-557`'s row, and one sentence of my own `L-556` row restored to what it said before r2784 reworded it.
+> *· `THE_LIVE_ARC.md`, `ABSORPTION.md`, `FOR_56.md` — in band, declaration, and item 42.
 
 > ⌗ **54's c54.222 ROWS RELEASED HERE, WITH THE WORK.** *· `corpus/index_rows.py` and
 > `corpus/check_appendix_current.py` — **new files, no other node was in them**. *· `corpus/check_receipts.py`,

@@ -84,6 +84,25 @@ def theta_D(zonset):
     return 100 * (np.sqrt(n / d) - 1)
 
 
+
+# ** ⛭⛭ RE-PINNED c54.223 (`L-557`).  THIS RECEIPT IS ONE OF THE SEVEN THAT PRODUCED r2755's
+# ** CORRECTION, AND THE CORRECTION BROKE ITS OWN PIN. **  Each of the seven quotes P15's `9.4%`
+# ** because that is the sentence they were arguing about; r2755 replaced it with `8.2%` and none of
+# ** the seven was re-pinned, so all seven have failed every full run since.
+#   ⇒ *** A claim about the paper AS IT WAS is a claim about a COMMIT (c54.220's rule), so the
+#       historical quote is read at `b4f1931^` and the CURRENT text is asserted separately.  A
+#       receipt that argued for a correction must survive the correction landing. ***
+_BEFORE_R2755 = 'b4f1931^'
+
+
+def _p15_at(rev):
+    """CR_cosmology.tex as it read at a commit -- whitespace-flattened, same as the live read"""
+    import subprocess
+    out = subprocess.run(['git', 'show', f'{rev}:corpus/CR_cosmology.tex'],
+                         cwd=ROOT, capture_output=True, text=True, errors='replace').stdout
+    return re.sub(r'\s+', ' ', out)
+
+
 def main():
     print()
     print('  C25 -- integrate the rate difference over the history')
@@ -102,7 +121,7 @@ def main():
           f'z=3000 -> {vals[3000]:+.1f}%, z=10000 -> {vals[10000]:+.1f}%',
           6.5 < vals[1200] < 7.5 and 9.5 < vals[3000] < 11)
     check("and P15's $+9.4\\%$ sits between the z=2000 and z=3000 rows",
-          vals[2000] < 9.4 < vals[3000] and '9.4' in p15)
+          vals[2000] < 9.4 < vals[3000] and '9.4' in _p15_at(_BEFORE_R2755) and '8.2' in p15)
     check('while r2686\'s point-scaling $+6.8\\%$ is the $z\\to z_{\\rm rec}$ limit, below every '
           'integrated value',
           all(v > 6.8 for v in vals.values()))

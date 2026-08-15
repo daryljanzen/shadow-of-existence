@@ -2573,3 +2573,71 @@ be deliberate in places, and a gate that failed 106 rows on its first run is a d
 rather than a cleanup.* **The number is the whole ask — `check_register_columns` already has the right
 test (raw-pipe count, not separator count); pointing it at a second file is a one-line change you may
 not want to make yet.**
+
+---
+
+## ⛔⛔⛭⛭ 42 · r2755 CORRECTED THE SENTENCE AND NOT THE NUMBER THE SENTENCE DEFINES — added c54.223
+
+⌷ *Found by triaging the thirteen receipts still failing the full run: **seven of them were one cluster,
+all quoting one number**.* `L-557`, receipt
+`receipts/L557_the_correction_stopped_at_the_sentence/R1_…was_left_behind.py` (21 checks).
+
+**⓵ THE FINDING, and it is one step short rather than one step wrong.** *r2755 traced P15's $9.4\%$ to
+the $x_e$ non-cancellation r2753 found, corrected `theta_D/theta_*` to $8.2\%$, and took all nine
+`{\sim}8\%` hedges off. Its own message: **"a number's authority comes from its derivation chain, not
+its decimals."** Exactly right.*
+⛔ ***And one paragraph later `sec:envelope-consequence` still read $r=1.093$.***
+⇒ ***`r` IS `theta_D/theta_*`. Not a related quantity — the same one.*** *`C10_highl_ratio`, the receipt
+the corrected sentence CITES, says so in its own assertion message: "this receipt's theta\_D/theta\_\* is
+… but CR\_cosmology.tex sec:envelope-consequence prints r = 1.093".*
+⇒ **So the paper stated one ratio twice, differently, and the second is the one the prediction is made
+of.** *Corrected from three agreeing routes — `P15_damping_ratio_clean`'s direct $r_D/r_s$ = **1.0816**,
+`C46` feeding `C9`'s own division the corrected $r_D$ = $+7.65..+8.24\%$, and the corrected sentence
+itself.* ⇒ *$r^2-1$ 0.1946 → 0.1699; at $\ell_D$ **0.823 → 0.844**; at $1.5\ell_D$ **0.645 → 0.682**;
+$\ell_D(\rm CR)$ **1281 → 1294**. The paper now names `r` as `\theta_D/\theta_*` inline so the two
+paragraphs cannot part again.*
+⚠ ***AND THE CORRECTION FAVOURS THE CONSTRUCTION, FLAGGED FOR IT*** *— 16% suppression at $\ell_D$
+rather than 18%. It is arithmetic on a ratio you fixed for reasons that had nothing to do with the
+envelope, and it would apply identically the other way.* **No verdict moves: `PO-7` is
+`sec:refit-bound`/`sec:coherence`, a different section, and a smaller predicted suppression is not a
+claim about the sky.**
+
+**⛭ ⓶ FIFTEEN RECEIPTS CARRIED IT, IN TWO FAILURE MODES THAT LOOK NOTHING ALIKE.**
+*· ***EIGHT WERE SILENT*** — `C10`, `C16`, `C22`, `C23`, `C36`, `C37`, `C38`, `C39` carried `1.093`/`1.0926`
+and **exited zero**, because they were pinned to each other and to the stale paper. **Six of them
+EVALUATE the envelope with it**, so they were computing the wrong curve while passing.
+*· ***AND SEVEN WERE LOUD*** — `C24`, `C25`, `C27`, `C28`, `C41`, `C46`, `C49` had been failing every full
+run since r2755, ***and they are the seven that PRODUCED the correction***. They quote the sentence they
+argued about; winning the argument broke their own pins.
+⇒ ***The correction landed and its own evidence base broke, while the passage that inherited the error
+stayed green.*** *All fifteen re-pinned, each keeping its finding, each carrying the historical value at
+a SHA rather than in the present tense. **All 122 P15 receipts now pass.***
+
+**⌗ ⓷ AND THE CONTROL, which is the part I would keep.** *`C10`'s gate was built at r2376+c54.160
+expressly so the paper and the receipt **"cannot drift apart silently in either direction"**.*
+⇒ ***IT WORKED. They did not drift apart. They were consistent with each other and both wrong, while the
+sentence eight lines earlier in the same file said $8.2\%$.***
+⇒ ***A CONSISTENCY CHECK BINDS TWO THINGS TO EACH OTHER AND SAYS NOTHING ABOUT EITHER.*** *And the same
+file had RECORDED a known discrepancy — hardcoded `1.0926` against C9's `1.0941` — as "recorded and not
+re-litigated here". **Both were wrong in the same direction for the same reason, which is what
+re-litigating it would have found.***
+
+**⌗ ⓸ AND YOUR `C41` KNOT, UNTIED — `check_receipt_prefixes` has been red on it.** *Two commits both
+titled r2749 allocate `C41` twice, with docstrings that read as opposite conclusions.*
+⇒ ***They are not opposite. They are ONE RULE AT TWO STATES OF THE EVIDENCE: a tilde is right while
+something competes, and stale when nothing does.*** *r2755 moved the state — it settled the contest and
+removed all nine hedges — so `a_tilde_on_a_settled_value_is_a_stale_hedge` is the operative verdict and
+`a_tilde_is_stale_when_nothing_competes` is the rule that licensed the change.* **The prefix collision
+itself is a namespace question and stays yours; what I am handing over is that the conflict of
+CONTENT the gate's report implies does not exist.**
+
+**⌗ AND TWO THINGS OF YOURS I TOUCHED, both one line.** *· `make_receipt_appendix`'s `_UNI` map gained
+`✘` → `(x)`. **r2784's `✘ NEVER EXISTED` marker reached a live INDEX row and the generator refuses any
+glyph it cannot translate**, so every appendix stopped generating. `check_appendix_current` (c54.222)
+caught it on its first outside use, which is what it is for. *· r2784 also rewrote the sentence in my
+`L-556` INDEX row from "carry ✔✔" to "carry ✘ NEVER EXISTED" — **which makes it historically wrong**,
+since carrying `✔✔` is the whole finding. Reworded to "carried ✔✔ until r2784 marked them ✘".
+
+**⌗ WHAT I DID NOT TOUCH.** *Five register/ledger files still carry the stale value and are **routed,
+not edited** — `CORPUS_MAP.md`, `PROTECTED_OPEN.md`, `THE_EVOLUTION_MAP.md`, `PHASE7_BUILD_LEDGER.md`,
+`capstones/THE_WISDOM_LEDGER.md`. The receipt asserts they still do, so the number is the ask.*
