@@ -50,7 +50,7 @@ computed; the propagating-regime mode is the flagged remainder.
 finite path + energy-independent condition). Informs L-221/family-6, PO-11, B46, B48, L-828, P14. Routed
 to 56. **
 
-Written r2802 (cc54, L-829). Asserts against the corpus's own f and the leaf/tortoise integrals
+Written r2803 (cc54, L-829). Asserts against the corpus's own f and the leaf/tortoise integrals
 symbolically and numerically -- never the register. Stated for reversal.
 """
 import numpy as np
