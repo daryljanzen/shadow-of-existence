@@ -49,6 +49,7 @@ layer, not the corpus, turned out to be what was broken.*
 | | `check_cross_row_dupes` | one finding stored twice — which CAUSES the above |
 | out to reports | `check_strikes_reported` | a struck row still offered as live work |
 | out to leads | `check_leads_follow_rows` | a lead outliving its row |
+| | `check_lead_framings` | a LIVE lead pointing at the wrong question |
 | down to source | `check_heads_anchored` | a state nobody can trace to a paper |
 | the task list | `check_owed_are_tasks` | findings filed as work |
 | the summary | `check_status_honesty` | an open row described as closed |
@@ -83,10 +84,9 @@ their own withdrawal in the same sentence. **The arc marks in its own voice wher
 with a symbol.*** So the debt was smaller than the count suggested, which is the direction a debt should
 be allowed to move only after it is read.
 
-**NEXT: `THE_LIVE_ARC`'s cross-lead duplication and stale framings.** *`L-221` was found live and
-**stale-framed** at r2832 — posing `PO-5` as a question four route-closures out of date. **A live lead
-with a dead framing sends the next node at the wrong question**, and nothing checks for it. 26 live
-leads; each one's framing to be read against its row's `▣ CURRENT STATE` head.*
+**⌗ DONE r2833 — 26 live leads read against their rows' heads.** *One genuine stale framing: **`L-165`, 357 revisions out of date and live**, calling the closed-form nonlinear $\Lambda>0$ solution "untouched" when `PO-6`'s head says its expansion parameter is NAMED, and saying "what remains is defining the sum" when the row says the remainder is joint satisfiability. Marked, and `check_lead_framings` now holds it.* ⌗ *A revision LAG turned out not to be the signal — most lagging leads are records of completed work. **The signal is a lead calling something untouched that its row reports settled.***
+
+**NEXT: the 598 receipts.** *`kills/PO-9.md` proved a receipt can pass its own run and still assert two verdicts in its text — a heading saying DOES NOT CLEAR beneath a header saying NOW CLEARS. **Nothing has ever read a receipt for internal contradiction**; they are only run. Bounded: 598 files, one pattern.*
 
 ⌗ *After that: `CORPUS_MAP` at 5.08M is the largest unswept surface in the programme and nothing has
 ever checked it. **Not bounded — size it before starting it.***
