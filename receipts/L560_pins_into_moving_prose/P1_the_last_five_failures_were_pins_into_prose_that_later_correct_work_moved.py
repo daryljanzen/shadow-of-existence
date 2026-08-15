@@ -164,9 +164,19 @@ def main():
           'identity"',
           'rehoming pass 1' in git('log', '--format=%s', '-1', '989fc4b'))
     w1 = src('L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py')
-    check('⚠ and this file does NOT read whether the CONTENT survives under other words: W1 states the '
-          'count and says so in terms, and it is routed rather than interpreted',
-          'ROUTED RATHER THAN INTERPRETED' in w1 and 'routed rather than made here' in w1)
+    # ** ⛭ AMENDED c54.228, and the amendment is the receipt's own subject arriving once more. **  This
+    # ** asserted W1's CURRENT text; c54.228 replaced that text, having found the measurement wrong.
+    #   ⇒ *** So the claim is pinned to `50f0d3f` (c54.226, where it was true) and the ANSWER is asserted
+    #       against the live file -- which is exactly the repair this receipt is about, applied to it. ***
+    w1_then = git('show', '50f0d3f:receipts/L207_the_bend/'
+                          'W1_what_remains_between_the_wall_and_a_curve_dynamics.py')
+    check('⚠ at 50f0d3f (c54.226) this file did NOT read whether the CONTENT survives under other '
+          'words: W1 stated the count and said so in terms, routed rather than interpreted',
+          'ROUTED RATHER THAN INTERPRETED' in w1_then and 'routed rather than made here' in w1_then)
+    check('⛭ AND c54.228 (`L-561`) ANSWERED IT -- against this fork: the probe compared STRINGS where '
+          'the question was about CLAIMS, all eight claims survive in body text, and W1 now carries the '
+          'corrected measurement with the old verbatim count beside it',
+          'CORRECTED c54.228' in w1 and 'ARITHMETIC OF THE OLD PROBE' in w1)
 
     print()
     if FAILED:

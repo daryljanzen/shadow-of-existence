@@ -1,11 +1,10 @@
 
-  RUN-ALL-RECEIPTS -- 563 registered receipt(s), 6 at a time, 900s each, each from ITS OWN DIRECTORY
-  TREE-DIGEST: c8d622ba1b7bec15
+  RUN-ALL-RECEIPTS -- 575 registered receipt(s), 4 at a time, 1200s each, each from ITS OWN DIRECTORY
+  TREE-DIGEST: a42c36a55d42d0f1
 
-    [slow] receipts/P16_cosmogenesis_paper/P16_the_scalar_monodromy_is_four_pi_over_rho.py  -- exceeded 900s
 
-  562 pass, 0 fail, 1 over timeout, in 1177s wall
-  slowest that passed: P16_validate_bbn.py 219s, P15_the_second_arm_actually_run.py 163s, I10_the_constraint_propagation_is_symmetry_free.py 138s, P15_the_collapse_leg_is_scale_invariant.py 117s, Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py 112s
+  575 pass, 0 fail, 0 over timeout, in 594s wall
+  slowest that passed: P16_validate_bbn.py 159s, C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py 136s, I10_the_constraint_propagation_is_symmetry_free.py 112s, P15_the_second_arm_actually_run.py 112s, Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py 104s
 
   Every registered receipt runs, in place, and exits 0 -- so every assertion in the
   reproducibility layer was actually evaluated.

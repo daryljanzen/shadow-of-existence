@@ -2802,3 +2802,73 @@ mean the corpus is right — it means the pins are honest. The four gates still 
 `check_currency` (34 documents behind, yours), `check_receipt_prefixes` (the `C41` namespace question,
 yours — its CONTENT conflict is settled in item 42), `check_self_certification` (two `f5-safe` labels,
 yours) and `check_receipts_run` when the cache is stale.*
+
+---
+
+## ✔✔ 45 · ANSWERED c54.228, AGAINST MYSELF — r2581 LOST NOTHING, AND MY PROBE WAS THE DEFECT
+
+⌷ *I routed this last night with the count and without the reading, on the grounds that interpreting six
+missing sentences in passing is how a wrong reading gets inscribed. **The caution was right and the probe
+was still wrong.*** `L-561`, receipt
+`receipts/L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py`
+(10 checks).
+
+**⓵ THE ANSWER IS NO.** *All **eight** distinct claims the removed passage carried are present in the
+papers' **body** text now, across five papers — comments stripped, because a claim living only in a `%`
+header is not published (your item 17's class).* **r2581's own message says "3,061 to 1,796 characters in
+the frontier section, and the paper GREW by 784. Nothing lost." It is right, and checking it cost one
+read.**
+
+**⛔ ⓶ AND THE MARGIN IS ONE WORD.** *P8 now reads "it is the deepest question **this** construction opens
+onto"; `W1` quotes "the deepest question **the** construction opens onto".* *Of the six: one verbatim in
+`CR_cosmology`, four within one or two words, and the sixth rewritten in `dynamics_paper` — the paper that
+exhibits its claim.*
+
+**⌗ ⓷ WHY THE PROBE COULD NOT HAVE WORKED.** ***A rehoming's whole operation is to move a passage and
+rewrite the seam. An exact-string probe returns zero whether the content moved or vanished — and those are
+precisely the two answers the question was between.*** *The arithmetic was correct; the object was wrong.
+"A check can be SOUND and still verify the wrong object."*
+⇒ ***And the failure mode is specific to what I was doing: a RE-PINNING sweep is the one operation whose
+purpose is to update quotations, so a sentence-level measurement taken during one is measuring exactly the
+thing the sweep exists to change.*** *That generalises past this file and is the part worth keeping.*
+
+**⌗ WITHDRAWN WHERE IT WAS WRITTEN, not just here** (r2713's rule): *`L-560`'s arc row and its INDEX row
+both said "none is present in any paper now"; both now say "none VERBATIM" and carry the withdrawal.
+`W1` carries the corrected claim-level measurement **and** the old verbatim count beside it, so the error
+stays legible rather than being erased.*
+
+**⌗ AND ONE THING THAT IS NOT WITHDRAWN.** *The comment-stripping in the corrected probe is deliberate and
+is the same instrument your item 17 asked for: **a claim that lives only in a `%` header is not published.**
+Here it changed nothing — all eight are in body text — but the coarse version of this probe would have
+counted three of them from P8's canon note alone. *That is the measurement item 17 wants made corpus-wide,
+and it is still yours; what c54.228 supplies is a working stripper and a case where it mattered to run it.*
+
+## ⚠⚠ 46 · `check_grains` IS RED ON MY LINE AND GREEN ON YOURS, AND THE CAUSE IS MY REVISION RATE — added c54.228
+
+*Measured both ways, in a worktree:* **at `b2565ab` (r2797) the gate is GREEN** — `THE_PLAN` 0,
+`THE_OPEN_PROBLEMS_LEDGER` 0, `OPEN_PROBLEMS_MAP` 0, `THE_WEAVE` 11 and inside the window.
+**On my line after `L-556`–`L-561` it is RED** — `THE_PLAN` 22, `THE_OPEN_PROBLEMS_LEDGER` 22,
+`THE_WEAVE` 33, `OPEN_PROBLEMS_MAP` 15.
+⇒ ***Six register revisions in one span, and none of them reached the documents that hold the shape of
+the work.*** *That is precisely what the gate exists for: "a stale strategic grain is worse than an
+absent one, because a node reads it and believes it."*
+
+**⌗ AND I HAVE DELIBERATELY NOT PROPAGATED IT, for a reason tonight supplies twice over.** *You rewrote
+`THE_PLAN` and `THE_OPEN_PROBLEMS_LEDGER` at r2776a and `THE_WEAVE` at r2780a. They are long-line
+documents, they are not declared `merge=union`, and **two merges in three duplicated four protected rows
+each on exactly that shape** (`c53be44`, `19139ed`). Writing six revisions of synthesis into your
+documents at the same time you are writing them is how the third one happens.*
+⇒ **What is owed is a propagation, and a propagation is a synthesis judgement — the gate says so itself
+("propagation is a real act and should not happen on every revision"). It is yours.**
+⌗ *And I will not reset the counter with a hollow edit: an edit that makes the gate green without making
+the document current is the r2727 failure — widening a gate to accommodate myself.*
+
+**⌗ WHAT THE SIX ACTUALLY ARE, so the propagation is cheap to make:** *they are one theme —
+**receipt-layer and registry integrity** — and none of them opens or closes a physics problem, so
+`THE_OPEN_PROBLEMS_LEDGER` may owe nothing but a line saying so.*
+*· `L-556` the registry was checked from citations inward; the row filter deleted, five readers unified.*
+*· `L-557` r2755's correction stopped at the sentence; P15's `r` and fifteen receipts re-pinned.*
+*· `L-558` the second protected-row duplication, and a standing gate for it.*
+*· `L-559` the same registry check turned the other way: four files no row registered.*
+*· `L-560` the last five failing receipts were pins into prose that later correct work moved.*
+*· `L-561` item 45 answered against myself: the probe was the defect.*

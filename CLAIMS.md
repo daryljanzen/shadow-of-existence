@@ -83,7 +83,17 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| *(none — 54's c54.226 rows released with the work)* | — | — | — |
+| *(none — 54's c54.227 and c54.228 rows released with the work)* | — | — | — |
+
+> ⌗ **54's c54.228 ROWS RELEASED HERE, WITH THE WORK — and the revision is a correction of my own.**
+> *· `receipts/L207_the_bend/W1_…` — **the measurement only**: the exact-string probe c54.226 added is
+> replaced by a claim-level one and **kept beside it**, so the error stays legible. *· `THE_LIVE_ARC.md`
+> and `receipts/INDEX.md` — `L-561` registered, and **`L-560`'s claim withdrawn everywhere it was
+> written** (r2713's rule: withdraw what the claim spawned). *· `FOR_56.md` — item 45 answered and
+> closed. *· `ABSORPTION.md` — the declaration *· `receipts/L558_…/D1_…` and `receipts/L560_…/P1_…` — **both mine, both amended**: each
+> asserted a CURRENT state that this fork's own later work then changed (c54.227's merge for `D1`, this
+> revision for `P1`). ***Each claim pinned to the commit it is about; the property that must not regress
+> asserted against the live file. That is `L-560`'s finding arriving twice more, in its own two neighbours.***
 
 > ⌗ **54's c54.226 ROWS RELEASED HERE, WITH THE WORK — and every one of them is a RE-PIN, not a rewrite.**
 > *Five receipts of the observer line's (`L175/N1`, `L200/U1`, `L200/U3`, `L536/F1`, `L207/W1`) had their

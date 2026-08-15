@@ -165,9 +165,20 @@ def main():
     check(f'⓹ REPAIRED: every protected ID now appears exactly once ({len(live)} IDs, '
           f'{sum(len(v) for v in live.values())} rows)',
           all(len(v) == 1 for v in live.values()) and len(live) == 14)
-    check('⇒ and each surviving row is the OBSERVER side byte-for-byte -- r2778\'s strike on `PO-4` '
-          'restored as it stood, not reviewed',
-          all(live[k][0][2] == a[k][0][2] for k in IDS) and live['PO-4'][0][1] is True)
+    # ** ⛭ AMENDED c54.228: this compared the LIVE file against `55f4605`, so it broke the moment the
+    # ** observer line edited those rows again (r2786-r2797, carried in by c54.227's merge).  *** A
+    # ** before/after identity is a claim about the commit where the repair LANDED, not about HEAD. ***
+    # ** The repair is pinned at `6fd26f9` (c54.224); what the live file must still satisfy is the
+    # ** PROPERTY -- one row per id, and PO-4 struck -- which is asserted separately and is what a
+    # ** regression would break. **
+    AT_REPAIR = '6fd26f9'
+    repaired = rows(git('show', f'{AT_REPAIR}:PROTECTED_OPEN.md'))
+    check(f'⇒ and at {AT_REPAIR} each surviving row was the OBSERVER side byte-for-byte -- r2778\'s '
+          f'strike on `PO-4` restored as it stood, not reviewed',
+          all(repaired[k][0][2] == a[k][0][2] for k in IDS) and repaired['PO-4'][0][1] is True)
+    check('⛭ and the PROPERTY still holds in the live file after c54.227 merged r2797 on top: one row '
+          'per protected id, and `PO-4` still struck',
+          all(len(v) == 1 for v in live.values()) and live['PO-4'][0][1] is True)
 
     # ⓺ why nothing standing saw it
     GATES = ('check_row_state', 'check_kills', 'check_open_ledger', 'check_family_pointers',
