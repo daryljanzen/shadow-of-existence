@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2809 — 2026-08-12 (main line). **$1/\sqrt3$ IS RIGHT KIND, RIGHT PLACE — AND THE NUMERICAL CLAIM IS DECLINED.**
+
+**⛭⛭ ⓵ P14 LOCATES THE OBSTRUCTION AFTER THE DESCENT.** *"$[g^2]=L^{D-4}$, so at the substrate's own $D=5$ a
+Yang--Mills coupling \emph{is} a length and the substrate has exactly one---**the obstruction appearing only after
+the descent**."*
+
+    D=5:  [g^2] = L^1  -> a LENGTH.  The substrate has one: alpha.  No number needed.
+    D=4:  [g^2] = L^0  -> DIMENSIONLESS.  A number IS needed.
+
+⇒ ***The descent must turn a length into a pure number, which means dividing by another length from the same
+geometry. **And $1/\sqrt3 = r_N/\alpha$ is exactly that.****
+
+**⛔ ⓶ AND THE NUMERICAL CLAIM IS DECLINED, WITH THE REASON.** *$\alpha_s(M_Z)=0.1179$ gives $g=1.217$; against
+$1/\sqrt3$ the ratios are $2.108$, $2.566$, $0.204$ — none clean.*
+⇒ ***And that is not why this line stopped. **It stopped because $\alpha_s$ RUNS**: a running coupling has no single
+value to be falsified against, so P14's "falsifiable against ONE QUANTITY" is sharp about the KIND and silent about
+WHICH.***
+
+⌗ ***Had the ratios come out clean there would have been a finding and no argument. **That is the shape of the trap:
+the structural fit is real and it creates an appetite for the numerical one.****
+
+**⓷ SO `PO-5` GAINS A CANDIDATE AND A NAMED OBSTACLE** — *the scale at which P14's "one quantity" is read. **Until
+that exists no candidate can be falsified**, which is a gap in operationalisation rather than in P14's argument.*
+
+**⛭ THE RULE:** ***a structural match makes the numerical test more tempting and no more valid. **When a candidate
+lands in the right place, that is the moment to state what would falsify it — not to check whether it happens to
+fit.****
+
 ### Revision r2808 — 2026-08-12 (main line). **cc54's RETRACTION IS LOAD-BEARING *FOR* r2800's VERDICT.**
 
 **⓵ THE RETRACTION.** *cc54 withdrew a probe giving $r^{\pm i\lambda}$: "P14 derives $|r|^{\pm\lambda}$ (real

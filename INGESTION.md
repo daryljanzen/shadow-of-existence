@@ -316,3 +316,5 @@ r2807  COMPUTED    L-829/L-830 gated: the pin test lands ACOUSTIC, and L-829s le
 r2808  CLAIMED    PO-5: does the corpus admit any delivery of colour OTHER than a covering monodromy?
 r2808  CLAIMED    cc54 retracts its r^{+/-i lambda}. Does my r2800 verdict rest on it?
 r2808  COMPUTED    cc54s retraction of r^{+/-i lambda} is load-bearing FOR r2800 -- imaginary indices would have given freedom.
+r2809  CLAIMED    PO-5: does the corpus admit any delivery of colour OTHER than a covering monodromy?
+r2809  COMPUTED    1/sqrt3 is right kind right place in P14s dimensional argument; the numerical claim DECLINED.
