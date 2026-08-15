@@ -357,3 +357,4 @@ r2831  CLAIMED    rows are append-only and carry superseded text as current. Fin
 r2831  INSTRUMENT  21 overturned blocks marked, 29,263 duplicate bytes removed, one overwritten error-record restored.
 r2832  INSTRUMENT  every row given a CURRENT STATE head; PO-3 and PO-9 struck on answered objects; 50K of duplication removed.
 r2833  INSTRUMENT  STATE_OF_THE_STATE opened; 26 leads read (L-165 stale); 606 receipts swept clean.
+r2834  INSTRUMENT  CORPUS_MAP swept: 19 overturned entries said nothing, all marked. check_map_overturns built.

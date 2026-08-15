@@ -65,7 +65,7 @@ appendix and the body agree.** Not gated — done once, by reading.*
 
 | surface | size | state |
 |---|---|---|
-| `CORPUS_MAP.md` | 5,084,410 | **never swept.** The revision log — append-only by design, but nothing has checked whether its *verdicts* were superseded |
+| `CORPUS_MAP.md` | 5,084,410 | **SWEPT r2834.** *2,156 entries; **28 named as overturned and 19 said nothing** — including `r696`, the cyanide-face implosion, sitting unmarked beside `r697`'s retraction of it. All marked at their own heads.* `check_map_overturns` holds it |
 | `THE_LIVE_ARC.md` | 980,454 | **9 overturns READ r2833 — all nine are SELF-MARKING**, stating their own withdrawal in the same sentence ("I MUST WITHDRAW c54.138's TIGHTENING", "THE COUNT IS WITHDRAWN r2510"). ⌗ *That is the correct form; the register's separate-mark convention is not required here.* **Still unchecked: cross-lead duplication, and whether any live lead's framing is stale** (two were, r2832) |
 | `THE_PLAN.md` | 517,382 | only for struck rows |
 | `FOR_56.md` | 248,149 | **never read this session** |
@@ -88,10 +88,9 @@ be allowed to move only after it is read.
 
 **⌗ DONE r2833 — 606 receipt files swept, zero defects.** *A debt discharged by reading, not by assuming. **And the method matters more than the result**: the scan was first run against the one instance known to have the defect, because a pattern that cannot catch its own case reports clean whether or not the corpus is.*
 
-**NEXT: `CORPUS_MAP.md`, 5,084,410 characters, never swept.** *It is the revision log — append-only by design, so most of it is correctly historical. **The question is whether any of its VERDICTS are stated as current and have since been overturned.** ⌗ **Not bounded. First move is to SIZE it**: count the verdict-shaped statements and how many carry a later contradiction, before deciding whether a sweep is a turn's work or a week's.*
+**⌗ DONE r2834 — and sizing it first is what made it workable.** *5.08M characters sounded unbounded. **Counted: 32 overturn statements, 29 distinct victims, 19 unmarked.** A morning's work, not a week's — and **the gate then found two more my hand-sweep had missed**, which is the argument for building the gate rather than declaring the sweep done.*
 
-⌗ *After that: `CORPUS_MAP` at 5.08M is the largest unswept surface in the programme and nothing has
-ever checked it. **Not bounded — size it before starting it.***
+**NEXT: `THE_PLAN.md` (517,382) and `THE_OPEN_PROBLEMS_LEDGER.md` (211,923).** *Both checked only for struck rows. **Neither has been read for its own stale verdicts** — the `CORPUS_MAP` pattern applied to the two documents that say what to DO rather than what happened. ⌗ Size first: count overturn statements and unmarked victims before deciding the shape.*
 
 ---
 
