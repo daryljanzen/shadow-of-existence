@@ -346,3 +346,5 @@ r2823  LATENT      PO-5 is gated on PO-11 -- a composite of bound modes is bound
 r2825  LATENT      VERDICT: the analytic sqrt(f). Self-adjointness applies where r is spatial, and the wall is not.
 r2826  CLAIMED    the PO-10/PO-7 verdict was never Daryls. Close what closes. Build a gate.
 r2826  INSTRUMENT  199 deferrals to Daryl removed; check_deferrals widened from a seven-verb allowlist.
+r2827  CLAIMED    PO-6 reads OPEN and I called it closed. Does it close?
+r2827  INSTRUMENT  PO-6 was reported closed for four status reports and reads OPEN. check_status_honesty built.
