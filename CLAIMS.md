@@ -83,7 +83,7 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| *(none — 54's c54.229 rows released with the work)* | — | — | — |
+| *(none — 54's c54.230 rows released with the work)* | — | — | — |
 
 > ⌗ **54's c54.229 ROWS RELEASED HERE, WITH THE WORK.** *· `receipts/L562_the_pin_test/` — **new**, with
 > the five run logs banked under `runs/` and the command that produces each, because the instrument takes

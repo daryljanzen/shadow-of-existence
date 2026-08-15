@@ -58,7 +58,29 @@ count ** -- it is the modal one, and a register whose header disagreed with its 
 reader too.  ** Not that a split is always harmless **: `L-551`'s quoted row shows the opposite, which is
 why the invariant is checked rather than assumed.
 
-Written c54.229 (`L-563`).  Stated for reversal.
+** ⛔⛔ CORRECTED c54.230, AGAINST THIS FILE, AND THE OVER-CLAIM IS THE ONE THIS FILE WARNED ABOUT. **
+
+The observer line cleared the whole backlog in one turn at r2802, and its reading is better than the one
+above:  *"escaping does not need to know which cell a stray bar belonged to -- a raw bar written as an
+escaped one stays content in the cell it is already in."*
+
+  ⇒ *** So the 15 rows classed here as SPLIT-AND-SHAPE and counted into "eighty-five a reader must" were
+      escapable after all.  The split and the shape are INDEPENDENT defects, and fixing the first does
+      not require fixing the second: the row comes out short -- which it already was -- and no longer
+      split. ***
+  ⇒ ** The two conditions that make the escape safe are LOSSLESSNESS and that the bar was inside a span.
+    Requiring the resulting COUNT was a third condition, and it was not needed. **  `scripts/row_splits.py`
+    is corrected: it escapes both classes and reports which rows are still off the mode.
+
+** ⌗ AND THE RULE IS r2802's, WHICH IS SHARPER THAN ANYTHING ABOVE: ** *"'not mechanically fixable' is a
+claim, and it is the one kind a node is never asked to defend, because it closes the conversation it
+appears in."*  ** This file made that claim about 85 rows and it was wrong about 65 of them. **  *The
+partition was the right move and the boundary was drawn one condition too far in.*
+
+⌗ *What stands: the two-cause distinction, the losslessness invariant, the four repaired in band, the two
+left because they are short (still true -- they are short, and now unsplit), and the band refusal.*
+
+Written c54.229 (`L-563`), CORRECTED c54.230.  Stated for reversal.
 """
 import collections
 import os
@@ -74,6 +96,9 @@ import row_splits                                                          # noq
 ARC = os.path.join(ROOT, 'THE_LIVE_ARC.md')
 FAILED = []
 BEFORE = 'ed68bab'          # c54.228 -- the tree this shift started from
+AT = '11ff973'              # c54.229 -- where this partition was MEASURED
+#: ** pinned, because r2802 cleared the whole backlog one revision later and a live-tree
+#: measurement of it would now read zero -- which is the correct outcome and not this claim. **
 
 
 def check(label, cond):
@@ -118,16 +143,36 @@ def main():
     print('  S1 -- how much of the column-break backlog is mechanical?')
     print()
     live = open(ARC, encoding='utf-8', errors='replace').read()
-    now = partition(live)
-    check(f'⓵ THE_LIVE_ARC.md: {now["rows"]} register rows, modal cell count {now["modal"]}',
+    at = git('show', f'{AT}:THE_LIVE_ARC.md')
+    now = partition(at)
+    check(f'⓵ THE_LIVE_ARC.md at {AT}: {now["rows"]} register rows, modal cell count {now["modal"]}',
           now['modal'] == 5 and now['rows'] > 300)
     tot = len(now['split']) + len(now['both']) + len(now['shape'])
     check(f'⓶ THE PARTITION: {len(now["split"])} SPLIT-ONLY (blind-fixable), {len(now["both"])} '
           f'SPLIT-AND-SHAPE, {len(now["shape"])} SHAPE-ONLY -- {tot} off the modal count',
           len(now['split']) >= 10 and len(now['both']) >= 5 and len(now['shape']) >= 50)
-    check('⇒ so about a sixth of the backlog is mechanical and the rest is correctly described as not '
-          'blind-fixable -- a list of rows a tool can take and rows a reader must',
-          0.05 < len(now['split']) / tot < 0.35)
+    # ** ⛔ CORRECTED c54.230.  This asserted that the rest is "correctly described as not
+    # ** blind-fixable".  It is not: the split-and-shape rows are escapable too. **
+    # ** the over-claim, kept as a REAL check: take the rows this file classed unfixable AT THE COMMIT
+    # ** WHERE IT CLASSED THEM, and demonstrate the escape on each. **
+    at_lines = at.split('\n')
+    both_rows = [l for l in at_lines if row_splits.ROWID.match(l)
+                 and row_splits.cells(l) != now['modal']
+                 and row_splits.escape_in_spans(l) != l
+                 and row_splits.cells(row_splits.escape_in_spans(l)) != now['modal']]
+    escapable = [l for l in both_rows
+                 if row_splits.escape_in_spans(l).replace('\\|', '|') == l.replace('\\|', '|')
+                 and not row_splits.raw_in_span(row_splits.escape_in_spans(l))]
+    check(f'⇒ ⛔ THE OVER-CLAIM, KEPT AS A REAL CHECK: of the {len(both_rows)} rows this file classed '
+          f'SPLIT-AND-SHAPE and counted into "a reader must", {len(escapable)} escape losslessly and '
+          f'come out with every raw bar structural -- they were ESCAPABLE, and only the SHAPE-ONLY '
+          f'rows ever needed a reader',
+          len(both_rows) > 0 and len(escapable) == len(both_rows))
+    tool = open(os.path.join(ROOT, 'scripts', 'row_splits.py'),
+                encoding='utf-8', errors='replace').read()
+    check('⇒ and the tool is corrected with it: it escapes both classes and reports which rows are '
+          'still off the mode, instead of refusing the ones that are',
+          'CORRECTED c54.230' in tool and 'fixable + both' in tool)
 
     # ⓷ the invariant, and that it is what makes the class safe
     lines = live.split('\n')
@@ -148,16 +193,22 @@ def main():
     # ⓸ this fork's own band, before and after
     before = git('show', f'{BEFORE}:THE_LIVE_ARC.md')
     b_band = partition(before, band=(500, 799))
-    n_band = partition(live, band=(500, 799))
-    fixed = len(b_band['split']) - len(n_band['split'])
+    a_band = partition(at, band=(500, 799))
+    fixed = len(b_band['split']) - len(a_band['split'])
     check(f'⓸ in this fork\'s band at {BEFORE}: {len(b_band["split"])} split-only and '
-          f'{len(b_band["both"])} split-and-shape; now {len(n_band["split"])} and '
-          f'{len(n_band["both"])} -- {fixed} repaired, and the both-cases left alone',
-          fixed >= 4 and len(n_band['split']) == 0
-          and len(n_band['both']) == len(b_band['both']))
-    check('⛔ and the two that were NOT repaired are the guard working, not the method failing: they go '
-          '6 -> 4 and 7 -> 6, so they are split AND short and a reader has to supply the cell',
-          len(n_band['both']) == 2)
+          f'{len(b_band["both"])} split-and-shape; at {AT}: {len(a_band["split"])} and '
+          f'{len(a_band["both"])} -- {fixed} repaired here, the both-cases left alone',
+          fixed >= 4 and len(a_band['split']) == 0
+          and len(a_band['both']) == len(b_band['both']) == 2)
+    check('⛔ and leaving those two was the OVER-STRICT condition, not the guard: they go 6 -> 4 and '
+          '7 -> 6, and r2802 escaped them correctly -- short is what they already were',
+          len(a_band['both']) == 2)
+    # ** and the live tree, one revision later **
+    n_all = partition(live)
+    check(f'⇒ AND IT IS ALL CLEARED NOW: {len(n_all["split"])} split-only and {len(n_all["both"])} '
+          f'split-and-shape remain live, {len(n_all["shape"])} shape-only -- r2802 took every row with '
+          f'an in-span bar, including the class this file called unfixable',
+          len(n_all['split']) == 0 and len(n_all['both']) == 0 and len(n_all['shape']) > 0)
 
     # ⓹ the tool refuses to write outside a declared band
     tool = os.path.join(ROOT, 'scripts', 'row_splits.py')
@@ -173,6 +224,39 @@ def main():
     unchanged = open(ARC, encoding='utf-8', errors='replace').read() == live
     check('⌗ and neither invocation touched the file -- verified by re-reading it',
           unchanged)
+
+    # ------------------------------------------------------------------ ⓺ the sharper invariant
+    # ** ⛔⛔ AND BOTH SWEEPS MISSED THE SAME THING, WHICH IS SHARPER THAN THE CELL COUNT. **  A row can
+    # carry the modal number of cells and have its BOUNDARIES IN THE WRONG PLACES: escape three
+    # structural bars, leave three content bars raw, and the count does not move while the columns do.
+    #   ⇒ *** `L-551` came out of the two sweeps in BOTH states -- this fork's escape left every raw bar
+    #       structural, r2802's left three raw inside a quoted `| PO-n | object | ... |` template and
+    #       escaped three real boundaries instead.  A union merge kept both, byte-different, and ONE
+    #       CELL COUNT PASSED ON EACH. ***
+    #   ⇒ ** A register row is well formed when every RAW bar is STRUCTURAL, not when there are the
+    #     right number of them.  The count is the weaker property and it is the one both tools used. **
+    import sys as _sys
+    _sys.path.append(os.path.join(ROOT, 'scripts'))
+    import importlib as _il
+    _il.reload(row_splits)
+    _lines = open(ARC, encoding='utf-8', errors='replace').read().split('\n')
+    _rows = [l for l in _lines if row_splits.ROWID.match(l)]
+    _mis = [l for l in _rows if row_splits.raw_in_span(l)]
+    _oncount = [l for l in _mis if row_splits.cells(l) == 5]
+    check(f'⓺ THE SHARPER INVARIANT: {len(_mis)} rows still carry a RAW bar inside a span, and '
+          f'{len(_oncount)} of them carry the MODAL cell count while doing it -- mis-bounded and '
+          f'invisible to every count-based check',
+          len(_mis) > 0 and len(_oncount) > 0)
+    check('⇒ and it is REPORTED, NOT WRITTEN: escaping a mis-bounded on-count row makes its count '
+          'worse by the metric and right by the boundary -- one goes 5 -> 3 -- so the metric a gate '
+          'baselines on is the thing in question, and moving rows under a baseline while disputing '
+          'the baseline is not a repair',
+          'REPORTED AND NOT WRITTEN' in open(
+              os.path.join(ROOT, 'scripts', 'row_splits.py'), encoding='utf-8').read())
+    check('⛭ and the duplicated `L-551` the two sweeps produced is resolved by the invariant rather '
+          'than by preference: the copy kept is the one whose every raw bar is structural, and the '
+          'dropped copy contributed no word the kept one lacks',
+          len([l for l in _rows if re.match(r'\|\s*(~~)?\*?\*?L-551\b', l)]) == 1)
 
     print()
     if FAILED:
