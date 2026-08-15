@@ -278,3 +278,5 @@ r2785  CLAIMED    PO-11: does the static continuum continue through r=0? Narrowe
 r2785  COMPUTED    the two sides of the wall differ in SIGNATURE -- f flips at r=0. r2744 sampled r>0 only.
 r2786  CLAIMED    PO-10: CRs chi2 = 281 has no candidate mechanism. Generate one or bound it.
 r2786  COMPUTED    CRs 281 is the ORDER P15s own damping prediction produces. The question inverts.
+r2787  CLAIMED    PO-10: run the SHAPE test. Does the CR arms per-bin residual follow the damping profile?
+r2787  COMPUTED    the shape test RUN: the residual oscillates at l_A. 281 is peak misalignment. r2786 withdrawn.

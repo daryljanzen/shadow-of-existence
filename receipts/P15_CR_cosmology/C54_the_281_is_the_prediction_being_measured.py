@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
-"""C54 -- CR's $\\chi^2/{\\rm dof}=281$ is not an unexplained excess: it is the ORDER the damping
+"""C54 -- ⛔ **WITHDRAWN r2787 BY ITS OWN NAMED TEST.**  *** This receipt said the discriminating
+check was SHAPE and that a flat residual would kill it.  **The shape test was run at r2787 and the
+residual is neither a match nor flat -- it OSCILLATES**, swinging $0.237$ to $2.375$ against a
+predicted $0.706$--$0.999$, with correlation $-0.296$.  Its dominant period is $317$ in $\\ell$
+against $\\ell_A=301$: **the acoustic comb**.  The $281$ is PEAK MISALIGNMENT, not the damping
+envelope.  See `C55_the_shape_test_says_peak_misalignment`.
+  ⌗ *What survives: the ORDER arithmetic is correct, and the rule -- compute what the theory
+  predicts before hunting a mechanism -- held; **it just returned the wrong candidate, and said
+  in advance how to find that out**.* ***
+
+C54 -- CR's $\\chi^2/{\\rm dof}=281$ is not an unexplained excess: it is the ORDER the damping
 signature itself produces against Planck-sized errors, which inverts `PO-10`'s question.
 
 ** THE GAP r2781 LEFT. **  *** The control's residual is diagnosed (a $k$-range truncation, halving

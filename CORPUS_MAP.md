@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2787 — 2026-08-11 (main line). **THE SHAPE TEST RUN — 281 IS PEAK MISALIGNMENT, and r2786 is withdrawn by its own test.**
+
+**⛔ ⓵ NEITHER A MATCH NOR FLAT — IT OSCILLATES.**
+
+    ell     measured ratio    predicted
+    100          0.4771       0.9991
+    740          0.8500       0.9532
+   1996          2.3754       0.7055
+
+*Measured range $0.237$–$2.375$ against a predicted $0.706$–$0.999$, **correlation $-0.296$** — anticorrelated with
+the profile it was supposed to follow.*
+
+**⛭⛭⛭ ⓶ AND THE OSCILLATION IS THE ACOUSTIC COMB.** *Dominant Fourier period $317$ in $\ell$ against
+$\Lambda$CDM's $\ell_A=301$ — **a ratio of $1.05$**.*
+⇒ ***Two combs slightly out of register produce a ratio swinging above and below one at the comb spacing, which is
+exactly what is measured. **The $281$ is peak misalignment, not an envelope.****
+
+**⓷ AND THE ARMS SAY WHERE IT COMES FROM.**
+
+    l_A:  CR 301.60   LCDM 301.37     agree to 0.08%
+    r_s:  CR 135.46   LCDM 144.53     differ by 6.3%
+
+⇒ ***The projected acoustic scale agrees and the sound horizon does not — so a residual $\ell_A$ mismatch
+accumulates across six peaks into a visible phase slip by $\ell\sim2000$.***
+
+**⓸ SO `PO-10`'s REMAINDER SHARPENS AGAIN:** *is the phase slip **physical** (the models genuinely place peaks
+differently) or **numerical** (the arm's $\ell_A$ calibrated rather than computed)? The $6.3\%$ $r_s$ gap against a
+$0.08\%$ $\ell_A$ gap is where to look.*
+
+**⛭ THE RULE:** ***a candidate is worth banking when it names the measurement that would refute it. **r2786 survived
+one revision and cost nothing, because it said in advance how to find out** — the alternative is a candidate that
+survives on plausibility until someone happens to test it.***
+
 ### Revision r2786 — 2026-08-11 (main line). **CR's 281 IS THE PREDICTION BEING MEASURED — the question inverts.**
 
 **⛭⛭ ⓵ THE CANDIDATE IS P15's OWN FORMULA.** *The high-$\ell$ consequence, **with no free parameter**:
