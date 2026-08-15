@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2811 — 2026-08-12 (main line). **THE RULES ARE CENTRE DATA AND THE FORCE IS ROOT-VECTOR DATA.**
+
+**⓵ $\mathfrak{su}(3)$ SPLITS AND THE CORPUS HAS ONE SIDE.**
+
+    dim su(3) = 8 = 2 (Cartan) + 6 (root vectors E_{+/-alpha})
+    the zero-sum roots span the full 2d Cartan   -- PRESENT
+    S_3 permuting them is the Weyl group          -- PRESENT
+    the six root vectors                          -- ABSENT
+
+**⛭⛭⛭ ⓶ AND THE DELIVERED RESULTS NEED ONLY THE CENTRE.** *"baryon 1, diquark 0, meson 1" are triality sums:
+$3\equiv0$, $2\not\equiv0$, $0\equiv0$ mod 3.*
+⇒ ***All three follow from the $\mathbb Z_3$ centre alone. **They need no root vectors and no continuous group.****
+
+**⛭⛭ ⓷ WHICH IS WHY THE RULES ARE EXACT AND THE FORCE IS ABSENT — ONE FACT, NOT TWO.**
+
+    selection rules -> the CENTRE, finite, exactly what a covering carries   => EXACT, not approximate
+    the force       -> the ROOT VECTORS, which a flat connection has none of => ABSENT, not small
+
+⇒ ***"It quantises and does not couple" is $\mathfrak{su}(3)=$ centre-data $\oplus$ root-vectors, read off.***
+
+**⓸ AND IT SHARPENS THE THIRD MECHANISM'S TARGET** — *not "supply a coupling" but **supply the six root vectors**,
+which a monodromy valued in a finite group cannot do however the group is chosen, because **root vectors are
+continuous directions and a covering has none**.*
+
+**⛭ THE RULE:** ***when a construction delivers some of a structure, decompose the structure and ask WHICH PART.
+**"Has some of $\mathfrak{su}(3)$" is not a finding; "has the Cartan and the Weyl group and not the root vectors"
+predicts exactly which results come out exact and which come out absent.****
+
 ### Revision r2810 — 2026-08-12 (main line). **IT IS $\lambda_8$ — r2804's AND r2809's LABEL WITHDRAWN.**
 
 **⛔ ⓵ THE NORMALISED NARIAI TRIPLE IS THE GELL-MANN MATRIX.**

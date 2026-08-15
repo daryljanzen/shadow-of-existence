@@ -319,3 +319,5 @@ r2808  COMPUTED    cc54s retraction of r^{+/-i lambda} is load-bearing FOR r2800
 r2809  CLAIMED    PO-5: does the corpus admit any delivery of colour OTHER than a covering monodromy?
 r2809  COMPUTED    1/sqrt3 is right kind right place in P14s dimensional argument; the numerical claim DECLINED.
 r2810  COMPUTED    the triple is lambda_8 -- a NORMALISATION not a coupling. r2804/r2809 labels withdrawn.
+r2811  CLAIMED    what is missing between Cartan+Weyl data and su(3) itself?
+r2811  COMPUTED    the rules are CENTRE data and the force is ROOT-VECTOR data -- two halves of one decomposition.
