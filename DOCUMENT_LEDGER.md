@@ -42,12 +42,12 @@ sources: [chat]
 | `ABSORPTION.md` | SOURCE | The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced. | — | c54.229 | 1 |
 | `THE_LIVE_ARC.md` | SOURCE | the lead register — the one live edge | — | c54.230 | 0 |
 | `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.230 | c54.230 | 0 |
-| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.228 | c54.228 | 2 |
+| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.230 | c54.230 | 0 |
 | `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.230 | 0 |
-| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.228 | c54.228 | 2 |
-| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.228 | c54.228 | 2 |
+| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.230 | c54.230 | 0 |
+| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.230 | c54.230 | 0 |
 | `ACOUSTIC_BUILD_SETUP.md` | STATE | The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own. | — | c54.201 | 29 |
-| `BOARD.md` | STATE | (declared in frontmatter) | — | c54.228 | 2 |
+| `BOARD.md` | STATE | (declared in frontmatter) | — | c54.230 | 0 |
 | `CATEGORY_THEORY_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.201 | 29 |
 | `COLLAPSE_EXCURSION_TRANSFER_build.md` | STATE | PHASE 7's ATTACK MANUAL — the one build on the progenitor collapse excursion (L2) behind open-problems families 1/3/4/5. Referenced live by eleven documents including THE_PLAN, PHASE7_BUILD_LEDGER and both open-problems documents. | — | c54.201 | 29 |
 | `COMBINATORICS_LEDGER.md` | STATE | The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8. | — | c54.201 | 29 |
@@ -55,7 +55,7 @@ sources: [chat]
 | `COMPLEX_ANALYSIS_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.211 | 19 |
 | `CONFORMAL_GEOMETRY_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.211 | 19 |
 | `CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md` | STATE | Consolidate the plan and index the programme — the arcs (§2), the sequence (§13), the standing actions (§14), and §16 THE DEVELOPMENT RECORD, which is where RG-1 moves a paper's past state. | — | c54.207 | 23 |
-| `CORPUS_MAP.md` | STATE | (declared in frontmatter) | — | c54.222 | 8 |
+| `CORPUS_MAP.md` | STATE | (declared in frontmatter) | — | c54.230 | 0 |
 | `CR_AND_THE_HIGGS.md` | STATE | R-P station 6h (L-217) — how CR and the Higgs sector relate, in coherence and in correspondence. THE FALSIFICATION CONDITIONS ARE STATED FIRST, BEFORE THE CLAIM. Read before asserting complementarity. | — | c54.205 | 25 |
 | `CR_COLLAPSE_HELD_PICTURE.md` | STATE | BUILD MATERIAL for THE_PLAN item 2 / PHASE 7 — the contracting-phase picture held whole: the L2 leg the acoustic driving lives on. Read WITH COLLAPSE_EXCURSION_TRANSFER_build.md (the attack manual) before starting that build. | — | c54.114 | 116 |
 | `ENTRY_POINT_REGISTER.md` | STATE | What does the corpus advertise as open, in its own words? Read BEFORE BELIEVING A GAP. | — | c54.204 | 26 |

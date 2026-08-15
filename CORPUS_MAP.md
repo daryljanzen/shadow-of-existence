@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2816 — 2026-08-12 (main line). **`#558` ADJUDICATED — ONE OPERATOR, AND THE FORK DOES NOT EXIST.**
+
+**⛭⛭ ⓵ `B3`'s TETRAD FIXES EVERY TERM.** *$e^0=\sqrt f\,dt$, $e^1=dr/\sqrt f$, $e^2=r\,d\theta$:*
+
+    e_0^t = 1/sqrt(f)   ->  omega / sqrt(f)     <- cc54's assumed coupling, CONFIRMED
+    e_1^r = sqrt(f)     ->  sqrt(f) d/dr
+    e_2^theta = 1/r     ->  lambda / r          <- the LEAF angular term
+
+**⛭⛭⛭ ⓶ AND MULTIPLYING BY $\sqrt f$ RETURNS CHANDRASEKHAR.** *$dP/dx\mp(\lambda\sqrt f/r)P=\mp i\omega P$ —
+**`L-813`'s form**.*
+⇒ ***`B3` and `L-813` are ONE operator. Not a rescaled second-order form; **nothing bears on `L-813`'s
+spectrum**.***
+
+**⛔ ⓷ THE SLIP.** *`B3`'s "$W=\lambda\sqrt f/r$" is **already the tortoise superpotential**; the leaf angular term
+is $\lambda/r$. Multiplying it again by $\sqrt f$ produced a $\lambda f/r$ that does not exist.*
+
+**⚠ ⓸ AND WHAT IS NOT SETTLED, SAID BEFORE IT COULD BE BUILT ON.** *This confirms the operator and **does not
+reproduce P14's real $\pm\lambda$**. A leading-order pass in the real leaf coordinate gave $\ln P\propto\sqrt r$ —
+**a third answer, after cc54's index-2 and imaginary ones**.*
+⇒ ***Three naive reductions, three different wrong answers: the indices need the full operator with its
+$\omega$-coupling and subleading terms. **Holding the transmission was right, and this was the fourth pass.****
+
+**⛭ THE RULE:** ***when two forms of one operator disagree, check what each SYMBOL is already carrying before
+concluding the operators differ. **A superpotential quoted without its coordinate is a number without a unit.****
+
 ### Revision r2815 — 2026-08-12 (main line). **`c54.229`/`c54.230` GATED — r2800 wrote its finding into the row it measured.**
 
 **⛔ ⓵ THE SELF-INVALIDATING COUNT.** *r2800 counted "Dirac eight times, scalar zero" in `PO-11`'s row and then wrote
