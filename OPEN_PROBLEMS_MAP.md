@@ -1,9 +1,36 @@
 ---
 name: open-problems-map
 kind: STATE
-current: r2792+c54.222
+current: r2807+c54.230
 job: The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open
 ---
+
+## ⛭⛭⛭ r2807 — THE BOARD AFTER THE r2788–r2807 SPAN
+
+**TWO ROWS CHANGED KIND, NOT COUNT.**
+
+    PO-5    was "whether a coupling can arise at all" -- an existential over an unbounded set.
+            NOW two named objects: a FORCED dimensionless number (1/sqrt3, the Nariai roots
+            over alpha, r2804), and an F^2 absence that is ENTAILED rather than missing --
+            colour arrives by covering monodromy, which is flat by construction (r2806).
+            ⇒ the row waits on a different DELIVERY, not a different number.
+
+    PO-11   was "the mode matching".  NOW: the field is DIRAC (r2800), the indices are
+            non-degenerate so the condition is DETERMINED, and L-829 continues the continuum
+            through r=0 on a finite leaf path.  ⇒ the remainder is the TRANSMISSION AMPLITUDE.
+
+**⛭⛭ AND `PO-2`'s GATE WAS A STALE SENTENCE.** *`GEOMETRY_PHYSICS_TAXONOMY` held all three levels as
+"standing exactly as r693 set them" and had never heard of r2629–r2633. **Levels (1) and (2) gate
+nothing; only level (3) waits on `PO-5`.***
+
+**⌗ AND `PO-10`'s SPACING DEFICIT SURVIVED ITS OWN TEST.** *`L-830`: $\Delta\ell/L_A$ constant at
+$0.856$ while the fitted pin moves $14\%$. **Structural, not an artefact — and F5 unsoftened, so that
+is not a verdict.***
+
+⚠ ***Three of this line's own findings were corrected inside this span: r2790's framing (the $r_s$ is
+fitted, not erroneous), r2796's measure (the leaf governs the Dirac problem, not the tortoise), and
+r2805's residue (the $F^2$ is entailed, not missing). **Each correction sharpened the row it landed
+on.***
 
 ## ⛭⛭⛭ r2792 — THE BOARD HAS ONE SHAPE, AND THE CONTROL SAYS IT IS NOT THE METHOD
 

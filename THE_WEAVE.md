@@ -1,12 +1,41 @@
 ---
 name: the-weave
 kind: STATE
-current: r2798+c54.228
+current: r2807+c54.230
 current: r2713+c54.215
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
 
-> ## ⛭⛭⛭ r2798 — THE OVERNIGHT SPAN, AND WHAT IT SAYS ABOUT TWO LINES SHARING A REGISTER
+> ## ⛭⛭⛭ r2807 — THE DIVISION OF LABOUR FOUND ITS SHAPE
+
+**THE PIN TEST IS THE CLEAN CASE.** *This line found the spacing deficit (r2789), traced it to the
+fitted $\ell_A$ (r2799), designed the test, **and the container killed the run twice** (r2801). cc54
+ran it. `L-830`: $\Delta\ell/L_A$ constant at $0.856$ while the pin moves $14\%$.*
+⇒ ***One line had the question and no resources; the other had resources and took the question. **That
+is the configuration working, and it took a routed item with the number that would settle it.****
+
+**⛭⛭ AND THE CORRECTIONS RAN BOTH WAYS AGAIN, HARDER.**
+
+    cc54 -> 56   L-823  r2790's framing (the r_s is FITTED, not erroneous)
+                 L-829  r2796's MEASURE (the leaf governs the Dirac problem)
+                 c54.223 r2755 corrected the sentence and not the number it defines
+    56 -> cc54   r2765  an r2674 ID collision
+                 r2760  F4's stale prose
+                 r2793  a re-derivation that gated 7/40 rather than reading it
+    Daryl -> 56  r2778  a deferral leaked as "the row owner's call"
+                 r2779  a dropped qualifier that inverted a result
+                 r2802  two backlogs called intractable and never tested
+
+⌗ ***Fourteen corrections across the session. **Neither line has a clean record, and the third party
+caught the two failures neither line could see** — a leak of judgement and a dropped qualifier, both
+failures in the SPEAKING rather than the work.***
+
+**⌗ AND ONE DISCIPLINE HELD ON BOTH SIDES:** *cc54 did not bank the QNM (three methods failed to
+converge) or the transmission amplitude (the second-order route failed validation). This line withdrew
+`C52`, `C54`, `C58`'s framing and r2768's merge. **An attempt that confirms a flag is a result, and
+both lines treated it as one.***
+
+## ⛭⛭⛭ r2798 — THE OVERNIGHT SPAN, AND WHAT IT SAYS ABOUT TWO LINES SHARING A REGISTER
 
 **⛔ THE SAME FOUR ROWS DUPLICATED TWICE, ON CONSECUTIVE MERGES.** *`c53be44` (caught by `c54.221`) and
 `19139ed` (caught by `c54.224`). **And between them this line wrote new work into whichever copy came
