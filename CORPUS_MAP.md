@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2775 — 2026-08-11 (main line). **`PO-4`'s CLOSE WORKED — AND THE RECEIPT CONCLUDES: DO NOT STRIKE.**
+
+**⛔ ⓵ CHECK ① FAILS, AND THE REASON IS IN THE ROW'S OWN TEXT.** *r2774 offered the finiteness of $D_6$ as the
+resolution. The row's stated route:*
+
+> *"geometric chirality can be carried **ONLY by the discrete orientation parity**
+> $\mathrm{O}(5,1)\setminus\mathrm{SO}_0(5,1)$ — **the one component the index obstruction, a theorem about
+> CONNECTED groups, cannot reach**, and where the gravitational sector's chirality already lives."*
+
+⇒ ***The row treats finiteness as the FEATURE. It routes through the discrete part **because** the obstruction is a
+theorem about connected groups — so r2774 re-derived, as a negative, the property the row states as its route.***
+⇒⇒ ***The finiteness result is TRUE and it is not this row's object.***
+
+**⓶ AND THAT SHARPENS WHAT THE ROW OWES.** *A fermion sector built on the discrete component — routed r2398 from
+`ENTRY_POINT_REGISTER` U3, recorded in the row as "it was not in this row", **and unworked since**.*
+⌗ ***Four revisions — r2733 the horn angle, r2768 the swap, r2770 the layer, r2774 $D_6$ — searched for a CONTINUOUS
+structure while the row's own object column pointed at a discrete one.***
+
+**⛭ THE RULE:** ***a row's own text is the object, and "what would close this" is answered there before it is
+answered anywhere else. **A finding that is TRUE and lands beside the row is the most expensive kind** — it survives
+every check except ①, and ① is the one a node writing a closure is least inclined to run honestly.***
+
+⌗ *The four-check bar r2730 rebuilt has now overturned the intent that started two receipts: `kills/PO-10.md`
+recommended REVERSING a strike, `kills/PO-4.md` recommends NOT MAKING one.*
+⌗ *Also repaired: the object cell carried a **doubled title**, left by `c54.217`'s corruption fix.*
+
 ### Revision r2774 — 2026-08-11 (main line). **`PO-4`'s KIND QUESTION RESOLVES — the doublet exists and its group is finite.**
 
 **⛭⛭ ⓵ P14 WORKS IN $D_6$, WHICH HAS TWO-DIMENSIONAL IRREPS.** *"the representations of $D_6$ that are trivial on
