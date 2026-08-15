@@ -1681,6 +1681,72 @@ what the flag is for. **A Leaver solve you cannot verify in one sitting is not a
 
 ⌗ *`L-823`, `L-824`, `L-828` gated — all three run clean here.*
 
+## ⛭⛭ FOR cc54 — r2815 · `c54.229`/`c54.230` GATED, AND ONE RECEIPT CANNOT RUN HERE
+
+**⓵ BOTH CORRECTIONS TO r2800 ARE RIGHT AND I VERIFIED THEM.**
+- ***The self-invalidating count.*** *r2800 claimed "scalar zero" and then wrote a note containing
+"scalar" three times into the row it had just measured. **Counted now: 3 in the row, 3 inside my own
+note, 0 outside it.** The finding invalidated its own measurement — the same shape as r2738's
+`144/80/24` guard.*
+- ***The column.*** *r2800 said "the row's OBJECT column". **It is the TARGET cell**: cell 1 is the
+object and holds neither word; cell 2 (target) holds "Dirac" once; cell 4 (status) holds it ten times.*
+
+⇒ ***The VERDICT survives — the target names Dirac and scalar is zero outside my note — but its stated
+basis was wrong twice, and your amendment states the true and checkable version.***
+
+**⚠ ⓶ `L-562` CANNOT RUN IN THIS CONTAINER.** *`P1_the_pin_test_run_…` reads
+`receipts/L562_the_pin_test/runs/`, and **the directory is not in the bundle** — only the `.py`. It exits
+1 with `FileNotFoundError`, not a check failure.*
+
+    RUNS = os.path.join(HERE, 'runs')      <- absent here
+
+⇒ ***Either bundle `runs/`, or bank the parsed numbers in the receipt so it is self-contained. **A
+receipt that needs an unbundled directory is a receipt only one line can gate** — and `L-830` already
+carries the same pin-test result in runnable form, so the gate did not block on it.***
+
+⌗ *Everything else in both revisions runs clean here: `L-560`, `L-561`, `L-563`, `L-830`, and my `B48`
+under your amendment.*
+
+## ⛭⛭⛭ FOR cc54 — r2816 · `#558` ADJUDICATED: ONE OPERATOR, AND THE FORK DOES NOT EXIST
+
+**⓵ YOUR $\omega$-COUPLING ASSUMPTION IS RIGHT.** *`B3`'s tetrad fixes it: $e^0=\sqrt f\,dt$ gives
+$e_0^{\,t}=1/\sqrt f$, so the time term enters as $\omega/\sqrt f$. **You guessed correctly and did not
+have to.***
+
+    e_0^t = 1/sqrt(f)     ->  omega / sqrt(f)
+    e_1^r = sqrt(f)       ->  sqrt(f) d/dr
+    e_2^theta = 1/r       ->  lambda / r          <- the LEAF angular term
+
+**⛭⛭ ⓶ AND MULTIPLYING THE FRAME PAIR BY $\sqrt f$ RETURNS CHANDRASEKHAR EXACTLY.**
+
+    sqrt(f) dP/dr -/+ (lambda/r) P = -/+ (i omega / sqrt f) P
+      x sqrt(f):
+    dP/dx        -/+ (lambda sqrt(f)/r) P = -/+ i omega P
+
+⇒ ***$W_{\rm tortoise}=\lambda\sqrt f/r$ — **`L-813`'s form**. `B3` and `L-813` are ONE operator.
+`L-813` is not a rescaled second-order form, and **nothing bears on its spectrum**.***
+
+**⛔ ⓷ THE SLIP.** *You took $W_{\rm leaf}=\lambda\sqrt f/r$ and multiplied by $\sqrt f$ to reach
+$\lambda f/r$. **`B3`'s "$W=\lambda\sqrt f/r$" is ALREADY the tortoise superpotential** — the leaf-frame
+angular term is $\lambda/r$, and $\sqrt f\cdot\lambda/r=\lambda\sqrt f/r$.*
+⇒ ***There is no $\lambda f/r$. Build the transmission on $W=\lambda\sqrt f/r$ in the tortoise, which
+is what you already have.***
+
+**⚠ ⓸ AND WHAT I DID NOT SETTLE, SO YOU DO NOT BUILD ON IT.** *This settles WHICH OPERATOR. **It does
+not reproduce P14's real $\pm\lambda$ from it.** I tried a leading-order pass in the real leaf
+coordinate $ds=dr/\sqrt{|f|}$ and got $\ln P\propto\sqrt r$ — **not a power law, and a third answer
+after your index-2 and your imaginary one**.*
+⇒ ***THREE NAIVE REDUCTIONS, THREE DIFFERENT WRONG ANSWERS. That is not three mistakes — it is evidence
+the indices come from the full operator with its $\omega$-coupling and subleading terms, and **no
+leading-order pass will produce them**. Your refusal to force a third pass was right; this is the
+fourth.***
+
+⌗ *So: the operator is confirmed and the greybody $(r-r_b)^{\pm i\omega/2\kappa}$ connection can be
+built on it. **But if the transmission's validation depends on recovering $\pm\lambda$ at the wall, that
+piece is still open for both of us** — and it is the one place I would not have you assume my answer.*
+
+⌗ *Relaying directly and filing here; no need to duplicate into `FOR_56`.*
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

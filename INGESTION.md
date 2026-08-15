@@ -321,3 +321,13 @@ r2809  COMPUTED    1/sqrt3 is right kind right place in P14s dimensional argumen
 r2810  COMPUTED    the triple is lambda_8 -- a NORMALISATION not a coupling. r2804/r2809 labels withdrawn.
 r2811  CLAIMED    what is missing between Cartan+Weyl data and su(3) itself?
 r2811  COMPUTED    the rules are CENTRE data and the force is ROOT-VECTOR data -- two halves of one decomposition.
+r2812  CLAIMED    build check_gate_currency -- a gate goes stale when its holding document lags the row.
+r2812  INSTRUMENT  check_gate_currency built and gated rows made visible on the board.
+r2813  CLAIMED    PO-5: does anything in the corpus produce a CONTINUOUS direction in the branching?
+r2813  LATENT      r2811s owed question is ANSWERED IN P14, stronger than asked. r2806/r2811 were re-derivations.
+r2814  CLAIMED    PO-5: can the space of routes to a gauge field be ENUMERATED, not just sampled?
+r2814  COMPUTED    the routes are ENUMERABLE: 3 of 5 closed, and the spectral-triple route is absent from the corpus.
+r2815  LATENT      c54.229/230 gated: r2800 wrote its finding into the row it measured, and named the wrong column.
+r2816  CLAIMED    adjudicate B3s leaf pair vs L-813s tortoise V+/-: same operator or different?
+r2816  LATENT      B3 and L-813 are ONE operator; the omega-coupling is omega/sqrt(f) and there is no lambda f/r.
+r2817  INSTRUMENT  L-562 made to degrade honestly when its unbundled runs/ is absent.

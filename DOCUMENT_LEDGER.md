@@ -39,15 +39,15 @@ sources: [chat]
 
 | document | kind | job | declared current | newest c54 in body | lag |
 |---|---|---|---|---|---|
-| `ABSORPTION.md` | SOURCE | The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced. | — | c54.228 | 2 |
-| `THE_LIVE_ARC.md` | SOURCE | the lead register — the one live edge | — | c54.228 | 2 |
+| `ABSORPTION.md` | SOURCE | The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced. | — | c54.229 | 1 |
+| `THE_LIVE_ARC.md` | SOURCE | the lead register — the one live edge | — | c54.230 | 0 |
 | `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.230 | c54.230 | 0 |
-| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.228 | c54.228 | 2 |
+| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.230 | c54.230 | 0 |
 | `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.230 | 0 |
-| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.228 | c54.228 | 2 |
-| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.228 | c54.228 | 2 |
+| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.230 | c54.230 | 0 |
+| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.230 | c54.230 | 0 |
 | `ACOUSTIC_BUILD_SETUP.md` | STATE | The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own. | — | c54.201 | 29 |
-| `BOARD.md` | STATE | (declared in frontmatter) | — | c54.228 | 2 |
+| `BOARD.md` | STATE | (declared in frontmatter) | — | c54.230 | 0 |
 | `CATEGORY_THEORY_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.201 | 29 |
 | `COLLAPSE_EXCURSION_TRANSFER_build.md` | STATE | PHASE 7's ATTACK MANUAL — the one build on the progenitor collapse excursion (L2) behind open-problems families 1/3/4/5. Referenced live by eleven documents including THE_PLAN, PHASE7_BUILD_LEDGER and both open-problems documents. | — | c54.201 | 29 |
 | `COMBINATORICS_LEDGER.md` | STATE | The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8. | — | c54.201 | 29 |
@@ -55,7 +55,7 @@ sources: [chat]
 | `COMPLEX_ANALYSIS_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.211 | 19 |
 | `CONFORMAL_GEOMETRY_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.211 | 19 |
 | `CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md` | STATE | Consolidate the plan and index the programme — the arcs (§2), the sequence (§13), the standing actions (§14), and §16 THE DEVELOPMENT RECORD, which is where RG-1 moves a paper's past state. | — | c54.207 | 23 |
-| `CORPUS_MAP.md` | STATE | (declared in frontmatter) | — | c54.222 | 8 |
+| `CORPUS_MAP.md` | STATE | (declared in frontmatter) | — | c54.230 | 0 |
 | `CR_AND_THE_HIGGS.md` | STATE | R-P station 6h (L-217) — how CR and the Higgs sector relate, in coherence and in correspondence. THE FALSIFICATION CONDITIONS ARE STATED FIRST, BEFORE THE CLAIM. Read before asserting complementarity. | — | c54.205 | 25 |
 | `CR_COLLAPSE_HELD_PICTURE.md` | STATE | BUILD MATERIAL for THE_PLAN item 2 / PHASE 7 — the contracting-phase picture held whole: the L2 leg the acoustic driving lives on. Read WITH COLLAPSE_EXCURSION_TRANSFER_build.md (the attack manual) before starting that build. | — | c54.114 | 116 |
 | `ENTRY_POINT_REGISTER.md` | STATE | What does the corpus advertise as open, in its own words? Read BEFORE BELIEVING A GAP. | — | c54.204 | 26 |
@@ -97,7 +97,7 @@ sources: [chat]
 | `DISPATCHING_COWORK.md` | METHOD | rules / guards / canon | — | — |  |
 | `FOUNDATIONAL_DEPENDENCY_MAP.md` | METHOD | rules / guards / canon | — | — |  |
 | `GEOMETRY_PHYSICS_TAXONOMY.md` | METHOD | rules / guards / canon | — | c54.84 |  |
-| `INGESTION.md` | METHOD | (declared in frontmatter) | — | c54.223 |  |
+| `INGESTION.md` | METHOD | (declared in frontmatter) | — | c54.229 |  |
 | `INTRODUCTION.md` | METHOD | rules / guards / canon | — | c54.118 |  |
 | `JARGON_LEDGER.md` | METHOD | rules / guards / canon | — | — |  |
 | `KICKOFF_CODA_REVIEW.md` | METHOD | A review methodology, not a spent task — Pass A faithful account then STOP; Pass B four questions plus one inward; three verdicts; a finding whose receipt carries no first-hand extract with a locator is structurally void. LOWEST PRIORITY (Daryl, standing): kept where it is, not to be raised again. | — | — |  |
@@ -161,7 +161,7 @@ sources: [chat]
 | `C40_EXTRACTION_r1107.md` | RECORD | frozen record | — | — |  |
 | `C40_HARVEST_r1064-r1087.md` | RECORD | frozen record | — | — |  |
 | `CAPSTONE_the-fog-lifting_transcript.md` | RECORD | frozen record | — | — |  |
-| `CLAIMS.md` | RECORD | (declared in frontmatter) | — | c54.228 |  |
+| `CLAIMS.md` | RECORD | (declared in frontmatter) | — | c54.230 |  |
 | `CLAUDE_CODE_WORK_ORDER.md` | RECORD | THE ITERATING WORK ORDER — for a Claude Code session that can run for hours. A ladder from mechanical to edge work, the discipline that makes unattended research safe, and the two ownership boundaries. Read with THE_HUB and NEXT.md. | — | — |  |
 | `CODA_READ_NOTES_r2730.md` | RECORD | (declared in frontmatter) | — | c54.213 |  |
 | `CREDO_birth_transcript.md` | RECORD | frozen record | — | — |  |
@@ -169,14 +169,14 @@ sources: [chat]
 | `DEMONSTRATING_THE_WAY_full-transcript.md` | RECORD | frozen record | — | — |  |
 | `FOLD52_ASSESSMENT.md` | RECORD | the fork's assessment of the abandoned 52/53 ACOUSTIC line -- what it holds, what to take, and what could not be verified | — | c54.166 |  |
 | `FORK_HISTORY_c54.txt` | RECORD | frozen record | — | c54.93 |  |
-| `FOR_54.md` | RECORD | THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied. | c54.206 | c54.215 |  |
-| `FOR_56.md` | RECORD | THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied. | — | c54.228 |  |
+| `FOR_54.md` | RECORD | THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied. | c54.206 | c54.230 |  |
+| `FOR_56.md` | RECORD | THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied. | — | c54.230 |  |
 | `FOR_57.md` | RECORD | THE THIRD LINE'S INBOX — what the working fork (54) has found in the Claude Code node's work, routed rather than edited. The mirror of FOR_54.md and FOR_56.md. Items are dropped the revision they are applied. | c54.196 | c54.196 |  |
 | `HANDOVER_c54.184.md` | RECORD | What the c54 session that ran c54.162–c54.184 knew that the ledgers do not hold. Written for its successor, who starts cold on a complete corpus. Read once, then work. | c54.184 | c54.184 |  |
 | `HANDOVER_c54.191.md` | RECORD | What the c54 session that ran c54.185–c54.191 knew that the ledgers do not hold. Written for whoever picks up front #2 cold. Read once, then work. | c54.191 | c54.191 |  |
 | `HISTORICAL_CONTEXT_einstein_cosmological_considerations.md` | RECORD | frozen record | — | — |  |
 | `HISTORICAL_CONTEXT_the_initial_rate_problem.md` | RECORD | frozen record | — | — |  |
-| `LATENT_HISTORY.txt` | RECORD | frozen record | — | c54.223 |  |
+| `LATENT_HISTORY.txt` | RECORD | frozen record | — | c54.229 |  |
 | `NEXT.md` | RECORD | THE WORK ORDER — what to do next, in order, with enough detail to start cold. Read after THE_HUB on arrival. Delete a block when it lands. | — | c54.187 |  |
 | `PROGRAMME_UNFINISHEDNESS_CATALOGUE.md` | RECORD | frozen record | — | — |  |
 | `PUZZLE_the-idea_transcript.md` | RECORD | frozen record | — | — |  |

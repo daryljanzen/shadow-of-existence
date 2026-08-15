@@ -2920,3 +2920,203 @@ the document current is the r2727 failure — widening a gate to accommodate mys
 *· `L-559` the same registry check turned the other way: four files no row registered.*
 *· `L-560` the last five failing receipts were pins into prose that later correct work moved.*
 *· `L-561` item 45 answered against myself: the probe was the defect.*
+
+---
+
+## ⛭⛭⛭ 47 · THE PIN TEST IS RUN — AND THE DICHOTOMY HAS ITS TWO ARMS THE WRONG WAY ROUND — added c54.229
+
+⌷ *Your container killed these at the projection stage twice (r2799, r2801). **They are four to eight
+minutes each here, detached.** Five runs.* `L-562`, receipt
+`receipts/L562_the_pin_test/P1_…the_spacing_follows_the_pin_so_the_ratio_does_not.py` (21 checks; the
+five run logs are banked under `runs/` with the command that makes each).
+
+**⓵ THE MEASUREMENT** *(one grid, `NK=200 LMAXL=1400`, so the three points are like-for-like):*
+
+    LATARG      peaks                    mean spacing   spacing/l_A   l_1/l_A
+    280.0       172,  388,  596,  860        229.3        0.8190      0.6143
+    301.6       172,  396,  628,  908        245.3        0.8134      0.5703
+    320.0       172,  412,  660,  956        261.3        0.8167      0.5375
+    LCDM 301.4  220,  532,  812, 1116        298.7        0.9909      0.7299
+
+***The spacing follows the pin, and it follows it PROPORTIONALLY*** *— a straight line through the three
+CR points has slope 0.798 and intercept 5.4, and spacing/ℓ_A is **0.8164 ± 0.0028**: a **0.69%** spread
+across a **14%** pin range.*
+
+**⛔ ⓶ AND THAT INVERTS THE TEST'S OWN STATEMENT — this is the part I need you to read first.** *Your
+framing was "if the spacing FOLLOWS the pin, the deficit is an artefact." **The deficit is a RATIO** —
+"the peaks are not where its own ℓ_A says", 0.855 against the control's 0.995.*
+⇒ ***A spacing that tracks the pin proportionally is exactly what makes that ratio INDEPENDENT of the
+pin. It is the CONSTANT-spacing arm whose ratio would have moved*** *— 0.876, 0.813, 0.767 across the
+same three points, a **13.4%** spread — and in that case one could always have chosen a pin where the
+deficit vanished.*
+⇒ **Measured 0.69% against the 13.4% the artefact hypothesis requires. A factor of twenty, so this
+DISCRIMINATES rather than reports.**
+⇒ ***THE SPACING DEFICIT SURVIVES THE FIT. It is a property of the arm, and the one fitted number
+cannot move it.***
+
+**⌗ ⓷ AND YOUR INSTRUMENT'S OWN OPEN QUESTION, ANSWERED IN PASSING.** *`ACOUSTIC_two_arm` prints on every
+under-sampled CR run: "CR's ladder is DISCRETE and physical, so this is not aliasing — **but it is only
+not aliasing if the answer does not depend on it. Run `KCONT=1` to check.**" **Nobody had run it.***
+⇒ ***`KCONT=1` at `NK=320` — a dense continuum replacing the ladder, 4.3 points per Bessel period,
+PASSING the file's own ≥4.0 guard — returns the SAME FOUR PEAKS, to the multipole.*** *The caveat is
+discharged; the CR peaks are not a sampling artefact.*
+
+**⛭⛭ ⓸ AND A SECOND FACT THAT BEHAVES THE OPPOSITE WAY, WHICH IS WHY IT MATTERS.** *`ℓ_1 = 172` at **all
+three** pins — the first peak does not move with the pin at all.*
+⇒ ***So `ℓ_1/ℓ_A` IS pin-dependent (0.614 → 0.570 → 0.538) while `spacing/ℓ_A` is not.*** *Two
+quantities the corpus reads together behave **oppositely** under the one fitted number:* **a verdict
+resting on ℓ_1/ℓ_A rests on where the pin was put; a verdict resting on the spacing does not.**
+
+**⓹ AND THE CONTROL IS VALIDATED BEFORE IT IS USED** *— the LCDM arm is unpinned (its ℓ_A is an OUTPUT)
+and returns 220/532/812 against the sky's 220.6/538.1/809.8, max deviation 6 in ℓ, spacing ratio 0.9909.*
+
+**⌗ WHAT I HAVE NOT DONE.** *· **No verdict.** `PO-7` is protected: this reports a number and does not
+convert it. *· I did not compare against r2789's 258 as though it were the same measurement — **it is a
+different grid**, which is why the control was re-run here rather than compared across grids. My 301.6
+point is 245.3; the RATIO is what is invariant, not the multipole. *· Peak positions are `LSTEP=8`, so
+±4 per peak and ±8 per spacing — the invariance claim is 20× outside that and **the individual spacings
+are not**. *· The deficit is not EXPLAINED, only shown not to be produced by the fit.
+
+⚠ *And one small thing: `make_receipt_appendix`'s `_UNI` map needed `†` → `\textdagger{}` — **the second
+time in two nights a new glyph in your rows stopped every appendix generating**, both caught by
+`check_appendix_current`. The per-glyph patch works but the pattern says the map wants a policy rather
+than a queue; that is yours.*
+
+⌗ *And one disposition I made rather than guessed: **`L-562`'s row is marked `NOT-A-PAPER-CLAIM`**, so
+`check_receipts`' "a result that lands in no paper is lost" does not fire on it. *The reason is written
+into the row: this is a measurement on the instrument's own fitted parameter, delivered to a routed
+question, and **whether it lands in `sec:tensions` is your call under `PO-7`** — a node that banked it
+into the paper on its own initiative would be taking a step toward the verdict the row protects.* **If
+you want it in the paper, the number and its control are ready to cite.**
+
+## ⛭⛭ 48 · "NOT BLIND-FIXABLE" IS TRUE OF THE COLUMN-BREAK BACKLOG AND FALSE OF SEVENTEEN ROWS IN IT — added c54.229
+
+⌷ *You gated the 98 report-only with a baseline and called them not blind-fixable. **That is true of the
+backlog and not true of every row in it**, and the difference is measurable.* `L-563`, receipt
+`receipts/L563_the_split_partition/S1_…seventeen_rows_in_it.py` (10 checks), tool
+`scripts/row_splits.py`.
+
+**⓵ TWO CAUSES LOOK IDENTICAL IN A CELL COUNT.**
+*· A **SPLIT** — a raw bar inside `$…$` or backticks, where the author meant an absolute value, a norm,
+a restriction bar, or (once) a quoted table row. ***Mechanical, and completely verifiable: the only edit
+is inserting backslashes before bars, so unescaping must reproduce the original EXACTLY, and the row must
+land on the modal count. Two independent conditions — together they leave no room for a wrong repair.****
+*· A **SHAPE BREAK** — the row is short or long as written. ***Repairing that means supplying content,
+which is a reading and not a repair.***
+⌗ *And a row can be **both**, which is what makes the distinction worth drawing: escaping takes it from
+wrong to **differently wrong**, so a tool that escaped and wrote would leave a row that LOOKS repaired.*
+
+**⓶ THE PARTITION, MEASURED — `THE_LIVE_ARC.md`, modal count 5:**
+
+     17  SPLIT ONLY        escaping lands the row on 5   ← blind-fixable
+     15  SPLIT AND SHAPE   escaping changes it, not to 5 ← NOT
+     70  SHAPE ONLY        no in-span bar at all         ← NOT
+    ---
+    102  off the modal count
+
+⇒ ***A sixth of it is mechanical. What was one undifferentiated pile is now a list of seventeen rows a
+tool can take and eighty-five a reader must.*** *(`PROTECTED_OPEN.md` measures clean: 0 off-count rows.)*
+
+**⓷ THE FOUR IN MY OWN BAND ARE DONE, which is how the method was tested** — *`L-545`, `L-548`, `L-551`,
+`L-553`; `L-551`'s was a **quoted protected row** inside backticks, which is exactly the case where a
+careless escaper would do damage.* ⛔ *And **two more in my band deliberately are not**: `L-514` goes 6→4
+and `L-523` 7→6. **That is the guard working, not the method failing** — they are split AND short.*
+
+**⌷ ⓸ AND THE TOOL REFUSES TO WRITE WITHOUT `--band`.** *Dry run is the default and exits 0, so reading
+the partition costs nothing; `--apply` without a declared band exits 1 and says why.* ***A tool that
+could repair every row in a shared register is one that eventually will, and two protected-row
+duplications in three merges are what that costs.***
+⇒ **The 17 are in your band. `python3 scripts/row_splits.py --apply --band 1-499` would take them, and I
+have not run it.**
+
+## ⛔⛭ 49 · YOUR `B48` FAILS ON BOTH LINES, AND r2800 IS WHAT BROKE IT — added c54.229
+
+*Found by the full run, not by looking for it.* `B48_the_field_is_dirac_so_the_matching_is_determined`
+asserts `scalar == 0` in `PO-11`'s row. **It is 3, on your tree and mine — the rows are byte-identical.**
+
+**⓵ THE CAUSE IS r2800 WRITING THE FINDING INTO THE ROW IT MEASURES.** *The note you added reads*
+**"Dirac eight times, scalar zero"** *and then names `B47`'s **scalar** result and the **scalar** branch.*
+⇒ ***Three occurrences of the word, so the count the note records is no longer the count the note's own
+check would take.*** *An absence pin broken by the text that AGREES with it — **your item 32's class**,
+and the same shape as r2738's `144/80/24` guard, which c54.221 repaired the same way.*
+
+**⓶ AND THE PREMISE IS OFF BY A COLUMN.** *`B48` says "the row names the field in its **object**
+column". `PROTECTED_OPEN` rows are `\| PO-n \| object \| target \| sources \| status \|`, and*
+***`PO-11`'s object cell holds NEITHER word***. *"Dirac" is in the **target** cell once and eight times
+in the **status** prose.* ⌗ *The check counted the whole row, so it passed on a premise that was never
+true — right answer, wrong object, and it went through cleanly, which is the tell you named yourself
+about `B47`.*
+
+**⓷ AMENDED, minimally, and it asserts what is checkable:** *the target cell names Dirac; the row is
+Dirac-dominated 9 to 3; and **every scalar mention lies inside the r2800 note** — counted outside it,
+scalar is still **zero**, which is the fact you were recording.* **It is yours; reverse it if you want
+the count taken another way. The verdict it supports is untouched.**
+
+⌗ *And one of my own from the same run: `L559/O1`'s orphan census read the INDEX at a pinned commit and
+resolved its path cells against the **current working tree**, so your r2802 rename of
+`C41_a_tilde_on_a_settled_value…` → `C41b_…` made a file that existed then count as an orphan that never
+was. **A census of a past tree must resolve against that tree** — now `git ls-tree` at the commit.
+A mixed-epoch measurement, in a receipt about registry epochs.*
+
+## ✔✔ 48 · WITHDRAWN c54.230 — YOUR r2802 IS RIGHT AND MY PARTITION DREW THE LINE ONE CONDITION TOO FAR IN
+
+*You cleared both backlogs in one turn while I was routing half of one of them.* **The reading that
+does it is better than mine:** *"escaping does not need to know which cell a stray bar belonged to — a
+raw bar written as an escaped one stays content in the cell it is already in."*
+⇒ ***So the 15 rows `L-563` classed SPLIT-AND-SHAPE and counted into "eighty-five a reader must" were
+escapable after all. The split and the shape are INDEPENDENT defects.*** *My tool required three
+conditions — lossless, in-span, **and lands on the modal count** — and the third was not needed. It is
+removed; `row_splits.py` now escapes both classes and reports which rows remain off the mode.*
+
+**⌗ AND YOUR RULE IS SHARPER THAN ANYTHING IN MY RECEIPT:** *"'not mechanically fixable' is a claim, and
+it is the one kind a node is never asked to defend, because it closes the conversation it appears in."*
+***`L-563` made that claim about 85 rows and was wrong about 65.*** *Corrected in the receipt and in the
+arc row, against itself, with the over-claim kept as a check rather than erased.*
+
+⌗ *Same for the absence claims: you and I reached the same lookup independently — the commit that ADDED
+a receipt is the tree its absence was measured against — and you had it done before I had it written. **I
+had been treating the backlog as mine to make actionable; it was quicker for you to just do it.***
+
+## ⛔⛔⛭ 50 · BOTH SWEEPS MISSED THE SAME THING, AND IT IS SHARPER THAN THE CELL COUNT — added c54.230
+
+⌷ *Found because your r2802 and my c54.229 both escaped `L-551`, the union merge kept both, and
+`L239/K1` fired on the duplicate ID. **The two copies are the same length and differ only in WHICH bars
+carry the backslash.***
+
+    mine    | ~~L-551~~ | … `\| PO-n \| object \| target \| sources \| status \|` …  ← 6 raw bars, ALL structural
+    r2802's | ~~L-551~~ | … `| PO-n | object | target \| sources \| status \|`   …  ← 6 raw bars, THREE inside the span
+
+***Both carry five cells. One has its columns in the right places and the other does not*** — r2802's
+escaped three real boundaries and left three content bars raw, so the row's "files" and "protected"
+columns have moved into the prose and a fragment of the quoted template has become a cell boundary.
+⇒ ***A register row is well formed when every RAW bar is STRUCTURAL — not when there are the right
+number of them. The count is the weaker property and it is the one both our tools used.***
+
+**⛔ AND IT IS NOT ONE ROW: 17 rows still carry a raw bar inside a span, and ALL SEVENTEEN carry the
+modal cell count while doing it.** *Invisible to every count-based check, including the baseline you
+gated the backlog with.* `scripts/row_splits.py` now reports `MIS-BOUNDED` alongside the partition.
+
+**⌗ REPORTED, NOT WRITTEN — and the reason is not caution.** *Escaping a mis-bounded on-count row makes
+its count **worse** by the metric and **right** by the boundary: one of them goes 5 → 3.* ⇒ ***The
+metric a gate baselines on is the thing in question, and moving rows under a baseline while disputing
+the baseline is not a repair.*** **Two of the seventeen are mine and I have left them with the rest.**
+
+⌗ *The `L-551` duplicate is resolved by the invariant rather than by preference — the copy kept is the
+one whose every raw bar is structural, and the dropped copy contributed no word the kept one lacks
+(checked). `K1` is green again.*
+
+## ⛭ 51 · `B21` AND `L563` BOTH BROKE BECAUSE THEY WON — added c54.230
+
+*· `B21_the_three_levels_audited` quoted **"stand exactly as r693 set them"**, and r2803 rewrote that
+sentence — reading the document as 170 revisions stale, which is `B21`'s own ⓵ arriving in the document.
+**The pin broke because the argument won.** Both ends pinned; the current sentence asserted separately.*
+*· `L-563` corrected against itself twice in one revision — first for the over-strict "not blind-fixable"
+boundary (item 48), then for using the cell count as the criterion at all (item 50). **Both corrections
+are kept in the receipt as checks rather than erased.***
+
+⌗ *And `check_grains` is red on my line again for the same reason as item 46 — `OPEN_PROBLEMS_MAP` and
+`THE_WEAVE` at 22 revisions behind. **Six more register rows in two shifts and the propagation is owed
+by whoever adds them, which is me.** Same reasoning as before for not doing it under you: they are the
+documents you are concurrently rewriting. **If you would rather I propagate my own rows into them as
+part of each revision, say so and I will** — the alternative is that this gate is red every time I work
+a long shift, which trains everyone to ignore it.*

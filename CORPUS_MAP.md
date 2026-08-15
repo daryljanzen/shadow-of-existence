@@ -146,6 +146,137 @@ sources: [cowork, chat]
 
 
 
+### Revision r2816 — 2026-08-12 (main line). **`#558` ADJUDICATED — ONE OPERATOR, AND THE FORK DOES NOT EXIST.**
+
+**⛭⛭ ⓵ `B3`'s TETRAD FIXES EVERY TERM.** *$e^0=\sqrt f\,dt$, $e^1=dr/\sqrt f$, $e^2=r\,d\theta$:*
+
+    e_0^t = 1/sqrt(f)   ->  omega / sqrt(f)     <- cc54's assumed coupling, CONFIRMED
+    e_1^r = sqrt(f)     ->  sqrt(f) d/dr
+    e_2^theta = 1/r     ->  lambda / r          <- the LEAF angular term
+
+**⛭⛭⛭ ⓶ AND MULTIPLYING BY $\sqrt f$ RETURNS CHANDRASEKHAR.** *$dP/dx\mp(\lambda\sqrt f/r)P=\mp i\omega P$ —
+**`L-813`'s form**.*
+⇒ ***`B3` and `L-813` are ONE operator. Not a rescaled second-order form; **nothing bears on `L-813`'s
+spectrum**.***
+
+**⛔ ⓷ THE SLIP.** *`B3`'s "$W=\lambda\sqrt f/r$" is **already the tortoise superpotential**; the leaf angular term
+is $\lambda/r$. Multiplying it again by $\sqrt f$ produced a $\lambda f/r$ that does not exist.*
+
+**⚠ ⓸ AND WHAT IS NOT SETTLED, SAID BEFORE IT COULD BE BUILT ON.** *This confirms the operator and **does not
+reproduce P14's real $\pm\lambda$**. A leading-order pass in the real leaf coordinate gave $\ln P\propto\sqrt r$ —
+**a third answer, after cc54's index-2 and imaginary ones**.*
+⇒ ***Three naive reductions, three different wrong answers: the indices need the full operator with its
+$\omega$-coupling and subleading terms. **Holding the transmission was right, and this was the fourth pass.****
+
+**⛭ THE RULE:** ***when two forms of one operator disagree, check what each SYMBOL is already carrying before
+concluding the operators differ. **A superpotential quoted without its coordinate is a number without a unit.****
+
+### Revision r2815 — 2026-08-12 (main line). **`c54.229`/`c54.230` GATED — r2800 wrote its finding into the row it measured.**
+
+**⛔ ⓵ THE SELF-INVALIDATING COUNT.** *r2800 counted "Dirac eight times, scalar zero" in `PO-11`'s row and then wrote
+that verdict INTO the row, in a note containing "scalar" three times.*
+
+    'scalar' in the row now      3
+    inside r2800's own note      3
+    OUTSIDE it                   0
+
+⇒ ***An absence pin broken by the text that AGREES with it. **The same shape as r2738's `144/80/24` guard**, which
+`c54.221` repaired the same way.***
+
+**⓶ AND THE PREMISE WAS OFF BY A COLUMN.** *r2800 said "the row's **object** column". It is the **target** cell —
+cell 1 (object) holds neither word, cell 2 (target) holds "Dirac" once, cell 4 (status) holds it ten times.*
+
+⇒ ***The verdict survives — the target names Dirac and scalar is zero outside the note — but its stated basis was
+wrong twice, and a verdict resting on a miscounted cell is one nobody can re-derive.***
+
+**⚠ ⓷ AND `L-562` CANNOT RUN HERE.** *It reads `receipts/L562_the_pin_test/runs/`, **which the bundle does not
+carry** — `FileNotFoundError`, not a check failure. Routed; `L-830` already carries the same pin-test result in
+runnable form.*
+
+**⛭ THE RULE:** ***a measurement of a document must not be written into the document it measures. **Record the count
+in the receipt and put only the CONCLUSION in the row** — otherwise the pin is broken by the agreement, and the
+breakage looks like a contradiction to whoever checks next.***
+
+### Revision r2814 — 2026-08-12 (main line). **THE ROUTES ARE ENUMERABLE — three closed, two open, one absent.**
+
+**⛭⛭ ⓵ "NO THIRD MECHANISM HAS BEEN NAMED" IS A REPORT ON WHO HAS SPOKEN.** *A bound needs the space enumerated.*
+
+    (X) isometry / Kaluza-Klein    WALLED   su(3) does not embed in so(5,1)
+    (X) holonomy / flat bundle     CLOSED   r2813: F = 0, H^1 = 0, no deformation
+    (X) index / anomaly inflow     CLOSED   boundary paper: "having no bulk gauge field for
+                                            anomaly inflow, it requires each wall's content
+                                            to be anomaly-free on its own"
+        composite / emergent       open     not examined
+        spectral triple (Connes)   open     NOT MENTIONED ANYWHERE IN THE CORPUS
+
+⇒ ***Three closed, two open, one of the two absent entirely. **A bounded problem where there was an unbounded
+one.****
+
+**⛭⛭⛭ ⓶ AND THE ABSENT ROUTE HAS ITS PIECES.** *Connes: $D\to D+A$, gauge group $=$ unitaries of $\mathcal A$.
+$\mathcal H$ is the wall kernel; $D$ is P14's Dirac operator; **the algebra is the question**.*
+
+**⓷ AND THE HOLONOMY SUPPLIES A CANDIDATE ALGEBRA.** *Computed: the defining 3-dimensional representation is
+irreducible ($\langle\chi,\chi\rangle=1.0000$ over 27 elements), **so $\mathbb C[G]$ contains $M_3(\mathbb C)$** —
+exactly the factor carrying colour in Connes' Standard Model, whose unitaries are $U(3)$.*
+
+**⚠ ⓸ WHAT THIS IS NOT, STATED BEFORE IT CAN BE MISREAD.** ***Not a coupling*** *(inner fluctuations give a
+connection; the kinetic term with a fixed coefficient is this row and is untouched).* ***Not an escape from r2813***
+*(which closes deformations of the FLAT connection; this builds a different object from the algebra).* ***Not
+endorsed*** *(Connes' inputs — real structure, grading, order-one condition — none checked against CR).*
+
+**⛭ THE RULE:** ***when a corpus says "no X has been named", ENUMERATE the space of X and check each against it.
+**A negative reported as an absence of proposals is not a negative about the world** — and three of the five
+closures were already written in the papers, waiting to be counted together.***
+
+### Revision r2813 — 2026-08-12 (main line). **r2811's OWED QUESTION IS ANSWERED IN P14, IN A STRONGER FORM.**
+
+**⛭⛭⛭ ⓵ THE ANSWER, AND IT DOES NOT DEPEND ON A DIMENSION COUNT.** *P14: "But the dimension is a bonus and not the
+argument. **The moduli space of flat connections consists of flat connections, so a deformation within it changes
+which flat bundle one has and not whether there is a field strength.**"*
+⇒ ***So even if a continuous direction existed it would not help — $F$ is zero at every point of that space.
+**r2811 filed as OWED a question the paragraph forecloses.****
+
+**⓶ AND THE COUNT IS THERE WITH ITS REASON.** *Zero-dimensional: a wall's monodromy carries a repeated eigenvalue so
+its class is **subregular, dimension four rather than the regular six**, and "the disjointness of the vantages'
+supports is exactly what removes" the two-parameter family three regular classes would have left.*
+
+**⛭⛭ ⓷ AND THE FINITENESS CARRIES THE REASON r2806 LACKED.** *"necessarily so, since the holonomy is branching and
+**a branch structure has finitely many sheets** --- and a finite group in characteristic zero has **vanishing first
+cohomology**, so the representation does not deform as a representation of its own holonomy."*
+⌗ ***r2806 and r2811 were re-derivations of paper content.***
+
+**⓸ ONE THING ADDED, AND IT CORRECTS THIS LINE.** *P14's order 81 checks out: $\langle Z,C\rangle$ closes at 27 as
+matrices and $81=27\times3$ with the full $\mathbb Z_3$ centre. **r2811's 18 was an artefact of quotienting by
+phase on a two-generator set.***
+
+**⛭ THE RULE:** ***when a paper states a negative result, read the WHOLE paragraph before deriving it again. **A
+re-derivation that lands where the paper already stands costs a revision and produces nothing** — and worse, files
+as OWED the questions the paragraph's later sentences answer.***
+
+### Revision r2812 — 2026-08-12 (main line). **TWO INSTRUMENTS FOR THE `PO-2` FAILURE — currency and visibility.**
+
+**⛭⛭ ⓵ `check_gate_currency` — A GATE-HOLDING DOCUMENT MUST NOT LAG ITS ROW.** *A gate is a DEFERRAL: the row names
+a document and the document holds the state. **So staleness is a comparison of two revision numbers.***
+
+    PO-2's row cited r2629-r2633 and argued from them
+    GEOMETRY_PHYSICS_TAXONOMY cited r693        -- 170 revisions behind, in two places
+
+*Registers (`INDEX`, `OWED`, `CLAIMS`, `FOR_*`) are exempt — they are appended logs, not gate-holders. Three
+existing lags found and baselined; the gate fires on NEW staleness.*
+⌗ ***Seed-tested by reverting the taxonomy to its pre-r2803 state: it fires and names the document.***
+
+**⛔ ⓶ AND THE SECOND HALF WAS SIMPLER AND WORSE: GATED ROWS WERE INVISIBLE ON THE BOARD.** *`PO-2` and `PO-7`
+appeared nowhere, so "what is blocked and on what" was answerable only by a full register read.*
+⇒ ***`BOARD.md` now carries a GATED section with each row's blocker and last-moved revision. **Gated is a STATE,
+not an absence.****
+
+⌗ *And the first selector matched the prose "gated on this row" — **a narrow-selector error inside the fix for an
+invisibility error** — caught because the rendered output said "gated on `this`".*
+
+**⛭ THE RULE:** ***a hold needs a HOLDER and the holder needs a CURRENCY CHECK. **A gate with no instrument
+watching it is a claim someone made once**, and the failure is silent by construction: the row reads as correctly
+held by anyone who does not open the citation.***
+
 ### Revision r2811 — 2026-08-12 (main line). **THE RULES ARE CENTRE DATA AND THE FORCE IS ROOT-VECTOR DATA.**
 
 **⓵ $\mathfrak{su}(3)$ SPLITS AND THE CORPUS HAS ONE SIDE.**
