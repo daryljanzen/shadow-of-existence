@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r2784 — 2026-08-11 (main line). **"MERGED" WAS NOT "ACTED ON" — the phantom rows were still live.**
+
+**⛔ ⓵ THE MERGE WAS CLEAN AND THE DEFECT WAS STILL THERE.** *`X4_singularity_types` and
+`X3_seam_schwarz_reflection` were still in `INDEX.md` carrying **✔✔** — four rows, no withdrawal marking. cc54 had
+DIAGNOSED them at `c54.222`; nobody had MARKED them.*
+⇒ ***The next reader would have read ✔✔ and believed it — precisely the failure the finding was about.***
+✔ *Marked **✘ NEVER EXISTED**, row kept rather than deleted **so the citation resolves to its own withdrawal**.*
+
+**⛭⛭ ⓶ AND ASKING THE OTHER DIRECTION FOUND MORE.** *`check_rows_outward` built:*
+
+    citations INWARD:  "does every cited receipt resolve?"  -- passes when a row is cited by nobody
+    rows OUTWARD:      "does every registered row name something real?"
+
+*It caught `scripts/queue.py` — renamed at r2670 to stop shadowing the stdlib, **its row never updated**. 350
+run-claims now checked.*
+
+**⚠ ⓷ AND I REPEATED r2783's OWN ERROR WHILE BUILDING THE GATE FOR IT.** *My first search covered only `receipts/`,
+so a row legitimately naming `storyboard_receipts/` came back as a phantom. **"A narrow selector is a filter wearing
+a different name" — written one revision before I did it again.***
+
+**⛭ THE RULE:** ***when a node hands you a diagnosis, check whether the defect is still THERE. **A merge moves the
+finding, not the fix** — a defect that has been named, verified and written up is still a defect until something in
+the tree changes.***
+
 ### Revision r2783 — 2026-08-11 (main line). **`c54.221`+`c54.222` MERGED — and my own gate had the blind-spot class they found.**
 
 **⛔ ⓵ VERIFIED INDEPENDENTLY: TWO ✔✔ RECEIPTS HAVE NEVER EXISTED.** *`X4_singularity_types.py` and

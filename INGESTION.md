@@ -273,3 +273,4 @@ r2727  INSTRUMENT  cleanup: 4 COMPUTES scopes, 8 parked deferrals removed, map b
 r2728  INSTRUMENT  PO-6: ordering decides it -- normal gives 1/4 (below), symmetric gives 3/4. P10 names neither.
 ```
 r2783  LATENT      c54.222 merged and verified: X3/X4 never existed. My own selector had the same blind-spot class.
+r2784  INSTRUMENT  the two phantom rows were still LIVE with tick-tick. Marked, and check_rows_outward built.

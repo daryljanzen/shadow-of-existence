@@ -41,13 +41,13 @@ sources: [chat]
 |---|---|---|---|---|---|
 | `ABSORPTION.md` | SOURCE | The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced. | — | c54.222 | 0 |
 | `THE_LIVE_ARC.md` | SOURCE | the lead register — the one live edge | — | c54.222 | 0 |
-| `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.220 | c54.220 | 2 |
-| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.220 | c54.220 | 2 |
-| `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.220 | 2 |
-| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.220 | c54.220 | 2 |
-| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.220 | c54.220 | 2 |
+| `DOCUMENT_LEDGER.md` | VIEW | (declared in frontmatter) | c54.222 | c54.222 | 0 |
+| `ID_SPACE_CENSUS.md` | VIEW | (declared in frontmatter) | c54.222 | c54.222 | 0 |
+| `INDEX.md` | VIEW | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). | — | c54.222 | 0 |
+| `THE_BURN_DOWN.md` | VIEW | (declared in frontmatter) | c54.222 | c54.222 | 0 |
+| `WHATS_TEED_UP.md` | VIEW | (declared in frontmatter) | c54.222 | c54.222 | 0 |
 | `ACOUSTIC_BUILD_SETUP.md` | STATE | The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own. | — | c54.201 | 21 |
-| `BOARD.md` | STATE | (declared in frontmatter) | — | c54.220 | 2 |
+| `BOARD.md` | STATE | (declared in frontmatter) | — | c54.222 | 0 |
 | `CATEGORY_THEORY_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.201 | 21 |
 | `COLLAPSE_EXCURSION_TRANSFER_build.md` | STATE | PHASE 7's ATTACK MANUAL — the one build on the progenitor collapse excursion (L2) behind open-problems families 1/3/4/5. Referenced live by eleven documents including THE_PLAN, PHASE7_BUILD_LEDGER and both open-problems documents. | — | c54.201 | 21 |
 | `COMBINATORICS_LEDGER.md` | STATE | The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8. | — | c54.201 | 21 |
@@ -62,7 +62,7 @@ sources: [chat]
 | `FIGURE_SWEEP.md` | STATE | The figure programme's state — every figure against what it must carry. | — | c54.201 | 21 |
 | `FIGURE_THEOREM_LEDGER.md` | STATE | The figure–theorem ledger: which classical theorem each figure carries, and its receipts. | — | c54.19 | 203 |
 | `FORK_c54.md` | STATE | the c54 fork's own record | — | c54.188 | 34 |
-| `OPEN_PROBLEMS_MAP.md` | STATE | The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open | — | c54.220 | 2 |
+| `OPEN_PROBLEMS_MAP.md` | STATE | The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open | — | c54.222 | 0 |
 | `OPTICS_LENSING_LEDGER.md` | STATE | field ledger — probes and their verdicts | — | c54.201 | 21 |
 | `OWED.md` | STATE | (declared in frontmatter) | — | c54.220 | 2 |
 | `P3_SWING_ONTOLOGY_hinge-and-door.md` | STATE | The usable ontological skeleton for the SECOND major P3 upgrade — lead with the physical object (one hinge, one door, one swing) and DERIVE w, u, 3w as the shadows it throws. Registered as L-206; the upgrade has not landed. | — | — | never |
@@ -97,7 +97,7 @@ sources: [chat]
 | `DISPATCHING_COWORK.md` | METHOD | rules / guards / canon | — | — |  |
 | `FOUNDATIONAL_DEPENDENCY_MAP.md` | METHOD | rules / guards / canon | — | — |  |
 | `GEOMETRY_PHYSICS_TAXONOMY.md` | METHOD | rules / guards / canon | — | c54.84 |  |
-| `INGESTION.md` | METHOD | (declared in frontmatter) | — | c54.220 |  |
+| `INGESTION.md` | METHOD | (declared in frontmatter) | — | c54.222 |  |
 | `INTRODUCTION.md` | METHOD | rules / guards / canon | — | c54.118 |  |
 | `JARGON_LEDGER.md` | METHOD | rules / guards / canon | — | — |  |
 | `KICKOFF_CODA_REVIEW.md` | METHOD | A review methodology, not a spent task — Pass A faithful account then STOP; Pass B four questions plus one inward; three verdicts; a finding whose receipt carries no first-hand extract with a locator is structurally void. LOWEST PRIORITY (Daryl, standing): kept where it is, not to be raised again. | — | — |  |
