@@ -308,3 +308,5 @@ r2803  CLAIMED    PO-2: does level (3)s do-not-assert still guard anything, now 
 r2803  COMPUTED    PO-2s gate was a stale taxonomy sentence. Levels (1) and (2) gate nothing; only (3) waits on PO-5.
 r2804  CLAIMED    does PO-2s upgrade give PO-5 a foothold? Test the root triple as a coupling candidate.
 r2804  COMPUTED    PO-2s triple is FORCED (Nariai roots over alpha) -- a real foothold for PO-5, on the wrong wall.
+r2805  CLAIMED    PO-5: read p0s inference. Does it close over a non-curvature dimensionless quantity?
+r2805  COMPUTED    p0s inference is SOUND and scoped -- the mass cancels (K=72/alpha^4) and 1/sqrt3 survives outside it.

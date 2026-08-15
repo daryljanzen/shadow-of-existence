@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2805 — 2026-08-12 (main line). **p0's INFERENCE IS SOUND AND SCOPED — $1/\sqrt3$ falls outside it.**
+
+**⓵ THE PREMISE IS A TWO-SCALE ARGUMENT.** *"neither real form supplies a second invariant and **a dimensionless
+magnitude needs two** … every curvature invariant on either face is a pure power of $1/\alpha^{2}$. So the
+construction cannot force a coupling."*
+⇒ ***Not "there are no numbers" but "there is nothing to take a ratio OF".***
+
+**⛭⛭⛭ ⓶ AND ON THE NARIAI CUT THE PREMISE IS EXACTLY TRUE — THE MASS CANCELS.**
+
+    K = 48 M^2 / r^6 + 24/alpha^4     at M = alpha/3sqrt3, r = alpha/sqrt3
+      = 72 / alpha^4                  a pure power, exactly as p0 says
+
+*`janzen_circle` states it: "in which the mass cancels \emph{identically} rather than only in the limit".*
+
+**⛭⛭ ⓷ BUT $r_N/\alpha = 1/\sqrt3$ SURVIVES AND IS ABSENT FROM $K$.** *A ratio of a **LOCUS** to the scale, not of
+two invariants.*
+⇒ ***The second scale p0 denies is not what supplies it. **The inference neither covers nor excludes the
+number.****
+
+**⓸ AND NARIAI IS NOT A CHOICE.** *`shadow_of_existence`: "the Nariai configuration is **the unique fixed point** of
+the root-exchange involution". `cosmogenesis_paper` places the generation structure there. **$M/\alpha$ is fixed by
+a uniqueness statement.***
+
+**⛭ THE RULE:** ***a paper's impossibility argument has a CLASS it ranges over, and finding an object outside the
+class is not a refutation — **it is a scope reading, and it is worth more than a refutation would be**, because the
+argument stays sound and the row gains a candidate. "p0 is wrong" would have been easy and false.***
+
+⌗ ***`PO-5`'s residue is now one sentence: an $F^2$ term for the number to multiply. The number is forced, p0's
+exclusion does not reach it, and r2729's wall is the only thing left.***
+
 ### Revision r2804 — 2026-08-12 (main line). **`PO-2`'s UPGRADE IS A REAL FOOTHOLD FOR `PO-5`, ON THE WRONG WALL.**
 
 **⛭⛭⛭ ⓵ THE TRIPLE IS FORCED.** *At the Nariai crest ($M=\alpha/3\sqrt3$) the $f=0$ roots in units of $\alpha$:*
