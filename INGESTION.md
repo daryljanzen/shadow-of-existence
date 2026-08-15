@@ -280,3 +280,5 @@ r2786  CLAIMED    PO-10: CRs chi2 = 281 has no candidate mechanism. Generate one
 r2786  COMPUTED    CRs 281 is the ORDER P15s own damping prediction produces. The question inverts.
 r2787  CLAIMED    PO-10: run the SHAPE test. Does the CR arms per-bin residual follow the damping profile?
 r2787  COMPUTED    the shape test RUN: the residual oscillates at l_A. 281 is peak misalignment. r2786 withdrawn.
+r2788  CLAIMED    PO-10: is the phase slip PHYSICAL or NUMERICAL? l_A = pi D_M / r_s is checkable.
+r2788  COMPUTED    l_A is COMPUTED and its cancellation is real -- but the residual is 100x too small. Amplitude remains.

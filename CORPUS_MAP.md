@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2788 — 2026-08-11 (main line). **$\ell_A$ IS COMPUTED, THE CANCELLATION IS REAL, AND IT IS 100× TOO SMALL.**
+
+**⛭⛭ ⓵ THE NUMERICAL HORN IS CLOSED.** *$\pi D_M/r_s$ reproduces the stored $\ell_A$ in both arms exactly:*
+
+    LCDM   13864.7 / 144.53  ->  301.37   (stored 301.37)
+    CR     13004.6 / 135.46  ->  301.60   (stored 301.60)
+
+*Not calibrated. **Nothing is being tuned to make $\ell_A$ agree.***
+
+**⛭⛭⛭ ⓶ AND ITS SURVIVAL IS A CANCELLATION P15 CLAIMS IN ADVANCE.** *$D_M$ $-6.20\%$, $r_s$ $-6.27\%$, $\ell_A$
+$+0.075\%$ — "the acoustic-scale calibration, **met from the other end and to that accuracy rather than
+exactly**".*
+
+**⛔ ⓷ BUT THE RESIDUAL IS TWO ORDERS TOO SMALL.**
+
+    predicted |dC/C| from a 0.075% shift    median 0.20%
+    MEASURED |ratio - 1|                    median 26.6%
+
+⇒ ***It explains under $1\%$ of the swing. **Peak POSITION is not the cause, any more than the envelope was.****
+
+**⓸ SO THREE ELIMINATIONS NOW, EACH NAMING ITS SUCCESSOR.** *The damping envelope (r2786, killed by its own named
+test), the peak positions (here) — ***and what remains is peak AMPLITUDE varying comb-periodically: the peaks in
+the right places and the wrong heights.*** That is a different physical statement and it has not been examined.*
+
+**⛭ THE RULE:** ***a mechanism that is REAL, PREDICTED and PRESENT still has to be the right SIZE. **Confirming the
+corpus and answering the question are different acts** — and a finding that does both is rarer than one that does
+the first and feels like both.***
+
 ### Revision r2787 — 2026-08-11 (main line). **THE SHAPE TEST RUN — 281 IS PEAK MISALIGNMENT, and r2786 is withdrawn by its own test.**
 
 **⛔ ⓵ NEITHER A MATCH NOR FLAT — IT OSCILLATES.**
