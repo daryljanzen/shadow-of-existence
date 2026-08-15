@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2807 — 2026-08-12 (main line). **`L-829` AND `L-830` GATED — the pin test lands acoustic, and my measure was wrong.**
+
+**⛭⛭ ⓵ `L-830`: THE PIN TEST, RUN.** *The run this line's container OOM'd on twice (r2801).*
+
+    LATARG    Delta_ell / L_A
+       280         0.857
+     301.6         0.855      <- the banked pin, and r2789's measurement
+       320         0.856
+    the pin moves 14%; the ratio moves 0.23%
+
+⇒ ***If the deficit were an artefact of where the pin was put, moving the pin would move it. **It does not. r2789's
+$0.855$ is the constant.**** *And the first-peak offset is a SEPARATE phase — $\ell_1$ nearly pinned while $L_A$
+moves.* ⚠ *F5 unsoftened: structural is not a verdict.*
+
+**⛔ ⓶ `L-829` CORRECTS r2796's MEASURE CHOICE.**
+
+    at a simple zero of f:   dr/f       ~ 1/(r-r_b)      -> LOG DIVERGENT   (tortoise, r2796)
+                             dr/sqrt(f) ~ 1/sqrt(r-r_b)  -> CONVERGENT      (leaf, L-829)
+
+⇒ ***Both arithmetically right. **And P14 binds its zero-mode in the LEAF measure**, noting the same mode "does not
+normalize" against the tortoise — so the leaf governs the Dirac problem, and r2796 read the horizon in the wrong
+one.***
+
+⌗ *What survives: the wall is at finite distance in **both** measures, which is what made the bound mode's
+localisation possible. What is corrected: **the inner horizon IS a junction the continuum passes through**.*
+
+**⓷ AND `L-829` FLAGS ITS REMAINDER RATHER THAN CLAIMING IT** — *the transmission amplitude; the second-order route
+failed validation and was not banked.*
+
+**⛭ THE RULE:** ***a convergence question has no answer until the MEASURE is named. **"Infinitely far" and "finitely
+far" can both be true of one locus** — the operator picks the measure, so read what the field's own norm uses before
+computing a distance.***
+
 ### Revision r2806 — 2026-08-12 (main line). **THE MISSING $F^2$ IS ENTAILED BY THE DELIVERY.**
 
 **⛭⛭ ⓵ P14 SAYS WHERE COLOUR LIVES.** *"the module the operator's colour structure acts on is **the branching**

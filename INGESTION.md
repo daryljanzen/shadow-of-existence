@@ -312,3 +312,4 @@ r2805  CLAIMED    PO-5: read p0s inference. Does it close over a non-curvature d
 r2805  COMPUTED    p0s inference is SOUND and scoped -- the mass cancels (K=72/alpha^4) and 1/sqrt3 survives outside it.
 r2806  CLAIMED    PO-5: WHICH bundle is flat, and is it the one a coupling would live on?
 r2806  COMPUTED    the missing F^2 is ENTAILED -- colour arrives by covering monodromy, which is flat by construction.
+r2807  COMPUTED    L-829/L-830 gated: the pin test lands ACOUSTIC, and L-829s leaf measure corrects r2796.

@@ -270,3 +270,4 @@ r2803  COMPUTED    PO-2s gate was a stale taxonomy sentence. Levels (1) and (2) 
 r2804  COMPUTED    PO-2s triple is FORCED (Nariai roots over alpha) -- a real foothold for PO-5, on the wrong wall.
 r2805  COMPUTED    p0s inference is SOUND and scoped -- the mass cancels (K=72/alpha^4) and 1/sqrt3 survives outside it.
 r2806  COMPUTED    the missing F^2 is ENTAILED -- colour arrives by covering monodromy, which is flat by construction.
+r2807  COMPUTED    L-829/L-830 gated: the pin test lands ACOUSTIC, and L-829s leaf measure corrects r2796.
