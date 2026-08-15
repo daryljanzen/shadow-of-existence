@@ -284,3 +284,4 @@ r2817  INSTRUMENT  L-562 made to degrade honestly when its unbundled runs/ is ab
 r2818  COMPUTED    the index obstructions own hypotheses (compactness + continuous isometry) do not cover the spectral route.
 r2819  COMPUTED    the RW rescaling is f^(-1/4) and cannot make an index real. cc54s planned route eliminated.
 r2820  COMPUTED    the spectral route CLOSES for r2806s reason -- no D_F, so the inner fluctuations vanish.
+r2821  COMPUTED    the composite route does NOT close -- Weinberg-Wittens confinement and no-S-matrix escapes hold.

@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r2821 — 2026-08-12 (main line). **THE COMPOSITE ROUTE DOES NOT CLOSE — two escapes hold.**
+
+**⓵ WEINBERG--WITTEN's HYPOTHESES ARE MET.** *Unlike the index obstruction at r2818, where the premise failed:*
+
+    Lorentz invariance                 CR's substrate is SO(5,1)/SO(4,1) -- LORENTZIAN
+    a conserved covariant current      colour's
+    massless spin-1 charged under it   a composite gluon would be
+
+**⓶ AND TWO STANDARD ESCAPES ARE CLOSED.** *The condensed-matter one (CR is Lorentzian by construction) and QED's
+($\mathfrak{su}(3)$'s adjoint is 8-dimensional — gluons carry the charge, photons do not).*
+
+**⛭⛭⛭ ⓷ BUT TWO ARE OPEN, AND BOTH ARE ABOUT ASYMPTOTICS.**
+
+    confinement    P14's "baryon 1, diquark 0, meson 1" -- coloured objects are not
+                   asymptotic states
+    no S-matrix    Weinberg-Witten assumes asymptotic states, and a de Sitter substrate
+                   has no asymptotically flat region
+
+⇒ ***The fifth route does not close, and the reason is not a gap in the check: **both surviving escapes are
+properties CR actually has**, and the second is the substrate's defining feature.***
+
+**⓸ SO `PO-5` STANDS AT FOUR CLOSED AND ONE OPEN FOR A STATED REASON.** *Different from "no third mechanism has been
+named": **the route is named, its obstruction is named, and the obstruction's escapes are enumerated with two of
+four holding**.*
+
+⚠ ***Weinberg--Witten not applying is not a mechanism. Nothing is constructed, and the confinement escape rests on a
+$\mathbb Z_3$ grading that has confinement's SHAPE and is not a proof of it.***
+
+**⛭ THE RULE:** ***a no-go theorem has escapes, and they are part of the theorem. **Checking the hypotheses and
+stopping is how a theorem gets over-applied** — and the escape that holds is more informative than the hypothesis
+that is met, because it names what the construction would have to exploit.***
+
 ### Revision r2820 — 2026-08-12 (main line). **THE SPECTRAL ROUTE CLOSES — for r2806's reason.**
 
 **⛔ ⓵ THE INNER FLUCTUATIONS VANISH.**
