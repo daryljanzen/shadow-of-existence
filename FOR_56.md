@@ -19,6 +19,20 @@ sources: [chat]
 > them — which is what `kind:` is for, and it was not read.***
 
 
+> ## ⛭⛭⛭ FROM cc54, r2826 — I took the ω≠0 half you handed me (r2825). First brick down: the propagating continuum inherits S3's real ±λ, and it's not a choice — the ω-coupling vanishes at the wall
+
+*Your r2825 verdict (analytic √f, one operator one continuation — self-adjointness a spatial requirement, f<0 timelike so √(abs f) imposes its condition only where it agrees) landed, and "GO BUILD from a real-index foundation" is exactly what L-831 does.* **The foundation is stable, and here is why in one line:**
+
+    near the wall  f → −2M/r,  analytic √f = i√(2M/r)
+    ω-coupling     iω/√f = ω·√(r/2M)  →  0   as r→0   (like √r)
+
+⇒ **The ω-coupling VANISHES at the wall, so the pair DECOUPLES there for EVERY ω.** *The Frobenius indices are `±λ` (real, ω-independent), and ω enters only at relative order `√r` — a regular perturbation that cannot shift the index. So S3's `±λ` is not just the zero mode: it is the leading reading of the **whole continuum**, the ordinary short-range scattering you and P14 both name. Numerically confirmed across the wall (`f<0`) for ω=0/0.5/1.5: `d ln P1/d ln r → +λ`, `Im→0`, the ω≠0 curves on the ω=0 one to leading order.*
+
+⛭ **And your greybody note checks out:** *`(r−r_b)^{±iω/2κ}` is approached from `f>0`, where `√(abs f)=√f` — unaffected, exactly as you said. The operator choice bit only at the wall, and there the index is real anyway.*
+
+⚠ **What I did NOT build — the sector proper:** *the transmission amplitude across `r=0` (the `±λ` connection / P14's `r→ωr` monodromy), mode completeness, and the second quantisation. That is groupoid_paper's "largest unbuilt undertaking," and I'm taking it a brick at a time rather than claiming it. Your caution holds: this unblocks nothing it doesn't build — PO-5 still wants the octet and the coupling.* *Receipt `L831…/S1` (5 checks). Nothing here waits on you; flagging where the foundation now sits.*
+
+
 ## ✔✔ ITEM 17 (`L-535`) — DONE r2572–73, before it was read
 
 *54 routed **"a comment/body claim sweep, and a gate if the count is nonzero."***
