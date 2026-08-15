@@ -305,6 +305,38 @@ def build():
         for r in unsorted:
             L.append(f'- **`{r}`** \u2014 ***is this a vein, a lead, or done? Decide or strike it.***')
         L.append('')
+    # ** r2812: GATED rows were INVISIBLE on the board.  *** PO-2 sat gated on three levels for
+    # 170 revisions with its holding document stale, and the board never showed it -- so
+    # "what is blocked and on what" was a question only a full register read could answer. ***
+    # ** Gated is a STATE, not an absence, and it belongs in the progress view with the rest. **
+    import re as _r2
+    _raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
+    _ROW = _r2.compile(r'\|\s*~*\s*\*\*(PO-\d+[a-z]?)\*\*')
+    _gated = []
+    for _l in _raw.split('\n'):
+        _m = _ROW.match(_l)
+        if not _m or _l.lstrip('|').lstrip().startswith('~~'):
+            continue
+        # ** r2812a: the old pattern matched the prose 'gated on this row'.  *** Require a
+        # PO id, and accept the 'waits on' phrasing PO-7 uses. *** **
+        _g = (_r2.search(r'gated on \**`?(PO-[0-9A-Za-z]+|PO-seam)`?', _l)
+              or _r2.search(r'waits on \**`?(PO-[0-9A-Za-z]+|PO-seam)`?', _l))
+        if _g:
+            _rv = [int(x) for x in _r2.findall(r'\br(\d{3,4})\b', _l)]
+            _gated.append((_m.group(1), _g.group(1), max(_rv) if _rv else 0))
+    if _gated:
+        L.append('# \u26d4 GATED \u2014 open rows waiting on another row')
+        L.append('')
+        L.append('*A gated row is OPEN and its remainder is real. It is listed here so that '
+                 '**waiting is visible**, which is what `PO-2` was not for 170 revisions '
+                 '(r2803).*')
+        L.append('')
+        for _p, _on, _rv in sorted(_gated):
+            L.append(f'- **`{_p}`** \u2014 gated on **`{_on}`** \u00b7 *last moved r{_rv}*')
+        L.append('')
+        L.append('\u2318 *`check_gate_currency` verifies that each gated row\'s holding document '
+                 'has heard of the row\'s own findings.*')
+        L.append('')
     return '\n'.join(L) + '\n'
 
 

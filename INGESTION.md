@@ -321,3 +321,5 @@ r2809  COMPUTED    1/sqrt3 is right kind right place in P14s dimensional argumen
 r2810  COMPUTED    the triple is lambda_8 -- a NORMALISATION not a coupling. r2804/r2809 labels withdrawn.
 r2811  CLAIMED    what is missing between Cartan+Weyl data and su(3) itself?
 r2811  COMPUTED    the rules are CENTRE data and the force is ROOT-VECTOR data -- two halves of one decomposition.
+r2812  CLAIMED    build check_gate_currency -- a gate goes stale when its holding document lags the row.
+r2812  INSTRUMENT  check_gate_currency built and gated rows made visible on the board.

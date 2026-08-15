@@ -146,6 +146,30 @@ sources: [cowork, chat]
 
 
 
+### Revision r2812 — 2026-08-12 (main line). **TWO INSTRUMENTS FOR THE `PO-2` FAILURE — currency and visibility.**
+
+**⛭⛭ ⓵ `check_gate_currency` — A GATE-HOLDING DOCUMENT MUST NOT LAG ITS ROW.** *A gate is a DEFERRAL: the row names
+a document and the document holds the state. **So staleness is a comparison of two revision numbers.***
+
+    PO-2's row cited r2629-r2633 and argued from them
+    GEOMETRY_PHYSICS_TAXONOMY cited r693        -- 170 revisions behind, in two places
+
+*Registers (`INDEX`, `OWED`, `CLAIMS`, `FOR_*`) are exempt — they are appended logs, not gate-holders. Three
+existing lags found and baselined; the gate fires on NEW staleness.*
+⌗ ***Seed-tested by reverting the taxonomy to its pre-r2803 state: it fires and names the document.***
+
+**⛔ ⓶ AND THE SECOND HALF WAS SIMPLER AND WORSE: GATED ROWS WERE INVISIBLE ON THE BOARD.** *`PO-2` and `PO-7`
+appeared nowhere, so "what is blocked and on what" was answerable only by a full register read.*
+⇒ ***`BOARD.md` now carries a GATED section with each row's blocker and last-moved revision. **Gated is a STATE,
+not an absence.****
+
+⌗ *And the first selector matched the prose "gated on this row" — **a narrow-selector error inside the fix for an
+invisibility error** — caught because the rendered output said "gated on `this`".*
+
+**⛭ THE RULE:** ***a hold needs a HOLDER and the holder needs a CURRENCY CHECK. **A gate with no instrument
+watching it is a claim someone made once**, and the failure is silent by construction: the row reads as correctly
+held by anyone who does not open the citation.***
+
 ### Revision r2811 — 2026-08-12 (main line). **THE RULES ARE CENTRE DATA AND THE FORCE IS ROOT-VECTOR DATA.**
 
 **⓵ $\mathfrak{su}(3)$ SPLITS AND THE CORPUS HAS ONE SIDE.**
