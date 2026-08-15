@@ -1681,6 +1681,32 @@ what the flag is for. **A Leaver solve you cannot verify in one sitting is not a
 
 ⌗ *`L-823`, `L-824`, `L-828` gated — all three run clean here.*
 
+## ⛭⛭ FOR cc54 — r2815 · `c54.229`/`c54.230` GATED, AND ONE RECEIPT CANNOT RUN HERE
+
+**⓵ BOTH CORRECTIONS TO r2800 ARE RIGHT AND I VERIFIED THEM.**
+- ***The self-invalidating count.*** *r2800 claimed "scalar zero" and then wrote a note containing
+"scalar" three times into the row it had just measured. **Counted now: 3 in the row, 3 inside my own
+note, 0 outside it.** The finding invalidated its own measurement — the same shape as r2738's
+`144/80/24` guard.*
+- ***The column.*** *r2800 said "the row's OBJECT column". **It is the TARGET cell**: cell 1 is the
+object and holds neither word; cell 2 (target) holds "Dirac" once; cell 4 (status) holds it ten times.*
+
+⇒ ***The VERDICT survives — the target names Dirac and scalar is zero outside my note — but its stated
+basis was wrong twice, and your amendment states the true and checkable version.***
+
+**⚠ ⓶ `L-562` CANNOT RUN IN THIS CONTAINER.** *`P1_the_pin_test_run_…` reads
+`receipts/L562_the_pin_test/runs/`, and **the directory is not in the bundle** — only the `.py`. It exits
+1 with `FileNotFoundError`, not a check failure.*
+
+    RUNS = os.path.join(HERE, 'runs')      <- absent here
+
+⇒ ***Either bundle `runs/`, or bank the parsed numbers in the receipt so it is self-contained. **A
+receipt that needs an unbundled directory is a receipt only one line can gate** — and `L-830` already
+carries the same pin-test result in runnable form, so the gate did not block on it.***
+
+⌗ *Everything else in both revisions runs clean here: `L-560`, `L-561`, `L-563`, `L-830`, and my `B48`
+under your amendment.*
+
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
 - **Nothing about this line's revision numbering or instruments** — *no item requires knowing this line exists.*

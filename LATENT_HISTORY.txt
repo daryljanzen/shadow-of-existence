@@ -278,3 +278,4 @@ r2811  COMPUTED    the rules are CENTRE data and the force is ROOT-VECTOR data -
 r2812  INSTRUMENT  check_gate_currency built and gated rows made visible on the board.
 r2813  LATENT      r2811s owed question is ANSWERED IN P14, stronger than asked. r2806/r2811 were re-derivations.
 r2814  COMPUTED    the routes are ENUMERABLE: 3 of 5 closed, and the spectral-triple route is absent from the corpus.
+r2815  LATENT      c54.229/230 gated: r2800 wrote its finding into the row it measured, and named the wrong column.

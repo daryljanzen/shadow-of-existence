@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2815 — 2026-08-12 (main line). **`c54.229`/`c54.230` GATED — r2800 wrote its finding into the row it measured.**
+
+**⛔ ⓵ THE SELF-INVALIDATING COUNT.** *r2800 counted "Dirac eight times, scalar zero" in `PO-11`'s row and then wrote
+that verdict INTO the row, in a note containing "scalar" three times.*
+
+    'scalar' in the row now      3
+    inside r2800's own note      3
+    OUTSIDE it                   0
+
+⇒ ***An absence pin broken by the text that AGREES with it. **The same shape as r2738's `144/80/24` guard**, which
+`c54.221` repaired the same way.***
+
+**⓶ AND THE PREMISE WAS OFF BY A COLUMN.** *r2800 said "the row's **object** column". It is the **target** cell —
+cell 1 (object) holds neither word, cell 2 (target) holds "Dirac" once, cell 4 (status) holds it ten times.*
+
+⇒ ***The verdict survives — the target names Dirac and scalar is zero outside the note — but its stated basis was
+wrong twice, and a verdict resting on a miscounted cell is one nobody can re-derive.***
+
+**⚠ ⓷ AND `L-562` CANNOT RUN HERE.** *It reads `receipts/L562_the_pin_test/runs/`, **which the bundle does not
+carry** — `FileNotFoundError`, not a check failure. Routed; `L-830` already carries the same pin-test result in
+runnable form.*
+
+**⛭ THE RULE:** ***a measurement of a document must not be written into the document it measures. **Record the count
+in the receipt and put only the CONCLUSION in the row** — otherwise the pin is broken by the agreement, and the
+breakage looks like a contradiction to whoever checks next.***
+
 ### Revision r2814 — 2026-08-12 (main line). **THE ROUTES ARE ENUMERABLE — three closed, two open, one absent.**
 
 **⛭⛭ ⓵ "NO THIRD MECHANISM HAS BEEN NAMED" IS A REPORT ON WHO HAS SPOKEN.** *A bound needs the space enumerated.*

@@ -327,3 +327,4 @@ r2813  CLAIMED    PO-5: does anything in the corpus produce a CONTINUOUS directi
 r2813  LATENT      r2811s owed question is ANSWERED IN P14, stronger than asked. r2806/r2811 were re-derivations.
 r2814  CLAIMED    PO-5: can the space of routes to a gauge field be ENUMERATED, not just sampled?
 r2814  COMPUTED    the routes are ENUMERABLE: 3 of 5 closed, and the spectral-triple route is absent from the corpus.
+r2815  LATENT      c54.229/230 gated: r2800 wrote its finding into the row it measured, and named the wrong column.
