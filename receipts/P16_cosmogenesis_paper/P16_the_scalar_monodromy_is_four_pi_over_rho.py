@@ -263,8 +263,12 @@ print("     singular point contributes no monodromy. **")
 # =====================================================================
 print()
 print("=" * 78)
-try: fail.append('SEEDED')
-except AttributeError: fail = (False if False else True)
+# ** SEED REMOVED c54.222 (`L-556`). **  `try: fail.append('SEEDED')` was left in this file by my own
+# c54.212 while testing whether the twelve gates could all exit non-zero, and it has failed this
+# receipt ever since -- 90-odd commits, visible in every full run and triaged by nobody as a SEED.
+#   ⇒ *** c54.213's rule, from the same hand: VERIFY THE RESTORE, do not trust the `finally`.  This is
+#       what it costs when the restore is not verified: a real receipt reads as a real failure, and the
+#       failure list absorbs it. ***  Restored to the r2682^ text, byte for byte.
 if fail:
     print("FAILED: " + "; ".join(fail))
     sys.exit(1)

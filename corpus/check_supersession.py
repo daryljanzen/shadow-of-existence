@@ -41,6 +41,9 @@ ROOT = os.path.abspath(os.path.join(HERE, '..'))
 ARC = os.path.join(ROOT, 'THE_LIVE_ARC.md')
 INDEX = os.path.join(ROOT, 'receipts', 'INDEX.md')
 
+sys.path.append(HERE)
+import index_rows  # ** c54.222: one row reader for all five callers.  See its head. **
+
 TOP = 12          # how many candidate pairings to print
 MIN_SCORE = 2.0   # length-normalised weighted-score floor (see the IDF + normalisation note in main)
 MIN_SHARED = 3    # fewer shared distinctive terms than this is noise
@@ -97,13 +100,18 @@ def main():
 
     # receipts: INDEX rows, with their build revision if present
     receipts = []
-    for ln in idx.split("\n"):
-        # ** r2555: found by check_loaders on its FIRST RUN -- a sixth instance of the
-        # silent-discard class, in a file nobody had looked at.  The paper column is
-        # case-sensitive here and the geometric core is `p0` lowercase. **
-        if not ln[:3].upper().startswith("| P"):
-            continue
-        stem = re.search(r"`([A-Za-z0-9_/]+\.py)`", ln)
+    # ** r2555: found by check_loaders on its FIRST RUN -- a sixth instance of the silent-discard
+    # class, in a file nobody had looked at.  The paper column is case-sensitive here and the
+    # geometric core is `p0` lowercase. **
+    #
+    # ** ⛭ c54.222: this was the NARROWEST of the five copies -- it never grew the `` '| `' ``
+    # branch the other four have, so the twenty storyboard rows were invisible here on top of the
+    # twenty em-dash ones, and the scan compared open leads against a receipt corpus forty rows
+    # short of the file.  ** The filter is gone; `corpus/index_rows.py` holds it once. **
+    for _r in index_rows.rows(index=INDEX):
+        ln = "|" + "|".join(_r.cells) + "|"
+        stem = re.search(r"`([A-Za-z0-9_/]+\.py)`", ln) or re.search(
+            r"([A-Za-z0-9_/]+\.py)", _r.token)
         # r2382: the build-revision regex required "built rN (c54.N)" and matched only 85 of 266
         # rows.  ** So the false-positive filter below -- the one this gate's own docstring says was
         # "found on the first run and filtered" -- could not fire on 68% of the receipt corpus, and

@@ -3,7 +3,7 @@ name: claims
 kind: RECORD
 description: THE CLAIMS REGISTER — who is holding which files right now. Claim before you edit; release when you push. Checked by corpus/check_claims.py.
 sources: [chat]
-current: r2713+c54.214
+current: r2776+c54.222
 ---
 
 # CLAIMS — who is holding what, right now
@@ -83,7 +83,22 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| *(none — 54's c54.221 rows released with the work)* | — | — | — |
+| *(none — 54's c54.222 rows released with the work)* | — | — | — |
+
+> ⌗ **54's c54.222 ROWS RELEASED HERE, WITH THE WORK.** *· `corpus/index_rows.py` and
+> `corpus/check_appendix_current.py` — **new files, no other node was in them**. *· `corpus/check_receipts.py`,
+> `corpus/make_receipt_appendix.py`, `corpus/check_supersession.py`, `scripts/run_all_receipts.py`,
+> `scripts/work_entry_points.py` — **each had its own copy of one row filter and each is now a caller**; the
+> prose history of the filter is kept in every one of them and only the CODE is gone.
+> *· `receipts/INDEX.md` — two rows escaped, two withdrawn verbatim into a blockquote, `G50`/`G51`'s bound cells
+> given the explicit `NOT-A-PAPER-CLAIM` the em-dash column had only implied, `L-556`'s row appended.
+> *· ⚠ **`receipts/L230_computes_convention/C1_…` — CROSS-BAND, and said so first.** *It is the observer line's
+> (r2551), it is the one failure the filter was hiding, and correcting it is the only way to ship the fix green.
+> Attributed in its head and routed as item 41; **reverse it if you want it another way**.*
+> *· ⚠ **`receipts/P16_cosmogenesis_paper/P16_the_scalar_monodromy_…` — a SEED I left at c54.212**, removed and
+> restored to the `r2682^` text. *· `THE_LIVE_ARC.md` — `L-556` added in band, and **`L-555`'s own row repaired**:
+> it quoted the predicate this revision is about and split itself into 8 cells. *· `ABSORPTION.md` — the
+> `IN-FLIGHT:` line only. *· `FOR_56.md` — item 41, appended.
 
 > ⌗ **54's c54.214 ROWS RELEASED HERE, WITH THE WORK — and one of them is released UNWORKED, which is the honest
 > half.** *· `QUADRIC_GEOMETRY_LEDGER.md` — **worked**: the descendant of my own withdrawn `L-543` scope is

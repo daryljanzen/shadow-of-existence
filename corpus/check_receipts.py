@@ -4,28 +4,35 @@ For every \\rcpt{key} cited across corpus/*.tex: assert an INDEX row's receipt s
 exists in receipts/. Also lists INDEX receipts NOT yet cited (the retrofit to-do). Exit 1 on any orphan."""
 import re, os, glob, sys
 here=os.path.dirname(__file__); root=os.path.join(here,'..')
+sys.path.append(os.path.abspath(here))
+import index_rows            # ** c54.222: the row filter lives ONCE now.  See its head. **
 idx=os.path.join(root,'receipts','INDEX.md')
 index_stems={}
 badcols=[]
+_norow=[]       # rows naming a `.py` that does not exist -- c54.222; see the note at the check below
 _stem_rows={}   # stem -> [paths], to catch a stem registered at more than one row
 # The INDEX carries TWO row formats: '| paper | ...' and '| `stem` | paper ... |'.  The
 # second (the storyboard bake, 20 rows) was skipped here until r2376+c54.36, so a \rcpt{}
 # naming one of them would have been reported as an orphan that was in fact registered.
-for ln in open(idx, encoding='utf-8'):
-    # ** r2533+c54.203: THE PAPER COLUMN IS CASE-SENSITIVE HERE AND THE CORPUS IS NOT. **  This read
-    # ** `ln.startswith('| P')`, and the geometric core paper is written `p0` in LOWERCASE everywhere
-    # ** by the corpus's own convention -- so ALL NINE of its INDEX rows were invisible to this gate.
-    # ** Nobody hit it because no \rcpt{} had ever named one; c54.203's Higgs receipt is the first,
-    # ** and it read as an orphan while its row sat in the file. **
-    #   *A gate that skips a row silently reports the row's receipt as unregistered -- which is the
-    #    same shape as the duplicate-stem guard below: a gate blind to a row it should be policing.*
-    if not (ln[:3].upper().startswith('| P') or ln.startswith('| `')): continue
-    parts=re.split(r'(?<!\\)\|', ln.rstrip('\n'))
-    cells=[p.replace('\\|','|').strip() for p in parts[1:-1]]
-    if len(cells)<4 or cells[0]=='paper': continue
-    path=cells[3].strip('` ')
+# ** r2533+c54.203: THE PAPER COLUMN IS CASE-SENSITIVE HERE AND THE CORPUS IS NOT. **  This read
+# ** `ln.startswith('| P')`, and the geometric core paper is written `p0` in LOWERCASE everywhere
+# ** by the corpus's own convention -- so ALL NINE of its INDEX rows were invisible to this gate.
+# ** Nobody hit it because no \rcpt{} had ever named one; c54.203's Higgs receipt is the first,
+# ** and it read as an orphan while its row sat in the file. **
+#   *A gate that skips a row silently reports the row's receipt as unregistered -- which is the
+#    same shape as the duplicate-stem guard below: a gate blind to a row it should be policing.*
+#
+# ** ⛭⛭ c54.222 -- AND THE PAPER COLUMN WAS STILL DECIDING MEMBERSHIP.  The corpus writes an EM-DASH
+# ** there for a receipt supporting no paper, so TWENTY rows were dropped here too. **  The predicate
+# ** is gone, not patched a third time; `corpus/index_rows.py` holds it once for all five readers. **
+#   ⇒ *** AND THE COLUMN LINT BELOW SAT INSIDE THIS LOOP, so it inherited the filter's blind spot and
+#       reported green from inside it -- while TWO em-dash rows sat column-split since r2674.  A lint
+#       downstream of a filter checks the rows the filter already liked. ***
+for _r in index_rows.rows(resolve_paths=True, root=os.path.abspath(root)):
+    cells=_r.cells
+    path=_r.token
     if path.startswith('receipts/'): path=path[len('receipts/'):]
-    stem=os.path.splitext(os.path.basename(path))[0]
+    stem=_r.stem
     _stem_rows.setdefault(stem, []).append(path)
     index_stems[stem]=path
     if len(cells)!=8:  # COLUMN LINT: a data row must have 8 columns; more = an unescaped '|' (escape math bars as \|)
@@ -36,6 +43,15 @@ for ln in open(idx, encoding='utf-8'):
         # nothing downstream to notice.  Two rows were written this way at c54.83.
         badcols.append((stem, len(cells)))
         print(f"  [FAIL] INDEX row for {stem!r} has {len(cells)} columns (expect 8) -- an unescaped '|' math bar; escape it as \\|")
+    # ** ⛔ c54.222 -- THE ROW-OUTWARD CHECK, WHICH THIS GATE HAD NEVER MADE. **  Everything below
+    # validates CITATIONS INWARD: a \rcpt{} must reach a row and a file.  *** An UNCITED row naming a
+    # file that does not exist was therefore checked by nothing -- and `X4_singularity_types.py` and
+    # `X3_seam_schwarz_reflection.py` have never existed in ANY of the 486 commits reachable from any
+    # ref, while both are printed into P3's, P7's and the corpus appendix marked `[OK]`. ***
+    if _r.runnable and not _r.paths:
+        _norow.append((_r.lineno, _r.token))
+        print(f"  [FAIL] INDEX line {_r.lineno} registers {_r.token!r} -- NO SUCH FILE, searched "
+              f"receipts/ and the repository root, globbed")
 # --- DUPLICATE-STEM GUARD (added r2376+c54.182) -------------------------------------------
 # index_stems[stem]=path SILENTLY COLLAPSES two rows sharing a stem: whichever row appears
 # LATER in the file wins, so \rcpt{} resolution, the assertion census, and the origin/bound
@@ -109,20 +125,17 @@ for _p,_o,_w in _ad: print(f"    [ok]   {os.path.relpath(_p,root)} vs {_o}: {_w}
 # reported so it cannot quietly grow.
 _origin = {}
 _bound = {}
-for _ln in open(idx, encoding='utf-8'):
-    # ** r2555: a SECOND load site in this same file, missed when the first was fixed at
-    # c54.203.  ** The paper column is case-sensitive and the geometric core is `p0` lowercase,
-    # so this dict was built without p0's rows while the check above had been corrected.
-    #   ⇒ *** One fix per FILE is not one fix per LOAD SITE, and a file that loads the same
-    #       table twice can be half-fixed with nothing to show it. ***
-    if not (_ln[:3].upper().startswith('| P') or _ln.startswith('| `')):
+# ** r2555: a SECOND load site in this same file, missed when the first was fixed at c54.203. **
+# The paper column is case-sensitive and the geometric core is `p0` lowercase, so this dict was
+# built without p0's rows while the check above had been corrected.
+#   ⇒ *** One fix per FILE is not one fix per LOAD SITE, and a file that loads the same table twice
+#       can be half-fixed with nothing to show it. ***
+# ** c54.222: which is exactly why both sites now call the same reader rather than the same STRING. **
+for _r in index_rows.rows(root=os.path.abspath(root)):
+    if not _r.well_formed:
         continue
-    _c = [x.replace('\\|', '|').strip() for x in re.split(r'(?<!\\)\|', _ln.rstrip('\n'))[1:-1]]
-    if len(_c) != 8 or _c[0] == 'paper':
-        continue
-    _st = os.path.splitext(os.path.basename(_c[3].strip('` ')))[0]
-    _origin[_st] = _c[7]
-    _bound[_st] = _c[6]
+    _origin[_r.stem] = _r.origin
+    _bound[_r.stem] = _r.bound
 # A PROCESS receipt records a sweep or a batch rather than a claim of a paper, so it is not
 # owed a citation.  The opt-out must be written deliberately into the INDEX row's bound cell.
 _PROCESS = 'NOT-A-PAPER-CLAIM'
@@ -266,6 +279,12 @@ if badcols:
     print(f"\nFAIL: {len(badcols)} INDEX row(s) with a broken column count -- "
           f"the appendix generator silently DROPS these receipts.")
     sys.exit(1)
+if _norow:
+    print(f"\nFAIL: {len(_norow)} INDEX row(s) register a `.py` that does not exist -- "
+          f"the appendix prints them as [OK].")
+    print("  ** A row is a claim that a computation EXISTS.  Checking citations inward never asks it. **")
+    sys.exit(1)
 if orphans:
     print(f"\nFAIL: {len(orphans)} orphan citation(s)."); sys.exit(1)
-print("\nAll \\rcpt{} citations resolve to an INDEX row + a file on disk.")
+print("\nAll \\rcpt{} citations resolve to an INDEX row + a file on disk, and every registered row "
+      "resolves to a file.")

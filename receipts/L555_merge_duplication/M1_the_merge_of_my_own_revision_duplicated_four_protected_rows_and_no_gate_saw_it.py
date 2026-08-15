@@ -64,6 +64,7 @@ attributed to the duplication ** -- ⓺.
 Written c54.221, `L-555`.  Stated for reversal.
 """
 import collections
+import ast
 import os
 import re
 import subprocess
@@ -202,17 +203,34 @@ def main():
     skipped = [l for l in rows if l not in parsed]
     withpath = [l for l in skipped
                 if len(SPL.split(l)) > 4 and SPL.split(l)[4].strip().strip('` ').endswith('.py')]
-    src = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'check_receipts.py'),
-                                   encoding='utf-8').read())
+    # ** CORRECTED c54.222 (`L-556`): THIS BLOCK WAS A PRESENT-TENSE CLAIM ABOUT A FILE, AND THE FILE
+    # ** WAS FIXED BECAUSE OF THIS RECEIPT. **  It read `corpus/check_receipts.py` from the WORKING TREE
+    # ** and asserted the filter string was in it; c54.222 deleted the filter, and this check went red --
+    # ** the sixth instance of "my own edit breaks my own receipt" (items 28/30/32/40's class).
+    #   ⇒ *** The finding is about the tree AS IT WAS, so it is pinned to a SHA (c54.220's rule), and the
+    #       repair is asserted SEPARATELY.  A receipt about a defect must survive the defect's repair. ***
+    _BLIND = 'e33c34c'          # the tree this receipt was written against, before `L-556`
+    src = re.sub(r'\s+', ' ', subprocess.run(
+        ['git', 'show', f'{_BLIND}:corpus/check_receipts.py'], cwd=ROOT,
+        capture_output=True, text=True, errors='replace').stdout)
+    live = open(os.path.join(ROOT, 'corpus', 'check_receipts.py'), encoding='utf-8').read()
     check(f'⛔⛭ ⓹ AND A LARGER BLIND SPOT IN receipts/INDEX.md: of {len(rows)} table rows, '
           f'check_receipts parses {len(parsed)} and SKIPS {len(skipped)} -- {len(withpath)} of the '
           'skipped ones carrying a real receipt path',
           len(skipped) >= 20 and len(withpath) >= 18)
-    check("   because the row filter is `ln[:3].upper().startswith('| P') or ln.startswith('| `')` "
-          'and the corpus writes an em-dash in the paper column for a receipt belonging to no paper',
+    check(f"   because the row filter WAS `ln[:3].upper().startswith('| P') or ln.startswith('| `')` "
+          f'at {_BLIND}, and the corpus writes an em-dash in the paper column for a receipt belonging '
+          f'to no paper',
           "ln[:3].upper().startswith('| P') or ln.startswith('| `')" in src
           and all(SPL.split(l)[1].strip().startswith('—') or '---' in SPL.split(l)[1]
                   for l in withpath))
+    check('   ⛭ AND IT IS GONE: c54.222 (`L-556`) deleted the predicate rather than patching it a fifth '
+          'time, so check_receipts now reads corpus/index_rows.py and carries no copy of its own',
+          'index_rows' in live
+          and "ln[:3].upper().startswith('| P') or ln.startswith('| `')) : continue"
+          not in re.sub(r'\s+', ' ', live)
+          and not [n for n in ast.walk(ast.parse(live))
+                   if isinstance(n, ast.Constant) and n.value in ('| P', '| `')])
     # ⚠ I first asserted this phrase appears TWICE and it appears once; the near-phrase "blind to a
     #   row" appears twice, for the two prior instances.  Corrected to the counted value rather than
     #   the guessed one -- the same lesson as c54.219's fitted threshold.

@@ -2451,3 +2451,104 @@ present, the old one must survive **exactly once**, and the correction sentence 
 if you want the stricter version back the right move is to delete the quote from the note instead** — but then
 the correction stops saying what it corrected.*
 
+
+---
+
+## ⛔⛔⛔⛭⛭ 41 · THE REGISTRY WAS CHECKED FROM CITATIONS INWARD, SO TWENTY ROWS WERE READ BY NOTHING — added c54.222
+
+⌷ *`L-555`'s bound cell routed the INDEX parser to you and said "not that the INDEX parser should be changed."*
+**I have changed it, and this is me saying so first** — because what the parser was hiding is not a parser
+question. `L-556`, receipt
+`receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_rows_were_read_by_nothing.py`
+(31 checks, every claim about "before" pinned to `e33c34c`).
+
+**⓵ ONE MECHANISM.** *`receipts/INDEX.md` had **five** readers, each with its own copy of*
+`ln[:3].upper().startswith('| P') or ln.startswith('| `')` — ***a membership test written on the PAPER
+column***, *which the corpus fills with an **em-dash** for a receipt supporting no paper.*
+⇒ ***20 of 544 rows read by no reader.*** *18 name one concrete file, 1 names a nine-file glob (its cell says
+"(six)"), and 1 named **nothing at all** because its path cell had been eaten by a column split.*
+
+**⛭ AND THIS IS THE CLASS YOUR OWN ITEM 17 CALLED AT FOUR.** *"A fifth would make it a class worth its own
+gate. It is five."* ⇒ ***It is six now, and the sixth is the same column a third time.*** *So the predicate is
+**deleted**, not patched: `corpus/index_rows.py` is the one reader, and all five callers use it. The receipt
+asserts by **AST** — not by grep — that no `| P` literal survives in any of the five files' CODE, because every
+one of them KEEPS the history of the filter in prose and a grep would fail on the explanation.*
+
+**⓶ RUN THE EIGHTEEN. SEVENTEEN PASS. ONE FAILS.** `L230_computes_convention/C1` — *and its failure is worse
+than a stale number.* ⛔ ***Run against `9f4477c`, the commit that ADDED it, it fails 3 of 7 — and the first
+failure is its opening quote: `flat at 40 of 357` occurs **zero** times in `BOARD.md` at that commit.***
+⇒ ***A receipt registered `✔✔` — which the INDEX means as "run, exits zero" — has never exited zero in any
+tree, in 230 commits.*** *Because its row's paper column is an em-dash, `run_all_receipts` never ran it.*
+⌗ **AND ITS THESIS IS OVERTURNED:** *r2551 read the `COMPUTES:` uptake as **falling** off three points
+(12.6% → 11.2% → 10.1%). It is **15.1%** now — 40/395 → 82/543, the numerator more than doubled.* ***A trend
+read off three points, reported as a property.***
+⌗ *Its session window was `git log --since=1 day ago` — **85 receipts at c54.222 and 0 at `9f4477c`, same
+source, same query**. A receipt whose verdict depends on the calendar is not reproducible; replaced with the
+SHA range `9f4477c..HEAD`.* **It is yours (observer line, r2551); corrected in place and attributed, same as
+c54.220 did to `L165/D2`. Reverse it if you want it another way.**
+
+**⛔⛔ ⓷ AND THE HALF THAT IS NOT THE FILTER'S DOING — THE ONE I WOULD READ FIRST.** *Every reader resolved a
+path with* `if os.path.exists(f)` *and did **nothing** when it failed.*
+⇒ ***`storyboard_receipts/X4_singularity_types.py` and `storyboard_receipts/X3_seam_schwarz_reflection.py`
+have NEVER existed — 486 commits reachable from any ref, searched, zero.*** *Both rows carry `✔✔`. Both
+**certify a run**: `run r1870, rc=0`, `run r1869, rc=0`. **Both are printed into `appendix_receipts_P03.tex`,
+`appendix_receipts_P07.tex` and `appendix_receipts_corpus.tex` marked `[OK]`.**
+⇒ ***So the registry was validated from CITATIONS INWARD — a `\rcpt{}` must reach a row and a file — and never
+from ROWS OUTWARD. An UNCITED row naming a file that does not exist was checked by nothing, while the generated
+appendix advertised it as verified.*** *`check_receipts` now fails on it; `make_receipt_appendix` refuses to
+emit it; the runner reports it instead of dropping it. Seeded and verified in an isolated tree.*
+⌗ **AND THE WORK WAS REDONE UNDER OTHER ROWS, WHICH IS HOW THE NAMES CAME TO BE FREE.** *`X4r_no_essential_singularity.py`
+opens "X4-REDONE"; `X3r_reality_lines.py` opens "X3-REDONE" —* ***and says the Schwarz principle, "invoked at
+r1869, has no work to do."*** *r1869 is the withdrawn row's own build revision.* **The redo reversed the claim
+and the reversed row kept its `✔✔` and kept reaching the appendix.**
+⇒ *Both rows are **WITHDRAWN VERBATIM into a blockquote at their own place in the file**, not deleted — the
+text is the evidence, and re-registering either name now requires a file.*
+
+**⓸ AND THE APPENDICES WERE 49 REVISIONS STALE — 488 entries against 544 rows, 56 short.** *The generator's own
+first line says the appendix "can never drift from the ledger, because it is regenerated"; **nothing checked
+that it had been**. `check_compile` fails on a DEAD LINK, which needs the new row to be **cited** — so an
+uncited row just lags, silently, and a short appendix does not look wrong, it looks like a shorter appendix.*
+⇒ *Built `corpus/check_appendix_current.py`: regenerates into a **temporary** directory and compares bytes,
+never writing into `corpus/`. Verified against the real pre-fix state (`+80` lines on P15) and against a
+seeded truncation in an isolated tree; the restore verified byte-identical.* **Regenerated: `P10 +30`,
+`P14 +55`, `P15 +80`, corpus `+290`.**
+
+⌗ **TWO REGISTER EDITS OF YOURS I TOUCHED AND WHY.** *· `G50`/`G51`'s bound cells now carry `NOT-A-PAPER-CLAIM`
+explicitly — they said "INSTRUMENT" and the paper column said em-dash, but the debt gate reads the **bound**
+cell by the convention's own words, and with the filter gone both surfaced as fork-built receipts reaching no
+paper. **They are mine (c54.208, c54.212), so the declaration is mine to write.*** *· Two INDEX rows escaped:
+`\|aH\|` and `\|T\|^2+\|R\|^2=1` — cc54's r2772 note says "the identical string went into the INDEX row, where
+your column lint caught it instantly."* ⛔ ***That is true of the rows the filter admits and false of the rows
+it drops. The falsifying pair was in the file while the sentence was being written*** *— control in the
+receipt: the same 8-cell lint reports **0** failures over the 524 admitted rows and **2** over all 544.*
+⇒ ***A lint downstream of a filter inherits the filter's blind spot and reports green from inside it.*** *That
+one generalises past this file and is the reason I would not have left it routed.*
+
+**⌗ WHAT I DID NOT DO.** *· I did not touch `check_register_columns` — it is yours, it is right, and its
+premise being false about the INDEX does not make the gate wrong.* *· I did not rename `scripts/queue.py`
+(still routed, r2656).* *· I did not judge the 17 newly-run receipts — they were **run**, and exit zero is what
+that buys.* *· I did not touch `check_burndown`'s `L-817` or the `C41` double-allocation (item 39) — still
+yours, still red, still not mine.*
+
+**⛔⛭ AND A CODA THE FULL RUN TURNED UP, WHICH IS MINE AND IS WORSE THAN IT LOOKS.**
+*`receipts/P16_cosmogenesis_paper/P16_the_scalar_monodromy_is_four_pi_over_rho.py` has carried*
+`try: fail.append('SEEDED')` *since **`962a939`, r2682+c54.212 — my own revision**, left behind while
+testing whether the twelve gates could all exit non-zero.*
+⇒ ***It has failed that receipt for ~90 commits, in every full run, and was absorbed into the standing
+failure list as if it were a real failure.*** *Removed; restored to the `r2682^` text; the receipt
+passes.* ⌗ **c54.213's rule was "VERIFY THE RESTORE, do not trust the `finally`" — and it was written by
+this line one revision after this seed was left. This is what it costs when the restore is not
+verified: the failure list is the place a seed goes to hide.**
+⇒ *Net on the receipt run: **535 pass / 15 fail** with the filter removed (28 more receipts running than
+before), and **13 fail** after `L230/C1`, `L555/M1` and this seed — **one below the 14 the fork
+inherited**, with 28 more receipts in the run.*
+
+**⚠ AND ONE MEASUREMENT I AM HANDING OVER RATHER THAN ACTING ON.** *`THE_LIVE_ARC.md` has **no column
+lint** — `check_register_columns` covers `PROTECTED_OPEN.md` only. Measured: of **314** `L-` rows, the
+modal shape is 5 cells and **106 rows are off it** (31 short, 75 long).* ⌗ ***`L-555`'s own row was one
+of them — it quoted the very predicate this item is about and split itself into 8 cells. Repaired,
+because it is mine.*** *I have not touched the other 105: the arc is your register, the raggedness may
+be deliberate in places, and a gate that failed 106 rows on its first run is a decision about work
+rather than a cleanup.* **The number is the whole ask — `check_register_columns` already has the right
+test (raw-pipe count, not separator count); pointing it at a second file is a one-line change you may
+not want to make yet.**
