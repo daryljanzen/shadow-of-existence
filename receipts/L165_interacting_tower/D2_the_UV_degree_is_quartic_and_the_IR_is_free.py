@@ -18,6 +18,12 @@ This receipt asks what "standard" means as a NUMBER. **
     ground state $\\langle\\pi_n^2\\rangle = \\tfrac12(\\text{mass})(\\text{frequency}) =
     \\tfrac12 a^2\\mu_n$ -- ** so $\\langle\\pi_n^2\\rangle \\sim n$, LINEARLY. **
   * Degeneracy of $S^3$ harmonics at level $n$ grows like ** $n^2$ ** (any tensor rank).
+  ⛔ ** CORRECTED c54.220 (`L-554`).  That line was asserted here and derived nowhere in the corpus. **
+    Derived from Peter--Weyl on the parallelizable $S^3$: *** g(n) = 2(n-1)(n+3), n >= 2, g(2) = 10 ***,
+    so the growth is $2n^2$ and the shell contribution is $2n^3$.  ⇒ ** And "(any tensor rank)" is FALSE: **
+    the constant is the PROPAGATING-COMPONENT count -- the scalar tower's counting function has leading
+    coefficient 1/3 against the tensor tower's 2/3.  *** The SCALING this receipt needed is right, so the
+    quartic degree stands; what moves is the coefficient. ***  Receipt: `L554_tower_degeneracy/D1_...`.
 
   ⇒ shell contribution $\\sim n^2 \\cdot n = n^3$, and $\\sum^N n^3 \\sim N^4/4$:
 

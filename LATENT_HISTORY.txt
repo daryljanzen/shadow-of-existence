@@ -170,3 +170,5 @@ c54.218  COMPUTED    PO-4 is not "one factor short": <T, Weyl> = N(T), dimension
 c54.219  COMPUTED    PO-6's owed shear calculation RUN: the shear costs exactly ONE new counterterm (Weyl^2) -- delta^(1)R=0 makes int sqrt(g) R^2 a shift of Einstein-Hilbert
 c54.219a LATENT      and my own c54.215 working count of TWO was one too many; the parity-odd Pontryagin term is nonzero for CIRCULAR polarisation and P11 carries a chirality
 c54.219b INSTRUMENT  fourth math-bar instance in the same hand: my register edit broke PO-6's cells again, and the identical string broke the INDEX row -- where the gate caught it instantly
+c54.220  COMPUTED    the degeneracy carrying PO-6's quartic was never derived: it is g(n)=2(n-1)(n+3), n>=2, so the shell is 2n^3 and the constant is the component count
+c54.220a LATENT      and D2's "(any tensor rank)" is false -- scalar leading 1/3 against tensor 2/3; the scaling it needed is right, so the degree stands and the coefficient moves
