@@ -146,6 +146,24 @@ sources: [cowork, chat]
 
 
 
+### Revision r2837 — 2026-08-15 (main line). **`PO-1c`'s HORN CANDIDATE IS BETTER ESTABLISHED THAN THE ROW SAID.**
+
+*Checking the remaining three "what is open" clauses against the corpus rather than inferring them.*
+
+**⛭⛭ THE HORN IS NOT MERELY "NAMED AND NOT CLAIMED".** *`P03_winding_and_closure` **records** $T\to$ weak
+isospin — "the horn swap costing one lap $=$ the $W$ carrying one unit" — and P14 states **"the horn/isospin
+leg is not a guess"**.*
+
+**⌗ AND P14 SHARPENS IT IN THE DIRECTION THE ROW NEEDS:** *"$T$ is a discrete horn swap and delivers a
+**SPECIES LABEL**, not $SU(2)_L$'s chiral action". ⇒ **A label is exactly what $uud$ vs $udd$ requires** —
+the row establishes an absolute assignment is not owed, and a label exchanges two readings without
+privileging either.*
+
+⚠ ***WHAT REMAINS IS ONE COMPUTATION: $2^3=8$ horn configurations, six of shape $2{+}1$ — does that six
+match the proton/neutron content? Nothing has run it.***
+
+*(`PO-1a` and `PO-1d`'s clauses were checked and stand.)*
+
 ### Revision r2836 — 2026-08-15 (main line). **TWO OF THE FIVE "WHAT IS OPEN" CLAUSES WERE FALSE.**
 
 *Testing whether the rows' new next-step clauses are TRUE — which needs reading, not patterns.*

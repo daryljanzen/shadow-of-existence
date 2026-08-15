@@ -11,6 +11,23 @@ current: r2833
 has been checked, what has not, and what is next. Opened r2833 after a session in which the reporting
 layer, not the corpus, turned out to be what was broken.*
 
+
+## ▶ WHAT I AM DOING NEXT — *the one thing, stated so it can be redirected*
+
+**⇒ RUN `PO-1c`'s ARITHMETIC: does $2^3=8$ horn configurations, six of shape $2{+}1$, match the
+proton/neutron content the row is reaching for?**
+
+*Why this one: it is **the only next step in the register that is a computation rather than a read**.
+Everything else open is either gated (`PO-2`→`PO-5`→`PO-11`), someone else's build (`PO-11`'s continuum,
+cc54), or a question that has to be posed before it can be worked (`PO-6`'s joint satisfiability,
+`PO-10`'s scope-of-M2). ⌗ **And the corpus has just been shown to establish the horn's isospin reading**
+— `P03_winding_and_closure` records $T\to$ weak isospin, P14 says it "is not a guess" — so the candidate
+is standing on built ground and only the count is untested.*
+
+⚠ *If that is the wrong call, the two alternatives are: **read M2's own bound** to settle whether
+`PO-10`'s half ① is answered, or **work `PO-6`'s C6-against-C7 tension**, which is the largest genuinely
+unworked physics in the register.*
+
 ---
 
 ## ⓵ THE PHYSICS, AS THE REGISTER STATES IT — 10 OPEN, 4 STRUCK

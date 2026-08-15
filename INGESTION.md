@@ -360,3 +360,4 @@ r2833  INSTRUMENT  STATE_OF_THE_STATE opened; 26 leads read (L-165 stale); 606 r
 r2834  INSTRUMENT  CORPUS_MAP swept (19); the PRE-r2830 rule survived in 33 places; both routing docs swept.
 r2835  INSTRUMENT  five open rows named nothing that is open; all now state their next step.
 r2836  LATENT       two of the five WHAT IS OPEN clauses were false; both written from the head, not the corpus.
+r2837  LATENT      PO-1cs horn candidate is established (T -> weak isospin); only the six-of-eight count is untested.
