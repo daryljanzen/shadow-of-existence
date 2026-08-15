@@ -276,3 +276,5 @@ r2783  LATENT      c54.222 merged and verified: X3/X4 never existed. My own sele
 r2784  INSTRUMENT  the two phantom rows were still LIVE with tick-tick. Marked, and check_rows_outward built.
 r2785  CLAIMED    PO-11: does the static continuum continue through r=0? Narrowed at r2767, unworked.
 r2785  COMPUTED    the two sides of the wall differ in SIGNATURE -- f flips at r=0. r2744 sampled r>0 only.
+r2786  CLAIMED    PO-10: CRs chi2 = 281 has no candidate mechanism. Generate one or bound it.
+r2786  COMPUTED    CRs 281 is the ORDER P15s own damping prediction produces. The question inverts.

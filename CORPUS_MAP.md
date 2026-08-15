@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r2786 — 2026-08-11 (main line). **CR's 281 IS THE PREDICTION BEING MEASURED — the question inverts.**
+
+**⛭⛭ ⓵ THE CANDIDATE IS P15's OWN FORMULA.** *The high-$\ell$ consequence, **with no free parameter**:
+$C_\ell^{\rm CR}/C_\ell^{\Lambda\rm CDM}=\exp[-(\ell/\ell_D)^2(r^2-1)]$, $r=1.0824$ (r2755). Scored as a
+fractional residual over the arm's 185 bins:*
+
+    sigma = 0.2%   ->  chi^2/dof  5099
+    sigma = 0.5%   ->             816
+    sigma = 1.0%   ->             204
+    measured CR arm               281
+
+⇒ ***281 sits INSIDE that range, and BELOW the value at Planck's quoted few-tenths-of-a-per-cent errors.***
+
+**⛭⛭⛭ ⓶ WHICH INVERTS THE ROW'S QUESTION.** *`PO-10` asked what mechanism explains 281. **The answer may be that
+nothing needs to: the arm is scoring the effect P15 predicts, at the order P15 predicts it.** An arm returning a
+large $\chi^2$ against $\Lambda$CDM is what a model predicting an $8.2\%$ high-$\ell$ suppression IS.*
+
+⌗ ***This line had been treating a prediction as a defect for twenty-five revisions — r2781's "the control is
+diagnosed and CR is not" assumed both residuals were errors, and **one of them is the signal**.***
+
+**⓷ AND IT SHARPENS F5.** *"A negative is a measurement discrepancy, not a framework verdict." **If CR's $\chi^2$ is
+its own predicted signature being measured, the discrepancy IS the framework's claim** — and reading 281 as a defect
+read a prediction as an error.*
+
+**⚠ ⓸ THE DISCRIMINATING TEST IS SHAPE, NOT SIZE.** *The profile rises from $0.06\%$ at $\ell=100$ to $34\%$ at
+$\ell=2000$. **A profile match on the arm's per-bin residual converts this candidate; a flat residual kills it.***
+
+**⛭ THE RULE:** ***before hunting a mechanism for an anomalous number, compute what the theory PREDICTS it should
+be. **A model predicting a large deviation produces a large $\chi^2$ against the model it deviates from, and that is
+the measurement working.** The tell is an arm that resists every numerical fix: numerical defects respond to
+numerical parameters, and predictions do not.***
+
 ### Revision r2785 — 2026-08-11 (main line). **THE TWO SIDES OF THE WALL DIFFER IN SIGNATURE — r2744 sampled one.**
 
 **⛭⛭ ⓵ $f$ IS NOT EVEN IN $r$, AND THE ODD TERM DOMINATES AT THE ORIGIN.**

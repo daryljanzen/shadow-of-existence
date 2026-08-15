@@ -249,3 +249,4 @@ c54.221d INSTRUMENT  my own duplicate-row repair re-broke PO-4's object column a
 r2783  LATENT      c54.222 merged and verified: X3/X4 never existed. My own selector had the same blind-spot class.
 r2784  INSTRUMENT  the two phantom rows were still LIVE with tick-tick. Marked, and check_rows_outward built.
 r2785  COMPUTED    the two sides of the wall differ in SIGNATURE -- f flips at r=0. r2744 sampled r>0 only.
+r2786  COMPUTED    CRs 281 is the ORDER P15s own damping prediction produces. The question inverts.
