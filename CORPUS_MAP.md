@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2820 — 2026-08-12 (main line). **THE SPECTRAL ROUTE CLOSES — for r2806's reason.**
+
+**⛔ ⓵ THE INNER FLUCTUATIONS VANISH.**
+
+    H = L^2(r) (x) C^3    the wall kernel over the three sheets
+    D = radial + angular  P14's operator -- acts on r, trivially on the sheet
+    a = 1 (x) g           the algebra acts on the SHEET label
+    => [D, a] = 0 identically,  A = sum a[D,b] = 0,  D -> D + A = D.   NO GAUGE FIELD.
+
+**⛭⛭ ⓶ AND IT IS r2806's OBSTRUCTION IN ANOTHER VOCABULARY.** *A locally-constant algebra has vanishing commutator
+with a derivative operator — **"the covering is flat, so $F=0$"**.*
+⇒ ***Two routes, one reason, two vocabularies. Stronger than two independent closures, because it says the
+obstruction is not route-shaped.***
+
+**⛭⛭⛭ ⓷ AND THE POINT OF DIFFERENCE FROM CONNES IS NAMEABLE.** *He takes $D=D_M\otimes1+\gamma^5\otimes D_F$, and
+**$D_F$ carries the Yukawas and does NOT commute with $\mathcal A_F$** — that non-commutation is the entire source
+of his gauge fields.*
+⇒ ***CR has no $D_F$. P14's operator is radial and angular with no internal part, so there is nothing for the
+algebra to fail to commute with.***
+
+**⓸ AND "NO $D_F$" IS "NO YUKAWA SECTOR", WHICH p0 STATES:** *"the gauge and mass content external".*
+⇒ ***So the closure names its own reopening condition: **a finite Dirac operator on the sheet space that does not
+commute with $\mathbb C[G]$** — a specific missing object, not a mechanism nobody has named.***
+
+⚠ *$J$ and the order-one condition were never reached; the fluctuations vanish upstream of both.*
+
+**⛭ THE RULE:** ***when a new route closes, check whether it closes for the OLD route's reason. **If it does, the
+obstruction is deeper than either route** — and the right output is "one wall, seen twice", which is a different
+and more publishable claim than "another wall".***
+
 ### Revision r2819 — 2026-08-12 (main line). **THE RESCALING CANNOT MAKE AN INDEX REAL — cc54's planned route eliminated.**
 
 **⓵ cc54's FLAG AGAINST ITS OWN `L-829` `S1` IS CORRECT, AND MY r2807 GATE PASSED IT.**
