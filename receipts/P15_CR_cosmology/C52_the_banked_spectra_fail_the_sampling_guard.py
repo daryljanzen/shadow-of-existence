@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
-"""C52 -- the banked spectra the likelihood arm scores come from a run that FAILS the instrument's own
+"""C52 -- ⛔ **WITHDRAWN r2780. THE BANKED SPECTRA ARE THE NK=600 RUN AND PASS THE GUARD.**
+*** `L-820 S1`: cc54's `HIER=1 NK=600` reproduces `c54.178_lcdm` to floating point.  **This
+receipt inferred NK=260 from the `.npz` shape -- but the shape fixes LMAXL and LSTEP, and says
+NOTHING about NK**, which sets the k-grid that is integrated OVER and never appears on the
+multipole axis.  I read a mode count off an axis that cannot carry one and filled the gap with the
+documented DEFAULT -- the value a parameter has WHEN NOBODY SETS IT, and cc54's run had set it.
+  ⌗ *And the decision test this receipt said nobody knew the answer to has been run: the
+  guard-FAILING NK=260 scores $\\chi^2=1318.3$ against NK=600's $1320.5$.  **The aliasing is
+  COSMETIC for $\\chi^2$** -- so every number in `P15_where_the_likelihood_sits` stands.*
+  ** What survives: the memory sizing, and the guard-threshold arithmetic. ** ***
+
+C52 -- the banked spectra the likelihood arm scores come from a run that FAILS the instrument's own
 sampling guard, and extending to $\\ell=2508$ hits a hard memory wall at the NK the guard requires.
 
 ** THE ATTEMPT. **  *** r2761 named `PO-10`'s blocker: the arm's model ends near $\\ell=1760$ and drops

@@ -238,3 +238,4 @@ r2776  LATENT      c54.220 merged and verified. Its SHA rule turned on me: 4 of 
 r2777  LATENT      PO-4s route was TAKEN -- P14 says so outright. The row records what it returned, not an untaken route.
 r2778  LATENT      PO-4 STRUCK -- the ask is answered in the negative, determined not deferred. 4 dup rows folded.
 r2779  LATENT      the corpus is coherent; my kill receipt was not -- dropped OBSERVED FERMION from a quote. Gate built.
+r2780  LATENT      L-820 merged: C52 WITHDRAWN (banked spectra are NK=600), C51 discharged. Aliasing is cosmetic.

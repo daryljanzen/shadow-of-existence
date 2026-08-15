@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2780 — 2026-08-11 (main line). **`L-820` MERGED — `C52` WITHDRAWN, `C51` DISCHARGED, `PO-10`'s BLOCKER GONE.**
+
+**⛔ ⓵ `C52` IS WITHDRAWN AND THE ERROR IS INSTRUCTIVE.** *r2762 observed the banked `.npz` has
+`arange(100, 2000, 8)`, 238 points, and concluded "**→ LMAXL 2000, LSTEP 8 → NK must have been 260 (the
+default)**".*
+⇒ ***The shape fixes `LMAXL` and `LSTEP`. **It says nothing about `NK`**, which sets the k-grid that is integrated
+OVER and never appears on the multipole axis. **A mode count was read off an axis that cannot carry one, and the gap
+filled with the documented DEFAULT — the value a parameter has when nobody sets it.****
+
+*cc54's `L-820 S1`: `HIER=1 NK=600` reproduces `c54.178_lcdm` to floating point. **The spectra were adequately
+sampled all along.***
+
+**⛭⛭ ⓶ AND THE DECISION TEST r2762 SAID NOBODY KNEW THE ANSWER TO HAS BEEN RUN.**
+
+    guard-FAILING NK=260   chi^2 = 1318.3
+    NK=600                 chi^2 = 1320.5
+
+⇒ ***The aliasing is COSMETIC for $\chi^2$ — so every number in `P15_where_the_likelihood_sits` stands, including
+the control's $7.14$ and the CR arm's $280.09$ that r2762 had marked provisional.***
+
+**✔ ⓷ `C51` DISCHARGED, AND IT HELD.** *The thirty damping-tail bins were real — $\ell=1759$–$2508$ — the
+`LMAXL=2512` extension recovered them, **and including them moves $F_3$ in the disfavouring direction**.*
+⇒ ***The region r2761 called decisive is now scored, and it decides against.***
+
+**⛭ THE RULE:** ***an artefact's SHAPE records the parameters that shaped its axes and nothing else. **Parameters
+integrated over leave no trace in the output** — when you need one, rerun and diff; never infer it from a default,
+which is a statement about the code's documentation rather than about the run.***
+
 ### Revision r2779 — 2026-08-11 (main line). **THE CORPUS IS COHERENT; MY KILL RECEIPT WAS NOT.**
 
 **⌗ THE QUESTION.** *Daryl: "How is chirality nongeometric? I thought we had long ago decided it is geometric. Is

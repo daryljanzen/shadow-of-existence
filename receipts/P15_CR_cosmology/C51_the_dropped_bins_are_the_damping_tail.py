@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""C51 -- the thirty dropped bins are $\\ell=1759$--$2508$: the likelihood arm discards exactly the
+"""C51 -- ✔ **DISCHARGED r2780 by `L-820 S2`.**  *** The `LMAXL=2512` extension was run and
+recovers the thirty damping-tail bins this receipt identified.  **The finding holds -- the bins
+were $\\ell=1759$--$2508$ and the arm was dropping them -- and including them does NOT reverse
+the CR verdict**: cc54 reports $F_3=\\chi^2(\\mathrm{CR})-\\chi^2(\\Lambda\\mathrm{CDM})$ moving
+in the disfavouring direction.  *So the region this receipt called decisive is now scored, and it
+decides against.* ***
+
+C51 -- the thirty dropped bins are $\\ell=1759$--$2508$: the likelihood arm discards exactly the
 region CR's damping signature lives in, and the suppression there runs $24\\%$ to $42\\%$.
 
 ** THE THREAD, from r2760. **  *** The arm scores $185$ bins against CAMB's $215$.  Thirty bins go
