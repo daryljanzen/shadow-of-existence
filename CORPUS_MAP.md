@@ -146,6 +146,22 @@ sources: [cowork, chat]
 
 
 
+### Revision r2835 — 2026-08-15 (main line). **THE REGISTER RECORDED WHAT IS KNOWN AND NOT WHAT IS LEFT.**
+
+*With no named relation ungated, the coverage lesson was applied to the gates themselves. **That surfaced
+something else: `OWED` holds ONE item while TEN rows are open** — and reading the rows, **five of the ten
+named nothing that is open**.*
+
+⇒ ***A reader could learn everything established about `PO-1b` and still not know that a kill was written,
+retracted, and nothing worked since — which is the whole of its state.***
+
+**⌗ ALL FIVE GIVEN A STATED NEXT STEP**, *drawn from what their own heads establish. `check_rows_name_the_open`
+holds it, and a gated row satisfies it by naming its gate.*
+
+**⛭ AND THE COVERAGE FIX WENT INTO THE OUTPUT:** *`check_leads_follow_rows` printed "1 lead checked"; it now
+prints **"1 of 27, and 26 are anchored elsewhere or on a live row"**. A count without its denominator cannot
+be judged.*
+
 ### Revision r2834 — 2026-08-15 (main line). **THE STATE LAYER SWEPT END TO END; the generic cross-document checker tried and rejected.**
 
 **⛭⛭ EVERY DOCUMENT IN THE STATE LAYER IS NOW READ.** *`CORPUS_MAP` (19 overturned entries marked),

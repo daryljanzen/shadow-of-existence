@@ -62,7 +62,13 @@ def main():
                 continue
             bad.append((m.group(2), pid))
 
-    print(f'  {checked} lead(s) anchored on a struck row')
+    # ** r2835: a coverage number must say what COULD have been checked, not only what
+    # was.  *** "1 lead checked" reads as thin coverage; "1 of 27, and 26 are not anchored
+    # on a struck row" says the denominator is right. ***
+    total = sum(1 for l in arc.split('\n')
+                if re.match(r'\|\s*(~~)?\s*\*\*(L-\d+)\*\*', l))
+    print(f'  {checked} of {total} lead(s) anchored on a struck row '
+          f'({total - checked} anchored elsewhere or on a live row)')
     if bad:
         print()
         for lid, pid in bad:
