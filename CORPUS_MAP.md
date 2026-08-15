@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2791 — 2026-08-11 (main line). **`PO-5`'s TWO WALLS ARE ONE WALL AND ITS COROLLARY.**
+
+**⛭⛭⛭ ⓵ THE ROW SAID "BOTH" AND p0 SAID "SO".** *The stated remainder — "a third mechanism must supply BOTH" —
+treats the missing $F^2$ term and the missing dimensionless number as independent. p0:*
+
+> *"every curvature invariant on either face is a pure power of $1/\alpha^{2}$. **SO** the construction cannot
+> force a coupling, and its silence about magnitudes is a property of **a one-constant theory rather than a gap
+> awaiting work** --- the common root of three verdicts reached separately, that the winding quantises without
+> measuring, **the flat bundle selects without coupling**, and the branch point filters without supplying."*
+
+⇒ ***The "so" is an inference. p0 DERIVES the absence of a coupling FROM the one-constant character.***
+⇒⇒ ***Wall ⓵ is wall ⓶'s corollary. **The row needs ONE thing supplied — a fixed dimensionless number** — and
+whether the coupling then follows is a separate question p0 does not foreclose.***
+
+⌗ *A one-word tell — "so" against "and" — read as a conjunction for the row's whole life.*
+
+**⛭⛭ ⓶ AND THE TWO ROWS ARE NOW PARALLEL IN SHAPE.**
+
+    PO-4 (r2770)   the generators exist (SO(4) on the S^3 layer) -- the ACTION is missing
+    PO-5 (r2729)   the numbers exist (3, 6, 3/4, 9/10) -- something to multiply is missing
+
+⇒ ***Both: the thing exists and nothing does anything with it. **r2768 merged them and was wrong (opposite
+properties); r2769 split them and was right; the parallel is a third relation** — a shared shape between rows that
+remain distinct.***
+
+**⛭ THE RULE:** ***when a row lists two obstructions, check whether a paper DERIVES one from the other. **"Both" is
+a claim about independence and it is almost never checked** — the conjunction gets inherited from whoever first
+wrote the row.***
+
 ### Revision r2790 — 2026-08-11 (main line). **THE STORED CR $r_s$ MOVES THE WRONG WAY.**
 
 **⓵ SOLVING r2789's SPACING.** *The CR peaks sit at $258$ against a stored $\ell_A=301.6$:*

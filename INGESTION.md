@@ -286,3 +286,5 @@ r2789  CLAIMED    PO-10: the AMPLITUDE test. Per-peak heights, both arms, peak-b
 r2789  COMPUTED    the CR arms peaks sit at spacing 258, not its stored l_A of 301.6. LCDM is self-consistent.
 r2790  CLAIMED    PO-10: which of D_M, r_s or the projection? Solve for what gives spacing 258.
 r2790  COMPUTED    the stored CR r_s moves the WRONG WAY -- radiation-free must raise it, stored lowers it.
+r2791  CLAIMED    PO-5: both walls proved. Is a third mechanism excluded, or just unfound?
+r2791  LATENT      PO-5s two walls are ONE -- p0 derives the no-coupling from the one-constant character.
