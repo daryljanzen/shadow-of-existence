@@ -288,3 +288,5 @@ r2790  CLAIMED    PO-10: which of D_M, r_s or the projection? Solve for what giv
 r2790  COMPUTED    the stored CR r_s moves the WRONG WAY -- radiation-free must raise it, stored lowers it.
 r2791  CLAIMED    PO-5: both walls proved. Is a third mechanism excluded, or just unfound?
 r2791  LATENT      PO-5s two walls are ONE -- p0 derives the no-coupling from the one-constant character.
+r2792  CLAIMED    is exists-but-does-not-act a PATTERN across the board, or two rows?
+r2792  LATENT      six of six open rows share one shape: the object exists, the action is absent. Control passes.

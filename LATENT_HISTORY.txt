@@ -255,3 +255,4 @@ r2788  COMPUTED    l_A is COMPUTED and its cancellation is real -- but the resid
 r2789  COMPUTED    the CR arms peaks sit at spacing 258, not its stored l_A of 301.6. LCDM is self-consistent.
 r2790  COMPUTED    the stored CR r_s moves the WRONG WAY -- radiation-free must raise it, stored lowers it.
 r2791  LATENT      PO-5s two walls are ONE -- p0 derives the no-coupling from the one-constant character.
+r2792  LATENT      six of six open rows share one shape: the object exists, the action is absent. Control passes.

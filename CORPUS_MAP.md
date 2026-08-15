@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2792 — 2026-08-11 (main line). **THE BOARD HAS ONE SHAPE — six of six, and the control holds.**
+
+**⛭⛭ ⓵ THE OBJECT IS PRESENT AND THE ACTION IS ABSENT.**
+
+    PO-4    SO(4) generators on the closed S^3 layer     -- act on the HINGE doublet
+    PO-5    3, 6, 3/4, 9/10, 1.0824                      -- multiply an F^2 term
+    PO-6    the Weyl-squared counterterm                 -- its COEFFICIENT
+    PO-10   a likelihood with a covariance               -- an arm that DISCRIMINATES
+    PO-11   the C-infinity continuation at r=0           -- carry the CONTINUUM across
+    PO-2    the three horizon roots and their zero-sum   -- the IDENTIFICATION with colour
+
+**⚠ ⓶ AND THE FIRST SUSPECT IS THE METHOD.** *Five of six were narrowed by this line today, and **"X exists, the
+action is missing" is the shape a narrowing takes**. A pattern appearing in exactly the rows one node worked is a
+property of that node.*
+
+**⛭⛭⛭ ⓷ THE CONTROL PASSES.** *`PO-2` was narrowed by **cc54 at c54.84**, not here, and carries the same shape —
+the roots are the corpus's own construction and level (3), whether they ARE colour charge, is an identification the
+geometry does not make.*
+⌗ *And `PO-7`, the lone exception, is a **VERDICT question** with no object whose action is missing — explained by
+kind rather than waved away.*
+
+**⛭ ⓸ AND p0 GOT THERE FIRST FOR THREE CASES:** *"the winding quantises without measuring, the flat bundle selects
+without coupling, and the branch point filters without supplying" — **"the common root … a property of a
+one-constant theory rather than a gap awaiting work"**. What the board adds is that the form extends past those
+three to every open construction row.*
+
+⌗ ***AND IT CUTS BOTH WAYS: a construction that supplies structure and withholds action is either a deep feature or
+a construction that has not reached its dynamics. **The pattern is established; the reading is not.****
+
+**⛭ THE RULE:** ***when a pattern appears across everything you worked, check whether it appears in something you
+did not. **A control is one row somebody else narrowed** — and without it, "the board has one shape" is
+indistinguishable from "I have one method."***
+
 ### Revision r2791 — 2026-08-11 (main line). **`PO-5`'s TWO WALLS ARE ONE WALL AND ITS COROLLARY.**
 
 **⛭⛭⛭ ⓵ THE ROW SAID "BOTH" AND p0 SAID "SO".** *The stated remainder — "a third mechanism must supply BOTH" —
