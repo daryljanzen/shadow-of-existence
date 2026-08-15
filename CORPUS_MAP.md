@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2789 — 2026-08-11 (main line). **THE CR ARM'S PEAKS ARE NOT WHERE ITS OWN $\ell_A$ SAYS.**
+
+**⛔ ⓵ THE AMPLITUDE TEST FOUND SOMETHING PRIOR TO ITSELF.**
+
+    LCDM   peaks 220, 540, 812, 1124, 1420    mean spacing 300
+    CR     peaks 172, 404, 636,  916, 1204    mean spacing 258
+
+*The peaks are not in comparable places to compare heights at.*
+
+**⛭⛭⛭ ⓶ AND ONLY ONE ARM IS SELF-CONSISTENT.**
+
+    LCDM   300 / 301.4 = 0.995   ✔
+    CR     258 / 301.6 = 0.855   ⛔
+
+⇒ ***The stored $\ell_A=301.60$ — the number r2788 verified as $\pi D_M/r_s$ and found agreeing with
+$\Lambda$CDM's to $0.08\%$ — **does not describe where its own peaks are**.***
+
+**⓷ WHICH EXPLAINS r2787's OSCILLATION AND ITS SIZE.** *A $14.5\%$ spacing mismatch puts the arms fully out of
+register within four peaks, swinging the ratio $0.24$ to $2.4$ — **two orders larger than the $0.075\%$ residual
+r2788 sized**. That is why r2788 could confirm a real cancellation and still not answer the question.*
+
+**⛭⛭ ⓸ AND IT RELOCATES THE DEFECT FROM THE PHYSICS TO THE BOOKKEEPING.** *r2788 showed $\ell_A=\pi D_M/r_s$
+holds — **as arithmetic on the stored values**. The arithmetic and the SPECTRUM disagree for CR.*
+⇒ ***Which of $D_M$, $r_s$ or the projection does the CR arm's transfer actually use? **One of the three is not the
+stored value** — and $\Lambda$CDM's arm is self-consistent, so the instrument works.***
+
+**⛭ THE RULE:** ***a derived quantity can be internally consistent and still not describe the object it summarises.
+**Verify a summary statistic against the DATA it summarises, not only against its own definition.** And when a
+planned test cannot be run, ask why — the obstruction is often the finding.***
+
 ### Revision r2788 — 2026-08-11 (main line). **$\ell_A$ IS COMPUTED, THE CANCELLATION IS REAL, AND IT IS 100× TOO SMALL.**
 
 **⛭⛭ ⓵ THE NUMERICAL HORN IS CLOSED.** *$\pi D_M/r_s$ reproduces the stored $\ell_A$ in both arms exactly:*
