@@ -355,4 +355,4 @@ r2830  CLAIMED    the register gates closure on a person, not on physics. Replac
 r2830  INSTRUMENT  the register now gates on the OBJECT being answered, not on a person. Two strikes tried, both reverted by physics.
 r2831  CLAIMED    rows are append-only and carry superseded text as current. Find and remove it.
 r2831  INSTRUMENT  21 overturned blocks marked, 29,263 duplicate bytes removed, one overwritten error-record restored.
-r2832  INSTRUMENT  five rows given CURRENT STATE heads; three withdrawals found that reached one row and not another.
+r2832  INSTRUMENT  every row given a CURRENT STATE head; PO-3 and PO-9 struck on answered objects; 50K of duplication removed.
