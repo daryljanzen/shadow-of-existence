@@ -12,6 +12,8 @@ Usage:  python3 make_receipt_appendix.py <PAPER|corpus> <out.tex>
   Both were workarounds for this gap; the ledger stays the single source of truth instead.
 Each row -> a labelled \\item[...]{rcpt:<stem>} so \\rcpt{<stem>} in the body links to it."""
 import sys, re, os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+import index_rows        # ** c54.222: the row filter lives ONCE now.  See its head. **
 def parse_index(path):
     """The INDEX carries TWO row formats and this reads both.
        (a) | paper | label | claim | path | status | computes | bound | origin |
@@ -19,31 +21,49 @@ def parse_index(path):
     Format (b) -- twenty rows, the storyboard bake -- was INVISIBLE to every reader of this
     file until r2376+c54.36, because the filter was ln.startswith('| P') and (b) opens with a
     backtick.  Those receipts were registered, on disk, and absent from every appendix."""
+    # ** r2533+c54.203: SAME CASE-SENSITIVITY HOLE AS check_receipts, in the generator. **  The
+    # ** filter was `ln.startswith('| P')` and the geometric core paper is written `p0` in
+    # ** LOWERCASE, so all nine of its INDEX rows were dropped from every appendix.  The comment
+    # ** twenty lines above records this filter causing exactly this class of loss once before
+    # ** (r2376+c54.36, the '| `stem`' format) -- and the fix then did not cover the case. **
+    #
+    # ** \u26ed\u26ed c54.222, AND IT IS THE SAME FILTER A THIRD TIME. **  The paper column also holds an
+    # ** EM-DASH for a receipt supporting no paper, and those twenty rows were dropped here too.
+    # ** The predicate is gone rather than patched again -- `corpus/index_rows.py` holds it once. **
+    #
+    # ** \u26d4 AND A GENERATOR-SPECIFIC HALF: THIS FILE EMITTED A ROW'S STATUS CELL AS THE VERDICT AND
+    # ** NEVER LOOKED FOR THE FILE. **  Two rows carrying `\u2714\u2714` and `run rNNNN, rc=0` named a `.py`
+    # ** that has never existed in any commit, and both were printed into P3's, P7's and the corpus
+    # ** appendix marked `[OK]`.  *** A generated appendix inherits the ledger's errors and dresses
+    # ** them as verification. ***  Unresolvable rows are now REFUSED here, loudly, as well as being
+    # ** failed by `check_receipts`: a generator that can print a false `[OK]` is a second mouth. **
     rows=[]
-    for ln in open(path, encoding='utf-8'):
-        # ** r2533+c54.203: SAME CASE-SENSITIVITY HOLE AS check_receipts, in the generator. **  The
-        # ** filter was `ln.startswith('| P')` and the geometric core paper is written `p0` in
-        # ** LOWERCASE, so all nine of its INDEX rows were dropped from every appendix.  The comment
-        # ** twenty lines above records this filter causing exactly this class of loss once before
-        # ** (r2376+c54.36, the '| `stem`' format) -- and the fix then did not cover the case. **
-        if not (ln[:3].upper().startswith('| P') or ln.startswith('| `')): continue
-        import re as _re
-        parts=_re.split(r'(?<!\\)\|', ln.rstrip('\n'))
-        cells=[p.replace('\\|','|').strip() for p in parts[1:-1]]
-        if len(cells) < 6 or cells[0]=='paper': continue
-        if ln.startswith('| `'):                       # format (b): cell 0 is the stem
+    _root=os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(path)),'..'))
+    _missing=[]
+    for r in index_rows.rows(index=path, resolve_paths=True, root=_root):
+        cells=r.cells
+        if len(cells) < 6: continue
+        if r.paper.startswith('`'):                    # format (b): cell 0 is the stem
             head = cells[1]
-            m = _re.match(r'\s*(p0|P\d+)\b[\s]*(.*)', head)
+            m = re.match(r'\s*(p0|P\d+)\b[\s]*(.*)', head)
             paper = m.group(1) if m else ''
             label = (m.group(2) if m else head).lstrip(' \u00a7').strip()
             claim, rcpt, status, computes = head, cells[3], cells[4], cells[5]
         else:
             paper,label,claim,rcpt,status,computes = cells[0],cells[1],cells[2],cells[3],cells[4],cells[5]
         bound = cells[6] if len(cells)>6 else ''
-        stem = os.path.splitext(os.path.basename(rcpt.strip('` ')))[0]
-        _pth=rcpt.strip('` ')
+        stem = r.stem
+        if r.runnable and not r.paths:
+            _missing.append((r.lineno, r.token)); continue
+        _pth=r.token
         if _pth.startswith('receipts/'): _pth=_pth[len('receipts/'):]
         rows.append(dict(paper=paper,label=label,claim=claim,stem=stem,status=status,computes=computes,bound=bound,path=_pth))
+    if _missing:
+        sys.stderr.write('\n  \u26d4 REFUSING TO EMIT %d ROW(S) WHOSE FILE DOES NOT EXIST:\n' % len(_missing))
+        for lineno, tok in _missing:
+            sys.stderr.write('     receipts/INDEX.md line %d: %s\n' % (lineno, tok))
+        sys.stderr.write('     ** A reproducibility appendix that lists a computation nobody can run is'
+                         ' worse than one that omits it. **\n\n')
     return rows
 _ASCII=[('\\',r'\textbackslash{}'),('{',r'\{'),('}',r'\}'),('#',r'\#'),('&',r'\&'),('%',r'\%'),('$',r'\$'),('_',r'\_'),('^',r'\textasciicircum{}'),('|',r'\textbar{}'),('~',r'\textasciitilde{}')]
 _UNI={'§':r'\S{}','°':r'\ensuremath{^\circ}','¹':r'\textsuperscript{1}','²':r'\textsuperscript{2}','³':r'\textsuperscript{3}','⁴':r'\textsuperscript{4}','⁶':r'\textsuperscript{6}','¼':r'\ensuremath{\tfrac14}','½':r'\ensuremath{\tfrac12}','¾':r'\ensuremath{\tfrac34}','⅓':r'\ensuremath{\tfrac13}','×':r'\ensuremath{\times}','—':'---','′':r'\ensuremath{{}^\prime}','−':r'\ensuremath{-}','Λ':r'\ensuremath{\Lambda}','α':r'\ensuremath{\alpha}','β':r'\ensuremath{\beta}','η':r'\ensuremath{\eta}','θ':r'\ensuremath{\theta}','π':r'\ensuremath{\pi}','ρ':r'\ensuremath{\rho}','σ':r'\ensuremath{\sigma}','τ':r'\ensuremath{\tau}','ψ':r'\ensuremath{\psi}','₀':r'\ensuremath{_0}','₂':r'\ensuremath{_2}','→':r'\ensuremath{\to}','↔':r'\ensuremath{\leftrightarrow}','↦':r'\ensuremath{\mapsto}','⇒':r'\ensuremath{\Rightarrow}','⟺':r'\ensuremath{\iff}','∀':r'\ensuremath{\forall}','∅':r'\ensuremath{\emptyset}','∘':r'\ensuremath{\circ}','·':r'\ensuremath{\cdot}','√':r'\ensuremath{\surd}','∞':r'\ensuremath{\infty}','⋆':r'\ensuremath{\star}','◐':'(partial)','✔':'','✗':'(x)','̃':'', '–':'--', '⊢':r'\ensuremath{\vdash}', 'κ':r'\ensuremath{\kappa}', 'λ':r'\ensuremath{\lambda}', '±':r'\ensuremath{\pm}', 'γ':r'\ensuremath{\gamma}', 'δ':r'\ensuremath{\delta}', 'μ':r'\ensuremath{\mu}', 'ν':r'\ensuremath{\nu}', 'φ':r'\ensuremath{\varphi}', 'ω':r'\ensuremath{\omega}', 'Δ':r'\ensuremath{\Delta}', 'Ω':r'\ensuremath{\Omega}', '≤':r'\ensuremath{\le}', '≥':r'\ensuremath{\ge}', '≠':r'\ensuremath{\ne}', '≡':r'\ensuremath{\equiv}', '⊂':r'\ensuremath{\subset}', '∈':r'\ensuremath{\in}', '→':r'\ensuremath{\to}', '‘':"`", '’':"'", '“':"``", '”':"''", '₊':r'\ensuremath{_+}', '₋':r'\ensuremath{_-}', '₁':r'\ensuremath{_1}', '₃':r'\ensuremath{_3}', '₄':r'\ensuremath{_4}', '₅':r'\ensuremath{_5}', '₆':r'\ensuremath{_6}', '⁵':r'\textsuperscript{5}', '⁷':r'\textsuperscript{7}', '⁰':r'\textsuperscript{0}', '⁻':r'\ensuremath{^-}', '⁺':r'\ensuremath{^+}', '∂':r'\ensuremath{\partial}', '∇':r'\ensuremath{\nabla}', '⊗':r'\ensuremath{\otimes}', '⊕':r'\ensuremath{\oplus}', 'Σ':r'\ensuremath{\Sigma}', 'ε':r'\ensuremath{\epsilon}', 'ζ':r'\ensuremath{\zeta}', 'χ':r'\ensuremath{\chi}', 'Γ':r'\ensuremath{\Gamma}', 'ℓ':r'\ensuremath{\ell}', 'ℏ':r'\ensuremath{\hbar}', '∫':r'\ensuremath{\int}', '…':r'\ldots{}', ' ':' ',

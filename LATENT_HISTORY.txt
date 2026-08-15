@@ -241,3 +241,8 @@ r2779  LATENT      the corpus is coherent; my kill receipt was not -- dropped OB
 r2780  LATENT      L-820 merged: C52 WITHDRAWN (banked spectra are NK=600), C51 discharged. Aliasing is cosmetic.
 r2781  COMPUTED    the k-range fixes the control (7.14->3.81) and not CR (280->281). Radiation is the difference.
 r2782  INSTRUMENT  integration sweep: cc54 fully in. Found 106 INGESTION claim-lines lost to silent no-ops.
+c54.221  LATENT      the merge of my own c54.220 duplicated FOUR protected rows; for PO-4 and PO-6 neither copy was a superset, and no register gate saw any of it
+c54.221a LATENT      and receipts/INDEX.md skips 21 of 545 rows silently -- the parser gates on "| P" and the corpus writes an em-dash for a receipt with no paper
+c54.221b INSTRUMENT  hypothesis KILLED: the gate that flipped green did so because 56 reopened PO-10, not because of the duplication
+c54.221c INSTRUMENT  two gates red and neither mine: C41 allocated twice at two commits BOTH titled r2749, and L-817 assigned but unregistered
+c54.221d INSTRUMENT  my own duplicate-row repair re-broke PO-4's object column and L-551's receipt caught it; and Q1's r2738 guard was already incompatible with c54.215's correction note

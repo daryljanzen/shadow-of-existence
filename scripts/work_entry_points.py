@@ -55,6 +55,9 @@ ARC = os.path.join(ROOT, 'THE_LIVE_ARC.md')
 PO = os.path.join(ROOT, 'PROTECTED_OPEN.md')
 RIDX = os.path.join(ROOT, 'receipts', 'INDEX.md')
 
+sys.path.append(os.path.join(ROOT, 'corpus'))
+import index_rows  # ** c54.222: one row reader for all five callers.  See its head. **
+
 STOP = set("""the a an and or of to in on at is are was were be been being it its this that these those
 for with as by from into over under about which whether what where when how not no nor but if then than
 one two three first second we our us their there here also only just more most much many such same other
@@ -134,13 +137,16 @@ def struck_rows():
 
 
 def receipts():
+    """** r2555: case-sensitive on the paper column, and p0 is lowercase -- the same silent-discard
+    shape fixed in run_all_receipts and check_receipts. **
+
+    ** c54.222: and this copy never got even that fix -- it still had no `` '| `' `` branch, so the
+    twenty storyboard rows were invisible here as well as the twenty em-dash ones.  The filter is
+    gone; `corpus/index_rows.py` holds it once. **
+    """
     out = []
-    for ln in read(RIDX).split('\n'):
-        # ** r2555: case-sensitive on the paper column, and p0 is lowercase -- the same
-        # silent-discard shape fixed in run_all_receipts and check_receipts. **
-        if ln[:3].upper().startswith('| P') and ln.count('|') >= 3:
-            cells = [c.strip() for c in ln.split('|')[1:-1]]
-            out.append((cells[0][:60], ' '.join(cells[1:3])))
+    for r in index_rows.rows(index=RIDX, root=ROOT):
+        out.append((r.paper[:60], ' '.join(r.cells[1:3])))
     return out
 
 

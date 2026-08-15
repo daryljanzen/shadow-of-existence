@@ -61,6 +61,11 @@ from concurrent.futures import ThreadPoolExecutor
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..'))
 
+# ** c54.222: the INDEX row filter lives in ONE place now.  `corpus/` is appended rather than
+# prepended so it cannot shadow the stdlib the way `scripts/` did (see the note above). **
+sys.path.append(os.path.join(ROOT, 'corpus'))
+import index_rows  # noqa: E402
+
 # Known-slow receipts: full Boltzmann hierarchies and BBN networks.  Named rather than hidden.
 SLOW = (
     'ROBUST_p1p2_scan', 'C11TEST_radiation_zeroed', 'P15_the_second_arm_actually_run',
@@ -70,29 +75,41 @@ SLOW = (
 
 
 def registered():
-    """the receipts INDEX.md registers, in the order it registers them"""
-    idx = os.path.join(ROOT, 'receipts', 'INDEX.md')
-    out, seen = [], set()
-    for ln in open(idx, encoding='utf-8'):
-        # ** r2555: the paper column is CASE-SENSITIVE here and the geometric core is written
-        # `p0` lowercase, so this runner skipped TWELVE receipts -- the fourth instance of the
-        # silent-discard class (c54.203 fixed check_receipts and make_receipt_appendix; the
-        # duplicate dict key at r2552 and check_currency's parser at r2550 were the others).
-        #   ⇒ ** A runner that skips a receipt leaves NO trace: the receipt simply never runs,
-        #     and a green run means nothing about it. **
-        if not (ln[:3].upper().startswith('| P') or ln.startswith('| `')):
+    """the receipts INDEX.md registers, in file order -- AND what it names but cannot resolve
+
+    Returns `(paths, unresolved)`.
+
+    ** r2555: the paper column is CASE-SENSITIVE here and the geometric core is written `p0`
+    lowercase, so this runner skipped TWELVE receipts -- the fourth instance of the silent-discard
+    class (c54.203 fixed check_receipts and make_receipt_appendix; the duplicate dict key at r2552
+    and check_currency's parser at r2550 were the others). **
+      ⇒ ** A runner that skips a receipt leaves NO trace: the receipt simply never runs, and a green
+        run means nothing about it. **
+
+    ** ⛭⛭ c54.222 -- THE FIFTH INSTANCE, AND THE FILTER IS NOW GONE RATHER THAN PATCHED AGAIN. **  The
+    predicate decided membership by the PAPER column, and the corpus writes an EM-DASH there for a
+    receipt that supports no paper: ** TWENTY rows dropped, EIGHTEEN naming a file on disk, none of
+    them ever run by this gate -- and one of the eighteen FAILS. **  It lives once now, in
+    `corpus/index_rows.py`, with the four earlier patches folded in; see that file's head.
+
+    ** ⛔ AND THE SECOND HALF OF THE SAME SILENCE: A FAILING `os.path.exists` WAS A `continue`. **
+    Four registered rows name `storyboard_receipts/...` at the repository ROOT, which this function
+    prepended `receipts/` to and then dropped; two more name files that have never existed in any
+    commit.  *** Unresolvable is RETURNED now, and the caller reports it.  A runner permitted to
+    silently not-run a registered receipt is not a gate. ***
+    """
+    seen, out, unresolved = set(), [], []
+    for r in index_rows.rows(resolve_paths=True, root=ROOT):
+        if not r.runnable:
+            continue                      # a `.md` kill record is registered and is not runnable
+        if not r.paths:
+            unresolved.append((r.lineno, r.token))
             continue
-        c = [x.replace('\\|', '|').strip() for x in re.split(r'(?<!\\)\|', ln.rstrip('\n'))[1:-1]]
-        if len(c) < 4 or c[0] == 'paper':
-            continue
-        p = c[3].strip('` ')
-        if p.startswith('receipts/'):
-            p = p[len('receipts/'):]
-        f = os.path.join(ROOT, 'receipts', p)
-        if f not in seen and os.path.exists(f):
-            seen.add(f)
-            out.append(f)
-    return out
+        for f in r.paths:
+            if f not in seen:
+                seen.add(f)
+                out.append(f)
+    return out, unresolved
 
 
 def run_one(path, timeout):
@@ -137,7 +154,7 @@ def main():
     ap.add_argument('--quick', action='store_true')
     a = ap.parse_args()
 
-    files = registered()
+    files, unresolved = registered()
     if a.only:
         files = [f for f in files if a.only in f]
     if a.quick:
@@ -169,7 +186,19 @@ def main():
         worst = sorted(ok, key=lambda r: -r[2])[:5]
         print("  slowest that passed: "
               + ", ".join(f"{os.path.basename(p)} {dt:.0f}s" for _, p, dt, _ in worst))
-    if bad:
+    # ** c54.222: an UNRESOLVABLE row is reported HERE, next to the failures, and it fails the gate
+    # even when every file that does exist passes. **  *A registry entry naming nothing is not a
+    # smaller defect than a receipt that exits 1 -- it is the same defect one step earlier, and it
+    # was the one with no reader.*
+    if unresolved and not a.only:
+        print()
+        print(f"  ⛔ {len(unresolved)} REGISTERED ROW(S) NAME A `.py` THAT DOES NOT EXIST:")
+        for lineno, tok in unresolved:
+            print(f"    [FAIL] receipts/INDEX.md line {lineno}: {tok}")
+        print("    ⇒ Searched `receipts/<path>` AND `<path>` from the repository root, globbed.")
+        print("      ** A row is a claim that a computation exists.  An unresolvable row is a false")
+        print("      one, and it is printed into the reproducibility appendix as `[OK]`. **")
+    if bad or (unresolved and not a.only):
         print()
         print("  ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.")
         return 1
