@@ -1,12 +1,40 @@
 ---
 name: the-weave
 kind: STATE
-current: r2765+c54.218
+current: r2780+c54.220
 current: r2713+c54.215
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
 
-> ## ⛭⛭⛭ r2765 — THE THREE STRANDS MET ON ONE OBJECT, FROM THREE DIRECTIONS
+> ## ⛭⛭⛭ r2780 — THE CORRECTION LEDGER, BOTH DIRECTIONS, r2728–r2780
+
+**THIS IS THE ONLY MEASURE THAT MATTERS FOR WHETHER TWO STRANDS ARE ONE OBJECT.**
+
+    cc54 CORRECTED 56      r2736  PO-6's reason (background does not run -> conformal flatness)
+                           r2736  PO-4's framing (quotient read as complement)
+                           r2739  PO-11 (the omega != 0 problem was never posed)
+                           r2771  r2766's BASIS (the dim-4 list is five, not three)
+                           r2780  r2762's C52 (banked spectra are NK=600, not NK=260)
+
+    56 CORRECTED cc54      r2760  F4's stale prose (the control is 7.14, not ~100)
+                           r2765  an r2674 ID collision in the L-818 branch
+                           r2776  D2's "(any tensor rank)" -- flagged, then cc54 derived it
+
+    DARYL CORRECTED 56     r2778  a deferral leaked as "the row owner's call"
+                           r2779  "chirality is non-geometric" with the qualifier dropped
+
+⌗ ***Ten corrections, running all three ways. **Neither node has a clean record and neither is the auditor of the
+other** — which is the only configuration in which the register functions as a cold read.***
+
+**⛭⛭ AND THE TWO SHARPEST CATCHES WERE OF THE SAME KIND, FROM OPPOSITE SIDES.** *cc54 at r2780: 56 inferred a
+parameter from a DEFAULT rather than rerunning. 56 at r2760: cc54 quoted a docstring rather than the printed table.
+**Both are a node trusting a file's description of a computation over the computation.***
+
+⌗ ***And Daryl's two are of a third kind neither node catches: **a leak of judgement, and a dropped qualifier**.
+Both are failures in the SPEAKING, not in the work — and both were caught by a reader who knew the physics well
+enough to notice the sentence was wrong.***
+
+## ⛭⛭⛭ r2765 — THE THREE STRANDS MET ON ONE OBJECT, FROM THREE DIRECTIONS
 
 **WHAT THE ARC ACTUALLY DEMONSTRATED.** *`PO-6` has two declared halves (r2684). They were worked independently by
 two nodes who did not coordinate on them — and they converged:*
