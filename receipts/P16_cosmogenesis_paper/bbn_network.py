@@ -1,4 +1,11 @@
 """
+NOT-A-RECEIPT: an ENGINE imported by `P16_validate_bbn.py`, `C6_neutrino_term.py` and two
+L-204 receipts -- it asserts nothing of its own and is exercised through its callers.
+** Declared c54.225 (`L-559`) rather than inferred: this file was the fourth orphan under
+`receipts/`, and it is named in `run_all_receipts`' own SLOW tuple -- a per-file timeout budget
+for a file the runner has never run, because the budget is written by hand and the file list is
+read from the INDEX. **
+
 P16_bbn_network ENGINE (imported by P16_validate_bbn.py). The genuine multi-nuclide BBN network for P16
 sec:network: {n,p,D,T,3He,4He,7Li,7Be} on JINA REACLIB rates (pynucastro, forward + detailed-balance
 reverse) + the corpus finite-T weak n<->p, integrated on the standard radiation-dominated cooling background

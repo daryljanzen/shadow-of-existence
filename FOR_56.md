@@ -2708,3 +2708,44 @@ that reads a register by its open marker cannot see a strike, and cannot see a d
 read the REPAIRED state from the working tree, so "the repaired one" moved every time you edited `PO-4`.
 **A before/after measurement needs BOTH ends pinned.** Now pinned to `a83455b` (c54.217), with the
 must-not-regress property still asserted against the live file.*
+
+---
+
+## ⛔⛭⛭ 44 · `L-556` TURNED THE CHECK OUTWARD AND THE ARROW STILL ONLY POINTED ONE WAY — added c54.225
+
+⌷ *Found by triaging the six receipts still failing the full run.* `L-559`, receipt
+`receipts/L559_the_registry_from_files_inward/O1_…pointed_one_way.py` (11 checks).
+
+**⓵ FOUR COMPUTATIONS UNDER `receipts/` THAT NO ROW REGISTERED** — *`A6_item_58_resolves_split`,
+`A3_the_convergence_audit`, `A8_the_self_protecting_falsehood`, `bbn_network`.*
+⇒ ***The INDEX is the file list for everything downstream***, *so an unregistered receipt is never run
+by `run_all_receipts`, never reaches an appendix, never enters the assertion census and never appears in
+the supersession scan.* **A computation that exists and that the corpus does not know it has.** *All
+three of the real ones RUN where they sit and exit zero — they are receipts, not scratch.*
+
+**⛔ ⓶ AND ONE IS SHARPER.** *`bbn_network` is named in `run_all_receipts`' own `SLOW` tuple.*
+⇒ ***A per-file timeout budget for a file the runner has never run*** — *because the budget is written
+by hand and the file list is read from the INDEX.* **Two halves of one gate, kept in two places,
+disagreeing about which files exist.** *It is a genuine engine (nine receipts reference it), so it now
+**declares** itself with `NOT-A-RECEIPT:` rather than being registered.*
+
+**⌗ ⓷ AND WHAT WAS REPORTING IT WAS A RECEIPT** — *P17's, which names three of the four in its own
+failure line and had been failing on them; and `run_all_receipts` says in its own docstring that it is
+**not in the standing ten**.* ⇒ ***The detection existed and was not being run — `L-558`'s finding one
+file over, and the third time this session.***
+
+**⌷ ⓸ THE OPT-OUT IS A DECLARATION, NOT AN INFERENCE, and that was a choice.** *The gate could exempt a
+file by asking "is it imported anywhere". It does not:* ***an inferred exemption is invisible and
+silently exempts the next orphan that happens to be imported once.*** *Seeded BOTH ways — an unrowed
+file fails, and the engine with `NOT-A-RECEIPT:` removed ALSO fails though nine receipts still import
+it.*
+
+**⌗ THE THREE ROWS SAY "REGISTERED, NOT WRITTEN".** *The content is yours (r2678, r2685, r2706) and is
+unaltered; what c54.225 supplies is the row.* **And one thing I did NOT do: derive the `SLOW` tuple from
+the INDEX.** *The budget is a judgement and deriving it would hide the judgement — but the two lists
+should probably not be able to disagree silently, and that is yours to shape.*
+
+⌗ *Run after this: **553 pass / 5 fail** over 559 registered receipts, from 13 at the start of the
+span. The five that remain are all one class — **stale absence or quotation claims that later correct
+work falsified** — and `L175/N1` is one my own c54.219 broke by banking Lovelock into P10. That block is
+next.*

@@ -1,6 +1,6 @@
 
-  RUN-ALL-RECEIPTS -- 558 registered receipt(s), 6 at a time, 900s each, each from ITS OWN DIRECTORY
-  TREE-DIGEST: c2474fd5fc26213f
+  RUN-ALL-RECEIPTS -- 562 registered receipt(s), 6 at a time, 900s each, each from ITS OWN DIRECTORY
+  TREE-DIGEST: 8ae3d2940fb42311
 
     [FAIL] receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py  (0s)
                OK    ⚠ CR does NOT derive the dynamics: "the construction leaves the dynamics of general relativity unchanged" /     OK    and P12 calls its own claim "a recognition rather than an addition" /   4 check(s) FAILED
@@ -12,10 +12,8 @@
                OK    and any surviving occurrence is inside a % comment line, never published text /     FAIL  while the PUBLISHED paragraph says "the deepest question the construction opens onto" and then answers the general case /   8 check(s) FAILED
     [FAIL] receipts/L536_frontier_placement/F1_resolved_content_sits_in_the_frontier_sections.py  (0s)
                OK    with the three largest shares: boundary_paper.tex 33%, CR_cosmology.tex 29%, range_paper.tex 14% /     OK    ⚠ and the resolved-language proxy finds only 29 markers corpus-wide -- far too few to be a measurement, and reported as a proxy rather than a count /   1 check(s) FAILED
-    [FAIL] receipts/P17_geometric_core_paper/P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py  (0s)
-             OK   and the no-single-value conclusion / ============================================================================== / FAILED: 3 receipt(s) still have no INDEX row: ['A3_the_convergence_audit', 'A6_item_58_resolves_split', 'A8_the_self_protecting_falsehood']
 
-  552 pass, 6 fail, 0 over timeout, in 572s wall
-  slowest that passed: P16_validate_bbn.py 242s, P15_the_second_arm_actually_run.py 175s, I10_the_constraint_propagation_is_symmetry_free.py 121s, P15_the_collapse_leg_is_scale_invariant.py 120s, P15_verify_lowell_exact_measure.py 117s
+  557 pass, 5 fail, 0 over timeout, in 515s wall
+  slowest that passed: P16_validate_bbn.py 242s, P15_the_second_arm_actually_run.py 178s, P15_the_collapse_leg_is_scale_invariant.py 118s, I10_the_constraint_propagation_is_symmetry_free.py 116s, P16_theory_error_and_likelihood.py 114s
 
   ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.

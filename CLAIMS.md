@@ -83,7 +83,15 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| *(none — 54's c54.223 and c54.224 rows released with the work)* | — | — | — |
+| *(none — 54's c54.225 rows released with the work)* | — | — | — |
+
+> ⌗ **54's c54.225 ROWS RELEASED HERE, WITH THE WORK.** *· `corpus/check_receipt_orphans.py` — **new**,
+> seeded in both directions. *· `receipts/INDEX.md` — three rows added for receipts that existed and were
+> registered nowhere, each saying **"registered, not written"**: the content is the observer line's
+> (r2678, r2685, r2706) and is unaltered. *· `receipts/P16_cosmogenesis_paper/bbn_network.py` — **one
+> declaration line**, `NOT-A-RECEIPT:`, because it is an engine nine receipts reference and the exemption
+> must be declared rather than inferred. *· `THE_LIVE_ARC.md`, `FOR_56.md`, `ABSORPTION.md` — `L-559`,
+> item 44, declaration.
 
 > ⌗ **54's c54.224 ROWS RELEASED HERE, WITH THE WORK.** *· `PROTECTED_OPEN.md` — **the four duplicated rows
 > only**: the fork-side copies dropped, the observer-side copies kept byte-for-byte, `PO-4`'s r2778 strike
