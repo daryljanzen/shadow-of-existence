@@ -343,3 +343,4 @@ r2822  CLAIMED    PO-5: does P14s second quantisation on the wall kernel reach a
 r2822  LATENT      a composite gluon is the OCTET and P14 counts the SINGLET -- same fact escapes W-W and hides it.
 r2823  CLAIMED    PO-5: a composite of BOUND modes is bound. Does the surviving route need PO-11?
 r2823  LATENT      PO-5 is gated on PO-11 -- a composite of bound modes is bound. The chain terminates at the descent.
+r2825  COMPUTED    VERDICT: the analytic sqrt(f). Self-adjointness applies where r is spatial, and the wall is not.

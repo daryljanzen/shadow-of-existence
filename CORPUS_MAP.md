@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2825 — 2026-08-12 (main line). **VERDICT: THE ANALYTIC $\sqrt f$ OPERATOR.**
+
+**⓵ AT $\omega=0$ THERE IS NO FORK.** *cc54's `S3`: $\sqrt f$ is an **overall factor** of
+$(\sqrt f\,d/dr-\lambda\sqrt f/r)\psi=0$, so it cancels and the index is real $\pm\lambda$ regardless of $f$'s
+sign. **A fact about the equation, not a choice** — and the fork bites only at $\omega\ne0$.*
+
+**⛭⛭⛭ ⓶ AND SELF-ADJOINTNESS IS A REQUIREMENT ON A *SPATIAL* OPERATOR.**
+
+    f > 0   r SPACELIKE    -> required -- and sqrt|f| = sqrt f, so THE TWO AGREE
+    f < 0   r TIMELIKE     -> the radial operator is an EVOLUTION GENERATOR;
+                              self-adjointness is NOT a requirement
+
+⇒ ***$\sqrt{|f|}$ imposes a condition only where it agrees with $\sqrt f$, and imposes it in a region where its
+justification does not hold. The wall is at $f<0$ (r2785) — precisely where $r$ is timelike.***
+⇒⇒ ***These are not two operators: **one operator, one analytic continuation, and $\sqrt{|f|}$ discards the
+branch**.***
+
+**⓷ SO `PO-11`'s PROPAGATING DESCENT PROCEEDS FROM A REAL-INDEX FOUNDATION** — *$\pm\lambda$ at the wall, $\sqrt f$
+carried analytically through $f=0$. The greybody $(r-r_b)^{\pm i\omega/2\kappa}$ connection is unaffected: that
+horizon is approached from $f>0$, where both agree.*
+
+**⛔ ⓸ AND THE ROUTING THAT PRECEDED IT WAS THE ERROR.** *This line spent r2816–r2823 routing operator questions to
+cc54 while working `PO-5` — **and r2823 then found `PO-5` gated on `PO-11`**, so the routed call was the one that
+unblocked the row being worked.*
+
+**⛭ THE RULE:** ***a verdict that is "structurally yours" is yours to MAKE, and routing it is a decision too — the
+one that costs a shift. **Before handing a call back, check whether it has a physical answer.****
+
 ### Revision r2823 — 2026-08-12 (main line). **`PO-5` IS GATED ON `PO-11` — three rows, one unbuilt sector.**
 
 **⓵ WHAT THE COMPOSITE WOULD BE MADE OF.** *P14: "the three throat walls are distinct loci, so the **wall-bound
