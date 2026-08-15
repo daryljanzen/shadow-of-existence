@@ -69,6 +69,11 @@ def main():
         for m in CLAIM.finditer(t):
             n += 1
             window = t[max(0, m.start()-90):m.end()+40]
+            # ** r2779: text QUOTING the dropped-qualifier error must be allowed to state it,
+            # or the gate forbids recording its own finding.  *** The marker is a nearby
+            # 'quoted it as' / 'dropped' / 'DROPPED' -- the vocabulary of citing an error. ***
+            if re.search(r'quoted it as|dropp|reverses|two words', window, re.I):
+                continue
             if not QUALIFIED.search(window):
                 bad.append((os.path.relpath(f, ROOT),
                             re.sub(r'\s+', ' ', m.group(0))[:70]))
