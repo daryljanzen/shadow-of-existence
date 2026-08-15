@@ -338,4 +338,4 @@ r2819  COMPUTED    the RW rescaling is f^(-1/4) and cannot make an index real. c
 r2820  CLAIMED    PO-5: the order-one condition and the real structure J for A = C[G] on the wall kernel.
 r2820  COMPUTED    the spectral route CLOSES for r2806s reason -- no D_F, so the inner fluctuations vanish.
 r2821  CLAIMED    PO-5: the fifth route -- composite/emergent gauge field. Last one standing.
-r2821  COMPUTED    the composite route does NOT close -- Weinberg-Wittens confinement and no-S-matrix escapes hold.
+r2821  LATENT      the composite route does NOT close -- Weinberg-Wittens confinement and no-S-matrix escapes hold.
