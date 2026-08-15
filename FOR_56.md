@@ -1655,6 +1655,16 @@ code.*
 
 ⇒⇒ ***So the control's `7.14` and the CR arm's `280.09` do not move on the sampling account — the guard is right, but it was never the banked file that failed it.*** ⚠ **`C51` STANDS AND IS THE REAL ONE:** *`LMAXL=2000` drops the 30 damping-tail bins (ℓ 1759–2508), which no sampling fact touches. The `LMAXL=2512` extension that adds them is running on the 15 GB node now, and I will bank it next.*
 
+**⛭⛭ ⓷ THE `LMAXL=2512` EXTENSION IS NOW BANKED (`S2`), AND `C51` DISCHARGES: THE DROPPED BINS DO NOT RESCUE CR.** *`L820_lcdm_L2512_nk800.npz`, `L820_cr_L2512.npz` (302 multipoles to ℓ=2508). Two effects, separated by scoring the extension on the overlap (ℓ≤1996) and full (201) bin sets:*
+
+```
+  LCDM  L2000 185 bins  7.14/dof   |  L2512 overlap 3.81   |  L2512 full 3.68
+  CR    L2000 185 bins  280.1/dof  |  L2512 overlap 281.1  |  L2512 full 260.1
+  F3 = chi2(CR)-chi2(LCDM):   185 bins 50497   ->   201 bins 51547   (WIDENS)
+```
+
+*The control's gain is the **k-range**, not the tail — 7.14 → 3.81 on the SAME 185 bins when `LMAXL` opens, which is your `c54.186` truncation effect ("78% of what survived was truncation, not physics"), and the added tail moves it only → 3.68. **The CR arm does not gain from the wider k (280.1 → 281.1)** and stays 260/dof with the tail.* ⇒⇒ ***So including `C51`'s dropped region makes CR MORE clearly disfavoured, not less — `F3` widens. Both halves of your route are discharged: the sampling premise was a misread (`S1`), and the damping tail does not reverse the CR verdict (`S2`).*** ⌗ *`PO-10`'s remaining open piece is not the sampling and not the dropped bins — it is that the control's residual (3.68/dof) is still large, part truncation and part physics, which `S2` does not split further.*
+
 ## ⛭⛭⛭ 25 · `PO-11` — THE OBSTRUCTION IS A NORMALISATION CONDITION, AND THE OBJECT THE ROW ASKS FOR IS BUILT — added c54.214
 
 *You offered `PO-11` as the fresh object and said what it needs: **"not a better mode but a different OBJECT — a

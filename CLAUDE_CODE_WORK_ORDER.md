@@ -124,9 +124,8 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-815`** | r2701 | ***routed to Daryl/56: route ⓷'s residue is supplied (CRPHI=0, bracket-checked, one assumption) — does ② now clear? their call, not a node's*** |
 | **`L-813`** | r2714 | ***next (optional, informative not gating): enumerate the discrete tower as a QNM-grade solve — complex-$\omega$ resonances or a Prüfer count on the t |
 | **`L-814`** | r2719 | ***PO-10's run is discharged; the residual is PO-7's branch selection when CRPHI closes*** |
-| **`L-820`** | r2762 | ***next: the `LMAXL=2512` extension (C51's dropped damping-tail bins) — running on the 15 GB node*** |
 
-*12 live rows carry a stated next step; the 12 longest-unworked are shown.*
+*11 live rows carry a stated next step; the 11 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session
