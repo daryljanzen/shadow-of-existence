@@ -277,3 +277,4 @@ r2810  COMPUTED    the triple is lambda_8 -- a NORMALISATION not a coupling. r28
 r2811  COMPUTED    the rules are CENTRE data and the force is ROOT-VECTOR data -- two halves of one decomposition.
 r2812  INSTRUMENT  check_gate_currency built and gated rows made visible on the board.
 r2813  LATENT      r2811s owed question is ANSWERED IN P14, stronger than asked. r2806/r2811 were re-derivations.
+r2814  COMPUTED    the routes are ENUMERABLE: 3 of 5 closed, and the spectral-triple route is absent from the corpus.

@@ -325,3 +325,5 @@ r2812  CLAIMED    build check_gate_currency -- a gate goes stale when its holdin
 r2812  INSTRUMENT  check_gate_currency built and gated rows made visible on the board.
 r2813  CLAIMED    PO-5: does anything in the corpus produce a CONTINUOUS direction in the branching?
 r2813  LATENT      r2811s owed question is ANSWERED IN P14, stronger than asked. r2806/r2811 were re-derivations.
+r2814  CLAIMED    PO-5: can the space of routes to a gauge field be ENUMERATED, not just sampled?
+r2814  COMPUTED    the routes are ENUMERABLE: 3 of 5 closed, and the spectral-triple route is absent from the corpus.

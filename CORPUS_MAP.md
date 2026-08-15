@@ -146,6 +146,37 @@ sources: [cowork, chat]
 
 
 
+### Revision r2814 — 2026-08-12 (main line). **THE ROUTES ARE ENUMERABLE — three closed, two open, one absent.**
+
+**⛭⛭ ⓵ "NO THIRD MECHANISM HAS BEEN NAMED" IS A REPORT ON WHO HAS SPOKEN.** *A bound needs the space enumerated.*
+
+    (X) isometry / Kaluza-Klein    WALLED   su(3) does not embed in so(5,1)
+    (X) holonomy / flat bundle     CLOSED   r2813: F = 0, H^1 = 0, no deformation
+    (X) index / anomaly inflow     CLOSED   boundary paper: "having no bulk gauge field for
+                                            anomaly inflow, it requires each wall's content
+                                            to be anomaly-free on its own"
+        composite / emergent       open     not examined
+        spectral triple (Connes)   open     NOT MENTIONED ANYWHERE IN THE CORPUS
+
+⇒ ***Three closed, two open, one of the two absent entirely. **A bounded problem where there was an unbounded
+one.****
+
+**⛭⛭⛭ ⓶ AND THE ABSENT ROUTE HAS ITS PIECES.** *Connes: $D\to D+A$, gauge group $=$ unitaries of $\mathcal A$.
+$\mathcal H$ is the wall kernel; $D$ is P14's Dirac operator; **the algebra is the question**.*
+
+**⓷ AND THE HOLONOMY SUPPLIES A CANDIDATE ALGEBRA.** *Computed: the defining 3-dimensional representation is
+irreducible ($\langle\chi,\chi\rangle=1.0000$ over 27 elements), **so $\mathbb C[G]$ contains $M_3(\mathbb C)$** —
+exactly the factor carrying colour in Connes' Standard Model, whose unitaries are $U(3)$.*
+
+**⚠ ⓸ WHAT THIS IS NOT, STATED BEFORE IT CAN BE MISREAD.** ***Not a coupling*** *(inner fluctuations give a
+connection; the kinetic term with a fixed coefficient is this row and is untouched).* ***Not an escape from r2813***
+*(which closes deformations of the FLAT connection; this builds a different object from the algebra).* ***Not
+endorsed*** *(Connes' inputs — real structure, grading, order-one condition — none checked against CR).*
+
+**⛭ THE RULE:** ***when a corpus says "no X has been named", ENUMERATE the space of X and check each against it.
+**A negative reported as an absence of proposals is not a negative about the world** — and three of the five
+closures were already written in the papers, waiting to be counted together.***
+
 ### Revision r2813 — 2026-08-12 (main line). **r2811's OWED QUESTION IS ANSWERED IN P14, IN A STRONGER FORM.**
 
 **⛭⛭⛭ ⓵ THE ANSWER, AND IT DOES NOT DEPEND ON A DIMENSION COUNT.** *P14: "But the dimension is a bonus and not the
