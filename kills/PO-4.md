@@ -44,8 +44,14 @@ cannot:***
 
 - *boundary: a fermion sector on the discrete component "is **THE SINGLE geometric opening the wall
   leaves**";*
-- *boundary: chirality is "not merely found non-geometric but **FORCED to be**, the boundary **the
-  conclusion of a mechanism** and not only the report of a wall";*
+- *boundary: **OBSERVED FERMION** chirality is "not merely found non-geometric but **FORCED to be**,
+  the boundary **the conclusion of a mechanism** and not only the report of a wall";*
+  ⚠ ***THE QUALIFIER IS LOAD-BEARING AND THIS RECEIPT DROPPED IT (fixed r2779). The corpus carries
+  TWO chiralities and distinguishes them every time: GEOMETRIC chirality is real and derived —
+  dynamics computes it as "the turning of the polarization plane (helicity $\pm2$)" and P14 binds a
+  zero-mode "whose chirality is the diagram-automorphism parity $R=\gamma^5$ (an exact solution,
+  not an assertion)". **What is forced non-geometric is OBSERVED FERMION chirality — the Standard
+  Model's chiral GAUGE COUPLING**, because the index theorem acts on the CONNECTED gauge group.***
 - *P14: "$\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$, **structurally**".*
 
 ⇒ ***The single opening was taken — r2777 established P14 IS that work — and returned less than the

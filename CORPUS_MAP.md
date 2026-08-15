@@ -146,6 +146,44 @@ sources: [cowork, chat]
 
 
 
+### Revision r2779 — 2026-08-11 (main line). **THE CORPUS IS COHERENT; MY KILL RECEIPT WAS NOT.**
+
+**⌗ THE QUESTION.** *Daryl: "How is chirality nongeometric? I thought we had long ago decided it is geometric. Is
+the corpus becoming incoherent?"*
+
+**⛔ ⓵ THE CORPUS IS COHERENT. `kills/PO-4.md` DROPPED TWO WORDS FROM A QUOTATION.** *The boundary paper: "**OBSERVED
+FERMION** chirality is not merely found non-geometric but forced to be." The receipt quoted it as "chirality is not
+merely found non-geometric".*
+⇒ ***Two words out of the middle of a quote, and the claim reverses.***
+
+**⛭⛭ ⓶ THE CORPUS CARRIES TWO CHIRALITIES AND DISTINGUISHES THEM EVERY TIME.**
+
+    GEOMETRIC / GRAVITATIONAL   REAL, DERIVED, GEOMETRIC
+      dynamics: "chirality is the turning of the polarization plane (helicity +/-2)";
+                the wall "is where chirality is GENERIC"
+      P14:      a zero-mode "whose chirality is the diagram-automorphism parity R = gamma^5
+                (an exact solution, not an assertion)"
+      framework: "GEOMETRIC chirality can be CARRIED ONLY BY the discrete orientation parity"
+
+    OBSERVED FERMION            the Standard Model's chiral GAUGE COUPLING
+      boundary: "OBSERVED FERMION chirality is ... forced to be [non-geometric]"
+      core:     "the index acts on the CONNECTED GAUGE GROUP ... so OBSERVED FERMION
+                chirality is forced non-geometric"
+
+⇒ ***CHIRALITY IS GEOMETRIC. What is forced non-geometric is the GAUGE COUPLING of fermion chirality — $SU(2)_L$'s
+chiral ACTION, not chirality itself.***
+
+**✔ ⓷ FIVE INSTANCES FIXED** *across the register, map, ledger and kill receipt — **all this line's, all from
+r2777–r2778**. `check_chirality_qualifier` built and wired.*
+
+⌗ ***The gate had to be NARROWED after it fired: "FORCED to be the chirality operator $\chi=\gamma^5$" is an
+operator identity that correctly carries no qualifier. **A pattern that would have driven an edit to a true sentence
+is worse than no pattern.****
+
+**⛭ THE RULE:** ***a qualifier inside a quotation is part of the quotation. Dropping "observed fermion" is not
+compression, it is a different claim — and the qualifiers most likely to be dropped are exactly the ones a paper
+added because the unqualified version is false.***
+
 ### Revision r2778 — 2026-08-11 (main line). **`PO-4` STRUCK — the ask is answered in the negative, determined rather than deferred.**
 
 **⛔ ⓵ THE DEFERRAL, NAMED.** *r2777: "comparing what the route DELIVERS against what the row ASKS is the row
@@ -160,7 +198,7 @@ owner's call." Daryl: **"That's not for me to decide. It must be determinable. S
 ⇒ ***Neither meets the ask, and no interpretation is needed to see it.***
 
 **⛭⛭⛭ ⓷ AND WHETHER IT COULD STILL BE MET IS EQUALLY DETERMINABLE.** *The boundary paper calls the discrete
-component "**THE SINGLE geometric opening the wall leaves**" and says chirality is "**forced** to be"
+component "**THE SINGLE geometric opening the wall leaves**" and says OBSERVED FERMION chirality is "**forced** to be"
 non-geometric, "the boundary **the conclusion of a mechanism**"; P14 gives
 $\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$ **structurally**.*
 ⇒ ***The single opening was taken — P14 is that work (r2777) — and returned less than the ask. **The ask cannot be
@@ -188,7 +226,7 @@ revisions**. **It means the ROUTING was recorded elsewhere.***
 **⛭⛭ ⓶ THE BOUNDARY PAPER NAMES THE ROUTE AND ITS MECHANISM.** *"the index theorem is a statement about a compact
 connected group, and a positive-dimensional connected group contains a circle whose action is what forces the
 equivariant Dirac index to vanish, while the gravitational handedness is carried by the discrete orientation parity
-… **no such circle action and so no trigger** --- so observed fermion chirality is not merely found non-geometric
+… **no such circle action and so no trigger** --- so OBSERVED FERMION chirality is not merely found non-geometric
 but **forced** to be … **a fermion sector built on that discrete component … is the single geometric opening the
 wall leaves**."*
 
@@ -19929,7 +19967,7 @@ Daryl checked the architecture and it's confirmed with one sharpening + one corr
 
 **⌗ The instrument, receipted first (the campaign's own new rule).** Probes harvested from the papers that *do* carry the join (p0/P12/P14/P3), multi-probe, comments stripped, **whitespace unwrapped so a wrapped line cannot hide a hit**, LaTeX escapes allowed — then **calibrated against r1159's known-good floors before use**: p0 ≥ 8 → **200** · P13 ≥ 5 → **282** · P12 ≥ 4 → **153** · P11 ≥ 5 → **55** · P5 ≥ 4 → **116** · P14 ≥ 3 → **135** · P7 ≥ 1 → **89**. **Every floor cleared ⟹ safe as a POINTER.** *The receipt neither failed census had.*
 
-**⊢ P13 IS COMPLETE. No bake, no pointer, no ledger citation.** It **owns the wall** (`su(3)⊄so(5,1)`) **and the single opening it leaves** (the discrete parity `O(5,1)\SO₀(5,1)`); it derives the kind-sorting **by its own route** — the index theorem's connected/discrete complementarity (*a positive-dimensional connected group contains a circle whose action forces the equivariant Dirac index to vanish; the discrete parity has no such circle and so no trigger*), which is why it can say chirality is *"not merely **found** non-geometric but **forced** to be, the boundary the conclusion of a **mechanism** and not only the report of a wall"*; it **carries and cites P12's light-cone reading** (*"the rulings walk exactly the isometries and nothing else, and the gauged/global split of the two factors is legible in the light cone"*); it **cites P12 for `S₃×ℤ₂`**; and **its split site already routes to p0** (`~\cite{JanzenSlicing,JanzenGeometricCore}`) — **the pointer the sweep existed to add was already written.**
+**⊢ P13 IS COMPLETE. No bake, no pointer, no ledger citation.** It **owns the wall** (`su(3)⊄so(5,1)`) **and the single opening it leaves** (the discrete parity `O(5,1)\SO₀(5,1)`); it derives the kind-sorting **by its own route** — the index theorem's connected/discrete complementarity (*a positive-dimensional connected group contains a circle whose action forces the equivariant Dirac index to vanish; the discrete parity has no such circle and so no trigger*), which is why it can say OBSERVED FERMION chirality is *"not merely **found** non-geometric but **forced** to be, the boundary the conclusion of a **mechanism** and not only the report of a wall"*; it **carries and cites P12's light-cone reading** (*"the rulings walk exactly the isometries and nothing else, and the gauged/global split of the two factors is legible in the light cone"*); it **cites P12 for `S₃×ℤ₂`**; and **its split site already routes to p0** (`~\cite{JanzenSlicing,JanzenGeometricCore}`) — **the pointer the sweep existed to add was already written.**
 
 **⊢ AND ITS IDIOM IS NOT THE ONE-CIRCLE'S:** `one circle` **0** · `tangent` **0** · `throat circle` **0** · `direct product` **0**. **Baking the reading in would be p0's voice in P13's mouth** — which is exactly what Daryl's *"in their own voice"* forbids, and the campaign's own rule: *if a connection could be written without opening the paper, it is decoration.*
 
@@ -21448,7 +21486,7 @@ Abstract 2,506 → 4,459 chars. P10 11pp→12pp, 0 undefined, 0 warnings. Builds
 
 ### Revision r849 — 2026-07-06. **ARP receipt: P7 body, the central theorem — cosmogenesis is a THEOREM on the whole corpus (P16 spine grounded). [Artie/c31.]** Drilled §central theorem. Three results together: (1) CR augmentation necessary+sufficient for a world that exists+evolves (necessary half measured, F5); (2) collapse cannot terminate but becomes a universe (collapse horizon + cosmological seam ONE ontological layer); (3) any symmetry (non-spherical dissolved). Cosmogenesis is a THEOREM not assertion. Rests on F1-F6 (whole corpus converges): F1 P1 causality (horizon a metric singularity, unique limiting null direction, from Lorentzian structure alone); F2 taxonomy (horizon finite-curvature species, r=0 infinite-curvature reached on NO finite cosmic layer); F3 P3 slicing (Nariai=root-exchange fixed point); F4 P5 reassignment groupoid (reassignments=morphisms of a description groupoid, alter reading not geometry); F5 P4 forced foliation (measured); F6 P6 existent (evolving layer primary; block+no-present closed). Augmentation grounds P16 spine: evolving spatial layer primary, spacetimes its projections, the admissible reassignment PRESERVES the cosmic foliation (EFE/metric/causal unchanged) → alters causal READING of one fixed geometry not the geometry → rate foliation-set, leaf-content rides through untouched → matter-inherited law is a COROLLARY of what the reassignment IS. Contribution: P16 spine grounded at root (foliation-preserving causal reassignment); P16 builds on P7 central theorem (cosmogenesis of geometry) adding discrete matter content riding the reassignment. F4=P5 groupoid FOUNDATIONAL — the which-universe question (r838) IS the reassignment structure, load-bearing, next receipt. Owed: P5 (next), P10-12, canonical companion, then concrete model. Do-not-assert. Builds on r848.
 
-### Revision r848 — 2026-07-06. **ARP receipt: matter boundary paper (P14→P13) — scopes P16 (discrete matter, gauge external). [Artie/c31.]** The wall (4 faces): su(3)⊄so(5,1); gauge lives only on the compact Wick face (signature change, not real-substrate op) — rank cascade (caps SU(3)×U(1)), Weyl involution (≠Wick), discrete A₂ skeleton, Atiyah-Hirzebruch index obstruction (continuous gauge isometry vector-like). Chirality FORCED non-geometric: index obstruction (connected group) and CR gravitational chirality (discrete orientation parity O(5,1)\SO₀(5,1), theorem can't reach) are complementary → chirality forced non-geometric, a mechanism not just a wall; discrete residue = the single opening the fermion sector builds on. P16 SCOPE LINE — colour-closure rests on CAUSAL structure: "the cosmogenesis is a signature-preserving reassignment on the real Lorentzian substrate, so matter rides that horn while su(3) lives across the signature seam" → TWO distinct seams: cosmogenesis seam (matter crosses inherited, Lorentzian-preserving) vs Wick seam (su(3), Riemannian); matter's world never contains su(3). Geometry supplies the discrete skeleton (P,T,γ⁵,mass=R-odd datum) but NOT charge/gauge (C field-level antilinear, no auto-CPT); compact face real-by-construction but not co-equal existent (Riemannian/atemporal; existence needs enduring cosmic time, CMB-isotropy-certified) — "two co-equal real forms" closed ontologically. CR = gravitational-COSMOLOGICAL unification, NOT geometric unification of matter. Contribution: P16 = cosmogenesis of DISCRETE matter (flavour skeleton + light-element composition) riding the Lorentzian horn inherited, gauge/charge ORDINARY-ROUTE. Scopes the deuterium build: ordinary BBN (ordinary-route QCD) on the CR geometric contracting-phase background — geometry supplies thermal history+rate, QCD supplies the network, no category confusion. Owed: P5 groupoid, P7 body, P10-12, canonical companion, then the concrete model. Do-not-assert. Builds on r847.
+### Revision r848 — 2026-07-06. **ARP receipt: matter boundary paper (P14→P13) — scopes P16 (discrete matter, gauge external). [Artie/c31.]** The wall (4 faces): su(3)⊄so(5,1); gauge lives only on the compact Wick face (signature change, not real-substrate op) — rank cascade (caps SU(3)×U(1)), Weyl involution (≠Wick), discrete A₂ skeleton, Atiyah-Hirzebruch index obstruction (continuous gauge isometry vector-like). Chirality FORCED non-geometric: index obstruction (connected group) and CR gravitational chirality (discrete orientation parity O(5,1)\SO₀(5,1), theorem can't reach) are complementary → OBSERVED FERMION chirality forced non-geometric, a mechanism not just a wall; discrete residue = the single opening the fermion sector builds on. P16 SCOPE LINE — colour-closure rests on CAUSAL structure: "the cosmogenesis is a signature-preserving reassignment on the real Lorentzian substrate, so matter rides that horn while su(3) lives across the signature seam" → TWO distinct seams: cosmogenesis seam (matter crosses inherited, Lorentzian-preserving) vs Wick seam (su(3), Riemannian); matter's world never contains su(3). Geometry supplies the discrete skeleton (P,T,γ⁵,mass=R-odd datum) but NOT charge/gauge (C field-level antilinear, no auto-CPT); compact face real-by-construction but not co-equal existent (Riemannian/atemporal; existence needs enduring cosmic time, CMB-isotropy-certified) — "two co-equal real forms" closed ontologically. CR = gravitational-COSMOLOGICAL unification, NOT geometric unification of matter. Contribution: P16 = cosmogenesis of DISCRETE matter (flavour skeleton + light-element composition) riding the Lorentzian horn inherited, gauge/charge ORDINARY-ROUTE. Scopes the deuterium build: ordinary BBN (ordinary-route QCD) on the CR geometric contracting-phase background — geometry supplies thermal history+rate, QCD supplies the network, no category confusion. Owed: P5 groupoid, P7 body, P10-12, canonical companion, then the concrete model. Do-not-assert. Builds on r847.
 
 ### Revision r847 — 2026-07-06. **ARP receipt: matter sector paper (P15→P14), the fermion cosmogenesis — the UNIFYING law for P16. [Artie/c31.]** Read abstract + §sec:cosmogenesis. Build: one chiral zero-mode at the throat (R=γ⁵ exact), three hinges→three walls→three zero-modes (least-arbitrary; one-hinge excluded as modulus), S₃ permutes → three chiral families + global S₃ = SM discrete flavour structure (gauge walled, masses EWSB). THE UNIFYING LAW (P16 spine): fermions cross the seam by "the rate-reassigned, matter-inherited law" — reassignment fixes the rate, does NOT touch leaf-carried content, generations inherited unchanged — the SAME law transmitting the light-element composition unaltered (P8+P13). Fermion generations and deuterium = one seam-crossing law on two kinds of leaf-content, not two stories. Rate reassigned, all matter inherited. Origin: generations originate at the Nariai crest (S₃-fixed, roots merge 4-3r₀²=0), split undercritical, unfold; inherited chiral (crest fixes S₃ not R); matter/antimatter NOT a cosmogenesis event (P=R vs T distinct, hexad resonance). Bound→propagating: signature flip carries hole-side spatial mass W=λ√f/r into a cosmological-side temporal term → wall-mode propagates in cosmic time, three families carried faithfully by the null characteristic seam. SHARED REMAINING BUILD: paper leaves "explicit continuation onto the cosmological leaf for a concrete cosmological-side model" — the EXACT same build the deuterium needs; both halves of P16 wait on one concrete cosmological-side model. Contribution: P16 thesis has a spine (one rate-reassigned/matter-inherited law, all matter; both halves → one concrete cosmological-side model). Owed: P5 groupoid, P7 body, P10-12, matter boundary (P14→P13), canonical companion, then the concrete model/thermal-history build. Do-not-assert. Builds on r846.
 
