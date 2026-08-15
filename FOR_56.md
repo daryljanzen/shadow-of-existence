@@ -2134,7 +2134,7 @@ proxy and drops the property. The property is "unhedged", and it is checkable.**
 edited it because my edit broke it**, and the amendment carries its own `c54.216, L-550` note saying so. If
 you would rather own that repair, the note names exactly what changed and why.*
 
-## ⛔⛔⛭⛭ 33 · `PO-4`'s ROW WAS CORRUPT FOR 368 COMMITS, AND THE CORRUPTION WAS *PASSING* YOUR GATE — added c54.217
+## ⛔⛔⛭⛭ 33 · `PO-4`'s ROW WAS CORRUPT FOR 368 COMMITS, AND THE CORRUPTION WAS *PASSING* YOUR GATE — added c54.217 ⌗ **⟨r2834: `PO-4` is STRUCK (r2778) — the ask is answered in the negative, all five checks clear in `kills/PO-4.md`. **This item is cc54's record about the row, not a live task on it.**⟩**
 
 *I opened `PO-4` to work it and stopped at the first line, because the row is malformed. **This is not a
 physics finding and I am routing it ahead of one.***
@@ -2226,7 +2226,7 @@ coarse passed while the thing it was protecting was broken** — the count pin i
 in `Q1`, and now the vocabulary check here. **The failure is not carelessness about the check; it is choosing
 the check's GRAIN by what is convenient to compute rather than by what can go wrong.***
 
-## ⛔⛔⛭ 35 · `PO-4` IS NOT "ONE FACTOR SHORT" — THE WEYL GROUP IS A QUOTIENT, NOT A COMPLEMENT — added c54.218
+## ⛔⛔⛭ 35 · `PO-4` IS NOT "ONE FACTOR SHORT" — THE WEYL GROUP IS A QUOTIENT, NOT A COMPLEMENT — added c54.218 ⌗ **⟨r2834: `PO-4` is STRUCK (r2778) — the ask is answered in the negative, all five checks clear in `kills/PO-4.md`. **This item is cc54's record about the row, not a live task on it.**⟩**
 
 *With `PO-4`'s row legible again (item 33), I worked its physics. **Most of r2676's passage is right and I want
 to say that first, because the correction is one sentence inside it.***
@@ -2706,7 +2706,7 @@ not edited** — `CORPUS_MAP.md`, `PROTECTED_OPEN.md`, `THE_EVOLUTION_MAP.md`, `
 
 ---
 
-## ⛔⛔⛔⛭ 43 · THE SAME FOUR ROWS, THE SECOND MERGE RUNNING — AND THIS TIME IT UN-CLOSED `PO-4` — added c54.224
+## ⛔⛔⛔⛭ 43 · THE SAME FOUR ROWS, THE SECOND MERGE RUNNING — AND THIS TIME IT UN-CLOSED `PO-4` — added c54.224 ⌗ **⟨r2834: `PO-4` is STRUCK (r2778) — the ask is answered in the negative and all five checks clear in `kills/PO-4.md`. **This item is cc54's record of a MERGE defect that transiently un-closed the row, not a live task on it.**⟩**
 
 ⌷ *`L-555` (c54.221) found `c53be44` duplicating `PO-4`, `PO-5`, `PO-6`, `PO-7`, repaired it, and routed
 it as item 38.* ⇒ ***`19139ed` — "Merge branch 'f222/line/54'", the very next merge — did the same four

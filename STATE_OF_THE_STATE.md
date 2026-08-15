@@ -68,9 +68,9 @@ appendix and the body agree.** Not gated — done once, by reading.*
 | `CORPUS_MAP.md` | 5,084,410 | **SWEPT r2834.** *2,156 entries; **28 named as overturned and 19 said nothing** — including `r696`, the cyanide-face implosion, sitting unmarked beside `r697`'s retraction of it. All marked at their own heads.* `check_map_overturns` holds it |
 | `THE_LIVE_ARC.md` | 980,454 | **9 overturns READ r2833 — all nine are SELF-MARKING**, stating their own withdrawal in the same sentence ("I MUST WITHDRAW c54.138's TIGHTENING", "THE COUNT IS WITHDRAWN r2510"). ⌗ *That is the correct form; the register's separate-mark convention is not required here.* **Still unchecked: cross-lead duplication, and whether any live lead's framing is stale** (two were, r2832) |
 | `THE_PLAN.md` | 517,382 | **SWEPT r2834** — *zero overturn statements (it is a forward document, not a log), and no live item names a struck row.* Carried one PRE-r2830 rule statement, now marked |
-| `FOR_56.md` | 248,149 | **never read this session** |
+| `FOR_56.md` | 248,149 | **SWEPT r2834** — *three section headers named `PO-4` with no sign it was struck at r2778; all three are cc54's record of a merge defect. Marked.* |
 | `THE_OPEN_PROBLEMS_LEDGER.md` | 211,923 | **SWEPT r2834** — *one live sentence named `PO-9` as open (marked), and it quoted the PRE-r2830 person-gate as current (marked)* |
-| `FOR_54.md` | 133,752 | written to, never audited |
+| `FOR_54.md` | 133,752 | **SWEPT r2834** — *clean. Its four overturn statements are all **self-marking** in the item's own header, the same correct form `THE_LIVE_ARC` uses.* |
 | `THE_WEAVE.md` | 89,981 | written to, never audited |
 | the 17 papers | — | **5 claims spot-checked. No systematic pass** |
 | `receipts/` + `kills/` | 606 files | **SWEPT r2833 — ZERO.** *Both directions: a heading saying a check clears while the body says it does not, and the reverse (the shape `PO-9` actually had). **The pattern was verified against the known `PO-9` instance BEFORE the clean result was believed** — a scan that cannot find the defect it was built for returns clean either way.* `check_receipt_verdicts` holds it |
@@ -94,7 +94,9 @@ be allowed to move only after it is read.
 
 **⛔ AND IT WAS EVERYWHERE.** *r2830 replaced the register's closure rule with a physics one. **The old person-gate survived, verbatim and unmarked, in 33 places across 14 documents** — `README`, `THE_HUB`, `THE_OPERATING_MANUAL`, `THE_WISDOM_LEDGER`. **A stale FINDING misleads about one result; a stale RULE misgoverns every future one.** All marked; `check_rule_current` holds it.*
 
-**NEXT: `FOR_56.md` (248,149) and `FOR_54.md` (133,752).** *The routing documents — never audited, only written to. **These are where one line hands the other its findings**, so a stale claim here propagates across the line boundary, which is the one direction no gate covers. ⌗ Size first.*
+**⌗ DONE r2834 — both routing documents swept.** *`FOR_56` carried three headers naming `PO-4` as though live; `FOR_54` was clean. **And six overturn statements across the two are all self-marking** — each states its own retraction in its own header, which is the correct form and needs no separate mark. `check_routing_current` holds the boundary.*
+
+**NEXT: `THE_WEAVE.md` (89,981) — the last unaudited document.** *Written to every session, never read back. ⌗ **Then the sweep is done and the question changes**: from "what is stale?" to "**does the whole set agree with itself?**" — a cross-document consistency pass rather than a per-document one, which is a different instrument and should be designed, not improvised.*
 
 ---
 
