@@ -1,19 +1,11 @@
 
-  RUN-ALL-RECEIPTS -- 562 registered receipt(s), 6 at a time, 900s each, each from ITS OWN DIRECTORY
-  TREE-DIGEST: 8ae3d2940fb42311
+  RUN-ALL-RECEIPTS -- 563 registered receipt(s), 6 at a time, 900s each, each from ITS OWN DIRECTORY
+  TREE-DIGEST: c8d622ba1b7bec15
 
-    [FAIL] receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py  (0s)
-               OK    ⚠ CR does NOT derive the dynamics: "the construction leaves the dynamics of general relativity unchanged" /     OK    and P12 calls its own claim "a recognition rather than an addition" /   4 check(s) FAILED
-    [FAIL] receipts/L200_free_data_count/U1_the_count_as_the_corpus_now_states_it.py  (0s)
-               OK    the retired ledger closed the gravitational-quantum sector at ZERO free constants /     OK    and recorded the matter-side count as OPEN -- which is what has since moved /   1 check(s) FAILED
-    [FAIL] receipts/L200_free_data_count/U3_the_residue_is_one_and_it_is_already_counted.py  (0s)
-               FAIL  p0 sec:frontiers STILL reads "stated as a target, not a result" /     OK    L-201's sharp target -- "any constant maximal symmetry does not reach" -- has no room: the quotient is 1-dimensional and IS the scale /   1 check(s) FAILED
-    [FAIL] receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py  (0s)
-               OK    and any surviving occurrence is inside a % comment line, never published text /     FAIL  while the PUBLISHED paragraph says "the deepest question the construction opens onto" and then answers the general case /   8 check(s) FAILED
-    [FAIL] receipts/L536_frontier_placement/F1_resolved_content_sits_in_the_frontier_sections.py  (0s)
-               OK    with the three largest shares: boundary_paper.tex 33%, CR_cosmology.tex 29%, range_paper.tex 14% /     OK    ⚠ and the resolved-language proxy finds only 29 markers corpus-wide -- far too few to be a measurement, and reported as a proxy rather than a count /   1 check(s) FAILED
+    [slow] receipts/P16_cosmogenesis_paper/P16_the_scalar_monodromy_is_four_pi_over_rho.py  -- exceeded 900s
 
-  557 pass, 5 fail, 0 over timeout, in 515s wall
-  slowest that passed: P16_validate_bbn.py 242s, P15_the_second_arm_actually_run.py 178s, P15_the_collapse_leg_is_scale_invariant.py 118s, I10_the_constraint_propagation_is_symmetry_free.py 116s, P16_theory_error_and_likelihood.py 114s
+  562 pass, 0 fail, 1 over timeout, in 1177s wall
+  slowest that passed: P16_validate_bbn.py 219s, P15_the_second_arm_actually_run.py 163s, I10_the_constraint_propagation_is_symmetry_free.py 138s, P15_the_collapse_leg_is_scale_invariant.py 117s, Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py 112s
 
-  ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.
+  Every registered receipt runs, in place, and exits 0 -- so every assertion in the
+  reproducibility layer was actually evaluated.

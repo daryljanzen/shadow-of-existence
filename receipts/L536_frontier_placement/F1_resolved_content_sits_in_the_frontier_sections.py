@@ -97,6 +97,21 @@ def frontier_sections():
     return out
 
 
+
+# ** ⛭⛭ RE-PINNED c54.226 (`L-560`): THE NUMBER MOVED BECAUSE THE DEFECT WAS ACTED ON. **  At `e8e58cf`
+# (r2579, this receipt's own build) 11,359 characters -- 35% of P7's frontier section -- sat BELOW the
+# list.  It is 3,264 and 13% now: *** roughly eight thousand characters of settled physics have been
+# moved out from under a heading that says the work is not done. ***
+#   ⇒ ** So the finding was correct and has been PARTLY DISCHARGED, and a receipt that asserts a defect
+#     must not die when the defect shrinks. **  The measurement at the commit is pinned; the improvement
+#     is asserted; and the residue -- 3,264 characters still misplaced -- is asserted as still non-zero.
+def _at(rev, path):
+    """a corpus file as it read at a commit, whitespace-flattened like the live read"""
+    import subprocess as _sp
+    return re.sub(r'\s+', ' ', _sp.run(['git', 'show', f'{rev}:{path}'], cwd=ROOT,
+                                       capture_output=True, text=True, errors='replace').stdout)
+
+
 def main():
     print()
     print('  F1 -- is resolved content being left inside the frontier sections?')
@@ -124,8 +139,21 @@ def main():
     below = len(seg) - k
     check(f'⓶ P7\'s frontier section is {len(seg):,} chars, {100*len(seg)/len(p7):.0f}% of its body',
           len(seg) > 20000)
-    check(f'and {below:,} chars -- {100*below/len(seg):.0f}% of it -- sit BELOW the list',
-          below > 5000)
+    R2579 = 'e8e58cf'
+    _p7_then = _at(R2579, 'corpus/CR_framework.tex')
+    _i = _p7_then.find('\\section{Frontiers and open problems}')
+    _seg = _p7_then[_i:]
+    _below = len(_seg) - _seg.find('\\end{enumerate}')
+    check(f'and {_below:,} chars -- {100*_below/len(_seg):.0f}% of it -- sat BELOW the list at {R2579}, '
+          f'which is what this receipt measured',
+          _below > 10000)
+    check(f'⛭ AND IT HAS BEEN ACTED ON: {below:,} chars -- {100*below/len(seg):.0f}% -- sit below it '
+          f'now, so about {(_below-below)//1000} thousand characters of settled physics have moved out '
+          f'from under a heading that says the work is not done',
+          below < _below / 2)
+    check(f'⚠ and the residue is NOT zero: {below:,} characters are still filed under "Frontiers and '
+          f'open problems" -- the lead is shrunk, not discharged',
+          below > 1000)
     n_cr = len(re.findall('causal reassignment', p7f, re.I))
     check(f'⌗ and "causal reassignment" appears {n_cr} times in P7, so the CONTENT is present elsewhere '
           '-- the defect is PLACEMENT, not absence', n_cr > 10)

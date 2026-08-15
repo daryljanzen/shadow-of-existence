@@ -73,6 +73,19 @@ def flat(p):
     return re.sub(r'\s+', ' ', open(p, encoding='utf-8', errors='replace').read())
 
 
+
+# ** ⛭⛭ RE-PINNED c54.226 (`L-560`).  THIS RECEIPT PINNED A QUOTATION INTO PROSE THAT LATER CORRECT
+# ** WORK MOVED. **  The finding is unchanged; what broke is the pin.
+#   ⇒ *** A quotation is a claim about a FILE AT A COMMIT (c54.220's rule), so the historical wording
+#       is read at the commit where it stood and the CURRENT text is asserted separately.  A receipt
+#       that argues about a sentence must survive the sentence being rewritten. ***
+def _at(rev, path):
+    """a corpus file as it read at a commit, whitespace-flattened like the live read"""
+    import subprocess as _sp
+    return re.sub(r'\s+', ' ', _sp.run(['git', 'show', f'{rev}:{path}'], cwd=ROOT,
+                                       capture_output=True, text=True, errors='replace').stdout)
+
+
 def main():
     print()
     print('  U3 -- the residue side: what does maximal symmetry NOT fix?')
@@ -110,8 +123,15 @@ def main():
           (dim_o51 + 1) - dim_o51 == 1)
 
     # ---- and the frontier item still reads as open -----------------------------
-    check('p0 sec:frontiers STILL reads "stated as a target, not a result"',
-          'Reach: stated as a target, not a result' in p0)
+        # ** ⛭ RE-PINNED c54.226 (`L-560`): c54.179 (`2af0b0b`) rewrote this very sentence, which is the
+    # ** closure this receipt argued for arriving in the paper.  Both ends pinned. **
+    BEFORE_C54_179 = 'aa2b6ee'
+    _p0_then = _at(BEFORE_C54_179, 'corpus/geometric_core_paper.tex')
+    check(f'p0 sec:frontiers read "stated as a target, not a result" at {BEFORE_C54_179}',
+          'stated as a target, not a result' in _p0_then)
+    check('⛭ AND c54.179 REPLACED IT: "the item has two sides and they now stand differently, so it '
+          'is split rather than carried whole" -- the constant side a result, the datum side open',
+          'the item has two sides and they now stand differently' in p0)
     check('L-201\'s sharp target -- "any constant maximal symmetry does not reach" -- has no room:'
           ' the quotient is 1-dimensional and IS the scale',
           (dim_o51 + 1) - dim_o51 == 1)

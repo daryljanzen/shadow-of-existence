@@ -63,6 +63,19 @@ def flat(path):
     return re.sub(r'\s+', ' ', open(path, encoding='utf-8', errors='replace').read())
 
 
+
+# ** ⛭⛭ RE-PINNED c54.226 (`L-560`).  THIS RECEIPT PINNED A QUOTATION INTO PROSE THAT LATER CORRECT
+# ** WORK MOVED. **  The finding is unchanged; what broke is the pin.
+#   ⇒ *** A quotation is a claim about a FILE AT A COMMIT (c54.220's rule), so the historical wording
+#       is read at the commit where it stood and the CURRENT text is asserted separately.  A receipt
+#       that argues about a sentence must survive the sentence being rewritten. ***
+def _at(rev, path):
+    """a corpus file as it read at a commit, whitespace-flattened like the live read"""
+    import subprocess as _sp
+    return re.sub(r'\s+', ' ', _sp.run(['git', 'show', f'{rev}:{path}'], cwd=ROOT,
+                                       capture_output=True, text=True, errors='replace').stdout)
+
+
 def main():
     print()
     print('  U1 -- the free-data count, as the corpus states it at c54.163')
@@ -74,8 +87,16 @@ def main():
     p15 = flat(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'))
 
     # ---- the target and its falsifier are in the paper, in its own voice --------
-    check('p0 states the free-data-count test as a TARGET, not a result',
-          'Reach: stated as a target, not a result' in p0)
+    # ** ⛭ p0's frontier item was REWRITTEN at c54.179 (`2af0b0b`), which is this fork's own work and
+    # ** is the closure this receipt documents arriving in the paper.  `aa2b6ee` is the commit before. **
+    BEFORE_C54_179 = 'aa2b6ee'
+    p0_then = _at(BEFORE_C54_179, 'corpus/geometric_core_paper.tex')
+    check(f'p0 stated the free-data-count test as a TARGET, not a result, at {BEFORE_C54_179}',
+          'Reach: stated as a target, not a result' in p0_then)
+    check('⛭ AND IT NO LONGER DOES: c54.179 split it -- "the item has two sides and they now stand '
+          'differently", the CONSTANT side carried as a result and the DATUM side still open',
+          'the item has two sides and they now stand differently' in p0
+          and 'Reach: stated as a target, not a result' not in p0)
     check('and its falsifier is named and sharp',
           'a hidden geometric freedom in the cosmology, or a genuinely free constant where the '
           'reading says it should lock' in p0)

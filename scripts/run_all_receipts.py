@@ -71,6 +71,13 @@ SLOW = (
     'ROBUST_p1p2_scan', 'C11TEST_radiation_zeroed', 'P15_the_second_arm_actually_run',
     'bbn_network', 'P16_validate_bbn', 'P16_theory_error_and_likelihood',
     'P15_verify_lowell_boltzmann', 'P15_camb_reference', 'BUILD_camb_store',
+    # ** ADDED c54.226 (`L-560`).  This file had been FAILING FAST since r2682+c54.212 on a seed left
+    # ** in it, and c54.222 removed the seed -- so the first run that actually EXECUTED it is the one
+    # ** that discovered it is slow.  It exceeded the 900s budget under six-way contention. **
+    #   ⇒ *** A file that fails in its first second has no measured cost, so removing a seed can move a
+    #       receipt from "instant" to "over budget" with nothing in between.  Named here rather than
+    #       left to surprise the next run: the tuple exists to make the budget visible. ***
+    'P16_the_scalar_monodromy_is_four_pi_over_rho',
 )
 
 

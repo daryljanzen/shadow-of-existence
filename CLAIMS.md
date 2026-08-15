@@ -83,7 +83,19 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| *(none — 54's c54.225 rows released with the work)* | — | — | — |
+| *(none — 54's c54.226 rows released with the work)* | — | — | — |
+
+> ⌗ **54's c54.226 ROWS RELEASED HERE, WITH THE WORK — and every one of them is a RE-PIN, not a rewrite.**
+> *Five receipts of the observer line's (`L175/N1`, `L200/U1`, `L200/U3`, `L536/F1`, `L207/W1`) had their
+> quotations and counts moved out from under them by later correct work — **three times by this fork doing
+> what the receipt asked for**. Each now pins the historical wording at the commit where it stood and
+> asserts the current text separately; **no finding is altered and each one records its own discharge**.
+> *· ⚠ `L207/W1` additionally carries a MEASUREMENT that is deliberately not interpreted — six sentences
+> it quotes are in no paper now — routed as item 45. *· `scripts/run_all_receipts.py` — **one name added to `SLOW`**: the
+> monodromy receipt had been failing in its first second on the seed this fork left at c54.212, so the
+> first run that actually EXECUTED it is the one that found it is slow. ***A file that fails instantly
+> has no measured cost, so removing a seed can move a receipt from "instant" to "over budget" with
+> nothing in between.***
 
 > ⌗ **54's c54.225 ROWS RELEASED HERE, WITH THE WORK.** *· `corpus/check_receipt_orphans.py` — **new**,
 > seeded in both directions. *· `receipts/INDEX.md` — three rows added for receipts that existed and were

@@ -90,6 +90,19 @@ def pub(f):
                                          if not l.lstrip().startswith('%')))
 
 
+
+# ** ⛭⛭ RE-PINNED c54.226 (`L-560`).  THIS RECEIPT PINNED A QUOTATION INTO PROSE THAT LATER CORRECT
+# ** WORK MOVED. **  The finding is unchanged; what broke is the pin.
+#   ⇒ *** A quotation is a claim about a FILE AT A COMMIT (c54.220's rule), so the historical wording
+#       is read at the commit where it stood and the CURRENT text is asserted separately.  A receipt
+#       that argues about a sentence must survive the sentence being rewritten. ***
+def _at(rev, path):
+    """a corpus file as it read at a commit, whitespace-flattened like the live read"""
+    import subprocess as _sp
+    return re.sub(r'\s+', ' ', _sp.run(['git', 'show', f'{rev}:{path}'], cwd=ROOT,
+                                       capture_output=True, text=True, errors='replace').stdout)
+
+
 def main():
     print()
     print('  N1 -- does the corpus hold two halves of an unjoined connection?')
@@ -119,12 +132,28 @@ def main():
            if not os.path.basename(f).startswith('appendix_receipts')]
     lovelock = sum(len(re.findall('Lovelock', open(f, encoding='utf-8', errors='replace').read(), re.I))
                    for f in tex)
-    check(f'⛔ ZERO occurrences of "Lovelock" across all {len(tex)} PAPER .tex files (found {lovelock})',
-          lovelock == 0)
+    # ** ⛭ AT r2515 THIS WAS TRUE, AND IT IS NOT NOW -- BECAUSE THE GAP IT NAMED WAS FILLED. **
+    # `eda3ad7` is r2515, this receipt's own build; the fork's c54.202 (`0d38a5b`) was not yet merged
+    # onto this line then, and it is what added P12's Lovelock sentence.
+    #   ⇒ *** So the absence was measured correctly and later work closed it -- which is the outcome a
+    #       gap-finding receipt is FOR.  Both ends are pinned: the absence at the commit, the filling
+    #       at HEAD, and the receipt now records the closure instead of dying of it. ***
+    R2515 = 'eda3ad7'
+    p12_then = _at(R2515, 'corpus/algebroid_paper.tex')
+    lovelock_then = len(re.findall('Lovelock', p12_then, re.I))
+    check(f'⛔ ZERO occurrences of "Lovelock" across the PAPER .tex files AT {R2515} (P12: '
+          f'{lovelock_then}) -- the absence this receipt was written to measure',
+          lovelock_then == 0)
+    check(f'⛭ AND IT IS FILLED NOW: {lovelock} occurrence(s) across {len(tex)} papers, P12 stating '
+          f'that "the same algebra closes for the Lovelock theories ... which coincide with general '
+          f'relativity only in four dimensions"',
+          lovelock >= 1
+          and 'the same algebra closes for the Lovelock theories' in p12)
     for w in ('uniquely', 'embeddab', 'determines the'):
-        check(f'and ZERO of "{w}" in P12', len(re.findall(w, p12, re.I)) == 0)
-    check("⇒ SO THE CORPUS CITES THE PAPER THE UNIQUENESS RESULT LIVES BESIDE, FOR THE ALGEBRA'S FORM, "
-          'AND NEVER FOR ITS CONTENT', 'Teitelboim1973' in p12 and lovelock == 0)
+        check(f'and ZERO of "{w}" in P12 AT {R2515} (now {len(re.findall(w, p12, re.I))})',
+              len(re.findall(w, p12_then, re.I)) == 0)
+    check("⇒ SO THE CORPUS CITED THE PAPER THE UNIQUENESS RESULT LIVES BESIDE, FOR THE ALGEBRA'S FORM, "
+          'AND NEVER FOR ITS CONTENT', 'Teitelboim1973' in p12 and lovelock_then == 0)
 
     check('the substrate is five-dimensional',
           'SO(5,1)/SO(4,1)' in p12 or 'de Sitter substrate' in p12)
@@ -133,7 +162,7 @@ def main():
           'cut is four and **says nothing about the substrate**' in arc)
     check("⇒⇒ SO THE LEAD IS DISTINCT FROM PO-9's GUARD: not a claim about the SUBSTRATE's dimension, "
           "but about what the LEAF's four-ness BUYS",
-          'cut is four and **says nothing about the substrate**' in arc and lovelock == 0)
+          'cut is four and **says nothing about the substrate**' in arc and lovelock_then == 0)
 
     check('⚠ CR does NOT derive the dynamics: "the construction leaves the dynamics of general '
           'relativity unchanged"',
@@ -150,7 +179,9 @@ def main():
     print('    the contracted Bianchi identity ** -- which is what r2514 verified without naming it.')
     print('  2 P12 identifies the Dirac algebra as a Lie ALGEBROID because its structure function is the')
     print('    inverse spatial metric, and cites Teitelboim1973 ** for the FORM and never the CONTENT **:')
-    print(f'    zero "Lovelock" across {len(tex)} papers; zero "uniquely"/"embeddab"/"determines the".')
+    print(f'    zero "Lovelock" across the papers AT {R2515}, when this was measured -- and {lovelock} now:')
+    print("    ** the gap this receipt named was FILLED, by the fork's own c54.202, which is what a")
+    print('    gap-finding receipt is FOR.  Both ends pinned (c54.226, `L-560`). **')
     print('  3 OUTSIDE (verified by search, marked as outside): ** HKT prove Einsteinian geometrodynamics')
     print('    is the ONLY canonical representation of those deformations **; Teitelboim reads the Dirac')
     print('    algebra as the EMBEDDABILITY condition; and ** Teitelboim--Zanelli show LOVELOCK gravity')
