@@ -605,7 +605,9 @@ lead**. Two colliding uses of one namespace, which is why the register read 118 
 127 — and neither I nor any gate noticed until Daryl asked.* ***The files are renamed to name the lead they
 work, with a `w` suffix; these numbers are retired and must never be reissued.***
 
-RETIRED-IDS: L-115 L-116 L-119 L-120 L-122 L-124 L-126
+RETIRED-IDS: L-115 L-116 L-119 L-120 L-122 L-124 L-126 L-817
+
+*`L-817` is retired r2674 (cc54): it was the Γ̂-straddle receipt, delivered on a branch whose PR was closed unmerged after 56 absorbed the spectral-straddle question a different way (`r2763` dissolved `PO-6`'s ordering question from P10); the ID left a gap between the merged `L-816` and `L-818` and is retired rather than reissued.*
 
 | burned ID | the file, now renamed | which lead it actually works |
 |---|---|---|
