@@ -306,3 +306,5 @@ r2802  CLAIMED    are the two backlogs actually blind-fixable? I claimed not wit
 r2802  INSTRUMENT  both not-blind-fixable backlogs cleared: 41 pinned from git, arc breaks 98 -> 33.
 r2803  CLAIMED    PO-2: does level (3)s do-not-assert still guard anything, now P14 exhibits the map?
 r2803  COMPUTED    PO-2s gate was a stale taxonomy sentence. Levels (1) and (2) gate nothing; only (3) waits on PO-5.
+r2804  CLAIMED    does PO-2s upgrade give PO-5 a foothold? Test the root triple as a coupling candidate.
+r2804  COMPUTED    PO-2s triple is FORCED (Nariai roots over alpha) -- a real foothold for PO-5, on the wrong wall.

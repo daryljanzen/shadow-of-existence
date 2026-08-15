@@ -267,3 +267,4 @@ r2800  LATENT      PO-11 verdict: the field is DIRAC, so L-828s fermion branch a
 r2801  LATENT      the pin test attempted twice more and killed at projection both times. Resource wall, routed.
 r2802  INSTRUMENT  both not-blind-fixable backlogs cleared: 41 pinned from git, arc breaks 98 -> 33.
 r2803  COMPUTED    PO-2s gate was a stale taxonomy sentence. Levels (1) and (2) gate nothing; only (3) waits on PO-5.
+r2804  COMPUTED    PO-2s triple is FORCED (Nariai roots over alpha) -- a real foothold for PO-5, on the wrong wall.

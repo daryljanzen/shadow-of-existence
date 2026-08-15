@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2804 — 2026-08-12 (main line). **`PO-2`'s UPGRADE IS A REAL FOOTHOLD FOR `PO-5`, ON THE WRONG WALL.**
+
+**⛭⛭⛭ ⓵ THE TRIPLE IS FORCED.** *At the Nariai crest ($M=\alpha/3\sqrt3$) the $f=0$ roots in units of $\alpha$:*
+
+    -13.856406 / alpha = -1.154701 = -2/sqrt3     (single)
+      6.928203 / alpha = +0.577350 = +1/sqrt3     (doubled)
+      6.928203 / alpha = +0.577350 = +1/sqrt3
+
+⇒ ***Not a normalisation choice: **Nariai fixes $M/\alpha$ and $\alpha$ is the substrate's ONE length**, so there
+is nothing else to divide by. Forced twice over.***
+
+**⛭⛭ ⓶ AND IT IS A NEW KIND FOR THE LEDGER.** *r2769 enumerated the dimensionless content as counts ($3$, $6$, $3$)
+and derived ratios ($3/4$, $9/10$, $1.0824$). **$1/\sqrt3$ is a FIXED IRRATIONAL forced by the geometry — the shape
+a coupling constant has.*** *And `PO-2`'s level (2) passing (r2803) is what makes it usable: **a resemblance cannot
+supply a coupling; a construction can be asked to.***
+
+**⛔ ⓷ BUT r2729's WALL IS UNMOVED.** *P14: "the bundle above is flat, so the construction supplies colour's exact
+selection rules **and no force** — it quantises and does not couple."*
+⇒ ***`PO-5` needs a number AND something to be the coefficient OF. `PO-2` supplies the number; the $F^2$ term is
+still absent.***
+
+**⓸ AND THE PART WORTH ROUTING IS A SCOPE OBSERVATION.** *p0 derives the no-coupling from "every **curvature
+invariant** on either face is a pure power of $1/\alpha^{2}$". **$1/\sqrt3$ is not a curvature invariant** — it is
+a horizon radius over $\alpha$ at a degenerate point. A forced dimensionless quantity outside the class p0's
+sentence ranges over.*
+
+**⛭ THE RULE:** ***when a hold lifts, ask immediately what the freed material is good for elsewhere. **A
+do-not-assert suppresses a number's USE, not just its assertion** — and `PO-5` had been measured as lacking a fixed
+dimensionless number while one sat behind `PO-2`'s hold for 170 revisions.***
+
 ### Revision r2803 — 2026-08-12 (main line). **`PO-2` WAS GATED BY A STALE SENTENCE, AND IT IS NOW CURRENT.**
 
 **⛔ ⓵ THE GATE WAS A SENTENCE, STALE IN TWO PLACES.** *`GEOMETRY_PHYSICS_TAXONOMY.md` — the document that HOLDS
