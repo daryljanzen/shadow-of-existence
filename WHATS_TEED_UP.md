@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.222 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**15 open QUESTIONS · 1 open WORK rows · 1 HELD** *(299 struck of 316 registered).*
+**16 open QUESTIONS · 1 open WORK rows · 1 HELD** *(299 struck of 317 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -34,6 +34,7 @@ sources: [cowork]
 | **`L-816`** | — | REGISTERED r2674 — cc54: `PO-6`'s FIXED-BACKGROUND half — the SUB-LEADING log divergence is GAUSS–BONNET, so the one-constant ledger survives (extends `L-809`/A7). `S50` left the sub-leading tower uncomputed: does the log divergence collapse onto $\Lambda$ (as… | `receipts/L816_po6_subleading_survives/S1…` · `L-165` (`PO-6`) · `L-809` · `S50` | — |
 | **`L-820`** | — | REGISTERED r2674 — cc54 ran 56's routed resampling task (`r2762`) and it CORRECTS `C52`'s premise: the banked two-arm spectra the likelihood scores are NOT under-sampled. `C52` held that `c54.178_lcdm.npz` came from `LMAXL=2000 NK=260` "fixed by the .npz shape… | `receipts/L820_banked_spectra_sampling/S1…`·`S2…` · `L-147` (`PO-10`) · `C52`/`C51` · `r2762` · `c54.178` · `c54.186` | — |
 | **`L-821`** | — | REGISTERED r2674 — cc54: `PO-6` OWED #472 — the VALUE of the one shear counterterm, and the status of its parity-odd partner. c54.219 (56, `L553`) showed the shear costs exactly ONE parity-even dim-4 counterterm (Weyl²) and flagged that a CIRCULAR polarisation… | `receipts/L821_weyl_coefficient_value/S1…` · `L-165` (`PO-6`) · `L-819` · `L553` (c54.219) · `OWED #472` | — |
+| **`L-822`** | — | REGISTERED r2674 — cc54: `PO-10` OWED #496's REAL REMAINDER — the CR arm's `280/dof`, which 56's r2781/`C53` found "unresponsive to `L_max` and diagnosed by nothing", is DIAGNOSED. COMPUTED (per-bin $\chi^2=r^{T}Fr$, full plik_lite covariance): the two arms' r… | `receipts/L822_cr_residual_diagnosed/S1…` · `L-147` (`PO-10`) · `L-171` (`PO-7`) · `C53`/r2781 · `OWED #496` | next: fold the LMAXL=3200 third convergence point (control -> ~1) when it lands |
 
 ## ⏸ HELD BY DARYL — answered, not waiting
 

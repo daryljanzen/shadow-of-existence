@@ -114,8 +114,9 @@ is**.*
 | **`L-815`** | r2701 | ***routed to Daryl/56: route ⓷'s residue is supplied (CRPHI=0, bracket-checked, one assumption) — does ② now clear? their call, not a node's*** |
 | **`L-813`** | r2714 | ***next (optional, informative not gating): enumerate the discrete tower as a QNM-grade solve — complex-$\omega$ resonances or a Prüfer count on the t |
 | **`L-814`** | r2719 | ***PO-10's run is discharged; the residual is PO-7's branch selection when CRPHI closes*** |
+| **`L-822`** | r2781 | ***next: fold the LMAXL=3200 third convergence point (control -> ~1) when it lands*** |
 
-*11 live rows carry a stated next step; the 11 longest-unworked are shown.*
+*12 live rows carry a stated next step; the 12 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session
