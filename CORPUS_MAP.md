@@ -146,6 +146,31 @@ sources: [cowork, chat]
 
 
 
+### Revision r2813 — 2026-08-12 (main line). **r2811's OWED QUESTION IS ANSWERED IN P14, IN A STRONGER FORM.**
+
+**⛭⛭⛭ ⓵ THE ANSWER, AND IT DOES NOT DEPEND ON A DIMENSION COUNT.** *P14: "But the dimension is a bonus and not the
+argument. **The moduli space of flat connections consists of flat connections, so a deformation within it changes
+which flat bundle one has and not whether there is a field strength.**"*
+⇒ ***So even if a continuous direction existed it would not help — $F$ is zero at every point of that space.
+**r2811 filed as OWED a question the paragraph forecloses.****
+
+**⓶ AND THE COUNT IS THERE WITH ITS REASON.** *Zero-dimensional: a wall's monodromy carries a repeated eigenvalue so
+its class is **subregular, dimension four rather than the regular six**, and "the disjointness of the vantages'
+supports is exactly what removes" the two-parameter family three regular classes would have left.*
+
+**⛭⛭ ⓷ AND THE FINITENESS CARRIES THE REASON r2806 LACKED.** *"necessarily so, since the holonomy is branching and
+**a branch structure has finitely many sheets** --- and a finite group in characteristic zero has **vanishing first
+cohomology**, so the representation does not deform as a representation of its own holonomy."*
+⌗ ***r2806 and r2811 were re-derivations of paper content.***
+
+**⓸ ONE THING ADDED, AND IT CORRECTS THIS LINE.** *P14's order 81 checks out: $\langle Z,C\rangle$ closes at 27 as
+matrices and $81=27\times3$ with the full $\mathbb Z_3$ centre. **r2811's 18 was an artefact of quotienting by
+phase on a two-generator set.***
+
+**⛭ THE RULE:** ***when a paper states a negative result, read the WHOLE paragraph before deriving it again. **A
+re-derivation that lands where the paper already stands costs a revision and produces nothing** — and worse, files
+as OWED the questions the paragraph's later sentences answer.***
+
 ### Revision r2812 — 2026-08-12 (main line). **TWO INSTRUMENTS FOR THE `PO-2` FAILURE — currency and visibility.**
 
 **⛭⛭ ⓵ `check_gate_currency` — A GATE-HOLDING DOCUMENT MUST NOT LAG ITS ROW.** *A gate is a DEFERRAL: the row names

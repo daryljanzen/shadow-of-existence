@@ -323,3 +323,5 @@ r2811  CLAIMED    what is missing between Cartan+Weyl data and su(3) itself?
 r2811  COMPUTED    the rules are CENTRE data and the force is ROOT-VECTOR data -- two halves of one decomposition.
 r2812  CLAIMED    build check_gate_currency -- a gate goes stale when its holding document lags the row.
 r2812  INSTRUMENT  check_gate_currency built and gated rows made visible on the board.
+r2813  CLAIMED    PO-5: does anything in the corpus produce a CONTINUOUS direction in the branching?
+r2813  LATENT      r2811s owed question is ANSWERED IN P14, stronger than asked. r2806/r2811 were re-derivations.
