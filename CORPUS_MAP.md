@@ -146,6 +146,85 @@ sources: [cowork, chat]
 
 
 
+### Revision r2834 — 2026-08-15 (main line). **THE STATE LAYER SWEPT END TO END; the generic cross-document checker tried and rejected.**
+
+**⛭⛭ EVERY DOCUMENT IN THE STATE LAYER IS NOW READ.** *`CORPUS_MAP` (19 overturned entries marked),
+`THE_LIVE_ARC` (`L-165` 357 revisions stale and live), `THE_PLAN` and the problems ledger (the PRE-r2830
+rule, **33 places across 14 documents**), both routing documents, `THE_WEAVE` (clean), 606 receipts
+(zero), and the papers (they agree).*
+
+**⛔ AND THE OBVIOUS NEXT INSTRUMENT WAS BUILT, RUN, AND REJECTED.** *Testing the register's claims
+against every document repeating them produces overwhelming false positives — **a document legitimately
+states counts historically**, and no generic checker separates that from a stale current claim.*
+⇒ ***The pass already exists done right, as relation-specific gates. Each names two documents and the
+one relation that must hold.***
+
+**⌗ SO THE DEBT RE-STATES: not which documents are unswept — all are — but WHICH RELATIONS ARE UNGATED.**
+*Seventeen gated; four named ungated (papers→register, receipts→rows, `CORPUS_MAP`→register,
+`THE_PLAN`→register).*
+
+### Revision r2833 — 2026-08-15 (main line). **`STATE_OF_THE_STATE` opened; `L-165` was 357 revisions stale and live.**
+
+*A tracker for the bookkeeping, separate from the physics: what is checked, what is not, and what is
+next. **It names what it must not become — a place to report progress.***
+
+**⛭ AND 26 LIVE LEADS WERE READ AGAINST THEIR ROWS' HEADS.** *A revision LAG was not the signal — most
+lagging leads are records of completed work. **The signal is a lead calling something untouched that its
+row reports settled**, and `L-165` was the one.*
+
+**⌗ AND 606 RECEIPT FILES SWEPT FOR INTERNAL CONTRADICTION: ZERO.** *The pattern was verified against
+the known `kills/PO-9.md` instance **before** the clean result was believed.*
+
+### Revision r2832 — 2026-08-15 (main line). **EVERY ROW GIVEN A `▣ CURRENT STATE` HEAD; `PO-3` AND `PO-9` STRUCK.**
+
+**⛔ THE REGISTER WAS 268,675 CHARACTERS AND 5% OF IT WAS THE CURRENT STATE.** *`PO-6` was 50,322 across
+28 appended blocks; `PO-10` had 36. **Every live row now opens with its state**, and the history sits
+below a marker.*
+
+**⌗ WHAT THE WORK FOUND, none of it a physics verdict:**
+
+    ~29,263 bytes   byte-identical duplicate blocks
+     19,753 bytes   the same finding written into TWO rows -- and that duplication
+                    is what MADE the withdrawal-propagation failures possible
+         21         overturned blocks carrying no mark
+          3         withdrawals that reached one row and not another
+          2         receipts asserting both verdicts at once
+          1         sentence a blanket sweep had inverted into its own opposite
+
+**⛭⛭ AND TWO ROWS CLOSED ON ANSWERED OBJECTS.** *`PO-9` — the substrate's dimension is **bounded below
+only**, as a RESULT of the criterion; its receipt's ④ heading had said "DOES NOT CLEAR" beneath a header
+saying "NOW CLEARS as of r2642", and that stale heading blocked the strike for 190 revisions. `PO-3` —
+the WHY is answered (the mass function is odd in the signed offset exactly when $D$ is even, so at $D=4$
+the parity exchanges conjugates **and that exchange IS the doubling**) and the bridge is built.*
+
+**⛭ AND THE REGISTER'S CLOSURE RULE WAS REPLACED (r2830):** *from "Closures on protected items are
+Daryl's" to **a row is struck when its OBJECT is answered and the answer is receipted** — which is a
+harder bar, not a looser one.*
+
+### Revision r2831 — 2026-08-15 (main line). **21 OVERTURNED BLOCKS MARKED, 29,263 DUPLICATE BYTES REMOVED, ONE ERROR-RECORD RESTORED.**
+
+*The register is append-only, so every dead claim still read as live: **twenty-one blocks named WITHDRAWN/CORRECTED/REVERSED by a later block in the same cell, and not one carried a mark**. 29,263 bytes were byte-identical duplicates. And one fix had EATEN ITS OWN ERROR-RECORD — `PO-6`'s note read "this cell read 144/36/24 for twenty-one revisions", and **144/36/24 is the CORRECTED value**.* ⇒ ***A correction that overwrites the record of the error destroys the only thing that made the note mean anything.***
+
+### Revision r2830 — 2026-08-15 (main line). **THE REGISTER GATES ON THE OBJECT, NOT ON A PERSON.**
+
+*Its title read "open research questions **a node may NOT close**"; its header read "**Closures on protected items are Daryl's**". Replaced by: **a row is struck when the object stated in its object cell is answered and the answer is receipted** — which is a harder bar, not a looser one.* ⚠ ***And the new criterion's first two uses were both wrong and both reverted inside the revision: an ANSWERED tag inside a status is not the OBJECT being answered, and a kill receipt EXISTING is not a kill receipt PASSING.***
+
+### Revision r2829 — 2026-08-15 (main line). **THE MAP WAS HOLDING A RECONSTRUCTION OF `PO-5`, NOT ITS OBJECT.**
+
+*Measured: the map carried five of six open rows' objects and **not `PO-5`'s** — "coupling" fifteen times, "multiplet" **zero**. **The coupling is the ROUTE**, and r2609 had already recorded that the route and the object came apart.* ⚠ ***`check_gap_is_held` was rigged three times before it was honest — v1 keyed on the object cell's register alias, v2 used `any()` where "baryon" is shared with `PO-2`, v3 filtered to discriminating keys and still passed.***
+
+### Revision r2828 — 2026-08-15 (main line). **`OWED` WAS SIX AND IS ONE.**
+
+*Five of six items were `PO-5`: **two superseded by this line's own later work, one done two revisions after filing, and two that were not tasks at all** — a finding and a state.* ⇒ ***The list grew by one each revision because filing was automatic and discharging was not: the debt NUMBER rose while the actual debt fell.***
+
+### Revision r2827 — 2026-08-15 (main line). **`PO-6` WAS REPORTED CLOSED FOR FOUR STATUS REPORTS AND READS OPEN.**
+
+*Its object is **the interacting tower — the spectrum of $\hat\Gamma$, whether it is bounded below, the UV definition**. `L-821`'s $7/40$ was OWED ITEM #472 **under** the row.* ⇒ ***An owed item discharging is not a row closing — and the register was right while the summary was wrong, which is the worse direction.***
+
+### Revision r2826 — 2026-08-15 (main line). **199 DECISIONS PARKED ON DARYL, REMOVED.**
+
+*`check_deferrals` had run green for hundreds of revisions on a **seven-verb allowlist** — it missed call, supply, schedule, name, steer, confirm, reconcile, enact, pay, update, overrule, launch, firm-up, grab, and did not match `for Daryl to <verb>` at all.* ⇒ ***A narrow selector is a filter wearing a different name, sitting inside the one gate whose whole job was this.***
+
 ### Revision r2825 — 2026-08-12 (main line). **VERDICT: THE ANALYTIC $\sqrt f$ OPERATOR.**
 
 **⓵ AT $\omega=0$ THERE IS NO FORK.** *cc54's `S3`: $\sqrt f$ is an **overall factor** of
@@ -348,6 +427,10 @@ isometry wall, or r2813, **each for a stated reason, none of which is "nobody ch
 
 **⛭ THE RULE:** ***when a paper states the hypotheses of its own obstruction, that sentence is the map of what the
 obstruction does NOT reach. **Read it as a boundary, not as an aside.****
+
+### Revision r2817 — 2026-08-15 (main line). **`L-562` MADE TO DEGRADE HONESTLY.**
+
+*It read a `runs/` directory the bundle does not carry, so it crashed on any tree but cc54's. Now it reports the absence and exits clean; `L-830` carries the same pin-test result in runnable form.*
 
 ### Revision r2816 — 2026-08-12 (main line). **`#558` ADJUDICATED — ONE OPERATOR, AND THE FORK DOES NOT EXIST.**
 
@@ -769,6 +852,10 @@ casing of its own convention reports pinned receipts as unpinned.***
 because it closes the conversation it appears in. **Test it before filing it** — both of these survived a full
 session as routed backlog.***
 
+### Revision r2801 — 2026-08-15 (main line). **THE PIN TEST KILLED AT PROJECTION TWICE.**
+
+*Resource-bound, not a result. Run and gated later at r2807 from cc54's `L-830`.*
+
 ### Revision r2800 — 2026-08-12 (main line). **`PO-11`'s VERDICT: THE FIELD IS DIRAC, SO THE MATCHING IS DETERMINED.**
 
 **⛭⛭ ⓵ THE ROW NAMES THE FIELD.** *`L-828` supplied both branches and routed the choice. The object column:
@@ -826,6 +913,10 @@ the header** — routed with the one number per run that settles it.*
 **⛭ THE RULE:** ***before calling a stored value wrong, read the code that stores it. **A value disagreeing with an
 independent calculation is evidence of an error only if it was supposed to BE that calculation** — and "fitted" is
 something a comment says in one line and a receipt cannot infer from three.***
+
+### Revision r2798 — 2026-08-15 (main line). **c54.223–228 MERGED.**
+
+*The C41 receipt-name collision resolved by rename; three grains propagated with content.*
 
 ### Revision r2797 — 2026-08-11 (main line). **THE WALL IS EXACTLY CRITICAL — a double root at $s=1/2$.**
 
@@ -886,6 +977,10 @@ localise there; the horizons being infinitely far is why the same mode "does not
 **⛭ THE RULE:** ***when a geometric feature and a wave-coordinate feature are counted together, convert first.
 **Two things that both look like boundaries in $r$ can be an asymptotic region and a junction in $r_*$** — and the
 mode equation lives in $r_*$.***
+
+### Revision r2795 — 2026-08-15 (main line). **`L-822` MERGED — THE CR RESIDUAL IS ACOUSTIC STRUCTURE.**
+
+*Confirms r2789 independently: peaks at $[172,404,636]$ against the sky's $\sim220/540/810$.*
 
 ### Revision r2794 — 2026-08-11 (main line). **r2793's $R\tilde R$ DISCREPANCY WITHDRAWN — two parameter points, not two answers.**
 
@@ -1744,6 +1839,14 @@ free-field treatment ends — the boundary r2764 located across all three nodes.
 before it started. A term that vanishes identically is not routed — it is absent — and the reduction is silent about
 it in a way that reads as coverage.***
 
+### Revision r2765 — 2026-08-15 (main line). **`L-818` MERGED (6/6).**
+
+*Restamped from r2674 — a live ID collision.*
+
+### Revision r2764 — 2026-08-15 (main line). **cc54's `L-818` BOUNDARY IS r2743's SHEAR IS P10's TOWER.**
+
+*Three statements, one object.*
+
 ### Revision r2763 — 2026-08-11 (main line). **`PO-6`'s ORDERING QUESTION DISSOLVES — P10 answers it and corrects r2728.**
 
 **⛔ ⓵ r2728 ASKED WHICH ORDERING THE CORPUS COMMITS TO.** *P10: the scale-factor Hamiltonian carries deficiency
@@ -2017,6 +2120,10 @@ more places to be wrong.***
 **✔ PAPER EDITED, ten instances now $8.2\%$.** *And r2749's tilde test resolves the other way now: it was EARNED
 when two receipts disagreed, and **they no longer disagree — one is corrected**. **The same edit r2749 reverted,
 made correctly six revisions later because the competing receipt was fixed rather than out-voted.*** *17/17 compile.*
+
+### Revision r2754 — 2026-08-15 (main line). **P15 CARRIES THREE VALUES FOR ONE NAMED OBSERVABLE.**
+
+*9.4 / ~8 / 8.16 for $\theta_D/\theta_*$ — a deferral that had gone unread.*
 
 ### Revision r2753 — 2026-08-11 (main line). **THE DAMPING DISCREPANCY RESOLVED — $x_e$ does not cancel from a ratio of INTEGRALS.**
 

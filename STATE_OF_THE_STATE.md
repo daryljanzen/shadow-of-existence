@@ -54,6 +54,8 @@ layer, not the corpus, turned out to be what was broken.*
 | the task list | `check_owed_are_tasks` | findings filed as work |
 | the summary | `check_status_honesty` | an open row described as closed |
 | the gap itself | `check_gap_is_held` | the map holding a route instead of an object |
+| the log | `check_revisions_logged` | **work done and never recorded** |
+| | `check_owed_rows_live` | an owed item on a closed row; a row citing a missing receipt |
 
 **AND ONE CHECK RUN BY HAND, r2832: the register against the PAPERS.** *P7's "undelivered and walled"
 is accurate; P14's body carries the surviving triality grading at the right weight. **The register, the
@@ -102,7 +104,9 @@ be allowed to move only after it is read.
 
 ⇒ ***AND THE PASS ALREADY EXISTS, DONE RIGHT: as four RELATION-SPECIFIC gates rather than one generic one.*** *`check_strikes_reported` (register→reports), `check_leads_follow_rows` and `check_lead_framings` (register→leads), `check_routing_current` (register→the other line), `check_heads_anchored` (register→papers). **Each names the two documents and the one relation that must hold between them.** A generic version would be weaker and noisier than the five specific ones.*
 
-**⚠ SO THE NEXT DEBT IS NOT A SWEEP.** *It is: **which relations between documents are NOT yet gated?** ⌗ Named so far and ungated: `OWED`→register (does every owed item's row still exist open?); `THE_PLAN`→register (does the plan's ordering match what is open?); receipts→rows (does every row's cited receipt still run?). **Three relations, each a specific gate, none a sweep.***
+**⚠ THE DEBT IS NOT A SWEEP — IT IS RELATIONS.** *Nineteen gated. ⌗ **DONE r2834: `CORPUS_MAP`→register, which found thirteen revisions since r2700 with no log entry at all** — the whole state-layer sweep among them.*
+
+**NEXT — the two relations still ungated:** *· **receipts→rows**: does every row cite the receipt that carries its claim? (the reverse of what `check_owed_rows_live` does — it checks cited receipts exist, not that claims are cited). · **`THE_PLAN`→register**: does the plan's ordering match what is actually open? ⌗ **Test each before building** — two of the last four turned out clean, and one turned out to be the wrong instrument entirely.*
 
 ---
 
