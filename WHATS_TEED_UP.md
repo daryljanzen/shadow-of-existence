@@ -9,7 +9,7 @@ sources: [cowork]
 # WHAT'S TEED UP
 *Regenerated r2376+c54.222 by `scripts/regen_teed_up.py`. **Do not hand-edit** — the register in `THE_LIVE_ARC.md` is the source of truth and this file is a view of it.*
 
-**21 open QUESTIONS · 1 open WORK rows · 1 HELD** *(299 struck of 322 registered).*
+**22 open QUESTIONS · 1 open WORK rows · 1 HELD** *(299 struck of 323 registered).*
 
 > **⌗ THE TWO KINDS, AND WHY THEY ARE NOT ONE LIST.** *A **QUESTION** is a thing to answer, and the register's gates are built for it — `check_supersession` scores it against 268 receipts, `check_kills` bars closing it. A **WORK** row is a programme with steps (`CONSOLIDATE`'s arcs and §13's phases, folded r2378 so nothing owed is strewn about); its content lives in `CONSOLIDATE` and its freshness is gated by `corpus/check_arcs.py`. **Pick up a question by reading the row; pick up work by reading its section.***
 
@@ -40,6 +40,7 @@ sources: [cowork]
 | **`L-825`** | — | REGISTERED r2674 — cc54: OWED #518 (routed to cc54 at c54.219) — STATE the point at which L553's `R~R=4.977310` was evaluated, so the figure is reproducible. THE POINT, PINNED: it is the DEFAULTS of L553's own numeric `pontryagin_num` — `(H,k,ω)=(0.5, 1.5, 1.4… | `receipts/L825_pontryagin_point/S1…` · `L-553` · `L-821` · c54.219 | — |
 | **`L-826`** | — | REGISTERED r2674 — cc54: OWED #454's remainder localized — the converged control's floor is BROADBAND, not a localized defect. THE MEASUREMENT: after L-824's convergence the lensed control is `1.18/dof` vs CAMB lensed's `1.014` on the same 185 bins (#454's "~1… | `receipts/L826_control_floor_broadband/S1…` · `L-824` · `L-147` (`PO-10`) · #454 | — |
 | **`L-827`** | — | REGISTERED r2674 — cc54: `L-813`'s flagged enumeration settled — the Dirac barrier's discrete BOUND tower is EMPTY, count ZERO. THE REASON — SUSY POSITIVITY: `L-813`'s partners `V_± = W²±dW/dx` factorise as `A†A ≥ 0` (`A = d/dx + W`), so BOTH have spectrum `≥ … | `receipts/L827_dirac_tower_is_empty/S1…` · `L-813` · `L-175`/family-6 · `PO-11` | — |
+| **`L-828`** | — | REGISTERED r2674 — cc54: `r2797`/#523's "SELECT THE EXTENSION" — the wall's LOG freedom is the SCALAR operator's; the FERMION continuum is power-selected. THE TWO OPERATORS AT r=0: · SCALAR (`B47`'s `V=f(ℓ(ℓ+1)/r²+f'/r)`): `lim V r⁴=−4M² → −1/(4x²)`, indicial … | `receipts/L828_wall_extension_fermion_vs_scalar/S1…` · `B46` · `B47` · `P14` (`sec:chirality`) · `L-221`/family-6 · `PO-11` · r2797/#523 | — |
 
 ## ⏸ HELD BY DARYL — answered, not waiting
 
