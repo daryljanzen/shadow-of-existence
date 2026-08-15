@@ -54,7 +54,11 @@ PATTERNS = [
     # ** NOT a bare possessive.  "Daryl's words", "Daryl's correction", "Daryl's lead" are the RECORD
     # of him -- catching those would push toward deleting his own contributions from the corpus, which
     # is the opposite failure.  Only the ASSIGNMENT OF A DECISION is caught. **
-    re.compile(r"is Daryl'?s(?:\s+to\s+(?:set|say|decide|make|take|seat|time))?(?=[\s.,;)*_`|]|$)", re.I),
+    # ** r2782: the suffix was OPTIONAL, so bare "is Daryl's" matched any POSSESSIVE.
+    #   *** It fired on r2638's "the drawing is Daryls" -- an attribution of AUTHORSHIP,
+    #   not a deferral of a DECISION.  A gate that flags true sentences drives edits to
+    #   them, which is the r2779 lesson.  The deferral verb is now REQUIRED. ***
+    re.compile(r"is Daryl'?s\s+to\s+(?:set|say|decide|make|take|seat|time)(?=[\s.,;)*_`|]|$)", re.I),
     re.compile(r"conversion is Daryl", re.I),
     re.compile(r"left to Daryl", re.I),
     re.compile(r"Daryl'?s to (?:set|say|decide|make|take|seat|time)", re.I),
