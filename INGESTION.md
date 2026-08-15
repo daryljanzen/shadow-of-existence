@@ -356,3 +356,4 @@ r2830  INSTRUMENT  the register now gates on the OBJECT being answered, not on a
 r2831  CLAIMED    rows are append-only and carry superseded text as current. Find and remove it.
 r2831  INSTRUMENT  21 overturned blocks marked, 29,263 duplicate bytes removed, one overwritten error-record restored.
 r2832  INSTRUMENT  every row given a CURRENT STATE head; PO-3 and PO-9 struck on answered objects; 50K of duplication removed.
+r2833  INSTRUMENT  STATE_OF_THE_STATE opened: what is checked, what is not, and what is next.
