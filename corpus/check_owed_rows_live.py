@@ -65,10 +65,20 @@ def main():
         m = re.match(r'\|\s*(~~)?\s*\*\*(PO-\d+[a-z]?)\*\*', line)
         if not m:
             continue
-        for r in sorted(set(re.findall(r'`([A-Za-z0-9_]+\.py)`', line))):
+        # ** r2834: this matched only citations written WITH the .py suffix, and the rows
+        # cite receipts by STEM.  *** That is how `C41_a_tilde_on_a_settled_value_is_a_stale_
+        # hedge` sat in `PO-10` for 36 revisions after r2798 renamed it to `C41b` -- the row
+        # pointed at a receipt that does not exist and nothing looked. ***
+        stems = {os.path.splitext(h)[0] for h in have}
+        for r in sorted(set(re.findall(r'`([A-Za-z0-9_]+(?:\.py)?)`', line))):
+            if not re.match(r'^[A-Z]\d+[a-z]?_|^L\d+_|^S\d+_|^B\d+_|^D\d+_|^M\d+_|\.py$', r):
+                continue
             n_cited += 1
-            if r not in have:
-                bad.append((m.group(2), f'cites `{r}`, which does not exist'))
+            if r in have or os.path.splitext(r)[0] in stems:
+                continue
+            if any(st.startswith(os.path.splitext(r)[0]) for st in stems):
+                continue
+            bad.append((m.group(2), f'cites `{r}`, which does not exist'))
 
     print(f'  {n_owed} open owed item(s); {n_cited} receipt citation(s) in rows')
     if bad:

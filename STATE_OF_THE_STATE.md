@@ -106,7 +106,15 @@ be allowed to move only after it is read.
 
 **⚠ THE DEBT IS NOT A SWEEP — IT IS RELATIONS.** *Nineteen gated. ⌗ **DONE r2834: `CORPUS_MAP`→register, which found thirteen revisions since r2700 with no log entry at all** — the whole state-layer sweep among them.*
 
-**NEXT — the two relations still ungated:** *· **receipts→rows**: does every row cite the receipt that carries its claim? (the reverse of what `check_owed_rows_live` does — it checks cited receipts exist, not that claims are cited). · **`THE_PLAN`→register**: does the plan's ordering match what is actually open? ⌗ **Test each before building** — two of the last four turned out clean, and one turned out to be the wrong instrument entirely.*
+**⌗ BOTH TESTED r2834, AND THEY CAME OUT DIFFERENTLY.**
+
+**· receipts→rows — A REAL DEFECT, NOW GATED.** *Nine of ten heads cite no receipt at all, and the rows' histories cite 68 between them. **One pointed at a receipt that does not exist**: `C41_a_tilde_on_a_settled_value_is_a_stale_hedge`, renamed to `C41b` at r2798 to resolve a name collision, **with the citation left behind for 36 revisions**. `check_owed_rows_live` had matched only citations written WITH a `.py` suffix — **the rows cite by stem, so it was checking one citation out of sixty-eight**. Widened; the seed fires.*
+
+**· `THE_PLAN`→register — NOT A DEFECT, AND NOT GATEABLE.** *Eight of the ten open rows appear **nowhere** in `THE_PLAN`. ⌗ That is not staleness: **the plan orders WORK PACKAGES and the register tracks OPEN QUESTIONS**, and most open questions are not currently anybody's work package. **A gate demanding they match would force a false correspondence** — the same error as the generic cross-document checker, one level up.*
+
+⇒ ***So the relation to state is the honest one: **the plan is not a view of the register and should not be read as one**. Recorded here rather than gated.***
+
+**NEXT: there is no named ungated relation left.** *⌗ The next debt has to be FOUND, not worked from this list — **which means the next move is to look for a defect class nobody has named**, and the honest way to do that is to pick a document and read it rather than to run a pattern.*
 
 ---
 
