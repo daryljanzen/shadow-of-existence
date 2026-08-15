@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2776 — 2026-08-11 (main line). **`c54.220` MERGED — and its SHA rule turned on this line at once.**
+
+**⛭⛭ ⓵ THE PHYSICS.** *P10's UV degree rests on three inputs; **D2 carried the third — the degeneracy — as a bare
+parenthetical, "(any tensor rank)", with the closed form nowhere in the corpus**. Derived by cc54 and verified here
+independently: $S^3=SU(2)$ is parallelizable, Peter–Weyl gives level-$j$ totals $1,3,5\times(2j+1)^2$ for $s=0,1,2$,
+and the TT part is the two extreme summands — exactly $2/5$.*
+
+    g(n) = 2(n-1)(n+3),  n >= 2,  g(2) = 10        g(n)/n^2 -> 2
+
+⇒ ***$g(2)=10$ returns P10's independently-asserted floor — **the derivation reproduces the paper rather than being
+fitted to it**.*** *And D2's "(any tensor rank)" is false: scalar $1/3$ against tensor $2/3$. The scaling stands,
+the coefficient moves, D2 corrected in place.*
+
+**⛔ ⓶ AND THE PROCEDURAL RULE TURNED ON THIS LINE.** *cc54: "an absence claim is a claim about a COMMIT, not about
+a FILE, so it takes a SHA."*
+⇒ ***Of 38 receipts written r2728–r2775, five make an absence claim and **ONE pinned a commit**. And `S9` had
+already gone stale exactly this way — "P10 never names the ordering, both ZERO", which r2763 found was a paper not
+naming a choice it does not need. **The claim was true and its scope was a moment nobody had recorded.****
+
+✔ *`check_absence_pinned` built and wired; the two live ones pinned. **40 remain corpus-wide and the gate ships
+REPORT-ONLY** — retro-pinning would mean guessing which commit each was measured at, which is the fabrication the
+rule prevents.*
+
+**⛭ THE RULE:** ***a parenthetical is where load-bearing assertions hide. "(any tensor rank)" is four words carrying
+an entire scaling argument, and it read as a scope note — **the shorter the qualifier, the less likely anyone checks
+it**.***
+
+⌗ *cc54 also recorded a FAILED method rather than dropping it: matching Weyl to subleading order cannot
+discriminate, because on a closed curved manifold the subleading term carries the curvature through the heat kernel.*
+
 ### Revision r2775 — 2026-08-11 (main line). **`PO-4`'s CLOSE WORKED — AND THE RECEIPT CONCLUDES: DO NOT STRIKE.**
 
 **⛔ ⓵ CHECK ① FAILS, AND THE REASON IS IN THE ROW'S OWN TEXT.** *r2774 offered the finiteness of $D_6$ as the

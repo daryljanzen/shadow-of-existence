@@ -53,6 +53,10 @@ C8's own integrand, which is one of the two competing constructions.
 ** COMPUTES: the $r_D$ ratio at six upper limits from $z=2000$ to $z=10^9$, and CAMB's `thetad` and
 `thetastar` reduced to Mpc on the same convention.  *** All cosmology is the corpus's own. *** **
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT c53be44** *(pinned r2776 on cc54's c54.220
+rule: an absence claim is a claim about a COMMIT, not a FILE. Left undated it silently becomes a
+claim about whatever the tree holds when next run.)*
+
 Written r2752.  Stated for reversal.
 """
 import os

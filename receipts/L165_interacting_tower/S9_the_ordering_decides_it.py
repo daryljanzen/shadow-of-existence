@@ -57,6 +57,10 @@ half-quantum is the leading behaviour, which is why the symmetric branch is stat
 $=$.  ** Not that P10 errs ** -- its decomposition is explicitly built to survive without the floor, and
 it does.
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT c53be44** *(pinned r2776 on cc54's c54.220
+rule: an absence claim is a claim about a COMMIT, not a FILE. Left undated it silently becomes a
+claim about whatever the tree holds when next run.)*
+
 Written r2728.  Stated for reversal.
 """
 import os
