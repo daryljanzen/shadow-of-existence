@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""B34 -- `PO-11`'s join is LOCATED: the wall and the continuum are separated by the inner horizon, so
+"""B34 -- ⛭⛭ **REFINED r2785: BOTH SIDES ARE NOT INTERIOR.**  *** This receipt sampled $r>0$ only.
+$f=1-2M/r-r^2/\\alpha^2$ has $2M/r$ ODD and dominant at the origin, so **$f\\to-\\infty$ as
+$r\\to0^+$ and $f\\to+\\infty$ as $r\\to0^-$** -- the wall sits ON the boundary between a static
+region and a non-static one.  The conjugate branch is a full static region with its own
+reflected de Sitter horizon.  See `B43_the_two_sides_of_the_wall_differ_in_signature`.
+** What survives: $f(0.010)<0$ and the inner-horizon crossing, both unaffected. ** ***
+
+B34 -- `PO-11`'s join is LOCATED: the wall and the continuum are separated by the inner horizon, so
 the remaining undertaking is a matching across a Killing horizon, not a calculation on one region.
 
 ** WHERE THIS ARRIVES. **  r2739 reopened the row on P14's own words: "the quantised field, its mode

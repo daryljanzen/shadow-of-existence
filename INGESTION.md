@@ -274,3 +274,5 @@ r2728  INSTRUMENT  PO-6: ordering decides it -- normal gives 1/4 (below), symmet
 ```
 r2783  LATENT      c54.222 merged and verified: X3/X4 never existed. My own selector had the same blind-spot class.
 r2784  INSTRUMENT  the two phantom rows were still LIVE with tick-tick. Marked, and check_rows_outward built.
+r2785  CLAIMED    PO-11: does the static continuum continue through r=0? Narrowed at r2767, unworked.
+r2785  COMPUTED    the two sides of the wall differ in SIGNATURE -- f flips at r=0. r2744 sampled r>0 only.

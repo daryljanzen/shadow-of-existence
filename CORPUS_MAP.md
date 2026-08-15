@@ -146,6 +146,39 @@ sources: [cowork, chat]
 
 
 
+### Revision r2785 — 2026-08-11 (main line). **THE TWO SIDES OF THE WALL DIFFER IN SIGNATURE — r2744 sampled one.**
+
+**⛭⛭ ⓵ $f$ IS NOT EVEN IN $r$, AND THE ODD TERM DOMINATES AT THE ORIGIN.**
+
+    f(+0.001) = -1999    INSIDE the inner horizon,  r TIMELIKE
+    f(-0.001) = +2001    STATIC,                    r SPACELIKE
+
+*because $2M/r$ is **odd**.* ⇒ ***The wall sits ON the boundary between a static region and a non-static one, not
+deep inside one. **r2744 evaluated $f(0.010)$ and stopped.****
+
+**⓶ AND THE CONJUGATE BRANCH IS A FULL STATIC REGION.** *Real roots $\{-12.897,\ 2.061,\ 10.836\}$ at
+$M=1,\alpha=12$ — **a reflected de Sitter horizon** — with $f>0$ throughout $-12.897<r<0$. Not a sliver: the same
+kind of region as $r_b<r<r_c$.*
+
+**⛭⛭⛭ ⓷ WHICH RESHAPES `PO-11` RATHER THAN ANSWERING IT.** *r2767 narrowed the row to "does the continuum continue
+through $r=0$" — **which presupposed the wall was interior to one region**.*
+
+    continuum on r_b<r<r_c   f>0, r spacelike
+    ...inner horizon...      -> r TIMELIKE
+    ...the wall at r=0...    -> r SPACELIKE again
+
+⇒ ***A SIGNATURE ROUND TRIP, not one matching. The mode equation changes character twice, and the wall is where the
+second change happens.***
+
+**⓸ AND IT EXPLAINS WHY THE BOUND MODE WAS THE EASY CASE** — *it lives AT the sign change of $W=\sqrt f/r$.
+**A bound state never has to propagate through the timelike stretch; a continuum mode does.***
+
+**⛭ THE RULE:** ***when a coordinate is SIGNED, evaluate on both signs before concluding. **A function with an odd
+term does not care what you found on the side you sampled** — and the tell was in the row's own name: "the
+signed-radius flip" is a warning that one sample is half the domain.***
+
+⌗ *`B34` refined at source; its $f(0.010)<0$ and inner-horizon crossing are unaffected.*
+
 ### Revision r2784 — 2026-08-11 (main line). **"MERGED" WAS NOT "ACTED ON" — the phantom rows were still live.**
 
 **⛔ ⓵ THE MERGE WAS CLEAN AND THE DEFECT WAS STILL THERE.** *`X4_singularity_types` and
