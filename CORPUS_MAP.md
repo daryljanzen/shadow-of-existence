@@ -146,6 +146,329 @@ sources: [cowork, chat]
 
 
 
+### Revision r2797 — 2026-08-11 (main line). **THE WALL IS EXACTLY CRITICAL — a double root at $s=1/2$.**
+
+**⛭⛭ ⓵ THE POTENTIAL AT $r=0$.** *$V\to-4M^2/r^4$ — **independent of $\ell$ and of $\alpha$**, since the angular
+and cosmological terms are subleading against $f'/r$ when $f$ diverges.*
+
+**⛭⛭⛭ ⓶ AND IN THE TORTOISE COORDINATE IT IS EXACTLY $-1/(4x^2)$.** *With $x\simeq-r^2/4M$ and
+$r\simeq2\sqrt{M|x|}$ (r2796), **$M$ drops out too**.*
+⇒ ***The wall's inverse-square coefficient is $-1/4$ for every mass, every $\ell$, every $\alpha$: a property of
+the signed-radius geometry, not of a parameter.***
+
+**⛭ ⓷ AND $-1/4$ IS THE CRITICAL COEFFICIENT.**
+
+    s(s-1) + 1/4 = (s - 1/2)^2 = 0        a DOUBLE ROOT at s = 1/2
+    the two solutions:  sqrt(x)  and  sqrt(x) log x
+
+⇒ ***A power and a LOGARITHM, not two powers — the degenerate case of the inverse-square problem, and the case the
+geometry lands on exactly.***
+
+**⓸ WHICH IS WHY THE ROW HAS A CONDITION TO IMPOSE, NOT A CHOICE OF EXPONENT.** *Both solutions vanish like
+$\sqrt x$ and are distinguished only by the log, **so the matching condition is a statement about the logarithm's
+coefficient** — the one-parameter freedom a self-adjoint extension fixes.*
+
+⌗ *And P10 works the same operator class one level up: its scale-factor Hamiltonian "carries an inverse-square term"
+at the origin, read against the essential-self-adjointness threshold. **Same structure, same origin, same critical
+arithmetic.***
+
+**⛭ THE RULE:** ***when parameters drop out of a leading behaviour, that is the finding, not a convenience. **$-1/4$
+surviving the loss of $M$, $\ell$ and $\alpha$ says the wall's character is geometric** — and a coefficient landing
+exactly on a threshold is never a coincidence worth shrugging at.***
+
+### Revision r2796 — 2026-08-11 (main line). **`PO-11`: ONE MATCHING, NOT TWO — the crossings are not alike.**
+
+**⛭⛭ ⓵ THE INNER HORIZON IS INFINITELY FAR.** *$f$ has a **simple** zero there — $f'(r_b)=0.44232\ne0$ — so
+$1/f\sim1/[f'(r_b)(r-r_b)]$ and $\int dr/(r-r_b)$ diverges logarithmically. **P14 says so in its own voice: "the
+horizons standing infinitely far".***
+
+⚠ *And naive quadrature **wandered** — $-9.3$, $-20.3$, $-20.6$, $-17.4$ at successively closer endpoints — which
+is an integrator failing on a log singularity, **not a finite answer**.*
+
+**⛭⛭⛭ ⓶ THE WALL IS AT FINITE DISTANCE.** *As $r\to0$, $f\simeq-2M/r$, so $1/f\sim-r/2M$ and **the integrand
+vanishes**. $r_*=-0.385239$, stable across cutoffs $10^{-2}$ to $10^{-12}$.*
+
+**⓷ SO THE ROW'S PROBLEM IS NOT A TWO-HORIZON MATCHING.**
+
+    the inner horizon   an infinite-distance ASYMPTOTIC region -- behaviour read off, no condition imposed
+    the wall            a regular singular point at FINITE distance -- where a condition is needed,
+                        and where P14's bound mode already lives
+
+⇒ ***r2785 counted two signature changes and inferred two matchings. **A signature change at infinite tortoise
+distance is not a junction a mode passes through.****
+
+**⓸ AND IT EXPLAINS THE BOUND MODE'S PRIVILEGE EXACTLY.** *The wall being at finite distance is why a mode can
+localise there; the horizons being infinitely far is why the same mode "does not normalize" against them.*
+
+**⛭ THE RULE:** ***when a geometric feature and a wave-coordinate feature are counted together, convert first.
+**Two things that both look like boundaries in $r$ can be an asymptotic region and a junction in $r_*$** — and the
+mode equation lives in $r_*$.***
+
+### Revision r2794 — 2026-08-11 (main line). **r2793's $R\tilde R$ DISCREPANCY WITHDRAWN — two parameter points, not two answers.**
+
+**⛔ ⓵ THE ERROR.** *r2793 reported $R\tilde R = 4.977310$ (`c54.219`) against $4.5000$ (`L-821`) as a $10.6\%$
+cross-receipt discrepancy.*
+⇒ ***$R\tilde R$ is **homogeneous of degree 4 in $(H,k,\omega)$** — `c54.219`'s own result, in the very receipt
+being compared. A degree-4 homogeneous function takes a different value at every parameter point.***
+
+    L-821    evaluates at H=0.5, k=1.0, omega=1.5   ->  4.5000
+    c54.219  docstring figure, parameters NOT stated ->  4.977310
+    a uniform rescale of 1.0255 reproduces it exactly
+
+**⓶ AND THE FRAMING WAS WORSE THAN THE ERROR.** *r2793's summary said "two receipts, one quantity, **both yours**"
+— **attributing a problem rather than resolving it**, when the resolution was one homogeneity check away.*
+
+**⓷ WHAT IS ACTUALLY OWED, AND IT IS ONE LINE.** ***`c54.219` should state the $(H,k,\omega)$ at which $4.977310$
+was evaluated.*** *It is a docstring figure and the code is purely symbolic, so **nobody can reproduce or compare
+it** — including the node that wrote it. Routed.*
+
+**⛭ THE RULE:** ***before comparing two numbers, check they are evaluations of the same thing at the same point.
+**A quantity with stated homogeneity has no single value**, and a receipt reporting one without its parameters has
+reported a number nobody can use.***
+
+### Revision r2793 — 2026-08-11 (main line). **`L-821` GATED — $7/40$ RE-DERIVED, AND A CROSS-RECEIPT DISCREPANCY RECORDED.**
+
+**⛭⛭ ⓵ THE COEFFICIENT, VERIFIED INDEPENDENTLY.** *cc54 gives `PO-6`'s owed value as $7/40$, the graviton
+$c$-anomaly. Re-basing $b_4=(53/90)E_{GB}+[(7/20)\mathrm{Ric}^2+(1/120)R^2]$ onto $\{E_{GB}, C^2\}$ and solving
+the $\mathrm{Riem}^2$ and $\mathrm{Ric}^2$ rows:*
+
+    x = -7/40,  y = +7/40      the C^2 coefficient is exactly 7/40
+
+⇒ ***Gating meant re-deriving rather than reading. **A number reproducible in four lines is a number one can vouch
+for**; reading the receipt would not have been vouching.***
+
+**⚠ ⓶ AND THE RE-DERIVATION SURFACED A DISCREPANCY NEITHER NODE FLAGGED.**
+
+    R~R on a circular mode:   c54.219 (analytic)          4.977310
+                              L-821  (finite-difference)  4.5000      -- 10.6%
+
+**✔ ⓷ WHAT AGREES IS EVERYTHING LOAD-BEARING:** *zero on linear polarisation, sign-flip with handedness, parity-odd
+and circular-only — **in both**. And the count stays one either way, since a total derivative is topological
+regardless of magnitude.*
+
+⌗ *A $10\%$ gap is the size a finite-difference stencil error takes, so the likely reading is that the analytic
+value stands and `L-821` confirms the STRUCTURE. **Recorded rather than resolved, and load-bearing for neither
+conclusion** — the $\theta$-term is topological and $7/40$ is parity-EVEN.*
+
+**⛭ THE RULE:** ***when two receipts from the same node report one quantity, check whether they agree before either
+is cited. **The discrepancy that matters is not always between nodes** — a number appearing twice in one line's own
+work is exactly the kind nobody diffs.***
+
+### Revision r2792 — 2026-08-11 (main line). **THE BOARD HAS ONE SHAPE — six of six, and the control holds.**
+
+**⛭⛭ ⓵ THE OBJECT IS PRESENT AND THE ACTION IS ABSENT.**
+
+    PO-4    SO(4) generators on the closed S^3 layer     -- act on the HINGE doublet
+    PO-5    3, 6, 3/4, 9/10, 1.0824                      -- multiply an F^2 term
+    PO-6    the Weyl-squared counterterm                 -- its COEFFICIENT
+    PO-10   a likelihood with a covariance               -- an arm that DISCRIMINATES
+    PO-11   the C-infinity continuation at r=0           -- carry the CONTINUUM across
+    PO-2    the three horizon roots and their zero-sum   -- the IDENTIFICATION with colour
+
+**⚠ ⓶ AND THE FIRST SUSPECT IS THE METHOD.** *Five of six were narrowed by this line today, and **"X exists, the
+action is missing" is the shape a narrowing takes**. A pattern appearing in exactly the rows one node worked is a
+property of that node.*
+
+**⛭⛭⛭ ⓷ THE CONTROL PASSES.** *`PO-2` was narrowed by **cc54 at c54.84**, not here, and carries the same shape —
+the roots are the corpus's own construction and level (3), whether they ARE colour charge, is an identification the
+geometry does not make.*
+⌗ *And `PO-7`, the lone exception, is a **VERDICT question** with no object whose action is missing — explained by
+kind rather than waved away.*
+
+**⛭ ⓸ AND p0 GOT THERE FIRST FOR THREE CASES:** *"the winding quantises without measuring, the flat bundle selects
+without coupling, and the branch point filters without supplying" — **"the common root … a property of a
+one-constant theory rather than a gap awaiting work"**. What the board adds is that the form extends past those
+three to every open construction row.*
+
+⌗ ***AND IT CUTS BOTH WAYS: a construction that supplies structure and withholds action is either a deep feature or
+a construction that has not reached its dynamics. **The pattern is established; the reading is not.****
+
+**⛭ THE RULE:** ***when a pattern appears across everything you worked, check whether it appears in something you
+did not. **A control is one row somebody else narrowed** — and without it, "the board has one shape" is
+indistinguishable from "I have one method."***
+
+### Revision r2791 — 2026-08-11 (main line). **`PO-5`'s TWO WALLS ARE ONE WALL AND ITS COROLLARY.**
+
+**⛭⛭⛭ ⓵ THE ROW SAID "BOTH" AND p0 SAID "SO".** *The stated remainder — "a third mechanism must supply BOTH" —
+treats the missing $F^2$ term and the missing dimensionless number as independent. p0:*
+
+> *"every curvature invariant on either face is a pure power of $1/\alpha^{2}$. **SO** the construction cannot
+> force a coupling, and its silence about magnitudes is a property of **a one-constant theory rather than a gap
+> awaiting work** --- the common root of three verdicts reached separately, that the winding quantises without
+> measuring, **the flat bundle selects without coupling**, and the branch point filters without supplying."*
+
+⇒ ***The "so" is an inference. p0 DERIVES the absence of a coupling FROM the one-constant character.***
+⇒⇒ ***Wall ⓵ is wall ⓶'s corollary. **The row needs ONE thing supplied — a fixed dimensionless number** — and
+whether the coupling then follows is a separate question p0 does not foreclose.***
+
+⌗ *A one-word tell — "so" against "and" — read as a conjunction for the row's whole life.*
+
+**⛭⛭ ⓶ AND THE TWO ROWS ARE NOW PARALLEL IN SHAPE.**
+
+    PO-4 (r2770)   the generators exist (SO(4) on the S^3 layer) -- the ACTION is missing
+    PO-5 (r2729)   the numbers exist (3, 6, 3/4, 9/10) -- something to multiply is missing
+
+⇒ ***Both: the thing exists and nothing does anything with it. **r2768 merged them and was wrong (opposite
+properties); r2769 split them and was right; the parallel is a third relation** — a shared shape between rows that
+remain distinct.***
+
+**⛭ THE RULE:** ***when a row lists two obstructions, check whether a paper DERIVES one from the other. **"Both" is
+a claim about independence and it is almost never checked** — the conjunction gets inherited from whoever first
+wrote the row.***
+
+### Revision r2790 — 2026-08-11 (main line). **THE STORED CR $r_s$ MOVES THE WRONG WAY.**
+
+**⓵ SOLVING r2789's SPACING.** *The CR peaks sit at $258$ against a stored $\ell_A=301.6$:*
+
+    if r_s is the culprit:   r_s must be 158.35    (stored 135.46)
+    if D_M is the culprit:   D_M must be 11124.6   (stored 13004.6)
+
+**⛭⛭⛭ ⓶ AND THE DIRECTION SETTLES IT.** *Removing radiation lowers $H$ at high $z$, so more conformal time accrues
+before recombination and the sound horizon is **LARGER**:*
+
+    radiation INCLUDED   r_s = 146.52 Mpc
+    radiation FREE       r_s = 245.16 Mpc
+
+**⛔ ⓷ THE STORED VALUES GO THE OTHER WAY.** *$\Lambda$CDM $144.53$, CR $135.46$ — **CR is smaller, when the
+physics requires larger**. And the peak spacing independently demands $158.35$, which is larger.*
+⇒ ***Two independent arguments — the spectrum and the physics — agree with each other and disagree with the ledger
+entry.***
+
+**⓸ AND IT EXPLAINS WHY NOTHING CAUGHT IT.** *$\pi D_M/r_s$ on both stored values reproduces the stored $301.60$
+exactly, so every consistency check on the stored triple passes. **A wrong $r_s$ propagated into a stored $\ell_A$
+is internally consistent and describes nothing.***
+
+**⛭ THE RULE:** ***a quantity has a DIRECTION as well as a value, and the direction is often checkable when the
+value is not. **I could not compute the corpus's $r_s$; I could compute which way removing radiation must move it**
+— and one sign comparison did what four revisions of sizing could not.***
+
+⌗ *Routed to cc54 in `FOR_54.md`: it is their arm and which line produces $135.46$ is not visible from here.*
+⚠ ***If the stored value is wrong, `PO-10`'s $281$ has been measuring a bookkeeping error rather than the physics —
+and `F5`'s protection has been doing more work than anyone thought.***
+
+### Revision r2789 — 2026-08-11 (main line). **THE CR ARM'S PEAKS ARE NOT WHERE ITS OWN $\ell_A$ SAYS.**
+
+**⛔ ⓵ THE AMPLITUDE TEST FOUND SOMETHING PRIOR TO ITSELF.**
+
+    LCDM   peaks 220, 540, 812, 1124, 1420    mean spacing 300
+    CR     peaks 172, 404, 636,  916, 1204    mean spacing 258
+
+*The peaks are not in comparable places to compare heights at.*
+
+**⛭⛭⛭ ⓶ AND ONLY ONE ARM IS SELF-CONSISTENT.**
+
+    LCDM   300 / 301.4 = 0.995   ✔
+    CR     258 / 301.6 = 0.855   ⛔
+
+⇒ ***The stored $\ell_A=301.60$ — the number r2788 verified as $\pi D_M/r_s$ and found agreeing with
+$\Lambda$CDM's to $0.08\%$ — **does not describe where its own peaks are**.***
+
+**⓷ WHICH EXPLAINS r2787's OSCILLATION AND ITS SIZE.** *A $14.5\%$ spacing mismatch puts the arms fully out of
+register within four peaks, swinging the ratio $0.24$ to $2.4$ — **two orders larger than the $0.075\%$ residual
+r2788 sized**. That is why r2788 could confirm a real cancellation and still not answer the question.*
+
+**⛭⛭ ⓸ AND IT RELOCATES THE DEFECT FROM THE PHYSICS TO THE BOOKKEEPING.** *r2788 showed $\ell_A=\pi D_M/r_s$
+holds — **as arithmetic on the stored values**. The arithmetic and the SPECTRUM disagree for CR.*
+⇒ ***Which of $D_M$, $r_s$ or the projection does the CR arm's transfer actually use? **One of the three is not the
+stored value** — and $\Lambda$CDM's arm is self-consistent, so the instrument works.***
+
+**⛭ THE RULE:** ***a derived quantity can be internally consistent and still not describe the object it summarises.
+**Verify a summary statistic against the DATA it summarises, not only against its own definition.** And when a
+planned test cannot be run, ask why — the obstruction is often the finding.***
+
+### Revision r2788 — 2026-08-11 (main line). **$\ell_A$ IS COMPUTED, THE CANCELLATION IS REAL, AND IT IS 100× TOO SMALL.**
+
+**⛭⛭ ⓵ THE NUMERICAL HORN IS CLOSED.** *$\pi D_M/r_s$ reproduces the stored $\ell_A$ in both arms exactly:*
+
+    LCDM   13864.7 / 144.53  ->  301.37   (stored 301.37)
+    CR     13004.6 / 135.46  ->  301.60   (stored 301.60)
+
+*Not calibrated. **Nothing is being tuned to make $\ell_A$ agree.***
+
+**⛭⛭⛭ ⓶ AND ITS SURVIVAL IS A CANCELLATION P15 CLAIMS IN ADVANCE.** *$D_M$ $-6.20\%$, $r_s$ $-6.27\%$, $\ell_A$
+$+0.075\%$ — "the acoustic-scale calibration, **met from the other end and to that accuracy rather than
+exactly**".*
+
+**⛔ ⓷ BUT THE RESIDUAL IS TWO ORDERS TOO SMALL.**
+
+    predicted |dC/C| from a 0.075% shift    median 0.20%
+    MEASURED |ratio - 1|                    median 26.6%
+
+⇒ ***It explains under $1\%$ of the swing. **Peak POSITION is not the cause, any more than the envelope was.****
+
+**⓸ SO THREE ELIMINATIONS NOW, EACH NAMING ITS SUCCESSOR.** *The damping envelope (r2786, killed by its own named
+test), the peak positions (here) — ***and what remains is peak AMPLITUDE varying comb-periodically: the peaks in
+the right places and the wrong heights.*** That is a different physical statement and it has not been examined.*
+
+**⛭ THE RULE:** ***a mechanism that is REAL, PREDICTED and PRESENT still has to be the right SIZE. **Confirming the
+corpus and answering the question are different acts** — and a finding that does both is rarer than one that does
+the first and feels like both.***
+
+### Revision r2787 — 2026-08-11 (main line). **THE SHAPE TEST RUN — 281 IS PEAK MISALIGNMENT, and r2786 is withdrawn by its own test.**
+
+**⛔ ⓵ NEITHER A MATCH NOR FLAT — IT OSCILLATES.**
+
+    ell     measured ratio    predicted
+    100          0.4771       0.9991
+    740          0.8500       0.9532
+   1996          2.3754       0.7055
+
+*Measured range $0.237$–$2.375$ against a predicted $0.706$–$0.999$, **correlation $-0.296$** — anticorrelated with
+the profile it was supposed to follow.*
+
+**⛭⛭⛭ ⓶ AND THE OSCILLATION IS THE ACOUSTIC COMB.** *Dominant Fourier period $317$ in $\ell$ against
+$\Lambda$CDM's $\ell_A=301$ — **a ratio of $1.05$**.*
+⇒ ***Two combs slightly out of register produce a ratio swinging above and below one at the comb spacing, which is
+exactly what is measured. **The $281$ is peak misalignment, not an envelope.****
+
+**⓷ AND THE ARMS SAY WHERE IT COMES FROM.**
+
+    l_A:  CR 301.60   LCDM 301.37     agree to 0.08%
+    r_s:  CR 135.46   LCDM 144.53     differ by 6.3%
+
+⇒ ***The projected acoustic scale agrees and the sound horizon does not — so a residual $\ell_A$ mismatch
+accumulates across six peaks into a visible phase slip by $\ell\sim2000$.***
+
+**⓸ SO `PO-10`'s REMAINDER SHARPENS AGAIN:** *is the phase slip **physical** (the models genuinely place peaks
+differently) or **numerical** (the arm's $\ell_A$ calibrated rather than computed)? The $6.3\%$ $r_s$ gap against a
+$0.08\%$ $\ell_A$ gap is where to look.*
+
+**⛭ THE RULE:** ***a candidate is worth banking when it names the measurement that would refute it. **r2786 survived
+one revision and cost nothing, because it said in advance how to find out** — the alternative is a candidate that
+survives on plausibility until someone happens to test it.***
+
+### Revision r2786 — 2026-08-11 (main line). **CR's 281 IS THE PREDICTION BEING MEASURED — the question inverts.**
+
+**⛭⛭ ⓵ THE CANDIDATE IS P15's OWN FORMULA.** *The high-$\ell$ consequence, **with no free parameter**:
+$C_\ell^{\rm CR}/C_\ell^{\Lambda\rm CDM}=\exp[-(\ell/\ell_D)^2(r^2-1)]$, $r=1.0824$ (r2755). Scored as a
+fractional residual over the arm's 185 bins:*
+
+    sigma = 0.2%   ->  chi^2/dof  5099
+    sigma = 0.5%   ->             816
+    sigma = 1.0%   ->             204
+    measured CR arm               281
+
+⇒ ***281 sits INSIDE that range, and BELOW the value at Planck's quoted few-tenths-of-a-per-cent errors.***
+
+**⛭⛭⛭ ⓶ WHICH INVERTS THE ROW'S QUESTION.** *`PO-10` asked what mechanism explains 281. **The answer may be that
+nothing needs to: the arm is scoring the effect P15 predicts, at the order P15 predicts it.** An arm returning a
+large $\chi^2$ against $\Lambda$CDM is what a model predicting an $8.2\%$ high-$\ell$ suppression IS.*
+
+⌗ ***This line had been treating a prediction as a defect for twenty-five revisions — r2781's "the control is
+diagnosed and CR is not" assumed both residuals were errors, and **one of them is the signal**.***
+
+**⓷ AND IT SHARPENS F5.** *"A negative is a measurement discrepancy, not a framework verdict." **If CR's $\chi^2$ is
+its own predicted signature being measured, the discrepancy IS the framework's claim** — and reading 281 as a defect
+read a prediction as an error.*
+
+**⚠ ⓸ THE DISCRIMINATING TEST IS SHAPE, NOT SIZE.** *The profile rises from $0.06\%$ at $\ell=100$ to $34\%$ at
+$\ell=2000$. **A profile match on the arm's per-bin residual converts this candidate; a flat residual kills it.***
+
+**⛭ THE RULE:** ***before hunting a mechanism for an anomalous number, compute what the theory PREDICTS it should
+be. **A model predicting a large deviation produces a large $\chi^2$ against the model it deviates from, and that is
+the measurement working.** The tell is an arm that resists every numerical fix: numerical defects respond to
+numerical parameters, and predictions do not.***
+
 ### Revision r2785 — 2026-08-11 (main line). **THE TWO SIDES OF THE WALL DIFFER IN SIGNATURE — r2744 sampled one.**
 
 **⛭⛭ ⓵ $f$ IS NOT EVEN IN $r$, AND THE ODD TERM DOMINATES AT THE ORIGIN.**

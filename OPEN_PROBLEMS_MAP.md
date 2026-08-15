@@ -1,9 +1,34 @@
 ---
 name: open-problems-map
 kind: STATE
-current: r2765+c54.218
+current: r2792+c54.222
 job: The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open
 ---
+
+## ⛭⛭⛭ r2792 — THE BOARD HAS ONE SHAPE, AND THE CONTROL SAYS IT IS NOT THE METHOD
+
+    PO-4    SO(4) generators on the closed S^3 layer     -- act on the HINGE doublet
+    PO-5    3, 6, 3/4, 9/10, 1.0824                      -- multiply an F^2 term
+    PO-6    the Weyl-squared counterterm                 -- its COEFFICIENT
+    PO-10   a likelihood with a covariance               -- an arm that DISCRIMINATES
+    PO-11   the C-infinity continuation at r=0           -- carry the CONTINUUM across
+    PO-2    the three horizon roots and their zero-sum   -- the IDENTIFICATION with colour
+
+***In every case the corpus HAS the object and the row is the action on it.***
+
+**⚠ AND THE FIRST SUSPECT IS THE METHOD.** *Five of six were narrowed by this line today, and **"X exists,
+the action is missing" is the shape a narrowing takes**.*
+⇒ ***THE CONTROL PASSES: `PO-2` was narrowed by **cc54 at c54.84**, not here, and carries the same
+shape. And `PO-7` — the one exception — is a VERDICT question with no object whose action is missing,
+which is what one wants an exception to be.***
+
+**⛭ AND p0 ALREADY NAMES THREE OF THIS FORM AS "THE COMMON ROOT":** *the winding "quantises without
+measuring", the flat bundle "selects without coupling", the branch point "filters without supplying" —
+**"a property of a one-constant theory rather than a gap awaiting work"**.*
+
+⌗ ***Which cuts both ways, and the register should carry both readings: a construction that supplies
+structure and withholds action is either a deep feature (p0's reading) or a construction that has not
+reached its dynamics. **The pattern is established; the reading is not.***
 
 ## ⛭⛭⛭ THE r2730–r2765 ARC — three rows shrank, one reopened, and every remainder is now a named object
 

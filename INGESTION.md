@@ -276,3 +276,25 @@ r2783  LATENT      c54.222 merged and verified: X3/X4 never existed. My own sele
 r2784  INSTRUMENT  the two phantom rows were still LIVE with tick-tick. Marked, and check_rows_outward built.
 r2785  CLAIMED    PO-11: does the static continuum continue through r=0? Narrowed at r2767, unworked.
 r2785  COMPUTED    the two sides of the wall differ in SIGNATURE -- f flips at r=0. r2744 sampled r>0 only.
+r2786  CLAIMED    PO-10: CRs chi2 = 281 has no candidate mechanism. Generate one or bound it.
+r2786  COMPUTED    CRs 281 is the ORDER P15s own damping prediction produces. The question inverts.
+r2787  CLAIMED    PO-10: run the SHAPE test. Does the CR arms per-bin residual follow the damping profile?
+r2787  COMPUTED    the shape test RUN: the residual oscillates at l_A. 281 is peak misalignment. r2786 withdrawn.
+r2788  CLAIMED    PO-10: is the phase slip PHYSICAL or NUMERICAL? l_A = pi D_M / r_s is checkable.
+r2788  COMPUTED    l_A is COMPUTED and its cancellation is real -- but the residual is 100x too small. Amplitude remains.
+r2789  CLAIMED    PO-10: the AMPLITUDE test. Per-peak heights, both arms, peak-by-peak.
+r2789  COMPUTED    the CR arms peaks sit at spacing 258, not its stored l_A of 301.6. LCDM is self-consistent.
+r2790  CLAIMED    PO-10: which of D_M, r_s or the projection? Solve for what gives spacing 258.
+r2790  COMPUTED    the stored CR r_s moves the WRONG WAY -- radiation-free must raise it, stored lowers it.
+r2791  CLAIMED    PO-5: both walls proved. Is a third mechanism excluded, or just unfound?
+r2791  LATENT      PO-5s two walls are ONE -- p0 derives the no-coupling from the one-constant character.
+r2792  CLAIMED    is exists-but-does-not-act a PATTERN across the board, or two rows?
+r2792  LATENT      six of six open rows share one shape: the object exists, the action is absent. Control passes.
+r2793  LATENT      L-821 gated: 7/40 verified independently. R~R magnitude discrepancy recorded (4.977 vs 4.5).
+r2794  CLAIMED    resolve R~R: 4.977310 (analytic) vs 4.5000 (finite-difference). Compute it.
+r2794  LATENT      r2793s R~R discrepancy WITHDRAWN -- degree-4 homogeneous, two parameter points. One line owed.
+r2795  LATENT      L-822 merged: the CR residual is ACOUSTIC STRUCTURE -- confirms r2789 independently.
+r2796  CLAIMED    PO-11: attempt the continuum across the two signature changes. Nobody has tried.
+r2796  COMPUTED    PO-11: ONE matching not two -- the inner horizon is infinitely far, the wall is finite.
+r2797  CLAIMED    PO-11: the two Frobenius indices at r=0. P14s zero-mode fixes one.
+r2797  COMPUTED    the wall is EXACTLY CRITICAL -- V -> -1/(4x^2), double root at s=1/2, sqrt(x) and sqrt(x)log x.
