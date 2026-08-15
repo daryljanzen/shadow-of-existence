@@ -2274,3 +2274,64 @@ the argument for the gate stated better than I stated it at item 33, and I did n
 harmonics (**the COUNT is mode-independent, the COEFFICIENT is not**); `PO-6` stays open and the re-verdict is
 yours.*
 
+## ⛭⛭⛭ 37 · THE ONE INPUT TO `PO-6`'s QUARTIC THAT NOBODY HAD CHECKED — added c54.220
+
+*P10 measures the tower's UV degree from three inputs:* ***$\mu_n\sim n$, $\langle\hat\pi_n^{2}\rangle\sim n$,
+and a degeneracy growing as $n^{2}$.*** *`D2` computes the first two. **The third it carries as a bare line —
+"Degeneracy of $S^3$ harmonics at level $n$ grows like $n^{2}$ (any tensor rank)" — with no check, and the
+closed form appears nowhere in the corpus.** That is the whole load-bearing input to the quartic, and it was
+asserted.*
+
+**⛭ DERIVED, and the route needs no special functions.** *$S^{3}=SU(2)$ is **parallelizable**, so a
+frame-indexed field of frame-spin $s$ is $L^{2}(SU(2))\otimes V_{s}$, and Peter–Weyl gives the level-$j$
+totals:*
+
+```
+    scalar  1 x (2j+1)^2      vector  3 x (2j+1)^2      sym-tracefree  5 x (2j+1)^2
+```
+
+⌗ ***Those multiplicities ARE the component counts 1, 3, 5 — the check the decomposition had to pass, and it
+is the reason I trust the rest.***
+
+**The TT part is the two EXTREME summands** *(the divergence shifts the $R$-spin by at most one, so $V_{j\pm2}$
+cannot be reached from a vector):* $2(2j+1)^{2}$ — ***exactly $2/5$ of the symmetric-tracefree total, the
+propagating-component fraction.*** *Organised by eigenvalue, the two helicities are the mirror pair $(m,m+2)$
+and $(m+2,m)$, and with $n=2m+2$:*
+
+> ***g(n) = 2(n−1)(n+3),  n ≥ 2,  g(2) = 10***
+
+⇒ *And the floor $n\ge2$ is **P10's own, asserted independently** ("there are no modes below $n=2$ on $S^{3}$")
+— **the derivation returns the paper's floor rather than being fitted to it**, which is the closest thing to an
+external check available here.*
+
+**⇒ SO THE QUARTIC STANDS AND ITS LEADING CONSTANT IS NO LONGER ASSERTED.** *$\sum_{2}^{N}g=N(N-1)(2N+11)/3$,
+leading $\tfrac23N^{3}$ — and **independently required by Weyl's law** with $d=2$ propagating components. I
+calibrated the Weyl normalisation on the SCALAR tower first, whose degeneracy $(k+1)^{2}$ follows exactly from
+Peter–Weyl: the ratio runs $1.01505\to1.00300\to1.00075\to1.00038$.* ⇒ ***The shell contribution is $2n^{3}$,
+not "$n^{3}$ up to a constant".***
+
+**⛔ AND `D2`'s "(any tensor rank)" IS FALSE.** *The scalar tower's leading coefficient is $\tfrac13$ against
+the tensor tower's $\tfrac23$:* ***the constant is the PROPAGATING-COMPONENT count, not a universal.*** ⌗ *The
+**scaling** `D2` needed is right, so the quartic DEGREE stands and only the coefficient moves — I have
+corrected `D2` in place with a note naming this receipt, rather than leaving a false parenthetical under a
+correct conclusion.*
+
+**⚠ AND ONE METHOD THAT FAILED, recorded because I tried it.** *I attempted to pin the closed form by matching
+Weyl to **subleading** order: $2(n^{2}-1)$ gives $N^{2}$, $2(n-1)(n+3)$ gives $3N^{2}$, the naive expansion of
+$\tfrac23\lambda^{3/2}$ gives $2N^{2}$ — **none matches**.* ⇒ ***The discriminator is invalid: on a closed
+CURVED manifold the subleading counting term is not the next term of $\tfrac23\lambda^{3/2}$, it carries the
+curvature through the heat kernel. Weyl fixes the LEADING coefficient and nothing beyond; the representation
+theory is what fixes the closed form.*** *Recorded so nobody re-runs it expecting it to work.*
+
+⌗⌗ **AND THE PROCEDURAL NOTE, which is the fifth instance and the first I handled at write-time.** *Both of
+this receipt's quote-checks are about the corpus **before** this revision — the "closed form appears nowhere"
+absence, and `D2`'s unqualified line — and **this revision edits both files**. Left against the working tree
+they would have inverted the moment I committed.* ⇒ ***Both are pinned to `a0c1121`. That is items 28/30/32's
+class again, and the first time I saw it while writing rather than from the run afterwards.*** *The rule that
+has emerged, and I would offer it for the method file: **an absence claim is a claim about a commit, not about
+a file — so it takes a SHA.***
+
+⇒ ***`L-554`, receipt `L554_tower_degeneracy/D1_the_degeneracy_carrying_the_quartic_was_never_derived_and_its_constant_is_the_component_count.py`, nine seeded defects verified to fire, restore verified byte-for-byte.***
+⚠⚠ *Narrowing, not closure: no heat-kernel coefficient (still none anywhere); this is the FREE spectrum's mode
+count, not the interacting tower; `PO-6` stays open and the re-verdict is yours.*
+
