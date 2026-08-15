@@ -1,7 +1,7 @@
 ---
 name: the-plan
 kind: STATE
-current: r2550+c54.205
+current: r2776+c54.220
 job: The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance
 ---
 
