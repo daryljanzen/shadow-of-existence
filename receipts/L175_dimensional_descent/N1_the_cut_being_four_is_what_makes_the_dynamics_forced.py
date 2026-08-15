@@ -67,6 +67,10 @@ because two receipts in this span failed on quotations written from memory. **
       which the corpus treats as an output of the slicing, ALSO carry the forcing of the dynamics -- and
       if so, is that a second and independent reason the cut is four? ***
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT eda3ad7** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2515.  Stated for reversal.
 """
 import glob

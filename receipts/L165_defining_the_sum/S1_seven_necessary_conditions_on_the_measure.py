@@ -74,6 +74,10 @@ entirely possible that C1--C7 are jointly unsatisfiable, which would itself be a
 claim that the seven are complete **: they are what a read of the corpus turns up, and the list is meant
 to grow.  ** Not a claim that any is sufficient. **
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT f8a2dd1** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2567.  Stated for reversal.
 """
 import glob

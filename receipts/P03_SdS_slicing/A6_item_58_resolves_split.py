@@ -43,6 +43,10 @@ it passes; the banking is a P3 edit in another band.  ** Not that the geometry i
 at r2699: the excentres sit at twice the circumradius, so $4\\alpha$ against the wall's $\\alpha$ and the
 hinge's $2\\alpha$.
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT 303dc23** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2699.  Stated for reversal.
 """
 import glob

@@ -56,6 +56,10 @@ unasked.  Not that the second law's absence is a defect: ** with no realised bla
 generalized second law reduces to the ordinary one, which is unremarkable -- the cosmological side is
 where the question lives. **
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT e4e2d75** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2536.  Stated for reversal.
 """
 import glob

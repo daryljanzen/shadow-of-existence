@@ -52,6 +52,10 @@ question is settled by a phrase: ** "globally hyperbolic" is the right answer's 
 construction delivers it for the crossing is P1's own named frontier ** ("the mechanism of the crossing,
 not its unitarity").
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT c41d909** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2540.  Stated for reversal.
 """
 import glob

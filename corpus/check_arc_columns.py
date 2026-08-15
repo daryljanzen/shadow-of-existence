@@ -41,7 +41,11 @@ ROOT = os.path.abspath(os.path.join(HERE, '..'))
 ARC = os.path.join(ROOT, 'THE_LIVE_ARC.md')
 
 RAW = re.compile(r'(?<!\\)\|')
-BASELINE = 98
+# ** r2802: 98 -> 33.  *** 65 of the 98 were over-piped -- unescaped bars, fixed by ESCAPING,
+# which needs no knowledge of which cell they belonged to (159,248 words before and after).
+# The claim that they were "not blind-repairable" was made without testing it. ***  The
+# remaining 33 are UNDER-piped: genuinely short rows, a different thing from a break. **
+BASELINE = 33
 
 
 def blocks(lines):

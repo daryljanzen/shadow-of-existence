@@ -108,7 +108,6 @@ is**.*
 | **`L-165`** | r2475 | ⓵ **the UV clause now has a DEGREE (quartic) and a shape (IR free, UV generic)** — what remains is **defining** the sum, not diagnosing it · ⓶ the clo |
 | **`L-221`** | r2526 | **the question is INVERTED r2526**: not "is there an $R$-odd operator?" but ***what BRIDGE from grading to field exists that is not "be a kernel"?***  |
 | **`L-218`** | r2561 | ✔ ⓶ done r2478 · ***the RULE is tested r2561 and needs a fourth bucket (DISCUSSED), which is the default*** · ⓵ pandoc-in-CI and ⓷ the contribution re |
-| **`L-171`** | r2602 | ⛔ ***② does not clear*** — `PO-7` stays open by its own inversion check · **nothing is pending on Daryl** · ***the order is `PO-seam`'s progenitor der |
 | **`L-540`** | r2603 | ***the order now recomputes as `grounded` changes*** — and `REACH` is the one axis a human must maintain |
 | **`L-812`** | r2677 | ***HELD — build ONLY when the turnaround-regular result can be made checkable INDEPENDENTLY of the sign it produces (a bracket, a limit, a known case  |
 | **`L-815`** | r2701 | ***routed to Daryl/56: route ⓷'s residue is supplied (CRPHI=0, bracket-checked, one assumption) — does ② now clear? their call, not a node's*** |
@@ -116,7 +115,7 @@ is**.*
 | **`L-814`** | r2719 | ***PO-10's run is discharged; the residual is PO-7's branch selection when CRPHI closes*** |
 | **`L-822`** | r2781 | ***next: fold the LMAXL=3200 third convergence point (control -> ~1) when it lands*** |
 
-*12 live rows carry a stated next step; the 12 longest-unworked are shown.*
+*11 live rows carry a stated next step; the 11 longest-unworked are shown.*
 
 <!-- WORK-EDGE:PROCEDURE -->
 > ### ⌗⌗ AND WHEN THE TABLE RUNS OUT — THE PROCEDURE, which is what actually generated most of this session

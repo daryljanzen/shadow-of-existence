@@ -5,7 +5,11 @@ CONFIRMATION 4: state the object and ask what operation is really being performe
   invoked at r1869, has no work to do.  What P3 actually does is read one entire function along a
   DIFFERENT LINE of its own domain.  The right question is therefore: where is sin real?
 
-ORIGIN: storyboard_receipts/X3r_reality_lines.py -- registered r2376 (c54); edit the origin, not this copy."""
+ORIGIN: storyboard_receipts/X3r_reality_lines.py -- registered r2376 (c54); edit the origin, not this copy.⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT c01f56c** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
+"""
 import numpy as np, sympy as sp
 x,y = sp.symbols('x y', real=True)
 

@@ -146,6 +146,32 @@ sources: [cowork, chat]
 
 
 
+### Revision r2802 — 2026-08-12 (main line). **BOTH "NOT BLIND-FIXABLE" BACKLOGS CLEARED IN ONE TURN.**
+
+**⛔ ⓵ THE 40 UNPINNED ABSENCE CLAIMS.** *r2776 filed them as "not retro-pinnable without guessing which commit each
+was measured at — which is the fabrication the rule prevents."*
+⇒ ***The commit that ADDED a receipt **is** the tree its absence was measured against. `git log --diff-filter=A`
+resolves it for all 41. **A lookup, not a guess.**** *41 pinned, 8/8 sampled still exit zero.*
+
+**⛔ ⓶ THE 98 `THE_LIVE_ARC` COLUMN BREAKS.** *r2783 filed them as needing "guessing which cell each stray `|`
+belonged to."*
+⇒ ***Escaping does not need to know — a raw bar written `\|` stays content in the cell it is already in, which is
+what r2788a did to `PROTECTED_OPEN` with zero loss.***
+
+    98 -> 33      159,248 words before and after
+
+⌗ ***And the remaining 33 are a DIFFERENT POPULATION: 65 were OVER-piped (real breaks, escapable), 33 are
+UNDER-piped — genuinely short rows. **Two populations counted as one and the union declared intractable.***
+Baseline moved 98 → 33 with the reason.*
+
+**⛭⛭ ⓷ AND THE PINNING SURFACED A GATE DEFECT.** *`check_absence_pinned` matched `at <sha>` **case-sensitively**,
+so `MEASURED AT <sha>` — the form the retro-pinning writes — read as unpinned. **A gate that recognises only one
+casing of its own convention reports pinned receipts as unpinned.***
+
+**⛭ THE RULE:** ***"not mechanically fixable" is a claim, and it is the one kind a node is never asked to defend,
+because it closes the conversation it appears in. **Test it before filing it** — both of these survived a full
+session as routed backlog.***
+
 ### Revision r2800 — 2026-08-12 (main line). **`PO-11`'s VERDICT: THE FIELD IS DIRAC, SO THE MATCHING IS DETERMINED.**
 
 **⛭⛭ ⓵ THE ROW NAMES THE FIELD.** *`L-828` supplied both branches and routed the choice. The object column:

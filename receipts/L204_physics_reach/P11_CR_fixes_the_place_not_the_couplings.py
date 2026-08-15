@@ -54,6 +54,10 @@ what the wall gives.  ** Not that the standard N_eff is right ** -- only that CR
 they are why the name matters.  ** Not that this discharges station ⑨'s routing ** -- the paragraph is
 still owed; what changes is which paragraph.
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT c81f0c7** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2545.  Stated for reversal.
 """
 import glob

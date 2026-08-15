@@ -47,6 +47,10 @@ equivariant index would give a different answer ** -- nothing here computes one.
 should have used a different theorem: ** it declared the weight of the one it used, which is the correct
 conduct and is why this station yields a route rather than a defect. **
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT 027bb3b** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2492.  Stated for reversal.
 """
 import os, re

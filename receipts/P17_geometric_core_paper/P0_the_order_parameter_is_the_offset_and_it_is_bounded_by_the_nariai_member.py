@@ -71,6 +71,10 @@ source checks against p0 and P3.
 
 rc=0 on success.  Run: python3 P0_the_order_parameter_is_the_offset_and_it_is_bounded_by_the_nariai_member.py
                         (sympy numpy; ~5 s)
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT ca9f53d** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 """
 import os
 import re

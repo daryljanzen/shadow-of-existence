@@ -38,9 +38,9 @@ without fixing what is still sitting there owed?"**
 
 | state | count |
 |---|---|
-| `DARYL` | 2 |
+| `DARYL` | 1 |
 | `OPEN` | 7 |
-| `—` | 14 |
+| `—` | 15 |
 
 **Open leads by origin**
 
@@ -56,7 +56,7 @@ without fixing what is still sitting there owed?"**
 | lead | state |
 |---|---|
 | **`L-165`** | QUESTION · OPEN |
-| **`L-171`** | QUESTION · DARYL |
+| **`L-171`** | QUESTION · — |
 | **`L-175`** | QUESTION · OPEN |
 | **`L-202`** | QUESTION · OPEN |
 | **`L-221`** | QUESTION · OPEN |

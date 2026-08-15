@@ -60,6 +60,10 @@ ruling statement, which is exactly why it is worth routing. **  Not that Type II
 GR -- they exist, cited above; only that ** they are not reachable by this operator, for a reason the
 substrate's double ruling supplies. **
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT c5fdb6e** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2520.  Stated for reversal.
 """
 import os

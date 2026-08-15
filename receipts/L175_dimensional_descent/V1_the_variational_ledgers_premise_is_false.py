@@ -53,6 +53,10 @@ standard action inside a canonical programme, which is the ordinary thing to do.
 survey was careless **: a word-bounded count is the right first instrument, and *** this is a case where
 the right first instrument gives the wrong answer, which is worth more than the finding. ***
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT cc9df51** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2558.  Stated for reversal.
 """
 import glob

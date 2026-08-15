@@ -44,6 +44,10 @@ print("""
   property that depends on how it was obtained.  It claims neither: base and section are supplied,
   the brackets are GR's.
   *** V4's ANSWER: NO COST, and the honest scope is already written into the paper. ***
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT c01f56c** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 """)
 print("="*80)
 

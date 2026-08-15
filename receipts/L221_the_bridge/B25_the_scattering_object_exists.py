@@ -44,6 +44,10 @@ the way that makes both ends asymptotically flat in $x$. ***
 ** COMPUTES: the SUSY partner potentials V_pm = W^2 +- dW/dx at the undercritical member M=0.12,
 alpha=1.  *** M and alpha are the corpuss own SdS parameters; nothing is imported. *** **
 
+⌗ **ABSENCE CLAIMS IN THIS RECEIPT ARE MEASURED AT 1971c67** *(retro-pinned r2802: the commit
+that ADDED this receipt is the tree its absence was measured against — **a git lookup, not a
+guess**. c54.220's rule, r2776.)*
+
 Written r2714.  Stated for reversal.
 """
 import glob
