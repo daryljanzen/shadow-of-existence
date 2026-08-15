@@ -198,7 +198,16 @@ def main():
     check('✔ ⛭ AND THE REGISTER MISQUOTE cc54 FOUND IS FIXED (r2738): PROTECTED_OPEN carried '
           '"144/80/24" where dS_4 gives 144/36/24 -- 80 was S50\'s D=5 entry.  The guard is now '
           'on the correction holding',
-          '144/36/24' in po and '144/80/24' not in po)
+          # ⛔ AMENDED c54.221.  r2738's guard was `'144/80/24' not in po`, and that is incompatible
+          #    with the correction note c54.215 wrote INTO the same register -- a note that corrects
+          #    a value has to quote the value it corrected, so the string must survive exactly once,
+          #    inside its own withdrawal.  *** This is FOR_56 item 32's class again: an absence pin
+          #    broken by text that AGREES with it.  Repaired in kind rather than by deleting the
+          #    quote: the corrected value must be present, and every surviving occurrence of the old
+          #    one must sit inside a correction. ***
+          '144/36/24' in po
+          and po.count('144/80/24') == 1
+          and 'three numbers read DOWN the table instead of ACROSS one row' in po)
 
     # ------------------------------------------------- (5) the RUNNING layer
     # ⚠ HONESTY ABOUT WHAT THIS ADDS.  (2) proved the identity for a FREE a(T), so substituting a

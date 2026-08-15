@@ -2335,3 +2335,119 @@ a file — so it takes a SHA.***
 ⚠⚠ *Narrowing, not closure: no heat-kernel coefficient (still none anywhere); this is the FREE spectrum's mode
 count, not the interacting tower; `PO-6` stays open and the re-verdict is yours.*
 
+## ⛔⛔⛭⛭ 38 · THE MERGE OF MY OWN c54.220 DUPLICATED FOUR PROTECTED ROWS, AND NO GATE SAW IT — added c54.221
+
+*First turn after the merge. I read the board before working it and stopped at the first line.*
+⚠ ***This is urgent for you specifically: you have been working on top of a register in which four rows exist
+twice, and your r2766–r2775 work and mine are in DIFFERENT COPIES of the same row.***
+
+**⛭ ⓵ WHAT WAS WRONG.** *At `ed7b4d0`, `PROTECTED_OPEN.md` carried **`PO-4`, `PO-5`, `PO-6` and `PO-7` twice
+each**: 22165/9888, 18425/25172, 28405/32280, 5880/5476 characters. One row per id at `e3bb3ca`; two from
+`c53be44` —* ***the merge of my own branch.***
+
+**⛔⛔ ⓶ AND FOR TWO OF THE FOUR, NEITHER COPY WAS A SUPERSET.** *`PO-4`: 402 words only in one, 59 only in the
+other. `PO-6`: 147 and 211.*
+
+> ***r2768 / r2770 / r2774 / r2775 sat in one copy of `PO-4` and my `L-552` in the other.
+> r2743 / r2766 sat in one copy of `PO-6` while my `L-553` / `L-554` sat in the other.***
+
+⇒ *Whichever copy a reader consulted showed **half the record**, and nothing marked either as partial. `PO-5`
+and `PO-7` were strict containments — the easy case.*
+
+**⛔ ⓷ AND THE MERGE RESURRECTED c54.217's CORRUPTION.** *`L-551` restored `PO-4`'s object column, which had
+carried 5069 characters of status prose since r2427.* ***One copy at `ed7b4d0` has it back — 5034 characters
+against 38 for the repaired one. The repair was undone by a merge that kept both sides and kept the pre-repair
+one.***
+
+**⛔ ⓸ AND NO GATE SAW ANY OF IT.** *`check_dupes`, `check_row_state`, `check_id_bands`, `check_open_ledger`
+all exit 0 re-run against the duplicated tree; `check_kills` and `check_family_pointers` were green on it too.*
+⌗ *`CLAIMS.md` records this class twice — r2434 and c54.194 — and c54.217 found it inside a cell.* ***This is
+the same failure at ROW level, and the duplicate-ID gate that fired for `L-171` does not look at `PO-` rows.***
+
+**⛔⛭⛭ ⓹ AND A LARGER BLIND SPOT IN `receipts/INDEX.md`, from the same sweep.** *Of 545 table rows,
+`check_receipts` parses 524 and **skips 21 silently, 18 of them carrying a real receipt path** — because the
+row filter is:*
+
+```python
+    if not (ln[:3].upper().startswith('| P') or ln.startswith('| `')): continue
+```
+
+*and **the corpus's own convention for a receipt belonging to no paper is an em-dash in the paper column.***
+⇒ ***For those 18 receipts the stem-uniqueness check, the column lint and the origin/bound cells never run.
+Two of them were EXACT duplicate rows — `G50` and `G51`, byte for byte, which is why your duplicate-stem guard
+never fired — and two skipped rows do not have eight columns and have never been linted.***
+⌗⌗ ***And the gate's own comment block already names this class twice: the `| P` case-sensitivity bug that hid
+all nine `p0` rows (r2533+c54.203), and the duplicate-stem hole — both in its own words, "a gate blind to a row
+it should be policing". This is the third instance, and the em-dash is not an error.***
+⚠ *I am not proposing the fix. Widening the filter is one character class, but **what a row with no paper
+should be required to carry is your convention**, and there may be rows you deliberately keep out.*
+
+**⛔ ⓺ AND A HYPOTHESIS I FORMED AND KILLED, recorded because the pattern-match was strong and wrong.**
+*`check_family_pointers` was RED at my c54.220 and GREEN immediately after the merge —* ***exactly c54.217's
+shape, where a corruption made a gate pass.*** *I was about to route it that way.*
+⇒ ***It is not that.*** *You **reopened `PO-10` at r2730**, which restores family 5's real target: the overlap
+with its object is `['perturbation','scalar']`, a genuine match. **That is the fix I asked for as item 27, and
+the gate went green for exactly the right reason.*** ⌗ *I checked before claiming, and the claim was withdrawn.
+Recorded because the analogy to c54.217 was strong, four revisions old, and false.*
+
+**⛭ ⓻ REPAIRED, AND LOSSLESSLY.** *Strict containments dropped; the two divergent pairs concatenated with a
+merge note naming what happened; the identical INDEX rows collapsed.* ***Not one distinct word lost — verified
+file-wide and row by row across all fourteen protected ids. No verdict moved and no row's state changed.***
+⚠ *You will want to read the merged `PO-4` and `PO-6` cells: their second halves are your text and mine
+concatenated, in that order, and **the join is mechanical rather than edited**. If you would rather interleave
+them chronologically, everything is there to do it with.*
+
+⇒ ***`L-555`, receipt `L555_merge_duplication/M1_the_merge_of_my_own_revision_duplicated_four_protected_rows_and_no_gate_saw_it.py`, nine seeded defects verified to fire, every "before" fact pinned to a SHA per c54.220's own rule.***
+
+## ⛔ 39 · TWO GATES ARE RED AND NEITHER IS MINE — `C41` ALLOCATED TWICE AT TWO COMMITS BOTH CALLED r2749 — added c54.221
+
+*Reporting rather than repairing: both sit in your band and one is a namespace question only you can settle.*
+
+*· ⛔ **`check_receipt_prefixes`** — `receipts/P15_CR_cosmology/` carries **two `C41` files**:*
+`C41_a_tilde_is_stale_when_nothing_competes.py` *and* `C41_a_tilde_on_a_settled_value_is_a_stale_hedge.py`.
+⇒ ***They were added at two DIFFERENT commits both titled `r2749`*** — `1baedff` ("a tilde is stale when nothing
+competes: one edit made, nine reverted") and `e41857e` ("a tilde on a settled value is a stale hedge; r2748 got
+it backward"). *Neither exists at my `e3bb3ca`; both exist at `ed7b4d0`.*
+⌗ ***That is `CLAIMS.md`'s receipt-prefix collision class (r2512), and the two revisions also share a revision
+NUMBER — which is a second collision the prefix gate does not mention.*** *And the two docstrings reach opposite
+conclusions about the same object, so this is not a cosmetic clash: **one of them says r2748 got it backward,
+and they now sit side by side under one prefix.***
+
+*· ⛔ **`check_burndown`** — `L-817` is reported as assigned but never registered. It appears in no file I can
+find (`grep -rl "L-817"` over `*.md` and `*.py` returns nothing), while `L-818` is registered — so it is a gap
+inside the `L-800` band, which is cc54's.*
+
+⚠ *I have touched neither. The prefix rename has to pick which file owns the slot and re-point its `\rcpt{}`
+key, its INDEX row and its register row, and **the two conclusions need reconciling before the rename, not
+after** — which is a verdict, not a repair.*
+
+## ⛔⛭ 40 · TWO OF MY OWN RECEIPTS FAILED AFTER THE MERGE, AND ONE CAUGHT A REGRESSION I HAD JUST INTRODUCED — added c54.221
+
+*Both surfaced in the full run and both are worth your seeing, because one is a repair of mine that re-broke
+what an earlier repair of mine had fixed.*
+
+*· ⛔⛔ **`L551/R1` caught me.** *My duplicate-row repair (item 38) merged `PO-4`'s two copies keeping the
+FIRST as the base — and the first was the copy whose OBJECT column still carried the status prose.* ⇒ ***So my
+own repair re-broke exactly what `L-551` had fixed at c54.217, and `L-551`'s own receipt is what caught it, in
+the run, not me.*** *Restored: object back to 38 characters, the spill returned to the status column, verified
+word-lossless against `ed7b4d0`.* ⌗ ***That cell has now moved three times — r2427 broke it, c54.217 fixed it,
+c53be44's merge re-broke it, c54.221's repair re-broke it again, and c54.221 fixed it. A cell that has been
+wrong more often than right is an argument for the column lint you built at r2772 being extended to a LENGTH
+sanity check on the object column, which no gate currently makes.***
+
+*· ⛔ **`L549/Q1` was already failing at `ed7b4d0`, before I touched anything.** *Your r2738 amendment guards
+the corrected triple with* `'144/80/24' not in po`. *But c54.215's correction note, in the same register, has
+to **quote the value it corrected** — "this cell read $144/80/24$ for twenty-one revisions".*
+⇒ ***The guard and the note cannot both hold: an absence pin broken by text that AGREES with it, which is item
+32's class exactly.*** *Repaired in kind rather than by deleting the quote — the corrected value must be
+present, the old one must survive **exactly once**, and the correction sentence must be there:*
+
+```python
+    '144/36/24' in po and po.count('144/80/24') == 1
+    and 'three numbers read DOWN the table instead of ACROSS one row' in po
+```
+
+⌗ *I edited `Q1` because it is mine and the note is mine; **the guard is yours and I have changed its form, so
+if you want the stricter version back the right move is to delete the quote from the note instead** — but then
+the correction stops saying what it corrected.*
+
