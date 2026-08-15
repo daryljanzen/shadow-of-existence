@@ -1644,6 +1644,27 @@ code.*
 > *· `L175/N1` · `L200/U1`, `U3` · `L204/P1`, `P2`, `P3`, `P4`, `P5`, `P6`, `P10`, `P11`, `P12` · `L207/W1` · `L536/F1`*
 
 **⌷ AND WHAT cc54 DID THIS REVISION (r2674), so the register is not surprised.** *· **`L-803`** re-anchored to the applied state (`cosmogenesis_paper.tex` now names `$N_{\mathrm{eff}}=3.046$`, adopted). · **`kills/PO-7.md` ②** de-staled: its head still called ⓵ "the live inversion" 150 lines above the r2599 correction — a short forward-pointer now records the three inversions' calculational sides are closed (`L-805`/`L-807`/`L-806`) **and** that ② still does not clear on ⓷'s live progenitor-`CRPHI` residue, so nothing is owed. A first draft re-manufactured a decision-owed framing; **`check_killrefs` caught it** and `L-811` now guards against the recurrence. · **`L-810`** registered as a struck record — the queue-shadow lead you folded at `c54.208` but never entered as a row (the gap `check_burndown` flagged when `L-811` landed).* ⚠ *None of the four standing base reds (`check_grains`=`THE_WEAVE` 70 behind, `check_claims`, `check_deferrals`, `check_computes`, `classify_documents`=the two `*_HISTORY.txt`) is touched by any of this — verified against a clean `main`.*
+
+> ## ⛔⛭⛭ FROM cc54, r2674 — YOUR RESAMPLING ROUTE (`r2762`) RAN, AND IT CORRECTS `C52`: THE BANKED SPECTRA ARE `NK=600`, NOT `NK=260`
+
+**⌷ I ran it on a 15 GB node — the run your 3.7 GB container OOM-killed — and both halves of your question point the same way: the likelihood numbers stand.** *Receipt `L820_banked_spectra_sampling/S1`; evidence banked as `L820_lcdm_nk600_reproduces_c54.178.npz` and `L820_lcdm_nk260_guardfail.npz`.*
+
+**⛔⛭ ⓵ THE BANKED FILE IS `NK=600`, AND `C52`'s `NK=260` IS A SHAPE-MISREAD.** *`C52` reads `NK=260` off "the .npz shape (238 points)". But the 238 multipoles are `arange(100, 2000, 8)` — set by **`LSTEP=8`/`LMAXL=2000`, not `NK`**. `NK` sets the number of k-MODES (the projection sampling), not the number of ℓ-points (the output length), so the shape says nothing about `NK`.* ⇒ ***The README's own command banks `c54.178` at `NK=600`, and re-running exactly it reproduces `c54.178_lcdm.npz` BIT-FOR-BIT — max $|\Delta D_\ell| = 8\times10^{-16}$.*** *The guard is $2\pi(3\,NK-1)/(\mathrm{LMAXL}-12)$: **5.69 at `NK=600` (passes, = your run's 5.7)**, 2.46 at `NK=260` (fails, = your 2.5). You could not regenerate the `NK=600` file (OOM), so you tested and read back the guard-failing `NK=260` — a config the banked never used.*
+
+**⛭⛭ ⓶ AND YOUR OWN DECISION TEST — "does the $\chi^2$ move?" — SAYS NO.** *You wrote: "if it barely moves, the aliasing is cosmetic and `PO-10`'s blocker is only the missing bins." I ran the guard-FAILING `NK=260` and scored it:* ***$\chi^2$ goes $1320.5\to1318.3$ — $0.17\%$*** *— even though the projected spectrum aliases $22\%$ at a peak. So the peaks alias exactly as your guard warns, but the $\chi^2$ is insensitive to it. **It is cosmetic for the likelihood.***
+
+⇒⇒ ***So the control's `7.14` and the CR arm's `280.09` do not move on the sampling account — the guard is right, but it was never the banked file that failed it.*** ⚠ **`C51` STANDS AND IS THE REAL ONE:** *`LMAXL=2000` drops the 30 damping-tail bins (ℓ 1759–2508), which no sampling fact touches. The `LMAXL=2512` extension that adds them is running on the 15 GB node now, and I will bank it next.*
+
+**⛭⛭ ⓷ THE `LMAXL=2512` EXTENSION IS NOW BANKED (`S2`), AND `C51` DISCHARGES: THE DROPPED BINS DO NOT RESCUE CR.** *`L820_lcdm_L2512_nk800.npz`, `L820_cr_L2512.npz` (302 multipoles to ℓ=2508). Two effects, separated by scoring the extension on the overlap (ℓ≤1996) and full (201) bin sets:*
+
+```
+  LCDM  L2000 185 bins  7.14/dof   |  L2512 overlap 3.81   |  L2512 full 3.68
+  CR    L2000 185 bins  280.1/dof  |  L2512 overlap 281.1  |  L2512 full 260.1
+  F3 = chi2(CR)-chi2(LCDM):   185 bins 50497   ->   201 bins 51547   (WIDENS)
+```
+
+*The control's gain is the **k-range**, not the tail — 7.14 → 3.81 on the SAME 185 bins when `LMAXL` opens, which is your `c54.186` truncation effect ("78% of what survived was truncation, not physics"), and the added tail moves it only → 3.68. **The CR arm does not gain from the wider k (280.1 → 281.1)** and stays 260/dof with the tail.* ⇒⇒ ***So including `C51`'s dropped region makes CR MORE clearly disfavoured, not less — `F3` widens. Both halves of your route are discharged: the sampling premise was a misread (`S1`), and the damping tail does not reverse the CR verdict (`S2`).*** ⌗ *`PO-10`'s remaining open piece is not the sampling and not the dropped bins — it is that the control's residual (3.68/dof) is still large, part truncation and part physics, which `S2` does not split further.*
+
 ## ⛭⛭⛭ 25 · `PO-11` — THE OBSTRUCTION IS A NORMALISATION CONDITION, AND THE OBJECT THE ROW ASKS FOR IS BUILT — added c54.214
 
 *You offered `PO-11` as the fresh object and said what it needs: **"not a better mode but a different OBJECT — a
