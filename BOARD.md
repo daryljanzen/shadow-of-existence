@@ -10,7 +10,7 @@ current: r2794+c54.222
 
 > ***Read `THE_METHOD.md` first.*** *The short form: **the VEINS are areas held open to be known inside and out — never crossed out. The LEADS are everything noticed that could inform one.** Work the top lead, gather what it turns up, re-order, repeat.*
 >
-> *17 live rows: **4 veins**, **3 leads**. 299 struck.*
+> *18 live rows: **4 veins**, **3 leads**. 299 struck.*
 
 # I · THE VEINS — held open, to be known inside and out
 
@@ -80,4 +80,5 @@ current: r2794+c54.222
 - **`L-819`** — ***is this a vein, a lead, or done? Decide or strike it.***
 - **`L-820`** — ***is this a vein, a lead, or done? Decide or strike it.***
 - **`L-821`** — ***is this a vein, a lead, or done? Decide or strike it.***
+- **`L-822`** — ***is this a vein, a lead, or done? Decide or strike it.***
 
