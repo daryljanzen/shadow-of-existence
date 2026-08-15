@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2822 — 2026-08-12 (main line). **THE GLUON IS THE OCTET AND P14 COUNTS THE SINGLET.**
+
+**⓵ THE KERNEL CARRIES SPIN-$\tfrac12$ MODES.** *"$\lambda=j+\tfrac12$ labels partial waves and each contributes
+exactly one bound mode", and $\tfrac12\otimes\tfrac12=0\oplus1$ — **the spin-1 channel exists by ordinary angular
+momentum addition**.*
+
+**⛭⛭⛭ ⓶ BUT $3\otimes\bar3=1\oplus8$.**
+
+    the SINGLET  colour-neutral, an ASYMPTOTIC state   <- P14's "meson 1"
+    the OCTET    colour-charged, CONFINED              <- where a gluon would be
+
+⇒ ***P14's count is a colour-SINGLET count. Silent on the octet, and silent on spin — its own gloss is "every
+channel the Standard Model has", and **a channel is not a state**.***
+
+**⛭⛭ ⓷ AND THE SAME FACT SUPPLIES THE ESCAPE AND HIDES THE OBJECT.** *Weinberg--Witten's confinement escape holds
+BECAUSE the octet is colour-charged and not asymptotic (r2821) — **and P14's count does not see the octet for
+exactly that reason**.*
+⇒ ***A composite gluon is invisible to the machinery that would find it, for the reason that makes it permissible.
+**That is why the route can be open and unexamined at once.****
+
+**⓸ SO THE REMAINDER IS SPECIFIC.** ***Does the OCTET channel of $3\otimes\bar3$ on the wall kernel contain a
+massless spin-1 state?** P14's second quantisation is built for the singlet question and would have to be rerun on
+the octet — the octet is outside its question, not missing from its answer.*
+
+**⛭ THE RULE:** ***when a route is open AND unexamined, ask whether one fact does both. **An obstruction's escape
+and a measurement's blind spot are often the same property seen from two sides** — and finding that explains the
+silence instead of adding to it.***
+
 ### Revision r2821 — 2026-08-12 (main line). **THE COMPOSITE ROUTE DOES NOT CLOSE — two escapes hold.**
 
 **⓵ WEINBERG--WITTEN's HYPOTHESES ARE MET.** *Unlike the index obstruction at r2818, where the premise failed:*
