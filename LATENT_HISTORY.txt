@@ -230,4 +230,4 @@ c54.219b INSTRUMENT  fourth math-bar instance in the same hand: my register edit
 r2771  LATENT      c54.219 merged: same verdict as r2766 by a stronger route. My basis was 3, the list is 5.
 r2772  INSTRUMENT  check_register_columns built on cc54s argument. Three LIVE breaks found and repaired.
 r2773  LATENT      the SO(4) isometries act on the zero-modes and reach COLOUR, not isospin -- they permute hinges
-r2774  COMPUTED    PO-4s KIND question RESOLVED: the doublet exists in D_6 and D_6 is FINITE -- no Lie algebra
+r2774  LATENT      PO-4s KIND question RESOLVED: the doublet exists in D_6 and D_6 is FINITE -- no Lie algebra
