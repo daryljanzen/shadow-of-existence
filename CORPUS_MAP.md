@@ -146,6 +146,40 @@ sources: [cowork, chat]
 
 
 
+### Revision r2774 — 2026-08-11 (main line). **`PO-4`'s KIND QUESTION RESOLVES — the doublet exists and its group is finite.**
+
+**⛭⛭ ⓵ P14 WORKS IN $D_6$, WHICH HAS TWO-DIMENSIONAL IRREPS.** *"the representations of $D_6$ that are trivial on
+the deck $\mathbb{Z}_3$ … are its four one-dimensional ones, so a colourless sector has total dimension four."*
+
+    |D_6| = 12 = 4*1^2 + 2*2^2      two 2-dimensional irreps -- A DOUBLET EXISTS
+
+⇒ ***And P14 counts the singlets precisely because the doublets are there to exclude.***
+
+**⛔ ⓶ AND IT CANNOT CARRY $SU(2)_L$, NOT FOR WANT OF DIMENSION.** *A gauge field is a connection valued in a **Lie
+algebra**, and $D_6$ has none.*
+⇒ ***The doublet is not missing. **What is missing is the continuum acting on it.****
+
+**⛭⛭⛭ ⓷ FOUR INSTANCES, ONE WALL.**
+
+    r2718   the Weyl element      order 4      an element, not a family
+    r2768   the horn swap         order 2      an element, not a family
+    r2770   the leaf isometries   continuous   wrong index (r2773)
+    r2774   D_6's 2-dim irrep     a doublet    of a FINITE group
+
+⇒ ***The corpus's isospin structure is DISCRETE ALL THE WAY DOWN — not "a generator is missing" but "the whole
+structure is finite", which is what it IS rather than a gap.***
+
+**⓸ AND P14 STATED THE CONSEQUENCE BEFORE THE MECHANISM.** *"$T$ delivers **a species label, not $SU(2)_L$'s chiral
+action**." **A species label is exactly what a finite two-dimensional irrep delivers: it distinguishes two states
+and does not rotate between them.***
+
+**⛭ THE RULE:** ***when a search for an object keeps failing, check whether the object is PRESENT and the ACTION is
+what is absent. **"We do not have X" and "we have X and nothing acts on it" produce identical failures at every
+candidate** — and only the second is a statement about the theory.***
+
+⚠ *A **bounded negative**, F5-safe: this resolves the KIND question r2769 posed. A construction embedding $D_6$ in a
+continuous group would change the answer, and the verdict on the row is its owner's.*
+
 ### Revision r2773 — 2026-08-11 (main line). **THE ISOMETRIES ACT — AND REACH COLOUR, NOT ISOSPIN.**
 
 **⛭⛭ ⓵ THE ACTION IS AUTOMATIC.** *P14: "the leaf is compact and its Dirac operator carries a well-defined
