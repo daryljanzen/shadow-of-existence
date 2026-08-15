@@ -1,9 +1,38 @@
 ---
 name: open-problems-map
 kind: STATE
-current: r2829+c54.232
+current: r2832+c54.232
 job: The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open
 ---
+
+## ⛭⛭⛭ r2832 — THE REGISTER IS CURRENT: TEN OPEN, FOUR STRUCK, EVERY ROW WITH A STATE HEAD
+
+**Every live row now opens with a `▣ CURRENT STATE` block**, so the state is the first fifteen hundred
+characters instead of being assembled from up to thirty-six appended blocks.
+
+    OPEN (10)   PO-1a  the DESIGNATION 2+1 -- a property of the VANTAGE; candidate: generations
+                PO-1b  the SIGN 2+1 -- a property of the GEOMETRY; candidate: species
+                       ⌗ the least-worked row in the register
+                PO-1c  does uud have any geometric counterpart -- and what is owed is the
+                       RELATION exchanging uud and udd, not an absolute assignment
+                PO-1d  the causal 2+1 on THREE hinges; an absolute assignment is forbidden
+                       by the geometry (transitive on the six ends)
+                PO-2   the Nariai / three-quark lead -- level (1) grounded, (2) PASSED,
+                       (3) still walled; gated on PO-5
+                PO-5   the quark/lepton split and the five multiplets; four of five routes
+                       to a coupling closed, the fifth gated on PO-11
+                PO-6   the interacting tower -- condition list settled at six; JOINT
+                       SATISFIABILITY untested, C6 against C7 the named tension
+                PO-7   the first acoustic peak; the spacing deficit is structural
+                PO-10  the scalar remainder -- half 2 closed, half 1's specification dead
+                PO-11  the propagating spinor sector -- operator settled, continuum open
+    STRUCK (4)  PO-3, PO-4, PO-9, PO-12
+
+**⛔ AND WHAT THIS REVISION FOUND WHILE DOING IT** — *none of it a physics verdict:* **~50,000 bytes of
+duplication** (29,263 byte-identical, 19,753 the same finding written into two rows); **21 overturned
+blocks carrying no mark**; **three withdrawals that reached one row and not another** — and the
+duplication is what made those possible; **two receipts asserting both verdicts at once**; and **one
+sentence a blanket sweep had inverted into its own opposite**.
 
 ## ⛔⛭⛭⛭ r2829 — THE MAP WAS HOLDING A RECONSTRUCTION OF `PO-5`, NOT ITS OBJECT
 
@@ -172,6 +201,11 @@ stamp** — and the two reopenings are what that removal was for.*
 **⌗ WHAT CHANGED, and none of it by a verdict on a hard problem.**
 
     PO-3, PO-9   ANSWERED (r2645, r2644) -- rows had read OPEN for ~50 revisions
+                 ⇒ NOW STRUCK r2832, on receipts. What kept them open after the answer
+                 landed was not physics: PO-9's receipt heading said 'DOES NOT CLEAR'
+                 beneath a header saying 'NOW CLEARS as of r2642', and PO-3's block 0
+                 was edited to open with 'ANSWERED' while its body still read 'STAYS
+                 OPEN'.  Both were one block asserting two verdicts.
     PO-12        STRUCK r2702 -- the transfer is built and verified; its last named piece has
                  NO INTEGRAND (pre-onset is pressureless, and at w=0 the potential equation
                  loses k entirely, r2701).  One clause RELOCATED into PO-7.
@@ -257,7 +291,7 @@ propagating theory", `boundary_paper`'s "the compact-face fermion sector … the
 ⚠ *Not the discrete skeleton: **the generation count, the chirality and the family symmetry are a RESULT, forced
 within CR**.*
 
-**⌗ `PO-12` · THE BESPOKE TRANSFER** *(registered r2597).* *`CR_cosmology` in its own voice: **"not a missing idea
+**⌗ `PO-12` · THE BESPOKE TRANSFER** *(registered r2597).* *`CR_cosmology` in its own voice: **"not a missing idea ⌗ **⟨r2832: `PO-12` is STRUCK (r2702) — the transfer is built and verified, and its last named piece has NO INTEGRAND. This is its record, not live work.⟩**
 but a computation this sequence owes and has not yet run, and the paper's own open edge rather than another's."***
 
 ---

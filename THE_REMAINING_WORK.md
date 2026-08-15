@@ -102,7 +102,7 @@ of W1's instances closed — so ***what waits here is the quantization, not the 
 
 ---
 
-## ⓷ `PO-9` (`L-175`) · **CAN A SECOND SLICING BE NON-ARBITRARY?**
+## ⓷ `PO-9` (`L-175`) · **CAN A SECOND SLICING BE NON-ARBITRARY?** ⌗ **⟨r2832: `PO-9` is STRUCK — answered BOUNDED BELOW ONLY, receipted on all four checks. Record, not live work.⟩**
 
 **⌗ HALF OF THIS VEIN CLOSED AT r2552:** *the cut's four-ness **does** carry the forcing of the dynamics
 — least-arbitrariness is the programme's own criterion of necessity, and it rejects exactly the
@@ -192,7 +192,7 @@ publishing rather than physics.***
 # V · WHAT THIS FILE SAYS ABOUT THE SHAPE
 
 **⌗ FOUR VEINS, AND THEY ARE NOT FOUR PROGRAMMES:**
-*· **`PO-9`** is most likely to **close outright** — one session, and its test is mechanical;*
+*· **`PO-9`** is most likely to **close outright** — one session, and its test is mechanical;* ⌗ **⟨r2832: it did — STRUCK, on its answered object.⟩**
 *· **`PO-seam`** is **one cc54 run**, and it is the same object as `PO-7`'s inversion ⓷;*
 *· **`PO-5`** is **four candidate bridges**, three readable without computation;*
 *· **`PO-6`** is **three questions of very different size** — (c) is a calculation, (a) is a
