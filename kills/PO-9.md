@@ -74,7 +74,9 @@ argument.***
 
 ---
 
-## ④ CHAIN CHECK — ⛔ **DOES NOT CLEAR, and that is this receipt's output**
+## ④ CHAIN CHECK — ✔ **CLEARS as of r2642**
+
+⌗ *(r2832: this heading read "⛔ **DOES NOT CLEAR, and that is this receipt's output**" until now. The r2642 update was APPENDED below and the heading was left standing, so **the receipt asserted both at once** — and the stale heading is what blocked a strike at r2830. Everything marked ⛔ below is the **pre-r2642 state**, kept per negatives-are-the-map.)*
 
 *The conclusion rests on: **(a)** Rule 2 as the programme's criterion of necessity — ✔ established at
 r2552, stated three times in the papers; **(b)** P6's three-sense guard and the offset being the mass —
@@ -144,7 +146,7 @@ number in it — **rank 1 over two choices** — is a rank, which is absolute.*
 
 # ⌗ WHAT THIS RECEIPT CONCLUDES
 
-**① and ⑤ pass. ③ finds the prices asymmetric.** ⇒ ⛔ ***And ④ does not clear: three of the five links are
+**① and ⑤ pass. ③ finds the prices asymmetric.** ⇒ ⌗ ***(pre-r2642) And ④ did not then clear: three of the five links were
 a single derivation, reproduced nowhere.***
 
 ⇒⇒ ***⛭⛭⛭ **REWRITTEN r2643 — AND DARYL'S QUESTION IS THE CORRECTION.** *He asked: "I have no idea why it would

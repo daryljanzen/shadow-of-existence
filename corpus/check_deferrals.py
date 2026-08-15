@@ -49,6 +49,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..'))
 
 # ** the phrases that assign a decision in writing. **
+# ** r2832: a QUOTATION of a deferral -- in a ledger scrap recording that one was found and
+# removed, or in a row's note explaining what a mangled sentence originally said -- is not a
+# live deferral.  *** The gate flagged its own repair record.  Skip lines that quote the
+# phrase inside quotation marks. ***
+QUOTED = re.compile(r'["\u201c\u201d][^"\u201c\u201d]{0,120}Daryl' + chr(39) + r'?s[^"\u201c\u201d]{0,40}["\u201c\u201d]', re.I)
+
 PATTERNS = [
     re.compile(r"Daryl'?s call", re.I),
     # ** NOT a bare possessive.  "Daryl's words", "Daryl's correction", "Daryl's lead" are the RECORD
@@ -137,6 +143,12 @@ def main():
         hits = []
         for pat in PATTERNS:
             for m in pat.finditer(t):
+                # ** r2832: skip a QUOTED deferral -- a ledger scrap recording that one was found
+                # and removed, or a note explaining what a mangled sentence originally said.
+                # *** The gate was flagging its own repair record. ***
+                ctx = t[max(0, m.start()-140):m.end()+40]
+                if QUOTED.search(ctx):
+                    continue
                 line = t[:m.start()].count('\n') + 1
                 hits.append((line, m.group(0)))
         if not hits:
