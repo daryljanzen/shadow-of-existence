@@ -146,6 +146,36 @@ sources: [cowork, chat]
 
 
 
+### Revision r2783 — 2026-08-11 (main line). **`c54.221`+`c54.222` MERGED — and my own gate had the blind-spot class they found.**
+
+**⛔ ⓵ VERIFIED INDEPENDENTLY: TWO ✔✔ RECEIPTS HAVE NEVER EXISTED.** *`X4_singularity_types.py` and
+`X3_seam_schwarz_reflection.py` — `git log --all --diff-filter=A` returns **zero** for both, and neither is on disk.
+**Both carry ✔✔, both certify a run, and both are printed into P3's, P7's and the corpus appendix marked [OK].***
+⇒ ***"The registry was checked from citations inward and never from rows outward" — every reader resolved a path
+with `os.path.exists` and did nothing when it failed.***
+
+**⛭⛭ ⓶ AND THE TRANSFERABLE HALF LANDED ON ME.** *Their INDEX lint sat INSIDE the membership filter, so rows the
+filter dropped were linted by nobody. **`check_register_columns` had no filter — but its selector was narrower than
+its table: `PO-\d+` missed `PO-1a`–`PO-1d`, eight rows lint-free since r2772.*** *Widened; 14 → 18 rows linted.*
+⇒ ***A narrow selector is a filter wearing a different name.***
+
+**⛭⛭⛭ ⓷ AND THE ROUTED NUMBER NEEDED ITS INSTRUMENT CHECKED FIRST.** *cc54 handed over "106 of 314 rows off modal
+shape" in `THE_LIVE_ARC` and **deliberately did not act**.*
+
+    global mode over all rows   137 off-shape
+    per-table (11 tables)        98 off-shape
+
+⇒ ***The file holds eleven distinct tables — `| finding | where | disposal |` is a three-column table with its own
+header, not a broken six-column row. **A node repairing the global number would have flattened three tables into
+one shape.** The handoff was right and the repair would not have been.***
+
+✔ *`check_arc_columns` built, per-table, baselined at 98, seed-tested $0\to1\to0$, wired. **Report-only**: the 98
+are not blind-repairable — fixing them means guessing which cell each stray `|` belonged to.*
+
+**⛭ THE RULE:** ***a lint sees exactly the rows its selector admits, and every selector is a filter. **Count what
+you are NOT checking before trusting what you are** — and when handed a measurement, re-derive the instrument before
+the number.***
+
 ### Revision r2782 — 2026-08-11 (main line). **INTEGRATION SWEEP CLEAN — AND 106 CLAIM-LINES FOUND MISSING.**
 
 **✔ ⓵ ALL cc54 WORK IS IN.** *Every remote branch checked against main. Only `bundle/c54_200` shows unmerged

@@ -29,7 +29,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..'))
 REG = os.path.join(ROOT, 'PROTECTED_OPEN.md')
 
-ROW = re.compile(r'\|\s*~*\s*\*\*(PO-\d+)\*\*')
+# ** r2783, on cc54's c54.222 finding: their INDEX lint sat INSIDE the membership filter, so
+# rows the filter dropped were linted by nobody.  *** Checked this gate for the same shape:
+# it has no membership predicate, but its SELECTOR was narrower than the table -- `PO-\d+`
+# missed the sub-lettered rows PO-1a..PO-1d entirely.  A narrow selector is a filter wearing
+# a different name. *** **
+ROW = re.compile(r'\|\s*~*\s*\*\*(PO-\d+[a-z]?)\*\*')
 RAW_PIPE = re.compile(r'(?<!\\)\|')
 
 

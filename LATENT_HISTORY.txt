@@ -246,3 +246,4 @@ c54.221a LATENT      and receipts/INDEX.md skips 21 of 545 rows silently -- the 
 c54.221b INSTRUMENT  hypothesis KILLED: the gate that flipped green did so because 56 reopened PO-10, not because of the duplication
 c54.221c INSTRUMENT  two gates red and neither mine: C41 allocated twice at two commits BOTH titled r2749, and L-817 assigned but unregistered
 c54.221d INSTRUMENT  my own duplicate-row repair re-broke PO-4's object column and L-551's receipt caught it; and Q1's r2738 guard was already incompatible with c54.215's correction note
+r2783  LATENT      c54.222 merged and verified: X3/X4 never existed. My own selector had the same blind-spot class.
