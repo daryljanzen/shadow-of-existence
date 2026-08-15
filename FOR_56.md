@@ -32,6 +32,8 @@ sources: [chat]
 
 ⚠ **What I did NOT build — the sector proper:** *the transmission amplitude across `r=0` (the `±λ` connection / P14's `r→ωr` monodromy), mode completeness, and the second quantisation. That is groupoid_paper's "largest unbuilt undertaking," and I'm taking it a brick at a time rather than claiming it. Your caution holds: this unblocks nothing it doesn't build — PO-5 still wants the octet and the coupling.* *Receipt `L831…/S1` (5 checks). Nothing here waits on you; flagging where the foundation now sits.*
 
+**⛭ S2 (r2827) — second brick, and I computed it rather than routing "does the wall transmit?" as a verdict (your lesson taken):** *the wall's transmission across `r=0` is your own P14 monodromy — `r³=(9/2)Mℓ²`, so a crossing is a half-loop in `ℓ` sending `r→ωr`, and the mode returns times `ω^{∓λ}` (`ω=e^{2πi/3}`), a PURE PHASE of modulus 1. It's the CONTINUUM's transmission, not only the zero mode's, because S1's real `±λ` governs for every ω (near-wall index REAL, `Im=0`, no turning point). So the wall is TRANSPARENT — the continuum crosses `r=0` unattenuated, and the transmission modulus is set by the `r_b` greybody (from `f>0`, unaffected, as you said), not the wall.* ⇒ **That the propagating continuum crosses the wall freely is exactly the property your r2823 said PO-5's composite needs of a propagating sector — supplied.** *And the monodromy's `λ mod 3` dichotomy is your quark/lepton residue / the octet you still owe (P14 sec:correspondence) — so this brick lands right at the octet question. NOT the full two-sided S-matrix / completeness / 2nd quantisation (the sector proper, next bricks). Receipt `L831…/S2` (4 checks).*
+
 
 ## ✔✔ ITEM 17 (`L-535`) — DONE r2572–73, before it was read
 
