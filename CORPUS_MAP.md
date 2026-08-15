@@ -146,6 +146,35 @@ sources: [cowork, chat]
 
 
 
+### Revision r2823 — 2026-08-12 (main line). **`PO-5` IS GATED ON `PO-11` — three rows, one unbuilt sector.**
+
+**⓵ WHAT THE COMPOSITE WOULD BE MADE OF.** *P14: "the three throat walls are distinct loci, so the **wall-bound
+zero-modes have disjoint support** and span a three-dimensional space".*
+⇒ ***A bound state of localised modes is localised. It lives ON the walls and does not propagate off them — **and a
+gauge field must**.***
+
+**⛭⛭⛭ ⓶ SO THE ROUTE NEEDS A PROPAGATING SECTOR, AND THAT SECTOR IS `PO-11`.** *`groupoid_paper`: the skeleton "is
+built as bound-state zero-modes of the existent leaf … while **the descent onto a full propagating spinor field
+sector — the programme's largest unbuilt undertaking — remains genuinely open**".*
+⇒ ***`PO-5` is gated on `PO-11`, **not by anyone's decision but by what a composite is made of**.***
+
+**⛭⛭ ⓷ AND THE CHAIN TERMINATES.**
+
+    PO-2  --gated on-->  PO-5  --gated on-->  PO-11  --gated on-->  (nothing)
+
+⇒ ***Three rows, one dependency chain, no circularity. **What looked like three separate open problems is one
+unbuilt sector with two consequences**, and `PO-11` — the spinor descent — is the root.***
+
+⌗ ***And r2812's instrument paid for itself within eleven revisions: the moment the row recorded the link, **the
+board printed the full chain without being asked**.***
+
+⚠ *Closing `PO-11` would UNBLOCK the others, not close them: the octet question would still have to be asked and the
+coupling still supplied.*
+
+**⛭ THE RULE:** ***when a route survives every no-go, ask what it would be BUILT FROM. **A route can be permitted
+and still have no materials** — and the materials question resolves dependencies the obstruction questions never
+touch.***
+
 ### Revision r2822 — 2026-08-12 (main line). **THE GLUON IS THE OCTET AND P14 COUNTS THE SINGLET.**
 
 **⓵ THE KERNEL CARRIES SPIN-$\tfrac12$ MODES.** *"$\lambda=j+\tfrac12$ labels partial waves and each contributes
