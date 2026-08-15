@@ -67,8 +67,14 @@ def main():
     print()
     p14 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex')))
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
-    po3 = next(l for l in raw.split('\n') if l.startswith('| **PO-3**'))
-    po4 = next(l for l in raw.split('\n') if l.startswith('| **PO-4**'))
+    # ** ⛭ AMENDED c54.224 (`L-558`): the row matcher required the OPEN form `| **PO-n**` and
+    # ** `PO-4` was STRUCK at r2778, so this file died on `StopIteration`. **  It had gone on
+    # ** passing only because `19139ed` duplicated the row and one copy came back UNSTRUCK --
+    # *** so this receipt was reading a resurrected copy of an item the observer line closed. ***
+    # ** A matcher that admits only the open form silently follows whichever copy is open. **
+    _ROWPAT = (lambda t: re.compile(r'\|\s*(?:~~)?\s*\*\*' + re.escape(t) + r'\*\*'))
+    po3 = next(l for l in raw.split('\n') if _ROWPAT('PO-3').match(l))
+    po4 = next(l for l in raw.split('\n') if _ROWPAT('PO-4').match(l))
 
     # the object's two clauses
     check('⓵ the object has TWO clauses: "why does the SdS geometry produce a zero-sum triple with a '

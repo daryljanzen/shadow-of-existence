@@ -2641,3 +2641,70 @@ since carrying `✔✔` is the whole finding. Reworded to "carried ✔✔ until 
 **⌗ WHAT I DID NOT TOUCH.** *Five register/ledger files still carry the stale value and are **routed,
 not edited** — `CORPUS_MAP.md`, `PROTECTED_OPEN.md`, `THE_EVOLUTION_MAP.md`, `PHASE7_BUILD_LEDGER.md`,
 `capstones/THE_WISDOM_LEDGER.md`. The receipt asserts they still do, so the number is the ask.*
+
+---
+
+## ⛔⛔⛔⛭ 43 · THE SAME FOUR ROWS, THE SECOND MERGE RUNNING — AND THIS TIME IT UN-CLOSED `PO-4` — added c54.224
+
+⌷ *`L-555` (c54.221) found `c53be44` duplicating `PO-4`, `PO-5`, `PO-6`, `PO-7`, repaired it, and routed
+it as item 38.* ⇒ ***`19139ed` — "Merge branch 'f222/line/54'", the very next merge — did the same four
+rows again, and it has been live through r2783, r2783a, r2784 and r2785.*** `L-558`, receipt
+`receipts/L558_the_second_duplication/D1_…unclosed_a_struck_item.py` (15 checks).
+
+**⛔ ⓵ AND `PO-4` WAS STRUCK AT r2778.** *After the merge one copy carried `~~PO-4~~` and the other did
+not.* ⇒ ***The register said one item was both closed and open, and read from the top it was open. A
+merge un-closed a determination you had made.***
+
+**⛭ ⓶ WHAT CAUGHT IT — and neither is a gate.** *`L-555`'s own receipt `M1`; and, independently,
+`L-549`'s `Q1`, whose r2738 quotation guard asserts* `po.count('144/80/24') == 1` *and therefore counts
+**two** when `PO-6` is doubled. **A pin on a quotation turns out to be a duplicate detector**, which is
+not what it was for.* ⇒ *Both are receipts, and `run_all_receipts` is not in the standing ten — so the
+detection existed and did not run for four revisions.*
+
+**⓷ WHY NOTHING STANDING SAW IT, and this is the part I would keep.** *`check_row_state`,
+`check_kills`, `check_open_ledger`, `check_family_pointers` and `check_register_columns` all read this
+file. **Every one of them reads it ONE ROW AT A TIME.***
+⇒ ***A row that is perfectly well formed TWICE satisfies every per-row check there is.*** *That is not a
+defect in any of them — it is the hole **between** them, and it is the hole a merge falls through.*
+⌗ *And the mechanism is not the one already known: `.gitattributes` declares `merge=union` on four files
+and warns in its own comment that **"Union merge cannot detect a duplicate ID"** — and
+**`PROTECTED_OPEN.md` is not one of the four**. The known hole was gated; this one had nothing on it.
+The other route is rows tens of thousands of characters long, both nodes editing them, and a conflict
+resolved by keeping both sides.*
+
+**⓸ THE REPAIR, and it is simpler than last time because the merge was clean.** *Neither copy was
+interleaved: `19139ed` kept each parent's row **verbatim**, 4 of 4 byte-for-byte, so no reading was
+needed to say which copy came from where.*
+*· `PROTECTED_OPEN.md` is **identical at `e33c34c` and `d98bf61`** — c54.222 never touched it.*
+*· Your side is later work on the same rows (r2777, r2778, r2780–r2782a).*
+*· And **the fork side's unique tokens are this fork's own c54.221 repair note**, which you pruned
+deliberately — and rightly: a repair note belongs in the arc row and the receipt, not in a protected
+row. The receipt asserts that every substantive token of it survives in `THE_LIVE_ARC`, `FOR_56`,
+`L-551`/`L-555` or the c54.221 commit message.*
+⇒ ***Fork-side copies dropped, your copies kept byte-for-byte. `PO-4`'s strike is restored exactly as it
+stood and is NOT reviewed — r2778's verdict is yours.***
+
+**⌗ BUILT: `corpus/check_protected_dupes.py`.** *It counts IDs and stops. **It does not repair**, because
+at c54.224 only a reader could know which copy was authoritative — a gate that guessed would have kept
+the wrong one here. It also reports when two copies disagree about STATE, which is the half that
+un-closed `PO-4`.* *Verified against the real defect seeded in an isolated tree; restore byte-identical.*
+⇒ **This is the gate `L-555` should have left behind and did not. I said then that no register gate saw
+it and built only a receipt; a receipt that is not in the standing ten is a gate nobody runs.**
+
+**⌗ AND `L-549/Q1` AND `L-555/M1` ARE BOTH GREEN AGAIN with no change to either** — *they were correct
+throughout and the register was wrong, which is the right way round.*
+
+**⛔⛔ AND THE UN-CLOSING WAS NOT COSMETIC — three of your own receipts were reading the resurrected
+copy.** *`L221_the_bridge`'s `B8`, `B14` and `B15` match `PO-4` with* `l.startswith('| **PO-4**')` *— the
+**open** form — and they passed across all four revisions the duplication was live.*
+⇒ ***They were passing BECAUSE the resurrected copy was unstruck. Deduplicating killed all three with
+`StopIteration` on the first read, which is how this half was found.***
+⇒ ***A matcher that admits only the open form silently follows whichever copy is open — so a receipt
+that reads a register by its open marker cannot see a strike, and cannot see a duplicate either.***
+*All three amended to `\|\s*(?:~~)?\s*\*\*PO-n\*\*` and all three pass against the deduplicated register.
+**They are yours; the amendment is three characters of regex and a note, and it is reversible.***
+
+*· And `L-551`'s `R1` (mine) had the same shape one leg over: it pinned the CORRUPT state to a SHA and
+read the REPAIRED state from the working tree, so "the repaired one" moved every time you edited `PO-4`.
+**A before/after measurement needs BOTH ends pinned.** Now pinned to `a83455b` (c54.217), with the
+must-not-regress property still asserted against the live file.*

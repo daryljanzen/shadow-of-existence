@@ -83,8 +83,15 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| `PROTECTED_OPEN.md` | 54 | c54.224 | the four duplicated rows only — `PO-4`, `PO-5`, `PO-6`, `PO-7`, duplicated a SECOND time by `19139ed` |
-| `receipts/L549_coupled_counterterms/Q1_…` · `receipts/L555_merge_duplication/M1_…` | 54 | c54.224 | both are mine and both DETECTED the re-duplication; re-pinned with it |
+| *(none — 54's c54.223 and c54.224 rows released with the work)* | — | — | — |
+
+> ⌗ **54's c54.224 ROWS RELEASED HERE, WITH THE WORK.** *· `PROTECTED_OPEN.md` — **the four duplicated rows
+> only**: the fork-side copies dropped, the observer-side copies kept byte-for-byte, `PO-4`'s r2778 strike
+> restored as it stood and not reviewed. *· `corpus/check_protected_dupes.py` — **new**, seeded in an
+> isolated tree. *· `receipts/L549_.../Q1_…` and `receipts/L555_.../M1_…` — **not edited**: both were
+> correct throughout and both went green the moment the register was repaired, which is the right way
+> round. *· `THE_LIVE_ARC.md`, `receipts/INDEX.md`, `FOR_56.md`, `ABSORPTION.md` — in band, appended,
+> item 43, declaration. *· ⚠ **`receipts/L221_the_bridge/B8`, `B14`, `B15` — CROSS-BAND, three characters of regex each**: they matched `PO-4` by its OPEN form and were reading the resurrected copy; amended to admit the struck form, with a note. *· `receipts/L551_.../R1_…` — mine: its "after" leg read the working tree and is now pinned to `a83455b`.
 
 > ⌗ **54's c54.223 ROWS RELEASED HERE, WITH THE WORK.** *· `corpus/CR_cosmology.tex` — **`sec:envelope-consequence`'s
 > `r` and its two suppression figures only**, plus `r` named inline as `\theta_D/\theta_*` so the two paragraphs

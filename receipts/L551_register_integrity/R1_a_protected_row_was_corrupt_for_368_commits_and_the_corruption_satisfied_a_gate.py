@@ -136,6 +136,15 @@ def main():
     rb, rn = rows_of(before), rows_of(now)
     ob = {k: SPL.split(v)[2] for k, v in rb.items()}
     on = {k: SPL.split(v)[2] for k, v in rn.items()}
+    # ** ⛭ AMENDED c54.224 (`L-558`).  `on` was read from the WORKING TREE, so "the repaired one" moved
+    # ** every time the observer line edited `PO-4` -- r2777 took its route and r2778 STRUCK it, and the
+    # ** measurements below (a 39x widening, the family-6 overlap) are about the state AT THE REPAIR. **
+    #   ⇒ *** A before/after measurement needs BOTH ends pinned.  Pinning only the "before" leaves the
+    #       comparison drifting on one leg, which is the same defect one leg over. ***
+    REPAIRED = 'a83455b'         # c54.217 -- the revision that repaired the row
+    rr = rows_of(git("show", REPAIRED + ":PROTECTED_OPEN.md"))
+    on = {k: SPL.split(v)[2] for k, v in rr.items()}
+    # and the property that must not REGRESS is still asserted against the live file, below.
 
     # ---------------------------------------------------------------- (1) the defect
     check(f'⓵ PO-4\'s OBJECT column was {len(ob["PO-4"])} characters, against {len(ob["PO-6"])} for '
