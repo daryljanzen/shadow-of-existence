@@ -340,6 +340,13 @@ def build():
     return '\n'.join(L) + '\n'
 
 
+def _read_register():
+    """** the register, located relative to this script **"""
+    _r = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                      'PROTECTED_OPEN.md')
+    return open(_r, encoding='utf-8', errors='replace').read()
+
+
 def main():
     new = build()
     if '--check' in sys.argv:
@@ -349,6 +356,25 @@ def main():
             return 1
         print('  BOARD.md matches the register')
         return 0
+    # ** r2832: this generator holds its section text HARDCODED, so a row struck in the
+    # register kept appearing on the board as live work -- and a mark patched in by hand was
+    # wiped by the next regeneration.  *** The strike is read from the register HERE, inside
+    # the generator, or it does not survive. ***
+    _reg = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8',
+                errors='replace').read() if 'ROOT' in globals() else _read_register()
+    _struck = set()
+    for _l in _reg.split('\n'):
+        _m = re.match(r'\|\s*(~~)?\s*\*\*(PO-\d+[a-z]?)\*\*', _l)
+        if _m and (_m.group(1) or _l.lstrip('|').lstrip().startswith('~~')):
+            _struck.add(_m.group(2))
+    for _pid in sorted(_struck):
+        _pat = re.compile(r'^(#+[^\n]*\b' + re.escape(_pid) + r'\b[^\n]*)$', re.M)
+        _note = ("\n\n> \u2317 **\u27e8`" + _pid + "` is STRUCK in `PROTECTED_OPEN` \u2014 this "
+                 "section is the lead's record, not live work. Read the register's "
+                 "`\u25a3 CURRENT STATE` head for its status.\u27e9**")
+        new = _pat.sub(lambda mo, _n=_note: mo.group(1) if 'STRUCK' in mo.group(1)
+                       else mo.group(1) + _n, new)
+
     open(OUT, 'w', encoding='utf-8').write(new)
     rows = live_rows()
     unsorted_n = sum(1 for r in rows if r not in (set(VEINS) | set(LEADS)))

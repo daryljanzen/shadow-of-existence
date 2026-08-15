@@ -58,15 +58,31 @@ def main():
         # ** r2832a: paragraph-splitting flagged table rows and prose that merely NAME a row
         # in passing -- too crude.  *** Check HEADERS and list items, where a document presents
         # a row as live work; a passing mention in a sentence is not a status claim. ***
-        paras = [l for l in t.split('\n')
-                 if re.match(r'\s*(#+|[-*·]|\|)', l)]
+        # ** r2832b: checking the header LINE alone missed a mark written on the line
+        # BELOW it, which is where a note about a section naturally goes.  *** Carry each
+        # header together with the two lines following it. ***
+        # ** r2832c: I tuned this window four times and it kept producing false positives
+        # from list items and prose that merely NAME a row.  *** Anchor on HEADERS ONLY --
+        # a section header is the one place a document unambiguously PRESENTS a row as its
+        # subject, and it is checkable without judging prose. ***
+        # ⌗ ** What this therefore does NOT catch: a struck row discussed as live inside
+        # running prose. **  Stated rather than tuned around.
+        _ls = t.split('\n')
+        # ** r2832d: the +4-line window pulled a row's id in from BELOW an unrelated header
+        # and reported it as that header's subject.  *** The row must be named in the HEADER
+        # LINE itself; the following lines are searched only for the MARK. ***
+        paras = []
+        for i, l in enumerate(_ls):
+            if re.match(r'\s*#+\s', l):
+                paras.append((l, ' '.join(_ls[i:i+4])))
         for para in paras:
+            head, window = para
             for pid in struck:
-                if not re.search(rf'\b{re.escape(pid)}\b', para):
+                if not re.search(rf'\b{re.escape(pid)}\b', head):
                     continue
-                if re.search(r'STRUCK|struck|~~', para) or rev.get(pid, '@@') in para:
+                if re.search(r'STRUCK|struck|~~', window) or rev.get(pid, '@@') in window:
                     continue
-                bad.append((d, pid, re.sub(r'\s+', ' ', para)[:64]))
+                bad.append((d, pid, re.sub(r'\s+', ' ', head)[:64]))
 
     if bad:
         print()
