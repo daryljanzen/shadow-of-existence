@@ -290,3 +290,4 @@ r2791  CLAIMED    PO-5: both walls proved. Is a third mechanism excluded, or jus
 r2791  LATENT      PO-5s two walls are ONE -- p0 derives the no-coupling from the one-constant character.
 r2792  CLAIMED    is exists-but-does-not-act a PATTERN across the board, or two rows?
 r2792  LATENT      six of six open rows share one shape: the object exists, the action is absent. Control passes.
+r2793  LATENT      L-821 gated: 7/40 verified independently. R~R magnitude discrepancy recorded (4.977 vs 4.5).

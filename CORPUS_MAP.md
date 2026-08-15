@@ -146,6 +146,34 @@ sources: [cowork, chat]
 
 
 
+### Revision r2793 — 2026-08-11 (main line). **`L-821` GATED — $7/40$ RE-DERIVED, AND A CROSS-RECEIPT DISCREPANCY RECORDED.**
+
+**⛭⛭ ⓵ THE COEFFICIENT, VERIFIED INDEPENDENTLY.** *cc54 gives `PO-6`'s owed value as $7/40$, the graviton
+$c$-anomaly. Re-basing $b_4=(53/90)E_{GB}+[(7/20)\mathrm{Ric}^2+(1/120)R^2]$ onto $\{E_{GB}, C^2\}$ and solving
+the $\mathrm{Riem}^2$ and $\mathrm{Ric}^2$ rows:*
+
+    x = -7/40,  y = +7/40      the C^2 coefficient is exactly 7/40
+
+⇒ ***Gating meant re-deriving rather than reading. **A number reproducible in four lines is a number one can vouch
+for**; reading the receipt would not have been vouching.***
+
+**⚠ ⓶ AND THE RE-DERIVATION SURFACED A DISCREPANCY NEITHER NODE FLAGGED.**
+
+    R~R on a circular mode:   c54.219 (analytic)          4.977310
+                              L-821  (finite-difference)  4.5000      -- 10.6%
+
+**✔ ⓷ WHAT AGREES IS EVERYTHING LOAD-BEARING:** *zero on linear polarisation, sign-flip with handedness, parity-odd
+and circular-only — **in both**. And the count stays one either way, since a total derivative is topological
+regardless of magnitude.*
+
+⌗ *A $10\%$ gap is the size a finite-difference stencil error takes, so the likely reading is that the analytic
+value stands and `L-821` confirms the STRUCTURE. **Recorded rather than resolved, and load-bearing for neither
+conclusion** — the $\theta$-term is topological and $7/40$ is parity-EVEN.*
+
+**⛭ THE RULE:** ***when two receipts from the same node report one quantity, check whether they agree before either
+is cited. **The discrepancy that matters is not always between nodes** — a number appearing twice in one line's own
+work is exactly the kind nobody diffs.***
+
 ### Revision r2792 — 2026-08-11 (main line). **THE BOARD HAS ONE SHAPE — six of six, and the control holds.**
 
 **⛭⛭ ⓵ THE OBJECT IS PRESENT AND THE ACTION IS ABSENT.**

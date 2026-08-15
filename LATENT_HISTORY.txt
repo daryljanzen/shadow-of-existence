@@ -256,3 +256,4 @@ r2789  COMPUTED    the CR arms peaks sit at spacing 258, not its stored l_A of 3
 r2790  COMPUTED    the stored CR r_s moves the WRONG WAY -- radiation-free must raise it, stored lowers it.
 r2791  LATENT      PO-5s two walls are ONE -- p0 derives the no-coupling from the one-constant character.
 r2792  LATENT      six of six open rows share one shape: the object exists, the action is absent. Control passes.
+r2793  LATENT      L-821 gated: 7/40 verified independently. R~R magnitude discrepancy recorded (4.977 vs 4.5).
