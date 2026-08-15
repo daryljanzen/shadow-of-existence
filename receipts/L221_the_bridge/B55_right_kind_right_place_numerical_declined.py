@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""B55 -- $1/\\sqrt3$ is the right KIND of object in the right PLACE in P14's own dimensional argument,
+"""B55 -- ⛔ **WITHDRAWN r2810 -- THE COMPARISON HAD NO CONTENT.**  *** This receipt put $1/\\sqrt3$ beside
+$\\alpha_s$ and declined the numerical claim "because $\\alpha_s$ runs".  **The running was never the
+problem: $1/\\sqrt3$ is a NORMALISATION CONSTANT ($\\lambda_8$), not a magnitude, so there was nothing
+to compare.**  A wrong setup followed by a principled-sounding refusal to finish it.  See `B56`.
+  ⌗ *What survives: P14's dimensional sentence and the $D=5$/$D=4$ counting are correctly read.* ***
+
+B55 -- $1/\\sqrt3$ is the right KIND of object in the right PLACE in P14's own dimensional argument,
 and this receipt declines the numerical claim on purpose.
 
 ** WHERE THIS ARRIVES. **  *** P14 bounds the third mechanism: "what a third mechanism must deliver is

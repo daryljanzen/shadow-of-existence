@@ -146,6 +146,38 @@ sources: [cowork, chat]
 
 
 
+### Revision r2810 — 2026-08-12 (main line). **IT IS $\lambda_8$ — r2804's AND r2809's LABEL WITHDRAWN.**
+
+**⛔ ⓵ THE NORMALISED NARIAI TRIPLE IS THE GELL-MANN MATRIX.**
+
+    diag(1, 1, -2)/sqrt3      trace = 0,  Tr(T^2) = 2      <- THE standard SU(3) normalisation
+    without the sqrt3         Tr = 6
+
+⇒ ***So the $\sqrt3$ is a **NORMALISATION CONSTANT**, not a magnitude.***
+
+**⛔ ⓶ SO r2809 SET UP THE WRONG COMPARISON AND DECLINED TO COMPLETE IT.** *It put $1/\sqrt3$ beside $\alpha_s$ and
+declined "because $\alpha_s$ runs".*
+⇒ ***The running was never the problem. **A normalisation constant is not the kind of thing a coupling is**, so the
+comparison had no content — a wrong setup followed by a principled-sounding refusal to finish it.***
+⌗ ***A bad setup plus a principled refusal reads exactly like rigour, and is cheaper than either doing the physics
+or admitting the setup is wrong.***
+
+**⛭⛭ ⓷ AND THE CORPUS ALREADY SAYS IT, BETTER.** *`SdS-slicing-curve`: "the root triple lies in the plane … which
+is the **Cartan subalgebra of $\mathfrak{su}(3)$** in its standard realisation, the diagonal traceless matrices".
+`algebroid_paper`: "The three roots summing to zero furnish **a Cartan element** … the Cartan--Weyl skeleton, a
+necessary ingredient".*
+
+**⛭ ⓸ AND THE CORRECTED STATEMENT IS STRONGER THAN THE ONE WITHDRAWN.** *The geometry supplies the Cartan generator
+**correctly normalised**; the zero sum is **tracelessness** (why it is arithmetic, and why that is a feature); the
+$1{:}1{:}{-}2$ pattern is **the direction that commutes with the $SU(2)$ subgroup**, which is why the doubled root
+is doubled.*
+⇒ ***`PO-5` has no coupling candidate and never did. It has confirmation of Cartan--Weyl data — exactly what
+`boundary_paper` calls "Cartan and Weyl data, not the Lie algebra".***
+
+**⛭ THE RULE:** ***before comparing a number to a physical constant, ask what KIND of object it is. **A
+normalisation, a magnitude, a ratio of loci and a coupling are four different things that all print as a decimal**
+— and "is it numerology?" is the wrong question when "what is this?" is unanswered.***
+
 ### Revision r2809 — 2026-08-12 (main line). **$1/\sqrt3$ IS RIGHT KIND, RIGHT PLACE — AND THE NUMERICAL CLAIM IS DECLINED.**
 
 **⛭⛭ ⓵ P14 LOCATES THE OBSTRUCTION AFTER THE DESCENT.** *"$[g^2]=L^{D-4}$, so at the substrate's own $D=5$ a

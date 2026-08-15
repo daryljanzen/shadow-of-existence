@@ -318,3 +318,4 @@ r2808  CLAIMED    cc54 retracts its r^{+/-i lambda}. Does my r2800 verdict rest 
 r2808  COMPUTED    cc54s retraction of r^{+/-i lambda} is load-bearing FOR r2800 -- imaginary indices would have given freedom.
 r2809  CLAIMED    PO-5: does the corpus admit any delivery of colour OTHER than a covering monodromy?
 r2809  COMPUTED    1/sqrt3 is right kind right place in P14s dimensional argument; the numerical claim DECLINED.
+r2810  COMPUTED    the triple is lambda_8 -- a NORMALISATION not a coupling. r2804/r2809 labels withdrawn.
