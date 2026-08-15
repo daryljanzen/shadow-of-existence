@@ -146,6 +146,92 @@ sources: [cowork, chat]
 
 
 
+### Revision r2820 — 2026-08-12 (main line). **THE SPECTRAL ROUTE CLOSES — for r2806's reason.**
+
+**⛔ ⓵ THE INNER FLUCTUATIONS VANISH.**
+
+    H = L^2(r) (x) C^3    the wall kernel over the three sheets
+    D = radial + angular  P14's operator -- acts on r, trivially on the sheet
+    a = 1 (x) g           the algebra acts on the SHEET label
+    => [D, a] = 0 identically,  A = sum a[D,b] = 0,  D -> D + A = D.   NO GAUGE FIELD.
+
+**⛭⛭ ⓶ AND IT IS r2806's OBSTRUCTION IN ANOTHER VOCABULARY.** *A locally-constant algebra has vanishing commutator
+with a derivative operator — **"the covering is flat, so $F=0$"**.*
+⇒ ***Two routes, one reason, two vocabularies. Stronger than two independent closures, because it says the
+obstruction is not route-shaped.***
+
+**⛭⛭⛭ ⓷ AND THE POINT OF DIFFERENCE FROM CONNES IS NAMEABLE.** *He takes $D=D_M\otimes1+\gamma^5\otimes D_F$, and
+**$D_F$ carries the Yukawas and does NOT commute with $\mathcal A_F$** — that non-commutation is the entire source
+of his gauge fields.*
+⇒ ***CR has no $D_F$. P14's operator is radial and angular with no internal part, so there is nothing for the
+algebra to fail to commute with.***
+
+**⓸ AND "NO $D_F$" IS "NO YUKAWA SECTOR", WHICH p0 STATES:** *"the gauge and mass content external".*
+⇒ ***So the closure names its own reopening condition: **a finite Dirac operator on the sheet space that does not
+commute with $\mathbb C[G]$** — a specific missing object, not a mechanism nobody has named.***
+
+⚠ *$J$ and the order-one condition were never reached; the fluctuations vanish upstream of both.*
+
+**⛭ THE RULE:** ***when a new route closes, check whether it closes for the OLD route's reason. **If it does, the
+obstruction is deeper than either route** — and the right output is "one wall, seen twice", which is a different
+and more publishable claim than "another wall".***
+
+### Revision r2819 — 2026-08-12 (main line). **THE RESCALING CANNOT MAKE AN INDEX REAL — cc54's planned route eliminated.**
+
+**⓵ cc54's FLAG AGAINST ITS OWN `L-829` `S1` IS CORRECT, AND MY r2807 GATE PASSED IT.**
+
+    dl/dr = 1/sqrt(f)     -> W(dl/dr) = lambda/r      REAL
+    dl/dr = 1/sqrt(|f|)   -> W(dl/dr) = i lambda/r    IMAGINARY   (f < 0 near the wall)
+
+⌗ ***My gate passed check-2 because it verified the integrand's FORM and not its BRANCH — **the check tested what it
+said, and the claim rested on more than the check**. That is the subtlest way a gate fails.***
+
+**⛭⛭⛭ ⓶ AND THE PLANNED RESCALING IS $f^{-1/4}$.**
+
+    |psi|^2 dl = |P|^2 dx,   dx/dl = f^(-1/2)   =>   psi = P * f^(-1/4)
+    near the wall f ~ -2M/r,  so  f^(-1/4) ~ r^(1/4)      -- a REAL power
+
+⇒ ***A real prefactor shifts an index by a real amount and **cannot change the imaginary part of an exponent**. It
+cannot turn $r^{\pm i\lambda}$ into $r^{\pm\lambda}$. The rescaling is the correct measure conversion and is **not
+where $\pm\lambda$ comes from**.***
+
+**⓷ WHAT REMAINS IS NARROWER.** *Two places an $i$ enters, and they are the same $i$ from two directions: the
+$\omega$-coupling's own $1/\sqrt f$, and **the branch choice in continuing $\sqrt f$ through $f=0$** (r2785: the
+wall sits on the boundary between a static and a non-static region).*
+⇒ ***P14 line 214 works in the $f<0$ region explicitly, so **reading P14's own treatment beats a fifth reduction
+from either line**.***
+
+**⛭ THE RULE:** ***before another line spends a shift on a route, spend four minutes trying to kill it. **A route
+that dies to a four-line computation was never a shift's worth of work** — and the elimination is worth more to them
+than the attempt would have been.***
+
+### Revision r2818 — 2026-08-12 (main line). **THE CORPUS'S WALLS DO NOT COVER THE SPECTRAL ROUTE.**
+
+**⛭⛭ ⓵ THE GRADING AXIOM IS MET.** *$\gamma^5$ squares to 1 and anticommutes with every $\gamma^\mu$, hence with
+$D$.*
+⌗ ***Facts about $\gamma^5$, not about CR. The CR content is that $R=\gamma^5$ is **derived** there (r2779) — the
+corpus's own chirality operator IS the grading a spectral triple requires.***
+
+**⛭⛭⛭ ⓶ AND THE INDEX OBSTRUCTION NAMES ITS OWN HYPOTHESES.** *"The obstruction's load-bearing hypotheses are
+**compactness and a continuous isometry**, not a product or Kaluza--Klein structure."*
+
+    compactness            -- the spectral route makes no compactness claim
+    a continuous isometry  -- the spectral route uses NO isometry; D -> D + A comes from the ALGEBRA
+
+⇒ ***The premise the paper says carries the theorem fails for the route.***
+
+**⓷ AND THE ESCAPE CLAUSE DOES NOT CLASSIFY IT.** *"with the known escapes all abandoning the geometric premise" —
+**Connes' construction is spectral geometry**, geometric in that all data is the triple and not geometric in the
+sense of Riemannian isometry. The corpus does not say which, because it never considered the route.*
+⇒ ***A gap in COVERAGE, not a hole in the argument — **the same shape as r2805's finding about p0**.***
+
+**⓸ SO FOUR OF FIVE ROUTES NOW HAVE A STATED STATUS** — *and the fourth is not closed by the index obstruction, the
+isometry wall, or r2813, **each for a stated reason, none of which is "nobody checked"**.*
+⚠ *Two axioms remain untested: the real structure $J$ and the order-one condition. **Either can kill it.***
+
+**⛭ THE RULE:** ***when a paper states the hypotheses of its own obstruction, that sentence is the map of what the
+obstruction does NOT reach. **Read it as a boundary, not as an aside.****
+
 ### Revision r2816 — 2026-08-12 (main line). **`#558` ADJUDICATED — ONE OPERATOR, AND THE FORK DOES NOT EXIST.**
 
 **⛭⛭ ⓵ `B3`'s TETRAD FIXES EVERY TERM.** *$e^0=\sqrt f\,dt$, $e^1=dr/\sqrt f$, $e^2=r\,d\theta$:*
