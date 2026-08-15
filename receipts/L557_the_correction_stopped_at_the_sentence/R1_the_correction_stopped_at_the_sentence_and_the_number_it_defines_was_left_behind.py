@@ -214,11 +214,11 @@ def main():
           and 'recorded r2376+c54.160 and NOW RESOLVED' in rcpt('C10_highl_ratio.py'))
 
     # ------------------------------------------------------------------ ⓹ the C41 knot
-    a = rcpt('C41_a_tilde_on_a_settled_value_is_a_stale_hedge.py')
+    a = rcpt('C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py')
     b = rcpt('C41_a_tilde_is_stale_when_nothing_competes.py')
     check('⓹ the two r2749 commits allocate `C41` twice and their titles read as opposites: "a tilde '
           'on a settled value is a stale hedge" against "a tilde is stale when nothing competes"',
-          os.path.exists(os.path.join(RD, 'C41_a_tilde_on_a_settled_value_is_a_stale_hedge.py'))
+          os.path.exists(os.path.join(RD, 'C41b_a_tilde_on_a_settled_value_is_a_stale_hedge.py'))
           and os.path.exists(os.path.join(RD, 'C41_a_tilde_is_stale_when_nothing_competes.py')))
     check('⇒ AND THEY ARE ONE RULE AT TWO STATES: the second says a tilde is right while the receipts '
           'DISAGREE; the first says it is stale once they do not',

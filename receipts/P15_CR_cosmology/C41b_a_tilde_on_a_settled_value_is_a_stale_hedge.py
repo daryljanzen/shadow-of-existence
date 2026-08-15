@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""C41 -- A TILDE ON A SETTLED VALUE IS A STALE HEDGE, not honest imprecision -- and r2748 concluded
+"""C41b -- ⌗ **RENAMED r2798 from `C41` (56).**  *** Two receipts written at r2749 shared the
+prefix `C41`.  **The collision is the NAME, not the content** -- this and
+`C41_a_tilde_is_stale_when_nothing_competes` are one rule at two states of the evidence, and
+cc54 settled that at c54.228.  Renamed rather than merged so both statements survive.
+
+C41b -- A TILDE ON A SETTLED VALUE IS A STALE HEDGE, not honest imprecision -- and r2748 concluded
 the opposite one revision earlier.
 
 ** DARYL, r2749: ** "*** Isn't `~301` just a place marker for while the value is not accurately known?

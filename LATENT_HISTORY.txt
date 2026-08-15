@@ -261,3 +261,4 @@ r2794  LATENT      r2793s R~R discrepancy WITHDRAWN -- degree-4 homogeneous, two
 r2795  LATENT      L-822 merged: the CR residual is ACOUSTIC STRUCTURE -- confirms r2789 independently.
 r2796  COMPUTED    PO-11: ONE matching not two -- the inner horizon is infinitely far, the wall is finite.
 r2797  COMPUTED    the wall is EXACTLY CRITICAL -- V -> -1/(4x^2), double root at s=1/2, sqrt(x) and sqrt(x)log x.
+r2798  LATENT      c54.223-228 merged. C41 collision resolved by rename; three grains propagated with content.

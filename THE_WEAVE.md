@@ -1,12 +1,40 @@
 ---
 name: the-weave
 kind: STATE
-current: r2780+c54.220
+current: r2798+c54.228
 current: r2713+c54.215
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
 
-> ## ⛭⛭⛭ r2780 — THE CORRECTION LEDGER, BOTH DIRECTIONS, r2728–r2780
+> ## ⛭⛭⛭ r2798 — THE OVERNIGHT SPAN, AND WHAT IT SAYS ABOUT TWO LINES SHARING A REGISTER
+
+**⛔ THE SAME FOUR ROWS DUPLICATED TWICE, ON CONSECUTIVE MERGES.** *`c53be44` (caught by `c54.221`) and
+`19139ed` (caught by `c54.224`). **And between them this line wrote new work into whichever copy came
+first in the file**, so the two copies diverged a second time — `PO-6`'s r2786+ work went into the copy
+`c54.224` dropped.*
+⇒ ***The recovery cost exactly fifteen tokens, all of them cc54's own `c54.221` note, recorded in four
+other places. **Deduplicating on top of the newer content is the right resolution and it is not
+free.****
+
+**⛭⛭ AND cc54 DECLINED TO PROPAGATE INTO THREE DOCUMENTS THIS LINE HAD JUST REWRITTEN.** *`THE_PLAN` and
+`THE_OPEN_PROBLEMS_LEDGER` at r2776a, `THE_WEAVE` at r2780a — long-line documents, not `merge=union`,
+**the exact shape that duplicated four rows twice**.*
+⇒ ***Leaving a gate RED with the reason stated beats a hollow edit that resets the counter — which is
+r2727's failure by name. **The item was routed with what the six revisions ARE, so the propagation is
+cheap to make rather than expensive to reconstruct.****
+
+**⛭ AND ONE CORRECTION RUNS THE OTHER WAY, ONTO THIS LINE.** *r2755 corrected ten instances of the
+damping percentage and left $r=1.093$ one paragraph later — **the same quantity the corrected sentence
+defines**. Fifteen receipts carried it; eight exited zero because they were pinned to each other and to
+the stale paper.*
+⇒ ***`C10`'s gate was built so the paper and the receipt "cannot drift apart". They didn't. **Both were
+wrong** — a consistency gate between two artefacts is blind to a value they share.***
+
+⌗ ***Correction count for the session now runs cc54→56 seven, 56→cc54 three, Daryl→56 three. **Neither
+line is the auditor of the other**, which remains the only configuration in which the register
+functions as a cold read.***
+
+## ⛭⛭⛭ r2780 — THE CORRECTION LEDGER, BOTH DIRECTIONS, r2728–r2780
 
 **THIS IS THE ONLY MEASURE THAT MATTERS FOR WHETHER TWO STRANDS ARE ONE OBJECT.**
 

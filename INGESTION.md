@@ -298,3 +298,4 @@ r2796  CLAIMED    PO-11: attempt the continuum across the two signature changes.
 r2796  COMPUTED    PO-11: ONE matching not two -- the inner horizon is infinitely far, the wall is finite.
 r2797  CLAIMED    PO-11: the two Frobenius indices at r=0. P14s zero-mode fixes one.
 r2797  COMPUTED    the wall is EXACTLY CRITICAL -- V -> -1/(4x^2), double root at s=1/2, sqrt(x) and sqrt(x)log x.
+r2798  LATENT      c54.223-228 merged. C41 collision resolved by rename; three grains propagated with content.
