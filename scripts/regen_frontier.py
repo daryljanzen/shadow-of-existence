@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2954 (Daryl caught it): **B9s 'still Daryl s' is the person-gate r2830 removed**, and "
-            "I built a classification around it instead of testing it. `S1_all_three_po7_inversion_"
-            "routes_are_closed` retracts it outright: all three ways the 0.408 could be an artefact "
-            "are **closed by computation (L-805, L-807, L-806)**, and **'PO-7 is NOT awaiting a "
-            "decision, and NOTHING IS OWED BY DARYL'**. What remains is a **live progenitor "
-            "derivation of CRPHI** — a technical object.")
+LASTFIND = ("r2955: **`PO-seam` is not a register row** — the ids are PO-1a…PO-12 — so the named "
+            "remainder is receipt-side. And B9 and B7 reconcile once the sides are separated: **the "
+            "freezing argument forces phi in {0, pi} from the FIELD side; CRPHI is the hydrodynamic "
+            "seam datum, and the progenitor derivation says WHICH of the two**. ⇒ **It cannot move "
+            "the verdict: both admissible readings leave 0.408**, and B7 records the default "
+            "CRPHI=0 is already one of them.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

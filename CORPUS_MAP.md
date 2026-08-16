@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2955 — 2026-08-15 (main line). **`PO-seam` IS NOT A ROW, AND THE REMAINDER IT NAMES CANNOT MOVE THE NUMBER.**
+
+*Checked whether `PO-7`'s named remainder lives on another row's object, as `PO-2`'s level 3 turned out to. **The register's ids are `PO-1a`…`PO-12`; there is no `PO-seam`** — it is a receipt-side name.*
+
+**⛭⛭ AND B9 AND B7 RECONCILE ONCE THE SIDES ARE SEPARATED:** *B9's freezing argument forces sin(phi) = 0 **from the FIELD side** — every mode freezes before the crossing; B7's **`CRPHI` is the hydrodynamic initial condition**, a **seam datum**. ⇒ **The field side forces the pair; the progenitor derivation would say WHICH of the two.***
+
+⇒ ***And that is why it cannot move the verdict: B9 measured **both** admissible readings and **"the arm is still 0.4083 away at the NEARER"** one. **A derivation that selects within a pair whose better and worse members both leave 0.408 changes which reading is right, not what the number is.****
+
+**⌗ And B7 records the default is already one of them** — *"it is correct at the default CRPHI = 0"* — *so the derivation's most likely outcome is to confirm the reading already in use.*
+
+⚠ ***So the named remainder is real and is not this row's blocker: a `PO-seam`-side derivation whose two possible answers are both already computed here.***
+
 ### Revision r2954 — 2026-08-15 (main line). **"STILL DARYL'S" IS ALREADY RETRACTED, AND MY LAST TURN ACCEPTED THE RETIRED PERSON-GATE AS A LEGITIMATE ROUTING.**
 
 *Daryl caught it: B9's "still Daryl's" is **the person-gate r2830 removed** — the same rule `C1` and `D1` were marked for at r2900 — **and I built a step-classification around it instead of testing it**.*
