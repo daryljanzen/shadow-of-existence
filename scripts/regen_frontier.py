@@ -37,16 +37,16 @@ EST = {
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
  'PO-7':  ('the first acoustic peak', 3, 2, 3, None,
            'CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840'),
- 'PO-10': ('the scalar remainder', 1, 2, 1, None,
-           'CLEAR -- read M2\'s own bound to settle whether half 1 is answered'),
+ 'PO-10': ('the scalar remainder', 1, 1, 2, None,
+           'CLEAR -- refit half ANSWERED (floor is a prediction); the LIKELIHOOD half is what remains'),
 }
 # ** turns since the last discovery that the problem space was misunderstood, and what it was **
 SINCE = 0
-LASTFIND = ("r2842: `PO-7`'s two numbers were never a contradiction — **the spacing is ℓ-DEPENDENT**. "
-            "The first four gaps give r_s~165, the high-n gaps ~139, and **the peaks ASYMPTOTE to exactly "
-            "ℓ_A = 301.6 by construction**. The 21% deficit is a LOW-ℓ TRANSIENT from compression-shifted "
-            "first peaks — not a global departure — which RECONCILES the row with P15 and remakes the "
-            "open question into: is that transient a prediction or an artefact of the from-onset start?")
+LASTFIND = ("r2843: `PO-10`'s half ① is TWO questions, not one. **The REFIT half is ANSWERED** — M2 "
+            "shows the damping signature is not reabsorbable within priors (ω_b has 1% against a 9% "
+            "effect; Ω_m needs 37%, 'not a refit but a different universe'), and **the floor IS a "
+            "falsifiable prediction the row never carried**. The LIKELIHOOD half is open and M2 "
+            "disclaims it in its own text.")
 
 ORDER = ['PO-11', 'PO-5', 'PO-2', 'PO-1c', 'PO-1d', 'PO-1b', 'PO-1a', 'PO-6', 'PO-7', 'PO-10']
 GROUP = {'PO-11': 'A', 'PO-5': 'A', 'PO-2': 'A',

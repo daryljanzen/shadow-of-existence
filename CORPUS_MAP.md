@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2843 — 2026-08-15 (main line). **`PO-10`'s HALF ① IS TWO QUESTIONS, AND THE REFIT HALF IS ANSWERED.**
+
+**⛔ M2 STATES ITS OWN SCOPE:** *"WHAT THIS IS NOT: a likelihood … **it bounds the reabsorption question and does not settle the verdict**". So half ① as a LIKELIHOOD is open and M2 does not touch it.*
+
+**⛭⛭ BUT THE ROW'S TARGET IS P7's OWN PHRASE — "a PARAMETER REFIT rather than a further calculation" — AND M2 IS THAT REFIT, RUN, WITH THE ANSWER NO.** *$\omega_b$ has 1% of freedom against a ~9% effect; $\Omega_m$ can only absorb it by moving ~37%, **"not a refit but a different universe"**.*
+
+⇒ ***So M2 delivers a falsifiable prediction the row never carried: "the floor IS the prediction — a several-per-cent irreducible shift in $\theta_D/\theta_*$, derived from the corpus's own integrals".***
+
+**⌗ AND A CHECK FELL OUT:** *pinning $\ell_*=301$ from the inherited datum gives $z_{\rm onset}=6873$ against the corpus's 6797 — **1.12%, and not the thing being tested**.*
+
 ### Revision r2842 — 2026-08-15 (main line). **`PO-7`'s TWO NUMBERS WERE NEVER A CONTRADICTION — THE SPACING IS $\ell$-DEPENDENT.**
 
 *cc54's `S1_the_stored_cr_rs…`, read: "the first peaks are compression-shifted; **the mean over the first four gaps gives $r_s\sim165$, the high-$n$ gaps give $\sim139$**, bracketing the stored 135.46" — and **"the peaks asymptote to $\pi D_M/135.46 = 301.6$"**.*
