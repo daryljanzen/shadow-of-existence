@@ -42,13 +42,14 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 1
-LASTFIND = ("r2945 was not a zero — a confirmation, and one the row already held. The 4:3 is **its "
-            "own tally, BUILT AND NEVER PRINTED** (computed-but-unshown, not verified); my direct "
-            "computation gives 1:1; and **both are departures from the 2:1 the falsifier names**, "
-            "so the discrepancy is immaterial. ⌗ The row already said 'the COUNT is dead by its own "
-            "falsifier' and I re-derived it. **Three independent verdicts now stand against the "
-            "seat count.** Last actual move: r2944.")
+SINCE = 0
+LASTFIND = ("r2946: **ALL THREE ways out are dead, and r2944 recorded a dead one as the live "
+            "target.** P03_transverse_space_is_round PART 4: (a) truncation **DEAD** — 'no "
+            "available alternative truncates the tower, because a quotient THINS rungs and CANNOT "
+            "REMOVE THEM'; (b) L-88 **answered NO**; (c) seats-carry-states **DEAD** — **roundness "
+            "is NOT a choice, it is forced by the M=0 member and independently by the SPIN "
+            "STRUCTURE**. L-15s own falsifier FIRES. I read L-90s 'choice' without checking it "
+            "still stood.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

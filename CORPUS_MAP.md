@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2946 — 2026-08-15 (main line). **ALL THREE WAYS OUT ARE DEAD, AND r2944 RECORDED A DEAD ONE AS THE LIVE TARGET.**
+
+*`P03_transverse_space_is_round`, PART 4 — **"THE VERDICT, AND IT GOES AGAINST THE READING I BET ON"**. `L-15` offered three ways to reconcile 15 seats with an infinite tower:*
+
+**· (a) something TRUNCATES the tower** — ***DEAD***: *"even if [roundness] WERE a choice, **no available alternative truncates the tower, because a quotient THINS rungs and CANNOT REMOVE THEM**".*
+**· (b) the tower IS the content, the SM's 15 its lowest level** (`L-88`) — ***answered NO*** *(r2943).*
+**· (c) the seats carry the states, the tower a redundancy** — ***DEAD***: *"**roundness is NOT a choice — it is forced by the family's own $M=0$ member and again, independently, by the SPIN STRUCTURE**".*
+
+⇒ ***"SO (a) IS DEAD AND (c) IS DEAD", and with `L-88` that is all three. **`L-15`'s own falsifier (5) FIRES.****
+
+**⛔ AND r2944 IS WRONG WHERE IT MATTERS:** *I wrote "the corpus names the truncator: a non-round transverse space" and made the truncation question the live target. **That is route (a), and PART 3 kills it twice over.** I read `L-90`'s "roundness is a CHOICE" from `FORK_c54` and did not check whether it still stood — **this receipt discharges `L-90` in the DELETE direction**.*
+
+**⚠ So the seat-versus-tower reconciliation has NO surviving route.** *What stands independently: achirality as the cause of the right-handed mismatch, the octet theorem, the $\nu_R$ place, and the partial-wave reading **as a description of the tower, not a route to 15**.*
+
 ### Revision r2945 — 2026-08-15 (main line). **#576 ANSWERED, AND `PO-5` ALREADY HELD THE VERDICT.**
 
 *Traced the $4{:}3$: `OPEN_PROBLEMS_MAP` records it as **"its own tally, BUILT AND NEVER PRINTED"** — **a computed-but-unshown figure, not a verified one**. My direct one-period computation gives $1{:}1$.*

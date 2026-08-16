@@ -4,11 +4,11 @@
 
 ## ⇒ **4 OPEN · 9 STEPS LEFT** *(was 7 last revision)* **· ~19 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2945 was not a zero — a confirmation, and one the row already held. The 4:3 is **its own tally, BUILT AND NEVER PRINTED** (computed-but-unshown, not verified); my direct computation gives 1:1; and **both are departures from the 2:1 the falsifier names**, so the discrepancy is immaterial. ⌗ The row already said 'the COUNT is dead by its own falsifier' and I re-derived it. **Three independent verdicts now stand against the seat count.** Last actual move: r2944.***
+*⌗ **LAST ACTUAL MOVE — r2946: **ALL THREE ways out are dead, and r2944 recorded a dead one as the live target.** P03_transverse_space_is_round PART 4: (a) truncation **DEAD** — 'no available alternative truncates the tower, because a quotient THINS rungs and CANNOT REMOVE THEM'; (b) L-88 **answered NO**; (c) seats-carry-states **DEAD** — **roundness is NOT a choice, it is forced by the M=0 member and independently by the SPIN STRUCTURE**. L-15s own falsifier FIRES. I read L-90s 'choice' without checking it still stood.***
 
-*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
+> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
 **RUNWAY: 4 of 4 clear now**; 0 gated ().
 

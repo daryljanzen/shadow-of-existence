@@ -468,3 +468,4 @@ r2942  LATENT      quarks and leptons are ONE Dirac spinor in different partial 
 r2943  LATENT      the seat counts last route (L-88) is answered NO; my r2926 sweep missed it by testing for a named row.
 r2944  LATENT      the target is a truncation question; the naive lambda<=3 cut gives 1:1 where the SM needs 4:1. OWED 576 filed.
 r2945  LATENT      the 4:3 is an unprinted tally; both it and 1:1 are departures from 2:1, so the count fails its own falsifier.
+r2946  LATENT      all three L-15 routes dead: roundness is forced, a quotient thins but cannot remove, L-88 answered NO.
