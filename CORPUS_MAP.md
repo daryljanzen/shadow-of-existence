@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2977 — 2026-08-15 (main line). **THE SKY'S ERROR BAR IS STATED, FOR HEIGHTS AND NOT THE PHASE — AND IT MAKES THE ORPHANED 26.6% RESOLVABLE.**
+
+**⛭⛭ `P15_the_height_target_was_below_the_resolution`**, *under "THE SKY'S OWN PEAK-HEIGHT RATIOS, WITH THE ERROR BAR THAT WAS NEVER QUOTED": "**sky ratios 2.2564 +- 0.0772 and 2.2800 +- 0.0737; split 1.03 sigma**" — a ~3.2-3.4% uncertainty on a peak-height ratio — and "**front #2's sub-per-cent height target is RETIRED**" because the sky cannot resolve it.*
+
+**⛔ BUT IT IS THE WRONG QUANTITY FOR `PO-7`'s CLAUSE:** *0.615 is a PHASE intercept in units of the acoustic scale; **3.4% is the uncertainty on a ratio of two HEIGHTS**. The comparison clause two needs is still not made, and no phase error bar has been found.*
+
+**⌗ AND IT LANDS SOMEWHERE ELSE INSTEAD:** *the sky's height resolution is ~3.4%, and **C56's orphaned comb-periodic swing is 26.6% — well above it**. ⇒ **The effect no open row owns is one the sky CAN resolve**, which is the opposite of the sub-per-cent target this receipt retired.*
+
+**⚠ And the receipt's own standard, worth carrying:** *"**a number that cannot be re-derived from the corpus is a claim, not a receipt, whatever file it is printed in**" — written after finding two numbers produced by a script in /tmp and typed in.*
+
 ### Revision r2976 — 2026-08-15 (main line). **THE STRIKE TEST RE-RUN AFTER r2975's COLLAPSE: IT DOES NOT EMPTY THE ROW. AND THE BOARD TABLE WAS STALE.**
 
 *The collapse folds one half of clause three into clause two; **it does not remove the other half**.*

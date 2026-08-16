@@ -22,7 +22,7 @@ EST = {
  'PO-6':  ('the interacting tower — the STRADDLE, asserted and unverified', 1, 1, 4, None,
             'r2976: ONE clause left. Bounded-below ANSWERED (S8); the UV definition MET-NOT-OWED (generic, CRs part 1-dim and shear-limited); Gamma-hats EXISTENCE folds into that (r2975). What remains is the STRADDLE -- CR-specific, load-bearing for P10s decomposition, asserted rather than computed. A BUILD: it needs the interacting spectrum, not a reading'),
  'PO-7':  ('the first peak — one COMPARISON, all inputs supplied', 1, 1, 1, None,
-            'r2976: clause one ANSWERED (no imprint; the phase is FORCED to {0,pi} and DERIVED to 0). Clause two has every input -- deficit PINNED at 0.615, three artefact routes CLOSED by computation, datum band COLLAPSED -- and needs one thing: 0.615 against the skys uncertainty, a comparison made NOWHERE. Note the quantity is CR-vs-LCDM'),
+            'r2977: clause one ANSWERED. Clause two still needs 0.615 against a PHASE error bar, which the corpus does not state -- the skys stated bar is on HEIGHTS (~3.4%), the wrong quantity. Every other input supplied'),
  'PO-10':  ('the scalar remainder — one RUN and one REFIT', 2, 2, 1, None,
             'r2976: the ell>1760 blindness is CLOSED (LMAXL=2512 scores 201 bins; CR not rescued) and the control CONVERGES to 1.18 with its floor cancelling in F3. TWO things left: PRODUCE the odd/even pattern from R_b=0.60 on the identified leg (input already computed), and the FULL-SPECTRUM refit on the banked 215 bins, which everything run so far has not been'),
 }
@@ -41,12 +41,11 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2976: strike test RE-RUN after r2975s collapse — **it does not empty the row.** The "
-            "collapse folds Gamma-hats EXISTENCE into the UV item (met, not owed) and leaves **the "
-            "STRADDLE: CR-specific, unverified, and load-bearing for P10s decomposition, which "
-            "PRESUPPOSES it**. ⌗ Opposite of PO-2s shape — there nothing observable "
-            "distinguished; **here a computation would**. ⇒ DOES NOT STRIKE. And the board table "
-            "was stale: all three rows rebuilt against what they actually hold.")
+LASTFIND = ("r2977: **the skys error bar is stated — for HEIGHTS, not the phase.** P15: sky peak-height "
+            "ratios **2.2564 +- 0.0772 and 2.2800 +- 0.0737, a ~3.4% uncertainty**, which RETIRED a "
+            "sub-per-cent height target. ⛔ Wrong quantity for clause two, which needs a PHASE bar. "
+            "⌗ But it lands elsewhere: **C56s orphaned 26.6% swing is well ABOVE the skys ~3.4% "
+            "height resolution** — the effect no row owns is one the sky CAN resolve.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
