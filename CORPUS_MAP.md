@@ -146,6 +146,22 @@ sources: [cowork, chat]
 
 
 
+### Revision r2920 — 2026-08-15 (main line). **S4 AND r2895 ARE BOTH RIGHT — AND SETTLING IT EXPOSED TWO THRESHOLDS WHERE I HAVE BEEN WRITING ONE.**
+
+*With $\nu=\sqrt{\Gamma+1/4}$ on a $1/x^2$ endpoint:*
+
+    Gamma >= 3/4        nu >= 1        LIMIT-POINT — the extension is UNIQUE
+    -1/4 <= Gamma < 3/4 0 <= nu < 1    LIMIT-CIRCLE — a one-parameter family
+    Gamma < -1/4        nu imaginary   OSCILLATORY — unbounded below
+
+⇒ ***$3/4$ decides EXTENSION UNIQUENESS; $-1/4$ decides OSCILLATION. **Different thresholds, and I have been writing $-1/4$ for both since r2879.** P10 uses both in its own text — "asks nothing of the LIMIT-POINT fibres $\Gamma\ge3/4$" against D4's "keep $\Gamma$ above $-1/4$".***
+
+**⌗ AND THAT SETTLES THE TENSION WITH BOTH STANDING:** *r2895 is right that boundedness and extension uniqueness are different properties — **decided at different thresholds**. S4 is right that **one** piece of work addresses both — **the sub-leading tower determines the spectrum, and the spectrum places it against both at once**.*
+
+⇒ ***The work is one; the properties are two; and the implication runs one way only: $\Gamma\ge3/4$ everywhere ⟹ bounded below AND unique, but bounded below implies neither.***
+
+**⚠ AND THE STAKE MOVES:** *D4's no-free-parameter loss — the canonical extension — **is decided at $3/4$, not $-1/4$**.*
+
 ### Revision r2919 — 2026-08-15 (main line). **TWO DELIVERED POSITIVES `PO-6` DOES NOT CARRY, AND A TENSION WITH r2895 HELD OPEN.**
 
 *Read `S4_the_open_half_is_the_floor` from the top rather than for its verdict — the second look that yielded `PO-7`'s 0.075% cancellation.*

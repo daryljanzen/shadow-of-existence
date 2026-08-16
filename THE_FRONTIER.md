@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2919: **two delivered positives `PO-6` does not carry.** S4: the leading-order form is a **SUM OF SQUARES, manifestly non-negative** — only COMPLETION is open; and the commutation is **STRUCTURAL, not perturbative** (Gamma-hat acts on the tower, the radial part on x), which is stronger than r2846s computed survival. ⚠ And a tension held rather than resolved: **S4 says the two halves are one; r2895 says extension uniqueness and boundedness are independent. Neither addresses the other.*****
+*⌗ **LAST ACTUAL MOVE — r2920: settling S4 against r2895 exposed a THIRD thing — **there are TWO thresholds and I have been writing −1/4 for both since r2879**. With nu = sqrt(Gamma+1/4): **Gamma >= 3/4 is LIMIT-POINT (unique extension); Gamma < −1/4 is OSCILLATORY (unbounded below)**. ⇒ Both r2895 and S4 stand: the properties are two, decided at different thresholds, and **one piece of work — the sub-leading tower — places the spectrum against both**. The no-free-parameter stake is decided at 3/4, not −1/4.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
