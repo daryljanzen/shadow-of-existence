@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2907 — 2026-08-15 (main line). **"THE FULL TRANSFER" IS NOT A STEP — IT IS P15's OWN PROOF STANDARD, AND THREE ARGUED RESULTS AWAIT IT.**
+
+*Scoped the object both group D rows terminate on.*
+
+**⛭⛭ P15 CARRIES A THREE-TIER HONESTY SCHEME:** *"**established** results are verified by direct computation (receipts collected in `computations/perturbation_verify/`, 22 files); **argued** results carry the reasoning and a leading-order computation but are **flagged as not yet proven through the full transfer**; **open** elements are named, not finessed".*
+
+⇒ ***So the transfer is the PROMOTION CRITERION from argued to established — a standard, not a computation.***
+
+**⌗ AND THREE THINGS AWAIT IT, NOT ONE:** *the **null boundary coherence mechanism** (its own receipt bounds itself "mechanism only; full transfer open"); **the low-multipole floor's exact scale** — "leading-order $k_D$ **with an $O(1)$ ambiguity**"; and **the damping signature's observable weight**.*
+
+**⚠ AND THE CONSEQUENCE FOR THE BOARD:** *a standard that promotes three claims, one carrying a stated $O(1)$ ambiguity in its own leading order, **is not a step with a turn count**. The "~20 turns" has nothing behind it for half the remaining work, **and that is now stated rather than implied**.*
+
 ### Revision r2906 — 2026-08-15 (main line). **THE THIRTY BINS ARE NOT DROPPED BY A CHOICE — THE MODEL ENDS THERE — AND THAT MAKES r2896 AND r2898 BOTH PARTLY RIGHT.**
 
 **⛭⛭ `C51`, read from the top:** *"plik_lite TT declares 215 bins spanning $\ell=30$–2508, and exactly 185 survive **when the MODEL ENDS near $\ell=1760$**". ⇒ **The arm scores every bin the model covers. Nothing is discarded by implementation.***

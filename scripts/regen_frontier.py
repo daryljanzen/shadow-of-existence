@@ -24,7 +24,7 @@ EST = {
  'PO-6':  ('the tower: the -1/4 threshold and the shear', 2, 1, 3, None,
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
  'PO-7':  ('the comb: rate REPRODUCES, level offset open', 3, 2, 1, None,
-           'CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840'),
+           'r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE'),
  'PO-10': ('model selection: fix the control, then scan', 2, 1, 1, None,
            'r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights'),
 }
@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2906: **the thirty bins are not dropped — the MODEL ENDS near ell 1760**, and P15 "
-            "names why: the damping signature `awaits the HIGH-ell acoustic transfer`. ⇒ **The gate "
-            "is SCOPE-DEPENDENT and I framed r2896 and r2898 as opposites when both were partly "
-            "right**: the comparison CAN run on the 185 bins, and CANNOT SEE the signature, which "
-            "lives in the thirty it does not reach. **A comparison run where a prediction is "
-            "weakest is not evidence about the prediction, whichever way it comes out.**")
+LASTFIND = ("r2907: **'the full transfer' is not a step — it is P15s own PROOF STANDARD.** The "
+            "paper has three tiers: ESTABLISHED (verified by direct computation), ARGUED (reasoning "
+            "plus a leading-order computation, **flagged as not yet proven through the full "
+            "transfer**), OPEN. ⇒ **Three argued results await it**: the coherence mechanism, the "
+            "low-multipole floor s exact scale (**leading-order k_D with an O(1) ambiguity**), and "
+            "the damping signature s observable weight. **Not estimable as a turn count.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
