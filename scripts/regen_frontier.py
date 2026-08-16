@@ -46,12 +46,12 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 0
-LASTFIND = ("r2865: `PO-1c`'s four orbits have the RIGHT COUNT and the WRONG QUANTITY. P14 disclaims "
-            "it twice — **'nothing here claims a geometric origin for weak isospin as a gauging'** and "
-            "**'T delivers a SPECIES LABEL, not SU(2)_L's chiral action'**. But uud/udd/uuu/ddd are "
-            "an ISOSPIN ladder (I_3 = ±1/2, ±3/2), and **u and d are a doublet, not two species**. "
-            "Same failure shape as r2857: a count that matches while the quantity does not.")
+SINCE = 1
+LASTFIND = ("r2866 was NOT a zero — the count-match sweep came back clean. 14 claims across the six "
+            "open rows; the two defects (r2857 three ratios, r2865 species-vs-isospin) were already "
+            "found, and no third instance exists. The one I suspected — 'monodromies + 3-cycle "
+            "generate SU(3)' — is a distinction `PO-5` ALREADY STATES ('the DISCRETE CONTENT of "
+            "colour' vs 'it is NOT the coupling'). **Last actual move: r2865.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

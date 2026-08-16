@@ -4,11 +4,11 @@
 
 ## ⇒ **6 OPEN · 11 STEPS LEFT** *(was 9 last revision)* **· ~26 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
 
-*⌗ **LAST ACTUAL MOVE — r2865: `PO-1c`'s four orbits have the RIGHT COUNT and the WRONG QUANTITY. P14 disclaims it twice — **'nothing here claims a geometric origin for weak isospin as a gauging'** and **'T delivers a SPECIES LABEL, not SU(2)_L's chiral action'**. But uud/udd/uuu/ddd are an ISOSPIN ladder (I_3 = ±1/2, ±3/2), and **u and d are a doublet, not two species**. Same failure shape as r2857: a count that matches while the quantity does not.***
+*⌗ **LAST ACTUAL MOVE — r2866 was NOT a zero — the count-match sweep came back clean. 14 claims across the six open rows; the two defects (r2857 three ratios, r2865 species-vs-isospin) were already found, and no third instance exists. The one I suspected — 'monodromies + 3-cycle generate SU(3)' — is a distinction `PO-5` ALREADY STATES ('the DISCRETE CONTENT of colour' vs 'it is NOT the coupling'). **Last actual move: r2865.*****
 
-> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
+*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
 **RUNWAY: 6 of 6 clear now**; 0 gated ().
 

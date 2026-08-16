@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2866 — 2026-08-15 (main line). **THE COUNT-MATCH SWEEP CAME BACK CLEAN — AND THIS WAS NOT A ZERO.**
+
+*The defect "a count that matches while the quantity does not" hit twice in three turns (r2857, r2865), so it was hunted as a named class across all six open rows: **14 count-match claims, checked.***
+
+**⛭⛭ RESULT: TWO CONFIRMED, BOTH ALREADY FOUND, NO THIRD INSTANCE.** *`PO-1b`'s one-per-geometry (same quantity both sides, exhibited r2851) · `PO-7`'s 0.79/0.856/0.995 (two $\ell$-regimes, both receipted) · `PO-10`'s $z_{\rm onset}$ 6873 vs 6797 (same quantity, 1.12%) · `PO-6`'s counterterm basis on FRW $k=+1$ ($R=12/\alpha^2$, exactly de Sitter).*
+
+**⛔ AND THE ONE I SUSPECTED IS NOT A DEFECT:** *"the three wall monodromies with the hinge 3-cycle generate $SU(3)$" is a HULL claim where SM colour is a GAUGE group — **but `PO-5` already states exactly that distinction**: "the DISCRETE CONTENT of colour" against "it is NOT the coupling". I would have been re-describing the row.*
+
+⇒ ***So: SINCE = 1. The sweep was worth running and the state did not move. Last actual move r2865.***
+
 ### Revision r2865 — 2026-08-15 (main line). **`PO-1c`'s FOUR ORBITS HAVE THE RIGHT COUNT AND THE WRONG QUANTITY.**
 
 *Tested whether `PO-2`'s answer transfers. **It does not** — the horn carries real extra content (one constituent per hinge in one simultaneity; the three colours mutually spacelike; the isospin-partner relation as CAUSAL CONTACT). So: is any of it observable?*
