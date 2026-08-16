@@ -43,12 +43,11 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2932: the r2931 hole STANDS — **33 statements mention the transient and none "
-            "propagates +142 into a dC/C**. And B5 caveats r2877: **all 23 datum-scan spectra stop "
-            "at ell ~ 996 and ZERO reach peak 8**, so 'the scan moves the TRANSIENT region "
-            "demonstrably; whether it moves the ASYMPTOTIC intercept is UNTESTED'. ⇒ P15s "
-            "3%-under-31% stability **may be about the transient, not the asymptotic phase**, and "
-            "the row carried it as the latter. B5 names the fix: 2–3 seam phases at depth.")
+LASTFIND = ("r2933 SETTLED: the 3%-under-31% stability is measured on **MEAN PEAK SPACING over 3–4 "
+            "peaks** — the transient region — and on **the ~20% spacing deficit B4 WITHDREW in the "
+            "same revision I recorded the stability**. ⇒ r2877s 'the phase is the constructions and "
+            "is the whole of the disagreement' is **a statement about the low-ell transient, not "
+            "the asymptotic phase**, which remains untested. The row carried it as the latter.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2933 — 2026-08-15 (main line). **SETTLED: THE 3%-UNDER-31% STABILITY IS MEASURED ON THE TRANSIENT, AND ON A QUANTITY B4 SUBSEQUENTLY WITHDREW.**
+
+*Traced r2877's stability claim to `P15_the_spacing_deficit_survives_the_one_fitted_number` and read what it measures.*
+
+**⛭⛭ IT MEASURES MEAN PEAK SPACING:** *"the peak spacing at $0.798\pm0.028$ of $\ell_A$ and never above $0.821$", "the mean peak spacing stays between $0.7647$ and $0.8205$ of $\ell_A$" — **explicitly framed as "the ~20% SPACING DEFICIT"**.*
+
+**⛔⛔ AND B4 WITHDREW THAT FIGURE AT r2877, IN THE SAME REVISION I RECORDED THE STABILITY:** *"the disagreement is entirely in the FIRST THREE GAPS, level at ~0.98 from the fourth … **THE ~21%/23% FIGURE IS WITHDRAWN**", with the asymptotic spacing at depth being **0.975**.*
+
+⇒ ***So the stability is measured on a mean over three or four peaks (B5: all 23 scan spectra stop at $\ell\sim996$) — **which IS the transient region** — of a quantity that at depth turns out to be right to 2.5%.***
+
+**⌗ SO r2877's HEADLINE IS RESTATED:** *"the phase is the construction's and is the whole of the disagreement" is **a statement about the low-$\ell$ transient**, not the asymptotic phase — **which B5 says the scan cannot reach and which remains untested**. This row has carried it as the latter since r2877.*
+
+**⚠ And the two are consistent once separated:** *the transient's phase IS the construction's and IS stable under the pin; **whether the asymptotic $0.62\pi$ intercept is also the construction's is the unrun 2–3-phase experiment**.*
+
 ### Revision r2932 — 2026-08-15 (main line). **THE r2931 HOLE STANDS, AND B5 CAVEATS SOMETHING RECORDED AT r2877.**
 
 *Looked before proposing: **33 statements mention the transient across the receipts and NONE propagates $+142$ into a $dC/C$**. Every one is positional. **The elimination gap is real and unrun.***
