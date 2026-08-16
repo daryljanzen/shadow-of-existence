@@ -42,10 +42,11 @@ EST = {
 }
 # ** turns since the last discovery that the problem space was misunderstood, and what it was **
 SINCE = 0
-LASTFIND = ("r2841: `PO-7`'s deficit was ALREADY ESTABLISHED and phase-robust — B3's scan gives "
-            "'0.79 ± 0.04 of ℓ_A across every phase, AND NEVER 1.0', a ~21% deficit. But L-830's "
-            "pin test gives 0.856, which sits OUTSIDE that band. Two runs, one name, different "
-            "numbers.")
+LASTFIND = ("r2842: `PO-7`'s two numbers were never a contradiction — **the spacing is ℓ-DEPENDENT**. "
+            "The first four gaps give r_s~165, the high-n gaps ~139, and **the peaks ASYMPTOTE to exactly "
+            "ℓ_A = 301.6 by construction**. The 21% deficit is a LOW-ℓ TRANSIENT from compression-shifted "
+            "first peaks — not a global departure — which RECONCILES the row with P15 and remakes the "
+            "open question into: is that transient a prediction or an artefact of the from-onset start?")
 
 ORDER = ['PO-11', 'PO-5', 'PO-2', 'PO-1c', 'PO-1d', 'PO-1b', 'PO-1a', 'PO-6', 'PO-7', 'PO-10']
 GROUP = {'PO-11': 'A', 'PO-5': 'A', 'PO-2': 'A',
@@ -85,6 +86,14 @@ def main():
              f'{SINCE}**\n')
     if SINCE == 0:
         L.append(f'*⌗ **{LASTFIND}***\n')
+        # ** r2842, Daryl: while this counter reads 0 the step and turn estimates above are
+        # NOT TRUSTWORTHY -- each 0 means the problem space itself moved, so the estimates were
+        # made against a picture that has since changed.  *** They become meaningful only once
+        # the counter starts rising, and saying so on the board is the honest form. ***
+        L.append('> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT '
+                 'TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were '
+                 'made against a picture that has since changed. **They acquire meaning only when '
+                 'this counter starts rising** — that is what the counter is for.*\n')
     else:
         L.append('*⚠ **Above 0 means the last turn advanced a step without learning the space. '
                  'Pick the row held LEAST well next, not the one nearest closing.***\n')

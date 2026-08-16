@@ -365,3 +365,4 @@ r2838  LATENT      PO-6s tension reduces to one commutator at higher order; THE_
 r2839  LATENT      PO-7 asks what P15 answers; its 0.856 deficit contradicts P15s own completeness claim.
 r2840  LATENT      PO-7s candidate mechanism eliminated: driving is amplitudes, ell_A is spacing. Tension stands.
 r2841  LATENT      PO-7s deficit was established phase-robust at 0.79+/-0.04; L-830s 0.856 sits outside that band.
+r2842  LATENT      PO-7s spacing is ell-dependent; peaks asymptote to ell_A. The deficit is a low-ell transient.

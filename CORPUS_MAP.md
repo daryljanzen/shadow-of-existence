@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2842 — 2026-08-15 (main line). **`PO-7`'s TWO NUMBERS WERE NEVER A CONTRADICTION — THE SPACING IS $\ell$-DEPENDENT.**
+
+*cc54's `S1_the_stored_cr_rs…`, read: "the first peaks are compression-shifted; **the mean over the first four gaps gives $r_s\sim165$, the high-$n$ gaps give $\sim139$**, bracketing the stored 135.46" — and **"the peaks asymptote to $\pi D_M/135.46 = 301.6$"**.*
+
+⇒ ***B3 measures the first four peaks (the TRANSIENT) and gets 0.79±0.04; the pin test's 0.856 is a different range of the same $\ell$-dependent curve. Two runs, two regimes, both right.***
+
+**⛔ AND THAT REMAKES THE ROW'S HEADLINE.** *It carried "the peaks are not where the arm's own $\ell_A$ says". **The peaks ASYMPTOTE to exactly $\ell_A$ by construction.** The deficit is a LOW-$\ell$ TRANSIENT.*
+
+⇒ ***Which RECONCILES the row with P15 — "the observed peaks reduce to flat $\Lambda$CDM's" is an asymptotic claim and the arm meets it asymptotically. The open question becomes: are the compression-shifted first peaks a PREDICTION or an artefact of the from-onset start?***
+
 ### Revision r2841 — 2026-08-15 (main line). **`PO-7`'s DEFICIT WAS ALREADY ESTABLISHED AND PHASE-ROBUST — AND TWO RUNS DISAGREE ON ITS VALUE.**
 
 **⛭⛭ `B3_a_dichotomy_stated_is_not_a_dichotomy_proved` SCANS THE ONE FREE DATUM** *— the first-peak modes are already sub-horizon at `Z_START`, so their PHASE is assigned — across nine states. **What survives: "the SPACING spreads only 1.11×, sits at 0.79 ± 0.04 of $\ell_A$ across every phase that has four peaks, AND IS NEVER 1.0 — a ~21% deficit surviving every reading".***

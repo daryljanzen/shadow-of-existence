@@ -6,7 +6,9 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **r2841: `PO-7`'s deficit was ALREADY ESTABLISHED and phase-robust — B3's scan gives '0.79 ± 0.04 of ℓ_A across every phase, AND NEVER 1.0', a ~21% deficit. But L-830's pin test gives 0.856, which sits OUTSIDE that band. Two runs, one name, different numbers.***
+*⌗ **r2842: `PO-7`'s two numbers were never a contradiction — **the spacing is ℓ-DEPENDENT**. The first four gaps give r_s~165, the high-n gaps ~139, and **the peaks ASYMPTOTE to exactly ℓ_A = 301.6 by construction**. The 21% deficit is a LOW-ℓ TRANSIENT from compression-shifted first peaks — not a global departure — which RECONCILES the row with P15 and remakes the open question into: is that transient a prediction or an artefact of the from-onset start?***
+
+> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
 **RUNWAY: 7 of 10 clear now**; 3 gated (PO-5→PO-11, PO-2→PO-5, PO-1d→PO-1c).
 
