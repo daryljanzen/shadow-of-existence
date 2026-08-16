@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2939 — 2026-08-15 (main line). **`OWED` #574 ANSWERED — AND THE REAL DEFECT WAS A NUMBERING COLLISION OF MY OWN.**
+
+*Went to the one item I had filed and never worked, expecting a zero to be hiding there.*
+
+**⛭⛭ THE ANSWER:** *of the 71 receipts mentioning "owed", **only 8 name an OPEN row** — and **every `OWED` number those 8 cite (454, 472, 496, 518) is CLOSED in the file**. The rest is past-tense prose, discharge language, or debts on **struck** rows.*
+
+⇒ ***So the "71 against 1" discrepancy that motivated the item was **my text matching, not a lost list**. `OWED.md` holds 73 entries and its bookkeeping is sound.***
+
+**⛔ AND THE REAL DEFECT WAS MINE:** *I filed at r2913 under **(574) — a number already held by an r2818 `PO-5` item** — creating a duplicate. **Renumbered 575, answered, closed.***
+
+**⌗ AND THE DETECTOR FAILED ITS NEGATIVE CALIBRATION AGAIN:** *it called `B30` live, whose debt names "the search `PO-4` owed" — **and `PO-4` is struck**. §⑤·6 caught it before the count was reported.*
+
 ### Revision r2938 — 2026-08-15 (main line). **`PROPAGATION_QUEUE` OPENED — TWO CORPUS-FACING ITEMS, HELD; THREE RECEIPT NOTES, PLACED.**
 
 *Daryl: propagation "would have to be done meaningfully and intentionally at the right time". **The release condition is stated before the content, so the queue is not a way of forgetting.***

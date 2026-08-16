@@ -400,3 +400,4 @@ r2935  LATENT      group D is one geometry: transient below 500, model edge at 1
 r2936  LATENT      PO-5 as one statement: 12 forced legs, 4 vs 5, one pair wide, cause is achirality, build is the second polarization.
 r2937  LATENT      PO-6 as one statement; all four rows now carry theirs once. The construction turns on a 1/2 margin.
 r2938  INSTRUMENT  PROPAGATION_QUEUE opened: 2 corpus items held, 3 receipt scope notes placed, release condition stated.
+r2939  LATENT      OWED 574 answered: the 71-vs-1 gap was text matching; the real defect was my own numbering collision.

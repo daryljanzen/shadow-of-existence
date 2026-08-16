@@ -42,13 +42,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 4
-LASTFIND = ("r2938 recorded rather than found: **`PROPAGATION_QUEUE` opened**, with the release "
-            "condition stated BEFORE the content — do not edit the corpus while the picture moves, "
-            "the case being r2912–r2914. **Two corpus-facing items** (P10s −1/4-vs-3/4 conflation; "
-            "P15s k_D symbol inside a low-ell clause), **three receipt scope notes PLACED**, four "
-            "register-only blocks. Both corpus items are the same kind: **a symbol used in a clause "
-            "that means something else**. Last actual move: r2933.")
+SINCE = 0
+LASTFIND = ("r2939: **OWED #574 answered, and the real defect was MINE.** Of 71 receipts mentioning "
+            "'owed', only **8 name an open row**, and **every OWED number they cite (454, 472, 496, "
+            "518) is CLOSED** — the rest is past-tense prose or debts on struck rows. ⛔ And **I "
+            "filed at r2913 under (574), a number already held by an r2818 PO-5 item**, creating a "
+            "duplicate. Renumbered 575 and closed. ⌗ My detector also called B30 live, whose debt "
+            "names the struck PO-4 — calibration failed on the negative case.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

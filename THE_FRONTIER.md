@@ -4,11 +4,11 @@
 
 ## ⇒ **4 OPEN · 9 STEPS LEFT** *(was 7 last revision)* **· ~19 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 4**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2938 recorded rather than found: **`PROPAGATION_QUEUE` opened**, with the release condition stated BEFORE the content — do not edit the corpus while the picture moves, the case being r2912–r2914. **Two corpus-facing items** (P10s −1/4-vs-3/4 conflation; P15s k_D symbol inside a low-ell clause), **three receipt scope notes PLACED**, four register-only blocks. Both corpus items are the same kind: **a symbol used in a clause that means something else**. Last actual move: r2933.***
+*⌗ **LAST ACTUAL MOVE — r2939: **OWED #574 answered, and the real defect was MINE.** Of 71 receipts mentioning 'owed', only **8 name an open row**, and **every OWED number they cite (454, 472, 496, 518) is CLOSED** — the rest is past-tense prose or debts on struck rows. ⛔ And **I filed at r2913 under (574), a number already held by an r2818 PO-5 item**, creating a duplicate. Renumbered 575 and closed. ⌗ My detector also called B30 live, whose debt names the struck PO-4 — calibration failed on the negative case.***
 
-*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
+> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
 **RUNWAY: 4 of 4 clear now**; 0 gated ().
 
