@@ -4,11 +4,11 @@
 
 ## ⇒ **3 OPEN · 6 STEPS LEFT** *(was 5 last revision)* **· ~8 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2972 was not a zero — it settled #578 against my own edit and both claims stood. **The deficiency statement PRESUPPOSES the straddle**: with no fibre below 3/4 the sub-threshold subspace is empty and 'that subspace rather than a line' is vacuous. So the location is open **as a verification of P10s own assertion**. And **D1 is right that GIVEN the straddle the SIZE cannot break the closure**. Edit sharpened, not reverted; compiles clean. Last actual move: r2971.***
+*⌗ **LAST ACTUAL MOVE — r2973: **S3 says the commutation is a LEADING-ORDER statement; r2919 recorded it as STRUCTURAL.** S3: 'NOT claimed ... that the commutation survives interaction — D1 states it at leading order, and that is the towers own question'. ⚠ And it is **upstream of the whole row**: the direct-integral decomposition REQUIRES it, so the fibre picture, D1s per-fibre closure, the straddle, **and the sentence I just wrote into P10 citing D1** all rest on the answer. OWED #579.***
 
-*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
+> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
 **RUNWAY: 3 of 3 clear now**; 0 gated ().
 
@@ -27,7 +27,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-6** | the interacting tower — one clause of three open | **1** ↓1 | 2 | 3 ⚠ | BUILD | 10 | — | CLEAR -- reduced r2838 to ONE commutator at higher order |
+| **PO-6** | the interacting tower — one clause of three open | **1** ↓1 | 2 | 3 ⚠ | BUILD | 11 | — | CLEAR -- reduced r2838 to ONE commutator at higher order |
 
 ### D · COSMOLOGY — independent, and the only group confronted with data.
 

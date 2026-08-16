@@ -40,13 +40,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 1
-LASTFIND = ("r2972 was not a zero — it settled #578 against my own edit and both claims stood. **The "
-            "deficiency statement PRESUPPOSES the straddle**: with no fibre below 3/4 the "
-            "sub-threshold subspace is empty and 'that subspace rather than a line' is vacuous. So "
-            "the location is open **as a verification of P10s own assertion**. And **D1 is right "
-            "that GIVEN the straddle the SIZE cannot break the closure**. Edit sharpened, not "
-            "reverted; compiles clean. Last actual move: r2971.")
+SINCE = 0
+LASTFIND = ("r2973: **S3 says the commutation is a LEADING-ORDER statement; r2919 recorded it as "
+            "STRUCTURAL.** S3: 'NOT claimed ... that the commutation survives interaction — D1 "
+            "states it at leading order, and that is the towers own question'. ⚠ And it is "
+            "**upstream of the whole row**: the direct-integral decomposition REQUIRES it, so the "
+            "fibre picture, D1s per-fibre closure, the straddle, **and the sentence I just wrote "
+            "into P10 citing D1** all rest on the answer. OWED #579.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

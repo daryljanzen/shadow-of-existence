@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2973 — 2026-08-15 (main line). **S3 SAYS THE COMMUTATION IS A LEADING-ORDER STATEMENT; r2919 RECORDED IT AS STRUCTURAL. THE DIFFERENCE IS UPSTREAM OF EVERYTHING ON `PO-6`.**
+
+*Went looking for whether the straddle is computable and found `S3_c6_is_a_theorem_not_a_condition`'s closing caveat instead:*
+
+**⛔** *"**NOT claimed: that the five are jointly satisfiable, nor that THE COMMUTATION SURVIVES INTERACTION — D1 states it at LEADING ORDER, and that is the tower's own question**".*
+
+⇒ ***Against r2919, which I took from S4: "the commutation is STRUCTURAL, not perturbative — Gamma-hat acts on the TOWER, the radial part on x, so they commute because they act on different factors" — and I called that stronger than r2846's computed survival.***
+
+**⚠⚠ AND IT IS UPSTREAM OF THE WHOLE ROW:** *the direct-integral decomposition **requires** the commutator to vanish. If that holds only at leading order, then **the fibre-by-fibre picture is a leading-order picture** — including D1's per-fibre closure, the straddle statement, **and the sentence just written into P10 citing D1**.*
+
+**⌗ I recorded "structural" at r2919 without noticing S3 says otherwise**, *and then built four revisions and a paper edit on the fibre picture. **This is the negative-half defect inverted: I took a receipt's strong reading and did not check the receipt that qualifies it.** Filed as `OWED` #579.*
+
 ### Revision r2972 — 2026-08-15 (main line). **#578 SETTLED: BOTH CLAIMS STAND, ABOUT DIFFERENT THINGS, AND THE EDIT IS SHARPENED RATHER THAN REVERTED.**
 
 *Tested P10's "deficiency that subspace rather than a line" against the three cases: **straddle** — a proper non-empty subspace, the contrast meaningful; **no fibre below three-quarters** — the subspace **EMPTY**, the deficiency **zero**, the contrast **vacuous**; **every fibre below** — the whole tower, the contrast saying nothing.*
