@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2940: **six of the 125 citations pointed at nothing** — four TRUNCATIONS and two AMBIGUOUS stubs (`L212` prefixes two distinct receipts). All mine, all from quoting titles as I read them rather than as they are. ⇒ **A citation that does not resolve is not a citation** — the point of raising the ratio 51→125 was that a reader can go and read the thing. All six fixed; `check_citations_resolve` built, seeded and wired.***
+*⌗ **LAST ACTUAL MOVE — r2941: **I built `PO-5`s one statement on 'the 12 legs are FORCED' and three documents say the count did not land.** THE_BASE_RATE: the seat count **✗ DID NOT SURVIVE**. FORK_c54: **THE COUNT IS NOT LANDED**. P03_transverse_space_is_round: it was a **BET resting entirely on roundness being a free choice**. ⇒ What I read as delivered is **the favoured side of a named fork**. Found by a quote-accuracy sweep that also caught a sixth transcription error — the passage is in INDEX.md, not FORK_c54.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -17,7 +17,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-5** | the five multiplets — two content steps | **2** ↓1 | 3 | 4 ⚠ | BUILD | 34 | — | r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet |
+| **PO-5** | the five multiplets — two content steps | **2** ↓1 | 3 | 4 ⚠ | BUILD | 35 | — | r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet |
 
 ### B · THE 2+1 CLUSTER — four readings of two splits. Independent of A.
 

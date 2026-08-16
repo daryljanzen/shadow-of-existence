@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2941 — 2026-08-15 (main line). **I BUILT `PO-5`'s ONE STATEMENT ON "THE 12 LEGS ARE FORCED", AND THREE DOCUMENTS SAY THE COUNT DID NOT LAND.**
+
+*A quote-accuracy sweep found the passage is in `INDEX.md`, not `FORK_c54.md` where I attributed it — **a sixth transcription error** — and the search surfaced what the attribution error hid.*
+
+**⛔⛔ `THE_BASE_RATE.md`, on its own claim ledger:** *"the seat count (`L-15`: 12 null legs + 3 walls = 15 = one SM generation) | ADDS | **✗ DID NOT SURVIVE**".*
+
+**⛔ `FORK_c54.md`:** *"**THE COUNT IS NOT LANDED**, and the conflict is named rather than smoothed: the SEAT count and the MODE count **answer different questions**".*
+
+⇒ ***And `P03_transverse_space_is_round` names it as a bet: "`L-15` observed that 12+3=15 matches one SM generation, and **BET that the mode tower was a redundancy — a bet RESTING ENTIRELY ON ROUNDNESS BEING A FREE CHOICE**".***
+
+**⌗ SO WHAT r2925 READ AS A DELIVERED POSITIVE IS THE FAVOURED SIDE OF A NAMED FORK.** *`INDEX.md`'s own words: "three ways out stated, with the new one … **FAVOURED because** 3 walls and 12 legs are forced" — **a reason for preferring an option, inside a fork the corpus says is not landed**.*
+
+**⚠ r2936's one statement opens with it and everything after inherits it.** *The factorisation and the one-pair mismatch stand on their own receipts; **the word FORCED does not**.*
+
 ### Revision r2940 — 2026-08-15 (main line). **SIX OF THE 125 CITATIONS POINTED AT NOTHING, ALL MINE.**
 
 *`check_owed_rows_live` caught two; a sweep of all 125 found six.*

@@ -43,11 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2940: **six of the 125 citations pointed at nothing** — four TRUNCATIONS and two "
-            "AMBIGUOUS stubs (`L212` prefixes two distinct receipts). All mine, all from quoting "
-            "titles as I read them rather than as they are. ⇒ **A citation that does not resolve is "
-            "not a citation** — the point of raising the ratio 51→125 was that a reader can go and "
-            "read the thing. All six fixed; `check_citations_resolve` built, seeded and wired.")
+LASTFIND = ("r2941: **I built `PO-5`s one statement on 'the 12 legs are FORCED' and three documents "
+            "say the count did not land.** THE_BASE_RATE: the seat count **✗ DID NOT SURVIVE**. "
+            "FORK_c54: **THE COUNT IS NOT LANDED**. P03_transverse_space_is_round: it was a **BET "
+            "resting entirely on roundness being a free choice**. ⇒ What I read as delivered is "
+            "**the favoured side of a named fork**. Found by a quote-accuracy sweep that also "
+            "caught a sixth transcription error — the passage is in INDEX.md, not FORK_c54.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

@@ -402,3 +402,4 @@ r2937  LATENT      PO-6 as one statement; all four rows now carry theirs once. T
 r2938  INSTRUMENT  PROPAGATION_QUEUE opened: 2 corpus items held, 3 receipt scope notes placed, release condition stated.
 r2939  LATENT      OWED 574 answered: the 71-vs-1 gap was text matching; the real defect was my own numbering collision.
 r2940  INSTRUMENT  six of 125 citations did not resolve (truncations and an ambiguous stub); check_citations_resolve built.
+r2941  LATENT      the FORCED 12-legs premise is the favoured side of an unlanded fork; THE_BASE_RATE says the seat count did not survive.
