@@ -42,13 +42,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 0
-LASTFIND = ("r2914: **r2913 AND r2912 are both withdrawn.** `PO-12`s strike answers both: the "
-            "9.4-vs-10.8 gap is **an ANGLE ratio against a LENGTH ratio — no discrepancy at all** "
-            "(r2700), bracketed [7.0,13.1] at r2689; and T1s 'run the two against each other' is "
-            "the last named piece, **shown to have NO INTEGRAND** (r2701, symbolic). ⇒ `PO-7`s step "
-            "② is the RELOCATED acoustic-phase clause, **not a transfer**. I filed C41s 'Owed' "
-            "without checking it had been superseded.")
+SINCE = 1
+LASTFIND = ("r2915 was NOT a zero: I had every piece and had not put them together. P15 names only "
+            "**PEAK POSITIONS** (spacing, the 0.62-pi offset, intercepts) so 'the whole of the "
+            "disagreement' means the whole of the POSITION one; C56 names only **POWERS** (dC/C "
+            "0.20% against a 26.6% swing). Two observables, no contradiction — **and r2897 said it "
+            "three revisions earlier: a phase is where a peak SITS, an amplitude is how TALL it "
+            "is.** Last actual move: r2914.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

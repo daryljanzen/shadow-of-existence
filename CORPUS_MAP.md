@@ -146,6 +146,22 @@ sources: [cowork, chat]
 
 
 
+### Revision r2915 — 2026-08-15 (main line). **P15 AND C56 DO NOT CONTRADICT — THEY ARE ABOUT POSITIONS AND POWERS, AND r2897 ALREADY SAID SO.**
+
+*r2877 recorded both in one revision without noticing the apparent tension. Read as claims rather than slogans:*
+
+**⛭⛭ P15 NAMES ONLY PEAK POSITIONS** — *the asymptotic SPACING at 98% of the acoustic rate, the PHASE OFFSET of $0.62\pi$, the intercepts — so **"the phase is the whole of the disagreement" means the whole of the POSITION disagreement**.*
+
+**⛭⛭ C56 NAMES ONLY POWERS** — *median $\lvert dC/C\rvert = 0.20\%$ against **a measured 26.6% swing**, with peak positions explaining **under 1% of it**.*
+
+⇒ ***Two different disagreements on two different observables. No contradiction.***
+
+**⌗ AND THE RECONCILIATION WAS WRITTEN THREE REVISIONS EARLIER, AT r2897:** *"**a phase offset is where a peak SITS; an amplitude is how TALL it is**" — established when testing whether this row's two steps were one, then not applied when the same distinction resurfaced.*
+
+⇒ ***So the two steps are confirmed a second way, from opposite directions: **① the POSITION side** (the $0.62\pi$ phase, and P15 says it is the whole of that side); **② the POWER side** (the 26.6% swing, and C56 says comb-periodic amplitude is what remains).***
+
+⚠ *SINCE = 1: I had every piece and had not put them together. The space did not move.*
+
 ### Revision r2914 — 2026-08-15 (main line). **r2913 AND r2912 ARE BOTH WITHDRAWN — `PO-12`'s STRIKE ANSWERS BOTH.**
 
 *`PO-12`'s object is **"the bespoke transfer — CR_cosmology's own named debt"**, the identical object `T1` names. Its strike settles three things this line has been re-deriving.*

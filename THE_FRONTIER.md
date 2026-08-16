@@ -4,11 +4,11 @@
 
 ## ⇒ **4 OPEN · 9 STEPS LEFT** *(was 7 last revision)* **· ~19 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
 
-*⌗ **LAST ACTUAL MOVE — r2914: **r2913 AND r2912 are both withdrawn.** `PO-12`s strike answers both: the 9.4-vs-10.8 gap is **an ANGLE ratio against a LENGTH ratio — no discrepancy at all** (r2700), bracketed [7.0,13.1] at r2689; and T1s 'run the two against each other' is the last named piece, **shown to have NO INTEGRAND** (r2701, symbolic). ⇒ `PO-7`s step ② is the RELOCATED acoustic-phase clause, **not a transfer**. I filed C41s 'Owed' without checking it had been superseded.***
+*⌗ **LAST ACTUAL MOVE — r2915 was NOT a zero: I had every piece and had not put them together. P15 names only **PEAK POSITIONS** (spacing, the 0.62-pi offset, intercepts) so 'the whole of the disagreement' means the whole of the POSITION one; C56 names only **POWERS** (dC/C 0.20% against a 26.6% swing). Two observables, no contradiction — **and r2897 said it three revisions earlier: a phase is where a peak SITS, an amplitude is how TALL it is.** Last actual move: r2914.***
 
-> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
+*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
 **RUNWAY: 4 of 4 clear now**; 0 gated ().
 
