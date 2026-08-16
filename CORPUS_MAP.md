@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2841 — 2026-08-15 (main line). **`PO-7`'s DEFICIT WAS ALREADY ESTABLISHED AND PHASE-ROBUST — AND TWO RUNS DISAGREE ON ITS VALUE.**
+
+**⛭⛭ `B3_a_dichotomy_stated_is_not_a_dichotomy_proved` SCANS THE ONE FREE DATUM** *— the first-peak modes are already sub-horizon at `Z_START`, so their PHASE is assigned — across nine states. **What survives: "the SPACING spreads only 1.11×, sits at 0.79 ± 0.04 of $\ell_A$ across every phase that has four peaks, AND IS NEVER 1.0 — a ~21% deficit surviving every reading".***
+
+⇒ ***So the deficit is not new and not a bookkeeping split: it is an ESTABLISHED, PHASE-INVARIANT property of the arm, and the corpus knew before the row did.***
+
+**⛔ BUT THE NUMBERS DISAGREE.** *`L-830`'s pin test gives **0.856**; B3's phase scan gives **0.79 ± 0.04**, range 0.734–0.818. **0.856 sits 0.026 outside B3's band**, and both are reported as "spacing/$\ell_A$".*
+
+⇒ ***Either the two scans measure different things under one name — B3 varies PHASE, L-830 varies the PIN — or one is wrong. A comparison of two runs, not new physics.***
+
 ### Revision r2840 — 2026-08-15 (main line). **MY OWN r2839 MECHANISM FOR `PO-7` IS ELIMINATED, AND THE TENSION IS SHARPER.**
 
 *r2839 proposed the 0.856 deficit might sit where P15's completeness claim fails, since P15 says "the low-$k$ end is where it would bite".*
