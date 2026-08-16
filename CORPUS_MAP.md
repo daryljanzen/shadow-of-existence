@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2890 — 2026-08-15 (main line). **MY r2888 FRAMING WAS WRONG — THE WINDING SUPPLIES BOTH SCALE AND RATIO.**
+
+*r2888 recorded "CR fixes the SCALE, the SM fixes every RATIO" and posed the last step as "is the $\mathbb{Z}_3$ charge itself or only its scale?"*
+
+**⛭⛭ `P14_scale_and_ratio`, read further:** *"**THE WINDING CLOSURE IS NOT HOMOGENEOUS** — its $x-y=1$ is ONE FULL LAP", which is exactly why it breaks the scale invariance the anomalies cannot. And: **"taking the winding's $u=+2/3$, $d=-1/3$ … $Q=I_3+Y/2$ returns the winding's own $+2/3$ and $-1/3$"**.*
+
+⇒ ***The winding produces the charge VALUES directly — the $k/3$ classes give $\{0,\pm1/3,\pm2/3\}$, carrying **both** the unit and the $2{:}1$ between $u$ and $d$. **"Only the scale" was my reading of the receipt's title, not its content.****
+
+**⌗ SO THE LAST STEP IS UNCHANGED FROM WHERE IT ALWAYS WAS:** *not scale-versus-ratio but **the IDENTIFICATION** — that those values ARE the electric charge you can measure is `L-65`'s reading, exactly as `P14_route_or_point` said. **I posed a distinction the corpus had already dissolved and spent a step on it.***
+
 ### Revision r2889 — 2026-08-15 (main line). **THE GATE HAS A BLIND SPOT IT CANNOT FIX, AND THE r2887 COUNT IS NARROWER THAN IT WAS WRITTEN.**
 
 *r2888 found a fourth stale-unshown instance the r2887 sweep missed. Widened the pattern — window 120→240 characters, plus the report-forms — and **re-measured on the pre-r2887 tree**.*

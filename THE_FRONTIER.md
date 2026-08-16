@@ -4,11 +4,11 @@
 
 ## ⇒ **5 OPEN · 9 STEPS LEFT** *(was 10 last revision)* **· ~20 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2889: widened the gate and the count did NOT change — 3 leads / 4 sites either way. **The miss was never about distance.** The fourth instance names its antecedent in PROSE with no lead id at all: 'the winding receipt itself marks NOT SHOWN. Everything here is conditional on that antecedent.' ⇒ **No id-based gate can reach it, and the size of the prose-referenced class is unmeasurable by this instrument** — so r2887s 'more coherent than I feared' covers the id-referenced class only. Last move: r2888.***
+*⌗ **LAST ACTUAL MOVE — r2890: **my r2888 framing was wrong.** The winding is NOT 'only the scale' — its x−y=1 is ONE FULL LAP, so **the closure is not homogeneous**, and the k/3 classes give {0, ±1/3, ±2/3} directly: **both the unit and the 2:1 between u and d**, with Q = I_3 + Y/2 returning the windings own +2/3 and −1/3. ⇒ **Scale-versus-ratio was a distinction the corpus had already dissolved**; the last step is and always was the IDENTIFICATION (L-65).***
 
-*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
+> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
 **RUNWAY: 5 of 5 clear now**; 0 gated ().
 

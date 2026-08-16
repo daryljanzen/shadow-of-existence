@@ -412,3 +412,4 @@ r2886  LATENT      L-72 and L-74 are CLOSED; the winding premises are computed. 
 r2887  INSTRUMENT  stale-unshown class swept: exactly 3 instances, all marked. check_stale_unshown built.
 r2888  LATENT      CR fixes the hypercharge SCALE the SM cannot; agrees on all five; unconditional since L-74 closed.
 r2889  INSTRUMENT  the stale-unshown gate cannot reach prose-referenced antecedents; r2887s count covers id-referenced only.
+r2890  LATENT      the winding gives charge VALUES not just scale; scale-vs-ratio was never the question. L-65 is.
