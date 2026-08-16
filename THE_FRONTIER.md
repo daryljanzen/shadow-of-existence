@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2891: **'CR fixes the scale' is ambiguous and I collapsed two senses.** `P14_charge_or_colour`: 'nothing here supplies a gauge field, a coupling, or a scale. **THE WINDING HAS NO UNITS. ELECTRIC CHARGE DOES.** That is the sharpest thing still missing.' ⇒ `P14_scale_and_ratio` means the QUANTISATION; this means PHYSICAL UNITS. And L-123 closes as a DISSOLUTION: **only HALF the winding is route-dependent, and it is exactly the half that is not observed**. Not PO-2s shape — here something observable DOES differ.***
+*⌗ **LAST ACTUAL MOVE — r2892: **the units gap and the coupling wall are ONE THING, and it is a THEOREM.** `M3_station_G`: the colour bundle is flat **because it IS a branching — a covering map carries a CANONICAL flat connection — so 'the geometry quantises and does not couple' is a THEOREM ABOUT BRANCHINGS rather than a limitation**. ⇒ No curvature, no field strength, no coupling and no units of one. **The four closed routes are four routes to something the construction cannot have by a theorem**, not four failures.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -17,13 +17,13 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-5** | the five multiplets — mismatch is one pair wide | **3** ↓1 | 4 | 4 ⚠ | BUILD | 23 | — | r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet |
+| **PO-5** | the five multiplets — mismatch is one pair wide | **3** ↓1 | 4 | 4 ⚠ | BUILD | 25 | — | r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet |
 
 ### B · THE 2+1 CLUSTER — four readings of two splits. Independent of A.
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-1c** | the winding Z_3 — is it electric charge? | **1** ↓1 | 2 | 1 | READ | 8 | — | CLEAR -- the horn is established; one count to run |
+| **PO-1c** | the winding Z_3 — is it electric charge? | **1** ↓1 | 2 | 1 | READ | 10 | — | CLEAR -- the horn is established; one count to run |
 
 ### C · THE QUANTUM SECTOR — independent.
 

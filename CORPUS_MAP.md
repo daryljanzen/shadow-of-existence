@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2892 — 2026-08-15 (main line). **THE UNITS GAP AND THE COUPLING WALL ARE ONE THING, AND IT IS A THEOREM.**
+
+**⛭⛭ `M3_station_G_supplies_the_sequence`, uncited by either row:** *"the colour bundle is FLAT **because it IS a branching** — a covering map carries a **CANONICAL flat connection** — so **'the geometry quantises and does not couple' is a THEOREM ABOUT BRANCHINGS rather than a limitation of the construction**". `F2_the_flatness_is_what_a_branching_IS` carries the same finding in its title.*
+
+⇒ ***So the "wall" this register has carried since r2814 is not an obstacle. A flat connection has no curvature, hence no field strength, hence no coupling and no units of one — **the same theorem gives `PO-5`'s missing force and `PO-1c`'s missing units, and they are one statement**.***
+
+**⌗ WHAT THAT CHANGES:** *the register read "four of five routes to a gauge coupling are closed" as **four failures**. **They are four routes to something the construction cannot have by a theorem about what a branching IS** — and the fifth (composite) was the only one asking a different question.*
+
+**⚠ AND IT DOES NOT MAKE THE COUPLING APPEAR:** *"the coupling strength stays the ordinary route, as does the mass spectrum". **What changes is the KIND of absence — a structural consequence rather than an unbuilt piece** — and `F2` records that the phrase "reads as a LIMITATION OF THIS CONSTRUCTION" when it should not.*
+
 ### Revision r2891 — 2026-08-15 (main line). **"CR FIXES THE SCALE" IS AMBIGUOUS BETWEEN TWO SENSES, AND THE RECEIPT NAMES THE SECOND AS THE SHARPEST THING MISSING.**
 
 **⛭⛭ `P14_charge_or_colour`, uncited, run — WHAT IS PROVED:** *"$w$ has exactly the structure electric charge has — **an INTEGER OBSERVABLE PART and a FRACTIONAL CONFINED PART IN THIRDS**, correlated with a $\mathbb{Z}_3$ — and the correlation the Standard Model derives from HYPERCHARGE, **this derives from SINGLE-VALUEDNESS**". ⇒ "**A quantity with the right structure is not thereby the quantity**".*

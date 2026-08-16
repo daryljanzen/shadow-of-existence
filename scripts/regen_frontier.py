@@ -45,12 +45,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2891: **'CR fixes the scale' is ambiguous and I collapsed two senses.** `P14_charge_or_colour`: "
-            "'nothing here supplies a gauge field, a coupling, or a scale. **THE WINDING HAS NO UNITS. "
-            "ELECTRIC CHARGE DOES.** That is the sharpest thing still missing.' ⇒ `P14_scale_and_ratio` "
-            "means the QUANTISATION; this means PHYSICAL UNITS. And L-123 closes as a DISSOLUTION: "
-            "**only HALF the winding is route-dependent, and it is exactly the half that is not "
-            "observed**. Not PO-2s shape — here something observable DOES differ.")
+LASTFIND = ("r2892: **the units gap and the coupling wall are ONE THING, and it is a THEOREM.** "
+            "`M3_station_G`: the colour bundle is flat **because it IS a branching — a covering map "
+            "carries a CANONICAL flat connection — so 'the geometry quantises and does not couple' "
+            "is a THEOREM ABOUT BRANCHINGS rather than a limitation**. ⇒ No curvature, no field "
+            "strength, no coupling and no units of one. **The four closed routes are four routes to "
+            "something the construction cannot have by a theorem**, not four failures.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
