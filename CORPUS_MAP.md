@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2905 — 2026-08-15 (main line). **THE CONTROL IS AT 1.18, THE MECHANISM IS DIAGNOSED, AND THERE IS A SECOND DEFECT CALIBRATION CANNOT TOUCH.**
+
+*Asked whether the corpus had diagnosed the control's defect or only tracked its number down. **Diagnosed and fixed — and my own 7.14 was stale.***
+
+**⛭⛭ `P15_the_control_entered_the_regime_and_the_arm_did_not_move`:** *"**73% of the control's residual was in the 16% of bins above $\ell=1500$, and opening the wavenumber range removes 78% of it: the control reaches $\chi^2$/dof = 1.18 against a true $\Lambda$CDM fit's 1.01 ON THE SAME BINS**" — a named mechanism, a fix, a target met.*
+
+⇒ ***And the fact that bears on everything downstream: **"four instrument states improved the control EIGHTEENFOLD and moved the CR arm 5%"**. The CR arm's excess survived an eighteenfold instrument improvement.***
+
+**⛔ AND `C51_the_dropped_bins_are_the_damping_tail` NAMES A SECOND, INDEPENDENT DEFECT:** *the arm discards **thirty bins above $\ell\approx1760$**, exactly where CR's predicted suppression is largest — 8.4% down at $\ell{=}1000$, **23.8% at the cut**, **42.3% at the last dropped bin**. ⇒ "**the thirty bins the arm throws away are the thirty where the prediction is strongest**", and **"no improvement in [calibration] would make the comparison able to see the signature"**.*
+
+⇒ ***Two independent defects: ① diagnosed and fixed; ② the comparison runs where CR predicts LEAST and discards where it predicts MOST. **I had neither.***
+
 ### Revision r2904 — 2026-08-15 (main line). **r2903 CALLED A PARTIALLY-WORKED COMPARISON A DECISIVE TEST, ON A TURN THAT WAS ITSELF A ZERO. WITHDRAWN.**
 
 *Daryl: "don't ever again say something is a decisive test against CR on a step that turns zero … you're still rediscovering pieces of the analysis and haven't managed to hold even the problem space accurately".*

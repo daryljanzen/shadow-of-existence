@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2904 (Daryl): **r2903 called a partially-worked comparison a DECISIVE test on a turn "
-            "that was itself a zero.** Withdrawn. The same revision recorded that the arm uses **185 "
-            "bins against CAMBs 215**, that the control sits at **chi2/dof 7.14 against a standard "
-            "of ~1**, and that **the CR arm carries the controls defect AND something else**. ⇒ "
-            "Different data, miscalibrated instrument, unidentified residual — **settles nothing**. "
-            "S1 itself said 'a MEASUREMENT DISCREPANCY, not a framework verdict'.")
+LASTFIND = ("r2905: **the control is at 1.18, not 7.14 — my own figure was stale — and the mechanism "
+            "IS diagnosed**: 73% of the residual sat in the 16% of bins above ell 1500, and opening "
+            "the wavenumber range removed 78% of it. **And four instrument states improved the "
+            "control EIGHTEENFOLD while moving the CR arm 5%.** ⛔ And C51 names a SECOND, "
+            "independent defect: **the arm discards thirty bins above ell~1760 — exactly where CRs "
+            "predicted suppression is largest (42% at 2508)** — which no calibration fixes.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

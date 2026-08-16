@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2904 (Daryl): **r2903 called a partially-worked comparison a DECISIVE test on a turn that was itself a zero.** Withdrawn. The same revision recorded that the arm uses **185 bins against CAMBs 215**, that the control sits at **chi2/dof 7.14 against a standard of ~1**, and that **the CR arm carries the controls defect AND something else**. ⇒ Different data, miscalibrated instrument, unidentified residual — **settles nothing**. S1 itself said 'a MEASUREMENT DISCREPANCY, not a framework verdict'.***
+*⌗ **LAST ACTUAL MOVE — r2905: **the control is at 1.18, not 7.14 — my own figure was stale — and the mechanism IS diagnosed**: 73% of the residual sat in the 16% of bins above ell 1500, and opening the wavenumber range removed 78% of it. **And four instrument states improved the control EIGHTEENFOLD while moving the CR arm 5%.** ⛔ And C51 names a SECOND, independent defect: **the arm discards thirty bins above ell~1760 — exactly where CRs predicted suppression is largest (42% at 2508)** — which no calibration fixes.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -35,7 +35,7 @@
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
 | **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 10 | — | CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840 |
-| **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 26 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
+| **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 27 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
 
 ---
 
