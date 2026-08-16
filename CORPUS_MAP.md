@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2903 — 2026-08-15 (main line). **THE SCAN HAS BEEN RUN AND CR IS DECISIVELY DISFAVOURED — AND `PO-10` SAYS "the likelihood half remains".**
+
+*Went to fix the control arm (step a). **Both steps have been worked and (b) has a verdict.***
+
+**⛭⛭ `C50_the_control_is_at_seven_not_a_hundred`:** *the control is at $\chi^2$/dof **7.14, not ~100** — "a control moving 103→22.5→28.6→7.1 is being worked and converging" — and r2759's ~100 was **a sentence about a printed figure, which can go stale where the figure cannot**.*
+
+**⛔⛔ `S1_the_bic_pair_is_delivered…`, cc54's run:** *"the BIC pair is $F3(\phi{=}0)\approx+5.05\times10^4$ and $F3(\phi{=}\pi)\approx+6.76\times10^4$, both **~2000–3000× the 21.5 threshold AND 45–60× the instrument floor**, so the relative gap is real physics: **CR is DECISIVELY DISFAVOURED at both seam phases** — two bounded negatives, and `PO-7`'s branch selection does not rescue either".*
+
+**⚠ AND ALL THREE OF THE RECEIPT'S BOUNDS TRAVEL WITH IT:** *the floor **cuts both ways** (no model fits well absolutely); **F5 unsoftened** — a measurement discrepancy, not a framework verdict; **`PO-7` protected**.*
+
+**⌗ AND ONE FACT ONLY THE PRINT CARRIES:** *the arm uses **185 bins against CAMB's 215**, and **the CR arm sits at 280.09 — whatever residual defect the control has, the CR arm carries it AND something else**.*
+
 ### Revision r2902 — 2026-08-15 (main line). **THE CORPUS HAS NO CONVENTION FOR POINT-IN-TIME RECEIPTS, AND THREE SIT PERMANENTLY RED WITH NOTHING SAYING WHY.**
 
 *r2901 found three receipts that **verified a REPAIR at their own revision** and cannot be re-run green. **Checked whether the corpus distinguishes such receipts from invariants: it does not** — prefixes are by series (P=247, B=77, C=75…), directories by paper, and no in-file flag exists.*

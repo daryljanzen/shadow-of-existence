@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2902: **the corpus has NO convention distinguishing point-in-time receipts from "
-            "invariants** — checked: prefixes are by series, directories by paper, no flag. So "
-            "three receipts sit permanently red with nothing saying why, **which is how a suite "
-            "becomes noise a reader learns to skim**. Added `# RERUNNABLE: NO — POINT-IN-TIME` with "
-            "a required reason, and `check_rerunnable_honest` so the mark can never silence a real "
-            "failure.")
+LASTFIND = ("r2903: **the scan has been RUN and CR is DECISIVELY DISFAVOURED — and this row says "
+            "'the likelihood half remains'.** cc54s S1: the BIC pair is +5.05e4 and +6.76e4, "
+            "**2000–3000x the 21.5 threshold and 45–60x the instrument floor**, at BOTH seam "
+            "phases. And C50: the control is at 7.14, not ~100 — r2759s figure was a SENTENCE "
+            "about a print. ⚠ Bounds travel: the floor cuts both ways, F5 unsoftened, PO-7 "
+            "protected.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

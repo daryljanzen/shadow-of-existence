@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2902: **the corpus has NO convention distinguishing point-in-time receipts from invariants** — checked: prefixes are by series, directories by paper, no flag. So three receipts sit permanently red with nothing saying why, **which is how a suite becomes noise a reader learns to skim**. Added `# RERUNNABLE: NO — POINT-IN-TIME` with a required reason, and `check_rerunnable_honest` so the mark can never silence a real failure.***
+*⌗ **LAST ACTUAL MOVE — r2903: **the scan has been RUN and CR is DECISIVELY DISFAVOURED — and this row says 'the likelihood half remains'.** cc54s S1: the BIC pair is +5.05e4 and +6.76e4, **2000–3000x the 21.5 threshold and 45–60x the instrument floor**, at BOTH seam phases. And C50: the control is at 7.14, not ~100 — r2759s figure was a SENTENCE about a print. ⚠ Bounds travel: the floor cuts both ways, F5 unsoftened, PO-7 protected.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -35,7 +35,7 @@
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
 | **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 10 | — | CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840 |
-| **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 25 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
+| **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 26 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
 
 ---
 
