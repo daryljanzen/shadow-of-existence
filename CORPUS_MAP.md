@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2912 — 2026-08-15 (main line). **THE ±0.3pp I NOTICED SITS INSIDE A NAMED, OWED 2.6pp DISAGREEMENT THE REGISTER DOES NOT CARRY.**
+
+**⛭⛭ `C41_a_tilde_is_stale_when_nothing_competes`, run:** *"the disagreement is now named: **+10.83% ANALYTIC against +8.2% on CAMB's exact history**, on a figure P15 calls 'a real, computed effect' nine times. **Owed**".*
+
+⇒ ***The damping figure has two competing values from two methods, and the gap is 2.6 percentage points on an ~8% effect — **a third of it**.***
+
+**⛭ AND `C24_the_substitution_itemised` DIAGNOSES WHY:** *"**the 13% is LOCAL at recombination while the integrals ACCUMULATE over a history where $\rho_r/\rho_m$ is larger earlier — so a constant-ratio scaling UNDERSTATES, and the 2.6-point gap is exactly what integrating the rate difference over the history is worth**", with "a naive 'everything is a length so the ratio cancels' is WRONG, and the **square root** is why".*
+
+⇒ *So the mechanism is understood and the route is named — "which sets the bar for the two-leg run" — **but C41 records it as OWED, not closed**.*
+
+**⌗ AND WHY THE CORPUS WRITES "~8%":** *"**a tilde on a CONTESTED number is exactly what a tilde is for**" … "the test runs on the receipts, never on the text".*
+
+**⚠ My r2911 ±0.3pp is a run-level detail inside this.** *The register-level fact is that **the effect's size is contested by a third of its own magnitude, and that is owed**. Steps 2 → 3.*
+
 ### Revision r2911 — 2026-08-15 (main line). **THE 7% CONTROL GAP IS A DEFINITION, NOT AN ERROR — AND THE RECEIPT SAYS SO IN ITS OWN BOUND.**
 
 **⛭⛭ `P15_damping_ratio_clean`'s GATE + BOUND line, never carried by the row:** *"the receipt's ABSOLUTE $\theta_D$ from the Hu–Sugiyama integral is ~7% below CAMB's $\theta_d$ (**a $k_D$ vs $\pi/k_D$ DIFFUSION-DEFINITION CONVENTION**). **That offset uses the SAME METHOD on both rates, so it CANCELS in the CR/$\Lambda$CDM RATIO — which is the actual claim and is robust. So the ~8% signature is CONVENTION-INDEPENDENT; only the absolute $\theta_D$ carries the 7% gap**".*

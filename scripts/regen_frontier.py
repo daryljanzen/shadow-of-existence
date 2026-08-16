@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2911: **the 7% control gap is a DEFINITION, not an error** — the receipts own bound "
-            "says so: a k_D vs pi/k_D diffusion-definition convention, applied by the same method to "
-            "both rates, so it **cancels in the ratio** and only the ABSOLUTE theta_D carries it. "
-            "⇒ And it passes C45s criterion: **a pi-convention is a shared CONSTANT and divides "
-            "out; x_e is a shared FUNCTION and did not**. Two receipts, different objects, both "
-            "right. ⚠ Unreconciled: this run prints +7.9% where r2909 read +8.2%.")
+LASTFIND = ("r2912: **my 0.3pp sits inside a named, OWED 2.6pp disagreement.** C41: '+10.83% "
+            "ANALYTIC against +8.2% on CAMBs exact history, on a figure P15 calls a real computed "
+            "effect nine times. **Owed.**' And C24 diagnoses it: **the 13% is LOCAL at "
+            "recombination while the integrals ACCUMULATE over a history where rho_r/rho_m is "
+            "larger earlier**, so constant-ratio scaling understates. ⇒ The effects size is "
+            "contested between two methods by a THIRD of its magnitude.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

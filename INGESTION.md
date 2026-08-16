@@ -434,3 +434,4 @@ r2908  LATENT      the O(1) ambiguity is the LOW-ell discreteness cutoff, not th
 r2909  LATENT      the +8.2% is a ratio; the control reproduces CAMBs same quantity to 7.1%. Common-mode cancellation unestablished.
 r2910  LATENT      common-mode cancellation is false for shared FUNCTIONS; x_e alone moves the effect 1.57pp. Already in the 8.2%.
 r2911  LATENT      the 7% control gap is a pi/k_D convention that cancels in the ratio; passes C45s constant-vs-function rule.
+r2912  LATENT      the damping size is contested: +10.83% analytic vs +8.2% numerical, 2.6pp OWED, diagnosed by C24.
