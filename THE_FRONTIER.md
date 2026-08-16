@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2852: there are TWO S_3s and `PO-1a` had them as one. P14: **'the HINGE S_3 is a WITHIN-STATE INDEX, not a family symmetry'** — the family S_3 is on the WALLS, and **the three generations ARE the three walls**, 'identical in content, distinguished only by their wall'. So the designation 2+1 is NOT the carrier; it is the indexical on top of them. **An indexical having no absolute counterpart is a RESULT, not a gap.*****
+*⌗ **LAST ACTUAL MOVE — r2853: `PO-1b`'s remaining question is ALREADY POSED in the corpus, sharper. P13 proves **C FACTORISES** — the geometric R∘K carries C's kinematic content but is **BLIND to sign(Q)** — so the exhibited Z_2 is species KINEMATICALLY. And the boundary paper poses the rest as its own open question: **'whether that L² face is C itself or C's kinematic SHADOW is OPEN (matter sector / A3)'** — a named object this row never carried.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

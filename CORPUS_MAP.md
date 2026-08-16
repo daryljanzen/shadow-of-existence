@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2853 — 2026-08-15 (main line). **`PO-1b`'s REMAINING QUESTION IS ALREADY POSED IN THE CORPUS, SHARPER.**
+
+*The step was "does the exhibited $\mathbb{Z}_2$ carry the physical content species needs?"*
+
+**⛭⛭ P13 ANSWERS HALF, `prop:conjugation-closure`:** *"charge conjugation **FACTORISES** on the bead: $C=(Q\to-Q)_{\rm field}\circ(R\circ K)_{\rm geometric}$; $R\circ K$ … reproducing $C$'s kinematic (CPT/FS) content but **BLIND to $\mathrm{sign}(Q)$**".*
+
+⇒ ***So the geometric $\mathbb{Z}_2$ carries exactly HALF of $C$ — the kinematic face. The charge half is field-level and not geometric, which is why $\mathrm{sign}(r)$ can be species without the geometry knowing about charge.***
+
+**⛔ AND THE OTHER HALF IS THE BOUNDARY PAPER'S OWN OPEN QUESTION:** *"**whether that $L^2$ face is $C$ itself or $C$'s kinematic SHADOW is OPEN** (matter sector / A3, the full $C_r\times C_\tau$ object)".*
+
+⇒ ***This row's remaining step verbatim, registered elsewhere, with a named object and address the row never carried — and it belongs to the matter sector, not here.***
+
 ### Revision r2852 — 2026-08-15 (main line). **THERE ARE TWO $S_3$s AND `PO-1a` HAD THEM AS ONE.**
 
 *Ran `PO-1c`'s method: the designation is a choice of WHICH root, $S_3$ is transitive, so **$3/S_3=1$ orbit and nothing is left to label with**. In both worked cases the label was a $\mathbb{Z}_2$ on something the root carries BESIDE its position; **the designation is not a property of a root at all**.*
