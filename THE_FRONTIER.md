@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2964: **the refit that exists is not the refit the target names.** The target says **FULL-SPECTRUM** — the banked 215 bins; everything run (sec:refit-bound, S1s BIC pair) is on **185**, where the model ends. ⇒ **Two things called the comparison, one of them the targets** — third instance this session of a scoped statement read as unscoped. And the missing 30 bins are **exactly where CRs suppression is largest (42.3% at the last dropped bin)**: the targets comparison would SEE the signature; the one run CANNOT.***
+*⌗ **LAST ACTUAL MOVE — r2965: **the ell>1760 blindness is CLOSED — the extension has been RUN.** S2: LMAXL=2512 scores 201 bins to ell=2508. The control gains from the k-range (7.14 → 3.81/dof on the same bins); **the CR arm barely moves (280 → 281)**; and including the dropped bins **widens F3 from 50497 to 51547 — MORE clearly disfavoured, not less**. ⇒ r2906 and r2964 are stale. ⚠ And the r2904 caveat holds: **the control is still 3.81 against a standard of ~1**, so no number here is a verdict on the framework.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
 | **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 20 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
-| **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 31 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
+| **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 32 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
 
 ---
 

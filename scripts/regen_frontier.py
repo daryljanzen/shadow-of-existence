@@ -41,13 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2964: **the refit that exists is not the refit the target names.** The target says "
-            "**FULL-SPECTRUM** — the banked 215 bins; everything run (sec:refit-bound, S1s BIC "
-            "pair) is on **185**, where the model ends. ⇒ **Two things called the comparison, one "
-            "of them the targets** — third instance this session of a scoped statement read as "
-            "unscoped. And the missing 30 bins are **exactly where CRs suppression is largest "
-            "(42.3% at the last dropped bin)**: the targets comparison would SEE the signature; "
-            "the one run CANNOT.")
+LASTFIND = ("r2965: **the ell>1760 blindness is CLOSED — the extension has been RUN.** S2: LMAXL=2512 "
+            "scores 201 bins to ell=2508. The control gains from the k-range (7.14 → 3.81/dof on the "
+            "same bins); **the CR arm barely moves (280 → 281)**; and including the dropped bins "
+            "**widens F3 from 50497 to 51547 — MORE clearly disfavoured, not less**. ⇒ r2906 and "
+            "r2964 are stale. ⚠ And the r2904 caveat holds: **the control is still 3.81 against a "
+            "standard of ~1**, so no number here is a verdict on the framework.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

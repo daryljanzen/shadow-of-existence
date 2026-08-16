@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2965 — 2026-08-15 (main line). **THE ell>1760 BLINDNESS IS CLOSED: THE EXTENSION HAS BEEN RUN, AND IT CLOSED AGAINST CR.**
+
+**⛭⛭ `S2_the_lmax2512_extension_recovers_c51s_dropped_bins`, run:** *"**THE EXTENSION COVERS THE DROPPED REGION: LMAXL = 2512 scores 201 bins to ell = 2508**" — and "an LMAXL = 2512 run is **not** the LMAXL = 2000 spectrum plus 16 bins", the k-grid being rebuilt.*
+
+⇒ ***All three results: **the CONTROL gains from the k-range** (7.14 → 3.81/dof on the same 185 bins); **the CR arm barely moves** (280 → 281 on the overlap); and **including the dropped bins does NOT rescue CR** — F3 goes 50497 → 51547, so **the damping tail makes CR MORE clearly disfavoured, not less**, leaving CR at 260/dof.***
+
+**⛔ SO r2906 AND r2964 ARE STALE WHERE THEY MATTER:** *I wrote that the comparison is "blind to CR's strongest prediction" and that the full-spectrum refit "waits on the model reaching further". **The model has reached further; the bins are scored; C51 is discharged.** S2: "**both halves of 56's resampling route are discharged: the banked numbers hold and the dropped region does not reverse the CR verdict**".*
+
+**⚠ AND THE r2904 CAVEAT STILL APPLIES, UNSOFTENED:** *the control sits at **3.81/dof against a declared standard of ~1** — **the instrument is still near four times off its own calibration**, so this is a comparison whose reference arm does not yet reproduce LambdaCDM. **A number from it is not a verdict on the framework**, and the register is still turning up zeros.*
+
 ### Revision r2964 — 2026-08-15 (main line). **THE REFIT THAT EXISTS IS NOT THE REFIT THE TARGET NAMES, AND THE DIFFERENCE IS EXACTLY WHERE THE SIGNATURE LIVES.**
 
 *`C12` flags it: "**sec:refit-bound work bears on a DIFFERENT comparison — 185 bins, not the banked 215**". Put against the target:*
