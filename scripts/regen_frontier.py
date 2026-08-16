@@ -21,7 +21,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 EST = {
  'PO-5':  ('the five multiplets — mismatch is one pair wide', 3, 4, 4, None,
            'r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet'),
- 'PO-1c': ('does uud have a geometric counterpart', 1, 2, 1, None,
+ 'PO-1c': ('the winding structure — gated on L-74s antecedent', 2, 1, 1, None,
            'CLEAR -- the horn is established; one count to run'),
  'PO-6':  ('the interacting tower — CRs share of it', 1, 1, 3, None,
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
@@ -44,13 +44,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 2
-LASTFIND = ("r2884 ran a test I had named, and it passed — not a zero. The CORRESPONDENCE matches "
-            "P13s pattern factor by factor: geometry supplies the kinematic content (the thirds "
-            "from closure), the field supplies sign and scale, and the apparent mismatch (the "
-            "winding DOES distinguish quark from antiquark) resolves because **2/3-vs-1/3 is a "
-            "DIRECTION OF TRAVERSAL, not a charge sign** — which is exactly what R does. **The "
-            "breaker is named and unrun.** Last actual move: r2882.")
+SINCE = 0
+LASTFIND = ("r2885: the breaker did NOT fire — the thirds come from three geometric constraints "
+            "with **no charge sign anywhere** (x−y=1 is a LAP difference) — **and the row still "
+            "does not close**. The same derivation names its own unproved antecedent: **that a "
+            "matter field on this geometry is labelled by a ROUTE at all — L-74, and it is now the "
+            "gate**. The thirds, the closure rule, the 11-of-11 hadron match and confinement are "
+            "ALL conditional on it, and this register never carried that.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

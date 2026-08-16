@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2885 — 2026-08-15 (main line). **THE BREAKER DOES NOT FIRE, AND `PO-1c` STILL DOES NOT CLOSE — THE DERIVATION NAMES ITS OWN UNPROVED ANTECEDENT.**
+
+**⛭⛭ `P03_thirds_from_closure`, PART 3, run — three constraints and NO charge sign:** *(i) $x-y=1$, **the two routes differ by ONE LAP**; (ii) $x+2y\in\mathbb{Z}$, the upper-headed triple closes; (iii) $y+2x\in\mathbb{Z}$. Substituting $y=x-1$: totals $3x-2$ and $3x-1$, integers iff $3x$ is ⇒ **$x=k/3$, THE THIRDS ARE FORCED**.*
+
+⇒ ***So r2884's breaker does not fire — the asymmetry is a lap difference, a pure traversal quantity, and the receipt carries Daryl's own words: "the $1/3$ vs $2/3$ of the equator … they're even the opposite direction". **The correspondence stands.****
+
+**⛔ BUT THE SAME RECEIPT NAMES WHAT IS NOT ESTABLISHED, AND (a) IS A GATE:** *"**that a matter field on this geometry is labelled by a ROUTE at all**. PART 3 shows that **IF** constituents carry windings and bound objects close, the thirds follow. **It does not show the antecedent. That is `L-74` and it is now the gate**".*
+
+⇒ ***So the row is not one step from closing. The thirds, the closure rule, **the 11-of-11 hadron match and confinement** are ALL conditional on an antecedent the corpus names and has not proved — and this register never carried it. Steps 1 → 2.***
+
 ### Revision r2884 — 2026-08-15 (main line). **`PO-1c`'s NAMED TEST IS RUN: THE CORRESPONDENCE MATCHES P13's PATTERN.**
 
 *r2878 found the owed relation has a registered shape, "testable against P13's own machinery". **Nobody had run it.***

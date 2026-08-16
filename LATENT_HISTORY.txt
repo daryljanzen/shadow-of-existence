@@ -346,3 +346,4 @@ r2881  LATENT      group D is ONE computation from three sides: the full seam-to
 r2882  LATENT      no P03/P14 contradiction: D_6 is finite, so it labels and cannot gauge. T commutes with R; mismatch one pair wide.
 r2883  LATENT      the corpus re-reads failures as correct when the SM lacks the feature; the right-handed mismatch fails that test.
 r2884  LATENT      PO-1cs correspondence MATCHES P13s pattern; 2/3-vs-1/3 is traversal direction, not charge sign.
+r2885  LATENT      the thirds use no charge sign, but rest on L-74s unproved antecedent: is a matter field labelled by a ROUTE at all.
