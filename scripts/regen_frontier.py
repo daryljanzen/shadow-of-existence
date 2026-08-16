@@ -19,7 +19,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
- 'PO-5':  ('the five multiplets — and 11 delivered contents', 4, 5, 4, None,
+ 'PO-5':  ('the five multiplets — mismatch is one pair wide', 3, 4, 4, None,
            'r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet'),
  'PO-1c': ('does uud have a geometric counterpart', 2, 1, 1, None,
            'CLEAR -- the horn is established; one count to run'),
@@ -44,13 +44,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 7
-LASTFIND = ("r2881 — NOT a zero, and that is the signal. I predicted group D is one object and "
-            "found the corpus agrees MORE strongly than I knew: `P15_verify_coherence_comb` "
-            "computes the mechanism (common seam phase → contrast 4e5; random → 0.9) and **its own "
-            "bound defers to the SAME open** — the full seam-to-recombination transfer. Three "
-            "things, one computation, **named by p0 before this session started**. Confirmation "
-            "with a sharpening, not a surprise. Last actual move: r2873.")
+SINCE = 0
+LASTFIND = ("r2882: **the r2869 contradiction is NOT one.** P03s T-to-weak-isospin is the LABELLING "
+            "and P14s not-SU(2)_L is the GAUGING — `B41`: **the isospin structure is D_6, FINITE, "
+            "and a finite group has no Lie algebra to gauge; the doublet exists and cannot carry "
+            "SU(2)_L**. And `P14_the_species_bit_is_not_chiral` settles r2868 computed: **T acts "
+            "the same on both R-eigenspaces**, so the over-symmetry IS forced — and the mismatch "
+            "is ONE PAIR WIDE, on the right-handed side, with its falsifier stated.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

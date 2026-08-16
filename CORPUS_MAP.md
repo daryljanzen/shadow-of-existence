@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2882 — 2026-08-15 (main line). **THE r2869 CONTRADICTION IS NOT ONE, AND r2868's DIRECT-PRODUCT QUESTION IS ANSWERED — BOTH BY UNCITED RECEIPTS.**
+
+**⛭⛭ `B41_the_isospin_structure_is_finite`:** *"**the corpus's isospin structure is $D_6$, a FINITE group, and a finite group has no Lie algebra to gauge. THE DOUBLET EXISTS AND CANNOT CARRY $SU(2)_L$**" … "discrete all the way down — **not 'a generator is missing' but 'the whole structure is finite', which is what it IS, not a gap**". ⇒ "a species label is exactly what a finite two-dimensional irrep delivers — it distinguishes two states and does not rotate between them".*
+
+⇒ ***So P03's "weak isospin" is the LABELLING and P14's "not $SU(2)_L$'s chiral action" is the GAUGING. **There was never a contradiction; there was a distinction this register had not carried** — and `P14_a_labelling_not_a_gauging` names it in its title.***
+
+**⛔ AND `P14_the_species_bit_is_not_chiral` SETTLES r2868, COMPUTED:** *"**$T$ ACTS THE SAME ON BOTH $R$-EIGENSPACES**" — $T$ and $R$ commute, the factorisation is a direct product, **the over-symmetry is FORCED**.*
+
+⇒ ***And the mismatch is ONE PAIR WIDE: "the construction reproduces the left-handed side's shape EXACTLY and fails on the right-handed side, by making a distinction there the Standard Model does not" — with its falsifier: a right-handed weak structure distinguishing $\nu_R$ from $e_R$ **would make the geometry right and this comparison wrong**.***
+
 ### Revision r2881 — 2026-08-15 (main line). **GROUP D IS ONE COMPUTATION FROM THREE SIDES — AND THIS WAS NOT A ZERO.**
 
 *`P15_verify_coherence_comb`, uncited by either row: the coherence mechanism is **computed, not asserted** — a common seam phase gives peak/trough contrast $\sim4\times10^5$, random per-mode phases give $\sim0.9$, and "**the null seam's single characteristic datum per mode IS one phase per mode, so it lands in the coherent column by construction**". $\Delta\ell=296$.*
