@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2957 — 2026-08-15 (main line). **B7 GIVES THE BAND, AND IT PARTLY CONTRADICTS r2955.**
+
+**⛭⛭ `B7_the_seam_phase_moves_the_asymptotic_intercept`, run:** *"**the seam phase MOVES the asymptotic intercept by ~0.31 l_A — HALF the 0.615 disagreement — while the spacing holds**. So the 0.62-pi is **NOT a parameter-free structural prediction**: it is correct at the default CRPHI = 0 … **but a substantial part is carried by the seam-phase datum, which is ASSIGNED AND NOT YET DERIVED**" — with matched-order intercepts phi=0 → −0.066, phi=pi/2 → +0.066, phi=pi → −0.244.*
+
+⇒ ***And the band, verbatim: "**until CRPHI is fixed from the progenitor, the disagreement carries a DATUM-UNCERTAINTY BAND COMPARABLE TO ITSELF, so the 0.62-pi CANNOT YET BE READ AS A STRUCTURAL FALSIFICATION against the sky**".***
+
+**⛔ SO r2955 IS HALF WRONG:** *I wrote that the CRPHI derivation "cannot move the number". **On B9's 0.408 that holds — B9 already takes the nearer admissible reading. On B7's 0.615 it does not: the phase carries about half of it.** **Two receipts, two quantities — B9's gap AT the best phase, B7's disagreement BEFORE choosing one — and I collapsed them.***
+
+**⌗ SO THE CLAUSE'S ANSWER IS A BOUND, NOT A VERDICT:** *the second clause **cannot be settled while a datum carrying half the disagreement is assigned rather than derived**. Not "awaiting a decision" (r2954), not "cannot move the number" (r2955) — **a stated dependence on a derivation the corpus names**.*
+
 ### Revision r2956 — 2026-08-15 (main line). **`PO-7`'s OBJECT HAS A SECOND CLAUSE AND IT IS THE VERDICT QUESTION.**
 
 *I read the object truncated and was about to conclude on it. **In full:** "the first acoustic peak, and the propagated comb. Does the construction imprint an acoustic phase shift on modes already inside the sound horizon when the observable leg begins — **and if it does not, IS THE RESULTING FIRST-PEAK DEFICIT A REAL DISAGREEMENT WITH THE SKY?**"*

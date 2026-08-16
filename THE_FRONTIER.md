@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2956: **the objects SECOND CLAUSE is the verdict question** — 'and if it does not, is the resulting first-peak deficit a real disagreement with the sky?' — which I had truncated. ⇒ **B9 was restating this rows own target, not routing a side issue away**, and clause one is answered (the phase is FORCED, so it does not imprint). What it needs is **0.408 against the skys uncertainty**. ⚠ And the 26.6% heights swing is **not named by this object at all** — it belongs with the amplitudes.***
+*⌗ **LAST ACTUAL MOVE — r2957: **B7 gives the band and it partly contradicts r2955.** 'The seam phase MOVES the asymptotic intercept by ~0.31 l_A — HALF the 0.615 disagreement — while the spacing holds', so the 0.62-pi is **NOT a parameter-free structural prediction** and **until CRPHI is fixed the disagreement carries a datum-uncertainty band COMPARABLE TO ITSELF**. ⇒ r2955 holds on B9s 0.408 (already the best phase) and fails on B7s 0.615. **Two quantities, and I collapsed them.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -33,7 +33,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 17 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
+| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 18 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
 | **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 30 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
 
 ---

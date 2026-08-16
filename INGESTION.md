@@ -478,3 +478,4 @@ r2953  LATENT      the seam phase is FORCED to {0,pi} by P15s own transmission a
 r2954  LATENT      B9s person-gate is retracted: all three inversions closed, nothing owed by Daryl, a CRPHI derivation remains.
 r2955  LATENT      PO-seam is not a row; the CRPHI derivation selects within a pair whose members both leave 0.408.
 r2956  LATENT      PO-7s object has a second clause: is the first-peak deficit a real disagreement with the sky. Needs 0.408 vs uncertainty.
+r2957  LATENT      the seam phase moves the intercept by half the disagreement; the band is comparable to itself. r2955 half wrong.
