@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2962 — 2026-08-15 (main line). **`PO-10`'s AMPLITUDE OBJECT IS THE ODD/EVEN PATTERN AND IT IS ANSWERED; THE 26.6% SWING BELONGS TO NEITHER ROW.**
+
+*r2956 assigned C56's comb-periodic amplitude swing here — "where the amplitudes are" — **without reading this row's target**.*
+
+⇒ *The target names "**the odd/even height pattern (imprinted by the baryon loading on the expansion leg)**" — an amplitude object, but a **PERIOD-2 alternation between consecutive peaks**, not a period-Delta-ell modulation.*
+
+**⛭⛭ AND IT IS ANSWERED (r2880, C30):** *the pattern is 1+3R = 2.80 against |1−3R| = 0.80, **fixed by R alone**, and **R is a ratio of CONTENTS** — so **both arms carry the same R and the same odd/even pattern**.*
+
+**⛔ SO MY r2956 ASSIGNMENT WAS WRONG.** *This row's amplitude object is odd/even and delivered; `PO-7`'s object names the first peak and the comb, both positions. **C56's 26.6% comb-periodic swing is named by NEITHER open row's object.***
+
+**⌗ AND THAT MAKES IT AN ORPHAN WORTH NAMING AS ONE:** *it is **measured**, its two candidate causes are **eliminated** (the envelope withdrawn r2786; peak positions at 0.20%), and **no open row owns it**. ***A real, unexplained effect with no row is exactly the thing a register loses, and this one nearly was.*** Filed as `OWED` #577.*
+
 ### Revision r2961 — 2026-08-15 (main line). **`PO-7` TESTED AGAINST THE STRIKE CRITERION: DOES NOT STRIKE, AND THE COMPARISON ITS SECOND CLAUSE NEEDS IS MADE NOWHERE.**
 
 *Checked before concluding, after four turns lost this session to assuming a computation was unrun. **Sixteen statements carry 0.615 or 0.878 and NONE compares either against an observational uncertainty.***

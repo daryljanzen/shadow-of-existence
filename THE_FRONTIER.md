@@ -4,11 +4,11 @@
 
 ## ⇒ **3 OPEN · 6 STEPS LEFT** *(was 5 last revision)* **· ~8 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2961 was not a zero — a strike test returning NEGATIVE, checked first. **Sixteen statements carry 0.615 or 0.878 and none compares either against an observational uncertainty.** Clause one ANSWERED (does not imprint, phase forced); clause two OPEN with every input supplied. ⌗ And B7 calls it **the CR-vs-LCDM disagreement** — a model-against-model gap, with the sky entering only through LCDM standing in for it. Last actual move: r2960.***
+*⌗ **LAST ACTUAL MOVE — r2962: **this rows amplitude object is the ODD/EVEN pattern — period-2, and ANSWERED** (C30: R is a ratio of contents, so both arms carry the same pattern). My r2956 assignment of C56s 26.6% comb-periodic swing here was **wrong**: PO-7 names positions, PO-10 names odd/even. ⇒ **The 26.6% is named by NEITHER open rows object** — measured, both candidates eliminated, and owned by nothing. Filed as OWED #577.***
 
-*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
+> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
 **RUNWAY: 3 of 3 clear now**; 0 gated ().
 

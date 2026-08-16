@@ -40,13 +40,12 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 1
-LASTFIND = ("r2961 was not a zero — a strike test returning NEGATIVE, checked first. **Sixteen "
-            "statements carry 0.615 or 0.878 and none compares either against an observational "
-            "uncertainty.** Clause one ANSWERED (does not imprint, phase forced); clause two OPEN "
-            "with every input supplied. ⌗ And B7 calls it **the CR-vs-LCDM disagreement** — a "
-            "model-against-model gap, with the sky entering only through LCDM standing in for it. "
-            "Last actual move: r2960.")
+SINCE = 0
+LASTFIND = ("r2962: **this rows amplitude object is the ODD/EVEN pattern — period-2, and ANSWERED** "
+            "(C30: R is a ratio of contents, so both arms carry the same pattern). My r2956 "
+            "assignment of C56s 26.6% comb-periodic swing here was **wrong**: PO-7 names positions, "
+            "PO-10 names odd/even. ⇒ **The 26.6% is named by NEITHER open rows object** — measured, "
+            "both candidates eliminated, and owned by nothing. Filed as OWED #577.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
