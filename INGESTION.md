@@ -453,3 +453,4 @@ r2927  LATENT      the built geometry is ACHIRAL (polarized Gowdy-dS); the chira
 r2928  LATENT      the missing chirality is the missing second polarization; the build extends P11s polarized Gowdy-dS leaf.
 r2929  LATENT      the modulation depth is uncomputed (verified); r2916s period match is asymptotic — actual spacings 316 and 277.
 r2930  LATENT      r2916s period match is circular: 296 = pi D_C/r_s IS the acoustic scale. Support withdrawn; C56s amplitude finding stands.
+r2931  LATENT      C56 propagated the +0.075% asymptotic shift, not the +142 transient (~860x larger) where the swing is measured.

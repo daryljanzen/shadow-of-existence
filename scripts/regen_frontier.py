@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2930: **r2916s 'same period' inference is CIRCULAR.** The coherence combs Delta-ell "
-            "= 296 is **pi D_C / r_s — the acoustic scale itself**, the same formula as l_A = "
-            "pi D_M / r_s = 301.37. I compared the formula against 0.975x itself and reported "
-            "independent agreement. ⇒ **A period match against the acoustic scale distinguishes "
-            "NOTHING**, and the drift test I proposed is void — there is no second comb. C56s "
-            "amplitude finding stands; it never rested on the period.")
+LASTFIND = ("r2931: **C56 ruled out the ASYMPTOTIC position shift, not the TRANSIENT.** What it "
+            "propagated is the l_A residual of **+0.075%**; what B4/P15 measured is the CR arms "
+            "first three peaks sitting **+142, +80, +18** above its own asymptotic line — a **65% "
+            "displacement at the first peak, ~860x larger**. ⇒ And dC/C ~ (dC/dl) dl **fails as a "
+            "linearisation when dl is comparable to the feature width**. The elimination is "
+            "narrower than the row read it.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

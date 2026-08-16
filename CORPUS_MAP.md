@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2931 — 2026-08-15 (main line). **C56 RULED OUT THE ASYMPTOTIC POSITION SHIFT AND NOT THE TRANSIENT, WHICH IS THE ONE LARGE ENOUGH TO MATTER.**
+
+*The 26.6% oscillation is named in exactly one receipt, with two candidates eliminated. **Read what C56 actually propagated.***
+
+**⛭⛭** *"Propagating **THAT SHIFT** gives median $\lvert dC/C\rvert = 0.20\%$" — and "that shift" is **the $\ell_A$ residual, $+0.075\%$**: a uniform asymptotic stretch of the whole series.*
+
+**⛔ BUT B4/P15 MEASURED A DIFFERENT POSITION EFFECT:** *the CR arm's first three peaks sit **$+142, +80, +18$** above its own asymptotic line, where the control's sit $-3, +14, -16$. Against a first peak at $\ell\approx220$ that is a **65% displacement — roughly 860× the shift C56 propagated**.*
+
+⇒ ***And a peak displaced by 142 in $\ell$, against a peak width of order 100, is not a small perturbation: $dC/C\sim(dC/d\ell)\,\delta\ell$ **fails as a linearisation when $\delta\ell$ is comparable to the feature width**.***
+
+**⌗ SO THE ELIMINATION IS NARROWER THAN THE ROW HAS READ IT:** *positions are ruled out **at the asymptotic scale**. **The transient — the one position effect large enough to be a candidate, and living at low $\ell$ where the swing is measured — does not appear to have been propagated at all.***
+
+**⚠ Held as a gap in the elimination, not a claim:** *a large displacement makes a large ratio swing **possible, not actual**, and nothing here computes it.*
+
 ### Revision r2930 — 2026-08-15 (main line). **r2916's "SAME PERIOD" INFERENCE IS CIRCULAR, AND THE DRIFT TEST I PROPOSED IS VOID.**
 
 *Checked whether $\Delta\ell=296$ is a prediction or a demo parameter **before** computing any drift.*
