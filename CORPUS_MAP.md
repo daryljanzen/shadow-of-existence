@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2922 — 2026-08-15 (main line). **THE MARGIN IS EXACT — $\tfrac12$ — AND SO IS WHAT WOULD HAVE TO OVERCOME IT.**
+
+**⛭⛭ P10, WITH ITS MATH INTACT:** *"**$\hat\Gamma=\gamma+c\sum_n\hat\pi_n^2$**" at leading order, and "the inverse-square coefficient at the origin **attaining $\gamma=\tfrac14$ across the natural ordering family**, strictly below the essential-self-adjointness threshold $\tfrac34$", with the promotion from "the c-number **$\gamma\le\tfrac14$** of the free scale factor".*
+
+⇒ ***So at leading order $\hat\Gamma\ge\gamma=\tfrac14$ — a sum of squares above a POSITIVE floor — and the oscillation threshold is at $-\tfrac14$. **The margin is exactly $\tfrac12$, and the leading-order spectrum runs UPWARD from $1/4$ through $3/4$, which is the straddle.****
+
+**⛔ AND WHAT WOULD HAVE TO OVERCOME IT, IN P10's OWN WORDS:** *"**the cubic and higher self-interactions enter AT THE SAME INVERSE-SQUARE ORDER at the origin ($\pi_n^2\phi_m/a^3$ in kind), so the complete boundary coefficient is the singular part of the interacting graviton Hamiltonian**".*
+
+⇒ ***The corrections are NOT suppressed. That is why the completion question is real rather than formal: nothing makes them small a priori, and they would have to move the coefficient down by more than $\tfrac12$.***
+
+**⌗ So step (a) has a number on both sides** — *a $\tfrac12$ margin against a same-order, unsuppressed correction — **as sharp as it gets without computing the singular part of the interacting Hamiltonian, which is the row's actual object**.*
+
 ### Revision r2921 — 2026-08-15 (main line). **P10's PARAGRAPH IS COHERENT END TO END, AND `PO-6`'s OPEN PIECE IS NARROWER THAN EITHER S4 OR D4 STATES.**
 
 **⛭⛭ THE STRUCTURE, IN P10's WORDS:** *the boundary coefficient is promoted **from the c-number $1/4$ of the free scale factor** to an operator $\hat\Gamma$ **whose spectrum STRADDLES the $3/4$ threshold**; the decomposition is "**essentially self-adjoint where $\Gamma\ge3/4$ — THE GRAVITON MOMENTUM MAKES THE ORIGIN LIMIT-POINT AND REMOVES THE BOUNDARY FREEDOM — and limit-circle where $\Gamma<3/4$**", so "**the single boundary condition of the free scale factor is thereby REPLACED** in the coupled theory".*

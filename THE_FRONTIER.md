@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2921: **P10s paragraph is coherent end to end and the open piece is narrower than S4 or D4 states.** The spectrum STRADDLES 3/4 by construction: **the graviton momentum makes the origin limit-point and REMOVES the boundary freedom** where Gamma >= 3/4, limit-circle below — so coupling REMOVES freedom rather than adding it, and thermal regularity covers the rest. ⇒ **The only breaking question: does any fibre fall below −1/4, where the regular branch thermal regularity selects stops existing?*****
+*⌗ **LAST ACTUAL MOVE — r2922: **the margin is exact — 1/2.** P10: Gamma-hat = gamma + c*sum(pi_n^2) at leading order, with **gamma = 1/4 across the natural ordering family**, so the spectrum runs UPWARD from 1/4 through the 3/4 straddle and the oscillation threshold at −1/4 is **a full 1/2 away**. ⛔ And what would have to overcome it: **the cubic and higher self-interactions enter AT THE SAME INVERSE-SQUARE ORDER** — unsuppressed, which is why the completion question is real rather than formal.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

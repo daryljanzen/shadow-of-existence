@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2921: **P10s paragraph is coherent end to end and the open piece is narrower than S4 "
-            "or D4 states.** The spectrum STRADDLES 3/4 by construction: **the graviton momentum "
-            "makes the origin limit-point and REMOVES the boundary freedom** where Gamma >= 3/4, "
-            "limit-circle below — so coupling REMOVES freedom rather than adding it, and thermal "
-            "regularity covers the rest. ⇒ **The only breaking question: does any fibre fall below "
-            "−1/4, where the regular branch thermal regularity selects stops existing?**")
+LASTFIND = ("r2922: **the margin is exact — 1/2.** P10: Gamma-hat = gamma + c*sum(pi_n^2) at leading "
+            "order, with **gamma = 1/4 across the natural ordering family**, so the spectrum runs "
+            "UPWARD from 1/4 through the 3/4 straddle and the oscillation threshold at −1/4 is "
+            "**a full 1/2 away**. ⛔ And what would have to overcome it: **the cubic and higher "
+            "self-interactions enter AT THE SAME INVERSE-SQUARE ORDER** — unsuppressed, which is "
+            "why the completion question is real rather than formal.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
