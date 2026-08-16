@@ -4,11 +4,11 @@
 
 ## ⇒ **3 OPEN · 6 STEPS LEFT** *(was 5 last revision)* **· ~8 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
 
-*⌗ **LAST ACTUAL MOVE — r2960: **the seam phase is DERIVED, the band COLLAPSES, and 0.408 was the inadmissible reading s number.** cc54s S1: the seam inherits an adiabatic OVERDENSITY and the PRESSURELESS pre-onset gives it no oscillation to flip the sign, so CRPHI = 0, bracket-checked against LCDMs own adiabatic IC. **CRPHI = pi (0.408, a rarefaction) is ANTI-ADIABATIC AND INADMISSIBLE**; the disagreement is pinned at **0.615**. r2953/55/57 all carried 0.408. One assumption flagged: Phi does not flip sign across the onset.***
+*⌗ **LAST ACTUAL MOVE — r2961 was not a zero — a strike test returning NEGATIVE, checked first. **Sixteen statements carry 0.615 or 0.878 and none compares either against an observational uncertainty.** Clause one ANSWERED (does not imprint, phase forced); clause two OPEN with every input supplied. ⌗ And B7 calls it **the CR-vs-LCDM disagreement** — a model-against-model gap, with the sky entering only through LCDM standing in for it. Last actual move: r2960.***
 
-> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
+*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
 **RUNWAY: 3 of 3 clear now**; 0 gated ().
 

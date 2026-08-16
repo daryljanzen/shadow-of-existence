@@ -146,6 +146,17 @@ sources: [cowork, chat]
 
 
 
+### Revision r2961 — 2026-08-15 (main line). **`PO-7` TESTED AGAINST THE STRIKE CRITERION: DOES NOT STRIKE, AND THE COMPARISON ITS SECOND CLAUSE NEEDS IS MADE NOWHERE.**
+
+*Checked before concluding, after four turns lost this session to assuming a computation was unrun. **Sixteen statements carry 0.615 or 0.878 and NONE compares either against an observational uncertainty.***
+
+**· CLAUSE ONE — ✔ ANSWERED:** *the construction does NOT imprint; the phase is FORCED.*
+**· CLAUSE TWO — ⛔ OPEN**, *with every input now supplied: the deficit **pinned at 0.615**, the phase **derived**, all three artefact routes **closed by computation**, the datum band **collapsed**. **What is missing is the comparison itself.***
+
+**⌗ AND CHECKING SURFACED SOMETHING ABOUT THE QUANTITY:** *B7 calls it "**the 0.615 CR-vs-LambdaCDM disagreement**" — **it is a model-against-model gap, not a model-against-sky one**. The sky enters only through LambdaCDM standing in for it, and **whether that substitution holds to the precision this clause needs is itself unstated**.*
+
+⇒ ***DO NOT STRIKE. Two of the object's parts are delivered and the third is a stated comparison — the same shape `PO-6` failed the test on, and for the same reason: **an object's clause that names a comparison is not answered by supplying its inputs**.***
+
 ### Revision r2960 — 2026-08-15 (main line). **THE SEAM PHASE IS DERIVED, THE BAND COLLAPSES, AND 0.408 WAS THE INADMISSIBLE READING'S NUMBER.**
 
 **⛭⛭ `S1_the_seam_phase_is_derived_compression_not_free`, run — cc54 supplied it:** *"**the seam phase CRPHI is DERIVED**: the seam inherits an adiabatic OVERDENSITY in the potential well, and **the PRESSURELESS pre-onset gives it no oscillation to flip the sign**, so it is a compression correlated with the well = CRPHI = 0. **Bracket-checked against the LambdaCDM control's own adiabatic IC.**"*

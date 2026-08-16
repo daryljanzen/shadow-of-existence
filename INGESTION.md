@@ -482,3 +482,4 @@ r2957  LATENT      the seam phase moves the intercept by half the disagreement; 
 r2958  LATENT      X1 closes a RATIO against the progenitor structurally; CRPHI is a PHASE and the argument does not transfer.
 r2959  LATENT      the seam supplies that a phase exists, the field forces sin(phi)=0; the progenitor is asked only WHICH of {0,pi}.
 r2960  LATENT      CRPHI is DERIVED = 0 (adiabatic compression); pi is inadmissible; the disagreement is pinned at 0.615.
+r2961  LATENT      PO-7 does not strike: clause two needs a comparison made nowhere, and 0.615 is CR-vs-LCDM not CR-vs-sky.

@@ -40,13 +40,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 0
-LASTFIND = ("r2960: **the seam phase is DERIVED, the band COLLAPSES, and 0.408 was the inadmissible "
-            "reading s number.** cc54s S1: the seam inherits an adiabatic OVERDENSITY and the "
-            "PRESSURELESS pre-onset gives it no oscillation to flip the sign, so CRPHI = 0, "
-            "bracket-checked against LCDMs own adiabatic IC. **CRPHI = pi (0.408, a rarefaction) is "
-            "ANTI-ADIABATIC AND INADMISSIBLE**; the disagreement is pinned at **0.615**. r2953/55/57 "
-            "all carried 0.408. One assumption flagged: Phi does not flip sign across the onset.")
+SINCE = 1
+LASTFIND = ("r2961 was not a zero — a strike test returning NEGATIVE, checked first. **Sixteen "
+            "statements carry 0.615 or 0.878 and none compares either against an observational "
+            "uncertainty.** Clause one ANSWERED (does not imprint, phase forced); clause two OPEN "
+            "with every input supplied. ⌗ And B7 calls it **the CR-vs-LCDM disagreement** — a "
+            "model-against-model gap, with the sky entering only through LCDM standing in for it. "
+            "Last actual move: r2960.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
