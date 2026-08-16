@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2891 — 2026-08-15 (main line). **"CR FIXES THE SCALE" IS AMBIGUOUS BETWEEN TWO SENSES, AND THE RECEIPT NAMES THE SECOND AS THE SHARPEST THING MISSING.**
+
+**⛭⛭ `P14_charge_or_colour`, uncited, run — WHAT IS PROVED:** *"$w$ has exactly the structure electric charge has — **an INTEGER OBSERVABLE PART and a FRACTIONAL CONFINED PART IN THIRDS**, correlated with a $\mathbb{Z}_3$ — and the correlation the Standard Model derives from HYPERCHARGE, **this derives from SINGLE-VALUEDNESS**". ⇒ "**A quantity with the right structure is not thereby the quantity**".*
+
+**⛔ AND WHAT IS MISSING, WHICH CORRECTS r2888:** *"nothing here supplies a gauge field, a coupling, or a scale. **THE WINDING HAS NO UNITS. ELECTRIC CHARGE DOES.** That is the sharpest thing still missing and it is a **NEW REGISTERED QUESTION rather than a caveat**".*
+
+⇒ ***So r2888's "CR supplies the one thing the SM cannot — the SCALE" was ambiguous: `P14_scale_and_ratio` means the QUANTISATION (the $1/3$ unit the anomalies leave free); this means PHYSICAL UNITS, which the winding does not have. **Two senses, and I collapsed them.****
+
+**⌗ AND `L-123` CLOSES AS A DISSOLUTION:** *the objection "a route-dependent label cannot be a charge" is answered because **only HALF the winding is route-dependent and it is exactly the half that is NOT OBSERVED**.*
+
+⇒ ***And that answers the shape question: **not `PO-2`'s shape**. There nothing observable distinguished the structures; here something does.***
+
 ### Revision r2890 — 2026-08-15 (main line). **MY r2888 FRAMING WAS WRONG — THE WINDING SUPPLIES BOTH SCALE AND RATIO.**
 
 *r2888 recorded "CR fixes the SCALE, the SM fixes every RATIO" and posed the last step as "is the $\mathbb{Z}_3$ charge itself or only its scale?"*

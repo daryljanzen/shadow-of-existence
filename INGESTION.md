@@ -413,3 +413,4 @@ r2887  INSTRUMENT  stale-unshown class swept: exactly 3 instances, all marked. c
 r2888  LATENT      CR fixes the hypercharge SCALE the SM cannot; agrees on all five; unconditional since L-74 closed.
 r2889  INSTRUMENT  the stale-unshown gate cannot reach prose-referenced antecedents; r2887s count covers id-referenced only.
 r2890  LATENT      the winding gives charge VALUES not just scale; scale-vs-ratio was never the question. L-65 is.
+r2891  LATENT      the winding has the right structure but NO UNITS; charge does. Two senses of scale collapsed at r2888.
