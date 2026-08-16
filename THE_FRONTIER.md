@@ -4,11 +4,11 @@
 
 ## ⇒ **3 OPEN · 6 STEPS LEFT** *(was 5 last revision)* **· ~8 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
 
-*⌗ **LAST ACTUAL MOVE — r2971: **D1 says the sub-threshold sets SIZE is IRRELEVANT to the boundary closure** — 'a per-fibre condition cannot be broken by the number of fibres' — **which may make my r2970 paper edit wrong**, since it wrote that what remains open is the LOCATION of the spectrum relative to 3/4. ⚠ Not reverting on one read: P10 separately calls the deficiency **that subspace rather than a line**, a location fact. Filed as OWED #578 against my own edit. ⌗ And D1 carries the retired person-gate — the third receipt.***
+*⌗ **LAST ACTUAL MOVE — r2972 was not a zero — it settled #578 against my own edit and both claims stood. **The deficiency statement PRESUPPOSES the straddle**: with no fibre below 3/4 the sub-threshold subspace is empty and 'that subspace rather than a line' is vacuous. So the location is open **as a verification of P10s own assertion**. And **D1 is right that GIVEN the straddle the SIZE cannot break the closure**. Edit sharpened, not reverted; compiles clean. Last actual move: r2971.***
 
-> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
+*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
 **RUNWAY: 3 of 3 clear now**; 0 gated ().
 

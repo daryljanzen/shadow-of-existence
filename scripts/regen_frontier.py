@@ -40,13 +40,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 0
-LASTFIND = ("r2971: **D1 says the sub-threshold sets SIZE is IRRELEVANT to the boundary closure** — "
-            "'a per-fibre condition cannot be broken by the number of fibres' — **which may make my "
-            "r2970 paper edit wrong**, since it wrote that what remains open is the LOCATION of the "
-            "spectrum relative to 3/4. ⚠ Not reverting on one read: P10 separately calls the "
-            "deficiency **that subspace rather than a line**, a location fact. Filed as OWED #578 "
-            "against my own edit. ⌗ And D1 carries the retired person-gate — the third receipt.")
+SINCE = 1
+LASTFIND = ("r2972 was not a zero — it settled #578 against my own edit and both claims stood. **The "
+            "deficiency statement PRESUPPOSES the straddle**: with no fibre below 3/4 the "
+            "sub-threshold subspace is empty and 'that subspace rather than a line' is vacuous. So "
+            "the location is open **as a verification of P10s own assertion**. And **D1 is right "
+            "that GIVEN the straddle the SIZE cannot break the closure**. Edit sharpened, not "
+            "reverted; compiles clean. Last actual move: r2971.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

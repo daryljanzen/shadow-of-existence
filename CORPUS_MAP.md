@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2972 — 2026-08-15 (main line). **#578 SETTLED: BOTH CLAIMS STAND, ABOUT DIFFERENT THINGS, AND THE EDIT IS SHARPENED RATHER THAN REVERTED.**
+
+*Tested P10's "deficiency that subspace rather than a line" against the three cases: **straddle** — a proper non-empty subspace, the contrast meaningful; **no fibre below three-quarters** — the subspace **EMPTY**, the deficiency **zero**, the contrast **vacuous**; **every fibre below** — the whole tower, the contrast saying nothing.*
+
+⇒ ***So the deficiency statement PRESUPPOSES the straddle. The location is genuinely open — **as a verification of P10's own assertion**, not as a threat to the closure.***
+
+**⌗ AND D1 IS RIGHT ABOUT THE OTHER THING:** *given the straddle, **the SIZE of that subspace cannot break the closure**, because the condition is supplied fibre by fibre. ***D1 answers "can the closure fail?" — no. The location answers "is there a subspace to supply a condition ON?"***
+
+**⛭⛭ THE EDIT, SHARPENED:** *P10 now names the open item as "**the straddle itself as a computed fact — whether the spectrum does occupy both sides of three-quarters, which the decomposition assumes**", and states explicitly that "**how the straddle falls does not bear on the closure below, which is supplied fibre by fibre and so cannot be broken by the size of the sub-threshold set**", citing D1. **Compiles clean, 26 pages.***
+
 ### Revision r2971 — 2026-08-15 (main line). **D1 SAYS THE LOCATION IS IRRELEVANT TO THE CLOSURE, WHICH MAY MAKE THE r2970 PAPER EDIT WRONG. FLAGGED IMMEDIATELY.**
 
 **⛭⛭ `D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres`, run:** *"**THE BOUNDARY CLOSURE IS A STATEMENT ABOUT EACH FIBRE. THE UV IS A STATEMENT ABOUT THE SUM OVER FIBRES. A per-fibre condition CANNOT BE BROKEN BY THE NUMBER OF FIBRES**" — "the sub-threshold set's **SIZE IS IRRELEVANT** because the same principle supplies the same condition on every one of its fibres".*
