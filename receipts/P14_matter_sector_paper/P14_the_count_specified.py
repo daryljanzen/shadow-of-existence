@@ -41,6 +41,9 @@ WHAT THIS IS NOT.  No correspondence is asserted.  The 12 <-> 12 match is exhibi
 labelled agreement of multiplicities under an assignment the corpus already made for two of
 its three factors; it is not derived, and whether a LEG is the right object to call a state is
 L-74's antecedent, which the winding receipt marks as NOT SHOWN.
+# ** r2887: L-74 is SINCE CLOSED by P14_route_or_point. **  *** This file's 'not shown' outlived it,
+# and r2885 spent a whole revision on the gate it names.  Kept per negatives-are-the-map;
+# read the closing receipt before relying on the clause above. ***
 
 ORIGIN: computations/baryon_edge/L110_the_count_specified.py -- built r2376 (c54.37); edit
 the origin, not this copy."""

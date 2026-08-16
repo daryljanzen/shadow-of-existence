@@ -39,6 +39,9 @@ the mass parity all run on a function the construction GENERATES rather than bor
 WHAT IS NOT DISCHARGED.  (i) THE LOCK: the derivation assumes the construction gauge
 g_tt g_rr = -1 at general D; P8 says the single slicing curve enforces it at four, and whether
 a single curve does so at general D is not shown (L-89) -- P8's own lapse split is the
+# ** r2887: L-89 is SINCE CLOSED by P03_batch2_runnable — cleared with seven other owed leads. **  *** This file's 'not shown' outlived it,
+# and r2885 spent a whole revision on the gate it names.  Kept per negatives-are-the-map;
+# read the closing receipt before relying on the clause above. ***
 machinery that would say otherwise.  (ii) THE SPHERE: the transverse space is taken round,
 S^{D-2}; at general D that is a choice, and P9's range paper is where the alternatives live
 (L-90).  (iii) (A2) -- the single-harmonic collapse being a REQUIREMENT at other D -- is

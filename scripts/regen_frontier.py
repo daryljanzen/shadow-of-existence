@@ -44,13 +44,12 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 0
-LASTFIND = ("r2886: **r2885s gate does not exist.** `P14_route_or_point`: 'P14_mode_monodromy_at_"
-            "the_wall IS the answer to L-74', and **with L-72 and L-74 both CLOSED the winding "
-            "sector premises are COMPUTED**. `P03_thirds_from_closure` is stale against it. ⇒ The "
-            "thirds, the closure rule, the 11-of-11 hadron match and confinement are NOT "
-            "conditional — and the single remaining reading is named: **is this Z_3 electric "
-            "charge? It is COLOUR s centre by construction; the electric reading rides on top.**")
+SINCE = 1
+LASTFIND = ("r2887 was NOT a zero — I posed 'if the count is large the register is inflated across "
+            "the board' and the count is **THREE** (L-74, L-88, L-89), which is the smaller of two "
+            "outcomes I had already framed. **The corpus is more coherent than I feared.** All "
+            "three marked at source; `check_stale_unshown` gates the class — one receipt s NOT "
+            "SHOWN outliving another s SHOWN, which cost r2885 a whole revision. Last move: r2886.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

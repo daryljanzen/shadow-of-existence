@@ -41,6 +41,9 @@ doublet, not six objects.
 ** WHAT IS NOT ESTABLISHED. **  (a) That a matter field on this geometry is labelled by a
 ROUTE at all -- PART 3 shows that IF constituents carry windings and bound objects close then
 the thirds follow, and does not show the antecedent (L-74, now the gate).  (b) That closure
+# ** r2887: L-74 is SINCE CLOSED by P14_route_or_point / P14_mode_monodromy_at_the_wall. **  *** This file's 'not shown' outlived it,
+# and r2885 spent a whole revision on the gate it names.  Kept per negatives-are-the-map;
+# read the closing receipt before relying on the clause above. ***
 is a REQUIREMENT rather than a property the vacuum slicing has (L-72).  (c) The L8.1-a weld:
 if the hinge three is colour it is not also generations, and that reaches the dimension
 result's fold step (L-67).  (d) Why the k=0 class holds two low-lying states (L-69).

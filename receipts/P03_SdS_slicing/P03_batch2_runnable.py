@@ -35,6 +35,9 @@ never two R's to choose between.
 L-87, THE SPECTRUM FORK.  Single-valuedness constrains the TOTAL advance of a CONFIGURATION,
 not any single mode, so it does not select lambda and route (a) gains nothing from L-72.
 Route (b) stays alive as L-88.  ** (c) is the default and is more than a fallback: the corpus
+# ** r2887: L-88 is SINCE CLOSED by P14_tower_is_not_kaluza_klein — "L-88 answered: NO". **  *** This file's 'not shown' outlived it,
+# and r2885 spent a whole revision on the gate it names.  Kept per negatives-are-the-map;
+# read the closing receipt before relying on the clause above. ***
 gets colour (triality), isospin (horn), chirality (sign lambda) and the CHARGE QUANTISATION,
 and does not get the multiplet count -- a stated reach with a stated boundary. **
 

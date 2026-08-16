@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2887 — 2026-08-15 (main line). **THE STALE-UNSHOWN CLASS IS REAL AND SMALL — THREE INSTANCES, AND THE INFLATION HYPOTHESIS IS WRONG.**
+
+*r2886 found r2885 had spent a revision on a gate that did not exist. Swept the class: **does any receipt call open what another has closed?***
+
+**⛭⛭ MEASURED: exactly THREE.** *`L-74` (`P03_thirds_from_closure` vs `P14_route_or_point`), `L-88` ("Route (b) stays alive" vs **"L-88 answered: NO"**), `L-89` ("is not shown" vs "eight owed leads cleared together").*
+
+⇒ ***I posed it as "if the count is large, the register's picture of what is open is inflated ACROSS THE BOARD". **The count is three. The hypothesis is wrong and the corpus is more coherent than I feared** — and that is stated because a large number would have been reported.***
+
+**⌗ ALL FOUR SITES MARKED AT SOURCE** *(`P14_the_count_specified` carried `L-74` too), kept per negatives-are-the-map with the closing receipt named.*
+
+**⛭ `check_stale_unshown` BUILT AND WIRED:** *the withdrawal-propagation failure BETWEEN RECEIPTS — r2832's gates cover rows, reports, leads and routing, and nothing covered receipt-to-receipt.*
+
+⚠ *SINCE = 1: the measurement resolved a question I posed, in one of the two directions I had already named.*
+
 ### Revision r2886 — 2026-08-15 (main line). **r2885's GATE DOES NOT EXIST — `L-74` IS CLOSED AND THE RECEIPT I READ HAD NOT HEARD.**
 
 *r2885 recorded `PO-1c` as gated on `L-74`'s unproved antecedent, on `P03_thirds_from_closure`'s "it does not show the antecedent — that is `L-74` and it is now the gate".*

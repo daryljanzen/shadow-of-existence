@@ -409,3 +409,4 @@ r2883  LATENT      the corpus re-reads failures as correct when the SM lacks the
 r2884  LATENT      PO-1cs correspondence MATCHES P13s pattern; 2/3-vs-1/3 is traversal direction, not charge sign.
 r2885  LATENT      the thirds use no charge sign, but rest on L-74s unproved antecedent: is a matter field labelled by a ROUTE at all.
 r2886  LATENT      L-72 and L-74 are CLOSED; the winding premises are computed. Single reading left: is the Z_3 electric charge.
+r2887  INSTRUMENT  stale-unshown class swept: exactly 3 instances, all marked. check_stale_unshown built.

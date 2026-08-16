@@ -4,11 +4,11 @@
 
 ## ⇒ **5 OPEN · 9 STEPS LEFT** *(was 10 last revision)* **· ~20 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
 
-*⌗ **LAST ACTUAL MOVE — r2886: **r2885s gate does not exist.** `P14_route_or_point`: 'P14_mode_monodromy_at_the_wall IS the answer to L-74', and **with L-72 and L-74 both CLOSED the winding sector premises are COMPUTED**. `P03_thirds_from_closure` is stale against it. ⇒ The thirds, the closure rule, the 11-of-11 hadron match and confinement are NOT conditional — and the single remaining reading is named: **is this Z_3 electric charge? It is COLOUR s centre by construction; the electric reading rides on top.*****
+*⌗ **LAST ACTUAL MOVE — r2887 was NOT a zero — I posed 'if the count is large the register is inflated across the board' and the count is **THREE** (L-74, L-88, L-89), which is the smaller of two outcomes I had already framed. **The corpus is more coherent than I feared.** All three marked at source; `check_stale_unshown` gates the class — one receipt s NOT SHOWN outliving another s SHOWN, which cost r2885 a whole revision. Last move: r2886.***
 
-> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
+*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
 **RUNWAY: 5 of 5 clear now**; 0 gated ().
 
