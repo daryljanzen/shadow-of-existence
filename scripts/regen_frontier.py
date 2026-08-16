@@ -42,11 +42,11 @@ EST = {
 }
 # ** turns since the last discovery that the problem space was misunderstood, and what it was **
 SINCE = 0
-LASTFIND = ("r2845: `PO-1b`'s type-check RUN — mass-parity acts as r→−r on the whole root set "
-            "(roots(−2M) = −roots(+2M), verified), so it flips the sign 2+1 exactly and 'another "
-            "register' is literal: one Z_2, two variables. **And the run showed what the row did "
-            "not have: the roots SUM TO ZERO, so the sign split can never be 3+0 — the sign "
-            "structure supplies exactly TWO states where the horn supplied four.**")
+LASTFIND = ("r2846: `PO-6`'s joint satisfiability RESOLVES. The commutation needs only that Γ̂ be "
+            "x-independent, and P10's own scaling gives it: 1/a³ → 1/x² at the origin, so the "
+            "cubic contributes to the COEFFICIENT of 1/x², not a new x-dependence. **The paper "
+            "had the answer in its own sentence — 'the complete boundary coefficient is the "
+            "singular part' — and a coefficient is x-independent by definition.**")
 
 ORDER = ['PO-11', 'PO-5', 'PO-2', 'PO-1c', 'PO-1d', 'PO-1b', 'PO-1a', 'PO-6', 'PO-7', 'PO-10']
 GROUP = {'PO-11': 'A', 'PO-5': 'A', 'PO-2': 'A',

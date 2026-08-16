@@ -369,3 +369,4 @@ r2842  LATENT      PO-7s spacing is ell-dependent; peaks asymptote to ell_A. The
 r2843  LATENT      PO-10s half 1 is two questions; the refit half is answered and the floor is a prediction.
 r2844  LATENT      PO-1c: 8/S_3 = 4 orbits matching uud/udd/uuu/ddd; the exchanging relation is the horn flip.
 r2845  LATENT      PO-1b: mass-parity flips the sign 2+1 exactly; the zero-sum makes it a TWO-state structure.
+r2846  LATENT      PO-6 joint satisfiability RESOLVED: 1/a^3 -> 1/x^2 keeps Gamma x-independent, so the commutation survives.

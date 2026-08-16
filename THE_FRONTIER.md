@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **r2845: `PO-1b`'s type-check RUN — mass-parity acts as r→−r on the whole root set (roots(−2M) = −roots(+2M), verified), so it flips the sign 2+1 exactly and 'another register' is literal: one Z_2, two variables. **And the run showed what the row did not have: the roots SUM TO ZERO, so the sign split can never be 3+0 — the sign structure supplies exactly TWO states where the horn supplied four.*****
+*⌗ **r2846: `PO-6`'s joint satisfiability RESOLVES. The commutation needs only that Γ̂ be x-independent, and P10's own scaling gives it: 1/a³ → 1/x² at the origin, so the cubic contributes to the COEFFICIENT of 1/x², not a new x-dependence. **The paper had the answer in its own sentence — 'the complete boundary coefficient is the singular part' — and a coefficient is x-independent by definition.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2846 — 2026-08-15 (main line). **`PO-6`'s JOINT SATISFIABILITY RESOLVES — THE COMMUTATION SURVIVES THE CUBIC.**
+
+*r2838 reduced the row's second half to one question. **The commutation requires exactly one thing: that $\hat\Gamma$ be $x$-INDEPENDENT**, since the radial part is $-\partial_x^2+\hat\Gamma/x^2$.*
+
+**⛭⛭ AND P10 SUPPLIES THE SCALING:** *"the mode's kinetic term $\pi_n^2/2a^3$ is, **in the geodesic coordinate, the inverse-square operator $\pi_n^2/2x^2$ at the origin**". So $1/a^3\to1/x^2$, and the cubic $\pi_n^2\phi_m/a^3$ becomes $\pi_n^2\phi_m/x^2$ — **the same $1/x^2$ structure**, contributing to the COEFFICIENT.*
+
+⇒ ***So $\hat\Gamma$ stays $x$-independent, the commutation survives, and C6 and C7 are JOINTLY SATISFIABLE.***
+
+**⌗ AND P10 SAYS IT WITHOUT DRAWING THE CONCLUSION:** *"the complete boundary coefficient is **the singular part** of the interacting graviton Hamiltonian" — and a COEFFICIENT of the singular part is $x$-independent by definition.*
+
+⚠ *What remains is the row's OBJECT and only that: the spectrum of $\hat\Gamma$, whether bounded below, and the UV definition — P10's own "open frontier", and not a satisfiability question.*
+
 ### Revision r2845 — 2026-08-15 (main line). **`PO-1b`'s TYPE-CHECK RUN — AND THE SIGN STRUCTURE IS TWO-STATE BY THE ZERO-SUM.**
 
 *The corpus said the sign $2{+}1$ "tracks $D$'s parity exactly, so it is the mass-parity in another register" — **a correspondence with no computation behind it in this row**.*
