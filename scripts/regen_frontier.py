@@ -35,7 +35,7 @@ EST = {
            'classification COMPLETE; open only as PO-1c\'s candidate'),
  'PO-6': ('the interacting tower', 1, 1, 4, None,
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
- 'PO-7': ('the first acoustic peak', 2, 2, 1, None,
+ 'PO-7':  ('the comb (prediction) + the first peak (free)', 2, 2, 1, None,
            'CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840'),
  'PO-10': ('the scalar remainder', 1, 1, 1, None,
            'CLEAR -- refit half ANSWERED (floor is a prediction); the LIKELIHOOD half is what remains'),
@@ -54,11 +54,12 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 2
-LASTFIND = ("r2844: `PO-1c` carried SIX as its count and six is the number of CONFIGURATIONS, not "
-            "STATES — 8/S_3 gives FOUR orbits matching uud/udd/uuu/ddd, and the relation the row "
-            "asked for is the horn-value flip. **That was the last turn that moved the problem "
-            "space; r2845 and r2846 advanced steps instead.**")
+SINCE = 0
+LASTFIND = ("r2849: `PO-7`'s title joins two things the corpus SEPARATES. B3's phase scan measures "
+            "them apart: the **first-peak position spreads 2.21×** on an assigned phase — NOT a "
+            "prediction — while the **SPACING spreads only 1.11× and is never 1.0** — a prediction, "
+            "and forced, because the one fitted parameter is spent pinning ℓ_A. **One half of the "
+            "row is a result and the other is a free parameter.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

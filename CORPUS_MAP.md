@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2849 — 2026-08-15 (main line). **`PO-7`'s TITLE JOINS TWO THINGS THE CORPUS SEPARATES.**
+
+*The row is "the first acoustic peak, **and** the propagated comb", treated as one object. **B3's phase scan measures them apart and they behave differently.***
+
+**⛔ THE FIRST-PEAK POSITION $\ell_1/\ell_A$ SPREADS 2.21×** — *"the first-peak modes are already sub-horizon at `Z_START`, so **their phase is ASSIGNED**". **Not a prediction.***
+
+**⛭⛭ THE SPACING SPREADS ONLY 1.11×**, *sits at $0.79\pm0.04$ of $\ell_A$, **and is never 1.0**. **A prediction** — and FORCED, because P15 says "what the cosmology fits is ONE parameter" and cc54's S1 shows **`Z_START` is solved so that $\pi D_M/r_s=301.6$**: the one knob is spent pinning $\ell_A$, leaving nothing to tune the deficit away.*
+
+⇒ ***One half of this row is a result and the other half is a free parameter, and the row's own title made them one thing.***
+
 ### Revision r2848 — 2026-08-15 (main line). **THE TURN ESTIMATES WERE INVENTED; MEASURED, THEY ARE 2.3× TOO HIGH.**
 
 *Daryl: "stop just making shit up ... I just want honest numbers to the best of your ability".*
