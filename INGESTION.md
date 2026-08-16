@@ -432,3 +432,4 @@ r2906  LATENT      the 185/215 split is a SCOPE limit: the model ends at ell~176
 r2907  LATENT      the full transfer is P15s proof standard, not a step; three argued results await it. Not estimable.
 r2908  LATENT      the O(1) ambiguity is the LOW-ell discreteness cutoff, not the damping scale; the floor itself is parameter-free.
 r2909  LATENT      the +8.2% is a ratio; the control reproduces CAMBs same quantity to 7.1%. Common-mode cancellation unestablished.
+r2910  LATENT      common-mode cancellation is false for shared FUNCTIONS; x_e alone moves the effect 1.57pp. Already in the 8.2%.

@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2910 — 2026-08-15 (main line). **r2909's "ONE COMPUTATION, UNASKED" IS ASKED AND ANSWERED — COMMON-MODE CANCELLATION IS FALSE IN GENERAL.**
+
+*Checked before proposing, after twice naming an unasked question that was asked (r2884, r2903).*
+
+**⛭⛭ `C45_xe_does_not_cancel_from_a_ratio_of_integrals`, run — THE ALGEBRA:** *"**$\int f/H_1 \big/ \int f/H_2$ DEPENDS ON $f$. A common weight cancels from a ratio of INTEGRANDS. It does NOT cancel from a ratio of INTEGRALS, because it reweights WHERE the two rates are compared**" — and $x_e$ runs $0.13\to1.16$, **a factor of nine, concentrated exactly where the rates differ most**.*
+
+⇒ ***So r2909's question is answered in principle and negatively: **a shared CONSTANT divides out; a shared FUNCTION does not**. The 7.1% control-vs-CAMB gap cancels only if it comes from a constant — and thermodynamic pipeline error is a function of $z$.***
+
+**⛭ THE MEASURED SIZE:** *"same range, same measure, **only $x_e$ toggled: +9.94% → +8.37%, a shift of 1.57pp**" — ~19% of the effect from ONE shared function. **And the 8.37 is where today's +8.2% comes from: the figure already carries this correction.***
+
+**⛔ AND IT CORRECTS TWO EARLIER STATEMENTS:** *r2752's rule was "right for the $\sqrt{12}$ normalisation and wrong for $x_e$ in the same sentence"; and C8's "every microphysical constant is outside the integral" is true of $\sigma_T$ and $n_{e0}$ — **"$x_e$ is the one member of that group that varies"**.*
+
 ### Revision r2909 — 2026-08-15 (main line). **THE DAMPING FIGURE READ DIRECTLY: THE CONTROL'S OWN ERROR ON THE SAME QUANTITY IS THE SAME SIZE AS THE EFFECT.**
 
 **⛭⛭ `P15_damping_ratio_clean`, run.** *The +8.2% is built as a RATIO: $r_D$ radincl($\Lambda$CDM) = 6.572, radfree(CR) = 7.162; $\theta_D/\theta_*$ = 0.04564 against 0.04936 ⇒ **CR/$\Lambda$CDM = 1.0816**, "projection-independent" because the common $L_3$ distance cancels.*

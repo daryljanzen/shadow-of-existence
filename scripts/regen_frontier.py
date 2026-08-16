@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2909: read the damping derivation directly. **The controls own error on the same "
-            "quantity is the same size as the effect** — the receipts gate line reads 'radincl "
-            "pi r_D/r_s = 0.1434 vs CAMB 0.1544', a **7.1% control-vs-CAMB gap against a reported "
-            "8.2% effect**. The ratio design cancels a COMMON-MODE bias exactly, which is why the "
-            "quantity was chosen — **but nothing establishes the 7.1% is common-mode, and the arms "
-            "differ precisely in the integrand.** One computation, unasked.")
+LASTFIND = ("r2910: r2909s 'one computation, unasked' is ASKED and ANSWERED — **common-mode "
+            "cancellation is FALSE in general**. C45: '∫f/H1 / ∫f/H2 DEPENDS ON f. A common weight "
+            "cancels from a ratio of INTEGRANDS, **not from a ratio of INTEGRALS, because it "
+            "reweights WHERE the two rates are compared**.' ⇒ **A shared CONSTANT divides out; a "
+            "shared FUNCTION does not.** Measured: toggling x_e alone moves the effect 9.94% → "
+            "8.37%, ~19% of it — and the 8.2% already carries that correction.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

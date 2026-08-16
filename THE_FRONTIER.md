@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2909: read the damping derivation directly. **The controls own error on the same quantity is the same size as the effect** — the receipts gate line reads 'radincl pi r_D/r_s = 0.1434 vs CAMB 0.1544', a **7.1% control-vs-CAMB gap against a reported 8.2% effect**. The ratio design cancels a COMMON-MODE bias exactly, which is why the quantity was chosen — **but nothing establishes the 7.1% is common-mode, and the arms differ precisely in the integrand.** One computation, unasked.***
+*⌗ **LAST ACTUAL MOVE — r2910: r2909s 'one computation, unasked' is ASKED and ANSWERED — **common-mode cancellation is FALSE in general**. C45: '∫f/H1 / ∫f/H2 DEPENDS ON f. A common weight cancels from a ratio of INTEGRANDS, **not from a ratio of INTEGRALS, because it reweights WHERE the two rates are compared**.' ⇒ **A shared CONSTANT divides out; a shared FUNCTION does not.** Measured: toggling x_e alone moves the effect 9.94% → 8.37%, ~19% of it — and the 8.2% already carries that correction.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -35,7 +35,7 @@
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
 | **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 11 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
-| **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 27 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
+| **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 28 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
 
 ---
 
