@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2857: `PO-5` has carried THREE different ratios under one name. P14 states the target — 15 Weyl fermions in 5 multiplets — and the ratios are **4:1 by Weyl fermion, 3:2 by MULTIPLET, 2:1 by flavour**. The row tracks 2:1-vs-4:1 while its target names MULTIPLETS, and **P14 already calls the 2:1 match 'a RESONANCE, not an identification'**. ⚠ And r2856 was scored 0 in error — gating cc54's receipts went exactly as expected.***
+*⌗ **LAST ACTUAL MOVE — r2858: `PO-5` and `PO-1c` are ONE CONSTRUCTION, and the gate between them ran BACKWARDS in this register. Triality×chirality gives FOUR classes against the SM's FIVE multiplets; the missing split (u^c from d^c) is weak isospin = **the HORN**, which is `PO-1c`'s structure. **`PO-1c` was recorded as gated on `PO-5`; `PO-5`'s fifth multiplet needs `PO-1c`.** Not an answer that surprised me — the register's picture of how two rows RELATE was wrong.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -17,7 +17,7 @@
 
 | id | what it is | steps | was | turns/step | kind | gate | runway |
 |---|---|---|---|---|---|---|---|
-| **PO-5** | the five multiplets; which carries the colour 3 | **3** ↑1 | 2 | 4 ⚠ | BUILD | — | UNGATED r2856. r2857: the target is 15 Weyl fermions in 5 multiplets; the row was tracking a FLAVOUR ratio P14 calls a resonance. The MULTIPLET question has never been put |
+| **PO-5** | the five multiplets; which carries the colour 3 | **3** ↑1 | 2 | 4 ⚠ | BUILD | — | r2858: the gradings give FOUR classes, the SM has FIVE. The fifth needs PO-1cs HORN -- these are ONE construction |
 | **PO-2** | Nariai / three quarks | **1** | 1 | 1 | READ | PO-5 | levels 1 and 2 done; level 3 is the identification and follows PO-5 |
 
 ### B · THE 2+1 CLUSTER — four readings of two splits. Independent of A.

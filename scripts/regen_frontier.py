@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
  'PO-5':  ('the five multiplets; which carries the colour 3', 3, 2, 4, None,
-           'UNGATED r2856. r2857: the target is 15 Weyl fermions in 5 multiplets; the row was tracking a FLAVOUR ratio P14 calls a resonance. The MULTIPLET question has never been put'),
+           'r2858: the gradings give FOUR classes, the SM has FIVE. The fifth needs PO-1cs HORN -- these are ONE construction'),
  'PO-2': ('Nariai / three quarks', 1, 1, 1, 'PO-5',
            'levels 1 and 2 done; level 3 is the identification and follows PO-5'),
  'PO-1c': ('does uud have a geometric counterpart', 1, 1, 1, None,
@@ -49,11 +49,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2857: `PO-5` has carried THREE different ratios under one name. P14 states the "
-            "target — 15 Weyl fermions in 5 multiplets — and the ratios are **4:1 by Weyl fermion, "
-            "3:2 by MULTIPLET, 2:1 by flavour**. The row tracks 2:1-vs-4:1 while its target names "
-            "MULTIPLETS, and **P14 already calls the 2:1 match 'a RESONANCE, not an identification'**. "
-            "⚠ And r2856 was scored 0 in error — gating cc54's receipts went exactly as expected.")
+LASTFIND = ("r2858: `PO-5` and `PO-1c` are ONE CONSTRUCTION, and the gate between them ran BACKWARDS "
+            "in this register. Triality×chirality gives FOUR classes against the SM's FIVE multiplets; "
+            "the missing split (u^c from d^c) is weak isospin = **the HORN**, which is `PO-1c`'s "
+            "structure. **`PO-1c` was recorded as gated on `PO-5`; `PO-5`'s fifth multiplet needs "
+            "`PO-1c`.** Not an answer that surprised me — the register's picture of how two rows "
+            "RELATE was wrong.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

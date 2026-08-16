@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2858 — 2026-08-15 (main line). **`PO-5` AND `PO-1c` ARE ONE CONSTRUCTION, AND THE GATE RAN BACKWARDS.**
+
+*Put the MULTIPLET question to the triality proposal for the first time.*
+
+**⛭⛭ P14's TWO GRADINGS GENERATE FOUR CLASSES:** *triality $=-\lambda\bmod3$ (quark/lepton) × chirality $=\mathrm{sign}(\lambda)$ (L/R) ⇒ quark-L→$Q$, quark-R→$\{u^c,d^c\}$, lepton-L→$L$, lepton-R→$e^c$.*
+
+**⛔ THE SM HAS FIVE.** *The gradings cannot separate $u^c$ from $d^c$ — same colour, same chirality, same triality. **What separates them is weak isospin, and P14 says $T$ is "a discrete HORN swap".***
+
+⇒ ***So the fifth multiplet needs the horn, which is `PO-1c`'s structure — and this register had `PO-1c` GATED ON `PO-5`. **The dependency runs the other way; they are one construction.****
+
+**⌗ AND IT EXPLAINS r2857's RATIO CONFUSION AT THE ROOT:** *a two-valued grading can only produce RATIOS, never a five-part decomposition — so every count the row tracked was the wrong KIND of object for its own target.*
+
+⚠ *And `TURN_PROTOCOL` is opened and immediately corrected: its first form wrote an expectation BEFORE the work and scored the turn on whether the expectation held — **an expectation-verification loop, making my own prior the reference standard**, and in the wrong order. The question is asked AFTER the work and about the PROBLEM, against the register's picture.*
+
 ### Revision r2857 — 2026-08-15 (main line). **`PO-5` HAS CARRIED THREE DIFFERENT RATIOS UNDER ONE NAME.**
 
 *Daryl asked which move was likeliest to give a zero. Scored honestly: not the composite-route read, but **a phrase repeated ~20 times today and never checked — "the five multiplets"**.*
