@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2852 — 2026-08-15 (main line). **THERE ARE TWO $S_3$s AND `PO-1a` HAD THEM AS ONE.**
+
+*Ran `PO-1c`'s method: the designation is a choice of WHICH root, $S_3$ is transitive, so **$3/S_3=1$ orbit and nothing is left to label with**. In both worked cases the label was a $\mathbb{Z}_2$ on something the root carries BESIDE its position; **the designation is not a property of a root at all**.*
+
+**⛭⛭ AND P14 SUPPLIES THE POSITIVE HALF:** *"**the HINGE $S_3$ is a WITHIN-STATE INDEX, not a family symmetry**", against "each PLANE carries the same three horizon VALUES, so **the three generations are IDENTICAL IN CONTENT, distinguished only by their WALL** … the defining property of Standard-Model generations".*
+
+⇒ ***Two $S_3$s: one on the HINGES (within-state, `PO-1c`'s) and one on the WALLS (the family symmetry). **The generations are the three walls, and they are delivered.***
+
+**⌗ SO THE CANDIDATE HALF CLOSES NEGATIVE, AND THAT IS THE RIGHT ANSWER:** *the designation is the indexical on top of the generations, not their carrier. **An indexical having no absolute counterpart is a RESULT, not a gap.***
+
 ### Revision r2851 — 2026-08-15 (main line). **`PO-1c`'s METHOD TRANSFERS: SPECIES EXHIBITED, NOT NAMED. AND `PO-1d` IS STRUCK.**
 
 **⛭⛭ THE METHOD, APPLIED TO `PO-1b`:** *sign assignments to three roots, **the zero-sum forbidding all-$+$ and all-$-$** (6 admissible); quotient by the Weyl $S_3$ — **$6/S_3$ = TWO ORBITS**, $\{2+,1-\}$ and $\{1+,2-\}$ — **and mass-parity exchanges them exactly**.*

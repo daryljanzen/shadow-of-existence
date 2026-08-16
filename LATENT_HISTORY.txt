@@ -314,3 +314,4 @@ r2848  INSTRUMENT  turn estimates measured: 2.3x too high. READ steps now 1 turn
 r2849  LATENT      PO-7 splits: the comb is a forced prediction, the first peak rests on an assigned phase.
 r2850  LATENT      the PO-1 cluster is ONE question asked about four structures; PO-1c is the only worked instance.
 r2851  LATENT      PO-1cs method transfers: 6/S_3 = 2 orbits exchanged by mass-parity, species exhibited. PO-1d struck.
+r2852  LATENT      two S_3s: hinges are a within-state index, WALLS are the family symmetry. PO-1as candidate half closes negative.

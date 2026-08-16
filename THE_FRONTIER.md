@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2851: `PO-1c`'s METHOD TRANSFERS. Applied to `PO-1b`: the zero-sum leaves 6 sign assignments, 6/S_3 = **TWO orbits**, and mass-parity exchanges them exactly. **Species EXHIBITED from the geometry rather than asserted in the canon** — same shape as `PO-1c`'s four baryon orbits. And `PO-1d` is STRUCK: its classification was complete and it was sitting in the open list at zero steps.***
+*⌗ **LAST ACTUAL MOVE — r2852: there are TWO S_3s and `PO-1a` had them as one. P14: **'the HINGE S_3 is a WITHIN-STATE INDEX, not a family symmetry'** — the family S_3 is on the WALLS, and **the three generations ARE the three walls**, 'identical in content, distinguished only by their wall'. So the designation 2+1 is NOT the carrier; it is the indexical on top of them. **An indexical having no absolute counterpart is a RESULT, not a gap.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -27,7 +27,7 @@
 |---|---|---|---|---|---|---|---|
 | **PO-1c** | does uud have a geometric counterpart | **1** | 1 | 1 | READ | — | CLEAR -- the horn is established; one count to run |
 | **PO-1b** | the SIGN 2+1: geometry CLOSED, candidate open | **1** | 1 | 2 | READ | — | CLEAR -- sign(r) IS species and the parity link is established; one type-check to finish |
-| **PO-1a** | the DESIGNATION 2+1: geometry CLOSED, candidate open | **1** ↓1 | 2 | 4 ⚠ | BUILD | — | SPLIT r2850: the 2+1 is CLOSED. Open: the candidate half, which is PO-1cs question -- apply PO-1cs method |
+| **PO-1a** | the DESIGNATION 2+1: geometry CLOSED, candidate open | **1** ↓1 | 2 | 4 ⚠ | BUILD | — | BOTH HALVES ANSWERED r2852: the 2+1 is closed and the candidate half closes NEGATIVE -- generations are the WALLS. Strikeable |
 
 ### C · THE QUANTUM SECTOR — independent.
 
