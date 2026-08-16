@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2982 — 2026-08-15 (main line). **ASKED OF EACH OF THE THREE, AND r2907's "THREE ARGUED RESULTS AWAIT THE TRANSFER" IS RIGHT FOR ONE OF THREE.**
+
+*Checked P15's own maturity marks rather than the register's summary of them.*
+
+**· ① THE COHERENCE MECHANISM — confirmed ARGUED:** *P15 lists it under "**Argued: the coherence mechanism**", and again as "coherent acoustic peaks from geometric (null-boundary) phase-fixing rather than super-horizon freeze-out (**argued**)".*
+
+**⛔ · ② THE LOW-ell FLOOR — ESTABLISHED, NOT ARGUED:** *P15's own established list reads "**Established: the cosmological derivation, the transmission dichotomy, THE AMPLITUDE FLOOR, the throat, the flat slice, THE FLAT-PROJECTION TRANSFER, the data confrontation, and the time-reversal driving equality THAT CARRIES THE PEAK HEIGHTS**", and the large-scale section says "**the load-bearing piece is established**".*
+
+**⌗ · ③ THE DAMPING SIGNATURE — marked NEITHER:** *zero maturity-marked mentions under that name.*
+
+⇒ ***So the register has been carrying a three-item debt where the paper marks one argued, one established — including the flat-projection transfer and the peak-height-carrying driving equality, both in the ESTABLISHED list — and one unlabelled.***
+
+**⚠ And that is consistent with r2980:** *the CR deficit was carried through a transfer and came back unchanged, **which is what an established rather than argued result looks like**.*
+
 ### Revision r2981 — 2026-08-15 (main line). **P15 DEFINES THE PROOF STANDARD EXPLICITLY, AND IT IS A PER-RESULT MATURITY MARKER RATHER THAN A MISSING COMPUTATION.**
 
 *Read P15's own words instead of inferring from receipts:*

@@ -22,7 +22,7 @@ EST = {
  'PO-6':  ('the interacting tower — the STRADDLE, asserted and unverified', 1, 1, 4, None,
             'r2976: ONE clause left. Bounded-below ANSWERED (S8); the UV definition MET-NOT-OWED (generic, CRs part 1-dim and shear-limited); Gamma-hats EXISTENCE folds into that (r2975). What remains is the STRADDLE -- CR-specific, load-bearing for P10s decomposition, asserted rather than computed. A BUILD: it needs the interacting spectrum, not a reading'),
  'PO-7':  ('the first peak — one COMPARISON, all inputs supplied', 1, 1, 1, None,
-            'r2981: the proof standard is a per-result MATURITY MARKER, not a missing tool -- a transfer runs and is validated. Clause two still needs a PHASE error bar the corpus does not state'),
+            'r2982: of r2907s three argued results, ONE is argued (coherence), ONE is ESTABLISHED (the floor), ONE is unmarked (damping). Clause two still needs a PHASE error bar the corpus does not state'),
  'PO-10':  ('the scalar remainder — one RUN and one REFIT', 2, 2, 1, None,
             'r2978: the odd/even run is NOT arithmetic -- the loading ratio (3.500) is the DRIVING ratio, not the observed one, and the transfer sits between. Plus the FULL-SPECTRUM refit on the banked 215 bins'),
 }
@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2981: **P15 defines the proof standard explicitly and it is a per-result MATURITY "
-            "MARKER**: 'established results are verified by direct computation; ARGUED results "
-            "carry the reasoning and a leading-order computation but are flagged as not yet proven "
-            "through the full transfer'. ⇒ So the three argued results are **not parked behind "
-            "'does a transfer exist'** — one runs and is validated — but behind **'has THIS result "
-            "been carried through one'**, which is answerable per result.")
+LASTFIND = ("r2982: asked P15s maturity marks of each of the three. **r2907s 'three argued results "
+            "await the transfer' is right for ONE.** ① the coherence mechanism — confirmed ARGUED. "
+            "⛔ ② the low-ell floor — **ESTABLISHED**, and P15s established list also contains **the "
+            "flat-projection transfer and the driving equality that carries the peak heights**. "
+            "③ the damping signature — **marked NEITHER**. ⇒ The register carried a three-item "
+            "debt the paper does not.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

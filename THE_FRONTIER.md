@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2981: **P15 defines the proof standard explicitly and it is a per-result MATURITY MARKER**: 'established results are verified by direct computation; ARGUED results carry the reasoning and a leading-order computation but are flagged as not yet proven through the full transfer'. ⇒ So the three argued results are **not parked behind 'does a transfer exist'** — one runs and is validated — but behind **'has THIS result been carried through one'**, which is answerable per result.***
+*⌗ **LAST ACTUAL MOVE — r2982: asked P15s maturity marks of each of the three. **r2907s 'three argued results await the transfer' is right for ONE.** ① the coherence mechanism — confirmed ARGUED. ⛔ ② the low-ell floor — **ESTABLISHED**, and P15s established list also contains **the flat-projection transfer and the driving equality that carries the peak heights**. ③ the damping signature — **marked NEITHER**. ⇒ The register carried a three-item debt the paper does not.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -33,7 +33,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the first peak — one COMPARISON, all inputs supplied | **1** | 1 | 1 | READ | 22 | — | r2981: the proof standard is a per-result MATURITY MARKER, not a missing tool -- a transfer runs and is validated. Clause two still needs a PHASE error bar the corpus does not state |
+| **PO-7** | the first peak — one COMPARISON, all inputs supplied | **1** | 1 | 1 | READ | 22 | — | r2982: of r2907s three argued results, ONE is argued (coherence), ONE is ESTABLISHED (the floor), ONE is unmarked (damping). Clause two still needs a PHASE error bar the corpus does not state |
 | **PO-10** | the scalar remainder — one RUN and one REFIT | **2** | 2 | 1 | READ | 33 | — | r2978: the odd/even run is NOT arithmetic -- the loading ratio (3.500) is the DRIVING ratio, not the observed one, and the transfer sits between. Plus the FULL-SPECTRUM refit on the banked 215 bins |
 
 ---
