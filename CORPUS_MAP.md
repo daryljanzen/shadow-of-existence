@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2898 — 2026-08-15 (main line). **`PO-10`'s ONE STEP IS TWO, AND MY r2896 GATE IS TOO WIDE.**
+
+*Counted what the receipts say is left: **6 distinct "what remains" statements against the board's one step**. Two are decisive and both uncited.*
+
+**⛭⛭ `C32_half_one_is_model_selection`:** *"**the row no longer owes a RULE. It owes a NUMBER: the $\chi^2$ at CR's best $\Omega_m$ on the same bins — a one-parameter scan against a likelihood ALREADY WIRED**", with a stated threshold: $\Delta$AIC $=10.0$, $\Delta$BIC $=26.9$ ⇒ **"CR is preferred on BIC unless its best-fit $\chi^2$ exceeds $\Lambda$CDM's by more than 26.9"**.*
+
+**⛔ `C49_the_row_has_a_likelihood_not_a_lookup`:** *"**THE INSTRUMENT FAILS ITS OWN CALIBRATION — and it is the CONTROL that fails, not CR**" ⇒ the row owes a **numerical-implementation task**: bring the control arm to $\chi^2$/dof $\sim$1.*
+
+⇒ ***Two things in sequence: (a) fix the control arm, (b) run the one-parameter scan. **Neither needs `PO-7`'s full transfer** — the likelihood is already wired and the scan is one-parameter on the same bins.***
+
+**⌗ SO r2896's GATE IS TOO WIDE:** *the $+8.9\%$ damping question does need the transfer; **the model-selection comparison does not**. I gated a whole row on a dependency that holds for one of its halves.*
+
 ### Revision r2897 — 2026-08-15 (main line). **`PO-7`'s TWO STEPS ARE GENUINELY TWO — THE RE-SCOPING TEST CUTS BOTH WAYS.**
 
 *Tested them against the object as r2893–r2896 tested the other rows, **expecting to merge them**, since r2877 called the phase "the whole of the disagreement".*

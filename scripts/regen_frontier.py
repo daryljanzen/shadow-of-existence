@@ -25,7 +25,7 @@ EST = {
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
  'PO-7':  ('the comb: rate REPRODUCES, level offset open', 3, 2, 1, None,
            'CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840'),
- 'PO-10': ('the likelihood — a FIT on PO-7s spectrum', 1, 1, 2, 'PO-7',
+ 'PO-10': ('model selection: fix the control, then scan', 2, 1, 1, None,
            'r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights'),
 }
 # ** THE COUNTER, AND THE CRITERION IT IS SCORED AGAINST (r2847, after Daryl caught two
@@ -42,12 +42,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 1
-LASTFIND = ("r2897 was NOT a zero — the re-scoping test ran and CONFIRMED the row. `PO-7`s two "
-            "steps are genuinely two: **a phase offset is where a peak SITS, an amplitude is how "
-            "TALL it is**, and C56 established that separation — 'the peaks in the right places and "
-            "the wrong heights'. I expected to merge them and the test stopped it. **The re-scoping "
-            "cuts both ways.** Last actual move: r2896.")
+SINCE = 0
+LASTFIND = ("r2898: **`PO-10`s one step is TWO, and my r2896 gate is too wide.** C32: the row **no "
+            "longer owes a RULE, it owes a NUMBER** — the chi-squared at CRs best Omega_m on the "
+            "same bins, **a one-parameter scan against a likelihood ALREADY WIRED**, with a stated "
+            "threshold (BIC 26.9). C49: first **the CONTROL arm fails its own calibration** and "
+            "must be brought to chi2/dof ~1. **Neither needs PO-7s transfer** — I gated a whole row "
+            "on a dependency that holds for one half.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
