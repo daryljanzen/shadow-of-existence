@@ -428,3 +428,4 @@ r2902  INSTRUMENT  no convention existed for point-in-time receipts; RERUNNABLE:
 r2903  LATENT      the BIC scan is RUN: CR decisively disfavoured at both seam phases. Control at 7.14, not 100.
 r2904  LATENT      r2903s decisive characterisation withdrawn: 185 vs 215 bins, control at 7.14, unidentified excess.
 r2905  LATENT      control at 1.18 with the mechanism diagnosed; second defect: the arm discards the bins where CR predicts most.
+r2906  LATENT      the 185/215 split is a SCOPE limit: the model ends at ell~1760 and CRs signature lives above it.

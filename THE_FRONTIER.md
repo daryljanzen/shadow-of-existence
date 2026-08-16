@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2905: **the control is at 1.18, not 7.14 — my own figure was stale — and the mechanism IS diagnosed**: 73% of the residual sat in the 16% of bins above ell 1500, and opening the wavenumber range removed 78% of it. **And four instrument states improved the control EIGHTEENFOLD while moving the CR arm 5%.** ⛔ And C51 names a SECOND, independent defect: **the arm discards thirty bins above ell~1760 — exactly where CRs predicted suppression is largest (42% at 2508)** — which no calibration fixes.***
+*⌗ **LAST ACTUAL MOVE — r2906: **the thirty bins are not dropped — the MODEL ENDS near ell 1760**, and P15 names why: the damping signature `awaits the HIGH-ell acoustic transfer`. ⇒ **The gate is SCOPE-DEPENDENT and I framed r2896 and r2898 as opposites when both were partly right**: the comparison CAN run on the 185 bins, and CANNOT SEE the signature, which lives in the thirty it does not reach. **A comparison run where a prediction is weakest is not evidence about the prediction, whichever way it comes out.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

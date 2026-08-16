@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2905: **the control is at 1.18, not 7.14 — my own figure was stale — and the mechanism "
-            "IS diagnosed**: 73% of the residual sat in the 16% of bins above ell 1500, and opening "
-            "the wavenumber range removed 78% of it. **And four instrument states improved the "
-            "control EIGHTEENFOLD while moving the CR arm 5%.** ⛔ And C51 names a SECOND, "
-            "independent defect: **the arm discards thirty bins above ell~1760 — exactly where CRs "
-            "predicted suppression is largest (42% at 2508)** — which no calibration fixes.")
+LASTFIND = ("r2906: **the thirty bins are not dropped — the MODEL ENDS near ell 1760**, and P15 "
+            "names why: the damping signature `awaits the HIGH-ell acoustic transfer`. ⇒ **The gate "
+            "is SCOPE-DEPENDENT and I framed r2896 and r2898 as opposites when both were partly "
+            "right**: the comparison CAN run on the 185 bins, and CANNOT SEE the signature, which "
+            "lives in the thirty it does not reach. **A comparison run where a prediction is "
+            "weakest is not evidence about the prediction, whichever way it comes out.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

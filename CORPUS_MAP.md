@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2906 — 2026-08-15 (main line). **THE THIRTY BINS ARE NOT DROPPED BY A CHOICE — THE MODEL ENDS THERE — AND THAT MAKES r2896 AND r2898 BOTH PARTLY RIGHT.**
+
+**⛭⛭ `C51`, read from the top:** *"plik_lite TT declares 215 bins spanning $\ell=30$–2508, and exactly 185 survive **when the MODEL ENDS near $\ell=1760$**". ⇒ **The arm scores every bin the model covers. Nothing is discarded by implementation.***
+
+**⛭ AND P15 NAMES WHY:** *the 8.2% damping-scale signature is one **"whose observable consequence AWAITS THE HIGH-$\ell$ ACOUSTIC TRANSFER"**. A scope limit, set by an unbuilt piece.*
+
+⇒ ***So the gate is neither present nor absent — it is SCOPE-DEPENDENT, and I framed two revisions as opposites when both were partly right: **r2898 stands**, the model-selection comparison can run on the 185 bins; **r2896 stands too**, but only for the other half — the comparison **cannot SEE CR's signature**, which lives in the thirty bins the model does not reach.***
+
+**⌗ THE PRECISE STATE, WHICH NEITHER REVISION HAD:** *this row can produce a number now, and **that number is blind to the strongest thing CR predicts** — 42.3% suppression at the last dropped bin against 8.4% at $\ell=1000$, growing as $\ell^2$. ***A comparison run where a prediction is weakest is not evidence about the prediction, whichever way it comes out.***
+
 ### Revision r2905 — 2026-08-15 (main line). **THE CONTROL IS AT 1.18, THE MECHANISM IS DIAGNOSED, AND THERE IS A SECOND DEFECT CALIBRATION CANNOT TOUCH.**
 
 *Asked whether the corpus had diagnosed the control's defect or only tracked its number down. **Diagnosed and fixed — and my own 7.14 was stale.***
