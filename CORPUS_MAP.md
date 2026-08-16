@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2844 — 2026-08-15 (main line). **`PO-1c`'s COUNT RUN: SIX WAS CONFIGURATIONS, FOUR ORBITS ARE STATES.**
+
+*The row carried "$2^3=8$ configurations, **six of shape $2{+}1$**". The arithmetic is right and **six counts CONFIGURATIONS where the row needs STATES**.*
+
+**⛭⛭ THE CORPUS SUPPLIES THE QUOTIENT:** *P14 — "the permuting one is the three hinges"; p0 — "**the $S_3$ permuting the walls is the family symmetry**".*
+
+⇒ ***Computed: $8/S_3$ = **FOUR ORBITS** — two of shape $2{+}1$ (size 3 each), two of shape $3{+}0$ (size 1 each). **Exactly $uud\cdot udd\cdot uuu\cdot ddd$.****
+
+**⛭ AND IT ANSWERS THE ROW'S OWN QUESTION.** *The row owes "the RELATION exchanging the two readings". **That relation is the HORN-VALUE FLIP** — $S_3$ moves which hinge carries the odd horn and cannot change which VALUE is odd, so a $\mathbb{Z}_2$ on the horn exchanges the two $2{+}1$ orbits and nothing else does.*
+
+⚠ *Not claimed: that the orbits ARE those baryons. The count and shapes match; the identification is `PO-5`'s.*
+
 ### Revision r2843 — 2026-08-15 (main line). **`PO-10`'s HALF ① IS TWO QUESTIONS, AND THE REFIT HALF IS ANSWERED.**
 
 **⛔ M2 STATES ITS OWN SCOPE:** *"WHAT THIS IS NOT: a likelihood … **it bounds the reabsorption question and does not settle the verdict**". So half ① as a LIKELIHOOD is open and M2 does not touch it.*

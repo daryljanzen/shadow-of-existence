@@ -42,11 +42,11 @@ EST = {
 }
 # ** turns since the last discovery that the problem space was misunderstood, and what it was **
 SINCE = 0
-LASTFIND = ("r2843: `PO-10`'s half ① is TWO questions, not one. **The REFIT half is ANSWERED** — M2 "
-            "shows the damping signature is not reabsorbable within priors (ω_b has 1% against a 9% "
-            "effect; Ω_m needs 37%, 'not a refit but a different universe'), and **the floor IS a "
-            "falsifiable prediction the row never carried**. The LIKELIHOOD half is open and M2 "
-            "disclaims it in its own text.")
+LASTFIND = ("r2844: `PO-1c` carried SIX as its count and six is the number of CONFIGURATIONS, not STATES. "
+            "Quotiented by the S_3 the corpus supplies ('the S_3 permuting the walls is the family "
+            "symmetry'), 8/S_3 = FOUR orbits: two of shape 2+1 and two of shape 3+0 — exactly uud, "
+            "udd, uuu, ddd. **And the relation the row asked for is the horn-value flip, a Z_2 on "
+            "the S_3-quotient.**")
 
 ORDER = ['PO-11', 'PO-5', 'PO-2', 'PO-1c', 'PO-1d', 'PO-1b', 'PO-1a', 'PO-6', 'PO-7', 'PO-10']
 GROUP = {'PO-11': 'A', 'PO-5': 'A', 'PO-2': 'A',
