@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2839 — 2026-08-15 (main line). **`PO-7` ASKS A QUESTION P15 ANSWERS; THE LIVE PROBLEM IS THAT THE MEASUREMENT DISAGREES.**
+
+*Picked by the new metric — read the row held LEAST well, expecting to be wrong.*
+
+**⛭⛭ P15 ANSWERS THE ROW'S QUESTION:** *"because the acoustic modes are **already sub-horizon at the seam**, each mode's driving is **complete on the collapse side** … the observed peaks therefore reduce to flat $\Lambda$CDM's — **by the time-reversal structure, not by tuning**".*
+
+⇒ ***So no phase shift is needed and the peaks should match. The row's own 0.856 deficit IS IN TENSION with P15's own claim — a sharper and different problem than the row states.***
+
+**⛭ AND P15 NAMES WHERE ITS CLAIM WOULD BITE:** *completeness holds for modes entering before $r_*=1.53\,r_{\rm seam}$, and **"the low-$k$ end is where it would bite"** — and $\ell_A$ is set at the low-$k$ end.*
+
 ### Revision r2838 — 2026-08-15 (main line). **`PO-6`'s NAMED TENSION IS NOT THE REAL ONE, AND P10 STATES THE REAL ONE.**
 
 *Read C6 and C7 at source rather than carrying the row's label.*

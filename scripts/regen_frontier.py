@@ -36,10 +36,17 @@ EST = {
  'PO-6':  ('the interacting tower', 2, 3, 3, None,
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
  'PO-7':  ('the first acoustic peak', 2, 2, 3, None,
-           'CLEAR -- the deficit is structural; what it means is the open question'),
+           'CLEAR -- and r2839 RESHAPED it: the deficit contradicts P15 own claim; C2_horizon_limits is the check'),
  'PO-10': ('the scalar remainder', 1, 2, 1, None,
            'CLEAR -- read M2\'s own bound to settle whether half 1 is answered'),
 }
+# ** turns since the last discovery that the problem space was misunderstood, and what it was **
+SINCE = 0
+LASTFIND = ("r2839: `PO-7` asks a question P15 ANSWERS — the modes are already sub-horizon at the seam, "
+            "so driving completes on the collapse side and the peaks reduce to flat ΛCDM's. **The live "
+            "problem is that the row's own 0.856 deficit is IN TENSION with that claim** — and P15 names "
+            "where its claim would bite: the low-k end, which is where ℓ_A is set.")
+
 ORDER = ['PO-11', 'PO-5', 'PO-2', 'PO-1c', 'PO-1d', 'PO-1b', 'PO-1a', 'PO-6', 'PO-7', 'PO-10']
 GROUP = {'PO-11': 'A', 'PO-5': 'A', 'PO-2': 'A',
          'PO-1c': 'B', 'PO-1d': 'B', 'PO-1b': 'B', 'PO-1a': 'B',
@@ -69,6 +76,18 @@ def main():
     L.append(f'## ⇒ **{len(live)} OPEN · {steps} STEPS LEFT** *(was {was} last revision)* '
              f'**· ~{turns} turns at current estimates**\n')
     blocked = [p for p in ORDER if p in live and EST[p][4]]
+    # ** r2839, Daryl: the number to hold is TURNS SINCE WE LAST DISCOVERED WE DID NOT KNOW
+    # THE PROBLEM SPACE.  *** 0 means the last turn found a misunderstanding -- which is what
+    # fixing the problem FUNDAMENTALLY looks like, as against advancing a step incrementally.
+    # It is guidance for CHOOSING a turn: pick the row held least well, not the row nearest
+    # closing. ***
+    L.append(f'## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: '
+             f'{SINCE}**\n')
+    if SINCE == 0:
+        L.append(f'*⌗ **{LASTFIND}***\n')
+    else:
+        L.append('*⚠ **Above 0 means the last turn advanced a step without learning the space. '
+                 'Pick the row held LEAST well next, not the one nearest closing.***\n')
     L.append(f'**RUNWAY: {len(live)-len(blocked)} of {len(live)} clear now**; '
              f'{len(blocked)} gated ({", ".join(f"{p}→{EST[p][4]}" for p in blocked)}).\n')
 

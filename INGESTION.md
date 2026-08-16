@@ -362,3 +362,4 @@ r2835  INSTRUMENT  five open rows named nothing that is open; all now state thei
 r2836  LATENT       two of the five WHAT IS OPEN clauses were false; both written from the head, not the corpus.
 r2837  LATENT      PO-1cs horn candidate is established (T -> weak isospin); only the six-of-eight count is untested.
 r2838  LATENT      PO-6s tension reduces to one commutator at higher order; THE_FRONTIER opened.
+r2839  LATENT      PO-7 asks what P15 answers; its 0.856 deficit contradicts P15s own completeness claim.

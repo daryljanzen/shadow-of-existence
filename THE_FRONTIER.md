@@ -4,6 +4,10 @@
 
 ## ⇒ **10 OPEN · 15 STEPS LEFT** *(was 20 last revision)* **· ~41 turns at current estimates**
 
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+
+*⌗ **r2839: `PO-7` asks a question P15 ANSWERS — the modes are already sub-horizon at the seam, so driving completes on the collapse side and the peaks reduce to flat ΛCDM's. **The live problem is that the row's own 0.856 deficit is IN TENSION with that claim** — and P15 names where its claim would bite: the low-k end, which is where ℓ_A is set.***
+
 **RUNWAY: 7 of 10 clear now**; 3 gated (PO-5→PO-11, PO-2→PO-5, PO-1d→PO-1c).
 
 
@@ -34,7 +38,7 @@
 
 | id | what it is | steps | was | turns/step | gate | runway |
 |---|---|---|---|---|---|---|
-| **PO-7** | the first acoustic peak | **2** | 2 | 3 | — | CLEAR -- the deficit is structural; what it means is the open question |
+| **PO-7** | the first acoustic peak | **2** | 2 | 3 | — | CLEAR -- and r2839 RESHAPED it: the deficit contradicts P15 own claim; C2_horizon_limits is the check |
 | **PO-10** | the scalar remainder | **1** ↓1 | 2 | 1 | — | CLEAR -- read M2's own bound to settle whether half 1 is answered |
 
 ---
