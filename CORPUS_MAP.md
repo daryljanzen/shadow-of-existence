@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2923 — 2026-08-15 (main line). **`PO-6`'s STEP (b) IS ANSWERED — A BOUNDED NEGATIVE WITH ITS SCOPE LOCATED.**
+
+**⛭⛭ `S13_the_ledger_does_not_reach_second_order`, run:** *"**at second order in the shear the quadratic basis is genuinely THREE-DIMENSIONAL**" — against the one dimension S50 established on the faces — and "**at $O(\sigma^2)$ a quadratic counterterm requires A COEFFICIENT THE SUBSTRATE DOES NOT SUPPLY**".*
+
+⇒ ***Checked against all three escape routes: $C^2$ is **not topological** (Gauss–Bonnet is the only topological quadratic in 4d, and $C^2$ is linearly independent of it); **not EOM-removable** ("Weyl is the free gravitational field — it survives on-shell in vacuum"); **not $\Lambda$ or $G$ renormalisation** ("those are the $R^0$ and $R^1$ directions; $C^2$ carries no $R$").***
+
+**⛭ AND THE ONE-CONSTANT CLAIM IS NOT CONTRADICTED — IT IS SCOPED:** *"**p0 states it of the FACES, where $C^2=0$**", and the degeneracy "ends exactly where conformal flatness does, at the shear, with $C^2=4\sigma^2+O(\sigma^4)$".*
+
+⇒ ***So (b) joins (a): both mark **where the free-field treatment ends**. A new constant at $O(\sigma^2)$ IS a free parameter — and it appears in the shear sector, **not on the faces where the economy is claimed**.***
+
+**⚠ The receipt bounds itself:** *"a BOUNDED NEGATIVE, not a verdict" — where the treatment ends, not that it fails. Steps 2 → 1.*
+
 ### Revision r2922 — 2026-08-15 (main line). **THE MARGIN IS EXACT — $\tfrac12$ — AND SO IS WHAT WOULD HAVE TO OVERCOME IT.**
 
 **⛭⛭ P10, WITH ITS MATH INTACT:** *"**$\hat\Gamma=\gamma+c\sum_n\hat\pi_n^2$**" at leading order, and "the inverse-square coefficient at the origin **attaining $\gamma=\tfrac14$ across the natural ordering family**, strictly below the essential-self-adjointness threshold $\tfrac34$", with the promotion from "the c-number **$\gamma\le\tfrac14$** of the free scale factor".*

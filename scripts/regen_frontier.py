@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2922: **the margin is exact — 1/2.** P10: Gamma-hat = gamma + c*sum(pi_n^2) at leading "
-            "order, with **gamma = 1/4 across the natural ordering family**, so the spectrum runs "
-            "UPWARD from 1/4 through the 3/4 straddle and the oscillation threshold at −1/4 is "
-            "**a full 1/2 away**. ⛔ And what would have to overcome it: **the cubic and higher "
-            "self-interactions enter AT THE SAME INVERSE-SQUARE ORDER** — unsuppressed, which is "
-            "why the completion question is real rather than formal.")
+LASTFIND = ("r2923: **`PO-6` step (b) is ANSWERED** — S13: at second order in the shear the "
+            "quadratic basis is genuinely **THREE-dimensional**, and **a quadratic counterterm "
+            "requires a coefficient the substrate does not supply** — checked against all three "
+            "escape routes (not topological, not EOM-removable, not Lambda/G renorm). ⛭ And the "
+            "one-constant claim is **SCOPED, not contradicted**: p0 states it of the FACES, where "
+            "C^2 = 0. A bounded negative that locates where the free-field treatment ends.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

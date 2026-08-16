@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2922: **the margin is exact — 1/2.** P10: Gamma-hat = gamma + c*sum(pi_n^2) at leading order, with **gamma = 1/4 across the natural ordering family**, so the spectrum runs UPWARD from 1/4 through the 3/4 straddle and the oscillation threshold at −1/4 is **a full 1/2 away**. ⛔ And what would have to overcome it: **the cubic and higher self-interactions enter AT THE SAME INVERSE-SQUARE ORDER** — unsuppressed, which is why the completion question is real rather than formal.***
+*⌗ **LAST ACTUAL MOVE — r2923: **`PO-6` step (b) is ANSWERED** — S13: at second order in the shear the quadratic basis is genuinely **THREE-dimensional**, and **a quadratic counterterm requires a coefficient the substrate does not supply** — checked against all three escape routes (not topological, not EOM-removable, not Lambda/G renorm). ⛭ And the one-constant claim is **SCOPED, not contradicted**: p0 states it of the FACES, where C^2 = 0. A bounded negative that locates where the free-field treatment ends.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

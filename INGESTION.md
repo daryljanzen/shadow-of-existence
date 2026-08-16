@@ -445,3 +445,4 @@ r2919  LATENT      PO-6: leading order is a sum of squares and the commutation i
 r2920  LATENT      two thresholds: 3/4 for extension uniqueness, -1/4 for oscillation. Both S4 and r2895 stand.
 r2921  LATENT      coupling REMOVES boundary freedom above 3/4; every fibre covered. The one breaking question is any fibre below -1/4.
 r2922  LATENT      leading order sits at gamma=1/4: a 1/2 margin to oscillation, against unsuppressed same-order cubic corrections.
+r2923  LATENT      PO-6 step (b) answered: 3-dimensional basis at O(sigma^2), a constant the substrate lacks, scoped off the faces.
