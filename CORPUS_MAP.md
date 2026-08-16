@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2979 — 2026-08-15 (main line). **WHAT P15's PROOF STANDARD TAKES: THE HIGH-ell COUNTERPART OF MACHINERY THAT ALREADY EXISTS AT LOW ell.**
+
+*Three of four remaining steps now wait on "the transfer", and nothing had asked what meeting it requires. **T1's verdict is withdrawn (r2914) but it records a fact about the corpus that the withdrawal never touched:***
+
+⇒ *"**a genuine Boltzmann transfer is ALREADY IN USE at large angles: the exact CMB temperature transfer Delta_ell(k) — Sachs-Wolfe, early and late ISW**".*
+
+⇒ ***And P15's standard is about the other end: what exists is the transfer at **LARGE angles**, where the source free-streams; what the standard needs is the **acoustic** transfer at **small angles**, where the source **oscillates and damps**. **So it is not a new KIND of object — it is the same construction carried into the regime where the source oscillates.****
+
+**⌗ THAT MAKES THE STANDARD A BOUNDED BUILD:** *the same shape `PO-5`'s chiral cut turned out to have — **a named extension of machinery the corpus already runs**, with the difficulty in the regime rather than the construction.*
+
+**⚠⚠ AND THE CAVEAT TRAVELS WITH IT:** *this rests on **one clause of a receipt whose verdict is withdrawn**. A surviving observation inside a stale receipt is still a stale receipt's sentence, and the low-ell transfer has not been verified by running it. **The scoping is an indication, not a result.***
+
 ### Revision r2978 — 2026-08-15 (main line). **THE ODD/EVEN LOADING RATIO COMPUTED, AND IT IS NOT THE HEIGHT PATTERN. THE STEP IS NOT INPUT-COMPLETE AFTER ALL.**
 
 *Checked first that nothing had produced it, then computed from R_b = 0.60:*

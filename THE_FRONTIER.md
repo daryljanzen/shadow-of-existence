@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2978: computed the odd/even loading ratio from R_b = 0.60 — **1+3R_b = 2.800 against |1-3R_b| = 0.800, so 3.500** — and against the skys 2.2564 +- 0.0772 that is +16 sigma. ⛔ **And the comparison is meaningless: that is the DRIVING ratio at recombination, while the observed P1/P2 carries damping, projection, ISW and the envelope** (LCDM returns 2.211 from the same R_b). ⇒ **r2977s 'input and target both stand' was wrong — what sits between them is the transfer.*****
+*⌗ **LAST ACTUAL MOVE — r2979: **what P15s proof standard takes — the high-ell counterpart of machinery that already exists at low ell.** T1s verdict is withdrawn but it records that **a genuine Boltzmann transfer is ALREADY IN USE at large angles (the exact Delta_ell(k), SW and ISW)**, and the standard needs the ACOUSTIC transfer at small angles where the source oscillates and damps. ⇒ **Not a new kind of object — a bounded BUILD**, the same shape PO-5s chiral cut had. ⚠ Rests on one clause of a stale receipt: an indication, not a result.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
