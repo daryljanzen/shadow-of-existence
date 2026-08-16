@@ -1,15 +1,37 @@
 ---
 name: propagation-queue
-description: What this session found that would change the CORPUS, held until the picture stops moving. Two items, both the same kind. Read before any paper edit.
+description: Both queued items RELEASED r2970 — the P10 body edit made and compiling, and the P15 item found to be a LaTeX comment rather than body text. Read for what was changed and what the item turned out to be.
 sources: [observer]
-current: r2938
+current: r2970
 ---
 
-# ▣ THE PROPAGATION QUEUE
+# ▣ RELEASED r2970 — DARYL CALLED IT: "FIX THE KNOWN PROBLEMS OF COURSE."
 
-*Opened r2938. **Daryl: propagation "would have to be done meaningfully and intentionally at the right
-time."** This file holds what is queued and states the release condition, so the queue is not a way of
-forgetting.*
+## ⛭⛭⛭ ① P10 — MADE. And the defect was sharper than queued.
+
+***The body said the floor was open; the paper's OWN APPENDIX RECEIPT says it survives.*** *`appendix_receipts_P10`:
+"whose full coefficient is positive on non-degenerate metrics --- so **the floor survives and r2652's
+sub-$(-1/4)$ question has no object**", and "**P10's $1/4$ and this $-1/4$ are the same STRUCTURE not the
+same number**".*
+
+⇒ **The body and its appendix disagreed.** *The sentence "whether the complete $\hat\Gamma$ is bounded
+below is part of what this paragraph leaves open at its end" now reads that the floor **does in fact
+follow**, that the sub-$(-\tfrac14)$ question **has no object**, and that what remains open is **the
+LOCATION of the spectrum relative to $\tfrac34$** — with the two thresholds distinguished by what each
+decides: ***$\tfrac34$ separates limit-point from limit-circle and so decides whether a boundary
+condition must be chosen at all; $-\tfrac14$ decides whether a regular branch exists to choose***.
+
+**⌗ Compiles clean — 26 pages, zero errors.**
+
+## ⚠ ② P15 — MADE, AND THE ITEM WAS MIS-CLASSIFIED.
+
+*I queued it as "the paper's own text would change". **It is a LaTeX COMMENT** — a `%` line, invisible in
+the compiled output. **No reader was ever misled but a future editor of the source would be**, so the
+comment now states that the $O(1)$ ambiguity is the **discreteness cutoff at $\ell\sim5$–58**, not $k_D$,
+and that **the floor's existence is parameter-free while only its placement carries the $O(1)$**.*
+
+⇒ ***The queue's own classification was wrong, which is worth more than the fix: I described a source
+comment as paper text without checking which it was.***
 
 ---
 

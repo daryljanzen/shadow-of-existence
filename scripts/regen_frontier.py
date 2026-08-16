@@ -40,13 +40,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 2
-LASTFIND = ("r2969 recorded rather than found: **the release condition as written measures the wrong "
-            "thing.** It has NOT been met — the counter reset on ~20 of the last 25 turns — but "
-            "**8 of the last 10 resets were my own bookkeeping** (a superseded number carried three "
-            "revisions, a scope collapsed one revision after separating it, two stale worries this "
-            "register had already recorded), **and none was the physics moving**. ⇒ Both queued "
-            "items are TEXTUAL and depend on no corrected number. **Put to Daryl, not acted on.**")
+SINCE = 0
+LASTFIND = ("r2970: **the P10 body and its OWN APPENDIX disagreed.** The appendix already said the "
+            "full coefficient is positive on non-degenerate metrics, **so the floor survives and "
+            "the sub-(-1/4) question has no object**, while the body called the floor open. Edited; "
+            "compiles clean. ⚠ And the second queued item was **MIS-CLASSIFIED — P15s k_D clause is "
+            "a LaTeX COMMENT**, invisible in the paper. I queued it as body text without checking. "
+            "**The queues own classification was wrong, which is worth more than the fix.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

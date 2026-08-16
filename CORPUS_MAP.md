@@ -146,6 +146,14 @@ sources: [cowork, chat]
 
 
 
+### Revision r2970 — 2026-08-15 (main line). **BOTH QUEUED ITEMS RELEASED — AND THE P10 DEFECT WAS SHARPER THAN QUEUED: THE BODY AND ITS OWN APPENDIX DISAGREED.**
+
+**⛭⛭⛭ ① P10, MADE.** *`appendix_receipts_P10` already carried the answer: "whose full coefficient is positive on non-degenerate metrics --- so **the floor SURVIVES and r2652's sub-(-1/4) question HAS NO OBJECT**", and "**P10's 1/4 and this -1/4 are the same STRUCTURE not the same number**" — while the body said the floor was "part of what this paragraph leaves open at its end".*
+
+⇒ ***The sentence now reads that the floor **does in fact follow**, that the sub-(-1/4) question **has no object**, and that what remains open is **the LOCATION of the spectrum relative to three-quarters** — with the thresholds distinguished by what each decides: **three-quarters separates limit-point from limit-circle and so decides whether a boundary condition must be CHOSEN AT ALL; minus-one-quarter decides whether a regular branch EXISTS to choose**. Compiles clean, 26 pages.***
+
+**⚠ ② P15, MADE — AND THE ITEM WAS MIS-CLASSIFIED.** *Its clause is a **LaTeX COMMENT**, invisible in the compiled paper. I queued it as "the paper's own text would change" **without checking which it was**. Corrected anyway, since a future editor of the source would be misled — but **the queue's own classification was wrong, which is worth more than the fix**.*
+
 ### Revision r2969 — 2026-08-15 (main line). **THE RELEASE CONDITION AS WRITTEN MEASURES THE WRONG THING. STATED, NOT ACTED ON.**
 
 *The condition has **not** been met: the counter reset on roughly twenty of the last twenty-five turns. **But classifying those resets by WHAT was wrong changes what they mean.***

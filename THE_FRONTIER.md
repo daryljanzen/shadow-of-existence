@@ -4,11 +4,11 @@
 
 ## ⇒ **3 OPEN · 6 STEPS LEFT** *(was 5 last revision)* **· ~8 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 2**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2969 recorded rather than found: **the release condition as written measures the wrong thing.** It has NOT been met — the counter reset on ~20 of the last 25 turns — but **8 of the last 10 resets were my own bookkeeping** (a superseded number carried three revisions, a scope collapsed one revision after separating it, two stale worries this register had already recorded), **and none was the physics moving**. ⇒ Both queued items are TEXTUAL and depend on no corrected number. **Put to Daryl, not acted on.*****
+*⌗ **LAST ACTUAL MOVE — r2970: **the P10 body and its OWN APPENDIX disagreed.** The appendix already said the full coefficient is positive on non-degenerate metrics, **so the floor survives and the sub-(-1/4) question has no object**, while the body called the floor open. Edited; compiles clean. ⚠ And the second queued item was **MIS-CLASSIFIED — P15s k_D clause is a LaTeX COMMENT**, invisible in the paper. I queued it as body text without checking. **The queues own classification was wrong, which is worth more than the fix.*****
 
-*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
+> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
 **RUNWAY: 3 of 3 clear now**; 0 gated ().
 
