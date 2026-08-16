@@ -40,13 +40,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 0
-LASTFIND = ("r2950: **r2921s 'coupling REMOVES freedom' is backwards.** P10: the free scale factors "
-            "single condition is replaced by one **whose DEFICIENCY IS A SUBSPACE RATHER THAN A "
-            "LINE** — the freedom GROWS. What removes it is **THERMAL REGULARITY, which IMPOSES the "
-            "regular branch by the same principle that fixed the free sector**. ⇒ S8 is right that "
-            "QUANTIZATION does not remove it, and P10 never claims it does. **Both halves stand; "
-            "the tension is settled.**")
+SINCE = 1
+LASTFIND = ("r2951 was not a zero — it reconciled two of my own readings. r2861 (P10: the remainder "
+            "is **the standard problem of the interacting theory**) and r2899 (S50: **the counterterm "
+            "limit is the SHEAR**, CR-specific) do not conflict: **each of P10s two items has a "
+            "generic part and a CR-specific part**, and the statements name different parts. ⇒ "
+            "**A generic problem on unusually good terms** — and unlike `PO-2`, this row HAS a "
+            "discriminating quantity: the basis dimension, 1 on the faces and 3 at O(sigma^2).")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

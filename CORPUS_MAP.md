@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2951 — 2026-08-15 (main line). **r2861 AND r2899 DO NOT CONFLICT — EACH OF P10's TWO ITEMS HAS A GENERIC PART AND A CR-SPECIFIC PART.**
+
+*r2861 has P10 calling the remainder **"the standard problem of the interacting theory rather than a residual freedom in the quantization"**; r2899 has S50 finding **the counterterm limit is the SHEAR**, a CR-specific fact.*
+
+**· THE SPECTRUM of the complete boundary coefficient** — *generic: every interacting theory owes its own Hamiltonian's spectrum. **CR-specific: the operator is CR's, and where it sits relative to three-quarters is CR's question.***
+
+**· THE UV DEFINITION of the tower sums** — *generic: no framework has a definition of an interacting QFT. **CR-specific: the counterterm basis is ONE-DIMENSIONAL by conformal flatness, limited only at the shear.***
+
+⇒ ***Neither statement is about the whole of either item. **P10 says the KIND of problem is standard; S50 says the CR SPECIFICS are unusually favourable** — a one-dimensional basis where a generic theory has a larger one, degenerate by conformal flatness, which **no scale factor can break and back-reaction cannot**. Not a conflict: a generic problem on unusually good terms.***
+
+**⚠ AND IT IS NOT `PO-2`'s POSITION:** *that row closed because **nothing observable distinguished** the two readings. Here something does — **the basis dimension, 1 on the faces and 3 at second order in the shear** — so this row has a discriminating quantity where `PO-2` had none.*
+
 ### Revision r2950 — 2026-08-15 (main line). **THE S8/r2921 TENSION IS SETTLED, AND r2921's "COUPLING REMOVES FREEDOM" IS BACKWARDS.**
 
 **⛔ P10:** *"the single boundary condition of the free scale factor is thereby **REPLACED**, in the coupled theory, by a self-adjoint condition supported on the sub-threshold graviton subspace, **ITS DEFICIENCY THAT SUBSPACE RATHER THAN A LINE**".*

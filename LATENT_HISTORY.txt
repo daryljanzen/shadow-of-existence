@@ -411,3 +411,4 @@ r2946  LATENT      all three L-15 routes dead: roundness is forced, a quotient t
 r2947  LATENT      PO-5 struck: both halves delivered (11/11 hadrons, triality computed); the target has no route. Three rows remain.
 r2948  LATENT      PO-6s floor is answered YES; what remains is spectral -- does any sector stay below 3/4.
 r2950  LATENT      coupling ENLARGES the deficiency to a subspace; thermal regularity supplies the condition. Both S8 and P10 stand.
+r2951  LATENT      r2861 and r2899 reconciled: a generic problem on unusually good terms; the basis dimension discriminates.

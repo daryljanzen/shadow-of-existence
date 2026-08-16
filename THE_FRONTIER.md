@@ -4,11 +4,11 @@
 
 ## ⇒ **3 OPEN · 7 STEPS LEFT** *(was 4 last revision)* **· ~11 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
 
-*⌗ **LAST ACTUAL MOVE — r2950: **r2921s 'coupling REMOVES freedom' is backwards.** P10: the free scale factors single condition is replaced by one **whose DEFICIENCY IS A SUBSPACE RATHER THAN A LINE** — the freedom GROWS. What removes it is **THERMAL REGULARITY, which IMPOSES the regular branch by the same principle that fixed the free sector**. ⇒ S8 is right that QUANTIZATION does not remove it, and P10 never claims it does. **Both halves stand; the tension is settled.*****
+*⌗ **LAST ACTUAL MOVE — r2951 was not a zero — it reconciled two of my own readings. r2861 (P10: the remainder is **the standard problem of the interacting theory**) and r2899 (S50: **the counterterm limit is the SHEAR**, CR-specific) do not conflict: **each of P10s two items has a generic part and a CR-specific part**, and the statements name different parts. ⇒ **A generic problem on unusually good terms** — and unlike `PO-2`, this row HAS a discriminating quantity: the basis dimension, 1 on the faces and 3 at O(sigma^2).***
 
-> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
+*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
 **RUNWAY: 3 of 3 clear now**; 0 gated ().
 
