@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2927 — 2026-08-15 (main line). **NOTHING ACTS CHIRALLY BECAUSE THE CONSTRUCTED GEOMETRY IS ACHIRAL — AND THE CORPUS SAYS SO IN A PAPER `PO-5` HAS NEVER TOUCHED.**
+
+*Asked what would break the $2$ into the SM's asymmetric right-handed structure. **Two answers, opposite directions.***
+
+**⛔ ① STRUCTURALLY IMPOSSIBLE FOR THE CHARACTERS:** *`P14_characters_label_they_do_not_multiply` — "**four ONE-dim characters CANNOT ACT ON ONE $R$-EIGENSPACE AND NOT THE OTHER**". With `P14_the_species_bit_is_not_chiral` ($T$ acts the same on both, computed), **the $D_6$-representation route is closed**.*
+
+**⛭⛭ ② AND THE GEOMETRIC REASON, FROM P09:** *"**the corpus has BUILT the polarized Gowdy–de Sitter cut, WHICH IS THE ACHIRAL ONE**, and only ASSERTS the unpolarized turning case" ⇒ "**the corpus's first chiral geometry is NAMED and not constructed**".*
+
+⇒ ***So this row's mismatch is not an oversight and not a defect in the multiplet logic: **the construction has no chiral object because the geometry built is the achiral member of its own range**. A doublet on the right where the SM has two singlets is what an achiral construction must give.***
+
+**⌗ AND P09 BOUNDS ITS OWN GAP FAVOURABLY:** *"gravitational chirality is **achieved INSIDE THE RANGE** … not deferred to a sector the construction does not generate", and "**constructing it needs no machinery the operator lacks**".*
+
 ### Revision r2926 — 2026-08-15 (main line). **A CLOSURE MARKED IS NOT A CLOSURE PROPAGATED — THE r2887 SITES, SWEPT AND CALIBRATED.**
 
 *r2924 found `P14_the_count_specified` marked stale at r2887 with its consequence never drawn. Swept the other three for the same failure, **calibrating first per §⑤·6 — the method found the known case before being trusted**.*

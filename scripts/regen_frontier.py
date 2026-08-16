@@ -42,12 +42,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 1
-LASTFIND = ("r2926 was not a zero — a calibrated sweep that came back mostly clean. Five gating "
-            "clauses across the four r2887 sites: **three propagated (thirds r2886, hypercharge "
-            "r2888, the count r2924), two not** — L-88s route (b) and L-89s gauge lock — **and "
-            "neither unpropagated instance reaches an open row**. Both marked at source. "
-            "⌗ Calibration ran first and passed. Last actual move: r2925.")
+SINCE = 0
+LASTFIND = ("r2927: **nothing acts chirally because the CONSTRUCTED GEOMETRY IS ACHIRAL.** P09: "
+            "'the corpus has BUILT the polarized Gowdy–de Sitter cut, **which is the ACHIRAL one**, "
+            "and only ASSERTS the unpolarized turning case … **the corpus first chiral geometry is "
+            "NAMED and not constructed**'. And structurally: four one-dim characters **cannot act "
+            "on one R-eigenspace and not the other**. ⇒ `PO-5`s right-handed mismatch is what an "
+            "achiral construction MUST give — and P09 says the chiral member is REACHABLE.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
