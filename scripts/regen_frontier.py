@@ -42,10 +42,10 @@ EST = {
 }
 # ** turns since the last discovery that the problem space was misunderstood, and what it was **
 SINCE = 0
-LASTFIND = ("r2840: my own r2839 candidate mechanism for `PO-7` is ELIMINATED — P15's completeness "
-            "qualification is about MODE DRIVING (amplitudes, k-dependent entry) while ℓ_A is a "
-            "DISTANCE/SOUND-HORIZON RATIO (spacing). Different objects. **The tension stands with no "
-            "mechanism, which makes PO-7 the sharpest live problem on the board.**")
+LASTFIND = ("r2841: `PO-7`'s deficit was ALREADY ESTABLISHED and phase-robust — B3's scan gives "
+            "'0.79 ± 0.04 of ℓ_A across every phase, AND NEVER 1.0', a ~21% deficit. But L-830's "
+            "pin test gives 0.856, which sits OUTSIDE that band. Two runs, one name, different "
+            "numbers.")
 
 ORDER = ['PO-11', 'PO-5', 'PO-2', 'PO-1c', 'PO-1d', 'PO-1b', 'PO-1a', 'PO-6', 'PO-7', 'PO-10']
 GROUP = {'PO-11': 'A', 'PO-5': 'A', 'PO-2': 'A',

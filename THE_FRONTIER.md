@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **r2840: my own r2839 candidate mechanism for `PO-7` is ELIMINATED — P15's completeness qualification is about MODE DRIVING (amplitudes, k-dependent entry) while ℓ_A is a DISTANCE/SOUND-HORIZON RATIO (spacing). Different objects. **The tension stands with no mechanism, which makes PO-7 the sharpest live problem on the board.*****
+*⌗ **r2841: `PO-7`'s deficit was ALREADY ESTABLISHED and phase-robust — B3's scan gives '0.79 ± 0.04 of ℓ_A across every phase, AND NEVER 1.0', a ~21% deficit. But L-830's pin test gives 0.856, which sits OUTSIDE that band. Two runs, one name, different numbers.***
 
 **RUNWAY: 7 of 10 clear now**; 3 gated (PO-5→PO-11, PO-2→PO-5, PO-1d→PO-1c).
 
