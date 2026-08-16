@@ -430,3 +430,4 @@ r2904  LATENT      r2903s decisive characterisation withdrawn: 185 vs 215 bins, 
 r2905  LATENT      control at 1.18 with the mechanism diagnosed; second defect: the arm discards the bins where CR predicts most.
 r2906  LATENT      the 185/215 split is a SCOPE limit: the model ends at ell~1760 and CRs signature lives above it.
 r2907  LATENT      the full transfer is P15s proof standard, not a step; three argued results await it. Not estimable.
+r2908  LATENT      the O(1) ambiguity is the LOW-ell discreteness cutoff, not the damping scale; the floor itself is parameter-free.

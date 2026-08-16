@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2907: **'the full transfer' is not a step — it is P15s own PROOF STANDARD.** The "
-            "paper has three tiers: ESTABLISHED (verified by direct computation), ARGUED (reasoning "
-            "plus a leading-order computation, **flagged as not yet proven through the full "
-            "transfer**), OPEN. ⇒ **Three argued results await it**: the coherence mechanism, the "
-            "low-multipole floor s exact scale (**leading-order k_D with an O(1) ambiguity**), and "
-            "the damping signature s observable weight. **Not estimable as a turn count.**")
+LASTFIND = ("r2908: **r2907 put the O(1) ambiguity under the damping signature; it is at the "
+            "OPPOSITE end of the spectrum.** ANCHOR 6: it is the LOW-ell discreteness cutoff "
+            "(ell ~ 4.8 to 57.7), ambiguous in **S^3 areal vs curvature radius** and **the "
+            "discrete-L to continuous-ell projection**. The damping signature is at ell > 1760. "
+            "⇒ Different argued claims. **And the floor s existence and scale are PARAMETER-FREE; "
+            "only its exact placement is O(1)-ambiguous.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

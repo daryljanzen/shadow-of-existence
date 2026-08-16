@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2908 — 2026-08-15 (main line). **r2907 PUT THE $O(1)$ AMBIGUITY UNDER THE DAMPING SIGNATURE. IT IS AT THE OPPOSITE END OF THE SPECTRUM.**
+
+**⛭⛭ `P15_verify_numeric`, ANCHOR 6, run:** *the ambiguity is in the **LOW-$\ell$ DISCRETENESS CUTOFF** $\ell_L=\sqrt{L(L+2)}\,D_C/r_0$, with **two named sources**: "**$S^3$ areal vs curvature radius**, and **the discrete-$L\to$ continuous-$\ell$ projection**".*
+
+⇒ ***$L{=}1\to\ell\approx4.8$, $L{=}2\to7.8$, $L{=}20\to57.7$. **This is $\ell\sim$ a few to a few tens; the damping signature is at $\ell>1760$.** Opposite ends, different argued claims.***
+
+**⌗ WHAT MISLED ME, IN P15's OWN SENTENCE:** *"the low-multipole floor's exact scale (Sec largescale, **leading-order $k_D$** with an $O(1)$ ambiguity)" — **the symbol $k_D$ sitting inside a clause about the LOW-multipole floor**. I read the symbol and not the clause.*
+
+**⛭ AND THE ANCHOR'S VERDICT IS STRONGER THAN "AMBIGUOUS":** *"a discreteness floor at $\ell\sim$ a few, **set PARAMETER-FREE by $\Lambda$ (via $r_0$) and the standard $D_C$** … **NOT a pinned $\ell$**" — ***the floor's existence and scale are parameter-free; only its exact placement is $O(1)$-ambiguous.***
+
 ### Revision r2907 — 2026-08-15 (main line). **"THE FULL TRANSFER" IS NOT A STEP — IT IS P15's OWN PROOF STANDARD, AND THREE ARGUED RESULTS AWAIT IT.**
 
 *Scoped the object both group D rows terminate on.*

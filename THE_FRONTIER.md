@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2907: **'the full transfer' is not a step — it is P15s own PROOF STANDARD.** The paper has three tiers: ESTABLISHED (verified by direct computation), ARGUED (reasoning plus a leading-order computation, **flagged as not yet proven through the full transfer**), OPEN. ⇒ **Three argued results await it**: the coherence mechanism, the low-multipole floor s exact scale (**leading-order k_D with an O(1) ambiguity**), and the damping signature s observable weight. **Not estimable as a turn count.*****
+*⌗ **LAST ACTUAL MOVE — r2908: **r2907 put the O(1) ambiguity under the damping signature; it is at the OPPOSITE end of the spectrum.** ANCHOR 6: it is the LOW-ell discreteness cutoff (ell ~ 4.8 to 57.7), ambiguous in **S^3 areal vs curvature radius** and **the discrete-L to continuous-ell projection**. The damping signature is at ell > 1760. ⇒ Different argued claims. **And the floor s existence and scale are PARAMETER-FREE; only its exact placement is O(1)-ambiguous.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 10 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
+| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 11 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
 | **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 27 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
 
 ---
