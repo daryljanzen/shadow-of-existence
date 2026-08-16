@@ -31,8 +31,6 @@ EST = {
            'CLEAR -- sign(r) IS species and the parity link is established; one type-check to finish'),
  'PO-1a': ('the DESIGNATION 2+1: geometry CLOSED, candidate open', 1, 2, 4, None,
            'SPLIT r2850: the 2+1 is CLOSED. Open: the candidate half, which is PO-1cs question -- apply PO-1cs method'),
- 'PO-1d': ('the causal 2+1 on three hinges', 0, 0, 0, 'PO-1c',
-           'classification COMPLETE; open only as PO-1c\'s candidate'),
  'PO-6': ('the interacting tower', 1, 1, 4, None,
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
  'PO-7':  ('the comb (prediction) + the first peak (free)', 2, 2, 1, None,
@@ -55,11 +53,11 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2850: the `PO-1` cluster is NOT four problems. `PO-1a` and `PO-1b` are each TWO "
-            "objects — 'the 2+1' (named, computed, CLOSED in both) and 'what it is a candidate for' "
-            "(open in both). **And that candidate question is `PO-1c`'s question verbatim.** So the "
-            "cluster is ONE question asked about four structures, and `PO-1c` is the only worked "
-            "instance — what the others lack is its METHOD, not more geometry.")
+LASTFIND = ("r2851: `PO-1c`'s METHOD TRANSFERS. Applied to `PO-1b`: the zero-sum leaves 6 sign "
+            "assignments, 6/S_3 = **TWO orbits**, and mass-parity exchanges them exactly. **Species "
+            "EXHIBITED from the geometry rather than asserted in the canon** — same shape as `PO-1c`'s "
+            "four baryon orbits. And `PO-1d` is STRUCK: its classification was complete and it was "
+            "sitting in the open list at zero steps.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
@@ -78,12 +76,12 @@ LASTFIND = ("r2850: the `PO-1` cluster is NOT four problems. `PO-1a` and `PO-1b`
 # PO-6's UV definition, PO-1a's derivation.  Those are marked BUILD and their estimates
 # are declared unmeasured rather than dressed as measured. ***
 KIND = {'PO-11': 'BUILD', 'PO-5': 'BUILD', 'PO-2': 'READ',
-        'PO-1c': 'READ', 'PO-1d': 'READ', 'PO-1b': 'READ', 'PO-1a': 'BUILD',
+        'PO-1c': 'READ', 'PO-1b': 'READ', 'PO-1a': 'BUILD',
         'PO-6': 'BUILD', 'PO-7': 'READ', 'PO-10': 'READ'}
 
-ORDER = ['PO-11', 'PO-5', 'PO-2', 'PO-1c', 'PO-1d', 'PO-1b', 'PO-1a', 'PO-6', 'PO-7', 'PO-10']
+ORDER = ['PO-11', 'PO-5', 'PO-2', 'PO-1c', 'PO-1b', 'PO-1a', 'PO-6', 'PO-7', 'PO-10']
 GROUP = {'PO-11': 'A', 'PO-5': 'A', 'PO-2': 'A',
-         'PO-1c': 'B', 'PO-1d': 'B', 'PO-1b': 'B', 'PO-1a': 'B',
+         'PO-1c': 'B', 'PO-1b': 'B', 'PO-1a': 'B',
          'PO-6': 'C', 'PO-7': 'D', 'PO-10': 'D'}
 GNAME = {'A': 'THE CHAIN — one unbuilt sector, two consequences. Strictly ordered.',
          'B': 'THE 2+1 CLUSTER — four readings of two splits. Independent of A.',

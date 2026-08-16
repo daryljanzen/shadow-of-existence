@@ -374,3 +374,4 @@ r2847  INSTRUMENT  two turns were scored 0 and were not; the criterion is now wr
 r2848  INSTRUMENT  turn estimates measured: 2.3x too high. READ steps now 1 turn from evidence; BUILD flagged unmeasured.
 r2849  LATENT      PO-7 splits: the comb is a forced prediction, the first peak rests on an assigned phase.
 r2850  LATENT      the PO-1 cluster is ONE question asked about four structures; PO-1c is the only worked instance.
+r2851  LATENT      PO-1cs method transfers: 6/S_3 = 2 orbits exchanged by mass-parity, species exhibited. PO-1d struck.

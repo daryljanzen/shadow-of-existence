@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2851 — 2026-08-15 (main line). **`PO-1c`'s METHOD TRANSFERS: SPECIES EXHIBITED, NOT NAMED. AND `PO-1d` IS STRUCK.**
+
+**⛭⛭ THE METHOD, APPLIED TO `PO-1b`:** *sign assignments to three roots, **the zero-sum forbidding all-$+$ and all-$-$** (6 admissible); quotient by the Weyl $S_3$ — **$6/S_3$ = TWO ORBITS**, $\{2+,1-\}$ and $\{1+,2-\}$ — **and mass-parity exchanges them exactly**.*
+
+⇒ ***Two states exchanged by a $\mathbb{Z}_2$: species EXHIBITED from the geometry rather than asserted in the canon. Same shape as `PO-1c`'s four baryon orbits — quotient by $S_3$, keep the $\mathbb{Z}_2$ as the label.***
+
+**⚠ AND MY FIRST PASS QUOTIENTED BY $S_3\times\mathbb{Z}_2$ AND GOT ONE ORBIT**, *concluding the sign $2{+}1$ "cannot label states at all". **Quotienting by the LABEL destroys the thing you are exhibiting** — corrected by my own worked example.*
+
+**⌗ AND `PO-1d` IS STRUCK** *(`kills/PO-1d.md`): its classification was complete and it sat in the open list at **zero steps and zero turns**, making every total wrong.*
+
 ### Revision r2850 — 2026-08-15 (main line). **THE `PO-1` CLUSTER IS NOT FOUR PROBLEMS — IT IS ONE QUESTION ASKED FOUR TIMES.**
 
 *Checking every open title for the compound shape r2849 found in `PO-7`.*
