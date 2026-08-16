@@ -27,7 +27,7 @@ EST = {
            'CLEAR -- the horn is established; one count to run'),
  'PO-1b': ('the SIGN 2+1: geometry CLOSED, candidate open', 1, 1, 2, None,
            'CLEAR -- sign(r) IS species and the parity link is established; one type-check to finish'),
- 'PO-6': ('the interacting tower', 1, 1, 4, None,
+ 'PO-6':  ('the interacting tower — CRs share of it', 1, 1, 3, None,
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
  'PO-7':  ('the comb (prediction) + the first peak (free)', 2, 2, 1, None,
            'CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840'),
@@ -49,12 +49,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2860: the one-construction reading of r2858/r2859 is DEAD, and the corpus said so "
-            "before I proposed it. P14: **'a full lap is three crossings and ω³ = 1'** — a lap acts as "
-            "the IDENTITY on triality, for every class — and P03 says the horn swap COSTS ONE LAP. "
-            "**So the swap is triality-neutral and cannot separate u^c from d^c.** ⚠ And the real "
-            "state is worse than the row ever said: **the corpus supplies NO third grading**. The "
-            "fifth multiplet has no candidate structure at all.")
+LASTFIND = ("r2861: `PO-6`'s remainder is NOT a gap in CR. P10: the boundary condition **is SUPPLIED** "
+            "by thermal regularity fibre by fibre (κ belongs to the BACKGROUND horizon, so it is "
+            "common to every fibre), and **'what remains open is the definition of the interacting "
+            "tower — THE STANDARD PROBLEM OF THE INTERACTING THEORY'**. The row has been carrying "
+            "interacting QFT as a CR-specific deficit. **What is genuinely CR's is smaller: does its "
+            "x^-2 boundary face obstruct or assist a UV definition?**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

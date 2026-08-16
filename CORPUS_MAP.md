@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2861 — 2026-08-15 (main line). **`PO-6`'s REMAINDER IS NOT A GAP IN CR — P10 SAYS SO AND THE ROW NEVER CARRIED IT.**
+
+*Read "the open frontier" at source instead of quoting the label.*
+
+**⛭⛭ THE SENTENCE THE ROW NEVER HAD:** *"the boundary condition on that sub-threshold subspace, however, **IS SUPPLIED** by the same principle that fixed the free sector" — thermal (Hartle–Hawking) regularity, mode by mode, imposing $x^{1/2+\nu}$ on each sub-threshold fibre at the one horizon period. **And it works because "the surface gravity $\kappa=1/\alpha$ belongs to the BACKGROUND horizon, not to the graviton content, and so is COMMON TO EVERY FIBRE".***
+
+⇒ ***And P10 names what remains: **"what remains open is NOT the boundary condition but the definition of the interacting tower — THE STANDARD PROBLEM OF THE INTERACTING THEORY rather than a residual freedom in the quantization"**, CR meeting it "at its boundary face".***
+
+**⌗ SO THE ROW HAS BEEN CARRYING INTERACTING QFT AS A CR-SPECIFIC DEFICIT.** *No framework has a definition of an interacting theory; P10 says CR **meets** the problem rather than **owes** it.*
+
+**⚠ WHAT IS GENUINELY CR's IS SMALLER:** *does CR's $x^{-2}$ boundary face make that standard problem **harder or easier** than usual? The singular structure is unfamiliar and **nothing has asked**.*
+
 ### Revision r2860 — 2026-08-15 (main line). **THE ONE-CONSTRUCTION READING IS DEAD, AND THE CORPUS SAID SO BEFORE I PROPOSED IT.**
 
 *r2859 named the fatal case: "a pairing that acts everywhere pairs $Q$ with itself and delivers nothing".*
