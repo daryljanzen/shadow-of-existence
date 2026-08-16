@@ -4,9 +4,9 @@
 
 ## ⇒ **5 OPEN · 11 STEPS LEFT** *(was 10 last revision)* **· ~25 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 6**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 7**
 
-*⌗ **LAST ACTUAL MOVE — r2880 — expected yield, sixth running, and the citation sweep is COMPLETE. `PO-10` cited 0 of its 3 top-ranked receipts. `P15_damping_reabsorption`: **the +8.9% is not reabsorbable within BBN+height priors, so the damping tail is a GENUINE MULTI-SIGMA TENSION — a live falsification exposure** — and the deciding run is the full seam-to-recombination transfer, which asks **whether the HEIGHTS move with theta_D**. ⇒ **That is PO-7s live object too. The two rows are one object from two sides.*****
+*⌗ **LAST ACTUAL MOVE — r2881 — NOT a zero, and that is the signal. I predicted group D is one object and found the corpus agrees MORE strongly than I knew: `P15_verify_coherence_comb` computes the mechanism (common seam phase → contrast 4e5; random → 0.9) and **its own bound defers to the SAME open** — the full seam-to-recombination transfer. Three things, one computation, **named by p0 before this session started**. Confirmation with a sharpening, not a surprise. Last actual move: r2873.***
 
 *⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
@@ -35,8 +35,8 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 9 | — | CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840 |
-| **PO-10** | the scalar remainder | **1** | 1 | 1 | READ | 23 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
+| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 10 | — | CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840 |
+| **PO-10** | the scalar remainder | **1** | 1 | 1 | READ | 24 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
 
 ---
 

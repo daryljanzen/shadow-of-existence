@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2881 — 2026-08-15 (main line). **GROUP D IS ONE COMPUTATION FROM THREE SIDES — AND THIS WAS NOT A ZERO.**
+
+*`P15_verify_coherence_comb`, uncited by either row: the coherence mechanism is **computed, not asserted** — a common seam phase gives peak/trough contrast $\sim4\times10^5$, random per-mode phases give $\sim0.9$, and "**the null seam's single characteristic datum per mode IS one phase per mode, so it lands in the coherent column by construction**". $\Delta\ell=296$.*
+
+⇒ ***And its bound is the same open as `PO-10`'s deciding run: "mechanism only; **the full seam-to-recombination transfer remains the honest open [R]**".***
+
+**⌗ SO GROUP D'S WHOLE REMAINDER IS ONE COMPUTATION APPROACHED FROM THREE SIDES:** *`PO-7`'s wrong heights · `PO-10`'s irreducible $+8.9\%$ · the coherence comb's own deferral.*
+
+**⚠ AND p0 NAMED IT BEFORE ANY OF THIS SESSION'S WORK:** *"ARGUED, not yet proven through the full transfer". **Group D is not three problems converging — it is one problem the corpus stated correctly and the register split into two rows.***
+
+⇒ ***SINCE = 7. I predicted group D is one object; the corpus agrees more strongly than I knew. Confirmation with a sharpening, not a surprise — and that is the signal that the picture may be settling.***
+
 ### Revision r2880 — 2026-08-15 (main line). **`PO-10`'s HALF ① IS A LIVE MULTI-SIGMA FALSIFICATION EXPOSURE — AND IT IS `PO-7`'s OBJECT TOO. THE CITATION SWEEP IS COMPLETE.**
 
 *3 receipts score 4+ on this object; the row cited **0**.*

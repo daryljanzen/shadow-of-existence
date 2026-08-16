@@ -44,13 +44,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 6
-LASTFIND = ("r2880 — expected yield, sixth running, and the citation sweep is COMPLETE. `PO-10` "
-            "cited 0 of its 3 top-ranked receipts. `P15_damping_reabsorption`: **the +8.9% is not "
-            "reabsorbable within BBN+height priors, so the damping tail is a GENUINE MULTI-SIGMA "
-            "TENSION — a live falsification exposure** — and the deciding run is the full "
-            "seam-to-recombination transfer, which asks **whether the HEIGHTS move with theta_D**. "
-            "⇒ **That is PO-7s live object too. The two rows are one object from two sides.**")
+SINCE = 7
+LASTFIND = ("r2881 — NOT a zero, and that is the signal. I predicted group D is one object and "
+            "found the corpus agrees MORE strongly than I knew: `P15_verify_coherence_comb` "
+            "computes the mechanism (common seam phase → contrast 4e5; random → 0.9) and **its own "
+            "bound defers to the SAME open** — the full seam-to-recombination transfer. Three "
+            "things, one computation, **named by p0 before this session started**. Confirmation "
+            "with a sharpening, not a surprise. Last actual move: r2873.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

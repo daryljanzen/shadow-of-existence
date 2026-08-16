@@ -342,3 +342,4 @@ r2877  LATENT      PO-7: the 21% is withdrawn, acoustics work at 98%; the live o
 r2878  LATENT      PO-1cs owed relation is a CORRESPONDENCE (P13s factorisation one level down), testable. Uncited.
 r2879  LATENT      PO-6 is ONE question: does Gamma stay above -1/4 on realised states? Stake: the no-free-parameter economy.
 r2880  LATENT      PO-10 half 1 is a live multi-sigma falsification exposure; same object as PO-7s heights. Sweep complete.
+r2881  LATENT      group D is ONE computation from three sides: the full seam-to-recombination transfer. NOT a zero.
