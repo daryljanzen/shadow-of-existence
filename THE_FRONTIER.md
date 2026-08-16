@@ -4,11 +4,11 @@
 
 ## ⇒ **6 OPEN · 11 STEPS LEFT** *(was 9 last revision)* **· ~26 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2866 was NOT a zero — the count-match sweep came back clean. 14 claims across the six open rows; the two defects (r2857 three ratios, r2865 species-vs-isospin) were already found, and no third instance exists. The one I suspected — 'monodromies + 3-cycle generate SU(3)' — is a distinction `PO-5` ALREADY STATES ('the DISCRETE CONTENT of colour' vs 'it is NOT the coupling'). **Last actual move: r2865.*****
+*⌗ **LAST ACTUAL MOVE — r2867: the fifth multiplet and `PO-1c`'s label mismatch are ONE defect with ONE cause. P14: the twelve null legs factor as **3(colour) x 2(horn) x 2(chirality)**, and 'T … delivers a species label, not SU(2)_L's chiral action, **the two occupations differing on the RIGHT-HANDED PAIR'**. The horn is isospin where SU(2)_L acts and OVER-ASSIGNS it where it does not — **an OVER-SYMMETRIC structure, not a missing one**, correcting r2860.***
 
-*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
+> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
 **RUNWAY: 6 of 6 clear now**; 0 gated ().
 
