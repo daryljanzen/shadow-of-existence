@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2944 — 2026-08-15 (main line). **THE TARGET ON THE FAVOURED BRANCH IS A TRUNCATION QUESTION, AND THE SIMPLEST TRUNCATION FAILS.**
+
+*If quarks and leptons are one Dirac spinor's partial waves, **there are no five multiplets to find**: there is a tower, one bound mode per $\lambda=j+\tfrac12$ with multiplicity $2\lvert\lambda\rvert$, coloured or not by triality — **two coloured then one colourless, forever**.*
+
+⇒ ***The target becomes: does a TRUNCATION give the SM's content, and what truncates? **The corpus names the truncator**: a non-round transverse space, because $2\lvert\lambda\rvert$ is the ROUND sphere's degeneracy and **roundness is a CHOICE**.***
+
+**⛔ COMPUTED, AND THE NAIVE CUT FAILS:** *at $\lambda\le3$ the tower gives $2+4+6=12$ states — coloured $\lambda=1,2\Rightarrow6$ against colourless $\lambda=3\Rightarrow6$. **$6{:}6=1{:}1$, where the SM needs $12{:}3=4{:}1$**.*
+
+**⚠ AND A DISCREPANCY STATED RATHER THAN RESOLVED:** *r2857 recorded the corpus's figures as "2:1 unweighted, **4:3 weighted**, the SM needs 4:1", and my one-period weighted computation gives **1:1**. **Either the corpus weights over a different range, or counts the three walls in, or one of the two is wrong** — I do not know which. Filed as `OWED` #576.*
+
 ### Revision r2943 — 2026-08-15 (main line). **THE COUNT'S LAST ROUTE IS ANSWERED NO, AND MY r2926 SWEEP CONCLUDED THE OPPOSITE.**
 
 **⛭⛭ `P03_transverse_space_is_round`, run:** *"(b) is the last survivor, so **`L-88` — 'does the tower have a Kaluza–Klein shape?' — IS NOW THE COUNT'S ONLY REMAINING ROUTE**".*

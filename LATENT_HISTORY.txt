@@ -405,3 +405,4 @@ r2940  INSTRUMENT  six of 125 citations did not resolve (truncations and an ambi
 r2941  LATENT      the FORCED 12-legs premise is the favoured side of an unlanded fork; THE_BASE_RATE says the seat count did not survive.
 r2942  LATENT      quarks and leptons are ONE Dirac spinor in different partial waves; my 3x2x2 is the disfavoured seat count.
 r2943  LATENT      the seat counts last route (L-88) is answered NO; my r2926 sweep missed it by testing for a named row.
+r2944  LATENT      the target is a truncation question; the naive lambda<=3 cut gives 1:1 where the SM needs 4:1. OWED 576 filed.

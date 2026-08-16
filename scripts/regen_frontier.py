@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2943: **the counts LAST ROUTE is answered NO.** P03_transverse_space_is_round: 'L-88 "
-            "— does the tower have a Kaluza–Klein shape? — is now the counts ONLY REMAINING "
-            "ROUTE', and P14_tower_is_not_kaluza_klein records **'L-88 answered: NO'**. ⛔ And my "
-            "r2926 sweep concluded the opposite because **I checked whether the closure NAMED an "
-            "open row** — it does not, and its consequence reaches PO-5 anyway. Protocol §⑤·7 "
-            "added.")
+LASTFIND = ("r2944: on the favoured branch **there are no five multiplets to find** — there is a "
+            "TOWER, and the target is **whether a truncation gives the SMs content**. Computed: the "
+            "naive lambda<=3 cut gives 6 coloured against 6 colourless, **1:1 where the SM needs "
+            "4:1**. ⚠ And my weighted number **disagrees with the 4:3 r2857 recorded** — the "
+            "unweighted 2:1 agrees, the weighted does not. Filed as OWED #576 rather than "
+            "resolved.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

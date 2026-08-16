@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2943: **the counts LAST ROUTE is answered NO.** P03_transverse_space_is_round: 'L-88 — does the tower have a Kaluza–Klein shape? — is now the counts ONLY REMAINING ROUTE', and P14_tower_is_not_kaluza_klein records **'L-88 answered: NO'**. ⛔ And my r2926 sweep concluded the opposite because **I checked whether the closure NAMED an open row** — it does not, and its consequence reaches PO-5 anyway. Protocol §⑤·7 added.***
+*⌗ **LAST ACTUAL MOVE — r2944: on the favoured branch **there are no five multiplets to find** — there is a TOWER, and the target is **whether a truncation gives the SMs content**. Computed: the naive lambda<=3 cut gives 6 coloured against 6 colourless, **1:1 where the SM needs 4:1**. ⚠ And my weighted number **disagrees with the 4:3 r2857 recorded** — the unweighted 2:1 agrees, the weighted does not. Filed as OWED #576 rather than resolved.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
