@@ -43,12 +43,11 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2939: **OWED #574 answered, and the real defect was MINE.** Of 71 receipts mentioning "
-            "'owed', only **8 name an open row**, and **every OWED number they cite (454, 472, 496, "
-            "518) is CLOSED** — the rest is past-tense prose or debts on struck rows. ⛔ And **I "
-            "filed at r2913 under (574), a number already held by an r2818 PO-5 item**, creating a "
-            "duplicate. Renumbered 575 and closed. ⌗ My detector also called B30 live, whose debt "
-            "names the struck PO-4 — calibration failed on the negative case.")
+LASTFIND = ("r2940: **six of the 125 citations pointed at nothing** — four TRUNCATIONS and two "
+            "AMBIGUOUS stubs (`L212` prefixes two distinct receipts). All mine, all from quoting "
+            "titles as I read them rather than as they are. ⇒ **A citation that does not resolve is "
+            "not a citation** — the point of raising the ratio 51→125 was that a reader can go and "
+            "read the thing. All six fixed; `check_citations_resolve` built, seeded and wired.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

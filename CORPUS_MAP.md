@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2940 — 2026-08-15 (main line). **SIX OF THE 125 CITATIONS POINTED AT NOTHING, ALL MINE.**
+
+*`check_owed_rows_live` caught two; a sweep of all 125 found six.*
+
+**⛔ FOUR TRUNCATIONS AND TWO AMBIGUOUS STUBS:** *`M3_station_G_supplies_the_sequence` for `..._and_the_three_are_one_knot`; `S50_the_counterterm_basis_is_one_dimensional` for `..._because_the_background_family_is`; `I3_the_identification_is_general` for `..._and_the_shear_count_is_the_gap`; `..._the_one_fitted_NUMBER` for `...PARAMETER`; `...do_not_multiPLY` for `...multiPLET`; and **`L212`, which prefixes TWO distinct receipts** — disambiguated from context to `L212_the_factorisation_singles_out_nothing`.*
+
+⇒ ***All from quoting titles as I read them rather than as they are. **A citation that does not resolve is not a citation** — the whole point of raising the ratio from 51 to 125 was that a reader can go and read the thing. A truncated name sends them nowhere; a stub sends them to the wrong one of two.***
+
+**⌗ `check_citations_resolve` BUILT, SEEDED AND WIRED:** *every receipt-shaped name in any row, open or struck, must resolve to a file — **and the gate names the near-miss so the fix is one edit**.*
+
 ### Revision r2939 — 2026-08-15 (main line). **`OWED` #574 ANSWERED — AND THE REAL DEFECT WAS A NUMBERING COLLISION OF MY OWN.**
 
 *Went to the one item I had filed and never worked, expecting a zero to be hiding there.*
