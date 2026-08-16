@@ -88,7 +88,7 @@ SEAT count (12+3) and the MODE count (infinite) disagree") and defers it to L-10
 **⌗ THIS IS THE GAP'S SHARPEST LIVE EDGE**, *and it was invisible from this map because the map was
 holding a route instead of an object.*
 
-## ⛭⛭⛭ r2825 — THE BOARD HAS ONE ROOT, AND IT IS `PO-11`
+## ⛭⛭⛭ r2825 — THE BOARD HAS ONE ROOT, AND IT IS `PO-11` ⌗ **⟨r2856: `PO-11` is STRUCK — the propagating Dirac sector is built and quantised on cc54's `L-831` S1–S8, all eight run in this tree. Record, not live work.⟩**
 
 **THE KNOT RESOLVED INTO A CHAIN.**
 
