@@ -396,3 +396,4 @@ r2870  LATENT      P03: the INTEGER part separates u from d; closure rule 11/11 
 r2871  INSTRUMENT  PO-5s delivered block rewritten from P03s receipt; check_delivered_cites_source built. NOT a zero.
 r2872  LATENT      PO-7: B6 shows the acoustics reproduce at 98.2% of the rate; the row held only C57s level offset.
 r2873  LATENT      the register cites 51 of 483 receipts (11%); PO-1b cites 0 of 52. A fourth grading found uncited.
+r2874  LATENT      PO-1b struck on P14_payoff, a receipt it never cited; check_rows_cite_receipts ratchet built.

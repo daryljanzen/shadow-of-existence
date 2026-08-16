@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2874 — 2026-08-15 (main line). **`PO-1b` STRUCK ON RECEIPTS IT HAD NEVER CITED; THE CITATION FLOOR IS NOW GATED.**
+
+*Daryl: "Every fucking row needs to be citing the corpus."*
+
+**⛭⛭ `PO-1b` CITED 0 OF 52. ITS REMAINING STEP WAS ANSWERED IN ONE OF THEM.** *`P14_P14_payoff`: **"$R\circ K$ acts on P14's ACTUAL zero-modes as $C$'s KINEMATIC face"** — $R$ carrying the matter generation to the bound opposite-chirality mode on the reversed ($r<0$, $2M<0$) wall, its antimatter partner $\bar{\mathbf3}$, exact on the wall mode.*
+
+**⛔ AND THE BOUND IS THE RECEIPT'S OWN:** *"the zero-modes carry **no charge** (gauge external) … the full field-theoretic $C$ is NOT realised on the chargeless zero-modes — **the charge closes from the FIELD**".*
+
+⇒ ***So the boundary paper's "is it $C$ or $C$'s shadow" is answered — **the kinematic face, exactly** — and the missing half is not geometric but the charge, walled six times over. Struck, with every claim naming its receipt.***
+
+**⌗ AND `check_rows_cite_receipts` IS BUILT:** *a per-row citation floor set at today's counts, **a ratchet that can only rise**. The board now carries a CITES column computed from the register every turn.*
+
 ### Revision r2873 — 2026-08-15 (main line). **THE REGISTER HOLDS 11% OF ITS OWN WORKED CORPUS.**
 
 *Measured, per open row, receipts CITED against receipts EXISTING on its object:*

@@ -23,8 +23,6 @@ EST = {
            'r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet'),
  'PO-1c': ('does uud have a geometric counterpart', 2, 1, 1, None,
            'CLEAR -- the horn is established; one count to run'),
- 'PO-1b': ('the SIGN 2+1: geometry CLOSED, candidate open', 1, 1, 2, None,
-           'CLEAR -- sign(r) IS species and the parity link is established; one type-check to finish'),
  'PO-6':  ('the interacting tower — CRs share of it', 1, 1, 3, None,
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
  'PO-7':  ('the comb: rate REPRODUCES, level offset open', 3, 2, 1, None,
@@ -47,11 +45,11 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2873: **the register holds 51 of 483 receipts on its own objects — 11%.** Per row: "
-            "PO-5 19%, PO-10 26%, PO-6 9%, PO-7 3%, PO-1c 2%, **PO-1b 0 of 52**. And the "
-            "worst-cited row surfaced a receipt no row cites: **CR assigns the nu_R a PLACE and NO "
-            "INTERACTIONS** — a FOURTH grading with a sixteenth state, with N_eff consistent "
-            "because it counts thermalized species and a gauge-singlet nu_R does not thermalize.")
+LASTFIND = ("r2874: `PO-1b` STRUCK — its remaining step was ANSWERED and RECEIPTED and UNCITED. "
+            "`P14_P14_payoff`: **R∘K acts on P14s ACTUAL zero-modes as Cs KINEMATIC face**, R "
+            "carrying the matter generation to its antimatter partner on the reversed wall, exact. "
+            "And the bound is the receipts own: **the zero-modes carry no charge, so the charge "
+            "closes from the FIELD**. The row cited 0 of 52; every claim now names one.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
@@ -73,9 +71,9 @@ KIND = {'PO-5': 'BUILD', 'PO-2': 'READ',
         'PO-1c': 'READ', 'PO-1b': 'READ',
         'PO-6': 'BUILD', 'PO-7': 'READ', 'PO-10': 'READ'}
 
-ORDER = ['PO-5', 'PO-1c', 'PO-1b', 'PO-6', 'PO-7', 'PO-10']
+ORDER = ['PO-5', 'PO-1c', 'PO-6', 'PO-7', 'PO-10']
 GROUP = {'PO-5': 'A', 'PO-2': 'A',
-         'PO-1c': 'B', 'PO-1b': 'B', 
+         'PO-1c': 'B', 
          'PO-6': 'C', 'PO-7': 'D', 'PO-10': 'D'}
 GNAME = {'A': 'THE CHAIN — one unbuilt sector, two consequences. Strictly ordered.',
          'B': 'THE 2+1 CLUSTER — four readings of two splits. Independent of A.',
@@ -83,8 +81,27 @@ GNAME = {'A': 'THE CHAIN — one unbuilt sector, two consequences. Strictly orde
          'D': 'COSMOLOGY — independent, and the only group confronted with data.'}
 
 
+
+def _cites():
+    """** r2874: how many receipts each open row cites, counted from the register. **
+    *** Daryl: every row needs to be citing the corpus.  The register held 11% of its
+    own worked corpus; this column makes that visible every turn. ***"""
+    raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8',
+               errors='replace').read()
+    out = {}
+    for line in raw.split('\n'):
+        m = re.match(r'\|\s*(~~)?\s*\*\*(PO-\d+[a-z]?)\*\*', line)
+        if not m or m.group(1):
+            continue
+        out[m.group(2)] = len({c for c in re.findall(r'`([A-Za-z0-9_]+)`', line)
+                               if re.match(r'^[A-Z]\d+[a-z]?_|^L\d+|^S\d+_|^P\d+_|'
+                                           r'^M\d+_|^C\d+_|^B\d+_|^Z\d+_', c)})
+    return out
+
+
 def main():
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
+    CITES = _cites()
     live = set()
     for line in raw.split('\n'):
         m = re.match(r'\|\s*(~~)?\s*\*\*(PO-\d+[a-z]?)\*\*', line)
@@ -127,8 +144,8 @@ def main():
 
     for g in ('A', 'B', 'C', 'D'):
         L.append(f'\n### {g} · {GNAME[g]}\n')
-        L.append('| id | what it is | steps | was | turns/step | kind | gate | runway |')
-        L.append('|---|---|---|---|---|---|---|---|')
+        L.append('| id | what it is | steps | was | turns/step | kind | cites | gate | runway |')
+        L.append('|---|---|---|---|---|---|---|---|---|')
         for p in ORDER:
             if GROUP[p] != g or p not in live:
                 continue
@@ -137,7 +154,7 @@ def main():
             k = KIND.get(p, '?')
             tcell = f'{t}' if k == 'READ' else f'{t} ⚠'
             L.append(f'| **{p}** | {name} | **{s}**{arrow} | {w} | {tcell} | {k} | '
-                     f'{gate or "—"} | {note} |')
+                     f'{CITES.get(p, 0)} | {gate or "—"} | {note} |')
 
     L.append('\n---\n')
     L.append('*⚠ **READ estimates are MEASURED**: six steps closed, every one took one turn '
