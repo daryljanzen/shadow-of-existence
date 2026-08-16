@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2930 — 2026-08-15 (main line). **r2916's "SAME PERIOD" INFERENCE IS CIRCULAR, AND THE DRIFT TEST I PROPOSED IS VOID.**
+
+*Checked whether $\Delta\ell=296$ is a prediction or a demo parameter **before** computing any drift.*
+
+**⛭⛭ `P15_verify_coherence_comb`:** *"coherent → sharp comb at **$\Delta\ell = \pi D_C/r_s = 296$**".*
+
+⇒ ***So 296 is $\pi D_C/r_s$ — **the acoustic scale itself**, the same formula as $\ell_A=\pi D_M/r_s=301.37$. **The coherence comb's spacing is not a second period that happens to match; it IS the acoustic comb — that is the mechanism's whole content.** I compared $\pi D_C/r_s$ against $0.975\,\pi D_M/r_s$ and reported them as independently agreeing.***
+
+**⛔ SO r2916's SUPPORT FOR THE CANDIDATE IS WITHDRAWN:** *"the structure is at the comb period" is true of **everything acoustic** — including the phase aliasing C56 ruled out and any amplitude effect whatever. **A period match against the acoustic scale distinguishes nothing.***
+
+**⌗ AND THE DRIFT TEST IS VOID:** *there is no second comb to drift against. The varying spacings (316, 277) are the acoustic series' own low-$\ell$ structure, and the coherence mechanism produces **that** series.*
+
+**⚠ WHAT STILL STANDS:** *C56's measurement — positions explain under 1% of the 26.6% swing, so the swing is in AMPLITUDES. **That never rested on the period match.** The depth is uncomputed, now with no circumstantial support either way.*
+
 ### Revision r2929 — 2026-08-15 (main line). **THE MODULATION DEPTH IS GENUINELY UNCOMPUTED — AND THE RUN CAVEATS MY OWN r2916 MATCH.**
 
 *Looked before proposing, per §⑤·6. **Two receipts touch coherence and a $C_\ell$ quantity; neither computes a depth.***

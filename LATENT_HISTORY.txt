@@ -391,3 +391,4 @@ r2926  INSTRUMENT  r2887 sites swept: 3 of 5 gating clauses propagated, 2 not, n
 r2927  LATENT      the built geometry is ACHIRAL (polarized Gowdy-dS); the chiral member is named, unbuilt, and reachable.
 r2928  LATENT      the missing chirality is the missing second polarization; the build extends P11s polarized Gowdy-dS leaf.
 r2929  LATENT      the modulation depth is uncomputed (verified); r2916s period match is asymptotic — actual spacings 316 and 277.
+r2930  LATENT      r2916s period match is circular: 296 = pi D_C/r_s IS the acoustic scale. Support withdrawn; C56s amplitude finding stands.

@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2929: **the modulation depth is genuinely uncomputed** (checked, not assumed) — the corpus holds the CAMB reference heights and the coherence contrast on a demo, and **nothing joins them**. ⚠ And the same run caveats r2916: the actual spacings are **316 and 277, not one number** — my '296 against 293, 0.9% apart' compared two IDEALISED asymptotic values, and the real low-ell spacings vary ±7%. **The period match is asymptotic and looser exactly where the transient lives.*****
+*⌗ **LAST ACTUAL MOVE — r2930: **r2916s 'same period' inference is CIRCULAR.** The coherence combs Delta-ell = 296 is **pi D_C / r_s — the acoustic scale itself**, the same formula as l_A = pi D_M / r_s = 301.37. I compared the formula against 0.975x itself and reported independent agreement. ⇒ **A period match against the acoustic scale distinguishes NOTHING**, and the drift test I proposed is void — there is no second comb. C56s amplitude finding stands; it never rested on the period.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
