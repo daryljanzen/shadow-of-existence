@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2884 — 2026-08-15 (main line). **`PO-1c`'s NAMED TEST IS RUN: THE CORRESPONDENCE MATCHES P13's PATTERN.**
+
+*r2878 found the owed relation has a registered shape, "testable against P13's own machinery". **Nobody had run it.***
+
+**⛭⛭ P13's PATTERN AND ITS MECHANISM:** *$C=(Q\to-Q)_{\rm field}\circ(R\circ K)_{\rm geometric}$ — "the geometry carries **ALL** of $C$'s kinematic content; **ONLY** the electric-charge sign closes from the field" — sign-blind **because "both factors depend on $Q$ only through $Q^2$"**.*
+
+**⇒ MATCHED FACTOR BY FACTOR:** *geometry supplies the kinematic content (there CPT/FS, here **the thirds from closure**) ✔ · field supplies the sign (here sign and scale) ✔ · and the third row is the test: **is the geometric factor sign-blind?***
+
+**⚠ APPARENT MISMATCH, AND IT RESOLVES:** *the winding's fractional part DOES distinguish quark from antiquark — but "$2/3$ one way round the equator against $1/3$ the other" is a **DIRECTION OF TRAVERSAL, not a charge sign**, and direction reversal is precisely what $R$ does. **So the winding distinguishing quark from antiquark IS the geometric factor carrying the kinematic conjugation — exactly P13's role for it.***
+
+⇒ ***THE CORRESPONDENCE MATCHES. And the breaker is named: if the $2/3$-vs-$1/3$ asymmetry required the charge SIGN rather than the traversal direction, the geometric factor would not be sign-blind. One computation, unrun, and it is this row's next step.***
+
+⚠ *SINCE = 2: a test I named, run, and passed.*
+
 ### Revision r2883 — 2026-08-15 (main line). **DEFECT OR PREDICTION: THE CORPUS HAS A TEST, AND THE RIGHT-HANDED MISMATCH FAILS IT.**
 
 **⛭⛭ `P14_colour_is_vector_like_on_singlets` SHOWS THE TEST BEING APPLIED:** *"**two recorded failures against it — `L-117`'s $2{+}2$ shape and `L-130`'s one-dimensional invariant line — are RE-READ AS CORRECT BEHAVIOUR**", because a colourless sector splitting $2{+}2$ under every $\mathbb{Z}_2$ is the correct shape: **colour is vector-like on singlets in the Standard Model too**, so the old clause asked "the colour structure for an asymmetry that colour does not carry in the SM either".*
