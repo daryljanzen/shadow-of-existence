@@ -19,25 +19,25 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
- 'PO-11': ('the propagating spinor sector', 3, 3, 3, None,
+ 'PO-11': ('the propagating spinor sector', 3, 3, 4, None,
            'cc54 building the omega!=0 continuum; the +/-lambda reproduction is the hard step'),
  'PO-5': ('quark/lepton split; the five multiplets', 2, 2, 4, 'PO-11',
            'four of five coupling routes closed; the fifth needs a propagating sector to compose from'),
- 'PO-2': ('Nariai / three quarks', 1, 1, 2, 'PO-5',
+ 'PO-2': ('Nariai / three quarks', 1, 1, 1, 'PO-5',
            'levels 1 and 2 done; level 3 is the identification and follows PO-5'),
- 'PO-1c': ('does uud have a geometric counterpart', 1, 1, 2, None,
+ 'PO-1c': ('does uud have a geometric counterpart', 1, 1, 1, None,
            'CLEAR -- the horn is established; one count to run'),
- 'PO-1b': ('the SIGN 2+1', 1, 1, 2, None,
+ 'PO-1b': ('the SIGN 2+1', 1, 1, 1, None,
            'CLEAR -- sign(r) IS species and the parity link is established; one type-check to finish'),
- 'PO-1a': ('the DESIGNATION 2+1', 2, 2, 3, None,
+ 'PO-1a': ('the DESIGNATION 2+1', 2, 2, 4, None,
            'CLEAR but unsourced -- nothing derives the flavour indexical from the geometry'),
  'PO-1d': ('the causal 2+1 on three hinges', 0, 0, 0, 'PO-1c',
            'classification COMPLETE; open only as PO-1c\'s candidate'),
- 'PO-6': ('the interacting tower', 1, 2, 4, None,
+ 'PO-6': ('the interacting tower', 1, 1, 4, None,
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
- 'PO-7': ('the first acoustic peak', 2, 2, 3, None,
+ 'PO-7': ('the first acoustic peak', 2, 2, 1, None,
            'CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840'),
- 'PO-10': ('the scalar remainder', 1, 1, 2, None,
+ 'PO-10': ('the scalar remainder', 1, 1, 1, None,
            'CLEAR -- refit half ANSWERED (floor is a prediction); the LIKELIHOOD half is what remains'),
 }
 # ** THE COUNTER, AND THE CRITERION IT IS SCORED AGAINST (r2847, after Daryl caught two
@@ -59,6 +59,26 @@ LASTFIND = ("r2844: `PO-1c` carried SIX as its count and six is the number of CO
             "STATES — 8/S_3 gives FOUR orbits matching uud/udd/uuu/ddd, and the relation the row "
             "asked for is the horn-value flip. **That was the last turn that moved the problem "
             "space; r2845 and r2846 advanced steps instead.**")
+
+# ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
+# *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
+# 2-3.  Mean overestimate 2.3x. ***  Every one was a READ or a SHORT COMPUTATION on
+# material already in the corpus.
+#
+#   r2838 PO-6  locate C6/C7 tension    est 3  actual 1
+#   r2842 PO-7  compare peak-finders    est 3  actual 1
+#   r2843 PO-10 read M2's bound         est 1  actual 1
+#   r2844 PO-1c the horn count          est 2  actual 1
+#   r2845 PO-1b the type-check          est 2  actual 1
+#   r2846 PO-6  the commutator          est 3  actual 1
+#
+# ** SO: a READ step is estimated at 1 turn, from evidence. **
+# ⚠ *** A BUILD step has NO completed instance to calibrate against -- PO-11's continuum,
+# PO-6's UV definition, PO-1a's derivation.  Those are marked BUILD and their estimates
+# are declared unmeasured rather than dressed as measured. ***
+KIND = {'PO-11': 'BUILD', 'PO-5': 'BUILD', 'PO-2': 'READ',
+        'PO-1c': 'READ', 'PO-1d': 'READ', 'PO-1b': 'READ', 'PO-1a': 'BUILD',
+        'PO-6': 'BUILD', 'PO-7': 'READ', 'PO-10': 'READ'}
 
 ORDER = ['PO-11', 'PO-5', 'PO-2', 'PO-1c', 'PO-1d', 'PO-1b', 'PO-1a', 'PO-6', 'PO-7', 'PO-10']
 GROUP = {'PO-11': 'A', 'PO-5': 'A', 'PO-2': 'A',
@@ -114,17 +134,23 @@ def main():
 
     for g in ('A', 'B', 'C', 'D'):
         L.append(f'\n### {g} · {GNAME[g]}\n')
-        L.append('| id | what it is | steps | was | turns/step | gate | runway |')
-        L.append('|---|---|---|---|---|---|---|')
+        L.append('| id | what it is | steps | was | turns/step | kind | gate | runway |')
+        L.append('|---|---|---|---|---|---|---|---|')
         for p in ORDER:
             if GROUP[p] != g or p not in live:
                 continue
             name, s, w, t, gate, note = EST[p]
             arrow = '' if s == w else (f' ↓{w-s}' if s < w else f' ↑{s-w}')
-            L.append(f'| **{p}** | {name} | **{s}**{arrow} | {w} | {t} | '
+            k = KIND.get(p, '?')
+            tcell = f'{t}' if k == 'READ' else f'{t} ⚠'
+            L.append(f'| **{p}** | {name} | **{s}**{arrow} | {w} | {tcell} | {k} | '
                      f'{gate or "—"} | {note} |')
 
     L.append('\n---\n')
+    L.append('*⚠ **READ estimates are MEASURED**: six steps closed, every one took one turn '
+             '(I had predicted 2–3; mean overestimate 2.3×). **BUILD estimates carry ⚠ and are '
+             'UNMEASURED** — no build step has ever been completed here, so those numbers are '
+             'judgement with nothing behind them.*\n')
     L.append('*⌗ Steps and turn-estimates are judgements recorded so their CHANGE is visible. '
              'They are edited in `scripts/regen_frontier.py`, never here.*')
     open(OUT, 'w', encoding='utf-8').write('\n'.join(L) + '\n')

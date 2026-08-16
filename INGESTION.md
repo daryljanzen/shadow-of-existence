@@ -371,3 +371,4 @@ r2844  LATENT      PO-1c: 8/S_3 = 4 orbits matching uud/udd/uuu/ddd; the exchang
 r2845  LATENT      PO-1b: mass-parity flips the sign 2+1 exactly; the zero-sum makes it a TWO-state structure.
 r2846  LATENT      PO-6 joint satisfiability RESOLVED: 1/a^3 -> 1/x^2 keeps Gamma x-independent, so the commutation survives.
 r2847  INSTRUMENT  two turns were scored 0 and were not; the criterion is now written into the generator.
+r2848  INSTRUMENT  turn estimates measured: 2.3x too high. READ steps now 1 turn from evidence; BUILD flagged unmeasured.

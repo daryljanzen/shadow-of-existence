@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2848 — 2026-08-15 (main line). **THE TURN ESTIMATES WERE INVENTED; MEASURED, THEY ARE 2.3× TOO HIGH.**
+
+*Daryl: "stop just making shit up ... I just want honest numbers to the best of your ability".*
+
+**⛔ MEASURED AGAINST ACTUALS:** *six steps closed with a number attached — r2838, r2842, r2843, r2844, r2845, r2846. **Every one took ONE turn. I had predicted 2–3.** Mean overestimate **2.3×**.*
+
+**⛭⛭ SO THE ESTIMATES ARE NOW SPLIT BY KIND, because the six are not evidence about everything:** *every one was a **READ** or a short computation on material already in the corpus. **A READ step is now estimated at 1 turn, from evidence.** ⚠ A **BUILD** step — `PO-11`'s continuum, `PO-6`'s UV definition, `PO-1a`'s derivation — has **no completed instance to calibrate against**, so those carry ⚠ on the board and are **declared unmeasured rather than dressed as measured**.*
+
+⇒ ***Total falls 41 → 38 turns, and more of it is now honest about being a guess.***
+
 ### Revision r2847 — 2026-08-15 (main line). **TWO TURNS WERE SCORED 0 AND WERE NOT — THE COUNTER READS 2.**
 
 *Daryl: "didn't you in fact run the thing you set out to compute and it gave an answer and didn't surprise you".*
