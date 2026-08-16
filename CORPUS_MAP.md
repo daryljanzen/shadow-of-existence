@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2847 — 2026-08-15 (main line). **TWO TURNS WERE SCORED 0 AND WERE NOT — THE COUNTER READS 2.**
+
+*Daryl: "didn't you in fact run the thing you set out to compute and it gave an answer and didn't surprise you".*
+
+**⛔ CORRECT, AND I INFLATED THE COUNTER.** *r2845 ran `PO-1b`'s type-check and it PASSED as expected; r2846 ran `PO-6`'s commutator and it SURVIVED as expected. **Both advanced a step. Neither found the problem space different from what the register said.***
+
+⇒ ***THE CRITERION, now written into the generator: a turn is a 0 ONLY IF it found the space DIFFERENT. Running a stated computation and getting the EXPECTED answer is a STEP ADVANCED — however good the result.***
+
+**⌗ AND INFLATING IT TO 0 MAKES THE STEP ESTIMATES A LIE**, *which is the exact failure the counter was built to expose. The last actual move was r2844.*
+
 ### Revision r2846 — 2026-08-15 (main line). **`PO-6`'s JOINT SATISFIABILITY RESOLVES — THE COMMUTATION SURVIVES THE CUBIC.**
 
 *r2838 reduced the row's second half to one question. **The commutation requires exactly one thing: that $\hat\Gamma$ be $x$-INDEPENDENT**, since the radial part is $-\partial_x^2+\hat\Gamma/x^2$.*

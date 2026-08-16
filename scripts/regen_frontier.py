@@ -35,18 +35,30 @@ EST = {
            'classification COMPLETE; open only as PO-1c\'s candidate'),
  'PO-6':  ('the interacting tower', 2, 3, 3, None,
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
- 'PO-7':  ('the first acoustic peak', 3, 2, 3, None,
+ 'PO-7':  ('the first acoustic peak', 2, 2, 3, None,
            'CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840'),
  'PO-10': ('the scalar remainder', 1, 1, 2, None,
            'CLEAR -- refit half ANSWERED (floor is a prediction); the LIKELIHOOD half is what remains'),
 }
-# ** turns since the last discovery that the problem space was misunderstood, and what it was **
-SINCE = 0
-LASTFIND = ("r2846: `PO-6`'s joint satisfiability RESOLVES. The commutation needs only that Γ̂ be "
-            "x-independent, and P10's own scaling gives it: 1/a³ → 1/x² at the origin, so the "
-            "cubic contributes to the COEFFICIENT of 1/x², not a new x-dependence. **The paper "
-            "had the answer in its own sentence — 'the complete boundary coefficient is the "
-            "singular part' — and a coefficient is x-independent by definition.**")
+# ** THE COUNTER, AND THE CRITERION IT IS SCORED AGAINST (r2847, after Daryl caught two
+# turns wrongly scored 0).  *** A turn is a 0 ONLY IF it found the problem space DIFFERENT
+# from what the register said.  Running a stated computation and getting the EXPECTED answer
+# is a STEP ADVANCED, not a discovery -- however good the result. ***
+#
+#   0   r2842  PO-7   the two numbers were never a contradiction; the spacing is ell-dependent
+#   0   r2843  PO-10  half 1 was TWO questions and one was already answered
+#   0   r2844  PO-1c  six was the wrong KIND of number -- configurations, not states
+#   ×   r2845  PO-1b  the type-check PASSED as expected -- a step, not a discovery
+#   ×   r2846  PO-6   the commutator SURVIVED as expected -- a step, not a discovery
+#
+# ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
+# thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
+# the exact failure it was built to expose. ***
+SINCE = 2
+LASTFIND = ("r2844: `PO-1c` carried SIX as its count and six is the number of CONFIGURATIONS, not "
+            "STATES — 8/S_3 gives FOUR orbits matching uud/udd/uuu/ddd, and the relation the row "
+            "asked for is the horn-value flip. **That was the last turn that moved the problem "
+            "space; r2845 and r2846 advanced steps instead.**")
 
 ORDER = ['PO-11', 'PO-5', 'PO-2', 'PO-1c', 'PO-1d', 'PO-1b', 'PO-1a', 'PO-6', 'PO-7', 'PO-10']
 GROUP = {'PO-11': 'A', 'PO-5': 'A', 'PO-2': 'A',
@@ -84,8 +96,8 @@ def main():
     # closing. ***
     L.append(f'## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: '
              f'{SINCE}**\n')
+    L.append(f'*⌗ **LAST ACTUAL MOVE — {LASTFIND}***\n')
     if SINCE == 0:
-        L.append(f'*⌗ **{LASTFIND}***\n')
         # ** r2842, Daryl: while this counter reads 0 the step and turn estimates above are
         # NOT TRUSTWORTHY -- each 0 means the problem space itself moved, so the estimates were
         # made against a picture that has since changed.  *** They become meaningful only once
