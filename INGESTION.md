@@ -405,3 +405,4 @@ r2879  LATENT      PO-6 is ONE question: does Gamma stay above -1/4 on realised 
 r2880  LATENT      PO-10 half 1 is a live multi-sigma falsification exposure; same object as PO-7s heights. Sweep complete.
 r2881  LATENT      group D is ONE computation from three sides: the full seam-to-recombination transfer. NOT a zero.
 r2882  LATENT      no P03/P14 contradiction: D_6 is finite, so it labels and cannot gauge. T commutes with R; mismatch one pair wide.
+r2883  LATENT      the corpus re-reads failures as correct when the SM lacks the feature; the right-handed mismatch fails that test.

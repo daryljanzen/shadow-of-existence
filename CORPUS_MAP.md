@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2883 — 2026-08-15 (main line). **DEFECT OR PREDICTION: THE CORPUS HAS A TEST, AND THE RIGHT-HANDED MISMATCH FAILS IT.**
+
+**⛭⛭ `P14_colour_is_vector_like_on_singlets` SHOWS THE TEST BEING APPLIED:** *"**two recorded failures against it — `L-117`'s $2{+}2$ shape and `L-130`'s one-dimensional invariant line — are RE-READ AS CORRECT BEHAVIOUR**", because a colourless sector splitting $2{+}2$ under every $\mathbb{Z}_2$ is the correct shape: **colour is vector-like on singlets in the Standard Model too**, so the old clause asked "the colour structure for an asymmetry that colour does not carry in the SM either".*
+
+⇒ ***An apparent failure is re-read as correct WHEN THE SM DOES NOT CARRY THE FEATURE EITHER.***
+
+**⛔ THE RIGHT-HANDED MISMATCH FAILS THAT TEST.** *The SM's $SU(2)_L$ **is** chiral; `P14_the_species_bit_is_not_chiral` computes that **$T$ acts the SAME on both $R$-eigenspaces**. **The SM carries the feature and the construction does not** — a mismatch, not a shape re-readable as correct.*
+
+**⌗ AND THE TWO RECEIPTS DOVETAIL:** *one re-specifies the question and says it "is a real computation"; the other has run it. **The row cited neither.***
+
+⇒ *SINCE = 1: this answered the question I posed rather than overturning what I held.*
+
 ### Revision r2882 — 2026-08-15 (main line). **THE r2869 CONTRADICTION IS NOT ONE, AND r2868's DIRECT-PRODUCT QUESTION IS ANSWERED — BOTH BY UNCITED RECEIPTS.**
 
 **⛭⛭ `B41_the_isospin_structure_is_finite`:** *"**the corpus's isospin structure is $D_6$, a FINITE group, and a finite group has no Lie algebra to gauge. THE DOUBLET EXISTS AND CANNOT CARRY $SU(2)_L$**" … "discrete all the way down — **not 'a generator is missing' but 'the whole structure is finite', which is what it IS, not a gap**". ⇒ "a species label is exactly what a finite two-dimensional irrep delivers — it distinguishes two states and does not rotate between them".*

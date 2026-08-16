@@ -4,11 +4,11 @@
 
 ## ⇒ **5 OPEN · 10 STEPS LEFT** *(was 9 last revision)* **· ~21 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
 
-*⌗ **LAST ACTUAL MOVE — r2882: **the r2869 contradiction is NOT one.** P03s T-to-weak-isospin is the LABELLING and P14s not-SU(2)_L is the GAUGING — `B41`: **the isospin structure is D_6, FINITE, and a finite group has no Lie algebra to gauge; the doublet exists and cannot carry SU(2)_L**. And `P14_the_species_bit_is_not_chiral` settles r2868 computed: **T acts the same on both R-eigenspaces**, so the over-symmetry IS forced — and the mismatch is ONE PAIR WIDE, on the right-handed side, with its falsifier stated.***
+*⌗ **LAST ACTUAL MOVE — r2883 answered my question rather than overturning it, so NOT a zero. The corpus has a test for defect-vs-correct-shape — `P14_colour_is_vector_like_on_singlets` **re-reads two recorded failures as CORRECT** because the SM does not carry the feature either — and **the right-handed mismatch FAILS that test**: the SMs SU(2)_L IS chiral and T is not. Mismatch confirmed, not re-readable. **Last actual move: r2882.*****
 
-> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
+*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
 **RUNWAY: 5 of 5 clear now**; 0 gated ().
 
@@ -17,7 +17,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-5** | the five multiplets — mismatch is one pair wide | **3** ↓1 | 4 | 4 ⚠ | BUILD | 22 | — | r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet |
+| **PO-5** | the five multiplets — mismatch is one pair wide | **3** ↓1 | 4 | 4 ⚠ | BUILD | 23 | — | r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet |
 
 ### B · THE 2+1 CLUSTER — four readings of two splits. Independent of A.
 
