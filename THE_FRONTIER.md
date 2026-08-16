@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2947: **`PO-5` STRUCK — the OBJECT is delivered on both halves and the TARGET names a count whose every route the corpus has closed.** The split: triality computed before it was asked to mean anything, plus the partial-wave reading that **explains anomaly-freedom 'only as a complete set'**. The baryon: **11 of 11 against the observed hadron spectrum**, confinement as failure to close the lap. And the content mismatch is **one pair wide, caused by the built geometry being ACHIRAL**.***
+*⌗ **LAST ACTUAL MOVE — r2948: **the floor is answered YES** — S8: the complete operators coefficient is **POSITIVE wherever the metric is non-degenerate**, so Gamma-hat is a sum of squares for the COMPLETE operator, not just at leading order. r2922s '1/2 margin against unsuppressed corrections' was **not the open question**. ⇒ What remains: **does any SECTOR stay below 3/4** — a spectral question. ⚠ And it sits in tension with r2921s thermal-regularity coverage; both held.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

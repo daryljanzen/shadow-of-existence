@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2948 — 2026-08-15 (main line). **`PO-6`'s FLOOR IS ANSWERED YES, AND WHAT REMAINS IS A SPECTRAL QUESTION.**
+
+*Applied the `PO-5` method — **read the closures before working the open** — and `S8_the_floor_follows` closes the half r2922 recorded as the row's live margin.*
+
+**⛭⛭** *"**the complete operator's floor FOLLOWS from r2671: the truncated coefficient goes negative while THE FULL ONE IS POSITIVE WHEREVER THE METRIC IS NON-DEGENERATE**" ⇒ "$\hat\Gamma=\gamma+(\text{positive})\cdot\sum\pi_n^2$ is a sum of squares, hence $\ge\gamma$. **'Whether $\hat\Gamma$ is bounded below' is answered YES**".*
+
+⇒ ***So r2922's "$\tfrac12$ margin against unsuppressed same-order corrections" is NOT the open question: the corrections do not threaten the floor, because **the coefficient is positive for the COMPLETE operator**. And S8 names why P10's paragraph reads as open: **"the paragraph's two statements are correct of DIFFERENT operators — leading-order versus complete"**.***
+
+**⌗ AND WHAT REMAINS IS STATED EXACTLY:** *"**what remains is NOT the floor but WHERE THE SPECTRUM SITS RELATIVE TO $\tfrac34$ — specifically whether ANY SECTOR STAYS BELOW**, since a sector below is limit-circle and **carries boundary freedom quantization was supposed to remove**. A spectral question, not a boundedness one".*
+
+**⚠ AND IT SITS IN TENSION WITH r2921, HELD RATHER THAN RESOLVED:** *P10 says the spectrum **straddles** $\tfrac34$ — sectors below exist by construction — and r2861/r2921 record thermal regularity **covering** them. **The two statements do not address each other.***
+
 ### Revision r2947 — 2026-08-15 (main line). **`PO-5` STRUCK — THE OBJECT IS DELIVERED ON BOTH HALVES AND THE TARGET NAMES A COUNT WHOSE EVERY ROUTE IS CLOSED.**
 
 **⛭⛭ HALF ONE, THE SPLIT:** *triality $=-\lambda\bmod3$ **computed on `prop:wall`'s own solution before it was asked to mean anything**, and "quarks and leptons are NOT two fields — **one Dirac spinor in different PARTIAL WAVES**" — which **explains P14's unaccounted observation that the content is anomaly-free "only as a complete set"**, forced because they are one field's tower.*
