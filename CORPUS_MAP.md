@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2857 — 2026-08-15 (main line). **`PO-5` HAS CARRIED THREE DIFFERENT RATIOS UNDER ONE NAME.**
+
+*Daryl asked which move was likeliest to give a zero. Scored honestly: not the composite-route read, but **a phrase repeated ~20 times today and never checked — "the five multiplets"**.*
+
+**⛭⛭ P14 STATES THE TARGET AND IT HAD NEVER BEEN READ HERE:** *"one generation there is **FIFTEEN Weyl fermions in FIVE MULTIPLETS** of $SU(3)_c\times SU(2)_L\times U(1)_Y$ … and the quark/lepton distinction is **which of them carries the colour $\mathbf3$**".*
+
+⇒ ***The ratios are three different quantities: **4:1 by Weyl fermion (12:3)**, **3:2 by MULTIPLET**, **2:1 by flavour $(u,d):(e)$**. The row tracks "2:1 printed, 4:3 weighted, SM needs 4:1" — a flavour ratio against a Weyl-fermion ratio — **while its own target names MULTIPLETS**.***
+
+**⛔ AND P14 ALREADY FLAGS THE MATCH:** *"The 2:1 partial-wave ratio matching the SM's multiplet ratio is **a RESONANCE, NOT AN IDENTIFICATION**".*
+
+⌗ ***So the triality proposal was never as close as the row read it and never as dead either — the multiplet question has not been put to it at all. Steps 2 → 3.***
+
+⚠ *And r2856 was scored 0 in error: gating cc54's eight receipts went exactly as expected. A step, not a discovery.*
+
 ### Revision r2856 — 2026-08-15 (main line). **`PO-11` IS BUILT AND STRUCK — cc54's L-831, ALL EIGHT RECEIPTS RUN IN THIS TREE.**
 
 *The corpus called it "the programme's largest unbuilt undertaking".*

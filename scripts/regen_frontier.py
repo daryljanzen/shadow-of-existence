@@ -19,8 +19,8 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
- 'PO-5':  ('quark/lepton split; the five multiplets — THE OCTET', 2, 2, 4, None,
-           'UNGATED r2856 -- PO-11 is built. The composite route now HAS a propagating sector to compose from. The octet is the live object'),
+ 'PO-5':  ('the five multiplets; which carries the colour 3', 3, 2, 4, None,
+           'UNGATED r2856. r2857: the target is 15 Weyl fermions in 5 multiplets; the row was tracking a FLAVOUR ratio P14 calls a resonance. The MULTIPLET question has never been put'),
  'PO-2': ('Nariai / three quarks', 1, 1, 1, 'PO-5',
            'levels 1 and 2 done; level 3 is the identification and follows PO-5'),
  'PO-1c': ('does uud have a geometric counterpart', 1, 1, 1, None,
@@ -49,12 +49,11 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2856: `PO-11` is BUILT — cc54's L-831 S1–S8, **all eight RUN in this tree**, not "
-            "read. All three named opens answered: the continuum (transport chain complete), the "
-            "transmission amplitude **BANKED** (unitary to 1e-5, correcting S3's own WKB 8×), and "
-            "**P14's real ±λ REPRODUCED** — the ω-coupling vanishes at the wall, ending five "
-            "failed reductions. **The programme's largest unbuilt undertaking is built, and `PO-5` "
-            "is UNGATED.**")
+LASTFIND = ("r2857: `PO-5` has carried THREE different ratios under one name. P14 states the "
+            "target — 15 Weyl fermions in 5 multiplets — and the ratios are **4:1 by Weyl fermion, "
+            "3:2 by MULTIPLET, 2:1 by flavour**. The row tracks 2:1-vs-4:1 while its target names "
+            "MULTIPLETS, and **P14 already calls the 2:1 match 'a RESONANCE, not an identification'**. "
+            "⚠ And r2856 was scored 0 in error — gating cc54's receipts went exactly as expected.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
