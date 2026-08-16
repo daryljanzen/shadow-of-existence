@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2955: **`PO-seam` is not a register row** — the ids are PO-1a…PO-12 — so the named "
-            "remainder is receipt-side. And B9 and B7 reconcile once the sides are separated: **the "
-            "freezing argument forces phi in {0, pi} from the FIELD side; CRPHI is the hydrodynamic "
-            "seam datum, and the progenitor derivation says WHICH of the two**. ⇒ **It cannot move "
-            "the verdict: both admissible readings leave 0.408**, and B7 records the default "
-            "CRPHI=0 is already one of them.")
+LASTFIND = ("r2956: **the objects SECOND CLAUSE is the verdict question** — 'and if it does not, is "
+            "the resulting first-peak deficit a real disagreement with the sky?' — which I had "
+            "truncated. ⇒ **B9 was restating this rows own target, not routing a side issue "
+            "away**, and clause one is answered (the phase is FORCED, so it does not imprint). What "
+            "it needs is **0.408 against the skys uncertainty**. ⚠ And the 26.6% heights swing is "
+            "**not named by this object at all** — it belongs with the amplitudes.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

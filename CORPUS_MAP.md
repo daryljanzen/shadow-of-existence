@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2956 — 2026-08-15 (main line). **`PO-7`'s OBJECT HAS A SECOND CLAUSE AND IT IS THE VERDICT QUESTION.**
+
+*I read the object truncated and was about to conclude on it. **In full:** "the first acoustic peak, and the propagated comb. Does the construction imprint an acoustic phase shift on modes already inside the sound horizon when the observable leg begins — **and if it does not, IS THE RESULTING FIRST-PEAK DEFICIT A REAL DISAGREEMENT WITH THE SKY?**"*
+
+⇒ ***So the row asks two things in sequence, and the first is answered: **it does NOT imprint — the phase is FORCED to {0, pi} because every mode freezes before the crossing**. The second clause is therefore live by construction, and **B9's sharpening IS that clause, not a question handed elsewhere**.***
+
+**⌗ AND WITH r2954 THE STATE IS EXACT:** *the clause is **this row's own**, it is **not routed** ("nothing is owed by Daryl"), and **all three ways the 0.408 could be an artefact are closed by computation**. ⇒ **What it needs is one comparison: 0.408 against the sky's uncertainty on that quantity.***
+
+**⚠ AND A SEPARATE CORRECTION:** *the 26.6% heights swing is **not named by this object at all** — the object names the first peak and the comb, both POSITION objects. **The amplitude question was acquired later and belongs where the amplitudes are.** Steps 3 → 1.*
+
 ### Revision r2955 — 2026-08-15 (main line). **`PO-seam` IS NOT A ROW, AND THE REMAINDER IT NAMES CANNOT MOVE THE NUMBER.**
 
 *Checked whether `PO-7`'s named remainder lives on another row's object, as `PO-2`'s level 3 turned out to. **The register's ids are `PO-1a`…`PO-12`; there is no `PO-seam`** — it is a receipt-side name.*
