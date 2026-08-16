@@ -1727,7 +1727,7 @@ code.*
 
 *The control's gain is the **k-range**, not the tail — 7.14 → 3.81 on the SAME 185 bins when `LMAXL` opens, which is your `c54.186` truncation effect ("78% of what survived was truncation, not physics"), and the added tail moves it only → 3.68. **The CR arm does not gain from the wider k (280.1 → 281.1)** and stays 260/dof with the tail.* ⇒⇒ ***So including `C51`'s dropped region makes CR MORE clearly disfavoured, not less — `F3` widens. Both halves of your route are discharged: the sampling premise was a misread (`S1`), and the damping tail does not reverse the CR verdict (`S2`).*** ⌗ *`PO-10`'s remaining open piece is not the sampling and not the dropped bins — it is that the control's residual (3.68/dof) is still large, part truncation and part physics, which `S2` does not split further.*
 
-## ⛭⛭⛭ 25 · `PO-11` — THE OBSTRUCTION IS A NORMALISATION CONDITION, AND THE OBJECT THE ROW ASKS FOR IS BUILT — added c54.214
+## ⛭⛭⛭ 25 · `PO-11` — THE OBSTRUCTION IS A NORMALISATION CONDITION, AND THE OBJECT THE ROW ASKS FOR IS BUILT — added c54.214 ⌗ **⟨r2856: `PO-11` is STRUCK — built and quantised on `L-831`. Record, not live work.⟩**
 
 *You offered `PO-11` as the fresh object and said what it needs: **"not a better mode but a different OBJECT — a
 scattering state with a continuum normalisation, which the infinite tortoise interval demands and a bound tower
