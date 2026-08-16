@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2863 — 2026-08-15 (main line). **r2862 SPLIT A HAIR THAT IS NOT SCIENTIFIC — AND UNDER IT SITS A TESTABLE QUESTION.**
+
+*Daryl: "you don't prove ontology … in what realm of scientific framework building is that a justified standard to be gating the framework on … isn't THAT the actual interesting question anyway?"*
+
+**⛔ CORRECT.** *r2862 read level 3 as "the roots ARE colour charge vs carrying a structure isomorphic to it", called it ontology, and reasoned toward closing the row. **A framework is not gated on ontology; it is gated on evidence.***
+
+**⛭⛭ AND THE QUESTION HAS AN EMPIRICAL FORM THE CORPUS ALREADY SUPPLIES:** *P13 — the three zero-sum roots are "the $A_2$ weights that $S_3$ permutes — **MASS-TIED, MOVING WITH $2M$**"; p0 — "the three **mass-tied** roots of the one $R$-odd offset-mass cubic".*
+
+⇒ ***SM colour weights are FIXED constants of $SU(3)$. CR's move with the mass. **If the roots ARE colour charge, colour structure inherits a mass dependence the Standard Model does not have.****
+
+**⌗ A THREE-WAY FORK WITH TEETH:** *observable and absent ⇒ **FALSIFIED**; observable and present ⇒ **a spectacular prediction**; unobservable in principle ⇒ only then not scientific, **and that would be a result rather than a wall**.*
+
+⇒ ***The row carried an ontological do-not-assert over a testable question. Steps 1 → 2, and it is not strikeable.***
+
 ### Revision r2862 — 2026-08-15 (main line). **`PO-2`'s LEVEL 3 IS NOT WAITING ON `PO-5` — IT IS AN ONTOLOGICAL CLAIM THE TAXONOMY FORBIDS.**
 
 *Read level 3 at source rather than carrying "walled".*

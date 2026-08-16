@@ -22,7 +22,7 @@ EST = {
  'PO-5':  ('the five multiplets; which carries the colour 3', 4, 3, 4, None,
            'r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet'),
  'PO-2':  ('Nariai / three quarks — levels 1-2 done, 3 forbidden', 1, 1, 1, None,
-           'r2862: UNGATED -- level 3 is not PO-5s to deliver. It is the ontological ARE-vs-ISOMORPHIC-TO claim, and the taxonomy FORBIDS it. Strikeable pending a read of whether forbidden = closed'),
+           'r2863: UNGATED and NOT closed -- level 3 has a TESTABLE form. CRs A_2 weights are MASS-TIED, SM colour weights are not. Does colour inherit a mass dependence? Falsifier or prediction'),
  'PO-1c': ('does uud have a geometric counterpart', 1, 1, 1, None,
            'CLEAR -- the horn is established; one count to run'),
  'PO-1b': ('the SIGN 2+1: geometry CLOSED, candidate open', 1, 1, 2, None,
@@ -49,12 +49,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2862: `PO-2`'s level 3 is NOT waiting on `PO-5`. The taxonomy (r2803): the **STRUCTURAL "
-            "identification is EXHIBITED; what remains walled is the PHYSICAL one — that the roots "
-            "ARE colour charge, as against carrying a structure isomorphic to it**. That is an "
-            "ONTOLOGICAL claim and `PO-5` delivers STRUCTURE — no amount of structure converts "
-            "'isomorphic to' into 'is'. **And the same document reads 'identifying substrate as having "
-            "colour FORBIDDEN'. The gate is wrong in KIND.**")
+LASTFIND = ("r2863 (Daryl caught it): r2862 called `PO-2`'s level 3 ontology and therefore closed. "
+            "**A framework is not gated on ontology, it is gated on evidence** — and the question "
+            "has an empirical form the corpus supplies: CR's A_2 weights are **MASS-TIED, moving with "
+            "2M**, and SM colour weights are FIXED. ⇒ **If the roots ARE colour charge, colour "
+            "inherits a mass dependence the SM does not have** — falsifiable, or a spectacular "
+            "prediction. The row carried a do-not-assert over a testable question.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

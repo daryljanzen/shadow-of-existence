@@ -385,3 +385,4 @@ r2859  LATENT      the horn PAIRS across a lap, it cannot split a wall; r2858s m
 r2860  LATENT      a lap is triality-trivial, so the horn route is dead; NO candidate structure for the fifth multiplet.
 r2861  LATENT      PO-6s remainder is the standard interacting-QFT problem, not a CR deficit; P10 says CR meets it.
 r2862  LATENT      PO-2s level 3 is an ontological ARE-claim the taxonomy forbids, not work PO-5 can deliver.
+r2863  LATENT      PO-2s level 3 has a TESTABLE form: CRs A_2 weights are mass-tied, SM colour weights are not.
