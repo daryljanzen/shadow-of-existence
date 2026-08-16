@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2941: **I built `PO-5`s one statement on 'the 12 legs are FORCED' and three documents say the count did not land.** THE_BASE_RATE: the seat count **✗ DID NOT SURVIVE**. FORK_c54: **THE COUNT IS NOT LANDED**. P03_transverse_space_is_round: it was a **BET resting entirely on roundness being a free choice**. ⇒ What I read as delivered is **the favoured side of a named fork**. Found by a quote-accuracy sweep that also caught a sixth transcription error — the passage is in INDEX.md, not FORK_c54.***
+*⌗ **LAST ACTUAL MOVE — r2942: **the fork carries a claim this row never held.** FORK_c54: '**quarks and leptons are NOT two fields: they are ONE DIRAC SPINOR IN DIFFERENT PARTIAL WAVES**' — and it explains P14s unaccounted observation that the content is anomaly-free 'only as a complete set', because **they are one fields tower**. ⇒ **My 3x2x2 = 12 analysis is the SEAT count, the side THE_BASE_RATE scores as not having survived**, while the favoured reading is about the TOWER. I analysed the disfavoured branch.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

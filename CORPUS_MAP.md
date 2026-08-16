@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2942 — 2026-08-15 (main line). **THE FORK CARRIES A CLAIM `PO-5` HAS NEVER HELD, AND IT RELOCATES THE WHOLE ANALYSIS.**
+
+*Read `FORK_c54` around the not-landed sentence instead of quoting past it.*
+
+**⛭⛭** *"**QUARKS AND LEPTONS ARE NOT TWO FIELDS: they are ONE DIRAC SPINOR IN DIFFERENT PARTIAL WAVES, two-coloured-then-one-colourless, forever**" — with triality $=-\lambda\bmod3$ **computed on `prop:wall`'s own solution before it was asked to mean anything**.*
+
+⇒ ***And it explains an observed fact P14 could not account for: the content is anomaly-free "**on every count and only as a complete set**", and "on this reading that is FORCED — **you cannot take the coloured waves without the colourless ones, because they are ONE FIELD'S TOWER**. 'Only as a complete set' becomes the statement that **the spectrum is ONE OBJECT**".***
+
+**⌗ AND THAT IS WHERE THE FORK SITS:** *the **SEAT count** (12+3=15), which `THE_BASE_RATE` scores **✗ did not survive**; the **MODE count** (one bound mode per $\lambda$, infinite); and the favoured resolution — **a non-round transverse space TRUNCATES the tower**.*
+
+**⛔ SO MY $3\times2\times2=12$ ANALYSIS IS THE SEAT COUNT** — *the side scored as not having survived — while the fork's favoured reading is about **the TOWER**. **I have been analysing the disfavoured branch and calling its result the row's state.***
+
+**⚠ What survives untouched:** *achirality as a cause, the octet theorem, the $\nu_R$ place — **none depend on which count is the object**.*
+
 ### Revision r2941 — 2026-08-15 (main line). **I BUILT `PO-5`'s ONE STATEMENT ON "THE 12 LEGS ARE FORCED", AND THREE DOCUMENTS SAY THE COUNT DID NOT LAND.**
 
 *A quote-accuracy sweep found the passage is in `INDEX.md`, not `FORK_c54.md` where I attributed it — **a sixth transcription error** — and the search surfaced what the attribution error hid.*
