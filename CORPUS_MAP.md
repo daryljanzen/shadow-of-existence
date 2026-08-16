@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2981 — 2026-08-15 (main line). **P15 DEFINES THE PROOF STANDARD EXPLICITLY, AND IT IS A PER-RESULT MATURITY MARKER RATHER THAN A MISSING COMPUTATION.**
+
+*Read P15's own words instead of inferring from receipts:*
+
+**⛭⛭** *"**Throughout, we mark maturity in the prose: ESTABLISHED results are verified by direct computation (the receipts are collected in computations/perturbation_verify/); ARGUED results carry the reasoning AND A LEADING-ORDER COMPUTATION but are flagged as NOT YET PROVEN THROUGH THE FULL TRANSFER**".*
+
+⇒ ***So "the full transfer" is the paper's phrase for the complete calculation from source to observed spectrum, and an argued result is one that **has reasoning and a leading-order number but has not been carried through it**. **The standard is a label on each result's maturity, not a tool the corpus lacks.****
+
+**⌗ AND THAT ANSWERS WHAT r2980 LEFT OPEN:** *the three argued results are not parked behind "does a transfer exist" — one runs, is validated to 0.16% on the control's first peak, and has been carried through to the CR arm. ***They are parked behind "has THIS result been carried through one", which is a per-result question and answerable one at a time.***
+
+⇒ ***So group D's three steps were parked behind the wrong thing: not a missing machine, but three separate carry-throughs, each of which can now be asked of a transfer that exists.***
+
 ### Revision r2980 — 2026-08-15 (main line). **VERIFIED, AND IT OVERTAKES r2979: A LINE-OF-SIGHT TRANSFER RUNS, IS VALIDATED, AND HAS BEEN APPLIED TO THE CR ARM.**
 
 *r2979 was flagged as an indication because it rested on a stale receipt's clause. Verified by running `P15_the_line_of_sight_transfer`:*

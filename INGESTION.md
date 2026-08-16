@@ -502,3 +502,4 @@ r2977  LATENT      the skys stated bar is on HEIGHTS (~3.4%), not the phase; it 
 r2978  LATENT      the odd/even loading ratio is 3.500 (driving, not observed); the transfer sits between it and the sky.
 r2979  LATENT      the proof standard is the high-ell counterpart of a low-ell transfer that exists; a bounded build. Indication only.
 r2980  LATENT      a line-of-sight transfer runs and is validated (1.7% -> 0.16%); the CR deficit is unchanged to four figures.
+r2981  LATENT      the proof standard is P15s maturity marker: argued = reasoning + leading order, not carried through. Per-result.

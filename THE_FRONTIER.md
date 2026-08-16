@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2980: **verified, and it overtakes my own r2979.** P15_the_line_of_sight_transfer runs: **it takes the controls first-peak position from 1.7% to 0.16%**, and — the line that matters — **the CR arms deficit is UNCHANGED to four figures**. So a real transfer exists, is validated on a quantity it was not tuned to, **and has already been applied to CR**. ⌗ And its own lesson: the first peak is 220 either way, so **an instrument validated on ell_1 alone would have carried the error**.***
+*⌗ **LAST ACTUAL MOVE — r2981: **P15 defines the proof standard explicitly and it is a per-result MATURITY MARKER**: 'established results are verified by direct computation; ARGUED results carry the reasoning and a leading-order computation but are flagged as not yet proven through the full transfer'. ⇒ So the three argued results are **not parked behind 'does a transfer exist'** — one runs and is validated — but behind **'has THIS result been carried through one'**, which is answerable per result.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -33,7 +33,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the first peak — one COMPARISON, all inputs supplied | **1** | 1 | 1 | READ | 22 | — | r2980: a line-of-sight transfer RUNS, is validated (control first peak 1.7% -> 0.16%), and leaves the CR deficit UNCHANGED to four figures. Clause two still needs a PHASE error bar the corpus does not state |
+| **PO-7** | the first peak — one COMPARISON, all inputs supplied | **1** | 1 | 1 | READ | 22 | — | r2981: the proof standard is a per-result MATURITY MARKER, not a missing tool -- a transfer runs and is validated. Clause two still needs a PHASE error bar the corpus does not state |
 | **PO-10** | the scalar remainder — one RUN and one REFIT | **2** | 2 | 1 | READ | 33 | — | r2978: the odd/even run is NOT arithmetic -- the loading ratio (3.500) is the DRIVING ratio, not the observed one, and the transfer sits between. Plus the FULL-SPECTRUM refit on the banked 215 bins |
 
 ---
