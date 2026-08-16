@@ -417,3 +417,4 @@ r2891  LATENT      the winding has the right structure but NO UNITS; charge does
 r2892  LATENT      the coupling wall and the missing units are ONE theorem about branchings, not two gaps.
 r2893  LATENT      the octet is force-side and PO-5s target is content-side; not owed by this object. cc54 told.
 r2894  LATENT      PO-1c struck: the object asked for ANY counterpart and the winding is one. L-65 is the stronger successor.
+r2895  LATENT      PO-6 is three questions not one: the -1/4 threshold is load-bearing, the floor is open but unused.

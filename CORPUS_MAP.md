@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2895 — 2026-08-15 (main line). **r2879 MERGED TWO DIFFERENT QUESTIONS, AND P10 SETTLES THE WEIGHT OF ONE OF THEM.**
+
+*`PO-6`'s object names **three** things — "the spectrum of $\hat\Gamma$, whether it is BOUNDED BELOW, the UV DEFINITION". r2879 read S4's floor question and D4's $-1/4$ question as "one question from two ends". **They are not.***
+
+**⛭⛭ (a) THE SPECTRUM** *asks where $\hat\Gamma$ sits relative to $-1/4$ — a **limit-point/limit-circle** threshold deciding **self-adjoint EXTENSION UNIQUENESS**. **(b) BOUNDED BELOW** asks whether the completed operator keeps a **floor**. ⇒ **An operator can be unbounded below and still limit-point, or bounded below and still limit-circle.** **(c) THE UV DEFINITION** is the standard interacting-theory problem (r2861).*
+
+**⛭ AND P10 SETTLES (b)'s WEIGHT:** *"the decomposition that follows **uses only that both sides of the threshold are occupied, and NOT that the spectrum has a floor**… **and is not assumed here**" — receipt `P10_the_straddle_does_not_need_a_floor`.*
+
+⇒ ***So the floor is open and nothing in P10 depends on it. **The load-bearing question is the $-1/4$ threshold**, because that carries D4's stake: lose the canonical extension and you lose the "closed without a free parameter" the free sector earns.***
+
+⌗ *One load-bearing question, one open-but-unused, one that is not CR's.*
+
 ### Revision r2894 — 2026-08-15 (main line). **`PO-1c` STRUCK — ITS OBJECT WAS ANSWERED AND THE ROW WAS SCORING A STRONGER QUESTION AGAINST IT.**
 
 *Re-scoped every open row's steps against its own object, as r2893 did for `PO-5`. **One hit.***

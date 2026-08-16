@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2894: **`PO-1c` STRUCK — its object was answered and the row was scoring a STRONGER question against it.** The object asks 'does uud have ANY geometric counterpart' and the answer is YES: the winding, with the within-baryon flavour 2+1 carried by **the INTEGER part, being exactly one lap**. What remained — that the counterpart IS electric charge — is L-65s reading, and its missing-units gap IS PO-5s coupling wall. **Found by re-scoping every step against its own rows object.*****
+*⌗ **LAST ACTUAL MOVE — r2895: **r2879 merged two different questions.** The −1/4 threshold is about limit-point/limit-circle and EXTENSION UNIQUENESS; a FLOOR is boundedness below — an operator can be unbounded below and still limit-point. And **P10 settles the floors weight itself**: its decomposition 'uses only that both sides of the threshold are occupied, and NOT that the spectrum has a floor'. ⇒ **The load-bearing question is the −1/4 threshold, because that carries the no-free-parameter stake.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
