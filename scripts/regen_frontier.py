@@ -44,12 +44,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 0
-LASTFIND = ("r2874: `PO-1b` STRUCK — its remaining step was ANSWERED and RECEIPTED and UNCITED. "
-            "`P14_P14_payoff`: **R∘K acts on P14s ACTUAL zero-modes as Cs KINEMATIC face**, R "
-            "carrying the matter generation to its antimatter partner on the reversed wall, exact. "
-            "And the bound is the receipts own: **the zero-modes carry no charge, so the charge "
-            "closes from the FIELD**. The row cited 0 of 52; every claim now names one.")
+SINCE = 1
+LASTFIND = ("r2874 was NOT a zero and was scored one — Daryl caught it. r2873 established the "
+            "METHOD (the register holds 11%; reading a rows uncited receipts finds answers), and "
+            "r2874 did exactly what that predicted. **Once the zero-hunt is a PROCEDURE, its yield "
+            "is EXPECTED and stops being a discovery.** The counter must RISE while the known "
+            "method is executed, and reset only when something surprises the METHOD. **Last actual "
+            "move: r2873.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

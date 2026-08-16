@@ -44,6 +44,14 @@ computation came out as guessed.*
 ⌗ ***A surprising ANSWER to a correctly-stated problem is not the space moving. A dull answer that
 reveals the problem was mis-stated IS.***
 
+⚠⚠ **AND THE HARDEST CASE, ADDED r2875 AFTER DARYL CAUGHT IT: ONCE THE ZERO-HUNT IS A PROCEDURE,
+ITS YIELD IS EXPECTED AND STOPS COUNTING.** *r2873 established the method — the register holds 11%
+of its worked corpus, so reading a row's uncited receipts finds answers. r2874 went to the 0%-cited
+row, read its receipts, found one that answered its step, and scored a 0.* ⇒ ***That is the method
+WORKING. A procedure that reliably produces finds is producing EXPECTED yield, and expected yield is
+not discovery however good it is.*** ⌗ **The counter must RISE while a known method is executed,
+and reset only when something surprises THE METHOD ITSELF.**
+
 **Then:** *YES → `SINCE = 0`, write `LASTFIND` **naming what the problem turned out to be**. NO →
 `SINCE += 1`. **No third option, and the answer is not allowed to depend on whether the turn felt
 productive.***

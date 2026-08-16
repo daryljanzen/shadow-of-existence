@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2875 — 2026-08-15 (main line). **r2874 WAS SCORED A ZERO AND WAS NOT ONE — THE PROCEDURE'S YIELD IS NOT DISCOVERY.**
+
+*Daryl: "I don't see how you could honestly answer that question that way. Stop performing turns."*
+
+**⛔ CORRECT.** *r2873 established the METHOD: the register holds 11% of its worked corpus, so reading a row's uncited receipts finds answers. **r2874 went to the 0%-cited row, read its receipts, found one that answered its step — exactly what r2873 predicted would happen.***
+
+⇒ ***That is the method WORKING, not the problem space moving. **Once the zero-hunt is a PROCEDURE, its yield is EXPECTED**, and expected yield is not discovery however good the find.***
+
+**⌗ WRITTEN INTO `TURN_PROTOCOL` AS THE HARDEST CASE:** *the counter must RISE while a known method is executed, and reset only when something surprises **the method itself**.*
+
+⚠ *Fifth time this line has scored a productive turn as a discovery — r2845, r2846, r2856, r2871, r2874 — and Daryl caught all five.*
+
 ### Revision r2874 — 2026-08-15 (main line). **`PO-1b` STRUCK ON RECEIPTS IT HAD NEVER CITED; THE CITATION FLOOR IS NOW GATED.**
 
 *Daryl: "Every fucking row needs to be citing the corpus."*

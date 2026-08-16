@@ -4,11 +4,11 @@
 
 ## ⇒ **5 OPEN · 11 STEPS LEFT** *(was 10 last revision)* **· ~25 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
 
-*⌗ **LAST ACTUAL MOVE — r2874: `PO-1b` STRUCK — its remaining step was ANSWERED and RECEIPTED and UNCITED. `P14_P14_payoff`: **R∘K acts on P14s ACTUAL zero-modes as Cs KINEMATIC face**, R carrying the matter generation to its antimatter partner on the reversed wall, exact. And the bound is the receipts own: **the zero-modes carry no charge, so the charge closes from the FIELD**. The row cited 0 of 52; every claim now names one.***
+*⌗ **LAST ACTUAL MOVE — r2874 was NOT a zero and was scored one — Daryl caught it. r2873 established the METHOD (the register holds 11%; reading a rows uncited receipts finds answers), and r2874 did exactly what that predicted. **Once the zero-hunt is a PROCEDURE, its yield is EXPECTED and stops being a discovery.** The counter must RISE while the known method is executed, and reset only when something surprises the METHOD. **Last actual move: r2873.*****
 
-> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
+*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
 **RUNWAY: 5 of 5 clear now**; 0 gated ().
 
