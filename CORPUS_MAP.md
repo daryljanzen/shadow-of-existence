@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2850 — 2026-08-15 (main line). **THE `PO-1` CLUSTER IS NOT FOUR PROBLEMS — IT IS ONE QUESTION ASKED FOUR TIMES.**
+
+*Checking every open title for the compound shape r2849 found in `PO-7`.*
+
+**⛔ `PO-1a` AND `PO-1b` ARE EACH TWO OBJECTS:** *"the {X} $2{+}1$, **and what it is a candidate for**". **The $2{+}1$ itself is named and computed in both and nothing about it is open** — `PO-1a`'s vantage property (three per geometry, permuted by $S_3$) and `PO-1b`'s geometry property (one per geometry, flipped exactly by mass-parity, r2845).*
+
+⇒ ***What is open in both is ONLY the candidate half — and that is `PO-1c`'s question verbatim: does a named geometric structure have a physical counterpart, and by what relation?***
+
+**⛭⛭ AND `PO-1c` IS THE ONLY WORKED INSTANCE.** *It has an answer (the horn, $8/S_3$ = four orbits, the exchanging relation exhibited at r2844). **What `PO-1a` and `PO-1b` lack is its METHOD — find the corpus's own quotient, exhibit the relation — not more geometry.***
+
 ### Revision r2849 — 2026-08-15 (main line). **`PO-7`'s TITLE JOINS TWO THINGS THE CORPUS SEPARATES.**
 
 *The row is "the first acoustic peak, **and** the propagated comb", treated as one object. **B3's phase scan measures them apart and they behave differently.***

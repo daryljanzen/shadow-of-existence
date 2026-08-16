@@ -27,10 +27,10 @@ EST = {
            'levels 1 and 2 done; level 3 is the identification and follows PO-5'),
  'PO-1c': ('does uud have a geometric counterpart', 1, 1, 1, None,
            'CLEAR -- the horn is established; one count to run'),
- 'PO-1b': ('the SIGN 2+1', 1, 1, 1, None,
+ 'PO-1b': ('the SIGN 2+1: geometry CLOSED, candidate open', 1, 1, 2, None,
            'CLEAR -- sign(r) IS species and the parity link is established; one type-check to finish'),
- 'PO-1a': ('the DESIGNATION 2+1', 2, 2, 4, None,
-           'CLEAR but unsourced -- nothing derives the flavour indexical from the geometry'),
+ 'PO-1a': ('the DESIGNATION 2+1: geometry CLOSED, candidate open', 1, 2, 4, None,
+           'SPLIT r2850: the 2+1 is CLOSED. Open: the candidate half, which is PO-1cs question -- apply PO-1cs method'),
  'PO-1d': ('the causal 2+1 on three hinges', 0, 0, 0, 'PO-1c',
            'classification COMPLETE; open only as PO-1c\'s candidate'),
  'PO-6': ('the interacting tower', 1, 1, 4, None,
@@ -55,11 +55,11 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2849: `PO-7`'s title joins two things the corpus SEPARATES. B3's phase scan measures "
-            "them apart: the **first-peak position spreads 2.21×** on an assigned phase — NOT a "
-            "prediction — while the **SPACING spreads only 1.11× and is never 1.0** — a prediction, "
-            "and forced, because the one fitted parameter is spent pinning ℓ_A. **One half of the "
-            "row is a result and the other is a free parameter.**")
+LASTFIND = ("r2850: the `PO-1` cluster is NOT four problems. `PO-1a` and `PO-1b` are each TWO "
+            "objects — 'the 2+1' (named, computed, CLOSED in both) and 'what it is a candidate for' "
+            "(open in both). **And that candidate question is `PO-1c`'s question verbatim.** So the "
+            "cluster is ONE question asked about four structures, and `PO-1c` is the only worked "
+            "instance — what the others lack is its METHOD, not more geometry.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

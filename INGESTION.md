@@ -373,3 +373,4 @@ r2846  LATENT      PO-6 joint satisfiability RESOLVED: 1/a^3 -> 1/x^2 keeps Gamm
 r2847  INSTRUMENT  two turns were scored 0 and were not; the criterion is now written into the generator.
 r2848  INSTRUMENT  turn estimates measured: 2.3x too high. READ steps now 1 turn from evidence; BUILD flagged unmeasured.
 r2849  LATENT      PO-7 splits: the comb is a forced prediction, the first peak rests on an assigned phase.
+r2850  LATENT      the PO-1 cluster is ONE question asked about four structures; PO-1c is the only worked instance.
