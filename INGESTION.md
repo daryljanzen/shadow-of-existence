@@ -386,3 +386,4 @@ r2860  LATENT      a lap is triality-trivial, so the horn route is dead; NO cand
 r2861  LATENT      PO-6s remainder is the standard interacting-QFT problem, not a CR deficit; P10 says CR meets it.
 r2862  LATENT      PO-2s level 3 is an ontological ARE-claim the taxonomy forbids, not work PO-5 can deliver.
 r2863  LATENT      PO-2s level 3 has a TESTABLE form: CRs A_2 weights are mass-tied, SM colour weights are not.
+r2864  LATENT      PO-2 struck: 2M varies neither by generation nor by hadron, so nothing observable decides level 3.

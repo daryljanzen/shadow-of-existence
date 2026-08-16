@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2864 — 2026-08-15 (main line). **`PO-2` STRUCK — LEVEL 3 ANSWERED IN ITS EMPIRICAL FORM.**
+
+*Following Daryl's correction that a framework is gated on evidence, not ontology.*
+
+**⛭⛭ THE TESTABLE DIFFERENCE:** *CR's $A_2$ weights are **mass-tied, moving with $2M$**; SM colour weights are **fixed constants of $SU(3)$**. So an identification would make colour inherit a mass dependence the SM does not have.*
+
+**⛔ WORKED, AND IT IS THE THIRD BRANCH:** *$2M$ does **not** vary between generations — `L212`, run: all three roots return the same $2M$ at every mass — and does **not** vary between hadrons, $M$ being the SdS mass parameter, a constant of the solution.*
+
+⇒ ***The mass-tie is real in the formalism and constant in practice. **Nothing observable distinguishes "the roots ARE colour charge" from "they carry a structure isomorphic to it."*** The fork said in advance this branch would be a result rather than a wall: **the geometry's extra structure is empirically invisible, so the isomorphism is all there ever was to have.***
+
 ### Revision r2863 — 2026-08-15 (main line). **r2862 SPLIT A HAIR THAT IS NOT SCIENTIFIC — AND UNDER IT SITS A TESTABLE QUESTION.**
 
 *Daryl: "you don't prove ontology … in what realm of scientific framework building is that a justified standard to be gating the framework on … isn't THAT the actual interesting question anyway?"*
