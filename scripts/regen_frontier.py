@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2920: settling S4 against r2895 exposed a THIRD thing — **there are TWO thresholds and "
-            "I have been writing −1/4 for both since r2879**. With nu = sqrt(Gamma+1/4): "
-            "**Gamma >= 3/4 is LIMIT-POINT (unique extension); Gamma < −1/4 is OSCILLATORY "
-            "(unbounded below)**. ⇒ Both r2895 and S4 stand: the properties are two, decided at "
-            "different thresholds, and **one piece of work — the sub-leading tower — places the "
-            "spectrum against both**. The no-free-parameter stake is decided at 3/4, not −1/4.")
+LASTFIND = ("r2921: **P10s paragraph is coherent end to end and the open piece is narrower than S4 "
+            "or D4 states.** The spectrum STRADDLES 3/4 by construction: **the graviton momentum "
+            "makes the origin limit-point and REMOVES the boundary freedom** where Gamma >= 3/4, "
+            "limit-circle below — so coupling REMOVES freedom rather than adding it, and thermal "
+            "regularity covers the rest. ⇒ **The only breaking question: does any fibre fall below "
+            "−1/4, where the regular branch thermal regularity selects stops existing?**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

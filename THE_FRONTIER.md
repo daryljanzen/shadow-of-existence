@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2920: settling S4 against r2895 exposed a THIRD thing — **there are TWO thresholds and I have been writing −1/4 for both since r2879**. With nu = sqrt(Gamma+1/4): **Gamma >= 3/4 is LIMIT-POINT (unique extension); Gamma < −1/4 is OSCILLATORY (unbounded below)**. ⇒ Both r2895 and S4 stand: the properties are two, decided at different thresholds, and **one piece of work — the sub-leading tower — places the spectrum against both**. The no-free-parameter stake is decided at 3/4, not −1/4.***
+*⌗ **LAST ACTUAL MOVE — r2921: **P10s paragraph is coherent end to end and the open piece is narrower than S4 or D4 states.** The spectrum STRADDLES 3/4 by construction: **the graviton momentum makes the origin limit-point and REMOVES the boundary freedom** where Gamma >= 3/4, limit-circle below — so coupling REMOVES freedom rather than adding it, and thermal regularity covers the rest. ⇒ **The only breaking question: does any fibre fall below −1/4, where the regular branch thermal regularity selects stops existing?*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

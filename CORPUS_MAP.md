@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2921 — 2026-08-15 (main line). **P10's PARAGRAPH IS COHERENT END TO END, AND `PO-6`'s OPEN PIECE IS NARROWER THAN EITHER S4 OR D4 STATES.**
+
+**⛭⛭ THE STRUCTURE, IN P10's WORDS:** *the boundary coefficient is promoted **from the c-number $1/4$ of the free scale factor** to an operator $\hat\Gamma$ **whose spectrum STRADDLES the $3/4$ threshold**; the decomposition is "**essentially self-adjoint where $\Gamma\ge3/4$ — THE GRAVITON MOMENTUM MAKES THE ORIGIN LIMIT-POINT AND REMOVES THE BOUNDARY FREEDOM — and limit-circle where $\Gamma<3/4$**", so "**the single boundary condition of the free scale factor is thereby REPLACED** in the coupled theory".*
+
+⇒ ***Coupling to gravitons REMOVES freedom rather than adding it: the free theory sits at $1/4$, below threshold, needing its one condition; the coupled theory pushes part of the spectrum **above $3/4$ where there is nothing to choose**.***
+
+**⌗ AND THE HALVES JOIN WITH r2861:** *limit-point fibres need nothing; limit-circle fibres get thermal regularity mode by mode at the one horizon period, "asking nothing of the limit-point fibres". **Every fibre is covered.***
+
+⇒ ***So the open piece is narrow and exact: **does any fibre fall below $-1/4$, where $\nu$ turns imaginary and the regular branch $x^{1/2+\nu}$ that thermal regularity selects STOPS EXISTING?** That — not "is $\hat\Gamma$ bounded below" in general — is what would break the construction.***
+
 ### Revision r2920 — 2026-08-15 (main line). **S4 AND r2895 ARE BOTH RIGHT — AND SETTLING IT EXPOSED TWO THRESHOLDS WHERE I HAVE BEEN WRITING ONE.**
 
 *With $\nu=\sqrt{\Gamma+1/4}$ on a $1/x^2$ endpoint:*
