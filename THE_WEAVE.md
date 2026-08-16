@@ -6,7 +6,40 @@ current: r2713+c54.215
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
 
-> ## ⛭⛭⛭ r2857 — THE TWO LINES CONVERGED ON `PO-11`, AND THE REGISTER LEARNED FROM BOTH
+> ## ⛭⛭⛭ r2949 — ONE HUNDRED REVISIONS IN WHICH THE CORPUS KEPT COMING BACK SOUND AND THE REGISTER DID NOT
+
+*r2849–r2948. **Eleven rows struck, four remaining, and the pattern across all of it is one thing:
+almost every finding was the register mis-holding what the corpus already had.***
+
+**⛭⛭ WHAT THE CORPUS TURNED OUT TO HOLD, uncited, in rows that called it open:**
+*`PO-2` — the mass-tie is constant, so nothing observable decides the identification. `PO-1b` —
+$R\circ K$ is $C$'s **kinematic face**, exact on the wall mode. `PO-1c` — the thirds **forced with no SM
+input**, and the closure rule **agreeing 11 of 11 with the observed hadron spectrum**. `PO-5` — triality
+computed on `prop:wall`'s own solution **before it was asked to mean anything**, and an explanation of
+P14's unaccounted "anomaly-free only as a complete set". `PO-6` — the floor **answered YES**, the
+coefficient positive for the **complete** operator. `PO-7` — $\ell_A$ preserved to **$+0.075\%$** while
+$D_M$ and $r_s$ each fall over $6\%$, **claimed in advance and untuned**.*
+
+**⛔ AND WHAT THE REGISTER WAS DOING INSTEAD:** *carrying **51 of 483** receipts on its own objects at
+the start; quoting a receipt's **negative half** while its positive half was the stronger result, twice
+on one row; reading **transient-region measurements as asymptotic statements**; and building six
+revisions of argument on a structure that sat in an uncited receipt.*
+
+**⌗ AND THE ERRORS THAT REMAINED WERE MINE, NOT THE CORPUS's:** *six citations pointing at nothing, a
+duplicated `OWED` number, a circular period match, a dead route recorded as the live target — **each
+found by going somewhere I had not been, and each a transcription or inference fault rather than a gap
+in the work**.*
+
+⇒ ***THE ONE SENTENCE FOR THE WEAVE: **the two lines' work was more complete and more coherent than the
+register describing it**, and a hundred revisions of reading closed eleven rows without a single new
+computation being run.***
+
+⚠ *And the counter says the picture is still moving: it reset on the great majority of those hundred
+turns. **The papers have not been touched — `PROPAGATION_QUEUE` holds two corpus-facing items against a
+release condition that has not been met**.*
+
+
+## ⛭⛭⛭ r2857 — THE TWO LINES CONVERGED ON `PO-11`, AND THE REGISTER LEARNED FROM BOTH
 
 **cc54 BUILT IT.** *`L-831` S1–S8: the $\omega\ne0$ continuum end to end, the transmission amplitude
 banked (unitary to $10^{-5}$, correcting its own S3 WKB by $8\times$), and **P14's real $\pm\lambda$
