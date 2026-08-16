@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2897 — 2026-08-15 (main line). **`PO-7`'s TWO STEPS ARE GENUINELY TWO — THE RE-SCOPING TEST CUTS BOTH WAYS.**
+
+*Tested them against the object as r2893–r2896 tested the other rows, **expecting to merge them**, since r2877 called the phase "the whole of the disagreement".*
+
+⇒ ***THEY DO NOT MERGE. **A phase offset is where a peak SITS; an amplitude is how TALL it is** — and `C56` established exactly that separation: "the peaks in the right places and **the wrong heights**".***
+
+**· STEP ①** *the low-$\ell$ transient, a $0.62\pi$ PHASE offset (r2876) — the object's first clause verbatim.* **· STEP ②** *the full seam-to-recombination transfer, which decides the HEIGHTS.*
+
+**⌗ AND THE NEAR-MISS IS WORTH THE RECORD:** *one turn after un-merging a spectrum from a fit, I was about to merge a phase question with an amplitude one. **Running the test is what stopped it, not judgement.***
+
+⚠ *SINCE = 1: the test ran and confirmed the row.*
+
 ### Revision r2896 — 2026-08-15 (main line). **MY r2880–r2881 MERGE OF GROUP D WAS WRONG — THE ROWS ARE SEQUENCED, NOT ONE OBJECT.**
 
 *Tested the merge against each target, as r2893–r2895 tested the other rows.*

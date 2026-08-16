@@ -4,11 +4,11 @@
 
 ## ⇒ **4 OPEN · 7 STEPS LEFT** *(was 7 last revision)* **· ~16 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
 
-*⌗ **LAST ACTUAL MOVE — r2896: **my r2880–r2881 merge of group D was wrong.** `PO-7`s target is the CR ACOUSTIC SPECTRUM; `PO-10`s is a LIKELIHOOD-LEVEL COMPARISON. **The transfer produces a spectrum; a likelihood is computed ON one** — so `PO-10` is DOWNSTREAM, not co-equal, and is now gated on `PO-7`. And M2 said it at r2843 in words I quoted and then forgot: 'a full comparison fits the whole C_l with ALL PARAMETERS AND THEIR COVARIANCES'. **A fit, not a physics computation.*****
+*⌗ **LAST ACTUAL MOVE — r2897 was NOT a zero — the re-scoping test ran and CONFIRMED the row. `PO-7`s two steps are genuinely two: **a phase offset is where a peak SITS, an amplitude is how TALL it is**, and C56 established that separation — 'the peaks in the right places and the wrong heights'. I expected to merge them and the test stopped it. **The re-scoping cuts both ways.** Last actual move: r2896.***
 
-> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
+*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
 **RUNWAY: 3 of 4 clear now**; 1 gated (PO-10→PO-7).
 

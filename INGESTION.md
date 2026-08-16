@@ -419,3 +419,4 @@ r2893  LATENT      the octet is force-side and PO-5s target is content-side; not
 r2894  LATENT      PO-1c struck: the object asked for ANY counterpart and the winding is one. L-65 is the stronger successor.
 r2895  LATENT      PO-6 is three questions not one: the -1/4 threshold is load-bearing, the floor is open but unused.
 r2896  LATENT      group D is sequenced not merged: the transfer makes a spectrum, PO-10 fits one. PO-10 gated on PO-7.
+r2897  LATENT      PO-7s two steps are genuinely two: phase is where a peak sits, amplitude is how tall. Not a zero.
