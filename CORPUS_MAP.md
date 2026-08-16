@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2896 — 2026-08-15 (main line). **MY r2880–r2881 MERGE OF GROUP D WAS WRONG — THE ROWS ARE SEQUENCED, NOT ONE OBJECT.**
+
+*Tested the merge against each target, as r2893–r2895 tested the other rows.*
+
+**⛭⛭ `PO-7`'s target is "the CR ACOUSTIC SPECTRUM"; `PO-10`'s is "the full-spectrum LIKELIHOOD-LEVEL COMPARISON".** *⇒ **The transfer produces a SPECTRUM. A likelihood is computed ON a spectrum.** `PO-7` needs the transfer's output; `PO-10` needs a fit run on that output.*
+
+⇒ ***So `PO-10` is DOWNSTREAM rather than co-equal, and is now GATED on `PO-7`.***
+
+**⌗ AND M2 SAID SO AT r2843, IN WORDS I QUOTED AND THEN FORGOT:** *"**WHAT THIS IS NOT: a likelihood. A full comparison fits the whole $C_\ell$ against the data with ALL PARAMETERS AND THEIR COVARIANCES**; this fixes $\ell_*$ and minimises one derived ratio".*
+
+⇒ ***The transfer is a PHYSICS computation; the likelihood is a FIT. **Fourth consecutive re-scoping turn, and the fourth to find a row asking for more, or other, than its object needs.****
+
 ### Revision r2895 — 2026-08-15 (main line). **r2879 MERGED TWO DIFFERENT QUESTIONS, AND P10 SETTLES THE WEIGHT OF ONE OF THEM.**
 
 *`PO-6`'s object names **three** things — "the spectrum of $\hat\Gamma$, whether it is BOUNDED BELOW, the UV DEFINITION". r2879 read S4's floor question and D4's $-1/4$ question as "one question from two ends". **They are not.***

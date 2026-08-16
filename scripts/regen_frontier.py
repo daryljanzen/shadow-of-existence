@@ -25,7 +25,7 @@ EST = {
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
  'PO-7':  ('the comb: rate REPRODUCES, level offset open', 3, 2, 1, None,
            'CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840'),
- 'PO-10': ('the scalar remainder', 1, 1, 1, None,
+ 'PO-10': ('the likelihood — a FIT on PO-7s spectrum', 1, 1, 2, 'PO-7',
            'r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights'),
 }
 # ** THE COUNTER, AND THE CRITERION IT IS SCORED AGAINST (r2847, after Daryl caught two
@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2895: **r2879 merged two different questions.** The −1/4 threshold is about "
-            "limit-point/limit-circle and EXTENSION UNIQUENESS; a FLOOR is boundedness below — an "
-            "operator can be unbounded below and still limit-point. And **P10 settles the floors "
-            "weight itself**: its decomposition 'uses only that both sides of the threshold are "
-            "occupied, and NOT that the spectrum has a floor'. ⇒ **The load-bearing question is the "
-            "−1/4 threshold, because that carries the no-free-parameter stake.**")
+LASTFIND = ("r2896: **my r2880–r2881 merge of group D was wrong.** `PO-7`s target is the CR "
+            "ACOUSTIC SPECTRUM; `PO-10`s is a LIKELIHOOD-LEVEL COMPARISON. **The transfer produces "
+            "a spectrum; a likelihood is computed ON one** — so `PO-10` is DOWNSTREAM, not "
+            "co-equal, and is now gated on `PO-7`. And M2 said it at r2843 in words I quoted and "
+            "then forgot: 'a full comparison fits the whole C_l with ALL PARAMETERS AND THEIR "
+            "COVARIANCES'. **A fit, not a physics computation.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
