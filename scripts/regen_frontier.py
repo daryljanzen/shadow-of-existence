@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2970: **the P10 body and its OWN APPENDIX disagreed.** The appendix already said the "
-            "full coefficient is positive on non-degenerate metrics, **so the floor survives and "
-            "the sub-(-1/4) question has no object**, while the body called the floor open. Edited; "
-            "compiles clean. ⚠ And the second queued item was **MIS-CLASSIFIED — P15s k_D clause is "
-            "a LaTeX COMMENT**, invisible in the paper. I queued it as body text without checking. "
-            "**The queues own classification was wrong, which is worth more than the fix.**")
+LASTFIND = ("r2971: **D1 says the sub-threshold sets SIZE is IRRELEVANT to the boundary closure** — "
+            "'a per-fibre condition cannot be broken by the number of fibres' — **which may make my "
+            "r2970 paper edit wrong**, since it wrote that what remains open is the LOCATION of the "
+            "spectrum relative to 3/4. ⚠ Not reverting on one read: P10 separately calls the "
+            "deficiency **that subspace rather than a line**, a location fact. Filed as OWED #578 "
+            "against my own edit. ⌗ And D1 carries the retired person-gate — the third receipt.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

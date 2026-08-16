@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2971 — 2026-08-15 (main line). **D1 SAYS THE LOCATION IS IRRELEVANT TO THE CLOSURE, WHICH MAY MAKE THE r2970 PAPER EDIT WRONG. FLAGGED IMMEDIATELY.**
+
+**⛭⛭ `D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres`, run:** *"**THE BOUNDARY CLOSURE IS A STATEMENT ABOUT EACH FIBRE. THE UV IS A STATEMENT ABOUT THE SUM OVER FIBRES. A per-fibre condition CANNOT BE BROKEN BY THE NUMBER OF FIBRES**" — "the sub-threshold set's **SIZE IS IRRELEVANT** because the same principle supplies the same condition on every one of its fibres".*
+
+**⛔ SO "does any sector stay below three-quarters" DOES NOT THREATEN THE CONSTRUCTION:** *the boundary account holds whether the sub-threshold set is empty, small, or everything. **And r2970's edit put into P10's body that what remains open is the LOCATION of the spectrum relative to three-quarters — which D1 says is not what the closure turns on.***
+
+**⚠ NOT REVERTING ON ONE READ:** *D1's claim is about the BOUNDARY CLOSURE specifically, and P10 separately states the deficiency is "**that subspace rather than a line**" — a statement about the sub-threshold set's EXTENT, which is a location fact. **Whether the location matters for THAT while being irrelevant to the closure is the thing to settle, and it decides whether the edit stands.** Filed as `OWED` #578 against my own edit, one hour old.*
+
+**⌗ AND D1 CARRIES THE RETIRED PERSON-GATE AGAIN** — *"its closure is Daryl's" — the same clause r2830 removed and r2954 caught on B9. **Third receipt carrying it.***
+
 ### Revision r2970 — 2026-08-15 (main line). **BOTH QUEUED ITEMS RELEASED — AND THE P10 DEFECT WAS SHARPER THAN QUEUED: THE BODY AND ITS OWN APPENDIX DISAGREED.**
 
 **⛭⛭⛭ ① P10, MADE.** *`appendix_receipts_P10` already carried the answer: "whose full coefficient is positive on non-degenerate metrics --- so **the floor SURVIVES and r2652's sub-(-1/4) question HAS NO OBJECT**", and "**P10's 1/4 and this -1/4 are the same STRUCTURE not the same number**" — while the body said the floor was "part of what this paragraph leaves open at its end".*
