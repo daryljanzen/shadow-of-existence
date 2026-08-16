@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2888 — 2026-08-15 (main line). **THE ELECTRIC READING HAS A COMPUTED RESULT BEHIND IT, AND ITS ONLY BOUND WAS CLOSED TWO REVISIONS AGO.**
+
+**⛭⛭ `P14_scale_and_ratio`, uncited, run:** *"**the Standard Model's anomaly conditions and CR's winding closure are INDEPENDENT AND COMPLEMENTARY: the first fixes every RATIO and no SCALE, the second fixes the SCALE and no ratio was ever asked of it, and where they overlap THEY AGREE EXACTLY**" — **the two agree on all five hypercharges and reproduce $+2/3$ and $-1/3$ exactly**, the winding closure delivering the scale "because a lap is not a unit anyone chose".*
+
+⇒ ***CR supplies the one thing the SM's anomaly conditions cannot: the SCALE.***
+
+**⌗ AND THE RECEIPT'S OWN HONESTY:** *"a first pass claimed the cubic anomaly selects $N_c=3$. **It does not** — the cubic residual is identically zero for every $N_c$. **The three was put in when the multiplets were written down**".*
+
+**⛔ AND ITS BOUND IS STALE:** *"everything above is conditional on that antecedent" — the antecedent being `L-74`, **which r2886 established is CLOSED**. ⇒ **The hypercharge result is no longer conditional**, and this is a fourth instance of the stale-unshown class the r2887 sweep found three of.*
+
 ### Revision r2887 — 2026-08-15 (main line). **THE STALE-UNSHOWN CLASS IS REAL AND SMALL — THREE INSTANCES, AND THE INFLATION HYPOTHESIS IS WRONG.**
 
 *r2886 found r2885 had spent a revision on a gate that did not exist. Swept the class: **does any receipt call open what another has closed?***

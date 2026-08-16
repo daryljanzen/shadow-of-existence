@@ -4,11 +4,11 @@
 
 ## ⇒ **5 OPEN · 9 STEPS LEFT** *(was 10 last revision)* **· ~20 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2887 was NOT a zero — I posed 'if the count is large the register is inflated across the board' and the count is **THREE** (L-74, L-88, L-89), which is the smaller of two outcomes I had already framed. **The corpus is more coherent than I feared.** All three marked at source; `check_stale_unshown` gates the class — one receipt s NOT SHOWN outliving another s SHOWN, which cost r2885 a whole revision. Last move: r2886.***
+*⌗ **LAST ACTUAL MOVE — r2888: `PO-1c`s last 'reading' has a COMPUTED result behind it. `P14_scale_and_ratio`: **the SM anomaly conditions fix every RATIO and no SCALE; CR s winding closure fixes the SCALE and no ratio was asked of it; where they overlap THEY AGREE EXACTLY** — all five hypercharges, +2/3 and -1/3 reproduced. And its bound (conditional on L-74) is **STALE — r2886 closed L-74** — so the result is unconditional. A fourth stale-unshown instance, in a receipt the r2887 sweep missed.***
 
-*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
+> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
 **RUNWAY: 5 of 5 clear now**; 0 gated ().
 
@@ -23,7 +23,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-1c** | the winding Z_3 — is it electric charge? | **1** ↓1 | 2 | 1 | READ | 6 | — | CLEAR -- the horn is established; one count to run |
+| **PO-1c** | the winding Z_3 — is it electric charge? | **1** ↓1 | 2 | 1 | READ | 7 | — | CLEAR -- the horn is established; one count to run |
 
 ### C · THE QUANTUM SECTOR — independent.
 

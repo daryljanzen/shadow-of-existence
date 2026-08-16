@@ -217,5 +217,8 @@ for s in [
  "  winding with electric charge is L-65's READING, whose antecedent -- is a matter field",
  "  labelled by a ROUTE rather than a point? -- the winding receipt itself marks NOT SHOWN",
  "  (L-74).  ** Everything above is conditional on that antecedent and says nothing toward it. **",
+# ** r2888: L-74 is SINCE CLOSED by P14_route_or_point / P14_mode_monodromy_at_the_wall. **
+# *** So 'everything above is conditional on that antecedent' NO LONGER HOLDS -- the
+# hypercharge agreement is unconditional.  Fourth instance of the stale-unshown class. ***
 ]:
     print("  " + s)
