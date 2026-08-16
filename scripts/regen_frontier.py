@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2910: r2909s 'one computation, unasked' is ASKED and ANSWERED — **common-mode "
-            "cancellation is FALSE in general**. C45: '∫f/H1 / ∫f/H2 DEPENDS ON f. A common weight "
-            "cancels from a ratio of INTEGRANDS, **not from a ratio of INTEGRALS, because it "
-            "reweights WHERE the two rates are compared**.' ⇒ **A shared CONSTANT divides out; a "
-            "shared FUNCTION does not.** Measured: toggling x_e alone moves the effect 9.94% → "
-            "8.37%, ~19% of it — and the 8.2% already carries that correction.")
+LASTFIND = ("r2911: **the 7% control gap is a DEFINITION, not an error** — the receipts own bound "
+            "says so: a k_D vs pi/k_D diffusion-definition convention, applied by the same method to "
+            "both rates, so it **cancels in the ratio** and only the ABSOLUTE theta_D carries it. "
+            "⇒ And it passes C45s criterion: **a pi-convention is a shared CONSTANT and divides "
+            "out; x_e is a shared FUNCTION and did not**. Two receipts, different objects, both "
+            "right. ⚠ Unreconciled: this run prints +7.9% where r2909 read +8.2%.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

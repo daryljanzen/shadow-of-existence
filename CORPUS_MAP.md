@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2911 — 2026-08-15 (main line). **THE 7% CONTROL GAP IS A DEFINITION, NOT AN ERROR — AND THE RECEIPT SAYS SO IN ITS OWN BOUND.**
+
+**⛭⛭ `P15_damping_ratio_clean`'s GATE + BOUND line, never carried by the row:** *"the receipt's ABSOLUTE $\theta_D$ from the Hu–Sugiyama integral is ~7% below CAMB's $\theta_d$ (**a $k_D$ vs $\pi/k_D$ DIFFUSION-DEFINITION CONVENTION**). **That offset uses the SAME METHOD on both rates, so it CANCELS in the CR/$\Lambda$CDM RATIO — which is the actual claim and is robust. So the ~8% signature is CONVENTION-INDEPENDENT; only the absolute $\theta_D$ carries the 7% gap**".*
+
+⇒ ***And it passes `C45`'s own criterion: a $\pi$-convention is a **shared CONSTANT** and divides out; $x_e$ is a **shared FUNCTION** and did not. **The two receipts agree and are about different objects** — the $\pi$ cancels because it is a factor, $x_e$ did not because it varies by nine across the range.***
+
+**⌗ SO THE ROW'S PICTURE OF ITS OWN NUMBER IS COMPLETE:** *the ~8% is a ratio; its one known non-cancelling shared function is **already corrected into it** (9.94→8.37); its one large-looking discrepancy is **a definitional factor that cancels by construction**.*
+
+**⚠ ONE THING UNRECONCILED, STATED RATHER THAN SMOOTHED:** *this run prints **1.0785 ⇒ +7.9%** where r2909's read **1.0816 ⇒ +8.2%**. A ~0.3pp difference between two reads of the same receipt, cause unknown.*
+
 ### Revision r2910 — 2026-08-15 (main line). **r2909's "ONE COMPUTATION, UNASKED" IS ASKED AND ANSWERED — COMMON-MODE CANCELLATION IS FALSE IN GENERAL.**
 
 *Checked before proposing, after twice naming an unasked question that was asked (r2884, r2903).*

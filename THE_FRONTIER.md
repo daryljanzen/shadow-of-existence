@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2910: r2909s 'one computation, unasked' is ASKED and ANSWERED — **common-mode cancellation is FALSE in general**. C45: '∫f/H1 / ∫f/H2 DEPENDS ON f. A common weight cancels from a ratio of INTEGRANDS, **not from a ratio of INTEGRALS, because it reweights WHERE the two rates are compared**.' ⇒ **A shared CONSTANT divides out; a shared FUNCTION does not.** Measured: toggling x_e alone moves the effect 9.94% → 8.37%, ~19% of it — and the 8.2% already carries that correction.***
+*⌗ **LAST ACTUAL MOVE — r2911: **the 7% control gap is a DEFINITION, not an error** — the receipts own bound says so: a k_D vs pi/k_D diffusion-definition convention, applied by the same method to both rates, so it **cancels in the ratio** and only the ABSOLUTE theta_D carries it. ⇒ And it passes C45s criterion: **a pi-convention is a shared CONSTANT and divides out; x_e is a shared FUNCTION and did not**. Two receipts, different objects, both right. ⚠ Unreconciled: this run prints +7.9% where r2909 read +8.2%.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
