@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2967 — 2026-08-15 (main line). **r2881's "ONE COMPUTATION, THREE SIDES" IS OVERTAKEN: ONE SIDE WAS ANSWERED WITHOUT IT.**
+
+*Read the row's own history before its receipts — the order that would have caught the last two turns' stale worries.*
+
+⇒ *r2881 holds that "**GROUP D'S WHOLE REMAINDER IS ONE COMPUTATION, APPROACHED FROM THREE SIDES**" — the full seam-to-recombination transfer — the three being **(a)** `PO-7`'s comb-periodically wrong heights, **(b)** this row's "**is the +8.9% damping tension irreducible, or does the transfer redistribute it**", and **(c)** the coherence comb, whose bound "**defers to the same transfer**"; and that "**the corpus named this computation as its open frontier before any of this session's work**".*
+
+**⛔ AND SIDE (b) IS NOW ANSWERED WITHOUT THAT TRANSFER:** *r2965's LMAXL = 2512 run **scores 201 bins to ell = 2508 and finds the damping tail widens F3 (50497 → 51547)** — the tension is not redistributed away; **it is scored, and it goes against CR**. ***The question r2881 posed for this row — irreducible or redistributed — has its answer from a direct run, not from the proof-standard transfer.***
+
+**⌗ SO THE THREE SIDES ARE NOT ONE PROBLEM ANY MORE:** *(b) **answered by direct computation**; (a) is `PO-7`'s heights, which r2962 showed **no open row's object names**; (c) the coherence comb, still bounded "mechanism only".*
+
+⇒ ***r2881's unification was true when written and the register has since resolved one leg out of it — **which is what a frontier collapsing looks like when it does not collapse all at once**.***
+
 ### Revision r2966 — 2026-08-15 (main line). **THE REMAINING CONTROL GAP IS DIAGNOSED, AND MY r2965 CAVEAT USED THE WRONG NUMBER — ONE I HAD RECORDED CORRECTLY AT r2905.**
 
 **⛭⛭ `S1_the_third_point_shows_the_control_converges`:** *"**the LENSED control DOES converge toward ~1 (to 1.18)**" — 3.19 at L3000 to 1.18 at L3200, "**flat by L3000**" — so "**raising LMAXL past L2512 is the WRONG LEVER, which the plateau proves**".*

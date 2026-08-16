@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2966: **the control gap is diagnosed and my r2965 caveat used the WRONG NUMBER.** The "
-            "lensed control **converges to 1.18 and is flat by L3000**, so raising LMAXL past L2512 "
-            "is the wrong lever; and **the ~1.18 shared instrument+lensing floor CANCELS in F3**, "
-            "which is the quantity the comparison uses. ⇒ 3.81 was a mid-convergence value. **I "
-            "recorded the control at 1.18 myself at r2905 and re-derived a stale worry eleven "
-            "revisions later.** The r2904 rule still stands, on its own grounds.")
+LASTFIND = ("r2967: **r2881s 'one computation, three sides' is overtaken — one side was answered "
+            "WITHOUT it.** It held that group Ds whole remainder was the full seam-to-recombination "
+            "transfer, approached from three sides. **Side (b) — is the +8.9% damping tension "
+            "irreducible or redistributed — is now answered by r2965s direct LMAXL=2512 run**, "
+            "which scores the bins and widens F3. ⇒ The three sides are no longer one problem, "
+            "**which is what a frontier collapsing looks like when it does not collapse at once**.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
