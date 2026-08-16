@@ -393,3 +393,4 @@ r2928  LATENT      the missing chirality is the missing second polarization; the
 r2929  LATENT      the modulation depth is uncomputed (verified); r2916s period match is asymptotic — actual spacings 316 and 277.
 r2930  LATENT      r2916s period match is circular: 296 = pi D_C/r_s IS the acoustic scale. Support withdrawn; C56s amplitude finding stands.
 r2931  LATENT      C56 propagated the +0.075% asymptotic shift, not the +142 transient (~860x larger) where the swing is measured.
+r2932  LATENT      no receipt propagates the transient into dC/C; the datum scan stops at ell~996 and cannot test the asymptotic phase.

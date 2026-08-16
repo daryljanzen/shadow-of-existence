@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2932 — 2026-08-15 (main line). **THE r2931 HOLE STANDS, AND B5 CAVEATS SOMETHING RECORDED AT r2877.**
+
+*Looked before proposing: **33 statements mention the transient across the receipts and NONE propagates $+142$ into a $dC/C$**. Every one is positional. **The elimination gap is real and unrun.***
+
+**⛭⛭ `B5_the_scan_cannot_test_the_asymptotic_phase`, run:** *"**all 23 datum-scan spectra stop at $\ell\sim996$ with three or four peaks; ZERO reach peak 8**, so the peaks-4-to-8 fit cannot be performed on any of them" — and "**the scan moves the TRANSIENT region demonstrably; whether it moves the ASYMPTOTIC intercept is UNTESTED**".*
+
+**⚠ SO A CAVEAT ON r2877:** *the row records P15's "the acoustic phase offset of $0.62\pi$ **moves by 3% under a 31% swing in the fitted parameter**, so the phase is the construction's". **If that stability was measured on the shallow scan, it is a statement about the TRANSIENT region and not about the asymptotic phase, which B5 says the scan cannot reach.** I do not know which, and the row has carried it as the latter.*
+
+**⌗ AND B5 NAMES THE SMALL EXPERIMENT:** *"**two or three seam phases at production depth, fit peaks 4–8. Not eighteen — the question is whether the intercept moves AT ALL**".*
+
+⇒ ***Two unrun computations, both small and both named.***
+
 ### Revision r2931 — 2026-08-15 (main line). **C56 RULED OUT THE ASYMPTOTIC POSITION SHIFT AND NOT THE TRANSIENT, WHICH IS THE ONE LARGE ENOUGH TO MATTER.**
 
 *The 26.6% oscillation is named in exactly one receipt, with two candidates eliminated. **Read what C56 actually propagated.***

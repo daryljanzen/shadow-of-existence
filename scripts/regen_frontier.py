@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2931: **C56 ruled out the ASYMPTOTIC position shift, not the TRANSIENT.** What it "
-            "propagated is the l_A residual of **+0.075%**; what B4/P15 measured is the CR arms "
-            "first three peaks sitting **+142, +80, +18** above its own asymptotic line — a **65% "
-            "displacement at the first peak, ~860x larger**. ⇒ And dC/C ~ (dC/dl) dl **fails as a "
-            "linearisation when dl is comparable to the feature width**. The elimination is "
-            "narrower than the row read it.")
+LASTFIND = ("r2932: the r2931 hole STANDS — **33 statements mention the transient and none "
+            "propagates +142 into a dC/C**. And B5 caveats r2877: **all 23 datum-scan spectra stop "
+            "at ell ~ 996 and ZERO reach peak 8**, so 'the scan moves the TRANSIENT region "
+            "demonstrably; whether it moves the ASYMPTOTIC intercept is UNTESTED'. ⇒ P15s "
+            "3%-under-31% stability **may be about the transient, not the asymptotic phase**, and "
+            "the row carried it as the latter. B5 names the fix: 2–3 seam phases at depth.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

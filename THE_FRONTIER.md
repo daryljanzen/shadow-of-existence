@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2931: **C56 ruled out the ASYMPTOTIC position shift, not the TRANSIENT.** What it propagated is the l_A residual of **+0.075%**; what B4/P15 measured is the CR arms first three peaks sitting **+142, +80, +18** above its own asymptotic line — a **65% displacement at the first peak, ~860x larger**. ⇒ And dC/C ~ (dC/dl) dl **fails as a linearisation when dl is comparable to the feature width**. The elimination is narrower than the row read it.***
+*⌗ **LAST ACTUAL MOVE — r2932: the r2931 hole STANDS — **33 statements mention the transient and none propagates +142 into a dC/C**. And B5 caveats r2877: **all 23 datum-scan spectra stop at ell ~ 996 and ZERO reach peak 8**, so 'the scan moves the TRANSIENT region demonstrably; whether it moves the ASYMPTOTIC intercept is UNTESTED'. ⇒ P15s 3%-under-31% stability **may be about the transient, not the asymptotic phase**, and the row carried it as the latter. B5 names the fix: 2–3 seam phases at depth.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 13 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
+| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 14 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
 | **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 30 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
 
 ---
