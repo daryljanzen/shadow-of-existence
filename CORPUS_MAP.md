@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2929 — 2026-08-15 (main line). **THE MODULATION DEPTH IS GENUINELY UNCOMPUTED — AND THE RUN CAVEATS MY OWN r2916 MATCH.**
+
+*Looked before proposing, per §⑤·6. **Two receipts touch coherence and a $C_\ell$ quantity; neither computes a depth.***
+
+**⛭ `P15_camb_reference`** *gives the $\Lambda$CDM/CAMB anchors the coherence section is checked against: $P_1$ at $\ell=220$ ($D_\ell=5734.1\,\mu K^2$), $P_2$ at 536 (2593.8), $P_3$ at 813 (2541.9), with $P_1/P_2=2.211$, $P_2/P_1=0.452$, $P_3/P_1=0.443$ against the paper's observed anchors.*
+
+⇒ ***The corpus holds the reference HEIGHTS and, separately, the coherence CONTRAST on a demo — **and nothing joins them. The depth is not computed anywhere**, and this time it was checked rather than assumed.***
+
+**⚠⚠ AND THE SAME RUN CAVEATS r2916:** *the actual peak spacings are **$\Delta\ell(1\to2)=316$ and $\Delta\ell(2\to3)=277$** — not a single number. My "296 against 293, 0.9% apart" compared **two idealised asymptotic values**, and the real low-$\ell$ spacings vary by $\pm7\%$ around them.*
+
+⇒ ***The period match holds asymptotically and is LOOSER exactly where the transient lives — which is where C56's swing is measured. **r2916's "same period" stands as an asymptotic statement and not as a low-$\ell$ one.****
+
 ### Revision r2928 — 2026-08-15 (main line). **WHAT THE CHIRAL CUT TAKES IS NAMED BY WHAT IS ALREADY BUILT: THE SECOND PROPAGATING MODE.**
 
 *P09 says the chiral member is reachable and "needs no machinery the operator lacks" without saying what it takes. **P11's worked case says it.***

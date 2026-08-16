@@ -451,3 +451,4 @@ r2925  LATENT      the 12 legs are FORCED; L-107 governs the tower above them, w
 r2926  INSTRUMENT  r2887 sites swept: 3 of 5 gating clauses propagated, 2 not, neither reaching an open row.
 r2927  LATENT      the built geometry is ACHIRAL (polarized Gowdy-dS); the chiral member is named, unbuilt, and reachable.
 r2928  LATENT      the missing chirality is the missing second polarization; the build extends P11s polarized Gowdy-dS leaf.
+r2929  LATENT      the modulation depth is uncomputed (verified); r2916s period match is asymptotic — actual spacings 316 and 277.

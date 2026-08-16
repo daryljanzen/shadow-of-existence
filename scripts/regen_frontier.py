@@ -42,13 +42,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 1
-LASTFIND = ("r2928 was not a zero — it scoped a build from what is already worked. P11s built case "
-            "is the **polarized** Gowdy–de Sitter leaf carrying **a single propagating mode**; the "
-            "unpolarized one has two, and **handedness needs two** (a circular polarization is two "
-            "linear ones with a phase). ⇒ **The missing chirality and the missing second mode are "
-            "the same absence**, and the build is a named extension of a solved system. ⚠ No turn "
-            "count claimed. Last actual move: r2927.")
+SINCE = 0
+LASTFIND = ("r2929: **the modulation depth is genuinely uncomputed** (checked, not assumed) — the "
+            "corpus holds the CAMB reference heights and the coherence contrast on a demo, and "
+            "**nothing joins them**. ⚠ And the same run caveats r2916: the actual spacings are "
+            "**316 and 277, not one number** — my '296 against 293, 0.9% apart' compared two "
+            "IDEALISED asymptotic values, and the real low-ell spacings vary ±7%. **The period "
+            "match is asymptotic and looser exactly where the transient lives.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

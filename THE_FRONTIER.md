@@ -4,11 +4,11 @@
 
 ## ⇒ **4 OPEN · 9 STEPS LEFT** *(was 7 last revision)* **· ~19 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2928 was not a zero — it scoped a build from what is already worked. P11s built case is the **polarized** Gowdy–de Sitter leaf carrying **a single propagating mode**; the unpolarized one has two, and **handedness needs two** (a circular polarization is two linear ones with a phase). ⇒ **The missing chirality and the missing second mode are the same absence**, and the build is a named extension of a solved system. ⚠ No turn count claimed. Last actual move: r2927.***
+*⌗ **LAST ACTUAL MOVE — r2929: **the modulation depth is genuinely uncomputed** (checked, not assumed) — the corpus holds the CAMB reference heights and the coherence contrast on a demo, and **nothing joins them**. ⚠ And the same run caveats r2916: the actual spacings are **316 and 277, not one number** — my '296 against 293, 0.9% apart' compared two IDEALISED asymptotic values, and the real low-ell spacings vary ±7%. **The period match is asymptotic and looser exactly where the transient lives.*****
 
-*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
+> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
 **RUNWAY: 4 of 4 clear now**; 0 gated ().
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 12 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
+| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 13 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
 | **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 30 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
 
 ---
