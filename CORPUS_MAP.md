@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2936 — 2026-08-15 (main line). **`PO-5` AS ONE STATEMENT, WRITTEN ONCE.**
+
+*Assembled from nine findings across this session, none of which holds the whole — the same operation r2935 did for group D, for the same reason.*
+
+**· FORCED:** *the 3 walls and 12 legs, the transversally-invariant sector.* **· THE FACTORISATION:** *the twelve null legs $=3$(colour)$\times2$(horn)$\times2$(ruling/chirality).* **· WHAT THAT GIVES:** *four classes — quark-L, quark-R, lepton-L, lepton-R.* **· WHAT THE SM HAS:** *five multiplets, $u^c$ and $d^c$ separate **because they are $SU(2)$ singlets**.* **· WHERE IT FAILS:** ***exactly one pair wide, on the right-handed side***.
+
+**· WHY:** *$T$ acts the SAME on both $R$-eigenspaces (computed), and **four one-dim characters CANNOT act on one and not the other** — the $D_6$ route is closed.* **· THE ROOT CAUSE:** ***the geometry BUILT is the polarized Gowdy–de Sitter cut, the ACHIRAL member of its own range***. **· WHAT THE BUILD IS:** ***the second propagating mode*** — *a polarized leaf carries ONE, unpolarized TWO, and handedness needs two.*
+
+**· NOT OWED:** *the octet — $3\otimes\bar3=1\oplus8$ is a **gauge boson**, and "quantises and does not couple" is a **theorem about branchings**.* **· ALSO DELIVERED:** *the colourless sector has **total dimension FOUR** = the SM's count **with $\nu_R$**, and CR **fixes the $\nu_R$'s place and declines its couplings**.*
+
+⇒ ***THE ONE SENTENCE: the twelve forced legs factor into four classes where the Standard Model has five; the mismatch is exactly one pair on the right-handed side; and its cause is that the geometry built is the ACHIRAL member of its own range — **so the missing multiplet and the missing second polarization are the same absence**.***
+
 ### Revision r2935 — 2026-08-15 (main line). **GROUP D AS ONE GEOMETRY, WRITTEN ONCE ON BOTH ROWS.**
 
 *Assembled from r2906, r2931, r2933, r2934 — each holds a piece and none holds the whole. **Written on both rows so it is not derived a fifth time.***

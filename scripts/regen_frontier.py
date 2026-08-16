@@ -42,13 +42,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 1
-LASTFIND = ("r2935 recorded rather than found: **group D is ONE GEOMETRY** — transient below ~500 "
-            "(all of PO-7s measurements), a middle with no findings, PO-10s diagnosed residual at "
-            "1500–1760, and **thirty bins beyond the model edge where CRs suppression is largest "
-            "(42.3% at the last dropped bin)**. ⇒ **The corpus measures everywhere except where its "
-            "own prediction is strongest.** Assembled from r2906/2931/2933/2934 and written on "
-            "both rows so it is not derived a fifth time. Last actual move: r2933.")
+SINCE = 2
+LASTFIND = ("r2936 recorded rather than found, as r2935 did for group D: **`PO-5` as ONE "
+            "statement** — twelve FORCED legs factoring 3x2x2 into four classes where the SM has "
+            "five; the mismatch **exactly one pair wide on the right-handed side**; the cause "
+            "**the built geometry is the ACHIRAL member of its own range**; the build **the second "
+            "propagating mode**; the octet **not owed** (a theorem); and the colourless four and "
+            "the nu_R place **delivered**. Last actual move: r2933.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
