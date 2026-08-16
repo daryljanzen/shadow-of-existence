@@ -52,6 +52,9 @@ first-order $|dC/C|$ from the residual shift against the measured swing.  *** Al
 
 Written r2788.  Stated for reversal.
 """
+# ** SCOPE NOTE (r2931). **
+# *** The shift propagated here is the ASYMPTOTIC l_A residual, +0.075%. The TRANSIENT position offset (+142, +80, +18 off the CR arm own line, B4) is ~860x larger and is NOT propagated. So "peak positions are not the cause" holds at the asymptotic scale and is untested for the transient. ***
+# ⌗ The receipt's own computation is unaffected; this records WHAT IT MEASURES.
 import glob
 import os
 import re

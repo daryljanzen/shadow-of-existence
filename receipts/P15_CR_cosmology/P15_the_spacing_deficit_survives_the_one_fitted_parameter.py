@@ -62,6 +62,9 @@ here rather than left to the reader. **
 rc=0 on success.  Run: python3 P15_the_spacing_deficit_survives_the_one_fitted_parameter.py
                         (numpy scipy; ~10 s)
 """
+# ** SCOPE NOTE (r2933). **
+# *** This receipt measures MEAN PEAK SPACING framed as "the ~20% spacing deficit" — a figure `B4_the_intercept_is_a_phase` WITHDREW ("the ~21%/23% figure is withdrawn"; at production depth the asymptotic spacing is 0.975). Its 3%-under-31% stability is therefore measured on a mean over three or four peaks, i.e. THE TRANSIENT REGION, and B5 records that the scan cannot reach the asymptotic intercept. ***
+# ⌗ The receipt's own computation is unaffected; this records WHAT IT MEASURES.
 import os
 import sys
 

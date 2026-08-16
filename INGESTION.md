@@ -460,3 +460,4 @@ r2934  LATENT      PO-10 does not share PO-7s defect; its residual lived above e
 r2935  LATENT      group D is one geometry: transient below 500, model edge at 1760, CRs prediction strongest beyond it.
 r2936  LATENT      PO-5 as one statement: 12 forced legs, 4 vs 5, one pair wide, cause is achirality, build is the second polarization.
 r2937  LATENT      PO-6 as one statement; all four rows now carry theirs once. The construction turns on a 1/2 margin.
+r2938  INSTRUMENT  PROPAGATION_QUEUE opened: 2 corpus items held, 3 receipt scope notes placed, release condition stated.

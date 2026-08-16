@@ -20,7 +20,7 @@ sources: [chat]
 | **STATE** | 47 |
 | **METHOD** | 30 |
 | **RECORD** | 81 |
-| **UNCLASSIFIED** | 3 |
+| **UNCLASSIFIED** | 4 |
 
 ## ⌗ DECLARED CLASSES
 
@@ -239,6 +239,7 @@ sources: [chat]
 | `c22_keepers.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
 | `gate_notes_bead_audit.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
 | `lapse_shift_synchrony_reconciliation.md` | RETIRED | the fork's retired working note, carried at top level and in retired/ both; this line neither owns nor maintains it | — | — |  |
+| `PROPAGATION_QUEUE.md` | UNCLASSIFIED |  | — | — |  |
 | `STATE_OF_THE_STATE.md` | UNCLASSIFIED |  | — | c54.138 |  |
 | `THE_FRONTIER.md` | UNCLASSIFIED |  | — | — |  |
 | `TURN_PROTOCOL.md` | UNCLASSIFIED |  | — | — |  |

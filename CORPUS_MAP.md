@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2938 — 2026-08-15 (main line). **`PROPAGATION_QUEUE` OPENED — TWO CORPUS-FACING ITEMS, HELD; THREE RECEIPT NOTES, PLACED.**
+
+*Daryl: propagation "would have to be done meaningfully and intentionally at the right time". **The release condition is stated before the content, so the queue is not a way of forgetting.***
+
+**⚠ RELEASE CONDITION:** *do not edit the corpus while the picture is still moving — **the case is r2912–r2914**, an owed item filed and withdrawn two revisions later. **A wrong debt in a paper is worse than one in a register**, because the register is designed to be overturned. The signal is the zero counter rising and STAYING risen; at r2937 it reached 3 for the first time, **and three is thin**.*
+
+**① CORPUS-FACING (held):** *· **P10** — the $-\tfrac14$ vs $\tfrac34$ conflation: $\tfrac34$ decides extension uniqueness, $-\tfrac14$ decides oscillation, and the no-free-parameter stake belongs to $\tfrac34$. · **P15** — "leading-order $k_D$" sits inside a clause about the LOW-multipole floor, where the ambiguity is the discreteness cutoff at $\ell\approx5$–58.*
+
+⌗ ***Both are the same kind: a symbol or threshold used in a clause that means something else. **Neither is a physics error; both are places a careful reader is led wrong**, and I was.***
+
+**② RECEIPT-FACING (placed):** *scope notes on `P15_the_spacing_deficit_survives`, `C56`, and `P15_verify_coherence_comb` — **they record what a receipt MEASURES and make no claim about CR**.*
+
 ### Revision r2937 — 2026-08-15 (main line). **`PO-6` AS ONE STATEMENT — AND ALL FOUR ROWS NOW CARRY THEIRS ONCE.**
 
 **· THE PROMOTION:** *the boundary coefficient goes from the c-number $\gamma=\tfrac14$ of the FREE scale factor to an **operator $\hat\Gamma$ on the tower**.* **· THE FORM:** *$\hat\Gamma=\gamma+c\sum_n\hat\pi_n^2$ at leading order — **a sum of squares above $\tfrac14$**.* **· THE THREE REGIMES:** *$\ge\tfrac34$ **limit-point**; $[-\tfrac14,\tfrac34)$ **limit-circle**; $<-\tfrac14$ **oscillatory**.* **· WHERE IT SITS:** *the spectrum **straddles $\tfrac34$, running upward from $\tfrac14$**.*

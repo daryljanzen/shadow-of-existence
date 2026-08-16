@@ -1,4 +1,7 @@
 """
+# ** SCOPE NOTE (r2930). **
+# *** Delta-ell = pi D_C / r_s IS the acoustic scale itself — the same formula as l_A = pi D_M / r_s. So a period match against the acoustic comb distinguishes NOTHING: any acoustic effect has that period. Noted because r2916 read the match as independent support and withdrew it at r2930. ***
+# ⌗ The receipt's own computation is unaffected; this records WHAT IT MEASURES.
 P15_verify_coherence_comb.py -- verifies P15 sec:coherence: the sharp acoustic comb requires a COMMON phase
   across modes of a given k, and the null seam supplies exactly one characteristic datum per mode = one phase
   per mode, so coherence lands by construction. Discriminating control built in (Albrecht-Coulson-Ferreira-
