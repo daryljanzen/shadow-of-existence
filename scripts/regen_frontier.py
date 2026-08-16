@@ -19,8 +19,8 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
- 'PO-5':  ('the five multiplets; which carries the colour 3', 3, 2, 4, None,
-           'r2859: four classes vs five multiplets; the horn PAIRS u^c/d^c across a lap (it cannot split a wall). Open: does the pairing land on (3bar,1) specifically'),
+ 'PO-5':  ('the five multiplets; which carries the colour 3', 4, 3, 4, None,
+           'r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet'),
  'PO-2': ('Nariai / three quarks', 1, 1, 1, 'PO-5',
            'levels 1 and 2 done; level 3 is the identification and follows PO-5'),
  'PO-1c': ('does uud have a geometric counterpart', 1, 1, 1, None,
@@ -49,11 +49,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2859: r2858's MECHANISM was wrong. The horn cannot SPLIT a wall's modes — P14: "
-            "'two punctures per hinge … **ALL SENT TO ONE WALL**', so both horn ends feed the same "
-            "wall. **It PAIRS states across a lap** (P03: the isospin-partner relation is causal "
-            "contact). The one-construction reading survives on a better mechanism — u^c and d^c are "
-            "an isospin PAIR, and a pairing is the right kind of object where a split was not.")
+LASTFIND = ("r2860: the one-construction reading of r2858/r2859 is DEAD, and the corpus said so "
+            "before I proposed it. P14: **'a full lap is three crossings and ω³ = 1'** — a lap acts as "
+            "the IDENTITY on triality, for every class — and P03 says the horn swap COSTS ONE LAP. "
+            "**So the swap is triality-neutral and cannot separate u^c from d^c.** ⚠ And the real "
+            "state is worse than the row ever said: **the corpus supplies NO third grading**. The "
+            "fifth multiplet has no candidate structure at all.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

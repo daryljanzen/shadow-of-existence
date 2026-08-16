@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2860 — 2026-08-15 (main line). **THE ONE-CONSTRUCTION READING IS DEAD, AND THE CORPUS SAID SO BEFORE I PROPOSED IT.**
+
+*r2859 named the fatal case: "a pairing that acts everywhere pairs $Q$ with itself and delivers nothing".*
+
+**⛭⛭ P14 ANSWERS IT:** *"one crossing multiplies the field by $\omega$(triality), **a full lap is three crossings and $\omega^3=1$**"; P03: "one lap = three wall crossings = the whole $\mathbb{Z}_3$ orbit". ⇒ **A full lap acts as the IDENTITY on triality, for every class** — and P03 says $T$ is a horn swap **costing one lap**.*
+
+⇒ ***So the horn swap is triality-neutral and cannot separate $u^c$ from $d^c$. r2858's "one construction", r2859's "pairing across a lap", and the backwards-gate onto `PO-1c` are all DEAD.***
+
+**⌗ WHAT STANDS:** *the count — four classes, five multiplets — and its cause: **a two-valued grading cannot produce a five-part decomposition**.*
+
+**⚠ AND THE REAL STATE IS WORSE THAN THE ROW HAS EVER SAID:** *the corpus supplies exactly two gradings off one number and **no third that separates $u^c$ from $d^c$**. The fifth multiplet is not under-derived — **there is no candidate structure for it at all**. Steps 3 → 4.*
+
 ### Revision r2859 — 2026-08-15 (main line). **r2858's MECHANISM IS WRONG; ITS CONCLUSION SURVIVES ON A BETTER ONE.**
 
 *r2858 wrote that the horn "gives the isospin that **SPLITS** the fifth multiplet from the fourth". Checked whether the horn and the triality grading act on the same objects.*
