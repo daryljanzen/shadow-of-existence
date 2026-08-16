@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2975 — 2026-08-15 (main line). **#580 ANSWERED TERM BY TERM — AND P10's TWO FRONTIER ITEMS COLLAPSE INTO ONE.**
+
+*P10 gives the substitution for the quadratic term: "**each mode's kinetic term over 2a^3 is, in the geodesic coordinate, the inverse-square operator at the origin**" — so a^3 goes to x^2 near the origin.*
+
+⇒ ***And the cubic carries the SAME a^3: the identical substitution sends it to (tower operator)/x^2, and **both tower factors are operators on the TOWER, not on x** — so the coefficient is x-independent and **Gamma-hat does exist** as the thing multiplying 1/x^2.***
+
+**⌗ AND THAT IS WHAT P10's "IN KIND" MEANS:** *not "similar in size" but ***the same KIND of term — an x-independent tower operator over a^3, so the identical geodesic substitution applies***. The phrasing is exact, and I had read it as hedging.*
+
+**⚠ AND THE LIMIT, STATED PLAINLY:** *it shows each TERM separates. **It does NOT show the SUM over n and m converges to a densely-defined operator** — which is precisely P10's OTHER named frontier item, "the ultraviolet definition of the tower sums".*
+
+⇒ ***So the two items P10 names are not independent after all: **the separation holds term by term, and whether Gamma-hat exists as an operator IS the same question as whether the sums are UV-defined**.***
+
 ### Revision r2974 — 2026-08-15 (main line). **#579 SETTLED: THE COMMUTATION IS STRUCTURAL, AND S3's CAVEAT IS ABOUT SOMETHING ELSE AND SHARPER.**
 
 *P10 states it **unqualified** — "**As Gamma-hat commutes with the radial part**, the operator decomposes as a direct integral over its spectrum" — with no "at leading order". And the reason is in what Gamma-hat IS:*

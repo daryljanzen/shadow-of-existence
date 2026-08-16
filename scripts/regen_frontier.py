@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2974: #579 settled — **the commutation is STRUCTURAL**, because Gamma-hat is defined as "
-            "**the singular part, i.e. the coefficient multiplying 1/x^2, which is x-independent BY "
-            "DEFINITION**; such an operator commutes with the radial part at every order. S4 right, "
-            "r2919 stands. ⚠ **And S3s caveat is about something else and sharper: whether the "
-            "interacting Hamiltonians singular part SEPARATES cleanly at all beyond leading order — "
-            "whether such a Gamma-hat EXISTS, not whether it commutes.** Filed #580.")
+LASTFIND = ("r2975: #580 answered term by term — **the cubic separates for the same reason the "
+            "quadratic does.** P10 gives a^3 -> x^2 in the geodesic coordinate, and the cubic "
+            "carries the SAME a^3, so it goes to (tower operator)/x^2 with an x-independent "
+            "coefficient. **'In kind' is exact, not hedging.** ⚠ But it shows each TERM separates "
+            "and **not that the SUM converges** — so P10s two frontier items collapse into one: "
+            "**whether Gamma-hat exists IS whether the tower sums are UV-defined.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
