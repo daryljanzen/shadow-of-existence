@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2877 — 2026-08-15 (main line). **THE 21% FIGURE IS FORMALLY WITHDRAWN, AND `PO-7`'s LIVE OBJECT IS AMPLITUDE.**
+
+*Three uncited receipts, run.*
+
+**⛔ `B4`:** *"the disagreement is entirely in the FIRST THREE GAPS (0.769, 0.769, 0.928), **level at ~0.98 from the fourth** … **THE ~21%/23% FIGURE IS WITHDRAWN**". The transient is the CR arm's alone: +142, +80, +18 off its own line against the control's −3, +14, −16.*
+
+**⛭⛭ `P15_the_acoustics_work…`:** *"the asymptotic peak spacing tracks the sound horizon at **98% of the acoustic rate**, so **this construction's ACOUSTICS WORK**… the acoustic phase offset of $0.62\pi$ moves by 3% under a 31% swing in the fitted parameter — **so the phase is the construction's and is the WHOLE of the disagreement**".*
+
+**⛔ `C56` REMOVES THE LAST PHASE CANDIDATE:** *"the residual is **two orders too small** — median $|dC/C|=0.20\%$ against a measured 26.6%… **WHAT REMAINS IS PEAK AMPLITUDE VARYING COMB-PERIODICALLY — THE PEAKS IN THE RIGHT PLACES AND THE WRONG HEIGHTS**".*
+
+⇒ ***The row's object restates completely: not "is the spacing deficient" but **"why do peaks in the right places have comb-periodically wrong HEIGHTS?"** — an amplitude question this row has never named.***
+
+⚠ *Scored SINCE = 3: expected yield, exactly as r2875 predicted and r2876 announced.*
+
 ### Revision r2876 — 2026-08-15 (main line). **`PO-7`'s HEADLINE NUMBER IS THE WRONG QUANTITY — AND THIS WAS EXPECTED YIELD, NOT A ZERO.**
 
 *35 receipts score 4+ on this object; the row cited 4. One is titled `P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong`.*

@@ -4,9 +4,9 @@
 
 ## ⇒ **5 OPEN · 11 STEPS LEFT** *(was 10 last revision)* **· ~25 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 2**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 3**
 
-*⌗ **LAST ACTUAL MOVE — r2876 was EXPECTED YIELD, not a zero — I said in advance the method would find uncited receipts that change what a row says, and it did. `PO-7` cited 4 of 35; `P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong` says at PRODUCTION DEPTH **the asymptotic spacing is 0.975 of l_A against the controls 1.002 — the ~21% figure is THE FIRST THREE GAPS AND NOT THE SPACING**. The real disagreement is a 0.62-pi PHASE OFFSET. Large, and exactly the predicted kind. **Last actual move: r2873.*****
+*⌗ **LAST ACTUAL MOVE — r2877 — expected yield again, as predicted. Three uncited receipts: **the ~21% figure is FORMALLY WITHDRAWN** (B4), **the acoustics WORK at 98% of the acoustic rate and the 0.62-pi phase is the whole disagreement** (P15), and **C56 removes the last phase candidate — the residual is two orders too small**. ⇒ The live object is **peak AMPLITUDE varying comb-periodically: the peaks in the right places and the wrong heights**. Last actual move: r2873.***
 
 *⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
@@ -35,7 +35,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 6 | — | CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840 |
+| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 9 | — | CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840 |
 | **PO-10** | the scalar remainder | **1** | 1 | 1 | READ | 21 | — | CLEAR -- refit half ANSWERED (floor is a prediction); the LIKELIHOOD half is what remains |
 
 ---

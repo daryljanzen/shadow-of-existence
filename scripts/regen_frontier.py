@@ -44,13 +44,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 2
-LASTFIND = ("r2876 was EXPECTED YIELD, not a zero — I said in advance the method would find uncited "
-            "receipts that change what a row says, and it did. `PO-7` cited 4 of 35; "
-            "`P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong` says at PRODUCTION DEPTH "
-            "**the asymptotic spacing is 0.975 of l_A against the controls 1.002 — the ~21% figure "
-            "is THE FIRST THREE GAPS AND NOT THE SPACING**. The real disagreement is a 0.62-pi "
-            "PHASE OFFSET. Large, and exactly the predicted kind. **Last actual move: r2873.**")
+SINCE = 3
+LASTFIND = ("r2877 — expected yield again, as predicted. Three uncited receipts: **the ~21% figure "
+            "is FORMALLY WITHDRAWN** (B4), **the acoustics WORK at 98% of the acoustic rate and the "
+            "0.62-pi phase is the whole disagreement** (P15), and **C56 removes the last phase "
+            "candidate — the residual is two orders too small**. ⇒ The live object is **peak "
+            "AMPLITUDE varying comb-periodically: the peaks in the right places and the wrong "
+            "heights**. Last actual move: r2873.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
