@@ -44,12 +44,12 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 4
-LASTFIND = ("r2878 — expected yield, fourth running, as announced. `PO-1c` cited 1 of 8 top-ranked "
-            "receipts. `P14_the_isospin_exchange`: the owed relation **cannot be a Q-to-0 limit** "
-            "(the lap does not exist at Q != 0) and **cannot be an identification**, so it **must "
-            "be a CORRESPONDENCE** — P13s factorisation pattern one level down, **the winding "
-            "supplying the quantisation and the Maxwell field the sign and scale — TESTABLE**. "
+SINCE = 5
+LASTFIND = ("r2879 — expected yield, fifth running. `PO-6` cited 1 of 5 top-ranked receipts. S4 and "
+            "D4 collapse its two halves into ONE determinate question from two ends: **does the "
+            "interacting dynamics keep Gamma above -1/4 on the states it actually realises?** And "
+            "the stake r2861 missed: **an oscillatory endpoint loses the CANONICAL extension, and "
+            "with it the closed-without-a-free-parameter economy the free sector earns**. "
             "Last actual move: r2873.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **

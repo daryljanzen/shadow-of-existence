@@ -146,6 +146,22 @@ sources: [cowork, chat]
 
 
 
+### Revision r2879 — 2026-08-15 (main line). **`PO-6`'s TWO HALVES ARE ONE DETERMINATE QUESTION, AND IT HAS A STAKE r2861 MISSED.**
+
+*5 receipts score 4+ on this object; the row cited 1.*
+
+**⛭⛭ `S4_the_open_half_is_the_floor`:** *"**PO-6's two remaining halves are ONE half asked twice: the SUB-LEADING TOWER is what decides whether $\hat\Gamma$ has a floor**" — the leading-order form being a sum of squares, so **the question is whether the COMPLETED operator keeps a floor**.*
+
+**⛭⛭ `D4_the_state_fixer_has_its_own_threshold`, from the other end:** *"**PO-6's successor question is NOT the open-ended 'what fixes the state?' but the DETERMINATE: does the interacting dynamics keep $\Gamma$ above $-1/4$ on the states it actually realises?**" — "**the vein's two remaining halves are one question from two ends**".*
+
+⇒ ***So the step is determinate and numerical.***
+
+**⛔ AND THE STAKE:** *"**an oscillatory endpoint admits a one-parameter family of extensions; what is LOST is the CANONICAL one — and with it the 'closed without a free parameter' the free sector earns**".*
+
+⇒ ***r2861 called this remainder "the standard problem of the interacting theory, not a CR deficit". **Half right**: the generic UV definition is not CR's, but the $-1/4$ threshold IS, and failing it costs p0's headline economy argument.***
+
+⚠ *SINCE = 5: expected yield, fifth running.*
+
 ### Revision r2878 — 2026-08-15 (main line). **`PO-1c`'s OWED RELATION HAS A REGISTERED CANDIDATE SHAPE AND A TEST ROUTE, UNCITED.**
 
 *8 receipts score 4+ on this object; the row cited 1.*

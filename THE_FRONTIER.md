@@ -4,9 +4,9 @@
 
 ## ⇒ **5 OPEN · 11 STEPS LEFT** *(was 10 last revision)* **· ~25 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 4**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 5**
 
-*⌗ **LAST ACTUAL MOVE — r2878 — expected yield, fourth running, as announced. `PO-1c` cited 1 of 8 top-ranked receipts. `P14_the_isospin_exchange`: the owed relation **cannot be a Q-to-0 limit** (the lap does not exist at Q != 0) and **cannot be an identification**, so it **must be a CORRESPONDENCE** — P13s factorisation pattern one level down, **the winding supplying the quantisation and the Maxwell field the sign and scale — TESTABLE**. Last actual move: r2873.***
+*⌗ **LAST ACTUAL MOVE — r2879 — expected yield, fifth running. `PO-6` cited 1 of 5 top-ranked receipts. S4 and D4 collapse its two halves into ONE determinate question from two ends: **does the interacting dynamics keep Gamma above -1/4 on the states it actually realises?** And the stake r2861 missed: **an oscillatory endpoint loses the CANONICAL extension, and with it the closed-without-a-free-parameter economy the free sector earns**. Last actual move: r2873.***
 
 *⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
@@ -29,7 +29,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-6** | the interacting tower — CRs share of it | **1** | 1 | 3 ⚠ | BUILD | 7 | — | CLEAR -- reduced r2838 to ONE commutator at higher order |
+| **PO-6** | the interacting tower — CRs share of it | **1** | 1 | 3 ⚠ | BUILD | 9 | — | CLEAR -- reduced r2838 to ONE commutator at higher order |
 
 ### D · COSMOLOGY — independent, and the only group confronted with data.
 
