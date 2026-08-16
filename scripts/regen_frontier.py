@@ -19,7 +19,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
- 'PO-5':  ('the five multiplets; which carries the colour 3', 4, 3, 4, None,
+ 'PO-5':  ('the five multiplets — Ts content is prior', 5, 4, 4, None,
            'r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet'),
  'PO-1c': ('does uud have a geometric counterpart', 2, 1, 1, None,
            'CLEAR -- the horn is established; one count to run'),
@@ -46,12 +46,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 1
-LASTFIND = ("r2868 was NOT a zero — it sharpened a step rather than moving the space. P03 supplies "
-            "the rule (**a direct-product factorisation IS a commutation statement**) and P14 "
-            "supplies the factorisation (3 x 2 x 2), so `PO-5`'s next step is now one decidable "
-            "computation: **is that a GROUP direct product or only a leg count?** Direct product ⇒ "
-            "the over-symmetry is forced and the row closes negative. **Last actual move: r2867.**")
+SINCE = 0
+LASTFIND = ("r2869: **P03 and P14 assign the same label to two different operators**, and this "
+            "register quoted both as one account two revisions apart. P03: T → WEAK ISOSPIN, R → "
+            "chirality AND SPECIES at once. P14: T delivers a SPECIES LABEL, **not** SU(2)_L. ⇒ "
+            "**Species is assigned twice and T is given weak isospin by one paper and denied it by "
+            "the other** — so 3x2x2 is NOT a clean direct product, and **T's content must be "
+            "settled before any multiplet can be counted**.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

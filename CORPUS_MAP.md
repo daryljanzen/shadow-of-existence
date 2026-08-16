@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2869 — 2026-08-15 (main line). **P03 AND P14 ASSIGN THE SAME LABEL TO TWO DIFFERENT OPERATORS.**
+
+*Went to compute whether P14's $3\times2\times2$ is a group direct product. The operators' own definitions settle it, and not the way the question was posed.*
+
+**⛭⛭ P03's INVOLUTIONS:** *$\sigma\to$ colour; **$T\to$ WEAK ISOSPIN** ("the horn swap costing one lap = the $W$ carrying one unit"); **$R\to$ CHIRALITY AND SPECIES AT ONCE**, "which is required for a Weyl field".*
+
+**⛔ P14:** *"$T$ … delivers a **SPECIES LABEL**, not $SU(2)_L$'s chiral action".*
+
+⇒ ***Species is assigned TWICE — to $R$ by P03 and to $T$ by P14 — and $T$ is given weak isospin by one paper and denied it by the other.***
+
+**⇒⇒ THAT ANSWERS THE DIRECT-PRODUCT QUESTION IN THE SECOND BRANCH:** *if two factors both carry species they are not independent, so **$3\times2\times2$ is NOT a clean group direct product**. The over-symmetry is not forced — but neither is the factorisation clean.*
+
+**⌗ AND THE REGISTER'S OWN FAULT IS THE FINDING:** *r2865 quoted P14's "species label" and r2867 quoted P03's "3×2×2, the first 2 is weak isospin" — **two revisions apart, as one consistent account**. They are not, and nothing here noticed. Steps 4 → 5.*
+
 ### Revision r2868 — 2026-08-15 (main line). **THE COMMUTATION QUESTION IS DECIDABLE, AND THIS WAS NOT A ZERO.**
 
 **⛭⛭ P03 SUPPLIES THE RULE:** *"$D_6=S_3\times\mathbb{Z}_2$ is the symmetry of that cover, **the direct product being exactly the statement that the deck COMMUTES with the triangle's symmetries**". ⇒ In this corpus a direct-product factorisation IS a commutation statement.*
