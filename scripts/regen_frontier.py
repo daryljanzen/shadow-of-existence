@@ -46,13 +46,12 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 0
-LASTFIND = ("r2867: the fifth multiplet and `PO-1c`'s label mismatch are ONE defect with ONE cause. "
-            "P14: the twelve null legs factor as **3(colour) x 2(horn) x 2(chirality)**, and 'T … "
-            "delivers a species label, not SU(2)_L's chiral action, **the two occupations differing "
-            "on the RIGHT-HANDED PAIR'**. The horn is isospin where SU(2)_L acts and OVER-ASSIGNS "
-            "it where it does not — **an OVER-SYMMETRIC structure, not a missing one**, correcting "
-            "r2860.")
+SINCE = 1
+LASTFIND = ("r2868 was NOT a zero — it sharpened a step rather than moving the space. P03 supplies "
+            "the rule (**a direct-product factorisation IS a commutation statement**) and P14 "
+            "supplies the factorisation (3 x 2 x 2), so `PO-5`'s next step is now one decidable "
+            "computation: **is that a GROUP direct product or only a leg count?** Direct product ⇒ "
+            "the over-symmetry is forced and the row closes negative. **Last actual move: r2867.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

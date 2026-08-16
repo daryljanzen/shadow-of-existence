@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2868 — 2026-08-15 (main line). **THE COMMUTATION QUESTION IS DECIDABLE, AND THIS WAS NOT A ZERO.**
+
+**⛭⛭ P03 SUPPLIES THE RULE:** *"$D_6=S_3\times\mathbb{Z}_2$ is the symmetry of that cover, **the direct product being exactly the statement that the deck COMMUTES with the triangle's symmetries**". ⇒ In this corpus a direct-product factorisation IS a commutation statement.*
+
+⇒ ***Applied to P14's $3\times2\times2$: if it is a GROUP direct product, $R$ and the horn commute, the horn acts identically on both chiralities, and the construction returns a doublet on the right where the SM has two singlets — **the over-symmetry is FORCED and five multiplets are unreachable**.***
+
+**⚠ AND THE CAVEAT IS THE CORPUS's OWN:** *"the twelve legs **FACTOR** as $3\times2\times2$" is a COUNTING statement. **P03 makes the direct-product claim explicitly about $D_6$ and does NOT make it here** — so the corpus knows the difference and has not asserted it.*
+
+**⌗ SO THE STEP IS ONE COMPUTATION:** *is P14's $3\times2\times2$ a group direct product or only a leg count? Direct product ⇒ the row closes negative; not ⇒ **the breaking is already in the geometry and nobody has looked**. Both branches are results.*
+
+⇒ ***SINCE = 1: the step is sharper, the problem space did not move. Last actual move r2867.***
+
 ### Revision r2867 — 2026-08-15 (main line). **THE FIFTH MULTIPLET AND `PO-1c`'s LABEL MISMATCH ARE ONE DEFECT WITH ONE CAUSE.**
 
 *P14 carries a structure this register never held: **"the twelve null legs factor by the corpus's OWN sheet index as $3$ (graze point / colour) $\times2$ (horn) $\times2$ (ruling, graded by $R$) … the $3$ is colour, the FIRST 2 IS WEAK ISOSPIN, the second $2$ is CHIRALITY — multiplicities agreeing STATE BY STATE, four legs per graze point against $u_L,d_L,u_R,d_R$ at 3 each"**.*

@@ -4,11 +4,11 @@
 
 ## ⇒ **6 OPEN · 11 STEPS LEFT** *(was 9 last revision)* **· ~26 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
 
-*⌗ **LAST ACTUAL MOVE — r2867: the fifth multiplet and `PO-1c`'s label mismatch are ONE defect with ONE cause. P14: the twelve null legs factor as **3(colour) x 2(horn) x 2(chirality)**, and 'T … delivers a species label, not SU(2)_L's chiral action, **the two occupations differing on the RIGHT-HANDED PAIR'**. The horn is isospin where SU(2)_L acts and OVER-ASSIGNS it where it does not — **an OVER-SYMMETRIC structure, not a missing one**, correcting r2860.***
+*⌗ **LAST ACTUAL MOVE — r2868 was NOT a zero — it sharpened a step rather than moving the space. P03 supplies the rule (**a direct-product factorisation IS a commutation statement**) and P14 supplies the factorisation (3 x 2 x 2), so `PO-5`'s next step is now one decidable computation: **is that a GROUP direct product or only a leg count?** Direct product ⇒ the over-symmetry is forced and the row closes negative. **Last actual move: r2867.*****
 
-> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
+*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
 **RUNWAY: 6 of 6 clear now**; 0 gated ().
 

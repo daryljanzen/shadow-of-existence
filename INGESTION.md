@@ -390,3 +390,4 @@ r2864  LATENT      PO-2 struck: 2M varies neither by generation nor by hadron, s
 r2865  LATENT      PO-1cs four orbits sort by SPECIES; uud/udd/uuu/ddd are an ISOSPIN ladder. Right count, wrong quantity.
 r2866  LATENT      count-match sweep clean: 14 claims, 2 known defects, no third. NOT a zero.
 r2867  LATENT      P14s 3x2x2: the horn over-assigns isospin to the right-handed pair. Over-symmetric, not missing.
+r2868  LATENT      P03s rule: a direct product IS a commutation statement. PO-5s step is now one computation. NOT a zero.
