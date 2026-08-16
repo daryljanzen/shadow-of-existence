@@ -146,6 +146,27 @@ sources: [cowork, chat]
 
 
 
+### Revision r2838 — 2026-08-15 (main line). **`PO-6`'s NAMED TENSION IS NOT THE REAL ONE, AND P10 STATES THE REAL ONE.**
+
+*Read C6 and C7 at source rather than carrying the row's label.*
+
+**⛔ P10 RULES OUT BOTH HALVES OF WHAT THE ROW NAMED:** *(a) the per-fibre condition **survives** coupling —
+"with the tower coupled … **the same thermal regularity supplies the condition fibre by fibre**"; (b) the
+constraint algebra is **unmodified** — "nor a modification of the constraint algebra". **There is no
+algebra-closure problem for a per-fibre structure to conflict with.***
+
+**⛭⛭⛭ AND THE REAL TENSION IS IN P10's OWN VOICE:** *the per-fibre decomposition rests on $\hat\Gamma$
+commuting with the radial part, and $\hat\Gamma=\gamma+c_n\hat\pi_n^2$ holds **at leading order only** —
+"the cubic and higher self-interactions enter at the same inverse-square order at the origin, so the
+complete boundary coefficient is **the singular part of the INTERACTING graviton Hamiltonian**".*
+
+⇒ ***JOINT SATISFIABILITY REDUCES TO ONE QUESTION: does $[\hat\Gamma,\text{radial}]=0$ survive the cubic
+and higher interactions? One commutator on a stated Hamiltonian — a computation, not a survey.***
+
+**⌗ AND `THE_FRONTIER.md` IS OPENED** *(generated, `scripts/regen_frontier.py`): ten problems in dependency
+order, steps left against last revision, turns-per-step, gates, and runway. **15 steps, ~41 turns, 7 of 10
+clear.***
+
 ### Revision r2837 — 2026-08-15 (main line). **`PO-1c`'s HORN CANDIDATE IS BETTER ESTABLISHED THAN THE ROW SAID.**
 
 *Checking the remaining three "what is open" clauses against the corpus rather than inferring them.*
