@@ -59,7 +59,7 @@ without fixing what is still sitting there owed?"**
 | **`L-171`** | QUESTION · — |
 | **`L-175`** | QUESTION · OPEN |
 | **`L-202`** | QUESTION · OPEN |
-| **`L-221`** | QUESTION · OPEN |
+| ~~**`L-221`**~~ ⛭ **⟨STRUCK r2947 with `PO-5`: both halves of the row's object delivered — triality computed on `prop:wall`'s own solution, and the closure rule agreeing 11 of 11 with the observed hadron spectrum. The target's every route is closed. `kills/PO-5.md`.⟩** | QUESTION · OPEN |
 | **`L-540`** | QUESTION · — |
 | **`L-811`** | QUESTION · DARYL |
 | **`L-812`** | QUESTION · — |

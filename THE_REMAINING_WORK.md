@@ -37,7 +37,7 @@ does.**
 
 # I · THE FOUR VEINS — what each would actually take
 
-## ⓵ `PO-5` (`L-221`) · **THE BRIDGE FROM A GRADING TO A FIELD**
+## ⓵ `PO-5` (`L-221`) · **THE BRIDGE FROM A GRADING TO A FIELD** ⛭⛭ **⟨STRUCK r2947 — both halves of the object delivered: the split as triality computed on `prop:wall`'s own solution, and the baryon as a closure rule agreeing 11 of 11 with the observed hadron spectrum. The TARGET's every route is closed (`L-15`'s three ways out all dead). Receipt: `kills/PO-5.md`.⟩**
 
 **THE QUESTION, as narrowed at r2526:** *not "is there an $R$-odd operator whose kernel is the four?"
 but* ***"what BRIDGE from a grading to a field is not 'be a kernel'?"***

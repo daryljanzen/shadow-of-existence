@@ -116,7 +116,7 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | **`L-202`** | r2457 | **narrowed twice, still open and still do-not-assert both ways** · the live question is now: **does a MASSIVE trajectory carry a phase?** — the null o |
 | **`L-175`** | r2474 | **the whole row now turns on one question r2474 states**: ***can a second slicing be non-arbitrary — its selection FORCED by the first rather than cho |
 | **`L-165`** | r2475 | ⓵ **the UV clause now has a DEGREE (quartic) and a shape (IR free, UV generic)** — what remains is **defining** the sum, not diagnosing it · ⓶ the clo |
-| **`L-221`** | r2526 | **the question is INVERTED r2526**: not "is there an $R$-odd operator?" but ***what BRIDGE from grading to field exists that is not "be a kernel"?***  |
+| ~~**`L-221`**~~ ⛭ **⟨STRUCK r2947 with `PO-5`: both halves of the row's object delivered — triality computed on `prop:wall`'s own solution, and the closure rule agreeing 11 of 11 with the observed hadron spectrum. The target's every route is closed. `kills/PO-5.md`.⟩** | r2526 | **the question is INVERTED r2526**: not "is there an $R$-odd operator?" but ***what BRIDGE from grading to field exists that is not "be a kernel"?***  |
 | **`L-218`** | r2561 | ✔ ⓶ done r2478 · ***the RULE is tested r2561 and needs a fourth bucket (DISCUSSED), which is the default*** · ⓵ pandoc-in-CI and ⓷ the contribution re |
 | **`L-540`** | r2603 | ***the order now recomputes as `grounded` changes*** — and `REACH` is the one axis a human must maintain |
 | **`L-812`** | r2677 | ***HELD — build ONLY when the turnaround-regular result can be made checkable INDEPENDENTLY of the sign it produces (a bracket, a limit, a known case  |

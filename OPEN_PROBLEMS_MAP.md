@@ -34,7 +34,7 @@ blocks carrying no mark**; **three withdrawals that reached one row and not anot
 duplication is what made those possible; **two receipts asserting both verdicts at once**; and **one
 sentence a blanket sweep had inverted into its own opposite**.
 
-## ⛔⛭⛭⛭ r2829 — THE MAP WAS HOLDING A RECONSTRUCTION OF `PO-5`, NOT ITS OBJECT
+## ⛔⛭⛭⛭ r2829 — THE MAP WAS HOLDING A RECONSTRUCTION OF `PO-5`, NOT ITS OBJECT ⛭⛭ **⟨STRUCK r2947 — both halves of the object delivered: the split as triality computed on `prop:wall`'s own solution, and the baryon as a closure rule agreeing 11 of 11 with the observed hadron spectrum. The TARGET's every route is closed (`L-15`'s three ways out all dead). Receipt: `kills/PO-5.md`.⟩**
 
 *Measured: this map carried five of six open rows' objects and **not `PO-5`'s**. It said "coupling"
 fifteen times and "multiplet" **zero**. **The coupling is the ROUTE; r2609 recorded that the route and
