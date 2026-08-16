@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2904 — 2026-08-15 (main line). **r2903 CALLED A PARTIALLY-WORKED COMPARISON A DECISIVE TEST, ON A TURN THAT WAS ITSELF A ZERO. WITHDRAWN.**
+
+*Daryl: "don't ever again say something is a decisive test against CR on a step that turns zero … you're still rediscovering pieces of the analysis and haven't managed to hold even the problem space accurately".*
+
+**⛔ THE FACTS r2903 ITSELF RECORDED, WHICH CONTRADICT THE WORD:** *the arm uses **185 bins against CAMB's 215** — a $\chi^2$ spanning different data; the control sits at **$\chi^2$/dof 7.14 against a declared standard of ~1**; and **"the CR arm is at 280.09, so whatever the control's residual defect is, the CR arm carries it AND something else"**.*
+
+⇒ ***A number computed on different bins, through an instrument seven times off calibration, with an unidentified residual, settles nothing. It is a partially worked comparison whose extent this line does not know.***
+
+**⌗ WHAT STANDS AT ITS OWN WEIGHT:** *cc54 ran a BIC pair and got large numbers, and **the receipt bounded them three ways itself** — the floor cuts both ways, **F5 unsoftened ("a MEASUREMENT DISCREPANCY, not a framework verdict")**, `PO-7` protected. **The receipt was more careful than my summary of it.***
+
+**⚠ AND THE RULE IS NOW IN `TURN_PROTOCOL` §⑤·5:** *while the counter keeps resetting, **no number from this register may be characterised as settling anything about CR — the register is the thing under repair**.*
+
 ### Revision r2903 — 2026-08-15 (main line). **THE SCAN HAS BEEN RUN AND CR IS DECISIVELY DISFAVOURED — AND `PO-10` SAYS "the likelihood half remains".**
 
 *Went to fix the control arm (step a). **Both steps have been worked and (b) has a verdict.***

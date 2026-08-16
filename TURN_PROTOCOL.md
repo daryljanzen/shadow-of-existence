@@ -94,6 +94,25 @@ it is the one that gets skipped** — r2834 found thirteen revisions missing.*
 
 ---
 
+## ⑤·5 NEVER CHARACTERISE A RESULT AS SETTLING ANYTHING WHILE THE COUNTER KEEPS RESETTING
+
+***Added r2904, after this line reported "CR is DECISIVELY DISFAVOURED" on a turn that was itself a
+zero — and in the same breath recorded that the arm used 185 bins against CAMB's 215, that the control
+sat seven times off its own calibration, and that the CR arm carried an unidentified excess.***
+
+⇒ **A number computed on different data, through a miscalibrated instrument, with an unexplained
+residual, settles nothing.** *And a register that is still turning up zeros is a register under repair:
+**it is not in a position to deliver a verdict on the framework it is trying to describe.***
+
+⌗ ***Report what a receipt says and what it bounds. Do not add a characterisation the receipt declined
+to make*** — `S1` said **"a MEASUREMENT DISCREPANCY, not a framework verdict"** and was more careful
+than the summary written from it.
+
+⚠ **This is the oscillation tendency**: swinging to a verdict the moment a number appears. *The counter
+exists precisely because the picture is still moving.*
+
+---
+
 ## ⑥ THE REPORT — the board LAST, computed after the work
 
 *Find first, board second. **Never a slogan in place of the table**, never the estimates without the

@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2903: **the scan has been RUN and CR is DECISIVELY DISFAVOURED — and this row says "
-            "'the likelihood half remains'.** cc54s S1: the BIC pair is +5.05e4 and +6.76e4, "
-            "**2000–3000x the 21.5 threshold and 45–60x the instrument floor**, at BOTH seam "
-            "phases. And C50: the control is at 7.14, not ~100 — r2759s figure was a SENTENCE "
-            "about a print. ⚠ Bounds travel: the floor cuts both ways, F5 unsoftened, PO-7 "
-            "protected.")
+LASTFIND = ("r2904 (Daryl): **r2903 called a partially-worked comparison a DECISIVE test on a turn "
+            "that was itself a zero.** Withdrawn. The same revision recorded that the arm uses **185 "
+            "bins against CAMBs 215**, that the control sits at **chi2/dof 7.14 against a standard "
+            "of ~1**, and that **the CR arm carries the controls defect AND something else**. ⇒ "
+            "Different data, miscalibrated instrument, unidentified residual — **settles nothing**. "
+            "S1 itself said 'a MEASUREMENT DISCREPANCY, not a framework verdict'.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
