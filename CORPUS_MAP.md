@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2937 — 2026-08-15 (main line). **`PO-6` AS ONE STATEMENT — AND ALL FOUR ROWS NOW CARRY THEIRS ONCE.**
+
+**· THE PROMOTION:** *the boundary coefficient goes from the c-number $\gamma=\tfrac14$ of the FREE scale factor to an **operator $\hat\Gamma$ on the tower**.* **· THE FORM:** *$\hat\Gamma=\gamma+c\sum_n\hat\pi_n^2$ at leading order — **a sum of squares above $\tfrac14$**.* **· THE THREE REGIMES:** *$\ge\tfrac34$ **limit-point**; $[-\tfrac14,\tfrac34)$ **limit-circle**; $<-\tfrac14$ **oscillatory**.* **· WHERE IT SITS:** *the spectrum **straddles $\tfrac34$, running upward from $\tfrac14$**.*
+
+**· WHAT COUPLING DOES — THE OPPOSITE OF WHAT A GAP WOULD LOOK LIKE:** *it **REMOVES** freedom, the graviton momentum making the origin limit-point above $\tfrac34$.* **· EVERY FIBRE COVERED:** *limit-point fibres need nothing; limit-circle fibres get **thermal regularity, mode by mode, at the one horizon period**.*
+
+**· THE ONE BREAKING QUESTION:** *does any fibre fall below $-\tfrac14$, **where the regular branch thermal regularity selects stops existing**?* **· THE MARGIN:** *exactly $\tfrac12$, against corrections entering **at the same inverse-square order, unsuppressed**.* **· THE SHEAR HALF:** *at $O(\sigma^2)$ the basis is **three-dimensional** and needs a constant the substrate lacks; **the one-constant claim is scoped to the faces**.*
+
+⇒ ***THE ONE SENTENCE: the coupled theory's boundary coefficient is an operator whose leading-order spectrum sits at $\tfrac14$ and above, straddling the $\tfrac34$ uniqueness threshold with every fibre's condition accounted for — **and the whole construction turns on whether unsuppressed same-order corrections can push it a full $\tfrac12$ down to where the theory has no ground state**.***
+
 ### Revision r2936 — 2026-08-15 (main line). **`PO-5` AS ONE STATEMENT, WRITTEN ONCE.**
 
 *Assembled from nine findings across this session, none of which holds the whole — the same operation r2935 did for group D, for the same reason.*
