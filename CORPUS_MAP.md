@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2914 — 2026-08-15 (main line). **r2913 AND r2912 ARE BOTH WITHDRAWN — `PO-12`'s STRIKE ANSWERS BOTH.**
+
+*`PO-12`'s object is **"the bespoke transfer — CR_cosmology's own named debt"**, the identical object `T1` names. Its strike settles three things this line has been re-deriving.*
+
+**⛔ ① THE 2.6pp DISAGREEMENT DOES NOT EXIST:** *"the apparent 9.4-vs-10.8 discrepancy **shown to be AN ANGLE RATIO AGAINST A LENGTH RATIO — no discrepancy at all** (r2700)", the number **BRACKETED [7.0, 13.1] from outside the paper's own instrument** (r2689). ⇒ **`OWED` #573 withdrawn** — C41's "Owed" was superseded and I filed it without checking. **The exact stale-unshown class I gated at r2887**, missed because C41's "Owed" carries no lead id.*
+
+**⛔ ② `T1` IS STALE:** *its "what has not been run is the two against each other" IS the last named piece, and it was **shown to have NO INTEGRAND — "the pre-onset stretch is pressureless and at $w=0$ the potential equation loses $k$ entirely" (r2701, verified symbolically)**. There is nothing to run; r2913's narrowing is withdrawn.*
+
+**⛭⛭ ③ AND `PO-7` INHERITED ONE CLAUSE, NOT A TRANSFER:** *"whatever sets the acoustic phase must act on modes already inside the sound horizon when the plasma begins — written into PO-7, which is where it belongs", with **"the strike claims no progress on PO-7: that row is exactly as hard"**.*
+
+⇒ ***Step ② is the acoustic-phase question. P15's "full transfer" as a proof STANDARD is a different object from `PO-12`'s bespoke transfer, which is built.***
+
 ### Revision r2913 — 2026-08-15 (main line). **r2907's "NOT ESTIMABLE" IS TOO PESSIMISTIC — THE SPECIFICATION AND THE MACHINERY BOTH EXIST.**
 
 *Found via a sweep that turned up **71 receipts declaring something owed against an `OWED.md` reading zero**.*

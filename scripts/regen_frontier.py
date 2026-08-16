@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2913: **r2907s 'not estimable' is too pessimistic.** T1: the transfer debt is TWO "
-            "steps — specify how fluctuations gravitate on the radiation-free background, and a "
-            "bespoke transfer against it — and **① IS BUILT** while **the machinery exists** "
-            "(a genuine Boltzmann transfer for the flat-projection of the closed-S3 source). ⇒ "
-            "**What has not been run is the two against each other.** Found via a sweep: **71 "
-            "receipts declare something owed against an OWED.md reading zero.**")
+LASTFIND = ("r2914: **r2913 AND r2912 are both withdrawn.** `PO-12`s strike answers both: the "
+            "9.4-vs-10.8 gap is **an ANGLE ratio against a LENGTH ratio — no discrepancy at all** "
+            "(r2700), bracketed [7.0,13.1] at r2689; and T1s 'run the two against each other' is "
+            "the last named piece, **shown to have NO INTEGRAND** (r2701, symbolic). ⇒ `PO-7`s step "
+            "② is the RELOCATED acoustic-phase clause, **not a transfer**. I filed C41s 'Owed' "
+            "without checking it had been superseded.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

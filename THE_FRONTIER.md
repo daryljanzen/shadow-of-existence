@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2913: **r2907s 'not estimable' is too pessimistic.** T1: the transfer debt is TWO steps — specify how fluctuations gravitate on the radiation-free background, and a bespoke transfer against it — and **① IS BUILT** while **the machinery exists** (a genuine Boltzmann transfer for the flat-projection of the closed-S3 source). ⇒ **What has not been run is the two against each other.** Found via a sweep: **71 receipts declare something owed against an OWED.md reading zero.*****
+*⌗ **LAST ACTUAL MOVE — r2914: **r2913 AND r2912 are both withdrawn.** `PO-12`s strike answers both: the 9.4-vs-10.8 gap is **an ANGLE ratio against a LENGTH ratio — no discrepancy at all** (r2700), bracketed [7.0,13.1] at r2689; and T1s 'run the two against each other' is the last named piece, **shown to have NO INTEGRAND** (r2701, symbolic). ⇒ `PO-7`s step ② is the RELOCATED acoustic-phase clause, **not a transfer**. I filed C41s 'Owed' without checking it had been superseded.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
