@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2880 — 2026-08-15 (main line). **`PO-10`'s HALF ① IS A LIVE MULTI-SIGMA FALSIFICATION EXPOSURE — AND IT IS `PO-7`'s OBJECT TOO. THE CITATION SWEEP IS COMPLETE.**
+
+*3 receipts score 4+ on this object; the row cited **0**.*
+
+**⛭⛭ `P15_damping_reabsorption`:** *"the $+8.9\%$ is **NOT reabsorbable** by $\omega_b/\omega_m$ within BBN+height priors, so if CR's spectrum is otherwise $\Lambda$CDM's, **the damping tail is a GENUINE MULTI-SIGMA TENSION — a real, live FALSIFICATION EXPOSURE**. NOT dissolved and NOT confirmed: **the deciding computation is the full seam-to-recombination transfer**, which alone can say **whether the HEIGHTS/ISW move with $\theta_D$**… **'irreducible multi-sigma unless the full transfer redistributes it'**".*
+
+**⛭ AND `C30_the_odd_even_half_is_shared` RECEIPTS THE CLOSED HALF:** *the pattern $1+3R=2.80$ against $|1-3R|=0.80$, ratio 3.50, fixed by $R$ alone — and $R$ is a **ratio of CONTENTS**, so both arms carry the same $R$ and the same odd/even pattern.*
+
+⇒ ***AND THE JOIN: `PO-7`'s live object is peak AMPLITUDE — "right places, wrong heights" (r2877) — and this row's deciding run asks whether the HEIGHTS move with $\theta_D$. **The two rows' remaining work is one object from two sides, and neither row said so.****
+
+⚠ *SINCE = 6. Every open row has now been read against its own receipts.*
+
 ### Revision r2879 — 2026-08-15 (main line). **`PO-6`'s TWO HALVES ARE ONE DETERMINATE QUESTION, AND IT HAS A STAKE r2861 MISSED.**
 
 *5 receipts score 4+ on this object; the row cited 1.*

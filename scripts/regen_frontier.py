@@ -28,7 +28,7 @@ EST = {
  'PO-7':  ('the comb: rate REPRODUCES, level offset open', 3, 2, 1, None,
            'CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840'),
  'PO-10': ('the scalar remainder', 1, 1, 1, None,
-           'CLEAR -- refit half ANSWERED (floor is a prediction); the LIKELIHOOD half is what remains'),
+           'r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights'),
 }
 # ** THE COUNTER, AND THE CRITERION IT IS SCORED AGAINST (r2847, after Daryl caught two
 # turns wrongly scored 0).  *** A turn is a 0 ONLY IF it found the problem space DIFFERENT
@@ -44,13 +44,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 5
-LASTFIND = ("r2879 — expected yield, fifth running. `PO-6` cited 1 of 5 top-ranked receipts. S4 and "
-            "D4 collapse its two halves into ONE determinate question from two ends: **does the "
-            "interacting dynamics keep Gamma above -1/4 on the states it actually realises?** And "
-            "the stake r2861 missed: **an oscillatory endpoint loses the CANONICAL extension, and "
-            "with it the closed-without-a-free-parameter economy the free sector earns**. "
-            "Last actual move: r2873.")
+SINCE = 6
+LASTFIND = ("r2880 — expected yield, sixth running, and the citation sweep is COMPLETE. `PO-10` "
+            "cited 0 of its 3 top-ranked receipts. `P15_damping_reabsorption`: **the +8.9% is not "
+            "reabsorbable within BBN+height priors, so the damping tail is a GENUINE MULTI-SIGMA "
+            "TENSION — a live falsification exposure** — and the deciding run is the full "
+            "seam-to-recombination transfer, which asks **whether the HEIGHTS move with theta_D**. "
+            "⇒ **That is PO-7s live object too. The two rows are one object from two sides.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
