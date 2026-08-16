@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2853: `PO-1b`'s remaining question is ALREADY POSED in the corpus, sharper. P13 proves **C FACTORISES** — the geometric R∘K carries C's kinematic content but is **BLIND to sign(Q)** — so the exhibited Z_2 is species KINEMATICALLY. And the boundary paper poses the rest as its own open question: **'whether that L² face is C itself or C's kinematic SHADOW is OPEN (matter sector / A3)'** — a named object this row never carried.***
+*⌗ **LAST ACTUAL MOVE — r2854: `PO-7`'s COMB half is a falsifiable prediction and it LOOKS FALSIFIED. The arm gives spacing/ℓ_A = 0.79±0.04 over the first four peaks across every phase; the sky gives ≈0.98 in the same range. **A ~19% shortfall with the phase — the only freedom — already scanned out.** ⚠ CAVEAT: the sky's side is taken from P16's aside and standard values, **not measured by this corpus**. That measurement is now owed.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

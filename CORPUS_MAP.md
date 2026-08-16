@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2854 — 2026-08-15 (main line). **`PO-7`'s COMB IS A FALSIFIABLE PREDICTION AND IT LOOKS FALSIFIED.**
+
+*r2849 split the row: the comb is forced, the first peak is free. **The comb half worked against data for the first time.***
+
+**⛭⛭ THE ARM:** *spacing$/\ell_A = 0.79\pm0.04$ over the first four peaks, **across every phase, never 1.0** (B3). **THE SKY:** peaks near $220/540/810$, spacing $\approx295$ against $\ell_A=301.6$ — **$\approx0.98$ in the same $\ell$-range**.*
+
+⇒ ***A ~19% shortfall in the transient region that survives every phase — and the phase is the only freedom, the one fitted parameter being spent pinning $\ell_A$. **The arm predicts a low-$\ell$ compression the sky does not show.***
+
+**⚠⚠ CAVEAT, LOAD-BEARING:** *the sky's $220/540/810$ come from **P16's own aside and standard values, not from a measurement this corpus performs**. The arm's side is receipted; the sky's is not. ***OWED: the sky's first-four-gap spacing measured the way B3 measures the arm's.****
+
+⌗ *This makes `PO-7` the programme's only live confrontation with data — a prediction with a number, a sign, and an apparent conflict.*
+
 ### Revision r2853 — 2026-08-15 (main line). **`PO-1b`'s REMAINING QUESTION IS ALREADY POSED IN THE CORPUS, SHARPER.**
 
 *The step was "does the exhibited $\mathbb{Z}_2$ carry the physical content species needs?"*

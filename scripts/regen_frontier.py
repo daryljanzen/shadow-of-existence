@@ -51,11 +51,11 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2853: `PO-1b`'s remaining question is ALREADY POSED in the corpus, sharper. P13 "
-            "proves **C FACTORISES** — the geometric R∘K carries C's kinematic content but is **BLIND "
-            "to sign(Q)** — so the exhibited Z_2 is species KINEMATICALLY. And the boundary paper "
-            "poses the rest as its own open question: **'whether that L² face is C itself or C's "
-            "kinematic SHADOW is OPEN (matter sector / A3)'** — a named object this row never carried.")
+LASTFIND = ("r2854: `PO-7`'s COMB half is a falsifiable prediction and it LOOKS FALSIFIED. The "
+            "arm gives spacing/ℓ_A = 0.79±0.04 over the first four peaks across every phase; the "
+            "sky gives ≈0.98 in the same range. **A ~19% shortfall with the phase — the only freedom "
+            "— already scanned out.** ⚠ CAVEAT: the sky's side is taken from P16's aside and "
+            "standard values, **not measured by this corpus**. That measurement is now owed.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
