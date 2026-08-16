@@ -40,13 +40,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 0
-LASTFIND = ("r2967: **r2881s 'one computation, three sides' is overtaken — one side was answered "
-            "WITHOUT it.** It held that group Ds whole remainder was the full seam-to-recombination "
-            "transfer, approached from three sides. **Side (b) — is the +8.9% damping tension "
-            "irreducible or redistributed — is now answered by r2965s direct LMAXL=2512 run**, "
-            "which scores the bins and widens F3. ⇒ The three sides are no longer one problem, "
-            "**which is what a frontier collapsing looks like when it does not collapse at once**.")
+SINCE = 1
+LASTFIND = ("r2968 was not a zero — a scan that came back mostly RECENCY, reported as such. Of the "
+            "entries flagged never-revisited on PO-6 and PO-7, most are simply recent. **The one "
+            "real signal: r2872, 96 revisions back — 'this row carries the NEGATIVE and not the "
+            "POSITIVE' — a class I re-discovered at r2917 without citing the entry that had already "
+            "named it.** Protocol §⑤·8 added, with the methods limit stated: **age is the signal, "
+            "not the flag.** Last actual move: r2967.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

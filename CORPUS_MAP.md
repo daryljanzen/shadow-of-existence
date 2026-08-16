@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2968 — 2026-08-15 (main line). **THE HISTORY SCAN RUN ON `PO-6` AND `PO-7`: MOSTLY RECENCY, AND ONE REAL SIGNAL.**
+
+*After r2967 found r2881 by this method. **Honest result: of the entries flagged "never revisited", most are simply RECENT** — r2948–r2961 have had no chance to be returned to, and calling that neglect would be the instrument fooling itself.*
+
+**⛭⛭ THE ONE REAL SIGNAL IS r2872**, *ninety-six revisions back and never referenced since: "**THIS ROW CARRIES THE NEGATIVE AND NOT THE POSITIVE, AND THE POSITIVE IS A VALIDATION OF THE ACOUSTICS**".*
+
+⇒ ***And I re-discovered exactly that class at r2917 — C56's cancellation claimed in advance and met to 0.075%, carried as its negative half — **without citing r2872, which had already named it on this row**. The class was diagnosed, recorded, and then rediscovered as if new.***
+
+**⌗ Also standing:** *r2908 — "the O(1) ambiguity is at the opposite end of the spectrum" — which is one of the two items in `PROPAGATION_QUEUE`, **queued rather than neglected**.*
+
+**⚠ AND THE METHOD'S LIMIT, STATED:** *it cannot distinguish "nothing returned to this" from "nothing has happened since". **On a row worked hard in the last twenty revisions it reports mostly noise**; it earned its keep on `PO-10` because r2881 was 86 revisions old. `TURN_PROTOCOL` §⑤·8 added: **age is the signal, not the flag**.*
+
 ### Revision r2967 — 2026-08-15 (main line). **r2881's "ONE COMPUTATION, THREE SIDES" IS OVERTAKEN: ONE SIDE WAS ANSWERED WITHOUT IT.**
 
 *Read the row's own history before its receipts — the order that would have caught the last two turns' stale worries.*

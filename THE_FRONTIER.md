@@ -4,11 +4,11 @@
 
 ## ⇒ **3 OPEN · 6 STEPS LEFT** *(was 5 last revision)* **· ~8 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
 
-*⌗ **LAST ACTUAL MOVE — r2967: **r2881s 'one computation, three sides' is overtaken — one side was answered WITHOUT it.** It held that group Ds whole remainder was the full seam-to-recombination transfer, approached from three sides. **Side (b) — is the +8.9% damping tension irreducible or redistributed — is now answered by r2965s direct LMAXL=2512 run**, which scores the bins and widens F3. ⇒ The three sides are no longer one problem, **which is what a frontier collapsing looks like when it does not collapse at once**.***
+*⌗ **LAST ACTUAL MOVE — r2968 was not a zero — a scan that came back mostly RECENCY, reported as such. Of the entries flagged never-revisited on PO-6 and PO-7, most are simply recent. **The one real signal: r2872, 96 revisions back — 'this row carries the NEGATIVE and not the POSITIVE' — a class I re-discovered at r2917 without citing the entry that had already named it.** Protocol §⑤·8 added, with the methods limit stated: **age is the signal, not the flag.** Last actual move: r2967.***
 
-> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
+*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
 **RUNWAY: 3 of 3 clear now**; 0 gated ().
 

@@ -145,6 +145,22 @@ negative case was never tested.*
 
 ---
 
+## ⑤·8 READ THE ROW'S OWN HISTORY BEFORE ITS RECEIPTS — AND KNOW WHAT THE SCAN CANNOT SEE
+
+***Added r2968.*** *r2966 and r2965 both raised worries the corpus had closed **and that this register
+had already recorded**. Reading the row's accumulated entries first caught in one pass what receipt-
+reading had missed across three turns (r2967: r2881's unification, 86 revisions old and never returned
+to).*
+
+⇒ **The order is: the row's own history, then its closures, then its receipts.** *Each is cheaper than
+the last and catches a different class.*
+
+⚠ *And the scan's limit, stated: **it cannot distinguish "nothing returned to this" from "nothing has
+happened since"**. On a row worked hard in the last twenty revisions it reports mostly recency. **Age is
+the signal, not the flag.***
+
+---
+
 ## ⑥ THE REPORT — the board LAST, computed after the work
 
 *Find first, board second. **Never a slogan in place of the table**, never the estimates without the
