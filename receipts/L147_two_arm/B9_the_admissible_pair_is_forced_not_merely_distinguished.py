@@ -43,6 +43,11 @@ quoted at source and its consequence for phi is the step being checked. **
 
 Written r2519.  Stated for reversal.
 """
+# ** r2954: THE CLOSING 'Still Daryl's' IS SUPERSEDED. **
+# *** `S1_all_three_po7_inversion_routes_are_closed`: all three ways the 0.408 could be an
+# artefact are closed by computation (L-805, L-807, L-806), and it states plainly that
+# `PO-7` is NOT awaiting a decision and NOTHING IS OWED BY DARYL.  This receipt's forcing
+# argument and its numbers stand; only the routing clause is retired. ***
 import os
 import re
 

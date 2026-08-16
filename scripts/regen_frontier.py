@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2953: **the seam phase is NOT FREE — it is FORCED to phi in {0, pi}** by P15s own "
-            "transmission argument, **in print before the scan was run**: every mode freezes before "
-            "the crossing, and a frozen mode gives sin(phi) = 0. ⇒ That corrects r2877 (**there is "
-            "no phase freedom to close the offset by 34%**) and r2932 (**there are exactly TWO "
-            "readings, not 2-3 to scan**). And at the nearer one the arm is **0.4083 away, doubled "
-            "on two instrument paths**.")
+LASTFIND = ("r2954 (Daryl caught it): **B9s 'still Daryl s' is the person-gate r2830 removed**, and "
+            "I built a classification around it instead of testing it. `S1_all_three_po7_inversion_"
+            "routes_are_closed` retracts it outright: all three ways the 0.408 could be an artefact "
+            "are **closed by computation (L-805, L-807, L-806)**, and **'PO-7 is NOT awaiting a "
+            "decision, and NOTHING IS OWED BY DARYL'**. What remains is a **live progenitor "
+            "derivation of CRPHI** — a technical object.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

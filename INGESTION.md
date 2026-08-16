@@ -475,3 +475,4 @@ r2950  LATENT      coupling ENLARGES the deficiency to a subspace; thermal regul
 r2951  LATENT      r2861 and r2899 reconciled: a generic problem on unusually good terms; the basis dimension discriminates.
 r2952  LATENT      PO-6 tested against the strike criterion: does NOT strike, one clause of three unworked.
 r2953  LATENT      the seam phase is FORCED to {0,pi} by P15s own transmission argument; no freedom. 0.408 at the nearer reading.
+r2954  LATENT      B9s person-gate is retracted: all three inversions closed, nothing owed by Daryl, a CRPHI derivation remains.

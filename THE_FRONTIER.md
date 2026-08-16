@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2953: **the seam phase is NOT FREE — it is FORCED to phi in {0, pi}** by P15s own transmission argument, **in print before the scan was run**: every mode freezes before the crossing, and a frozen mode gives sin(phi) = 0. ⇒ That corrects r2877 (**there is no phase freedom to close the offset by 34%**) and r2932 (**there are exactly TWO readings, not 2-3 to scan**). And at the nearer one the arm is **0.4083 away, doubled on two instrument paths**.***
+*⌗ **LAST ACTUAL MOVE — r2954 (Daryl caught it): **B9s 'still Daryl s' is the person-gate r2830 removed**, and I built a classification around it instead of testing it. `S1_all_three_po7_inversion_routes_are_closed` retracts it outright: all three ways the 0.408 could be an artefact are **closed by computation (L-805, L-807, L-806)**, and **'PO-7 is NOT awaiting a decision, and NOTHING IS OWED BY DARYL'**. What remains is a **live progenitor derivation of CRPHI** — a technical object.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -33,7 +33,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 16 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
+| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 17 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
 | **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 30 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
 
 ---

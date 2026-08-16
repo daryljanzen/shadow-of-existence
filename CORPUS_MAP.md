@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2954 — 2026-08-15 (main line). **"STILL DARYL'S" IS ALREADY RETRACTED, AND MY LAST TURN ACCEPTED THE RETIRED PERSON-GATE AS A LEGITIMATE ROUTING.**
+
+*Daryl caught it: B9's "still Daryl's" is **the person-gate r2830 removed** — the same rule `C1` and `D1` were marked for at r2900 — **and I built a step-classification around it instead of testing it**.*
+
+**⛭⛭ `S1_all_three_po7_inversion_routes_are_closed` retracts it in its own words:** *"PO-7's three inversion routes — a third admissible phase, estimator bias, and a seam derivation off {0, pi} — **have their CALCULATIONAL sides each closed by a computation** (`L-805`, `L-807`, `L-806`) … The 0.408 rests on **NO unclosed inversion** … so **`PO-7` is NOT awaiting a decision, and NOTHING IS OWED BY DARYL. cc54 supplied the calculation; it did not manufacture a verdict**".*
+
+⇒ ***So the row is not routed away and has not been since `L-805`/`L-806`/`L-807`: **all three ways the 0.408 could have been an artefact are computationally closed**.***
+
+**⌗ AND WHAT ACTUALLY REMAINS IS A DERIVATION, NAMED:** *"**what remains is a live PROGENITOR DERIVATION of `CRPHI`** (`PO-seam`'s dark half)" — **a technical object on another row, not a judgement on this one**.*
+
+**⚠ My r2953 note is withdrawn**, *and B9 is marked at source: its forcing argument and numbers stand; **only the routing clause is retired**.*
+
 ### Revision r2953 — 2026-08-15 (main line). **THE SEAM PHASE IS NOT FREE — IT IS FORCED TO TWO VALUES BY THE PAPER'S OWN ARGUMENT.**
 
 *Read `PO-7`'s closures first, as `PO-5` and `PO-6` were read.*
