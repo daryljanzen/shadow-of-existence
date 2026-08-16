@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2959: asked X1s question of CRPHI. **The SEAM supplies the phase as its own "
-            "characteristic datum** — 'one phase per mode, so it lands in the coherent column BY "
-            "CONSTRUCTION' — and **the field forces sin(phi)=0**. ⇒ **Two of the three things a "
-            "phase needs are already supplied; what is open is WHICH of {0, pi}**. So the "
-            "progenitor is asked for a BINARY, not a continuous datum — a much smaller question "
-            "than 'derive CRPHI', and one nobody has posed this way.")
+LASTFIND = ("r2960: **the seam phase is DERIVED, the band COLLAPSES, and 0.408 was the inadmissible "
+            "reading s number.** cc54s S1: the seam inherits an adiabatic OVERDENSITY and the "
+            "PRESSURELESS pre-onset gives it no oscillation to flip the sign, so CRPHI = 0, "
+            "bracket-checked against LCDMs own adiabatic IC. **CRPHI = pi (0.408, a rarefaction) is "
+            "ANTI-ADIABATIC AND INADMISSIBLE**; the disagreement is pinned at **0.615**. r2953/55/57 "
+            "all carried 0.408. One assumption flagged: Phi does not flip sign across the onset.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

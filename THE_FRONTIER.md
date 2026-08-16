@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2959: asked X1s question of CRPHI. **The SEAM supplies the phase as its own characteristic datum** — 'one phase per mode, so it lands in the coherent column BY CONSTRUCTION' — and **the field forces sin(phi)=0**. ⇒ **Two of the three things a phase needs are already supplied; what is open is WHICH of {0, pi}**. So the progenitor is asked for a BINARY, not a continuous datum — a much smaller question than 'derive CRPHI', and one nobody has posed this way.***
+*⌗ **LAST ACTUAL MOVE — r2960: **the seam phase is DERIVED, the band COLLAPSES, and 0.408 was the inadmissible reading s number.** cc54s S1: the seam inherits an adiabatic OVERDENSITY and the PRESSURELESS pre-onset gives it no oscillation to flip the sign, so CRPHI = 0, bracket-checked against LCDMs own adiabatic IC. **CRPHI = pi (0.408, a rarefaction) is ANTI-ADIABATIC AND INADMISSIBLE**; the disagreement is pinned at **0.615**. r2953/55/57 all carried 0.408. One assumption flagged: Phi does not flip sign across the onset.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -33,7 +33,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 19 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
+| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 20 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
 | **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 30 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
 
 ---

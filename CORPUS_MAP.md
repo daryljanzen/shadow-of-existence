@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2960 — 2026-08-15 (main line). **THE SEAM PHASE IS DERIVED, THE BAND COLLAPSES, AND 0.408 WAS THE INADMISSIBLE READING'S NUMBER.**
+
+**⛭⛭ `S1_the_seam_phase_is_derived_compression_not_free`, run — cc54 supplied it:** *"**the seam phase CRPHI is DERIVED**: the seam inherits an adiabatic OVERDENSITY in the potential well, and **the PRESSURELESS pre-onset gives it no oscillation to flip the sign**, so it is a compression correlated with the well = CRPHI = 0. **Bracket-checked against the LambdaCDM control's own adiabatic IC.**"*
+
+⇒ ***"**THE {0, pi} BAND COLLAPSES TO 0.878, the disagreement is pinned at 0.615 (the corpus's primary value), and CRPHI = pi (0.408, a rarefaction) is ANTI-ADIABATIC AND INADMISSIBLE**".***
+
+**⛔ SO B7's BAND IS CLOSED AND MY NUMBER WAS WRONG:** *r2953, r2955 and r2957 all carried **0.408 as the operative gap** — **it is the pi reading's, and pi is inadmissible**. The pinned disagreement is **0.615 at CRPHI = 0**, and B7's "datum-uncertainty band comparable to itself" **no longer applies, because the datum is derived**.*
+
+**⌗ AND THE ROW'S SECOND CLAUSE NOW HAS ITS INPUTS:** *the construction does not imprint (clause one, forced), the phase is derived to a single admissible value, and the resulting first-peak disagreement is **0.615 — a pinned number, not a band**.*
+
+**⚠ The derivation's own flag travels with it:** *"one assumption flagged: **Phi does not flip sign across the onset**".*
+
 ### Revision r2959 — 2026-08-15 (main line). **X1's QUESTION ASKED OF `CRPHI`: THREE SOURCES, THREE ROLES, AND THE PROGENITOR IS ASKED ONLY FOR A BINARY.**
 
 *X1's method is to ask what the crossing does to **that kind** of quantity. For a ratio it is multiplicative, so a common factor cancels. **For a phase it is additive, so the question is whether the crossing is phase-COHERENT** — and the corpus has computed that on the seam itself.*
