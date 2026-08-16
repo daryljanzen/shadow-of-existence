@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2863 (Daryl caught it): r2862 called `PO-2`'s level 3 ontology and therefore closed. **A framework is not gated on ontology, it is gated on evidence** — and the question has an empirical form the corpus supplies: CR's A_2 weights are **MASS-TIED, moving with 2M**, and SM colour weights are FIXED. ⇒ **If the roots ARE colour charge, colour inherits a mass dependence the SM does not have** — falsifiable, or a spectacular prediction. The row carried a do-not-assert over a testable question.***
+*⌗ **LAST ACTUAL MOVE — r2864: `PO-2` STRUCK — level 3 answered in its EMPIRICAL form, on Daryl's correction that a framework is gated on evidence, not ontology. CR's A_2 weights are MASS-TIED and SM colour weights are FIXED — but 2M varies neither between generations (L212, run) nor between hadrons (M is a constant of the SdS solution). **Nothing observable distinguishes the identification from the isomorphism** — a result, not a wall.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

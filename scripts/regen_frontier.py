@@ -21,8 +21,6 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 EST = {
  'PO-5':  ('the five multiplets; which carries the colour 3', 4, 3, 4, None,
            'r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet'),
- 'PO-2':  ('Nariai / three quarks — levels 1-2 done, 3 forbidden', 1, 1, 1, None,
-           'r2863: UNGATED and NOT closed -- level 3 has a TESTABLE form. CRs A_2 weights are MASS-TIED, SM colour weights are not. Does colour inherit a mass dependence? Falsifier or prediction'),
  'PO-1c': ('does uud have a geometric counterpart', 1, 1, 1, None,
            'CLEAR -- the horn is established; one count to run'),
  'PO-1b': ('the SIGN 2+1: geometry CLOSED, candidate open', 1, 1, 2, None,
@@ -49,12 +47,11 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2863 (Daryl caught it): r2862 called `PO-2`'s level 3 ontology and therefore closed. "
-            "**A framework is not gated on ontology, it is gated on evidence** — and the question "
-            "has an empirical form the corpus supplies: CR's A_2 weights are **MASS-TIED, moving with "
-            "2M**, and SM colour weights are FIXED. ⇒ **If the roots ARE colour charge, colour "
-            "inherits a mass dependence the SM does not have** — falsifiable, or a spectacular "
-            "prediction. The row carried a do-not-assert over a testable question.")
+LASTFIND = ("r2864: `PO-2` STRUCK — level 3 answered in its EMPIRICAL form, on Daryl's correction that "
+            "a framework is gated on evidence, not ontology. CR's A_2 weights are MASS-TIED and SM "
+            "colour weights are FIXED — but 2M varies neither between generations (L212, run) nor "
+            "between hadrons (M is a constant of the SdS solution). **Nothing observable distinguishes "
+            "the identification from the isomorphism** — a result, not a wall.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
@@ -76,7 +73,7 @@ KIND = {'PO-5': 'BUILD', 'PO-2': 'READ',
         'PO-1c': 'READ', 'PO-1b': 'READ',
         'PO-6': 'BUILD', 'PO-7': 'READ', 'PO-10': 'READ'}
 
-ORDER = ['PO-5', 'PO-2', 'PO-1c', 'PO-1b', 'PO-6', 'PO-7', 'PO-10']
+ORDER = ['PO-5', 'PO-1c', 'PO-1b', 'PO-6', 'PO-7', 'PO-10']
 GROUP = {'PO-5': 'A', 'PO-2': 'A',
          'PO-1c': 'B', 'PO-1b': 'B', 
          'PO-6': 'C', 'PO-7': 'D', 'PO-10': 'D'}
