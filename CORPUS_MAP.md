@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2917 — 2026-08-15 (main line). **I CARRIED C56's NEGATIVE HALF AND MISSED A CANCELLATION CLAIMED IN ADVANCE AND MET TO 0.075%.**
+
+*Went to find what the "26.6%" measures — **the median of $\lvert C_\ell^{\rm CR}/C_\ell^{\Lambda\rm CDM} - 1\rvert$** — and the surrounding paragraph is the finding.*
+
+**⛭⛭ `C56`:** *"**ITS SURVIVAL IS A CANCELLATION THE CORPUS CLAIMS IN ADVANCE. $D_M$: −6.20% · $r_s$: −6.27% · $\ell_A$: +0.075%. Both fall by nearly the same fraction**" — against P15's own words, "the acoustic-scale calibration, met from the other end and to that accuracy rather than exactly". ⇒ **"The construction predicts $\ell_A$ is preserved while its parts move, and +0.075% is what does not cancel"**.*
+
+⇒ ***$\ell_A$ moves by 7.5 parts in ten thousand while $D_M$ and $r_s$ each fall by over 6% — a two-part cancellation stated in advance and met, on both arms.***
+
+**⛭ AND IT IS NOT A FIT:** *the receipt's first check is that $\pi D_M/r_s$ **reproduces the stored $\ell_A$ exactly in BOTH arms** ($\Lambda$CDM 301.37, CR 301.60) ⇒ **"Not calibrated. Nothing is being tuned to make $\ell_A$ agree"**.*
+
+**⌗ AND THIS IS r2872's DEFECT RECURRING:** *that revision found the row carrying C57's level offset and not B6's 98.2% rate. **Here I carried C56's "the residual is two orders too small" and not C56's cancellation — the negative half of a receipt whose positive half is the stronger result.***
+
 ### Revision r2916 — 2026-08-15 (main line). **THE POWER SIDE'S CANDIDATE IS THE COHERENCE COMB — SAME PERIOD, CONFOUND RULED OUT, AND BOUNDED WHERE IT STOPS.**
 
 *Put two results this session already banked against each other: C56's **comb-periodic amplitude, a 26.6% swing**, and `P15_verify_coherence_comb`'s computed mechanism at **$\Delta\ell = 296$**.*

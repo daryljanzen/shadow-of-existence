@@ -4,11 +4,11 @@
 
 ## ⇒ **4 OPEN · 9 STEPS LEFT** *(was 7 last revision)* **· ~19 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 2**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2916 was not a zero — it put two banked results together and they fit. C56s comb-periodic 26.6% amplitude swing and the coherence combs computed Delta-ell = 296 are at **the same period** (293 vs 296, 0.9% apart), and the obvious confound — a phase offset aliasing into an amplitude residual — **C56 already measured and ruled out at 0.20% against 26.6%**. ⛔ Bounded: the coherence receipt is MECHANISM ONLY and does not compute modulation DEPTH. Last actual move: r2914.***
+*⌗ **LAST ACTUAL MOVE — r2917: **I carried C56s negative half and missed a cancellation claimed in advance and met to 0.075%.** D_M falls 6.20%, r_s falls 6.27%, **l_A moves +0.075%** — and the receipt first checks that pi D_M/r_s reproduces the stored l_A EXACTLY in both arms, so **nothing is being tuned**. The 26.6% is the median of |C_l^CR / C_l^LCDM − 1|. ⌗ Same defect as r2872, recurring: the negative half of a receipt whose positive half is the stronger result.***
 
-*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
+> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
 **RUNWAY: 4 of 4 clear now**; 0 gated ().
 

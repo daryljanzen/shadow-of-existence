@@ -42,13 +42,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 2
-LASTFIND = ("r2916 was not a zero — it put two banked results together and they fit. C56s "
-            "comb-periodic 26.6% amplitude swing and the coherence combs computed Delta-ell = 296 "
-            "are at **the same period** (293 vs 296, 0.9% apart), and the obvious confound — a "
-            "phase offset aliasing into an amplitude residual — **C56 already measured and ruled "
-            "out at 0.20% against 26.6%**. ⛔ Bounded: the coherence receipt is MECHANISM ONLY and "
-            "does not compute modulation DEPTH. Last actual move: r2914.")
+SINCE = 0
+LASTFIND = ("r2917: **I carried C56s negative half and missed a cancellation claimed in advance and "
+            "met to 0.075%.** D_M falls 6.20%, r_s falls 6.27%, **l_A moves +0.075%** — and the "
+            "receipt first checks that pi D_M/r_s reproduces the stored l_A EXACTLY in both arms, "
+            "so **nothing is being tuned**. The 26.6% is the median of |C_l^CR / C_l^LCDM − 1|. "
+            "⌗ Same defect as r2872, recurring: the negative half of a receipt whose positive half "
+            "is the stronger result.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
