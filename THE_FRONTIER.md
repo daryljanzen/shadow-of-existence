@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2872: `PO-7` carries the NEGATIVE and not the POSITIVE. It cites 4 receipts; **119 exist on this object**. B6: 'r_s falls -11.29%, acoustics requires +12.73%, the spacing does +12.50% — **98.2% of the acoustic rate**. The peaks are set by this construction own sound horizon, as a RESPONSE rather than a fit.' ⇒ **B6 measures the RATE (98.2% right); C57 measures the LEVEL (0.855). The row held the level only** — and B6 also splits the discrepancy 34% datum / 66% structural.***
+*⌗ **LAST ACTUAL MOVE — r2873: **the register holds 51 of 483 receipts on its own objects — 11%.** Per row: PO-5 19%, PO-10 26%, PO-6 9%, PO-7 3%, PO-1c 2%, **PO-1b 0 of 52**. And the worst-cited row surfaced a receipt no row cites: **CR assigns the nu_R a PLACE and NO INTERACTIONS** — a FOURTH grading with a sixteenth state, with N_eff consistent because it counts thermalized species and a gauge-singlet nu_R does not thermalize.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

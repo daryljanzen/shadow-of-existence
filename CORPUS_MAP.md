@@ -146,6 +146,24 @@ sources: [cowork, chat]
 
 
 
+### Revision r2873 — 2026-08-15 (main line). **THE REGISTER HOLDS 11% OF ITS OWN WORKED CORPUS.**
+
+*Measured, per open row, receipts CITED against receipts EXISTING on its object:*
+
+    PO-5    17 / 89   19%        PO-6     7 / 76    9%
+    PO-10   21 / 80   26%        PO-7     5 / 145   3%
+    PO-1c    1 / 41    2%        PO-1b    0 / 52    0%
+    ------------------------------------------------------
+    TOTAL   51 / 483  11%
+
+**⛭⛭ AND THE WORST-CITED ROW SURFACED A RECEIPT NO ROW CITES.** *`P11_CR_fixes_the_place_not_the_couplings`: **"CR assigns the $\nu_R$ a PLACE and NO INTERACTIONS"** — the gauge wall is stated six times, p0 declines "a geometric origin for the gauge content".*
+
+⇒ ***So there is a FOURTH GRADING with a sixteenth state in it — P14's "fifteen Weyl fermions … sixteen with a right-handed neutrino" — and CR fixes its place while declining its couplings. **That is `PO-5`'s whole situation stated as a general principle, by a receipt no row cites.****
+
+**⌗ AND IT CLOSES THE $N_{\rm eff}$ QUESTION:** *$N_{\rm eff}$ counts **thermalized** species; a gauge-singlet $\nu_R$ does not thermalize; **its existence has never by itself moved $N_{\rm eff}$**. The standard value is adopted and is CONSISTENT with the fourth grading rather than in tension with it.*
+
+**⚠ Under an existing trip-wire:** *F1 fires if the gauge group is ever promoted to forced.*
+
 ### Revision r2872 — 2026-08-15 (main line). **`PO-7` CARRIES THE NEGATIVE AND NOT THE POSITIVE.**
 
 *The row cites **four** receipts; **119 exist on this object**. One is named `B6_the_acoustics_reproduce_and_my_dichotomy_was_false`.*

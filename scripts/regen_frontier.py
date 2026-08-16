@@ -47,12 +47,11 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2872: `PO-7` carries the NEGATIVE and not the POSITIVE. It cites 4 receipts; **119 "
-            "exist on this object**. B6: 'r_s falls -11.29%, acoustics requires +12.73%, the "
-            "spacing does +12.50% — **98.2% of the acoustic rate**. The peaks are set by this "
-            "construction own sound horizon, as a RESPONSE rather than a fit.' ⇒ **B6 measures the "
-            "RATE (98.2% right); C57 measures the LEVEL (0.855). The row held the level only** — "
-            "and B6 also splits the discrepancy 34% datum / 66% structural.")
+LASTFIND = ("r2873: **the register holds 51 of 483 receipts on its own objects — 11%.** Per row: "
+            "PO-5 19%, PO-10 26%, PO-6 9%, PO-7 3%, PO-1c 2%, **PO-1b 0 of 52**. And the "
+            "worst-cited row surfaced a receipt no row cites: **CR assigns the nu_R a PLACE and NO "
+            "INTERACTIONS** — a FOURTH grading with a sixteenth state, with N_eff consistent "
+            "because it counts thermalized species and a gauge-singlet nu_R does not thermalize.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
