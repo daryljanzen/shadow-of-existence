@@ -19,8 +19,6 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
- 'PO-5':  ('the five multiplets — two content steps', 2, 3, 4, None,
-           'r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet'),
  'PO-6':  ('the tower: the -1/4 threshold and the shear', 2, 1, 3, None,
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
  'PO-7':  ('the comb: rate REPRODUCES, level offset open', 3, 2, 1, None,
@@ -43,13 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2946: **ALL THREE ways out are dead, and r2944 recorded a dead one as the live "
-            "target.** P03_transverse_space_is_round PART 4: (a) truncation **DEAD** — 'no "
-            "available alternative truncates the tower, because a quotient THINS rungs and CANNOT "
-            "REMOVE THEM'; (b) L-88 **answered NO**; (c) seats-carry-states **DEAD** — **roundness "
-            "is NOT a choice, it is forced by the M=0 member and independently by the SPIN "
-            "STRUCTURE**. L-15s own falsifier FIRES. I read L-90s 'choice' without checking it "
-            "still stood.")
+LASTFIND = ("r2947: **`PO-5` STRUCK — the OBJECT is delivered on both halves and the TARGET names a "
+            "count whose every route the corpus has closed.** The split: triality computed before "
+            "it was asked to mean anything, plus the partial-wave reading that **explains "
+            "anomaly-freedom 'only as a complete set'**. The baryon: **11 of 11 against the "
+            "observed hadron spectrum**, confinement as failure to close the lap. And the content "
+            "mismatch is **one pair wide, caused by the built geometry being ACHIRAL**.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
@@ -67,12 +64,12 @@ LASTFIND = ("r2946: **ALL THREE ways out are dead, and r2944 recorded a dead one
 # ⚠ *** A BUILD step has NO completed instance to calibrate against -- PO-11's continuum,
 # PO-6's UV definition, PO-1a's derivation.  Those are marked BUILD and their estimates
 # are declared unmeasured rather than dressed as measured. ***
-KIND = {'PO-5': 'BUILD', 'PO-2': 'READ',
+KIND = {'PO-2': 'READ',
         'PO-1b': 'READ',
         'PO-6': 'BUILD', 'PO-7': 'READ', 'PO-10': 'READ'}
 
-ORDER = ['PO-5', 'PO-6', 'PO-7', 'PO-10']
-GROUP = {'PO-5': 'A', 'PO-2': 'A',
+ORDER = ['PO-6', 'PO-7', 'PO-10']
+GROUP = {'PO-2': 'A',
          
          'PO-6': 'C', 'PO-7': 'D', 'PO-10': 'D'}
 GNAME = {'A': 'THE CHAIN — one unbuilt sector, two consequences. Strictly ordered.',

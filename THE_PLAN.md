@@ -4492,3 +4492,10 @@ work done and unrecorded, three deep items resting on one unbuilt programme, and
 passengers and no date — every one of which invites exactly that reordering.*** **None of it changes the
 sequence, which is structural: what verifies what, what dirties what, and what one piece of work needs from
 another.**
+
+
+## ⛭⛭ r2947 — `PO-5` IS STRUCK
+
+*Both halves of its object delivered: the quark/lepton split as **triality computed on `prop:wall`'s own solution before it was asked to mean anything**, with the partial-wave reading explaining P14's unaccounted "anomaly-free only as a complete set"; and the baryon as a closure rule **agreeing 11 of 11 with the observed hadron spectrum**, with **confinement as failure to close the lap**.*
+
+⇒ ***The TARGET — the five multiplets — names a count whose every route `L-15` offered is closed: truncation DEAD, `L-88` answered NO, seats-carry-states DEAD.*** *The content mismatch is bounded to **one pair on the right-handed side**, caused by **the built geometry being the ACHIRAL member of its own range**, with the chiral member reachable and unbuilt. Receipt: `kills/PO-5.md`.*

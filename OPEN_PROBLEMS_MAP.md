@@ -1297,3 +1297,10 @@ monotonically to $6.5\%$.*
 **⌗ AND NO CORPUS CLAIM RESTED ON IT.** *P15 had disclosed it as *"a smooth, monotone, threshold-free
 discrepancy **whose origin is not presently identified**"* and stated it **did not enter the claims**. ***That
 disclosure is now replaced by the cause.***
+
+
+## ⛭⛭ r2947 — `PO-5` IS STRUCK
+
+*Both halves of its object delivered: the quark/lepton split as **triality computed on `prop:wall`'s own solution before it was asked to mean anything**, with the partial-wave reading explaining P14's unaccounted "anomaly-free only as a complete set"; and the baryon as a closure rule **agreeing 11 of 11 with the observed hadron spectrum**, with **confinement as failure to close the lap**.*
+
+⇒ ***The TARGET — the five multiplets — names a count whose every route `L-15` offered is closed: truncation DEAD, `L-88` answered NO, seats-carry-states DEAD.*** *The content mismatch is bounded to **one pair on the right-handed side**, caused by **the built geometry being the ACHIRAL member of its own range**, with the chiral member reachable and unbuilt. Receipt: `kills/PO-5.md`.*

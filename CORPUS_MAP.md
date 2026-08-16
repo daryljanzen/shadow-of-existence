@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2947 — 2026-08-15 (main line). **`PO-5` STRUCK — THE OBJECT IS DELIVERED ON BOTH HALVES AND THE TARGET NAMES A COUNT WHOSE EVERY ROUTE IS CLOSED.**
+
+**⛭⛭ HALF ONE, THE SPLIT:** *triality $=-\lambda\bmod3$ **computed on `prop:wall`'s own solution before it was asked to mean anything**, and "quarks and leptons are NOT two fields — **one Dirac spinor in different PARTIAL WAVES**" — which **explains P14's unaccounted observation that the content is anomaly-free "only as a complete set"**, forced because they are one field's tower.*
+
+**⛭⛭ HALF TWO, THE BARYON:** *second quantisation returns **baryon 1, diquark 0, meson 1**, the configuration group **selected rather than chosen**; the closure rule **agrees 11 of 11 with the observed hadron spectrum**; **confinement becomes failure to close the lap**; the thirds are **forced with no SM input**.*
+
+**⛔ AND THE TARGET'S EVERY ROUTE IS CLOSED:** *`L-15`'s three — **(a) truncation DEAD**, **(b) `L-88` answered NO**, **(c) seats-carry-states DEAD** — with the seat count also scored ✗ did not survive and failing its own $2{:}1$ falsifier.*
+
+⇒ ***And the content mismatch is bounded to ONE PAIR on the right-handed side, caused by the built geometry being the ACHIRAL member of its own range — the missing multiplet and the missing second polarization are the same absence, and the chiral member is reachable and unbuilt.***
+
+**⌗ THREE ROWS REMAIN.**
+
 ### Revision r2946 — 2026-08-15 (main line). **ALL THREE WAYS OUT ARE DEAD, AND r2944 RECORDED A DEAD ONE AS THE LIVE TARGET.**
 
 *`P03_transverse_space_is_round`, PART 4 — **"THE VERDICT, AND IT GOES AGAINST THE READING I BET ON"**. `L-15` offered three ways to reconcile 15 seats with an infinite tower:*
