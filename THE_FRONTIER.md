@@ -4,11 +4,11 @@
 
 ## ⇒ **4 OPEN · 9 STEPS LEFT** *(was 7 last revision)* **· ~19 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
 
-*⌗ **LAST ACTUAL MOVE — r2944: on the favoured branch **there are no five multiplets to find** — there is a TOWER, and the target is **whether a truncation gives the SMs content**. Computed: the naive lambda<=3 cut gives 6 coloured against 6 colourless, **1:1 where the SM needs 4:1**. ⚠ And my weighted number **disagrees with the 4:3 r2857 recorded** — the unweighted 2:1 agrees, the weighted does not. Filed as OWED #576 rather than resolved.***
+*⌗ **LAST ACTUAL MOVE — r2945 was not a zero — a confirmation, and one the row already held. The 4:3 is **its own tally, BUILT AND NEVER PRINTED** (computed-but-unshown, not verified); my direct computation gives 1:1; and **both are departures from the 2:1 the falsifier names**, so the discrepancy is immaterial. ⌗ The row already said 'the COUNT is dead by its own falsifier' and I re-derived it. **Three independent verdicts now stand against the seat count.** Last actual move: r2944.***
 
-> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
+*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
 **RUNWAY: 4 of 4 clear now**; 0 gated ().
 

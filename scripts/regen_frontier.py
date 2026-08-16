@@ -42,13 +42,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 0
-LASTFIND = ("r2944: on the favoured branch **there are no five multiplets to find** — there is a "
-            "TOWER, and the target is **whether a truncation gives the SMs content**. Computed: the "
-            "naive lambda<=3 cut gives 6 coloured against 6 colourless, **1:1 where the SM needs "
-            "4:1**. ⚠ And my weighted number **disagrees with the 4:3 r2857 recorded** — the "
-            "unweighted 2:1 agrees, the weighted does not. Filed as OWED #576 rather than "
-            "resolved.")
+SINCE = 1
+LASTFIND = ("r2945 was not a zero — a confirmation, and one the row already held. The 4:3 is **its "
+            "own tally, BUILT AND NEVER PRINTED** (computed-but-unshown, not verified); my direct "
+            "computation gives 1:1; and **both are departures from the 2:1 the falsifier names**, "
+            "so the discrepancy is immaterial. ⌗ The row already said 'the COUNT is dead by its own "
+            "falsifier' and I re-derived it. **Three independent verdicts now stand against the "
+            "seat count.** Last actual move: r2944.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

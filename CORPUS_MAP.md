@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2945 — 2026-08-15 (main line). **#576 ANSWERED, AND `PO-5` ALREADY HELD THE VERDICT.**
+
+*Traced the $4{:}3$: `OPEN_PROBLEMS_MAP` records it as **"its own tally, BUILT AND NEVER PRINTED"** — **a computed-but-unshown figure, not a verified one**. My direct one-period computation gives $1{:}1$.*
+
+⇒ ***And the discrepancy does not matter for the verdict: `P14_quark_lepton_frontier` states the falsifier as **"a departure from $2{:}1$ kills it"**, and **$4{:}3$ and $1{:}1$ are BOTH departures**. Whichever weighting is right, the count fails its own stated test.***
+
+**⌗ AND THE ROW ALREADY SAYS SO, IN WORDS I RE-DERIVED RATHER THAN READ:** *"**the COUNT is dead by its own falsifier: the receipt prints $2{:}1$, its own unprinted tally gives $4{:}3$, and the SM needs $4{:}1$**".*
+
+⚠ ***So r2944's "discrepancy" was real but immaterial, and the seat count now has three independent verdicts against it: **`THE_BASE_RATE` scores it ✗ did not survive; its last route `L-88` is answered NO; and it fails its own $2{:}1$ falsifier on either weighting**.***
+
 ### Revision r2944 — 2026-08-15 (main line). **THE TARGET ON THE FAVOURED BRANCH IS A TRUNCATION QUESTION, AND THE SIMPLEST TRUNCATION FAILS.**
 
 *If quarks and leptons are one Dirac spinor's partial waves, **there are no five multiplets to find**: there is a tower, one bound mode per $\lambda=j+\tfrac12$ with multiplicity $2\lvert\lambda\rvert$, coloured or not by triality — **two coloured then one colourless, forever**.*
