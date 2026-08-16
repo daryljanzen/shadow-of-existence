@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2856 — 2026-08-15 (main line). **`PO-11` IS BUILT AND STRUCK — cc54's L-831, ALL EIGHT RECEIPTS RUN IN THIS TREE.**
+
+*The corpus called it "the programme's largest unbuilt undertaking".*
+
+**⛭⛭ ALL THREE NAMED OPENS ANSWERED:** *· the $\omega\ne0$ continuum — S8: "the transport chain is COMPLETE"; · the transmission amplitude **BANKED** — S6: unitary to $10^{-5}$, five figures, and it **CORRECTS S3's own WKB** (8× high deep sub-barrier, 30% low at the top); · **P14's real $\pm\lambda$ REPRODUCED** — S1: the $\omega$-coupling vanishes at the wall, so the leading index is real and $\omega$-independent, **ending five failed reductions across two lines**.*
+
+**⛭ AND QUANTISED:** *a two-horizon Dirac greybody with a **transparent wall**; mode set **complete**, no bound states; **two unequal thermal horizons** ($T_b/T_c=3.31$), net flux inner→cosmological; **no canonical vacuum** (Kay–Wald), so the leaf state is a physical input.*
+
+⇒ ***What remains is other rows': the OCTET is `PO-5`'s, and the complex-$\omega$ QNM spectrum is a stability question about a built sector. **`PO-5` is UNGATED, and `PO-2` behind it.****
+
 ### Revision r2855 — 2026-08-15 (main line). **MY r2854 CAVEAT WAS WRONG — BOTH ARMS ARE RECEIPTED, AND THE PREDICTION IS A SHAPE.**
 
 *r2854 said the sky's side was "not measured by this corpus" and filed `OWED #572`. **`C57` measures BOTH arms with the same peak-finder and predates it.***

@@ -19,10 +19,8 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
- 'PO-11': ('the propagating spinor sector', 3, 3, 4, None,
-           'cc54 building the omega!=0 continuum; the +/-lambda reproduction is the hard step'),
- 'PO-5': ('quark/lepton split; the five multiplets', 2, 2, 4, 'PO-11',
-           'four of five coupling routes closed; the fifth needs a propagating sector to compose from'),
+ 'PO-5':  ('quark/lepton split; the five multiplets — THE OCTET', 2, 2, 4, None,
+           'UNGATED r2856 -- PO-11 is built. The composite route now HAS a propagating sector to compose from. The octet is the live object'),
  'PO-2': ('Nariai / three quarks', 1, 1, 1, 'PO-5',
            'levels 1 and 2 done; level 3 is the identification and follows PO-5'),
  'PO-1c': ('does uud have a geometric counterpart', 1, 1, 1, None,
@@ -51,11 +49,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2855: my r2854 caveat was WRONG — `C57` measures BOTH arms with the same peak-finder "
-            "and predates it. ΛCDM 300/301.4 = **0.995**, CR 258/301.6 = **0.855**. And the "
-            "gap-by-gap ratio is **0.725, 0.853, 0.897, 0.973** — the first acoustic gap is 28% "
-            "short and the shortfall closes by the fourth. **The prediction is a SHAPE, not a number, "
-            "and both sides are receipted.**")
+LASTFIND = ("r2856: `PO-11` is BUILT — cc54's L-831 S1–S8, **all eight RUN in this tree**, not "
+            "read. All three named opens answered: the continuum (transport chain complete), the "
+            "transmission amplitude **BANKED** (unitary to 1e-5, correcting S3's own WKB 8×), and "
+            "**P14's real ±λ REPRODUCED** — the ω-coupling vanishes at the wall, ending five "
+            "failed reductions. **The programme's largest unbuilt undertaking is built, and `PO-5` "
+            "is UNGATED.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
@@ -73,12 +72,12 @@ LASTFIND = ("r2855: my r2854 caveat was WRONG — `C57` measures BOTH arms with 
 # ⚠ *** A BUILD step has NO completed instance to calibrate against -- PO-11's continuum,
 # PO-6's UV definition, PO-1a's derivation.  Those are marked BUILD and their estimates
 # are declared unmeasured rather than dressed as measured. ***
-KIND = {'PO-11': 'BUILD', 'PO-5': 'BUILD', 'PO-2': 'READ',
+KIND = {'PO-5': 'BUILD', 'PO-2': 'READ',
         'PO-1c': 'READ', 'PO-1b': 'READ',
         'PO-6': 'BUILD', 'PO-7': 'READ', 'PO-10': 'READ'}
 
-ORDER = ['PO-11', 'PO-5', 'PO-2', 'PO-1c', 'PO-1b', 'PO-6', 'PO-7', 'PO-10']
-GROUP = {'PO-11': 'A', 'PO-5': 'A', 'PO-2': 'A',
+ORDER = ['PO-5', 'PO-2', 'PO-1c', 'PO-1b', 'PO-6', 'PO-7', 'PO-10']
+GROUP = {'PO-5': 'A', 'PO-2': 'A',
          'PO-1c': 'B', 'PO-1b': 'B', 
          'PO-6': 'C', 'PO-7': 'D', 'PO-10': 'D'}
 GNAME = {'A': 'THE CHAIN — one unbuilt sector, two consequences. Strictly ordered.',

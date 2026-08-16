@@ -378,3 +378,4 @@ r2851  LATENT      PO-1cs method transfers: 6/S_3 = 2 orbits exchanged by mass-p
 r2852  LATENT      two S_3s: hinges are a within-state index, WALLS are the family symmetry. PO-1as candidate half closes negative.
 r2853  LATENT      PO-1bs remaining step is the boundary papers open A3 question: is the geometric face C or Cs shadow.
 r2855  LATENT      C57 already measures both arms: CR gaps 0.725/0.853/0.897/0.973 of LCDMs. The prediction is a SHAPE.
+r2856  LATENT      PO-11 BUILT and struck on cc54s L-831 (all 8 run here); PO-5 ungated.
