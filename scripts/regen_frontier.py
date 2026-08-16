@@ -19,7 +19,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
- 'PO-6':  ('the tower: the -1/4 threshold and the shear', 2, 1, 3, None,
+ 'PO-6':  ('the interacting tower — one clause of three open', 1, 2, 3, None,
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
  'PO-7':  ('the comb: rate REPRODUCES, level offset open', 3, 2, 1, None,
            'r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE'),
@@ -40,13 +40,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 1
-LASTFIND = ("r2951 was not a zero — it reconciled two of my own readings. r2861 (P10: the remainder "
-            "is **the standard problem of the interacting theory**) and r2899 (S50: **the counterterm "
-            "limit is the SHEAR**, CR-specific) do not conflict: **each of P10s two items has a "
-            "generic part and a CR-specific part**, and the statements name different parts. ⇒ "
-            "**A generic problem on unusually good terms** — and unlike `PO-2`, this row HAS a "
-            "discriminating quantity: the basis dimension, 1 on the faces and 3 at O(sigma^2).")
+SINCE = 2
+LASTFIND = ("r2952 was not a zero — a strike test that came back NEGATIVE, correctly. `PO-6`s three "
+            "clauses: **bounded below ✔ answered YES** (receipted), **the UV definition ✔ met "
+            "rather than owed** (generic, with CRs part bounded), **the SPECTRUM ⛔ genuinely "
+            "open** — CRs own question, unworked, no receipt claiming it. ⌗ The criterion is about "
+            "the OBJECT, not a majority of clauses: **PO-2 struck on all three levels, PO-1b on "
+            "both halves**. Last actual move: r2950.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

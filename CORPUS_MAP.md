@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2952 — 2026-08-15 (main line). **`PO-6` TESTED AGAINST THE STRIKE CRITERION AND IT DOES NOT STRIKE.**
+
+*The rule (r2832): a row is struck when its OBJECT is answered and the answer is receipted. Applied clause by clause.*
+
+**· BOUNDED BELOW — ✔ ANSWERED YES**, *receipted: the complete operator's coefficient is positive wherever the metric is non-degenerate, so the boundary coefficient is a sum of squares.*
+
+**· THE UV DEFINITION — ✔ MET RATHER THAN OWED**: *a generic problem no framework has solved, and **CR's specific part is bounded** — a one-dimensional counterterm basis by conformal flatness, becoming three-dimensional at second order in the shear where it needs a constant the substrate lacks.*
+
+**· THE SPECTRUM — ⛔ GENUINELY OPEN**: *the singular part of the interacting graviton Hamiltonian, and whether any sector stays below three-quarters. **CR's own question, unworked, and no receipt claims it.***
+
+**⌗ AND THE CRITERION IS ABOUT THE OBJECT, NOT A MAJORITY OF ITS CLAUSES:** *`PO-2` struck because **all three levels** were answered; `PO-1b` because **both halves** were. **Here one of three is unworked and it is not a formality — it is where the construction could still break**, since a sector below is limit-circle and the whole boundary account rests on where the spectrum sits.*
+
+⇒ ***DO NOT STRIKE. The row's state is exact: two clauses delivered, one open, and the open one is a stated computation on an operator the corpus defines. Steps 2 → 1.***
+
 ### Revision r2951 — 2026-08-15 (main line). **r2861 AND r2899 DO NOT CONFLICT — EACH OF P10's TWO ITEMS HAS A GENERIC PART AND A CR-SPECIFIC PART.**
 
 *r2861 has P10 calling the remainder **"the standard problem of the interacting theory rather than a residual freedom in the quantization"**; r2899 has S50 finding **the counterterm limit is the SHEAR**, a CR-specific fact.*

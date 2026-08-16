@@ -473,3 +473,4 @@ r2947  LATENT      PO-5 struck: both halves delivered (11/11 hadrons, triality c
 r2948  LATENT      PO-6s floor is answered YES; what remains is spectral -- does any sector stay below 3/4.
 r2950  LATENT      coupling ENLARGES the deficiency to a subspace; thermal regularity supplies the condition. Both S8 and P10 stand.
 r2951  LATENT      r2861 and r2899 reconciled: a generic problem on unusually good terms; the basis dimension discriminates.
+r2952  LATENT      PO-6 tested against the strike criterion: does NOT strike, one clause of three unworked.
