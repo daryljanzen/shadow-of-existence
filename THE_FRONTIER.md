@@ -4,11 +4,11 @@
 
 ## ⇒ **3 OPEN · 6 STEPS LEFT** *(was 5 last revision)* **· ~8 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 2**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2952 was not a zero — a strike test that came back NEGATIVE, correctly. `PO-6`s three clauses: **bounded below ✔ answered YES** (receipted), **the UV definition ✔ met rather than owed** (generic, with CRs part bounded), **the SPECTRUM ⛔ genuinely open** — CRs own question, unworked, no receipt claiming it. ⌗ The criterion is about the OBJECT, not a majority of clauses: **PO-2 struck on all three levels, PO-1b on both halves**. Last actual move: r2950.***
+*⌗ **LAST ACTUAL MOVE — r2953: **the seam phase is NOT FREE — it is FORCED to phi in {0, pi}** by P15s own transmission argument, **in print before the scan was run**: every mode freezes before the crossing, and a frozen mode gives sin(phi) = 0. ⇒ That corrects r2877 (**there is no phase freedom to close the offset by 34%**) and r2932 (**there are exactly TWO readings, not 2-3 to scan**). And at the nearer one the arm is **0.4083 away, doubled on two instrument paths**.***
 
-*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
+> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
 **RUNWAY: 3 of 3 clear now**; 0 gated ().
 
@@ -33,7 +33,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 15 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
+| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 16 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
 | **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 30 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
 
 ---

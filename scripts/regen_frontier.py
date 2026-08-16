@@ -40,13 +40,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 2
-LASTFIND = ("r2952 was not a zero — a strike test that came back NEGATIVE, correctly. `PO-6`s three "
-            "clauses: **bounded below ✔ answered YES** (receipted), **the UV definition ✔ met "
-            "rather than owed** (generic, with CRs part bounded), **the SPECTRUM ⛔ genuinely "
-            "open** — CRs own question, unworked, no receipt claiming it. ⌗ The criterion is about "
-            "the OBJECT, not a majority of clauses: **PO-2 struck on all three levels, PO-1b on "
-            "both halves**. Last actual move: r2950.")
+SINCE = 0
+LASTFIND = ("r2953: **the seam phase is NOT FREE — it is FORCED to phi in {0, pi}** by P15s own "
+            "transmission argument, **in print before the scan was run**: every mode freezes before "
+            "the crossing, and a frozen mode gives sin(phi) = 0. ⇒ That corrects r2877 (**there is "
+            "no phase freedom to close the offset by 34%**) and r2932 (**there are exactly TWO "
+            "readings, not 2-3 to scan**). And at the nearer one the arm is **0.4083 away, doubled "
+            "on two instrument paths**.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2953 — 2026-08-15 (main line). **THE SEAM PHASE IS NOT FREE — IT IS FORCED TO TWO VALUES BY THE PAPER'S OWN ARGUMENT.**
+
+*Read `PO-7`'s closures first, as `PO-5` and `PO-6` were read.*
+
+**⛭⛭ `B9_the_admissible_pair_is_forced_not_merely_distinguished`:** *P15 `sec:what-crosses` — **"every mode exits the horizon and FREEZES before the crossing, and a frozen mode has no oscillation"** — frozen means the density derivative vanishes, and continuity gives the velocity proportional to sin of the phase, **"so sin(phi) = 0 and phi in {0, pi}, FORCED by the paper's own transmission argument, IN PRINT BEFORE THE SCAN WAS RUN"**.*
+
+⇒ ***So there is no seam phase freedom — only two admissible readings.***
+
+**⛔ AND THAT CORRECTS TWO THINGS THE ROW CARRIED:** *r2877's "the phase offset **closes by 34% under the seam datum's own phase freedom**" — **there is no such freedom**; and r2932's "run **2–3 seam phases**" — **there are exactly two, and both are named**.*
+
+**⛭⛭ AND THE NUMBERS ARE DOUBLED ON TWO INSTRUMENT PATHS:** *"band 0.2069 against a gap of 0.6152; **the control (0.2628) is OUTSIDE it**, and the arm is still **0.4083 away at the NEARER admissible reading**", with **"54 and cc54 agree to four decimals at both endpoints"**.*
+
+⇒ ***So the row's question is B9's own sharpening: **is 0.408, at the only two readings the construction permits, a real disagreement with the sky?***
+
 ### Revision r2952 — 2026-08-15 (main line). **`PO-6` TESTED AGAINST THE STRIKE CRITERION AND IT DOES NOT STRIKE.**
 
 *The rule (r2832): a row is struck when its OBJECT is answered and the answer is receipted. Applied clause by clause.*
