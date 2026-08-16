@@ -55,6 +55,9 @@ three verdicts it already names. *** **
 
 Written r2792.  Stated for reversal.
 """
+# ** r2901: this receipt's FAILING check is a STALE FRONTIER CLAIM. **
+# *** says `PO-7` is a VERDICT question, not a construction one — PO-7s object was reshaped r2876-r2897 and its live step is now the full transfer, a construction. ***
+# ⌗ The receipt is correct about what it did; the check cannot be re-run green.
 import os
 import re
 

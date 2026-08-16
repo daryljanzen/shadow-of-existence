@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2901 — 2026-08-15 (main line). **THE FAILING-CHECK SWEEP: 45 RECEIPTS, 6 FAILURES, THREE KINDS — AND ONLY HALF ARE DEFECTS.**
+
+*Sized the class r2900 found two instances of: receipts whose `check()` calls assert something about the register. **45 assert register state; 6 fail.***
+
+**① ENCODES THE RETIRED PERSON-GATE — 1.** *`C1`: "PO-5 remains open and its closure is Daryl's". A defect, marked r2900; `D1` was the second and now passes.*
+
+**② POINT-IN-TIME VERIFICATION — 3, AND NOT DEFECTS.** *`R1_a_protected_row_was_corrupt`, `M1_the_merge_of_my_own_revision`, `R1_the_registry_was_checked` — each **verified a REPAIR at its own revision** ("the repair loses no distinct word, file-wide"). **Any later legitimate edit to a protected row breaks them, and this session made hundreds.***
+
+⇒ ***A CHECK THAT VERIFIES A REPAIR CANNOT SURVIVE LATER EDITS. Those receipts are correct about what they did and permanently red.***
+
+**③ STALE FRONTIER CLAIMS — 2.** *`B45` calls `PO-7` "a VERDICT question, not a construction one" (reshaped r2876–r2897); `A7_the_frontier_has_two_kinds` asserts a 2-vs-2 balance over a frontier that has gone from 14 rows to 4.*
+
+**⌗ All five marked at source with their kind named.**
+
 ### Revision r2900 — 2026-08-15 (main line). **A RESULT `PO-5` DOES NOT CARRY, AND TWO RECEIPTS FAILING ON A RULE r2830 RETIRED.**
 
 **⛭⛭ `C1_the_rows_premises_are_stale_and_the_split_is_specified`, run:** *"P14 states the colourless count: the $D_6$ representations trivial on the deck $\mathbb{Z}_3$ … **so a colourless sector on this structure has TOTAL DIMENSION FOUR**" — and **"FOUR is the colourless count WITH $\nu_R$: the structure produces the number the Standard Model has (3 without, 4 with)"**, with the chirality objection pre-answered since $SU(3)$ acts trivially on $\nu_L, e_L, e_R$.*

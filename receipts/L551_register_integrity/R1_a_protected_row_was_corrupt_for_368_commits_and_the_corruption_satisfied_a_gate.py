@@ -61,6 +61,9 @@ structure and not content.
 
 Written c54.217, `L-551`.  Stated for reversal.
 """
+# ** r2901: this receipt's FAILING check is a POINT-IN-TIME. **
+# *** verified a REPAIR at its own revision; every later legitimate edit to a protected row breaks the word-preservation check, and this session made hundreds. ***
+# ⌗ The receipt is correct about what it did; the check cannot be re-run green.
 import collections
 import os
 import re

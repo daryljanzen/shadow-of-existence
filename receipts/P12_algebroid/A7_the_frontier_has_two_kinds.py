@@ -50,6 +50,9 @@ on `PO-seam` and `PO-10` needs a refit nobody has run.
 
 Written r2704.  Stated for reversal.
 """
+# ** r2901: this receipt's FAILING check is a STALE FRONTIER CLAIM. **
+# *** asserts a 2-vs-2 definedness/prediction balance over a frontier that has gone from 14 rows to 4. ***
+# ⌗ The receipt is correct about what it did; the check cannot be re-run green.
 import os
 import re
 

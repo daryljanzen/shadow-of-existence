@@ -63,6 +63,9 @@ attributed to the duplication ** -- ⓺.
 
 Written c54.221, `L-555`.  Stated for reversal.
 """
+# ** r2901: this receipt's FAILING check is a POINT-IN-TIME. **
+# *** same shape as R1 — a merge-repair verification, not an invariant. ***
+# ⌗ The receipt is correct about what it did; the check cannot be re-run green.
 import collections
 import ast
 import os

@@ -423,3 +423,4 @@ r2897  LATENT      PO-7s two steps are genuinely two: phase is where a peak sits
 r2898  LATENT      PO-10 is two steps: fix the control arm, then a one-parameter scan vs BIC 26.9. Not gated on PO-7.
 r2899  LATENT      PO-6s UV limit is the SHEAR, CR-specific, correcting r2861. Two live sub-questions, not one.
 r2900  LATENT      the colourless sector has dimension FOUR (the SMs count with nu_R); two receipts fail on the retired person-gate.
+r2901  INSTRUMENT  45 register-asserting receipts swept: 6 fail in three kinds; 3 are point-in-time repairs, not defects.

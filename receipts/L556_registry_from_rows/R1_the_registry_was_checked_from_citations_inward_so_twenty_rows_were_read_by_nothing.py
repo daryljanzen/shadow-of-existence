@@ -79,6 +79,9 @@ that ADDED this receipt is the tree its absence was measured against — **a git
 guess**. c54.220's rule, r2776.)*
 
 """
+# ** r2901: this receipt's FAILING check is a POINT-IN-TIME. **
+# *** a seed-test snapshot: it asserts that clean and seeded trees differ, and the gate it tested has since been widened. ***
+# ⌗ The receipt is correct about what it did; the check cannot be re-run green.
 import ast
 import fnmatch
 import os
