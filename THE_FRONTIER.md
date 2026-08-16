@@ -4,11 +4,11 @@
 
 ## ⇒ **4 OPEN · 9 STEPS LEFT** *(was 7 last revision)* **· ~19 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
 
-*⌗ **LAST ACTUAL MOVE — r2933 SETTLED: the 3%-under-31% stability is measured on **MEAN PEAK SPACING over 3–4 peaks** — the transient region — and on **the ~20% spacing deficit B4 WITHDREW in the same revision I recorded the stability**. ⇒ r2877s 'the phase is the constructions and is the whole of the disagreement' is **a statement about the low-ell transient, not the asymptotic phase**, which remains untested. The row carried it as the latter.***
+*⌗ **LAST ACTUAL MOVE — r2934 was not a zero — a check that came back negative, and usefully. `PO-10` does NOT share `PO-7`s transient-read-as-asymptotic defect: its +8.2% is an INTEGRAL over thermal history (not ell-binned at all), its control is stated ON THE SAME BINS, and **73% of its residual lived ABOVE ell = 1500** — the opposite end from where every PO-7 measurement lives. ⌗ **One rows blind spot is the others whole domain**, and the seam is the ell~1760 model edge. Last actual move: r2933.***
 
-> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
+*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
 **RUNWAY: 4 of 4 clear now**; 0 gated ().
 

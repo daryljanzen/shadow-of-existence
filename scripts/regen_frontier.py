@@ -42,12 +42,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 0
-LASTFIND = ("r2933 SETTLED: the 3%-under-31% stability is measured on **MEAN PEAK SPACING over 3–4 "
-            "peaks** — the transient region — and on **the ~20% spacing deficit B4 WITHDREW in the "
-            "same revision I recorded the stability**. ⇒ r2877s 'the phase is the constructions and "
-            "is the whole of the disagreement' is **a statement about the low-ell transient, not "
-            "the asymptotic phase**, which remains untested. The row carried it as the latter.")
+SINCE = 1
+LASTFIND = ("r2934 was not a zero — a check that came back negative, and usefully. `PO-10` does NOT "
+            "share `PO-7`s transient-read-as-asymptotic defect: its +8.2% is an INTEGRAL over "
+            "thermal history (not ell-binned at all), its control is stated ON THE SAME BINS, and "
+            "**73% of its residual lived ABOVE ell = 1500** — the opposite end from where every "
+            "PO-7 measurement lives. ⌗ **One rows blind spot is the others whole domain**, and the "
+            "seam is the ell~1760 model edge. Last actual move: r2933.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

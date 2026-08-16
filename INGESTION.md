@@ -456,3 +456,4 @@ r2930  LATENT      r2916s period match is circular: 296 = pi D_C/r_s IS the acou
 r2931  LATENT      C56 propagated the +0.075% asymptotic shift, not the +142 transient (~860x larger) where the swing is measured.
 r2932  LATENT      no receipt propagates the transient into dC/C; the datum scan stops at ell~996 and cannot test the asymptotic phase.
 r2933  LATENT      the 3%-under-31% stability is transient-region, on the withdrawn ~20% spacing deficit; the asymptotic phase is untested.
+r2934  LATENT      PO-10 does not share PO-7s defect; its residual lived above ell 1500, the opposite end. NOT a zero.

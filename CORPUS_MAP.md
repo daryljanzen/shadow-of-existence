@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2934 — 2026-08-15 (main line). **`PO-10` DOES NOT HAVE `PO-7`'s DEFECT, AND THE CONTRAST LOCATES THE TWO ROWS AT OPPOSITE ENDS OF THE SPECTRUM.**
+
+*`PO-7`'s findings all turned out to be transient-region measurements read as asymptotic (r2933). **Checked every `PO-10` quantity for the same confusion.***
+
+⇒ *the **$+8.2\%$ damping ratio** is $\theta_D/\theta_*=r_D/r_s$ from Hu–Sugiyama **integrals over the thermal history** — **not an $\ell$-binned quantity at all**; the **control at $\chi^2$/dof 1.18** is stated against a true $\Lambda$CDM fit **"on the SAME BINS"**; the **BIC pair** sums **185 bins to $\ell\approx1760$**, dominated by the high-$\ell$ ones.*
+
+**⛭⛭ AND THE DIAGNOSIS IS THE SHARPEST CONTRAST:** *"**73% of the control's residual was in the 16% of bins ABOVE $\ell=1500$**" — **this row's trouble lived at the HIGH-$\ell$ end, the opposite end from where every `PO-7` measurement turned out to live**.*
+
+⇒ ***So the two group-D rows are not the same defect twice, and that is worth having checked: **`PO-7` measures a few peaks and reads them broadly; `PO-10` measures broadly and cannot see the last thirty bins**. One row's blind spot is the other's whole domain, and the seam between them is exactly the $\ell\approx1760$ model edge.***
+
+⚠ *SINCE = 1: a check that came back negative, and usefully.*
+
 ### Revision r2933 — 2026-08-15 (main line). **SETTLED: THE 3%-UNDER-31% STABILITY IS MEASURED ON THE TRANSIENT, AND ON A QUANTITY B4 SUBSEQUENTLY WITHDREW.**
 
 *Traced r2877's stability claim to `P15_the_spacing_deficit_survives_the_one_fitted_number` and read what it measures.*
