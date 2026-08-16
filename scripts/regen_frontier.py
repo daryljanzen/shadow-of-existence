@@ -21,8 +21,6 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 EST = {
  'PO-5':  ('the five multiplets — two content steps', 2, 3, 4, None,
            'r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet'),
- 'PO-1c': ('the winding Z_3 — is it electric charge?', 1, 2, 1, None,
-           'CLEAR -- the horn is established; one count to run'),
  'PO-6':  ('the interacting tower — CRs share of it', 1, 1, 3, None,
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
  'PO-7':  ('the comb: rate REPRODUCES, level offset open', 3, 2, 1, None,
@@ -45,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2893: **one of `PO-5`s three steps is not a step.** The octet asks for a GAUGE BOSON "
-            "(3⊗3̄=1⊕8, and the octet IS the gluon IS the force), and r2892 established that "
-            "'quantises and does not couple' is a THEOREM about branchings. **The rows object and "
-            "target mention no coupling, no force, no gauge field** — so the octet is not owed by "
-            "this object and never was. cc54 routed it here at r2856 while the wall still read as "
-            "an obstacle; FOR_54 tells them.")
+LASTFIND = ("r2894: **`PO-1c` STRUCK — its object was answered and the row was scoring a STRONGER "
+            "question against it.** The object asks 'does uud have ANY geometric counterpart' and "
+            "the answer is YES: the winding, with the within-baryon flavour 2+1 carried by **the "
+            "INTEGER part, being exactly one lap**. What remained — that the counterpart IS "
+            "electric charge — is L-65s reading, and its missing-units gap IS PO-5s coupling wall. "
+            "**Found by re-scoping every step against its own rows object.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
@@ -69,12 +67,12 @@ LASTFIND = ("r2893: **one of `PO-5`s three steps is not a step.** The octet asks
 # PO-6's UV definition, PO-1a's derivation.  Those are marked BUILD and their estimates
 # are declared unmeasured rather than dressed as measured. ***
 KIND = {'PO-5': 'BUILD', 'PO-2': 'READ',
-        'PO-1c': 'READ', 'PO-1b': 'READ',
+        'PO-1b': 'READ',
         'PO-6': 'BUILD', 'PO-7': 'READ', 'PO-10': 'READ'}
 
-ORDER = ['PO-5', 'PO-1c', 'PO-6', 'PO-7', 'PO-10']
+ORDER = ['PO-5', 'PO-6', 'PO-7', 'PO-10']
 GROUP = {'PO-5': 'A', 'PO-2': 'A',
-         'PO-1c': 'B', 
+         
          'PO-6': 'C', 'PO-7': 'D', 'PO-10': 'D'}
 GNAME = {'A': 'THE CHAIN — one unbuilt sector, two consequences. Strictly ordered.',
          'B': 'THE 2+1 CLUSTER — four readings of two splits. Independent of A.',

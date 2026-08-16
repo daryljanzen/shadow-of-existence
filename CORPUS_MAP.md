@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2894 — 2026-08-15 (main line). **`PO-1c` STRUCK — ITS OBJECT WAS ANSWERED AND THE ROW WAS SCORING A STRONGER QUESTION AGAINST IT.**
+
+*Re-scoped every open row's steps against its own object, as r2893 did for `PO-5`. **One hit.***
+
+**⛭⛭ THE OBJECT, VERBATIM:** *"Does $uud$ have **ANY** geometric counterpart?" — target, the proton's **within-baryon flavour $2{+}1$**. **Answer: YES, and it is the winding**, with the flavour $2{+}1$ carried by **the INTEGER part, "being exactly ONE LAP"**.*
+
+**⛭ AND IT IS NOT AD HOC:** *the thirds are forced by three constraints with **no SM input**; the closure rule **agrees 11 of 11 with the observed hadron spectrum**, with **confinement as failure to close the lap**; and $w$ has "exactly the structure electric charge has".*
+
+**⛔ WHAT REMAINED IS A STRONGER QUESTION THAN THE OBJECT ASKS:** *whether the counterpart **IS** charge is `L-65`'s — "a quantity with the right structure is not thereby the quantity" — and its missing-units gap **IS `PO-5`'s coupling wall** (r2892), a theorem about branchings.*
+
+⇒ ***Struck on five named receipts. **Four rows remain.***
+
 ### Revision r2893 — 2026-08-15 (main line). **ONE OF `PO-5`'s THREE STEPS IS NOT A STEP — THE OCTET IS NOT OWED BY THIS OBJECT.**
 
 *Re-scoped the three steps against the object and r2892's theorem. **The object and target mention no coupling, no force and no gauge field**: "the quark/lepton split, and what a baryon IS at particle level" / "the five multiplets, and which carries the colour $\mathbf3$".*
