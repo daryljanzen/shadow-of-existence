@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2908: **r2907 put the O(1) ambiguity under the damping signature; it is at the "
-            "OPPOSITE end of the spectrum.** ANCHOR 6: it is the LOW-ell discreteness cutoff "
-            "(ell ~ 4.8 to 57.7), ambiguous in **S^3 areal vs curvature radius** and **the "
-            "discrete-L to continuous-ell projection**. The damping signature is at ell > 1760. "
-            "⇒ Different argued claims. **And the floor s existence and scale are PARAMETER-FREE; "
-            "only its exact placement is O(1)-ambiguous.**")
+LASTFIND = ("r2909: read the damping derivation directly. **The controls own error on the same "
+            "quantity is the same size as the effect** — the receipts gate line reads 'radincl "
+            "pi r_D/r_s = 0.1434 vs CAMB 0.1544', a **7.1% control-vs-CAMB gap against a reported "
+            "8.2% effect**. The ratio design cancels a COMMON-MODE bias exactly, which is why the "
+            "quantity was chosen — **but nothing establishes the 7.1% is common-mode, and the arms "
+            "differ precisely in the integrand.** One computation, unasked.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

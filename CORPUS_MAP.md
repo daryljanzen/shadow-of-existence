@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2909 — 2026-08-15 (main line). **THE DAMPING FIGURE READ DIRECTLY: THE CONTROL'S OWN ERROR ON THE SAME QUANTITY IS THE SAME SIZE AS THE EFFECT.**
+
+**⛭⛭ `P15_damping_ratio_clean`, run.** *The +8.2% is built as a RATIO: $r_D$ radincl($\Lambda$CDM) = 6.572, radfree(CR) = 7.162; $\theta_D/\theta_*$ = 0.04564 against 0.04936 ⇒ **CR/$\Lambda$CDM = 1.0816**, "projection-independent" because the common $L_3$ distance cancels.*
+
+**⛔ AND THE RECEIPT'S OWN GATE LINE, NEVER CARRIED BY THE ROW:** *"[GATE] radincl $\pi r_D/r_s = 0.1434$ vs CAMB $\theta_d/\theta_*$ 0.1544" — **the control reproduces CAMB's $\theta_D/\theta_*$ to 7.1%** — and "$k_D = 0.1522$, expect ~0.14", another ~9%.*
+
+⇒ ***The pipeline's own accuracy on this exact quantity (7.1%) is the same order as the effect it reports (8.2%).***
+
+**⌗ AND THE RATIO DESIGN IS THE ANSWER TO THAT — IF THE BIAS IS COMMON-MODE.** *Both arms run the same code, so a systematic scaling both $r_D$ values equally **cancels exactly**. That is why the quantity was chosen. **But nothing here establishes the 7.1% IS common-mode, and the arms differ precisely in the integrand — radiation-free against radiation-included — which is where such a bias would live.***
+
+**⚠ ONE COMPUTATION, UNASKED:** *does the control-vs-CAMB gap scale with the radiation treatment? If not, it cancels and the 8.2% stands at its stated weight. If so, effect and artefact are entangled.*
+
 ### Revision r2908 — 2026-08-15 (main line). **r2907 PUT THE $O(1)$ AMBIGUITY UNDER THE DAMPING SIGNATURE. IT IS AT THE OPPOSITE END OF THE SPECTRUM.**
 
 **⛭⛭ `P15_verify_numeric`, ANCHOR 6, run:** *the ambiguity is in the **LOW-$\ell$ DISCRETENESS CUTOFF** $\ell_L=\sqrt{L(L+2)}\,D_C/r_0$, with **two named sources**: "**$S^3$ areal vs curvature radius**, and **the discrete-$L\to$ continuous-$\ell$ projection**".*
