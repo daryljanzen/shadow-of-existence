@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2948: **the floor is answered YES** — S8: the complete operators coefficient is "
-            "**POSITIVE wherever the metric is non-degenerate**, so Gamma-hat is a sum of squares "
-            "for the COMPLETE operator, not just at leading order. r2922s '1/2 margin against "
-            "unsuppressed corrections' was **not the open question**. ⇒ What remains: **does any "
-            "SECTOR stay below 3/4** — a spectral question. ⚠ And it sits in tension with r2921s "
-            "thermal-regularity coverage; both held.")
+LASTFIND = ("r2950: **r2921s 'coupling REMOVES freedom' is backwards.** P10: the free scale factors "
+            "single condition is replaced by one **whose DEFICIENCY IS A SUBSPACE RATHER THAN A "
+            "LINE** — the freedom GROWS. What removes it is **THERMAL REGULARITY, which IMPOSES the "
+            "regular branch by the same principle that fixed the free sector**. ⇒ S8 is right that "
+            "QUANTIZATION does not remove it, and P10 never claims it does. **Both halves stand; "
+            "the tension is settled.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

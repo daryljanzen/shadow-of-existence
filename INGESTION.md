@@ -471,3 +471,4 @@ r2945  LATENT      the 4:3 is an unprinted tally; both it and 1:1 are departures
 r2946  LATENT      all three L-15 routes dead: roundness is forced, a quotient thins but cannot remove, L-88 answered NO.
 r2947  LATENT      PO-5 struck: both halves delivered (11/11 hadrons, triality computed); the target has no route. Three rows remain.
 r2948  LATENT      PO-6s floor is answered YES; what remains is spectral -- does any sector stay below 3/4.
+r2950  LATENT      coupling ENLARGES the deficiency to a subspace; thermal regularity supplies the condition. Both S8 and P10 stand.
