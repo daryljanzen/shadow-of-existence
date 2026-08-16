@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2923: **`PO-6` step (b) is ANSWERED** — S13: at second order in the shear the "
-            "quadratic basis is genuinely **THREE-dimensional**, and **a quadratic counterterm "
-            "requires a coefficient the substrate does not supply** — checked against all three "
-            "escape routes (not topological, not EOM-removable, not Lambda/G renorm). ⛭ And the "
-            "one-constant claim is **SCOPED, not contradicted**: p0 states it of the FACES, where "
-            "C^2 = 0. A bounded negative that locates where the free-field treatment ends.")
+LASTFIND = ("r2924: **the count s named blocker is CLOSED and I never followed through.** "
+            "`P14_the_count_specified`: the count is blocked on **which geometric objects are the "
+            "STATES — is a leg a state or a propagation?** — which it names as **L-74s "
+            "antecedent**. r2886 established L-74 is CLOSED. ⛔ And I marked THIS receipt SINCE "
+            "CLOSED at r2887 and **never asked what its closure did to the count it blocks**. "
+            "⌗ Second blocker named and unread here: **L-107**.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

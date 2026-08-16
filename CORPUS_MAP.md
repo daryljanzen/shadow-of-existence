@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2924 — 2026-08-15 (main line). **THE COUNT'S NAMED BLOCKER IS CLOSED, AND I MARKED THE RECEIPT STALE AT r2887 WITHOUT FOLLOWING THROUGH.**
+
+**⛭⛭ `P14_the_count_specified`, run:** *"**the count is NOT blocked on a computation I can run. It is blocked on KNOWING WHICH GEOMETRIC OBJECTS ARE THE STATES**" — precisely, "**is a LEG the right object to call a state, or is a leg a PROPAGATION and the state something at its end?**" — named as "**`L-74`'s antecedent**".*
+
+⇒ ***And r2886 established `L-74` is CLOSED: `P14_route_or_point` — "`P14_mode_monodromy_at_the_wall` IS the answer to `L-74`", and "with `L-72` AND `L-74` BOTH CLOSED, the winding sector's premises are COMPUTED".***
+
+**⛔ AND I MARKED THIS VERY RECEIPT "SINCE CLOSED" AT r2887** — *it was one of the four sites in that sweep — **and never asked what its closure did to the count it blocks**. **Marking a stale reference is not the same as propagating its consequence**, and I did the first and not the second.*
+
+**⌗ AND A SECOND BLOCKER IS NAMED, STATUS UNREAD HERE:** *`P14_quark_lepton_frontier`: "**WHAT IT DOES NOT LAND: the count. That waits on `L-107`**", with the risk stated — "if the modes at one seat cannot be identified, the seat count is decorative and F-11's $12{+}3$ is a coincidence of small integers".*
+
 ### Revision r2923 — 2026-08-15 (main line). **`PO-6`'s STEP (b) IS ANSWERED — A BOUNDED NEGATIVE WITH ITS SCOPE LOCATED.**
 
 **⛭⛭ `S13_the_ledger_does_not_reach_second_order`, run:** *"**at second order in the shear the quadratic basis is genuinely THREE-DIMENSIONAL**" — against the one dimension S50 established on the faces — and "**at $O(\sigma^2)$ a quadratic counterterm requires A COEFFICIENT THE SUBSTRATE DOES NOT SUPPLY**".*
