@@ -457,3 +457,4 @@ r2931  LATENT      C56 propagated the +0.075% asymptotic shift, not the +142 tra
 r2932  LATENT      no receipt propagates the transient into dC/C; the datum scan stops at ell~996 and cannot test the asymptotic phase.
 r2933  LATENT      the 3%-under-31% stability is transient-region, on the withdrawn ~20% spacing deficit; the asymptotic phase is untested.
 r2934  LATENT      PO-10 does not share PO-7s defect; its residual lived above ell 1500, the opposite end. NOT a zero.
+r2935  LATENT      group D is one geometry: transient below 500, model edge at 1760, CRs prediction strongest beyond it.

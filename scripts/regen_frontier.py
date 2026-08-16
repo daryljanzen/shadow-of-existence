@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 1
-LASTFIND = ("r2934 was not a zero — a check that came back negative, and usefully. `PO-10` does NOT "
-            "share `PO-7`s transient-read-as-asymptotic defect: its +8.2% is an INTEGRAL over "
-            "thermal history (not ell-binned at all), its control is stated ON THE SAME BINS, and "
-            "**73% of its residual lived ABOVE ell = 1500** — the opposite end from where every "
-            "PO-7 measurement lives. ⌗ **One rows blind spot is the others whole domain**, and the "
-            "seam is the ell~1760 model edge. Last actual move: r2933.")
+LASTFIND = ("r2935 recorded rather than found: **group D is ONE GEOMETRY** — transient below ~500 "
+            "(all of PO-7s measurements), a middle with no findings, PO-10s diagnosed residual at "
+            "1500–1760, and **thirty bins beyond the model edge where CRs suppression is largest "
+            "(42.3% at the last dropped bin)**. ⇒ **The corpus measures everywhere except where its "
+            "own prediction is strongest.** Assembled from r2906/2931/2933/2934 and written on "
+            "both rows so it is not derived a fifth time. Last actual move: r2933.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

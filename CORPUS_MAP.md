@@ -146,6 +146,23 @@ sources: [cowork, chat]
 
 
 
+### Revision r2935 — 2026-08-15 (main line). **GROUP D AS ONE GEOMETRY, WRITTEN ONCE ON BOTH ROWS.**
+
+*Assembled from r2906, r2931, r2933, r2934 — each holds a piece and none holds the whole. **Written on both rows so it is not derived a fifth time.***
+
+    ell:  2 ........ 220 ... 500 ...... 1500 ... 1760 ......... 2508
+          |  TRANSIENT   |  MIDDLE  |  RESIDUAL |  BEYOND REACH  |
+
+**· BELOW ~500 — THE TRANSIENT.** *`PO-7`'s entire measured domain: the $0.62\pi$ phase, the 3%-under-31% stability, the withdrawn ~20% deficit — **all a mean over three or four peaks**, with the CR arm's first three at $+142,+80,+18$ off its own line against the control's $-3,+14,-16$.*
+
+**· 500–1500 — THE MIDDLE.** *Both rows have data and **neither has a finding**: `PO-7`'s scan stops at $\ell\sim996$, `PO-10`'s residual sat elsewhere.*
+
+**· 1500–1760 — THE HIGH-$\ell$ RESIDUAL.** *`PO-10`'s diagnosed trouble: **73% of the control's residual in 16% of the bins**, fixed by opening the wavenumber range.*
+
+**· ABOVE 1760 — BEYOND THE MODEL.** *Thirty bins the model does not reach, **and where CR's suppression is largest: 8.4% at $\ell{=}1000$, 23.8% at the cut, 42.3% at the last dropped bin**.*
+
+⇒ ***THE ONE SENTENCE: **the corpus measures everywhere except where its own prediction is strongest**, and the two rows fail at opposite ends — `PO-7` reads a few low-$\ell$ peaks broadly, `PO-10` reads broadly and stops at the model edge, and the prediction lives past that edge.***
+
 ### Revision r2934 — 2026-08-15 (main line). **`PO-10` DOES NOT HAVE `PO-7`'s DEFECT, AND THE CONTRAST LOCATES THE TWO ROWS AT OPPOSITE ENDS OF THE SPECTRUM.**
 
 *`PO-7`'s findings all turned out to be transient-region measurements read as asymptotic (r2933). **Checked every `PO-10` quantity for the same confusion.***
