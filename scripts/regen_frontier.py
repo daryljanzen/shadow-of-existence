@@ -19,7 +19,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
- 'PO-5':  ('the five multiplets — mismatch is one pair wide', 3, 4, 4, None,
+ 'PO-5':  ('the five multiplets — two content steps', 2, 3, 4, None,
            'r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet'),
  'PO-1c': ('the winding Z_3 — is it electric charge?', 1, 2, 1, None,
            'CLEAR -- the horn is established; one count to run'),
@@ -45,12 +45,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2892: **the units gap and the coupling wall are ONE THING, and it is a THEOREM.** "
-            "`M3_station_G`: the colour bundle is flat **because it IS a branching — a covering map "
-            "carries a CANONICAL flat connection — so 'the geometry quantises and does not couple' "
-            "is a THEOREM ABOUT BRANCHINGS rather than a limitation**. ⇒ No curvature, no field "
-            "strength, no coupling and no units of one. **The four closed routes are four routes to "
-            "something the construction cannot have by a theorem**, not four failures.")
+LASTFIND = ("r2893: **one of `PO-5`s three steps is not a step.** The octet asks for a GAUGE BOSON "
+            "(3⊗3̄=1⊕8, and the octet IS the gluon IS the force), and r2892 established that "
+            "'quantises and does not couple' is a THEOREM about branchings. **The rows object and "
+            "target mention no coupling, no force, no gauge field** — so the octet is not owed by "
+            "this object and never was. cc54 routed it here at r2856 while the wall still read as "
+            "an obstacle; FOR_54 tells them.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2893 — 2026-08-15 (main line). **ONE OF `PO-5`'s THREE STEPS IS NOT A STEP — THE OCTET IS NOT OWED BY THIS OBJECT.**
+
+*Re-scoped the three steps against the object and r2892's theorem. **The object and target mention no coupling, no force and no gauge field**: "the quark/lepton split, and what a baryon IS at particle level" / "the five multiplets, and which carries the colour $\mathbf3$".*
+
+**⛔ THE OCTET STEP ASKS FOR A GAUGE BOSON.** *$3\otimes\bar3=1\oplus8$, and **the octet IS the gluon, which IS the force** — and "quantises and does not couple" is a theorem about branchings, not a wall to get past.*
+
+⇒ ***The octet is not owed by this object and never was.***
+
+**⌗ TWO STEPS REMAIN, BOTH ON CONTENT:** *the five multiplets (4 classes against 5, mismatch one pair wide on the right-handed side, which is the target verbatim) and reconciling the eleven delivered contents with that count.*
+
+**⚠ AND cc54 ROUTED THE OCTET HERE AT r2856**, *a routing made while the wall still read as an obstacle. **`FOR_54` tells them**, with the honest statement: not "the octet is unbuilt" but "the octet is a force-side object and this row's target is content-side" — and asking which row it should sit on if they disagree.*
+
 ### Revision r2892 — 2026-08-15 (main line). **THE UNITS GAP AND THE COUPLING WALL ARE ONE THING, AND IT IS A THEOREM.**
 
 **⛭⛭ `M3_station_G_supplies_the_sequence`, uncited by either row:** *"the colour bundle is FLAT **because it IS a branching** — a covering map carries a **CANONICAL flat connection** — so **'the geometry quantises and does not couple' is a THEOREM ABOUT BRANCHINGS rather than a limitation of the construction**". `F2_the_flatness_is_what_a_branching_IS` carries the same finding in its title.*

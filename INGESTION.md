@@ -415,3 +415,4 @@ r2889  INSTRUMENT  the stale-unshown gate cannot reach prose-referenced antecede
 r2890  LATENT      the winding gives charge VALUES not just scale; scale-vs-ratio was never the question. L-65 is.
 r2891  LATENT      the winding has the right structure but NO UNITS; charge does. Two senses of scale collapsed at r2888.
 r2892  LATENT      the coupling wall and the missing units are ONE theorem about branchings, not two gaps.
+r2893  LATENT      the octet is force-side and PO-5s target is content-side; not owed by this object. cc54 told.
