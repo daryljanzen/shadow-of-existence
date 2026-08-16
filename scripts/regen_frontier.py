@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2924: **the count s named blocker is CLOSED and I never followed through.** "
-            "`P14_the_count_specified`: the count is blocked on **which geometric objects are the "
-            "STATES — is a leg a state or a propagation?** — which it names as **L-74s "
-            "antecedent**. r2886 established L-74 is CLOSED. ⛔ And I marked THIS receipt SINCE "
-            "CLOSED at r2887 and **never asked what its closure did to the count it blocks**. "
-            "⌗ Second blocker named and unread here: **L-107**.")
+LASTFIND = ("r2925: **L-107 has been worked and it separates a FORCED count from a CHOICE-dependent "
+            "one.** FORK_c54: 'the 3 walls and 12 legs are FORCED while the degeneracy 2|lambda| is "
+            "the ROUND spheres, and **roundness is a CHOICE (L-90) — so a non-round transverse "
+            "space may TRUNCATE THE TOWER (L-107)**'. ⇒ The twelve legs are forced; L-107 governs "
+            "the tower ABOVE them. **This rows 4-vs-5 mismatch lives in the forced sector, so "
+            "L-107s risk does not reach it.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

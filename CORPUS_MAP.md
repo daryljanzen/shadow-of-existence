@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2925 — 2026-08-15 (main line). **`L-107` HAS BEEN WORKED, AND IT SEPARATES A FORCED COUNT FROM A CHOICE-DEPENDENT ONE.**
+
+**⛭⛭ `FORK_c54`:** *"**the 3 walls and 12 legs are FORCED** while the degeneracy $2\lvert\lambda\rvert$ is the ROUND sphere's, and **roundness is a CHOICE (`L-90`) — so a non-round transverse space may TRUNCATE THE TOWER (`L-107`)**".*
+
+⇒ ***So the twelve legs are forced and what `L-107` governs is the tower ABOVE them. The seat-count risk `P14_quark_lepton_frontier` names — "if the modes at one seat cannot be identified, the seat count is decorative" — **applies to the tower, not to the twelve**.***
+
+**⛭ AND `L-107` IS NOT UNWORKED:** *`P14_tower_is_not_kaluza_klein` records "**$\lambda$ IS THE EIGENVALUE OF THE DIRAC OPERATOR ON THE TRANSVERSE $S^2$ (`L-107`)**" and kills two of three routes with it. `P17_the_cut_is_planar_only_at_M_zero`: "**the twelve legs are the transversally-invariant sector and `L-107`'s tower is the rest**".*
+
+⇒ ***The structure: **twelve forced, transversally-invariant legs — where this row's $3\times2\times2$ and its 4-vs-5 mismatch live — and above them a tower whose existence depends on a CHOICE**.***
+
+**⚠ So both named blockers are cleared for this row's object:** *`L-74` closed (r2886/r2924), and `L-107`'s risk is about a different object than the one this row asks about.*
+
 ### Revision r2924 — 2026-08-15 (main line). **THE COUNT'S NAMED BLOCKER IS CLOSED, AND I MARKED THE RECEIPT STALE AT r2887 WITHOUT FOLLOWING THROUGH.**
 
 **⛭⛭ `P14_the_count_specified`, run:** *"**the count is NOT blocked on a computation I can run. It is blocked on KNOWING WHICH GEOMETRIC OBJECTS ARE THE STATES**" — precisely, "**is a LEG the right object to call a state, or is a leg a PROPAGATION and the state something at its end?**" — named as "**`L-74`'s antecedent**".*

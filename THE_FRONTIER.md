@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2924: **the count s named blocker is CLOSED and I never followed through.** `P14_the_count_specified`: the count is blocked on **which geometric objects are the STATES — is a leg a state or a propagation?** — which it names as **L-74s antecedent**. r2886 established L-74 is CLOSED. ⛔ And I marked THIS receipt SINCE CLOSED at r2887 and **never asked what its closure did to the count it blocks**. ⌗ Second blocker named and unread here: **L-107**.***
+*⌗ **LAST ACTUAL MOVE — r2925: **L-107 has been worked and it separates a FORCED count from a CHOICE-dependent one.** FORK_c54: 'the 3 walls and 12 legs are FORCED while the degeneracy 2|lambda| is the ROUND spheres, and **roundness is a CHOICE (L-90) — so a non-round transverse space may TRUNCATE THE TOWER (L-107)**'. ⇒ The twelve legs are forced; L-107 governs the tower ABOVE them. **This rows 4-vs-5 mismatch lives in the forced sector, so L-107s risk does not reach it.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -17,7 +17,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-5** | the five multiplets — two content steps | **2** ↓1 | 3 | 4 ⚠ | BUILD | 30 | — | r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet |
+| **PO-5** | the five multiplets — two content steps | **2** ↓1 | 3 | 4 ⚠ | BUILD | 32 | — | r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet |
 
 ### B · THE 2+1 CLUSTER — four readings of two splits. Independent of A.
 
