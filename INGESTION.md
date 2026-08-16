@@ -487,3 +487,4 @@ r2962  LATENT      PO-10s odd/even half is answered; C56s 26.6% swing is an orph
 r2963  LATENT      the odd/even half is answered comparatively (C30) not absolutely (C12); the run owed is to produce the pattern.
 r2964  LATENT      the targets refit is FULL-SPECTRUM (215 bins); what ran is 185. The blocker is the ell>1760 blindness.
 r2965  LATENT      the LMAXL=2512 extension is RUN: 201 bins to ell 2508, CR not rescued, F3 widens. Control still 3.81 vs ~1.
+r2966  LATENT      the control converges to 1.18 and its floor cancels in F3; my r2965 caveat used a mid-convergence number.

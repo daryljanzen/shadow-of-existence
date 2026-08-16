@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2966 — 2026-08-15 (main line). **THE REMAINING CONTROL GAP IS DIAGNOSED, AND MY r2965 CAVEAT USED THE WRONG NUMBER — ONE I HAD RECORDED CORRECTLY AT r2905.**
+
+**⛭⛭ `S1_the_third_point_shows_the_control_converges`:** *"**the LENSED control DOES converge toward ~1 (to 1.18)**" — 3.19 at L3000 to 1.18 at L3200, "**flat by L3000**" — so "**raising LMAXL past L2512 is the WRONG LEVER, which the plateau proves**".*
+
+⇒ ***And the residual floor is identified and cancels: "**the ~1.18 shared INSTRUMENT+LENSING floor cancels in F3**", and F3 = chi^2(CR) − chi^2(LambdaCDM) **is the quantity the comparison uses**.***
+
+**⛔ SO r2965's "the instrument is near four times off its own calibration" IS WRONG:** *3.81 is the **L2512 overlap** value; **the converged control is 1.18**, and the gap from 1 is a **shared floor that cancels in the differential**. ***I recorded "the control at 1.18" myself at r2905 and then re-derived a stale worry from a mid-convergence number eleven revisions later.***
+
+**⌗ WHAT THAT CHANGES AND WHAT IT DOES NOT:** *the chi^2 numbers **can** bear weight in DIFFERENTIAL form — the reference arm does reproduce LambdaCDM once converged. **What it does not change is the r2904 rule**: this register has turned up a zero on most turns of this session, and **no number from it is a verdict on the framework while that holds**. **The caveat stands; my reason for it was wrong.***
+
 ### Revision r2965 — 2026-08-15 (main line). **THE ell>1760 BLINDNESS IS CLOSED: THE EXTENSION HAS BEEN RUN, AND IT CLOSED AGAINST CR.**
 
 **⛭⛭ `S2_the_lmax2512_extension_recovers_c51s_dropped_bins`, run:** *"**THE EXTENSION COVERS THE DROPPED REGION: LMAXL = 2512 scores 201 bins to ell = 2508**" — and "an LMAXL = 2512 run is **not** the LMAXL = 2000 spectrum plus 16 bins", the k-grid being rebuilt.*

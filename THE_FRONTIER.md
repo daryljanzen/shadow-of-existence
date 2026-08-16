@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2965: **the ell>1760 blindness is CLOSED — the extension has been RUN.** S2: LMAXL=2512 scores 201 bins to ell=2508. The control gains from the k-range (7.14 → 3.81/dof on the same bins); **the CR arm barely moves (280 → 281)**; and including the dropped bins **widens F3 from 50497 to 51547 — MORE clearly disfavoured, not less**. ⇒ r2906 and r2964 are stale. ⚠ And the r2904 caveat holds: **the control is still 3.81 against a standard of ~1**, so no number here is a verdict on the framework.***
+*⌗ **LAST ACTUAL MOVE — r2966: **the control gap is diagnosed and my r2965 caveat used the WRONG NUMBER.** The lensed control **converges to 1.18 and is flat by L3000**, so raising LMAXL past L2512 is the wrong lever; and **the ~1.18 shared instrument+lensing floor CANCELS in F3**, which is the quantity the comparison uses. ⇒ 3.81 was a mid-convergence value. **I recorded the control at 1.18 myself at r2905 and re-derived a stale worry eleven revisions later.** The r2904 rule still stands, on its own grounds.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
 | **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 20 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
-| **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 32 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
+| **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 33 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
 
 ---
 
