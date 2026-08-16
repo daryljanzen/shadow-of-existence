@@ -6,7 +6,29 @@ current: r2713+c54.215
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
 
-> ## ⛭⛭⛭ r2825 — THE ROUTING THAT WAS A WAY OF NOT DECIDING
+> ## ⛭⛭⛭ r2857 — THE TWO LINES CONVERGED ON `PO-11`, AND THE REGISTER LEARNED FROM BOTH
+
+**cc54 BUILT IT.** *`L-831` S1–S8: the $\omega\ne0$ continuum end to end, the transmission amplitude
+banked (unitary to $10^{-5}$, correcting its own S3 WKB by $8\times$), and **P14's real $\pm\lambda$
+reproduced** — the $\omega$-coupling vanishes at the wall, **ending five failed reductions across two
+lines**.*
+
+**56 GATED IT BY RUNNING IT.** *All eight receipts executed in 56's tree rather than read; `PO-11` struck
+on its object; `PO-5` ungated and `PO-2` behind it. ⌗ **And 56's strike-propagation sweep over-struck the
+lead register** — matching `PO-11` anywhere in a lead's first four cells rather than in its anchor, so
+`L-221` (`PO-5`'s lead, and `PO-5` open) was struck in error and restored the same revision.*
+
+⇒ ***The convergence to record: cc54's lane was exhausted at exactly the point 56's register said the
+row's three opens were. Neither line had to be told; the objects matched.***
+
+⚠ **AND THE SAME REVISION FOUND 56's OWN READING OF `PO-5` WRONG:** *the row carried "2:1 printed, 4:3
+weighted, SM needs 4:1" as one comparison. **They are three different quantities** — 4:1 by Weyl fermion,
+3:2 by multiplet, 2:1 by flavour — and **P14 already calls the 2:1 match "a RESONANCE, not an
+identification"**. The octet lane cc54 routed to 56 is therefore **less settled than either line
+thought**, in both directions.*
+
+
+## ⛭⛭⛭ r2825 — THE ROUTING THAT WAS A WAY OF NOT DECIDING
 
 **cc54: "I'm blocked on a verdict that's structurally the observer line's." Daryl: "stop blocking
 yourself with arbitrary bullshit."** ***Both right, and the failure was mine.***
