@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2963: **r2962s 'the odd/even half is answered' is half right — answered COMPARATIVELY, not ABSOLUTELY.** C12: settled is where the asymmetry is imprinted and **the parameter that sets it, R_b = 0.60 at last scattering**; NOT settled is **the height PATTERN itself** — 'knowing R_b and where it acts is not the same as producing the odd/even heights and putting them against the sky'. ⇒ C30 answers does CR DIFFER from LCDM; C12 asks has CRs own pattern been PRODUCED. **I collapsed comparative and absolute one revision after separating them on PO-7.*****
+*⌗ **LAST ACTUAL MOVE — r2964: **the refit that exists is not the refit the target names.** The target says **FULL-SPECTRUM** — the banked 215 bins; everything run (sec:refit-bound, S1s BIC pair) is on **185**, where the model ends. ⇒ **Two things called the comparison, one of them the targets** — third instance this session of a scoped statement read as unscoped. And the missing 30 bins are **exactly where CRs suppression is largest (42.3% at the last dropped bin)**: the targets comparison would SEE the signature; the one run CANNOT.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

@@ -146,6 +146,19 @@ sources: [cowork, chat]
 
 
 
+### Revision r2964 — 2026-08-15 (main line). **THE REFIT THAT EXISTS IS NOT THE REFIT THE TARGET NAMES, AND THE DIFFERENCE IS EXACTLY WHERE THE SIGNATURE LIVES.**
+
+*`C12` flags it: "**sec:refit-bound work bears on a DIFFERENT comparison — 185 bins, not the banked 215**". Put against the target:*
+
+**· THE TARGET NAMES** *"the **FULL-SPECTRUM** likelihood-level comparison against flat LambdaCDM" — **the banked 215 bins with its covariance**.*
+**· WHAT HAS BEEN RUN** — *the sec:refit-bound work, and S1's BIC pair — **is on 185 bins**, where the model ends near ell 1760.*
+
+**⛔ SO TWO THINGS ARE CALLED "THE COMPARISON" AND ONLY ONE IS THE TARGET'S.** *Same shape as the count-vs-quantity defect (r2857) and the transient-vs-asymptotic one (r2933): **a scoped statement read as an unscoped one — the third instance this session**, and this time in my reading of the row's own target.*
+
+**⌗ AND IT IS NOT A TECHNICALITY:** *the missing thirty bins are **exactly where CR's suppression is largest** — 8.4% at ell 1000, 23.8% at the cut, **42.3% at the last dropped bin**. ***The target's comparison is the one that would SEE the signature; the one that has been run is the one that CANNOT.***
+
+⇒ ***So this row's first half is neither done nor unstarted: **a refit has been run on the subset the model reaches, and the target's full-spectrum refit waits on the model reaching further** — the ell>1760 blindness, already on this row, now shown to be the target's own blocker.***
+
 ### Revision r2963 — 2026-08-15 (main line). **r2962's "THE ODD/EVEN HALF IS ANSWERED" IS HALF RIGHT: ANSWERED COMPARATIVELY, NOT ABSOLUTELY.**
 
 **⛭⛭ `C12_the_odd_even_half_has_its_parameter`, run — SETTLED:** *"where the asymmetry is imprinted (post-seam, expansion leg), why it does not correct the driving envelope, and **the parameter that sets it — R_b = 0.60 at last scattering**" — with the tell in the row's own wording: "**'imprinted by the baryon loading on the expansion leg' is an ANSWER sitting in the column that names what the item is FOR**".*
