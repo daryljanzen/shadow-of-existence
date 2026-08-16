@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2919 — 2026-08-15 (main line). **TWO DELIVERED POSITIVES `PO-6` DOES NOT CARRY, AND A TENSION WITH r2895 HELD OPEN.**
+
+*Read `S4_the_open_half_is_the_floor` from the top rather than for its verdict — the second look that yielded `PO-7`'s 0.075% cancellation.*
+
+**⛭⛭ ① THE LEADING-ORDER FORM IS A SUM OF SQUARES, MANIFESTLY NON-NEGATIVE** — *"so the question is not whether a term goes negative but **whether the COMPLETED operator keeps a floor**". **The leading-order operator IS bounded below; only completion is open.***
+
+**⛭⛭ ② THE COMMUTATION IS STRUCTURAL, NOT PERTURBATIVE** — *"$\hat\Gamma$ acts on the TOWER, the radial part on $x$": **they commute because they act on different factors**. ⇒ Stronger than r2846's record here, which was that the commutator **survives the cubic as a computed result**. **It does not need to survive anything.***
+
+**⌗ SAME DEFECT AS r2917 ON `PO-7`, TWICE:** *the row carries the open framing and not the delivered result.*
+
+**⚠ AND A TENSION NOT RESOLVED BY PREFERENCE:** *S4 concludes "PO-6's two remaining halves are ONE half asked twice"; **r2895 argued extension uniqueness and boundedness below are independent properties** — an operator can have either without the other. **S4 does not address that argument and r2895 does not address S4's. Both stand until one is worked against the other.***
+
 ### Revision r2918 — 2026-08-15 (main line). **THE TWO-SIDED-VERDICT SWEEP FAILED ITS OWN CALIBRATION — AND IT IS THE THIRD CLEAN SWEEP THAT WAS LOOKING IN THE WRONG PLACE.**
 
 *Swept `PO-5`, `PO-6`, `PO-10` for receipts whose verdicts carry both a delivered result and a limit, where the row quotes only the limit. **Reported 0. Then checked the detector against the two instances it was built from.***

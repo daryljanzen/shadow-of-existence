@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2918: **the two-sided-verdict sweep failed its own calibration** — C56 and B6, the two "
-            "instances it was built from, have **no VERDICT line in their source at all**; they "
-            "print at runtime. So '0 across three rows' said nothing. ⌗ **Third clean sweep this "
-            "session that was looking in the wrong place** (the OWED count read one file; "
-            "check_stale_unshown matched ids only). **Rule added to TURN_PROTOCOL §⑤·6: calibrate "
-            "against known instances before believing a zero.**")
+LASTFIND = ("r2919: **two delivered positives `PO-6` does not carry.** S4: the leading-order form is "
+            "a **SUM OF SQUARES, manifestly non-negative** — only COMPLETION is open; and the "
+            "commutation is **STRUCTURAL, not perturbative** (Gamma-hat acts on the tower, the "
+            "radial part on x), which is stronger than r2846s computed survival. ⚠ And a tension "
+            "held rather than resolved: **S4 says the two halves are one; r2895 says extension "
+            "uniqueness and boundedness are independent. Neither addresses the other.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

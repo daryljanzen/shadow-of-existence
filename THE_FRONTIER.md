@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2918: **the two-sided-verdict sweep failed its own calibration** — C56 and B6, the two instances it was built from, have **no VERDICT line in their source at all**; they print at runtime. So '0 across three rows' said nothing. ⌗ **Third clean sweep this session that was looking in the wrong place** (the OWED count read one file; check_stale_unshown matched ids only). **Rule added to TURN_PROTOCOL §⑤·6: calibrate against known instances before believing a zero.*****
+*⌗ **LAST ACTUAL MOVE — r2919: **two delivered positives `PO-6` does not carry.** S4: the leading-order form is a **SUM OF SQUARES, manifestly non-negative** — only COMPLETION is open; and the commutation is **STRUCTURAL, not perturbative** (Gamma-hat acts on the tower, the radial part on x), which is stronger than r2846s computed survival. ⚠ And a tension held rather than resolved: **S4 says the two halves are one; r2895 says extension uniqueness and boundedness are independent. Neither addresses the other.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
