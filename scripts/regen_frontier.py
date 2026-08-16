@@ -29,8 +29,6 @@ EST = {
            'CLEAR -- the horn is established; one count to run'),
  'PO-1b': ('the SIGN 2+1: geometry CLOSED, candidate open', 1, 1, 2, None,
            'CLEAR -- sign(r) IS species and the parity link is established; one type-check to finish'),
- 'PO-1a': ('the DESIGNATION 2+1: geometry CLOSED, candidate open', 1, 2, 4, None,
-           'BOTH HALVES ANSWERED r2852: the 2+1 is closed and the candidate half closes NEGATIVE -- generations are the WALLS. Strikeable'),
  'PO-6': ('the interacting tower', 1, 1, 4, None,
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
  'PO-7':  ('the comb (prediction) + the first peak (free)', 2, 2, 1, None,
@@ -76,12 +74,12 @@ LASTFIND = ("r2852: there are TWO S_3s and `PO-1a` had them as one. P14: **'the 
 # PO-6's UV definition, PO-1a's derivation.  Those are marked BUILD and their estimates
 # are declared unmeasured rather than dressed as measured. ***
 KIND = {'PO-11': 'BUILD', 'PO-5': 'BUILD', 'PO-2': 'READ',
-        'PO-1c': 'READ', 'PO-1b': 'READ', 'PO-1a': 'BUILD',
+        'PO-1c': 'READ', 'PO-1b': 'READ',
         'PO-6': 'BUILD', 'PO-7': 'READ', 'PO-10': 'READ'}
 
-ORDER = ['PO-11', 'PO-5', 'PO-2', 'PO-1c', 'PO-1b', 'PO-1a', 'PO-6', 'PO-7', 'PO-10']
+ORDER = ['PO-11', 'PO-5', 'PO-2', 'PO-1c', 'PO-1b', 'PO-6', 'PO-7', 'PO-10']
 GROUP = {'PO-11': 'A', 'PO-5': 'A', 'PO-2': 'A',
-         'PO-1c': 'B', 'PO-1b': 'B', 'PO-1a': 'B',
+         'PO-1c': 'B', 'PO-1b': 'B', 
          'PO-6': 'C', 'PO-7': 'D', 'PO-10': 'D'}
 GNAME = {'A': 'THE CHAIN — one unbuilt sector, two consequences. Strictly ordered.',
          'B': 'THE 2+1 CLUSTER — four readings of two splits. Independent of A.',
