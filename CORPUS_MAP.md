@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2886 — 2026-08-15 (main line). **r2885's GATE DOES NOT EXIST — `L-74` IS CLOSED AND THE RECEIPT I READ HAD NOT HEARD.**
+
+*r2885 recorded `PO-1c` as gated on `L-74`'s unproved antecedent, on `P03_thirds_from_closure`'s "it does not show the antecedent — that is `L-74` and it is now the gate".*
+
+**⛔ `P14_route_or_point`:** *"noticing that **`P14_mode_monodromy_at_the_wall` IS the answer to `L-74`**" — and its close: **"with `L-72` AND `L-74` BOTH CLOSED, the winding sector's premises are COMPUTED"**. The thirds receipt is stale against it.*
+
+⇒ ***So everything r2885 called conditional is not: the thirds, the closure rule, **the 11-of-11 hadron match and confinement** rest on computed premises.***
+
+**⛭⛭ AND THE REMAINING READING IS ONE THING:** *"the **CONCLUSION — that this $\mathbb{Z}_3$ is ELECTRIC CHARGE — is the single remaining reading**". Established: the field carries a **route-dependent $\mathbb{Z}_3$** and **only triality-neutral combinations exist as fields**. ⇒ "The $\mathbb{Z}_3$ established here is **COLOUR's, by construction — it is the centre** — and the electric reading rides on top of it" (`L-65`'s).*
+
+**⌗ AND AN UNEXPECTED CONVERGENCE:** *`L-120`, from representation theory, and PART 4, from monodromy, reach the same seating split — **"a point-labelled state has no route-dependence, so it has no use for the graze points, so it is not seated where the routes are"**.*
+
 ### Revision r2885 — 2026-08-15 (main line). **THE BREAKER DOES NOT FIRE, AND `PO-1c` STILL DOES NOT CLOSE — THE DERIVATION NAMES ITS OWN UNPROVED ANTECEDENT.**
 
 **⛭⛭ `P03_thirds_from_closure`, PART 3, run — three constraints and NO charge sign:** *(i) $x-y=1$, **the two routes differ by ONE LAP**; (ii) $x+2y\in\mathbb{Z}$, the upper-headed triple closes; (iii) $y+2x\in\mathbb{Z}$. Substituting $y=x-1$: totals $3x-2$ and $3x-1$, integers iff $3x$ is ⇒ **$x=k/3$, THE THIRDS ARE FORCED**.*

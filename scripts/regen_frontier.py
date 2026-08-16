@@ -21,7 +21,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 EST = {
  'PO-5':  ('the five multiplets — mismatch is one pair wide', 3, 4, 4, None,
            'r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet'),
- 'PO-1c': ('the winding structure — gated on L-74s antecedent', 2, 1, 1, None,
+ 'PO-1c': ('the winding Z_3 — is it electric charge?', 1, 2, 1, None,
            'CLEAR -- the horn is established; one count to run'),
  'PO-6':  ('the interacting tower — CRs share of it', 1, 1, 3, None,
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
@@ -45,12 +45,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2885: the breaker did NOT fire — the thirds come from three geometric constraints "
-            "with **no charge sign anywhere** (x−y=1 is a LAP difference) — **and the row still "
-            "does not close**. The same derivation names its own unproved antecedent: **that a "
-            "matter field on this geometry is labelled by a ROUTE at all — L-74, and it is now the "
-            "gate**. The thirds, the closure rule, the 11-of-11 hadron match and confinement are "
-            "ALL conditional on it, and this register never carried that.")
+LASTFIND = ("r2886: **r2885s gate does not exist.** `P14_route_or_point`: 'P14_mode_monodromy_at_"
+            "the_wall IS the answer to L-74', and **with L-72 and L-74 both CLOSED the winding "
+            "sector premises are COMPUTED**. `P03_thirds_from_closure` is stale against it. ⇒ The "
+            "thirds, the closure rule, the 11-of-11 hadron match and confinement are NOT "
+            "conditional — and the single remaining reading is named: **is this Z_3 electric "
+            "charge? It is COLOUR s centre by construction; the electric reading rides on top.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
