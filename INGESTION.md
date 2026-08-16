@@ -484,3 +484,4 @@ r2959  LATENT      the seam supplies that a phase exists, the field forces sin(p
 r2960  LATENT      CRPHI is DERIVED = 0 (adiabatic compression); pi is inadmissible; the disagreement is pinned at 0.615.
 r2961  LATENT      PO-7 does not strike: clause two needs a comparison made nowhere, and 0.615 is CR-vs-LCDM not CR-vs-sky.
 r2962  LATENT      PO-10s odd/even half is answered; C56s 26.6% swing is an orphan owned by no open row. OWED 577.
+r2963  LATENT      the odd/even half is answered comparatively (C30) not absolutely (C12); the run owed is to produce the pattern.

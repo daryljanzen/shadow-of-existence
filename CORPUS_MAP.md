@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2963 — 2026-08-15 (main line). **r2962's "THE ODD/EVEN HALF IS ANSWERED" IS HALF RIGHT: ANSWERED COMPARATIVELY, NOT ABSOLUTELY.**
+
+**⛭⛭ `C12_the_odd_even_half_has_its_parameter`, run — SETTLED:** *"where the asymmetry is imprinted (post-seam, expansion leg), why it does not correct the driving envelope, and **the parameter that sets it — R_b = 0.60 at last scattering**" — with the tell in the row's own wording: "**'imprinted by the baryon loading on the expansion leg' is an ANSWER sitting in the column that names what the item is FOR**".*
+
+**⛔ NOT SETTLED:** *"**the height PATTERN itself. Knowing R_b and where it acts is not the same as producing the odd/even heights and putting them against the sky**" ⇒ "**the run owed is narrower: not 'work out the odd/even physics' but 'PRODUCE THE PATTERN from an R_b already computed on a leg already identified'**".*
+
+⇒ ***So C30 and C12 answer different questions and both stand: **C30 — does CR's pattern DIFFER from LambdaCDM's? No. C12 — has CR's own pattern been PRODUCED and put against the sky? No.** **Comparative versus absolute — the same distinction `PO-7`'s two clauses turn on, and I collapsed it here one revision after separating it there.****
+
+**⌗ So this row's second half is not delivered** — *it is **narrowed to one run with its input already computed**.*
+
 ### Revision r2962 — 2026-08-15 (main line). **`PO-10`'s AMPLITUDE OBJECT IS THE ODD/EVEN PATTERN AND IT IS ANSWERED; THE 26.6% SWING BELONGS TO NEITHER ROW.**
 
 *r2956 assigned C56's comb-periodic amplitude swing here — "where the amplitudes are" — **without reading this row's target**.*

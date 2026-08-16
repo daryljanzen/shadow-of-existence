@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2962: **this rows amplitude object is the ODD/EVEN pattern — period-2, and ANSWERED** (C30: R is a ratio of contents, so both arms carry the same pattern). My r2956 assignment of C56s 26.6% comb-periodic swing here was **wrong**: PO-7 names positions, PO-10 names odd/even. ⇒ **The 26.6% is named by NEITHER open rows object** — measured, both candidates eliminated, and owned by nothing. Filed as OWED #577.***
+*⌗ **LAST ACTUAL MOVE — r2963: **r2962s 'the odd/even half is answered' is half right — answered COMPARATIVELY, not ABSOLUTELY.** C12: settled is where the asymmetry is imprinted and **the parameter that sets it, R_b = 0.60 at last scattering**; NOT settled is **the height PATTERN itself** — 'knowing R_b and where it acts is not the same as producing the odd/even heights and putting them against the sky'. ⇒ C30 answers does CR DIFFER from LCDM; C12 asks has CRs own pattern been PRODUCED. **I collapsed comparative and absolute one revision after separating them on PO-7.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
 | **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 20 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
-| **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 30 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
+| **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 31 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
 
 ---
 

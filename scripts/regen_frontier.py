@@ -41,11 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2962: **this rows amplitude object is the ODD/EVEN pattern — period-2, and ANSWERED** "
-            "(C30: R is a ratio of contents, so both arms carry the same pattern). My r2956 "
-            "assignment of C56s 26.6% comb-periodic swing here was **wrong**: PO-7 names positions, "
-            "PO-10 names odd/even. ⇒ **The 26.6% is named by NEITHER open rows object** — measured, "
-            "both candidates eliminated, and owned by nothing. Filed as OWED #577.")
+LASTFIND = ("r2963: **r2962s 'the odd/even half is answered' is half right — answered "
+            "COMPARATIVELY, not ABSOLUTELY.** C12: settled is where the asymmetry is imprinted and "
+            "**the parameter that sets it, R_b = 0.60 at last scattering**; NOT settled is **the "
+            "height PATTERN itself** — 'knowing R_b and where it acts is not the same as producing "
+            "the odd/even heights and putting them against the sky'. ⇒ C30 answers does CR DIFFER "
+            "from LCDM; C12 asks has CRs own pattern been PRODUCED. **I collapsed comparative and "
+            "absolute one revision after separating them on PO-7.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
