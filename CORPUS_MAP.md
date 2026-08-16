@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2865 — 2026-08-15 (main line). **`PO-1c`'s FOUR ORBITS HAVE THE RIGHT COUNT AND THE WRONG QUANTITY.**
+
+*Tested whether `PO-2`'s answer transfers. **It does not** — the horn carries real extra content (one constituent per hinge in one simultaneity; the three colours mutually spacelike; the isospin-partner relation as CAUSAL CONTACT). So: is any of it observable?*
+
+**⛭⛭ P14 DISCLAIMS IT TWICE:** *"Nothing here claims a geometric origin for **weak isospin as a gauging**" and "$T$ is a discrete horn swap and delivers a **SPECIES LABEL, not $SU(2)_L$'s chiral action**".*
+
+⇒ ***So the horn's two-valued label is SPECIES — and $u$ and $d$ are an ISOSPIN DOUBLET, not two species. $uud/udd/uuu/ddd$ are $I_3=\pm\tfrac12,\pm\tfrac32$: an isospin LADDER. **Four orbits, four states, and the quantity doing the sorting is not the quantity that distinguishes them.****
+
+**⌗ SAME FAILURE SHAPE AS r2857's THREE RATIOS:** *a count that matches while the quantity does not.*
+
+**⚠ AND THE OPEN QUESTION IS SHARPER:** *does anything in the corpus carry $I_3$ — a **four-rung ladder**? The horn is $\mathbb{Z}_2$. **A two-valued label cannot generate a four-rung ladder** — the same argument that killed the fifth multiplet at r2858.*
+
 ### Revision r2864 — 2026-08-15 (main line). **`PO-2` STRUCK — LEVEL 3 ANSWERED IN ITS EMPIRICAL FORM.**
 
 *Following Daryl's correction that a framework is gated on evidence, not ontology.*

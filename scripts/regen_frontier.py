@@ -21,7 +21,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 EST = {
  'PO-5':  ('the five multiplets; which carries the colour 3', 4, 3, 4, None,
            'r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet'),
- 'PO-1c': ('does uud have a geometric counterpart', 1, 1, 1, None,
+ 'PO-1c': ('does uud have a geometric counterpart', 2, 1, 1, None,
            'CLEAR -- the horn is established; one count to run'),
  'PO-1b': ('the SIGN 2+1: geometry CLOSED, candidate open', 1, 1, 2, None,
            'CLEAR -- sign(r) IS species and the parity link is established; one type-check to finish'),
@@ -47,11 +47,11 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2864: `PO-2` STRUCK — level 3 answered in its EMPIRICAL form, on Daryl's correction that "
-            "a framework is gated on evidence, not ontology. CR's A_2 weights are MASS-TIED and SM "
-            "colour weights are FIXED — but 2M varies neither between generations (L212, run) nor "
-            "between hadrons (M is a constant of the SdS solution). **Nothing observable distinguishes "
-            "the identification from the isomorphism** — a result, not a wall.")
+LASTFIND = ("r2865: `PO-1c`'s four orbits have the RIGHT COUNT and the WRONG QUANTITY. P14 disclaims "
+            "it twice — **'nothing here claims a geometric origin for weak isospin as a gauging'** and "
+            "**'T delivers a SPECIES LABEL, not SU(2)_L's chiral action'**. But uud/udd/uuu/ddd are "
+            "an ISOSPIN ladder (I_3 = ±1/2, ±3/2), and **u and d are a doublet, not two species**. "
+            "Same failure shape as r2857: a count that matches while the quantity does not.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
