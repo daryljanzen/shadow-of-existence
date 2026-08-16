@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2913 — 2026-08-15 (main line). **r2907's "NOT ESTIMABLE" IS TOO PESSIMISTIC — THE SPECIFICATION AND THE MACHINERY BOTH EXIST.**
+
+*Found via a sweep that turned up **71 receipts declaring something owed against an `OWED.md` reading zero**.*
+
+**⛭⛭ `T1_the_transfer_is_half_built`:** *"the debt is TWO steps: ① specify how fluctuations gravitate on the radiation-free background — the piece that sets the high-$\ell$ driving envelope, **which no standard Boltzmann code can supply** — and ② a bespoke transfer against that specification"; **"① IS BUILT"**; **"the machinery exists: a 'genuine Boltzmann transfer' is already built for the flat-projection of the closed-$S^3$ source"**.*
+
+⇒ ***"The specification exists and the machinery exists; **what has not been run is the two against each other**" — a JOIN of two built pieces, not an open-ended construction.***
+
+**⌗ AND NARROWER THAN THE ROW READS:** *the peak HEIGHTS are "carried by a structural argument rather than a bespoke transfer" — **the transfer is owed for the TILT-IRREDUCIBLE RESIDUAL**.*
+
+**⚠ CAVEAT I CANNOT RESOLVE HERE:** *T1's verdict names `PO-12`, which is STRUCK. **Whether T1's transfer is the same object as P15's "full transfer" is the thing to settle next** — until then this is a strong indication, not a re-estimate.*
+
+**⌗ `OWED` #573 and #574 FILED:** *the 2.6pp resolution, and the reconciliation of `OWED.md` against the receipts.*
+
 ### Revision r2912 — 2026-08-15 (main line). **THE ±0.3pp I NOTICED SITS INSIDE A NAMED, OWED 2.6pp DISAGREEMENT THE REGISTER DOES NOT CARRY.**
 
 **⛭⛭ `C41_a_tilde_is_stale_when_nothing_competes`, run:** *"the disagreement is now named: **+10.83% ANALYTIC against +8.2% on CAMB's exact history**, on a figure P15 calls 'a real, computed effect' nine times. **Owed**".*

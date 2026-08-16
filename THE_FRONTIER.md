@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2912: **my 0.3pp sits inside a named, OWED 2.6pp disagreement.** C41: '+10.83% ANALYTIC against +8.2% on CAMBs exact history, on a figure P15 calls a real computed effect nine times. **Owed.**' And C24 diagnoses it: **the 13% is LOCAL at recombination while the integrals ACCUMULATE over a history where rho_r/rho_m is larger earlier**, so constant-ratio scaling understates. ⇒ The effects size is contested between two methods by a THIRD of its magnitude.***
+*⌗ **LAST ACTUAL MOVE — r2913: **r2907s 'not estimable' is too pessimistic.** T1: the transfer debt is TWO steps — specify how fluctuations gravitate on the radiation-free background, and a bespoke transfer against it — and **① IS BUILT** while **the machinery exists** (a genuine Boltzmann transfer for the flat-projection of the closed-S3 source). ⇒ **What has not been run is the two against each other.** Found via a sweep: **71 receipts declare something owed against an OWED.md reading zero.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 11 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
+| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 12 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
 | **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 30 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
 
 ---

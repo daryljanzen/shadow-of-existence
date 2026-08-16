@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2912: **my 0.3pp sits inside a named, OWED 2.6pp disagreement.** C41: '+10.83% "
-            "ANALYTIC against +8.2% on CAMBs exact history, on a figure P15 calls a real computed "
-            "effect nine times. **Owed.**' And C24 diagnoses it: **the 13% is LOCAL at "
-            "recombination while the integrals ACCUMULATE over a history where rho_r/rho_m is "
-            "larger earlier**, so constant-ratio scaling understates. ⇒ The effects size is "
-            "contested between two methods by a THIRD of its magnitude.")
+LASTFIND = ("r2913: **r2907s 'not estimable' is too pessimistic.** T1: the transfer debt is TWO "
+            "steps — specify how fluctuations gravitate on the radiation-free background, and a "
+            "bespoke transfer against it — and **① IS BUILT** while **the machinery exists** "
+            "(a genuine Boltzmann transfer for the flat-projection of the closed-S3 source). ⇒ "
+            "**What has not been run is the two against each other.** Found via a sweep: **71 "
+            "receipts declare something owed against an OWED.md reading zero.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
