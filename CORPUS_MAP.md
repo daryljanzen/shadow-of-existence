@@ -146,6 +146,14 @@ sources: [cowork, chat]
 
 
 
+### Revision r2845 — 2026-08-15 (main line). **`PO-1b`'s TYPE-CHECK RUN — AND THE SIGN STRUCTURE IS TWO-STATE BY THE ZERO-SUM.**
+
+*The corpus said the sign $2{+}1$ "tracks $D$'s parity exactly, so it is the mass-parity in another register" — **a correspondence with no computation behind it in this row**.*
+
+**⛭⛭ RUN:** *mass-parity is $r_0\mapsto-r_0$, i.e. $2M\mapsto-2M$ on $2M=r_0-r_0^3$; and **roots$(-2M)=-$roots$(+2M)$ exactly**, at three masses. So it acts as $r\mapsto-r$ on the root set and flips the sign $2{+}1$. **"Another register" is literal: one $\mathbb{Z}_2$, two variables.***
+
+**⛔ AND THE RUN SHOWED WHAT THE ROW DID NOT HAVE:** *the three roots **sum to zero**, so the sign split can never be $3{+}0$. ⇒ ***The SIGN structure supplies exactly TWO states and never four, where the HORN structure (r2844) supplied four.*** That is a real difference between the two $2{+}1$s the catalogues had not distinguished — and it says the sign one is a two-state label, which is what species is.*
+
 ### Revision r2844 — 2026-08-15 (main line). **`PO-1c`'s COUNT RUN: SIX WAS CONFIGURATIONS, FOUR ORBITS ARE STATES.**
 
 *The row carried "$2^3=8$ configurations, **six of shape $2{+}1$**". The arithmetic is right and **six counts CONFIGURATIONS where the row needs STATES**.*

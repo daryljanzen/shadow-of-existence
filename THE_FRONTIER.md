@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **r2844: `PO-1c` carried SIX as its count and six is the number of CONFIGURATIONS, not STATES. Quotiented by the S_3 the corpus supplies ('the S_3 permuting the walls is the family symmetry'), 8/S_3 = FOUR orbits: two of shape 2+1 and two of shape 3+0 — exactly uud, udd, uuu, ddd. **And the relation the row asked for is the horn-value flip, a Z_2 on the S_3-quotient.*****
+*⌗ **r2845: `PO-1b`'s type-check RUN — mass-parity acts as r→−r on the whole root set (roots(−2M) = −roots(+2M), verified), so it flips the sign 2+1 exactly and 'another register' is literal: one Z_2, two variables. **And the run showed what the row did not have: the roots SUM TO ZERO, so the sign split can never be 3+0 — the sign structure supplies exactly TWO states where the horn supplied four.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

@@ -42,11 +42,11 @@ EST = {
 }
 # ** turns since the last discovery that the problem space was misunderstood, and what it was **
 SINCE = 0
-LASTFIND = ("r2844: `PO-1c` carried SIX as its count and six is the number of CONFIGURATIONS, not STATES. "
-            "Quotiented by the S_3 the corpus supplies ('the S_3 permuting the walls is the family "
-            "symmetry'), 8/S_3 = FOUR orbits: two of shape 2+1 and two of shape 3+0 — exactly uud, "
-            "udd, uuu, ddd. **And the relation the row asked for is the horn-value flip, a Z_2 on "
-            "the S_3-quotient.**")
+LASTFIND = ("r2845: `PO-1b`'s type-check RUN — mass-parity acts as r→−r on the whole root set "
+            "(roots(−2M) = −roots(+2M), verified), so it flips the sign 2+1 exactly and 'another "
+            "register' is literal: one Z_2, two variables. **And the run showed what the row did "
+            "not have: the roots SUM TO ZERO, so the sign split can never be 3+0 — the sign "
+            "structure supplies exactly TWO states where the horn supplied four.**")
 
 ORDER = ['PO-11', 'PO-5', 'PO-2', 'PO-1c', 'PO-1d', 'PO-1b', 'PO-1a', 'PO-6', 'PO-7', 'PO-10']
 GROUP = {'PO-11': 'A', 'PO-5': 'A', 'PO-2': 'A',
