@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2862 — 2026-08-15 (main line). **`PO-2`'s LEVEL 3 IS NOT WAITING ON `PO-5` — IT IS AN ONTOLOGICAL CLAIM THE TAXONOMY FORBIDS.**
+
+*Read level 3 at source rather than carrying "walled".*
+
+**⛭⛭ `GEOMETRY_PHYSICS_TAXONOMY`, r2803:** *"IDENTIFICATION — STILL WALLED, BUT NARROWER THAN THE WORD. P14 exhibits the map, roots → hinges → walls → modes. **The STRUCTURAL identification IS EXHIBITED; what remains walled is the PHYSICAL one — that the roots ARE colour charge, as against carrying a structure isomorphic to it**".*
+
+⇒ ***So the remaining content is "ARE" versus "is isomorphic to" — an ONTOLOGICAL claim, not a construction. And `PO-5` cannot deliver it: fully succeeded, `PO-5` delivers STRUCTURE, and no amount of structure converts "isomorphic to" into "is".***
+
+**⛔ AND THE SAME DOCUMENT FORBIDS IT OUTRIGHT:** *the $A_2\leftrightarrow$colour row reads **"identifying substrate as having colour FORBIDDEN"**.*
+
+**⌗ THE GATE WAS WRONG IN KIND.** *This row is not blocked by unbuilt work; **its last level is walled by the corpus's own ontology and would stay walled with `PO-5` complete**. Levels ① and ② are done, ③ is forbidden rather than owed.*
+
 ### Revision r2861 — 2026-08-15 (main line). **`PO-6`'s REMAINDER IS NOT A GAP IN CR — P10 SAYS SO AND THE ROW NEVER CARRIED IT.**
 
 *Read "the open frontier" at source instead of quoting the label.*

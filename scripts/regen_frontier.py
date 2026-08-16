@@ -21,8 +21,8 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 EST = {
  'PO-5':  ('the five multiplets; which carries the colour 3', 4, 3, 4, None,
            'r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet'),
- 'PO-2': ('Nariai / three quarks', 1, 1, 1, 'PO-5',
-           'levels 1 and 2 done; level 3 is the identification and follows PO-5'),
+ 'PO-2':  ('Nariai / three quarks — levels 1-2 done, 3 forbidden', 1, 1, 1, None,
+           'r2862: UNGATED -- level 3 is not PO-5s to deliver. It is the ontological ARE-vs-ISOMORPHIC-TO claim, and the taxonomy FORBIDS it. Strikeable pending a read of whether forbidden = closed'),
  'PO-1c': ('does uud have a geometric counterpart', 1, 1, 1, None,
            'CLEAR -- the horn is established; one count to run'),
  'PO-1b': ('the SIGN 2+1: geometry CLOSED, candidate open', 1, 1, 2, None,
@@ -49,12 +49,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2861: `PO-6`'s remainder is NOT a gap in CR. P10: the boundary condition **is SUPPLIED** "
-            "by thermal regularity fibre by fibre (κ belongs to the BACKGROUND horizon, so it is "
-            "common to every fibre), and **'what remains open is the definition of the interacting "
-            "tower — THE STANDARD PROBLEM OF THE INTERACTING THEORY'**. The row has been carrying "
-            "interacting QFT as a CR-specific deficit. **What is genuinely CR's is smaller: does its "
-            "x^-2 boundary face obstruct or assist a UV definition?**")
+LASTFIND = ("r2862: `PO-2`'s level 3 is NOT waiting on `PO-5`. The taxonomy (r2803): the **STRUCTURAL "
+            "identification is EXHIBITED; what remains walled is the PHYSICAL one — that the roots "
+            "ARE colour charge, as against carrying a structure isomorphic to it**. That is an "
+            "ONTOLOGICAL claim and `PO-5` delivers STRUCTURE — no amount of structure converts "
+            "'isomorphic to' into 'is'. **And the same document reads 'identifying substrate as having "
+            "colour FORBIDDEN'. The gate is wrong in KIND.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

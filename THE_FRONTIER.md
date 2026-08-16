@@ -6,11 +6,11 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2861: `PO-6`'s remainder is NOT a gap in CR. P10: the boundary condition **is SUPPLIED** by thermal regularity fibre by fibre (κ belongs to the BACKGROUND horizon, so it is common to every fibre), and **'what remains open is the definition of the interacting tower — THE STANDARD PROBLEM OF THE INTERACTING THEORY'**. The row has been carrying interacting QFT as a CR-specific deficit. **What is genuinely CR's is smaller: does its x^-2 boundary face obstruct or assist a UV definition?*****
+*⌗ **LAST ACTUAL MOVE — r2862: `PO-2`'s level 3 is NOT waiting on `PO-5`. The taxonomy (r2803): the **STRUCTURAL identification is EXHIBITED; what remains walled is the PHYSICAL one — that the roots ARE colour charge, as against carrying a structure isomorphic to it**. That is an ONTOLOGICAL claim and `PO-5` delivers STRUCTURE — no amount of structure converts 'isomorphic to' into 'is'. **And the same document reads 'identifying substrate as having colour FORBIDDEN'. The gate is wrong in KIND.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
-**RUNWAY: 6 of 7 clear now**; 1 gated (PO-2→PO-5).
+**RUNWAY: 7 of 7 clear now**; 0 gated ().
 
 
 ### A · THE CHAIN — one unbuilt sector, two consequences. Strictly ordered.
@@ -18,7 +18,7 @@
 | id | what it is | steps | was | turns/step | kind | gate | runway |
 |---|---|---|---|---|---|---|---|
 | **PO-5** | the five multiplets; which carries the colour 3 | **4** ↑1 | 3 | 4 ⚠ | BUILD | — | r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet |
-| **PO-2** | Nariai / three quarks | **1** | 1 | 1 | READ | PO-5 | levels 1 and 2 done; level 3 is the identification and follows PO-5 |
+| **PO-2** | Nariai / three quarks — levels 1-2 done, 3 forbidden | **1** | 1 | 1 | READ | — | r2862: UNGATED -- level 3 is not PO-5s to deliver. It is the ontological ARE-vs-ISOMORPHIC-TO claim, and the taxonomy FORBIDS it. Strikeable pending a read of whether forbidden = closed |
 
 ### B · THE 2+1 CLUSTER — four readings of two splits. Independent of A.
 
