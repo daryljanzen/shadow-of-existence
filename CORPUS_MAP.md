@@ -146,6 +146,22 @@ sources: [cowork, chat]
 
 
 
+### Revision r2870 — 2026-08-15 (main line). **`PO-5` UNDERSTATES ITS OWN DELIVERED CONTENT BY A FACTOR OF FOUR.**
+
+*Went to weigh P03 against P14 on $T$. **The surrounding paragraph is the finding.***
+
+**⛔ ① THE INTEGER PART DISTINGUISHES $u$ FROM $d$, "being exactly ONE LAP".** *r2858–r2868 argued repeatedly that nothing separates $u^c$ from $d^c$. **It is the integer winding part — neither the horn nor $R$.** The whole over-symmetry argument was built on a structure I had not found.*
+
+**⛭ ② THE FRACTIONAL PART DISTINGUISHES QUARK FROM ANTIQUARK** — *$2/3$ one way round the equator against $1/3$ the other.*
+
+**⛭⛭⛭ ③ AND THE CLOSURE RULE IS TESTED AGAINST THE HADRON SPECTRUM:** *"admit a composite only if total fractional part $=0\bmod1$; **tested against ELEVEN CONTENTS and agrees 11 OF 11**" — meson, baryon, antibaryon, tetraquark, pentaquark, dibaryon close and exist; free quark, diquark, $q\bar q$-$\bar q$, $qqqq$, $qqq$-$\bar q$ do not close and do not exist.*
+
+⇒ ***④ CONFINEMENT BECOMES FAILURE TO CLOSE THE LAP.***
+
+**⛔ AND THE ROW'S HEAD CARRIES THREE OF THE ELEVEN** — *"baryon 1, diquark 0, meson 1".*
+
+**⚠ P03's OWN BOUND TRAVELS WITH IT:** *"THE IDENTIFICATION IS NOT MADE".*
+
 ### Revision r2869 — 2026-08-15 (main line). **P03 AND P14 ASSIGN THE SAME LABEL TO TWO DIFFERENT OPERATORS.**
 
 *Went to compute whether P14's $3\times2\times2$ is a group direct product. The operators' own definitions settle it, and not the way the question was posed.*
