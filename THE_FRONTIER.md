@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2899: **`PO-6`s UV half has a named CR-SPECIFIC limit and it is THE SHEAR** — which corrects r2861 a second way. S50: the counterterm basis is ONE-DIMENSIONAL because **the degeneracy is CONFORMAL FLATNESS, not maximal symmetry, so no scale factor can break it and back-reaction cannot** — and 'the real limit is the SHEAR (L-549)'. ⇒ Not the standard interacting-QFT problem. **Two live sub-questions, not one.*****
+*⌗ **LAST ACTUAL MOVE — r2900: **`PO-5` does not carry its own colourless count.** C1: the D_6 reps trivial on the deck Z_3 give a colourless sector of **TOTAL DIMENSION FOUR** — 'the number the Standard Model has (3 without nu_R, 4 with)' — joining r2873s fourth grading. And **two receipts FAIL on a check asserting the person-gate r2830 removed**: they fail because the register is right, not because they are wrong about physics.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -17,7 +17,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-5** | the five multiplets — two content steps | **2** ↓1 | 3 | 4 ⚠ | BUILD | 25 | — | r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet |
+| **PO-5** | the five multiplets — two content steps | **2** ↓1 | 3 | 4 ⚠ | BUILD | 26 | — | r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet |
 
 ### B · THE 2+1 CLUSTER — four readings of two splits. Independent of A.
 

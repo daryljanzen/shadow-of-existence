@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2900 — 2026-08-15 (main line). **A RESULT `PO-5` DOES NOT CARRY, AND TWO RECEIPTS FAILING ON A RULE r2830 RETIRED.**
+
+**⛭⛭ `C1_the_rows_premises_are_stale_and_the_split_is_specified`, run:** *"P14 states the colourless count: the $D_6$ representations trivial on the deck $\mathbb{Z}_3$ … **so a colourless sector on this structure has TOTAL DIMENSION FOUR**" — and **"FOUR is the colourless count WITH $\nu_R$: the structure produces the number the Standard Model has (3 without, 4 with)"**, with the chirality objection pre-answered since $SU(3)$ acts trivially on $\nu_L, e_L, e_R$.*
+
+⇒ ***That joins r2873's fourth grading — the $\nu_R$ has a PLACE, and the colourless dimension is FOUR because of it. **The row has carried neither.****
+
+**⌗ AND P14's RESTRAINT TRAVELS WITH IT:** *the four is "a count of GRADINGS", so the receipt **does not claim the split is forced**.*
+
+**⛔ AND TWO RECEIPTS FAIL ON A RULE THAT NO LONGER EXISTS:** *`C1` and `D1` each check that **"PO-5 remains open and its closure is Daryl's"** — the person-gate r2830 removed. ***They fail because the register is right, not because they are wrong about physics.*** Both marked; the rest of their checks stand.*
+
 ### Revision r2899 — 2026-08-15 (main line). **`PO-6`'s UV HALF HAS A NAMED CR-SPECIFIC LIMIT — THE SHEAR — WHICH CORRECTS r2861 A SECOND WAY.**
 
 *Read the 16 distinct "what remains" statements rather than counting them. **One names a computation.***

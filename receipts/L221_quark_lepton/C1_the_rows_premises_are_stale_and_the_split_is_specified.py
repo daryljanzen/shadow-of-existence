@@ -60,6 +60,11 @@ count of FIELDS", which is the same shape as L-233's curvature question one sect
 
 Written r2464.  Stated for reversal.
 """
+# ** r2900: the check(s) below assert the PERSON-GATE that r2830 REMOVED from
+# PROTECTED_OPEN ('closures on protected items are Daryl's').  *** They now FAIL, and
+# the failure is r2830 working as designed: a row is struck when its OBJECT is answered
+# and the answer is receipted, and nothing else gates it.  The rest of this receipt's
+# checks stand. ***
 import os, re
 
 HERE = os.path.dirname(os.path.abspath(__file__))

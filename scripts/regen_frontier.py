@@ -43,11 +43,11 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2899: **`PO-6`s UV half has a named CR-SPECIFIC limit and it is THE SHEAR** — which "
-            "corrects r2861 a second way. S50: the counterterm basis is ONE-DIMENSIONAL because "
-            "**the degeneracy is CONFORMAL FLATNESS, not maximal symmetry, so no scale factor can "
-            "break it and back-reaction cannot** — and 'the real limit is the SHEAR (L-549)'. ⇒ Not "
-            "the standard interacting-QFT problem. **Two live sub-questions, not one.**")
+LASTFIND = ("r2900: **`PO-5` does not carry its own colourless count.** C1: the D_6 reps trivial on "
+            "the deck Z_3 give a colourless sector of **TOTAL DIMENSION FOUR** — 'the number the "
+            "Standard Model has (3 without nu_R, 4 with)' — joining r2873s fourth grading. And "
+            "**two receipts FAIL on a check asserting the person-gate r2830 removed**: they fail "
+            "because the register is right, not because they are wrong about physics.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
