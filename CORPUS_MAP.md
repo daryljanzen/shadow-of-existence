@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2876 — 2026-08-15 (main line). **`PO-7`'s HEADLINE NUMBER IS THE WRONG QUANTITY — AND THIS WAS EXPECTED YIELD, NOT A ZERO.**
+
+*35 receipts score 4+ on this object; the row cited 4. One is titled `P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong`.*
+
+**⛭⛭ AT PRODUCTION DEPTH (eight peaks, against C57's five):** *"the CR arm's **ASYMPTOTIC** peak spacing is **0.975 of $\ell_A$** against the control's 1.002, **so the ~21% figure c54.187–189 reported is THE FIRST THREE GAPS AND NOT THE SPACING**".*
+
+⇒ ***The arm's comb is right to 2.5%. The 0.855 / 0.79 this row carried as its finding is a low-$\ell$ transient measured over the first gaps.***
+
+**⛭ AND THE REAL DISAGREEMENT IS NAMED:** *"the two series are **PARALLEL to 2.6%** with intercepts **$0.615\,\ell_A$ apart — a PHASE OFFSET of $0.62\pi$**", and the CR arm's first three peaks sit **142 above its own asymptotic line where the control's sit within 16**.*
+
+**⌗ FEATURES SCREENED FIRST:** *weakest peak/next-trough contrast **1.18** across both arms.*
+
+⚠ ***SCORED SINCE = 2: r2875 predicted the method would find uncited receipts changing a row. It did. Large, and exactly the predicted kind.***
+
 ### Revision r2875 — 2026-08-15 (main line). **r2874 WAS SCORED A ZERO AND WAS NOT ONE — THE PROCEDURE'S YIELD IS NOT DISCOVERY.**
 
 *Daryl: "I don't see how you could honestly answer that question that way. Stop performing turns."*

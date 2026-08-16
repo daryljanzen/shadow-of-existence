@@ -4,9 +4,9 @@
 
 ## ⇒ **5 OPEN · 11 STEPS LEFT** *(was 10 last revision)* **· ~25 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 2**
 
-*⌗ **LAST ACTUAL MOVE — r2874 was NOT a zero and was scored one — Daryl caught it. r2873 established the METHOD (the register holds 11%; reading a rows uncited receipts finds answers), and r2874 did exactly what that predicted. **Once the zero-hunt is a PROCEDURE, its yield is EXPECTED and stops being a discovery.** The counter must RISE while the known method is executed, and reset only when something surprises the METHOD. **Last actual move: r2873.*****
+*⌗ **LAST ACTUAL MOVE — r2876 was EXPECTED YIELD, not a zero — I said in advance the method would find uncited receipts that change what a row says, and it did. `PO-7` cited 4 of 35; `P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong` says at PRODUCTION DEPTH **the asymptotic spacing is 0.975 of l_A against the controls 1.002 — the ~21% figure is THE FIRST THREE GAPS AND NOT THE SPACING**. The real disagreement is a 0.62-pi PHASE OFFSET. Large, and exactly the predicted kind. **Last actual move: r2873.*****
 
 *⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
@@ -35,7 +35,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 5 | — | CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840 |
+| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 6 | — | CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840 |
 | **PO-10** | the scalar remainder | **1** | 1 | 1 | READ | 21 | — | CLEAR -- refit half ANSWERED (floor is a prediction); the LIKELIHOOD half is what remains |
 
 ---

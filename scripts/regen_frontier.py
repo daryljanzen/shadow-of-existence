@@ -44,13 +44,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 1
-LASTFIND = ("r2874 was NOT a zero and was scored one — Daryl caught it. r2873 established the "
-            "METHOD (the register holds 11%; reading a rows uncited receipts finds answers), and "
-            "r2874 did exactly what that predicted. **Once the zero-hunt is a PROCEDURE, its yield "
-            "is EXPECTED and stops being a discovery.** The counter must RISE while the known "
-            "method is executed, and reset only when something surprises the METHOD. **Last actual "
-            "move: r2873.**")
+SINCE = 2
+LASTFIND = ("r2876 was EXPECTED YIELD, not a zero — I said in advance the method would find uncited "
+            "receipts that change what a row says, and it did. `PO-7` cited 4 of 35; "
+            "`P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong` says at PRODUCTION DEPTH "
+            "**the asymptotic spacing is 0.975 of l_A against the controls 1.002 — the ~21% figure "
+            "is THE FIRST THREE GAPS AND NOT THE SPACING**. The real disagreement is a 0.62-pi "
+            "PHASE OFFSET. Large, and exactly the predicted kind. **Last actual move: r2873.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
