@@ -400,3 +400,4 @@ r2874  LATENT      PO-1b struck on P14_payoff, a receipt it never cited; check_r
 r2875  INSTRUMENT  r2874 was not a zero: a procedures expected yield is not discovery. Protocol updated.
 r2876  LATENT      PO-7: asymptotic spacing is 0.975 of l_A, series parallel; the 21% was the first three gaps. Phase offset 0.62pi.
 r2877  LATENT      PO-7: the 21% is withdrawn, acoustics work at 98%; the live object is peak AMPLITUDE.
+r2878  LATENT      PO-1cs owed relation is a CORRESPONDENCE (P13s factorisation one level down), testable. Uncited.

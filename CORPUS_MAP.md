@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2878 — 2026-08-15 (main line). **`PO-1c`'s OWED RELATION HAS A REGISTERED CANDIDATE SHAPE AND A TEST ROUTE, UNCITED.**
+
+*8 receipts score 4+ on this object; the row cited 1.*
+
+**⛭⛭ `P14_the_isospin_exchange`, run:** *the relation **cannot be a $Q\to0$ limit** — "the graze points are features of the lap and **the lap does not exist at $Q\ne0$; there is nothing to take a limit OF**" — and **cannot be an identification**. ⇒ "**so it must be a CORRESPONDENCE between a vacuum-kernel index and a matter-bend parameter — structurally the same kind of statement as P13's charge-conjugation FACTORISATION**".*
+
+⇒ ***And the shape is registered with a test: "**the winding supplies the QUANTISATION (the thirds, from closure) and the Maxwell field supplies the SIGN and the SCALE** … **TESTABLE against P13's own machinery rather than being a new hope**".***
+
+**⛔ AND `B6_the_object_is_delivered_and_the_row_argues_elsewhere` FINDS A SECOND SAME-WORD-TWO-OBJECTS FAULT, IN `PO-5`:** *"$SU(3)$ does not appear in the `PO-5` row at all, while the row carries a negative verdict on **'branching'** that was about **the branching of $D_6$ irreps under $R$**, not the module colour acts on. **Same word, two objects**".*
+
+⚠ *SINCE = 4: expected yield, fourth running, announced in advance.*
+
 ### Revision r2877 — 2026-08-15 (main line). **THE 21% FIGURE IS FORMALLY WITHDRAWN, AND `PO-7`'s LIVE OBJECT IS AMPLITUDE.**
 
 *Three uncited receipts, run.*

@@ -44,13 +44,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 3
-LASTFIND = ("r2877 — expected yield again, as predicted. Three uncited receipts: **the ~21% figure "
-            "is FORMALLY WITHDRAWN** (B4), **the acoustics WORK at 98% of the acoustic rate and the "
-            "0.62-pi phase is the whole disagreement** (P15), and **C56 removes the last phase "
-            "candidate — the residual is two orders too small**. ⇒ The live object is **peak "
-            "AMPLITUDE varying comb-periodically: the peaks in the right places and the wrong "
-            "heights**. Last actual move: r2873.")
+SINCE = 4
+LASTFIND = ("r2878 — expected yield, fourth running, as announced. `PO-1c` cited 1 of 8 top-ranked "
+            "receipts. `P14_the_isospin_exchange`: the owed relation **cannot be a Q-to-0 limit** "
+            "(the lap does not exist at Q != 0) and **cannot be an identification**, so it **must "
+            "be a CORRESPONDENCE** — P13s factorisation pattern one level down, **the winding "
+            "supplying the quantisation and the Maxwell field the sign and scale — TESTABLE**. "
+            "Last actual move: r2873.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

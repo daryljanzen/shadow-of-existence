@@ -4,9 +4,9 @@
 
 ## ⇒ **5 OPEN · 11 STEPS LEFT** *(was 10 last revision)* **· ~25 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 3**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 4**
 
-*⌗ **LAST ACTUAL MOVE — r2877 — expected yield again, as predicted. Three uncited receipts: **the ~21% figure is FORMALLY WITHDRAWN** (B4), **the acoustics WORK at 98% of the acoustic rate and the 0.62-pi phase is the whole disagreement** (P15), and **C56 removes the last phase candidate — the residual is two orders too small**. ⇒ The live object is **peak AMPLITUDE varying comb-periodically: the peaks in the right places and the wrong heights**. Last actual move: r2873.***
+*⌗ **LAST ACTUAL MOVE — r2878 — expected yield, fourth running, as announced. `PO-1c` cited 1 of 8 top-ranked receipts. `P14_the_isospin_exchange`: the owed relation **cannot be a Q-to-0 limit** (the lap does not exist at Q != 0) and **cannot be an identification**, so it **must be a CORRESPONDENCE** — P13s factorisation pattern one level down, **the winding supplying the quantisation and the Maxwell field the sign and scale — TESTABLE**. Last actual move: r2873.***
 
 *⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
@@ -17,13 +17,13 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-5** | the five multiplets — and 11 delivered contents | **4** ↓1 | 5 | 4 ⚠ | BUILD | 18 | — | r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet |
+| **PO-5** | the five multiplets — and 11 delivered contents | **4** ↓1 | 5 | 4 ⚠ | BUILD | 19 | — | r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet |
 
 ### B · THE 2+1 CLUSTER — four readings of two splits. Independent of A.
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-1c** | does uud have a geometric counterpart | **2** ↑1 | 1 | 1 | READ | 1 | — | CLEAR -- the horn is established; one count to run |
+| **PO-1c** | does uud have a geometric counterpart | **2** ↑1 | 1 | 1 | READ | 3 | — | CLEAR -- the horn is established; one count to run |
 
 ### C · THE QUANTUM SECTOR — independent.
 
