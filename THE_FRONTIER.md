@@ -4,11 +4,11 @@
 
 ## ⇒ **6 OPEN · 11 STEPS LEFT** *(was 11 last revision)* **· ~26 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
 
-*⌗ **LAST ACTUAL MOVE — r2870: `PO-5` understates its own delivered content by four. P03's receipt: **the INTEGER part distinguishes u from d** (the structure r2858–r2868 argued does not exist), the FRACTIONAL part distinguishes quark from antiquark, and the closure rule **agrees 11 of 11 with the observed hadron spectrum** — with **CONFINEMENT as failure to close the lap**. The row carries three of the eleven. ⚠ P03s own bound travels with it: THE IDENTIFICATION IS NOT MADE.***
+*⌗ **LAST ACTUAL MOVE — r2871 was NOT a zero — it fixed what r2870 found rather than finding something new. `PO-5`s delivered block is rewritten from P03s receipt (integer/fractional labels, the 11-of-11 closure rule, confinement as failure to close the lap, and P03s own bound THE IDENTIFICATION IS NOT MADE), and `check_delivered_cites_source` now requires a delivered block to name a receipt. **Last actual move: r2870.*****
 
-> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
+*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
 **RUNWAY: 6 of 6 clear now**; 0 gated ().
 

@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2871 — 2026-08-15 (main line). **`PO-5`'s DELIVERED BLOCK REWRITTEN FROM THE RECEIPTS — AND THIS WAS NOT A ZERO.**
+
+*The block was four revisions of summary over a receipt this line had not read, carrying **three of eleven** delivered contents. Rewritten to state: the module (the branching); the group (a smallest-connected-HULL statement, bundle flat, so discrete content and not coupling); **the fractional part = quark/antiquark and the INTEGER part = $u$/$d$**; **the closure rule agreeing 11 of 11 with the observed hadron spectrum**; **confinement as failure to close the lap**; and second quantisation's baryon 1 / diquark 0 / meson 1 as the same result reached a second way.*
+
+**⚠ AND P03's BOUND NOW TRAVELS WITH IT:** *"THE IDENTIFICATION IS NOT MADE".*
+
+**⌗ `check_delivered_cites_source` BUILT AND SEEDED** — *a delivered block must name a receipt or paper section, because **a summary of delivered content is not wrong, it is PARTIAL, and nothing marks it as partial**; an argument built on it inherits the missing remainder as an assumed absence.*
+
+⇒ ***SINCE = 1: this fixed what r2870 found rather than finding something new.***
+
 ### Revision r2870 — 2026-08-15 (main line). **`PO-5` UNDERSTATES ITS OWN DELIVERED CONTENT BY A FACTOR OF FOUR.**
 
 *Went to weigh P03 against P14 on $T$. **The surrounding paragraph is the finding.***

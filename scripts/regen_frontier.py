@@ -46,13 +46,12 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 0
-LASTFIND = ("r2870: `PO-5` understates its own delivered content by four. P03's receipt: **the "
-            "INTEGER part distinguishes u from d** (the structure r2858–r2868 argued does not "
-            "exist), the FRACTIONAL part distinguishes quark from antiquark, and the closure rule "
-            "**agrees 11 of 11 with the observed hadron spectrum** — with **CONFINEMENT as failure "
-            "to close the lap**. The row carries three of the eleven. ⚠ P03s own bound travels with "
-            "it: THE IDENTIFICATION IS NOT MADE.")
+SINCE = 1
+LASTFIND = ("r2871 was NOT a zero — it fixed what r2870 found rather than finding something new. "
+            "`PO-5`s delivered block is rewritten from P03s receipt (integer/fractional labels, the "
+            "11-of-11 closure rule, confinement as failure to close the lap, and P03s own bound "
+            "THE IDENTIFICATION IS NOT MADE), and `check_delivered_cites_source` now requires a "
+            "delivered block to name a receipt. **Last actual move: r2870.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
