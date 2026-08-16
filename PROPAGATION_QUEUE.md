@@ -53,7 +53,7 @@ something else. **Neither is a physics error; both are places a careful reader i
 
 *These record WHAT A RECEIPT MEASURES and are safe now, because they make no claim about CR.*
 
-- **`P15_the_spacing_deficit_survives`** — *measures the $\sim$20% spacing deficit **`B4` withdrew**;
+- **`P15_the_spacing_deficit_survives_the_one_fitted_parameter`** — *measures the $\sim$20% spacing deficit **`B4` withdrew**;
   its stability result is transient-region.*
 - **`C56`** — *propagates the asymptotic $+0.075\%$ shift, **not the $+142$ transient**, which is
   $\sim860\times$ larger.*
