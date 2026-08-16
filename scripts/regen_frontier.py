@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2973: **S3 says the commutation is a LEADING-ORDER statement; r2919 recorded it as "
-            "STRUCTURAL.** S3: 'NOT claimed ... that the commutation survives interaction — D1 "
-            "states it at leading order, and that is the towers own question'. ⚠ And it is "
-            "**upstream of the whole row**: the direct-integral decomposition REQUIRES it, so the "
-            "fibre picture, D1s per-fibre closure, the straddle, **and the sentence I just wrote "
-            "into P10 citing D1** all rest on the answer. OWED #579.")
+LASTFIND = ("r2974: #579 settled — **the commutation is STRUCTURAL**, because Gamma-hat is defined as "
+            "**the singular part, i.e. the coefficient multiplying 1/x^2, which is x-independent BY "
+            "DEFINITION**; such an operator commutes with the radial part at every order. S4 right, "
+            "r2919 stands. ⚠ **And S3s caveat is about something else and sharper: whether the "
+            "interacting Hamiltonians singular part SEPARATES cleanly at all beyond leading order — "
+            "whether such a Gamma-hat EXISTS, not whether it commutes.** Filed #580.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

@@ -434,3 +434,4 @@ r2970  CORPUS      P10 body edited (floor follows; two thresholds distinguished)
 r2971  LATENT      D1: the sub-threshold sets size is irrelevant to the closure -- my r2970 paper edit is in question. OWED 578.
 r2972  CORPUS      #578 settled: the deficiency statement presupposes the straddle; edit sharpened to name it, citing D1.
 r2973  LATENT      S3: the commutation may be leading-order only, not structural. Upstream of the fibre picture and the r2972 edit.
+r2974  LATENT      the commutation is structural (x-independence is the definition); the real question is whether Gamma-hat EXISTS beyond leading order.

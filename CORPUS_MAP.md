@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2974 — 2026-08-15 (main line). **#579 SETTLED: THE COMMUTATION IS STRUCTURAL, AND S3's CAVEAT IS ABOUT SOMETHING ELSE AND SHARPER.**
+
+*P10 states it **unqualified** — "**As Gamma-hat commutes with the radial part**, the operator decomposes as a direct integral over its spectrum" — with no "at leading order". And the reason is in what Gamma-hat IS:*
+
+⇒ ***Gamma-hat is "**the SINGULAR PART of the interacting graviton Hamiltonian**" — P10's own words — which means **the coefficient MULTIPLYING 1/x^2**, and a coefficient is **x-independent by definition**. So the commutation is not a property the complete operator happens to have; **it is a property of what "boundary coefficient" MEANS**. An operator defined as the x-independent coefficient of 1/x^2 commutes with the radial part at EVERY order.***
+
+**⌗ So S4 is right and r2919 stands** — *and the reason is stronger than S4 gives: S4 says they act on different factors; **the sharper point is that x-independence is Gamma-hat's definition, not its accident**.*
+
+**⚠⚠ AND WHAT S3's CAVEAT IS ACTUALLY ABOUT IS REAL AND HARDER:** ***whether the interacting Hamiltonian's singular part SEPARATES cleanly into an x-independent coefficient times 1/x^2 at all beyond leading order — whether such a Gamma-hat EXISTS, not whether it commutes once it does.*** *A well-posed question, and not the one either receipt states. Filed as `OWED` #580.*
+
+⇒ ***So the P10 sentence and the fibre picture stand; what was upstream turns out to be a different upstream than r2973 named.***
+
 ### Revision r2973 — 2026-08-15 (main line). **S3 SAYS THE COMMUTATION IS A LEADING-ORDER STATEMENT; r2919 RECORDED IT AS STRUCTURAL. THE DIFFERENCE IS UPSTREAM OF EVERYTHING ON `PO-6`.**
 
 *Went looking for whether the straddle is computable and found `S3_c6_is_a_theorem_not_a_condition`'s closing caveat instead:*
