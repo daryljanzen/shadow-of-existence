@@ -389,3 +389,4 @@ r2863  LATENT      PO-2s level 3 has a TESTABLE form: CRs A_2 weights are mass-t
 r2864  LATENT      PO-2 struck: 2M varies neither by generation nor by hadron, so nothing observable decides level 3.
 r2865  LATENT      PO-1cs four orbits sort by SPECIES; uud/udd/uuu/ddd are an ISOSPIN ladder. Right count, wrong quantity.
 r2866  LATENT      count-match sweep clean: 14 claims, 2 known defects, no third. NOT a zero.
+r2867  LATENT      P14s 3x2x2: the horn over-assigns isospin to the right-handed pair. Over-symmetric, not missing.

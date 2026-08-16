@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2867 — 2026-08-15 (main line). **THE FIFTH MULTIPLET AND `PO-1c`'s LABEL MISMATCH ARE ONE DEFECT WITH ONE CAUSE.**
+
+*P14 carries a structure this register never held: **"the twelve null legs factor by the corpus's OWN sheet index as $3$ (graze point / colour) $\times2$ (horn) $\times2$ (ruling, graded by $R$) … the $3$ is colour, the FIRST 2 IS WEAK ISOSPIN, the second $2$ is CHIRALITY — multiplicities agreeing STATE BY STATE, four legs per graze point against $u_L,d_L,u_R,d_R$ at 3 each"**.*
+
+**⛔ AND THE CLAUSE THAT DECIDES IT:** *"$T$ … delivers a species label, not $SU(2)_L$'s chiral action, **the two occupations differing on the RIGHT-HANDED PAIR**".*
+
+⇒ ***The horn is weak isospin exactly where $SU(2)_L$ acts and over-assigns it where it does not: left-handed ✔ a doublet against a doublet; **right-handed ⛔ a doublet against TWO SINGLETS**.***
+
+**⌗ AND THAT IS THE FIFTH MULTIPLET:** *$u^c$ and $d^c$ are separate multiplets **precisely because they are $SU(2)$ singlets**. The horn pairs them ⇒ four classes where the SM has five. ***Not a missing structure but an OVER-SYMMETRIC one**, correcting r2860's "no candidate structure exists".*
+
+**⚠ WHAT IS OPEN IS THE SM's OWN HARDEST FEATURE:** *what BREAKS the horn's $\mathbb{Z}_2$ on the right-handed pair? That is weak chirality, the corpus grades chirality by $R$ — **so: do $R$ and the horn commute?** Checkable.*
+
 ### Revision r2866 — 2026-08-15 (main line). **THE COUNT-MATCH SWEEP CAME BACK CLEAN — AND THIS WAS NOT A ZERO.**
 
 *The defect "a count that matches while the quantity does not" hit twice in three turns (r2857, r2865), so it was hunted as a named class across all six open rows: **14 count-match claims, checked.***
