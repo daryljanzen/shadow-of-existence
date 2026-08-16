@@ -4,11 +4,11 @@
 
 ## ⇒ **3 OPEN · 6 STEPS LEFT** *(was 5 last revision)* **· ~8 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
 
-*⌗ **LAST ACTUAL MOVE — r2957: **B7 gives the band and it partly contradicts r2955.** 'The seam phase MOVES the asymptotic intercept by ~0.31 l_A — HALF the 0.615 disagreement — while the spacing holds', so the 0.62-pi is **NOT a parameter-free structural prediction** and **until CRPHI is fixed the disagreement carries a datum-uncertainty band COMPARABLE TO ITSELF**. ⇒ r2955 holds on B9s 0.408 (already the best phase) and fails on B7s 0.615. **Two quantities, and I collapsed them.*****
+*⌗ **LAST ACTUAL MOVE — r2958 was not a zero — it scoped a derivation and REFUSED a transfer. X1 closes rho_r/rho_m against the progenitor **structurally**: it scales as 1/a so has no single value to hand over, and the crossing is MULTIPLICATIVE so a common factor cancels in a RATIO. ⛔ **That does not transfer to CRPHI, which is a PHASE — dimensionless and ADDITIVE.** A precedent, not a proof: the live question is the same KIND and is unasked. Last actual move: r2957.***
 
-> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
+*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
 **RUNWAY: 3 of 3 clear now**; 0 gated ().
 
@@ -33,7 +33,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 18 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
+| **PO-7** | the comb: rate REPRODUCES, level offset open | **3** ↑1 | 2 | 1 | READ | 19 | — | r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE |
 | **PO-10** | model selection: fix the control, then scan | **2** ↑1 | 1 | 1 | READ | 30 | — | r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights |
 
 ---

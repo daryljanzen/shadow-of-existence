@@ -146,6 +146,14 @@ sources: [cowork, chat]
 
 
 
+### Revision r2958 — 2026-08-15 (main line). **THE CORPUS HAS CLOSED ONE SEAM DATUM AGAINST THE PROGENITOR STRUCTURALLY, AND ITS ARGUMENT DOES NOT TRANSFER TO `CRPHI`.**
+
+**⛭ `X1_the_ratio_is_a_clock_reading_not_a_carrier`, on the composition ratio:** *"it is not the kind of quantity a crossing can carry: **it scales as 1/a, so it has NO SINGLE VALUE TO HAND OVER; and the crossing is MULTIPLICATIVE, so a common factor CANCELS in the ratio**" ⇒ "it is a **READING of the observable leg's own clock**, and the clock's zero is not something the previous universe hands over", with the datum half moving **"from OPEN TARGET to CLOSED NEGATIVE with a stated reason — a different disposition, and a weaker claim than closure"**.*
+
+**⛔ AND THE ARGUMENT DOES NOT TRANSFER:** *the composition ratio is a **RATIO** and the crossing is **multiplicative**, which is exactly why a common factor cancels. **`CRPHI` is a PHASE — dimensionless and ADDITIVE** — so "a common factor cancels in the ratio" says nothing about it. **I will not import a structural obstruction from one datum to another because both sit at the seam.***
+
+**⌗ WHAT THIS DOES ESTABLISH:** *a **precedent, not a proof** — the corpus has already found one seam datum that cannot be derived from the progenitor **for a reason specific to what kind of quantity it is**. ⇒ **So the live question for `CRPHI` is the same KIND of question and has not been asked: does the crossing carry an additive phase?** X1 is the template for how it would be answered.*
+
 ### Revision r2957 — 2026-08-15 (main line). **B7 GIVES THE BAND, AND IT PARTLY CONTRADICTS r2955.**
 
 **⛭⛭ `B7_the_seam_phase_moves_the_asymptotic_intercept`, run:** *"**the seam phase MOVES the asymptotic intercept by ~0.31 l_A — HALF the 0.615 disagreement — while the spacing holds**. So the 0.62-pi is **NOT a parameter-free structural prediction**: it is correct at the default CRPHI = 0 … **but a substantial part is carried by the seam-phase datum, which is ASSIGNED AND NOT YET DERIVED**" — with matched-order intercepts phi=0 → −0.066, phi=pi/2 → +0.066, phi=pi → −0.244.*

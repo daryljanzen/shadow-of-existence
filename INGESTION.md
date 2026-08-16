@@ -479,3 +479,4 @@ r2954  LATENT      B9s person-gate is retracted: all three inversions closed, no
 r2955  LATENT      PO-seam is not a row; the CRPHI derivation selects within a pair whose members both leave 0.408.
 r2956  LATENT      PO-7s object has a second clause: is the first-peak deficit a real disagreement with the sky. Needs 0.408 vs uncertainty.
 r2957  LATENT      the seam phase moves the intercept by half the disagreement; the band is comparable to itself. r2955 half wrong.
+r2958  LATENT      X1 closes a RATIO against the progenitor structurally; CRPHI is a PHASE and the argument does not transfer.
