@@ -146,6 +146,28 @@ sources: [cowork, chat]
 
 
 
+### Revision r2950 — 2026-08-15 (main line). **THE S8/r2921 TENSION IS SETTLED, AND r2921's "COUPLING REMOVES FREEDOM" IS BACKWARDS.**
+
+**⛔ P10:** *"the single boundary condition of the free scale factor is thereby **REPLACED**, in the coupled theory, by a self-adjoint condition supported on the sub-threshold graviton subspace, **ITS DEFICIENCY THAT SUBSPACE RATHER THAN A LINE**".*
+
+⇒ ***THE FREEDOM GROWS.** The free theory had a **one-line** deficiency; the coupled theory's is **a whole subspace**. r2921 read "the graviton momentum … removes the boundary freedom" and generalised it — **but that clause is only about the limit-point part**.*
+
+**⛭⛭ AND THAT IS WHY THE NEXT SENTENCE MATTERS:** *"the boundary condition on that sub-threshold subspace, **HOWEVER, IS SUPPLIED by the same principle that fixed the free sector**. Thermal regularity … **IMPOSES** the regular branch at the one horizon period". **Imposed, not chosen, by a principle already in use.***
+
+⇒ ***Both halves stand: **S8 is right that QUANTIZATION does not remove the freedom — it enlarges it — and P10 never claims it does. What removes it is THERMAL REGULARITY.****
+
+**⌗ SO THE REMAINING QUESTION IS P10's OWN NAMED PAIR:** *the **spectrum of the complete \$\\hat\\Gamma\$** together with **the UV definition of the tower sums** — "the open frontier". Every other part of the paragraph is now read closed.*
+
+### Revision r2949 — 2026-08-15 (main line). **\`THE_WEAVE\` BROUGHT CURRENT AFTER 100 REVISIONS.**
+
+*r2849–r2948: **eleven rows struck**, three remaining, and one pattern across all of it — **almost every finding was the register mis-holding what the corpus already had**.*
+
+**⛭⛭ WHAT THE CORPUS HELD, UNCITED, IN ROWS THAT CALLED IT OPEN:** *\`PO-2\`'s constant mass-tie · \`PO-1b\`'s kinematic face · \`PO-1c\`'s thirds **forced with no SM input** and the closure rule **agreeing 11 of 11 with the observed hadron spectrum** · \`PO-5\`'s triality **computed before it was asked to mean anything** · \`PO-6\`'s floor **answered YES** · \`PO-7\`'s \$\\ell_A\$ **preserved to +0.075%, claimed in advance and untuned**.*
+
+**⛔ AND WHAT THE REGISTER WAS DOING INSTEAD:** *carrying **51 of 483** receipts at the start; quoting a receipt's **negative half** while its positive half was the stronger result; reading **transient measurements as asymptotic statements**; building six revisions on a structure that sat in an uncited receipt.*
+
+⇒ ***THE ONE SENTENCE: the two lines' work was more complete and more coherent than the register describing it, and a hundred revisions of reading closed eleven rows **without a single new computation being run**.***
+
 ### Revision r2948 — 2026-08-15 (main line). **`PO-6`'s FLOOR IS ANSWERED YES, AND WHAT REMAINS IS A SPECTRAL QUESTION.**
 
 *Applied the `PO-5` method — **read the closures before working the open** — and `S8_the_floor_follows` closes the half r2922 recorded as the row's live margin.*
