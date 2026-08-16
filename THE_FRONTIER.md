@@ -4,11 +4,11 @@
 
 ## ⇒ **4 OPEN · 9 STEPS LEFT** *(was 7 last revision)* **· ~19 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
 
-*⌗ **LAST ACTUAL MOVE — r2927: **nothing acts chirally because the CONSTRUCTED GEOMETRY IS ACHIRAL.** P09: 'the corpus has BUILT the polarized Gowdy–de Sitter cut, **which is the ACHIRAL one**, and only ASSERTS the unpolarized turning case … **the corpus first chiral geometry is NAMED and not constructed**'. And structurally: four one-dim characters **cannot act on one R-eigenspace and not the other**. ⇒ `PO-5`s right-handed mismatch is what an achiral construction MUST give — and P09 says the chiral member is REACHABLE.***
+*⌗ **LAST ACTUAL MOVE — r2928 was not a zero — it scoped a build from what is already worked. P11s built case is the **polarized** Gowdy–de Sitter leaf carrying **a single propagating mode**; the unpolarized one has two, and **handedness needs two** (a circular polarization is two linear ones with a phase). ⇒ **The missing chirality and the missing second mode are the same absence**, and the build is a named extension of a solved system. ⚠ No turn count claimed. Last actual move: r2927.***
 
-> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
+*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
 **RUNWAY: 4 of 4 clear now**; 0 gated ().
 
@@ -17,7 +17,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-5** | the five multiplets — two content steps | **2** ↓1 | 3 | 4 ⚠ | BUILD | 33 | — | r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet |
+| **PO-5** | the five multiplets — two content steps | **2** ↓1 | 3 | 4 ⚠ | BUILD | 34 | — | r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet |
 
 ### B · THE 2+1 CLUSTER — four readings of two splits. Independent of A.
 

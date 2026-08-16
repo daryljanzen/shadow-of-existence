@@ -42,13 +42,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 0
-LASTFIND = ("r2927: **nothing acts chirally because the CONSTRUCTED GEOMETRY IS ACHIRAL.** P09: "
-            "'the corpus has BUILT the polarized Gowdy–de Sitter cut, **which is the ACHIRAL one**, "
-            "and only ASSERTS the unpolarized turning case … **the corpus first chiral geometry is "
-            "NAMED and not constructed**'. And structurally: four one-dim characters **cannot act "
-            "on one R-eigenspace and not the other**. ⇒ `PO-5`s right-handed mismatch is what an "
-            "achiral construction MUST give — and P09 says the chiral member is REACHABLE.")
+SINCE = 1
+LASTFIND = ("r2928 was not a zero — it scoped a build from what is already worked. P11s built case "
+            "is the **polarized** Gowdy–de Sitter leaf carrying **a single propagating mode**; the "
+            "unpolarized one has two, and **handedness needs two** (a circular polarization is two "
+            "linear ones with a phase). ⇒ **The missing chirality and the missing second mode are "
+            "the same absence**, and the build is a named extension of a solved system. ⚠ No turn "
+            "count claimed. Last actual move: r2927.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

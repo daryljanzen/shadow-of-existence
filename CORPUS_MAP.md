@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2928 — 2026-08-15 (main line). **WHAT THE CHIRAL CUT TAKES IS NAMED BY WHAT IS ALREADY BUILT: THE SECOND PROPAGATING MODE.**
+
+*P09 says the chiral member is reachable and "needs no machinery the operator lacks" without saying what it takes. **P11's worked case says it.***
+
+**⛭⛭ `I3_the_identification_is_general`:** *"on a polarized Gowdy–de Sitter leaf, the spatial leaf carries **A SINGLE PROPAGATING MODE**" — and `I2`: "**inhomogeneous confined (2 KV) worked in P11 — polarized Gowdy–de Sitter**".*
+
+⇒ ***So the built case has ONE polarization and the unpolarized case has TWO — and **handedness is not available with one**: a circular polarization is two linear ones with a relative phase. **The missing chirality and the missing second mode are the same absence.****
+
+**⌗ AND THAT ANSWERS THE SCOPE IN KIND:** *the build is **extending P11's worked polarized Gowdy–de Sitter leaf to the unpolarized one** — a named extension of a system this corpus has solved, with the two polarizations **coupling nonlinearly**, which is what makes unpolarized Gowdy harder and is standard rather than exotic.*
+
+**⚠ AND NO TURN COUNT IS CLAIMED:** *the object is named, its input is worked, the difficulty is a known one — **what it would cost is not something this reading establishes**, and the BUILD flag on this row stays.*
+
 ### Revision r2927 — 2026-08-15 (main line). **NOTHING ACTS CHIRALLY BECAUSE THE CONSTRUCTED GEOMETRY IS ACHIRAL — AND THE CORPUS SAYS SO IN A PAPER `PO-5` HAS NEVER TOUCHED.**
 
 *Asked what would break the $2$ into the SM's asymmetric right-handed structure. **Two answers, opposite directions.***

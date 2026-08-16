@@ -450,3 +450,4 @@ r2924  LATENT      the counts blocker L-74 is closed and unpropagated since r288
 r2925  LATENT      the 12 legs are FORCED; L-107 governs the tower above them, which is a different object than PO-5s count.
 r2926  INSTRUMENT  r2887 sites swept: 3 of 5 gating clauses propagated, 2 not, neither reaching an open row.
 r2927  LATENT      the built geometry is ACHIRAL (polarized Gowdy-dS); the chiral member is named, unbuilt, and reachable.
+r2928  LATENT      the missing chirality is the missing second polarization; the build extends P11s polarized Gowdy-dS leaf.
