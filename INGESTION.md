@@ -421,3 +421,4 @@ r2895  LATENT      PO-6 is three questions not one: the -1/4 threshold is load-b
 r2896  LATENT      group D is sequenced not merged: the transfer makes a spectrum, PO-10 fits one. PO-10 gated on PO-7.
 r2897  LATENT      PO-7s two steps are genuinely two: phase is where a peak sits, amplitude is how tall. Not a zero.
 r2898  LATENT      PO-10 is two steps: fix the control arm, then a one-parameter scan vs BIC 26.9. Not gated on PO-7.
+r2899  LATENT      PO-6s UV limit is the SHEAR, CR-specific, correcting r2861. Two live sub-questions, not one.

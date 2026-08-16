@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2899 — 2026-08-15 (main line). **`PO-6`'s UV HALF HAS A NAMED CR-SPECIFIC LIMIT — THE SHEAR — WHICH CORRECTS r2861 A SECOND WAY.**
+
+*Read the 16 distinct "what remains" statements rather than counting them. **One names a computation.***
+
+**⛭⛭ `S50_the_counterterm_basis_is_one_dimensional`:** *every quadratic curvature invariant on a maximally symmetric background is a constant times $\alpha^{-4}$, **so the counterterm basis is ONE-DIMENSIONAL** — and P10's own slicing $a(T)=\alpha\cosh(T/\alpha)$ has $R=12/\alpha^2$ constant, so the degeneracy holds on the background the free tower uses.*
+
+⇒ ***Its closing sentence: "the c54.211 'real limit is the coupled sector' is **WITHDRAWN** at c54.215: the degeneracy is **CONFORMAL FLATNESS, not maximal symmetry**, so **no scale factor can break it, and back-reaction cannot**. **THE REAL LIMIT IS THE SHEAR (`L-549`)**".***
+
+**⛔ SO r2861 IS HALF WRONG A SECOND WAY.** *It read the UV clause as "the standard problem of the interacting theory, which CR MEETS rather than owes". **The basis is one-dimensional by a CR-specific fact — conformal flatness of its own background — and what limits it is the SHEAR, an object of this construction.***
+
+**⌗ TWO LIVE SUB-QUESTIONS, NOT ONE:** *(a) does $\hat\Gamma$ stay above $-1/4$ on realised states; (c) what the shear does to the one-dimensional counterterm basis. **(b), the floor, remains open and unused.***
+
 ### Revision r2898 — 2026-08-15 (main line). **`PO-10`'s ONE STEP IS TWO, AND MY r2896 GATE IS TOO WIDE.**
 
 *Counted what the receipts say is left: **6 distinct "what remains" statements against the board's one step**. Two are decisive and both uncited.*

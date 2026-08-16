@@ -21,7 +21,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 EST = {
  'PO-5':  ('the five multiplets — two content steps', 2, 3, 4, None,
            'r2860: four classes vs five multiplets, and the horn route is DEAD (a lap is triality-trivial). NO candidate structure exists for the fifth multiplet'),
- 'PO-6':  ('the interacting tower — CRs share of it', 1, 1, 3, None,
+ 'PO-6':  ('the tower: the -1/4 threshold and the shear', 2, 1, 3, None,
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
  'PO-7':  ('the comb: rate REPRODUCES, level offset open', 3, 2, 1, None,
            'CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840'),
@@ -43,12 +43,11 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2898: **`PO-10`s one step is TWO, and my r2896 gate is too wide.** C32: the row **no "
-            "longer owes a RULE, it owes a NUMBER** — the chi-squared at CRs best Omega_m on the "
-            "same bins, **a one-parameter scan against a likelihood ALREADY WIRED**, with a stated "
-            "threshold (BIC 26.9). C49: first **the CONTROL arm fails its own calibration** and "
-            "must be brought to chi2/dof ~1. **Neither needs PO-7s transfer** — I gated a whole row "
-            "on a dependency that holds for one half.")
+LASTFIND = ("r2899: **`PO-6`s UV half has a named CR-SPECIFIC limit and it is THE SHEAR** — which "
+            "corrects r2861 a second way. S50: the counterterm basis is ONE-DIMENSIONAL because "
+            "**the degeneracy is CONFORMAL FLATNESS, not maximal symmetry, so no scale factor can "
+            "break it and back-reaction cannot** — and 'the real limit is the SHEAR (L-549)'. ⇒ Not "
+            "the standard interacting-QFT problem. **Two live sub-questions, not one.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
