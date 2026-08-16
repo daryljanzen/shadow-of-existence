@@ -35,17 +35,17 @@ EST = {
            'classification COMPLETE; open only as PO-1c\'s candidate'),
  'PO-6':  ('the interacting tower', 2, 3, 3, None,
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
- 'PO-7':  ('the first acoustic peak', 2, 2, 3, None,
-           'CLEAR -- and r2839 RESHAPED it: the deficit contradicts P15 own claim; C2_horizon_limits is the check'),
+ 'PO-7':  ('the first acoustic peak', 3, 2, 3, None,
+           'CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840'),
  'PO-10': ('the scalar remainder', 1, 2, 1, None,
            'CLEAR -- read M2\'s own bound to settle whether half 1 is answered'),
 }
 # ** turns since the last discovery that the problem space was misunderstood, and what it was **
 SINCE = 0
-LASTFIND = ("r2839: `PO-7` asks a question P15 ANSWERS — the modes are already sub-horizon at the seam, "
-            "so driving completes on the collapse side and the peaks reduce to flat ΛCDM's. **The live "
-            "problem is that the row's own 0.856 deficit is IN TENSION with that claim** — and P15 names "
-            "where its claim would bite: the low-k end, which is where ℓ_A is set.")
+LASTFIND = ("r2840: my own r2839 candidate mechanism for `PO-7` is ELIMINATED — P15's completeness "
+            "qualification is about MODE DRIVING (amplitudes, k-dependent entry) while ℓ_A is a "
+            "DISTANCE/SOUND-HORIZON RATIO (spacing). Different objects. **The tension stands with no "
+            "mechanism, which makes PO-7 the sharpest live problem on the board.**")
 
 ORDER = ['PO-11', 'PO-5', 'PO-2', 'PO-1c', 'PO-1d', 'PO-1b', 'PO-1a', 'PO-6', 'PO-7', 'PO-10']
 GROUP = {'PO-11': 'A', 'PO-5': 'A', 'PO-2': 'A',

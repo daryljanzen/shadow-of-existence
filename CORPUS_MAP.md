@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2840 — 2026-08-15 (main line). **MY OWN r2839 MECHANISM FOR `PO-7` IS ELIMINATED, AND THE TENSION IS SHARPER.**
+
+*r2839 proposed the 0.856 deficit might sit where P15's completeness claim fails, since P15 says "the low-$k$ end is where it would bite".*
+
+**⛔ THAT CONFLATES TWO OBJECTS.** *`C2_horizon_limits`, run: the qualification is about **MODE DRIVING** — each mode's driving integral has its lower limit at its own k-dependent entry, complete for modes entering before $r_*=1.5338\,r_{\rm seam}$. **A statement about amplitudes.***
+
+⇒ ***And $\ell_A$ is not a mode: "the comoving angular-diameter distance is $D_M=D_C$, the same flat-$\Lambda$CDM observable that places the acoustic scale at $\ell_A\simeq301$" — a RATIO setting peak SPACING. Incomplete driving cannot move it.***
+
+**⌗ SO THE TENSION STANDS UNEXPLAINED**, *and `PO-7` becomes the sharpest live problem on the board: a measured, pin-invariant, structural departure from a claim the paper makes in its own voice, with no mechanism. Steps 2 → 3.*
+
 ### Revision r2839 — 2026-08-15 (main line). **`PO-7` ASKS A QUESTION P15 ANSWERS; THE LIVE PROBLEM IS THAT THE MEASUREMENT DISAGREES.**
 
 *Picked by the new metric — read the row held LEAST well, expecting to be wrong.*
