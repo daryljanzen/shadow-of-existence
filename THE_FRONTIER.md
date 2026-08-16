@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2942: **the fork carries a claim this row never held.** FORK_c54: '**quarks and leptons are NOT two fields: they are ONE DIRAC SPINOR IN DIFFERENT PARTIAL WAVES**' — and it explains P14s unaccounted observation that the content is anomaly-free 'only as a complete set', because **they are one fields tower**. ⇒ **My 3x2x2 = 12 analysis is the SEAT count, the side THE_BASE_RATE scores as not having survived**, while the favoured reading is about the TOWER. I analysed the disfavoured branch.***
+*⌗ **LAST ACTUAL MOVE — r2943: **the counts LAST ROUTE is answered NO.** P03_transverse_space_is_round: 'L-88 — does the tower have a Kaluza–Klein shape? — is now the counts ONLY REMAINING ROUTE', and P14_tower_is_not_kaluza_klein records **'L-88 answered: NO'**. ⛔ And my r2926 sweep concluded the opposite because **I checked whether the closure NAMED an open row** — it does not, and its consequence reaches PO-5 anyway. Protocol §⑤·7 added.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

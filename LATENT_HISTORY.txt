@@ -404,3 +404,4 @@ r2939  LATENT      OWED 574 answered: the 71-vs-1 gap was text matching; the rea
 r2940  INSTRUMENT  six of 125 citations did not resolve (truncations and an ambiguous stub); check_citations_resolve built.
 r2941  LATENT      the FORCED 12-legs premise is the favoured side of an unlanded fork; THE_BASE_RATE says the seat count did not survive.
 r2942  LATENT      quarks and leptons are ONE Dirac spinor in different partial waves; my 3x2x2 is the disfavoured seat count.
+r2943  LATENT      the seat counts last route (L-88) is answered NO; my r2926 sweep missed it by testing for a named row.

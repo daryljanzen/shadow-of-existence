@@ -129,6 +129,22 @@ same as zero.*
 
 ---
 
+## ⑤·7 A CLOSURE'S CONSEQUENCE DOES NOT HAVE TO NAME A ROW TO REACH IT
+
+***Added r2943.*** *r2924 found a marked-stale closure whose consequence was never drawn. r2926 swept
+the other marked sites for the same failure and concluded **"neither unpropagated instance reaches an
+open row"** — **by checking whether each closure NAMED an open row.** *`L-88` names none, and its
+closure* ***removed `PO-5`'s count's last remaining route.***
+
+⇒ **The test is not "does this closure mention the row" but "what did this closure make true or
+false, and does that bear on anything open".** *The first is a text match; the second requires reading
+what the closed thing was FOR.*
+
+⌗ *And §⑤·6 does not catch this: the sweep was calibrated on a case that DID name a row, so the
+negative case was never tested.*
+
+---
+
 ## ⑥ THE REPORT — the board LAST, computed after the work
 
 *Find first, board second. **Never a slogan in place of the table**, never the estimates without the

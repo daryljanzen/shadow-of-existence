@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2943 — 2026-08-15 (main line). **THE COUNT'S LAST ROUTE IS ANSWERED NO, AND MY r2926 SWEEP CONCLUDED THE OPPOSITE.**
+
+**⛭⛭ `P03_transverse_space_is_round`, run:** *"(b) is the last survivor, so **`L-88` — 'does the tower have a Kaluza–Klein shape?' — IS NOW THE COUNT'S ONLY REMAINING ROUTE**".*
+
+⇒ ***And `P14_tower_is_not_kaluza_klein` records **"`L-88` answered: NO"**. The count's only remaining route is closed in the negative. **The count has no route.****
+
+**⛔ AND THIS IS r2924's FAILURE REPEATING, WITH A SWEEP THAT MISSED IT:** *r2926 swept the four marked sites and concluded "neither unpropagated instance reaches an open row" — **because I checked whether `L-88` NAMED an open row**. It does not. **Its consequence reaches `PO-5` directly: it was the count's last route.** `TURN_PROTOCOL` §⑤·7 added: **a closure's consequence does not have to name a row to reach it**.*
+
+**⛭⛭ AND THE CORPUS TESTED ITS OWN CLAIM AGAINST ITS OWN DISCRIMINANT:** *"`THE_BASE_RATE`'s finding is that least-arbitrariness arguments which **DELETE** succeed and ones which **ADD** fail. The 12+3=15 reading ADDED … it **did not survive**. That is the discriminant working as advertised, on the corpus's own claim, **one turn after the corpus wrote the discriminant down**. Meanwhile the roundness result DELETED, and it survived. **Two for two**".*
+
 ### Revision r2942 — 2026-08-15 (main line). **THE FORK CARRIES A CLAIM `PO-5` HAS NEVER HELD, AND IT RELOCATES THE WHOLE ANALYSIS.**
 
 *Read `FORK_c54` around the not-landed sentence instead of quoting past it.*
