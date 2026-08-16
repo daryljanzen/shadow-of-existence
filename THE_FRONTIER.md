@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2901: swept the 45 receipts whose checks assert register state. **6 fail, and they are THREE KINDS**: 1 encodes the retired person-gate; **3 are POINT-IN-TIME VERIFICATIONS — they verified a REPAIR at their own revision and any later legitimate edit breaks them**; 2 are stale frontier claims (a 14-row balance, a PO-7 characterisation from before r2876). ⇒ **A check that verifies a repair cannot survive later edits: those receipts are correct about what they did and permanently red.*****
+*⌗ **LAST ACTUAL MOVE — r2902: **the corpus has NO convention distinguishing point-in-time receipts from invariants** — checked: prefixes are by series, directories by paper, no flag. So three receipts sit permanently red with nothing saying why, **which is how a suite becomes noise a reader learns to skim**. Added `# RERUNNABLE: NO — POINT-IN-TIME` with a required reason, and `check_rerunnable_honest` so the mark can never silence a real failure.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

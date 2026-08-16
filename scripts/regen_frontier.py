@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2901: swept the 45 receipts whose checks assert register state. **6 fail, and they "
-            "are THREE KINDS**: 1 encodes the retired person-gate; **3 are POINT-IN-TIME "
-            "VERIFICATIONS — they verified a REPAIR at their own revision and any later legitimate "
-            "edit breaks them**; 2 are stale frontier claims (a 14-row balance, a PO-7 "
-            "characterisation from before r2876). ⇒ **A check that verifies a repair cannot survive "
-            "later edits: those receipts are correct about what they did and permanently red.**")
+LASTFIND = ("r2902: **the corpus has NO convention distinguishing point-in-time receipts from "
+            "invariants** — checked: prefixes are by series, directories by paper, no flag. So "
+            "three receipts sit permanently red with nothing saying why, **which is how a suite "
+            "becomes noise a reader learns to skim**. Added `# RERUNNABLE: NO — POINT-IN-TIME` with "
+            "a required reason, and `check_rerunnable_honest` so the mark can never silence a real "
+            "failure.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

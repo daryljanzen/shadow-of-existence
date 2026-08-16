@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+# RERUNNABLE: NO — POINT-IN-TIME
+# *** This receipt verified a REPAIR at its own revision.  Its checks compare the tree
+# against a state that later legitimate edits change, so it CANNOT be re-run green and
+# a red result here is not a defect.  Added r2902; the corpus had no convention for
+# this and three receipts were permanently red with nothing saying why. ***
 """R1 -- `PO-4`'s row in `PROTECTED_OPEN.md` was CORRUPT for 368 commits, the corruption was a merge
 artefact of the class `CLAIMS.md` already records, and it was SATISFYING a live gate rather than
 tripping one.  Three further rows carried a second defect, and one of those three is mine.

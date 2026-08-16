@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+# RERUNNABLE: NO — POINT-IN-TIME
+# *** This receipt verified a REPAIR at its own revision.  Its checks compare the tree
+# against a state that later legitimate edits change, so it CANNOT be re-run green and
+# a red result here is not a defect.  Added r2902; the corpus had no convention for
+# this and three receipts were permanently red with nothing saying why. ***
 """R1 -- the receipt registry was validated from CITATIONS INWARD, so twenty rows were read by nothing,
 two of them registered files that have never existed, and the column lint sat downstream of the hole.
 

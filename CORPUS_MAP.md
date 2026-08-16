@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2902 — 2026-08-15 (main line). **THE CORPUS HAS NO CONVENTION FOR POINT-IN-TIME RECEIPTS, AND THREE SIT PERMANENTLY RED WITH NOTHING SAYING WHY.**
+
+*r2901 found three receipts that **verified a REPAIR at their own revision** and cannot be re-run green. **Checked whether the corpus distinguishes such receipts from invariants: it does not** — prefixes are by series (P=247, B=77, C=75…), directories by paper, and no in-file flag exists.*
+
+⇒ ***That is how a suite becomes noise: a "run everything" gate would report three failures forever and the reader learns to skim.***
+
+**⛭ THE CONVENTION, ADDED:** *`# RERUNNABLE: NO — POINT-IN-TIME`, with the reason in the contiguous comment block it opens. Three receipts marked.*
+
+**⌗ AND `check_rerunnable_honest` GUARDS IT:** *every receipt so marked must state a reason, **so the mark can never become a way to silence a real failure**.*
+
+⚠ *Its first form measured prose in a 700-character window and unrelated comment blocks below the mark satisfied it — **the seed did not fire**. Narrowed to the contiguous block; it fires.*
+
 ### Revision r2901 — 2026-08-15 (main line). **THE FAILING-CHECK SWEEP: 45 RECEIPTS, 6 FAILURES, THREE KINDS — AND ONLY HALF ARE DEFECTS.**
 
 *Sized the class r2900 found two instances of: receipts whose `check()` calls assert something about the register. **45 assert register state; 6 fail.***

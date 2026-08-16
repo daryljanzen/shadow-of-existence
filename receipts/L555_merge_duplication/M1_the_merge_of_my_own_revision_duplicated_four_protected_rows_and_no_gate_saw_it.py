@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+# RERUNNABLE: NO — POINT-IN-TIME
+# *** This receipt verified a REPAIR at its own revision.  Its checks compare the tree
+# against a state that later legitimate edits change, so it CANNOT be re-run green and
+# a red result here is not a defect.  Added r2902; the corpus had no convention for
+# this and three receipts were permanently red with nothing saying why. ***
 """M1 -- the `f220/line/54` merge duplicated FOUR protected rows and TWO index rows, no register gate
 saw any of it, and for two of the four rows NEITHER copy was a superset -- the observer line's work
 and the fork's sat in different copies of the same row.

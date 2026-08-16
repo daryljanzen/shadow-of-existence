@@ -424,3 +424,4 @@ r2898  LATENT      PO-10 is two steps: fix the control arm, then a one-parameter
 r2899  LATENT      PO-6s UV limit is the SHEAR, CR-specific, correcting r2861. Two live sub-questions, not one.
 r2900  LATENT      the colourless sector has dimension FOUR (the SMs count with nu_R); two receipts fail on the retired person-gate.
 r2901  INSTRUMENT  45 register-asserting receipts swept: 6 fail in three kinds; 3 are point-in-time repairs, not defects.
+r2902  INSTRUMENT  no convention existed for point-in-time receipts; RERUNNABLE: NO added with a guarding gate.
