@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2859 — 2026-08-15 (main line). **r2858's MECHANISM IS WRONG; ITS CONCLUSION SURVIVES ON A BETTER ONE.**
+
+*r2858 wrote that the horn "gives the isospin that **SPLITS** the fifth multiplet from the fourth". Checked whether the horn and the triality grading act on the same objects.*
+
+**⛭⛭ THEY DO, BUT NOT THAT WAY:** *"the wall is a wall OF a hinge — the DEFINITION" (walls↔hinges 1:1); **"two punctures per hinge give $2^2=4$ legs per hinge pair, ALL SENT TO ONE WALL"** (P14) — so **both horn ends feed the same wall**; and "$T$ is a horn swap costing ONE LAP", "a state's relation to its isospin partner is CAUSAL CONTACT" (P03).*
+
+⇒ ***The horn cannot SPLIT a wall's modes. It PAIRS states ACROSS A LAP. r2858's mechanism is withdrawn.***
+
+**⛭ AND THE ONE-CONSTRUCTION READING SURVIVES, FITTING BETTER:** *$u^c$ and $d^c$ are both $(\bar3,1)$ — same wall, same triality, same chirality — and an **isospin-related PAIR** in the SM. **A pairing across a lap is the right kind of object where a within-wall split was the wrong kind.***
+
+**⌗ AND THE OPEN QUESTION IS SHARPER:** *does the one-lap pairing land on the $(\bar3,1)$ class **specifically**, or on every class? A pairing that acts everywhere pairs $Q$ with itself and delivers nothing.*
+
 ### Revision r2858 — 2026-08-15 (main line). **`PO-5` AND `PO-1c` ARE ONE CONSTRUCTION, AND THE GATE RAN BACKWARDS.**
 
 *Put the MULTIPLET question to the triality proposal for the first time.*

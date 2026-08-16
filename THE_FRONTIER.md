@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2858: `PO-5` and `PO-1c` are ONE CONSTRUCTION, and the gate between them ran BACKWARDS in this register. Triality×chirality gives FOUR classes against the SM's FIVE multiplets; the missing split (u^c from d^c) is weak isospin = **the HORN**, which is `PO-1c`'s structure. **`PO-1c` was recorded as gated on `PO-5`; `PO-5`'s fifth multiplet needs `PO-1c`.** Not an answer that surprised me — the register's picture of how two rows RELATE was wrong.***
+*⌗ **LAST ACTUAL MOVE — r2859: r2858's MECHANISM was wrong. The horn cannot SPLIT a wall's modes — P14: 'two punctures per hinge … **ALL SENT TO ONE WALL**', so both horn ends feed the same wall. **It PAIRS states across a lap** (P03: the isospin-partner relation is causal contact). The one-construction reading survives on a better mechanism — u^c and d^c are an isospin PAIR, and a pairing is the right kind of object where a split was not.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -17,7 +17,7 @@
 
 | id | what it is | steps | was | turns/step | kind | gate | runway |
 |---|---|---|---|---|---|---|---|
-| **PO-5** | the five multiplets; which carries the colour 3 | **3** ↑1 | 2 | 4 ⚠ | BUILD | — | r2858: the gradings give FOUR classes, the SM has FIVE. The fifth needs PO-1cs HORN -- these are ONE construction |
+| **PO-5** | the five multiplets; which carries the colour 3 | **3** ↑1 | 2 | 4 ⚠ | BUILD | — | r2859: four classes vs five multiplets; the horn PAIRS u^c/d^c across a lap (it cannot split a wall). Open: does the pairing land on (3bar,1) specifically |
 | **PO-2** | Nariai / three quarks | **1** | 1 | 1 | READ | PO-5 | levels 1 and 2 done; level 3 is the identification and follows PO-5 |
 
 ### B · THE 2+1 CLUSTER — four readings of two splits. Independent of A.

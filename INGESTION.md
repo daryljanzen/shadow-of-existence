@@ -381,3 +381,4 @@ r2855  LATENT      C57 already measures both arms: CR gaps 0.725/0.853/0.897/0.9
 r2856  LATENT      PO-11 BUILT and struck on cc54s L-831 (all 8 run here); PO-5 ungated.
 r2857  LATENT      PO-5 carried three ratios under one name: 4:1 Weyl, 3:2 multiplet, 2:1 flavour. Target names multiplets.
 r2858  LATENT      PO-5 and PO-1c are one construction; the gate ran backwards. TURN_PROTOCOL opened and corrected.
+r2859  LATENT      the horn PAIRS across a lap, it cannot split a wall; r2858s mechanism withdrawn, conclusion survives.
