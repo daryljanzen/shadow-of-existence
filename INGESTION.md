@@ -480,3 +480,4 @@ r2955  LATENT      PO-seam is not a row; the CRPHI derivation selects within a p
 r2956  LATENT      PO-7s object has a second clause: is the first-peak deficit a real disagreement with the sky. Needs 0.408 vs uncertainty.
 r2957  LATENT      the seam phase moves the intercept by half the disagreement; the band is comparable to itself. r2955 half wrong.
 r2958  LATENT      X1 closes a RATIO against the progenitor structurally; CRPHI is a PHASE and the argument does not transfer.
+r2959  LATENT      the seam supplies that a phase exists, the field forces sin(phi)=0; the progenitor is asked only WHICH of {0,pi}.

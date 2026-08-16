@@ -40,13 +40,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 1
-LASTFIND = ("r2958 was not a zero — it scoped a derivation and REFUSED a transfer. X1 closes "
-            "rho_r/rho_m against the progenitor **structurally**: it scales as 1/a so has no single "
-            "value to hand over, and the crossing is MULTIPLICATIVE so a common factor cancels in a "
-            "RATIO. ⛔ **That does not transfer to CRPHI, which is a PHASE — dimensionless and "
-            "ADDITIVE.** A precedent, not a proof: the live question is the same KIND and is "
-            "unasked. Last actual move: r2957.")
+SINCE = 0
+LASTFIND = ("r2959: asked X1s question of CRPHI. **The SEAM supplies the phase as its own "
+            "characteristic datum** — 'one phase per mode, so it lands in the coherent column BY "
+            "CONSTRUCTION' — and **the field forces sin(phi)=0**. ⇒ **Two of the three things a "
+            "phase needs are already supplied; what is open is WHICH of {0, pi}**. So the "
+            "progenitor is asked for a BINARY, not a continuous datum — a much smaller question "
+            "than 'derive CRPHI', and one nobody has posed this way.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

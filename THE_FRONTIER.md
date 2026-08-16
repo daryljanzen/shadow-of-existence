@@ -4,11 +4,11 @@
 
 ## ⇒ **3 OPEN · 6 STEPS LEFT** *(was 5 last revision)* **· ~8 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2958 was not a zero — it scoped a derivation and REFUSED a transfer. X1 closes rho_r/rho_m against the progenitor **structurally**: it scales as 1/a so has no single value to hand over, and the crossing is MULTIPLICATIVE so a common factor cancels in a RATIO. ⛔ **That does not transfer to CRPHI, which is a PHASE — dimensionless and ADDITIVE.** A precedent, not a proof: the live question is the same KIND and is unasked. Last actual move: r2957.***
+*⌗ **LAST ACTUAL MOVE — r2959: asked X1s question of CRPHI. **The SEAM supplies the phase as its own characteristic datum** — 'one phase per mode, so it lands in the coherent column BY CONSTRUCTION' — and **the field forces sin(phi)=0**. ⇒ **Two of the three things a phase needs are already supplied; what is open is WHICH of {0, pi}**. So the progenitor is asked for a BINARY, not a continuous datum — a much smaller question than 'derive CRPHI', and one nobody has posed this way.***
 
-*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
+> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
 **RUNWAY: 3 of 3 clear now**; 0 gated ().
 

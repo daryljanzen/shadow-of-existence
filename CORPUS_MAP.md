@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2959 — 2026-08-15 (main line). **X1's QUESTION ASKED OF `CRPHI`: THREE SOURCES, THREE ROLES, AND THE PROGENITOR IS ASKED ONLY FOR A BINARY.**
+
+*X1's method is to ask what the crossing does to **that kind** of quantity. For a ratio it is multiplicative, so a common factor cancels. **For a phase it is additive, so the question is whether the crossing is phase-COHERENT** — and the corpus has computed that on the seam itself.*
+
+**⛭⛭ `P15_verify_coherence_comb`:** *"**the null seam's SINGLE CHARACTERISTIC DATUM PER MODE IS ONE PHASE PER MODE, so it lands in the coherent column BY CONSTRUCTION**" — contrast ~4e5 coherent against ~0.9 incoherent. ⇒ **The SEAM supplies the phase as its own characteristic datum: the seam GIVING a phase, not the progenitor handing one over.***
+
+**⌗ SEPARATING WHAT EACH SOURCE FIXES:** *· **THAT there is one common phase per mode** — supplied by the seam, computed, and what makes the comb sharp. · **that its value satisfies sin(phi) = 0** — forced by the field, from freezing before the crossing. · **WHICH of {0, pi}** — **neither fixes this**.*
+
+⇒ ***So the progenitor is being asked for a BINARY, not a continuous datum. "Derive CRPHI" overstates it: **two of the three things a phase needs are already supplied**, and what is open is a choice between two values — a much smaller question, and one nobody has posed this way.***
+
+**⚠ And it does not close the row:** *B7's band stands, because **the two values give intercepts −0.066 and −0.244, and the gap between them is the band**. A binary is smaller than a continuum and still not nothing.*
+
 ### Revision r2958 — 2026-08-15 (main line). **THE CORPUS HAS CLOSED ONE SEAM DATUM AGAINST THE PROGENITOR STRUCTURALLY, AND ITS ARGUMENT DOES NOT TRANSFER TO `CRPHI`.**
 
 **⛭ `X1_the_ratio_is_a_clock_reading_not_a_carrier`, on the composition ratio:** *"it is not the kind of quantity a crossing can carry: **it scales as 1/a, so it has NO SINGLE VALUE TO HAND OVER; and the crossing is MULTIPLICATIVE, so a common factor CANCELS in the ratio**" ⇒ "it is a **READING of the observable leg's own clock**, and the clock's zero is not something the previous universe hands over", with the datum half moving **"from OPEN TARGET to CLOSED NEGATIVE with a stated reason — a different disposition, and a weaker claim than closure"**.*
