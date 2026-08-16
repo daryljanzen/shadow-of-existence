@@ -4,11 +4,11 @@
 
 ## ⇒ **4 OPEN · 9 STEPS LEFT** *(was 7 last revision)* **· ~19 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
 
-*⌗ **LAST ACTUAL MOVE — r2925: **L-107 has been worked and it separates a FORCED count from a CHOICE-dependent one.** FORK_c54: 'the 3 walls and 12 legs are FORCED while the degeneracy 2|lambda| is the ROUND spheres, and **roundness is a CHOICE (L-90) — so a non-round transverse space may TRUNCATE THE TOWER (L-107)**'. ⇒ The twelve legs are forced; L-107 governs the tower ABOVE them. **This rows 4-vs-5 mismatch lives in the forced sector, so L-107s risk does not reach it.*****
+*⌗ **LAST ACTUAL MOVE — r2926 was not a zero — a calibrated sweep that came back mostly clean. Five gating clauses across the four r2887 sites: **three propagated (thirds r2886, hypercharge r2888, the count r2924), two not** — L-88s route (b) and L-89s gauge lock — **and neither unpropagated instance reaches an open row**. Both marked at source. ⌗ Calibration ran first and passed. Last actual move: r2925.***
 
-> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
+*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
 **RUNWAY: 4 of 4 clear now**; 0 gated ().
 

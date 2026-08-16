@@ -42,13 +42,12 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 0
-LASTFIND = ("r2925: **L-107 has been worked and it separates a FORCED count from a CHOICE-dependent "
-            "one.** FORK_c54: 'the 3 walls and 12 legs are FORCED while the degeneracy 2|lambda| is "
-            "the ROUND spheres, and **roundness is a CHOICE (L-90) — so a non-round transverse "
-            "space may TRUNCATE THE TOWER (L-107)**'. ⇒ The twelve legs are forced; L-107 governs "
-            "the tower ABOVE them. **This rows 4-vs-5 mismatch lives in the forced sector, so "
-            "L-107s risk does not reach it.**")
+SINCE = 1
+LASTFIND = ("r2926 was not a zero — a calibrated sweep that came back mostly clean. Five gating "
+            "clauses across the four r2887 sites: **three propagated (thirds r2886, hypercharge "
+            "r2888, the count r2924), two not** — L-88s route (b) and L-89s gauge lock — **and "
+            "neither unpropagated instance reaches an open row**. Both marked at source. "
+            "⌗ Calibration ran first and passed. Last actual move: r2925.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

@@ -448,3 +448,4 @@ r2922  LATENT      leading order sits at gamma=1/4: a 1/2 margin to oscillation,
 r2923  LATENT      PO-6 step (b) answered: 3-dimensional basis at O(sigma^2), a constant the substrate lacks, scoped off the faces.
 r2924  LATENT      the counts blocker L-74 is closed and unpropagated since r2887; second blocker L-107 unread.
 r2925  LATENT      the 12 legs are FORCED; L-107 governs the tower above them, which is a different object than PO-5s count.
+r2926  INSTRUMENT  r2887 sites swept: 3 of 5 gating clauses propagated, 2 not, neither reaching an open row.

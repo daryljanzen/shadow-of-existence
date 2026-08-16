@@ -38,6 +38,10 @@ Route (b) stays alive as L-88.  ** (c) is the default and is more than a fallbac
 # ** r2887: L-88 is SINCE CLOSED by P14_tower_is_not_kaluza_klein — "L-88 answered: NO". **  *** This file's 'not shown' outlived it,
 # and r2885 spent a whole revision on the gate it names.  Kept per negatives-are-the-map;
 # read the closing receipt before relying on the clause above. ***
+# ** r2926: AND WHAT L-88's CLOSURE UNBLOCKS WAS NEVER PROPAGATED. **
+# *** The clause above gates ROUTE (b) OF THE SPECTRUM FORK.  `P14_tower_is_not_kaluza_klein` answers it NO, so route (b) is dead and this clause keeps it alive.
+# Marking a stale reference is not the same as propagating its consequence --
+# r2924 found that exact failure on `P14_the_count_specified`. ***
 gets colour (triality), isospin (horn), chirality (sign lambda) and the CHARGE QUANTISATION,
 and does not get the multiplet count -- a stated reach with a stated boundary. **
 

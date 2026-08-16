@@ -12,6 +12,32 @@ has been checked, what has not, and what is next. Opened r2833 after a session i
 layer, not the corpus, turned out to be what was broken.*
 
 
+## ⛭⛭ r2926 — A CLOSURE MARKED IS NOT A CLOSURE PROPAGATED: THE r2887 SITES, SWEPT
+
+***r2924 found that `P14_the_count_specified` was marked stale at r2887 and its consequence — that
+`L-74`'s closure unblocks the multiplet count — was never drawn. Swept the other three sites for the
+same failure, calibrating first per `TURN_PROTOCOL` §⑤·6.***
+
+| site | lead | what the stale clause gated | propagated? |
+|---|---|---|---|
+| `P03_thirds_from_closure` | `L-74` | **the thirds** | ✔ r2886 |
+| `P14_scale_and_ratio` | `L-74` | **the hypercharge result** | ✔ r2888 |
+| `P14_the_count_specified` | `L-74` | **the multiplet count** | ✔ r2924 |
+| `P03_batch2_runnable` | `L-88` | **route (b) of the spectrum fork** | ⛔ **no** |
+| `P03_operator_at_general_D` | `L-89` | **the gauge lock at general $D$** | ⛔ **no** |
+
+**⇒ Five gating clauses across four marked sites: three propagated, two not — and both marked at source
+now.**
+
+**⌗ AND THE RESULT THAT MATTERS FOR THE BOARD:** ***neither unpropagated instance reaches an open row.***
+*`L-88`'s route (b) is answered NO by `P14_tower_is_not_kaluza_klein`; `L-89`'s lock was cleared among
+`P03_batch2_runnable`'s eight. **Both sit on spectrum-fork and general-$D$ work that no open row
+carries.***
+
+**⚠ Calibration first, and it passed:** *the method found `P14_the_count_specified` — the case it was
+built from — before being trusted on the others.*
+
+
 ## ⛔⛭⛭ r2918 — THREE SWEEPS HAVE COME BACK CLEAN BECAUSE THEY LOOKED IN THE WRONG PLACE
 
 ***A clean sweep is only worth what its calibration is worth, and three of this session's were worth

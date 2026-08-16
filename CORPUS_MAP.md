@@ -146,6 +146,22 @@ sources: [cowork, chat]
 
 
 
+### Revision r2926 — 2026-08-15 (main line). **A CLOSURE MARKED IS NOT A CLOSURE PROPAGATED — THE r2887 SITES, SWEPT AND CALIBRATED.**
+
+*r2924 found `P14_the_count_specified` marked stale at r2887 with its consequence never drawn. Swept the other three for the same failure, **calibrating first per §⑤·6 — the method found the known case before being trusted**.*
+
+    P03_thirds_from_closure     L-74   the thirds                    ✔ r2886
+    P14_scale_and_ratio         L-74   the hypercharge result        ✔ r2888
+    P14_the_count_specified     L-74   the multiplet count           ✔ r2924
+    P03_batch2_runnable         L-88   route (b), spectrum fork      ⛔ no
+    P03_operator_at_general_D   L-89   the gauge lock at general D   ⛔ no
+
+**⇒ Five gating clauses, three propagated, two not — both now marked at source.**
+
+**⌗ AND THE RESULT THAT MATTERS:** ***neither unpropagated instance reaches an open row.*** *`L-88`'s route (b) is answered NO by `P14_tower_is_not_kaluza_klein`; `L-89`'s lock was cleared among `P03_batch2_runnable`'s eight. **Both sit on spectrum-fork and general-$D$ work no open row carries.***
+
+⚠ *SINCE = 1: a calibrated sweep that came back mostly clean.*
+
 ### Revision r2925 — 2026-08-15 (main line). **`L-107` HAS BEEN WORKED, AND IT SEPARATES A FORCED COUNT FROM A CHOICE-DEPENDENT ONE.**
 
 **⛭⛭ `FORK_c54`:** *"**the 3 walls and 12 legs are FORCED** while the degeneracy $2\lvert\lambda\rvert$ is the ROUND sphere's, and **roundness is a CHOICE (`L-90`) — so a non-round transverse space may TRUNCATE THE TOWER (`L-107`)**".*

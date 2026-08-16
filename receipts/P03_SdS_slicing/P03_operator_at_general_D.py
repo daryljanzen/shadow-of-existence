@@ -42,6 +42,10 @@ a single curve does so at general D is not shown (L-89) -- P8's own lapse split 
 # ** r2887: L-89 is SINCE CLOSED by P03_batch2_runnable — cleared with seven other owed leads. **  *** This file's 'not shown' outlived it,
 # and r2885 spent a whole revision on the gate it names.  Kept per negatives-are-the-map;
 # read the closing receipt before relying on the clause above. ***
+# ** r2926: AND WHAT L-89's CLOSURE UNBLOCKS WAS NEVER PROPAGATED. **
+# *** The clause above gates THE GAUGE LOCK at general D.  `P03_batch2_runnable` cleared L-89 among eight owed leads, so the lock this clause defers is discharged.
+# Marking a stale reference is not the same as propagating its consequence --
+# r2924 found that exact failure on `P14_the_count_specified`. ***
 machinery that would say otherwise.  (ii) THE SPHERE: the transverse space is taken round,
 S^{D-2}; at general D that is a choice, and P9's range paper is where the alternatives live
 (L-90).  (iii) (A2) -- the single-harmonic collapse being a REQUIREMENT at other D -- is
