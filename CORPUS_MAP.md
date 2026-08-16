@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2976 — 2026-08-15 (main line). **THE STRIKE TEST RE-RUN AFTER r2975's COLLAPSE: IT DOES NOT EMPTY THE ROW. AND THE BOARD TABLE WAS STALE.**
+
+*The collapse folds one half of clause three into clause two; **it does not remove the other half**.*
+
+**· bounded below — ✔ ANSWERED YES.** **· the UV definition — ✔ MET, NOT OWED**, *generic to every interacting QFT with CR's part bounded.* **· the spectrum of Gamma-hat — TWO PARTS**: *does Gamma-hat **EXIST** is the UV question and folds in; does it **STRADDLE three-quarters** does not.*
+
+**⛔ AND THE STRADDLE IS THE ONE THING LEFT:** *CR-specific, not met by any framework's standard problem, **ASSERTED rather than computed in CR's own paper**, and load-bearing — **P10's decomposition PRESUPPOSES it**.*
+
+**⌗ AND IT IS THE OPPOSITE OF `PO-2`'s SHAPE:** *`PO-2` struck because **nothing observable distinguished** the readings. **Here a computation would.***
+
+⇒ ***DOES NOT STRIKE — and the row is now exactly one clause, a BUILD rather than a READ.***
+
+**⌗ AND THE BOARD TABLE WAS STALE, as Daryl called:** *all three rows' labels, step counts and runways were carrying text from before the last dozen findings. **Rebuilt**: `PO-6` to the straddle; `PO-7` to one comparison with every input supplied; `PO-10` to one run and one refit. **The estimate falls from ~8 turns to ~7 on four steps rather than six.***
+
 ### Revision r2975 — 2026-08-15 (main line). **#580 ANSWERED TERM BY TERM — AND P10's TWO FRONTIER ITEMS COLLAPSE INTO ONE.**
 
 *P10 gives the substitution for the quadratic term: "**each mode's kinetic term over 2a^3 is, in the geodesic coordinate, the inverse-square operator at the origin**" — so a^3 goes to x^2 near the origin.*

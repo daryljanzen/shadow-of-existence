@@ -19,12 +19,12 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
- 'PO-6':  ('the interacting tower — one clause of three open', 1, 2, 3, None,
-           'CLEAR -- reduced r2838 to ONE commutator at higher order'),
- 'PO-7':  ('the comb: rate REPRODUCES, level offset open', 3, 2, 1, None,
-           'r2907: step 2 is not a step but P15s PROOF STANDARD -- three argued results await it, one with a stated O(1) ambiguity. NOT ESTIMABLE'),
- 'PO-10': ('model selection: fix the control, then scan', 2, 1, 1, None,
-           'r2880: half 1 is a LIVE MULTI-SIGMA falsification exposure; deciding run is the seam-to-recombination transfer -- same object as PO-7s heights'),
+ 'PO-6':  ('the interacting tower — the STRADDLE, asserted and unverified', 1, 1, 4, None,
+            'r2976: ONE clause left. Bounded-below ANSWERED (S8); the UV definition MET-NOT-OWED (generic, CRs part 1-dim and shear-limited); Gamma-hats EXISTENCE folds into that (r2975). What remains is the STRADDLE -- CR-specific, load-bearing for P10s decomposition, asserted rather than computed. A BUILD: it needs the interacting spectrum, not a reading'),
+ 'PO-7':  ('the first peak — one COMPARISON, all inputs supplied', 1, 1, 1, None,
+            'r2976: clause one ANSWERED (no imprint; the phase is FORCED to {0,pi} and DERIVED to 0). Clause two has every input -- deficit PINNED at 0.615, three artefact routes CLOSED by computation, datum band COLLAPSED -- and needs one thing: 0.615 against the skys uncertainty, a comparison made NOWHERE. Note the quantity is CR-vs-LCDM'),
+ 'PO-10':  ('the scalar remainder — one RUN and one REFIT', 2, 2, 1, None,
+            'r2976: the ell>1760 blindness is CLOSED (LMAXL=2512 scores 201 bins; CR not rescued) and the control CONVERGES to 1.18 with its floor cancelling in F3. TWO things left: PRODUCE the odd/even pattern from R_b=0.60 on the identified leg (input already computed), and the FULL-SPECTRUM refit on the banked 215 bins, which everything run so far has not been'),
 }
 # ** THE COUNTER, AND THE CRITERION IT IS SCORED AGAINST (r2847, after Daryl caught two
 # turns wrongly scored 0).  *** A turn is a 0 ONLY IF it found the problem space DIFFERENT
@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2975: #580 answered term by term — **the cubic separates for the same reason the "
-            "quadratic does.** P10 gives a^3 -> x^2 in the geodesic coordinate, and the cubic "
-            "carries the SAME a^3, so it goes to (tower operator)/x^2 with an x-independent "
-            "coefficient. **'In kind' is exact, not hedging.** ⚠ But it shows each TERM separates "
-            "and **not that the SUM converges** — so P10s two frontier items collapse into one: "
-            "**whether Gamma-hat exists IS whether the tower sums are UV-defined.**")
+LASTFIND = ("r2976: strike test RE-RUN after r2975s collapse — **it does not empty the row.** The "
+            "collapse folds Gamma-hats EXISTENCE into the UV item (met, not owed) and leaves **the "
+            "STRADDLE: CR-specific, unverified, and load-bearing for P10s decomposition, which "
+            "PRESUPPOSES it**. ⌗ Opposite of PO-2s shape — there nothing observable "
+            "distinguished; **here a computation would**. ⇒ DOES NOT STRIKE. And the board table "
+            "was stale: all three rows rebuilt against what they actually hold.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
