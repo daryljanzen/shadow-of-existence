@@ -40,13 +40,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 1
-LASTFIND = ("r2968 was not a zero — a scan that came back mostly RECENCY, reported as such. Of the "
-            "entries flagged never-revisited on PO-6 and PO-7, most are simply recent. **The one "
-            "real signal: r2872, 96 revisions back — 'this row carries the NEGATIVE and not the "
-            "POSITIVE' — a class I re-discovered at r2917 without citing the entry that had already "
-            "named it.** Protocol §⑤·8 added, with the methods limit stated: **age is the signal, "
-            "not the flag.** Last actual move: r2967.")
+SINCE = 2
+LASTFIND = ("r2969 recorded rather than found: **the release condition as written measures the wrong "
+            "thing.** It has NOT been met — the counter reset on ~20 of the last 25 turns — but "
+            "**8 of the last 10 resets were my own bookkeeping** (a superseded number carried three "
+            "revisions, a scope collapsed one revision after separating it, two stale worries this "
+            "register had already recorded), **and none was the physics moving**. ⇒ Both queued "
+            "items are TEXTUAL and depend on no corrected number. **Put to Daryl, not acted on.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

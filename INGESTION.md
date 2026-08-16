@@ -490,3 +490,4 @@ r2965  LATENT      the LMAXL=2512 extension is RUN: 201 bins to ell 2508, CR not
 r2966  LATENT      the control converges to 1.18 and its floor cancels in F3; my r2965 caveat used a mid-convergence number.
 r2967  LATENT      r2881s one-computation unification is overtaken: the damping side was answered by direct run.
 r2968  INSTRUMENT  history scan on PO-6/PO-7: mostly recency. One signal: r2872 named a class I rediscovered at r2917.
+r2969  INSTRUMENT  the release condition measures the wrong thing: 8 of 10 resets were bookkeeping, not physics. Put to Daryl.

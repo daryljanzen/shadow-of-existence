@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2969 — 2026-08-15 (main line). **THE RELEASE CONDITION AS WRITTEN MEASURES THE WRONG THING. STATED, NOT ACTED ON.**
+
+*The condition has **not** been met: the counter reset on roughly twenty of the last twenty-five turns. **But classifying those resets by WHAT was wrong changes what they mean.***
+
+**⛔ EIGHT OF THE LAST TEN WERE MY OWN BOOKKEEPING:** *a number carried three revisions after it was superseded (0.408, the inadmissible reading's); a scope collapsed one revision after I separated it; **two stale worries about things this register had already recorded** (the ell>1760 run, the control at 1.18); an assignment made without reading the target; a class named at r2872 and rediscovered at r2917. **None was the physics moving.***
+
+**⛭⛭ AND THE SUBSTANCE HELD:** *`PO-5` **struck**; `PO-7` reduced to **one comparison with its phase DERIVED**; `PO-10`'s blindness **closed** and its control shown to **converge**.*
+
+**⌗ AND THE TEST THAT MATTERS — do the queued items depend on any of the shaky work?** *P10's threshold conflation comes from **P10's own text**, confirmed three times, all textual. P15's k_D placement comes from **ANCHOR 6**, never contradicted. **Neither rests on 0.408, on the control's value, or on any quantity this session has had to correct.***
+
+⇒ ***The condition gates TEXTUAL corrections on the stability of NUMERICAL findings — different failure modes, and mine have all been the latter.***
+
+**⚠ Put to Daryl, not acted on.** *I have been wrong about my own reliability twice in ten turns, which is the reason not to let me judge when my output is trustworthy enough to edit a paper.*
+
 ### Revision r2968 — 2026-08-15 (main line). **THE HISTORY SCAN RUN ON `PO-6` AND `PO-7`: MOSTLY RECENCY, AND ONE REAL SIGNAL.**
 
 *After r2967 found r2881 by this method. **Honest result: of the entries flagged "never revisited", most are simply RECENT** — r2948–r2961 have had no chance to be returned to, and calling that neglect would be the instrument fooling itself.*

@@ -13,6 +13,38 @@ forgetting.*
 
 ---
 
+## ⛭⛭ r2969 — THE CONDITION AS WRITTEN MEASURES THE WRONG THING. STATED, NOT ACTED ON.
+
+***The condition below has NOT been met: the counter reset on roughly twenty of the last twenty-five
+turns. But classifying those resets by WHAT was wrong changes what they mean.***
+
+**⛔ EIGHT OF THE LAST TEN WERE MY OWN BOOKKEEPING:** *a number carried three revisions after it was
+superseded ($0.408$, the inadmissible reading's); a scope collapsed one revision after I separated it
+(comparative vs absolute); two stale worries about things **this register had already recorded** (the
+$\ell>1760$ run, the control at $1.18$); an assignment made without reading the target; a class named at
+r2872 and rediscovered at r2917. **None was the physics moving.***
+
+**⛭⛭ AND THE SUBSTANCE OVER THE SAME STRETCH HELD:** *`PO-5` **struck**; `PO-7` reduced to **one
+comparison with its phase DERIVED**; `PO-10`'s blindness **closed** and its control shown to
+**converge**.*
+
+**⌗ SO THE TEST THAT MATTERS: do the two queued items depend on any of the shaky work?**
+
+| item | origin | confirmations | depends on a corrected number? |
+|---|---|---|---|
+| P10's $-\tfrac14$ vs $\tfrac34$ | **P10's own text** (r2920) | r2921, r2948, r2950 — **three, all textual** | **NO** |
+| P15's $k_D$ in a low-$\ell$ clause | **`ANCHOR 6`** (r2908) | never revisited, **never contradicted** | **NO** |
+
+⇒ ***Both are observations about WHAT THE PAPERS SAY. Neither rests on $0.408$, on the control's value,
+on a scope I collapsed, or on any quantity this session has had to correct.*** ⌗ **The condition as
+written gates TEXTUAL corrections on the stability of NUMERICAL findings — different failure modes, and
+mine have all been the latter.**
+
+⚠ ***This is put to Daryl, not acted on. I have been wrong about my own reliability twice in ten turns,
+which is exactly the reason not to let me judge when my output is trustworthy enough to edit a paper.***
+
+---
+
 ## ⚠ THE RELEASE CONDITION, STATED BEFORE THE CONTENT
 
 ***Do not edit the corpus while the picture is still moving.*** *The case is r2912–r2914: an owed item
