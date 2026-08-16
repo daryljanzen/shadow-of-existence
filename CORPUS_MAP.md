@@ -146,6 +146,21 @@ sources: [cowork, chat]
 
 
 
+### Revision r2978 — 2026-08-15 (main line). **THE ODD/EVEN LOADING RATIO COMPUTED, AND IT IS NOT THE HEIGHT PATTERN. THE STEP IS NOT INPUT-COMPLETE AFTER ALL.**
+
+*Checked first that nothing had produced it, then computed from R_b = 0.60:*
+
+    compressions  1 + 3R_b     = 2.800
+    rarefactions  |1 - 3R_b|   = 0.800
+    loading-only ratio          = 3.500
+    the sky (r2977)             = 2.2564 +- 0.0772   ->  +16 sigma
+
+**⛔ AND THAT COMPARISON IS MEANINGLESS, WHICH IS THE FINDING:** *the loading ratio is the **DRIVING amplitude ratio at recombination**. The observed ratio also carries **the diffusion damping, the projection, the ISW rise and the envelope** — all acting between the driving and the sky. **A LambdaCDM code returns 2.211 from the same R_b**, which is the same formula plus the transfer.*
+
+⇒ ***So r2977's "input and target both stand" was wrong: the input is one line and the target is a spectrum, and **what sits between them is the transfer**. C12's "produce the pattern from an R_b already computed" reads as arithmetic and **is not**.***
+
+**⌗ I called this the first step on the board with nothing missing.** *It was missing **the same thing group D has been terminating on since r2881**, and I would not have seen that without computing the number and finding it absurd.*
+
 ### Revision r2977 — 2026-08-15 (main line). **THE SKY'S ERROR BAR IS STATED, FOR HEIGHTS AND NOT THE PHASE — AND IT MAKES THE ORPHANED 26.6% RESOLVABLE.**
 
 **⛭⛭ `P15_the_height_target_was_below_the_resolution`**, *under "THE SKY'S OWN PEAK-HEIGHT RATIOS, WITH THE ERROR BAR THAT WAS NEVER QUOTED": "**sky ratios 2.2564 +- 0.0772 and 2.2800 +- 0.0737; split 1.03 sigma**" — a ~3.2-3.4% uncertainty on a peak-height ratio — and "**front #2's sub-per-cent height target is RETIRED**" because the sky cannot resolve it.*

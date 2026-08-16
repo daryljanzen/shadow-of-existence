@@ -24,7 +24,7 @@ EST = {
  'PO-7':  ('the first peak — one COMPARISON, all inputs supplied', 1, 1, 1, None,
             'r2977: clause one ANSWERED. Clause two still needs 0.615 against a PHASE error bar, which the corpus does not state -- the skys stated bar is on HEIGHTS (~3.4%), the wrong quantity. Every other input supplied'),
  'PO-10':  ('the scalar remainder — one RUN and one REFIT', 2, 2, 1, None,
-            'r2976: the ell>1760 blindness is CLOSED (LMAXL=2512 scores 201 bins; CR not rescued) and the control CONVERGES to 1.18 with its floor cancelling in F3. TWO things left: PRODUCE the odd/even pattern from R_b=0.60 on the identified leg (input already computed), and the FULL-SPECTRUM refit on the banked 215 bins, which everything run so far has not been'),
+            'r2978: the odd/even run is NOT arithmetic -- the loading ratio (3.500) is the DRIVING ratio, not the observed one, and the transfer sits between. Plus the FULL-SPECTRUM refit on the banked 215 bins'),
 }
 # ** THE COUNTER, AND THE CRITERION IT IS SCORED AGAINST (r2847, after Daryl caught two
 # turns wrongly scored 0).  *** A turn is a 0 ONLY IF it found the problem space DIFFERENT
@@ -41,11 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2977: **the skys error bar is stated — for HEIGHTS, not the phase.** P15: sky peak-height "
-            "ratios **2.2564 +- 0.0772 and 2.2800 +- 0.0737, a ~3.4% uncertainty**, which RETIRED a "
-            "sub-per-cent height target. ⛔ Wrong quantity for clause two, which needs a PHASE bar. "
-            "⌗ But it lands elsewhere: **C56s orphaned 26.6% swing is well ABOVE the skys ~3.4% "
-            "height resolution** — the effect no row owns is one the sky CAN resolve.")
+LASTFIND = ("r2978: computed the odd/even loading ratio from R_b = 0.60 — **1+3R_b = 2.800 against "
+            "|1-3R_b| = 0.800, so 3.500** — and against the skys 2.2564 +- 0.0772 that is +16 "
+            "sigma. ⛔ **And the comparison is meaningless: that is the DRIVING ratio at "
+            "recombination, while the observed P1/P2 carries damping, projection, ISW and the "
+            "envelope** (LCDM returns 2.211 from the same R_b). ⇒ **r2977s 'input and target both "
+            "stand' was wrong — what sits between them is the transfer.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

@@ -499,3 +499,4 @@ r2974  LATENT      the commutation is structural (x-independence is the definiti
 r2975  LATENT      the cubic separates term by term; P10s two frontier items are one -- Gamma-hats existence IS the UV definition.
 r2976  LATENT      PO-6 does not strike: the straddle remains, CR-specific and load-bearing. Board table rebuilt.
 r2977  LATENT      the skys stated bar is on HEIGHTS (~3.4%), not the phase; it makes the orphaned 26.6% resolvable.
+r2978  LATENT      the odd/even loading ratio is 3.500 (driving, not observed); the transfer sits between it and the sky.
