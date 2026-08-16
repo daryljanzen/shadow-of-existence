@@ -438,3 +438,4 @@ r2912  LATENT      the damping size is contested: +10.83% analytic vs +8.2% nume
 r2913  LATENT      the transfer is a JOIN of two built pieces, not an open build; 71 receipts declare owed against a zero list.
 r2914  LATENT      r2912 and r2913 withdrawn: no 2.6pp discrepancy (angle vs length ratio), T1 stale, PO-7 owes a phase clause.
 r2915  LATENT      P15 and C56 are about POSITIONS and POWERS; no contradiction. PO-7s two steps confirmed from both sides.
+r2916  LATENT      PO-7s power side: the coherence comb is the candidate, same period, aliasing ruled out; depth uncomputed.

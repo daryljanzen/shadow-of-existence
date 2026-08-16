@@ -4,9 +4,9 @@
 
 ## ⇒ **4 OPEN · 9 STEPS LEFT** *(was 7 last revision)* **· ~19 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 2**
 
-*⌗ **LAST ACTUAL MOVE — r2915 was NOT a zero: I had every piece and had not put them together. P15 names only **PEAK POSITIONS** (spacing, the 0.62-pi offset, intercepts) so 'the whole of the disagreement' means the whole of the POSITION one; C56 names only **POWERS** (dC/C 0.20% against a 26.6% swing). Two observables, no contradiction — **and r2897 said it three revisions earlier: a phase is where a peak SITS, an amplitude is how TALL it is.** Last actual move: r2914.***
+*⌗ **LAST ACTUAL MOVE — r2916 was not a zero — it put two banked results together and they fit. C56s comb-periodic 26.6% amplitude swing and the coherence combs computed Delta-ell = 296 are at **the same period** (293 vs 296, 0.9% apart), and the obvious confound — a phase offset aliasing into an amplitude residual — **C56 already measured and ruled out at 0.20% against 26.6%**. ⛔ Bounded: the coherence receipt is MECHANISM ONLY and does not compute modulation DEPTH. Last actual move: r2914.***
 
 *⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 

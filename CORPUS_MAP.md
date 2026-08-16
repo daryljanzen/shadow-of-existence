@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2916 — 2026-08-15 (main line). **THE POWER SIDE'S CANDIDATE IS THE COHERENCE COMB — SAME PERIOD, CONFOUND RULED OUT, AND BOUNDED WHERE IT STOPS.**
+
+*Put two results this session already banked against each other: C56's **comb-periodic amplitude, a 26.6% swing**, and `P15_verify_coherence_comb`'s computed mechanism at **$\Delta\ell = 296$**.*
+
+⇒ ***Same period: 296 against this arm's asymptotic acoustic spacing of $0.975\,\ell_A \approx 293$ — **0.9% apart**.***
+
+**⚠ AND THAT SIMILARITY IS THE CONFOUND, NOT THE ARGUMENT:** *a small PHASE offset between two combs of one period produces a residual **oscillating at that same period**, since $dC/C \sim (dC/d\ell)\,\delta\ell$ and $dC/d\ell$ oscillates with the comb.*
+
+⇒ ***But C56 measured exactly that and ruled it out: **median $\lvert dC/C\rvert$ from peak positions = 0.20% against the measured 26.6%** — "it explains under 1% of the swing".***
+
+**⌗ SO THE CANDIDATE SURVIVES:** *the structure is at the comb period, it is **not** phase aliasing, and the coherence mechanism produces amplitude structure at that period **by construction** — peak/trough contrast $\sim4\times10^5$ coherent against $\sim0.9$ incoherent.*
+
+**⛔ AND WHERE IT STOPS:** *the receipt bounds itself **"mechanism only; full transfer open"**. It shows a common seam phase makes a sharp comb; **it does not compute the MODULATION DEPTH**. "Same period, right kind of object" is the whole of what is established.*
+
 ### Revision r2915 — 2026-08-15 (main line). **P15 AND C56 DO NOT CONTRADICT — THEY ARE ABOUT POSITIONS AND POWERS, AND r2897 ALREADY SAID SO.**
 
 *r2877 recorded both in one revision without noticing the apparent tension. Read as claims rather than slogans:*
