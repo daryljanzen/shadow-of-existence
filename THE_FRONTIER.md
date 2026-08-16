@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2854: `PO-7`'s COMB half is a falsifiable prediction and it LOOKS FALSIFIED. The arm gives spacing/ℓ_A = 0.79±0.04 over the first four peaks across every phase; the sky gives ≈0.98 in the same range. **A ~19% shortfall with the phase — the only freedom — already scanned out.** ⚠ CAVEAT: the sky's side is taken from P16's aside and standard values, **not measured by this corpus**. That measurement is now owed.***
+*⌗ **LAST ACTUAL MOVE — r2855: my r2854 caveat was WRONG — `C57` measures BOTH arms with the same peak-finder and predates it. ΛCDM 300/301.4 = **0.995**, CR 258/301.6 = **0.855**. And the gap-by-gap ratio is **0.725, 0.853, 0.897, 0.973** — the first acoustic gap is 28% short and the shortfall closes by the fourth. **The prediction is a SHAPE, not a number, and both sides are receipted.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

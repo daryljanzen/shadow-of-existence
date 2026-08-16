@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2855 — 2026-08-15 (main line). **MY r2854 CAVEAT WAS WRONG — BOTH ARMS ARE RECEIPTED, AND THE PREDICTION IS A SHAPE.**
+
+*r2854 said the sky's side was "not measured by this corpus" and filed `OWED #572`. **`C57` measures BOTH arms with the same peak-finder and predates it.***
+
+**⛭⛭ MEASURED:** *$\Lambda$CDM peaks 220/540/812/1124/1420, gaps 320/272/312/296, mean 300 ⇒ **0.995, self-consistent**. CR peaks 172/404/636/916/1204, gaps 232/232/280/288, mean 258 ⇒ **0.855**.*
+
+⇒ ***And the gap-by-gap ratio exhibits r2842's $\ell$-dependence numerically: **0.725, 0.853, 0.897, 0.973**. CR's first acoustic gap is 28% short and the shortfall closes monotonically by the fourth.***
+
+**⌗ SO THE PREDICTION IS A SHAPE, NOT A NUMBER** — *"the first gap is 28% short and closes with $\ell$" — and a shape is harder to absorb than a mean. **`OWED #572` is discharged on arrival by work that already existed; filing it was my error.***
+
 ### Revision r2854 — 2026-08-15 (main line). **`PO-7`'s COMB IS A FALSIFIABLE PREDICTION AND IT LOOKS FALSIFIED.**
 
 *r2849 split the row: the comb is forced, the first peak is free. **The comb half worked against data for the first time.***
