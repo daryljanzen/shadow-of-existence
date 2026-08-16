@@ -27,7 +27,7 @@ EST = {
            'CLEAR -- sign(r) IS species and the parity link is established; one type-check to finish'),
  'PO-6':  ('the interacting tower — CRs share of it', 1, 1, 3, None,
            'CLEAR -- reduced r2838 to ONE commutator at higher order'),
- 'PO-7':  ('the comb (prediction) + the first peak (free)', 2, 2, 1, None,
+ 'PO-7':  ('the comb: rate REPRODUCES, level offset open', 3, 2, 1, None,
            'CLEAR and SHARPEST -- a structural departure from P15 own claim, mechanism eliminated r2840'),
  'PO-10': ('the scalar remainder', 1, 1, 1, None,
            'CLEAR -- refit half ANSWERED (floor is a prediction); the LIKELIHOOD half is what remains'),
@@ -46,12 +46,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 1
-LASTFIND = ("r2871 was NOT a zero — it fixed what r2870 found rather than finding something new. "
-            "`PO-5`s delivered block is rewritten from P03s receipt (integer/fractional labels, the "
-            "11-of-11 closure rule, confinement as failure to close the lap, and P03s own bound "
-            "THE IDENTIFICATION IS NOT MADE), and `check_delivered_cites_source` now requires a "
-            "delivered block to name a receipt. **Last actual move: r2870.**")
+SINCE = 0
+LASTFIND = ("r2872: `PO-7` carries the NEGATIVE and not the POSITIVE. It cites 4 receipts; **119 "
+            "exist on this object**. B6: 'r_s falls -11.29%, acoustics requires +12.73%, the "
+            "spacing does +12.50% — **98.2% of the acoustic rate**. The peaks are set by this "
+            "construction own sound horizon, as a RESPONSE rather than a fit.' ⇒ **B6 measures the "
+            "RATE (98.2% right); C57 measures the LEVEL (0.855). The row held the level only** — "
+            "and B6 also splits the discrepancy 34% datum / 66% structural.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

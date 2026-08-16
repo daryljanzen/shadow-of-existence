@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2872 — 2026-08-15 (main line). **`PO-7` CARRIES THE NEGATIVE AND NOT THE POSITIVE.**
+
+*The row cites **four** receipts; **119 exist on this object**. One is named `B6_the_acoustics_reproduce_and_my_dichotomy_was_false`.*
+
+**⛭⛭ B6 DELIVERS WHAT THE ROW HAS NEVER HELD:** *"$r_s$ falls $-11.29\%$; acoustics requires $+12.73\%$; **the spacing does $+12.50\%$ — 98.2% of the acoustic rate**. The peaks are set by **this construction's own sound horizon**, as a RESPONSE to a moved parameter rather than as a fit."*
+
+⇒ ***So the peaks track the arm's own $r_s$ at 98.2% of the correct rate, while the row's headline is "the peaks are not where the arm's own $\ell_A$ says". **B6 measures the RATE OF RESPONSE; C57 measures the LEVEL. The row carried the level and not the rate — and the rate is what says the acoustics WORK.****
+
+**⛭ AND B6 SPLITS THE DISCREPANCY:** *the seam-phase freedom MOVES the phase (so it is a phase diagnosis) and **closes 34% and stops** ⇒ **34% datum-closable, 66% structural**, against the row's flat "structural".*
+
+**⌗ AND B6 RETRACTS ITS OWN LINE'S DICHOTOMY:** *"r2485 posed 'structural OR datum' as exhaustive. It moves, and it stops at 34%. Neither horn." **Seventeenth instance — and this row inherited the false one.***
+
 ### Revision r2871 — 2026-08-15 (main line). **`PO-5`'s DELIVERED BLOCK REWRITTEN FROM THE RECEIPTS — AND THIS WAS NOT A ZERO.**
 
 *The block was four revisions of summary over a receipt this line had not read, carrying **three of eleven** delivered contents. Rewritten to state: the module (the branching); the group (a smallest-connected-HULL statement, bundle flat, so discrete content and not coupling); **the fractional part = quark/antiquark and the INTEGER part = $u$/$d$**; **the closure rule agreeing 11 of 11 with the observed hadron spectrum**; **confinement as failure to close the lap**; and second quantisation's baryon 1 / diquark 0 / meson 1 as the same result reached a second way.*

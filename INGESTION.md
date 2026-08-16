@@ -394,3 +394,4 @@ r2868  LATENT      P03s rule: a direct product IS a commutation statement. PO-5s
 r2869  LATENT      P03 and P14 assign T differently (weak isospin vs species) and both assign species. Not a direct product.
 r2870  LATENT      P03: the INTEGER part separates u from d; closure rule 11/11 on the hadron spectrum; confinement = failure to close the lap.
 r2871  INSTRUMENT  PO-5s delivered block rewritten from P03s receipt; check_delivered_cites_source built. NOT a zero.
+r2872  LATENT      PO-7: B6 shows the acoustics reproduce at 98.2% of the rate; the row held only C57s level offset.
