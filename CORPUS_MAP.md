@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2980 — 2026-08-15 (main line). **VERIFIED, AND IT OVERTAKES r2979: A LINE-OF-SIGHT TRANSFER RUNS, IS VALIDATED, AND HAS BEEN APPLIED TO THE CR ARM.**
+
+*r2979 was flagged as an indication because it rested on a stale receipt's clause. Verified by running `P15_the_line_of_sight_transfer`:*
+
+**⛭⛭** *"**the line-of-sight transfer takes the control's first-peak position from 1.7% to 0.16%**" — the derived 1/k^2 weighting giving peaks at 220 and 532 against the sky's 220.6 and 538.1, and a height ratio 1.930 against 2.217.*
+
+⇒ ***And the line that matters: "**the CR arm's deficit is UNCHANGED to four figures at 22% or 134 floors**" — so **the transfer has been applied to CR, not merely to the control, and it does not move CR's number**.***
+
+**⛔ SO r2979 IS OVERTAKEN:** *I scoped the standard as needing a high-ell build of machinery that exists at low ell. **A real transfer exists, runs, is validated against the control on a quantity it was not tuned to, and has already been carried through to the CR arm.** What the standard still lacks is not the transfer's existence.*
+
+**⌗ AND THE RECEIPT'S OWN LESSON, WHICH IS THIS SESSION'S TWICE OVER:** *"the first peak's position is 220 **either way** — the error showed only in the second peak and the height ratio, so **an instrument validated on the first peak alone would have carried it**. ***The control has to be read on every quantity it can be read on, not on the one in dispute.***"*
+
 ### Revision r2979 — 2026-08-15 (main line). **WHAT P15's PROOF STANDARD TAKES: THE HIGH-ell COUNTERPART OF MACHINERY THAT ALREADY EXISTS AT LOW ell.**
 
 *Three of four remaining steps now wait on "the transfer", and nothing had asked what meeting it requires. **T1's verdict is withdrawn (r2914) but it records a fact about the corpus that the withdrawal never touched:***

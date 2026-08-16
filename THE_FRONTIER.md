@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2979: **what P15s proof standard takes — the high-ell counterpart of machinery that already exists at low ell.** T1s verdict is withdrawn but it records that **a genuine Boltzmann transfer is ALREADY IN USE at large angles (the exact Delta_ell(k), SW and ISW)**, and the standard needs the ACOUSTIC transfer at small angles where the source oscillates and damps. ⇒ **Not a new kind of object — a bounded BUILD**, the same shape PO-5s chiral cut had. ⚠ Rests on one clause of a stale receipt: an indication, not a result.***
+*⌗ **LAST ACTUAL MOVE — r2980: **verified, and it overtakes my own r2979.** P15_the_line_of_sight_transfer runs: **it takes the controls first-peak position from 1.7% to 0.16%**, and — the line that matters — **the CR arms deficit is UNCHANGED to four figures**. So a real transfer exists, is validated on a quantity it was not tuned to, **and has already been applied to CR**. ⌗ And its own lesson: the first peak is 220 either way, so **an instrument validated on ell_1 alone would have carried the error**.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -33,7 +33,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the first peak — one COMPARISON, all inputs supplied | **1** | 1 | 1 | READ | 21 | — | r2977: clause one ANSWERED. Clause two still needs 0.615 against a PHASE error bar, which the corpus does not state -- the skys stated bar is on HEIGHTS (~3.4%), the wrong quantity. Every other input supplied |
+| **PO-7** | the first peak — one COMPARISON, all inputs supplied | **1** | 1 | 1 | READ | 22 | — | r2980: a line-of-sight transfer RUNS, is validated (control first peak 1.7% -> 0.16%), and leaves the CR deficit UNCHANGED to four figures. Clause two still needs a PHASE error bar the corpus does not state |
 | **PO-10** | the scalar remainder — one RUN and one REFIT | **2** | 2 | 1 | READ | 33 | — | r2978: the odd/even run is NOT arithmetic -- the loading ratio (3.500) is the DRIVING ratio, not the observed one, and the transfer sits between. Plus the FULL-SPECTRUM refit on the banked 215 bins |
 
 ---

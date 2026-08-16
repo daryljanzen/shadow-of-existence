@@ -22,7 +22,7 @@ EST = {
  'PO-6':  ('the interacting tower — the STRADDLE, asserted and unverified', 1, 1, 4, None,
             'r2976: ONE clause left. Bounded-below ANSWERED (S8); the UV definition MET-NOT-OWED (generic, CRs part 1-dim and shear-limited); Gamma-hats EXISTENCE folds into that (r2975). What remains is the STRADDLE -- CR-specific, load-bearing for P10s decomposition, asserted rather than computed. A BUILD: it needs the interacting spectrum, not a reading'),
  'PO-7':  ('the first peak — one COMPARISON, all inputs supplied', 1, 1, 1, None,
-            'r2977: clause one ANSWERED. Clause two still needs 0.615 against a PHASE error bar, which the corpus does not state -- the skys stated bar is on HEIGHTS (~3.4%), the wrong quantity. Every other input supplied'),
+            'r2980: a line-of-sight transfer RUNS, is validated (control first peak 1.7% -> 0.16%), and leaves the CR deficit UNCHANGED to four figures. Clause two still needs a PHASE error bar the corpus does not state'),
  'PO-10':  ('the scalar remainder — one RUN and one REFIT', 2, 2, 1, None,
             'r2978: the odd/even run is NOT arithmetic -- the loading ratio (3.500) is the DRIVING ratio, not the observed one, and the transfer sits between. Plus the FULL-SPECTRUM refit on the banked 215 bins'),
 }
@@ -41,13 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2979: **what P15s proof standard takes — the high-ell counterpart of machinery that "
-            "already exists at low ell.** T1s verdict is withdrawn but it records that **a genuine "
-            "Boltzmann transfer is ALREADY IN USE at large angles (the exact Delta_ell(k), SW and "
-            "ISW)**, and the standard needs the ACOUSTIC transfer at small angles where the source "
-            "oscillates and damps. ⇒ **Not a new kind of object — a bounded BUILD**, the same shape "
-            "PO-5s chiral cut had. ⚠ Rests on one clause of a stale receipt: an indication, not a "
-            "result.")
+LASTFIND = ("r2980: **verified, and it overtakes my own r2979.** P15_the_line_of_sight_transfer runs: "
+            "**it takes the controls first-peak position from 1.7% to 0.16%**, and — the line that "
+            "matters — **the CR arms deficit is UNCHANGED to four figures**. So a real transfer "
+            "exists, is validated on a quantity it was not tuned to, **and has already been "
+            "applied to CR**. ⌗ And its own lesson: the first peak is 220 either way, so **an "
+            "instrument validated on ell_1 alone would have carried the error**.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
