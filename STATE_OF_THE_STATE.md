@@ -12,6 +12,30 @@ has been checked, what has not, and what is next. Opened r2833 after a session i
 layer, not the corpus, turned out to be what was broken.*
 
 
+## ⛔⛭⛭ r2918 — THREE SWEEPS HAVE COME BACK CLEAN BECAUSE THEY LOOKED IN THE WRONG PLACE
+
+***A clean sweep is only worth what its calibration is worth, and three of this session's were worth
+nothing until checked.***
+
+| sweep | reported | why it was empty |
+|---|---|---|
+| the `OWED` count (r2913) | **0 owed** | counted **one file** while **71 receipts** declared debts |
+| `check_stale_unshown` (r2889) | **3 instances** | **id-referenced only** — missed the prose-referenced fourth |
+| two-sided verdicts (r2918) | **0 across three rows** | **source-only** — the verdicts are **runtime output** |
+
+**⛔ AND THE THIRD ONE FAILED ITS OWN CALIBRATION:** *`C56` and `B6` are the two confirmed instances the
+detector was built from, and **neither has a VERDICT line in its source at all**. The sweep could not
+have found the cases that motivated it.*
+
+**⌗ THE RULE THAT COMES OUT OF IT, AND IT IS CHEAP:** ***run a new detector against the instances you
+already know about BEFORE believing a zero.*** *Two lines of calibration would have caught all three.*
+
+**⚠ AND THIS ONE CANNOT BE FIXED WITHIN THE BUDGET:** *the verdicts live in run output; running all 598
+receipts **exceeded the time limit** when attempted at r2901. Reading sources misses them; running
+everything does not finish. **So the two-sided-verdict class is REAL — two confirmed on `PO-7` — and its
+size is UNMEASURED, which is not the same as zero.***
+
+
 ## ▶ WHAT I AM DOING NEXT — *the one thing, stated so it can be redirected*
 
 **⇒ RUN `PO-1c`'s ARITHMETIC: does $2^3=8$ horn configurations, six of shape $2{+}1$, match the

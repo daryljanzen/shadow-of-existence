@@ -113,6 +113,22 @@ exists precisely because the picture is still moving.*
 
 ---
 
+## ⑤·6 CALIBRATE A NEW DETECTOR AGAINST KNOWN INSTANCES BEFORE BELIEVING A ZERO
+
+***Added r2918. Three sweeps this session came back clean because they looked in the wrong place:*** *the
+`OWED` count read one file while 71 receipts declared debts; `check_stale_unshown` matched lead ids and
+missed the prose-referenced case; the two-sided-verdict sweep read sources when the verdicts are runtime
+output — **and could not have found either of the two instances it was built from**.*
+
+⇒ **A clean sweep is worth exactly what its calibration is worth.** *Before reporting that a class is
+small or absent, run the detector against the instances already known. **Two lines. It would have caught
+all three.***
+
+⌗ *And when a class cannot be measured within the budget, **say it is unmeasured** — which is not the
+same as zero.*
+
+---
+
 ## ⑥ THE REPORT — the board LAST, computed after the work
 
 *Find first, board second. **Never a slogan in place of the table**, never the estimates without the

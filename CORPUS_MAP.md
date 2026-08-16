@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2918 — 2026-08-15 (main line). **THE TWO-SIDED-VERDICT SWEEP FAILED ITS OWN CALIBRATION — AND IT IS THE THIRD CLEAN SWEEP THAT WAS LOOKING IN THE WRONG PLACE.**
+
+*Swept `PO-5`, `PO-6`, `PO-10` for receipts whose verdicts carry both a delivered result and a limit, where the row quotes only the limit. **Reported 0. Then checked the detector against the two instances it was built from.***
+
+**⛔ NEITHER `C56` NOR `B6` HAS A VERDICT LINE IN ITS SOURCE AT ALL** — *both print at runtime. **The sweep could not have found the cases that motivated it**, so "0 across three rows" says nothing.*
+
+**⌗ THIRD TIME THIS SESSION:** *the `OWED` count read **one file** while **71 receipts** declared debts (r2913); `check_stale_unshown` matched **lead ids only** and missed the prose-referenced fourth case (r2889); this one read **sources** when the verdicts are **runtime output**.*
+
+⇒ ***`TURN_PROTOCOL` §⑤·6 added: **calibrate a new detector against known instances before believing a zero**. Two lines would have caught all three.***
+
+**⚠ AND THIS CLASS CANNOT BE MEASURED WITHIN THE BUDGET:** *running all 598 receipts **exceeded the time limit** at r2901. **So the class is REAL — two confirmed on `PO-7` — and its size is UNMEASURED, which is not zero.***
+
 ### Revision r2917 — 2026-08-15 (main line). **I CARRIED C56's NEGATIVE HALF AND MISSED A CANCELLATION CLAIMED IN ADVANCE AND MET TO 0.075%.**
 
 *Went to find what the "26.6%" measures — **the median of $\lvert C_\ell^{\rm CR}/C_\ell^{\Lambda\rm CDM} - 1\rvert$** — and the surrounding paragraph is the finding.*

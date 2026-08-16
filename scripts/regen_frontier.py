@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2917: **I carried C56s negative half and missed a cancellation claimed in advance and "
-            "met to 0.075%.** D_M falls 6.20%, r_s falls 6.27%, **l_A moves +0.075%** — and the "
-            "receipt first checks that pi D_M/r_s reproduces the stored l_A EXACTLY in both arms, "
-            "so **nothing is being tuned**. The 26.6% is the median of |C_l^CR / C_l^LCDM − 1|. "
-            "⌗ Same defect as r2872, recurring: the negative half of a receipt whose positive half "
-            "is the stronger result.")
+LASTFIND = ("r2918: **the two-sided-verdict sweep failed its own calibration** — C56 and B6, the two "
+            "instances it was built from, have **no VERDICT line in their source at all**; they "
+            "print at runtime. So '0 across three rows' said nothing. ⌗ **Third clean sweep this "
+            "session that was looking in the wrong place** (the OWED count read one file; "
+            "check_stale_unshown matched ids only). **Rule added to TURN_PROTOCOL §⑤·6: calibrate "
+            "against known instances before believing a zero.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

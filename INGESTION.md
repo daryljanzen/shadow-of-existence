@@ -440,3 +440,4 @@ r2914  LATENT      r2912 and r2913 withdrawn: no 2.6pp discrepancy (angle vs len
 r2915  LATENT      P15 and C56 are about POSITIONS and POWERS; no contradiction. PO-7s two steps confirmed from both sides.
 r2916  LATENT      PO-7s power side: the coherence comb is the candidate, same period, aliasing ruled out; depth uncomputed.
 r2917  LATENT      l_A preserved to +0.075% while D_M and r_s each fall 6%+, claimed in advance, not tuned. Carried only C56s negative.
+r2918  INSTRUMENT  the two-sided-verdict sweep failed its own calibration; third clean sweep looking in the wrong place.
