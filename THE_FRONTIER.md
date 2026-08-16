@@ -4,11 +4,11 @@
 
 ## ⇒ **5 OPEN · 9 STEPS LEFT** *(was 10 last revision)* **· ~20 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
 
-*⌗ **LAST ACTUAL MOVE — r2888: `PO-1c`s last 'reading' has a COMPUTED result behind it. `P14_scale_and_ratio`: **the SM anomaly conditions fix every RATIO and no SCALE; CR s winding closure fixes the SCALE and no ratio was asked of it; where they overlap THEY AGREE EXACTLY** — all five hypercharges, +2/3 and -1/3 reproduced. And its bound (conditional on L-74) is **STALE — r2886 closed L-74** — so the result is unconditional. A fourth stale-unshown instance, in a receipt the r2887 sweep missed.***
+*⌗ **LAST ACTUAL MOVE — r2889: widened the gate and the count did NOT change — 3 leads / 4 sites either way. **The miss was never about distance.** The fourth instance names its antecedent in PROSE with no lead id at all: 'the winding receipt itself marks NOT SHOWN. Everything here is conditional on that antecedent.' ⇒ **No id-based gate can reach it, and the size of the prose-referenced class is unmeasurable by this instrument** — so r2887s 'more coherent than I feared' covers the id-referenced class only. Last move: r2888.***
 
-> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
+*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
 **RUNWAY: 5 of 5 clear now**; 0 gated ().
 

@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2889 — 2026-08-15 (main line). **THE GATE HAS A BLIND SPOT IT CANNOT FIX, AND THE r2887 COUNT IS NARROWER THAN IT WAS WRITTEN.**
+
+*r2888 found a fourth stale-unshown instance the r2887 sweep missed. Widened the pattern — window 120→240 characters, plus the report-forms — and **re-measured on the pre-r2887 tree**.*
+
+**⛔ THE COUNT DID NOT CHANGE: 3 leads / 4 sites, either way.** *The miss was never about distance.*
+
+⇒ ***`P14_scale_and_ratio` reads: "the winding receipt itself marks NOT SHOWN. Everything here is conditional on that antecedent." **There is NO LEAD ID in the clause at all** — the antecedent is named in prose ("is a matter field labelled by a ROUTE rather than a point?") and nothing else.***
+
+**⌗ SO NO ID-BASED PATTERN CAN REACH IT**, *and the size of the PROSE-REFERENCED class is **unknown and unmeasurable by this instrument**. r2887's "the corpus is more coherent than I feared" is a statement about the **id-referenced class only** — narrower than it was written, and the gate now says so in its own docstring.*
+
+⚠ *SINCE = 1: this measured a limit of the method, not a move in the problem space.*
+
 ### Revision r2888 — 2026-08-15 (main line). **THE ELECTRIC READING HAS A COMPUTED RESULT BEHIND IT, AND ITS ONLY BOUND WAS CLOSED TWO REVISIONS AGO.**
 
 **⛭⛭ `P14_scale_and_ratio`, uncited, run:** *"**the Standard Model's anomaly conditions and CR's winding closure are INDEPENDENT AND COMPLEMENTARY: the first fixes every RATIO and no SCALE, the second fixes the SCALE and no ratio was ever asked of it, and where they overlap THEY AGREE EXACTLY**" — **the two agree on all five hypercharges and reproduce $+2/3$ and $-1/3$ exactly**, the winding closure delivering the scale "because a lap is not a unit anyone chose".*

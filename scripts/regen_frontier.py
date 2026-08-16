@@ -44,13 +44,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 0
-LASTFIND = ("r2888: `PO-1c`s last 'reading' has a COMPUTED result behind it. `P14_scale_and_ratio`: "
-            "**the SM anomaly conditions fix every RATIO and no SCALE; CR s winding closure fixes "
-            "the SCALE and no ratio was asked of it; where they overlap THEY AGREE EXACTLY** — all "
-            "five hypercharges, +2/3 and -1/3 reproduced. And its bound (conditional on L-74) is "
-            "**STALE — r2886 closed L-74** — so the result is unconditional. A fourth stale-unshown "
-            "instance, in a receipt the r2887 sweep missed.")
+SINCE = 1
+LASTFIND = ("r2889: widened the gate and the count did NOT change — 3 leads / 4 sites either way. "
+            "**The miss was never about distance.** The fourth instance names its antecedent in "
+            "PROSE with no lead id at all: 'the winding receipt itself marks NOT SHOWN. Everything "
+            "here is conditional on that antecedent.' ⇒ **No id-based gate can reach it, and the "
+            "size of the prose-referenced class is unmeasurable by this instrument** — so r2887s "
+            "'more coherent than I feared' covers the id-referenced class only. Last move: r2888.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

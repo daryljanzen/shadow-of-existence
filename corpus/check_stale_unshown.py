@@ -17,6 +17,23 @@ and it is stated because a large one would have been reported. ** ***
 ** WHAT THIS CHECKS. **  *** Any lead named "not shown / is now the gate / not established" in one
 receipt while another names it "CLOSED / answered / discharged" must carry a mark in the first. ***
 
+⚠⚠ ** AND THE GATE HAS A BLIND SPOT IT CANNOT FIX, MEASURED r2889. **
+
+  *** The fourth instance (`P14_scale_and_ratio`, found by hand at r2888) reads: "the winding
+      receipt itself marks NOT SHOWN.  Everything here is conditional on that antecedent."
+      ** There is NO LEAD ID in the clause at all ** -- the antecedent is named in prose
+      ("is a matter field labelled by a ROUTE rather than a point?") and nothing else. ***
+
+  ⇒ ** No id-based pattern can reach it. **  *** Widening the window from 120 to 240 characters
+      and adding the report-forms changed the count by ZERO, because the miss was never about
+      distance -- it was about the reference having no id. ***
+
+  ⌗ ** So the honest statement of what this gate measures: ** *** 3 leads / 4 sites is the true
+    count of ID-REFERENCED stale claims.  ** The size of the PROSE-REFERENCED class is unknown
+    and unmeasurable by this instrument ** -- and r2887's "the corpus is more coherent than I
+    feared" is therefore a statement about the id-referenced class only, which is narrower than
+    it was written. ***
+
     python3 corpus/check_stale_unshown.py
 
 Written r2887.  Stated for reversal.
@@ -28,9 +45,16 @@ import re
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..'))
 
+# ** r2889: the r2887 pattern found three instances and MISSED A FOURTH of the same kind.
+# *** `P14_scale_and_ratio` says "the winding receipt itself marks NOT SHOWN (L-74)" -- a
+# REPORT of another receipt's claim rather than its own -- and the window was too narrow to
+# reach across it.  A gate that catches three quarters of its class is the failure this
+# session has been repeating; widened here, and the r2887 count re-measured on it. ***
 OPEN_A = re.compile(r'(not shown|does not show|is now the gate|unshown|NOT established|'
-                    r'stays alive as)[^.\n]{0,120}?\b(L-\d+)\b', re.I)
-OPEN_B = re.compile(r'\b(L-\d+)\b[^.\n]{0,120}?(not shown|does not show|is now the gate|unshown)', re.I)
+                    r'stays alive as|marks NOT SHOWN|still the gate|remains? open|'
+                    r'conditional on that antecedent)[^.\n]{0,240}?\b(L-\d+)\b', re.I)
+OPEN_B = re.compile(r'\b(L-\d+)\b[^.\n]{0,240}?(not shown|does not show|is now the gate|'
+                    r'unshown|NOT established|still the gate|remains? open)', re.I)
 CLOSE_A = re.compile(r'\b(L-\d+)\b[^.\n]{0,80}?(CLOSED|is the answer to|answered|discharged|cleared)', re.I)
 CLOSE_B = re.compile(r'(CLOSED|discharged|cleared|answered)[^.\n]{0,80}?\b(L-\d+)\b', re.I)
 MARKED = re.compile(r'r28[89]\d|SINCE CLOSED|since closed|superseded', re.I)
