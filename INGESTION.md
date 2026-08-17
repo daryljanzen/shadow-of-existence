@@ -533,3 +533,4 @@ r3008  CORPUS      bake audited both ways: 20/20 results in, nothing contradicte
 r3009  INSTRUMENT  THE_REGISTER opened: PO-13 phase diagnosis, PO-14 the chiral build, PO-15 the ordering, PO-16 the inherited datum.
 r3010  LATENT      PO-16: the ratio route is closed by X1; the live question is the ONSET REDSHIFT, a time not a ratio.
 r3011  LATENT      deriving an empirical input is a category error; PO-16 restated to whether P7s framing is defensible.
+r3012  LATENT      frontier:inherited read whole: it is sound. r3010/r3011 withdrawn — I argued with a fragment.

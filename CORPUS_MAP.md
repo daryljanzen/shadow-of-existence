@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r3012 — 2026-08-15 (main line). **I ARGUED WITH A FRAGMENT. r3010 AND r3011 ARE BOTH WITHDRAWN.**
+
+*Read `frontier:inherited` **whole and raw** instead of its opening sentence. It contains, in its own text:*
+
+**⛔ "Like eta, the datum may remain empirical AT NO COST TO THE DISSOLUTION; deriving it is the EAGER TARGET."** *The paper **already** says an empirical input is not a debt, and names the eta analogue itself. **My r3011 "correction" was telling the paper something it says.***
+
+**⛭ The light-element consistency target is MET** — *the cooling leg **produces** helium-4 and deuterium at their observed values and **shares the standard lithium problem**.*
+
+**⛭⛭ And it goes further than I knew.** *"The frontier is two data and not one" — then resolves it: given eta and the measured matter-to-baryon ratio, **rho_r/rho_m is fixed by the onset temperature alone**, returning **1.99 at T_onset = 1.6 eV, the quoted value to one per cent from standard thermodynamics and nothing else**. ⇒ "**So the 'single inherited datum' is the fitted onset restated, not a number standing beside eta**: what the handover supplies is ONE composition datum, and what the cosmology fits is ONE parameter."*
+
+**⛭⛭ And the deepest part:** *"**a derivation of eta is constrained IN KIND, not merely in difficulty**" — the infall thermalizes four orders above the deuterium bottleneck, so the progenitor's composition is **erased**; **what survives is baryon number, which no dissociation destroys**, and eta is a ratio of baryon number to photon number. ⇒ **eta is inherited because it is protected by a conservation law** — a structural reason, not a gap.*
+
+⇒ ***So `PO-16` has no defect to fix. **I spent two revisions fabricating a problem out of a sentence I had not finished reading.****
+
 ### Revision r3011 — 2026-08-15 (main line). **MY r3010 QUESTION WAS A CATEGORY ERROR, AND SO IS THE FRONTIER ITEM'S OWN FRAMING.**
 
 *I asked whether the onset redshift is **derivable**. **No empirical parameter in any theory is derivable** — flat LambdaCDM takes six, the Standard Model about nineteen — and asking it of this one holds CR to a standard **no theory in physics meets**.*
