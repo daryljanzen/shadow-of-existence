@@ -146,6 +146,21 @@ sources: [cowork, chat]
 
 
 
+### Revision r3029 — 2026-08-15 (main line). **THE TIME VARIABLE IS ELIMINATED. EVERY INTERNAL QUANTITY NOW CHECKS, AND THE 0.746 SURVIVES.**
+
+*Integrated the sound speed over the propagation span using **the right-hand side's own splines** — the same baryon-loading spline the integrator reads — and compared against the independent quadrature over the scale factor:*
+
+    eta_onset = 180.39   eta_rec = 449.11   span = 268.72 Mpc
+    r_s by quad over a          = 135.46 Mpc
+    r_s by the RHS splines      = 135.46 Mpc      ratio 1.0000
+    measured peak-spacing factor                  1.3405
+
+⇒ ***So the two conformal times are the same and the modes see exactly the sound horizon the script computes — and their peaks still come out at 0.746 cycles per unit.***
+
+**⌗ THE ELIMINATION LIST IS NOW COMPLETE FOR EVERYTHING MEASURABLE:** *the distance, the sound horizon (twice, by independent routes), their ratio, the ladder stretch, the initial data, the decoupling gate, the right-hand side's frequency (verified as the correct tight-coupling form), and the time variable.*
+
+**⚠⚠ WHAT THAT LEAVES, STATED WITHOUT OVERCLAIM:** *the peaks being located are **spectrum peaks of the projected source**, not extrema of the photon density — the source carries the density quarter plus the potential plus a Doppler term, and those add with different phases. **A source-composition effect would displace the whole comb without touching any of the quantities above**, which is the only candidate consistent with all eight eliminations. **Untested, and not called the answer.***
+
 ### Revision r3028 — 2026-08-15 (main line). **THE GATE IS ELIMINATED AND `PO-13` IS NOW A SINGLE NUMBER.**
 
 *Varied the tight-coupling switch-off over 0.6, 2.0, 6.0: **peaks 165/390/615 in every case**, only the heights moving. **The decoupling criterion is not it.***

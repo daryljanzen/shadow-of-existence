@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3028: **the gate is eliminated and PO-13 is now ONE number.** TPGATE over 0.6/2.0/6.0 gives **identical peaks 165/390/615** — not the decoupling criterion. Measured directly: **k r_s/pi = 0.547, 1.293, 2.039, so the k-spacing is 0.746 where it must be 1.000**. ⇒ The modes complete 0.746 cycles per pi/r_s of the sound horizon the same script computes; effective r_s = 181.6 vs 135.46, factor 1.340. **Remaining candidate: the time variable the integration advances in.*****
+*⌗ **LAST ACTUAL MOVE — r3029: **the time variable is ELIMINATED — ratio exactly 1.0000.** r_s by quad over a and r_s by the RHSs own splines over eta both give 135.46 across the propagation span. **So the modes see exactly the sound horizon the script computes and their peaks still come out at 0.746 cycles per pi/r_s.** ⇒ Eight candidates now eliminated by measurement. **What is left: the peaks are C_ell peaks of the projected SOURCE, not extrema of delta_gamma** — untested, and not called the answer.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3028: ONE NUMBER -- the modes complete 0.746 cycles per pi/r_s of the sound horizon the same script computes. Gate, ICs, stretch, D_M, r_s all eliminated by measurement. Remaining: the integrations time variable |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3029: EIGHT candidates eliminated by measurement, including the time variable (ratio exactly 1.0000). The 0.746 survives all of them. Only candidate left standing: the peaks are of the projected SOURCE, not of delta_gamma |
 
 ---
 
