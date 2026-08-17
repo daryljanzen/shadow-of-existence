@@ -562,3 +562,4 @@ r3037  LATENT      radiation in the rate: spacing ratio 0.746 -> 0.9346. Positio
 r3038  LATENT      monotone scan: 0.684 / 0.746 / 0.935 as the gravitating radiation budget grows. First two clean.
 r3039  LATENT      eq:rate is what the law SATISFIES (matter+Lambda). The (3H^2/2)Omega conversion is exact for matter, wrong for radiation.
 r3040  LATENT      the frameworks prescription destroys the spectrum (2 peaks). r3038s monotone scan withdrawn — broken run at one end.
+r3041  LATENT      my error: three runs under three descriptions were ONE denominator change. r3040 withdrawn.

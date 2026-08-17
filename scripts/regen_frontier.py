@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3040: the frameworks prescription is correctly implemented and DESTROYS the spectrum (2 peaks, structure lost). The r3038 scan is withdrawn -- it read a trend off a broken run. Needs its own diagnosis'),
+        'r3041: three runs under three descriptions were ONE denominator change. Nothing yet implemented deserves to be called the frameworks prescription. The clean pair remains 0.746 shipped vs 0.9346 radiation-in-rate'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3040: **ran the frameworks own prescription and the result is NOT READABLE.** Matter "
-            "through (3H^2/2)Omega_m, radiation through 4piG a^2 rho_r directly. Coefficient "
-            "verified: **4.57x the shipped one at onset**. But the run returned 0.6839 with peaks "
-            "[570,795] — **byte-identical to the r3038 matter+Lambda run**, which used a different "
-            "source. ⇒ **Both failed the same way: 'only 2 peaks found — the spectrum lost "
-            "structure'.** The 0.6839 is not a ratio. **The r3038 monotone scan is withdrawn.**")
+LASTFIND = ("r3041 (Daryl was right): **MY error, found.** My physical-density term reduces exactly "
+            "to the shipped one with the denominator changed from the radiation-inclusive total to "
+            "the rates own — **which IS the r3038 run**. So the byte-identical outputs were the "
+            "same calculation, not two inputs agreeing and not a broken run. ⛔ **And the 4.57x was "
+            "my own denominator swap**, reported as a coefficient the framework implies. "
+            "**r3040s 'the framework destroys the spectrum' is WITHDRAWN — I never implemented a "
+            "distinct prescription.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

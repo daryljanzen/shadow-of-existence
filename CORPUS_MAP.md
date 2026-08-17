@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3041 — 2026-08-15 (main line). **MY ERROR, FOUND. THE TWO RUNS WERE THE SAME CALCULATION, AND r3040's CLAIM IS WITHDRAWN.**
+
+*Daryl: do not conflate my failure with the framework's. **He was right and the algebra shows it.***
+
+*With the conformal rate written out, my "physical density" term reduces exactly to the shipped term **with the denominator changed from the radiation-inclusive total to the rate's own** — which is **exactly the r3038 run**.*
+
+⇒ ***So the byte-identical outputs were not two physics inputs agreeing by accident, and not a broken run: **they are the same calculation, and they agreed because they are identical**. My r3040 diagnosis — "both failed the same way" — was a second wrong explanation layered on the first.***
+
+**⌗ AND THE 4.57-FOLD COEFFICIENT WAS NEVER A PHYSICAL EFFECT:** *it is the ratio of a total that includes radiation to one that does not. **I measured my own denominator swap and reported it as a coefficient the framework implies.***
+
+**⚠⚠ WITHDRAWN: r3040's "the framework's prescription destroys the spectrum".** *I never implemented a distinct prescription. **What I actually ran, three times under three descriptions, was one denominator change.** The spectrum losing structure is a fact about **that change**, not about the framework's equations, and **nothing I have built yet deserves to be called the framework's prescription**.*
+
 ### Revision r3040 — 2026-08-15 (main line). **RAN THE FRAMEWORK'S OWN PRESCRIPTION: THE RESULT IS NOT READABLE, AND TWO EARLIER NUMBERS MUST BE WITHDRAWN.**
 
 *Built the source the way r3039's reading says: **matter through the relation it satisfies, radiation through its own physical density**. Verified the coefficients rather than assuming: **mine is 4.57 times the shipped one at onset and 2.15 times at recombination** — so it applied, and applied strongly.*

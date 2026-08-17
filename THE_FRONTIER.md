@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3040: **ran the frameworks own prescription and the result is NOT READABLE.** Matter through (3H^2/2)Omega_m, radiation through 4piG a^2 rho_r directly. Coefficient verified: **4.57x the shipped one at onset**. But the run returned 0.6839 with peaks [570,795] — **byte-identical to the r3038 matter+Lambda run**, which used a different source. ⇒ **Both failed the same way: 'only 2 peaks found — the spectrum lost structure'.** The 0.6839 is not a ratio. **The r3038 monotone scan is withdrawn.*****
+*⌗ **LAST ACTUAL MOVE — r3041 (Daryl was right): **MY error, found.** My physical-density term reduces exactly to the shipped one with the denominator changed from the radiation-inclusive total to the rates own — **which IS the r3038 run**. So the byte-identical outputs were the same calculation, not two inputs agreeing and not a broken run. ⛔ **And the 4.57x was my own denominator swap**, reported as a coefficient the framework implies. **r3040s 'the framework destroys the spectrum' is WITHDRAWN — I never implemented a distinct prescription.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3040: the frameworks prescription is correctly implemented and DESTROYS the spectrum (2 peaks, structure lost). The r3038 scan is withdrawn -- it read a trend off a broken run. Needs its own diagnosis |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3041: three runs under three descriptions were ONE denominator change. Nothing yet implemented deserves to be called the frameworks prescription. The clean pair remains 0.746 shipped vs 0.9346 radiation-in-rate |
 
 ---
 
