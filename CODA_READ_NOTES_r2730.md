@@ -285,7 +285,7 @@ N35 ⛭⛭⛭ THE NEGATIVE-VERDICT BAR EXISTS, IS CORRECTLY DESIGNED, AND WAS DE
       the lead is dead · question is closed · CLOSED in the negative · forecloses ·
       rules it out · cannot be made to work
     ⛔⛔ "STRUCK" IS NOT ON THE LIST.  That is the word I used for ALL THREE strikes.
-    -> kills/ contains PO-7, PO-8, PO-9.  ** NO kill file for PO-10, PO-11 or PO-12. **
+    -> kills/ contains PO-7, PO-8, PO-9.  ** NO kill file for PO-10, PO-11 or PO-12. ** ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
 
 N36 AND THE GATE'S OWN DISTINCTION IS EXACTLY RIGHT:
     "A node may write a BOUNDED NEGATIVE (scope stated, object named, filed as

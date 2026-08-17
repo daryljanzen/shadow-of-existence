@@ -21,8 +21,6 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 EST = {
  'PO-6':  ('the interacting tower — the STRADDLE, asserted and unverified', 1, 1, 4, None,
             'r2976: ONE clause left. Bounded-below ANSWERED (S8); the UV definition MET-NOT-OWED (generic, CRs part 1-dim and shear-limited); Gamma-hats EXISTENCE folds into that (r2975). What remains is the STRADDLE -- CR-specific, load-bearing for P10s decomposition, asserted rather than computed. A BUILD: it needs the interacting spectrum, not a reading'),
- 'PO-7':  ('the first peak — one COMPARISON, all inputs supplied', 1, 1, 1, None,
-            'r2992: clause two PASSES both checks like-for-like -- 76 sigma statistical, and a 0.7% substitution error measured on the skys own data. The row is strike-ready'),
  'PO-10':  ('the scalar remainder — one RUN and one REFIT', 2, 2, 1, None,
             'r2978: the odd/even run is NOT arithmetic -- the loading ratio (3.500) is the DRIVING ratio, not the observed one, and the transfer sits between. Plus the FULL-SPECTRUM refit on the banked 215 bins'),
 }
@@ -41,12 +39,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2992: **#583 DISCHARGED — a peak-finder WRITTEN and run on Planck plik_lite.** Sky "
-            "peaks 220.4 / 537.7 / 817.3 / 1123.9, reproducing the literature values to better "
-            "than 1% **without being fitted to them**. Like-for-like: **offset 0.0043, 0.7% of the "
-            "0.615 gap** (literature-vs-CAMB gave 0.0101, so the methodology difference was "
-            "INFLATING it). ⇒ **Clause two passes both checks on like-for-like footing; the 0.615 "
-            "stands at ~140x the substitution error.**")
+LASTFIND = ("r2993: **`PO-7` STRUCK — both clauses answered.** Clause one: it does NOT imprint; the "
+            "phase is FORCED to {0, pi} and then DERIVED to 0. Clause two: **YES — 76 sigma "
+            "statistically, and a substitution error of 0.7% measured on the skys own Planck data "
+            "by a finder written for the purpose**, whose peaks reproduce the literature values to "
+            "better than 1% without being fitted to them. ⌗ And the row carried uncited for ninety "
+            "revisions: **l_A preserved to +0.075% while its parts each fall over 6%**.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
@@ -66,12 +64,12 @@ LASTFIND = ("r2992: **#583 DISCHARGED — a peak-finder WRITTEN and run on Planc
 # are declared unmeasured rather than dressed as measured. ***
 KIND = {'PO-2': 'READ',
         'PO-1b': 'READ',
-        'PO-6': 'BUILD', 'PO-7': 'READ', 'PO-10': 'READ'}
+        'PO-6': 'BUILD', 'PO-10': 'READ'}
 
-ORDER = ['PO-6', 'PO-7', 'PO-10']
+ORDER = ['PO-6', 'PO-10']
 GROUP = {'PO-2': 'A',
          
-         'PO-6': 'C', 'PO-7': 'D', 'PO-10': 'D'}
+         'PO-6': 'C', 'PO-10': 'D'}
 GNAME = {'A': 'THE CHAIN — one unbuilt sector, two consequences. Strictly ordered.',
          'B': 'THE 2+1 CLUSTER — four readings of two splits. Independent of A.',
          'C': 'THE QUANTUM SECTOR — independent.',

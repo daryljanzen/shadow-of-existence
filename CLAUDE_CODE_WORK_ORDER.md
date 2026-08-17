@@ -119,11 +119,11 @@ which is right is a judgement, and here that means **a lead, not a decision**.*
 | ~~**`L-221`**~~ ⛭ **⟨STRUCK r2947 with `PO-5`: both halves of the row's object delivered — triality computed on `prop:wall`'s own solution, and the closure rule agreeing 11 of 11 with the observed hadron spectrum. The target's every route is closed. `kills/PO-5.md`.⟩** | r2526 | **the question is INVERTED r2526**: not "is there an $R$-odd operator?" but ***what BRIDGE from grading to field exists that is not "be a kernel"?***  |
 | **`L-218`** | r2561 | ✔ ⓶ done r2478 · ***the RULE is tested r2561 and needs a fourth bucket (DISCUSSED), which is the default*** · ⓵ pandoc-in-CI and ⓷ the contribution re |
 | **`L-540`** | r2603 | ***the order now recomputes as `grounded` changes*** — and `REACH` is the one axis a human must maintain |
-| **`L-812`** | r2677 | ***HELD — build ONLY when the turnaround-regular result can be made checkable INDEPENDENTLY of the sign it produces (a bracket, a limit, a known case  |
-| **`L-815`** | r2701 | ***routed to Daryl/56: route ⓷'s residue is supplied (CRPHI=0, bracket-checked, one assumption) — does ② now clear? their call, not a node's*** |
+| ~~**`L-812`**~~ ⛭ **⟨STRUCK r2993 with `PO-7`: both clauses answered — the phase FORCED then DERIVED, and the $0.615$ deficit real at $76\sigma$ with a $0.7\%$ substitution error on Planck's own data.⟩** | r2677 | ***HELD — build ONLY when the turnaround-regular result can be made checkable INDEPENDENTLY of the sign it produces (a bracket, a limit, a known case  |
+| ~~**`L-815`**~~ ⛭ **⟨STRUCK r2993 with `PO-7`: both clauses answered — the phase FORCED then DERIVED, and the $0.615$ deficit real at $76\sigma$ with a $0.7\%$ substitution error on Planck's own data.⟩** | r2701 | ***routed to Daryl/56: route ⓷'s residue is supplied (CRPHI=0, bracket-checked, one assumption) — does ② now clear? their call, not a node's*** |
 | **`L-813`** | r2714 | ***next (optional, informative not gating): enumerate the discrete tower as a QNM-grade solve — complex-$\omega$ resonances or a Prüfer count on the t |
-| **`L-814`** | r2719 | ***PO-10's run is discharged; the residual is PO-7's branch selection when CRPHI closes*** |
-| **`L-822`** | r2781 | ***next: fold the LMAXL=3200 third convergence point (control -> ~1) when it lands*** |
+| **`L-814`** | r2719 | ***PO-10's run is discharged; the residual is PO-7's branch selection when CRPHI closes*** | ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
+| ~~**`L-822`**~~ ⛭ **⟨STRUCK r2993 with `PO-7`.⟩** | r2781 | ***next: fold the LMAXL=3200 third convergence point (control -> ~1) when it lands*** |
 
 *11 live rows carry a stated next step; the 11 longest-unworked are shown.*
 

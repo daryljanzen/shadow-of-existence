@@ -23,7 +23,7 @@ sources: [chat]
 | | strikeable how | who |
 |---|---|---|
 | **`PO-9`** | ⛭ ***route ② NOW*** — it is **answered** (r2572, `L-533`) and has no kill receipt | **me, this session** |
-| **`PO-7`** | ***route ② is COMPLETE*** — four checks pass, three inversions shut | ***the authorisation line*** |
+| **`PO-7`** | ***route ② is COMPLETE*** — four checks pass, three inversions shut | ***the authorisation line*** | ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
 | **`PO-8`** | ***kill receipt written*** (the only other one) | ***the authorisation line*** |
 | **`L-218`** A14 | three steps; ***the third is an afternoon*** | mine, then anyone |
 | **`L-218`** A15 | ***editorial*** — draw it from `CREDO` | **Daryl** |

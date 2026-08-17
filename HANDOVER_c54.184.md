@@ -90,7 +90,7 @@ looked odd.*** *Build the check before the thing it checks.*
   and $3.2\%$ from the `plik_lite` covariance. Any height claim below a few per cent is reporting
   noise. **Use $\chi^2$.***
 - **The likelihood cannot arbitrate and that is arithmetic, not diplomacy.** *A control at seven
-  times a fit cannot certify what it is compared with. `PO-7` is protected and is unseated.*
+  times a fit cannot certify what it is compared with. `PO-7` is protected and is unseated.* ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
 - **The CR arm's $\ell_1/\ell_A=0.5703$ has not moved through SIX instrument states** — *a
   delta-function transfer, a line-of-sight transfer, a derived damping envelope, a scan of its
   scale, a derived shear coefficient, and the full photon hierarchy.* ⌗ *I no longer expect the

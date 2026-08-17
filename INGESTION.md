@@ -106,7 +106,7 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2690   PO-11   obstruction UNIFORM in lambda -- no high-j corner rescues the tower.
     r2691   ---     folded c54.211/212; BACKLOG emptied, r2677 scope withdrawn. Both errors mine.
     r2692   ---     gates.yml stray do fixed -- MY insertion, misattributed to 54. CI unblocked.
-    r2693   PO-7    turnaround is a segment endpoint crossed by rotation, not a singularity.
+    r2693   PO-7    turnaround is a segment endpoint crossed by rotation, not a singularity. ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
     r2694   ---     LEDGER 7 -> 1. Three duplicated PO rows, three were the papers own weight-marks.
     r2695   ---     4 stale row heads corrected; routed() taught 5 close-markers; check_row_state built.
     r2696   ---     DARK 2 -> 0 distinct; audit complete. Table 11.
@@ -514,3 +514,4 @@ r2989  LATENT      substitution MEASURED on three peaks: offset 0.0101, 1.6% of 
 r2990  LATENT      the skys peaks are literature values, not a corpus measurement; r2989s substitution check is not like-for-like.
 r2991  LATENT      Planck TT with per-bin errors is on disk; #583 is a script-reuse question. My naive finder gave a spurious 0.678.
 r2992  LATENT      #583 discharged: sky peaks measured (220.4/537.7/817.3), substitution error 0.0043 = 0.7% of the gap.
+r2993  LATENT      PO-7 STRUCK: phase forced then derived; the 0.615 real at 76 sigma with 0.7% substitution error. Two rows remain.

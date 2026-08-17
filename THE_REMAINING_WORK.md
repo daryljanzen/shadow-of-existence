@@ -132,7 +132,7 @@ substrate's dimension stays bounded below only.*
 with a **massive dispersion relation** — and the object to compute is whether $\omega/|aH|\to0$ for a
 massive mode, which it need not.*
 ⇒ ***If a massive trajectory does NOT freeze, it carries a phase, and the seam datum's phase acquires a
-derivation — which is exactly `PO-7`'s inversion route ⓷.***
+derivation — which is exactly `PO-7`'s inversion route ⓷.*** ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
 ⌗ ***So this vein and the one open verdict are the same object approached from two sides, and nobody has
 said so before now.***
 **COST: cc54's instrument, one run.**
@@ -141,7 +141,7 @@ said so before now.***
 
 # II · THE ONE OPEN VERDICT
 
-## `PO-7` (`L-171`) · **IS 0.408 A REAL DISAGREEMENT WITH THE SKY?**
+## `PO-7` (`L-171`) · **IS 0.408 A REAL DISAGREEMENT WITH THE SKY?** ⛭ **⟨STRUCK r2993 with `PO-7`: both clauses answered — the phase FORCED then DERIVED, and the $0.615$ deficit real at $76\sigma$ with a $0.7\%$ substitution error on Planck's own data.⟩**
 
 **⌗ THE STATE:** *`kills/PO-7.md` is **complete** — object named, four checks written, **all four now
 pass**. ① SAME-OBJECT (and all four withdrawn quantities failed exactly it); ⑤ RELATIVE-OR-ABSOLUTE;

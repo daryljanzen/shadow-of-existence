@@ -62,24 +62,24 @@ without fixing what is still sitting there owed?"**
 | ~~**`L-221`**~~ ⛭ **⟨STRUCK r2947 with `PO-5`: both halves of the row's object delivered — triality computed on `prop:wall`'s own solution, and the closure rule agreeing 11 of 11 with the observed hadron spectrum. The target's every route is closed. `kills/PO-5.md`.⟩** | QUESTION · OPEN |
 | **`L-540`** | QUESTION · — |
 | **`L-811`** | QUESTION · DARYL |
-| **`L-812`** | QUESTION · — |
+| ~~**`L-812`**~~ ⛭ **⟨STRUCK r2993 with `PO-7`: both clauses answered — the phase FORCED then DERIVED, and the $0.615$ deficit real at $76\sigma$ with a $0.7\%$ substitution error on Planck's own data.⟩** | QUESTION · — |
 | **`L-813`** | QUESTION · — |
 | **`L-814`** | QUESTION · — |
-| **`L-815`** | QUESTION · OPEN |
+| ~~**`L-815`**~~ ⛭ **⟨STRUCK r2993 with `PO-7`: both clauses answered — the phase FORCED then DERIVED, and the $0.615$ deficit real at $76\sigma$ with a $0.7\%$ substitution error on Planck's own data.⟩** | QUESTION · OPEN |
 | **`L-816`** | QUESTION · — |
 | **`L-818`** | QUESTION · OPEN |
 | **`L-819`** | QUESTION · OPEN |
 | **`L-820`** | QUESTION · — |
 | **`L-821`** | QUESTION · — |
-| **`L-822`** | QUESTION · — |
-| **`L-823`** | QUESTION · — |
+| ~~**`L-822`**~~ ⛭ **⟨STRUCK r2993 with `PO-7`.⟩** | QUESTION · — |
+| ~~**`L-823`**~~ ⛭ **⟨STRUCK r2993 with `PO-7`.⟩** | QUESTION · — |
 | **`L-824`** | QUESTION · — |
 | **`L-825`** | QUESTION · — |
 | **`L-826`** | QUESTION · — |
 | **`L-827`** | QUESTION · — |
 | **`L-828`** | QUESTION · — |
 | **`L-829`** | QUESTION · — |
-| **`L-830`** | QUESTION · — |
+| ~~**`L-830`**~~ ⛭ **⟨STRUCK r2993 with `PO-7`.⟩** | QUESTION · — |
 | **`L-218`** | WORK · — |
 
 *⌗ The gate that enforces the budget is `corpus/check_burndown.py`; the ID-space integrity check lives there too.*

@@ -23,7 +23,7 @@ mechanism.**
 > sky in the acoustic PHASE by 0.62π, a discrepancy robust to the fitted parameter and only a third reachable
 > by the one freedom the seam datum leaves open.***
 
-`F5` is unsoftened, `PO-7` is protected, and none of it is converted. **the conversion runs by `F5`'s stated procedure.**
+`F5` is unsoftened, `PO-7` is protected, and none of it is converted. **the conversion runs by `F5`'s stated procedure.** ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
 
 ---
 

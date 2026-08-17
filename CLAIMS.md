@@ -91,7 +91,7 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > *· `corpus/make_receipt_appendix.py` — **one glyph**, `†` → `\textdagger{}`; the second time in two
 > nights a new glyph in the observer line's rows stopped every appendix generating, both caught by
 > `check_appendix_current`. *· `THE_LIVE_ARC.md`, `receipts/INDEX.md`, `FOR_56.md`, `ABSORPTION.md` —
-> `L-562` in band, item 47, declaration. **No paper edited: this reports a number and `PO-7` is
+> `L-562` in band, item 47, declaration. **No paper edited: this reports a number and `PO-7` is ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
 > protected.**
 >
 > ⌗ **AND c54.229's SECOND LEAD, `L-563`.** *· `scripts/row_splits.py` — **new**, and it refuses to

@@ -67,7 +67,7 @@ hierarchy — while the control's $\chi^2/\mathrm{dof}$ fell from about a hundre
 
 `L-147`'s verdict is unchanged and the reason is now quantitative: a control seven times worse than a
 fit cannot certify what it is compared with. **What has changed is that the gap is a factor of seven
-and not a factor of a hundred.** `PO-7` stays protected.
+and not a factor of a hundred.** `PO-7` stays protected. ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
 
 ## Gates
 

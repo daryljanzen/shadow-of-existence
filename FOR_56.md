@@ -365,7 +365,7 @@ rather than a rule of conduct.*
 *Everything outstanding is **fifteen items**, independence-checked. **Four are yours**, and all four need an
 instrument.*
 
-**⌗ A2 · `PO-seam` — DOES A MASSIVE MODE FREEZE?** ⛭ ***This is also `PO-7`'s inversion route ⓷, and nobody had
+**⌗ A2 · `PO-seam` — DOES A MASSIVE MODE FREEZE?** ⛭ ***This is also `PO-7`'s inversion route ⓷, and nobody had ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
 noticed they are one object.***
 *Your `L-805` showed every mode of interest freezes because $c_sk/\lvert aH\rvert\to0$ at the crossing. **The
 massive question is the same computation with a massive dispersion relation:** is $\omega/\lvert aH\rvert\to0$

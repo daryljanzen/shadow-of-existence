@@ -56,7 +56,7 @@ wired right**.*
 $\Delta\chi^2=331$** — ***under the fitted 400, which is what a derivation must do.***
 *· ⚠ **And the receipt states its own limits, which this ledger inherits:** "**Not** a measurement of the lensing
 amplitude (the operator is $\Lambda$CDM's, **imposed not fitted**) and **not** a claim the CR arm now fits — **it
-does not**." **`PO-7` stays protected.***
+does not**." **`PO-7` stays protected.*** ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
 
 **⌗⌗ AND THE DISTINCTION THIS BAKE SHOULD CARRY, because it is the one that decides what comes next.**
 *Two lensing calculations exist and they are not the same object:*

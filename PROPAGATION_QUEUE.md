@@ -46,7 +46,7 @@ superseded ($0.408$, the inadmissible reading's); a scope collapsed one revision
 $\ell>1760$ run, the control at $1.18$); an assignment made without reading the target; a class named at
 r2872 and rediscovered at r2917. **None was the physics moving.***
 
-**⛭⛭ AND THE SUBSTANCE OVER THE SAME STRETCH HELD:** *`PO-5` **struck**; `PO-7` reduced to **one
+**⛭⛭ AND THE SUBSTANCE OVER THE SAME STRETCH HELD:** *`PO-5` **struck**; `PO-7` reduced to **one ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
 comparison with its phase DERIVED**; `PO-10`'s blindness **closed** and its control shown to
 **converge**.*
 

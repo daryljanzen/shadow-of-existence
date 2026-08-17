@@ -13,7 +13,7 @@ sources: [chat]
 
 ## ⌗ THE INDEPENDENCE CHECK, run rather than asserted
 
-**⓵ ONE COLLAPSE:** *`PO-7`'s inversion route ⓷ — **derive `CRPHI`** — and `PO-seam`'s **does a massive
+**⓵ ONE COLLAPSE:** *`PO-7`'s inversion route ⓷ — **derive `CRPHI`** — and `PO-seam`'s **does a massive ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
 trajectory carry a phase** are ***the same object***. Folded: **A2** covers both.*
 
 **⓶ AND NO ITEM'S INPUT IS ANOTHER ITEM'S OUTPUT.** *Three groups share a **source** — `P14` for the four

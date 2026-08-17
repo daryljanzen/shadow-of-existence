@@ -58,7 +58,7 @@ already know about BEFORE believing a zero.*** *Two lines of calibration would h
 
 **⚠ AND THIS ONE CANNOT BE FIXED WITHIN THE BUDGET:** *the verdicts live in run output; running all 598
 receipts **exceeded the time limit** when attempted at r2901. Reading sources misses them; running
-everything does not finish. **So the two-sided-verdict class is REAL — two confirmed on `PO-7` — and its
+everything does not finish. **So the two-sided-verdict class is REAL — two confirmed on `PO-7` — and its ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
 size is UNMEASURED, which is not the same as zero.***
 
 

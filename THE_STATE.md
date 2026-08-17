@@ -48,7 +48,7 @@ wrong by two.***
 # 0 · THE SPLIT — **bounded, unbounded, and after** *(added r2579)*
 
 **⌗ BOUNDED — a thing with a known end, and you can tell when it is done.** *Nine.*
-*· **3 AUTHORISATIONS** (`PO-7`, `PO-8`, `PO-9`) — the act is written into the procedure;*
+*· **3 AUTHORISATIONS** (`PO-7`, `PO-8`, `PO-9`) — the act is written into the procedure;* ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
 *· **2 PARAGRAPHS** (item 26's citation loop; `L-218` A14 steps 1–2);*
 *· **1 EDITORIAL** (A15, drawn from `CREDO`);*
 *· **2 RUNS** (`PO-10`'s full-spectrum likelihood comparison and odd/even height pattern — P7 calls the first "**a

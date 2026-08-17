@@ -103,7 +103,7 @@ Everything I have compared this span is against that file.*
 
 ## ⌗ WHAT IS DELIBERATELY NOT ON THIS LIST
 
-- **No physics verdicts.** *`PO-7` is protected and `L-147`'s `F5` says a measurement discrepancy is not a
+- **No physics verdicts.** *`PO-7` is protected and `L-147`'s `F5` says a measurement discrepancy is not a ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
   framework verdict. Nothing here converts anything, and the conversion runs by `F5`'s stated procedure.*
 - **Nothing about your revision numbering.** *Your branch carried `r2478`/`r2479` before the forced update, and
   `main` now carries different revisions at both numbers. **That hazard is real and it is not mine to name a

@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2993 — 2026-08-15 (main line). **`PO-7` STRUCK — BOTH CLAUSES OF THE OBJECT ANSWERED.**
+
+**⛭⛭ CLAUSE ONE — it does NOT imprint.** *Every mode exits the horizon and **freezes before the crossing**, so sin(phi) = 0 and phi is in {0, pi} — **forced by the paper's own transmission argument, in print before the scan was run** — and then **DERIVED to CRPHI = 0** by adiabatic compression, pi being anti-adiabatic and inadmissible. The band collapses; the deficit is **pinned at 0.615**.*
+
+**⛭⛭ CLAUSE TWO — YES, on both checks, like-for-like.** *At a one-multipole peak-position error the 0.615 is **76 sigma**; and a peak-finder **written for the purpose**, run on **Planck 2018 plik_lite**, gives sky peaks 220.4 / 537.7 / 817.3 / 1123.9 — **reproducing the literature values to better than 1% without being fitted to them** — for a substitution error of **0.0043, or 0.7% of the gap**.*
+
+⇒ ***The 0.615 stands at ~140x the substitution error. **The programme's only live confrontation with data is now measured on both sides by the same procedure.****
+
+**⌗ AND THE POSITIVE HALF THE ROW CARRIED UNCITED FOR NINETY REVISIONS:** *l_A **preserved to +0.075% while D_M and r_s each fall over 6%** — claimed in advance, not calibrated; the acoustics **reproducing at 98.2% of the acoustic rate**; and a **line-of-sight transfer that runs and is validated** to 0.16%.*
+
+**⌗ TWO ROWS REMAIN.**
+
 ### Revision r2992 — 2026-08-15 (main line). **#583 DISCHARGED: THE SKY MEASURED ON ITS OWN DATA, AND THE SUBSTITUTION IS LIKE-FOR-LIKE AT LAST.**
 
 *No B3 peak-finder exists — r2991's "script-reuse question" was wrong, and the finder had to be **written**. Written: parabolic fit to each acoustic hump, restricted to ell > 100 so the low-ell rise is excluded, run on Planck 2018 plik_lite.*

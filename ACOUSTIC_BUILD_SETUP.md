@@ -60,7 +60,7 @@ current: r2517+c54.201
 > ⌗ *And two lints now exist for exactly that: **`check_depth`** (reads depth off the data) and
 > **`check_settings`** (reads reduced settings off the receipt).*
 >
-> ⚠ *`F5` unsoftened, `PO-7` protected, the conversion Daryl's — **none of the above converts anything**.*
+> ⚠ *`F5` unsoftened, `PO-7` protected, the conversion Daryl's — **none of the above converts anything**.* ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
 
 
 > **⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — and this setup's front moved twice while the file stood still.**

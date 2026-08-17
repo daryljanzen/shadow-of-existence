@@ -23,7 +23,7 @@ characters instead of being assembled from up to thirty-six appended blocks.
                        to a coupling closed, the fifth gated on PO-11
                 PO-6   the interacting tower -- condition list settled at six; JOINT
                        SATISFIABILITY untested, C6 against C7 the named tension
-                PO-7   the first acoustic peak; the spacing deficit is structural
+                PO-7   the first acoustic peak; the spacing deficit is structural ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
                 PO-10  the scalar remainder -- half 2 closed, half 1's specification dead
                 PO-11  the propagating spinor sector -- operator settled, continuum open
     STRUCK (4)  PO-3, PO-4, PO-9, PO-12

@@ -1498,7 +1498,7 @@ eighth face exactly. **Fixed on this line's tree; not routed to the fork.***
 >
 > ### ⌗ THE OPERATING LAYER
 >
-> *`PO-7` reworded and `PO-8` restated (c54.165–166, Daryl-directed; **neither closed**). `A·1` — which P8 calls
+> *`PO-7` reworded and `PO-8` restated (c54.165–166, Daryl-directed; **neither closed**). `A·1` — which P8 calls ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
 > the deepest question the construction raises — **folded as `L-174` after being live and unregistered since
 > r565**. Node 56's routing list discharged. **The corpus now has ten standing gates plus three instruments
 > outside them** — `run_all_receipts`, `regen_teed_up`, `audit_index`. `WHATS_TEED_UP` is **generated** rather

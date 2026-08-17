@@ -84,7 +84,7 @@ variants — but the floor should be quoted with it, and was not.*
 $73.0$/$0.3066$, ΛCDM at $67.40$/$0.3150$), so $D_M$ differs by $-6.2\%$ and $\rs$ by $-5.9\%$ **and
 they cancel** — $\ell_A$ comes out $301.6$ vs $302.5$.* ⇒ **Raw $D_M$ and $\rs$ are not comparable
 across arms; every cross-arm statement must be made $\ell_A$-normalised.** *"Geometry common to
-$0.5\%$" was true only because of that cancellation. `PO-7` now carries this rule.*
+$0.5\%$" was true only because of that cancellation. `PO-7` now carries this rule.* ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
 
 **4. THE MECHANISM, AS A HYPOTHESIS TO TEST HERE.** *Their $Q_1(k)$ diagnostic — the accumulated sound
 phase at each extremum of $\hat\Theta$, mode by mode — and the model-free subtraction

@@ -913,7 +913,7 @@ two parts in a thousand, through the same code path. That is not a defect; that 
 
 **⚠ AND `F5` IS NOT SOFTENED HERE EITHER — you asked to be held to it and you are.** *This removes **the
 alternative you named**; it does not convert anything.* ***A measurement discrepancy with one confound removed is a
-cleaner measurement, not a verdict.*** *`PO-7` stays protected and the conversion runs by `F5`'s stated procedure.*
+cleaner measurement, not a verdict.*** *`PO-7` stays protected and the conversion runs by `F5`'s stated procedure.* ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
 ⌗ *And your other caveat stands untouched: **$1.18$ is not a fit**, and what the $17\%$ remainder above a true
 $\Lambda$CDM's $1.01$ consists of has not been named. **That is now the sharpest open item on front #2**, and it is
 not one this check touches.*
