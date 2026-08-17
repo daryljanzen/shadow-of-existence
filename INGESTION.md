@@ -535,3 +535,4 @@ r3010  LATENT      PO-16: the ratio route is closed by X1; the live question is 
 r3011  LATENT      deriving an empirical input is a category error; PO-16 restated to whether P7s framing is defensible.
 r3012  LATENT      frontier:inherited read whole: it is sound. r3010/r3011 withdrawn — I argued with a fragment.
 r3013  LATENT      PO-13 located: the propagated comb is 0.72-0.79 of the asserted spacing under every IC tried. The third layer.
+r3014  LATENT      PO-15: the thermal state selects the Friedrichs EXTENSION, defined from the form — so it acts given an ordering, not on one.

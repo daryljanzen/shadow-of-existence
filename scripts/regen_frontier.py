@@ -24,7 +24,7 @@ EST = {
     'PO-14': ('the unbuilt chiral member — a BUILD', 1, 1, 5, None,
         'r3009: P09 says REACHABLE, needing no machinery the operator lacks; P11 has the polarised leaf worked with ONE propagating mode. Until built, four classes where five are required'),
     'PO-15': ('the ordering — does the towers zero-point energy gravitate', 1, 1, 3, None,
-        'r3009: both branches computed, 3/4 = 1/4 + 1/2 is WHY, decomposition survives either way. UNASKED: can the thermal state that supplied the boundary condition also select the ordering'),
+        'r3014: the thermal state selects the FRIEDRICHS EXTENSION, which is defined FROM the quadratic form -- so it acts GIVEN an ordering and cannot select one. The ordering sits upstream of the only selection mechanism the construction has'),
     'PO-16': ('the inherited datum — a one-parameter accommodation', 1, 1, 2, None,
         'r3012: the item is SOUND -- it already states at-no-cost, the met consistency target, the two-data resolution, and etas conservation-law protection. Open in its own words: the EAGER target, a derivation of eta and of the onset'),
 }
@@ -43,13 +43,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3013: **the paper already locates the defect, and already contains my r2930 finding "
-            "self-corrected.** sec:coherence: the 296 spacing is **the arithmetic of the expression "
-            "assumed rather than an output** — 'this paper stated it as the result of propagating "
-            "the modes, and that was wrong'. ⇒ And it locates the fault: **where the modes ARE "
-            "propagated the comb comes out at 0.72-0.79 of that spacing under EVERY initial "
-            "condition tried** — not the seam (which claims no placement), not the transfer (0.16% "
-            "on the control), but the propagation on this rate.")
+LASTFIND = ("r3014: **the thermal state selects an EXTENSION, not an ORDERING — and the negative is "
+            "informative.** P10: the horizons Hartle-Hawking state at the surface gravity **the "
+            "substrate itself fixes SELECTS THE FRIEDRICHS EXTENSION**, closing the deficiency "
+            "freedom without a free parameter. ⇒ But **Friedrichs is defined FROM the quadratic "
+            "form, and the form is what an ordering produces** — so it selects the extension GIVEN "
+            "an ordering. **The ordering sits UPSTREAM of the only selection mechanism the "
+            "construction has.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3014 — 2026-08-15 (main line). **`PO-15`: THE THERMAL STATE SELECTS AN EXTENSION, NOT AN ORDERING — AND THE NEGATIVE IS INFORMATIVE.**
+
+*Read P10's quantization passage whole. It does not merely supply a boundary condition: "**that point is not a generic half-line endpoint but the de Sitter cosmological horizon, whose Hartle--Hawking thermal state, at the surface gravity the substrate itself fixes, SELECTS THE FRIEDRICHS EXTENSION**" — and "the deficiency freedom is thereby not merely parametrized but **closed, and closed without a free parameter**".*
+
+⇒ ***So the answer is no, and it is sharp: **the Friedrichs extension is defined FROM the quadratic form** — it is the extension preserving that form's lower bound. **The form is what an ordering produces.** So the thermal condition selects the extension **given** an ordering, and cannot select the ordering, because the ordering is logically prior to the object the thermal prescription acts on.***
+
+**⌗ AND THAT IS WHY THE ROW WAS RIGHT TO ASK:** *the thermal state is **the only thing in this construction that closes a quantization freedom without a free parameter**, so it was the one candidate worth testing. **Testing it locates the ordering question precisely: it sits upstream of the only selection mechanism the construction has.***
+
+**⚠ What this does not show** *is that no selection exists — only that **the mechanism which fixed the free sector's extension cannot reach this**, for a structural reason rather than a gap in the argument.*
+
 ### Revision r3013 — 2026-08-15 (main line). **`PO-13`: THE PAPER ALREADY LOCATES THE DEFECT, AND IT IS NOT WHERE THE ROW GUESSED.**
 
 **⛔ ① MY r2930 IS IN THE PAPER ALREADY.** *sec:coherence: "the receipt writes the mode function down with the sound horizon and comoving distance **as literals**; **no mode is propagated in it** … so the spacing ~296 is **the arithmetic of the expression assumed rather than an output**. **This paper stated it as the result of propagating the modes, and that was wrong**." ***The corpus self-corrected this before I rediscovered it.***
