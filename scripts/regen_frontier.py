@@ -39,12 +39,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2997: **the 26.6% orphan is ABSORBED, not homeless.** C56 measured median |C_CR/C_LCDM "
-            "− 1| = 26.6% across bins; **r2994 measured the SAME difference properly** — 215 bins, "
-            "plik_lite covariance, both arms on five parameters — getting Delta chi2 = 190.7. ⇒ **A "
-            "median 26.6% fractional difference between spectra separated by Delta chi2 = 190.7 is "
-            "that disagreement expressed without a covariance**, not an unexplained effect. It "
-            "needed no row: the quantity is now measured better.")
+LASTFIND = ("r2998 (Daryl caught it): **'decisively favouring' is WITHDRAWN.** Both arms fit the SAME "
+            "five parameters, but **what they DO differs**: LCDMs tune structure a large field "
+            "built over sixty years; CRs **pin a spectrum DERIVED from the geometry**. And **a "
+            "factor of two in reduced chi^2 is not decisive for a first derivation** — this "
+            "register recorded a CR arm at **260/dof** at r2965, so **1.891 is the fact and the "
+            "ordering hides the magnitude**.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
