@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2985: **clause two is ANSWERABLE and needs a LOOKUP, not a computation — r2977s 'no error bar exists' was the wrong conclusion.** The deficit is a fitted PHASE INTERCEPT, and **an intercept propagates from POSITION errors, not height errors**; r2977 found the skys HEIGHT bar and I generalised. ⇒ One unbanked published number — sigma(l_peak) — through a two-parameter fit gives sigma(phi), and 0.615/sigma(phi) answers the clause. OWED #581.***
+*⌗ **LAST ACTUAL MOVE — r2986: the propagation run as a FUNCTION of the unbanked number — **the clause is insensitive across the plausible range.** sigma(phi) = 0.0081 s at N=8, so 0.615 is **75.6 sigma at s=1, 7.6 at s=10, 3.8 at s=20**, and CMB peaks are located to order ONE multipole. **The lookup cannot flip it.** ⛔ And I misstated my own table in the same breath (wrote 'over 20 sigma' where it read 3.8) — caught on re-read, the sixth slip of the session and the first inside a computation I had just run.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -33,7 +33,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the first peak — one COMPARISON, all inputs supplied | **1** | 1 | 1 | READ | 22 | — | r2985: clause two is a LOOKUP -- sigma(l_peak) from the sky, propagated through the fit, gives sigma(phi) and answers 0.615. The one ARGUED item is a mechanism attribution no transfer can settle |
+| **PO-7** | the first peak — one COMPARISON, all inputs supplied | **1** | 1 | 1 | READ | 22 | — | r2986: the lookup CANNOT flip clause two -- 0.615 is 76 sigma at a one-multipole position error and still 3.8 at twenty. What remains unstated: LCDM standing in for the sky to this precision |
 | **PO-10** | the scalar remainder — one RUN and one REFIT | **2** | 2 | 1 | READ | 33 | — | r2978: the odd/even run is NOT arithmetic -- the loading ratio (3.500) is the DRIVING ratio, not the observed one, and the transfer sits between. Plus the FULL-SPECTRUM refit on the banked 215 bins |
 
 ---

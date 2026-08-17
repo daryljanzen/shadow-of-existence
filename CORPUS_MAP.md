@@ -146,6 +146,23 @@ sources: [cowork, chat]
 
 
 
+### Revision r2986 — 2026-08-15 (main line). **THE PROPAGATION RUN AS A FUNCTION OF THE UNBANKED NUMBER: THE CLAUSE IS INSENSITIVE ACROSS THE PLAUSIBLE RANGE.**
+
+*Fitting the peak series to N peaks with equal position errors s, ordinary least squares gives sigma(phi) = 0.0081 s at N=8 (0.0159 s at N=3).*
+
+    s (multipoles)   sigma(phi)    0.615 / sigma
+    1.0              0.0081         75.6 sigma
+    2.0              0.0163         37.8
+    5.0              0.0407         15.1
+    10.0             0.0813          7.6
+    20.0             0.1627          3.8
+
+⇒ ***So the lookup cannot flip the clause anywhere near the real range: **CMB peak positions are located to order one multipole, and at s=1 the gap is 76 sigma**. It would take a peak-position uncertainty of ~100 multipoles to bring 0.615 inside 1 sigma.***
+
+**⛔ AND I MISSTATED MY OWN TABLE IN THE SAME BREATH:** *I wrote "even at s=20 the gap is still over 20 sigma" when the table I had just printed reads **3.8**. **Caught on re-read before recording** — the sixth arithmetic-or-reading slip of the session and **the first inside a computation I had just run myself**.*
+
+**⚠ WHAT THIS DOES AND DOES NOT SETTLE:** *`OWED` #581's missing number **cannot change the answer** for any realistic value, so the clause is effectively answered — **but the deficit remains a CR-vs-LambdaCDM gap**, and LambdaCDM standing in for the sky to this precision is still unstated.*
+
 ### Revision r2985 — 2026-08-15 (main line). **CLAUSE TWO IS ANSWERABLE, AND WHAT IT NEEDS IS A LOOKUP. r2977's "NO ERROR BAR EXISTS" WAS THE WRONG CONCLUSION.**
 
 *Asked whether the clause requests something the sky cannot supply. **It does not.***

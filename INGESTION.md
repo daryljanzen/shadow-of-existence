@@ -507,3 +507,4 @@ r2982  LATENT      of r2907s three argued results: one argued, one ESTABLISHED (
 r2983  INSTRUMENT  false fabrication alarm retracted: all six r2982 quotes verify. An audit must normalise as the extraction did.
 r2984  LATENT      the argued coherence item is a mechanism attribution both mechanisms satisfy; a transfer cannot settle it. PO-2s shape.
 r2985  LATENT      clause two needs sigma(l_peak) propagated through the fit -- a lookup. r2977 looked for the height bar, the wrong one.
+r2986  LATENT      sigma(phi) = 0.0081 s: 0.615 is 76 sigma at s=1, 3.8 at s=20. The lookup cannot flip clause two.
