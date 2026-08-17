@@ -146,6 +146,19 @@ sources: [cowork, chat]
 
 
 
+### Revision r3035 — 2026-08-15 (main line). **THE DERIVATION DONE AND THE SUBSTITUTION TESTED: THE FRIEDMANN TERM IS CONFIRMED AS THE CARRIER.**
+
+*The exact perturbed Einstein equations in Newtonian gauge, background rate taken as given:*
+
+    (0i)   Phi' = -H Psi - 4 pi G a^2 (rho+p) v          <- EXACT, uses no Friedmann equation
+    (00)   3H(Phi' + H Psi) + k^2 Phi = -4 pi G a^2 drho
+
+**⛔ And the code's form is (00) with the density perturbation eliminated via 3H^2 = 8 pi G a^2 rho.** *Both its remaining terms carry the Friedmann constraint — the density fractions are ratios to a critical density **defined by** it. **In FLRW that elimination is legitimate; in CR the rate is geometric and the density is whatever the plasma contains, so it is not.***
+
+**⛭ AND SUBSTITUTING THE EXACT FORM MOVES THE COMB DECISIVELY:** *ratio **0.746 to 1.2674**; with physical densities rather than critical-density fractions, **1.2765**. ***The Friedmann term is confirmed as the carrier of the compression — removing it does not shave the number, it swings it through unity.***
+
+**⚠⚠ But both replacements overshoot**, *so neither is the right equation yet: the momentum form needs the source in the code's own variables and normalisation, and my two attempts got that wrong in opposite ways. **The diagnosis is settled; the correction is not.***
+
 ### Revision r3034 — 2026-08-15 (main line). **MY r3033 FRAMING WAS WRONG. THE DEFECT IS SHARPER THAN I STATED.**
 
 *I wrote "hold the potential to its matter-dominated behaviour". **That is meaningless here: in CR the expansion rate is GEOMETRIC and FIXED — set by the substrate and the causal reassignment, sourced by nothing. There is no matter domination and no radiation domination because there is no Friedmann constraint tying the rate to contents. I imported FLRW's vocabulary along with its equations.***

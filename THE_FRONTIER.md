@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3034 (Daryl corrected me): **there is no matter domination in CR.** The expansion rate is GEOMETRIC and FIXED, sourced by nothing; I imported FLRWs vocabulary with its equations. ⇒ The clean distinction: **background geometric and unsourced; perturbations dynamical and genuinely sourced by the plasma**. ⛔ So the defect is one line — the potential equations Omega_i are **shares of a total that SOURCES a Friedmann rate**, a budget this cosmology does not have.***
+*⌗ **LAST ACTUAL MOVE — r3035: **derivation done, carrier CONFIRMED.** The exact (0i) equation Phi' = -H Psi - 4 pi G a^2 (rho+p) v **uses no Friedmann equation**; the codes form is (00) with delta-rho eliminated via 3H^2 = 8 pi G a^2 rho, so **both its remaining terms carry the Friedmann constraint**. ⇒ Substituting the exact form swings the ratio **0.746 -> 1.2674** (1.2765 with physical densities) — **the Friedmann term IS the carrier**. ⚠ Both overshoot: the normalisation is wrong in opposite ways. Diagnosis settled, correction not.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3034: the defect is the perturbed potential equation carrying FLRWs Friedmann constraint -- its Omega_i are shares of a total that sources a rate CR does not source that way. The question: what IS that equation on a geometric rate |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3035: CONFIRMED by substitution -- the Friedmann term carries the compression (0.746 -> 1.27 when replaced by the exact (0i) form). What is owed: the (0i) momentum in the codes own variables and normalisation |
 
 ---
 

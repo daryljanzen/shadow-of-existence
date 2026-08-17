@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3034: the defect is the perturbed potential equation carrying FLRWs Friedmann constraint -- its Omega_i are shares of a total that sources a rate CR does not source that way. The question: what IS that equation on a geometric rate'),
+        'r3035: CONFIRMED by substitution -- the Friedmann term carries the compression (0.746 -> 1.27 when replaced by the exact (0i) form). What is owed: the (0i) momentum in the codes own variables and normalisation'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3034 (Daryl corrected me): **there is no matter domination in CR.** The expansion "
-            "rate is GEOMETRIC and FIXED, sourced by nothing; I imported FLRWs vocabulary with its "
-            "equations. ⇒ The clean distinction: **background geometric and unsourced; "
-            "perturbations dynamical and genuinely sourced by the plasma**. ⛔ So the defect is one "
-            "line — the potential equations Omega_i are **shares of a total that SOURCES a "
-            "Friedmann rate**, a budget this cosmology does not have.")
+LASTFIND = ("r3035: **derivation done, carrier CONFIRMED.** The exact (0i) equation Phi' = -H Psi - "
+            "4 pi G a^2 (rho+p) v **uses no Friedmann equation**; the codes form is (00) with "
+            "delta-rho eliminated via 3H^2 = 8 pi G a^2 rho, so **both its remaining terms carry "
+            "the Friedmann constraint**. ⇒ Substituting the exact form swings the ratio **0.746 -> "
+            "1.2674** (1.2765 with physical densities) — **the Friedmann term IS the carrier**. ⚠ "
+            "Both overshoot: the normalisation is wrong in opposite ways. Diagnosis settled, "
+            "correction not.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
