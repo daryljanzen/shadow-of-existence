@@ -530,3 +530,4 @@ r3005  CORPUS      Stage One P15: all four results written in — the refit, the
 r3006  CORPUS      Stage One complete: P10 (spectrum branches, the cc question) and P14 (11-of-11, one-pair mismatch) written in.
 r3007  CORPUS      THE BAKE done: P7s four frontier items shrunk to the residue; inherited read and left unchanged.
 r3008  CORPUS      bake audited both ways: 20/20 results in, nothing contradicted. The 23% hits are the transient, not the withdrawn spacing.
+r3009  INSTRUMENT  THE_REGISTER opened: PO-13 phase diagnosis, PO-14 the chiral build, PO-15 the ordering, PO-16 the inherited datum.

@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r3009 — 2026-08-15 (main line). **A NEW REGISTER OPENED — FOUR ROWS, SAME FIVE COLUMNS, EVERY EXISTING GATE READS IT.**
+
+*`PROTECTED_OPEN` closed at r3001 with fourteen struck. `THE_REGISTER.md` carries what the corpus itself now names as outstanding, in its own words, after the bake.*
+
+**`PO-13` THE MISPLACED PHASE** — *a **DIAGNOSIS**: which of seam, transfer or geometry carries the error. **The lever is already in hand** — a line-of-sight transfer that takes the control's first peak from 1.7% to 0.16% **leaves the CR deficit unchanged to four figures**, which points away from the transfer layer.*
+
+**`PO-14` THE UNBUILT CHIRAL MEMBER** — ***the one that is a BUILD***. *P09: **reachable**, and "constructing it needs no machinery the operator lacks". P11 has the polarised leaf worked with **one** propagating mode; the unpolarised carries **two, coupled nonlinearly**.*
+
+**`PO-15` THE ORDERING** — *does the tower's zero-point energy gravitate at the horizon. **May not be CR's to answer, and saying which is itself the result.** The unasked question: **can the thermal state that supplied the boundary condition also select the ordering?***
+
+**`PO-16` THE INHERITED DATUM** — *a one-parameter accommodation. **X1 is the template** and its form **does not transfer automatically**. Cheapest of the four to start.*
+
+**⌗ The protocol rules carry forward unchanged**, *including the one that cost a hundred turns: **look before declaring a build**.*
+
 ### Revision r3008 — 2026-08-15 (main line). **THE BAKE AUDITED BOTH WAYS. TWENTY OF TWENTY IN; NOTHING CONTRADICTED.**
 
 **⛭⛭ FORWARD AUDIT — every result of this session against the corpus: 20 of 20 present.** *The 11-of-11 closure and the thirds with no SM input; the one-pair mismatch, achirality as its cause, and the chiral member unbuilt; the refit's 397.13 and the 0.983 control; the odd/even 2.185; the sky's measured 537.7; the 0.615 deficit, its seventy sigma and its seven-parts-in-a-thousand substitution error; the spectrum in both branches and \$\\tfrac34=\\tfrac14+\\tfrac12\$; the ordering as the horizon zero-point question; the floor retained; scalar as a diagnosis; sm cutting both ways; and \$\\ell_A\$ preserved to 0.075%.*

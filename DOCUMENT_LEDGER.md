@@ -20,7 +20,7 @@ sources: [chat]
 | **STATE** | 47 |
 | **METHOD** | 30 |
 | **RECORD** | 81 |
-| **UNCLASSIFIED** | 6 |
+| **UNCLASSIFIED** | 7 |
 
 ## ⌗ DECLARED CLASSES
 
@@ -244,6 +244,7 @@ sources: [chat]
 | `STATE_OF_THE_STATE.md` | UNCLASSIFIED |  | — | c54.138 |  |
 | `THE_BAKE.md` | UNCLASSIFIED |  | — | — |  |
 | `THE_FRONTIER.md` | UNCLASSIFIED |  | — | — |  |
+| `THE_REGISTER.md` | UNCLASSIFIED |  | — | — |  |
 | `TURN_PROTOCOL.md` | UNCLASSIFIED |  | — | — |  |
 
 > **⚠ THE LAG COLUMN IS A LOOK-SIGNAL, NOT A VERDICT.** *It reads the newest fork revision the file mentions, which any mention satisfies — a document can be made to look current by writing ABOUT the fork. **`declared current` is the honest column**, set only by the pass that actually brings a file current. And a forward document is ahead of the corpus by construction: "stale" is a word for the corpus, never for the instrument examining it.*
