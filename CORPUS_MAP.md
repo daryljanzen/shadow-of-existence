@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2991 — 2026-08-15 (main line). **THE SKY'S OWN SPECTRUM IS IN THE REPO, SO #583 IS RUNNABLE — AND MY FIRST ATTEMPT AT IT IS AN ARTEFACT.**
+
+*The owed item asks for the sky measured B3's way. **Checked whether the data exists**: `computations/planck_tt_likelihood/data/planck2018_plik_lite/cl_cmb_plik_v22.dat` — Planck 2018 plik_lite binned TT, **215 bins from ell 32 to 2500, columns [ell, C_ell, sigma]**.*
+
+⇒ ***So the programme's only live data confrontation is measurable from material already in this repository — **including the per-bin error bars**, which is the peak-position sigma r2985 called unbanked.***
+
+**⛔ AND MY FIRST ATTEMPT IS NOT THE MEASUREMENT:** *a naive local-maximum finder returned ell = 42, 221, 527, 554 — **42 is the low-ell rise, not an acoustic peak, and 554 is a shoulder of 527**. Fitting those gave an offset of 0.678, **110% of the gap**, which is an artefact of the finder and not a result. ***I report it because it is exactly the kind of number that would look like a finding if I stopped at the first output.***
+
+**⌗ SO #583's STATE IMPROVES WITHOUT BEING DISCHARGED:** *it was "needs a measurement nobody can make here"; it is now **"needs B3's actual peak-finder pointed at data already on disk"** — a script-reuse question, not a data question.*
+
+**⚠ And the binning limits it:** *the first-peak bin is ~5 wide in ell and the second ~9, so any position from this file carries that resolution before any fit.*
+
 ### Revision r2990 — 2026-08-15 (main line). **THE CAVEAT READ: NOT CIRCULAR, BUT NOT LIKE-FOR-LIKE, AND IT BEARS ON r2989's 0.0101.**
 
 *I feared the sky's numbers came from the corpus's own arm, which would have made the substitution check compare the corpus to itself. **They do not.***

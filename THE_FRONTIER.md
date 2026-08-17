@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2990: the caveat read — **not circular, but not like-for-like.** The skys 220/540/810 are **literature standard values, not a measurement this corpus performs**; the arms side is receipted and the skys is not. ⛔ **And that is the defect in my own r2989 check**: I fitted literature values against a peak-finder run on CAMB output, so the 0.0101 cannot separate methodology from physics — the 536-vs-540 and 813-vs-810 gaps are exactly the size that produced it. The 76 sigma stands; the substitution does not.***
+*⌗ **LAST ACTUAL MOVE — r2991: **the skys own spectrum is IN THE REPO** — Planck 2018 plik_lite binned TT, 215 bins, columns [ell, C_ell, sigma], **with per-bin error bars** (the sigma r2985 called unbanked). So the programmes only live data confrontation is measurable from material already on disk. ⛔ **And my first attempt is an artefact**: a naive local-max finder returned ell=42 (the low-ell rise) and 554 (a shoulder), giving a spurious 0.678 offset — the kind of number that looks like a finding if you stop at the first output.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -33,7 +33,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the first peak — one COMPARISON, all inputs supplied | **1** | 1 | 1 | READ | 22 | — | r2990: the 76 sigma stands (the arms own receipted figures) but the SUBSTITUTION check is not like-for-like -- literature values against a peak-finder. Needs the sky measured B3s way (OWED #583) |
+| **PO-7** | the first peak — one COMPARISON, all inputs supplied | **1** | 1 | 1 | READ | 22 | — | r2991: the Planck TT spectrum with per-bin errors is ON DISK, so #583 is a script-reuse question not a data question -- point B3s actual peak-finder at it. The 76 sigma stands |
 | **PO-10** | the scalar remainder — one RUN and one REFIT | **2** | 2 | 1 | READ | 33 | — | r2978: the odd/even run is NOT arithmetic -- the loading ratio (3.500) is the DRIVING ratio, not the observed one, and the transfer sits between. Plus the FULL-SPECTRUM refit on the banked 215 bins |
 
 ---
