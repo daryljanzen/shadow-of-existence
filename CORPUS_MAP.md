@@ -146,6 +146,23 @@ sources: [cowork, chat]
 
 
 
+### Revision r3031 — 2026-08-15 (main line). **WORKED BY HAND: THE ERROR IS THE COMPARISON. THE DRIVING SHIFTS THE COMB, AND LambdaCDM HAS THE SAME DRIVING.**
+
+*Integrated single modes against the script's own splines, driving off and on:*
+
+    NO driving      extrema at k r_s/pi = 1.01, 2.004        spacing 0.995
+    WITH driving    extrema at 0.382, 1.321, 2.26            spacing 0.939, 0.910
+
+*(and an isolated mode's first zero crossing lands at 0.506 where theory says 0.5)*
+
+⇒ ***So the driving is the mechanism. A driven acoustic oscillator's extrema are **not spaced by pi over the sound horizon** — the potential's decay displaces them and compresses the comb. The toy reproduces the direction and part of the magnitude; the full system's neutrinos, anisotropic stress and damping carry it the rest of the way.***
+
+**⛭⛭ AND THAT SETTLES WHAT THIS ROW WAS ABOUT:** *LambdaCDM has **exactly the same driving**, which is why its own first peak sits at about 0.73 of the acoustic scale rather than at 1 — **a textbook fact, not a defect**. ***So comparing a propagated spacing against pi over the sound horizon compares a driven oscillator's extrema to an undriven oscillator's, and ~0.75 is what that mismatch always returns.***
+
+**⌗ Daryl called this from the start** — *"I sort of doubt a big giant discrepancy is real … there is still an error there that hasn't been correctly diagnosed"* — *and I flagged the comparison as a candidate at r3027 and then lost it for three revisions chasing the propagation.*
+
+**⚠ What remains genuinely open is narrower:** *whether CR's driving and LambdaCDM's produce the **same** displacement — a comparison of two computed combs rather than a comb against an analytic scale.*
+
 ### Revision r3030 — 2026-08-15 (main line). **THE SOURCE-COMPOSITION CANDIDATE IS ELIMINATED. THE PHOTON DENSITY ALONE CARRIES THE 0.75.**
 
 *The script already had a source diagnostic for this question. Extended it to separate the parts:*

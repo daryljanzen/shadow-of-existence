@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3030: **source composition ELIMINATED — delta_gamma ALONE carries the 0.75** (ratio 0.7538; Psi has ZERO extrema and is monotonic). ⇒ My r3029 candidate is wrong. ⌗ And **the written equation is verifiably right**: the two RHS lines compose to delta_gamma'' = -k^2 delta_gamma/3(1+R_b), exactly omega = k c_s. **The written frequency is correct and the integrated one is 0.75 of it** — and the paper already showed quadrupling the step count reproduces the peaks exactly.***
+*⌗ **LAST ACTUAL MOVE — r3031: **worked by hand — THE ERROR IS THE COMPARISON.** Single modes against the scripts own splines: **no driving gives extrema spaced 0.995 (correct); WITH the potential driving, 0.939 and 0.910**. ⇒ A driven oscillators extrema are NOT spaced by pi/r_s. **And LCDM has the same driving — which is why its own first peak sits at 0.73 of the acoustic scale rather than 1, a textbook fact.** Comparing a propagated SPACING against pi/r_s compares driven extrema to undriven ones.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3030: NINE candidates eliminated -- delta_gamma alone carries the 0.75, so composition and projection are exonerated. The equation is verifiably omega = k c_s and the numerics are verifiably converged. No candidate I can name honestly |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3031: THE DRIVING shifts the comb -- no-driving spacing 0.995, with-driving 0.939/0.910 -- and LCDM has the same driving (its own first peak is at 0.73 l_A). The 0.75 was a comparison error. What remains: do the two drivings agree |
 
 ---
 

@@ -491,3 +491,4 @@ r3027  LATENT      0.746 brackets between r_s(rec) and r_s(end); effective r_s 1
 r3028  LATENT      PO-13 is one number: 0.746 cycles per pi/r_s. Gate eliminated. Remaining candidate: the integrations time variable.
 r3029  LATENT      time variable eliminated (ratio 1.0000). Eight candidates down. Left: source composition vs delta_gamma extrema.
 r3030  LATENT      delta_gamma alone carries the 0.75; Psi is monotonic. Equation verified correct, numerics verified converged.
+r3031  LATENT      THE DRIVING shifts the comb; LCDM has it too (first peak at 0.73 l_A). The 0.75 was a comparison error.
