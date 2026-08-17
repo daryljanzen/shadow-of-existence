@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3036 — 2026-08-15 (main line). **THE NORMALISATION WAS RIGHT, AND THAT IS WHAT EXPOSES THE ACTUAL INCONSISTENCY.**
+
+*Read the code's convention off its own (00) form: matching its density term against the theory's gives 4 pi G a^2 rho_i = (3H^2/2) Omega_i — **and my r3035 substitution used exactly that**, with the radiation enthalpy and the velocity-to-theta relation both confirmed against the code's own photon density equation. **The substitution was dimensionally correct.***
+
+⇒ ***So why did it overshoot? Because (00) and (0i) are **both** Einstein equations and **must both hold** — they agree only if the background satisfies the Friedmann constraint with the same contents. **They disagreed here, which means the background and the perturbation content are inconsistent with each other.****
+
+**⛔⛔ AND THE INCONSISTENCY IS NOW NAMEABLE, AND IT IS THE OPPOSITE OF WHAT I SAID AT r3034:** ***CR is first-class general relativity*** *— P7's own words — so Einstein's equations do hold, and the rate is a Friedmann rate **for matter and Lambda with no radiation**. ***So the background budget contains no photons while the plasma being perturbed is a photon–baryon fluid.*** **The rate omits a component the perturbations carry, and every Einstein equation relating them then disagrees — exactly the symptom.***
+
+**⚠ Not yet tested:** *whether restoring radiation to the rate lands the comb. **A different test from any run so far, and it cuts against the radiation-free rate, so it must be run rather than reasoned about.***
+
 ### Revision r3035 — 2026-08-15 (main line). **THE DERIVATION DONE AND THE SUBSTITUTION TESTED: THE FRIEDMANN TERM IS CONFIRMED AS THE CARRIER.**
 
 *The exact perturbed Einstein equations in Newtonian gauge, background rate taken as given:*
