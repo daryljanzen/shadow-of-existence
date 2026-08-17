@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2989 — 2026-08-15 (main line). **THE SKY'S THIRD PEAK WAS BANKED ON `PO-7`'s OWN ROW, AND THE COMPLETED CHECK GIVES THE SAME ANSWER FOR A BETTER REASON.**
+
+*Searched every file rather than the receipts I remembered — the same lesson as r2977 and r2988 — and found it in the row's own history: "**THE SKY: peaks near 220/540/810**".*
+
+    control 220/536/813    l_A = 296.5    phi/pi = -0.2361
+    sky     220/540/810    l_A = 295.0    phi/pi = -0.2260
+                                offset      0.0101   = 1.6% of the 0.615 gap
+
+**⛭⛭ AND THE COINCIDENCE IS THE POINT:** *r2987's two-peak estimate was 0.0103 and the three-peak answer is 0.0101 — **the same number**, even though adding that peak moves each series' OWN intercept by 0.0677. ***The intercepts are unstable and their DIFFERENCE is not, because both series shift together.*** r2988's objection was correct about the instability and **wrong about the consequence**.*
+
+**⌗ SO THE SUBSTITUTION IS NOW MEASURED RATHER THAN ESTIMATED:** *LambdaCDM reproduces the sky's acoustic phase to ~1.6% of the CR gap, on the three-peak fit, with both arms tending toward the banked asymptotic scale.*
+
+**⚠ And the row carries a caveat flagged load-bearing** *on where the sky's 220/540/810 come from — **I could not read its text and have not discharged it**.*
+
 ### Revision r2988 — 2026-08-15 (main line). **REDONE, AND r2987's 0.0103 IS NOT A MEASUREMENT OF THE SUBSTITUTION ERROR.**
 
 *My own caveat was right and worse than I put it. Refitting the control as the series lengthens, using the third peak the corpus banks:*
