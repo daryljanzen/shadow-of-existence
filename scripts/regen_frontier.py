@@ -22,7 +22,7 @@ EST = {
  'PO-6':  ('the interacting tower — the STRADDLE, asserted and unverified', 1, 1, 4, None,
             'r2976: ONE clause left. Bounded-below ANSWERED (S8); the UV definition MET-NOT-OWED (generic, CRs part 1-dim and shear-limited); Gamma-hats EXISTENCE folds into that (r2975). What remains is the STRADDLE -- CR-specific, load-bearing for P10s decomposition, asserted rather than computed. A BUILD: it needs the interacting spectrum, not a reading'),
  'PO-7':  ('the first peak — one COMPARISON, all inputs supplied', 1, 1, 1, None,
-            'r2984: the one ARGUED item is a mechanism attribution a transfer cannot settle (both mechanisms give the comb) -- PO-2s shape. Clause two still needs a PHASE error bar the corpus does not state'),
+            'r2985: clause two is a LOOKUP -- sigma(l_peak) from the sky, propagated through the fit, gives sigma(phi) and answers 0.615. The one ARGUED item is a mechanism attribution no transfer can settle'),
  'PO-10':  ('the scalar remainder — one RUN and one REFIT', 2, 2, 1, None,
             'r2978: the odd/even run is NOT arithmetic -- the loading ratio (3.500) is the DRIVING ratio, not the observed one, and the transfer sits between. Plus the FULL-SPECTRUM refit on the banked 215 bins'),
 }
@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2984: **the one argued item is a MECHANISM ATTRIBUTION, not a number.** P15: 'coherent "
-            "acoustic peaks from geometric (null-boundary) phase-fixing RATHER THAN super-horizon "
-            "freeze-out'. ⇒ Both mechanisms give a sharp comb, and **the comb is the observable** — "
-            "so **a transfer cannot distinguish them**, which is why it is marked argued rather "
-            "than pending-computation. ⌗ **That is PO-2s shape exactly**, and the register has "
-            "treated it as a deferred computation for eight revisions.")
+LASTFIND = ("r2985: **clause two is ANSWERABLE and needs a LOOKUP, not a computation — r2977s 'no "
+            "error bar exists' was the wrong conclusion.** The deficit is a fitted PHASE INTERCEPT, "
+            "and **an intercept propagates from POSITION errors, not height errors**; r2977 found "
+            "the skys HEIGHT bar and I generalised. ⇒ One unbanked published number — "
+            "sigma(l_peak) — through a two-parameter fit gives sigma(phi), and 0.615/sigma(phi) "
+            "answers the clause. OWED #581.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

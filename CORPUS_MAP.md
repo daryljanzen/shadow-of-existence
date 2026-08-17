@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2985 — 2026-08-15 (main line). **CLAUSE TWO IS ANSWERABLE, AND WHAT IT NEEDS IS A LOOKUP. r2977's "NO ERROR BAR EXISTS" WAS THE WRONG CONCLUSION.**
+
+*Asked whether the clause requests something the sky cannot supply. **It does not.***
+
+⇒ *The deficit is the **asymptotic PHASE INTERCEPT** of the peak series in units of the acoustic scale — CR at 0.878, the control at 0.2628, gap 0.615. And **an intercept is a FIT PARAMETER** of a straight-line model fitted to peak positions: **the sky supplies the POSITIONS; the intercept is what you get by fitting them**.*
+
+**⛔ SO r2977 LOOKED FOR THE WRONG BAR:** *it found the sky's **HEIGHT** errors and I concluded no bar exists for this clause. ***The bar for a POSITION-fit intercept propagates from POSITION errors***, and the corpus banks the positions themselves — **it is the uncertainty on them that is unbanked**.*
+
+**⌗ AND THAT MAKES CLAUSE TWO A LOOKUP:** *one published number — the uncertainty on the sky's acoustic peak positions — propagated through a two-parameter linear fit gives the intercept's sigma, and 0.615 over that sigma answers the clause. **Not a computation, and not an impossibility.***
+
+**⚠ I have now been wrong twice in the same direction on this clause:** *r2961 said "the comparison is made nowhere" (true), r2977 said "no error bar exists" (false — wrong quantity), and the honest state is that **the clause needs one unbanked published number**. Filed as `OWED` #581.*
+
 ### Revision r2984 — 2026-08-15 (main line). **THE ONE ARGUED ITEM IS A MECHANISM ATTRIBUTION, NOT A NUMBER, AND CARRYING IT THROUGH A TRANSFER CANNOT SETTLE IT.**
 
 *P15's argued clause, verbatim: "**Coherent acoustic peaks from geometric (null-boundary) PHASE-FIXING RATHER THAN super-horizon FREEZE-OUT (argued, sec:coherence)**".*

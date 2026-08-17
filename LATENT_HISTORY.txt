@@ -445,3 +445,4 @@ r2981  LATENT      the proof standard is P15s maturity marker: argued = reasonin
 r2982  LATENT      of r2907s three argued results: one argued, one ESTABLISHED (the floor), one unmarked. The register over-counted.
 r2983  INSTRUMENT  false fabrication alarm retracted: all six r2982 quotes verify. An audit must normalise as the extraction did.
 r2984  LATENT      the argued coherence item is a mechanism attribution both mechanisms satisfy; a transfer cannot settle it. PO-2s shape.
+r2985  LATENT      clause two needs sigma(l_peak) propagated through the fit -- a lookup. r2977 looked for the height bar, the wrong one.

@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2984: **the one argued item is a MECHANISM ATTRIBUTION, not a number.** P15: 'coherent acoustic peaks from geometric (null-boundary) phase-fixing RATHER THAN super-horizon freeze-out'. ⇒ Both mechanisms give a sharp comb, and **the comb is the observable** — so **a transfer cannot distinguish them**, which is why it is marked argued rather than pending-computation. ⌗ **That is PO-2s shape exactly**, and the register has treated it as a deferred computation for eight revisions.***
+*⌗ **LAST ACTUAL MOVE — r2985: **clause two is ANSWERABLE and needs a LOOKUP, not a computation — r2977s 'no error bar exists' was the wrong conclusion.** The deficit is a fitted PHASE INTERCEPT, and **an intercept propagates from POSITION errors, not height errors**; r2977 found the skys HEIGHT bar and I generalised. ⇒ One unbanked published number — sigma(l_peak) — through a two-parameter fit gives sigma(phi), and 0.615/sigma(phi) answers the clause. OWED #581.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -33,7 +33,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the first peak — one COMPARISON, all inputs supplied | **1** | 1 | 1 | READ | 22 | — | r2984: the one ARGUED item is a mechanism attribution a transfer cannot settle (both mechanisms give the comb) -- PO-2s shape. Clause two still needs a PHASE error bar the corpus does not state |
+| **PO-7** | the first peak — one COMPARISON, all inputs supplied | **1** | 1 | 1 | READ | 22 | — | r2985: clause two is a LOOKUP -- sigma(l_peak) from the sky, propagated through the fit, gives sigma(phi) and answers 0.615. The one ARGUED item is a mechanism attribution no transfer can settle |
 | **PO-10** | the scalar remainder — one RUN and one REFIT | **2** | 2 | 1 | READ | 33 | — | r2978: the odd/even run is NOT arithmetic -- the loading ratio (3.500) is the DRIVING ratio, not the observed one, and the transfer sits between. Plus the FULL-SPECTRUM refit on the banked 215 bins |
 
 ---
