@@ -70,7 +70,7 @@ KIND = {'PO-13': 'READ', 'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ'}
 
 ORDER = ['PO-14', 'PO-15', 'PO-13', 'PO-16']
 GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D'}
-GNAME = {'A': 'the matter sector', 'C': 'the quantum sector', 'D': 'the cosmology'}
+GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector', 'D': 'the cosmology'}
 
 
 
