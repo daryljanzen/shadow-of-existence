@@ -146,6 +146,19 @@ sources: [cowork, chat]
 
 
 
+### Revision r3021 — 2026-08-15 (main line). **DARYL'S PRIOR IS SUPPORTED BY THE PAPER'S OWN TEXT, AND ONE SIGNATURE PREDICTS WHAT WE MEASURED.**
+
+*He doubted a discrepancy this large is real and suspected an undiagnosed error. **The paper's own account of the instrument gives four signatures, and one of them predicts the exact shape of the defect measured at r3019.***
+
+**· THE FIRST PEAK IS UNSTABLE UNDER THE SAME STATED IC** — *{150, 165, 315} across **four readings of the same specification**. **Physics does not vary with how a spec is read.***
+**· THE INITIAL DATA ARE INTERNALLY INCONSISTENT** — *"its amplitude is taken from a smooth matched envelope while its initial velocity is taken from a numerical derivative of the oscillatory closed form — **two different functions**".*
+**· THE DOCSTRING CONTRADICTS THE CODE** — *it describes a common phase at an extremum **with the velocities zero, which the code does not impose**; imposing it moved the height ratio from 1.45 to 2.02 against the measured 2.21.*
+**· THE SPECTRUM DIES AT about 960** — *measured r3020, and independent of the above.*
+
+⇒ ***And the second predicts the signature: a mode started with an amplitude and a velocity drawn from different functions carries **the wrong phase at the right frequency**. That displaces the first peak and lets the later gaps recover — **exactly what r3019 measured: offsets 168/64/72/32 with gaps 216/280/280 against 320/272/320**.***
+
+**⚠ Not calling this diagnosed.** *The paper identified the inconsistency, and imposing the docstring's condition closed most of the height gap but not all of it. **What has changed is the ordering of candidates**: an instrument with inconsistent initial data is now the leading one, on evidence, and "a real disagreement with the acoustic scale" is the fallback rather than the presumption.*
+
 ### Revision r3020 — 2026-08-15 (main line). **THE TEST RUN: THE CHAIN CLOSES, IT CONFIRMS THE PAPER, AND MY LOW-k CANDIDATE IS WRONG.**
 
 *Located and ran `ROBUST_p1p2_scan`, the instrument the paper cites for these peaks.*

@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3020: the 0.72-0.79 is traced to ROBUST_p1p2_scan, whose spectrum DIES above l~960 -- a four-peak reach, not a k-floor defect. The papers scoping is confirmed. Narrow residue: the script still asserts withdrawn figures'),
+        'r3021: the LEADING candidate is now an instrument with INTERNALLY INCONSISTENT initial data -- amplitude and velocity from different functions, which gives the wrong phase at the right frequency and predicts the measured 168/64/72/32. Not yet diagnosed'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3020: **ran the test. The chain closes and it CONFIRMS the paper.** ROBUST_p1p2_scans "
-            "peaks 150/360/555/780 give gaps at 0.698/0.648/0.748 of l_A — **that is the 0.72-0.79, "
-            "traced to its source** — and its own output prints D_l = 0.0000 from l=960 to 1230: "
-            "**the spectrum dies above ~960**, so it sees four peaks, exactly as sec:refit-bound "
-            "says. ⛔ **And my r3019 low-k candidate is WRONG: the limitation is REACH, not the "
-            "k-floor.**")
+LASTFIND = ("r3021 (Daryls prior, supported): the papers own account gives four instrument "
+            "signatures, and one **predicts the measured shape**. The first peak is unstable across "
+            "{150,165,315} under **four readings of the SAME stated IC**; and **the amplitude comes "
+            "from a smooth matched envelope while the velocity comes from a numerical derivative "
+            "of the oscillatory closed form — TWO DIFFERENT FUNCTIONS**. ⇒ Wrong PHASE at the "
+            "right FREQUENCY displaces the first peak and lets the gaps recover: **exactly "
+            "168/64/72/32 with gaps 216/280/280**.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
