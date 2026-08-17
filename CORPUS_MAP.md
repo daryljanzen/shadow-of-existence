@@ -146,6 +146,22 @@ sources: [cowork, chat]
 
 
 
+### Revision r3028 — 2026-08-15 (main line). **THE GATE IS ELIMINATED AND `PO-13` IS NOW A SINGLE NUMBER.**
+
+*Varied the tight-coupling switch-off over 0.6, 2.0, 6.0: **peaks 165/390/615 in every case**, only the heights moving. **The decoupling criterion is not it.***
+
+*Then measured directly:*
+
+    peaks l = 165, 390, 615   ->   k = 0.01269, 0.02999, 0.04729
+    k r_s / pi                =    0.547, 1.293, 2.039      (must be 1, 2, 3)
+    k-spacing in pi/r_s       =    0.746, 0.746             (must be 1.000)
+
+⇒ ***So the whole of `PO-13` is now one statement: **the propagated modes complete 0.746 acoustic cycles per unit of the sound horizon the same script computes**. Their effective sound horizon is 181.6 Mpc against the computed 135.46 — **factor 1.340** — and the right-hand side's frequency is verifiably the correct tight-coupling one, so the factor is not in the oscillator.***
+
+**⚠ ELIMINATED BY MEASUREMENT SO FAR:** *the distance, the sound horizon, their ratio, the ladder stretch, the initial data, and the decoupling gate.*
+
+**WHAT REMAINS: the time variable the integration advances in.** *If the integrator's conformal time and the one the sound horizon is integrated on differ by a constant factor, **every peak shifts by exactly that factor and nothing else changes** — which is the signature observed.*
+
 ### Revision r3027 — 2026-08-15 (main line). **THE INTERVAL TESTED: IT BRACKETS THE ANSWER, THE SIGN IS RIGHT, AND THE MISMATCH IS NAMED.**
 
 *Integrated the script's own sound speed over both spans:*

@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3027: the 0.746 brackets between r_s(rec) and r_s(run-end), implying an effective sound horizon of 181.6 Mpc -- the sign of a propagation still oscillating through the visibility width. The defect may be the COMPARISON, not the propagation'),
+        'r3028: ONE NUMBER -- the modes complete 0.746 cycles per pi/r_s of the sound horizon the same script computes. Gate, ICs, stretch, D_M, r_s all eliminated by measurement. Remaining: the integrations time variable'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3027: **the interval test BRACKETS the answer and the sign is right.** r_s to recombination 135.46 (ratio 1.000); to the runs end 545.98 (ratio 0.248); **measured 0.746** — "
-            "so the peaks are set by phase accumulated somewhat PAST recombination, implying an "
-            "effective r_s of 181.6 Mpc. ⌗ **More sound horizon puts a given phase at lower k, "
-            "hence smaller spacing — exactly the sign observed.** ⚠ And that is not automatically "
-            "a bug: real codes integrate through the visibility width. **The defect would be "
-            "comparing a propagated SPACING against an l_A built from r_s(rec).**")
+LASTFIND = ("r3028: **the gate is eliminated and PO-13 is now ONE number.** TPGATE over 0.6/2.0/6.0 "
+            "gives **identical peaks 165/390/615** — not the decoupling criterion. Measured "
+            "directly: **k r_s/pi = 0.547, 1.293, 2.039, so the k-spacing is 0.746 where it must "
+            "be 1.000**. ⇒ The modes complete 0.746 cycles per pi/r_s of the sound horizon the "
+            "same script computes; effective r_s = 181.6 vs 135.46, factor 1.340. **Remaining "
+            "candidate: the time variable the integration advances in.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

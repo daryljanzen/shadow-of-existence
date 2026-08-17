@@ -549,3 +549,4 @@ r3024  LATENT      stretch cancels (P2/P3 identical under 32% change); the short
 r3025  LATENT      ISOLATED: the scan computes l_A = 301.6 and propagates at 0.746 of it. A propagation error, not a cosmology one.
 r3026  LATENT      l_A = 301.6 is imposed by brentq, not computed. r3025 corrected. Next: the interval mismatch a_rec vs 20 a_rec.
 r3027  LATENT      0.746 brackets between r_s(rec) and r_s(end); effective r_s 181.6 Mpc. The sign matches visibility-width accumulation.
+r3028  LATENT      PO-13 is one number: 0.746 cycles per pi/r_s. Gate eliminated. Remaining candidate: the integrations time variable.

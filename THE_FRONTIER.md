@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3027: **the interval test BRACKETS the answer and the sign is right.** r_s to recombination 135.46 (ratio 1.000); to the runs end 545.98 (ratio 0.248); **measured 0.746** — so the peaks are set by phase accumulated somewhat PAST recombination, implying an effective r_s of 181.6 Mpc. ⌗ **More sound horizon puts a given phase at lower k, hence smaller spacing — exactly the sign observed.** ⚠ And that is not automatically a bug: real codes integrate through the visibility width. **The defect would be comparing a propagated SPACING against an l_A built from r_s(rec).*****
+*⌗ **LAST ACTUAL MOVE — r3028: **the gate is eliminated and PO-13 is now ONE number.** TPGATE over 0.6/2.0/6.0 gives **identical peaks 165/390/615** — not the decoupling criterion. Measured directly: **k r_s/pi = 0.547, 1.293, 2.039, so the k-spacing is 0.746 where it must be 1.000**. ⇒ The modes complete 0.746 cycles per pi/r_s of the sound horizon the same script computes; effective r_s = 181.6 vs 135.46, factor 1.340. **Remaining candidate: the time variable the integration advances in.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3027: the 0.746 brackets between r_s(rec) and r_s(run-end), implying an effective sound horizon of 181.6 Mpc -- the sign of a propagation still oscillating through the visibility width. The defect may be the COMPARISON, not the propagation |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3028: ONE NUMBER -- the modes complete 0.746 cycles per pi/r_s of the sound horizon the same script computes. Gate, ICs, stretch, D_M, r_s all eliminated by measurement. Remaining: the integrations time variable |
 
 ---
 
