@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2996 — 2026-08-15 (main line). **`PO-10` STRUCK — BOTH HALVES OF THE TARGET DELIVERED BY COMPUTATION. ONE ROW REMAINS.**
+
+**⛭⛭ ① THE FULL-SPECTRUM COMPARISON — performed.** *215 bins, ell 32-2492, plik_lite covariance, both arms on the **same five parameters**: **CR chi2 = 397.13 (1.891/dof) against LambdaCDM 206.44 (0.983/dof), Delta chi2 = 190.7**. The target's parenthetical was exact — it was a parameter refit, and it was performed — **against a control at 0.983/dof, a working instrument**.*
+
+**⛭⛭ ② THE ODD/EVEN PATTERN — produced and put against the sky.** *LambdaCDM P1/P2 = 2.200, CR 2.185, **sky 2.2564 +- 0.0772** — both arms within **0.7-0.9 sigma**, the two arms differing by a fifth of the sky's error bar, **confirming C30's ratio-of-contents argument at the spectrum level**.*
+
+**⌗ AND SETTLED ON THE WAY:** *the ell>1760 **blindness CLOSED** (201 bins to 2508; the damping tail widens F3 from 50497 to 51547); the control **converging to 1.18 with its floor cancelling in F3**; and the 9.4-vs-10.8 discrepancy shown to be **an angle ratio against a length ratio**.*
+
+**⚠ SCOPE, STATED RATHER THAN SOFTENED:** *the Delta chi2 is a verdict on **this arm's five-parameter TT spectrum fit**, decisively LambdaCDM-favouring against a control that works. **It is not a verdict on CR's geometry** — the arm fitted is the CMB spectrum construction, joined to the geometry by transfer work this row does not own.*
+
 ### Revision r2995 — 2026-08-15 (main line). **THE ODD/EVEN PATTERN PRODUCED: BOTH ARMS THROUGH THE TRANSFER, AGAINST THE SKY.**
 
 *C12 asked to "produce the pattern from an R_b already computed on a leg already identified", and r2978 found the loading ratio alone gives 3.500 — the driving ratio, not the observed one. **Done properly: regenerate both arms at their banked five-parameter fits through CAMB, apply cr_supp to the CR arm, and measure.***

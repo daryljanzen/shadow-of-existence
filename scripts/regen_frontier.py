@@ -39,12 +39,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2995: **the odd/even pattern PRODUCED — both arms regenerated at their banked fits and "
-            "measured.** LCDM P1/P2 = 2.200, CR 2.185, **sky 2.2564 +- 0.0772** — both arms within "
-            "0.7-0.9 sigma, and the two arms differ by 0.015, a fifth of the skys error bar. **The "
-            "baryon loadings imprint is the same in both, now shown at C_ell level.** r2978s 3.500 "
-            "was the DRIVING ratio; the transfer turns it into 2.19. `PO-10`s last step "
-            "discharged.")
+LASTFIND = ("r2996: **`PO-10` STRUCK — both halves of the target delivered by computation.** The "
+            "full-spectrum refit performed on 215 bins (CR 1.891/dof vs LCDM 0.983/dof, Delta chi2 "
+            "190.7) **against a control that works**, and the odd/even pattern produced through "
+            "the transfer (2.185 vs 2.200, sky 2.256 +- 0.077, both within ~1 sigma). ⚠ Scope "
+            "stated: **a verdict on this arms five-parameter TT fit, not on CRs geometry.** ONE "
+            "ROW REMAINS.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

@@ -25,7 +25,7 @@ unlinked lead scored **zero on the map**.*
 | `PO-5` · `PO-9` | **6** | |
 | `PO-6` | 4 | |
 | `PO-7` · `PO-8` | 3 | | ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
-| `PO-2` `PO-3` `PO-4` `PO-10` | 2 | |
+| `PO-2` `PO-3` `PO-4` `PO-10` | 2 | | ⛭⛭ **⟨STRUCK r2996 — the full-spectrum refit performed (215 bins; CR $1.891$/dof vs $\Lambda$CDM $0.983$/dof, $\Delta\chi^2=190.7$) and the odd/even pattern produced ($2.185$ vs $2.200$, sky $2.256\pm0.077$). `kills/PO-10.md`.⟩**
 | ***`PO-11` · `PO-12`*** | ***1*** | ⛔ ***and `PO-11` is the LARGEST unbuilt thing in the corpus*** |
 
 ⇒⇒ ***So `grounded × informs` ranks TRACTABILITY, not importance: how much a turn spent here will teach

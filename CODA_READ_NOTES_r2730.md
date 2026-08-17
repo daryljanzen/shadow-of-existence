@@ -99,7 +99,7 @@ N12 §73 "A PROTECTED CORE IS DOGMA WITH A LONG FUSE, and exempting any layer fr
 N13 §75 "THE VERDICT-BAR IS SYMMETRIC -- KILLING AND KEEPING COST THE SAME.
      The bar for execution is exactly as high as the bar for keeping."
     -> my gates enforce a bar on KEEPING (receipts, claims, computes, assertions).
-    ⛔ WHAT VERIFIED THE STRIKES?  PO-12 (r2702), PO-10 (r2712), PO-11 (r2717) were
+    ⛔ WHAT VERIFIED THE STRIKES?  PO-12 (r2702), PO-10 (r2712), PO-11 (r2717) were ⛭⛭ **⟨STRUCK r2996 — the full-spectrum refit performed (215 bins; CR $1.891$/dof vs $\Lambda$CDM $0.983$/dof, $\Delta\chi^2=190.7$) and the odd/even pattern produced ($2.185$ vs $2.200$, sky $2.256\pm0.077$). `kills/PO-10.md`.⟩**
        struck on my own say-so with a receipt I wrote.  check_kills checks FORM.
        ** No gate asks whether a strike was PAID FOR at the same rate as a keep. **
 

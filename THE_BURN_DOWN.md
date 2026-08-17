@@ -69,13 +69,13 @@ without fixing what is still sitting there owed?"**
 | **`L-816`** | QUESTION · — |
 | **`L-818`** | QUESTION · OPEN |
 | **`L-819`** | QUESTION · OPEN |
-| **`L-820`** | QUESTION · — |
+| ~~**`L-820`**~~ ⛭ **⟨STRUCK r2996 with `PO-10`.⟩** | QUESTION · — |
 | **`L-821`** | QUESTION · — |
 | ~~**`L-822`**~~ ⛭ **⟨STRUCK r2993 with `PO-7`.⟩** | QUESTION · — |
 | ~~**`L-823`**~~ ⛭ **⟨STRUCK r2993 with `PO-7`.⟩** | QUESTION · — |
-| **`L-824`** | QUESTION · — |
+| ~~**`L-824`**~~ ⛭ **⟨STRUCK r2996 with `PO-10`.⟩** | QUESTION · — |
 | **`L-825`** | QUESTION · — |
-| **`L-826`** | QUESTION · — |
+| ~~**`L-826`**~~ ⛭ **⟨STRUCK r2996 with `PO-10`.⟩** | QUESTION · — |
 | **`L-827`** | QUESTION · — |
 | **`L-828`** | QUESTION · — |
 | **`L-829`** | QUESTION · — |

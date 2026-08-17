@@ -36,7 +36,7 @@ without checking.* ⇒ ⛔ ***Tested: 18 frontier/open sections across 13 papers
 "it opened at seven and stands at four", with three items resolved and moved below the list — and `PROTECTED_OPEN`
 had taken up THREE of the four.***
 ⇒⇒ ***The fourth, the SCALAR PERTURBATION SECTOR's stated remainder, was in no register at all. Registered r2578 as
-`PO-10` / `L-536`, and it is TWO named runs in P7's own words: the full-spectrum likelihood-level comparison against
+`PO-10` / `L-536`, and it is TWO named runs in P7's own words: the full-spectrum likelihood-level comparison against ⛭⛭ **⟨STRUCK r2996 — the full-spectrum refit performed (215 bins; CR $1.891$/dof vs $\Lambda$CDM $0.983$/dof, $\Delta\chi^2=190.7$) and the odd/even pattern produced ($2.185$ vs $2.200$, sky $2.256\pm0.077$). `kills/PO-10.md`.⟩**
 flat $\Lambda$CDM, and the odd/even height pattern.***
 ⌗ ***And the theatres are clean:*** *R-P's stations are all walked (six arrival-path findings, four closed in the
 papers); R-M's five stations are walked and its HOLES list was corrected at r2558.*

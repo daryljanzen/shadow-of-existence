@@ -24,7 +24,7 @@ characters instead of being assembled from up to thirty-six appended blocks.
                 PO-6   the interacting tower -- condition list settled at six; JOINT
                        SATISFIABILITY untested, C6 against C7 the named tension
                 PO-7   the first acoustic peak; the spacing deficit is structural ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
-                PO-10  the scalar remainder -- half 2 closed, half 1's specification dead
+                PO-10  the scalar remainder -- half 2 closed, half 1's specification dead ⛭⛭ **⟨STRUCK r2996 — the full-spectrum refit performed (215 bins; CR $1.891$/dof vs $\Lambda$CDM $0.983$/dof, $\Delta\chi^2=190.7$) and the odd/even pattern produced ($2.185$ vs $2.200$, sky $2.256\pm0.077$). `kills/PO-10.md`.⟩**
                 PO-11  the propagating spinor sector -- operator settled, continuum open
     STRUCK (4)  PO-3, PO-4, PO-9, PO-12
 

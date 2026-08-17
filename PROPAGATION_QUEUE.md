@@ -47,7 +47,7 @@ $\ell>1760$ run, the control at $1.18$); an assignment made without reading the 
 r2872 and rediscovered at r2917. **None was the physics moving.***
 
 **⛭⛭ AND THE SUBSTANCE OVER THE SAME STRETCH HELD:** *`PO-5` **struck**; `PO-7` reduced to **one ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
-comparison with its phase DERIVED**; `PO-10`'s blindness **closed** and its control shown to
+comparison with its phase DERIVED**; `PO-10`'s blindness **closed** and its control shown to ⛭⛭ **⟨STRUCK r2996 — the full-spectrum refit performed (215 bins; CR $1.891$/dof vs $\Lambda$CDM $0.983$/dof, $\Delta\chi^2=190.7$) and the odd/even pattern produced ($2.185$ vs $2.200$, sky $2.256\pm0.077$). `kills/PO-10.md`.⟩**
 **converge**.*
 
 **⌗ SO THE TEST THAT MATTERS: do the two queued items depend on any of the shaky work?**

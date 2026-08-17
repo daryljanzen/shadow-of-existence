@@ -72,7 +72,7 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
 
 ***Updated at the top of every turn. 54 reads this file; nothing is relayed.***
 
-    r2657   PO-12   the bespoke transfer, step 2 -- unblocks BOTH of PO-10's runs
+    r2657   PO-12   the bespoke transfer, step 2 -- unblocks BOTH of PO-10's runs ⛭⛭ **⟨STRUCK r2996 — the full-spectrum refit performed (215 bins; CR $1.891$/dof vs $\Lambda$CDM $0.983$/dof, $\Delta\chi^2=190.7$) and the odd/even pattern produced ($2.185$ vs $2.200$, sky $2.256\pm0.077$). `kills/PO-10.md`.⟩**
     r2658   PO-12   six-eighths built; what remains is the ABSOLUTE spectrum (visibility + LOS integral)
     r2659   PO-12   CORRECTED: the instrument carries both. The debt is the BACKGROUND it runs on -- H(a).
     r2660   PO-12   sharpest form: TWO legs joined at the branch point, L1 rate for every expansion-leg observable
@@ -517,3 +517,4 @@ r2992  LATENT      #583 discharged: sky peaks measured (220.4/537.7/817.3), subs
 r2993  LATENT      PO-7 STRUCK: phase forced then derived; the 0.615 real at 76 sigma with 0.7% substitution error. Two rows remain.
 r2994  LATENT      the full-spectrum refit is banked: CR 1.891/dof vs LCDM 0.983/dof on 215 bins, Delta chi2 190.7.
 r2995  LATENT      odd/even produced: LCDM 2.200, CR 2.185, sky 2.256+-0.077. Both within ~1 sigma; arms differ by 0.015.
+r2996  LATENT      PO-10 STRUCK: refit performed (Delta chi2 190.7 vs a 0.983/dof control) and odd/even produced. ONE ROW REMAINS.

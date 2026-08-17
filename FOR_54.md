@@ -1558,7 +1558,7 @@ comb-level check in the corpus can pass. The corpus's acoustic checks are overwh
 
     RUN 1   LMAXL=2000  NK>=600     REPRODUCE the banked range at adequate sampling
             -> does the chi^2 move?  Nothing currently knows.
-            -> if it barely moves, the aliasing is cosmetic and PO-10's blocker is
+            -> if it barely moves, the aliasing is cosmetic and PO-10's blocker is ⛭⛭ **⟨STRUCK r2996 — the full-spectrum refit performed (215 bins; CR $1.891$/dof vs $\Lambda$CDM $0.983$/dof, $\Delta\chi^2=190.7$) and the odd/even pattern produced ($2.185$ vs $2.200$, sky $2.256\pm0.077$). `kills/PO-10.md`.⟩**
                only the missing bins.  If it moves, EVERY number in the likelihood
                receipt is provisional.
 
