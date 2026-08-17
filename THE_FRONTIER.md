@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3039: **read the rate.** eq:rate: H^2 = (1/3)(8 pi G rho + Lambda c^2) is **the Friedmann equation the a^(2/3) law SATISFIES** — matter and Lambda, no radiation — and Omega_m,0 **records the epoch, not an independent density**. ⇒ So writing 4 pi G a^2 rho_i as (3H^2/2) Omega_i converts through a relation that **holds for matter and Lambda and not for radiation**. **The shipped code and both my fixes all referred the photon density to a critical density; the framework says use the density itself.*****
+*⌗ **LAST ACTUAL MOVE — r3040: **ran the frameworks own prescription and the result is NOT READABLE.** Matter through (3H^2/2)Omega_m, radiation through 4piG a^2 rho_r directly. Coefficient verified: **4.57x the shipped one at onset**. But the run returned 0.6839 with peaks [570,795] — **byte-identical to the r3038 matter+Lambda run**, which used a different source. ⇒ **Both failed the same way: 'only 2 peaks found — the spectrum lost structure'.** The 0.6839 is not a ratio. **The r3038 monotone scan is withdrawn.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3039: the paper states H^2 = (1/3)(8 pi G rho + Lambda c^2) as what the law SATISFIES -- so the (3H^2/2) Omega conversion is exact for matter and wrong for radiation. Re-examine the r3035 physical-density form (1.2765) |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3040: the frameworks prescription is correctly implemented and DESTROYS the spectrum (2 peaks, structure lost). The r3038 scan is withdrawn -- it read a trend off a broken run. Needs its own diagnosis |
 
 ---
 

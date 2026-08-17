@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3040 — 2026-08-15 (main line). **RAN THE FRAMEWORK'S OWN PRESCRIPTION: THE RESULT IS NOT READABLE, AND TWO EARLIER NUMBERS MUST BE WITHDRAWN.**
+
+*Built the source the way r3039's reading says: **matter through the relation it satisfies, radiation through its own physical density**. Verified the coefficients rather than assuming: **mine is 4.57 times the shipped one at onset and 2.15 times at recombination** — so it applied, and applied strongly.*
+
+**⛔ And the run returned ratio 0.6839 with peaks [570, 795] — byte-identical to the r3038 matter-plus-Lambda run**, *which used a completely different source. **Two different physics inputs cannot give identical output.***
+
+⇒ ***Both runs failed the same way: the script's own assertion fired — "only 2 peaks found, the spectrum lost structure" — and a two-feature spectrum has no comb to measure. **The 0.6839 is not a spacing ratio; it is the peak-finder reporting on a destroyed spectrum.****
+
+**⚠⚠ SO IT MUST BE WITHDRAWN FROM THE r3038 SCAN TOO:** *the "monotone three-point scan" **had a broken run at one end**, and I read a physical trend off it. **The clean comparison that survives is the shipped 0.746 against the radiation-in-rate 0.9346 — two points, one confounded by an onset refit.***
+
+**⌗ What is genuinely established:** *the framework's prescription is now correctly identified and correctly implemented, **and implementing it destroys the spectrum** — a real result about the source term's strength, needing its own diagnosis rather than a ratio.*
+
 ### Revision r3039 — 2026-08-15 (main line). **READ IT: THE PAPER STATES THE RATE AND WHAT IT SATISFIES, AND THAT SETTLES WHAT THE PERTURBATION EQUATIONS MAY ASSUME.**
 
 *`eq:rate`, in the paper's own words: the two-thirds law's "**H^2 = (1/3)(8 pi G rho + Lambda c^2)**" — **the Friedmann equation the law SATISFIES**, with matter and Lambda and **no radiation term**. And the companion relation makes the density ratio a clock, so "**Omega_m,0 records the cosmic epoch at which we observe rather than an independent density**".*
