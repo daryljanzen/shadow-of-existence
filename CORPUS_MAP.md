@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2987 — 2026-08-15 (main line). **THE SUBSTITUTION HOLDS WITH ROOM: THE CONTROL REPRODUCES THE SKY'S PHASE TO 2% OF THE GAP IT IS USED TO MEASURE.**
+
+*`P15_the_line_of_sight_transfer` prints both series on the same two peaks — **control 220.0, 532.0; sky 220.6, 538.1** — so the comparison was half-made in a receipt already run.*
+
+⇒ *Fitting the two-parameter model to each: **control l_A = 312.0, phi/pi = −0.2949; sky l_A = 317.5, phi/pi = −0.3052** ⇒ **the control-to-sky phase offset is 0.0103**, against the CR-to-control gap of 0.615 — **2% of the disagreement it is standing in for**.*
+
+**⌗ SO CLAUSE TWO'S LAST UNSTATED PIECE IS ANSWERED IN THE DIRECTION THAT KEEPS THE GAP:** *LambdaCDM does stand in for the sky at this precision, with a factor ~60 of room. **Combined with r2986's 76 sigma at a one-multipole position error, the deficit survives both the statistical and the substitution check.***
+
+**⚠⚠ AND THE CAVEATS ARE REAL:** *two peaks give an **EXACT** two-parameter fit with no residual, so 0.0103 is a point estimate carrying no error of its own; the control's own first-peak accuracy is 0.16%; and **these l_A values (312, 317) are two-peak spacings, not the asymptotic l_A ~ 301** the 0.615 was measured against. **The direction is clear; the precision of this particular estimate is not what the numbers make it look like.***
+
 ### Revision r2986 — 2026-08-15 (main line). **THE PROPAGATION RUN AS A FUNCTION OF THE UNBANKED NUMBER: THE CLAUSE IS INSENSITIVE ACROSS THE PLAUSIBLE RANGE.**
 
 *Fitting the peak series to N peaks with equal position errors s, ordinary least squares gives sigma(phi) = 0.0081 s at N=8 (0.0159 s at N=3).*
