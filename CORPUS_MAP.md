@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r3023 — 2026-08-15 (main line). **THE PHYSICS PICKS THE BRANCH, REPRODUCES THE PAPER'S KNOWN FIX, AND THE TWO DEFECTS THEN SEPARATE.**
+
+*sec:what-crosses answers what the seam hands over: "**every mode exits it and FREEZES before the crossing. A frozen mode has no oscillation for the kernel to damp. So the amplitude and the tilt cross unaltered**" — and "**what does NOT cross is the oscillatory content itself**".*
+
+⇒ *A frozen mode has zero time-derivative. **The code gates Theta-hat's velocity and does not gate the potential's**, though its own comment says "amplitude transmits, phase gated — **for Psi as well**". Setting it: **peaks 165/390/615, P1/P2 = 2.017** against the original 1.471 and the sky's 2.212.*
+
+**⌗ AND THAT IS THE PAPER'S OWN NUMBER** — *"imposing it returns P1/P2 = 2.02 against the measured 2.21, where the figure quoted here as the disagreement was 1.45". **I re-derived its known fix from the physics rather than from the docstring** — independent confirmation, not a new result.*
+
+**⛭⛭ AND NOW THE TWO DEFECTS SEPARATE CLEANLY:**
+*· **the HEIGHT ratio was an initial-data error**, and gating the potential's velocity as the transmission argument requires very nearly fixes it (2.017 against 2.212);*
+*· **the SPACING is short by a uniform ~24%** — gaps 225/225 against the sky's 316/277 — **and is untouched by the fix**.*
+
+⇒ ***So `PO-13`'s remaining object is not the first peak and not the heights: **it is a uniformly short acoustic spacing in the one instrument that propagates modes**.***
+
 ### Revision r3022 — 2026-08-15 (main line). **THE TEST RUN: THE INITIAL DATA DO CONTROL THE FIRST PEAK, AND MY "CONSISTENT" CHOICE REPRODUCES ONE OF THE PAPER'S OWN READINGS.**
 
 *Found the inconsistency exactly, in the source: **the potential's amplitude is a smooth matched envelope while its velocity is a numerical derivative of the oscillatory closed form** — the two different functions the paper names.*

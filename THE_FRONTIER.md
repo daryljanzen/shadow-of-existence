@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3022: **ran the test — the initial data DO control the first peak, and my consistent choice reproduces one of the papers own readings.** The inconsistency is real and located: **Psis amplitude is a smooth matched envelope, its velocity a numerical derivative of the oscillatory closed form**. Replacing one line moves the peaks 150/360/555/780 -> 315/525/780. ⛔ **But 315 is one of the papers four readings** — I re-derived a known branch point, not a fix, and neither lands near the skys 220.***
+*⌗ **LAST ACTUAL MOVE — r3023: **the physics picks the branch and reproduces the papers known fix.** sec:what-crosses: every mode FREEZES, so a frozen mode has d/d_eta = 0 — and the code gates Theta-hats velocity but **not Psis**, against its own comment. Setting it: P1/P2 = **2.017** against the original 1.471 and the skys 2.212 — **the papers own 2.02**. ⇒ And the defects SEPARATE: **the heights were an IC error and are near-fixed; the SPACING is short by a uniform ~24% (225/225 vs 316/277) and is untouched**.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3022: the inconsistency is LOCATED in the source (envelope amplitude vs oscillatory-derivative velocity) and the first peak moves 165 multipoles on one line -- but the consistent choice reproduces a known branch point and lands no closer. Not closed |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3023: the defects SEPARATE. Heights were an IC error -- gating Psis velocity as the transmission argument requires gives P1/P2 = 2.017 vs the skys 2.212. What remains is a UNIFORMLY SHORT spacing, ~24%, untouched by it |
 
 ---
 

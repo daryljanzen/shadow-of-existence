@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3022: the inconsistency is LOCATED in the source (envelope amplitude vs oscillatory-derivative velocity) and the first peak moves 165 multipoles on one line -- but the consistent choice reproduces a known branch point and lands no closer. Not closed'),
+        'r3023: the defects SEPARATE. Heights were an IC error -- gating Psis velocity as the transmission argument requires gives P1/P2 = 2.017 vs the skys 2.212. What remains is a UNIFORMLY SHORT spacing, ~24%, untouched by it'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,11 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3022: **ran the test — the initial data DO control the first peak, and my consistent "
-            "choice reproduces one of the papers own readings.** The inconsistency is real and "
-            "located: **Psis amplitude is a smooth matched envelope, its velocity a numerical "
-            "derivative of the oscillatory closed form**. Replacing one line moves the peaks "
-            "150/360/555/780 -> 315/525/780. ⛔ **But 315 is one of the papers four readings** — I "
-            "re-derived a known branch point, not a fix, and neither lands near the skys 220.")
+LASTFIND = ("r3023: **the physics picks the branch and reproduces the papers known fix.** sec:what-crosses: every mode FREEZES, so a frozen mode has d/d_eta = 0 — and the code gates "
+            "Theta-hats velocity but **not Psis**, against its own comment. Setting it: P1/P2 = "
+            "**2.017** against the original 1.471 and the skys 2.212 — **the papers own 2.02**. ⇒ "
+            "And the defects SEPARATE: **the heights were an IC error and are near-fixed; the "
+            "SPACING is short by a uniform ~24% (225/225 vs 316/277) and is untouched**.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

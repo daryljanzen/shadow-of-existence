@@ -544,3 +544,4 @@ r3019  LATENT      the offset decays (168/64/72/32); the first gap carries it. C
 r3020  LATENT      ROBUST_p1p2_scan dies above l~960; the 0.72-0.79 is its four-peak transient. My low-k candidate withdrawn.
 r3021  LATENT      instrument error promoted to leading candidate: amplitude and velocity from different functions predicts 168/64/72/32.
 r3022  LATENT      one-line IC change moves P1 150->315; but 315 is a known branch point. Sensitivity confirmed, diagnosis not closed.
+r3023  LATENT      gating Psis velocity gives P1/P2 = 2.017 (the papers 2.02); the residual is a uniformly short spacing, ~24%.
