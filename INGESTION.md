@@ -537,3 +537,4 @@ r3012  LATENT      frontier:inherited read whole: it is sound. r3010/r3011 withd
 r3013  LATENT      PO-13 located: the propagated comb is 0.72-0.79 of the asserted spacing under every IC tried. The third layer.
 r3014  LATENT      PO-15: the thermal state selects the Friedrichs EXTENSION, defined from the form — so it acts given an ordering, not on one.
 r3015  LATENT      PO-16 STRUCK (no defect in the item). Register now carries steps: PO-13 a computation, PO-15 an exhaustion, PO-14 the build.
+r3016  LATENT      PO-13: the 0.72-0.79 is a four-peak artefact; the real item is that the spacing is computed nowhere. My r3005 edit flagged.

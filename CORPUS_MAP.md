@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3016 — 2026-08-15 (main line). **`PO-13`: MY STEP WAS WRONG, THE PAPER ALREADY DID THE WORK, AND IT UNDERCUTS SOMETHING I WROTE INTO P15.**
+
+*Read `sec:refit-bound` whole rather than the one sentence I quoted at r3013.*
+
+**⛔ THE 0.72–0.79 IS NOT THE LIVE FIGURE.** *It is "**the first few gaps of a series that was only four peaks long** at the settings a four-condition scan could afford", and "**at the depth the transfer actually reaches the ASYMPTOTIC spacing is 0.975 of the acoustic scale**". **My step — "find what that factor is" — asked about a shallow-series artefact the paper has already scoped.***
+
+**⛔ AND THE PHASE IS NOT CARRYING IT EITHER:** *"a free choice in the seam datum moves the acoustic phase **across the control's own value**, so the phase is not carrying the disagreement either, and **no single quantity this section can name is**".*
+
+**⛭⛭ WHAT THE PAPER SAYS IT IS:** *"**a disagreement with the acoustic scale inside the one instrument in this programme that propagates modes, and it is not caused by the initial data**" — with the numerics excluded (stability number 0.47 against a limit of 2.8; quadrupling the steps reproduces the peaks exactly). ⇒ "**So the peak spacing is asserted in one place and COMPUTED NOWHERE, and where it is computed it comes out short. We record that rather than resolve it.**"*
+
+**⚠⚠ AND IT REACHES MY OWN r3005 EDIT:** *I wrote the 0.615 into P15 as "a real disagreement with the sky". **The paper's own finding is that a free choice in the seam datum moves the acoustic phase across the control's value.** That must be checked against the receipt which later closed the datum freedom, before my sentence is either defended or softened.*
+
 ### Revision r3015 — 2026-08-15 (main line). **`PO-16` STRUCK, AND THE REGISTER NOW CARRIES STEPS. THREE REMAIN.**
 
 *Daryl: I had read three rows and never said what had to be **done** about any of them, and the register had no steps. Both corrected.*

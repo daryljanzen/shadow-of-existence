@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3015: **`PO-16` STRUCK — the item had no defect in it**, and the register now carries STEPS. Its own text already says at-no-cost, already reports the light-element target MET, already resolves two-data-into-one (1.99 from standard thermodynamics), and already gives the structural reason eta stays empirical: **baryon number survives the thermalization**. ⇒ **THREE STEPS REMAIN**: PO-13 a COMPUTATION (why 0.72-0.79), PO-15 an EXHAUSTION, PO-14 THE BUILD.***
+*⌗ **LAST ACTUAL MOVE — r3016: **my step was wrong and the paper already did the work.** The 0.72-0.79 is **the first few gaps of a four-peak series**, and **at depth the asymptotic spacing is 0.975 of the acoustic scale**. And the phase is not carrying it either — **a free choice in the seam datum moves the acoustic phase across the controls own value**. What the paper says it is: **a disagreement with the acoustic scale inside the one instrument that propagates modes, not caused by the initial data**. ⚠ And it reaches my r3005 edit, which states more than this section supports.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 0 | — | r3015: THE STEP IS A COMPUTATION. The paper: asserted spacing pi D_C/r_s, propagated spacing 0.72-0.79 of it, STABLE ACROSS EVERY INITIAL CONDITION TRIED. Find what that factor is. A stable ratio under varied ICs is a structural fact about the integration, not a tuning failure |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 0 | — | r3016: the 0.72-0.79 is a four-peak-series artefact (asymptotic is 0.975) and the phase moves across the controls value under the seam datum. THE REAL STEP: the spacing is asserted in one place and COMPUTED NOWHERE -- propagate it at depth |
 
 ---
 

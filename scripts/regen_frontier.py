@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3015: THE STEP IS A COMPUTATION. The paper: asserted spacing pi D_C/r_s, propagated spacing 0.72-0.79 of it, STABLE ACROSS EVERY INITIAL CONDITION TRIED. Find what that factor is. A stable ratio under varied ICs is a structural fact about the integration, not a tuning failure'),
+        'r3016: the 0.72-0.79 is a four-peak-series artefact (asymptotic is 0.975) and the phase moves across the controls value under the seam datum. THE REAL STEP: the spacing is asserted in one place and COMPUTED NOWHERE -- propagate it at depth'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3015: **`PO-16` STRUCK — the item had no defect in it**, and the register now carries "
-            "STEPS. Its own text already says at-no-cost, already reports the light-element target "
-            "MET, already resolves two-data-into-one (1.99 from standard thermodynamics), and "
-            "already gives the structural reason eta stays empirical: **baryon number survives the "
-            "thermalization**. ⇒ **THREE STEPS REMAIN**: PO-13 a COMPUTATION (why 0.72-0.79), "
-            "PO-15 an EXHAUSTION, PO-14 THE BUILD.")
+LASTFIND = ("r3016: **my step was wrong and the paper already did the work.** The 0.72-0.79 is **the "
+            "first few gaps of a four-peak series**, and **at depth the asymptotic spacing is 0.975 "
+            "of the acoustic scale**. And the phase is not carrying it either — **a free choice in "
+            "the seam datum moves the acoustic phase across the controls own value**. What the "
+            "paper says it is: **a disagreement with the acoustic scale inside the one instrument "
+            "that propagates modes, not caused by the initial data**. ⚠ And it reaches my r3005 "
+            "edit, which states more than this section supports.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
