@@ -19,14 +19,12 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
-    'PO-13': ('the misplaced phase — a DIAGNOSIS across three layers', 1, 1, 2, None,
-        'r3013: LOCATED -- the propagated comb comes out at 0.72-0.79 of the asserted spacing under EVERY initial condition tried. Not the seam (claims no placement), not the transfer (0.16%% on the control): the propagation on this rate'),
-    'PO-14': ('the unbuilt chiral member — a BUILD', 1, 1, 5, None,
-        'r3009: P09 says REACHABLE, needing no machinery the operator lacks; P11 has the polarised leaf worked with ONE propagating mode. Until built, four classes where five are required'),
-    'PO-15': ('the ordering — does the towers zero-point energy gravitate', 1, 1, 3, None,
-        'r3014: the thermal state selects the FRIEDRICHS EXTENSION, which is defined FROM the quadratic form -- so it acts GIVEN an ordering and cannot select one. The ordering sits upstream of the only selection mechanism the construction has'),
-    'PO-16': ('the inherited datum — a one-parameter accommodation', 1, 1, 2, None,
-        'r3012: the item is SOUND -- it already states at-no-cost, the met consistency target, the two-data resolution, and etas conservation-law protection. Open in its own words: the EAGER target, a derivation of eta and of the onset'),
+    'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
+        'r3015: THE STEP IS A COMPUTATION. The paper: asserted spacing pi D_C/r_s, propagated spacing 0.72-0.79 of it, STABLE ACROSS EVERY INITIAL CONDITION TRIED. Find what that factor is. A stable ratio under varied ICs is a structural fact about the integration, not a tuning failure'),
+    'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
+        'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
+    'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
+        'r3015: extend P11s polarised Gowdy-de Sitter leaf to the unpolarised case — two propagating modes, coupled nonlinearly. P09: reachable, needing no machinery the operator lacks. Until built, four classes where five are required'),
 }
 # ** THE COUNTER, AND THE CRITERION IT IS SCORED AGAINST (r2847, after Daryl caught two
 # turns wrongly scored 0).  *** A turn is a 0 ONLY IF it found the problem space DIFFERENT
@@ -43,13 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3014: **the thermal state selects an EXTENSION, not an ORDERING — and the negative is "
-            "informative.** P10: the horizons Hartle-Hawking state at the surface gravity **the "
-            "substrate itself fixes SELECTS THE FRIEDRICHS EXTENSION**, closing the deficiency "
-            "freedom without a free parameter. ⇒ But **Friedrichs is defined FROM the quadratic "
-            "form, and the form is what an ordering produces** — so it selects the extension GIVEN "
-            "an ordering. **The ordering sits UPSTREAM of the only selection mechanism the "
-            "construction has.**")
+LASTFIND = ("r3015: **`PO-16` STRUCK — the item had no defect in it**, and the register now carries "
+            "STEPS. Its own text already says at-no-cost, already reports the light-element target "
+            "MET, already resolves two-data-into-one (1.99 from standard thermodynamics), and "
+            "already gives the structural reason eta stays empirical: **baryon number survives the "
+            "thermalization**. ⇒ **THREE STEPS REMAIN**: PO-13 a COMPUTATION (why 0.72-0.79), "
+            "PO-15 an EXHAUSTION, PO-14 THE BUILD.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
@@ -69,7 +66,7 @@ LASTFIND = ("r3014: **the thermal state selects an EXTENSION, not an ORDERING �
 # are declared unmeasured rather than dressed as measured. ***
 KIND = {'PO-13': 'READ', 'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ'}
 
-ORDER = ['PO-16', 'PO-13', 'PO-15', 'PO-14']
+ORDER = ['PO-13', 'PO-15', 'PO-14']
 GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D'}
 GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector', 'D': 'the cosmology'}
 

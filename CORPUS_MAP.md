@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r3015 — 2026-08-15 (main line). **`PO-16` STRUCK, AND THE REGISTER NOW CARRIES STEPS. THREE REMAIN.**
+
+*Daryl: I had read three rows and never said what had to be **done** about any of them, and the register had no steps. Both corrected.*
+
+**⛭⛭ `PO-16` STRIKES — the item had no defect in it.** *Its own text **already** says "like eta, the datum may remain empirical AT NO COST to the dissolution"; **already** reports the light-element target **MET**; **already** resolves two-data-into-one (rho_r/rho_m fixed by the onset temperature alone, **1.99 at 1.6 eV from standard thermodynamics and nothing else**); and **already** gives the structural reason eta stays empirical — **the thermalization erases the progenitor's composition and what survives is baryon number, which no dissociation destroys**. ***A conservation-law closure, not a gap.*** r3010 and r3011 were mine and wrong.*
+
+**⇒ AND THE THREE REMAINING STEPS, STATED AS WORK:**
+
+*· **`PO-13` — a COMPUTATION.** The asserted spacing is pi D_C/r_s; the **propagated** spacing is **0.72–0.79 of it, stable across every initial condition tried**. **Find what that factor is.** A ratio holding under varied ICs is a structural fact about the integration, and it is the whole of the phase disagreement.*
+
+*· **`PO-15` — an EXHAUSTION.** The thermal state is eliminated. **Enumerate what else could select an ordering** — the substrate's symmetry, the seam's characteristic structure, the deparametrization — and either find one or **state the choice is external with the enumeration as evidence**.*
+
+*· **`PO-14` — THE BUILD.** Extend P11's polarised leaf to the unpolarised case: two propagating modes, coupled nonlinearly.*
+
 ### Revision r3014 — 2026-08-15 (main line). **`PO-15`: THE THERMAL STATE SELECTS AN EXTENSION, NOT AN ORDERING — AND THE NEGATIVE IS INFORMATIVE.**
 
 *Read P10's quantization passage whole. It does not merely supply a boundary condition: "**that point is not a generic half-line endpoint but the de Sitter cosmological horizon, whose Hartle--Hawking thermal state, at the surface gravity the substrate itself fixes, SELECTS THE FRIEDRICHS EXTENSION**" — and "the deficiency freedom is thereby not merely parametrized but **closed, and closed without a free parameter**".*
