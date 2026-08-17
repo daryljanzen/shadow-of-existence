@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2990 — 2026-08-15 (main line). **THE CAVEAT READ: NOT CIRCULAR, BUT NOT LIKE-FOR-LIKE, AND IT BEARS ON r2989's 0.0101.**
+
+*I feared the sky's numbers came from the corpus's own arm, which would have made the substitution check compare the corpus to itself. **They do not.***
+
+⇒ *The row's own words: "**the sky's 220/540/810 are taken from P16's own aside ('first peak 294 vs the observed 220') and STANDARD VALUES, not from a measurement this corpus performs. The arm's side is receipted; the sky's side is not, and the comparison is only as good as that**" — with the owed item named: "**the sky's first-four-gap spacing measured the same way B3 measures the arm's — same peak-finder, same range**".*
+
+**⛔ AND THAT IS EXACTLY THE DEFECT IN MY OWN r2989 CHECK:** *I fitted the sky's 220/540/810 — **literature values** — against the control's 220/536/813 — **a peak-finder run on CAMB output**. ***Two series measured by different methods, and the 0.0101 offset cannot separate a methodology difference from a physical one.*** The 536-vs-540 and 813-vs-810 disagreements are exactly the size that produced it.*
+
+**⌗ SO CLAUSE TWO'S STATE, HONESTLY:** *the 76 sigma stands — it uses the arm's own receipted figures throughout. **The substitution check does not yet stand**, and what it needs is the row's already-named owed item. Filed as `OWED` #583.*
+
+**⚠ And the row states the stake plainly:** *"**that makes this row the programme's ONLY LIVE CONFRONTATION WITH DATA**".*
+
 ### Revision r2989 — 2026-08-15 (main line). **THE SKY'S THIRD PEAK WAS BANKED ON `PO-7`'s OWN ROW, AND THE COMPLETED CHECK GIVES THE SAME ANSWER FOR A BETTER REASON.**
 
 *Searched every file rather than the receipts I remembered — the same lesson as r2977 and r2988 — and found it in the row's own history: "**THE SKY: peaks near 220/540/810**".*

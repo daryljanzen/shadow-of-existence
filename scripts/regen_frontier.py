@@ -22,7 +22,7 @@ EST = {
  'PO-6':  ('the interacting tower — the STRADDLE, asserted and unverified', 1, 1, 4, None,
             'r2976: ONE clause left. Bounded-below ANSWERED (S8); the UV definition MET-NOT-OWED (generic, CRs part 1-dim and shear-limited); Gamma-hats EXISTENCE folds into that (r2975). What remains is the STRADDLE -- CR-specific, load-bearing for P10s decomposition, asserted rather than computed. A BUILD: it needs the interacting spectrum, not a reading'),
  'PO-7':  ('the first peak — one COMPARISON, all inputs supplied', 1, 1, 1, None,
-            'r2989: clause two passes BOTH checks on banked figures -- 76 sigma statistical, and the substitution MEASURED at 1.6% of the gap on three peaks. One undischarged caveat on where the skys peaks come from'),
+            'r2990: the 76 sigma stands (the arms own receipted figures) but the SUBSTITUTION check is not like-for-like -- literature values against a peak-finder. Needs the sky measured B3s way (OWED #583)'),
  'PO-10':  ('the scalar remainder — one RUN and one REFIT', 2, 2, 1, None,
             'r2978: the odd/even run is NOT arithmetic -- the loading ratio (3.500) is the DRIVING ratio, not the observed one, and the transfer sits between. Plus the FULL-SPECTRUM refit on the banked 215 bins'),
 }
@@ -41,13 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2989: **the skys third peak was banked on PO-7s own row** (peaks near 220/540/810) — "
-            "found by searching every file rather than remembered receipts. Completed on three "
-            "peaks: **the control-to-sky phase offset is 0.0101, 1.6% of the 0.615 gap**. ⛭ And "
-            "the coincidence is the point: r2987s two-peak estimate was 0.0103 and the three-peak "
-            "answer is 0.0101 — **the intercepts are unstable and their DIFFERENCE is not**, "
-            "because both series shift together. r2988 was right about the instability, wrong "
-            "about the consequence.")
+LASTFIND = ("r2990: the caveat read — **not circular, but not like-for-like.** The skys 220/540/810 "
+            "are **literature standard values, not a measurement this corpus performs**; the arms "
+            "side is receipted and the skys is not. ⛔ **And that is the defect in my own r2989 "
+            "check**: I fitted literature values against a peak-finder run on CAMB output, so the "
+            "0.0101 cannot separate methodology from physics — the 536-vs-540 and 813-vs-810 gaps "
+            "are exactly the size that produced it. The 76 sigma stands; the substitution does "
+            "not.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

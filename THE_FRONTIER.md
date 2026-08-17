@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2989: **the skys third peak was banked on PO-7s own row** (peaks near 220/540/810) — found by searching every file rather than remembered receipts. Completed on three peaks: **the control-to-sky phase offset is 0.0101, 1.6% of the 0.615 gap**. ⛭ And the coincidence is the point: r2987s two-peak estimate was 0.0103 and the three-peak answer is 0.0101 — **the intercepts are unstable and their DIFFERENCE is not**, because both series shift together. r2988 was right about the instability, wrong about the consequence.***
+*⌗ **LAST ACTUAL MOVE — r2990: the caveat read — **not circular, but not like-for-like.** The skys 220/540/810 are **literature standard values, not a measurement this corpus performs**; the arms side is receipted and the skys is not. ⛔ **And that is the defect in my own r2989 check**: I fitted literature values against a peak-finder run on CAMB output, so the 0.0101 cannot separate methodology from physics — the 536-vs-540 and 813-vs-810 gaps are exactly the size that produced it. The 76 sigma stands; the substitution does not.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -33,7 +33,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the first peak — one COMPARISON, all inputs supplied | **1** | 1 | 1 | READ | 22 | — | r2989: clause two passes BOTH checks on banked figures -- 76 sigma statistical, and the substitution MEASURED at 1.6% of the gap on three peaks. One undischarged caveat on where the skys peaks come from |
+| **PO-7** | the first peak — one COMPARISON, all inputs supplied | **1** | 1 | 1 | READ | 22 | — | r2990: the 76 sigma stands (the arms own receipted figures) but the SUBSTITUTION check is not like-for-like -- literature values against a peak-finder. Needs the sky measured B3s way (OWED #583) |
 | **PO-10** | the scalar remainder — one RUN and one REFIT | **2** | 2 | 1 | READ | 33 | — | r2978: the odd/even run is NOT arithmetic -- the loading ratio (3.500) is the DRIVING ratio, not the observed one, and the transfer sits between. Plus the FULL-SPECTRUM refit on the banked 215 bins |
 
 ---

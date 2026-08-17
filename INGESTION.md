@@ -511,3 +511,4 @@ r2986  LATENT      sigma(phi) = 0.0081 s: 0.615 is 76 sigma at s=1, 3.8 at s=20.
 r2987  LATENT      the control-to-sky phase offset is 0.0103 vs the 0.615 gap; the substitution holds with ~60x room.
 r2988  LATENT      r2987s 0.0103 is unmeasured: one extra peak moves the controls own intercept by 0.0677. Needs the skys third peak.
 r2989  LATENT      substitution MEASURED on three peaks: offset 0.0101, 1.6% of the gap. Intercepts unstable, their difference is not.
+r2990  LATENT      the skys peaks are literature values, not a corpus measurement; r2989s substitution check is not like-for-like.
