@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3013 — 2026-08-15 (main line). **`PO-13`: THE PAPER ALREADY LOCATES THE DEFECT, AND IT IS NOT WHERE THE ROW GUESSED.**
+
+**⛔ ① MY r2930 IS IN THE PAPER ALREADY.** *sec:coherence: "the receipt writes the mode function down with the sound horizon and comoving distance **as literals**; **no mode is propagated in it** … so the spacing ~296 is **the arithmetic of the expression assumed rather than an output**. **This paper stated it as the result of propagating the modes, and that was wrong**." ***The corpus self-corrected this before I rediscovered it.***
+
+**⛭⛭ ② AND THE PAPER LOCATES THE DEFECT PRECISELY:** *"**Where the modes ARE propagated the comb comes out at 0.72–0.79 of that spacing under every initial condition tried**, so the peak spacing is at present **asserted in one place and short in the other**."*
+
+⇒ ***So the three-layer question is answered in outline. **The coherence mechanism establishes coherence and nothing about where the peaks fall** — the paper says so in terms. **The heights are carried by a time-reversal argument** that makes the driving magnitude equal flat LambdaCDM's exactly, which is why they come out right. **What is short is the propagated spacing.****
+
+**⌗ AND THAT IS THE DIAGNOSIS THE ROW ASKED FOR:** *neither seam nor transfer — the seam supplies one phase per mode and claims no placement; the transfer reproduces the control to 0.16%. ***The propagation of the modes on this rate comes out short, under every initial condition tried — which points at the geometry the transfer runs on, exactly the third layer.***
+
 ### Revision r3012 — 2026-08-15 (main line). **I ARGUED WITH A FRAGMENT. r3010 AND r3011 ARE BOTH WITHDRAWN.**
 
 *Read `frontier:inherited` **whole and raw** instead of its opening sentence. It contains, in its own text:*

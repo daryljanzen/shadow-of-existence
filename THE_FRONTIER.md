@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3012: **I argued with a fragment. r3010 and r3011 are both withdrawn.** Read whole, frontier:inherited already says **'Like eta, the datum may remain empirical AT NO COST to the dissolution; deriving it is the EAGER TARGET'**; already reports the light-element target MET; already resolves two-data-into-one (**rho_r/rho_m = 1.99 at T_onset = 1.6 eV from standard thermodynamics and nothing else**); and already says **eta is inherited because it is protected by a conservation law**. No defect to fix.***
+*⌗ **LAST ACTUAL MOVE — r3013: **the paper already locates the defect, and already contains my r2930 finding self-corrected.** sec:coherence: the 296 spacing is **the arithmetic of the expression assumed rather than an output** — 'this paper stated it as the result of propagating the modes, and that was wrong'. ⇒ And it locates the fault: **where the modes ARE propagated the comb comes out at 0.72-0.79 of that spacing under EVERY initial condition tried** — not the seam (which claims no placement), not the transfer (0.16% on the control), but the propagation on this rate.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -35,7 +35,7 @@
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
 | **PO-16** | the inherited datum — a one-parameter accommodation | **1** | 1 | 2 | READ | 0 | — | r3012: the item is SOUND -- it already states at-no-cost, the met consistency target, the two-data resolution, and etas conservation-law protection. Open in its own words: the EAGER target, a derivation of eta and of the onset |
-| **PO-13** | the misplaced phase — a DIAGNOSIS across three layers | **1** | 1 | 2 | READ | 0 | — | r3009: reproduces scale, spacing, damping and heights; misplaces the phase by 0.615 l_A at ~70 sigma. LEVER: a transfer that fixes the control (1.7%% -> 0.16%%) leaves the CR deficit UNCHANGED to four figures |
+| **PO-13** | the misplaced phase — a DIAGNOSIS across three layers | **1** | 1 | 2 | READ | 0 | — | r3013: LOCATED -- the propagated comb comes out at 0.72-0.79 of the asserted spacing under EVERY initial condition tried. Not the seam (claims no placement), not the transfer (0.16%% on the control): the propagation on this rate |
 
 ---
 
