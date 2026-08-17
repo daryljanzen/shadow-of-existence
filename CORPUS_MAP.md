@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3034 — 2026-08-15 (main line). **MY r3033 FRAMING WAS WRONG. THE DEFECT IS SHARPER THAN I STATED.**
+
+*I wrote "hold the potential to its matter-dominated behaviour". **That is meaningless here: in CR the expansion rate is GEOMETRIC and FIXED — set by the substrate and the causal reassignment, sourced by nothing. There is no matter domination and no radiation domination because there is no Friedmann constraint tying the rate to contents. I imported FLRW's vocabulary along with its equations.***
+
+⇒ ***And the distinction that matters is clean: **the background is geometric and unsourced; the perturbations are dynamical and genuinely sourced by the plasma's own contents** — that part is ordinary physics and belongs here unchanged.***
+
+**⛔⛔ SO THE DEFECT IS PRECISELY ONE LINE** — *the perturbed potential equation. **Its density fractions are shares of a total that SOURCES a Friedmann rate.** CR's rate is not sourced by them, so **those fractions are shares of a budget the cosmology does not have**, and the equation is the perturbed Einstein equation **in the form that presumes the Friedmann constraint**.*
+
+⇒ ***The question is therefore not which era the potential decays like. It is: **what is the perturbed potential equation on a geometric rate that no content sources?** The code answers it with FLRW's — not a fudge factor, but **a constraint equation carried over from a framework where the rate and the contents are locked together, and here they are not**.***
+
 ### Revision r3033 — 2026-08-15 (main line). **RAN IT: THE MECHANISM IS CONFIRMED, AND THE TERM TURNS OUT TO BE DOING TWO JOBS.**
 
 *Two tests from the frozen-potential base:*

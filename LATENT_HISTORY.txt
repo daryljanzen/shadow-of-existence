@@ -494,3 +494,4 @@ r3030  LATENT      delta_gamma alone carries the 0.75; Psi is monotonic. Equatio
 r3031  LATENT      THE DRIVING shifts the comb; LCDM has it too (first peak at 0.73 l_A). The 0.75 was a comparison error.
 r3032  LATENT      DOUBLE-COUNTED DRIVING: radiation-free rate, radiation-driven perturbations. P15 says it is inherited, not generated.
 r3033  LATENT      removing the radiation source moves spacing 0.746->0.8115 but collapses heights: the term sets both.
+r3034  LATENT      no matter domination in CR: the rate is geometric. The defect is the perturbed potential equation carrying FLRWs constraint.
