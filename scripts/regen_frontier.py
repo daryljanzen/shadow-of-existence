@@ -37,12 +37,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3007: **THE BAKE IS DONE.** Three papers carry the substance (P15 four results, P10 the "
-            "spectrum branches, P14 the closure and the one-pair mismatch); P7s four frontier items "
-            "carry the residue — **scalar is now a DIAGNOSIS not a calculation** (reproduces scale, "
-            "spacing, damping and heights, **misplaces the phase**), **quantum is the ordering = the "
-            "cc problem from inside**, **sm is the unbuilt chiral member as a concrete next step**, "
-            "and **inherited was read and left unchanged**. All compile.")
+LASTFIND = ("r3008: **the bake audited both ways — 20 of 20 results in the corpus, nothing "
+            "contradicted.** ⌗ The first pass said 16 of 17 **because my audit string spanned a line "
+            "break** — the same trap that cost four anchors during the bake, arriving inside the "
+            "instrument checking it. ⌗ And **19 apparent hits on the withdrawn 21% figure are NOT "
+            "stale**: B4 withdrew the SPACING deficit, the appendix records the first-peak POSITION "
+            "deficit — **the transient, which is real**. Different quantities sharing a number.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

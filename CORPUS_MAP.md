@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3008 — 2026-08-15 (main line). **THE BAKE AUDITED BOTH WAYS. TWENTY OF TWENTY IN; NOTHING CONTRADICTED.**
+
+**⛭⛭ FORWARD AUDIT — every result of this session against the corpus: 20 of 20 present.** *The 11-of-11 closure and the thirds with no SM input; the one-pair mismatch, achirality as its cause, and the chiral member unbuilt; the refit's 397.13 and the 0.983 control; the odd/even 2.185; the sky's measured 537.7; the 0.615 deficit, its seventy sigma and its seven-parts-in-a-thousand substitution error; the spectrum in both branches and \$\\tfrac34=\\tfrac14+\\tfrac12\$; the ordering as the horizon zero-point question; the floor retained; scalar as a diagnosis; sm cutting both ways; and \$\\ell_A\$ preserved to 0.075%.*
+
+**⌗ AND THE FIRST PASS SAID 16 OF 17** — *because my audit string spanned a line break. **The same trap that cost four anchors during the bake, arriving inside the instrument checking the bake.** Re-run line-insensitively: all present.*
+
+**⛭⛭ REVERSE AUDIT — does the corpus still assert anything the strikes contradict?** *The retracted "quarter of the rate" is **gone**. And **19 apparent hits on the withdrawn ~21%/23% figure are NOT stale**: B4 withdrew the **SPACING** deficit ("the disagreement is entirely in the first three gaps, level at ~0.98 from the fourth"), while the appendix records \$\\ell_1/\\ell_A = 0.5703\$ against the control's 0.7433 — **a first-peak POSITION deficit, which is the transient r2933 established as real**.*
+
+⇒ ***Different quantities that happen to share a number. **I nearly flagged a correct receipt as stale on a numeric coincidence** — the count-versus-quantity distinction, arriving in my own reverse audit. The appendix is correct and needs no edit, and the new P15 text is consistent with it: the 0.615 phase intercept IS that deficit in phase units.***
+
 ### Revision r3007 — 2026-08-15 (main line). **STAGE TWO — P7's FRONTIER ITEMS SHRUNK TO THE RESIDUE. THE BAKE IS DONE.**
 
 **⛭⛭ `frontier:scalar`** — *the two items it named are run, and **the residue is the disagreement itself**: "Both of the items formerly named here have since been run, and **the result is a disagreement rather than a closure**" — with \$\\chi^2=397.13\$ against \$206.44\$, the \$0.615\\,\\ell_A\$ phase intercept at **some seventy standard deviations**, and the odd/even pattern **coming out right** at \$2.185\$ against \$2.2564\\pm0.0772\$. ⇒ **"What remains of this item is therefore no longer a calculation but a diagnosis: the construction reproduces the acoustic scale, the peak spacing, the damping physics and the height pattern, and misplaces the phase."***
