@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3002 — 2026-08-15 (main line). **THE PAPERS ARE NOT UP TO DATE, MEASURED: 211 REVISIONS, TWO CORPUS EDITS.**
+
+*Daryl asked. **The ratio is the answer**: 211 revisions logged since r2849; **two corpus edits**, both to P10, both one sentence. **Propagation has been the minimal kind that comes with tracking.***
+
+**⛔ FOUR NAMED SITES, MINIMUM:** *① **P7 frontier:scalar** names as open the full-spectrum refit and the odd/even pattern — **both run** (r2994, r2995). ② **P10's open frontier** names a spectrum that is **computed in both branches**; what is open is an ordering. ③ **P15's maturity marks** are sound as a marker but **misapplied to the coherence item**, which no transfer can settle. ④ **P7 frontier:sm** does not carry **PO-5's 11-of-11 hadron closure, the computed triality, or the one-pair mismatch with achirality as its cause**.*
+
+**⌗ AND THE STRIKES GIVE P7 WHAT IT DOES NOT HAVE:** *fourteen kill receipts stating per row what was delivered and what was not — **including three results unfavourable to CR that the papers do not state either**: the \$\\Delta\\chi^2=190.7\$, the \$0.615\$ deficit at ~76 sigma, and the unbuilt chiral member. **A revision pass carrying only the favourable half would be worse than none.***
+
+⇒ *`CORPUS_REVISION_OWED.md` opened with the measurement.*
+
 ### Revision r3001 — 2026-08-15 (main line). **`PO-6` STRUCK. THE PROTECTED REGISTER IS EMPTY.**
 
 **⛭⛭ ① THE SPECTRUM — computed in both branches.** *Normal-ordered Gamma_min = 0.25 (below three-quarters, limit-circle); symmetric N=1 Gamma_min = 0.75 (at the threshold, limit-point). **And the threshold is not arbitrary: 3/4 = 1/4 + 1/2, the free boundary coefficient plus exactly one zero-point quantum.***

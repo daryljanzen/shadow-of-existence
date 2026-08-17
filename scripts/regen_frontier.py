@@ -37,12 +37,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3001: **`PO-6` STRUCK — all three clauses answered.** The spectrum COMPUTED in both "
-            "branches (0.25 normal-ordered, 0.75 symmetric, with 3/4 = 1/4 + 1/2); bounded below "
-            "**YES**; the UV definition **met, not owed**, on a one-dimensional counterterm basis. "
-            "⇒ What remains is **not in the object**: which ordering — and that IS **does the "
-            "graviton towers zero-point energy gravitate at the horizon**, the cc problem, with "
-            "the decomposition surviving either way. **THE BOARD IS EMPTY.**")
+LASTFIND = ("r3002: **the papers are NOT up to date, and the ratio is the answer — 211 revisions "
+            "logged, TWO corpus edits.** Four named sites minimum: **P7 frontier:scalar names as "
+            "open two things r2994/r2995 ran**; **P10 names a spectrum as open that is computed in "
+            "both branches**; **P15s maturity marker is misapplied to the coherence item**; and "
+            "**P7 frontier:sm does not carry PO-5s 11-of-11 closure or the one-pair mismatch**. "
+            "CORPUS_REVISION_OWED opened.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

@@ -523,3 +523,4 @@ r2998  LATENT      decisively-favouring withdrawn: same 5 params but different p
 r2999  LATENT      the spectrum is computed both branches (0.25 normal-ordered, 0.75 symmetric); PO-6 owes an ORDERING.
 r3000  LATENT      the ordering IS the zero-point question: does the graviton towers vacuum gravitate at the horizon. The cc problem, from inside.
 r3001  LATENT      PO-6 STRUCK. THE PROTECTED REGISTER IS EMPTY. What remains is the cc problem, in local dress.
+r3002  INSTRUMENT  measured: 211 revisions, 2 corpus edits. Four named stale sites. CORPUS_REVISION_OWED opened.
