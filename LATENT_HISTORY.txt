@@ -463,3 +463,4 @@ r2999  LATENT      the spectrum is computed both branches (0.25 normal-ordered, 
 r3000  LATENT      the ordering IS the zero-point question: does the graviton towers vacuum gravitate at the horizon. The cc problem, from inside.
 r3001  LATENT      PO-6 STRUCK. THE PROTECTED REGISTER IS EMPTY. What remains is the cc problem, in local dress.
 r3002  INSTRUMENT  measured: 211 revisions, 2 corpus edits. Four named stale sites. CORPUS_REVISION_OWED opened.
+r3003  INSTRUMENT  THE BAKE planned: 5 spine sites + 1 new section. 455k words but coherence is a spine problem.

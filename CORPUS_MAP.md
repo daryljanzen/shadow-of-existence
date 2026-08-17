@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r3003 — 2026-08-15 (main line). **THE BAKE — PLANNED AND MEASURED BEFORE IT IS WORKED.**
+
+*Measured first: **455,781 words, 35 .tex files** — but **five frontier labels** (inherited, quantum, scalar, sm in P7; scalar in the corpus appendix) and **seven maturity-mark sites**.*
+
+⇒ ***THE DECISIVE FACT: the corpus states what it has and has not done in five labelled places, not 455,781 words of them. **Coherence is a spine problem, not a rewrite problem.****
+
+**THE STAGES:** *A — `frontier:scalar`, replacing two things named as open with what they returned, **including the unfavourable number**. B — `frontier:quantum` and P10, carrying the spectrum computed in both branches and the ordering as the cc question. C — `frontier:sm`, carrying PO-5's 11-of-11 closure and the one-pair mismatch with achirality as its cause. D — P15's maturity marks. E — `frontier:inherited`, **unexamined and to be read before edited**.*
+
+**THEN THE ADDITION:** *one authoritative section stating **the whole problem space with numbers, both directions** — delivered and outstanding side by side. **Nothing in the corpus states the whole**, which is why a hundred turns went into rediscovering it.*
+
+**⌗ AND WHAT DOES NOT CHANGE:** *the other 30 files carry no frontier labels and made no claims this session overturned. **They are not stale; they were never in question.** Churning them would add risk without reducing incoherence.*
+
+⇒ *`THE_BAKE.md` opened as the plan and the handover.*
+
 ### Revision r3002 — 2026-08-15 (main line). **THE PAPERS ARE NOT UP TO DATE, MEASURED: 211 REVISIONS, TWO CORPUS EDITS.**
 
 *Daryl asked. **The ratio is the answer**: 211 revisions logged since r2849; **two corpus edits**, both to P10, both one sentence. **Propagation has been the minimal kind that comes with tracking.***
