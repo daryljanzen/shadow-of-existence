@@ -146,6 +146,14 @@ sources: [cowork, chat]
 
 
 
+### Revision r3006 — 2026-08-15 (main line). **STAGE ONE COMPLETE — P10 AND P14/matter_sector WRITTEN IN. ALL THREE PAPERS COMPILE.**
+
+**⛭ P10 `canonical_time.tex`** — *the frontier sentence now carries **two things sayable without settling the frontier**: the spectrum is **computable branch by branch** (minimum \$\\tfrac14\$ normal-ordered, \$\\tfrac34\$ symmetric with one mode occupied) and **the difference is exactly that mode's zero-point quantum**, which is why the threshold sits at \$\\tfrac34=\\tfrac14+\\tfrac12\$ **rather than at a value the construction chose**; and the two orderings **answer the paper's own question oppositely**, with the decomposition untouched but the physical content not. ⇒ **"Asking which ordering is asking whether the graviton tower's zero-point energy gravitates at the horizon---the cosmological-constant problem in local dress, reached from inside the boundary coefficient rather than imported."** 26 pages.*
+
+**⛭ P14 `matter_sector_paper.tex`** — *two results. At the confinement site: the condition **tested against the observed spectrum rather than left as a shape**, returning **agreement on eleven of eleven**, with the thirds following from three geometric constraints and **no Standard-Model input** — and the colour wall explicitly left standing. At the count site: the twelve factor \$3\\times2\\times2\$ into **four classes against five multiplets**, **the shortfall precisely one pair on the right-handed side**, with the cause identified — **the geometry constructed is the polarised, therefore achiral, member of its own range**, and the unpolarised member is **named and not built**. ⇒ **"Until it is, the missing multiplet and the missing polarisation are the same absence, and this sector delivers four classes where five are required."***
+
+⌗ *Stage One done: P15, P10, P14. **Stage Two — P7's frontier items — next.***
+
 ### Revision r3005 — 2026-08-15 (main line). **STAGE ONE, P15 — ALL FOUR RESULTS WRITTEN IN. COMPILES.**
 
 **① THE FULL-SPECTRUM REFIT**, *at the sentence that deferred it ("turns on a parameter refit … which is what remains open"): the refit **has since been performed** — 215 bins, same five parameters free in each arm, published covariance, **chi2 = 397.13 against 206.44, so 1.891 and 0.983 per dof and Delta chi2 = 190.7**. Written with the verdict stated as it stands: **the spectrum derived here is disfavoured against the standard model on this data**, and what it measures is the five-parameter fit rather than the geometry.*

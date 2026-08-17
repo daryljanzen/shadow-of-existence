@@ -37,11 +37,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3005: **STAGE ONE, P15 — all four results written in and the paper compiles.** The refit "
-            "(Delta chi2 = 190.7, stated as a disfavouring verdict), the odd/even pattern (2.185 vs "
-            "2.200, sky 2.2564 ± 0.0772), the skys peaks measured (220.4/537.7/817.3/1123.9), and "
-            "the 0.615 deficit with its ~70 sigma and its 0.7% substitution error. **Both directions "
-            "carried.** Next: P10, then P14/matter_sector.")
+LASTFIND = ("r3006: **STAGE ONE COMPLETE — P15, P10 and P14 all written in and all compiling.** P10 "
+            "now carries the spectrum computable branch by branch and **asking which ordering is "
+            "asking whether the graviton towers zero-point energy gravitates at the horizon**. P14 "
+            "carries the **eleven-of-eleven** closure agreement and the **one-pair shortfall on the "
+            "right-handed side with achirality as its cause**. Next: **Stage Two, P7s frontier "
+            "items, which now shrink to the residue.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
