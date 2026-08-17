@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3024: **stretch is ELIMINATED BY EXPERIMENT.** The ladder is sqrt(L(L+2)) x stretch with 2.75 hardcoded, and a 24%% shortfall implies 3.62 — but kk = lL/DM, so I tested: **P2 and P3 are IDENTICAL under a 32%% change**. Acoustic peaks sit at fixed k r_s, so stretch cancels. ⇒ **The shortfall is in D_M/r_s as this instrument computes them** — and C56 measured that pair in the FITTED cosmology cancelling to 0.075%%. **So the cosmologys ratio is right and the instruments is not.*****
+*⌗ **LAST ACTUAL MOVE — r3025: **ISOLATED.** The scans own diagnostic: D_M = 13005, r_s = 135.46, l_A = 301.6, and pi D/r_s checks exactly — **its acoustic scale is right**. But its propagated gaps are 225, **0.746 of its own l_A**. ⇒ Every cosmological candidate is eliminated by measurement: not D_M, not r_s, not stretch, not the initial data. **The instrument knows the right scale and its modes oscillate at three-quarters of it** — a sound-speed or time-variable error inside the integration.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3024: stretch ELIMINATED by experiment (P2, P3 identical under a 32%% change). The ~24%% shortfall is in D_M/r_s as the SCAN computes them -- while C56 shows the fitted cosmologys own pair cancels to 0.075%% |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3025: ISOLATED -- the scan computes l_A = 301.6 correctly and propagates peaks at 0.746 of it. Not D_M, not r_s, not stretch, not the ICs: a sound-speed or time-variable error inside the integration |
 
 ---
 

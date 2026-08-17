@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3024: stretch ELIMINATED by experiment (P2, P3 identical under a 32%% change). The ~24%% shortfall is in D_M/r_s as the SCAN computes them -- while C56 shows the fitted cosmologys own pair cancels to 0.075%%'),
+        'r3025: ISOLATED -- the scan computes l_A = 301.6 correctly and propagates peaks at 0.746 of it. Not D_M, not r_s, not stretch, not the ICs: a sound-speed or time-variable error inside the integration'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3024: **stretch is ELIMINATED BY EXPERIMENT.** The ladder is sqrt(L(L+2)) x stretch "
-            "with 2.75 hardcoded, and a 24%% shortfall implies 3.62 — but kk = lL/DM, so I tested: "
-            "**P2 and P3 are IDENTICAL under a 32%% change**. Acoustic peaks sit at fixed k r_s, so "
-            "stretch cancels. ⇒ **The shortfall is in D_M/r_s as this instrument computes them** — "
-            "and C56 measured that pair in the FITTED cosmology cancelling to 0.075%%. **So the "
-            "cosmologys ratio is right and the instruments is not.**")
+LASTFIND = ("r3025: **ISOLATED.** The scans own diagnostic: D_M = 13005, r_s = 135.46, l_A = 301.6, "
+            "and pi D/r_s checks exactly — **its acoustic scale is right**. But its propagated "
+            "gaps are 225, **0.746 of its own l_A**. ⇒ Every cosmological candidate is eliminated "
+            "by measurement: not D_M, not r_s, not stretch, not the initial data. **The instrument "
+            "knows the right scale and its modes oscillate at three-quarters of it** — a "
+            "sound-speed or time-variable error inside the integration.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

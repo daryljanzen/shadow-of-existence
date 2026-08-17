@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3025 — 2026-08-15 (main line). **ISOLATED: THE INSTRUMENT COMPUTES THE RIGHT ACOUSTIC SCALE AND PROPAGATES AT 0.746 OF IT.**
+
+*Ran the scan and read its own diagnostic line: **D_M = 13005 Mpc, r_s = 135.46 Mpc, l_A = 301.6** — and pi times their ratio checks exactly. **Its acoustic scale is computed correctly and is right**, against the sky's ~301. But its **propagated** peak gaps are 225, which is **0.746 of its own acoustic scale**.*
+
+⇒ ***So every cosmological candidate is now eliminated by measurement: not the distance, not the sound horizon, not their ratio, not the ladder stretch (cancels, r3024), not the initial data (r3023 fixed the heights and left this untouched). **The instrument knows the right acoustic scale and its modes oscillate at three-quarters of it.****
+
+**⌗ That makes it a sound-speed or time-variable error inside the propagation** — *a property of the integration rather than of the expansion history. **The sharpest form this row has taken, and the first that names a single mechanism.***
+
+**⚠ And a number recorded without weight on it:** *0.746 is three-quarters to half a per cent. That may be coincidence; a sound speed carrying a spurious factor, or a conformal-time variable off by a radiation-era factor, would both land near here. **I have not tested which, and the ratio alone does not distinguish them.***
+
 ### Revision r3024 — 2026-08-15 (main line). **`stretch` IS ELIMINATED BY EXPERIMENT, AND THE SHORTFALL IS IN THE INSTRUMENT'S OWN DISTANCE-TO-SOUND-HORIZON RATIO.**
 
 *The multipole ladder is sqrt(L(L+2)) times `stretch`, with 2.75 hardcoded and commented as "fixed parameter-free by Lambda". The arithmetic said a ~24% shortfall implies 3.62. **But the ladder also feeds the wavenumbers, so I tested rather than assumed.***

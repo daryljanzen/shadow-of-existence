@@ -546,3 +546,4 @@ r3021  LATENT      instrument error promoted to leading candidate: amplitude and
 r3022  LATENT      one-line IC change moves P1 150->315; but 315 is a known branch point. Sensitivity confirmed, diagnosis not closed.
 r3023  LATENT      gating Psis velocity gives P1/P2 = 2.017 (the papers 2.02); the residual is a uniformly short spacing, ~24%.
 r3024  LATENT      stretch cancels (P2/P3 identical under 32% change); the shortfall is in the scans own D_M/r_s, while C56s cancels to 0.075%.
+r3025  LATENT      ISOLATED: the scan computes l_A = 301.6 and propagates at 0.746 of it. A propagation error, not a cosmology one.
