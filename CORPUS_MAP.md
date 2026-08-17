@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r3020 — 2026-08-15 (main line). **THE TEST RUN: THE CHAIN CLOSES, IT CONFIRMS THE PAPER, AND MY LOW-k CANDIDATE IS WRONG.**
+
+*Located and ran `ROBUST_p1p2_scan`, the instrument the paper cites for these peaks.*
+
+    its asserted peaks   150, 360, 555, 780
+    gaps                 210, 195, 225   =  0.698, 0.648, 0.748 of the acoustic scale
+    its own output       D_l = 0.0000 from l = 960 to l = 1230
+
+⇒ ***That is the 0.72–0.79 the paper cites, traced to its source — and **the spectrum dies above about 960**, so the instrument sees four peaks, exactly as sec:refit-bound says: "the first few gaps of a series that was only four peaks long at the settings a four-condition scan could afford", with the asymptotic spacing at production depth being 0.975.***
+
+**⛔ AND MY r3019 CANDIDATE IS WRONG.** *I proposed a **low-k boundary starting too high**. **The limitation is REACH, not the k-floor.** A spectrum that dies at 960 **cannot report an asymptotic spacing at all**, and the four gaps it does report are the transient. **The candidate was plausible and the run does not support it.***
+
+**⌗ One narrow thing worth carrying:** *the script still **asserts** peaks 150/360/555/780 — **figures the paper withdrew** ("150 is withdrawn as a quotable figure"). A live receipt enforcing a withdrawn number is a real inconsistency.*
+
 ### Revision r3019 — 2026-08-15 (main line). **THE OFFSET DECAYS, THE FIRST GAP CARRIES IT, AND THERE IS A NAMED CANDIDATE.**
 
 *Tested whether 168 is a recognisable quantity. **It is not a shift of any kind.***

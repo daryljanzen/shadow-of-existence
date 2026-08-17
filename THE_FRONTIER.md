@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3019: **the offset DECAYS — 168, 64, 72, 32 — so it is not a shift or a stretch but a displaced FIRST PEAK with a series that recovers.** The first gap carries it: 216 against the controls 320, while the later gaps are comparable. ⚠ **Candidate named, not tested**: a propagation whose wavenumber grid starts too high would do exactly this — and the corpus has seen the k-range move these numbers twice (r2905 opened it, r2965 rebuilt the grid and took the control 7.14 to 3.81).***
+*⌗ **LAST ACTUAL MOVE — r3020: **ran the test. The chain closes and it CONFIRMS the paper.** ROBUST_p1p2_scans peaks 150/360/555/780 give gaps at 0.698/0.648/0.748 of l_A — **that is the 0.72-0.79, traced to its source** — and its own output prints D_l = 0.0000 from l=960 to 1230: **the spectrum dies above ~960**, so it sees four peaks, exactly as sec:refit-bound says. ⛔ **And my r3019 low-k candidate is WRONG: the limitation is REACH, not the k-floor.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3019: the offset DECAYS (168/64/72/32) and the FIRST GAP carries it (216 vs 320). CANDIDATE: a low-k boundary that starts too high -- testable by moving it, and the k-range has moved these numbers before |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3020: the 0.72-0.79 is traced to ROBUST_p1p2_scan, whose spectrum DIES above l~960 -- a four-peak reach, not a k-floor defect. The papers scoping is confirmed. Narrow residue: the script still asserts withdrawn figures |
 
 ---
 
