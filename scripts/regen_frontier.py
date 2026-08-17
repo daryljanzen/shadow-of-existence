@@ -39,12 +39,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2996: **`PO-10` STRUCK — both halves of the target delivered by computation.** The "
-            "full-spectrum refit performed on 215 bins (CR 1.891/dof vs LCDM 0.983/dof, Delta chi2 "
-            "190.7) **against a control that works**, and the odd/even pattern produced through "
-            "the transfer (2.185 vs 2.200, sky 2.256 +- 0.077, both within ~1 sigma). ⚠ Scope "
-            "stated: **a verdict on this arms five-parameter TT fit, not on CRs geometry.** ONE "
-            "ROW REMAINS.")
+LASTFIND = ("r2997: **the 26.6% orphan is ABSORBED, not homeless.** C56 measured median |C_CR/C_LCDM "
+            "− 1| = 26.6% across bins; **r2994 measured the SAME difference properly** — 215 bins, "
+            "plik_lite covariance, both arms on five parameters — getting Delta chi2 = 190.7. ⇒ **A "
+            "median 26.6% fractional difference between spectra separated by Delta chi2 = 190.7 is "
+            "that disagreement expressed without a covariance**, not an unexplained effect. It "
+            "needed no row: the quantity is now measured better.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

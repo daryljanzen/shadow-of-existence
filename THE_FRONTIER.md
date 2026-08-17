@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2996: **`PO-10` STRUCK — both halves of the target delivered by computation.** The full-spectrum refit performed on 215 bins (CR 1.891/dof vs LCDM 0.983/dof, Delta chi2 190.7) **against a control that works**, and the odd/even pattern produced through the transfer (2.185 vs 2.200, sky 2.256 +- 0.077, both within ~1 sigma). ⚠ Scope stated: **a verdict on this arms five-parameter TT fit, not on CRs geometry.** ONE ROW REMAINS.*** ⛭⛭ **⟨STRUCK r2996 — the full-spectrum refit performed (215 bins; CR $1.891$/dof vs $\Lambda$CDM $0.983$/dof, $\Delta\chi^2=190.7$) and the odd/even pattern produced ($2.185$ vs $2.200$, sky $2.256\pm0.077$). `kills/PO-10.md`.⟩**
+*⌗ **LAST ACTUAL MOVE — r2997: **the 26.6% orphan is ABSORBED, not homeless.** C56 measured median |C_CR/C_LCDM − 1| = 26.6% across bins; **r2994 measured the SAME difference properly** — 215 bins, plik_lite covariance, both arms on five parameters — getting Delta chi2 = 190.7. ⇒ **A median 26.6% fractional difference between spectra separated by Delta chi2 = 190.7 is that disagreement expressed without a covariance**, not an unexplained effect. It needed no row: the quantity is now measured better.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

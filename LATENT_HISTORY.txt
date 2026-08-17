@@ -457,3 +457,4 @@ r2993  LATENT      PO-7 STRUCK: phase forced then derived; the 0.615 real at 76 
 r2994  LATENT      the full-spectrum refit is banked: CR 1.891/dof vs LCDM 0.983/dof on 215 bins, Delta chi2 190.7.
 r2995  LATENT      odd/even produced: LCDM 2.200, CR 2.185, sky 2.256+-0.077. Both within ~1 sigma; arms differ by 0.015.
 r2996  LATENT      PO-10 STRUCK: refit performed (Delta chi2 190.7 vs a 0.983/dof control) and odd/even produced. ONE ROW REMAINS.
+r2997  LATENT      the 26.6% orphan is absorbed: it is Delta chi2 = 190.7 without a covariance. OWED empty; one row remains.

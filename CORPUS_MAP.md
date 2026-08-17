@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2997 — 2026-08-15 (main line). **THE 26.6% ORPHAN IS ABSORBED, NOT HOMELESS — AND THE OWED LIST IS EMPTY.**
+
+*`check_owed_rows_live` caught that #577 named two rows that are now struck. Rather than reassign it, asked what it measures.*
+
+⇒ ***C56 measured **median |C_CR / C_LCDM − 1| = 26.6%** across bins. **r2994 measured the SAME difference properly** — 215 bins, plik_lite covariance, both arms fitted on the same five parameters — getting **Delta chi2 = 190.7**, CR at 1.891/dof against a control at 0.983/dof.***
+
+⇒ ***A median 26.6% fractional difference between two spectra separated by Delta chi2 = 190.7 is **not an unexplained effect: it is that disagreement expressed without a covariance**. So the swing needed no row of its own — **the quantity it measures is now measured better, and the better measurement lives in the `PO-10` kill receipt**.***
+
+**⌗ The owed list is now empty**, *and one row remains on the board.*
+
 ### Revision r2996 — 2026-08-15 (main line). **`PO-10` STRUCK — BOTH HALVES OF THE TARGET DELIVERED BY COMPUTATION. ONE ROW REMAINS.**
 
 **⛭⛭ ① THE FULL-SPECTRUM COMPARISON — performed.** *215 bins, ell 32-2492, plik_lite covariance, both arms on the **same five parameters**: **CR chi2 = 397.13 (1.891/dof) against LambdaCDM 206.44 (0.983/dof), Delta chi2 = 190.7**. The target's parenthetical was exact — it was a parameter refit, and it was performed — **against a control at 0.983/dof, a working instrument**.*
