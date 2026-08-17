@@ -146,6 +146,21 @@ sources: [cowork, chat]
 
 
 
+### Revision r2988 — 2026-08-15 (main line). **REDONE, AND r2987's 0.0103 IS NOT A MEASUREMENT OF THE SUBSTITUTION ERROR.**
+
+*My own caveat was right and worse than I put it. Refitting the control as the series lengthens, using the third peak the corpus banks:*
+
+    control, 2 peaks    l_A = 316.0    phi/pi = -0.3038
+    control, 3 peaks    l_A = 296.5    phi/pi = -0.2361
+
+**⛔⛔ SO ADDING ONE PEAK MOVES THE CONTROL'S OWN INTERCEPT BY 0.0677** — *eleven per cent of the 0.615 gap, from a single extra peak — while l_A falls toward the asymptotic ~301. **The 0.0103 reported at r2987 is SMALLER than the shift the same control undergoes from one more data point**: a two-peak intercept is unstable at the scale of the thing it was being used to test.*
+
+**⌗ AND THIS IS r2933's FINDING ARRIVING INSIDE MY OWN ARITHMETIC:** *every PO-7 measurement turned out to be transient-region read as asymptotic, and **I then performed a transient-region fit and reported it against an asymptotic quantity**, one turn after writing the caveat that says not to.*
+
+**⚠ AND THE REDONE CHECK CANNOT BE COMPLETED HERE:** *it needs the **sky's third peak position** — the corpus banks 813 for the control and not the sky's. ***Well-posed, correctly scoped, and one number short.*** Filed as `OWED` #582.*
+
+⇒ *What survives from r2987 is the direction only. **r2986's 76 sigma is untouched** — that one used the banked asymptotic figures throughout.*
+
 ### Revision r2987 — 2026-08-15 (main line). **THE SUBSTITUTION HOLDS WITH ROOM: THE CONTROL REPRODUCES THE SKY'S PHASE TO 2% OF THE GAP IT IS USED TO MEASURE.**
 
 *`P15_the_line_of_sight_transfer` prints both series on the same two peaks — **control 220.0, 532.0; sky 220.6, 538.1** — so the comparison was half-made in a receipt already run.*

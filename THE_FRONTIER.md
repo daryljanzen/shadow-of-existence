@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2987: **the LCDM-for-sky substitution holds with room.** P15_the_line_of_sight_transfer prints both series on the same peaks (control 220.0/532.0, sky 220.6/538.1); fitting each gives a **control-to-sky phase offset of 0.0103 against the CR gap of 0.615 — 2% of the disagreement it stands in for**. ⚠ Caveats kept: two peaks give an EXACT fit with no residual, and these spacings (312, 317) are not the asymptotic l_A ~ 301 the 0.615 was measured against.***
+*⌗ **LAST ACTUAL MOVE — r2988: **r2987s 0.0103 is not a measurement of the substitution error.** Refitting the control as the series lengthens: 2 peaks give phi/pi = −0.3038, 3 peaks give −0.2361 — **one extra peak moves the intercept by 0.0677, eleven per cent of the 0.615 gap**, and my reported offset is SMALLER than that. ⌗ **r2933s transient-read-as-asymptotic finding, arriving inside my own arithmetic one turn after I wrote the caveat.** The redone check needs the SKYs third peak: well-posed and one number short.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -33,7 +33,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the first peak — one COMPARISON, all inputs supplied | **1** | 1 | 1 | READ | 22 | — | r2987: clause two survives BOTH checks -- 76 sigma at a one-multipole position error, and the control reproduces the skys phase to 2% of the gap. Caveat: the substitution estimate is a two-peak exact fit |
+| **PO-7** | the first peak — one COMPARISON, all inputs supplied | **1** | 1 | 1 | READ | 22 | — | r2988: the 76-sigma stands (asymptotic figures throughout), but the SUBSTITUTION check is unmeasured -- a two-peak intercept moves 0.0677 on one extra peak. Needs the skys third peak (OWED #582) |
 | **PO-10** | the scalar remainder — one RUN and one REFIT | **2** | 2 | 1 | READ | 33 | — | r2978: the odd/even run is NOT arithmetic -- the loading ratio (3.500) is the DRIVING ratio, not the observed one, and the transfer sits between. Plus the FULL-SPECTRUM refit on the banked 215 bins |
 
 ---
