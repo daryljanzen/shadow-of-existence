@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2993: **`PO-7` STRUCK — both clauses answered.** Clause one: it does NOT imprint; the phase is FORCED to {0, pi} and then DERIVED to 0. Clause two: **YES — 76 sigma statistically, and a substitution error of 0.7% measured on the skys own Planck data by a finder written for the purpose**, whose peaks reproduce the literature values to better than 1% without being fitted to them. ⌗ And the row carried uncited for ninety revisions: **l_A preserved to +0.075% while its parts each fall over 6%**.*** ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
+*⌗ **LAST ACTUAL MOVE — r2994: **the full-spectrum refit is DONE and BANKED** — chi2_of_spectrum.py, fit.py, cr.json and lcdm.json, all in computations/planck_tt_likelihood/. **215 bins, both arms on the same five parameters: CR 397.13 (1.891/dof), LCDM 206.44 (0.983/dof), Delta chi2 = 190.7.** ⛭ And **the control at 0.983 is a WORKING instrument** — not the 7.14 / 3.81 / 1.18 I have carried and caveated all session, which belong to a different comparison. PO-10s first step is discharged.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -33,7 +33,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-10** | the scalar remainder — one RUN and one REFIT | **2** | 2 | 1 | READ | 33 | — | r2978: the odd/even run is NOT arithmetic -- the loading ratio (3.500) is the DRIVING ratio, not the observed one, and the transfer sits between. Plus the FULL-SPECTRUM refit on the banked 215 bins |
+| **PO-10** | the scalar remainder — one RUN and one REFIT | **2** | 2 | 1 | READ | 33 | — | r2994: the FULL-SPECTRUM refit is DONE (215 bins, CR 1.891/dof vs LCDM 0.983/dof, Delta chi2 190.7). One step left: produce the odd/even pattern through the transfer |
 
 ---
 

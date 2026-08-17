@@ -146,6 +146,21 @@ sources: [cowork, chat]
 
 
 
+### Revision r2994 — 2026-08-15 (main line). **THE FULL-SPECTRUM REFIT IS DONE AND BANKED, AND ITS CONTROL SITS AT 0.983/dof.**
+
+*Assembled from three located files rather than read about: `computations/planck_tt_likelihood/` carries **chi2_of_spectrum.py**, **fit.py**, and both **cr.json** and **lcdm.json** — banked minimisations.*
+
+    215 bins, ell 32-2492, plik_lite covariance, SAME five parameters both arms
+    CR      chi2 = 397.13    chi2/dof = 1.891
+    LCDM    chi2 = 206.44    chi2/dof = 0.983
+    Delta chi2 = 190.7 on equal parameter count
+
+**⛭⛭ AND THE CONTROL IS THE POINT:** *0.983/dof is **a working instrument** — this is not the 7.14, the 3.81, or the 1.18 carried and caveated all session. ***Those belong to a different comparison. Here LambdaCDM reproduces the sky essentially perfectly, so the r2904 instrument caveat does not apply to this number.***
+
+⇒ ***So `PO-10`'s first step is discharged and the target's parenthetical was exact: **"a parameter refit rather than a further calculation"** — it was a refit, and it was performed.***
+
+**⚠ What this is and is not:** *a verdict on **this arm's five-parameter spectrum fit against Planck TT**, decisively LambdaCDM-favouring. **It is not a verdict on the framework** — the arm being fitted is the CMB spectrum construction, not CR's geometry, and the two are joined by exactly the transfer work this row's other step names.*
+
 ### Revision r2993 — 2026-08-15 (main line). **`PO-7` STRUCK — BOTH CLAUSES OF THE OBJECT ANSWERED.**
 
 **⛭⛭ CLAUSE ONE — it does NOT imprint.** *Every mode exits the horizon and **freezes before the crossing**, so sin(phi) = 0 and phi is in {0, pi} — **forced by the paper's own transmission argument, in print before the scan was run** — and then **DERIVED to CRPHI = 0** by adiabatic compression, pi being anti-adiabatic and inadmissible. The band collapses; the deficit is **pinned at 0.615**.*

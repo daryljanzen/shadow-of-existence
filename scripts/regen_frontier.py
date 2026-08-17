@@ -22,7 +22,7 @@ EST = {
  'PO-6':  ('the interacting tower — the STRADDLE, asserted and unverified', 1, 1, 4, None,
             'r2976: ONE clause left. Bounded-below ANSWERED (S8); the UV definition MET-NOT-OWED (generic, CRs part 1-dim and shear-limited); Gamma-hats EXISTENCE folds into that (r2975). What remains is the STRADDLE -- CR-specific, load-bearing for P10s decomposition, asserted rather than computed. A BUILD: it needs the interacting spectrum, not a reading'),
  'PO-10':  ('the scalar remainder — one RUN and one REFIT', 2, 2, 1, None,
-            'r2978: the odd/even run is NOT arithmetic -- the loading ratio (3.500) is the DRIVING ratio, not the observed one, and the transfer sits between. Plus the FULL-SPECTRUM refit on the banked 215 bins'),
+            'r2994: the FULL-SPECTRUM refit is DONE (215 bins, CR 1.891/dof vs LCDM 0.983/dof, Delta chi2 190.7). One step left: produce the odd/even pattern through the transfer'),
 }
 # ** THE COUNTER, AND THE CRITERION IT IS SCORED AGAINST (r2847, after Daryl caught two
 # turns wrongly scored 0).  *** A turn is a 0 ONLY IF it found the problem space DIFFERENT
@@ -39,12 +39,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2993: **`PO-7` STRUCK — both clauses answered.** Clause one: it does NOT imprint; the "
-            "phase is FORCED to {0, pi} and then DERIVED to 0. Clause two: **YES — 76 sigma "
-            "statistically, and a substitution error of 0.7% measured on the skys own Planck data "
-            "by a finder written for the purpose**, whose peaks reproduce the literature values to "
-            "better than 1% without being fitted to them. ⌗ And the row carried uncited for ninety "
-            "revisions: **l_A preserved to +0.075% while its parts each fall over 6%**.")
+LASTFIND = ("r2994: **the full-spectrum refit is DONE and BANKED** — chi2_of_spectrum.py, fit.py, "
+            "cr.json and lcdm.json, all in computations/planck_tt_likelihood/. **215 bins, both "
+            "arms on the same five parameters: CR 397.13 (1.891/dof), LCDM 206.44 (0.983/dof), "
+            "Delta chi2 = 190.7.** ⛭ And **the control at 0.983 is a WORKING instrument** — not the "
+            "7.14 / 3.81 / 1.18 I have carried and caveated all session, which belong to a "
+            "different comparison. PO-10s first step is discharged.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
