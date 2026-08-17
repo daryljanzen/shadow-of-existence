@@ -37,12 +37,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3003: **THE BAKE planned and measured.** 455,781 words across 35 files — but the corpus "
-            "states what it has and has not done in **FIVE labelled places**, so **coherence is a "
-            "SPINE problem, not a rewrite problem**. Five stages (scalar, quantum, sm, the maturity "
-            "marks, inherited), then **one new section stating the whole problem space with "
-            "numbers, both directions**. 30 files carry no frontier labels and **were never in "
-            "question** — churning them would add risk without reducing incoherence.")
+LASTFIND = ("r3004 (Daryl caught it): **the plan was backwards in two ways.** It proposed a NEW "
+            "authoritative section when **P7s frontier section IS that section**, and it proposed "
+            "**rewriting frontier items into statements of results, which inverts what a frontier "
+            "section is for**. ⇒ The order is **substance into the owning papers FIRST** (four "
+            "results into P15, one into P10, two into P14/matter_sector), **then P7s frontier "
+            "items shrink to the residue** — which for scalar is the measured disagreements "
+            "themselves.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

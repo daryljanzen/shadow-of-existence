@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3004 — 2026-08-15 (main line). **THE PLAN WAS BACKWARDS IN TWO WAYS; CORRECTED.**
+
+**⛔ ① It proposed a NEW authoritative section stating the whole problem space.** *`P7`'s frontier section **IS** that section. **Building a second one is inventing a duplicate of a thing that exists.***
+
+**⛔ ② It proposed rewriting frontier items into statements of results.** *That **inverts what a frontier section is for**. A result goes into **the paper that owns it**; the frontier item then **shrinks to whatever genuinely remains, or goes**.*
+
+⇒ ***THE ORDER IS: substance into the owning papers, then P7's frontier section reflects the residue.***
+
+**STAGE ONE — the substance.** *Four results into **P15**: the full-spectrum refit (\$\\Delta\\chi^2=190.7\$, CR 1.891/dof against a control at 0.983); the odd/even pattern produced (2.185 vs 2.200, sky 2.2564 ± 0.0772); the sky's peaks measured on plik_lite (220.4/537.7/817.3/1123.9, reproducing the literature values to <1% without being fitted to them); and the \$0.615\$ deficit at ~76 sigma with a 0.7% substitution error. One into **P10**: the spectrum computed in both branches. Two into **P14/matter_sector**: the 11-of-11 closure, and the one-pair mismatch with achirality as its cause.*
+
+**STAGE TWO — P7's frontier items shrink to the residue.** *`scalar` keeps **the measured disagreements themselves** — a construction fitting worse by \$\\Delta\\chi^2=190.7\$ with a \$0.615\$ deficit **is a live problem and is the frontier item now**. `quantum` shrinks to the ordering. `sm` shrinks to the unbuilt chiral member. `inherited` is **read before touched**.*
+
 ### Revision r3003 — 2026-08-15 (main line). **THE BAKE — PLANNED AND MEASURED BEFORE IT IS WORKED.**
 
 *Measured first: **455,781 words, 35 .tex files** — but **five frontier labels** (inherited, quantum, scalar, sm in P7; scalar in the corpus appendix) and **seven maturity-mark sites**.*

@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3003: **THE BAKE planned and measured.** 455,781 words across 35 files — but the corpus states what it has and has not done in **FIVE labelled places**, so **coherence is a SPINE problem, not a rewrite problem**. Five stages (scalar, quantum, sm, the maturity marks, inherited), then **one new section stating the whole problem space with numbers, both directions**. 30 files carry no frontier labels and **were never in question** — churning them would add risk without reducing incoherence.***
+*⌗ **LAST ACTUAL MOVE — r3004 (Daryl caught it): **the plan was backwards in two ways.** It proposed a NEW authoritative section when **P7s frontier section IS that section**, and it proposed **rewriting frontier items into statements of results, which inverts what a frontier section is for**. ⇒ The order is **substance into the owning papers FIRST** (four results into P15, one into P10, two into P14/matter_sector), **then P7s frontier items shrink to the residue** — which for scalar is the measured disagreements themselves.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

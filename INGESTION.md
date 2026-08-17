@@ -525,3 +525,4 @@ r3000  LATENT      the ordering IS the zero-point question: does the graviton to
 r3001  LATENT      PO-6 STRUCK. THE PROTECTED REGISTER IS EMPTY. What remains is the cc problem, in local dress.
 r3002  INSTRUMENT  measured: 211 revisions, 2 corpus edits. Four named stale sites. CORPUS_REVISION_OWED opened.
 r3003  INSTRUMENT  THE BAKE planned: 5 spine sites + 1 new section. 455k words but coherence is a spine problem.
+r3004  INSTRUMENT  plan corrected: substance into owning papers FIRST, then P7 frontier shrinks to the residue.
