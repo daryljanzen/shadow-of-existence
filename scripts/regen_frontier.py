@@ -26,7 +26,7 @@ EST = {
     'PO-15': ('the ordering — does the towers zero-point energy gravitate', 1, 1, 3, None,
         'r3009: both branches computed, 3/4 = 1/4 + 1/2 is WHY, decomposition survives either way. UNASKED: can the thermal state that supplied the boundary condition also select the ordering'),
     'PO-16': ('the inherited datum — a one-parameter accommodation', 1, 1, 2, None,
-        'r3010: the RATIO route is closed (X1); the live question is whether the ONSET REDSHIFT is derivable -- a time, not a ratio. And a single datum cannot absorb both observables, so the second is a prediction'),
+        'r3011: RESTATED -- deriving an empirical input is a category error. The question is whether P7s wording matches what is defensible: one input against LCDMs six, a second observable PREDICTED, and a datum of the kind LCDM also takes'),
 }
 # ** THE COUNTER, AND THE CRITERION IT IS SCORED AGAINST (r2847, after Daryl caught two
 # turns wrongly scored 0).  *** A turn is a 0 ONLY IF it found the problem space DIFFERENT
@@ -43,12 +43,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3010: **X1 already closed the ratio route, and P7s own wording says the datum proper is "
-            "something else.** The datum as stated IS rho_r/rho_m, which X1 closes against the "
-            "progenitor structurally. But P7 says **the datum proper is the ONSET REDSHIFT, and the "
-            "ratio is its restatement** — a TIME, not a ratio, so X1s multiplicative-cancellation "
-            "argument does not reach it. ⌗ And P15 already limits the accommodation: **a single "
-            "datum cannot absorb both observables**, so the second is a prediction.")
+LASTFIND = ("r3011 (Daryl caught it): **my r3010 question was a CATEGORY ERROR.** I asked whether the "
+            "onset redshift is DERIVABLE. **No empirical parameter in any theory is** — LCDM takes "
+            "six, the SM about nineteen. ⇒ **And the frontier item carries the same error**, "
+            "calling one input 'an accommodation rather than a parameter-free prediction', a "
+            "standard nothing meets. The real comparison is the COUNT (one against six), what is "
+            "PREDICTED not fitted (theta_D/theta_* follows with nothing left to adjust), and the "
+            "KIND of datum (LCDM takes the baryon-to-photon ratio the same way).")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

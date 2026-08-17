@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3010: **X1 already closed the ratio route, and P7s own wording says the datum proper is something else.** The datum as stated IS rho_r/rho_m, which X1 closes against the progenitor structurally. But P7 says **the datum proper is the ONSET REDSHIFT, and the ratio is its restatement** — a TIME, not a ratio, so X1s multiplicative-cancellation argument does not reach it. ⌗ And P15 already limits the accommodation: **a single datum cannot absorb both observables**, so the second is a prediction.***
+*⌗ **LAST ACTUAL MOVE — r3011 (Daryl caught it): **my r3010 question was a CATEGORY ERROR.** I asked whether the onset redshift is DERIVABLE. **No empirical parameter in any theory is** — LCDM takes six, the SM about nineteen. ⇒ **And the frontier item carries the same error**, calling one input 'an accommodation rather than a parameter-free prediction', a standard nothing meets. The real comparison is the COUNT (one against six), what is PREDICTED not fitted (theta_D/theta_* follows with nothing left to adjust), and the KIND of datum (LCDM takes the baryon-to-photon ratio the same way).***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-16** | the inherited datum — a one-parameter accommodation | **1** | 1 | 2 | READ | 0 | — | r3010: the RATIO route is closed (X1); the live question is whether the ONSET REDSHIFT is derivable -- a time, not a ratio. And a single datum cannot absorb both observables, so the second is a prediction |
+| **PO-16** | the inherited datum — a one-parameter accommodation | **1** | 1 | 2 | READ | 0 | — | r3011: RESTATED -- deriving an empirical input is a category error. The question is whether P7s wording matches what is defensible: one input against LCDMs six, a second observable PREDICTED, and a datum of the kind LCDM also takes |
 | **PO-13** | the misplaced phase — a DIAGNOSIS across three layers | **1** | 1 | 2 | READ | 0 | — | r3009: reproduces scale, spacing, damping and heights; misplaces the phase by 0.615 l_A at ~70 sigma. LEVER: a transfer that fixes the control (1.7%% -> 0.16%%) leaves the CR deficit UNCHANGED to four figures |
 
 ---

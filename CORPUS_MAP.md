@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3011 — 2026-08-15 (main line). **MY r3010 QUESTION WAS A CATEGORY ERROR, AND SO IS THE FRONTIER ITEM'S OWN FRAMING.**
+
+*I asked whether the onset redshift is **derivable**. **No empirical parameter in any theory is derivable** — flat LambdaCDM takes six, the Standard Model about nineteen — and asking it of this one holds CR to a standard **no theory in physics meets**.*
+
+⇒ ***And `frontier:inherited` carries the same error: it calls the datum "a one-parameter accommodation **rather than a parameter-free prediction**", which is a defect only against a standard nothing satisfies.***
+
+**⌗ AND THE PAPER ELSEWHERE ALREADY STATES THE CORRECT COMPARISON, in three parts:** *· **THE COUNT** — flat LambdaCDM fits this spectrum with **six**; this cosmology carries **one inherited datum** plus the five it is fitted with. · **WHAT IS PREDICTED RATHER THAN FITTED** — "holding theta_star to its measured value fixes the onset redshift, and theta_D/theta_star **then follows with nothing left to adjust** … **a single datum cannot absorb both observables**". · **THE KIND OF DATUM** — "**the same division of labour by which flat LambdaCDM carries the baryon-to-photon ratio as a measured datum from a baryogenesis it does not model**".*
+
+⇒ ***So `PO-16`'s object is restated: not "derive the datum" but **does P7's frontier wording match what the corpus can actually defend**. **The defect is in the framing, not in the physics.****
+
 ### Revision r3010 — 2026-08-15 (main line). **`PO-16`: X1 ALREADY CLOSED THE RATIO ROUTE, AND P7's OWN WORDING SAYS THE DATUM PROPER IS SOMETHING ELSE.**
 
 *Reads first, build after — the order corrected. Asked X1's question of the inherited datum: what does the crossing do to **that kind** of quantity?*
