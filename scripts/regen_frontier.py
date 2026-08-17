@@ -22,7 +22,7 @@ EST = {
  'PO-6':  ('the interacting tower — the STRADDLE, asserted and unverified', 1, 1, 4, None,
             'r2976: ONE clause left. Bounded-below ANSWERED (S8); the UV definition MET-NOT-OWED (generic, CRs part 1-dim and shear-limited); Gamma-hats EXISTENCE folds into that (r2975). What remains is the STRADDLE -- CR-specific, load-bearing for P10s decomposition, asserted rather than computed. A BUILD: it needs the interacting spectrum, not a reading'),
  'PO-7':  ('the first peak — one COMPARISON, all inputs supplied', 1, 1, 1, None,
-            'r2982: of r2907s three argued results, ONE is argued (coherence), ONE is ESTABLISHED (the floor), ONE is unmarked (damping). Clause two still needs a PHASE error bar the corpus does not state'),
+            'r2984: the one ARGUED item is a mechanism attribution a transfer cannot settle (both mechanisms give the comb) -- PO-2s shape. Clause two still needs a PHASE error bar the corpus does not state'),
  'PO-10':  ('the scalar remainder — one RUN and one REFIT', 2, 2, 1, None,
             'r2978: the odd/even run is NOT arithmetic -- the loading ratio (3.500) is the DRIVING ratio, not the observed one, and the transfer sits between. Plus the FULL-SPECTRUM refit on the banked 215 bins'),
 }
@@ -40,13 +40,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 1
-LASTFIND = ("r2983 was not a zero — a false alarm, retracted. A locating search said one of r2982s "
-            "quotations **appeared only in my own entries**; auditing all six with normalisation on "
-            "BOTH sides showed **every one present**. The search matched raw file text while the "
-            "extraction had stripped LaTeX and collapsed whitespace. ⇒ **A string can be present "
-            "under one normalisation and absent under another.** Protocol §⑤·9 added: an audit must "
-            "normalise the source the way the extraction did. Last actual move: r2982.")
+SINCE = 0
+LASTFIND = ("r2984: **the one argued item is a MECHANISM ATTRIBUTION, not a number.** P15: 'coherent "
+            "acoustic peaks from geometric (null-boundary) phase-fixing RATHER THAN super-horizon "
+            "freeze-out'. ⇒ Both mechanisms give a sharp comb, and **the comb is the observable** — "
+            "so **a transfer cannot distinguish them**, which is why it is marked argued rather "
+            "than pending-computation. ⌗ **That is PO-2s shape exactly**, and the register has "
+            "treated it as a deferred computation for eight revisions.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

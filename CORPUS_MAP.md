@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r2984 — 2026-08-15 (main line). **THE ONE ARGUED ITEM IS A MECHANISM ATTRIBUTION, NOT A NUMBER, AND CARRYING IT THROUGH A TRANSFER CANNOT SETTLE IT.**
+
+*P15's argued clause, verbatim: "**Coherent acoustic peaks from geometric (null-boundary) PHASE-FIXING RATHER THAN super-horizon FREEZE-OUT (argued, sec:coherence)**".*
+
+⇒ ***So what is argued is **which mechanism produces a feature both mechanisms produce**: in LambdaCDM the peaks are coherent because modes freeze outside the horizon and start with a common phase; in CR because the null boundary fixes **one phase per mode**. **Both give a sharp comb, and the comb is the observable.****
+
+**⛔ THEREFORE THE TRANSFER IS THE WRONG INSTRUMENT FOR IT:** *carrying either mechanism through the projection returns coherent peaks, so **a transfer computation cannot distinguish them**. That is presumably why P15 marks it ARGUED rather than pending-computation — **it is not awaiting a calculation of the kind the other items await**.*
+
+**⌗ AND THAT IS `PO-2`'s SHAPE, EXACTLY:** *`PO-2` struck because two readings had **nothing observable between them**. ***Here two mechanisms have the same observable, and the register has been treating the item as a deferred computation for eight revisions.***
+
+**⚠ And what would change it, stated so it is not lost:** *if CR's null-boundary phase-fixing and LambdaCDM's freeze-out predicted different phases for modes **not** frozen at the crossing, the two would separate. **B9 says every mode of interest freezes before the crossing — which is what closes the gap, and is also why they agree.***
+
 ### Revision r2983 — 2026-08-15 (main line). **I ACCUSED MYSELF OF FABRICATING A QUOTATION AND THE ACCUSATION WAS WRONG. ALL SIX OF r2982's QUOTATIONS ARE IN THE SOURCE.**
 
 *A "where does this live" search reported that "Argued: the coherence mechanism" **appeared only in my own entries** — so I audited every quotation in r2982 against the corpus with normalisation applied to **both sides**.*
