@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2991: **the skys own spectrum is IN THE REPO** — Planck 2018 plik_lite binned TT, 215 bins, columns [ell, C_ell, sigma], **with per-bin error bars** (the sigma r2985 called unbanked). So the programmes only live data confrontation is measurable from material already on disk. ⛔ **And my first attempt is an artefact**: a naive local-max finder returned ell=42 (the low-ell rise) and 554 (a shoulder), giving a spurious 0.678 offset — the kind of number that looks like a finding if you stop at the first output.***
+*⌗ **LAST ACTUAL MOVE — r2992: **#583 DISCHARGED — a peak-finder WRITTEN and run on Planck plik_lite.** Sky peaks 220.4 / 537.7 / 817.3 / 1123.9, reproducing the literature values to better than 1% **without being fitted to them**. Like-for-like: **offset 0.0043, 0.7% of the 0.615 gap** (literature-vs-CAMB gave 0.0101, so the methodology difference was INFLATING it). ⇒ **Clause two passes both checks on like-for-like footing; the 0.615 stands at ~140x the substitution error.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -33,7 +33,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-7** | the first peak — one COMPARISON, all inputs supplied | **1** | 1 | 1 | READ | 22 | — | r2991: the Planck TT spectrum with per-bin errors is ON DISK, so #583 is a script-reuse question not a data question -- point B3s actual peak-finder at it. The 76 sigma stands |
+| **PO-7** | the first peak — one COMPARISON, all inputs supplied | **1** | 1 | 1 | READ | 22 | — | r2992: clause two PASSES both checks like-for-like -- 76 sigma statistical, and a 0.7% substitution error measured on the skys own data. The row is strike-ready |
 | **PO-10** | the scalar remainder — one RUN and one REFIT | **2** | 2 | 1 | READ | 33 | — | r2978: the odd/even run is NOT arithmetic -- the loading ratio (3.500) is the DRIVING ratio, not the observed one, and the transfer sits between. Plus the FULL-SPECTRUM refit on the banked 215 bins |
 
 ---

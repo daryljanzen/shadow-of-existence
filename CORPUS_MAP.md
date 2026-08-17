@@ -146,6 +146,22 @@ sources: [cowork, chat]
 
 
 
+### Revision r2992 — 2026-08-15 (main line). **#583 DISCHARGED: THE SKY MEASURED ON ITS OWN DATA, AND THE SUBSTITUTION IS LIKE-FOR-LIKE AT LAST.**
+
+*No B3 peak-finder exists — r2991's "script-reuse question" was wrong, and the finder had to be **written**. Written: parabolic fit to each acoustic hump, restricted to ell > 100 so the low-ell rise is excluded, run on Planck 2018 plik_lite.*
+
+    SKY (measured here)   220.4   537.7   817.3   1123.9
+    literature values     220     540     810
+    sky      l_A = 298.4   phi/pi = -0.2404
+    control  l_A = 296.5   phi/pi = -0.2361
+    offset = 0.0043 = 0.7% of the 0.615 gap
+
+⇒ ***The measured peaks reproduce the literature values to better than 1% **and were not fitted to them**. Both series are now measured by the same procedure, so **r2990's methodology objection is discharged**.***
+
+**⌗ AND IT MOVES THE ANSWER IN THE DIRECTION OF THE GAP:** *literature-vs-CAMB gave 0.0101; **like-for-like gives 0.0043** — less than half. ***The methodology difference was real and was inflating the substitution error, not the disagreement.***
+
+⇒ ***So clause two passes both checks on like-for-like footing: 76 sigma statistical, and a substitution error of 0.7% measured on the sky's own data. **The 0.615 stands as a real disagreement, at ~140x the substitution error.****
+
 ### Revision r2991 — 2026-08-15 (main line). **THE SKY'S OWN SPECTRUM IS IN THE REPO, SO #583 IS RUNNABLE — AND MY FIRST ATTEMPT AT IT IS AN ARTEFACT.**
 
 *The owed item asks for the sky measured B3's way. **Checked whether the data exists**: `computations/planck_tt_likelihood/data/planck2018_plik_lite/cl_cmb_plik_v22.dat` — Planck 2018 plik_lite binned TT, **215 bins from ell 32 to 2500, columns [ell, C_ell, sigma]**.*

@@ -452,3 +452,4 @@ r2988  LATENT      r2987s 0.0103 is unmeasured: one extra peak moves the control
 r2989  LATENT      substitution MEASURED on three peaks: offset 0.0101, 1.6% of the gap. Intercepts unstable, their difference is not.
 r2990  LATENT      the skys peaks are literature values, not a corpus measurement; r2989s substitution check is not like-for-like.
 r2991  LATENT      Planck TT with per-bin errors is on disk; #583 is a script-reuse question. My naive finder gave a spurious 0.678.
+r2992  LATENT      #583 discharged: sky peaks measured (220.4/537.7/817.3), substitution error 0.0043 = 0.7% of the gap.
