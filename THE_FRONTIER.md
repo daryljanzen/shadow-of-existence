@@ -4,11 +4,11 @@
 
 ## ⇒ **3 OPEN · 4 STEPS LEFT** *(was 4 last revision)* **· ~7 turns at current estimates**
 
-## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
+## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 1**
 
-*⌗ **LAST ACTUAL MOVE — r2982: asked P15s maturity marks of each of the three. **r2907s 'three argued results await the transfer' is right for ONE.** ① the coherence mechanism — confirmed ARGUED. ⛔ ② the low-ell floor — **ESTABLISHED**, and P15s established list also contains **the flat-projection transfer and the driving equality that carries the peak heights**. ③ the damping signature — **marked NEITHER**. ⇒ The register carried a three-item debt the paper does not.***
+*⌗ **LAST ACTUAL MOVE — r2983 was not a zero — a false alarm, retracted. A locating search said one of r2982s quotations **appeared only in my own entries**; auditing all six with normalisation on BOTH sides showed **every one present**. The search matched raw file text while the extraction had stripped LaTeX and collapsed whitespace. ⇒ **A string can be present under one normalisation and absent under another.** Protocol §⑤·9 added: an audit must normalise the source the way the extraction did. Last actual move: r2982.***
 
-> ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
+*⚠ **Above 0 means the last turn advanced a step without learning the space. Pick the row held LEAST well next, not the one nearest closing.***
 
 **RUNWAY: 3 of 3 clear now**; 0 gated ().
 

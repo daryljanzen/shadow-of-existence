@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r2983 — 2026-08-15 (main line). **I ACCUSED MYSELF OF FABRICATING A QUOTATION AND THE ACCUSATION WAS WRONG. ALL SIX OF r2982's QUOTATIONS ARE IN THE SOURCE.**
+
+*A "where does this live" search reported that "Argued: the coherence mechanism" **appeared only in my own entries** — so I audited every quotation in r2982 against the corpus with normalisation applied to **both sides**.*
+
+⇒ ***All six verify: the argued heading, the sec:coherence attribution, the geometric phase-fixing clause, the established list, "the load-bearing piece is established", and "the time-reversal driving equality". **r2982 stands unchanged.****
+
+**⛔ AND THE FALSE ALARM'S CAUSE IS WORTH MORE THAN THE ALARM:** *the locating search matched **raw file text** while the extraction that found the quotes had **stripped LaTeX commands and collapsed whitespace**. ***The same string is present under one normalisation and absent under the other, so a search can report "this exists only in your own writing" about text plainly in the paper.***
+
+**⚠ AND THE RULE:** *`TURN_PROTOCOL` §⑤·9 — **an audit must normalise the source the way the extraction did, or it tests the normaliser rather than the claim**. This is §⑤·6's failure arriving as a **FALSE POSITIVE** rather than a false clean, and the cost is higher: the conclusion it invited was a fabrication finding against the register's own record.*
+
 ### Revision r2982 — 2026-08-15 (main line). **ASKED OF EACH OF THE THREE, AND r2907's "THREE ARGUED RESULTS AWAIT THE TRANSFER" IS RIGHT FOR ONE OF THREE.**
 
 *Checked P15's own maturity marks rather than the register's summary of them.*

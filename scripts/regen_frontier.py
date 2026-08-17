@@ -40,13 +40,13 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 0
-LASTFIND = ("r2982: asked P15s maturity marks of each of the three. **r2907s 'three argued results "
-            "await the transfer' is right for ONE.** ① the coherence mechanism — confirmed ARGUED. "
-            "⛔ ② the low-ell floor — **ESTABLISHED**, and P15s established list also contains **the "
-            "flat-projection transfer and the driving equality that carries the peak heights**. "
-            "③ the damping signature — **marked NEITHER**. ⇒ The register carried a three-item "
-            "debt the paper does not.")
+SINCE = 1
+LASTFIND = ("r2983 was not a zero — a false alarm, retracted. A locating search said one of r2982s "
+            "quotations **appeared only in my own entries**; auditing all six with normalisation on "
+            "BOTH sides showed **every one present**. The search matched raw file text while the "
+            "extraction had stripped LaTeX and collapsed whitespace. ⇒ **A string can be present "
+            "under one normalisation and absent under another.** Protocol §⑤·9 added: an audit must "
+            "normalise the source the way the extraction did. Last actual move: r2982.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

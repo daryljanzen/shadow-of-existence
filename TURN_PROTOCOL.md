@@ -161,6 +161,21 @@ the signal, not the flag.***
 
 ---
 
+## ⑤·9 AN AUDIT MUST NORMALISE THE SOURCE THE WAY THE EXTRACTION DID
+
+***Added r2983.*** *A locating search reported that a quotation appeared **only in my own entries** and
+not in the paper. Auditing all six of that revision's quotations with normalisation applied to **both
+sides** showed **every one present**. The search had matched raw file text while the extraction that
+found the quotes had stripped LaTeX commands and collapsed whitespace.*
+
+⇒ ***The same string can be present under one normalisation and absent under another, so a search can
+report "this exists only in your own writing" about text plainly in the source.***
+
+⚠ *This is §⑤·6's failure arriving as a **FALSE POSITIVE** rather than a false clean — and the cost is
+higher, because the conclusion it invited was a fabrication finding against the register's own record.*
+
+---
+
 ## ⑥ THE REPORT — the board LAST, computed after the work
 
 *Find first, board second. **Never a slogan in place of the table**, never the estimates without the
