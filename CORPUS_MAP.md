@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3005 — 2026-08-15 (main line). **STAGE ONE, P15 — ALL FOUR RESULTS WRITTEN IN. COMPILES.**
+
+**① THE FULL-SPECTRUM REFIT**, *at the sentence that deferred it ("turns on a parameter refit … which is what remains open"): the refit **has since been performed** — 215 bins, same five parameters free in each arm, published covariance, **chi2 = 397.13 against 206.44, so 1.891 and 0.983 per dof and Delta chi2 = 190.7**. Written with the verdict stated as it stands: **the spectrum derived here is disfavoured against the standard model on this data**, and what it measures is the five-parameter fit rather than the geometry.*
+
+**② THE ODD/EVEN PATTERN**, *at the baryon-loading sentence: **P1/P2 = 2.185 here against 2.200 for flat LambdaCDM, and 2.2564 ± 0.0772 measured the same way on the sky** — both within about one sigma, differing from each other by a fifth of its uncertainty, **checked at the level of C_ell rather than the driving, where the loading ratio alone would give 3.5**.*
+
+**③ THE SKY'S PEAKS, MEASURED**, *replacing quoted standard values: **220.4, 537.7, 817.3, 1123.9** from the Planck binned spectrum by parabolic fit, **reproducing the standard values to better than one per cent without being fitted to them**.*
+
+**④ THE 0.615 DEFICIT**, *with its statistics: the control stands in for the sky **to within seven parts in a thousand of the disagreement it measures**, and a one-multipole position uncertainty gives **sigma ≈ 0.008**, so the separation is **of order seventy sigma and not a resolution effect**. Written as **a real disagreement with the sky**.*
+
+⌗ *86 pages, zero errors.*
+
 ### Revision r3004 — 2026-08-15 (main line). **THE PLAN WAS BACKWARDS IN TWO WAYS; CORRECTED.**
 
 **⛔ ① It proposed a NEW authoritative section stating the whole problem space.** *`P7`'s frontier section **IS** that section. **Building a second one is inventing a duplicate of a thing that exists.***

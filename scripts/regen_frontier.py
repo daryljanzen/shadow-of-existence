@@ -37,13 +37,11 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3004 (Daryl caught it): **the plan was backwards in two ways.** It proposed a NEW "
-            "authoritative section when **P7s frontier section IS that section**, and it proposed "
-            "**rewriting frontier items into statements of results, which inverts what a frontier "
-            "section is for**. ⇒ The order is **substance into the owning papers FIRST** (four "
-            "results into P15, one into P10, two into P14/matter_sector), **then P7s frontier "
-            "items shrink to the residue** — which for scalar is the measured disagreements "
-            "themselves.")
+LASTFIND = ("r3005: **STAGE ONE, P15 — all four results written in and the paper compiles.** The refit "
+            "(Delta chi2 = 190.7, stated as a disfavouring verdict), the odd/even pattern (2.185 vs "
+            "2.200, sky 2.2564 ± 0.0772), the skys peaks measured (220.4/537.7/817.3/1123.9), and "
+            "the 0.615 deficit with its ~70 sigma and its 0.7% substitution error. **Both directions "
+            "carried.** Next: P10, then P14/matter_sector.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

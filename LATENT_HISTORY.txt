@@ -465,3 +465,4 @@ r3001  LATENT      PO-6 STRUCK. THE PROTECTED REGISTER IS EMPTY. What remains is
 r3002  INSTRUMENT  measured: 211 revisions, 2 corpus edits. Four named stale sites. CORPUS_REVISION_OWED opened.
 r3003  INSTRUMENT  THE BAKE planned: 5 spine sites + 1 new section. 455k words but coherence is a spine problem.
 r3004  INSTRUMENT  plan corrected: substance into owning papers FIRST, then P7 frontier shrinks to the residue.
+r3005  CORPUS      Stage One P15: all four results written in — the refit, the odd/even, the measured sky peaks, the 0.615 deficit.
