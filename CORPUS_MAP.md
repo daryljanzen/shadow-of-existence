@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3022 — 2026-08-15 (main line). **THE TEST RUN: THE INITIAL DATA DO CONTROL THE FIRST PEAK, AND MY "CONSISTENT" CHOICE REPRODUCES ONE OF THE PAPER'S OWN READINGS.**
+
+*Found the inconsistency exactly, in the source: **the potential's amplitude is a smooth matched envelope while its velocity is a numerical derivative of the oscillatory closed form** — the two different functions the paper names.*
+
+⇒ *Replaced the velocity with the derivative of the envelope itself, changing **one line** and leaving everything else byte-identical. **Peaks move from 150/360/555/780 to 315/525/780** — the first peak shifts by 165 multipoles, and the run **loses a peak**.*
+
+**⛔ AND 315 IS ONE OF THE PAPER'S FOUR READINGS — {150, 165, 315}.** *So I did not find a fix; **I re-derived one of the known branch points**. The paper had already scanned this axis and recorded the spread.*
+
+**⌗ WHAT THE TEST DOES ESTABLISH:** *the first peak **is set by this initial-data choice and moves 165 multipoles on a one-line change**, while the later gaps stay comparable. That is the displaced-first-peak-with-recovering-series signature, **now reproduced deliberately rather than observed**.*
+
+**⚠ AND WHAT IT DOES NOT:** *neither reading lands near the sky's 220, and **"consistent" is not a single well-defined choice here** — the envelope and the closed form are different objects, and making the velocity match the envelope is **as much a choice as the original mismatch was**. The diagnosis is not closed.*
+
 ### Revision r3021 — 2026-08-15 (main line). **DARYL'S PRIOR IS SUPPORTED BY THE PAPER'S OWN TEXT, AND ONE SIGNATURE PREDICTS WHAT WE MEASURED.**
 
 *He doubted a discrepancy this large is real and suspected an undiagnosed error. **The paper's own account of the instrument gives four signatures, and one of them predicts the exact shape of the defect measured at r3019.***

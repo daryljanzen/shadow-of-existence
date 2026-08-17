@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3021 (Daryls prior, supported): the papers own account gives four instrument signatures, and one **predicts the measured shape**. The first peak is unstable across {150,165,315} under **four readings of the SAME stated IC**; and **the amplitude comes from a smooth matched envelope while the velocity comes from a numerical derivative of the oscillatory closed form — TWO DIFFERENT FUNCTIONS**. ⇒ Wrong PHASE at the right FREQUENCY displaces the first peak and lets the gaps recover: **exactly 168/64/72/32 with gaps 216/280/280**.***
+*⌗ **LAST ACTUAL MOVE — r3022: **ran the test — the initial data DO control the first peak, and my consistent choice reproduces one of the papers own readings.** The inconsistency is real and located: **Psis amplitude is a smooth matched envelope, its velocity a numerical derivative of the oscillatory closed form**. Replacing one line moves the peaks 150/360/555/780 -> 315/525/780. ⛔ **But 315 is one of the papers four readings** — I re-derived a known branch point, not a fix, and neither lands near the skys 220.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3021: the LEADING candidate is now an instrument with INTERNALLY INCONSISTENT initial data -- amplitude and velocity from different functions, which gives the wrong phase at the right frequency and predicts the measured 168/64/72/32. Not yet diagnosed |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3022: the inconsistency is LOCATED in the source (envelope amplitude vs oscillatory-derivative velocity) and the first peak moves 165 multipoles on one line -- but the consistent choice reproduces a known branch point and lands no closer. Not closed |
 
 ---
 
