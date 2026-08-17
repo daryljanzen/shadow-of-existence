@@ -146,6 +146,22 @@ sources: [cowork, chat]
 
 
 
+### Revision r3030 — 2026-08-15 (main line). **THE SOURCE-COMPOSITION CANDIDATE IS ELIMINATED. THE PHOTON DENSITY ALONE CARRIES THE 0.75.**
+
+*The script already had a source diagnostic for this question. Extended it to separate the parts:*
+
+    SW = dg/4 + Psi    k r_s/pi = 0.611 1.240 1.951 2.763    spacing ratio 0.7173
+    dg alone           k r_s/pi = 0.501 1.286 1.933 2.763    spacing ratio 0.7538
+    Psi alone          ZERO extrema — monotonic
+
+⇒ ***So my r3029 candidate is wrong: the combination is not doing it. **The photon density perturbation itself oscillates at three-quarters of the sound frequency**, and the projection and the potential are both exonerated.***
+
+**⌗ AND THAT IS AS DEEP AS ELIMINATION GOES, BECAUSE THE EQUATION IS VERIFIABLY RIGHT:** *the two right-hand-side lines compose to the standard tight-coupling oscillator with frequency exactly k times the sound speed. **The written frequency is correct and the integrated one is 0.75 of it.***
+
+**⚠⚠ WHICH POINTS AT THE NUMERICS — AND THE PAPER HAS ALREADY TESTED THAT:** *"the integrator runs at a stability number of 0.47 against its own limit of 2.8 with at worst 120 steps per acoustic oscillation, and **quadrupling the step count reproduces the peaks exactly**". **So the obvious numerical explanation is closed by a test already on the record.***
+
+⇒ ***The state: nine candidates eliminated by measurement, the governing equation verified correct, the numerics verified converged, and a factor of 1.34 that none of them accounts for.***
+
 ### Revision r3029 — 2026-08-15 (main line). **THE TIME VARIABLE IS ELIMINATED. EVERY INTERNAL QUANTITY NOW CHECKS, AND THE 0.746 SURVIVES.**
 
 *Integrated the sound speed over the propagation span using **the right-hand side's own splines** — the same baryon-loading spline the integrator reads — and compared against the independent quadrature over the scale factor:*

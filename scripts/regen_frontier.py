@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3029: EIGHT candidates eliminated by measurement, including the time variable (ratio exactly 1.0000). The 0.746 survives all of them. Only candidate left standing: the peaks are of the projected SOURCE, not of delta_gamma'),
+        'r3030: NINE candidates eliminated -- delta_gamma alone carries the 0.75, so composition and projection are exonerated. The equation is verifiably omega = k c_s and the numerics are verifiably converged. No candidate I can name honestly'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3029: **the time variable is ELIMINATED — ratio exactly 1.0000.** r_s by quad over a "
-            "and r_s by the RHSs own splines over eta both give 135.46 across the propagation "
-            "span. **So the modes see exactly the sound horizon the script computes and their "
-            "peaks still come out at 0.746 cycles per pi/r_s.** ⇒ Eight candidates now eliminated "
-            "by measurement. **What is left: the peaks are C_ell peaks of the projected SOURCE, "
-            "not extrema of delta_gamma** — untested, and not called the answer.")
+LASTFIND = ("r3030: **source composition ELIMINATED — delta_gamma ALONE carries the 0.75** (ratio "
+            "0.7538; Psi has ZERO extrema and is monotonic). ⇒ My r3029 candidate is wrong. ⌗ And "
+            "**the written equation is verifiably right**: the two RHS lines compose to "
+            "delta_gamma'' = -k^2 delta_gamma/3(1+R_b), exactly omega = k c_s. **The written "
+            "frequency is correct and the integrated one is 0.75 of it** — and the paper already "
+            "showed quadrupling the step count reproduces the peaks exactly.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

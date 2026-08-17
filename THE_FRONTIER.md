@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3029: **the time variable is ELIMINATED — ratio exactly 1.0000.** r_s by quad over a and r_s by the RHSs own splines over eta both give 135.46 across the propagation span. **So the modes see exactly the sound horizon the script computes and their peaks still come out at 0.746 cycles per pi/r_s.** ⇒ Eight candidates now eliminated by measurement. **What is left: the peaks are C_ell peaks of the projected SOURCE, not extrema of delta_gamma** — untested, and not called the answer.***
+*⌗ **LAST ACTUAL MOVE — r3030: **source composition ELIMINATED — delta_gamma ALONE carries the 0.75** (ratio 0.7538; Psi has ZERO extrema and is monotonic). ⇒ My r3029 candidate is wrong. ⌗ And **the written equation is verifiably right**: the two RHS lines compose to delta_gamma'' = -k^2 delta_gamma/3(1+R_b), exactly omega = k c_s. **The written frequency is correct and the integrated one is 0.75 of it** — and the paper already showed quadrupling the step count reproduces the peaks exactly.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3029: EIGHT candidates eliminated by measurement, including the time variable (ratio exactly 1.0000). The 0.746 survives all of them. Only candidate left standing: the peaks are of the projected SOURCE, not of delta_gamma |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3030: NINE candidates eliminated -- delta_gamma alone carries the 0.75, so composition and projection are exonerated. The equation is verifiably omega = k c_s and the numerics are verifiably converged. No candidate I can name honestly |
 
 ---
 
