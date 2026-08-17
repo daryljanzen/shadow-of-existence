@@ -459,3 +459,4 @@ r2995  LATENT      odd/even produced: LCDM 2.200, CR 2.185, sky 2.256+-0.077. Bo
 r2996  LATENT      PO-10 STRUCK: refit performed (Delta chi2 190.7 vs a 0.983/dof control) and odd/even produced. ONE ROW REMAINS.
 r2997  LATENT      the 26.6% orphan is absorbed: it is Delta chi2 = 190.7 without a covariance. OWED empty; one row remains.
 r2998  LATENT      decisively-favouring withdrawn: same 5 params but different provenance; 1.891/dof vs a CR arm at 260/dof at r2965.
+r2999  LATENT      the spectrum is computed both branches (0.25 normal-ordered, 0.75 symmetric); PO-6 owes an ORDERING.

@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2998 (Daryl caught it): **'decisively favouring' is WITHDRAWN.** Both arms fit the SAME five parameters, but **what they DO differs**: LCDMs tune structure a large field built over sixty years; CRs **pin a spectrum DERIVED from the geometry**. And **a factor of two in reduced chi^2 is not decisive for a first derivation** — this register recorded a CR arm at **260/dof** at r2965, so **1.891 is the fact and the ordering hides the magnitude**.***
+*⌗ **LAST ACTUAL MOVE — r2999: **the spectrum IS computed, both branches — this row owes an ORDERING.** S9: **normal-ordered Gamma_min = 0.25 (below 3/4, freedom survives); symmetric N=1 Gamma_min = 0.75 (at 3/4, limit-point)** — opposite answers to the papers own open question. ⛭ And **3/4 = 1/4 + 1/2, the free coefficient plus exactly one zero-point quantum**. P10 never names the ordering, and its decomposition **survives either way** since both occupy both sides. The decomposition is safe; the physical question is not.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -27,7 +27,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-6** | the interacting tower — the STRADDLE, asserted and unverified | **1** | 1 | 4 ⚠ | BUILD | 11 | — | r2976: ONE clause left. Bounded-below ANSWERED (S8); the UV definition MET-NOT-OWED (generic, CRs part 1-dim and shear-limited); Gamma-hats EXISTENCE folds into that (r2975). What remains is the STRADDLE -- CR-specific, load-bearing for P10s decomposition, asserted rather than computed. A BUILD: it needs the interacting spectrum, not a reading |
+| **PO-6** | the interacting tower — the STRADDLE, asserted and unverified | **1** | 1 | 4 ⚠ | BUILD | 11 | — | r2999: the spectrum is COMPUTED in both branches (normal-ordered 0.25, symmetric 0.75) and the straddle holds either way. What is unfixed is the QUANTIZATION ORDERING that selects between them |
 
 ### D · COSMOLOGY — independent, and the only group confronted with data.
 

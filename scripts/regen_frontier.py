@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
  'PO-6':  ('the interacting tower — the STRADDLE, asserted and unverified', 1, 1, 4, None,
-            'r2976: ONE clause left. Bounded-below ANSWERED (S8); the UV definition MET-NOT-OWED (generic, CRs part 1-dim and shear-limited); Gamma-hats EXISTENCE folds into that (r2975). What remains is the STRADDLE -- CR-specific, load-bearing for P10s decomposition, asserted rather than computed. A BUILD: it needs the interacting spectrum, not a reading'),
+            'r2999: the spectrum is COMPUTED in both branches (normal-ordered 0.25, symmetric 0.75) and the straddle holds either way. What is unfixed is the QUANTIZATION ORDERING that selects between them'),
  'PO-10':  ('the scalar remainder — one RUN and one REFIT', 2, 2, 1, None,
             'r2995: BOTH steps discharged -- the full-spectrum refit is banked (CR 1.891/dof vs LCDM 0.983) and the odd/even pattern is produced (2.185 vs 2.200, sky 2.256 +- 0.077)'),
 }
@@ -39,12 +39,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2998 (Daryl caught it): **'decisively favouring' is WITHDRAWN.** Both arms fit the SAME "
-            "five parameters, but **what they DO differs**: LCDMs tune structure a large field "
-            "built over sixty years; CRs **pin a spectrum DERIVED from the geometry**. And **a "
-            "factor of two in reduced chi^2 is not decisive for a first derivation** — this "
-            "register recorded a CR arm at **260/dof** at r2965, so **1.891 is the fact and the "
-            "ordering hides the magnitude**.")
+LASTFIND = ("r2999: **the spectrum IS computed, both branches — this row owes an ORDERING.** S9: "
+            "**normal-ordered Gamma_min = 0.25 (below 3/4, freedom survives); symmetric N=1 "
+            "Gamma_min = 0.75 (at 3/4, limit-point)** — opposite answers to the papers own open "
+            "question. ⛭ And **3/4 = 1/4 + 1/2, the free coefficient plus exactly one zero-point "
+            "quantum**. P10 never names the ordering, and its decomposition **survives either "
+            "way** since both occupy both sides. The decomposition is safe; the physical question "
+            "is not.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

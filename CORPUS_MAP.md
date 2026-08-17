@@ -146,6 +146,23 @@ sources: [cowork, chat]
 
 
 
+### Revision r2999 — 2026-08-15 (main line). **THE SPECTRUM IS COMPUTED, BOTH BRANCHES. `PO-6` OWES AN ORDERING, NOT A SPECTRUM.**
+
+*Looked for the pieces before calling it research — the fourth time, and the fourth time they were there. `S9_the_ordering_decides_it`, uncited on the row:*
+
+    normal-ordered      Gamma_min = 0.25    BELOW 3/4  ->  limit-circle, freedom SURVIVES
+    symmetric, N=1      Gamma_min = 0.75    AT 3/4     ->  limit-point from one mode up
+
+⇒ ***The two orderings give **opposite answers to the paper's own open question**.***
+
+**⛭⛭ AND THE THRESHOLD IS NOT ARBITRARY:** *3/4 = 1/4 + 1/2 — **the free boundary coefficient plus exactly one zero-point quantum**. Named, not built on.*
+
+**⌗ AND P10 NEVER NAMES THE ORDERING** — *"normal-order" and "symmetric order" both appear zero times — but its decomposition **survives either way**, since it "uses only that both sides of the threshold are occupied", **and both orderings occupy both sides**. ***The decomposition is safe; the physical question is not.***
+
+⇒ ***So the last step on the board is not "compute the interacting spectrum": **the spectrum is computed, in both branches. What is unfixed anywhere in the corpus is the QUANTIZATION CONVENTION that selects between them.****
+
+**⚠ And it confirms the r2972 paper edit from an angle I did not have:** *the straddle **is** what the decomposition assumes, and **S9 shows it is satisfied under either ordering** — so the edit names the right assumption and that assumption holds.*
+
 ### Revision r2998 — 2026-08-15 (main line). **"DECISIVELY FAVOURING" IS WITHDRAWN — DARYL OBJECTED AND THE OBJECTION HOLDS.**
 
 **⛭⛭ ① THE COMPARISON IS NOT APPLES TO APPLES, AND THE ASYMMETRY RUNS THE OTHER WAY FROM HOW I PUT IT.** *Both arms fit the **same five parameters**, so the fit is like-for-like. **What is not like-for-like is what those parameters are doing.** LambdaCDM's five **tune** a transfer function, acoustic physics, damping tail and projection built by a large field over sixty years. CR's five **pin a spectrum derived from the geometry**, with the suppression coming from cr_supp rather than a fitted shape. ***The structures compared have vastly different research provenance, and a reduced-chi-squared ratio does not encode that.***
