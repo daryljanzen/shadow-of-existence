@@ -180,7 +180,7 @@ requirement can be NECESSARY AND NOT SUFFICIENT, and only supplying it shows whi
 against it — which is the only kind of evidence a self-scoring programme can offer that its scoring is not
 decorative.***
 
-## ⛭⛭ ENTRY: A RE-WEIGHTING THAT MADE A FRONTIER HARDER — `L-165`/PO-6, r2465
+## ⛭⛭ ENTRY: A RE-WEIGHTING THAT MADE A FRONTIER HARDER — `L-165`/PO-6, r2465 ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 
 *The register recorded PO-6 as **"shrunk by one clause of three"** at c54.129: $\hat\Gamma$ bounded below.*
 ⇒ ***P10 carries a receipt saying the argument does not need that clause*** *— "it does not need a lower bound"; the

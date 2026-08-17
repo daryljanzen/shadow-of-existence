@@ -67,10 +67,10 @@ without fixing what is still sitting there owed?"**
 | **`L-814`** | QUESTION · — |
 | ~~**`L-815`**~~ ⛭ **⟨STRUCK r2993 with `PO-7`: both clauses answered — the phase FORCED then DERIVED, and the $0.615$ deficit real at $76\sigma$ with a $0.7\%$ substitution error on Planck's own data.⟩** | QUESTION · OPEN |
 | **`L-816`** | QUESTION · — |
-| **`L-818`** | QUESTION · OPEN |
-| **`L-819`** | QUESTION · OPEN |
+| ~~**`L-818`**~~ ⛭ **⟨STRUCK r3001 with `PO-6`.⟩** | QUESTION · OPEN |
+| ~~**`L-819`**~~ ⛭ **⟨STRUCK r3001 with `PO-6`.⟩** | QUESTION · OPEN |
 | ~~**`L-820`**~~ ⛭ **⟨STRUCK r2996 with `PO-10`.⟩** | QUESTION · — |
-| **`L-821`** | QUESTION · — |
+| ~~**`L-821`**~~ ⛭ **⟨STRUCK r3001 with `PO-6`.⟩** | QUESTION · — |
 | ~~**`L-822`**~~ ⛭ **⟨STRUCK r2993 with `PO-7`.⟩** | QUESTION · — |
 | ~~**`L-823`**~~ ⛭ **⟨STRUCK r2993 with `PO-7`.⟩** | QUESTION · — |
 | ~~**`L-824`**~~ ⛭ **⟨STRUCK r2996 with `PO-10`.⟩** | QUESTION · — |

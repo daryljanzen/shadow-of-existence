@@ -54,7 +54,7 @@ tractable item with low reach is a good turn and a bad decade.***
 statement, and P14's **multiplicity** gap — ***one calculation, three names***.*
 *· **`PO-seam`'s progenitor derivation** is `PO-7`'s live route ⓷ — ***one derivation, two items, and it
 fixes their ORDER***.*
-*· `L-207`'s B·2 unlocks on `PO-6`; `PO-12`'s transfer is what makes the 8% signature confrontable.*
+*· `L-207`'s B·2 unlocks on `PO-6`; `PO-12`'s transfer is what makes the 8% signature confrontable.* ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 
 ⇒ ***Convergence is why the order has been obvious: the highest-convergence item has been visibly next
 each time. When two items tie on convergence, the order stops being obvious — and that is the moment this

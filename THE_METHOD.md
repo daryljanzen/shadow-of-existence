@@ -129,7 +129,7 @@ so that is visible rather than comfortable.*
 **⌗ AND A VEIN'S DARK HALF IS GATED NOW, NOT JUST WARNED ABOUT — added r2538.**
 
 *`THE_METHOD` has said since r2505 that **a vein's DARK half is the highest-risk prose in the corpus**, because it
-is where a local negative gets silently globalised.* ⇒ ⛔ ***And at r2537 `PO-6`'s dark half still read "what selects
+is where a local negative gets silently globalised.* ⇒ ⛔ ***And at r2537 `PO-6`'s dark half still read "what selects ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 among FIVE-component shears without assuming vacuum" — with BOTH halves withdrawn: c54.198 made the count TWO, and
 c54.199 showed Goldberg–Sachs governs the OPTICAL shear, not $\sigma^{TT}$ at all. Twenty-seven revisions, in the
 one document written to tell a node what is unknown.***

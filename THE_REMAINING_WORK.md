@@ -66,7 +66,7 @@ is not abstract; it has a geometric realisation with a bounded order parameter**
 
 ---
 
-## ⓶ `PO-6` (`L-165`) · **DEFINING THE SUM · THE CLOSED-FORM $\Lambda>0$ SOLUTION · CAN ONE CONSTANT REGULATE**
+## ⓶ `PO-6` (`L-165`) · **DEFINING THE SUM · THE CLOSED-FORM $\Lambda>0$ SOLUTION · CAN ONE CONSTANT REGULATE** ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 
 **⌗ THIS VEIN IS THREE QUESTIONS AND THEY ARE NOT THE SAME SIZE.**
 

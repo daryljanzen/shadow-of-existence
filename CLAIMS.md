@@ -184,7 +184,7 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > the receipt checks that it does.
 > *· ⚠ **`corpus/canonical_time.tex` — RELEASED UNWORKED.** *I claimed it for "P10's back-reaction limit if the
 > read reaches it" and the read went to `PO-11` instead.* ⇒ ***Holding a file I did not edit is the second hole
-> this register has, and the fix is to say so rather than to leave the row standing: `PO-6` is untouched by
+> this register has, and the fix is to say so rather than to leave the row standing: `PO-6` is untouched by ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 > c54.214 and the file is free.***
 
 > ⌗ **54's c54.215 ROWS RELEASED HERE, WITH THE WORK — and this time the "if" resolved.** *·

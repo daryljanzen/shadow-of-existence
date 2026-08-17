@@ -84,7 +84,7 @@ must be gate-run here before it counts — a 54 receipt that has never met `lint
     r2666   PO-5    coupling CANNOT come from the colour bundle -- flat holonomy gives phases, never force.
     r2667   PO-5    P14 already walls holonomy AND isometry. Real content: is there a THIRD mechanism?
     r2669   PO-11   obstruction is HORIZON-located, not singularity-located -- the ordinary scattering problem
-    r2671   PO-6    D3 WITHDRAWN on 54's finding. PO-6 is FREE -- 54 has the live thread there.
+    r2671   PO-6    D3 WITHDRAWN on 54's finding. PO-6 is FREE -- 54 has the live thread there. ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
     r2672   ---     CLAIMED: the 14 self-falsifying absence-assertions (my defect, r2670). DONE 40/40.
     r2673   ---     TRIAGE done: 41 timeouts, 21 now-pass, 17 real. Two of the 17 were mine, repaired.
     r2674   ---     cc54 CI blocker cleared: LATENT_HISTORY/TABLE_HISTORY classified RECORD. Mine to fix.
@@ -522,3 +522,4 @@ r2997  LATENT      the 26.6% orphan is absorbed: it is Delta chi2 = 190.7 withou
 r2998  LATENT      decisively-favouring withdrawn: same 5 params but different provenance; 1.891/dof vs a CR arm at 260/dof at r2965.
 r2999  LATENT      the spectrum is computed both branches (0.25 normal-ordered, 0.75 symmetric); PO-6 owes an ORDERING.
 r3000  LATENT      the ordering IS the zero-point question: does the graviton towers vacuum gravitate at the horizon. The cc problem, from inside.
+r3001  LATENT      PO-6 STRUCK. THE PROTECTED REGISTER IS EMPTY. What remains is the cc problem, in local dress.

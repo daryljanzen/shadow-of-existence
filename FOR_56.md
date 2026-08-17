@@ -162,7 +162,7 @@ declaration and therefore gateable — but it has to be declared, not inferred.*
 
 **⌗ 29 · `L-543`'s scope clause is wrong and is withdrawn at `L-544`.** *c54.210 closed with "the tower
 does not live on the substrate — it lives on the layer, whose $\sinh^{2/3}$ Ricci scalar runs", and
-made `PO-6`'s dark half turn on it.*
+made `PO-6`'s dark half turn on it.* ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 ⇒ ⛔ ***P10 states its own background one sentence into the section: "Its closed synchronous slicing is
 the evolving round three-sphere of radius $a(T)=\alpha\cosh(T/\alpha)$ in cosmic time $T$."*** **That
 geometry is exactly de Sitter — $R=12/\alpha^{2}$, constant.** *I put P15's observable rate where P10's

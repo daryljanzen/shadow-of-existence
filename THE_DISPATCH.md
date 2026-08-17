@@ -17,7 +17,7 @@ sources: [chat]
 trajectory carry a phase** are ***the same object***. Folded: **A2** covers both.*
 
 **⓶ AND NO ITEM'S INPUT IS ANOTHER ITEM'S OUTPUT.** *Three groups share a **source** — `P14` for the four
-`PO-5` bridges, `P12` for the two `PO-6` halves, `p0` for two clauses — but* ***a shared source is not a
+`PO-5` bridges, `P12` for the two `PO-6` halves, `p0` for two clauses — but* ***a shared source is not a ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 dependency: none of the four bridges needs another's answer, and the measure question does not need the
 one-loop result.***
 ⇒ ***So all fifteen can run in parallel, and a node blocked on one is not blocked on any other.***

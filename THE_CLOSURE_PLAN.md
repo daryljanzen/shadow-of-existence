@@ -28,7 +28,7 @@ sources: [chat]
 | **`L-218`** A14 | three steps; ***the third is an afternoon*** | mine, then anyone |
 | **`L-218`** A15 | ***editorial*** — draw it from `CREDO` | **Daryl** |
 | **`PO-5`** | ⛔ ***open physics*** — three bridges failed on one number; the mod-2 index untouched | *nobody, on a schedule* |
-| **`PO-6`** | ⛔ ***open physics*** — the interacting tower, the sub-leading divergences | *nobody, on a schedule* |
+| **`PO-6`** | ⛔ ***open physics*** — the interacting tower, the sub-leading divergences | *nobody, on a schedule* | ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 | **`PO-2`** | ⛔ ***open physics*** — the Nariai/three-quark lead | *nobody, on a schedule* |
 | **`PO-3`** | ⛔ ***open physics*** — why a zero-sum triple with $\mathbf3/\bar{\mathbf3}$ doubling | *nobody, on a schedule* |
 | **`PO-4`** | ⛔ ***open physics*** — the colour and isospin structure | *nobody, on a schedule* |

@@ -11,7 +11,7 @@ current: r2676+c54.211
 ***it empties it***. Every rung above the last is a plane section and therefore scale-only, so the
 substrate's dimension is unbounded above **because nothing below can see the difference**. The
 `CUT→DYNAMICS` guard is a consequence, not a rule of conduct.*
-*· **`PO-6` NARROWED TWICE.** *The floor question was answered affirmatively and had been since r2419
+*· **`PO-6` NARROWED TWICE.** *The floor question was answered affirmatively and had been since r2419 ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 (`L-542`); and the UV half now has a structural answer — **the counterterm basis is one-dimensional
 because the admitted background family is** (`L-543`), on the free tower's own de Sitter slicing
 (`L-544`). ⇒ **What remains is the coupled sector, where the scale factor is quantized and there is no

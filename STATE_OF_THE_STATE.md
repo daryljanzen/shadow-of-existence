@@ -69,7 +69,7 @@ proton/neutron content the row is reaching for?**
 
 *Why this one: it is **the only next step in the register that is a computation rather than a read**.
 Everything else open is either gated (`PO-2`→`PO-5`→`PO-11`), someone else's build (`PO-11`'s continuum,
-cc54), or a question that has to be posed before it can be worked (`PO-6`'s joint satisfiability,
+cc54), or a question that has to be posed before it can be worked (`PO-6`'s joint satisfiability, ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 `PO-10`'s scope-of-M2). ⌗ **And the corpus has just been shown to establish the horn's isospin reading** ⛭⛭ **⟨STRUCK r2996 — the full-spectrum refit performed (215 bins; CR $1.891$/dof vs $\Lambda$CDM $0.983$/dof, $\Delta\chi^2=190.7$) and the odd/even pattern produced ($2.185$ vs $2.200$, sky $2.256\pm0.077$). `kills/PO-10.md`.⟩**
 — `P03_winding_and_closure` records $T\to$ weak isospin, P14 says it "is not a guess" — so the candidate
 is standing on built ground and only the count is untested.*

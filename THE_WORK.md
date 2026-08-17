@@ -374,7 +374,7 @@ acoustic correspondence and the verdict last.
 *· **PAPER WORK, banked** — the trans-Planckian scoping into P1 with its non-boundedness and its
 millisecond timescale (`L-531`); the de Sitter entropy into p0, and it is the cosmological-constant
 factor (`L-532`); p0's frontier datum written as a result (`L-530`); `PO-9` emptied into P12 (`L-533`);
-the three-bridge ceiling into P14 (`L-534`); and `PO-6`'s UV half into P10 (`L-543`).*
+the three-bridge ceiling into P14 (`L-534`); and `PO-6`'s UV half into P10 (`L-543`).* ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 *· **CORRECTIONS OF OTHER WORK** — `D3`'s floor conclusion, wrong for twenty revisions (`L-542`); and
 `FOR_54` item 30's twelve, a complete false-positive class (`L-545`).*
 *· **CORRECTIONS OF MY OWN** — `L-535` withdrawn as a class (it is one instance); and `L-543`'s scope

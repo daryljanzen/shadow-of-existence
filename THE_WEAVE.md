@@ -16,7 +16,7 @@ almost every finding was the register mis-holding what the corpus already had.**
 $R\circ K$ is $C$'s **kinematic face**, exact on the wall mode. `PO-1c` — the thirds **forced with no SM
 input**, and the closure rule **agreeing 11 of 11 with the observed hadron spectrum**. `PO-5` — triality
 computed on `prop:wall`'s own solution **before it was asked to mean anything**, and an explanation of
-P14's unaccounted "anomaly-free only as a complete set". `PO-6` — the floor **answered YES**, the
+P14's unaccounted "anomaly-free only as a complete set". `PO-6` — the floor **answered YES**, the ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 coefficient positive for the **complete** operator. `PO-7` — $\ell_A$ preserved to **$+0.075\%$** while ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
 $D_M$ and $r_s$ each fall over $6\%$, **claimed in advance and untuned**.*
 

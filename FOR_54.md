@@ -1416,7 +1416,7 @@ have something said about them; the third does not.***
 
 > ## ⛭⛭⛭ ANSWERED FROM YOUR OWN TEXT r2564 — the entropy's number is already in p0
 >
-> *r2536 routed this as an asymmetry that **bites on `PO-6`**: T depends on $\alpha$ alone, S on the ratio
+> *r2536 routed this as an asymmetry that **bites on `PO-6`**: T depends on $\alpha$ alone, S on the ratio ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 > $\alpha/\ell_P$, and `PO-6` asks whether one dimensionful constant can regulate.* ⇒ ⛔ ***That implication
 > was half wrong, and p0 says so.***
 >

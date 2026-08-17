@@ -19,8 +19,6 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
- 'PO-6':  ('the interacting tower — the STRADDLE, asserted and unverified', 1, 1, 4, None,
-            'r3000: the ordering IS the zero-point question -- normal says the towers vacuum contributes nothing, symmetric says 1/2 per mode. A named instance of the cc problem, reached from inside the construction'),
  'PO-10':  ('the scalar remainder — one RUN and one REFIT', 2, 2, 1, None,
             'r2995: BOTH steps discharged -- the full-spectrum refit is banked (CR 1.891/dof vs LCDM 0.983) and the odd/even pattern is produced (2.185 vs 2.200, sky 2.256 +- 0.077)'),
 }
@@ -39,13 +37,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3000: **why P10s ordering-robustness does not reach the tower, and what the ordering "
-            "question IS.** P10: the free scale factor attains gamma = 1/4 **across the natural "
-            "ordering family** — ordering-INDEPENDENT. S9: the tower gives 0.25 vs 0.75. **The "
-            "difference is exactly the zero-point quantum the free case does not have** — hence "
-            "3/4 = 1/4 + 1/2. ⇒ **'Which ordering?' IS 'does the graviton towers zero-point energy "
-            "gravitate at the horizon?'** — the cc problem, reached from inside CRs own "
-            "construction.")
+LASTFIND = ("r3001: **`PO-6` STRUCK — all three clauses answered.** The spectrum COMPUTED in both "
+            "branches (0.25 normal-ordered, 0.75 symmetric, with 3/4 = 1/4 + 1/2); bounded below "
+            "**YES**; the UV definition **met, not owed**, on a one-dimensional counterterm basis. "
+            "⇒ What remains is **not in the object**: which ordering — and that IS **does the "
+            "graviton towers zero-point energy gravitate at the horizon**, the cc problem, with "
+            "the decomposition surviving either way. **THE BOARD IS EMPTY.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
@@ -65,12 +62,12 @@ LASTFIND = ("r3000: **why P10s ordering-robustness does not reach the tower, and
 # are declared unmeasured rather than dressed as measured. ***
 KIND = {'PO-2': 'READ',
         'PO-1b': 'READ',
-        'PO-6': 'BUILD', 'PO-10': 'READ'}
+        'PO-10': 'READ'}
 
-ORDER = ['PO-6', 'PO-10']
+ORDER = ['PO-10']
 GROUP = {'PO-2': 'A',
          
-         'PO-6': 'C', 'PO-10': 'D'}
+         'PO-10': 'D'}
 GNAME = {'A': 'THE CHAIN — one unbuilt sector, two consequences. Strictly ordered.',
          'B': 'THE 2+1 CLUSTER — four readings of two splits. Independent of A.',
          'C': 'THE QUANTUM SECTOR — independent.',

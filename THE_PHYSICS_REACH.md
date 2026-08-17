@@ -50,7 +50,7 @@ its Gibbons–Hawking state, $\beta=2\pi\alpha$*** *— confirmed against r2527'
 ⇒ ***And its entropy is never taken: $S=A/4=\pi(\alpha/\ell_P)^2$.***
 
 **⇒⇒ THE POINT:** *$T=1/2\pi\alpha$ depends on $\alpha$ **alone**; $S=\pi(\alpha/\ell_P)^2$ depends on the
-**ratio** — and `PO-6` asks whether **one** dimensionful constant can regulate.* ⇒ ***The corpus takes the quantity
+**ratio** — and `PO-6` asks whether **one** dimensionful constant can regulate.* ⇒ ***The corpus takes the quantity ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 that leaves its own open question untouched.*** *Routed as item 52.*
 
 ⚠ *Not claimed that the entropy **should** be asserted — **whether $S=A/4$ applies on this reading is what would have

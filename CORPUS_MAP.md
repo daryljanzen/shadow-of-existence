@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3001 — 2026-08-15 (main line). **`PO-6` STRUCK. THE PROTECTED REGISTER IS EMPTY.**
+
+**⛭⛭ ① THE SPECTRUM — computed in both branches.** *Normal-ordered Gamma_min = 0.25 (below three-quarters, limit-circle); symmetric N=1 Gamma_min = 0.75 (at the threshold, limit-point). **And the threshold is not arbitrary: 3/4 = 1/4 + 1/2, the free boundary coefficient plus exactly one zero-point quantum.***
+
+**⛭⛭ ② BOUNDED BELOW — YES.** *The complete operator's coefficient is positive wherever the metric is non-degenerate, so the boundary coefficient is a sum of squares.*
+
+**⛭⛭ ③ THE UV DEFINITION — MET, NOT OWED.** *The standard problem of the interacting theory, with CR's part **bounded to a one-dimensional counterterm basis by conformal flatness**, three-dimensional only at second order in the shear.*
+
+**⌗ AND WHAT REMAINS IS NOT IN THE OBJECT:** *the two orderings differ **exactly by the tower's zero-point energy**, so ***"which ordering?" IS "does the graviton tower's zero-point energy gravitate at the horizon?"*** — **a named instance of the cosmological-constant problem, reached from inside CR's own boundary coefficient**.*
+
+⇒ ***And the decomposition survives either way: P10 uses only that both sides of the threshold are occupied, and both orderings occupy both sides. **The choice does not change what the construction delivers** — `PO-2`'s shape exactly.***
+
 ### Revision r3000 — 2026-08-15 (main line). **WHY P10's ORDERING-ROBUSTNESS DOES NOT REACH THE TOWER, AND WHAT THE ORDERING QUESTION ACTUALLY IS.**
 
 *P10 on the FREE case: "**the scale-factor Hamiltonian carries deficiency indices (1,1) INDEPENDENTLY OF OPERATOR ORDERING — the inverse-square coefficient at the origin attaining gamma = 1/4 ACROSS THE NATURAL ORDERING FAMILY**". So for the scale factor the answer is ordering-independent.*

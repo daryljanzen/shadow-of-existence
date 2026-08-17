@@ -173,7 +173,7 @@ reading the compound form until r2550.***
 | `THE_PHYSICS_REACH.md` | The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521, OWE DISCHARGED r2527+c54.202 (two companions remain); ⑥ WALKED r2522 (a one-clause fix, item 48); ⑦ WALKED r2536 (the entropy asymmetry, item 52); *… |
 | `THE_PLAN.md` | The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance |
 | `THE_PRY_APART_CENSUS.md` | Which apparent ONE is TWO things a conflation welded? — the corpus-wide pry-apart census, the dual of the equivalence census. Read BEFORE trusting a standard identification. ⚠ Its own comb is OWED: 'OTHER homes to be FOUND by combing'. |
-| `THE_QUANTUM_JOINT.md` | The QM sketchpad — a NOTEBOOK, not a ledger: draw the pipe-extensions as far as the evidence suggests, run the rigour alongside as the eraser and not the doorman. Nothing here is a banked corpus result. Register: cluster-J germs were struck c54.117; the quantum tower is L-165 = PO-6. |
+| `THE_QUANTUM_JOINT.md` | The QM sketchpad — a NOTEBOOK, not a ledger: draw the pipe-extensions as far as the evidence suggests, run the rigour alongside as the eraser and not the doorman. Nothing here is a banked corpus result. Register: cluster-J germs were struck c54.117; the quantum tower is L-165 = PO-6. ⛭⛭ **⟨STRUCK r3… |
 | `THE_RECEIPT_AUDIT.md` | The receipt audit — what each receipt COMPUTES against what it ASSERTS in verdict-prose (the ◐ category). |
 | `THE_STAGED_REVISIONS.md` | (declared in frontmatter) |
 | `THE_WEAVE.md` | How the parts are one object — the per-paper orchestration grid and the record of what joins to what |

@@ -58,7 +58,7 @@ across thirteen papers**, and P7's is **35% "moved below the list"** — settled
 says it is not done. **For each of the thirteen: which paragraphs state an OPEN edge and which a RESOLVED one.***
 
 **⛔ UNBOUNDED — finishes when the physics does, and no schedule applies.** *Six.*
-*`PO-2` · `PO-3` · `PO-4` · `PO-5` · `PO-6` · `PO-seam`. **Each is MAPPED — it names what would move it — and that
+*`PO-2` · `PO-3` · `PO-4` · `PO-5` · `PO-6` · `PO-seam`. **Each is MAPPED — it names what would move it — and that ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 is the most that can be true of them.***
 
 **⌗ AFTER — does not begin until the above is done.** *The book structure, the reader package's step 3 (pandoc), the

@@ -23,7 +23,7 @@ caught every one); a **conflict marker survived into `range_paper.tex`** and bro
 > node should check each item against the current papers before executing it***, *because four fronts have moved
 > since: **the lensing build (c54.183), the wavenumber range (c54.186), the seam datum (c54.187–188), and the
 > $F_2$ floor (c54.188)**.*
-> ⇒ *And on this line's side, `PO-5`, `PO-6` and `PO-9` were all narrowed at r2464–r2476, so any staged item that
+> ⇒ *And on this line's side, `PO-5`, `PO-6` and `PO-9` were all narrowed at r2464–r2476, so any staged item that ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 > assumes those rows untouched needs re-reading first.*
 
 

@@ -53,7 +53,7 @@ Fifteen live items are now listed there.
 ## ⌗ WHAT IS OPEN — *fifteen items; the full table is in `THE_WORK.md`*
 
 Five live fronts under four register rows — the over-determination (`L-150`), the two acoustic-peak routes
-(`L-171`/`PO-7`), the graviton tower's UV definition (`L-165`/`PO-6`), the closed-form nonlinear ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩**
+(`L-171`/`PO-7`), the graviton tower's UV definition (`L-165`/`PO-6`), the closed-form nonlinear ⛭⛭ **⟨STRUCK r2993 — both clauses answered: the phase is FORCED then DERIVED, and the $0.615$ deficit is a real disagreement at **$76\sigma$** with a **$0.7\%$** substitution error measured on Planck's own spectrum. `kills/PO-7.md`.⟩** ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 $\Lambda>0$ solution (`L-165`), and the likelihood verdict (`L-147`, fenced, last) — beside ten
 `check_kills`-protected items: `PO-1a`–`PO-1d`, `PO-2`–`PO-5` (the matter sector), `PO-8` (the
 reassignment remainder) and `PO-9` (the dimensional descent).

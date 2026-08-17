@@ -146,7 +146,7 @@ IN-FLIGHT: c54.229
     line's `L-174` was `PO-5`. **`THE_HUB` had called it a near-miss twice by luck.** This line yielded: the row
     moved to **`L-221`** and every live citation was repointed. **The bands were corrected and the gate rewritten**
     — see `THE_HUB`.*
-  - ⌗ *And the fork's `L-174` **splits `A·1` into an ungated classical half and a `PO-6`-gated non-perturbative
+  - ⌗ *And the fork's `L-174` **splits `A·1` into an ungated classical half and a `PO-6`-gated non-perturbative ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
     half** — **exactly the split this line made at `L-207` at r2383**. Two lines, same map item, same split,
     different IDs.*
   - ⌗ **`FOLD52_ASSESSMENT.md` arrived** — the 52/53 acoustic fold, and it carries the strongest corroboration this

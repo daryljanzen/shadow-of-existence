@@ -142,7 +142,7 @@ is**.*
 
 *· **`L-206`** — genuinely held by Daryl, and it says so in its own words ("⏸ HELD BY DARYL r2381 —
 deliberately"). **The only such row on the board.***
-*· **`L-207` ⓶** — gated on `PO-6` and must not be opened without it.*
+*· **`L-207` ⓶** — gated on `PO-6` and must not be opened without it.* ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 *· **The three gate requests** (`L-220`, the prose-duplicate scanner, the travelling-finding detector) —
 **each is one declaration away and the declaration is the other party's to make**. Routed as items 30, 34, 35.
 **Do not build any of them speculatively.***

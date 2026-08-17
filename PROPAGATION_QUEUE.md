@@ -118,5 +118,5 @@ something else. **Neither is a physics error; both are places a careful reader i
 
 ## ③ REGISTER-ONLY — no corpus implication
 
-*The four one-statement blocks (r2935 group D, r2936 `PO-5`, r2937 `PO-6`). **Nothing in the corpus is
+*The four one-statement blocks (r2935 group D, r2936 `PO-5`, r2937 `PO-6`). **Nothing in the corpus is ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 wrong because of them**; they assemble what was already there.*
