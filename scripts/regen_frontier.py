@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3025: ISOLATED -- the scan computes l_A = 301.6 correctly and propagates peaks at 0.746 of it. Not D_M, not r_s, not stretch, not the ICs: a sound-speed or time-variable error inside the integration'),
+        'r3026: l_A = 301.6 is IMPOSED by solving for z_onset, not computed -- so the script FIXES the acoustic scale and then propagates at 0.746 of it. Next: rs_f stops at a_rec, the propagation runs to 20 a_rec'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3025: **ISOLATED.** The scans own diagnostic: D_M = 13005, r_s = 135.46, l_A = 301.6, "
-            "and pi D/r_s checks exactly — **its acoustic scale is right**. But its propagated "
-            "gaps are 225, **0.746 of its own l_A**. ⇒ Every cosmological candidate is eliminated "
-            "by measurement: not D_M, not r_s, not stretch, not the initial data. **The instrument "
-            "knows the right scale and its modes oscillate at three-quarters of it** — a "
-            "sound-speed or time-variable error inside the integration.")
+LASTFIND = ("r3026: **l_A = 301.6 is NOT computed, it is IMPOSED** — zs = brentq(pi*DM/rs_f(z) - "
+            "301.6), so the onset redshift is solved to hit it. **That corrects my own r3025.** ⌗ "
+            "And it makes the 0.746 sharper: the script **fixes the acoustic scale by "
+            "construction** and then propagates modes oscillating at three-quarters of it — two "
+            "calculations over the same interval with the same R_b, disagreeing by a quarter. ⚠ "
+            "Next test: rs_f stops at a_rec while the propagation runs to 20 a_rec.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

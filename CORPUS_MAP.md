@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3026 — 2026-08-15 (main line). **THE ACOUSTIC SCALE IS NOT COMPUTED, IT IS IMPOSED — WHICH CORRECTS MY OWN r3025.**
+
+*Read the source above the diagnostic line: **the onset redshift is solved by root-finding so that pi times the distance-to-sound-horizon ratio equals 301.6 exactly**.*
+
+⇒ ***So r3025's "its acoustic scale is computed correctly and is right" was wrong. **301.6 is a target the script tunes the onset redshift to hit**, and the ratio "checking exactly" is that tuning closing, not an independent agreement.***
+
+**⌗ AND THAT MAKES THE 0.746 SHARPER, NOT SOFTER:** *the script **fixes the acoustic scale by construction** and then **propagates modes that oscillate at 0.746 of it**. Two calculations over the **same interval** with the **same baryon loading** — the sound-horizon integral and the tight-coupling frequency, which I verified is the correct one — **and they disagree by a quarter**.*
+
+**⚠ ONE STRUCTURAL DIFFERENCE FOUND AND NOT YET TESTED:** *the sound-horizon integral stops at recombination while the propagation runs to twenty times that scale factor. **Whether the peaks are read at last scattering or accumulate past it is the next thing to check**, and it is the kind of interval mismatch that produces exactly a uniform frequency ratio. **Recorded as the next test, not as the answer.***
+
 ### Revision r3025 — 2026-08-15 (main line). **ISOLATED: THE INSTRUMENT COMPUTES THE RIGHT ACOUSTIC SCALE AND PROPAGATES AT 0.746 OF IT.**
 
 *Ran the scan and read its own diagnostic line: **D_M = 13005 Mpc, r_s = 135.46 Mpc, l_A = 301.6** — and pi times their ratio checks exactly. **Its acoustic scale is computed correctly and is right**, against the sky's ~301. But its **propagated** peak gaps are 225, which is **0.746 of its own acoustic scale**.*

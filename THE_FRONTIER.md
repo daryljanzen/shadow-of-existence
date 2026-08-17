@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3025: **ISOLATED.** The scans own diagnostic: D_M = 13005, r_s = 135.46, l_A = 301.6, and pi D/r_s checks exactly — **its acoustic scale is right**. But its propagated gaps are 225, **0.746 of its own l_A**. ⇒ Every cosmological candidate is eliminated by measurement: not D_M, not r_s, not stretch, not the initial data. **The instrument knows the right scale and its modes oscillate at three-quarters of it** — a sound-speed or time-variable error inside the integration.***
+*⌗ **LAST ACTUAL MOVE — r3026: **l_A = 301.6 is NOT computed, it is IMPOSED** — zs = brentq(pi*DM/rs_f(z) - 301.6), so the onset redshift is solved to hit it. **That corrects my own r3025.** ⌗ And it makes the 0.746 sharper: the script **fixes the acoustic scale by construction** and then propagates modes oscillating at three-quarters of it — two calculations over the same interval with the same R_b, disagreeing by a quarter. ⚠ Next test: rs_f stops at a_rec while the propagation runs to 20 a_rec.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3025: ISOLATED -- the scan computes l_A = 301.6 correctly and propagates peaks at 0.746 of it. Not D_M, not r_s, not stretch, not the ICs: a sound-speed or time-variable error inside the integration |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3026: l_A = 301.6 is IMPOSED by solving for z_onset, not computed -- so the script FIXES the acoustic scale and then propagates at 0.746 of it. Next: rs_f stops at a_rec, the propagation runs to 20 a_rec |
 
 ---
 
