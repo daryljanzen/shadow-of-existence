@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3017 — 2026-08-15 (main line). **MY r3005 P15 SENTENCE WAS WRONG AND IS CORRECTED IN THE PAPER. THE DISAGREEMENT SURVIVES ANYWAY.**
+
+**⛔** *`P15_the_phase_moves_with_the_datum_and_only_the_spacing_does_not`: "across four seam phases at production depth the asymptotic acoustic phase spans 0.891 in phi/pi **with the control's 0.263 INSIDE that span**, so the 0.62 pi is **the value at one reading and not a prediction**". ⇒ **A phase intercept matching the sky is reachable within the seam datum's range**, so my "0.615 … a real disagreement with the sky" attributed the disagreement to a quantity that can be moved onto the control.*
+
+**⛭⛭ AND THE HARDER HALF:** *"**the phase-matched reading is STILL SIXTY TIMES THE CONTROL, so the phase was never carrying the disagreement**" — heights moving over 0.48–1.62 and **never reaching the sky's 2.22**, spacing holding at 0.963–0.981 of the acoustic scale throughout. ***Moving the phase onto the control does not rescue the fit; it relocates the problem.***
+
+**⌗ THE PAPER IS CORRECTED AND COMPILES:** *the sentence now states the 0.615 is at the derived datum, that a matching intercept is reachable, that **the residual is still sixty times the control there**, and that **no single quantity named in the section accounts for it** — which is what sec:refit-bound already concluded and what I overwrote.*
+
+**⚠ And the receipt's own rule, unsoftened:** *"**a discrepancy that turns out to rest on a free choice is not a framework verdict either**" — it cuts both ways.*
+
 ### Revision r3016 — 2026-08-15 (main line). **`PO-13`: MY STEP WAS WRONG, THE PAPER ALREADY DID THE WORK, AND IT UNDERCUTS SOMETHING I WROTE INTO P15.**
 
 *Read `sec:refit-bound` whole rather than the one sentence I quoted at r3013.*

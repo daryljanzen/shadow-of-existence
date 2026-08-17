@@ -41,13 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3016: **my step was wrong and the paper already did the work.** The 0.72-0.79 is **the "
-            "first few gaps of a four-peak series**, and **at depth the asymptotic spacing is 0.975 "
-            "of the acoustic scale**. And the phase is not carrying it either — **a free choice in "
-            "the seam datum moves the acoustic phase across the controls own value**. What the "
-            "paper says it is: **a disagreement with the acoustic scale inside the one instrument "
-            "that propagates modes, not caused by the initial data**. ⚠ And it reaches my r3005 "
-            "edit, which states more than this section supports.")
+LASTFIND = ("r3017: **my r3005 P15 sentence was wrong; corrected in the paper.** Four seam phases at "
+            "production depth span 0.891 in phi/pi **with the controls 0.263 INSIDE that span**, so "
+            "a matching intercept is reachable and the 0.62pi is one reading, not a prediction. "
+            "⛭ And the harder half: **the phase-matched reading is STILL SIXTY TIMES THE "
+            "CONTROL**, heights moving 0.48-1.62 and never reaching the skys 2.22, spacing holding "
+            "at 0.963-0.981. **Moving the phase onto the control relocates the problem rather than "
+            "rescuing the fit.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
