@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3032: DOUBLE-COUNTED DRIVING. The rate is radiation-free but Og_of puts radiation back in to drive the potential, while P15 says the driving is inherited in the transmitted amplitude. One line to test'),
+        'r3033: CONFIRMED -- removing the radiation source moves the spacing 0.746 -> 0.8115 but collapses the heights. The term sets BOTH. Correct test: keep Omega_gamma in the plasma, hold Phi to matter-dominated behaviour'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,13 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3032 (Daryls hypothesis, CONFIRMED): **the rate is radiation-free and the "
-            "perturbations are driven as though it is not.** Hub carries NO RADIATION TERM (its "
-            "own comment) — but rt and Og_of **put radiation back in**, feeding the potentials "
-            "decay. And P15: the driving **does not live on an expanding radiation era, which the "
-            "radiation-free rate does not possess** — it is INHERITED in the transmitted "
-            "amplitude. ⇒ **DOUBLE-COUNTED**, which explains every symptom including why no "
-            "parameter I varied could move it.")
+LASTFIND = ("r3033: **ran it — the mechanism is CONFIRMED and the term does TWO JOBS.** Removing the "
+            "radiation species from the potentials source moves the ratio **0.746 -> 0.8115**, a "
+            "third of the way to 1 — **but the heights collapse to 0.598**. ⇒ The "
+            "radiation-driven decay IS compressing the comb, **and the same term sets the "
+            "compressions**. The photons ARE in the plasma; the radiation-dominated ERA is not in "
+            "CRs rate; **the code takes both from one Omega_gamma and cannot separate them**.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

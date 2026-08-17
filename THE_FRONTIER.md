@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3032 (Daryls hypothesis, CONFIRMED): **the rate is radiation-free and the perturbations are driven as though it is not.** Hub carries NO RADIATION TERM (its own comment) — but rt and Og_of **put radiation back in**, feeding the potentials decay. And P15: the driving **does not live on an expanding radiation era, which the radiation-free rate does not possess** — it is INHERITED in the transmitted amplitude. ⇒ **DOUBLE-COUNTED**, which explains every symptom including why no parameter I varied could move it.***
+*⌗ **LAST ACTUAL MOVE — r3033: **ran it — the mechanism is CONFIRMED and the term does TWO JOBS.** Removing the radiation species from the potentials source moves the ratio **0.746 -> 0.8115**, a third of the way to 1 — **but the heights collapse to 0.598**. ⇒ The radiation-driven decay IS compressing the comb, **and the same term sets the compressions**. The photons ARE in the plasma; the radiation-dominated ERA is not in CRs rate; **the code takes both from one Omega_gamma and cannot separate them**.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3032: DOUBLE-COUNTED DRIVING. The rate is radiation-free but Og_of puts radiation back in to drive the potential, while P15 says the driving is inherited in the transmitted amplitude. One line to test |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3033: CONFIRMED -- removing the radiation source moves the spacing 0.746 -> 0.8115 but collapses the heights. The term sets BOTH. Correct test: keep Omega_gamma in the plasma, hold Phi to matter-dominated behaviour |
 
 ---
 

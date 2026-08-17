@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r3033 — 2026-08-15 (main line). **RAN IT: THE MECHANISM IS CONFIRMED, AND THE TERM TURNS OUT TO BE DOING TWO JOBS.**
+
+*Two tests from the frozen-potential base:*
+
+    removing radiation from the normaliser    ratio 0.7659, heights blow up to 17.7   <- WRONG TEST
+    removing radiation from the potential
+      source, matching what Hub contains      ratio 0.746 -> 0.8115, heights collapse to 0.598
+
+⇒ ***So the diagnosis holds and sharpens: the radiation-driven potential decay **is** compressing the comb, exactly as r3031 and r3032 predicted — **but that same term also sets the compressions and rarefactions**, so deleting it takes the heights with it.***
+
+**⌗ AND THAT IS THE REAL SHAPE OF THE PROBLEM:** ***the photons ARE in the plasma*** — *they set the sound speed, the baryon loading and the height pattern — **while the radiation-dominated ERA that makes the potential decay is NOT in CR's rate**. The code cannot separate them because it takes both from the same photon fraction. **My two tests each removed both at once**, which is why one broke the heights and the other inverted the driving.*
+
+**⚠ THE CORRECT TEST, NAMED FOR THE NEXT RUN:** *keep the photon fraction in the plasma and **hold the potential to its matter-dominated behaviour** — which is what a radiation-free rate gives — rather than letting a fictitious radiation era decay it. **A different edit from either of these, and not yet made.***
+
 ### Revision r3032 — 2026-08-15 (main line). **DARYL'S HYPOTHESIS IS CORRECT: THE RATE IS RADIATION-FREE AND THE PERTURBATIONS ARE DRIVEN AS THOUGH IT IS NOT.**
 
 *He asked whether a LambdaCDM mechanism had been imported into a framework that already accounts for it elsewhere. **It has.***
