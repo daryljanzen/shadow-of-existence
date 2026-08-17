@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3018: the failure is WHERE THE SERIES BEGINS -- P1 at 388 against 220, gaps comparable, chi2/dof 224 vs 3.71. An offset in the propagations starting condition, not an error in its rate'),
+        'r3019: the offset DECAYS (168/64/72/32) and the FIRST GAP carries it (216 vs 320). CANDIDATE: a low-k boundary that starts too high -- testable by moving it, and the k-range has moved these numbers before'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3018: **the 60x is a chi2/dof ratio — 224 against the controls 3.71 on the same 185 "
-            "bins** — and the peak table says what is wrong: **388/604/884/1164 against "
-            "220/540/812/1132, gaps comparable, the series starting 168 multipoles too high**. ⛔ "
-            "And it corrects my r3017 wording: I wrote that a matching intercept is REACHABLE; **the "
-            "span contains the controls value but no sampled reading lands on it**. ⇒ What fails is "
-            "**where the series BEGINS**, not the spacing and not the phase.")
+LASTFIND = ("r3019: **the offset DECAYS — 168, 64, 72, 32 — so it is not a shift or a stretch but a "
+            "displaced FIRST PEAK with a series that recovers.** The first gap carries it: 216 "
+            "against the controls 320, while the later gaps are comparable. ⚠ **Candidate named, "
+            "not tested**: a propagation whose wavenumber grid starts too high would do exactly "
+            "this — and the corpus has seen the k-range move these numbers twice (r2905 opened it, "
+            "r2965 rebuilt the grid and took the control 7.14 to 3.81).")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

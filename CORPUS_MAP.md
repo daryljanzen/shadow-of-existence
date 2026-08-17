@@ -146,6 +146,21 @@ sources: [cowork, chat]
 
 
 
+### Revision r3019 — 2026-08-15 (main line). **THE OFFSET DECAYS, THE FIRST GAP CARRIES IT, AND THERE IS A NAMED CANDIDATE.**
+
+*Tested whether 168 is a recognisable quantity. **It is not a shift of any kind.***
+
+    offset by peak    168    64    72    32        -> DECAYS, so not a constant shift
+    ratio by peak     1.764  1.119 1.089 1.028     -> decays toward one, so not a stretch
+    CR gaps           216    280   280
+    control gaps      320    272   320
+
+⇒ ***It is a displaced FIRST PEAK with a series that recovers, and **the first gap carries it — short by a third while the later gaps are comparable**.*** *So the defect is concentrated where the transient lives, which is consistent with everything `PO-7` established and is a different statement from "the phase is wrong".*
+
+**⚠ AND A CANDIDATE, NAMED BUT NOT TESTED:** *a first peak too high in multipole with later peaks recovering is what a propagation whose **wavenumber grid starts too high** would produce — the first acoustic mode missing rather than mislocated. ***And the corpus has already seen the k-range move these very numbers**: r2905 diagnosed 73% of the control's residual in 16% of bins and fixed it by **opening the wavenumber range**, and r2965's deeper run **rebuilt the k-grid** and took the control from 7.14 to 3.81.*
+
+**Recorded as a candidate with a stated test, not as a finding:** *does the first-gap deficit move when the propagation's low-k boundary moves?*
+
 ### Revision r3018 — 2026-08-15 (main line). **WHAT IS 60x THE CONTROL — AND A CORRECTION TO MY OWN r3017 WORDING.**
 
 *The 60x is a chi-squared-per-dof ratio: **224 at phi = pi/2 against the control's 3.71 on the same 185 bins**. And the peak table says what is wrong:*

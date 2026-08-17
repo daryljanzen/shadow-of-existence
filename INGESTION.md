@@ -540,3 +540,4 @@ r3015  LATENT      PO-16 STRUCK (no defect in the item). Register now carries st
 r3016  LATENT      PO-13: the 0.72-0.79 is a four-peak artefact; the real item is that the spacing is computed nowhere. My r3005 edit flagged.
 r3017  CORPUS      my P15 sentence corrected: the phase is not carrying it; the phase-matched reading is still 60x the control.
 r3018  CORPUS      the 60x is chi2/dof 224 vs 3.71; P1 at 388 vs 220 with gaps intact. My reachable-claim corrected.
+r3019  LATENT      the offset decays (168/64/72/32); the first gap carries it. Candidate: a low-k boundary too high. Testable.

@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3018: **the 60x is a chi2/dof ratio — 224 against the controls 3.71 on the same 185 bins** — and the peak table says what is wrong: **388/604/884/1164 against 220/540/812/1132, gaps comparable, the series starting 168 multipoles too high**. ⛔ And it corrects my r3017 wording: I wrote that a matching intercept is REACHABLE; **the span contains the controls value but no sampled reading lands on it**. ⇒ What fails is **where the series BEGINS**, not the spacing and not the phase.***
+*⌗ **LAST ACTUAL MOVE — r3019: **the offset DECAYS — 168, 64, 72, 32 — so it is not a shift or a stretch but a displaced FIRST PEAK with a series that recovers.** The first gap carries it: 216 against the controls 320, while the later gaps are comparable. ⚠ **Candidate named, not tested**: a propagation whose wavenumber grid starts too high would do exactly this — and the corpus has seen the k-range move these numbers twice (r2905 opened it, r2965 rebuilt the grid and took the control 7.14 to 3.81).***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3018: the failure is WHERE THE SERIES BEGINS -- P1 at 388 against 220, gaps comparable, chi2/dof 224 vs 3.71. An offset in the propagations starting condition, not an error in its rate |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3019: the offset DECAYS (168/64/72/32) and the FIRST GAP carries it (216 vs 320). CANDIDATE: a low-k boundary that starts too high -- testable by moving it, and the k-range has moved these numbers before |
 
 ---
 
