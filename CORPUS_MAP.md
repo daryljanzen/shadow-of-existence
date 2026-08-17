@@ -146,6 +146,22 @@ sources: [cowork, chat]
 
 
 
+### Revision r3027 — 2026-08-15 (main line). **THE INTERVAL TESTED: IT BRACKETS THE ANSWER, THE SIGN IS RIGHT, AND THE MISMATCH IS NAMED.**
+
+*Integrated the script's own sound speed over both spans:*
+
+    r_s to recombination      135.46 Mpc   -> spacing ratio 1.000
+    r_s to the run's end      545.98 Mpc   -> spacing ratio 0.248
+    MEASURED                                  spacing ratio 0.746
+
+⇒ ***So 0.746 lies between them: the peaks are set by phase accumulated **somewhat past recombination but far short of the run's end**, implying an effective sound horizon of **181.6 Mpc, a factor 1.340 more phase than the recombination value accounts for**.***
+
+**⌗ AND THE SIGN IS PHYSICALLY RIGHT:** *more accumulated sound horizon puts a given phase at lower wavenumber, hence lower multipole, hence **smaller spacing**. A propagation still oscillating through the last-scattering surface's finite thickness gives a short spacing — **exactly the sign observed**.*
+
+**⚠⚠ AND THIS IS NOT AUTOMATICALLY A BUG:** *real Boltzmann codes do integrate through the visibility function's width, and the true first peak sits near 0.73 of the acoustic scale for that reason rather than at 1. ***What WOULD be a defect is computing the acoustic scale from the recombination sound horizon and then comparing the propagated SPACING against it as though they were the same quantity*** — the mismatch this probe shows, and the same class of error as the first-peak-versus-acoustic-scale confusion `PO-7` already found.*
+
+*Not closed: the settling test is whether the propagated spacing matches the distance over a visibility-weighted effective sound horizon.*
+
 ### Revision r3026 — 2026-08-15 (main line). **THE ACOUSTIC SCALE IS NOT COMPUTED, IT IS IMPOSED — WHICH CORRECTS MY OWN r3025.**
 
 *Read the source above the diagnostic line: **the onset redshift is solved by root-finding so that pi times the distance-to-sound-horizon ratio equals 301.6 exactly**.*

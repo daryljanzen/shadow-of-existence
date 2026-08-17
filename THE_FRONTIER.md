@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3026: **l_A = 301.6 is NOT computed, it is IMPOSED** — zs = brentq(pi*DM/rs_f(z) - 301.6), so the onset redshift is solved to hit it. **That corrects my own r3025.** ⌗ And it makes the 0.746 sharper: the script **fixes the acoustic scale by construction** and then propagates modes oscillating at three-quarters of it — two calculations over the same interval with the same R_b, disagreeing by a quarter. ⚠ Next test: rs_f stops at a_rec while the propagation runs to 20 a_rec.***
+*⌗ **LAST ACTUAL MOVE — r3027: **the interval test BRACKETS the answer and the sign is right.** r_s to recombination 135.46 (ratio 1.000); to the runs end 545.98 (ratio 0.248); **measured 0.746** — so the peaks are set by phase accumulated somewhat PAST recombination, implying an effective r_s of 181.6 Mpc. ⌗ **More sound horizon puts a given phase at lower k, hence smaller spacing — exactly the sign observed.** ⚠ And that is not automatically a bug: real codes integrate through the visibility width. **The defect would be comparing a propagated SPACING against an l_A built from r_s(rec).*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3026: l_A = 301.6 is IMPOSED by solving for z_onset, not computed -- so the script FIXES the acoustic scale and then propagates at 0.746 of it. Next: rs_f stops at a_rec, the propagation runs to 20 a_rec |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3027: the 0.746 brackets between r_s(rec) and r_s(run-end), implying an effective sound horizon of 181.6 Mpc -- the sign of a propagation still oscillating through the visibility width. The defect may be the COMPARISON, not the propagation |
 
 ---
 

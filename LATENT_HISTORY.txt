@@ -487,3 +487,4 @@ r3023  LATENT      gating Psis velocity gives P1/P2 = 2.017 (the papers 2.02); t
 r3024  LATENT      stretch cancels (P2/P3 identical under 32% change); the shortfall is in the scans own D_M/r_s, while C56s cancels to 0.075%.
 r3025  LATENT      ISOLATED: the scan computes l_A = 301.6 and propagates at 0.746 of it. A propagation error, not a cosmology one.
 r3026  LATENT      l_A = 301.6 is imposed by brentq, not computed. r3025 corrected. Next: the interval mismatch a_rec vs 20 a_rec.
+r3027  LATENT      0.746 brackets between r_s(rec) and r_s(end); effective r_s 181.6 Mpc. The sign matches visibility-width accumulation.
