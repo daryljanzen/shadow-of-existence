@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3008: **the bake audited both ways — 20 of 20 results in the corpus, nothing contradicted.** ⌗ The first pass said 16 of 17 **because my audit string spanned a line break** — the same trap that cost four anchors during the bake, arriving inside the instrument checking it. ⌗ And **19 apparent hits on the withdrawn 21% figure are NOT stale**: B4 withdrew the SPACING deficit, the appendix records the first-peak POSITION deficit — **the transient, which is real**. Different quantities sharing a number.***
+*⌗ **LAST ACTUAL MOVE — r3010: **X1 already closed the ratio route, and P7s own wording says the datum proper is something else.** The datum as stated IS rho_r/rho_m, which X1 closes against the progenitor structurally. But P7 says **the datum proper is the ONSET REDSHIFT, and the ratio is its restatement** — a TIME, not a ratio, so X1s multiplicative-cancellation argument does not reach it. ⌗ And P15 already limits the accommodation: **a single datum cannot absorb both observables**, so the second is a prediction.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,8 +34,8 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
+| **PO-16** | the inherited datum — a one-parameter accommodation | **1** | 1 | 2 | READ | 0 | — | r3010: the RATIO route is closed (X1); the live question is whether the ONSET REDSHIFT is derivable -- a time, not a ratio. And a single datum cannot absorb both observables, so the second is a prediction |
 | **PO-13** | the misplaced phase — a DIAGNOSIS across three layers | **1** | 1 | 2 | READ | 0 | — | r3009: reproduces scale, spacing, damping and heights; misplaces the phase by 0.615 l_A at ~70 sigma. LEVER: a transfer that fixes the control (1.7%% -> 0.16%%) leaves the CR deficit UNCHANGED to four figures |
-| **PO-16** | the inherited datum — a one-parameter accommodation | **1** | 1 | 2 | READ | 0 | — | r3009: X1 closes the COMPOSITION RATIO structurally; whether that reaches THIS datum is unasked, and X1s form does not transfer automatically. Cheapest to start |
 
 ---
 

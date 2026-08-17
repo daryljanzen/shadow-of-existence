@@ -470,3 +470,4 @@ r3006  CORPUS      Stage One complete: P10 (spectrum branches, the cc question) 
 r3007  CORPUS      THE BAKE done: P7s four frontier items shrunk to the residue; inherited read and left unchanged.
 r3008  CORPUS      bake audited both ways: 20/20 results in, nothing contradicted. The 23% hits are the transient, not the withdrawn spacing.
 r3009  INSTRUMENT  THE_REGISTER opened: PO-13 phase diagnosis, PO-14 the chiral build, PO-15 the ordering, PO-16 the inherited datum.
+r3010  LATENT      PO-16: the ratio route is closed by X1; the live question is the ONSET REDSHIFT, a time not a ratio.

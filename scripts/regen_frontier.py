@@ -26,7 +26,7 @@ EST = {
     'PO-15': ('the ordering — does the towers zero-point energy gravitate', 1, 1, 3, None,
         'r3009: both branches computed, 3/4 = 1/4 + 1/2 is WHY, decomposition survives either way. UNASKED: can the thermal state that supplied the boundary condition also select the ordering'),
     'PO-16': ('the inherited datum — a one-parameter accommodation', 1, 1, 2, None,
-        'r3009: X1 closes the COMPOSITION RATIO structurally; whether that reaches THIS datum is unasked, and X1s form does not transfer automatically. Cheapest to start'),
+        'r3010: the RATIO route is closed (X1); the live question is whether the ONSET REDSHIFT is derivable -- a time, not a ratio. And a single datum cannot absorb both observables, so the second is a prediction'),
 }
 # ** THE COUNTER, AND THE CRITERION IT IS SCORED AGAINST (r2847, after Daryl caught two
 # turns wrongly scored 0).  *** A turn is a 0 ONLY IF it found the problem space DIFFERENT
@@ -43,12 +43,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3008: **the bake audited both ways — 20 of 20 results in the corpus, nothing "
-            "contradicted.** ⌗ The first pass said 16 of 17 **because my audit string spanned a line "
-            "break** — the same trap that cost four anchors during the bake, arriving inside the "
-            "instrument checking it. ⌗ And **19 apparent hits on the withdrawn 21% figure are NOT "
-            "stale**: B4 withdrew the SPACING deficit, the appendix records the first-peak POSITION "
-            "deficit — **the transient, which is real**. Different quantities sharing a number.")
+LASTFIND = ("r3010: **X1 already closed the ratio route, and P7s own wording says the datum proper is "
+            "something else.** The datum as stated IS rho_r/rho_m, which X1 closes against the "
+            "progenitor structurally. But P7 says **the datum proper is the ONSET REDSHIFT, and the "
+            "ratio is its restatement** — a TIME, not a ratio, so X1s multiplicative-cancellation "
+            "argument does not reach it. ⌗ And P15 already limits the accommodation: **a single "
+            "datum cannot absorb both observables**, so the second is a prediction.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
@@ -68,7 +68,7 @@ LASTFIND = ("r3008: **the bake audited both ways — 20 of 20 results in the cor
 # are declared unmeasured rather than dressed as measured. ***
 KIND = {'PO-13': 'READ', 'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ'}
 
-ORDER = ['PO-14', 'PO-15', 'PO-13', 'PO-16']
+ORDER = ['PO-16', 'PO-13', 'PO-15', 'PO-14']
 GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D'}
 GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector', 'D': 'the cosmology'}
 

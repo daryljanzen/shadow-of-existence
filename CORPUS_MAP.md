@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3010 — 2026-08-15 (main line). **`PO-16`: X1 ALREADY CLOSED THE RATIO ROUTE, AND P7's OWN WORDING SAYS THE DATUM PROPER IS SOMETHING ELSE.**
+
+*Reads first, build after — the order corrected. Asked X1's question of the inherited datum: what does the crossing do to **that kind** of quantity?*
+
+**⛔ ① THE DATUM AS STATED IS THE QUANTITY X1 KILLED.** *P7 names "the branch-point radiation amplitude \$\\rho_r/\\rho_m\\simeq2\$", and X1 closes exactly that: **"it scales as 1/a, so it has NO SINGLE VALUE TO HAND OVER; and the crossing is MULTIPLICATIVE, so a common factor CANCELS in the ratio"** — leaving it a reading of the observable leg's own clock. **The ratio route is closed negative with a stated reason.***
+
+**⛭⛭ ② AND P7 ITSELF NAMES THE REAL DATUM:** *"**the datum proper is the ONSET REDSHIFT, which is \$H_0\$-independent; the ratio is its restatement**". ⇒ **So the live question was never whether the ratio is derivable — it is whether the ONSET REDSHIFT is**, and that is a different kind of quantity: **a time, not a ratio**, so X1's multiplicative-cancellation argument does not reach it.*
+
+**⌗ AND P15 ALREADY LIMITS THE ACCOMMODATION:** *"holding \$\\theta_*\$ to its measured value fixes the onset redshift, and \$\\theta_D/\\theta_*\$ then follows with nothing left to adjust … **a single datum cannot absorb both observables**". ***One parameter, and the second observable is a prediction — a materially better position than "one-parameter accommodation" alone conveys.***
+
 ### Revision r3009 — 2026-08-15 (main line). **A NEW REGISTER OPENED — FOUR ROWS, SAME FIVE COLUMNS, EVERY EXISTING GATE READS IT.**
 
 *`PROTECTED_OPEN` closed at r3001 with fourteen struck. `THE_REGISTER.md` carries what the corpus itself now names as outstanding, in its own words, after the bake.*
