@@ -19,8 +19,14 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
- 'PO-10':  ('the scalar remainder — one RUN and one REFIT', 2, 2, 1, None,
-            'r2995: BOTH steps discharged -- the full-spectrum refit is banked (CR 1.891/dof vs LCDM 0.983) and the odd/even pattern is produced (2.185 vs 2.200, sky 2.256 +- 0.077)'),
+    'PO-13': ('the misplaced phase — a DIAGNOSIS across three layers', 1, 1, 2, None,
+        'r3009: reproduces scale, spacing, damping and heights; misplaces the phase by 0.615 l_A at ~70 sigma. LEVER: a transfer that fixes the control (1.7%% -> 0.16%%) leaves the CR deficit UNCHANGED to four figures'),
+    'PO-14': ('the unbuilt chiral member — a BUILD', 1, 1, 5, None,
+        'r3009: P09 says REACHABLE, needing no machinery the operator lacks; P11 has the polarised leaf worked with ONE propagating mode. Until built, four classes where five are required'),
+    'PO-15': ('the ordering — does the towers zero-point energy gravitate', 1, 1, 3, None,
+        'r3009: both branches computed, 3/4 = 1/4 + 1/2 is WHY, decomposition survives either way. UNASKED: can the thermal state that supplied the boundary condition also select the ordering'),
+    'PO-16': ('the inherited datum — a one-parameter accommodation', 1, 1, 2, None,
+        'r3009: X1 closes the COMPOSITION RATIO structurally; whether that reaches THIS datum is unasked, and X1s form does not transfer automatically. Cheapest to start'),
 }
 # ** THE COUNTER, AND THE CRITERION IT IS SCORED AGAINST (r2847, after Daryl caught two
 # turns wrongly scored 0).  *** A turn is a 0 ONLY IF it found the problem space DIFFERENT
@@ -60,18 +66,11 @@ LASTFIND = ("r3008: **the bake audited both ways — 20 of 20 results in the cor
 # ⚠ *** A BUILD step has NO completed instance to calibrate against -- PO-11's continuum,
 # PO-6's UV definition, PO-1a's derivation.  Those are marked BUILD and their estimates
 # are declared unmeasured rather than dressed as measured. ***
-KIND = {'PO-2': 'READ',
-        'PO-1b': 'READ',
-        'PO-10': 'READ'}
+KIND = {'PO-13': 'READ', 'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ'}
 
 ORDER = ['PO-10']
-GROUP = {'PO-2': 'A',
-         
-         'PO-10': 'D'}
-GNAME = {'A': 'THE CHAIN — one unbuilt sector, two consequences. Strictly ordered.',
-         'B': 'THE 2+1 CLUSTER — four readings of two splits. Independent of A.',
-         'C': 'THE QUANTUM SECTOR — independent.',
-         'D': 'COSMOLOGY — independent, and the only group confronted with data.'}
+GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D'}
+GNAME = {'A': 'the matter sector', 'C': 'the quantum sector', 'D': 'the cosmology'}
 
 
 
@@ -79,7 +78,7 @@ def _cites():
     """** r2874: how many receipts each open row cites, counted from the register. **
     *** Daryl: every row needs to be citing the corpus.  The register held 11% of its
     own worked corpus; this column makes that visible every turn. ***"""
-    raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8',
+    raw = open(os.path.join(ROOT, 'THE_REGISTER.md'), encoding='utf-8',
                errors='replace').read()
     out = {}
     for line in raw.split('\n'):
@@ -93,7 +92,7 @@ def _cites():
 
 
 def main():
-    raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
+    raw = open(os.path.join(ROOT, 'THE_REGISTER.md'), encoding='utf-8', errors='replace').read()
     CITES = _cites()
     live = set()
     for line in raw.split('\n'):
