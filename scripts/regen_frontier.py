@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3016: the 0.72-0.79 is a four-peak-series artefact (asymptotic is 0.975) and the phase moves across the controls value under the seam datum. THE REAL STEP: the spacing is asserted in one place and COMPUTED NOWHERE -- propagate it at depth'),
+        'r3018: the failure is WHERE THE SERIES BEGINS -- P1 at 388 against 220, gaps comparable, chi2/dof 224 vs 3.71. An offset in the propagations starting condition, not an error in its rate'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,13 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3017: **my r3005 P15 sentence was wrong; corrected in the paper.** Four seam phases at "
-            "production depth span 0.891 in phi/pi **with the controls 0.263 INSIDE that span**, so "
-            "a matching intercept is reachable and the 0.62pi is one reading, not a prediction. "
-            "⛭ And the harder half: **the phase-matched reading is STILL SIXTY TIMES THE "
-            "CONTROL**, heights moving 0.48-1.62 and never reaching the skys 2.22, spacing holding "
-            "at 0.963-0.981. **Moving the phase onto the control relocates the problem rather than "
-            "rescuing the fit.**")
+LASTFIND = ("r3018: **the 60x is a chi2/dof ratio — 224 against the controls 3.71 on the same 185 "
+            "bins** — and the peak table says what is wrong: **388/604/884/1164 against "
+            "220/540/812/1132, gaps comparable, the series starting 168 multipoles too high**. ⛔ "
+            "And it corrects my r3017 wording: I wrote that a matching intercept is REACHABLE; **the "
+            "span contains the controls value but no sampled reading lands on it**. ⇒ What fails is "
+            "**where the series BEGINS**, not the spacing and not the phase.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

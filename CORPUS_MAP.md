@@ -146,6 +146,19 @@ sources: [cowork, chat]
 
 
 
+### Revision r3018 — 2026-08-15 (main line). **WHAT IS 60x THE CONTROL — AND A CORRECTION TO MY OWN r3017 WORDING.**
+
+*The 60x is a chi-squared-per-dof ratio: **224 at phi = pi/2 against the control's 3.71 on the same 185 bins**. And the peak table says what is wrong:*
+
+    control     220  540  812  1132     gaps 320, 272, 320
+    phi=pi/2    388  604  884  1164     gaps 216, 280, 280
+
+⇒ ***The spacing is comparable and the series starts 168 multipoles too high** — a 76% error on the first peak with the gaps roughly intact.*
+
+**⛔ AND IT CORRECTS WHAT I WROTE LAST TURN.** *I said "a phase intercept matching the sky is **reachable** within the seam datum's range". **The span contains the control's 0.2628; no sampled reading lands on it** — the closest of the four is 0.0663, still 0.197 away. **Those are different claims and I wrote the stronger one into the paper.** Corrected: the sentence now says no sampled reading lands on it, gives the closest reading's chi-squared and its peaks, and states that the gaps are comparable while the series starts too high.*
+
+**⌗ SO THE STEP SHARPENS AGAIN:** *what fails is **not the spacing and not the phase but where the series BEGINS**. ***A first peak 168 multipoles high with the gaps intact is an offset in the propagation's starting condition, not an error in its rate.***
+
 ### Revision r3017 — 2026-08-15 (main line). **MY r3005 P15 SENTENCE WAS WRONG AND IS CORRECTED IN THE PAPER. THE DISAGREEMENT SURVIVES ANYWAY.**
 
 **⛔** *`P15_the_phase_moves_with_the_datum_and_only_the_spacing_does_not`: "across four seam phases at production depth the asymptotic acoustic phase spans 0.891 in phi/pi **with the control's 0.263 INSIDE that span**, so the 0.62 pi is **the value at one reading and not a prediction**". ⇒ **A phase intercept matching the sky is reachable within the seam datum's range**, so my "0.615 … a real disagreement with the sky" attributed the disagreement to a quantity that can be moved onto the control.*
