@@ -146,6 +146,23 @@ sources: [cowork, chat]
 
 
 
+### Revision r3037 — 2026-08-15 (main line). **RAN IT: RESTORING RADIATION TO THE RATE MOVES THE COMB FROM 25% SHORT TO 6.5% SHORT.**
+
+*One line changed, everything else byte-identical:*
+
+                              P1     P2     P3     spacing ratio
+    no radiation in rate     165    390    615     0.746
+    radiation in rate        210    510    765     0.9346
+    sky                      220    536    813
+
+    per-peak error vs sky:   -4.5%, -4.9%, -5.9%    (was -25.0%, -27.2%, -24.4%)
+
+**⚠⚠ AND WHAT THE RUN CONFOUNDS, STATED FIRST:** *the onset redshift moved from 6761 to 54078, because the root-find still forces the acoustic scale to 301.6 and restoring radiation changes the sound horizon. **So the peaks landing near the sky is NOT cleanly attributable to the radiation term — the onset was refit by a factor of eight in the same run.***
+
+**⌗ WHAT IS CLEAN IS THE SPACING RATIO:** *it is the propagated comb divided by the script's own acoustic scale, **so the refit cancels out of it**, and it moves **0.746 to 0.9346 — from 25% short to 6.5% short**. That is the measurement, and it is the strongest single result this row has produced.*
+
+**⚠ The heights move the wrong way** *(3.542 against the sky's 2.212, from 2.017), and three peaks are found rather than four. **Both are unaddressed and neither is explained by this change.***
+
 ### Revision r3036 — 2026-08-15 (main line). **THE NORMALISATION WAS RIGHT, AND THAT IS WHAT EXPOSES THE ACTUAL INCONSISTENCY.**
 
 *Read the code's convention off its own (00) form: matching its density term against the theory's gives 4 pi G a^2 rho_i = (3H^2/2) Omega_i — **and my r3035 substitution used exactly that**, with the radiation enthalpy and the velocity-to-theta relation both confirmed against the code's own photon density equation. **The substitution was dimensionally correct.***

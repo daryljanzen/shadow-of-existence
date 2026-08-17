@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3036: the background omits radiation while the perturbed plasma contains it -- so (00) and (0i) disagree, which is the symptom. TEST OWED: does restoring radiation to the rate land the comb'),
+        'r3037: restoring radiation to the rate moves the spacing ratio 0.746 -> 0.9346 (25%% short to 6.5%% short). Confounded on peak POSITIONS by a z_onset refit; the ratio itself is clean. Heights unexplained'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3036: **the normalisation was right, and that exposes the real inconsistency.** (00) "
-            "and (0i) are BOTH Einstein equations and must both hold; they agree only if the "
-            "background satisfies Friedmann with the same contents. **They disagreed.** ⇒ And CR "
-            "IS first-class GR (P7s own words), so the rate H0 sqrt(Om/a^3 + OL) **is** a "
-            "Friedmann rate — for matter and Lambda **with no radiation**. **The background budget "
-            "has no photons while the plasma being perturbed is a photon-baryon fluid.**")
+LASTFIND = ("r3037: **ran it — restoring radiation to the rate moves the comb from 25%% short to "
+            "6.5%% short.** Peaks 165/390/615 -> 210/510/765 against the skys 220/536/813; "
+            "**spacing ratio 0.746 -> 0.9346**. ⚠ The run CONFOUNDS: z_onset moved 6761 -> 54078 "
+            "because brentq still forces l_A = 301.6, so the peak positions are not cleanly "
+            "attributable. **What is clean is the spacing ratio — the refit cancels out of it.** "
+            "Heights move the wrong way and are unexplained.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

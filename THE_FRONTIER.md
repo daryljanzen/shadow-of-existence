@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3036: **the normalisation was right, and that exposes the real inconsistency.** (00) and (0i) are BOTH Einstein equations and must both hold; they agree only if the background satisfies Friedmann with the same contents. **They disagreed.** ⇒ And CR IS first-class GR (P7s own words), so the rate H0 sqrt(Om/a^3 + OL) **is** a Friedmann rate — for matter and Lambda **with no radiation**. **The background budget has no photons while the plasma being perturbed is a photon-baryon fluid.*****
+*⌗ **LAST ACTUAL MOVE — r3037: **ran it — restoring radiation to the rate moves the comb from 25%% short to 6.5%% short.** Peaks 165/390/615 -> 210/510/765 against the skys 220/536/813; **spacing ratio 0.746 -> 0.9346**. ⚠ The run CONFOUNDS: z_onset moved 6761 -> 54078 because brentq still forces l_A = 301.6, so the peak positions are not cleanly attributable. **What is clean is the spacing ratio — the refit cancels out of it.** Heights move the wrong way and are unexplained.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3036: the background omits radiation while the perturbed plasma contains it -- so (00) and (0i) disagree, which is the symptom. TEST OWED: does restoring radiation to the rate land the comb |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3037: restoring radiation to the rate moves the spacing ratio 0.746 -> 0.9346 (25%% short to 6.5%% short). Confounded on peak POSITIONS by a z_onset refit; the ratio itself is clean. Heights unexplained |
 
 ---
 

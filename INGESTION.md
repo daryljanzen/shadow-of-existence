@@ -558,3 +558,4 @@ r3033  LATENT      removing the radiation source moves spacing 0.746->0.8115 but
 r3034  LATENT      no matter domination in CR: the rate is geometric. The defect is the perturbed potential equation carrying FLRWs constraint.
 r3035  LATENT      the Friedmann term IS the carrier: replacing it with exact (0i) swings 0.746 -> 1.27. Normalisation still owed.
 r3036  LATENT      (00) and (0i) disagree because the background omits radiation while the perturbed plasma contains it.
+r3037  LATENT      radiation in the rate: spacing ratio 0.746 -> 0.9346. Positions confounded by a z_onset refit; the ratio is clean.
