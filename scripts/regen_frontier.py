@@ -37,12 +37,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3006: **STAGE ONE COMPLETE — P15, P10 and P14 all written in and all compiling.** P10 "
-            "now carries the spectrum computable branch by branch and **asking which ordering is "
-            "asking whether the graviton towers zero-point energy gravitates at the horizon**. P14 "
-            "carries the **eleven-of-eleven** closure agreement and the **one-pair shortfall on the "
-            "right-handed side with achirality as its cause**. Next: **Stage Two, P7s frontier "
-            "items, which now shrink to the residue.**")
+LASTFIND = ("r3007: **THE BAKE IS DONE.** Three papers carry the substance (P15 four results, P10 the "
+            "spectrum branches, P14 the closure and the one-pair mismatch); P7s four frontier items "
+            "carry the residue — **scalar is now a DIAGNOSIS not a calculation** (reproduces scale, "
+            "spacing, damping and heights, **misplaces the phase**), **quantum is the ordering = the "
+            "cc problem from inside**, **sm is the unbuilt chiral member as a concrete next step**, "
+            "and **inherited was read and left unchanged**. All compile.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

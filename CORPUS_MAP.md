@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3007 — 2026-08-15 (main line). **STAGE TWO — P7's FRONTIER ITEMS SHRUNK TO THE RESIDUE. THE BAKE IS DONE.**
+
+**⛭⛭ `frontier:scalar`** — *the two items it named are run, and **the residue is the disagreement itself**: "Both of the items formerly named here have since been run, and **the result is a disagreement rather than a closure**" — with \$\\chi^2=397.13\$ against \$206.44\$, the \$0.615\\,\\ell_A\$ phase intercept at **some seventy standard deviations**, and the odd/even pattern **coming out right** at \$2.185\$ against \$2.2564\\pm0.0772\$. ⇒ **"What remains of this item is therefore no longer a calculation but a diagnosis: the construction reproduces the acoustic scale, the peak spacing, the damping physics and the height pattern, and misplaces the phase."***
+
+**⛭⛭ `frontier:quantum`** — *shrunk to the ordering: the coefficient **computable branch by branch**, \$\\tfrac34=\\tfrac14+\\tfrac12\$ **for a reason**, the decomposition untouched and the physical content not. ⇒ **"asking which ordering is asking whether the graviton tower's zero-point energy gravitates at the horizon, which is the cosmological-constant problem arriving from inside this construction rather than imported into it."***
+
+**⛭⛭ `frontier:sm`** — *"**two things have since been settled inside that mapping, and they cut opposite ways**": the confinement condition **agreeing on eleven of eleven** with no Standard-Model input, against a content count that **fails by precisely one pair on the right-handed side**, with the cause identified as the **polarised and so achiral** member being the one built. ⇒ **"that build is the concrete next step this frontier names rather than a general aspiration toward the Standard Model."***
+
+**⌗ `frontier:inherited` — READ AND LEFT UNCHANGED.** *It states the acoustic scale as a **one-parameter accommodation rather than a parameter-free prediction**, on the branch-point radiation amplitude. **Nothing this session touched it**, and editing it would have been the failure this pass exists to correct.*
+
+⇒ ***THE BAKE IS COMPLETE: three papers carry the substance, four frontier items carry the residue, all compile.***
+
 ### Revision r3006 — 2026-08-15 (main line). **STAGE ONE COMPLETE — P10 AND P14/matter_sector WRITTEN IN. ALL THREE PAPERS COMPILE.**
 
 **⛭ P10 `canonical_time.tex`** — *the frontier sentence now carries **two things sayable without settling the frontier**: the spectrum is **computable branch by branch** (minimum \$\\tfrac14\$ normal-ordered, \$\\tfrac34\$ symmetric with one mode occupied) and **the difference is exactly that mode's zero-point quantum**, which is why the threshold sits at \$\\tfrac34=\\tfrac14+\\tfrac12\$ **rather than at a value the construction chose**; and the two orderings **answer the paper's own question oppositely**, with the decomposition untouched but the physical content not. ⇒ **"Asking which ordering is asking whether the graviton tower's zero-point energy gravitates at the horizon---the cosmological-constant problem in local dress, reached from inside the boundary coefficient rather than imported."** 26 pages.*

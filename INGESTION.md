@@ -528,3 +528,4 @@ r3003  INSTRUMENT  THE BAKE planned: 5 spine sites + 1 new section. 455k words b
 r3004  INSTRUMENT  plan corrected: substance into owning papers FIRST, then P7 frontier shrinks to the residue.
 r3005  CORPUS      Stage One P15: all four results written in — the refit, the odd/even, the measured sky peaks, the 0.615 deficit.
 r3006  CORPUS      Stage One complete: P10 (spectrum branches, the cc question) and P14 (11-of-11, one-pair mismatch) written in.
+r3007  CORPUS      THE BAKE done: P7s four frontier items shrunk to the residue; inherited read and left unchanged.

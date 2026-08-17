@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3006: **STAGE ONE COMPLETE — P15, P10 and P14 all written in and all compiling.** P10 now carries the spectrum computable branch by branch and **asking which ordering is asking whether the graviton towers zero-point energy gravitates at the horizon**. P14 carries the **eleven-of-eleven** closure agreement and the **one-pair shortfall on the right-handed side with achirality as its cause**. Next: **Stage Two, P7s frontier items, which now shrink to the residue.*****
+*⌗ **LAST ACTUAL MOVE — r3007: **THE BAKE IS DONE.** Three papers carry the substance (P15 four results, P10 the spectrum branches, P14 the closure and the one-pair mismatch); P7s four frontier items carry the residue — **scalar is now a DIAGNOSIS not a calculation** (reproduces scale, spacing, damping and heights, **misplaces the phase**), **quantum is the ordering = the cc problem from inside**, **sm is the unbuilt chiral member as a concrete next step**, and **inherited was read and left unchanged**. All compile.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
