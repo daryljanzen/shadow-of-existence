@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r3038 — 2026-08-15 (main line). **THE CONSISTENT-FRACTIONS TEST RUN CLEAN, AND A THREE-POINT SCAN THAT IS MONOTONE.**
+
+*I had put radiation into the rate, which is the one place it does not belong. Left the rate untouched and changed only what the density fractions are referred to:*
+
+    Omega vs matter+Lambda only (the rate's own total)     ratio 0.6839     z_onset 6761  CLEAN
+    Omega vs matter+Lambda+radiation (as shipped)          ratio 0.746      z_onset 6761  CLEAN
+    radiation also in the rate                             ratio 0.9346     z_onset refit  CONFOUNDED
+
+⇒ ***The first two share an onset redshift, so that comparison is clean and the move from 0.684 to 0.746 is attributable to the fractions alone. **And the ordering is monotone: the more the radiation gravitates, the closer the propagated comb sits to the acoustic scale.** That is a physical response measured over three configurations, and the first thing in this row that behaves like a parameter rather than a bug.***
+
+**⚠ WHAT I AM NOT CLAIMING:** *that radiation belongs in the rate. **The third point is confounded by an onset refit and the rate is the framework's, not mine to edit.** What the scan shows is that **the comb responds to the gravitating radiation budget**, and that the shipped configuration sits between two extremes **neither of which is obviously the framework's own answer**.*
+
+**⌗ And the consistent-fractions version — the one matching the rate's own total — is the WORST of the three**, *which is worth stating plainly against my own r3036 reasoning.*
+
 ### Revision r3037 — 2026-08-15 (main line). **RAN IT: RESTORING RADIATION TO THE RATE MOVES THE COMB FROM 25% SHORT TO 6.5% SHORT.**
 
 *One line changed, everything else byte-identical:*

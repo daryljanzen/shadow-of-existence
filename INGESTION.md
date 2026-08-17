@@ -559,3 +559,4 @@ r3034  LATENT      no matter domination in CR: the rate is geometric. The defect
 r3035  LATENT      the Friedmann term IS the carrier: replacing it with exact (0i) swings 0.746 -> 1.27. Normalisation still owed.
 r3036  LATENT      (00) and (0i) disagree because the background omits radiation while the perturbed plasma contains it.
 r3037  LATENT      radiation in the rate: spacing ratio 0.746 -> 0.9346. Positions confounded by a z_onset refit; the ratio is clean.
+r3038  LATENT      monotone scan: 0.684 / 0.746 / 0.935 as the gravitating radiation budget grows. First two clean.

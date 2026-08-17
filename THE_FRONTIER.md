@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3037: **ran it — restoring radiation to the rate moves the comb from 25%% short to 6.5%% short.** Peaks 165/390/615 -> 210/510/765 against the skys 220/536/813; **spacing ratio 0.746 -> 0.9346**. ⚠ The run CONFOUNDS: z_onset moved 6761 -> 54078 because brentq still forces l_A = 301.6, so the peak positions are not cleanly attributable. **What is clean is the spacing ratio — the refit cancels out of it.** Heights move the wrong way and are unexplained.***
+*⌗ **LAST ACTUAL MOVE — r3038: **left the rate alone and changed only what the fractions refer to — a three-point scan that is MONOTONE.** Omega vs matter+Lambda only: **0.6839**; as shipped: **0.746**; radiation also in the rate: 0.9346. **The first two share z_onset = 6761, so that comparison is CLEAN.** ⇒ The more the radiation gravitates, the closer the comb sits to pi/r_s. ⌗ And the consistent-fractions version is the WORST of the three — against my own r3036 reasoning.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3037: restoring radiation to the rate moves the spacing ratio 0.746 -> 0.9346 (25%% short to 6.5%% short). Confounded on peak POSITIONS by a z_onset refit; the ratio itself is clean. Heights unexplained |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3038: a monotone three-point scan -- 0.684 (fractions vs matter+Lambda), 0.746 (as shipped), 0.935 (radiation in the rate). The comb responds to the GRAVITATING radiation budget; the shipped point sits between two extremes |
 
 ---
 
