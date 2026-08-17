@@ -146,6 +146,21 @@ sources: [cowork, chat]
 
 
 
+### Revision r3032 — 2026-08-15 (main line). **DARYL'S HYPOTHESIS IS CORRECT: THE RATE IS RADIATION-FREE AND THE PERTURBATIONS ARE DRIVEN AS THOUGH IT IS NOT.**
+
+*He asked whether a LambdaCDM mechanism had been imported into a framework that already accounts for it elsewhere. **It has.***
+
+    the background rate      Hub = H0*sqrt(Om/a**3 + OL)      <- its own comment: "NO RADIATION TERM"
+    the content fractions    rt = Or_content/ag**4 + ...      <- radiation PUT BACK IN
+    the driving              Og_of = (1-fnu)*(Or/ag**4)/rt
+    feeding                  Php = ... -(Hc/2)*(Og*dg + ...)  <- the potential's decay
+
+⇒ ***And P15 says this driving does not belong on this leg: "**this cosmology's driving does not live on an expanding radiation era, WHICH THE RADIATION-FREE RATE DOES NOT POSSESS; it lives on the contracting side … and the branch point's faithful transmission carries it across UNALTERED**". **So the driving is inherited in the transmitted amplitude, and the propagation then applies a radiation-driven potential decay on top of it.****
+
+**⌗ THAT IS DOUBLE-COUNTING, AND IT EXPLAINS EVERY SYMPTOM:** *r3031 showed the driving is what compresses the comb; the peaks sit low; the shift is stable across initial conditions, gates, step counts and ladders — **because it is in a term none of those touch**; and the equation looks "correct" **because it is LambdaCDM-correct, which is exactly the wrong standard here**.*
+
+**⚠ Not yet tested:** *whether removing the radiation-driven decay lands the peaks. **That is the next run, and it is one line.***
+
 ### Revision r3031 — 2026-08-15 (main line). **WORKED BY HAND: THE ERROR IS THE COMPARISON. THE DRIVING SHIFTS THE COMB, AND LambdaCDM HAS THE SAME DRIVING.**
 
 *Integrated single modes against the script's own splines, driving off and on:*

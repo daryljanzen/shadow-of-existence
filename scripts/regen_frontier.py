@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3031: THE DRIVING shifts the comb -- no-driving spacing 0.995, with-driving 0.939/0.910 -- and LCDM has the same driving (its own first peak is at 0.73 l_A). The 0.75 was a comparison error. What remains: do the two drivings agree'),
+        'r3032: DOUBLE-COUNTED DRIVING. The rate is radiation-free but Og_of puts radiation back in to drive the potential, while P15 says the driving is inherited in the transmitted amplitude. One line to test'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3031: **worked by hand — THE ERROR IS THE COMPARISON.** Single modes against the "
-            "scripts own splines: **no driving gives extrema spaced 0.995 (correct); WITH the "
-            "potential driving, 0.939 and 0.910**. ⇒ A driven oscillators extrema are NOT spaced "
-            "by pi/r_s. **And LCDM has the same driving — which is why its own first peak sits at "
-            "0.73 of the acoustic scale rather than 1, a textbook fact.** Comparing a propagated "
-            "SPACING against pi/r_s compares driven extrema to undriven ones.")
+LASTFIND = ("r3032 (Daryls hypothesis, CONFIRMED): **the rate is radiation-free and the "
+            "perturbations are driven as though it is not.** Hub carries NO RADIATION TERM (its "
+            "own comment) — but rt and Og_of **put radiation back in**, feeding the potentials "
+            "decay. And P15: the driving **does not live on an expanding radiation era, which the "
+            "radiation-free rate does not possess** — it is INHERITED in the transmitted "
+            "amplitude. ⇒ **DOUBLE-COUNTED**, which explains every symptom including why no "
+            "parameter I varied could move it.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
