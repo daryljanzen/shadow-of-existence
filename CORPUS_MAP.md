@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3000 — 2026-08-15 (main line). **WHY P10's ORDERING-ROBUSTNESS DOES NOT REACH THE TOWER, AND WHAT THE ORDERING QUESTION ACTUALLY IS.**
+
+*P10 on the FREE case: "**the scale-factor Hamiltonian carries deficiency indices (1,1) INDEPENDENTLY OF OPERATOR ORDERING — the inverse-square coefficient at the origin attaining gamma = 1/4 ACROSS THE NATURAL ORDERING FAMILY**". So for the scale factor the answer is ordering-independent.*
+
+⇒ ***And S9 shows it fails for the tower (0.25 vs 0.75) — **and the reason is exactly the difference between the two cases**: the free scale factor has **no tower of modes and so no zero-point contribution to add**, while the symmetric ordering adds 1/2 per mode. **That is why 3/4 = 1/4 + 1/2: the orderings differ precisely by the zero-point quantum the free case does not have.****
+
+**⌗ SO THE "ORDERING" IS NOT A BOOKKEEPING CONVENTION — IT IS A PHYSICAL QUESTION WITH A NAME:** *normal ordering says **the tower's vacuum contributes nothing to the boundary coefficient**; symmetric ordering says **it contributes 1/2 per mode**. ***"Which ordering?" IS "does the graviton tower's zero-point energy gravitate at the horizon?"***
+
+**⚠ AND THAT IS NOT A QUESTION CR CAN SETTLE BY CONVENTION, NOR ONE THIS CORPUS HAS DUCKED:** *it is **the cosmological-constant problem, arriving at the boundary coefficient of this construction**. Zero-point energies demonstrably do gravitate (Casimir), and demonstrably do not gravitate at their naive magnitude.*
+
+⇒ ***So the last step on this board is a named instance of an unsolved problem in physics, reached from inside CR's own construction — a different state from "unfixed anywhere in the corpus", and worth saying exactly.***
+
 ### Revision r2999 — 2026-08-15 (main line). **THE SPECTRUM IS COMPUTED, BOTH BRANCHES. `PO-6` OWES AN ORDERING, NOT A SPECTRUM.**
 
 *Looked for the pieces before calling it research — the fourth time, and the fourth time they were there. `S9_the_ordering_decides_it`, uncited on the row:*

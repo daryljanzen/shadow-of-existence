@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
  'PO-6':  ('the interacting tower — the STRADDLE, asserted and unverified', 1, 1, 4, None,
-            'r2999: the spectrum is COMPUTED in both branches (normal-ordered 0.25, symmetric 0.75) and the straddle holds either way. What is unfixed is the QUANTIZATION ORDERING that selects between them'),
+            'r3000: the ordering IS the zero-point question -- normal says the towers vacuum contributes nothing, symmetric says 1/2 per mode. A named instance of the cc problem, reached from inside the construction'),
  'PO-10':  ('the scalar remainder — one RUN and one REFIT', 2, 2, 1, None,
             'r2995: BOTH steps discharged -- the full-spectrum refit is banked (CR 1.891/dof vs LCDM 0.983) and the odd/even pattern is produced (2.185 vs 2.200, sky 2.256 +- 0.077)'),
 }
@@ -39,13 +39,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2999: **the spectrum IS computed, both branches — this row owes an ORDERING.** S9: "
-            "**normal-ordered Gamma_min = 0.25 (below 3/4, freedom survives); symmetric N=1 "
-            "Gamma_min = 0.75 (at 3/4, limit-point)** — opposite answers to the papers own open "
-            "question. ⛭ And **3/4 = 1/4 + 1/2, the free coefficient plus exactly one zero-point "
-            "quantum**. P10 never names the ordering, and its decomposition **survives either "
-            "way** since both occupy both sides. The decomposition is safe; the physical question "
-            "is not.")
+LASTFIND = ("r3000: **why P10s ordering-robustness does not reach the tower, and what the ordering "
+            "question IS.** P10: the free scale factor attains gamma = 1/4 **across the natural "
+            "ordering family** — ordering-INDEPENDENT. S9: the tower gives 0.25 vs 0.75. **The "
+            "difference is exactly the zero-point quantum the free case does not have** — hence "
+            "3/4 = 1/4 + 1/2. ⇒ **'Which ordering?' IS 'does the graviton towers zero-point energy "
+            "gravitate at the horizon?'** — the cc problem, reached from inside CRs own "
+            "construction.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r2999: **the spectrum IS computed, both branches — this row owes an ORDERING.** S9: **normal-ordered Gamma_min = 0.25 (below 3/4, freedom survives); symmetric N=1 Gamma_min = 0.75 (at 3/4, limit-point)** — opposite answers to the papers own open question. ⛭ And **3/4 = 1/4 + 1/2, the free coefficient plus exactly one zero-point quantum**. P10 never names the ordering, and its decomposition **survives either way** since both occupy both sides. The decomposition is safe; the physical question is not.***
+*⌗ **LAST ACTUAL MOVE — r3000: **why P10s ordering-robustness does not reach the tower, and what the ordering question IS.** P10: the free scale factor attains gamma = 1/4 **across the natural ordering family** — ordering-INDEPENDENT. S9: the tower gives 0.25 vs 0.75. **The difference is exactly the zero-point quantum the free case does not have** — hence 3/4 = 1/4 + 1/2. ⇒ **'Which ordering?' IS 'does the graviton towers zero-point energy gravitate at the horizon?'** — the cc problem, reached from inside CRs own construction.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -27,7 +27,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-6** | the interacting tower — the STRADDLE, asserted and unverified | **1** | 1 | 4 ⚠ | BUILD | 11 | — | r2999: the spectrum is COMPUTED in both branches (normal-ordered 0.25, symmetric 0.75) and the straddle holds either way. What is unfixed is the QUANTIZATION ORDERING that selects between them |
+| **PO-6** | the interacting tower — the STRADDLE, asserted and unverified | **1** | 1 | 4 ⚠ | BUILD | 11 | — | r3000: the ordering IS the zero-point question -- normal says the towers vacuum contributes nothing, symmetric says 1/2 per mode. A named instance of the cc problem, reached from inside the construction |
 
 ### D · COSMOLOGY — independent, and the only group confronted with data.
 
