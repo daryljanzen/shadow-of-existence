@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3023: **the physics picks the branch and reproduces the papers known fix.** sec:what-crosses: every mode FREEZES, so a frozen mode has d/d_eta = 0 — and the code gates Theta-hats velocity but **not Psis**, against its own comment. Setting it: P1/P2 = **2.017** against the original 1.471 and the skys 2.212 — **the papers own 2.02**. ⇒ And the defects SEPARATE: **the heights were an IC error and are near-fixed; the SPACING is short by a uniform ~24% (225/225 vs 316/277) and is untouched**.***
+*⌗ **LAST ACTUAL MOVE — r3024: **stretch is ELIMINATED BY EXPERIMENT.** The ladder is sqrt(L(L+2)) x stretch with 2.75 hardcoded, and a 24%% shortfall implies 3.62 — but kk = lL/DM, so I tested: **P2 and P3 are IDENTICAL under a 32%% change**. Acoustic peaks sit at fixed k r_s, so stretch cancels. ⇒ **The shortfall is in D_M/r_s as this instrument computes them** — and C56 measured that pair in the FITTED cosmology cancelling to 0.075%%. **So the cosmologys ratio is right and the instruments is not.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3023: the defects SEPARATE. Heights were an IC error -- gating Psis velocity as the transmission argument requires gives P1/P2 = 2.017 vs the skys 2.212. What remains is a UNIFORMLY SHORT spacing, ~24%, untouched by it |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3024: stretch ELIMINATED by experiment (P2, P3 identical under a 32%% change). The ~24%% shortfall is in D_M/r_s as the SCAN computes them -- while C56 shows the fitted cosmologys own pair cancels to 0.075%% |
 
 ---
 

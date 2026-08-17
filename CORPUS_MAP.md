@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3024 — 2026-08-15 (main line). **`stretch` IS ELIMINATED BY EXPERIMENT, AND THE SHORTFALL IS IN THE INSTRUMENT'S OWN DISTANCE-TO-SOUND-HORIZON RATIO.**
+
+*The multipole ladder is sqrt(L(L+2)) times `stretch`, with 2.75 hardcoded and commented as "fixed parameter-free by Lambda". The arithmetic said a ~24% shortfall implies 3.62. **But the ladder also feeds the wavenumbers, so I tested rather than assumed.***
+
+⇒ *Running the frozen-potential base at stretch = 3.62: **peaks 150/390/615 against the baseline's 165/390/615**. **The second and third peaks are IDENTICAL under a 32% change**, and the first peak's move is the peak-finder's grid step. **`stretch` cancels**: acoustic peaks sit at fixed k times the sound horizon, so their multipole is the wavenumber times the distance regardless of how the ladder is labelled.*
+
+**⌗ SO THE SPACING SHORTFALL IS IN THE SOUND HORIZON OR THE DISTANCE THEMSELVES** — *the spacing is pi times their ratio, and a 24% deficit means **this instrument's ratio is 24% below the sky's**.*
+
+**⚠⚠ AND THAT IS WORTH SETTING BESIDE C56**, *which measured the same pair in the **fitted** cosmology: **the distance −6.20%, the sound horizon −6.27%, the acoustic scale +0.075% — they cancel to seven parts in ten thousand**. ***So the cosmology's own ratio is right and this instrument's is not*** — which makes the residual a property of the propagation code rather than of the expansion history.*
+
 ### Revision r3023 — 2026-08-15 (main line). **THE PHYSICS PICKS THE BRANCH, REPRODUCES THE PAPER'S KNOWN FIX, AND THE TWO DEFECTS THEN SEPARATE.**
 
 *sec:what-crosses answers what the seam hands over: "**every mode exits it and FREEZES before the crossing. A frozen mode has no oscillation for the kernel to damp. So the amplitude and the tilt cross unaltered**" — and "**what does NOT cross is the oscillatory content itself**".*

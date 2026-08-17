@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3023: the defects SEPARATE. Heights were an IC error -- gating Psis velocity as the transmission argument requires gives P1/P2 = 2.017 vs the skys 2.212. What remains is a UNIFORMLY SHORT spacing, ~24%, untouched by it'),
+        'r3024: stretch ELIMINATED by experiment (P2, P3 identical under a 32%% change). The ~24%% shortfall is in D_M/r_s as the SCAN computes them -- while C56 shows the fitted cosmologys own pair cancels to 0.075%%'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,11 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3023: **the physics picks the branch and reproduces the papers known fix.** sec:what-crosses: every mode FREEZES, so a frozen mode has d/d_eta = 0 — and the code gates "
-            "Theta-hats velocity but **not Psis**, against its own comment. Setting it: P1/P2 = "
-            "**2.017** against the original 1.471 and the skys 2.212 — **the papers own 2.02**. ⇒ "
-            "And the defects SEPARATE: **the heights were an IC error and are near-fixed; the "
-            "SPACING is short by a uniform ~24% (225/225 vs 316/277) and is untouched**.")
+LASTFIND = ("r3024: **stretch is ELIMINATED BY EXPERIMENT.** The ladder is sqrt(L(L+2)) x stretch "
+            "with 2.75 hardcoded, and a 24%% shortfall implies 3.62 — but kk = lL/DM, so I tested: "
+            "**P2 and P3 are IDENTICAL under a 32%% change**. Acoustic peaks sit at fixed k r_s, so "
+            "stretch cancels. ⇒ **The shortfall is in D_M/r_s as this instrument computes them** — "
+            "and C56 measured that pair in the FITTED cosmology cancelling to 0.075%%. **So the "
+            "cosmologys ratio is right and the instruments is not.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
