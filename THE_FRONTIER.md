@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3038: **left the rate alone and changed only what the fractions refer to — a three-point scan that is MONOTONE.** Omega vs matter+Lambda only: **0.6839**; as shipped: **0.746**; radiation also in the rate: 0.9346. **The first two share z_onset = 6761, so that comparison is CLEAN.** ⇒ The more the radiation gravitates, the closer the comb sits to pi/r_s. ⌗ And the consistent-fractions version is the WORST of the three — against my own r3036 reasoning.***
+*⌗ **LAST ACTUAL MOVE — r3039: **read the rate.** eq:rate: H^2 = (1/3)(8 pi G rho + Lambda c^2) is **the Friedmann equation the a^(2/3) law SATISFIES** — matter and Lambda, no radiation — and Omega_m,0 **records the epoch, not an independent density**. ⇒ So writing 4 pi G a^2 rho_i as (3H^2/2) Omega_i converts through a relation that **holds for matter and Lambda and not for radiation**. **The shipped code and both my fixes all referred the photon density to a critical density; the framework says use the density itself.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3038: a monotone three-point scan -- 0.684 (fractions vs matter+Lambda), 0.746 (as shipped), 0.935 (radiation in the rate). The comb responds to the GRAVITATING radiation budget; the shipped point sits between two extremes |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3039: the paper states H^2 = (1/3)(8 pi G rho + Lambda c^2) as what the law SATISFIES -- so the (3H^2/2) Omega conversion is exact for matter and wrong for radiation. Re-examine the r3035 physical-density form (1.2765) |
 
 ---
 

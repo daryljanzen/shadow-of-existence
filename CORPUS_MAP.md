@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3039 — 2026-08-15 (main line). **READ IT: THE PAPER STATES THE RATE AND WHAT IT SATISFIES, AND THAT SETTLES WHAT THE PERTURBATION EQUATIONS MAY ASSUME.**
+
+*`eq:rate`, in the paper's own words: the two-thirds law's "**H^2 = (1/3)(8 pi G rho + Lambda c^2)**" — **the Friedmann equation the law SATISFIES**, with matter and Lambda and **no radiation term**. And the companion relation makes the density ratio a clock, so "**Omega_m,0 records the cosmic epoch at which we observe rather than an independent density**".*
+
+⇒ ***So the framework's position is precise, and I had it backwards twice: **the rate is geometric and fixed; the Friedmann relation is something it satisfies, not something that sources it**; and the radiation physically present in the plasma **does not enter that relation**.***
+
+**⌗ AND THAT SETTLES THE PERTURBATION QUESTION WITHOUT GUESSING:** *4 pi G a^2 rho_i is a **physical** quantity for each species, radiation included. Writing it as (3H^2/2) times a density fraction — which is what the code does — **converts it through a relation the framework says the rate merely satisfies with matter and Lambda**. For matter that conversion is exact; **for radiation it is not, because radiation is not in the relation**.*
+
+⇒ ***So the shipped code and both of my "fixes" were wrong in the same way: **all three referred the photon density to some critical density**, when the framework says to use the photon density itself. **That is the r3035 physical-density form, which returned 1.2765 — a number I dismissed as a normalisation error and should re-examine as the framework's own answer.****
+
 ### Revision r3038 — 2026-08-15 (main line). **THE CONSISTENT-FRACTIONS TEST RUN CLEAN, AND A THREE-POINT SCAN THAT IS MONOTONE.**
 
 *I had put radiation into the rate, which is the one place it does not belong. Left the rate untouched and changed only what the density fractions are referred to:*
