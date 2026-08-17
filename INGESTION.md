@@ -516,3 +516,4 @@ r2991  LATENT      Planck TT with per-bin errors is on disk; #583 is a script-re
 r2992  LATENT      #583 discharged: sky peaks measured (220.4/537.7/817.3), substitution error 0.0043 = 0.7% of the gap.
 r2993  LATENT      PO-7 STRUCK: phase forced then derived; the 0.615 real at 76 sigma with 0.7% substitution error. Two rows remain.
 r2994  LATENT      the full-spectrum refit is banked: CR 1.891/dof vs LCDM 0.983/dof on 215 bins, Delta chi2 190.7.
+r2995  LATENT      odd/even produced: LCDM 2.200, CR 2.185, sky 2.256+-0.077. Both within ~1 sigma; arms differ by 0.015.

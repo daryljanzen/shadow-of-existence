@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r2995 — 2026-08-15 (main line). **THE ODD/EVEN PATTERN PRODUCED: BOTH ARMS THROUGH THE TRANSFER, AGAINST THE SKY.**
+
+*C12 asked to "produce the pattern from an R_b already computed on a leg already identified", and r2978 found the loading ratio alone gives 3.500 — the driving ratio, not the observed one. **Done properly: regenerate both arms at their banked five-parameter fits through CAMB, apply cr_supp to the CR arm, and measure.***
+
+    LCDM   P1=220(5717)  P2=536(2599)  P3=813(2535)  P4=1126     P1/P2 = 2.200   P3/P2 = 0.975
+    CR     P1=223(5701)  P2=538(2609)  P3=814(2547)  P4=1126     P1/P2 = 2.185   P3/P2 = 0.976
+    sky                                                          P1/P2 = 2.2564 +- 0.0772
+
+⇒ ***Both arms land within **0.7-0.9 sigma of the sky**, and **the two arms differ from each other by 0.015, a fifth of the sky's error bar**. The baryon loading's imprint is the same in both, exactly as C30 argued from R being a ratio of contents — **and now shown at the spectrum level rather than the driving level**.***
+
+**⌗ AND THAT DISCHARGES THE STEP IN THE FORM C12 ASKED FOR:** *not "work out the odd/even physics" but **"produce the pattern and put it against the sky"**. Produced, and put. **r2978's 3.500 was the driving ratio; the transfer turns it into 2.19, and the sky says 2.26 +- 0.08.***
+
+**⚠ Bounded:** *TT only, peak heights only, and the CR arm here is the **suppression-model** arm whose full-spectrum fit is 1.891/dof — **agreeing on the odd/even ratio does not rescue that**.*
+
 ### Revision r2994 — 2026-08-15 (main line). **THE FULL-SPECTRUM REFIT IS DONE AND BANKED, AND ITS CONTROL SITS AT 0.983/dof.**
 
 *Assembled from three located files rather than read about: `computations/planck_tt_likelihood/` carries **chi2_of_spectrum.py**, **fit.py**, and both **cr.json** and **lcdm.json** — banked minimisations.*

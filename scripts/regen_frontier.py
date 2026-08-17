@@ -22,7 +22,7 @@ EST = {
  'PO-6':  ('the interacting tower — the STRADDLE, asserted and unverified', 1, 1, 4, None,
             'r2976: ONE clause left. Bounded-below ANSWERED (S8); the UV definition MET-NOT-OWED (generic, CRs part 1-dim and shear-limited); Gamma-hats EXISTENCE folds into that (r2975). What remains is the STRADDLE -- CR-specific, load-bearing for P10s decomposition, asserted rather than computed. A BUILD: it needs the interacting spectrum, not a reading'),
  'PO-10':  ('the scalar remainder — one RUN and one REFIT', 2, 2, 1, None,
-            'r2994: the FULL-SPECTRUM refit is DONE (215 bins, CR 1.891/dof vs LCDM 0.983/dof, Delta chi2 190.7). One step left: produce the odd/even pattern through the transfer'),
+            'r2995: BOTH steps discharged -- the full-spectrum refit is banked (CR 1.891/dof vs LCDM 0.983) and the odd/even pattern is produced (2.185 vs 2.200, sky 2.256 +- 0.077)'),
 }
 # ** THE COUNTER, AND THE CRITERION IT IS SCORED AGAINST (r2847, after Daryl caught two
 # turns wrongly scored 0).  *** A turn is a 0 ONLY IF it found the problem space DIFFERENT
@@ -39,12 +39,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r2994: **the full-spectrum refit is DONE and BANKED** — chi2_of_spectrum.py, fit.py, "
-            "cr.json and lcdm.json, all in computations/planck_tt_likelihood/. **215 bins, both "
-            "arms on the same five parameters: CR 397.13 (1.891/dof), LCDM 206.44 (0.983/dof), "
-            "Delta chi2 = 190.7.** ⛭ And **the control at 0.983 is a WORKING instrument** — not the "
-            "7.14 / 3.81 / 1.18 I have carried and caveated all session, which belong to a "
-            "different comparison. PO-10s first step is discharged.")
+LASTFIND = ("r2995: **the odd/even pattern PRODUCED — both arms regenerated at their banked fits and "
+            "measured.** LCDM P1/P2 = 2.200, CR 2.185, **sky 2.2564 +- 0.0772** — both arms within "
+            "0.7-0.9 sigma, and the two arms differ by 0.015, a fifth of the skys error bar. **The "
+            "baryon loadings imprint is the same in both, now shown at C_ell level.** r2978s 3.500 "
+            "was the DRIVING ratio; the transfer turns it into 2.19. `PO-10`s last step "
+            "discharged.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
