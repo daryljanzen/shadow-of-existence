@@ -23,6 +23,9 @@ _S_RATE=_SW('RATE',0.0)   # 0 = geometric (shipped) | 1 = radiation drives the r
 _S_TOT =_SW('TOT', 1.0)   # 1 = Omega denominator includes radiation (shipped) | 0 = rate's own total
 _S_SRC =_SW('SRC', 1.0)   # 1 = photons+neutrinos source the potential (shipped) | 0 = they do not
 _S_CS  =_SW('CS',  1.0)   # 1 = sound speed carries baryon loading (shipped) | 0 = pure 1/sqrt(3)
+_S_NU  =_SW('NU',  1.0)   # 1 = neutrinos present (shipped) | 0 = photons only
+_S_MAT =_SW('MAT', 1.0)   # 1 = matter fraction diluted by the same total (shipped) | 0 = vs rate's own
+_S_LA  =_SW('LA',301.6)   # the acoustic-scale target the seam datum is solved to
 Hub=lambda a: H0*np.sqrt(_S_RATE*Or_content/a**4+Om/a**3+OL)                    # *** NO RADIATION TERM ***
 Or_content=4.15e-5/(H0/100)**2   # *** omega_r is FIXED by T_CMB; Omega_r = omega_r/h^2.  The old
                                  # form had BOTH scaling factors inverted, giving z_eq=2905 where
@@ -36,12 +39,12 @@ _eta_seed=float(quad(lambda a: c/(a**2*Hub(a)), 1e-14, ag[0], limit=200)[0])
 eg=np.concatenate([[_eta_seed],_eta_seed+cumulative_trapezoid(c/(ag**2*Hub(ag)),ag)])
 Hc_of=CubicSpline(eg, ag*Hub(ag)/c)
 rt=_S_TOT*Or_content/ag**4+Om/ag**3+OL
-Og_of=CubicSpline(eg,(1-fnu)*(Or_content/ag**4)/rt); On_of=CubicSpline(eg,fnu*(Or_content/ag**4)/rt)
-Oc_of=CubicSpline(eg,(Om/ag**3)/rt); Rb_of=CubicSpline(eg, Rb_rec*(ag/a_rec))
+Og_of=CubicSpline(eg,(1-_S_NU*fnu)*(Or_content/ag**4)/rt); On_of=CubicSpline(eg,_S_NU*fnu*(Or_content/ag**4)/rt)
+Oc_of=CubicSpline(eg,(Om/ag**3)/(rt if _S_MAT else (Om/ag**3+OL))); Rb_of=CubicSpline(eg, Rb_rec*(ag/a_rec))
 eta_rec=float(np.interp(a_rec,ag,eg)); eta_0=eg[-1]
 rs_f=lambda zs: quad(lambda a: c/(a**2*Hub(a)*np.sqrt(3*(1+_S_CS*Rb_rec*a/a_rec))), 1/(1+zs), a_rec, limit=250)[0]
 DM=eta_0-eta_rec
-zs=brentq(lambda z: np.pi*DM/rs_f(z)-301.6, 1500., 60000.)
+zs=brentq(lambda z: np.pi*DM/rs_f(z)-_S_LA, 1500., 60000.)
 a_onset=1/(1+zs); eta_onset=float(np.interp(a_onset,ag,eg)); rs=rs_f(zs); lA=np.pi*DM/rs
 print("="*80); print("CRRUN19 — PHASE GATED FOR Psi AS WELL"); print("="*80)
 print(f"\n  z_onset={zs:.0f}  eta_onset={eta_onset:.2f}  eta_rec={eta_rec:.1f}  D={DM:.0f}  r_s={rs:.2f}  l_A={lA:.1f}")

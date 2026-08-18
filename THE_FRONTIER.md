@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3042: **the instrument is built — RADSCAN.py, four independent switches, baseline verified against the shipped 150/360/555/780.** Seven radiation sites enumerated first; the rate excludes it, the Omega normaliser includes it, and three fractions inherit the mismatch. ⇒ First readable table: **RATE=1 gives the best POSITIONS (210/510/765 vs the skys 220/536/813) and SRC=0 the best HEIGHT (1.971 vs 2.212). No single setting gets both** — visible in one table instead of inferred across fifteen revisions.***
+*⌗ **LAST ACTUAL MOVE — r3043: **all seven sites wired, baseline still exact, and the first peak lands at 225 against the skys 220.** RATE=1,NU=0 gives 225/510/780 (+2.3%% on P1, the closest this row has come); **RATE=1,MAT=0 puts the THIRD peak at 810 against 813, -0.4%%**, while its first is +9.1%% off. **Different settings match different peaks best** — not the shape a single wrong constant makes. ⚠ Heights do not follow: position-good settings run 3.65-7.32 against 2.212, height-good ones throw P1 to 345.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3042: RADSCAN.py built -- four independent radiation switches, baseline verified. RATE=1 best positions, SRC=0 best height, no setting gets both. The question is now answerable by scan rather than by argument |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3043: all seven sites wired. RATE=1,NU=0 gives P1 = 225 vs the skys 220; RATE=1,MAT=0 gives P3 = 810 vs 813. Different settings match different peaks -- and heights follow none of them |
 
 ---
 

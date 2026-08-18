@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3042: RADSCAN.py built -- four independent radiation switches, baseline verified. RATE=1 best positions, SRC=0 best height, no setting gets both. The question is now answerable by scan rather than by argument'),
+        'r3043: all seven sites wired. RATE=1,NU=0 gives P1 = 225 vs the skys 220; RATE=1,MAT=0 gives P3 = 810 vs 813. Different settings match different peaks -- and heights follow none of them'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,13 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3042: **the instrument is built — RADSCAN.py, four independent switches, baseline "
-            "verified against the shipped 150/360/555/780.** Seven radiation sites enumerated "
-            "first; the rate excludes it, the Omega normaliser includes it, and three fractions "
-            "inherit the mismatch. ⇒ First readable table: **RATE=1 gives the best POSITIONS "
-            "(210/510/765 vs the skys 220/536/813) and SRC=0 the best HEIGHT (1.971 vs 2.212). No "
-            "single setting gets both** — visible in one table instead of inferred across fifteen "
-            "revisions.")
+LASTFIND = ("r3043: **all seven sites wired, baseline still exact, and the first peak lands at 225 "
+            "against the skys 220.** RATE=1,NU=0 gives 225/510/780 (+2.3%% on P1, the closest this "
+            "row has come); **RATE=1,MAT=0 puts the THIRD peak at 810 against 813, -0.4%%**, while "
+            "its first is +9.1%% off. **Different settings match different peaks best** — not the "
+            "shape a single wrong constant makes. ⚠ Heights do not follow: position-good settings "
+            "run 3.65-7.32 against 2.212, height-good ones throw P1 to 345.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

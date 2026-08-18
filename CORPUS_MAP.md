@@ -146,6 +146,24 @@ sources: [cowork, chat]
 
 
 
+### Revision r3043 — 2026-08-15 (main line). **ALL SEVEN SITES WIRED, BASELINE STILL EXACT, AND THE FIRST PEAK LANDS AT 225 AGAINST THE SKY'S 220.**
+
+*Added the neutrino fraction, the matter-fraction denominator and the acoustic-scale target as switches; **baseline still reproduces 150/360/555/780 exactly**.*
+
+    sky                    220, 536, 813      P1/P2 = 2.212
+    shipped                150, 360, 555, 780   1.447
+    NU=0                   150, 360, 555, 795   1.198
+    MAT=0                  525, 750             (loses structure)
+    CS=0                   150, 360, 570, 825   1.165
+    RATE=1, NU=0           225, 510, 780        3.652
+    RATE=1, MAT=0          240, 555, 810        7.323
+    RATE=1, SRC=0          345, 585, 870        0.693
+    RATE=1, NU=0, CS=0     210, 495, 750        4.645
+
+**⛭⛭ TWO THINGS THE TABLE SHOWS THAT NO AMOUNT OF ARGUMENT WOULD HAVE:** *`RATE=1,NU=0` puts the **first peak at 225 against the sky's 220 — +2.3%**, the closest this row has ever come; and `RATE=1,MAT=0` puts the **third peak at 810 against 813 — −0.4%**, while its first is +9.1% off. ***Different settings match different peaks best**, which is not the shape a single wrong constant produces.*
+
+**⚠ And the heights do not come with them:** *every position-good setting runs 3.65 to 7.32 against the sky's 2.212, and the height-good settings throw the first peak out to 345. **Positions and heights are driven by different switches and no combination tried gets both.***
+
 ### Revision r3042 — 2026-08-15 (main line). **THE INSTRUMENT BUILT: `RADSCAN.py`, FOUR INDEPENDENT SWITCHES, AND THE FIRST READABLE TABLE.**
 
 *Enumerated every site radiation enters before writing anything — **seven** — of which the rate excludes it and the density normaliser includes it, with the photon, neutrino and matter fractions all inheriting that mismatch through their denominator. Wired four as independent environment switches, **all defaulting to shipped**, and verified the baseline reproduces 150/360/555/780 exactly.*
