@@ -565,3 +565,4 @@ r3040  LATENT      the frameworks prescription destroys the spectrum (2 peaks). 
 r3041  LATENT      my error: three runs under three descriptions were ONE denominator change. r3040 withdrawn.
 r3042  INSTRUMENT  RADSCAN.py: four independent radiation switches, baseline verified. RATE=1 best positions, SRC=0 best height.
 r3043  INSTRUMENT  all seven sites wired. RATE=1,NU=0 gives P1=225 vs sky 220. Heights follow no position-good setting.
+r3044  LATENT      axioms read: expansion is the layer sequence, plasma dynamics are on the layer. RATE=0 by axiom; its good positions are a symptom.

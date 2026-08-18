@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3043: **all seven sites wired, baseline still exact, and the first peak lands at 225 against the skys 220.** RATE=1,NU=0 gives 225/510/780 (+2.3%% on P1, the closest this row has come); **RATE=1,MAT=0 puts the THIRD peak at 810 against 813, -0.4%%**, while its first is +9.1%% off. **Different settings match different peaks best** — not the shape a single wrong constant makes. ⚠ Heights do not follow: position-good settings run 3.65-7.32 against 2.212, height-good ones throw P1 to 345.***
+*⌗ **LAST ACTUAL MOVE — r3044: **the axiom structure read — nine formal statements, and it separates what I kept welding.** The expansion is a property of the LAYER SEQUENCE (geometric because the layers are); **the plasma lives ON a layer, so every content sources its dynamics**; and a valid projection must **faithfully encode SIGNAL PROPAGATION**, which IS the acoustic physics. ⇒ **So RATE is not a free knob — the framework says RATE=0** — and RATE=1s good positions are a SYMPTOM: something inside the layer is supplying what that switch supplies.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3043: all seven sites wired. RATE=1,NU=0 gives P1 = 225 vs the skys 220; RATE=1,MAT=0 gives P3 = 810 vs 813. Different settings match different peaks -- and heights follow none of them |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3044: the axioms say RATE=0 (expansion is the layer sequence) and every content sources the layers dynamics. So RATE=1s good positions are a symptom -- look INSIDE the layer for what supplies it |
 
 ---
 

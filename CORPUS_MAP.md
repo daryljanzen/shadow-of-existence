@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3044 — 2026-08-15 (main line). **THE AXIOM STRUCTURE READ, AND IT SPEAKS DIRECTLY TO THE MODELLING LAYERS.**
+
+*P7 carries **nine formal statements** and no axiom labels, which is why the first search found nothing.*
+
+*· **Lorentzian spacetime, unmodified**: GR's causal structure "retained without modification". · **Layers with Riemannian metrics**, ordered by a cosmic time "**not defined operationally and not identified with any coordinate time**". · **Representability**: each layer has some spacelike hypersurface, with "**no uniqueness or physical preference**". · **Non-identity**: the hypersurface "**represents the layer but does not constitute it**". · **The projection principle**: a spacetime is valid iff its causal structure "**faithfully encodes SIGNAL PROPAGATION**" on the layer.*
+
+**⌗ AND THAT IS THE READING THE MODEL NEEDED:** *the **expansion is a property of the layer sequence** — how the layer metric evolves in cosmic time — **and is geometric because the layers are**; **the plasma lives ON a layer**, so its dynamics are ordinary physics there and **every content sources them**; and what a valid projection must preserve is named explicitly: **signal propagation, which IS the acoustic physics**.*
+
+⇒ ***So the two things I kept welding together are separated by axiom rather than by preference: **radiation belongs in the layer's dynamics and not in the layer sequence's evolution**. The scan's rate switch is therefore not a free knob — **the framework says it is off** — while the source, neutrino, matter and sound-speed switches are all layer dynamics and all belong on.***
+
+**⚠ Which makes the rate switch's good positions (225 against 220) a symptom rather than a solution** — *something else is supplying what it supplies, and the axioms say to look inside the layer.*
+
 ### Revision r3043 — 2026-08-15 (main line). **ALL SEVEN SITES WIRED, BASELINE STILL EXACT, AND THE FIRST PEAK LANDS AT 225 AGAINST THE SKY'S 220.**
 
 *Added the neutrino fraction, the matter-fraction denominator and the acoustic-scale target as switches; **baseline still reproduces 150/360/555/780 exactly**.*

@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3043: all seven sites wired. RATE=1,NU=0 gives P1 = 225 vs the skys 220; RATE=1,MAT=0 gives P3 = 810 vs 813. Different settings match different peaks -- and heights follow none of them'),
+        'r3044: the axioms say RATE=0 (expansion is the layer sequence) and every content sources the layers dynamics. So RATE=1s good positions are a symptom -- look INSIDE the layer for what supplies it'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3043: **all seven sites wired, baseline still exact, and the first peak lands at 225 "
-            "against the skys 220.** RATE=1,NU=0 gives 225/510/780 (+2.3%% on P1, the closest this "
-            "row has come); **RATE=1,MAT=0 puts the THIRD peak at 810 against 813, -0.4%%**, while "
-            "its first is +9.1%% off. **Different settings match different peaks best** — not the "
-            "shape a single wrong constant makes. ⚠ Heights do not follow: position-good settings "
-            "run 3.65-7.32 against 2.212, height-good ones throw P1 to 345.")
+LASTFIND = ("r3044: **the axiom structure read — nine formal statements, and it separates what I "
+            "kept welding.** The expansion is a property of the LAYER SEQUENCE (geometric because "
+            "the layers are); **the plasma lives ON a layer, so every content sources its "
+            "dynamics**; and a valid projection must **faithfully encode SIGNAL PROPAGATION**, "
+            "which IS the acoustic physics. ⇒ **So RATE is not a free knob — the framework says "
+            "RATE=0** — and RATE=1s good positions are a SYMPTOM: something inside the layer is "
+            "supplying what that switch supplies.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
