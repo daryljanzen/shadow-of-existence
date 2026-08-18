@@ -20,7 +20,7 @@ sources: [chat]
 | **STATE** | 47 |
 | **METHOD** | 30 |
 | **RECORD** | 81 |
-| **UNCLASSIFIED** | 7 |
+| **UNCLASSIFIED** | 8 |
 
 ## ⌗ DECLARED CLASSES
 
@@ -244,6 +244,7 @@ sources: [chat]
 | `STATE_OF_THE_STATE.md` | UNCLASSIFIED |  | — | c54.138 |  |
 | `THE_BAKE.md` | UNCLASSIFIED |  | — | — |  |
 | `THE_FRONTIER.md` | UNCLASSIFIED |  | — | — |  |
+| `THE_MODEL_LEDGER.md` | UNCLASSIFIED |  | — | — |  |
 | `THE_REGISTER.md` | UNCLASSIFIED |  | — | — |  |
 | `TURN_PROTOCOL.md` | UNCLASSIFIED |  | — | — |  |
 

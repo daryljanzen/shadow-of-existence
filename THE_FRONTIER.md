@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3044: **the axiom structure read — nine formal statements, and it separates what I kept welding.** The expansion is a property of the LAYER SEQUENCE (geometric because the layers are); **the plasma lives ON a layer, so every content sources its dynamics**; and a valid projection must **faithfully encode SIGNAL PROPAGATION**, which IS the acoustic physics. ⇒ **So RATE is not a free knob — the framework says RATE=0** — and RATE=1s good positions are a SYMPTOM: something inside the layer is supplying what that switch supplies.***
+*⌗ **LAST ACTUAL MOVE — r3045: **THE MODEL LEDGER built and gated** — every switch in RADSCAN bound to the theory statement that determines it, with DETERMINED vs OPEN marked and sourced. **The gate caught a missing switch on its first run.** ⇒ And the ledger makes the shape unavoidable: **every setting that improves the fit violates a DETERMINED switch, and the all-determined configuration is the shipped one, which is the worst.** Either the implementation misplaces something the switches do not expose, or a determined value is wrong.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3045 — 2026-08-15 (main line). **THE MODEL LEDGER: EVERY SWITCH BOUND TO THE THEORY STATEMENT THAT DETERMINES IT, AND GATED.**
+
+*Daryl asked for a way to hold the theory alongside the computations so it stops being lost. `THE_MODEL_LEDGER.md` binds each adjustable term in `RADSCAN.py` to what the corpus says about it, marks it **DETERMINED** or **OPEN**, and cites the source. `corpus/check_model_ledger.py` fails if the two ever drift — **and it caught a missing switch on its first run**.*
+
+**DETERMINED:** *the rate switch is off (expansion is the layer sequence); the source and neutrino switches are on (the plasma lives on a layer and every content sources its dynamics); the sound-speed switch is on.* **OPEN:** *the density denominator — **which is the defect**, since the rate excludes radiation and the denominator includes it — the matter fraction's denominator, and the acoustic-scale target, which is a **target rather than a prediction**.*
+
+**⛔ AND THE LEDGER MAKES ONE THING UNAVOIDABLE:** *every setting that improves the fit **violates a determined switch**, and the all-determined configuration is the shipped one, **which is the worst**.*
+
+⇒ ***So there are exactly two possibilities and the ledger is what keeps them apart: **either the implementation misplaces something the switches do not expose, or a determined value is wrong**.***
+
 ### Revision r3044 — 2026-08-15 (main line). **THE AXIOM STRUCTURE READ, AND IT SPEAKS DIRECTLY TO THE MODELLING LAYERS.**
 
 *P7 carries **nine formal statements** and no axiom labels, which is why the first search found nothing.*

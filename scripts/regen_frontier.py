@@ -41,13 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3044: **the axiom structure read — nine formal statements, and it separates what I "
-            "kept welding.** The expansion is a property of the LAYER SEQUENCE (geometric because "
-            "the layers are); **the plasma lives ON a layer, so every content sources its "
-            "dynamics**; and a valid projection must **faithfully encode SIGNAL PROPAGATION**, "
-            "which IS the acoustic physics. ⇒ **So RATE is not a free knob — the framework says "
-            "RATE=0** — and RATE=1s good positions are a SYMPTOM: something inside the layer is "
-            "supplying what that switch supplies.")
+LASTFIND = ("r3045: **THE MODEL LEDGER built and gated** — every switch in RADSCAN bound to the "
+            "theory statement that determines it, with DETERMINED vs OPEN marked and sourced. "
+            "**The gate caught a missing switch on its first run.** ⇒ And the ledger makes the "
+            "shape unavoidable: **every setting that improves the fit violates a DETERMINED "
+            "switch, and the all-determined configuration is the shipped one, which is the "
+            "worst.** Either the implementation misplaces something the switches do not expose, or "
+            "a determined value is wrong.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
