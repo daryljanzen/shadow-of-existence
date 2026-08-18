@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3044: the axioms say RATE=0 (expansion is the layer sequence) and every content sources the layers dynamics. So RATE=1s good positions are a symptom -- look INSIDE the layer for what supplies it'),
+        'r3046: the abstract says the rate is fixed by LAMBDA ALONE, so Omega_m may be an epoch marker rather than a gravitating density -- which would make the codes matter fraction the same category error as TOT'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,13 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3045: **THE MODEL LEDGER built and gated** — every switch in RADSCAN bound to the "
-            "theory statement that determines it, with DETERMINED vs OPEN marked and sourced. "
-            "**The gate caught a missing switch on its first run.** ⇒ And the ledger makes the "
-            "shape unavoidable: **every setting that improves the fit violates a DETERMINED "
-            "switch, and the all-determined configuration is the shipped one, which is the "
-            "worst.** Either the implementation misplaces something the switches do not expose, or "
-            "a determined value is wrong.")
+LASTFIND = ("r3046: **reading P7 linearly, and the abstract is already load-bearing.** The Nariai "
+            "member expands by the sinh^(2/3) law **with ITS RATE FIXED BY THE COSMOLOGICAL "
+            "CONSTANT ALONE** — stronger than the matter-and-Lambda I had. ⇒ **So Omega_m may be an "
+            "EPOCH MARKER on a geometric law, not a density that gravitates** — and the codes "
+            "Omega_c enters the potential source as a gravitating matter fraction. **That would be "
+            "the same category error as TOT, one ledger row over.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

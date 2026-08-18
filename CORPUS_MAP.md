@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3046 — 2026-08-15 (main line). **READING P7 LINEARLY: THE ABSTRACT IS ALREADY LOAD-BEARING FOR THE MODEL.**
+
+*Word for word, not grepped. **The sentence that matters:** the Nariai member "**expands by the exact sinh-two-thirds law of flat LambdaCDM, ITS RATE FIXED BY THE COSMOLOGICAL CONSTANT ALONE**".*
+
+⇒ ***That is stronger than what I had been working with.** I had "matter and Lambda, no radiation" from the rate equation. **The abstract says the rate is fixed by one constant** — the form is the flat-LambdaCDM matter-plus-Lambda solution, but its rate is set by Lambda alone, and the companion relation already said the matter density parameter "**records the cosmic epoch at which we observe rather than an independent density**".*
+
+**⛔⛔ SO THERE MAY BE A THIRD IMPORT I HAVE NOT TESTED:** *the code's matter fraction enters the potential source **as a gravitating matter fraction**. But if the matter parameter is an **epoch marker on a geometric law** rather than a density that sources the rate, **then treating it as a gravitating fraction in the perturbation equations is the same category error as the density denominator, one ledger row over**. The ledger's matter row is updated to carry this.*
+
+**⌗ And the abstract's method is worth carrying:** *it closes alternatives by name — the four-manifold-as-existent is "a category error", synchrony-as-no-present a "modal fallacy … falsified outright by the measured isotropy of the cosmological redshift". **The framework argues by elimination, which is the discipline the ledger imposes on the switches.***
+
 ### Revision r3045 — 2026-08-15 (main line). **THE MODEL LEDGER: EVERY SWITCH BOUND TO THE THEORY STATEMENT THAT DETERMINES IT, AND GATED.**
 
 *Daryl asked for a way to hold the theory alongside the computations so it stops being lost. `THE_MODEL_LEDGER.md` binds each adjustable term in `RADSCAN.py` to what the corpus says about it, marks it **DETERMINED** or **OPEN**, and cites the source. `corpus/check_model_ledger.py` fails if the two ever drift — **and it caught a missing switch on its first run**.*

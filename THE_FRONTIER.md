@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3045: **THE MODEL LEDGER built and gated** — every switch in RADSCAN bound to the theory statement that determines it, with DETERMINED vs OPEN marked and sourced. **The gate caught a missing switch on its first run.** ⇒ And the ledger makes the shape unavoidable: **every setting that improves the fit violates a DETERMINED switch, and the all-determined configuration is the shipped one, which is the worst.** Either the implementation misplaces something the switches do not expose, or a determined value is wrong.***
+*⌗ **LAST ACTUAL MOVE — r3046: **reading P7 linearly, and the abstract is already load-bearing.** The Nariai member expands by the sinh^(2/3) law **with ITS RATE FIXED BY THE COSMOLOGICAL CONSTANT ALONE** — stronger than the matter-and-Lambda I had. ⇒ **So Omega_m may be an EPOCH MARKER on a geometric law, not a density that gravitates** — and the codes Omega_c enters the potential source as a gravitating matter fraction. **That would be the same category error as TOT, one ledger row over.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3044: the axioms say RATE=0 (expansion is the layer sequence) and every content sources the layers dynamics. So RATE=1s good positions are a symptom -- look INSIDE the layer for what supplies it |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3046: the abstract says the rate is fixed by LAMBDA ALONE, so Omega_m may be an epoch marker rather than a gravitating density -- which would make the codes matter fraction the same category error as TOT |
 
 ---
 
