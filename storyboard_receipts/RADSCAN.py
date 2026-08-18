@@ -26,6 +26,8 @@ _S_CS  =_SW('CS',  1.0)   # 1 = sound speed carries baryon loading (shipped) | 0
 _S_NU  =_SW('NU',  1.0)   # 1 = neutrinos present (shipped) | 0 = photons only
 _S_MAT =_SW('MAT', 1.0)   # 1 = matter fraction diluted by the same total (shipped) | 0 = vs rate's own
 _S_LA  =_SW('LA',301.6)   # the acoustic-scale target the seam datum is solved to
+_S_GRAV=_SW('GRAV',0.0)   # 0 = species enter via (3Hc^2/2)Omega (through the rate, shipped)
+                          # 1 = every species by its own physical 4piG a^2 rho, symmetrically
 Hub=lambda a: H0*np.sqrt(_S_RATE*Or_content/a**4+Om/a**3+OL)                    # *** NO RADIATION TERM ***
 Or_content=4.15e-5/(H0/100)**2   # *** omega_r is FIXED by T_CMB; Omega_r = omega_r/h^2.  The old
                                  # form had BOTH scaling factors inverted, giving z_eq=2905 where
@@ -41,6 +43,9 @@ Hc_of=CubicSpline(eg, ag*Hub(ag)/c)
 rt=_S_TOT*Or_content/ag**4+Om/ag**3+OL
 Og_of=CubicSpline(eg,(1-_S_NU*fnu)*(Or_content/ag**4)/rt); On_of=CubicSpline(eg,_S_NU*fnu*(Or_content/ag**4)/rt)
 Oc_of=CubicSpline(eg,(Om/ag**3)/(rt if _S_MAT else (Om/ag**3+OL))); Rb_of=CubicSpline(eg, Rb_rec*(ag/a_rec))
+_H0c=H0/c
+_Wr_of=CubicSpline(eg,(3.0/2.0)*(_H0c**2)*Or_content/ag**2)
+_Wm_of=CubicSpline(eg,(3.0/2.0)*(_H0c**2)*Om/ag)
 eta_rec=float(np.interp(a_rec,ag,eg)); eta_0=eg[-1]
 rs_f=lambda zs: quad(lambda a: c/(a**2*Hub(a)*np.sqrt(3*(1+_S_CS*Rb_rec*a/a_rec))), 1/(1+zs), a_rec, limit=250)[0]
 DM=eta_0-eta_rec
@@ -134,7 +139,7 @@ def modes_all(kk):
         _slip = (kk**2*Rb**2/(3.0*(1+Rb)**2*_tp)) if _on else 0.0
         _PSG = 0.0 if os.environ.get("NOPSG","0")=="1" else Ogv*_sgg
         Ps=Ph-6*Hc**2*(Onv*sig + _PSG)/kk**2
-        Php=-Hc*Ps-kk**2*Ph/(3*Hc)-(Hc/2)*(_S_SRC*(Ogv*dg+Onv*dn)+Ocv*dc)
+        Php=((-Hc*Ps-kk**2*Ph/(3*Hc)-(_Wr_of(e)*_S_SRC*((1-_S_NU*fnu)*dg+_S_NU*fnu*dn)+_Wm_of(e)*dc)/(3*Hc)) if _S_GRAV else (-Hc*Ps-kk**2*Ph/(3*Hc)-(Hc/2)*(_S_SRC*(Ogv*dg+Onv*dn)+Ocv*dc)))
         out=np.empty_like(y)
         out[:,0]=-tc+3*Php
         out[:,1]=-Hc*tc+kk**2*Ps

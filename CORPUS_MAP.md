@@ -146,6 +146,21 @@ sources: [cowork, chat]
 
 
 
+### Revision r3047 — 2026-08-15 (main line). **SYMMETRIC GRAVITATION WIRED AND RUN: IT DOES NOT FIX IT, AND THE PATTERN THAT SURVIVES IS THE RESULT.**
+
+*Daryl: matter should gravitate where radiation does. Added a switch putting **every species into the potential by its own physical density** rather than through the rate, symmetrically. Baseline still exact.*
+
+    config            P1        P2        P3     height
+    shipped        -31.8%    -32.8%    -31.7%     1.45
+    RATE=1,NU=0     +2.3%     -4.9%     -4.1%     3.65
+    RATE=1,MAT=0    +9.1%     +3.5%     -0.4%     7.32
+    GRAV=1,NU=0    -25.0%     +6.3%     -0.4%     5.91
+    sky                                           2.21
+
+⇒ ***The outer peaks can be landed — **the third peak hits 810 against 813 in TWO independent settings, by different physics** — and **the first peak is the one that will not come with them**. Four configurations, three different physics changes, and it stays anomalous.***
+
+**⌗ SO IT IS A PROPERTY OF THE FIRST PEAK, NOT OF THE TERMS BEING VARIED** — *and that is the transient region, which `PO-7` established as where every measurement in this arm lives. **The scan has told me something no single run could: stop varying global terms and look at what is special about the first peak.***
+
 ### Revision r3046 — 2026-08-15 (main line). **READING P7 LINEARLY: THE ABSTRACT IS ALREADY LOAD-BEARING FOR THE MODEL.**
 
 *Word for word, not grepped. **The sentence that matters:** the Nariai member "**expands by the exact sinh-two-thirds law of flat LambdaCDM, ITS RATE FIXED BY THE COSMOLOGICAL CONSTANT ALONE**".*

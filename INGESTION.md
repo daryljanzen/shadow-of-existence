@@ -568,3 +568,4 @@ r3043  INSTRUMENT  all seven sites wired. RATE=1,NU=0 gives P1=225 vs sky 220. H
 r3044  LATENT      axioms read: expansion is the layer sequence, plasma dynamics are on the layer. RATE=0 by axiom; its good positions are a symptom.
 r3045  INSTRUMENT  THE_MODEL_LEDGER: switches bound to theory, DETERMINED vs OPEN, gated by check_model_ledger.
 r3046  LATENT      abstract: the rate is fixed by LAMBDA ALONE. Omega_m may be an epoch marker, not a gravitating density.
+r3047  LATENT      outer peaks land (P3 810 vs 813 twice); the first peak never does. A property of P1, not of the varied terms.

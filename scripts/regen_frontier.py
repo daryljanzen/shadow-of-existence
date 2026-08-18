@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3046: the abstract says the rate is fixed by LAMBDA ALONE, so Omega_m may be an epoch marker rather than a gravitating density -- which would make the codes matter fraction the same category error as TOT'),
+        'r3047: four configurations, three physics changes -- the OUTER peaks land (P3 at 810 vs 813 twice) and the FIRST peak never does. It is a property of P1, which is the transient region PO-7 already identified'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3046: **reading P7 linearly, and the abstract is already load-bearing.** The Nariai "
-            "member expands by the sinh^(2/3) law **with ITS RATE FIXED BY THE COSMOLOGICAL "
-            "CONSTANT ALONE** — stronger than the matter-and-Lambda I had. ⇒ **So Omega_m may be an "
-            "EPOCH MARKER on a geometric law, not a density that gravitates** — and the codes "
-            "Omega_c enters the potential source as a gravitating matter fraction. **That would be "
-            "the same category error as TOT, one ledger row over.**")
+LASTFIND = ("r3047: **symmetric gravitation wired and run — it does not fix it, and the surviving "
+            "pattern IS the result.** Per-peak against the sky: shipped -31.8/-32.8/-31.7%%; "
+            "RATE=1,NU=0 +2.3/-4.9/-4.1%%; RATE=1,MAT=0 +9.1/+3.5/**-0.4**%%; GRAV=1,NU=0 "
+            "-25.0/+6.3/**-0.4**%%. ⇒ **The OUTER peaks can be landed — P3 hits 810 against 813 in "
+            "TWO independent settings by different physics — and the FIRST peak will not come with "
+            "them.** A property of P1, not of the terms being varied.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
