@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3041: three runs under three descriptions were ONE denominator change. Nothing yet implemented deserves to be called the frameworks prescription. The clean pair remains 0.746 shipped vs 0.9346 radiation-in-rate'),
+        'r3042: RADSCAN.py built -- four independent radiation switches, baseline verified. RATE=1 best positions, SRC=0 best height, no setting gets both. The question is now answerable by scan rather than by argument'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,13 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3041 (Daryl was right): **MY error, found.** My physical-density term reduces exactly "
-            "to the shipped one with the denominator changed from the radiation-inclusive total to "
-            "the rates own — **which IS the r3038 run**. So the byte-identical outputs were the "
-            "same calculation, not two inputs agreeing and not a broken run. ⛔ **And the 4.57x was "
-            "my own denominator swap**, reported as a coefficient the framework implies. "
-            "**r3040s 'the framework destroys the spectrum' is WITHDRAWN — I never implemented a "
-            "distinct prescription.**")
+LASTFIND = ("r3042: **the instrument is built — RADSCAN.py, four independent switches, baseline "
+            "verified against the shipped 150/360/555/780.** Seven radiation sites enumerated "
+            "first; the rate excludes it, the Omega normaliser includes it, and three fractions "
+            "inherit the mismatch. ⇒ First readable table: **RATE=1 gives the best POSITIONS "
+            "(210/510/765 vs the skys 220/536/813) and SRC=0 the best HEIGHT (1.971 vs 2.212). No "
+            "single setting gets both** — visible in one table instead of inferred across fifteen "
+            "revisions.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

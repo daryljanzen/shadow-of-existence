@@ -146,6 +146,21 @@ sources: [cowork, chat]
 
 
 
+### Revision r3042 — 2026-08-15 (main line). **THE INSTRUMENT BUILT: `RADSCAN.py`, FOUR INDEPENDENT SWITCHES, AND THE FIRST READABLE TABLE.**
+
+*Enumerated every site radiation enters before writing anything — **seven** — of which the rate excludes it and the density normaliser includes it, with the photon, neutrino and matter fractions all inheriting that mismatch through their denominator. Wired four as independent environment switches, **all defaulting to shipped**, and verified the baseline reproduces 150/360/555/780 exactly.*
+
+    sky              220, 536, 813        P1/P2 = 2.212
+    shipped          150, 360, 555, 780   1.447
+    TOT=0            570, 795             (loses structure)
+    SRC=0            300, 525, 780        1.971
+    RATE=1           210, 510, 765        3.688
+    RATE=1, TOT=0    255, 585, 840        3.650
+
+**⌗ AND IT ALREADY SEPARATES THE TWO OBSERVABLES:** *`RATE=1` gives the best **positions** (−4.5%, −4.9%, −5.9% against the sky) while `SRC=0` gives the best **height** (1.971 against 2.212). ***No single setting gets both**, and that is now visible in one table instead of inferred across fifteen revisions.*
+
+**⚠ What the instrument does not do is decide which setting is CR's.** *It makes the question answerable by making each term adjustable and each combination re-runnable — **and every number above is reproducible from one file with one environment variable**.*
+
 ### Revision r3041 — 2026-08-15 (main line). **MY ERROR, FOUND. THE TWO RUNS WERE THE SAME CALCULATION, AND r3040's CLAIM IS WITHDRAWN.**
 
 *Daryl: do not conflate my failure with the framework's. **He was right and the algebra shows it.***

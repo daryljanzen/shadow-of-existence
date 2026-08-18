@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3041 (Daryl was right): **MY error, found.** My physical-density term reduces exactly to the shipped one with the denominator changed from the radiation-inclusive total to the rates own — **which IS the r3038 run**. So the byte-identical outputs were the same calculation, not two inputs agreeing and not a broken run. ⛔ **And the 4.57x was my own denominator swap**, reported as a coefficient the framework implies. **r3040s 'the framework destroys the spectrum' is WITHDRAWN — I never implemented a distinct prescription.*****
+*⌗ **LAST ACTUAL MOVE — r3042: **the instrument is built — RADSCAN.py, four independent switches, baseline verified against the shipped 150/360/555/780.** Seven radiation sites enumerated first; the rate excludes it, the Omega normaliser includes it, and three fractions inherit the mismatch. ⇒ First readable table: **RATE=1 gives the best POSITIONS (210/510/765 vs the skys 220/536/813) and SRC=0 the best HEIGHT (1.971 vs 2.212). No single setting gets both** — visible in one table instead of inferred across fifteen revisions.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3041: three runs under three descriptions were ONE denominator change. Nothing yet implemented deserves to be called the frameworks prescription. The clean pair remains 0.746 shipped vs 0.9346 radiation-in-rate |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3042: RADSCAN.py built -- four independent radiation switches, baseline verified. RATE=1 best positions, SRC=0 best height, no setting gets both. The question is now answerable by scan rather than by argument |
 
 ---
 
