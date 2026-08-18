@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3047: **symmetric gravitation wired and run — it does not fix it, and the surviving pattern IS the result.** Per-peak against the sky: shipped -31.8/-32.8/-31.7%%; RATE=1,NU=0 +2.3/-4.9/-4.1%%; RATE=1,MAT=0 +9.1/+3.5/**-0.4**%%; GRAV=1,NU=0 -25.0/+6.3/**-0.4**%%. ⇒ **The OUTER peaks can be landed — P3 hits 810 against 813 in TWO independent settings by different physics — and the FIRST peak will not come with them.** A property of P1, not of the terms being varied.***
+*⌗ **LAST ACTUAL MOVE — r3048: **the introduction names the exact error I have been making for thirty revisions.** On FLRW: 'its standard synchronous reading is A CATEGORY ERROR, reifying the maximally symmetric projections own foliation as the physical evolving space, which the framework names and corrects'. ⇒ **Every import the scan found is that same move.** ⌗ And the scope paragraph: the framework **explicitly does not claim the empirical detail** — the data bind CR exactly as they bind GR.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3047: four configurations, three physics changes -- the OUTER peaks land (P3 at 810 vs 813 twice) and the FIRST peak never does. It is a property of P1, which is the transient region PO-7 already identified |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3048: the paper names the category error I kept making -- reifying FLRWs projection as the physical layer. And it does not claim the empirical detail; the data bind CR as they bind GR |
 
 ---
 

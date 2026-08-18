@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3048 — 2026-08-15 (main line). **THE INTRODUCTION NAMES THE EXACT ERROR I HAVE BEEN MAKING FOR THIRTY REVISIONS.**
+
+*Continuing linearly. The paper's own parenthesis about FLRW:*
+
+⇒ ***"FLRW carries, among these, one thing the others do not: **its standard synchronous reading is A CATEGORY ERROR, reifying the maximally symmetric projection's own foliation as the physical evolving space**, which the framework names and corrects."***
+
+⇒ ***That is the diagnosis of my own work, written in the paper before I made the error. **Every import the scan found — the Friedmann constraint in the potential source, the density fractions as shares of a critical density, treating the matter parameter as a gravitating fraction — is the same move: reifying FLRW's projection as the physical layer.** The paper does not merely lack these; **it names the error and says the framework corrects it**.***
+
+**⌗ AND THE SCOPE PARAGRAPH IS THE MODEL'S OWN LICENCE:** *"**What is NOT settled here — and is not for any theory to settle — is whether the universe we inhabit is such a universe in empirical detail. That line is drawn by evidence, and it binds Cosmological Relativity exactly as it binds general relativity: the data force what may be proposed as an explanation and grant no theory an exemption.**" ***So the framework explicitly does not claim the CMB fit; it claims the structure and holds the empirical question open — exactly the posture the scan should take.***
+
+**⚠ And it names its own falsifiers**, *one structural: that closed trapped surfaces do not form and collapse does not complete.*
+
 ### Revision r3047 — 2026-08-15 (main line). **SYMMETRIC GRAVITATION WIRED AND RUN: IT DOES NOT FIX IT, AND THE PATTERN THAT SURVIVES IS THE RESULT.**
 
 *Daryl: matter should gravitate where radiation does. Added a switch putting **every species into the potential by its own physical density** rather than through the rate, symmetrically. Baseline still exact.*

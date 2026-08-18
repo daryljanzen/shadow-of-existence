@@ -569,3 +569,4 @@ r3044  LATENT      axioms read: expansion is the layer sequence, plasma dynamics
 r3045  INSTRUMENT  THE_MODEL_LEDGER: switches bound to theory, DETERMINED vs OPEN, gated by check_model_ledger.
 r3046  LATENT      abstract: the rate is fixed by LAMBDA ALONE. Omega_m may be an epoch marker, not a gravitating density.
 r3047  LATENT      outer peaks land (P3 810 vs 813 twice); the first peak never does. A property of P1, not of the varied terms.
+r3048  LATENT      the intro names my error: reifying FLRWs projection as the physical layer. And CR does not claim the empirical detail.

@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3047: four configurations, three physics changes -- the OUTER peaks land (P3 at 810 vs 813 twice) and the FIRST peak never does. It is a property of P1, which is the transient region PO-7 already identified'),
+        'r3048: the paper names the category error I kept making -- reifying FLRWs projection as the physical layer. And it does not claim the empirical detail; the data bind CR as they bind GR'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3047: **symmetric gravitation wired and run — it does not fix it, and the surviving "
-            "pattern IS the result.** Per-peak against the sky: shipped -31.8/-32.8/-31.7%%; "
-            "RATE=1,NU=0 +2.3/-4.9/-4.1%%; RATE=1,MAT=0 +9.1/+3.5/**-0.4**%%; GRAV=1,NU=0 "
-            "-25.0/+6.3/**-0.4**%%. ⇒ **The OUTER peaks can be landed — P3 hits 810 against 813 in "
-            "TWO independent settings by different physics — and the FIRST peak will not come with "
-            "them.** A property of P1, not of the terms being varied.")
+LASTFIND = ("r3048: **the introduction names the exact error I have been making for thirty "
+            "revisions.** On FLRW: 'its standard synchronous reading is A CATEGORY ERROR, "
+            "reifying the maximally symmetric projections own foliation as the physical evolving "
+            "space, which the framework names and corrects'. ⇒ **Every import the scan found is "
+            "that same move.** ⌗ And the scope paragraph: the framework **explicitly does not "
+            "claim the empirical detail** — the data bind CR exactly as they bind GR.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
