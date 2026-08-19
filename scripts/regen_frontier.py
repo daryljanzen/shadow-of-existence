@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3077: the seam is fixed too -- both horizons coincide at r_N = alpha/sqrt(3) with equal areas 4 pi alpha^2/3. The first quantitative handle the reading has given on the seam itself'),
+        'r3078: the seam radius is a fixed FRACTION of alpha, not a fixed number -- the forcing does not set the invariant. And at the seam the null-boundary correspondence is METRIC, not merely causal'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,13 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3077: **the selection is forced from OUTSIDE the reassignment, by collapse itself.** "
-            "The horizon is approached only asymptotically tangent to a single generator, so the "
-            "limiting orientation is a null direction GRAZING it; the trichotomy is transverse / "
-            "tangent / no horizon, and **a collapse forms a horizon (excluding one leg) while the "
-            "orientation is tangent (excluding the other)**. ⌗ And the seam is fixed: **both "
-            "horizons coincide at r_N = alpha/sqrt(3) with equal areas** — a number the acoustic "
-            "code can be checked against.")
+LASTFIND = ("r3078: **the paper guards exactly the conflation I made one revision earlier.** 'The "
+            "de Sitter scale is the SIZE OF THE THROAT 3-sphere, a distinct quantity from the areal "
+            "radius of the merged horizon carried on it — conflating the two is the crossing this "
+            "paragraph is at pains to prevent', and **the forcing does not set the value of the "
+            "invariant**. ⛔ r3077 said the seam gives a fixed NUMBER; it gives a fixed FRACTION. ⌗ "
+            "And the paper corrects its own earlier reading: at the seam the correspondence is "
+            "**METRIC, not merely causal**.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

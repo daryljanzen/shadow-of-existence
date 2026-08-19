@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3078 — 2026-08-15 (main line). **THE PAPER GUARDS EXACTLY THE CONFLATION I MADE ONE REVISION EARLIER.**
+
+⇒ *"**The de Sitter scale is the SIZE OF THE THROAT three-sphere, a distinct quantity from the areal radius of the merged horizon carried on it — conflating the two is the crossing this paragraph is at pains to prevent.**" And: "**What the forcing does NOT give is the identity of the two radii, nor the scale as an output of the collapse … The forcing determines WHICH MEMBER occurs … it does not set the value of the invariant.**"*
+
+**⛔ And r3077 is the error it guards against:** *I wrote that the seam gives "**a fixed number, not a modelling choice**". **It gives a fixed fraction of the substrate length, and that length is fixed by Lambda, which is measured** — so the seam radius is only a number once a measurement is put in. Corrected in the reading notes.*
+
+**⌗ And the paper corrects its own earlier reading in the same paragraph:** *at the seam the two horizons are one, so "**the null-boundary correspondence between them is METRIC there — the identity on a single coincident horizon — not merely causal. This corrects a reading on which the two are held metrically apart.**" The differing areas belong to **the family's two limits**, not to the seam. ***That is the corpus doing to itself exactly what this session has been doing to it.***
+
+**⚠ And the singularity is real** — *the Kretschmann scalar diverging at the origin — with the reassignment altering "**the causal role of the congruences, not the reality of the singularity**".*
+
 ### Revision r3077 — 2026-08-15 (main line). **THE SELECTION IS FORCED FROM OUTSIDE THE REASSIGNMENT, BY COLLAPSE ITSELF, AND THE SEAM'S GEOMETRY FOLLOWS FROM THE DOUBLE ROOT.**
 
 ⇒ *The horizon is approached "**only in the limit of infinite exterior time, the slices becoming asymptotically tangent to a single horizon generator**" — so the limiting orientation is **a null direction grazing the horizon, tangent and never transverse**. Classifying by how a null-generator congruence meets it gives **a trichotomy: transverse crossing, tangency at a merged double root, or no real horizon**.*

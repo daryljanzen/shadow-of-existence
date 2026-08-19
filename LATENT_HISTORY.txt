@@ -538,3 +538,4 @@ r3074  LATENT      compensation test inconclusive: the consistent conversion des
 r3075  LATENT      the photons are the REASSIGNED at-rest congruence; the code treats them as an ordinary FLRW fluid.
 r3076  LATENT      Nariai is the unique non-pivoting member, fixed by Lambda alone. One length fixes the background; nothing is free.
 r3077  LATENT      collapse forces Nariai via a trichotomy; the seam is fixed at r_N = alpha/sqrt(3) with equal horizon areas.
+r3078  LATENT      alpha is the throat size, r_N the merged horizons areal radius — do not conflate. r3077 corrected.
