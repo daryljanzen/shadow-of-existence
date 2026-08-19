@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3053: **the gravitational-wave application is directly pertinent — it shows what a perturbation IS here, in an exact solution.** The propagating degree of freedom is **the transverse-traceless shear of the layer, evolving by a wave equation ON THE LAYER**, with energy carried by the shear rate and gradient; the spacetime-metric version is **projection-dependent**. ⇒ **That is the template the scalar sector needs and the CMB code does not use.** ⌗ And CR localizes wave energy precisely because it fixes the foliation.***
+*⌗ **LAST ACTUAL MOVE — r3054: **THE_READING_NOTES opened** — the linear read is producing constraints faster than register rows can hold them. Six positive statements the model must answer to (the rate is GENERATED not sourced; fixed by Lambda alone; the invariant is a LENGTH; a perturbation is a LAYER object with a worked example; matter FIXES THE FOLIATION; curvature is projection and ontology is h_ij), **the named category error with four instances of my own tabulated**, and three open questions the corpus may not have asked.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

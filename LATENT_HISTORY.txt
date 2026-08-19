@@ -514,3 +514,4 @@ r3050  LATENT      matters third role: the comoving congruence FIXES THE FOLIATI
 r3051  LATENT      Phi and Psi are projection quantities; ontological curvature is exclusively in h_ij. What does a projection C_ell measure?
 r3052  LATENT      mass is a perspectival reading of a cut offset; alpha is the invariant length. The Schwarzschild leaf is a flat vacuum cut.
 r3053  LATENT      the wave sector has a worked layer-level perturbation equation: TT shear on the layer. The template the scalar sector needs.
+r3054  INSTRUMENT  THE_READING_NOTES: six positive statements, the named error with my four instances, three open questions.
