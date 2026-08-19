@@ -10,7 +10,7 @@ for f in sorted(glob.glob(os.path.join(R,'corpus','*.tex'))):
     raw=open(f,encoding='utf-8',errors='replace').read()
     body=' '.join(l for l in raw.split('\n') if not l.lstrip().startswith('%'))
     for m in PAT.finditer(body):
-        ctx=body[max(0,m.start()-260):m.end()+260]
+        ctx=body[max(0,m.start()-260):m.end()+520]
         if not POINTS.search(ctx):
             bad.append((os.path.basename(f), re.sub(r'\s+',' ',ctx)[:110]))
 for f,c in bad: print(f"    [FAIL] {f}: deferral with no forward pointer\n           ...{c}...")
