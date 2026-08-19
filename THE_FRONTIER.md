@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3051: **the projection principles remark is the sharpest constraint yet**: 'spacetime curvature is a property of the PROJECTION, not of the underlying ontology; ontological curvature is encoded EXCLUSIVELY in h_ij(t)'. ⇒ **Phi and Psi are projection quantities** — which explains why no choice of Omegas worked: I was fixing the projections evolution equation **without the layers own geometry to fix it against**. ⚠ And a real question: **flat spacetime does not imply flat space**, so what does a C_ell computed on the projection determine about the layer?***
+*⌗ **LAST ACTUAL MOVE — r3052: **the curved-projection remark is the most consequential thing in this pass.** Schwarzschild and de Sitter are two READINGS of one slicing curve on one substrate of radius alpha = sqrt(3/Lambda); **alpha is the invariant — a LENGTH, NOT A MASS — and M is its projection-dependent reading, a turning point rather than a coefficient**. ⇒ A third and deeper reason the Omega_m in the potential source is suspect: **a mass density is a projection quantity whose invariant is a length**. ⚠ Guard: the empirical content is untouched.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3051: Phi and Psi are PROJECTION quantities; ontological curvature is exclusively in h_ij. So the potential equation is a projection equation, and the layers geometry is what it must be fixed against |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3052: mass is a PERSPECTIVAL READING of a cut offset -- alpha is the invariant length, M the projection-dependent reading. The Schwarzschild leaf is a FLAT VACUUM CUT; curvature does not well up where no matter stands |
 
 ---
 

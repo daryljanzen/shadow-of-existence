@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r3052 — 2026-08-15 (main line). **THE CURVED-PROJECTION REMARK: THE MOST CONSEQUENTIAL THING READ IN THIS PASS.**
+
+*In order, not skipping ahead. "Gravitational spacetime curvature as a perspectival shadow":*
+
+⇒ *Schwarzschild and de Sitter are **two readings of one slicing curve on a single de Sitter substrate of fixed radius alpha = sqrt(3/Lambda)**, split by a vantage-swap into an even part — **the invariant de Sitter curvature** — and an odd part, **the Schwarzschild term the swap reverses**.*
+
+**⛭⛭ AND THE LINE THAT MATTERS FOR THE MODEL:** *"**the mass term is the offset of the cut, so alpha is THE INVARIANT — a curvature radius, A LENGTH, NOT A MASS — and M is its slicing- and projection-dependent reading, A TURNING POINT RATHER THAN A COEFFICIENT**."*
+
+⇒ ***So mass is a perspectival reading of an offset, not a coefficient in an equation. **That is a third and deeper reason the matter parameter in my potential source is suspect**: not merely an epoch marker, not merely routed through a Friedmann relation — **on this reading a mass density is a projection quantity whose invariant is a length**.***
+
+**⌗ AND THE SLICING OPERATOR SAYS IT THE VACUUM WAY:** *"straight cuts are vacuum, and the offset planar cut **is** the mass, so the Schwarzschild exterior's spatial leaf is itself **a flat vacuum cut**, its mass the cut's offset and its spacetime tidal curvature the geometric signature of the off-axis sweep — **not curvature welling up locally where no matter stands**."*
+
+**⚠ And the guard is stated in the same breath:** *"the empirical content is untouched — the projection is faithful, and the standard quasi-local and asymptotic mass definitions all return the perspectival mass". **So this does not license changing what the model computes; it changes what those quantities are.***
+
 ### Revision r3051 — 2026-08-15 (main line). **THE PROJECTION PRINCIPLE IN PLACE, AND ITS REMARK IS THE SHARPEST CONSTRAINT ON THE MODEL YET.**
 
 ⇒ ***"In CR, **spacetime curvature is a property of the projection, not of the underlying ontology. Ontological curvature is encoded EXCLUSIVELY in the intrinsic geometry of the layer metric.**"***
