@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3076: **the SdS construction — the selection is geometric and the mass is fixed by Lambda alone.** A comoving worldline of the reassigned congruence **is the only one in the SdS family that encounters no horizon along its length**; sub-critical configurations cross transversally, and **that crossing is what produces a localized sources horizons**. ⇒ **The cosmology is not a family member selected by fitting a mass; it is the unique non-pivoting member, fixed by Lambda alone.** One length fixes the background entirely.***
+*⌗ **LAST ACTUAL MOVE — r3077: **the selection is forced from OUTSIDE the reassignment, by collapse itself.** The horizon is approached only asymptotically tangent to a single generator, so the limiting orientation is a null direction GRAZING it; the trichotomy is transverse / tangent / no horizon, and **a collapse forms a horizon (excluding one leg) while the orientation is tangent (excluding the other)**. ⌗ And the seam is fixed: **both horizons coincide at r_N = alpha/sqrt(3) with equal areas** — a number the acoustic code can be checked against.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3076: one length alpha = sqrt(3/Lambda) fixes the background entirely -- no mass parameter, no family to fit. So nothing at background level is independent, and only the onset is empirical |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3077: the seam is fixed too -- both horizons coincide at r_N = alpha/sqrt(3) with equal areas 4 pi alpha^2/3. The first quantitative handle the reading has given on the seam itself |
 
 ---
 

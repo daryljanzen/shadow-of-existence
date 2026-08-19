@@ -537,3 +537,4 @@ r3073  LATENT      conversion mismatch 2.73 at onset falling to 1.03; the CONSIS
 r3074  LATENT      compensation test inconclusive: the consistent conversion destroys the spectrum. Audit exhausted; back to reading.
 r3075  LATENT      the photons are the REASSIGNED at-rest congruence; the code treats them as an ordinary FLRW fluid.
 r3076  LATENT      Nariai is the unique non-pivoting member, fixed by Lambda alone. One length fixes the background; nothing is free.
+r3077  LATENT      collapse forces Nariai via a trichotomy; the seam is fixed at r_N = alpha/sqrt(3) with equal horizon areas.

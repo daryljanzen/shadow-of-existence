@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3077 — 2026-08-15 (main line). **THE SELECTION IS FORCED FROM OUTSIDE THE REASSIGNMENT, BY COLLAPSE ITSELF, AND THE SEAM'S GEOMETRY FOLLOWS FROM THE DOUBLE ROOT.**
+
+⇒ *The horizon is approached "**only in the limit of infinite exterior time, the slices becoming asymptotically tangent to a single horizon generator**" — so the limiting orientation is **a null direction grazing the horizon, tangent and never transverse**. Classifying by how a null-generator congruence meets it gives **a trichotomy: transverse crossing, tangency at a merged double root, or no real horizon**.*
+
+⇒ ***And two legs are excluded by facts rather than by choice: "**a collapse forms a horizon, excluding the horizonless overcritical case; the limiting orientation is tangent rather than transverse, excluding the undercritical case**". "**The asymptotic alignment of collapse therefore forces the Nariai member**" — and this "**supplies the identification deferred in**" the causality paper, so a deferral elsewhere is discharged here.*
+
+**⌗ And the seam's geometry is not free:** *at Nariai **the black-hole and cosmological horizons coincide at a radius fixed by the substrate length, with equal areas**; and the three roots summing to zero gives **a parity-conjugate pair of critical configurations exchanged by the backward-radial swap** — the same swap that makes mass perspectival.*
+
+⇒ ***For the model: **anything the acoustic code sets at the seam is checkable against that radius**, which is a fixed number rather than a modelling choice. **The first quantitative handle the reading has given on the seam itself.****
+
 ### Revision r3076 — 2026-08-15 (main line). **THE SdS CONSTRUCTION: THE SELECTION IS GEOMETRIC AND THE MASS IS FIXED BY LAMBDA ALONE.**
 
 *Vacuum Einstein with positive Lambda on the reassigned line element gives the Schwarzschild–de Sitter metric; the radial coordinate is timelike above a critical combination, **equality defining Nariai — the two positive roots merging, and the mass fixed to a pure function of Lambda**.*

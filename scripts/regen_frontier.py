@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3076: one length alpha = sqrt(3/Lambda) fixes the background entirely -- no mass parameter, no family to fit. So nothing at background level is independent, and only the onset is empirical'),
+        'r3077: the seam is fixed too -- both horizons coincide at r_N = alpha/sqrt(3) with equal areas 4 pi alpha^2/3. The first quantitative handle the reading has given on the seam itself'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,13 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3076: **the SdS construction — the selection is geometric and the mass is fixed by "
-            "Lambda alone.** A comoving worldline of the reassigned congruence **is the only one "
-            "in the SdS family that encounters no horizon along its length**; sub-critical "
-            "configurations cross transversally, and **that crossing is what produces a localized "
-            "sources horizons**. ⇒ **The cosmology is not a family member selected by fitting a "
-            "mass; it is the unique non-pivoting member, fixed by Lambda alone.** One length fixes "
-            "the background entirely.")
+LASTFIND = ("r3077: **the selection is forced from OUTSIDE the reassignment, by collapse itself.** "
+            "The horizon is approached only asymptotically tangent to a single generator, so the "
+            "limiting orientation is a null direction GRAZING it; the trichotomy is transverse / "
+            "tangent / no horizon, and **a collapse forms a horizon (excluding one leg) while the "
+            "orientation is tangent (excluding the other)**. ⌗ And the seam is fixed: **both "
+            "horizons coincide at r_N = alpha/sqrt(3) with equal areas** — a number the acoustic "
+            "code can be checked against.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
