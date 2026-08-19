@@ -41,13 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3058 (Daryl corrected me): **the switches ARE the frameworks subtraction, implemented "
-            "safely** — each turns a term OFF for a physical reason, by changing a switch "
-            "definition rather than an equation. My 'the scan has only ever added' was wrong about "
-            "my own instrument. ⇒ And black-hole mechanics: the laws are correct results whose "
-            "object **is never instantiated on a finite layer**, so they characterise the "
-            "auxiliary completed geometry. **A third status for the acoustic model: internally "
-            "correct with no realised object.**")
+LASTFIND = ("r3059 (Daryl caught it): **I wrote a FALSE sentence into P7 and compiled it.** I "
+            "searched for the PHRASE 'perpetually collapsing ultra-compact body', found it only in "
+            "deferrals, and concluded the content was settled nowhere in the programme. **It is "
+            "the CENTRAL THEOREM of P7** — the collapse continues as an expanding cosmology, and "
+            "P15/P16 work out its observables. ⌗ Both sites now carry the real forward reference "
+            "and compile. **A phrase sweep cannot tell whether content is settled elsewhere.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3058 (Daryl corrected me): **the switches ARE the frameworks subtraction, implemented safely** — each turns a term OFF for a physical reason, by changing a switch definition rather than an equation. My 'the scan has only ever added' was wrong about my own instrument. ⇒ And black-hole mechanics: the laws are correct results whose object **is never instantiated on a finite layer**, so they characterise the auxiliary completed geometry. **A third status for the acoustic model: internally correct with no realised object.*****
+*⌗ **LAST ACTUAL MOVE — r3059 (Daryl caught it): **I wrote a FALSE sentence into P7 and compiled it.** I searched for the PHRASE 'perpetually collapsing ultra-compact body', found it only in deferrals, and concluded the content was settled nowhere in the programme. **It is the CENTRAL THEOREM of P7** — the collapse continues as an expanding cosmology, and P15/P16 work out its observables. ⌗ Both sites now carry the real forward reference and compile. **A phrase sweep cannot tell whether content is settled elsewhere.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

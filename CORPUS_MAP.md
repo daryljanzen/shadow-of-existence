@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3059 — 2026-08-15 (main line). **A FALSE SENTENCE WRITTEN INTO P7 AND CAUGHT; THE SWEEP THAT PRODUCED IT WAS WRONG IN KIND.**
+
+*Daryl asked whether "not claimed here" should carry a forward reference. **It should, and it does have one — I just failed to find it.***
+
+**⛔** *I searched for the **phrase** "perpetually collapsing ultra-compact body", found it only in deferrals, and concluded the content was "**settled nowhere else in the programme**" — **which I then wrote into P7 and compiled**. ***It is false. What survives a perpetually collapsing body IS the central theorem of P7: the collapse continues as an expanding cosmology, and the cosmology papers work out its observables.*** **I searched for words instead of content, in the one paper whose central theorem answers the question.***
+
+**⌗ BOTH SITES NOW CARRY THE REAL REFERENCE:** *P7's deferral points to the cosmogenesis and central-theorem sections and cites the cosmology paper; the causality paper's points to the framework and cosmology companions. **Both compile.***
+
+**⚠ The sweep is kept and its lesson recorded:** *a deferral must point somewhere — that is a real class — **but a phrase-matching sweep cannot tell whether the content is settled elsewhere, and mine reported a false negative that I acted on**. The gate flags candidates; **only reading decides**.*
+
 ### Revision r3058 — 2026-08-15 (main line). **BLACK-HOLE MECHANICS, AND A CORRECTION TO MY OWN READING.**
 
 **⛭ FIRST, THE CORRECTION.** *I wrote that the framework repairs by subtraction while "my scan has only ever added". **That is wrong about my own instrument.** Each switch turns a term **off** for a stated physical reason — **the switches ARE that subtraction, implemented safely**, by changing a switch definition rather than an equation, which is less error-prone and keeps every configuration re-runnable and comparable. **`RADSCAN` is the framework's method in instrument form; what was wrong was my reasoning around it.***
