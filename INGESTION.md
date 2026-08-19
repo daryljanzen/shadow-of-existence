@@ -602,3 +602,4 @@ r3077  LATENT      collapse forces Nariai via a trichotomy; the seam is fixed at
 r3078  LATENT      alpha is the throat size, r_N the merged horizons areal radius — do not conflate. r3077 corrected.
 r3079  LATENT      the Friedmann densities are BOOKKEEPING, not drivers; Omega_m is a clock reading. Stated plainly in the construction section.
 r3080  LATENT      the onset is FITTED and H_0-independent; the ratio is a band 1.7-2.0, not a determined number.
+r3081  LATENT      the ladder is justified: discrete S3 source through a FLAT distance slicing. The open question is stretchs value.

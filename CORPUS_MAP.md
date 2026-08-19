@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3081 — 2026-08-15 (main line). **THE LADDER'S JUSTIFICATION IS HERE, AND THE MATTER DENSITY IS THE BEND OF THE CUT.**
+
+⇒ *"**What sets a given epoch's contents is the bend of the spatial cut: the matter density is the cut's DEVIATION FROM THE EMPTY-de SITTER SLICING, forced by the same empirical foliation that forces the rate, not by a separate dynamical input.**" — so the previous revision's "bookkeeping" now has its geometric content: **a density is a deviation, not a source**.*
+
+**⛭⛭⛭ AND THE PERTURBATION PARAGRAPH STATES THE WHOLE ARCHITECTURE:** *the substrate fixes the **structure** and the handover supplies the **content**; the coherence is substrate-fixed, **the null boundary setting one phase per mode** "where the sub-horizon seam admits no super-horizon freeze-out"; and "**the source spectrum is that of a closed three-sphere, DISCRETE BY DEGREE, but projected to the sky through the FLAT distance slicing rather than a closed one — the flat/closed decoupling carried by the non-synchrony**".*
+
+⇒ ***That is the ladder's justification and it is structural, not arbitrary: **a discrete three-sphere source projected through a flat distance slicing IS the square-root-of-degree ladder**. What the earlier note found "not developed" in P10 is stated here as a consequence of the non-synchrony — so the scan's stretch is **not a stand-in for a missing map but an implementation of a stated one**, and **the open question is its value, not its form**.***
+
+**⌗ And the low-multipole deficit is parameter-free and quantified:** *lowest mode near multipole eight with no power below, the dip bottoming at four — 0.47, 0.41, 0.36, 0.68 of expectation at two through five — **cross-validated between two independent transfers** and **non-discriminating within cosmic variance**.*
+
 ### Revision r3080 — 2026-08-15 (main line). **THE PAPER SETTLES THE FITTED-VERSUS-PREDICTED QUESTION IN ITS OWN ITALICS, AND SAYS THE RATIO IS A BAND.**
 
 ⇒ *"**Because radiation carries no term in the rate at any epoch, the two frameworks part before recombination**", and the acoustic scale is met at the directly measured rate **by a single inherited datum — the radiation amplitude at the seam**.*

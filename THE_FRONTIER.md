@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3080: **the paper settles fitted-vs-predicted in its own italics.** 'THE FITTED QUANTITY IS THE ONSET REDSHIFT AND IT DOES NOT MOVE WITH H_0 AT ALL — which is what makes it a datum rather than a knob — while THE RATIO IS THAT REDSHIFT RE-EXPRESSED … AN ORDER-UNITY BAND (1.7-2.0 across the Hubble range) RATHER THAN A DETERMINED NUMBER.' ⇒ **That is r3071s conclusion in the papers voice, and it goes further: the ratio is a BAND, not the 1.99 I treated as determined at r3069.*****
+*⌗ **LAST ACTUAL MOVE — r3081: **the ladders justification is here.** 'The source spectrum is that of a closed S^3, DISCRETE BY DEGREE, but projected to the sky through the FLAT distance slicing rather than a closed one — the flat/closed decoupling carried by the non-synchrony.' ⇒ **That IS l_L = sqrt(L(L+2)) x D_C/r_0** — what note 11 found 'not developed' in P10 is stated here as a structural consequence. **So the open question is the stretchs VALUE, not its form.** ⌗ And the matter density is **the bend of the cut**, a deviation rather than a source.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3080: the onset is FITTED and does not move with H_0; the ratio is an order-unity BAND 1.7-2.0, not a determined number. The papers own italics, settling what r3069 got circular |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3081: the ladder IS justified -- a discrete S^3 source through a FLAT distance slicing, the flat/closed decoupling carried by the non-synchrony. The open question is stretchs VALUE, not its form |
 
 ---
 
