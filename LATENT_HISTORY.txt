@@ -530,3 +530,4 @@ r3066  LATENT      the synthesis: two linked facts carry the set; the CMB fit ca
 r3067  LATENT      six preconditions audited: projection and mode map fail, both set l. Ladder cleared; the projection is untested.
 r3068  LATENT      projection eliminated (N=1 for the comoving congruence). Audit complete; defect remains. Left: budget conversion, imposed scale.
 r3069  LATENT      precondition 6 eliminated: T_onset = 1.6 eV gives z = 6811 vs the solved 6761. One candidate left: the budget conversion.
+r3070  LATENT      r3069 strengthens PO-16: the fitted onset and the thermodynamic one agree to 0.75%. Identity of value, not just kind.

@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3069: **precondition 6 eliminated — the imposed scale lands where the frameworks own "
-            "datum puts it.** T_onset = 1.6 eV, the value at which rho_r/rho_m returns 1.99 from "
-            "standard thermodynamics and nothing else, gives z_onset = 6811 against the scans "
-            "solved 6761 — **agreement to 0.75%%**. So the brentq target is not a free parameter. ⇒ "
-            "**Five of six preconditions eliminated; only the gravitating-budget conversion "
-            "stands.**")
+LASTFIND = ("r3070 (Daryl asked): **r3069 does touch PO-16 — it STRENGTHENS the strike.** The "
+            "receipt said the inherited datum is the fitted onset restated, an identity of KIND. "
+            "**It is also an identity of VALUE**: T_onset = 1.6 eV gives z = 6811 against the "
+            "cosmologys fitted 6761, **agreement to 0.75%%**. ⇒ **The one fitted parameter is, to "
+            "that accuracy, PREDICTED rather than free.** Receipt updated; the strike stands "
+            "better founded than when made.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

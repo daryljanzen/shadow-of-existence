@@ -146,6 +146,22 @@ sources: [cowork, chat]
 
 
 
+### Revision r3070 — 2026-08-15 (main line). **r3069 DOES TOUCH `PO-16`: IT STRENGTHENS THE STRIKE BEYOND WHAT THE RECEIPT CLAIMED.**
+
+*Daryl asked whether the onset result alters the earlier close. It does, in the favourable direction.*
+
+*The receipt said the single inherited datum is "**the fitted onset restated**" — an identity of **kind**. **r3069 checked it numerically:***
+
+    T_onset = 1.6 eV, where the composition datum returns 1.99   ->  z = 6811
+    the cosmology's own fit, solving for the acoustic scale       ->  z = 6761
+    agreement                                                          0.75%
+
+⇒ ***So it is an identity of **value**, not only of kind: **the cosmology's one fitted parameter is, to that accuracy, predicted rather than free** — stronger than "one input", and stronger than the item's own "may remain empirical at no cost".***
+
+**⌗ Receipt updated with the numbers. The strike stands and is better founded than when it was made.**
+
+**⚠ Recorded at the accuracy shown and no further:** *0.75% on one quantity is a **consistency check, not a derivation**, and the framework's position that the datum may stay empirical is unaffected either way.*
+
 ### Revision r3069 — 2026-08-15 (main line). **PRECONDITION SIX ELIMINATED: THE IMPOSED SCALE LANDS WHERE THE FRAMEWORK'S OWN DATUM PUTS IT.**
 
 *The concern was that the root-find solves the onset redshift to force the acoustic scale to 301.6 — a target, not a prediction. **Tested against what the framework fixes the onset at, independently.***
