@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3060 — 2026-08-15 (main line). **THE SWEEP RUN: IT FOUND THE MODEL'S OWN FOUNDATION MARKED UNDEVELOPED IN THE PAPER IT COMES FROM.**
+
+*15 deferrals across 9 files. **Three bear on the open rows, and one is decisive.***
+
+**⛔⛔ `canonical_time`, on the very ladder the scan uses:** *"we record, without claiming it, that the harmonic indices at which the treatment loses control are the lowest ones; **the relation between S-cubed tensor harmonics and observed multipoles IS NOT DEVELOPED HERE, and NO INFERENCE TO THE MICROWAVE SKY IS DRAWN FROM THIS SECTION**". ***The scan builds that ladder — it IS the undeveloped relation — and draws exactly the inference the paper declines to draw.***
+
+**⛭⛭ AND THE SAME PASSAGE QUANTIFIES WHERE THE TREATMENT DEGRADES:** *the adiabaticity parameter is **0.70 at n=2, 0.48 at n=3, 0.16 by n=10** — "adiabatic for all but the lowest few harmonics, degrading to order unity only at n=2 and n=3". ***The approximation is worst at the lowest harmonics, which project to the lowest multipoles — which is where the first peak sits and where every configuration in the scan has failed.***
+
+⇒ ***A candidate explanation the scan could never have reached by varying switches, found by sweeping deferrals rather than by physics.***
+
+**⌗ Also found:** *`PO-15`'s object is stated open in P10 itself — "the operator ordering … and the self-adjoint extension on the half-line are genuine technical questions not settled by the reduction"; and P7's horizon-crossing deferral has a likely home in P15's what-crosses section.*
+
 ### Revision r3059 — 2026-08-15 (main line). **A FALSE SENTENCE WRITTEN INTO P7 AND CAUGHT; THE SWEEP THAT PRODUCED IT WAS WRONG IN KIND.**
 
 *Daryl asked whether "not claimed here" should carry a forward reference. **It should, and it does have one — I just failed to find it.***

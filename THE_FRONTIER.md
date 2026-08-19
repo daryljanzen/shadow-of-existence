@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3059 (Daryl caught it): **I wrote a FALSE sentence into P7 and compiled it.** I searched for the PHRASE 'perpetually collapsing ultra-compact body', found it only in deferrals, and concluded the content was settled nowhere in the programme. **It is the CENTRAL THEOREM of P7** — the collapse continues as an expanding cosmology, and P15/P16 work out its observables. ⌗ Both sites now carry the real forward reference and compile. **A phrase sweep cannot tell whether content is settled elsewhere.*****
+*⌗ **LAST ACTUAL MOVE — r3060: **the sweep found the models own foundation marked UNDEVELOPED.** canonical_time, on the ladder RADSCAN uses: **the relation between S^3 tensor harmonics and observed multipoles IS NOT DEVELOPED HERE, and NO INFERENCE TO THE MICROWAVE SKY IS DRAWN FROM THIS SECTION**. The scan builds exactly that relation and draws exactly that inference. ⛭ And the same passage quantifies the degradation: **adiabaticity 0.70 at n=2, 0.48 at n=3, 0.16 by n=10 — worst at the LOWEST harmonics, where the first peak sits and every configuration fails.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3058: a third status beside right and wrong -- an apparatus can be internally correct and have NO REALISED OBJECT. And the switches are the frameworks own subtraction, safely implemented |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3060: P10 marks the S^3-harmonics-to-multipoles relation UNDEVELOPED and draws no inference to the sky -- and RADSCAN builds exactly that relation. Adiabaticity degrades to order unity at the lowest harmonics |
 
 ---
 

@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3058: a third status beside right and wrong -- an apparatus can be internally correct and have NO REALISED OBJECT. And the switches are the frameworks own subtraction, safely implemented'),
+        'r3060: P10 marks the S^3-harmonics-to-multipoles relation UNDEVELOPED and draws no inference to the sky -- and RADSCAN builds exactly that relation. Adiabaticity degrades to order unity at the lowest harmonics'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3059 (Daryl caught it): **I wrote a FALSE sentence into P7 and compiled it.** I "
-            "searched for the PHRASE 'perpetually collapsing ultra-compact body', found it only in "
-            "deferrals, and concluded the content was settled nowhere in the programme. **It is "
-            "the CENTRAL THEOREM of P7** — the collapse continues as an expanding cosmology, and "
-            "P15/P16 work out its observables. ⌗ Both sites now carry the real forward reference "
-            "and compile. **A phrase sweep cannot tell whether content is settled elsewhere.**")
+LASTFIND = ("r3060: **the sweep found the models own foundation marked UNDEVELOPED.** "
+            "canonical_time, on the ladder RADSCAN uses: **the relation between S^3 tensor "
+            "harmonics and observed multipoles IS NOT DEVELOPED HERE, and NO INFERENCE TO THE "
+            "MICROWAVE SKY IS DRAWN FROM THIS SECTION**. The scan builds exactly that relation and "
+            "draws exactly that inference. ⛭ And the same passage quantifies the degradation: "
+            "**adiabaticity 0.70 at n=2, 0.48 at n=3, 0.16 by n=10 — worst at the LOWEST harmonics, "
+            "where the first peak sits and every configuration fails.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

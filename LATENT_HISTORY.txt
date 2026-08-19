@@ -520,3 +520,4 @@ r3056  LATENT      the method twice: enumerate what the standard result requires
 r3057  LATENT      the repair is subtraction of a precondition, never addition of a mechanism. And narrowness is the honesty of it.
 r3058  LATENT      the switches ARE the frameworks subtraction. And an apparatus can be internally correct with no realised object.
 r3059  CORPUS      false sentence written into P7 and reverted; both deferrals now cite the central theorem. Phrase sweeps cannot judge content.
+r3060  LATENT      P10 marks the S3-harmonics-to-multipoles relation undeveloped; RADSCAN builds it. Adiabaticity worst at lowest harmonics.
