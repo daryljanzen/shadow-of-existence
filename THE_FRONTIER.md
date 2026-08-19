@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3079: **the paper states in its own voice what my whole scan was arguing about.** 'The Friedmann densities are then BOOKKEEPING for one Lambda-set geometry RATHER THAN ITS DRIVERS: the matter fraction is not an independent amplitude but THE READING OF A CLOCK.' ⇒ **So every Omega in the acoustic code is bookkeeping on a geometry already fixed, and the (3Hc^2/2)Omega conversion is treating bookkeeping entries as gravitating sources.** Twenty revisions of derivation, written plainly four sections past where I stopped.***
+*⌗ **LAST ACTUAL MOVE — r3080: **the paper settles fitted-vs-predicted in its own italics.** 'THE FITTED QUANTITY IS THE ONSET REDSHIFT AND IT DOES NOT MOVE WITH H_0 AT ALL — which is what makes it a datum rather than a knob — while THE RATIO IS THAT REDSHIFT RE-EXPRESSED … AN ORDER-UNITY BAND (1.7-2.0 across the Hubble range) RATHER THAN A DETERMINED NUMBER.' ⇒ **That is r3071s conclusion in the papers voice, and it goes further: the ratio is a BAND, not the 1.99 I treated as determined at r3069.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3079: the Friedmann densities are BOOKKEEPING, not drivers -- the matter fraction is a CLOCK READING. So the conversion treats bookkeeping entries as gravitating sources |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3080: the onset is FITTED and does not move with H_0; the ratio is an order-unity BAND 1.7-2.0, not a determined number. The papers own italics, settling what r3069 got circular |
 
 ---
 

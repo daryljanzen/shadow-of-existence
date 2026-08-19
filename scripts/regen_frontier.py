@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3079: the Friedmann densities are BOOKKEEPING, not drivers -- the matter fraction is a CLOCK READING. So the conversion treats bookkeeping entries as gravitating sources'),
+        'r3080: the onset is FITTED and does not move with H_0; the ratio is an order-unity BAND 1.7-2.0, not a determined number. The papers own italics, settling what r3069 got circular'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,13 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3079: **the paper states in its own voice what my whole scan was arguing about.** "
-            "'The Friedmann densities are then BOOKKEEPING for one Lambda-set geometry RATHER THAN "
-            "ITS DRIVERS: the matter fraction is not an independent amplitude but THE READING OF A "
-            "CLOCK.' ⇒ **So every Omega in the acoustic code is bookkeeping on a geometry already "
-            "fixed, and the (3Hc^2/2)Omega conversion is treating bookkeeping entries as "
-            "gravitating sources.** Twenty revisions of derivation, written plainly four sections "
-            "past where I stopped.")
+LASTFIND = ("r3080: **the paper settles fitted-vs-predicted in its own italics.** 'THE FITTED "
+            "QUANTITY IS THE ONSET REDSHIFT AND IT DOES NOT MOVE WITH H_0 AT ALL — which is what "
+            "makes it a datum rather than a knob — while THE RATIO IS THAT REDSHIFT RE-EXPRESSED "
+            "… AN ORDER-UNITY BAND (1.7-2.0 across the Hubble range) RATHER THAN A DETERMINED "
+            "NUMBER.' ⇒ **That is r3071s conclusion in the papers voice, and it goes further: the "
+            "ratio is a BAND, not the 1.99 I treated as determined at r3069.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3080 — 2026-08-15 (main line). **THE PAPER SETTLES THE FITTED-VERSUS-PREDICTED QUESTION IN ITS OWN ITALICS, AND SAYS THE RATIO IS A BAND.**
+
+⇒ *"**Because radiation carries no term in the rate at any epoch, the two frameworks part before recombination**", and the acoustic scale is met at the directly measured rate **by a single inherited datum — the radiation amplitude at the seam**.*
+
+**⛭⛭⛭ AND THEN, ITALICISED IN THE PAPER:** *"**THE FITTED QUANTITY IS THE ONSET REDSHIFT AND IT DOES NOT MOVE WITH THE HUBBLE CONSTANT AT ALL — which is what makes it a datum rather than a knob for the tension — while THE RATIO IS THAT REDSHIFT RE-EXPRESSED in units of a physical matter density the construction does not itself determine, and is accordingly AN ORDER-UNITY BAND (1.7 to 2.0 across the Hubble range) RATHER THAN A DETERMINED NUMBER.**"*
+
+⇒ ***That is r3071's conclusion in the paper's own voice, and it goes further: **the ratio is a band, not the 1.99 I treated as determined**. My r3069 took that value as a fixed prediction and built a circular check on it — **the paper had already said the quantity varies across the Hubble range**.***
+
+**⌗ And the light elements:** *produced on the cooling leg by **a genuine nuclear network**, with helium-4 and deuterium **within one sigma of measured primordial values**, near-zero metallicity from the handover, and **lithium-7 carrying the standard threefold over-prediction — shared with LambdaCDM rather than dissolved**, which is the paper marking its own non-success.*
+
 ### Revision r3079 — 2026-08-15 (main line). **THE EXPANSION LAW READ, AND THE PAPER STATES IN ITS OWN VOICE WHAT MY WHOLE SCAN WAS ARGUING ABOUT.**
 
 *The proper-frame line element carries the sinh-two-thirds solution in the parameter tau plus chi, **tilted relative to the fundamental rest frame — so constant-tau slices are Euclidean but do not coincide with cosmological spatial slices**.*
