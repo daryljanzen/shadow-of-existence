@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3055: the frameworks method is to ask what the ONTOLOGY permits before reaching for a mechanism -- and my scan has been mechanism-hunting throughout. Reading in order; notes filed to THE_READING_NOTES'),
+        'r3056: the method exhibited twice -- enumerate what the standard result REQUIRES, then check each requirement against the layer. The acoustic calculations preconditions have never been enumerated'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,13 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3055: **time travel names the frameworks METHOD, in a form that indicts my scan.** GR "
-            "admits CTCs and carries no principle forbidding them, so exclusion was sought outside "
-            "it in an unproven conjecture; **CR dissolves it STRUCTURALLY RATHER THAN DYNAMICALLY "
-            "— by the ontology that withholds existence from the loop**. ⇒ **When a problem is met "
-            "by a mechanism, CRs move is to ask what the ontology permits.** My scan has been "
-            "mechanism-hunting for forty revisions and has never asked that of the acoustic "
-            "sector.")
+LASTFIND = ("r3056: **censorship and Hawking exhibit the same move twice: ENUMERATE THE "
+            "PRECONDITIONS, THEN CHECK EACH AGAINST THE LAYER.** Censorship: CR neither proves nor "
+            "refutes — **it removes the precondition**, so 'whether it would be clothed or naked "
+            "does not arise'. Hawking: the derivation **requires three things** and **none of the "
+            "three is realised** on the layered ontology. ⇒ **Not 'is the answer different' but "
+            "'is the questions precondition instantiated'** — the exercise my acoustic scan has "
+            "never done.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

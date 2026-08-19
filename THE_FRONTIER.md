@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3055: **time travel names the frameworks METHOD, in a form that indicts my scan.** GR admits CTCs and carries no principle forbidding them, so exclusion was sought outside it in an unproven conjecture; **CR dissolves it STRUCTURALLY RATHER THAN DYNAMICALLY — by the ontology that withholds existence from the loop**. ⇒ **When a problem is met by a mechanism, CRs move is to ask what the ontology permits.** My scan has been mechanism-hunting for forty revisions and has never asked that of the acoustic sector.***
+*⌗ **LAST ACTUAL MOVE — r3056: **censorship and Hawking exhibit the same move twice: ENUMERATE THE PRECONDITIONS, THEN CHECK EACH AGAINST THE LAYER.** Censorship: CR neither proves nor refutes — **it removes the precondition**, so 'whether it would be clothed or naked does not arise'. Hawking: the derivation **requires three things** and **none of the three is realised** on the layered ontology. ⇒ **Not 'is the answer different' but 'is the questions precondition instantiated'** — the exercise my acoustic scan has never done.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3055: the frameworks method is to ask what the ONTOLOGY permits before reaching for a mechanism -- and my scan has been mechanism-hunting throughout. Reading in order; notes filed to THE_READING_NOTES |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3056: the method exhibited twice -- enumerate what the standard result REQUIRES, then check each requirement against the layer. The acoustic calculations preconditions have never been enumerated |
 
 ---
 

@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3056 — 2026-08-15 (main line). **CENSORSHIP AND HAWKING: THE SAME MOVE TWICE — ENUMERATE THE PRECONDITIONS, THEN CHECK EACH AGAINST THE LAYER.**
+
+**CENSORSHIP:** *CR "**neither proves nor refutes the conjecture; IT REMOVES ITS PRECONDITION**" — the horizon is a metric singularity approached only in the limit of infinite exterior time, so no horizon is completed and no closed trapped surface realised, and "**where no singularity is physically realised, whether it would be clothed or naked DOES NOT ARISE — there is nothing to censor**".*
+
+**HAWKING:** *the semiclassical derivation **requires three things** — a globally defined horizon, a completed causal structure joining past to future null infinity, and the permanent loss of causal contact that renders the vacua inequivalent — and "**on the layered ontology NONE OF THE THREE is realised**": one connected exterior, no permanently inaccessible region, no mode traced across.*
+
+⇒ ***So the method is exhibited twice in two pages, and it is precise: **not "is the answer different" but "is the question's precondition instantiated"** — enumerate what the standard result needs, then check each requirement against the layer.***
+
+⇒ ***And that is the concrete form of note seven for my own work: **the acoustic calculation has preconditions too — a background rate, a gravitating budget, a projection to observe on, a horizon-crossing history for the modes — and the honest exercise is to enumerate them and check each against the layer ontology**, exactly as these sections do. **I have never done that; I have varied terms instead.***
+
 ### Revision r3055 — 2026-08-15 (main line). **TIME TRAVEL NAMES THE FRAMEWORK'S METHOD, IN A FORM THAT INDICTS MY SCAN.**
 
 *Read in order. General relativity's own equations admit closed timelike curves and "**the classical theory carries no principle that forbids them**", so exclusion has had to be sought **outside** it — the chronology-protection conjecture, "**a proposal about physics the classical theory does not contain, and unproven**".*
