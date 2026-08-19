@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3066: PO-13s trouble is PERIPHERAL to what CR claims and central only to what P15 attempts -- the frameworks load rests on the ontological distinction and the measured foliation, not on the fit'),
+        'r3067: six preconditions audited; the projection and the mode map FAIL, and both set l. The ladder is cleared as carrier (stretch cancels), leaving THE PROJECTION as the untested one'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,13 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3066: **the synthesis — two linked facts carry the whole set, and the acoustic sector "
-            "is neither.** ① the four-manifold is the representation, not the existent; ② the "
-            "physical foliation is **not posited but MEASURED**, forced from the redshift "
-            "isotropy — **one distinction read twice**. ⇒ **The programmes load is carried by "
-            "those, and the CMB fit by neither.** The horizon and flatness problems dissolve in "
-            "the cosmology papers, so they bear weight — **but through those dissolutions, not "
-            "through acoustic peak positions.**")
+LASTFIND = ("r3067: **the precondition audit done — six enumerated, and the two that FAIL are the "
+            "two that set l.** Rate ✔, budget ⚠, **projection ⛔**, **mode map ⛔**, crossing ✔, "
+            "acoustic scale ⚠. ⛭ Then tested the ladder as carrier: both combs are near-uniform in "
+            "n and a factor 1.48-1.51 would map them — **but stretch CANCELS from the physical "
+            "peaks**, so the defect is **upstream of the map, in what sets k**. ⇒ **The projection "
+            "is the one failing precondition upstream of k that has never been tested.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

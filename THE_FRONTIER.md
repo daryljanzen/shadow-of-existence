@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3066: **the synthesis — two linked facts carry the whole set, and the acoustic sector is neither.** ① the four-manifold is the representation, not the existent; ② the physical foliation is **not posited but MEASURED**, forced from the redshift isotropy — **one distinction read twice**. ⇒ **The programmes load is carried by those, and the CMB fit by neither.** The horizon and flatness problems dissolve in the cosmology papers, so they bear weight — **but through those dissolutions, not through acoustic peak positions.*****
+*⌗ **LAST ACTUAL MOVE — r3067: **the precondition audit done — six enumerated, and the two that FAIL are the two that set l.** Rate ✔, budget ⚠, **projection ⛔**, **mode map ⛔**, crossing ✔, acoustic scale ⚠. ⛭ Then tested the ladder as carrier: both combs are near-uniform in n and a factor 1.48-1.51 would map them — **but stretch CANCELS from the physical peaks**, so the defect is **upstream of the map, in what sets k**. ⇒ **The projection is the one failing precondition upstream of k that has never been tested.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3066: PO-13s trouble is PERIPHERAL to what CR claims and central only to what P15 attempts -- the frameworks load rests on the ontological distinction and the measured foliation, not on the fit |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3067: six preconditions audited; the projection and the mode map FAIL, and both set l. The ladder is cleared as carrier (stretch cancels), leaving THE PROJECTION as the untested one |
 
 ---
 

@@ -146,6 +146,23 @@ sources: [cowork, chat]
 
 
 
+### Revision r3067 — 2026-08-15 (main line). **THE METHOD APPLIED: SIX PRECONDITIONS ENUMERATED AND CHECKED, AND THE TWO THAT FAIL ARE THE TWO THAT SET THE MULTIPOLE.**
+
+*Reading note eight's exercise, done at last.*
+
+    (1) the background rate                 CLEAN     the form is right
+    (2) the gravitating budget              QUESTIONABLE  routed through a relation the rate merely satisfies
+    (3) the projection                      FAILS     code uses hypersurface-orthogonal; framework names non-synchronous
+    (4) the mode-to-multipole map           FAILS     explicitly undeveloped in P10
+    (5) the horizon-crossing history        CLEAN     receipted
+    (6) the acoustic scale                  QUESTIONABLE  a target, not a prediction
+
+⇒ ***Two clean, two questionable, two failing — **and the two that fail are exactly the two that determine where peaks appear**.***
+
+**⛭⛭ THEN TESTED WHETHER THE LADDER ALONE COULD CARRY IT:** *the sky's peaks are near-uniform in the harmonic index, spacings 115 and 101, and so are the scan's, 76 and 71, with the ratio 1.48 to 1.51 — **so a single multiplicative factor would map one onto the other**. ⛔ **But r3024 measured that the stretch cancels from the physical peaks.** ***Those two facts together say the defect is not the ladder's constant but what sets the wavenumber — upstream of the map.***
+
+**⌗ Which leaves the projection as the one failing precondition upstream of the wavenumber that has never been tested.** *The next computation, and **the first time the reading has narrowed the model to a single untested precondition**.*
+
 ### Revision r3066 — 2026-08-15 (main line). **THE SYNTHESIS READ: TWO LINKED FACTS CARRY THE WHOLE SET, AND THE ACOUSTIC SECTOR IS NEITHER OF THEM.**
 
 *The read's endpoint. The dissolutions are "**not a miscellany of re-readings but a single move seen several times**", each dissolving "**the SAME way, from the SAME distinction**" — against a standard framework whose every answer is "**a conjecture, or a non-canonical or supplementary device, brought in to manage a discrepancy the framework itself produces**": chronology protection, censorship, pseudotensors, firewalls and islands, horizon thermodynamics, **inflation for the horizon and flatness problems**.*

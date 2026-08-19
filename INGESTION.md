@@ -588,3 +588,4 @@ r3063  LATENT      hole argument: modes are individuated on the layer; k, l, n a
 r3064  LATENT      the physical projection is NON-SYNCHRONOUS; the code computes on the symmetric one. The comb is a phase structure.
 r3065  LATENT      a settled CR result converges from several readings on one locus. The acoustic sector: one instrument, one route.
 r3066  LATENT      the synthesis: two linked facts carry the set; the CMB fit carries neither. PO-13 is peripheral to CRs claims.
+r3067  LATENT      six preconditions audited: projection and mode map fail, both set l. Ladder cleared; the projection is untested.
