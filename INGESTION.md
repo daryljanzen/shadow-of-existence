@@ -584,3 +584,4 @@ r3059  CORPUS      false sentence written into P7 and reverted; both deferrals n
 r3060  LATENT      P10 marks the S3-harmonics-to-multipoles relation undeveloped; RADSCAN builds it. Adiabaticity worst at lowest harmonics.
 r3061  CORPUS      deferral checks closed: P7 pointed at what IS settled about crossing; the rest well-formed.
 r3062  LATENT      adiabaticity degrades at l<30, not at 220. r3060s suggestion withdrawn; the undeveloped ladder stands.
+r3063  LATENT      hole argument: modes are individuated on the layer; k, l, n are representations. The ladder gap is a missing representation map.

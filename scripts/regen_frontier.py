@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3062: the adiabaticity degradation is at l < 30, two orders below the peak, and does NOT explain it. What stands: the ladder is an undeveloped relation with stretch = 2.75 hardcoded'),
+        'r3063: the ladder gap is a missing REPRESENTATION MAP, not a missing calculation -- modes are individuated on the layer and k, l and n are representations of them. stretch = 2.75 stands in for the map'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3062: **the adiabaticity check does NOT explain the peak — my r3060 suggestion is "
-            "withdrawn.** Through the scans own ladder, n=2,3,10 map to l = 7.8, 10.7, 30.1, while "
-            "the first peak at l~220 is n~79 with parameter ~0.02 — **solidly adiabatic, thirty "
-            "times smaller than at n=2**. I asserted the mapping instead of computing it. ⌗ What "
-            "survives is the QUOTED part: **the ladder is still an undeveloped relation and "
-            "stretch = 2.75 still stands in for it.**")
+LASTFIND = ("r3063: **the hole argument answers a question about the model I had not known to "
+            "ask.** Events are individuated by **occurrence within the layers, not by coordinate "
+            "representation** — CR resolves the argument WITHOUT deflating the manifold, and the "
+            "indeterminacy is **representational redundancy rather than ontological ambiguity**. ⇒ "
+            "**So a mode at wavenumber k is a structure ON THE LAYER**, and the k-grid, the "
+            "l-ladder and the harmonic index are representations of it. **The undeveloped "
+            "S^3-to-multipole relation is the missing REPRESENTATION MAP.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

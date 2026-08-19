@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3062: **the adiabaticity check does NOT explain the peak — my r3060 suggestion is withdrawn.** Through the scans own ladder, n=2,3,10 map to l = 7.8, 10.7, 30.1, while the first peak at l~220 is n~79 with parameter ~0.02 — **solidly adiabatic, thirty times smaller than at n=2**. I asserted the mapping instead of computing it. ⌗ What survives is the QUOTED part: **the ladder is still an undeveloped relation and stretch = 2.75 still stands in for it.*****
+*⌗ **LAST ACTUAL MOVE — r3063: **the hole argument answers a question about the model I had not known to ask.** Events are individuated by **occurrence within the layers, not by coordinate representation** — CR resolves the argument WITHOUT deflating the manifold, and the indeterminacy is **representational redundancy rather than ontological ambiguity**. ⇒ **So a mode at wavenumber k is a structure ON THE LAYER**, and the k-grid, the l-ladder and the harmonic index are representations of it. **The undeveloped S^3-to-multipole relation is the missing REPRESENTATION MAP.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3062: the adiabaticity degradation is at l < 30, two orders below the peak, and does NOT explain it. What stands: the ladder is an undeveloped relation with stretch = 2.75 hardcoded |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3063: the ladder gap is a missing REPRESENTATION MAP, not a missing calculation -- modes are individuated on the layer and k, l and n are representations of them. stretch = 2.75 stands in for the map |
 
 ---
 

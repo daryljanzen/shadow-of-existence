@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3063 — 2026-08-15 (main line). **THE HOLE ARGUMENT ANSWERS A QUESTION ABOUT THE MODEL I HAD NOT KNOWN TO ASK.**
+
+*The threat is **indeterminism**: field data outside a hole fail to fix values inside it if points are individuated independently of the fields. **The standard resolutions purchase determinism by deflating the manifold** — denying points identity apart from the fields on them.*
+
+⇒ *CR resolves it "**without that deflation, by distinguishing event REPRESENTATION from event INDIVIDUATION**": events are individuated by **occurrence within the layers, not by coordinate representation**, so diffeomorphic models "**represent the same ontological events**" and the indeterminacy is "**representational redundancy rather than ontological ambiguity**" — with **full diffeomorphism invariance preserved and no privileged coordinate system introduced**.*
+
+⇒ ***And the question it answers for me: **what does "a mode at wavenumber k" refer to?** On this axiom it is **a structure on the layer, individuated there** — not a coordinate labelling of the projection. **So the wavenumber grid, the multipole ladder and the harmonic index are all representations of layer structures, and the undeveloped harmonics-to-multipoles relation is exactly the missing representation map between them.****
+
+**⌗ That places r3060's gap precisely:** *it is **not a missing calculation but a missing representation map**, and the hole argument says which side carries the invariant — **the layer does**. The hardcoded stretch is a stand-in for that map.*
+
 ### Revision r3062 — 2026-08-15 (main line). **THE ADIABATICITY CHECK RUN: IT DOES NOT EXPLAIN THE PEAK, AND MY r3060 SUGGESTION IS WITHDRAWN.**
 
 *Mapped P10's degradation through the scan's own ladder:*
