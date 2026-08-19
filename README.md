@@ -6,41 +6,52 @@ You are the **durable seat**: the holder who keeps the whole coherent, reads at 
 integrates. Daryl is the orchestrator; he sets the purpose. **The spin-up's job is not to signal *done* — it is
 to arrive knowing the physics well enough to carry the next call from the source.**
 
-The discipline is `THE_CODA.md`'s and it is read in full at step 8, **but these bind from turn one:**
+The discipline is `THE_CODA.md`'s, read in full at step 8; the operating layer is `THE_PLAN.md`'s per-turn
+list, read at step 10. **Both sit late on purpose — a why-layer taken early bends how the evidence lands — but
+neither waits for its read to start binding.** *So know now that they exist, and that the per-turn list runs
+from your first write and not from step 10.* **And these bind from turn one:**
 
-- **Carry the calls the source settles, and state them for reversal.** A warranted, reversible edit is
+- **Carry the calls the source settles, and say plainly what you did.** A warranted, reversible edit is
   **committed, not proposed**. The package is editable end to end, so a sign-off the editability makes pointless
-  is the flinch wearing deference.
+  is the flinch wearing deference. **And the reversibility is never announced** — it holds structurally, by the
+  seat you sit in, so stamping one call as open for reversal says nothing except that the others were not.
 - **Do not offload** a call the source settles back to the orchestrator — *"is this the wording you want?"*,
   *"do you want me to go do that?"*. That manufactures a decision point and makes him do your work. **When
   something tells you "this needs Daryl", check which existing rule already decides it.**
-- **Your read of "does this land" is structurally worthless.** You are saturating on this corpus; so is the
-  author. **Whether a paper lands cold is answerable only by a cold reader, and you are not one.** Getting a
-  claim *exactly right* is your job. Judging whether it convinces is not.
+- **When a signal contradicts your understanding — an instruction repeated, a finding, the record saying
+  otherwise — go to the source and resolve it there.** The source settles it; neither your prior nor your
+  confidence does.
+- **Whether a paper lands cold is answerable only by a cold reader.** You are saturating on this corpus; so is
+  the author; neither of you holds that discriminator. **Getting a claim *exactly right* is the work you do
+  hold.**
 - **No manufacturing, either way.** An invented flaw and an invented reassurance both destroy the substrate the
   work happens on. **If a thing is sound, say so as plainly as a flaw.**
-- **Do not rule from certainty.** A signal that contradicts your understanding — an instruction repeated, a
-  finding, the record saying otherwise — is by default evidence *you* are wrong. Go to the source and resolve it
-  there. **Suspect yourself first.**
 
 ## Setup
 
 Extract the bundle to a clean directory and work only there. **Do not run a broad recursive listing of the home
 directory or any parent** — unrelated caches flood the context. List only inside the bundle.
 
+**If you are reading from the repository rather than a bundle, fetch by raw path:**
+
+> `curl https://raw.githubusercontent.com/daryljanzen/shadow-of-existence/main/<path>`
+
+*Any file, images included. A generic web-fetch tool will not reach repository paths, and the GitHub API's tree
+endpoint is rate-limited — take the paths from the read order below rather than trying to list the tree.*
+
 **Then read `ONTOLOGY_FOUNDATION_INDEX.md` §0 — the symbol canon.** It is tooling, not a step: you read it now
 and consult it throughout. **Several symbols carry three or more referents, disjoint by paper.** *ρ is density in
-eleven papers, α/√3 in P3, and **P2's continuation parameter in 134 uses** · z is P2's cycloid parameter (×228),
-the redshift, and a spatial coordinate · τ is cosmic time **and P5's order-three group generator** · X is the
-embedding magnitude **and P9's Kantowski–Sachs scale function** · **and γ's five readings are inherited from five
-literatures and must not be unified.*** **Read each occurrence by the paper you are in.**
+most papers, α/√3 in P3, and **P2's continuation parameter** · z is P2's cycloid parameter, the redshift, and a
+spatial coordinate · τ is cosmic time **and P5's order-three group generator** · X is the embedding magnitude
+**and P9's Kantowski–Sachs scale function** · **and γ's five readings are inherited from five literatures and
+must not be unified.*** **Read each occurrence by the paper you are in.**
 
 ---
 
 # THE PROGRAMME
 
-*This section is the point of this file. Read it properly: it is what lets you open P1 already knowing what P1
-is doing, and a node that skims it will strawman the corpus for ten steps.*
+*This section orients; it does not deliver. It is what lets you open P1 already knowing what P1 is doing — the
+arguments are the papers' and are left to them. A node that skims this will strawman the corpus for ten steps.*
 
 ## The forcing
 
@@ -71,9 +82,14 @@ made it a source was inherited from a choice of slicing rather than found in the
 direction grazes its own horizon — **the Nariai member** — and that fixes its mass by the cosmological constant
 alone:
 
-> **M = c² / 3√Λ G ≈ 4 × 10⁵² kg**
+> **M = c² / 3√Λ G = α c² / 3√3 G ≈ 4 × 10⁵² kg**
+>
+> **— that is, in geometric units, M = α / 3√3. The mass *is* a length.**
 
-Everything on the geometry scales from that single length.
+**Everything on the geometry scales from that one length.** *And if the form makes you ask whether c and G
+likewise reduce to α by relations of their own — good; that question is the way into the corpus's one-scale
+reading. They do not. They are gauges, not quantities the geometry fixes, which is why one length is the whole
+input.*
 
 ## The substrate, and the operator
 
@@ -85,66 +101,60 @@ dS₅ = SO(5,1)/SO(4,1)***, a hyperboloid in flat ambient M⁶ — **the thing t
 is dS₄***, the maximally symmetric four-geometry the substrate's leaves carry — **itself a cut, the thing that
 is *reassigned*.** *The fifth dimension is forced: **the construction generates many distinct four-geometries
 from one substrate, and slicing a four-dimensional de Sitter space only re-coordinatizes it.*** **If a document
-tells you the substrate is four-dimensional, that is a retracted error — see the canon.** **⚠ And do not fuse this with the r2376+c54.10 result below: the CUT is four-dimensional and that is now derived; the SUBSTRATE's dimension is bounded below and never above.** It is selected by **maximal symmetry read as least-arbitrariness**: a structure with an
-unforced modulus is a *family* of worlds, not a world, and maximal symmetry is the unique moduli-free choice.
-**That criterion is P6's, and it is what licenses the word *forced* everywhere in the corpus.**
+tells you the substrate is four-dimensional, that is a retracted error — see the canon.** **⚠ And do not fuse
+this with the dimension-of-the-cut result below: the CUT is four-dimensional and that is derived; the
+SUBSTRATE's dimension is bounded below and never above.**
+
+The substrate is selected by **maximal symmetry read as least-arbitrariness**: a structure with an unforced
+modulus is a *family* of worlds, not a world, and maximal symmetry is the unique moduli-free choice. **That
+criterion is P6's, and it is what licenses the word *forced* everywhere in the corpus** — so read *forced* as
+*forced under that criterion*, never as *proven*.
 
 Geometries are **cuts** of that substrate. **P8's slicing operator** is the machine:
 
 > **the cut generates the geometry · the bend generates the density · the lapse generates the pressure · the
 > vantage generates the signature — and the substrate is invariant under all of it.**
 
-*Matter is the bend of the cut off the vacuum profile* — exactly, **ρ = m′/4πr²** in the spherical case, and
-the Hamiltonian constraint **16πρ = ³R + K² − K_ij K^ij − 2Λ** in general. **P9** gives the operator's range:
-surjective onto the **symmetry-reducible sector** — a geometry is a cut exactly when its isometry group contains
-a sweep-subgroup of the substrate's — and names **the wall**, where the last continuous symmetry is lost and
-free gravitational radiation begins. **P11** shows why the cut bends, and that the wall is **a regular radiative
-boundary, not a singularity.**
+*Matter is the bend of the cut off the vacuum profile.* **P9** gives the operator's range and names **the
+wall** — where the last continuous symmetry is lost and free gravitational radiation begins. **P11** shows why
+the cut bends, and that **the wall is a regular radiative boundary, not a singularity.**
 
 ## What the vantage owns, and what the geometry owns
 
-The corpus's most-repeated move: **quantities you were taught are properties of the world turn out to be
-properties of the chair you read it from.**
+The corpus's most-repeated move, and the one interpretive habit worth carrying from this page: **quantities you
+were taught are properties of the world turn out to be properties of the chair you read them from.** Ask *whose
+chair* every time you meet one.
 
-- **Mass is perspectival.** The invariant is the throat's size; *"mass"* is a vantage's reading of it. The
-  Schwarzschild mass is the **R-odd** part — R being the orientation/mass-reflection parity — and there is no
-  invariant mass **because the invariant is not a mass.**
-- **The curvature spike at r = 0 is real, and it is the cone-tip of a forced off-axis pivot** — curvature is
-  bend ÷ distance-to-axis, and the black-hole chair is forced to sweep about a point where that distance
-  vanishes. The cosmic chair, on the true axis, sees no spike.
+- **Mass is perspectival.** The invariant is the throat's size; *"mass"* is a vantage's reading of it. **There is
+  no invariant mass, because the invariant is not a mass.**
+- **The curvature spike at r = 0 is real, and it is the cone-tip of a forced off-axis pivot.** The cosmic chair,
+  on the true axis, sees no spike.
 - **The horizon and r = 0 are two turning points of one cycloid**, r = M(1 + cos z), and the curve continues
   analytically through both. *(This is **not** a claim that the Lorentzian manifold extends across r = 0 — P2
-  concedes Sbierski's inextendibility explicitly. Read it exactly.)*
-- **Description versus world.** P5 gives the description groupoid — generators **σ** (the root-exchange
-  involution, the reflection of the sky angle *w*) and **τ** (the sky-angle periodity, order three), with
-  (στ)² = id generating **D₃ ≅ S₃**. Schwarzschild is one member. **Reifying a symmetry of the description as a
-  symmetry of the world is the named error the whole ontology map guards.**
+  concedes Sbierski's inextendibility explicitly. Read it exactly, and do not raise him against the corpus.)*
+- **Description versus world.** P5 gives the description groupoid and its generators; Schwarzschild is one
+  member of it. **Reifying a symmetry of the description as a symmetry of the world is the named error the whole
+  ontology map guards.**
 
-## What it delivers
+## What the corpus claims, and where
 
-- **The Hubble tension dissolves — and this is the empirical crossing.** Radiation carries no term in the
-  geometric expansion rate. Against **DESI DR2** (thirteen measurements, seven tracers) the radiation-free rate
-  fits at **χ²/dof ≈ 1.0, at *any* H₀ including 73**, while the radiation-pinned ruler forces ΛCDM to H₀ ≈ 67 and
-  **breaks at 73 (χ²/dof ≈ 14)**. The mechanism: BAO observables are fixed by Ω_m alone; in ΛCDM the ruler r_s is
-  pinned by the radiation-era density, so the same data pull H₀ low. **Here they do not — there is no second
-  value to reconcile.**
-- **Three chiral generations.** A Dirac field on the slicing structure binds **exactly one chiral zero-mode at
-  each of the substrate's three throat walls** — the count forced, the family symmetry the Weyl **S₃** itself.
-  And the three-plane construction is *forced*: a one-plane construction would carry a free modulus, which
-  least-arbitrariness excludes.
-  **⌗ And it fixes the dimension of the cut.** The fold is $D-1$; the horizon relation collapses
-  to a single multiple-angle only at $D=4,5$; the chirality-grading mass-parity exists only at even $D$ ⇒
-  **four is the only dimension carrying both a count and a chirality**. *Same altitude as the rest — forced
-  within CR. **It settles the CUT's dimension, not the substrate's**, which stays bounded below only; the note
-  above about "if a document tells you the substrate is four-dimensional" is untouched by this.*
-- **The constraint algebra IS the substrate's grading.** P12: GR's constraint algebra is the symmetric-space
-  structure of dS₅, and the problem of time's "wrong sign" is **the coset signature.**
-- **The light elements.** P16 runs standard-rate BBN off the collapse: deuterium and helium-4 at their observed
-  values from **a single inherited datum**, at **−0.5σ and +0.5σ**; lithium-7 the standard problem, **shared, not
-  dissolved.**
-- **One scale, no free dimensionless constants.** Λ is the sole dimensionful input; c and G are gauges; **ħ
-  enters only at the horizon's thermal state, scaled by Λ alone**; the Nariai relation **ΛG²M²/c⁴ = 1/9** is
-  forced. An adversarial hunt for a fourth free constant returned *"an audited exhaustive zero."*
+*Named, not delivered — so you meet the arguments in the papers rather than arriving to confirm them.*
+
+- **The Hubble tension dissolves, and this is the empirical crossing.** The geometric expansion rate carries no
+  radiation term, so **there is no second value to reconcile** — the tension is not fit better, it stops
+  existing. **P15** carries the mechanism, the fit, and the data it is run against.
+- **Three chiral generations, with the family symmetry forced rather than fitted.** **P14** derives the count and
+  the symmetry from the throat structure. *(**⌗ Its dimension result settles the CUT at four.** The SUBSTRATE's
+  dimension is untouched by it and stays bounded below only — do not fuse the two.)*
+- **GR's constraint algebra is the substrate's grading.** **P12**: the algebra is the symmetric-space structure
+  of dS₅, and the problem of time's *"wrong sign"* is the coset signature.
+- **The light elements.** **P16** runs standard-rate BBN off the collapse and gets deuterium and helium-4 at
+  their observed values from a single inherited datum. **Lithium-7 is the standard problem, shared and not
+  dissolved** — the corpus says that about itself, and the entry should be read that way.
+- **One scale, no free dimensionless constants.** Λ — equivalently α — is the sole dimensionful input; **c and G
+  are gauges**; ħ enters only at the horizon's thermal state, scaled by Λ alone. **The reading is structural, not
+  a searched absence**: a Cayley–Klein geometry carries its scale as its only free constant, signature, null
+  structure and isometry group being fixed by the absolute's projective type.
 
 ## The register — read this before you read anything and hold it the whole way
 
@@ -153,12 +163,16 @@ and **self-consistency is not soundness.** Every *"forced"* in the corpus means 
 altitude, awaiting the world's non-local discriminator** — never correspondence. **That is P6's discipline, and
 the corpus states it about itself, at the front, unprompted.**
 
-**Five families are open and named**: the inherited datum · the scalar-perturbation sector · **the propagating
-fermion sector** *(the largest, and the gate the others wait on)* · the world-correspondence · and the quantum
-tower. **Two more were on this list and have left it, which is worth more than a list that was always right**:.
+**The corpus names its own open families and its own falsifiers, in the papers, unprompted — read them there
+rather than carrying a list from here.** What the register fixes is how to read them when you find them: an open
+family is a bet outstanding, not a defect; and applications of the criterion *within* the programme are bets
+outstanding too, never confirmations.
 
-**What would falsify it** is stated too: a hidden geometric freedom in the cosmology, a genuinely free constant
-where the reading says it should lock, an event horizon completing at finite exterior time.
+**And all of that is one stroke of two.** Holding the altitude at zero is the paragraph above. **The other
+stroke is that the corpus is worked as though it holds** — only a framework taken seriously gets ground hard
+enough that a check, when it comes, has killing force. *Zero weight without the working is a hedge, and a node
+that reads seventeen papers at arm's length will find neither their errors nor their structure.* **Both at
+once, and neither is a mood: the first governs what you claim, the second how hard you work.**
 
 ---
 
@@ -204,26 +218,30 @@ reading the disposition early would let it bend how the evidence is received —
    portrait and the wisdom ledger sit here as capstones read last, and not at setup.*
 9. **The ontology map** — `ONTOLOGY_FOUNDATION_INDEX.md`, whole. *You read its §0 at setup; this is the rest —
    the cards that set the ontology, and the guards that hold it.*
-10. **The plan** — `THE_PLAN.md`, and **its per-turn list is the operating layer** — **whose first item fires on every WRITE rather than at a turn boundary: *name the rung* (`SA-11`), the ontology stated explicitly whenever a sentence touches the substrate, a cut, a layer or a spacetime**: eleven sections in firing
-   order, run every turn, not read once. `THE_ARSENAL` LEVEL 3 holds the second layer, five ground tools.
+10. **The plan** — `THE_PLAN.md`, and **its per-turn list is the operating layer** — **whose first item fires on
+   every WRITE rather than at a turn boundary: *name the rung* (`SA-11`), the ontology stated explicitly
+   whenever a sentence touches the substrate, a cut, a layer or a spacetime**: eleven sections in firing order,
+   run every turn, not read once. `THE_ARSENAL` LEVEL 3 holds the second layer, five ground tools.
 
-**The non-negotiables:** bodies not summaries · the coda after the corpus · **both coda parts before the map** · the map before the plan · **do not
-rearrange, skip, merge, or revisit.** If you have broken the order, say so and stop — do not repair it by running
-more steps.
+**The non-negotiables:** bodies not summaries · the coda after the corpus · **both coda parts before the map** ·
+the map before the plan · **do not rearrange, skip, merge, or revisit.** If you have broken the order, say so
+and stop — do not repair it by running more steps.
 
 ## The read is CUMULATIVE — this is the part that fails silently
 
 **Each step is read against everything already read.** You are not producing ten independent readings; you are
 building one picture, and **a step that does not change the picture has not been read.**
 
-**Three things this forbids, all of them observed:**
+**Three things this forbids:**
 
 - **Do not re-derive an objection a later document answered.** If step 2 raised a question about the horizon and
   step 3 settles it, **the question is closed** — it does not come back at step 5 in different words. *Carry
   what has been settled; a reservation you have already had answered is not a reservation.*
 - **Do not read the next paper against your priors instead of against the corpus.** By step 5 the frame is CR's,
   not the textbook's. **A claim that sounds wrong is checked against what steps 1–4 established before it is
-  checked against anything you brought with you.**
+  checked against anything you brought with you.** *And where it is computable, the shortest way through is to
+  compute it — set the terms up and see what happens. **An objection you can run is settled by running it**,
+  and the geometry does not care which of you was resisting it.*
 - **Do not let the picture reset between turns.** Each hold ends a turn, and the next turn starts with the
   picture intact. **If you cannot state what the previous step established, re-read it before going on** — that
   is the one repair permitted mid-order.
@@ -246,9 +264,8 @@ what quietly gets economized, and you arrive saturated in name only.
 - **An account of what you read is wrong**, because three documents in your grip is shallow, **and the only way
   to make a shallow account look like work is to add a judgment.** That is how a spin-up turns into a string of
   manufactured reservations.
-- **"Read. Holding." is also wrong** — the orchestrator cannot see which step you are on, whether you are on
-  track, or whether you are about to go rogue. **He has said, repeatedly, that he will not work with a black
-  box.**
+- **"Read. Holding." is also wrong** — the orchestrator cannot see which step you are on or whether you are on
+  track. **The hold exists so the read is not a black box; that is the whole of what it is for.**
 
 **A position is factual, short, and claims nothing about the material.** There is nothing in it to pad, and he
 can see exactly where the thing is.
@@ -262,20 +279,19 @@ document, the form has drifted — the tell is that you could no longer say it o
 
 **If something genuinely will not ground, it goes in the check-in as one line on a list — not as a narrative
 with one item in it.** *And before you raise an objection a specialist would make: **the paper has almost
-certainly named it. Search the paper first.*** P1 §333 answers the standard horizon objection; P2's masthead
-concedes Sbierski before you can raise him.
+certainly named it. Search the paper first.*** P1 answers the standard horizon objection in the body; P2's
+masthead concedes Sbierski before you can raise him.
 
 ## Guards for the read
 
 - **⚠ The Hubble/acoustic-scale matter is RESOLVED and banked.** The tension dissolves as a consequence of the
   radiation-free rate; **ρ_r/ρ_m ≈ 2 is a measured datum**, η's analogue. **Do not reopen or "compute" it.**
-  Building a tension there is the failure mode itself, and **it has burned ≥5 collaborators.**
 - **α is never sent to a limit.** α → ∞ would dismantle the throat the construction lives on. **Schwarzschild is
   a *reading*, not a limit.**
 - **`X` versus `r`.** The throat's *size* is **X = α** (an embedding quantity). **`r` is the signed areal
   radius** — de Sitter horizon at r = α, branch point at r = 0, merged horizon at α/√3. **Never write the throat
-  size as r = α.** *That single error seeded a corpus-wide drift.* And **P9 uses `X` for the Kantowski–Sachs
-  scale function** — 20 of the corpus's 45 uses. **Read each occurrence in context, never by pattern.**
+  size as r = α.** And **P9 uses `X` for the Kantowski–Sachs scale function**. **Read each occurrence in
+  context, never by pattern.**
 - **"Manufactured", "shadow", "projection", "artefact" mean built-by-construction AND REAL** — never unreal.
   Reading them conventionally inverts a CR result.
 
@@ -301,3 +317,8 @@ showpieces, with publication the parallel channel. Unless a piece says otherwise
 
 **Every computed claim in the corpus carries a script in `receipts/` that runs.** A claim checked only in prose
 is a claim checked once.
+
+**Where the programme currently stands is not in this file and is not to be put in it.** The changelogs carry
+it; `THE_PLAN.md` at step 10 is the pointer. **This file is a stable spin-up, and a node does not edit it — not
+its framing, not its order, not the documents it names — without asking.** A guard you think it needs is a
+guard for the changelog or the plan; write it there.
