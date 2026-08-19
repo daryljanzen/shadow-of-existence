@@ -146,6 +146,24 @@ sources: [cowork, chat]
 
 
 
+### Revision r3062 — 2026-08-15 (main line). **THE ADIABATICITY CHECK RUN: IT DOES NOT EXPLAIN THE PEAK, AND MY r3060 SUGGESTION IS WITHDRAWN.**
+
+*Mapped P10's degradation through the scan's own ladder:*
+
+     n     mu_n    parameter    l = sqrt(n(n+2)) x 2.75
+     2     2.45      0.70                    7.8
+     3     3.61      0.48                   10.7
+    10    10.86      0.16                   30.1
+    79    79.98     ~0.02                  220.0   <- the first peak
+
+**⛔ So the degradation lives at multipoles below thirty, two orders below the acoustic peak**, *and at the first peak the parameter is about 0.02 — **thirty times smaller than at n=2, and solidly adiabatic**.*
+
+⇒ ***It does not explain the first-peak failure, and my r3060 suggestion that it might — "worst at the lowest harmonics, which is where the first peak sits" — was wrong: **I asserted the mapping instead of computing it**.***
+
+**⌗ WHAT SURVIVES IS THE PART THAT WAS QUOTED RATHER THAN INFERRED, and it is the more important part:** *"the relation between S-cubed tensor harmonics and observed multipoles is **not developed here**, and **no inference to the microwave sky is drawn from this section**" — **the scan's ladder is still an undeveloped relation, and the stretch constant is still hardcoded standing in for it**.*
+
+**⚠ Which sharpens rather than softens:** *the ladder is unjustified **and** the adiabaticity is fine where the peak is, so whatever is wrong with the first peak is **not** the harmonic treatment losing control.*
+
 ### Revision r3061 — 2026-08-15 (main line). **THE DEFERRAL CHECKS FINISHED: ONE CORPUS IMPROVEMENT, THE REST WELL-FORMED.**
 
 *Checked all fifteen against whether their content is settled elsewhere.*

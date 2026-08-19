@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3061: **deferral checks finished — one corpus improvement, the rest well-formed.** P7 defers the mechanism for MATTER AND OBSERVERS while sec:what-crosses handles PERTURBATION CONTENT — different objects, so it was honest; **pointed at what IS settled about crossing anyway**. The circles two-triples deferral **names the missing artefact** (no derivation producing {0,1,2} from a single condition), which is well-formed. ⌗ Class real, gate holds it, and r3060s ladder finding was its yield.***
+*⌗ **LAST ACTUAL MOVE — r3062: **the adiabaticity check does NOT explain the peak — my r3060 suggestion is withdrawn.** Through the scans own ladder, n=2,3,10 map to l = 7.8, 10.7, 30.1, while the first peak at l~220 is n~79 with parameter ~0.02 — **solidly adiabatic, thirty times smaller than at n=2**. I asserted the mapping instead of computing it. ⌗ What survives is the QUOTED part: **the ladder is still an undeveloped relation and stretch = 2.75 still stands in for it.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3060: P10 marks the S^3-harmonics-to-multipoles relation UNDEVELOPED and draws no inference to the sky -- and RADSCAN builds exactly that relation. Adiabaticity degrades to order unity at the lowest harmonics |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3062: the adiabaticity degradation is at l < 30, two orders below the peak, and does NOT explain it. What stands: the ladder is an undeveloped relation with stretch = 2.75 hardcoded |
 
 ---
 
