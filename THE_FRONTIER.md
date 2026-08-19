@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3054: **THE_READING_NOTES opened** — the linear read is producing constraints faster than register rows can hold them. Six positive statements the model must answer to (the rate is GENERATED not sourced; fixed by Lambda alone; the invariant is a LENGTH; a perturbation is a LAYER object with a worked example; matter FIXES THE FOLIATION; curvature is projection and ontology is h_ij), **the named category error with four instances of my own tabulated**, and three open questions the corpus may not have asked.***
+*⌗ **LAST ACTUAL MOVE — r3055: **time travel names the frameworks METHOD, in a form that indicts my scan.** GR admits CTCs and carries no principle forbidding them, so exclusion was sought outside it in an unproven conjecture; **CR dissolves it STRUCTURALLY RATHER THAN DYNAMICALLY — by the ontology that withholds existence from the loop**. ⇒ **When a problem is met by a mechanism, CRs move is to ask what the ontology permits.** My scan has been mechanism-hunting for forty revisions and has never asked that of the acoustic sector.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3053: the wave sector has a WORKED layer-level perturbation equation -- TT shear of h_ij evolving on the layer, spacetime oscillation projection-dependent. The template the scalar sector needs |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3055: the frameworks method is to ask what the ONTOLOGY permits before reaching for a mechanism -- and my scan has been mechanism-hunting throughout. Reading in order; notes filed to THE_READING_NOTES |
 
 ---
 

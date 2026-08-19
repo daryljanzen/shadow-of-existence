@@ -45,6 +45,8 @@ projection … ontological curvature is encoded **exclusively** in the intrinsic
 ⇒ ***$\Phi$ and $\Psi$ are projection quantities. Their evolution equation must be fixed against the
 layer, and I have been trying to fix it against itself.***
 
+**⑦ THE DISSOLUTION PATTERN, NAMED EXPLICITLY.** *Time travel: general relativity's own field equations admit closed timelike curves and **"the classical theory carries no principle that forbids them"**, so exclusion has had to be sought **outside** it, in **"the semiclassical conjecture … a proposal about physics the classical theory does not contain, and unproven"**. CR **"dissolves the problem at the level general relativity leaves it open, and does so STRUCTURALLY RATHER THAN DYNAMICALLY: it excludes closed timelike histories not by a mechanism that forbids the chronology horizon, but by the ontology that withholds existence from the loop"**.* ⇒ ***THE PATTERN FOR THE MODEL: **when a problem is met by a mechanism, CR's move is to ask whether the ontology already excludes it**. My whole scan has been mechanism-hunting — switching terms on and off to make a number move. **The framework's own method would ask first what the layer ontology permits.*** ⌗ *And the proof is one line of ordering: the layers are **totally ordered by $t$**, no layer exists prior to itself, and the spacetime is representational — so there is no structure a trajectory could return through.*
+
 ## ⛔ THE NAMED ERROR — and every instance of it I have made
 
 *"**its standard synchronous reading is a category error, reifying the maximally symmetric projection's

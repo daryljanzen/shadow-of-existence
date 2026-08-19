@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3055 — 2026-08-15 (main line). **TIME TRAVEL NAMES THE FRAMEWORK'S METHOD, IN A FORM THAT INDICTS MY SCAN.**
+
+*Read in order. General relativity's own equations admit closed timelike curves and "**the classical theory carries no principle that forbids them**", so exclusion has had to be sought **outside** it — the chronology-protection conjecture, "**a proposal about physics the classical theory does not contain, and unproven**".*
+
+⇒ *CR "**dissolves the problem at the level general relativity leaves it open, and does so STRUCTURALLY RATHER THAN DYNAMICALLY: it excludes closed timelike histories not by a mechanism that forbids the chronology horizon, but by THE ONTOLOGY THAT WITHHOLDS EXISTENCE FROM THE LOOP**".*
+
+⇒ ***And that is a method statement I should apply to myself: **when a problem is met by a mechanism, CR's move is to ask whether the ontology already excludes it**. My scan has been mechanism-hunting for forty revisions — switching terms to make a number move. **The framework's own method would ask first what the layer ontology permits**, and I have never once asked that of the acoustic sector.***
+
+**⌗ And the proof is one line of ordering:** *the layers are totally ordered, no layer exists prior to itself, and the spacetime is representational — **so there is no structure a trajectory could return through**. Filed as reading note seven.*
+
 ### Revision r3054 — 2026-08-15 (main line). **`THE_READING_NOTES` OPENED: WHAT THE LINEAR READ HAS ESTABLISHED THAT THE MODEL MUST ANSWER TO.**
 
 *The notes had been scattered across register entries. Consolidated, because the read is producing constraints faster than rows can hold them and **the derived model will be adjusted on several of them**.*
