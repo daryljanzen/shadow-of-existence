@@ -600,3 +600,4 @@ r3075  LATENT      the photons are the REASSIGNED at-rest congruence; the code t
 r3076  LATENT      Nariai is the unique non-pivoting member, fixed by Lambda alone. One length fixes the background; nothing is free.
 r3077  LATENT      collapse forces Nariai via a trichotomy; the seam is fixed at r_N = alpha/sqrt(3) with equal horizon areas.
 r3078  LATENT      alpha is the throat size, r_N the merged horizons areal radius — do not conflate. r3077 corrected.
+r3079  LATENT      the Friedmann densities are BOOKKEEPING, not drivers; Omega_m is a clock reading. Stated plainly in the construction section.

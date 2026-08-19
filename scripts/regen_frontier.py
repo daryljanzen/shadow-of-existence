@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3078: the seam radius is a fixed FRACTION of alpha, not a fixed number -- the forcing does not set the invariant. And at the seam the null-boundary correspondence is METRIC, not merely causal'),
+        'r3079: the Friedmann densities are BOOKKEEPING, not drivers -- the matter fraction is a CLOCK READING. So the conversion treats bookkeeping entries as gravitating sources'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,13 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3078: **the paper guards exactly the conflation I made one revision earlier.** 'The "
-            "de Sitter scale is the SIZE OF THE THROAT 3-sphere, a distinct quantity from the areal "
-            "radius of the merged horizon carried on it — conflating the two is the crossing this "
-            "paragraph is at pains to prevent', and **the forcing does not set the value of the "
-            "invariant**. ⛔ r3077 said the seam gives a fixed NUMBER; it gives a fixed FRACTION. ⌗ "
-            "And the paper corrects its own earlier reading: at the seam the correspondence is "
-            "**METRIC, not merely causal**.")
+LASTFIND = ("r3079: **the paper states in its own voice what my whole scan was arguing about.** "
+            "'The Friedmann densities are then BOOKKEEPING for one Lambda-set geometry RATHER THAN "
+            "ITS DRIVERS: the matter fraction is not an independent amplitude but THE READING OF A "
+            "CLOCK.' ⇒ **So every Omega in the acoustic code is bookkeeping on a geometry already "
+            "fixed, and the (3Hc^2/2)Omega conversion is treating bookkeeping entries as "
+            "gravitating sources.** Twenty revisions of derivation, written plainly four sections "
+            "past where I stopped.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3079 — 2026-08-15 (main line). **THE EXPANSION LAW READ, AND THE PAPER STATES IN ITS OWN VOICE WHAT MY WHOLE SCAN WAS ARGUING ABOUT.**
+
+*The proper-frame line element carries the sinh-two-thirds solution in the parameter tau plus chi, **tilted relative to the fundamental rest frame — so constant-tau slices are Euclidean but do not coincide with cosmological spatial slices**.*
+
+⇒ *The areal radius "**is not merely LIKE the flat-LambdaCDM scale factor; at the Nariai member it IS that scale factor**", with **the rate and the amplitude both fixed by Lambda alone, no parameter left to tune** — the amplitude being **a third length, distinct from the throat size and from the merged-horizon radius**, which is the previous revision's guard applied again.*
+
+**⛭⛭⛭ AND THEN THE SENTENCE:** *"**The Friedmann densities are then BOOKKEEPING for one Lambda-set geometry RATHER THAN ITS DRIVERS: the matter fraction is not an independent amplitude but THE READING OF A CLOCK, so that the present matter fraction records the cosmic epoch at which we observe.**"*
+
+⇒ ***That is what I spent twenty revisions deriving from fragments, written plainly in the construction section. **Every density fraction in the acoustic code is bookkeeping on a geometry already fixed, and the matter fraction is a clock reading — so the conversion is not merely inconsistent in its totals but is treating bookkeeping entries as gravitating sources.****
+
+**⌗ The sharpest form the last standing candidate has taken** — *and it came from reading four sections past where I stopped.*
+
 ### Revision r3078 — 2026-08-15 (main line). **THE PAPER GUARDS EXACTLY THE CONFLATION I MADE ONE REVISION EARLIER.**
 
 ⇒ *"**The de Sitter scale is the SIZE OF THE THROAT three-sphere, a distinct quantity from the areal radius of the merged horizon carried on it — conflating the two is the crossing this paragraph is at pains to prevent.**" And: "**What the forcing does NOT give is the identity of the two radii, nor the scale as an output of the collapse … The forcing determines WHICH MEMBER occurs … it does not set the value of the invariant.**"*

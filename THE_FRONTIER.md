@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3078: **the paper guards exactly the conflation I made one revision earlier.** 'The de Sitter scale is the SIZE OF THE THROAT 3-sphere, a distinct quantity from the areal radius of the merged horizon carried on it — conflating the two is the crossing this paragraph is at pains to prevent', and **the forcing does not set the value of the invariant**. ⛔ r3077 said the seam gives a fixed NUMBER; it gives a fixed FRACTION. ⌗ And the paper corrects its own earlier reading: at the seam the correspondence is **METRIC, not merely causal**.***
+*⌗ **LAST ACTUAL MOVE — r3079: **the paper states in its own voice what my whole scan was arguing about.** 'The Friedmann densities are then BOOKKEEPING for one Lambda-set geometry RATHER THAN ITS DRIVERS: the matter fraction is not an independent amplitude but THE READING OF A CLOCK.' ⇒ **So every Omega in the acoustic code is bookkeeping on a geometry already fixed, and the (3Hc^2/2)Omega conversion is treating bookkeeping entries as gravitating sources.** Twenty revisions of derivation, written plainly four sections past where I stopped.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3078: the seam radius is a fixed FRACTION of alpha, not a fixed number -- the forcing does not set the invariant. And at the seam the null-boundary correspondence is METRIC, not merely causal |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3079: the Friedmann densities are BOOKKEEPING, not drivers -- the matter fraction is a CLOCK READING. So the conversion treats bookkeeping entries as gravitating sources |
 
 ---
 
