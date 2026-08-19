@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3090: **the full RHS read line by line — eleven of twelve check out against the standard forms.** The one never examined: the **slip term, a velocity damping whose coefficient grows as k^2**, which shifts frequency and not just amplitude. ⌗ The sizing said it could not be uniform (gamma/2omega grows linearly in k, so it would compress MORE at high k); **tested anyway, and NOSLIP=1 gives byte-identical peaks** with P1/P2 1.447 -> 1.442. **Eliminated, estimate and run agreeing.*****
+*⌗ **LAST ACTUAL MOVE — r3091: **the closure block read and the viscosity verified EXACTLY.** Photons get an algebraic shear, neutrinos an evolved one — the standard tight-coupling split. And the coefficient: the code sets A = 16/45, the damping exponent picks up A/2 = 8/45, and the standard Silk scales shear term enters as (1/6)(16/15) = 8/45. **Ratio 1.000000.** ⛔ Also removed dead code my own r3089 edit left in Ps; baseline unchanged.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3090: the RHS read whole; the slip term found, sized, tested and eliminated (byte-identical peaks). The sound speed verified right in the equation as written |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3091: the damping sector is sound -- closure form, species split, and the 16/45 coefficient all check, the last to ratio 1.000000 against the standard Silk scale |
 
 ---
 

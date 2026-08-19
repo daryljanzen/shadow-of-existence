@@ -146,6 +146,23 @@ sources: [cowork, chat]
 
 
 
+### Revision r3091 — 2026-08-15 (main line). **THE CLOSURE BLOCK READ, THE VISCOSITY VERIFIED EXACTLY, AND DEAD CODE I INTRODUCED REMOVED.**
+
+**⛔ First, my own mess:** *r3089's edit left a term multiplied by zero inside the lapse perturbation — inert, but junk I put in the source. **Removed; baseline unchanged.***
+
+⇒ *And the closure, read: **photons get an algebraic shear** proportional to their velocity over the opacity, **while neutrinos get an evolved one** through the hierarchy — the standard tight-coupling split, and correct. The initial data are adiabatic with the multipoles starting at zero.*
+
+**⛭⛭ AND THE COEFFICIENT CHECKS EXACTLY, verified rather than accepted from the comment:**
+
+    code's closure coefficient A                    = 16/45
+    damping exponent picks up A/2                   =  8/45
+    standard Silk scale's shear term, (1/6)(16/15)  =  8/45
+    ratio                                              1.000000
+
+⇒ ***The polarised viscosity is right to the fraction.***
+
+**⌗ So the damping sector is sound** — *the closure form, the split between species, and the coefficient all check. **Three more candidates eliminated by reading rather than by scanning switches.***
+
 ### Revision r3090 — 2026-08-15 (main line). **THE FULL RIGHT-HAND SIDE READ LINE BY LINE, AND THE SLIP TERM TESTED AND ELIMINATED.**
 
 *Read all twelve output lines rather than the two examined so far. **Eleven check out against the standard forms** — the cold-matter pair, the photon and neutrino density equations, the neutrino momentum equation, the shear equation and the multipole recursion.*

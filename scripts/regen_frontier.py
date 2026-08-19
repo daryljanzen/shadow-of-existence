@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3090: the RHS read whole; the slip term found, sized, tested and eliminated (byte-identical peaks). The sound speed verified right in the equation as written'),
+        'r3091: the damping sector is sound -- closure form, species split, and the 16/45 coefficient all check, the last to ratio 1.000000 against the standard Silk scale'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3090: **the full RHS read line by line — eleven of twelve check out against the "
-            "standard forms.** The one never examined: the **slip term, a velocity damping whose "
-            "coefficient grows as k^2**, which shifts frequency and not just amplitude. ⌗ The "
-            "sizing said it could not be uniform (gamma/2omega grows linearly in k, so it would "
-            "compress MORE at high k); **tested anyway, and NOSLIP=1 gives byte-identical peaks** "
-            "with P1/P2 1.447 -> 1.442. **Eliminated, estimate and run agreeing.**")
+LASTFIND = ("r3091: **the closure block read and the viscosity verified EXACTLY.** Photons get an "
+            "algebraic shear, neutrinos an evolved one — the standard tight-coupling split. And "
+            "the coefficient: the code sets A = 16/45, the damping exponent picks up A/2 = 8/45, "
+            "and the standard Silk scales shear term enters as (1/6)(16/15) = 8/45. **Ratio "
+            "1.000000.** ⛔ Also removed dead code my own r3089 edit left in Ps; baseline "
+            "unchanged.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
