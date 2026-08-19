@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3071 — 2026-08-15 (main line). **"HOW IS IT A FITTED PARAMETER IF IT'S A PREDICTED ONE?" — THE CORPUS IS COHERENT; I WAS NOT.**
+
+*Checked the direction of every statement. **P7**: "the datum proper is the **onset redshift**; the ratio is its restatement" — **the onset IS the single inherited datum, the empirical input**. **P7 again**: the composition ratio "is fixed by the onset temperature alone" — **predicted FROM the onset**. **P15**: "holding theta-star to its measured value **fixes** the onset redshift" — fitted to a measurement. **The scan**: the same fit.*
+
+⇒ ***So there is no incoherence: **the onset is the input, fitted to the measured angular scale; the composition ratio is the output**. One input, one prediction.***
+
+**⛔⛔ AND MY r3069/r3070 WAS CIRCULAR:** *1.6 eV is the temperature **required** to return a composition ratio of 1.99, and 1.99 is the datum's own value. **I compared the datum to itself** and reported the agreement as showing the fitted parameter is predicted. **The 0.75% measures the arithmetic's self-consistency and nothing else.***
+
+**⌗ `PO-16`'s receipt corrected:** *the strengthening is withdrawn and **the original claim stands exactly as written** — "the single inherited datum is the fitted onset restated", an identity of kind, which is all it ever was. **The strike is unaffected.***
+
+**⚠ And precondition six's elimination rested on this, so it is withdrawn too:** *the acoustic scale **is** a fitted target, and that warning stands. **Two candidates now, not one.***
+
 ### Revision r3070 — 2026-08-15 (main line). **r3069 DOES TOUCH `PO-16`: IT STRENGTHENS THE STRIKE BEYOND WHAT THE RECEIPT CLAIMED.**
 
 *Daryl asked whether the onset result alters the earlier close. It does, in the favourable direction.*

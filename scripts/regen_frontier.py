@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3069: five of six preconditions eliminated. ONE candidate stands: the gravitating-budget conversion, the (3Hc^2/2)Omega routing r3041 showed inconsistent by r_t/r_H'),
+        'r3071: TWO candidates stand -- the gravitating-budget conversion AND the imposed acoustic scale, whose elimination was withdrawn as circular. The corpus is coherent; the error was mine'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3070 (Daryl asked): **r3069 does touch PO-16 — it STRENGTHENS the strike.** The "
-            "receipt said the inherited datum is the fitted onset restated, an identity of KIND. "
-            "**It is also an identity of VALUE**: T_onset = 1.6 eV gives z = 6811 against the "
-            "cosmologys fitted 6761, **agreement to 0.75%%**. ⇒ **The one fitted parameter is, to "
-            "that accuracy, PREDICTED rather than free.** Receipt updated; the strike stands "
-            "better founded than when made.")
+LASTFIND = ("r3071 (Daryl caught it): **the corpus is coherent; I was not.** The onset redshift IS "
+            "the single inherited datum — the empirical input, fitted to theta_* — and the "
+            "composition ratio is predicted FROM it. One input, one prediction. ⛔ **My r3069 was "
+            "circular**: 1.6 eV is the temperature required to return 1.99, and 1.99 is the datums "
+            "own value. I compared the datum to itself. **r3069/r3070 withdrawn; precondition 6s "
+            "warning stands.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

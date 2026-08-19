@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3070 (Daryl asked): **r3069 does touch PO-16 — it STRENGTHENS the strike.** The receipt said the inherited datum is the fitted onset restated, an identity of KIND. **It is also an identity of VALUE**: T_onset = 1.6 eV gives z = 6811 against the cosmologys fitted 6761, **agreement to 0.75%%**. ⇒ **The one fitted parameter is, to that accuracy, PREDICTED rather than free.** Receipt updated; the strike stands better founded than when made.***
+*⌗ **LAST ACTUAL MOVE — r3071 (Daryl caught it): **the corpus is coherent; I was not.** The onset redshift IS the single inherited datum — the empirical input, fitted to theta_* — and the composition ratio is predicted FROM it. One input, one prediction. ⛔ **My r3069 was circular**: 1.6 eV is the temperature required to return 1.99, and 1.99 is the datums own value. I compared the datum to itself. **r3069/r3070 withdrawn; precondition 6s warning stands.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3069: five of six preconditions eliminated. ONE candidate stands: the gravitating-budget conversion, the (3Hc^2/2)Omega routing r3041 showed inconsistent by r_t/r_H |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3071: TWO candidates stand -- the gravitating-budget conversion AND the imposed acoustic scale, whose elimination was withdrawn as circular. The corpus is coherent; the error was mine |
 
 ---
 
