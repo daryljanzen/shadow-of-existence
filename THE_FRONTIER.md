@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3073: **the conversion quantified, and the CONSISTENT version is the WORSE one.** The identity 4piG a^2 rho = (3Hc^2/2)Omega needs the same total in both places; the numerators has radiation, Hcs does not. **Mismatch 2.73 at onset, 1.28 at recombination, 1.03 by ten times.** ⛔ But the consistent choice returns 0.6839 with only two peaks. ⇒ **Either the inconsistency compensates for something else, or the conversion is not the carrier and the audits last candidate fails too.*****
+*⌗ **LAST ACTUAL MOVE — r3074: **the compensation test is inconclusive as designed, and the failure mode is all it establishes.** RAD_TOT=0 returns only two peaks, so the height ratio cannot be read at all. ⇒ **The consistent conversion does not degrade the fit — it DESTROYS the spectrum**, which is qualitatively unlike every other switch. Direction known: dividing by the rates own total makes every Omega LARGER by up to 2.73x. **The audit is exhausted without a verdict; the next constraint must come from reading.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3071: TWO candidates stand -- the gravitating-budget conversion AND the imposed acoustic scale, whose elimination was withdrawn as circular. The corpus is coherent; the error was mine |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3074: the audit is EXHAUSTED without a verdict -- the last candidate cannot be tested by comparison because the consistent version produces no comb. Next constraint from reading: SdS, null-boundary, central theorem |
 
 ---
 

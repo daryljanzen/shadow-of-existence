@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3071: TWO candidates stand -- the gravitating-budget conversion AND the imposed acoustic scale, whose elimination was withdrawn as circular. The corpus is coherent; the error was mine'),
+        'r3074: the audit is EXHAUSTED without a verdict -- the last candidate cannot be tested by comparison because the consistent version produces no comb. Next constraint from reading: SdS, null-boundary, central theorem'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3073: **the conversion quantified, and the CONSISTENT version is the WORSE one.** The "
-            "identity 4piG a^2 rho = (3Hc^2/2)Omega needs the same total in both places; the "
-            "numerators has radiation, Hcs does not. **Mismatch 2.73 at onset, 1.28 at "
-            "recombination, 1.03 by ten times.** ⛔ But the consistent choice returns 0.6839 with "
-            "only two peaks. ⇒ **Either the inconsistency compensates for something else, or the "
-            "conversion is not the carrier and the audits last candidate fails too.**")
+LASTFIND = ("r3074: **the compensation test is inconclusive as designed, and the failure mode is "
+            "all it establishes.** RAD_TOT=0 returns only two peaks, so the height ratio cannot be "
+            "read at all. ⇒ **The consistent conversion does not degrade the fit — it DESTROYS the "
+            "spectrum**, which is qualitatively unlike every other switch. Direction known: "
+            "dividing by the rates own total makes every Omega LARGER by up to 2.73x. **The audit "
+            "is exhausted without a verdict; the next constraint must come from reading.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

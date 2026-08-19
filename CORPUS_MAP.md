@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3074 — 2026-08-15 (main line). **THE COMPENSATION TEST RUN: INCONCLUSIVE AS DESIGNED, AND THE FAILURE MODE IS THE ONLY THING IT ESTABLISHES.**
+
+*The test was: if the inconsistency compensates, fixing it should **break what currently works** — the odd/even height ratio. **It cannot be read: the consistent setting returns only two peaks, so no height ratio is printed at all.***
+
+⇒ ***So the consistent conversion does not degrade the fit — **it destroys the spectrum**. That is a qualitative difference from every other switch in the scan, all of which move numbers while leaving a comb standing.***
+
+**⌗ And the direction is known from r3073:** *the rate's own total is smaller, so dividing by it makes every density fraction **larger** — the potential source is **stronger by up to 2.73 times at the onset**. **A source that strong leaves no comb.** Consistent with the compensation reading — the shipped weighting sitting where oscillations survive and the consistent one overdriving them — **but consistent-with is not shown, and it is not claimed**.*
+
+**⚠ What can be said and no more:** *the last candidate is **not cleanly eliminated and not cleanly confirmed**. **The test as designed cannot distinguish the two readings, because one of them produces no observable to compare.***
+
+⇒ ***The audit is exhausted without a verdict. The next constraint has to come from reading: the cosmogenesis construction, the null-boundary correspondence and the central theorem are all still unread, and all three are where the observable leg is actually built.***
+
 ### Revision r3073 — 2026-08-15 (main line). **THE CONVERSION QUANTIFIED, AND THE CONSISTENT VERSION IS THE WORSE ONE. THAT IS THE RESULT.**
 
 *The code asserts that the physical source equals three-halves the conformal Hubble squared times the density fraction. **That identity holds only if the total inside the fraction is the same total as the one in the rate — and it is not**: the numerator's carries radiation, the rate's does not.*
