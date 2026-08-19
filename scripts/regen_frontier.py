@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3050: matter has a THIRD role the scan never represented -- the comoving congruence FIXES THE FOLIATION on which the rate is generated. And the constraint is p_tau + H_phys = 0, a Schrodinger evolution'),
+        'r3051: Phi and Psi are PROJECTION quantities; ontological curvature is exclusively in h_ij. So the potential equation is a projection equation, and the layers geometry is what it must be fixed against'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,13 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3050: **the lapse/shift proposition names what fixes the foliation: the COMOVING "
-            "MATTER CONGRUENCE** — 'fixed not by the geometry but by the existent … whose rest "
-            "frame is the empirically measured CMB frame'. ⇒ **A third role for matter I have "
-            "never represented in the scan**: not gravitating in the rate, not sourcing "
-            "perturbations, but **selecting the slicing**. ⌗ And the constraint is given "
-            "explicitly as **p_tau + H_phys = 0**, solved for a Schrodinger evolution — not a "
-            "Friedmann constraint.")
+LASTFIND = ("r3051: **the projection principles remark is the sharpest constraint yet**: 'spacetime "
+            "curvature is a property of the PROJECTION, not of the underlying ontology; "
+            "ontological curvature is encoded EXCLUSIVELY in h_ij(t)'. ⇒ **Phi and Psi are "
+            "projection quantities** — which explains why no choice of Omegas worked: I was fixing "
+            "the projections evolution equation **without the layers own geometry to fix it "
+            "against**. ⚠ And a real question: **flat spacetime does not imply flat space**, so "
+            "what does a C_ell computed on the projection determine about the layer?")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

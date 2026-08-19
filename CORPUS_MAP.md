@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3051 — 2026-08-15 (main line). **THE PROJECTION PRINCIPLE IN PLACE, AND ITS REMARK IS THE SHARPEST CONSTRAINT ON THE MODEL YET.**
+
+⇒ ***"In CR, **spacetime curvature is a property of the projection, not of the underlying ontology. Ontological curvature is encoded EXCLUSIVELY in the intrinsic geometry of the layer metric.**"***
+
+⇒ ***And that is the sharpest statement the model has received: the perturbed potentials **are spacetime-curvature quantities** — components of the perturbed four-metric. **By this remark they are projection properties, and the ontological content is one level down, in the layer's own three-geometry.****
+
+**⌗ SO THE POTENTIAL EQUATION I HAVE BEEN ARGUING ABOUT FOR TWENTY REVISIONS IS AN EQUATION FOR A PROJECTION QUANTITY**, *and the framework says the physics lives below it. **That does not make the equation wrong** — a valid projection must faithfully encode signal propagation — **but it explains why no choice of density fractions has worked: I have been trying to fix the projection's evolution equation without the layer's own geometry to fix it against.***
+
+**⚠ AND A GENUINE TENSION WORTH FLAGGING, NOT SMOOTHED:** *the Minkowski proposition says "**Flat spacetime does not imply flat space in CR**" — the projection is insensitive to the layer's intrinsic curvature. ***If the projection can be flat while the layer is curved, then a spectrum computed on the projection may not determine the layer's geometry at all — and the acoustic comb is computed entirely on the projection.*** **That is a question about what the CMB measures in this framework, and I do not think the corpus has asked it.***
+
 ### Revision r3050 — 2026-08-15 (main line). **THE LAPSE/SHIFT PROPOSITION NAMES WHAT FIXES THE FOLIATION: THE COMOVING MATTER CONGRUENCE.**
 
 *Read through representability, non-identity, ontological simultaneity and the lapse–shift proposition.*
