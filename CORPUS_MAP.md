@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3050 — 2026-08-15 (main line). **THE LAPSE/SHIFT PROPOSITION NAMES WHAT FIXES THE FOLIATION: THE COMOVING MATTER CONGRUENCE.**
+
+*Read through representability, non-identity, ontological simultaneity and the lapse–shift proposition.*
+
+⇒ ***"the distinguished cosmic foliation is fixed **not by the geometry but by the EXISTENT — the comoving matter congruence whose rest frame is the empirically measured cosmic microwave background frame**, and which the horizon-selected limiting causal orientation independently singles out. **On that existent-fixed foliation the scalar constraint deparametrizes to a true Hamiltonian generating the layers' advance.**"***
+
+⇒ ***So the matter congruence is not a source of the rate — **it is what fixes the foliation on which the rate is generated**. That is a **third distinct role for matter that the scan has never represented**: not gravitating in the rate, not sourcing perturbations, but **selecting the slicing itself**.***
+
+**⌗ AND THE CONSTRAINT'S FORM IS GIVEN EXPLICITLY:** *"the scalar constraint — linear in the conjugate momentum — takes the deparametrized form **p_tau + H_phys = 0** and is solved for the generator of advance". ***That is a Schrödinger evolution, not a Friedmann constraint***, and it is what `P10` builds.*
+
+**⚠ Editorial item flagged, not passed over:** *the section carries an unprinted working comment whose language about the field is unguarded. Harmless in the PDF, **but it is in the .tex that would ship to a journal or co-author**.*
+
 ### Revision r3049 — 2026-08-15 (main line). **§CR-AXIOMS READ IN PROSE: IT SUPPLIES WHAT GENERATES THE LAYER'S EVOLUTION, AND NAMES THE FRAMEWORK'S REACH.**
 
 *The canonical remark, which the extracted blocks did not carry:*
