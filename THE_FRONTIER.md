@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3060: **the sweep found the models own foundation marked UNDEVELOPED.** canonical_time, on the ladder RADSCAN uses: **the relation between S^3 tensor harmonics and observed multipoles IS NOT DEVELOPED HERE, and NO INFERENCE TO THE MICROWAVE SKY IS DRAWN FROM THIS SECTION**. The scan builds exactly that relation and draws exactly that inference. ⛭ And the same passage quantifies the degradation: **adiabaticity 0.70 at n=2, 0.48 at n=3, 0.16 by n=10 — worst at the LOWEST harmonics, where the first peak sits and every configuration fails.*****
+*⌗ **LAST ACTUAL MOVE — r3061: **deferral checks finished — one corpus improvement, the rest well-formed.** P7 defers the mechanism for MATTER AND OBSERVERS while sec:what-crosses handles PERTURBATION CONTENT — different objects, so it was honest; **pointed at what IS settled about crossing anyway**. The circles two-triples deferral **names the missing artefact** (no derivation producing {0,1,2} from a single condition), which is well-formed. ⌗ Class real, gate holds it, and r3060s ladder finding was its yield.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

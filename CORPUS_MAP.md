@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3061 — 2026-08-15 (main line). **THE DEFERRAL CHECKS FINISHED: ONE CORPUS IMPROVEMENT, THE REST WELL-FORMED.**
+
+*Checked all fifteen against whether their content is settled elsewhere.*
+
+*· **P7's horizon-crossing deferral** defers **the mechanism for matter and observers**, while the cosmology paper's what-crosses section handles **perturbation content** — **different objects, so the deferral was honest**. **Fixed anyway to point at what IS settled about crossing**: the branch-point transmission on which a frozen mode's amplitude and tilt cross unaltered while its oscillatory content does not. Compiles.*
+
+*· **The circle's two-triples deferral** names exactly what would settle it — "**no derivation producing zero, one, two from a single condition has been exhibited, and the audit's verdict is accordingly open**" — **a well-formed deferral: it states the missing artefact, not merely the absence**.*
+
+*· The remaining twelve state scope or name their own missing piece; **none has a home elsewhere the text fails to cite**.*
+
+**⌗ So the class was real and the yield is honest:** *two corpus fixes at r3059, one improvement here, and a gate that now holds the class — **plus the decisive finding at r3060 that the ladder the model rests on is itself marked undeveloped**. The sweep earned its turn on that alone.*
+
 ### Revision r3060 — 2026-08-15 (main line). **THE SWEEP RUN: IT FOUND THE MODEL'S OWN FOUNDATION MARKED UNDEVELOPED IN THE PAPER IT COMES FROM.**
 
 *15 deferrals across 9 files. **Three bear on the open rows, and one is decisive.***
