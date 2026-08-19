@@ -26,6 +26,7 @@ _S_CS  =_SW('CS',  1.0)   # 1 = sound speed carries baryon loading (shipped) | 0
 _S_NU  =_SW('NU',  1.0)   # 1 = neutrinos present (shipped) | 0 = photons only
 _S_MAT =_SW('MAT', 1.0)   # 1 = matter fraction diluted by the same total (shipped) | 0 = vs rate's own
 _S_LA  =_SW('LA',301.6)   # the acoustic-scale target the seam datum is solved to
+_S_SLIP=_SW('SLIP',1.0)   # 1 = baryon-photon slip damping on (shipped) | 0 = off
 _S_GRAV=_SW('GRAV',0.0)   # 0 = species enter via (3Hc^2/2)Omega (through the rate, shipped)
                           # 1 = every species by its own physical 4piG a^2 rho, symmetrically
 Hub=lambda a: H0*np.sqrt(_S_RATE*Or_content/a**4+Om/a**3+OL)                    # *** NO RADIATION TERM ***
@@ -136,7 +137,7 @@ def modes_all(kk):
         _tp = float(taup_of(e))
         _on = (not _NODAMP_CR) and (_tp > float(os.environ.get("TPGATE","0.6")))
         _sgg = (_VISC*tg/_tp) if _on else 0.0
-        _slip = (kk**2*Rb**2/(3.0*(1+Rb)**2*_tp)) if (_on and os.environ.get("NOSLIP","0")!="1") else 0.0
+        _slip = (kk**2*Rb**2/(3.0*(1+Rb)**2*_tp)) if (_on and _S_SLIP) else 0.0
         _PSG = 0.0 if os.environ.get("NOPSG","0")=="1" else Ogv*_sgg
         Ps=(Ph-4.0*(_Wr_of(e)*((_S_NU*fnu/max(fnu,1e-30))*0+1.0))*0-6*Hc**2*(Onv*sig + _PSG)/kk**2
             if not _S_GRAV else
