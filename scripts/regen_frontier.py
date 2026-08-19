@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3091: the damping sector is sound -- closure form, species split, and the 16/45 coefficient all check, the last to ratio 1.000000 against the standard Silk scale'),
+        'r3092: the phase reset is justified by an UNBOUNDED tortoise phase that r2154 (1) showed is FINITE (0.2247 alpha). Wired PHZ; the comb moves hard. A carrier, not yet a fit'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3091: **the closure block read and the viscosity verified EXACTLY.** Photons get an "
-            "algebraic shear, neutrinos an evolved one — the standard tight-coupling split. And "
-            "the coefficient: the code sets A = 16/45, the damping exponent picks up A/2 = 8/45, "
-            "and the standard Silk scales shear term enters as (1/6)(16/15) = 8/45. **Ratio "
-            "1.000000.** ⛔ Also removed dead code my own r3089 edit left in Ps; baseline "
-            "unchanged.")
+LASTFIND = ("r3092: **the phase reset rests on a premise the programme overturned.** The code says "
+            "'UNBOUNDED tortoise phase leaves nothing to inherit'; **r2154 (1) derived r_* = 0.2247 "
+            "alpha, FINITE**, with the phase **linear in k** and therefore **a sound-horizon "
+            "renormalization** — which is the shape of the measured defect, a flat 0.746 across k. "
+            "⇒ Wired it: r_* = 1108 Mpc, phi reaching 7 pi by k = 0.02. **The comb moves hard — a "
+            "live term — but none of the three settings lands it. Carrier found, fit not made.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

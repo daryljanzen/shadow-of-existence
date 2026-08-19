@@ -552,3 +552,4 @@ r3088  CORPUS      P7 fixed and compiling. RULE: when a ledger and a paper disag
 r3089  LATENT      the conversions second site (anisotropic stress) found, made consistent, and it moves nothing. Not a carrier.
 r3090  LATENT      RHS read whole; slip term sized, tested, eliminated (byte-identical peaks). Sound speed verified.
 r3091  LATENT      damping sector sound: closure split correct, 16/45 verified to ratio 1.000000. My dead code removed.
+r3092  LATENT      the phase reset assumes an unbounded tortoise phase; r2154 (1) derived it FINITE. PHZ wired and live.

@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3091: **the closure block read and the viscosity verified EXACTLY.** Photons get an algebraic shear, neutrinos an evolved one — the standard tight-coupling split. And the coefficient: the code sets A = 16/45, the damping exponent picks up A/2 = 8/45, and the standard Silk scales shear term enters as (1/6)(16/15) = 8/45. **Ratio 1.000000.** ⛔ Also removed dead code my own r3089 edit left in Ps; baseline unchanged.***
+*⌗ **LAST ACTUAL MOVE — r3092: **the phase reset rests on a premise the programme overturned.** The code says 'UNBOUNDED tortoise phase leaves nothing to inherit'; **r2154 (1) derived r_* = 0.2247 alpha, FINITE**, with the phase **linear in k** and therefore **a sound-horizon renormalization** — which is the shape of the measured defect, a flat 0.746 across k. ⇒ Wired it: r_* = 1108 Mpc, phi reaching 7 pi by k = 0.02. **The comb moves hard — a live term — but none of the three settings lands it. Carrier found, fit not made.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3091: the damping sector is sound -- closure form, species split, and the 16/45 coefficient all check, the last to ratio 1.000000 against the standard Silk scale |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3092: the phase reset is justified by an UNBOUNDED tortoise phase that r2154 (1) showed is FINITE (0.2247 alpha). Wired PHZ; the comb moves hard. A carrier, not yet a fit |
 
 ---
 

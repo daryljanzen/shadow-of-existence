@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r3092 — 2026-08-15 (main line). **THE INITIAL DATA READ, AND THE PHASE RESET RESTS ON A PREMISE THE PROGRAMME ITSELF OVERTURNED.**
+
+*Line 105 of the integrator: "**PHASE RESET: unbounded tortoise phase leaves nothing to inherit**", setting the amplitude flat and the velocity to zero.*
+
+⇒ ***And r2154's first stage derived the opposite: at the branch point the metric function does not vanish but **diverges**, so the tortoise coordinate tends to a **finite** value. "The mode crosses the branch point at finite tortoise coordinate. **There is no divergence at all.**" **The reset's justification is a claim the programme replaced.***
+
+**⌗ And that stage said what the finite phase does:** *"the accumulated phase is finite and **linear in the wavenumber** — and a phase linear in the wavenumber **renormalizes the sound horizon** rather than tilting the spectrum". **A sound-horizon renormalization is exactly a uniform rescaling of the comb — which is the measured defect: a flat 0.746 of the acoustic scale across wavenumber.***
+
+⇒ *So I wired it and ran it. The substrate length is 4932 Mpc, the tortoise coordinate 1108 Mpc, and the entry phase reaches seven pi by the first acoustic wavenumbers. The reset setting reproduces shipped exactly; the three test settings give 375/510/660/780, then 165/360/525/630, then 165/225/330/390.*
+
+**⚠⚠ And the honest reading:** *the phase **moves the comb hard — it is unmistakably a live term — but none of the three settings lands it**, and at seven pi the entry phase wraps many times, so a single tortoise value is not a small correction. **A carrier found; a fit not made.***
+
+*My first attempt used a tortoise length of 1.7 Mpc instead of 1108 — caught by sizing it against the substrate length rather than by the run.*
+
 ### Revision r3091 — 2026-08-15 (main line). **THE CLOSURE BLOCK READ, THE VISCOSITY VERIFIED EXACTLY, AND DEAD CODE I INTRODUCED REMOVED.**
 
 **⛔ First, my own mess:** *r3089's edit left a term multiplied by zero inside the lapse perturbation — inert, but junk I put in the source. **Removed; baseline unchanged.***

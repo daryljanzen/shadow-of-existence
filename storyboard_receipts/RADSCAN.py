@@ -26,6 +26,7 @@ _S_CS  =_SW('CS',  1.0)   # 1 = sound speed carries baryon loading (shipped) | 0
 _S_NU  =_SW('NU',  1.0)   # 1 = neutrinos present (shipped) | 0 = photons only
 _S_MAT =_SW('MAT', 1.0)   # 1 = matter fraction diluted by the same total (shipped) | 0 = vs rate's own
 _S_LA  =_SW('LA',301.6)   # the acoustic-scale target the seam datum is solved to
+_S_PHZ =_SW('PHZ', 0.0)   # 0 = phase reset at entry (shipped) | >0 = inherit k*r_* with r_* in units of alpha
 _S_SLIP=_SW('SLIP',1.0)   # 1 = baryon-photon slip damping on (shipped) | 0 = off
 _S_GRAV=_SW('GRAV',0.0)   # 0 = species enter via (3Hc^2/2)Omega (through the rate, shipped)
                           # 1 = every species by its own physical 4piG a^2 rho, symmetrically
@@ -103,8 +104,10 @@ def modes_all(kk):
     # C4: Theta_hat oscillates freely on the leg from entry at x_e, amplitude flat in k
     A_flat=-(3*(np.sin(xe)-xe*np.cos(xe))/xe**3)/2
     # PHASE RESET (A.126): unbounded tortoise phase leaves nothing to inherit
-    That=A_flat*np.ones_like(kk)
-    dThat=np.zeros_like(kk)
+    _alpha=c/(H0*np.sqrt(OL))            # sqrt(3/Lambda) in Mpc
+    _phi=_S_PHZ*kk*0.2247*_alpha         # k r_*, r_* = 0.2247 alpha (r2154 (1))
+    That=A_flat*np.cos(_phi)
+    dThat=-A_flat*np.sin(_phi)*(kk/np.sqrt(3.0))
     Cc=(4.0/3.0)*(Ogs+Ons)+Ocs
     hh=1e-4
     dPl=np.where(xs<1e-6, 0.0,
