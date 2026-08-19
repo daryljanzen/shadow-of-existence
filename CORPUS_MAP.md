@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3057 — 2026-08-15 (main line). **THE INFORMATION PARADOX AND HAWKING'S SCOPE PARAGRAPH: THE REPAIR IS ALWAYS SUBTRACTION, AND THE DISCIPLINE IS NARROWNESS.**
+
+**HAWKING'S SCOPE, verbatim:** *"**The scope of this is narrower than 'black holes do not radiate,' AND THE NARROWNESS IS THE HONESTY OF IT**" — what is absent is **horizon-induced** radiation, while "**local, horizon-independent particle production … is untouched, and a perpetually collapsing ultra-compact body need not be quiescent**".*
+
+⇒ ***That is the discipline I keep failing. **Every overclaim I have withdrawn this session** — "the framework's prescription destroys the spectrum", "a real disagreement with the sky", "a matching intercept is reachable" — **was a failure of exactly this: stating something broader than what was shown**.*
+
+**⌗ AND THE INFORMATION PARADOX GIVES THE INVERSE OF A MECHANISM:** *unitarity restored "**with no new physics … by REMOVING THE PARADOX'S PREMISE rather than by recovering what was lost**", since there is "**no hidden interior sector over which the exterior state must be traced — the very operation that would carry a pure state to a mixed one**". **The information is preserved "not because a mechanism recovers it but because none is ever lost".***
+
+⇒ ***So the pattern completes: **the framework's repair is always subtraction of a precondition, never addition of a mechanism — and my scan has only ever added switches**.***
+
 ### Revision r3056 — 2026-08-15 (main line). **CENSORSHIP AND HAWKING: THE SAME MOVE TWICE — ENUMERATE THE PRECONDITIONS, THEN CHECK EACH AGAINST THE LAYER.**
 
 **CENSORSHIP:** *CR "**neither proves nor refutes the conjecture; IT REMOVES ITS PRECONDITION**" — the horizon is a metric singularity approached only in the limit of infinite exterior time, so no horizon is completed and no closed trapped surface realised, and "**where no singularity is physically realised, whether it would be clothed or naked DOES NOT ARISE — there is nothing to censor**".*

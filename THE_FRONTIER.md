@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3056: **censorship and Hawking exhibit the same move twice: ENUMERATE THE PRECONDITIONS, THEN CHECK EACH AGAINST THE LAYER.** Censorship: CR neither proves nor refutes — **it removes the precondition**, so 'whether it would be clothed or naked does not arise'. Hawking: the derivation **requires three things** and **none of the three is realised** on the layered ontology. ⇒ **Not 'is the answer different' but 'is the questions precondition instantiated'** — the exercise my acoustic scan has never done.***
+*⌗ **LAST ACTUAL MOVE — r3057: **the frameworks repair is always SUBTRACTION of a precondition, never ADDITION of a mechanism** — information preserved 'not because a mechanism recovers it but because none is ever lost'. ⇒ **And Hawkings scope paragraph is the discipline I keep failing**: 'the scope of this is narrower than black holes do not radiate, AND THE NARROWNESS IS THE HONESTY OF IT'. **Every overclaim I withdrew this session was a failure of exactly that.** My scan has only ever added switches.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3056: the method exhibited twice -- enumerate what the standard result REQUIRES, then check each requirement against the layer. The acoustic calculations preconditions have never been enumerated |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3057: the repair is SUBTRACTION of a precondition, never addition of a mechanism -- and the discipline is narrowness, which every overclaim I withdrew this session failed |
 
 ---
 

@@ -578,3 +578,4 @@ r3053  LATENT      the wave sector has a worked layer-level perturbation equatio
 r3054  INSTRUMENT  THE_READING_NOTES: six positive statements, the named error with my four instances, three open questions.
 r3055  LATENT      CRs method: dissolve structurally, ask what the ontology permits before reaching for a mechanism. My scan is mechanism-hunting.
 r3056  LATENT      the method twice: enumerate what the standard result requires, check each against the layer. Never done for the acoustic sector.
+r3057  LATENT      the repair is subtraction of a precondition, never addition of a mechanism. And narrowness is the honesty of it.
