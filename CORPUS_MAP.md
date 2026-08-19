@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3082 — 2026-08-15 (main line). **THE ECONOMY ARGUMENT AND THE DATA AXIS; AND A CORPUS DEFECT FILED AS `OWED` #584.**
+
+*Daryl: P10 cannot be inconsistent with P7 — it should lean on it and cite it. **Filed with the exact sites**: P10 disclaims the harmonics-to-multipoles relation as "not developed here"; **P7 develops it** as a consequence of the non-synchrony. The fix is a citation and a statement of ownership, **not a softened disclaimer**.*
+
+⇒ *The economy argument: "**the standard model ASSEMBLES the observed universe … a dedicated part per phenomenon. This construction adds none**", the same phenomena read off **the isotropizing throat, the coherence-fixing null boundary, the exactly Euclidean slice, the degenerate horizon that transmits rather than imprints**, each fixed by Lambda alone. The criterion: "**a structure that REQUIRES a phenomenon**" against one that "**merely PERMITS it through adjustable apparatus**".*
+
+**⛭⛭ And the data claims are specific and checkable:** *the Hubble tension resolved **across the acoustic scale and the baryon-acoustic ladder together** at the directly measured rate; **deuterium and helium-4 within one sigma**; **the ladder confirmed against DESI DR2 at chi-squared per degree of freedom of about one** — "two of the discriminators once owed are returned in this construction's favour — **a data result, not a tie**".*
+
+**⌗ And that sharpens this row's scope once more:** *the framework's own data claims are **BAO and BBN, both with numbers**; the CMB acoustic sector is **handed to the cosmology paper and not claimed here**. So `PO-13`'s failure sits outside the two results the framework puts its weight on.*
+
 ### Revision r3081 — 2026-08-15 (main line). **THE LADDER'S JUSTIFICATION IS HERE, AND THE MATTER DENSITY IS THE BEND OF THE CUT.**
 
 ⇒ *"**What sets a given epoch's contents is the bend of the spatial cut: the matter density is the cut's DEVIATION FROM THE EMPTY-de SITTER SLICING, forced by the same empirical foliation that forces the rate, not by a separate dynamical input.**" — so the previous revision's "bookkeeping" now has its geometric content: **a density is a deviation, not a source**.*
