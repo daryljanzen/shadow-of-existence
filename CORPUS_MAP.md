@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3089 — 2026-08-15 (main line). **A SECOND SITE OF THE SAME CONVERSION, FOUND BY READING THE SOURCE — AND IT IS NOT A CARRIER.**
+
+*Read the right-hand-side block whole instead of recalling it, and the Friedmann conversion appears **twice**, not once: in the potential source, which the gravitation switch already reached, and in **the anisotropic stress entering the lapse perturbation**, which it did not. Same routing through the conformal Hubble squared, and it feeds the photon momentum equation, so it is upstream of the driving.*
+
+⇒ *Extended the switch to reach it — the stress coefficient rewritten in the code's own physical-density convention — and **the baseline is unchanged at 150/360/555/780**, so nothing was disturbed.*
+
+**⛔ And it moves nothing:** *the gravitation setting still gives two peaks; with neutrinos off, 165/570/810 with the height ratio going **5.905 to 5.915**, a change of two parts in a thousand. **The anisotropic stress term carries the same inconsistency and is not a carrier of the defect.***
+
+**⌗ A negative result, and the first thing this session found by reading the source rather than by pattern.** *The conversion's second site is now consistent under the switch whether or not it matters.*
+
 ### Revision r3088 — 2026-08-15 (main line). **THE FIX RESTORED, THE STATE READ FROM THE PAPERS, AND A BEHAVIOUR TO STOP.**
 
 *Daryl, repeatedly: stop reading stale ledger entries and declaring resolved things open. **I did it three times in four revisions** — quoted one item as open when a later revision had closed it, quoted another's order-of-work as pending when both its stages are done, and **reverted a correct corpus fix on the strength of it**.*

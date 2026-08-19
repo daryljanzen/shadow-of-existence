@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3088: P7 fixed and compiling; its other seam usages read and correct. The rule: when a ledger and a paper disagree, READ THE PAPER'),
+        'r3089: the conversions second site (Psis anisotropic stress) found and made consistent -- and it moves nothing, 5.905 -> 5.915. Not a carrier'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3088: **the fix restored, P7 compiles, and the state read from the PAPERS.** Its "
-            "remaining seam usages are correct — the merged seam horizon at alpha/sqrt3, the "
-            "equatorial tangency, the double-root coincidence. ⚠ **And the behaviour to stop: a "
-            "ledger entry records what was true when written; the papers record what is true now. "
-            "WHEN THEY DISAGREE, READ THE PAPER.** I quoted two closed items as open and reverted "
-            "a correct fix on that basis.")
+LASTFIND = ("r3089: **read the RHS whole and found the Friedmann conversion appears TWICE** — in the "
+            "potential source, which GRAV already reached, and in **Psi's anisotropic stress, "
+            "which it did not**, feeding the photon momentum equation. ⇒ Extended GRAV to reach "
+            "it; **baseline unchanged**, and **it moves nothing**: P1/P2 goes 5.905 -> 5.915. "
+            "**The stress term carries the same inconsistency and is not a carrier of the "
+            "defect.** A negative result, found by reading the source.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

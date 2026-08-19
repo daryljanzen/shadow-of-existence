@@ -138,7 +138,9 @@ def modes_all(kk):
         _sgg = (_VISC*tg/_tp) if _on else 0.0
         _slip = (kk**2*Rb**2/(3.0*(1+Rb)**2*_tp)) if _on else 0.0
         _PSG = 0.0 if os.environ.get("NOPSG","0")=="1" else Ogv*_sgg
-        Ps=Ph-6*Hc**2*(Onv*sig + _PSG)/kk**2
+        Ps=(Ph-4.0*(_Wr_of(e)*((_S_NU*fnu/max(fnu,1e-30))*0+1.0))*0-6*Hc**2*(Onv*sig + _PSG)/kk**2
+            if not _S_GRAV else
+            Ph-4.0*(_Wr_of(e)*(_S_NU*fnu*sig + (1-_S_NU*fnu)*_sgg))/kk**2)
         Php=((-Hc*Ps-kk**2*Ph/(3*Hc)-(_Wr_of(e)*_S_SRC*((1-_S_NU*fnu)*dg+_S_NU*fnu*dn)+_Wm_of(e)*dc)/(3*Hc)) if _S_GRAV else (-Hc*Ps-kk**2*Ph/(3*Hc)-(Hc/2)*(_S_SRC*(Ogv*dg+Onv*dn)+Ocv*dc)))
         out=np.empty_like(y)
         out[:,0]=-tc+3*Php

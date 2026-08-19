@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3088: **the fix restored, P7 compiles, and the state read from the PAPERS.** Its remaining seam usages are correct — the merged seam horizon at alpha/sqrt3, the equatorial tangency, the double-root coincidence. ⚠ **And the behaviour to stop: a ledger entry records what was true when written; the papers record what is true now. WHEN THEY DISAGREE, READ THE PAPER.** I quoted two closed items as open and reverted a correct fix on that basis.***
+*⌗ **LAST ACTUAL MOVE — r3089: **read the RHS whole and found the Friedmann conversion appears TWICE** — in the potential source, which GRAV already reached, and in **Psi's anisotropic stress, which it did not**, feeding the photon momentum equation. ⇒ Extended GRAV to reach it; **baseline unchanged**, and **it moves nothing**: P1/P2 goes 5.905 -> 5.915. **The stress term carries the same inconsistency and is not a carrier of the defect.** A negative result, found by reading the source.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3088: P7 fixed and compiling; its other seam usages read and correct. The rule: when a ledger and a paper disagree, READ THE PAPER |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3089: the conversions second site (Psis anisotropic stress) found and made consistent -- and it moves nothing, 5.905 -> 5.915. Not a carrier |
 
 ---
 
