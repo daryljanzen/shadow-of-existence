@@ -597,3 +597,4 @@ r3072  REGISTER    FIXED means SPENT, not predicted: C26 says fitted to the acou
 r3073  LATENT      conversion mismatch 2.73 at onset falling to 1.03; the CONSISTENT version is worse (0.6839, 2 peaks).
 r3074  LATENT      compensation test inconclusive: the consistent conversion destroys the spectrum. Audit exhausted; back to reading.
 r3075  LATENT      the photons are the REASSIGNED at-rest congruence; the code treats them as an ordinary FLRW fluid.
+r3076  LATENT      Nariai is the unique non-pivoting member, fixed by Lambda alone. One length fixes the background; nothing is free.

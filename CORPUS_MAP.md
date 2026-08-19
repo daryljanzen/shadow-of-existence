@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3076 — 2026-08-15 (main line). **THE SdS CONSTRUCTION: THE SELECTION IS GEOMETRIC AND THE MASS IS FIXED BY LAMBDA ALONE.**
+
+*Vacuum Einstein with positive Lambda on the reassigned line element gives the Schwarzschild–de Sitter metric; the radial coordinate is timelike above a critical combination, **equality defining Nariai — the two positive roots merging, and the mass fixed to a pure function of Lambda**.*
+
+⇒ ***The selection argument, which is the part that matters: a comoving worldline of the reassigned congruence "**is the only worldline of the SdS family that encounters no horizon along its length**"; every sub-critical configuration has its fundamental curve **cross the symmetry structure transversally — and that crossing is precisely what produces the horizons of a localized source**. "**Only the Nariai tilt … gives a comoving curve that produces no such horizon, and so only the Nariai configuration admits a reading as a cosmology rather than as the field of a localized mass.**"***
+
+**⌗** *"The cosmology is therefore **not one member of an overcritical family selected by fitting a mass; it is the unique non-pivoting member, fixed by Lambda alone**" — with the same uniqueness obtained independently in the slicing paper and algebraically in the description groupoid.*
+
+⇒ ***For the model: **there is no mass parameter and no family to fit — one length fixes the background entirely**. Which sharpens the invariant-is-a-length note from a remark about mass into a structural fact about what the acoustic code may treat as independent: **nothing at background level, and only the onset empirically**.***
+
 ### Revision r3075 — 2026-08-15 (main line). **THE CAUSAL REASSIGNMENT READ, AND THE PHOTON CONGRUENCE IS NOT WHAT THE CODE ASSUMES.**
 
 *The construction exchanges two congruences on one de Sitter hyperboloid: **the future-directed null rulings** — the family whose causal sense matches the event-horizon generators of collapse — **become the timelike worldlines of fundamental observers**; and **the at-rest comoving worldlines**, timelike in de Sitter, tracing fixed points on expanding three-spheres, **become the null trajectories of photons**.*

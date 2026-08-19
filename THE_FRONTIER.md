@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3075: **the causal reassignment — and the photon congruence is not what the code assumes.** The null rulings become the TIMELIKE observer worldlines; **the at-rest comoving worldlines, timelike in de Sitter, become the NULL photon trajectories**. ⇒ So the photons the code evolves are **the reassigned at-rest congruence, at fixed points of the 3-sphere** — and the code treats them as an ordinary fluid streaming on FLRW. **Whether transferring a perturbation along a reassigned congruence is the same calculation is upstream of every switch in the scan.*****
+*⌗ **LAST ACTUAL MOVE — r3076: **the SdS construction — the selection is geometric and the mass is fixed by Lambda alone.** A comoving worldline of the reassigned congruence **is the only one in the SdS family that encounters no horizon along its length**; sub-critical configurations cross transversally, and **that crossing is what produces a localized sources horizons**. ⇒ **The cosmology is not a family member selected by fitting a mass; it is the unique non-pivoting member, fixed by Lambda alone.** One length fixes the background entirely.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3075: the photons the code evolves are the REASSIGNED at-rest congruence -- fixed points of the 3-sphere read as null. Whether a perturbation transfers the same way along it is upstream of every switch |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3076: one length alpha = sqrt(3/Lambda) fixes the background entirely -- no mass parameter, no family to fit. So nothing at background level is independent, and only the onset is empirical |
 
 ---
 
