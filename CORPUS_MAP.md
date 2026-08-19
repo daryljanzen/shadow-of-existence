@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3087 — 2026-08-15 (main line). **THE PAPERS FIXED WHERE THE ERROR IS UNAMBIGUOUS; THE REST LEFT BECAUSE THE CANON MARKS IT OPEN.**
+
+*Two sites in P7 corrected and compiled: "the radiation amplitude **at the seam**" and "the layers pile onto **the seam**, depositing" the composition ratio, both now reading **branch point**. **Both carry a quantity that lives at redshift about 6800; at the Nariai seam that ratio is four parts in ten thousand, so the label was simply wrong.** P7 compiles.*
+
+**⌗ And why the remaining sites are not mine to mass-edit — the canon says so in the Nariai-seam entry itself:** *"**Whether the causal reassignment (the NBC occurrence) is LOCATED AT THIS SEAM, or SPANS THE LAP, is OPEN — see `THE_CLOSURE_LEDGER` r2118/r2123.**"*
+
+⇒ ***So P15's usages — modes "begin already sub-horizon at the seam carrying an assigned amplitude and zero velocity", "all of them reaching the seam, where the collapse leg ends" — sit on a question the corpus has deliberately left open, and P15 already chose its wording once at r2501 with a reason attached. **Editing those would be resolving an open question by find-and-replace.****
+
+**⚠ `OWED` #585 stands for exactly that reading — but the unambiguous ones are now fixed, not deferred to it.**
+
 ### Revision r3086 — 2026-08-15 (main line). **I FLAGGED THE LOCUS ERROR AND THEN DID NOT FIX IT. FIXED NOW.**
 
 *Read the canon's seam section properly — the whole section, not a regex over it — and corrected every mislabel in my own text.*

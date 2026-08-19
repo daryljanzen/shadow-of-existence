@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3086: **I flagged the locus error and did not fix it. Fixed now.** Read the canons seam section whole: **throat seam xi at X = alpha, the 3-spheres SIZE**; **Nariai seam at alpha/sqrt3, a HORIZON not the beginning, z = 0.654, where deceleration hands over to acceleration**; **the BRANCH POINT at r=0 is the beginning and is never to be called a seam**. ⛔ r3085s 'third locus' IS the throat seam — in pure dS X and r coincide. My mislabels corrected in place, corpus quotes left verbatim.***
+*⌗ **LAST ACTUAL MOVE — r3087: **the papers FIXED where the error is unambiguous.** Two P7 sites corrected and compiled: the composition ratio ~2 is a BRANCH-POINT quantity (z ~ 6800) and both said 'at the seam', where that ratio is 4e-4. ⌗ The rest left because **the canon marks it open**: 'whether the causal reassignment is located at this seam, or spans the lap, is OPEN' — and P15 chose its wording deliberately at r2501. **Editing those would resolve an open question by find-and-replace.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
