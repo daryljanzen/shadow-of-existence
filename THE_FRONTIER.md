@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3068: **the projection is ELIMINATED by the frameworks own proposition, and the audit is complete without locating the defect.** The shift carries the synchronization convention only; the lapse is dtau = N dt **with N = 1 for the comoving congruence**, which IS the fixed foliation. So dtau = dt, the phase integral is unchanged, and k is a property of h_ij no slicing touches. ⇒ **All six preconditions now clean, eliminated, or cleared as carrier — and the defect remains.** Left: the budget conversion and the imposed acoustic scale.***
+*⌗ **LAST ACTUAL MOVE — r3069: **precondition 6 eliminated — the imposed scale lands where the frameworks own datum puts it.** T_onset = 1.6 eV, the value at which rho_r/rho_m returns 1.99 from standard thermodynamics and nothing else, gives z_onset = 6811 against the scans solved 6761 — **agreement to 0.75%%**. So the brentq target is not a free parameter. ⇒ **Five of six preconditions eliminated; only the gravitating-budget conversion stands.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3068: audit COMPLETE -- all six preconditions clean, eliminated, or cleared as carrier, and the defect remains. Only the budget conversion and the imposed acoustic scale are left to look at |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3069: five of six preconditions eliminated. ONE candidate stands: the gravitating-budget conversion, the (3Hc^2/2)Omega routing r3041 showed inconsistent by r_t/r_H |
 
 ---
 

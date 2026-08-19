@@ -67,6 +67,8 @@ layer, and I have been trying to fix it against itself.***
 
 **⑰ THE PROJECTION IS ELIMINATED — AND THE AUDIT IS COMPLETE WITHOUT LOCATING THE DEFECT (r3068).** *The lapse/shift proposition: the shift carries **the synchronization convention only**, and the lapse is $d\tau=N\,dt$ **with $N=1$ for the comoving congruence** — which IS the fixed cosmic foliation. **So $d\tau=dt$, the phase integral is unchanged, and $k$ is a property of $h_{ij}$ no slicing touches. The projection cannot move the peaks.*** ⇒ **Final audit: ① ✔ · ② ⚠ · ③ ✔ eliminated · ④ ⛔ but cleared as carrier · ⑤ ✔ · ⑥ ⚠.** ***Every precondition is clean, eliminated, or shown not to carry it — and the defect remains. The framework's method, applied completely, does not locate this failure.*** ⌗ **What is left: the budget conversion (②) and the imposed acoustic scale (⑥) — the two ⚠ items.**
 
+**⑱ THE IMPOSED SCALE IS NOT A FREE PARAMETER (r3069).** *$T_{\rm onset}=1.6$ eV — the value at which the framework's composition datum returns $\rho_r/\rho_m=1.99$ **from standard thermodynamics and nothing else** — gives $z_{\rm onset}=6811$, against the scan's solved $6761$: **agreement to $0.75\%$**.* ⇒ ***The `brentq` target coincides with what the theory independently predicts, so precondition ⑥ is eliminated as the carrier.*** ⌗ **FINAL AUDIT STATE: ① ✔ · ② ⚠ **the only candidate left** · ③ ✔ · ④ cleared as carrier · ⑤ ✔ · ⑥ ✔.**
+
 ## ⛔ THE NAMED ERROR — and every instance of it I have made
 
 *"**its standard synchronous reading is a category error, reifying the maximally symmetric projection's

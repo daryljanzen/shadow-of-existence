@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3068: audit COMPLETE -- all six preconditions clean, eliminated, or cleared as carrier, and the defect remains. Only the budget conversion and the imposed acoustic scale are left to look at'),
+        'r3069: five of six preconditions eliminated. ONE candidate stands: the gravitating-budget conversion, the (3Hc^2/2)Omega routing r3041 showed inconsistent by r_t/r_H'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,13 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3068: **the projection is ELIMINATED by the frameworks own proposition, and the audit "
-            "is complete without locating the defect.** The shift carries the synchronization "
-            "convention only; the lapse is dtau = N dt **with N = 1 for the comoving congruence**, "
-            "which IS the fixed foliation. So dtau = dt, the phase integral is unchanged, and k is "
-            "a property of h_ij no slicing touches. ⇒ **All six preconditions now clean, "
-            "eliminated, or cleared as carrier — and the defect remains.** Left: the budget "
-            "conversion and the imposed acoustic scale.")
+LASTFIND = ("r3069: **precondition 6 eliminated — the imposed scale lands where the frameworks own "
+            "datum puts it.** T_onset = 1.6 eV, the value at which rho_r/rho_m returns 1.99 from "
+            "standard thermodynamics and nothing else, gives z_onset = 6811 against the scans "
+            "solved 6761 — **agreement to 0.75%%**. So the brentq target is not a free parameter. ⇒ "
+            "**Five of six preconditions eliminated; only the gravitating-budget conversion "
+            "stands.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

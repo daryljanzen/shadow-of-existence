@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3069 — 2026-08-15 (main line). **PRECONDITION SIX ELIMINATED: THE IMPOSED SCALE LANDS WHERE THE FRAMEWORK'S OWN DATUM PUTS IT.**
+
+*The concern was that the root-find solves the onset redshift to force the acoustic scale to 301.6 — a target, not a prediction. **Tested against what the framework fixes the onset at, independently.***
+
+⇒ *P7's inherited-datum section: the composition ratio is fixed by the onset temperature alone, **returning 1.99 at 1.6 eV, "the quoted value to one per cent from standard thermodynamics and nothing else"**. And 1.6 eV against the CMB temperature gives **z = 6811**, against the scan's solved **6761** — **agreement to 0.75%**.*
+
+⇒ ***So the solve is not introducing a free parameter: **it lands on the value the composition datum independently fixes**, and the imposed acoustic scale is recovered at the framework's own onset. **Nothing is being tuned away, and precondition six is eliminated as the carrier.****
+
+**⛔ And a slip caught in the same breath:** *my printed conclusion said "6773 against 6761" where the computation had just returned **6811**. **Caught on re-read before recording** — the seventh arithmetic-or-transcription slip of the session.*
+
+**⌗ WHICH LEAVES EXACTLY ONE CANDIDATE STANDING:** *the gravitating-budget conversion — the routing r3041 showed is inconsistent by the ratio of the two totals. **Six preconditions enumerated, five eliminated by measurement or by the framework's own text, one left.***
+
 ### Revision r3068 — 2026-08-15 (main line). **THE PROJECTION TESTED AND ELIMINATED BY THE FRAMEWORK'S OWN PROPOSITION; THE AUDIT IS COMPLETE.**
 
 *The lapse/shift proposition settles it without a run: the shift "**is freely specifiable and carries the synchronization-and-rest convention**" — it changes which later events count as occurring at the same place, and nothing else — while the lapse "**is the metrical rate of the layer's advance, with N = 1 for the comoving congruence**".*
