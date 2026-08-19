@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3082: the frameworks own data claims are BAO (DESI DR2, chi2/dof ~ 1) and BBN (D, He-4 within 1 sigma); the CMB acoustic sector is handed to P15 and not claimed here'),
+        'r3083: the seam is a MORPHISM between two readings of one layer, not a surface -- which is why phase is lost and amplitude is not. The first account of WHY the transmission is selective'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3082: **OWED #584 filed — P10 disclaims the harmonics-to-multipoles relation that P7 "
-            "DEVELOPS; it must lean on P7 and cite it, not soften the disclaimer.** ⇒ And the "
-            "reading: the economy argument — **the standard model ASSEMBLES, a dedicated part per "
-            "phenomenon; this construction adds none** — with the criterion being **a structure "
-            "that REQUIRES a phenomenon against one that merely PERMITS it**. ⛭ Data claims are "
-            "specific: **BAO at chi2/dof ~ 1 against DESI DR2, D and He-4 within 1 sigma**.")
+LASTFIND = ("r3083: **the null-boundary correspondence says what the seam actually IS.** It "
+            "identifies **a MORPHISM between two projections of the same ontological layer** — the "
+            "horizon event-of-events and the initial SdS slice **represent the same layer under "
+            "distinct causal assignments**. ⇒ **So the seam is not a surface where something "
+            "happens but one layer described twice** — which explains why amplitude and tilt cross "
+            "unaltered while oscillatory content does not: **phase is causal-structure-dependent, "
+            "amplitude is not.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

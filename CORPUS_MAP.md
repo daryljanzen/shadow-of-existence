@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3083 — 2026-08-15 (main line). **THE NULL-BOUNDARY CORRESPONDENCE, AND IT SAYS WHAT THE SEAM ACTUALLY IS.**
+
+*It relates **a null hypersurface arising as the limit of infalling timelike worldlines** to **the initial representational slice of an SdS cosmology obtained by causal reassignment** — and it is **structural: "it identifies a MORPHISM between two projections of the same ontological layer"**. The theorem: "**the horizon event-of-events at the limit of collapse and the initial slice of an SdS cosmology represent the same ontological layer under distinct causal assignments**".*
+
+⇒ *The horizon's structure, from the causality paper: generators whose events are "**topologically distinct, causally ordered, but metrically coincident**", worldlines **accumulating asymptotically** onto them, and **a one-way causal relation**.*
+
+**⛭⛭ AND THAT IS WHAT THE SEAM IS, WHICH I HAVE BEEN MODELLING WITHOUT KNOWING:** *not a surface at which something happens, but **an identification of two readings of one layer**. So "what crosses" is **not transport across a boundary but the same layer described twice** — ***which explains the asymmetry the corpus reports: amplitude and tilt cross unaltered while the oscillatory content does not, because the two readings differ in causal assignment, and phase is causal-structure-dependent where amplitude is not.***
+
+**⌗ That is the first account of WHY the transmission is selective**, *rather than the fact that it is.*
+
 ### Revision r3082 — 2026-08-15 (main line). **THE ECONOMY ARGUMENT AND THE DATA AXIS; AND A CORPUS DEFECT FILED AS `OWED` #584.**
 
 *Daryl: P10 cannot be inconsistent with P7 — it should lean on it and cite it. **Filed with the exact sites**: P10 disclaims the harmonics-to-multipoles relation as "not developed here"; **P7 develops it** as a consequence of the non-synchrony. The fix is a citation and a statement of ownership, **not a softened disclaimer**.*

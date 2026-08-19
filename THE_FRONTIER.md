@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3082: **OWED #584 filed — P10 disclaims the harmonics-to-multipoles relation that P7 DEVELOPS; it must lean on P7 and cite it, not soften the disclaimer.** ⇒ And the reading: the economy argument — **the standard model ASSEMBLES, a dedicated part per phenomenon; this construction adds none** — with the criterion being **a structure that REQUIRES a phenomenon against one that merely PERMITS it**. ⛭ Data claims are specific: **BAO at chi2/dof ~ 1 against DESI DR2, D and He-4 within 1 sigma**.***
+*⌗ **LAST ACTUAL MOVE — r3083: **the null-boundary correspondence says what the seam actually IS.** It identifies **a MORPHISM between two projections of the same ontological layer** — the horizon event-of-events and the initial SdS slice **represent the same layer under distinct causal assignments**. ⇒ **So the seam is not a surface where something happens but one layer described twice** — which explains why amplitude and tilt cross unaltered while oscillatory content does not: **phase is causal-structure-dependent, amplitude is not.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3082: the frameworks own data claims are BAO (DESI DR2, chi2/dof ~ 1) and BBN (D, He-4 within 1 sigma); the CMB acoustic sector is handed to P15 and not claimed here |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3083: the seam is a MORPHISM between two readings of one layer, not a surface -- which is why phase is lost and amplitude is not. The first account of WHY the transmission is selective |
 
 ---
 
