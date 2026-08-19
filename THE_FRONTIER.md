@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3074: **the compensation test is inconclusive as designed, and the failure mode is all it establishes.** RAD_TOT=0 returns only two peaks, so the height ratio cannot be read at all. ⇒ **The consistent conversion does not degrade the fit — it DESTROYS the spectrum**, which is qualitatively unlike every other switch. Direction known: dividing by the rates own total makes every Omega LARGER by up to 2.73x. **The audit is exhausted without a verdict; the next constraint must come from reading.*****
+*⌗ **LAST ACTUAL MOVE — r3075: **the causal reassignment — and the photon congruence is not what the code assumes.** The null rulings become the TIMELIKE observer worldlines; **the at-rest comoving worldlines, timelike in de Sitter, become the NULL photon trajectories**. ⇒ So the photons the code evolves are **the reassigned at-rest congruence, at fixed points of the 3-sphere** — and the code treats them as an ordinary fluid streaming on FLRW. **Whether transferring a perturbation along a reassigned congruence is the same calculation is upstream of every switch in the scan.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3074: the audit is EXHAUSTED without a verdict -- the last candidate cannot be tested by comparison because the consistent version produces no comb. Next constraint from reading: SdS, null-boundary, central theorem |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3075: the photons the code evolves are the REASSIGNED at-rest congruence -- fixed points of the 3-sphere read as null. Whether a perturbation transfers the same way along it is upstream of every switch |
 
 ---
 

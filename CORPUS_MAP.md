@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3075 — 2026-08-15 (main line). **THE CAUSAL REASSIGNMENT READ, AND THE PHOTON CONGRUENCE IS NOT WHAT THE CODE ASSUMES.**
+
+*The construction exchanges two congruences on one de Sitter hyperboloid: **the future-directed null rulings** — the family whose causal sense matches the event-horizon generators of collapse — **become the timelike worldlines of fundamental observers**; and **the at-rest comoving worldlines**, timelike in de Sitter, tracing fixed points on expanding three-spheres, **become the null trajectories of photons**.*
+
+⇒ *"This reassignment **preserves the foliation by evolving 3-spheres** while altering the causal roles", yielding the Schwarzschild–de Sitter geometry as **the unique vacuum representation compatible with the reassigned causal structure**.*
+
+**⛔⛔ AND IT BEARS DIRECTLY ON THE MODEL:** *the photons whose perturbations the code evolves are, in this construction, **the reassigned at-rest congruence — worldlines at fixed points of the three-sphere**. The code treats them as an ordinary photon–baryon fluid streaming on an FLRW background. ***Whether transferring a perturbation along a reassigned congruence is the same calculation as along a conventional photon congruence is a question the construction raises and the code does not ask — and it is upstream of every switch in the scan.***
+
+**⌗ And the timelike coordinate is the radius of the expanding three-sphere** — *so "time" in this projection **is a length on the substrate**, which is the invariant-is-a-length note arriving inside the construction itself.*
+
 ### Revision r3074 — 2026-08-15 (main line). **THE COMPENSATION TEST RUN: INCONCLUSIVE AS DESIGNED, AND THE FAILURE MODE IS THE ONLY THING IT ESTABLISHES.**
 
 *The test was: if the inconsistency compensates, fixing it should **break what currently works** — the odd/even height ratio. **It cannot be read: the consistent setting returns only two peaks, so no height ratio is printed at all.***
