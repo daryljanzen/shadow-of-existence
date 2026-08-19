@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3072 — 2026-08-15 (main line). **SENT BACK TO READ THE ROWS: THE STRIKE IS SOUND, THE PHRASING THAT CARRIES IT IS NOT.**
+
+*`PO-12`'s closed-list says "**the onset shown FIXED, not free**". Read as English that says **predicted**. Read against `C26_the_onset_is_not_free`, which is what that revision ran, it says something else:*
+
+⇒ *C26's own words: "**P15 fixes it twice: the onset redshift, FITTED TO THE ACOUSTIC ANGLE at the directly measured Hubble constant, landing near a composition ratio of two**" — and explicitly, "**Not that the onset derivation is audited — it is fitted to the acoustic angle**".*
+
+⇒ ***So "fixed, not free" means **already spent**, not **predicted**: the onset is not an additional knob this row may tune, **because it is already consumed by the acoustic-angle fit**. That is correct and load-bearing — **the one-parameter family has one member** — and the strike stands on it.***
+
+**⌗ But the compression invites exactly the misreading I made:** *at r3069 I read "fixed" as "predicted", built a circular check on it, and strengthened `PO-16` on its strength. **Daryl caught the incoherence from the wording alone.** Phrase corrected in the row and in the kill receipt.*
+
+**⚠ And `PO-10`'s own onset check is the same circularity** — *its row already flagged it as "not the thing being tested", so **neither strike rests on it**, and both stand.*
+
 ### Revision r3071 — 2026-08-15 (main line). **"HOW IS IT A FITTED PARAMETER IF IT'S A PREDICTED ONE?" — THE CORPUS IS COHERENT; I WAS NOT.**
 
 *Checked the direction of every statement. **P7**: "the datum proper is the **onset redshift**; the ratio is its restatement" — **the onset IS the single inherited datum, the empirical input**. **P7 again**: the composition ratio "is fixed by the onset temperature alone" — **predicted FROM the onset**. **P15**: "holding theta-star to its measured value **fixes** the onset redshift" — fitted to a measurement. **The scan**: the same fit.*

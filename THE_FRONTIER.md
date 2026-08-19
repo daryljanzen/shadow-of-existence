@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3071 (Daryl caught it): **the corpus is coherent; I was not.** The onset redshift IS the single inherited datum — the empirical input, fitted to theta_* — and the composition ratio is predicted FROM it. One input, one prediction. ⛔ **My r3069 was circular**: 1.6 eV is the temperature required to return 1.99, and 1.99 is the datums own value. I compared the datum to itself. **r3069/r3070 withdrawn; precondition 6s warning stands.*****
+*⌗ **LAST ACTUAL MOVE — r3072 (Daryl sent me back to read them): **the strike is sound; the phrasing is not.** PO-12s closed-list says 'the onset shown FIXED, not free' — which reads as PREDICTED. **C26, which is what that revision ran, says the opposite in its own words: 'it is FITTED TO THE ACOUSTIC ANGLE'.** So 'fixed' means **already SPENT**, not predicted — correct and load-bearing for PO-12, **and exactly the compression I misread at r3069**. Phrase corrected in the row and the receipt.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 

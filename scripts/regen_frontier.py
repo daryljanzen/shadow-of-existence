@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3071 (Daryl caught it): **the corpus is coherent; I was not.** The onset redshift IS "
-            "the single inherited datum — the empirical input, fitted to theta_* — and the "
-            "composition ratio is predicted FROM it. One input, one prediction. ⛔ **My r3069 was "
-            "circular**: 1.6 eV is the temperature required to return 1.99, and 1.99 is the datums "
-            "own value. I compared the datum to itself. **r3069/r3070 withdrawn; precondition 6s "
-            "warning stands.**")
+LASTFIND = ("r3072 (Daryl sent me back to read them): **the strike is sound; the phrasing is not.** "
+            "PO-12s closed-list says 'the onset shown FIXED, not free' — which reads as "
+            "PREDICTED. **C26, which is what that revision ran, says the opposite in its own "
+            "words: 'it is FITTED TO THE ACOUSTIC ANGLE'.** So 'fixed' means **already SPENT**, "
+            "not predicted — correct and load-bearing for PO-12, **and exactly the compression I "
+            "misread at r3069**. Phrase corrected in the row and the receipt.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
