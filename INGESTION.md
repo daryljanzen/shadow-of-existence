@@ -609,3 +609,4 @@ r3084  LATENT      LOCUS ERROR: the seam is z~0.66, the branch point is the begi
 r3085  LATENT      the theorems locus is r = alpha, the de Sitter horizon — a third locus. And the map is not an isometry.
 r3086  LATENT      loci held exactly from the canon; my mislabels fixed in place. Dissonance: rho_r/rho_m ~ 2 is branch-point, called seam.
 r3087  CORPUS      two P7 sites fixed seam -> branch point and compiled; the rest is an open question per the closure ledger.
+r3088  CORPUS      P7 fixed and compiling. RULE: when a ledger and a paper disagree, read the paper.

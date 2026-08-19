@@ -105,6 +105,8 @@ layer, and I have been trying to fix it against itself.***
 
 ⛔ ***MY ERRORS, ALL CORRECTED IN PLACE: r3085 called the theorem's $r=\alpha$ "a third locus" — **it is the equatorial/throat seam $\xi$**, and in pure de~Sitter $X=\alpha$ and $r=\alpha$ coincide, which is why the theorem can use it. r3084 gave $z\approx0.66$ without the fact that makes it matter: **it is the acceleration inflection**. And my notes said "the seam" for the crossing and the hand-over: **those are the branch point**.*** ⚠ *Quoted corpus text is left verbatim throughout — where a paper says "seam", that is the paper's word and `OWED` #585's audit is where it gets decided, not here.*
 
+**㉝ ⚠ THE METHOD RULE I KEPT BREAKING (r3088).** ***A ledger entry records what was true when it was written. The papers record what is true now. When they disagree, READ THE PAPER.*** *In four revisions I quoted `r2118` as open (closed at `r2132`), quoted `r2154`'s order-of-work as pending (① and ② both done), and **reverted a correct corpus fix on the strength of it**. **Stale-changelog reasoning cost this session four wrong turns and one unnecessary revert.***
+
 ## ⛔ THE NAMED ERROR — and every instance of it I have made
 
 *"**its standard synchronous reading is a category error, reifying the maximally symmetric projection's

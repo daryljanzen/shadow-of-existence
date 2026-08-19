@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3088 — 2026-08-15 (main line). **THE FIX RESTORED, THE STATE READ FROM THE PAPERS, AND A BEHAVIOUR TO STOP.**
+
+*Daryl, repeatedly: stop reading stale ledger entries and declaring resolved things open. **I did it three times in four revisions** — quoted one item as open when a later revision had closed it, quoted another's order-of-work as pending when both its stages are done, and **reverted a correct corpus fix on the strength of it**.*
+
+⇒ ***The fix is restored and P7 compiles:** the two sites carrying the composition ratio now read "branch point". Both quantities live at redshift about 6800; at the Nariai seam that ratio is four parts in ten thousand.*
+
+**⌗ And the actual state, read from P7's own text rather than from a changelog:** *its remaining "seam" usages are **correct** — "the merged seam horizon sits at the Nariai radius", "neither is the seam, where the configuration is Nariai and the horizons are one", "the equatorial seam" for the throat tangency, "what is metrically true at the seam follows from the double root itself". **The paper holds the canon's distinction; the one class that did not is now fixed.***
+
+**⚠ THE BEHAVIOUR TO STOP, stated so it is inherited:** ***a ledger entry records what was true when it was written. The papers record what is true now. When they disagree, READ THE PAPER.*** *Stale-changelog reasoning cost this session four wrong turns and one unnecessary revert.*
+
 ### Revision r3087 — 2026-08-15 (main line). **THE PAPERS FIXED WHERE THE ERROR IS UNAMBIGUOUS; THE REST LEFT BECAUSE THE CANON MARKS IT OPEN.**
 
 *Two sites in P7 corrected and compiled: "the radiation amplitude **at the seam**" and "the layers pile onto **the seam**, depositing" the composition ratio, both now reading **branch point**. **Both carry a quantity that lives at redshift about 6800; at the Nariai seam that ratio is four parts in ten thousand, so the label was simply wrong.** P7 compiles.*

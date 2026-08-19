@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3087: **the papers FIXED where the error is unambiguous.** Two P7 sites corrected and compiled: the composition ratio ~2 is a BRANCH-POINT quantity (z ~ 6800) and both said 'at the seam', where that ratio is 4e-4. ⌗ The rest left because **the canon marks it open**: 'whether the causal reassignment is located at this seam, or spans the lap, is OPEN' — and P15 chose its wording deliberately at r2501. **Editing those would resolve an open question by find-and-replace.*****
+*⌗ **LAST ACTUAL MOVE — r3088: **the fix restored, P7 compiles, and the state read from the PAPERS.** Its remaining seam usages are correct — the merged seam horizon at alpha/sqrt3, the equatorial tangency, the double-root coincidence. ⚠ **And the behaviour to stop: a ledger entry records what was true when written; the papers record what is true now. WHEN THEY DISAGREE, READ THE PAPER.** I quoted two closed items as open and reverted a correct fix on that basis.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3086: the loci held exactly from the canon; my mislabels fixed in place. Open dissonance: rho_r/rho_m ~ 2 is a BRANCH-POINT quantity and both P7 and P15 call its locus the seam |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3088: P7 fixed and compiling; its other seam usages read and correct. The rule: when a ledger and a paper disagree, READ THE PAPER |
 
 ---
 

@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3086: the loci held exactly from the canon; my mislabels fixed in place. Open dissonance: rho_r/rho_m ~ 2 is a BRANCH-POINT quantity and both P7 and P15 call its locus the seam'),
+        'r3088: P7 fixed and compiling; its other seam usages read and correct. The rule: when a ledger and a paper disagree, READ THE PAPER'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,12 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3087: **the papers FIXED where the error is unambiguous.** Two P7 sites corrected and "
-            "compiled: the composition ratio ~2 is a BRANCH-POINT quantity (z ~ 6800) and both said "
-            "'at the seam', where that ratio is 4e-4. ⌗ The rest left because **the canon marks it "
-            "open**: 'whether the causal reassignment is located at this seam, or spans the lap, is "
-            "OPEN' — and P15 chose its wording deliberately at r2501. **Editing those would "
-            "resolve an open question by find-and-replace.**")
+LASTFIND = ("r3088: **the fix restored, P7 compiles, and the state read from the PAPERS.** Its "
+            "remaining seam usages are correct — the merged seam horizon at alpha/sqrt3, the "
+            "equatorial tangency, the double-root coincidence. ⚠ **And the behaviour to stop: a "
+            "ledger entry records what was true when written; the papers record what is true now. "
+            "WHEN THEY DISAGREE, READ THE PAPER.** I quoted two closed items as open and reverted "
+            "a correct fix on that basis.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
