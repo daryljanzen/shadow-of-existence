@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3084: LOCUS ERROR -- the morphism identifies the horizon with the INITIAL SLICE, which is the BRANCH POINT (r=0), not the seam (alpha/sqrt3, z~0.66). Corpus audit owed'),
+        'r3085: the theorems locus is r = alpha, the de Sitter cosmological horizon -- a THIRD member of the family. And the map is not an isometry: fibration and ordering, not metric'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,13 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3084 (Daryl flagged it): **the seam is NOT the beginning and I have conflated them all "
-            "session.** Canon: **branch point = r=0, the cosmological beginning, NOT a seam**; "
-            "**the seam = r = +-alpha/sqrt3, the Nariai double root at z ~ 0.66**. ⛭ And P15 "
-            "already caught this once: 'a distinction SIX SENTENCES of this paper previously ran "
-            "together', with the loci giving **opposite answers** on whether modes are inside the "
-            "comoving horizon. **My notes 5, 20 and 29 say seam where the object is the branch "
-            "point.** OWED #585.")
+LASTFIND = ("r3085: **the theorems target is a THIRD locus — the de Sitter cosmological horizon at "
+            "r = alpha**, neither the seam (alpha/sqrt3) nor the branch point (r=0). ⌗ The map is "
+            "**canonically constrained**: both sides are the oriented future horizon of a "
+            "worldline, so it is **fixed up to a reframing of the generator-labelling 2-sphere**. "
+            "⚠ And the theorem states its own limit: **NOT an isometry — areas and surface "
+            "gravities differ** — so it identifies fibration, ordering and orientation, **not "
+            "metric structure**.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

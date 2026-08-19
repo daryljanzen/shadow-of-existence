@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3085 — 2026-08-15 (main line). **THE THEOREM READ, AND ITS TARGET IS A THIRD LOCUS: THE de SITTER COSMOLOGICAL HORIZON AT r = alpha.**
+
+*The correspondence runs from the collapse horizon to **the null hypersurface at the de Sitter radius of the background**, ruled by generators "**that asymptote to but never meet**" the comoving geodesic, with bifurcation two-sphere the equatorial sphere of that geodesic in the waist.*
+
+⇒ ***So the theorem's locus is **neither the seam nor the branch point but the de Sitter horizon** — a third locus, and exactly the one the canon's same-symbol warning names: "is it the embedding size, the areal radius, the de Sitter horizon, or the merged horizon?". The previous revision corrected one conflation; **this is the third member of the family**.***
+
+**⌗ And "canonically constrained" is earned:** *both sides are **the oriented future horizon of a worldline**, so the map is "**fixed up to a reframing of the generator-labelling two-sphere, far from an arbitrary isomorphism of like-typed boundaries**" — generators to generators, celestial sphere to bifurcation sphere matching observer-poles, affine ordering and future orientation preserved.*
+
+**⚠⚠ And the theorem states its own limit:** *the map is **not in general an isometry — the horizon areas and the surface gravities differ**. So it identifies **null fibration, ordering and orientation, not metric structure** — which is precisely the selectivity inferred two revisions ago, **here stated rather than inferred**.*
+
 ### Revision r3084 — 2026-08-15 (main line). **THE SEAM IS NOT THE BEGINNING, AND I HAVE CONFLATED THEM ALL SESSION.**
 
 *Daryl flagged it. Checked the canon — the ontology index's naming rule, whose first line is "**never write the bare word 'seam'**":*

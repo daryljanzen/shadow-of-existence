@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3084 (Daryl flagged it): **the seam is NOT the beginning and I have conflated them all session.** Canon: **branch point = r=0, the cosmological beginning, NOT a seam**; **the seam = r = +-alpha/sqrt3, the Nariai double root at z ~ 0.66**. ⛭ And P15 already caught this once: 'a distinction SIX SENTENCES of this paper previously ran together', with the loci giving **opposite answers** on whether modes are inside the comoving horizon. **My notes 5, 20 and 29 say seam where the object is the branch point.** OWED #585.***
+*⌗ **LAST ACTUAL MOVE — r3085: **the theorems target is a THIRD locus — the de Sitter cosmological horizon at r = alpha**, neither the seam (alpha/sqrt3) nor the branch point (r=0). ⌗ The map is **canonically constrained**: both sides are the oriented future horizon of a worldline, so it is **fixed up to a reframing of the generator-labelling 2-sphere**. ⚠ And the theorem states its own limit: **NOT an isometry — areas and surface gravities differ** — so it identifies fibration, ordering and orientation, **not metric structure**.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3084: LOCUS ERROR -- the morphism identifies the horizon with the INITIAL SLICE, which is the BRANCH POINT (r=0), not the seam (alpha/sqrt3, z~0.66). Corpus audit owed |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3085: the theorems locus is r = alpha, the de Sitter cosmological horizon -- a THIRD member of the family. And the map is not an isometry: fibration and ordering, not metric |
 
 ---
 
