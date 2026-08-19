@@ -146,6 +146,24 @@ sources: [cowork, chat]
 
 
 
+### Revision r3086 — 2026-08-15 (main line). **I FLAGGED THE LOCUS ERROR AND THEN DID NOT FIX IT. FIXED NOW.**
+
+*Read the canon's seam section properly — the whole section, not a regex over it — and corrected every mislabel in my own text.*
+
+    front seam                    r = 2M              the collapse horizon
+    equatorial / throat seam      X = alpha           THE 3-SPHERE'S SIZE; signature flips
+    Nariai seam                   r = alpha/sqrt3     "a HORIZON, not the beginning"; z = 0.654;
+                                                      where deceleration hands over to acceleration
+    back seam                     -2 alpha/sqrt3      the same substrate point at r < 0
+    THE BRANCH POINT              r = 0               "the beginning… the acoustic era's beginning";
+                                                      "not a seam and never to be called one"
+
+**⛔ And my three errors, corrected in place rather than merely noted:** *r3085's "third locus" **is the equatorial/throat seam** — in pure de Sitter the embedding size and the areal radius coincide, which is exactly why the theorem can use it; r3084 gave the Nariai redshift **without the acceleration hand-over that makes it matter**; and my notes wrote "the seam" for **the crossing and the hand-over, which are the branch point**.*
+
+**⌗ Quoted corpus text left verbatim** — *where a paper says "seam", that is the paper's word, and `OWED` #585 is where it gets decided.*
+
+**⚠ And the dissonance stands as a question:** *the composition ratio of about two is **a branch-point quantity**, and both P7 and P15 call its locus "the seam" — at the Nariai redshift that ratio is four parts in ten thousand.*
+
 ### Revision r3085 — 2026-08-15 (main line). **THE THEOREM READ, AND ITS TARGET IS A THIRD LOCUS: THE de SITTER COSMOLOGICAL HORIZON AT r = alpha.**
 
 *The correspondence runs from the collapse horizon to **the null hypersurface at the de Sitter radius of the background**, ruled by generators "**that asymptote to but never meet**" the comoving geodesic, with bifurcation two-sphere the equatorial sphere of that geodesic in the waist.*

@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3085: **the theorems target is a THIRD locus — the de Sitter cosmological horizon at r = alpha**, neither the seam (alpha/sqrt3) nor the branch point (r=0). ⌗ The map is **canonically constrained**: both sides are the oriented future horizon of a worldline, so it is **fixed up to a reframing of the generator-labelling 2-sphere**. ⚠ And the theorem states its own limit: **NOT an isometry — areas and surface gravities differ** — so it identifies fibration, ordering and orientation, **not metric structure**.***
+*⌗ **LAST ACTUAL MOVE — r3086: **I flagged the locus error and did not fix it. Fixed now.** Read the canons seam section whole: **throat seam xi at X = alpha, the 3-spheres SIZE**; **Nariai seam at alpha/sqrt3, a HORIZON not the beginning, z = 0.654, where deceleration hands over to acceleration**; **the BRANCH POINT at r=0 is the beginning and is never to be called a seam**. ⛔ r3085s 'third locus' IS the throat seam — in pure dS X and r coincide. My mislabels corrected in place, corpus quotes left verbatim.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3085: the theorems locus is r = alpha, the de Sitter cosmological horizon -- a THIRD member of the family. And the map is not an isometry: fibration and ordering, not metric |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3086: the loci held exactly from the canon; my mislabels fixed in place. Open dissonance: rho_r/rho_m ~ 2 is a BRANCH-POINT quantity and both P7 and P15 call its locus the seam |
 
 ---
 

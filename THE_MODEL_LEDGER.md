@@ -25,7 +25,7 @@ never a free parameter.** Say which before changing it.*
 | **`MAT`** | matter fraction's denominator ⚠ **and whether $\Omega_m$ is a gravitating fraction at all** | ⚠ **OPEN — currently `1`, and r3046 raises the deeper question** | *the fractions are $\rho_i/\rho_{\rm tot}$, and **which total** depends on what the $(3H_c^2/2)\Omega$ conversion is allowed to assume. **This is the site of the $r_t$-vs-$r_H$ inconsistency** (r3041).* | *unresolved: the rate excludes radiation, the denominator includes it* |
 | **`CS`** | baryon loading in the sound speed | **DETERMINED — `1`** | *$R_b$ is the photon–baryon ratio of the actual plasma. Ordinary layer physics.* | *standard, and `Rb_rec` is derived from $\omega_b$ in-code* |
 | **`GRAV`** | whether species enter the potential through the rate or by their own density | ⚠ **OPEN — currently `0`** | *`0` routes every species through $(3H_c^2/2)\Omega_i$, which **presumes the rate is sourced by them**; `1` uses each species' physical $4\pi Ga^2\rho_i$, **symmetric between matter and radiation as Daryl's reading requires**. **The abstract's "rate fixed by the cosmological constant alone" argues for `1`; running it does not fix the fit.*** | *r3046 abstract; r3047 run* |
-| **`LA`** | the acoustic-scale target the seam datum is solved to | ⚠ **OPEN — currently `301.6`** | ***this is a TARGET, not a prediction**: $z_{\rm onset}$ is root-found to hit it. Every "the scale comes out right" statement traces here.* | *r3026* |
+| **`LA`** | the acoustic-scale target the inherited datum is solved to | ⚠ **OPEN — currently `301.6`** | ***this is a TARGET, not a prediction**: $z_{\rm onset}$ is root-found to hit it. Every "the scale comes out right" statement traces here.* | *r3026* |
 
 ---
 
