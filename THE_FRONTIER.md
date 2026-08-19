@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3052: **the curved-projection remark is the most consequential thing in this pass.** Schwarzschild and de Sitter are two READINGS of one slicing curve on one substrate of radius alpha = sqrt(3/Lambda); **alpha is the invariant — a LENGTH, NOT A MASS — and M is its projection-dependent reading, a turning point rather than a coefficient**. ⇒ A third and deeper reason the Omega_m in the potential source is suspect: **a mass density is a projection quantity whose invariant is a length**. ⚠ Guard: the empirical content is untouched.***
+*⌗ **LAST ACTUAL MOVE — r3053: **the gravitational-wave application is directly pertinent — it shows what a perturbation IS here, in an exact solution.** The propagating degree of freedom is **the transverse-traceless shear of the layer, evolving by a wave equation ON THE LAYER**, with energy carried by the shear rate and gradient; the spacetime-metric version is **projection-dependent**. ⇒ **That is the template the scalar sector needs and the CMB code does not use.** ⌗ And CR localizes wave energy precisely because it fixes the foliation.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3052: mass is a PERSPECTIVAL READING of a cut offset -- alpha is the invariant length, M the projection-dependent reading. The Schwarzschild leaf is a FLAT VACUUM CUT; curvature does not well up where no matter stands |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3053: the wave sector has a WORKED layer-level perturbation equation -- TT shear of h_ij evolving on the layer, spacetime oscillation projection-dependent. The template the scalar sector needs |
 
 ---
 

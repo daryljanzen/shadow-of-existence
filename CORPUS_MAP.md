@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3053 — 2026-08-15 (main line). **THE GRAVITATIONAL-WAVE APPLICATION IS DIRECTLY PERTINENT: IT SHOWS WHAT A PERTURBATION IS IN THIS FRAMEWORK, IN AN EXACT SOLUTION.**
+
+⇒ *"**gravitational waves correspond to propagating perturbations of the spatial metric. Their representation as oscillations of the spacetime metric is PROJECTION-DEPENDENT.**" — and it is **exhibited rather than asserted**: the Gowdy–de Sitter wave has "the propagating degree of freedom … **the transverse-traceless shear of the spatial layer, evolving BY A WAVE EQUATION ON THE LAYER**", with energy and momentum "**carried entirely by the shear rate and the shear gradient of the layer**".*
+
+⇒ ***So the framework has a worked example of exactly what I have been guessing at: **a perturbation whose dynamics are written on the layer, in layer variables, with the spacetime-metric version identified as the projection-dependent reading**. That is the template the scalar sector needs and the one the CMB code does not use.***
+
+**⌗ AND THE ENERGY REMARK GIVES THE REASON IT MATTERS:** *general relativity's wave energy is **non-localizable** because "**general relativity singles out no physical foliation, so the Hamiltonian constraint that would carry the field's energy density generates a mere gauge deformation**" — and **CR fixes the foliation empirically and thereby localizes it**. ***The same fixed foliation is what makes a layer-level perturbation equation well-defined at all.***
+
+**⚠ And the boundary is named honestly:** *the loss of the confining isometry, "beyond which the wave's polarization must reorient from point to point and the layer becomes genuinely inhomogeneous", is the onset of free radiation — **the same frontier `PO-14`'s unbuilt chiral member sits on**.*
+
 ### Revision r3052 — 2026-08-15 (main line). **THE CURVED-PROJECTION REMARK: THE MOST CONSEQUENTIAL THING READ IN THIS PASS.**
 
 *In order, not skipping ahead. "Gravitational spacetime curvature as a perspectival shadow":*

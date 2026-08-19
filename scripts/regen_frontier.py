@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3052: mass is a PERSPECTIVAL READING of a cut offset -- alpha is the invariant length, M the projection-dependent reading. The Schwarzschild leaf is a FLAT VACUUM CUT; curvature does not well up where no matter stands'),
+        'r3053: the wave sector has a WORKED layer-level perturbation equation -- TT shear of h_ij evolving on the layer, spacetime oscillation projection-dependent. The template the scalar sector needs'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,13 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3052: **the curved-projection remark is the most consequential thing in this pass.** "
-            "Schwarzschild and de Sitter are two READINGS of one slicing curve on one substrate of "
-            "radius alpha = sqrt(3/Lambda); **alpha is the invariant — a LENGTH, NOT A MASS — and "
-            "M is its projection-dependent reading, a turning point rather than a coefficient**. ⇒ "
-            "A third and deeper reason the Omega_m in the potential source is suspect: **a mass "
-            "density is a projection quantity whose invariant is a length**. ⚠ Guard: the "
-            "empirical content is untouched.")
+LASTFIND = ("r3053: **the gravitational-wave application is directly pertinent — it shows what a "
+            "perturbation IS here, in an exact solution.** The propagating degree of freedom is "
+            "**the transverse-traceless shear of the layer, evolving by a wave equation ON THE "
+            "LAYER**, with energy carried by the shear rate and gradient; the spacetime-metric "
+            "version is **projection-dependent**. ⇒ **That is the template the scalar sector needs "
+            "and the CMB code does not use.** ⌗ And CR localizes wave energy precisely because it "
+            "fixes the foliation.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
