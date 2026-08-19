@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3064: **FLRW names which projection is physical, and the acoustic code is written on the other one.** Hypersurface orthogonality is **a representational assumption rather than a physical necessity**, and **the SdS construction identifies the NON-SYNCHRONOUS projection as the one selected by the horizon causal structure**. ⇒ The scan integrates in conformal Newtonian gauge on a hypersurface-orthogonal background — the SYMMETRIC projection. **Whether a C_ell computed there equals one on the physical projection is a question I have never asked.*****
+*⌗ **LAST ACTUAL MOVE — r3065: **the local-cosmic boundary shows what a settled CR result looks like.** The existent slices Gaussian curvature changes sign exactly once, at the static radius, **the same radius where bound orbits hand over to the congruence that IS the cosmology** — so **one scale sets, for every mass, where a structures hold gives way to the flow**. The several descriptions are **not distinct results but one existent fact**. ⇒ **The acoustic sector has nothing of that shape: one instrument, one route, a hardcoded ladder.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3064: the framework names the NON-SYNCHRONOUS projection as physical; the code computes on the symmetric one. Faithful for signal propagation by axiom -- but the comb is a PHASE structure. Question, not finding |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3065: a settled CR result converges from several independent readings on one geometric locus with alpha the only input. The acoustic sector has one instrument, one route, a hardcoded ladder |
 
 ---
 

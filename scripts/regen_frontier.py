@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3064: the framework names the NON-SYNCHRONOUS projection as physical; the code computes on the symmetric one. Faithful for signal propagation by axiom -- but the comb is a PHASE structure. Question, not finding'),
+        'r3065: a settled CR result converges from several independent readings on one geometric locus with alpha the only input. The acoustic sector has one instrument, one route, a hardcoded ladder'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,13 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3064: **FLRW names which projection is physical, and the acoustic code is written on "
-            "the other one.** Hypersurface orthogonality is **a representational assumption rather "
-            "than a physical necessity**, and **the SdS construction identifies the NON-SYNCHRONOUS "
-            "projection as the one selected by the horizon causal structure**. ⇒ The scan "
-            "integrates in conformal Newtonian gauge on a hypersurface-orthogonal background — the "
-            "SYMMETRIC projection. **Whether a C_ell computed there equals one on the physical "
-            "projection is a question I have never asked.**")
+LASTFIND = ("r3065: **the local-cosmic boundary shows what a settled CR result looks like.** The "
+            "existent slices Gaussian curvature changes sign exactly once, at the static radius, "
+            "**the same radius where bound orbits hand over to the congruence that IS the "
+            "cosmology** — so **one scale sets, for every mass, where a structures hold gives way "
+            "to the flow**. The several descriptions are **not distinct results but one existent "
+            "fact**. ⇒ **The acoustic sector has nothing of that shape: one instrument, one route, "
+            "a hardcoded ladder.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

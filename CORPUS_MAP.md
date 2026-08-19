@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3065 — 2026-08-15 (main line). **THE LOCAL–COSMIC BOUNDARY: IT SHOWS WHAT A SETTLED CR RESULT LOOKS LIKE.**
+
+⇒ *The intrinsic Gaussian curvature of the existent slice **changes sign exactly once**, at the static radius — "**where the local bend of the cut cancels the substrate's cosmological curvature**" — and it is **the same radius at which sub-marginal bound orbits hand over to the marginally-bound congruence that IS the cosmology**.*
+
+**⛭⛭** *"**The one scale that sets the global expansion therefore sets, for every mass, the local radius at which a structure's hold gives way to the flow**" — **one substrate read at two ranges**, with the curvature's sign being **the boundedness/expansion dichotomy itself**.*
+
+**⌗ AND THE STANDARD FOR AGREEMENT IS STATED:** *the curvature-flat locus, the orbital handover and the local range of the single scale are "**not distinct results but ONE EXISTENT FACT**", and that convergence is "**the discipline returning a novel consequence and not only weighing one**".*
+
+⇒ ***And that is a structural comparison worth making about my own work: **this is what a settled CR result looks like — several independent readings converging on one geometric locus, with one length the only input**. The acoustic sector has nothing of that shape: **its peak positions come from one instrument, by one route, with a hardcoded ladder**. A difference in evidential kind, not merely in confidence.***
+
 ### Revision r3064 — 2026-08-15 (main line). **FLRW READ: IT NAMES WHICH PROJECTION IS PHYSICAL, AND THE ACOUSTIC CODE IS WRITTEN ON THE OTHER ONE.**
 
 ⇒ *"The success of FLRW cosmology **does not require that space itself be homogeneous, isotropic, or synchronously expanding; it requires only that THE CAUSAL PROJECTION admits a maximally symmetric representation**" — real space may be "**locally curved, dynamically distorted, and inhomogeneous, while remaining diffeomorphic to the spatial slices of an FLRW foliation**".*
