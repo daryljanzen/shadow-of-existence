@@ -146,6 +146,25 @@ sources: [cowork, chat]
 
 
 
+### Revision r3073 — 2026-08-15 (main line). **THE CONVERSION QUANTIFIED, AND THE CONSISTENT VERSION IS THE WORSE ONE. THAT IS THE RESULT.**
+
+*The code asserts that the physical source equals three-halves the conformal Hubble squared times the density fraction. **That identity holds only if the total inside the fraction is the same total as the one in the rate — and it is not**: the numerator's carries radiation, the rate's does not.*
+
+    a/a_rec     total with radiation    the rate's own total    ratio
+    0.16              2.65e+11               9.72e+10           2.73
+    0.50              4.95e+09               3.18e+09           1.55
+    1.00              5.08e+08               3.98e+08           1.28
+    2.00              5.66e+07               4.98e+07           1.14
+   10.00              4.09e+05               3.98e+05           1.03
+
+⇒ ***Largest early, falling to one late — so the potential source is under-weighted at early times by up to a factor of 2.7.***
+
+**⛔ AND THE FIX MAKES IT WORSE, WHICH IS THE FINDING:** *dividing by the rate's own total instead — the consistent choice — was run at r3038 and returns **ratio 0.6839 with only two peaks, structure lost**, against the shipped 0.746. And r3041 showed that run **is** the physical-density version. ***So the internally consistent conversion is measurably worse than the inconsistent one.***
+
+⇒ ***Which leaves two readings, and I will not pick one without evidence: **either the inconsistency is compensating for something else the model gets wrong**, or **the conversion is not the carrier and the audit's last candidate fails too** — which would mean all six preconditions are cleared and the defect is somewhere the enumeration did not reach.***
+
+**⛔ And a slip caught before recording:** *I printed "4.6 at the onset" where the table reads **2.73**; the 4.57 belongs to r3041's different, photon-specific ratio.*
+
 ### Revision r3072 — 2026-08-15 (main line). **SENT BACK TO READ THE ROWS: THE STRIKE IS SOUND, THE PHRASING THAT CARRIES IT IS NOT.**
 
 *`PO-12`'s closed-list says "**the onset shown FIXED, not free**". Read as English that says **predicted**. Read against `C26_the_onset_is_not_free`, which is what that revision ran, it says something else:*

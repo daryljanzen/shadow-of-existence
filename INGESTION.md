@@ -594,3 +594,4 @@ r3069  LATENT      precondition 6 eliminated: T_onset = 1.6 eV gives z = 6811 vs
 r3070  LATENT      r3069 strengthens PO-16: the fitted onset and the thermodynamic one agree to 0.75%. Identity of value, not just kind.
 r3071  LATENT      r3069 was circular: 1.6 eV is required to return 1.99, which is the datum. Corpus coherent; precondition 6 stands.
 r3072  REGISTER    FIXED means SPENT, not predicted: C26 says fitted to the acoustic angle. Phrase corrected; strikes stand.
+r3073  LATENT      conversion mismatch 2.73 at onset falling to 1.03; the CONSISTENT version is worse (0.6839, 2 peaks).

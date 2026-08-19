@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3072 (Daryl sent me back to read them): **the strike is sound; the phrasing is not.** PO-12s closed-list says 'the onset shown FIXED, not free' — which reads as PREDICTED. **C26, which is what that revision ran, says the opposite in its own words: 'it is FITTED TO THE ACOUSTIC ANGLE'.** So 'fixed' means **already SPENT**, not predicted — correct and load-bearing for PO-12, **and exactly the compression I misread at r3069**. Phrase corrected in the row and the receipt.***
+*⌗ **LAST ACTUAL MOVE — r3073: **the conversion quantified, and the CONSISTENT version is the WORSE one.** The identity 4piG a^2 rho = (3Hc^2/2)Omega needs the same total in both places; the numerators has radiation, Hcs does not. **Mismatch 2.73 at onset, 1.28 at recombination, 1.03 by ten times.** ⛔ But the consistent choice returns 0.6839 with only two peaks. ⇒ **Either the inconsistency compensates for something else, or the conversion is not the carrier and the audits last candidate fails too.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
