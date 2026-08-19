@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3064 — 2026-08-15 (main line). **FLRW READ: IT NAMES WHICH PROJECTION IS PHYSICAL, AND THE ACOUSTIC CODE IS WRITTEN ON THE OTHER ONE.**
+
+⇒ *"The success of FLRW cosmology **does not require that space itself be homogeneous, isotropic, or synchronously expanding; it requires only that THE CAUSAL PROJECTION admits a maximally symmetric representation**" — real space may be "**locally curved, dynamically distorted, and inhomogeneous, while remaining diffeomorphic to the spatial slices of an FLRW foliation**".*
+
+**⛭⛭ AND THEN THE LINE THAT MATTERS:** *hypersurface orthogonality is "**a representational assumption rather than a physical necessity**", and "**the SdS construction below identifies THE NON-SYNCHRONOUS PROJECTION as the one selected by the horizon causal structure**".*
+
+**⛔ So the framework names a physical projection, and it is not the one the code uses:** *the scan integrates in conformal Newtonian gauge on a hypersurface-orthogonal background — **the symmetric projection**. ***Whether a spectrum computed there equals one computed on the non-synchronous projection the horizon selects is a question the corpus's own distinction raises, and I have not asked it once in sixty revisions.***
+
+**⚠ The projection is faithful for signal propagation by axiom — but faithful is not identical**, *and the acoustic comb is a **phase** structure, exactly the quantity a non-orthogonal foliation would treat differently. **Recorded as a question, not a finding**: there is no computation showing the two differ.*
+
 ### Revision r3063 — 2026-08-15 (main line). **THE HOLE ARGUMENT ANSWERS A QUESTION ABOUT THE MODEL I HAD NOT KNOWN TO ASK.**
 
 *The threat is **indeterminism**: field data outside a hole fail to fix values inside it if points are individuated independently of the fields. **The standard resolutions purchase determinism by deflating the manifold** — denying points identity apart from the fields on them.*

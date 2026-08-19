@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3063: **the hole argument answers a question about the model I had not known to ask.** Events are individuated by **occurrence within the layers, not by coordinate representation** — CR resolves the argument WITHOUT deflating the manifold, and the indeterminacy is **representational redundancy rather than ontological ambiguity**. ⇒ **So a mode at wavenumber k is a structure ON THE LAYER**, and the k-grid, the l-ladder and the harmonic index are representations of it. **The undeveloped S^3-to-multipole relation is the missing REPRESENTATION MAP.*****
+*⌗ **LAST ACTUAL MOVE — r3064: **FLRW names which projection is physical, and the acoustic code is written on the other one.** Hypersurface orthogonality is **a representational assumption rather than a physical necessity**, and **the SdS construction identifies the NON-SYNCHRONOUS projection as the one selected by the horizon causal structure**. ⇒ The scan integrates in conformal Newtonian gauge on a hypersurface-orthogonal background — the SYMMETRIC projection. **Whether a C_ell computed there equals one on the physical projection is a question I have never asked.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3063: the ladder gap is a missing REPRESENTATION MAP, not a missing calculation -- modes are individuated on the layer and k, l and n are representations of them. stretch = 2.75 stands in for the map |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3064: the framework names the NON-SYNCHRONOUS projection as physical; the code computes on the symmetric one. Faithful for signal propagation by axiom -- but the comb is a PHASE structure. Question, not finding |
 
 ---
 
