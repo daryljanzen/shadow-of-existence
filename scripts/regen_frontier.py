@@ -20,7 +20,7 @@ OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
     'PO-13': ('the misplaced phase — WHY the propagated comb runs short', 1, 1, 3, None,
-        'r3067: six preconditions audited; the projection and the mode map FAIL, and both set l. The ladder is cleared as carrier (stretch cancels), leaving THE PROJECTION as the untested one'),
+        'r3068: audit COMPLETE -- all six preconditions clean, eliminated, or cleared as carrier, and the defect remains. Only the budget conversion and the imposed acoustic scale are left to look at'),
     'PO-15': ('the ordering — EXHAUST the selection candidates', 1, 1, 3, None,
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
@@ -41,12 +41,13 @@ EST = {
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
 SINCE = 0
-LASTFIND = ("r3067: **the precondition audit done — six enumerated, and the two that FAIL are the "
-            "two that set l.** Rate ✔, budget ⚠, **projection ⛔**, **mode map ⛔**, crossing ✔, "
-            "acoustic scale ⚠. ⛭ Then tested the ladder as carrier: both combs are near-uniform in "
-            "n and a factor 1.48-1.51 would map them — **but stretch CANCELS from the physical "
-            "peaks**, so the defect is **upstream of the map, in what sets k**. ⇒ **The projection "
-            "is the one failing precondition upstream of k that has never been tested.**")
+LASTFIND = ("r3068: **the projection is ELIMINATED by the frameworks own proposition, and the audit "
+            "is complete without locating the defect.** The shift carries the synchronization "
+            "convention only; the lapse is dtau = N dt **with N = 1 for the comoving congruence**, "
+            "which IS the fixed foliation. So dtau = dt, the phase integral is unchanged, and k is "
+            "a property of h_ij no slicing touches. ⇒ **All six preconditions now clean, "
+            "eliminated, or cleared as carrier — and the defect remains.** Left: the budget "
+            "conversion and the imposed acoustic scale.")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted

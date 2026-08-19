@@ -65,6 +65,8 @@ layer, and I have been trying to fix it against itself.***
 
 **⑯ THE PRECONDITION AUDIT, DONE (r3067).** *Six preconditions of the acoustic calculation, checked against the layer: **① rate ✔ · ② gravitating budget ⚠ · ③ projection ⛔ · ④ mode map ⛔ · ⑤ crossing history ✔ · ⑥ acoustic scale ⚠**. ***The two failing are the two that set $\ell$.*** And the ladder was tested and cleared as the carrier: **both combs are near-uniform in $n$ and a single factor $1.48$–$1.51$ would map them, but `stretch` cancels from the physical peaks (r3024)** — so **the defect is upstream of the map, in what sets $k$**. ⇒ **Precondition ③, the projection, is the one failing item upstream of $k$ that has never been tested.**
 
+**⑰ THE PROJECTION IS ELIMINATED — AND THE AUDIT IS COMPLETE WITHOUT LOCATING THE DEFECT (r3068).** *The lapse/shift proposition: the shift carries **the synchronization convention only**, and the lapse is $d\tau=N\,dt$ **with $N=1$ for the comoving congruence** — which IS the fixed cosmic foliation. **So $d\tau=dt$, the phase integral is unchanged, and $k$ is a property of $h_{ij}$ no slicing touches. The projection cannot move the peaks.*** ⇒ **Final audit: ① ✔ · ② ⚠ · ③ ✔ eliminated · ④ ⛔ but cleared as carrier · ⑤ ✔ · ⑥ ⚠.** ***Every precondition is clean, eliminated, or shown not to carry it — and the defect remains. The framework's method, applied completely, does not locate this failure.*** ⌗ **What is left: the budget conversion (②) and the imposed acoustic scale (⑥) — the two ⚠ items.**
+
 ## ⛔ THE NAMED ERROR — and every instance of it I have made
 
 *"**its standard synchronous reading is a category error, reifying the maximally symmetric projection's

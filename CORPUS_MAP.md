@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3068 — 2026-08-15 (main line). **THE PROJECTION TESTED AND ELIMINATED BY THE FRAMEWORK'S OWN PROPOSITION; THE AUDIT IS COMPLETE.**
+
+*The lapse/shift proposition settles it without a run: the shift "**is freely specifiable and carries the synchronization-and-rest convention**" — it changes which later events count as occurring at the same place, and nothing else — while the lapse "**is the metrical rate of the layer's advance, with N = 1 for the comoving congruence**".*
+
+**⛔⛔ And the comoving congruence IS the cosmic foliation the framework fixes.** *So the proper time equals the coordinate time, the phase integral is unchanged, and a mode's wavenumber is a property of the layer metric that no slicing touches. ***The projection choice cannot move the acoustic peaks.***
+
+⇒ ***So precondition three is eliminated — not by a computation I ran, but by the proposition I had already read and not applied. **My r3064 flag was a real mismatch and a false lead**: the code does compute on the symmetric projection, and for this observable it does not matter.***
+
+**⌗ AND THE AUDIT IS NOW COMPLETE:** *rate clean; budget questionable; **projection eliminated**; mode map failing **but cleared as carrier at r3067**; crossing clean; scale questionable. **Every precondition is now either clean, eliminated, or shown not to carry the defect — and the defect remains.***
+
+**⚠ That is a real result and an uncomfortable one:** *the framework's own method, applied completely, **does not locate this failure**. What it has done is eliminate six candidates and leave **the budget conversion and the imposed acoustic scale** as the only places left to look.*
+
 ### Revision r3067 — 2026-08-15 (main line). **THE METHOD APPLIED: SIX PRECONDITIONS ENUMERATED AND CHECKED, AND THE TWO THAT FAIL ARE THE TWO THAT SET THE MULTIPOLE.**
 
 *Reading note eight's exercise, done at last.*

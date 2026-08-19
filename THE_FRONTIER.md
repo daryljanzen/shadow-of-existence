@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3067: **the precondition audit done — six enumerated, and the two that FAIL are the two that set l.** Rate ✔, budget ⚠, **projection ⛔**, **mode map ⛔**, crossing ✔, acoustic scale ⚠. ⛭ Then tested the ladder as carrier: both combs are near-uniform in n and a factor 1.48-1.51 would map them — **but stretch CANCELS from the physical peaks**, so the defect is **upstream of the map, in what sets k**. ⇒ **The projection is the one failing precondition upstream of k that has never been tested.*****
+*⌗ **LAST ACTUAL MOVE — r3068: **the projection is ELIMINATED by the frameworks own proposition, and the audit is complete without locating the defect.** The shift carries the synchronization convention only; the lapse is dtau = N dt **with N = 1 for the comoving congruence**, which IS the fixed foliation. So dtau = dt, the phase integral is unchanged, and k is a property of h_ij no slicing touches. ⇒ **All six preconditions now clean, eliminated, or cleared as carrier — and the defect remains.** Left: the budget conversion and the imposed acoustic scale.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3067: six preconditions audited; the projection and the mode map FAIL, and both set l. The ladder is cleared as carrier (stretch cancels), leaving THE PROJECTION as the untested one |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3068: audit COMPLETE -- all six preconditions clean, eliminated, or cleared as carrier, and the defect remains. Only the budget conversion and the imposed acoustic scale are left to look at |
 
 ---
 
