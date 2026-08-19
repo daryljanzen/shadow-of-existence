@@ -544,3 +544,4 @@ r3080  LATENT      the onset is FITTED and H_0-independent; the ratio is a band 
 r3081  LATENT      the ladder is justified: discrete S3 source through a FLAT distance slicing. The open question is stretchs value.
 r3082  CORPUS      OWED #584: P10 disclaims what P7 develops; must cite it. Data claims: BAO DESI DR2 chi2/dof~1, D and He-4 within 1 sigma.
 r3083  LATENT      the seam is a morphism between two readings of one layer; phase is causal-structure-dependent, amplitude is not.
+r3084  LATENT      LOCUS ERROR: the seam is z~0.66, the branch point is the beginning. My notes conflated them. OWED #585.

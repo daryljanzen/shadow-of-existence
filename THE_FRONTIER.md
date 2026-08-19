@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3083: **the null-boundary correspondence says what the seam actually IS.** It identifies **a MORPHISM between two projections of the same ontological layer** — the horizon event-of-events and the initial SdS slice **represent the same layer under distinct causal assignments**. ⇒ **So the seam is not a surface where something happens but one layer described twice** — which explains why amplitude and tilt cross unaltered while oscillatory content does not: **phase is causal-structure-dependent, amplitude is not.*****
+*⌗ **LAST ACTUAL MOVE — r3084 (Daryl flagged it): **the seam is NOT the beginning and I have conflated them all session.** Canon: **branch point = r=0, the cosmological beginning, NOT a seam**; **the seam = r = +-alpha/sqrt3, the Nariai double root at z ~ 0.66**. ⛭ And P15 already caught this once: 'a distinction SIX SENTENCES of this paper previously ran together', with the loci giving **opposite answers** on whether modes are inside the comoving horizon. **My notes 5, 20 and 29 say seam where the object is the branch point.** OWED #585.***
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3083: the seam is a MORPHISM between two readings of one layer, not a surface -- which is why phase is lost and amplitude is not. The first account of WHY the transmission is selective |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3084: LOCUS ERROR -- the morphism identifies the horizon with the INITIAL SLICE, which is the BRANCH POINT (r=0), not the seam (alpha/sqrt3, z~0.66). Corpus audit owed |
 
 ---
 

@@ -146,6 +146,20 @@ sources: [cowork, chat]
 
 
 
+### Revision r3084 — 2026-08-15 (main line). **THE SEAM IS NOT THE BEGINNING, AND I HAVE CONFLATED THEM ALL SESSION.**
+
+*Daryl flagged it. Checked the canon — the ontology index's naming rule, whose first line is "**never write the bare word 'seam'**":*
+
+*· **branch point** = the close of the lift — "**the cosmological beginning; where the conjugate branch becomes the matter branch. NOT a seam.**" · **the seam** = the Nariai double root, **at redshift about 0.66 on the far pass**, one point met a lap apart.*
+
+⇒ ***So the seam is a LATE epoch — the acceleration inflection — and the transition is at the BRANCH POINT.***
+
+**⛭⛭ AND P15 HAS ALREADY CAUGHT THIS ONCE IN ITS OWN TEXT:** *"**It is the seam, not the crossing, that this construction reads — a distinction SIX SENTENCES OF THIS PAPER PREVIOUSLY RAN TOGETHER, corrected at r2501**", with the two loci giving **opposite answers**: at the seam the acoustic modes are **already within the comoving horizon**; at the branch point **every mode is outside it**.*
+
+**⛔ And my own reading notes say "seam" where the object is the branch point** — *the crossing, what-crosses, and the null-boundary morphism, **which identifies the horizon event-of-events with the initial slice**. Corrected in the notes.*
+
+**⚠ And the corpus-wide sweep finds 100 occurrences where "seam" sits beside beginning-language.** *Most will be legitimate uses of the seam datum, **but the class is real and P15 has already had six instances of it**. Filed as `OWED` #585 — it needs reading rather than pattern-matching.*
+
 ### Revision r3083 — 2026-08-15 (main line). **THE NULL-BOUNDARY CORRESPONDENCE, AND IT SAYS WHAT THE SEAM ACTUALLY IS.**
 
 *It relates **a null hypersurface arising as the limit of infalling timelike worldlines** to **the initial representational slice of an SdS cosmology obtained by causal reassignment** — and it is **structural: "it identifies a MORPHISM between two projections of the same ontological layer"**. The theorem: "**the horizon event-of-events at the limit of collapse and the initial slice of an SdS cosmology represent the same ontological layer under distinct causal assignments**".*
