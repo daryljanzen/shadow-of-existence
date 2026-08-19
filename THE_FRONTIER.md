@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3089: **read the RHS whole and found the Friedmann conversion appears TWICE** — in the potential source, which GRAV already reached, and in **Psi's anisotropic stress, which it did not**, feeding the photon momentum equation. ⇒ Extended GRAV to reach it; **baseline unchanged**, and **it moves nothing**: P1/P2 goes 5.905 -> 5.915. **The stress term carries the same inconsistency and is not a carrier of the defect.** A negative result, found by reading the source.***
+*⌗ **LAST ACTUAL MOVE — r3090: **the full RHS read line by line — eleven of twelve check out against the standard forms.** The one never examined: the **slip term, a velocity damping whose coefficient grows as k^2**, which shifts frequency and not just amplitude. ⌗ The sizing said it could not be uniform (gamma/2omega grows linearly in k, so it would compress MORE at high k); **tested anyway, and NOSLIP=1 gives byte-identical peaks** with P1/P2 1.447 -> 1.442. **Eliminated, estimate and run agreeing.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3089: the conversions second site (Psis anisotropic stress) found and made consistent -- and it moves nothing, 5.905 -> 5.915. Not a carrier |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3090: the RHS read whole; the slip term found, sized, tested and eliminated (byte-identical peaks). The sound speed verified right in the equation as written |
 
 ---
 

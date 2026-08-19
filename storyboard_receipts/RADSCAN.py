@@ -136,7 +136,7 @@ def modes_all(kk):
         _tp = float(taup_of(e))
         _on = (not _NODAMP_CR) and (_tp > float(os.environ.get("TPGATE","0.6")))
         _sgg = (_VISC*tg/_tp) if _on else 0.0
-        _slip = (kk**2*Rb**2/(3.0*(1+Rb)**2*_tp)) if _on else 0.0
+        _slip = (kk**2*Rb**2/(3.0*(1+Rb)**2*_tp)) if (_on and os.environ.get("NOSLIP","0")!="1") else 0.0
         _PSG = 0.0 if os.environ.get("NOPSG","0")=="1" else Ogv*_sgg
         Ps=(Ph-4.0*(_Wr_of(e)*((_S_NU*fnu/max(fnu,1e-30))*0+1.0))*0-6*Hc**2*(Onv*sig + _PSG)/kk**2
             if not _S_GRAV else

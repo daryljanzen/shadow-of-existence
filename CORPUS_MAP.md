@@ -146,6 +146,18 @@ sources: [cowork, chat]
 
 
 
+### Revision r3090 — 2026-08-15 (main line). **THE FULL RIGHT-HAND SIDE READ LINE BY LINE, AND THE SLIP TERM TESTED AND ELIMINATED.**
+
+*Read all twelve output lines rather than the two examined so far. **Eleven check out against the standard forms** — the cold-matter pair, the photon and neutrino density equations, the neutrino momentum equation, the shear equation and the multipole recursion.*
+
+⇒ ***The one never examined is the slip term in the photon momentum equation: a velocity-damping coefficient that **grows as the square of the wavenumber**. In a damped oscillator such a term shifts the frequency to the square root of omega-squared minus gamma-squared-over-four — **not merely the amplitude**.***
+
+**⌗ And the sizing said it could not be uniform:** *the damping-to-frequency ratio grows linearly in wavenumber, **so it would compress the comb more at high wavenumber**, where the measured deficit is flat. **Tested anyway rather than argued from the estimate.***
+
+⇒ ***With the slip off: peaks **150, 360, 555, 780 — byte-identical to shipped** — and the height ratio moving 1.447 to 1.442. **Cleanly eliminated, and the estimate and the run agree.****
+
+*Also verified from the other direction: the restoring term against the photon density equation gives the sound speed exactly, **so the oscillator is right in the equation as written**.*
+
 ### Revision r3089 — 2026-08-15 (main line). **A SECOND SITE OF THE SAME CONVERSION, FOUND BY READING THE SOURCE — AND IT IS NOT A CARRIER.**
 
 *Read the right-hand-side block whole instead of recalling it, and the Friedmann conversion appears **twice**, not once: in the potential source, which the gravitation switch already reached, and in **the anisotropic stress entering the lapse perturbation**, which it did not. Same routing through the conformal Hubble squared, and it feeds the photon momentum equation, so it is upstream of the driving.*
