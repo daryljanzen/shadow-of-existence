@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3057: **the frameworks repair is always SUBTRACTION of a precondition, never ADDITION of a mechanism** — information preserved 'not because a mechanism recovers it but because none is ever lost'. ⇒ **And Hawkings scope paragraph is the discipline I keep failing**: 'the scope of this is narrower than black holes do not radiate, AND THE NARROWNESS IS THE HONESTY OF IT'. **Every overclaim I withdrew this session was a failure of exactly that.** My scan has only ever added switches.***
+*⌗ **LAST ACTUAL MOVE — r3058 (Daryl corrected me): **the switches ARE the frameworks subtraction, implemented safely** — each turns a term OFF for a physical reason, by changing a switch definition rather than an equation. My 'the scan has only ever added' was wrong about my own instrument. ⇒ And black-hole mechanics: the laws are correct results whose object **is never instantiated on a finite layer**, so they characterise the auxiliary completed geometry. **A third status for the acoustic model: internally correct with no realised object.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3057: the repair is SUBTRACTION of a precondition, never addition of a mechanism -- and the discipline is narrowness, which every overclaim I withdrew this session failed |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3058: a third status beside right and wrong -- an apparatus can be internally correct and have NO REALISED OBJECT. And the switches are the frameworks own subtraction, safely implemented |
 
 ---
 

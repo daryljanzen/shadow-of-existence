@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3058 — 2026-08-15 (main line). **BLACK-HOLE MECHANICS, AND A CORRECTION TO MY OWN READING.**
+
+**⛭ FIRST, THE CORRECTION.** *I wrote that the framework repairs by subtraction while "my scan has only ever added". **That is wrong about my own instrument.** Each switch turns a term **off** for a stated physical reason — **the switches ARE that subtraction, implemented safely**, by changing a switch definition rather than an equation, which is less error-prone and keeps every configuration re-runnable and comparable. **`RADSCAN` is the framework's method in instrument form; what was wrong was my reasoning around it.***
+
+**AND THE SECTION ITSELF:** *the laws of black-hole mechanics are "**correct results whose object is a REALISED event horizon carrying a definite area and surface gravity**", and that object "**is never instantiated on a finite cosmic layer**", so they "**characterise the auxiliary completed geometry, not the realised worldtube**" — Bekenstein–Hawking entropy sharing their status.*
+
+**⌗ AND THE RESTRAINT IS EXPLICIT AGAIN:** *"What content survives for a perpetually collapsing ultra-compact body … **is not settled by this reading and is not claimed here**".*
+
+⇒ ***For the model, a third status beside right and wrong: **an apparatus can be internally correct and still have no realised object**. The acoustic calculation's object **may be the projection's idealisation rather than the layer's physics** — which is exactly what the flat-spacetime question asks.***
+
 ### Revision r3057 — 2026-08-15 (main line). **THE INFORMATION PARADOX AND HAWKING'S SCOPE PARAGRAPH: THE REPAIR IS ALWAYS SUBTRACTION, AND THE DISCIPLINE IS NARROWNESS.**
 
 **HAWKING'S SCOPE, verbatim:** *"**The scope of this is narrower than 'black holes do not radiate,' AND THE NARROWNESS IS THE HONESTY OF IT**" — what is absent is **horizon-induced** radiation, while "**local, horizon-independent particle production … is untouched, and a perpetually collapsing ultra-compact body need not be quiescent**".*

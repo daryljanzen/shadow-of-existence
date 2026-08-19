@@ -579,3 +579,4 @@ r3054  INSTRUMENT  THE_READING_NOTES: six positive statements, the named error w
 r3055  LATENT      CRs method: dissolve structurally, ask what the ontology permits before reaching for a mechanism. My scan is mechanism-hunting.
 r3056  LATENT      the method twice: enumerate what the standard result requires, check each against the layer. Never done for the acoustic sector.
 r3057  LATENT      the repair is subtraction of a precondition, never addition of a mechanism. And narrowness is the honesty of it.
+r3058  LATENT      the switches ARE the frameworks subtraction. And an apparatus can be internally correct with no realised object.
