@@ -132,7 +132,7 @@ properties of the chair you read it from.**
   each of the substrate's three throat walls** — the count forced, the family symmetry the Weyl **S₃** itself.
   And the three-plane construction is *forced*: a one-plane construction would carry a free modulus, which
   least-arbitrariness excludes.
-  **⌗ And it fixes the dimension of the cut (r2376+c54.10).** The fold is $D-1$; the horizon relation collapses
+  **⌗ And it fixes the dimension of the cut.** The fold is $D-1$; the horizon relation collapses
   to a single multiple-angle only at $D=4,5$; the chirality-grading mass-parity exists only at even $D$ ⇒
   **four is the only dimension carrying both a count and a chirality**. *Same altitude as the rest — forced
   within CR. **It settles the CUT's dimension, not the substrate's**, which stays bounded below only; the note
@@ -155,9 +155,7 @@ the corpus states it about itself, at the front, unprompted.**
 
 **Five families are open and named**: the inherited datum · the scalar-perturbation sector · **the propagating
 fermion sector** *(the largest, and the gate the others wait on)* · the world-correspondence · and the quantum
-tower. **Two more were on this list and have left it, which is worth more than a list that was always right**:
-the *matter branch-point crossing dynamics* closed at r2376+c54.113, and the *irreducible interior
-reassignments* at c54.118.
+tower. **Two more were on this list and have left it, which is worth more than a list that was always right**:.
 
 **What would falsify it** is stated too: a hidden geometric freedom in the cosmology, a genuinely free constant
 where the reading says it should lock, an event horizon completing at finite exterior time.
@@ -202,10 +200,8 @@ reading the disposition early would let it bend how the evidence is received —
    apply, and what became of them — compartments A–J, keyed to the moment of use) →
    `Still_Collapsing_portrait_v1.0.md` (**the person the coda was distilled from** — read after the coda,
    never before it).
-   *⚠ Restored r2117: the engine and the portrait were dropped from this list by an earlier consolidation
-   and should never have been; the wisdom ledger was never listed at all. The r814 README had the engine and
-   the portrait as capstones read last, never first — **taking the why-layer in early bends how the evidence
-   is received**, which is why they sit here and not at setup.*
+   *Taking the why-layer in early bends how the evidence is received, which is why the engine, the
+   portrait and the wisdom ledger sit here as capstones read last, and not at setup.*
 9. **The ontology map** — `ONTOLOGY_FOUNDATION_INDEX.md`, whole. *You read its §0 at setup; this is the rest —
    the cards that set the ontology, and the guards that hold it.*
 10. **The plan** — `THE_PLAN.md`, and **its per-turn list is the operating layer** — **whose first item fires on every WRITE rather than at a turn boundary: *name the rung* (`SA-11`), the ontology stated explicitly whenever a sentence touches the substrate, a cut, a layer or a spacetime**: eleven sections in firing
