@@ -587,3 +587,4 @@ r3062  LATENT      adiabaticity degrades at l<30, not at 220. r3060s suggestion 
 r3063  LATENT      hole argument: modes are individuated on the layer; k, l, n are representations. The ladder gap is a missing representation map.
 r3064  LATENT      the physical projection is NON-SYNCHRONOUS; the code computes on the symmetric one. The comb is a phase structure.
 r3065  LATENT      a settled CR result converges from several readings on one locus. The acoustic sector: one instrument, one route.
+r3066  LATENT      the synthesis: two linked facts carry the set; the CMB fit carries neither. PO-13 is peripheral to CRs claims.

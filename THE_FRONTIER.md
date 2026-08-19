@@ -6,7 +6,7 @@
 
 ## ⇒ **TURNS SINCE WE LAST FOUND WE DID NOT KNOW THE PROBLEM SPACE: 0**
 
-*⌗ **LAST ACTUAL MOVE — r3065: **the local-cosmic boundary shows what a settled CR result looks like.** The existent slices Gaussian curvature changes sign exactly once, at the static radius, **the same radius where bound orbits hand over to the congruence that IS the cosmology** — so **one scale sets, for every mass, where a structures hold gives way to the flow**. The several descriptions are **not distinct results but one existent fact**. ⇒ **The acoustic sector has nothing of that shape: one instrument, one route, a hardcoded ladder.*****
+*⌗ **LAST ACTUAL MOVE — r3066: **the synthesis — two linked facts carry the whole set, and the acoustic sector is neither.** ① the four-manifold is the representation, not the existent; ② the physical foliation is **not posited but MEASURED**, forced from the redshift isotropy — **one distinction read twice**. ⇒ **The programmes load is carried by those, and the CMB fit by neither.** The horizon and flatness problems dissolve in the cosmology papers, so they bear weight — **but through those dissolutions, not through acoustic peak positions.*****
 
 > ⚠ ***AND WHILE THIS READS 0, THE STEP AND TURN ESTIMATES ABOVE ARE NOT TRUSTWORTHY.*** *Each 0 means the problem space moved, so the estimates were made against a picture that has since changed. **They acquire meaning only when this counter starts rising** — that is what the counter is for.*
 
@@ -34,7 +34,7 @@
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3065: a settled CR result converges from several independent readings on one geometric locus with alpha the only input. The acoustic sector has one instrument, one route, a hardcoded ladder |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3066: PO-13s trouble is PERIPHERAL to what CR claims and central only to what P15 attempts -- the frameworks load rests on the ontological distinction and the measured foliation, not on the fit |
 
 ---
 

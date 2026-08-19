@@ -146,6 +146,16 @@ sources: [cowork, chat]
 
 
 
+### Revision r3066 — 2026-08-15 (main line). **THE SYNTHESIS READ: TWO LINKED FACTS CARRY THE WHOLE SET, AND THE ACOUSTIC SECTOR IS NEITHER OF THEM.**
+
+*The read's endpoint. The dissolutions are "**not a miscellany of re-readings but a single move seen several times**", each dissolving "**the SAME way, from the SAME distinction**" — against a standard framework whose every answer is "**a conjecture, or a non-canonical or supplementary device, brought in to manage a discrepancy the framework itself produces**": chronology protection, censorship, pseudotensors, firewalls and islands, horizon thermodynamics, **inflation for the horizon and flatness problems**.*
+
+**⛭⛭ THE TWO FACTS:** *① **the four-manifold is the representation, not the existent**; ② **the physical foliation is fixed — "not posited but MEASURED, forced from the isotropy of the cosmological redshift"**. And they are "**one distinction read twice, for to fix the physical foliation IS to read the layer, and not the manifold, as what exists**".*
+
+⇒ ***And that answers the question the synthesis was opened to ask: **the programme's load is carried by the ontological distinction and the measured foliation — and the CMB fit is carried by neither**. The horizon and flatness problems dissolve in "the cosmological sector the companion papers carry", so the cosmology papers do bear programme-level weight — **but through those dissolutions, not through acoustic peak positions**.***
+
+**⌗ So `PO-13`'s trouble is peripheral to what CR claims and central only to what P15 attempts.** *A scoping result, not an excuse: **the fit is still wrong and still worth fixing — but nothing in the framework's load-bearing structure rests on it**.*
+
 ### Revision r3065 — 2026-08-15 (main line). **THE LOCAL–COSMIC BOUNDARY: IT SHOWS WHAT A SETTLED CR RESULT LOOKS LIKE.**
 
 ⇒ *The intrinsic Gaussian curvature of the existent slice **changes sign exactly once**, at the static radius — "**where the local bend of the cut cancels the substrate's cosmological curvature**" — and it is **the same radius at which sub-marginal bound orbits hand over to the marginally-bound congruence that IS the cosmology**.*
