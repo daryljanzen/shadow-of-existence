@@ -65,6 +65,22 @@ sources: [chat]
 IN-FLIGHT: none — the fork line is closed
 FORK-CLOSED: c54 (declared r3096, Daryl: the 54s are no longer running and 56 is fried)
 
+> ⛔ **AND THE CLOSURE WAS DECLARED OVER A GAP, WHICH THE RECORD ABOVE DOES NOT SHOW.** *The last
+> absorption is `c54.207` (r2572); the fork front was scraped at `c54.232`. **Nothing between
+> `c54.208` and `c54.233` ever entered this line**, and the r3096 declaration closed the era without
+> absorbing them rather than after absorbing them. The distinction matters because `check_currency`
+> now measures against the final absorption rather than the scraped front, so it passes \emph{by
+> construction} on exactly the span that was skipped.*
+>
+> ⚠ **ONE FINDING IS REPORTED TO SIT IN THAT SPAN AND IS NOT VERIFIABLE FROM THIS TREE.** *The 54
+> line reports (r3099, with its PO-14 work) that `c54.231`--`233` carried a finding that **r2825's
+> `F5` verdict rests on a superpotential pairing `r2812` had already retracted** — both revisions
+> internal to the 54 line, neither present here, and the content not in the r3099 bundle. **It is
+> recorded as unverified rather than absorbed or dismissed**: absorbing it needs the span, and the
+> claim should not be acted on from a summary of itself. `F5` here is the P15 protocol rule (a
+> measurement discrepancy is not a framework verdict), not P7's foundational datum `(F5)` — the two
+> share a label and nothing else.*
+
 | fork revision | absorbed at | date |
 |---|---|---|
 | c54.108 | r2377 | 2026-08-10 |

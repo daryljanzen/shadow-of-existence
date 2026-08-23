@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 # Regenerates BOOK_INTRO_cosmiCave/assets/dependency_matrix.html as STATIC HTML (no JS) so it renders in every viewer, incl. sandboxed mobile previews.
 # Usage: from corpus/, run gen_matrix_html_table.py > /tmp/table.html, then gen_matrix_html.py. Or fold both into one call. Counts recomputed from source; resolver mirrors BIBKEY_ALIAS_MAP.md.
+import os
+OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                   'BOOK_INTRO_cosmiCave', 'assets', 'dependency_matrix.html')
+
 table = open('/tmp/table.html').read().split('<!--TABLE-->\n',1)[1].strip()
 head = '''<!DOCTYPE html>
 <html lang="en">
@@ -68,5 +72,5 @@ tail = '''</div>
 </body>
 </html>
 '''
-open('/home/claude/cr/BOOK_INTRO_cosmiCave/assets/dependency_matrix.html','w').write(head+'<table>'+table+'</table>'+tail)
+open(OUT,'w').write(head+'<table>'+table+'</table>'+tail)
 print("written. total bytes:", len(head+table+tail))
