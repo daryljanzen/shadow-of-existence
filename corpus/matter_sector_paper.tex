@@ -274,9 +274,13 @@ The $\omega\neq0$ problem the same superpotential defines is accordingly an ordi
 Each throat wall binds exactly one normalizable chiral zero-mode. Its chirality is a definite $\sigma_y$ eigenvalue, whose sign is the sign of the signed-radius flip; that operator is the diagram-automorphism parity $R=\gamma^5$~\cite{JanzenAlgebroid}.
 \end{proposition}
 This is the $\mathbb{Z}_2$ (chirality) half of the substrate's discrete structure, realised as a bound state, not posited. \emph{One feature of $W$ deserves comment, since $\lambda=j+\tfrac12$ appears in it and might be thought to
-carry multiplicity.} In the proper radial coordinate of the leaf frame, $\dd x=\dd r/\sqrt f$, the first-order
-pair integrates in closed form: $\int W\,\dd x=\int(\lambda\sqrt f/r)(\dd r/\sqrt f)=\lambda\ln\lvert r\rvert$,
-so the zero mode is a power law $\psi=\lvert r\rvert^{\pm\lambda}$ rather than the $\tanh$ model's exponential.
+carry multiplicity.} Written on either of the two paired forms above the first-order pair gives one logarithmic
+derivative, $\psi'/\psi=\lambda/(r\sqrt f)$, so the zero mode is
+$\psi=\exp\!\bigl(\lambda\!\int\!\dd r/(r\sqrt f)\bigr)$ rather than the $\tanh$ model's exponential.
+\emph{On the static region between the horizons that integral is finite and the amplitude runs as a
+power of $\lvert r\rvert$}, which is where the branch selection is made; \emph{near the throat it is
+not a power at all}, $f\to-2M/r$ making the exponent $\propto i\sqrt{\lvert r\rvert}$ and the mode a
+bounded phase\rcpt{W2_the_wall_zero_mode_on_the_operator_b60_fixes}.
 
 \emph{That the mode is a power of the signed radius, and that the signed radius is a cube root at the wall,
 together decide a question about the mode that is worth settling here because it is not obvious and its answer
@@ -307,11 +311,12 @@ $q\bar q$--$\bar q$, $qqqq$ and $qqq$--$\bar q$ do not close and are not.  The t
 follow from three geometric constraints with no Standard-Model input.  We still claim nothing
 about whether the residue is physical colour---that wall stands---but the condition it defines is
 \emph{a test the spectrum passes and not only a shape}.
-Near the branch point $f\to-2M/r$, so the leaf measure behaves as
-$\dd\ell=\dd r/\sqrt{\lvert f\rvert}\sim\sqrt{\lvert r\rvert/2M}\,\dd r$ and normalizability of
-$\lvert r\rvert^{s}$ requires $s>-\tfrac34$. The decaying branch $s=+\lambda$ satisfies this for every
-$\lambda$; the growing branch $s=-\lambda$ would require $\lambda<\tfrac34$, which no $\lambda=j+\tfrac12$
-attains. At the horizons the measure carries an integrable inverse square root and $\psi$ is finite, so the
+Near the branch point the leaf measure behaves as
+$\dd\ell=\dd r/\sqrt{\lvert f\rvert}\sim\sqrt{\lvert r\rvert/2M}\,\dd r$, an integrable square root, and
+the mode is a bounded phase there, so \emph{the throat admits both branches and selects neither}.
+\emph{The selection is made on the static region}, where the exponent
+$\lambda\!\int\!\dd r/(r\sqrt f)$ is real and finite: one branch decays and is bound, its conjugate
+grows and is rejected\rcpt{P14_B2_zeromode_continuation}. At the horizons the measure carries an integrable inverse square root and $\psi$ is finite, so the
 norm converges there as well\rcpt{JTOWER_angular_index}.
 
 \emph{Hence exactly one branch is bound for each $j$, and the tower over $j$ is infinite.} \emph{The angular spectrum is worth stating as the honest negative it is}\rcpt{P14_lambda_spectrum}: $\lambda$ fixes a \emph{grading} and not a \emph{content}---it indexes partial waves of one field and supplies no multiplet structure, so nothing in the angular sector \emph{has yet been} read as internal content---and the receipt cited is explicit that this forecloses nothing: a graded infinite tower whose lowest level reproduces one generation remains a live reading, and it is closed, if at all, by the Kaluza--Klein negative below rather than by the spectrum itself. That is the ordinary
