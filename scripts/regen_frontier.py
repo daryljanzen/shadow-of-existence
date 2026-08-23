@@ -51,17 +51,17 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 1
-LASTFIND = ("r3099: **PO-14 built — the fifth (chiral) class.** `L-832` builds the inhomogeneous, "
-            "propagating, two-mode turning-polarization Gowdy member `L-163` had left as an open "
-            "Cauchy problem (it built only the homogeneous reduction). The `(P,Q)` wave map is "
-            "**unconstrained** (gamma by a consistent quadrature, integrability identically zero on "
-            "shell), an explicit travelling datum is evolved to the roundoff floor with 4th-order "
-            "convergence, and the polarization plane **turns with a definite Z_2 sign** — the winding "
-            "of `arg(h_+ + i h_x)`, nonzero on the turning member, identically zero on the polarized "
-            "cut `Q=0`, reversed by the parity. **A step advanced as predicted, not a discovery: the "
-            "member was reachable and is; P11 sec:unpolarized carries it; the 'four where five are "
-            "required' clause is discharged.**")
+SINCE = 2
+LASTFIND = ("r3100: **PO-15 answered — the ordering is external, by exhaustion.** `L-833` shows the "
+            "operator ordering is bulk-inert (normal vs symmetric differ by the c-number zero-point "
+            "`1/2 hbar omega_n`, a global phase) and physical only in the horizon coefficient "
+            "(`1/4 -> 3/4 = 1/4 + 1/2`, one zero-point quantum), so 'which ordering' IS 'does the "
+            "tower's zero-point energy gravitate at the horizon'. Every candidate selector — thermal "
+            "state and seam (downstream), substrate isometry/positivity/ledger/covariance (respect "
+            "both), the deparametrization (makes normal ordering available not mandatory, and removes "
+            "the anomaly-freedom lever by solving the constraint) — fails. **A step advanced as the "
+            "row predicted ('may not be CR's to answer'): the choice is external, a localized cc "
+            "problem, an epistemic gap not a family; landed in P10, P7 frontier:quantum updated.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
