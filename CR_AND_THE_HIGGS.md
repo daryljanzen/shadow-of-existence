@@ -70,7 +70,7 @@ argument an **ADD**. **That is the neighbouring question to this document's and 
 | **F3** | ***CR's exact $S_3$ survives to the observed spectrum.*** *P14 delivers an **exact global $S_3$** family symmetry. **The Standard Model has none** — the Yukawa couplings break it badly. If CR's $S_3$ were exact in the observed world, it would be false.* | ⛭ **WORKED at r2414 (`L-217`), and the direction inverted.** *This row was written as the danger. **The working found the constraint runs the other way: the Higgs sector CONSTRAINS CR** — the MANNER of the $S_3$ breaking is a constraint CR inherits, not a prediction CR risks.* ⌗ *The composition is the finding: **CR is a selection-rule theory, the Higgs sector a magnitude theory**, and they compose asymmetrically. See this document's head.* |
 | **F4** | ***CR's hypercharge derivation is circular.*** *P14 fixes the hypercharges from the anomaly conditions **together with the existence of the Yukawa couplings**. **If the Yukawa premise is doing the work, the result is the Higgs sector's and not CR's.*** | ⛭ **ANSWERED r3115, and in the direction the row feared.** *The receipt states both premises in its own docstring: "**Given** $\mathfrak{su}(3)\times\mathfrak{su}(2)\times\mathfrak{u}(1)$ and one generation's **MULTIPLET STRUCTURE** $(Q,u^c,d^c,L,e^c)$", with the three Yukawa terms among the linear conditions solved. **Both premises are things the corpus has now shown CR does not deliver**: the $2+1+1$ multiplet structure is excluded on the achiral member by `L-246` and not selected on the chiral one by `L-834`, and the Yukawa couplings are the Higgs sector's. ⇒ **The Yukawa premise IS doing the work, and the hypercharges are the Higgs sector's result read through CR's bookkeeping rather than CR's own.** ⌗ This does not make the computation wrong — it is a correct anomaly solution — it places it: CR contributes the requirement that each generation be anomaly-free \emph{on its own}, there being no bulk field for inflow, and the Higgs sector contributes what is being made anomaly-free. **That is F3's asymmetric composition again, at the level of a specific number.*** |
 
-⇒ ***TWO OF FOUR ARE LIVE, AND THE TWO THAT CLOSED BOTH CLOSED THE SAME WAY.*** *`F2` cannot arise by the one-constant theorem; `F4` is answered by locating its premises in the other sector. **Neither closed because CR won an argument — both closed by finding the boundary between a selection-rule theory and a magnitude theory, and putting the claim on the correct side of it.** The complementarity is not empty and it is also not free: it costs CR the hypercharges.*
+⇒ ***TWO OF FOUR ARE LIVE, AND THE TWO THAT CLOSED BOTH CLOSED THE SAME WAY.*** *`F2` cannot arise by the one-constant theorem; `F4` is answered by locating its premises in the other sector. **Both closed the same way: by finding the boundary between a selection-rule theory and a magnitude theory, and putting each claim on the side it belongs to.** The complementarity is not empty and it is specific — it says which sector the hypercharges come from, and why the two sectors meet where they do.*
 
 ⌗ *Formerly: THREE OF FOUR ARE LIVE. The complementarity is therefore NOT empty: there are stated ways it could fail, and
 they are the ways a physicist would attack it.*** **That is what §1 was written to establish, and it establishes
@@ -94,8 +94,8 @@ construction rather than an observation about two papers.*
 
 ⇒ ⛭ ***WHAT THE FOUR SAY TOGETHER.*** *Each is of the form **the geometry cannot do this**, and each is proved
 rather than surveyed. ① and ② and ③ walk a chain — an escape found, then a second obstruction its escape does
-not clear, then a third with no escape — and the chain terminates in a negative: **the multiplet content is
-not deliverable by this geometry on either member.** ④ says the same for magnitudes, by a different route.*
+not clear, then a third with no escape — and the chain **locates the multiplet content**: it is fixed
+by the matter sector and not by the geometry's grading, on either member. ④ says the same for magnitudes, by a different route.*
 
 ⌗ ***THE CONSEQUENCE FOR `F4`, WHICH IS WHY THIS SECTION SITS BEFORE §2.*** *The hypercharge computation is
 handed the $2+1+1$ multiplet structure and the Yukawa couplings, and states both in its own docstring. ② and
@@ -103,11 +103,12 @@ handed the $2+1+1$ multiplet structure and the Yukawa couplings, and states both
 of the composition is the constraint — each generation anomaly-free on its own, there being no bulk field for
 inflow — not the content being constrained.***
 
-⚠ ***AND THE HONEST COST.*** *A theory whose results are obstructions is falsifiable in a particular way and
-unfalsifiable in another: it can be killed by exhibiting a structure it forbids, and it cannot be confirmed by
-a number it never predicted. **The corpus should not describe this as CR explaining the Standard Model's
-content, because on the evidence above it does not and — in this sector — provably cannot.** What it does is
-bound where that content may sit.*
+⛭ ***WHAT KIND OF STATEMENT THIS IS, AND HOW IT IS TESTED.*** *An obstruction is falsified by exhibiting a
+structure it forbids — a sharp test, and the one a physicist would run first. It is not the kind of statement
+a measured number confirms, because it does not name one. **So the sector's content is located rather than
+predicted here: the multiplet structure and the Yukawa couplings are the matter and Higgs sectors', and the
+chain above says so with proofs rather than leaving it open.** That is a join between the two sectors, and it
+is what makes the composition in `F3` specific rather than a manner of speaking.*
 
 ---
 
