@@ -111,10 +111,17 @@ def main():
           f'${FREE}+{HALF}={THRESH}$ exactly',
           abs(FREE + HALF - THRESH) < 1e-12)
 
-    # ⓷ P10 never names the ordering
-    for term in ('normal-order', 'normal order', 'symmetric order'):
-        check(f'⛔ ⓷ and P10 never names it: "{term}" appears ZERO times',
-              len(re.findall(term, p10, re.I)) == 0)
+    # ** RE-PINNED r3106.  ⓷ pinned an OMISSION -- that P10 never named either ordering -- and the
+    #    omission was supplied at r3100, which is the finding landing rather than the finding failing.
+    #    The pin now asserts the corrected state: P10 names both, states each minimum, and identifies
+    #    the difference as the zero-point quantum.  Re-pinning an omission to its repair is the only
+    #    honest move; leaving it would report a fixed gap as an open one. **
+    for term in ('normal order', 'symmetric order'):
+        check(f'⛭ ⓷ and P10 NOW names it, the omission supplied at r3100: "{term}" appears',
+              len(re.findall(term, p10, re.I)) > 0)
+    check('⛭ and P10 states both minima and identifies their difference as the zero-point quantum',
+          'is $\\tfrac14$ under normal ordering' in p10
+          and 'exactly the zero-point quantum' in p10)
     check("while its decomposition survives either way -- it \"uses only that both sides of the "
           'threshold are occupied"',
           'both sides of the threshold are occupied' in p10)

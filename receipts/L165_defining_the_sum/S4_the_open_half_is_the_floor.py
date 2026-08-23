@@ -72,10 +72,19 @@ def main():
           'occupied, and not that the spectrum has a floor"',
           'uses only that both sides of the threshold are occupied' in p10
           and 'not that the spectrum has a floor' in p10)
-    check('and marks the floor as open: "whether the complete $\\hat\\Gamma$ is bounded below is part of '
-          'what this paragraph leaves open at its end, and is not assumed here"',
-          'is part of what this paragraph leaves open at its end' in p10
-          and 'is not assumed here' in p10)
+    # ** RE-PINNED r3106.  This pin quoted P10 marking the floor as OPEN.  It broke because the
+    #    argument won: P10 now states that boundedness is not ASSUMED and yet DOES FOLLOW -- the full
+    #    inverse-square coefficient is positive on non-degenerate metrics, so Gamma-hat keeps its floor
+    #    at gamma beyond leading order, and a spectrum below -1/4 has no object.  The receipt's thesis
+    #    is unchanged and strengthened: the decomposition never rested on the floor.  What the paragraph
+    #    leaves open is now the STRADDLE, a different threshold deciding a different property. **
+    check('and does not ASSUME the floor, while now deriving it: "is not assumed here ... '
+          'though it does in fact follow"',
+          'is not assumed here' in p10 and 'though it does in fact follow' in p10)
+    check('and what the paragraph leaves open is the STRADDLE, not the floor -- 3/4 deciding whether a '
+          'boundary condition must be chosen, -1/4 whether a regular branch exists to choose',
+          'not the floor but the straddle itself' in p10
+          and 'has no object' in p10)
     check('with a receipt cited for it: P10_the_straddle_does_not_need_a_floor',
           os.path.exists(os.path.join(ROOT, 'receipts', 'P10_canonical_time',
                                       'P10_the_straddle_does_not_need_a_floor.py')))

@@ -104,9 +104,14 @@ def main():
     p10 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'canonical_time.tex')))
 
     # ⓵ the paper's own statement of the question and of what enters
-    check('⓵ P10 leaves it open: "whether the complete $\\hat\\Gamma$ is bounded below is part of what '
-          'this paragraph leaves open at its end, and is not assumed here"',
-          'is part of what this paragraph leaves open at its end' in p10)
+    # ** RE-PINNED r3106, same cause as S4: P10 no longer leaves the floor open -- it states that
+    #    boundedness is not ASSUMED and yet DOES FOLLOW (the full inverse-square coefficient is
+    #    positive on non-degenerate metrics).  This receipt's subject is whether the floor survives
+    #    the cubic, and that question is sharpened rather than removed: P10's derivation is stated for
+    #    the quadratic tower, so what the cubic does to it is exactly what this receipt tests. **
+    check('⓵ P10 does not ASSUME the floor and now derives it: "is not assumed here ... though it '
+          'does in fact follow"',
+          'is not assumed here' in p10 and 'though it does in fact follow' in p10)
     check('and gives the leading order: "At leading order $\\hat\\Gamma=\\gamma+c\\sum_n\\hat\\pi_n^2$"',
           'At leading order $\\hat\\Gamma=\\gamma+c\\sum_n\\hat\\pi_n^2$' in p10)
     check('⛭⛭ and names what enters beyond it: "the cubic and higher self-interactions enter at the same '

@@ -120,10 +120,19 @@ def main():
     p7f = re.sub(r'\s+', ' ', p7)
 
     # ⓵ P7's own accounting
-    check('⓵ P7 keeps its own count: "it opened at seven and stands at four"',
-          'it opened at seven and stands at four' in p7f)
-    check('and says the resolved ones were "moved below the list" and "recorded there"',
-          'moved below the list' in p7f and 'recorded there' in p7f)
+    # ** RE-PINNED r3106.  ⓵ pinned P7's running count -- "it opened at seven and stands at four" --
+    #    as EVIDENCE of the changelog habit this receipt found.  P7 no longer carries it: the count,
+    #    the "moved below the list" narration and the resolved-item history are gone under the
+    #    one-state rule, and the list now states what each of the three items HAS LEFT rather than
+    #    what was removed from it.  So P7 is this receipt's FIXED case, and the pin records that.
+    #    The finding stands for the other twelve papers, which the checks below still measure. **
+    check('⓵ P7 no longer keeps a running count of its own frontier list -- the changelog sentence '
+          'this receipt found is gone',
+          'it opened at seven and stands at four' not in p7f
+          and 'moved below the list' not in p7f)
+    check('and the list states what each item HAS LEFT rather than what was removed from it',
+          'stated remainders rather than whole sectors' in p7f
+          and 'leaves a computation' in p7f)
 
     # ⛭ but the frontier section is the last section
     i = p7.find('\\section{Frontiers and open problems}')
