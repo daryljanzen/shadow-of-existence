@@ -40,27 +40,33 @@ alone cannot, and names what a successor needs: a CHIRAL PROJECTION (an isospin-
 chiral), which neither the horn swap T nor the twist c is.  It CONFIRMS P14's standing mismatch
 "fails on the right-handed side" and upgrades it from a found gap to a theorem about the geometry. **
 
-** STATED FOR REVERSAL.  The one premise that would reverse the negative: if the second polarisation
-BACK-REACTED on the near-wall radial function f (so the transverse twist entered the radial
-normalizability), the binding could shift chirality-asymmetrically and the mode content would change,
-breaking the conjugation premise.  On the leaf measure as P14 writes it -- dl = dr/sqrt(|f|), f the
-radial metric function, the near-wall f -> -2M/r fixing the s > -3/4 threshold -- it does not; the
-twist is transverse and the threshold radial.  If a computation of the coupled (radial+transverse)
-back-reaction found otherwise, this verdict reverses. **
+** THE BACK-REACTION, COMPUTED (PART 5).  The one way the conjugation premise could fail is if the
+twist changed the mode content chirality-asymmetrically -- i.e. if the second polarisation entered the
+binding measure with a dependence on the SIGN of c.  It does not.  The conformal factor gamma sets the
+Dirac leaf measure (g_tt = -e^{2(gamma-psi)}) and is fixed by quadrature from (P,Q); computed from the
+constraints, gamma_z and gamma_t depend on the twist ONLY through omega_t^2, omega_z^2, omega_t
+omega_z -- EVEN under sigma: Q=omega -> -omega.  So the measure is IDENTICAL on the +c and -c members:
+the back-reaction is real (gamma does depend on the twist) but PARITY-EVEN, so it cannot distinguish
+the two chiralities, which the sign of c exchanges.  The binding is chirality-symmetric, the
+conjugation premise holds exactly, and the negative is CLOSED -- not conditional. **
 
   PART 1  T is an invertible involution; conjugation preserves its per-block orbit structure.
   PART 2  the chirality-resolved action: opposite turnings, same 2+2 -- never 2+1+1.
   PART 3  geometry-independent: ANY invertible frame change conjugates T.
   PART 4  the binding is radial, the twist transverse -- the mode content is c-independent.
+  PART 5  the back-reaction on the measure is PARITY-EVEN: gamma is even in the twist, so the binding
+          cannot depend on the sign of c (the chirality).  The one escape, closed by computation.
 
 STATUS: ✔✔ (conjugation-invariance of triviality-on-a-block asserted for rotations and for random
   GL(2); the chirality-resolved 2+2 asserted for every turning angle; the swap's eigenvalues asserted
-  a conjugation invariant; the radial/transverse decoupling of the binding stated with its P14 source)
+  a conjugation invariant; the radial/transverse decoupling of the binding stated with its P14 source;
+  and gamma_z, gamma_t derived from the constraints and asserted EVEN under Q -> -Q)
 RUN: python3 P14_the_twist_conjugates_T_it_does_not_project_it.py   RUNTIME: ~1s
-ORIGIN: built r3103 (c54); the positive half of `PO-21`, on `L-246`'s negative half and P11
-  sec:unpolarized's twist c.  Written r3103.  Stated for reversal.
+ORIGIN: built r3103, back-reaction closed r3104 (c54); the positive half of `PO-21`, on `L-246`'s
+  negative half and P11 sec:unpolarized's twist c.
 """
 import numpy as np
+import sympy as sp
 
 fails = []
 
@@ -149,6 +155,65 @@ check("④ the binding threshold s > -3/4 is set by the RADIAL near-wall f -> -2
       "transverse twist (the numbers: s = +lambda always clears -3/4; s = -lambda never does, for any "
       "lambda = j+1/2 >= 1)", all((-(j+0.5)) < -0.75 < (j+0.5) for j in np.arange(0.5, 6, 1.0)))
 
+# =====================================================================
+print()
+print("=" * 78)
+print("PART 5 -- THE BACK-REACTION ON THE MEASURE IS PARITY-EVEN (the one escape, closed)")
+print("=" * 78)
+print("  PART 4's decoupling is exact only if the twist does not enter the binding measure with a")
+print("  dependence on the SIGN of c (the chirality). It does not. The conformal factor gamma sets the")
+print("  Dirac leaf measure (g_tt = -e^{2(gamma-psi)}); it is fixed by quadrature from (P,Q) via the")
+print("  constraints (the unpolarised cut's own Einstein equations, L-832). Compute gamma_z, gamma_t")
+print("  and their parity under sigma: Q=omega -> -omega (the chirality exchange, c -> -c).")
+tt, zz = sp.symbols('t z', real=True)
+psi = sp.Function('psi')(tt, zz)
+gam = sp.Function('gamma')(tt, zz)
+om = sp.Function('omega')(tt, zz)
+Es = sp.exp
+Xs = [tt, zz, sp.Symbol('x'), sp.Symbol('y')]
+Rs_ = tt
+gg = sp.zeros(4, 4)
+gg[0, 0] = -Es(2*(gam-psi)); gg[1, 1] = Es(2*(gam-psi))
+gg[2, 2] = Es(2*psi); gg[2, 3] = gg[3, 2] = Es(2*psi)*om
+gg[3, 3] = Es(2*psi)*om**2 + Rs_**2*Es(-2*psi)
+ggi = gg.inv()
+
+
+def ds(f, i):
+    return sp.diff(f, Xs[i])
+
+
+Gm2 = [[[sp.simplify(sum(ggi[a, dd]*(ds(gg[dd, b], c)+ds(gg[dd, c], b)-ds(gg[b, c], dd))
+                         for dd in range(4))/2)
+         for c in range(4)] for b in range(4)] for a in range(4)]
+
+
+def Ric2(b, c):
+    return sp.simplify(sum(ds(Gm2[a][b][c], a) - ds(Gm2[a][b][a], c) for a in range(4))
+                       + sum(Gm2[a][a][dd]*Gm2[dd][b][c] - Gm2[a][c][dd]*Gm2[dd][b][a]
+                             for a in range(4) for dd in range(4)))
+
+
+Rsc = sp.simplify(sum(ggi[a, b]*Ric2(a, b) for a in range(4) for b in range(4)))
+gz = sp.solve(sp.simplify(Ric2(0, 1) - gg[0, 1]*Rsc/2), sp.Derivative(gam, zz))[0]
+gt = sp.solve(sp.simplify(Ric2(0, 0) - gg[0, 0]*Rsc/2), sp.Derivative(gam, tt))[0]
+
+
+def flip_Q(expr):
+    reps = {d_: -d_ for d_ in expr.atoms(sp.Derivative) if d_.expr == om}
+    reps[om] = -om
+    return expr.subs(reps, simultaneous=True)
+
+
+print(f"  gamma_z = {sp.simplify(gz)}")
+print(f"  gamma_t = {sp.simplify(gt)}")
+even = sp.simplify(flip_Q(gz) - gz) == 0 and sp.simplify(flip_Q(gt) - gt) == 0
+print(f"  gamma_z, gamma_t depend on the twist only through omega_t^2, omega_z^2, omega_t omega_z")
+print(f"  => EVEN under sigma (Q -> -Q): {even}")
+check("⑤ the conformal factor gamma -- hence the Dirac leaf measure -- is EVEN in the twist, so the "
+      "binding is IDENTICAL on the +c and -c members: the back-reaction is real but parity-even and "
+      "cannot depend on the sign of c (the chirality). The one escape from PART 4 is closed.", even)
+
 print()
 print("=" * 78)
 print("WHAT L-834 DELIVERS")
@@ -164,6 +229,9 @@ for s in [
  "   that names precisely what a successor must supply, and what neither T nor c is.",
  "✔ ** IT CONFIRMS AND UPGRADES P14's STANDING MISMATCH ** 'fails on the right-handed side' from a found",
  "   gap to a theorem about the geometry, and it closes the positive half P14 left well-posed.",
+ "✔ ** AND THE RESULT IS CLOSED, NOT CONDITIONAL. ** The one escape -- a back-reaction of the twist on",
+ "   the binding measure -- is computed (PART 5): gamma is EVEN in the twist, so the measure cannot",
+ "   depend on the sign of c. There is no reversal premise left standing.",
 ]:
     print("  " + s)
 print()
