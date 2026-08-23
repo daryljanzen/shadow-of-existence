@@ -34,10 +34,18 @@ paper at rNNNN"*.  ** With two `r3108`s, that sentence names an ambiguous revisi
     cannot prevent one -- exactly `check_id_bands`'s position. **  *** The prevention is a BAND, and
     revision numbers are programme-wide by design, so banding them changes how the corpus numbers
     itself.  That is not a node's call. ***
+    ⛭⛭ ** WITHDRAWN r3128 (`L-256`), against this receipt. **  *Three more collisions arrived in the
+      sixteen revisions after this was written -- `r3103`, `r3104`, and `r3112`, which is this
+      receipt's own revision.*  ⇒ *** A finding that routes its own remedy and then recurs is not
+      waiting for a decision; it is accumulating cost while one is not made.  The band is PARITY:
+      this line takes the EVEN half, `check_revision_collisions` enforces it on this line's own
+      unmerged commits BEFORE the merge, and the other line adopting the ODD half is a request that
+      has been made and is not presumed answered. ***  ⌷ *`r3127` is skipped, and the skip is the
+      first instance of the rule.*
 
 Run:  python3 receipts/L251_the_numbering_collides/N1_...py
 
-Written r3112 (`L-251`).  Stated for reversal.
+Written r3112 (`L-251`); PART 2 re-pinned and the band taken r3128 (`L-256`).  Stated for reversal.
 """
 import os
 import subprocess
@@ -81,6 +89,28 @@ cosmo = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8',
 check('⓵ᵉ and r3111\'s own repair has landed -- "That refit has since been performed" is gone',
       'That refit has since been performed' not in cosmo)
 
+def _fires_on_new():
+    """** SEEDED: take the three post-r3112 collisions OUT of the baseline; the gate must name them
+    and exit 1. **  *A detection gate is only shown to work by being shown a defect it has not been
+    told about -- "the gate is green" shows nothing at all.*
+    """
+    import contextlib
+    import io
+    keep = set(C.BASELINE)
+    try:
+        C.BASELINE.difference_update({'r3103', 'r3104', 'r3112'})
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            rc = C.main()
+        out = buf.getvalue()
+    finally:
+        C.BASELINE.clear()
+        C.BASELINE.update(keep)
+    named = all(f'[FAIL] {r}' in out for r in ('r3103', 'r3104', 'r3112'))
+    # ** and the restore is VERIFIED, not trusted to the `finally` -- c54.213 **
+    return rc == 1 and named and C.BASELINE == keep
+
+
 print()
 print('=' * 78)
 print('PART 2 -- ⛭⛭ THE COLLISIONS, AND THE TEST THAT SEPARATES THEM FROM SPANS')
@@ -90,9 +120,39 @@ print(f'    {len(bad)} revision id(s) claimed on divergent branches')
 recent = [r for r in bad if int(r[1:]) >= 3099]
 older = [r for r in bad if int(r[1:]) < 3099]
 print(f'      {len(older)} in r2502-r2832 (~330 revisions)   {len(recent)} in r3099-r3111 (13)')
-check('⓶ twelve revision ids are claimed by divergent branches', len(bad) == 12)
-check('⓶ᵇ ⛔ and four of the twelve fall in the last thirteen revisions -- the rate is accelerating, '
-      'not historical', len(recent) == 4 and len(older) == 8)
+# ⛔⛭⛭ AMENDED r3128 (`L-256`).  ** THESE TWO CHECKS PINNED A DEFECT COUNT TO THE MOMENT IT WAS
+# ** MEASURED, AND THE COUNT ROSE -- so they went red for the reason the finding PREDICTED. **
+#   *The finding is "two lines numbering from one counter collide, and the rate is accelerating".
+#   Three more arrived in the sixteen revisions after it was written, and the receipt reporting the
+#   acceleration failed because the acceleration continued.*
+#   ⇒ *** r3105's rule, one level up: a check that pins a LIVE register punishes the finding it
+#       defends.  A DEFECT COUNT is the same object -- so the historical claim is read at the SHA
+#       where it was made, and the present is a separate claim in the direction that can only be
+#       good news: the count has not FALLEN below what was found. ***
+AT = '5af2a1da54'          # r3112, where the twelve were counted
+import tempfile as _tf                                                     # noqa: E402
+import shutil as _sh                                                       # noqa: E402
+_wt = _tf.mkdtemp()
+subprocess.run(['git', 'worktree', 'add', '--detach', _wt, AT], cwd=ROOT,
+               capture_output=True, text=True)
+try:
+    at_bad = C.collisions(root=_wt)
+finally:
+    subprocess.run(['git', 'worktree', 'remove', '--force', _wt], cwd=ROOT, capture_output=True)
+    _sh.rmtree(_wt, ignore_errors=True)
+at_recent = [r for r in at_bad if int(r[1:]) >= 3099]
+print(f'    AT {AT} (r3112, where this was written): {len(at_bad)} collisions, '
+      f'{len(at_recent)} of them in r3099-r3111')
+check(f'⓶ twelve revision ids were claimed by divergent branches AT r3112 -- read at the SHA, '
+      f'measured {len(at_bad)}', len(at_bad) == 12)
+check(f'⓶ᵇ ⛔ and four of the twelve fell in the last thirteen revisions -- measured '
+      f'{len(at_recent)} at that SHA, a rate of {len(at_recent) / 13 * 100:.0f} per hundred against '
+      f'{len(at_bad) - len(at_recent)} across the ~330 before it',
+      len(at_recent) == 4 and len(at_bad) - len(at_recent) == 8)
+check(f'⛔ ⓶ᶜ *** AND THE PRESENT, IN THE ONLY DIRECTION THAT IS NEWS: the count has NOT fallen. '
+      f'{len(bad)} now against {len(at_bad)} then -- {len(bad) - len(at_bad)} more arrived in the '
+      f'revisions since, which is the acceleration this finding reported CONTINUING, and it is why '
+      f'r3128 stops routing the band and takes it. ***', len(bad) >= len(at_bad))
 # ** the discriminator, and the CONTROL that shows it is doing work **
 # a subject-text rule (this gate's first version) cannot tell a span from a collision
 out = subprocess.run(['git', 'log', '--format=%h%x09%s'], cwd=ROOT,
@@ -136,9 +196,44 @@ print('=' * 78)
 print('PART 4 -- BOTH GATES ARE GREEN AND BOTH ARE BASELINED BY NAME')
 print('=' * 78)
 check('⓸ check_paper_tense is green on the repaired tree', T.main() == 0)
-check('⓸ᵇ check_revision_collisions is green', C.main() == 0)
-check('⓸ᶜ and both name their known sites rather than counting them -- a count can be satisfied by '
-      'fixing one and adding another', len(T.BASELINE) == 5 and len(C.BASELINE) == 12)
+# ⛭⛭ AMENDED r3128 (`L-256`): ** "THE GATE IS GREEN" IS A CLAIM ABOUT THE FUTURE, and it is the
+# ** one thing a detection gate is built NOT to promise. **  *This went red when three new
+# collisions arrived -- that is the gate WORKING.  What a receipt can assert is that the gate FIRES
+# on a collision outside its baseline, and that its baseline names rather than counts.*
+check('⓸ᵇ check_revision_collisions FIRES on a collision outside its baseline: with the three that '
+      'arrived after r3112 removed from BASELINE, it reports them by name and exits 1',
+      _fires_on_new())
+check('⓸ᶜ ⌗ and it is green as the tree stands, with those three now baselined BY NAME',
+      C.main() == 0)
+check('⓸ᵈ and both gates name their known sites rather than counting them -- a count can be '
+      f'satisfied by fixing one and adding another.  {len(T.BASELINE)} tense sites, '
+      f'{len(C.BASELINE)} collisions, {len(C.BAND_GRANDFATHERED)} band exception',
+      len(T.BASELINE) == 5 and len(C.BASELINE) == 15 and len(C.BAND_GRANDFATHERED) == 1)
+
+print()
+print('=' * 78)
+print('PART 5 -- ⛭⛭ THE BAND, TAKEN RATHER THAN ROUTED')
+print('=' * 78)
+print('  *r3112 wrote that banding revision numbers "is not a node\'s call" and routed it.  Three')
+print('   more collisions arrived in the sixteen revisions that followed, and one of them is r3112')
+print('   itself -- the revision that reported the problem.*')
+check('⓹ the band is PARITY and this line takes the even half -- the cheapest band that keeps the '
+      'chronological reading a range-band would destroy',
+      C.PARITY == 0 and 'THE BAND IS PARITY' in
+      open(os.path.join(ROOT, 'corpus', 'check_revision_collisions.py'),
+           encoding='utf-8', errors='replace').read())
+_v = C.band_violations()
+check(f'⓹ᵇ and it is PREVENTION: it reads this line\'s own unmerged commits, which are the only '
+      f'ones whose numbers can still be changed -- {len(_v) if _v is not None else "no upstream"} '
+      'out of band', _v == [])
+check('⓹ᶜ ⌗ and only HALF of it is enforceable here, which is said rather than assumed: the other '
+      'line adopting the odd half is a REQUEST that has been made and is not presumed answered',
+      'is a REQUEST, not an assumption' in
+      open(os.path.join(ROOT, 'corpus', 'check_revision_collisions.py'),
+           encoding='utf-8', errors='replace').read())
+check('⓹ᵈ and the one grandfathered id is named, not dated -- a cutoff silently absorbs everything '
+      f'behind it: {sorted(C.BAND_GRANDFATHERED)}',
+      C.BAND_GRANDFATHERED == {'r3125'})
 
 print()
 print('=' * 78)
@@ -150,6 +245,11 @@ if fails:
 print('  ⇒ ** ALL CHECKS PASS. **')
 print()
 print('  ⌷ *** WHAT IS ROUTED RATHER THAN TAKEN: the five history phrases need a reading of papers')
-print('      this line has not read end to end, and the numbering needs a BAND, which changes how')
-print('      the corpus numbers itself and is not a node\'s call. ***')
+print('      this line has not read end to end. ***')
+print('  ⛭⛭ *** AND THE NUMBERING IS NO LONGER AMONG THEM.  r3112 routed the band as "not a')
+print('      node\'s call"; three more collisions arrived in the sixteen revisions after, one of')
+print('      them r3112 itself.  A finding that routes its own remedy and then recurs is not')
+print('      waiting for a decision -- it is accumulating cost while one is not made.  The band')
+print('      is PARITY, this line takes the EVEN half, and the gate enforces it BEFORE the merge.')
+print('      The other line adopting the ODD half is a request, made and not presumed answered. ***')
 print()

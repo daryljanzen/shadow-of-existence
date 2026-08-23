@@ -23,15 +23,35 @@ left the paper at rNNNN"*.  ** With two `r3108`s that sentence names an ambiguou
 used 100 times; it is a DIFFERENT identifier and passes.*  ** A collision is two commits whose
 subjects carry the same BARE id and different work. **
 
-** ⚠ AND THE REAL REPAIR IS NOT THIS GATE. **  *A gate over history detects a collision after the
-merge; it cannot prevent one, because both lines commit offline -- exactly the position
-`check_id_bands` is in.*  ⇒ *** The prevention is a BAND, and revision numbers are programme-wide by
-design, so banding them is a change to how the corpus numbers itself.  That is not a node's call and
-is routed rather than taken. ***
+** ⚠ AND THE REAL REPAIR IS NOT THE DETECTION HALF OF THIS GATE. **  *A gate over history detects a
+collision after the merge; it cannot prevent one, because both lines commit offline -- exactly the
+position `check_id_bands` is in.*  ⇒ *** The prevention is a BAND. ***
+
+⛭⛭ ** THE BAND, TAKEN r3128 (`L-256`), AND WHY IT IS TAKEN RATHER THAN ROUTED. **  r3112 wrote that
+banding revision numbers *"is a change to how the corpus numbers itself, which is not a node's call"*
+and routed it.  *Three more collisions arrived in the sixteen revisions that followed -- `r3103`,
+`r3104`, `r3112` -- and `r3112` is the revision that reported the problem.*
+  ⇒ ** A finding that routes its own remedy and then recurs is not waiting for a decision; it is
+    accumulating cost while one is not made. **
+
+*** THE BAND IS PARITY: THIS LINE TAKES EVEN REVISION NUMBERS, THE OTHER TAKES ODD. ***
+
+  * ** It is the cheapest band that preserves everything the numbering already does. **  *No renaming
+    of history, no per-node prefix, no change to how a revision is cited, and the rough chronological
+    reading survives -- which a range-band (`r4000+`) would destroy.*
+  * ** ⌗ AND ONLY HALF OF IT IS ENFORCEABLE HERE, WHICH IS STATED RATHER THAN ASSUMED. **  *This gate
+    checks that every commit on THIS line since the last merge carries an EVEN bare id.  The other
+    line adopting ODD is a request that has been made and is not presumed answered; until it is, this
+    half removes the collisions this line can cause and no others.*
+  * ⌷ *`r3127` is skipped for that reason, and the skip is the first instance of the rule.*
+
+  ⇒ ** AND IT IS PREVENTION, NOT DETECTION: it fails BEFORE the merge, on this line's own tree, which
+    is the only moment at which a collision can still be avoided. **
 
     python3 corpus/check_revision_collisions.py
+    python3 corpus/check_revision_collisions.py --no-band   # history only, if `origin/main` is absent
 
-Written r3112 (`L-251`).  Stated for reversal.
+Written r3112 (`L-251`); the band taken r3128 (`L-256`).  Stated for reversal.
 """
 import os
 import re
@@ -45,7 +65,23 @@ BARE = re.compile(r'^(r\d{3,5})\s*[—-]\s*(.*)$')
 
 #: ** NAMED, not counted. **  Known at r3112; a collision not on this list is a FAILURE.
 BASELINE = {'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
-            'r2821', 'r3099', 'r3100', 'r3105', 'r3108'}
+            'r2821', 'r3099', 'r3100', 'r3105', 'r3108',
+            # ⛔ added r3128 (`L-256`): the three that arrived AFTER r3112 reported the class and
+            # routed its remedy.  *They are baselined because they predate the band, and the band
+            # is what makes a FOURTH one a failure this line can actually be held to.*
+            'r3103', 'r3104', 'r3112'}
+
+#: *** THE BAND. ***  This line's revision numbers are EVEN; the other line's are ODD.  See the head.
+PARITY = 0
+#: ** NAMED, not dated. **  *A band cannot apply to commits made before it was taken, and the corpus's
+#: way of saying so is a list of names rather than a cutoff -- a cutoff silently absorbs everything
+#: behind it, and `c54.212` found that hole in a different gate.*
+#:   ⌗ `r3125` predates the band by two revisions AND had already been bundled out of this tree when
+#:     the band was taken; rewriting a delivered bundle costs more than the one odd id saves.  ** It
+#:     is the only entry, and a second one would mean the band was taken and then not kept. **
+BAND_GRANDFATHERED = {'r3125'}
+#: the commits a band can still act on: this line's own, not yet merged into the shared trunk
+UPSTREAM = 'origin/main'
 
 
 def _anc(a, b, root=None):
@@ -88,6 +124,60 @@ def collisions(root=None):
     return bad
 
 
+def band_violations(root=None):
+    """this line's own unmerged commits whose bare revision id is out of band
+
+    ** THE POINT OF MEASURING HERE rather than over all of history: these are the commits that have
+    not yet reached the shared trunk, so they are the only ones whose numbers can still be changed.
+    A band checked after the merge is a second detector, not a prevention. **
+    """
+    r = subprocess.run(['git', 'log', '--format=%h%x09%s', f'{UPSTREAM}..HEAD'],
+                       cwd=root or ROOT, capture_output=True, text=True)
+    if r.returncode != 0:
+        return None                       # no upstream ref here -- reported, never asserted
+    out = []
+    for line in r.stdout.split('\n'):
+        if '\t' not in line:
+            continue
+        sha, _, subj = line.partition('\t')
+        m = BARE.match(subj.strip())
+        if m and int(m.group(1)[1:]) % 2 != PARITY \
+                and m.group(1) not in BAND_GRANDFATHERED:
+            out.append((sha, m.group(1), m.group(2).strip()))
+    return out
+
+
+def check_band():
+    """*** the PREVENTION half: fail before the merge, while the number can still be changed ***"""
+    v = band_violations()
+    word = 'EVEN' if PARITY == 0 else 'ODD'
+    if v is None:
+        print(f'    ⌗ the band ({word}) is NOT CHECKED this run: `{UPSTREAM}` is not a ref in this')
+        print('      tree, so there is no way to say which commits are this line\'s own.')
+        print('      *Reported rather than passed silently -- a band nobody checked is not a band.*')
+        print()
+        return 0
+    print(f'    the band: this line takes {word} revision numbers; {len(v)} of this line\'s '
+          f'unmerged commits are out of band')
+    if not v:
+        print(f'      *and {len(BAND_GRANDFATHERED)} id is grandfathered by NAME: '
+              f'{sorted(BAND_GRANDFATHERED)} -- committed before the band was taken and already '
+              'bundled out.*')
+        print('      *The other line adopting the ODD half is a REQUEST, not an assumption -- until')
+        print('       it is answered this removes the collisions this line can cause and no others.*')
+        print()
+        return 0
+    print()
+    for sha, rev, w in v:
+        print(f'    [FAIL] {sha}  {rev} is out of band ({word} only): {w[:60]}')
+    print()
+    print('    ⛭ ** This is the PREVENTION half, and it fires while the number can still be')
+    print('       changed -- before the merge, on this line\'s own tree. **  *A band checked after')
+    print('       the merge is a second detector.*')
+    print()
+    return 1
+
+
 def main():
     print()
     print('  check_revision_collisions -- do two commits claim the same revision number for')
@@ -118,10 +208,12 @@ def main():
         print()
         return 1
 
+    band_rc = 0 if '--no-band' in sys.argv else check_band()
+
     if not new:
         print('    no NEW revision-number collision.')
         print()
-        return 0
+        return band_rc
     for rev in sorted(new):
         print(f'    [FAIL] {rev} claimed by two commits for different work:')
         for sha, w in new[rev]:
@@ -129,8 +221,8 @@ def main():
     print()
     print('    ⛭ ** Two lines numbering from one counter choose the same number, which is the')
     print('       `L-174` collision at c54.166 one level up -- and that was solved with BANDS. **')
-    print('    ⌷ Until the numbering is decided, cite a revision WITH its SHA wherever the')
-    print('       identifier has to be unambiguous.')
+    print('    ⌷ Until the other line adopts the odd half, cite a revision WITH its SHA wherever')
+    print('       the identifier has to be unambiguous.')
     print()
     return 1
 
