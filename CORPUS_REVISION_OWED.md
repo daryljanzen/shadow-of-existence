@@ -8,7 +8,7 @@ current: r3002
 
 > **⌗ ITS FOUR SITES ARE RE-VERIFIED AND STILL OWED (r3095).** *Each is `OWED` 599--602, with what the
 > re-check found: ① P7 `frontier:scalar` still carries as remaining two things that have run; ② P10 still
-> calls a computed spectrum "the open frontier" when what is open is the ordering (`PO-15`); ③ P15's
+> calls a computed spectrum "the open frontier" when what was open was the ordering (`PO-15`, **struck r3100 — external by exhaustion**, leaving the ultraviolet definition); ③ P15's
 > maturity marks; ④ P7 `frontier:sm` does not carry the matter sector's delivered results — **the eleven-
 > of-eleven closure and the bounded content mismatch sit in `frontier:quantum` instead, and triality is
 > absent from P7 entirely.***

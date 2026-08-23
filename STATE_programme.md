@@ -9,7 +9,8 @@ current: r2676+c54.211
 > live, three closed" against P7's frontier list. **P7 now carries THREE items** (`frontier:scalar`,
 > `frontier:sm`, `frontier:quantum`), the inherited datum having been struck with `PO-16` and relocated
 > to `sec:inherited-datum`. **And the live register holds SEVEN rows**, which is a different set again:
-> `PO-13`, `PO-14`, `PO-15`, `PO-17`, `PO-18`, `PO-19`, `PO-20`. Its own `PO-4`--`PO-12` ids are all
+> `PO-13`, `PO-14`, `PO-15`, `PO-17`, `PO-18`, `PO-19`, `PO-20` — of which only `PO-13` and the successor
+> `PO-21` remain open (`PO-14` built r3099, `PO-15` answered r3100). Its own `PO-4`--`PO-12` ids are all
 > struck.*
 >
 > ***The position is `THE_FRONTIER.md`, from `THE_REGISTER.md`.*** *What this document holds that the

@@ -18,7 +18,7 @@ sources: [chat]
 | **SOURCE** | 1 |
 | **VIEW** | 3 |
 | **STATE** | 14 |
-| **METHOD** | 34 |
+| **METHOD** | 35 |
 | **REFERENCE** | 25 |
 | **FORWARD** | 5 |
 | **RECORD** | 94 |
@@ -60,6 +60,7 @@ sources: [chat]
 | `THE_READING_NOTES.md` | STATE | what P7's linear read establishes that the acoustic model must answer to | — | — | never |
 | `THE_STAGED_REVISIONS.md` | STATE | (declared in frontmatter) | — | c54.205 | 27 |
 | `BIBKEY_ALIAS_MAP.md` | METHOD | rules / guards / canon | — | — |  |
+| `CLAUDE.md` | METHOD | rules / guards / canon | — | — |  |
 | `COMPANION_SPEC.md` | METHOD | what the companion may assert, what it must refuse, and how the difference is checked | — | c54.206 |  |
 | `DISPATCHING_COWORK.md` | METHOD | rules / guards / canon | — | — |  |
 | `FOUNDATIONAL_DEPENDENCY_MAP.md` | METHOD | rules / guards / canon | — | — |  |

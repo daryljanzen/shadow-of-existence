@@ -10,7 +10,7 @@ sources: [cowork]
 > the evidence suggests, with the rigour run alongside as the eraser rather than the driver. Read as
 > exploration, and do not quote it as a result.*
 >
-> *Its `PO-6` is struck; the live quantum row is **`PO-15`, the ordering**. **What is open is
+> *Its `PO-6` is struck, and so is `PO-15` (the ordering) — **struck r3100: settled as EXTERNAL by exhaustion (`L-833`)**, the cc problem localized rather than a residual freedom. **The sector now carries no open register row**; what remains of P7's quantum item is the ultraviolet definition of the mode sums. **What is open is
 > `THE_FRONTIER.md`.***
 
 

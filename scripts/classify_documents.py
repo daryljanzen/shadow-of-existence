@@ -42,6 +42,9 @@ METHOD = {
     'SOURCE_VETTING.md', 'DISPATCHING_COWORK.md', 'VISION_FIELD_GUIDE.md',
     'GEOMETRY_PHYSICS_TAXONOMY.md', 'FOUNDATIONAL_DEPENDENCY_MAP.md',
     'TURN_PROTOCOL.md',
+    # ** CLAUDE.md (r3099): the interaction canon Claude Code auto-loads -- how to work with Daryl,
+    # timeless by construction (currently: never use the multiple-choice question UI; ask in prose). **
+    'CLAUDE.md',
 }
 
 # ④ RECORD -- frozen by kind.  Matched by prefix/suffix as well as by name.
