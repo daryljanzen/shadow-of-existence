@@ -74,8 +74,16 @@ def main():
                 encoding='utf-8', errors='replace').read()
 
     # ⓵ the two objects differ
-    check('⓵ half ① is a REFIT: P7 says "a parameter refit rather than a further calculation"',
-          'a parameter refit rather than a further calculation' in p7)
+    # ** RE-PINNED r3108, and this receipt's finding is DISCHARGED by the work it called for.  It held
+    #    that half ① was real, unrun, and NOT the test already banked -- L-147 holds parameters fixed
+    #    while half ① is a refit.  The refit has since been performed: P15 fits BOTH arms to the
+    #    Planck 2018 plik_lite binned TT likelihood over its 215 bins with the SAME five parameters
+    #    (H0, omega_b, omega_c, A_s, n_s) free in each, which is precisely the refit this receipt
+    #    distinguished from L-147.  Result: chi^2 = 397.13 against 206.44, Delta = 190.7.  The
+    #    identity check below is kept -- it is what made the distinction visible in the first place. **
+    check('⓵ half ① was a REFIT and it HAS BEEN RUN: P15 fits both arms with the same five parameters '
+          'free in each, which is the refit this receipt distinguished from L-147',
+          'free in each' in p15 and '397.13' in p15 and '206.44' in p15)
     check('while L-147 holds parameters FIXED, using CAMB only as a reference: "THE PIPELINE IS WIRED '
           'IFF the CAMB flat-LambdaCDM best fit reproduces chi^2 = 206.4 over 215 TT bins"',
           'the CAMB flat-LambdaCDM best fit reproduces' in l147)
@@ -92,9 +100,14 @@ def main():
           'with no free parameter' in p15)
 
     # ⓷ the consequence
-    check('⓷ so the comparison is between an arm with essentially ONE adjustable number and one whose '
-          'analyses carry six -- and no receipt in the corpus sets the matching rule',
-          'parameter refit' in p7 and 'matched' not in p7.lower())
+    # ** RE-PINNED r3108: ⓷ asked for the comparison's RULE, and the rule is now set and stated.
+    #    P15 fits both arms with the SAME five parameters free in each and reports "equal
+    #    fitted-parameter count", which is exactly the matching rule this receipt said was owed
+    #    before any number.  The receipt asked the right question in the right order and it has
+    #    been answered; the pin records the answer rather than the absence. **
+    check('⛭⛭ ⓷ and the comparison\'s RULE -- owed FIRST, before its number -- is now set and stated: '
+          'the same five parameters free in each arm, at equal fitted-parameter count',
+          'free in each' in p15 and 'equal fitted-parameter count' in (p7 + p15))
 
     print()
     if FAILED:
