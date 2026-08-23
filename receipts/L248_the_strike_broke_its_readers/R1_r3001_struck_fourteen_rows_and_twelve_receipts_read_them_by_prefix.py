@@ -136,8 +136,36 @@ print('        27  already failed there      -- genuinely inherited, predating b
 print('        29  passed there, fail now    -- went red in the r2825a -> r3098 span')
 print('              12  the strike-lookup crash (this receipt)')
 print('              17  pins into prose/register state that later work moved')
-check('⓷ᵇ 27 + 29 accounts for all 56 with nothing unclassified', 27 + 29 == 56)
-check('⓷ᶜ and 12 + 17 accounts for all 29', 12 + 17 == 29)
+# ⛔⛭⛭ AMENDED r3126 (`L-254`).  ** THESE TWO CHECKS WERE `27 + 29 == 56` AND `12 + 17 == 29`. **
+# *Arithmetic dressed as claims -- the exact class `scripts/lint_assertions.py` was built for, and it
+# named them.  They were invisible while `check_receipts` exited at an earlier failure, and surfaced
+# the moment that one was cleared.*
+#   ⇒ ** AND THE DEEPER FAULT IS THAT THE MEASUREMENT WAS KEPT AS FOUR NUMBERS. **  *r3100 ran each
+#     failing receipt at `r2825a` in a clean archive and recorded only the counts, so the partition
+#     cannot be re-derived and no assertion over it can be anything but arithmetic.*
+#   ⇒ *** So the check that CAN fail is a cross-artefact one: the numbers this receipt prints must
+#       agree with the numbers its own registration rows print.  That is what would have caught
+#       `M1`'s "545 rows / 524 parsed" -- an after-total printed beside a before-count. ***
+SPLIT = {'total': 56, 'inherited': 27, 'regressed': 29, 'this_cause': 12, 'pins': 17}
+_rows = []
+for _f in ('THE_LIVE_ARC.md', os.path.join('receipts', 'INDEX.md')):
+    for _l in open(os.path.join(ROOT, _f), encoding='utf-8', errors='replace'):
+        if 'L-248' in _l and 'L248_the_strike' in _l or (_l.startswith('| ~~L-248~~')
+                                                         or _l.startswith('| L-248')):
+            _rows.append((_f, _l))
+_nums = {f: set(re.findall(r'\b\d{1,3}\b', l)) for f, l in _rows}
+print(f'    registration rows carrying this finding: {len(_rows)}')
+check(f'⓷ᵇ the four numbers agree with BOTH registration rows -- {SPLIT} against rows in '
+      f'{[f for f, _ in _rows]}',
+      len(_rows) == 2
+      and all({str(v) for v in SPLIT.values()} <= ns for ns in _nums.values()))
+check('⓷ᶜ and the partition is stated as a partition, so a future edit that changes one number '
+      'without the others fails the row check above rather than passing a sum',
+      SPLIT['inherited'] + SPLIT['regressed'] == SPLIT['total']
+      and SPLIT['this_cause'] + SPLIT['pins'] == SPLIT['regressed'])
+print('    ⚠ ** WHAT THIS CANNOT CHECK, stated rather than implied: ** the per-receipt lists behind')
+print('       these four numbers were not kept at r3100, so the partition is a RECORD and not a')
+print('       reproducible measurement.  *A measurement kept as four numbers cannot be re-run.*')
 print('  ⇒ ⛔ *** "The rest are inherited" is true of 27 and false of 29.  The difference is not')
 print('      bookkeeping: an inherited failure is archaeology, a regression is a live edit whose')
 print('      cost has not been paid, and the second kind is cheaper to fix and more urgent. ***')

@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
-# RERUNNABLE: NO — POINT-IN-TIME
-# *** This receipt verified a REPAIR at its own revision.  Its checks compare the tree
-# against a state that later legitimate edits change, so it CANNOT be re-run green and
-# a red result here is not a defect.  Added r2902; the corpus had no convention for
-# this and three receipts were permanently red with nothing saying why. ***
+# ⛔⛭⛭ THE `RERUNNABLE: NO — POINT-IN-TIME` MARK WAS REMOVED HERE AT r3126 (`L-255`), AND IT
+# ** WAS NOT REMOVED BECAUSE THE CONVENTION IS WRONG BUT BECAUSE THE DIAGNOSIS UNDER IT WAS. **
+# r2902 read: *"This receipt verified a REPAIR at its own revision.  Its checks compare the tree
+# against a state that later legitimate edits change, so it CANNOT be re-run green and a red
+# result here is not a defect."*  ⇒ *** The second half is false.  These checks compared a
+# SHA-pinned pre-state against a WORKING-TREE post-state; a repair's post-state is a fact about
+# the commit that made it, and pinning both ends verifies the same repair forever.  r3125 pinned
+# them and all three now exit 0. ***
+#   ⇒ ** AN EXEMPTION IS A CLAIM -- "no repair exists for this failure" -- and r2802 already named
+#     the class: *"'not mechanically fixable' is a claim, and it is the one kind a node is never
+#     asked to defend."*  It was wrong for every instance it was written for. **
+#   ⌗ `corpus/check_rerunnable_honest.py` now RUNS every marked receipt: exit 0 fails the gate.
 """M1 -- the `f220/line/54` merge duplicated FOUR protected rows and TWO index rows, no register gate
 saw any of it, and for two of the four rows NEITHER copy was a superset -- the observer line's work
 and the fork's sat in different copies of the same row.
@@ -32,10 +39,15 @@ The repair was undone by a merge that kept both sides, and the side it kept was 
 same failure at ROW level, and the duplicate-ID gate that fired for `L-171` does not look at `PO-` rows.*
 
 ** ⛔⛭⛭ ⓹ AND A SECOND, LARGER BLIND SPOT IN `receipts/INDEX.md`, FOUND BY THE SAME SWEEP. **  The
-INDEX has 545 table rows.  `check_receipts` parses a row only if it starts `| P` or ``| ` `` --
+INDEX has 546 table rows.  `check_receipts` parses a row only if it starts `| P` or ``| ` `` --
 
-      *** 524 parsed, 21 SKIPPED SILENTLY, 18 of them carrying a real receipt path. ***
-      *(23 and 20 before this revision collapsed the two duplicate rows below.)*
+      *** 525 parsed, 21 SKIPPED SILENTLY, 18 of them carrying a real receipt path. ***
+      *(547 / 524 / 23 / 20 at `ed7b4d0`, before this revision collapsed the two duplicate rows.)*
+  ⚠ ** CORRECTED r3125 (`L-253`) BY PINNING THE MEASUREMENT THIS LINE REPORTS. **  *It read "545
+    rows, 524 parsed".  524 is the PRE-repair parsed count: the row total was decremented for the
+    collapsed rows and the parsed count beside it was carried over unchanged, so the pair printed
+    here was never a state the file was in.*  ⇒ ** The load-bearing pair -- 21 skipped, 18 carrying
+    a path -- was right, and both states are now MEASURED at their SHAs instead of transcribed. **
 
 The skipped rows are the corpus's own convention for a receipt belonging to no paper: an em-dash in
 the paper column.  ⇒ *** For those 20 receipts the stem-uniqueness check, the column lint and the
@@ -89,6 +101,13 @@ ROW = re.compile(r'\|\s*~*\*\*(PO-[\w-]+)\*\*~*\s*\|')
 DUP = 'ed7b4d0'      # r2776a -- the state carrying the duplication
 ONE = 'e3bb3ca'      # c54.220 -- one row per id
 MERGE = 'c53be44'    # the f220/line/54 merge that introduced it
+# ⛭⛭ ADDED r3125 (`L-253`).  ** THE "AFTER" WAS NOT PINNED, AND THE "AFTER" IS THE REPAIR. **
+#   *This receipt verifies a repair, and it read the repaired state from the WORKING TREE -- so
+#   every later legitimate edit to a protected row moved the thing it was verifying.*
+#   ⇒ *** The rule ⓹ already carries, applied to the two checks ⓹ did not touch: a finding is a
+#       claim about a COMMIT.  The repair landed HERE, so the repair is read HERE, and the
+#       PRESENT is asserted separately and MONOTONELY. ***
+REPAIRED = 'e33c34c73d7037a04b85bd46fd5261c6c5d3f0b7'   # c54.221 -- this receipt's own revision
 
 
 def check(label, cond):
@@ -121,7 +140,8 @@ def main():
 
     dup = po_rows(git('show', DUP + ':PROTECTED_OPEN.md'))
     one = po_rows(git('show', ONE + ':PROTECTED_OPEN.md'))
-    now = po_rows(open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8').read())
+    now = po_rows(git('show', REPAIRED + ':PROTECTED_OPEN.md'))      # the repaired state, PINNED
+    liv = po_rows(open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8').read())
 
     # ---------------------------------------------------------------- (1) the duplication
     doubled = sorted(k for k, v in dup.items() if len(v) > 1)
@@ -205,8 +225,17 @@ def main():
 
     # ---------------------------------------------------------------- (5) the INDEX blind spot
     print()
-    rows = [l.rstrip('\n') for l in open(os.path.join(ROOT, 'receipts', 'INDEX.md'),
-                                         encoding='utf-8') if l.startswith('|')]
+    _BLIND = 'e33c34c'          # the tree this receipt was written against, before `L-556`
+    # ⛭⛭ r3125 (`L-253`): ** THE THIRD SITE OF THE SAME DEFECT, IN THE FILE THAT DIAGNOSED IT. **
+    #   *This block measured the blind spot in the LIVE `receipts/INDEX.md` while dating the finding to
+    #   `_BLIND`.  The index has grown from 547 rows to 613 since, so the numbers the receipt PRINTS
+    #   were never the numbers it FOUND -- and the verdict below still narrated the original pair.*
+    #   ⇒ *** A pinned claim measured against a live file is not half-pinned; it is unpinned with a
+    #       SHA written next to it. ***  The finding is read at `_BLIND`; the live index is reported
+    #       beside it, unasserted, because what the deleted filter WOULD skip today is not a defect.
+    rows = [l for l in git('show', f'{_BLIND}:receipts/INDEX.md').split('\n') if l.startswith('|')]
+    _live_rows = [l.rstrip('\n') for l in open(os.path.join(ROOT, 'receipts', 'INDEX.md'),
+                                               encoding='utf-8') if l.startswith('|')]
     parsed = [l for l in rows if (l[:3].upper().startswith('| P') or l.startswith('| `'))]
     skipped = [l for l in rows if l not in parsed]
     withpath = [l for l in skipped
@@ -217,15 +246,43 @@ def main():
     # ** the sixth instance of "my own edit breaks my own receipt" (items 28/30/32/40's class).
     #   ⇒ *** The finding is about the tree AS IT WAS, so it is pinned to a SHA (c54.220's rule), and the
     #       repair is asserted SEPARATELY.  A receipt about a defect must survive the defect's repair. ***
-    _BLIND = 'e33c34c'          # the tree this receipt was written against, before `L-556`
     src = re.sub(r'\s+', ' ', subprocess.run(
         ['git', 'show', f'{_BLIND}:corpus/check_receipts.py'], cwd=ROOT,
         capture_output=True, text=True, errors='replace').stdout)
     live = open(os.path.join(ROOT, 'corpus', 'check_receipts.py'), encoding='utf-8').read()
-    check(f'⛔⛭ ⓹ AND A LARGER BLIND SPOT IN receipts/INDEX.md: of {len(rows)} table rows, '
-          f'check_receipts parses {len(parsed)} and SKIPS {len(skipped)} -- {len(withpath)} of the '
-          'skipped ones carrying a real receipt path',
-          len(skipped) >= 20 and len(withpath) >= 18)
+    # ** AND BOTH STATES ARE NOW MEASURED, not one measured and one narrated. **  *The docstring gave
+    #   the post-repair pair and the verdict gave the pre-repair pair, and neither said which was which.*
+    _dup = [l for l in git('show', f'{DUP}:receipts/INDEX.md').split('\n') if l.startswith('|')]
+    _dupsk = [l for l in _dup if not (l[:3].upper().startswith('| P') or l.startswith('| `'))]
+    _dupwp = [l for l in _dupsk
+              if len(SPL.split(l)) > 4 and SPL.split(l)[4].strip().strip('` ').endswith('.py')]
+    check(f'⛔⛭ ⓹ AND A LARGER BLIND SPOT IN receipts/INDEX.md, MEASURED AT BOTH PINS: at {DUP} '
+          f'{len(_dup)} table rows, {len(_dupsk)} SKIPPED SILENTLY, {len(_dupwp)} carrying a real '
+          f'receipt path; at {_BLIND}, after this revision collapsed the two duplicate rows, '
+          f'{len(rows)}/{len(skipped)}/{len(withpath)}.  *The live index now has {len(_live_rows)} '
+          f'rows; reported, not asserted -- the filter is gone.*',
+          (len(_dup), len(_dupsk), len(_dupwp)) == (547, 23, 20)
+          and (len(rows), len(skipped), len(withpath)) == (546, 21, 18))
+    # ⚠ ** AND ONE OF THIS RECEIPT'S OWN PRINTED NUMBERS WAS WRONG BY ONE, found by pinning it. **
+    #   *The head said "545 table rows ... 524 parsed" for the post-repair state; the post-repair state
+    #   is 546 and 525.  524 is the PRE-repair parsed count -- the row total was decremented for the two
+    #   collapsed rows and the parsed count was carried over unchanged.*  ⇒ ** Corrected in the head.
+    #   The load-bearing pair (21 skipped, 18 with a path) was right, and is now asserted. **
+    # ** ⓹ᵇ AND THE ONE-ROW DIFFERENCE IS ACCOUNTED FOR, not asserted away. **  *Two byte-identical
+    #   rows collapse (-2) and this revision registers itself (+1), which is why the total falls by
+    #   ONE while the skipped count falls by TWO.  Both duplicated rows are `| — |` rows -- the very
+    #   class the filter could not see, which is why nothing caught them.*
+    _dupdup = [l for l, n in collections.Counter(_dup).items() if n > 1]
+    check(f'   ⓹ᵇ and the arithmetic closes: exactly {len(_dupdup)} rows were byte-identical '
+          f'duplicates at {DUP} (G50 `L-541` and G51 `L-545`, both `| — |` rows) and none is at '
+          f'{_BLIND}; rows {len(_dup)} -> {len(rows)} is -2 for the collapse and +1 for this '
+          "revision's own registration, and skipped falls by exactly the 2 that collapsed",
+          len(_dupdup) == 2
+          and all('L-541' in l or 'L-545' in l for l in _dupdup)
+          and all(l.startswith('| —') for l in _dupdup)
+          and not [l for l, n in collections.Counter(rows).items() if n > 1]
+          and len(_dup) - len(rows) == 1 and len(_dupsk) - len(skipped) == 2
+          and sum(1 for l in rows if 'L-555' in l) == 1)
     check(f"   because the row filter WAS `ln[:3].upper().startswith('| P') or ln.startswith('| `')` "
           f'at {_BLIND}, and the corpus writes an em-dash in the paper column for a receipt belonging '
           f'to no paper',
@@ -260,7 +317,8 @@ def main():
                 d.setdefault(m.group(1), []).append(m.group(2))
         return d
     o_before, o_now = objs_unstruck(git('show', ONE + ':PROTECTED_OPEN.md')), \
-        objs_unstruck(open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8').read())
+        objs_unstruck(git('show', REPAIRED + ':PROTECTED_OPEN.md'))
+    o_live = objs_unstruck(open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8').read())
     STOP = set('the a an of and or in on at to for is are was were be by with its it this that from '
                'what which as not but its their our one two three full open live sector'.split())
 
@@ -272,6 +330,21 @@ def main():
     check('⛔ ⓺ A HYPOTHESIS FORMED AND KILLED: check_family_pointers was RED at c54.220 and GREEN '
           'after the merge -- exactly c54.217\'s shape, where a corruption made a gate pass',
           'PO-10' not in o_before and 'PO-10' in o_now)
+    # ⛭⛭ r3125 (`L-253`): ** AND THIS CHECK WAS THE ONE THAT BROKE, FOR THE REASON ⓹ ALREADY NAMED. **
+    #   *`o_now` was the WORKING TREE.  `PO-10` was reopened at r2730, verified here, and later STRUCK --
+    #   so the matcher (which reads only the unstruck spelling `| **PO-n** |`) stopped seeing it and the
+    #   check went red.*  ⇒ *** The check punished the settlement it had asked for: a check that pins a
+    #   LIVE register punishes the finding it defends.  The reopening is a fact about a COMMIT; the
+    #   present is a separate, MONOTONE claim -- the row still exists, and its object still matches. ***
+    _p10_live = liv.get('PO-10', [''])[0]
+    check('   ⓺ᵇ AND THE PRESENT, ASSERTED SEPARATELY AND MONOTONELY: PO-10 still has exactly one row '
+          f'live and it is now STRUCK ({"struck" if _p10_live.lstrip("| ").startswith("~~") else "OPEN"}) '
+          '-- the reopening this check verified was carried to a verdict, which is the outcome it '
+          'called for and NOT a break in it',
+          len(liv.get('PO-10', [])) == 1 and 'PO-10' not in o_live)
+    check('   ⓺ᶜ and the OBJECT survives the strike: family 5\'s overlap with PO-10\'s object cell is '
+          'unchanged in the live file, so what ⓺ established about the gate flip is still readable',
+          {'scalar', 'perturbation'} <= gw(fam5) & gw(SPL.split(_p10_live)[2] if _p10_live else ''))
     check(f'   BUT IT IS NOT THAT: the observer line REOPENED PO-10 at r2730, and family 5\'s overlap '
           f'with its object is {sorted(gw(fam5) & gw(o_now["PO-10"][0]))} -- a genuine match, and the '
           'fix this fork asked for as FOR_56 item 27',
@@ -279,8 +352,12 @@ def main():
 
     # ---------------------------------------------------------------- (7) lossless repair
     print()
+    # ⛭ r3125 (`L-253`): pinned for the same reason as ⓺.  ** THE REPAIR IS LOSSLESS AGAINST THE
+    #   STATE IT PRODUCED, and against nothing else. **  *Losslessness cannot be a live claim: a later
+    #   revision is ENTITLED to delete a word, and asserting otherwise would make every subsequent
+    #   editor answerable to this receipt.*
     wb, wn = words(git('show', DUP + ':PROTECTED_OPEN.md')), \
-        words(open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8').read())
+        words(git('show', REPAIRED + ':PROTECTED_OPEN.md'))
     lost = [w for w in wb if w not in wn]
     check(f'⓻ THE REPAIR LOSES NO DISTINCT WORD file-wide: {lost}', lost == [])
     per = {}
@@ -294,6 +371,14 @@ def main():
     check(f'   with one row per id remaining: '
           f'{ {k: len(v) for k, v in now.items() if len(v) != 1} or "all single"}',
           all(len(v) == 1 for v in now.values()))
+    # ** ⓻ᵇ THE LIVE CLAIM, AND IT IS THE ONLY ONE THAT CAN BE MADE LIVE. **  *Not "no word was lost"
+    #   -- that is the repair's property, above.  What must hold forever is the DEFECT'S ABSENCE:
+    #   no protected id has come back doubled, and none of the fourteen has gone missing.*
+    _multi = {k: len(v) for k, v in liv.items() if len(v) != 1}
+    check(f'⓻ᵇ AND THE DEFECT HAS NOT RECURRED, live: {len(liv)} protected ids, '
+          f'{_multi or "one row each"}, and none of the {len(now)} present at the repair has been lost'
+          f'{" -- missing: " + str(sorted(set(now) - set(liv))) if set(now) - set(liv) else ""}',
+          not _multi and not (set(now) - set(liv)))
 
     print()
     if FAILED:
@@ -306,10 +391,12 @@ def main():
     print('     row*, so whichever a reader consulted showed half the record.')
     print('  ⛔ ⓶ ** And the merge resurrected c54.217\'s corruption: ** PO-4\'s object column has the')
     print('     status prose back in it, four revisions after it was repaired.')
-    print('  ⛔⛭ ⓷ ** And a larger blind spot in receipts/INDEX.md: ** 23 of 547 rows are skipped')
-    print('     silently, 20 of them carrying real receipt paths, because the parser gates on')
-    print('     "| P" and the corpus writes an em-dash for a receipt with no paper.  *** The gate\'s')
-    print('     own comment names this class twice; this is the third. ***')
+    print(f'  ⛔⛭ ⓷ ** And a larger blind spot in receipts/INDEX.md: ** {len(_dupsk)} of '
+          f'{len(_dup)} rows were skipped silently at {DUP}')
+    print(f'     ({len(skipped)} of {len(rows)} after this revision), {len(_dupwp)} of them carrying '
+          'real receipt paths, because the')
+    print('     parser gates on "| P" and the corpus writes an em-dash for a receipt with no paper.')
+    print('     *** The gate\'s own comment names this class twice; this is the third. ***')
     print('  ⛔ ⓸ ** And one hypothesis killed: ** the gate that flipped green did so because the')
     print('     observer line reopened PO-10 — the legitimate fix — and NOT because of the')
     print('     duplication.  Checked before claiming.')

@@ -130,12 +130,33 @@ def main():
           'this receipt found is gone',
           'it opened at seven and stands at four' not in p7f
           and 'moved below the list' not in p7f)
-    check('and the list states what each item HAS LEFT rather than what was removed from it',
-          'stated remainders rather than whole sectors' in p7f
-          and 'leaves a computation' in p7f)
+    # ⛭⛭ RE-PINNED r3132 (`L-258`), AND THE OLD PIN WAS INTO PROSE THAT WAS REWRITTEN AT r3119.
+    #   *The old form required the words "stated remainders rather than whole sectors" and "leaves a
+    #   computation".  r3119 rewrote the list on a sharper distinction than the one this check was
+    #   pinned to, and the sentences went.*
+    #   ⇒ ** The CLAIM is that the list states what each item stands at rather than what was removed
+    #     from it, and r3119 states it in stronger terms -- WORK versus BOUNDARY, with a boundary
+    #     named a result rather than a gap.  Re-pinned to the distinction rather than to the words
+    #     that carried it, and the phrases are quoted so the pin is legible. **
+    check('and the list states what each item STANDS AT rather than what was removed from it -- '
+          'r3119 sharpens this into two kinds: "Work is something unworked that a definite '
+          'computation would close" against "A boundary is a result rather than a gap"',
+          'is something unworked that a definite computation would close' in p7f
+          and 'boundary} is a result rather than a gap' in p7f
+          and 'has not failed to empty; it has finished' in p7f)
 
     # ⛭ but the frontier section is the last section
-    i = p7.find('\\section{Frontiers and open problems}')
+    # ⛔⛭⛭ RE-ANCHORED r3132 (`L-258`).  ** THIS FOUND THE SECTION BY ITS TITLE STRING, AND r3119
+    # ** RENAMED IT. **  *`find` returned -1, so `p7[i:]` was the LAST CHARACTER of the paper: the
+    # section measured 1 char and 0% of the body, and four checks below it failed on that.*
+    #   ⇒ *** A SECTION TITLE IS PROSE AND A LABEL IS AN IDENTIFIER.  The corpus cites this section
+    #       as `\\ref{sec:frontiers}` everywhere, so the label is what it is FOR. ***
+    #   ⇒ ** And the anchor is asserted rather than assumed: a `find` that returns -1 must fail
+    #     LOUDLY, not silently measure one character. **
+    m_sec = re.search(r'\\section\{[^}]*\}\s*\\label\{sec:frontiers\}', p7)
+    check('⛭ᵃ the frontier section is located by its LABEL `sec:frontiers`, which is what the corpus '
+          f'cites it by -- found at {m_sec.start() if m_sec else "NOT FOUND"}', m_sec is not None)
+    i = m_sec.start()
     after = re.findall(r'\\section\{([^}]+)\}', p7[i + 10:])
     check(f'⛭ but Frontiers IS P7\'s last section -- sections after it: {after or "none"}',
           not after)
@@ -150,7 +171,11 @@ def main():
           len(seg) > 20000)
     R2579 = 'e8e58cf'
     _p7_then = _at(R2579, 'corpus/CR_framework.tex')
+    # ⌗ the PINNED read keeps the title of the day, because that is what the file said then -- and
+    #   it is asserted rather than allowed to fall through to -1, which is the defect above.
     _i = _p7_then.find('\\section{Frontiers and open problems}')
+    check(f'⛭ᵇ and the pinned read at {R2579} still finds the section under the title it carried '
+          f'THEN ({_i}) -- a pinned anchor and a live anchor are different objects', _i >= 0)
     _seg = _p7_then[_i:]
     _below = len(_seg) - _seg.find('\\end{enumerate}')
     check(f'and {_below:,} chars -- {100*_below/len(_seg):.0f}% of it -- sat BELOW the list at {R2579}, '
@@ -160,8 +185,8 @@ def main():
           f'now, so about {(_below-below)//1000} thousand characters of settled physics have moved out '
           f'from under a heading that says the work is not done',
           below < _below / 2)
-    check(f'⚠ and the residue is NOT zero: {below:,} characters are still filed under "Frontiers and '
-          f'open problems" -- the lead is shrunk, not discharged',
+    check(f'⚠ and the residue is NOT zero: {below:,} characters are still filed below the list in '
+          f'`sec:frontiers` -- the lead is shrunk, not discharged',
           below > 1000)
     n_cr = len(re.findall('causal reassignment', p7f, re.I))
     check(f'⌗ and "causal reassignment" appears {n_cr} times in P7, so the CONTENT is present elsewhere '
@@ -193,8 +218,10 @@ def main():
     print('  VERDICT: ** resolved content is being left inside the frontier sections, and the size is')
     print('  not marginal. **')
     print(f'  ⓵⓶ ** P7: {len(seg):,} chars of frontier section, {100*below/len(seg):.0f}% of it BELOW the list ** --')
-    print('     roughly eleven thousand characters of settled physics filed under "Frontiers and open')
-    print('     problems", which is P7\'s LAST section.')
+    print(f'     {below:,} characters of it still filed below the list, under a heading that says')
+    print(f'     the work is not done -- down from {_below:,} at {R2579}, which is the finding')
+    print('     acted on rather than the finding failing.  *P7 renamed that section at r3119 to')
+    print('     "Frontiers, boundaries, and what would re-open them"; it is still its LAST section.*')
     print(f'  ⌗ ** And "causal reassignment" appears {n_cr} times in P7 ** -- the content IS present')
     print('    elsewhere.  ** The defect is PLACEMENT: the same result is both worked into the paper and')
     print('    recorded as a resolved frontier, and a reader meeting it first in the frontier section')

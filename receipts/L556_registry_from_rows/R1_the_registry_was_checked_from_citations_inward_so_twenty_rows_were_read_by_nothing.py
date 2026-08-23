@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
-# RERUNNABLE: NO — POINT-IN-TIME
-# *** This receipt verified a REPAIR at its own revision.  Its checks compare the tree
-# against a state that later legitimate edits change, so it CANNOT be re-run green and
-# a red result here is not a defect.  Added r2902; the corpus had no convention for
-# this and three receipts were permanently red with nothing saying why. ***
+# ⛔⛭⛭ THE `RERUNNABLE: NO — POINT-IN-TIME` MARK WAS REMOVED HERE AT r3126 (`L-255`), AND IT
+# ** WAS NOT REMOVED BECAUSE THE CONVENTION IS WRONG BUT BECAUSE THE DIAGNOSIS UNDER IT WAS. **
+# r2902 read: *"This receipt verified a REPAIR at its own revision.  Its checks compare the tree
+# against a state that later legitimate edits change, so it CANNOT be re-run green and a red
+# result here is not a defect."*  ⇒ *** The second half is false.  These checks compared a
+# SHA-pinned pre-state against a WORKING-TREE post-state; a repair's post-state is a fact about
+# the commit that made it, and pinning both ends verifies the same repair forever.  r3125 pinned
+# them and all three now exit 0. ***
+#   ⇒ ** AN EXEMPTION IS A CLAIM -- "no repair exists for this failure" -- and r2802 already named
+#     the class: *"'not mechanically fixable' is a claim, and it is the one kind a node is never
+#     asked to defend."*  It was wrong for every instance it was written for. **
+#   ⌗ `corpus/check_rerunnable_honest.py` now RUNS every marked receipt: exit 0 fails the gate.
 """R1 -- the receipt registry was validated from CITATIONS INWARD, so twenty rows were read by nothing,
 two of them registered files that have never existed, and the column lint sat downstream of the hole.
 
@@ -304,12 +311,22 @@ def main():
         target = os.path.join(tmp, 'corpus', 'appendix_receipts_P10.tex')
         keep = open(target, 'rb').read()
         open(target, 'wb').write(keep[:200])          # the seed: a truncated appendix
+        # ⛭ HARDENED r3125 (`L-253`): ** VERIFY THE SEED TOOK, do not trust the write. **  A seed
+        # that silently stops constructing its defect does not go quiet -- it ACCUSES the gate it
+        # was built to defend, and `L558`'s `D1` did exactly that: its seed was a literal
+        # `.replace('**PO-6**', ...)` written while the row was open, and once the row was struck
+        # it produced a mangled marker instead of a duplicate, reported as a gate failure.
+        #   ⇒ *Truncation cannot no-op on a file longer than the cut, so this seed was never at
+        #    risk -- but "was never at risk" is a fact about today's file, not a property of the
+        #    check, and asserting it costs one line.*
+        seed_took = open(target, 'rb').read() != keep
         seeded = run_gate()
         open(target, 'wb').write(keep)
         restored = run_gate()
         # ** verify the RESTORE, do not trust the write ** -- c54.213's rule, from a `finally` that ran
         # and still left the seed in place.
         same = open(target, 'rb').read() == keep
+        assert seed_took, 'the seed must actually change the file, or it is testing nothing'
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     check(f'⛭ check_appendix_current: clean tree exits {clean}, SEEDED tree exits {seeded}, restored '

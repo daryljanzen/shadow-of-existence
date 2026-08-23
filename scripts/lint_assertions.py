@@ -180,16 +180,22 @@ def lint(path):
 # fail. **  A failure-collection idiom ALONE is not a check: nothing acts on the list.  What makes it a
 # check is a collection idiom AND a non-zero exit path.  An explicit `sys.exit(1)` / `SystemExit(1)`
 # still counts on its own, since it IS the acting.
-_FAIL_COLLECT = re.compile(r'\bfail\w*\.append\(|allpass\s*&=|\bok\s*=\s*False\b', re.I)
-_NONZERO_EXIT = re.compile(r'raise\s+SystemExit\(|^\s*sys\.exit\(|^\s*return\s+1\b', re.M)
-_EXPLICIT_ONE = re.compile(r'^\s*sys\.exit\(1\)|raise\s+SystemExit\(1\)', re.M)
+# ** ⛭⛭ r3126 (`L-254`): THE RULE IS IMPORTED FROM `corpus/acting_check.py`, NOT COPIED. **
+# *It lived here and in `corpus/check_receipts.py`, and the drift guard below compared the two
+# copies' TEXT -- a guard that reports a divergence after both copies are written.*  ⇒ ** Now there
+# is one copy, and the guard checks that neither file has grown a private one. **  See that file's
+# head for the THIRD clause and why a non-constant exit code is not sufficient on its own.
+import importlib.util as _ilu
+_AC_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        'corpus', 'acting_check.py')
+_spec = _ilu.spec_from_file_location('_ac', _AC_PATH)
+_ac = _ilu.module_from_spec(_spec)
+_spec.loader.exec_module(_ac)
 
 
 def _carries_other_check(src):
-    """a check in a form other than `assert` -- see the note above for why it is two-part"""
-    if _EXPLICIT_ONE.search(src):
-        return True
-    return bool(_FAIL_COLLECT.search(src) and _NONZERO_EXIT.search(src))
+    """a check in a form other than `assert` -- the shared rule, imported"""
+    return _ac.carries_a_check(src)
 
 
 def _rule_has_not_drifted():
@@ -207,12 +213,20 @@ def _rule_has_not_drifted():
         txt = open(g, encoding='utf-8').read()
     except OSError:
         return ["corpus/check_receipts.py is unreadable -- the two-part rule cannot be compared"]
-    want = {'_COLLECT': r"\bfail\w*\.append\(|allpass\s*&=|\bok\s*=\s*False\b",
-            '_NZEXIT': r"raise\s+SystemExit\(|^\s*sys\.exit\(|^\s*return\s+1\b"}
+    # ⛭⛭ r3126 (`L-254`): ** THERE IS NOW ONE COPY, so what is checked is that there is one. **
+    #   *A text comparison could only report a divergence already written into both files.  This
+    #   asks instead: does either file define the rule PRIVATELY again?*
     out = []
-    for nm, pat in want.items():
-        if pat not in txt:
-            out.append(f"check_receipts.py's {nm} no longer matches this file's rule")
+    if 'acting_check.py' not in txt:
+        out.append("corpus/check_receipts.py no longer imports corpus/acting_check.py -- the rule "
+                   "has been copied back into it, and a rule in two places drifts")
+    here = open(os.path.abspath(__file__), encoding='utf-8').read()
+    PRIVATE = r"re\.compile\(r'\\bfail"
+    for nm, txt_ in (('corpus/check_receipts.py', txt), ('scripts/lint_assertions.py', here)):
+        if re.search(PRIVATE, txt_):
+            out.append(f"{nm} has grown a PRIVATE copy of the collection regex")
+    if not os.path.exists(_AC_PATH):
+        out.append("corpus/acting_check.py is absent -- the rule has no home")
     return out
 
 
@@ -272,7 +286,7 @@ def main(argv):
         print("  ** The two-part check rule lives in this file AND in corpus/check_receipts.py, and")
         print("  when they last disagreed a registered receipt that could not fail passed both. **")
         return 1
-    print("  the two-part check rule agrees with corpus/check_receipts.py's")
+    print("  the check rule has ONE home and neither file carries a private copy")
     print("  No hollow assertions.")
     return 0
 

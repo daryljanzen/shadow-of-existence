@@ -49,6 +49,7 @@ Written r2823.  Stated for reversal.
 """
 import os
 import re
+import subprocess
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -98,9 +99,31 @@ def main():
           f'gated on {sorted(gated("PO-11")) or "nothing"} -- ** so the chain PO-2 → PO-5 → PO-11 '
           'TERMINATES, with no circularity **',
           'PO-5' in gated('PO-2') and not gated('PO-11'))
-    check('⇒ ** and the register did not record the PO-5 → PO-11 link before this receipt ** -- both '
-          'rows read as gated on nothing',
-          not gated('PO-5') or 'PO-11' not in gated('PO-5'))
+    # ⛔⛭⛭ AMENDED r3132 (`L-258`).  ** THIS CHECK READ THE LIVE REGISTER FOR A CLAIM ABOUT THE PAST. **
+    #   *It says "the register did not record the PO-5 → PO-11 link BEFORE THIS RECEIPT" and tested it
+    #   against `PROTECTED_OPEN.md` as it stands now.  The link was recorded BECAUSE of this receipt.*
+    #   ⇒ *** So the check went red exactly when its own recommendation was adopted -- the purest
+    #       instance of r3105's rule yet: a check that pins a LIVE register punishes the finding it
+    #       defends, and here the finding's whole content was "this link is missing". ***
+    #   ⇒ ** The absence is a claim about a COMMIT (c54.220's rule), so it is read at this receipt's
+    #     own parent; and the PRESENT is asserted in the opposite direction, which is the direction
+    #     that says the work landed. **
+    MINE = '465ebef05a'        # r2823, where this receipt was written
+    before_raw = subprocess.run(['git', '-C', ROOT, 'show', MINE + '^:PROTECTED_OPEN.md'],
+                                capture_output=True, text=True, errors='replace').stdout
+
+    def gated_at(text, pid):
+        row = next((x for x in text.split('\n')
+                    if re.match(rf'\|\s*~*\*\*{pid}\*\*', x)), '')
+        return set(re.findall(r'gated on \**`?(PO-[\dA-Za-z]+|PO-seam)`?', row))
+
+    was = gated_at(before_raw, 'PO-5')
+    check(f'⇒ ** and the register did not record the PO-5 → PO-11 link before this receipt ** -- at '
+          f'{MINE}^ the PO-5 row read as gated on {sorted(was) or "nothing"}',
+          'PO-11' not in was)
+    check(f'⇒ ⛭ AND IT DOES NOW, which is this receipt landing rather than this receipt breaking: '
+          f'PO-5 is gated on {sorted(gated("PO-5")) or "nothing"} in the live register',
+          'PO-11' in gated('PO-5'))
 
     print()
     if FAILED:

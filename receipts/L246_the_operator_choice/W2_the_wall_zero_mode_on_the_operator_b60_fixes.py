@@ -1,6 +1,17 @@
 #!/usr/bin/env python3
 r"""W2 -- `PO-22`: the wall zero-mode recomputed on the operator `B60` fixes, and the index read off it.
 
+COMPUTES: SYMBOLICALLY IN `M` AND `alpha`, at no numeric value of either -- the exponent, the
+superpotential pairing and the index are read off the general SdS member, so the result does not
+depend on where a parameter was pinned.  ** ONE distinguished member is entered deliberately and it
+is a CONTROL: `M=0`, where `f(0)=1`, which is what shows the exponent's `f`-dependence is doing work
+rather than being carried by the algebra. **
+  ⌗ *Declared r3132 (`L-258`) after `check_computes` named this receipt.  The gate's detector is a
+  declared PROXY -- an assignment like `M = 0.12` -- and what it matched here is the phrase "M=0" in
+  the prose and in that control, not a pinned parameter.  ** The declaration is written because the
+  control IS a scope worth stating, not to quiet the proxy: a reader must know that every numeric
+  statement below is symbolic except the one member named here. ***
+
 ** THE ROW'S STEP. **  *** "redo the wall zero-mode with the operator `B60` fixes, and read the index
 off it." ***  `PO-22` was registered r3104 after the 54 line routed the finding and this line
 adjudicated it from `B60`, `S3` and `B67` directly.

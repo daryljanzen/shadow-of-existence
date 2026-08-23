@@ -115,11 +115,28 @@ def main():
           'does not normalize' in p14 and 'the horizons standing infinitely far' in p14)
 
     # ⓸ L-829 names its remainder
-    l829 = glob.glob(os.path.join(ROOT, 'receipts', 'L829*', '*.py'))
-    check('⓸ while `L-829` names its remainder rather than claiming it -- the transmission amplitude '
-          'is flagged, not banked',
-          len(l829) == 1 and 'transmission' in open(l829[0], encoding='utf-8',
-                                                    errors='replace').read().lower())
+    # ⛔⛭⛭ AMENDED r3132 (`L-258`).  ** THIS CHECK COUNTED THE FILES IN A DIRECTORY: `len(l829) == 1`. **
+    #   *`L-829`'s directory has since gained `S3` -- the wall-index receipt from the operator-choice
+    #   adjudication -- so the count went to 2 and the check went red.*
+    #   ⇒ *** IT WENT RED BECAUSE THE WORK IT GATES GREW.  A count over a live directory is a pin on
+    #       a LIVE REGISTER wearing different clothes (r3105's rule), and this is its fifth site. ***
+    #   ⇒ ** The claim was never about HOW MANY receipts `L-829` has.  It is that the transmission
+    #     amplitude is FLAGGED as a remainder and not BANKED as a result, so that is what is read --
+    #     across every receipt in the directory, whatever their number. **
+    l829 = sorted(glob.glob(os.path.join(ROOT, 'receipts', 'L829*', '*.py')))
+    srcs = {os.path.basename(f): open(f, encoding='utf-8', errors='replace').read() for f in l829}
+    names_it = [b for b, t in srcs.items() if 'transmission' in t.lower()]
+    # ** FLAGGED: it appears under a not-claimed heading or as a named remaining piece. **
+    flagged = [b for b in names_it
+               if re.search(r'(WHAT IS NOT CLAIMED|REMAINING PIECE IS NAMED|not claimed|flagged)',
+                            srcs[b], re.I)]
+    # ** BANKED would be the opposite: a CHECK asserting the amplitude as a computed result. **
+    banked = [b for b in names_it
+              if re.search(r'check\([^)]*transmission[^)]*\bis\s+\d', srcs[b], re.I)]
+    check(f'⓸ while `L-829` names its remainder rather than claiming it -- of {len(l829)} receipt(s) '
+          f'in its directory, {len(names_it)} name the transmission amplitude, {len(flagged)} flag '
+          f'it as a remainder and {len(banked)} bank it as a result: {flagged} / {banked}',
+          len(l829) >= 1 and len(flagged) >= 1 and banked == [])
 
     print()
     if FAILED:
