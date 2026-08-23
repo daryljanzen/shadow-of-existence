@@ -1,32 +1,29 @@
 
-  RUN-ALL-RECEIPTS -- 615 registered receipt(s), 4 at a time, 400s each, each from ITS OWN DIRECTORY
-  TREE-DIGEST: b298b1b46975e02c
+  RUN-ALL-RECEIPTS -- 617 registered receipt(s), 4 at a time, 400s each, each from ITS OWN DIRECTORY
+  TREE-DIGEST: 877f6f131671a68d
 
     [FAIL] receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py  (1s)
                FAIL  ⛭ CORRECTED c54.228: 5 of 6 CLAIMS this receipt quoted are present in the papers' BODY text after r2581 -- the rehoming moved and reworded them, and lost none /     FAIL  ⇒ AND THE ARITHMETIC OF THE OLD PROBE, KEPT SO THE ERROR IS LEGIBLE: 0 of 6 of the same claims survive as EXACT SENTENC
-    [FAIL] receipts/L221_the_bridge/B53_gating_l829_and_l830.py  (2s)
+    [FAIL] receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py  (0s)
+               OK    ⚠ and PO-5 stays open -- PROTECTED_OPEN carries it, and nothing here builds an operator /     OK    and P14 itself says the splitting is "external to the geometry", so no mass is derived /   1 check(s) FAILED
+    [FAIL] receipts/L221_the_bridge/B53_gating_l829_and_l830.py  (1s)
            /root/soe/receipts/L221_the_bridge/B53_gating_l829_and_l830.py:98: IntegrationWarning: Extremely bad integrand behavior occurs at some points of the /   integration interval. /   leaf = [quad(lambda r: 1/np.sqrt(abs(f(r))), 1.0, RB-e, limit=400)[0]
     [FAIL] receipts/L221_the_bridge/B66_po5s_route_is_gated_on_po11.py  (0s)
                OK    ⛭⛭ ⓷ and the register records `PO-2` gated on ['PO-11', 'PO-5'], while `PO-11` is gated on nothing -- ** so the chain PO-2 → PO-5 → PO-11 TERMINATES, with no circularity ** /     FAIL  ⇒ ** and the register did not record the PO-5 → PO-11 link before this receipt ** -- both rows read as ga
-    [FAIL] receipts/L249_a_pin_on_a_live_register/P1_a_check_that_pins_a_live_register_punishes_the_finding_it_defends.py  (11s)
-           ============================================================================== /   1 check(s) FAILED /     - ⓹ `check_loci` is indeed red, which is what that receipt is waiting on
-    [FAIL] receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_corruption_satisfied_a_gate.py  (33s)
+    [FAIL] receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_corruption_satisfied_a_gate.py  (34s)
                OK       at 400 chars it flags ['PO-4'] alone /     OK       ⇒ *** the base rate is three and the finding is one; a detector reported without its base rate would have claimed four. This fork's own c54.216 addition is one of the three. *** /   2 check(s) FAILED
-    [FAIL] receipts/L555_merge_duplication/M1_the_merge_of_my_own_revision_duplicated_four_protected_rows_and_no_gate_saw_it.py  (1s)
+    [FAIL] receipts/L555_merge_duplication/M1_the_merge_of_my_own_revision_duplicated_four_protected_rows_and_no_gate_saw_it.py  (0s)
                f'with its object is {sorted(gw(fam5) & gw(o_now["PO-10"][0]))} -- a genuine match, and the ' /                                                ~~~~~^^^^^^^^^ / KeyError: 'PO-10'
-    [FAIL] receipts/L558_the_second_duplication/D1_the_same_four_rows_the_second_merge_running_and_this_time_it_unclosed_a_struck_item.py  (3s)
+    [FAIL] receipts/L558_the_second_duplication/D1_the_same_four_rows_the_second_merge_running_and_this_time_it_unclosed_a_struck_item.py  (1s)
                FAIL  ⓻ check_protected_dupes: clean 0, SEEDED 0, restored 0; the restore is byte-identical (True); and the seed is the DEFECT ITSELF -- one row doubled with a differing strike marker /     FAIL  ⇒ and it reports the state disagreement, which is the half that un-closed PO-4 /   2 check(s) FAILED
     [FAIL] receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py  (3s)
                OK    ⚠ at 50f0d3f (c54.226) this file did NOT read whether the CONTENT survives under other words: W1 stated the count and said so in terms, routed rather than interpreted /     OK    ⛭ AND c54.228 (`L-561`) ANSWERED IT -- against this fork: the probe compared STRINGS where the question was abo
-    [FAIL] receipts/L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py  (171s)
+    [FAIL] receipts/L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py  (177s)
                FAIL  ⇒ SO A CHECK CAN BE SOUND AND STILL VERIFY THE WRONG OBJECT -- and the failure mode is specific to what was being done: a RE-PINNING sweep is the operation that updates quotations, so a sentence-level measurement taken during one measures the thing the sweep exists to change /     OK    ⓹ 
-    [FAIL] receipts/P15_CR_cosmology/C30_the_odd_even_half_is_shared.py  (0s)
-               OK    ⓷ so the pattern is arithmetic in $R$ alone: $1+3R=2.80$, $|1-3R|=0.80$, ratio 3.50 /     OK    ⛭ ⓸ and $R=3\rho_b/4\rho_\gamma$ is a ratio of CONTENTS, so the rate difference -- which P15 says carries "the whole difference" -- does not enter it /   2 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C31_half_one_owes_a_rule.py  (0s)
-               OK    and the high-$\ell$ ratio "follows with no free parameter" /     FAIL  ⓷ so the comparison is between an arm with essentially ONE adjustable number and one whose analyses carry six -- and no receipt in the corpus sets the matching rule /   2 check(s) FAILED
+    [slow] receipts/P15_CR_cosmology/P15_the_second_arm_actually_run.py  -- exceeded 400s
     [slow] receipts/P16_cosmogenesis_paper/P16_validate_bbn.py  -- exceeded 400s
 
-  603 pass, 11 fail, 1 over timeout, in 1124s wall
-  slowest that passed: P15_the_second_arm_actually_run.py 307s, P16_theory_error_and_likelihood.py 230s, P15_verify_lowell_exact_measure.py 205s, P15_the_collapse_leg_is_scale_invariant.py 152s, I10_the_constraint_propagation_is_symmetry_free.py 150s
+  606 pass, 9 fail, 2 over timeout, in 1444s wall
+  slowest that passed: P16_theory_error_and_likelihood.py 328s, P15_verify_lowell_exact_measure.py 315s, P15_verify_closedS3_nonsync.py 188s, P15_the_collapse_leg_is_scale_invariant.py 178s, I10_the_constraint_propagation_is_symmetry_free.py 156s
 
   ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.

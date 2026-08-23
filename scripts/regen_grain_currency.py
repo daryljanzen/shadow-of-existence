@@ -51,7 +51,20 @@ REGISTERS = [os.path.join(ROOT, 'THE_LIVE_ARC.md'),
              os.path.join(ROOT, 'THE_REGISTER.md')]
 
 # the grains that carry a currency block, and the baseline each declares from
-GRAINS = ['THE_PLAN.md', 'THE_OPEN_PROBLEMS_LEDGER.md']
+# ⛔⛭⛭ ** EXTENDED r3112 (`L-252`): THIS COVERED TWO OF THE FOUR GRAINS `check_grains` MEASURES. **
+# *This script's own docstring says these documents "will go stale every ~20 revisions FOREVER,
+# because of what they ARE" -- and then answered that for `THE_PLAN` and `THE_OPEN_PROBLEMS_LEDGER`
+# while `OPEN_PROBLEMS_MAP` and `THE_WEAVE` were left to the rot the script was built to end.*
+#   ⇒ *** So the structural answer covered half the structure, and the other half failed on schedule.
+#       A fix built for a class must cover the class, or it converts a known debt into a surprising
+#       one -- which is worse, because nobody is watching the half that was fixed. ***
+# ** The list is IMPORTED from the gate rather than copied, so the two cannot drift apart again --
+# the same reason `check_burndown` imports `check_id_bands`'s BANDS. **
+import importlib.util as _ilu
+_spec = _ilu.spec_from_file_location('_cg', os.path.join(ROOT, 'corpus', 'check_grains.py'))
+_cg = _ilu.module_from_spec(_spec)
+_spec.loader.exec_module(_cg)
+GRAINS = [fn for fn, _what in _cg.GRAINS]
 
 BEGIN = '<!-- GRAIN-CURRENCY:BEGIN -->'
 END = '<!-- GRAIN-CURRENCY:END -->'
