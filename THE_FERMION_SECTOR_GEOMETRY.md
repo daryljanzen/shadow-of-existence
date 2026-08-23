@@ -5,11 +5,19 @@ sources: [cowork]
 current: r2676+c54.211
 ---
 
-> **⌗ ITS §PART FOUR WORK LIST IS LIVE AND UNREGISTERED — `OWED` 611.** *Eight ordered items, several
-> marked live in this document's own voice — `L-81`, the $\lambda$ spectrum on the leaf, called **"the
-> single highest-value computation on the board"**; `L-77`, whose sweep **"has never been run"**; `L-62`,
-> **"cheap, decisive, still unrun"**. **Verified r3095: none of the eight is in the live register or the
-> frontier, and none has a receipt.** Their `L-` ids did not survive the register's turnover at r3001.*
+> **⌗ ITS §PART FOUR WORK LIST IS WORKED THROUGHOUT — checked at source r3125, `OWED` 611 closed.**
+> ⛔ *This block previously read "LIVE AND UNREGISTERED", and the status lines below it still say **"has
+> never been run"**, **"still unrun"**, **"no node had run"**. **All ten items are done, and the r3095
+> verification that found "none has a receipt" searched for the `L-` ids rather than for the work.***
+> · `L-77`'s sweep is `P03_locus_sweep` (PASS, indexed, with a headline) · `L-62`, `L-63`, `L-66` are
+> worked together with `L-53`, `L-58`, `L-61`, `L-80` in `P03_batch1_cheap_owed` (PASS) · `L-72`, `L-67`
+> in `P03_sheet_index_and_factors` and `P03_thirds_from_closure` (PASS) · `L-68` in
+> `P03_thirds_from_closure` and `P03_winding_and_closure` (PASS) · **`L-81`, "the single highest-value
+> computation on the board", is `P14_mode_monodromy_at_the_wall` (PASS) and is a register row** ·
+> `L-69` struck at c54.79 · and **`L-64`'s attack was run and its finding is written into THIS document**
+> at c54.68 — with one radius the cover is cyclic and there is no colour, with three the group is
+> $SU(3)$, "the entire result is the difference between those readings".
+> ⇒ ***Read the status lines below as the record of when each was owed, not of what is owed now.***
 >
 > *The sector's last live register row was **`PO-14`**, the chiral member — **struck r3099, built** (`L-832`: the inhomogeneous, propagating, turning-polarisation member, its handedness the definite-signed winding). It was none of these, and the sector now carries no open register row.*
 
