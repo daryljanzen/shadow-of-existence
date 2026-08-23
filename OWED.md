@@ -6,6 +6,31 @@ description: Work this programme's turns CREATED — the register every other re
 sources: [chat]
 ---
 
+> ## ⛭⛭⛭ THE WHOLE OUTSTANDING SURFACE, IN ONE PLACE — measured r3120, and kept here so it can be worked
+>
+> *Not a new list: a view over the ones that exist, so the programme's remaining shape is legible without
+> assembling it from five documents each time. **Re-measure before trusting the numbers**; they are a
+> snapshot and this file is where they go stale first.*
+>
+> | what | where it lives | count at r3120 |
+> |---|---|---|
+> | **the one work item** | `THE_REGISTER` / P7 `frontier:scalar` | **`PO-13`** — the acoustic phase, misplaced by a computed amount. *Not started.* |
+> | **owed items** | this file | **13 open** — incl. the comprehensive comb, the reader package, the dissolution-census reconciliation, and the fermion-sector items never registered |
+> | **the corpus read** | `ARC 13` | **4 of 17 papers** read at verified full coverage (P7, P8, P9, P10). P11–P17 and p0 not |
+> | **receipt failures** | `receipts/RUN_RESULT.txt` | **8**, mostly inherited; the P7/P10 set is cleared |
+> | **red gates** | `corpus/check_*.py` | **9** at a 600s timeout — *note the harness: `check_cross_row_dupes` reads red at 100s and passes at 600s* |
+> | **the absorption gap** | `ABSORPTION.md` | `c54.208`–`233` never entered this line; **one finding in it remains unverified** |
+>
+> ⇒ ⛭ **AND WHAT IS NOT ON THIS LIST, BECAUSE IT IS FINISHED RATHER THAN EMPTY.** *The quantum sector and
+> the Standard-Model sector are handed off, and the hand-off is **tested rather than asserted**: of the four
+> falsification conditions stated before any claim was made, `F2` **cannot arise** by the one-constant
+> theorem, `F3` **inverted** (the Higgs sector constrains this one, not the reverse), `F4` is **answered**
+> (the hypercharges are the composition's), and `F1` — the sharp one, whether this construction forbids what
+> the Higgs mechanism requires — **does not fire**: it declines to supply the gauge sector's ingredients and
+> does not forbid them. **No tension is outstanding in either sector.*** ⌗ *`F1` stays live as a standing
+> condition, not a gap: any future result promoting the gauge group from the ordinary route to a forced one
+> re-opens it.*
+
 > **⌗ SORTED BY LAYER r3095 — because the car-wash rule is that each layer gates the next BY WHAT IT
 > EXPOSES, not by what it finishes.** *`OWED` does not need to be empty to move on; it needs nothing left
 > **from the layer being left**.*
