@@ -25,7 +25,7 @@ sources: [chat]
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-14** | the unbuilt chiral member — THE BUILD | **1** | 1 | 5 ⚠ | BUILD | 0 | — | r3015: extend P11s polarised Gowdy-de Sitter leaf to the unpolarised case — two propagating modes, coupled nonlinearly. P09: reachable, needing no machinery the operator lacks. Until built, four classes where five are required |
+| **PO-14** | the chiral member — RE-SPECIFIED r3099: the geometry is built, the Dirac sector on it is not | **1** | 1 | ? | BUILD | 2 | — | r3099: P11 sec:unpolarized BUILT the unpolarised cut at r2419 — 587 revisions before P14 called it unbuilt (L-247). What is owed is T's action on a wall mode OF THAT CUT. And the cause is now a theorem (L-246): where the handedness exchange is a realised symmetry it commutes with the horn swap, so the swap's two chirality restrictions are conjugate and SU(2)_L's 2+1+1 is excluded — the shortfall is forced, the sector forced vector-like, and the anomaly conditions then fix no hypercharge |
 
 ### B · the matter sector
 
