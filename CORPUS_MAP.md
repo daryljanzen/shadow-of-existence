@@ -1,6 +1,6 @@
 ---
 name: corpus-map
-kind: STATE
+kind: RECORD
 current: r2550+c54.205
 description: The changelog — the papers, their causal order, and the shape we are aiming at. The narrative log is current only to c54.32; the c54.36–c54.93 span is carried at the foot as COPIED COMMIT SUBJECTS, not as changelog entries.
 sources: [cowork, chat]
@@ -20962,7 +20962,26 @@ $$\lambda=\tfrac12+\tfrac{\sqrt3}{2}i=e^{i\pi/3},\qquad \lambda^2-\lambda+1=0,$$
 
 **▸ The masthead — the corpus's self-narrative (r666, Daryl's recognition; no new apparatus, the abstracts already held current by the frontmatter pass each round).** The programme's top-level story is readable straight off its **mastheads**, both sides. *Physics:* the **abstracts** of **p0 → p1 → p3 → p4 → p7 → p12 → p13 → p14 → p15 → p16**, read straight through, *are* the story — the geometric core (**p0/17**) opening on the substrate and closing on the unification, bookending **p1–p16**, with the boundary (**p13**) and its complement the fermion sector (**p14**, the discrete flavour skeleton built and forced *within CR*) completing the matter treatment; the paper **bodies are the detailed description**. *(Numbering, r796: the matter-sector paper earned its place as **p15, the complement of p14** — the discrete residue p14 walls the continuous route to, built out; the geometric core, the ontology pole, moves to **p0/16**, still bookending as p0 and closing as p16. Reversible if the arc later reveals a matter cluster wanting other structure.)* *(Erratum r1316: the r845 renumber superseded these specific numbers — boundary→P13, matter-sector→P14, cosmology→P15, new P16 cosmogenesis, core→p0/17; the complement-of-the-boundary logic holds at the new numbers, and the current-tense labels above now reflect r845.)* *Coda:* the **telos** (r665, `OPEN_PROBLEMS_MAP` face-science docket) is the coda's masthead — what the engine is *for*. A major knows-itself upgrade: the corpus tells its own story from its mastheads; the mechanics run through the existing machinery. Stated for reversal.
 
-## ⟂ CURRENT STATE — the Hubble/acoustic matter, and the honest open frontiers (READ FIRST; authoritative)
+## ⟂ THE r1308-ERA STATE BLOCK — a RECORD, and no longer authoritative
+
+> **⌖ THIS BLOCK IS MARKED "READ FIRST; authoritative" AND THIS DOCUMENT'S OWN FRONTMATTER CONTRADICTS
+> IT.** *The description reads: "the narrative log is **current only to c54.32**". A document cannot be
+> both authoritative-on-first-read and current only to a fork front eight hundred revisions back. **This
+> is a header-versus-body contradiction — the document against itself, on its own evidence — and that is
+> the check whose repair is always legitimate.** The corpus is not consulted for it and wins nothing by
+> it.*
+>
+> *· Corroborating, and not the ground: the block's `PO-1`--`PO-12` ids are struck in the register that
+> closed at r3001, and it counts "94 computational receipts" where there are now 598.*
+>
+> ***For what is open, read `THE_FRONTIER.md`*** *— seven rows: `PO-13`, `PO-14`, `PO-15`, `PO-17`,
+> `PO-18`, `PO-19`, `PO-20`. **The block is kept: a consolidation's reasoning outlives its numbers.***
+>
+> ⚠ **`THE_WISDOM_LEDGER` lists this document among the nine forward documents** *("do not date them and
+> do not retire them for disagreeing with the corpus"). **This document does not carry that banner in its
+> own voice** — its twenty-five mentions of forward documents are it recording the classification of
+> others — and it describes itself as a changelog. **The list and the document disagree; recorded, not
+> resolved here.***
 
 ### ⇢ CONSOLIDATED SEAT (r1308 — the parallel fork folded onto this line and verified; go-forward line)
 **Consolidation status (r1308):** the parallel node's r1300→r1307 gains are folded here and **verified at source** — every flip-flop endpoint checked (§269, the P13 title, P14 §208, P/R/σ, the P14 false-"done"); P13/P14/P3 compile 0/0; one residual fixed (the boundary SYMBOL CANON `%`-comment, which lagged r1306, aligned to the corrected mass-flip framing). This line's own **Lane-8 scaffold cleanup is folded in** — the combinatorics ledger and THE_PLAN now read Lane 8 COMPLETE (r1157, blocker discharged), the stale "NOT RUN / above the line" scaffold gone. The other-node fork bundle is abandoned; **`cr_r1308` is the go-forward line.**

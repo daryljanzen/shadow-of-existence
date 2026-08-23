@@ -1,8 +1,21 @@
 ---
+kind: REFERENCE
+job: category theory against CR — the corpus's largest unlisted field
 name: category-theory-ledger
 description: R-M's fifth field bake — CATEGORY THEORY, the corpus's largest unlisted field. Opened r1892 after the r1890 holes survey found 363 uses and two papers named for its objects, with the field itself absent from the reach list. Its opening question is one the corpus states about itself.
 current: r2517+c54.201
 ---
+
+> **▣ REFERENCE — the field the list did not carry, and part of the corpus.** *Category theory, the
+> corpus's largest unlisted field.*
+>
+> **⌗ One owed cross-reference, the twin of `L-100`'s:** *`L-103`, the orbit-space follow-up, **was
+> given an ID at c54.34 and never registered** — same failure, same turn, same cause. Its content is
+> not unworked: the orbit space $X/G$ **is** P9's range theorem and P12's structure. **The `L-` space has
+> since closed, so the cross-reference is unregistered again.***
+
+
+
 
 > **⌗ CHECKED AGAINST c54.163→c54.185 AND DECLARED CURRENT r2449.** *The span's substantive content is **the derived
 > lensing and the acoustic front** (c54.181–184), **a lint rebuild** (c54.180), **bibitem repairs** (c54.185), and

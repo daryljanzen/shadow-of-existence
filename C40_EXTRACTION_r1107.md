@@ -1,3 +1,12 @@
+---
+kind: FORWARD
+---
+
+> **▣ FORWARD — ahead of the corpus by construction, and exempt from the staleness test.** *It carries
+> that banner in its own voice.* ⛔ ***Do not date it against the corpus and do not retire it for
+> disagreeing with one*** *— where it disagrees with a paper, the disagreement is the work product. A
+> header-versus-body contradiction inside it is still fair game; a comparison to the corpus is not.*
+
 <!-- FORWARD WORKING DOCUMENT. The c40 extraction, r1107. Banked, not baked:
      nothing here has gone into a paper. Receipts run; the papers are untouched. -->
 

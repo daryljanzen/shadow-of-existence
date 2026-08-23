@@ -100,6 +100,20 @@ def main():
     # DECLARED and not inferred, which is this file's whole philosophy: the fork names the revision
     # it is cutting and the node clears the line when it absorbs. **  A revision that is neither
     # absorbed nor declared in flight still FAILS, so the gate keeps its teeth.
+    # ** r3096: THE FORK LINE CAN BE DECLARED CLOSED, and then this gate's whole question --
+    # "how long since the working fork was absorbed?" -- has no object.  ABSORPTION.md carries
+    # `FORK-CLOSED: c54` when the fork stops running.  ** Declared, not inferred: the same standard
+    # this gate applies to everything else. **  Once closed, `c54.N` still appearing in documents is
+    # HISTORICAL CONTENT and not evidence of an unabsorbed revision, so the newest-vs-tree
+    # comparison below would fail forever on a record that is complete rather than behind.
+    _closed = re.search(r'^FORK-CLOSED:([^\n]*)', open(REC, encoding='utf-8').read(), re.M)
+    if _closed:
+        print(f'  ** THE FORK LINE IS DECLARED CLOSED: {_closed.group(1).strip()} **')
+        print(f'     Newest and final absorption: c54.{newest_absorbed}.  Nothing is in flight and')
+        print('     nothing further will be absorbed, so this record is COMPLETE rather than behind.')
+        print('     `c54.N` elsewhere in the tree is historical content, not pending work.')
+        return 0
+
     inflight = set()
     # ** ANCHORED TO LINE START, and that is not pedantry: unanchored, the paragraph ABOVE the record
     # explaining what `IN-FLIGHT:` is -- which names c54.186 as the example -- satisfied the marker by

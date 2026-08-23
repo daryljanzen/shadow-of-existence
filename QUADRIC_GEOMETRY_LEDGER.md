@@ -1,8 +1,28 @@
 ---
+kind: REFERENCE
+job: projective geometry of quadrics against the CR substrate — the CK metric identification, and the ladder gap it exposes
 name: quadric-geometry-ledger
 description: R-M's first field bake — projective geometry of quadrics thrown at the CR substrate. Opened r1838 (Phase 8). What the corpus already reaches, the boundary the throat protocol states for itself, and the bites this field can take that the classical catalogue could not.
 current: r2713+c54.214
 ---
+
+> **▣ REFERENCE — R-M's first field bake, and part of the corpus.** *Projective geometry of quadrics
+> thrown at the CR substrate. Its findings are content the corpus draws on: the metric is a
+> Cayley--Klein log-cross-ratio with $k=\alpha$ exactly; the vantage $S_3$'s projective invariant is the
+> equianharmonic $e^{i\pi/3}$; the horizon locus is a reducible cubic whose singular points are the two
+> Nariai; and the import is bounded — **the metric imports exactly, the group does not**, because CK's
+> $\mathrm{PO}(5,1)$ identifies antipodes and CR does not.*
+>
+> **⌗ THE GAP IT FOUND IS NOW CLOSED IN THE PAPER.** *It recorded that the polar of a substrate point
+> cuts a totally geodesic $\mathrm{dS}_4$, and that **whether that $\mathrm{dS}_4$ is the background rung
+> was open** because the corpus stated the ladder and never said how the background sits in the
+> substrate. **p0 now settles it in its own voice** — "a second projective fact follows at once, and it
+> settles how the ladder's second rung sits in its first" — with the receipt
+> `Q6r_polar_is_the_background`, the polar's $\mathrm{SO}(4,1)$ being a sweep-subgroup of the
+> substrate's $\mathrm{SO}(5,1)$.*
+
+
+
 
 > **⌗ CHECKED AGAINST c54.163→c54.185 AND DECLARED CURRENT r2449.** *The span's substantive content is **the derived
 > lensing and the acoustic front** (c54.181–184), **a lint rebuild** (c54.180), **bibitem repairs** (c54.185), and

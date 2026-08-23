@@ -1,3 +1,16 @@
+---
+kind: RECORD
+job: the record of how the gradient was turned at r1064-r1090; not a live route
+---
+
+
+> **⌖ RECORD — and the document supersedes its own header.** *Its HTML header opens "FORWARD WORKING
+> DOCUMENT", but its first heading is **"COMPLETE r1090. THIS IS NOW THE RECORD OF THE CLEARING, NOT A
+> LIVE ROUTE… Do not plan from this document."** The body's declaration wins: it records how the gradient
+> was turned, and the route it cleared the way for is named in it.*
+>
+> *⌗ It is listed among `THE_WISDOM_LEDGER`'s nine forward documents; **the header is why, and the header
+> is not what it says of itself.***
 <!-- FORWARD WORKING DOCUMENT. The plan for the r1064–r1087 tidal shift.
      Read off C40_HARVEST_r1064-r1087.md, the c40 transcript, and Daryl's stated
      staging (r1066, r1071). Stated for reversal. -->

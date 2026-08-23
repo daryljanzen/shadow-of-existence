@@ -1,9 +1,16 @@
 ---
+kind: STATE
+job: every switch in the acoustic scan against the theory that determines it
 name: the-model-ledger
 description: Binds every adjustable term in RADSCAN.py to the theory statement that determines it, and records what the theory says versus what the run does. Read this BEFORE changing any switch; it is the thing that stops the modelling becoming a fishing expedition.
 sources: [observer]
 current: r3045
 ---
+
+> **⌗ LIVE, and it belongs to register row `PO-13`.** *It binds every adjustable term in the acoustic
+> scan to the theory statement that determines it, under one rule: a switch is **DETERMINED** if the
+> corpus fixes it and **OPEN** if it does not, and a run that needs a determined switch off its
+> determined value is evidence about the implementation or the theory — never a free parameter.*
 
 # ▣ THE MODEL LEDGER — every switch, and what the theory says about it
 

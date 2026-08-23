@@ -1,8 +1,19 @@
 ---
+kind: STATE
+job: the collapse-excursion build ledger — the plan, whose execution lives elsewhere
 name: phase7-build-ledger
 description: PHASE 7 — the collapse-excursion build, plan item 2, off which open-problems families 1/3/4/5 close together. Opened r1912 after seven audited Phase-8 fields fed it. Working file; carries the step order, what is verified underneath it, and the guards that tripped two prior nodes.
 current: r2376
 ---
+
+> **⌗ ITS OWN NAMED GAP IS STILL OPEN, and is now `OWED` 608.** *This is the build's **plan**; the
+> execution happened in `computations/beyond_the_wall/` and in the capstone, and **the two have never
+> been read against each other**. Verified r3095: that directory now holds **43 scripts** where this
+> ledger says 29.*
+>
+> *Its position `L-197` did not survive the register's turnover at r3001, and the live register carries
+> no collapse-excursion row — the nearest live work is **`PO-13`**. **What is open is
+> `THE_FRONTIER.md`.***
 
 # PHASE 7 — THE COLLAPSE-EXCURSION BUILD
 

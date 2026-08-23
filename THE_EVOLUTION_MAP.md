@@ -1,9 +1,15 @@
 ---
+kind: REFERENCE
 name: the-evolution-map
 job: Working in paper N, what may I stand on and what may I not yet assume? Read BEFORE STANDING ON A RESULT.
 class: whole-corpus-instrument
 current: r2676+c54.211
 ---
+
+> **▣ REFERENCE — the dependency instrument.** *Working in paper N, what may I stand on and what may I
+> not yet assume? **Read before standing on a result.** It carries no register ids and makes no claim
+> about what is open; it says what each paper may lean on.*
+
 
 > **⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — and this map was re-read END TO END at r2435–r2438, which is why it
 > carries a fork marker again after 166 revisions without one.**

@@ -1,10 +1,20 @@
 ---
 name: cr-and-the-higgs
-kind: STATE
+kind: REFERENCE
 current: r2550+c54.205
 job: R-P station 6h (L-217) — how CR and the Higgs sector relate, in coherence and in correspondence. THE FALSIFICATION CONDITIONS ARE STATED FIRST, BEFORE THE CLAIM. Read before asserting complementarity.
 sources: [chat]
 ---
+
+> **▣ REFERENCE — R-P station 6h, and part of the corpus.** *How CR and the Higgs sector relate, in
+> coherence and in correspondence, with **the falsification conditions stated first, before the claim**.*
+>
+> **⌗ Its own gap, named at its head:** *the four conditions were stated here and **worked ten revisions
+> later**; what the working produced is not in this document, and one of the four moved — the constraint
+> runs **opposite** to the direction this document sets up: the Higgs sector constrains CR, not the
+> reverse.*
+
+
 
 ## ⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **station 6h was WORKED at r2414 and this document stops at r2404**
 
@@ -54,7 +64,7 @@ argument an **ADD**. **That is the neighbouring question to this document's and 
 |---|---|---|
 | **F1** | ***CR forbids a structure the Higgs mechanism requires.*** *The mechanism needs a scalar in a definite representation, a potential with a symmetry-breaking minimum, and Yukawa couplings to the fermions. **If CR's wall or its one-constant law excluded any of these, the sectors conflict.*** | ⚠ **LIVE, and it is the sharp one — see F1 below.** |
 | **F2** | ***CR predicts a magnitude the Higgs sector also predicts, and they disagree.*** *This is the ordinary way two theories conflict.* | ✔ **CANNOT ARISE, and by a theorem rather than by luck.** *The **one-constant theorem**: a dimensionless magnitude needs two invariants and the substrate has one by construction.* ***CR predicts no mass ratio, so it cannot contradict one.*** ⌗ *`L-212` (r2404) is the same fact reached from the other side: **none of the corpus's three-fold indices grades the mass parameter**.* |
-| **F3** | ***CR's exact $S_3$ survives to the observed spectrum.*** *P14 delivers an **exact global $S_3$** family symmetry. **The Standard Model has none** — the Yukawa couplings break it badly. If CR's $S_3$ were exact in the observed world, it would be false.* | ⚠ **LIVE, and the corpus states it as an obligation rather than a result — see F3.** |
+| **F3** | ***CR's exact $S_3$ survives to the observed spectrum.*** *P14 delivers an **exact global $S_3$** family symmetry. **The Standard Model has none** — the Yukawa couplings break it badly. If CR's $S_3$ were exact in the observed world, it would be false.* | ⛭ **WORKED at r2414 (`L-217`), and the direction inverted.** *This row was written as the danger. **The working found the constraint runs the other way: the Higgs sector CONSTRAINS CR** — the MANNER of the $S_3$ breaking is a constraint CR inherits, not a prediction CR risks.* ⌗ *The composition is the finding: **CR is a selection-rule theory, the Higgs sector a magnitude theory**, and they compose asymmetrically. See this document's head.* |
 | **F4** | ***CR's hypercharge derivation is circular.*** *P14 fixes the hypercharges from the anomaly conditions **together with the existence of the Yukawa couplings**. **If the Yukawa premise is doing the work, the result is the Higgs sector's and not CR's.*** | ⚠ **LIVE as a bookkeeping question — see F4.** |
 
 ⇒ ***THREE OF FOUR ARE LIVE. The complementarity is therefore NOT empty: there are stated ways it could fail, and

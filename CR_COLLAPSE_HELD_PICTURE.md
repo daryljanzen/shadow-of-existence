@@ -1,11 +1,19 @@
 ---
 name: cr-collapse-held-picture
-kind: STATE
+kind: REFERENCE
 current_main: r898
 job: BUILD MATERIAL for THE_PLAN item 2 / PHASE 7 — the contracting-phase picture held whole: the L2 leg the acoustic driving lives on. Read WITH COLLAPSE_EXCURSION_TRANSFER_build.md (the attack manual) before starting that build.
 sources: [cowork]
 current: r898
 ---
+
+> **▣ REFERENCE — the contracting-phase picture held whole**, the L2 leg the acoustic driving lives on.
+> *It carries its own job, its own currency and its own struck `Owed:` lists at its head, which is what a
+> document of this kind should do.*
+>
+> **⌗ It holds open questions it does not assume**, marked for a later phase rather than answered here.
+
+
 
 > **⌗ INDEXED r2380 — and it needed no argument: this file already declared its own job and its own currency.**
 > *Its `⌖ INDEXED r1512` banner states it is build material for `THE_PLAN` item 2, names the manual to read it

@@ -5,6 +5,17 @@ sources: [chat]
 current: r2676+c54.211
 ---
 
+> **⌗ ITS FRONTIER TABLE IS THE `L-`ERA'S, AND THE NUMBERS HAVE MOVED TWICE SINCE.** *It reads "FOUR
+> live, three closed" against P7's frontier list. **P7 now carries THREE items** (`frontier:scalar`,
+> `frontier:sm`, `frontier:quantum`), the inherited datum having been struck with `PO-16` and relocated
+> to `sec:inherited-datum`. **And the live register holds SEVEN rows**, which is a different set again:
+> `PO-13`, `PO-14`, `PO-15`, `PO-17`, `PO-18`, `PO-19`, `PO-20`. Its own `PO-4`--`PO-12` ids are all
+> struck.*
+>
+> ***The position is `THE_FRONTIER.md`, from `THE_REGISTER.md`.*** *What this document holds that the
+> register does not is the **reasoning** on each row — kept for that.*
+
+
 ## ⛭⛭⛭ BROUGHT CURRENT c54.211 — **where the frontiers stand after c54.202–c54.211 and r2657–r2676**
 
 *· **`PO-9` ANSWERED** (`L-533`, c54.207): Rule 2 neither forbids a second slicing step nor forces one —
@@ -71,8 +82,8 @@ only kind of evidence a self-scoring programme can offer that its scoring is not
 >
 > ***This is the document whose stated job is "read this to know the position", and its position was three
 > closures behind the paper it audits against.*** *The table below is kept — a row's reasoning is worth more
-> than a clean list — and each closed row is marked at its head. **P7 `sec:frontiers` carries four items:**
-> `frontier:inherited` · `frontier:scalar` · `frontier:sm` · `frontier:quantum`.*
+> than a clean list — and each closed row is marked at its head. **P7 `sec:frontiers` carries three items:**
+> `frontier:scalar` · `frontier:sm` · `frontier:quantum` — `frontier:inherited` having been struck with `PO-16` and relocated to P7 \S`sec:inherited-datum`.*
 >
 > | this table's row | now |
 > |---|---|

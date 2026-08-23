@@ -1,10 +1,21 @@
 ---
 name: rp-34-gr-baseline
-kind: STATE
+kind: REFERENCE
 current: r2517+c54.201
 job: R-P station ③④ (L-204), §0 BASELINE — what the corpus already holds in GR's four named areas, surveyed and RUN before any question is asked. Read before opening the station.
 sources: [chat]
 ---
+
+> **▣ REFERENCE — the GR baseline station, and part of the corpus.** *Its most useful content is
+> negative: **the six bad measures**, each tried and withdrawn.*
+>
+> **⌗ It names a stale self-description it has not repaired:** *`G1`'s arrival-path metric — scoring the
+> distance from a claim to its support — **was stripped at r2417 after a blind run returned 7/7 false
+> positives**, because distance is not readability: a result carrying its argument inside itself needs no
+> nearby support. **The document still describes `G1` as an instrument.** A second finding was withdrawn
+> at r2418.*
+
+
 
 ## ⛭⛭ BROUGHT CURRENT r2449, TO c54.185 — **the station's own §0 closed, and TWO of its findings were later WITHDRAWN by this line**
 
@@ -109,6 +120,17 @@ bend off the kernel and charge/acceleration "not vacuum cuts but bends off the k
 ---
 
 ## ⌗⌗ §2 · PROBE `G1` — THE ARRIVAL-PATH METRIC, and it corrected this line twice in one station
+
+> **⛔ THE METRIC BELOW WAS WITHDRAWN AT r2417 — read this section as the record of a probe that failed,
+> not as an instrument.** *`G2`'s blind run returned **7/7 false positives**, and the reason is stated at
+> this document's head: **distance is not readability**, because a result that carries its argument inside
+> itself needs no nearby support. `G1` is the first of the six bad measures, and the diagnostic that names
+> them all is* ***"if the quantity's meaning changes with what the sentence is ABOUT, it is not a
+> measurement."***
+>
+> *The character-distance table below is kept because **the measurements are real and the inference from
+> them was not** — which is the whole finding. Its correction of §0's misreading (`V1_carter_chain` never
+> said the arrow was missing) stands on its own and is unaffected.*
 
 **⚠ FIRST, THE CORRECTION.** *§0 above read `V1_carter_chain` as saying the arrow was **missing**.* ***It never
 said that.*** *Its own words:* **"the chain exists, complete and sourced, in one paper."** *Measured at source,

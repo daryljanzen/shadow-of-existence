@@ -6,6 +6,9 @@ job: The figure programme's state — every figure against what it must carry.
 sources: [cowork]
 ---
 
+> **⌗ THE FIGURE PROGRAMME'S STATE — every figure against what it must carry.** *Not a spent sweep: it
+> is where the figures are held to their job.*
+
 > **⌗ CHECKED AGAINST c54.163→c54.185 AND DECLARED CURRENT r2449.** *The span's substantive content is **the derived
 > lensing and the acoustic front** (c54.181–184), **a lint rebuild** (c54.180), **bibitem repairs** (c54.185), and
 > the fork's application of routed items 1–9. This line's own r2417–r2448 added `ARC 16`/`ARC 17`, the `L-150` and

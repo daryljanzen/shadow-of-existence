@@ -66,7 +66,7 @@ def parse_index(path):
                          ' worse than one that omits it. **\n\n')
     return rows
 _ASCII=[('\\',r'\textbackslash{}'),('{',r'\{'),('}',r'\}'),('#',r'\#'),('&',r'\&'),('%',r'\%'),('$',r'\$'),('_',r'\_'),('^',r'\textasciicircum{}'),('|',r'\textbar{}'),('~',r'\textasciitilde{}')]
-_UNI={'§':r'\S{}','°':r'\ensuremath{^\circ}','¹':r'\textsuperscript{1}','²':r'\textsuperscript{2}','³':r'\textsuperscript{3}','⁴':r'\textsuperscript{4}','⁶':r'\textsuperscript{6}','¼':r'\ensuremath{\tfrac14}','½':r'\ensuremath{\tfrac12}','¾':r'\ensuremath{\tfrac34}','⅓':r'\ensuremath{\tfrac13}','×':r'\ensuremath{\times}','—':'---','′':r'\ensuremath{{}^\prime}','−':r'\ensuremath{-}','Λ':r'\ensuremath{\Lambda}','α':r'\ensuremath{\alpha}','β':r'\ensuremath{\beta}','η':r'\ensuremath{\eta}','θ':r'\ensuremath{\theta}','π':r'\ensuremath{\pi}','ρ':r'\ensuremath{\rho}','σ':r'\ensuremath{\sigma}','τ':r'\ensuremath{\tau}','ψ':r'\ensuremath{\psi}','₀':r'\ensuremath{_0}','₂':r'\ensuremath{_2}','→':r'\ensuremath{\to}','↔':r'\ensuremath{\leftrightarrow}','↦':r'\ensuremath{\mapsto}','⇒':r'\ensuremath{\Rightarrow}','⟺':r'\ensuremath{\iff}','∀':r'\ensuremath{\forall}','∅':r'\ensuremath{\emptyset}','∘':r'\ensuremath{\circ}','·':r'\ensuremath{\cdot}','√':r'\ensuremath{\surd}','∞':r'\ensuremath{\infty}','⋆':r'\ensuremath{\star}','◐':'(partial)','✔':'','✗':'(x)','✘':'(x)','†':r'\textdagger{}','̃':'', '–':'--', '⊢':r'\ensuremath{\vdash}', 'κ':r'\ensuremath{\kappa}', 'λ':r'\ensuremath{\lambda}', '±':r'\ensuremath{\pm}', 'γ':r'\ensuremath{\gamma}', 'δ':r'\ensuremath{\delta}', 'μ':r'\ensuremath{\mu}', 'ν':r'\ensuremath{\nu}', 'φ':r'\ensuremath{\varphi}', 'ω':r'\ensuremath{\omega}', 'Δ':r'\ensuremath{\Delta}', 'Ω':r'\ensuremath{\Omega}', '≤':r'\ensuremath{\le}', '≥':r'\ensuremath{\ge}', '≠':r'\ensuremath{\ne}', '≡':r'\ensuremath{\equiv}', '⊂':r'\ensuremath{\subset}', '∈':r'\ensuremath{\in}', '→':r'\ensuremath{\to}', '‘':"`", '’':"'", '“':"``", '”':"''", '₊':r'\ensuremath{_+}', '₋':r'\ensuremath{_-}', '₁':r'\ensuremath{_1}', '₃':r'\ensuremath{_3}', '₄':r'\ensuremath{_4}', '₅':r'\ensuremath{_5}', '₆':r'\ensuremath{_6}', '⁵':r'\textsuperscript{5}', '⁷':r'\textsuperscript{7}', '⁰':r'\textsuperscript{0}', '⁻':r'\ensuremath{^-}', '⁺':r'\ensuremath{^+}', '∂':r'\ensuremath{\partial}', '∇':r'\ensuremath{\nabla}', '⊗':r'\ensuremath{\otimes}', '⊕':r'\ensuremath{\oplus}', 'Σ':r'\ensuremath{\Sigma}', 'ε':r'\ensuremath{\epsilon}', 'ζ':r'\ensuremath{\zeta}', 'χ':r'\ensuremath{\chi}', 'Γ':r'\ensuremath{\Gamma}', 'ℓ':r'\ensuremath{\ell}', 'ℏ':r'\ensuremath{\hbar}', '∫':r'\ensuremath{\int}', '…':r'\ldots{}', ' ':' ',
+_UNI={'§':r'\S{}','°':r'\ensuremath{^\circ}','¹':r'\textsuperscript{1}','²':r'\textsuperscript{2}','³':r'\textsuperscript{3}','⁴':r'\textsuperscript{4}','⁶':r'\textsuperscript{6}','¼':r'\ensuremath{\tfrac14}','½':r'\ensuremath{\tfrac12}','¾':r'\ensuremath{\tfrac34}','⅓':r'\ensuremath{\tfrac13}','×':r'\ensuremath{\times}','—':'---','′':r'\ensuremath{{}^\prime}','−':r'\ensuremath{-}','Λ':r'\ensuremath{\Lambda}','α':r'\ensuremath{\alpha}','β':r'\ensuremath{\beta}','η':r'\ensuremath{\eta}','θ':r'\ensuremath{\theta}','π':r'\ensuremath{\pi}','ρ':r'\ensuremath{\rho}','σ':r'\ensuremath{\sigma}','τ':r'\ensuremath{\tau}','ψ':r'\ensuremath{\psi}','₀':r'\ensuremath{_0}','₂':r'\ensuremath{_2}','→':r'\ensuremath{\to}','↔':r'\ensuremath{\leftrightarrow}','↦':r'\ensuremath{\mapsto}','⇒':r'\ensuremath{\Rightarrow}','⟺':r'\ensuremath{\iff}','∀':r'\ensuremath{\forall}','∅':r'\ensuremath{\emptyset}','∘':r'\ensuremath{\circ}','·':r'\ensuremath{\cdot}','√':r'\ensuremath{\surd}','∞':r'\ensuremath{\infty}','⋆':r'\ensuremath{\star}','◐':'(partial)','✔':'','✗':'(x)','✘':'(x)','†':r'\textdagger{}','̃':'', '–':'--', '⊢':r'\ensuremath{\vdash}', 'κ':r'\ensuremath{\kappa}', 'λ':r'\ensuremath{\lambda}', '∓':r'\\ensuremath{\\mp}', '±':r'\ensuremath{\pm}', 'γ':r'\ensuremath{\gamma}', 'δ':r'\ensuremath{\delta}', 'μ':r'\ensuremath{\mu}', 'ν':r'\ensuremath{\nu}', 'φ':r'\ensuremath{\varphi}', 'ω':r'\ensuremath{\omega}', 'Δ':r'\ensuremath{\Delta}', 'Ω':r'\ensuremath{\Omega}', '≤':r'\ensuremath{\le}', '≥':r'\ensuremath{\ge}', '≠':r'\ensuremath{\ne}', '≡':r'\ensuremath{\equiv}', '⊂':r'\ensuremath{\subset}', '∈':r'\ensuremath{\in}', '→':r'\ensuremath{\to}', '‘':"`", '’':"'", '“':"``", '”':"''", '₊':r'\ensuremath{_+}', '₋':r'\ensuremath{_-}', '₁':r'\ensuremath{_1}', '₃':r'\ensuremath{_3}', '₄':r'\ensuremath{_4}', '₅':r'\ensuremath{_5}', '₆':r'\ensuremath{_6}', '⁵':r'\textsuperscript{5}', '⁷':r'\textsuperscript{7}', '⁰':r'\textsuperscript{0}', '⁻':r'\ensuremath{^-}', '⁺':r'\ensuremath{^+}', '∂':r'\ensuremath{\partial}', '∇':r'\ensuremath{\nabla}', '⊗':r'\ensuremath{\otimes}', '⊕':r'\ensuremath{\oplus}', 'Σ':r'\ensuremath{\Sigma}', 'ε':r'\ensuremath{\epsilon}', 'ζ':r'\ensuremath{\zeta}', 'χ':r'\ensuremath{\chi}', 'Γ':r'\ensuremath{\Gamma}', 'ℓ':r'\ensuremath{\ell}', 'ℏ':r'\ensuremath{\hbar}', '∫':r'\ensuremath{\int}', '…':r'\ldots{}', ' ':' ',
 # ** THE REGISTERS' OWN MARKER GLYPHS, ADDED r2441+c54.188. **  They are emphasis in a register and
 # carry no content a paper needs, so they degrade to nothing rather than to a symbol.  Before this
 # the generator emitted them verbatim and LaTeX failed three hundred lines into a log with 'Unicode
@@ -96,6 +96,19 @@ def tex_escape(s):
             'verbatim: %s\n  in: %s\n  Add them to _UNI (empty string if register emphasis).'
             % (len(_left), ' '.join('U+%04X %s' % (ord(c), c) for c in _left), s[:160]))
     return s
+def one_state(s):
+    """Print the row's CURRENT state only.
+
+    The index is a ledger and keeps superseded readings on purpose (the dead branch
+    is the shape of the maze).  A paper's appendix presents ONE state.  So the
+    ledger keeps the 'Original claim:' tail and the generator stops printing it.
+    """
+    if not s:
+        return s
+    i = s.find('Original claim:')
+    return s[:i].rstrip().rstrip(';,.') if i > 0 else s
+
+
 def emit(rows, scope, out):
     title = "Appendix R\\quad Computational Receipts" if scope=='corpus' else "Appendix R\\quad Computational Receipts"
     L=[]
@@ -109,10 +122,10 @@ def emit(rows, scope, out):
         stem_tex = tex_escape(r['stem'])
         st = 'OK' if '✔' in r['status'] else tex_escape(r['status'])
         L.append("\\item[\\label{rcpt:%s}\\texttt{%s}]\\hfill\\textsf{[%s]}\\\\" % (r['stem'], stem_tex, st))
-        L.append("\\textit{%s} \\ (%s). %s" % (tex_escape(r['label']), tex_escape(r['claim']), ''))
-        L.append("\\emph{Computes:} %s" % tex_escape(r['computes']))
+        L.append("\\textit{%s} \\ (%s). %s" % (tex_escape(r['label']), tex_escape(one_state(r['claim'])), ''))
+        L.append("\\emph{Computes:} %s" % tex_escape(one_state(r['computes'])))
         if r['bound']:
-            L.append(" \\emph{Bound:} %s" % tex_escape(r['bound']))
+            L.append(" \\emph{Bound:} %s" % tex_escape(one_state(r['bound'])))
         L.append("\\ \\emph{Run:} \\texttt{python3 receipts/%s}" % tex_escape(r['path']))
     L.append("\\end{description}\\endgroup")
     open(out,'w').write("\n".join(L)+"\n")

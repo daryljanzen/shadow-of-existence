@@ -5,9 +5,28 @@ current: r2798+c54.228
 job: The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance
 ---
 
+> **▣ WHERE THE PARAMETRISATION ARC STANDS** *(opened r2104: get the background parsimonious and
+> measured before rebuilding the acoustic sector). Checked step by step against the corpus:*
+>
+> *· **① the ledger rewrite — LANDED.** `PHYSICAL_VALUES_LEDGER` carries the $x_0$ parametrisation and
+> the boxed $H^2(z)$ in its own terms. · **② the measurement equations — DONE IN THE LEDGER, NOT BANKED
+> INTO ANY PAPER.** $z_{\rm acc}=x_0-1$ and the closed-form routes appear in the ledger, this document
+> and `CORPUS_MAP`, and **in no paper**. · **③ worked against data — LANDED**, the BAO ladder against
+> DESI carried in P7 and its receipts. · **④ the lap, rigorously — LANDED**, the $240^\circ/120^\circ$
+> split about the branch point carried in P2, P3, P7 and P15. · **⑤ the dissolutions — LANDED**, the
+> coincidence of the epochs, the Hubble tension and the cosmological-constant problem each stated
+> natively in the papers. · **⑥ the fresh acoustic build — LIVE, and it is register row `PO-13`.***
+>
+> **⌗ Two things this exposes, and they are one class:** *step ② and the maximal-symmetry ledger
+> (`PO-18`) are both **work done in a ledger and never banked into a paper**. Recorded in `OWED`.*
+>
+> *The `PO-5`, `PO-6` and `PO-9` ids this document names belong to the register that closed at r3001;
+> the live rows are in `THE_REGISTER`, and what is open is `THE_FRONTIER.md`.*
+
+
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r2996
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r3092
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >

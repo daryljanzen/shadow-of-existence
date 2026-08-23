@@ -1,9 +1,24 @@
 ---
+kind: REFERENCE
+job: every advertised gap in the corpus, with the door that answers it
 name: entry-point-register
 job: What does the corpus advertise as open, in its own words? Read BEFORE BELIEVING A GAP.
 class: whole-corpus-instrument
 current: r2546+c54.204
 ---
+
+> **▣ REFERENCE — every gap the corpus ADVERTISES, with its door.** *Read before believing a gap. This
+> is the instrument for the failure the programme keeps having: a paper advertising an opening that
+> another paper has already walked through.*
+>
+> **⌗ It was recounted at r2546 and came out almost fully worked:** *142 rows, of which **24 unmarked
+> lines** — and of those, only **seven are sites at all**, five of the seven are **section headings**
+> (correctly unmarked, since a heading is not a claim), and the seventh already carried its verdict in
+> its own dig column: **"A PHANTOM, and I built it from the advertisement."***
+>
+> *The corpus has moved since r2546, so the catalogue is a snapshot rather than a live scan. **For what
+> is open, read `THE_FRONTIER.md`.***
+
 
 ## ⛭⛭⛭ RECOUNTED r2546 — the front is worked, and the count it advertised was 148 revisions stale
 

@@ -1,10 +1,20 @@
 ---
 name: the-method
-kind: STATE
-description: HOW THIS PROGRAMME WORKS — veins held open to be known inside and out, and leads worked and re-ordered against them. Read this before the board, before the register, before anything.
+kind: METHOD
+job: how the programme works — veins, leads, and the goal of exhaustive knowledge
+description: HOW THIS PROGRAMME WORKS — veins held open to be known inside and out, and leads worked and re-ordered against them. Read this before the register and before the frontier.
 sources: [chat]
 current: r2676+c54.211
 ---
+
+> **▣ METHOD — how this programme works.** *Veins held open to be known inside and out, and leads worked
+> and re-ordered against them. **The goal is exhaustive knowledge, not closure**: a question crossed out
+> is a piece of the problem space removed from the topology rather than explored, and preventing that is
+> what the method is for.*
+>
+> *Read it before the register and before the frontier. **`BOARD.md` is now a record** — the board it was
+> written against was generated from the register that closed at r3001; the live view is
+> `THE_FRONTIER.md`.*
 
 # THE METHOD
 

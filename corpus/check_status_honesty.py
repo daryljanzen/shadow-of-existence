@@ -45,7 +45,7 @@ def main():
     print()
     print('  check_status_honesty -- is any open row described as closed?')
     print()
-    raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
+    raw = open(os.path.join(ROOT, 'THE_REGISTER.md'), encoding='utf-8', errors='replace').read()
 
     state = {}
     for l in raw.split('\n'):

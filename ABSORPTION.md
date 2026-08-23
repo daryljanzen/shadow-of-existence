@@ -1,8 +1,8 @@
 ---
 name: absorption
-kind: SOURCE
+kind: RECORD
 current: r2572+c54.207
-job: The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced.
+job: the DECLARED and now COMPLETE record of the c54 fork's absorptions — fork revision, the main-line revision that absorbed it, the date. The fork line is closed, so no row will be added. Still read by check_absorption and check_currency for its closure declaration and final absorption.
 sources: [chat]
 ---
 
@@ -52,9 +52,18 @@ sources: [chat]
 
 > **⌗ `IN-FLIGHT:` — the fork names the revision it is cutting; the node clears the line when it absorbs it.**
 >
+> **⌖ THE FORK LINE IS CLOSED — declared r3096, not inferred.** *Daryl: the `c54` lines are no longer
+> running and `56` is fried; this line takes the work over. **So nothing is in flight and nothing further
+> will be absorbed — this record is COMPLETE, not behind.***
+>
+> *The gap the gate reported is therefore not an unrecorded absorption: `c54` numbers still appearing in
+> documents are **historical content**, not evidence of pending work. The last absorption is `c54.207`
+> (r2572), and that is where the fork era ends.*
+>
 > *Cleared at r2462 for c54.186 and kept current since. A revision neither absorbed nor declared in flight still FAILS, so the gate keeps its teeth.*
 
-IN-FLIGHT: c54.229
+IN-FLIGHT: none — the fork line is closed
+FORK-CLOSED: c54 (declared r3096, Daryl: the 54s are no longer running and 56 is fried)
 
 | fork revision | absorbed at | date |
 |---|---|---|

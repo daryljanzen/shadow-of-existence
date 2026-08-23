@@ -1,10 +1,18 @@
 ---
 name: the-weave
-kind: STATE
+kind: REFERENCE
 current: r2825+c54.232
 current: r2713+c54.215
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
+
+> **▣ REFERENCE — the orchestration grid.** *How the parts are one object: what joins to what, per
+> paper. That grid is corpus content and is what this document is for.*
+>
+> *Its `PO-` ids (`PO-1b`, `PO-1c`, `PO-2`, `PO-4`--`PO-7`, `PO-11`) belong to the register that closed
+> at **r3001**, and its head is a run of dated span-reports rather than a state. **For what is open, read
+> `THE_FRONTIER.md`.***
+
 
 > ## ⛭⛭⛭ r2949 — ONE HUNDRED REVISIONS IN WHICH THE CORPUS KEPT COMING BACK SOUND AND THE REGISTER DID NOT
 

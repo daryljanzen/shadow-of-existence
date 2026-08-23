@@ -1,9 +1,16 @@
 ---
+kind: REFERENCE
 name: physical-values-ledger
 job: What does the corpus compute, under which conventions? Read WHEN QUOTING A VALUE.
 class: whole-corpus-instrument
 current: r2671+c54.210
 ---
+
+> **▣ REFERENCE — §1w, the physical values, and part of the corpus.** *Where the programme's numbers are
+> held against what determines them.*
+
+
+
 
 > ## ⛭⛭ BROUGHT CURRENT c54.210 — **one number entered the corpus since c54.201, and it is the same number twice**
 

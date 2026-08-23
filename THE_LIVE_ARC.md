@@ -1,9 +1,23 @@
 ---
+kind: RECORD
 name: the-live-arc
 description: The live investigation arc — the spine of work in progress AND the register of every lead, dangler, puzzle and unexamined thing it throws off. Nothing surfaced may leave a turn unregistered. The arc does not close; new leads always go IN FRONT of the end state.
 sources: [cowork]
 current: r2785+c54.223
 ---
+
+> **⌖ RECORD — the lead register of the `L-` era, closed r3001.** *Its last entry is the closing act:
+> "the protected register is empty". **The live source is `THE_REGISTER.md`** and the live view is
+> `THE_FRONTIER.md`; the generators that read this file are guarded so they cannot regenerate views from
+> a closed register.*
+>
+> **⌗ NINE ROWS HERE WERE NEVER STRUCK, and they did not cross to the new register.** *Seven are
+> delivered or superseded and simply never got their mark — `L-165` and `L-171` alias `PO-6`/`PO-7`, both
+> struck; `L-811`, `L-814`, `L-816` and `L-825` record work done; `L-176`–`L-199` is a folded
+> bookkeeping range. **Two are live and unregistered:** `L-202`, the phase structure at the seam, which
+> **p0 carries as its own third frontier** and which is held do-not-assert in both directions; and
+> `L-218`, the reader package — the book in every format with an AI companion spun up from this corpus.*
+
 
 # THE LIVE ARC
 *Opened r2376+c54.10 as the dimension-result propagation arc; **restructured r2376+c54.16 (Daryl) into what it

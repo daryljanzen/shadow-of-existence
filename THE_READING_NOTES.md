@@ -1,9 +1,15 @@
 ---
+kind: STATE
+job: what P7's linear read establishes that the acoustic model must answer to
 name: the-reading-notes
 description: What the linear read of P7 has established that bears on the acoustic model. Every entry is a thing the model must be checked against or rebuilt on. Read this with THE_MODEL_LEDGER before touching RADSCAN.
 sources: [observer]
 current: r3054
 ---
+
+> **⌗ LIVE, and it belongs to register row `PO-13`.** *What the linear read of P7 establishes that the
+> acoustic model must answer to — kept because the read produces constraints faster than register rows can
+> hold them. Read with `THE_MODEL_LEDGER` before touching the scan.*
 
 # ▣ READING NOTES — what P7 says that the model must answer to
 

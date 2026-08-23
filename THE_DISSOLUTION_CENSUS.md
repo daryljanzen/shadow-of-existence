@@ -1,9 +1,26 @@
 ---
+kind: REFERENCE
 name: the-dissolution-census
 job: Which standard problem does this dissolve, at what weight, and at what ontological cost? Read BEFORE CLAIMING A DISSOLUTION.
 class: whole-corpus-instrument
 current: r2279
 ---
+
+> **▣ REFERENCE — the tracking ledger for P7's first synthesis.** *Its home was found at r1279: P7
+> `sec:applications-synthesis` is the **authoritative** statement and this document is its tracking
+> ledger. The per-paper sweep is **complete — all seventeen papers, 17/17**.*
+>
+> **⌗ What it still owes, in its own words:** *· the **reconciliation** — P7's section holds specimens
+> this document never enumerated (chronology/CTCs, gravitational-wave energy, the hole argument, the
+> problem of time), and those four are confirmed present in P7 as it now stands; · the **fork-span
+> audit** — whether the cosmological constant problem's two premises is an entry, which the document
+> calls "a reading, not a date".*
+>
+> *· The placement question it routed — whether P7's synthesis should carry the Abbott--Deser
+> mass-charge reading — is **discharged**: P7 carries it.*
+
+
+
 
 # THE DISSOLUTION CENSUS — A5.3 STAGE-0, swept at source
 

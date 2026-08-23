@@ -1,11 +1,22 @@
 ---
 name: the-equivalence-structures-census
-kind: STATE
+kind: REFERENCE
 current: r2676+c54.211
 class: whole-corpus-instrument
 job: Which apparent TWO are ONE object read two ways? — the corpus-wide equivalence-structures census, the dual of the pry-apart. Read BEFORE claiming two things are distinct. ⚠ Its own comb is OWED: 'the comprehensive comb the corpus has NOT yet done'.
 sources: [cowork]
 ---
+
+> **▣ REFERENCE — one of the three whole-corpus censuses**, with `THE_DISSOLUTION_CENSUS` and
+> `THE_PRY_APART_CENSUS`. *The equivalence structures it lists are content the corpus draws on.*
+>
+> **⌗ It states its own incompleteness, and that statement is still true:** *its comb is owed — "the
+> comprehensive comb the corpus has NOT yet done" — and the full list is not assembled (the BH/FLRW
+> reading is in p0; the list is not). **Registered at r2380 as `L-205`; that id did not survive the
+> register's turnover at r3009, so the comb is unregistered again.***
+
+
+
 
 > **⌗ CHECKED AGAINST c54.163→c54.185 AND DECLARED CURRENT r2449.** *The span's substantive content is **the derived
 > lensing and the acoustic front** (c54.181–184), **a lint rebuild** (c54.180), **bibitem repairs** (c54.185), and

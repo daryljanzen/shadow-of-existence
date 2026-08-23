@@ -1,3 +1,8 @@
+---
+kind: METHOD
+job: the cowork work order — the falsifier rule, the gradient rule, and its complement
+---
+
 # Work order for the Cowork node — r1103 base
 
 **Bundle: `cr_programme_MERGED_r1103.tar.gz`.** This is the merge: your r1102 base with the chat

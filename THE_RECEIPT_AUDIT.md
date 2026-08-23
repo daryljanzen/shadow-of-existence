@@ -1,10 +1,22 @@
 ---
 name: the-receipt-audit
-kind: STATE
+kind: REFERENCE
 current: r1631
 job: The receipt audit — what each receipt COMPUTES against what it ASSERTS in verdict-prose (the ◐ category).
 sources: [cowork]
 ---
+
+> **▣ REFERENCE — the receipt taxonomy, and part of the corpus.** *Every receipt tied to what it
+> **actually computes**, not to what its verdict claims. Its four-way taxonomy, defined r1324, is the
+> vocabulary the corpus uses for this, and `corpus/check_receipt_asserts.py` was built from it.*
+>
+> **⌗ THE PROBLEM IT WAS OPENED FOR IS NOW CLOSED.** *It recorded that the corpus had grown to ninety-five
+> cited receipts **with no path on which they could fail**, and named the dominant failure as "a receipt
+> that cannot fail". **The gate now enforces it: all 598 receipts carry a failure path, none carries only
+> a verdict token.** The taxonomy remains what the gate cannot certify — `✔✔ VERIFIED` still takes a
+> reading, not a run.*
+
+
 
 # THE RECEIPT AUDIT — every receipt tied to what it ACTUALLY computes, not what its verdict claims
 

@@ -1,8 +1,29 @@
 ---
+kind: REFERENCE
+job: complex analysis and monodromy against CR — the field that turned practices into theorems
 name: complex-analysis-ledger
 description: R-M's third field bake — complex analysis and monodromy thrown at CR. Opened r1867 (Phase 8), handed to by the quadric bake's Q4 (equianharmonic ⟺ j=0 ⟺ CM by ω). Discharges R-M arc station Ⓒ, marked NO ENTRY since r1805. Baseline, probes, four-part close.
 current: r2676+c54.211
 ---
+
+> **▣ REFERENCE — R-M's third field bake, and part of the corpus.** *Complex analysis and monodromy.
+> Its yield has a shape the others do not — **it turns practices into theorems**: in probe after probe
+> the corpus was already doing the right thing and the field said why, twice converting a checked fact
+> into a guaranteed one. Two of its queue's three entries are closed (the third puncture struck r1906,
+> the second reality axis closed r1888 and landed in P3).*
+>
+> **⌗ ALL THREE QUEUE ENTRIES ARE CLOSED.** *The third puncture struck r1906; the second reality axis
+> closed r1888 and landed in P3; and **growth and order at infinity was WORKED at r2391** — §4a ⓵ and ⓶,
+> which establish that the finite-plane restriction is the correct domain rather than a gap, and that
+> infinity is the total branch point of the three-sheeted cover and the cylinder's end.*
+>
+> ⚠ *§4d's queue text called that question "unasked" while §4a had answered it twice, and a register row
+> (`PO-20`) was opened off the stale text at r3096 and **struck at r3097** on reading §4a. The residue is
+> `§4a ⓷`, held there at reach and do-not-assert: whether $\sinh$'s order-1 exponential type has analytic
+> content for the rate is a suggestion without a receipt.*
+
+
+
 
 ## ⛭⛭ BROUGHT CURRENT c54.211 — **the monodromy lane moved twice, and once it was a rediscovery**
 
@@ -143,10 +164,14 @@ right and calls it the deck; the correction is a word, and the word is this fiel
 > the real axis plus every line $\mathrm{Re}\,z=\pi/2+k\pi$, and the crossings sit at $r=\pm\alpha$, **exactly
 > the de Sitter member's two nonzero horizons**, with $r=0$ on the real axis away from any crossing. Landed in
 > P3.*
-> ⛔ *· **GROWTH AND ORDER AT INFINITY** — *"$\sinh$'s essential singularity at infinity is outside the finite
-> lap —* ***noted, not used*** *— and whether the construction's boundedness has an analytic statement is
-> **unasked**."* ***That is a live item in a document nothing was watching, and it was not in the register.
-> Registered `L-209`.***
+> ✔ *· **GROWTH AND ORDER AT INFINITY** — **WORKED r2391 (`L-209`); the answer is at §4a ⓵ and ⓶ of this
+> same document.** *The finite-plane restriction is the correct domain rather than a gap, and infinity is
+> the total branch point of the three-sheeted cover and the cylinder's end — "it was never missing; it was
+> never joined to the question".*
+>
+> ⚠ ***This entry went on reading "unasked" after §4a had answered it twice, three screens away, and a
+> register row was opened off it at r3096 before being struck at r3097 on reading §4a.*** *The residue is
+> `§4a ⓷`, held there at reach and do-not-assert.*
 >
 > ⌗ **AND IT SHARPENS `L-203`:** *R-M's Ⓒ is a **re-entry on a handoff, not a first bake** — this field has been
 > baked once and closed. Ⓒ is `Q4`'s equianharmonic result arriving at a field whose ledger already exists, so

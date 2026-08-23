@@ -1,9 +1,17 @@
 ---
+kind: METHOD
+job: the revision strategy — substance into the owning paper first, the frontier item last
 name: the-bake
 description: THE REVISION PLAN, r3004, corrected. Substance into the owning papers FIRST; P7's frontier section updated LAST as the residue. Read before any stage; it says what changes and in what order.
 sources: [observer]
 current: r3004
 ---
+
+> **▣ METHOD — the revision strategy, and it is the order this work follows.** *Substance into the
+> **owning paper** first; P7's frontier section updated **last**, as the residue. Its two corrections are
+> the reason it is worth keeping: do not build a second authoritative section (P7's frontier section is
+> that section), and do not rewrite frontier items into statements of results (a result goes to the paper
+> that owns it, and the frontier item then shrinks to what genuinely remains, or goes).*
 
 # ▣ THE BAKE — the revision strategy, in the right order
 

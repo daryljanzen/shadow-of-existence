@@ -1,9 +1,20 @@
 ---
+kind: STATE
 name: corpus-revision-owed
 description: MEASURED r3002 — the gap between what the register now holds and what the papers say. Four named sites minimum, against 211 revisions and 2 corpus edits. Read before any claim that the corpus is current.
 sources: [observer]
 current: r3002
 ---
+
+> **⌗ ITS FOUR SITES ARE RE-VERIFIED AND STILL OWED (r3095).** *Each is `OWED` 599--602, with what the
+> re-check found: ① P7 `frontier:scalar` still carries as remaining two things that have run; ② P10 still
+> calls a computed spectrum "the open frontier" when what is open is the ordering (`PO-15`); ③ P15's
+> maturity marks; ④ P7 `frontier:sm` does not carry the matter sector's delivered results — **the eleven-
+> of-eleven closure and the bounded content mismatch sit in `frontier:quantum` instead, and triality is
+> absent from P7 entirely.***
+>
+> *Its measurement stands as the reason the pass exists: 211 revisions logged against two one-sentence
+> corpus edits.*
 
 # ▣ THE CORPUS REVISION OWED — measured, not estimated
 

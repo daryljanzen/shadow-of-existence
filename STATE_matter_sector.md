@@ -1,9 +1,19 @@
 ---
+kind: REFERENCE
+job: where the matter sector and the colour question stand
 name: state-matter-sector
 description: Where the matter sector and the colour question actually stand — read this before touching P13, P14, or family 12. Position, not history.
 sources: [chat]
 current: r2676+c54.211
 ---
+
+> **▣ REFERENCE — where the matter sector and the colour question stand.** *Read before touching P13 or
+> P14. Position, not history — which is what makes it worth keeping.*
+>
+> *Its `PO-3`, `PO-4`, `PO-5`, `PO-9` ids are struck in the register that closed at **r3001**. The live
+> matter row is **`PO-14`, the unbuilt chiral member** — the sector's four classes where five are
+> required. **For what is open, read `THE_FRONTIER.md`.***
+
 
 > ## ⚠⚠ THE SHEAR COUNT BELOW IS SUPERSEDED — annotated r2517
 >

@@ -5,6 +5,14 @@ sources: [cowork]
 current: r2676+c54.211
 ---
 
+> **⌗ ITS §PART FOUR WORK LIST IS LIVE AND UNREGISTERED — `OWED` 611.** *Eight ordered items, several
+> marked live in this document's own voice — `L-81`, the $\lambda$ spectrum on the leaf, called **"the
+> single highest-value computation on the board"**; `L-77`, whose sweep **"has never been run"**; `L-62`,
+> **"cheap, decisive, still unrun"**. **Verified r3095: none of the eight is in the live register or the
+> frontier, and none has a receipt.** Their `L-` ids did not survive the register's turnover at r3001.*
+>
+> *The sector's one live register row is **`PO-14`**, the unbuilt chiral member, which is none of these.*
+
 ## ⛭⛭⛭ BROUGHT CURRENT c54.211 — **the three routes off the $R$-grading are closed, and they close on ONE NUMBER**
 
 *`L-534` (c54.207) worked `PO-5`'s three named alternatives to "be a kernel". They fail in three

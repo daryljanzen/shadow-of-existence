@@ -1,10 +1,18 @@
 ---
 name: the-arsenal-index
-kind: STATE
+kind: REFERENCE
 current: r2676+c54.211
 job: The grid — which paper × which tool, run or owed, in what order. Campaign R (the two reach theatres) and Campaign C (opens · closures · dissolutions · equivalences · pry-aparts).
 sources: [cowork]
 ---
+
+> **▣ REFERENCE — the grid.** *Which paper $\times$ which tool, run or owed, in what order: Campaign R
+> (the two reach theatres) and Campaign C (opens, closures, dissolutions, equivalences, pry-aparts).*
+>
+> *It records its own worst failure and the lesson is the reason to keep it: a row read **"OWED P8--p0"
+> for roughly 140 revisions after the sweep that discharged it had finished.** **What is open is
+> `THE_FRONTIER.md`.***
+
 
 ## ⛭⛭ BROUGHT CURRENT c54.211 — **four gates entered the arsenal since c54.201, and one of them is a gate ON a gate**
 

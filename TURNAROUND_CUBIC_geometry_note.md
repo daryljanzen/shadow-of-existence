@@ -2,11 +2,19 @@
 name: turnaround-cubic-geometry-note
 description: The comoving-turnaround cubic (1−f=0) pinned — its positive geometry as the COMPLEX/kinematic leg of the substrate's one A₂/su(3) three-fold (horizon cubic = the real/causal leg), the su(3) 3/3̄ weight triangle, the E=1 collapse-branch kinematics, and its place on the full ℂ_r×ℂ_τ̃ Plate (fig F, the lift, the r=0 crossing). Read before the acoustic-transfer build. **⚠ r1622: this line previously said "a corpus-wide su(3)-lens bake is owed (P2/P3/p0/P8/P13/P6/P9)" — **the PROPAGATION is not owed**, struck; see §r1428–r1429 and §CORPUS-WIDE UPGRADE below. **⛭ But the question is not closed (r1672):** P5's `rem:a2-distinct` explicitly leaves open whether the geometric $A_2$ and su(3)'s coincide structurally — *"not a realised colour isometry" is not "a meaningless coincidence"* — so **whether the resemblance is meaningful remains an open drill-site**. What IS grounded and placed: the energy-family relation (P7 rem:tworealisations, r1429) and the temporal three-ness (P3 sec:temporal-threeness, r1621).**
 sources: [chat]
-kind: STATE
+kind: REFERENCE
 current_main: r1672
 job: The comoving-turnaround cubic pinned — the COMPLEX/kinematic leg of the substrate's A₂ three-fold (the horizon cubic being the real/causal leg), the E=1 collapse kinematics, and its place on the ℂ_r×ℂ_τ̃ Plate. Read before the acoustic-transfer build. Carries PROTECTED_OPEN PO-3's drill-site.
 current: r1672
 ---
+
+> **▣ REFERENCE — the comoving-turnaround cubic pinned.** *Its positive geometry as the complex/kinematic
+> leg of the substrate's threefold, the horizon cubic being the real/causal leg.*
+>
+> **⌗ Its protected question is closed.** *It records the $A_2$-meaning drill-site as `PO-3`, "which a node
+> may not close" — **`PO-3` was STRUCK at r2832**, and `PROTECTED_OPEN` itself closed at r3001. The live
+> question nearest it is register row **`PO-19`**, the $\sqrt[3]{2}$ ratio between the two turnings, which
+> `lem:twoturnings` does not touch.*
 
 > **⌗ INDEXED r2380 — it is live, and it CARRIES A PROTECTED QUESTION, which the cross-reference now says.**
 > *Its own r1672 line holds the drill-site open in exactly the right register:* ***"P5's `rem:a2-distinct`

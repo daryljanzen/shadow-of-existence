@@ -7,6 +7,14 @@ sources: [cowork]
 current: r2517+c54.201
 ---
 
+> **⌗ THE SPEC FOR `THE_PLAN`'s PARAMETRISATION-ARC STEP ⑥ — and that step is LIVE.** *Written before
+> any code so it can be checked on its own. Step ⑥ is the first-principles acoustic build, which is
+> register row **`PO-13`**.*
+>
+> *Its **figures** are superseded and say so in its own voice (annotated r2517, not erased) — the
+> withdrawals are the fork's own. **The boundary conditions, layer assignment and scope are not
+> superseded**, and are what the step is built against.*
+
 > ## ⚠⚠ THE ACOUSTIC FIGURES BELOW ARE SUPERSEDED — annotated r2517, not erased
 >
 > ***Four quantities have been withdrawn from this front, and the withdrawals are the fork's own:***

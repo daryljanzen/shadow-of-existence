@@ -1,11 +1,25 @@
 ---
 name: the-pry-apart-census
-kind: STATE
+kind: REFERENCE
 current: r2676+c54.211
 class: whole-corpus-instrument
 job: Which apparent ONE is TWO things a conflation welded? — the corpus-wide pry-apart census, the dual of the equivalence census. Read BEFORE trusting a standard identification. ⚠ Its own comb is OWED: 'OTHER homes to be FOUND by combing'.
 sources: [cowork]
 ---
+
+> **▣ REFERENCE — one of the three whole-corpus censuses**, with `THE_DISSOLUTION_CENSUS` and
+> `THE_EQUIVALENCE_STRUCTURES_CENSUS`. *The conflations it un-welds are content the corpus draws
+> on, and its per-entry form — a conflation, its two claims, and which one is available — is the
+> discipline it exists to hold.*
+>
+> **⌗ It states its own incompleteness, and that statement is still true:** *"the comprehensive comb
+> the corpus has NOT yet done", "OTHER homes to be FOUND by combing". **The comb was registered at
+> r2380 as `L-205` precisely because nothing carried it — and that id did not survive the register's
+> turnover at r3009, so the comb is once again owed work stated in a document and absent from the
+> register.** That is the same failure this document was registered to prevent.*
+
+
+
 
 ## ⛭⛭⛭ BROUGHT CURRENT c54.211 — **three conflations pried apart, and two of them were this line's own**
 

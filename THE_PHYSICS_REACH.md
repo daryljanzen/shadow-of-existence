@@ -1,10 +1,21 @@
 ---
 name: the-physics-reach
-kind: STATE
+kind: REFERENCE
 current: r2544+c54.204
 job: The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521, OWE DISCHARGED r2527+c54.202 (two companions remain); ⑥ WALKED r2522 (a one-clause fix, item 48); ⑦ WALKED r2536 (the entropy asymmetry, item 52); **the walk is COMPLETE r2544** per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home.
 sources: [cowork]
 ---
+
+> **▣ REFERENCE — the R-P theatre.** *The corpus's claims across physics, per domain. Its sharpest
+> result is a double absence, verified: the horizon flux is absent **twice over, for independent
+> reasons** — the Unruh--de Sitter rest term sits exactly at the $\kappa=1/\alpha$ where P1 already places
+> a Hartle--Hawking state, with no adjustable parameter, and $\kappa=0$ identically at the Nariai member
+> a collapse reaches.*
+>
+> **⌗ Its standing coverage owe is half discharged.** *Station ⑤ flagged $\langle T_{\mu\nu}\rangle$ and
+> trans-Planckian as "both at zero uses"; **re-measured r3095, trans-Planckian is no longer at zero**
+> (P1 and its receipts carry it), while $\langle T_{\mu\nu}\rangle$ still is. Recorded in `OWED`.*
+
 
 ## ✔✔✔ THE WALK IS COMPLETE r2544 — every station, and the class is six-for-six
 

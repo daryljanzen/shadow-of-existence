@@ -44,7 +44,11 @@ import re
 import sys
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
-REGISTER = os.path.join(ROOT, 'THE_LIVE_ARC.md')
+# both ID spaces: THE_LIVE_ARC carries the L-row history and stopped at r3001;
+# THE_REGISTER opened at r3009 and carries the live PO-rows.  A currency block
+# that reads only one of them cannot report the other's movement.
+REGISTERS = [os.path.join(ROOT, 'THE_LIVE_ARC.md'),
+             os.path.join(ROOT, 'THE_REGISTER.md')]
 
 # the grains that carry a currency block, and the baseline each declares from
 GRAINS = ['THE_PLAN.md', 'THE_OPEN_PROBLEMS_LEDGER.md']
@@ -57,12 +61,18 @@ PROSE_BEGIN = '<!-- GRAIN-CURRENCY:PROSE -->'
 def rows():
     """(id, struck, [revisions mentioned]) for every register row"""
     out = []
-    for line in open(REGISTER, encoding='utf-8', errors='replace').read().split('\n'):
-        m = re.match(r'^\|\s*(?:\*\*|~~)(L-\d+)(?:\*\*|~~)\s*\|', line)
+    lines = []
+    for reg in REGISTERS:
+        if os.path.exists(reg):
+            lines += open(reg, encoding='utf-8', errors='replace').read().split('\n')
+    for line in lines:
+        m = re.match(r'^\|\s*(?:\*\*|~~)((?:L|PO)-\d+)(?:\*\*|~~)\s*\|', line)
         if not m:
             continue
         struck = line.lstrip().startswith('| ~~')
         opened = [int(r) for r in re.findall(r'\b(?:REGISTERED|FOLDED|OPENED)\s+r(\d{4})', line)]
+        if not opened and not struck:
+            opened = [int(r) for r in re.findall(r'\bopened\s+r(\d{4})', line)]
         killed = [int(r) for r in re.findall(r'\bSTRUCK\s+r(\d{4})', line)]
         out.append((m.group(1), struck, opened, killed))
     return out
@@ -80,8 +90,11 @@ def since(baseline):
 
 def front():
     """the register's own highest main-line revision"""
-    t = open(REGISTER, encoding='utf-8', errors='replace').read()
-    rs = [int(x) for x in re.findall(r'\br(2\d{3})\b', t)]
+    t = ''
+    for reg in REGISTERS:
+        if os.path.exists(reg):
+            t += open(reg, encoding='utf-8', errors='replace').read()
+    rs = [int(x) for x in re.findall(r'\br(\d{4})\b', t)]
     return max(rs) if rs else 0
 
 

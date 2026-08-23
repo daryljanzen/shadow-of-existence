@@ -7,6 +7,12 @@ sources: [cowork]
 current: r1103
 ---
 
+> **⌗ HALF LANDED, AND THE HALF THAT HAS NOT IS A DECISION — `OWED` 605.** *P3's introduction now
+> declares the reframe in its own voice ("written object-first --- the swinging door on its hinge is the
+> thing"), and the hinge geometry is carried with $2\alpha$ derived as an output. **The section order
+> still leads with the projections**, §3 being "Three parameters, and what each one flattens" with the
+> hinge at §6. Its `L-206` registration did not survive the register's turnover at r3001.*
+
 > **⌗⌗ INDEXED r2380 — AND ITS UPGRADE HAS NOT LANDED, SO IT IS REGISTERED (`L-206`) RATHER THAN RETIRED.**
 > *Checked at source rather than inferred.* **P3 gained the hinge geometry** — `sec:hinge-geometry` and
 > `sec:tour` exist, 71 uses of "hinge"/"swing", and `prop:twoalpha` derives the $2\alpha$ placement as an

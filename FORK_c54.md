@@ -1,4 +1,6 @@
 ---
+kind: RECORD
+job: the fork's own changelog for c54.1–c54.35, frozen at that span
 name: fork-c54
 description: The c54 fork record — forked from r2376, what changed on it, what is carried as known debt, and what will collide on merge. Read this first when merging c54 back.
 sources: [cowork]
@@ -6,6 +8,15 @@ current: frozen
 ---
 
 > ## ⌗ FROZEN RECORD — covers c54.1–c54.35 only, marked r2539
+>
+> ⚠ ***AND ITS FORWARD POINTERS HAVE SINCE GONE THE SAME WAY, which is worth saying because this file
+> sends a reader to them for the present.*** *`THE_LIVE_ARC` is the lead register and it **closed at
+> r3001**; `THE_WORK` is the fork's front-level view of that same closed register; `CORPUS_MAP` is a
+> changelog current to c54.32. **For the present, read `THE_FRONTIER.md`** — generated from
+> `THE_REGISTER.md`, the live source. `ABSORPTION` and `THE_BASE_RATE` stand as this file cites them.*
+>
+> *This note is added rather than folded into the text below, because **rewriting a record to look
+> better is a different failure from letting it stand** — which is this file's own rule.*
 >
 > *This file narrates the fork's first thirty-five revisions and **stops there**. The fork is far past
 > that; **nothing in it is wrong, and none of it is current**.*

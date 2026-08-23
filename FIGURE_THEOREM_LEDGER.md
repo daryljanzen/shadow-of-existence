@@ -1,11 +1,19 @@
 ---
 name: figure-theorem-ledger
-kind: STATE
+kind: FORWARD
 current: n/a
 job: The figure–theorem ledger: which classical theorem each figure carries, and its receipts.
 sources: [cowork]
 class: forward-document
 ---
+
+> **▣ FORWARD — ahead of the corpus by construction, and exempt from the staleness test.** *Which classical
+> theorem each figure carries, with its receipts. Its own head: **"banked, not baked — nothing here has
+> gone into a paper"**, and it is declared exempt (`current: n/a`) for that reason.*
+>
+> ⛔ ***Do not date it against the corpus and do not retire it for disagreeing with one.*** *Where it
+> disagrees with a paper, **the disagreement is the work product** — a finding to work, not a defect to
+> fix. A header-versus-body contradiction inside it is still fair game; a comparison to the corpus is not.*
 
 <!-- FORWARD WORKING DOCUMENT. The figure programme's theorem ledger, r1108.
 

@@ -1,10 +1,18 @@
 ---
 name: the-quantum-joint
-kind: STATE
+kind: REFERENCE
 current: r2656+c54.208
 job: The QM sketchpad — a NOTEBOOK, not a ledger: draw the pipe-extensions as far as the evidence suggests, run the rigour alongside as the eraser and not the doorman. Nothing here is a banked corpus result. Register: cluster-J germs were struck c54.117; the quantum tower is L-165 = PO-6. ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
 sources: [cowork]
 ---
+
+> **▣ REFERENCE — the QM sketchpad.** *A **notebook, not a ledger**: the pipe-extensions drawn as far as
+> the evidence suggests, with the rigour run alongside as the eraser rather than the driver. Read as
+> exploration, and do not quote it as a result.*
+>
+> *Its `PO-6` is struck; the live quantum row is **`PO-15`, the ordering**. **What is open is
+> `THE_FRONTIER.md`.***
+
 
 ## ⛭⛭⛭ THE JOINT'S OTHER SIDE NOW HAS A NUMBER, AND IT IS A NUMBER THE LEDGER ALREADY HELD — added c54.208
 

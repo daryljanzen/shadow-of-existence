@@ -1,8 +1,22 @@
 ---
+kind: REFERENCE
+job: variational / action against CR — the field the corpus uses and never names
 name: variational-ledger
 description: R-M's sixth field bake — VARIATIONAL / ACTION, the corpus's starkest absence. Opened r1901 from the r1890 holes survey. Its opening question is whether the corpus's central claim about the Carter constant — that it EXPLAINS what GR carries as an unexplained gift — is a claim the variational apparatus supports.
 current: r2558+c54.206
 ---
+
+> **▣ REFERENCE — R-M's sixth field bake, and part of the corpus.** *Variational / action — **the field
+> the corpus uses and never names**. Its per-probe discipline is the thing to keep: a probe can return
+> **NO CHANGE OWED**, and the ledger says so rather than manufacturing a landing — a recognition about
+> an object taken as given owes no derivation of that object.*
+>
+> **⌗ Its one forward probe:** *`V5`, Noether and the one scale — a dilation is a symmetry of the causal
+> structure and not of the metric, so **the scale should be exactly the quantity carrying no conserved
+> current**, which would connect the constant ledger to a conservation statement from a fourth side.*
+
+
+
 
 ## ⛔⛔⛭ THE PREMISE IS FALSE — corrected r2558, 657 revisions after this ledger opened
 

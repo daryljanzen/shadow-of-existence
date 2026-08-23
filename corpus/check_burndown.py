@@ -24,12 +24,28 @@ from collections import Counter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, '..')
-ARC = os.path.join(ROOT, 'THE_LIVE_ARC.md')
+# ** r3095: THIS GATE READ `THE_LIVE_ARC`, THE REGISTER THAT CLOSED AT r3001 -- so it reported
+# "Register healthy" against a register whose rows are all struck.  That is the same failure the
+# arc's own opening finding names: a gate whose baseline sinks with what it measures reports
+# everything current.  It now reads the LIVE register and states which of its four checks it can
+# run there. **
+#
+# ** WHAT DOES NOT CARRY OVER: HOT INFLATION and LANGUISHING DEBT need a `HOT` flag on a row and
+# the kind split needs a `kind:WORK` tag.  The live register's rows are research questions with a
+# STEP and a state, and carry neither.
+#
+# ** AND THE FIRST DRAFT OF THIS CHANGE PROVED THE POINT AGAINST ITSELF: run on the live register
+# the HOT test reported 2 of 7 rows HOT.  Both were the substring `HOT` inside **photon** -- 17
+# occurrences in PO-13 alone.  That is exactly what the `kind()` helper below already warns about
+# ("a classifier that reads prose will classify prose"), and it is why HOT must be matched as an
+# EXPLICIT TAG rather than a substring. **
+ARC = os.path.join(ROOT, 'THE_REGISTER.md')
+LEGACY_ARC = os.path.join(ROOT, 'THE_LIVE_ARC.md')
 
 HOT_CEILING = 0.34          # Rule 5: HOT on more than a third of the open list is noise
 GRACE = 5                   # Rule 4: revisions a HOT lead may sit before it must be re-triaged
 
-ROW = re.compile(r'\|\s*(~~)?\*{0,2}(L-\d+)\*{0,2}(~~)?\s*\|(.*)$')
+ROW = re.compile(r'\|\s*(~~)?\*{0,2}((?:L|PO)-\d+[a-z]?)\*{0,2}(~~)?\s*\|(.*)$')
 REV = re.compile(r'c54\.(\d+)')
 FALSIFIER = re.compile(
     r'\b(?:falsifi(?:er|es)|refut(?:es|ation)\s+(?:of|clause)|a\s+falsifier\s+of\s+my\s+own'
@@ -48,7 +64,7 @@ DEFERRED = re.compile(r'DELIBERATELY ORDERED|DEFERRED BY STANDING INSTRUCTION', 
 
 def parse():
     if not os.path.exists(ARC):
-        print('  [FAIL] THE_LIVE_ARC.md is missing -- the register IS the gate.')
+        print('  [FAIL] THE_REGISTER.md is missing -- the register IS the gate.')
         sys.exit(1)
     out = []
     for ln in open(ARC, encoding='utf-8'):
@@ -72,7 +88,7 @@ def parse():
 def main():
     rows = parse()
     if not rows:
-        print('  [FAIL] no lead rows parsed from THE_LIVE_ARC.md')
+        print('  [FAIL] no rows parsed from THE_REGISTER.md')
         return 1
     cur = max((r['first_rev'] for r in rows if r['first_rev'] is not None), default=0)
     # r2378: the register now carries KIND.  QUESTION rows are open questions with possible
@@ -95,7 +111,9 @@ def main():
 
     openr = [r for r in ques if not r['struck']]
     struck = [r for r in ques if r['struck']]
-    hot = [r for r in openr if 'HOT' in r['state'].upper()]
+    # ** r3095: was `'HOT' in state` -- a substring test that matched **photon**.  An explicit
+    # tag only, on the same principle the kind() helper below states. **
+    hot = [r for r in openr if re.search(r'(?<![A-Za-z])HOT(?![A-Za-z])', r['state'].upper())]
     work_open = [r for r in work if not r['struck']]
 
     print(f"  LEAD REGISTER: {len(rows)} rows = {len(ques)} QUESTION + {len(work)} WORK")
@@ -186,6 +204,8 @@ def main():
 # and no computation filename may claim a bare lead ID.
 def _id_space():
     import re as _re, glob as _glob, os as _os
+    # ** the ID-space audit still walks the L- space, which is a CLOSED namespace: its job is to
+    # prove no ID was assigned and left unregistered there.  Kept, and labelled as historical. **
     _txt = open(_os.path.join(ROOT, 'THE_LIVE_ARC.md'), encoding='utf-8').read().split('\n')
     seen = {}
     for _ln in _txt:
@@ -227,9 +247,23 @@ def _id_space():
     print(f"    bands with allocations (gaps are checked only inside these): {', '.join(_open)}")
     _bad = 0
     if _gaps:
-        print(f"    [FAIL] IDs assigned but NEVER REGISTERED: "
-              f"{['L-%d' % n for n in _gaps]}")
-        print("           A lead given an ID and not entered as a row is LOST (Rule 2).")
+        # ** r3095: A GAP IS NOT ALWAYS A LOST LEAD, and reporting it as one was misleading on
+        # twelve of thirteen.  An ID with a receipt directory is WORK THAT RAN whose row did not
+        # survive -- the opposite failure from a lead that was never worked, and it needs a
+        # different disposition.  Both are still failures; they are no longer the same failure. **
+        _worked, _lost = [], []
+        for _n in _gaps:
+            _hits = _glob.glob(_os.path.join(ROOT, 'receipts', 'L%d_*' % _n))
+            (_worked if _hits else _lost).append(_n)
+        if _lost:
+            print(f"    [FAIL] IDs assigned and NEVER WORKED: {['L-%d' % n for n in _lost]}")
+            print("           A lead given an ID and not entered as a row is LOST (Rule 2).")
+        if _worked:
+            print(f"    [FAIL] IDs whose WORK RAN but whose ROW is gone: "
+                  f"{['L-%d' % n for n in _worked]}")
+            print("           Each has a receipts/ directory, so the work exists and the record")
+            print("           of it does not.  These need a live row or a home in a paper --")
+            print("           NOT re-opening as unworked leads.")
         _bad = 1
     if _dupes:
         print(f"    [FAIL] IDs appearing on more than one row: {['L-%d' % n for n in _dupes]}")

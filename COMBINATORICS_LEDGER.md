@@ -1,10 +1,42 @@
 ---
 name: combinatorics-ledger
-kind: STATE
+kind: FORWARD
 current: r2517+c54.201
 job: The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8.
 sources: [cowork]
 ---
+
+> **▣ FORWARD — Lane 8's ledger, and part of the corpus.** *It says so twice in its own voice: the header
+> opens **"FORWARD WORKING DOCUMENT"** and the body immediately asserts **"⛔ THE GRADIENT APPLIES · AND
+> SO DOES THE WEIGHT RULE"** — the lane being complete does not remove the gradient.* ⛔ ***Do not date it
+> against the corpus and do not retire it for disagreeing with one.*** *Its three registers are kept apart
+> on purpose, because the whole value of the document is that they do not blur.*
+>
+> *And it is part of the corpus:* *The countings, orbits and discrete
+> skeleton. **The lane is complete (r1157) and its result is baked into p0** (`sec:unification`'s seventh
+> face, "one circle"); this is the working record and the receipts behind it, and **every $\vdash$ is
+> receipted**.*
+>
+> **⌗ THREE THINGS IT STILL OWES, in its own words:** *· **the citation is owed FROM fourteen papers TO
+> this ledger** — they carry counts it adjudicated and **none of them cites it**, a bounded bibliography
+> edit rather than an open question; · **§0's note is owed a re-scoping to C** — the relation is
+> attempted and closed while the note eight lines under its own derivation still reads "named and
+> unrun"; · **undecided, now CLOSED**: $A=\sqrt[3]{2}\,\rho$ ties the comoving turnaround's
+> scale to a horizon root — **attempted and derived r3097** (`PO-19` struck). The turnaround is $1-f=0$
+> and the Hubble--Eddington radius is $f'=0$, so the two conditions differ by the one factor of two
+> between $2M/r$ and the balance of $2M/r^{2}$ against $2r/\alpha^{2}$ — **one factor of two inside one
+> cube root is the whole of the $\sqrt[3]{2}$**, exact for every $M$ and $\alpha$. *The tie to a horizon
+> **root** is Nariai-only: only at the double root do $f$ and $f'$ vanish together.* Banked in P7;
+> receipt `P07_cube_root_two_is_the_2M_over_M`.*
+>
+> *The undecided was not a shrug — it named the exact proposition nobody had, and forbade both cheap
+> answers. **Both were wrong in the event**: the relation is real, so the sceptical answer failed, and
+> its cause is one factor of two, so the credulous one overstated it. And `lem:twoturnings` was never
+> against it: that lemma denies an identification of the two $\mathbb{Z}_3$ symmetries, and this is a
+> ratio of two radii.*
+
+
+
 
 > **⌗ CHECKED AGAINST c54.163→c54.185 AND DECLARED CURRENT r2449.** *The span's substantive content is **the derived
 > lensing and the acoustic front** (c54.181–184), **a lint rebuild** (c54.180), **bibitem repairs** (c54.185), and

@@ -150,6 +150,26 @@ def main():
     # `IN-FLIGHT:` line naming the revisions cut but not yet absorbed -- already gated by
     # check_absorption, so it cannot drift.  Subtract those and the basis is the last revision both
     # lines have seen.  ** On 56's tree nothing is ever in flight, so this changes nothing there. **
+    # ** r3096: IF THE FORK LINE IS DECLARED CLOSED, THE BASIS IS THE LAST ABSORBED REVISION. **
+    # The in-flight subtraction below exists because a document brought current to the last
+    # absorption is not stale merely because the fork cut more.  ** When the fork STOPS, that is
+    # the same situation permanently: everything past the final absorption never entered this line
+    # at all, so measuring against a scraped `c54.232` measures against work this tree never
+    # received. **  Declared in ABSORPTION.md as `FORK-CLOSED:`, on the same standard as IN-FLIGHT.
+    _abs0 = os.path.join(ROOT, 'ABSORPTION.md')
+    if os.path.exists(_abs0):
+        _atxt = open(_abs0, encoding='utf-8', errors='replace').read()
+        if re.search(r'(?m)^FORK-CLOSED:', _atxt):
+            _rows = [int(x) for x in re.findall(r'\|\s*c54\.(\d+)\s*\|', _atxt)]
+            if _rows:
+                _final = max(_rows)
+                print(f"  fork front scraped: c54.{cur}   (from {', '.join(front)})")
+                print(f"  ** THE FORK LINE IS CLOSED. Measuring against c54.{_final}, the FINAL "
+                      f"absorption: **")
+                print("     nothing past it ever entered this line, so a lag against a scraped")
+                print("     higher number would measure work this tree never received.")
+                cur = _final
+
     inflight = set()
     _abs = os.path.join(ROOT, 'ABSORPTION.md')
     if os.path.exists(_abs):

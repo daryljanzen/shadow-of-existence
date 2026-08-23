@@ -1,10 +1,18 @@
 ---
 name: the-mathematics-reach
-kind: STATE
+kind: REFERENCE
 current: r2656+c54.208
 job: The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. ⛭ ALL FIVE STATIONS WALKED r2490–r2493 — and Ⓒ, Ⓖ, Ⓗ CONVERGED on one knot: which order-six group acts. See the block below. Registered as L-203. ⛭ **Ⓕ IS WALKED — `F13` (node 55, verified r2442) settled it, and it is FOUR real forms of $\mathfrak{so}(6,\mathbb C)$, not two: $\mathfrak{su}(3)$ embeds in exactly ONE, the compact form. This frontmatter carried Ⓕ as owed for forty-eight revisions after its own ① block recorded the answer.**
 sources: [cowork]
 ---
+
+> **▣ REFERENCE — the R-M theatre.** *Throw a whole field of mathematics at the corpus's architecture
+> and sift what bites. **All five stations walked (r2490--r2493)**; the six field bakes it produced are
+> the `*_LEDGER` documents, each carrying its own findings.*
+>
+> *Its `PO-4`, `PO-5`, `PO-9` ids are struck in the register that closed at r3001. **What is open is
+> `THE_FRONTIER.md`.***
+
 
 ## ⛭⛭⛭ TWO FIELDS THREW BACK A *NEGATIVE* AND IT WAS THE SAME NEGATIVE — added c54.208
 

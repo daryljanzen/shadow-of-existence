@@ -1,9 +1,18 @@
 ---
+kind: RECORD
 name: protected-open
 description: The register of open research questions. A row is STRUCK when its OBJECT is answered and the answer is receipted (r2830) — nothing else gates it. Read before writing any negative verdict; the gate `corpus/check_kills.py` enforces it. A node may write a bounded negative; a closure on a protected item is made in the register with a kill receipt.
 sources: [cowork]
 current: r2830+c54.232
 ---
+
+> **⌖ RECORD — the protected register, closed r3001 with all fourteen rows struck.** *Verified: no row
+> here is unstruck. **The live source is `THE_REGISTER.md`**, reopened r3009.*
+>
+> *Its rows' reasoning is kept because a row's argument outlives its strike — but nothing here is open,
+> and a gate reading this file for open rows can never fail. `corpus/check_status_honesty.py` was doing
+> exactly that and now reads the live register.*
+
 
 ## ⛭⛭⛭ WHAT THESE ITEMS ARE — restated r2499, because this line had them wrong twice in two ways
 

@@ -112,80 +112,45 @@ reading the compound form until r2550.***
 
 > **⌗ WHY THIS BLOCK IS GENERATED (r2381).** *This file's rows were hand-maintained, and its own banner history diagnoses the failure twice: **"a currency banner that does not move when the document does is the stale-header class the programme sweeps for"**, and **"the banner's own class is the one r1746's header-vs-body check exists for, and it went stale again inside the session that installed the check."** ***A document that has diagnosed its own staleness twice and stayed hand-maintained is asking to be generated.*** The navigation tree, front matter and corpus table below stay hand-written — those are **structure**, not state.*
 
-### SOURCE (2)
+### SOURCE (1)
 
 | document | job |
 |---|---|
-| `ABSORPTION.md` | The DECLARED record of every absorption of the working fork — fork revision, the main-line revision that absorbed it, the date. Read by corpus/check_absorption.py. Nothing else in the tree can prove the fork has advanced. |
-| `THE_LIVE_ARC.md` | the lead register — the one live edge |
+| `THE_REGISTER.md` | the lead register — the one live source of what is open |
 
-### VIEW (5)
+### VIEW (3)
 
 | document | job |
 |---|---|
 | `DOCUMENT_LEDGER.md` | (declared in frontmatter) |
-| `ID_SPACE_CENSUS.md` | (declared in frontmatter) |
 | `INDEX.md` | The corpus index — restored r2427 after the duplicate sweep deleted it at r2385/r2393 (a 49 KB live document removed because a 32 KB stub shared its name in retired/). |
-| `THE_BURN_DOWN.md` | (declared in frontmatter) |
-| `WHATS_TEED_UP.md` | (declared in frontmatter) |
+| `THE_FRONTIER.md` | the open problems in dependency order — generated from THE_REGISTER, the one source |
 
-### STATE (47)
+### STATE (14)
 
 | document | job |
 |---|---|
 | `ACOUSTIC_BUILD_SETUP.md` | The boundary conditions, layer assignment and scope for THE_PLAN's parametrisation-arc step ⑥ — the first-principles acoustic build. WRITTEN BEFORE ANY CODE so it can be checked on its own. |
-| `BOARD.md` | (declared in frontmatter) |
-| `CATEGORY_THEORY_LEDGER.md` | field ledger — probes and their verdicts |
-| `COLLAPSE_EXCURSION_TRANSFER_build.md` | PHASE 7's ATTACK MANUAL — the one build on the progenitor collapse excursion (L2) behind open-problems families 1/3/4/5. Referenced live by eleven documents including THE_PLAN, PHASE7_BUILD_LEDGER and both open-problems documents. |
-| `COMBINATORICS_LEDGER.md` | The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8. |
-| `COMPANION_SPEC.md` | (declared in frontmatter) |
-| `COMPLEX_ANALYSIS_LEDGER.md` | field ledger — probes and their verdicts |
-| `CONFORMAL_GEOMETRY_LEDGER.md` | field ledger — probes and their verdicts |
 | `CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md` | Consolidate the plan and index the programme — the arcs (§2), the sequence (§13), the standing actions (§14), and §16 THE DEVELOPMENT RECORD, which is where RG-1 moves a paper's past state. |
-| `CORPUS_MAP.md` | (declared in frontmatter) |
-| `CR_AND_THE_HIGGS.md` | R-P station 6h (L-217) — how CR and the Higgs sector relate, in coherence and in correspondence. THE FALSIFICATION CONDITIONS ARE STATED FIRST, BEFORE THE CLAIM. Read before asserting complementarity. |
-| `CR_COLLAPSE_HELD_PICTURE.md` | BUILD MATERIAL for THE_PLAN item 2 / PHASE 7 — the contracting-phase picture held whole: the L2 leg the acoustic driving lives on. Read WITH COLLAPSE_EXCURSION_TRANSFER_build.md (the attack manual) before starting that build. |
-| `ENTRY_POINT_REGISTER.md` | What does the corpus advertise as open, in its own words? Read BEFORE BELIEVING A GAP. |
+| `CORPUS_REVISION_OWED.md` | (declared in frontmatter) |
 | `FIGURE_SWEEP.md` | The figure programme's state — every figure against what it must carry. |
-| `FIGURE_THEOREM_LEDGER.md` | The figure–theorem ledger: which classical theorem each figure carries, and its receipts. |
-| `FORK_c54.md` | the c54 fork's own record |
-| `OPEN_PROBLEMS_MAP.md` | The work-CLUSTERS, the readiness/priority sort and the runway — a VIEW of the lead register since c54.90, never a second source of truth for what is open |
-| `OPTICS_LENSING_LEDGER.md` | field ledger — probes and their verdicts |
 | `OWED.md` | (declared in frontmatter) |
 | `P3_SWING_ONTOLOGY_hinge-and-door.md` | The usable ontological skeleton for the SECOND major P3 upgrade — lead with the physical object (one hinge, one door, one swing) and DERIVE w, u, 3w as the shadows it throws. Registered as L-206; the upgrade has not landed. |
-| `PHASE7_BUILD_LEDGER.md` | the Phase-7 build record |
-| `PHYSICAL_VALUES_LEDGER.md` | What does the corpus compute, under which conventions? Read WHEN QUOTING A VALUE. |
-| `QUADRIC_GEOMETRY_LEDGER.md` | field ledger — probes and their verdicts |
-| `RP_34_GR_BASELINE.md` | R-P station ③④ (L-204), §0 BASELINE — what the corpus already holds in GR's four named areas, surveyed and RUN before any question is asked. Read before opening the station. |
-| `STATE_matter_sector.md` | where the matter sector stands |
+| `PHASE7_BUILD_LEDGER.md` | the collapse-excursion build ledger — the plan, whose execution lives elsewhere |
 | `STATE_programme.md` | where the programme stands |
-| `SYNTHESIS_FIGURE_STORYBOARD.md` | The STANDING WORKING DOCUMENT driving the fig:dS_SdS figure-work phase (P7). AHEAD OF THE CORPUS BY CONSTRUCTION — do NOT date it against the corpus and do NOT make it compliant; a disagreement with a paper is the work product. |
-| `THE_ARSENAL_INDEX.md` | The grid — which paper × which tool, run or owed, in what order. Campaign R (the two reach theatres) and Campaign C (opens · closures · dissolutions · equivalences · pry-aparts). |
-| `THE_BASE_RATE.md` | A5.5 worked — the reference class for least-arbitrariness arguments in physics, assembled neutrally and then judged. The fork added 11 entries across c54.114–153; read BEFORE claiming a least-arbitrariness win. |
-| `THE_DIMENSION_DEEPENING_AUDIT.md` | What the four-dimensionality result owes the reach programme — every R-M and R-P bake re-read against it, with a verdict for each. Read BEFORE trusting any bake's constants as structural. |
-| `THE_DISSOLUTION_CENSUS.md` | Which standard problem does this dissolve, at what weight, and at what ontological cost? Read BEFORE CLAIMING A DISSOLUTION. |
-| `THE_EQUIVALENCE_STRUCTURES_CENSUS.md` | Which apparent TWO are ONE object read two ways? — the corpus-wide equivalence-structures census, the dual of the pry-apart. Read BEFORE claiming two things are distinct. ⚠ Its own comb is OWED: 'the comprehensive comb the corpus has NOT yet done'. |
-| `THE_EVOLUTION_MAP.md` | Working in paper N, what may I stand on and what may I not yet assume? Read BEFORE STANDING ON A RESULT. |
 | `THE_FERMION_SECTOR_GEOMETRY.md` | the fermion sector read in the geometry |
-| `THE_MATHEMATICS_REACH.md` | The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. ⛭ ALL FIVE STATIONS WALKED r2490–r2493 — and Ⓒ, Ⓖ, Ⓗ CONVERGED on one knot: which order-six group acts. See the block below. Registered as L-203. ⛭ **Ⓕ IS WALKED — `F13` (node 55, verified r2442) s… |
-| `THE_METHOD.md` | (declared in frontmatter) |
+| `THE_MODEL_LEDGER.md` | every switch in the acoustic scan against the theory that determines it |
 | `THE_OPEN_PROBLEMS_LEDGER.md` | The open-problems ledger by FAMILY — what each family is, what closed it or holds it open, and its register pointer. The fork writes here; this line absorbs it. |
-| `THE_PHYSICS_REACH.md` | The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521, OWE DISCHARGED r2527+c54.202 (two companions remain); ⑥ WALKED r2522 (a one-clause fix, item 48); ⑦ WALKED r2536 (the entropy asymmetry, item 52); *… |
 | `THE_PLAN.md` | The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance |
-| `THE_PRY_APART_CENSUS.md` | Which apparent ONE is TWO things a conflation welded? — the corpus-wide pry-apart census, the dual of the equivalence census. Read BEFORE trusting a standard identification. ⚠ Its own comb is OWED: 'OTHER homes to be FOUND by combing'. |
-| `THE_QUANTUM_JOINT.md` | The QM sketchpad — a NOTEBOOK, not a ledger: draw the pipe-extensions as far as the evidence suggests, run the rigour alongside as the eraser and not the doorman. Nothing here is a banked corpus result. Register: cluster-J germs were struck c54.117; the quantum tower is L-165 = PO-6. ⛭⛭ **⟨STRUCK r3… |
-| `THE_RECEIPT_AUDIT.md` | The receipt audit — what each receipt COMPUTES against what it ASSERTS in verdict-prose (the ◐ category). |
+| `THE_READING_NOTES.md` | what P7's linear read establishes that the acoustic model must answer to |
 | `THE_STAGED_REVISIONS.md` | (declared in frontmatter) |
-| `THE_WEAVE.md` | How the parts are one object — the per-paper orchestration grid and the record of what joins to what |
-| `THE_WORK.md` | The working fork's OWN front-level view of the register — fronts, not rows. Absorbed by this line, never edited by it (ARC 15's prime directive). |
-| `TURNAROUND_CUBIC_geometry_note.md` | The comoving-turnaround cubic pinned — the COMPLEX/kinematic leg of the substrate's A₂ three-fold (the horizon cubic being the real/causal leg), the E=1 collapse kinematics, and its place on the ℂ_r×ℂ_τ̃ Plate. Read before the acoustic-transfer build. Carries PROTECTED_OPEN PO-3's drill-site. |
-| `VARIATIONAL_LEDGER.md` | field ledger — probes and their verdicts |
 
-### METHOD (30)
+### METHOD (34)
 
 | document | job |
 |---|---|
 | `BIBKEY_ALIAS_MAP.md` | rules / guards / canon |
+| `COMPANION_SPEC.md` | what the companion may assert, what it must refuse, and how the difference is checked |
 | `DISPATCHING_COWORK.md` | rules / guards / canon |
 | `FOUNDATIONAL_DEPENDENCY_MAP.md` | rules / guards / canon |
 | `GEOMETRY_PHYSICS_TAXONOMY.md` | rules / guards / canon |
@@ -195,19 +160,22 @@ reading the compound form until r2550.***
 | `KICKOFF_CODA_REVIEW.md` | A review methodology, not a spent task — Pass A faithful account then STOP; Pass B four questions plus one inward; three verdicts; a finding whose receipt carries no first-hand extract with a locator is structurally void. LOWEST PRIORITY (Daryl, standing): kept where it is, not to be raised again. |
 | `NOTATION_GLOSSARY.md` | rules / guards / canon |
 | `ONTOLOGY_FOUNDATION_INDEX.md` | What is forced here, and by what chain? — each forcing pinned once, whole, with its joints and its guard. Read WHILE READING A PAPER. |
-| `PROTECTED_OPEN.md` | rules / guards / canon |
 | `README.md` | rules / guards / canon |
 | `SETUP_THE_REPO.md` | THE STANDING INSTRUCTIONS for creating the GitHub repository and giving this line access to it. Gated on Daryl being at a computer, or on the decision to publish. ASK FOR THIS BY NAME — "dig up the repo instructions". |
 | `SOURCE_VETTING.md` | rules / guards / canon |
 | `THE_ARSENAL.md` | (declared in frontmatter) |
+| `THE_BAKE.md` | the revision strategy — substance into the owning paper first, the frontier item last |
 | `THE_CLOSURE_LEDGER.md` | Where the closure self-check is DEFINED, with its four verdicts: OPENED · WORKED-SHUT · SURFACED · CODA-FIX. |
 | `THE_FRONT_EDGE.md` | (declared in frontmatter) |
 | `THE_GEOMETRY_AND_THE_PHYSICS.md` | The PEDAGOGICAL DISTILLATION of the geometry bake — the argument in order, in prose, every step an identity, a definition or a verified computation. The lens's first depth (THE_CODA §the lens: distillation → conceptual logic → formalised papers). |
 | `THE_HANDOFF.md` | (declared in frontmatter) |
 | `THE_HUB.md` | How the programme lives in a git repository — branch discipline, the register's merge rule, what CI enforces and what it cannot. Read BEFORE pushing, and BEFORE assuming git has solved a problem it has not. |
+| `THE_METHOD.md` | how the programme works — veins, leads, and the goal of exhaustive knowledge |
 | `THE_OPERATING_MANUAL.md` | rules / guards / canon |
 | `THE_PRIORITY.md` | (declared in frontmatter) |
+| `TURN_PROTOCOL.md` | rules / guards / canon |
 | `VISION_FIELD_GUIDE.md` | rules / guards / canon |
+| `WORK_ORDER_cowork_r1103.md` | the cowork work order — the falsifier rule, the gradient rule, and its complement |
 | `capstones/CODA_FIELD_NOTE.md` | the why-layer — read at spin-up steps 8 and 8b |
 | `capstones/DEMONSTRATING_THE_WAY.md` | the why-layer — read at spin-up steps 8 and 8b |
 | `capstones/README.md` | the why-layer — read at spin-up steps 8 and 8b |
@@ -216,10 +184,52 @@ reading the compound form until r2550.***
 | `capstones/THE_INTERFERENCE_ENGINE.md` | the why-layer — read at spin-up steps 8 and 8b |
 | `capstones/THE_WISDOM_LEDGER.md` | Is the scrap in front of me still live, and what would retire it? Read AT THE MOMENT OF USE. The only one of the six about the NODE rather than the corpus. |
 
-### RECORD (81)
+### REFERENCE (25)
 
 | document | job |
 |---|---|
+| `CATEGORY_THEORY_LEDGER.md` | category theory against CR — the corpus's largest unlisted field |
+| `COMPLEX_ANALYSIS_LEDGER.md` | complex analysis and monodromy against CR — the field that turned practices into theorems |
+| `CONFORMAL_GEOMETRY_LEDGER.md` | conformal / Möbius geometry against the substrate — the field that refused, and why |
+| `CR_AND_THE_HIGGS.md` | R-P station 6h (L-217) — how CR and the Higgs sector relate, in coherence and in correspondence. THE FALSIFICATION CONDITIONS ARE STATED FIRST, BEFORE THE CLAIM. Read before asserting complementarity. |
+| `CR_COLLAPSE_HELD_PICTURE.md` | BUILD MATERIAL for THE_PLAN item 2 / PHASE 7 — the contracting-phase picture held whole: the L2 leg the acoustic driving lives on. Read WITH COLLAPSE_EXCURSION_TRANSFER_build.md (the attack manual) before starting that build. |
+| `ENTRY_POINT_REGISTER.md` | every advertised gap in the corpus, with the door that answers it |
+| `OPTICS_LENSING_LEDGER.md` | observational optics and lensing against CR — confirmations, and the dimension clause they forced |
+| `PHYSICAL_VALUES_LEDGER.md` | What does the corpus compute, under which conventions? Read WHEN QUOTING A VALUE. |
+| `QUADRIC_GEOMETRY_LEDGER.md` | projective geometry of quadrics against the CR substrate — the CK metric identification, and the ladder gap it exposes |
+| `RP_34_GR_BASELINE.md` | R-P station ③④ (L-204), §0 BASELINE — what the corpus already holds in GR's four named areas, surveyed and RUN before any question is asked. Read before opening the station. |
+| `STATE_matter_sector.md` | where the matter sector and the colour question stand |
+| `THE_ARSENAL_INDEX.md` | The grid — which paper × which tool, run or owed, in what order. Campaign R (the two reach theatres) and Campaign C (opens · closures · dissolutions · equivalences · pry-aparts). |
+| `THE_BASE_RATE.md` | A5.5 worked — the reference class for least-arbitrariness arguments in physics, assembled neutrally and then judged. The fork added 11 entries across c54.114–153; read BEFORE claiming a least-arbitrariness win. |
+| `THE_DIMENSION_DEEPENING_AUDIT.md` | What the four-dimensionality result owes the reach programme — every R-M and R-P bake re-read against it, with a verdict for each. Read BEFORE trusting any bake's constants as structural. |
+| `THE_DISSOLUTION_CENSUS.md` | Which standard problem does this dissolve, at what weight, and at what ontological cost? Read BEFORE CLAIMING A DISSOLUTION. |
+| `THE_EQUIVALENCE_STRUCTURES_CENSUS.md` | Which apparent TWO are ONE object read two ways? — the corpus-wide equivalence-structures census, the dual of the pry-apart. Read BEFORE claiming two things are distinct. ⚠ Its own comb is OWED: 'the comprehensive comb the corpus has NOT yet done'. |
+| `THE_EVOLUTION_MAP.md` | Working in paper N, what may I stand on and what may I not yet assume? Read BEFORE STANDING ON A RESULT. |
+| `THE_MATHEMATICS_REACH.md` | The R-M theatre — throw a whole field of mathematics at the corpus's architecture and sift what bites. ⛭ ALL FIVE STATIONS WALKED r2490–r2493 — and Ⓒ, Ⓖ, Ⓗ CONVERGED on one knot: which order-six group acts. See the block below. Registered as L-203. ⛭ **Ⓕ IS WALKED — `F13` (node 55, verified r2442) s… |
+| `THE_PHYSICS_REACH.md` | The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521, OWE DISCHARGED r2527+c54.202 (two companions remain); ⑥ WALKED r2522 (a one-clause fix, item 48); ⑦ WALKED r2536 (the entropy asymmetry, item 52); *… |
+| `THE_PRY_APART_CENSUS.md` | Which apparent ONE is TWO things a conflation welded? — the corpus-wide pry-apart census, the dual of the equivalence census. Read BEFORE trusting a standard identification. ⚠ Its own comb is OWED: 'OTHER homes to be FOUND by combing'. |
+| `THE_QUANTUM_JOINT.md` | The QM sketchpad — a NOTEBOOK, not a ledger: draw the pipe-extensions as far as the evidence suggests, run the rigour alongside as the eraser and not the doorman. Nothing here is a banked corpus result. Register: cluster-J germs were struck c54.117; the quantum tower is L-165 = PO-6. ⛭⛭ **⟨STRUCK r3… |
+| `THE_RECEIPT_AUDIT.md` | The receipt audit — what each receipt COMPUTES against what it ASSERTS in verdict-prose (the ◐ category). |
+| `THE_WEAVE.md` | How the parts are one object — the per-paper orchestration grid and the record of what joins to what |
+| `TURNAROUND_CUBIC_geometry_note.md` | The comoving-turnaround cubic pinned — the COMPLEX/kinematic leg of the substrate's A₂ three-fold (the horizon cubic being the real/causal leg), the E=1 collapse kinematics, and its place on the ℂ_r×ℂ_τ̃ Plate. Read before the acoustic-transfer build. Carries PROTECTED_OPEN PO-3's drill-site. |
+| `VARIATIONAL_LEDGER.md` | variational / action against CR — the field the corpus uses and never names |
+
+### FORWARD (5)
+
+| document | job |
+|---|---|
+| `C40_EXTRACTION_r1107.md` | (declared in frontmatter) |
+| `C40_HARVEST_r1064-r1087.md` | (declared in frontmatter) |
+| `COMBINATORICS_LEDGER.md` | The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8. |
+| `FIGURE_THEOREM_LEDGER.md` | The figure–theorem ledger: which classical theorem each figure carries, and its receipts. |
+| `SYNTHESIS_FIGURE_STORYBOARD.md` | The STANDING WORKING DOCUMENT driving the fig:dS_SdS figure-work phase (P7). AHEAD OF THE CORPUS BY CONSTRUCTION — do NOT date it against the corpus and do NOT make it compliant; a disagreement with a paper is the work product. |
+
+### RECORD (94)
+
+| document | job |
+|---|---|
+| `ABSORPTION.md` | the DECLARED and now COMPLETE record of the c54 fork's absorptions — fork revision, the main-line revision that absorbed it, the date. The fork line is closed, so no row will be added. Still read by check_absorption and check_currency for its closure declaration and final absorption. |
+| `BOARD.md` | a view of the register that closed at r3001; the live view is THE_FRONTIER.md |
 | `BUNDLE_README.md` | frozen record |
 | `BUNDLE_r1062.md` | frozen record |
 | `BUNDLE_r1063.md` | frozen record |
@@ -255,17 +265,18 @@ reading the compound form until r2550.***
 | `BUNDLE_r989.md` | frozen record |
 | `BUNDLE_r990.md` | frozen record |
 | `BUNDLE_r990_complete.md` | frozen record |
-| `C40_EXTRACTION_r1107.md` | frozen record |
-| `C40_HARVEST_r1064-r1087.md` | frozen record |
 | `CAPSTONE_the-fog-lifting_transcript.md` | frozen record |
 | `CLAIMS.md` | (declared in frontmatter) |
 | `CLAUDE_CODE_WORK_ORDER.md` | THE ITERATING WORK ORDER — for a Claude Code session that can run for hours. A ladder from mechanical to edge work, the discipline that makes unattended research safe, and the two ownership boundaries. Read with THE_HUB and NEXT.md. |
 | `CODA_READ_NOTES_r2730.md` | (declared in frontmatter) |
+| `COLLAPSE_EXCURSION_TRANSFER_build.md` | PHASE 7's ATTACK MANUAL — the one build on the progenitor collapse excursion (L2) behind open-problems families 1/3/4/5. Referenced live by eleven documents including THE_PLAN, PHASE7_BUILD_LEDGER and both open-problems documents. |
+| `CORPUS_MAP.md` | (declared in frontmatter) |
 | `CREDO_birth_transcript.md` | frozen record |
 | `CREDO_from-c1_transcript.md` | frozen record |
 | `DEMONSTRATING_THE_WAY_full-transcript.md` | frozen record |
 | `FOLD52_ASSESSMENT.md` | the fork's assessment of the abandoned 52/53 ACOUSTIC line -- what it holds, what to take, and what could not be verified |
 | `FORK_HISTORY_c54.txt` | frozen record |
+| `FORK_c54.md` | the fork's own changelog for c54.1–c54.35, frozen at that span |
 | `FOR_54.md` | THE INBOX — what the observer line has found in the working fork's text and routed rather than edited. Read on arrival, and after each absorption. Items are dropped from this file the revision they are applied. |
 | `FOR_56.md` | THE RETURN INBOX — what the working fork has found in the observer line's instruments and registers, routed rather than edited. The mirror of FOR_54.md. Items are dropped from this file the revision they are applied. |
 | `FOR_57.md` | THE THIRD LINE'S INBOX — what the working fork (54) has found in the Claude Code node's work, routed rather than edited. The mirror of FOR_54.md and FOR_56.md. Items are dropped the revision they are applied. |
@@ -273,19 +284,29 @@ reading the compound form until r2550.***
 | `HANDOVER_c54.191.md` | What the c54 session that ran c54.185–c54.191 knew that the ledgers do not hold. Written for whoever picks up front #2 cold. Read once, then work. |
 | `HISTORICAL_CONTEXT_einstein_cosmological_considerations.md` | frozen record |
 | `HISTORICAL_CONTEXT_the_initial_rate_problem.md` | frozen record |
+| `ID_SPACE_CENSUS.md` | a view of the register that closed at r3001; the live view is THE_FRONTIER.md |
 | `LATENT_HISTORY.txt` | frozen record |
 | `NEXT.md` | THE WORK ORDER — what to do next, in order, with enough detail to start cold. Read after THE_HUB on arrival. Delete a block when it lands. |
+| `OPEN_PROBLEMS_MAP.md` | the L-space board — the work-clusters and runway of the register that closed at r3001 |
 | `PROGRAMME_UNFINISHEDNESS_CATALOGUE.md` | frozen record |
+| `PROPAGATION_QUEUE.md` | frozen record |
+| `PROTECTED_OPEN.md` | (declared in frontmatter) |
 | `PUZZLE_the-idea_transcript.md` | frozen record |
 | `RECALL_ACROSS_COMPACTION_empirical-record.md` | frozen record |
 | `RECALL_ACROSS_COMPACTION_full-transcript.md` | frozen record |
 | `RETIRED_PLANNING_THREADS.md` | frozen record |
 | `REVISION_r2118.patch` | frozen record |
 | `SPINUP_FAILURE_FORENSIC.md` | frozen record |
+| `STATE_OF_THE_STATE.md` | frozen record |
 | `TABLE_HISTORY.txt` | frozen record |
 | `THE_ASSUMPTIONS_RETREATED_UPWARD.md` | The c54.114–c54.153 capstone — 14 results that stand, 13 withdrawn, and the pattern the withdrawals make (the assumption kept retreating upward). READ BEFORE REOPENING FRONT #1. |
+| `THE_BURN_DOWN.md` | a view of the register that closed at r3001; the live view is THE_FRONTIER.md |
 | `THE_CONSOLIDATION_LEDGER.md` | frozen record |
+| `THE_LIVE_ARC.md` | (declared in frontmatter) |
+| `THE_WORK.md` | The working fork's OWN front-level view of the register — fronts, not rows. Absorbed by this line, never edited by it (ARC 15's prime directive). |
+| `TIDAL_SHIFT_PLAN.md` | the record of how the gradient was turned at r1064-r1090; not a live route |
 | `TRAIL_AUDIT_c54.134.md` | (declared in frontmatter) |
+| `WHATS_TEED_UP.md` | a view of the register that closed at r3001; the live view is THE_FRONTIER.md |
 | `gate_session_notes.md` | frozen record |
 | `gate_session_notes_c10.md` | frozen record |
 | `gate_session_notes_c21.md` | frozen record |

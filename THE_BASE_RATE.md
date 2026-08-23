@@ -2,10 +2,25 @@
 name: the-base-rate
 description: A5.5 worked — the reference class for least-arbitrariness arguments in physics, assembled neutrally and then judged. P6's criterion measured against the historical record rather than against favourable examples.
 sources: [cowork]
-kind: STATE
+kind: REFERENCE
 current: r2545+c54.205
 job: A5.5 worked — the reference class for least-arbitrariness arguments in physics, assembled neutrally and then judged. The fork added 11 entries across c54.114–153; read BEFORE claiming a least-arbitrariness win.
 ---
+
+> **▣ REFERENCE — P6's first programme, worked.** *The reference class for least-arbitrariness arguments
+> in physics, assembled neutrally and then judged — the sampling P6 calls for on the reasoning that **a
+> reliability estimate built from one's own successes is survivorship and not measurement**. P6 cites it.*
+>
+> *Its result: **the base rate for least-arbitrariness arguments in physics is roughly one in two** (10
+> right, 8 wrong or not found, 2 contested). And it sorts CR's own Rule-2 arguments against that
+> discriminant without softening — the three-plane construction and the substrate's maximal symmetry on
+> the favourable side because they **delete** structure, the dimension result outside the class because it
+> is a computation, and **colour as the centre on the unfavourable side, because it currently ADDS
+> structure to explain a number**.*
+>
+> **⌗ Its standing warning, which the r3095 pass is subject to:** *a claim quietly rewritten rather than
+> withdrawn never enters the count, and neither does a frontier item quietly getting smaller. Entries
+> owed by that pass are `OWED` 610.*
 
 ## ⛭⛭ AND THE ENTRY IS CORRECTED, WHICH IS ITSELF ON THE UNFAVOURABLE SIDE — added c54.205, from c54.200
 

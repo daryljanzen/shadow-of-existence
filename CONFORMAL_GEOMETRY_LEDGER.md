@@ -1,8 +1,22 @@
 ---
+kind: REFERENCE
+job: conformal / Möbius geometry against the substrate — the field that refused, and why
 name: conformal-geometry-ledger
 description: R-M's second field bake — conformal / Möbius geometry thrown at the CR substrate. Opened r1853 (Phase 8), handed to directly by the quadric bake's Cayley–Klein identification. Baseline, opening question, probes, and the Phase 9 routing.
 current: r2676+c54.211
 ---
+
+> **▣ REFERENCE — R-M's second field bake, and part of the corpus.** *Conformal / Möbius geometry
+> against the CR substrate. Of the six bakes this is the one that **REFUSED** — the field declined to
+> extend the corpus's laws — and a refusal is a result.*
+>
+> **⌗ It carries one owed cross-reference and says why:** *`L-100`, the conformal-infinity follow-up,
+> **was given an ID at c54.34 and never entered in the register**, found only at c54.49 by auditing the
+> ID space against the row count. The entry exists because of that bookkeeping failure and says so.
+> **The `L-` space has since closed, so it is unregistered again.***
+
+
+
 
 > **⌗ CHECKED AGAINST c54.163→c54.185 AND DECLARED CURRENT r2449.** *The span's substantive content is **the derived
 > lensing and the acoustic front** (c54.181–184), **a lint rebuild** (c54.180), **bibitem repairs** (c54.185), and

@@ -8,6 +8,9 @@ sources: [chat]
 
 > ## ⛭⛭⛭ BEFORE ANYTHING: READ `THE_METHOD.md`, THEN `BOARD.md` — added r2500
 >
+> ⚠ ***`BOARD.md` is now a RECORD*** *— it was generated from the register that closed at r3001. Its
+> vein-and-lead structure below still describes how to work; the live rows are in `THE_FRONTIER.md`.*
+>
 > ***The goal is exhaustive knowledge of the open areas, not closure of them.*** *`BOARD.md` carries **the veins**
 > (held open, reported as MAPPED and DARK) and **the leads** (each naming which vein it informs, **re-ordered every
 > time the list changes**).*

@@ -2,10 +2,22 @@
 name: dimension-deepening-audit
 description: What the four-dimensionality result owes the reach programme — every R-M and R-P bake, ledger and probe re-read against it, with a verdict for each and the re-runs that earned them. Read this before trusting any bake's constants as structural.
 sources: [cowork]
-kind: STATE
+kind: REFERENCE
 current: r2671+c54.210
 job: What the four-dimensionality result owes the reach programme — every R-M and R-P bake re-read against it, with a verdict for each. Read BEFORE trusting any bake's constants as structural.
 ---
+
+> **▣ REFERENCE — what the four-dimensionality result owes the reach programme.** *Every bake, ledger
+> and probe re-read against it.*
+>
+> **⌗ Its own discipline, which is the thing to carry:** *every dimension statement in the register
+> descends from **one** fold — "forty-nine re-derivations are not forty-nine confirmations… a count is
+> not a map".*
+>
+> **⌗ And it says its own open list is stale:** *three of its four open items are settled by later work
+> **and the file does not know**, with one item contradicted by its own head.*
+
+
 
 ## ⛭⛭⛭ BROUGHT CURRENT c54.210 — **`L-533` (c54.207) is this audit's own object and changes what the four-dimensionality result OWES**
 
@@ -362,6 +374,18 @@ ledger's own ⊢54 says why:* **"the count matches and the match means nothing. 
 > `FIGURE_THEOREM_LEDGER` quotation calls **"the check to run on every future ⊢ here."***
 
 ## ⌗ WHAT REMAINS OPEN — and it is a short list, with no deferrals in it
+
+> **⛔ TWO OF THE THREE BELOW ARE DISCHARGED, AND THIS DOCUMENT'S OWN HEAD SAYS SO — the list and the head
+> contradicted each other inside one file.** *Marked here r3096 so a reader meets the discharge at the item
+> rather than three sections earlier.*
+>
+> *· **①** the 39 screened-clean probes — ✔ **DONE**, `L-08` struck: the read is done and its deliverable is
+> the PARTITION, which is what the complaint asked for (the screen was uncheckable, not wrong).
+> · **③** P3's `rem:dimension` carrying `(A1)` — ✔ **DISCHARGED**, and **verified at source r3096**: the
+> remark now says **"the metric function itself is not an input here"** and derives the vacuum sector as the
+> kernel of the matter functional, generalising without adjustment in $D$ dimensions. **What the extension
+> assumed, the construction supplies.** Its two further inputs, `L-89` and `L-90`, are struck.
+> · **②** the unrun stations — ✔ still true, and the only item of the three that stands.*
 
 **① The 39 screened-clean probes are screened, not re-derived.** *The criterion is stated and the screen is
 mechanical; a probe wrongly classed clean would be found by re-reading its verdict for a quantity built from

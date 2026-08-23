@@ -6,6 +6,15 @@ description: The observer line's staging ground — revisions to the papers, com
 sources: [chat]
 ---
 
+> **⌗ WHAT IS STILL LIVE HERE IS ONE SECTION.** *§① (the papers) is complete at r2378, §③ (the
+> consolidation) discharged at r2378, and §② (the computations) is empty by its own note. **§②ʙ — the
+> reach edge, queued whole — is the live content**, and its ids `L-203`/`L-204` did not survive the
+> register's turnover at r3001, though both receipt directories exist. `OWED` 609.*
+>
+> *Its scope caveat stands as written: the staged items were prepared against an earlier fork and
+> **preparation does not rot the way a narrative does** — but each should be checked against the
+> current papers before executing.*
+
 ## ⛭ BROUGHT CURRENT r2548 — the staging discipline held through nine merges
 
 *Nine absorptions this span — c54.195 through c54.205 plus three cc54 branches — and the staging rules held: **never

@@ -25,6 +25,17 @@ EST = {
         'r3015: THE STEP IS AN EXHAUSTION. The thermal state is eliminated (it selects the Friedrichs extension, which is defined FROM the form an ordering produces). Enumerate what else could select one — the substrates symmetry, the seams characteristic structure, the deparametrization — and either find one or state the choice is external WITH the enumeration as evidence'),
     'PO-14': ('the unbuilt chiral member — THE BUILD', 1, 1, 5, None,
         'r3015: extend P11s polarised Gowdy-de Sitter leaf to the unpolarised case — two propagating modes, coupled nonlinearly. P09: reachable, needing no machinery the operator lacks. Until built, four classes where five are required'),
+    # ** r3095: brought in from p0's frontiers and the field ledgers, which carried them
+    # unregistered.  Estimates are stated as unknown (0) rather than guessed: none of these
+    # four has had a step scoped, and a fabricated estimate is worse than none. **
+    'PO-17': ('the phase structure at the seam — real structure, or interpretation', 1, 1, 0, None,
+        'NARROWED BY RECEIPT: Z1 rules out both the matter/antimatter labelling and the continuous-parameter readings; Z2 settles the OBJECT level (K is real structure of the plate, the photon congruence its fixed set). The live question is strictly: DOES A MASSIVE TRAJECTORY CARRY A PHASE. Held do-not-assert both ways'),
+    'PO-18': ('the maximal-symmetry ledger — ENUMERATE what the substrate forces', 1, 1, 0, None,
+        'THE LEDGER IS RUN: CONSTANT_LEDGER_receipt.md reads Lambda as the sole scale, c and G as unit gauges, hbar locked by the horizons thermal state — the gravitational-quantum sector spends ZERO free dimensionless constants; U3 answers the second half. What is open: it is NOT BANKED into a paper, and the matter sectors count waits on the matter build'),
+    'PO-19': ('the cube-root-two ratio between the two turnings', 1, 1, 0, None,
+        'CHECKED against order3_bridge, which relates the two cubics as one family at two energies and carries W(A2)=S3 at both ends — that is the SYMMETRY relation, not this rows object. The metric ratio between two specific radii is untouched by it and by lem:twoturnings. Undecided since r1103; both cheap answers forbidden'),
+    'PO-20': ('growth and order at infinity — is boundedness an analytic statement', 1, 1, 0, None,
+        'COMPLEX_ANALYSIS_LEDGER 4d queue, registered L-209 when found and lost at the r3009 turnover. sinh essential singularity at infinity sits outside the finite lap — noted, not used. The question is UNASKED, so the step is to ask it'),
 }
 # ** THE COUNTER, AND THE CRITERION IT IS SCORED AGAINST (r2847, after Daryl caught two
 # turns wrongly scored 0).  *** A turn is a 0 ONLY IF it found the problem space DIFFERENT
@@ -64,11 +75,20 @@ LASTFIND = ("r3092: **the phase reset rests on a premise the programme overturne
 # ⚠ *** A BUILD step has NO completed instance to calibrate against -- PO-11's continuum,
 # PO-6's UV definition, PO-1a's derivation.  Those are marked BUILD and their estimates
 # are declared unmeasured rather than dressed as measured. ***
-KIND = {'PO-13': 'READ', 'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ'}
+KIND = {'PO-13': 'READ', 'PO-14': 'BUILD', 'PO-15': 'READ', 'PO-16': 'READ',
+        # ** brought in r3095 from p0's frontiers and the field ledgers, which carried them
+        # unregistered.  PO-17 is a DECISION held do-not-assert both ways; PO-18 an
+        # ENUMERATION; PO-19 and PO-20 are unattempted questions, so READ is the wrong kind
+        # for them and WORK is used. **
+        'PO-17': 'READ', 'PO-18': 'READ', 'PO-19': 'WORK', 'PO-20': 'WORK'}
 
-ORDER = ['PO-13', 'PO-15', 'PO-14']
-GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D'}
-GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector', 'D': 'the cosmology'}
+ORDER = ['PO-13', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+GROUP = {'PO-13': 'D', 'PO-14': 'A', 'PO-15': 'C', 'PO-16': 'D',
+         # ** r3095: the four brought in from p0's frontiers and the field ledgers.  PO-17 and
+         # PO-19 are substrate geometry; PO-18 is the constant ledger; PO-20 is analysis. **
+         'PO-17': 'E', 'PO-18': 'E', 'PO-19': 'E', 'PO-20': 'E'}
+GNAME = {'A': 'the matter sector', 'B': 'the matter sector', 'C': 'the quantum sector',
+         'D': 'the cosmology', 'E': 'the substrate geometry'}
 
 
 
@@ -103,8 +123,28 @@ def main():
     turns = sum(EST[p][1] * EST[p][3] for p in ORDER if p in live)
 
     L = []
+    # ** r3095: THE FRONTIER carried NO currency marker, so check_currency measured it by body
+    # scrape and reported it UNDECLARED -- the live view, unmeasurable.  The marker is written
+    # HERE because this generator is the only thing that brings the file current, which is the
+    # gate's own rule: a declaration written only by the pass that actually does the work.
+    # The declared value is THE_REGISTER's own `current:`, because that is what was read. **
+    _regcur = ''
+    try:
+        _rt = open(os.path.join(ROOT, 'THE_REGISTER.md'), encoding='utf-8', errors='replace').read()
+        _rm = re.search(r'(?m)^current:\s*(\S+)', _rt)
+        _regcur = _rm.group(1) if _rm else ''
+    except OSError:
+        pass
+    L.append('---')
+    L.append('name: the-frontier')
+    L.append('kind: VIEW')
+    L.append('job: the open problems in dependency order — generated from THE_REGISTER, the one source')
+    if _regcur:
+        L.append(f'current: {_regcur}')
+    L.append('sources: [chat]')
+    L.append('---\n')
     L.append('# ▣ THE FRONTIER\n')
-    L.append('*Generated by `scripts/regen_frontier.py`. **Ten open problems, in dependency order.** '
+    L.append('*Generated by `scripts/regen_frontier.py`. **The open problems, in dependency order.** '
              'A STEP is one worked result; turns-per-step is a separate estimate.*\n')
     L.append(f'## ⇒ **{len(live)} OPEN · {steps} STEPS LEFT** *(was {was} last revision)* '
              f'**· ~{turns} turns at current estimates**\n')
@@ -132,7 +172,7 @@ def main():
     L.append(f'**RUNWAY: {len(live)-len(blocked)} of {len(live)} clear now**; '
              f'{len(blocked)} gated ({", ".join(f"{p}→{EST[p][4]}" for p in blocked)}).\n')
 
-    for g in ('A', 'B', 'C', 'D'):
+    for g in sorted(GNAME):
         L.append(f'\n### {g} · {GNAME[g]}\n')
         L.append('| id | what it is | steps | was | turns/step | kind | cites | gate | runway |')
         L.append('|---|---|---|---|---|---|---|---|---|')

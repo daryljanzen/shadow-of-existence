@@ -1,10 +1,15 @@
 ---
 name: companion-spec
-kind: STATE
+kind: METHOD
+job: what the companion may assert, what it must refuse, and how the difference is checked
 description: The specification for the AI companion to the corpus — what it may assert, what it must refuse, and the declarations that make the difference checkable. Written before any code, because the SPEC decides whether the thing is trustworthy.
 sources: [chat]
 current: r2571+c54.206
 ---
+
+> **▣ METHOD — the specification for the AI companion to the corpus.** *What it may assert, what it must
+> refuse, and the declarations that make the difference checkable. **Written before any code**, which is
+> why it is rules rather than state.*
 
 ## ⌗ THE CONTRIBUTION QUESTION IS ALREADY WORKED — linked r2571
 

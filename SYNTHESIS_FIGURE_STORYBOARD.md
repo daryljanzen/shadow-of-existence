@@ -1,11 +1,18 @@
 ---
 name: synthesis-figure-storyboard
-kind: STATE
+kind: FORWARD
 class: forward-document
 job: The STANDING WORKING DOCUMENT driving the fig:dS_SdS figure-work phase (P7). AHEAD OF THE CORPUS BY CONSTRUCTION — do NOT date it against the corpus and do NOT make it compliant; a disagreement with a paper is the work product.
 sources: [cowork]
 current: n/a
 ---
+
+> **▣ FORWARD — ahead of the corpus by construction, and exempt from the staleness test.** *The standing
+> working document driving P7's `fig:dS_SdS`. It carries the forward banner in its own voice: **"NEVER make
+> this document compliant with the corpus."***
+>
+> ⛔ ***Deliberately undated*** *— a currency number here invites exactly the inverted-gradient repair the
+> banner forbids. Where it disagrees with a paper, the disagreement is the work product.*
 
 > **⌗⌗ INDEXED r2380 — AND DELIBERATELY NOT DATED, BECAUSE THE STALENESS TEST INVERTS ON THIS DOCUMENT.**
 > *It carries the forward-document banner in its own voice —* ***"THIS DOCUMENT IS AHEAD OF THE CORPUS BY

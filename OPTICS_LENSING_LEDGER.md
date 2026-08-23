@@ -1,8 +1,22 @@
 ---
+kind: REFERENCE
+job: observational optics and lensing against CR — confirmations, and the dimension clause they forced
 name: optics-lensing-ledger
 description: R-P's first field bake — observational optics and lensing thrown at CR. Opened r1857 (Phase 8, the physics half), handed to directly by the conformal bake's C4. Baseline, the O1 result (the photon sphere IS Nariai's forcing locus), probes, and the Phase 9 routing.
 current: r2517+c54.201
 ---
+
+> **▣ REFERENCE — R-P's first field bake, and part of the corpus.** *Observational optics and lensing.
+> Of the six bakes this is the one that **CONFIRMED AND LOCATED**.*
+>
+> **⌗ Its sharpest finding has landed:** *it caught a verdict stated wider than its computation's scope —
+> $\Omega_c=\lambda$ rests on $2f-r^2f''$ being the constant $2$, which holds at $D=4$ and fails above,
+> so "universal, independent of $M$ and $\alpha$" needed its dimension clause. **P7 now carries it**, with
+> $\lambda^2/\Omega_c^2=D-3$ identically and its own receipt. The standing rule the finding left behind
+> holds: **before a constant is read as structural, re-derive it on the $D$-dimensional $f$.***
+
+
+
 
 > ## ⚠⚠ THE ACOUSTIC FIGURES BELOW ARE SUPERSEDED — annotated r2517, not erased
 >

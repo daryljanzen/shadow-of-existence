@@ -1101,6 +1101,50 @@ the next bundle, reads ONE document to learn what is open — and is right.*** *
 exists to end: at r2377 that node would have read `WHATS_TEED_UP` and been wrong forty-four times out of
 forty-four.*
 
+### ⛭ WHERE THE ARC STANDS — the mechanism is built; the discharge condition is not met
+
+***The r3095 pass was this arc, run.*** *It did not know the arc existed, which is itself an instance of what
+the arc is about — the mechanism was written at r2377 and the pass rebuilt it from scratch. That the two agree
+is the useful part.*
+
+**⌗ WHAT IS BUILT.** *`classify_documents` now declares **one SOURCE** — `THE_REGISTER`, repointed from
+`THE_LIVE_ARC`, which closed at r3001 and had remained the declared source for ninety-one revisions — and every
+top-level document carries a kind. The scheme needed two kinds it did not have: **`REFERENCE`**, for complete
+work whose findings the corpus draws on, because `RECORD` would have buried the field bakes and the three
+censuses; and **`FORWARD`**, for the five documents carrying the ahead-of-the-corpus banner in their own voice,
+on which the staleness test inverts.*
+
+**⌗ THE VIEW LAYER WAS GENERATED FROM A CLOSED REGISTER — this arc's own failure mode, one level up.** *Five of
+six generators read `THE_LIVE_ARC`. `BOARD` therefore read as freshly generated while reporting a board of
+struck rows, and `THE_FRONTIER`, from the live register, disagreed with it completely. The four `L-`space views
+now carry a generator-written retirement header; `regen_frontier` alone reads the live source.*
+
+**⌗ AND TWO GATES COULD NOT FAIL.** *`check_status_honesty` read `PROTECTED_OPEN`, whose fourteen rows are all
+struck, so it reported `0 OPEN` unconditionally; it now reads the register and reports seven. That is the same
+shape as this arc's opening finding, where `check_currency` took its baseline from a watched document and **the
+baseline sank with the documents it was measuring**.*
+
+#### ⛔ THE DISCHARGE CONDITION, TESTED r3095 — two of four fail
+
+| condition | state |
+|---|---|
+| `check_currency` rc=0 over the LIVE set | **FAIL** — `INDEX`, `STATE_programme`, `THE_FERMION_SECTOR_GEOMETRY`, `THE_STAGED_REVISIONS` behind; `THE_FRONTIER` carries no marker at all |
+| every ② document has a passing `--check` | **PASS** |
+| `check_burndown`'s ID space covers every open item | **FAIL** — **13 IDs assigned and never registered**; *a lead given an ID and not entered as a row is LOST* |
+| the top level is only ①②③ or `retired/` | **PASS** — all 208 classified |
+
+***The arc's real test — a fresh node reads ONE document to learn what is open, and is right — now has a
+document to read: `THE_FRONTIER`, seven rows, generated from the one source.*** *Whether it is right is what
+`ARC 13` will show.*
+
+**⌗ AND THE PASS PRODUCED A WORKLIST, NOT A CLEARANCE.** *Twenty-six items in `OWED`, each carrying the evidence
+that found it — among them four corpus-revision sites where a paper states as open something already computed,
+two ledgers whose results were never banked into any paper, eight unregistered fermion-sector work items, and
+the base-rate entries this pass itself owes for the frontier items it shrank.*
+
+**⇒ NEXT LAYER: `ARC 13 · THE CANON SWEEP`** *— booked r1790, never run. It is LAYER 2's one full-corpus pass,
+and it is where the four corpus-revision sites and the shrunk frontier items land.*
+
 ---
 
 ## ⌖⌖⌖ ARC 17 — **THE TRIMMINGS, AND WHAT THEIR SHAPE SAYS** *(opened r2435 by the linear re-read's step ③)*

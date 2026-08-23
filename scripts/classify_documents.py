@@ -23,27 +23,35 @@ import os, re, sys, glob
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, '..')
 
-SOURCE = {'THE_LIVE_ARC.md': 'the lead register — the one live edge'}
+SOURCE = {'THE_REGISTER.md': 'the lead register — the one live source of what is open'}
+# ** THE_LIVE_ARC was SOURCE until PROTECTED_OPEN closed at r3001 and the register reopened at
+# r3009.  It is a RECORD now, and the register is the one source. **
 
 VIEW = {
-    'WHATS_TEED_UP.md':      ('THE_LIVE_ARC.md', 'scripts/regen_teed_up.py'),
     'DOCUMENT_LEDGER.md':    ('(the tree)',      'scripts/classify_documents.py'),
+    'THE_FRONTIER.md':       ('THE_REGISTER.md', 'scripts/regen_frontier.py'),
+# ** BOARD, WHATS_TEED_UP, THE_BURN_DOWN and ID_SPACE_CENSUS were VIEWs of THE_LIVE_ARC, the
+# register that closed at r3001.  They are RECORDs of that era and their generators are guarded. **
 }
 
 # ③ METHOD -- rules/guards/canon.  Timeless: they say how to work, not what is open.
 METHOD = {
     'README.md', 'INTRODUCTION.md', 'THE_METHOD.md', 'THE_ARSENAL.md', 'THE_ARSENAL_INDEX.md',
     'THE_OPERATING_MANUAL.md', 'ONTOLOGY_FOUNDATION_INDEX.md', 'NOTATION_GLOSSARY.md',
-    'JARGON_LEDGER.md', 'BIBKEY_ALIAS_MAP.md', 'THE_BASE_RATE.md', 'PROTECTED_OPEN.md',
+    'JARGON_LEDGER.md', 'BIBKEY_ALIAS_MAP.md', 'THE_BASE_RATE.md',
     'SOURCE_VETTING.md', 'DISPATCHING_COWORK.md', 'VISION_FIELD_GUIDE.md',
     'GEOMETRY_PHYSICS_TAXONOMY.md', 'FOUNDATIONAL_DEPENDENCY_MAP.md',
+    'TURN_PROTOCOL.md',
 }
 
 # ④ RECORD -- frozen by kind.  Matched by prefix/suffix as well as by name.
 RECORD_PREFIX = ('BUNDLE_r', 'gate_session_notes', 'RETIRED_', 'CREDO_', 'RECALL_ACROSS_COMPACTION',
                  'CAPSTONE_', 'PUZZLE_', 'C40_', 'DEMONSTRATING_THE_WAY_full', 'FORK_HISTORY',
                  'HISTORICAL_CONTEXT_', 'SPINUP_FAILURE_FORENSIC', 'KICKOFF_')
-RECORD_EXACT = {'BUNDLE_README.md', 'REVISION_r2118.patch', 'THE_CONSOLIDATION_LEDGER.md',
+RECORD_EXACT = {'BOARD.md', 'WHATS_TEED_UP.md', 'THE_BURN_DOWN.md', 'ID_SPACE_CENSUS.md',
+                'THE_LIVE_ARC.md', 'PROTECTED_OPEN.md', 'PROPAGATION_QUEUE.md',
+                'STATE_OF_THE_STATE.md',
+                'BUNDLE_README.md', 'REVISION_r2118.patch', 'THE_CONSOLIDATION_LEDGER.md',
                 'PROGRAMME_UNFINISHEDNESS_CATALOGUE.md', 'RETIRED_PLANNING_THREADS.md',
                 # ** r2674: the two turn ledgers, built r2622 and r2624 on the observer line and
                 # never dispositioned -- which left classify_documents at UNCLASSIFIED 2 and, per
@@ -57,6 +65,10 @@ RECORD_EXACT = {'BUNDLE_README.md', 'REVISION_r2118.patch', 'THE_CONSOLIDATION_L
 # state-carrying documents: hand-maintained today, and the arc's targets.
 # kind is recorded as the kind they SHOULD be, with `now` saying what they are.
 STATE = {
+    'THE_MODEL_LEDGER.md':                            'binds RADSCAN\'s terms to the theory that determines them',
+    'THE_READING_NOTES.md':                           'what the linear read of P7 establishes for the acoustic model',
+    'CORPUS_REVISION_OWED.md':                        'the measured gap between the register and the papers',
+    'THE_BAKE.md':                                    'the revision plan — substance into the owning papers first',
     'THE_PLAN.md':                                    'the work, route and destination',
     'CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md': 'the consolidation plan and the arcs',
     'INDEX.md':                                       'what is in the programme, and where',
@@ -134,7 +146,22 @@ def classify():
         declared, declared_cur, job, klass = front_kind(path)
         body = body_rev(path)
         declared_job = job
-        if declared:
+        # ** r3095: the L-space view layer.  These four are generated from THE_LIVE_ARC, the register
+        # that closed at r3001, and three of them forbid hand-editing in their own voice -- so their
+        # kind is set HERE rather than in the file.  Their generators now write a retirement header
+        # into them instead of regenerating dead counts. **
+        if name in ('BOARD.md', 'WHATS_TEED_UP.md', 'THE_BURN_DOWN.md', 'ID_SPACE_CENSUS.md'):
+            kind, job = 'RECORD', ('a view of the register that closed at r3001; the live view is '
+                                   'THE_FRONTIER.md')
+        elif name == 'THE_WORK.md':
+            # ** The fork's own front-level view, classified HERE and ahead of the frontmatter read.
+            # Its disposition -- read and superseded on each absorption, never edited by this line --
+            # survives the scrapping of ARC 15's prime directive at r2394, so its `kind:` is not ours
+            # to change in the file and is overridden here instead.  Its fronts are PO-1a..PO-9, every
+            # one struck in the register that closed at r3001. **
+            kind, job = 'RECORD', ("the fork's front-level view of the register that closed at r3001 "
+                                   "-- fronts, not rows; read and superseded on absorption")
+        elif declared:
             kind, job = declared.upper(), (job or '(declared in frontmatter)')
         elif name in SOURCE:
             kind, job = 'SOURCE', SOURCE[name]
@@ -208,7 +235,7 @@ def write_index_block(rows, front):
     # gate that reads INDEX.md.  A `kind:` this dict does not know is well-formed input the loader
     # REJECTED -- the silent-discard class's loud cousin, and the fix is the same shape: know the
     # convention, and fail SOFT on one you do not. **
-    order = {'SOURCE': 0, 'VIEW': 1, 'STATE': 2, 'METHOD': 3, 'RECORD': 4, 'PLAN': 5,
+    order = {'SOURCE': 0, 'VIEW': 1, 'STATE': 2, 'METHOD': 3, 'REFERENCE': 4, 'FORWARD': 5, 'RECORD': 6, 'PLAN': 7,
              'RETIRED': 6, 'UNCLASSIFIED': 7}
     o = [INDEX_BEGIN, '']
     o.append('## ⌗ THE DOCUMENT INVENTORY — generated')
@@ -227,7 +254,7 @@ def write_index_block(rows, front):
              'generated.*** The navigation tree, front matter and corpus table below stay '
              'hand-written — those are **structure**, not state.*')
     o.append('')
-    for k in ('SOURCE', 'VIEW', 'STATE', 'METHOD', 'RECORD'):
+    for k in ('SOURCE', 'VIEW', 'STATE', 'METHOD', 'REFERENCE', 'FORWARD', 'RECORD'):
         sel = [r for r in rows if r[1] == k]
         if not sel:
             continue
@@ -300,7 +327,7 @@ def main():
                'job is declared in its own frontmatter as `job:`, so it travels with the file and '
                'cannot be separated from it.*')
     out.append('')
-    out.append('**The four kinds** *(`ARC 14 · THE SINGLE EDGE`, `CONSOLIDATE` §2)*: '
+    out.append('**The kinds** *(`ARC 14 · THE SINGLE EDGE`, `CONSOLIDATE` §2, plus `REFERENCE` and `FORWARD` r3095)*: '
                '**① SOURCE** the one hand-maintained state document · **② VIEW** generated, with a '
                '`--check` · **③ METHOD** timeless rules · **④ RECORD** frozen. '
                '**STATE** marks a document that carries state and is *not yet* one of the four — '
@@ -308,7 +335,7 @@ def main():
     out.append('')
     out.append('| kind | count |')
     out.append('|---|---|')
-    for k in ('SOURCE', 'VIEW', 'STATE', 'METHOD', 'RECORD', 'UNCLASSIFIED'):
+    for k in ('SOURCE', 'VIEW', 'STATE', 'METHOD', 'REFERENCE', 'FORWARD', 'RECORD', 'UNCLASSIFIED'):
         if k in counts:
             out.append(f'| **{k}** | {counts[k]} |')
     out.append('')
@@ -342,7 +369,7 @@ def main():
     # gate that reads INDEX.md.  A `kind:` this dict does not know is well-formed input the loader
     # REJECTED -- the silent-discard class's loud cousin, and the fix is the same shape: know the
     # convention, and fail SOFT on one you do not. **
-    order = {'SOURCE': 0, 'VIEW': 1, 'STATE': 2, 'METHOD': 3, 'RECORD': 4, 'PLAN': 5,
+    order = {'SOURCE': 0, 'VIEW': 1, 'STATE': 2, 'METHOD': 3, 'REFERENCE': 4, 'FORWARD': 5, 'RECORD': 6, 'PLAN': 7,
              'RETIRED': 6, 'UNCLASSIFIED': 7}
     for n, k, job, dcur, body, klass in sorted(rows, key=lambda r: (order.get(r[1], 99), r[0])):
         dc = f'c54.{dcur}' if dcur is not None else '—'
@@ -366,7 +393,7 @@ def main():
     n = write_index_block(rows, front)
     if n:
         print(f'  wrote INDEX.md inventory block: {n} documents')
-    for k in ('SOURCE', 'VIEW', 'STATE', 'METHOD', 'RECORD', 'UNCLASSIFIED'):
+    for k in ('SOURCE', 'VIEW', 'STATE', 'METHOD', 'REFERENCE', 'FORWARD', 'RECORD', 'UNCLASSIFIED'):
         if k in counts:
             print(f'    {k:<14} {counts[k]}')
     if unclassified:
