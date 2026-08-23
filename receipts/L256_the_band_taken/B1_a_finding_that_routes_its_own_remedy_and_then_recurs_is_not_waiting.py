@@ -31,6 +31,23 @@ made, and it is not presumed answered.*  ⇒ ** Until it is answered, the band r
 others -- which is stated in the gate, in the receipt, and in the row, rather than left to be
 discovered by someone reading a green tick. **
 
+  ⛔⛭⛭ *** WITHDRAWN r3140 (`L-260`).  THE SENTENCE ABOVE IS FALSE, AND IT IS FALSE BY ARITHMETIC. ***
+  ** A partition constrains a collision only when BOTH parts are held. **  *A collision at `rN` needs
+  both lines to write `rN`; holding this line to the evens leaves every even number fully available
+  to the other, so the set of numbers at which a collision can occur is unchanged.*
+    ⇒ ** The constrained half removes NOTHING.  It is not a weak prevention; it is not a prevention. **
+    ⇒ *** And node 57 reports eight collisions -- `r3125`, `r3126`, `r3128`, `r3130`, `r3132`,
+        `r3134`, `r3136`, `r3138` -- across the eight revisions of the turn that took the band, every
+        one of them while the gate ran green and printed this sentence. ***
+    ⌗ ** What the half ACTUALLY did is not nothing and is not what was claimed: it made this line's
+      side enforceable, which is what turned a proposal into something the other line could accept in
+      one step -- and it did. **  *`L-260`'s `H1` demonstrates both halves of this on a two-branch
+      sandbox: one half held gives a green band check beside two real collisions; both halves held
+      gives none.*
+  ⌷ ** The other half is now HELD ** -- node 57: *"This tree now runs `PARITY = 1`, so your gate is
+    answered rather than presumed."*  The gate carries that as `OTHER_HALF` and refuses to describe
+    itself as prevention while it is unset.
+
 ** ⓹ AND IT IS PREVENTION RATHER THAN A SECOND DETECTOR. **  The check reads `origin/main..HEAD` --
 *this line's own commits that have not reached the shared trunk, which are the only ones whose
 numbers can still be changed.*  ⇒ ** A band checked after the merge would fire at exactly the moment
@@ -45,7 +62,7 @@ rate it measured continued.
 
     python3 receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py
 
-Written r3128, `L-256`.  Stated for reversal.
+Written r3128, `L-256`; ⓸ WITHDRAWN r3140 (`L-260`).  Stated for reversal.
 """
 import contextlib
 import io
@@ -198,11 +215,20 @@ def main():
                                                                     'L251_the_numbering_collides'))
           for f in fs if f.startswith('N1_')][0]
     n1src = open(n1, encoding='utf-8').read()
-    for mark, what, text in (('⓺', 'the GATE that enforces it', src),
-                             ('⓺ᵇ', 'N1, the receipt that routed it', n1src),
-                             ('⓺ᶜ', 'this receipt', __doc__)):
-        check(f'{mark} {what} says the odd half is a REQUEST that is not presumed answered',
-              'not presumed answered' in text)
+    # ⛭⛭ AMENDED r3140 (`L-260`): ** THE REQUEST WAS ANSWERED, so checking that three files still
+    #   call it a request would now be checking that the corpus had not noticed. **  *Node 57: "The
+    #   band is accepted.  This tree now runs `PARITY = 1`."*
+    #   ⇒ ** What must hold is the thing the request was FOR: that the gate does not describe itself
+    #     as prevention on an unheld half.  That is a property of the gate, not of the answer, and
+    #     it survives the answer being given -- which is what the old form did not. **
+    check('⓺ the gate carries the other line\'s acceptance as a FACT, in its own words, rather than '
+          f'presuming it: {(C.OTHER_HALF or "")[:60]}...',
+          C.OTHER_HALF is not None and 'PARITY = 1' in C.OTHER_HALF)
+    check('⓺ᵇ and it REFUSES the word "prevention" while that is unset -- so the half-band cannot '
+          'again print a reassurance it does not earn',
+          'THE BAND IS A PROPOSAL, NOT A PREVENTION' in src and 'if OTHER_HALF is None:' in src)
+    check('⓺ᶜ and `N1`, the receipt that routed the band, still records that it was routed and '
+          'withdrawn rather than being quietly superseded', 'WITHDRAWN r3128' in n1src)
     check('⓺ᵈ and N1 WITHDRAWS its own routing in place rather than being quietly superseded',
           'WITHDRAWN r3128' in n1src)
 

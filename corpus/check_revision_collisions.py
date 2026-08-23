@@ -40,13 +40,32 @@ and routed it.  *Three more collisions arrived in the sixteen revisions that fol
     of history, no per-node prefix, no change to how a revision is cited, and the rough chronological
     reading survives -- which a range-band (`r4000+`) would destroy.*
   * ** ⌗ AND ONLY HALF OF IT IS ENFORCEABLE HERE, WHICH IS STATED RATHER THAN ASSUMED. **  *This gate
-    checks that every commit on THIS line since the last merge carries an EVEN bare id.  The other
-    line adopting ODD is a request that has been made and is not presumed answered; until it is, this
-    half removes the collisions this line can cause and no others.*
+    checks that every commit on THIS line since the last merge carries an EVEN bare id.*
   * ⌷ *`r3127` is skipped for that reason, and the skip is the first instance of the rule.*
 
-  ⇒ ** AND IT IS PREVENTION, NOT DETECTION: it fails BEFORE the merge, on this line's own tree, which
-    is the only moment at which a collision can still be avoided. **
+⛔⛭⛭ ** WITHDRAWN r3140 (`L-260`): THIS FILE SAID, OF THE HALF IT COULD ENFORCE, *"until it is, this
+half removes the collisions this line can cause and no others."*  THAT IS FALSE, AND IT IS FALSE BY
+ARITHMETIC RATHER THAN BY BAD LUCK. **
+
+  *** A PARTITION CONSTRAINS A COLLISION ONLY WHEN BOTH PARTS ARE HELD.  One part held alone removes
+      NOTHING: every number this line may still use remains fully available to the other, so the set
+      of numbers at which a collision can occur is unchanged. ***
+
+  ⇒ ** And the cost was already on the counter while this file printed the reassurance. **  *Node 57
+    reports that `r3125`, `r3126`, `r3128`, `r3130`, `r3132`, `r3134`, `r3136` and `r3138` each name
+    different work in each line -- ** eight collisions across the eight revisions of the turn that
+    took the band **, every one of them while this gate ran green and said the half was doing work.*
+  ⇒ *** SO A GATE THAT IS GREEN WITH A WRONG SENTENCE BESIDE IT IS WORSE THAN A RED ONE: the red is
+      read, and the sentence is believed. ***
+
+⛭ ** THE OTHER HALF IS NOW HELD, AND THAT IS RECORDED AS A FACT RATHER THAN ASSUMED. **  *Node 57:
+"The band is accepted.  This tree now runs `PARITY = 1`, so your gate is answered rather than
+presumed."*  ⇒ ** `OTHER_HALF` below carries it, and the gate refuses to describe itself as
+prevention until that constant is set.  Until then it says what it is: a proposal with an
+enforcement mechanism attached to one side. **
+
+  ⇒ ** AND ONLY NOW IS IT PREVENTION RATHER THAN DETECTION: it fails BEFORE the merge, on this
+    line's own tree, which is the only moment at which a collision can still be avoided. **
 
     python3 corpus/check_revision_collisions.py
     python3 corpus/check_revision_collisions.py --no-band   # history only, if `origin/main` is absent
@@ -73,6 +92,12 @@ BASELINE = {'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
 
 #: *** THE BAND. ***  This line's revision numbers are EVEN; the other line's are ODD.  See the head.
 PARITY = 0
+#: ** THE OTHER HALF, HELD OR NOT.  ⛔ THE BAND IS A PARTITION AND HALF A PARTITION IS NOTHING. **
+#: *Set to the source of the other line's acceptance, or to `None` while it is only a request.  The
+#: gate REFUSES to call itself prevention while this is `None`, because a half-band prevents no
+#: collision at all -- every number this line may use stays fully available to the other.*
+OTHER_HALF = ("node 57, r3138 reply: \"The band is accepted.  This tree now runs PARITY = 1, so "
+              "your gate is answered rather than presumed.\"")
 #: ** NAMED, not dated. **  *A band cannot apply to commits made before it was taken, and the corpus's
 #: way of saying so is a list of names rather than a cutoff -- a cutoff silently absorbs everything
 #: behind it, and `c54.212` found that hole in a different gate.*
@@ -80,6 +105,20 @@ PARITY = 0
 #:     the band was taken; rewriting a delivered bundle costs more than the one odd id saves.  ** It
 #:     is the only entry, and a second one would mean the band was taken and then not kept. **
 BAND_GRANDFATHERED = {'r3125'}
+
+#: ⛔ ** THE EIGHT THE OTHER LINE REPORTS FROM THE TURN THAT TOOK THE BAND, and they are held apart
+#: from `BASELINE` because THIS TREE CANNOT SEE THEM. **  *A collision needs both sides in one
+#: history; the other line's commits reach here only through the trunk, so until they are merged
+#: these rest on testimony and not on a measurement made here.*
+#:   ⇒ *** They are baselined so a merge does not arrive as eight surprises, and they are SEPARATED
+#:       so the difference between "measured" and "reported" is not lost in one set. ***
+#:   ⌗ `report_testimony` below prints which of them this tree can now CONFIRM.  An entry that stays
+#:     unconfirmed after the merge is a baseline entry that is not an instance, which weakens the
+#:     gate -- so it is printed every run rather than settling quietly into the list.
+TESTIMONY = {'r3125', 'r3126', 'r3128', 'r3130', 'r3132', 'r3134', 'r3136', 'r3138'}
+TESTIMONY_SOURCE = ('node 57, r3138 reply: "we had already collided eight times before the band was '
+                    'taken -- r3125, r3126, r3128, r3130, r3132, r3134, r3136, r3138 each name '
+                    'different work in each line"')
 #: the commits a band can still act on: this line's own, not yet merged into the shared trunk
 UPSTREAM = 'origin/main'
 
@@ -124,6 +163,31 @@ def collisions(root=None):
     return bad
 
 
+def report_testimony(bad):
+    """which of the other line's reported collisions this tree can CONFIRM -- reported, never asserted
+
+    ** A collision is two divergent commits carrying one id, and this tree holds one of the two. **
+    *So the eight cannot be measured here at all until the merge.*  ⇒ *** Printing the split every
+    run is the only thing that keeps "reported" from hardening into "known": a baseline entry that
+    turns out not to be an instance is a gate quietly weakened, and c54.212 found that hole once
+    already. ***
+    """
+    seen = sorted(TESTIMONY & set(bad))
+    unseen = sorted(TESTIMONY - set(bad))
+    print()
+    print(f'    the other line reports {len(TESTIMONY)} collision(s) from the turn that took the '
+          f'band; this tree can confirm {len(seen)}')
+    _none = 'none -- the other line' + chr(39) + 's commits are not in this tree'
+    print(f'      confirmed here : {seen or _none}')
+    print(f'      on testimony   : {unseen or "none"}')
+    if unseen:
+        print('      ⌗ *Held apart from BASELINE deliberately.  They are baselined so a merge does')
+        print('        not arrive as eight surprises, and separated so "reported" cannot harden into')
+        print('        "measured".  An entry still unconfirmed AFTER the merge is a baseline entry')
+        print('        that is not an instance, and must be struck rather than left.*')
+        print(f'      ⌷ source: {TESTIMONY_SOURCE}')
+
+
 def band_violations(root=None):
     """this line's own unmerged commits whose bare revision id is out of band
 
@@ -163,8 +227,20 @@ def check_band():
         print(f'      *and {len(BAND_GRANDFATHERED)} id is grandfathered by NAME: '
               f'{sorted(BAND_GRANDFATHERED)} -- committed before the band was taken and already '
               'bundled out.*')
-        print('      *The other line adopting the ODD half is a REQUEST, not an assumption -- until')
-        print('       it is answered this removes the collisions this line can cause and no others.*')
+        # ⛔⛭⛭ r3140 (`L-260`): ** THE SENTENCE THAT USED TO PRINT HERE WAS FALSE. **  *It said the
+        #   half "removes the collisions this line can cause and no others".  A partition constrains
+        #   a collision only when BOTH parts are held; one part alone removes nothing.  Eight
+        #   collisions were created while this line printed it.*
+        if OTHER_HALF is None:
+            print('      ⛔ ** THE BAND IS A PROPOSAL, NOT A PREVENTION. **  *The other half is not')
+            print('         held, and half a partition removes NO collision: every number this line')
+            print('         may still use remains fully available to the other.*')
+            print('      ⌷ What this check does is make THIS line\'s half enforceable, which is what')
+            print('         makes the proposal something the other line can accept or refuse.')
+        else:
+            print('      ⛭ ** and the OTHER half is held, so the band is a partition and the')
+            print('         prevention is real: **')
+            print(f'         {OTHER_HALF}')
         print()
         return 0
     print()
@@ -184,7 +260,7 @@ def main():
     print('  different work?  (the `L-` id bands exist for this; revision numbers have none)')
     print()
     bad = collisions()
-    new = {r: e for r, e in bad.items() if r not in BASELINE}
+    new = {r: e for r, e in bad.items() if r not in BASELINE | TESTIMONY}
     known = {r: e for r, e in bad.items() if r in BASELINE}
     gone = BASELINE - set(bad)
 
@@ -208,6 +284,7 @@ def main():
         print()
         return 1
 
+    report_testimony(bad)
     band_rc = 0 if '--no-band' in sys.argv else check_band()
 
     if not new:
