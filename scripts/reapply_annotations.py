@@ -60,11 +60,12 @@ ANNOTATIONS = [
     # into any file the fork owns belongs here, or it is lost at the next absorption with no trace
     # in the diff.  Caught by `id_space_census --check` flipping to "P7 sec:frontiers: 4 of 4
     # unfolded" INSIDE the verification of the cut -- which is why the cut is verified.
-    ('corpus/CR_framework.tex',
-     '\\item\\label{frontier:inherited}',
-     '%  r2378 REGISTER ALIAS, re-applied r2393 after absorption: the inherited datum -- register '
-     '`L-150`, family 3.\n\\item\\label{frontier:inherited}',
-     'REGISTER ALIAS, re-applied r2393 after absorption: the inherited datum'),
+    # ** RETIRED r3114: the anchor \item\label{frontier:inherited} no longer exists.  The item was
+    #    STRUCK from P7's frontier list in the r3095 staleness pass -- the inherited datum was
+    #    relocated to its own section (sec:inherited-datum) rather than withdrawn, and `PO-16` was
+    #    struck with it.  An annotation declared against a row that has since been correctly removed
+    #    is not a dropped annotation; re-anchoring it would re-introduce a pointer to a list entry
+    #    that is gone.  The declaration is retired here rather than repaired. **
     ('corpus/CR_framework.tex',
      '\\item\\label{frontier:scalar}',
      '%  r2378 REGISTER ALIAS, re-applied r2393: the scalar sector to a verdict -- register '

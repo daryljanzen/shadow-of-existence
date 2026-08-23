@@ -17,10 +17,13 @@ sources: [cowork]
 > face, "one circle"); this is the working record and the receipts behind it, and **every $\vdash$ is
 > receipted**.*
 >
-> **⌗ THREE THINGS IT STILL OWES, in its own words:** *· **the citation is owed FROM fourteen papers TO
-> this ledger** — they carry counts it adjudicated and **none of them cites it**, a bounded bibliography
-> edit rather than an open question; · **§0's note is owed a re-scoping to C** — the relation is
-> attempted and closed while the note eight lines under its own derivation still reads "named and
+> **⌗ ALL THREE OF WHAT IT ONCE OWED ARE NOW DISCHARGED:** *· **the citation route** is `\rcpt{}`, not a
+> bibliography entry, and it already runs — the six receipted adjudications are each cited by the papers
+> carrying their counts, and two of the fourteen files once listed are generated appendices that could not
+> hold a hand-added citation anyway (r3111); · **§0's re-scoping to C is done** (r3096) — the relation is
+> attempted and closed, and its MEANING is closed with it: one factor of two inside one cube root, real,
+> exact and shallow, with the tie to a horizon root Nariai-only; · **the undecided is closed** (`PO-19`
+> struck). ⌗ *For the record of what each once said, and the note eight lines under its own derivation still reads "named and
 > unrun"; · **undecided, now CLOSED**: $A=\sqrt[3]{2}\,\rho$ ties the comoving turnaround's
 > scale to a horizon root — **attempted and derived r3097** (`PO-19` struck). The turnaround is $1-f=0$
 > and the Hubble--Eddington radius is $f'=0$, so the two conditions differ by the one factor of two
@@ -157,7 +160,9 @@ the very pair `lem:twoturnings` governs:**
 **Same pair. Different claims. NO and OPEN, both honest, simultaneously.** ⟹ **Every ledger entry must
 state the claim it adjudicates, not merely the pair.** An entry reading *"the 2s: NO"* is malformed; the
 well-formed entry is *"the two ℤ₃'s are one symmetry: NO (proved); a metric ratio between the radii: OPEN
-(named, unrun)."*
+(named, unrun)."* ⌗ *That status was correct when the rule was written and is now **DERIVED** (r3096,
+receipt `P07_cube_root_two_is_the_2M_over_M`) — the example stands as the rule's illustration, not as
+a live status.*
 
 **This is what stops the rigging, and it is why the discriminator had to be built before any merge:** a
 ledger indexed by pairs collapses the claims, and a collapsed claim can only be answered one way.
@@ -583,7 +588,14 @@ Nariai.** It is the **double** root; the discriminant `−4α⁴(27M² − α²)
 
 **⚠ AND §0 CONTRADICTS ITSELF IN ONE ENTRY.** It **derives** `A = ∛2·ρ` (the `q`-match, receipt
 `one_to_two.py`) — and **eight lines later** files it *"★ Named and unrun … Well-posed, **unattempted**."*
-**The RELATION is attempted and closed. What is unattempted is C — its MEANING.** *The finest-scale
+**The RELATION is attempted and closed, and C — its MEANING — is now closed with it (r3096).**
+*The ratio is $\sqrt[3]{2}$ because $1-f=0$ carries $2M$ where $f'=0$ carries $M$: one factor of two
+inside one cube root, exact for every $M$ and $\alpha$. So the relation is **real, exact and shallow**,
+and its tie to a horizon **root** is Nariai-only. That is the meaning, and it forbids both cheap
+answers — the credulous one overstated it, the sceptical one ("`lem:twoturnings` killed it") was
+false, since that lemma denies an identification of the two $\mathbb{Z}_3$ SYMMETRIES and this is a
+ratio of two radii.* ⌗ *The entry below is left in its original wording as the calibration example
+the indexing rule is stated on; its status line is corrected.* *The finest-scale
 instance of the arc's recurring defect yet: not a stale pointer between papers, but a stale note eight
 lines under its own derivation, in the map's own glossary.* **Owed: §0's note re-scoped to C.**
 

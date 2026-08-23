@@ -22,6 +22,35 @@ job: A5.5 worked — the reference class for least-arbitrariness arguments in ph
 > withdrawn never enters the count, and neither does a frontier item quietly getting smaller. Entries
 > owed by that pass are `OWED` 610.*
 
+## ⛭⛭⛭ ENTRY: A PASS IN WHICH EVERY FRONTIER MOVED THE FAVOURABLE WAY — r3095–r3111, and the count is owed to itself
+
+*This file's standing warning is that **a frontier item quietly getting smaller never enters the count**, and
+that a re-weighting making a frontier HARDER is the evidence the accounting is not being run in the
+programme's favour. **The span r3095–r3111 shrank or closed almost every open item and made none harder.**
+That is exactly the shape the warning describes, so it is entered here in full rather than left in the
+register's strike notes.*
+
+| what moved | which way | and whether the movement was EARNED |
+|---|---|---|
+| `frontier:inherited` **struck** | ⇒ *smaller* | **earned** — *the datum was relocated to its own section, not withdrawn; the item was bookkeeping* |
+| `PO-14` **struck** | ⇒ *smaller* | **earned, and it cost the programme something to establish**: *the build had been standing since r2419 and P14's denial of it was **false when written**. The strike records a bookkeeping failure of 587 revisions, not a new result* |
+| `PO-15` **struck** | ⇒ *smaller* | **earned on the row's OWN second branch** — *"a demonstration that none exists and the choice is genuinely external", delivered by exhaustion of seven candidates. ⚠ But note the direction: an EXTERNAL answer is the weaker of the two the row allowed, and the row closes because the weaker branch was met* |
+| `PO-17`, `PO-18`, `PO-20` **struck** | ⇒ *smaller* | ⛔ **NOT earned as work** — *all three were already answered elsewhere in the corpus when this line opened them. They are the accounting correcting a mis-count it had itself made one revision earlier* |
+| `PO-19` **struck** | ⇒ *smaller* | **earned** — *derived, and the derivation is **shallow**: one factor of two inside one cube root. The entry is worth making BECAUSE the result is small; a ratio that looked like a coincidence is now a triviality, which removes a place the programme might have claimed depth* |
+| `frontier:sm` **shrank twice** | ⇒ *smaller* | **earned, and then enlarged in one direction** — *the chiral member is built and the shortfall is now a THEOREM rather than a count; but the same theorem makes the sector vector-like, on which the anomaly conditions go vacuous, so **P14's hypercharge result is now conditional on `PO-21`**. That half is on the unfavourable side and is entered as such* |
+| `frontier:quantum` **shrank** | ⇒ *smaller* | **earned** — *the ordering is external, the spectrum computed; only the ultraviolet definition remains* |
+| `PO-22` **opened** | ⇐ ***LARGER*** | **the one movement the other way, and it is the programme's own** — *P14's wall index rests on a mispaired superpotential. `prop:wall` survives; the INDEX argument does not, and `B67`'s real-versus-oscillatory dichotomy is false on the correct operator* |
+
+⇒ ⛭ ***THE HONEST READING OF THIS TABLE.*** *Eight movements, seven of them smaller. Three of the seven were
+not work at all but the correction of a mis-count this line made; one closed on the weaker of two allowed
+branches; and one — the largest, `frontier:sm` — bought its shrinkage at the price of making a banked result
+(hypercharge) conditional. **The net is a real advance and a smaller one than the strike-count suggests**, and
+a reader counting struck rows would take it for more than it is. That is the number this file exists to keep.*
+
+⌗ *Entered r3111, discharging `OWED` 610. The pass that shrank the frontiers is the pass that wrote this entry,
+which is the arrangement the file's own warning distrusts — so the middle column is stated against the pass,
+not for it.*
+
 ## ⛭⛭ AND THE ENTRY IS CORRECTED, WHICH IS ITSELF ON THE UNFAVOURABLE SIDE — added c54.205, from c54.200
 
 ***The withdrawal above was too wide, and the correction came from another node.***

@@ -26,7 +26,7 @@ job: The programme's work, route and destination — the lanes, the per-turn ope
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r3112
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r3124
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
@@ -1098,7 +1098,12 @@ consequence** (*the single boundary condition replaced by one supported on the s
 cited to P11.
 ④ **`D.13` / `D.14`** — ***the open routes exactly to `A3.1`, and the match is verbatim***: P10's
 "$\hat\Gamma$ … spectrum bounded below … straddling $\tfrac34$" against A3.1's *"the interacting graviton tower as
-a defined theory ($\hat\Gamma$ spectrum bounded-below? UV of the tower sums)"*. **Routed, and r1782 already found
+a defined theory ($\hat\Gamma$ spectrum bounded-below? UV of the tower sums)"*. ⛭ **BOTH CLAUSES ARE NOW
+ANSWERED (r3120):** *$\hat\Gamma$ **is** bounded below (`P10_gamma_hat_is_bounded_below`), and the UV clause
+is **measured and handed over** — shells grow as $n^{3}$ and the sum as $N^{4}$, the generic
+four-dimensional zero-point divergence at the generic power, with the infrared regulated for free by a
+tower starting at $n=2$. **Not this construction's to close**: the standard problem of the interacting
+theory, met at its boundary face. P7 carries it as a boundary rather than as work.* **Routed, and r1782 already found
 A3.1 half-answered by P11's ghost-free result. So the item has both its papers.***
 
 **⌗ STATION ③ · P8 — ✔ CLOSED r1795. The canon gained its most overloaded symbol.**

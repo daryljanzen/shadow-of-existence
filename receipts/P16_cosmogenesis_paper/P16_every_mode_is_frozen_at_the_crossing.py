@@ -114,8 +114,12 @@ for k in (10.0, 30.0, 80.0, 200.0, 500.0, 900.0):
         fail.append(f"k={k} is still oscillating a decade past its freeze-out")
 print("\n  ** EVERY MODE IN THE OBSERVED RANGE FREEZES STRICTLY BEFORE THE CRUNCH, and stays")
 print("     frozen: the ratio falls monotonically to zero once it has crossed. **")
-print("     *The highest mode tested, ell = 2475, still freezes with a fifth of a per cent of the")
-print("     leg to spare, and the margin only grows as x -> 0.*")
+# ** r3124: this gloss read "a fifth of a per cent" -- 0.2% -- against its OWN table two lines above,
+#    which computes 0.065% of the leg remaining at ell = 2475.  Threefold out, and in the LESS
+#    conservative direction, since a smaller margin is the harder case for the claim being made.  P7
+#    quoted the gloss rather than the table and carried the error into a paper (corrected r3095). **
+print("     *The highest mode tested, ell = 2475, still freezes with 0.065% of the leg to spare --")
+print("      the figure the table above computes -- and the margin only grows as x -> 0.*")
 
 # =====================================================================
 print()
