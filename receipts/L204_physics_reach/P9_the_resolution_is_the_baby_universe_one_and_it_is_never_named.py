@@ -155,8 +155,20 @@ def main():
           n_unruh > 0 and len(re.findall('baby universe', allp, re.I)) > 0)
 
     # ⚠ and what stays open by the corpus's own statement
-    check('⚠ and P1 names its own frontier as "the mechanism of the crossing, not its unitarity"',
-          'the mechanism of the crossing, not its unitarity' in allp)
+    # ** RE-PINNED r3107.  The pinned phrase left P1 at r3096.  What stands in its place is stronger
+    #    for this receipt's thesis, not weaker: P1 now says the paradox "does not ARISE, because the
+    #    spacetime it requires is never physically instantiated" -- which is the baby-universe
+    #    resolution's structural difference stated outright -- and separately names the crossing as
+    #    the programme's frontier with its worldline-and-field development owed to the dynamics paper.
+    #    The receipt tests that the resolution is never NAMED; that is untouched. **
+    check('⚠ and P1 states the structural difference outright: the paradox "does not \\emph{arise}, '
+          'because the spacetime it requires is never physically instantiated"',
+          'it does not arise, because the spacetime it requires is never physically instantiated'
+          in allp.replace('\\emph{resolved}', 'resolved'))
+    check('and P1 still names the crossing as the programme\'s frontier, its development owed to the '
+          'companion dynamics',
+          "it stands as the programme's named frontier" in allp
+          and 'full worldline-and-field development' in allp)
 
     print()
     if FAILED:

@@ -60,6 +60,7 @@ Written r2792.  Stated for reversal.
 # ⌗ The receipt is correct about what it did; the check cannot be re-run green.
 import os
 import re
+import subprocess
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -104,9 +105,23 @@ def main():
           'do-not-assert on three separated levels' in row('PO-2', raw))
 
     # ⓷ PO-7 is the exception and is a different kind
-    check('⓷ while `PO-7` is the exception and is a VERDICT question, not a construction one: "a '
-          'negative here is a measurement discrepancy, not a framework verdict"',
-          'measurement discrepancy, not a framework verdict' in row('PO-7', raw))
+    # ⛔⛭ AMENDED r3105 (`L-249`): the sentence did not go away -- **it MOVED ROWS**.  r2832b removed
+    # "19,753 bytes of cross-row duplication" from `PROTECTED_OPEN`, and this clause, which had been
+    # repeated on several rows, was kept on `PO-10` and dropped from `PO-7`.
+    #   ⇒ ** A dedup is exactly the edit a per-row quote cannot survive, and it leaves no trace in
+    #     the row it emptied. **  *The rule is still in the register; only its address changed.*
+    #   ⇒ *** So the row-level fact is pinned where it stood, and the live claim is made against the
+    #       FILE rather than the row -- which is what "the register states this rule" actually needs. ***
+    PRE = '58e5238082021b44268d4c06e66816689e544cae'   # r2832b^, before the cross-row dedup
+    then_raw = subprocess.run(['git', 'show', f'{PRE}:PROTECTED_OPEN.md'], cwd=ROOT,
+                              capture_output=True, text=True).stdout
+    check(f'⓷ at {PRE[:12]} (before r2832b\'s dedup) `PO-7`\'s own row carried it: "a negative here '
+          'is a measurement discrepancy, not a framework verdict"',
+          'measurement discrepancy, not a framework verdict' in row('PO-7', then_raw))
+    check('⓷ᵇ ⛭ and the rule is still IN the register after the dedup -- carried on `PO-10`\'s row '
+          'now, so what changed is its address and not its force',
+          'measurement discrepancy, not a framework verdict' in raw
+          and 'measurement discrepancy, not a framework verdict' in row('PO-10', raw))
 
     # ⓸ p0 already names three of this form
     check('⛭ ⓸ and p0 already names three statements of exactly this form as "the common root": "the '

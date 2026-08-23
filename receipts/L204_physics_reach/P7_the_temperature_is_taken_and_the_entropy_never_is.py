@@ -126,9 +126,19 @@ def main():
           'finite layer no realised horizon to be defined on"',
           'area law and entropy alike, has on a finite layer no realised horizon to be defined on'
           in allp)
-    check('and it scopes its own non-claim: what survives for a perpetually collapsing ultra-compact '
-          'body "is not settled by this reading and is not claimed here"',
-          'is not settled by this reading and is not claimed here' in allp)
+    # ** RE-PINNED r3107.  The pinned sentence was removed from P7 at r3059, and what replaced it is
+    #    SHARPER, not weaker: the non-claim is now scoped to the subsection that makes it rather than
+    #    to "this reading", and the sentence goes on to say what the collapse DOES produce and where
+    #    that is established.  So the receipt's thesis -- the temperature is taken and the entropy is
+    #    never taken -- is unchanged, and the scoping it pins is stronger.  Pinning the OLD wording
+    #    punished the edit that improved it, which is this class's rule. **
+    check('and it scopes its own non-claim to the subsection making it: what survives for a '
+          'perpetually collapsing ultra-compact body "is not settled by the horizon-thermodynamic '
+          'reading of this subsection"',
+          'is not settled by the horizon-thermodynamic reading of this subsection' in allp)
+    check('and it says where what the collapse DOES produce is established, rather than leaving the '
+          'non-claim bare',
+          'what the collapse does produce is the subject of the central theorem below' in allp)
     check('⇒ so THAT absence is a properly scoped DECLINE, covering the COLLAPSE horizon',
           'thermodynamics of an idealisation' in allp)
 

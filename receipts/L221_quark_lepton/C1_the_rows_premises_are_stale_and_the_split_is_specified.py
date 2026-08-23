@@ -65,7 +65,7 @@ Written r2464.  Stated for reversal.
 # the failure is r2830 working as designed: a row is struck when its OBJECT is answered
 # and the answer is receipted, and nothing else gates it.  The rest of this receipt's
 # checks stand. ***
-import os, re
+import os, re, subprocess
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -86,16 +86,38 @@ def main():
                encoding='utf-8', errors='replace').read()
     pub = re.sub(r'\s+', ' ', '\n'.join(l for l in raw.split('\n')
                                         if not l.lstrip().startswith('%')))
+    raw_po_lines = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'),
+                        encoding='utf-8', errors='replace').read()
     po = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'PROTECTED_OPEN.md'),
                                   encoding='utf-8', errors='replace').read())
     arc = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_LIVE_ARC.md'),
                                    encoding='utf-8', errors='replace').read())
 
     # what protected means
-    check('PROTECTED_OPEN permits working a protected row: "A node may write a bounded negative; '
-          'a closure on a protected item is Daryl\'s"',
-          'A node may write a bounded negative' in po
-          and 'a closure on a protected item is Daryl' in po)
+    # ⛔⛭⛭ AMENDED r3105 (`L-249`).  ** THE SENTENCE WAS NOT LOST -- IT WAS REWRITTEN, AND THE
+    # ** REWRITE IS A POLICY CHANGE THIS RECEIPT SHOULD REPORT RATHER THAN TRIP OVER. **
+    #     r2419 -> r2826:  "a closure on a protected item is Daryl's"
+    #                   ->  "a closure on a protected item is made in the register with a kill receipt"
+    # *r2826, "199 decisions parked on Daryl, removed."*  ⇒ ** Closure authority moved from a PERSON
+    # to a MECHANISM.  The half this receipt actually needs -- that a node may work a protected row
+    # and write a bounded negative -- is unchanged and still stands. **
+    #   ⇒ *** So the historical wording is pinned at the commit it stood at, and the CURRENT rule is
+    #       asserted in its own words.  A check that just dropped the second clause would have hidden
+    #       a change of who may close a protected item. ***
+    PRE = 'c01f56c5bb061ae30483f2a1aeacd435c509a1f2'         # r2419, the wording this receipt read
+    then_po = re.sub(r'\s+', ' ', subprocess.run(
+        ['git', 'show', f'{PRE}:PROTECTED_OPEN.md'], cwd=ROOT,
+        capture_output=True, text=True).stdout)
+    check('PROTECTED_OPEN permits working a protected row: "A node may write a bounded negative" -- '
+          'and that half is UNCHANGED, which is the half this receipt needs',
+          'A node may write a bounded negative' in po)
+    check(f'⌗ and at {PRE[:12]} (r2419) the sentence continued "a closure on a protected item is '
+          'Daryl\'s"', 'a closure on a protected item is Daryl' in then_po)
+    check('⛭ while the LIVE rule reads "a closure on a protected item is made in the register with a '
+          'kill receipt" -- r2826 moved closure authority from a PERSON to a MECHANISM, and this '
+          'receipt records the change rather than failing on it',
+          'a closure on a protected item is made in the register with a kill receipt' in po
+          and 'a closure on a protected item is Daryl' not in po)
 
     # premise 1 is stale
     n_lep = len(re.findall('lepton', pub, re.I))
@@ -148,8 +170,21 @@ def main():
     check('⇒ so this receipt does NOT claim the split is forced -- a grading count matching a '
           'field count is a coincidence until a map is built',
           'draws nothing from it' in pub)
-    check('PO-5 remains open and its closure is Daryl\'s',
-          'a closure on a protected item is Daryl' in po)
+    # ⛔⛭ AMENDED r3105 (`L-249`): this check outlived BOTH of its premises, and the receipt's own
+    # docstring (line 55) had already been updated for one of them while the check was not.
+    #   · the RULE changed at r2826 -- closure is "made in the register with a kill receipt", not
+    #     Daryl's (see the amended check above);
+    #   · and `PO-5` no longer "remains open" -- it was STRUCK at r2947, by exactly that mechanism.
+    # ⇒ *** So the receipt's NOT-a-closure disclaimer is intact and its evidence has changed: the
+    #     closure happened, through the stated route, and this check now says so. ***
+    # ⌗ *This receipt did not close it -- that is the disclaimer, and it still holds.*
+    po5_struck = bool(re.search(r'\|\s*~~\*\*PO-5\*\*', raw_po_lines))
+    check('⛭ `PO-5` has since been CLOSED -- struck in the register -- and this receipt was not the '
+          'thing that closed it, which is what its own NOT-a-closure disclaimer says',
+          po5_struck)
+    check('and the closure ran by the route `PROTECTED_OPEN` states: a kill receipt in the register',
+          os.path.exists(os.path.join(ROOT, 'kills', 'PO-5.md'))
+          and 'made in the register with a kill receipt' in po)
 
     print()
     if FAILED:

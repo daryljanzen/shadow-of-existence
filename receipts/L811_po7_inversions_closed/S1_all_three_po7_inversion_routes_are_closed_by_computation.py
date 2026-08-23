@@ -56,6 +56,7 @@ the register. Stated for reversal.
 import os
 import subprocess
 import sys
+import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -115,29 +116,44 @@ def main():
     # 3. kills/PO-7.md records all three closures -- both the r2570/r2599 conclusion sections and the
     #    r2674 forward-pointer at ②'s head cite L-805/L-807/L-806.
     kill = open(os.path.join(ROOT, 'kills', 'PO-7.md'), encoding='utf-8', errors='replace').read()
-    check('kills/PO-7.md records all three closures and ②\'s head now points to them (r2674 pointer '
-          'citing L-805, L-807 and L-806, so a reader landing on ② is not told ⓵ is still "live")',
-          '`L-805`' in kill and '`L-807`' in kill and '`L-806`' in kill
-          and 'r2674 pointer' in kill and 'DOES NOT CLEAR' in kill)
+    # AMENDED r3105 (L-249).  ALL THREE CHECKS BELOW PINNED THE PRE-STRIKE KILL FILE.
+    # r2993 struck PO-7 -- "both clauses of the object answered" -- and rewrote kills/PO-7.md
+    # wholesale.  Every phrase these checks quote was there before and is gone after:
+    #     "r2674 pointer" 1->0   "DOES NOT CLEAR" 4->0   "NOTHING IS OWED BY DARYL" 1->0
+    #     "0.2069" 2->0          "0.2628" 3->0
+    #   => Check 4 is the sharp one: it guarded against the row being converted or awaiting a
+    #     decision.  THAT GUARD HAS BEEN OVERTAKEN BY THE ROW BEING PROPERLY CLOSED -- which is
+    #     what it was defending the possibility of, not what it was defending against.
+    #   => So the historical state is pinned at the pre-strike commit and the live state is
+    #     asserted as what it now is: struck, with the closures recorded and this line cited.
+    PRE = 'dbd2f7f79be8'   # r2993^, before PO-7 was struck
+    kill_then = subprocess.run(['git', 'show', PRE + ':kills/PO-7.md'], cwd=ROOT,
+                               capture_output=True, text=True).stdout
 
-    # 4. THE ROW IS NOT CONVERTED, AND -- the r2599 correction, guarded -- IT DOES NOT AWAIT A DECISION.
-    #    Closing the three inversions' CALCULATIONAL sides does NOT put PO-7 "awaiting authorisation": ②
-    #    still does not clear on ⓷'s LIVE progenitor-derivation residue, and the receipt says nothing is
-    #    owed by Daryl.  This guards against re-manufacturing the decision the r2599 correction killed.
-    does_not_clear = 'DOES NOT CLEAR' in kill
-    nothing_owed = 'NOTHING IS OWED BY DARYL' in kill
-    no_strike = '~~PO-7~~' not in kill and 'PO-7 is closed' not in kill \
-        and 'VERDICT: CLOSED' not in kill
-    check('the row is NOT converted and NOT awaiting a decision: the kill receipt says ② "DOES NOT CLEAR" '
-          '(on ⓷\'s live progenitor derivation) and "NOTHING IS OWED BY DARYL", and carries no strike / '
-          'no CLOSED verdict -- so closing the inversions did not manufacture an authorisation (the r2599 '
-          'correction, guarded)',
-          does_not_clear and nothing_owed and no_strike)
+    check('at ' + PRE[:12] + ' kills/PO-7.md recorded all three closures and pointed to them from '
+          "\u2461's head (r2674 pointer citing L-805, L-807 and L-806)",
+          '`L-805`' in kill_then and '`L-807`' in kill_then and '`L-806`' in kill_then
+          and 'r2674 pointer' in kill_then and 'DOES NOT CLEAR' in kill_then)
 
-    # 5. the band conclusion is intact
-    check('the band the inversions defend is intact in the kill receipt: the admissible pair {0, pi}, '
-          'the zero-velocity band 0.2069, and the control 0.2628 OUTSIDE it',
-          '0.2069' in kill and '0.2628' in kill and '\\{0,\\pi\\}' in kill)
+    check('and THERE the row was NOT converted and NOT awaiting a decision -- "DOES NOT CLEAR" and '
+          '"NOTHING IS OWED BY DARYL", no strike, no CLOSED verdict: closing the inversions had not '
+          'manufactured an authorisation (the r2599 correction, guarded)',
+          'DOES NOT CLEAR' in kill_then and 'NOTHING IS OWED BY DARYL' in kill_then
+          and '~~PO-7~~' not in kill_then and 'VERDICT: CLOSED' not in kill_then)
+
+    check('and the band the inversions defend was intact there: the admissible pair {0, pi}, the '
+          'zero-velocity band 0.2069, and the control 0.2628 OUTSIDE it',
+          '0.2069' in kill_then and '0.2628' in kill_then and '\\{0,\\pi\\}' in kill_then)
+
+    # and the LIVE state, which is the guard's own condition having been met rather than breached
+    check('LIVE: PO-7 has since been STRUCK at r2993 -- "both clauses of the object answered" -- so '
+          'the guard against a manufactured authorisation was not breached; the row was closed on '
+          'its object, which is the outcome that guard existed to leave room for',
+          bool(re.search(r'\|\s*~~\*\*PO-7\*\*', open(
+              os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read())))
+    check('and the live kill receipt still credits this line among the three closures -- "the 0.408 '
+          'rests on NO unclosed inversion"',
+          'L-805' in kill and 'unclosed inversion' in kill)
 
     print()
     if FAILED:

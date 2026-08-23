@@ -76,6 +76,7 @@ Written r2515.  Stated for reversal.
 import glob
 import os
 import re
+import subprocess
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -161,12 +162,27 @@ def main():
 
     check('the substrate is five-dimensional',
           'SO(5,1)/SO(4,1)' in p12 or 'de Sitter substrate' in p12)
-    check("and PO-9's mapped half (in BOARD.md's vein summary) records that the cut is four and "
-          '"says nothing about the substrate"',
-          'cut is four and **says nothing about the substrate**' in arc)
+    # AMENDED r3105 (`L-249`): BOARD.md's vein summary carried this at eda3ad7c9d4a, where this
+    # receipt was written.  r2832h pruned it out of BOARD -- "a struck row with a live lead is
+    # closed work still being of interest" -- and the wording lives on in THE_LIVE_ARC.
+    #   => The guard this receipt distinguishes itself FROM is still on the record; only the
+    #     document holding it changed.  So the BOARD fact is pinned where it stood and the live
+    #     claim is made against the register that carries it now.
+    AT = 'eda3ad7c9d4adfc32f54f15dca112bc1cafd2964'
+    PHRASE = 'cut is four and **says nothing about the substrate**'
+    then_board = re.sub(r'\s+', ' ', subprocess.run(
+        ['git', 'show', AT + ':BOARD.md'], cwd=ROOT, capture_output=True, text=True).stdout)
+    live_arc = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_LIVE_ARC.md'),
+                                         encoding='utf-8', errors='replace').read())
+    check("and PO-9's mapped half recorded, in BOARD.md's vein summary at " + AT[:12] + ", that the "
+          'cut is four and "says nothing about the substrate"', PHRASE in then_board)
+    check('and the guard is still on the record after r2832h pruned BOARD -- carried in '
+          'THE_LIVE_ARC now, so what this receipt distinguishes itself from still stands',
+          PHRASE in live_arc and PHRASE not in arc)
     check("⇒⇒ SO THE LEAD IS DISTINCT FROM PO-9's GUARD: not a claim about the SUBSTRATE's dimension, "
           "but about what the LEAF's four-ness BUYS",
-          'cut is four and **says nothing about the substrate**' in arc and lovelock_then == 0)
+          # same amendment: the guard is read where it now lives, not where BOARD used to hold it
+          PHRASE in live_arc and lovelock_then == 0)
 
     check('⚠ CR does NOT derive the dynamics: "the construction leaves the dynamics of general '
           'relativity unchanged"',

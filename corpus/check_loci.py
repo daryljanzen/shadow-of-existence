@@ -246,10 +246,21 @@ def sentences_with_rcpt(tex):
     for m in re.finditer(r'\\rcpt\{([^}]+)\}', s):
         key = m.group(1).replace('\\_', '_')
         # the enclosing sentence: back to the previous sentence end, forward to the next
-        lo = max(s.rfind('. ', 0, m.start()), s.rfind('}\n\n', 0, m.start()))
+        # ** r3107: the forward bound was `s.find('. ', m.end())` alone, and the citation is written
+        #    IMMEDIATELY AFTER the period at 69 sites in this corpus -- ".\rcpt{...}", no space --
+        #    so the split never fired at the sentence the citation belongs to and the "sentence"
+        #    ran on to the next ". " downstream, swallowing whatever loci that text named.  It
+        #    reported P7's cube-root-two site as naming the SEAM, from a sentence four lines below
+        #    the citation.  A splitter that over-runs attributes one claim's locus to another's
+        #    argument, which is the exact failure this gate exists to catch. **
+        lo = max(s.rfind('. ', 0, m.start()), s.rfind('\n\n', 0, m.start()))
         lo = 0 if lo < 0 else lo + 1
-        hi = s.find('. ', m.end())
-        hi = len(s) if hi < 0 else hi + 1
+        # the citation ENDS its sentence: stop at it, and never run past a paragraph break
+        hi = m.end()
+        nxt = s.find('. ', m.end())
+        par = s.find('\n\n', m.end())
+        if nxt >= 0 and (par < 0 or nxt < par):
+            hi = nxt + 1
         yield s[lo:hi], key, s[:m.start()].count('\n') + 1
 
     # theorem body ← receipt cited in the argument paragraph that follows it

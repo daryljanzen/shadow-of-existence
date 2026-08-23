@@ -54,6 +54,14 @@ BRITTLE = re.compile(r"""\.startswith\(\s*(?P<q>['"])\|\s*\*\*(PO|L)-[^'"]*\*\*(
 #: what an OPEN-FORM row identifier looks like, as the CONTENT of a string literal
 OPEN_FORM = re.compile(r"^\|\s*\*\*(PO|L)-.*\*\*")
 
+#: ** AND THE SAME BRITTLENESS WRITTEN AS A REGEX, which the first version of this gate MISSED. **
+#: *`A5_the_dark_halves_audited` matches rows with `re.match(r'\|\s*\*\*PO-\d+\*\*', l)` -- no
+#: `startswith` anywhere, and every bit as blind to a struck row.*
+#:   ⇒ *** A gate for a class that catches only one SPELLING of it leaves the class open, and this
+#:       one was found by the very sweep the gate was built for -- one revision after building it. ***
+#: A row-prefix pattern is brittle when it pins `\|` then `\*\*` then the id with NO `~` allowance.
+OPEN_FORM_RE = re.compile(r"\\\|(?:\\s\*|\s)*\\\*\\\*(PO|L)-")
+
 
 def uses_it(src):
     """(line, text) for every line that USES the brittle matcher -- not one that MENTIONS it
@@ -94,7 +102,21 @@ def uses_it(src):
         if isinstance(val, str) and OPEN_FORM.match(val):
             ln = b.start[0]
             out.append((ln, lines[ln - 1].strip()[:96]))
-    return out
+    # ** the REGEX spelling: any string literal that is a row-prefix pattern with no `~` allowance.
+    # ** Checked on the literal's CONTENT, so a mention in a comment or docstring is not a token
+    # ** of this shape and never reaches here. **
+    for tok in toks:
+        if tok.type != tokenize.STRING:
+            continue
+        try:
+            val = ast.literal_eval(tok.string)
+        except Exception:
+            continue
+        if isinstance(val, str) and OPEN_FORM_RE.search(val) and '~' not in val:
+            ln = tok.start[0]
+            if not any(o[0] == ln for o in out):
+                out.append((ln, lines[ln - 1].strip()[:96]))
+    return sorted(out)
 
 
 def main():
