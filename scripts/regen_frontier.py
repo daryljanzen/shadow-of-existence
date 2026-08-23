@@ -51,13 +51,17 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 0
-LASTFIND = ("r3092: **the phase reset rests on a premise the programme overturned.** The code says "
-            "'UNBOUNDED tortoise phase leaves nothing to inherit'; **r2154 (1) derived r_* = 0.2247 "
-            "alpha, FINITE**, with the phase **linear in k** and therefore **a sound-horizon "
-            "renormalization** — which is the shape of the measured defect, a flat 0.746 across k. "
-            "⇒ Wired it: r_* = 1108 Mpc, phi reaching 7 pi by k = 0.02. **The comb moves hard — a "
-            "live term — but none of the three settings lands it. Carrier found, fit not made.**")
+SINCE = 1
+LASTFIND = ("r3099: **PO-14 built — the fifth (chiral) class.** `L-832` builds the inhomogeneous, "
+            "propagating, two-mode turning-polarization Gowdy member `L-163` had left as an open "
+            "Cauchy problem (it built only the homogeneous reduction). The `(P,Q)` wave map is "
+            "**unconstrained** (gamma by a consistent quadrature, integrability identically zero on "
+            "shell), an explicit travelling datum is evolved to the roundoff floor with 4th-order "
+            "convergence, and the polarization plane **turns with a definite Z_2 sign** — the winding "
+            "of `arg(h_+ + i h_x)`, nonzero on the turning member, identically zero on the polarized "
+            "cut `Q=0`, reversed by the parity. **A step advanced as predicted, not a discovery: the "
+            "member was reachable and is; P11 sec:unpolarized carries it; the 'four where five are "
+            "required' clause is discharged.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
