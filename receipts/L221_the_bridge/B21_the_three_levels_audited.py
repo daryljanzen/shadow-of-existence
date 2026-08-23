@@ -59,7 +59,8 @@ def main():
     print("  B21 -- what do PO-2's three levels stand at now?")
     print()
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
-    po2 = next(l for l in raw.split('\n') if l.startswith('| **PO-2**'))
+    po2 = next(l for l in raw.split('\n')
+               if re.match(r'\|\s*~?~?\*\*PO-2\*\*', l))
     tax = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'GEOMETRY_PHYSICS_TAXONOMY.md'),
                                    encoding='utf-8', errors='replace').read())
 

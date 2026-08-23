@@ -77,7 +77,8 @@ def main():
     print()
     p15 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')))
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
-    po7 = next(l for l in raw.split('\n') if l.startswith('| **PO-7**'))
+    po7 = next(l for l in raw.split('\n')
+               if re.match(r'\|\s*~?~?\*\*PO-7\*\*', l))
 
     # ⓵ the acoustic sector is open
     check('⓵ the acoustic sector is open as PO-7: "The first acoustic peak, and the propagated comb"',

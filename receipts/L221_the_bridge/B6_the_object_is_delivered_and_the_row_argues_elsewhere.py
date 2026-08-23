@@ -81,7 +81,8 @@ def main():
     # appears INSIDE PO-5's own text (the veins cross-reference each other), so searching for the bare
     # string finds a mention, not the next row.  ⇒ *** Read the file unnormalised and take the line. ***
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
-    row = next(l for l in raw.split('\n') if l.startswith('| **PO-5**'))
+    row = next(l for l in raw.split('\n')
+               if re.match(r'\|\s*~?~?\*\*PO-5\*\*', l))
 
     # ⓵ the item's object
     check("⓵ PO-5's object: \"The quark/lepton split, and what a baryon IS at particle level\"",

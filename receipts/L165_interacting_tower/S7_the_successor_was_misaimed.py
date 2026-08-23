@@ -62,7 +62,8 @@ def main():
     print("  S7 -- is L-543 aimed at the background the free tower uses?")
     print()
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
-    po6 = next(l for l in raw.split('\n') if l.startswith('| **PO-6**'))
+    po6 = next(l for l in raw.split('\n')
+               if re.match(r'\|\s*~?~?\*\*PO-6\*\*', l))
 
     # ⓵ the successor as registered
     check("⓵ L-543 asks about a RUNNING background: \"does the one-dimensional basis survive on a "

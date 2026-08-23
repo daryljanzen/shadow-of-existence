@@ -83,7 +83,8 @@ def main():
     print()
     p4 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'janzen_circle_v3.tex')))
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
-    po2 = next(l for l in raw.split('\n') if l.startswith('| **PO-2**'))
+    po2 = next(l for l in raw.split('\n')
+               if re.match(r'\|\s*~?~?\*\*PO-2\*\*', l))
 
     # the question
     check('⓵ P4 asks it: "Whether the two triples are one structure ... no derivation producing '

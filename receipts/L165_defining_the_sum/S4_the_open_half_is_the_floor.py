@@ -64,7 +64,8 @@ def main():
     p10 = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'canonical_time.tex'),
                                    encoding='utf-8', errors='replace').read())
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
-    row = next(l for l in raw.split('\n') if l.startswith('| **PO-6**'))
+    row = next(l for l in raw.split('\n')
+               if re.match(r'\|\s*~?~?\*\*PO-6\*\*', l))
 
     # ⓵ the decomposition does not need the floor
     check('⓵ P10: "the decomposition that follows uses only that both sides of the threshold are '
