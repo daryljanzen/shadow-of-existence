@@ -23,9 +23,13 @@ the computation the row then leaves: does the c!=0 geometry SELECT it?
      non-degenerate: det g = R^2 != 0, P11 sec:unpolarized).  For ANY invertible M, M I M^{-1} = I
      and M S M^{-1} != I for S != I, so triviality-on-a-block cannot be created or destroyed.
   ② The mode CONTENT is unchanged, so the conjugation premise holds: the wall binding is a RADIAL
-     normalizability threshold (|r|^{+/-lambda} in the leaf measure dl = dr/sqrt(|f|), s > -3/4,
-     P14 sec:chirality), and dl depends on f(r) only; the twist is the TRANSVERSE off-diagonal
-     omega and does not enter it.  The same one chirality binds per wall as at c=0.
+     selection driven by the superpotential W = lambda sqrt(f)/r, and the twist is the TRANSVERSE
+     off-diagonal omega that does not enter the radial equation.  The selection lives in the STATIC
+     region between the horizons (f>0), where the leaf-measure amplitude goes as |r|^{-/+lambda} --
+     one chirality decays (bound), its conjugate grows (rejected) -- and the same one chirality
+     binds per wall as at c=0.  (See the PO-22 note below: 57's L-246/W2 corrected the NEAR-THROAT
+     f<0 form from S3's r^{+/-lambda} to a bounded phase; that region selects nothing, so the
+     correction re-grounds this mechanism without moving the count.)
   ③ And the transverse angular eigenvalue lambda = j+1/2 cannot split by chirality either, because
      P14's own P03_transverse_space_is_round fixes the transverse space as the ROUND S^2 (spin
      structure forces it), on which a metric perturbation acts by a similarity of a fixed operator
@@ -50,20 +54,41 @@ the back-reaction is real (gamma does depend on the twist) but PARITY-EVEN, so i
 the two chiralities, which the sign of c exchanges.  The binding is chirality-symmetric, the
 conjugation premise holds exactly, and the negative is CLOSED -- not conditional. **
 
+** ⛭ PO-22 RE-GROUNDS PART 4's MECHANISM (57's L-246/W2, cold-checked and independently reproduced).
+57 found that S3's radial operator was MISPAIRED (orthonormal derivative sqrt(f) d_r against the
+tortoise superpotential W = lambda sqrt(f)/r -- one sqrt(f) too many), giving a spurious r^{+/-lambda}
+where the correct B60 operator gives d ln psi/dr = lambda/(r sqrt f), whose NEAR-THROAT (f<0) form is
+a bounded phase exp(-i sqrt2 lambda sqrt(r)/sqrt(M)) -- NEITHER r^{+/-lambda} NOR r^{+/-i lambda}.
+This is a correct finding, and it means the selection is NOT at r=0: in the f<0 throat both
+chiralities are a bounded phase (the r=0 crossing an integrable sqrt-singularity that selects
+nothing).  My earlier PART 4 leaned on the mispaired 's = -lambda never clears -3/4 at the throat'
+threshold -- an artifact of the same mispairing -- so that MECHANISM was over-closed.  The count
+survives because the genuine selection is in the f>0 static region (|r|^{-/+lambda}: one decays,
+conjugate grows), already computed with the correct W = lambda sqrt(f)/r in receipt B2 (exp(-0.95)
+bound).  prop:wall is untouched.  The CONCLUSION here (T conjugated, not projected; 2+2, no 2+1+1)
+never depended on WHICH mode form: it rests on PARTS 1-3 (T-conjugation) and PART 5 (parity-even
+measure), both mode-form-independent, and on the f>0 selection being twist-independent and
+sigma-symmetric -- which it is.  [P14 sec:chirality line-212's 'selection at r=0 where |r|^{+/-lambda}
+part company' carries the SAME mislocation and should be corrected with PO-22's landing, not here.] **
+
   PART 1  T is an invertible involution; conjugation preserves its per-block orbit structure.
   PART 2  the chirality-resolved action: opposite turnings, same 2+2 -- never 2+1+1.
   PART 3  geometry-independent: ANY invertible frame change conjugates T.
-  PART 4  the binding is radial, the twist transverse -- the mode content is c-independent.
+  PART 4  the binding is radial (selection in f>0, the corrected operator per PO-22), the twist
+          transverse -- the mode content is c-independent.
   PART 5  the back-reaction on the measure is PARITY-EVEN: gamma is even in the twist, so the binding
           cannot depend on the sign of c (the chirality).  The one escape, closed by computation.
 
 STATUS: ✔✔ (conjugation-invariance of triviality-on-a-block asserted for rotations and for random
   GL(2); the chirality-resolved 2+2 asserted for every turning angle; the swap's eigenvalues asserted
-  a conjugation invariant; the radial/transverse decoupling of the binding stated with its P14 source;
+  a conjugation invariant; the radial binding's chirality selection COMPUTED on the corrected operator
+  in the f>0 region -- one decays, conjugate grows, sigma-symmetric, twist-free -- matching receipt B2;
   and gamma_z, gamma_t derived from the constraints and asserted EVEN under Q -> -Q)
 RUN: python3 P14_the_twist_conjugates_T_it_does_not_project_it.py   RUNTIME: ~1s
-ORIGIN: built r3103, back-reaction closed r3104 (c54); the positive half of `PO-21`, on `L-246`'s
-  negative half and P11 sec:unpolarized's twist c.
+ORIGIN: built r3103, back-reaction closed r3104 (c54); PART 4's mechanism re-grounded onto the
+  corrected operator after cold-checking 57's `PO-22` (L-246/W2) -- the near-throat r^{+/-lambda} was
+  a mispairing artifact; the count survives via the f>0 selection (B2), the conclusion unchanged.
+  The positive half of `PO-21`, on `L-246`'s negative half and P11 sec:unpolarized's twist c.
 """
 import numpy as np
 import sympy as sp
@@ -142,18 +167,44 @@ print("=" * 78)
 print("PART 4 -- THE BINDING IS RADIAL, THE TWIST TRANSVERSE -- MODE CONTENT IS c-INDEPENDENT")
 print("=" * 78)
 for s in [
- "The conjugation premise needs the mode CONTENT unchanged by c.  It is: the wall binding is a RADIAL",
- "threshold -- |r|^{+/-lambda} normalizable in dl = dr/sqrt(|f|), s > -3/4 (P14 sec:chirality) -- and",
- "dl depends on f(r) only.  The twist is the transverse omega and does not enter it, so the same one",
- "chirality binds per wall as at c=0.  And lambda = j+1/2 cannot split by chirality: the transverse",
- "space is the round S^2 and nothing else (P14 P03_transverse_space_is_round), on which the turning",
- "acts by a similarity of a fixed operator.  So the c!=0 mode is the c=0 mode times an invertible",
- "transverse factor -- exactly the conjugation of PARTS 1-3.",
+ "The conjugation premise needs the mode CONTENT unchanged by c.  It is: the wall binding is RADIAL,",
+ "driven by W = lambda sqrt(f)/r (the corrected B60 operator, PO-22), and the twist is the transverse",
+ "omega, which does not enter the radial equation.  The selection lives in the STATIC region between",
+ "the horizons (f>0), where the leaf-measure amplitude is |r|^{-/+lambda}: one chirality decays",
+ "(bound), its conjugate grows (rejected) -- the Jackiw-Rebbi selection, computed with the correct",
+ "superpotential in receipt B2.  It is TWIST-INDEPENDENT (no omega) and SIGMA-SYMMETRIC (the two",
+ "chiralities are exact conjugates), so the same one chirality binds per wall as at c=0.  And",
+ "lambda = j+1/2 cannot split by chirality: the transverse space is the round S^2 and nothing else",
+ "(P14 P03_transverse_space_is_round), on which the turning acts by a similarity of a fixed operator.",
+ "So the c!=0 mode is the c=0 mode times an invertible transverse factor -- the conjugation of PARTS 1-3.",
+ "[The near-throat f<0 form is a bounded phase (PO-22), not r^{+/-lambda}; that region selects nothing,",
+ " so PART 4's earlier 's=-lambda never clears -3/4 at r=0' threshold was a mispairing artifact, now",
+ " re-grounded onto the f>0 selection below.]",
 ]:
     print("  " + s)
-check("④ the binding threshold s > -3/4 is set by the RADIAL near-wall f -> -2M/r, independent of the "
-      "transverse twist (the numbers: s = +lambda always clears -3/4; s = -lambda never does, for any "
-      "lambda = j+1/2 >= 1)", all((-(j+0.5)) < -0.75 < (j+0.5) for j in np.arange(0.5, 6, 1.0)))
+
+
+# The genuine selection, on the CORRECTED operator (W = lambda sqrt(f)/r), read in the f>0 region:
+# d ln|psi|/dr = s*lambda*sqrt(f)/(r*sqrt|f|) = s*lambda/r for f>0.  Concrete undercritical SdS
+# (same geometry as receipt B2): one chirality decays across f>0, its conjugate grows, exactly
+# conjugate (sigma-symmetric) and with no omega anywhere in the radial equation.
+_al, _M, _lam = 1.0, 0.12, 1.0
+def _f(r):
+    return 1 - 2*_M/r - r**2/_al**2
+_roots = np.sort(np.roots([1/_al**2, 0, -1, 2*_M]))
+_rb, _rc = _roots[_roots > 0][0], _roots[_roots > 0][1]
+def _lnamp(sgn, n=20000):
+    rr = np.linspace(_rb + 0.05, _rc - 0.05, n); tot = 0.0
+    for i in range(n - 1):
+        rm = 0.5*(rr[i] + rr[i+1]); fm = _f(rm)
+        tot += sgn*_lam*np.sqrt(fm)/(rm*np.sqrt(abs(fm)))*(rr[i+1] - rr[i])   # = sgn*lam/r for f>0
+    return tot
+_lp, _lm = _lnamp(+1), _lnamp(-1)
+check("④ on the CORRECTED operator the selection is in the f>0 static region: one chirality decays "
+      f"(ln|psi|={min(_lp,_lm):+.3f}, BOUND) and its conjugate grows (ln|psi|={max(_lp,_lm):+.3f}, "
+      "REJECTED) -- Jackiw-Rebbi, matching receipt B2's exp(-0.95); exactly conjugate (sigma-symmetric) "
+      "and with NO twist omega in the radial equation, so it cannot depend on the sign of c",
+      _lp*_lm < 0 and abs(_lp + _lm) < 1e-9 and abs(abs(_lp) - 0.9534) < 5e-3)
 
 # =====================================================================
 print()
