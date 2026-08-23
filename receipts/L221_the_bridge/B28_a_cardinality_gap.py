@@ -121,7 +121,8 @@ def main():
 
     # ⓷ the wall does not transfer
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
-    po5 = next(l for l in raw.split('\n') if l.startswith('| **PO-5**'))
+    po5 = next(l for l in raw.split('\n')
+               if re.match(r'\|\s*~?~?\*\*PO-5\*\*', l))
     check('⛭ ⓷ PO-5 is walled by "a coupling is not the kind of thing a holonomy supplies" -- an '
           'argument about CONNECTION data',
           'not the kind of thing a holonomy supplies' in po5)

@@ -74,7 +74,8 @@ def main():
     p13 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'boundary_paper.tex')))
     p14 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex')))
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
-    row = next(l for l in raw.split('\n') if l.startswith('| **PO-2**'))
+    row = next(l for l in raw.split('\n')
+               if re.match(r'\|\s*~?~?\*\*PO-2\*\*', l))
 
     # ⓵ the row's own epsilon fact, used destructively
     check('⓵ the row carries the $\\varepsilon$ fact: "$\\Lambda^{3}$ of the wall kernel is '

@@ -61,7 +61,8 @@ def main():
     print("  S6 -- what do PO-6's two halves stand at?")
     print()
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
-    po6 = next(l for l in raw.split('\n') if l.startswith('| **PO-6**'))
+    po6 = next(l for l in raw.split('\n')
+               if re.match(r'\|\s*~?~?\*\*PO-6\*\*', l))
 
     check('⓵ the row declares the structure: "this item\'s two halves are two halves rather than one '
           'entangled question"',

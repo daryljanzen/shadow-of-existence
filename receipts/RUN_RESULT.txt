@@ -1,17 +1,11 @@
 
-  RUN-ALL-RECEIPTS -- 609 registered receipt(s), 4 at a time, 400s each, each from ITS OWN DIRECTORY
-  TREE-DIGEST: 738ef9149b18ab95
+  RUN-ALL-RECEIPTS -- 610 registered receipt(s), 4 at a time, 400s each, each from ITS OWN DIRECTORY
+  TREE-DIGEST: bac8ea19a737ffb6
 
-    [FAIL] receipts/L165_defining_the_sum/S2_c1_and_c2_are_one_and_the_source_answers_more.py  (0s)
-               row = next(l for l in raw_po.split('\n') if l.startswith('| **PO-6**')) /           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / StopIteration
     [FAIL] receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py  (0s)
-               row = next(l for l in raw.split('\n') if l.startswith('| **PO-6**')) /           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / StopIteration
+               OK    so the boundedness question is about COMPLETION, not sign -- and P10 states the leading-order spectrum as "bounded below by $\gamma$ and unbounded above" /     OK    ⌗ and the commutation is structural, not perturbative: "As $\hat\Gamma$ commutes with the radial part, $-\partial_x^2+\hat\G
     [FAIL] receipts/L165_interacting_tower/D3_the_floor_does_not_survive_the_cubic.py  (1s)
                OK    and the divergence is in $\pi^2$: at $\phi=-2c/g_3$, $\Gamma=\gamma-c\pi^2$ /     OK    ⓷ and P10 built the decomposition not to need it: it "uses only that both sides of the threshold are occupied, and not that the spectrum has a floor" /   1 check(s) FAILED
-    [FAIL] receipts/L165_interacting_tower/S6_the_two_halves_restated.py  (0s)
-               po6 = next(l for l in raw.split('\n') if l.startswith('| **PO-6**')) /           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / StopIteration
-    [FAIL] receipts/L165_interacting_tower/S7_the_successor_was_misaimed.py  (1s)
-               po6 = next(l for l in raw.split('\n') if l.startswith('| **PO-6**')) /           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / StopIteration
     [FAIL] receipts/L165_interacting_tower/S9_the_ordering_decides_it.py  (0s)
                FAIL  ⛔ ⓷ and P10 never names it: "symmetric order" appears ZERO times /     OK    while its decomposition survives either way -- it "uses only that both sides of the threshold are occupied" /   2 check(s) FAILED
     [FAIL] receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py  (0s)
@@ -22,41 +16,23 @@
                OK    ⇒ SO THE SHAPE HAS NOW OCCURRED TWICE AND BEEN CLOSED TWICE: the corpus held the answer to a field's standard objection and did not name the objection, both times /     FAIL  ⚠ and P1 names its own frontier as "the mechanism of the crossing, not its unitarity" /   1 check(s) FAILED
     [FAIL] receipts/L221_quark_lepton/C1_the_rows_premises_are_stale_and_the_split_is_specified.py  (0s)
                OK    ⇒ so this receipt does NOT claim the split is forced -- a grading count matching a field count is a coincidence until a map is built /     FAIL  PO-5 remains open and its closure is Daryl's /   2 check(s) FAILED
-    [FAIL] receipts/L221_the_bridge/B10_po2_resemblance_is_now_a_construction.py  (0s)
-               row = next(l for l in raw.split('\n') if l.startswith('| **PO-2**')) /           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / StopIteration
-    [FAIL] receipts/L221_the_bridge/B11_three_triples_two_identifications.py  (0s)
-               po2 = next(l for l in raw.split('\n') if l.startswith('| **PO-2**')) /           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / StopIteration
-    [FAIL] receipts/L221_the_bridge/B12_the_two_triples_are_typed_differently.py  (0s)
-               po2 = next(l for l in raw.split('\n') if l.startswith('| **PO-2**')) /           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / StopIteration
-    [FAIL] receipts/L221_the_bridge/B13_po2_identification_is_stated.py  (0s)
-               po2 = next(l for l in raw.split('\n') if l.startswith('| **PO-2**')) /           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / StopIteration
-    [FAIL] receipts/L221_the_bridge/B21_the_three_levels_audited.py  (0s)
-               po2 = next(l for l in raw.split('\n') if l.startswith('| **PO-2**')) /           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / StopIteration
-    [FAIL] receipts/L221_the_bridge/B28_a_cardinality_gap.py  (1s)
-               po5 = next(l for l in raw.split('\n') if l.startswith('| **PO-5**')) /           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / StopIteration
     [FAIL] receipts/L221_the_bridge/B45_the_object_exists_and_the_action_is_absent.py  (0s)
                OK    ⛭ ⓸ and p0 already names three statements of exactly this form as "the common root": "the winding quantises without measuring, the flat bundle selects without coupling, and the branch point filters without supplying" /     OK    calling it "a property of a one-constant theory rather than a
-    [FAIL] receipts/L221_the_bridge/B53_gating_l829_and_l830.py  (1s)
+    [FAIL] receipts/L221_the_bridge/B53_gating_l829_and_l830.py  (2s)
            /root/soe/receipts/L221_the_bridge/B53_gating_l829_and_l830.py:98: IntegrationWarning: Extremely bad integrand behavior occurs at some points of the /   integration interval. /   leaf = [quad(lambda r: 1/np.sqrt(abs(f(r))), 1.0, RB-e, limit=400)[0]
     [FAIL] receipts/L221_the_bridge/B59_the_routes_are_enumerable_and_one_is_absent.py  (0s)
                OK    ⓷ and the defining 3-dimensional representation of the holonomy group is IRREDUCIBLE: $\langle\chi,\chi\rangle=1.0000$ over 27 elements /     OK    ⇒ so $\mathbb C[G]$ contains $M_3(\mathbb C)$ as a Wedderburn factor -- ** exactly the factor carrying colour in Connes' Standard Model, whose
     [FAIL] receipts/L221_the_bridge/B66_po5s_route_is_gated_on_po11.py  (0s)
                OK    ⛭⛭ ⓷ and the register records `PO-2` gated on ['PO-11', 'PO-5'], while `PO-11` is gated on nothing -- ** so the chain PO-2 → PO-5 → PO-11 TERMINATES, with no circularity ** /     FAIL  ⇒ ** and the register did not record the PO-5 → PO-11 link before this receipt ** -- both rows read as ga
-    [FAIL] receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py  (0s)
-               row = next(l for l in raw.split('\n') if l.startswith('| **PO-5**')) /           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / StopIteration
-    [FAIL] receipts/L221_the_bridge/B9_po3_why_is_answered_dimensionally.py  (0s)
-               row = next(l for l in raw.split('\n') if l.startswith('| **PO-3**')) /           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / StopIteration
     [FAIL] receipts/L536_frontier_placement/F1_resolved_content_sits_in_the_frontier_sections.py  (0s)
                OK    with the three largest shares: boundary_paper.tex 33%, CR_cosmology.tex 28%, range_paper.tex 14% /     OK    ⚠ and the resolved-language proxy finds only 28 markers corpus-wide -- far too few to be a measurement, and reported as a proxy rather than a count /   3 check(s) FAILED
-    [FAIL] receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_corruption_satisfied_a_gate.py  (31s)
+    [FAIL] receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_corruption_satisfied_a_gate.py  (32s)
                OK       at 400 chars it flags ['PO-4'] alone /     OK       ⇒ *** the base rate is three and the finding is one; a detector reported without its base rate would have claimed four. This fork's own c54.216 addition is one of the three. *** /   2 check(s) FAILED
     [FAIL] receipts/L555_merge_duplication/M1_the_merge_of_my_own_revision_duplicated_four_protected_rows_and_no_gate_saw_it.py  (1s)
                f'with its object is {sorted(gw(fam5) & gw(o_now["PO-10"][0]))} -- a genuine match, and the ' /                                                ~~~~~^^^^^^^^^ / KeyError: 'PO-10'
-    [FAIL] receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_rows_were_read_by_nothing.py  (27s)
-               OK    ⛔ A SEED LEFT IN A LIVE RECEIPT SINCE r2682+c54.212 -- MY OWN HAND -- landed at 962a9390 and has failed P16's monodromy receipt for ~90 commits, absorbed into the failure list and triaged by nobody as a SEED /     OK    ⇒ REMOVED, and restored to the r2682^ text: c54.213's rule was "VERIFY
     [FAIL] receipts/L558_the_second_duplication/D1_the_same_four_rows_the_second_merge_running_and_this_time_it_unclosed_a_struck_item.py  (1s)
                FAIL  ⓻ check_protected_dupes: clean 0, SEEDED 0, restored 0; the restore is byte-identical (True); and the seed is the DEFECT ITSELF -- one row doubled with a differing strike marker /     FAIL  ⇒ and it reports the state disagreement, which is the half that un-closed PO-4 /   2 check(s) FAILED
-    [FAIL] receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py  (5s)
+    [FAIL] receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py  (6s)
                FAIL  ⓺ check_receipt_orphans: clean 1; an unrowed file added -> 1 (named); restored 1, byte-identical (True) /     OK    ⇒ AND THE DECLARATION IS WHAT EXEMPTS, NOT THE IMPORT: with `NOT-A-RECEIPT:` removed the engine FAILS, though three receipts still import it -- so an exemption cannot be acqu
     [FAIL] receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py  (2s)
                OK    ⚠ at 50f0d3f (c54.226) this file did NOT read whether the CONTENT survives under other words: W1 stated the count and said so in terms, routed rather than interpreted /     OK    ⛭ AND c54.228 (`L-561`) ANSWERED IT -- against this fork: the probe compared STRINGS where the question was abo
@@ -74,14 +50,13 @@
                OK    ⓷ so the pattern is arithmetic in $R$ alone: $1+3R=2.80$, $|1-3R|=0.80$, ratio 3.50 /     OK    ⛭ ⓸ and $R=3\rho_b/4\rho_\gamma$ is a ratio of CONTENTS, so the rate difference -- which P15 says carries "the whole difference" -- does not enter it /   2 check(s) FAILED
     [FAIL] receipts/P15_CR_cosmology/C31_half_one_owes_a_rule.py  (0s)
                OK    and the high-$\ell$ ratio "follows with no free parameter" /     FAIL  ⓷ so the comparison is between an arm with essentially ONE adjustable number and one whose analyses carry six -- and no receipt in the corpus sets the matching rule /   2 check(s) FAILED
-    [FAIL] receipts/P15_CR_cosmology/C34_the_deliverable_is_a_pair.py  (0s)
-               po7 = next(l for l in raw.split('\n') if l.startswith('| **PO-7**')) /           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ / StopIteration
     [FAIL] receipts/P15_CR_cosmology/P15_the_locus_was_wrong_in_six_places_and_the_lint_could_not_see_the_worst.py  (2s)
              (c) the excused sentence rewritten -> 1 flag(s)  ** exception lapsed, site re-flagged ** / ============================================================================== / FAILED: check_loci does not pass on the repaired tree
     [FAIL] receipts/P17_geometric_core_paper/P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py  (0s)
              OK   and the no-single-value conclusion / ============================================================================== / FAILED: 1 receipt(s) still have no INDEX row: ['P07_cube_root_two_is_the_2M_over_M']
+    [slow] receipts/P16_cosmogenesis_paper/P16_validate_bbn.py  -- exceeded 400s
 
-  570 pass, 39 fail, 0 over timeout, in 815s wall
-  slowest that passed: P16_validate_bbn.py 229s, C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py 164s, P15_the_collapse_leg_is_scale_invariant.py 149s, P15_the_second_arm_actually_run.py 149s, I10_the_constraint_propagation_is_symmetry_free.py 144s
+  583 pass, 26 fail, 1 over timeout, in 1112s wall
+  slowest that passed: P15_the_second_arm_actually_run.py 307s, P16_theory_error_and_likelihood.py 219s, P15_verify_lowell_exact_measure.py 217s, C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py 159s, I10_the_constraint_propagation_is_symmetry_free.py 148s
 
   ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.
