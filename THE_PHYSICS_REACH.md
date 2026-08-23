@@ -12,9 +12,16 @@ sources: [cowork]
 > a Hartle--Hawking state, with no adjustable parameter, and $\kappa=0$ identically at the Nariai member
 > a collapse reaches.*
 >
-> **⌗ Its standing coverage owe is half discharged.** *Station ⑤ flagged $\langle T_{\mu\nu}\rangle$ and
-> trans-Planckian as "both at zero uses"; **re-measured r3095, trans-Planckian is no longer at zero**
-> (P1 and its receipts carry it), while $\langle T_{\mu\nu}\rangle$ still is. Recorded in `OWED`.*
+> **⌗ Its standing coverage owe is DISCHARGED (r3126).** *Station ⑤ flagged $\langle T_{\mu\nu}\rangle$ and
+> trans-Planckian as "both at zero uses". **Trans-Planckian is no longer at zero** — P1 and its receipts
+> carry it. **And $\langle T_{\mu\nu}\rangle$ sits at zero because this construction DECLINES it, with the
+> reason stated in the papers**: its matter is the classical bend $\rho=m'/4\pi r^{2}$ and not a spinor
+> field, so the renormalised expectation is the object of a construction whose matter back-reacts as a
+> quantum field — and this one's does not. The one place it would ordinarily be needed is scoped out
+> explicitly rather than passed over: P7's absence is of **horizon-induced** radiation, "whose entire
+> mechanism is the completed horizon", while "local, horizon-independent particle production — strong-field
+> vacuum polarisation and the like — is untouched".* ⇒ ***Zero uses is the correct number here, and a
+> coverage metric that reads it as a gap is measuring the wrong thing.***
 
 
 ## ✔✔✔ THE WALK IS COMPLETE r2544 — every station, and the class is six-for-six
