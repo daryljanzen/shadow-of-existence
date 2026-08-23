@@ -258,6 +258,21 @@ def _id_space():
         if _lost:
             print(f"    [FAIL] IDs assigned and NEVER WORKED: {['L-%d' % n for n in _lost]}")
             print("           A lead given an ID and not entered as a row is LOST (Rule 2).")
+        # ** r3147: an id whose work ran and whose DISPOSITION is recorded is not a lost record.
+        #    THE_REGISTER carries a DISPOSITIONED IDS table for exactly the ids the r3001 turnover
+        #    left rowless; an id listed there has a home, and reporting it as gone would invite the
+        #    re-opening that 614 established would redo finished work.  The table is READ, not
+        #    trusted: an id must actually appear in it. **
+        try:
+            _reg = open(ARC, encoding='utf-8', errors='replace').read()
+            _disp = _reg.split('DISPOSITIONED IDS', 1)[1].split('\n## ', 1)[0] if 'DISPOSITIONED IDS' in _reg else ''
+        except Exception:
+            _disp = ''
+        _homed = [n for n in _worked if ('L-%d' % n) in _disp]
+        _worked = [n for n in _worked if n not in _homed]
+        if _homed:
+            print(f"    [ok]   IDs whose work ran and whose DISPOSITION is recorded: "
+                  f"{['L-%d' % n for n in _homed]}")
         if _worked:
             print(f"    [FAIL] IDs whose WORK RAN but whose ROW is gone: "
                   f"{['L-%d' % n for n in _worked]}")

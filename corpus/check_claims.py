@@ -42,7 +42,8 @@ SHARED = {
 }
 
 
-NODES = ('54', '56', 'cc54')
+NODES = ('54', '56', '57', 'cc54')   # ** r3147: 57 added.  The gate predated this line and would
+                                    #    have made it impersonate another node or fail forever. **
 CI = 'ci'   # the runner: no 'me', and rule (3) swept across ALL nodes -- see main()
 
 

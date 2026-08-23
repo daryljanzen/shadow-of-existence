@@ -25,3 +25,28 @@ current: r3100
 | ~~**PO-18**~~ | ~~**THE MAXIMAL-SYMMETRY LEDGER.**~~ | ~~the list of constant-relations the substrate forces~~ | p0 `sec:ledger` | **~~STRUCK r3097 — the enumeration was complete and banked; what was missing was one citation.~~** ▣ *The row read "not banked into a paper". **Checked at source: p0 §ledger carries the whole ledger** — $\Lambda$ the sole scale, $c$ the null-ruling slope, $G$ entering only as the gravitational radius, $\hbar$ closed by the de~Sitter horizon's thermal state without a free parameter, $k_B$ the temperature gauge, and the conclusion that the sector **spends no free dimensionless constant**.* ⌗ ***What was genuinely open was smaller and precise***: *p0 held that reading at `[reach]`, "decidable by the count in §frontiers" — and the count had been run and passed while p0 cited none of its three receipts. **Fixed r3097**: p0 now carries the count (`U3`: the residue is one and already counted, the quotient one-dimensional and itself the scale, the matter sector spending none of the geometric budget), the reach tag is replaced by the count that decides it, and the appendix was regenerated so the marker resolves. p0 compiles at 35pp with zero undefined references.* ⇒ *`U3` also answers the item's second half: no constant maximal symmetry fails to reach. The matter sector's own count is `PO-14`, not this row.* |
 | ~~**PO-19**~~ | ~~**THE $\sqrt[3]{2}$ RATIO BETWEEN THE TWO TURNINGS.**~~ | ~~a derivation of the ratio or a demonstration that it is coincidence~~ | P7 `sec:null-boundary-correspondence` | **~~STRUCK r3097 — DERIVED, and it is neither cheap answer.~~** ▣ *The turnaround is $1-f=0$ ($r^3=-2M\alpha^2$); the Hubble--Eddington radius is $f'=0$ ($r^3=M\alpha^2$). **The ratio is $\sqrt[3]{2}$ exactly, for every $M$ and $\alpha$**, and its cause is the single factor of two distinguishing $2M/r$ from the balance of $2M/r^2$ against $2r/\alpha^2$ — **one factor of two inside one cube root.** ⌗ **And the tie to a horizon ROOT is Nariai-only**: $f$ and $f'$ vanish together at the double root, so only there is the $f'=0$ locus a root of $f$; off the forced member the ratio is unchanged but the quantity tied to is the static radius. ⇒ **Real, exact, and shallow** — the credulous answer overstated it and the sceptical one was false, since `lem:twoturnings` denies an identification of the two $\mathbb{Z}_3$ SYMMETRIES and this is a ratio of two radii. Banked in P7 with receipt `P07_cube_root_two_is_the_2M_over_M`.* |
 | ~~**PO-20**~~ | ~~**GROWTH AND ORDER AT INFINITY.**~~ | ~~an analytic statement of the construction's boundedness~~ | `COMPLEX_ANALYSIS_LEDGER` §4a | **~~STRUCK r3097 — ALREADY WORKED, and the row should never have been opened.~~** ⛔ ***The registration was mine and it was made off a stale queue entry that the same document contradicts three screens away.*** *§4d called the question "unasked"; §4a records it **WORKED at r2391**, and the ledger itself flags the contradiction — "this entry called the question unasked while §4a of this same document answered it twice".* ⌗ **The answer:** *(i) the finite-plane restriction is **not a gap but the correct domain** — the licensed act is continuation through a turning point at a finite point, and $\sinh$ being entire, the invariant is meromorphic with only algebraic branch points there; (ii) the instrument the queue wanted exists — **infinity is the total branch point of the three-sheeted cover and the cylinder's end**; "it was never missing, it was never joined to the question".* ⇒ *What remains is `§4a ⓷`, **held at reach, do-not-assert**: $\sinh$ is entire of order 1, exponential type, and whether "the rate is fixed by $\Lambda$ alone up to a gauge" is that statement's analytic content is **a suggestion with no receipt**, needing the zero set of the actual invariant rather than of $\sinh$. The ledger's own prior — "noted, not used" — means a negative costs nothing. **Held there, not as a register row.*** |
+## ⛭ DISPOSITIONED IDS — work that ran, whose row did not survive the r3001 turnover (r3147)
+
+*`check_burndown` reports an id with a receipt directory and no row as a record that is gone. For these
+twelve the work is not lost and the record is here; each is dispositioned rather than re-opened, because
+**re-opening a worked lead as an unworked one would redo finished work** — the trap `614` was filed as.*
+
+| id | disposition |
+|---|---|
+| `L-175` | **DELIVERED** — cited by a paper; the missing row is bookkeeping over work that landed |
+| `L-221` | **DELIVERED** — cited by a paper; 72 receipts, the largest single directory in the corpus |
+| `L-815` | **ATTACHED to `PO-13`** — the seam phase is derived, $\mathrm{CR}\Phi=0$ |
+| `L-820` | **ATTACHED to `PO-13`** — the banked two-arm spectra are not under-sampled |
+| `L-822` | **ATTACHED to `PO-13`** — the CR arm's $\chi^2/\mathrm{dof}\simeq280$ diagnosed as acoustic structure |
+| `L-823` | **ATTACHED to `PO-13`** — the stored $r_s=135.46$ is the from-onset acoustic scale |
+| `L-824` | **ATTACHED to `PO-13`** — the control's third convergence point |
+| `L-812` | **BOUNDARY** — quantum-sector work in `PO-6` territory, now a boundary rather than a frontier |
+| `L-813` | **BOUNDARY** — as `L-812` |
+| `L-818` | **BOUNDARY** — as `L-812` |
+| `L-819` | **BOUNDARY** — as `L-812` |
+| `L-821` | **BOUNDARY** — as `L-812` |
+
+⌗ *`L-540` is the one genuine lost lead: an id assigned and never worked, with no receipt directory. It
+stays reported.*
+
+
