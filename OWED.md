@@ -6,6 +6,8 @@ description: Work this programme's turns CREATED — the register every other re
 sources: [chat]
 ---
 
+> ⚠ **OPEN DURING THE P14 READ (r3139), to be settled at `sec:correspondence` before P14 closes:** *the abstract says the twelve coloured states give "four classes, against the Standard Model's **five** multiplets per generation". The four classes are the $(\text{horn},\text{ruling})$ pairs and cover the **twelve coloured** states only; the SM's coloured multiplets are **three** ($Q_L$, $u^c$, $d^c$) and its five counts all fifteen. **The underlying theorem is unaffected** — the orbit shortfall is $2{+}2$ against $2{+}1{+}1$, which is exact and is what `W1` proves. What needs settling is whether the paper's own use of "class" at `sec:correspondence` vindicates the summary sentence or whether it mixes scopes. **Not to be left unresolved when P14 closes.***
+>
 > ## ⛭⛭⛭ THE WHOLE OUTSTANDING SURFACE, IN ONE PLACE — measured r3120, and kept here so it can be worked
 >
 > *Not a new list: a view over the ones that exist, so the programme's remaining shape is legible without
