@@ -69,10 +69,19 @@ BASELINE = {'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
             # ⛔ added r3128 (`L-256`): the three that arrived AFTER r3112 reported the class and
             # routed its remedy.  *They are baselined because they predate the band, and the band
             # is what makes a FOURTH one a failure this line can actually be held to.*
-            'r3103', 'r3104', 'r3112'}
+            'r3103', 'r3104', 'r3112',
+            # ⛔ added r3151 (57): the four that collided between the band being ASKED FOR (r3128)
+            # and ANSWERED (r3151).  *They predate the answer, not the request -- which is the
+            # honest line: 57 could not have kept a band it had not yet agreed to.*
+            'r3125', 'r3126', 'r3128', 'r3130',
+            'r3132', 'r3134', 'r3136', 'r3138'}
 
-#: *** THE BAND. ***  This line's revision numbers are EVEN; the other line's are ODD.  See the head.
-PARITY = 0
+#: *** THE BAND. ***  ** r3151, THIS TREE: 57 ACCEPTED THE BAND AND TOOK ODD. **  54's request was made
+#: at r3128 and is answered here rather than presumed: 54 takes EVEN, 57 takes ODD, and this file runs
+#: on both trees with PARITY set to whichever half the tree it sits on has taken.
+#:   ⌗ *The request was not hypothetical: r3132, r3134, r3136 and r3138 each name a DIFFERENT revision
+#:     in each line, four collisions in one session, all of them before the band was answered.*
+PARITY = 1
 #: ** NAMED, not dated. **  *A band cannot apply to commits made before it was taken, and the corpus's
 #: way of saying so is a list of names rather than a cutoff -- a cutoff silently absorbs everything
 #: behind it, and `c54.212` found that hole in a different gate.*

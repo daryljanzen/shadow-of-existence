@@ -2639,7 +2639,7 @@ sources: [cowork, chat]
 
 ⚠ *SINCE = 1: this measured a limit of the method, not a move in the problem space.*
 
-### Revision r2888 — 2026-08-15 (main line). **THE ELECTRIC READING HAS A COMPUTED RESULT BEHIND IT, AND ITS ONLY BOUND WAS CLOSED TWO REVISIONS AGO.**
+### Revision r2888 — 2026-08-15 (main line). **THE ELECTRIC READING HAS A COMPUTED RESULT BEHIND IT, AND ITS ONLY BOUND WAS CLOSED TWO REVISIONS AGO.** ⌗ **⟨CORRECTED by a later entry — the hypercharge result's standing is restated there; kept as the record of the reading then.⟩**
 
 **⛭⛭ `P14_scale_and_ratio`, uncited, run:** *"**the Standard Model's anomaly conditions and CR's winding closure are INDEPENDENT AND COMPLEMENTARY: the first fixes every RATIO and no SCALE, the second fixes the SCALE and no ratio was ever asked of it, and where they overlap THEY AGREE EXACTLY**" — **the two agree on all five hypercharges and reproduce $+2/3$ and $-1/3$ exactly**, the winding closure delivering the scale "because a lap is not a unit anyone chose".*
 
@@ -2977,7 +2977,7 @@ sources: [cowork, chat]
 
 **⌗ THE GATE WAS WRONG IN KIND.** *This row is not blocked by unbuilt work; **its last level is walled by the corpus's own ontology and would stay walled with `PO-5` complete**. Levels ① and ② are done, ③ is forbidden rather than owed.*
 
-### Revision r2861 — 2026-08-15 (main line). **`PO-6`'s REMAINDER IS NOT A GAP IN CR — P10 SAYS SO AND THE ROW NEVER CARRIED IT.**
+### Revision r2861 — 2026-08-15 (main line). **`PO-6`'s REMAINDER IS NOT A GAP IN CR — P10 SAYS SO AND THE ROW NEVER CARRIED IT.** ⌗ **⟨CORRECTED by a later entry — the reading here is refined where the two items' generic and CR-specific parts are separated; kept as the record of the reading then.⟩**
 
 *Read "the open frontier" at source instead of quoting the label.*
 
@@ -4366,7 +4366,7 @@ $0.08\%$ $\ell_A$ gap is where to look.*
 one revision and cost nothing, because it said in advance how to find out** — the alternative is a candidate that
 survives on plausibility until someone happens to test it.***
 
-### Revision r2786 — 2026-08-11 (main line). **CR's 281 IS THE PREDICTION BEING MEASURED — the question inverts.**
+### Revision r2786 — 2026-08-11 (main line). **CR's 281 IS THE PREDICTION BEING MEASURED — the question inverts.** ⌗ **⟨OVERTURNED — the envelope candidate this entry advanced was WITHDRAWN by a later entry; kept as the record of a route ruled out.⟩**
 
 **⛭⛭ ⓵ THE CANDIDATE IS P15's OWN FORMULA.** *The high-$\ell$ consequence, **with no free parameter**:
 $C_\ell^{\rm CR}/C_\ell^{\Lambda\rm CDM}=\exp[-(\ell/\ell_D)^2(r^2-1)]$, $r=1.0824$ (r2755). Scored as a
