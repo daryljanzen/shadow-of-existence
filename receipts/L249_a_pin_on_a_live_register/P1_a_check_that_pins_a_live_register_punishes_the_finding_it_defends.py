@@ -64,6 +64,8 @@ def run(rel):
                           capture_output=True, text=True, timeout=600).returncode
 
 
+PRE_REPAIR = '2d1a9f68e7af741859823f3e7e206958d1b03a32'   # r3105^, before any of the nine were repaired
+
 REPAIRED = [
     ('P12_algebroid/A3_the_convergence_audit.py', 'a live ANSWERED count'),
     ('P12_algebroid/A5_the_dark_halves_audited.py', 'a live dark-half count'),
@@ -101,7 +103,11 @@ for rel, _ in REPAIRED:
     n_now = len(re.findall(r'\bcheck\(', src))
     add = subprocess.run(['git', 'log', '--diff-filter=A', '--format=%H', '--', 'receipts/' + rel],
                          cwd=ROOT, capture_output=True, text=True).stdout.strip().split('\n')[-1]
-    old_src = subprocess.run(['git', 'show', f'HEAD:receipts/{rel}'], cwd=ROOT,
+    # AMENDED r3108: this compared against HEAD, which MOVES -- once the repairs were committed
+    # HEAD carried them and "before" and "after" were the same file, so the check went degenerate
+    # and passed trivially.  A baseline that follows the thing it measures is no baseline.
+    #   => Pinned to the commit before the repairs landed.
+    old_src = subprocess.run(['git', 'show', f'{PRE_REPAIR}:receipts/{rel}'], cwd=ROOT,
                              capture_output=True, text=True).stdout
     n_before = len(re.findall(r'\bcheck\(', old_src))
     print(f'    {os.path.basename(rel)[:46]:<46} checks {n_before} -> {n_now}')
@@ -146,9 +152,26 @@ print('  ⌗ ** AND ONE THAT IS NOT A PIN-BREAK AT ALL: ** `P15_the_locus_was_wr
 print('     fails on "check_loci does not pass on the repaired tree" -- a GATE dependency, not a')
 print('     quotation.  *Classifying it with the pin-breaks would have sent someone to re-pin a')
 print('     receipt whose problem is a red gate.*')
+# AMENDED r3108 -- AND THIS RECEIPT BROKE ON ITS OWN CLASS, WHICH IS WORTH KEEPING RATHER THAN
+# QUIETLY FIXING.  It asserted "check_loci is red".  The observer line then FIXED check_loci at
+# r3107 -- the splitter's forward bound was s.find('. ', end) alone, and this corpus writes the
+# citation straight after the period at 69 sites, so a "sentence" over-ran to the next '. ' and
+# attributed one claim's locus to another's argument.
+#   => A check pinning a live RED GATE breaks when the gate is repaired.  That is the same shape
+#     as the nine above: the state moved because the work succeeded.
+#   => So the historical fact is pinned and the present is asserted as what it now is.
+loci_then = subprocess.run(['git', 'show', PRE_REPAIR + ':corpus/check_loci.py'], cwd=ROOT,
+                           capture_output=True, text=True).stdout
 loci = subprocess.run([sys.executable, os.path.join(ROOT, 'corpus', 'check_loci.py')],
                       cwd=ROOT, capture_output=True, text=True).returncode
-check('⓹ `check_loci` is indeed red, which is what that receipt is waiting on', loci != 0)
+check('⓹ at ' + PRE_REPAIR[:12] + " check_loci's forward bound was `s.find('. ', m.end())` alone, "
+      'is why the receipt above was waiting on it rather than on a quotation',
+      "s.find('. ', m.end())" in loci_then)
+check('⓹ᵇ and it is GREEN now -- r3107 fixed the splitter, so the gate dependency cleared and the '
+      'receipt it blocked passes with it', loci == 0)
+check('⓹ᶜ which is this receipt breaking on its OWN class: it pinned a live red gate, and the gate '
+      'was repaired.  *The state moved because the work succeeded.*',
+      "s.find('. ', m.end())" in loci_then and loci == 0)
 
 print()
 print('=' * 78)
