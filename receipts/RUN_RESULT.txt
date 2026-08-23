@@ -1,10 +1,11 @@
 
   RUN-ALL-RECEIPTS -- 624 registered receipt(s), 4 at a time, 400s each, each from ITS OWN DIRECTORY
-  TREE-DIGEST: e3e71ea5f83a8cdc
+  TREE-DIGEST: 8234a02e679a636e
 
+    [FAIL] receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py  (10s)
+               OK    ⓺ᵈ and N1 WITHDRAWS its own routing in place rather than being quietly superseded /   1 check(s) FAILED /     - ⓶ᶜ over a span of 22 revisions, against 8 in the ~330 before r3099 -- so the rate this finding called "accelerating" continued at that rate
 
-  624 pass, 0 fail, 0 over timeout, in 531s wall
-  slowest that passed: P16_validate_bbn.py 140s, Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py 134s, I10_the_constraint_propagation_is_symmetry_free.py 108s, P15_the_second_arm_actually_run.py 99s, A1_a_rule_made_of_spellings_misses_the_next_spelling.py 83s
+  623 pass, 1 fail, 0 over timeout, in 541s wall
+  slowest that passed: P16_validate_bbn.py 141s, Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py 137s, I10_the_constraint_propagation_is_symmetry_free.py 113s, P15_the_second_arm_actually_run.py 99s, A1_a_rule_made_of_spellings_misses_the_next_spelling.py 86s
 
-  Every registered receipt runs, in place, and exits 0 -- so every assertion in the
-  reproducibility layer was actually evaluated.
+  ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.

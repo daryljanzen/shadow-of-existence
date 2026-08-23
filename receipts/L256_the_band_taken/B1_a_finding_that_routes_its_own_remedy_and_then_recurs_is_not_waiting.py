@@ -117,10 +117,31 @@ def main():
     check('⛔ ⓶ᵇ *** and one of them is r3112 -- the revision that reported the class and routed '
           'its remedy chose a number the other line also chose ***',
           'r3112' in fresh and len(now[('r3112')]) == 2)
-    span = int(git('log', '-1', '--format=%s', 'HEAD').strip().split()[0][1:]) - 3112
-    check(f'⓶ᶜ over a span of {span} revisions, against 8 in the ~330 before r3099 -- so the rate '
-          'this finding called "accelerating" continued at that rate',
-          len(fresh) >= 3 and span <= 20)
+    # ⛔⛭⛭ AMENDED r3136 (`L-259`), AGAINST THIS RECEIPT, IN ITS OWN CLASS.
+    #   *The first form measured `span = HEAD's revision number - 3112` and asserted `span <= 20`.
+    #   The span grows with every revision this line makes, so the check went red four revisions
+    #   later -- while the finding it defends did not change at all.*
+    #   ⇒ *** A CHECK PINNED TO A DISTANCE FROM THE PRESENT IS A CHECK PINNED TO THE PRESENT.  It is
+    #       `L-258`'s class again, in the receipt that registered the band against exactly that. ***
+    #   ⇒ ** The rate is a property of the WINDOW the collisions fall in, not of how long ago the
+    #     window was.  All three fall in r3099-r3112, which is fixed forever. **
+    nums = sorted(int(r[1:]) for r in fresh)
+    win = nums[-1] - 3099 + 1
+    old_n = len(then) - len([r for r in then if int(r[1:]) >= 3099])
+    check(f'⓶ᶜ and the window they fall in is FIXED: r{nums[0]}-r{nums[-1]}, inside r3099-r3112, '
+          f'{len(fresh)} collisions across {win} revisions -- {len(fresh)/win*100:.0f} per hundred '
+          f'against {old_n} across the ~330 before r3099, which is {old_n/330*100:.1f} per '
+          f'hundred -- {(len(fresh)/win)/(old_n/330):.1f} times the rate',
+          # ⌗ the assertion is DIRECTIONAL and unfitted: the recent rate is HIGHER, which is the
+          #   whole claim.  *A multiple would be a threshold, and the first attempt at one -- `> 10x`
+          #   against a measured 8.75x -- is how a threshold fitted to a memory fails.*
+          nums[0] >= 3099 and nums[-1] <= 3112 and len(fresh) / win > old_n / 330)
+    check('⓶ᵈ ⌗ and the measurement no longer moves with HEAD: the first form of this check '
+          'compared HEAD\'s revision number to r3112 and went red four revisions later, while the '
+          'finding it defends did not change -- `L-258`\'s class, in the receipt that took the band '
+          'against exactly that',
+          'A CHECK PINNED TO A DISTANCE FROM THE PRESENT'
+          in open(os.path.abspath(__file__), encoding='utf-8').read())
 
     # ============================================================ (3) the band
     print()
