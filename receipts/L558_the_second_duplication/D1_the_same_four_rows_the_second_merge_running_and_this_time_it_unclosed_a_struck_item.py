@@ -234,7 +234,23 @@ def main():
         keep = open(tgt, encoding='utf-8').read()
         ls = keep.split('\n')
         i = [n for n, x in enumerate(ls) if re.match(r'\|\s*(~~)?\s*\*\*PO-6\*\*', x)][0]
-        ls.insert(i + 1, ls[i].replace('**PO-6**', '~~**PO-6**~~', 1))   # the seed: the real defect
+        # ⛔⛭⛭ AMENDED r3125 (`L-253`): THE SEED SILENTLY STOPPED SEEDING, AND REPORTED A HEALTHY
+        # ** GATE AS BROKEN. **  It was written as `.replace('**PO-6**', '~~**PO-6**~~')` while
+        # `PO-6` was OPEN, so it produced a struck twin of an unstruck row -- the real defect.
+        #   ⇒ `PO-6` has since been STRUCK, so the row already reads `| ~~**PO-6**~~ |` and that
+        #     same replace produces `| ~~~~**PO-6**~~~~ |` -- ** a mangled marker, not a duplicate. **
+        #   ⇒ *** So the gate saw nothing, returned 0, and this receipt reported `SEEDED 0` as a GATE
+        #       FAILURE.  A seeded-defect test whose seed stops constructing the defect does not go
+        #       quiet -- it accuses the gate it was built to defend. ***
+        # ** The repair is to seed AGAINST the row's current state rather than a literal: insert a
+        # twin whose strike marker is the OPPOSITE of whatever the row now carries, which is a
+        # duplicate that disagrees about state however the register moves. **
+        _row = ls[i]
+        _struck = bool(re.match(r'\|\s*~~', _row))
+        _twin = (re.sub(r'~~\*\*(PO-6)\*\*~~', r'**\1**', _row, count=1) if _struck
+                 else re.sub(r'\*\*(PO-6)\*\*', r'~~**\1**~~', _row, count=1))
+        assert _twin != _row, 'the seed must actually change the strike state, or it seeds nothing'
+        ls.insert(i + 1, _twin)                            # the seed: the real defect, either way
         open(tgt, 'w', encoding='utf-8').write('\n'.join(ls))
         seed_rc, seed_out = run()
         open(tgt, 'w', encoding='utf-8').write(keep)

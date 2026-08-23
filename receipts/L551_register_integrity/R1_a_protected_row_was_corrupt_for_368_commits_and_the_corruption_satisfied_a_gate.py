@@ -128,7 +128,16 @@ def main():
     print('  R1 -- was a protected row corrupt, and did anything look?')
     print()
 
-    now = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8').read()
+    # AMENDED r3125 (`L-253`).  ** `before` WAS ALREADY PINNED TO A SHA AND `now` WAS NOT, so the
+    # ** claim drifted from "this repair lost no word" to "no edit since has lost a word". **
+    # *The second is a much stronger claim and the corpus never made it: `PROTECTED_OPEN` has since
+    # had 19,753 bytes of cross-row duplication removed (r2832b) and been closed with fourteen rows
+    # struck (r3001).  Words legitimately left the file, and this check called that a repair defect.*
+    #   ⇒ *** A pin on one side and a live read on the other is not a comparison, it is a moving
+    #       target.  Both ends are pinned; the live half is asserted separately below. ***
+    REPAIRED = 'a83455b4844363ead3024a8fdaeef295627e5735'          # c54.217, where the repair landed
+    now = git('show', REPAIRED + ':PROTECTED_OPEN.md')
+    live = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8').read()
     # ⛔ THE CORRUPT STATE IS PINNED TO A SHA, NOT TO `HEAD`.
     #   The first draft of this receipt read `HEAD:PROTECTED_OPEN.md` -- which is the repair's own
     #   parent only until the repair is committed, after which it is the repaired file and every
@@ -220,6 +229,16 @@ def main():
     bad_now = {k: len(SPL.split(v)) for k, v in rn.items() if len(SPL.split(v)) != 7}
     check(f'⓹ and three more rows split on unescaped math bars: {bad_before} -- now {bad_now}',
           set(bad_before) == {'PO-6', 'PO-10', 'PO-11'} and bad_now == {})
+
+    # ⛭ AND THE LIVE HALF, so pinning both ends does not turn this into a receipt about history
+    # ** only.  The property that must not REGRESS is that no protected row is split today. **
+    #   ⇒ *This is the one claim that should be read against the working tree, and it is the one
+    #    the original check could not make -- it was busy asking whether any word had ever left.*
+    rl = rows_of(live)
+    bad_live = {k: len(SPL.split(v)) for k, v in rl.items() if len(SPL.split(v)) != 7}
+    check(f'⓹ᵇ ⛭ AND NO PROTECTED ROW IS SPLIT IN THE LIVE REGISTER EITHER: {len(rl)} rows, '
+          f'{bad_live if bad_live else "none off the count"} -- the repair has not regressed across '
+          f'the dedup (r2832b) or the closure (r3001)', bad_live == {})
 
     base = git('show', '6f926a6:PROTECTED_OPEN.md')
     n_base = len(SPL.split(rows_of(base)['PO-11']))

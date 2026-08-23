@@ -304,12 +304,22 @@ def main():
         target = os.path.join(tmp, 'corpus', 'appendix_receipts_P10.tex')
         keep = open(target, 'rb').read()
         open(target, 'wb').write(keep[:200])          # the seed: a truncated appendix
+        # ⛭ HARDENED r3125 (`L-253`): ** VERIFY THE SEED TOOK, do not trust the write. **  A seed
+        # that silently stops constructing its defect does not go quiet -- it ACCUSES the gate it
+        # was built to defend, and `L558`'s `D1` did exactly that: its seed was a literal
+        # `.replace('**PO-6**', ...)` written while the row was open, and once the row was struck
+        # it produced a mangled marker instead of a duplicate, reported as a gate failure.
+        #   ⇒ *Truncation cannot no-op on a file longer than the cut, so this seed was never at
+        #    risk -- but "was never at risk" is a fact about today's file, not a property of the
+        #    check, and asserting it costs one line.*
+        seed_took = open(target, 'rb').read() != keep
         seeded = run_gate()
         open(target, 'wb').write(keep)
         restored = run_gate()
         # ** verify the RESTORE, do not trust the write ** -- c54.213's rule, from a `finally` that ran
         # and still left the seed in place.
         same = open(target, 'rb').read() == keep
+        assert seed_took, 'the seed must actually change the file, or it is testing nothing'
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     check(f'⛭ check_appendix_current: clean tree exits {clean}, SEEDED tree exits {seeded}, restored '
