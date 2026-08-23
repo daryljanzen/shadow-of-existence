@@ -11,7 +11,7 @@ current: r2676+c54.211
 > P14. Position, not history — which is what makes it worth keeping.*
 >
 > *Its `PO-3`, `PO-4`, `PO-5`, `PO-9` ids are struck in the register that closed at **r3001**. The live
-> matter row is **`PO-14`, the unbuilt chiral member** — the sector's four classes where five are
+> matter row was **`PO-14`, the chiral member — STRUCK r3099, BUILT** (`L-832`); the sector's four classes where five are
 > required. **For what is open, read `THE_FRONTIER.md`.***
 
 

@@ -62,7 +62,7 @@ unfavourable to CR that the papers do not state either**:*
   against a control that works ($0.983$/dof).*
 - ***A $0.615\,\ell_A$ first-peak phase deficit at $\sim76\sigma$***, *with the substitution error measured
   at $0.7\%$ of it on Planck's own spectrum.*
-- ***The chiral member of the geometry's own range is reachable and unbuilt***, *and until it is, the
+- ***The chiral member of the geometry's own range is BUILT (r3099, `L-832`)***, *so the multiplet mismatch no longer waits on a geometry; what it waits on is the descent of the grading onto that member. Formerly: until it is built, the
   right-handed multiplet mismatch stands.*
 
 **⚠ A revision pass that carries only the favourable half would be worse than none.**

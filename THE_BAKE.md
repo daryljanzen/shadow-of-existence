@@ -59,7 +59,7 @@ ONE PAIR on the right-handed side, with the ACHIRAL built geometry as its cause*
   the frontier item now**.*
 - **`frontier:quantum`** — *shrinks to **the ordering**: does the graviton tower's zero-point energy
   gravitate at the horizon. **A named instance of the cc problem, reached from inside.***
-- **`frontier:sm`** — *shrinks to **the chiral member: reachable, unbuilt, and until it is built the
+- **`frontier:sm`** — *shrank to **the chiral member; that member is now BUILT (r3099, `L-832`), so what remains is the grading's descent onto it. Formerly: until it is built the
   right-handed multiplet mismatch stands**.*
 - **`frontier:inherited`** — ***READ BEFORE TOUCHED.** Unexamined this session.*
 

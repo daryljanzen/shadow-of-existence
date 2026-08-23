@@ -11,7 +11,7 @@ current: r2676+c54.211
 > **"cheap, decisive, still unrun"**. **Verified r3095: none of the eight is in the live register or the
 > frontier, and none has a receipt.** Their `L-` ids did not survive the register's turnover at r3001.*
 >
-> *The sector's one live register row is **`PO-14`**, the unbuilt chiral member, which is none of these.*
+> *The sector's last live register row was **`PO-14`**, the chiral member — **struck r3099, built** (`L-832`: the inhomogeneous, propagating, turning-polarisation member, its handedness the definite-signed winding). It was none of these, and the sector now carries no open register row.*
 
 ## ⛭⛭⛭ BROUGHT CURRENT c54.211 — **the three routes off the $R$-grading are closed, and they close on ONE NUMBER**
 
