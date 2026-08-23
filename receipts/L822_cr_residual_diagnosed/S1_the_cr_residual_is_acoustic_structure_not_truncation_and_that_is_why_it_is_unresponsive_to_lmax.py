@@ -8,7 +8,7 @@ the ACOUSTIC-STRUCTURE disagreement, not truncation, which is exactly why it doe
 comb is compressed -- peaks at 172/404/636 against the sky's 220/540/810 (ell_1/ell_A = 0.57 vs 0.73) --
 and rescaling the comb to the sky's peak scale does NOT collapse the chi^2 (best 209/dof), so it is peak
 POSITION and HEIGHTS together, a comprehensive disagreement. The 280/dof is the likelihood-space image of
-PO-7's acoustic-phase deficit; F5-safe, this diagnoses the residual, it does not convert the verdict.
+PO-7's acoustic-phase deficit; This diagnoses the residual and does not convert the verdict: a measurement discrepancy is not a framework verdict.
 
 ** THE METHOD. ** chi^2 = r^T F r with r = d - A m the amplitude-fitted residual and F = C^{-1} the plik_lite
 Fisher matrix; the per-bin contribution r_i (F r)_i sums to chi^2 exactly, so grouping it by ell-band

@@ -8,7 +8,7 @@ it is spread across EVERY ell-band -- +4.5 (100-300), +6.0 (300-550), +7.4 (550-
 +5.7 (1200-1600), +4.9 (1600-2000) -- with no single band dominating, slightly concentrated in the
 first two acoustic peaks (300-850 carries 13.4 of the 30). So the two-arm instrument sits ~15% above a
 full Boltzmann code broadband, leading in the peaks (its acoustic phase/height approximations), which
-is why #454's ~1 target needs a uniformly more accurate transfer, not a fixable band. F5-safe: this is
+is why #454's ~1 target needs a uniformly more accurate transfer, not a fixable band. This is
 the CONTROL arm, and it is why F3 = chi^2(CR)-chi^2(LCDM) -- which cancels this shared floor -- is the
 right differential.
 

@@ -19,7 +19,7 @@ realised horizon to be defined on **, exactly as its temperature has none.  The 
 reads black-hole thermodynamics as ** the thermodynamics of an idealisation **."  And it scopes its own
 non-claim: what survives "for a perpetually collapsing ultra-compact body … ** is not settled by this
 reading and is not claimed here **."
-  ⇒ ** So the absence of black-hole entropy is a DECLINE, properly scoped.  It covers the COLLAPSE
+  ⇒ ** So the absence of black-hole entropy is a DECLINE, and the scope is stated next rather than labelled.  It covers the COLLAPSE
     horizon, which never completes. **
 
 ** ⛭⛭ ⓷ AND THE COSMOLOGICAL HORIZON IS THE OPPOSITE CASE -- AND IT IS LOAD-BEARING. **  P13/P14:
@@ -50,7 +50,7 @@ Euclidean continuation of period beta = 2 pi alpha **".
 WHAT IS NOT CLAIMED.  ** Not that the corpus should assert a de Sitter entropy ** -- whether S = A/4
 applies to a cosmological horizon on this reading is exactly what would have to be argued, and the
 one-constant theorem may well forbid what the entropy would require.  ** Not that the black-hole decline
-is wrong ** -- it is correct and properly scoped, and this receipt says so.  ** Not that pi (alpha/l_P)^2
+is wrong ** -- it is correct, and what it covers is stated below rather than asserted here.  ** Not that pi (alpha/l_P)^2
 is a prediction ** -- it is the standard formula evaluated, and its status here is precisely what is
 unasked.  Not that the second law's absence is a defect: ** with no realised black-hole horizon the
 generalized second law reduces to the ordinary one, which is unremarkable -- the cosmological side is
@@ -139,7 +139,7 @@ def main():
     check('and it says where what the collapse DOES produce is established, rather than leaving the '
           'non-claim bare',
           'what the collapse does produce is the subject of the central theorem below' in allp)
-    check('⇒ so THAT absence is a properly scoped DECLINE, covering the COLLAPSE horizon',
+    check('⇒ so THAT absence is a DECLINE covering the COLLAPSE horizon, and the scope is the clause itself',
           'thermodynamics of an idealisation' in allp)
 
     # ⓷ the cosmological horizon, and it is load-bearing

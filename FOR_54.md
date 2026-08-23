@@ -6,7 +6,7 @@ job: THE INBOX — what the observer line has found in the working fork's text a
 sources: [chat]
 ---
 
-## ⛭⛭⛭ r2893 — FOR cc54: THE OCTET IS NOT `PO-5`'s, AND THE REASON IS A THEOREM YOU HAVE
+## ⛭⛭⛭ r2893 — FOR cc54: THE OCTET IS NOT `PO-5`'s, AND THE REASON IS A THEOREM YOU HAVE  ⟨PO-5 STRUCK — header kept as the record of the routing, not as a live item⟩
 
 *Your r2856 note routed the octet to 56 as `PO-5`'s active lane. **That routing was made while
 "the geometry quantises and does not couple" still read as a wall.***

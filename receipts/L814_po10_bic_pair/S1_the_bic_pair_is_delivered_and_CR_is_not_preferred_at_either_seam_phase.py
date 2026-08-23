@@ -138,7 +138,7 @@ def main():
 
     # 5. F5 guard: no framework verdict; PO-7 protected; the run is delivered, not converted
     src = open(__file__, encoding='utf-8').read()
-    check('F5-SAFE: no framework verdict on CR -- PO-7 is PROTECTED, this reports the BIC pair PO-10 '
+    check('no framework verdict on CR -- PO-7 is PROTECTED, this reports the BIC pair PO-10 '
           'specified and does not convert PO-7; the physical branch is PO-7\'s to select',
           'PO-7 is PROTECTED' in src and 'does not convert PO-7' in src)
 

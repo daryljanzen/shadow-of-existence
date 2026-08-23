@@ -49,7 +49,7 @@ rerun here; only their Step 1 is checked against r2736, and their conclusion is 
 by their own statement. ***  ** Not that the boundaries coincide by proof ** -- *** they coincide by
 IDENTIFICATION: FRW is shear-free, shear is transverse-traceless perturbation, and P10 names the
 transverse-traceless tower as the open item.  Each link is a corpus statement. ***  ** Not that `PO-6`
-converts ** -- cc54 says F5-safe and this receipt agrees: nothing here closes the row.
+converts ** -- nothing here closes the row: no measurement below is read as a framework verdict.
 
 ** COMPUTES: $\\mathrm{Weyl}^2$ and $dR/dT$ on FRW at $k=+1,0,-1$ for a free $a(T)$, checking cc54's
 Step 1.  *** The metric is the corpus's own. *** **

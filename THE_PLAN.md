@@ -43,7 +43,7 @@ job: The programme's work, route and destination — the lanes, the per-turn ope
 > this half is a judgement and the script will not invent it.**
 >
 > *· **The three PROTECTED rows are not untouchable and three of them have been worked.** `PROTECTED_OPEN`
-> means **a node may not CLOSE**, not may not touch — "a node may write a bounded negative". PO-5, PO-6 and ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩**
+> means **a node may not CLOSE ⌗ **⟨r2834: PRE-r2830 rule; the person-gate is gone — a row is struck by the register with a kill receipt⟩** **, not may not touch — "a node may write a bounded negative". PO-5, PO-6 and ⛭⛭ **⟨STRUCK r3001 — all three clauses answered; what remains is the ORDERING, which IS "does the graviton tower's zero-point energy gravitate at the horizon?" — the cc problem, and the decomposition survives either way. `kills/PO-6.md`.⟩** ⌗ **⟨r2834: the register's PRE-r2830 rule. **The person-gate is gone** — a row is struck by the register with a kill receipt, not by a person; quoted here as the rule then, not the rule now.⟩**
 > PO-9 were all narrowed at r2464–r2466, and **all three had a concrete next step written in their own rows ⌗ **⟨r2832: `PO-9` is STRUCK — its object (is the substrate's dimension settled?) is answered BOUNDED BELOW ONLY, as a result of the criterion, and `kills/PO-9.md` clears on all four checks. This section is the lead's record, not live work.⟩**
 > the whole time**.*
 > *· **The colour front has moved and its question has changed.** Not "where does $\mathfrak{su}(3)$ live" —

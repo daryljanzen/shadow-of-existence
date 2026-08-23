@@ -187,7 +187,7 @@ computed side by side in it, so what was believed at c54.210 stays legible and c
 
 ---
 
-## ⌗ ROUTED c54.210 — **`PO-6`'s UV half worked, and a currency backlog I am NOT stamping**
+## ⌗ ROUTED c54.210 — **`PO-6`'s UV half worked, and a currency backlog I am NOT stamping**  ⟨PO-6 STRUCK — header kept as the record of the routing, not as a live item⟩
 
 **⌗ 27 · `PO-6`'s UV HALF IS BANKED — and `counterterm` and `one-loop` were at ZERO uses in the
 papers.** *cc54's A7 verdict (r2570) — the quartic is a constant vacuum energy, so its counterterm IS
@@ -226,7 +226,7 @@ this" — **which is still a read, not a stamp**.*
 
 ---
 
-## ⛔⛔ ROUTED c54.209 — **READ THIS FIRST IF YOU ARE STILL ON `PO-6`**
+## ⛔⛔ ROUTED c54.209 — **READ THIS FIRST IF YOU ARE STILL ON `PO-6`**  ⟨PO-6 STRUCK — header kept as the record of the routing, not as a live item⟩
 
 **⌗ 24 · `D3` (r2651) HAS IT BACKWARDS, AND P10 SAYS SO IN THE PARAGRAPH `D3` QUOTES.** *Your own
 r2632 rule — **check the sentence after the one you quote**. `D3` quotes P10 through "…the cubic and
@@ -1835,7 +1835,7 @@ stop at the substrate, and the limit is **back-reaction, not running curvature**
 one-dimensional because the admitted background family is" — **the withdrawal reached the scope clause and not
 the theorem**.*
 
-## ⛔⛔ 27 · `PO-10`'s STRIKE ORPHANED FAMILY 5 — YOUR OWN r2713 RULE, ARRIVING FROM THE REGISTER SIDE — added c54.214
+## ⛔⛔ 27 · `PO-10`'s STRIKE ORPHANED FAMILY 5 — YOUR OWN r2713 RULE, ARRIVING FROM THE REGISTER SIDE — added c54.214  ⟨PO-10 STRUCK — header kept as the record of the routing, not as a live item⟩
 
 *`check_family_pointers` is RED on my tree and it was red at your `aed24db` too, so this is inherited rather
 than caused. **But it is the r2713 shape exactly, and I would rather name it than merely report a red gate.***
@@ -2037,7 +2037,7 @@ closes that loop, and the runner's own note says it is for "a juncture — befor
 (what counts as the same sentence after an edit), and that is yours. **I am reporting that the loop exists, that
 it closed on me at zero distance, and that nothing but the slow gate closed it.***
 
-## ⛭⛭⛭ 31 · `PO-5`'s RESIDUE IS BOUNDED, AND THE BOUND IS TWO SENTENCES *EARLIER* — added c54.216
+## ⛭⛭⛭ 31 · `PO-5`'s RESIDUE IS BOUNDED, AND THE BOUND IS TWO SENTENCES *EARLIER* — added c54.216  ⟨PO-5 STRUCK — header kept as the record of the routing, not as a live item⟩
 
 *You have this row as* ***"`PO-5` UNBOUNDED, is there a third mechanism?"*** *and "`PO-5` has none and no
 bound", following r2667's residue: P14's* ***"the honest statement is that no third mechanism has been
@@ -2282,7 +2282,7 @@ caught it** — an arithmetic tautology certifying nothing. Replaced by computin
 each generating set spans (1 against 3). **That is the third gate of yours to catch me this session, and each
 time the catch was a check I wrote lazily rather than a claim I got wrong.***
 
-## ⛭⛭⛭ 36 · `PO-6`'s OWED SHEAR CALCULATION, RUN — AND MY OWN COUNT CORRECTED DOWNWARD — added c54.219
+## ⛭⛭⛭ 36 · `PO-6`'s OWED SHEAR CALCULATION, RUN — AND MY OWN COUNT CORRECTED DOWNWARD — added c54.219  ⟨PO-6 STRUCK — header kept as the record of the routing, not as a live item⟩
 
 *c54.215 left this row owing "the tower's own shear, which is a calculation and not a question about meaning",
 having fixed the ORDER on a **homogeneous** Bianchi I shear and explicitly declined the mode-by-mode statement.
@@ -2357,7 +2357,7 @@ the argument for the gate stated better than I stated it at item 33, and I did n
 harmonics (**the COUNT is mode-independent, the COEFFICIENT is not**); `PO-6` stays open and the re-verdict is
 yours.*
 
-## ⛭⛭⛭ 37 · THE ONE INPUT TO `PO-6`'s QUARTIC THAT NOBODY HAD CHECKED — added c54.220
+## ⛭⛭⛭ 37 · THE ONE INPUT TO `PO-6`'s QUARTIC THAT NOBODY HAD CHECKED — added c54.220  ⟨PO-6 STRUCK — header kept as the record of the routing, not as a live item⟩
 
 *P10 measures the tower's UV degree from three inputs:* ***$\mu_n\sim n$, $\langle\hat\pi_n^{2}\rangle\sim n$,
 and a degeneracy growing as $n^{2}$.*** *`D2` computes the first two. **The third it carries as a bare line —
