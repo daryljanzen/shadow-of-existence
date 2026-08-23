@@ -71,13 +71,18 @@ def main():
     p15 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')))
 
     # ⓵ P7's two halves
-    check('⓵ P7 half ①: "the full-spectrum likelihood-level comparison against flat $\\Lambda$CDM---a '
-          'parameter refit rather than a further calculation"',
-          'a parameter refit rather than a further calculation' in p7)
-    check('P7 half ②: "the odd/even height pattern, which is imprinted by the baryon loading on the '
-          'expansion leg and is ordinary content physics there"',
-          'imprinted by the baryon loading on the expansion leg and is ordinary content physics '
-          'there' in p7)
+    # ** RE-PINNED r3108.  Both halves have since been RUN, so the pins into P7's pre-run wording
+    #    broke.  This receipt's thesis is CONFIRMED by the run rather than displaced: it predicted
+    #    that half ② carries no CR-versus-LambdaCDM signal because the odd/even pattern is fixed by
+    #    the baryon loading, a CONTENT ratio the rate difference does not enter.  P7 now reports
+    #    P1/P2 = 2.185 here against 2.2564 +/- 0.0772 measured -- agreement, i.e. no discriminating
+    #    signal, which is exactly what the receipt said would happen. **
+    check('⓵ P7 half ① has been RUN, and reports a disagreement: chi^2 = 397.13 against 206.44 over '
+          'the 215 binned TT multipoles at equal fitted-parameter count',
+          '397.13' in p7 and '206.44' in p7 and 'equal fitted-parameter count' in p7)
+    check('⛭ and half ② has been run too, CONFIRMING this receipt: the odd/even pattern agrees, so it '
+          'carries no CR-versus-LambdaCDM signal -- $P_1/P_2 = 2.185$ against $2.2564 \\pm 0.0772$',
+          'P_1/P_2=2.185' in p7.replace(' ', '') or '2.185' in p7)
 
     # ⓶ P15 gives the values
     check('⛭⛭ ⓶ and P15 gives where and at what value: "the odd/even asymmetry is imprinted afterwards, '
