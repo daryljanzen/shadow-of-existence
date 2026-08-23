@@ -86,5 +86,5 @@ assert len(D6) == 12 and has_ord6
 assert sp.simplify(disc - (4 - 27*tM**2)) == 0
 assert ok
 print("="*70)
-print("RESULT:", "ALL PASS -- each Nariai monodromy is a transposition, the two generate S3 (the deck/Galois\n         group of the three-sheeted cover); a generic loop is trivial. The family symmetry is the cover's\n         monodromy, not a substrate isometry." if ok else "SOME FAILED")
+print("RESULT:", "ALL PASS -- each Nariai monodromy is a transposition, the two generate S3 (the monodromy/Galois\n         group of the three-sheeted cover); a generic loop is trivial. The family symmetry is the cover's\n         monodromy, not a substrate isometry." if ok else "SOME FAILED")
 print("="*70)
