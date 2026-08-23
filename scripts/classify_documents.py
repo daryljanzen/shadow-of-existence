@@ -87,7 +87,7 @@ STATE = {
     'FIGURE_SWEEP.md':                                'the figure programme state',
     'STATE_programme.md':                             'where the programme stands',
     'STATE_matter_sector.md':                         'where the matter sector stands',
-    'PHASE7_BUILD_LEDGER.md':                         'the Phase-7 build record',
+    'PHASE7_BUILD_LEDGER.md':                         'the Phase-7 build record — RETIRED r3127, spent planning: the build ran and its findings are banked in the papers',
     'THE_DISSOLUTION_CENSUS.md':                      'the six dissolution clusters',
     'PHYSICAL_VALUES_LEDGER.md':                      'the physical values and their provenance',
     'THE_RECEIPT_AUDIT.md':                           'the receipt audit',

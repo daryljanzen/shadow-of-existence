@@ -1,6 +1,7 @@
 ---
 kind: STATE
 job: the collapse-excursion build ledger — the plan, whose execution lives elsewhere
+status: RETIRED r3127 — SPENT PLANNING DOCUMENT. The build ran and its findings are banked: all twelve lead ids carried by computations/beyond_the_wall/ (43 scripts) appear in the corpus, several in paper appendices — L150 in P15 and P17, L163 in P11, L165 in P07 and P01, L169 in P15. The plan and the execution never matched by NAME because they are indexed differently (build step vs lead id, zero overlap across 49 and 43 identifiers), which is why the owed read never returned anything. Kept as the record of the plan; not a live worklist.
 name: phase7-build-ledger
 description: PHASE 7 — the collapse-excursion build, plan item 2, off which open-problems families 1/3/4/5 close together. Opened r1912 after seven audited Phase-8 fields fed it. Working file; carries the step order, what is verified underneath it, and the guards that tripped two prior nodes.
 current: r2376
