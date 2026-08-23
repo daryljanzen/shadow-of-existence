@@ -13,7 +13,8 @@ sources: [chat]
 > worked later, and **what the working produced is now carried here** — `F3`'s inversion (the Higgs sector
 > constrains CR, not the reverse), `F4`'s answer (the hypercharges are the composition's, not CR's), and
 > **§1b, which gives the composition a mechanism**: CR's results in this sector are OBSTRUCTIONS, four of
-> them, three no-go theorems forming a chain that terminates in a negative.*
+> them, three no-go theorems forming a chain that **locates** the multiplet content in the matter sector
+> rather than in the substrate's grading.*
 >
 > ⚠ *Two of the four conditions remain live. `F1` is the sharp one and is unchanged.*
 
