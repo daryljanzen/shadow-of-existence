@@ -51,17 +51,16 @@ EST = {
 # ** I scored both of the last two as 0 and they were not. **  *** The counter rising is the
 # thing it exists to show, and inflating it to 0 makes the step estimates a lie -- which is
 # the exact failure it was built to expose. ***
-SINCE = 2
-LASTFIND = ("r3100: **PO-15 answered — the ordering is external, by exhaustion.** `L-833` shows the "
-            "operator ordering is bulk-inert (normal vs symmetric differ by the c-number zero-point "
-            "`1/2 hbar omega_n`, a global phase) and physical only in the horizon coefficient "
-            "(`1/4 -> 3/4 = 1/4 + 1/2`, one zero-point quantum), so 'which ordering' IS 'does the "
-            "tower's zero-point energy gravitate at the horizon'. Every candidate selector — thermal "
-            "state and seam (downstream), substrate isometry/positivity/ledger/covariance (respect "
-            "both), the deparametrization (makes normal ordering available not mandatory, and removes "
-            "the anomaly-freedom lever by solving the constraint) — fails. **A step advanced as the "
-            "row predicted ('may not be CR's to answer'): the choice is external, a localized cc "
-            "problem, an epistemic gap not a family; landed in P10, P7 frontier:quantum updated.**")
+SINCE = 3
+LASTFIND = ("r3103: **PO-21 answered — the geometry lifts the obstruction but does not deliver the "
+            "fifth multiplet.** `L-834` closes the positive half `L-246` left open: on the c!=0 cut the "
+            "horn swap T acts on the wall mode by pullback (invertible), so it CONJUGATES its c=0 "
+            "action, and 'T trivial on a chirality block' is a conjugation invariant -- so the 2+2 P14 "
+            "reports is preserved, never 2+1+1. The twist can ROTATE T but not PROJECT it; the lifting "
+            "invariant (c, transverse) is orthogonal to the operation that would realise the split (a "
+            "chiral projection). **A step advanced in the anticipated direction (definable, not forced) "
+            "with the mechanism supplied; the fifth multiplet is named as what a successor must carry, "
+            "and it is a projection the geometry does not.**")
 
 # ** CALIBRATION (r2848) -- estimates measured against actuals rather than felt. **
 # *** Six steps closed with a number attached; EVERY ONE took one turn; I had predicted
