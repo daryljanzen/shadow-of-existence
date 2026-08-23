@@ -193,18 +193,27 @@ if _old_unc:
 # So a failure-collection idiom now counts only WITH a non-zero exit path; an explicit exit(1) still
 # counts alone, since it IS the acting.  `scripts/lint_assertions.py` carries the same rule and the
 # two are checked against each other below, because a rule in two places drifts.
-_COLLECT = r'\bfail\w*\.append\(|allpass\s*&=|\bok\s*=\s*False\b'
-_NZEXIT = r'raise\s+SystemExit\(|^\s*sys\.exit\(|^\s*return\s+1\b'
-_EXPLICIT = r'^\s*assert\b|^\s*sys\.exit\(1\)|raise\s+SystemExit\(1\)'
+# ** ⛭⛭ r3126 (`L-254`): THE RULE MOVED TO `corpus/acting_check.py` AND IS IMPORTED, NOT COPIED. **
+# *It lived here and in `scripts/lint_assertions.py`, guarded by a TEXT COMPARISON -- a guard that
+# reports a divergence after both copies are written and cannot prevent one.  `L-252` banked the
+# alternative on a different pair: import from the instrument that defines it.*
+#   ⇒ ** And the rule gained a THIRD clause, because the two it had were SPELLINGS and a rule made
+#     of spellings misses the next spelling. **  *`P07_cube_root_two_is_the_2M_over_M` accumulates
+#     `bad |= (not okN)` over four sympy comparisons and ends `sys.exit(1 if bad else 0)`; it was
+#     reported as carrying "NO check at all".*  ⇒ *** The third clause asks the question the census
+#     MEANS -- does a non-zero exit depend on the outcome of a comparison? ***
+import importlib.util as _ilu
+_spec = _ilu.spec_from_file_location('_ac', os.path.join(root, 'corpus', 'acting_check.py'))
+_ac = _ilu.module_from_spec(_spec)
+_spec.loader.exec_module(_ac)
+_COLLECT, _NZEXIT, _EXPLICIT = _ac.COLLECT, _ac.NZEXIT, _ac.EXPLICIT
 
 
 class _ChecksRule:
-    """the two-part rule, wearing re.compile's interface so the call sites below do not change"""
+    """the rule, wearing re.compile's interface so the call sites below do not change"""
 
     def search(self, src):
-        if re.search(_EXPLICIT, src, re.M):
-            return True
-        return bool(re.search(_COLLECT, src, re.I) and re.search(_NZEXIT, src, re.M))
+        return _ac.carries_a_check(src)
 
 
 CHECKS = _ChecksRule()

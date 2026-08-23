@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
-# RERUNNABLE: NO — POINT-IN-TIME
-# *** This receipt verified a REPAIR at its own revision.  Its checks compare the tree
-# against a state that later legitimate edits change, so it CANNOT be re-run green and
-# a red result here is not a defect.  Added r2902; the corpus had no convention for
-# this and three receipts were permanently red with nothing saying why. ***
+# ⛔⛭⛭ THE `RERUNNABLE: NO — POINT-IN-TIME` MARK WAS REMOVED HERE AT r3126 (`L-255`), AND IT
+# ** WAS NOT REMOVED BECAUSE THE CONVENTION IS WRONG BUT BECAUSE THE DIAGNOSIS UNDER IT WAS. **
+# r2902 read: *"This receipt verified a REPAIR at its own revision.  Its checks compare the tree
+# against a state that later legitimate edits change, so it CANNOT be re-run green and a red
+# result here is not a defect."*  ⇒ *** The second half is false.  These checks compared a
+# SHA-pinned pre-state against a WORKING-TREE post-state; a repair's post-state is a fact about
+# the commit that made it, and pinning both ends verifies the same repair forever.  r3125 pinned
+# them and all three now exit 0. ***
+#   ⇒ ** AN EXEMPTION IS A CLAIM -- "no repair exists for this failure" -- and r2802 already named
+#     the class: *"'not mechanically fixable' is a claim, and it is the one kind a node is never
+#     asked to defend."*  It was wrong for every instance it was written for. **
+#   ⌗ `corpus/check_rerunnable_honest.py` now RUNS every marked receipt: exit 0 fails the gate.
 """M1 -- the `f220/line/54` merge duplicated FOUR protected rows and TWO index rows, no register gate
 saw any of it, and for two of the four rows NEITHER copy was a superset -- the observer line's work
 and the fork's sat in different copies of the same row.
