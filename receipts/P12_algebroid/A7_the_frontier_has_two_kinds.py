@@ -55,6 +55,7 @@ Written r2704.  Stated for reversal.
 # ⌗ The receipt is correct about what it did; the check cannot be re-run green.
 import os
 import re
+import subprocess
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -127,9 +128,35 @@ def main():
     # written into a check is a claim about a moment. ***
     dn = len(DEFINEDNESS)
     pr = len(PREDICTION)
-    check(f'⓸ and the balance is {dn} definedness against {pr} prediction -- the majority being '
-          'definedness is the finding, whatever the counts become',
-          dn > pr and dn + pr == len(openrows))
+    # ⛔⛭⛭ AMENDED r3105 (`L-249`), AND THIS IS THE THIRD TIME THIS CHECK HAS BEEN RE-AIMED.
+    # r2721 already replaced a hardcoded 5-vs-2 with a DERIVED balance, writing: *"a count written
+    # into a check is a claim about a moment."*  ** The derived form then failed too, and for a
+    # reason deriving cannot fix: r3001 CLOSED `PROTECTED_OPEN` ENTIRELY, so the live population is
+    # EMPTY and `dn > pr` is `0 > 0`. **
+    #   ⇒ *** Deriving a ratio from a population does not survive the population going to zero.  The
+    #       finding is about a register that no longer has live rows, so it is HISTORICAL -- and the
+    #       honest repair is to pin it at the commit it was taken at and assert the emptiness now. ***
+    #   ⌗ *The receipt's own r2901 note says "the check cannot be re-run green".  That was right
+    #    about the check and not about the finding: what could not be re-run was a live ratio.*
+    AT = '1a7b4b439a79a0d292d2957054ad0753076f90d2'          # r2704, where this audit was taken
+    then_raw = subprocess.run(['git', 'show', f'{AT}:PROTECTED_OPEN.md'], cwd=ROOT,
+                              capture_output=True, text=True).stdout
+    then_rows = {re.search(r'PO-\d+', l).group(0): l for l in then_raw.split('\n')
+                 if re.match(r'\|\s*~?~?\*\*PO-\d+\*\*', l)}
+    then_open = {t for t, l in then_rows.items()
+                 if 'ANSWERED' not in l.split(' | ')[-1][:40] and not l.startswith('| ~~')}
+    then_pr = {p for p in PREDICTION_IDS if p in then_open}
+    then_dn = then_open - then_pr
+    check(f'⓸ at {AT[:12]} (r2704, where this audit was taken) the balance was {len(then_dn)} '
+          f'definedness against {len(then_pr)} prediction -- the majority being definedness is the '
+          f'finding', len(then_dn) > len(then_pr) and len(then_dn) + len(then_pr) == len(then_open))
+    check(f'⓸ᵇ ⛭ and the live population is now {len(openrows)} -- `PROTECTED_OPEN` was CLOSED at '
+          'r3001, so there is no live ratio left to take, which is this audit\'s direction carried '
+          'to completion rather than a contradiction of it', len(openrows) == 0)
+    check('⓸ᶜ and the emptiness is a CLOSURE and not a deletion: every row this audit classified is '
+          'still in the register, struck',
+          all(t in rows for t in (then_dn | then_pr))
+          and all(rows[t].startswith('| ~~') for t in (then_dn | then_pr)))
     check("with PO-5 showing a WALL is a real outcome for a definedness row: \"a coupling is not the "
           'kind of thing a holonomy supplies"',
           'not the kind of thing a holonomy supplies' in rows['PO-5'])

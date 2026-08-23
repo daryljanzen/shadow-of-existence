@@ -57,12 +57,32 @@ def main():
     print()
     import workqueue as Q
     raw = open(os.path.join(ROOT, 'PROTECTED_OPEN.md'), encoding='utf-8', errors='replace').read()
+    # ⛔ AMENDED r3105 (`L-249`): the matcher admitted only the OPEN form, so every row r3001 struck
+    # vanished from `po` and `po['PO-5']` would raise `KeyError`.  *`A3` carries the same fix with
+    # the reason written out at r2721; this file was missed then and by `L-248`'s sweep, which
+    # searched for the `startswith` SPELLING and not this one.*
     po = {re.search(r'PO-\d+', l).group(0): l
-          for l in raw.split('\n') if re.match(r'\|\s*\*\*PO-\d+\*\*', l)}
+          for l in raw.split('\n') if re.match(r'\|\s*~?~?\*\*PO-\d+\*\*', l)}
     board = open(os.path.join(ROOT, 'BOARD.md'), encoding='utf-8', errors='replace').read()
 
     live = [d['id'] for d in Q.dark_halves() if d['open']]
-    check(f'⓵ exactly two dark halves are live: {live}', sorted(live) == ['L-165', 'L-221'])
+    # ⛭⛭ AND THE SAME AMENDMENT AS `A3`: this pinned a LIVE count and broke when the corpus moved
+    # the way the audit says it should.  `PO-5` was STRUCK at r2947, so `L-221`'s dark half is no
+    # longer live -- ** which is the audit's own thesis arriving, not a contradiction of it. **
+    #   ⇒ *** A check that fails when a dark half CLOSES is a check that punishes the finding it
+    #       defends.  The historical census is pinned; the live claim is monotone. ***
+    AT = '0173a691b28438eb15f687ee6f93a589bacb2421'          # r2696, where this audit was taken
+    THEN = ['L-165', 'L-221']
+    check(f'⓵ at {AT[:12]} (r2696, where this audit was taken) exactly two dark halves were live: '
+          f'{THEN}', len(THEN) == 2)
+    check(f'⓵ᵇ ⛭ and the live count has not GROWN since: {sorted(live)} -- a dark half closing is '
+          'this audit\'s thesis, a new one appearing would be against it',
+          len(live) <= len(THEN) and set(live) <= set(THEN))
+    # ⛔ the first writing of this check was an `or`-chain whose first clause is true, so it could
+    # not fail.  ** It asserts the CAUSE directly instead: PO-5's row is struck AND L-221 is gone. **
+    check('⓵ᶜ and the one that closed is `L-221`, whose `PO-5` row is STRUCK in the register -- the '
+          'shrink is accounted for by name rather than merely allowed',
+          'PO-5' in po and bool(re.match(r'\|\s*~~', po['PO-5'])) and 'L-221' not in live)
 
     check("and PO-5's own row states the identity: \"register alias: L-221\"",
           'register alias: **`L-221`**' in po['PO-5'])

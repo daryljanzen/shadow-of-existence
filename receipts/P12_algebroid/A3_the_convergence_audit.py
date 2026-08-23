@@ -47,6 +47,7 @@ Written r2685.  Stated for reversal.
 """
 import os
 import re
+import subprocess
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -71,9 +72,29 @@ def main():
             for l in raw.split('\n') if re.match(r'\|\s*~*\*\*PO-\d+\*\*', l)}
 
     answered = [t for t, l in rows.items() if 'QUESTION IS ANSWERED' in l]
-    check(f'⓵ exactly {len(answered)} rows are marked ANSWERED ({", ".join(sorted(answered))}) -- and '
-          'one more was STRUCK at r2616',
-          len(answered) == 2)
+    # ⛔⛭⛭ AMENDED r3105 (`L-249`).  ** THIS CHECK PINNED A LIVE COUNT AND SO BROKE WHEN THE CORPUS
+    # ** MOVED THE WAY THIS AUDIT SAYS IT SHOULD. **  It asserted `len(answered) == 2`; a third row
+    # was marked ANSWERED since, and the receipt went red for it.
+    #   ⇒ *** THIS AUDIT'S OWN QUESTION IS "has the unknown space NARROWED?".  A check that fails
+    #       when one more question is answered is a check that PUNISHES THE FINDING IT DEFENDS. ***
+    # ** So the historical census is pinned at the commit it was taken at, and the live claim is
+    # restated in the DIRECTION the audit asserts -- monotone, so it can still fail (if the count
+    # went DOWN the narrowing reversed) without failing on progress. **
+    AT = '2789ef9141f5572c892855c4a971caffb2aa0cb9'          # r2685, where this audit was taken
+    then_raw = subprocess.run(['git', 'show', f'{AT}:PROTECTED_OPEN.md'], cwd=ROOT,
+                              capture_output=True, text=True).stdout
+    then_rows = {re.search(r'PO-\d+', l).group(0): l for l in then_raw.split('\n')
+                 if re.match(r'\|\s*~*\*\*PO-\d+\*\*', l)}
+    then_answered = [t for t, l in then_rows.items() if 'QUESTION IS ANSWERED' in l]
+    check(f'⓵ at {AT[:12]} (r2685, where this audit was taken) exactly '
+          f'{len(then_answered)} rows were marked ANSWERED ({", ".join(sorted(then_answered))}) -- '
+          'and one more was STRUCK at r2616', len(then_answered) == 2)
+    check(f'⓵ᵇ ⛭ and the count has NOT gone backwards since: {len(answered)} now '
+          f'({", ".join(sorted(answered))}) -- which is the narrowing this audit asserts, so the '
+          'live check is monotone rather than a pin on a moving number',
+          len(answered) >= len(then_answered))
+    check('⓵ᶜ and every row answered THEN is still answered now -- growth, not churn',
+          set(then_answered) <= set(answered))
 
     tbl = [l.split() for l in open(os.path.join(ROOT, 'TABLE_HISTORY.txt'),
                                    encoding='utf-8', errors='replace') if l.startswith('r')]

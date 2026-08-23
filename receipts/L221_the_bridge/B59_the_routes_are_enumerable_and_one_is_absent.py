@@ -104,12 +104,34 @@ def main():
 
     # ⓶ the spectral route is absent
     absent = []
+    # ⛔⛭⛭ AMENDED r3105 (`L-249`) -- AND THIS IS THE THIRD TIME THIS RECEIPT HAS FOUND ITSELF.
+    # `corpus/appendix_receipts_*.tex` are GENERATED FROM `receipts/INDEX.md`, so every receipt's own
+    # claim and computes text is printed into them -- including THIS receipt's row, which says
+    # "spectral-triple", and now `B61`'s too.
+    #   ⇒ ** So an ABSENCE check over `corpus/*.tex` measures the INDEX as well as the papers, and a
+    #     receipt naming a term in its own row reports that term as present. **
+    #   ⇒ *** THE FAILURE IS DELAYED to the first regeneration after registration, so it lands on
+    #       whoever regenerates rather than on whoever wrote it. ***
+    # ⌗ *Diagnosed and repaired once before (c54.232, `L-567`), in a span that was never absorbed --
+    #  so the repair and its gate were lost and the defect returned.  **A fix that is not in the tree
+    #  is not a fix**, which is why the gate is re-landed with this amendment rather than after it.*
+    # ** The FINDING is unchanged: no PAPER mentions the route.  Only the file list is corrected. **
     for f in glob.glob(os.path.join(ROOT, 'corpus', '*.tex')):
+        if os.path.basename(f).startswith('appendix_receipts'):
+            continue
         t = open(f, encoding='utf-8', errors='replace').read()
         if 'Connes' in t or 'spectral triple' in t or 'inner fluctuation' in t:
             absent.append(os.path.basename(f))
     check(f'⛭⛭⛭ ⓶ and the SPECTRAL-TRIPLE route is mentioned in {len(absent)} paper(s) -- ** absent '
           'from the corpus entirely **', len(absent) == 0)
+    # ** the amendment is CHECKED rather than trusted: the term must still BE in a generated
+    # ** appendix, or the exclusion above is decoration and would hide a real future mention. **
+    _gen = [os.path.basename(f) for f in glob.glob(os.path.join(ROOT, 'corpus',
+                                                               'appendix_receipts*.tex'))
+            if any(t in open(f, encoding='utf-8', errors='replace').read()
+                   for t in ('Connes', 'spectral triple', 'spectral-triple', 'inner fluctuation'))]
+    check(f'⛭ ⓶ᵇ and the term IS in {len(_gen)} generated appendix/appendices, which is why the '
+          'exclusion is needed rather than cosmetic', len(_gen) >= 1)
 
     # ⓷ the group algebra contains M_3(C)
     w = np.exp(2j*np.pi/3)

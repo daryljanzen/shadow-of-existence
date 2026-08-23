@@ -66,6 +66,7 @@ chain check) and the computation -- never against the register. Stated for rever
 """
 import os
 import re
+import subprocess
 
 import numpy as np
 from scipy.optimize import brentq
@@ -166,9 +167,25 @@ def main():
     check('SOURCE: P15 sec:what-crosses states the freezing AS AN ARGUMENT -- "every mode exits it and '
           'freezes before the crossing" from horizon exit',
           'exits it and freezes' in p15 and 'before the crossing' in p15)
-    check('SOURCE: kills/PO-7.md chain check names (d) as the one link reproduced nowhere -- "(d) IS AN '
-          'ARGUMENT, NOT A COMPUTATION ... reproduced nowhere"',
-          'IS AN ARGUMENT, NOT A COMPUTATION' in kill and 'reproduced nowhere' in kill)
+    # AMENDED r3105 (L-249).  THIS PIN BROKE BECAUSE THIS RECEIPT SUCCEEDED.
+    # kills/PO-7.md used to say (d) was "AN ARGUMENT, NOT A COMPUTATION ... reproduced nowhere".
+    # r2993 struck PO-7 -- "both clauses of the object answered" -- and rewrote the file, because
+    # (d) HAD BY THEN BEEN REPRODUCED, by this receipt among others.
+    #   => A receipt whose job is to reproduce something, and which pins a source saying it is
+    #     NOT YET reproduced, breaks at the moment it does its job.  The pin is on the gap, and
+    #     the receipt exists to close the gap.
+    #   => So the gap is pinned where it stood, and the DISCHARGE is asserted against the file now:
+    #     the same document cites this work by name as one of the three closures.
+    PRE = 'dbd2f7f79be804f043328885a5bf8dc63a00b60b'   # r2993^, before PO-7 was struck
+    then_kill = subprocess.run(['git', 'show', PRE + ':kills/PO-7.md'], cwd=ROOT,
+                               capture_output=True, text=True).stdout
+    check('SOURCE at ' + PRE[:12] + ' (before r2993 struck PO-7): kills/PO-7.md named (d) as the one '
+          'link reproduced nowhere -- "(d) IS AN ARGUMENT, NOT A COMPUTATION ... reproduced nowhere"',
+          'IS AN ARGUMENT, NOT A COMPUTATION' in then_kill and 'reproduced nowhere' in then_kill)
+    check('and the gap is DISCHARGED in the live file, which cites this line by name among the three '
+          'closures -- "the 0.408 rests on NO unclosed inversion"',
+          'L-805' in kill and 'unclosed inversion' in kill
+          and 'IS AN ARGUMENT, NOT A COMPUTATION' not in kill)
 
     print()
     if FAILED:
