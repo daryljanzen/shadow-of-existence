@@ -1,27 +1,4 @@
 
-  RUN-ALL-RECEIPTS -- 618 registered receipt(s), 4 at a time, 400s each, each from ITS OWN DIRECTORY
-  TREE-DIGEST: 231239a2c137f152
+  RUN-ALL-RECEIPTS -- 622 registered receipt(s), 4 at a time, 400s each, each from ITS OWN DIRECTORY
+  TREE-DIGEST: 248e98a26ba9b2a0
 
-    [FAIL] receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py  (0s)
-               FAIL  ⛭ CORRECTED c54.228: 5 of 6 CLAIMS this receipt quoted are present in the papers' BODY text after r2581 -- the rehoming moved and reworded them, and lost none /     FAIL  ⇒ AND THE ARITHMETIC OF THE OLD PROBE, KEPT SO THE ERROR IS LEGIBLE: 0 of 6 of the same claims survive as EXACT SENTENC
-    [FAIL] receipts/L221_quark_lepton/Q1_the_missing_operator_and_the_higgs_identification_are_one_gap.py  (0s)
-               OK    ⚠ and PO-5 stays open -- PROTECTED_OPEN carries it, and nothing here builds an operator /     OK    and P14 itself says the splitting is "external to the geometry", so no mass is derived /   1 check(s) FAILED
-    [FAIL] receipts/L221_the_bridge/B53_gating_l829_and_l830.py  (1s)
-           /root/soe/receipts/L221_the_bridge/B53_gating_l829_and_l830.py:98: IntegrationWarning: Extremely bad integrand behavior occurs at some points of the /   integration interval. /   leaf = [quad(lambda r: 1/np.sqrt(abs(f(r))), 1.0, RB-e, limit=400)[0]
-    [FAIL] receipts/L221_the_bridge/B66_po5s_route_is_gated_on_po11.py  (0s)
-               OK    ⛭⛭ ⓷ and the register records `PO-2` gated on ['PO-11', 'PO-5'], while `PO-11` is gated on nothing -- ** so the chain PO-2 → PO-5 → PO-11 TERMINATES, with no circularity ** /     FAIL  ⇒ ** and the register did not record the PO-5 → PO-11 link before this receipt ** -- both rows read as ga
-    [FAIL] receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_narrating_its_own_history.py  (7s)
-               - ⓶ twelve revision ids are claimed by divergent branches /     - ⓶ᵇ ⛔ and four of the twelve fall in the last thirteen revisions -- the rate is accelerating, not historical /     - ⓸ᵇ check_revision_collisions is green
-    [FAIL] receipts/L536_frontier_placement/F1_resolved_content_sits_in_the_frontier_sections.py  (0s)
-               OK    with the three largest shares: boundary_paper.tex 33%, CR_cosmology.tex 28%, range_paper.tex 14% /     OK    ⚠ and the resolved-language proxy finds only 27 markers corpus-wide -- far too few to be a measurement, and reported as a proxy rather than a count /   5 check(s) FAILED
-    [FAIL] receipts/L555_merge_duplication/M1_the_merge_of_my_own_revision_duplicated_four_protected_rows_and_no_gate_saw_it.py  (1s)
-               f'with its object is {sorted(gw(fam5) & gw(o_now["PO-10"][0]))} -- a genuine match, and the ' /                                                ~~~~~^^^^^^^^^ / KeyError: 'PO-10'
-    [FAIL] receipts/L560_pins_into_moving_prose/P1_the_last_five_failures_were_pins_into_prose_that_later_correct_work_moved.py  (2s)
-               OK    ⚠ at 50f0d3f (c54.226) this file did NOT read whether the CONTENT survives under other words: W1 stated the count and said so in terms, routed rather than interpreted /     OK    ⛭ AND c54.228 (`L-561`) ANSWERED IT -- against this fork: the probe compared STRINGS where the question was abo
-    [FAIL] receipts/L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py  (133s)
-               FAIL  ⇒ SO A CHECK CAN BE SOUND AND STILL VERIFY THE WRONG OBJECT -- and the failure mode is specific to what was being done: a RE-PINNING sweep is the operation that updates quotations, so a sentence-level measurement taken during one measures the thing the sweep exists to change /     OK    ⓹ 
-
-  609 pass, 9 fail, 0 over timeout, in 599s wall
-  slowest that passed: P16_validate_bbn.py 164s, I10_the_constraint_propagation_is_symmetry_free.py 107s, Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py 104s, P15_the_second_arm_actually_run.py 98s, P15_the_collapse_leg_is_scale_invariant.py 82s
-
-  ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.
