@@ -98,8 +98,19 @@ def main():
     # ⓶ and the calculation is on the massless side
     check('⛭ and P14 solves the MASSLESS radial Dirac problem',
           'massless radial Dirac problem' in p14)
-    check("on the MASSLESS Dirac operator's radial first-order pair",
-          "massless Dirac operator's radial first-order pair" in p14)
+    # ⛭⛭ RE-PINNED r3132 (`L-258`).  ** A PIN INTO MOVING PROSE: the phrase was "massless Dirac
+    # ** operator's radial first-order pair" and P14 no longer writes it that way. **
+    #   *The CONTENT is unchanged and appears in two places -- "The massless radial Dirac problem
+    #   separates into a first-order pair", and "the radial first-order pair" where the spin
+    #   connection is given -- so what moved is the phrasing, not the physics.*
+    #   ⇒ ** Re-pinned to the two surviving forms and to their JOINT presence, which is what the
+    #     claim needs: that the object solved is the massless problem AND that it is the radial
+    #     first-order pair. **  ⌗ *No `.tex` is touched; this is a receipt following its paper.*
+    check("on the MASSLESS Dirac operator's radial first-order pair -- P14: \"The massless radial "
+          "Dirac problem separates into a first-order pair\", and \"the radial first-order pair\" "
+          "where the spin connection is given",
+          'massless radial Dirac problem separates into a first-order pair' in p14
+          and 'radial first-order pair' in p14)
     check('and states its own boundary: "the zero-modes are massless, and their splitting is '
           'electroweak physics, external to the geometry"',
           'the zero-modes are massless, and their splitting is electroweak physics, external to the '
