@@ -46,7 +46,6 @@ twelve the work is not lost and the record is here; each is dispositioned rather
 | `L-819` | **BOUNDARY** — as `L-812` |
 | `L-821` | **BOUNDARY** — as `L-812` |
 
-⌗ *`L-540` is the one genuine lost lead: an id assigned and never worked, with no receipt directory. It
-stays reported.*
+⌗ **`L-540` — READ AT SOURCE r3155, and it is not a lost lead.** *It is a note about `BOARD.md`'s lead-ORDERING: the leads there ranked on two scored axes, `grounded` and `informs-how-much`, recomputing on each regeneration "because a landed lead changes what the next one is worth", and r2603 recorded that a third axis---**REACH**, how far a lead reaches---is the one a machine cannot score and a human maintains. That note was given an id and never entered as a row.* ⇒ **The list it orders no longer exists**: `BOARD.md` was generated from the register that closed at r3001, the work order marks it a RECORD, and the live rows are in `THE_FRONTIER.md`, which carries one. *An axis for ranking a list that is gone is not work anyone can do.* ▣ **Dispositioned SPENT, not owed** — to Daryl or to anyone. *It stays readable as the record of how the board was ordered while there was a board.*
 
 

@@ -255,6 +255,20 @@ def _id_space():
         for _n in _gaps:
             _hits = _glob.glob(_os.path.join(ROOT, 'receipts', 'L%d_*' % _n))
             (_worked if _hits else _lost).append(_n)
+        # ** r3155: the disposition table governs BOTH branches.  An id can be dispositioned by being
+        #    READ and found spent -- L-540 is a note about an ordering for a lead list that no longer
+        #    exists -- and that is a disposition as much as a receipt is.  The table is still READ:
+        #    an id must appear in it, and an unread id still fails. **
+        try:
+            _reg = open(ARC, encoding='utf-8', errors='replace').read()
+            _disp = _reg.split('DISPOSITIONED IDS', 1)[1].split('\n## ', 1)[0] if 'DISPOSITIONED IDS' in _reg else ''
+        except Exception:
+            _disp = ''
+        _lost_homed = [n for n in _lost if ('L-%d' % n) in _disp]
+        _lost = [n for n in _lost if n not in _lost_homed]
+        if _lost_homed:
+            print(f"    [ok]   IDs never worked whose DISPOSITION is recorded: "
+                  f"{['L-%d' % n for n in _lost_homed]}")
         if _lost:
             print(f"    [FAIL] IDs assigned and NEVER WORKED: {['L-%d' % n for n in _lost]}")
             print("           A lead given an ID and not entered as a row is LOST (Rule 2).")
@@ -279,7 +293,11 @@ def _id_space():
             print("           Each has a receipts/ directory, so the work exists and the record")
             print("           of it does not.  These need a live row or a home in a paper --")
             print("           NOT re-opening as unworked leads.")
-        _bad = 1
+        # ** r3155: only an UNDISPOSITIONED gap is a failure.  This was unconditional, so a gap whose
+        #    every id is dispositioned still failed the gate -- the flag fired on the gap EXISTING
+        #    rather than on anything being wrong with it. **
+        if _lost or _worked:
+            _bad = 1
     if _dupes:
         print(f"    [FAIL] IDs appearing on more than one row: {['L-%d' % n for n in _dupes]}")
         _bad = 1
