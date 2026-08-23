@@ -16,10 +16,41 @@ sources: [chat]
 > |---|---|---|
 > | **the one work item** | `THE_REGISTER` / P7 `frontier:scalar` | **`PO-13`** — the acoustic phase, misplaced by a computed amount. *Not started.* |
 > | **owed items** | this file | **13 open** — incl. the comprehensive comb, the reader package, the dissolution-census reconciliation, and the fermion-sector items never registered |
-> | **the corpus read** | `ARC 13` | **4 of 17 papers** read at verified full coverage (P7, P8, P9, P10). P11–P17 and p0 not |
+> | **the corpus read** | `ARC 13` | **P1–P10 done; P11–P17 remain.** *P7–P10 were read with the chunked reader at verified 100% coverage; P1–P6 predate it, so their coverage was never measured — recorded as a fact, not a re-read order* |
 > | **receipt failures** | `receipts/RUN_RESULT.txt` | **8**, mostly inherited; the P7/P10 set is cleared |
 > | **red gates** | `corpus/check_*.py` | **9** at a 600s timeout — *note the harness: `check_cross_row_dupes` reads red at 100s and passes at 600s* |
 > | **the absorption gap** | `ABSORPTION.md` | `c54.208`–`233` never entered this line; **one finding in it remains unverified** |
+>
+>
+> ## ⛭⛭⛭ AND THE ORDER TO WORK IT IN — built from the gating, not from feel
+>
+> *The rule: **isolated-and-ready first**, then **anything that gates something else before the thing it
+> gates**, then the read, then what needs the whole corpus current. Re-derive this if items move.*
+>
+> **A · ISOLATED, READY, NOTHING WAITS ON THEM** — *clear these first; each is independent of every other line*
+> · `621` the receipt's gloss brought to its own table · `614` the twelve orphaned results dispositioned
+> · `605` **DECISION** — is P3's order reframe still wanted? · `609` the reach-edge package: register or defer.
+> ⌗ *`605` and `609` are Daryl's calls; the other two are mine to close.*
+>
+> **B · GATES SOMETHING — before the thing it gates**
+> · `611` the eight fermion-sector items registered ⟶ *gates the P14 read and any matter-sector work*
+> · `598` measure the $\langle T_{\mu\nu}\rangle$ / trans-Planckian gap ⟶ *gates `591` and the P16 read*
+> · `608` PHASE7 plan-vs-execution reconciled ⟶ *gates `589`, which would otherwise re-find the divergence*
+> · `586` bank the parametrisation arc's step ② ⟶ *gates the P15 read; the measurement equations belong in it*
+>
+> **C · THE CORPUS READ — P11 · P12 · P13 · P14 · P15 · P16 · P17/p0**
+> *In that order. P14 after `611`, P15 after `586`, P16 after `598` and `621`. P15 is the largest at 86pp.*
+>
+> **D · AFTER THE READ — these need the corpus current**
+> · `591`+`592` the dissolution census reconciled and its fork-span audited · `589` the comprehensive comb
+> · `612` `ARC 13` declared run, which is what the read discharges.
+>
+> **E · THE WORK ITEM** — `PO-13`, the acoustic phase. *After P15, whose transfer and refit are its evidence base.*
+>
+> **F · LAST** — `597`, the reader package, which wants the corpus finished to package it.
+>
+> ⌗ *The absorption gap (`c54.208`–`233`) and the inherited red gates sit outside this order: neither gates
+> anything here, and the absorption gap cannot be closed from this tree at all.*
 >
 > ⇒ ⛭ **AND WHAT IS NOT ON THIS LIST, BECAUSE IT IS FINISHED RATHER THAN EMPTY.** *The quantum sector and
 > the Standard-Model sector are handed off, and the hand-off is **tested rather than asserted**: of the four
