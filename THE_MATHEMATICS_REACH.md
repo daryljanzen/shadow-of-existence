@@ -99,7 +99,7 @@ Five stations, walked in four revisions:*
 | **Ⓕ** representation theory | ✔ **walked by `F13`, verified r2442** — and **this frontmatter carried it as owed for forty-eight revisions afterward** |
 | **Ⓒ** complex analysis / monodromy | ⛭ **BIT** — the equianharmonic curve's $\mathrm{Aut}=\mathbb Z_6$ (cyclic) where the cover carries $S_3$ (non-abelian): **same order, not isomorphic** |
 | **Ⓗ** the $\gamma^5$-graded index | ⛭⛭ **THROWN r3150 (`L-264`) — and it BIT.** *The traced prerequisite is computable and the computation is a **Weyl limit-point test**: $W\,d\ell = \lambda\,dr/r$ exactly, the branches are $\psi\sim r^{\mp\lambda}$, both are $L^2$ at the branch point iff $\lvert\lambda\rvert<\tfrac34$, and the attained spectrum $\lambda=\pm1,\pm2,\dots$ misses that window entirely — so the operator is essentially self-adjoint there and **no boundary condition exists to be chosen**. Compactness made the index finite; this makes it CANONICAL.* ⌗ *`Fredholm` ×0 in seventeen papers was the baseline; the apparatus is `P10`'s and had never been joined to `P14`.* ⌗ *Prior reading, kept: a DECLARED gap, the tool being the equivariant/orbifold index — which is the tool for the FULL index and not for its prerequisite.* |
-| **Ⓖ** Lie algebroids | ⛭ **BIT** — P12 holds algebroid, anchor and connection and **zero "Atiyah sequence"**, which is exactly the structure relating those three |
+| **Ⓖ** Lie algebroids | ⛭⛭ **THROWN r3152 (`L-265`) — AND THE SEQUENCE IS THE OBJECT.** *The caveat this row carried — "P12's algebroid is the constraint algebra's and not a bundle's" — is right in general and wrong here: the action algebroid of $G$ on $G/H$ **is** the Atiyah algebroid of $G\to G/H$. `ker(anchor)` = $\mathfrak h$ = P12's "cut-fixing isotropy" (`kernel` ×0 in P12); `im` = $\mathfrak m$ the "cut-deforming coset"; and P12's "section of the bundle that would select a definite flow" **is the splitting**. And its closure test $[\mathfrak m,\mathfrak m]\subset\mathfrak h$ **is** that splitting's curvature computation — one computation, run once and read twice, the curvature being the substrate's own Riemann tensor.* ⌗ *The structure is in `Mackenzie2005`, which P12 already cites.* |
 
 ⛔⛭⛭ **AND A METHOD NOTE THIS THEATRE HAS TO CARRY, from Ⓗ's own run (r3150, `L-264`).** *On the way
 to the result, a D-generalisation of the radial exponent — with the ANGULAR spectrum left at its
@@ -111,6 +111,17 @@ $\{4,5\}$ exactly, **caveat at five included**.*
     is real"*. ⇒ ***So a half-generalised probe produces precisely this theatre's success signal, and
     the signal is worth exactly as much as the completeness of the generalisation behind it.***
   ⌗ *Completing it — the angular spectrum moves too, and faster — removes the restriction entirely.*
+
+⛭⛭ **AND Ⓖ's RUN ADDS A SECOND METHOD NOTE, of the opposite shape to Ⓗ's (r3152, `L-265`).**
+*Ⓗ's danger was a probe that manufactured a convergence. Ⓖ's is the reverse: a station recorded as an
+ABSENCE — "zero Atiyah sequence" — where the structure was present under four other names, in one
+paper, with its standard reference already cited there.*
+  ⇒ ***AN ABSENCE FOUND BY VOCABULARY IS AN ABSENCE OF THE VOCABULARY.*** *The word count was right —
+    `Atiyah sequence` ×0, `adjoint bundle` ×0, `principal bundle` ×0 — and the object was there.*
+  ⇒ **So a reach station's two failure modes are now both on the record and they are opposite: a
+    half-generalised probe invents a bite, and a vocabulary survey invents a hole.** *Both are caught
+    the same way — by reading the passage the count points at, which is what `reach_baseline.py`'s
+    `--context` is for and why its own head says a count is not a verdict.*
 
 **⇒⇒ AND THE THREE THAT BIT ARE ONE KNOT:** *Ⓒ asks **which group acts**; Ⓗ **needs that group** for an equivariant
 index; Ⓖ supplies the **sequence in which "which group" and "what connection" are the same question**, since
