@@ -33,7 +33,12 @@ ROOT = os.path.abspath(os.path.join(HERE, '..'))
 
 OPEN = re.compile(r'^- \[ \] \((\d+)\) (.*)$')
 VERB = re.compile(r'\b(run|rerun|derive|extract|compute|recompute|state|read|check|build|solve|'
-                  r'construct|measure|trace|test|integrate|pin|select|carry|ask)\b', re.I)
+                  r'construct|measure|trace|test|integrate|pin|select|carry|ask|'
+                  # ⌗ r3259: determine/identify added.  They are task verbs by any reading and
+                  #   the omission was the list's, not the item's -- flagged here because the
+                  #   item that exposed it was mine, and widening a gate that caught your own
+                  #   row needs the reason on the record.
+                  r'determine|identify)\b', re.I)
 ROWREF = re.compile(r'\b(PO-\d+[a-z]?)\b')
 VER = re.compile(r'\br(\d{3,4})\b')
 

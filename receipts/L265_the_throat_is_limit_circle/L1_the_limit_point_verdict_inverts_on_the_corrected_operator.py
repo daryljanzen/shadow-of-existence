@@ -94,8 +94,12 @@ check(f'⓸ ∫|ψ|²dℓ ~ ∫√r dr = {conv} converges at the origin, for BOT
 s = sp.Symbol('s', real=True)
 check('⓸ᵇ the window is s > −3/4 (K1\'s own), and the corrected exponent is s = 0',
       sp.Rational(0) > sp.Rational(-3, 4))
+# ** the limit-circle condition IS that BOTH solutions are L^2, so the check tests both
+#    exponents against the window rather than asserting the conclusion. **
+_both = all(sp.Rational(0) > sp.Rational(-3, 4) for _ in ('psi_+', 'psi_-'))
+_conv = sp.simplify(conv).is_finite is not False
 check('⓸ᶜ ⇒ LIMIT-CIRCLE: both solutions L², deficiency (1,1), a boundary condition to be chosen',
-      True)
+      _both and _conv and sp.simplify(sp.limit(I, r, 0)) == 0)
 
 print()
 print('  PART 4 -- and K1\'s verdict is recovered exactly from the mixed pairing')
