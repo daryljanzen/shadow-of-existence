@@ -1,10 +1,11 @@
 
-  RUN-ALL-RECEIPTS -- 625 registered receipt(s), 4 at a time, 400s each, each from ITS OWN DIRECTORY
-  TREE-DIGEST: da1504fd9e5b8ff7
+  RUN-ALL-RECEIPTS -- 626 registered receipt(s), 4 at a time, 400s each, each from ITS OWN DIRECTORY
+  TREE-DIGEST: 9f463a5482d9ed75
 
+    [FAIL] receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_narrating_its_own_history.py  (40s)
+           ============================================================================== /   1 check(s) FAILED /     - ⓹ᶜ ⌗ and only HALF of it is enforceable here, which is said rather than assumed: the other line adopting the odd half is a REQUEST that has been made and is not presumed answered
 
-  625 pass, 0 fail, 0 over timeout, in 547s wall
-  slowest that passed: Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py 146s, P16_validate_bbn.py 142s, I10_the_constraint_propagation_is_symmetry_free.py 109s, P15_the_second_arm_actually_run.py 101s, A1_a_rule_made_of_spellings_misses_the_next_spelling.py 93s
+  625 pass, 1 fail, 0 over timeout, in 886s wall
+  slowest that passed: P16_validate_bbn.py 266s, Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py 207s, P15_the_second_arm_actually_run.py 161s, I10_the_constraint_propagation_is_symmetry_free.py 153s, A1_a_rule_made_of_spellings_misses_the_next_spelling.py 152s
 
-  Every registered receipt runs, in place, and exits 0 -- so every assertion in the
-  reproducibility layer was actually evaluated.
+  ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.

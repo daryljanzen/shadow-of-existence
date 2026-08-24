@@ -226,11 +226,24 @@ _v = C.band_violations()
 check(f'⓹ᵇ and it is PREVENTION: it reads this line\'s own unmerged commits, which are the only '
       f'ones whose numbers can still be changed -- {len(_v) if _v is not None else "no upstream"} '
       'out of band', _v == [])
-check('⓹ᶜ ⌗ and only HALF of it is enforceable here, which is said rather than assumed: the other '
-      'line adopting the odd half is a REQUEST that has been made and is not presumed answered',
-      'is a REQUEST, not an assumption' in
-      open(os.path.join(ROOT, 'corpus', 'check_revision_collisions.py'),
-           encoding='utf-8', errors='replace').read())
+# ⛔⛭⛭ AMENDED r3142 (`L-261`): ** THIS CHECK ASSERTED THAT A QUESTION WAS STILL OPEN, and it broke
+# ** WHEN THE QUESTION WAS ANSWERED. **  *It required the gate to say the odd half "is a REQUEST, not
+#   an assumption"; node 57 accepted the band and now runs `PARITY = 1`, so the gate records the
+#   ANSWER and the check went red on the settlement it asked for.*
+#   ⇒ *** THE SAME CLASS AS PINNING A LIVE REGISTER, with "still open" as the thing that moves.  A
+#       check on the state of a request punishes the request being granted -- and this is the third
+#       site of it in one turn (`L-258`, `L-259`, `L-260`), each time in a different disguise. ***
+#   ⇒ ** What must hold is not that the half is still unheld but the property the request was FOR:
+#     that the gate cannot describe itself as prevention on a half it does not have.  That is a
+#     property of the gate and it SURVIVES the answer, which is what the old form did not. **
+_gate_src = open(os.path.join(ROOT, 'corpus', 'check_revision_collisions.py'),
+                 encoding='utf-8', errors='replace').read()
+check('⓹ᶜ ⌗ and the gate cannot describe itself as prevention on a half it does not hold: with '
+      '`OTHER_HALF` unset it prints "THE BAND IS A PROPOSAL, NOT A PREVENTION" instead',
+      'THE BAND IS A PROPOSAL, NOT A PREVENTION' in _gate_src
+      and 'if OTHER_HALF is None:' in _gate_src)
+check('⓹ᶜ¹ ⛭ and the other half IS held now, carried as a fact in the other line\'s own words '
+      'rather than presumed', C.OTHER_HALF is not None and 'PARITY = 1' in C.OTHER_HALF)
 check('⓹ᵈ and the one grandfathered id is named, not dated -- a cutoff silently absorbs everything '
       f'behind it: {sorted(C.BAND_GRANDFATHERED)}',
       C.BAND_GRANDFATHERED == {'r3125'})
