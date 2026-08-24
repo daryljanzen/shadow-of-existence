@@ -52,7 +52,7 @@ PATTERNS = [
      r'|\bwhat they were taken to mean\b|\bunder another name\b'),
     ('a repair or its occasion',
      r'\bhad to be (?:removed|corrected|added|restored)\b'
-     r'|\bprompted the check\b|\bfor it to work\b'
+     r'|\bprompted the check\b|\bfor it to work\b|\bis now in hand\b|\bnow in hand\b'
      r'|\bmade the (?:control|arm|fit) worse\b'
      r'|\bobjection is now gone\b|\bthe mistake .{0,30}exists to avoid\b'),
     ('a count of attempts',
