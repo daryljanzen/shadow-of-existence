@@ -42,6 +42,7 @@ PATTERNS = [
      r'|\bis (?:withdrawn|here revised|accordingly withdrawn|withdrawn (?:here|to the))\b'
      r'|\ban earlier (?:reading|pass|version|form|formulation|statement)\b'
      r'|\bas earlier stated\b|\bas (?:previously|formerly) stated\b'
+     r'|\bwhen this was written\b|\bno bound was drawn\b'
      r'|\bthis (?:paper|section) (?:stated|claimed|read|carried|previously)\b'
      r'|\bbefore the \w+ was run\b|\bthe older \w+[- ]analytic\b'
      r'|\bthat (?:reading|statement|figure) (?:is|was) (?:withdrawn|wrong)\b'
