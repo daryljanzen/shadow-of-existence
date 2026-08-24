@@ -56,7 +56,8 @@ PATTERNS = [
     ('a count of attempts',
      r'\brebuilt (?:twice|three times|four times|\w+ times)\b'
      r'|\bin consecutive revisions\b|\bhas now met that\b'
-     r'|\b(?:second|third) lesson\b|\barrived in the same shape\b'),
+     r'|\b(?:second|third) lesson\b|\barrived in the same shape\b'
+     r'|\bfor two revisions\b|\bonly now measured\b|\basserted here for\b'),
     ('a revision stamp in the prose',
      r'(?<![A-Za-z])r\d{3,4}(?![\d])|c54\.\d+'),
 ]
