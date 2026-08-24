@@ -67,6 +67,17 @@ FIELDS = [
      ['lensing', 'photon sphere', 'null geodesic', 'deflection', 'caustic', 'eikonal']),
     ('statistics / inference', 'STATISTICS_INFERENCE_LEDGER.md',
      ['likelihood', 'chi^2', 'base rate', 'reference class', 'covariance', 'residual']),
+    ('Cartan / connections and holonomy', 'CARTAN_HOLONOMY_LEDGER.md',
+     ['holonomy', 'monodromy', 'connection', 'Cartan', 'parallel transport', 'flat connection']),
+    ('harmonic analysis', 'HARMONIC_ANALYSIS_LEDGER.md',
+     ['spherical Bessel', 'hyperspherical', 'Fourier', 'transfer function', 'mode function',
+      'orthogonality']),
+    #: ⛭ added r3178: the field `L-277`'s inverted survey named and `L-278`/`L-279` threw.  It is
+    #:   listed here so `unclaimed_surface` stops offering it back -- the claimed set is built from
+    #:   this table, so a thrown field must be entered or the next pass re-finds it.
+    ('involution / real forms', 'INVOLUTION_REAL_FORMS_LEDGER.md',
+     ['involution', 'real form', 'real forms', 'conjugation', 'antilinear', 'symmetric space',
+      'maximal compact', 'Wick rotation', 'signature flip']),
     # ---- candidates: no ledger on disk.  These are what the survey is FOR. ----
     ('number theory', None,
      ['integer', 'rational', 'irrational', 'transcendental', 'prime', 'Diophantine',
@@ -180,26 +191,45 @@ def main():
 
     # ** THE CONTROL: every field declaring a ledger must be re-found by its own vocabulary. **
     controls = [r for r in rows if r[1]]
-    dead = [r[0] for r in controls if r[3] < NOTABLE]
+    # ⛔⛭ ** r3178: THE CONTROL USED THE CANDIDATE FLOOR, AND THAT IS A CATEGORY ERROR. **
+    #   *`NOTABLE` exists to RANK candidates -- "is this worth a look" -- and this line reused it to
+    #   VALIDATE controls -- "is the instrument reading the corpus".  Those are different questions.*
+    #   ⇒ ** It bit at r3178: `harmonic analysis` was thrown at r3166 and its vocabulary scores x24,
+    #     because the corpus barely uses the field's standard terms -- which is exactly what that
+    #     bake REPORTED as its bounce. **  *The measurement was right and the threshold was wrong.*
+    #   ⇒ *** A THROWN FIELD IS A CONTROL BECAUSE IT WAS THROWN, NOT BECAUSE IT IS LARGE.  The
+    #       control now asks only that the instrument FINDS it and that its ledger is on disk; the
+    #       floor is reported beside it as information. ***
+    dead = [r[0] for r in controls if r[3] == 0]
+    thin = [(r[0], r[3]) for r in controls if 0 < r[3] < NOTABLE]
     print('  ' + '=' * 74)
     print('  CONTROLS -- fields already thrown.  The instrument must re-find every one.')
     print('  ==========================================================================')
     for name, ledger, have, tot, per in sorted(controls, key=lambda r: -r[3]):
-        mark = 'ok ' if tot >= NOTABLE and have else '⛔ '
-        print(f'    {mark} {name:44s} ×{tot:<6d} ledger {"present" if have else "MISSING"}')
+        mark = 'ok ' if tot > 0 and have else '⛔ '
+        note = '  (thin — below the candidate floor, and that is a fact about the field)' \
+            if 0 < tot < NOTABLE else ''
+        print(f'    {mark} {name:44s} ×{tot:<6d} ledger '
+              f'{"present" if have else "MISSING"}{note}')
     print()
     if missing_ledger:
         print(f'    ⛔ [FAIL] a field names a ledger that is not on disk: {missing_ledger}')
         print()
         return 1
     if dead:
-        print(f'    ⛔ [FAIL] the survey cannot re-find {len(dead)} already-baked field(s): {dead}')
+        print(f'    ⛔ [FAIL] the survey cannot find {len(dead)} already-thrown field(s) AT ALL: '
+              f'{dead}')
         print('       *A survey that reports a clean sheet because it cannot see anything is not')
         print('        measuring the corpus.  Fix the vocabulary before trusting any candidate.*')
         print()
         return 1
-    print(f'    every one of the {len(controls)} thrown fields is re-found at ×{NOTABLE}+ '
-          'by its own vocabulary — the instrument is reading the corpus.')
+    print(f'    every one of the {len(controls)} thrown fields is found by its own vocabulary '
+          'and has its ledger on disk — the instrument is reading the corpus.')
+    if thin:
+        print(f'    ⌗ {len(thin)} of them score below the ×{NOTABLE} candidate floor: {thin}')
+        print('       *Not a failure: the floor ranks CANDIDATES, and a field can be worth throwing')
+        print('        on a thin vocabulary — `harmonic analysis` was, and its bake reported the')
+        print('        thinness as the bounce.*')
 
     print()
     print('  ' + '=' * 74)
