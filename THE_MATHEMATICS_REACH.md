@@ -14,6 +14,36 @@ sources: [cowork]
 > `THE_FRONTIER.md`.***
 
 
+## ⛔⛭⛭ THE STATION AUDIT, r3148 (`L-263`) — THREE OF EIGHT ARE ALREADY HELD, NOT TWO
+
+*`OWED` 609 gates this theatre on the P11–P17 read, and states the reason: **"a bake against a corpus
+that cannot say what it already holds returns findings it owns."**  Its evidence is `L-203`'s own
+audit, which found two stations held in the papers.  ⇒ **Audited before throwing: there are three.***
+
+| station | verdict | where it is held |
+|---|---|---|
+| **Ⓑ** the forced triple angle | ⌫ **STRUCK r3148** | `P3` `rem:dimension` — *"available in four spacetime dimensions and, with a caveat, in five; in no other"* |
+| **Ⓓ** Galois of the energy family | ⌫ **STRUCK r3148** | `P5` `rem:galois` — the horizon cubic's Galois group over $\mathbb{C}(2M)$ |
+| **Ⓕ** the real forms of $SO(6,\mathbb{C})$ | ⛔ **STRUCK r3148 — THE THIRD** | `P13`, with the argument entire: four real forms; $\su(3)$ compact of dimension eight; $\so(4,2)$ and $\so(3,3)$ excluded on dimension; $\so(5,1)$'s $\so(5)$ too small because $\su(3)$'s smallest faithful real representation is six-dimensional; **the compact form the unique host** |
+
+**⛔ AND Ⓕ WAS DIAGNOSED IN WRITING, IN THIS FILE'S OWN HEAD, AND THE DIAGNOSIS DID NOT PROPAGATE.**
+*The frontmatter above says: "this frontmatter carried Ⓕ as owed for forty-eight revisions after its
+own ① block recorded the answer."*
+  ⇒ ***So the document identified the exact bookkeeping error, about the exact station, wrote it down
+      where the error happened — and the downstream list still carried Ⓕ as owed at r3122.***
+  ⇒ **A NOTICE WRITTEN WHERE THE ERROR HAPPENED DOES NOT REACH THE LIST THAT REPEATS IT.** *The
+    frontmatter corrected itself; nothing carried the correction outward.*
+
+**⌗ AND THE READINESS GATE IS A MEASUREMENT, SO IT IS NOW AN INSTRUMENT RATHER THAN A WAIT.**
+*609 blocks the theatres "by readiness, not dependency" — readiness meaning the corpus can say what
+it already holds, which is something one measures.*  ⇒ **`corpus/reach_baseline.py`** *surveys the
+seventeen paper BODIES (comment headers and bibliography stripped) for a bake's terms before the bake
+asserts anything.*  ⌗ ***It earned itself twice on the audit that installed it: `equivariant index`
+×7 read as a hole in this file's prose and is `P13` using the Atiyah–Hirzebruch obstruction;
+`permutation representation` ×1 read as an opening and is `P14` citing the discrete-flavour
+literature.***  ⇒ **A count is not a verdict; the instrument's job is to make a reader look.**
+
+
 ## ⛭⛭⛭ TWO FIELDS THREW BACK A *NEGATIVE* AND IT WAS THE SAME NEGATIVE — added c54.208
 
 *This theatre sifts what BITES. c54.207 threw two fields at `PO-5` and one at `PO-9`, and what came back is worth
@@ -68,8 +98,19 @@ Five stations, walked in four revisions:*
 | **Ⓓ** Galois theory | ⌫ *already held* — `rem:galois`, found r1882 |
 | **Ⓕ** representation theory | ✔ **walked by `F13`, verified r2442** — and **this frontmatter carried it as owed for forty-eight revisions afterward** |
 | **Ⓒ** complex analysis / monodromy | ⛭ **BIT** — the equianharmonic curve's $\mathrm{Aut}=\mathbb Z_6$ (cyclic) where the cover carries $S_3$ (non-abelian): **same order, not isomorphic** |
-| **Ⓗ** the $\gamma^5$-graded index | ⛭ **a DECLARED gap** — P14 marks Atiyah–Singer on the branched bead as **traced rather than computed**, and the tool a branched object needs is the **equivariant/orbifold** index |
+| **Ⓗ** the $\gamma^5$-graded index | ⛭⛭ **THROWN r3150 (`L-264`) — and it BIT.** *The traced prerequisite is computable and the computation is a **Weyl limit-point test**: $W\,d\ell = \lambda\,dr/r$ exactly, the branches are $\psi\sim r^{\mp\lambda}$, both are $L^2$ at the branch point iff $\lvert\lambda\rvert<\tfrac34$, and the attained spectrum $\lambda=\pm1,\pm2,\dots$ misses that window entirely — so the operator is essentially self-adjoint there and **no boundary condition exists to be chosen**. Compactness made the index finite; this makes it CANONICAL.* ⌗ *`Fredholm` ×0 in seventeen papers was the baseline; the apparatus is `P10`'s and had never been joined to `P14`.* ⌗ *Prior reading, kept: a DECLARED gap, the tool being the equivariant/orbifold index — which is the tool for the FULL index and not for its prerequisite.* |
 | **Ⓖ** Lie algebroids | ⛭ **BIT** — P12 holds algebroid, anchor and connection and **zero "Atiyah sequence"**, which is exactly the structure relating those three |
+
+⛔⛭⛭ **AND A METHOD NOTE THIS THEATRE HAS TO CARRY, from Ⓗ's own run (r3150, `L-264`).** *On the way
+to the result, a D-generalisation of the radial exponent — with the ANGULAR spectrum left at its
+four-dimensional value — returned "canonical iff $D\le5$", which is `P03` `rem:dimension`'s window
+$\{4,5\}$ exactly, **caveat at five included**.*
+  ⇒ ***A PARTIAL GENERALISATION MANUFACTURED A CONVERGENCE WITH AN EXISTING RESULT.***
+  ⇒ **And this file's own strongest claim is that convergence is evidence** — *"a reach list that
+    CONVERGES is more informative than one that scatters, because convergence is evidence the object
+    is real"*. ⇒ ***So a half-generalised probe produces precisely this theatre's success signal, and
+    the signal is worth exactly as much as the completeness of the generalisation behind it.***
+  ⌗ *Completing it — the angular spectrum moves too, and faster — removes the restriction entirely.*
 
 **⇒⇒ AND THE THREE THAT BIT ARE ONE KNOT:** *Ⓒ asks **which group acts**; Ⓗ **needs that group** for an equivariant
 index; Ⓖ supplies the **sequence in which "which group" and "what connection" are the same question**, since
