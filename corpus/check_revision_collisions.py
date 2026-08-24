@@ -90,8 +90,14 @@ BASELINE = {'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
             # is what makes a FOURTH one a failure this line can actually be held to.*
             'r3103', 'r3104', 'r3112'}
 
-#: *** THE BAND. ***  This line's revision numbers are EVEN; the other line's are ODD.  See the head.
-PARITY = 0
+#: *** THE BAND. ***  A partition, and each tree holds ONE half.  ** r3203: the parity is READ FROM
+#: THE TREE rather than hardcoded, because this file now runs on both trees and a hardcoded half
+#: polices the wrong side on one of them -- which is the same failure as a check pinned to a thing
+#: that moves, one level up: the constant was pinned to the tree it was written on. **
+#:   54 takes EVEN (0); 57 takes ODD (1).  NODE selects; absent it, the file falls back to 54's half,
+#:   which is where it was written.
+import os as _os
+PARITY = 1 if _os.environ.get('NODE') == '57' else 0
 #: ** THE OTHER HALF, HELD OR NOT.  ⛔ THE BAND IS A PARTITION AND HALF A PARTITION IS NOTHING. **
 #: *Set to the source of the other line's acceptance, or to `None` while it is only a request.  The
 #: gate REFUSES to call itself prevention while this is `None`, because a half-band prevents no
@@ -115,7 +121,13 @@ BAND_GRANDFATHERED = {'r3125'}
 #:   ⌗ `report_testimony` below prints which of them this tree can now CONFIRM.  An entry that stays
 #:     unconfirmed after the merge is a baseline entry that is not an instance, which weakens the
 #:     gate -- so it is printed every run rather than settling quietly into the list.
-TESTIMONY = {'r3125', 'r3126', 'r3128', 'r3130', 'r3132', 'r3134', 'r3136', 'r3138'}
+TESTIMONY = {'r3125', 'r3126', 'r3128', 'r3130', 'r3132', 'r3134', 'r3136', 'r3138',
+             # ⛔ added r3203 (node 57): three more from the same window -- 57 wrote r3140, r3142
+             # and r3144 in the same turn it accepted the band, before the acceptance landed in
+             # this file.  *Same ground as the eight: a band cannot bind a revision written
+             # before it was answered.*  ALL ELEVEN ARE NOW CONFIRMED ON THIS TREE, which holds
+             # both halves of every pair -- so none is testimony here any longer.
+             'r3140', 'r3142', 'r3144'}
 TESTIMONY_SOURCE = ('node 57, r3138 reply: "we had already collided eight times before the band was '
                     'taken -- r3125, r3126, r3128, r3130, r3132, r3134, r3136, r3138 each name '
                     'different work in each line"')
@@ -195,7 +207,11 @@ def band_violations(root=None):
     not yet reached the shared trunk, so they are the only ones whose numbers can still be changed.
     A band checked after the merge is a second detector, not a prevention. **
     """
-    r = subprocess.run(['git', 'log', '--format=%h%x09%s', f'{UPSTREAM}..HEAD'],
+    # ** r3203: --first-parent.  After this line MERGES the other's bundle, the other line's commits
+    #    sit in UPSTREAM..HEAD and the band flags them as out of band -- policing the other half on
+    #    this tree, which is exactly what the band exists to avoid.  First-parent walks this line's
+    #    own commits and steps over what a merge brought in. **
+    r = subprocess.run(['git', 'log', '--first-parent', '--format=%h%x09%s', f'{UPSTREAM}..HEAD'],
                        cwd=root or ROOT, capture_output=True, text=True)
     if r.returncode != 0:
         return None                       # no upstream ref here -- reported, never asserted

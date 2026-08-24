@@ -1,10 +1,4 @@
 
-  RUN-ALL-RECEIPTS -- 628 registered receipt(s), 4 at a time, 400s each, each from ITS OWN DIRECTORY
-  TREE-DIGEST: 387a60554e6b2497
+  RUN-ALL-RECEIPTS -- 631 registered receipt(s), 4 at a time, 300s each, each from ITS OWN DIRECTORY
+  TREE-DIGEST: acd6736da27efaa0
 
-
-  628 pass, 0 fail, 0 over timeout, in 977s wall
-  slowest that passed: P16_validate_bbn.py 250s, Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py 211s, A1_a_rule_made_of_spellings_misses_the_next_spelling.py 170s, P15_the_second_arm_actually_run.py 164s, I10_the_constraint_propagation_is_symmetry_free.py 157s
-
-  Every registered receipt runs, in place, and exits 0 -- so every assertion in the
-  reproducibility layer was actually evaluated.
