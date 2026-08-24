@@ -98,8 +98,19 @@ Five stations, walked in four revisions:*
 | **Ⓓ** Galois theory | ⌫ *already held* — `rem:galois`, found r1882 |
 | **Ⓕ** representation theory | ✔ **walked by `F13`, verified r2442** — and **this frontmatter carried it as owed for forty-eight revisions afterward** |
 | **Ⓒ** complex analysis / monodromy | ⛭ **BIT** — the equianharmonic curve's $\mathrm{Aut}=\mathbb Z_6$ (cyclic) where the cover carries $S_3$ (non-abelian): **same order, not isomorphic** |
-| **Ⓗ** the $\gamma^5$-graded index | ⛭ **a DECLARED gap** — P14 marks Atiyah–Singer on the branched bead as **traced rather than computed**, and the tool a branched object needs is the **equivariant/orbifold** index |
+| **Ⓗ** the $\gamma^5$-graded index | ⛭⛭ **THROWN r3150 (`L-264`) — and it BIT.** *The traced prerequisite is computable and the computation is a **Weyl limit-point test**: $W\,d\ell = \lambda\,dr/r$ exactly, the branches are $\psi\sim r^{\mp\lambda}$, both are $L^2$ at the branch point iff $\lvert\lambda\rvert<\tfrac34$, and the attained spectrum $\lambda=\pm1,\pm2,\dots$ misses that window entirely — so the operator is essentially self-adjoint there and **no boundary condition exists to be chosen**. Compactness made the index finite; this makes it CANONICAL.* ⌗ *`Fredholm` ×0 in seventeen papers was the baseline; the apparatus is `P10`'s and had never been joined to `P14`.* ⌗ *Prior reading, kept: a DECLARED gap, the tool being the equivariant/orbifold index — which is the tool for the FULL index and not for its prerequisite.* |
 | **Ⓖ** Lie algebroids | ⛭ **BIT** — P12 holds algebroid, anchor and connection and **zero "Atiyah sequence"**, which is exactly the structure relating those three |
+
+⛔⛭⛭ **AND A METHOD NOTE THIS THEATRE HAS TO CARRY, from Ⓗ's own run (r3150, `L-264`).** *On the way
+to the result, a D-generalisation of the radial exponent — with the ANGULAR spectrum left at its
+four-dimensional value — returned "canonical iff $D\le5$", which is `P03` `rem:dimension`'s window
+$\{4,5\}$ exactly, **caveat at five included**.*
+  ⇒ ***A PARTIAL GENERALISATION MANUFACTURED A CONVERGENCE WITH AN EXISTING RESULT.***
+  ⇒ **And this file's own strongest claim is that convergence is evidence** — *"a reach list that
+    CONVERGES is more informative than one that scatters, because convergence is evidence the object
+    is real"*. ⇒ ***So a half-generalised probe produces precisely this theatre's success signal, and
+    the signal is worth exactly as much as the completeness of the generalisation behind it.***
+  ⌗ *Completing it — the angular spectrum moves too, and faster — removes the restriction entirely.*
 
 **⇒⇒ AND THE THREE THAT BIT ARE ONE KNOT:** *Ⓒ asks **which group acts**; Ⓗ **needs that group** for an equivariant
 index; Ⓖ supplies the **sequence in which "which group" and "what connection" are the same question**, since
