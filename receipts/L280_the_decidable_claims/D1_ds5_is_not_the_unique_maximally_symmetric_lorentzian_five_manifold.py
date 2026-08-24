@@ -154,10 +154,12 @@ def main():
                         'I1_so6C_has_five_real_forms_and_the_omitted_one_admits_su3.py')
     l279 = os.path.join(ROOT, 'receipts', 'L279_the_symmetric_space_probe',
                         'S1_so42_is_not_another_real_form_it_is_the_substrates_own_dual.py')
-    check('⓷ L-278: P13 enumerates four real forms and so(4,2) is among "the others", excluded on '
-          'a dimension count',
+    # ** CORRECTED r3353.  This pinned L-278's wording, and node 57 applied L-278's own finding to
+    #    P13 at r3329 -- so the string it looked for is gone BECAUSE the bake succeeded.  It now
+    #    asserts that L-278 exists and records the five-form finding. **
+    check('⓷ L-278 established that so(6,C) has FIVE real forms, and P13 has been corrected to say so',
           os.path.exists(l278)
-          and 'four real forms' in open(l278, encoding='utf-8', errors='replace').read())
+          and 'five real forms' in open(l278, encoding='utf-8', errors='replace').read())
     check('⓷ᵇ L-279: so(4,2)/so(4,1) IS AdS_5 — the substrate\'s own symmetric-space dual, sharing '
           'its isotropy exactly',
           os.path.exists(l279)
@@ -165,10 +167,14 @@ def main():
     check('⓷ᶜ ⛔ and here: AdS_5 is one of the two manifolds this uniqueness claim omits — so one '
           'object appears three times, twice inside a uniqueness claim that leaves it out',
           d_ads == maxdim)
-    check('⓷ᵈ ⛭ which is a pattern in the text rather than two accidents: the construction\'s own '
-          'dual is the thing its uniqueness claims keep not counting',
-          'four real forms of the one complex group' in p13
-          and 'unique maximally symmetric Lorentzian manifold' in p13)
+    # ** CORRECTED r3353: both sites are now repaired, so the pattern is recorded as FOUND and
+    #    FIXED rather than asserted as live.  A finding that survives its own repair is a finding
+    #    about the corpus's history, not about its present. **
+    check('⓷ᵈ ⛭ the pattern was real and BOTH sites are repaired: P13 now enumerates five real forms '
+          'and names so(4,2) as the substrate\'s dual (r3331), and its uniqueness claim now carries '
+          'the intrinsic-signature qualifier (r3353)',
+          'five real forms of the one complex group' in p13
+          and 'whose signature is intrinsic' in p13)
 
     print()
     print('  ' + '=' * 74)
