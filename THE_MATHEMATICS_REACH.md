@@ -250,7 +250,7 @@ sample the cases where the criteria **misled** — the ether, caloric, Kepler's 
 **The plan records it as "the one genuinely unworked item, whose reference class is unbuilt."*** ***A listed
 field that has never been thrown, and an open item that needs exactly it.***
 
-## THE FIELDS TO THROW (candid## THE FIELDS TO THROW (candidate bakes — a LIVING set; verdict CONFIRMED / GROUNDED / CANDIDATE)
+## THE FIELDS TO THROW (candidate bakes — a LIVING set; verdict CONFIRMED / GROUNDED / CANDIDATE)
 **Baked (done or partial):**
 - **Classical / Euclidean geometry** — the geometry bake. ⟐ is it complete? more circle / conic / inversive
   theorems that bite? (see the GEOMETRY docs)
@@ -259,7 +259,7 @@ field that has never been thrown, and an open item that needs exactly it.***
 **⛭ ORDERED BY THE MATHEMATICIAN'S ARC — r1805. `INTRODUCTION` §2's parallel arc IS an ordering of this list by
 structural depth, and r1741 installed it as the lens. Eight stations, mapped:**
 *Ⓐ **classical plane geometry** → *Classical/Euclidean*, **baked** · Ⓑ **the forced triple angle** → ***⌫ REOPENED ONE LEVEL UP, r2376+c54.11.*** *The r1880 finding stands: `prop:triple`'s own proof holds the station, and the arc's "no entry" was the LIST's omission. **But that proof shows the scale is unique AT $D=4$; it never asks at which $D$ a scale exists at all.** Asked, the answer is $D\in\{4,5\}$ — so the station carries a general statement the papers did not hold, now landed in P3 `rem:dimension`. **The r1885 precondition was honoured: the papers were checked first, and they held the $D=4$ case only.*** *Prior note, kept:* ***⌫ NOT A GAP — CORRECTED r1880.*** *The arc named this station as one "this list does not carry," and r1861 recorded it as discharged by the optics bake's `O3`. ***The audit found `O3` was restating `prop:triple`'s OWN PROOF, one paragraph above the proposition*** — $\varrho-\tfrac34\varrho^3=0$, unique positive root $2/\sqrt3$. **So the corpus had this station from the start and the arc's "no entry" was the LIST's omission, not the corpus's.** A station can be missing from a reach list and present in the papers, and that is a different finding from a gap* ·
-Ⓒ **complex analysis / monodromy** → ***★ NEXT, and handed to by the quadric bake's `Q4`***: that probe found
+Ⓒ **complex analysis / monodromy** → ***✔ CLOSED r3154 (`L-266`) — and this line read "★ NEXT" for the whole interval between, in the same document whose station table records the closure (`L-269`'s class, third instance, and the only one inside a single file).*** *Handed to by the quadric bake's `Q4`*: that probe found
 the vantage triple's cross-ratio is the **equianharmonic** $e^{i\pi/3}$, and **equianharmonic $\iff j=0 \iff$
 complex multiplication by $\omega=e^{2\pi i/3}$** — which is the corpus's own $\mathbb{Z}_3$ deck action, the
 three-sheeted cube-root cover, and the $2\pi i\alpha/3$ period. ***The handoff outranks the list order, as at

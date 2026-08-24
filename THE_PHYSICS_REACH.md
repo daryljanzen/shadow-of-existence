@@ -1,8 +1,8 @@
 ---
 name: the-physics-reach
 kind: REFERENCE
-current: r2544+c54.204
-job: The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521, OWE DISCHARGED r2527+c54.202 (two companions remain); ⑥ WALKED r2522 (a one-clause fix, item 48); ⑦ WALKED r2536 (the entropy asymmetry, item 52); **the walk is COMPLETE r2544** per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home.
+current: r3158
+job: The R-P theatre — the corpus's claims across physics, per domain. LIVE: ③④ WALKED r2520 (the Petrov gap is a missing sentence, routed); ⑤ WALKED r2521, OWE DISCHARGED r2527+c54.202 (two companions remain); ⑥ WALKED r2522 (a one-clause fix, item 48); ⑦ WALKED r2536 (the entropy asymmetry, item 52); **the walk is COMPLETE r2544** per THE_PLAN's standing order item ④; registered as L-204. Its ⑥b is L-221's (PO-5's) home. **r3158 (`L-269`): all seven stations STRUCK in `OWED` 609, which had carried every one of them as owed — ①② as "the earliest unrun" — for 614 revisions after this document declared the walk complete; `corpus/check_theatre_currency.py` now holds both theatres against that list.**
 sources: [cowork]
 ---
 
@@ -15,6 +15,39 @@ sources: [cowork]
 > **⌗ Its standing coverage owe is half discharged.** *Station ⑤ flagged $\langle T_{\mu\nu}\rangle$ and
 > trans-Planckian as "both at zero uses"; **re-measured r3095, trans-Planckian is no longer at zero**
 > (P1 and its receipts carry it), while $\langle T_{\mu\nu}\rangle$ still is. Recorded in `OWED`.*
+
+
+## ⛔⛔ AND THE LIST DID NOT LEARN IT — all seven carried as owed, struck r3158 (`L-269`)
+
+**This document has said since r2544 that the walk is complete, and it carries below, for ①② itself, a
+section headed "THE ①② STRIKE — made r2383, and the delay is the finding" recording that the row "read
+NEXT while ①② had already been run" for 578 revisions.** *`OWED` item 609 nevertheless carried all seven
+`R-P` stations as owed, ①② among them still marked as the earliest unrun, until r3158.*
+
+⇒ ***A NOTICE WRITTEN WHERE THE ERROR HAPPENED DOES NOT REACH THE LIST THAT REPEATS IT.*** *This is the
+same failure `L-263` found one theatre across, where `THE_MATHEMATICS_REACH`'s own frontmatter said it
+"carried Ⓕ as owed for forty-eight revisions after its own ① block recorded the answer" — and `OWED`
+carried Ⓕ regardless.* **Ten of the fifteen stations across the two theatres were stale when the gate was
+built. Both theatres had diagnosed the exact failure, in writing, about the exact stations.**
+
+⌗ **So the repair is not the strike — the strike is bookkeeping.** *The repair is
+`corpus/check_theatre_currency.py`, which reads both theatre tables and `OWED`'s station segments every
+run and fails naming any station one side records done and the other carries owed. It reports its parse
+population, because a consistency check that matched nothing would be green forever — and the run that
+caught its own first under-matching regex was the one that printed "1 marked owed" against a list
+plainly carrying seven.*
+
+⚠ **A THIRD INSTANCE, inside one file.** *`THE_MATHEMATICS_REACH`'s candidate-fields list carried Ⓒ as
+"★ NEXT" while that same document's station table recorded Ⓒ closed at r3154. Corrected r3158. The gate
+reads station TABLES and does not reach prose lists, and says so rather than implying more.*
+
+⌷ **And the gate's own first green was false-red for the opposite reason:** *the strike prose must quote
+the stale marker to record what the list said, and the gate read the quotation as a claim — so
+**documenting the fix re-created the failure**. Quoted spans are now removed before the marker is sought,
+with a control that fires every run on a bare marker so the un-quoting cannot go quietly green. That is
+`r3105`'s rule from the other side: not a live register read negatively, but a dead register quoted and
+read as live — **the fifth appearance of mention-versus-use in this line, and the first where the victim
+was the repair itself.***
 
 
 ## ✔✔✔ THE WALK IS COMPLETE r2544 — every station, and the class is six-for-six

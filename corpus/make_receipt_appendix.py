@@ -131,6 +131,46 @@ _partial2 = [c for c in list(_SCRIPT) + list(_RELOP) if c not in _UNI]
 if _partial2:
     raise SystemExit('make_receipt_appendix: the script/relation families are PARTIAL -- '
                      + repr(_partial2))
+#: ⛔⛭ ** THE MARKER VOCABULARY -- ADDED r3158 (`L-270`), AND THE POINT IS THAT IT WAS SURVEYED. **
+#:   *`L-262` made this generator refuse loudly on an untranslatable glyph, and `L-267` recorded a
+#:   revision committed red because the refusal was swallowed by a shell idiom.  Both repairs were
+#:   correct and neither asked the question underneath:* ***how many glyphs are ALREADY in the
+#:   register documents with no translation, waiting for the row that carries them into a build?***
+#:   ⇒ ** Asked, r3158: EIGHTEEN, in 182 occurrences. **  *`⌷` alone appears seventy-one times.*
+#:   ⇒ *** A TRANSLATION TABLE VALIDATED ONLY AGAINST WHAT IT WAS ASKED TO RENDER CARRIES ITS NEXT
+#:       FAILURE ALREADY IN THE TREE. ***  *Every one of the eighteen was a build break scheduled
+#:       for whenever a register row happened to reach for it -- which is how `★` arrived.*
+#:   ⌷ *So the entries below are not a patch for `★`: they are the surveyed vocabulary, and
+#:     `corpus/check_glyph_coverage.py` re-runs that survey as a gate so the set cannot fall behind
+#:     the corpus again.*  ⚠ ** The loud refusal STAYS. **  *A glyph nobody surveyed must still stop
+#:     a build rather than vanish silently -- a table this wide could otherwise swallow meaning.*
+_MARKERS = {
+    # structural bullets: they carry emphasis in the source and render as nothing
+    '\u2337': '', '\u232b': '', '\u25a3': '', '\u2605': '', '\u2316': '', '\u2699': '',
+    '\u2713': '',
+    # things that are actually mathematics and must survive as mathematics
+    '\u27e8': '\\ensuremath{\\langle}',
+    '\u27e9': '\\ensuremath{\\rangle}',
+    '\u27f6': '\\ensuremath{\\longrightarrow}',
+    '\u21d4': '\\ensuremath{\\Leftrightarrow}',
+    '\u222e': '\\ensuremath{\\oint}',
+    '\u2124': '\\ensuremath{\\mathbb{Z}}',
+    '\u2283': '\\ensuremath{\\supset}',
+    '\u03a6': '\\ensuremath{\\Phi}',
+    '\u0127': '\\ensuremath{\\hbar}',
+    '\u0302': '',        # combining circumflex, as U+0303 already is
+    # ⚠ a SMALL CAPITAL B used once as a check-label suffix where the rest of the corpus
+    #   writes the superscript: the same label in a second spelling, which is exactly how a
+    #   family-shaped table gets a hole.  Translated to its family's form, not to nothing.
+    '\u0299': '\\textsuperscript{b}',
+}
+for _k, _v in _MARKERS.items():
+    _UNI.setdefault(_k, _v)
+_partial3 = [c for c in _MARKERS if c not in _UNI]
+if _partial3:
+    raise SystemExit('make_receipt_appendix: the marker vocabulary is PARTIAL -- '
+                     + repr(_partial3))
+
 _partial = [c for c in list(_CIRCLED) + list(_SUPER) if c not in _UNI]
 if _partial:
     raise SystemExit('make_receipt_appendix: the check-label families are PARTIAL again -- '
