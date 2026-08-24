@@ -113,13 +113,31 @@ def main():
     reach = open(os.path.join(ROOT, 'THE_MATHEMATICS_REACH.md'), encoding='utf-8').read()
     NOTICE = 'carried Ⓕ as owed for forty-eight revisions after its own ① block recorded the answer'
     check(f'⓶ the theatre\'s own frontmatter says it: "{NOTICE[:60]}..."', NOTICE in reach)
-    owed = open(os.path.join(ROOT, 'OWED.md'), encoding='utf-8').read()
-    m = re.search(r'Ⓕ the two real forms of \$SO\(6,\\mathbb\{C\}\)\$ ⟐ \*\*owed\*\*', owed)
-    check('⓶ᵇ ⛔ and `OWED` 609 still carries Ⓕ as ⟐ owed, downstream of that notice',
-          m is not None)
+    # ⛔⛭⛭ AMENDED r3156 (`L-268`).  ** THESE TWO CHECKS READ THE LIVE `OWED.md` FOR A CLAIM ABOUT
+    # ** THE STATE THIS RECEIPT'S OWN REVISION CHANGED. **  *r3148 struck Ⓕ in `OWED` 609 -- that is
+    #   what the receipt is FOR -- and the checks then asserted that `OWED` still carried it.*
+    #   ⇒ *** So they were false at the moment they were committed, and no care about the past
+    #       protects against it: the state was changed by the same revision that asserted it. ***
+    #   ⇒ ** The fifth disguise of `L-258`'s class, and the tightest: the earlier four were broken by
+    #     time, by another line's settlement, or by a distance from HEAD.  This one is broken by the
+    #     receipt's own edit, in its own revision. **
+    #   ⇒ ** The claim is about the state BEFORE the strike, so it is read at the PARENT commit; and
+    #     the present is asserted in the opposite direction, which is the direction that says the
+    #     repair landed. **
+    PARENT = '3eb48621'          # the tree as it stood before r3148 struck the three stations
+    owed_was = subprocess.run(['git', '-C', ROOT, 'show', f'{PARENT}:OWED.md'],
+                              capture_output=True, text=True, errors='replace').stdout
+    owed_now = open(os.path.join(ROOT, 'OWED.md'), encoding='utf-8').read()
+    RX = r'Ⓕ the two real forms of \$SO\(6,\\mathbb\{C\}\)\$ ⟐ \*\*owed\*\*'
+    was = re.search(RX, owed_was)
+    check(f'⓶ᵇ ⛔ and at {PARENT} -- before this revision struck it -- `OWED` 609 still carried Ⓕ as '
+          '⟐ owed, downstream of that notice', was is not None)
     check('⓶ᶜ *** so a notice written where the error happened did not reach the list that repeats '
           'it -- the frontmatter corrected itself and nothing carried the correction ***',
-          NOTICE in reach and m is not None)
+          NOTICE in reach and was is not None)
+    check('⓶ᵉ ⛭ and it is struck NOW, which is this receipt landing rather than this receipt '
+          'breaking: the live row says STRUCK r3148 and no longer says owed',
+          re.search(RX, owed_now) is None and 'STRUCK r3148' in owed_now)
     # the span, measured rather than recalled
     walked = subprocess.run(['git', '-C', ROOT, 'log', '--format=%s', '-S', NOTICE,
                              '--', 'THE_MATHEMATICS_REACH.md'], capture_output=True,

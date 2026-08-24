@@ -1,4 +1,11 @@
 
-  RUN-ALL-RECEIPTS -- 631 registered receipt(s), 4 at a time, 400s each, each from ITS OWN DIRECTORY
-  TREE-DIGEST: e2a38f970e9e9e1b
+  RUN-ALL-RECEIPTS -- 633 registered receipt(s), 4 at a time, 400s each, each from ITS OWN DIRECTORY
+  TREE-DIGEST: 43f0e6dfc474e07e
 
+    [FAIL] receipts/L263_the_station_audit/S1_three_of_eight_stations_are_already_held_and_one_was_noticed_and_not_propagated.py  (1s)
+             2 check(s) FAILED /     - ⓶ᵇ ⛔ and `OWED` 609 still carries Ⓕ as ⟐ owed, downstream of that notice /     - ⓶ᶜ *** so a notice written where the error happened did not reach the list that repeats it -- the frontmatter corrected itself and nothing carried the
+
+  632 pass, 1 fail, 0 over timeout, in 763s wall
+  slowest that passed: P16_validate_bbn.py 206s, Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py 176s, A1_a_rule_made_of_spellings_misses_the_next_spelling.py 136s, P15_the_second_arm_actually_run.py 136s, I10_the_constraint_propagation_is_symmetry_free.py 125s
+
+  ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.
