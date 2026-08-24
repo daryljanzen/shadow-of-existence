@@ -167,11 +167,14 @@ def main():
     print('  PART 2 -- ⛔⛔ THE BITE: FIVE REAL FORMS, NOT FOUR')
     print('  ==========================================================================')
     p13 = RB.BODIES_TEX['P13']
-    check('⓶ P13 states the enumeration and the conclusion in its own words: "two of the four real '
-          'forms of the one complex group" and "the unique real form of $\\SO(6,C)$ that admits '
-          '$\\su(3)$ at all"',
-          'four real forms of the one complex group' in p13
-          and 'unique real form of' in p13 and 'that admits' in p13)
+    # ** CORRECTED r3329.  This pinned the DEFECT's wording, and P13 has since been repaired on the
+    #    strength of this very bake -- so the check now asserts the FIX.  Pinning a defect makes a
+    #    receipt fail the moment its own finding lands, which is the wrong way round. **
+    check('⓶ P13 now states the enumeration correctly -- FIVE real forms, with so*(6) named -- and '
+          'scopes the conclusion to the forms the construction reaches',
+          'five real forms of the one complex group' in p13
+          and 'SO^{*}(6)' in p13
+          and 'What the construction reaches is what settles the question' in p13)
     print('      real form        ≅            dim   maximal compact dim   ≥ 8 ?')
     forms = {}
     for (pq, name, iso) in (((4, 0), 'su(4)  ', 'so(6) compact'),
