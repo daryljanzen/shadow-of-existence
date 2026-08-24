@@ -4,6 +4,10 @@
 \small\noindent Each computation marked \rcptmarker\ in the text is verified by a runnable receipt in the \texttt{receipts/} directory that ships with this work; status \textsf{OK} = verified (traced, run, output matches the claim). This appendix is generated from the receipt index, not maintained by hand.\par\medskip
 \begingroup\renewcommand{\arraystretch}{1.25}
 \begin{description}
+\item[\label{rcpt:P15_the_sky_phase_fit_and_its_uncertainty}\texttt{P15\_the\_sky\_phase\_fit\_and\_its\_uncertainty}]\hfill\textsf{[OK]}\\
+\textit{sec:intro} \ (FITS the sky's acoustic phase from the peak positions and PROPAGATES its uncertainty: \$\textbackslash\{\}ell\_n=\textbackslash\{\}ell\_A(n+\textbackslash\{\}phi/\textbackslash\{\}pi)\$ on 220.4, 537.7, 817.3 returns \$\textbackslash\{\}phi/\textbackslash\{\}pi=-0.2405\$ against the paper's \$-0.2404\$, and the control's 0.0043 offset is seven parts in a thousand of the 0.615 disagreement.  The quoted \$\textbackslash\{\}sigma\textbackslash\{\}simeq0.008\$ is the TWO-multipole value; one multipole gives 0.0046 and twice the separation -- so the paper's figure is the CONSERVATIVE end, and the sentence now says which assumption it carries). 
+\emph{Computes:} least-squares fit; Monte-Carlo propagation at one and two multipoles
+\ \emph{Run:} \texttt{python3 receipts/P15\_CR\_cosmology/P15\_the\_sky\_phase\_fit\_and\_its\_uncertainty.py}
 \item[\label{rcpt:P15_verify_geometry}\texttt{P15\_verify\_geometry}]\hfill\textsf{[OK]}\\
 \textit{prop:flat / prop:throat / prop:transmission} \ (three geometric props DERIVED from primitives: (a1) const-tau 3-metric dr\textasciicircum{}2+r\textasciicircum{}2 dOmega\textasciicircum{}2 has Riemann=0 (flat R\textasciicircum{}3); (a2) Nariai near-horizon dS\_2 x S\textasciicircum{}2, f(r\_star)=f'(r\_star)=0, f''=-2Lambda, both radii 1/sqrt(Lambda); (a4) tortoise integrals simple->log(exp) vs double->power-law). 
 \emph{Computes:} Riemann from Christoffels; Nariai conds from f; two tortoise integrals; checks intrinsically discriminating
