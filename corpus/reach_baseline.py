@@ -20,6 +20,16 @@ flattened), and answers two questions a bake must ask first:
     `permutation representation` ×1 looked like an opening and is P14 citing the flavour literature.*
     ⇒ ** The instrument's job is to make you LOOK, not to decide. **
 
+⛔⛭⛭ ** AND THIS FILE READS THE PAPERS ONLY, WHICH IS HALF THE CORPUS (r3180, `L-281`). **
+  *The gate this instrument was built on says a bake must know what the corpus already holds --
+  and the corpus does not hold its adjudications only in the papers.  It holds them in 637
+  RECEIPTS, and a receipt is where a question is SETTLED before a paper ever carries it.*
+  ⇒ *** TWO BAKES OF THIS LINE TURNED ON AN OPERATOR WHOSE TREATMENT WAS FIXED AT r2819 AND
+      VERDICTED AT r2825, CONSULTING NEITHER.  Both came out right BY INHERITANCE, and nothing
+      in either procedure would have caught a drift -- one line's did. ***
+  ⌷ ** So run `corpus/prior_art.py` BESIDE this, before a bake asserts anything. **  *The papers
+    say what the corpus PUBLISHES; the receipts say what it has already DECIDED.*
+
     python3 corpus/reach_baseline.py 'Atiyah' 'Fredholm' 'limit-point'
     python3 corpus/reach_baseline.py --context 'Fredholm'
 
