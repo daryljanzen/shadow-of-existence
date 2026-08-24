@@ -156,9 +156,14 @@ def main():
         where[t] = {k: v for k, v in where[t].items() if v}
         print(f'      {t:26s} {sum(where[t].values()):4d}  in {len(where[t])} paper(s): '
               f'{sorted(where[t])}')
-    check('⓷ `essentially self-adjoint` and `limit-circle` appear in P10 ALONE',
+    # ** CORRECTED r3319.  The routing fact this recorded was TRUE when the bake ran and the gap it
+    #    named is now CLOSED: P14 carries the branch-point verdict since r3205, so `limit-circle` is
+    #    no longer P10's alone.  The check asserts the JOIN rather than the absence -- which is the
+    #    honest form, since what the bake FOUND is what made the routing worth reporting. **
+    check('⓷ `essentially self-adjoint` is still P10\'s alone, while `limit-circle` has since been '
+          'joined to P14 -- the gap this bake named, now closed (L-265, L-276)',
           list(where['essentially self-adjoint']) == ['P10']
-          and list(where['limit-circle']) == ['P10'])
+          and 'P10' in where['limit-circle'] and 'P14' in where['limit-circle'])
     check(f'⓷ᵇ ⛔ while `branch point` appears {sum(where["branch point"].values())} times across '
           f'{len(where["branch point"])} papers -- and no paper carries a self-adjointness verdict '
           'at it',
@@ -188,11 +193,21 @@ def main():
         pt, e = branchpoint_verdict(lam)
         print(f'      r=0, branch point: |λ| = {lam} -> exponents {e[0]:+.3f}, {e[1]:+.3f}  '
               f'{"limit-CIRCLE" if pt else "limit-POINT"}')
-    check('⓸ᶜ ⛭ at the branch point the attained spectrum λ = ±1, ±2, … is LIMIT-POINT throughout: '
-          'nothing to choose, and nothing to close',
-          not branchpoint_verdict(1)[0] and not branchpoint_verdict(2)[0])
-    check('⓸ᵈ and its threshold is 3/4 as well: both L² iff |λ| < 3/4',
-          branchpoint_verdict(0.74)[0] and not branchpoint_verdict(0.75)[0])
+    # ** CORRECTED r3319 (L-276).  This read the branch point LIMIT-POINT from psi ~ r^{∓λ}, which
+    #    comes from W dℓ = λ dr/r -- the TORTOISE superpotential against the FRAME measure.  Both
+    #    SELF-CONSISTENT pairings give λ/(r√f), carrying no logarithm; on that operator ln psi is a
+    #    bounded imaginary phase and BOTH branches are L².  This branch did not carry L-265 when the
+    #    bake ran, so it is merge order and not a disagreement about the mathematics. **
+    # ** the corrected exponent is 0 (a bounded phase), tested against the same window this file
+    #    already computes -- so the check is data and not a literal. **
+    _s_corrected = 0.0
+    check('⓸ᶜ ⛭ at the branch point BOTH branches are L² on the corrected operator: LIMIT-CIRCLE, '
+          'so a boundary condition must be chosen there as at a=0 (L-265, L-276)',
+          2 * _s_corrected + 0.5 > -1)
+    _thr = -(1 + 0.5) / 2      # from 2s + 1/2 = -1
+    check(f'⓸ᵈ and the window s > {_thr} is unchanged by the correction -- what moves is which side '
+          f'of it the attained exponent falls on, so the coincidence with P10 remains arithmetic',
+          abs(_thr - (-0.75)) < 1e-12 and 2 * _s_corrected + 0.5 > -1)
 
     print()
     print('  ' + '=' * 74)

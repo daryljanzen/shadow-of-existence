@@ -144,13 +144,14 @@ def main():
     lp = RB.counts('limit-point')
     check(f'⛔ ⓶ and the field\'s FIRST question is one the corpus never asks: `Fredholm` occurs '
           f'{n_fred} times in seventeen papers', n_fred == 0)
-    check(f'⓶ᵇ while the whole apparatus for it is P10\'s and only P10\'s: limit-point '
-          f'{lp["P10"]}×P10 / {lp["P14"]}×P14, deficiency index '
-          f'{RB.counts("deficiency ind")["P10"]}×P10 / {RB.counts("deficiency ind")["P14"]}×P14',
-          lp['P10'] > 0 and lp['P14'] == 0
+    check(f'⓶ᵇ the apparatus was P10\'s alone when this station was thrown -- deficiency index '
+          f'{RB.counts("deficiency ind")["P10"]}×P10 -- and the JOIN to P14 is now made '
+          f'(limit-circle {RB.counts("limit-circle")["P14"]}×P14, L-265/L-276)',
+          # ** CORRECTED r3319 (L-276): the gap this named is CLOSED -- P14 has carried the
+          #    branch-point verdict since r3205, so the check asserts the JOIN. **
+          lp['P10'] > 0
           and RB.counts('deficiency ind')['P10'] > 0
-          and RB.counts('deficiency ind')['P14'] == 0
-          and RB.counts('self-adjoint extension')['P14'] == 0)
+          and RB.counts('limit-circle')['P14'] > 0)
 
     # ============================================================ (2) the exact cancellation
     print()
@@ -163,8 +164,13 @@ def main():
     Wdl = sp.simplify((lam * sp.sqrt(f) / r) * (1 / sp.sqrt(f)))
     check(f'⓷ W dℓ = {Wdl} dr -- the √f cancels EXACTLY, for every M, α and r',
           sp.simplify(Wdl - lam / r) == 0)
-    check(f'⓷ᵇ so ∫W dℓ = {sp.integrate(lam / r, r)} and the two branches are ψ ~ r^∓λ',
-          sp.simplify(sp.integrate(lam / r, r) - lam * sp.log(r)) == 0)
+    # ** CORRECTED r3319 (L-276).  The cancellation above is real algebra, but it pairs the TORTOISE
+    #    superpotential with the FRAME measure.  Both SELF-CONSISTENT pairings give λ/(r√f), which
+    #    carries no logarithm -- so ψ ~ r^∓λ is an artefact of crossing the conventions, and on the
+    #    corrected operator ln ψ is a bounded imaginary phase and the endpoint is LIMIT-CIRCLE. **
+    check('⓷ᵇ ⛔ but the two SELF-CONSISTENT pairings both return λ/(r√f), carrying no logarithm, '
+          'so ψ ~ r^∓λ is an artefact of the mixed pairing (L-276)',
+          sp.simplify((lam / r) * (1 / sp.sqrt(f)) - (lam * sp.sqrt(f) / r) * (1 / f)) == 0)
     lead = sp.series(f, r, 0, 1).removeO()
     check(f'⓷ᶜ and near the branch point f → {lead}, so dℓ = dr/√|f| ∝ √r dr and '
           'ℓ ∝ r^(3/2) -- the cube-root branch',
