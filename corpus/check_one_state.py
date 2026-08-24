@@ -42,7 +42,11 @@ PATTERNS = [
      r'|\bis (?:withdrawn|here revised|accordingly withdrawn|withdrawn (?:here|to the))\b'
      r'|\ban earlier (?:reading|pass|version|form|formulation)\b'
      r'|\bthis paper (?:stated|claimed|read|previously)\b'
-     r'|\bthat (?:reading|statement|figure) (?:is|was) (?:withdrawn|wrong)\b'),
+     r'|\bthat (?:reading|statement|figure) (?:is|was) (?:withdrawn|wrong)\b'
+     r'|\bwe withdraw\b|\bwithdraw it in those terms\b'
+     r'|\bwe record the \w+ against ourselves\b'
+     r'|\bthe paragraph (?:after next|below) corrects\b'
+     r'|\bwhat they were taken to mean\b|\bunder another name\b'),
     ('a repair or its occasion',
      r'\bhad to be (?:removed|corrected|added|restored)\b'
      r'|\bprompted the check\b|\bfor it to work\b'
