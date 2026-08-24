@@ -97,7 +97,7 @@ Five stations, walked in four revisions:*
 |---|---|
 | **Ⓓ** Galois theory | ⌫ *already held* — `rem:galois`, found r1882 |
 | **Ⓕ** representation theory | ✔ **walked by `F13`, verified r2442** — and **this frontmatter carried it as owed for forty-eight revisions afterward** |
-| **Ⓒ** complex analysis / monodromy | ⛭ **BIT** — the equianharmonic curve's $\mathrm{Aut}=\mathbb Z_6$ (cyclic) where the cover carries $S_3$ (non-abelian): **same order, not isomorphic** |
+| **Ⓒ** complex analysis / monodromy | ⛭⛭ **CLOSED r3154 (`L-266`) on the question `M1` left open — "nothing here exhibits an action".** *It acts: $\mathrm{Aut}(A_2)=D_6$ has **exactly three** order-six subgroups, and the unique cyclic one is $\langle$deck $\mathbb Z_3\rangle\times\langle\gamma^5\rangle$ — the two data P14 says descend, against the within-state Weyl $S_3$.* ⛔ *And the dial has a **third** reading nobody named: the two $S_3$-type subgroups differ by whether a root transposition carries a chirality flip — and P13's own "$\sigma$ exchanges a pair **within** a sign-half" excludes the twisted one.* ⌗ *What remains: the two $\mathbb Z_2$ factors (elliptic involution against ruling exchange) are not identified.* ⌗ *Prior reading, kept: same order, not isomorphic.* |
 | **Ⓗ** the $\gamma^5$-graded index | ⛭⛭ **THROWN r3150 (`L-264`) — and it BIT.** *The traced prerequisite is computable and the computation is a **Weyl limit-point test**: $W\,d\ell = \lambda\,dr/r$ exactly, the branches are $\psi\sim r^{\mp\lambda}$, both are $L^2$ at the branch point iff $\lvert\lambda\rvert<\tfrac34$, and the attained spectrum $\lambda=\pm1,\pm2,\dots$ misses that window entirely — so the operator is essentially self-adjoint there and **no boundary condition exists to be chosen**. Compactness made the index finite; this makes it CANONICAL.* ⌗ *`Fredholm` ×0 in seventeen papers was the baseline; the apparatus is `P10`'s and had never been joined to `P14`.* ⌗ *Prior reading, kept: a DECLARED gap, the tool being the equivariant/orbifold index — which is the tool for the FULL index and not for its prerequisite.* |
 | **Ⓖ** Lie algebroids | ⛭⛭ **THROWN r3152 (`L-265`) — AND THE SEQUENCE IS THE OBJECT.** *The caveat this row carried — "P12's algebroid is the constraint algebra's and not a bundle's" — is right in general and wrong here: the action algebroid of $G$ on $G/H$ **is** the Atiyah algebroid of $G\to G/H$. `ker(anchor)` = $\mathfrak h$ = P12's "cut-fixing isotropy" (`kernel` ×0 in P12); `im` = $\mathfrak m$ the "cut-deforming coset"; and P12's "section of the bundle that would select a definite flow" **is the splitting**. And its closure test $[\mathfrak m,\mathfrak m]\subset\mathfrak h$ **is** that splitting's curvature computation — one computation, run once and read twice, the curvature being the substrate's own Riemann tensor.* ⌗ *The structure is in `Mackenzie2005`, which P12 already cites.* |
 
@@ -122,6 +122,19 @@ paper, with its standard reference already cited there.*
     half-generalised probe invents a bite, and a vocabulary survey invents a hole.** *Both are caught
     the same way — by reading the passage the count points at, which is what `reach_baseline.py`'s
     `--context` is for and why its own head says a count is not a verdict.*
+
+⛔⛭⛭ **AND A THIRD METHOD NOTE, forced by Ⓒ's run on this file's own instrument (r3154, `L-266`).**
+*A baseline survey for `Aut(A_2)` returned **zero** while the object appears **thirty-four times across
+seven papers**, because the corpus writes `\mathrm{Aut}(A_2)` and the macro's closing brace splits the
+term.*
+  ⇒ ***A COUNT CAN FAIL TO BE ABOUT ITS TERM AT ALL*** — *the sharper form of "a count is not a
+    verdict", and `L-263`'s instrument did it to `L-263`'s own author one revision later.*
+  ⇒ **`reach_baseline` now runs every survey twice, raw and de-macroed, and FLAGS any term whose
+    de-macroed count is higher.** *Stations Ⓖ and Ⓗ were re-verified against it: every zero they
+    rested on is still zero, so neither finding was a macro artefact.*
+  ⌗ ***So the three failure modes this theatre has now met are: a probe that manufactures a bite (Ⓗ),
+    a vocabulary survey that manufactures a hole (Ⓖ), and a survey that is not about its term at all
+    (Ⓒ).  All three are caught by reading the passage the count points at.***
 
 **⇒⇒ AND THE THREE THAT BIT ARE ONE KNOT:** *Ⓒ asks **which group acts**; Ⓗ **needs that group** for an equivariant
 index; Ⓖ supplies the **sequence in which "which group" and "what connection" are the same question**, since
