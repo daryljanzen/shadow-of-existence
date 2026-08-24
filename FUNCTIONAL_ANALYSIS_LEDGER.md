@@ -72,7 +72,7 @@ are not counted alike, here or in the register.***
 | boundary | coefficient | exponents | verdict |
 | --- | --- | --- | --- |
 | $a=0$, scale factor | $\gamma = 1/4$ | $-0.207,\;+1.207$ | **limit-CIRCLE** — a boundary condition must be chosen, and `P10` spends a section closing it |
-| $r=0$, branch point | any attained $\lambda$ | $0,\;0$ (a bounded phase) | **limit-CIRCLE** — a boundary condition must be chosen here too ⛔ *CORRECTED r3319 by `L-276`: the $-1.5,+2.5$ came from $\psi\sim r^{\mp\lambda}$, which follows from the TORTOISE superpotential against the FRAME measure; both self-consistent pairings give $\lambda/(r\sqrt f)$ and $\ln\psi$ is a bounded imaginary phase* |
+| $r=0$, branch point | the positive integers | $-1.5,\;+2.5$ | **limit-POINT** — nothing to choose, and nothing to close. ⛭ *UPHELD r3339 against `L-265`/`L-276`, which read it limit-circle from $\sqrt f$ on one side of the zero-mode equation. `B67` (F5, r2825) and `S3` (r2819): $\sqrt f$ is an OVERALL FACTOR and cancels, so the index is real $\pm\lambda$ whatever the sign of $f$.* |
 
 ⇒ ***So the corpus's own epistemic criterion — that an unforced parameter makes a family rather than a
 world — BITES at one boundary and is SILENT at the other, for a reason. That contrast is the sharpest

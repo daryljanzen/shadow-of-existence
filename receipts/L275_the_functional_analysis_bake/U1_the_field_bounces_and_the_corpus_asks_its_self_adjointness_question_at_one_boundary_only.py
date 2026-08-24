@@ -151,7 +151,7 @@ def main():
     print('  PART 3 -- ⛔⛭ THE ONE THING IT RETURNS: ONE BOUNDARY ASKED, THE OTHER NOT')
     print('  ==========================================================================')
     where = {}
-    for t in ('essentially self-adjoint', 'limit-circle', 'branch point'):
+    for t in ('essentially self-adjoint', 'limit-circle', 'limit-point', 'branch point'):
         where[t] = {p: len(re.findall(re.escape(t), b, re.I)) for p, b in B.items()}
         where[t] = {k: v for k, v in where[t].items() if v}
         print(f'      {t:26s} {sum(where[t].values()):4d}  in {len(where[t])} paper(s): '
@@ -161,9 +161,11 @@ def main():
     #    no longer P10's alone.  The check asserts the JOIN rather than the absence -- which is the
     #    honest form, since what the bake FOUND is what made the routing worth reporting. **
     check('⓷ `essentially self-adjoint` is still P10\'s alone, while `limit-circle` has since been '
-          'joined to P14 -- the gap this bake named, now closed (L-265, L-276)',
+          'joined to P14 at the UPHELD limit-point verdict -- the gap this bake named, now closed (B67)',
+          # ** r3339: the verdict is UPHELD (B67) and the routing gap is closed -- P14 carries
+          #    limit-POINT at the branch point.  Assert the join at the right verdict. **
           list(where['essentially self-adjoint']) == ['P10']
-          and 'P10' in where['limit-circle'] and 'P14' in where['limit-circle'])
+          and 'P10' in where['limit-point'] and 'P14' in where['limit-point'])
     check(f'⓷ᵇ ⛔ while `branch point` appears {sum(where["branch point"].values())} times across '
           f'{len(where["branch point"])} papers -- and no paper carries a self-adjointness verdict '
           'at it',

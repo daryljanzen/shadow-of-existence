@@ -144,14 +144,15 @@ def main():
     lp = RB.counts('limit-point')
     check(f'⛔ ⓶ and the field\'s FIRST question is one the corpus never asks: `Fredholm` occurs '
           f'{n_fred} times in seventeen papers', n_fred == 0)
-    check(f'⓶ᵇ the apparatus was P10\'s alone when this station was thrown -- deficiency index '
-          f'{RB.counts("deficiency ind")["P10"]}×P10 -- and the JOIN to P14 is now made '
-          f'(limit-circle {RB.counts("limit-circle")["P14"]}×P14, L-265/L-276)',
-          # ** CORRECTED r3319 (L-276): the gap this named is CLOSED -- P14 has carried the
-          #    branch-point verdict since r3205, so the check asserts the JOIN. **
-          lp['P10'] > 0
-          and RB.counts('deficiency ind')['P10'] > 0
-          and RB.counts('limit-circle')['P14'] > 0)
+    check(f'⓶ᵇ the apparatus was P10\'s alone when this station was thrown, and P14 now carries the '
+          f'same verdict: limit-point '
+          f'{lp["P10"]}×P10 / {lp["P14"]}×P14, deficiency index '
+          f'{RB.counts("deficiency ind")["P10"]}×P10 / {RB.counts("deficiency ind")["P14"]}×P14',
+          # ** r3339: the routing gap this recorded is now CLOSED and the verdict it records is
+          #    UPHELD.  P14 carries `limit-point` at the branch point since r3339, on B67's
+          #    zero-mode equation -- so the check asserts the JOIN while keeping the finding. **
+          lp['P10'] > 0 and lp['P14'] > 0
+          and RB.counts('deficiency ind')['P10'] > 0)
 
     # ============================================================ (2) the exact cancellation
     print()

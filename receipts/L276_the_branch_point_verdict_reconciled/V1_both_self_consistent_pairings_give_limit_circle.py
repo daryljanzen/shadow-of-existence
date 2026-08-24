@@ -1,57 +1,26 @@
-r"""L-276 -- the two branch-point verdicts reconciled: LIMIT-CIRCLE stands, and the disagreement is
-about which measure the superpotential belongs to, not about any algebra.
+r"""L-276 -- WITHDRAWN r3339.  ** THIS RECEIPT'S CONCLUSION IS WRONG AND THE CORPUS HAD ALREADY
+DECIDED AGAINST IT TWICE. **
 
-** THE COLLISION. **  *** `L-264`/`K1` (r3150) and `L-275` (r3168) read the branch point LIMIT-POINT,
-from branches psi ~ r^{∓λ} whose L² window is |λ| < 3/4 and whose attained spectrum λ = ±1, ±2, …
-misses it.  `L-265` (r3205) reads it LIMIT-CIRCLE, both branches L², deficiency (1,1).  They cannot
-both stand. ***
+*** It concluded LIMIT-CIRCLE from d(ln psi)/dr = lambda/(r sqrt f) -- sqrt f on ONE side of the
+zero-mode equation.  B67 (r2825, a formal F5 verdict) and S3 (r2819) both hold that sqrt f is an
+OVERALL FACTOR: the equation is (sqrt f d/dr - lambda sqrt f/r) psi = 0, so sqrt f CANCELS before any
+branch can be chosen and the index is real +-lambda whatever the sign of f. ***
 
-  ⌗ *Node 54's branch did not carry `L-265` when `L-275` was written, so this is merge order and not
-    a disagreement about the mathematics.*
+** The substitution test settles it and needs no reduction: ** on psi' = (lambda/r) psi the exponent
+r^(+lambda) solves IDENTICALLY, while r^(i lambda) and this receipt's exp(-i lambda sqrt(2/M) sqrt r)
+both leave nonzero residuals.  *Verified here before the withdrawal was written.*
 
-** WHAT IS NOT IN DISPUTE. **  *** K1's step ``W dℓ = λ dr/r exactly'' is ALGEBRAICALLY CORRECT given
-its inputs: with W = λ√f/r and dℓ = dr/√f the √f cancels, and ∫λ dr/r = λ ln r gives r^{∓λ}.  Nothing
-is wrong with that computation. ***  The question is only whether those two inputs go together.
+⇒ ** THE VERDICT IS LIMIT-POINT, ** as L-264/K1 and L-275/U1 had it.  P14 is reverted, both receipts
+are restored at the upheld verdict, and OWED 625 is corrected.
 
-** THEY DO NOT, AND THE TEST NEEDS NO PHYSICS INPUT. **  *** A superpotential and a measure are not
-independently choosable: W is defined with respect to a variable, and dℓ must be that variable's
-measure.  There are exactly two self-consistent pairings, and BOTH RETURN THE SAME THING: ***
-
-    frame W = λ/r        with  dℓ = dr/√f   ->   λ/(r√f)
-    tortoise W = λ√f/r   with  dr_* = dr/f  ->   λ/(r√f)
-
-  *** Only the MIXED pairing -- tortoise W against the frame measure -- returns λ/r.  So the
-  logarithm, and hence the power law, is an artefact of crossing the two conventions. ***  That is
-  the same mispairing struck at `PO-22` (r3110, r3113) and removed from `P14`'s three remaining sites
-  at r3140.
-
-⛭ ** AND ON THE CORRECTED OPERATOR THE VERDICT IS LIMIT-CIRCLE, COMPUTED HERE. **
-
-    d(ln psi)/dr = λ/(r√f),  and near the throat f -> -2M/r, so √f = i√(2M/r)
-    => d(ln psi)/dr = -i λ /√(2 M r),  which INTEGRATES to  ln psi = -i λ √(2/M) √r
-
-  *** The exponent is purely imaginary and vanishes at the origin: |psi| -> const, a BOUNDED PHASE
-  on both branches.  So ∫|psi|² dℓ ~ ∫√(r/2M) dr converges at r = 0 for BOTH, which is the
-  limit-circle condition. ***
-
-** WHAT FOLLOWS, AND IT IS LARGER THAN EITHER SIDE DREW. **  *** `L-275` reports the corpus's two
-boundaries as carrying OPPOSITE verdicts -- a = 0 limit-circle with a section spent closing it,
-r = 0 limit-point with nothing to choose -- and reads that contrast as the sharpest thing the corpus
-could say about its boundaries.  On the corrected operator the two are the SAME: both limit-circle,
-both requiring a boundary condition.  So the corpus's own criterion, that an unforced parameter makes
-a family rather than a world, bites at BOTH boundaries and is silent at neither. ***
-
-  ⌗ *And `L-275`'s 3/4 coincidence survives the correction unchanged*: the branch point's window is
-    still s > -3/4 on a density in dℓ with an exponent gap of three, and the scale factor's is still
-    √(γ+¼) = 1 on exponents ½±ν in dx with a gap of two.  What changes is which side of the window
-    the attained exponent falls on, not the window.  *The coincidence is still arithmetic and still
-    worth disowning.*
-
-WHAT IS NOT CLAIMED.  Not that K1's arithmetic is wrong -- it is right on its own inputs.  Not that
-the deficiency indices are computed here in the full first-order system: what is established is that
-both solutions are square-integrable in the leaf norm at r = 0, which is the limit-circle condition.
-Not that the extension is identified; that stays open (`OWED 623`).
+⌗ ** AND THE METHOD FAILURE IS THE PART WORTH KEEPING. **  L-265 and this receipt surveyed the PAPERS
+and found the branch point carried no verdict.  The corpus decides in its RECEIPTS -- fourteen of them
+name this operator, eight in `L221_the_bridge`, including B60 "one operator, the fork does not exist".
+*Node 54 built `corpus/prior_art.py` after making the same error from the other side.  The rule: ask
+the receipts, not only the papers -- what the corpus publishes and what it has already decided are
+different sets.*
 """
+
 import sys
 
 import sympy as sp
@@ -123,4 +92,6 @@ print()
 print('  ⛭ ** LIMIT-CIRCLE STANDS.  Both self-consistent pairings agree, only the mixed one carries')
 print('     the logarithm, and on the corrected operator ln ψ is a bounded imaginary phase.  So the')
 print('     corpus\'s two boundaries are the SAME and not opposite, and its criterion bites at both. **')
+print()
+print('  ⛔ WITHDRAWN r3339 -- see the docstring.  The verdict is LIMIT-POINT (B67, S3).')
 sys.exit(0)
