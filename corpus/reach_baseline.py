@@ -94,6 +94,37 @@ def counts(term, ci=True, tex=False):
     return {p: len(re.findall(re.escape(term), b, fl)) for p, b in sorted(src.items())}
 
 
+#: ⛔⛭⛭ ** ADDED r3164 (`L-273`): THE COUNT IS A SUBSTRING COUNT, AND IT HAS MANUFACTURED A HOLE
+#:   THREE TIMES IN ONE SESSION. **
+#:   * *`field_survey`'s first run put `information theory` fourth in the corpus on `bit` x253,
+#:     matching inside `orbit` and `arbitrary`; as a WORD it is x0.*
+#:   * *The same run reported `norm` x118, matching inside `normal`.*
+#:   * *The Cartan bake's apparatus sweep reported `G-structure` x1 -- matching inside
+#:     `breakin**g-structure**`, in a sentence about symmetry breaking.*
+#:   ⇒ *** A substring count is the RIGHT default for this instrument's own question -- "does this
+#:       phrase occur at all" -- and the WRONG one for "how much does the corpus use this word".
+#:       Both are wanted, so both are reported. ***
+#:   ⌷ ** The flag is the mirror of the DE-MACROED one already here: ** *where the de-macroed count
+#:     being HIGHER means a macro is hiding real uses, the word-bounded count being LOWER means the
+#:     substring is inventing them, and a bake must see the difference before it calls anything a
+#:     hole.*
+_WORDC = {}
+
+
+def word_counts(term, ci=True, tex=False):
+    """{paper: n} counting the term as WORDS -- the count a FIELD question wants"""
+    key = (term, ci, tex)
+    if key in _WORDC:
+        return _WORDC[key]
+    src = BODIES_TEX if tex else BODIES
+    lead = r'\b' if re.match(r'\w', term) else ''
+    tail = r'\b' if re.search(r'\w$', term) else ''
+    pat = re.compile(lead + re.escape(term) + tail, re.I if ci else 0)
+    out = {p: len(pat.findall(b)) for p, b in src.items()}
+    _WORDC[key] = out
+    return out
+
+
 def survey(terms, ci=True):
     print()
     print(f'  {"term":44s} total  where')
@@ -103,9 +134,19 @@ def survey(terms, ci=True):
         tot = sum(c.values())
         ct = counts(t, ci, tex=True)
         tot_t = sum(ct.values())
+        wc = word_counts(t, ci)
+        wct = word_counts(t, ci, tex=True)
+        tot_w = max(sum(wc.values()), sum(wct.values()))
         rows.append((t, tot, c, tot_t))
         where = ' '.join(f'{p}×{n}' for p, n in c.items() if n)
         print(f'  {t[:44]:44s} {tot:5d}  {where[:120]}')
+        if tot_w < max(tot, tot_t):
+            # ** the mirror of the DE-MACROED flag: the substring is INVENTING uses **
+            ww = ' '.join(f'{p}×{n}' for p, n in
+                          (wct if sum(wct.values()) >= sum(wc.values()) else wc).items() if n)
+            print(f'  {"":44s} {tot_w:5d}  ⚠ WORD-BOUNDED: {ww[:106] if ww else "(none)"}')
+            print(f'  {"":44s}        *the substring is matching inside longer words -- this is not '
+                  f'a count of the term*')
         if tot_t > tot:
             # ** the flag that stops a macro from manufacturing a hole **
             wt = ' '.join(f'{p}×{n}' for p, n in ct.items() if n)

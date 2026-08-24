@@ -144,23 +144,11 @@ NOTABLE = 40
 #:   ⇒ ** A SURVEY THAT LOOSENS THE MATCH ITS PREDECESSOR TIGHTENED REPORTS A DIFFERENT CORPUS. **
 #:     *Counted word-bounded below, on the de-macroed bodies, with the loose count kept beside it so
 #:     the size of the correction is visible rather than quietly absorbed.*
-_WORD = {}
-
-
-def word_counts(term, tex=True):
-    """{paper: n} counting the term as WORDS, not as a substring"""
-    key = (term, tex)
-    if key in _WORD:
-        return _WORD[key]
-    src = RB.BODIES_TEX if tex else RB.BODIES
-    # a term may itself contain punctuation (`chi^2`, `Einstein--Hilbert`); \b is wrong at a
-    # non-word edge, so the boundary is asserted only where the term's own edge is a word character
-    lead = r'\b' if re.match(r'\w', term) else ''
-    tail = r'\b' if re.search(r'\w$', term) else ''
-    pat = re.compile(lead + re.escape(term) + tail, re.I)
-    out = {p: len(pat.findall(b)) for p, b in src.items()}
-    _WORD[key] = out
-    return out
+#: ⌗ ** r3164: the word-bounded count now lives in `reach_baseline` and is IMPORTED. **
+#:   *This file carried its own copy for two revisions.  A second implementation of the
+#:   same rule is a second thing to keep in step, and the class of defect it guards
+#:   against -- a gate restating the rule it guards -- is `L-272`'s own finding.*
+word_counts = RB.word_counts
 
 
 def field_total(terms):

@@ -1,22 +1,44 @@
 ---
 name: the-weave
 kind: REFERENCE
-current: r2825+c54.232
-current: r2713+c54.215
+current: r3164
 job: How the parts are one object — the per-paper orchestration grid and the record of what joins to what
 ---
 
+## ⛭⛭ PROPAGATED r3164 — TWO CROSS-PAPER CHAINS THE BAKES MADE VISIBLE
+
+**⌗ `check_grains` named this document twenty revisions behind. What a field bake returns that no
+single paper does is a JOIN, so the weave grain is where two of these belong.**
+
+- **THE MONODROMY CHAIN: `P05` → `P07` → `P14`, and it is one object.** *`P05` computes the Nariai
+  monodromy and the residue pairing's Klein four-group holonomy (`prop:monodromy`,
+  `rem:monodromy-group`); `P07` adjoins it to close the Weyl group of $\so(6,\mathbb{C})$; `P14`
+  carries the same closure into the fermion sector as "substrate-derived rather than assumed".*
+  ⇒ ***`L-273` recomputed the whole chain from a cubic and a square root and confirmed it — then showed
+  the group is what ANY one-parameter cubic gives, so the join's weight sits on the rank-three match
+  and not on the cubic.*** ⌗ *Three papers, one computation, and the bake is what read it as one.*
+- **THE INFERENCE CHAIN: `P06` ↔ `P15`, and they never meet.** *`P06` states `A5.5` as an empirical
+  claim needing a sampled reference class; `P15` does the corpus's only substantial statistical work —
+  likelihoods, $\chi^2$, a matched $\Lambda$CDM control.* ⇒ ***`L-271` found the discipline `P15`
+  practises is exactly the discipline `A5.5` needs, and that neither paper cites the other on it.***
+  ⌗ *A join that exists in method and nowhere in text.*
+- ⚠ **AND A DEFECT IN THIS DOCUMENT, FOUND WHILE PROPAGATING: it carried TWO `current:` lines in its
+  own frontmatter** — *`r2825+c54.232` and `r2713+c54.215`.* ⇒ **A document whose currency marker is
+  duplicated has no currency marker.** *Repaired r3164; the later of the two kept.*
+
+
+
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r3124
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r4000
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
-> **⌗ NOT COVERED — STRUCK since r2417 (110 rows):**
-> `L-150` `L-174` `L-176` `L-177` `L-178` `L-179` `L-180` `L-181` `L-182` `L-183` `L-184` `L-185` `L-186` `L-187` `L-188` `L-189` `L-190` `L-191` `L-192` `L-193` `L-194` `L-195` `L-196` `L-197` `L-198` `L-199` `L-200` `L-201` `L-203` `L-204` `L-206` `L-207` `L-210` `L-211` `L-213` `L-214` `L-215` `L-216` `L-217` `L-219` `L-220` `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-231` `L-232` `L-233` `L-234` `L-235` `L-236` `L-237` `L-238` `L-239` `L-241` `L-243` `L-244` `L-246` `L-247` `L-248` `L-249` `L-250` `L-251` `L-252` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-520` `L-521` `L-522` `L-523` `L-535` `L-536` `L-537` `L-538` `L-539` `L-800` `L-801` `L-802` `L-803` `L-804` `L-805` `L-806` `L-807` `L-808` `L-809` `L-810` `L-811` `L-814` `L-816`
+> **⌗ NOT COVERED — STRUCK since r2417 (131 rows):**
+> `L-150` `L-174` `L-176` `L-177` `L-178` `L-179` `L-180` `L-181` `L-182` `L-183` `L-184` `L-185` `L-186` `L-187` `L-188` `L-189` `L-190` `L-191` `L-192` `L-193` `L-194` `L-195` `L-196` `L-197` `L-198` `L-199` `L-200` `L-201` `L-203` `L-204` `L-206` `L-207` `L-210` `L-211` `L-213` `L-214` `L-215` `L-216` `L-217` `L-219` `L-220` `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-231` `L-232` `L-233` `L-234` `L-235` `L-236` `L-237` `L-238` `L-239` `L-241` `L-243` `L-244` `L-246` `L-247` `L-248` `L-249` `L-250` `L-251` `L-252` `L-253` `L-254` `L-255` `L-256` `L-257` `L-258` `L-259` `L-260` `L-261` `L-262` `L-263` `L-264` `L-265` `L-266` `L-267` `L-268` `L-269` `L-270` `L-271` `L-272` `L-273` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-520` `L-521` `L-522` `L-523` `L-535` `L-536` `L-537` `L-538` `L-539` `L-800` `L-801` `L-802` `L-803` `L-804` `L-805` `L-806` `L-807` `L-808` `L-809` `L-810` `L-811` `L-814` `L-816`
 >
-> **⌗ NOT COVERED — OPENED since r2417 (84 rows):**
-> `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-240` `L-242` `L-245` `L-246` `L-247` `L-248` `L-249` `L-250` `L-251` `L-252` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-519` `L-520` `L-521` `L-522` `L-523` `L-524` `L-525` `L-526` `L-527` `L-528` `L-529` `L-530` `L-531` `L-532` `L-533` `L-534` `L-535` `L-536` `L-537` `L-538` `L-539` `L-541` `L-542` `L-543` `L-544` `L-545` `L-546` `L-547` `L-800` `L-801` `L-802` `L-803` `L-804` `L-805` `L-806` `L-807` `L-808` `L-809` `L-810` `L-811` `L-814` `L-816` `L-825`
+> **⌗ NOT COVERED — OPENED since r2417 (105 rows):**
+> `L-222` `L-223` `L-224` `L-225` `L-226` `L-227` `L-228` `L-229` `L-230` `L-231` `L-233` `L-234` `L-240` `L-242` `L-245` `L-246` `L-247` `L-248` `L-249` `L-250` `L-251` `L-252` `L-253` `L-254` `L-255` `L-256` `L-257` `L-258` `L-259` `L-260` `L-261` `L-262` `L-263` `L-264` `L-265` `L-266` `L-267` `L-268` `L-269` `L-270` `L-271` `L-272` `L-273` `L-500` `L-501` `L-502` `L-503` `L-504` `L-505` `L-506` `L-507` `L-508` `L-509` `L-510` `L-511` `L-512` `L-513` `L-514` `L-515` `L-516` `L-517` `L-518` `L-519` `L-520` `L-521` `L-522` `L-523` `L-524` `L-525` `L-526` `L-527` `L-528` `L-529` `L-530` `L-531` `L-532` `L-533` `L-534` `L-535` `L-536` `L-537` `L-538` `L-539` `L-541` `L-542` `L-543` `L-544` `L-545` `L-546` `L-547` `L-800` `L-801` `L-802` `L-803` `L-804` `L-805` `L-806` `L-807` `L-808` `L-809` `L-810` `L-811` `L-814` `L-816` `L-825`
 >
 > ⌗ ***The ID half is machine-checked against the register; run `regen_grain_currency.py --check`. The prose half below is a JUDGEMENT and is written by hand — the script preserves it verbatim and never invents it, because a gate can check a declaration and not a judgement.***
 
