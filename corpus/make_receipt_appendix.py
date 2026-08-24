@@ -82,6 +82,36 @@ _UNI={'§':r'\S{}','°':r'\ensuremath{^\circ}','¹':r'\textsuperscript{1}','²':
 # ** before pdflatex would have. **
 'Ⓐ':'(A)', 'Ⓑ':'(B)', 'Ⓒ':'(C)', 'Ⓓ':'(D)', 'Ⓔ':'(E)', 'Ⓕ':'(F)', 'Ⓖ':'(G)', 'Ⓗ':'(H)',
 'Ⓘ':'(I)', 'Ⓙ':'(J)', 'Ⓚ':'(K)', 'Ⓛ':'(L)', 'Ⓜ':'(M)', 'Ⓝ':'(N)', 'Ⓞ':'(O)', 'Ⓟ':'(P)'}
+# ⛔⛭⛭ ADDED r3144 (`L-262`): ** THE MAP COVERED PART OF A CONVENTION THE CORPUS USES WHOLE. **
+# *The circled check numerals above stop at `⓹` and the superscript check suffixes (`ᵃ ᵇ ᶜ ᵈ ᵉ ᶠ`)
+# are absent entirely, while every receipt in the corpus labels its checks `⓵`..`⓾` with exactly
+# those suffixes.  The gap surfaced only when an INDEX row happened to use `⓺ᶜ`, and the generator
+# then refused to produce `appendix_receipts_corpus.tex` at all.*
+#   ⇒ *** A TRANSLATION TABLE THAT COVERS PART OF A FAMILY FAILS ON THE REST OF IT, at whatever
+#       later moment someone uses the rest -- `L-252`'s half-covered class-fix reached through a
+#       map instead of a script, and `check_row_matchers`' one-spelling hole reached through a
+#       table.  The two entries above (`⓵`-`⓹`, `①`-`⑤`) are each half of a family. ***
+#   ⇒ ** So the families are GENERATED rather than listed, and the guard below fails at import if
+#     either is ever partial again -- which is the difference between a fix and a fix that holds. **
+_CIRCLED = {chr(0x24F5 + _i): '(' + str(_i + 1) + ')' for _i in range(10)}    # ⓵..⓾
+_CIRCLED.update({chr(0x2460 + _i): '(' + str(_i + 1) + ')' for _i in range(20)})  # ①..⑳
+_SUPER = {'\u1d43': r'\textsuperscript{a}', '\u1d47': r'\textsuperscript{b}',
+          '\u1d9c': r'\textsuperscript{c}', '\u1d48': r'\textsuperscript{d}',
+          '\u1d49': r'\textsuperscript{e}', '\u1da0': r'\textsuperscript{f}',
+          '\u1d4d': r'\textsuperscript{g}', '\u02b0': r'\textsuperscript{h}',
+          '\u2071': r'\textsuperscript{i}', '\u02b2': r'\textsuperscript{j}',
+          '\u1d4f': r'\textsuperscript{k}', '\u02e1': r'\textsuperscript{l}',
+          '\u1d50': r'\textsuperscript{m}', '\u207f': r'\textsuperscript{n}'}
+for _k, _v in {**_CIRCLED, **_SUPER}.items():
+    _UNI.setdefault(_k, _v)
+_partial = [c for c in list(_CIRCLED) + list(_SUPER) if c not in _UNI]
+if _partial:
+    raise SystemExit('make_receipt_appendix: the check-label families are PARTIAL again -- '
+                     + repr(_partial) + ' have no _UNI translation.  A table that covers part of '
+                     'a family fails on the rest of it, later, in whoever regenerates.')
+
+
+
 def tex_escape(s):
     for a,b in _ASCII: s=s.replace(a,b)      # phase 1: ASCII specials -> text escapes
     for a,b in _UNI.items(): s=s.replace(a,b)      # phase 2: unicode -> LaTeX (inserted after, not re-escaped)

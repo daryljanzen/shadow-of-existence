@@ -1,11 +1,15 @@
 
-  RUN-ALL-RECEIPTS -- 626 registered receipt(s), 4 at a time, 400s each, each from ITS OWN DIRECTORY
-  TREE-DIGEST: 9f463a5482d9ed75
+  RUN-ALL-RECEIPTS -- 627 registered receipt(s), 4 at a time, 400s each, each from ITS OWN DIRECTORY
+  TREE-DIGEST: bc85928c25579a24
 
-    [FAIL] receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_narrating_its_own_history.py  (40s)
-           ============================================================================== /   1 check(s) FAILED /     - ⓹ᶜ ⌗ and only HALF of it is enforceable here, which is said rather than assumed: the other line adopting the odd half is a REQUEST that has been made and is not presumed answered
+    [FAIL] receipts/L253_the_seed_that_stopped_seeding/S1_a_seed_that_stops_constructing_its_defect_accuses_the_gate_it_defends.py  (50s)
+               OK    ⓻ᵇ and the head is corrected in place and says why, rather than being quietly restated /   1 check(s) FAILED /     -    ⓹ᶜ R1_the_registry_was_checked_from_citations_inward_so exits 1
+    [FAIL] receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py  (99s)
+               OK    ⓺ᵈ and the gate is green: exits 0 /   1 check(s) FAILED /     - ⛔ ⓷ *** AND ALL THREE NOW EXIT 0 AFTER r3125 PINNED BOTH ENDS: {'R1_a_protected_row_was_corrupt_for': 0, 'M1_the_merge_of_my_own_revision_du': 0, 'R1_
+    [FAIL] receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_rows_were_read_by_nothing.py  (28s)
+               OK    ⛔ A SEED LEFT IN A LIVE RECEIPT SINCE r2682+c54.212 -- MY OWN HAND -- landed at 962a9390 and has failed P16's monodromy receipt for ~90 commits, absorbed into the failure list and triaged by nobody as a SEED /     OK    ⇒ REMOVED, and restored to the r2682^ text: c54.213's rule was "VERIFY
 
-  625 pass, 1 fail, 0 over timeout, in 886s wall
-  slowest that passed: P16_validate_bbn.py 266s, Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py 207s, P15_the_second_arm_actually_run.py 161s, I10_the_constraint_propagation_is_symmetry_free.py 153s, A1_a_rule_made_of_spellings_misses_the_next_spelling.py 152s
+  624 pass, 3 fail, 0 over timeout, in 888s wall
+  slowest that passed: P16_validate_bbn.py 259s, Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py 217s, P15_the_second_arm_actually_run.py 167s, A1_a_rule_made_of_spellings_misses_the_next_spelling.py 163s, I10_the_constraint_propagation_is_symmetry_free.py 154s
 
   ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.
