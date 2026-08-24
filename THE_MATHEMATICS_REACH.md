@@ -14,6 +14,36 @@ sources: [cowork]
 > `THE_FRONTIER.md`.***
 
 
+## ⛔⛭⛭ THE STATION AUDIT, r3148 (`L-263`) — THREE OF EIGHT ARE ALREADY HELD, NOT TWO
+
+*`OWED` 609 gates this theatre on the P11–P17 read, and states the reason: **"a bake against a corpus
+that cannot say what it already holds returns findings it owns."**  Its evidence is `L-203`'s own
+audit, which found two stations held in the papers.  ⇒ **Audited before throwing: there are three.***
+
+| station | verdict | where it is held |
+|---|---|---|
+| **Ⓑ** the forced triple angle | ⌫ **STRUCK r3148** | `P3` `rem:dimension` — *"available in four spacetime dimensions and, with a caveat, in five; in no other"* |
+| **Ⓓ** Galois of the energy family | ⌫ **STRUCK r3148** | `P5` `rem:galois` — the horizon cubic's Galois group over $\mathbb{C}(2M)$ |
+| **Ⓕ** the real forms of $SO(6,\mathbb{C})$ | ⛔ **STRUCK r3148 — THE THIRD** | `P13`, with the argument entire: four real forms; $\su(3)$ compact of dimension eight; $\so(4,2)$ and $\so(3,3)$ excluded on dimension; $\so(5,1)$'s $\so(5)$ too small because $\su(3)$'s smallest faithful real representation is six-dimensional; **the compact form the unique host** |
+
+**⛔ AND Ⓕ WAS DIAGNOSED IN WRITING, IN THIS FILE'S OWN HEAD, AND THE DIAGNOSIS DID NOT PROPAGATE.**
+*The frontmatter above says: "this frontmatter carried Ⓕ as owed for forty-eight revisions after its
+own ① block recorded the answer."*
+  ⇒ ***So the document identified the exact bookkeeping error, about the exact station, wrote it down
+      where the error happened — and the downstream list still carried Ⓕ as owed at r3122.***
+  ⇒ **A NOTICE WRITTEN WHERE THE ERROR HAPPENED DOES NOT REACH THE LIST THAT REPEATS IT.** *The
+    frontmatter corrected itself; nothing carried the correction outward.*
+
+**⌗ AND THE READINESS GATE IS A MEASUREMENT, SO IT IS NOW AN INSTRUMENT RATHER THAN A WAIT.**
+*609 blocks the theatres "by readiness, not dependency" — readiness meaning the corpus can say what
+it already holds, which is something one measures.*  ⇒ **`corpus/reach_baseline.py`** *surveys the
+seventeen paper BODIES (comment headers and bibliography stripped) for a bake's terms before the bake
+asserts anything.*  ⌗ ***It earned itself twice on the audit that installed it: `equivariant index`
+×7 read as a hole in this file's prose and is `P13` using the Atiyah–Hirzebruch obstruction;
+`permutation representation` ×1 read as an opening and is `P14` citing the discrete-flavour
+literature.***  ⇒ **A count is not a verdict; the instrument's job is to make a reader look.**
+
+
 ## ⛭⛭⛭ TWO FIELDS THREW BACK A *NEGATIVE* AND IT WAS THE SAME NEGATIVE — added c54.208
 
 *This theatre sifts what BITES. c54.207 threw two fields at `PO-5` and one at `PO-9`, and what came back is worth
