@@ -40,7 +40,8 @@ PATTERNS = [
     ('a prior state of the paper',
      r'\b(?:was|were|had been)\s+(?:withdrawn|revised|corrected|wrong|too (?:wide|strong|weak))\b'
      r'|\bis (?:withdrawn|here revised|accordingly withdrawn|withdrawn (?:here|to the))\b'
-     r'|\ban earlier (?:reading|pass|version|form|formulation)\b'
+     r'|\ban earlier (?:reading|pass|version|form|formulation|statement)\b'
+     r'|\bas earlier stated\b|\bas (?:previously|formerly) stated\b'
      r'|\bthis (?:paper|section) (?:stated|claimed|read|carried|previously)\b'
      r'|\bbefore the \w+ was run\b|\bthe older \w+[- ]analytic\b'
      r'|\bthat (?:reading|statement|figure) (?:is|was) (?:withdrawn|wrong)\b'
