@@ -169,12 +169,16 @@ def main():
           'occur in seventeen papers',
           h['Fredholm'] == 0 and h['graded index'] > 0 and h['Atiyah--Singer'] > 0
           and h['traced rather than computed'] > 0)
-    check('⓷ᶜ ⌗ and the machinery for it EXISTS in the corpus and is never joined to it: the '
-          'limit-point/limit-circle apparatus is P10\'s, entirely, and P14 -- which carries the '
-          'index -- has none of it',
-          RB.counts('limit-point')['P10'] > 0 and RB.counts('limit-point')['P14'] == 0
-          and RB.counts('deficiency ind')['P10'] > 0
-          and RB.counts('self-adjoint extension')['P14'] == 0)
+    # ** r3249 (node 57): THE GAP THIS CHECK RECORDED IS NOW CLOSED, and the check is rewritten to
+    #    say so rather than to keep asserting the absence.  Station Ⓗ made the join (L-264, r3150),
+    #    57's L-265 corrected its verdict to LIMIT-CIRCLE at r3205, and P14 now carries that
+    #    statement with a self-adjoint extension named as owed (OWED 622).  What the audit FOUND --
+    #    that the apparatus was P10's alone and unjoined -- is what made the station worth throwing. **
+    check('⓷ᶜ ⌗ the machinery EXISTS in the corpus as P10\'s deficiency-index apparatus, and the '
+          'join to P14 -- which carries the index -- IS NOW MADE: P14 states the branch point '
+          'limit-circle and names the extension as owed',
+          RB.counts('deficiency ind')['P10'] > 0
+          and RB.counts('limit-circle')['P14'] > 0)
     check('⓷ᵈ and Ⓒ is not owed as a station -- the theatre records it as BIT and `L-203`/`M1` '
           'carries the finding',
           os.path.exists(os.path.join(ROOT, 'receipts', 'L203_reach_stations',

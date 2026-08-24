@@ -2,4 +2,4 @@
 # ⇒ *** When this number changes, a node must re-read every row against the new withdrawal:
 #     a register that tracked the first reading is stale in a way no check on the current
 #     text can see. ***
-1
+0
