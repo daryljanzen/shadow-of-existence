@@ -228,6 +228,44 @@ Euler R/2). Each field-bake yields three things:
   as owed rather than left implicit: P4's redshift-isotropy inference, and Bayesian model comparison —
   which needs the transfer function `P15` says is open, not a statistical technique.*
 
+## ⛭⛭ RE-SURVEYED r3162 (`L-272`) — AND A SURVEY IS AN INSTRUMENT OR IT IS A MEMORY
+
+**The table below was surveyed ONCE, at r1890.** *P11 through P17, the whole `c54` fork and the
+fermion sector have never been asked its question — the question this document itself says paid:*
+***"The survey asked two things: which listed fields are unbaked, and which used fields are unlisted.
+The second found more."*** ⇒ **Re-run as `corpus/field_survey.py`, with the eight already-thrown
+fields carried as CONTROLS so a clean sheet cannot be blindness. All eight are re-found.**
+
+⛔ **THREE PASSES WERE NEEDED BEFORE THE LIST COULD BE TRUSTED, AND EACH REORDERED THE TOP.**
+
+| pass | what it corrected | the cost of not doing it |
+| --- | --- | --- |
+| **substring → word** | `bit` ×253 was matching inside `orbit` and `arbitrary`; `norm` ×118 inside `normal` | ***`information theory` led the list at ×285 and is ×29 word-bounded — TENTH.*** `catastrophe theory` fell from first to seventh. **And the r1890 header stated the condition itself: "word-bounded and keys stripped."** |
+| **word → sense** | four of the top seven led on a homonym | `constraint` ×138 is the HAMILTONIAN constraint · `genus` ×21 is this corpus's species/genus taxonomy of metric singularities · `closure` ×100 is a theorem closing and the Galois closure · `character` ×67 is *causal* character |
+| **sense → already-thrown** | two candidates were answered by earlier bakes, which no count can see | catastrophe theory by the ODE bake (r1911, `D4`) — `P07` states outright *"The word fold is used here in its bifurcation-theoretic sense"*; the OPERATOR half of spectral theory by station Ⓗ (`L-264`) |
+
+### ⌗ THE ORDERED LIST — what is outstanding, measured
+
+| | field | word-bounded | why it is where it is |
+| --- | --- | --- | --- |
+| **1** | ***Cartan / connections and holonomy*** | ×84 | **Every occurrence load-bearing:** *"the algebroid connection, the genuine base-variation of the structure"*, *"holonomy in $\so(4,1)$"*, *"the bundle is flat. Flat holonomy supplies exact selection rules and no curvature"*, *"holonomy is precisely the complete invariant a flat bundle has"* — and a `P14` receipt named `the_flat_bundle_cannot_carry_a_force`. ⛭ **Station Ⓖ threw the ALGEBROID half (`L-265`, the Atiyah sequence); the connection-and-holonomy half was never thrown.** Bears on the fermion sector, `OWED` 611 |
+| **2** | ***harmonic analysis*** | ×39 net | *The HARMONIC half specifically, the operator half being Ⓗ's.* `P15`: *"the discrete closed-$S^3$ spectrum projected through the flat spherical Bessel"* — **a live computation, and it is Sturm–Liouville on a sphere.** Bears on `PO-13`, the one open register row |
+| **3** | ***functional analysis / unitarity*** | ×88 net | `unitary` ×36 · `domain` ×32 once the false `closure` is removed. *Overlaps Ⓗ, but the UNITARITY half is station ⑩'s territory and is separate* |
+| **4** | *representation theory* | ×65 net | **Real but partly discharged:** *Ⓕ was struck as already held in `P13`, and `P13`/`P14` do their own.* ⇒ *Wants a targeted probe, not a full bake* |
+
+**⛔ REFUSED OR DISCHARGED, WHICH IS DATA.** *`convexity / optimisation` — **REFUSED**: 99% of its
+vocabulary count is one homonym, so it is not a field this corpus uses, and that is a verdict rather
+than an omission. `catastrophe / singularity theory` — **discharged** by the ODE bake.
+`algebraic geometry` — **thin**: ×33 real and mostly the cubic discriminant the Galois work holds.
+`number theory` ×31, `information theory` ×29, `integrable systems` ×33, `numerical analysis` ×20,
+`differential topology / index theory` ×19 (and it is Ⓗ's), `probability` ×6 — all below the line.*
+
+⚠ **WHAT THE INSTRUMENT CANNOT DO, stated rather than implied.** *A vocabulary is a proxy for a
+field, so a field the corpus uses under names not in its list is invisible here — **which is exactly
+the defect that hid category theory for ninety revisions.** The vocabularies are written out in full
+in the survey so they can be argued with, and a refusal is a refusal ON THIS MEASUREMENT.*
+
+
 ## ★★★ THE HOLES — fields the corpus USES and this list does not carry as fields (surveyed r1890)
 
 *⛭ **The neutrino/lepton items found at r1919–r1920 are PHYSICS, not mathematics, and live in `THE_PHYSICS_REACH` under ⑥. Moved there r1921** — they were briefly misfiled here.*
