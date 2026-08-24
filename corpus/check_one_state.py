@@ -43,7 +43,8 @@ PATTERNS = [
      r'|\ban earlier (?:reading|pass|version|form|formulation)\b'
      r'|\bthis paper (?:stated|claimed|read|previously)\b'
      r'|\bthat (?:reading|statement|figure) (?:is|was) (?:withdrawn|wrong)\b'
-     r'|\bwe withdraw\b|\bwithdraw it in those terms\b'
+     r'|\bwe withdraw\b|\bwithdraw it in those terms\b|\bare withdrawn\b'
+     r'|\ban earlier statement\b|\bneither is reproduced\b'
      r'|\bwe record the \w+ against ourselves\b'
      r'|\bthe paragraph (?:after next|below) corrects\b'
      r'|\bwhat they were taken to mean\b|\bunder another name\b'),
