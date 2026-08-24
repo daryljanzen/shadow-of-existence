@@ -1,7 +1,7 @@
 ---
 name: involution-real-forms-ledger
 kind: FORWARD
-current: r3174
+current: r3176
 job: The involution / real-forms field-bake ledger — what bit, what bounced, and the boundary. The field `L-277`'s unclaimed-surface probe named, and the first bake not drawn from a pre-existing list. `OWED` 622.
 sources: [cowork]
 ---
@@ -88,9 +88,50 @@ what the surrounding argument is about, and then neither the count nor the claim
 do it**, since its maximal compact contains $\su(3)$ outright.*
 
 
+## ⛔⛭⛭ SECOND PROBE r3176 (`L-279`) — $\so(4,2)$ IS THE SUBSTRATE'S OWN DUAL
+
+*Opened on the smallest number in the field: `symmetric space` ×8 across seventeen papers, against
+a programme whose central object $\mathrm{dS}_5=\SO(5,1)/\SO(4,1)$ **is** a symmetric space and
+whose defining datum **is** an involution — named ×198, while the thing it defines is named ×8.*
+
+**Verified from scratch.** *Conjugation by the reflection in a spacelike point is an involutive
+automorphism of $\so(5,1)$; its fixed set has dimension 10 with six compact directions —
+$\so(4,1)$ — and $\mathfrak{m}$ has dimension 5, with all three symmetric-pair relations holding.*
+⌗ *The last of them, $[\mathfrak{m},\mathfrak{m}]\subset\mathfrak{h}$, is `P12`'s own from station
+Ⓖ (`L-265`), recomputed here only as the premise the duality needs and **not claimed as new**.*
+
+**And the dual is $\so(4,2)$.**
+
+| | result |
+| --- | --- |
+| $\mathfrak{h}\oplus i\mathfrak{m}$ | closes under bracket; **7 compact directions** |
+| the five forms, by maximal compact | $\so(6)$ 15 · $\so(5,1)$ 10 · $\so^*(6)$ 9 · **$\so(4,2)$ 7** · $\so(3,3)$ 6 |
+| $\so(4,2)$ rebuilt independently | dim 15, 7 compact; an involution with fixed set $\so(4,1)$ (dim 10, six compact), $[\mathfrak{m},\mathfrak{m}]\subset\mathfrak{h}$ |
+| dualising back | returns 10 — $\so(5,1)$. **The duality is involutive, checked both ways** |
+
+⇒ ***$\so(4,2)/\so(4,1)$ is $\mathrm{AdS}_5$. It shares the substrate's isotropy subalgebra exactly
+and is reached from it by the standard duality.***
+
+⛔ **So `P13` lists the substrate's own dual among "the others".** *Its exclusion is arithmetically
+right — maximal compact 7, $\su(3)$ needs 8 — and answers the question it asks.* ⇒ **What goes
+unremarked is that the form is not an arbitrary sibling but the substrate's other side.**
+
+⛭⛭ **AND THIS CLOSES THE BOUNDARY THE FIRST BAKE LEFT OPEN.** *`L-278` said outright: "that
+$\so^*(6)$ arises in the construction — **this bake did not determine that**."* ⌗ *Both structural
+routes out of the substrate are now computed — the Wick rotation
+$\mathfrak{k}\oplus\mathfrak{p}\to\mathfrak{k}\oplus i\mathfrak{p}$ and the symmetric duality
+$\mathfrak{h}\oplus\mathfrak{m}\to\mathfrak{h}\oplus i\mathfrak{m}$ — and they produce $\so(6)$ and
+$\so(4,2)$.* ⇒ ***Neither produces $\so^*(6)$, so repair (a) has a computed basis and the reachable
+set can be NAMED rather than gestured at: $\so(5,1)$, $\so(6)$, $\so(4,2)$.***
+
+⚠ *What that does NOT establish: that $\so^*(6)$ is unreachable in principle. It is a statement
+about two routes, not a proof of impossibility, and the ledger says so rather than letting the
+convenient reading stand.*
+
+
 ## ⌗ THE BOUNDARY — what this bake did not reach
 
-- **Whether $\so^*(6)$ arises in the construction at all.** *If it does not, repair (a) is right and
+- ~~**Whether $\so^*(6)$ arises in the construction at all.**~~ **ANSWERED r3176 (`L-279`) as far as the two structural routes go — see the second probe above.** *Original entry, kept: if it does not, repair (a) is right and
   cheap. **This bake did not determine that** — it is a question about the construction, not about the
   Lie theory, and answering it from the algebra alone would be exactly the overreach the ledger format
   exists to prevent.*
@@ -98,7 +139,7 @@ do it**, since its maximal compact contains $\su(3)$ outright.*
   $\sigma$ are assembled into $\mathrm{Aut}(A_2)=D_6$ by the papers already. **Whether $\xi$ commutes
   with $\sigma$, and what the two generate together, is unasked here** — it is a real question and it
   is named rather than half-answered.*
-- **`symmetric space` ×8.** *The corpus's central coset $\mathrm{dS}_5=\SO(5,1)/\SO(4,1)$ is a symmetric
+- ~~**`symmetric space` ×8.**~~ **THROWN r3176 (`L-279`).** *Original entry, kept: the corpus's central coset $\mathrm{dS}_5=\SO(5,1)/\SO(4,1)$ is a symmetric
   space, whose defining datum is an involution — and the phrase appears eight times in seventeen
   papers. Not thrown here; noted as the obvious next probe in this field.*
 
