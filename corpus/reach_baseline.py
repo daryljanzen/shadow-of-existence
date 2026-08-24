@@ -63,10 +63,35 @@ def bodies():
 
 BODIES = bodies()
 
+#: ** ⛔⛭⛭ THE DE-MACROED VIEW, ADDED r3154 (`L-266`) BECAUSE THIS FILE PRODUCED A FALSE HOLE ON
+#: ITSELF. **  *A survey for `Aut(A_2)` returned ZERO while the object appears ten times, because the
+#: corpus writes it `\mathrm{Aut}(A_2)` and the macro's closing brace splits the term.*
+#:   ⇒ *** A COUNT CAN FAIL TO BE ABOUT ITS TERM AT ALL.  The instrument's head already said a count
+#:       is not a verdict; this is the sharper case, where the count is not even a count of the
+#:       thing asked for. ***
+#:   ⇒ ** So every survey is run twice — raw, and with one-argument font and emphasis macros
+#:     replaced by their argument — and `survey` FLAGS any term whose de-macroed count is higher. **
+_MACRO = re.compile(r'\\(?:mathrm|mathbb|mathcal|mathfrak|mathsf|text|textbf|textit|emph|operatorname)'
+                    r'\{([^{}]*)\}')
 
-def counts(term, ci=True):
+
+def demacro(s, rounds=3):
+    """replace `\mathrm{X}` and its siblings by `X`, repeatedly for nested wrappers"""
+    for _ in range(rounds):
+        s2 = _MACRO.sub(r'\1', s)
+        if s2 == s:
+            break
+        s = s2
+    return s
+
+
+BODIES_TEX = {p: demacro(b) for p, b in BODIES.items()}
+
+
+def counts(term, ci=True, tex=False):
     fl = re.I if ci else 0
-    return {p: len(re.findall(re.escape(term), b, fl)) for p, b in sorted(BODIES.items())}
+    src = BODIES_TEX if tex else BODIES
+    return {p: len(re.findall(re.escape(term), b, fl)) for p, b in sorted(src.items())}
 
 
 def survey(terms, ci=True):
@@ -76,9 +101,17 @@ def survey(terms, ci=True):
     for t in terms:
         c = counts(t, ci)
         tot = sum(c.values())
-        rows.append((t, tot, c))
+        ct = counts(t, ci, tex=True)
+        tot_t = sum(ct.values())
+        rows.append((t, tot, c, tot_t))
         where = ' '.join(f'{p}×{n}' for p, n in c.items() if n)
         print(f'  {t[:44]:44s} {tot:5d}  {where[:120]}')
+        if tot_t > tot:
+            # ** the flag that stops a macro from manufacturing a hole **
+            wt = ' '.join(f'{p}×{n}' for p, n in ct.items() if n)
+            print(f'  {"":44s} {tot_t:5d}  ⚠ DE-MACROED: {wt[:110]}')
+            print(f'  {"":44s}        *a LaTeX macro is splitting this term -- the raw count is not '
+                  f'a count of it*')
     print()
     return rows
 

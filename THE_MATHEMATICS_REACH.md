@@ -97,6 +97,9 @@ Five stations, walked in four revisions:*
 |---|---|
 | **Ⓓ** Galois theory | ⌫ *already held* — `rem:galois`, found r1882 |
 | **Ⓕ** representation theory | ✔ **walked by `F13`, verified r2442** — and **this frontmatter carried it as owed for forty-eight revisions afterward** |
+| **Ⓒ** complex analysis / monodromy | ⛭⛭ **CLOSED r3154 (`L-266`) on the question `M1` left open — "nothing here exhibits an action".** *It acts: $\mathrm{Aut}(A_2)=D_6$ has **exactly three** order-six subgroups, and the unique cyclic one is $\langle$deck $\mathbb Z_3\rangle\times\langle\gamma^5\rangle$ — the two data P14 says descend, against the within-state Weyl $S_3$.* ⛔ *And the dial has a **third** reading nobody named: the two $S_3$-type subgroups differ by whether a root transposition carries a chirality flip — and P13's own "$\sigma$ exchanges a pair **within** a sign-half" excludes the twisted one.* ⌗ *What remains: the two $\mathbb Z_2$ factors (elliptic involution against ruling exchange) are not identified.* ⌗ *Prior reading, kept: same order, not isomorphic.* |
+| **Ⓗ** the $\gamma^5$-graded index | ⛭⛭ **THROWN r3150 (`L-264`) — and it BIT.** *The traced prerequisite is computable and the computation is a **Weyl limit-point test**: $W\,d\ell = \lambda\,dr/r$ exactly, the branches are $\psi\sim r^{\mp\lambda}$, both are $L^2$ at the branch point iff $\lvert\lambda\rvert<\tfrac34$, and the attained spectrum $\lambda=\pm1,\pm2,\dots$ misses that window entirely — so the operator is essentially self-adjoint there and **no boundary condition exists to be chosen**. Compactness made the index finite; this makes it CANONICAL.* ⌗ *`Fredholm` ×0 in seventeen papers was the baseline; the apparatus is `P10`'s and had never been joined to `P14`.* ⌗ *Prior reading, kept: a DECLARED gap, the tool being the equivariant/orbifold index — which is the tool for the FULL index and not for its prerequisite.* |
+| **Ⓖ** Lie algebroids | ⛭⛭ **THROWN r3152 (`L-265`) — AND THE SEQUENCE IS THE OBJECT.** *The caveat this row carried — "P12's algebroid is the constraint algebra's and not a bundle's" — is right in general and wrong here: the action algebroid of $G$ on $G/H$ **is** the Atiyah algebroid of $G\to G/H$. `ker(anchor)` = $\mathfrak h$ = P12's "cut-fixing isotropy" (`kernel` ×0 in P12); `im` = $\mathfrak m$ the "cut-deforming coset"; and P12's "section of the bundle that would select a definite flow" **is the splitting**. And its closure test $[\mathfrak m,\mathfrak m]\subset\mathfrak h$ **is** that splitting's curvature computation — one computation, run once and read twice, the curvature being the substrate's own Riemann tensor.* ⌗ *The structure is in `Mackenzie2005`, which P12 already cites.* |
 | **Ⓒ** complex analysis / monodromy | ⛭ **BIT** — the equianharmonic curve's $\mathrm{Aut}=\mathbb Z_6$ (cyclic) where the cover carries $S_3$ (non-abelian): **same order, not isomorphic** |
 | **Ⓗ** the $\gamma^5$-graded index | ⛭⛭ **THROWN r3150 (`L-264`) — and it BIT.** *The traced prerequisite is computable and the computation is a **Weyl limit-point/limit-circle test**. That framing is the result and it stands.* ⛔ **AND THE VERDICT INVERTS ON THE CORRECTED OPERATOR — r3205, `L-265`.** *`L-264` reads $W\,d\ell=\lambda\,dr/r$, which is the TORTOISE superpotential $\lambda\sqrt f/r$ against the FRAME measure $dr/\sqrt f$ — the pairing struck at `PO-22` (r3110, r3113) and removed from `P14`'s last three sites at r3140. Both correct pairings give $\lambda/(r\sqrt f)$, carrying no logarithm.* ⇒ *Near the throat $W\to-i\lambda/\sqrt{2Mr}$ diverges as $r^{-1/2}$ — so it dominates any spectral parameter and the verdict is $z$-independent — while $\int W\,d\ell=-i\lambda r/2M$ stays **bounded**, so $\lvert\psi\rvert\to$ const on BOTH branches and $\int\lvert\psi\rvert^2 d\ell\sim\int\sqrt r\,dr$ converges for both, in `L-264`'s own measure and against its own $s>-\tfrac34$ window.* ⛭ ***THE THROAT IS LIMIT-CIRCLE, deficiency $(1,1)$: a boundary condition EXISTS and must be chosen.*** *Compactness makes the index FINITE — `L-264`'s own sentence — and what makes it CANONICAL is a CHOICE, which is physics. The station is SHARPENED rather than thrown, and the open item is WHICH self-adjoint extension the geometry selects (`OWED 622`), with the bead's $R$ the natural candidate. Nothing touches the count of three.* ⌗ *`Fredholm` ×0 in seventeen papers was the baseline; the apparatus is `P10`'s and had never been joined to `P14`.* ⌗ *Prior reading, kept: a DECLARED gap, the tool being the equivariant/orbifold index — which is the tool for the FULL index and not for its prerequisite.* |
 | **Ⓖ** Lie algebroids | ⛭ **BIT** — P12 holds algebroid, anchor and connection and **zero "Atiyah sequence"**, which is exactly the structure relating those three |
@@ -112,6 +115,31 @@ $\{4,5\}$ exactly, **caveat at five included**.*
     the signal is worth exactly as much as the completeness of the generalisation behind it.***
   ⌗ *Completing it — the angular spectrum moves too, and faster — removes the restriction entirely.*
 
+⛭⛭ **AND Ⓖ's RUN ADDS A SECOND METHOD NOTE, of the opposite shape to Ⓗ's (r3152, `L-265`).**
+*Ⓗ's danger was a probe that manufactured a convergence. Ⓖ's is the reverse: a station recorded as an
+ABSENCE — "zero Atiyah sequence" — where the structure was present under four other names, in one
+paper, with its standard reference already cited there.*
+  ⇒ ***AN ABSENCE FOUND BY VOCABULARY IS AN ABSENCE OF THE VOCABULARY.*** *The word count was right —
+    `Atiyah sequence` ×0, `adjoint bundle` ×0, `principal bundle` ×0 — and the object was there.*
+  ⇒ **So a reach station's two failure modes are now both on the record and they are opposite: a
+    half-generalised probe invents a bite, and a vocabulary survey invents a hole.** *Both are caught
+    the same way — by reading the passage the count points at, which is what `reach_baseline.py`'s
+    `--context` is for and why its own head says a count is not a verdict.*
+
+⛔⛭⛭ **AND A THIRD METHOD NOTE, forced by Ⓒ's run on this file's own instrument (r3154, `L-266`).**
+*A baseline survey for `Aut(A_2)` returned **zero** while the object appears **thirty-four times across
+seven papers**, because the corpus writes `\mathrm{Aut}(A_2)` and the macro's closing brace splits the
+term.*
+  ⇒ ***A COUNT CAN FAIL TO BE ABOUT ITS TERM AT ALL*** — *the sharper form of "a count is not a
+    verdict", and `L-263`'s instrument did it to `L-263`'s own author one revision later.*
+  ⇒ **`reach_baseline` now runs every survey twice, raw and de-macroed, and FLAGS any term whose
+    de-macroed count is higher.** *Stations Ⓖ and Ⓗ were re-verified against it: every zero they
+    rested on is still zero, so neither finding was a macro artefact.*
+  ⌗ ***So the three failure modes this theatre has now met are: a probe that manufactures a bite (Ⓗ),
+    a vocabulary survey that manufactures a hole (Ⓖ), and a survey that is not about its term at all
+    (Ⓒ).  All three are caught by reading the passage the count points at.***
+
+**⇒⇒ AND THE THREE THAT BIT ARE ONE KNOT:** *Ⓒ asks **which group acts**; Ⓗ **needs that group** for an equivariant
 **⛭ **A SHARED $\tfrac34$ ACROSS TWO OPERATORS, RECORDED AND NOT CLAIMED (r3205).** *`P10` carries $\gamma=\tfrac34$ as the essential-self-adjointness threshold of $-\partial^2+\gamma/x^2$ on the quantum tower; `L-264`'s window is $\lvert\lambda\rvert<\tfrac34$ from a measure exponent on the wall. Different operators, same number.* ⇒ *Left as a thing to LOOK at. This theatre's own strongest stated result is that "convergence is evidence the object is real", and `L-264` manufactured a spurious one on its first run — a shared constant across two unrelated operators is exactly the shape that warning describes.*
 
 ⇒⇒ AND THE THREE THAT BIT ARE ONE KNOT:** *Ⓒ asks **which group acts**; Ⓗ **needs that group** for an equivariant
@@ -228,7 +256,7 @@ sample the cases where the criteria **misled** — the ether, caloric, Kepler's 
 **The plan records it as "the one genuinely unworked item, whose reference class is unbuilt."*** ***A listed
 field that has never been thrown, and an open item that needs exactly it.***
 
-## THE FIELDS TO THROW (candid## THE FIELDS TO THROW (candidate bakes — a LIVING set; verdict CONFIRMED / GROUNDED / CANDIDATE)
+## THE FIELDS TO THROW (candidate bakes — a LIVING set; verdict CONFIRMED / GROUNDED / CANDIDATE)
 **Baked (done or partial):**
 - **Classical / Euclidean geometry** — the geometry bake. ⟐ is it complete? more circle / conic / inversive
   theorems that bite? (see the GEOMETRY docs)
@@ -237,7 +265,7 @@ field that has never been thrown, and an open item that needs exactly it.***
 **⛭ ORDERED BY THE MATHEMATICIAN'S ARC — r1805. `INTRODUCTION` §2's parallel arc IS an ordering of this list by
 structural depth, and r1741 installed it as the lens. Eight stations, mapped:**
 *Ⓐ **classical plane geometry** → *Classical/Euclidean*, **baked** · Ⓑ **the forced triple angle** → ***⌫ REOPENED ONE LEVEL UP, r2376+c54.11.*** *The r1880 finding stands: `prop:triple`'s own proof holds the station, and the arc's "no entry" was the LIST's omission. **But that proof shows the scale is unique AT $D=4$; it never asks at which $D$ a scale exists at all.** Asked, the answer is $D\in\{4,5\}$ — so the station carries a general statement the papers did not hold, now landed in P3 `rem:dimension`. **The r1885 precondition was honoured: the papers were checked first, and they held the $D=4$ case only.*** *Prior note, kept:* ***⌫ NOT A GAP — CORRECTED r1880.*** *The arc named this station as one "this list does not carry," and r1861 recorded it as discharged by the optics bake's `O3`. ***The audit found `O3` was restating `prop:triple`'s OWN PROOF, one paragraph above the proposition*** — $\varrho-\tfrac34\varrho^3=0$, unique positive root $2/\sqrt3$. **So the corpus had this station from the start and the arc's "no entry" was the LIST's omission, not the corpus's.** A station can be missing from a reach list and present in the papers, and that is a different finding from a gap* ·
-Ⓒ **complex analysis / monodromy** → ***★ NEXT, and handed to by the quadric bake's `Q4`***: that probe found
+Ⓒ **complex analysis / monodromy** → ***✔ CLOSED r3154 (`L-266`) — and this line read "★ NEXT" for the whole interval between, in the same document whose station table records the closure (`L-269`'s class, third instance, and the only one inside a single file).*** *Handed to by the quadric bake's `Q4`*: that probe found
 the vantage triple's cross-ratio is the **equianharmonic** $e^{i\pi/3}$, and **equianharmonic $\iff j=0 \iff$
 complex multiplication by $\omega=e^{2\pi i/3}$** — which is the corpus's own $\mathbb{Z}_3$ deck action, the
 three-sheeted cube-root cover, and the $2\pi i\alpha/3$ period. ***The handoff outranks the list order, as at
