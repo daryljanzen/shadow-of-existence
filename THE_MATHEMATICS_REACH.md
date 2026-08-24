@@ -214,8 +214,19 @@ Euler R/2). Each field-bake yields three things:
   deficiency indices (P10); the sinh^{2/3} law.
 - **Topology:** closed S³ (graviton-tower discreteness); the branch structure (r=0 a branch point); index
   theory (Atiyah–Hirzebruch, P13).
-- **Statistics / inference:** P4 (redshift-isotropy, the dipole, the modern parallax); the abundance / CMB
-  likelihoods (P15/P16).
+- **~~Statistics / inference~~ — ✔✔ BAKED r3160 (`L-271`), `STATISTICS_INFERENCE_LEDGER.md`.** *The
+  opening this document flagged in its own voice — "listed and never baked, and `A5.5`'s reference
+  class is precisely a statistics problem" — is now thrown.* ⛔ **`S1` BIT:** *`P06` states `A5.5`
+  falsifiably and never asks whether the class can be big enough; the two-arm design it proposes needs
+  **168 episodes** on a moderate effect and the paired design its own material supports needs **37**,
+  because within a theory-choice episode the candidates are mutually exclusive.* ⇒ ***The binding
+  constraint moves from sample size to selection discipline, and `pre-registration` is ×0.*** ⛭ **`S2`
+  BOUNCED, and it is the better finding:** *`systematics` ×0 across seventeen papers beside a
+  seventy-sigma claim, and read, the budget is being taken by differencing against a $\Lambda$CDM
+  control measured by the identical procedure. **A method present under no name — the fourth
+  instance, after the Atiyah sequence, $N_{\rm eff}$ and the baby universe.*** ⌗ *Still owed and named
+  as owed rather than left implicit: P4's redshift-isotropy inference, and Bayesian model comparison —
+  which needs the transfer function `P15` says is open, not a statistical technique.*
 
 ## ★★★ THE HOLES — fields the corpus USES and this list does not carry as fields (surveyed r1890)
 
