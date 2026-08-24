@@ -1,25 +1,10 @@
 
-  RUN-ALL-RECEIPTS -- 625 registered receipt(s), 4 at a time, 300s each, each from ITS OWN DIRECTORY
-  TREE-DIGEST: 37c89e4f6fc1d887
+  RUN-ALL-RECEIPTS -- 628 registered receipt(s), 4 at a time, 400s each, each from ITS OWN DIRECTORY
+  TREE-DIGEST: 387a60554e6b2497
 
-    [FAIL] receipts/L221_the_bridge/B14_identical_in_content_is_po2s_reason.py  (0s)
-               OK    ⛔ and PO-4 carries none of it /     OK    ⛔ and PO-5 carries none of it /   1 check(s) FAILED
-    [FAIL] receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_narrating_its_own_history.py  (52s)
-               - ⓵ᵈ and the other five are the drift, across three papers /     - ⓸ᵈ and both gates name their known sites rather than counting them -- a count can be satisfied by fixing one and adding another.  5 tense sites, 23 collisions, 1 band exception /     - ⓹ the band is PARITY and this line takes the
-    [FAIL] receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py  (26s)
-               - ⓷ the band is PARITY and this line takes the EVEN half /     - ⓸ᶜ SEEDED: with the parity flipped, 0 of this line's commits are out of band and the check exits 0 naming them -- so a green result is a measurement a /     - ⓸ᵈ and the parity is RESTORED -- verified, not trusted to the `finally`
-    [FAIL] receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py  (5s)
-               FAIL  ⓹ᶜ and no .tex file is touched by this revision -- the reading is written in the ledger, not in the papers /   1 check(s) FAILED /     - ⓹ᶜ and no .tex file is touched by this revision -- the reading is written in the ledger, not in the papers
-    [FAIL] receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py  (9s)
-               FAIL  ⓹ ⌗ and NO paper is edited by this revision: ['corpus/CR_cosmology.tex', 'corpus/CR_framework.tex', 'corpus/algebroid_paper.tex', 'corpus/boundary_paper.tex', 'corpus/dynamics_paper.tex', 'corpus/matter_sector_paper.tex'] -- every repair is a receipt following its paper, which is the direc
-    [FAIL] receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py  (50s)
-               OK    ⓸ᵇ and with it back the receipt exits 1 -- so the repair is what makes it green, not the tree happening to sit at a convenient revision /   1 check(s) FAILED /     - ⓷ᶜ and `B1` exits 1
-    [FAIL] receipts/P16_cosmogenesis_paper/P16_theory_error_and_likelihood.py  (2s)
-             File "/home/claude/repo/receipts/P16_cosmogenesis_paper/bbn_network.py", line 43, in <module> /     import pynucastro as pyna / ModuleNotFoundError: No module named 'pynucastro'
-    [FAIL] receipts/P16_cosmogenesis_paper/P16_validate_bbn.py  (2s)
-             File "/home/claude/repo/receipts/P16_cosmogenesis_paper/bbn_network.py", line 43, in <module> /     import pynucastro as pyna / ModuleNotFoundError: No module named 'pynucastro'
 
-  617 pass, 8 fail, 0 over timeout, in 949s wall
-  slowest that passed: Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py 256s, P15_the_second_arm_actually_run.py 212s, I10_the_constraint_propagation_is_symmetry_free.py 192s, P15_the_collapse_leg_is_scale_invariant.py 158s, P15_the_progenitor_vacuum_is_negligible_too.py 120s
+  628 pass, 0 fail, 0 over timeout, in 977s wall
+  slowest that passed: P16_validate_bbn.py 250s, Q1_the_degeneracy_is_conformal_flatness_not_maximal_symmetry_so_no_scale_factor_can_break_it.py 211s, A1_a_rule_made_of_spellings_misses_the_next_spelling.py 170s, P15_the_second_arm_actually_run.py 164s, I10_the_constraint_propagation_is_symmetry_free.py 157s
 
-  ⛔ A REGISTERED RECEIPT THAT DOES NOT RUN WHERE IT IS REGISTERED IS NOT A RECEIPT.
+  Every registered receipt runs, in place, and exits 0 -- so every assertion in the
+  reproducibility layer was actually evaluated.
