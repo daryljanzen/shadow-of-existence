@@ -1142,7 +1142,7 @@ that found it — among them four corpus-revision sites where a paper states as 
 two ledgers whose results were never banked into any paper, eight unregistered fermion-sector work items, and
 the base-rate entries this pass itself owes for the frontier items it shrank.*
 
-**⇒ NEXT LAYER: `ARC 13 · THE CANON SWEEP`** *— booked r1790, never run. It is LAYER 2's one full-corpus pass,
+**⇒ NEXT LAYER: `ARC 13 · THE CANON SWEEP`** ⛭ **RUN AND COMPLETE r3301** *— booked r1790; all seventeen papers read word for word at verified full coverage, `OWED 612` closed on it.*  *Formerly recorded here as never run. It is LAYER 2's one full-corpus pass,
 and it is where the four corpus-revision sites and the shrunk frontier items land.*
 
 ---

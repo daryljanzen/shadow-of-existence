@@ -8,68 +8,35 @@ sources: [chat]
 
 > ✔ **SETTLED r3142 at `sec:correspondence`, as recorded:** *the abstract says the twelve coloured states give "four classes, against the Standard Model's **five** multiplets per generation". The four classes are the $(\text{horn},\text{ruling})$ pairs and cover the **twelve coloured** states only; the SM's coloured multiplets are **three** ($Q_L$, $u^c$, $d^c$) and its five counts all fifteen. **The underlying theorem is unaffected** — the orbit shortfall is $2{+}2$ against $2{+}1{+}1$, which is exact and is what `W1` proves. What needs settling is whether the paper's own use of "class" at `sec:correspondence` vindicates the summary sentence or whether it mixes scopes. **Resolved: the body never says "four classes" — the phrase occurs once, in the abstract alone — and the body's own accounting is an OCCUPATION statement: the left-handed doublet's $T$-values $\{+1,-1\}$ match, while the right-handed singlets give $\{+1,+1\}$ where this sector gives $\{+1,-1\}$, so the sector DRAWS a distinction the Standard Model does not. The receipt confirms the twelve match state by state. The abstract's summary is corrected to the body's $2{+}2$ against $2{+}1{+}1$.***
 >
-> ## ⛭⛭⛭ THE WHOLE OUTSTANDING SURFACE, IN ONE PLACE — measured r3120, and kept here so it can be worked
+> ## ⛭⛭⛭ THE WHOLE OUTSTANDING SURFACE, IN ONE PLACE — **re-measured r3377**
 >
 > *Not a new list: a view over the ones that exist, so the programme's remaining shape is legible without
 > assembling it from five documents each time. **Re-measure before trusting the numbers**; they are a
-> snapshot and this file is where they go stale first.*
+> snapshot and this file is where they go stale first — as the r3120 view of this table did, and was
+> reported back by a spun-up node reading it in good faith.*
 >
-> | what | where it lives | count at r3120 |
+> | what | where it lives | count at r3377 |
 > |---|---|---|
-> | **the one work item** | `THE_REGISTER` / P7 `frontier:scalar` | **`PO-13`** — the acoustic phase, misplaced by a computed amount. *Not started.* |
-> | **owed items** | this file | **13 open** — incl. the comprehensive comb, the reader package, the dissolution-census reconciliation, and the fermion-sector items never registered |
-> | **the corpus read** | `ARC 13` | **P1–P10 done; P11–P17 remain.** *P7–P10 were read with the chunked reader at verified 100% coverage; P1–P6 predate it, so their coverage was never measured — recorded as a fact, not a re-read order* |
-> | **receipt failures** | `receipts/RUN_RESULT.txt` | **8**, mostly inherited; the P7/P10 set is cleared |
-> | **red gates** | `corpus/check_*.py` | **9** at a 600s timeout — *note the harness: `check_cross_row_dupes` reads red at 100s and passes at 600s* |
-> | **the absorption gap** | `ABSORPTION.md` | `c54.208`–`233` never entered this line; **one finding in it remains unverified** |
+> | **the one work item** | `THE_REGISTER` / `PO13_WORKING_STATE.md` | **`PO-13`** — worked hard r3307–r3373; nine handles eliminated, the mechanism measured, the state written OUTSIDE the corpus on the one-state rule |
+> | **owed items** | this file | **4 open** |
+> | **the corpus read** | `ARC 13` | ⛭ **COMPLETE — all seventeen papers read word for word at verified full coverage** (r3301). `OWED 612` closed on it. |
+> | **receipt failures** | `receipts/RUN_RESULT.txt` | last full pass **638/638 clean**; the standing two are `pynucastro` absent from the container, not defects |
+> | **red gates** | `corpus/check_*.py` | **1 of 93** — `check_receipts_run`, which needs wall-clock and no judgement |
+> | **the absorption gap** | `ABSORPTION.md` | `c54.208`–`233`; one finding still unverified |
 >
 >
-> ## ⛭⛭⛭ AND THE ORDER TO WORK IT IN — built from the gating, not from feel
+> ## ⛭⛭⛭ AND THE ORDER TO WORK IT IN — **rebuilt r3377, the read having discharged the middle of it**
 >
-> *The rule: **isolated-and-ready first**, then **anything that gates something else before the thing it
-> gates**, then the read, then what needs the whole corpus current. Re-derive this if items move.*
+> *The old ordering (A isolated · B gates-the-read · C the read · D after-the-read) is spent: `ARC 13` is
+> complete, so every item that gated it or waited on it has resolved. What remains does not gate anything.*
 >
-> **A · ISOLATED, READY, NOTHING WAITS ON THEM** — *clear these first; each is independent of every other line*
-> · `621` the receipt's gloss brought to its own table · `614` the twelve orphaned results dispositioned
-> ⌗ *`605` and `609` were here as decisions and are **crossed r3122** — both were answerable from the
-> material: P3's reorder is refused on the paper's own dependency, and the reach-edge package is queued
-> behind the read on its own stated gate.*
->
-> **B · GATES SOMETHING — before the thing it gates**
-> · `611` the eight fermion-sector items registered ⟶ *gates the P14 read and any matter-sector work*
-> · `598` measure the $\langle T_{\mu\nu}\rangle$ / trans-Planckian gap ⟶ *gates `591` and the P16 read*
-> · `608` PHASE7 plan-vs-execution reconciled ⟶ *gates `589`, which would otherwise re-find the divergence*
-> · `586` bank the parametrisation arc's step ② ⟶ *gates the P15 read; the measurement equations belong in it*
->
-> **C · THE CORPUS READ — P11 · P12 · P13 · P14 · P15 · P16 · P17/p0**
-> *In that order. P14 after `611`, P15 after `586`, P16 after `598` and `621`. P15 is the largest at 86pp.*
->
-> **D · AFTER THE READ — these need the corpus current**
-> · `591`+`592` the dissolution census reconciled and its fork-span audited · `589` the comprehensive comb
-> · `612` `ARC 13` declared run, which is what the read discharges.
-> · `609` **THE TWO REACH-EDGE THEATRES** — *`R-M`'s three owed stations (the two real forms of
-> $SO(6,\mathbb{C})$, Lie algebroids, the $\gamma^5$-graded index in K-theory) plus Ⓒ handed-to, and
-> `R-P`'s seven arc stations from ①② QM onward. **Daryl: exhaust both lists, or work through and do as
-> many as hold up.** Strike Ⓑ and Ⓓ first — already held in the papers. This is the largest block of
-> genuine physics left in the programme, and it is gated on the corpus being current, which is what the
-> read delivers.*
->
-> **E · THE WORK ITEM** — `PO-13`, the acoustic phase. *After P15, whose transfer and refit are its evidence base.*
->
-> **F · LAST** — `597`, the reader package, which wants the corpus finished to package it.
->
-> ⌗ *The absorption gap (`c54.208`–`233`) and the inherited red gates sit outside this order: neither gates
-> anything here, and the absorption gap cannot be closed from this tree at all.*
->
-> ⇒ ⛭ **AND WHAT IS NOT ON THIS LIST, BECAUSE IT IS FINISHED RATHER THAN EMPTY.** *The quantum sector and
-> the Standard-Model sector are handed off, and the hand-off is **tested rather than asserted**: of the four
-> falsification conditions stated before any claim was made, `F2` **cannot arise** by the one-constant
-> theorem, `F3` **inverted** (the Higgs sector constrains this one, not the reverse), `F4` is **answered**
-> (the hypercharges are the composition's), and `F1` — the sharp one, whether this construction forbids what
-> the Higgs mechanism requires — **does not fire**: it declines to supply the gauge sector's ingredients and
-> does not forbid them. **No tension is outstanding in either sector.*** ⌗ *`F1` stays live as a standing
-> condition, not a gap: any future result promoting the gauge group from the ordinary route to a forced one
-> re-opens it.*
+> · **`624`** — the height/driving investigation, and the only one with live work in it. *State in
+>   `PO13_WORKING_STATE.md`; the open half is what the construction says the datum should be at the onset,
+>   which is open rather than unconsulted — checked across all three source classes at r3363.*
+> · **`622`** — the candidate-field bakes, node 54's lane, list exhausted and running on `P14`/`P03`.
+> · **`589`** — the comprehensive comb. *Wanted the corpus current; it now is.*
+> · **`597`** — the reader package. *Explicitly last.*
+
 
 > **⌗ SORTED BY LAYER r3095 — because the car-wash rule is that each layer gates the next BY WHAT IT
 > EXPOSES, not by what it finishes.** *`OWED` does not need to be empty to move on; it needs nothing left

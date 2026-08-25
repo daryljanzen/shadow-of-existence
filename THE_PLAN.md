@@ -29,9 +29,11 @@ propagating is the cheaper half of that when the work is this shape.*
   sense→already-thrown. **One field is REFUSED on the measurement** (`convexity / optimisation`, 99%
   one homonym), which is a verdict rather than an omission.*
 
-**⚠ WHAT THIS ENTRY DOES NOT COVER.** *It records the reach and bake lanes only. `PO-13` remains the
-one open register row and nothing here touches it; `ARC 13 · THE CANON SWEEP` (`OWED` 612) is still
-unrun; and the nine long-red gates are unchanged and are the other line's lane.*
+**⚠ WHAT THIS ENTRY DOES NOT COVER.** *It records the reach and bake lanes only.* ⛭ **Superseded on two
+counts at r3377:** `ARC 13 · THE CANON SWEEP` is **RUN** — all seventeen papers read word for word at
+verified full coverage, `OWED 612` closed on it (r3301) — and the gate count is **1 red of 93**, not
+nine. *`PO-13` is no longer untouched either: worked r3307–r3373, with its state held outside the
+corpus in `PO13_WORKING_STATE.md`.*
 
 
 
