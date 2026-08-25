@@ -319,6 +319,14 @@ showpieces, with publication the parallel channel. Unless a piece says otherwise
 is a claim checked once.
 
 **Where the programme currently stands is not in this file and is not to be put in it.** The changelogs carry
-it; `THE_PLAN.md` at step 10 is the pointer. **This file is a stable spin-up, and a node does not edit it — not
+it; `THE_PLAN.md` at step 10 is the pointer.
+
+**And the changelog is the commit log.** Entries are written as full-form commit messages — the reasoning, the
+measurements, what was ruled out and why — not one-line summaries with the substance filed elsewhere. So the
+last step of catching up is `git log`, read as prose. **A changelog *file* that stops is not a record that
+stops**: the standing documents are updated when their content changes, which is not every revision, and a node
+that dates the programme by a file's last touch will report the work as halted when it has not been. *If your
+readout is about to say the record ends somewhere, read the log first and check whether it is the record that
+ended or your search.* **This file is a stable spin-up, and a node does not edit it — not
 its framing, not its order, not the documents it names — without asking.** A guard you think it needs is a
 guard for the changelog or the plan; write it there.
