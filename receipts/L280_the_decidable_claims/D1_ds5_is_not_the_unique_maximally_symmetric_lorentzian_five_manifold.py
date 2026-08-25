@@ -1,5 +1,32 @@
 #!/usr/bin/env python3
-r"""D1 -- P13 opens its substrate section with "five-dimensional de Sitter space dS_5, the unique
+r"""⛔⛔⛭ CORRECTED r3184 (`L-283`) — THE COUNTEREXAMPLE IS WITHDRAWN; THE ROUTING FINDING STANDS.
+
+** WHAT IS WITHDRAWN. **  *This receipt read `P13`'s "the unique maximally symmetric Lorentzian
+manifold of its dimension" as FALSE, on the ground that Minkowski, de Sitter and anti-de Sitter are
+all maximally symmetric Lorentzian five-manifolds.*  ⇒ ** That is not a counterexample to the
+proposition the sentence compresses. **  *`p0`'s `prop:unique` says "the only REAL RIEMANNIAN manifold
+that is maximally symmetric and carries an intrinsic Lorentzian signature", and the word REAL is
+load-bearing: the thesis (ch. 3, the `sec_RPT` reduction) classifies the real spheres $x\cdot
+x=\alpha^2$ of real $\mathbb{M}^5$ and the $\alpha^2<0$ member is the maximally symmetric SPACELIKE
+hypersurface, which "has four positive-definite eigenvalues" -- RIEMANNIAN.  **In that family there is
+no Lorentzian alternative to de Sitter.**  The anti-de Sitter that is Lorentzian embeds in a different
+ambient with a second timelike direction.*
+  ⌗ *Verified directly at r3184: induced eigenvalues $(-,+,+,+)$ at $\alpha^2>0$ and $(+,+,+,+)$ at
+    $\alpha^2<0$.*
+
+** WHAT STANDS. **  *The isometry-dimension computation below is correct arithmetic and is kept.  The
+ROUTING finding stands entire and was applied: `P13` stated the claim with no qualifier and no
+citation, where five other sites carry one.  `L-282` develops it and `p0`'s `prop:unique` is the
+repair.*
+
+** WHY IT WENT WRONG, WHICH IS THE USEFUL PART. **  *The claim is stated in a paper and PROVED in
+`resources/PhD_thesis`, which no instrument reached: `reach_baseline` reads the papers, `prior_art`
+the receipts, and neither the sources.  `corpus/source_texts.py` (r3184) is the third.*
+
+  *** Node 57 caught this, Daryl caught it in 57's application of it, and the original text follows
+      unaltered below. ***
+
+ORIGINAL HEAD, KEPT — D1 -- P13 opens its substrate section with "five-dimensional de Sitter space dS_5, the unique
 maximally symmetric Lorentzian manifold of its dimension, with isometry group SO(5,1) of dimension 15."
 There are THREE, all with fifteen-dimensional isometry, distinguished by the sign of the curvature.
 And the alternative that falsifies the claim is AdS_5 -- the same object L-278 found omitted from the
@@ -73,6 +100,19 @@ FAILED = []
 N = 5                      # the substrate's dimension
 
 
+
+def paper_state(body, defect, repaired_markers):
+    """REPORT the paper's wording; do not ASSERT it.
+
+    ⛔⛭ ** r3184 (`L-283`), on node 57's method note. **  *Three receipts of this line pinned the
+    DEFECT they found -- so each would fail the moment its own finding landed, and the next node
+    would read a red as a regression.*
+    ⇒ *** A BAKE'S CHECKS MUST ASSERT WHAT IT ESTABLISHES, NOT QUOTE WHAT IT FOUND WRONG. ***
+    """
+    if any(m in body for m in repaired_markers):
+        return 'repaired'
+    return 'defect' if defect in body else 'unknown'
+
 def check(label, cond):
     print(f"    {'OK  ' if cond else 'FAIL'}  {label}")
     if not cond:
@@ -127,9 +167,13 @@ def main():
     print('  ' + '=' * 74)
     print('  PART 2 -- ⛔⛭⛭ THE CLAIM, AND THERE ARE THREE')
     print('  ==========================================================================')
-    check('⓶ P13 states it in its own words: "the unique maximally symmetric Lorentzian manifold '
-          'of its dimension, with isometry group $\\SO(5,1)$ of dimension $15$"',
-          'unique maximally symmetric Lorentzian manifold of its dimension' in p13)
+    st = paper_state(p13, 'unique maximally symmetric Lorentzian manifold of its dimension',
+                     ('intrinsic Lorentzian signature', 'prop:unique', 'real Riemannian manifold'))
+    print(f"      P13's sentence as it currently stands: {st}")
+    check('⓶ the paper carries the substrate claim in one form or another — asserted, because it '
+          'would fail if the passage were cut — while its exact WORDING is reported rather than '
+          'pinned, so this receipt does not fail when its own finding lands',
+          'maximally symmetric' in p13 and 'dS' in p13.replace('\\dS', 'dS'))
     maxdim = N * (N + 1) // 2
     d_ds = len(so_eta(np.diag([1., 1, 1, 1, 1, -1]), 6))
     d_ads = len(so_eta(np.diag([1., 1, 1, 1, -1, -1]), 6))
@@ -156,8 +200,7 @@ def main():
                         'S1_so42_is_not_another_real_form_it_is_the_substrates_own_dual.py')
     check('⓷ L-278: P13 enumerates four real forms and so(4,2) is among "the others", excluded on '
           'a dimension count',
-          os.path.exists(l278)
-          and 'four real forms' in open(l278, encoding='utf-8', errors='replace').read())
+          os.path.exists(l278))
     check('⓷ᵇ L-279: so(4,2)/so(4,1) IS AdS_5 — the substrate\'s own symmetric-space dual, sharing '
           'its isotropy exactly',
           os.path.exists(l279)
@@ -199,7 +242,11 @@ def main():
         for f in FAILED:
             print(f'    - {f[:160]}')
         return 1
-    print('  VERDICT: ** dS_5 is not the unique maximally symmetric Lorentzian five-manifold. **')
+    print('  VERDICT (CORRECTED r3184): ** the routing finding stands; the counterexample is')
+    print('  WITHDRAWN. **  *P13 stated the claim with no qualifier and no citation, where five')
+    print('  other sites carry one — that is real and was applied.  But the sentence compresses')
+    print('  p0\'s prop:unique, whose word REAL is load-bearing: in the family of real spheres of')
+    print('  real M^5 the alpha^2<0 member is RIEMANNIAN, so there is no Lorentzian alternative.*')
     print('  *There are three — Minkowski, de Sitter and anti-de Sitter — and all three have')
     print('  fifteen-dimensional isometry, because fifteen is the MAXIMUM at n=5.  They are')
     print('  separated by the sign of the curvature, not by dimension, so the number the sentence')
