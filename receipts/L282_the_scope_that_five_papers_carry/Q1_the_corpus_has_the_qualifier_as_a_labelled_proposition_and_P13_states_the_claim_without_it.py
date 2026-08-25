@@ -191,12 +191,15 @@ def main():
     p13 = B['P13']
     check('⓸ᵇ ⛔ and P13 cites nothing for it: the sentence carries no reference, P13 never '
           'mentions `prop:unique`, and it never carries "intrinsic" with "signature"',
-          'prop:unique' not in p13
-          and not re.search(r'intrinsic[^.]{0,60}signature', p13, re.I))
-    i = p13.find('unique maximally symmetric Lorentzian manifold')
-    check('⓸ᶜ the claim opens P13\'s substrate section, so the form that is false is the first '
-          'thing the section that depends on it says',
-          i > 0 and 'sec:setup' in p13[max(0, i - 300):i])
+          # ** r3363: REPAIRED.  P13 now carries p0's own wording -- "the only real Riemannian
+          #    manifold that is maximally symmetric and carries an intrinsic Lorentzian signature"
+          #    -- and cites p0 and the thesis.  The routing gap this bake found is closed. **
+          re.search(r'intrinsic Lorentzian signature', p13, re.I) is not None
+          and 'JanzenThesis' in p13)
+    i = p13.find('intrinsic Lorentzian signature')
+    check('⓸ᶜ the claim opens P13\'s substrate section, which is why the wording mattered -- and '
+          'the qualified form is now the first thing that section says',
+          i > 0 and 'sec:setup' in p13[max(0, i - 400):i])
 
     print()
     print('  ' + '=' * 74)

@@ -169,11 +169,14 @@ def main():
     import reach_baseline as RB
     def wc(t):
         return max(sum(RB.word_counts(t).values()), sum(RB.word_counts(t, tex=True).values()))
-    check(f'⓵ᶠ while `Cartan involution` ×{wc("Cartan involution")} and `Cartan decomposition` '
+    check(f'⓵ᶠ ⛭ the naming gap is CLOSED: `Cartan involution` ×{wc("Cartan involution")} and `Cartan decomposition` '
           f'×{wc("Cartan decomposition")} and `unitary trick` ×{wc("unitary trick")} across all '
           f'seventeen papers — against `involution` ×{wc("involution")} and '
           f'`real form` ×{wc("real form")}',
-          wc('Cartan involution') == 0 and wc('Cartan decomposition') == 0
+          # ** r3363: the naming gap this bake FOUND is now CLOSED -- node 57 named the Cartan
+          #    involution in P7 and the symmetric-pair/Cartan distinction in P12 at r3331.  The
+          #    check asserts the closure; the bake's finding is what caused it. **
+          wc('Cartan involution') > 0 and wc('Cartan decomposition') > 0
           and wc('unitary trick') == 0 and wc('involution') > 150)
 
     # ================================================== (2) the five real forms

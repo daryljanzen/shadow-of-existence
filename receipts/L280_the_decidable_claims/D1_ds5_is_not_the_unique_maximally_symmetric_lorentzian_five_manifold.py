@@ -210,8 +210,11 @@ def main():
           d_ads == maxdim)
     check('⓷ᵈ ⛭ which is a pattern in the text rather than two accidents: the construction\'s own '
           'dual is the thing its uniqueness claims keep not counting',
-          'four real forms of the one complex group' in p13
-          and 'unique maximally symmetric Lorentzian manifold' in p13)
+          # ** r3363: BOTH sites are repaired -- P13 enumerates five real forms and names so(4,2)
+          #    as the substrate's dual (r3331), and its uniqueness claim now carries p0's own
+          #    wording and citation (r3357).  The pattern was real; the check records the repair. **
+          'five real forms of the one complex group' in p13
+          and 'intrinsic Lorentzian signature' in p13)
 
     print()
     print('  ' + '=' * 74)
