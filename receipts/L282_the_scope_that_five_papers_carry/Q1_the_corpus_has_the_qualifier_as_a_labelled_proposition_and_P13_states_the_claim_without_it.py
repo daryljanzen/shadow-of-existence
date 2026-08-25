@@ -1,5 +1,20 @@
 #!/usr/bin/env python3
-r"""Q1 -- L-280 found P13's "the unique maximally symmetric Lorentzian manifold of its dimension" false
+r"""⛔⛭ CORRECTED r3184 (`L-283`) — ONE PREMISE WITHDRAWN; THE FINDING AND ITS CONCLUSION STAND.
+
+** WITHDRAWN. **  *Part 3 argued that least-arbitrariness is "silent between Minkowski, de Sitter and
+anti-de Sitter, ALL THREE MAXIMALLY SYMMETRIC", inheriting `L-280`'s counterexample.  In the family
+`p0`'s `prop:unique` ranges over -- the real spheres of real $\mathbb{M}^5$ -- the $\alpha^2<0$ member
+is RIEMANNIAN (thesis ch. 3: "four positive-definite eigenvalues"), so it is not a Lorentzian
+alternative.*
+
+** WHAT STANDS, AND IT IS THE WHOLE FINDING. **  *Six sites state the substrate's uniqueness; five
+carry a qualifier and `P13` carried none and cited nothing.  And the CONCLUSION of Part 3 survives on
+better ground than it was given: within the family, least-arbitrariness still does not separate the
+$\alpha^2>0$ member from the $\alpha^2<0$ one -- both are maximally symmetric -- and what separates
+them is SIGNATURE, which is exactly `prop:unique`.*
+  ⇒ ** So the repair is still a citation and not a clause, and it is still `prop:unique`. **
+
+ORIGINAL HEAD, KEPT — Q1 -- L-280 found P13's "the unique maximally symmetric Lorentzian manifold of its dimension" false
 and proposed a clause to repair it.  The repair was already in the corpus, as a LABELLED PROPOSITION the
 geometric core says the programme's ontology stands on -- and five other sites state the claim with a
 qualifier while P13 states it with none and cites nothing.
@@ -85,6 +100,19 @@ SITES = [
 ]
 
 
+
+def paper_state(body, defect, repaired_markers):
+    """REPORT the paper's wording; do not ASSERT it.
+
+    ⛔⛭ ** r3184 (`L-283`), on node 57's method note. **  *Three receipts of this line pinned the
+    DEFECT they found -- so each would fail the moment its own finding landed, and the next node
+    would read a red as a regression.*
+    ⇒ *** A BAKE'S CHECKS MUST ASSERT WHAT IT ESTABLISHES, NOT QUOTE WHAT IT FOUND WRONG. ***
+    """
+    if any(m in body for m in repaired_markers):
+        return 'repaired'
+    return 'defect' if defect in body else 'unknown'
+
 def check(label, cond):
     print(f"    {'OK  ' if cond else 'FAIL'}  {label}")
     if not cond:
@@ -121,9 +149,13 @@ def main():
     for paper, phrase, qual in SITES:
         present = phrase.lower() in B[paper].lower()
         found.append((paper, qual, present))
-        print(f'      {paper:4s}  qualifier: {qual:20s}  located: {present}')
-    check('⓶ all six sites are located at source, verbatim',
-          all(p for _, _, p in found))
+        mark = 'located' if present else ('REPAIRED/moved' if paper == 'P13' else 'MISSING')
+        print(f'      {paper:4s}  qualifier: {qual:20s}  {mark}')
+    # ** the five QUALIFIED sites are the finding and ARE asserted; P13's wording is REPORTED,
+    #   because a check that pins the defect fails when the repair lands (r3184, `L-283`). **
+    check('⓶ the five sites that CARRY a qualifier are located at source, verbatim — these are '
+          'the finding, and they do not move when P13 is repaired',
+          all(pr for pa, _, pr in found if pa != 'P13'))
     qualified = [s for s in found if s[1] != 'NONE']
     check(f'⓶ᵇ ⛔ {len(qualified)} of the six carry a qualifier and exactly one — P13 — carries '
           'none', len(qualified) == 5 and found[-1][1] == 'NONE')
@@ -137,10 +169,10 @@ def main():
           'symmetric structure requires a choice of how to break the symmetry, and that choice is '
           'a modulus, whereas maximal symmetry leaves nothing to choose"',
           'every less symmetric structure requires a choice of how to break the symmetry' in p06)
-    check('⓷ᵇ ⛔ so it is SILENT between Minkowski, de Sitter and anti-de Sitter, all three of '
-          'which are maximally symmetric (L-280 computed all three at isometry dimension 15) — '
-          'and it would not rescue P13\'s sentence',
-          'anti-de Sitter' not in p06.split('leaves nothing to choose')[0][-800:])
+    check('⓷ᵇ ⛔ CORRECTED r3184: so within p0\'s own family — the real spheres of real M^5 — it '
+          'does not separate the alpha^2>0 member from the alpha^2<0 one, both being maximally '
+          'symmetric; what separates them is SIGNATURE, and that is prop:unique',
+          'leaves nothing to choose' in p06)
     check('⓷ᶜ ⛭ while the SIGNATURE scoping does separate them: p0 states it as a labelled '
           'proposition — "De Sitter space ... is the only real Riemannian manifold that is '
           'maximally symmetric and carries an intrinsic Lorentzian signature"',

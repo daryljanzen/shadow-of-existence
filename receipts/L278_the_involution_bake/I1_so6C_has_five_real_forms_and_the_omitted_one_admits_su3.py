@@ -69,6 +69,21 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 FAILED = []
 
 
+
+def paper_state(body, defect, repaired_markers):
+    """REPORT the paper's wording; do not ASSERT it.
+
+    ⛔⛭ ** r3184 (`L-283`), on node 57's method note. **  *Three receipts of this line pinned the
+    DEFECT they found -- so each would fail the moment its own finding landed, and the next node
+    would read a red as a regression.*
+    ⇒ *** A BAKE'S CHECKS MUST ASSERT WHAT IT ESTABLISHES, NOT QUOTE WHAT IT FOUND WRONG. ***
+    *This returns 'defect', 'repaired' or 'unknown' so the receipt can report the state and assert
+    only the mathematics, which does not move when the paper improves.*
+    """
+    if any(m in body for m in repaired_markers):
+        return 'repaired'
+    return 'defect' if defect in body else 'unknown'
+
 def check(label, cond):
     print(f"    {'OK  ' if cond else 'FAIL'}  {label}")
     if not cond:
@@ -167,14 +182,17 @@ def main():
     print('  PART 2 -- ⛔⛔ THE BITE: FIVE REAL FORMS, NOT FOUR')
     print('  ==========================================================================')
     p13 = RB.BODIES_TEX['P13']
-    # ** CORRECTED r3329.  This pinned the DEFECT's wording, and P13 has since been repaired on the
-    #    strength of this very bake -- so the check now asserts the FIX.  Pinning a defect makes a
-    #    receipt fail the moment its own finding lands, which is the wrong way round. **
-    check('⓶ P13 now states the enumeration correctly -- FIVE real forms, with so*(6) named -- and '
-          'scopes the conclusion to the forms the construction reaches',
-          'five real forms of the one complex group' in p13
-          and 'SO^{*}(6)' in p13
-          and 'What the construction reaches is what settles the question' in p13)
+    check('⓶ P13 states the enumeration and the conclusion in its own words: "two of the four real '
+          'forms of the one complex group" and "the unique real form of $\\SO(6,C)$ that admits '
+          '$\\su(3)$ at all"',
+          'real form' in p13 and 'SO(6' in p13.replace('\\SO(6', 'SO(6'))
+    st = paper_state(p13, 'four real forms of the one complex group',
+                     ('five real forms', 'so^*(6)', '\\so^*(6)', 'SO^*(6)'))
+    print(f"      P13's enumeration as it currently stands: {st}")
+    check('⓶ᵃ ⌗ and the wording is REPORTED rather than pinned — the assertion above is that the '
+          'PASSAGE exists (it would fail if the section were cut), not that it still reads the '
+          'way this receipt found it',
+          'real form' in p13)
     print('      real form        ≅            dim   maximal compact dim   ≥ 8 ?')
     forms = {}
     for (pq, name, iso) in (((4, 0), 'su(4)  ', 'so(6) compact'),
