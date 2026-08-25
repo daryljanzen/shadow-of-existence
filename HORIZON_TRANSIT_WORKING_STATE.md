@@ -313,3 +313,36 @@ and the metric is Minkowski.**  That is the whole content of the second cubic.
 requires a locus that exists only on the conjugate branch, which is what P7's lap supplies.
 **The horizon transit is not a curiosity downstream of the framework; it is what makes P15's
 frame derivation physical rather than formal.**
+
+---
+
+## (16) FOUND ON P8's FINAL READ — A SUBSTANTIVE CONFLICT, RED-FLAGGED NOT FIXED
+
+`slicing_operator` `sec:synchronous` closes with:
+
+> *the seam is not merely the beginning of this universe: being the same species as the event
+> horizon, it **is** one. **Read inward it is the future event horizon onto which a
+> gravitational collapse in the antecedent universe asymptotes** ... **read outward it is this
+> universe's cosmological beginning** ... the collapse's event-of-events at the close of the
+> antecedent cosmic time **is** the big bang at the opening of this one.*
+
+**P8 therefore places the horizon AT the beginning — zero separation.**  This work computes the
+horizon root on the collapse branch at **r = -6M**, separated from the branch point by **14.13
+Gyr** of the E=1 congruence's proper time plus a zero-duration lift.  Both cannot stand as
+written.
+
+**NOT AN OBVIOUS CALL, SO NOT EDITED.**  P8's claim is about the de~Sitter structure — the past
+null generator B, common to the whole congruence, as a finite-curvature metric singularity of
+the event horizon's species — and its "seam" is identified as *a -> 0, i.e. the throat X = alpha*.
+Whether X = alpha and r = 0 are one locus is the question underneath, and P7's
+`thm:null-boundary` explicitly separates *"the equatorial seam at X = alpha"* from the radius its
+own map targets.  Resolving that is its own pass.
+
+**THE NAMING DEFECT UNDERNEATH IS PLAIN, HOWEVER.**  The bare word "seam" now carries at least
+three distinct loci across the corpus:
+1. the Nariai double root r = +alpha/sqrt3 (= -2alpha/sqrt3, one substrate point), z = 0.654 — P7's
+   naming rule, *"a HORIZON, not the beginning"*;
+2. the equatorial seam X = alpha — P7 `thm:null-boundary`, P8 `sec:synchronous`;
+3. the branch point r = 0 / the beginning — P8 `sec:synchronous`, P1's abstract.
+The r2155 rule forbids the bare word for exactly this reason, and P8 uses it bare throughout
+`sec:synchronous`.  **Disambiguation is a corpus-wide pass, not a per-paper fix.**
