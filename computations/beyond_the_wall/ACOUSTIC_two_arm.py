@@ -276,7 +276,36 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         # For a mode already sub-horizon at the seam, delta_g = D cos(k c_s (eta - eta_S) + phi),
         # and the code's own continuity equation d(delta_g)/deta = -(4/3) theta_g gives
         # theta_g = (3/4) D k c_s sin(phi).  phi = 0 is a density extremum with theta = 0.
-        _phi = float(os.environ.get('CRPHI', '0.0'))
+        # ** CRPHI=entry -- THE FROZEN-MODE CONDITION CARRIED FORWARD, r3369 (node 57). **
+        #   P15 argues sin(phi) = 0 from "what crosses is FROZEN": a frozen mode has
+        #   d(delta_g)/deta = 0, hence theta_g = 0.  *That is a condition at the BRANCH POINT.*  The
+        #   instrument imposes it at the ONSET -- which is not a locus of the construction at all but
+        #   the redshift solved so that l_A hits LATARG.  Between the two, a mode with k/H > 1 has
+        #   ENTERED THE HORIZON AND OSCILLATED: measured r3359, entry at z = 15,700 for the
+        #   first-peak mode against an onset at z = 6,761, with 0.186 pi of acoustic phase accumulated
+        #   in between, rising to 0.636 pi at l = 400 and 1.639 pi at l = 800, and ZERO below l ~ 150
+        #   where the modes really are still frozen and the condition is CORRECT as coded.
+        #   ** So this reading carries the SAME condition to the onset instead of re-imposing it there:
+        #   phi(k) = k * int_entry^onset c_s d eta, and phi = 0 for any mode that has not entered. **
+        #   *It is a HYPOTHESIS about the construction and not a derivation from it -- no source states
+        #   what the datum should be at the onset (checked across all three source classes, r3363).*
+        #   The neglected phase is SUPERLINEAR in k, since entry itself moves with k, so this is a
+        #   SPACING correction and not only an offset.  ** Default unchanged; nothing moves unless set. **
+        _phi_mode = os.environ.get('CRPHI', '0.0')
+        if _phi_mode == 'entry':
+            _Hc_g = ag * np.array([Hphys(a) for a in ag]) / C
+            _phi = np.zeros(nk)
+            for _j, _k in enumerate(kk):
+                _in = np.nonzero(_k / _Hc_g > 1.0)[0]
+                if len(_in) == 0 or ag[_in[0]] >= A_START:
+                    continue                          # never entered before the onset: still frozen
+                _e_in = float(np.interp(ag[_in[0]], ag, eg))
+                _phi[_j] = _k * quad(lambda e: 1.0 / np.sqrt(3.0 * (1.0 + float(Rb_of(e)))),
+                                     _e_in, ETA_S, limit=200)[0]
+            print(f"    CRPHI=entry: phi(k) spans {_phi.min():.4f} to {_phi.max():.4f} rad "
+                  f"({_phi.max()/np.pi:.3f} pi); {int((_phi == 0).sum())} of {nk} modes still frozen")
+        else:
+            _phi = float(_phi_mode)
         xe = float(os.environ.get('CRXE', str(1.0 / np.sqrt(3))))
 
         def _T(x):
