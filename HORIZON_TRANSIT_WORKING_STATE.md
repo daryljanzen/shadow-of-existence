@@ -348,3 +348,21 @@ is not in question — both are finite-curvature metric singularities — but th
 **Reading 2 is the one the corpus's own machinery favours**, since the NBC is explicitly not a
 metric identification; but this is not an obvious call and is not being locked.
 
+
+---
+
+## (17) RED-FLAGGED IN P16, NOT FIXED — "the branch point IS that exterior's Nariai locus"
+
+`cosmogenesis_paper` `sec:scope` (line 622), arguing that the construction's matching is
+spherically symmetric throughout:
+
+> *the exterior is Schwarzschild--de~Sitter and **the branch point is that exterior's Nariai
+> locus**, a spherically symmetric statement throughout, and one may not drop the symmetry and
+> keep the locus.*
+
+**The branch point is `r=0`; the Nariai locus is the double root `alpha/sqrt3`.  They are 120 deg
+of phase apart.**  But the sentence's load is the SYMMETRY claim, not the location, and
+"Nariai locus" may be meant as *the Nariai member's configuration* rather than *the radius at
+which the double root sits*.  **Not an obvious call, so not edited.**  It belongs with the
+corpus-wide pass that decides `X=alpha` versus `r=0` and cleans the bare-word usages, since it
+is the same distinction collapsing.
