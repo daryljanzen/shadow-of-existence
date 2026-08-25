@@ -340,15 +340,15 @@ so one worldline's `r=0` sits where another's seam does and a third's turnaround
 labelling is the entire content**, and calling the ring or the sphere "the big bang" discards
 exactly what distinguishes the loci.
 
-**SO THE APPARENT CONFLICT WAS A CONFLATION OF TWO DIFFERENT STATEMENTS.**
-- P8 `sec:synchronous`'s *"the collapse's event-of-events **is** the big bang"* is a
-  **CROSS-WORLDLINE** identity: one background point is the progenitor's horizon and our
-  `r=0`.
-- This work's **14.13 Gyr** is measured **WITHIN one worldline**, between its own seam and its
-  own `r=0`.
+**SO P8's IDENTITY WAS SIMPLY FALSE, AND IS FIXED AT r3384.**  An earlier version of this
+entry rescued it as a "cross-worldline" identity.  **That was wrong too**: the bead is ONE
+worldline — red in at the seam, 240 deg, `r=0`, blue out — so there is no second worldline to
+hang the identity on.  Its horizon and its big bang are **two distinct loci of its own lap**,
+240 deg and 14.13 Gyr apart.  P8 now says so: *the horizon is the seam at which the lap is
+entered; the big bang is the branch point the lap reaches after it*, the two readings joined
+**along the lap and not at a point**.
 
-Both stand.  **(16) and (17) are closed** — and closed as a distinction between worldlines,
-not as the level hand-wave an earlier version of this entry gave.
+**(16) and (17) are closed** — by a correction to P8, not by a reconciliation.
 
 ⚠ **Two flags raised against the synthesis figure are WITHDRAWN, both mine.**  The two
 "equatorial seam" labels in panel A are the **left- and right-handed slicing curves at sky
