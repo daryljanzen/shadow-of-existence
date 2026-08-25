@@ -316,33 +316,35 @@ frame derivation physical rather than formal.**
 
 ---
 
-## (16) FOUND ON P8's FINAL READ — A SUBSTANTIVE CONFLICT, RED-FLAGGED NOT FIXED
+## (16) WHAT P8's sec:synchronous ACTUALLY CLAIMED — corrected, and what survives
 
-`slicing_operator` `sec:synchronous` closes with:
+**A previous version of this entry said P8 "places the horizon AT the beginning" and treated
+that as a claim about WHERE the beginning is.  That was wrong and is withdrawn.**  P8 always
+said the beginning is `r=0` — *"In the SdS reading the same structure becomes the r=0 origin of
+the scale factor"*.  What it did was call `r=0` a **seam**, which the glossary reserves for a
+turning point of the slicing curve and explicitly denies to the branch point (vertical tangent,
+not a turning; the `r=0`-as-seam error was named and withdrawn at r2123).  **That naming defect
+is fixed at r3380**, in P8 and in P1's abstract.
 
-> *the seam is not merely the beginning of this universe: being the same species as the event
-> horizon, it **is** one. **Read inward it is the future event horizon onto which a
-> gravitational collapse in the antecedent universe asymptotes** ... **read outward it is this
-> universe's cosmological beginning** ... the collapse's event-of-events at the close of the
+**WHAT SURVIVES THE NAMING FIX, AND IS STILL OPEN.**  P8 `sec:synchronous` reads the branch
+point as carrying the horizon's causal reading:
+
+> *Read inward it is the future event horizon onto which a gravitational collapse in the
+> antecedent universe asymptotes ... the collapse's event-of-events at the close of the
 > antecedent cosmic time **is** the big bang at the opening of this one.*
 
-**P8 therefore places the horizon AT the beginning — zero separation.**  This work computes the
-horizon root on the collapse branch at **r = -6M**, separated from the branch point by **14.13
-Gyr** of the E=1 congruence's proper time plus a zero-duration lift.  Both cannot stand as
-written.
+That places the collapse's event-of-events **at** `r=0`.  This work puts the horizon root on
+the collapse branch at **r = -6M**, separated from `r=0` by **14.13 Gyr** of the E=1
+congruence's proper time plus a zero-duration lift.  **Both cannot stand.**  The species claim
+is not in question — both are finite-curvature metric singularities — but the LOCATION is.
 
-**NOT AN OBVIOUS CALL, SO NOT EDITED.**  P8's claim is about the de~Sitter structure — the past
-null generator B, common to the whole congruence, as a finite-curvature metric singularity of
-the event horizon's species — and its "seam" is identified as *a -> 0, i.e. the throat X = alpha*.
-Whether X = alpha and r = 0 are one locus is the question underneath, and P7's
-`thm:null-boundary` explicitly separates *"the equatorial seam at X = alpha"* from the radius its
-own map targets.  Resolving that is its own pass.
+**THE TWO READINGS TO DECIDE BETWEEN.**
+1. The horizon and the branch point are one locus, and the -6M root is something else (in
+   which case what the 14.13 Gyr transit IS becomes the question).
+2. They are distinct, 240 deg of phase apart, and P8's *"is"* should be a causal
+   correspondence rather than an identity — which is what P7's Null-Boundary Correspondence
+   actually supplies (*"causal and structural rather than metric"*).
 
-**THE NAMING DEFECT UNDERNEATH IS PLAIN, HOWEVER.**  The bare word "seam" now carries at least
-three distinct loci across the corpus:
-1. the Nariai double root r = +alpha/sqrt3 (= -2alpha/sqrt3, one substrate point), z = 0.654 — P7's
-   naming rule, *"a HORIZON, not the beginning"*;
-2. the equatorial seam X = alpha — P7 `thm:null-boundary`, P8 `sec:synchronous`;
-3. the branch point r = 0 / the beginning — P8 `sec:synchronous`, P1's abstract.
-The r2155 rule forbids the bare word for exactly this reason, and P8 uses it bare throughout
-`sec:synchronous`.  **Disambiguation is a corpus-wide pass, not a per-paper fix.**
+**Reading 2 is the one the corpus's own machinery favours**, since the NBC is explicitly not a
+metric identification; but this is not an obvious call and is not being locked.
+
