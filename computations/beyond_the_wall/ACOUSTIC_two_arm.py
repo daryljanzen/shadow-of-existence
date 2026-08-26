@@ -80,6 +80,11 @@ else:
 OL = 1.0 - OM
 A_REC = 1.0 / (1.0 + Z_REC)
 RB_REC = 31500 * OMBH2 / (2.7255 / 2.7) ** 4 / (1 + Z_REC)
+# ** RBFAC scales the baryon loading R consistently (sound speed AND baryon Euler inertia, via
+# Rb_of and rs_from).  Default 1.0 = byte-identical.  RBFAC=0 removes loading (c_s=1/sqrt3, no
+# compression/rarefaction asymmetry) -- the diagnostic for whether the second-gap contraction
+# (the odd-even alternation) is loading-driven.  A diagnostic lever, not a physics change. **
+RB_REC = float(os.environ.get('RBFAC', '1.0')) * RB_REC
 
 
 def Hphys(a):
