@@ -330,17 +330,25 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         #   The neglected phase is SUPERLINEAR in k, since entry itself moves with k, so this is a
         #   SPACING correction and not only an offset.  ** Default unchanged; nothing moves unless set. **
         _phi_mode = os.environ.get('CRPHI', '0.0')
-        if _phi_mode == 'entry':
-            _Hc_g = ag * np.array([Hphys(a) for a in ag]) / C
+        if _phi_mode in ('entry', 'entryleaf'):
+            # ** entryleaf: the seam IC reckoned on the LEAF clock (58's start-time test).  Horizon
+            # entry is detected with the leaf comoving Hubble, and the pre-onset acoustic phase is
+            # integrated in eta_leaf (d eta_leaf = Jac * d eta_stack).  'entry' keeps the stack clock
+            # (node 57 r3369).  Diagnostic of whether the under-produced odd-even alternation is the
+            # late plasma start (missing oscillation history) rather than the driving. **
+            _leaf = (_phi_mode == 'entryleaf')
+            _Hrate = Hleaf if _leaf else Hphys
+            _Hc_g = ag * _Hrate(ag) / C
             _phi = np.zeros(nk)
             for _j, _k in enumerate(kk):
                 _in = np.nonzero(_k / _Hc_g > 1.0)[0]
                 if len(_in) == 0 or ag[_in[0]] >= A_START:
                     continue                          # never entered before the onset: still frozen
                 _e_in = float(np.interp(ag[_in[0]], ag, eg))
-                _phi[_j] = _k * quad(lambda e: 1.0 / np.sqrt(3.0 * (1.0 + float(Rb_of(e)))),
-                                     _e_in, ETA_S, limit=200)[0]
-            print(f"    CRPHI=entry: phi(k) spans {_phi.min():.4f} to {_phi.max():.4f} rad "
+                _phi[_j] = _k * quad(
+                    lambda e: (float(Jac_of(e)) if _leaf else 1.0)
+                    / np.sqrt(3.0 * (1.0 + float(Rb_of(e)))), _e_in, ETA_S, limit=200)[0]
+            print(f"    CRPHI={_phi_mode}: phi(k) spans {_phi.min():.4f} to {_phi.max():.4f} rad "
                   f"({_phi.max()/np.pi:.3f} pi); {int((_phi == 0).sum())} of {nk} modes still frozen")
         else:
             _phi = float(_phi_mode)
