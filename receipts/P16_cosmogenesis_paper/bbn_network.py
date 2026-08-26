@@ -10,6 +10,11 @@ P16_bbn_network ENGINE (imported by P16_validate_bbn.py). The genuine multi-nucl
 sec:network: {n,p,D,T,3He,4He,7Li,7Be} on JINA REACLIB rates (pynucastro, forward + detailed-balance
 reverse) + the corpus finite-T weak n<->p, integrated on the standard radiation-dominated cooling background
 at the inherited eta. STATUS: gate-certified by P16_validate_bbn.py (verified r1401). Needs pynucastro.
+LEVEL: L2 -- the leaf's own dynamics, and the rate is the ORDINARY FRIEDMANN READOUT WITH
+  RADIATION GRAVITATING NORMALLY, |H| = sqrt(8 pi G rho/3).  That is correct here and is not an
+  import: a process running IN the content takes the leaf's rate.  The stacking rate is the wrong
+  rate for this window and extending it here is the mis-assignment P15 sec:properframe calls
+  quantitatively fatal (~300x too slow in the nuclear window).
 """
 """
 D1 -- P16's owed computation: the full multi-abundance BBN network on the cooling leg.

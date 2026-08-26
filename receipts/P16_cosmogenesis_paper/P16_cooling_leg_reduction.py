@@ -13,6 +13,11 @@ P16_cooling_leg_reduction.py -- verifies the four facts (P16 sec:rate/peak/trev/
 STATUS: ✔✔ (all four; GM/R_s c^2=0.5 M-independent, 294x fatal check ~ paper's 300x, adiabatic, metals reset)
 RUN: python3 P16_cooling_leg_reduction.py   RUNTIME: <1s
 ORIGIN: computations/p16_bbn/cooling_leg_reduction.py, verified r1400.
+LEVEL: L2 -- the leaf's own dynamics, and the rate is the ORDINARY FRIEDMANN READOUT WITH
+  RADIATION GRAVITATING NORMALLY, |H| = sqrt(8 pi G rho/3).  That is correct here and is not an
+  import: a process running IN the content takes the leaf's rate.  The stacking rate is the wrong
+  rate for this window and extending it here is the mis-assignment P15 sec:properframe calls
+  quantitatively fatal (~300x too slow in the nuclear window).
 """
 import numpy as np
 

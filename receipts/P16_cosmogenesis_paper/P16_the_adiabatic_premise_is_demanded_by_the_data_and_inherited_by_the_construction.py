@@ -80,6 +80,8 @@ is `scalar_initial_condition`. **
 
 rc=0 on success.  Run: python3 P16_the_adiabatic_premise_is_demanded_by_the_data_and_inherited_by_the_construction.py
                         (camb numpy scipy; ~4 min)
+LEVEL: NO RATE -- this receipt uses no expansion rate at all, so no level applies.  Recorded
+  rather than left blank, so a later reader does not have to re-derive the absence.
 """
 import os
 import re

@@ -11,6 +11,8 @@ P16_validate_bbn.py -- the VALIDATION GATE certifying the P16 sec:network BBN en
 STATUS: ✔✔ (gate passes: conservation, abundances vs standard, eta-trends, valley, d ln(D/H)/d ln eta=-1.60)
 RUN: python3 P16_validate_bbn.py   RUNTIME: ~3-6 min (needs pynucastro; integrates network at 6 eta values)
 ORIGIN: computations/p16_bbn/validate_bbn.py + bbn_network.py, verified r1401.
+LEVEL: GATE -- inherits the engine's level (L2) rather than choosing one.  It certifies
+  bbn_network.py against accepted standard-BBN values before any CR claim is made on it.
 """
 import numpy as np
 import bbn_network as B

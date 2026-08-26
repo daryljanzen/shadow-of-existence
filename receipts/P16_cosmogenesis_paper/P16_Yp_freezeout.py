@@ -9,6 +9,11 @@ P16_Yp_freezeout.py -- verifies the P16 sec:network helium-4 anchor from first p
 STATUS: ✔✔ (detailed balance <1%, freeze-out at 0.7 MeV, Y_p=0.2506 ~ standard to 1.5%)
 RUN: python3 P16_Yp_freezeout.py   RUNTIME: ~30s
 ORIGIN: computations/p16_bbn/Yp_freezeout.py, verified r1402.
+LEVEL: L2 -- the leaf's own dynamics, and the rate is the ORDINARY FRIEDMANN READOUT WITH
+  RADIATION GRAVITATING NORMALLY, |H| = sqrt(8 pi G rho/3).  That is correct here and is not an
+  import: a process running IN the content takes the leaf's rate.  The stacking rate is the wrong
+  rate for this window and extending it here is the mis-assignment P15 sec:properframe calls
+  quantitatively fatal (~300x too slow in the nuclear window).
 """
 import numpy as np
 from scipy.integrate import quad, solve_ivp

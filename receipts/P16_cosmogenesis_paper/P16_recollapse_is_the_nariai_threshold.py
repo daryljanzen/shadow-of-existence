@@ -9,6 +9,8 @@ it from a horizon cubic's double root.  Two constructions, no shared step, same 
   PART 3  ** the BBN check: curvature sits ~15 orders below radiation throughout **
 
 rc=0 on success.  Run: python3 P16_recollapse_is_the_nariai_threshold.py    (sympy, numpy)
+LEVEL: NO RATE -- this receipt uses no expansion rate at all, so no level applies.  Recorded
+  rather than left blank, so a later reader does not have to re-derive the absence.
 """
 import sys
 

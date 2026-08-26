@@ -10,6 +10,9 @@ P16_peak_temperature.py -- verifies the P16 sec:peak M-independent peak-temperat
 STATUS: ✔✔ (T_pk~174 MeV M-independent, >> T_D; "four orders" keyed to the infall-energy scale)
 RUN: python3 P16_peak_temperature.py   RUNTIME: <1s
 ORIGIN: computations/p16_bbn/peak_temperature.py, verified r1399.
+LEVEL: NO RATE -- this receipt uses no expansion rate at all, so no level applies.  Recorded
+  rather than left blank, so a later reader does not have to re-derive the absence.
+  The peak is kinematic: GM/(R_s c^2)=1/2 identically, so T_pk follows from an ENERGY.
 """
 import numpy as np
 m_N = 938.9        # nucleon rest mass, MeV

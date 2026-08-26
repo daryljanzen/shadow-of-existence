@@ -39,6 +39,8 @@ correspondence is null-boundary to null-boundary "with no spacelike slice enteri
 there is no spacelike datum for a basis identification to be about).
 
 rc=0 on success.  Run: python3 P16_every_mode_is_frozen_at_the_crossing.py   (numpy sympy scipy)
+LEVEL: NO RATE -- this receipt uses no expansion rate at all, so no level applies.  Recorded
+  rather than left blank, so a later reader does not have to re-derive the absence.
 """
 import sys
 

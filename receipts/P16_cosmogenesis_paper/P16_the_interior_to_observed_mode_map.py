@@ -9,6 +9,9 @@ AND UNJOINED, AND THE JOINED MAP VALIDATES AGAINST THE LOW-MULTIPOLE DEFICIT. **
   PART 4  ** the bound on the progenitor, redone with the map **
 
 rc=0 on success.  Run: python3 P16_the_interior_to_observed_mode_map.py     (numpy)
+LEVEL: NO RATE -- this receipt uses no expansion rate at all, so no level applies.  Recorded
+  rather than left blank, so a later reader does not have to re-derive the absence.
+  The sqrt(8) here is the S^3 mode number sqrt(L(L+2)) at L=2, not a Friedmann rate.
 """
 import sys
 
