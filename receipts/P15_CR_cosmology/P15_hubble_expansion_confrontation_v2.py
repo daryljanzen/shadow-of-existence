@@ -8,6 +8,14 @@ P15_hubble_expansion_confrontation_v2.py -- verifies the P15 sec:tensions SDSS D
 STATUS: ✔✔ (H0-independence exact; CR chi2=1.71, LCDM(73)=49.45 match paper 1.7/49)
 RUN: python3 P15_hubble_expansion_confrontation_v2.py   RUNTIME: ~3s
 ORIGIN: hubble_build/hubble_expansion_confrontation_v2.py, verified r1396.
+LEVEL: L1 distances, L1 ruler, L3 angle -- and the two arms differ in BOTH rate and limit,
+  each correct for its own ontology.  D_M, D_H: trapz(c/Hcr) on the STACKING rate (a comoving
+  separation read across leaves).  r_snd: cs(z)/Hcr, integrated UP TO z_onset -- the expanding-phase
+  plasma begins there, so there is no radiation era above it to integrate through.  theta_* =
+  r_s/D_M is the L3 projection of the two.  The LambdaCDM control keeps its own rate (E_lcdm with
+  Omega_r) and its own limit (to z=1e8), because that arm DOES have a radiation era.
+  ** Mixing them -- the control's limit or rate on the CR arm -- is the calculation belonging to
+  neither framework that P15 sec:intro warns against, and it inflates r_s by ~1.8x. **
 """
 import numpy as np
 from scipy.optimize import brentq
@@ -32,7 +40,7 @@ def theta_star(H0,Om,z_onset): return r_snd(H0,Om,z_onset,z_lo=zrec)/DM(zrec,H0,
 THETA_OBS=0.0104085   # Planck 100*theta_* = 1.04109 -> theta_*; use the standard acoustic scale
 
 print("="*76)
-print("A1.4 corrected -- CR fixes Om (dimensionless), not wm.  Radiation-free -> H0 cancels in BAO.")
+print("A1.4 corrected -- CR fixes Om (dimensionless), not wm.  The stacking rate carries a common H0, which scales out of the BAO ratios.")
 print("="*76)
 
 # fix Om by the CMB acoustic scale at a reference H0, with z_onset the single early-universe datum.
