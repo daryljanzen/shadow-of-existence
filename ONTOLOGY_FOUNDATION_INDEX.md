@@ -60,6 +60,39 @@ current: c54.19
 > | **the lift** | turnaround $\to r=0$, length $\pi\alpha/3$ | Re$\,\tilde\tau$ frozen; carries the Euclidean null |
 > | **the seam** | $r=-2\alpha/\sqrt3$ **and** $r=+\alpha/\sqrt3$ | ***ONE point of the substrate***: $\varphi=-240^\circ\equiv+120^\circ$ in $\varphi=2\pi r/\sqrt3\alpha$. The bead meets it going in ("back") and again one full lap later ("front"). The Nariai double root; $z\approx0.66$ on the far pass. |
 >
+> ### ★ PROTECTED TERM (r3389) — "branch point" means $r=0$, and nothing else
+> *The word carried three senses across sixteen papers and ~278 occurrences, and one of them named the very
+> locus $r=0$ has to be told apart from. It produced flat contradictions **inside single papers**: P5 said both
+> "Each Nariai point is a simple **branch point**" and "the forced Nariai member … **is not a branch point**,
+> while $r=0$ is the branch point"; P12's body said "This Nariai double root **is** the cosmogenesis branch
+> point" against its own masthead's "**NOT** the branch point, and NOT cosmogenesis, which is realised at $r=0$,
+> a lap away". Cleared corpus-wide at r3386–r3388.*
+>
+> | sense | **use** | never |
+> |---|---|---|
+> | the lap's beginning, $r=0$, vertical tangent | **branch point** | — |
+> | the cover's ramification locus in the complex $2M$-plane, where two roots of the horizon cubic collide and $\Delta=4-27(2M)^2$ vanishes | **Nariai point** | ~~branch point~~ |
+> | the join of P3's spherical and de Sitter pieces at $\theta=\pi/2$, $r=1$, where the parameter turns off the real axis | **the join** | ~~branch point~~ |
+>
+> **"Nariai point" is not an import — it is P5's own word**, already used at every one of its sites ("the two
+> Nariai points where two roots collide", "the discriminant changes sign across each Nariai point").
+>
+> **Retained, and deliberately:** *branched at Nariai*, *branched cover*, *branch set*, *branch convention*,
+> *algebraic branch point* (of a meromorphic invariant). **None is the protected noun naming a locus of the
+> lap**, and each states its own referent, so none can be misread. The rule is about the noun phrase **"the
+> branch point"** standing alone.
+>
+> **⚠ The member is not the locus.** A recurring error distinct from the term: *"the cosmogenesis branch point
+> **is** the Nariai member"* (P15, cleared r3388) and *"the branch point **is** that exterior's Nariai locus"*
+> (P16, cleared r3385). The branch point is **carried on** the Nariai member; it is at $r=0$ and the member's
+> merged horizon is at $\alpha/\sqrt3$, $120^\circ$ of phase away. P7 states the guard: *"the branch point and
+> the Nariai member are not the same locus."*
+>
+> **⚠ And the $S^3$ is not the beginning.** The minimal $S^3$ at the throat carries the whole lap of **every**
+> worldline in the congruence, so one worldline's branch point sits where another's seam does. **The beginning
+> is the $r=0$ locus alone, one point per worldline — the labelling is what distinguishes it.** Calling the
+> sphere, or the equator, "the big bang" discards exactly that. (P8 `sec:synchronous`, cleared r3384.)
+
 > **When speaking of the substrate or the slicing curve, say *"the seam (one point, met a lap apart)"* — front and
 > back are chart labels for a single geometric feature, not two places.** When speaking of a *pass*, say **front
 > pass** or **back pass**, never bare "front seam"/"back seam" as if they were distinct loci.
