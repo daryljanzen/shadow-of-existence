@@ -438,10 +438,17 @@ rates, one passage — nothing bent, nothing missing.
 - **(18) falsified** — the horizon gives a clock reading, not a rule; p0's closure survives.
   The `Omega_m` question it left standing is answered in P15 at r3394.
 - **(19) resolved** — the L2 transit was a category error, dissolved by the two-rate rule.
-- **STILL OPEN: the species / baryon-number crossing.**  Species is the region label `sign(r)`;
-  `R` is a reflection and the crossing a continuation; charge closes from the field, never the
-  geometry.  So nothing is said to happen *to* the content.  And P16's structural reason `eta`
-  stays empirical is that thermalization erases composition and **what survives is baryon
-  number** — which is precisely what the crossing reverses.  That may be exactly what
-  "relational, CPT" means.  **It has never been stated, let alone worked, and it is now the
-  only open item this work has raised.**
+- **(20) CLOSED at r3396 — the species / baryon-number crossing.**  I flagged this three times
+  as *"never stated, let alone worked"*.  **That was wrong: both halves were in P16 itself**,
+  in different sections and unjoined — the conservation argument in `sec:peak` (*"It cannot
+  destroy baryon number ... so eta crosses the peak because it is protected"*) and the
+  odd-action neutrality at line 774.  P9 states the consequence most crisply: *"the two branches
+  carry equal and opposite action, summing to zero identically — so any matter--antimatter
+  asymmetry enters through the CHARGE SIGN and cannot be manufactured by the geometry."*
+  **The join is now made in P16**, and it separates two things that had been running together:
+  the **magnitude** of `eta` is a conserved charge of the progenitor, carried through the peak
+  AND the crossing, inherited — the frontier P16 already states; its **sign** is not a quantity
+  to derive at all, being which region the reading is taken in, with the progenitor's observers
+  making the conjugate statement of us by the substrate's CPT structure.  **Not a gap in the
+  physics — a gap in the join.**
+
