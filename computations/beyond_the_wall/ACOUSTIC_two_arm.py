@@ -94,6 +94,21 @@ ag = np.logspace(-9, 0, 40000)
 _seed = float(quad(lambda a: C / (a ** 2 * Hphys(a)), 1e-16, ag[0], limit=200)[0])
 eg = np.concatenate([[_seed], _seed + cumulative_trapezoid(C / (ag ** 2 * Hphys(ag)), ag)])
 Hc_of = CubicSpline(eg, ag * Hphys(ag) / C)                       # comoving Hubble, 1/Mpc
+# ** LEAFPERT=1: THE PERTURBATION SECTOR ON THE LEAF'S RATE (option (b)).  P15 sec:properframe and
+# P7's rate-rule remark both assign THE PERTURBATIONS to the leaf: "a process running in the content
+# -- rs, r_D, recombination, the perturbations -- takes the leaf's".  The file carries ONE rate, and
+# in the CR arm it is the stacking rate, so the perturbations run on L1 where the framework says L2.
+# The fix is not a rescaled source but the leaf's own rate in the perturbation equations.  Since both
+# conformal times are monotone in a, the change is an exact chain rule:
+#     dY/deta_stack = (H_stack/H_leaf) * F(Y, Hcal_leaf)
+# so every spline and grid is untouched, rs, D_M and the projection keep the stacking rate (L1, and
+# what sec:tensions assigns them), and in the lcdm arm H_leaf == H_stack identically, making this a
+# NO-OP THERE -- which is the self-check. **
+def Hleaf(a):
+    return H0 * np.sqrt(OM / a ** 3 + OL + OR / a ** 4)            # radiation gravitates: L2
+LEAFPERT = os.environ.get('LEAFPERT', '0') == '1'
+Hl_of  = CubicSpline(eg, ag * Hleaf(ag) / C)                       # comoving leaf Hubble, 1/Mpc
+Jac_of = CubicSpline(eg, Hphys(ag) / Hleaf(ag))                    # d eta_leaf / d eta_stack
 _rt = OR / ag ** 4 + OM / ag ** 3 + OL                            # ** the STACK, both arms **
 # ** GSRC=1: THE CONSTRAINT FACTOR.  The G^0_0 equation is k^2 Phi + 3H(Phi'+H Psi) = -4 pi G a^2
 # drho.  Writing the source as (3/2) H^2 sum(Om_i d_i) uses H^2 = (8 pi G/3) a^2 rho_tot -- the
@@ -360,7 +375,7 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         dc, tc, dg, tg, dn, tn, Ph = (y[:, j] for j in range(7))
         db = y[:, I_DB]
         F = y[:, 7:I_DB]
-        Hc, Rb = float(Hc_of(e)), float(Rb_of(e))
+        Hc, Rb = float(Hl_of(e) if LEAFPERT else Hc_of(e)), float(Rb_of(e))
         Ogv, Onv = float(Og_of(e)), float(On_of(e))
         Ocv, Obv = float(Oc_of(e)), float(Ob_of(e))
         sig = F[:, 0] / 2
@@ -399,7 +414,7 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         # ** the baryon continuity equation, on the baryon velocity.  In this branch the baryons are
         # tightly coupled and tg IS their velocity; the hierarchy branch gives them their own. **
         out[:, I_DB] = -tg + DRC * 3 * Php
-        return out.ravel()
+        return out.ravel() * (float(Jac_of(e)) if LEAFPERT else 1.0)
 
     if y_init is not None:
         y0 = y_init
@@ -695,7 +710,7 @@ def evolve_hier(kk, t_eval, e_sw, yF):
         Fn = y[:, 7:I_DB_]
         F = y[:, I_FG:I_GG]
         G = y[:, I_GG:]
-        Hc, Rb = float(Hc_of(e)), float(Rb_of(e))
+        Hc, Rb = float(Hl_of(e) if LEAFPERT else Hc_of(e)), float(Rb_of(e))
         Ogv, Onv = float(Og_of(e)), float(On_of(e))
         Ocv, Obv = float(Oc_of(e)), float(Ob_of(e))
         tp = float(taup_of(e))
@@ -737,7 +752,7 @@ def evolve_hier(kk, t_eval, e_sw, yF):
             out[:, I_GG + l] = (kk / (2 * l + 1) * (l * G[:, l - 1] - (l + 1) * G[:, l + 1])
                                 - tp * G[:, l])
         out[:, I_GG + LG] = kk * G[:, LG - 1] - (LG + 1) / e * G[:, LG] - tp * G[:, LG]
-        return out.ravel()
+        return out.ravel() * (float(Jac_of(e)) if LEAFPERT else 1.0)
 
     sol = solve_ivp(rhs, [e_sw, ETA_END], y0.ravel(), method='RK45', rtol=RTOL, atol=1e-12,
                     t_eval=t_eval, max_step=(ETA_END - e_sw) / 200)
