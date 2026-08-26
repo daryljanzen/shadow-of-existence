@@ -60,6 +60,45 @@ current: c54.19
 > | **the lift** | turnaround $\to r=0$, length $\pi\alpha/3$ | Re$\,\tilde\tau$ frozen; carries the Euclidean null |
 > | **the seam** | $r=-2\alpha/\sqrt3$ **and** $r=+\alpha/\sqrt3$ | ***ONE point of the substrate***: $\varphi=-240^\circ\equiv+120^\circ$ in $\varphi=2\pi r/\sqrt3\alpha$. The bead meets it going in ("back") and again one full lap later ("front"). The Nariai double root; $z\approx0.66$ on the far pass. |
 >
+> ### ★ THE RATE IS NAMED BY WHAT FIXES IT (r3401–r3404) — native parameters, and the translation
+> *The cosmological rate is set by the substrate's geometry and by nothing else.* Its two parameters are
+> **α = √(3/Λ)**, the substrate curvature radius — *an invariant length, not a mass* — and **x₀**, the offset of
+> the cut. Neither is a content of the universe.
+>
+> $$c^2H^2(z)=\frac{c^2}{\alpha^2}\Big(1+\frac{2(1+z)^3}{x_0^{3}}\Big)$$
+>
+> **x₀ is measured directly and calibration-free**: z_acc = x₀ − 1 = 0.6648 ± 0.0467, without a distance
+> ladder, without the microwave background, and without any density. What the rate is a rate *of* is **the
+> stacking of the foliation**; content does not enter it, radiation being absent from the slicing operator's
+> vacuum kernel (it requires m′(r) ≠ 0, a bend of the cut) and the second term being the offset itself.
+>
+> **THE TRANSLATION IS ONE-WAY.** Written in the fitted pair the same rate reads H² = H₀²[Ω_m(1+z)³ + Ω_Λ],
+> with **Ω_m = 2/(x₀³+2)** and **Ω_Λ = x₀³/(x₀³+2)** following identically. *That is a translation between
+> parameter sets, not a decomposition into components.* Reach for **x₀** and give Ω_m as its image; never the
+> reverse. Ω_m is the offset, and Ω_{m,0} records the epoch τ̃₀ at which we observe rather than a density.
+>
+> **AND THE COINCIDENCE OF FORM IS NOT A COINCIDENCE OF ONTOLOGY.** In the standard reading cosmic time is
+> orthogonal to the three-dimensional world and the expansion is *driven* — by initial conditions and by
+> whatever densities obtain at each moment, through the field equations. Here the rate is **read off a fixed
+> background**, whose foliation is **not orthogonal** to the proper time of observers at rest, so those
+> observers move through the universe over cosmic time in a geometrically fixed manner. **The two agree on the
+> function and share nothing beneath it.**
+>
+> **WHERE THE FIELD EQUATIONS ACT: the leaf, and there in full.** All stress-energy gravitates, by the ordinary
+> Friedmann readout of the self-gravitating congruence. The perturbations, the plasma's sound horizon and its
+> diffusion length run *in* the content and take that rate; a comoving separation read across leaves takes the
+> stacking rate. **What is kept apart is not two physics but one physics and its projection** — carried on the
+> layer, then projected, never the projection's machinery run as the existent (P7 `sec:CR-FLRW`).
+>
+> **⚠ "radiation-free rate" is retired, corpus-wide, and occurs zero times (r3401–r3404).** It named the rate by
+> a component it lacks, which presupposes the rate is built from components at all. Say **the geometric rate**,
+> **the stacking rate**, or **fixed by α and x₀**. The failure it invited is on record and is worth knowing:
+> *radiation-free → ΛCDM minus a term → the remaining term is matter → content sets the rate → the constraint
+> and the rate share a ρ_tot.* P7 `sec:CR-FLRW` names it in advance — *"computations imported wholesale into CR
+> silently re-impose the synchronous identification, collapsing the non-synchronous ontology back onto its own
+> shadow and returning a straw cosmology"* — together with its inverse, *"mistaking the layer's ontological rate
+> for the appearance and refusing it its physics."*
+
 > ### ★ PROTECTED TERM (r3389) — "branch point" means $r=0$, and nothing else
 > *The word carried three senses across sixteen papers and ~278 occurrences, and one of them named the very
 > locus $r=0$ has to be told apart from. It produced flat contradictions **inside single papers**: P5 said both
