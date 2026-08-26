@@ -361,69 +361,35 @@ traversed in decreasing angle.  **Neither was a defect.**
 
 ---
 
-## (18) THE RADIATION AMPLITUDE MAY NOT BE AN INDEPENDENT DATUM — and p0 ruled out the wrong point
+## (18) FALSIFIED — the horizon supplies a READING, not a RULE, and p0 was right
 
-**p0 `sec:residue` closes this structurally:**
+**The proposal was:** p0 `sec:residue` closes the derivation of `rho_r/rho_m` structurally
+(*"a quantity that changes along the leg has no single value for a handover to transmit"*), and
+the transit's distinguished loci --- the horizon, the turnaround, the fixed `2^(2/3)` between
+them --- might reopen it, since P16's `T_pk ~ 174 MeV` is M-INDEPENDENT (`GM/R_s c^2 = 1/2`
+identically).
 
-> *the derivation from the progenitor collapse **cannot be delivered, for a structural reason
-> rather than for want of work** ... rho_r/rho_m ~ 1/a --- **a quantity that changes along the
-> leg has no single value for a handover to transmit**, and the progenitor's value at its own
-> maximum is a reading taken at one point on a curve.*
+**IT FAILS, AND FOR EXACTLY p0's STATED REASON.**  The datum is `z_onset` --- P15: *"rho_r/rho_m
+~ 2 is ... not a second inherited number standing beside z_onset but z_onset itself"*.  Getting
+from the horizon value down to `2` requires an expansion factor of order `10^9`, **which is
+WHERE the onset is --- the very thing the datum specifies.**  The horizon gives a reading of the
+clock at a different time; it gives no rule for where to read it later.  **p0's argument
+survives a serious attempt**, which is worth recording.
 
-**The premise was true when the leg had no distinguished loci.  It now has three** (the horizon
-at -6M, the turnaround at -3.7798M, and the fixed 2^(2/3) between them), and the horizon is
-not an arbitrary reading.
+⚠ **AND THE ARITHMETIC IN THE FIRST VERSION OF THIS ENTRY WAS BUILT ON AN IMPORT.**  It divided
+by `omega_m/omega_b = 6.39` --- a COLD DARK MATTER abundance taken from LambdaCDM --- and then
+reported that the result "reproduced" P15's `T_onset ~ 1.6 eV` as if that were an independent
+check.  **It was a fit with a borrowed knob.**  Searched all `.tex`: **the corpus contains no
+dark matter anywhere** --- no `Omega_c`, no CDM component; every hit is `LambdaCDM` as the name
+of the model compared against.  P8's matter is *the bend off pure de Sitter*, pressureless dust
+with no species split.  The numerology is void, not adjusted.
 
-**AT THE HORIZON, WITH BOTH COMPONENTS AT ONE TEMPERATURE:**
-
-    rho_r/rho_m |_hor  =  [ pi^4 g* / (60 zeta(3)) ] * T_pk / (eta m_N)
-
-and **T_pk is M-INDEPENDENT** --- P16's peak is the infall energy, GM/R_s c^2 = 1/2
-identically, so T_pk ~ 174 MeV whatever the progenitor.  On the right-hand side g* is Standard
-Model content, m_N is fixed, and **eta is the inherited datum.  M_prog, chi_0 and E do not
-appear.**  d ln(rho_r/rho_m) / d ln eta = -1 exactly.
-
-**p0 rules out "the progenitor's value at its own maximum" and is right to --- the maximum IS
-an arbitrary reading.  The horizon is not.**  p0 ruled out the wrong point on the curve,
-because when it was written the leg had no loci.
-
-**IF IT HOLDS:** the corpus's "one measured cosmological initial condition" is not independent
---- it is **eta**, which flat LambdaCDM already carries.  One tunable datum goes to zero NEW
-ones, which is exactly what P6's R2 rewards.
-
-**NOT A CLAIM YET.  Three things stand in the way, in order:**
-
-**(1) SETTLED at r3392 — the ~2 is AT THE ONSET, and the datum is z_onset.**  P15 says so in its
-own voice: *"rho_r/rho_m at onset is omega_r(1+z_onset)/omega_m and equality is 1+z_eq =
-omega_m/omega_r, so both divide by that one quantity --- and rho_r/rho_m ~ 2 is therefore **not
-a second inherited number standing beside z_onset but z_onset itself**, read in units of a
-density the construction does not determine."*  So there is no physics contradiction with p0's
-"diverges at the branch point" --- different loci.  One sentence called it *"the BRANCH-POINT
-radiation amplitude"*; it now reads *"the onset redshift z_onset, equivalently the radiation
-amplitude rho_r/rho_m ~ 2 AT ONSET"*.  Value: `~2.0` at Omega_m = 0.3066, about twice
-matter--radiation equality.
-
-**AND SETTLING IT SHOWS (18) AND THE L2 CONTENT TRANSIT ARE ONE QUESTION.**  The datum is
-z_onset, so connecting the horizon's eta-determined value to it requires the ratio's run from
-the horizon to the onset.  rho_r/rho_m ~ 1/a, and **the lift takes a -> 0**, so on the vacuum
-bead the two are separated by an infinite factor and the horizon value transmits nothing.  The
-route survives only if the CONTENT does not follow the vacuum bead's a -> 0 --- which is
-exactly the L2 transit.  **So (18) does not stand or fall on its own; it stands or falls on the
-bent transit.**  What survives independently is the dependence result: at the horizon the ratio
-is fixed by eta and fixed constants, with M_prog, chi_0 and E absent.
-
-**(1-old) THE INCONSISTENCY AS ORIGINALLY WRITTEN.**  P15 calls it *"the BRANCH-POINT
-radiation amplitude rho_r/rho_m ~ 2 that calibrates the acoustic scale"*, while p0 and P16 both
-say rho_r/rho_m ~ 1/a **diverges** at the branch point.  **Both cannot be literal.**  Until the
-evaluation locus is pinned, the horizon value (2.5e10 at g*=61.75) and the deposit (~2) cannot
-be connected.  **This is not a physics computation --- it is reading what P15 means and making
-the corpus say one thing.**  It is also the form of `PO-13`'s own open item, *what the
-construction says the datum should be at the onset*: **this is that datum.**
-
-**(2) g* IS THE WEAK LINK NUMERICALLY.**  T_pk = 174 MeV sits on the QCD crossover: g* = 61.75
-above, 17.25 below --- **a factor 3.6 in the horizon value from a 20 MeV shift.**
-
-**(3) THE LIFT.**  Connecting the horizon value to any later one crosses a segment of zero
-cosmic time, and P7's sorting rule --- cosmic-time quantities continuous, path-length
-quantities free to differ --- has never been applied to a RATIO of two species that dilute
-differently.
+**WHAT IS LEFT STANDING IS A QUESTION FOR THE CORPUS, NOT A RESULT.**  P15 line 224 lists what
+the cosmology uses: *"`Omega_m`, which the rate carries and the baryon-acoustic data fix;
+`omega_b` and `omega_gamma`, which the sound speed carries and which are measured directly and
+framework-independently"*, and line 128 has the fitted `Omega_m` reproducing *"the
+microwave-background-inferred physical matter density"*.  So the fits carry `Omega_m ~ 0.3066`
+and `omega_b ~ 0.022`, **a factor of ~6 apart, and the corpus nowhere says what the difference
+is.**  Given P14 derives an SM-only matter sector, that is either deliberate --- the bend is
+dust, dust need not be baryons, and the excess is measured content exactly like `eta` --- or a
+gap.  **NOT DECIDED HERE, and not to be filled by importing one.**
