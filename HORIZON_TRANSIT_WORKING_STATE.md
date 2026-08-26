@@ -393,3 +393,55 @@ and `omega_b ~ 0.022`, **a factor of ~6 apart, and the corpus nowhere says what 
 is.**  Given P14 derives an SM-only matter sector, that is either deliberate --- the bend is
 dust, dust need not be baryons, and the excess is measured content exactly like `eta` --- or a
 gap.  **NOT DECIDED HERE, and not to be filled by importing one.**
+
+---
+
+## (19) THE L2 TRANSIT — RESOLVED, AND THE QUESTION WAS MALFORMED
+
+**The question was:** the 14.13 Gyr is a VACUUM number; the content bends the cut, so what is
+the bent transit?  **There is no bent transit.**  14.13 Gyr is an interval of `Re tau-tilde`,
+the contour parameter.  The plasma gravitates on the **leaf's local rate**.  These are the two
+rates of the corpus's own decomposition, and P7's panel (C) already labels the two sides of
+the lap in exactly these terms — *"INWARD (collapse): leaf local rate, RADIATION GRAVITATES"*
+against *"OUTWARD (expansion): foliation stacking rate, RADIATION-FREE"* — with the handover at
+`Re tau-tilde = 0`.
+
+**ONE PASSAGE, TWO DURATIONS, BOTH CORRECT:**
+
+| clock | transit duration |
+|---|---|
+| stacking / contour parameter `Re tau-tilde` | **14.13 Gyr** |
+| the plasma's own leaf rate at `T_pk = 174 MeV` | **2.0e-5 s** |
+| at the turnaround, `T = 276 MeV` | 8.1e-6 s |
+
+`H_leaf / H_stack = 2.5e22`.
+
+**AND THE 2e-5 s IS THE STANDARD QCD-EPOCH HUBBLE TIME.**  Not an input: it falls out of
+`rho_r = (pi^2/30) g* T^4` at `T_pk`, and `T_pk` is the M-independent infall scale
+(`GM/R_s c^2 = 1/2` identically).  So the plasma's own transit is the ordinary QCD epoch, of
+ordinary duration.
+
+**THIS RETIRES THE OBJECTION CARRIED SINCE (12):** *a 174 MeV plasma held for fourteen billion
+years*.  **It is never held.**  On its own clock the transit is twenty microseconds.  The
+`~10^29` weak times become `~10^15` — still full equilibrium, still exactly what a freeze-out
+calculation assumes, and now for a reason rather than by inspection.  BBN is untouched, and the
+reason is structural rather than numerical.
+
+**WHAT WAS ACTUALLY WRONG WITH THE QUESTION.**  It asked how the content's bend changes
+14.13 Gyr.  It does not: that number is the contour parameter, not the content's clock.  Two
+rates, one passage — nothing bent, nothing missing.
+
+---
+
+## WHERE THIS LEAVES THE OPEN LIST
+
+- **(18) falsified** — the horizon gives a clock reading, not a rule; p0's closure survives.
+  The `Omega_m` question it left standing is answered in P15 at r3394.
+- **(19) resolved** — the L2 transit was a category error, dissolved by the two-rate rule.
+- **STILL OPEN: the species / baryon-number crossing.**  Species is the region label `sign(r)`;
+  `R` is a reflection and the crossing a continuation; charge closes from the field, never the
+  geometry.  So nothing is said to happen *to* the content.  And P16's structural reason `eta`
+  stays empirical is that thermalization erases composition and **what survives is baryon
+  number** — which is precisely what the crossing reverses.  That may be exactly what
+  "relational, CPT" means.  **It has never been stated, let alone worked, and it is now the
+  only open item this work has raised.**
