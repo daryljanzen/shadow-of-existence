@@ -11,6 +11,9 @@ STATUS: ✔✔   RUN: python3 P08_synchronous_horosphere.py   RUNTIME: ~5s
 CONTROL: eta(X,B) is INDEPENDENT of the transverse x,y,z (same on a whole slice) -- that is why its level
   sets are exactly the flat slices; the comoving-worldline limit recovers X~e^{tau/a}A (future null generator).
 ORIGIN: built new r1363 (P8 cited no receipts; the claim is a "direct computation", not a numbered prop).
+LEVEL: L3.  The synchronous projection, derived: the flat slices are the level sets of eta(X,B),
+  piling onto the null plane through B as tau -> -inf.  This is the shadow's own geometry -- read it
+  as the appearance, never run it as the existent (P7 sec:CR-FLRW).
 """
 import sympy as sp
 def check(t,c): print(f"  [{'PASS' if c else 'FAIL'}] {t}"); return bool(c)

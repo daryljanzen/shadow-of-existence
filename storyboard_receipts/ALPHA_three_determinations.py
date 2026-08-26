@@ -1,7 +1,7 @@
 """ALPHA — THREE INDEPENDENT DETERMINATIONS OF alpha, spanning stellar ages to z = 1091.
 
 THE STRUCTURE BEING TESTED.  CR computes r_s and r_d on the LEAF rate (content-carrying, radiation
-included) and all distances on the STACKING rate (radiation-free).  That two-rate split is what is
+included) and all distances on the STACKING rate (set by alpha and the offset x_0).  That two-rate split is what is
 under test; it was shown at r2128-9 to be favoured over a one-rate reading at 17 sigma on l_A alone.
 
 WHAT IS INPUT AND WHAT IS DERIVED -- the accounting matters more than the numbers.

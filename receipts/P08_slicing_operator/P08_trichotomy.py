@@ -9,6 +9,10 @@ COMPUTES: DERIVES both cosmological embeddings' induced metrics from the 5D Mink
   the intrinsic Ricci scalar ^3R of unit S^3 (+6) and unit H^3 (-6) -> ^3R=6k, hence 6k/a^2 at radius a;
   and reads -k=E^2-1 off (dr/dtau)^2=(E^2-1)+2M/r+r^2/a^2. CONTROL: k=0 (E=1) is the flat leaf of prop:cosmo.
 ORIGIN: built new r1362 (P8 cited no receipts; closes P8's inventory).
+LEVEL: L1.  The curvature trichotomy IS the energy family: -k = E^2 - 1, derived from the 5D
+  embedding with ^3R = 6k/a^2 computed for unit S^3 and H^3.  So k=0 <=> E=1 is a theorem about the
+  substrate's slicings; flatness is the MARGINAL MEMBER of one geodesic congruence, not a selection
+  among three universes.
 """
 import sympy as sp
 def check(t,c): print(f"  [{'PASS' if c else 'FAIL'}] {t}"); return bool(c)

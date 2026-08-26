@@ -9,6 +9,10 @@ P08_E1_cosmology.py -- verifies prop:cosmo (the E=1 cosmology): the marginally-b
 STATUS: ✔✔   RUN: python3 P08_E1_cosmology.py   RUNTIME: ~4s
 CONTROL: E<1 (bound) turns around ((dr/dtau)^2=E^2-f has a root); E=1 (marginal) never does (2M/r+r^2/a^2>0).
 ORIGIN: built new r1361 (P8 cited no receipts).
+LEVEL: GENERATES L1.  The stacking rate is obtained by dividing the E=1 geodesic equation by r^2,
+  on the vacuum kernel: H^2 = (dr/dtau)^2/r^2 = 2M/r^3 + 1/alpha^2.  No Friedmann constraint is used
+  to GET the rate; coth^2 = 1 + csch^2 splits the already-derived rate and only then is the remainder
+  NAMED 8pi rho/3.  The cut is primary and rho the name of its bend -- the leftward reading, in code.
 """
 import sympy as sp
 def check(t,c): print(f"  [{'PASS' if c else 'FAIL'}] {t}"); return bool(c)

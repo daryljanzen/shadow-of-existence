@@ -9,6 +9,9 @@ P08_matter_functional.py -- verifies P8's matter functional, vacuum kernel, and 
 STATUS: ✔✔   RUN: python3 P08_matter_functional.py   RUNTIME: ~8s
 CONTROL: a straight cut (m'=0) is vacuum; a bent cut (m'!=0) has rho=m'/(4 pi r^2) != 0 (density IS the bend).
 ORIGIN: built new r1359 (P8 cited no receipts).
+LEVEL: PRE-LEVEL -- this receipt PRODUCES the level distinction rather than computing on one.
+  Einstein's equations applied to the construction gauge; no rate, no density parameter, no scale
+  factor enters. G=8piT -> the vacuum kernel is the SdS family, two constants and no more.
 """
 import sympy as sp
 def check(t,c): print(f"  [{'PASS' if c else 'FAIL'}] {t}"); return bool(c)

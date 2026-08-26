@@ -7,6 +7,9 @@ that the lap continues all the way from r=0 to the seam, which is like the first
 years, after which the effective densities become Lambda dominated." Worked at that weight.
 
 VERDICTS ARE ASSERTS, and each was written after its output was read (r1676's rule).
+LEVEL: L1 READING.  The comoving acceleration is the existent slice's own Gaussian curvature,
+  d^2r/dtau^2 = r K_G, so the deceleration-to-acceleration turnover is the slice's flat locus.
+  A property of the layer, read on the layer.
 """
 import sympy as sp, math
 r, al, M = sp.symbols('r alpha M', positive=True)
@@ -66,7 +69,7 @@ print()
 print("BOUND, do-not-assert:")
 print("  * (1) holds on EVERY member of the energy family -- E cancels from the acceleration.")
 print("  * (3) is the Nariai member's own onset condition; the onset statement is flat matter+Lambda,")
-print("    which CR's radiation-free rate reproduces.")
+print("    which CR's geometric rate reproduces.")
 print("  * Nothing here claims the seam CAUSES the turnover or vice versa. The claim is that")
 print("    they are one locus, because acceleration is r*K_G and the seam is where K_G vanishes.")
 print("  * The dating inherits H0 (Lambda is inferred), per PHYSICAL_VALUES_LEDGER section B.")

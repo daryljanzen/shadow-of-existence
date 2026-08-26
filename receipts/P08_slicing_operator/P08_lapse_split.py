@@ -10,6 +10,9 @@ STATUS: ✔✔   RUN: python3 P08_lapse_split.py   RUNTIME: ~9s
 CONTROL: A=f*g(r) with g non-constant gives p_r+rho = (f/r) g'/g != 0 -- general radial pressure, fixed by
   the RATE of the lapse's divergence; A=f (g=const) returns p_r=-rho.
 ORIGIN: built new r1360 (P8 cited no receipts).
+LEVEL: GENERATES THE L1/L2 SPLIT.  G^t_t is INDEPENDENT of the lapse A, so the density belongs to
+  the leaf f alone while the rate belongs to A; the independence is DERIVED, not asserted.  This is
+  the receipt behind 'content never enters the rate the foliation stacks at'.
 """
 import sympy as sp
 def check(t,c): print(f"  [{'PASS' if c else 'FAIL'}] {t}"); return bool(c)
