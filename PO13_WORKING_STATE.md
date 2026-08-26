@@ -119,49 +119,45 @@ BAO $\chi^2$ flat in $H_0$ and returns the abundances is the rate that puts the 
 
 ---
 
-## ⌗ FROM THE HORIZON-TRANSIT LINE (r3397) — THE INTERVAL, AND A MIS-ASSIGNMENT CLEARED
+## ⌗ FROM THE HORIZON-TRANSIT LINE — r3397 WAS WRONG, RETRACTED AT r3398
 
-**The open item was:** *`P15` argues the condition at the branch point and applies it at the
-onset without stating what happens between.*  What happens between is now stated.
+⛔ **EVERYTHING r3397 APPENDED HERE IS WITHDRAWN.**  It rested on one error: I computed
+`rs = integral from z_rec to INFINITY`.  **The plasma begins at the onset**, so the integral is
+`rs = integral from z_rec to z_onset` — which `P15` states in the sentence I read past: *"the
+standard radiation-governed rs is recovered only in the limit `z_onset -> infinity` that a
+beginning at finite curvature forbids."*  With the correct limit:
 
-**① EVERY ACOUSTIC MODE RE-ENTERS THE HORIZON INSIDE THAT INTERVAL.**  At the branch point
-`aH -> infinity`, so every mode is outside and frozen; at the onset `k_hor ~ 0.010 /Mpc` against
-`k_peak ~ 0.021 /Mpc`, so all are inside.  On P15's own rate the re-entries are at
-`z ~ 2.5e4` (n=1) through `~3e6` (n=10) --- spread over two decades, all before the onset.
-`k_hor(onset)` computes to `0.0103 /Mpc`, reproducing P15's quoted `~0.010`.
-
-**② THE INTERVAL CANNOT IMPRINT ANYTHING k-DEPENDENT, AND THE REASON IS EXACT.**  On the
-radiation-free rate at high z, `r_s(z) = (2c/sqrt3)/(H0 sqrt(Om) sqrt(1+z))` and
-`k_hor(z) = H0 sqrt(Om) sqrt(1+z)/c`, so at a mode's OWN re-entry
-
-        k r_s |_re-entry  =  2/sqrt3  =  1.154700538   EXACTLY
-
---- independent of `k`, `H0` and `Om`.  Oscillation onset (`k r_s ~ 1`) and horizon entry
-(`k r_s = 2/sqrt3`) are the same event for every mode, always, so there is no separate entry a
-mode could carry a phase memory of.  `r_s -> 0` at the branch point, so the solution is the
-ordinary adiabatic `cos(k r_s)` measured from there, peaks at `n pi`.  **The offset is not in
-the re-entry.  A tenth handle eliminated, and eliminated structurally rather than numerically.**
-
-**③ A MIS-ASSIGNMENT FOUND AND CLEARED --- WHICH DOES NOT RESCUE THE PEAK.**  `P15`
-`sec:properframe` listed *"a process running in the content---rs, r_D, recombination, the
-perturbations---takes the leaf's [rate]"*, and `P7`'s figure caption said the same of the
-plasma's sound horizon.  **That contradicts the decision rule stated four sentences earlier in
-the same paragraph** --- *"a self-gravitating local excursion runs on L2, diffuse content riding
-the global foliation on L1"* --- and contradicts the same paragraph's own warning that *"the
-radiation-sourced L2 rate carried past the branch point radiation-pins rs and re-manufactures
-the very tension this section dissolves."*  Our recombination-era plasma is diffuse content on
-the global foliation, so `rs` is L1.  Both passages fixed at r3397.
-
-**THE SIZE OF WHAT WAS AT STAKE, AND WHY IT IS NOT AN ESCAPE:**
-
-| assignment | `rs` | `pi/theta_*` | `theta_*` across H0 67.4 -> 73 |
+| H0 | rs | D_M | theta_* |
 |---|---|---|---|
-| leaf (the error) | 145.25 Mpc | 304.6 | 0.010312 -> 0.010729, **moves** |
-| stacking (correct) | **257.72 Mpc** | **171.7** | 0.018297 -> 0.018297, **constant** |
+| 67.4 | 147.01 | 14085 | **0.010437** |
+| 70.0 | 141.55 | 13562 | **0.010437** |
+| 73.0 | 135.73 | 13005 | **0.010437** |
 
-The leaf assignment would have put the comb where the sky is and re-coupled `theta_*` to `H0`,
-undoing the tension dissolution --- `Omega_r = omega_r/h^2` makes the radiation term
-`H0`-independent, so it does not scale out.  **The framework's own rule forbids it.**  So `rs`
-stays radiation-free, `pi/theta_*` stays at `171.7` --- inside this row's reported `172-188` ---
-and **PO-13's central finding is confirmed from the outside**: the offset and the Hubble
-resolution are one fact, and there is no bookkeeping error underneath it.
+**theta_* is exactly constant across H0 and equals 0.010437 against the observed 0.010411 —
+0.25%.**  The mechanism works exactly as P15 describes: both `rs` and `D_M` carry the common
+`1/H0`, the single parameter `z_onset` sets the scale, and it is met at the DIRECTLY measured
+`H0`.  **There was no fork, no mis-assignment worth a factor 1.77, and no comb at 171.7.**  The
+`257.72 Mpc` came from integrating through a region where there is no plasma.
+
+⛔ **The `2/sqrt3` re-entry result is withdrawn too**, for the same reason: it used
+`rs(z) -> 0` as `z -> infinity`, and `rs` does not extend above the onset.
+
+---
+
+## ⌗ WHAT SURVIVES, AND IT IS CR-NATIVE
+
+**The acoustic modes re-enter the horizon BEFORE the plasma exists.**  On the rate, re-entry for
+`k ~ pi/rs` is at `z ~ 2.5e4`; the onset is at `z_onset ~ 6797`.  So at the onset the modes are
+inside the horizon and **frozen — there is no plasma for them to oscillate in yet.**  That is
+what `prop:subhorizon` establishes, read forward.
+
+**So the plasma turns on with every mode already sub-horizon and at rest, and they all begin
+oscillating AT THE SAME MOMENT.**  The phase each carries at recombination is
+`k * rs(z_rec)` with `rs` measured **from the onset** — a COMMON START TIME, not a common
+`k rs = 0`.  **That is not the standard initial condition**, which has each mode's oscillation
+matched at `k rs -> 0` in a radiation era this construction does not have.
+
+**This is the interval's actual content, and it is where PO-13's question lives.**  What has NOT
+been done: what a common-start-time initial condition does to the comb, worked from the
+construction alone.  **Not to be estimated by importing a LambdaCDM peak-shift factor** — that
+factor is the product of radiation driving and a potential decay this rate does not have.
