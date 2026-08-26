@@ -358,3 +358,53 @@ blue appear top and bottom on the hyperboloid.  And the panel B / panel F "colou
 was a misreading of a source comment that lists the arcs in increasing angle while the bead is
 traversed in decreasing angle.  **Neither was a defect.**
 
+
+---
+
+## (18) THE RADIATION AMPLITUDE MAY NOT BE AN INDEPENDENT DATUM — and p0 ruled out the wrong point
+
+**p0 `sec:residue` closes this structurally:**
+
+> *the derivation from the progenitor collapse **cannot be delivered, for a structural reason
+> rather than for want of work** ... rho_r/rho_m ~ 1/a --- **a quantity that changes along the
+> leg has no single value for a handover to transmit**, and the progenitor's value at its own
+> maximum is a reading taken at one point on a curve.*
+
+**The premise was true when the leg had no distinguished loci.  It now has three** (the horizon
+at -6M, the turnaround at -3.7798M, and the fixed 2^(2/3) between them), and the horizon is
+not an arbitrary reading.
+
+**AT THE HORIZON, WITH BOTH COMPONENTS AT ONE TEMPERATURE:**
+
+    rho_r/rho_m |_hor  =  [ pi^4 g* / (60 zeta(3)) ] * T_pk / (eta m_N)
+
+and **T_pk is M-INDEPENDENT** --- P16's peak is the infall energy, GM/R_s c^2 = 1/2
+identically, so T_pk ~ 174 MeV whatever the progenitor.  On the right-hand side g* is Standard
+Model content, m_N is fixed, and **eta is the inherited datum.  M_prog, chi_0 and E do not
+appear.**  d ln(rho_r/rho_m) / d ln eta = -1 exactly.
+
+**p0 rules out "the progenitor's value at its own maximum" and is right to --- the maximum IS
+an arbitrary reading.  The horizon is not.**  p0 ruled out the wrong point on the curve,
+because when it was written the leg had no loci.
+
+**IF IT HOLDS:** the corpus's "one measured cosmological initial condition" is not independent
+--- it is **eta**, which flat LambdaCDM already carries.  One tunable datum goes to zero NEW
+ones, which is exactly what P6's R2 rewards.
+
+**NOT A CLAIM YET.  Three things stand in the way, in order:**
+
+**(1) A LIVE INCONSISTENCY ABOUT WHERE THE ~2 IS EVALUATED.**  P15 calls it *"the BRANCH-POINT
+radiation amplitude rho_r/rho_m ~ 2 that calibrates the acoustic scale"*, while p0 and P16 both
+say rho_r/rho_m ~ 1/a **diverges** at the branch point.  **Both cannot be literal.**  Until the
+evaluation locus is pinned, the horizon value (2.5e10 at g*=61.75) and the deposit (~2) cannot
+be connected.  **This is not a physics computation --- it is reading what P15 means and making
+the corpus say one thing.**  It is also the form of `PO-13`'s own open item, *what the
+construction says the datum should be at the onset*: **this is that datum.**
+
+**(2) g* IS THE WEAK LINK NUMERICALLY.**  T_pk = 174 MeV sits on the QCD crossover: g* = 61.75
+above, 17.25 below --- **a factor 3.6 in the horizon value from a 20 MeV shift.**
+
+**(3) THE LIFT.**  Connecting the horizon value to any later one crosses a segment of zero
+cosmic time, and P7's sorting rule --- cosmic-time quantities continuous, path-length
+quantities free to differ --- has never been applied to a RATIO of two species that dilute
+differently.
