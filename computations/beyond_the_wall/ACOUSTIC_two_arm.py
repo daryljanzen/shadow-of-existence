@@ -94,6 +94,16 @@ ag = np.logspace(-9, 0, 40000)
 _seed = float(quad(lambda a: C / (a ** 2 * Hphys(a)), 1e-16, ag[0], limit=200)[0])
 eg = np.concatenate([[_seed], _seed + cumulative_trapezoid(C / (ag ** 2 * Hphys(ag)), ag)])
 Hc_of = CubicSpline(eg, ag * Hphys(ag) / C)                       # comoving Hubble, 1/Mpc
+# ** PHASEONLY=1: reckon ONLY the oscillator's phase in leaf conformal time, nothing else.
+# The leaf rate is the radiation-INCLUDED Friedmann readout (P15 sec:properframe: "the expansion
+# scalar of a self-gravitating congruence"); d(eta_leaf)/d(eta_stack) = H_stack/H_leaf.  Scaling the
+# photon PRESSURE (restoring) term by phi^2=(H_stack/H_leaf)^2 makes the sound frequency k c_s -> k
+# c_s (d eta_leaf/d eta_stack) while friction, source and diffusion stay on the stacking clock -- the
+# PURE-CLOCK operation, isolated from LEAFPERT's full leaf dynamics.  Identically 1 in the lcdm arm
+# (Hphys already carries radiation, so H_stack==H_leaf), so it is a provable no-op there. **
+PHASEONLY = os.environ.get('PHASEONLY', '0') == '1'
+_Hleaf_g = H0 * np.sqrt(OM / ag ** 3 + OL + OR / ag ** 4)          # radiation-included leaf rate
+Phi2_of = CubicSpline(eg, (Hphys(ag) / _Hleaf_g) ** 2 if PHASEONLY else np.ones_like(ag))
 _rt = OR / ag ** 4 + OM / ag ** 3 + OL                            # ** the STACK, both arms **
 # ** GSRC=1: THE CONSTRAINT FACTOR.  The G^0_0 equation is k^2 Phi + 3H(Phi'+H Psi) = -4 pi G a^2
 # drho.  Writing the source as (3/2) H^2 sum(Om_i d_i) uses H^2 = (8 pi G/3) a^2 rho_tot -- the
@@ -361,6 +371,7 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         db = y[:, I_DB]
         F = y[:, 7:I_DB]
         Hc, Rb = float(Hc_of(e)), float(Rb_of(e))
+        PH2 = float(Phi2_of(e))                      # PHASEONLY clock factor (1 unless PHASEONLY)
         Ogv, Onv = float(Og_of(e)), float(On_of(e))
         Ocv, Obv = float(Oc_of(e)), float(Ob_of(e))
         sig = F[:, 0] / 2
@@ -386,7 +397,7 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         out[:, 0] = -tc + DRC * 3 * Php
         out[:, 1] = -Hc * tc + DRE * kk ** 2 * Ps
         out[:, 2] = -(4 / 3) * tg + DRC * 4 * Php
-        out[:, 3] = (-(Hc * Rb / (1 + Rb)) * tg + (kk ** 2 / (1 + Rb)) * dg / 4
+        out[:, 3] = (-(Hc * Rb / (1 + Rb)) * tg + PH2 * (kk ** 2 / (1 + Rb)) * dg / 4
                      + DRE * kk ** 2 * Ps - kk ** 2 * sgg / (1 + Rb) - slip * tg)
         out[:, 4] = -(4 / 3) * tn + DRC * 4 * Php
         out[:, 5] = kk ** 2 * (dn / 4 - sig) + DRE * kk ** 2 * Ps
@@ -696,6 +707,7 @@ def evolve_hier(kk, t_eval, e_sw, yF):
         F = y[:, I_FG:I_GG]
         G = y[:, I_GG:]
         Hc, Rb = float(Hc_of(e)), float(Rb_of(e))
+        PH2 = float(Phi2_of(e))                      # PHASEONLY clock factor (1 unless PHASEONLY)
         Ogv, Onv = float(Og_of(e)), float(On_of(e))
         Ocv, Obv = float(Oc_of(e)), float(Ob_of(e))
         tp = float(taup_of(e))
@@ -711,7 +723,7 @@ def evolve_hier(kk, t_eval, e_sw, yF):
         out[:, 2] = -(4 / 3) * tg + DRC * 4 * Php
         # ** the photon Euler equation now exchanges momentum with the baryons instead of sharing
         # their velocity, and the quadrupole is a STATE and no longer a closure. **
-        out[:, 3] = kk ** 2 * (dg / 4 - sgg) + DRE * kk ** 2 * Ps + tp * (tb - tg)
+        out[:, 3] = kk ** 2 * (PH2 * dg / 4 - sgg) + DRE * kk ** 2 * Ps + tp * (tb - tg)
         out[:, 4] = -(4 / 3) * tn + DRC * 4 * Php
         out[:, 5] = kk ** 2 * (dn / 4 - sig) + DRE * kk ** 2 * Ps
         out[:, 6] = Php
