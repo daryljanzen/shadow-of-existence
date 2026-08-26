@@ -77,6 +77,11 @@ current: c54.19
 > **"Nariai point" is not an import — it is P5's own word**, already used at every one of its sites ("the two
 > Nariai points where two roots collide", "the discriminant changes sign across each Nariai point").
 >
+> **Cleared everywhere, including the receipts (r3390).** A record that quotes a claim the corpus no longer
+> makes is not a record; it is a live falsehood with a date on it. Twelve receipt sites were corrected, one of
+> which was doubly stale — it quoted P5's *"the **deck** group is $S_3$"* when P5 says the **monodromy** group
+> is $S_3$ and the deck group is trivial.
+>
 > **Retained, and deliberately:** *branched at Nariai*, *branched cover*, *branch set*, *branch convention*,
 > *algebraic branch point* (of a meromorphic invariant). **None is the protected noun naming a locus of the
 > lap**, and each states its own referent, so none can be misread. The rule is about the noun phrase **"the
