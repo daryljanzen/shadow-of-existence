@@ -393,7 +393,26 @@ ones, which is exactly what P6's R2 rewards.
 
 **NOT A CLAIM YET.  Three things stand in the way, in order:**
 
-**(1) A LIVE INCONSISTENCY ABOUT WHERE THE ~2 IS EVALUATED.**  P15 calls it *"the BRANCH-POINT
+**(1) SETTLED at r3392 — the ~2 is AT THE ONSET, and the datum is z_onset.**  P15 says so in its
+own voice: *"rho_r/rho_m at onset is omega_r(1+z_onset)/omega_m and equality is 1+z_eq =
+omega_m/omega_r, so both divide by that one quantity --- and rho_r/rho_m ~ 2 is therefore **not
+a second inherited number standing beside z_onset but z_onset itself**, read in units of a
+density the construction does not determine."*  So there is no physics contradiction with p0's
+"diverges at the branch point" --- different loci.  One sentence called it *"the BRANCH-POINT
+radiation amplitude"*; it now reads *"the onset redshift z_onset, equivalently the radiation
+amplitude rho_r/rho_m ~ 2 AT ONSET"*.  Value: `~2.0` at Omega_m = 0.3066, about twice
+matter--radiation equality.
+
+**AND SETTLING IT SHOWS (18) AND THE L2 CONTENT TRANSIT ARE ONE QUESTION.**  The datum is
+z_onset, so connecting the horizon's eta-determined value to it requires the ratio's run from
+the horizon to the onset.  rho_r/rho_m ~ 1/a, and **the lift takes a -> 0**, so on the vacuum
+bead the two are separated by an infinite factor and the horizon value transmits nothing.  The
+route survives only if the CONTENT does not follow the vacuum bead's a -> 0 --- which is
+exactly the L2 transit.  **So (18) does not stand or fall on its own; it stands or falls on the
+bent transit.**  What survives independently is the dependence result: at the horizon the ratio
+is fixed by eta and fixed constants, with M_prog, chi_0 and E absent.
+
+**(1-old) THE INCONSISTENCY AS ORIGINALLY WRITTEN.**  P15 calls it *"the BRANCH-POINT
 radiation amplitude rho_r/rho_m ~ 2 that calibrates the acoustic scale"*, while p0 and P16 both
 say rho_r/rho_m ~ 1/a **diverges** at the branch point.  **Both cannot be literal.**  Until the
 evaluation locus is pinned, the horizon value (2.5e10 at g*=61.75) and the deposit (~2) cannot
