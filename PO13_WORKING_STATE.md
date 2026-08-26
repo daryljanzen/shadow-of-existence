@@ -161,3 +161,62 @@ matched at `k rs -> 0` in a radiation era this construction does not have.
 been done: what a common-start-time initial condition does to the comb, worked from the
 construction alone.  **Not to be estimated by importing a LambdaCDM peak-shift factor** — that
 factor is the product of radiation driving and a potential decay this rate does not have.
+
+---
+
+## ⌗ AN INSTRUMENT MEASUREMENT (r3400) — THE CONSTRAINT FACTOR, AND WHY IT SETTLES NOTHING
+
+**PRECONDITION: this is downstream of `OWED` (624), which is OPEN.**  Every peak position below
+is a position of ONE OF TWO features, and which of them is the acoustic first peak is exactly
+what (624) has not settled.  **Read no `l_1` here as an `l_1`.**
+
+### What was changed, and why
+
+`ACOUSTIC_two_arm.py` builds the CR arm's `Hc` from `rho_tot` WITHOUT radiation
+(`RAD_IN_RATE=False`) while normalising the `Omega_i` in the `Phi` source to the full stack
+(`_rt`, marked *"the STACK, both arms"*).  The `G^0_0` constraint is
+`k^2 Phi + 3H(Phi' + H Psi) = -4 pi G a^2 drho`, and writing the source as
+`(3/2) H^2 sum(Om_i d_i)` uses `H^2 = (8 pi G/3) a^2 rho_tot` — the FRIEDMANN CONSTRAINT, which
+in CR is the **L2** leaf readout, *"the ordinary Friedmann readout with radiation gravitating
+normally"* (`P15` `sec:properframe`).  **The two `rho_tot` are not the same one**, so the source
+is short by `rho_tot(full)/rho_tot(free)` = **3.04 at the onset, 2.02 at equality, 1.33 at
+recombination**.  Added env-gated as `GSRC=1`, identically 1 in the `lcdm` arm, both `Phi`
+sites, **default OFF — the instrument is byte-identical to its committed form with the flag
+unset.**
+
+### What it measures
+
+| | features below `l=500` | all maxima | `l_1/l_A` | `P1/P2` | `P1/P3` |
+|---|---|---|---|---|---|
+| baseline `GSRC=0` | **172, 396** | 172, 396, 628, 908, 1188 | 0.5703 | 0.965 | 0.823 |
+| test `GSRC=1` | **196, 468** | 196, 468, 668, 940, 1204 | 0.6499 | **4.561** | 3.089 |
+| undriven (r3323) | one, at 268 | — | — | 2.104 | — |
+| sky | — | 220.6, 538.1, 809.8 | 0.7312 | 2.217 | 2.277 |
+
+### What that means, and what it does not
+
+**⑴ THE CONTINUUM GATE NOW PASSES, FOR BOTH ARMS.**  `KCONT=1` at 1200 modes — 5.8 points per
+Bessel period against the discrete ladder's 2.3 — returns the SAME positions to the digit in
+both configurations.  **Discreteness sets none of it**, which is the check the instrument has
+been asking for in its own output and which was outstanding.
+
+**⑵ IT DOES NOT REMOVE (624)'s EXTRA FEATURE.**  r3325 found that undriven, `DRC` alone and
+`DRE=0.42` each give ONE maximum below `l=500` while both couplings together give TWO.  **`GSRC=1`
+still gives two**, robust at every filter order.  It moves the pair (+24, +72) and WIDENS the gap
+between them, 224 -> 272.  It is not a rigid shift and it is not undoing whatever creates the
+second feature.
+
+**⑶ IT IS NOT SIMPLY MORE DRIVING.**  Driving takes `P1/P2` DOWN from the undriven 2.104 to
+0.965; this takes it UP to 4.561 — past undriven, opposite in sign to the driving axis.  So it is
+a different knob, and its attribution is open.
+
+**⑷ AND THE HEIGHT IS WORSE THAN IT WAS.**  56% low became 106% high.  By this row's own
+criterion — *no coefficient fixes both* — that is a failure, not a partial success.
+
+### The reading I will not make
+
+⛔ *"`l_1` improved from 172 to 196 against the sky's 220.6."*  **That sentence needs 196 to be
+the first peak, and (624) is open precisely on whether either 172 or 196 is.**  A two-feature
+spectrum compared against a three-peak sky at the leftmost feature is a comparison of unlike
+things until the feature identification is settled.  **(624) is the precondition, not a footnote
+to this.**

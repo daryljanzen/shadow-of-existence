@@ -95,6 +95,16 @@ _seed = float(quad(lambda a: C / (a ** 2 * Hphys(a)), 1e-16, ag[0], limit=200)[0
 eg = np.concatenate([[_seed], _seed + cumulative_trapezoid(C / (ag ** 2 * Hphys(ag)), ag)])
 Hc_of = CubicSpline(eg, ag * Hphys(ag) / C)                       # comoving Hubble, 1/Mpc
 _rt = OR / ag ** 4 + OM / ag ** 3 + OL                            # ** the STACK, both arms **
+# ** GSRC=1: THE CONSTRAINT FACTOR.  The G^0_0 equation is k^2 Phi + 3H(Phi'+H Psi) = -4 pi G a^2
+# drho.  Writing the source as (3/2) H^2 sum(Om_i d_i) uses H^2 = (8 pi G/3) a^2 rho_tot -- the
+# FRIEDMANN CONSTRAINT, which in CR is the L2 leaf readout "with radiation gravitating normally"
+# (P15 sec:properframe).  The CR arm's Hc is the L1 rate, built from rho_tot WITHOUT radiation,
+# while the Om_i are normalised to the full stack.  The two are not the same rho_tot, so the
+# source is short by rho_tot(full)/rho_tot(free).  This factor supplies it.  Identically 1 in the
+# lcdm arm, where the rate already carries radiation. **
+_free = OM / ag ** 3 + OL
+GSRC = os.environ.get('GSRC', '0') == '1' and not RAD_IN_RATE
+Gf_of = CubicSpline(eg, (_rt / _free) if GSRC else np.ones_like(_rt))
 Og_of = CubicSpline(eg, (1 - FNU) * (OR / ag ** 4) / _rt)
 On_of = CubicSpline(eg, FNU * (OR / ag ** 4) / _rt)
 # ** THE MATTER SECTOR IS SPLIT INTO BARYONS AND CDM AT c54.178. **  Until now it was ONE fluid
@@ -370,7 +380,7 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         # BSPLIT=0 restores the pre-c54.178 behaviour -- the whole matter sector at delta_c -- so
         # that the change can be MEASURED on this instrument rather than asserted.
         _mat = (Ocv * dc + Obv * db) if BSPLIT else ((Ocv + Obv) * dc)
-        Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc / 2) * (Ogv * dg + Onv * dn + _mat)
+        Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc * float(Gf_of(e)) / 2) * (Ogv * dg + Onv * dn + _mat)
         # ** DR multiplies EVERY coupling to the potential, at EVERY site. **
         out = np.empty_like(y)
         out[:, 0] = -tc + DRC * 3 * Php
@@ -694,7 +704,7 @@ def evolve_hier(kk, t_eval, e_sw, yF):
         Pi = F[:, 0] + G[:, 0] + G[:, 2]
         Ps = Ph - 6 * Hc ** 2 * (Onv * sig + Ogv * sgg) / kk ** 2
         _mat = (Ocv * dc + Obv * db) if BSPLIT else ((Ocv + Obv) * dc)
-        Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc / 2) * (Ogv * dg + Onv * dn + _mat)
+        Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc * float(Gf_of(e)) / 2) * (Ogv * dg + Onv * dn + _mat)
         out = np.zeros_like(y)
         out[:, 0] = -tc + DRC * 3 * Php
         out[:, 1] = -Hc * tc + DRE * kk ** 2 * Ps
