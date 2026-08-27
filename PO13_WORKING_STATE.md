@@ -220,3 +220,106 @@ the first peak, and (624) is open precisely on whether either 172 or 196 is.**  
 spectrum compared against a three-peak sky at the leftmost feature is a comparison of unlike
 things until the feature identification is settled.  **(624) is the precondition, not a footnote
 to this.**
+
+---
+
+## ⛭⛭⛭ THE LEAF-RATE CORRECTION AND WHAT IT LEAVES — the arc worked with node 58 (r3408+)
+
+*58 (chat) found the defect and holds the framework; cc54 (compute) ran the instrument.  Nothing
+below is routed into `P15` without a separate decision.  Read under `OWED` (624).*
+
+### THE DEFECT, AND THE FIX THE FRAMEWORK SELECTS
+The perturbation sector ran on the **L1 stacking rate**.  `P15` `sec:properframe` and `P7`'s
+rate-rule assign a process running in the content --- `rs`, `r_D`, recombination, **the
+perturbations** --- to the **L2 leaf rate** (radiation gravitating; `H_leaf` = the expansion scalar
+of a self-gravitating congruence, so `eta_leaf` is a real conformal time).  The discrepancy is
+`|Jac-1| = 0.128` at recombination, rising to `0.998` at `a = 1e-9` --- largest exactly where the
+driving is set.  `LEAFPERT=1` (committed r3408) puts the perturbations on the leaf rate by the exact
+chain rule `dY/deta_stack = (H_stack/H_leaf) F(Y, Hcal_leaf)`; `rs`, `D_M` and the projection keep
+the stacking rate (L1, as `sec:tensions` assigns them).  The framework's call, in 58's words: the
+perturbation sector is **L2 in full** --- equations, coefficients, and initial conditions.
+
+### THE GATE (RUN 1): PASSES
+`ARM=lcdm NK=900 LEAFPERT=1` returns `l_1 = 220`, identical to the flag-off control.  In the `lcdm`
+arm `H_leaf == H_stack` character-for-character, so LEAFPERT is a provable no-op; confirmed
+numerically at 2700 modes.  The implementation is sound; everything below inherits a validated gate.
+
+### (624) DISSOLVES --- BUT NOT THE WAY FIRST CLAIMED, AND THE FIRST CLAIM WAS AN ARTEFACT
+⚠ **Withdrawn (cc54, caught by 58): "the leaf rate removes the second feature (2 -> 1 below
+`l=500`)."**  That was a **fixed-ceiling artefact** --- LEAFPERT's second feature moved `396 -> 516`
+and crossed the fixed `l=500` line; nothing was removed.  r3325's own diagnostic shares the confound:
+it counts maxima below a fixed `l=500` across combs of **different spacing**, and a tighter comb puts
+more teeth under a fixed ceiling whether or not it has an extra one.  On the current instrument
+`DRE=0.42` gives **two** below 500, not the one r3325 recorded.
+⇒ **The scale-free replacement:** count no ceiling; read the **gap sequence**.  An extra feature is
+one anomalously short gap in an otherwise regular comb.  **No configuration** --- undriven, DRC-alone,
+`DRE=0.42`, baseline, LEAFPERT --- shows a short-gap intruder.  So **there was never an extra
+feature**; the "two vs one below 500" was always spacing, and **every `l_1` read across this arc is a
+real first peak.**  (624)'s premise is void.
+
+### WHAT LEAFPERT FIXES: THE FIRST GAP
+LEAFPERT's first gap is `l_2 - l_1 = 312`, against the control's `312` and the **sky's `317.5`** (1.7%).
+The baseline's was `224`.  PO-13's standing residual --- *"the pin sets the asymptotic spacing and
+leaves the first gap alone"* --- is **resolved by the leaf rate.**  The first peak is no longer the
+problem.
+
+### WHAT REMAINS: CR'S COMB IS UNIFORM WHERE THE SKY'S ALTERNATES
+The observable is `g2/g1`, the ratio of the second to the first gap --- **scale-free**, so it isolates
+the odd-even modulation from the overall `rs` shift.  The sky contracts the second gap
+(`317.5, 271.7`, `g2/g1 = 0.856`); the control does too (`312, 280, 304`, `0.897`).  **CR does not:**
+in **both** initial conditions the first two gaps are *exactly* equal --- default `312, 312`; the
+leaf-clock accumulated-phase IC `280, 280` --- so `g2/g1 = 1.00` under two ICs that moved every peak.
+This is **zero alternation**, robust, not a shortfall (to grid resolution `g2/g1 = 1.00 +/- 0.02`;
+the gap to the sky is 5--7 sigma).
+
+### THE INITIAL CONDITION IS NOT THE CAUSE (refuted)
+`CRPHI=entryleaf` (committed) gives each mode the pre-onset acoustic phase it would carry on the leaf
+clock (`phi(k)` up to `0.905 pi`).  It **shifts every peak** (`204,516,828 -> 196,476,756`) but leaves
+`g2/g1 = 1.00`.  A k-dependent starting phase relocates the comb; it cannot manufacture a
+compression/rarefaction asymmetry, which is dynamical (loading acting during the oscillation).  The
+late-start hypothesis (58's, honestly proposed and honestly killed) is refuted.  *NB the framework
+holds modes frozen before onset (no plasma), so `entryleaf`'s pre-onset acoustic history is a
+diagnostic, not the framework's IC; the framework's IC is `CRPHI=0`, frozen at onset, which every
+LEAFPERT run above used.*
+
+### THE LOADING IS NOT THE CAUSE EITHER (gated, and decomposed)
+`RBFAC` scales the baryon loading R consistently (sound speed and Euler inertia).
+**Gate --- loading drives the alternation:** the control at `R=0` gives `g2/g1 = 1.065` (no
+contraction) against `0.897` at the physical `R=0.6229`.  Removing the baryons removes the
+contraction.  So the alternation *is* loading-driven --- the mechanism claim is earned, not assumed.
+**But the CR shortfall is not the loading.**  Grid-matched (NK=700), the two arms have **nearly
+identical loading response** (local slope `d(g2/g1)/dR`: CR `-0.292`, control `-0.270`) and **different
+no-loading combs** (`R=0`: CR `1.182`, control `1.065`).  Decomposing the CR-minus-control gap at the
+physical loading (`0.103`): the no-loading comb contributes `+0.117` and the loading response `-0.014`
+--- i.e. the loading goes the *other* way (CR's is marginally the stronger).
+⇒ **Counterfactual (linearity-free):** give CR the control's no-loading comb (`1.065`) with CR's own
+loading and `g2/g1 = 0.883`, essentially the sky's `0.856`.  **The entire shortfall lives in the
+no-loading comb.**
+
+### SO THE RESIDUAL IS THE DRIVING, AND THE SIGN IS THIS WAY ROUND
+The no-loading comb is the driving's fingerprint (no baryon asymmetry at `R=0`).  **The chain, stated
+rather than concluded:** driving pulls the first peak inward, so `g1 = l_2 - l_1` grows, so `g2/g1`
+falls; therefore a **higher** `g2/g1` means **less** first-peak pull, i.e. **weaker** driving.  CR's
+`1.182` against the control's `1.065` therefore says **CR's driving is weaker.**  At `R=0` *both*
+no-loading combs **widen** (neither alternates); CR widens **more**, and the physical loading --- CR's,
+if anything marginally the stronger --- cannot overcome that larger head start.  This lands exactly
+where PO-13's own record pointed: *the standard driving shift is universal because every mode crosses
+during radiation domination, and a rate fixed by the geometry has no such crossing.*
+
+### THE SIZE OF THE SHORTFALL --- NONLINEAR, DO NOT QUOTE A SINGLE FACTOR
+The R-response is **curved**: successive local slopes are `-0.292, -0.218, -0.173` from `R=0`
+outward.  So the global-fit extrapolation (which gave `R=1.40`, "2.25x") is **not valid** --- it
+averages a curved response.  CR reaches the sky's `0.856` **somewhere near `R = 1.1`--`1.4`**
+(local slope gives `1.12`, interpolating the outer points gives `1.29`), i.e. **of order twice** the
+physical loading it has, with **no precise factor defined**.  The counterfactual above is the
+clean statement; the R-shortfall is order-of-magnitude only.
+
+### THE HEADLINE
+Not that CR misplaces the first peak --- **the leaf rate fixed that.**  Not the loading --- **CR's
+loading works.**  Not the initial condition --- **refuted.**  The residual is **the driving on a rate
+fixed by the geometry**, which under-produces the compression/rarefaction alternation: CR's comb is
+**uniform where the sky's alternates.**  Three independent routes converge on the one mechanism ---
+PO-13's driving-crossing record, this gap-alternation decomposition, and 58's rigid-rescale parity
+check.  *Method note: gap sequences not ceiling-counts; two configurations agree the alternation is
+zero; the mechanism gate (loading) was run before the mechanism was claimed; the shortfall factor is
+left as a nonlinear bracket rather than a fitted number.*
