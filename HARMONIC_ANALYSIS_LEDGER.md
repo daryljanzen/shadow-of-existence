@@ -170,6 +170,7 @@ margin behind it.*
 | `H16` | is `P13` really harmonically empty? | ⛔ **NO — THE GREP VERDICT WAS WRONG** r3461, **receipted** — *the obstruction is a Fourier argument and the escape is the character group* |
 | `H17` | does the corpus do harmonic analysis on its FINITE groups? | ⛔ **BITE** r3462, **receipted** — *yes, in a receipt appendix, and it is half of colourlessness* |
 | `H18` | `P11` says a **single** TT mode and `P10` a **tower** — which? | ⛔ **BITE** r3463, **receipted** — *they count different indices of one object* |
+| `H19` | is `P04`'s $1/\sqrt N$ the whole story? | ⛔ **BITE** r3465, **receipted** — *it is the white-noise limit; long modes are unaveraged and raise the floor* |
 
 ---
 
@@ -514,7 +515,7 @@ paper is irrelevant from a word count.***
 
 | paper | subject | estimate | reason |
 |---|---|---|---|
-| `P04` *modern parallax* | the redshift-isotropy floor | **HIGH** | ***CMB anisotropy IS a spherical-harmonic decomposition***, and the floor is a **mode-counting** argument, $N=d_{\rm lss}/R$ |
+| `P04` *modern parallax* | the redshift-isotropy floor | **HIGH — CONFIRMED, worked as `H19`** | ***CMB anisotropy IS a spherical-harmonic decomposition***, and the floor is a **mode-counting** argument, $N=d_{\rm lss}/R$ |
 | `P03` *SdS slicing curve* | the door, the hinge, **sky-angle periodicity** | **HIGH** | *periodicity is Fourier; and the cubic's roots are $(2/\sqrt3)\sin w_k$ — **a harmonic parametrisation***, used as such by the representation bake |
 | `P02` *the circle* | one homogeneous circle, $r(z)=M(1+\cos z)$ | **HIGH** | *a **periodic function on a circle** is the founding object of Fourier analysis* |
 | `P12` *algebroid* | the constraint algebra, structure **functions** | **MEDIUM** | *structure functions varying over a base; the flat-connection/representation content* |
@@ -528,3 +529,38 @@ paper is irrelevant from a word count.***
 
 ⇒ ***So the field's remaining work is seven papers, not two — and three of them are estimated HIGH.
 The "marginal" label applied to `p0` and `P09` was a word count speaking, and it is withdrawn.***
+
+---
+
+## ⛔⛭⛭ H19 — **`P04`'s FLOOR IN FOURIER: THE $1/\sqrt N$ IS A WHITE-NOISE LIMIT**
+
+*Estimated HIGH from contents before grepping, and confirmed. `P04` models a photon path as* ***"a tube
+binned into $N$ statistically independent cells of comoving size $R=8\,h^{-1}$ Mpc"*** *and takes the
+central limit theorem, $\sigma_{\rm path}=\sigma_{8,\rm eff}/(3\sqrt N)$.*
+
+**⌘ A PATH AVERAGE IS A WINDOW IN FOURIER SPACE**, *with variance $\int\!\mathrm dk\,P(k)|W(k)|^2$ and
+$|W|^2=\mathrm{sinc}^2(kL/2)$. At $L=9390\,h^{-1}$ Mpc, $N=1174$:*
+
+| $k$ | $1/L$ *(path)* | $3/L$ | $10/L$ | $1/R$ *(cell)* |
+|---|---|---|---|---|
+| $\lvert W\rvert^2$ | **0.919** | 0.442 | 0.037 | $0.000$ |
+
+⇒ ***So the $1/\sqrt N$ is the WHITE-NOISE limit, exact for $k\gg1/L$. Modes with $k\lesssim1/L$ are
+not averaged down at all — they contribute COHERENTLY along the whole path.***
+
+**⌗ AND IT MOVES THE RESULT THE RIGHT WAY.** *Coherent contributions **add** to the scatter, so the
+true floor is **higher** than the cell estimate.* `P04` *states that* ***"every choice in the estimate
+biases it downward, so the number is a floor"*** *— and this is a further instance of exactly that,
+**through a channel its own robustness checks ($\sigma_8$ normalisation, correlated cells) do not
+cover**. The harmonic form **strengthens** the exclusion.*
+
+**⌘ AND THE MODES RESPONSIBLE ARE THE LOWEST MULTIPOLES.** *With $\ell\sim kD_C$ and $D_C=L$, the
+unsuppressed band is $\ell$ of order a few.* ⇒ ***That is the same range at which the corpus
+independently places the transmission boundary ($\ell\sim2.5$), the Euclidean projection ($\ell\sim3$),
+and the adiabatic breakdown at $n=2,3$ — which `H13` shows is FORCED. A fourth arrival at the same
+place, from the isotropy floor.***
+
+**⏷ ROUTED, NOT APPLIED.** *The clause owed: that the cell estimate is the white-noise limit of the
+path window, exact for $k\gg1/L$, and that the unaveraged long-wavelength band raises the floor
+further.*
+*(receipt `storyboard_receipts/HA_H19_the_isotropy_floor_in_fourier.py`)*
