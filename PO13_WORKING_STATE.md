@@ -486,3 +486,34 @@ exclusion.* **What falls is only the claim that the mechanism can be read direct
 **⌗ AND THE MACHINERY THAT STANDS.** *The undriven calibration gates at `1.0000` on both arms; the
 potential is closed by the energy constraint and not evolved; the turnover is the photon velocity's
 reversal. Those three were right, cost wrong answers before they were right, and are kept.*
+
+
+---
+
+## ⌗ THE ONSET DATUM'S SIGN IS FIXED BY THE FRAMEWORK (r3425) — and my measure fails at that sign
+
+**The question r3424 left:** does the construction fix the frozen effective temperature `T-hat`, or not?
+**It fixes its SIGN, by two independent routes, and they agree.**
+
+1. ***The adiabatic relation.*** *Super-horizon adiabatic modes have `δ_γ = −2Φ`, so
+   `T-hat = δ_γ/4 + Φ = +Φ/2`.* **Same sign as `Φ`.**
+2. ***The corpus's own reset condition.*** *`THE_WISDOM_LEDGER` r2063 records the CR source as
+   `A_flat·cos(Δφ)`, so a RESET (`Δφ = 0`) gives `T-hat = +A_flat`.* **Same sign as `Φ`.** *And the
+   same entry records that observation favours the reset:* ***"a RESET phase reproduces the sky to
+   12%; a TRANSMITTED leg phase gives 0.554 against 2.212."***
+
+⇒ ***My withdrawn receipt used `T-hat = −0.5` against `Φ = +0.98` — the OPPOSITE sign, on both routes.***
+*So r3424's withdrawal stands and is more firmly grounded than when it was made.*
+
+**⛔ AND AT THE CORRECT SIGN MY MEASURE FAILS.** *The photon velocity crosses zero at `y ≈ 0.6`, in a
+transient before the acoustic oscillation establishes, and "first zero-crossing" reads that instead of
+the turnover — returning `Q ≈ 0.05–0.24` at low `k` and jumping above 1 at high `k`.* ***This is the
+same failure the receipt already fixed once, for the temperature extremum, reappearing in the
+velocity.*** ⌗ **A fourth detector definition is not being invented here.** *Three have now failed in a
+new regime each, which says a robust turnover measure is itself the hard part rather than a detail.*
+
+**★ WHAT IS SETTLED, AND IT IS THE DIRECTION.** *Three independent lines now say CR is driven **hard**,
+not undriven:* `PHASE7_BUILD_LEDGER` `A.139`'s *measured `−0.362` against `ΛCDM`'s `−0.086`*; *r2063's
+leg-phase analysis, where the `k`-dependent offset compresses the comb*; *and the corrected sign here.*
+⇒ ***So `cc54`'s `qscan`, which returns `Q` rising toward the free-oscillator value, is the outlier of
+the four*** *— and that is what the relayed `STACKPERT` test is for.*
