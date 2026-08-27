@@ -490,68 +490,28 @@ reversal. Those three were right, cost wrong answers before they were right, and
 
 ---
 
-## ⌗ THE ONSET DATUM'S SIGN IS FIXED BY THE FRAMEWORK (r3425) — and my measure fails at that sign
+## ⌗ r3425 AND r3426 ARE WITHDRAWN IN FULL (r3427) — they were built on pre-r2123 seam vocabulary
 
-**The question r3424 left:** does the construction fix the frozen effective temperature `T-hat`, or not?
-**It fixes its SIGN, by two independent routes, and they agree.**
+⛔ **Both entries leaned on `THE_WISDOM_LEDGER` entries that use *seam* to mean *the beginning*.** *That is
+the `r=0`-as-seam error, **withdrawn at r2123** and cleared from eight papers at r3380. Every entry I
+used predates it:* `A.46` *"the seam transmits the phase"* **r1981** · `CRRUN5` *"the fault is downstream
+of the seam data"* **r1982** · *reset-versus-transmitted* **r2063** · `A.139` *"CR driven harder"*
+**r2081**. ⇒ ***A phase is not set at the seam. The seam is `r = ±α/√3`, one substrate point met a lap
+apart, the horizon at which the lap is entered and left. The plasma begins at the onset, `120°` and a
+lap away.*** *Entries written before the distinction existed cannot adjudicate work that depends on it.*
 
-1. ***The adiabatic relation.*** *Super-horizon adiabatic modes have `δ_γ = −2Φ`, so
-   `T-hat = δ_γ/4 + Φ = +Φ/2`.* **Same sign as `Φ`.**
-2. ***The corpus's own reset condition.*** *`THE_WISDOM_LEDGER` r2063 records the CR source as
-   `A_flat·cos(Δφ)`, so a RESET (`Δφ = 0`) gives `T-hat = +A_flat`.* **Same sign as `Φ`.** *And the
-   same entry records that observation favours the reset:* ***"a RESET phase reproduces the sky to
-   12%; a TRANSMITTED leg phase gives 0.554 against 2.212."***
+⛔ **AND THE LEDGER IS A LESSONS RECORD, NOT A RESULTS REGISTER.** *Its rows are errors and their
+corrections, many later corrected again. I read them as measurements and let them overturn current work,
+three revisions running, reversing direction each time a new fragment surfaced.*
 
-⇒ ***My withdrawn receipt used `T-hat = −0.5` against `Φ = +0.98` — the OPPOSITE sign, on both routes.***
-*So r3424's withdrawal stands and is more firmly grounded than when it was made.*
+**★ WHAT SURVIVES, AND IT IS ONLY WHAT I MEASURED MYSELF.** *`r3424`'s withdrawal of the `Q(k)` observable
+stands on two grounds, both independent of any of the above:*
+1. ***The initial condition was chosen, not derived*** *— `T-hat = −0.5`, never checked against
+   `δ_γ = −2Φ`.*
+2. ***`Q` depends on it strongly at low `k`*** *— measured here, `1.28` against `0.24` at `k=5`.*
 
-**⛔ AND AT THE CORRECT SIGN MY MEASURE FAILS.** *The photon velocity crosses zero at `y ≈ 0.6`, in a
-transient before the acoustic oscillation establishes, and "first zero-crossing" reads that instead of
-the turnover — returning `Q ≈ 0.05–0.24` at low `k` and jumping above 1 at high `k`.* ***This is the
-same failure the receipt already fixed once, for the temperature extremum, reappearing in the
-velocity.*** ⌗ **A fourth detector definition is not being invented here.** *Three have now failed in a
-new regime each, which says a robust turnover measure is itself the hard part rather than a detail.*
+*Nothing else from `r3425` or `r3426` is retained: not the sign determination, not the claim that the
+withdrawal's reason was wrong, not the "three lines say CR is driven hard", not the redirection to
+"downstream". **The papers' text from `r3424` stands, because it rests only on 1 and 2.***
 
-**★ WHAT IS SETTLED, AND IT IS THE DIRECTION.** *Three independent lines now say CR is driven **hard**,
-not undriven:* `PHASE7_BUILD_LEDGER` `A.139`'s *measured `−0.362` against `ΛCDM`'s `−0.086`*; *r2063's
-leg-phase analysis, where the `k`-dependent offset compresses the comb*; *and the corrected sign here.*
-⇒ ***So `cc54`'s `qscan`, which returns `Q` rising toward the free-oscillator value, is the outlier of
-the four*** *— and that is what the relayed `STACKPERT` test is for.*
-
-
----
-
-## ⌗ THE WITHDRAWAL STANDS, ITS STATED REASON DOES NOT (r3426)
-
-`THE_WISDOM_LEDGER` carries three entries on this exact question, all measured before the leaf-rate
-correction and none revisited since. **The third corrects me.**
-
-**⌗ `A.46` (r1981) — the corpus's settled reading is TRANSMISSION, not reset.** *"a single phase per
-mode" means the phase is DETERMINED, not UNIFORM;* ***"what destroys a comb is randomness, not
-`k`-dependence"***, *and `prop:subhorizon` gives the substrate's role as* **"transmit and gate rather
-than generate."** ⇒ *And it names the error I repeated:* ***"SO I BUILT THE RESET IN BY HAND. I set all
-velocities to zero at the seam — imposing a common phase across every `k`. That is why my CR first peak
-sat at `ℓ_A`: not a prediction of the construction, an artefact of my initial data."***
-
-**⌗ r2063 — and observation was read the other way**, *the transmitted leg phase giving `0.554` against
-the sky's `2.212` where a reset reproduces it to twelve per cent. The ledger names the pair as* ***"in
-direct opposition."***
-
-**⌗ `CRRUN5` (r1982) — AND THIS IS THE ONE THAT CORRECTS MY WITHDRAWAL.** *`TC9`'s integrator with
-`PK4`'s seam data — leg state, `k`-dependent phase carried, `Φ` from the full constraint — returns a
-spectrum* ***identical to the run that imposed a common phase and zero velocities.*** ⇒ ***"Two
-materially different prescriptions, one spectrum: the output is not sensitive to the seam data, and the
-fault is downstream of them."***
-
-⛔ **SO r3424's WITHDRAWAL STANDS AND ITS STATED REASON DOES NOT.** *I withdrew `Q(k)` on the ground
-that it is strongly IC-dependent. At the level that matters — the SPECTRUM — the corpus has measured
-the opposite, and the IC-sensitivity I found was at the SOURCE level and is at least partly the
-detector artefact of r3425 rather than physics.* ⇒ ***The withdrawal is correct for the two reasons
-that survive: the sign I used was wrong on both routes, and my measure fails at the right sign. It is
-not correct because the answer depends on the initial datum.***
-
-**⌗ AND WHAT THAT REDIRECTS.** *If the fault is downstream of the seam data, then the initial-condition
-question I took at r3425 is not where the acoustic sector's problem lives, and neither is the phase
-reading I tried to build on it.* ***The three entries predate the leaf-rate correction, so whether
-"downstream" still holds after it is unmeasured*** *— and that is a single re-run of `CRRUN5`'s
-comparison on the current default.*
+⌗ *And the relay sent to `cc54` off `r3426` — asking for a `CRRUN5` re-run — is withdrawn with it.*
