@@ -140,6 +140,7 @@ bouncing has still been worth throwing.*
 | `F9` | does `P07` overstate what `P10` establishes? | ⟐ **BOUNCE** — no; `P07` carries the closure *and* its openness |
 | `F10` | `Hilbert space` ×0, `inner product` ×0 — a hole? | ⟐ **NO** — the **weak** form of the corpus's anonymity: `P10` works on $L^2$ of the half-line throughout, so the objects are present under standard notation and only the phrases are missing |
 | `F11` | is the constraint algebra treated as an operator algebra? | ⟐ **BOUNCE** — it is `P12`'s subject **by title**, and the corpus's ×26 is largely its bibliography |
+| `F20` | what certifies `P01`'s "inequivalent vacua"? | ⛔ **BITE** r3482, **receipted** — ***Shale's criterion***, *never named, and the thermal case fails it at the **IR** end* |
 | `F19` | does `P11` carry `F18`'s form, and is its $a^{-2}$ right? | ⛔ **BITE** r3481, **receipted** — *fourth instance, and the $a^{-2}$ belongs to $W$, not $Q$* |
 | `F18` | is `P15`'s `unbounded` this field's? | ⛔ **BITE** r3480, **receipted** — *the word is not, the **argument** is — and it is the **third** instance of one form* |
 | `F17` | is `P03`'s `extension` ×8 a **self-adjoint** extension? | ⍀ **NO — NEGATIVE** r3479 — *all of it generalisation; and reading it caught an error in `H20`* |
@@ -274,7 +275,7 @@ senses. **So the estimate below is made from CONTENTS.***
 | `P03` *slicing curve* | 29 | ⍀ **NEGATIVE, read r3479** | *carries $L^2$ ×5 and `extension` ×8 — needs reading to tell self-adjoint from analytic* |
 | `P15` *cosmology* | 117 | **MEDIUM — vocabulary NEGATIVE, argument POSITIVE; worked as `F18`** | *`spectrum` is the power spectrum, but the acoustic oscillator and `unbounded` ×4 are this field's* |
 | `P11` *dynamics* | 23 | **MEDIUM — CONFIRMED, worked as `F19`** | *the TT oscillator, and `P10`'s boundedness argument reaches into it* |
-| `P01` *causality* | 32 | **MEDIUM** | *the thermal spectrum and the Bogoliubov bases — `H15` touched them from the other side* |
+| `P01` *causality* | 32 | **MEDIUM — CONFIRMED, worked as `F20`** | *the thermal spectrum and the Bogoliubov bases — `H15` touched them from the other side* |
 | `P06` *geometric core* | 23 | **MEDIUM** | *`self-adjoint` ×1, and the ladder* |
 | `P09` *range* | 67 | **LOW–MEDIUM** | *`operator` ×36 and `kernel` ×30 are the **slicing** operator and the **vacuum** kernel* |
 | `P02` *the circle* | 38 | **LOW** | *`extension` ×22 is **analytic** continuation, not self-adjoint extension* |
@@ -461,3 +462,34 @@ super-horizon tensor mode — so `P11`'s conclusion (bounded, no ghost, no tachy
 entire**.* ***What is misattributed is which variable carries the $a^{-2}$*** — *in a sentence whose
 receipt covers the equation and the mass but not the decay, which is why it survived.*
 *(receipt `storyboard_receipts/FA_F19_which_variable_decays.py` — **added, runs, all asserts pass**)*
+
+---
+
+## ⛔⛭⛭ F20 — **THE INEQUIVALENCE `P01` DENIES HAS AN EXACT CRITERION, AND THE CORPUS GIVES ONLY THE CAUSAL ARGUMENT**
+
+*`P01` mentions Bogoliubov and the thermal spectrum only to **dismiss** them — which is exactly why it
+is worth reading here, because* ***what `P01` denies has a precise functional-analytic content: that
+two Fock representations are unitarily inequivalent.*** *Its three requirements end with* ***"the
+permanent loss of causal contact between exterior and interior modes that renders the two vacua
+INEQUIVALENT."***
+
+**⌘ THE CRITERION THE CORPUS DOES NOT NAME — SHALE'S.** *A Bogoliubov transformation $(\alpha,\beta)$
+is unitarily implementable — the two Fock representations unitarily **equivalent** — **iff $\beta$ is
+Hilbert–Schmidt**, $\sum\lvert\beta_{ij}\rvert^2<\infty$.*
+
+⛔ ***THE THERMAL CASE FAILS IT, AND AT THE INFRARED END.*** *With
+$\lvert\beta_\omega\rvert^2=(e^{2\pi\omega/\kappa}-1)^{-1}$ the integral **diverges**, and
+$\omega\lvert\beta\rvert^2\to\kappa/2\pi$ as $\omega\to0$ — a $1/\omega$ tail, **logarithmic**. So
+$\beta$ is not Hilbert–Schmidt, the vacua are inequivalent, and* ***the thermal flux IS that
+inequivalence — which is `P01`'s own sentence, with the criterion supplied.***
+
+**⍀ AND `P01`'s OWN CASE IS THE CONVERSE.** *No permanent causal disconnection $\Rightarrow$ no mode
+mixing $\Rightarrow$ $\beta=0$ $\Rightarrow$ trivially Hilbert–Schmidt $\Rightarrow$ by Shale a unitary
+**equivalence**, a **common vacuum**, and no particle creation.* ⇒ ***`P01`'s causal argument and
+Shale's criterion are the same statement in two languages.***
+
+**⌗ AND THE PATTERN, FOR A FOURTH TIME IN THIS FIELD:** *`F13` (`kernel` doing four jobs across ×147),
+`F15` (`elliptic` only in a bibliography title), the r3168 baseline's own `Hilbert space` ×0 over work
+done entirely on $L^2$ — and now this.* ***The argument is right, the theorem that certifies it is
+standard, and it is never named.***
+*(receipt `storyboard_receipts/FA_F20_shale_criterion.py` — **added, runs, all asserts pass**)*
