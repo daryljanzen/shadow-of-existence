@@ -611,3 +611,46 @@ one thing held loosely.
 **PO-13 disposition:** the paper carries the comb, the mechanism (grounded in Φ's evolution), the
 calibration curve and Q(k), all on gated instrument measurements.  The A.139/A.46/CRRUN5 premises are
 withdrawn (r3427); the r3424 Q(k) withdrawal is reversed (r3429); this arc's compute half is landed.
+
+### ✔ THE "47% PROJECTION" CONTRADICTION — DISSOLVED, IT IS THE k→PEAK MAPPING (58's flag)
+58 flagged a contradiction between two current gated numbers: `Q_CR ≈ 1.28` (source turnover LATER than
+free, `k r_s = 1.28π`) vs the spectrum first peak `ℓ_1/ℓ_A = 0.676` (`k r_s = 0.676π`, EARLIER than free)
+— a factor ~1.9 apart, implying a 47% projection where `A.139` bounds it generic at 14–18%.  **It is 58's
+first possibility: the `Q = 1.28` does not belong to the first-peak mode.**  Three measured facts settle it:
+
+**(1) `Q` at the first-peak mode is UNDEFINED — not 1.28, not 0.68.**  `qscan` (`QTURN=vel QMIN=0.5`) at the
+exact peak-mode k's returns `—` for the first two CR peaks (`k=0.0157=ℓ_1`, `k=0.0397=ℓ_2`):
+
+| peak mode | k | driven Q |
+|---|---|---|
+| ℓ_1=204 | 0.0157 | **— (no turnover before rec)** |
+| ℓ_2=516 | 0.0397 | **—** |
+| ℓ_3=828 | 0.0637 | 1.268 |
+| ℓ_4=1164 | 0.0895 | 1.195 |
+
+The first-peak mode is *by definition* the mode caught at maximal compression AT recombination — it has not
+reached a velocity turnover, so `Q` does not exist for it.  **The `Q=1.28` was measured at `k≈0.060`, the
+THIRD-peak region (`ℓ≈780`), and read as if it were `ℓ_1`.**  The `Q(k)` curve (rising to 1) lives entirely
+in the turned-over modes (`ℓ_3` and smaller scales); it never reaches `ℓ_1`.
+
+**(2) The first-peak projection is +1.9%, not 47%.**  The comb's own source extrema project to the spectrum
+peaks cleanly:
+
+| peak | source extremum ℓ | spectrum peak ℓ | projection shift |
+|---|---|---|---|
+| 1 | 208 (0.690 ℓ_A) | 204 (0.676 ℓ_A) | **+1.9%** |
+| 2 | 520 | 516 | +0.8% |
+| 3 | 816 | 828 | −1.5% |
+| 4 | 1168 | 1164 | +0.3% |
+
+All under 2% — well inside `A.139`'s generic 14–18%.  The projection is doing nothing anomalous on the CR arm.
+
+**(3) The 47% equated two different objects.**  `Q`'s `ℓ=1.28·ℓ_A=386` is a VELOCITY turnover of a `k=0.06`
+mode; the first spectrum peak `ℓ=204` is a DENSITY extremum of the `k=0.0157` mode.  Different feature (velocity
+vs density, offset a quarter period), different mode (third-peak region vs first).  The comb source extremum
+`ℓ=208` — a density extremum, same feature, same mode — is what projects to `ℓ_1=204`, and it does so at 2%.
+
+**Disposition:** the discrepancy dissolves and it was in the k→peak mapping, 58's side, as 58 anticipated.
+**Caveat for the papers:** `Q(k)` and the comb are readings of DIFFERENT features and must not be presented as
+`ℓ_1`'s phase measured two ways — `Q(k)` speaks to the turned-over modes (`ℓ_3`+), the comb/spectrum sets
+`ℓ_1`.  Both stand; they are simply about different modes.  No 47%, no anomalous projection, no new problem.
