@@ -1,7 +1,7 @@
 ---
 name: functional-analysis-ledger
 kind: FORWARD
-current: r3168
+current: r3444
 job: The functional-analysis / unitarity field-bake ledger — the field that bounced, and the one routing fact it returned. Third of the four fields `L-272`'s re-survey left outstanding. `OWED` 622.
 sources: [cowork]
 ---
@@ -112,3 +112,83 @@ and recording that now costs nothing, where later it would cost a retraction.*
 away. `P10` answers every probe built against it, several of them better than the probe. What the field
 returns is a routing fact and a coincidence disarmed — and a field that returns that much while
 bouncing has still been worth throwing.*
+
+
+---
+
+# ⛭⛭ BROUGHT TO THE BAR — r3444
+
+> *The content above is the r3168 bake and stands. What it lacked against `THE_FIELD_BAKE_PLAN`'s
+> measured standard was **numbered probes and receipts**: it asserted every threshold, exponent and
+> verdict and receipted none of them. **A field ledger with no runnable computation is below the
+> standard the corpus's own full-tier bakes set.** That is closed here, and one of its own claims is
+> corrected.*
+
+## ⌗ THE LEAD REGISTER — *no new field while any row is unmarked*
+
+| # | probe | state |
+|---|---|---|
+| `F0` | baseline the vocabulary; catch the homonyms | ⊢ **WORKED** r3168 — *`isometry` ×268 is the substrate's isometry group; `domain` ×32 is domain-of-dependence; `P07`'s `limit point` is topological* |
+| `F1` | is the $3/4$ threshold exact, and what is the lower end? | ⊢ **WORKED** r3444, **receipted** |
+| `F2` | the two boundaries — same verdict or opposite? | ⊢ **WORKED** r3444, **receipted** |
+| `F3` | is the contrast between them stated in any paper? | ⌷ **ROUTED** r3444, **receipted** |
+| `F4` | is the family-versus-world criterion `P10`'s alone? | ⛔ **CORRECTS THE LEDGER** r3444 |
+| `F5` | is the deparametrized Hamiltonian self-adjoint or merely symmetric? | ⟐ **BOUNCE** — `P10` computes deficiency indices $(1,1)$ |
+| `F6` | which self-adjoint extension? | ⟐ **BOUNCE** — Friedrichs, and separately the regular branch; the same one |
+| `F7` | what about the Hardy bound? | ⟐ **BOUNCE** — `P10`'s own footnote distinguishes $-\tfrac14$ from $\tfrac34$ |
+| `F8` | and once the graviton tower is coupled? | ⟐ **BOUNCE** — $\hat\Gamma$ promoted to an operator, direct-integral decomposition, condition supplied fibrewise |
+| `F9` | does `P07` overstate what `P10` establishes? | ⟐ **BOUNCE** — no; `P07` carries the closure *and* its openness |
+| `F10` | `Hilbert space` ×0, `inner product` ×0 — a hole? | ⟐ **NO** — the **weak** form of the corpus's anonymity: `P10` works on $L^2$ of the half-line throughout, so the objects are present under standard notation and only the phrases are missing |
+| `F11` | is the constraint algebra treated as an operator algebra? | ⟐ **BOUNCE** — it is `P12`'s subject **by title**, and the corpus's ×26 is largely its bibliography |
+| `F12` | does $\sqrt f$ make the branch point limit-circle after all? | ⊢ **WORKED** r3444, **receipted** — $\sqrt f$ is an **overall factor** and cancels, so the index is real $\pm\lambda$ whatever the sign of $f$ |
+
+---
+
+## ⛔ F4 — **THE CRITERION IS NOT `P10`'s ALONE, AND THIS LEDGER SAID IT WAS**
+
+*The r3168 register reads the family-versus-world test as `P10`'s epistemic voice, quoted once.*
+⇒ ***It travels.*** *"family rather than a world" and its cognates appear in **three** papers — `P10`,
+`P04` and `p0` — and "one-parameter family" across **seven**: `P07`, `P12`, `P10`, `p0`, `P05`, `P08`,
+`P13`.* ⇒ ***So it is a general epistemic instrument of the corpus and not a local move, which makes
+`F3`'s silence at the branch point a sharper omission than the r3168 entry could see:*** *the criterion
+is applied corpus-wide and simply never carried to the one boundary where the answer is that nothing
+needs choosing.*
+
+## ⊢ F1–F3 — **RECEIPTED**
+
+*`storyboard_receipts/FA_F1_F3_the_two_boundaries.py`, all asserts pass.*
+
+- **`F1`** — for $-u''+\gamma x^{-2}u$ the Frobenius exponents are $s=\tfrac12(1\pm\sqrt{1+4\gamma})$ and
+  $L^2$ near the origin needs $s>-\tfrac12$, so both solutions are $L^2$ **exactly** on
+  $-\tfrac14\le\gamma<\tfrac34$. ***Both ends are meaningful and `P10`'s footnote already draws the
+  distinction***: $\tfrac34$ decides whether a condition must be chosen at all, $-\tfrac14$ whether a
+  regular branch exists to choose.
+- **`F2`** — $a=0$ carries $\gamma=\tfrac14$, exponents $-0.2071,+1.2071$: **limit-circle**. $r=0$
+  carries $\gamma=\tfrac{15}4$, exponents $-1.5,+2.5$: **limit-point**. ***Opposite.***
+- **`F3`** — `essentially self-adjoint`, `limit-circle` and `limit-point` occur in `P10` **alone**;
+  `branch point` occurs across **sixteen** papers. **No paper carries a self-adjointness verdict at the
+  branch point.** ⌷ *The clause owed:* ***"at the branch point the operator is limit-point: no boundary
+  condition is available to choose, and none is needed"*** *— `P10` `sec:deparam` or `P16`. Paper-holder's
+  call.*
+
+---
+
+## ⛭⛭ THE BAR, MEASURED
+
+| | this bake | the FULL tier's range |
+|---|---|---|
+| lines | **~200** | 189–978 ✔ |
+| numbered probes | **13** (`F0`–`F12`) | 10–17 ✔ |
+| receipts, all running | **2** | 2–10 ✔ |
+| papers touched | `P04`, `P07`, `P10`, `P12`, `P16`, `p0` = **6** | 6–11 ✔ |
+| lead register | **13 rows, none unmarked** | — |
+
+⇒ ***THE BAKE MEETS THE BAR.*** *The gap was named at one receipt and then closed rather than
+argued away: `F12`'s $\sqrt f$ cancellation was the **load-bearing** step under `F2` and `F3` — were
+the index oscillatory $\pm i\lambda$ the branch point would be limit-circle, the two verdicts would
+not be opposite, and `F3`'s routed clause would be wrong — and it was the one asserted without a
+computation. `storyboard_receipts/FA_F12_the_sqrt_f_cancellation.py` shows $\sqrt f$ dividing out
+identically, leaving $\psi'=(\lambda/r)\psi$ with solutions $r^{\pm\lambda}$, checked for $f>0$, $f<0$
+and $f$ complex. **The fork between the analytic $\sqrt f$ and self-adjoint $\sqrt{|f|}$ operators
+cannot bite at $\omega=0$; it bites only at $\omega\neq0$, where the $\omega$-coupling's $1/\sqrt f$
+is the one term that does not cancel.**
