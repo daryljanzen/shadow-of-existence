@@ -452,66 +452,138 @@ choosing the velocity zero-crossing over the temperature extremum; it just also 
 crossing on a mode already deep sub-horizon at onset.*  The comb (uniform) and the Q(k) (undriven,
 rising to 1) now agree, and both confirm the mechanism the r3410 papers state.
 
----
+### ⛔ PREMISE WITHDRAWN (58, r3427) — the A.139 motivation is gone; and Q(k) is RESTORED at r3429
+**`A.139` (r2081), and the `CRRUN5`/`A.46` re-run 58 also queued, predate r2123 — they use "seam" to mean
+"the beginning", the `r=0`-as-seam conflation 58 cleared from eight papers at r3380 and then let adjudicate
+live work for three revisions.  58 withdrew all three in full at r3427.**  So the *question* this section
+answered ("is A.139 stale-because-stacking?") is moot: A.139 is withdrawn regardless.  Per 58's instruction,
+**discard the interpretation-against-A.139 and keep the numbers** — they came from cc54's instrument, not from
+the archive, and they are untouched.
 
-## ⌗ (19) WITHDRAWN r3424 — the Q(k) second observable was an initial condition I chose
+**⛭ AND THE r3424 Q(k) WITHDRAWAL IS ITSELF REVERSED (58, r3429).**  `Q(k)` is restored to `P15`/`P07`,
+**sourced to cc54's `qscan`** (the gated instrument measurement: undriven `1.0000`, k-drift `<0.004` on both
+arms; control flat at `0.79`; CR rising `1.28 -> 1.06`), NOT to 58's analytic toy.  The toy *receipt* stays
+withdrawn — its turnover detector reads a `y~0.6` transient before the oscillation establishes, i.e. it has
+the same frozen-IC-transient bug `QMIN` was built to skip, at the opposite sign — but that withdraws the
+*file*, not the *finding*.  So the "58's prediction confirmed" `Q(k)` section further below **stands**; my
+earlier "superseded" note on it is retracted.
 
-**The claim**, written into `P15` and `P07` at r3412: that `Q(k)`, the accumulated sound phase at first
-turnover, runs to its free-oscillator value from above on this rate while a background carrying a
-radiation era holds it flat and below — a second, normalisation-independent observable.
+**What genuinely survives here and is forward is the k-space vs time-domain SIGN SPLIT** (below): two gated
+measurements of CR's driving disagree in sign — k-space Theta_0 extremum `-0.42`, time-domain `qscan` turnover
+`+0.2..+0.4`.  Both gate undriven at `~1.0`, so it is not a broken calibration; it is the same *transient*
+question in two domains.  `qscan` skips its transient with `QMIN`; the raw k-space extremum has no such skip,
+so it is the prime suspect for reading the k-space image of that transient.  **This is exactly the forward
+piece 58 named — "a turnover measure that survives both signs of the initial datum" — and the mechanistic
+version of it (does Phi decay overlap the oscillation) is what cc54 works next.**  Read the tables below as
+instrument facts about the CR source, not as a verdict on any ledger entry.
 
-⛔ **It reverses with the sign of the one datum the construction does not fix.** The frozen effective
-temperature `T-hat` the modes carry at onset is undetermined, and `Q` depends on it strongly at low `k`:
+### ⛭ (archived question) THE RATE IS NOT THE LEVER; k-SPACE AND TIME-DOMAIN MEASURE DIFFERENT QUANTITIES
+58 asked (task ②): is `A.139`'s CR "source phase shift" `-0.362` a stale **pre-leaf-correction**
+(stacking-rate) measurement — reproduced by `STACKPERT=1`/`LEAFPERT=0` and NOT by the leaf rate —
+or do both rates give it, in which case `qscan` and `A.139` measure different things? **Run both
+ways.  It is the second branch, and sharper than the fork.**
 
-| `T-hat` | k=5 | k=10 | k=20 | k=40 | k=160 |
-|---|---|---|---|---|---|
-| **−0.500** *(what the receipt used)* | 1.2763 | 1.1661 | 1.0828 | 1.0374 | 1.0076 |
-| **+0.488** *(the ADIABATIC value, +Φ/2)* | 0.2416 | 0.0997 | 0.0470 | 1.0556 | 1.0122 |
+**What `A.139` measured (from `storyboard_receipts/retired_conformal_seed/PROJGEN_projection_generic.py`):**
+the FIRST EXTREMUM IN `k` of the SW source `Theta-hat = Theta_0 + Psi` at `eta_rec`, reported as
+`k r_s/pi` (undriven **assumed** `= 1`; shift `= k r_s/pi - 1`).  DRIVEN only; no undriven column run.
 
-*For `T-hat ≤ 0` the phase runs to 1 from above; for `T-hat > 0` it collapses at low `k`.* ***The
-"rising toward 1" shape is the sign, not the physics*** *— and `−0.5` was chosen, never checked against
-the adiabatic relation `δ_γ = −2Φ` which gives `T-hat = +Φ/2`.*
+**Reproduced on the instrument (`evolve` to `eta_rec`, first source extremum in `k`), DRIVEN, uncalibrated:**
 
-**⌗ HOW IT WAS FOUND, because the route is the point.** *The comprehensive comb (`589`) swept for a
-RETIRED TERM and surfaced `PHASE7_BUILD_LEDGER` using it in live physics prose — whose measurement
-`A.139` states the opposite:* ***"CR's shift is LARGER, by a factor of four"***, *and which records that
-its own earlier mechanism* ***"had the sign backwards."*** ⇒ **A terminology sweep found a physics
-contradiction, and the contradiction was mine.**
+| | source extremum `l` | `k r_s/pi` (own clock) | shift | `A.139` |
+| --- | --- | --- | --- | --- |
+| ΛCDM (`Theta-hat`) | 269.9 | 0.896 | **-0.104** | -0.086 |
+| CR stacking (`Theta-hat`) | 198.9 | 0.660 | **-0.340** | -0.362 |
+| CR leaf, phase clock (`Theta-hat`) | 254.7 | 0.657 | **-0.343** | — |
 
-**⌗ WHAT IS UNAFFECTED, and it is most of it.** *The comb result — that this comb's spacings do not
-alternate where the sky's do — is an **instrument** measurement and depends on none of this. So are the
-crossing-during-plasma mechanism, the `z_onset` calibration curve, the first-gap fix, and the loading
-exclusion.* **What falls is only the claim that the mechanism can be read directly in the phase.**
+`A.139` reproduces (ΛCDM `-0.10` vs `-0.086`; CR `-0.34` vs `-0.362`).  **And the leaf rate gives the
+SAME shift as the stacking rate** — `-0.343` (leaf, on `r_s,leaf`) vs `-0.340` (stacking).  ***The rate
+is not the lever.***  `A.139` is NOT stale-because-stacking.  → 58's second branch.
 
-**⌗ AND THE MACHINERY THAT STANDS.** *The undriven calibration gates at `1.0000` on both arms; the
-potential is closed by the energy constraint and not evolved; the turnover is the photon velocity's
-reversal. Those three were right, cost wrong answers before they were right, and are kept.*
+**The real defect in `A.139` is the CALIBRATION, not the rate — and stripping `Psi` exposes it.**
+`Theta-hat`'s `Psi` piece plants a spurious low-`k` extremum, so the *undriven* `Theta-hat` first
+extremum sits at `k r_s/pi ~ 0.42` for **both** arms — `A.139` never measured its own undriven column
+(the very discipline `qscan` was built on), so it could not see that `1` was the wrong reference.  Using
+`Theta_0` alone (pure acoustic), the undriven calibration comes out right and the driving shift is
+**measured, not assumed:**
 
+| | undriven `k r_s/pi` | driven `k r_s/pi` | **calibrated k-space shift** |
+| --- | --- | --- | --- |
+| ΛCDM control | 1.015 | 0.828 | **-0.187** |
+| CR stacking | 1.008 | 0.587 | **-0.421** |
+| CR leaf (phase clock) | 1.009 | 0.583 | **-0.426** |
 
----
+Undriven `= 1.01` on all three (validates the method).  **The calibrated k-space driving shift is
+`-0.42` for CR against `-0.19` for ΛCDM — CR driven ~2.3x harder, and rate-independent (`-0.421`
+stacking, `-0.426` leaf on the phase clock).**  So `A.139`'s *direction* survives calibration; its `4x`
+was inflated by the uncalibrated `Psi` (calibrated it is `~2.3x`).
 
-## ⌗ r3425 AND r3426 ARE WITHDRAWN IN FULL (r3427) — they were built on pre-r2123 seam vocabulary
+**THE TENSION, NAMED — and it is the r3424 retraction's cause, located.**  Two *calibrated* measurements
+disagree in SIGN on CR's driving:
+- **k-space** (`Theta_0` first extremum in `k` at `eta_rec`, the peak-position observable the projection
+  integrates): CR shift **`-0.42`** — driving pulls the first extremum to LOWER `k r_s`.
+- **time-domain** `qscan` (`Theta_0` velocity turnover of a fixed `k`, transient-skipped `QTURN=vel
+  QMIN=0.5`, undriven `= 1.000`): CR `Q ~ 1.2`–`1.4` — shift **`+0.2`–`+0.4`**, turnover LATER than a free
+  oscillator.
 
-⛔ **Both entries leaned on `THE_WISDOM_LEDGER` entries that use *seam* to mean *the beginning*.** *That is
-the `r=0`-as-seam error, **withdrawn at r2123** and cleared from eight papers at r3380. Every entry I
-used predates it:* `A.46` *"the seam transmits the phase"* **r1981** · `CRRUN5` *"the fault is downstream
-of the seam data"* **r1982** · *reset-versus-transmitted* **r2063** · `A.139` *"CR driven harder"*
-**r2081**. ⇒ ***A phase is not set at the seam. The seam is ONE substrate point at `φ = +120° ≡ −240°`, met a
-lap apart at **`r = +α/√3` (front pass) and `r = −2α/√3` (back pass)** — the two radii standing in ratio
-`2:1`, not as a sign. The plasma begins at the onset, `120°` and a lap away.*** *Entries written before the distinction existed cannot adjudicate work that depends on it.*
+Same sign flip on both rates, so it is **not** the rate.  It is the feature: a k-space snapshot extremum
+at recombination vs a mode's temporal turnover phase.  **This is exactly why 58 withdrew `Q(k)` at r3424
+("depends on the chosen IC, reverses with sign") — the two features carry opposite-signed shifts, and
+which one you read is the IC/feature choice.**  The k-space extremum is the one that projects into `l_1`
+(the source is integrated at `eta_rec` against `j_l(k(eta_0-eta))`), so it is the peak-position-relevant
+one, and it says CR's *first peak* IS driven low, ~2.3x ΛCDM.
 
-⛔ **AND THE LEDGER IS A LESSONS RECORD, NOT A RESULTS REGISTER.** *Its rows are errors and their
-corrections, many later corrected again. I read them as measurements and let them overturn current work,
-three revisions running, reversing direction each time a new fragment surfaced.*
+**⚠ FLAG FOR 58 (framework's call, not routed by cc54).**  This does not touch the PO-13 residual as
+*stated* — that residual is the absent **odd-even alternation** (`g2/g1`), a different observable from the
+`l_1` driving shift, and it stands.  But it does mean **the blanket word "undriven" for CR's comb is too
+strong**: the calibrated k-space measurement shows the first-peak driving is real and *stronger* than the
+control.  The precise statement ("no compression/rarefaction alternation, because no mode crosses during
+a plasma") survives; "the uniform comb IS the undriven comb" as a whole-comb claim needs the `l_1`
+driving carved out of it.
 
-**★ WHAT SURVIVES, AND IT IS ONLY WHAT I MEASURED MYSELF.** *`r3424`'s withdrawal of the `Q(k)` observable
-stands on two grounds, both independent of any of the above:*
-1. ***The initial condition was chosen, not derived*** *— `T-hat = −0.5`, never checked against
-   `δ_γ = −2Φ`.*
-2. ***`Q` depends on it strongly at low `k`*** *— measured here, `1.28` against `0.24` at `k=5`.*
+**Supersession of the r3410+ Q(k) section above:** 58 retracted `Q(k)` from `P15`/`P07` at **r3424** as an
+initial-condition artefact.  The "58's prediction confirmed" table above is therefore **superseded** — not
+because the numbers were wrong (they reproduce), but because the sign is IC/feature-dependent, which this
+A.139 reconciliation now explains rather than merely asserts.  The comb (uniform), the mechanism (no
+crossing-during-plasma), and the ZSTART calibration are untouched by the retraction.
 
-*Nothing else from `r3425` or `r3426` is retained: not the sign determination, not the claim that the
-withdrawal's reason was wrong, not the "three lines say CR is driven hard", not the redirection to
-"downstream". **The papers' text from `r3424` stands, because it rests only on 1 and 2.***
+### ⛭⛭⛭ THE DRIVING, DERIVED FROM Φ(η,k) — THE CROSSING IS THE DRIVING, NOT THE DECAY (58's forward piece)
+58's forward piece, once the archive was cleared: *what does the driving do on a rate fixed by the
+geometry, derived from the potential's own evolution rather than measured off its fingerprint?*  Worked
+on cc54's gated instrument (`PHISAVE`: `Φ(η)`, `δγ(η)` for the first three peak modes, leaf rate vs
+control), **with no turnover detector and no chosen datum** — the sign-unstable step that broke both my
+`qscan` transient reading and 58's toy.
 
-⌗ *And the relay sent to `cc54` off `r3426` — asking for a `CRRUN5` re-run — is withdrawn with it.*
+**What Φ does on the leaf rate — the naive picture is wrong.**  `Φ` is NOT frozen on the leaf rate: it
+decays ~40% for the first modes and ~0.6 per acoustic half-period, **smoothly (monotone; ringing <0.2%
+of the decay), comparably in BOTH arms** (CR `0.60–0.75`/half-period vs control `0.56–0.68`; ratio 1.08).
+So "CR undriven because the potential is frozen" is false, and every scalar built on the *ongoing* decay
+fails to separate the arms — because the ongoing decay is not the driving.
+
+**The driving is imparted at HORIZON CROSSING, and that is where the arms differ — measured:**
+
+| mode | horizon entry `1/k` [Mpc] | `k·η_onset` | crosses during plasma? |
+|---|---|---|---|
+| CR `q=0.75` | 57.7 | **3.1** | no — sub-horizon at onset |
+| CR `q=1.86` | 23.2 | **7.8** | no — sub-horizon at onset |
+| CR `q=2.93` | 14.7 | **12.2** | no — sub-horizon at onset |
+| control `q≈0.8–2.9` | 55–16 | 0 | **yes — all cross in [0, η_rec]** |
+
+CR's onset is `η_start = 180.4 Mpc = 0.402 η_rec` (`z_onset=6797`, near `z_eq=3399`).  **Every CR peak
+mode's horizon entry `1/k` lies BEFORE the onset** — they are switched on already deep sub-horizon
+(`k·η_onset = 3–12`), at rest, at the common start time.  They never make the frozen→oscillating
+transition *inside the plasma*, so they never receive the horizon-crossing driving impulse.  The control's
+modes cross at `1/k` DURING the plasma, with `Φ` decaying through the crossing — they are driven.
+
+**This is the crossing-during-plasma mechanism, DERIVED** (from `Φ(η,k)` + the geometry's onset), not read
+off the peak positions.  It is detector-free and IC-sign-free, so it is immune to the failure mode that
+made `qscan`'s raw reading and 58's toy disagree.  And it explains that disagreement: the ongoing decay
+(similar in both arms) is what naive measures and the raw transient-crossing detectors catch; the *impulse
+at crossing* (present in the control, absent in CR) is the real driving, and only a from-onset phase
+accumulation (`qscan` with `QMIN`, `Q_CR → 1`) or this crossing census sees it.
+
+**Corroborates, does not disturb:** the papers' restored `Q(k)` (r3429) and the uniform-comb mechanism.
+The k-space `Θ₀`-extremum shift `−0.42` (this session, above) is now understood as the k-space image of
+the switch-on transient — a driven feature with no `QMIN`-analog skip — consistent with `qscan` being the
+reliable measure.  **The honest statement 58 named holds: the driving is in the crossing; CR's modes,
+launched sub-horizon at the late geometric onset, do not cross during the plasma.**  Figure:
+`computations/beyond_the_wall/PHI_mechanism.png`.

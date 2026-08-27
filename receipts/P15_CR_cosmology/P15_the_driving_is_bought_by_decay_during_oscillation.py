@@ -1,6 +1,25 @@
 #!/usr/bin/env python3
-"""RECEIPT — P15: ** THE DRIVING SHIFT IS BOUGHT BY POTENTIAL DECAY OCCURRING WHILE A MODE OSCILLATES,
-SO A MODE WHOSE OSCILLATION BEGINS AFTER THE POTENTIAL HAS SETTLED INHERITS THE UNDRIVEN PHASE. **
+"""RECEIPT — P15: ** A MODE THAT NEVER CROSSES THE HORIZON WHILE THERE IS A PLASMA TO BE DRIVEN
+INHERITS THE UNDRIVEN PHASE. **
+
+⛔ THE MECHANISM IN THIS RECEIPT'S ORIGINAL TITLE WAS WRONG, corrected r3431 on a measurement.  It
+read "the shift is bought by potential decay occurring while a mode oscillates, so a mode whose
+oscillation begins after the potential has SETTLED inherits the undriven phase."  ** The potential
+does not settle. **  Measured on the gated instrument (PHISAVE, leaf rate against control): Phi
+decays about forty per cent for the first peak modes, roughly 0.6 per acoustic half-period, smoothly,
+and COMPARABLY IN BOTH ARMS -- CR 0.60-0.75 per half-period against the control's 0.56-0.68.  The
+ongoing decay does not separate the arms and cannot be the driving.
+
+** THE DRIVING IS THE IMPULSE AT HORIZON CROSSING, and that is where the arms differ. **  CR's peak
+modes have horizon entry 1/k at 57.7, 23.2, 14.7 Mpc, all BEFORE the onset at eta = 0.402 eta_rec, so
+they are switched on already deep sub-horizon -- k*eta_onset = 3.1, 7.8, 12.2 -- and none makes the
+frozen-to-oscillating transition inside the plasma.  The control's modes all cross within
+[0, eta_rec], with Phi decaying through the crossing.
+
+⇒ SO THE CONCLUSION STANDS AND THE REASON IS REPLACED, and P15's own wording was right where this
+receipt's was not: "the standard shift is universal only where every mode crosses the horizon while
+there is a plasma to be driven."  The asymptotic Q -> 1 this file computes is the same fact seen
+through the phase; the crossing census sees it without a turnover measure at all.
 
 SCOPE, FIXED r3430 AND NOT WIDER THAN THIS.  What this solve delivers is the ASYMPTOTIC statement --
 Q -> 1 at large k -- and that is what P15 and P07 assert.  It does NOT deliver the low-k values, and
