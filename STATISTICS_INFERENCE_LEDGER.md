@@ -194,6 +194,7 @@ after this bake as before it — what changed is that the programme to test it n
 | `S6` | is the exact test monotone in $n$? | ⊢ **WORKED** r3160 — *it is not: eight episodes give $0.813$ power and **ten give $0.736$*** |
 | `S7` | can `P06`'s five instances be spent? | ⊢ **WORKED** r3160 — *no: read as a paired sign test they give $p=0.031$, and they may not be so read, because they were selected on outcome* |
 | `S8` | does `p0` apply its own survivorship guard to its **newest** instance? | ⟐ **BOUNCE** r3449 — *it refuses the instance explicitly, in advance* |
+| `S9` | which of `P16`'s three abundance outcomes actually discriminates? | ⛔ **BITE** r3450, receipted — *the shared **failure**, and it is filed as a problem* |
 
 ---
 
@@ -239,9 +240,9 @@ two orders, $92\times$ to one order, $923\times$ for it to vanish.*
 | | this bake | the FULL tier |
 |---|---|---|
 | lines | **~270** | 189–978 ✔ |
-| numbered probes | **10** (`S0`–`S8`, `S2′`) | 10–17 ✔ |
-| receipts, all running | **3** | 2–10 ✔ |
-| papers touched | `P04`, `P06`, `P15`, `p0` = **4** | 6–11 ⚠ *two short* |
+| numbered probes | **11** (`S0`–`S9`, `S2′`) | 10–17 ✔ |
+| receipts, all running | **4** | 2–10 ✔ |
+| papers touched | `P04`, `P06`, `P15`, `P16`, `p0` = **5** | 6–11 ⚠ *one short* |
 | lead register | **9 rows, none unmarked** | — |
 
 ## ⟐ S8 — **`p0` REFUSES ITS OWN NEWEST INSTANCE, IN ADVANCE**
@@ -269,5 +270,34 @@ own lesson, missed by the instrument's author.***
 
 ---
 
-⚠ ***TWO PAPERS SHORT, and named rather than rounded up. The probe count is met; the reach is not.
-This field is not done.***
+## ⛔ S9 — **`P16`'s SHARED LITHIUM MISS IS THE DISCRIMINATING DATUM, AND IT IS FILED AS A PROBLEM**
+
+*`P16` reports deuterium and helium-4 within $1\sigma$ and lithium-7 over-predicted by the standard
+factor of three, and reads them as* ***"two successes and one shared problem … neither better nor worse
+than flat $\Lambda$CDM"***. *That conclusion is correct and is not disputed. **What is disputed is the
+weighting**.*
+
+| outcome | reached by | discriminating |
+|---|---|---|
+| $D/H$ within $1\sigma$ | *any* network with standard rates at the Planck $\eta$ | LOW |
+| $Y_p$ within $1\sigma$ | the same | LOW |
+| **Li-7 over by $\sim3\times$, specifically** | **only a network that IS the standard one** | **HIGH** |
+
+⇒ ***A concordant SUCCESS is reached many ways; a concordant FAILURE OF A SPECIFIC SIZE is a
+fingerprint.*** *And `P16`'s central claim is not that the abundances agree but that* ***"the cooling
+leg IS a standard BBN"*** *— an **identity** claim. **A network reproducing $D$ and $Y_p$ but not the
+standard lithium over-prediction would be evidence AGAINST that identity**, so the shared miss is
+confirmation of the paper's own thesis.*
+
+**⌗ AND IT IS THIS FIELD'S OWN LOGIC, TURNED AROUND.** *`S1` and `S7` establish that the corpus may not
+count its own **successes**, because successes are selected and a base rate from remembered successes
+is survivorship.* ⇒ ***The same principle says the shared FAILURE is the datum that cannot have been
+selected for: nobody assembles a case from their own misses.***
+
+**⌷ ROUTED, NOT APPLIED.** *The clause owed: that the shared lithium over-prediction is the strongest
+single confirmation that the cooling leg is the standard network, and not merely a shared embarrassment.*
+*(receipt `receipts/L271_the_statistics_bake/S9_the_shared_failure_is_the_discriminating_datum.py`)*
+
+---
+
+⚠ ***ONE PAPER SHORT, and named rather than rounded up. This field is not done.***
