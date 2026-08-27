@@ -1,7 +1,7 @@
 ---
 name: combinatorics-ledger
 kind: FORWARD
-current: r2517+c54.201
+current: r3415
 job: The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8.
 sources: [cowork]
 ---
@@ -932,3 +932,45 @@ incidental feature of the lift; it is the condition on which the lift's causal w
 **⇒ BAKED:** *P7 `sec:lift-initial-rate` (r2225). **And this is the connection the ledger was missing**: L8 had
 identified the Euclidean null as a number-audit object without its significance as **the mechanism that makes
 causal character well defined all around the lap**.*
+
+### ⌗ L8.5 — **THE PENCIL** — *the single condition `L8.4` recorded as well-posed and unattempted*
+`L8.4` closed by settling a **corrected** claim (the null condition met three times) and left the original
+question with a named opening: ***"a derivation producing $\{0,1,2\}$ from a single condition with no new
+input."*** *That condition exists, it is one line, and it was not found because the corpus's other uses of the
+word point elsewhere — `P03`'s masthead says the horizon cubic is* **"NOT a pencil"** *of the reducible-plane-cubic
+kind, and `p0` uses pencils of planes and of quadrics.*
+
+**★★★ Multiply $f$'s definition through by $-r\alpha^{2}$** (receipt `storyboard_receipts/L8_the_pencil.py`)**:**
+> $$r^{3} + (f-1)\,\alpha^{2} r + 2M\alpha^{2} = 0$$
+
+*One equation, $f$ its parameter, no new input. **The three loci are three members of ONE PENCIL OF CUBICS**,
+and the linear coefficient runs $-\alpha^{2},\,0,\,+\alpha^{2}$ — symmetric about the middle. Verified
+symbolically; each member factors to the right locus:*
+
+| $f$ | member | locus | Nariai root |
+|---|---|---|---|
+| 0 | $r^{3}-\alpha^{2}r+2M\alpha^{2}$ | horizon cubic | $-6M$, $+3M$ (double) |
+| **1** | $r^{3}+2M\alpha^{2}$ — **DEPRESSED** | turnaround | $-3.7798M$ |
+| 2 | $r^{3}+\alpha^{2}r+2M\alpha^{2}$ | Euclidean null | $-1.7882M$ |
+
+**⌗ AND IT SUPPLIES WHAT `L8.4` COULD ONLY OBSERVE.** *`L8.4` records the turnaround as* **"not among them —
+it SEPARATES the three."** *The pencil says **why**: $f=1$ is the **depressed** member, the one whose linear
+term vanishes.* ⇒ ***That is what gives the turnaround its clean closed form $r^{3}=-2M\alpha^{2}$, and —
+since $V_{\mathrm{eff}}\equiv f$ identically — it is the **zero of the potential**, the locus at which the
+line element reduces to Minkowski and at which $E=1$ is anchored.***
+
+**⇒ SO THE PASSES AND THE SEPARATOR ARE ONE STRUCTURE.** *The two null passes sit at $f-1=\mp1$ and the
+separator at $f-1=0$: the pencil is symmetric about the member that separates. **The separator separates
+because it is the distinguished member**, which is a derivation of the arrangement rather than a description
+of it.*
+
+**⌗ WHAT THIS DOES AND DOES NOT SETTLE, against `L8.0`.** *It does **not** revive the dead claim: the pencil
+runs over **all** $f$ and does not SELECT $\{0,1,2\}$, so the DERIVATION register is still not satisfied for
+"these are one three".* ⇒ ***What it does establish is weaker and better posed: the three loci are three
+members of one one-parameter family, sampled where the linear coefficient is $-\alpha^{2},0,+\alpha^{2}$, and
+the middle member is distinguished intrinsically.*** *`L8.4`'s verdict on the original claim stands; its
+open question is answered in the form the answer actually takes.*
+
+**⌷ ROUTED, NOT APPLIED** *— no paper is edited by this. `P07` `lem:twoturnings` calls the horizon cubic and
+the comoving cubic "two affinely inequivalent $\mathbb{Z}_3$'s"; they are $f=0$ and $f=1$ of this pencil, and
+whether "affinely inequivalent" survives the pencil is the paper-holder's call and needs its own check.*
