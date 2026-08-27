@@ -375,3 +375,17 @@ says the datum should be at the onset,"* now with teeth.  **The closure is there
 
 Written closed on the mechanism, **fork open**, calibration curve recorded, with no claim about where
 `6797` comes from.  Not routed into `P15` without Daryl's separate call.
+
+**Branch (C) tested and disfavoured (the `Phi(eta)` envelope).**  Saving the potential per acoustic-peak
+mode (`PHISAVE`, onset -> recombination) and asking 58's question --- does the potential decay with the
+k-dependent phase that produces alternation, or smoothly --- the control's `Phi` carries **more
+oscillatory turning points** (`1, 1, 3` across the first three peak modes) than CR's (`0, 0, 2`): the
+control's potential **rebounds with the acoustic phase** (phase-coherent driving) while CR's decays
+**more monotonically**.  That is the field-side image of the redshift-side mechanism --- at the physical
+onset CR's modes are already sub-horizon and frozen, so there is no crossing to drive a phase-coherent
+potential --- so the saturation-at-the-control is **not a coincidence**, and (C) is disfavoured.  The
+effect is modest (one turning point per mode), not a knockout, but it points the same way.  **The fork
+narrows to (A) vs (B)** --- both real outcomes, neither an artefact: either the construction places the
+onset above `3e5` (over-determining the datum in CR's favour) or it says `6797` and CR carries a
+falsifiable prediction of a uniform comb.  **That is a framework question --- 58's --- and it is PO-13's
+own open datum, now held by two independent observables instead of one.**
