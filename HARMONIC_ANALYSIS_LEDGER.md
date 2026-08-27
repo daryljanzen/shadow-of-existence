@@ -163,6 +163,7 @@ margin behind it.*
 | `H9` | the real transfer's width | ⛭ **REFERRED** — *the pure Sachs–Wolfe limit is what is computed; the full transfer is `P15`'s* |
 | `H10` | is the operator half this field's? | ⛭ **REFERRED** — *station Ⓗ's, and worked as the functional-analysis bake's `F1`–`F3`* |
 | `H11` | is `P14`'s "mode completeness" really open? | ⛔ **BITE** r3454, **receipted** — *the wall is the reflectionless pair; only the **join** is open* |
+| `H12` | is `P07`'s adiabaticity parameter local or integrated? | ⏷ **ROUTED** r3456, **receipted** — *the separation is exact; the local value diverges* |
 
 ---
 
@@ -190,9 +191,9 @@ margin behind it.*
 | | this bake | the FULL tier |
 |---|---|---|
 | lines | **~200** | 189–978 ✔ |
-| numbered probes | **12** (`H0`–`H11`) | 10–17 ✔ |
-| receipts, all running | **2** | 2–10 ✔ |
-| papers touched | `P14`, `P15` = **2** | 6–11 ⚠ *four short* · **reach 2/12 = 17%** |
+| numbered probes | **13** (`H0`–`H12`) | 10–17 ✔ |
+| receipts, all running | **3** | 2–10 ✔ |
+| papers touched | `P07`, `P14`, `P15` = **3** | 6–11 ⚠ *three short* · **reach 3/12 = 25%** |
 | lead register | **11 rows, none unmarked** | — |
 
 ⛔ ***ONE RECEIPT AND FIVE PAPERS SHORT, AND THE NARROW-FIELD DEFENCE IS REFUTED.***
@@ -239,3 +240,30 @@ asserted $\lvert E_0\rvert<10^{-6}$ against a grid delivering $1.7\times10^{-6}$
 ledger's own adaptive-quadrature artefact that is three numerical slips in one field, every one caught
 by an assert, and not one of which prose would have caught.***
 *(receipt `storyboard_receipts/HA_H11_the_wall_is_reflectionless.py`)*
+
+---
+
+## ⏷ H12 — **`P07`'s ADIABATICITY IS AN INTEGRATED BOUND WRITTEN AS A LOCAL ONE**
+
+*The second probe of the reach owed. `P07` carries this field's vocabulary ×55 and the bake had never
+read it. It states:* ***"the tower's frequencies diverge at the branch point but only as $s^{-2/3}$ …
+its adiabaticity is controlled by the harmonic index alone, the parameter being $C/\mu_n$ with
+$C\le1.72$."***
+
+**⌗ THE SEPARATION IS EXACT AND THE CLAIM IS STRUCTURALLY RIGHT.** *With $\omega_n(s)=\mu_n f(s)$ the
+WKB parameter is $\lvert\dot\omega/\omega^2\rvert=(1/\mu_n)\lvert f'/f^2\rvert$ — **the mode index factors
+out identically**, so "controlled by the harmonic index alone" is not an approximation.*
+
+**⛔ BUT THE LOCAL VALUE DIVERGES, FOR EVERY MODE.** *With $f=s^{-2/3}$, $\lvert f'/f^2\rvert=\tfrac23
+s^{-1/3}\to\infty$ at the branch point.* ⇒ ***So the local parameter is unbounded at $s=0$ for every
+$n$ — not of order unity at $n=2,3$ and small elsewhere.*** *The divergence is **integrable**, which is
+why `P07` can say correctly that the adiabatic **correction** is finite.*
+
+⇒ ***THEREFORE $C\le1.72$ BOUNDS AN INTEGRATED QUANTITY, NOT A LOCAL ONE*** — *and the sentence "the
+parameter being $C/\mu_n$" reads as local, where no such bound exists.* ⌗ *The corpus's own
+`LOWL_adiabatic_bearing.py` uses $1.72$ as a given constant and does not distinguish them.*
+
+**⏷ ROUTED, NOT APPLIED.** *What is owed is one word: whether $C$ bounds the local parameter or its
+integral along the segment. **The receipt asserts the divergence and the convergence, not a value for
+$C$***, since that depends on the segment's range and on subleading terms.*
+*(receipt `storyboard_receipts/HA_H12_the_adiabaticity_is_integrated_not_local.py`)*
