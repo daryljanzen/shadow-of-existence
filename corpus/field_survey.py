@@ -100,7 +100,7 @@ FIELDS = [
     ('catastrophe / singularity theory', None,
      ['catastrophe', 'fold', 'cusp', 'unfolding', 'codimension', 'versal', 'Morse',
       'degenerate critical point']),
-    ('Cartan / differential geometry of connections', None,
+    ('Cartan / differential geometry of connections', 'CARTAN_HOLONOMY_LEDGER.md',
      ['connection', 'curvature form', 'torsion', 'frame bundle', 'Cartan', 'moving frame',
       'principal bundle', 'holonomy', 'parallel transport', 'soldering']),
     ('numerical analysis', None,
@@ -115,7 +115,7 @@ FIELDS = [
     ('convexity / optimisation', None,
      ['convex', 'extremal', 'minimise', 'minimize', 'stationary point', 'constraint',
       'Lagrange multiplier', 'saddle']),
-    ('functional analysis / operator theory', None,
+    ('functional analysis / operator theory', 'FUNCTIONAL_ANALYSIS_LEDGER.md',
      ['Hilbert space', 'Banach', 'bounded operator', 'unbounded', 'domain', 'closure',
       'dense', 'norm', 'inner product', 'unitary']),
 ]
@@ -128,6 +128,12 @@ FIELDS = [
 #:       uses, and the entry is REFUSED rather than thrown. **
 #:     * *`genus` x21 of `algebraic geometry`'s is the corpus's own species/genus TAXONOMY of metric
 #:       singularities -- "two species of one genus" -- not the genus of a curve.*
+#: ** TABLE CORRECTED r3435.  `Cartan / differential geometry of connections` and `functional
+#: analysis / operator theory` were listed with ledger=None and so reported as never-thrown
+#: CANDIDATES, while CARTAN_HOLONOMY_LEDGER.md and FUNCTIONAL_ANALYSIS_LEDGER.md have been on
+#: disk since r3164-r3168.  The table was not updated when those bakes ran, so the instrument
+#: built to catch stale surveys was itself stale -- exactly the failure its own docstring names:
+#: "the list was surveyed once, at r1890, and the corpus is twelve hundred revisions past it." **
 #:     * *`closure` x100 of `functional analysis`'s x212 is a theorem closing and the Galois closure,
 #:       not the closure of an operator.*
 #:     * *`character` x67 of `representation theory`'s x231 is "causal character" and "analytic
