@@ -587,3 +587,27 @@ the switch-on transient — a driven feature with no `QMIN`-analog skip — cons
 reliable measure.  **The honest statement 58 named holds: the driving is in the crossing; CR's modes,
 launched sub-horizon at the late geometric onset, do not cross during the plasma.**  Figure:
 `computations/beyond_the_wall/PHI_mechanism.png`.
+
+### ✔ LANDED — r3431 (mechanism grounded in P15) and r3430 (Q(k) sign settled)
+**r3431:** the Φ(η,k) crossing result is merged; **P15's mechanism paragraph now carries the measurement,
+not the assertion** — that Φ does not sit frozen (~40%, ~0.6/half-period decay), that the per-half-period
+decay rate is the same in both arms to within the spread across modes, and that the separation is the
+impulse at crossing, with the three entry radii (57.7, 23.2, 14.7 Mpc) and three `k·η_onset` (3.1, 7.8,
+12.2), cited to 58's receipt.  58's receipt title is corrected (decay → crossing); **conclusion unchanged**
+— a mode that never crosses while there is a plasma inherits the undriven phase.  P15's own wording ("the
+standard shift is universal only where every mode crosses the horizon while there is a plasma to be
+driven") was right all along; the paper said crossing, the receipt had said decay.  The crossing census
+answers the driving question **without any turnover measure**.
+
+**r3430 — the Q(k) sign question, settled by 58, with a caveat cc54's record must carry:** a sign flip in
+the initial amplitude is a `π` phase shift, so it moves *which zero is first* by exactly one half-period.
+At large `k` the four initial signs agree to a spread of `0.012`, so **`Q → 1` at large k is robust; the
+LOW-k `Q` values are NOT** (they depend on the initial-amplitude sign).  → In the "58's prediction
+confirmed" Q(k) table above, read the large-k approach to 1 as the load-bearing result and treat the
+low-k magnitudes (`Q_CR = 1.283` at `k=0.060`, etc.) as sign-dependent, not firm.  The comb, the
+mechanism (now measured), the calibration curve, and `Q → 1` all stand; the low-k `Q` magnitudes are the
+one thing held loosely.
+
+**PO-13 disposition:** the paper carries the comb, the mechanism (grounded in Φ's evolution), the
+calibration curve and Q(k), all on gated instrument measurements.  The A.139/A.46/CRRUN5 premises are
+withdrawn (r3427); the r3424 Q(k) withdrawal is reversed (r3429); this arc's compute half is landed.
