@@ -140,6 +140,7 @@ bouncing has still been worth throwing.*
 | `F9` | does `P07` overstate what `P10` establishes? | ⟐ **BOUNCE** — no; `P07` carries the closure *and* its openness |
 | `F10` | `Hilbert space` ×0, `inner product` ×0 — a hole? | ⟐ **NO** — the **weak** form of the corpus's anonymity: `P10` works on $L^2$ of the half-line throughout, so the objects are present under standard notation and only the phrases are missing |
 | `F11` | is the constraint algebra treated as an operator algebra? | ⟐ **BOUNCE** — it is `P12`'s subject **by title**, and the corpus's ×26 is largely its bibliography |
+| `F13` | what does the referred `P08` item open? | ⛔ **BITE** r3474, **receipted** — *`kernel` ×147 carries **four senses**, two of them opposite objects in this field* |
 | `F12` | does $\sqrt f$ make the branch point limit-circle after all? | ⊢ **WORKED** r3444, **receipted** — $\sqrt f$ is an **overall factor** and cancels, so the index is real $\pm\lambda$ whatever the sign of $f$ |
 
 ---
@@ -209,6 +210,42 @@ constant of integration."***
 literally the KERNEL OF A LINEAR OPERATOR, of dimension one — and the single constant of integration
 IS the mass.***
 
-⛑ **OWED on this field:** *whether the corpus's other generative conditions are kernels of linear
-operators in the same sense, and whether the dimension-one result generalises. `P08` is not in this
-bake's reach and should be.*
+✓ **DISCHARGED r3474 as `F13`** — *and following it found something larger than the referral.*
+
+---
+
+## ⛔⛭⛭ F13 — **"KERNEL" ×147, FOUR SENSES, AND THE BASELINE MISSED THE LARGEST**
+
+**⌘ THE REFERRAL, DISCHARGED.** *`P08` states that the vacuum condition is the first-order linear ODE
+$rf'+f-1+\Lambda r^2=0$ "whose **entire solution space** is $f=1-2M/r-\Lambda r^2/3$".* ***Verified:
+the homogeneous equation gives $f=C/r$, so the "vacuum kernel" is literally an operator's null space,
+of DIMENSION ONE — and the single constant of integration IS the mass.***
+
+**⛔ AND FOLLOWING IT FOUND THE LARGER THING.** *`kernel` occurs* ***×147*** *across the seventeen paper
+bodies — more than any technical term this field has counted — and on immediate co-text it carries at
+least **four distinct mathematical senses**:*
+
+| sense | count |
+|---|---|
+| **NULL SPACE** — the vacuum kernel | **×70** |
+| *(needs reading, not pattern-matching)* | ×54 |
+| **INTEGRAL KERNEL** — the Euclidean propagator $K$ | **×15** |
+| the WALL kernel (`P14`'s selection rule) | ×5 |
+| NULL SPACE — of an operator (Dirac, slicing) | ×2 |
+| GROUP kernel — of a homomorphism (Klein four-group) | ×1 |
+
+⇒ ***TWO OF THESE ARE OPPOSITE OBJECTS IN THIS FIELD.*** *A **null space** is what an operator
+**kills** — a subspace of the domain. An **integral kernel** is the **function representing** an
+operator — an element of a product space.* **As different as a set and a function, and the corpus
+writes both as "kernel", ×72 against ×15.**
+
+**⛔ WHY THIS BAKE MISSED IT.** *The r3168 baseline caught three homonyms and named them — `isometry`
+×268, `domain` ×32, `P07`'s topological `limit point`.* ***Every one of them CROSS-FIELD.*** *`kernel`
+is larger than all three as a technical term and ambiguous **within this field's own vocabulary**.*
+⇒ **A baseline that screens for cross-field homonyms and not for within-field ones will pass the
+corpus's most overloaded word.**
+
+⍀ ***NOT A DEFECT IN THE PAPERS:*** *every use is standard in its own context and none is wrong. The
+finding is about the **instrument**.*
+*(receipt `storyboard_receipts/FA_F13_kernel_carries_four_senses.py` — **added, runs, all asserts
+pass**)*
