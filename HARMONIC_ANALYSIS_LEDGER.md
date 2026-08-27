@@ -166,6 +166,7 @@ margin behind it.*
 | `H12` | is `P07`'s adiabaticity parameter local or integrated? | ⏷ **ROUTED** r3456, **receipted** — *the separation is exact; the local value diverges* |
 | `H13` | is `P10`'s "loses control at the lowest harmonics" a coincidence? | ⛔ **BITE** r3457, **receipted** — *it is FORCED, and it joins two papers* |
 | `H14` | is the interior index identifiable with the observed multipole? | ⏷ **ROUTED** r3458, **receipted** — *`P15` carries the map; it is not the identity, and it is worst at low $\ell$* |
+| `H15` | if the Bogoliubov mode split fails at the black-hole horizon, why does the thermal machinery survive at the de Sitter one? | ⍀ **BOUNCE** r3459 — *they have different origins, and the corpus says so* |
 
 ---
 
@@ -193,10 +194,12 @@ margin behind it.*
 | | this bake | the FULL tier |
 |---|---|---|
 | lines | **~200** | 189–978 ✔ |
-| numbered probes | **15** (`H0`–`H14`) | 10–17 ✔ |
+| numbered probes | **16** (`H0`–`H15`) | 10–17 ✔ |
 | receipts, all running | **5** | 2–10 ✔ |
-| papers touched | `P07`, `P10`, `P14`, `P15`, `P16` = **5** | 6–11 ⚠ *one short* · **reach 5/12 = 42%**, the highest of the sweep |
+| papers touched | `P01`, `P07`, `P10`, `P14`, `P15`, `P16` = **6** | 6–11 ✔ · **reach 6/12 = 50%**, the highest of the sweep by a wide margin |
 | lead register | **11 rows, none unmarked** | — |
+
+⛭⛭ ***THE FIELD NOW MEETS THE BAR — see the closing entry. The record below is kept as written.***
 
 ⛔ ***ONE RECEIPT AND FIVE PAPERS SHORT, AND THE NARROW-FIELD DEFENCE IS REFUTED.***
 
@@ -340,3 +343,48 @@ general.***
 **⏷ ROUTED, NOT APPLIED.** *`P16`'s sentence can name where the map lives and what it costs, instead
 of leaving the identification unattributed.*
 *(receipt `storyboard_receipts/HA_H14_the_index_to_multipole_map.py`)*
+
+---
+
+## ⍀ H15 — **THE TWO THERMAL STATES HAVE DIFFERENT ORIGINS, AND THE CORPUS SAYS SO**
+
+*The sixth paper, and the field's sharpest attack on it. `P01` holds that* ***"the Bogoliubov
+transformation that would yield the thermal spectrum has no realised background to be computed on — the
+mathematical horizon of the auxiliary extension … cannot define inequivalent in- and out-"*** *bases.*
+⌗ **That is a mode-basis claim, and the obvious attack is: then why does the same machinery survive at
+the de Sitter horizon, where the corpus uses a thermal state to fix $\hbar$ and close a self-adjoint
+extension?**
+
+⇒ ***Because it is not the same machinery, and the corpus marks the distinction in three places.***
+*The de Sitter state is the **Gibbons–Hawking Euclidean continuation**, period $\beta=2\pi\alpha$ —
+`P10` calls it* ***"a Euclidean continuation … distinct in kind"*** *from the real-analytic
+continuations used elsewhere and says the two* ***"must not be conflated"***.
+
+**⌗ AND `P01` MAKES IT SHARPER THAN THE OBJECTION.** *In de Sitter the accelerated temperature is
+$T(a)=\tfrac1{2\pi}\sqrt{H^2+a^2}$, which* ***reduces to the Gibbons–Hawking value $H/2\pi$ AT REST***
+*— verified: $a=0$ returns $H/2\pi$ exactly.* ⇒ ***So the de Sitter thermal state is available without
+any horizon-crossing mode split at all. It is a global property of the substrate's geometry, not a
+Bogoliubov matching — which is precisely why denying the matching at an unrealised horizon costs
+nothing there.***
+
+⌗ ***A clean bounce: the field's machinery was never in question, and what `P01` denies is the
+background it would be computed on.***
+
+---
+
+## ⛭⛭⛭ THE BAR — **MET r3459**
+
+| | this bake | the FULL tier |
+|---|---|---|
+| lines | **~330** | 189–978 ✔ |
+| numbered probes | **16** (`H0`–`H15`) | 10–17 ✔ |
+| receipts, all running | **5** | 2–10 ✔ |
+| papers touched | **6** | 6–11 ✔ |
+| **reach** | **6/12 = 50%** | *highest of the sweep* |
+
+⌗ **AND THE PATTERN IN WHAT THE REACH BOUGHT.** *`H11`–`H14` are every one of them **cross-paper**
+findings — `P14`'s wall against classical Pöschl–Teller, `P07`'s parameter against its own asymptotics,
+`P07`'s form joined to `P10`'s floor, `P16`'s assumption against `P15`'s map.* ***Not one was visible
+from inside a single paper, and none would have been found by the bake that read one.*** ⇒ *That is the
+reach argument demonstrated rather than asserted — and it is why r3453's refutation of the narrow-field
+clause was the right call and not merely the strict one.*
