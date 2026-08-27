@@ -171,6 +171,7 @@ margin behind it.*
 | `H17` | does the corpus do harmonic analysis on its FINITE groups? | ⛔ **BITE** r3462, **receipted** — *yes, in a receipt appendix, and it is half of colourlessness* |
 | `H18` | `P11` says a **single** TT mode and `P10` a **tower** — which? | ⛔ **BITE** r3463, **receipted** — *they count different indices of one object* |
 | `H19` | is `P04`'s $1/\sqrt N$ the whole story? | ⛔ **BITE** r3465, **receipted** — *it is the white-noise limit; long modes are unaveraged and raise the floor* |
+| `H20` | is `P03`'s $2/\sqrt3$ forced, and is its dimension selection harmonic? | ⛔⛔ **DOUBLE BITE** r3466, **receipted** — *both, and the second selects $d=4$ alone* |
 
 ---
 
@@ -516,7 +517,7 @@ paper is irrelevant from a word count.***
 | paper | subject | estimate | reason |
 |---|---|---|---|
 | `P04` *modern parallax* | the redshift-isotropy floor | **HIGH — CONFIRMED, worked as `H19`** | ***CMB anisotropy IS a spherical-harmonic decomposition***, and the floor is a **mode-counting** argument, $N=d_{\rm lss}/R$ |
-| `P03` *SdS slicing curve* | the door, the hinge, **sky-angle periodicity** | **HIGH** | *periodicity is Fourier; and the cubic's roots are $(2/\sqrt3)\sin w_k$ — **a harmonic parametrisation***, used as such by the representation bake |
+| `P03` *SdS slicing curve* | the door, the hinge, **sky-angle periodicity** | **HIGH — CONFIRMED, worked as `H20`** | *periodicity is Fourier; and the cubic's roots are $(2/\sqrt3)\sin w_k$ — **a harmonic parametrisation***, used as such by the representation bake |
 | `P02` *the circle* | one homogeneous circle, $r(z)=M(1+\cos z)$ | **HIGH** | *a **periodic function on a circle** is the founding object of Fourier analysis* |
 | `P12` *algebroid* | the constraint algebra, structure **functions** | **MEDIUM** | *structure functions varying over a base; the flat-connection/representation content* |
 | `P09` *range* | swept vs reassigned geometries, moduli | **MEDIUM** | *carries `Laplacian`; a moduli/completeness question* |
@@ -564,3 +565,40 @@ place, from the isotropy floor.***
 path window, exact for $k\gg1/L$, and that the unaveraged long-wavelength band raises the floor
 further.*
 *(receipt `storyboard_receipts/HA_H19_the_isotropy_floor_in_fourier.py`)*
+
+---
+
+## ⛔⛔⛭⛭⛭ H20 — **THE SLICING SCALE IS FORCED, AND THE DIMENSION SELECTION IS A CHEBYSHEV COUNT**
+
+*Estimated HIGH from contents; confirmed twice over. `P03` states two harmonic claims and receipts
+neither:* ***"the offset is $r_0=\tfrac2{\sqrt3}\sin w$ … the horizon relation is the pure triple-angle
+$2M=\tfrac2{3\sqrt3}\sin3w$, the slicing scale $2/\sqrt3$ being forced as the unique value removing the
+residual harmonic; and that collapse is available in four spacetime dimensions and — up to a parity —
+in five, and in no other, since the harmonics standing below the top one number two or more from six
+dimensions upward while the construction has a single [scale]."***
+
+**① THE SCALE IS FORCED.** *Substituting $x=A\sin w$ into $x^3+px+q=0$ and using
+$\sin^3=(3\sin w-\sin3w)/4$:*
+$$-\tfrac{A^3}4\sin3w+\Big(\tfrac{3A^3}4+pA\Big)\sin w+q=0.$$
+*The residual coefficient $A(3A^2+4p)/4$ vanishes at $A=2\sqrt{-p}/\sqrt3$, which at $p=-1$ is*
+***$A=2/\sqrt3$ exactly*** *— and what remains is $2M=\tfrac2{3\sqrt3}\sin3w$.* ⇒ **The corpus's slicing
+scale and its triple-angle relation, derived rather than quoted.**
+
+**② AND THE DIMENSION SELECTION IS A HARMONIC COUNT.** *In $d$ dimensions the horizon polynomial has
+degree $n=d-1$, and $\sin^n w$ expands into harmonics $n,n-2,\dots$:*
+
+| $d$ | 4 | 5 | 6 | 7 | 8 |
+|---|---|---|---|---|---|
+| harmonics | $[3,1]$ | $[4,2,0]$ | $[5,3,1]$ | $[6,4,2,0]$ | $[7,5,3,1]$ |
+| **sub-leading** | **1** | 2 | **2** | 3 | 3 |
+
+⇒ ***One free scale kills ONE sub-leading harmonic, so a pure top harmonic is available at $d=4$ and
+nowhere else — and the sub-leading count is two or more from six dimensions upward, which is the
+corpus's sentence verbatim***, *with $d=5$ the even/parity case it flags separately. (Expansion
+verified exactly at $n=3$ and $n=5$ against the binomial formula, after two simplifier routines
+silently failed to expand it — recorded because the count IS the claim.)*
+
+⌘ ***SO THE CORPUS'S DIMENSION SELECTION — four spacetime dimensions, not five, not six — IS A
+CHEBYSHEV COUNTING ARGUMENT, AND THIS FIELD OWNS IT.*** *It sat unreceipted in a paper this bake had
+never opened.*
+*(receipt `storyboard_receipts/HA_H20_the_slicing_scale_and_the_dimension_count.py`)*
