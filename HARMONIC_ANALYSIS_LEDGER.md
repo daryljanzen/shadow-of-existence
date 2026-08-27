@@ -169,6 +169,7 @@ margin behind it.*
 | `H15` | if the Bogoliubov mode split fails at the black-hole horizon, why does the thermal machinery survive at the de Sitter one? | ⍀ **BOUNCE** r3459 — *they have different origins, and the corpus says so* |
 | `H16` | is `P13` really harmonically empty? | ⛔ **NO — THE GREP VERDICT WAS WRONG** r3461, **receipted** — *the obstruction is a Fourier argument and the escape is the character group* |
 | `H17` | does the corpus do harmonic analysis on its FINITE groups? | ⛔ **BITE** r3462, **receipted** — *yes, in a receipt appendix, and it is half of colourlessness* |
+| `H18` | `P11` says a **single** TT mode and `P10` a **tower** — which? | ⛔ **BITE** r3463, **receipted** — *they count different indices of one object* |
 
 ---
 
@@ -405,7 +406,7 @@ catch. `H15` stands as a finding; it was the wrong paper to close on.*
 
 | paper | verdict |
 |---|---|
-| `P11` *dynamics* | ⛑ **OWED** — *carries "a single propagating **transverse-traceless mode**" in polarized Gowdy–de~Sitter; a real decomposition, and it bears on `P10`'s TT tower* |
+| `P11` *dynamics* | ⛔ **WORKED as `H18`** r3463, **receipted** — *its "single mode" counts POLARISATIONS where `P10`'s tower counts harmonics* |
 | `P13` *boundary* | ⛔ **THE NEGATIVE WAS WRONG** — *worked as `H16` r3461, **receipted**. Kaluza–Klein reduction IS harmonic analysis, and the chirality obstruction is a Fourier argument* |
 | `P05` *groupoid* | ⍀ **READ r3462** — *its `completeness` is GENERATION-completeness, a different sense; and reading on from it found `H17`* |
 | `p0`, `P09` | ⛑ **OWED** — *one genuine term each (`orthogonalit`, `Laplacian`); marginal, and to be read rather than assumed* |
@@ -475,3 +476,31 @@ colour singlet and NOT SUFFICIENT."***
 appendix, phrased in representation-theoretic words. **The third finding in this field invisible to a
 grep**, after `P13`'s Fourier obstruction and `P11`'s transverse-traceless mode.*
 *(receipt `storyboard_receipts/HA_H17_the_two_halves_of_colourlessness.py`)*
+
+---
+
+## ⛔⛭⛭ H18 — **TWO PAPERS, ONE WORD, TWO COUNTS**
+
+*`P11`:* ***"the spatial leaf carries a single propagating transverse-traceless mode … it carries
+exactly two Killing vectors."*** *`P10`: a TT **tower** on $S^3$ with degeneracy $2(n^2-1)$, $n\ge2$.*
+⛔ **One says a single mode and the other a tower, of the same sector.**
+
+**⌘ WHAT EACH IS COUNTING.** *`P10`'s degeneracy **factorises**: $2(n^2-1)=(n^2-1)$ harmonics $\times$
+**2 polarisations** — at $n=2$, $3\times2=6$; at $n=3$, $8\times2=16$.* ***The factor of two IS the
+polarisation count.*** *`P11`'s Gowdy class imposes **polarisation**, not harmonic content: general
+relativity carries two propagating degrees of freedom, polarized Gowdy keeps **one**, and the two
+commuting Killing vectors reduce the equations to functions of $(t,x)$ — in which the field **still
+carries a tower of harmonics**.*
+
+⇒ ***So "a single propagating transverse-traceless mode" counts POLARISATIONS. Read as a harmonic
+count it contradicts `P10`; read as what it counts, the two are consistent and describe different
+reductions of one sector.***
+
+⌗ **AND THIS IS THE BASELINES' HOMONYM PROBLEM ONE LEVEL IN.** *There it is vocabulary — `isometry`
+as the substrate's group against a Hilbert-space isometry, `domain` as domain-of-dependence, and this
+field's own `completeness` as causal or group completeness.* ***Here it is inside the PHYSICS: two
+papers, one word, two indices of the same object.***
+
+**⏷ ROUTED, NOT APPLIED.** *A qualifier — "a single propagating **polarisation**", or "one of the two"
+— removes the apparent conflict at no cost.*
+*(receipt `storyboard_receipts/HA_H18_two_papers_one_word_two_counts.py`)*
