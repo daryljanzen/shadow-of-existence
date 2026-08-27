@@ -195,6 +195,7 @@ after this bake as before it — what changed is that the programme to test it n
 | `S7` | can `P06`'s five instances be spent? | ⊢ **WORKED** r3160 — *no: read as a paired sign test they give $p=0.031$, and they may not be so read, because they were selected on outcome* |
 | `S8` | does `p0` apply its own survivorship guard to its **newest** instance? | ⟐ **BOUNCE** r3449 — *it refuses the instance explicitly, in advance* |
 | `S9` | which of `P16`'s three abundance outcomes actually discriminates? | ⛔ **BITE** r3450, receipted — *the shared **failure**, and it is filed as a problem* |
+| `S10` | is `P07`'s citation multiplicity a proxy for load-bearing weight? | ⌷ **ROUTED** r3451, receipted — *the confound is absent and the claim is untestable at $n=6$* |
 
 ---
 
@@ -240,9 +241,9 @@ two orders, $92\times$ to one order, $923\times$ for it to vanish.*
 | | this bake | the FULL tier |
 |---|---|---|
 | lines | **~270** | 189–978 ✔ |
-| numbered probes | **11** (`S0`–`S9`, `S2′`) | 10–17 ✔ |
-| receipts, all running | **4** | 2–10 ✔ |
-| papers touched | `P04`, `P06`, `P15`, `P16`, `p0` = **5** | 6–11 ⚠ *one short* |
+| numbered probes | **12** (`S0`–`S10`, `S2′`) | 10–17 ✔ |
+| receipts, all running | **5** | 2–10 ✔ |
+| papers touched | `P04`, `P06`, `P07`, `P15`, `P16`, `p0` = **6** | 6–11 ✔ |
 | lead register | **9 rows, none unmarked** | — |
 
 ## ⟐ S8 — **`p0` REFUSES ITS OWN NEWEST INSTANCE, IN ADVANCE**
@@ -300,4 +301,36 @@ single confirmation that the cooling leg is the standard network, and not merely
 
 ---
 
-⚠ ***ONE PAPER SHORT, and named rather than rounded up. This field is not done.***
+## ⌷ S10 — **`P07`'s CITATION PROXY SURVIVES ITS CONFOUND AND CANNOT BE TESTED**
+
+*`P07`'s foundational-structure figure labels its edges* ***"citation multiplicities, a proxy for
+load-bearing weight"***. *A proxy assumption is a thing this field tests, and the obvious confound is
+**size**: a longer paper offers more places to be cited from.*
+
+| | | | | | |
+|---|---|---|---|---|---|
+| `P1` 35 cites, 12810 words | `P3` 25 / 30002 | `P5` 23 / 16913 | `P4` 18 / **6289** | `P6` 18 / 13482 | `P2` 15 / 15703 |
+
+⇒ ***The confound is not visible: $r=+0.187$.*** *The sharpest case is `P4` — **the shortest paper**,
+6289 words, carrying 18 citations against `P3`'s 25 from 30002. A size effect would have put the
+longest first and the shortest last.*
+
+**⛔ BUT THE TEST IS UNDERPOWERED, AND THAT IS THE FINDING.** *At $n=6$ the Fisher-$z$ interval on
+$r=0.187$ runs from $-0.74$ to $+0.87$ — **from strong negative to strong positive. It excludes
+nothing.** Detecting $\rho=0.5$ at 80% power needs **30** papers; $\rho=0.6$ needs **20**. The corpus
+has **seventeen** and `P07` draws **six** edges.*
+
+⇒ ***So the proxy can be neither validated nor refuted with the corpus that exists — which is `S1`'s
+own result, that a small class cannot adjudicate a moderate effect, turned on the corpus itself rather
+than on `P06`'s reference class.***
+
+**⌷ ROUTED, NOT APPLIED.** *What is owed is a word: the figure says "a proxy for load-bearing weight"
+and could say **"an indicative count, not a measurement"** without losing anything it uses the count
+for.*
+*(receipt `receipts/L271_the_statistics_bake/S10_the_citation_proxy_is_untestable_at_n_six.py`)*
+
+---
+
+⇒ ***THE BAKE MEETS THE BAR.*** *Four of ten fields now do. Every shortfall along the way was named
+before it was closed — `S2`'s failing receipt at r3447, the probe count at r3448, the paper reach at
+r3449 and r3450 — and none was rounded up.*
