@@ -140,6 +140,7 @@ bouncing has still been worth throwing.*
 | `F9` | does `P07` overstate what `P10` establishes? | ⟐ **BOUNCE** — no; `P07` carries the closure *and* its openness |
 | `F10` | `Hilbert space` ×0, `inner product` ×0 — a hole? | ⟐ **NO** — the **weak** form of the corpus's anonymity: `P10` works on $L^2$ of the half-line throughout, so the objects are present under standard notation and only the phrases are missing |
 | `F11` | is the constraint algebra treated as an operator algebra? | ⟐ **BOUNCE** — it is `P12`'s subject **by title**, and the corpus's ×26 is largely its bibliography |
+| `F14` | does `P14`'s leaf-compactness survive the **Nariai** limit? | ⍀ **BOUNCE — IT DOES** r3476, **receipted** — *and the corpus's own receipt never tested it* |
 | `F13` | what does the referred `P08` item open? | ⛔ **BITE** r3474, **receipted** — *`kernel` ×147 carries **four senses**, two of them opposite objects in this field* |
 | `F12` | does $\sqrt f$ make the branch point limit-circle after all? | ⊢ **WORKED** r3444, **receipted** — $\sqrt f$ is an **overall factor** and cancels, so the index is real $\pm\lambda$ whatever the sign of $f$ |
 
@@ -262,7 +263,7 @@ senses. **So the estimate below is made from CONTENTS.***
 
 | paper | raw | estimate | reason |
 |---|---|---|---|
-| **`P14`** *matter sector* | 82 | **HIGH** | ***a Dirac operator on the wall, its normalizable modes, and an index*** — an operator paper, never opened by this bake |
+| **`P14`** *matter sector* | 82 | **HIGH — CONFIRMED, worked as `F14`** | ***a Dirac operator on the wall, its normalizable modes, and an index*** — an operator paper, never opened by this bake |
 | **`P13`** *boundary* | 32 | **HIGH** | *the **Atiyah–Hirzebruch index obstruction** — operator-theoretic, and `H16` showed it turns on a Fourier decomposition* |
 | `P08` *slicing operator* | 45 | **MEDIUM** | *`F13` has already shown its vacuum kernel IS an operator null space of dimension one* |
 | `P03` *slicing curve* | 29 | **MEDIUM** | *carries $L^2$ ×5 and `extension` ×8 — needs reading to tell self-adjoint from analytic* |
@@ -275,3 +276,43 @@ senses. **So the estimate below is made from CONTENTS.***
 | `P05` *groupoid* | 16 | **LOW** | *`domain` ×8 likely the geometric sense* |
 
 ⇒ ***Eleven papers unread on this field, and none may be dismissed on a count.***
+
+---
+
+## ⍀ F14 — **`P14`'s LEAF COMPACTNESS SURVIVES THE NARIAI LIMIT, AND THE CORPUS'S RECEIPT NEVER TESTED IT**
+
+*`P14` was estimated **HIGH** and this bake had never opened it. Its index argument is
+functional-analytic at root:* ***"in the leaf's proper measure the closed slicing has FINITE TOTAL
+LENGTH, so the leaf is COMPACT and its Dirac operator carries a WELL-DEFINED ANALYTICAL INDEX."***
+⌗ **An index is well defined when the operator is FREDHOLM, and on a noncompact manifold it generally
+is not — so the whole count of three zero-modes rests on $\int\mathrm dr/\sqrt{\lvert f\rvert}$ being
+finite.**
+
+**⌘ WHAT THE CORPUS VERIFIES:** *`P14_leaf_compactness.py` runs and passes — at
+$r_b=0.2570$, $r_c=0.8464$, **two separate horizons**, a **non-degenerate** member.*
+
+**⛔ THE GAP THIS PROBE FOUND:** *the corpus's cosmology is the **Nariai** member, where those horizons
+**merge into a double root**. At a double zero $f\sim(r-r_h)^2$, so $1/\sqrt{\lvert f\rvert}\sim
+1/\lvert r-r_h\rvert$ and the integral **diverges logarithmically** — checked symbolically.* ***The
+merging limit is exactly where the integrable-square-root hypothesis fails pointwise, and the corpus's
+own receipt does not test it.***
+
+**⍀ AND THE CLAIM SURVIVES IT.** *Computed as the member approaches Nariai:*
+
+| $2M/2M_N$ | 0.5 | 0.9 | 0.99 | 0.999 | 0.9999 | 0.999999 |
+|---|---|---|---|---|---|---|
+| gap | 0.684 | 0.300 | 0.0943 | 0.0298 | 0.0094 | 0.00094 |
+| $L$ | 1.7463 | 1.8032 | 1.8128 | 1.8137 | **1.8138** | **1.8138** |
+
+⇒ ***The gap closes and $L$ CONVERGES.*** *The reason is exact: near a merging pair
+$f=(r-r_b)(r_c-r)\times$ (smooth, bounded), and $r=\text{mid}+\tfrac{\rm gap}2\sin\theta$ turns
+$\int\mathrm dr/\sqrt{(r-r_b)(r_c-r)}$ into $\int_{-\pi/2}^{\pi/2}\mathrm d\theta=\pi$ —* ***independent
+of the gap***, *confirmed numerically to ten digits at gaps of $1$, $0.1$, $0.001$.* **The interval
+closing exactly compensates the integrand blowing up, which is why the pointwise divergence never
+reaches the limit.**
+
+⌘ ***So the leaf stays compact, the Dirac operator stays Fredholm, and the index stays well defined at
+the member the cosmology selects. The probe was well posed and the answer CONFIRMS the corpus — at a
+point its own receipt left untested.***
+*(receipt `storyboard_receipts/FA_F14_leaf_compactness_through_nariai.py` — **added, runs, all asserts
+pass**)*
