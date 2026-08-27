@@ -140,6 +140,7 @@ bouncing has still been worth throwing.*
 | `F9` | does `P07` overstate what `P10` establishes? | ⟐ **BOUNCE** — no; `P07` carries the closure *and* its openness |
 | `F10` | `Hilbert space` ×0, `inner product` ×0 — a hole? | ⟐ **NO** — the **weak** form of the corpus's anonymity: `P10` works on $L^2$ of the half-line throughout, so the objects are present under standard notation and only the phrases are missing |
 | `F11` | is the constraint algebra treated as an operator algebra? | ⟐ **BOUNCE** — it is `P12`'s subject **by title**, and the corpus's ×26 is largely its bibliography |
+| `F18` | is `P15`'s `unbounded` this field's? | ⛔ **BITE** r3480, **receipted** — *the word is not, the **argument** is — and it is the **third** instance of one form* |
 | `F17` | is `P03`'s `extension` ×8 a **self-adjoint** extension? | ⍀ **NO — NEGATIVE** r3479 — *all of it generalisation; and reading it caught an error in `H20`* |
 | `F16` | is `P08`'s matter functional linear? | ⛔ **BITE** r3478, **receipted** — ***affine***, *so the vacuum sector is a **coset** of the kernel* |
 | `F15` | how many compactness statuses does the chirality result use? | ⛔ **BITE** r3477, **receipted** — ***three, on three spaces, in three papers*** |
@@ -270,7 +271,7 @@ senses. **So the estimate below is made from CONTENTS.***
 | **`P13`** *boundary* | 32 | **HIGH — CONFIRMED, worked as `F15`** | *the **Atiyah–Hirzebruch index obstruction** — operator-theoretic, and `H16` showed it turns on a Fourier decomposition* |
 | `P08` *slicing operator* | 45 | **MEDIUM — CONFIRMED, worked as `F16`** | *`F13` has already shown its vacuum kernel IS an operator null space of dimension one* |
 | `P03` *slicing curve* | 29 | ⍀ **NEGATIVE, read r3479** | *carries $L^2$ ×5 and `extension` ×8 — needs reading to tell self-adjoint from analytic* |
-| `P15` *cosmology* | 117 | **MEDIUM** | *`spectrum` is the power spectrum, but the acoustic oscillator and `unbounded` ×4 are this field's* |
+| `P15` *cosmology* | 117 | **MEDIUM — vocabulary NEGATIVE, argument POSITIVE; worked as `F18`** | *`spectrum` is the power spectrum, but the acoustic oscillator and `unbounded` ×4 are this field's* |
 | `P11` *dynamics* | 23 | **MEDIUM** | *the TT oscillator, and `P10`'s boundedness argument reaches into it* |
 | `P01` *causality* | 32 | **MEDIUM** | *the thermal spectrum and the Bogoliubov bases — `H15` touched them from the other side* |
 | `P06` *geometric core* | 23 | **MEDIUM** | *`self-adjoint` ×1, and the ladder* |
@@ -399,3 +400,33 @@ paper's "and — up to a parity — in five".***
 
 ⌗ *Both conventions agree from $D=6$ up, so the load-bearing half of `H20` stood; the gloss was
 papering over a real numerical difference. **Found by reading a paper for a different field.***
+
+---
+
+## ⛔⛭⛭⛭ F18 — **ONE BOUNDEDNESS ARGUMENT, THREE SECTORS, NEVER JOINED**
+
+*`P15`'s vocabulary is homonymic like the rest — `unbounded` is unbounded **curvature**, `bounded` a
+physical energy bound, `operator` ×10 the **slicing** operator, `eigen` ×0, `self-adjoint` ×0.*
+⛔ ***But the ARGUMENT in its `unbounded` passage is this field's, and it is the third instance of one
+logical form.***
+
+| | risk | supply | survives |
+|---|---|---|---|
+| **`P10`** the Euclidean kernel | *an unbounded-below Hamiltonian makes $K=e^{-\hat H\lvert\Delta\eta\rvert}$ diverge* | *"mode by mode a harmonic oscillator, whose Hamiltonian is **bounded below**" — "no runaway direction for the kernel to diverge along"* | **the kernel exists** |
+| **`P15`** the onset datum | *"a beginning at genuinely **unbounded** curvature places no finite floor under $z_{\rm onset}$ … and the single datum ceases to be a datum at all"* | *"the scale is set by $\alpha$ everywhere, so the divergence is the areal coordinate degenerating and not a scale of the geometry"* | **$\rho_r/\rho_m$ stays a DATUM** |
+| **`P14`** the Dirac index *(via `F14`)* | *infinite leaf length → not Fredholm → index undefined* | *finite proper length in $\mathrm d\ell=\mathrm dr/\sqrt{\lvert f\rvert}$, through the Nariai limit* | **the index equals THREE** |
+
+⇒ ***ONE FORM: an unbounded or infinite structure would destroy a well-defined quantity; the
+construction supplies the bound; the quantity survives.*** *Three sectors — **quantum, cosmological,
+fermionic**.*
+
+**⌘ AND THE SAME SCALE DOES THE BOUNDING IN ALL THREE.** *$\alpha$ bounds the substrate's curvature
+(`P15`, explicitly), fixes the interval the areal radius runs on (`P10`), and makes $f$'s zeros simple
+on a bounded interval (`P14`/`F14`).* ⇒ ***Not merely analogous: the same scale discharging the same
+duty in three sectors.***
+
+⛔ *And no paper joins them — `P10` argues its boundedness against the conformal-factor problem, `P15`
+against the $z_{\rm onset}$ limit, and `P14`'s is established only through `F14`. **Three papers and
+one receipt.***
+*(receipt `storyboard_receipts/FA_F18_one_boundedness_argument_three_sectors.py` — **added, runs, all
+asserts pass**)*
