@@ -175,6 +175,7 @@ margin behind it.*
 | `H21` | is `P02`'s "identical analytic character" a coincidence? | ⛔ **BITE** r3467, **receipted** — *it IS band-limiting to the first harmonic* |
 | `H22` | what is the symmetric space USED for? | ⛔ **BITE** r3468, **receipted** — *its algebra ×260, its analysis ×2 — and both analytic uses are load-bearing and unnamed* |
 | `H23` | what exactly is "the failure of $U$ to be harmonic"? | ⛔ **BITE** r3469, **receipted** — *it is the **obstruction** to integrating $\gamma$, not a quantity alongside it* |
+| `H24` | what does `P06`'s vacuous orthogonality theorem cost? | ⛔ **BITE** r3470, **receipted** — *ellipsoidal harmonics — and the same fact makes the corpus's harmonics **leafwise*** |
 
 ---
 
@@ -524,7 +525,7 @@ paper is irrelevant from a word count.***
 | `P02` *the circle* | one homogeneous circle, $r(z)=M(1+\cos z)$ | **HIGH — CONFIRMED, worked as `H21`** | *a **periodic function on a circle** is the founding object of Fourier analysis* |
 | `P12` *algebroid* | the constraint algebra, structure **functions** | **MEDIUM — CONFIRMED, worked as `H22`** | *structure functions varying over a base; the flat-connection/representation content* |
 | `P09` *range* | swept vs reassigned geometries, moduli | **MEDIUM — CONFIRMED, worked as `H23`** | *carries `Laplacian`; a moduli/completeness question* |
-| `P06` *geometric core* | the substrate itself, the $\mathrm{dS}_5$ ladder | **MEDIUM** | *carries `orthogonalit`; the ladder is a decomposition* |
+| `P06` *geometric core* | the substrate itself, the $\mathrm{dS}_5$ ladder | **MEDIUM — CONFIRMED, worked as `H24`** | *carries `orthogonalit`; the ladder is a decomposition* |
 | `p0` *shadow of existence* | epistemology of theory-choice | **LOW** | *no decomposition content expected — **to be read, not assumed*** |
 | `P08` *slicing operator* | the generating operator, the lock $g_{tt}g_{rr}=-1$ | **LOWEST** | *algebraic/ODE machinery, no mode content — **and this matches Daryl's own guess independently*** |
 
@@ -699,3 +700,33 @@ function cannot be built unless the first is harmonic.***
 labelled a sanity check.*
 *(receipt `storyboard_receipts/HA_H23_matter_is_the_obstruction_to_gamma.py` — **added, runs, all
 asserts pass**)*
+
+---
+
+## ⛔⛭⛭⛭ H24 — **ONE SURFACE PER POINT, HENCE NO ELLIPSOIDAL HARMONICS — AND THAT IS WHY THE CORPUS'S HARMONICS ARE LEAFWISE**
+
+*`P06` examines a* ***classical orthogonality theorem*** *for confocal quadrics and finds it vacuous:*
+***"the theorem is not that confocal quadrics meet orthogonally, but that through a generic point pass
+THREE members … The confocal equation is cubic in its parameter generically and LINEAR in the
+equilateral case, so exactly one member passes through any point and there is no second for it to be
+orthogonal to. The hypothesis fails, not the conclusion."***
+
+**⌘ VERIFIED.** *For $x^2/(a^2+\lambda)+y^2/(b^2+\lambda)+z^2/(c^2+\lambda)=1$: **degree 3**
+generically, **degree 1** equilateral, with $\lambda=x^2+y^2+z^2-a^2$ — exactly one member per point.*
+
+**⛔ AND THE CONSEQUENCE `P06` DOES NOT DRAW IS THIS FIELD'S.** *Triple orthogonality is precisely what
+makes confocal quadrics a **separable** coordinate system — where the Laplacian separates into Lamé
+equations and the solutions are **ellipsoidal harmonics**.* ⇒ ***With one surface through each point
+that separation is unavailable on this substrate.*** *`P06` states the negative half; the positive half
+is about which harmonic analysis the substrate **supports**.*
+
+**⌘ AND THE POSITIVE HALF IS THE SAME FACT.** *`P06` continues:* ***"a point assigns one value to the
+quadratic form, which is what makes the family a FOLIATION."*** *Harmonic analysis on a foliation is
+harmonic analysis of the **leaves** — which is exactly what every harmonic computation in this corpus
+is: the $S^3$ tensor tower (`P10`), the flat spherical-Bessel projection (`P15`), the reflectionless
+wall (`P14`).*
+
+⇒ ***So the failure of triple-orthogonality and the leafwise character of the corpus's harmonics are
+ONE fact — and it explains `H22`'s boundary, where the analytic side of the symmetric space went
+almost unused: the physics is leafwise by construction.***
+*(receipt `storyboard_receipts/HA_H24_one_surface_per_point.py` — **added, runs, all asserts pass**)*
