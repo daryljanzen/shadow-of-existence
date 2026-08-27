@@ -165,6 +165,7 @@ margin behind it.*
 | `H11` | is `P14`'s "mode completeness" really open? | ⛔ **BITE** r3454, **receipted** — *the wall is the reflectionless pair; only the **join** is open* |
 | `H12` | is `P07`'s adiabaticity parameter local or integrated? | ⏷ **ROUTED** r3456, **receipted** — *the separation is exact; the local value diverges* |
 | `H13` | is `P10`'s "loses control at the lowest harmonics" a coincidence? | ⛔ **BITE** r3457, **receipted** — *it is FORCED, and it joins two papers* |
+| `H14` | is the interior index identifiable with the observed multipole? | ⏷ **ROUTED** r3458, **receipted** — *`P15` carries the map; it is not the identity, and it is worst at low $\ell$* |
 
 ---
 
@@ -192,9 +193,9 @@ margin behind it.*
 | | this bake | the FULL tier |
 |---|---|---|
 | lines | **~200** | 189–978 ✔ |
-| numbered probes | **14** (`H0`–`H13`) | 10–17 ✔ |
-| receipts, all running | **4** | 2–10 ✔ |
-| papers touched | `P07`, `P10`, `P14`, `P15` = **4** | 6–11 ⚠ *two short* · **reach 4/12 = 33%** |
+| numbered probes | **15** (`H0`–`H14`) | 10–17 ✔ |
+| receipts, all running | **5** | 2–10 ✔ |
+| papers touched | `P07`, `P10`, `P14`, `P15`, `P16` = **5** | 6–11 ⚠ *one short* · **reach 5/12 = 42%**, the highest of the sweep |
 | lead register | **11 rows, none unmarked** | — |
 
 ⛔ ***ONE RECEIPT AND FIVE PAPERS SHORT, AND THE NARROW-FIELD DEFENCE IS REFUTED.***
@@ -305,3 +306,37 @@ the TT/conformal orthogonality — a completeness statement — without naming t
 names it**: `York` appears in **eight** papers, `transverse-traceless` ×29, `DeWitt` ×11, `tensor
 harmonic` in `P10` itself. *The anonymity pattern that held for `Hilbert space` and `Ambrose–Singer`
 does **not** hold here.*
+
+---
+
+## ⏷ H14 — **`P16` DECLINES AN IDENTIFICATION `P15` HAS A MAP FOR, AND THE MAP IS NOT THE IDENTITY**
+
+*The fourth of the reach owed. `P16` bounds the progenitor's radiation fraction at
+$\rho_r/\rho_m\lesssim10^{-5}$ and then names its own assumption:* ***"on the identification of the
+interior's harmonic index with the observed multipole — an identification this paper does not
+establish, so the figure is an order of magnitude with a stated assumption rather than a
+measurement."*** ⌗ **A paper naming its own unestablished assumption is the best kind of probe, and
+index-to-multipole IS this field's object.**
+
+**`P15` carries a map of exactly that kind** — *the closed-$S^3$ source projected through the **flat**
+spherical Bessel functions — and it is **not** the identity. A single mode at $k$ projects with weight
+$(2\ell+1)j_\ell(kD_C)^2$, peaking at:*
+
+| $kD_C$ | 5 | 10 | 50 | 200 | 1000 |
+|---|---|---|---|---|---|
+| peak $\ell$ | 3 | 8 | 47 | 195 | 991 |
+| $\ell/kD_C$ | **0.600** | 0.800 | 0.940 | 0.975 | 0.991 |
+
+⇒ ***The map is $\ell\simeq kD_C$ approached from BELOW, so $k\leftrightarrow\ell$ is the identity only
+if $D_C=1$ in the units used.*** ⛔ ***And the deviation is worst at LOW multipole — forty per cent at
+$\ell=3$ — which is exactly the range the corpus's low-multipole story occupies and where `P16`'s bound
+is meant to bite.***
+
+**⌗ SO THE ASSUMPTION IS NOT MERELY UNESTABLISHED.** *The corpus contains a map of the required kind;
+that map says the simplest form of the identification is wrong; and the error is largest where the
+bound is used.* ***`P16`'s caution is warranted, and it can be made specific rather than left
+general.***
+
+**⏷ ROUTED, NOT APPLIED.** *`P16`'s sentence can name where the map lives and what it costs, instead
+of leaving the identification unattributed.*
+*(receipt `storyboard_receipts/HA_H14_the_index_to_multipole_map.py`)*
