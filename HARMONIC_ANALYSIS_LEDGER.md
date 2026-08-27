@@ -372,7 +372,7 @@ background it would be computed on.***
 
 ---
 
-## ⛭⛭⛭ THE BAR — **MET r3459**
+## ⛔ THE BAR — **CLOSED TOO EARLY AT r3459, REOPENED r3460**
 
 | | this bake | the FULL tier |
 |---|---|---|
@@ -388,3 +388,25 @@ findings — `P14`'s wall against classical Pöschl–Teller, `P07`'s parameter 
 from inside a single paper, and none would have been found by the bake that read one.*** ⇒ *That is the
 reach argument demonstrated rather than asserted — and it is why r3453's refutation of the narrow-field
 clause was the right call and not merely the strict one.*
+
+---
+
+## ⛔ REOPENED r3460 — **the close was on the proxy, and the sixth paper was chosen to hit it**
+
+*`P01` was read and `P05` skipped, to reach six.* ⛔ ***Measured after: `P01`'s two `completeness`
+occurrences are CAUSAL homonyms*** *— "future-completeness of $O$", "geodesic incompleteness" — and it
+carries exactly one genuine harmonic term (`mode function`).* **The count was met with a paper whose
+harmonic content was largely a substring artefact**, *which is what the r3164 Cartan baseline exists to
+catch. `H15` stands as a finding; it was the wrong paper to close on.*
+
+**⌗ THE REMAINING CARRIERS, READ DIRECTLY RATHER THAN COUNTED:**
+
+| paper | verdict |
+|---|---|
+| `P11` *dynamics* | ⛑ **OWED** — *carries "a single propagating **transverse-traceless mode**" in polarized Gowdy–de~Sitter; a real decomposition, and it bears on `P10`'s TT tower* |
+| `P13` *boundary* | ⍀ **CHECKED, NEGATIVE** — *no decomposition, basis, expansion or TT content; its `spectrum` is the index-theorem sense* |
+| `P05` *groupoid* | ⍀ **CHECKED, NEGATIVE** — *its `completeness` ×8 is `prop:completeness`, completeness of a **group**, not of a basis* |
+| `p0`, `P09` | ⛑ **OWED** — *one genuine term each (`orthogonalit`, `Laplacian`); marginal, and to be read rather than assumed* |
+
+⇒ ***So the field is NOT done: `P11` is owed on the physics, `p0` and `P09` on the margin, and `P13`
+and `P05` are now checked-and-negative BY NAME rather than silently absent.***

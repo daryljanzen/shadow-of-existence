@@ -120,6 +120,37 @@ none meets a reach criterion, and that is now on the record rather than discover
 4. ***Raising reach on the four fields already at the bar is owed***, and is recorded as owed rather
    than folded into their entries as if it had been done.
 
+## ⛔⛔ THE BAR IS A FLOOR AND NOT A FINISH LINE — *corrected r3460*
+
+***The bar was measured from what past bakes DID. That makes it a floor, and I used it as a stopping
+rule.*** *At r3459 the harmonic field was closed at exactly six papers — the bottom of the band — while
+half its carriers were unread, and this two revisions after `REACH` was installed **because the paper
+count was the wrong measure**. Closing on the proxy after establishing the proxy was wrong is
+incoherent, and it is the corner-cut the plan exists to prevent, committed by the plan's author.*
+
+**⛔ AND THE SIXTH PAPER WAS CHOSEN TO HIT THE NUMBER.** *`P01` was read and `P05` skipped. Measured
+after the fact: `P01`'s two `completeness` occurrences are **causal homonyms** — "future-completeness of
+$O$", "geodesic incompleteness" — and it carries exactly ONE genuine harmonic term. **The count was met
+with a paper whose content was largely a substring artefact**, which is the very failure the r3164
+Cartan baseline was built to catch.*
+
+**⛔ AND REACH-BY-WORD-LIST IS UNRELIABLE IN BOTH DIRECTIONS.** *A loose list inflates with homonyms —
+it gave twelve carriers where a homonym-screened list gives eight. A tight list misses content phrased
+otherwise — it scored `P11` at **zero** while `P11` plainly carries "a single propagating
+transverse-traceless mode".* ⇒ ***So no word count settles the denominator. The instrument was mine and
+it is not trustworthy in either direction.***
+
+### ⌗ THE RULE THAT REPLACES IT
+
+1. ***The counts are a FLOOR.*** *Meeting them is necessary and never sufficient, and a bake may not be
+   closed because a count is reached.*
+2. ***A field is done when its subject is exhausted, judged by READING.*** *Every paper a word count
+   flags is either worked or **checked and recorded negative by name** — not left unmentioned.*
+3. ***`REACH` is reported as a diagnostic and never as a verdict***, with its denominator stated as the
+   unreliable estimate it is.
+4. ***Papers checked and found negative are LISTED***, so "not worked" is distinguishable from "not
+   looked at" — the distinction the harmonic close blurred.
+
 ## ⛔ THE LEAD RULE — no new field while the current one's leads are owed
 
 ***A bake generates leads. They are worked before the next field is taken up, not queued behind it.***
