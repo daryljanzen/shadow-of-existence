@@ -50,6 +50,20 @@ every one of which was found by walking into it during r3378--r3418 rather than 
       r3401--r3404: it invited LambdaCDM-minus-a-term and cost this node two paper edits
       against what the papers said.
 
+      ** WORKED TO EXHAUSTION r3433, AND THE SET SPLITS THREE WAYS -- recorded so it is not
+      re-swept.  (i) DOCUMENTS THAT STATE THE PHYSICS get the positive framing: README,
+      INTRODUCTION, INDEX, both HELD_PICTUREs, THE_EVOLUTION_MAP, the frontier status,
+      RATE_HANDOFF_DERIVATION, MATTER_SECTOR_germ, the storyboard, the reading order -- 36
+      sites, swept.  The two highest-stakes were NOT in any ledger: README and INTRODUCTION
+      are what a reader meets first, and both still carried it when the papers had been clean
+      since r3403.  (ii) DOCUMENTS THAT MUST KEEP THE TERM TO DO THEIR JOB:
+      ONTOLOGY_FOUNDATION_INDEX, whose 25 hits ARE the entry retiring it, and
+      ACOUSTIC_BUILD_SETUP, which carried the rule BEFORE the reframing pass -- "Do not call
+      this 'radiation-free'.  That phrasing imports the rightward picture in which content
+      sources expansion."  The rule existed in one document and did not propagate.
+      (iii) RECORDS: the wisdom ledger, PHASE7_BUILD_LEDGER, the arc runs.  A record says what
+      was said when it was said -- the same exemption established at r3422. **
+
   (4) BORROWED PARAMETER.  A sentence stating what the CONSTRUCTION fixes, written in the
       fitted parameter rather than the native one.  Five in P15 at r3405 -- and 23 of 28
       correctly did NOT move, because a sentence quoting what was MEASURED keeps the fitted
