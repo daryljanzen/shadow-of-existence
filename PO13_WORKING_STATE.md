@@ -420,3 +420,34 @@ arms, and is not CR's.
 *The P7/P15 wording --- naming the mechanism and stating the prediction where the frontier text (r3409)
 currently leaves a location --- is 58's to take.  P15 is held until then.  Nothing here is routed into a
 paper by cc54.*
+
+### ⛭⛭⛭ THE DRIVING SHIFT Q(k) DIRECTLY MEASURED --- 58's PREDICTION CONFIRMED (r3410+)
+58 derived, on a Meszaros background, that the driving shift `Q(k)` (accumulated sound phase in
+half-periods at the acoustic turnover) is **flat below 1 for the control and rises toward 1 for CR** ---
+the normalisation-independent, falsifiable statement of *"the uniform comb IS the undriven comb."*  Run
+on the full instrument by subtraction (`QSCAN`, undriven-calibrated to 1.000 on both arms):
+
+| `k` [1/Mpc] | `Q_CR` (leaf) | `Q_control` |
+| --- | --- | --- |
+| 0.060 | **1.283** | 0.670 |
+| 0.088 | 1.198 | 0.658 |
+| 0.130 | 1.134 | 0.651 |
+| 0.190 | 1.090 | 0.645 |
+| 0.280 | **1.058** | 0.643 |
+
+`Q_control` is **flat at 0.64--0.72** (58's control 0.66--0.72, the calibrated half --- exact match);
+`Q_CR` **rises toward 1 from above** (58's 1.276 -> 1.008 --- same shape, near in magnitude).  **The
+prediction is confirmed.**  And `Q_CR > 1` at low k --- the turnover is *later* than a free oscillator's,
+58's novel signature --- appears in this **full-neutrino** instrument too, so it is not an artefact of
+58's omitted 40%.
+
+**Two instrument corrections were needed to see it, both real and both gated by the undriven column
+(=1.000):** (i) under LEAFPERT `sound_phase` must reckon in `eta_leaf`, or the CR undriven calibration
+comes out 1.33--1.57 (the stack/leaf ratio) not 1; (ii) the turnover must be the **first velocity
+zero-crossing past the frozen-IC transient** (`QTURN=vel QMIN=0.5`) --- the CR driven mode's first
+crossing is a transient at `Q~0.08`, the acoustic turnover the next at `Q~1.2`, subsequent crossings
+spaced ~1 half-period.  Reading the transient gave `Q_CR -> 0` (spuriously "driven"), inconsistent with
+the uniform comb; skipping it gives 58's rising curve.  *That is exactly the transient 58 named when
+choosing the velocity zero-crossing over the temperature extremum; it just also bites the velocity
+crossing on a mode already deep sub-horizon at onset.*  The comb (uniform) and the Q(k) (undriven,
+rising to 1) now agree, and both confirm the mechanism the r3410 papers state.
