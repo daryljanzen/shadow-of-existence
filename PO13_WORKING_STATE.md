@@ -496,9 +496,9 @@ reversal. Those three were right, cost wrong answers before they were right, and
 the `r=0`-as-seam error, **withdrawn at r2123** and cleared from eight papers at r3380. Every entry I
 used predates it:* `A.46` *"the seam transmits the phase"* **r1981** · `CRRUN5` *"the fault is downstream
 of the seam data"* **r1982** · *reset-versus-transmitted* **r2063** · `A.139` *"CR driven harder"*
-**r2081**. ⇒ ***A phase is not set at the seam. The seam is `r = ±α/√3`, one substrate point met a lap
-apart, the horizon at which the lap is entered and left. The plasma begins at the onset, `120°` and a
-lap away.*** *Entries written before the distinction existed cannot adjudicate work that depends on it.*
+**r2081**. ⇒ ***A phase is not set at the seam. The seam is ONE substrate point at `φ = +120° ≡ −240°`, met a
+lap apart at **`r = +α/√3` (front pass) and `r = −2α/√3` (back pass)** — the two radii standing in ratio
+`2:1`, not as a sign. The plasma begins at the onset, `120°` and a lap away.*** *Entries written before the distinction existed cannot adjudicate work that depends on it.*
 
 ⛔ **AND THE LEDGER IS A LESSONS RECORD, NOT A RESULTS REGISTER.** *Its rows are errors and their
 corrections, many later corrected again. I read them as measurements and let them overturn current work,
