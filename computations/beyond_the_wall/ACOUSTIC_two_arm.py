@@ -162,6 +162,10 @@ D_M = eta_0 - eta_rec
 
 
 def rs_from(z_lo):
+    # r_s on the STACKING clock -- the COMOVING RULER for l_A = pi D_M / r_s, theta_* and the
+    # projection (L1).  This is the OTHER of the instrument's two sound horizons; the PHASE
+    # ACCUMULATOR for the oscillator and Q is r_s,leaf in `sound_phase`.  See that docstring: the two
+    # are correct and NOT interchangeable (ratio 1.286 at the physical onset).  Do not unify them.
     return quad(lambda a: C / (a ** 2 * Hphys(a) * np.sqrt(3 * (1 + RB_REC * a / A_REC))),
                 1.0 / (1.0 + z_lo), A_REC, limit=250)[0]
 
@@ -463,8 +467,22 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
 
 
 def sound_phase(e_lo, e_hi):
-    """k-free part of the accumulated sound phase: the sound horizon between two conformal times"""
-    return quad(lambda e: 1.0 / np.sqrt(3.0 * (1.0 + float(Rb_of(e)))), e_lo, e_hi, limit=200)[0]
+    """r_s on the LEAF clock -- the PHASE ACCUMULATOR for the oscillator and for Q(k).
+
+    ** THE INSTRUMENT CARRIES TWO SOUND HORIZONS BY DESIGN, AND THEY ARE NOT INTERCHANGEABLE. **
+      - r_s,leaf  (THIS function): int c_s d(eta_leaf) = int c_s Jac d(eta_stack).  The oscillator
+        turns over on the leaf clock (LEAFPERT), so the accumulated sound phase Q -- a turnover
+        expressed in half-periods -- MUST be reckoned here.  A phase accumulator is reckoned in the
+        clock the phase accumulates in.
+      - r_s,stack (`rs_from`): int c_s d(eta_stack).  The COMOVING RULER, used by l_A = pi D_M / r_s,
+        theta_* and the line-of-sight projection (L1, what sec:tensions assigns them).
+    Both are correct.  The ratio r_s,stack / r_s,leaf = 1.286 at the physical onset (rs_stack 135.46,
+    rs_leaf 105.36 Mpc).  ** Do NOT unify them: that reads the oscillator's phase on the ruler's clock
+    and undoes the leaf-rate correction. **  The gate is the undriven Q column, which must return
+    1.0000 AND be k-independent on BOTH arms; a stack-clock numerator here made CR's undriven Q come
+    out at 1.33-1.57 (the stack/leaf ratio, k-dependent because the turnover moves with k). """
+    return quad(lambda e: (float(Jac_of(e)) if LEAFPERT else 1.0)
+                / np.sqrt(3.0 * (1.0 + float(Rb_of(e)))), e_lo, e_hi, limit=200)[0]
 
 
 def qscan():
@@ -508,10 +526,21 @@ def qscan():
         # ** The undriven calibration is what caught it, which is the whole reason for measuring
         # rather than assuming it. **  Theta_0 is also the variable the c54.168 guard validated.
         That = Y[:, :, 2] / 4
+        Tvel = Y[:, :, 3]                                 # photon velocity theta_gamma (index 3)
+        # ** QTURN=vel defines the turnover as the first ZERO-CROSSING OF THE PHOTON VELOCITY, not the
+        # extremum of Theta_0.  Under driving dTheta_0/deta = -(4/3)theta_g + DRC*4*Phi', so the density
+        # extremum is NOT the velocity zero when the potential drives -- and for the CR arm's frozen
+        # sub-horizon IC the k eta>1 cut removes nothing, so the Theta_0 extremum catches an early
+        # driving transient.  The velocity zero is the physical acoustic turnover and is transient-free. **
+        _turn_vel = os.environ.get('QTURN', '') == 'vel'
         q = []
         for i in range(nk):
-            d = np.diff(That[:, i])
-            turn = np.where(np.sign(d[1:]) != np.sign(d[:-1]))[0]
+            if _turn_vel:
+                v = Tvel[:, i]
+                turn = np.where(np.sign(v[1:]) != np.sign(v[:-1]))[0]
+            else:
+                d = np.diff(That[:, i])
+                turn = np.where(np.sign(d[1:]) != np.sign(d[:-1]))[0]
             # ** THE ACOUSTIC TURNOVER IS BY DEFINITION AFTER HORIZON ENTRY, so extrema at k eta < 1
             # are excluded.  This is not a tuned threshold: it is the definition of the quantity.
             # Without it the DRIVEN LambdaCDM column returned Q ~ 0.001 -- a decaying-mode transient
@@ -519,10 +548,18 @@ def qscan():
             # (Q = 1.000) is what exposed it. **  For the CR arm the modes are already sub-horizon
             # at the onset, so this cut removes nothing there and the two arms stay like-for-like.
             turn = [t for t in turn if KS[i] * ee[t + 1] > 1.0]
-            if not turn:
+            # ** QMIN skips a frozen-IC DRIVING TRANSIENT: on the CR arm the driven mode's first
+            # velocity zero-crossing sits at Q ~ 0.08 (the potential's initial kick to a mode already
+            # deep sub-horizon), and the real acoustic turnover is the next crossing at Q ~ 1.2, with
+            # subsequent crossings spaced ~1 half-period (the undriven period).  Requiring Q > QMIN
+            # takes the acoustic turnover, not the transient.  Default 0 = unchanged; the undriven
+            # column (no transient) is unaffected at any QMIN < 1. **
+            _qmin = float(os.environ.get('QMIN', '0'))
+            _cand = [(t, KS[i] * sound_phase(ETA_S, ee[t + 1]) / np.pi) for t in turn]
+            _cand = [(t, qv) for t, qv in _cand if qv > _qmin]
+            if not _cand:
                 q.append(np.nan); continue
-            e_ext = ee[turn[0] + 1]
-            q.append(KS[i] * sound_phase(ETA_S, e_ext) / np.pi)
+            q.append(_cand[0][1])
         res[tag] = np.array(q)
     hdr = ('k [1/Mpc]', 'undriven', 'continuity', 'Euler only', 'driven')
     print(f"  {hdr[0]:>11} {hdr[1]:>11} {hdr[2]:>12} {hdr[3]:>12} {hdr[4]:>10}")
