@@ -172,6 +172,7 @@ margin behind it.*
 | `H18` | `P11` says a **single** TT mode and `P10` a **tower** — which? | ⛔ **BITE** r3463, **receipted** — *they count different indices of one object* |
 | `H19` | is `P04`'s $1/\sqrt N$ the whole story? | ⛔ **BITE** r3465, **receipted** — *it is the white-noise limit; long modes are unaveraged and raise the floor* |
 | `H20` | is `P03`'s $2/\sqrt3$ forced, and is its dimension selection harmonic? | ⛔⛔ **DOUBLE BITE** r3466, **receipted** — *both, and the second selects $d=4$ alone* |
+| `H21` | is `P02`'s "identical analytic character" a coincidence? | ⛔ **BITE** r3467, **receipted** — *it IS band-limiting to the first harmonic* |
 
 ---
 
@@ -518,7 +519,7 @@ paper is irrelevant from a word count.***
 |---|---|---|---|
 | `P04` *modern parallax* | the redshift-isotropy floor | **HIGH — CONFIRMED, worked as `H19`** | ***CMB anisotropy IS a spherical-harmonic decomposition***, and the floor is a **mode-counting** argument, $N=d_{\rm lss}/R$ |
 | `P03` *SdS slicing curve* | the door, the hinge, **sky-angle periodicity** | **HIGH — CONFIRMED, worked as `H20`** | *periodicity is Fourier; and the cubic's roots are $(2/\sqrt3)\sin w_k$ — **a harmonic parametrisation***, used as such by the representation bake |
-| `P02` *the circle* | one homogeneous circle, $r(z)=M(1+\cos z)$ | **HIGH** | *a **periodic function on a circle** is the founding object of Fourier analysis* |
+| `P02` *the circle* | one homogeneous circle, $r(z)=M(1+\cos z)$ | **HIGH — CONFIRMED, worked as `H21`** | *a **periodic function on a circle** is the founding object of Fourier analysis* |
 | `P12` *algebroid* | the constraint algebra, structure **functions** | **MEDIUM** | *structure functions varying over a base; the flat-connection/representation content* |
 | `P09` *range* | swept vs reassigned geometries, moduli | **MEDIUM** | *carries `Laplacian`; a moduli/completeness question* |
 | `P06` *geometric core* | the substrate itself, the $\mathrm{dS}_5$ ladder | **MEDIUM** | *carries `orthogonalit`; the ladder is a decomposition* |
@@ -602,3 +603,33 @@ silently failed to expand it — recorded because the count IS the claim.)*
 CHEBYSHEV COUNTING ARGUMENT, AND THIS FIELD OWNS IT.*** *It sat unreceipted in a paper this bake had
 never opened.*
 *(receipt `storyboard_receipts/HA_H20_the_slicing_scale_and_the_dimension_count.py`)*
+
+---
+
+## ⛔⛭⛭ H21 — **`P02`'s CYCLOID IS BAND-LIMITED, AND THAT FORCES ITS CENTRAL STRUCTURAL CLAIM**
+
+*Estimated HIGH from contents; confirmed. `P02` writes $r(z)=M(1+\cos z)$ and says explicitly it is to
+be read* ***"on the circle $\mathbb R/2\pi\mathbb Z$, since $r$ is $2\pi$-periodic"***, *then proves
+`prop:critical`; and `P03` describes the two endpoints as* ***"non-degenerate critical points of
+identical analytic character."***
+
+**⌘ THE FOURIER CONTENT IS TWO TERMS.** *A constant and **one** harmonic — **band-limited to
+$\lvert k\rvert\le1$**, the simplest non-constant periodic function there is.*
+
+**⌘ AND THE STRUCTURAL CLAIM IS FORCED BY THAT.** *$r''=-M\cos z$, so at $z=0$ (horizon, $r=2M$)
+$r''=-M$ and at $z=\pi$ ($r=0$) $r''=+M$ — equal magnitude, opposite sign, both non-degenerate.*
+⛔ ***Add any second harmonic, $r=M(1+\cos z+\varepsilon\cos2z)$, and the magnitudes become
+$\lvert M(1+4\varepsilon)\rvert$ and $\lvert M(1-4\varepsilon)\rvert$ — equal ONLY at
+$\varepsilon=0$.***
+
+⇒ ***So "identical analytic character at the two poles" is not a fact about Schwarzschild that
+happens to hold — it is EQUIVALENT to band-limiting the areal radius to the first harmonic.*** *The
+claim is structural, which strengthens it: the same shape as `H13`, where `P10`'s declined coincidence
+turned out to be entailed.*
+
+**⌘ AND IT JOINS `P02` TO `P03`.** *`H20` showed `P03` forces its slicing scale to $2/\sqrt3$
+**precisely to remove a residual harmonic**, leaving a pure $\sin3w$.* ***`P02`'s curve is already pure
+— constant plus one harmonic, with nothing to remove.*** *Two papers, one discipline: **purity of the
+harmonic content is what both constructions are buying.***
+*(receipt `storyboard_receipts/HA_H21_the_cycloid_is_band_limited.py` — **added, runs, all asserts
+pass**)*
