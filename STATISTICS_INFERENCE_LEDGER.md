@@ -193,6 +193,7 @@ after this bake as before it — what changed is that the programme to test it n
 | `S5` | Bayesian model comparison, `posterior` ×0 | ⟐ **NOT THROWN, AND CORRECTLY** — *`P15` says "the likelihood cannot arbitrate here", and an evidence ratio computed where the likelihood cannot arbitrate is the same error wearing a prior* |
 | `S6` | is the exact test monotone in $n$? | ⊢ **WORKED** r3160 — *it is not: eight episodes give $0.813$ power and **ten give $0.736$*** |
 | `S7` | can `P06`'s five instances be spent? | ⊢ **WORKED** r3160 — *no: read as a paired sign test they give $p=0.031$, and they may not be so read, because they were selected on outcome* |
+| `S8` | does `p0` apply its own survivorship guard to its **newest** instance? | ⟐ **BOUNCE** r3449 — *it refuses the instance explicitly, in advance* |
 
 ---
 
@@ -238,9 +239,35 @@ two orders, $92\times$ to one order, $923\times$ for it to vanish.*
 | | this bake | the FULL tier |
 |---|---|---|
 | lines | **~270** | 189–978 ✔ |
-| numbered probes | **9** (`S0`–`S7`, `S2′`) | 10–17 ⚠ *one short* |
+| numbered probes | **10** (`S0`–`S8`, `S2′`) | 10–17 ✔ |
 | receipts, all running | **3** | 2–10 ✔ |
-| papers touched | `P04`, `P06`, `P15` = **3** | 6–11 ⚠ |
+| papers touched | `P04`, `P06`, `P15`, `p0` = **4** | 6–11 ⚠ *two short* |
 | lead register | **9 rows, none unmarked** | — |
 
-⚠ ***TWO SHORT — one probe and three papers — and named rather than rounded up. This field is not done.***
+## ⟐ S8 — **`p0` REFUSES ITS OWN NEWEST INSTANCE, IN ADVANCE**
+
+*The probe: `p0` offers the Eddington case — that the criterion identified the shape of an answer*
+***"ninety years before the means existed to compute it"*** *— as* ***"itself a datum for the engine"***,
+*while elsewhere holding that a reliability estimate built from one's own successes is survivorship.
+**Does the guard cover the newest instance?***
+
+⇒ ***It does, and `p0` says so before the question can be put:***
+> ***"It is not a sixth instance of the criterion. The instances above are five applications; this is a
+> boundary. Counting a case in which the criterion was silent as a case in which it worked would be the
+> survivorship error … run in a new direction, and the tally of outstanding bets is unchanged by it."***
+
+*And `p0` already carries this bake's own arithmetic —* **"five concordant episodes read paired would
+already sit at $p=1/32$"** *— together with the reason it may not be used, and cites `S1`'s receipt for
+it.* ⇒ ***So the bake's `S1` finding is one of the few in this whole sweep that was ROUTED AND
+APPLIED***, *and the field's sharpest attack on `p0` is one `p0` had already refused.*
+
+⚠ **A COUNTING ERROR OF MY OWN, CAUGHT AND CORRECTED HERE.** *Grepping `rcpt{S1_` returned four papers
+and I read it as four citations of this bake. Three of them cite **different** receipts that merely
+begin `S1_` — a prefix collision, the same substring error the Cartan baseline caught with
+`G-structure` matching inside **breaking-structure**.* ⇒ ***Only `p0` cites this bake. The instrument's
+own lesson, missed by the instrument's author.***
+
+---
+
+⚠ ***TWO PAPERS SHORT, and named rather than rounded up. The probe count is met; the reach is not.
+This field is not done.***
