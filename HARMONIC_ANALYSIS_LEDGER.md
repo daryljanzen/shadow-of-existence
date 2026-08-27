@@ -194,8 +194,13 @@ margin behind it.*
 | papers touched | `P15` = **1** | 6–11 ⚠ *five short* |
 | lead register | **11 rows, none unmarked** | — |
 
-⚠ ***ONE RECEIPT AND FIVE PAPERS SHORT. This field is a NARROW one — its vocabulary is ×24 and its
-subject is a single computation in a single paper — and the bar was set from fields with corpus-wide
-reach. Recorded as short rather than rounded up, and the reach question is real: **a field that touches
-one paper may be complete and still not meet a bar built for fields that touch six.*** ⌗ **Raised for
-`THE_FIELD_BAKE_PLAN` rather than settled here.**
+⛔ ***ONE RECEIPT AND FIVE PAPERS SHORT, AND THE NARROW-FIELD DEFENCE IS REFUTED.***
+
+*It was argued here that this field touches one paper because its subject IS one computation in one
+paper, and that the bar does not fit it.* ⇒ ***Measured at r3453: the harmonic vocabulary appears in
+SIX papers. This bake read one — a REACH of 17%, the worst of the five fields worked.*** *So it is not
+a narrow field fully worked; it is a field whose subject spans six papers and whose bake read one.*
+
+⌗ **THIS FIELD STAYS OPEN.** *What is owed is the five papers the vocabulary reaches and this bake did
+not, and a second receipt. `THE_FIELD_BAKE_PLAN` now carries `REACH` as a reported quantity for exactly
+this reason.*

@@ -86,6 +86,40 @@ is breadth bought with depth.*
 
 ---
 
+## ⛭⛭ REACH — *the criterion that replaces the paper count, measured r3453*
+
+***A narrow-field clause was proposed and the measurement refuted it.*** *The argument was that
+harmonic analysis touches one paper because its subject IS one computation in one paper, so a bar built
+from fields with corpus-wide reach does not fit it. **Measured: its vocabulary appears in SIX papers.**
+The bake read one. It is not a narrow field fully worked; it is a field whose subject spans six papers
+and whose bake read one — and the clause would have excused exactly that.*
+
+⌗ **AND THE PAPER COUNT IS THE SAME CONFOUND `589` FOUND AT r3419.** *A fixed threshold — six papers —
+applied to fields of different vocabulary spread measures the SPREAD, not the thoroughness, exactly as
+a fixed $\ell=500$ ceiling counted teeth of combs with different spacing.* ⇒ ***The scale-free measure
+is `REACH`: the fraction of papers carrying the field's own vocabulary that the bake actually reads.***
+
+| field | papers carrying its vocabulary | touched | **reach** |
+|---|---|---|---|
+| harmonic analysis | 6 | 1 | **17%** |
+| representation theory | 16 | 5 | 31% |
+| statistics / inference | 17 | 6 | 35% |
+| Cartan / holonomy | 13 | 5 | 38% |
+| functional analysis | 10 | 4 | 40% |
+
+⛔ ***NO BAKE REACHES MORE THAN 40%.*** *So the paper count was not too strict — it was a **proxy**, and
+the honest measure is **harder** than it. The four fields recorded as meeting the bar meet the proxy;
+none meets a reach criterion, and that is now on the record rather than discovered later.*
+
+**⌗ THE RULING, and it is deliberately not the one that would have let this pass.**
+1. ***No narrow-field clause.*** *Harmonic analysis is short and genuinely short; it stays open.*
+2. ***`REACH` is reported for every bake from here***, alongside the counts.
+3. ***The paper-count bar stands as the floor it has been***, and a bake may be recorded at the bar on
+   it — *but the reach number goes in the ledger, so a field's real coverage is visible without
+   re-measuring.*
+4. ***Raising reach on the four fields already at the bar is owed***, and is recorded as owed rather
+   than folded into their entries as if it had been done.
+
 ## ⛔ THE LEAD RULE — no new field while the current one's leads are owed
 
 ***A bake generates leads. They are worked before the next field is taken up, not queued behind it.***
