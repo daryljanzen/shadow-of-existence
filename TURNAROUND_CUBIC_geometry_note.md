@@ -4,7 +4,7 @@ description: The comoving-turnaround cubic (1−f=0) pinned — its positive geo
 sources: [chat]
 kind: REFERENCE
 current_main: r1672
-job: The comoving-turnaround cubic pinned — the COMPLEX/kinematic leg of the substrate's A₂ three-fold (the horizon cubic being the real/causal leg), the E=1 collapse kinematics, and its place on the ℂ_r×ℂ_τ̃ Plate. Read before the acoustic-transfer build. Carries PROTECTED_OPEN PO-3's drill-site.
+job: The comoving-turnaround cubic pinned — the COMPLEX/kinematic leg of the substrate's A₂ three-fold (the horizon cubic being the real/causal leg), the E=1 collapse kinematics, and its place on the ℂ_r×ℂ_τ̃ Plate. Read before the acoustic-transfer build. Carried PROTECTED_OPEN PO-3's drill-site; PO-3 struck r2832, residue to PO-5. Its live cross-reference PO-19 is also struck (r3097, derived).
 current: r1672
 ---
 
@@ -12,22 +12,27 @@ current: r1672
 > leg of the substrate's threefold, the horizon cubic being the real/causal leg.*
 >
 > **⌗ Its protected question is closed.** *It records the $A_2$-meaning drill-site as `PO-3`, "which a node
-> may not close" — **`PO-3` was STRUCK at r2832**, and `PROTECTED_OPEN` itself closed at r3001. The live
-> question nearest it is register row **`PO-19`**, the $\sqrt[3]{2}$ ratio between the two turnings, which
-> `lem:twoturnings` does not touch.*
+> may not close" — **`PO-3` was STRUCK at r2832**, and `PROTECTED_OPEN` itself closed at r3001. The row it names as
+> nearest, **`PO-19`** — the $\sqrt[3]{2}$ ratio between the two turnings — is **also struck** (r3097): the
+> ratio is $\sqrt[3]{2}$ exactly for every $M$ and $\alpha$, its cause being one factor of two inside one cube
+> root.*
 
 > **⌗ INDEXED r2380 — it is live, and it CARRIES A PROTECTED QUESTION, which the cross-reference now says.**
 > *Its own r1672 line holds the drill-site open in exactly the right register:* ***"P5's `rem:a2-distinct`
 > explicitly leaves open whether the geometric $A_2$ and $\su(3)$'s coincide structurally — **'not a realised
 > colour isometry' is not 'a meaningless coincidence'** — so whether the resemblance is meaningful remains an
-> open drill-site."*** *That question is `PROTECTED_OPEN` **`PO-3`**, the a2-meaning drill-site, and a node may
-> not close it.* **Recorded here so the two are not read apart.**
+> open drill-site."*** *That question was `PROTECTED_OPEN` **`PO-3`**.* ⛔ ***It is STRUCK*** *(r2832): "the object is
+> answered on both clauses; the residue named in the successor question is `PO-5`'s object and is registered
+> there" — `PO-5` being the quark/lepton split and what a baryon is. **Nothing was lost; the residue moved.**
+> The clause below saying a node may not close it is the pre-strike register and is superseded.* *(pointer
+> repaired r3418)*
 >
 > **⌗ AND ITS OWN r1622 CORRECTION IS THE STALE-LINK PRIOR, stated by the file about itself:** *"Every
 > `work/…` reference below was dangling; the targets all exist in `turnaround_excursion_work/`. **Nothing was
 > lost — the failure was at the pointer, which is this corpus's recorded base rate for exactly this class.**"*
 > ⌗ *It also struck its own over-claim — a "corpus-wide su(3)-lens bake is owed" — while keeping the question
-> open, which is the distinction `PO-3` protects: **the propagation is not owed; the question is not closed.**
+> open, which is the distinction `PO-3` protected: **the propagation is not owed** — *and the question itself is
+> since answered, its residue carried to `PO-5`.*
 
 # The turnaround cubic's positive geometry — the undeveloped edge in P3
 

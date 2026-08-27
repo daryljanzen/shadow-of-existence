@@ -109,7 +109,9 @@ throat-tangent.* **⌗ AND THE DIVISION BETWEEN THEM IS THE CORPUS'S OWN.** *Geo
 on-versus-tangent marriage — **appearing inside a single triple** rather than between two structures.*
 **⌗ AND AT THE DEGENERATE MEMBER THEY MEET**: *with the lone root designated it is also the odd one by sign.*
 
-***⇒ THE LEAD DOES NOT NARROW; IT RESOLVES INTO THREE QUESTIONS, ALL OPEN:*** **`PO-1a`** *the designation
+**⌗ ALL FOUR ARE STRUCK — r3001's `PROTECTED_OPEN` close, verdicts in `kills/`.** *`PO-1a` and `PO-1b`: both halves answered and receipted, the $2{+}1$ named, computed, and exhibited as two orbits exchanged. `PO-1c`: the object asks for a counterpart and there is one, with the within-baryon flavour. `PO-1d`: the classification is complete.* ⛔ ***So the sentence below narrates as live a lead that has been disposed; it is kept for its reasoning and must not be read as an open register.*** *(pointer repaired r3418)*
+
+***⇒ THE LEAD DOES NOT NARROW; IT RESOLVES INTO THREE QUESTIONS, ALL SINCE STRUCK:*** **`PO-1a`** *the designation
 $2{+}1$, never run against the generation side it leans toward* · **`PO-1b`** *the sign $2{+}1$* · **`PO-1c`**
 ***does $uud$ have ANY geometric counterpart at all*** *— which is what this section was reaching for, and
 neither $2{+}1$ has been shown to be one **or shown not to be**.*
@@ -294,7 +296,10 @@ This is the ripe fruit the half-picture had hidden: with only the $+M$ Nariai, t
 
 ---
 
-## The a2-meaning drill-site — r696 RETRACTED (I imploded it; Daryl caught it): held OPEN, r691's find restored to full weight
+## The a2-meaning drill-site — r696 RETRACTED (I imploded it; Daryl caught it); the find restored, and the site itself STRUCK r2832
+> **⌗ POINTER REPAIRED r3418.** *This section's `PROTECTED_OPEN` row `PO-1d` was struck at r2832 and
+> `PROTECTED_OPEN` itself closed at r3001 with fourteen rows struck; the verdict is in `kills/PO-1d.md`.
+> **The retraction below is the durable content and stands; the drill-site is not an open register.***
 
 r696 closed this drill-site with a verdict — "generic → leans coincidental" — and that was the **cyanide face (24)** firing: an open search imploded because the bridge would not come, dressed as a finding. Retracted.
 
