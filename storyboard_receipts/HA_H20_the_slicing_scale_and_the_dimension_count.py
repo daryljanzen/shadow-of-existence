@@ -27,15 +27,22 @@ CLAIM 1 — THE SCALE IS FORCED.  Substituting x = A sin w into the depressed cu
 CLAIM 2 — THE DIMENSION SELECTION IS A HARMONIC COUNT.  In d spacetime dimensions the horizon
   polynomial has degree n = d - 1, and sin^n w expands into harmonics n, n-2, ..., down to 1 or 0:
 
-      d = 4  (n=3):  [3, 1]           ONE sub-leading   -> killable by the single scale A
-      d = 5  (n=4):  [4, 2, 0]        two
-      d = 6  (n=5):  [5, 3, 1]        two
-      d = 7  (n=6):  [6, 4, 2, 0]     three
-      d = 8  (n=7):  [7, 5, 3, 1]     three
+      D = 4  (n=3):  [3, 1]        ONE sub-leading   -> killable by the single scale A
+      D = 5  (n=4):  [4, 2]        ONE               -> killable too (P03's "up to a parity")
+      D = 6  (n=5):  [5, 3, 1]     two
+      D = 7  (n=6):  [6, 4, 2]     two
+      D = 8  (n=7):  [7, 5, 3, 1]  three
 
-  ** ONE free scale kills ONE sub-leading harmonic, so a PURE top harmonic is available at d = 4 and
-  nowhere else -- and the sub-leading count is two or more from six dimensions upward, which is the
-  corpus's sentence verbatim, with d = 5 the even/parity case it flags separately. **
+  ** ONE free scale kills ONE sub-leading harmonic, so a PURE top harmonic is available at D = 4 and
+  D = 5 and nowhere above -- which is P03's sentence verbatim: "available in four spacetime dimensions
+  and -- up to a parity -- in five, and in no other, since the harmonics standing below the top one
+  number two or more from six dimensions upward". **
+
+  ** CONVENTION, CORRECTED r3479: P03 counts the NONZERO harmonics, (D-1)w, (D-3)w, ..., and a
+  constant is not a harmonic.  This receipt's first version included the constant term for even n and
+  so recorded TWO sub-leading at D=5 where P03 says ONE, glossing the disagreement as a "parity case".
+  P03 is right on its own convention, both conventions agree from D=6 up, and the gloss was papering
+  over a real numerical difference. **
 
   So the corpus's dimension selection -- four spacetime dimensions, not five, not six -- is a
   CHEBYSHEV COUNTING ARGUMENT, and this field owns it.
@@ -71,7 +78,12 @@ print(f"  ** VERDICT 2: 2M = (2/(3 sqrt3)) sin 3w exactly -- the corpus's pure t
 
 # ---------------------------------------------------------------- claim 2
 def harmonics(n):
-    return sorted({n - 2 * j for j in range(n // 2 + 1)}, reverse=True)
+    """P03's convention: the harmonics present are (D-1)w, (D-3)w, ... -- the NONZERO ones.
+    ** Corrected r3479.  The first version included the constant term for even n and so
+    recorded TWO sub-leading harmonics at D=5 where P03 says ONE.  P03 is right: a constant
+    is not a harmonic, and the paper's 'exactly one at D=4 and D=5' is exact on its own
+    convention.  Both conventions agree from D=6 up, which is the load-bearing part. **"""
+    return sorted({k for k in range(n, 0, -2)}, reverse=True)
 
 print("\n  the dimension count: horizon polynomial degree n = d-1, sin^n w in harmonics")
 print(f"      {'d':>3} {'n':>3} {'harmonics':>22} {'sub-leading':>12}")
@@ -91,10 +103,12 @@ for n in (3, 5):
 print("      [expansion verified exactly at n = 3 and n = 5]")
 
 assert counts[4] == 1, "d=4 must have exactly ONE sub-leading harmonic"
+assert counts[5] == 1, "and D=5 too, on P03's nonzero-harmonic convention"
 assert all(counts[d] >= 2 for d in (6, 7, 8)), "d>=6 must have two or more"
 print("  ** VERDICT 3: ONE free scale kills ONE sub-leading harmonic, so a PURE top harmonic")
-print("     is available at d = 4 and nowhere else -- and the sub-leading count is TWO OR")
-print("     MORE from six dimensions upward, which is the corpus's sentence verbatim. **")
+print("     is available at D = 4 and D = 5 -- and the sub-leading count is TWO OR MORE from")
+print("     six dimensions upward.  That is P03's sentence verbatim: 'available in four")
+print("     spacetime dimensions and -- up to a parity -- in five, and in no other'. **")
 print("  ** VERDICT 4: so the corpus's DIMENSION SELECTION is a Chebyshev counting argument,")
 print("     and this field owns it. **")
 

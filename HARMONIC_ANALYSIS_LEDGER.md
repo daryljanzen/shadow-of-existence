@@ -595,8 +595,8 @@ degree $n=d-1$, and $\sin^n w$ expands into harmonics $n,n-2,\dots$:*
 
 | $d$ | 4 | 5 | 6 | 7 | 8 |
 |---|---|---|---|---|---|
-| harmonics | $[3,1]$ | $[4,2,0]$ | $[5,3,1]$ | $[6,4,2,0]$ | $[7,5,3,1]$ |
-| **sub-leading** | **1** | 2 | **2** | 3 | 3 |
+| harmonics | $[3,1]$ | $[4,2]$ | $[5,3,1]$ | $[6,4,2]$ | $[7,5,3,1]$ |
+| **sub-leading** | **1** | **1** | **2** | 2 | 3 |
 
 ⇒ ***One free scale kills ONE sub-leading harmonic, so a pure top harmonic is available at $d=4$ and
 nowhere else — and the sub-leading count is two or more from six dimensions upward, which is the

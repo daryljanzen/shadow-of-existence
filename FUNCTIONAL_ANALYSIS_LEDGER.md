@@ -140,6 +140,7 @@ bouncing has still been worth throwing.*
 | `F9` | does `P07` overstate what `P10` establishes? | ⟐ **BOUNCE** — no; `P07` carries the closure *and* its openness |
 | `F10` | `Hilbert space` ×0, `inner product` ×0 — a hole? | ⟐ **NO** — the **weak** form of the corpus's anonymity: `P10` works on $L^2$ of the half-line throughout, so the objects are present under standard notation and only the phrases are missing |
 | `F11` | is the constraint algebra treated as an operator algebra? | ⟐ **BOUNCE** — it is `P12`'s subject **by title**, and the corpus's ×26 is largely its bibliography |
+| `F17` | is `P03`'s `extension` ×8 a **self-adjoint** extension? | ⍀ **NO — NEGATIVE** r3479 — *all of it generalisation; and reading it caught an error in `H20`* |
 | `F16` | is `P08`'s matter functional linear? | ⛔ **BITE** r3478, **receipted** — ***affine***, *so the vacuum sector is a **coset** of the kernel* |
 | `F15` | how many compactness statuses does the chirality result use? | ⛔ **BITE** r3477, **receipted** — ***three, on three spaces, in three papers*** |
 | `F14` | does `P14`'s leaf-compactness survive the **Nariai** limit? | ⍀ **BOUNCE — IT DOES** r3476, **receipted** — *and the corpus's own receipt never tested it* |
@@ -268,7 +269,7 @@ senses. **So the estimate below is made from CONTENTS.***
 | **`P14`** *matter sector* | 82 | **HIGH — CONFIRMED, worked as `F14`** | ***a Dirac operator on the wall, its normalizable modes, and an index*** — an operator paper, never opened by this bake |
 | **`P13`** *boundary* | 32 | **HIGH — CONFIRMED, worked as `F15`** | *the **Atiyah–Hirzebruch index obstruction** — operator-theoretic, and `H16` showed it turns on a Fourier decomposition* |
 | `P08` *slicing operator* | 45 | **MEDIUM — CONFIRMED, worked as `F16`** | *`F13` has already shown its vacuum kernel IS an operator null space of dimension one* |
-| `P03` *slicing curve* | 29 | **MEDIUM** | *carries $L^2$ ×5 and `extension` ×8 — needs reading to tell self-adjoint from analytic* |
+| `P03` *slicing curve* | 29 | ⍀ **NEGATIVE, read r3479** | *carries $L^2$ ×5 and `extension` ×8 — needs reading to tell self-adjoint from analytic* |
 | `P15` *cosmology* | 117 | **MEDIUM** | *`spectrum` is the power spectrum, but the acoustic oscillator and `unbounded` ×4 are this field's* |
 | `P11` *dynamics* | 23 | **MEDIUM** | *the TT oscillator, and `P10`'s boundedness argument reaches into it* |
 | `P01` *causality* | 32 | **MEDIUM** | *the thermal spectrum and the Bogoliubov bases — `H15` touched them from the other side* |
@@ -379,3 +380,22 @@ preimage, and the word is doing affine duty in the corpus's most-used technical 
 and a coset for the functional as written.*
 *(receipt `storyboard_receipts/FA_F16_the_vacuum_sector_is_a_coset.py` — **added, runs, all asserts
 pass**)*
+
+---
+
+## ⍀ F17 — **`P03` IS NEGATIVE FOR THIS FIELD, AND READING IT CAUGHT AN ERROR IN `H20`**
+
+*`P03` was estimated **MEDIUM** on `extension` ×8 and an apparent $L^2$ ×5.* ⛔ ***Both were artefacts.***
+*Every `extension` is **generalisation** — Schwarzschild to SdS, four dimensions to $D$ — and **there is
+no $L^2$ in the paper at all**; the earlier count was a regex artefact.* ⇒ **Negative for functional
+analysis, recorded by name.**
+
+**⚠ BUT READING IT FOUND AN ERROR IN THE HARMONIC BAKE'S `H20`.** *`P03`'s `rem:dimension` says the
+sub-leading harmonics number* ***"exactly one at $D=4$ and $D=5$"***. *`H20`'s table recorded **two** at
+$D=5$ and I glossed the disagreement as "the even/parity case it flags separately".* ⇒ ***`P03` counts
+the NONZERO harmonics — a constant is not a harmonic — and it is right. `H20` is corrected: $D=5$ gives
+$[4,2]$, one sub-leading, so a pure top harmonic is available at $D=4$ AND $D=5$, which is exactly the
+paper's "and — up to a parity — in five".***
+
+⌗ *Both conventions agree from $D=6$ up, so the load-bearing half of `H20` stood; the gloss was
+papering over a real numerical difference. **Found by reading a paper for a different field.***
