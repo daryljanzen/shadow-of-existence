@@ -504,3 +504,27 @@ papers, one word, two indices of the same object.***
 **⏷ ROUTED, NOT APPLIED.** *A qualifier — "a single propagating **polarisation**", or "one of the two"
 — removes the apparent conflict at no cost.*
 *(receipt `storyboard_receipts/HA_H18_two_papers_one_word_two_counts.py`)*
+
+---
+
+## ⌗ THE ESTIMATE, MADE FROM CONTENTS BEFORE GREPPING — r3464
+
+***Recorded so it can be SCORED rather than quietly dropped. The failure this replaces is deciding a
+paper is irrelevant from a word count.***
+
+| paper | subject | estimate | reason |
+|---|---|---|---|
+| `P04` *modern parallax* | the redshift-isotropy floor | **HIGH** | ***CMB anisotropy IS a spherical-harmonic decomposition***, and the floor is a **mode-counting** argument, $N=d_{\rm lss}/R$ |
+| `P03` *SdS slicing curve* | the door, the hinge, **sky-angle periodicity** | **HIGH** | *periodicity is Fourier; and the cubic's roots are $(2/\sqrt3)\sin w_k$ — **a harmonic parametrisation***, used as such by the representation bake |
+| `P02` *the circle* | one homogeneous circle, $r(z)=M(1+\cos z)$ | **HIGH** | *a **periodic function on a circle** is the founding object of Fourier analysis* |
+| `P12` *algebroid* | the constraint algebra, structure **functions** | **MEDIUM** | *structure functions varying over a base; the flat-connection/representation content* |
+| `P09` *range* | swept vs reassigned geometries, moduli | **MEDIUM** | *carries `Laplacian`; a moduli/completeness question* |
+| `P06` *geometric core* | the substrate itself, the $\mathrm{dS}_5$ ladder | **MEDIUM** | *carries `orthogonalit`; the ladder is a decomposition* |
+| `p0` *shadow of existence* | epistemology of theory-choice | **LOW** | *no decomposition content expected — **to be read, not assumed*** |
+| `P08` *slicing operator* | the generating operator, the lock $g_{tt}g_{rr}=-1$ | **LOWEST** | *algebraic/ODE machinery, no mode content — **and this matches Daryl's own guess independently*** |
+
+⌗ *Already worked: `P01` `H15` · `P05` `H17` · `P07` `H12` · `P10` `H13` · `P11` `H18` · `P13` `H16` ·
+`P14` `H11` · `P15` `H1`–`H4` · `P16` `H14`.*
+
+⇒ ***So the field's remaining work is seven papers, not two — and three of them are estimated HIGH.
+The "marginal" label applied to `p0` and `P09` was a word count speaking, and it is withdrawn.***
