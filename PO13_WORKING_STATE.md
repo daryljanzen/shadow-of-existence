@@ -389,3 +389,34 @@ narrows to (A) vs (B)** --- both real outcomes, neither an artefact: either the 
 onset above `3e5` (over-determining the datum in CR's favour) or it says `6797` and CR carries a
 falsifiable prediction of a uniform comb.  **That is a framework question --- 58's --- and it is PO-13's
 own open datum, now held by two independent observables instead of one.**
+
+### ⛭⛭⛭ THE FORK RESOLVES TO (B): A DERIVED, FALSIFIABLE PREDICTION (58, framework)
+**(A) is closed.**  The apparent route to (A) was a suspected `P15`/`P16` contradiction: `P16`'s cooling
+leg runs a standard BBN (helium-4 and deuterium at observed values), which needs a plasma at MeV
+temperatures; if that plasma were on **our** expansion leg, it would exist at `z ~ 1e9`, the acoustic
+modes would cross the horizon during it, and (A) would follow.  It is not on our leg.  `P16`
+`fig:history` places the nucleosynthesis on the **transit's cooling leg** --- after turnaround, the
+expansion cools the matter back through the nuclear window and deuterium freezes out **there, before the
+branch point** --- and states that *"the observable expansion history begins only later, at the ~1.6 eV
+onset ... the nucleosynthesis is complete below it."*  So the BBN plasma is the **progenitor's**, on the
+far side of the branch point; **our** expansion-leg plasma begins at the onset.  `P15` and `P16` agree,
+and the objection dissolves.  The onset genuinely sits at `z=6797`, below the acoustic re-entry
+redshifts.
+
+**So (B) stands, and it is a PREDICTION, not a deficit.**  On the radiation-free rate the plasma begins
+at the onset, below every acoustic re-entry redshift (`n=1 ~2.9e4`, `n=2 ~1.2e5`, `n=3 ~2.7e5`), so **no
+acoustic mode crosses the horizon while our plasma exists**, so the comb is **uniform**.  The sky's
+comb **alternates**.  That is a **falsifiable disagreement with a derived cause** --- the odd-even
+modulation is the standard driving shift, which requires crossing-during-plasma, which the
+geometry-fixed rate does not have --- and it is the sharpest empirical statement the corpus carries.
+
+**The counterfactual IS the calibration** (what makes the prediction testable rather than merely
+stated): raise the onset past the re-entry redshifts and the alternation **appears and saturates at the
+control** (`g2/g1`: 1.000 at 6797 -> 0.921 once `n=1` crosses -> 0.895 = the control's 0.897 once all
+three do).  **Charge CR only with its own deficit:** `0.103` against the control at the physical onset;
+the remaining `0.041` to the sky (control 0.897 vs sky 0.856) is the **instrument's**, common to both
+arms, and is not CR's.
+
+*The P7/P15 wording --- naming the mechanism and stating the prediction where the frontier text (r3409)
+currently leaves a location --- is 58's to take.  P15 is held until then.  Nothing here is routed into a
+paper by cc54.*
