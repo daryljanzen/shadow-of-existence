@@ -455,8 +455,13 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
 
 
 def sound_phase(e_lo, e_hi):
-    """k-free part of the accumulated sound phase: the sound horizon between two conformal times"""
-    return quad(lambda e: 1.0 / np.sqrt(3.0 * (1.0 + float(Rb_of(e)))), e_lo, e_hi, limit=200)[0]
+    """k-free part of the accumulated sound phase: the sound horizon between two conformal times.
+    ** Under LEAFPERT the oscillator runs in eta_leaf, so the phase must be reckoned in that clock
+    (d eta_leaf = Jac d eta_stack); otherwise Q mixes the leaf-clock turnover with a stack-clock
+    phase and the undriven calibration comes out at the stack/leaf ratio (~1.3-1.6) instead of 1.
+    With this factor the undriven column returns 1.000 on the CR arm too, gating the measure. **"""
+    return quad(lambda e: (float(Jac_of(e)) if LEAFPERT else 1.0)
+                / np.sqrt(3.0 * (1.0 + float(Rb_of(e)))), e_lo, e_hi, limit=200)[0]
 
 
 def qscan():
@@ -500,10 +505,21 @@ def qscan():
         # ** The undriven calibration is what caught it, which is the whole reason for measuring
         # rather than assuming it. **  Theta_0 is also the variable the c54.168 guard validated.
         That = Y[:, :, 2] / 4
+        Tvel = Y[:, :, 3]                                 # photon velocity theta_gamma (index 3)
+        # ** QTURN=vel defines the turnover as the first ZERO-CROSSING OF THE PHOTON VELOCITY, not the
+        # extremum of Theta_0.  Under driving dTheta_0/deta = -(4/3)theta_g + DRC*4*Phi', so the density
+        # extremum is NOT the velocity zero when the potential drives -- and for the CR arm's frozen
+        # sub-horizon IC the k eta>1 cut removes nothing, so the Theta_0 extremum catches an early
+        # driving transient.  The velocity zero is the physical acoustic turnover and is transient-free. **
+        _turn_vel = os.environ.get('QTURN', '') == 'vel'
         q = []
         for i in range(nk):
-            d = np.diff(That[:, i])
-            turn = np.where(np.sign(d[1:]) != np.sign(d[:-1]))[0]
+            if _turn_vel:
+                v = Tvel[:, i]
+                turn = np.where(np.sign(v[1:]) != np.sign(v[:-1]))[0]
+            else:
+                d = np.diff(That[:, i])
+                turn = np.where(np.sign(d[1:]) != np.sign(d[:-1]))[0]
             # ** THE ACOUSTIC TURNOVER IS BY DEFINITION AFTER HORIZON ENTRY, so extrema at k eta < 1
             # are excluded.  This is not a tuned threshold: it is the definition of the quantity.
             # Without it the DRIVEN LambdaCDM column returned Q ~ 0.001 -- a decaying-mode transient
