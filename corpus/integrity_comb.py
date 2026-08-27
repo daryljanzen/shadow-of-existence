@@ -7,6 +7,18 @@ none of them said what a comb should LOOK for.  This does, and it looks for four
 every one of which was found by walking into it during r3378--r3418 rather than by looking.
 
   (1) SEVERED ROUTES.  A correction applied where a fact is STATED and not where it is USED.
+      ** MEASURED YIELD, r3420: LOW, and the criterion is kept as a READING discipline rather
+      than a grep.  After three tightenings -- scope to non-RECORD documents (251->190 docs),
+      require a shared identifier (85->21 hits), and except repairs that quote what they
+      supersede (23->15) -- every one of the surviving fifteen was read and every one was a
+      false positive: an identifier used generically ("PO-3-class questions"), a sibling
+      disposed in the same sentence as a live row, or a repair stating both states correctly.
+      AND THE TWO GENUINE INSTANCES THIS CRITERION WAS BUILT FROM -- P13's real forms and
+      TURNAROUND_CUBIC's PO-3 -- WERE BOTH FOUND BY READING THE PASSAGE, NOT BY MATCHING IT.
+      A severed route is a semantic relation between a claim and its ground; the tokens on
+      either side look identical whether the route holds or not.  Reported, and not tuned
+      further: tightening until the count pleases is how a diagnostic gets fitted to its
+      answer, which is the failure this arc committed twice. **
       Three instances in two revisions: P13's real-form COUNT corrected to five while the
       conclusion still read "the unique real form"; TURNAROUND_CUBIC recording "PO-3 was
       STRUCK" two paragraphs above "a node may not close it"; and this node's own L8.5
@@ -96,6 +108,13 @@ def severed_routes():
             win = s[lo:hi]
             a = ASSERTS_LIVE.search(win)
             if not a:
+                continue
+            # ** THE REPAIR EXCEPTION.  A repair QUOTES the superseded text beside the disposal
+            # -- that is what a repair looks like, and it is the record.  Flagging it drives a
+            # node to DELETE the quotation, which destroys exactly what the repair preserved.
+            # Found on this instrument's own r3418 edits, which it flagged three times each. **
+            if re.search(r'pointer repaired|POINTER REPAIRED|is superseded|pre-strike register|'
+                         r'kept for its reasoning|must not be read as an open register', win):
                 continue
             left = set(ID.findall(s[lo:m.end()]))
             right = set(ID.findall(win[a.start():]))
