@@ -140,6 +140,7 @@ bouncing has still been worth throwing.*
 | `F9` | does `P07` overstate what `P10` establishes? | ⟐ **BOUNCE** — no; `P07` carries the closure *and* its openness |
 | `F10` | `Hilbert space` ×0, `inner product` ×0 — a hole? | ⟐ **NO** — the **weak** form of the corpus's anonymity: `P10` works on $L^2$ of the half-line throughout, so the objects are present under standard notation and only the phrases are missing |
 | `F11` | is the constraint algebra treated as an operator algebra? | ⟐ **BOUNCE** — it is `P12`'s subject **by title**, and the corpus's ×26 is largely its bibliography |
+| `F15` | how many compactness statuses does the chirality result use? | ⛔ **BITE** r3477, **receipted** — ***three, on three spaces, in three papers*** |
 | `F14` | does `P14`'s leaf-compactness survive the **Nariai** limit? | ⍀ **BOUNCE — IT DOES** r3476, **receipted** — *and the corpus's own receipt never tested it* |
 | `F13` | what does the referred `P08` item open? | ⛔ **BITE** r3474, **receipted** — *`kernel` ×147 carries **four senses**, two of them opposite objects in this field* |
 | `F12` | does $\sqrt f$ make the branch point limit-circle after all? | ⊢ **WORKED** r3444, **receipted** — $\sqrt f$ is an **overall factor** and cancels, so the index is real $\pm\lambda$ whatever the sign of $f$ |
@@ -264,7 +265,7 @@ senses. **So the estimate below is made from CONTENTS.***
 | paper | raw | estimate | reason |
 |---|---|---|---|
 | **`P14`** *matter sector* | 82 | **HIGH — CONFIRMED, worked as `F14`** | ***a Dirac operator on the wall, its normalizable modes, and an index*** — an operator paper, never opened by this bake |
-| **`P13`** *boundary* | 32 | **HIGH** | *the **Atiyah–Hirzebruch index obstruction** — operator-theoretic, and `H16` showed it turns on a Fourier decomposition* |
+| **`P13`** *boundary* | 32 | **HIGH — CONFIRMED, worked as `F15`** | *the **Atiyah–Hirzebruch index obstruction** — operator-theoretic, and `H16` showed it turns on a Fourier decomposition* |
 | `P08` *slicing operator* | 45 | **MEDIUM** | *`F13` has already shown its vacuum kernel IS an operator null space of dimension one* |
 | `P03` *slicing curve* | 29 | **MEDIUM** | *carries $L^2$ ×5 and `extension` ×8 — needs reading to tell self-adjoint from analytic* |
 | `P15` *cosmology* | 117 | **MEDIUM** | *`spectrum` is the power spectrum, but the acoustic oscillator and `unbounded` ×4 are this field's* |
@@ -315,4 +316,38 @@ reaches the limit.**
 the member the cosmology selects. The probe was well posed and the answer CONFIRMS the corpus — at a
 point its own receipt left untested.***
 *(receipt `storyboard_receipts/FA_F14_leaf_compactness_through_nariai.py` — **added, runs, all asserts
+pass**)*
+
+---
+
+## ⛔⛭⛭⛭ F15 — **THREE SPACES, THREE COMPACTNESS STATUSES, AND NO PAPER SETS THEM SIDE BY SIDE**
+
+*`P13` carries `compact` ×90, `equivariant` ×9, cites Atiyah–Singer and Lichnerowicz, and names the
+Atiyah–Hirzebruch obstruction's* ***"load-bearing hypotheses"*** *as* ***"compactness and a continuous
+isometry"***.
+
+**⌘ THE THREE SPACES:**
+
+| space | status | why | where |
+|---|---|---|---|
+| the **substrate** $\mathrm{dS}_5=SO(5,1)/SO(4,1)$ | **NOT compact** | topologically $\mathbb R\times S^4$ | `P06` |
+| the **Wick face** (signature change) | **compact** | — | `P13` |
+| the **leaf** (closed slicing) | **compact** | finite proper length in $\mathrm d\ell=\mathrm dr/\sqrt{\lvert f\rvert}$ | `P14` + `F14` |
+
+**⛔ AND THE RESULT DEPENDS ON TELLING THEM APART.** *The corpus asserts, at once, that an equivariant
+Dirac index **vanishes** (the geometric fermion sector vector-like) and that a Dirac index **equals
+three** (the wall zero-modes).* ⇒ ***Read as one operator on one space those contradict. They do not:
+the vanishing is on the COMPACT WICK FACE under a CONTINUOUS isometry; the three is on the COMPACT
+LEAF under a DISCRETE parity; and the noncompact substrate supports NEITHER*** — *which is exactly
+`P14`'s remark that the leaf index is available* ***"exactly where the bulk index on the noncompact
+substrate is obstructed."***
+
+**⌗ AND A THIRD HYPOTHESIS GOES UNNAMED.** *An index theorem needs an **elliptic** operator on the
+compact space, and `elliptic` occurs **once** in `P13` — in the **title of the Atiyah–Singer
+bibliography entry**. Not a defect (a Dirac operator is elliptic automatically), but the corpus's
+familiar anonymity, at the third hypothesis of a theorem it leans on.*
+
+⇒ ***So the chirality result is a statement about WHICH SPACE IS COMPACT AND WHICH SYMMETRY ACTS,
+assembled from three papers, and no one of them sets the three side by side.***
+*(receipt `storyboard_receipts/FA_F15_three_compactness_statuses.py` — **added, runs, all asserts
 pass**)*
