@@ -168,6 +168,7 @@ margin behind it.*
 | `H14` | is the interior index identifiable with the observed multipole? | ⏷ **ROUTED** r3458, **receipted** — *`P15` carries the map; it is not the identity, and it is worst at low $\ell$* |
 | `H15` | if the Bogoliubov mode split fails at the black-hole horizon, why does the thermal machinery survive at the de Sitter one? | ⍀ **BOUNCE** r3459 — *they have different origins, and the corpus says so* |
 | `H16` | is `P13` really harmonically empty? | ⛔ **NO — THE GREP VERDICT WAS WRONG** r3461, **receipted** — *the obstruction is a Fourier argument and the escape is the character group* |
+| `H17` | does the corpus do harmonic analysis on its FINITE groups? | ⛔ **BITE** r3462, **receipted** — *yes, in a receipt appendix, and it is half of colourlessness* |
 
 ---
 
@@ -406,7 +407,7 @@ catch. `H15` stands as a finding; it was the wrong paper to close on.*
 |---|---|
 | `P11` *dynamics* | ⛑ **OWED** — *carries "a single propagating **transverse-traceless mode**" in polarized Gowdy–de~Sitter; a real decomposition, and it bears on `P10`'s TT tower* |
 | `P13` *boundary* | ⛔ **THE NEGATIVE WAS WRONG** — *worked as `H16` r3461, **receipted**. Kaluza–Klein reduction IS harmonic analysis, and the chirality obstruction is a Fourier argument* |
-| `P05` *groupoid* | ⛑ **RE-OPENED** — *the grep verdict is withdrawn with `P13`'s; to be READ, not counted* |
+| `P05` *groupoid* | ⍀ **READ r3462** — *its `completeness` is GENERATION-completeness, a different sense; and reading on from it found `H17`* |
 | `p0`, `P09` | ⛑ **OWED** — *one genuine term each (`orthogonalit`, `Laplacian`); marginal, and to be read rather than assumed* |
 
 ⇒ ***So the field is NOT done: `P11` is owed on the physics, `p0` and `P09` on the margin, and `P13`
@@ -440,3 +441,37 @@ there is no series and nothing forces the cancellation.**
 ⌗ ***`P13`'s escape from the chirality obstruction is therefore a harmonic-analytic fact, and it sat
 in a paper this field had written off on five grep patterns.***
 *(receipt `storyboard_receipts/HA_H16_the_obstruction_is_a_fourier_argument.py`)*
+
+---
+
+## ⛔⛭⛭⛭ H17 — **THE TWO BAKES REACH THE TWO HALVES OF ONE CONDITION**
+
+*`P05`'s negative verdict withdrawn and the paper read. Its `prop:completeness` is
+**generation**-completeness — that $\sigma$ and $\tau$ generate the morphisms — a different sense from
+basis completeness; and the harmonic analogue for a finite group, Peter–Weyl/Plancherel, is genuinely
+absent: `Plancherel` ×0, `Parseval` ×0, `group algebra` ×0, and the four `Peter` hits are the
+**Narnhofer–Peter–Thirring** citation.* ⌗ ***That much the grep got right. What it could not get is
+what reading on from it found.***
+
+**⌘ THE CORPUS DOES USE THE GROUP FOURIER DECOMPOSITION — in `P14`'s receipt appendix, in no paper
+body:** ***"a colourless state is the trivial summand of the regular representation, which is `L-72`'s
+single-valuedness READ AS A SUBSPACE."***
+
+| | count | route |
+|---|---|---|
+| states of three colour indices | 27 | |
+| **trivial Fourier summand on the deck $\mathbb Z_3$** (triality $0$) | **9** | *harmonic* |
+| **$SU(3)$ singlet** ($\epsilon$ antisymmetry in $\mathbf3^{\otimes3}$) | **6** | *representation theory* |
+
+⇒ ***The singlet is a PROPER SUBSET, and the gap is exactly $(0,0,0),(1,1,1),(2,2,2)$ — the same three
+counterexamples the representation-theory bake found independently at r3437, by the other route.***
+
+⌗ **SO THE TWO FIELD BAKES CONVERGE ON ONE CONDITION FROM OPPOSITE SIDES:** *harmonic analysis on the
+deck gives the **necessary** half of colourlessness, representation theory on the colour group gives
+the **sufficient** half* — *and `P14` already states the relation:* ***"triality zero is necessary for a
+colour singlet and NOT SUFFICIENT."***
+
+⛔ ***AND THE STATEMENT LIVES WHERE A HARMONIC WORD COUNT WOULD NEVER LOOK*** *— inside a receipt
+appendix, phrased in representation-theoretic words. **The third finding in this field invisible to a
+grep**, after `P13`'s Fourier obstruction and `P11`'s transverse-traceless mode.*
+*(receipt `storyboard_receipts/HA_H17_the_two_halves_of_colourlessness.py`)*
