@@ -164,6 +164,7 @@ margin behind it.*
 | `H10` | is the operator half this field's? | ⛭ **REFERRED** — *station Ⓗ's, and worked as the functional-analysis bake's `F1`–`F3`* |
 | `H11` | is `P14`'s "mode completeness" really open? | ⛔ **BITE** r3454, **receipted** — *the wall is the reflectionless pair; only the **join** is open* |
 | `H12` | is `P07`'s adiabaticity parameter local or integrated? | ⏷ **ROUTED** r3456, **receipted** — *the separation is exact; the local value diverges* |
+| `H13` | is `P10`'s "loses control at the lowest harmonics" a coincidence? | ⛔ **BITE** r3457, **receipted** — *it is FORCED, and it joins two papers* |
 
 ---
 
@@ -191,9 +192,9 @@ margin behind it.*
 | | this bake | the FULL tier |
 |---|---|---|
 | lines | **~200** | 189–978 ✔ |
-| numbered probes | **13** (`H0`–`H12`) | 10–17 ✔ |
-| receipts, all running | **3** | 2–10 ✔ |
-| papers touched | `P07`, `P14`, `P15` = **3** | 6–11 ⚠ *three short* · **reach 3/12 = 25%** |
+| numbered probes | **14** (`H0`–`H13`) | 10–17 ✔ |
+| receipts, all running | **4** | 2–10 ✔ |
+| papers touched | `P07`, `P10`, `P14`, `P15` = **4** | 6–11 ⚠ *two short* · **reach 4/12 = 33%** |
 | lead register | **11 rows, none unmarked** | — |
 
 ⛔ ***ONE RECEIPT AND FIVE PAPERS SHORT, AND THE NARROW-FIELD DEFENCE IS REFUTED.***
@@ -267,3 +268,40 @@ parameter being $C/\mu_n$" reads as local, where no such bound exists.* ⌗ *The
 integral along the segment. **The receipt asserts the divergence and the convergence, not a value for
 $C$***, since that depends on the segment's range and on subleading terms.*
 *(receipt `storyboard_receipts/HA_H12_the_adiabaticity_is_integrated_not_local.py`)*
+
+---
+
+## ⛔⛭⛭ H13 — **`P10`'s DECLINED COINCIDENCE IS FORCED, AND THE ENTAILMENT SPANS TWO PAPERS**
+
+*`P10` writes, carefully:* ***"We record, **without claiming it**, that the harmonic indices at which
+the treatment loses control are the lowest ones."*** ⌗ *A declined claim is the best kind of probe:
+either the caution is warranted, or the claim is available.* ⇒ ***It is available, and it is a
+theorem.***
+
+**① THE TOWER BEGINS AT $n=2$**, *and `P10` says so — "there are no modes below $n=2$ on $S^3$". The
+reason is the TT rank-two degeneracy on $S^3$, $2(n^2-1)$: **zero at $n=1$**, empty below, and $6$ at
+$n=2$.*
+
+**② THE ADIABATICITY PARAMETER IS MONOTONE.** *From `H12` it separates as $C/\mu_n$ with
+$\mu_n=\sqrt{n(n+2)-2}$, and*
+$$\frac{\mathrm d}{\mathrm dn}\frac1{\mu_n}=\frac{-(n+1)}{\big(n(n+2)-2\big)^{3/2}}<0\quad\text{for all }n\ge2,$$
+*so $C/\mu_n$ is **strictly decreasing**, ***for any value of $C$***.*
+
+⇒ ***① AND ② TOGETHER FORCE IT.*** *A monotone-decreasing parameter takes its largest value at the
+smallest available index, and the smallest available is $n=2$ by the degeneracy.* **So the adiabatic
+treatment MUST lose control at the lowest harmonics — whatever $C$ is, and whatever the frequencies do.
+It is not a coincidence to be recorded; it is entailed.**
+
+**⌗ AND IT JOINS TWO PAPERS.** *`P07` supplies the parameter's form and `P10` the spectrum's floor.*
+***Neither alone entails the conclusion and together they do*** *— which is why the entailment was
+available to neither, and why a field bake reaching across papers is the thing that finds it.*
+
+**⏷ ROUTED, NOT APPLIED.** *`P10`'s caution can be withdrawn: the sentence can **claim** what it
+currently only records.*
+*(receipt `storyboard_receipts/HA_H13_the_declined_coincidence_is_forced.py`)*
+
+⌗ **A PROBE THAT BOUNCED ON THE WAY, worth recording.** *The obvious attack was that `P10` relies on
+the TT/conformal orthogonality — a completeness statement — without naming the decomposition.* ⇒ **It
+names it**: `York` appears in **eight** papers, `transverse-traceless` ×29, `DeWitt` ×11, `tensor
+harmonic` in `P10` itself. *The anonymity pattern that held for `Hilbert space` and `Ambrose–Singer`
+does **not** hold here.*
