@@ -172,7 +172,15 @@ else:
     # acoustic content left after c54.187 and c54.188 -- an artefact of where the pin was put?
     # *LATARG = 301.6 is the value as coded and is the default; nothing moves unless it is set.*
     _latarg = float(os.environ.get('LATARG', '301.6'))
-    Z_START = brentq(lambda z: np.pi * D_M / rs_from(z) - _latarg, 1500., 60000.)
+    # ** ZSTART forces the onset redshift instead of solving it from LATARG.  Default unset =
+    # byte-identical.  The closing counterfactual (58): push z_onset UP past the acoustic re-entry
+    # redshifts (n=1 ~2.9e4, n=2 ~1.2e5, n=3 ~2.7e5) so the modes cross the horizon DURING the plasma
+    # era, and read g2/g1 (scale-free, so it survives the acoustic-scale fit breaking).  If the
+    # alternation appears as z_onset rises past re-entry, the residual IS the absence of
+    # crossing-during-plasma and follows from the onset being on the branch point's cooling leg. **
+    _zstart_env = os.environ.get('ZSTART')
+    Z_START = float(_zstart_env) if _zstart_env else \
+        brentq(lambda z: np.pi * D_M / rs_from(z) - _latarg, 1500., 60000.)
     R_S = rs_from(Z_START)
 A_START = 1.0 / (1.0 + Z_START)
 ETA_S = float(np.interp(A_START, ag, eg))
