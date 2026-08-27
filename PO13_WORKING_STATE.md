@@ -451,3 +451,72 @@ the uniform comb; skipping it gives 58's rising curve.  *That is exactly the tra
 choosing the velocity zero-crossing over the temperature extremum; it just also bites the velocity
 crossing on a mode already deep sub-horizon at onset.*  The comb (uniform) and the Q(k) (undriven,
 rising to 1) now agree, and both confirm the mechanism the r3410 papers state.
+
+### ⛭ A.139 RECONCILED — THE RATE IS NOT THE LEVER; A.139 AND qscan MEASURE DIFFERENT QUANTITIES
+58 asked (task ②): is `A.139`'s CR "source phase shift" `-0.362` a stale **pre-leaf-correction**
+(stacking-rate) measurement — reproduced by `STACKPERT=1`/`LEAFPERT=0` and NOT by the leaf rate —
+or do both rates give it, in which case `qscan` and `A.139` measure different things? **Run both
+ways.  It is the second branch, and sharper than the fork.**
+
+**What `A.139` measured (from `storyboard_receipts/retired_conformal_seed/PROJGEN_projection_generic.py`):**
+the FIRST EXTREMUM IN `k` of the SW source `Theta-hat = Theta_0 + Psi` at `eta_rec`, reported as
+`k r_s/pi` (undriven **assumed** `= 1`; shift `= k r_s/pi - 1`).  DRIVEN only; no undriven column run.
+
+**Reproduced on the instrument (`evolve` to `eta_rec`, first source extremum in `k`), DRIVEN, uncalibrated:**
+
+| | source extremum `l` | `k r_s/pi` (own clock) | shift | `A.139` |
+| --- | --- | --- | --- | --- |
+| ΛCDM (`Theta-hat`) | 269.9 | 0.896 | **-0.104** | -0.086 |
+| CR stacking (`Theta-hat`) | 198.9 | 0.660 | **-0.340** | -0.362 |
+| CR leaf, phase clock (`Theta-hat`) | 254.7 | 0.657 | **-0.343** | — |
+
+`A.139` reproduces (ΛCDM `-0.10` vs `-0.086`; CR `-0.34` vs `-0.362`).  **And the leaf rate gives the
+SAME shift as the stacking rate** — `-0.343` (leaf, on `r_s,leaf`) vs `-0.340` (stacking).  ***The rate
+is not the lever.***  `A.139` is NOT stale-because-stacking.  → 58's second branch.
+
+**The real defect in `A.139` is the CALIBRATION, not the rate — and stripping `Psi` exposes it.**
+`Theta-hat`'s `Psi` piece plants a spurious low-`k` extremum, so the *undriven* `Theta-hat` first
+extremum sits at `k r_s/pi ~ 0.42` for **both** arms — `A.139` never measured its own undriven column
+(the very discipline `qscan` was built on), so it could not see that `1` was the wrong reference.  Using
+`Theta_0` alone (pure acoustic), the undriven calibration comes out right and the driving shift is
+**measured, not assumed:**
+
+| | undriven `k r_s/pi` | driven `k r_s/pi` | **calibrated k-space shift** |
+| --- | --- | --- | --- |
+| ΛCDM control | 1.015 | 0.828 | **-0.187** |
+| CR stacking | 1.008 | 0.587 | **-0.421** |
+| CR leaf (phase clock) | 1.009 | 0.583 | **-0.426** |
+
+Undriven `= 1.01` on all three (validates the method).  **The calibrated k-space driving shift is
+`-0.42` for CR against `-0.19` for ΛCDM — CR driven ~2.3x harder, and rate-independent (`-0.421`
+stacking, `-0.426` leaf on the phase clock).**  So `A.139`'s *direction* survives calibration; its `4x`
+was inflated by the uncalibrated `Psi` (calibrated it is `~2.3x`).
+
+**THE TENSION, NAMED — and it is the r3424 retraction's cause, located.**  Two *calibrated* measurements
+disagree in SIGN on CR's driving:
+- **k-space** (`Theta_0` first extremum in `k` at `eta_rec`, the peak-position observable the projection
+  integrates): CR shift **`-0.42`** — driving pulls the first extremum to LOWER `k r_s`.
+- **time-domain** `qscan` (`Theta_0` velocity turnover of a fixed `k`, transient-skipped `QTURN=vel
+  QMIN=0.5`, undriven `= 1.000`): CR `Q ~ 1.2`–`1.4` — shift **`+0.2`–`+0.4`**, turnover LATER than a free
+  oscillator.
+
+Same sign flip on both rates, so it is **not** the rate.  It is the feature: a k-space snapshot extremum
+at recombination vs a mode's temporal turnover phase.  **This is exactly why 58 withdrew `Q(k)` at r3424
+("depends on the chosen IC, reverses with sign") — the two features carry opposite-signed shifts, and
+which one you read is the IC/feature choice.**  The k-space extremum is the one that projects into `l_1`
+(the source is integrated at `eta_rec` against `j_l(k(eta_0-eta))`), so it is the peak-position-relevant
+one, and it says CR's *first peak* IS driven low, ~2.3x ΛCDM.
+
+**⚠ FLAG FOR 58 (framework's call, not routed by cc54).**  This does not touch the PO-13 residual as
+*stated* — that residual is the absent **odd-even alternation** (`g2/g1`), a different observable from the
+`l_1` driving shift, and it stands.  But it does mean **the blanket word "undriven" for CR's comb is too
+strong**: the calibrated k-space measurement shows the first-peak driving is real and *stronger* than the
+control.  The precise statement ("no compression/rarefaction alternation, because no mode crosses during
+a plasma") survives; "the uniform comb IS the undriven comb" as a whole-comb claim needs the `l_1`
+driving carved out of it.
+
+**Supersession of the r3410+ Q(k) section above:** 58 retracted `Q(k)` from `P15`/`P07` at **r3424** as an
+initial-condition artefact.  The "58's prediction confirmed" table above is therefore **superseded** — not
+because the numbers were wrong (they reproduce), but because the sign is IC/feature-dependent, which this
+A.139 reconciliation now explains rather than merely asserts.  The comb (uniform), the mechanism (no
+crossing-during-plasma), and the ZSTART calibration are untouched by the retraction.
