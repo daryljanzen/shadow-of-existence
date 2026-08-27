@@ -21,6 +21,16 @@ receipt's was not: "the standard shift is universal only where every mode crosse
 there is a plasma to be driven."  The asymptotic Q -> 1 this file computes is the same fact seen
 through the phase; the crossing census sees it without a turnover measure at all.
 
+WHICH MODES Q EXISTS FOR, added r3432.  Q is defined only where there IS a turnover to accumulate
+to.  The mode setting the FIRST PEAK is the one caught at MAXIMAL COMPRESSION at recombination --
+that is what puts it there -- so it never reaches a velocity turnover and Q does not exist for it;
+qscan returns nothing at k = 0.0157 and 0.0397.  The quantity is read on the modes that HAVE turned
+over, the third peak and smaller scales.  ** So the comb and Q are two independent consequences of
+the mechanism ON DIFFERENT MODES, not one mode's phase measured twice.  Reading a Q value against the
+first peak's position sets a velocity turnover of one mode against a density extremum of another, a
+quarter-period and several modes apart -- which produced an apparent 47 per cent projection shift
+against a measured 1.9. **
+
 SCOPE, FIXED r3430 AND NOT WIDER THAN THIS.  What this solve delivers is the ASYMPTOTIC statement --
 Q -> 1 at large k -- and that is what P15 and P07 assert.  It does NOT deliver the low-k values, and
 it does not deliver a magnitude (neutrino free-streaming is omitted, forty per cent of the radiation,
