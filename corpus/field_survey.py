@@ -82,7 +82,7 @@ FIELDS = [
     ('number theory', None,
      ['integer', 'rational', 'irrational', 'transcendental', 'prime', 'Diophantine',
       'continued fraction', 'algebraic number', 'modular form', 'zeta']),
-    ('representation theory', None,
+    ('representation theory', 'REPRESENTATION_THEORY_LEDGER.md',
      ['representation', 'irreducible', 'highest weight', 'Casimir', 'character',
       'branching', 'multiplet', 'triality']),
     ('differential topology / index theory', None,
