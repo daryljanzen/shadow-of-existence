@@ -140,6 +140,7 @@ bouncing has still been worth throwing.*
 | `F9` | does `P07` overstate what `P10` establishes? | ⟐ **BOUNCE** — no; `P07` carries the closure *and* its openness |
 | `F10` | `Hilbert space` ×0, `inner product` ×0 — a hole? | ⟐ **NO** — the **weak** form of the corpus's anonymity: `P10` works on $L^2$ of the half-line throughout, so the objects are present under standard notation and only the phrases are missing |
 | `F11` | is the constraint algebra treated as an operator algebra? | ⟐ **BOUNCE** — it is `P12`'s subject **by title**, and the corpus's ×26 is largely its bibliography |
+| `F21` | is `P06`'s "**lone**" extension freedom exact? | ⛔ **BITE** r3483, **receipted** — *it is a **von Neumann dimension count**, and it is exact* |
 | `F20` | what certifies `P01`'s "inequivalent vacua"? | ⛔ **BITE** r3482, **receipted** — ***Shale's criterion***, *never named, and the thermal case fails it at the **IR** end* |
 | `F19` | does `P11` carry `F18`'s form, and is its $a^{-2}$ right? | ⛔ **BITE** r3481, **receipted** — *fourth instance, and the $a^{-2}$ belongs to $W$, not $Q$* |
 | `F18` | is `P15`'s `unbounded` this field's? | ⛔ **BITE** r3480, **receipted** — *the word is not, the **argument** is — and it is the **third** instance of one form* |
@@ -276,7 +277,7 @@ senses. **So the estimate below is made from CONTENTS.***
 | `P15` *cosmology* | 117 | **MEDIUM — vocabulary NEGATIVE, argument POSITIVE; worked as `F18`** | *`spectrum` is the power spectrum, but the acoustic oscillator and `unbounded` ×4 are this field's* |
 | `P11` *dynamics* | 23 | **MEDIUM — CONFIRMED, worked as `F19`** | *the TT oscillator, and `P10`'s boundedness argument reaches into it* |
 | `P01` *causality* | 32 | **MEDIUM — CONFIRMED, worked as `F20`** | *the thermal spectrum and the Bogoliubov bases — `H15` touched them from the other side* |
-| `P06` *geometric core* | 23 | **MEDIUM** | *`self-adjoint` ×1, and the ladder* |
+| `P06` *geometric core* | 23 | **MEDIUM — CONFIRMED, worked as `F21`** | *`self-adjoint` ×1, and the ladder* |
 | `P09` *range* | 67 | **LOW–MEDIUM** | *`operator` ×36 and `kernel` ×30 are the **slicing** operator and the **vacuum** kernel* |
 | `P02` *the circle* | 38 | **LOW** | *`extension` ×22 is **analytic** continuation, not self-adjoint extension* |
 | `P05` *groupoid* | 16 | **LOW** | *`domain` ×8 likely the geometric sense* |
@@ -493,3 +494,38 @@ Shale's criterion are the same statement in two languages.***
 done entirely on $L^2$ — and now this.* ***The argument is right, the theorem that certifies it is
 standard, and it is never named.***
 *(receipt `storyboard_receipts/FA_F20_shale_criterion.py` — **added, runs, all asserts pass**)*
+
+---
+
+## ⛔⛭⛭ F21 — **"LONE" IS A VON NEUMANN DIMENSION COUNT, AND THE CONSTANTS ARGUMENT RESTS ON IT**
+
+*`P06` was estimated **MEDIUM** on a **single** `self-adjoint` occurrence, which could have been a
+stray.* ⛔ ***It is load-bearing, and it sits inside the corpus's constants argument:***
+> ***"$\hbar$ enters only at the seam, scaled by $\Lambda$ alone, the de~Sitter horizon's thermal state
+> closing the scale factor's LONE SELF-ADJOINT-EXTENSION FREEDOM without a free parameter … So the
+> gravitational–cosmological–quantum sector spends NO FREE DIMENSIONLESS CONSTANT."***
+
+⌗ **So a von Neumann extension parameter is one of the terms being counted to zero in an argument
+about the constants of nature — which makes "lone" a dimension count, and dimension counts are
+checkable.**
+
+| deficiency $(n,n)$ | extensions | real dimension |
+|---|---|---|
+| $(0,0)$ | none needed | 0 |
+| **$(1,1)$** | **$U(1)$** | **1** |
+| $(2,2)$ | $U(2)$ | 4 |
+| $(3,3)$ | $U(3)$ | 9 |
+
+*`P10` computes the scale-factor Hamiltonian's indices as $(1,1)$, ordering-independently, citing Weyl
+and Reed–Simon.* ⇒ ***So the extension freedom is $U(1)$: exactly ONE real parameter, and "lone" is
+exact.***
+
+**⌘ AND IT IS EXACT IN THE WAY THE ARGUMENT NEEDS.** *One freedom, closed by one condition — the de
+Sitter horizon's thermal state — leaving **zero**.* ***Had the indices been $(2,2)$ the freedom would
+be four-dimensional and a single thermal condition could not close it.***
+
+⇒ *So the constants argument (`P06`), the deficiency computation (`P10`) and the thermal state
+(`P10`, after Gibbons–Hawking) rest on **one dimension count that no paper performs**. **The count is
+right; it is simply never done in the open.***
+*(receipt `storyboard_receipts/FA_F21_lone_is_a_dimension_count.py` — **added, runs, all asserts
+pass**)*
