@@ -1,6 +1,18 @@
 #!/usr/bin/env python3
-"""RECEIPT — P15: ** WITHDRAWN r3424.  THE SHAPE THIS RECEIPT REPORTED IS AN ARTEFACT OF AN INITIAL
-CONDITION I CHOSE RATHER THAN DERIVED, AND IT REVERSES WITH THAT DATUM'S SIGN. **
+"""RECEIPT — P15: ** THIS ANALYTIC SOLVE IS WITHDRAWN r3429 AS UNRELIABLE.  THE RESULT IT WAS WRITTEN
+TO SUPPORT IS NOT: Q(k) IS MEASURED ON THE VALIDATED INSTRUMENT, GATED, AND THE PAPERS REST ON THAT. **
+
+WHAT IS WITHDRAWN IS THIS FILE, NOT THE FINDING.  The toy chose its initial condition (T-hat = -0.5,
+never checked against delta_gamma = -2 Phi) and its turnover detector FAILS at the opposite sign --
+the photon velocity crosses zero at y ~ 0.6 in a transient, before the acoustic oscillation
+establishes, so "first zero-crossing" reads the transient.  That is the third detector definition to
+fail in a new regime, and a fourth is not being invented.  So this solve cannot deliver Q(k).
+
+** AND THE APPARENT IC-SENSITIVITY IS THAT DETECTOR, NOT PHYSICS.  It was read the other way at
+r3424 -- as grounds to withdraw the RESULT from P15 and P07 -- and that withdrawal was wrong and is
+reversed at r3429.  Q(k) is measured by ACOUSTIC_two_arm's qscan, which gates undriven at 1.0000
+with no k-drift on both arms, and returns the control flat at 0.79 and the CR arm rising 1.28 to
+1.06.  The papers cite that measurement and never needed this file. **
 
 WHAT WAS CLAIMED: that Q(k), the accumulated sound phase at first turnover, runs to its
   free-oscillator value from above on this rate while a background carrying a radiation era holds
