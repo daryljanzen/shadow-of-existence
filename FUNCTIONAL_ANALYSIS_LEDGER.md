@@ -249,3 +249,29 @@ corpus's most overloaded word.**
 finding is about the **instrument**.*
 *(receipt `storyboard_receipts/FA_F13_kernel_carries_four_senses.py` — **added, runs, all asserts
 pass**)*
+
+---
+
+## ⌗ REACH RE-MEASURED AND ESTIMATED FROM CONTENTS — r3475
+
+⛔ ***The r3453 denominator of ten was wrong. Every one of the SEVENTEEN papers carries this field's
+vocabulary, and this bake has read SIX.*** *But raw counts mislead in both directions here — `P15`'s
+`spectrum` ×85 is the **power** spectrum, `P01`'s `domain` ×14 is **domain of dependence**, `P02`'s
+`extension` ×22 is **analytic** continuation, and `F13` has just shown `kernel` ×147 carries four
+senses. **So the estimate below is made from CONTENTS.***
+
+| paper | raw | estimate | reason |
+|---|---|---|---|
+| **`P14`** *matter sector* | 82 | **HIGH** | ***a Dirac operator on the wall, its normalizable modes, and an index*** — an operator paper, never opened by this bake |
+| **`P13`** *boundary* | 32 | **HIGH** | *the **Atiyah–Hirzebruch index obstruction** — operator-theoretic, and `H16` showed it turns on a Fourier decomposition* |
+| `P08` *slicing operator* | 45 | **MEDIUM** | *`F13` has already shown its vacuum kernel IS an operator null space of dimension one* |
+| `P03` *slicing curve* | 29 | **MEDIUM** | *carries $L^2$ ×5 and `extension` ×8 — needs reading to tell self-adjoint from analytic* |
+| `P15` *cosmology* | 117 | **MEDIUM** | *`spectrum` is the power spectrum, but the acoustic oscillator and `unbounded` ×4 are this field's* |
+| `P11` *dynamics* | 23 | **MEDIUM** | *the TT oscillator, and `P10`'s boundedness argument reaches into it* |
+| `P01` *causality* | 32 | **MEDIUM** | *the thermal spectrum and the Bogoliubov bases — `H15` touched them from the other side* |
+| `P06` *geometric core* | 23 | **MEDIUM** | *`self-adjoint` ×1, and the ladder* |
+| `P09` *range* | 67 | **LOW–MEDIUM** | *`operator` ×36 and `kernel` ×30 are the **slicing** operator and the **vacuum** kernel* |
+| `P02` *the circle* | 38 | **LOW** | *`extension` ×22 is **analytic** continuation, not self-adjoint extension* |
+| `P05` *groupoid* | 16 | **LOW** | *`domain` ×8 likely the geometric sense* |
+
+⇒ ***Eleven papers unread on this field, and none may be dismissed on a count.***
