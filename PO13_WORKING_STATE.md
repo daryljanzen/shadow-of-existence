@@ -323,3 +323,55 @@ PO-13's driving-crossing record, this gap-alternation decomposition, and 58's ri
 check.  *Method note: gap sequences not ceiling-counts; two configurations agree the alternation is
 zero; the mechanism gate (loading) was run before the mechanism was claimed; the shortfall factor is
 left as a nonlinear bracket rather than a fitted number.*
+
+### ⛭⛭⛭ THE MECHANISM NAMED, AND WHY THE CLOSURE IS A FORK ON THE ONE FITTED NUMBER
+The driving difference is now a statement about **two redshifts**, not a fingerprint.  Every acoustic
+mode **re-enters the horizon before the plasma exists**: on the leaf rate `n=1` re-enters at
+`z ~ 2.9e4`, `n=2` at `~1.2e5`, `n=3` at `~2.7e5`, and the onset is at `z=6797`.  So **no acoustic
+mode crosses the horizon while there is a plasma to be driven** --- exactly the condition the standard
+driving shift requires (58; and PO-13's own record: *"the standard shift is universal because every
+mode crosses during radiation domination"*).
+
+**The closing counterfactual (`ZSTART`):** push the onset UP past the re-entry redshifts so the modes
+cross during the plasma era, and read `g2/g1` (scale-free, so it survives the acoustic-scale fit
+breaking).  The scan --- CR LEAFPERT, physical loading --- is the **calibration curve**:
+
+| `z_onset` | modes crossing during plasma | `g2/g1` |
+| --- | --- | --- |
+| 6797 (physical) | none | 1.000 |
+| 1e4 | n=1 | 0.921 |
+| 3e4, 1e5 | n=1 | 0.919 |
+| 3e5, 1e6 | all three | **0.895** |
+
+The alternation **appears exactly as `z_onset` passes the re-entry redshifts** and **saturates at the
+control's value** (0.895 vs the control's 0.897) once all three modes cross.  **Compared to the
+CONTROL, not the sky:** CR's deficit is `1.000 - 0.897 = 0.103` at the physical onset and
+`0.895 - 0.897 = -0.002` --- exact agreement --- at saturation.  *The instrument misses the sky in
+BOTH arms (control 0.897 vs sky 0.856); that residual `0.041` is the instrument's, common to both, and
+is NOT charged to CR.*  ⇒ **The absence of the odd-even alternation is the absence of
+crossing-during-plasma**, and forcing the crossing recovers the full control-level comb.  Closed on
+the mechanism.
+
+**⚠ WHAT THIS DOES NOT SAY, and the correction that keeps it honest (58).**  It does **NOT** say the
+late onset is a consequence of the construction.  `z_onset` is **FITTED** --- `Z_START` is solved so
+`l_A` hits `LATARG` --- so *"the plasma begins on the branch point's cooling leg"* is the **story**
+about 6797, not its **provenance**.  Calling a fitted number a derived consequence is the move the
+whole reframing pass exists to stop, and the mechanism's success must not smuggle it in.  *(An earlier
+cc54 report and the `ZSTART` commit message carried that unearned claim; it is withdrawn here.)*
+
+**⇒ THE REAL RESULT: a SECOND, INDEPENDENT HANDLE ON THE ONE FITTED NUMBER.**  The acoustic scale
+fixes `z_onset` one way (6797).  The odd-even alternation constrains it another way (the calibration
+curve wants `z_onset` **above 3e5**).  Two independent observables pull on one fitted parameter **in
+different directions** --- which is precisely (624)'s neighbour, PO-13's open *"what the construction
+says the datum should be at the onset,"* now with teeth.  **The closure is therefore a FORK:**
+- **(A)** the construction genuinely places the onset above `3e5`, and the acoustic-scale fit is doing
+  something else --- then both handles are met and the datum is over-determined in CR's favour.
+- **(B)** the onset is `6797`, and CR then **predicts a uniform comb where the sky alternates** --- a
+  clean, falsifiable disagreement, not a defect to be tuned away.
+- **(C)** something other than crossing-during-plasma supplies the alternation and the
+  saturation-at-the-control is coincidence --- least likely, and directly testable by the `Phi(eta)`
+  envelope (does the potential decay with the k-dependent phase that produces alternation, or
+  smoothly).  **Run next.**
+
+Written closed on the mechanism, **fork open**, calibration curve recorded, with no claim about where
+`6797` comes from.  Not routed into `P15` without Daryl's separate call.
