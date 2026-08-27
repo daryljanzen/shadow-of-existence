@@ -140,6 +140,7 @@ bouncing has still been worth throwing.*
 | `F9` | does `P07` overstate what `P10` establishes? | ⟐ **BOUNCE** — no; `P07` carries the closure *and* its openness |
 | `F10` | `Hilbert space` ×0, `inner product` ×0 — a hole? | ⟐ **NO** — the **weak** form of the corpus's anonymity: `P10` works on $L^2$ of the half-line throughout, so the objects are present under standard notation and only the phrases are missing |
 | `F11` | is the constraint algebra treated as an operator algebra? | ⟐ **BOUNCE** — it is `P12`'s subject **by title**, and the corpus's ×26 is largely its bibliography |
+| `F22` | what is `P09`'s "size of the vacuum kernel"? | ⛔ **BITE** r3484, **receipted** — ***finite vs infinite dimension***, *and it joins `F16` and `H23`* |
 | `F21` | is `P06`'s "**lone**" extension freedom exact? | ⛔ **BITE** r3483, **receipted** — *it is a **von Neumann dimension count**, and it is exact* |
 | `F20` | what certifies `P01`'s "inequivalent vacua"? | ⛔ **BITE** r3482, **receipted** — ***Shale's criterion***, *never named, and the thermal case fails it at the **IR** end* |
 | `F19` | does `P11` carry `F18`'s form, and is its $a^{-2}$ right? | ⛔ **BITE** r3481, **receipted** — *fourth instance, and the $a^{-2}$ belongs to $W$, not $Q$* |
@@ -278,7 +279,7 @@ senses. **So the estimate below is made from CONTENTS.***
 | `P11` *dynamics* | 23 | **MEDIUM — CONFIRMED, worked as `F19`** | *the TT oscillator, and `P10`'s boundedness argument reaches into it* |
 | `P01` *causality* | 32 | **MEDIUM — CONFIRMED, worked as `F20`** | *the thermal spectrum and the Bogoliubov bases — `H15` touched them from the other side* |
 | `P06` *geometric core* | 23 | **MEDIUM — CONFIRMED, worked as `F21`** | *`self-adjoint` ×1, and the ladder* |
-| `P09` *range* | 67 | **LOW–MEDIUM** | *`operator` ×36 and `kernel` ×30 are the **slicing** operator and the **vacuum** kernel* |
+| `P09` *range* | 67 | **LOW–MEDIUM — vocabulary homonymic, ONE sentence exactly this field's; worked as `F22`** | *`operator` ×36 and `kernel` ×30 are the **slicing** operator and the **vacuum** kernel* |
 | `P02` *the circle* | 38 | **LOW** | *`extension` ×22 is **analytic** continuation, not self-adjoint extension* |
 | `P05` *groupoid* | 16 | **LOW** | *`domain` ×8 likely the geometric sense* |
 
@@ -528,4 +529,37 @@ be four-dimensional and a single thermal condition could not close it.***
 (`P10`, after Gibbons–Hawking) rest on **one dimension count that no paper performs**. **The count is
 right; it is simply never done in the open.***
 *(receipt `storyboard_receipts/FA_F21_lone_is_a_dimension_count.py` — **added, runs, all asserts
+pass**)*
+
+---
+
+## ⛔⛭⛭⛭ F22 — **"THE SIZE OF THE VACUUM KERNEL" IS FINITE VERSUS INFINITE DIMENSION**
+
+*`P09` was estimated **LOW–MEDIUM**: its `operator` ×36 is the **slicing** operator and its `kernel`
+×30 the **vacuum** kernel, both homonyms in this field's terms per `F13`.* ⛔ ***But one sentence is
+this field's exactly:***
+> ***"The SIZE of the vacuum kernel is set by how much symmetry the class spends: where the class
+> reduces to ORDINARY differential equations (one orbit-space variable) the kernel is a FINITE
+> PARAMETER FAMILY … where it remains a PARTIAL differential problem (two variables) the kernel is an
+> ENTIRE FUNCTIONAL FAMILY — the Weyl class."***
+
+| case | equation | kernel | dimension |
+|---|---|---|---|
+| **ODE** — spherical in $r$ | $rf'+f-1+\Lambda r^2=0$ | $f=C/r+1-\Lambda r^2/3$ | **1**, and **affine** (`F16`), $M$ its coordinate |
+| **PDE** — axisymmetric in $(\rho,z)$ | Laplace's equation for $U$ (`H23`) | axisymmetric harmonic functions | **infinite** — one regular and one singular solution per multipole order, without end |
+
+⇒ ***So `P09`'s dichotomy is exactly FINITE versus INFINITE dimensional kernel, set by ODE versus PDE,
+set in turn by how many orbit-space variables survive the symmetry.*** *That is the paper's sentence
+with the dimensions named.*
+
+**⌘ AND IT JOINS THREE RESULTS FOUND SEPARATELY:**
+
+| | |
+|---|---|
+| `F16` *(this field, r3478)* | the ODE kernel is one-dimensional and **affine** — a coset, $M$ its coordinate |
+| `H23` *(harmonic bake, r3469)* | the PDE kernel is the **harmonic functions**, and matter is the **obstruction** to integrating $\gamma$ |
+| `P09` *(the paper)* | the **size** is set by how much symmetry the class spends |
+
+⇒ ***Three statements, one structure, and no paper carries all three.***
+*(receipt `storyboard_receipts/FA_F22_the_size_of_the_vacuum_kernel.py` — **added, runs, all asserts
 pass**)*
