@@ -968,5 +968,11 @@ and $-k$ runs $-1,0,+1$: the family is symmetric about the marginal member, whic
 cause.* ⌗ *And $V_{\mathrm{eff}}\equiv f$ identically, so the marginal member's cubic is the **zero of the
 potential**, the locus where the line element reduces to Minkowski and $E=1$ is anchored.*
 
-**⌷ ROUTED, NOT APPLIED** *— whether `rem:tworealisations` should name the third member alongside its two ends
-is the paper-holder's call. The receipt `storyboard_receipts/L8_the_pencil.py` carries the verification.*
+**⌗ APPLIED r3417 — and working it tightened the statement.** *`rem:tworealisations` now names the third
+member and carries the law that goes with it.* ⇒ ***The marginal congruence does not TURN at the other
+members' turning loci — it CROSSES them, and its speed there is $\sqrt{k'}$ exactly***, *since at the $k'$
+member's turning radius $f=E'^{2}$ and so $(\dd r/\dd\tilde\tau)^{2}=1-E'^{2}=k'$.* ⛭ **So `L8.4`'s causal
+characters — real at the seam, zero at the turnaround, imaginary on the lift — ARE `P08`'s curvature classes
+$k'=+1,0,-1$ read at their own turning radii.** *Two results that were one document apart, and the ledger's
+own framing of "three members of one congruence" was loose: only the turnaround is a turning point OF the lap.
+The other two are crossings, and the crossing speed is what carries the causal character.*
