@@ -1,6 +1,28 @@
 #!/usr/bin/env python3
-"""RECEIPT — P15: ** THIS ANALYTIC SOLVE IS WITHDRAWN r3429 AS UNRELIABLE.  THE RESULT IT WAS WRITTEN
-TO SUPPORT IS NOT: Q(k) IS MEASURED ON THE VALIDATED INSTRUMENT, GATED, AND THE PAPERS REST ON THAT. **
+"""RECEIPT — P15: ** THE DRIVING SHIFT IS BOUGHT BY POTENTIAL DECAY OCCURRING WHILE A MODE OSCILLATES,
+SO A MODE WHOSE OSCILLATION BEGINS AFTER THE POTENTIAL HAS SETTLED INHERITS THE UNDRIVEN PHASE. **
+
+SCOPE, FIXED r3430 AND NOT WIDER THAN THIS.  What this solve delivers is the ASYMPTOTIC statement --
+Q -> 1 at large k -- and that is what P15 and P07 assert.  It does NOT deliver the low-k values, and
+it does not deliver a magnitude (neutrino free-streaming is omitted, forty per cent of the radiation,
+so the absolute values sit about fifteen per cent below the instrumented ones).  The papers cite
+ACOUSTIC_two_arm's qscan for the measurement; this is the derivation of its shape.
+
+THE TURNOVER MEASURE, AND WHY THE THIRD DEFINITION WAS ALSO WRONG.  An acoustic turnover is a zero of
+the photon velocity, but not every zero is one: under a frozen initial condition the velocity crosses
+zero in a TRANSIENT at y ~ 0.6, before the oscillation establishes.  Reading extrema of the effective
+temperature catches the same transient; reading the first velocity zero catches it at one sign of the
+initial datum and not the other.  ** The oscillation's own signature is that its zeros are spaced by
+pi in k*r_s.  The turnover is therefore the first zero that BEGINS A SEQUENCE SPACED BY ONE in these
+units -- a criterion taken from the free oscillator the gate already validates, not tuned. **
+
+AND THAT SETTLES THE APPARENT IC-SENSITIVITY THAT r3424 WITHDREW THE RESULT OVER.  A sign flip in the
+initial amplitude IS a pi phase shift, so it moves WHICH ZERO IS FIRST by exactly one half-period --
+measured: the two signs differ by 1.035, 1.066, 1.036, 1.014 across k, which is one unit, not a
+different physics.  At large k the transient is negligible and the ambiguity closes: four initial
+signs at k=160 give 1.0065, 1.0076, 1.0122, 1.0182, a spread of 0.012.  ** So the asymptotic claim is
+robust to the datum the construction does not fix, and the low-k values are not.  r3424's withdrawal
+was reversed at r3429 and this is why. **
 
 WHAT IS WITHDRAWN IS THIS FILE, NOT THE FINDING.  The toy chose its initial condition (T-hat = -0.5,
 never checked against delta_gamma = -2 Phi) and its turnover detector FAILS at the opposite sign --
