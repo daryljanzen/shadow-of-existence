@@ -173,6 +173,7 @@ margin behind it.*
 | `H19` | is `P04`'s $1/\sqrt N$ the whole story? | ⛔ **BITE** r3465, **receipted** — *it is the white-noise limit; long modes are unaveraged and raise the floor* |
 | `H20` | is `P03`'s $2/\sqrt3$ forced, and is its dimension selection harmonic? | ⛔⛔ **DOUBLE BITE** r3466, **receipted** — *both, and the second selects $d=4$ alone* |
 | `H21` | is `P02`'s "identical analytic character" a coincidence? | ⛔ **BITE** r3467, **receipted** — *it IS band-limiting to the first harmonic* |
+| `H22` | what is the symmetric space USED for? | ⛔ **BITE** r3468, **receipted** — *its algebra ×260, its analysis ×2 — and both analytic uses are load-bearing and unnamed* |
 
 ---
 
@@ -520,7 +521,7 @@ paper is irrelevant from a word count.***
 | `P04` *modern parallax* | the redshift-isotropy floor | **HIGH — CONFIRMED, worked as `H19`** | ***CMB anisotropy IS a spherical-harmonic decomposition***, and the floor is a **mode-counting** argument, $N=d_{\rm lss}/R$ |
 | `P03` *SdS slicing curve* | the door, the hinge, **sky-angle periodicity** | **HIGH — CONFIRMED, worked as `H20`** | *periodicity is Fourier; and the cubic's roots are $(2/\sqrt3)\sin w_k$ — **a harmonic parametrisation***, used as such by the representation bake |
 | `P02` *the circle* | one homogeneous circle, $r(z)=M(1+\cos z)$ | **HIGH — CONFIRMED, worked as `H21`** | *a **periodic function on a circle** is the founding object of Fourier analysis* |
-| `P12` *algebroid* | the constraint algebra, structure **functions** | **MEDIUM** | *structure functions varying over a base; the flat-connection/representation content* |
+| `P12` *algebroid* | the constraint algebra, structure **functions** | **MEDIUM — CONFIRMED, worked as `H22`** | *structure functions varying over a base; the flat-connection/representation content* |
 | `P09` *range* | swept vs reassigned geometries, moduli | **MEDIUM** | *carries `Laplacian`; a moduli/completeness question* |
 | `P06` *geometric core* | the substrate itself, the $\mathrm{dS}_5$ ladder | **MEDIUM** | *carries `orthogonalit`; the ladder is a decomposition* |
 | `p0` *shadow of existence* | epistemology of theory-choice | **LOW** | *no decomposition content expected — **to be read, not assumed*** |
@@ -632,4 +633,38 @@ turned out to be entailed.*
 — constant plus one harmonic, with nothing to remove.*** *Two papers, one discipline: **purity of the
 harmonic content is what both constructions are buying.***
 *(receipt `storyboard_receipts/HA_H21_the_cycloid_is_band_limited.py` — **added, runs, all asserts
+pass**)*
+
+---
+
+## ⛔⛭⛭ H22 — **THE SYMMETRIC SPACE'S ALGEBRA ×260, ITS ANALYSIS ×2**
+
+*`P12` states that* ***"$\mathrm{dS}_5$ is a symmetric space, $\mathrm{dS}_5=SO(5,1)/SO(4,1)$, and this
+is the structural fact the whole construction turns on"***, *citing **Helgason 1978** — who wrote the
+canonical text on **harmonic analysis** on symmetric spaces. So: what is that structure used FOR?*
+
+| | count | reach |
+|---|---|---|
+| **algebraic** side — symmetric space, Cartan decomposition, involution, coset | **×260** | **sixteen papers** |
+| **analytic** side — spherical functions, Plancherel, principal series | **×2** | two |
+
+**⌘ AND BOTH ANALYTIC USES ARE LOAD-BEARING.** *`P15`'s **angular no-hair**: with
+$\nu^2=\tfrac14-m^2/H^2$ and $m^2/H^2=\ell(\ell+1)$, the monopole $\ell=0$ gives $\nu=\tfrac12$ — a
+scale-invariant base — while $\ell=1$ gives $-\tfrac74$ and $\ell=2$ gives $-\tfrac{23}4$:* ***every
+$\ell\ge1$ lands in the heavy PRINCIPAL SERIES, "which oscillate and decay through the throat".***
+*And `P11`'s Gowdy truncation: $m^2=2\Lambda=6H^2$, "(principal series)", Bunch–Davies.*
+
+⇒ ***Both are harmonic analysis on the symmetric space — the unitary representation theory of the de
+Sitter group — and neither is named as such. The corpus cites Helgason for the ALGEBRAIC fact and uses
+the ANALYTIC theory twice without citing it.***
+
+**⍀ AND THIS IS A BOUNDARY, NOT A HOLE.** *The physics lives on the **leaves** — the $S^3$ tower, the
+flat projection, the wall — not on the homogeneous space, so spherical functions and the Plancherel
+decomposition of $L^2(G/H)$ are **genuinely not needed**.* ***The analytic side is used exactly where
+it is needed: twice.***
+
+⌗ *A probe that bounced on the way: `P12`'s extension from the finite mode pattern to "arbitrary
+lapses" is a bilinearity argument valid on the span, and the paper **scopes it correctly** — "follows
+**on this sector**".*
+*(receipt `storyboard_receipts/HA_H22_the_symmetric_space_two_sides.py` — **added, runs, all asserts
 pass**)*
