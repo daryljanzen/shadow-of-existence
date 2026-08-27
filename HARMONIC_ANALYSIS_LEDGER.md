@@ -167,6 +167,7 @@ margin behind it.*
 | `H13` | is `P10`'s "loses control at the lowest harmonics" a coincidence? | ⛔ **BITE** r3457, **receipted** — *it is FORCED, and it joins two papers* |
 | `H14` | is the interior index identifiable with the observed multipole? | ⏷ **ROUTED** r3458, **receipted** — *`P15` carries the map; it is not the identity, and it is worst at low $\ell$* |
 | `H15` | if the Bogoliubov mode split fails at the black-hole horizon, why does the thermal machinery survive at the de Sitter one? | ⍀ **BOUNCE** r3459 — *they have different origins, and the corpus says so* |
+| `H16` | is `P13` really harmonically empty? | ⛔ **NO — THE GREP VERDICT WAS WRONG** r3461, **receipted** — *the obstruction is a Fourier argument and the escape is the character group* |
 
 ---
 
@@ -404,9 +405,38 @@ catch. `H15` stands as a finding; it was the wrong paper to close on.*
 | paper | verdict |
 |---|---|
 | `P11` *dynamics* | ⛑ **OWED** — *carries "a single propagating **transverse-traceless mode**" in polarized Gowdy–de~Sitter; a real decomposition, and it bears on `P10`'s TT tower* |
-| `P13` *boundary* | ⍀ **CHECKED, NEGATIVE** — *no decomposition, basis, expansion or TT content; its `spectrum` is the index-theorem sense* |
-| `P05` *groupoid* | ⍀ **CHECKED, NEGATIVE** — *its `completeness` ×8 is `prop:completeness`, completeness of a **group**, not of a basis* |
+| `P13` *boundary* | ⛔ **THE NEGATIVE WAS WRONG** — *worked as `H16` r3461, **receipted**. Kaluza–Klein reduction IS harmonic analysis, and the chirality obstruction is a Fourier argument* |
+| `P05` *groupoid* | ⛑ **RE-OPENED** — *the grep verdict is withdrawn with `P13`'s; to be READ, not counted* |
 | `p0`, `P09` | ⛑ **OWED** — *one genuine term each (`orthogonalit`, `Laplacian`); marginal, and to be read rather than assumed* |
 
 ⇒ ***So the field is NOT done: `P11` is owed on the physics, `p0` and `P09` on the margin, and `P13`
 and `P05` are now checked-and-negative BY NAME rather than silently absent.***
+
+---
+
+## ⛔⛭⛭ H16 — **`P13` IS A HARMONIC PAPER, AND THE "CHECKED, NEGATIVE" VERDICT WAS WRONG**
+
+⛔ ***This bake recorded `P13` as "checked, negative" on a grep of five decomposition patterns — about
+the paper the corpus's Standard-Model reachability argument lives in.*** *Read instead of greped, it
+carries Kaluza–Klein ×6, compactification ×3, index theorem / Dirac operator ×5, vector-like ×6,
+zero-mode ×8.* ⌗ **And Kaluza–Klein reduction *is* harmonic analysis: fields are expanded in harmonics
+on the internal manifold and the four-dimensional spectrum is read off.**
+
+**`P13`'s load-bearing sentence:** ***"the index theorem is a statement about a compact CONNECTED group,
+and a positive-dimensional connected group contains a CIRCLE whose action is what forces the equivariant
+Dirac index to vanish, while the gravitational handedness is carried by the DISCRETE orientation
+parity."***
+
+**⌗ THE MECHANISM IS THIS FIELD'S OWN.** *Under an $S^1$ action the modes decompose into **weight
+spaces** indexed by $n\in\mathbb Z$ — a Fourier decomposition — and the equivariant index becomes a
+**character**, a Laurent series in the circle parameter. Atiyah–Hirzebruch makes that series a finite
+Laurent polynomial which is also invariant, hence constant, hence **zero**.*
+
+⇒ ***So the obstruction NEEDS A CIRCLE TO FOURIER-DECOMPOSE AGAINST, and the character group is the
+whole difference:*** $\widehat{S^1}=\mathbb Z$, *infinite; and every discrete group's dual is finite —
+**two** for the $\mathbb Z_2$ orientation parity that carries CR's handedness.* **With a finite dual
+there is no series and nothing forces the cancellation.**
+
+⌗ ***`P13`'s escape from the chirality obstruction is therefore a harmonic-analytic fact, and it sat
+in a paper this field had written off on five grep patterns.***
+*(receipt `storyboard_receipts/HA_H16_the_obstruction_is_a_fourier_argument.py`)*
