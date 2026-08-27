@@ -86,6 +86,22 @@ is breadth bought with depth.*
 
 ---
 
+## ⛔ THE LEAD RULE — no new field while the current one's leads are owed
+
+***A bake generates leads. They are worked before the next field is taken up, not queued behind it.***
+*The failure this prevents is the one the whole programme keeps hitting: a thread opened, named, and
+left because something larger appeared on the board.*
+
+**⌗ EVERY BAKE CARRIES A LEAD REGISTER**, a table in its own ledger, and each row is one of:
+- **⊢ WORKED** — carried to a verdict, receipted if it needed one.
+- **⌷ ROUTED** — the exact clause written out for a paper-holder, and the row says which paper.
+- **⟐ NO CHANGE OWED** — a probe can return this and it is a result.
+- **⛭ REFERRED** — *only* where the lead belongs to a **different field in the queue**, and then the
+  row names that field and that field's ledger inherits it. **A lead may not be referred to "later".**
+
+⛔ ***A FIELD IS NOT DONE WHILE ANY ROW IS UNMARKED.*** *The bar in the table above counts the ledger's
+shape; the lead register counts whether it was finished. Both are required.*
+
 ## ⛔ THE STRIKE CONDITION FOR `622`
 
 ***`622` may be struck when, and only when, all ten fields above meet the bar.*** *Not when a list is
