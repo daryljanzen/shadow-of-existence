@@ -110,10 +110,24 @@ def main():
     p15 = RB.BODIES['P15']
     check('⓶ P15 states the separation as 0.615 in φ/π at the derived seam datum',
           '0.615' in p15)
-    check('⓶ᵇ and the uncertainty as σ(φ/π) ≃ 0.008, propagated from a ONE-MULTIPOLE peak-position '
-          'assumption -- a chosen resolution scale, not a measured error budget',
-          '0.008' in p15 and 'one-multipole peak-position uncertainty' in p15)
-    sep, sig = 0.615, 0.008
+    # ** SUPERSEDED r3447.  This check asserted P15 states sigma(phi/pi) = 0.008 from a
+    # one-multipole peak-position assumption, and reproduced 0.615/0.008 = 76.9 sigma.
+    # ** P15 REMOVED BOTH AT r3169 ** -- "the central empirical claim was unreceipted, and its
+    # sigma did not match its stated input" -- and this receipt was never updated, so it has
+    # been FAILING for 278 revisions.  Found by RUNNING it, not by reading it: this is the
+    # severed-route class (a correction applied at the paper and not at what depends on it)
+    # that the integrity comb's grep could not detect and its own null yield predicted.
+    # The check now tracks what the paper SAYS NOW, which is stronger than what it replaced. **
+    check('⓶ᵇ ⛭ SUPERSEDED: P15 no longer quotes a sigma at all, and says in its own voice that '
+          'the 0.615 "should not be read as the disagreement itself"',
+          '0.008' not in p15 and 'should not be read as the disagreement itself' in p15)
+    check('⓶ᶜ and it now rests the case on a chi-squared ratio on a stated number of bins rather '
+          'than on a sigma -- 224 against the control\'s 3.71 on 185 bins',
+          '224' in p15 and '3.71' in p15 and '185 bins' in p15)
+    check('⓶ᵈ ⛭ and it reports the phase SPAN with the control INSIDE it, which is the honest '
+          'form of the same comparison: 0.891 in phi/pi, control 0.263',
+          '0.891' in p15 and '0.263' in p15)
+    sep, sig = 0.615, 0.008   # kept only to reproduce the SUPERSEDED figure below
     ratio = sep / sig
     print(f'      {sep} / {sig} = {ratio:.1f} σ  --  the paper says "of order seventy"')
     check(f'⓶ᶜ and the ratio those two numbers give is {ratio:.1f}, which is what the paper calls '
@@ -126,7 +140,7 @@ def main():
     tail = erfc(ratio / sqrt(2))
     tail5 = erfc(5.0 / sqrt(2))
     print(f'      Gaussian two-sided tail at {ratio:.1f}σ = {tail:.3e}   (at 5σ it is {tail5:.2e})')
-    check(f'⓶ᵈ ⚠ AND SEVENTY IS NOT A PROBABILITY: the Gaussian tail at {ratio:.1f}σ underflows '
+    check(f'⓶ᶠ ⚠ AND SEVENTY WAS NEVER A PROBABILITY: the Gaussian tail at {ratio:.1f}σ underflows '
           f'double precision to {tail:.1e}, while 5σ is a reportable {tail5:.1e} -- so the figure '
           'carries a RATIO (how many times the quoted uncertainty fits into the discrepancy) and '
           'no probability any error model would support',
