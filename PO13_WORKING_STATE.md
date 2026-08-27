@@ -323,3 +323,100 @@ PO-13's driving-crossing record, this gap-alternation decomposition, and 58's ri
 check.  *Method note: gap sequences not ceiling-counts; two configurations agree the alternation is
 zero; the mechanism gate (loading) was run before the mechanism was claimed; the shortfall factor is
 left as a nonlinear bracket rather than a fitted number.*
+
+### ⛭⛭⛭ THE MECHANISM NAMED, AND WHY THE CLOSURE IS A FORK ON THE ONE FITTED NUMBER
+The driving difference is now a statement about **two redshifts**, not a fingerprint.  Every acoustic
+mode **re-enters the horizon before the plasma exists**: on the leaf rate `n=1` re-enters at
+`z ~ 2.9e4`, `n=2` at `~1.2e5`, `n=3` at `~2.7e5`, and the onset is at `z=6797`.  So **no acoustic
+mode crosses the horizon while there is a plasma to be driven** --- exactly the condition the standard
+driving shift requires (58; and PO-13's own record: *"the standard shift is universal because every
+mode crosses during radiation domination"*).
+
+**The closing counterfactual (`ZSTART`):** push the onset UP past the re-entry redshifts so the modes
+cross during the plasma era, and read `g2/g1` (scale-free, so it survives the acoustic-scale fit
+breaking).  The scan --- CR LEAFPERT, physical loading --- is the **calibration curve**:
+
+| `z_onset` | modes crossing during plasma | `g2/g1` |
+| --- | --- | --- |
+| 6797 (physical) | none | 1.000 |
+| 1e4 | n=1 | 0.921 |
+| 3e4, 1e5 | n=1 | 0.919 |
+| 3e5, 1e6 | all three | **0.895** |
+
+The alternation **appears exactly as `z_onset` passes the re-entry redshifts** and **saturates at the
+control's value** (0.895 vs the control's 0.897) once all three modes cross.  **Compared to the
+CONTROL, not the sky:** CR's deficit is `1.000 - 0.897 = 0.103` at the physical onset and
+`0.895 - 0.897 = -0.002` --- exact agreement --- at saturation.  *The instrument misses the sky in
+BOTH arms (control 0.897 vs sky 0.856); that residual `0.041` is the instrument's, common to both, and
+is NOT charged to CR.*  ⇒ **The absence of the odd-even alternation is the absence of
+crossing-during-plasma**, and forcing the crossing recovers the full control-level comb.  Closed on
+the mechanism.
+
+**⚠ WHAT THIS DOES NOT SAY, and the correction that keeps it honest (58).**  It does **NOT** say the
+late onset is a consequence of the construction.  `z_onset` is **FITTED** --- `Z_START` is solved so
+`l_A` hits `LATARG` --- so *"the plasma begins on the branch point's cooling leg"* is the **story**
+about 6797, not its **provenance**.  Calling a fitted number a derived consequence is the move the
+whole reframing pass exists to stop, and the mechanism's success must not smuggle it in.  *(An earlier
+cc54 report and the `ZSTART` commit message carried that unearned claim; it is withdrawn here.)*
+
+**⇒ THE REAL RESULT: a SECOND, INDEPENDENT HANDLE ON THE ONE FITTED NUMBER.**  The acoustic scale
+fixes `z_onset` one way (6797).  The odd-even alternation constrains it another way (the calibration
+curve wants `z_onset` **above 3e5**).  Two independent observables pull on one fitted parameter **in
+different directions** --- which is precisely (624)'s neighbour, PO-13's open *"what the construction
+says the datum should be at the onset,"* now with teeth.  **The closure is therefore a FORK:**
+- **(A)** the construction genuinely places the onset above `3e5`, and the acoustic-scale fit is doing
+  something else --- then both handles are met and the datum is over-determined in CR's favour.
+- **(B)** the onset is `6797`, and CR then **predicts a uniform comb where the sky alternates** --- a
+  clean, falsifiable disagreement, not a defect to be tuned away.
+- **(C)** something other than crossing-during-plasma supplies the alternation and the
+  saturation-at-the-control is coincidence --- least likely, and directly testable by the `Phi(eta)`
+  envelope (does the potential decay with the k-dependent phase that produces alternation, or
+  smoothly).  **Run next.**
+
+Written closed on the mechanism, **fork open**, calibration curve recorded, with no claim about where
+`6797` comes from.  Not routed into `P15` without Daryl's separate call.
+
+**Branch (C) tested and disfavoured (the `Phi(eta)` envelope).**  Saving the potential per acoustic-peak
+mode (`PHISAVE`, onset -> recombination) and asking 58's question --- does the potential decay with the
+k-dependent phase that produces alternation, or smoothly --- the control's `Phi` carries **more
+oscillatory turning points** (`1, 1, 3` across the first three peak modes) than CR's (`0, 0, 2`): the
+control's potential **rebounds with the acoustic phase** (phase-coherent driving) while CR's decays
+**more monotonically**.  That is the field-side image of the redshift-side mechanism --- at the physical
+onset CR's modes are already sub-horizon and frozen, so there is no crossing to drive a phase-coherent
+potential --- so the saturation-at-the-control is **not a coincidence**, and (C) is disfavoured.  The
+effect is modest (one turning point per mode), not a knockout, but it points the same way.  **The fork
+narrows to (A) vs (B)** --- both real outcomes, neither an artefact: either the construction places the
+onset above `3e5` (over-determining the datum in CR's favour) or it says `6797` and CR carries a
+falsifiable prediction of a uniform comb.  **That is a framework question --- 58's --- and it is PO-13's
+own open datum, now held by two independent observables instead of one.**
+
+### ⛭⛭⛭ THE FORK RESOLVES TO (B): A DERIVED, FALSIFIABLE PREDICTION (58, framework)
+**(A) is closed.**  The apparent route to (A) was a suspected `P15`/`P16` contradiction: `P16`'s cooling
+leg runs a standard BBN (helium-4 and deuterium at observed values), which needs a plasma at MeV
+temperatures; if that plasma were on **our** expansion leg, it would exist at `z ~ 1e9`, the acoustic
+modes would cross the horizon during it, and (A) would follow.  It is not on our leg.  `P16`
+`fig:history` places the nucleosynthesis on the **transit's cooling leg** --- after turnaround, the
+expansion cools the matter back through the nuclear window and deuterium freezes out **there, before the
+branch point** --- and states that *"the observable expansion history begins only later, at the ~1.6 eV
+onset ... the nucleosynthesis is complete below it."*  So the BBN plasma is the **progenitor's**, on the
+far side of the branch point; **our** expansion-leg plasma begins at the onset.  `P15` and `P16` agree,
+and the objection dissolves.  The onset genuinely sits at `z=6797`, below the acoustic re-entry
+redshifts.
+
+**So (B) stands, and it is a PREDICTION, not a deficit.**  On the radiation-free rate the plasma begins
+at the onset, below every acoustic re-entry redshift (`n=1 ~2.9e4`, `n=2 ~1.2e5`, `n=3 ~2.7e5`), so **no
+acoustic mode crosses the horizon while our plasma exists**, so the comb is **uniform**.  The sky's
+comb **alternates**.  That is a **falsifiable disagreement with a derived cause** --- the odd-even
+modulation is the standard driving shift, which requires crossing-during-plasma, which the
+geometry-fixed rate does not have --- and it is the sharpest empirical statement the corpus carries.
+
+**The counterfactual IS the calibration** (what makes the prediction testable rather than merely
+stated): raise the onset past the re-entry redshifts and the alternation **appears and saturates at the
+control** (`g2/g1`: 1.000 at 6797 -> 0.921 once `n=1` crosses -> 0.895 = the control's 0.897 once all
+three do).  **Charge CR only with its own deficit:** `0.103` against the control at the physical onset;
+the remaining `0.041` to the sky (control 0.897 vs sky 0.856) is the **instrument's**, common to both
+arms, and is not CR's.
+
+*The P7/P15 wording --- naming the mechanism and stating the prediction where the frontier text (r3409)
+currently leaves a location --- is 58's to take.  P15 is held until then.  Nothing here is routed into a
+paper by cc54.*

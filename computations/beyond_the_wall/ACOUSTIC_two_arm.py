@@ -180,7 +180,15 @@ else:
     # acoustic content left after c54.187 and c54.188 -- an artefact of where the pin was put?
     # *LATARG = 301.6 is the value as coded and is the default; nothing moves unless it is set.*
     _latarg = float(os.environ.get('LATARG', '301.6'))
-    Z_START = brentq(lambda z: np.pi * D_M / rs_from(z) - _latarg, 1500., 60000.)
+    # ** ZSTART forces the onset redshift instead of solving it from LATARG.  Default unset =
+    # byte-identical.  The closing counterfactual (58): push z_onset UP past the acoustic re-entry
+    # redshifts (n=1 ~2.9e4, n=2 ~1.2e5, n=3 ~2.7e5) so the modes cross the horizon DURING the plasma
+    # era, and read g2/g1 (scale-free, so it survives the acoustic-scale fit breaking).  If the
+    # alternation appears as z_onset rises past re-entry, the residual IS the absence of
+    # crossing-during-plasma and follows from the onset being on the branch point's cooling leg. **
+    _zstart_env = os.environ.get('ZSTART')
+    Z_START = float(_zstart_env) if _zstart_env else \
+        brentq(lambda z: np.pi * D_M / rs_from(z) - _latarg, 1500., 60000.)
     R_S = rs_from(Z_START)
 A_START = 1.0 / (1.0 + Z_START)
 ETA_S = float(np.interp(A_START, ag, eg))
@@ -942,6 +950,19 @@ def main():
     Psr = yr[:, 6] - 6 * Hc_of(eta_rec) ** 2 * On_of(eta_rec) * sig / kk ** 2
     SW = yr[:, 2] / 4 + Psr
     TH0 = yr[:, 2] / 4                                   # the oscillator alone
+
+    # ** PHISAVE: the potential Phi(eta) for the first three acoustic-peak modes (58's envelope test
+    # of branch C).  Does the potential decay with the k-dependent phase that produces the odd-even
+    # alternation, or smoothly?  A field the ODE already carries (state index 6), no new run. **
+    if os.environ.get('PHISAVE'):
+        _pk = argrelextrema(np.abs(TH0), np.greater, order=4)[0]
+        _pk = _pk[(kk[_pk] * R_S / np.pi < 4)][:3]        # first three peak modes
+        _etg = np.linspace(ETA_S, eta_rec, 500)
+        _Yg = sol.sol(_etg).reshape(nk, NV, len(_etg))    # (nk, NV, neta)
+        np.savez(os.environ['PHISAVE'], eta=_etg, phi=_Yg[_pk, 6, :], dg=_Yg[_pk, 2, :],
+                 qpk=kk[_pk] * R_S / np.pi, kpk=kk[_pk], arm=ARM, eta_rec=eta_rec, eta_s=ETA_S)
+        print(f"  PHISAVE: Phi(eta) for peak modes q={[round(float(kk[j]*R_S/np.pi),2) for j in _pk]} "
+              f"-> {os.environ['PHISAVE']}")
 
     # ---- THE COMB, ON SOURCE EXTREMA IN k -------------------------------------------------------
     print("  " + "-" * 74)
