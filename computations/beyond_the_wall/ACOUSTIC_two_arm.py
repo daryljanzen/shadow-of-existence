@@ -111,7 +111,15 @@ Hc_of = CubicSpline(eg, ag * Hphys(ag) / C)                       # comoving Hub
 # NO-OP THERE -- which is the self-check. **
 def Hleaf(a):
     return H0 * np.sqrt(OM / a ** 3 + OL + OR / a ** 4)            # radiation gravitates: L2
-LEAFPERT = os.environ.get('LEAFPERT', '0') == '1'
+# ** DEFAULT ON (r3409).  The perturbation sector runs on the LEAF congruence, which is what the
+# framework assigns it: P15 sec:properframe and P7's rate-rule remark both read "a process running
+# in the content --- rs, r_D, recombination, THE PERTURBATIONS --- takes the leaf's".  Validated two
+# ways before the default was inverted: the lcdm arm's two rate expressions are character-identical,
+# so Jac == 1 and this is provably a no-op there; and that no-op was confirmed numerically at 2700
+# modes, l_1 = 220 against the validated control's 220 and the sky's 220.6.  Set STACKPERT=1 to
+# recover the pre-r3409 behaviour, which ran the perturbations on the stacking rate -- kept only so
+# the earlier results in PO13_WORKING_STATE can be reproduced. **
+LEAFPERT = os.environ.get('STACKPERT', '0') != '1'
 Hl_of  = CubicSpline(eg, ag * Hleaf(ag) / C)                       # comoving leaf Hubble, 1/Mpc
 Jac_of = CubicSpline(eg, Hphys(ag) / Hleaf(ag))                    # d eta_leaf / d eta_stack
 # ** PHASEONLY=1: reckon ONLY the oscillator's phase in leaf conformal time, nothing else -- the
