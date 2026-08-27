@@ -943,6 +943,19 @@ def main():
     SW = yr[:, 2] / 4 + Psr
     TH0 = yr[:, 2] / 4                                   # the oscillator alone
 
+    # ** PHISAVE: the potential Phi(eta) for the first three acoustic-peak modes (58's envelope test
+    # of branch C).  Does the potential decay with the k-dependent phase that produces the odd-even
+    # alternation, or smoothly?  A field the ODE already carries (state index 6), no new run. **
+    if os.environ.get('PHISAVE'):
+        _pk = argrelextrema(np.abs(TH0), np.greater, order=4)[0]
+        _pk = _pk[(kk[_pk] * R_S / np.pi < 4)][:3]        # first three peak modes
+        _etg = np.linspace(ETA_S, eta_rec, 500)
+        _Yg = sol.sol(_etg).reshape(nk, NV, len(_etg))    # (nk, NV, neta)
+        np.savez(os.environ['PHISAVE'], eta=_etg, phi=_Yg[_pk, 6, :], dg=_Yg[_pk, 2, :],
+                 qpk=kk[_pk] * R_S / np.pi, kpk=kk[_pk], arm=ARM, eta_rec=eta_rec, eta_s=ETA_S)
+        print(f"  PHISAVE: Phi(eta) for peak modes q={[round(float(kk[j]*R_S/np.pi),2) for j in _pk]} "
+              f"-> {os.environ['PHISAVE']}")
+
     # ---- THE COMB, ON SOURCE EXTREMA IN k -------------------------------------------------------
     print("  " + "-" * 74)
     print("  THE COMB — source extrema in k, at recombination.  NEVER measured in ell-space.")
