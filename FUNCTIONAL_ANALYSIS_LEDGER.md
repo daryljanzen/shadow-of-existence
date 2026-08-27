@@ -140,6 +140,7 @@ bouncing has still been worth throwing.*
 | `F9` | does `P07` overstate what `P10` establishes? | ⟐ **BOUNCE** — no; `P07` carries the closure *and* its openness |
 | `F10` | `Hilbert space` ×0, `inner product` ×0 — a hole? | ⟐ **NO** — the **weak** form of the corpus's anonymity: `P10` works on $L^2$ of the half-line throughout, so the objects are present under standard notation and only the phrases are missing |
 | `F11` | is the constraint algebra treated as an operator algebra? | ⟐ **BOUNCE** — it is `P12`'s subject **by title**, and the corpus's ×26 is largely its bibliography |
+| `F19` | does `P11` carry `F18`'s form, and is its $a^{-2}$ right? | ⛔ **BITE** r3481, **receipted** — *fourth instance, and the $a^{-2}$ belongs to $W$, not $Q$* |
 | `F18` | is `P15`'s `unbounded` this field's? | ⛔ **BITE** r3480, **receipted** — *the word is not, the **argument** is — and it is the **third** instance of one form* |
 | `F17` | is `P03`'s `extension` ×8 a **self-adjoint** extension? | ⍀ **NO — NEGATIVE** r3479 — *all of it generalisation; and reading it caught an error in `H20`* |
 | `F16` | is `P08`'s matter functional linear? | ⛔ **BITE** r3478, **receipted** — ***affine***, *so the vacuum sector is a **coset** of the kernel* |
@@ -272,7 +273,7 @@ senses. **So the estimate below is made from CONTENTS.***
 | `P08` *slicing operator* | 45 | **MEDIUM — CONFIRMED, worked as `F16`** | *`F13` has already shown its vacuum kernel IS an operator null space of dimension one* |
 | `P03` *slicing curve* | 29 | ⍀ **NEGATIVE, read r3479** | *carries $L^2$ ×5 and `extension` ×8 — needs reading to tell self-adjoint from analytic* |
 | `P15` *cosmology* | 117 | **MEDIUM — vocabulary NEGATIVE, argument POSITIVE; worked as `F18`** | *`spectrum` is the power spectrum, but the acoustic oscillator and `unbounded` ×4 are this field's* |
-| `P11` *dynamics* | 23 | **MEDIUM** | *the TT oscillator, and `P10`'s boundedness argument reaches into it* |
+| `P11` *dynamics* | 23 | **MEDIUM — CONFIRMED, worked as `F19`** | *the TT oscillator, and `P10`'s boundedness argument reaches into it* |
 | `P01` *causality* | 32 | **MEDIUM** | *the thermal spectrum and the Bogoliubov bases — `H15` touched them from the other side* |
 | `P06` *geometric core* | 23 | **MEDIUM** | *`self-adjoint` ×1, and the ladder* |
 | `P09` *range* | 67 | **LOW–MEDIUM** | *`operator` ×36 and `kernel` ×30 are the **slicing** operator and the **vacuum** kernel* |
@@ -430,3 +431,33 @@ against the $z_{\rm onset}$ limit, and `P14`'s is established only through `F14`
 one receipt.***
 *(receipt `storyboard_receipts/FA_F18_one_boundedness_argument_three_sectors.py` — **added, runs, all
 asserts pass**)*
+
+---
+
+## ⛔⛭⛭ F19 — **`P11` IS `F18`'s FOURTH INSTANCE, AND ITS $a^{-2}$ BELONGS TO $W$**
+
+*`P11` was estimated **MEDIUM** because `P10`'s boundedness argument should reach its TT oscillator.*
+⛔ ***`bounded below` occurs ×0 in `P11`, so it does not reach by name*** — *but `P11` makes the same
+kind of claim in its own words:* ***"the gauge-invariant perturbation $Q$ is bounded, decaying as
+$a^{-2}$. The propagating mode is thus a healthy massless de Sitter scalar, with no ghost, tachyon, or
+runaway."*** ⇒ **A fourth instance of `F18`'s form — and unreceipted on its decay half.**
+
+**⌘ WHAT THE CORPUS'S OWN RECEIPT COVERS.** *`P11_mukhanov.py` runs and passes: it establishes the
+**equation** $W''+(k^2-2/\eta^2)W=0$ with $W=a\,\delta\psi$, and that the physical effective mass is
+**exactly zero** (the $6H^2\to4H^2$ shift a gauge artefact).* ***It does not touch the decay
+sentence.***
+
+**⛔ AND THE DECAY, in the corpus's own convention $Q=W/a$ with $a=-1/(H\eta)$:**
+
+| branch | $W$ | $Q=W/a$ |
+|---|---|---|
+| A | $\eta^2\;\Rightarrow\;a^{-2}$ **← the $a^{-2}$** | $\eta^3\;\Rightarrow\;a^{-3}$ |
+| B | $1/\eta\;\Rightarrow\;a^{+1}$ | **const $\Rightarrow a^{0}$** — the frozen tensor mode |
+
+⇒ ***Neither branch of $Q$ decays as $a^{-2}$. $W$'s decaying branch does.***
+
+**⍀ AND THE PHYSICS IS UNAFFECTED.** *$Q$ **is** bounded — it tends to a constant, the standard frozen
+super-horizon tensor mode — so `P11`'s conclusion (bounded, no ghost, no tachyon, no runaway) **stands
+entire**.* ***What is misattributed is which variable carries the $a^{-2}$*** — *in a sentence whose
+receipt covers the equation and the mass but not the decay, which is why it survived.*
+*(receipt `storyboard_receipts/FA_F19_which_variable_decays.py` — **added, runs, all asserts pass**)*
