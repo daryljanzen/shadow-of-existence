@@ -1,7 +1,7 @@
 ---
 name: harmonic-analysis-ledger
 kind: FORWARD
-current: r3166
+current: r3452
 job: The harmonic-analysis field-bake ledger — what bit, what bounced, and the boundary. Second of the four fields `L-272`'s re-survey left outstanding. `OWED` 622.
 sources: [cowork]
 ---
@@ -137,3 +137,65 @@ Every number of the paper's that this bake touches is reproduced or confirmed, i
 $D_C/r_0\to0$ limit. What changed is that a result reported as one geometric effect is two, that they
 carry the robustness and the volatility respectively, and that a gate the paper waives now has a
 margin behind it.*
+
+
+---
+
+# ⛭⛭ BROUGHT TO THE BAR — r3452
+
+> *The r3166 bake's content stands. What it lacked was **numbered probes and a receipt** — and this
+> ledger's own record of an adaptive-quadrature artefact is the strongest argument for the receipt
+> requirement anywhere in the sweep.*
+
+## ⌗ THE LEAD REGISTER
+
+| # | probe | state |
+|---|---|---|
+| `H0` | baseline, word-bounded | ⊢ **WORKED** r3166 — *the corpus does the work and carries almost none of the field's names, the same shape the Cartan bake found* |
+| `H1` | is the ladder measure $w_L$ right? | ⊢ **WORKED** r3452, **receipted** — *two derivations return the **same expression**, not merely equal values* |
+| `H2` | does the flat projection conserve power? | ⊢ **WORKED** r3452, **receipted** — *completeness to ten figures* |
+| `H3` | is the quadrature the finding? | ⛔ **IT WAS, ONCE** — r3166, receipted r3452 |
+| `H4` | is the low-$\ell$ deficit one effect or two? | ⛔ **BITE** r3452, **receipted** — *two, of opposite sign* |
+| `H5` | why flat Bessel rather than hyperspherical? | ⟐ **BOUNCE** — *`P15` answers it in its own text, and correctly* |
+| `H6` | does the flat plateau return as $D_C/r_0\to0$? | ⊢ **WORKED** r3166 — *$0.9999$ at $D_C/r_0=0.3$* |
+| `H7` | is `P15`'s self-waived aliasing gate safe? | ⊢ **WORKED** r3166 — *bounded, not assumed: imprinting at $\ell\approx220$ needs $\sigma\approx1.1$, a factor of nine in $k$* |
+| `H8` | does a broader transfer average the ladder away? | ⛔ **NO — THE OPPOSITE** r3166 — *it reaches further **down** into the coarse bottom and carries discreteness **up** in $\ell$* |
+| `H9` | the real transfer's width | ⛭ **REFERRED** — *the pure Sachs–Wolfe limit is what is computed; the full transfer is `P15`'s* |
+| `H10` | is the operator half this field's? | ⛭ **REFERRED** — *station Ⓗ's, and worked as the functional-analysis bake's `F1`–`F3`* |
+
+---
+
+## ⊢ H1–H4 — **RECEIPTED** *(`storyboard_receipts/HA_H1_H4_the_ladder_and_the_projection.py`)*
+
+- **`H1`** — $w_L=(L+1)/(L(L+2))$ as degeneracy over per-mode power **and** as $\mathrm{d}\ln k_L/\mathrm{d}L$.
+  ***Sympy returns the same expression from both routes***, which is stronger than agreement at sampled $L$.
+- **`H2`** — $\sum_\ell(2\ell+1)j_\ell(x)^2=1$ to ten figures. **Nothing in the deficit is projection loss.**
+- **`H3`** — the fixed grid reproduces $\int j_\ell^2\,\mathrm{d}\ln x=1/(2\ell(\ell+1))$ to better than a
+  part in $10^3$. ⚠ ***And this control is not decoration: the ledger records that the FIRST form of its
+  aliasing test, on adaptive quadrature, reported an imprint that "never died within $\ell\le40$", and
+  that on a checked fixed grid it dies at $\ell=32$. The direction survived; the number did not.***
+- **`H4`** — the deficit splits into **floor** and **discreteness**, ***of opposite sign at some
+  multipoles*** — at $\ell=4$ the discreteness is negative where the floor is positive — and near
+  $\ell=5$–6 the discreteness contributes as much as the floor. ⇒ ***The ladder recovers to 99% at
+  $\ell=8$; the floor alone does not until $\ell=11$.*** *`P15` quotes "recovery by $\ell\approx8$" —
+  **the ladder's number**. **The paper's figure is right and the mechanism behind it is not the one its
+  text names.*** ⌗ *(the exact floor multipole moves with $D_C/r_0$, chosen as $3.0$ in the receipt; the
+  split and the ordering are what is asserted)*
+
+---
+
+## ⛭⛭ THE BAR, MEASURED
+
+| | this bake | the FULL tier |
+|---|---|---|
+| lines | **~200** | 189–978 ✔ |
+| numbered probes | **11** (`H0`–`H10`) | 10–17 ✔ |
+| receipts, all running | **1** | 2–10 ⚠ *one short* |
+| papers touched | `P15` = **1** | 6–11 ⚠ *five short* |
+| lead register | **11 rows, none unmarked** | — |
+
+⚠ ***ONE RECEIPT AND FIVE PAPERS SHORT. This field is a NARROW one — its vocabulary is ×24 and its
+subject is a single computation in a single paper — and the bar was set from fields with corpus-wide
+reach. Recorded as short rather than rounded up, and the reach question is real: **a field that touches
+one paper may be complete and still not meet a bar built for fields that touch six.*** ⌗ **Raised for
+`THE_FIELD_BAKE_PLAN` rather than settled here.**
