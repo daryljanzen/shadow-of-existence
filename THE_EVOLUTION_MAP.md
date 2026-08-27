@@ -431,7 +431,7 @@ the theorem, the ontology, the Green–Wald quarantine, and the scope. Everythin
 **Available to a node at P4:** GR; the decomposition; the floor and its downward-biased derivation; the
 telescoping distinction; the measured foliation; the lapse/shift reading; thm:augmentation. **Not yet:**
 the substrate as built geometry (P3 is prior in arc order but P4 uses none of it), the reassignment/NBC
-(P7), the radiation-free rate (P15). **P4 is deliberately self-contained.**
+(P7), the geometric rate (P15). **P4 is deliberately self-contained.**
 **Guard:** the floor constrains the **rate**, not the content — never read P4 as denying inhomogeneity.
 The effect is **not Sachs–Wolfe**: telescoping vs accumulating is the whole distinction. Statistical
 homogeneity does **not** account for the isotropy. And do not concede the relational default: **synchrony
@@ -1070,7 +1070,7 @@ sweep across all preambles found **only that one stale site**. P6 10pp, 0 undefi
 
 **What it adds to the running total:**
 1. **The proper frame IS flat-ΛCDM, derived** — the E=1 congruence integrates to sinh^{2/3}, amplitude and rate both Λ-set; the seam is the scale factor's **branch point** (P3's lap at the observational rung).
-2. **The tensions dissolve as consequences of the radiation-free rate** — no second H₀; the acoustic scale a one-parameter accommodation (ρ_r/ρ_m≈2), θ*=r_s/D_M **H₀-independent**. The load-bearing falsifiable claim: **radiation carries no term in the rate.**
+2. **The tensions dissolve as consequences of the geometric rate** — no second H₀; the acoustic scale a one-parameter accommodation (ρ_r/ρ_m≈2), θ*=r_s/D_M **H₀-independent**. The load-bearing falsifiable claim: **radiation carries no term in the rate.**
 3. **THE FACTORIZATION** — substrate *determines structure*, progenitor *supplies content*, one boundary supplier: the organizing thesis of the perturbation sector.
 4. **THE TRANSMISSION DICHOTOMY (the decisive proof)** — the degenerate (κ=0) Nariai seam is scale-free and transmits the progenitor tilt; the non-degenerate horizon would imprint n_s→1. **CR has no inflationary scale-invariant attractor, no consistency relation, no substrate B-modes.**
 5. **THE PARAMETER-FREE LOW-ℓ FALSIFICATION EDGE** — flat distances + closed-S³ source through the flat j_ℓ(k_L D_C) → ℓ₂≈7.8, quadrupole ~0.2 ΛCDM; **lands the quadrupole, over-predicts ℓ=3–4**, the octopole the exposed edge (cosmic-variance-limited).
@@ -1126,7 +1126,7 @@ since. These are the three the live front runs through, so their absence cost so
    THIS STATION.** *With the envelope derived rather than assumed, **every microphysical constant sits outside the
    integral**: $1/k_D^2\propto\int\mathrm{d}a\,g(R)/(Hx_e)$, so **in the ratio the Thomson physics and the ionisation
    history cancel identically and the whole difference is carried by $H(a)$**.* ⇒ *On the inherited datum the
-   radiation-free rate gives a diffusion length **$10.8\%$ longer**; the sound horizon — **taken from the branch
+   geometric rate gives a diffusion length **$10.8\%$ longer**; the sound horizon — **taken from the branch
    point, because there is no observable expansion below it** — returns $r_s=146.4$ Mpc against $145.4$, within
    $0.7\%$; and $\ell_*=\pi D_M/r_s=302.2$ against the measured ${\sim}301$.*
    ⌗ **The high-$\ell$ consequence follows with no free parameter:**
@@ -1157,7 +1157,7 @@ the measure — not a coverage ratio, which flagged the right paper for the wron
 
 **Available to a node at P15:** the completed, data-confronted cosmology — the derivation, the dissolved tensions, the coherence/heights/amplitude/throat/transmission structure, and the low-ℓ edge. **Not yet:** the cosmogenesis synthesis and the light-element abundances *produced* (P16).
 
-**Guard:** the observable rate is radiation-free sinh^{2/3} read leftward; the low-ℓ deficit is the falsification edge (throat-tower ℓ ≠ CMB multipole); the heights match by time-reversal *structure*, the digit-level solve open. **Coherence, not correspondence** — the octopole and the radiation-free rate are the data's to judge.
+**Guard:** the observable rate is geometric sinh^{2/3} read leftward; the low-ℓ deficit is the falsification edge (throat-tower ℓ ≠ CMB multipole); the heights match by time-reversal *structure*, the digit-level solve open. **Coherence, not correspondence** — the octopole and the geometric rate are the data's to judge.
 
 ---
 
@@ -1165,7 +1165,7 @@ the measure — not a coverage ratio, which flagged the right paper for the wron
 
 **Standing above the line:** GR + P1–P15 — the whole corpus. Inbound is the broadest in the pass: P15 ×5 (the cosmology it quantifies), **P8 ×4** (`JanzenOperator`/`JanzenSlicing` — the leaf-carried, lapse-independent density the rate-handoff *rests on*, exactly the loop flagged at P8's `prop:lapse` entry above), P10 ×2, P7 ×2, P1 ×2, then a single citation to nearly every remaining paper (P2, P3, P4, P5, P9, P11, P12, P13, P14, and the groupoid note). **Inbound clean — every support grounded at its point of use; the synthesis paper cites its whole spine.**
 
-**A P14-pattern touch, not the P15 restraint.** Unlike P15 (fullest-abstract, home-stamp-only), P16 is — with P14 — the **least-worked** paper, and the referee's-first-objection test fired **once**: the abstract asserted the rate-reassignment without naming that the window rate and the observable rate are *distinct rate-objects*, leaving the paper open to the "you smuggled a seam-decoupling mechanism" charge. **One front-matter upgrade made:** the "distinct rate-objects" clause added after "from a dissociated hot start" — the window rate the infalling congruence's own leaf-level expansion scalar (radiation *in*), the observable rate the new foliation's radiation-free stacking law — closing with *it is the scoping the reassignment itself is, not an assumption* (Sec~\ref{sec:scoping}). Everything else on the masthead already load-bearing; no further upgrade warranted.
+**A P14-pattern touch, not the P15 restraint.** Unlike P15 (fullest-abstract, home-stamp-only), P16 is — with P14 — the **least-worked** paper, and the referee's-first-objection test fired **once**: the abstract asserted the rate-reassignment without naming that the window rate and the observable rate are *distinct rate-objects*, leaving the paper open to the "you smuggled a seam-decoupling mechanism" charge. **One front-matter upgrade made:** the "distinct rate-objects" clause added after "from a dissociated hot start" — the window rate the infalling congruence's own leaf-level expansion scalar (radiation *in*), the observable rate the new foliation's geometric stacking law — closing with *it is the scoping the reassignment itself is, not an assumption* (Sec~\ref{sec:scoping}). Everything else on the masthead already load-bearing; no further upgrade warranted.
 
 **What it adds to the running total:**
 1. **THE SYNTHESIS SPINE (8 links) — the Big Bang as a *forced* event, not a posited one.** Fossil→lap→rate→scoping→time-reversal→peak→network: each link geometry-forced from the prior, the chain *is* the hot start. The Big Bang is the substrate's forced synthesis, not an inherited initial condition — **synthesis, not inheritance.**

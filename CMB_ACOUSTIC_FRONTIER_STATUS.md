@@ -3,7 +3,7 @@
 > live claim — that the acoustic scale is **UNCOMPUTED**, "an unperformed calculation," with "the real
 > work" being the rigorous early-universe sound horizon — is **no longer true.** That calculation was
 > performed and the matter **RESOLVED** over r497–r500 (P9 `CR_flatLCDM_v2` §687–691):
-> the Hubble tension dissolves as a consequence of the radiation-free rate; the acoustic scale is met at
+> the Hubble tension dissolves as a consequence of the geometric rate; the acoustic scale is met at
 > the directly measured H₀ by **one measured early-universe parameter** — the radiation amplitude
 > ρ_r/ρ_m ≈ 2, the structural analogue of η, a matter-content initial condition (P7 forces the *rate*,
 > not the matter), reasonable at O(1) from collapse energetics. **It is not uncomputed and not a tension.**
@@ -54,7 +54,7 @@ the reassignment — that is Janzen 2015, peer-reviewed, and stands.)
 The acoustic scale is θ\* = r_s / D_M. Honest state:
 - **D_M is the flat-ΛCDM observable, robust.** P7 §550/§696 (the observational content perceived by
   fundamental observers coincides with standard FLRW); and the comoving distance is low-z dominated, so
-  it does not depend on the early-universe details (the radiation-free and standard distance integrands
+  it does not depend on the early-universe details (the geometric and standard distance integrands
   agree to 0.5%). This part is settled.
 - **r_s — and therefore θ\* — are UNCOMPUTED.** P7 §679: the rigorous r_s requires "modelling
   sound-horizon evolution within the 3-sphere ontology and projecting it into the observational frame,"
@@ -76,7 +76,7 @@ The acoustic scale is θ\* = r_s / D_M. Honest state:
 ## What NOT to re-inherit
 - The blueshift / low-z D_M "exclusion" was a wrong-congruence computational error (crux 1), dead.
 - θ\*≈1.76–1.81 is the **wrong calculation** — standard photon–baryon plasma + sound-travel-to-z→∞
-  grafted onto a radiation-free expansion rate, importing the standard early-universe structure CR
+  grafted onto a geometric expansion rate, importing the standard early-universe structure CR
   does not have (P7 §679). It is **not** a CR result. If a summary reports it as a tension, an
   exclusion, OR a debunked strawman, all three are wrong: the CR acoustic scale is **uncomputed**.
   There is no number to weigh. The honest near-term state: crux 1 verified (flat-ΛCDM, D_M robust);

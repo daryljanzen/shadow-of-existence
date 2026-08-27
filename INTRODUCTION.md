@@ -232,7 +232,7 @@ continuation that carries the curve through it.
 
 **⑨ `P7`, then `P15` and `P16` — the framework, and what it predicts.**
 P7 is the necessary-and-sufficient augmentation and the pole everything feeds. Then the cosmology, and here the
-arc's tone changes from structure to consequence: **a radiation-free expansion rate**, the Hubble tension
+arc's tone changes from structure to consequence: **a geometric expansion rate**, the Hubble tension
 resolved **across the low-redshift distance ladder and not by the acoustic angle alone**, and light-element
 abundances reproduced from a collapse excursion — deuterium at $D/H\simeq2.5\times10^{-5}$, $Y_p\simeq0.25$.
 
@@ -349,7 +349,7 @@ r2376+c54.113 and the *irreducible interior reassignments* at c54.118.
 
 **What would decide it.** Two things are held out to the world rather than argued: **no event horizon completes
 at finite exterior time** — structural, resting on causal structure alone, and where the programme's whole
-weight sits; and **the radiation-free expansion rate**, the nearest-term discriminator on expansion-history
+weight sits; and **the geometric expansion rate**, the nearest-term discriminator on expansion-history
 data.
 
 **And one thing that must always remain a conjecture:** that the framework the corpus has uncovered is the

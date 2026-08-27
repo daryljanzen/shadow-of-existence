@@ -12,7 +12,7 @@ The deep dig. Read all abstracts fresh (done r885); P16 spine confirmed grounded
 
 ## The forcing chain (P16 spine ↔ home papers) — the map the reciprocity wires
 - foliation measured → P4 ; augmentation nec.&suff. → P7 ; collapse-becomes-universe → P7 central thm + P1/P2 (r=0 on no finite layer)
-- Nariai causal reassignment → P5 (horizon-null↔cosmic-time) + P8 + P13 (signature-preserving) ; radiation-free rate → P15
+- Nariai causal reassignment → P5 (horizon-null↔cosmic-time) + P8 + P13 (signature-preserving) ; geometric rate → P15
 - matter inherited (corollary) → P8 (reassignment on time-stacking, not leaf) + P14 ; discrete matter crosses → P14 ; peaks=ΛCDM → P15
 - NOTE: P11 already names "cosmogenesis at the branch point $r=0$ (r2234: NOT a finite-curvature locus)" — forward-pointer already in the corpus.
 

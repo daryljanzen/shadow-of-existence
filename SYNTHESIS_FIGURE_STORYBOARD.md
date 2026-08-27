@@ -1430,7 +1430,7 @@ now false:** `r(−τ̃) = −r(τ̃)` held only for the old odd form. The rebui
 >
 > ⟶ KEEP: Inward (collapse) the leaf's local rate governs and radiation gravitates, the cooling leg
 > running standard big-bang nucleosynthesis; outward (expansion) the foliation stacking rate governs,
-> radiation-free; the $S^3$ layers (grey) pile onto the seam, depositing $\rho_r/\rho_m\approx2$ (the
+> set by the geometry; the $S^3$ layers (grey) pile onto the seam, depositing $\rho_r/\rho_m\approx2$ (the
 > acoustic scale) and $\eta$ (composition).
 
 **Note on this seam.** The old caption's "cross at the branch point" and the panel's own "seam" callout both

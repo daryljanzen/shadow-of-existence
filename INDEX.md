@@ -34,7 +34,7 @@ reading the compound form until r2550.***
 >
 > **⚑ AND ITS MECHANISM IS DERIVED, NOT DESCRIBED.** *The potential enters the plasma twice. **In flat
 > $\Lambda$CDM the two couplings are each flat in $k$ and OPPOSE — so the standard driving shift's universality
-> is a cancellation.** On a radiation-free rate they both advance and **add**, and the $k$-dependence sits in the
+> is a cancellation.** On a geometrically fixed rate they both advance and **add**, and the $k$-dependence sits in the
 > gradient channel: $Q=3\kappa c_s\mathcal{H}/\pi k$, predicted to $0.30\%$.* ⌗ ***The abandoned 52/53 fork's
 > timescale $3\mathcal{H}/k^2$ is confirmed here independently and its exponent corrected by exactly one factor
 > of $k$*** — *the factor $Q$'s own definition carries.*

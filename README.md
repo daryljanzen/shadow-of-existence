@@ -285,7 +285,7 @@ masthead concedes Sbierski before you can raise him.
 ## Guards for the read
 
 - **⚠ The Hubble/acoustic-scale matter is RESOLVED and banked.** The tension dissolves as a consequence of the
-  radiation-free rate; **ρ_r/ρ_m ≈ 2 is a measured datum**, η's analogue. **Do not reopen or "compute" it.**
+  geometric rate; **ρ_r/ρ_m ≈ 2 is a measured datum**, η's analogue. **Do not reopen or "compute" it.**
 - **α is never sent to a limit.** α → ∞ would dismantle the throat the construction lives on. **Schwarzschild is
   a *reading*, not a limit.**
 - **`X` versus `r`.** The throat's *size* is **X = α** (an embedding quantity). **`r` is the signed areal
