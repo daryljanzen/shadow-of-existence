@@ -517,3 +517,41 @@ not undriven:* `PHASE7_BUILD_LEDGER` `A.139`'s *measured `−0.362` against `ΛC
 leg-phase analysis, where the `k`-dependent offset compresses the comb*; *and the corrected sign here.*
 ⇒ ***So `cc54`'s `qscan`, which returns `Q` rising toward the free-oscillator value, is the outlier of
 the four*** *— and that is what the relayed `STACKPERT` test is for.*
+
+
+---
+
+## ⌗ THE WITHDRAWAL STANDS, ITS STATED REASON DOES NOT (r3426)
+
+`THE_WISDOM_LEDGER` carries three entries on this exact question, all measured before the leaf-rate
+correction and none revisited since. **The third corrects me.**
+
+**⌗ `A.46` (r1981) — the corpus's settled reading is TRANSMISSION, not reset.** *"a single phase per
+mode" means the phase is DETERMINED, not UNIFORM;* ***"what destroys a comb is randomness, not
+`k`-dependence"***, *and `prop:subhorizon` gives the substrate's role as* **"transmit and gate rather
+than generate."** ⇒ *And it names the error I repeated:* ***"SO I BUILT THE RESET IN BY HAND. I set all
+velocities to zero at the seam — imposing a common phase across every `k`. That is why my CR first peak
+sat at `ℓ_A`: not a prediction of the construction, an artefact of my initial data."***
+
+**⌗ r2063 — and observation was read the other way**, *the transmitted leg phase giving `0.554` against
+the sky's `2.212` where a reset reproduces it to twelve per cent. The ledger names the pair as* ***"in
+direct opposition."***
+
+**⌗ `CRRUN5` (r1982) — AND THIS IS THE ONE THAT CORRECTS MY WITHDRAWAL.** *`TC9`'s integrator with
+`PK4`'s seam data — leg state, `k`-dependent phase carried, `Φ` from the full constraint — returns a
+spectrum* ***identical to the run that imposed a common phase and zero velocities.*** ⇒ ***"Two
+materially different prescriptions, one spectrum: the output is not sensitive to the seam data, and the
+fault is downstream of them."***
+
+⛔ **SO r3424's WITHDRAWAL STANDS AND ITS STATED REASON DOES NOT.** *I withdrew `Q(k)` on the ground
+that it is strongly IC-dependent. At the level that matters — the SPECTRUM — the corpus has measured
+the opposite, and the IC-sensitivity I found was at the SOURCE level and is at least partly the
+detector artefact of r3425 rather than physics.* ⇒ ***The withdrawal is correct for the two reasons
+that survive: the sign I used was wrong on both routes, and my measure fails at the right sign. It is
+not correct because the answer depends on the initial datum.***
+
+**⌗ AND WHAT THAT REDIRECTS.** *If the fault is downstream of the seam data, then the initial-condition
+question I took at r3425 is not where the acoustic sector's problem lives, and neither is the phase
+reading I tried to build on it.* ***The three entries predate the leaf-rate correction, so whether
+"downstream" still holds after it is unmeasured*** *— and that is a single re-run of `CRRUN5`'s
+comparison on the current default.*
