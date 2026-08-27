@@ -451,3 +451,38 @@ the uniform comb; skipping it gives 58's rising curve.  *That is exactly the tra
 choosing the velocity zero-crossing over the temperature extremum; it just also bites the velocity
 crossing on a mode already deep sub-horizon at onset.*  The comb (uniform) and the Q(k) (undriven,
 rising to 1) now agree, and both confirm the mechanism the r3410 papers state.
+
+---
+
+## ⌗ (19) WITHDRAWN r3424 — the Q(k) second observable was an initial condition I chose
+
+**The claim**, written into `P15` and `P07` at r3412: that `Q(k)`, the accumulated sound phase at first
+turnover, runs to its free-oscillator value from above on this rate while a background carrying a
+radiation era holds it flat and below — a second, normalisation-independent observable.
+
+⛔ **It reverses with the sign of the one datum the construction does not fix.** The frozen effective
+temperature `T-hat` the modes carry at onset is undetermined, and `Q` depends on it strongly at low `k`:
+
+| `T-hat` | k=5 | k=10 | k=20 | k=40 | k=160 |
+|---|---|---|---|---|---|
+| **−0.500** *(what the receipt used)* | 1.2763 | 1.1661 | 1.0828 | 1.0374 | 1.0076 |
+| **+0.488** *(the ADIABATIC value, +Φ/2)* | 0.2416 | 0.0997 | 0.0470 | 1.0556 | 1.0122 |
+
+*For `T-hat ≤ 0` the phase runs to 1 from above; for `T-hat > 0` it collapses at low `k`.* ***The
+"rising toward 1" shape is the sign, not the physics*** *— and `−0.5` was chosen, never checked against
+the adiabatic relation `δ_γ = −2Φ` which gives `T-hat = +Φ/2`.*
+
+**⌗ HOW IT WAS FOUND, because the route is the point.** *The comprehensive comb (`589`) swept for a
+RETIRED TERM and surfaced `PHASE7_BUILD_LEDGER` using it in live physics prose — whose measurement
+`A.139` states the opposite:* ***"CR's shift is LARGER, by a factor of four"***, *and which records that
+its own earlier mechanism* ***"had the sign backwards."*** ⇒ **A terminology sweep found a physics
+contradiction, and the contradiction was mine.**
+
+**⌗ WHAT IS UNAFFECTED, and it is most of it.** *The comb result — that this comb's spacings do not
+alternate where the sky's do — is an **instrument** measurement and depends on none of this. So are the
+crossing-during-plasma mechanism, the `z_onset` calibration curve, the first-gap fix, and the loading
+exclusion.* **What falls is only the claim that the mechanism can be read directly in the phase.**
+
+**⌗ AND THE MACHINERY THAT STANDS.** *The undriven calibration gates at `1.0000` on both arms; the
+potential is closed by the energy constraint and not evolved; the turnover is the photon velocity's
+reversal. Those three were right, cost wrong answers before they were right, and are kept.*

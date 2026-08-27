@@ -162,8 +162,16 @@ def stale_registers():
 
 
 # ---------------------------------------------------------------- (3) named by absence
-ABSENCE = [r'radiation-free', r'\bmatter-free\b', r'\bmassless (?:rate|member|limit)\b',
-           r'\bcharge-free\b', r'\bsource-free (?:rate|law)\b', r'\bvacuum-free\b']
+# ** NARROWED r3423, and the distinction is the criterion's whole content: NAMING BY A PARAMETER
+# VALUE IS FINE; NAMING BY A MISSING CONSTITUENT IS THE DEFECT.  "Massless member" names a member
+# of a parameter family by its parameter value -- M=0 is a VALUE, and P03 even denies the
+# massless-limit reading, which is careful prose.  "Charge-free Clifford identity" is an identity
+# that does not involve charge.  Neither presupposes the thing is built from components.
+# "Radiation-free rate" did: the rate is fixed by alpha and x_0 and is not built from components
+# at all, so naming it by a missing one invited LambdaCDM-minus-a-term.  The wider list returned
+# ten hits and all ten were legitimate; it is narrowed to the shape that is actually wrong. **
+ABSENCE = [r'radiation-free', r'\bmatter-free (?:rate|law|expansion)\b',
+           r'\bsource-free (?:rate|law)\b', r'\bvacuum-free\b']
 
 
 def named_by_absence():

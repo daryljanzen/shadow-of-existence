@@ -1,37 +1,37 @@
 #!/usr/bin/env python3
-"""RECEIPT — P15: ** THE DRIVING SHIFT IS BOUGHT BY POTENTIAL DECAY OCCURRING WHILE A MODE
-OSCILLATES, SO A MODE WHOSE OSCILLATION BEGINS AFTER THE POTENTIAL HAS SETTLED INHERITS THE
-UNDRIVEN PHASE.  A UNIFORM COMB IS AN UNDRIVEN COMB. **
+"""RECEIPT — P15: ** WITHDRAWN r3424.  THE SHAPE THIS RECEIPT REPORTED IS AN ARTEFACT OF AN INITIAL
+CONDITION I CHOSE RATHER THAN DERIVED, AND IT REVERSES WITH THAT DATUM'S SIGN. **
 
-LEVEL: L2 -- the perturbations are a process running IN the content and take the leaf's rate
-  (P15 sec:properframe, P7's rate-rule remark).  The background here is the ordinary
-  matter-and-radiation Friedmann readout with radiation gravitating normally, which is correct
-  for this sector and is not an import.
+WHAT WAS CLAIMED: that Q(k), the accumulated sound phase at first turnover, runs to its
+  free-oscillator value from above on this rate while a background carrying a radiation era holds
+  it flat and below -- offered as a second, normalisation-independent observable and written into
+  P15 and P07 at r3412.
 
-WHAT IS DERIVED, AND WHAT IS NOT.  The SHAPE is derived: Q(k) -> 1 from above with increasing k
-  on a background whose plasma begins after the potential has settled, where a background
-  carrying a radiation era holds Q flat and below unity.  The MAGNITUDE is NOT: this solve omits
-  neutrino free-streaming -- forty per cent of the radiation, which does not oscillate -- and its
-  absolute values sit about fifteen per cent below the instrumented ones.  The offset's
-  DIRECTION is the check that it is the omission and not an error: free-streaming REDUCES the
-  driving, so including it must RAISE Q, and ACOUSTIC_two_arm's qscan (with neutrinos) sits ABOVE
-  this solve at every k.  Shape claimed, magnitude not.
+WHAT IS TRUE: the frozen effective temperature the modes carry at onset, T-hat, is NOT determined
+  by the construction, and Q depends on it strongly at low k.  Measured:
 
-TWO SPECIFICATIONS THAT COST WRONG ANSWERS BEFORE THEY WERE RIGHT, recorded because the next
-  attempt will make the same two:
+      T-hat     k=5     k=10    k=20    k=40    k=160
+      -0.500  1.2763  1.1661  1.0828  1.0374  1.0076   <- what this receipt used
+      +0.488  0.2416  0.0997  0.0470  1.0556  1.0122   <- the ADIABATIC value, +Phi/2
 
-  (1) THE POTENTIAL IS FIXED BY THE ENERGY CONSTRAINT, NOT EVOLVED.  Writing a second-order
-      equation for Phi and integrating it diverges -- Phi ran to 3e2 by equality and 9e4 by y=10
-      in the first attempt.  The G^0_0 constraint gives Phi' algebraically from the densities,
-      which is what ACOUSTIC_two_arm does and what this does.
+  For T-hat <= 0 the phase runs to 1 from above; for T-hat > 0 it collapses at low k.  The
+  "rising toward 1" shape is the sign, not the physics.
 
-  (2) THE ACOUSTIC TURNOVER IS THE REVERSAL OF THE PHOTON VELOCITY, NOT AN EXTREMUM OF THE
-      EFFECTIVE TEMPERATURE.  Under an initial condition with the velocities zero but Phi still
-      evolving, T' = 2 Phi' != 0 at the start, so |T| reaches an extremum immediately and an
-      extremum-finder reads the transient rather than the oscillation.  ACOUSTIC_two_arm's qscan
-      had already hit and fixed this independently (its note on dropping Theta_0+Psi).
+HOW IT WAS FOUND, since the route matters: the comprehensive comb (589) swept for a RETIRED TERM
+  and surfaced PHASE7_BUILD_LEDGER using it in live physics prose -- whose measurement A.139 says
+  the opposite of this receipt, "CR's shift is LARGER, by a factor of four", and records that its
+  own earlier mechanism "had the sign backwards".  A terminology sweep found a physics
+  contradiction, and the contradiction was mine.
 
-VERDICTS ARE ASSERTS, and each was written after its output was read.
+WHAT SURVIVES AND IS UNAFFECTED: the comb result itself -- that this comb's spacings do not
+  alternate where the sky's do -- is an INSTRUMENT measurement and does not depend on any of this.
+  So is the crossing-during-plasma mechanism and its calibration curve.  What falls is only the
+  claim that the mechanism can be read directly in the phase.
+
+THE PART OF THE MACHINERY THAT STANDS: the undriven calibration gates at 1.0000 on both arms, the
+  potential is closed by the energy constraint and not evolved, and the turnover is the photon
+  velocity's reversal.  Those three were right and are kept.  The IC was never checked against the
+  adiabatic relation delta_gamma = -2 Phi, which gives T-hat = +Phi/2, and that is the whole error.
 """
 import numpy as np
 from scipy.integrate import solve_ivp, trapezoid
