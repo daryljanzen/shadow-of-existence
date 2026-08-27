@@ -527,10 +527,18 @@ def qscan():
             # (Q = 1.000) is what exposed it. **  For the CR arm the modes are already sub-horizon
             # at the onset, so this cut removes nothing there and the two arms stay like-for-like.
             turn = [t for t in turn if KS[i] * ee[t + 1] > 1.0]
-            if not turn:
+            # ** QMIN skips a frozen-IC DRIVING TRANSIENT: on the CR arm the driven mode's first
+            # velocity zero-crossing sits at Q ~ 0.08 (the potential's initial kick to a mode already
+            # deep sub-horizon), and the real acoustic turnover is the next crossing at Q ~ 1.2, with
+            # subsequent crossings spaced ~1 half-period (the undriven period).  Requiring Q > QMIN
+            # takes the acoustic turnover, not the transient.  Default 0 = unchanged; the undriven
+            # column (no transient) is unaffected at any QMIN < 1. **
+            _qmin = float(os.environ.get('QMIN', '0'))
+            _cand = [(t, KS[i] * sound_phase(ETA_S, ee[t + 1]) / np.pi) for t in turn]
+            _cand = [(t, qv) for t, qv in _cand if qv > _qmin]
+            if not _cand:
                 q.append(np.nan); continue
-            e_ext = ee[turn[0] + 1]
-            q.append(KS[i] * sound_phase(ETA_S, e_ext) / np.pi)
+            q.append(_cand[0][1])
         res[tag] = np.array(q)
     hdr = ('k [1/Mpc]', 'undriven', 'continuity', 'Euler only', 'driven')
     print(f"  {hdr[0]:>11} {hdr[1]:>11} {hdr[2]:>12} {hdr[3]:>12} {hdr[4]:>10}")
