@@ -1,7 +1,7 @@
 ---
 name: cartan-holonomy-ledger
 kind: FORWARD
-current: r3164
+current: r3445
 job: The Cartan / connections-and-holonomy field-bake ledger — what bit, what bounced, and the boundary. First of the four fields `L-272`'s re-survey left outstanding. `OWED` 622.
 sources: [cowork]
 ---
@@ -146,3 +146,66 @@ Atiyah sequence, $N_{\rm eff}$, the baby universe, matched-procedure control, an
 identification. The order, the root image, the Klein four-group and the $S_4$ are all confirmed by
 independent computation. What changed is **where the surprise lives** — not in the cubic, which forces
 the group, but in the substrate, whose Weyl group matches it at rank three and nowhere else.*
+
+
+---
+
+# ⛭⛭ BROUGHT TO THE BAR — r3445
+
+> *The r3164 bake's content stands entire and is not restated. What it lacked against
+> `THE_FIELD_BAKE_PLAN` was **numbered probes and a receipt** — and this ledger's every conclusion
+> turns on one numerical computation that had none. **Closed, and the receipt caught two errors in
+> its own construction while being written.***
+
+## ⌗ THE LEAD REGISTER — *no new field while any row is unmarked*
+
+| # | probe | state |
+|---|---|---|
+| `C0` | baseline, word-bounded | ⊢ **WORKED** r3164 — *and it caught a false hole: `G-structure` ×1 was matching inside **breaking-structure**, the third substring artefact of that session, which is why `reach_baseline.py` now reports word-bounded counts* |
+| `C1` | are the two Nariai monodromies transpositions of **different** pairs? | ⊢ **WORKED** r3445, **receipted** |
+| `C2` | what group do they generate, and is the kernel `P05`'s Klein four-group? | ⊢ **WORKED** r3445, **receipted** |
+| `C3` | what does order 24 select among the Weyl groups? | ⊢ **WORKED** r3445, **receipted** |
+| `C4` | is the closure special to the horizon cubic? | ⛔ **BITE** — *generic to depressed cubics; receipted r3445* |
+| `C5` | does the deck $S_3$ generation add anything the corpus lacks? | ⟐ **BOUNCE** — `P05` `prop:monodromy` has it **with** the caveat a naive version misses |
+| `C6` | is `Ambrose–Singer` ×0 a load-bearing absence or a vocabulary gap? | ⛔ **LOAD-BEARING** — *it is the theorem that makes a **flat** connection have discrete holonomy, and the corpus asserts flat holonomy with exact selection rules and no curvature* |
+| `C7` | does the null-loop control distinguish a small group from a large one? | ⊢ **WORKED** r3445, **receipted** — *identity returned; one lasso alone gives order 4, not 24* |
+| `C8` | is the substrate's Weyl group forced to be the same group? | ⚑ **NO, AND THAT IS WHERE THE WEIGHT BELONGS** — *the cubic forces 24; the coincidence with $W(\so(6,\mathbb C))$ is not forced* |
+
+---
+
+## ⊢ C1–C4, C7 — **RECEIPTED**, and the receipt caught two errors while it was written
+
+*`storyboard_receipts/CH_C1_C3_the_holonomy_is_S4.py`, all asserts pass.*
+
+- **`C1`** — $\gamma_+$ and $\gamma_-$ come back as transpositions of **different** pairs, $\gamma_\infty$
+  as a 3-cycle, and a null loop as the identity. ***That "different pairs" is exactly the condition
+  `P05` `rem:monodromy-group` says a naive version misses***, and this is the computation that supplies it.
+- **`C2`** — order **24**, root image $S_3$, kernel of order 4 equal to
+  $\{(1,1,1),(1,-1,-1),(-1,1,-1),(-1,-1,1)\}$ — ***exactly `P05`'s Klein four-group, reached by
+  continuation rather than by unimodularity*** — and element-order profile $\{1{:}1,2{:}9,3{:}8,4{:}6\}$,
+  which is $S_4$'s and no other order-24 group's.
+- **`C3`** — among all classical Weyl groups of rank 2–6 and all five exceptionals, **only** $W(A_3)$
+  and $W(D_3)$ have order 24, and they coincide because $\so(6,\mathbb C)\cong\mathfrak{sl}(4,\mathbb C)$.
+- **`C4`** — every depressed cubic family tested returns **24**: $r^3-r+q$, $r^3-4r+q$, $r^3-7r+q$, and
+  ***$r^3+r+q$, whose branch points are off the real axis entirely*** — a stronger genericity statement
+  than the r3164 entry had.
+
+**⚠ TWO CONSTRUCTION ERRORS THE RECEIPT'S OWN ASSERTS CAUGHT, recorded because they would have passed
+unnoticed in prose.** *First, generalising $f'$ to $3r^2+p$ I dropped the $p$ — the group collapsed from
+24 to **6** and the profile to $\{1{:}1,2{:}3,3{:}2\}$. Second, the branch points of $r^3+pr+q$ sit at
+$q=\pm2(-p/3)^{3/2}$, which is **imaginary** for $p>0$; lassoing the real axis there enclosed nothing and
+returned $\lvert G\rvert=1$.* ⇒ ***A ledger that asserts a number in prose cannot catch either.***
+
+---
+
+## ⛭⛭ THE BAR, MEASURED
+
+| | this bake | the FULL tier's range |
+|---|---|---|
+| lines | **~215** | 189–978 ✔ |
+| numbered probes | **9** (`C0`–`C8`) | 10–17 ⚠ *one short* |
+| receipts, all running | **1** | 2–10 ⚠ *one short* |
+| papers touched | `P05`, `P07`, `P14`, `P03` = **4** | 6–11 ⚠ |
+| lead register | **9 rows, none unmarked** | — |
+
+⚠ ***THREE SHORT, AND NAMED RATHER THAN ROUNDED UP. This field is not yet at the bar.***
