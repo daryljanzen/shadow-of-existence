@@ -140,6 +140,7 @@ bouncing has still been worth throwing.*
 | `F9` | does `P07` overstate what `P10` establishes? | ⟐ **BOUNCE** — no; `P07` carries the closure *and* its openness |
 | `F10` | `Hilbert space` ×0, `inner product` ×0 — a hole? | ⟐ **NO** — the **weak** form of the corpus's anonymity: `P10` works on $L^2$ of the half-line throughout, so the objects are present under standard notation and only the phrases are missing |
 | `F11` | is the constraint algebra treated as an operator algebra? | ⟐ **BOUNCE** — it is `P12`'s subject **by title**, and the corpus's ×26 is largely its bibliography |
+| `F23` | are `P02` and `P05` empty for this field? | ⍀ **NEGATIVE, r3485** — *read, not counted; every candidate a homonym* |
 | `F22` | what is `P09`'s "size of the vacuum kernel"? | ⛔ **BITE** r3484, **receipted** — ***finite vs infinite dimension***, *and it joins `F16` and `H23`* |
 | `F21` | is `P06`'s "**lone**" extension freedom exact? | ⛔ **BITE** r3483, **receipted** — *it is a **von Neumann dimension count**, and it is exact* |
 | `F20` | what certifies `P01`'s "inequivalent vacua"? | ⛔ **BITE** r3482, **receipted** — ***Shale's criterion***, *never named, and the thermal case fails it at the **IR** end* |
@@ -280,8 +281,8 @@ senses. **So the estimate below is made from CONTENTS.***
 | `P01` *causality* | 32 | **MEDIUM — CONFIRMED, worked as `F20`** | *the thermal spectrum and the Bogoliubov bases — `H15` touched them from the other side* |
 | `P06` *geometric core* | 23 | **MEDIUM — CONFIRMED, worked as `F21`** | *`self-adjoint` ×1, and the ladder* |
 | `P09` *range* | 67 | **LOW–MEDIUM — vocabulary homonymic, ONE sentence exactly this field's; worked as `F22`** | *`operator` ×36 and `kernel` ×30 are the **slicing** operator and the **vacuum** kernel* |
-| `P02` *the circle* | 38 | **LOW** | *`extension` ×22 is **analytic** continuation, not self-adjoint extension* |
-| `P05` *groupoid* | 16 | **LOW** | *`domain` ×8 likely the geometric sense* |
+| `P02` *the circle* | 38 | ⍀ **NEGATIVE, read r3485** | *`extension` ×22 is **analytic** continuation, not self-adjoint extension* |
+| `P05` *groupoid* | 16 | ⍀ **NEGATIVE, read r3485** | *`domain` ×8 likely the geometric sense* |
 
 ⇒ ***Eleven papers unread on this field, and none may be dismissed on a count.***
 
@@ -563,3 +564,36 @@ with the dimensions named.*
 ⇒ ***Three statements, one structure, and no paper carries all three.***
 *(receipt `storyboard_receipts/FA_F22_the_size_of_the_vacuum_kernel.py` — **added, runs, all asserts
 pass**)*
+
+---
+
+## ⍀ F23 — **`P02` AND `P05` ARE NEGATIVE, READ RATHER THAN COUNTED**
+
+*Both were estimated **LOW** and both are confirmed negative by reading — recorded **by name**, so
+"not worked" stays distinguishable from "not looked at".*
+
+| | `P02` | `P05` |
+|---|---|---|
+| `self-adjoint`, `Hilbert`, $L^2$, `deficiency`, `spectrum of`, bounded/unbounded operator | **×0 each** | **×0 each** |
+| `extension` | ×22 — ***analytic*** extension; `continuation` ×60, `analytic` ×47, and it cites **Morse's lemma** | — |
+| `domain of` | ×1 — *"domain of $r$"*, a coordinate range | ×2 — *"fundamental **domain**"*, a group-theory term |
+| `unitary` | ×1 — *"its evolution unitary"*, a **physical** statement citing `P01`, already worked from the operator side as `F20`| ×0 |
+
+⇒ ***`P02`'s subject is analytic continuation and Morse-theoretic critical points — complex analysis
+and differential topology, not operator theory. `P05`'s is group generation. Neither carries this
+field's objects.***
+
+⌗ *Both were nonetheless **read**, because on the harmonic side exactly this class of "LOW" verdict
+turned into bites four times over (`P13`, `P05`, `p0`, `P09`). **Here it did not, and that is the
+result.***
+
+---
+
+## ⛭⛭⛭ EVERY PAPER NOW WORKED OR CHECKED-NEGATIVE BY NAME
+
+| worked | `P01` `F20` · `P04` · `P06` `F21` · `P07` · `P08` `F13`/`F16` · `P09` `F22` · `P10` · `P11` `F19` · `P12` · `P13` `F15` · `P14` `F14` · `P15` `F18` · `P16` · `p0` |
+|---|---|
+| **checked negative** | `P02`, `P03` `F17`, `P05` — all three read |
+
+⇒ ***Seventeen of seventeen, and the reach that stood at 6/10 on a wrong denominator at r3453 is
+now 14 worked and 3 read-negative on the true denominator of 17.***
