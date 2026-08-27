@@ -417,7 +417,7 @@ catch. `H15` stands as a finding; it was the wrong paper to close on.*
 | `P11` *dynamics* | ⛔ **WORKED as `H18`** r3463, **receipted** — *its "single mode" counts POLARISATIONS where `P10`'s tower counts harmonics* |
 | `P13` *boundary* | ⛔ **THE NEGATIVE WAS WRONG** — *worked as `H16` r3461, **receipted**. Kaluza–Klein reduction IS harmonic analysis, and the chirality obstruction is a Fourier argument* |
 | `P05` *groupoid* | ⍀ **READ r3462** — *its `completeness` is GENERATION-completeness, a different sense; and reading on from it found `H17`* |
-| `p0`, `P09` | ⛑ **OWED** — *one genuine term each (`orthogonalit`, `Laplacian`); marginal, and to be read rather than assumed* |
+| `p0`, `P09` | ✓ **BOTH WORKED** — `p0` as `H25`, `P09` as `H23`. *This row was written when they were called "marginal"; the label was withdrawn at r3464 and both turned out to carry real findings.* |
 
 ⇒ ***So the field is NOT done: `P11` is owed on the physics, `p0` and `P09` on the margin, and `P13`
 and `P05` are now checked-and-negative BY NAME rather than silently absent.***
@@ -807,3 +807,36 @@ field — never to "later".**
 
 ⇒ ***Seventeen of seventeen. Not one left unmentioned, and the two earlier grep-verdicts (`P13`,
 `P05`) were withdrawn and both turned into bites.***
+
+---
+
+## ⛭⛭⛭ THE BAR — **MEASURED r3473, not asserted**
+
+| | this bake | the FULL tier |
+|---|---|---|
+| lines | **809** | 189–978 ✔ |
+| numbered probes | **27** (`H0`–`H26`) | 10–17 ✔ *(above the range)* |
+| receipts, all running | **15 / 15 pass** | 2–10 ✔ *(above the range)* |
+| papers | **17 of 17**, each worked or checked-negative **by name** | 6–11 ✔ |
+| **reach** | **17/17 = 100%** | *previous best 40%* |
+| unmarked rows | **0** | — |
+
+⌗ **WHAT THE REACH COST, AND WHAT IT BOUGHT.** *This field was declared done twice and reopened twice.
+At r3459 it closed on the paper-count proxy with **one** paper read; at r3460 that was withdrawn when
+the sixth paper turned out to have been chosen to hit a number, its harmonic content a substring
+artefact. **Everything after that came from reading papers a word count had cleared:***
+
+| withdrawn verdict | what reading it found |
+|---|---|
+| `P13` "checked, negative" | ***the chirality obstruction is a Fourier argument*** — the index vanishes through the $S^1$ weight decomposition, and CR's $\mathbb Z_2$ escapes because a finite dual carries no Laurent series |
+| `P05` "checked, negative" | ***the two halves of colourlessness*** — the trivial Fourier summand on the deck is the necessary half, the $\epsilon$ antisymmetry the sufficient |
+| `p0` "marginal" | ***its criterion IS a projection criterion***, and every projection the corpus exhibits is harmonic |
+| `P09` "marginal" | ***matter is the OBSTRUCTION to integrating $\gamma$***, not a quantity beside it |
+
+⇒ ***Four withdrawn verdicts, four bites. The word count was wrong every time it was trusted.***
+
+⌘ **AND THE FIELD'S DEEPEST FINDING IS `H24`, WHICH EXPLAINS THE REST:** *the confocal family is
+**linear** in the equilateral case, so one surface passes through each point, so there is no
+triply-orthogonal system, so **no ellipsoidal harmonics** — and the same fact makes the family a
+**foliation**, which is why **every** harmonic computation in this corpus is **leafwise**. `H22`'s
+boundary (the symmetric space's analysis used twice against its algebra used ×260) is a corollary.*
