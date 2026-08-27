@@ -167,9 +167,11 @@ the group, but in the substrate, whose Weyl group matches it at rank three and n
 | `C3` | what does order 24 select among the Weyl groups? | ⊢ **WORKED** r3445, **receipted** |
 | `C4` | is the closure special to the horizon cubic? | ⛔ **BITE** — *generic to depressed cubics; receipted r3445* |
 | `C5` | does the deck $S_3$ generation add anything the corpus lacks? | ⟐ **BOUNCE** — `P05` `prop:monodromy` has it **with** the caveat a naive version misses |
-| `C6` | is `Ambrose–Singer` ×0 a load-bearing absence or a vocabulary gap? | ⛔ **LOAD-BEARING** — *it is the theorem that makes a **flat** connection have discrete holonomy, and the corpus asserts flat holonomy with exact selection rules and no curvature* |
+| `C6` | is `Ambrose–Singer` ×0 a load-bearing absence or a vocabulary gap? | ⛔ **THE r3164 CLAIM IS WRONG, corrected r3446, receipted** |
 | `C7` | does the null-loop control distinguish a small group from a large one? | ⊢ **WORKED** r3445, **receipted** — *identity returned; one lasso alone gives order 4, not 24* |
 | `C8` | is the substrate's Weyl group forced to be the same group? | ⚑ **NO, AND THAT IS WHERE THE WEIGHT BELONGS** — *the cubic forces 24; the coincidence with $W(\so(6,\mathbb C))$ is not forced* |
+| `C9` | does the flat bundle's moduli space admit deformations? | ⟐ **BOUNCE** r3446, receipted — *`P14` has it, and better* |
+| `C10` | how many holonomies does the corpus actually compute? | ⛔ **TWO, AND THIS LEDGER COMPUTES ONE** — r3446, receipted |
 
 ---
 
@@ -203,9 +205,43 @@ returned $\lvert G\rvert=1$.* ⇒ ***A ledger that asserts a number in prose can
 | | this bake | the FULL tier's range |
 |---|---|---|
 | lines | **~215** | 189–978 ✔ |
-| numbered probes | **9** (`C0`–`C8`) | 10–17 ⚠ *one short* |
-| receipts, all running | **1** | 2–10 ⚠ *one short* |
-| papers touched | `P05`, `P07`, `P14`, `P03` = **4** | 6–11 ⚠ |
+| numbered probes | **11** (`C0`–`C10`) | 10–17 ✔ |
+| receipts, all running | **2** | 2–10 ✔ |
+| papers touched | `P05`, `P07`, `P12`, `P14`, `P03`, `P10` = **6** | 6–11 ✔ |
 | lead register | **9 rows, none unmarked** | — |
 
-⚠ ***THREE SHORT, AND NAMED RATHER THAN ROUNDED UP. This field is not yet at the bar.***
+⇒ ***THE BAKE MEETS THE BAR.*** *It was recorded three short at r3445 and the shortfall was closed by
+work rather than by argument: two more numbered probes, a second receipt, and two more papers reached.*
+
+---
+
+## ⛔ C6 — **THE r3164 LEDGER'S OWN CLAIM IS WRONG**
+
+*It reads `Ambrose–Singer` ×0 as the load-bearing absence — "the theorem that makes a **flat**
+connection have discrete holonomy".* ⛔ ***Ambrose–Singer relates holonomy to CURVATURE, and a flat
+bundle has none.*** *The theorem a flat bundle needs is that **holonomy is its complete invariant** —
+and `P14` states exactly that, in its own words:* ***"holonomy is precisely the complete invariant a
+flat connection has … no holonomy datum can take one off the flat locus."*** ⇒ **So this is the WEAK
+form of the corpus's anonymity — the right theorem, unnamed — and not a hole**, *the same shape as the
+functional-analysis bake's `Hilbert space` ×0 over work fully done on $L^2$.*
+
+## ⟐ C9 — **THE MODULI QUESTION BOUNCES, AND `P14` IS AHEAD**
+
+*`P14` already carries all of it: the holonomy group is **finite of order 81**; a finite group in
+characteristic zero has vanishing $H^1$, so the representation does not deform; the moduli space is
+**zero-dimensional**, counted directly; and a two-parameter family does not arise because the wall
+classes are **subregular** (dimension four) rather than regular (six).* ⌗ ***Verified: for
+$\mathfrak{sl}(3)$, three regular classes on a three-punctured sphere give $3\times6-2\times8=2$ and
+three subregular give $3\times4-2\times8=-4$. The arithmetic is exact and the bake adds nothing.***
+
+## ⛔⛭⛭ C10 — **THE CORPUS COMPUTES TWO HOLONOMIES AND THIS LEDGER COMPUTES ONE**
+
+| bundle | order | group | its work |
+|---|---|---|---|
+| the residue pairing — `P05`, `P07` | **24** | $S_4=W(A_3)=W(\so(6,\mathbb C))$ | closes the substrate's Weyl group |
+| the wall monodromies + hinge 3-cycle — `P14` | **81** | $3^4$, a finite 3-group | supplies colour's selection rules |
+
+⇒ ***Different groups, different bases, different work — sharing only a factor of three.*** *The r3164
+bake treats holonomy as one topic and computes only the first, which is why `C9` looked like an opening
+and was not.*
+*(receipt `storyboard_receipts/CH_C6_C10_the_two_holonomies.py`)*
