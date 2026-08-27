@@ -154,6 +154,10 @@ D_M = eta_0 - eta_rec
 
 
 def rs_from(z_lo):
+    # r_s on the STACKING clock -- the COMOVING RULER for l_A = pi D_M / r_s, theta_* and the
+    # projection (L1).  This is the OTHER of the instrument's two sound horizons; the PHASE
+    # ACCUMULATOR for the oscillator and Q is r_s,leaf in `sound_phase`.  See that docstring: the two
+    # are correct and NOT interchangeable (ratio 1.286 at the physical onset).  Do not unify them.
     return quad(lambda a: C / (a ** 2 * Hphys(a) * np.sqrt(3 * (1 + RB_REC * a / A_REC))),
                 1.0 / (1.0 + z_lo), A_REC, limit=250)[0]
 
@@ -455,11 +459,20 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
 
 
 def sound_phase(e_lo, e_hi):
-    """k-free part of the accumulated sound phase: the sound horizon between two conformal times.
-    ** Under LEAFPERT the oscillator runs in eta_leaf, so the phase must be reckoned in that clock
-    (d eta_leaf = Jac d eta_stack); otherwise Q mixes the leaf-clock turnover with a stack-clock
-    phase and the undriven calibration comes out at the stack/leaf ratio (~1.3-1.6) instead of 1.
-    With this factor the undriven column returns 1.000 on the CR arm too, gating the measure. **"""
+    """r_s on the LEAF clock -- the PHASE ACCUMULATOR for the oscillator and for Q(k).
+
+    ** THE INSTRUMENT CARRIES TWO SOUND HORIZONS BY DESIGN, AND THEY ARE NOT INTERCHANGEABLE. **
+      - r_s,leaf  (THIS function): int c_s d(eta_leaf) = int c_s Jac d(eta_stack).  The oscillator
+        turns over on the leaf clock (LEAFPERT), so the accumulated sound phase Q -- a turnover
+        expressed in half-periods -- MUST be reckoned here.  A phase accumulator is reckoned in the
+        clock the phase accumulates in.
+      - r_s,stack (`rs_from`): int c_s d(eta_stack).  The COMOVING RULER, used by l_A = pi D_M / r_s,
+        theta_* and the line-of-sight projection (L1, what sec:tensions assigns them).
+    Both are correct.  The ratio r_s,stack / r_s,leaf = 1.286 at the physical onset (rs_stack 135.46,
+    rs_leaf 105.36 Mpc).  ** Do NOT unify them: that reads the oscillator's phase on the ruler's clock
+    and undoes the leaf-rate correction. **  The gate is the undriven Q column, which must return
+    1.0000 AND be k-independent on BOTH arms; a stack-clock numerator here made CR's undriven Q come
+    out at 1.33-1.57 (the stack/leaf ratio, k-dependent because the turnover moves with k). """
     return quad(lambda e: (float(Jac_of(e)) if LEAFPERT else 1.0)
                 / np.sqrt(3.0 * (1.0 + float(Rb_of(e)))), e_lo, e_hi, limit=200)[0]
 
