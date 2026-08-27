@@ -1,7 +1,7 @@
 ---
 name: statistics-inference-ledger
 kind: FORWARD
-current: r3160
+current: r3448
 job: The statistics/inference field-bake ledger — what bit, what bounced, and why. The last unbaked field in `THE_MATHEMATICS_REACH`'s candidate set, and the one `A5.5` needs. `OWED` 622.
 sources: [cowork]
 ---
@@ -171,3 +171,76 @@ and this is one.**
 ⛔ **AND THE ONE THING THIS BAKE MUST NOT BE READ AS SAYING:** *nothing here estimates the effect in
 `A5.5`. Every figure above is about what a design can **detect**. The lemma's truth is exactly as open
 after this bake as before it — what changed is that the programme to test it now has a price list.*
+
+
+---
+
+# ⛭⛭ BROUGHT TO THE BAR — r3448
+
+> *The r3160 bake's content stands. What it lacked was **numbered probes**, a third register, and — as
+> it turned out — a **working** second receipt.*
+
+## ⌗ THE LEAD REGISTER
+
+| # | probe | state |
+|---|---|---|
+| `S0` | baseline; is `degrees of freedom` ×0 in `P15` a hole? | ⊢ **WORKED** r3160 — *a spelling: `P15` writes `dof` ×11 and `per degree of freedom` ×7. The bake's first false finding, caught by the instrument* |
+| `S1` | can the first programme's reference class be big enough? | ⛔ **BITE** r3160, receipted — *the two-arm design needs 168 episodes at a moderate effect; the paired design needs 37* |
+| `S2` | is the systematics budget missing? | ⟐ **BOUNCE** r3160 — *taken by matched-procedure differencing, never named* |
+| `S2′` | **does `S2` still pass?** | ⛔ **NO — FAILING SINCE r3169**, repaired r3447 |
+| `S3` | is `P04`'s three-orders exclusion a ratio of point estimates? | ⟐ **BOUNCE** r3448, receipted — *and the reason it bounces is the finding* |
+| `S4` | the `plik_lite` marginalisation | ⛭ **REFERRED** — *what the published product carries is a separate reading; not this field's* |
+| `S5` | Bayesian model comparison, `posterior` ×0 | ⟐ **NOT THROWN, AND CORRECTLY** — *`P15` says "the likelihood cannot arbitrate here", and an evidence ratio computed where the likelihood cannot arbitrate is the same error wearing a prior* |
+| `S6` | is the exact test monotone in $n$? | ⊢ **WORKED** r3160 — *it is not: eight episodes give $0.813$ power and **ten give $0.736$*** |
+| `S7` | can `P06`'s five instances be spent? | ⊢ **WORKED** r3160 — *no: read as a paired sign test they give $p=0.031$, and they may not be so read, because they were selected on outcome* |
+
+---
+
+## ⛔ S2′ — **A RECEIPT THAT HAD BEEN FAILING FOR 278 REVISIONS**
+
+*Before adding to this field its two receipts were **run**.* ⛔ ***`S2` was failing, and had been since
+r3169.*** *It asserted `P15` states $\sigma(\phi/\pi)=0.008$ from a one-multipole peak-position
+assumption and reproduced $0.615/0.008=76.9\sigma$. **`P15` removed both at r3169** — whose own message
+reads "the central empirical claim was unreceipted, and its sigma did not match its stated input" — and
+the receipt was never updated.*
+
+⇒ ***THAT IS THE SEVERED-ROUTE CLASS, AND THE INTEGRITY COMB'S GREP COULD NOT FIND IT.*** *Criterion (1)
+returned a **null** yield after three tightenings and was recorded at r3420 as a **reading discipline
+rather than a grep**. **Running the receipts is that discipline's operational form**, and it found in
+one command what the grep could not find at all.*
+
+*Repaired so the receipt tracks the paper — and the paper is **stronger** than what it replaced: it now
+says in its own voice that the $0.615$ "should not be read as the disagreement itself", reports the
+phase **span with the control inside it**, and rests on $\chi^2/\mathrm{dof}=224$ against $3.71$ on 185
+bins. The superseded figure is kept and labelled, not deleted.*
+
+## ⟐ S3 — **`P04`'S EXCLUSION IS A BOUND AGAINST A BOUND** — *and that is why the attack bounces*
+
+*Built as an attack: a **ratio of point estimates** is not an exclusion.* ⇒ ***It is not a ratio of
+point estimates.*** *`P04`'s own receipt establishes $\sigma_{\rm path}=2.77\times10^{-3}$ as a **floor**
+and checks two alternative estimate choices that **both raise it** — $7.78\times10^{-3}$ without
+growth-weighting, $5.55\times10^{-3}$ with correlations — against an observed **upper limit** of
+$3\times10^{-6}$.*
+
+⇒ ***LOWER BOUND AGAINST UPPER LIMIT. Every free choice pushes the two further apart, so the exclusion
+cannot be weakened by a different estimate — only by a different physical claim.*** *And the control
+returns $\sigma_{\rm path}=0$ **exactly**, so the test could have come out the other way.*
+
+**⌷ ROUTED, NOT APPLIED.** *A sentence, in the shape `S2` already found: name the structure, and give
+the robustness factor — the observed limit would have to be $9\times$ larger to weaken the exclusion to
+two orders, $92\times$ to one order, $923\times$ for it to vanish.*
+*(receipt `receipts/L271_the_statistics_bake/S3_the_exclusion_is_a_bound_against_a_bound.py`)*
+
+---
+
+## ⛭⛭ THE BAR, MEASURED
+
+| | this bake | the FULL tier |
+|---|---|---|
+| lines | **~270** | 189–978 ✔ |
+| numbered probes | **9** (`S0`–`S7`, `S2′`) | 10–17 ⚠ *one short* |
+| receipts, all running | **3** | 2–10 ✔ |
+| papers touched | `P04`, `P06`, `P15` = **3** | 6–11 ⚠ |
+| lead register | **9 rows, none unmarked** | — |
+
+⚠ ***TWO SHORT — one probe and three papers — and named rather than rounded up. This field is not done.***
