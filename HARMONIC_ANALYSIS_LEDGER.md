@@ -162,6 +162,7 @@ margin behind it.*
 | `H8` | does a broader transfer average the ladder away? | ⛔ **NO — THE OPPOSITE** r3166 — *it reaches further **down** into the coarse bottom and carries discreteness **up** in $\ell$* |
 | `H9` | the real transfer's width | ⛭ **REFERRED** — *the pure Sachs–Wolfe limit is what is computed; the full transfer is `P15`'s* |
 | `H10` | is the operator half this field's? | ⛭ **REFERRED** — *station Ⓗ's, and worked as the functional-analysis bake's `F1`–`F3`* |
+| `H11` | is `P14`'s "mode completeness" really open? | ⛔ **BITE** r3454, **receipted** — *the wall is the reflectionless pair; only the **join** is open* |
 
 ---
 
@@ -189,9 +190,9 @@ margin behind it.*
 | | this bake | the FULL tier |
 |---|---|---|
 | lines | **~200** | 189–978 ✔ |
-| numbered probes | **11** (`H0`–`H10`) | 10–17 ✔ |
-| receipts, all running | **1** | 2–10 ⚠ *one short* |
-| papers touched | `P15` = **1** | 6–11 ⚠ *five short* |
+| numbered probes | **12** (`H0`–`H11`) | 10–17 ✔ |
+| receipts, all running | **2** | 2–10 ✔ |
+| papers touched | `P14`, `P15` = **2** | 6–11 ⚠ *four short* · **reach 2/12 = 17%** |
 | lead register | **11 rows, none unmarked** | — |
 
 ⛔ ***ONE RECEIPT AND FIVE PAPERS SHORT, AND THE NARROW-FIELD DEFENCE IS REFUTED.***
@@ -204,3 +205,37 @@ a narrow field fully worked; it is a field whose subject spans six papers and wh
 ⌗ **THIS FIELD STAYS OPEN.** *What is owed is the five papers the vocabulary reaches and this bake did
 not, and a second receipt. `THE_FIELD_BAKE_PLAN` now carries `REACH` as a reported quantity for exactly
 this reason.*
+
+
+---
+
+## ⛔⛭⛭ H11 — **`P14`'s WALL IS SOLVED, AND ITS "MODE COMPLETENESS" IS NOT OPEN**
+
+*The first probe of the reach owed after r3453. `P14` carries more of this field's vocabulary than any
+paper (`mode` ×60) and this bake had never read it. It lists among its open undertakings* ***"the
+quantised field, its mode completeness, and the join between the static region's continuum and the wall
+— which sit in different regions"***.
+
+**`P14`'s wall is $m(x)=\tanh(x/a)$, and the Dirac problem factorises into the SUSY partners
+$V_\mp=m^2\mp m'$:**
+$$V_-=1-2\,\mathrm{sech}^2 x\quad(\text{Pöschl–Teller},\ \ell=1),\qquad V_+=1\quad(\text{free}).$$
+*Diagonalised: $V_-$ carries **exactly one** bound state, at $E=0$ to six figures, matching the analytic
+$\mathrm{sech}(x)/\sqrt2$ — the Jackiw–Rebbi zero mode — and its partner carries **none**.*
+
+⇒ ***That is the REFLECTIONLESS pair: one bound state plus a reflectionless continuum, for which
+completeness is a classical closed-form result.*** *So the wall's mode completeness is **not** open.*
+
+**⌗ AND `P14` SAYS SO ITSELF, IN THE SAME SENTENCE:** *what is open is* ***"the JOIN … which sit in
+different regions"***. *The wall's own spectral problem is solved; joining it to the static region's
+continuum is the undertaking.* ⇒ **The clause reads as though three things were open and one of the
+three is a solved system — which understates what the paper has.**
+
+**⏷ ROUTED, NOT APPLIED.** *The clause owed: that the wall's mode problem is the reflectionless
+Pöschl–Teller system, whose completeness is closed-form, so the open undertaking is the join alone.*
+
+⚠ **AND THIS RECEIPT CAUGHT TWO OF ITS OWN NUMERICAL SLIPS.** *The first draft discretised
+$-\tfrac12\,\mathrm{d}^2/\mathrm{d}x^2$ and returned **two** bound states with $E_0$ negative; the second
+asserted $\lvert E_0\rvert<10^{-6}$ against a grid delivering $1.7\times10^{-6}$.* ⌗ ***With this
+ledger's own adaptive-quadrature artefact that is three numerical slips in one field, every one caught
+by an assert, and not one of which prose would have caught.***
+*(receipt `storyboard_receipts/HA_H11_the_wall_is_reflectionless.py`)*
