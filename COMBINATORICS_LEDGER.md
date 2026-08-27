@@ -933,44 +933,40 @@ incidental feature of the lift; it is the condition on which the lift's causal w
 identified the Euclidean null as a number-audit object without its significance as **the mechanism that makes
 causal character well defined all around the lap**.*
 
-### ⌗ L8.5 — **THE PENCIL** — *the single condition `L8.4` recorded as well-posed and unattempted*
-`L8.4` closed by settling a **corrected** claim (the null condition met three times) and left the original
-question with a named opening: ***"a derivation producing $\{0,1,2\}$ from a single condition with no new
-input."*** *That condition exists, it is one line, and it was not found because the corpus's other uses of the
-word point elsewhere — `P03`'s masthead says the horizon cubic is* **"NOT a pencil"** *of the reducible-plane-cubic
-kind, and `p0` uses pencils of planes and of quadrics.*
+### ⌗ L8.5 — **THE THIRD ENERGY** — *and a correction to this entry's own first draft*
 
-**★★★ Multiply $f$'s definition through by $-r\alpha^{2}$** (receipt `storyboard_receipts/L8_the_pencil.py`)**:**
-> $$r^{3} + (f-1)\,\alpha^{2} r + 2M\alpha^{2} = 0$$
+⛔ **WHAT THIS ENTRY FIRST CLAIMED IS WITHDRAWN.** *It presented the pencil
+$r^{3}+(f-1)\alpha^{2}r+2M\alpha^{2}=0$ as the single condition `L8.4` recorded as well-posed and
+unattempted.* ***The corpus already carries it.*** *`P07` `rem:tworealisations` states*
+$$r^{3}+(E^{2}-1)\,\alpha^{2}r+2M\alpha^{2}=0,$$
+*"one family indexed by the conserved energy --- one congruence at three energies, with the Friedmann
+curvature constant $-k=E^{2}-1$", together with its discriminant $\Delta(E)$ and the crossing inside the
+family. **A geodesic turns where $E^{2}=f$, so that IS the same equation** with $f=E^{2}$, and re-deriving
+it in the other parameter is not a finding.* ⌗ *Recorded rather than deleted: `L8.0`'s calibration is that
+a worked NO is data, and this one is about the ledger's own reach.*
 
-*One equation, $f$ its parameter, no new input. **The three loci are three members of ONE PENCIL OF CUBICS**,
-and the linear coefficient runs $-\alpha^{2},\,0,\,+\alpha^{2}$ — symmetric about the middle. Verified
-symbolically; each member factors to the right locus:*
+**⌗ AND `lem:twoturnings` NEEDS NO REPAIR.** *The routed question was whether "two affinely inequivalent
+$\mathbb{Z}_3$'s" survives. **It does, and the lemma anticipated the objection**: it says the obstruction is
+"to an identification **at fixed energy**", and that the two cubics "are nonetheless the two ends of a single
+family of turning points". ***NO CHANGE OWED*** *— the register the variational ledger keeps for exactly this.*
 
-| $f$ | member | locus | Nariai root |
-|---|---|---|---|
-| 0 | $r^{3}-\alpha^{2}r+2M\alpha^{2}$ | horizon cubic | $-6M$, $+3M$ (double) |
-| **1** | $r^{3}+2M\alpha^{2}$ — **DEPRESSED** | turnaround | $-3.7798M$ |
-| 2 | $r^{3}+\alpha^{2}r+2M\alpha^{2}$ | Euclidean null | $-1.7882M$ |
+**★ WHAT SURVIVES, AND IT IS ONE MEMBER.** *`rem:tworealisations` names **two** ends, $E=1$ (flat leaf,
+depressed cubic, comoving turnaround) and $E=0$ (maximally bound, horizon cubic). **`L8.4`'s third locus is a
+third member of that same family and is not named there**: the Euclidean null sits at $f=2$, hence*
+$E=\sqrt2$ *— the **unbound** member, $k=-1$.*
 
-**⌗ AND IT SUPPLIES WHAT `L8.4` COULD ONLY OBSERVE.** *`L8.4` records the turnaround as* **"not among them —
-it SEPARATES the three."** *The pencil says **why**: $f=1$ is the **depressed** member, the one whose linear
-term vanishes.* ⇒ ***That is what gives the turnaround its clean closed form $r^{3}=-2M\alpha^{2}$, and —
-since $V_{\mathrm{eff}}\equiv f$ identically — it is the **zero of the potential**, the locus at which the
-line element reduces to Minkowski and at which $E=1$ is anchored.***
+| locus | $f=E^{2}$ | $E$ | $-k$ | member |
+|---|---|---|---|---|
+| horizon | 0 | 0 | $-1$ | maximally bound — *named in `P07`* |
+| turnaround | 1 | 1 | 0 | flat leaf, depressed cubic — *named in `P07`* |
+| **Euclidean null** | **2** | **$\sqrt2$** | **$+1$** | **unbound — not named** |
 
-**⇒ SO THE PASSES AND THE SEPARATOR ARE ONE STRUCTURE.** *The two null passes sit at $f-1=\mp1$ and the
-separator at $f-1=0$: the pencil is symmetric about the member that separates. **The separator separates
-because it is the distinguished member**, which is a derivation of the arrangement rather than a description
-of it.*
+⇒ ***So the lap's three critical loci are the turning points of the bound, marginal and unbound members of
+one congruence, and the corpus names the first two.*** *The linear coefficient runs $-\alpha^{2},0,+\alpha^{2}$
+and $-k$ runs $-1,0,+1$: the family is symmetric about the marginal member, which is why the turnaround
+**separates** the two null passes rather than joining them — `L8.4` observed the separation and this names its
+cause.* ⌗ *And $V_{\mathrm{eff}}\equiv f$ identically, so the marginal member's cubic is the **zero of the
+potential**, the locus where the line element reduces to Minkowski and $E=1$ is anchored.*
 
-**⌗ WHAT THIS DOES AND DOES NOT SETTLE, against `L8.0`.** *It does **not** revive the dead claim: the pencil
-runs over **all** $f$ and does not SELECT $\{0,1,2\}$, so the DERIVATION register is still not satisfied for
-"these are one three".* ⇒ ***What it does establish is weaker and better posed: the three loci are three
-members of one one-parameter family, sampled where the linear coefficient is $-\alpha^{2},0,+\alpha^{2}$, and
-the middle member is distinguished intrinsically.*** *`L8.4`'s verdict on the original claim stands; its
-open question is answered in the form the answer actually takes.*
-
-**⌷ ROUTED, NOT APPLIED** *— no paper is edited by this. `P07` `lem:twoturnings` calls the horizon cubic and
-the comoving cubic "two affinely inequivalent $\mathbb{Z}_3$'s"; they are $f=0$ and $f=1$ of this pencil, and
-whether "affinely inequivalent" survives the pencil is the paper-holder's call and needs its own check.*
+**⌷ ROUTED, NOT APPLIED** *— whether `rem:tworealisations` should name the third member alongside its two ends
+is the paper-holder's call. The receipt `storyboard_receipts/L8_the_pencil.py` carries the verification.*

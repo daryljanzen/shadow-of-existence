@@ -4,9 +4,15 @@ PENCIL OF CUBICS, AND THE TURNAROUND IS ITS DEPRESSED MEMBER. **
 
 LEVEL: NO RATE — pure algebra on f's definition; no expansion rate enters, so no level applies.
 
-WHAT THIS ANSWERS.  L8.4 (r2224-r2225) settled the corrected null-condition claim and left the
-  original question with a named opening: "a derivation producing {0,1,2} from a single condition
-  with no new input.  Not attempted here; recorded as well-posed."  This is that condition.
+WHAT THIS IS NOT.  It is NOT the single condition L8.4 recorded as well-posed and unattempted.
+  The corpus already carries that family: P07 rem:tworealisations states
+  r^3 + (E^2 - 1) alpha^2 r + 2 M alpha^2 = 0, "one family indexed by the conserved energy", with
+  -k = E^2 - 1 and its discriminant.  A geodesic turns where E^2 = f, so this is the same equation
+  in the other parameter.  Verified here so the identification is on the record, not claimed as new.
+
+WHAT IS NEW IS ONE MEMBER.  rem:tworealisations names two ends, E=1 (flat, depressed, turnaround)
+  and E=0 (bound, horizon).  L8.4's third locus is a third member of the same family and is not
+  named there: the Euclidean null at f=2, hence E=sqrt(2), the UNBOUND member, k=-1.
 
 WHY IT WAS NOT FOUND.  The corpus's other uses of the word point elsewhere: P03's masthead says the
   horizon cubic is "NOT a pencil" -- of the reducible-plane-cubic kind, a different object -- and p0
