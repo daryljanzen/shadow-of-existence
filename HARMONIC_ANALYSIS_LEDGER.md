@@ -174,6 +174,7 @@ margin behind it.*
 | `H20` | is `P03`'s $2/\sqrt3$ forced, and is its dimension selection harmonic? | ⛔⛔ **DOUBLE BITE** r3466, **receipted** — *both, and the second selects $d=4$ alone* |
 | `H21` | is `P02`'s "identical analytic character" a coincidence? | ⛔ **BITE** r3467, **receipted** — *it IS band-limiting to the first harmonic* |
 | `H22` | what is the symmetric space USED for? | ⛔ **BITE** r3468, **receipted** — *its algebra ×260, its analysis ×2 — and both analytic uses are load-bearing and unnamed* |
+| `H23` | what exactly is "the failure of $U$ to be harmonic"? | ⛔ **BITE** r3469, **receipted** — *it is the **obstruction** to integrating $\gamma$, not a quantity alongside it* |
 
 ---
 
@@ -522,7 +523,7 @@ paper is irrelevant from a word count.***
 | `P03` *SdS slicing curve* | the door, the hinge, **sky-angle periodicity** | **HIGH — CONFIRMED, worked as `H20`** | *periodicity is Fourier; and the cubic's roots are $(2/\sqrt3)\sin w_k$ — **a harmonic parametrisation***, used as such by the representation bake |
 | `P02` *the circle* | one homogeneous circle, $r(z)=M(1+\cos z)$ | **HIGH — CONFIRMED, worked as `H21`** | *a **periodic function on a circle** is the founding object of Fourier analysis* |
 | `P12` *algebroid* | the constraint algebra, structure **functions** | **MEDIUM — CONFIRMED, worked as `H22`** | *structure functions varying over a base; the flat-connection/representation content* |
-| `P09` *range* | swept vs reassigned geometries, moduli | **MEDIUM** | *carries `Laplacian`; a moduli/completeness question* |
+| `P09` *range* | swept vs reassigned geometries, moduli | **MEDIUM — CONFIRMED, worked as `H23`** | *carries `Laplacian`; a moduli/completeness question* |
 | `P06` *geometric core* | the substrate itself, the $\mathrm{dS}_5$ ladder | **MEDIUM** | *carries `orthogonalit`; the ladder is a decomposition* |
 | `p0` *shadow of existence* | epistemology of theory-choice | **LOW** | *no decomposition content expected — **to be read, not assumed*** |
 | `P08` *slicing operator* | the generating operator, the lock $g_{tt}g_{rr}=-1$ | **LOWEST** | *algebraic/ODE machinery, no mode content — **and this matches Daryl's own guess independently*** |
@@ -668,3 +669,33 @@ lapses" is a bilinearity argument valid on the span, and the paper **scopes it c
 **on this sector**".*
 *(receipt `storyboard_receipts/HA_H22_the_symmetric_space_two_sides.py` — **added, runs, all asserts
 pass**)*
+
+---
+
+## ⛔⛭⛭ H23 — **MATTER IS THE OBSTRUCTION TO INTEGRATING $\gamma$**
+
+*`P09` states, of the axisymmetric Weyl class:* ***"the potential $U$ harmonic in the flat cylindrical
+Laplacian, $\gamma$ by the quadratures $\gamma_\rho=\rho(U_\rho^2-U_z^2)$, $\gamma_z=2\rho U_\rho U_z$:
+the failure of $U$ to be harmonic is a fluid bend."*** ⌗ **That is the corpus's central metaphor —
+vacuum the straight cut, matter the bend — in this field's own terms, and it is checkable.**
+
+**⌘ $\gamma$ IS DEFINED BY TWO FIRST-ORDER EQUATIONS, SO IT EXISTS ONLY IF THE FORM IS CLOSED.**
+*Computing $\partial_z\gamma_\rho-\partial_\rho\gamma_z$ symbolically returns*
+$$-2\rho\,U_z\Big(U_{\rho\rho}+\tfrac{U_\rho}{\rho}+U_{zz}\Big),$$
+*and the bracket is **exactly** the flat cylindrical Laplacian — the ratio is **identically 1**. Both
+directions checked: the Newtonian potential is harmonic and kills the obstruction; $U=\rho^2$ is not
+and does not.*
+
+⇒ ***So $\gamma$ EXISTS $\iff$ $U$ is HARMONIC $\iff$ vacuum.***
+
+**⌘ AND THAT IS SHARPER THAN THE PAPER'S SENTENCE.** *"The failure of $U$ to be harmonic **is** a
+fluid bend" reads as identifying two quantities.* ***The computation says something structural:
+harmonicity is the **integrability condition of the construction's own second step**. The bend is not
+a thing measured alongside $U$ — it is what stops $\gamma$ from existing at all, so the second metric
+function cannot be built unless the first is harmonic.***
+
+⚠ *A bogus check caught in drafting and replaced: the first version tested $U=\log\sqrt{\rho^2+z^2}$ as
+"harmonic" and it is not in this operator, returning $1/(\rho^2+z^2)$ — it demonstrated nothing and was
+labelled a sanity check.*
+*(receipt `storyboard_receipts/HA_H23_matter_is_the_obstruction_to_gamma.py` — **added, runs, all
+asserts pass**)*
