@@ -140,6 +140,7 @@ bouncing has still been worth throwing.*
 | `F9` | does `P07` overstate what `P10` establishes? | ⟐ **BOUNCE** — no; `P07` carries the closure *and* its openness |
 | `F10` | `Hilbert space` ×0, `inner product` ×0 — a hole? | ⟐ **NO** — the **weak** form of the corpus's anonymity: `P10` works on $L^2$ of the half-line throughout, so the objects are present under standard notation and only the phrases are missing |
 | `F11` | is the constraint algebra treated as an operator algebra? | ⟐ **BOUNCE** — it is `P12`'s subject **by title**, and the corpus's ×26 is largely its bibliography |
+| `F16` | is `P08`'s matter functional linear? | ⛔ **BITE** r3478, **receipted** — ***affine***, *so the vacuum sector is a **coset** of the kernel* |
 | `F15` | how many compactness statuses does the chirality result use? | ⛔ **BITE** r3477, **receipted** — ***three, on three spaces, in three papers*** |
 | `F14` | does `P14`'s leaf-compactness survive the **Nariai** limit? | ⍀ **BOUNCE — IT DOES** r3476, **receipted** — *and the corpus's own receipt never tested it* |
 | `F13` | what does the referred `P08` item open? | ⛔ **BITE** r3474, **receipted** — *`kernel` ×147 carries **four senses**, two of them opposite objects in this field* |
@@ -266,7 +267,7 @@ senses. **So the estimate below is made from CONTENTS.***
 |---|---|---|---|
 | **`P14`** *matter sector* | 82 | **HIGH — CONFIRMED, worked as `F14`** | ***a Dirac operator on the wall, its normalizable modes, and an index*** — an operator paper, never opened by this bake |
 | **`P13`** *boundary* | 32 | **HIGH — CONFIRMED, worked as `F15`** | *the **Atiyah–Hirzebruch index obstruction** — operator-theoretic, and `H16` showed it turns on a Fourier decomposition* |
-| `P08` *slicing operator* | 45 | **MEDIUM** | *`F13` has already shown its vacuum kernel IS an operator null space of dimension one* |
+| `P08` *slicing operator* | 45 | **MEDIUM — CONFIRMED, worked as `F16`** | *`F13` has already shown its vacuum kernel IS an operator null space of dimension one* |
 | `P03` *slicing curve* | 29 | **MEDIUM** | *carries $L^2$ ×5 and `extension` ×8 — needs reading to tell self-adjoint from analytic* |
 | `P15` *cosmology* | 117 | **MEDIUM** | *`spectrum` is the power spectrum, but the acoustic oscillator and `unbounded` ×4 are this field's* |
 | `P11` *dynamics* | 23 | **MEDIUM** | *the TT oscillator, and `P10`'s boundedness argument reaches into it* |
@@ -350,4 +351,31 @@ familiar anonymity, at the third hypothesis of a theorem it leans on.*
 ⇒ ***So the chirality result is a statement about WHICH SPACE IS COMPACT AND WHICH SYMMETRY ACTS,
 assembled from three papers, and no one of them sets the three side by side.***
 *(receipt `storyboard_receipts/FA_F15_three_compactness_statuses.py` — **added, runs, all asserts
+pass**)*
+
+---
+
+## ⛔⛭⛭ F16 — **THE MATTER FUNCTIONAL IS AFFINE, SO THE VACUUM SECTOR IS A COSET**
+
+*`P08` describes its operator in the vocabulary of **linear algebra** throughout — it is* ***"surjective
+onto its image by construction"***, *it is* ***"not injective on arrows"*** *(three distinct cuts return
+one geometry), and* ***"the vacuum sector is exactly the KERNEL of the matter functional, derived, not
+matched."*** ⌗ **Four invariants of a linear map. So: is the matter functional linear?**
+
+**⛔ IT IS NOT.** *Testing additivity on $f=g+h$:*
+$$T[g+h]-\big(T[g]+T[h]\big)=1-\Lambda r^{2}\;\neq\;0,$$
+*exactly the constant term.* ⇒ ***The functional is AFFINE: $T[f]=L[f]-b$ with $L[f]=rf'+f$ linear and
+$b=1-\Lambda r^{2}$ constant.***
+
+**⌘ SO THE VACUUM SECTOR IS A COSET.** *The kernel of the **linear part** is $f=C/r$, dimension one.
+The preimage of zero of the **affine** map is $f=C/r+1-\Lambda r^{2}/3$ — **the kernel translated by a
+particular solution**.* ⇒ ***One-dimensional as an AFFINE space, with $M$ its affine coordinate*** —
+*which is exactly the physics: $M$ is the single free constant.*
+
+**⌗ AND IT ADDS A FIFTH DISTINCTION TO `F13`.** *`F13` found `kernel` ×147 carrying four senses across
+the corpus.* ***Here is a fifth, inside the largest of them: the "vacuum kernel" is an affine
+preimage, and the word is doing affine duty in the corpus's most-used technical term.*** *Not an error
+— the translated set is what the physics needs — but `P08`'s sentence is exact for the **linear part**
+and a coset for the functional as written.*
+*(receipt `storyboard_receipts/FA_F16_the_vacuum_sector_is_a_coset.py` — **added, runs, all asserts
 pass**)*
