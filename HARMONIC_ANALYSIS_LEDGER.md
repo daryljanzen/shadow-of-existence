@@ -176,6 +176,7 @@ margin behind it.*
 | `H22` | what is the symmetric space USED for? | ⛔ **BITE** r3468, **receipted** — *its algebra ×260, its analysis ×2 — and both analytic uses are load-bearing and unnamed* |
 | `H23` | what exactly is "the failure of $U$ to be harmonic"? | ⛔ **BITE** r3469, **receipted** — *it is the **obstruction** to integrating $\gamma$, not a quantity alongside it* |
 | `H24` | what does `P06`'s vacuous orthogonality theorem cost? | ⛔ **BITE** r3470, **receipted** — *ellipsoidal harmonics — and the same fact makes the corpus's harmonics **leafwise*** |
+| `H25` | is `p0` really outside this field? | ⛔ **BITE** r3471, **receipted** — *its criterion IS a projection criterion, and every projection the corpus exhibits is harmonic* |
 
 ---
 
@@ -526,7 +527,7 @@ paper is irrelevant from a word count.***
 | `P12` *algebroid* | the constraint algebra, structure **functions** | **MEDIUM — CONFIRMED, worked as `H22`** | *structure functions varying over a base; the flat-connection/representation content* |
 | `P09` *range* | swept vs reassigned geometries, moduli | **MEDIUM — CONFIRMED, worked as `H23`** | *carries `Laplacian`; a moduli/completeness question* |
 | `P06` *geometric core* | the substrate itself, the $\mathrm{dS}_5$ ladder | **MEDIUM — CONFIRMED, worked as `H24`** | *carries `orthogonalit`; the ladder is a decomposition* |
-| `p0` *shadow of existence* | epistemology of theory-choice | **LOW** | *no decomposition content expected — **to be read, not assumed*** |
+| `p0` *shadow of existence* | epistemology of theory-choice | **LOW — RIGHT ABOUT THE WORDS, WRONG ABOUT THE SUBJECT; worked as `H25`** | *the estimate held on vocabulary and failed on content* |
 | `P08` *slicing operator* | the generating operator, the lock $g_{tt}g_{rr}=-1$ | **LOWEST** | *algebraic/ODE machinery, no mode content — **and this matches Daryl's own guess independently*** |
 
 ⌗ *Already worked: `P01` `H15` · `P05` `H17` · `P07` `H12` · `P10` `H13` · `P11` `H18` · `P13` `H16` ·
@@ -730,3 +731,39 @@ wall (`P14`).*
 ONE fact — and it explains `H22`'s boundary, where the analytic side of the symmetric space went
 almost unused: the physics is leafwise by construction.***
 *(receipt `storyboard_receipts/HA_H24_one_surface_per_point.py` — **added, runs, all asserts pass**)*
+
+---
+
+## ⛔⛭⛭⛭ H25 — **`p0`'s CRITERION IS "EXHIBIT THE PROJECTION", AND EVERY PROJECTION THE CORPUS EXHIBITS IS HARMONIC**
+
+*Estimated **LOW** from contents — and the estimate was **right about the words and wrong about the
+subject**. `p0` carries `mode` ×0, `spectrum` ×0, `decomposition` ×0* — *and* `projection` **×26**,
+`appearance` **×58**, `perspectival` **×22**, `shadow` **×22**. ⌗ ***A projection criterion is a
+statement about what a map to a subspace loses: this field's subject, stated without its vocabulary.***
+
+**`p0`:** ***"an admissible world must EXPLAIN the perspectival appearances — EXHIBIT THE PROJECTION
+under which they arise — rather than discard them or merely reproduce them."***
+
+**⌘ AND EVERY PROJECTION THIS FIELD WORKED IS A HARMONIC ONE:**
+
+| projection | the map | probe |
+|---|---|---|
+| `P15` $S^3$ source $\to$ sky | flat spherical-Bessel projection | `H14` |
+| `P04` 3-D density $\to$ line of sight | path average $=$ a Fourier window | `H19` |
+| `P14` bulk spinor $\to$ wall | reflectionless Pöschl–Teller | `H11` |
+| `P10` leaf metric $\to$ TT sector | York decomposition | `H13` |
+| `P13` internal manifold $\to$ 4-D | Kaluza–Klein harmonics | `H16` |
+
+⇒ ***The criterion is content-free about the KIND of projection, and the corpus's realisations are
+overwhelmingly harmonic ones*** — *the criterion doing its job (general) and the physics supplying the
+instance.*
+
+**⛔ AND THE CRITERION IS UNMET IN ONE PLACE THIS FIELD FOUND.** *`P16` bounds $\rho_r/\rho_m$ on* ***"the
+identification of the interior's harmonic index with the observed multipole — an identification this
+paper does not establish."*** *A bound resting on an **unexhibited projection** is exactly what `p0`'s
+criterion excludes — and `P15` carries the map, which `H14` computed: $\ell\simeq kD_C$ approached from
+below, forty per cent off at $\ell=3$.*
+
+⇒ ***So `p0` supplies the STANDARD by which `H14`'s routed clause is owed, and neither paper cites the
+other on it. The epistemology paper and the acoustic sector meet at a harmonic projection.***
+*(receipt `storyboard_receipts/HA_H25_the_projection_criterion.py` — **added, runs, all asserts pass**)*
