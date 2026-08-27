@@ -192,3 +192,23 @@ identically, leaving $\psi'=(\lambda/r)\psi$ with solutions $r^{\pm\lambda}$, ch
 and $f$ complex. **The fork between the analytic $\sqrt f$ and self-adjoint $\sqrt{|f|}$ operators
 cannot bite at $\omega=0$; it bites only at $\omega\neq0$, where the $\omega$-coupling's $1/\sqrt f$
 is the one term that does not cancel.**
+
+
+---
+
+## ⛭ **REFERRED IN from the harmonic-analysis bake, r3472**
+
+*`P08` was read by the harmonic bake and found negative for that field — every candidate term a
+homonym. **One item is this field's**, and this bake never opened `P08`:*
+
+***"the condition $T_{\mu\nu}=0$ is the first-order linear ordinary differential equation
+$rf'+f-1+\Lambda r^{2}=0$, whose entire solution space is $f=1-2M/r-\Lambda r^{2}/3$, $M$ the single
+constant of integration."***
+
+⇒ *Verified there: the homogeneous equation $rf'+f=0$ gives $f=C/r$, so* ***the "vacuum kernel" is
+literally the KERNEL OF A LINEAR OPERATOR, of dimension one — and the single constant of integration
+IS the mass.***
+
+⛑ **OWED on this field:** *whether the corpus's other generative conditions are kernels of linear
+operators in the same sense, and whether the dimension-one result generalises. `P08` is not in this
+bake's reach and should be.*

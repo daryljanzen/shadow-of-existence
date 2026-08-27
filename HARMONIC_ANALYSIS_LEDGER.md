@@ -177,6 +177,7 @@ margin behind it.*
 | `H23` | what exactly is "the failure of $U$ to be harmonic"? | ⛔ **BITE** r3469, **receipted** — *it is the **obstruction** to integrating $\gamma$, not a quantity alongside it* |
 | `H24` | what does `P06`'s vacuous orthogonality theorem cost? | ⛔ **BITE** r3470, **receipted** — *ellipsoidal harmonics — and the same fact makes the corpus's harmonics **leafwise*** |
 | `H25` | is `p0` really outside this field? | ⛔ **BITE** r3471, **receipted** — *its criterion IS a projection criterion, and every projection the corpus exhibits is harmonic* |
+| `H26` | is `P08` empty for this field? | ⍀ **NEGATIVE, r3472** — *confirmed by reading; one item ⛭ **REFERRED** to functional analysis* |
 
 ---
 
@@ -528,7 +529,7 @@ paper is irrelevant from a word count.***
 | `P09` *range* | swept vs reassigned geometries, moduli | **MEDIUM — CONFIRMED, worked as `H23`** | *carries `Laplacian`; a moduli/completeness question* |
 | `P06` *geometric core* | the substrate itself, the $\mathrm{dS}_5$ ladder | **MEDIUM — CONFIRMED, worked as `H24`** | *carries `orthogonalit`; the ladder is a decomposition* |
 | `p0` *shadow of existence* | epistemology of theory-choice | **LOW — RIGHT ABOUT THE WORDS, WRONG ABOUT THE SUBJECT; worked as `H25`** | *the estimate held on vocabulary and failed on content* |
-| `P08` *slicing operator* | the generating operator, the lock $g_{tt}g_{rr}=-1$ | **LOWEST** | *algebraic/ODE machinery, no mode content — **and this matches Daryl's own guess independently*** |
+| `P08` *slicing operator* | the generating operator, the lock $g_{tt}g_{rr}=-1$ | **LOWEST — CONFIRMED NEGATIVE, `H26`** | *every term a homonym; one item **referred** to functional analysis* |
 
 ⌗ *Already worked: `P01` `H15` · `P05` `H17` · `P07` `H12` · `P10` `H13` · `P11` `H18` · `P13` `H16` ·
 `P14` `H11` · `P15` `H1`–`H4` · `P16` `H14`.*
@@ -767,3 +768,42 @@ below, forty per cent off at $\ell=3$.*
 ⇒ ***So `p0` supplies the STANDARD by which `H14`'s routed clause is owed, and neither paper cites the
 other on it. The epistemology paper and the acoustic sector meet at a harmonic projection.***
 *(receipt `storyboard_receipts/HA_H25_the_projection_criterion.py` — **added, runs, all asserts pass**)*
+
+---
+
+## ⍀ H26 — **`P08` IS GENUINELY NEGATIVE, AND THE ESTIMATE HELD**
+
+*Both Daryl and this bake estimated `P08` **lowest**, independently and for the same reason: it is
+algebraic/ODE machinery. **Read rather than assumed, that holds** — and every candidate term is a
+homonym:*
+
+| term | count | what it means here |
+|---|---|---|
+| `kernel` | ×18 | the **vacuum kernel** — an ODE solution space |
+| `orthogonal` | ×3 | geometric slicings, plus one metaphor (*"orthogonal, not in competition"*) |
+| `complete` | ×3 | **generative** completeness of the operator; *"a complete dynamical theory"* |
+| `expansion` | ×15 | **cosmic** expansion |
+
+⇒ ***No decomposition, no transform, no basis, no spectrum. `P08` is negative for this field, and it
+is recorded by name rather than left unmentioned.***
+
+**⛭ BUT ONE ITEM IS REFERRED, NOT DISMISSED.** *`P08` states:* ***"the condition $T_{\mu\nu}=0$ is the
+first-order linear ordinary differential equation $rf'+f-1+\Lambda r^2=0$, whose entire solution space
+is $f=1-2M/r-\Lambda r^2/3$, $M$ the single constant of integration."*** *Verified: the homogeneous
+equation $rf'+f=0$ gives $f=C/r$, so* ***the "vacuum kernel" is literally the kernel of a linear
+operator, of dimension one — and the single constant of integration IS the mass.***
+
+*That is **linear-operator theory**, and it belongs to the **functional-analysis** field, whose bake
+never opened `P08`.* ⌗ **Referred there under the lead rule, which permits a referral only to a named
+field — never to "later".**
+
+---
+
+## ⛭⛭⛭ EVERY PAPER NOW WORKED OR CHECKED-NEGATIVE BY NAME
+
+| worked | `P01` `H15` · `P02` `H21` · `P03` `H20` · `P04` `H19` · `P05` `H17` · `P06` `H24` · `P07` `H12` · `P09` `H23` · `P10` `H13` · `P11` `H18` · `P12` `H22` · `P13` `H16` · `P14` `H11` · `P15` `H1`–`H4` · `P16` `H14` · `p0` `H25` |
+|---|---|
+| **checked negative** | `P08` `H26`, with one item referred |
+
+⇒ ***Seventeen of seventeen. Not one left unmentioned, and the two earlier grep-verdicts (`P13`,
+`P05`) were withdrawn and both turned into bites.***
