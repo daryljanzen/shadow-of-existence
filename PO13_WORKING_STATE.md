@@ -1169,3 +1169,67 @@ driving CR structurally lacks -- now carrying TWO measured signatures with a val
 one argued. The l_1/l_A column also answers the rung question quantitatively: control's position is R-STABLE
 (0.741 -> 0.719), CR's rises with R (0.729 -> 0.836) -- the envelope centroid responds to baryon loading on the
 undriven arm, as an envelope-set (not phase-set) position should.
+
+---
+
+## ⛭⛭⛭ PO-13 — BANKED (r3525, cc54; 58's three corrections applied). Ledger-entry-ready, for 58 to absorb.
+
+**The framing, corrected — NOT "closed-with-a-residual."** Scoring CR against LambdaCDM's route reads as a shortfall,
+and that is not what the measurement says. What it says:
+
+> **CR's onset lies below every acoustic re-entry redshift, so no mode crosses while a plasma exists, so the comb is
+> UNDRIVEN. That single structural fact now carries THREE measured signatures — uniform spacing where the sky's is
+> shifted; an over-depressed even peak whose gap scales with baryon load; and a peak position that tracks R where the
+> driven arm's does not — each with a control that lands the sky on the same instrument.**
+
+A falsifiable prediction with three independent handles, not a discrepancy. The absence is DERIVED, the signatures are
+MEASURED, and the control validates the machinery on every one. Where it connects to standard physics is named
+precisely: radiation driving is what a cosmology needs *if its plasma epoch overlaps horizon crossing*, and CR's does
+not.
+
+### The three measured channels (each with a sky-landing control on the same instrument)
+
+**Channel 1 — SPACING (phase).** CR's source comb is undriven: extrema at the integers q_n = n (the NODRIVE guard), no
+driving phase shift, where the sky's comb is driving-shifted. Position, recorded honestly and never as one closed
+number: **l_1 = 220 or 228 by envelope choice (flat -> 220; damping/DIFFLEAF/DAMPX/seam -> 228); sky l_1 = 220.6;
+rung spacing ~8; KCONT-verified as NOT aliasing** (CR discrete 228 = CR continuum 1860-mode 228 to four digits, so the
+ladder's discreteness is not what sets it — the high-k envelope is).
+
+**Channel 2 — HEIGHT (even-peak offset).** A2 = even-peak depression below the odd (P1-P3) trend. Control reproduces
+the sky's alternation to 0.6% (A2 = 1.432 vs sky 1.423) on an observable it was never tuned against — the second
+independent validation of the two-arm instrument after position. CR over-depresses (A2 = 1.741): its even peak is
+~23% too low, because the driving GROUP-boost of peaks 2+ that offsets the baryon depression at peak 2 is exactly what
+CR lacks. **The RBFAC scan measures (b) missing-driving over (a) baryon-error:**
+
+| R | CR A2 | ctl A2 | GAP | CR l_1/l_A | ctl l_1/l_A |
+|---|---|---|---|---|---|
+| 0.50 | 1.205 | 1.137 | 0.069 | 0.729 | 0.741 |
+| 0.75 | 1.463 | 1.276 | 0.187 | 0.756 | 0.749 |
+| 1.00 | 1.741 | 1.432 | 0.308 | 0.756 | 0.730 |
+| 1.50 | 2.386 | 1.769 | 0.618 | 0.783 | 0.723 |
+| 2.00 | 3.075 | 2.160 | 0.915 | 0.836 | 0.719 |
+
+*Gate: control R=1 -> A2 = 1.4323 (= 1.432).* **Tightened gap statement (58's correction):** the gap does not vanish
+over the scanned 4x range and the fitted line's zero (R ~ 0.42, from GAP ~ 0.571R - 0.237) lies BELOW the scan floor
+— so "does not vanish over the scanned range" is the claim the data support, NOT "never vanishes." **The argument that
+kills (a) outright is functional-form, not range:** a baryon error is a FIXED multiplier, but the effective-R multiplier
+CR would need runs 1.2 -> 1.45 across the scan. That refutation stands on its own; the deficit is an ADDITIVE term
+absent at all R (the missing driving offset), R-proportional as a driving x baryon-loading product.
+
+**Channel 3 — POSITION TRACKING (promoted out of the footnote; 58's correction).** Control's peak position is R-STABLE
+(l_1/l_A 0.741 -> 0.719 across a 4x baryon change) while CR's CLIMBS with R (0.729 -> 0.836). This is the same absence
+a third time: a DRIVEN comb's peak is phase-set, so baryon loading barely moves it; an UNDRIVEN comb's peak is
+envelope-set, so it tracks R. It is the cleanest of the three in one respect — a purely DIFFERENTIAL prediction between
+the arms, needing no absolute calibration at all.
+
+### What is MEASURED vs INTERPRETED (kept apart)
+- **MEASURED:** the three signatures above; the control landing the sky on each (position 0.16% floor historically;
+  height alternation 0.6%; position-tracking a differential the control holds still on).
+- **INTERPRETED (natural, not proven):** that the R-proportionality of the height gap names the missing term
+  specifically as driving x baryon-loading. What is PROVEN is that it is an additive term absent at all baryon loads —
+  i.e. not a baryon error.
+
+### Ledger note
+PO-13's register row (P7 `sec:frontiers` \ref{frontier:scalar}, item 1 of three) is the framework node's to update —
+cc54 does not edit protected register rows or the grain/registry machinery. This block is the ready-to-absorb entry.
+**With PO-13 banked, OWED has one item left: 597, the reader package.**
