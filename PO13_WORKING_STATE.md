@@ -1410,3 +1410,58 @@ belongs.*
 $\ell_1/\ell_A$, $P_1/P_2$, $P_1/P_3$, $P_1/P_4$ together.* ⇒ ***A structural fix that SIMPLIFIES the
 instrument and lands two observables at once would be a different kind of result from four knobs each
 moving things partway.***
+
+### ✔ THE LAYER READING TESTED — STACKPERT=1 + HIER + ratio-at-projection (r3528, cc54)
+**58's r3527 test, run as specified.** Perturbations on the geometric (stack) rate (`STACKPERT=1` = a
+DELETION of the Hleaf radiation double-count, LEAFPERT off, no SRCSTACK/DIFFLEAF/CRAMP), evolved
+hierarchy (`HIER=1`), and the two-horizon ratio r_stack/r_leaf = 135.46/105.36 = 1.2857 applied ONCE at
+the projection (content sound-horizon -> phenomenological ruler), not inside the equation. Map form taken
+from Daryl's draft (main_3.tex sec:cosmo_synth + empirical-tests): radiation is content -- it sets the
+sound horizon and photon-baryon dynamics (local, r_leaf) but NOT the global expansion rate (geometric,
+r_stack); "transformations between the noumenological expansion and the flat-LCDM phenomenological
+expansion necessitate adjustments to the sound horizon's mapping onto BAO scales."
+
+**GATE.** control STACKPERT=1 HIER = 0.7300 / 2.254 / 2.363 -- BYTE-IDENTICAL to control HIER. STACKPERT
+is a clean no-op on the control (Hleaf==Hstack, r_leaf==r_stack, map trivial -- as a layer diffeomorphism
+should be where the layers coincide). CR shifts are real physics.
+
+| CR STACKPERT=1 HIER | l_1 | l_1/l_A | P1/P2 | P1/P3 | P1/P4 |
+|---|---|---|---|---|---|
+| raw | 172 | 0.5703 | 0.889 | 0.693 | 1.210 |
+| **mapped (x1.2857)** | **221.1** | **0.7332** | 0.889 | 0.693 | 1.210 |
+| sky | 220.6 | 0.7312 | 2.217 | 2.277 | -- |
+
+**SPLIT VERDICT -- position lands, amplitude does NOT.**
+- ✔ **POSITION LANDS, and it is the cleanest position result of the arc.** Mapped l_1/l_A = 0.7332 vs
+  sky 0.7312 (**+0.28%**), from a DELETION (perturbations on the geometric rate) plus ONE projection map
+  (r_stack/r_leaf), with NO per-term freedom -- no SRCSTACK, no clock split inside the equation. The map
+  is the layer diffeomorphism's Jacobian applied once, exactly where the draft puts it.
+- ⛔ **AMPLITUDE DOES NOT LAND -- it INVERTS.** P1/P2 = 0.889 (-60%), P1/P3 = 0.693 (-70%): the first
+  peak is SUPPRESSED below peaks 2 and 3 (heights 0.178, 0.200, 0.257 rising to peak 3). This is worse
+  than, and opposite to, the leaf-rate runs (P1/P2 = 2.7-3.4, first peak too HIGH). **The sky's P1/P2 =
+  2.217 sits BETWEEN the two rates**: geometric undershoots (peak 1 too low), leaf overshoots (peak 1 too
+  high). Neither rate lands amplitude.
+- ⌗ **The mapped comb is UNIFORM** (spacings 298, 298, 360 vs sky's alternating 318, 272, 316) -- the
+  undriven signature again.
+
+**⌘ THE HONEST READING.** 58's structural prediction was "position and amplitude move together toward the
+sky." **Position moves to the sky; amplitude moves AWAY from it.** They do not move together. The layer
+reading is a genuine and elegant win on POSITION -- it derives the first-peak position from the layer
+diffeomorphism with no fitted term-split, the cleanest such result -- but it does NOT dissolve the
+amplitude problem. On the geometric rate (the layer-correct rate) the first peak loses its driving boost
+entirely (no radiation era -> no potential-decay driving -> peak 1 suppressed), so the amplitude carries
+the FULL undriven signature. The layer reading SHARPENS PO-13 rather than closing it: position derived
+cleanly, amplitude confirmed as the genuine open residual, and now bracketed (sky between geometric and
+leaf rates).
+
+**⚠ ONE OPEN DEGREE OF FREEDOM IN THE MAP'S FORM, flagged not assumed.** The map I applied is a uniform
+angular rescale (r_stack/r_leaf on the positions), which by construction cannot change height ratios -- so
+the amplitude reported IS the raw STACKPERT=1 HIER dynamics. A DIFFERENT reading of "the map at the
+projection" -- the sound-horizon (comb) mapping to r_leaf while the SILK DAMPING keeps its OWN content
+scale (the two are different content objects, need not map by the same factor) -- would move the higher
+peaks to higher k against a fixed damping envelope, damping them MORE, which would raise P1/P2 and P1/P3
+TOWARD the sky. Whether that is the correct map form is a physics question for the draft/58, not a knob to
+turn: it requires re-projecting with the comb and damping scales separated. **Flagged for 58 to settle
+from the draft; not run unprompted.** If the draft's map carries the sound horizon and the diffusion scale
+by the SAME factor, amplitude stays inverted and the residual is genuinely the missing driving; if by
+DIFFERENT factors, the amplitude test is not yet complete.
