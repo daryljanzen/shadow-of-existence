@@ -1565,3 +1565,59 @@ but "the framework's own composition was computed and it over-drives." What is o
 full local gravity over-drives -- whether CR's radiation gravitates at less than full stress-energy in the
 local layer, or whether the position coupling means the driving phase and the amplitude cannot both be read
 off this composition. Daryl's to interpret; not a cc54 search.
+
+### ⛭ GSRC OVERSHOOT — the algebra settled, and a decomposition that revises the position claim (r3531)
+**58 accepts cc54's algebra: GSRC=1 uniform is the CORRECT full-EFE source, so the overshoot is PHYSICS,
+not artifact.** Every Omega is normalised by `_rt` (full stack) while `Hc^2` goes as rho_free, so matter's
+source term is `4 pi G rho_m (rho_free/rho_tot)` -- short by the SAME factor as radiation. The shortfall is
+the Hc^2-vs-Omega mismatch, not species-specific; the constraint `k^2 Phi = -4 pi G a^2 sum(rho_i d_i)`
+refers to ACTUAL perturbed densities, so every species belongs at rho_i/rho_free, which is what the uniform
+factor delivers. So the framework's OWN composition, computed on a determined quantity (GSRC = rho_tot/rho_free,
+nothing tunable), over-drives the sky. That is a stronger, cleaner position than a normalisation artifact.
+
+**The radiation-only run (GSRCRAD=1) is now a DIAGNOSTIC, not a candidate** -- it under-counts matter by
+standard EFE and is NOT a correct composition; it measures WHERE the over-drive lives. Gate clean
+(control 0.7300/2.254, GSRC auto-off there so GSRCRAD is a no-op).
+
+| composition | l_1/l_A | P1/P2 | P1/P3 | what gravitates in the source |
+|---|---|---|---|---|
+| GSRC=0 | 0.7294 | 0.807 | 0.680 | matter+radiation BOTH short (rho_free/rho_tot) |
+| GSRCRAD=1 | **0.7825** | 1.873 | 1.667 | radiation FULL, matter short |
+| GSRC=1 | **0.7825** | 3.665 | 2.489 | both FULL (the correct EFE source) |
+| sky | 0.7312 | 2.217 | 2.277 | -- |
+
+**⌘ THE DECOMPOSITION -- radiation DRIVES (phase+amplitude), matter is PURE AMPLITUDE.**
+- *Amplitude P1/P2:* 0.807 (both short) -> 1.873 (radiation boost) -> 3.665 (matter boost on top). The
+  radiation boost supplies 0.807->1.873; the matter boost supplies 1.873->3.665. Sky (2.217) sits BETWEEN
+  radiation-full and both-full, so the excess over-drive is substantially MATTER'S share of the source --
+  but matter's boost is REQUIRED by full EFE, so this is a handle on where the excess lives, NOT a fix.
+- *Position:* 0.7294 (radiation short) -> **0.7825 (radiation full)**, and matter's boost does NOT move it
+  (GSRCRAD and GSRC=1 both 0.7825). So restoring radiation's source gravity SHIFTS THE POSITION while
+  matter's gravity is pure amplitude. Radiation drives (resonant, phase-shifting); matter is a slow
+  potential well (amplitude, no oscillation phase).
+
+**⛔ THE REVISION cc54 OWES -- the position "landing at 0.7294" was on the SHORT source.** The clean
+position result (0.7294, -0.25%) was computed under GSRC=0, i.e. with radiation's source gravity
+UNDER-counted. Restore it to full strength (the correct EFE), and the position moves to 0.7825 (+7% over
+sky) -- because radiation's restored gravity is DRIVING, and driving shifts the acoustic phase. So under
+CR's CORRECT composition (GSRC=1), BOTH observables over-shoot: position 0.7825 (+7%), P1/P2 3.665 (+65%).
+Position is NOT independent of the source, and the earlier "position derived, lands, nothing tuned" holds
+only for the radiation-under-counted source. **This connects straight to PO-13's day-one claim** -- "the
+driving phase shift LCDM manufactures from radiation driving is, in CR, the two-horizon ratio." The layer
+MAP already supplies that phase shift geometrically; restoring radiation's full source gravity supplies it
+AGAIN, dynamically, as driving -- so the position over-shoots because the geometric map and the radiation
+driving BOTH contribute the phase shift. That looks like a DOUBLE-COUNT of the phase: the map replaces
+driving in the position story, but the full source re-adds the driving. **Crux for 58/Daryl.**
+
+**⚑ THE ODD-EVEN SIGNATURE SURVIVES, independent of all of this.** In every run the even peak sits below
+the odd (GSRCRAD heights P2=0.185 < P3=0.208; GSRC=1 P2=0.108 < P3=0.159). Getting the source amplitude
+right does not touch it -- it is a separate signature, the alternation, and it stays open on its own.
+
+**⇒ PO-13, honestly, now TWO measured open items (not one), plus a crux:** (1) the framework's correct
+full-EFE source over-drives the AMPLITUDE by +65% on P1/P2 (with the excess located substantially in
+matter's share, though matter's boost is EFE-required); (2) the same restored source over-drives the
+POSITION to 0.7825 via radiation's driving, which appears to double-count the phase shift the geometric map
+already supplies -- so the clean 0.7294 position holds only on the under-counted source; (3) beneath both,
+the odd-even alternation survives independent of normalisation. All measured on determined quantities, none
+tuned. The crux for 58/Daryl: whether CR's radiation should DRIVE at all (double-count with the map) or
+whether the geometric map should REPLACE the driving phase in the source too.
