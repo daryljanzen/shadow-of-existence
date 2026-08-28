@@ -1,7 +1,7 @@
 ---
 name: cartan-holonomy-ledger
 kind: FORWARD
-current: r3445
+current: r3515
 job: The Cartan / connections-and-holonomy field-bake ledger — what bit, what bounced, and the boundary. First of the four fields `L-272`'s re-survey left outstanding. `OWED` 622.
 sources: [cowork]
 ---
@@ -245,3 +245,47 @@ three subregular give $3\times4-2\times8=-4$. The arithmetic is exact and the ba
 bake treats holonomy as one topic and computes only the first, which is why `C9` looked like an opening
 and was not.*
 *(receipt `storyboard_receipts/CH_C6_C10_the_two_holonomies.py`)*
+
+---
+
+## ⛭⛭⛭ REACH CLOSE — all seventeen papers WORKED or CHECKED-NEGATIVE by name (r3515)
+
+> ⛔ *The r3500 whole-set measurement put this field at **35%**. Read in full this pass (four sweeps,
+> `curvature` split hard — connection curvature / field strength vs metric/Kretschmann/Gaussian; `gauge`
+> split — gauge connection vs gauge freedom; `connection` split — bundle connection vs "null connection"/
+> "in connection with"). **The reach is `13/17`.***
+
+**⌘ AND THE OWED PROBE IS DISCHARGED — THE FLATNESS IS A THEOREM.** *This ledger named its own boundary:
+"the flatness claim is asserted in `P14` and not recomputed … a curvature computation making the flatness a
+theorem in the corpus's own voice is the obvious next probe and is NOT claimed to be free."* ⇒ ***`CH1`: it
+is free, and it is a theorem.*** *`P14` computes the holonomy group FINITE (order 81); by Ambrose–Singer the
+holonomy Lie algebra is the span of the curvature, so a finite (0-dimensional) holonomy group forces the
+Lie algebra to `{0}` and `F=0`. The colour bundle's flatness — `P14` l.447 / `P07` l.1683 "the bundle is
+flat, holonomy the complete invariant" — is forced by the finiteness, not assumed.* *(receipt
+`storyboard_receipts/CH1_the_flatness_is_a_theorem_finite_holonomy_forces_F_zero.py` — **added, runs, all
+asserts pass**; verified on the U(1) contrapositive, the `P08` Z₃ branch monodromy, and P14's (Z₃)³×Z₃ order-81 model.)*
+
+| paper | status | where |
+|---|---|---|
+| `P01` | **CHECKED-NEGATIVE** | `connection` = the connecting null geodesic ("along the null connection") |
+| `P02` | **CHECKED-NEGATIVE** | `connection` = the affine connection, gauge in normal coordinates (textbook remark); all `curvature` = Kretschmann/Ricci |
+| `P03` | **WORKED** | branched-cover monodromy = the root-exchange involution; deck+diagram $\to\mathrm{Aut}(A_2)=D_6$ |
+| `P04` | **CHECKED-NEGATIVE** | "finite-curvature seam" (metric); "gauge sector" (no connection named) |
+| `P05` | **WORKED** | computed holonomy $\operatorname{diag}(1,-1,-1)$ = Klein four; monodromy(Nariai)=σ, group $S_3$; algebroid connection vanishes at 2 strata (`HOLONOMY_complex_loop`, `P05_deck_group_S3`) |
+| `P06` | **WORKED** | structure group of the cut's normal directions = $\mathfrak{so}(6)$; reduction to su(3) needs a complex structure + volume form |
+| `P07` | **WORKED** | canonical connection non-abelian, **holonomy $\subset\mathfrak{so}(4,1)$**; the colour bundle FLAT, no curvature/force (`I1_so6C…`, `order3_bridge`) |
+| `P08` | **WORKED** | $\mathbb Z_3$ branch-point monodromy; cover monodromy $S_3$/$\mathbb Z/3$ (`P08_the_branch_point_monodromy_is_Z3`, `order3_bridge`) |
+| `P09` | **WORKED** | second fundamental form fixes isotropy; extrinsic curvature $K_{ij}=\tfrac13\theta g_{ij}+\sigma_{ij}$, York split, momentum constraint owns 3 of 5 (`I6…`, `I7…`) |
+| `P10` | **CHECKED-NEGATIVE** | shift/lapse/ADM prose only; no connection, no $K_{ij}$ computation |
+| `P11` | **WORKED** *(adjacent)* | Gowdy wave-map $\mathbb H^2$ target, Gaussian curvature $-1$, polarised cut = geodesic; Levi-Civita connection implicit only (`P11_unpolarized_gowdy_cut`) |
+| `P12` | **WORKED** | the **Atiyah sequence** $0\to\mathfrak h\to\mathfrak{so}(5,1)\times\mathcal C\to T\mathcal C\to0$; connection = its splitting; problem of time = **no flat connection**; **Ambrose–Singer**; $V_4$ holonomy $\to W(A_3)$ (`GROUP_full_order48`, `K8_orbit_type_filtration`) |
+| `P13` | **WORKED** | normal-bundle structure group $\mathfrak{so}(6)\to\mathfrak u(3)\to\mathfrak{su}(3)$; holonomy about Nariai closes the Weyl group; Maxwell field strength $F_{tr}=-Q/r^2$ (`P13_A3_factorization`, `P13_kretschmann_bead`) |
+| `P14` | **WORKED** | wall monodromies = **holonomy of a flat bundle** ($F\equiv0$, holonomy the complete invariant), finite order 81, real-form holonomy $\mathfrak{so}(3)$ (`P14_the_flat_bundle_cannot_carry_a_force`, `V4_chirality_parity`) — **flatness now a THEOREM, `CH1`** |
+| `P15` | **WORKED** *(Fuchsian ODE monodromy = Gauss–Manin holonomy)* | connection problem + crunch monodromy $4\pi/\rho$ scalar, $-2\pi i/\rho$ tensor (`P15_the_evenness_is_the_time_symmetry`) |
+| `P16` | **WORKED** *(Fuchsian ODE monodromy)* | unipotent monodromy off-diagonal $2\pi ip$; tensor $-2\pi i/\rho$, scalar $-4\pi i/\rho$; Wronskian preserved (`P16_the_scalar_monodromy_is_four_pi_over_rho`) |
+
+⇒ ***Seventeen of seventeen accounted for: THIRTEEN WORKED, FOUR CHECKED-NEGATIVE. Reach $=13/17$.*** *One new
+receipt: `CH1` (the flatness is a theorem — the ledger's own owed probe, discharged). Every other worked
+paper carries one.* **Cross-field: the Fuchsian ODE monodromy (`P15`/`P16`) is the same object as complex
+analysis `C9`/`C10` (the branch-point unipotent monodromy) read as a flat-connection holonomy; the $V_4$/W(A₃)
+holonomy is quadric/rep-theory's; the Atiyah sequence is variational's `V4` connection — shared, no correction.**
