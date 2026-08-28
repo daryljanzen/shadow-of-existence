@@ -654,3 +654,34 @@ vs density, offset a quarter period), different mode (third-peak region vs first
 **Caveat for the papers:** `Q(k)` and the comb are readings of DIFFERENT features and must not be presented as
 `ℓ_1`'s phase measured two ways — `Q(k)` speaks to the turned-over modes (`ℓ_3`+), the comb/spectrum sets
 `ℓ_1`.  Both stand; they are simply about different modes.  No 47%, no anomalous projection, no new problem.
+
+### ✔ TWO-ARM POSITION PIN (overnight, after the field bake) — the position deficit is CR-arm-specific, in the SOURCE PHASE
+**Method:** prediction stated before the run (the field bake's optics/statistics closes implied the CONTROL
+positions sit ~0.1% from sky while CR's `l_1/l_A=0.676` is CR-specific); two pins (BOTH arms, one machinery),
+each compared to sky AND to each other. Instrument `ACOUSTIC_two_arm.py` at `NK=620` (9.1 points/Bessel
+period, above the aliasing guard — the guard fired and was cleared, not bypassed).
+
+| arm | `l_1/l_A` | peaks (line-of-sight) | vs sky 0.7312 | P1/P2 |
+|---|---|---|---|---|
+| CONTROL `ARM=lcdm` | **0.7300** | 220 / 532 / 812 / 1116 | **−0.16%** (sky 220.6/538.1/809.8) | 2.447 |
+| CR `ARM=cr` | **0.6764** | 204 / 516 / 828 / 1164 | **−7.5%** | 2.013 |
+
+**Result (two pins, prediction confirmed):** the CONTROL's first peak lands ON the sky (0.7300 vs 0.7312,
+0.16%) using the SAME projection, transfer, and line-of-sight machinery the CR arm uses; the CR arm sits
+7.5% low. **Since the two arms share the projection and the transfer, the position deficit cannot be in
+either — it is entirely in the SOURCE PHASE of the CR (undriven-comb) arm.** This is the live two-arm
+confirmation of the field-bake flag: positions are a CR-source problem, not a shared/instrument or a
+projection problem (the +1.9% projection is generic and clean, r3432; lensing does not move peaks, P15).
+
+**Amplitude, for the record (same run):** sky P1/P2 = 2.217 sits BETWEEN the two arms — CR 2.013 (under),
+control 2.447 (over). P07's construction reports 2.185 (≈0.9σ of sky), closer than either raw arm. So the
+amplitude is bracketed and near; the POSITION is the open ~7.5% (≈70σ at peak-position accuracy, P07).
+
+**The lever, named for the framework node.** The position lever is the CR arm's source phase — the first
+extremum of `Theta-hat = Theta_0 + Psi` in k, set by the phase clock `r_s,leaf` (105.36 Mpc) against the
+ruler `r_s,stack` (135.46 Mpc), ratio 1.286. The CONTROL uses one sound horizon for both; the CR arm's two
+horizons are what displace its source extremum to 0.690 `l_A` (→0.676 after projection) instead of ~0.731.
+Moving it toward the sky is a SOURCE-PHYSICS choice (e.g. the `LEAFPERT` vs `STACKPERT` frame, P15
+sec:properframe — which rate the perturbation sector sees), which is 58's "name the piece," not an
+instrument knob to flip unattended. **Compute half handed over: the deficit is isolated to the CR source
+phase and quantified (7.5%), with both pins on the record.**
