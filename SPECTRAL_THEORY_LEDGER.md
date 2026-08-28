@@ -43,7 +43,7 @@ what the spectrum IS.***
 | **`P10`** *canonical time* | **HIGH — CONFIRMED, worked as `S1`** | *the deficiency-index paper. `F1`–`F3` classified the **endpoints**; **nobody has asked what the spectrum of the deparametrised Hamiltonian actually is** — discrete, continuous, or mixed* |
 | **`P14`** *matter sector* | **HIGH — CONFIRMED, worked as `S2`** | *a Dirac operator with `eigenvalue` ×7; `H11` already found its wall to be the **reflectionless Pöschl–Teller pair** — one bound state plus a reflectionless continuum, which IS a spectral statement* |
 | `P07` *framework* | **MEDIUM–HIGH — CONFIRMED, worked as `S3`; and it CORRECTED `S1`** | *the tower's $\mu_n=\sqrt{n(n+2)-2}$ is a **spectrum**, and `H13` showed its floor at $n=2$ is forced* |
-| `P09` *range* | **MEDIUM** | *`eigenvalue` ×8 — of the structure functions or the Carter cut's separation constants; needs reading* |
+| `P09` *range* | **MEDIUM — CONFIRMED, worked as `S4`; the guess (separation constants) was WRONG** | *`eigenvalue` ×8 — of the structure functions or the Carter cut's separation constants; needs reading* |
 | `P15` *cosmology* | **MEDIUM** | *`WKB` ×3, `discrete spectrum` ×2 — the acoustic ladder* |
 | `P03` *slicing curve* | **MEDIUM** | *`eigenvalue` ×4 — plausibly the cubic's roots, which would be a **different** sense* |
 | `P06` *geometric core* | **MEDIUM** | *`gap` ×6, `eigenvalue` ×2* |
@@ -68,6 +68,7 @@ are results; neither is assumed.***
 | `S2` | `F14` showed the wall index is well-DEFINED — is it **STABLE**? | ⛔ **BITE** r3490, **receipted** — *yes, and a **spectral gap** is why* |
 | `S1′` | does any paper already make `S1`'s identification? | ⛔ **YES — `P07` DOES**, r3491 — ***`S1` corrected*** |
 | `S3` | how many spectral gaps does the corpus rely on? | ⛔ **TWO**, r3491 — *doing two different jobs, neither referencing the other* |
+| `S4` | what are `P09`'s eigenvalues, and of what? | ⛔ **BITE** r3492, **receipted** — *the **self-dual Weyl operator**, and its degeneracy condition is **Nariai's own algebra*** |
 
 ---
 
@@ -175,3 +176,41 @@ of three from perturbation — and neither paper references the other.***
 
 ⍀ *And in both cases the gap is not tuned: the tower's is set by the $S^3$ Laplacian's floor, the
 wall's by the asymptotic mass. **Both are consequences of the geometry rather than choices.***
+
+---
+
+## ⛔⛭⛭⛭ S4 — **NARIAI AND PETROV TYPE D ARE THE SAME ALGEBRAIC EVENT ON TWO DIFFERENT CUBICS**
+
+*`P09` was estimated **MEDIUM** with the guess that its `eigenvalue` ×8 would be separation constants.*
+⛔ ***The guess was wrong.*** *They are the eigenvalues of the **self-dual Weyl operator**:* ***"a
+geometry is algebraically special exactly when the speciality discriminant $I^3-27J^2$ vanishes —
+equivalently, when two of the three eigenvalues of the self-dual Weyl operator coincide."***
+
+**⌘ AND THE ALGEBRA IS ONE ALGEBRA.** *A traceless $3\times3$ operator has characteristic polynomial
+$\lambda^3+p\lambda+q$ with discriminant $-4p^3-27q^2$, vanishing exactly when two eigenvalues
+coincide.*
+
+| | the cubic | $p$, $q$ | vanishing means |
+|---|---|---|---|
+| **`P09`** | the self-dual Weyl operator's char. poly. | $I$, $J$ | **Petrov type D** — two Weyl eigenvalues coincide |
+| **`P03`** | $r^3-\alpha^2r+2M\alpha^2$ | $-\alpha^2$, $2M\alpha^2$ | **Nariai** — two horizons coincide |
+
+*Verified: the horizon cubic's discriminant $-4\alpha^4(27M^2-\alpha^2)$ is **identical** to
+$-4p^3-27q^2$ at those values.*
+
+⇒ ***So the two conditions are the same algebraic event: a depressed cubic's discriminant vanishing,
+two of three coinciding.*** **And both live on the same geometries** — *Schwarzschild–de~Sitter is
+Petrov type D everywhere (`P09` verifies it) and is the family whose horizon cubic degenerates at
+Nariai (`P03`).* ***The corpus computes both discriminants, in two papers, for two purposes, and
+neither notes they are one statement.***
+
+**⌘ AND THAT MAKES THREE READINGS OF ONE VANISHING:**
+
+| | |
+|---|---|
+| two **horizons** merging | `P03` |
+| the **wall** of the $A_2$ Weyl chamber | the harmonic bake's `L8.5` / `H`-ledger |
+| an **algebraically special** geometry | `P09`, on the *other* cubic |
+
+*(receipt `storyboard_receipts/SP_S4_two_discriminants_one_event.py` — **added, runs, all asserts
+pass**)*
