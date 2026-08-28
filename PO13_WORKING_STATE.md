@@ -1056,3 +1056,68 @@ or seam (P1/P3 exact, position 0.7560); (b) whether the position moving under th
 the true consistent position or the IC over-corrects; (c) the residual is now specifically the 2nd/even peak (P1/P2
 high, P1/P3 exact) -- the alternation, not a broadband shape. Every principled lever is now exercised and the residual
 is isolated to one feature.
+
+### ✔ KCONT=1 under seam + the odd-even HEIGHT-alternation measurement (58's two checks, r3523)
+**58's correction accepted first:** the falsification criterion "if the position moves, the IC touches the phase" was
+WRONG -- the projected peak position is a CENTROID of the k-envelope, not the oscillation phase, so any
+amplitude-envelope change reweights k and moves the centroid with the phase untouched. DAMPX (pure damping scale, zero
+phase content) moved 0.7294->0.7560 identically to DIFFLEAF: proof. And 220 vs 228 are ONE comb-rung apart -- three
+unrelated operations (DIFFLEAF, DAMPX, seam) all land 228, flat lands 220 -- so there is no continuous +3.4% residual,
+only a rung question. Honest position report from here on: *"l_1 = 220 or 228 depending on the high-k envelope; sky
+220.6; rung spacing ~8,"* NOT "closed at 0.7294/0.7560."
+
+**CHECK 1 -- KCONT=1 (does the position depend on the discreteness of CR's ladder?).** Runs on the full seam
+composition (`ARM=cr SRCSTACK=vel DIFFLEAF=1 HIER=1 CRAMP=seam PISRC=1 NK=620`):
+
+| CR seam | l_1 | l_1/l_A | P1/P2 | P1/P3 | modes |
+|---|---|---|---|---|---|
+| discrete ladder | 228 | 0.7560 | 2.727 | 2.277 | (sqrt(L(L+2)) ladder) |
+| KCONT=1 continuum | 228 | 0.7560 | 2.726 | 2.277 | 1860 dense |
+
+**IDENTICAL to four digits.** The discrete ladder is NOT what puts the peak at 228 -- dense continuum sampling lands
+the same place. So 228 is a physical envelope centroid, not an aliasing/discreteness artifact; the corpus's KCONT
+guard (l.1014) passes under seam. The 228-vs-220 choice is set by the high-k ENVELOPE (flat->220, seam/damping->228),
+not by the comb's coarseness.
+
+**CHECK 2 -- odd-even HEIGHT alternation, CR vs control vs sky, all under seam.** Metric A2 = height of the odd
+(P1-P3) envelope interpolated to the 2nd-peak position, divided by the actual 2nd-peak height. A=1 -> even peak sits ON
+the odd trend (NO alternation, uniform comb); A>1 -> even peak depressed by (A-1). Same metric on all three arms:
+
+| arm | A2 (2nd pk) | A4 (4th pk) | P1/P2 | P1/P3 |
+|---|---|---|---|---|
+| sky (Planck ratios) | **1.423** | -- | 2.217 | 2.277 |
+| CONTROL seam (driven) | **1.432** | 1.935 | 2.254 | 2.363 |
+| CR seam (undriven) | **1.741** | 2.312 | 2.727 | 2.277 |
+| CR seam KCONT | 1.740 | 2.312 | 2.726 | 2.277 |
+
+**TWO findings, one a correction of my own framing:**
+
+1. **The control REPRODUCES the sky's height alternation: A2 = 1.432 vs sky 1.423 (0.6%).** The two-arm machinery is
+   now validated on the HEIGHT observable, not only position -- a clean gate pass. (The raw ratios agree less well --
+   control P1/P3=2.363 vs 2.277, 3.8% -- because A2 divides out the common damping envelope that the raw ratio carries.)
+
+2. **CR does NOT under-alternate -- it OVER-alternates.** A2 = 1.74 vs sky 1.42: CR's 2nd peak is ~23% TOO LOW, not too
+   high. So the surface phrasing "CR is a uniform comb where the sky alternates" is CORRECT for SPACING (CR's comb is
+   unshifted/uniform, the sky's is driving-shifted) but WRONG for HEIGHTS -- in heights CR is MORE depressed at the
+   even peaks, not flat. Robust to discreteness (KCONT A2 1.740 vs 1.741).
+
+**THE READING (why this is still "one claim," correctly stated).** A smooth-in-k amplitude lever -- the seam IC, or any
+envelope reweighting -- is MONOTONIC in k, so it can lift the odd peaks OR the even peaks onto the sky but NOT both,
+because the sky's peak heights ALTERNATE (P2 low, P3 up, P4 low...) and a smooth mechanism cannot manufacture
+alternation. Under seam the smooth lift is tuned to the odd peaks (P1/P3 = 2.277 exact); the even peaks then come out
+where the smooth lift leaves them -- ~23% below the sky. So *the residual after any smooth lever is exactly the
+non-smooth (alternating) part*, and that alternating part IS the radiation driving. CR lacks the driving, so it lacks
+BOTH driving signatures: the comb-shift in spacing (CR uniform, sky shifted) AND the even-peak boost in height (CR
+over-depressed, sky/control at A2~1.42). Two signatures, one absence -- but they point OPPOSITE ways (less structure in
+spacing, more depression in height), which is why "uniform in both" was the wrong way to say it. The control carrying
+the driving reproduces the sky in BOTH channels; CR carrying no driving departs in BOTH. That is PO-13's day-one claim,
+now confirmed in a second independent observable (heights) with a validated control -- and the confirmation is that the
+alternation is precisely what no smooth CR lever can supply, not that CR's heights are flat.
+
+**Flag for 58:** (a) the phrasing correction is on the record -- CR over-alternates in height, it is not flat; the
+"one claim" stands as *"the alternation is the driving, and no smooth CR lever supplies it"* rather than *"CR is uniform
+in both."* (b) Control now validated on heights (A2 0.6% from sky), so the CR even-peak deficit is a genuine
+arm-difference, not machinery. (c) Position: 220 or 228 is a rung, set by envelope, not discreteness (KCONT identical);
+stop quoting either as "closed." (d) Next natural check, if you want it: does the even-peak deficit scale with the
+baryon load R (the alternation's amplitude) the way a missing driving-times-baryon-loading term would -- an RBFAC scan,
+CR and control, reading A2 vs R -- which would pin the deficit to the driving-baryon product quantitatively.
