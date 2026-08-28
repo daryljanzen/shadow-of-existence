@@ -3,7 +3,7 @@ kind: REFERENCE
 job: complex analysis and monodromy against CR — the field that turned practices into theorems
 name: complex-analysis-ledger
 description: R-M's third field bake — complex analysis and monodromy thrown at CR. Opened r1867 (Phase 8), handed to by the quadric bake's Q4 (equianharmonic ⟺ j=0 ⟺ CM by ω). Discharges R-M arc station Ⓒ, marked NO ENTRY since r1805. Baseline, probes, four-part close.
-current: r3506
+current: r3507
 ---
 
 > **▣ REFERENCE — R-M's third field bake, and part of the corpus.** *Complex analysis and monodromy.
@@ -774,3 +774,81 @@ asserts pass**)*
   passage:* "The monodromy is unipotent because $r=0$ is a **regular singular point whose indicial
   exponents differ by an integer** (the resonant, logarithmic case of Fuchs's theorem); the off-diagonal
   $2\pi i p$ is $2\pi i$ times the log-coefficient." **Paper edit is `P16`-holder's call, not applied here.**
+
+
+## ⛭⛭⛭ C10 — **TWO MONODROMIES AT r=0, SEPARABLE ONLY ACROSS PAPERS** (P08, P10, P15, and §4a)
+
+*Reading `P08`, `P10`, `P15` for reach put four statements about the one point $r=0$ in a single view.*
+
+**⌘ THE BACKGROUND MONODROMY IS THE CUBE-ROOT BRANCH OF THE SCALE FACTOR.** *`P08`: "the whole branch
+structure of $r$ sits in $u^{2/3}$: one circuit multiplies $r$ by $e^{4\pi i/3}$ … a $\mathbb Z_3$
+monodromy" (`\rcpt{P08_the_branch_point_monodromy_is_Z3}`). `P15`: $r(\tilde\tau)=A\sinh^{2/3}(b\tilde\tau)$
+is "one analytic function … the branch point at $\tilde\tau=0$ … onto a conjugate branch at constant
+phase $2\pi/3$".* ⇒ ***Verified: branch order 3, one circuit $\times e^{4\pi i/3}$, conjugate branch phase
+$2\pi/3$, three sheets — $\mathbb Z_3$.*** **And it is THE SAME cube-root cover $w^3=z$ this ledger worked
+at §4a** (deck $\mathbb Z_3$, monodromy $S_3$), now recognised in the cosmology's own scale factor:
+`P08`'s $e^{4\pi i/3}$ and `P15`'s phase $2\pi/3$ are the two determinations of one cube root.
+
+**⌘ AND `P10`'s FINITE ACTION IS THAT SAME $2/3$.** *"near the branch point $|r|\propto s^{2/3}$, so the
+integrand grows only as $s^{-2/3}$" and $\int_0^{\pi\alpha/3}\mathrm ds/|r|=3.3387\,\alpha^{-1}$.* ⇒
+$-2/3>-1$, so the cube root that gives the $\mathbb Z_3$ monodromy is what makes the Euclidean action
+converge. *(`P10` also carries the indicial pair $x^{1/2\pm\nu}$, $\nu=\sqrt{\gamma+\tfrac14}$ at the
+DISTINCT regular singular point $a=0$ — this bake's `L-542` already, the $-1/4$ threshold.)*
+
+**⌘ THE PERTURBATION MONODROMY AT THE SAME POINT IS UNIPOTENT (`C9`/`P16`), AND IT IS A DIFFERENT
+OBJECT.** *A finite-order diagonalisable $\mathbb Z_3$ (background areal radius) and an infinite-order
+unipotent $(M-I)^2=0$ (perturbation mode pair) are two monodromies at one point.* ***The cross-paper read
+is the only thing that separates them*** — `P08`/`P15` carry the background, `P16` the perturbation.
+*(receipt `storyboard_receipts/CA_C10_two_monodromies_at_the_branch_point.py` — **added, runs, all
+asserts pass**)*
+
+## ⛭⛭ C11 — **`P12`'s "RESIDUE PAIRING" IS RESIDUES, AND ITS $V_4$ HOLONOMY IS $\sqrt\Delta$ MONODROMY**
+
+*`P12` (algebroid): "the residue pairing … diagonal, entries $1/f'(r_i)$, signature $(2,1)$ … non-trivial
+holonomy about the Nariai points, the Klein four-group $V_4$ of even sign changes, … the per-root
+resolution of $\sqrt\Delta$".* ⌘ **The field names all three the paper does not:** *(1)* $1/f'(r_i)=
+\operatorname{Res}_{r_i}(1/f)$ at a simple root — **the pairing is by residues, exactly**; *(2)* the
+Nariai points are the **branch points of $\sqrt\Delta$** (a double root ⇒ square-root branch), the
+even sign changes of the three radicals form the even-weight subgroup of $(\mathbb Z_2)^3$ — order 4,
+elementary abelian — **$V_4$**, and that is the **monodromy of $\sqrt\Delta$**.
+⌷ **REFERRED, not claimed:** the group ORDERS (24 with $S_3$, 48 with orientation parity, $W(A_3)=T_d$,
+six improper order-4 elements) are the **quadric/group bake's**, already receipted
+(`GROUP_full_order48`, `EMBEDDING_is_Td_equals_WA3`).
+*(receipt `storyboard_receipts/CA_C11_the_residue_pairing_is_residues.py` — **added, runs, all asserts
+pass**)*
+
+## ⛔ THE FOUR CHECKED-NEGATIVE PAPERS — by name, with what each candidate term is
+
+| paper | verdict | what the candidate terms actually are |
+|---|---|---|
+| **`P04`** *(modern_parallax)* | **CHECKED-NEGATIVE** | ZERO occurrences of any complex-analysis term in the body. |
+| **`P06`** *(shadow_of_existence)* | **CHECKED-NEGATIVE** | `analytic continuation` ×1 = a bare `\cite{JanzenCircle}` cross-reference, no in-paper claim; `contour` ×5 = the cosmogenetic contour (physics path); `branch point` = the $r=0$ collapse→expansion locus; `pole` = the Mercator North Pole. |
+| **`P09`** *(range_paper)* | **CHECKED-NEGATIVE** | `entire` = "whole" (the Weyl class), not an entire function; `unipotent` = Lie-algebra unipotent radical of $\mathfrak{so}(4,1)$; `contour`/`branch point`/`pole` all physics (contour path, $r=0$, de Sitter axis poles). |
+| **`P11`** *(dynamics_paper)* | **CHECKED-NEGATIVE** | `branch point`/`analytic continuation` **asserted only**, deferred to `P02`/`P03`/`P07` — no order, residue, monodromy or pole order computed in-paper; `Cauchy` = PDE Cauchy problem; `unipotent` = Lie radical; `residue` = leftover ($CPT$); `conformal` = the conformal factor. |
+
+## ⛭⛭⛭ REACH CLOSE — all seventeen papers WORKED or CHECKED-NEGATIVE by name (r3506)
+
+| paper | status | where |
+|---|---|---|
+| `P01` | WORKED | Shale's criterion behind its dismissal (`F20`); named earlier |
+| `P02` | WORKED | `C5` — meromorphic Kretschmann, poles of order twelve |
+| `P03` | WORKED | §4a — reality axis, growth/order at infinity; landed in P3 |
+| `P04` | **CHECKED-NEGATIVE** | zero occurrences |
+| `P05` | WORKED | `C6` — the Möbius seam continuation |
+| `P06` | **CHECKED-NEGATIVE** | bare cite + physics homonyms |
+| `P07` | WORKED | `C7` — the Euclidean action's sign from the closed lap |
+| `P08` | WORKED | `C10` — $\mathbb Z_3$ cube-root monodromy of the branch point |
+| `P09` | **CHECKED-NEGATIVE** | "entire"=whole, unipotent=Lie radical, physics homonyms |
+| `P10` | WORKED | `C10` — $s^{-2/3}$ integrability = the cube-root exponent; indicial $x^{1/2\pm\nu}$ at $a=0$ (`L-542`) |
+| `P11` | **CHECKED-NEGATIVE** | branch point asserted only; Cauchy/unipotent/residue/conformal homonyms |
+| `P12` | WORKED | `C11` — residue pairing = residues; $V_4$ = $\sqrt\Delta$ monodromy |
+| `P13` | WORKED | `C8` — three seam operations separated by route on the sphere |
+| `P14` | WORKED | named throughout (monodromy rigidity, the twist); the field's opening handoff |
+| `P15` | WORKED | `C10` — cube-root branch of the scale factor (phase $2\pi/3$); crunch monodromy = `C9`/`P16` in closed form |
+| `P16` | WORKED | `C9` — Fuchsian unipotent monodromy, indicial $(0,1)$ |
+| `p0`  | WORKED | the global Wick rotation / $SO(6,\mathbb C)$ real forms; named earlier |
+
+⇒ ***Seventeen of seventeen accounted for: THIRTEEN WORKED, FOUR CHECKED-NEGATIVE.*** *Reach $=13/17$;
+the field is at the READING standard.  New receipts this pass: `C9`, `C10`, `C11` (all run, all pass);
+`C5`–`C8` from the r3501 re-open.  Cross-field: `C11`'s group orders REFERRED to the quadric bake
+(already receipted there); no correction owed to another field's entry.*
