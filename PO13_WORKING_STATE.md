@@ -1465,3 +1465,57 @@ turn: it requires re-projecting with the comb and damping scales separated. **Fl
 from the draft; not run unprompted.** If the draft's map carries the sound horizon and the diffusion scale
 by the SAME factor, amplitude stays inverted and the residual is genuinely the missing driving; if by
 DIFFERENT factors, the amplitude test is not yet complete.
+
+### ⛭⛭ STRUCTURAL RESULT — the layer map fixes POSITION and cannot in principle touch AMPLITUDE (r3529)
+**58 concedes cc54's projection argument, and it CLOSES a branch rather than leaving one open.** Both the
+comb (in Y, oscillating in k_b, scale r_s) and the damping (D = exp(-k_b^2 kD2inv), scale k_D) live in the
+SAME source S(k_b), as functions of the same k_b. The only projection-side lever is the distance x0.
+Scaling x0 by f gives C_l(l) -> C_l(l/f): a UNIFORM stretch -- every peak moves by f, every height ratio
+preserved. For the damping to bite differently RELATIVE to the comb, the map would have to carry r_s and
+k_D by DIFFERENT factors -- which is the two-factor reading declined one step earlier on structural
+grounds (a diffeomorphism carries every content length by ONE Jacobian; two factors are not a map). **One
+factor cannot move heights; two factors are not a map.** So the layer map fixes position and CANNOT reach
+amplitude. The amplitude residual is not a projection question -- it is dynamics, and no reading of the map
+reaches it. **Branch closed.**
+
+**MEASUREMENT that settles the aliasing question (58's request before we stop).** PROJMAP implemented as a
+genuine re-projection (x0*PROJMAP inside the Bessel, both HIER and fluid paths), CR only (trivial on
+control):
+
+| CR STACKPERT=1 HIER | sampling | l_1/l_A | P1/P2 | P1/P3 | peaks |
+|---|---|---|---|---|---|
+| raw (no map, discrete ladder) | ok | 0.5703 | 0.889 | 0.693 | [172,404,636,916] |
+| PROJMAP=1.2857, discrete ladder | **2.3 pts/period -> ALIASED** | 0.7560 | 1.247 | 1.369 | [228,**316,348**,532] |
+| **PROJMAP=1.2857, KCONT (clean)** | **9.1 pts/period** | **0.7294** | **0.807** | **0.680** | [220,532,820,1180] |
+| sky | -- | 0.7312 | 2.217 | 2.277 | 220.6/538.1/809.8 |
+
+⇒ *The aliased height change (1.247) was an ARTIFACT (spurious 316/348 peaks from under-sampling the
+enlarged effective distance). Properly sampled (KCONT), the map moves POSITION to 0.7294 (**-0.25%** from
+sky) and leaves the heights INVERTED (0.807/0.680, ~unchanged from 0.889/0.693). Confirmed: the map lands
+position, not amplitude.*
+
+**⇒ WHAT STANDS — the cleanest result of the arc, and it does not depend on the amplitude.** The
+first-peak POSITION, from a DELETION (perturbations on the geometric rate, STACKPERT=1) plus ONE derived
+factor (r_stack/r_leaf at the projection), lands at **0.7294 vs sky 0.7312 (-0.25%)**, with NOTHING tuned
+and a control on which the map is PROVABLY trivial (r_leaf==r_stack there). Position is derived, not fitted.
+
+**⇒ WHAT IS OPEN — sharply, and it is a DYNAMICS question, not ours to search.** The amplitude BRACKETS
+the sky between the two rates:
+
+| | P1/P2 | P1/P3 |
+|---|---|---|
+| geometric rate (STACKPERT) | 0.807-0.889 | 0.680-0.693 |
+| **sky** | **2.217** | **2.277** |
+| leaf rate (LEAFPERT) | 2.7-3.4 | -- |
+
+*The two rates differ by EXACTLY the radiation term. The POSITION says the rate is geometric
+(unambiguous). The AMPLITUDE says neither "radiation out of the rate" nor "radiation in the rate"
+describes the perturbation DYNAMICS -- the sky sits between them.*
+
+**⚑ 58's OPEN QUESTION for Daryl (not a cc54 search).** The instrument has only two settings: radiation IN
+the rate (Hleaf) or OUT of the rate (Hphys/Hc). It has NO way to express the draft's THIRD thing:
+**geometric expansion rate AND radiation's LOCAL gravity (the full-EFE local layer where the plasma's own
+gravity acts).** The draft says these are different objects -- the expansion is geometric (radiation does
+not set it, threshold principle) while the perturbation's local dynamics obey the full EFE with radiation
+gravitating as content. If that composition is what CR actually asserts, then NEITHER bracket endpoint is
+CR, and the amplitude has never been computed for the framework as written. This is Daryl's to direct.
