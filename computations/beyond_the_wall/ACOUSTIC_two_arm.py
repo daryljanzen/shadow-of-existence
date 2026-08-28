@@ -129,7 +129,15 @@ Jac_of = CubicSpline(eg, Hphys(ag) / Hleaf(ag))                    # d eta_leaf 
 # from LEAFPERT (which moves the whole equation to the leaf); the two are alternative operations and
 # should not both be set.  Identically 1 in the lcdm arm, a provable no-op. **
 PHASEONLY = os.environ.get('PHASEONLY', '0') == '1'
-Phi2_of = CubicSpline(eg, (Hphys(ag) / Hleaf(ag)) ** 2 if PHASEONLY else np.ones_like(ag))
+# ** PHASEPOW: the POWER of the clock factor phi = H_stack/H_leaf carried by the restoring term.
+# The default 2 is the frequency reading -- the pressure term goes as k^2 c_s^2, so a clock on the
+# frequency enters squared.  PHASEPOW=1 is the SOUND-SPEED reading: the clock enters c_s once, not
+# k c_s twice.  Added r3511 (58) as a DIAGNOSTIC to bracket the two readings, after PHASEONLY=1 (phi^2)
+# was found to OVERSHOOT the sky (l_1/l_A = 0.8090 against 0.7312) where LEAFPERT undershoots
+# (0.6764) -- so the sky lies BETWEEN the two operations and the physical question is which power
+# the restoring term carries.  Identically 1 in the lcdm arm for any power, so still a no-op there. **
+PHASEPOW = float(os.environ.get('PHASEPOW', '2'))
+Phi2_of = CubicSpline(eg, (Hphys(ag) / Hleaf(ag)) ** PHASEPOW if PHASEONLY else np.ones_like(ag))
 # ** SRCSTACK (diagnostic, requires LEAFPERT): the layered-ontology division of the ONE perturbation
 # equation between the two clocks.  L1 (stacking/geometry) is the gravitational potential Phi; L2
 # (leaf/content) is the plasma.  LEAFPERT puts the WHOLE equation on the leaf and undershoots the
