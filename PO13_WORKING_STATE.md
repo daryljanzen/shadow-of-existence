@@ -1494,10 +1494,13 @@ enlarged effective distance). Properly sampled (KCONT), the map moves POSITION t
 sky) and leaves the heights INVERTED (0.807/0.680, ~unchanged from 0.889/0.693). Confirmed: the map lands
 position, not amplitude.*
 
-**⇒ WHAT STANDS — the cleanest result of the arc, and it does not depend on the amplitude.** The
+**⇒ WHAT STANDS — ~~the cleanest result of the arc~~ — STRUCK/CORRECTED r3532 (see the correction block
+at the end): this 0.7294 was computed on GSRC=0, the source that UNDER-counts radiation's gravity. On the
+CORRECT full-EFE source the driven position is 0.7825 (+7%). The "cleanest result of the arc" framing was
+mine and it is retracted; the position was clean but computed on the wrong source.** ~~The
 first-peak POSITION, from a DELETION (perturbations on the geometric rate, STACKPERT=1) plus ONE derived
-factor (r_stack/r_leaf at the projection), lands at **0.7294 vs sky 0.7312 (-0.25%)**, with NOTHING tuned
-and a control on which the map is PROVABLY trivial (r_leaf==r_stack there). Position is derived, not fitted.
+factor (r_stack/r_leaf at the projection), lands at 0.7294 vs sky 0.7312 (-0.25%), with NOTHING tuned
+and a control on which the map is PROVABLY trivial (r_leaf==r_stack there). Position is derived, not fitted.~~
 
 **⇒ WHAT IS OPEN — sharply, and it is a DYNAMICS question, not ours to search.** The amplitude BRACKETS
 the sky between the two rates:
@@ -1621,3 +1624,55 @@ already supplies -- so the clean 0.7294 position holds only on the under-counted
 the odd-even alternation survives independent of normalisation. All measured on determined quantities, none
 tuned. The crux for 58/Daryl: whether CR's radiation should DRIVE at all (double-count with the map) or
 whether the geometric map should REPLACE the driving phase in the source too.
+
+### ⛭⛭ THE MAP IS OWED, NOT A DOUBLE-COUNT — decisive test + record correction (r3532)
+**58's reframing, and it is right: "should radiation drive?" is the wrong question.** Driving is not
+optional -- a perturbed radiation density gravitates, Phi responds, the oscillator feels it; that is the
+full EFE on the local layer and CR asserts it (draft commitment iv). And the two-horizon ratio was never a
+phase shift: it is the MAP between the content sound horizon and the phenomenological ruler -- a units
+conversion between layers, owed regardless of the source. It only LOOKED like a driving phase shift because
+we applied it to a source with radiation's gravity under-counted (GSRC=0): the undriven comb at 0.5703
+times 1.286 landed near the sky, so the conversion appeared to supply the driving. It didn't; the driving
+was simply absent and the two numbers happened to be close.
+
+**THE DECISIVE TEST -- GSRC=1 HIER KCONT, NO projection map (the raw driven position).** Gate: control
+unchanged (GSRC auto-off there). 58's discriminant: if the map is a genuine layer conversion it is owed
+regardless of the source, so removing it should make the position WORSE (raw driven comb below sky, map
+carries it up); if instead the raw driven position lands NEAR the sky on its own, map and driving supply
+the same thing and one is spurious.
+
+| CR STACKPERT=1 GSRC=1 | l_1/l_A | P1/P2 | P1/P3 |
+|---|---|---|---|
+| raw, NO map | **0.6499** | 4.094 | 2.551 |
+| WITH map (x1.286) | 0.7825 | 3.665 | 2.489 |
+| sky | 0.7312 | 2.217 | 2.277 |
+| *(for contrast: GSRC=0 raw 0.5703 -> mapped 0.7294)* | | | |
+
+⇒ ***The raw driven position is 0.6499 -- BELOW the sky by -11%, NOT near it.*** So the map is **OWED**:
+the driven comb sits below the sky and the ruler conversion carries it up past. **It is NOT a double-count.**
+The framework's actual prediction is driven dynamics (raw 0.6499) converted to the observer's ruler
+(x1.286) = 0.7825, and that is **+7% high**. Radiation's driving alone moves the raw comb 0.5703 -> 0.6499
+(partway to the sky, a real phase shift); the map carries the rest and overshoots. Both are owed, neither
+is spurious, and the framework's composition lands 7% high on position -- a far cleaner statement than
+"one effect applied twice."
+
+**⛔ RECORD CORRECTION (cc54, propagated).** Three earlier "cleanest result of the arc / cleanest position
+result" framings (this file, the layer-reading and structural-result blocks) are RETRACTED. That framing
+was mine. The 0.7294 position was clean but computed on **GSRC=0 -- the source we now agree under-counts
+radiation's gravity**. On the correct full-EFE source the position is **0.7825, +7%**. The position result
+must be read as GSRC=0-dependent everywhere it appears above; the struck marker at "WHAT STANDS" points
+here.
+
+**⇒ PO-13, corrected and honest, on the framework's OWN composition (geometric rate + full-EFE local
+source, GSRC=1, all determined):**
+1. **Position: 0.7825, +7% high** -- driven dynamics + owed ruler conversion, nothing tuned. (The earlier
+   -0.25% was on the under-counted source.)
+2. **Amplitude: over-driven, P1/P2 ~3.7-4.1 (+65-85%)** -- the correct full source over-boosts the first
+   peak; the excess sits substantially in matter's EFE-required share.
+3. **Odd-even alternation: surviving underneath, untouched by any normalisation** -- P2 < P3 in every run;
+   the one signature independent of the source question, and the last thing standing when it is settled.
+
+All three measured on determined quantities, none tuned. The framework as written reproduces the sky's
+STRUCTURE (peaks in the right places to ~7%, first peak dominant) but OVER-DRIVES both position and
+amplitude, with a residual odd-even alternation beneath. That is the honest state: not closed, not a
+fitting failure -- the framework's own composition computed and found 7-65% high, carried open on its merits.
