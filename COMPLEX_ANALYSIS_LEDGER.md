@@ -674,3 +674,38 @@ metric never degenerates. In this language that is immediate — the numerator i
 $\alpha^2$, so the map's zero sits at $u=\infty$, **not at the seam**.* ***`P05` asserts invertibility;
 `S7` finds no degeneracy; both are one property of one Möbius map, and neither paper names it.***
 *(receipt `storyboard_receipts/CA_C6_the_seam_is_mobius.py` — **added, runs, all asserts pass**)*
+
+## ⛔⛭⛭ C7 — **THE EUCLIDEAN ACTION'S SIGN IS FORCED BY THE LAP'S CLOSURE, NOT CHOSEN**
+
+*`P07` carries this field's largest count (×113) and was unread.* ⌗ **Its `sheet` ×8 is a HOMONYM** —
+*the "upper **sheet** of $\mathrm{dS}_4$", a hyperboloid sheet, not a Riemann sheet.* ⛔ *But its
+`contour` ×22 is genuine, and carries the flagship claim:* ***"its Euclidean action is finite and
+NEGATIVE, $S_E=-0.0481\,\alpha^2/G$: the Hartle–Hawking sign, yielding an enhanced rather than
+suppressed weight, and obtained here FROM A CONTOUR THE CONSTRUCTION ALREADY POSSESSED rather than from
+a boundary condition imposed on a path integral."***
+
+**⌘ THE FIELD'S QUESTION.** *A Euclidean action obtained by rotating a contour has a sign that depends
+on **which way the contour turns** — $t\to+i\tau$ and $t\to-i\tau$ give $S_E$ of opposite sign.* ***So is
+the sign forced, or chosen?***
+
+**⌘ THE ANSWER IS THE BEAD'S CLOSURE.** *`P07`'s flagship theorem is that the slicing curve is a
+**closed** lap — "one continuous closed slicing curve of the substrate, the cosmogenetic bead", with
+"cosmic time carrying the phase through a **bounded contour** across the lap".*
+⇒ ***On a closed contour there is no endpoint, hence no boundary term to choose.*** *The integral of a
+total derivative around a closed contour vanishes, so the action's value is fixed by what the contour
+**encloses** and by its **orientation** alone — and the orientation is the lap's own, set by the
+geometry rather than by a prescription.*
+
+**⌘ AND IT IS THE SAME STRUCTURE `S9` FOUND, IN A DIFFERENT FIELD:**
+
+| | closure | freedom removed |
+|---|---|---|
+| `S9` *(spectral)* | the **leaf** is closed | no boundary → **no APS $\eta$ term** to choose |
+| `C7` *(complex)* | the **lap** is closed | no endpoint → **no boundary term in $S_E$** to choose |
+
+⇒ ***One closure, two freedoms removed, in two different fields — and the corpus's own
+"obtained from a contour the construction already possessed" is exactly this, said once.***
+
+*(the sign's consequence: weight $e^{-S_E}=e^{+0.0481\alpha^2/G}$, **enhanced**, which is what "the
+Hartle–Hawking sign, yielding an enhanced rather than suppressed weight" asserts; a flip would give
+suppression.)*
