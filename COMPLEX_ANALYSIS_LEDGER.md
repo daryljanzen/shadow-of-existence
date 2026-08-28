@@ -709,3 +709,30 @@ geometry rather than by a prescription.*
 *(the sign's consequence: weight $e^{-S_E}=e^{+0.0481\alpha^2/G}$, **enhanced**, which is what "the
 Hartle–Hawking sign, yielding an enhanced rather than suppressed weight" asserts; a flip would give
 suppression.)*
+
+## ⛔⛭⛭⛭ C8 — **THE THREE SEAM OPERATIONS, SEPARATED BY THEIR ROUTE ON THE SPHERE**
+
+*`P13` carries `Wick` ×33 and `residue` ×30.* ⌗ **The `residue`s are the LEFTOVER sense** — *"the
+skeleton's residue exceeds the route", "the substrate's one discrete residue" — **not** the residue of
+a pole.* ⛔ *But `Wick` is genuine, and `P13` states this field's own problem:* ***"Three operations
+co-localised at the seam must be kept apart: that real Weyl reflection, which fixes the signature and
+the geometry; the seam continuation, which flips the signature of a single direction; and the Wick
+rotation"*** — *with* ***"the candidate real involution is a Weyl reflection, demonstrably NOT the Wick
+rotation."***
+
+⌘ **`C6` established what the seam continuation IS. So all three can now be separated by their route
+on the Riemann sphere:**
+
+| | route | signature |
+|---|---|---|
+| **Weyl reflection** | stays on the **real axis**, no motion | **fixed** |
+| **Wick rotation** $t\to e^{i\theta}t$ | through **complex** values: $+1\to i\to-1$, turning at $i$; **never visits $\infty$** | flipped |
+| **seam continuation $\xi$** | stays **real** throughout, flips by passing through **$\infty$**; **never takes a complex value** | flipped |
+
+⇒ ***Wick and $\xi$ flip the SAME sign by GEOMETRICALLY DIFFERENT ROUTES — one turns through the
+imaginary axis, the other passes through the point at infinity.*** *That is `P13`'s "demonstrably not
+the Wick rotation", now with the reason, and it is a statement only this field can make.*
+
+⌗ *And it completes the pair with `C6`: `C6` showed $\xi$ is Möbius and its flip is through $\infty$;
+`C8` shows that is exactly what distinguishes it from the Wick rotation the corpus is careful to say it
+is not.*
