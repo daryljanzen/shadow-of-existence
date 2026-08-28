@@ -1,7 +1,7 @@
 ---
 name: involution-real-forms-ledger
 kind: FORWARD
-current: r3176
+current: r3513
 job: The involution / real-forms field-bake ledger — what bit, what bounced, and the boundary. The field `L-277`'s unclaimed-surface probe named, and the first bake not drawn from a pre-existing list. `OWED` 622.
 sources: [cowork]
 ---
@@ -146,3 +146,59 @@ convenient reading stand.*
 ⛔ **AND THE ONE THING THIS BAKE MUST NOT BE READ AS SAYING:** *nothing here touches the substrate's own
 $\su(3)$ location or the fermion sector's results. The finding is confined to one enumeration in one
 subsection of `P13`, which that subsection itself marks as not load-bearing.*
+
+---
+
+## ⛭⛭⛭ REACH CLOSE — all seventeen papers WORKED or CHECKED-NEGATIVE by name (r3513)
+
+> ⛔ *The r3500 whole-set measurement put this field at **35%**. Read in full this pass (four sweeps,
+> `conjugation`/`conjugate` split — real/charge conjugation vs "the other branch" — and `signature` split —
+> metric/real-form signature vs "signature of X"). **The reach is `15/17` — the DEEPEST of any field: the
+> reality-involution / real-form structure is carried in fifteen of the seventeen papers.***
+
+**⌘ THE STRUCTURE, IN FIFTEEN PAPERS.** *The two real forms of $\SO(6,\mathbb C)$ — Lorentzian
+$\SO(5,1)/\SO(4,1)$ and compact $\SO(6)/\SO(5)$ — named with the global Wick rotation $x_0\mapsto ix_0$
+between them in `P10` (l.440), `P08` (l.329), `p0` (l.1206), `P13`, `P07`; the antilinear reality involution
+$K:\tilde\tau\mapsto\bar{\tilde\tau}$ and the charge-conjugation factorisation $C=(Q\mapsto-Q)_{\rm field}\circ
+(R\circ K)_{\rm geom}$ in `P13`,`P16`,`P09`,`P11`,`P12`,`P02`,`p0`; the root-exchange involution $\sigma$ with
+Nariai its unique fixed point in `P03`,`P05`,`P15`,`P06`,`P07`; the symmetric-pair grading $[\mathfrak m,
+\mathfrak m]\subset\mathfrak h$ with admissible isotropy dims $\{6,7,10\}$ in `P12`; the signature flip
+$(+,+)\to(-,+)$ in `P03`,`P05`,`p0`,`P11`,`P02`.*
+
+| paper | status | where |
+|---|---|---|
+| `P01` | **CHECKED-NEGATIVE** | only a deferred "conjugate real form / CPT" pointer to companions; `conjugate` = momentum/branch homonyms |
+| `P02` | **WORKED** | Wick $z=i\rho$; signature flip (explicit $\pm$); $R=\gamma^5$ ∘ reality involution = charge conjugation; CPT |
+| `P03` | **WORKED** | $\sigma$ fixed at Nariai; su(3) on the conjugate real form via global Wick; seam signature flip; antilinear reality involution (`P03_seam_continuation`, `X3r_reality_lines`) |
+| `P04` | **CHECKED-NEGATIVE** | deferred pointer; "maximally symmetric space" ≠ symmetric-space grading |
+| `P05` | **WORKED** | $\sigma$/$\xi$/Galois involutions; the two real forms of $\SO(6,\mathbb C)$; signature $(2,1)$; symmetric pair (`P05_dihedral_generators`, `K1_action_groupoid`) |
+| `P06` | **WORKED** | "which real form is existent"; Nariai = unique fixed point of the root-exchange involution |
+| `P07` | **WORKED** | Cartan involution $\theta(X)=\eta X\eta$, fixed-point set = maximal compact dim 6; antilinear $K$, $R\circ K$ = CPT (`I1`) |
+| `P08` | **WORKED** | su(3)$\not\subset$so(5,1), on the conjugate real form via global Wick; R-parity $r_0\mapsto-r_0,2M\mapsto-2M$ |
+| `P09` | **WORKED** | reality involution $\tilde\tau\mapsto\bar{\tilde\tau}$; charge conjugation $Q\mapsto-Q$ leaves the metric invariant |
+| `P10` | **WORKED** | the global Wick $x_0\mapsto ix_0$: dS$_5=\SO(5,1)/\SO(4,1)\to S^5=\SO(6)/\SO(5)$, the **two real forms of $\SO(6,\mathbb C)$** |
+| `P11` | **WORKED** (rich) | antilinear reality involution + charge conjugation composite; signature flip; outer A$_2$ involution $\to D_6$; parities with fixed sets $h_\times=0$, $c=0$ (`P11_unpolarized_gowdy_cut`) |
+| `P12` | **WORKED** | symmetric pair $\SO(5,1)/\SO(4,1)$, $[\mathfrak m,\mathfrak m]\subset\mathfrak h$, admissible dims $\{6,7,10\}$; so(5,1)=real form of so(6,ℂ) (`P12_bracket_closure`, `K8_orbit_type_filtration`) |
+| `P13` | **WORKED** | **the five real forms of $\SO(6,\mathbb C)$** (`I1` — corrected from four; so*(6)≅su(3,1) admits su(3)); $\sigma$≠Wick; $K$, $R\circ K$, fixed set $\{r=0\}$ (`I1`, `S1_so42...`, `P13_A3_factorization`) |
+| `P14` | **WORKED** | parallel conjugation → real structure so(3), signature $(5,1)$; involution on $\gamma^5$-eigenspaces; fixed-point-free involution on the root set (`P14_the_bundle_is_the_branching`) |
+| `P15` | **WORKED** (involution axis) | root-exchange involution, Nariai unique fixed point, generic vantages in two-cycles; $R$-parity $r\mapsto-r$; $\tau\mapsto-\tau$ evenness. NO real forms; all 28 "signature" = "signature of X" |
+| `P16` | **WORKED** | antilinear reality involution $K$; standing conjugation $r\mapsto-r,2M\mapsto-2M$, odd integrand $\mp0.1443\alpha^2/G$; CPT (`CROSSING_no_made_asymmetry`) |
+| `p0`  | **WORKED** | the two real forms of $\SO(6,\mathbb C)$ + global Wick (`P17_qm_S4_vs_S5`); inversion involution fixed set = substrate (`C3_inversion_extends`); $K$ fixed set = photon congruence; $[\mathfrak m,\mathfrak m]\subset\mathfrak h$ |
+
+⇒ ***Seventeen of seventeen accounted for: FIFTEEN WORKED, TWO CHECKED-NEGATIVE. Reach $=15/17$ — the deepest
+of the eight fields baked.*** *The field is `L-278`/`L-279` receipted (`I1`, and `S1_so42_is_not_another_real_form`)
+— so the plan's "5 probes, 0 receipts" is stale: the real-forms bite landed with receipts and `P13` was
+corrected to FIVE.*
+
+### ⛔ CROSS-FIELD / INTEGRITY — the reach pass surfaced two stale receipts from the `P13` correction
+1. **`I1` (this field's own, `L278`) was failing** on a case-stale check — it looked for lowercase "the group
+   theory does privilege one" where corrected `P13` now opens the sentence with a capital. **FIXED** (`.lower()`),
+   reruns **ALL PASS**.
+2. **`S1` (`L263_the_station_audit`) FAILS in four checks and is ROUTED, not fixed here** — it is a r3148 snapshot
+   the corpus has advanced past: two checks assert `P13`'s superseded "four real forms" / "the unique real form
+   … that admits su(3)" wording (now FIVE, corrected with `I1`); two assert the corpus "carries NO Atiyah
+   sequence" and a stale `P14` join, but `P12` now states "this grading **is** the Atiyah sequence" (`sec` l.185).
+   ⌷ **ROUTED to the `L263` station-audit lineage:** *update `⓵`/`⓵ᵈ` to `P13`'s corrected five-real-forms
+   wording, and `⓷`/`⓷ᶜ` to the now-present Atiyah-sequence (`P12`) — the station-audit's snapshot needs
+   re-validation against the advanced corpus.* **Not rewritten here: it is a corpus-integrity snapshot, not a
+   field receipt, and its Ⓖ/P14 half is outside this field.**

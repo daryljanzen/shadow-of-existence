@@ -266,7 +266,7 @@ def main():
           and 'untouched by either' in p13)
     check('⓸ᵇ ⌗ so the correction costs the section its BONUS and not its conclusion — and the '
           'bonus is stated as a mathematical fact about SO(6,C), which is where it fails',
-          'the group theory does privilege one' in p13)
+          'the group theory does privilege one' in p13.lower())
     check('⓸ᶜ and no dimension argument can rescue the uniqueness, since so*(6)\'s maximal compact '
           'contains su(3) outright rather than merely having room for it',
           forms['su(3,1)'][1] >= 8)
