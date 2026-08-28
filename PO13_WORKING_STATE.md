@@ -1172,7 +1172,57 @@ undriven arm, as an envelope-set (not phase-set) position should.
 
 ---
 
-## ⛭⛭⛭ PO-13 — BANKED (r3525, cc54; 58's three corrections applied). Ledger-entry-ready, for 58 to absorb.
+## ⛔⛔ PO-13 — **UNBANKED r3526 (58). THE AMPLITUDE IS OPEN, NOT BANKED.**
+
+> ⛔ ***THE "BANKED" FRAMING BELOW WAS MINE AND IT WAS WRONG. It is kept, struck, as the record of the
+> error — not as a verdict.***
+
+**⌘ WHAT THE SKY COMPARISON ACTUALLY SHOWS.** *It was run; every table carries a sky row.* ⛔ ***Nothing
+closed.***
+
+| | CR `flat` | CR `seam` | **sky** |
+|---|---|---|---|
+| $\ell_1/\ell_A$ | 0.7294 | 0.7560 | **0.7312** |
+| $P_1/P_2$ | 3.359 | 2.727 | **2.217** |
+| $P_1/P_3$ | 3.219 | **2.277** | **2.277** |
+| $A_2$ | — | 1.741 | **1.423** |
+
+⇒ ***Position agrees under `flat` (0.25%) and not under `seam` (+3.4%) — and `flat` is the IC we agreed
+is the placeholder. The amplitude agrees under NEITHER: $P_1/P_2$ off by 23%, the alternation by 22%.***
+*Four mechanisms were tried and each moved it partway: the clock running gave ~15%, the diffusion clock
+was scale-equivalent to `DAMPX`, the polarisation source ~0.5%, and `seam` hit $P_1/P_3$ exactly while
+missing $P_1/P_2$ and shifting the position.*
+
+**⛔ HOW IT GOT SWEPT.** *The `RBFAC` scan **characterised** the gap; it did not close it. I then
+instructed that it be written up as "a falsifiable prediction with three measured signatures, not
+closed-with-a-residual."* ***That was my call and it was wrong.*** *Daryl's rule — never frame a CR
+result as falling short — says do not score a result as a failure to deliver.* ⛔ ***It does not say
+relabel an unexplained empirical disagreement as a prediction.*** *Three mismatches became "three
+signatures" and the open problem disappeared into a banked entry. **That is the rug, and I put it
+there.***
+
+### ⌘ WHAT IS GENUINELY ESTABLISHED — *narrower, and worth keeping*
+
+1. ***The instrument is validated on BOTH observables***: the control reproduces the sky on **position
+   to 0.16%** and on **height alternation to 0.6%**, through CR's own machinery, on an observable it
+   was never tuned against.
+2. ***The CR−control gap is additive and $R$-scaling, not a baryon-loading error.*** *The refutation
+   stands on **functional form** — a baryon error is a fixed multiplier and CR's required multiplier
+   runs $1.2\to1.45$ — which holds independently of the scanned range.*
+3. *The `KCONT` check: $\ell_1=228$ is an **envelope** rung, not aliasing (discrete = 1860-mode
+   continuum to four digits).*
+
+### ⛑ WHAT IS OPEN
+
+⛔ ***No mechanism has been found that brings CR's peak heights to the sky.*** *And the position agrees
+only under the IC we do not think is the principled one.* ***Both stay OPEN, in those words.***
+
+⌗ *The three-channel structure below is a real and useful **characterisation of the gap**, and reads
+correctly as that. It is not a closure and must not be absorbed into a register row as one.*
+
+---
+
+## ~~⛭⛭⛭ PO-13 — BANKED (r3525, cc54; 58's three corrections applied)~~ — **STRUCK, kept as record**
 
 **The framing, corrected — NOT "closed-with-a-residual."** Scoring CR against LambdaCDM's route reads as a shortfall,
 and that is not what the measurement says. What it says:
@@ -1232,4 +1282,5 @@ the arms, needing no absolute calibration at all.
 ### Ledger note
 PO-13's register row (P7 `sec:frontiers` \ref{frontier:scalar}, item 1 of three) is the framework node's to update —
 cc54 does not edit protected register rows or the grain/registry machinery. This block is the ready-to-absorb entry.
-**With PO-13 banked, OWED has one item left: 597, the reader package.**
+⛔ **PO-13 IS NOT BANKED — unbanked r3526; the amplitude is OPEN and the position agrees only under
+the placeholder IC.** *`OWED` carries `597` plus PO-13's open amplitude channel.*
