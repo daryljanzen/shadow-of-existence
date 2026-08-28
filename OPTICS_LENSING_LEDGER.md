@@ -3,7 +3,7 @@ kind: REFERENCE
 job: observational optics and lensing against CR — confirmations, and the dimension clause they forced
 name: optics-lensing-ledger
 description: R-P's first field bake — observational optics and lensing thrown at CR. Opened r1857 (Phase 8, the physics half), handed to directly by the conformal bake's C4. Baseline, the O1 result (the photon sphere IS Nariai's forcing locus), probes, and the Phase 9 routing.
-current: r2517+c54.201
+current: r3509
 ---
 
 > **▣ REFERENCE — R-P's first field bake, and part of the corpus.** *Observational optics and lensing.
@@ -314,3 +314,58 @@ being applied where it does not belong:**
 **⌗ THE GENERAL RULE THIS LEAVES:** *loci, invariants and vanishings do not move; angles, frequencies and rates
 do.* **Every `O`-item verdict in this ledger that turns on a vanishing or a locus is comoving-safe as written,
 and that is most of them — which is why nothing here had to be revised, only annotated.**
+
+
+## ⛭⛭⛭ REACH CLOSE — all seventeen papers WORKED or CHECKED-NEGATIVE by name (r3509)
+
+> ⛔ *The r3500 whole-set measurement put this field at **18%** (3 papers). Read in full this pass (three
+> sweeps of the optics vocabulary across all seventeen bodies, `expansion`/`shear`/`congruence`/`twist`
+> screened for the cosmological, ADM, and Gowdy homonyms). **The genuine reach is `6/17` — WIDER than the
+> ledger claimed — and the two additions were optics the bake had never named.***
+
+**⌘ THE TWO PAPERS THIS PASS ADDS TO THE FIELD'S REACH:**
+- **`P09` — the OPTICAL SHEAR $\sigma$**, kept apart from the ADM/leaf shear the corpus writes with the same
+  word: Schwarzschild's principal null directions are **shear-free ($\sigma=0$) in every slicing** while its
+  leaf shear is $\sigma_{ij}\sigma^{ij}=3M/r^3$ on Painlevé–Gullstrand — and the shear-free null congruence
+  is the **Goldberg–Sachs** hinge of the Type-D→Killing-tensor→Carter chain. *(receipts
+  `I6_two_objects_one_word_the_optical_shear_is_not_the_ADM_shear`, `V1_carter_chain`, `P09_ppwave_typeN`,
+  `P09_bianchiI_typeI` — already in the corpus; this ledger had not claimed them as its own.)*
+- **`P15` — a genuine CMB GRAVITATIONAL LENSING computation**: a fixed-angle deflection whose lensed/unlensed
+  operator (ΛCDM's own, zero-parameter) improves the two-arm control $1320\to989$ ($\Delta=331$, under the
+  fitted-width bound $\sim400$), peaks unmoved, effect in the damping tail; and a corpus-native lensing
+  potential on $\Phi$ giving a **photon deflection of $2.69'$**. *(receipts `P15_derived_lensing_on_the_lcdm_arm`,
+  `P15_what_is_left_is_lensing_and_not_reionisation`,
+  `P15_the_residual_is_contrast_and_the_lensing_potential_is_derived`.)*
+
+| paper | status | where / what the terms are |
+|---|---|---|
+| `P01` | **CHECKED-NEGATIVE** | `null geodesic` = causal-order/metric-coincidence; `twist` = Kerr generator; `expansion` = cosmological |
+| `P02` | **CHECKED-NEGATIVE** | `conjugate point` = 2nd critical point of $r(z)$ (R-conjugation), NOT a Jacobi focusing point; `congruence` rate $(\dd r/\dd\tilde\tau)^2=1-f$ is kinematic, not $\theta/\sigma$ |
+| `P03` | **WORKED** | `O1` — photon sphere $r=3M$ ($\Lambda$-indep), on the horizon $\alpha/\sqrt3$ at Nariai; impact parameter $b^2=r^2/f$ diverges; `O3` |
+| `P04` | **CHECKED-NEGATIVE** | `parallax` = historical metaphor; `expansion` = cosmological; no light-bending computed |
+| `P05` | **WORKED** | photon sphere contacts the merged horizon at $f(r_N)=f'(r_N)=0$ (`K45_span_and_nariai`) |
+| `P06` | **CHECKED-NEGATIVE** | `marginal congruence` accel $-f'/2$ = Hubble–Eddington dynamics; `expansion` = cosmological |
+| `P07` | **WORKED** | `O1`,`O4`,`O5`,`O6` — photon sphere; eikonal ringdown scale-free, $\lambda^2/\Omega_c^2=D-3$; $\Lambda$-lensing deflection split (Rindler–Ishak) |
+| `P08` | **CHECKED-NEGATIVE** | congruences genuine but claims are Friedmann/kinematic (radial rate $E^2-f$, accel $-f'/2$); one qualitative convergence to a null generator, no $\theta/\sigma$ |
+| `P09` | **WORKED** | optical shear $\sigma$ vs ADM shear; Goldberg–Sachs shear-free chain; pp-wave Type N *(reach addition)* |
+| `P10` | **CHECKED-NEGATIVE** | `shear` = graviton TT mode; `congruence` = comoving/radial timelike; `expansion` = cosmological |
+| `P11` | **CHECKED-NEGATIVE** | `shear`/`twist` = Gowdy graviton charges; `expansion` = cosmological |
+| `P12` | **CHECKED-NEGATIVE** | `expansion` = cosmological (foliation rate); `congruence` in a comment only |
+| `P13` | **CHECKED-NEGATIVE** | `photon congruence` = real-axis fixed locus of charge conjugation ($K$), not a light-ray bundle |
+| `P14` | **CHECKED-NEGATIVE** | `twist`/`shear` = chirality algebra; `congruence` = radial marginally-bound infall |
+| `P15` | **WORKED** | CMB gravitational lensing: deflection $2.69'$, lensed/unlensed operator $1320\to989$ *(reach addition)* |
+| `P16` | **CHECKED-NEGATIVE** | `congruence`/`expansion` = matter timelike congruence + Friedmann $\theta$; `shear` = Bianchi |
+| `p0`  | **WORKED** | `O2` — the sightlines that touch the throat are light rays; the planar figure is the shadow of the null line (`O2_sightline_null_on_lift`) |
+
+⇒ ***Seventeen of seventeen accounted for: SIX WORKED (`P03`,`P05`,`P07`,`P09`,`P15`,`p0`), ELEVEN
+CHECKED-NEGATIVE. Reach $=6/17$, up from the recorded 3.*** *No new receipt owed — every worked paper
+carries one already (`O1`–`O6`, `K45`, `I6`, `V1_carter_chain`, `P15_*lensing*`).* **Cross-field: `P09`'s
+optical shear was receipted under the general-matter-dynamics line (`I6`) and `P15`'s lensing under `P15`'s
+own appendix; both are OPTICS and are now claimed by this field — no correction to those receipts, a reach
+annotation only.**
+
+⌗ **PO-13 NOTE (flagged for the sky closure, not routed):** `P15`'s lensing block shows the derived
+lensed operator moves the damping tail and **leaves the acoustic peak POSITIONS unmoved** — so lensing is
+not a lever on $\ell_1$ — and the sky residual after it is dominated by peak-trough **CONTRAST** (~40%,
+running ~13% high), the amplitude problem, common to both arms. Positions ~0.1% for the control. *(Held in
+the PO-13 working state, not in a paper.)*
