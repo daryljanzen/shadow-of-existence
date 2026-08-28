@@ -64,7 +64,15 @@ every one of which was found by walking into it during r3378--r3418 rather than 
       (iii) RECORDS: the wisdom ledger, PHASE7_BUILD_LEDGER, the arc runs.  A record says what
       was said when it was said -- the same exemption established at r3422. **
 
-  (4) BORROWED PARAMETER.  A sentence stating what the CONSTRUCTION fixes, written in the
+  (4) BORROWED PARAMETER.
+      ** MEASURED YIELD, r3508: NULL, and for the same reason as (1).  All four surviving hits
+      are sentences DENYING that a fitted parameter fixes anything -- "H_0 is not a free
+      parameter", "there is no second H_0 to reconcile", "set by where the expanding-phase
+      plasma begins RATHER THAN by a radiation era", "fixed by Lambda alone, radiation playing
+      no role".  ** The criterion is a PROXIMITY test, and negation flips the meaning without
+      changing the proximity. **  Like (1), it is a semantic relation the tokens cannot carry,
+      and it is kept as a reading discipline rather than a grep.  Not tuned further: tightening
+      until the count pleases is how a diagnostic gets fitted to its answer. **  A sentence stating what the CONSTRUCTION fixes, written in the
       fitted parameter rather than the native one.  Five in P15 at r3405 -- and 23 of 28
       correctly did NOT move, because a sentence quoting what was MEASURED keeps the fitted
       one.  The comb reports; it does not decide.
