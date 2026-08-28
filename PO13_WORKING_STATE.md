@@ -871,3 +871,43 @@ scale that shifts position). The full LGF-consistent CR prediction -- gravity on
 on leaf, AND the polarisation source restored -- is the object to compare to the sky in BOTH position and amplitude,
 and it is NOT yet computed. That is the determinate next ship, and it is a genuine physics term (58's to specify),
 not a clock assignment.
+
+### ✗ POLARISATION SOURCE via tight-coupling Pi reconstruction — FAILS the control gate (implementation inadequate; physics term still right)
+**58's ship:** restore the polarisation source terms g*Pi/4 and (3/4k^2)d^2(g*Pi)/deta^2 in both arms; the control
+gate is that LambdaCDM must recover the recorded 1123 chi^2 and NOT degrade 0.7300/2.447. I reconstructed Pi from
+the L171w polarised tight-coupling closure: Pi=(5/2)F_2, F_2=(32/45)(tg/tau') => Pi=(16/9)(tg/tau'), with g*Pi
+computed directly as (16/9)e^-tau*tg (the tau' cancels, finite through last scattering).
+
+| run | l1/lA | P1/P2 | P1/P3 |
+|---|---|---|---|
+| CR vel+DIFFLEAF, POLSRC OFF (baseline) | 0.7560 | 3.503 | 3.780 |
+| CR vel+DIFFLEAF, POLSRC ON | 0.9151 | 2.127 | 2.533 |
+| **control (lcdm) POLSRC ON -- THE GATE** | **0.8627** | **1.806** | 2.329 |
+| control plain (POLSRC OFF) | 0.7300 | 2.447 | 2.974 |
+| sky | 0.7312 | 2.217 | 2.277 |
+
+**GATE FAILED.** The control's first peak moved 220 -> 260 (l1/lA 0.7300 -> 0.8627) and P1/P2 overshot to 1.806.
+A correct polarisation source CANNOT move LambdaCDM's peak (measured at 220.6). So the tight-coupling Pi is WRONG.
+
+**DIAGNOSIS (honest).** The amplitude ratios moved in the RIGHT direction (P1/P2, P1/P3 down toward sky) -- the
+term IS the missing shape, as 58 diagnosed -- but the magnitude is far too large and it shifts the peaks. Cause:
+the tight-coupling steady state Pi=(16/9)(tg/tau') assumes tau' LARGE (F_2'~0), which is INVALID near last
+scattering where tau' -> small (k/tau' ~ 0.6 at the visibility peak, not << 1). Extrapolating the tight-coupling
+formula into the last-scattering regime oversizes Pi, adding a velocity-scale source (comparable to the Doppler)
+that both over-corrects the amplitude and drags the peaks right. Tuning the (16/9) coefficient to pass the gate
+would be a FIT, which 58 explicitly forbade ("no free parameter anywhere"), so I did not.
+
+**THE CORRECT FIX (structural, 58's architectural call).** Pi must be got from the EVOLVED polarisation hierarchy
+(G_0, G_2 alongside the photon F_2, as L171w does: F_2'=(8/15)tg-(3/5)kF_3-tau'(F_2-Pi/10), G_0'=-kG_1+tau'(-G_0+Pi/2),
+G_2'=(k/5)(2G_1-3G_3)+tau'(-G_2+Pi/10)), so Pi SATURATES physically through last scattering instead of diverging.
+But the main ACOUSTIC instrument deliberately carries NO photon multipoles -- it is tight-coupling + the derived
+exp(-k^2/k_D^2) damping factor -- so adding an evolved photon+polarisation hierarchy is a re-architecture, and it
+must be reconciled with the damping factor to avoid DOUBLE-COUNTING the quadrupole's dissipation (the k_D integral
+already encodes it). That reconciliation -- evolve the multipoles OR keep the damping factor, not both -- is the
+architectural decision, and it is 58's to make, not a source-function patch. Instrument: POLSRC flag left in place
+but DOCUMENTED AS GATE-FAILING (off by default, no effect on other runs); not a result.
+
+**NET.** The polarisation source is confirmed as the right missing SHAPE term (it moves the amplitude the right
+way), but it cannot be restored by extrapolating tight coupling into last scattering -- that fails the control
+gate. The honest state: the amplitude closure awaits a physical Pi from an evolved polarisation hierarchy, which
+is a structural change to the tight-coupling instrument.

@@ -666,13 +666,29 @@ def los_spectrum(kk, ee, Y, L_A, D_M, R_S):
     x0 = eta_0 - ee
     ls = np.arange(100, int(LMAXL), int(os.environ.get('LSTEP', '8')))
 
+    # ** POLSRC (consistency repair, both arms): the instrument already takes polarisation's contribution
+    # to the DAMPING (the 16/15 coefficient in k_D) but drops its contribution to the SOURCE -- half of
+    # one physical effect, the half that removes power (the recorded 1123-chi^2 debt on the control).
+    # Restore the two polarisation source terms  g*Pi/4  and  (3/4k^2) d^2(g*Pi)/deta^2.  In the polarised
+    # tight-coupling limit of the L171w hierarchy (F_2'=(8/15)tg-tau'(F_2-Pi/10), G_0=Pi/2, G_2=Pi/10):
+    #   Pi = (5/2) F_2,  F_2 = (32/45)(tg/tau'),  so  Pi = (16/9)(tg/tau')  -- tg = photon velocity Y[:,3].
+    # NOT a CR knob: symmetric across arms, no free parameter, completion of a half-present term. **
+    _POLSRC = os.environ.get('POLSRC', '0') == '1'
+
     def source(dampx):
         # ** the damping multiplies the PHOTON perturbations and not the potentials. **  Theta_0 and
         # the baryon velocity diffuse; Psi and the ISW do not.
         Dmp = np.exp(-dampx * (kk[None, :] ** 2) * kD2inv_of(ee)[:, None])
-        return (g_ * (Y[:, :, 2] / 4 * Dmp + Ps)
-                + et * (np.gradient(Ph, ee, axis=0) + np.gradient(Ps, ee, axis=0))
-                + np.gradient(g_ * Y[:, :, 3] * Dmp, ee, axis=0) / kk[None, :] ** 2)
+        S = (g_ * (Y[:, :, 2] / 4 * Dmp + Ps)
+             + et * (np.gradient(Ph, ee, axis=0) + np.gradient(Ps, ee, axis=0))
+             + np.gradient(g_ * Y[:, :, 3] * Dmp, ee, axis=0) / kk[None, :] ** 2)
+        if _POLSRC:
+            # g*Pi = (tau' e^-tau)(16/9 tg/tau') = (16/9) e^-tau tg -- the tau' CANCELS, so g*Pi is finite
+            # through last scattering (the tight-coupling Pi diverges but g vanishes at the same rate).
+            gPi = (16.0 / 9.0) * et * Y[:, :, 3] * Dmp                   # a photon perturbation: it diffuses
+            S = S + gPi / 4.0 + (3.0 / (4.0 * kk[None, :] ** 2)) * \
+                np.gradient(np.gradient(gPi, ee, axis=0), ee, axis=0)
+        return S
 
     def spectra(dampx_list):
         """** THE BESSEL PROJECTION IS PAID ONCE FOR THE WHOLE SCAN, NOT ONCE PER POINT. **
