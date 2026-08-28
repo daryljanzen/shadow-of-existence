@@ -40,7 +40,7 @@ what the spectrum IS.***
 
 | paper | estimate | reason |
 |---|---|---|
-| **`P10`** *canonical time* | **HIGH** | *the deficiency-index paper. `F1`–`F3` classified the **endpoints**; **nobody has asked what the spectrum of the deparametrised Hamiltonian actually is** — discrete, continuous, or mixed* |
+| **`P10`** *canonical time* | **HIGH — CONFIRMED, worked as `S1`** | *the deficiency-index paper. `F1`–`F3` classified the **endpoints**; **nobody has asked what the spectrum of the deparametrised Hamiltonian actually is** — discrete, continuous, or mixed* |
 | **`P14`** *matter sector* | **HIGH** | *a Dirac operator with `eigenvalue` ×7; `H11` already found its wall to be the **reflectionless Pöschl–Teller pair** — one bound state plus a reflectionless continuum, which IS a spectral statement* |
 | `P07` *framework* | **MEDIUM–HIGH** | *the tower's $\mu_n=\sqrt{n(n+2)-2}$ is a **spectrum**, and `H13` showed its floor at $n=2$ is forced* |
 | `P09` *range* | **MEDIUM** | *`eigenvalue` ×8 — of the structure functions or the Carter cut's separation constants; needs reading* |
@@ -54,3 +54,47 @@ what the spectrum IS.***
 ⌗ *The "LOW" label is written knowing that on the harmonic side it turned into bites four times
 (`P13`, `P05`, `p0`, `P09`), and on the functional side it held twice (`P02`, `P05`). **Both outcomes
 are results; neither is assumed.***
+
+
+---
+
+## ⌗ THE LEAD REGISTER
+
+| # | probe | state |
+|---|---|---|
+| `S0` | baseline; which of the counts are this field's? | ⌘ **WORKED** r3487 — *`quantisation` ×66 is **canonical** quantisation, `gap` ×30 mostly physical; the field is half the size the count suggests* |
+| `S0′` | does `P10`'s degeneracy match what other bakes used? | ⛔ **NO** r3488 — *the corpus derives $2(n-1)(n+3)$; the harmonic bake's `H13` used the textbook $2(n^2-1)$. **`H13` corrected.*** |
+| `S1` | what IS the spectrum of the deparametrised Hamiltonian? | ⛔ **BITE** r3489, **receipted** |
+
+---
+
+## ⛔⛭⛭⛭ S1 — **THE TOWER'S SPECTRUM, AND ITS QUARTIC IS ONE THE CORPUS ALREADY COMPUTES**
+
+*The functional-analysis bake's `F1`–`F3` classified the **endpoints** — limit-circle at $a=0$,
+limit-point at $r=0$ — and **never asked what the spectrum IS**. That is this field's first question,
+and no paper puts it.*
+
+**⌘ WHAT `P10` GIVES.** *Deparametrised, the transverse-traceless sector is*
+$$\hat H_{\rm phys}=\sum_n\Big[\frac{\hat\pi_n^2}{2a^3}+\tfrac12a\mu_n^2\hat\phi_n^2\Big],\qquad
+\mu_n^2=n(n+2)-2,\ n\ge2,$$
+*an oscillator per mode of mass $a^3$ and frequency $\mu_n/a$, each* ***"a Schrödinger oscillator on
+$L^2(\mathbb R)$ and manifestly self-adjoint"***.
+
+⇒ ***MODEWISE the spectrum is $E_{n,k}=(k+\tfrac12)\mu_n/a$*** — *discrete, simple in $k$, degenerate
+in $n$ with multiplicity $g(n)=2(n-1)(n+3)$, **the corpus's derived degeneracy and not the textbook
+one**. That is `P10`'s "the closed topology enters as the DISCRETENESS of the tower".*
+
+**⛔ AND THE SUM OVER THE TOWER IS A DIFFERENT OPERATOR.** *The zero-point energy is
+$E_0=\tfrac1{2a}\sum_n g(n)\mu_n$ with* ***$g(n)\mu_n\sim2n^3$***, *so the partial sums grow as
+$N^4/4$:* ***the zero-point sum diverges QUARTICALLY.***
+
+**⌘ AND THAT IS THE CORPUS'S OWN QUARTIC.** *The degeneracy receipt states* ***"the shell contribution
+is $2n^3$ and the leading constant is settled rather than assumed"*** *and* ***"the quartic stands and
+its constant is now fixed"*** *— computed there for a **Weyl-law counting** purpose.* ⇒ ***It is, up to
+one half, the vacuum energy of `P10`'s graviton tower, and neither the paper nor the receipt says so.***
+
+⍀ ***NO DEFECT IS CLAIMED***: *a divergent zero-point sum is what every free field theory has, and
+`P10`'s unitarity claim is **modewise** and unaffected.* **What is claimed is the identification — the
+corpus computes one sum twice, for two purposes, without joining them.**
+*(receipt `storyboard_receipts/SP_S1_the_tower_spectrum_and_its_quartic.py` — **added, runs, all
+asserts pass**)*
