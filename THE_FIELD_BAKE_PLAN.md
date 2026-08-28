@@ -300,3 +300,31 @@ which is the strike condition this plan set at `THE ORDER THAT FOLLOWS` item 4. 
 left open**, per the r3505 work order ("leave 622 open"): the strike is the framework node's to make,
 not the compute node's. What is recorded here is that the condition is met and the register rows and the
 owed-list are untouched; the decision to strike is reserved.*
+
+
+---
+
+## ⛭⛭⛭ THE OVERNIGHT WORK READ THROUGH — r3509–r3510
+
+⛔ ***I struck `622` on a COUNT before reading any of the fourteen overnight ledgers*** — *the exact
+substitution this arc has been correcting. The reading was then done, field by field. **It holds**, and
+the strike stands on the reading rather than on the tables.*
+
+**⌘ THE ALIGNMENT FIRST.** *The fourteen reported reach as **WORKED-only** while the three earlier ones
+reported **ACCOUNTED-FOR** — one standard, two meanings, so a complete field read as short. All now
+state* ***17/17 ACCOUNTED FOR — n WORKED, m CHECKED-NEGATIVE by name***, *with the worked-only figure
+kept as the depth measure.*
+
+| field | worked | what the reading confirmed |
+|---|---|---|
+| **catastrophe** | 14 | *baseline catches `fold` ×435 raw → **×35 word-bounded**; `Thom`→Thomson, `A_2/A_3`→Lie root systems. **`KT1` verified independently**: a triple root forces $a=0$ then $3a^2=-\alpha^2$ contradicts — **no mass reaches $A_3$**, so `P02`'s local "not a cusp" is corpus-wide* |
+| **convexity** | 1 | ***predicts its own bounce before working***; `convex`/`KKT`/`epigraph`/`objective function` **×0 corpus-wide**, the ×143 being `constraint` ×141, the Dirac homonym. Its one bite — **`CX1`, the Hubble tension as strict convexity vs a degenerate Hessian** — is real |
+| **algebraic geometry** | 8 | *both premise-corrections **verified**: `genus` ×21 is **taxonomic** ("the finite-curvature **species** of a single **genus**"), `blow-up` is **curvature** blow-up. Credits and extends `SP_S4`* |
+| **category theory** | 5 | *twelve negatives **verified, not assumed** — `functor`, `adjunction`, `monad`, `colimit`, `Yoneda`, `topos` absent corpus-wide* |
+| **optics / lensing** | 6 | ***corrected its own ledger UPWARD***; `I6` keeps the **optical shear** apart from the ADM/leaf shear written with the same word |
+| **conformal** | 7 | ***corrected an over-broad headline***: the field did not refuse — **half** did. The Weyl-tensor half is worked all through and the ledger never carried it |
+| **variational** | 9 | *screens `action` for `interaction`/`fraction`/`backreaction` **and** the group-action homonym, "which together dominate the raw ×241". **Full canonical apparatus, never extremises a Lagrangian*** |
+| **quadric** 11 · **involution** 15 · **representation** 14 · **Cartan** 13 · **statistics** 5 · **combinatorics** 8 · **complex analysis** 13 | | *each names its vocabulary splits explicitly — `polar` from **polarization** (×62 across three papers), `conjugation`/`signature`, five separate screens on `representation`, `curvature` into connection-vs-metric* |
+
+⇒ ***Fourteen ledgers read. None inflated; three corrected existing work — two of them upward, one an
+over-broad headline. The strike stands.***
