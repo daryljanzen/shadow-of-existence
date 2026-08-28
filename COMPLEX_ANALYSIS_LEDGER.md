@@ -639,3 +639,38 @@ comes from;* ***"pole of order twelve of a meromorphic function" says it is ISOL
 and removable by a change of chart*** — *which is exactly the reading `P02` argues for.*
 *(receipt `storyboard_receipts/CA_C5_the_kretschmann_is_meromorphic.py` — **added, runs, all asserts
 pass**)*
+
+## ⛔⛭⛭⛭ C6 — **`P05`'s SEAM CONTINUATION IS MÖBIUS, AND THE SIGNATURE FLIP IS PASSAGE THROUGH INFINITY**
+
+*`P05` is the corpus's **monodromy** paper — `monodrom*` ×18, `analytic continuation` ×10 — and this
+ledger's own field is "complex analysis **and monodromy**.* ⛔ ***It is not named in the ledger.***
+
+⚠ *(A labelling error of mine, recorded: a first scan reported `casus irreducibilis` ×6 in `P05`. The
+pattern combined `casus irreducibilis` **or** `discriminant` into one row and displayed only the first
+name. `P05` has `casus` ×0 and `discriminant` ×6.)*
+
+**⌘ WHAT `P05` CLAIMS.** *$\xi$ is* ***"the analytic continuation that joins the Riemannian (spherical)
+piece of the slicing curve to the Lorentzian (de~Sitter) piece, with the metric signature flipping
+automatically"***, *and* ***"$\xi$ is the analytic continuation whose INVERTIBILITY secures the
+correspondence's exactness."*** ⌗ *So the exactness rests on an invertibility claim about a
+continuation across a signature change — and the spectral bake's `S7` established what that change **is**:
+the eigenvalue $\lambda=\alpha^2/(\alpha^2-\mathbf x^2)$ passing through **infinity**, never through zero.*
+
+**⌘ AND THAT MAKES IT MÖBIUS.** *As a function of $u=\mathbf x^2$,*
+$$\lambda(u)=\frac{\alpha^2}{\alpha^2-u}=\frac{au+b}{cu+d},\qquad(a,b,c,d)=(0,\alpha^2,-1,\alpha^2),
+\qquad ad-bc=\alpha^2\neq0.$$
+*Its inverse is $u=\alpha^2-\alpha^2/\lambda$ — Möbius again — and the composition returns $\lambda$
+identically.*
+
+| | $u<\alpha^2$ | $u=\alpha^2$ | $u>\alpha^2$ | $u=\infty$ |
+|---|---|---|---|---|
+| $\lambda$ | $>0$ **Riemannian** | $\infty$ **the join** | $<0$ **Lorentzian** | $0$ |
+
+⇒ ***So $\xi$ is invertible BECAUSE the map is Möbius, and a Möbius map is a bijection of the Riemann
+sphere: the two signature regions are two arcs joined through the point at infinity.***
+
+**⌘ AND IT EXPLAINS `S7` FROM THE OTHER SIDE.** *`S7` found the eigenvalue has **no zero**, so the
+metric never degenerates. In this language that is immediate — the numerator is the nonzero constant
+$\alpha^2$, so the map's zero sits at $u=\infty$, **not at the seam**.* ***`P05` asserts invertibility;
+`S7` finds no degeneracy; both are one property of one Möbius map, and neither paper names it.***
+*(receipt `storyboard_receipts/CA_C6_the_seam_is_mobius.py` — **added, runs, all asserts pass**)*
