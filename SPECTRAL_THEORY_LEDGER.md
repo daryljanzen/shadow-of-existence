@@ -44,7 +44,7 @@ what the spectrum IS.***
 | **`P14`** *matter sector* | **HIGH — CONFIRMED, worked as `S2`** | *a Dirac operator with `eigenvalue` ×7; `H11` already found its wall to be the **reflectionless Pöschl–Teller pair** — one bound state plus a reflectionless continuum, which IS a spectral statement* |
 | `P07` *framework* | **MEDIUM–HIGH — CONFIRMED, worked as `S3`; and it CORRECTED `S1`** | *the tower's $\mu_n=\sqrt{n(n+2)-2}$ is a **spectrum**, and `H13` showed its floor at $n=2$ is forced* |
 | `P09` *range* | **MEDIUM — CONFIRMED, worked as `S4`; the guess (separation constants) was WRONG** | *`eigenvalue` ×8 — of the structure functions or the Carter cut's separation constants; needs reading* |
-| `P15` *cosmology* | **MEDIUM** | *`WKB` ×3, `discrete spectrum` ×2 — the acoustic ladder* |
+| `P15` *cosmology* | **MEDIUM — CONFIRMED, worked as `S5`** | *`WKB` ×3, `discrete spectrum` ×2 — the acoustic ladder* |
 | `P03` *slicing curve* | **MEDIUM** | *`eigenvalue` ×4 — plausibly the cubic's roots, which would be a **different** sense* |
 | `P06` *geometric core* | **MEDIUM** | *`gap` ×6, `eigenvalue` ×2* |
 | `P16` *cosmogenesis* | **MEDIUM** | *`WKB` ×2* |
@@ -69,6 +69,7 @@ are results; neither is assumed.***
 | `S1′` | does any paper already make `S1`'s identification? | ⛔ **YES — `P07` DOES**, r3491 — ***`S1` corrected*** |
 | `S3` | how many spectral gaps does the corpus rely on? | ⛔ **TWO**, r3491 — *doing two different jobs, neither referencing the other* |
 | `S4` | what are `P09`'s eigenvalues, and of what? | ⛔ **BITE** r3492, **receipted** — *the **self-dual Weyl operator**, and its degeneracy condition is **Nariai's own algebra*** |
+| `S5` | is `P15`'s exact/WKB residual an adiabatic error? | ⛔ **NO** r3493, **receipted** — *monotone the wrong way and **saturating***; *it is a systematic offset* |
 
 ---
 
@@ -213,4 +214,37 @@ neither notes they are one statement.***
 | an **algebraically special** geometry | `P09`, on the *other* cubic |
 
 *(receipt `storyboard_receipts/SP_S4_two_discriminants_one_event.py` — **added, runs, all asserts
+pass**)*
+
+---
+
+## ⛔⛭⛭ S5 — **`P15`'s EXACT/WKB RESIDUAL IS AN OFFSET, NOT AN ADIABATIC ERROR**
+
+*The discrete-sum half of `P15` is already covered — the harmonic bake's `H1` verified
+$w_L=(L+1)/(L(L+2))$ two ways and showed it is exactly $\mathrm d\ln k_L/\mathrm dL$, so the CR sum is
+a **Riemann sum** of the very integral $\Lambda$CDM uses. **The WKB half is not covered.***
+
+**`P15`:** *"the exponential-of-an-integral form $e^{-\int\omega\,\mathrm d\eta}$ is a WKB approximation
+whose **adiabaticity parameter is of order unity at $\ell\lesssim5$**" — and then, from exact
+constant-$\omega$ transfer matrices:*
+
+| $\ell$ | 2 | 3 | 5 | 15 | 40 |
+|---|---|---|---|---|---|
+| exact/WKB | **0.926** | 0.913 | 0.901 | 0.891 | **0.889** |
+| error | **7.4%** | 8.7% | 9.9% | 10.9% | **11.1%** |
+
+⛔ ***The ratio DECREASES monotonically with $\ell$: WKB is MOST accurate at $\ell=2$, where the
+adiabaticity parameter is of order unity, and LEAST accurate at $\ell=40$, where it is small.***
+
+**⌘ AN ADIABATIC ERROR BEHAVES THE OPPOSITE WAY.** *WKB is an expansion **in** that parameter, so an
+error of adiabatic origin is largest where it is $O(1)$ and **vanishes** as it does.* ***This one grows
+with $\ell$ and then saturates — $0.891$ at $\ell=15$, $0.889$ at $\ell=40$, a change of $0.002$ —
+tending to a constant near $0.889$, not to $1$.***
+
+⇒ ***So the $7$–$11\%$ is a SYSTEMATIC OFFSET, not the adiabaticity the neighbouring sentence
+names.*** ⍀ *And `P15`'s conclusion is **unaffected and if anything strengthened**: it says* ***"the
+exact transmission is slightly smaller, so the filter is marginally stronger than the approximation
+gives"***, *and a **saturating** offset makes that uniform in $\ell$ rather than an accident of low
+multipole.* **What is misplaced is the attribution.**
+*(receipt `storyboard_receipts/SP_S5_the_wkb_residual_is_an_offset.py` — **added, runs, all asserts
 pass**)*
