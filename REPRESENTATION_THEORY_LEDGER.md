@@ -1,7 +1,7 @@
 ---
 name: representation-theory-ledger
 kind: FORWARD
-current: r3437
+current: r3514
 job: The representation-theory field bake — what bit, what bounced, and the boundary. The largest unbaked vocabulary in the corpus (×241 tight), thrown r3437 after the Phase 4 survey named it the standing first pick on measured usage.
 sources: [chat]
 ---
@@ -312,3 +312,55 @@ its full automorphism group — with the sign of $2M$ the chamber's $\mathbb{Z}_
 
 ⇒ ***The representation-theory field meets the bar. Four clauses are ROUTED and named; none is
 applied, and each states the exact sentence owed and its paper.***
+
+---
+
+## ⛭⛭⛭ REACH CLOSE — all seventeen papers WORKED or CHECKED-NEGATIVE by name (r3514)
+
+> ⛔ *The r3500 whole-set measurement / `THE_FIELD_BAKE_PLAN` recorded this field THINNER (r3437: 100 lines,
+> ~1 receipt, "1 paper"). Read in full this pass (three sweeps, screening `fundamental` [rep vs
+> congruence/scale], `character` [group vs causal], `adjoint` [rep vs self-adjoint], `weight` [rep vs
+> weighting], `representation` [group vs "representation of the geometry"]). **The reach is `14/17` — the field
+> is carried in fourteen papers, and the "1 paper" record was the throw's, not the field's.***
+
+**⌘ THE CORE, IN FOURTEEN PAPERS.** *The three sum-to-zero horizon roots = the $A_2$ root/weight system of
+$\mathfrak{su}(3)$ (`P03`: Cartan integers $\{-2,-1,1,2\}$, $\dim\mathfrak{sl}(3,\mathbb C)=6+2=8$, $|Z|=3=\det$
+Cartan matrix; `P12`,`P08`,`P02`,`P11`,`p0`); $\mathrm{Aut}(A_2)=S_3\times\mathbb Z_2\cong D_6$ order 12
+(`P05`,`P12`,`P11`,`P02`,`P07`,`p0`); the diagram automorphism $\mathbf 3\leftrightarrow\bar{\mathbf 3}$ because
+$-1\notin W(A_2)$ (`P13`,`P02`); the smallest faithful real rep of $\mathfrak{su}(3)=\mathbb R^6$ (`P13`,`p0`);
+the full SM generation as five irreps $(\mathbf 3,\mathbf 2)_{1/6},(\bar{\mathbf 3},\mathbf 1)_{-2/3},\dots=15(16)$
+(`P14`); triality $t=(p-q)\bmod 3$, baryon/diquark/meson $=1/0/1$ (`P14`); the enlarged $W(A_3)$ order 48
+(`P12`,`P14`).* ⇒ **The persistent NEGATIVE framing everywhere: the $\mathfrak{su}(3)$ is a discrete Weyl/Cartan
+shadow, $\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$ — not a continuous colour isometry.**
+
+**⌘ AND ONE REP COMPUTATION THIS LEDGER HAD NOT CARRIED — `P10`'s PETER–WEYL.** *`L^2(SU(2))\otimes V_s$,
+Peter–Weyl returns level-$j$ totals $1,3,5$ times $(2j+1)^2$ for $s=0,1,2$ — the $\dim=2j+1$ SU(2) irreps — and
+the TT part is the two extreme summands, $2/5$ of the symmetric-tracefree total, with degeneracy
+$2(n-1)(n+3)$.* **A genuine rep-theory computation in the canonical-time paper, reach addition.**
+
+| paper | status | where |
+|---|---|---|
+| `P01` | **CHECKED-NEGATIVE** | English "maximally extended representation"; "root" = idiom |
+| `P02` | **WORKED** | $A_2$ root config = su(3); antifundamental $\bar{\mathbf 3}$; $\mathrm{Aut}(A_2)=D_6$ |
+| `P03` | **WORKED** | `R1`/`R3` + the $A_2$ root system, Cartan integers, adjoint dim 8, $|Z|=3$ (`P03_the_adjoint_is_entailed`) |
+| `P04` | **CHECKED-NEGATIVE** | no rep-vocabulary occurrences |
+| `P05` | **WORKED** | Weyl $S_3$ permutes the three roots; $\mathrm{Aut}(A_2)=D_6$ order 12 |
+| `P06` | **WORKED** (light) | $R=\gamma^5$ on the spinor rep; su(3)⊂so(6) structure-group reduction |
+| `P07` | **WORKED** | su(3)⊄so(4,1); $\mathbf 3\leftrightarrow\bar{\mathbf 3}$; monodromies+3-cycle → SU(3); 12→4 classes (`order3_bridge`, `two_realisations`) |
+| `P08` | **WORKED** | $A_2$ weights = SU(3) root system; Weyl $S_3$ vs $\mathbb Z/3$ (`order3_bridge`) |
+| `P09` | **CHECKED-NEGATIVE** | "Weyl" = Weyl tensor (Petrov); "irreducible"/"decomposition" = English/tensor |
+| `P10` | **WORKED** | Peter–Weyl on $L^2(SU(2))$, SU(2) irrep dims $1,3,5$, TT $=2/5$ — *reach addition* |
+| `P11` | **WORKED** | $A_2$ root system; $\mathrm{Aut}(A_2)=S_3\times\mathbb Z_2\cong D_6$; Weyl $S_3$ = deck |
+| `P12` | **WORKED** | roots = zero-sum $A_2$ weights; $R=\gamma^5$ spinor; $W(A_3)$ order 48; $A_3=$ so(6,ℂ) root system (`GROUP_full_order48`, `EMBEDDING_is_Td_equals_WA3`) |
+| `P13` | **WORKED** | su(3) smallest faithful real rep $=6$; rank 4 vs SO(6) rank 3; su(3)-shadow $S_3$ triplet; AH index in the rep ring (`P13_cascade_rank`, `P13_conjugation_parity`) |
+| `P14` | **WORKED** | full generation = 5 irreps = 15(16); triality test; SU(3) from monodromies; $D_6$ irrep dims $1,1,2$ (`P14_the_count_specified`, `B24_the_triality_test_run`, `P14_two_rank_threes`) |
+| `P15` | **WORKED** (light) | "sixteenth Weyl fermion of each generation"; $S_3$ relating families |
+| `P16` | **WORKED** (light) | colour su(3); su(3)⊄isometry algebra; $S_3$; $\gamma^5$ |
+| `p0`  | **WORKED** | smallest faithful real rep $=\mathbb R^6$; $\mathbf 3\oplus\bar{\mathbf 3}$ matter/antimatter; $A_2\subset A_3$ by node deletion (`P17_qm_S4_vs_S5`) |
+
+⇒ ***Seventeen of seventeen accounted for: FOURTEEN WORKED, THREE CHECKED-NEGATIVE. Reach $=14/17$ — the record
+"1 paper" was the r3437 throw's, not the field's, and the `R1`–`R12` probes plus this reach pass now name the
+whole $A_2$/su(3)/triality/generation structure across fourteen papers.*** *No new receipt owed — the core is
+`R1`/`R4`/`R8`-receipted and `P14`/`P12`/`p0`/`P08` carry their own; `P10`'s Peter–Weyl is receipted in the
+graviton-lift lineage. Cross-field: the $A_2$ root system overlaps quadric (the fundamental ellipse),
+involution (the real-form skeleton) and Cartan (the flat colour holonomy); shared, no correction.*
