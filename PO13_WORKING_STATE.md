@@ -1121,3 +1121,51 @@ arm-difference, not machinery. (c) Position: 220 or 228 is a rung, set by envelo
 stop quoting either as "closed." (d) Next natural check, if you want it: does the even-peak deficit scale with the
 baryon load R (the alternation's amplitude) the way a missing driving-times-baryon-loading term would -- an RBFAC scan,
 CR and control, reading A2 vs R -- which would pin the deficit to the driving-baryon product quantitatively.
+
+### ✔ RBFAC SCAN — the A2(R) GAP measures (b) missing-driving over (a) baryon-error, decisively (r3524)
+**58's mechanism separation (accepted, and it rescues the physics):** odd-even height alternation is BARYON LOADING,
+not driving -- R_b depresses the even (rarefaction) peaks vs the odd (compression) ones, and that sets A2. Driving is
+NOT differential odd/even; it boosts peaks 2+ as a GROUP, and because peak 2 is one of the depressed ones, the group
+boost partially OFFSETS the baryon depression there. So an undriven comb doesn't lose alternation -- it loses the
+OFFSET, and its even peak sits too low. A2 too high is exactly what missing driving predicts; my 1.741 vs 1.423
+pointed the right way. Two hypotheses to separate: **(a)** CR's deficit is a baryon-loading error -> some R brings CR's
+A2(R) onto the CONTROL's curve (gap vanishes / curves coincide); **(b)** it's the missing driving offset -> the
+CR-minus-control GAP persists at every R (a term CR lacks at any baryon load).
+
+**Design (58's, made decisive not descriptive):** scan RBFAC on BOTH arms, same grid, seam composition
+(`SRCSTACK=vel DIFFLEAF=1 HIER=1 CRAMP=seam PISRC=1 NK=620`); report the GAP as the primary quantity, and l_1/l_A next
+to every A2. **Gate: control at R=1 must return 1.432.**
+
+| R (RBFAC) | CR A2 | ctl A2 | **GAP=CR-ctl** | CR l_1/l_A | ctl l_1/l_A | CR P1/P2 | ctl P1/P2 |
+|---|---|---|---|---|---|---|---|
+| 0.50 | 1.205 | 1.137 | **0.069** | 0.729 | 0.741 | 1.429 | 1.553 |
+| 0.75 | 1.463 | 1.276 | **0.187** | 0.756 | 0.749 | 1.979 | 1.871 |
+| **1.00** | 1.741 | **1.432** | **0.308** | 0.756 | 0.730 | 2.727 | 2.254 |
+| 1.50 | 2.386 | 1.769 | **0.618** | 0.783 | 0.723 | 4.864 | 3.211 |
+| 2.00 | 3.075 | 2.160 | **0.915** | 0.836 | 0.719 | 7.867 | 4.440 |
+
+*(sky: A2 = 1.423, l_1/l_A = 0.7312. GATE PASSES: control R=1 -> A2 = 1.4323.)*
+
+**RESULT -- (b), unambiguously.** The GAP is POSITIVE at every R, NEVER vanishes (min 0.069 at R=0.5), and SCALES
+~linearly with R (fit GAP ~ 0.571*R - 0.237; no zero crossing in [0.5, 2.0]). Both diagnostics 58 named for (b) hold:
+the gap does not vanish at any R, and it scales with R. Hypothesis (a) is excluded three ways: (i) the gap never
+reaches zero; (ii) CR's A2(R) curve does NOT lie on control's -- e.g. CR@R=1.0 (1.741) equals control only near
+R~1.45, CR@R=0.5 (1.205) equals control near R~0.6, so the "effective-R" multiplier a baryon error would need is NOT
+constant (1.2 -> 1.45, it grows); (iii) a pure baryon rescaling is multiplicative and constant, but the deficit is an
+ADDITIVE offset that grows with R. **The even-peak deficit is a term CR structurally lacks at every baryon load --
+the missing driving offset -- and its growth with R is exactly the driving x baryon-loading product 58 predicted:
+the driving boost acts on the baryon-depressed (R-proportional) even peak, so the MISSING boost is R-proportional too.**
+
+**What is MEASURED vs INTERPRETED (kept apart, honestly):** MEASURED -- (1) gate: control reproduces the sky's height
+alternation to 0.6% (A2 1.432 vs 1.423), a second independent validation of the two-arm instrument after position;
+(2) the CR-control gap is positive, non-vanishing, and R-scaling across a 4x baryon range. That measures (b) over (a).
+INTERPRETED (natural, not proven) -- that the R-proportionality identifies the missing term specifically as
+driving x baryon-loading; what is proven is that it is an additive term absent at all R, i.e. not a baryon error.
+
+**⇒ PO-13, both channels now MEASURED.** Spacing: CR's comb is undriven (uniform, at the integers; the NODRIVE guard
+and the ~70sigma phase intercept). Height: CR's even-peak deficit is the missing driving offset, measured over a baryon
+scan against a control that lands the sky. The framework's departure from the sky is ONE absence -- the radiation
+driving CR structurally lacks -- now carrying TWO measured signatures with a validated control, not one measured and
+one argued. The l_1/l_A column also answers the rung question quantitatively: control's position is R-STABLE
+(0.741 -> 0.719), CR's rises with R (0.729 -> 0.836) -- the envelope centroid responds to baryon loading on the
+undriven arm, as an envelope-set (not phase-set) position should.
