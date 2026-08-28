@@ -939,3 +939,41 @@ clock; content on leaf). In the HIER path the diffusion is done by the EVOLVED M
 x Jac in evolve_hier), not the k_D factor -- so the leaf-clock diffusion is NATIVE and DIFFLEAF is not needed. The
 full LGF-complete CR prediction is `ARM=cr SRCSTACK=vel HIER=1`: gravity on stack, pressure+diffusion+polarisation
 all on the leaf. [running]
+
+### ✔ THE FULL LGF-COMPLETE PREDICTION — position CLOSED, amplitude a GENUINE framework residual (58's "open" outcome)
+With the evolved polarisation source validated on the control (Gate 1), the full LGF-complete CR prediction:
+
+| CR, evolved polarisation source (HIER) | l1/lA | P1/P2 | P1/P3 |
+|---|---|---|---|
+| vel + HIER  (gravity velocity-source on stack) | 0.7294 | 3.382 | 3.270 |
+| src + HIER  (whole geometry sector on stack: +Phi evolution) | 0.7294 | 3.492 | 3.091 |
+| LEAFPERT + HIER (everything on leaf) | 0.6764 | 1.802 | 1.746 |
+| control lcdm HIER (the gate, PASSES) | 0.7300 | 2.254 | 2.363 |
+| sky | 0.7312 | 2.217 | 2.277 |
+
+**POSITION: CLOSED.** 0.7294 vs sky 0.7312 (0.25%), ROBUST across vel and src (the Phi-clock choice does not move
+it) -- the two-horizon clock division, no driving impulse. Settled.
+
+**AMPLITUDE: a genuine framework residual.** The control gate PASSES -- LambdaCDM through the same complete
+instrument recovers to P1/P2=2.254 near the sky's 2.217, holding position. So the instrument is internally
+consistent and complete. Yet CR's P1/P2 stays at ~3.4-3.5 (vs sky 2.217, ~55% high), ROBUST to the gravity-clock
+(vel 3.382, src 3.492) and to the polarisation source (which helped: vel-alone was 3.745). CR's higher peaks are
+too low relative to the first, and it PERSISTS through the fully LGF-consistent, gate-passing instrument.
+
+**WHAT IT IS.** The residual is the DRIVING-AMPLITUDE BOOST. LambdaCDM's radiation driving does two things: a PHASE
+shift (position) and an AMPLITUDE enhancement of the higher peaks (crossing-during-plasma boosts high-k). CR's
+two-horizon structure supplies a substitute for the PHASE shift (the position closes), but there is NO two-horizon
+substitute for the higher-peak AMPLITUDE boost -- and the running-of-phi does not supply it (measured out earlier),
+nor does the (correct, gate-passing) polarisation source fully. So the amplitude residual is the same
+absence -- no crossing during plasma, hence no driving boost -- that PO-13 identified at the start, now shown to
+SURVIVE the complete, consistent instrument. It is the first result in this arc that deserves to be carried as OPEN:
+a standing CR-vs-sky prediction (higher peaks ~55% low in the ratio), measured against a validated instrument,
+rather than a gap in the machinery.
+
+**CAVEAT (honest).** The perturbation sector's term-by-term clock assignment is not provably exhausted; a term still
+unassigned could yet move the amplitude. But the main levers (gravity-clock vel/src, diffusion via the evolved
+multipoles on the leaf, the polarisation source) are all assigned and gate-passing, and the residual is robust
+across them. So it is fairly called a genuine open framework result, held with that caveat -- not closed, not a bug.
+
+Instrument: added SRCSTACK=vel/src to evolve_hier (gravity-clock split in the hierarchy path); HIER path already
+carried the evolved-Pi polarisation source. Position closed; amplitude open and characterised.

@@ -894,13 +894,19 @@ def evolve_hier(kk, t_eval, e_sw, yF):
                                 - tp * G[:, l])
         out[:, I_GG + LG] = kk * G[:, LG - 1] - (LG + 1) / e * G[:, LG] - tp * G[:, LG]
         jac = float(Jac_of(e)) if LEAFPERT else 1.0
-        if SRCSTACK == 'vel' and LEAFPERT:
+        if SRCSTACK in ('vel', 'src') and LEAFPERT:
             # the gravity velocity-source (DRE k^2 Ps, = grad Phi) on the STACK clock; content on leaf
             src = np.zeros_like(out)
             src[:, 1] = DRE * kk ** 2 * Ps
             src[:, 3] = DRE * kk ** 2 * Ps
             src[:, 5] = DRE * kk ** 2 * Ps
             src[:, I_TB] = DRE * kk ** 2 * Ps
+            if SRCSTACK == 'src':                       # the whole geometry sector on stack: + Phi's own evolution
+                src[:, 6] = Php
+                src[:, 0] = DRC * 3 * Php
+                src[:, 2] = DRC * 4 * Php
+                src[:, 4] = DRC * 4 * Php
+                src[:, I_DB_] = DRC * 3 * Php
             return ((out - src) * jac + src).ravel()
         return out.ravel() * jac
 
