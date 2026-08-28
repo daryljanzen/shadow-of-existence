@@ -1018,3 +1018,41 @@ neither the hierarchy nor the pol source closes it -- the pol source barely help
 PERSISTS through the fully consistent, internally-complete instrument: CR's higher peaks are too low relative to the
 first, the missing driving-amplitude boost. Held as the arc's first genuine OPEN framework result -- now on the
 fully consistent HIER composition, not the fluid path, with the pol-source contribution measured and found small.
+
+### ✔ CRAMP=seam — 58's amplitude lever, and it lands P1/P3 EXACTLY; the residual narrows to the even (2nd) peak
+**58's ship:** CRAMP=seam is a k-dependent INITIAL amplitude (Theta-hat_0 = -T(k c_s eta_S)/2), acting on what the
+modes START with, not the evolution -- the one place the clock division, diffusion clock and polarisation source
+could not reach. Principled: 'flat' assumes the seam is a blank initial surface; CR's seam is a branch point in an
+existing de Sitter geometry, so each mode arrives with its own accumulated sound-crossing phase. Run on the full
+consistent composition (vel+DIFFLEAF+HIER), gated on the control.
+
+**GATE:** lcdm HIER CRAMP=seam = 0.7300 / 2.254 / 2.363 -- BYTE-IDENTICAL to lcdm HIER. CRAMP is CR-only, a clean
+no-op on the control. The CR shifts below are real physics.
+
+| CR (vel+DIFFLEAF+HIER) | l1/lA | P1/P2 | P1/P3 |
+|---|---|---|---|
+| CRAMP=flat  PISRC=1 | 0.7294 | 3.359 | 3.219 |
+| CRAMP=seam  PISRC=1 | 0.7560 | 2.727 | **2.277** |
+| CRAMP=seam  PISRC=0 | 0.7560 | 2.771 | 2.244 |
+| sky | 0.7312 | 2.217 | **2.277** |
+
+**RESULT.** The seam IC is a LARGE, genuine amplitude lever: P1/P3 falls 3.219 -> **2.277, exactly the sky's 2.277**,
+and P1/P2 falls 3.359 -> 2.727. But it also MOVES the position 0.7294 -> 0.7560 (+3.4%), which by 58's own criterion
+means the IC is touching the phase, not a clean shape-at-fixed-position lever. So amplitude and position COUPLE
+through the IC -- the same bracketing seen across the clock: flat holds the position and misses the amplitude, seam
+lands the amplitude (P1/P3 exact) and overshoots the position. Neither closes both.
+
+**THE RESIDUAL, NARROWED AND NAMED.** Under the fully principled instrument (LGF clocks, evolved hierarchy,
+polarisation source, seam IC -- every assignment made, no free parameter): position 0.7560 (+3.4%), P1/P2 2.727
+(+23%), P1/P3 2.277 (EXACT). The tell is that P1/P3 is exact while P1/P2 is high: the ODD-odd ratio is right and it
+is the EVEN (second) peak that is too low. That is the ODD-EVEN ALTERNATION deficit -- the compression (even) peaks
+under-boosted -- which is the SAME absence PO-13 identified at the very start: no crossing during plasma, hence no
+driving enhancement of the compression peaks. The position residual (+3.4%) likely rides the same second-peak
+displacement. So the fully assembled framework reproduces the sky EXCEPT for the odd-even alternation, and that
+deficit is the driving-compression boost CR structurally lacks -- coherent with the undriven-comb result from day one.
+
+**Flag for 58 (adjudication, not a cc54 conclusion):** (a) which IC is right -- flat (position 0.7294, amplitude wrong)
+or seam (P1/P3 exact, position 0.7560); (b) whether the position moving under the principled seam IC means 0.7560 is
+the true consistent position or the IC over-corrects; (c) the residual is now specifically the 2nd/even peak (P1/P2
+high, P1/P3 exact) -- the alternation, not a broadband shape. Every principled lever is now exercised and the residual
+is isolated to one feature.
