@@ -805,3 +805,69 @@ fixed 0.7294 position vel now delivers. A clean next discriminator: separate the
 vs Silk-damping (the running also retimes when high-k modes oscillate, hence their diffusion) via NODRIVE / the
 diffusion knob, to confirm the suppression is damping-mediated rather than an anti-driving. Instrument: `FREEZEJAC`
 diagnostic added (no-op on control), PHISAVE extended with phi(eta); not committed frames.
+
+### ✔ 58's DIFFUSION-CLOCK DISCRIMINATOR — over-damping CONFIRMED; the diffusion clock is a real amplitude lever, but couples to position
+**58's diagnosis:** the amplitude failure shape (P1/P3, P1/P4 worse with k) is OVER-DAMPING, not anti-driving,
+and by LGF Silk diffusion is a content process -> leaf clock. Shipped: report which clock the k_D integral
+keeps, and run it on the leaf.
+
+**ITEM 2 (which clock), answered by reading the code:** the k_D integral (`1/k_D^2 = INT A/tau' d(eta)`) is a
+SETUP quantity computed once on `_egrid` with `d(_egrid)` -- the STACK conformal-time grid, phi-INDEPENDENT.
+So the diffusion kept the STACK clock while `vel` put the oscillation on the LEAF. The mismatch is real and
+visible. **The LGF fix (`DIFFLEAF`):** diffusion accrues over eta_leaf with tau'_leaf = tau'_stack/Jac, so
+r_D^2_leaf = INT (A/tau'_stack) Jac^2 d(eta_stack) -- the integrand gains phi^2=Jac^2 (derived, not fitted).
+phi<1 early -> LESS damping at high k. Provable no-op on control (phi==1).
+
+**GATE (control, phi==1):** lcdm vel+DIFFLEAF is BYTE-IDENTICAL to plain lcdm ([220,532,812,1116], 0.7300,
+2.447, 2.974). Self-check passes.
+
+| CR arm | l1/lA | P1/P2 | P1/P3 | r_D |
+|---|---|---|---|---|
+| vel (diffusion on STACK, the mismatch) | 0.7294 | 3.745 | 4.531 | 7.64 |
+| vel + DIFFLEAF (diffusion on LEAF, LGF) | 0.7560 | 3.503 | 3.780 | 6.57 |
+| sky | 0.7312 | 2.217 | 2.277 | — |
+
+**RESULT.** (1) 58's OVER-DAMPING diagnosis is CONFIRMED: moving the damping to the consistent leaf clock
+brings peaks 3-4 UP (P1/P3 4.531 -> 3.780, P1/P2 3.745 -> 3.503) -- the suppression WAS damping-retiming.
+(2) The diffusion clock is a genuine amplitude lever in the right direction, and it is LGF-forced, not a knob.
+(3) BUT it moves the position 0.7294 -> 0.7560 (reduced high-k damping shifts peak centroids right), so the
+fully-LGF-consistent operation (gravity on stack; pressure, friction, diffusion on leaf) OVERSHOOTS position
+and still leaves the amplitude at ~3.5 vs sky 2.2. So the diffusion clock is confirmed as a real lever and a
+FORCED assignment, but it does not close the amplitude alone and it disturbs the position.
+
+**THE REMAINING TERM, named by the instrument itself.** The code's diffusion block (c54.176-178) already
+records what it is MISSING: the POLARISATION SOURCE terms. It takes the polarisation's contribution to the
+DAMPING (the 16/15 coefficient) WITHOUT its contribution to the SOURCE (g*Pi/4 and (3/4k^2)d^2(g*Pi)/deta^2)
+-- "half of one physical effect, and the half taken is the half that removes power" -- recorded as the 1123
+chi^2 units the instrument is missing. The missing polarisation SOURCE ADDS power at the peaks (a source, not
+a damping-scale change), so it lowers P1/P2, P1/P3 WITHOUT the damping-scale position shift. That is the
+natural next term -- and unlike the clock assignments it is a genuine physics addition (deliberately left out
+with a recorded reason), so it is 58's to specify, not mine to add unattended. Instrument: `DIFFLEAF` diagnostic
+added (LGF diffusion->leaf, no-op on control); not a committed frame.
+
+**CALIBRATION (the decisive one): the diffusion-clock change is SCALE-equivalent, so the residual is the ENVELOPE SHAPE.**
+Ran vel + DAMPX=0.739 (the diagnostic that slides the damping SCALE without the leaf-clock shape, matched to
+DIFFLEAF's r_D drop 7.64->6.57):
+
+| CR arm | l1/lA | P1/P2 | P1/P3 |
+|---|---|---|---|
+| vel + DIFFLEAF (leaf-clock diffusion, LGF) | 0.7560 | 3.503 | 3.780 |
+| vel + DAMPX=0.739 (pure damping SCALE) | 0.7560 | 3.499 | 3.755 |
+
+They are the SAME. So the diffusion-clock assignment acts as a pure damping-SCALE reduction -- its leaf-clock
+shape (Jac^2) adds nothing beyond an overall scale. Two consequences, both from the instrument's own DAMPX logic
+("if the two ratios select different DAMPX, no coefficient can fix the heights, and the residual is the SHAPE of
+the envelope rather than its scale"): (i) one scale cannot close both ratios -- 3.50/2.22=1.58 vs 3.76/2.28=1.65
+-- so the amplitude residual is the ENVELOPE SHAPE, NOT the diffusion scale/clock; (ii) the scale reduction MOVES
+the position (0.7294->0.7560), so it is disqualified as an amplitude-only fix by 58's own criterion.
+
+**HONEST NET STATE (correcting any over-clean reading of the earlier position closure):** the gravity-clock
+assignment closes the position AT THE vel LEVEL (0.7294, diffusion still on stack). Making the diffusion clock
+LGF-consistent is FORCED, helps the amplitude, but is scale-equivalent -- it moves the position to 0.7560 and
+cannot close both ratios. So position and amplitude are COUPLED through the damping, and the diffusion clock is
+NOT the amplitude closer. The residual is the envelope SHAPE -> the POLARISATION SOURCE terms the instrument
+already names as its missing 1123-chi^2 piece (a source that adds power AT the peaks, changing the shape, not a
+scale that shifts position). The full LGF-consistent CR prediction -- gravity on stack, pressure/friction/diffusion
+on leaf, AND the polarisation source restored -- is the object to compare to the sky in BOTH position and amplitude,
+and it is NOT yet computed. That is the determinate next ship, and it is a genuine physics term (58's to specify),
+not a clock assignment.

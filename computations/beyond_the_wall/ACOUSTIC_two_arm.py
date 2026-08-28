@@ -298,6 +298,16 @@ _int = (_Rg ** 2 / (1 + _Rg) + _POLC) / (6.0 * (1 + _Rg) * np.maximum(_tp, 1e-30
 # is the shape of the envelope rather than its scale.  Default 1.0; any run that reports physics
 # must leave it there.
 _DAMPX = float(os.environ.get('DAMPX', 1.0))
+# ** DIFFLEAF (LGF, pairs with SRCSTACK=vel): Silk diffusion is a CONTENT process on a layer, so by the
+# LGF axiom it keeps the LEAF clock -- like c_s and recombination -- not the stacking clock the setup
+# integral above uses.  The random walk accumulates over eta_leaf with opacity tau'_leaf = tau'_stack/Jac:
+#   r_D^2_leaf = INT (A/tau'_stack) Jac^2 d(eta_stack),  i.e. the integrand gains a factor phi^2 = Jac^2.
+# Since phi<1 early (radiation era), this REDUCES the damping at high k -- exactly where vel over-damps.
+# It is the same axiom that fixed the position, applied to the one remaining content term; NOT a knob.
+# phi==1 on the control, so this is a provable no-op there (byte-identical). **
+if os.environ.get('DIFFLEAF', '0') == '1':
+    _int = _int * np.asarray(Jac_of(_egrid), dtype=float) ** 2
+    print("  DIFFLEAF: k_D integral moved to the LEAF clock (integrand x phi^2); diffusion is content (LGF)")
 _kD2inv = np.concatenate([[0.0], np.cumsum(0.5 * (_int[1:] + _int[:-1]) * np.diff(_egrid))])
 kD2inv_of = CubicSpline(_egrid, _kD2inv)
 _rD = float(np.sqrt(_kD2inv[_gi]))
