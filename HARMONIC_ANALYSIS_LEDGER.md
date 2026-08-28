@@ -294,8 +294,15 @@ either the caution is warranted, or the claim is available.* ⇒ ***It is availa
 theorem.***
 
 **① THE TOWER BEGINS AT $n=2$**, *and `P10` says so — "there are no modes below $n=2$ on $S^3$". The
-reason is the TT rank-two degeneracy on $S^3$, $2(n^2-1)$: **zero at $n=1$**, empty below, and $6$ at
-$n=2$.*
+reason is the TT rank-two degeneracy on $S^3$, which the corpus **derives** as $2(n-1)(n+3)$: **zero at
+$n=1$**, empty below, and **ten** at $n=2$.*
+
+⚠ **DEGENERACY CORRECTED r3488, by the SPECTRAL-THEORY bake reading `P10`.** *This entry first used
+the textbook $2(n^2-1)$, giving $6$ at $n=2$.* ⛔ ***That is not the corpus's convention.*** *`P10` states
+$2(n-1)(n+3)$, ten at the floor, and the corpus **derives** it — Peter–Weyl on the **parallelizable**
+$S^3$, level-$j$ totals $1,3,5$ times $(2j+1)^2$ for frame-spin $0,1,2$, TT the two extreme summands at
+$2(2j+1)^2$, exactly two fifths of the symmetric-tracefree total. **Both formulas vanish at $n=1$, so
+`H13`'s conclusion is unaffected; the stated number was wrong.***
 
 **② THE ADIABATICITY PARAMETER IS MONOTONE.** *From `H12` it separates as $C/\mu_n$ with
 $\mu_n=\sqrt{n(n+2)-2}$, and*

@@ -13,8 +13,14 @@ WHY THIS PROBE.  The third of the reach owed after r3453.  P10 carries this fiel
 WHAT IS SHOWN — IT IS AVAILABLE, AND IT IS A THEOREM.
 
   (1) THE TOWER BEGINS AT n=2, AND P10 SAYS SO ("there are no modes below n=2 on S^3").  The reason is
-      the degeneracy of TT rank-two harmonics on S^3, 2(n^2-1), which is 0 at n=1 and empty below.
-      At n=2 it is 6, at n=3 it is 16.
+      the degeneracy of TT rank-two harmonics on S^3, which the corpus DERIVES as 2(n-1)(n+3): zero at
+      n=1, empty below, TEN at n=2 and 24 at n=3.
+      ** CORRECTED r3488.  This receipt first used the textbook 2(n^2-1) (6 at n=2), which is not the
+      corpus's convention.  The corpus derives its own by Peter-Weyl on the PARALLELIZABLE S^3 --
+      level-j totals 1, 3, 5 times (2j+1)^2 for frame-spin 0, 1, 2, TT being the two extreme summands
+      at 2(2j+1)^2, exactly 2/5 of the symmetric-tracefree total.  BOTH formulas vanish at n=1, so
+      this receipt's conclusion is unaffected; the stated number was wrong.  Found by the
+      SPECTRAL-THEORY bake reading P10. **
 
   (2) THE ADIABATICITY PARAMETER IS MONOTONE.  From H12, the WKB parameter separates as C/mu_n with
       mu_n = sqrt(n(n+2)-2), and d/dn (1/mu_n) = -(n+1)/(n(n+2)-2)^{3/2} < 0 for all n >= 2.
@@ -42,8 +48,13 @@ print("=" * 78)
 print("  H13 — the declined coincidence is forced")
 print("=" * 78)
 
-deg = 2 * (n**2 - 1)
+deg = 2 * (n - 1) * (n + 3)
 print(f"\n  (1) TT rank-two harmonic degeneracy on S^3:  {sp.expand(deg)}")
+print("      ** CORRECTED r3488.  The first version used the textbook 2(n^2-1), giving 6 at")
+print("         n=2.  The corpus DERIVES 2(n-1)(n+3), giving TEN, by Peter-Weyl on the")
+print("         PARALLELIZABLE S^3 -- level-j totals 1,3,5 times (2j+1)^2 for frame-spin")
+print("         0,1,2, with TT the two extreme summands, 2(2j+1)^2.  Receipt")
+print("         D1_the_degeneracy_carrying_the_quartic..., and P10 banks it. **")
 for k in (0, 1, 2, 3, 4):
     d = int(deg.subs(n, k))
     print(f"        n={k}:  {d:>3}" + ("   <- EMPTY" if d <= 0 else ""))
