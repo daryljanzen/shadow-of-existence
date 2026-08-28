@@ -1519,3 +1519,49 @@ gravity acts).** The draft says these are different objects -- the expansion is 
 not set it, threshold principle) while the perturbation's local dynamics obey the full EFE with radiation
 gravitating as content. If that composition is what CR actually asserts, then NEITHER bracket endpoint is
 CR, and the amplitude has never been computed for the framework as written. This is Daryl's to direct.
+
+### ✔ THE THIRD COMPOSITION — geometric rate + radiation FULL in Phi's source (STACKPERT=1 + GSRC=1, r3530)
+**58/Daryl's ship, and the composition needed NO new edit -- it was the never-run GSRC flag.** The
+instrument already separates the rate's Omega set from the source's: the density fractions (Og_of, On_of,
+Ob_of, Oc_of) are normalised to `_rt` (the FULL stack, radiation included) while CR's rate `Hphys` drops
+radiation (RAD_IN_RATE=False). The consequence, stated in the flag's own comment: the source is SHORT by
+rho_tot(full)/rho_tot(free), because Hc^2 carries rho_free but the Omega_i carry rho_tot. `GSRC=1`
+(`Gf_of=_rt/_free`) supplies exactly that factor -- restoring EVERY species' gravity (matter, baryon,
+radiation) to full strength while the rate stays geometric. So **STACKPERT=1 + GSRC=1 = "radiation out of
+the rate, into the source at full strength"**, the framework's own composition, nothing added, nothing free.
+
+**GATE.** control STACKPERT=1 GSRC=1 HIER KCONT = 0.7300 / 2.254 / 2.363 -- byte-identical to control HIER
+(GSRC auto-off where RAD_IN_RATE=True; STACKPERT no-op where Hleaf==Hstack). Clean. CR is real physics.
+
+| CR (geometric rate) | l_1/l_A | P1/P2 | P1/P3 | P1/P4 | peaks (heights) |
+|---|---|---|---|---|---|
+| GSRC=0 (source short) | 0.7294 | 0.807 | 0.680 | 1.21 | P1 SUPPRESSED below P2,P3 |
+| **GSRC=1 (source full)** | **0.7825** | **3.665** | **2.489** | 4.02 | [236,628,868,1220] = [.396,.108,.159,.098] |
+| sky | 0.7312 | 2.217 | 2.277 | -- | -- |
+
+**RESULT -- it OVERSHOOTS, both observables, and that is the honest verdict.** Restoring radiation's full
+gravity to the source FLIPS the first peak from suppressed (0.807, below P2/P3) to DOMINANT (3.665, far
+above) -- radiation's local gravity is unmistakably the right LEVER: it moves P1/P2 the right direction and
+THROUGH the sky. But at full strength it OVERSHOOTS: P1/P2 = 3.665 vs sky 2.217 (+65%), P1/P3 = 2.489 vs
+2.277 (+9%). And the POSITION moves with it, 0.7294 -> 0.7825 (+7%), because radiation's source gravity is
+DRIVING -- it boosts amplitude AND shifts the acoustic phase (the raw comb shifts 0.5703 -> 0.6086 before
+the map). So GSRC is not an amplitude-only knob; the full composition couples position and amplitude, and
+both overshoot. Per 58's own criterion, overshoot = the composition is off in the other direction -- but
+GSRC is NOT tunable (it is the determined _rt/_free), so this is a framework PREDICTION, not a mis-set knob.
+
+**⌘ THE SKY IS NOW BRACKETED ON AMPLITUDE, and by the SAME term.** GSRC=0 undershoots (P1/P2 = 0.807),
+GSRC=1 overshoots (3.665), sky between (2.217). The two differ by exactly how much of radiation's gravity
+sits in the source. So the mechanism is settled -- radiation's LOCAL gravity is what boosts the first peak
+-- and what is unresolved is the AMOUNT: the framework's full-strength value over-drives. ⚑ *And the
+odd-even signature persists inside the overshoot: P1/P3 (2.489) nearly lands the sky (2.277, +9%) while
+P1/P2 (3.665) badly overshoots -- the ODD peak (P3) is close, the EVEN peak (P2) is too low (heights P2=.108
+< P3=.159). The alternation is still there even with the first peak over-boosted.*
+
+**⇒ FIRST AMPLITUDE COMPUTED FOR CR AS WRITTEN.** Every prior number was from a composition CR does not
+assert (radiation in the rate = leaf, or radiation in neither = bare stack). This is the first run of the
+framework's OWN composition -- geometric rate, radiation gravitating locally at full strength -- and it
+OVERSHOOTS the sky on both observables. That is a real result, honestly open: not "we ran out of ideas,"
+but "the framework's own composition was computed and it over-drives." What is open, now sharply: WHY the
+full local gravity over-drives -- whether CR's radiation gravitates at less than full stress-energy in the
+local layer, or whether the position coupling means the driving phase and the amplitude cannot both be read
+off this composition. Daryl's to interpret; not a cc54 search.
