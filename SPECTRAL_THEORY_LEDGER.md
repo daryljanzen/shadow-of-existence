@@ -42,7 +42,7 @@ what the spectrum IS.***
 |---|---|---|
 | **`P10`** *canonical time* | **HIGH — CONFIRMED, worked as `S1`** | *the deficiency-index paper. `F1`–`F3` classified the **endpoints**; **nobody has asked what the spectrum of the deparametrised Hamiltonian actually is** — discrete, continuous, or mixed* |
 | **`P14`** *matter sector* | **HIGH — CONFIRMED, worked as `S2`** | *a Dirac operator with `eigenvalue` ×7; `H11` already found its wall to be the **reflectionless Pöschl–Teller pair** — one bound state plus a reflectionless continuum, which IS a spectral statement* |
-| `P07` *framework* | **MEDIUM–HIGH** | *the tower's $\mu_n=\sqrt{n(n+2)-2}$ is a **spectrum**, and `H13` showed its floor at $n=2$ is forced* |
+| `P07` *framework* | **MEDIUM–HIGH — CONFIRMED, worked as `S3`; and it CORRECTED `S1`** | *the tower's $\mu_n=\sqrt{n(n+2)-2}$ is a **spectrum**, and `H13` showed its floor at $n=2$ is forced* |
 | `P09` *range* | **MEDIUM** | *`eigenvalue` ×8 — of the structure functions or the Carter cut's separation constants; needs reading* |
 | `P15` *cosmology* | **MEDIUM** | *`WKB` ×3, `discrete spectrum` ×2 — the acoustic ladder* |
 | `P03` *slicing curve* | **MEDIUM** | *`eigenvalue` ×4 — plausibly the cubic's roots, which would be a **different** sense* |
@@ -66,6 +66,8 @@ are results; neither is assumed.***
 | `S0′` | does `P10`'s degeneracy match what other bakes used? | ⛔ **NO** r3488 — *the corpus derives $2(n-1)(n+3)$; the harmonic bake's `H13` used the textbook $2(n^2-1)$. **`H13` corrected.*** |
 | `S1` | what IS the spectrum of the deparametrised Hamiltonian? | ⛔ **BITE** r3489, **receipted** |
 | `S2` | `F14` showed the wall index is well-DEFINED — is it **STABLE**? | ⛔ **BITE** r3490, **receipted** — *yes, and a **spectral gap** is why* |
+| `S1′` | does any paper already make `S1`'s identification? | ⛔ **YES — `P07` DOES**, r3491 — ***`S1` corrected*** |
+| `S3` | how many spectral gaps does the corpus rely on? | ⛔ **TWO**, r3491 — *doing two different jobs, neither referencing the other* |
 
 ---
 
@@ -133,3 +135,43 @@ wall, not by a tuned feature of it.*
 ⇒ ***So `P14` asserts the index without stating the gap that protects it, and `F14` supplies only
 well-definedness. The two halves sit in two different bakes and in no paper.***
 *(receipt `storyboard_receipts/SP_S2_the_wall_spectral_gap.py` — **added, runs, all asserts pass**)*
+
+---
+
+## ⛔ S1′ — **`S1` OVERCLAIMED, AND `P07` CORRECTS IT**
+
+*`S1` (r3489) closed with "neither the paper nor the receipt says so".* ⛔ ***Wrong. `P07` says it
+explicitly:***
+> ***"the tower's frequencies grow as $\mu_n\sim n$ and the three-sphere degeneracy as $n^2$, so the
+> shells grow as $n^3$ and the sum diverges as $N^4$ — THE GENERIC ZERO-POINT DIVERGENCE OF A FIELD IN
+> FOUR DIMENSIONS, at the generic power."***
+
+*`P07` makes the identification, and makes **more** of it than the probe did.* ⇒ ***What survives is
+narrower and still true: `P10` and the degeneracy receipt each compute this sum for their own purposes
+and **neither references `P07`'s identification**. The join exists in one paper and is absent from the
+two places that do the computation.*** *`S1`'s receipt is corrected and reruns.*
+
+---
+
+## ⛔⛭⛭⛭ S3 — **TWO SPECTRAL GAPS, TWO JOBS, AND NEITHER REFERENCES THE OTHER**
+
+*Reading on in `P07` gives the better half of its own passage:* ***"the asymmetry is the informative
+part: compactness makes the sum discrete over a tower starting at $n=2$, with NO ZERO MODE AND NO SOFT
+REGION, so the infrared is regulated for free while the ultraviolet is untouched. This construction
+therefore has no infrared problem to solve and an ultraviolet problem every interacting field theory
+has."***
+
+⌗ **That IR regulation *is* a spectral gap** — *the tower's lowest frequency is
+$\mu_2=\sqrt6\approx2.449$, and nothing lies below it.*
+
+| gap | from | to | its job |
+|---|---|---|---|
+| **the tower** (`P07`, `P10`) | $0$ | $\mu_2=\sqrt6$ | ***regulates the infrared for free*** |
+| **the wall** (`P14`, `S2`) | $0$ | $m_\infty=1$ | ***stabilises the generation index*** |
+
+⇒ ***Two spectral gaps in one construction, doing two different jobs — one killing an IR divergence
+that every field theory on a non-compact space has to regulate by hand, the other protecting a count
+of three from perturbation — and neither paper references the other.***
+
+⍀ *And in both cases the gap is not tuned: the tower's is set by the $S^3$ Laplacian's floor, the
+wall's by the asymptotic mass. **Both are consequences of the geometry rather than choices.***

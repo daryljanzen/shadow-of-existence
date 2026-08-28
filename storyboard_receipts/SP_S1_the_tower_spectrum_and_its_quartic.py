@@ -31,9 +31,17 @@ AND THE SUM OVER THE TOWER IS A DIFFERENT OPERATOR.  The zero-point energy is
 
   ** AND THAT IS THE CORPUS'S OWN QUARTIC. **  The degeneracy receipt
   (D1_the_degeneracy_carrying_the_quartic...) states "the shell contribution is 2 n^3 and the leading
-  constant is settled rather than assumed" and "the quartic stands and its constant is now fixed" --
-  computed there for a Weyl-law counting purpose.  ** It is, up to the factor of one half, the vacuum
-  energy of P10's graviton tower, and neither the paper nor the receipt says so. **
+  constant is settled rather than assumed", computed there for a Weyl-law counting purpose.
+
+  ⛔ CORRECTED r3491.  This receipt first added "and neither the paper nor the receipt says so".
+  ** THAT IS WRONG, AND P07 SAYS IT EXPLICITLY: ** "the tower's frequencies grow as mu_n ~ n and the
+  three-sphere degeneracy as n^2, so the shells grow as n^3 and the sum diverges as N^4 -- THE GENERIC
+  ZERO-POINT DIVERGENCE OF A FIELD IN FOUR DIMENSIONS, at the generic power."  P07 makes the
+  identification, and makes more of it than this probe did.
+
+  ** What survives is narrower and still true: P10 and the degeneracy receipt each compute this sum
+  for their own purposes and NEITHER references P07's identification.  The join exists in one paper
+  and is absent from the two places that do the computation. **
 
 WHAT THIS DOES AND DOES NOT CLAIM.  It does NOT claim a defect: a divergent zero-point sum is what
   every free field theory has, and P10's unitarity claim is modewise and unaffected.  ** What is
@@ -73,10 +81,12 @@ print(f"      sum_2^N n^3 = {sp.factor(sp.simplify(S))}   ->  grows as N^4/4")
 print("  ** VERDICT 2: the shell is ~ 2 n^3, exactly the corpus's 'the shell contribution is")
 print("     2 n^3', and the partial sums grow QUARTICALLY. **")
 
-print("\n  ** VERDICT 3: so the corpus's counting quartic and the vacuum energy of P10's")
-print("     graviton tower are THE SAME SUM, up to the factor of one half.  The degeneracy")
-print("     receipt computes it for a Weyl-law purpose and neither it nor P10 says it is a")
-print("     zero-point energy. **")
+print("\n  ** VERDICT 3 (CORRECTED r3491): the counting quartic and the vacuum energy of P10's")
+print("     graviton tower are THE SAME SUM, up to one half -- and P07 SAYS SO explicitly:")
+print("     'the sum diverges as N^4 -- the generic zero-point divergence of a field in four")
+print("     dimensions'.  This probe first claimed the identification was unmade; it is made,")
+print("     in P07, and made better there.  What survives: P10 and the degeneracy receipt")
+print("     each compute the sum for their own purposes and neither references P07. **")
 
 print("\n  ** VERDICT 4: no defect is claimed.  A divergent zero-point sum is what every free")
 print("     field theory has, and P10's unitarity claim is MODEWISE and unaffected.  What is")
