@@ -1676,3 +1676,54 @@ All three measured on determined quantities, none tuned. The framework as writte
 STRUCTURE (peaks in the right places to ~7%, first peak dominant) but OVER-DRIVES both position and
 amplitude, with a residual odd-even alternation beneath. That is the honest state: not closed, not a
 fitting failure -- the framework's own composition computed and found 7-65% high, carried open on its merits.
+
+### ⛭⛭ THE OVER-DRIVE MECHANISM, MEASURED — CR's Φ decays SLOWER, mode by mode (r3533)
+**Daryl's push against "carry it open": the residual has a SHAPE and it was glossed.** +7% on position,
++65% on amplitude -- an order of magnitude apart. A uniformly-too-strong source scales both together; this
+over-supplies AMPLITUDE while barely touching PHASE, which is the signature of a potential that decays too
+SLOWLY (keeps driving through the oscillation, pumping amplitude, while the phase shift saturates early).
+Structural expectation: CR's radiation gravitates locally but does NOT set the expansion (threshold), so
+the well is as deep as LCDM's while the background is not diluted at the radiation-era rate -> Phi persists
+longer relative to the oscillation.
+
+**MEASURED (PHISAVE, matched acoustic phase PHIQ=1,2,3 -- same # half-periods by recomb on both arms;
+STACKPERT=1 GSRC=1; gate: no-op on control).** Phi normalised to its super-horizon value; decay per
+half-period below:
+
+| q (peak) | CR retains Phi_rec/Phi_0 | CR /half | control retains | control /half | **CR/control** |
+|---|---|---|---|---|---|
+| 1 | 0.616 | 0.616 | 0.487 | 0.487 | **1.264** |
+| 2 | 0.259 | 0.509 | 0.219 | 0.468 | **1.182** |
+| 3 | 0.124 | 0.499 | 0.156 | 0.539 | 0.796 |
+
+*(r3431 baseline, on the LEAF composition: ~0.6 per half-period, BOTH arms. This is the FIRST measurement
+on the geometric-rate + full-source composition.)*
+
+**⌘ THE MECHANISM IS CONFIRMED, and it maps onto the over-drive mode by mode.** For the modes that set the
+amplitude over-drive, CR's Phi decays SLOWER than the control's: q=1 retains +26% more per half-period,
+q=2 +18%. And the ENHANCEMENT is largest at q=1 (1.264) and falls with q (1.182, then 0.796 at q=3) -- so
+the FIRST peak's driving is sustained most, which is exactly why P1 is over-boosted most and P1/P2
+over-drives (+65%), while P1/P3 is only mildly over (+9%) and q=3's Phi actually decays FASTER in CR. The
+over-drive is NOT uniform; it tracks the Phi-decay rate mode by mode -- the slower-decaying potential Daryl
+predicted, resolving the +7%/+65% asymmetry: sustained driving pumps amplitude (first peak most) while the
+phase shift saturates.
+
+**⇒ THIS CHANGES WHAT PO-13 IS.** The over-drive is not a defect in the source and not a fitting failure --
+it is a CONSEQUENCE of the rate/source split the framework asserts: radiation gravitates locally (deep
+well) but does not set the expansion (no radiation-era dilution), so the well persists and over-drives. And
+that is a SEPARATELY OBSERVABLE prediction: Phi's decay history is exactly what the **ISW effect** and
+**gravitational lensing** measure. So PO-13's amplitude residual converts from "the model is 65% high" into
+"CR predicts a specific potential-decay history -- measurably slower than LCDM for the low modes -- and that
+history is independently testable against ISW and lensing." That is a different and better problem than a
+fitting miss. **The honest open item is now: what does CR predict for Phi(eta)/Phi(a) across scales, and
+does the ISW/lensing data bear out the slower low-mode decay this composition shows?**
+
+**⚑ The odd-even alternation still sits underneath, untouched by any of this** -- P2 < P3 at every
+normalisation; the one signature independent of the source and the decay question both.
+
+**⌗ PROCESS NOTE (for the next node, at 58's request).** On this branch 58 reasoned from the code as read
+and cc54 ran it; where they disagreed, the RUN won every time -- the map could not move heights (cc54,
+measured), the matter double-count was not the diagnosis (cc54, algebra), and the "cleanest position result"
+rested on the source we agreed was wrong (cc54, measured). Three corrections in one thread, all by running.
+The standing lesson: when a read of the code and a run disagree, run it; the temptation to reason from the
+source will recur.

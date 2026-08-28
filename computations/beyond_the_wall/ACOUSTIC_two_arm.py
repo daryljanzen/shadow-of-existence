@@ -1100,12 +1100,21 @@ def main():
     # of branch C).  Does the potential decay with the k-dependent phase that produces the odd-even
     # alternation, or smoothly?  A field the ODE already carries (state index 6), no new run. **
     if os.environ.get('PHISAVE'):
-        _pk = argrelextrema(np.abs(TH0), np.greater, order=4)[0]
-        _pk = _pk[(kk[_pk] * R_S / np.pi < 5)][:4]        # first four peak modes
+        # ** PHIQ=1,2,3 selects modes at FIXED acoustic phase q = k r_s/pi (same number of
+        # half-periods by recombination on BOTH arms) so Phi's decay-per-half-period is a MATCHED
+        # comparison; without it, the arm's own peak modes are used (which differ in k between arms). **
+        _phiq = os.environ.get('PHIQ')
+        if _phiq:
+            _qt = [float(x) for x in _phiq.split(',')]
+            _pk = np.array([int(np.argmin(np.abs(kk * R_S / np.pi - q))) for q in _qt])
+        else:
+            _pk = argrelextrema(np.abs(TH0), np.greater, order=4)[0]
+            _pk = _pk[(kk[_pk] * R_S / np.pi < 5)][:4]    # first four peak modes
         _etg = np.linspace(ETA_S, eta_rec, 500)
         _Yg = sol.sol(_etg).reshape(nk, NV, len(_etg))    # (nk, NV, neta)
         _clock = np.asarray(Jac_of(_etg), dtype=float) + np.zeros_like(_etg)  # phi(eta)=Jac (const if frozen)
-        np.savez(os.environ['PHISAVE'], eta=_etg, phi=_Yg[_pk, 6, :], dg=_Yg[_pk, 2, :],
+        _ag = np.interp(_etg, eg, ag)                     # scale factor a(eta) -- common variable across arms
+        np.savez(os.environ['PHISAVE'], eta=_etg, a=_ag, phi=_Yg[_pk, 6, :], dg=_Yg[_pk, 2, :],
                  tg=_Yg[_pk, 3, :], clock=_clock,
                  qpk=kk[_pk] * R_S / np.pi, kpk=kk[_pk], arm=ARM, eta_rec=eta_rec, eta_s=ETA_S)
         print(f"  PHISAVE: Phi(eta) for peak modes q={[round(float(kk[j]*R_S/np.pi),2) for j in _pk]} "
