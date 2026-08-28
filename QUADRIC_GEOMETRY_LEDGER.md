@@ -3,7 +3,7 @@ kind: REFERENCE
 job: projective geometry of quadrics against the CR substrate — the CK metric identification, and the ladder gap it exposes
 name: quadric-geometry-ledger
 description: R-M's first field bake — projective geometry of quadrics thrown at the CR substrate. Opened r1838 (Phase 8). What the corpus already reaches, the boundary the throat protocol states for itself, and the bites this field can take that the classical catalogue could not.
-current: r2713+c54.214
+current: r3512
 ---
 
 > **▣ REFERENCE — R-M's first field bake, and part of the corpus.** *Projective geometry of quadrics
@@ -334,3 +334,49 @@ the gap, trips the standing checks, and gets receipted.*
 • **P12** — the algebroid, $\mathfrak{so}(5,1)$ acting on the quadric. **Anything about the group's action.**
 • **P9** — the range and the two rulings. **Q2's home if it bites.**
 • `ONTOLOGY_FOUNDATION_INDEX` §0 — **any new symbol** (the field brings its own: polarity, regulus, cross-ratio).*
+
+
+## ⛭⛭⛭ REACH CLOSE — all seventeen papers WORKED or CHECKED-NEGATIVE by name (r3512)
+
+> ⛔ *The r3500 whole-set measurement put this field at **29%** (5 papers). Read in full this pass (four
+> sweeps, `polar` split hard from **polarization** — P11 ×34, P09 ×14, P14 ×14 all the graviton/wave
+> polarization — and `pole`/`cone`/`absolute` context-screened). **The reach is `11/17` — the widest of any
+> field so far — because ONE object underlies the corpus: the dS substrate as a doubly-ruled hyperboloid
+> whose horizon cubic factors into a line and the fundamental ellipse.***
+
+**⌘ THE ONE OBJECT, READ IN ELEVEN PAPERS.** *`p0` gives the Cayley–Klein absolute + log-cross-ratio metric
+($k=\alpha$), pole–polar = background, embedding-quadric polarity, Segre/pencil degeneracy = concentricity,
+the confocal-family theorem's structural failure, quadric-cut-by-linear-space; `P07` the explicit
+one-sheeted hyperboloid $R^2/a^2-X_0^2/b^2=1$ doubly ruled with ruling-crossing $\cos\phi=(a^2-b^2)/(a^2+b^2)$
+(perpendicular at $a=b$) and the cubic-family discriminant $\Delta(E)$; `P08` the level-set trichotomy
+$S^3/\text{flat}/H^3$; `P03` the ellipse-by-eigenvalues, discriminant $4-3r_0^2$ trichotomy, foci
+(chart-flagged), Klein-quadric conjugacy, gnomonic projection; `P05` the equianharmonic cross-ratio and the
+horizon-cubic discriminant $4-27(2M)^2$; `P02` the interior circle $(r-M)^2+s^2=M^2$ continuing to the
+hyperbola; `P06` the Cayley–Klein absolute reading; `P09` the doubly-ruled → complete Petrov interval and
+$I^3-27J^2$; `P12`/`P13`/`P14` the reducible cubic $(r-r_0)(r^2+rr_0+r_0^2-1)$ = line + fundamental ellipse,
+the Nariai double root of the discriminant, and (`P14`) the dimension-indexed conic reducibility.*
+
+| paper | status | where |
+|---|---|---|
+| `P01` | **CHECKED-NEGATIVE** | `null generators` = Schwarzschild horizon; `cone` = light cone; `absolute` ≠ CK absolute |
+| `P02` | **WORKED** | the interior conic — circle $(r-M)^2+s^2=M^2$ continuing to the hyperbola; **`Q7` (new receipt)** |
+| `P03` | **WORKED** | `Q4`/`Q5` + ellipse by eigenvalues, discriminant $4-3r_0^2$, foci, Klein quadric, gnomonic (`P03_cubic_factor_ellipse_locus`, `D2_hexagon_klein`, `P03_triple_angle_gnomonic`) |
+| `P04` | **CHECKED-NEGATIVE** | `absolute` = astronomical magnitude/parallax |
+| `P05` | **WORKED** | `Q4` equianharmonic cross-ratio; horizon-cubic discriminant $4-27(2M)^2$ (`Q4_equianharmonic_vantages`) |
+| `P06` | **WORKED** | the Cayley–Klein absolute fixes signature/null/isometry; scale the sole free constant |
+| `P07` | **WORKED** | one-sheeted hyperboloid ruling formulae; cubic-family discriminant $\Delta(E)$ (`P07_nariai_selection`, `L8_the_pencil`) |
+| `P08` | **WORKED** | doubly-ruled hyperboloid; level-set trichotomy $S^3$/flat/$H^3$ (`P08_synchronous_horosphere`, `P08_trichotomy`) |
+| `P09` | **WORKED** | doubly-ruled → Petrov interval complete; speciality discriminant $I^3-27J^2$ (`P1_the_petrov_interval...`, `P09_bianchiI_typeI`) |
+| `P10` | **CHECKED-NEGATIVE** | `absolute` = absolute time; `polar` = polar coords/polarization |
+| `P11` | **CHECKED-NEGATIVE** | `polar` ×34 = graviton polarization; `null generators` = Killing-horizon |
+| `P12` | **WORKED** | $\dS_5$ hyperboloid; discriminant $-4\alpha^4(27M^2-\alpha^2)$; reducible cubic = line + fundamental ellipse (`K8_orbit_type_filtration`; ellipse cites `Q5`/`P03`) |
+| `P13` | **WORKED** | fundamental ellipse realizes the $A_2$ quadratic form; discriminant $4-3r_0^2$ at Nariai |
+| `P14` | **WORKED** | dimension-indexed conic reducibility ($D{=}5$ line+circle, $D{=}4$ genuine conic, $D{=}6,8$ irreducible); $45°$ tilted ellipse (`P14_odd_D_contains_its_own_image`, `P14_odd_D_is_pair_symmetric`) |
+| `P15` | **CHECKED-NEGATIVE** | `discriminant` = a statistical discriminant of models; `absolute` = magnitude; `polar` = polarization |
+| `P16` | **CHECKED-NEGATIVE** | zero quadric-vocabulary occurrences |
+
+⇒ ***Seventeen of seventeen accounted for: ELEVEN WORKED, SIX CHECKED-NEGATIVE. Reach $=11/17$, up from 5 —
+the widest reach of the seven fields baked so far.*** *One new receipt: `Q7` (P02's interior conic, circle↔hyperbola
+across $s\to is$, added, runs, ALL PASS). Every other worked paper already carried one.* **Cross-field: `P09`'s
+$I^3-27J^2$ and `P14`'s reducibility overlap the conformal (Weyl invariants) and involution (the $A_2$ / real-form
+skeleton) bakes; no correction, shared results.**
