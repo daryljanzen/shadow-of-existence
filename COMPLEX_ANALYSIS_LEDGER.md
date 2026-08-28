@@ -3,7 +3,7 @@ kind: REFERENCE
 job: complex analysis and monodromy against CR — the field that turned practices into theorems
 name: complex-analysis-ledger
 description: R-M's third field bake — complex analysis and monodromy thrown at CR. Opened r1867 (Phase 8), handed to by the quadric bake's Q4 (equianharmonic ⟺ j=0 ⟺ CM by ω). Discharges R-M arc station Ⓒ, marked NO ENTRY since r1805. Baseline, probes, four-part close.
-current: r3501
+current: r3506
 ---
 
 > **▣ REFERENCE — R-M's third field bake, and part of the corpus.** *Complex analysis and monodromy.
@@ -736,3 +736,41 @@ the Wick rotation", now with the reason, and it is a statement only this field c
 ⌗ *And it completes the pair with `C6`: `C6` showed $\xi$ is Möbius and its flip is through $\infty$;
 `C8` shows that is exactly what distinguishes it from the Wick rotation the corpus is careful to say it
 is not.*
+
+## ⛔⛭⛭ C9 — **`P16`'s BRANCH-POINT MONODROMY IS FUCHSIAN — unipotent BECAUSE the indicial exponents differ by an integer**
+
+*`P16`, the cosmogenesis paper, carries `monodromy` ×11, `indicial` ×3, `resonance` ×1, `unipotent` ×1
+— the corpus's **second** monodromy paper after `P05` — and this bake had never read it.*
+
+**⌘ WHAT `P16` CLAIMS.** *Continuing the perturbation modes around the branch point $r=0$ (a regular
+singular point of the mode equation): "**the resulting monodromy is unipotent with off-diagonal
+$2\pi i p$**", and "**the scalar off-diagonal is $-4\pi i/\rho$, twice the tensor's**"
+(`\rcpt{P16_the_scalar_monodromy_is_four_pi_over_rho}`).*
+
+**⌘ THE FIELD'S QUESTION — why unipotent, not diagonalisable?** *`P16` states the fact and the number;
+the classification behind it is a Fuchsian theorem it never names.* ⌘ **VERIFIED SYMBOLICALLY:** at a
+regular singular point the basis is $y_1=z^s(\text{analytic})$, $y_2=c\log z\,y_1+z^s(\text{analytic})$,
+and continuation $z\to z e^{2\pi i}$ gives $M=e^{2\pi i s}\begin{psmallmatrix}1&2\pi i c\\0&1\end{psmallmatrix}$.
+**When the exponents differ by an integer ($s\in\mathbb Z$), $M=\begin{psmallmatrix}1&2\pi i c\\0&1\end{psmallmatrix}$
+— unipotent: $(M-I)^2=0$, $\det=1$, $\operatorname{tr}=2$, one eigenvalue $1$, off-diagonal exactly
+$2\pi i c$** = `P16`'s $2\pi i p$. The Euler ODE $z^2y''+zy'=0$ realises it: indicial $r^2$, double root,
+solutions $1$ and $\log z$. And the ratio is structural: $c_{\rm scalar}=2c_{\rm tensor}\Rightarrow
+-4\pi i/\rho = 2\times(-2\pi i/\rho)$ — the field claims the **unipotence** and the $2\pi i c$ **form**;
+the value $-1/\rho$ is `P16`'s ODE, receipted separately.
+
+**⌘ THE FIELD SUPPLIES THE CLASSIFICATION `P16` DOES NOT NAME.** *`Fuchsian` ×0 and `regular singular`
+×0 in `P16`.* ***The paper names "unipotent" and "indicial" but not the Fuchsian regular-singular-point
+theorem that makes the unipotence NECESSARY*** — the same anonymity as `C5` (`P02`'s meromorphic
+Kretschmann) and `C6` (`P05`'s Möbius seam): the corpus does the complex analysis and does not name it.
+*(receipt `storyboard_receipts/CA_C9_the_branch_point_monodromy_is_fuchsian.py` — **added, runs, all
+asserts pass**)*
+
+### ⌗ C9 LEAD REGISTER
+- **⊢ WORKED** — the unipotence-from-integer-exponents theorem, verified symbolically; `P16`'s "$2\pi i p$"
+  is $2\pi i c$ and its "twice the tensor's" is the $c_{\rm scalar}=2c_{\rm tensor}$ ratio. Receipted.
+- **⟐ NO CHANGE OWED to the arithmetic** — `P16`'s $-4\pi i/\rho$ is right and already receipted
+  (`P16_the_scalar_monodromy_is_four_pi_over_rho`); C9 does not touch it.
+- **⌷ ROUTED (to `P16`, do-not-apply)** — *exact clause offered for the sentence at the two-monodromies
+  passage:* "The monodromy is unipotent because $r=0$ is a **regular singular point whose indicial
+  exponents differ by an integer** (the resonant, logarithmic case of Fuchs's theorem); the off-diagonal
+  $2\pi i p$ is $2\pi i$ times the log-coefficient." **Paper edit is `P16`-holder's call, not applied here.**
