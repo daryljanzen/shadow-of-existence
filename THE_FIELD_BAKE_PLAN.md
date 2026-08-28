@@ -214,3 +214,89 @@ which is what r3460 already recorded and this measurement now quantifies.*
 3. ***Then the three never thrown***, *convexity ×143 first.*
 4. ***And `622` may be struck only when all seventeen meet the READING standard*** — *every paper
    worked or checked-negative **by name** — not when a count is reached.*
+---
+
+## ⛭⛭⛭⛭ THE WHOLE SET, RE-MEASURED r3521 — *the reading standard is met across all seventeen*
+
+*The r3505 overnight order ran to completion: the eleven remaining existing fields and the three never
+thrown are each read to the READING standard — **every one of the seventeen paper bodies WORKED or
+CHECKED-NEGATIVE by name**, in a status table in each ledger. Reach is now COVERAGE (17/17 read for
+every field) and the number that discriminates is DEPTH — the count of papers carrying a genuine
+checkable claim. The r3500 table's "reach %" is superseded: what it called 12%–41% was papers-touched
+before the by-name reading; below is depth after it.*
+
+| depth (WORKED / 17) | fields | coverage |
+|---|---|---|
+| **16** | harmonic analysis | 17/17 read |
+| **15** | involution / real forms | 17/17 read |
+| **14** | representation theory · catastrophe/singularity · functional analysis | 17/17 read |
+| **13** | complex analysis · Cartan / holonomy | 17/17 read |
+| **11** | quadric geometry · spectral theory | 17/17 read |
+| **9** | variational | 17/17 read |
+| **8** | combinatorics · algebraic geometry | 17/17 read |
+| **7** | conformal geometry | 17/17 read |
+| **6** | optics / lensing | 17/17 read |
+| **5** | category theory · statistics / inference | 17/17 read |
+| **1** | convexity / optimisation | 17/17 read |
+
+⇒ ***Seventeen fields, SEVENTEEN now at the reading standard*** (three were there before the overnight
+run — functional, harmonic, spectral; the other fourteen were brought there in it). *The depth spread —
+16 down to 1 — is the real map of the corpus: it is deepest in the finite-group / horizon-cubic
+mathematics (harmonic, involution, representation, catastrophe, complex analysis, Cartan) and shallowest
+where the field's own objects are simply absent (convexity: `convex`/`KKT`/`epigraph` ×0 corpus-wide;
+statistics and category: the content sits in a few papers and is genuinely absent from the rest). Depth
+is a property of the CORPUS, not a grade on the bake — a field reads THIN because the corpus does not do
+that field's work, and that bounce is a result the ledger owns.*
+
+### ⌗ WHAT CLOSED, AND WHAT IT FOUND — the overnight run, r3506–r3521
+
+**The fourteen closes.** complex analysis (13), category (5), optics (6), variational (9), conformal (7),
+quadric (11), involution (15), representation (14), Cartan (13), statistics (5), combinatorics (8) — the
+eleven existing; then catastrophe (14), algebraic geometry (8), convexity (1) — the three never thrown.
+Each carries a seventeen-row WORKED/CHECKED-NEGATIVE table and a reach-close section in its ledger.
+
+**New receipts banked this run (each run, each ALL PASS).**
+- `CH1` — the colour bundle's flatness is a THEOREM: finite (order-81) holonomy forces $F=0$ by
+  Ambrose–Singer (discharges the Cartan ledger's own owed probe).
+- `CA_C9`/`C10`/`C11` — the branch-point monodromy is Fuchsian; two monodromies at the branch point;
+  P12's "residue pairing" is literally residues and its $V_4$ holonomy is $\sqrt\Delta$ monodromy.
+- `Q7` — P02's interior conic is a circle and its analytic completion a hyperbola (one conic, $s\to is$).
+- `KT1` — **the corpus's catastrophe is EXACTLY the fold (A_2); no cusp (A_3) is possible**: the depressed
+  horizon cubic with fixed nonzero linear coefficient admits no triple root for any mass, and the cycloid
+  turnaround is Morse-non-degenerate. Discharges the catastrophe field's own verdict.
+- `CX1` — **the Hubble tension is a CONVEXITY statement**: the radiation-pinned $\chi^2(H_0)$ is strictly
+  convex (unique argmin ~67, excludes 73) while CR's is flat in $H_0$ (degenerate argmin, includes 73),
+  because $H_0$ cancels in the dimensionless BAO ratio when the ruler scales as $c/H_0$. The convexity
+  field's one genuine bite.
+
+**Cross-field corrections made on the record.**
+- `I1` (involution) was FAILING — a case-staleness after P13 was corrected "four"→"five" real forms;
+  fixed (`.lower()`), reruns ALL PASS.
+- `S1` (L263 station audit) found FAILING (asserts P13's superseded "four real forms" and "NO Atiyah
+  sequence" that P12 now carries) — ROUTED to its lineage, not silently patched.
+- The conformal ledger's "REFUSED" headline was corrected: refused only on the Möbius/inversive half,
+  WORKED on the Weyl-tensor/conformal-flatness half (P09/P10/P11).
+- combinatorics: `P03` and `P08` reclassified from the expected negative sweep to WORKED (P03's
+  $15=3+6+6$ hinge-pair enumeration; P08's $\mathbb{Z}_3$ monodromy and signed-root enumeration).
+- algebraic geometry: two premises of the work-order corrected — **"genus" is taxonomic corpus-wide**
+  (genus/species, never topological), and **P07's "blow-up" is a curvature blow-up** (spacetime homonym),
+  not an AG resolution; no genuine AG blow-up occurs anywhere.
+
+**Physics findings — flagged to PO-13 sky closure.** The statistics and optics bakes together pull the
+sky-closure target into focus: the **amplitude** is essentially met (P07 states $P_1/P_2=2.185$ vs the
+measured $2.2564\pm0.0772$, ≈0.9σ — the odd/even height pattern comes out right), while the **position**
+carries the whole residual (the asymptotic acoustic phase intercept sits $0.615\,\ell_A$ from the sky's,
+~70σ). P15's two-arm control makes the split quantitative — the construction's arm costs 5.4× its own
+control, "half of that cost is removable, and the removable half is the one that matters for the
+position," and the position deficit survives the one fitted parameter $z_{\rm onset}$. Lensing does not
+move the peaks (optics bake). ⇒ **the sky grind is a POSITION problem, not an amplitude one**; the lever
+is the SOURCE phase, not projection or lensing. `CX1` separately closes the $H_0$ axis: CR fits the BAO
+ladder at any $H_0$ including 73 because its objective is $H_0$-flat (degeneracy, not a better fit).
+
+### ⛔ `622` STAYS OPEN
+
+*All seventeen fields now meet the READING standard — every paper worked or checked-negative by name —
+which is the strike condition this plan set at `THE ORDER THAT FOLLOWS` item 4. **`622` is nonetheless
+left open**, per the r3505 work order ("leave 622 open"): the strike is the framework node's to make,
+not the compute node's. What is recorded here is that the condition is met and the register rows and the
+owed-list are untouched; the decision to strike is reserved.*
