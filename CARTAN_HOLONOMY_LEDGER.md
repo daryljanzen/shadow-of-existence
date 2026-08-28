@@ -289,3 +289,29 @@ receipt: `CH1` (the flatness is a theorem — the ledger's own owed probe, disch
 paper carries one.* **Cross-field: the Fuchsian ODE monodromy (`P15`/`P16`) is the same object as complex
 analysis `C9`/`C10` (the branch-point unipotent monodromy) read as a flat-connection holonomy; the $V_4$/W(A₃)
 holonomy is quadric/rep-theory's; the Atiyah sequence is variational's `V4` connection — shared, no correction.**
+
+
+---
+
+## ⍀ C9 — **`p0` IS NEGATIVE FOR THIS FIELD, AND ITS "FLAT" IS A DIFFERENT FLATNESS** — *r3506*
+
+*The one paper this ledger had not reached. Read rather than assumed.*
+
+| candidate | count | what it is |
+|---|---|---|
+| `monodromy`, `holonomy`, `connection`, `Cartan`, `parallel transport` | **×0 each** | — |
+| `curvature` | ×11 | *the **curvature singularity** of Schwarzschild — a physics term, and the object `p0` argues is a perspectival artefact* |
+| `flat` | ×5 | ***the flat LOCUS*** — *"the flat locus of the slicing surface's **intrinsic curvature**", where a slice's curvature vanishes **at a point*** |
+
+**⛔ AND THE `flat` IS THE HOMONYM WORTH NAMING**, *because this field's own `CH1` proves flatness of a
+different object:* ***`CH1` shows finite holonomy forces $F=0$ — a CONNECTION whose curvature vanishes
+IDENTICALLY.*** *`p0`'s flat locus is a **slice's intrinsic curvature vanishing at one locus**, with the
+expansion decelerating on one side and accelerating on the other.*
+⇒ ***Two different flatnesses: one a property of a connection everywhere, one a locus on a surface.
+Neither is the other, and only the second is in `p0`.***
+
+⍀ ***CHECKED-NEGATIVE, by name.*** *`p0` carries no connection, no transport, and no holonomy; its
+epistemic content was worked by the harmonic bake as `H25` (its criterion is a **projection**
+criterion) and that is where it belongs.*
+
+⇒ **This field now stands at 17/17 — every paper WORKED or CHECKED-NEGATIVE by name.**
