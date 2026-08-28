@@ -45,7 +45,7 @@ what the spectrum IS.***
 | `P07` *framework* | **MEDIUM–HIGH — CONFIRMED, worked as `S3`; and it CORRECTED `S1`** | *the tower's $\mu_n=\sqrt{n(n+2)-2}$ is a **spectrum**, and `H13` showed its floor at $n=2$ is forced* |
 | `P09` *range* | **MEDIUM — CONFIRMED, worked as `S4`; the guess (separation constants) was WRONG** | *`eigenvalue` ×8 — of the structure functions or the Carter cut's separation constants; needs reading* |
 | `P15` *cosmology* | **MEDIUM — CONFIRMED, worked as `S5`** | *`WKB` ×3, `discrete spectrum` ×2 — the acoustic ladder* |
-| `P03` *slicing curve* | **MEDIUM** | *`eigenvalue` ×4 — plausibly the cubic's roots, which would be a **different** sense* |
+| `P03` *slicing curve* | **MEDIUM — CONFIRMED, worked as `S6`; the guess (cubic roots) was WRONG** | *`eigenvalue` ×4 — plausibly the cubic's roots, which would be a **different** sense* |
 | `P06` *geometric core* | **MEDIUM** | *`gap` ×6, `eigenvalue` ×2* |
 | `P16` *cosmogenesis* | **MEDIUM** | *`WKB` ×2* |
 | `P12`, `P13`, `P11` | **LOW–MEDIUM** | *small counts, to be read* |
@@ -70,6 +70,7 @@ are results; neither is assumed.***
 | `S3` | how many spectral gaps does the corpus rely on? | ⛔ **TWO**, r3491 — *doing two different jobs, neither referencing the other* |
 | `S4` | what are `P09`'s eigenvalues, and of what? | ⛔ **BITE** r3492, **receipted** — *the **self-dual Weyl operator**, and its degeneracy condition is **Nariai's own algebra*** |
 | `S5` | is `P15`'s exact/WKB residual an adiabatic error? | ⛔ **NO** r3493, **receipted** — *monotone the wrong way and **saturating***; *it is a systematic offset* |
+| `S6` | what are `P03`'s eigenvalues, and what do they carry? | ⛔ **BITE** r3494, **receipted** — *the **Killing form's**, and its axis ratio is the $A_2$ **root/weight ratio*** |
 
 ---
 
@@ -248,3 +249,32 @@ gives"***, *and a **saturating** offset makes that uniform in $\ell$ rather than
 multipole.* **What is misplaced is the attribution.**
 *(receipt `storyboard_receipts/SP_S5_the_wkb_residual_is_an_offset.py` — **added, runs, all asserts
 pass**)*
+
+---
+
+## ⛔⛭⛭⛭ S6 — **THE ELLIPSE'S SPECTRUM IS THE KILLING FORM'S, AND ITS SHORTER AXIS IS THE SLICING SCALE**
+
+*Estimated **MEDIUM** with the guess that `P03`'s `eigenvalue` ×4 would be the cubic's roots.* ⛔ ***The
+guess was wrong.*** *They are the eigenvalues of the $2\times2$ quadratic form classifying the
+factorisation locus:* ***"the quadratic form $r^2+rr_0+r_0^2$ has matrix $\big(\begin{smallmatrix}1 &
+1/2\\ 1/2 & 1\end{smallmatrix}\big)$, with eigenvalues $1/2$ and $3/2$."***
+
+**⌘ WHAT THE SPECTRUM CARRIES.** *Eigenvalue ratio $3$, so the **axis ratio is $\sqrt3$**, with
+semi-axes $2$ and $2/\sqrt3$.* ⇒ ***And $2/\sqrt3$ is `P03`'s OWN SLICING SCALE*** — *the value `H20`
+showed is **forced** as the unique nonzero $A$ killing the residual harmonic in the cubic's
+trigonometric reduction.* **The ellipse's shorter semi-axis and the slicing scale are the same number,
+arrived at two ways in one paper.**
+
+**⌘ AND THE AXIS RATIO IS THE ROOT/WEIGHT RATIO.** *The harmonic bake's `L8.5` measured, on the $A_2$
+side, $\lvert\text{root}\rvert^2=2$ against $\lvert\text{weight}\rvert^2=2/3$ — a length ratio of exactly
+$\sqrt3$, which is what made `P03`'s Nariai triple carry **root** length while pointing along
+**weight** directions.*
+
+⇒ ***The same $\sqrt3$, and the same OBJECT rather than the same number:*** *`P03_the_adjoint_is_entailed`
+establishes that this ellipse **IS the Killing form on the Cartan of $\mathfrak{su}(3)$**,
+$\lvert x\rvert^2=2(a^2+ab+b^2)$. So the ellipse's two eigenvalues **are** the Killing form's, and its
+axis ratio **is** the $A_2$ root/weight length ratio.*
+
+⌘ ***The $\sqrt3$ in the ellipse's shape and the $\sqrt3$ between roots and weights are ONE FACT about
+the Killing form, stated in two papers as two facts.***
+*(receipt `storyboard_receipts/SP_S6_the_ellipse_spectrum.py` — **added, runs, all asserts pass**)*
