@@ -597,3 +597,32 @@ result.***
 
 ⇒ ***Seventeen of seventeen, and the reach that stood at 6/10 on a wrong denominator at r3453 is
 now 14 worked and 3 read-negative on the true denominator of 17.***
+
+---
+
+## ⛭⛭⛭ THE BAR — **MEASURED r3486, not asserted**
+
+| | this bake | the FULL tier |
+|---|---|---|
+| lines | **599** | 189–978 ✔ |
+| numbered probes | **24** (`F0`–`F23`) | 10–17 ✔ *(above the range)* |
+| receipts, all running | **11 / 11 pass** *(plus the 2 from r3444)* | 2–10 ✔ |
+| papers | **17 of 17**, each worked or checked-negative **by name** | 6–11 ✔ |
+| **reach** | **17/17 = 100%** | *r3453 recorded 4/10 on a wrong denominator* |
+| unmarked rows | **0** | — |
+
+⌗ **THE FIELD'S OWN PATTERN, FOUR-DEEP.** *`F13` — `kernel` doing four jobs across ×147, the largest
+homonym in the corpus and the one the r3168 baseline missed because it screened only **cross-field**.
+`F15` — `elliptic` appearing once, in a **bibliography title**, at the third hypothesis of a theorem
+the paper leans on. `F20` — **Shale's criterion** behind `P01`'s dismissal of the thermal spectrum.
+`F21` — **von Neumann's dimension count** behind `P06`'s "no free dimensionless constant".*
+⇒ ***The argument right, the certifying theorem standard, and never named.***
+
+⌘ **AND THE JOINS THIS FIELD MADE THAT NO PAPER CARRIES:** *`F15`'s three compactness statuses on
+three spaces; `F18`'s one boundedness argument in three sectors under one scale; `F22`'s finite-versus-
+infinite kernel dichotomy tying `F16` to the harmonic bake's `H23`.*
+
+⚠ **AND TWO CORRECTIONS IT MADE TO OTHER WORK:** *`F17` corrected the harmonic bake's `H20` (a
+counting convention that disagreed with `P03`'s own), and `F19` found `P11`'s $a^{-2}$ attributed to
+$Q$ where it belongs to $W$ — in a sentence whose receipt covered the neighbouring claim.*
+***Cross-field reading is what found both.***
