@@ -976,3 +976,46 @@ characters — real at the seam, zero at the turnaround, imaginary on the lift �
 $k'=+1,0,-1$ read at their own turning radii.** *Two results that were one document apart, and the ledger's
 own framing of "three members of one congruence" was loose: only the turnaround is a turning point OF the lap.
 The other two are crossings, and the crossing speed is what carries the causal character.*
+
+---
+
+## ⛭⛭⛭ REACH CLOSE — all seventeen papers WORKED or CHECKED-NEGATIVE by name (r3517)
+
+*The r3505 overnight order raised the bar from the L8/L-40 adjudication census to the READING standard:
+every one of the seventeen paper bodies read for the combinatorics vocabulary and named. Three readers
+swept the corpus (P05/P12/P14; P07/P08/P13/p0; the ten-paper negative sweep). The roster is below.
+This field is DEEP — the corpus's spine is the horizon cubic and its finite-group skeleton
+$\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2\cong D_6$, so the reach is wide.*
+
+| paper | status | where / why |
+|---|---|---|
+| `P01` | **CHECKED-NEGATIVE** | `BH_causality`: every hit is `account`/`encounter`/`counterpart`/`counterexample`; `enumerate`=LaTeX list env; no group/count |
+| `P02` | **CHECKED-NEGATIVE** | `janzen_circle`: `multiplicity`=horizon-root count/pole order (homonym); `partition`=partition-of-a-line; `bijection`=KS-patch correspondence; the $|\mathrm{Fix}|=2$ count the author labels "not an enumeration" |
+| `P03` | WORKED | the $C(6,2)=15$ hinge-end pairs enumerate as $15=3+6+6$ causal classes (`P03_hexagon_null_triple`); $6\times2=3\times4=12$ null legs (`P03_twelve_null_legs`); $W(A_2)=S_3$ as transposition + 3-cycle on the three roots |
+| `P04` | **CHECKED-NEGATIVE** | `modern_parallax`: `count`=`counterpart`/`accounted`; no group/permutation/partition term |
+| `P05` | WORKED | the horizon-cubic monodromy/deck/Galois combinatorics: $S_3=\mathrm{Sym}$(3-set); dihedral $\langle\sigma,\tau\mid\sigma^2=\tau^3=(\sigma\tau)^2\rangle$; explicit $(0\,2),(1\,2)$ generate $S_3$; equianharmonic 6-element cross-ratio orbit → pair; degree-6 splitting field (`P05_dihedral_generators`, `P05_deck_group_S3`, `X5_monodromy_group`, `Q4_equianharmonic_vantages`) |
+| `P06` | **CHECKED-NEGATIVE** | `shadow_of_existence`: `partition`=ontological/def split & R-parity; `count`=`account`/`discount`/"counts as"; `number of layers`=ontological count |
+| `P07` | WORKED | the $2^{1/3}=(2M)/M$ single-factor-of-two count (`P07_cube_root_two_is_the_2M_over_M`); deck $S_3$ vs $\mathbb{Z}_3$ of the two covers (`order3_bridge`); generation index 3; count-of-passes (3 at 2 loci) |
+| `P08` | **CHECKED-NEGATIVE**→ WORKED | `slicing_operator`: $\mathbb{Z}_3$ branch-point monodromy (`P08_the_branch_point_monodromy_is_Z3`); Nariai signed-roots enumeration $3=2+1$ at scale $2/\sqrt3$ (`P08_nariai_signed_roots`); full monodromy $S_3$ vs $\mathbb{Z}/3$ (`order3_bridge`) |
+| `P09` | **CHECKED-NEGATIVE** | `range_paper`: `multiplicity`=catalogue/solution-moduli count (homonym); `number of functions of k variables`=parametric count; no permutation/partition |
+| `P10` | **CHECKED-NEGATIVE** | `canonical_time`: `count`/`counting`=counterterm/basis-component bookkeeping (linear-algebra dimension, not enumeration); `account`; no $S_n$/partition |
+| `P11` | **CHECKED-NEGATIVE** | `dynamics_paper`: $S_3$/`Weyl group`/$\mathrm{Aut}(A_2)=D_6$ named only as **cited background** ("developed in the algebroid construction rather than here") — bare mention, nothing worked |
+| `P12` | WORKED | $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2=D_6$ order 12, the $A_2$ hexad; $V_4$ holonomy extends deck $S_3$ to order 24 then 48; element/class profile ⇒ $W(A_3)\cong S_4=T_d$ (6 reflections, $V_4$, 8 three-cycles, 6 improper order-4); $A_2\subset A_3$ node deletion (`GROUP_full_order48`, `EMBEDDING_is_Td_equals_WA3`) |
+| `P13` | WORKED | rank count (SM rank 4 vs $\SO(6)$ rank 3 ⇒ at most $SU(3)\times U(1)$, `P13_cascade_rank`); $\dim\mathfrak{su}(3)=8$, smallest faithful real rep dim 6; $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2$ as $3\times2$ = families×chiralities; cubic factorization (`P13_A3_factorization`); which of $D_6$'s three order-6 subgroups |
+| `P14` | WORKED | $\Lambda^3(\mathbb{C}^3)=1$ ⇒ baryon 1/diquark 0/meson 1; $12=3\times4$ leg count; generations = 3 ($\dim\ker_+=3,\ker_-=0$); $S_3$ from 3 transpositions + 3-cycle; 15/16-fermion census; $12=3\times2\times2$; T-action orbit-partition $2\!+\!1\!+\!1/2\!+\!2/1^4$; order-81 holonomy; $S_4$-centraliser order 8/24; $D_6$ irreps $1,1,2$ twice; 11-of-11 combination enumeration (`P14_the_count_specified` et al.) |
+| `P15` | **CHECKED-NEGATIVE** | `CR_cosmology`: `cycle`="two-cycles of the involution, one fixed point" (a fixed-point statement, no count); $S_3$ "relating the families" a bare mention; `number of`=integrator steps / families asserted; `multiplicity`=catalogue homonym |
+| `P16` | **CHECKED-NEGATIVE** | `cosmogenesis`: $S_3$ bare mentions ("within-state index", "$S_3$-fixed Nariai crest"); `one-cycle map`=monodromy loop; `how many passages`=rhetorical; `multiplicity`=catalogue homonym |
+| `p0`  | WORKED | the count forced to three (triple-angle $2M=\tfrac{2}{3\sqrt3}\sin3w$, three preimages); $D_6=S_3\times\mathbb{Z}_2$ with only $\mathbb{Z}_2$ an isometry; explicit 3-cycle $\mathbb{Z}_3$ + transposition $\sigma$; $D=4$ uniquely carries generation count + chirality; entropy = gauge-count squared (`P17_...`, `U3_the_residue_is_one_and_it_is_already_counted`) |
+
+⇒ ***Seventeen of seventeen accounted for: EIGHT WORKED, NINE CHECKED-NEGATIVE.*** *Reach $=8/17$ — the
+combinatorics is genuinely deep where it lives (the $A_2/S_3/D_6$ skeleton, the exterior-power channel
+count, the generation index) and genuinely absent where it does not (nine papers reduce to
+`account`/`counterpart`, partition-of-unity, catalogue-multiplicity, or bare cited mentions of the
+skeleton). **No new receipt was needed at close**: every WORKED claim already carries a `\rcpt{}`
+pointer that runs — spot-checked this pass (`P13_cascade_rank`, `P08_the_branch_point_monodromy_is_Z3`,
+`P05_deck_group_S3`, `P03_hexagon_null_triple`, `P03_twelve_null_legs`, `GROUP_full_order48` all exit 0).
+The one reclassification the sweep forced: **`P03` and `P08` moved from the expected negative sweep to
+WORKED** (P03's $15=3+6+6$ enumeration and $W(A_2)$ transposition/3-cycle; P08's $\mathbb{Z}_3$ monodromy
+and signed-root enumeration were richer than the "named in the census" baseline implied). Cross-field:
+`P12`'s group orders are the same objects the quadric/complex-analysis bakes REFER to (`GROUP_full_order48`,
+`EMBEDDING_is_Td_equals_WA3`) — one receipt set, three fields' vocabulary, no correction owed.*
