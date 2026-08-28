@@ -721,6 +721,74 @@ below sky, projection and transfer exonerated by the control pin. The amplitude 
 adjudication, which is physics-model, not instrument — handed to 58 with both pins and the bracket on the
 record. **Not asserting a closure that the instrument does not show.**
 
+---
+
+## ⛔ THE INSTRUMENT'S FLAG INVENTORY — r3512 (58), *after the third miss in one arc*
+
+> ⌗ **KEPT AS THE "HOW IT WAS FOUND" RECORD (merged from main r3512, r3527).** *This diagnosis was
+> written from **main**, which lacked the branch's fix. The composition defect it describes below was
+> **already repaired on this branch** — `evolve_hier` carries the `SRCSTACK=vel` split and `DIFFLEAF`
+> reaches `_project`, and the entire seam / KCONT / RBFAC arc ran on the fixed instrument. So the
+> fix **predated** the diagnosis; the section stands as the record of how the defect was named, not as
+> an open defect.*
+
+**⌗ THE PATTERN, NAMED.** *Three times in this arc a result was bounded by operations that were
+**already built and unrun**:*
+1. *the position fork rested on `LEAFPERT` vs `STACKPERT` while **`PHASEONLY`** sat unrun — pulling it
+   refuted the fork;*
+2. *`POLSRC` was hand-rolled from a tight-coupling steady state while **`HIER`** sat unrun — carrying
+   an evolved Π, both source terms, and its own control;*
+3. *and `HIER` itself did not know the newest operations (below).*
+
+⇒ ***The failure mode is always the same: assuming the switch you know about is the only one there is.
+Before building an operation, `grep environ` and read every flag.***
+
+### ⌗ THE FLAGS, IN FULL
+
+| group | flags |
+|---|---|
+| **arm / grid** | `ARM` `NK` `LMAXL` `LSTEP` `RTOL` `ZSTART` `ETAEND` `LATARG` `KBATCH` |
+| **clock division** | `STACKPERT` · `PHASEONLY` + `PHASEPOW` · `SRCSTACK` · `DIFFLEAF` · `GSRC` *(the constraint factor — **never run**)* |
+| **damping** | `POLC` (the 16/15) · `DAMPX` · `RD` · `NOTC` *(default 1: hierarchy damping off so $e^{-k^2/k_D^2}$ is the sole dissipation)* |
+| **hierarchy** | **`HIER`** · `LG` (depth 24) · `TCSW` (hand-over $\tau'$) · **`PISRC`** *(1 = both polarisation source terms; **0 = hierarchy kept, source dropped** — the exact subtraction)* |
+| **diagnostics** | `NODRIVE` · `QSCAN` `QTURN` `QMIN` · `KCONT` · `NOPROJ` · `NOISW` · `DSCAN` `DSAVE` · `PHISAVE` · `SAVE` · `LOS` `NLOS` |
+| **content** | `BSPLIT` `RBFAC` `CRAMP` `CRPHI` `CRXE` `DRC` `DRE` |
+
+### ⛔ THE COMPOSITION DEFECT — *checked, r3512; **fixed on this branch before the diagnosis was written***
+
+*`evolve_hier` and `_project` referenced the clock operations **once** on main
+(`Jac_of(e) if LEAFPERT`), where the main path references **two**.* ⇒ ***On main, `HIER=1` did not
+know `SRCSTACK` or `DIFFLEAF`.***
+
+⛔ **So on main, `HIER=1` composed with `SRCSTACK=vel` would evolve the hierarchy with gravity on the
+LEAF — the very assignment the position result required moving to the STACK — and nothing would
+announce it.** ⌗ ***The ΛCDM gate cannot catch this***, *since $\varphi\equiv1$ makes every clock
+operation a no-op there. **A CR number from that composition would be two physical models in one run.***
+✔ **On this branch the split was added to `evolve_hier` (gravitational velocity-source on the stack)
+and `DIFFLEAF` was made to reach `_project`'s frozen envelope — so the CR runs of this arc are single
+physical models, not two in one.**
+
+### ⌗ THE GATE ORDER THAT FOLLOWED
+
+1. **`lcdm HIER=1`** — validates Π only. Position holds at $0.7300$; $P_1/P_2$ moves from $2.447$
+   **toward** $2.217$, not past it. *(Ran: control HIER 0.7300 / 2.254 / 2.363.)*
+2. **`lcdm HIER=1 PISRC=0` vs `PISRC=1`** — the instrument's own subtraction; the difference **is** the
+   returned half. *(Ran: the source returns ~0.5%, 2.265→2.254 — the recovery is the hierarchy's proper
+   damping, not the source.)*
+3. ⛔ **THE COMPOSITION FIX** — the hierarchy's gravitational source on the stacking clock, its
+   diffusion on the leaf, *the same LGF assignment the main path carries*. **Done on this branch.**
+4. **CR**, reporting $\ell_1/\ell_A$, $P_1/P_2$, $P_1/P_3$, $P_1/P_4$ **together**. *(Ran across the
+   seam / KCONT / RBFAC arc.)*
+
+⌗ **THE PREDICTION THAT KEPT IT A TEST.** *A correctly composed Π is driven by the same retimed
+$\theta_\gamma$ that produced $0.7294$, so it should arrive **weighted to high $k$** and act as a
+**shape**: $P_1/P_3$ and $P_1/P_4$ should fall further than $P_1/P_2$.* ⌗ *Borne out in part — under
+`seam`, $P_1/P_3$ landed exactly on the sky while $P_1/P_2$ stayed high (the even-peak deficit); the
+position moved **up** to $0.7560$ under `seam`, which the later analysis showed is an **envelope rung**
+(centroid, not phase), KCONT-verified as not aliasing — not the "wrong clock" the prediction feared,
+since the composition was fixed. **The amplitude, however, closed under no IC — see the UNBANKED
+record below.***
+
 ### ✔✔ THE POSITION IS CLOSED — the two-horizon clock division, not a driving impulse (supersedes the (a)/(b) hand-off above)
 **cc54 was wrong above, and 58/Daryl were right.** I took "an undriven comb's source phase sits intrinsically
 below the driven sky value" as DERIVED when it was an assertion about ONE route (the LEAFPERT operation). The
