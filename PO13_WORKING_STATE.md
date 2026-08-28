@@ -911,3 +911,31 @@ but DOCUMENTED AS GATE-FAILING (off by default, no effect on other runs); not a 
 way), but it cannot be restored by extrapolating tight coupling into last scattering -- that fails the control
 gate. The honest state: the amplitude closure awaits a physical Pi from an evolved polarisation hierarchy, which
 is a structural change to the tight-coupling instrument.
+
+### ✔✔ GATE 1 PASSES — the polarisation source is ALREADY in the instrument (HIER path), evolved-Pi, and it holds the control position while recovering the amplitude
+**Discovery:** the instrument already carries the correct implementation. `HIER=1` (`evolve_hier`, `_project`) evolves
+the FULL photon+polarisation hierarchy by L171w's equations (F_2..F_LG, G_0..G_LG, Pi=F_2+G_0+G_2 from the evolved
+variables) and `_project` already carries the polarisation SOURCE terms g(Theta_0+Psi+Pi/4) + (3/4k^2)d^2(g Pi)/deta^2
+-- with the double-count avoided exactly as 58 described: the exp(-k^2/k_D^2) envelope is FROZEN AT THE SWITCH
+(tau'=3, eta=138, carrying 4.2% of the damping) and the multipoles carry the other 95.8%, disjoint supports. My
+hand-rolled POLSRC (tight-coupling steady-state Pi) was reinventing this badly and failed; the evolved Pi is right.
+
+**GATE 1 (control, evolved-Pi polarisation source):**
+
+| control | l1/lA | P1/P2 | P1/P3 |
+|---|---|---|---|
+| plain lcdm | 0.7300 | 2.447 | 2.974 |
+| lcdm HIER=1 (evolved-Pi source) | **0.7300** | **2.254** | **2.363** |
+| sky | 0.7312 | 2.217 | 2.277 |
+
+**PASSES.** Position HELD at 0.7300 (the peak did NOT move -- the critical requirement) and both ratios moved from
+(2.447, 2.974) toward the sky (2.217, 2.277), landing at (2.254, 2.363) -- PARTWAY, not past, exactly as 58
+predicted a physical (saturating) Pi would. That is the recovery of the ~1123 chi^2 debt, and it confirms the term
+at the right SIZE, not merely the right sign. The failing tight-coupling attempt was a REGIME error (Pi extrapolated
+into last scattering where tight coupling breaks), not a missing physics -- as diagnosed.
+
+**FOR THE CR RUN:** added the SRCSTACK=vel split to `evolve_hier` (gravity velocity-source DRE k^2 Ps on the stack
+clock; content on leaf). In the HIER path the diffusion is done by the EVOLVED MULTIPOLES on the leaf clock (via the
+x Jac in evolve_hier), not the k_D factor -- so the leaf-clock diffusion is NATIVE and DIFFLEAF is not needed. The
+full LGF-complete CR prediction is `ARM=cr SRCSTACK=vel HIER=1`: gravity on stack, pressure+diffusion+polarisation
+all on the leaf. [running]
