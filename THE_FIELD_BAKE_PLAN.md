@@ -176,3 +176,41 @@ reading.*
 
 ⌗ *`589` is separate and is already worked: its instrument exists, its three registers have been run to
 exhaustion, and its classification is recorded. It may be struck independently.*
+
+
+---
+
+## ⛭⛭⛭ THE WHOLE SET, MEASURED r3500 — *and it revises this plan's own premise*
+
+| tier | fields | reach |
+|---|---|---|
+| **DONE — 100%** | functional analysis · harmonic analysis · spectral theory | **17/17 each** |
+| **PARTIAL** | statistics 41% · representation 35% · Cartan 35% · involution 35% · **combinatorics 35%** · quadric 29% | 5–7 papers |
+| **BARELY TOUCHED** | conformal 24% · variational 24% · optics 18% · **complex analysis 12%** · category 12% | 2–4 papers |
+| **NEVER THROWN** | convexity/optimisation ×143 · algebraic geometry ×57 · catastrophe/singularity ×54 | — |
+
+⇒ ***Seventeen fields. THREE complete.***
+
+## ⛔ AND THE BAR WAS DERIVED FROM NARROW FIELDS
+
+*The "FULL tier" this plan measured its standard from — combinatorics at **978 lines**, complex
+analysis at **598**, optics at **316** — reaches **35%**, **12%** and **18%** of the corpus.*
+***They are LONG but NARROW.*** *The bar counted their **length and probe count**; it never counted
+their **reach**, because reach was not measured until r3453.*
+
+⛔ **Complex analysis is 598 lines touching TWO papers.** *By line count and probe count it set the
+standard; by reach it is the second-least-worked field in the set.*
+
+⌗ ***So the three fields now at 100% are not "at the bar" — they are past it, at a standard no earlier
+bake reached.*** *That is not a boast: it means **the bar was never the finish line it was taken for**,
+which is what r3460 already recorded and this measurement now quantifies.*
+
+## ⌘ THE ORDER THAT FOLLOWS
+
+1. ***The five BARELY TOUCHED before the six PARTIAL***, *by depth of debt rather than by size —
+   `complex analysis` (12%, and 598 lines of existing content to check against) and `category theory`
+   (12%) first.*
+2. ***Then the six partials***, *statistics and combinatorics being the largest and most cited.*
+3. ***Then the three never thrown***, *convexity ×143 first.*
+4. ***And `622` may be struck only when all seventeen meet the READING standard*** — *every paper
+   worked or checked-negative **by name** — not when a count is reached.*
