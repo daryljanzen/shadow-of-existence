@@ -170,6 +170,15 @@ a_of_eta = CubicSpline(eg, ag)
 eta_rec = float(np.interp(A_REC, ag, eg))
 eta_0 = eg[-1]
 D_M = eta_0 - eta_rec
+# ** FREEZEJAC (diagnostic, 58's height-by-subtraction reference): freeze the clock ratio
+# phi = Jac = H_stack/H_leaf at its RECOMBINATION value, removing the RUNNING of phi while keeping
+# its level.  Paired with a running-phi run under SRCSTACK=vel, the per-peak HEIGHT ratio isolates
+# the boost the RUNNING clock supplies -- CR's structural analogue of radiation driving.  phi == 1
+# for all eta on the control arm (H_leaf == H_stack), so this is a provable no-op there. **
+if os.environ.get('FREEZEJAC', '0') == '1':
+    _phi_rec = float(Jac_of(eta_rec))
+    Jac_of = (lambda v: (lambda e: v))(_phi_rec)
+    print(f"  FREEZEJAC: clock ratio phi frozen at its recombination value phi_rec = {_phi_rec:.5f}")
 
 
 def rs_from(z_lo):
@@ -1023,10 +1032,12 @@ def main():
     # alternation, or smoothly?  A field the ODE already carries (state index 6), no new run. **
     if os.environ.get('PHISAVE'):
         _pk = argrelextrema(np.abs(TH0), np.greater, order=4)[0]
-        _pk = _pk[(kk[_pk] * R_S / np.pi < 4)][:3]        # first three peak modes
+        _pk = _pk[(kk[_pk] * R_S / np.pi < 5)][:4]        # first four peak modes
         _etg = np.linspace(ETA_S, eta_rec, 500)
         _Yg = sol.sol(_etg).reshape(nk, NV, len(_etg))    # (nk, NV, neta)
+        _clock = np.asarray(Jac_of(_etg), dtype=float) + np.zeros_like(_etg)  # phi(eta)=Jac (const if frozen)
         np.savez(os.environ['PHISAVE'], eta=_etg, phi=_Yg[_pk, 6, :], dg=_Yg[_pk, 2, :],
+                 tg=_Yg[_pk, 3, :], clock=_clock,
                  qpk=kk[_pk] * R_S / np.pi, kpk=kk[_pk], arm=ARM, eta_rec=eta_rec, eta_s=ETA_S)
         print(f"  PHISAVE: Phi(eta) for peak modes q={[round(float(kk[j]*R_S/np.pi),2) for j in _pk]} "
               f"-> {os.environ['PHISAVE']}")

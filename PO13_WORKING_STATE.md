@@ -768,3 +768,40 @@ layered clock division (0.25%), a principled two-horizon mechanism, no driving i
 that also lands the amplitude (and the height machinery that does it without moving peaks) is the next step, now
 bracketed in both observables. Instrument change: added the `SRCSTACK` DIAGNOSTIC flag (off by default, provable
 no-op on the control since Jac=1); NOT a committed frame — the frame choice is 58's to name.
+
+### ✔ 58's HEIGHT-BY-SUBTRACTION COMPUTATION — carried out: the running of phi IS the position, and is NOT the amplitude
+**Shipped by 58:** does the running of the clock ratio phi(eta)=H_stack/H_leaf supply CR's height boost the
+way it supplied the phase? Measured by subtraction (running phi vs phi frozen at its recombination value),
+gated on the control, at fixed position. Instrument: added `FREEZEJAC` (freeze Jac=phi at eta_rec; provable
+no-op on control where phi==1), extended PHISAVE to record phi(eta). Runs at NK=620, SRCSTACK=vel.
+
+**GATE (control, phi==1):** lcdm vel and lcdm vel+FREEZEJAC are BYTE-IDENTICAL — [220,532,812,1116],
+l1/lA=0.7300, P1/P2=2.447 both. phi_rec=1.00000. Self-check passes; the CR differences below are real.
+
+| CR arm | l1/lA | P1/P2 | P1/P3 | P1/P4 |
+|---|---|---|---|---|
+| B: phi FROZEN at phi_rec=0.885 | 0.6764 | 4.009 | 3.005 | 6.442 |
+| A: phi RUNNING (0.607 -> 0.885) | 0.7294 | 3.745 | 4.531 | 14.944 |
+| sky | 0.7312 | 2.217 | 2.277 | — |
+
+**(1) POSITION — the running of phi IS the mechanism, decisively.** Freezing phi collapses the position to
+0.6764 (= LEAFPERT); the RUNNING of phi carries it to 0.7294 (= sky, 0.25%). The clock-ratio running supplies
+the FULL position shift — CR's structural analogue of the acoustic phase shift, confirmed by subtraction and
+gated. This is the strong, positive result and it nails down WHY vel closes the position.
+
+**(2) AMPLITUDE — the running of phi is NOT the radiation-driving analogue.** The hypothesis was that the
+running weights higher-k modes (which oscillate earlier, at smaller phi) and boosts the high peaks the way RD
+does. The measurement refutes that specific form: the running moves P1/P2 only 4.009 -> 3.745 (right direction,
+but ~15% of the way to 2.217) AND it WORSENS the higher ratios (P1/P3 3.005 -> 4.531, P1/P4 6.4 -> 14.9). So
+the running SUPPRESSES the high peaks relative to the first, the OPPOSITE of radiation driving. The two-clock
+running delivers the position in full and does NOT deliver the amplitude.
+
+**DISPOSITION (honest, per 58's own rule "the shortfall is measured rather than argued").** The running of the
+clock ratio is confirmed as the position mechanism and measured OUT as the amplitude mechanism. The amplitude
+boost RD supplies in LambdaCDM is not reproduced by the two-clock running here. So the amplitude needs a
+different route than the clock split — most likely P15's height/contrast machinery (damping tail, polarization
+POLC, lensing), which P15 already shows moves the peak-trough contrast WITHOUT moving the peaks, i.e. at the
+fixed 0.7294 position vel now delivers. A clean next discriminator: separate the high-peak change into driving
+vs Silk-damping (the running also retimes when high-k modes oscillate, hence their diffusion) via NODRIVE / the
+diffusion knob, to confirm the suppression is damping-mediated rather than an anti-driving. Instrument: `FREEZEJAC`
+diagnostic added (no-op on control), PHISAVE extended with phi(eta); not committed frames.
