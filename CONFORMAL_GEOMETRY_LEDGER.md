@@ -3,7 +3,7 @@ kind: REFERENCE
 job: conformal / Möbius geometry against the substrate — the field that refused, and why
 name: conformal-geometry-ledger
 description: R-M's second field bake — conformal / Möbius geometry thrown at the CR substrate. Opened r1853 (Phase 8), handed to directly by the quadric bake's Cayley–Klein identification. Baseline, opening question, probes, and the Phase 9 routing.
-current: r2676+c54.211
+current: r3511
 ---
 
 > **▣ REFERENCE — R-M's second field bake, and part of the corpus.** *Conformal / Möbius geometry
@@ -275,3 +275,62 @@ $r=0$ is a conformal boundary.*** *So this ledger's open question is asking for 
 **⌗ WHAT THE QUADRIC ROUTE YIELDED BEFORE BEING RE-FILED, since it is a real result and belongs here now:** *the family is the **level sets of one quadratic form** on $\mathbb{R}^{5,1}$ — de Sitter above zero, the **light cone at zero**, the two-sheet hyperboloid below.* **Distinct members are disjoint; exactly one passes through each point; and the confocal orthogonality theorem is therefore VACUOUS here, the equilateral case being precisely the confocal family's degenerate case.** *(Receipt: `P17_the_alpha_family_is_a_foliation`.)*
 
 **⇒ AND THE PIECE THAT MATTERS FOR THIS LEDGER: the light cone is the family's own $Q=0$ member and the unique leaf every other one approaches — which is why the $c$–$\Lambda$ null-ruling gauge is $\alpha$-independent.** *The null structure lives on the one leaf common to the whole conformal orbit.*
+
+
+## ⛭⛭⛭ REACH CLOSE — all seventeen papers WORKED or CHECKED-NEGATIVE by name (r3511)
+
+> ⛔ *The r3500 whole-set measurement put this field at **24%** (4 papers). Read in full this pass (three
+> sweeps, `Weyl` split hard into `Weyl tensor/curvature/flat/squared` (conformal) vs `Weyl group/class/
+> reflection/fermion/Peter–Weyl/Weyl-1910` (not), and `conformal time` held to coordinate-only). **The
+> reach is `7/17` — and it corrects this ledger's headline.***
+
+**⛭⛭ THE FIELD DID NOT REFUSE — HALF OF IT DID.** *`C4` is right that the **Möbius/inversive** half finds no
+purchase: CR forces the **gnomonic (projective)** celestial sphere over the **stereographic (conformal)** one
+(`P03`, `C4_gnomonic_not_conformal`), and the metric-conformal apparatus the corpus USES is the
+inversive/projective cluster — the between-$\alpha$ **homothety = conformal group** $O(5,1)\times\mathbb R^+$
+(`P05`, `C1`/`C2`), the **throat inversion** $P^*=\alpha^2P/\eta(P,P)$ (`p0`, `C3`), the **Cayley–Klein
+cross-ratio** (`p0`, `Q3`; `P05`, `Q4`), the imported **conformal weight** $a^{-3/2}$ (`P14`, `C5`).* ***But
+the WEYL-TENSOR / CONFORMAL-FLATNESS half is worked all through the corpus, and this ledger never carried
+it:***
+- **`P10`** — ***every Friedmann geometry is conformally flat for EVERY scale factor*** (Weyl tensor $C=0$), the
+  exact identity $\mathrm{Riem}^2-2\mathrm{Ric}^2+\tfrac13R^2=C_{\mu\nu\rho\sigma}C^{\mu\nu\rho\sigma}$, the
+  anisotropic-shear Weyl-square $C^2=4\sigma^2+O(\sigma^4)$, and the **Weyl-squared counterterm** as the one
+  the shear costs. *(`Q1_the_degeneracy_is_conformal_flatness...`, `S1_the_shear_needs_exactly_one...`)*
+- **`P09`** — the **Petrov classification by Weyl invariants**: speciality discriminant $I^3-27J^2=0$ ⇔ a
+  repeated self-dual **Weyl-operator** eigenvalue; **Type O = Weyl-flat = conformally flat**; Type N = $I=J=0$
+  with nonzero Weyl. *(`P09_bianchiI_typeI`, `P09_ppwave_typeN`)*
+- **`P11`** — the **conformal factor $\gamma$** of the Gowdy $(t,z)$ plane, $e^{2(\gamma-\psi)}(-\dd t^2+\dd z^2)$,
+  with an explicit quadrature; and Friedrich's **conformal field equations** at $\mathcal J^+$ (descriptive).
+  *(`P11_gowdy_dS`)*
+
+| paper | status | where / what the terms are |
+|---|---|---|
+| `P01` | **CHECKED-NEGATIVE** | zero conformal-vocabulary matches |
+| `P02` | **CHECKED-NEGATIVE** | "circle" = the analytic-completion curve (metric ring), NOT a Möbius/inversive circle; no cross-ratio |
+| `P03` | **WORKED** | `C4` — stereographic = the conformal (angle-preserving) projection, excluded; the gnomonic (projective) forced |
+| `P04` | **CHECKED-NEGATIVE** | zero matches |
+| `P05` | **WORKED** | `C1`/`C2` between-$\alpha$ homothety = conformal group $O(5,1)\times\mathbb R^+$; `Q4` equianharmonic cross-ratio $e^{i\pi/3}$; SCT linear on the cone |
+| `P06` | **CHECKED-NEGATIVE** | "inversion" = a logical inversion (homonym) |
+| `P07` | **CHECKED-NEGATIVE** | only conformal-*time* coordinate ($\dd\eta=\dd\tilde\tau/a$); `Weyl class`/`Weyl group`/`Weyl fermion` + conformal-mass homonyms |
+| `P08` | **CHECKED-NEGATIVE** | homothety restated from `P05` (no own claim); "conformal chart" = coordinate; Weyl class/group |
+| `P09` | **WORKED** | Weyl invariants $I,J$, $I^3-27J^2$; Type O = conformally flat; Type N nonzero Weyl *(reach addition)* |
+| `P10` | **WORKED** | every FRW conformally flat (Weyl $=0$); Weyl-squared counterterm *(reach addition)* |
+| `P11` | **WORKED** | conformal factor $\gamma$ of the Gowdy 2-plane; Friedrich conformal field equations *(reach addition)* |
+| `P12` | **CHECKED-NEGATIVE** | "central inversion" = $\mathbb Z_2$ parity/diagram automorphism, not a circle inversion; Weyl = reflection group |
+| `P13` | **CHECKED-NEGATIVE** | zero conformal-vocabulary matches |
+| `P14` | **WORKED** | `C5` — massless-Dirac conformal weight $a^{-3/2}$ (imported convention) |
+| `P15` | **CHECKED-NEGATIVE** | all nine "conformal" = conformal-time $\eta$ coordinate; Weyl = Weyl's-principle/fermion |
+| `P16` | **CHECKED-NEGATIVE** | single "conformal" = conformal-time $\eta$ in the cycloid solution |
+| `p0`  | **WORKED** | `Q3` Cayley–Klein log-cross-ratio; `C3` throat inversion involution; the dilation generator $O(5,1)\times\mathbb R^+$ |
+
+⇒ ***Seventeen of seventeen accounted for: SEVEN WORKED, TEN CHECKED-NEGATIVE. Reach $=7/17$, up from 4 —
+and the "REFUSED" headline is corrected to REFUSED ON THE MÖBIUS HALF, WORKED ON THE WEYL-TENSOR HALF.***
+*No new receipt owed — every worked paper carries one (`C1`–`C5`, `Q1`, `Q3`, `Q4`, `S1`, `P09_*`,
+`P11_gowdy_dS`, `P14_B2_zeromode_continuation`).* **Cross-field: `P10`'s conformal-flatness / Weyl-squared and
+`P09`'s Petrov-by-Weyl overlap the variational (`S1` counterterm) and optics (`P09` Type-D→Carter) bakes; no
+correction, shared results now claimed by conformal too.**
+
+⌗ **PO-13 NOTE (flagged, not routed):** the radiation-era conformal-time scale invariance
+(`P15` $\eta=r/\sqrt A$, `C3_conformal_map`) — a conformal-geometry fact — is what makes the *undriven* acoustic
+comb uniform-spacing; it is the conformal-flatness side of the PO-13 comb's regularity. *(Held in the PO-13
+working state.)*
