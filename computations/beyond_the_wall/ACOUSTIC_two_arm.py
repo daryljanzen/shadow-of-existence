@@ -149,6 +149,14 @@ Phi2_of = CubicSpline(eg, (Hphys(ag) / Hleaf(ag)) ** PHASEPOW if PHASEONLY else 
 # Identically LEAFPERT in the lcdm arm (Jac==1), a provable no-op.  A DIAGNOSTIC to let position and
 # amplitude pin which terms are L1; NOT a committed frame. **
 SRCSTACK = os.environ.get('SRCSTACK', '')
+# ** PROJMAP (58's r3527 layer reading): the two-horizon ratio r_stack/r_leaf applied ONCE at the
+# PROJECTION -- the content sound-horizon mapped onto the phenomenological ruler (the layer
+# diffeomorphism's Jacobian), NOT a post-hoc relabel of the output peaks.  It multiplies the distance
+# x0 in the k->l Bessel relation, so a source feature at k appears at l = k*x0*PROJMAP.  A single
+# factor on the k->l relation is UNIFORM in l (comb and damping, both baked into S(kb), stretch
+# together), so this is expected to move POSITION and leave HEIGHT ratios fixed -- run to MEASURE
+# that, not assume it.  Default 1.0 = no-op. **
+PROJMAP = float(os.environ.get('PROJMAP', '1'))
 _rt = OR / ag ** 4 + OM / ag ** 3 + OL                            # ** the STACK, both arms **
 # ** GSRC=1: THE CONSTRAINT FACTOR.  The G^0_0 equation is k^2 Phi + 3H(Phi'+H Psi) = -4 pi G a^2
 # drho.  Writing the source as (3/2) H^2 sum(Om_i d_i) uses H^2 = (8 pi G/3) a^2 rho_tot -- the
@@ -709,7 +717,7 @@ def los_spectrum(kk, ee, Y, L_A, D_M, R_S):
         Ss = [source(x) for x in dampx_list]
         Cl = np.zeros((len(dampx_list), len(ls)))
         for j_, l in enumerate(ls):
-            J = spherical_jn(int(l), kk[None, :] * x0[:, None])
+            J = spherical_jn(int(l), kk[None, :] * x0[:, None] * PROJMAP)
             for i_, S in enumerate(Ss):
                 Cl[i_, j_] = np.sum(P * np.trapezoid(S * J, ee, axis=0) ** 2)
         return Cl * (ls * (ls + 1))[None, :]
@@ -1002,7 +1010,7 @@ def _project(kb, ee, Y, ls, x0, e_sw):
     P = kb ** (0.965 - 1) / kb * dk
     out = np.empty(len(ls))
     for j, l in enumerate(ls):
-        J = spherical_jn(int(l), kb[None, :] * x0[:, None])
+        J = spherical_jn(int(l), kb[None, :] * x0[:, None] * PROJMAP)
         out[j] = np.sum(P * np.trapezoid(S * J, ee, axis=0) ** 2)
     return out
 
