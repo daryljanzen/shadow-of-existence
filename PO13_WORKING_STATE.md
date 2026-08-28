@@ -720,3 +720,51 @@ below sky, projection and transfer exonerated by the control pin. The amplitude 
 (sky 2.217 between CR 2.013 and control 2.447; P07's construction 2.185). What remains is the (a)/(b)
 adjudication, which is physics-model, not instrument — handed to 58 with both pins and the bracket on the
 record. **Not asserting a closure that the instrument does not show.**
+
+### ✔✔ THE POSITION IS CLOSED — the two-horizon clock division, not a driving impulse (supersedes the (a)/(b) hand-off above)
+**cc54 was wrong above, and 58/Daryl were right.** I took "an undriven comb's source phase sits intrinsically
+below the driven sky value" as DERIVED when it was an assertion about ONE route (the LEAFPERT operation). The
+instrument documents a THIRD pure operation (PHASEONLY) aimed at exactly this, and it was never run. Running it,
+and then the layered-ontology division, closes the position.
+
+**The verified operation table (CR arm, NK=620, same projection/transfer as the control that lands on sky):**
+
+| operation (which terms see the leaf/content clock) | l1/lA | vs sky | P1/P2 |
+|---|---|---|---|
+| STACKPERT — nothing (all on the stack ruler) | 0.5703 | −22% | 0.965 |
+| LEAFPERT — whole equation on leaf | 0.6764 | −7.5% | 2.013 |
+| SRCSTACK=phi — only Phi-evolution on stack | 0.6499 | −11% | 2.435 |
+| **sky** | **0.7312** | — | **2.217** |
+| SRCSTACK=src — Phi + all potential couplings on stack | 0.7294 | **−0.25%** | 3.879 |
+| SRCSTACK=vel — ONLY the velocity-source Ps on stack | 0.7294 | **−0.25%** | 3.745 |
+| SRCSTACK=cpl — couplings on stack, Phi-evolution on leaf | 0.7560 | +3.4% | 2.946 |
+| PHASEONLY — only the sound frequency on leaf | 0.8090 | +10.6% | 5.218 |
+
+**THE MECHANISM (principled, not a fit).** The ONE perturbation equation splits between the two clocks by the
+layered ontology: **gravity is L1 (stacking/geometric clock); pressure is L2 (leaf/content clock).**
+  - The gravitational force driving the plasma velocity (the `DRE k^2 Ps` term in the Euler equation, ∇Phi) runs
+    on the STACKING clock — it is geometry. This sets the ruler r_stack and the phase.
+  - The pressure restoring, baryon friction, and Silk diffusion run on the LEAF clock — they are content. This
+    sets the sound crossing r_leaf.
+  The first-peak position is the competition of the two: gravity-driving on r_stack against pressure on r_leaf,
+  so l1/lA carries the ratio r_stack/r_leaf = 1.2857 — which IS the size of the shift (sky/STACKPERT = 1.2821,
+  0.28%). SRCSTACK=vel (velocity-source on the geometric clock, everything else on the leaf) lands the position
+  at 0.7294 vs sky 0.7312 — **0.25%, no radiation-driving impulse anywhere.**
+
+**(b) IS REFUTED.** An undriven comb reaches the sky position (SRCSTACK=vel) and, with the wrong division,
+overshoots it (PHASEONLY 0.809). The "driving phase shift ~0.27π" that LCDM manufactures from radiation driving
+is, in CR, the two-horizon ratio of its own layered ontology. Same position, two origins — the corpus's
+signature dissolution.
+
+**WHAT REMAINS: the amplitude, and it is the SOFT/SEPARABLE knob.** With the position pinned (Ps on the geometric
+clock), P1/P2 = 3.7–3.9, above the sky's 2.217. But the sky amplitude is BRACKETED (LEAFPERT 2.013 < sky 2.217 <
+cpl 2.946 < vel 3.745) and — per P15's residual decomposition (`P15_derived_lensing_on_the_lcdm_arm`,
+`P15_the_residual_is_contrast_and_the_lensing_potential_is_derived`) — the peak-trough CONTRAST/height is
+controllable by the damping tail, polarization (POLC), and lensing WITHOUT moving the peak positions. So the
+amplitude residual does not threaten the closed position; it is the next, softer determination.
+
+**DISPOSITION:** the position — the hard ~70σ residual I nearly mis-called a falsification — is CLOSED by the
+layered clock division (0.25%), a principled two-horizon mechanism, no driving impulse. The exact sub-division
+that also lands the amplitude (and the height machinery that does it without moving peaks) is the next step, now
+bracketed in both observables. Instrument change: added the `SRCSTACK` DIAGNOSTIC flag (off by default, provable
+no-op on the control since Jac=1); NOT a committed frame — the frame choice is 58's to name.

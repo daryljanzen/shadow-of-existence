@@ -130,6 +130,17 @@ Jac_of = CubicSpline(eg, Hphys(ag) / Hleaf(ag))                    # d eta_leaf 
 # should not both be set.  Identically 1 in the lcdm arm, a provable no-op. **
 PHASEONLY = os.environ.get('PHASEONLY', '0') == '1'
 Phi2_of = CubicSpline(eg, (Hphys(ag) / Hleaf(ag)) ** 2 if PHASEONLY else np.ones_like(ag))
+# ** SRCSTACK (diagnostic, requires LEAFPERT): the layered-ontology division of the ONE perturbation
+# equation between the two clocks.  L1 (stacking/geometry) is the gravitational potential Phi; L2
+# (leaf/content) is the plasma.  LEAFPERT puts the WHOLE equation on the leaf and undershoots the
+# position (source drags the phase); PHASEONLY puts ONLY the frequency on the leaf and overshoots
+# (source+friction on stack under-damp).  SRCSTACK keeps the GEOMETRIC POTENTIAL sector on the stack
+# clock while frequency/friction/diffusion (the content) stay on the leaf:
+#   SRCSTACK=phi  -- only Phi's own evolution (out[:,6]=Php) on the stack (cleanest L1/L2 split).
+#   SRCSTACK=src  -- Phi's evolution AND every potential coupling (the Php/Ps source terms) on stack.
+# Identically LEAFPERT in the lcdm arm (Jac==1), a provable no-op.  A DIAGNOSTIC to let position and
+# amplitude pin which terms are L1; NOT a committed frame. **
+SRCSTACK = os.environ.get('SRCSTACK', '')
 _rt = OR / ag ** 4 + OM / ag ** 3 + OL                            # ** the STACK, both arms **
 # ** GSRC=1: THE CONSTRAINT FACTOR.  The G^0_0 equation is k^2 Phi + 3H(Phi'+H Psi) = -4 pi G a^2
 # drho.  Writing the source as (3/2) H^2 sum(Om_i d_i) uses H^2 = (8 pi G/3) a^2 rho_tot -- the
@@ -456,7 +467,26 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         # ** the baryon continuity equation, on the baryon velocity.  In this branch the baryons are
         # tightly coupled and tg IS their velocity; the hierarchy branch gives them their own. **
         out[:, I_DB] = -tg + DRC * 3 * Php
-        return out.ravel() * (float(Jac_of(e)) if LEAFPERT else 1.0)
+        jac = float(Jac_of(e)) if LEAFPERT else 1.0
+        if SRCSTACK and LEAFPERT:
+            # split the GEOMETRIC POTENTIAL sector back onto the stack clock (x1); content stays on leaf
+            src = np.zeros_like(out)
+            if SRCSTACK in ('phi', 'src'):
+                src[:, 6] = Php                               # Phi's own evolution (L1)
+            if SRCSTACK in ('src', 'cpl'):                    # the potential's couplings INTO the plasma
+                src[:, 0] = DRC * 3 * Php
+                src[:, 1] = DRE * kk ** 2 * Ps
+                src[:, 2] = DRC * 4 * Php
+                src[:, 3] = DRE * kk ** 2 * Ps
+                src[:, 4] = DRC * 4 * Php
+                src[:, 5] = DRE * kk ** 2 * Ps
+                src[:, I_DB] = DRC * 3 * Php
+            if SRCSTACK == 'vel':                             # ONLY the velocity-source Ps (the phase driver)
+                src[:, 1] = DRE * kk ** 2 * Ps
+                src[:, 3] = DRE * kk ** 2 * Ps
+                src[:, 5] = DRE * kk ** 2 * Ps
+            return ((out - src) * jac + src).ravel()
+        return out.ravel() * jac
 
     if y_init is not None:
         y0 = y_init
