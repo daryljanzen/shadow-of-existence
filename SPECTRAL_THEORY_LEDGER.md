@@ -49,7 +49,7 @@ what the spectrum IS.***
 | `P06` *geometric core* | **MEDIUM — CONFIRMED, worked as `S7`; the `gap` guess was WRONG (all six metaphorical)** | *`gap` ×6, `eigenvalue` ×2* |
 | `P16` *cosmogenesis* | **MEDIUM — CONFIRMED, worked as `S8`; and it CORRECTED `H14`** | *`WKB` ×2* |
 | `P12`, `P13`, `P11` | **LOW–MEDIUM — READ r3497** | *all three carry chirality-eigenvalue and index-obstruction language already worked by `S2`, `F15`, `H16`; `P13`'s "vector-like **spectrum**" raised `S9`* |
-| `p0`, `P01`, `P02`, `P04`, `P05`, `P08` | **LOW** | ***to be read, not assumed*** |
+| `p0`, `P01`, `P02`, `P04`, `P05`, `P08` | ⍀ **ALL SIX NEGATIVE, read r3498** | *every occurrence a homonym — see `S10`* |
 
 ⌗ *The "LOW" label is written knowing that on the harmonic side it turned into bites four times
 (`P13`, `P05`, `p0`, `P09`), and on the functional side it held twice (`P02`, `P05`). **Both outcomes
@@ -74,6 +74,7 @@ are results; neither is assumed.***
 | `S7` | is there a THIRD spectral gap, in `P06`? | ⛔ **NO — but a better finding** r3495, **receipted** — *the signature change goes through **infinity**, not zero* |
 | `S8` | does `P16` really lack the index-to-multipole map? | ⛔ **NO — `H14` READ ONE SENTENCE TOO FEW**, r3496 — ***`H14` corrected*** |
 | `S9` | does `P14`'s index carry an **APS boundary term**? | ⍀ **NO**, r3497, **receipted** — *the leaf is **closed**, and `F14`'s interval is a fundamental domain* |
+| `S10` | are the six LOW papers empty for this field? | ⍀ **NEGATIVE, all six**, r3498 — *read, not counted* |
 
 ---
 
@@ -369,3 +370,68 @@ spectral-asymmetry term arises — which is why the corpus never needs APS and n
 ⍀ *A clean bounce with its reason named: **the closure `H21` established for `P02`'s cycloid is what
 keeps the boundary term out of `P14`'s count**.*
 *(receipt `storyboard_receipts/SP_S9_no_aps_term.py` — **added, runs, all asserts pass**)*
+
+---
+
+## ⍀ S10 — **THE SIX LOW PAPERS ARE NEGATIVE, READ RATHER THAN COUNTED**
+
+*Read because on the harmonic side this class of verdict turned into bites **four times** (`P13`,
+`P05`, `p0`, `P09`) and on the functional side it held **twice** (`P02`, `P05`).* ***Neither outcome
+was assumed. Here it holds, six for six.***
+
+| paper | apparent | what it is |
+|---|---|---|
+| `P05` | `discrete` ×66, `spectrum` ×1 | the **deck group** (established homonym); the one `spectrum` is *"mass spectrum"*, in a clause about what the corpus **does not** claim |
+| `P01` | `spectrum` ×9 | the **thermal** spectrum — a distribution over frequencies. *Its operator side is already worked as `F20` (Shale's criterion), and nothing further is this field's* |
+| `p0` | `discrete` ×6 | the discrete **sector** — the $\mathbb Z_3$ three-plane configuration, a structural term |
+| `P02` | `discrete` ×4, `gap` ×1 | structural and metaphorical |
+| `P04` | `discrete` ×1, `quantis` ×1 | incidental |
+| `P08` | `gap` ×2, `discrete` ×1 | metaphorical and structural |
+
+⇒ ***Six negatives, each recorded by name, so "not worked" stays distinguishable from "not looked
+at".***
+
+---
+
+## ⛭⛭⛭ EVERY PAPER NOW WORKED OR CHECKED-NEGATIVE BY NAME
+
+| worked | `P03` `S6` · `P06` `S7` · `P07` `S1′`/`S3` · `P09` `S4` · `P10` `S1` · `P11` `S9` · `P12` `S9` · `P13` `S9` · `P14` `S2` · `P15` `S5` · `P16` `S8` |
+|---|---|
+| **checked negative** | `p0`, `P01`, `P02`, `P04`, `P05`, `P08` — all six read |
+
+⇒ ***Seventeen of seventeen.***
+
+---
+
+## ⛭⛭⛭ THE BAR — **MEASURED r3499, not asserted**
+
+| | this bake | the FULL tier |
+|---|---|---|
+| lines | **402** | 189–978 ✔ |
+| numbered probes | **11** (`S0`–`S10`, plus `S0′` and `S1′`) | 10–17 ✔ |
+| receipts, all running | **7 / 7 pass** | 2–10 ✔ |
+| papers | **17 of 17**, each worked or checked-negative **by name** | 6–11 ✔ |
+| **reach** | **17/17 = 100%** | — |
+| unmarked rows | **0** | — |
+
+⌗ *One file in `storyboard_receipts/` matched the `SP_*` prefix and does not emit `ALL PASS`:
+`SP_own_terms_attempt.py`, from **r2419**. **It is not a failure** — it runs and produces its table;
+it is an **exploratory attempt**, as its name says, and was never written as a gated receipt. Recorded
+so the next prefix-glob does not raise a false alarm.*
+
+## ⌘ WHAT THIS FIELD FOUND, AND WHAT IT COST OTHER FIELDS
+
+**⌘ ITS OWN FINDINGS.** *`S1` — the tower's spectrum is discrete modewise and its zero-point sum
+diverges quartically. `S2` — the wall has a **spectral gap** of the full asymptotic mass, and that is
+what makes the generation count **stable** where `F14` only made it **defined**. `S3` — the corpus
+relies on **two** spectral gaps doing two jobs, neither referencing the other. `S4` — **Nariai and
+Petrov type D are the same algebraic event** on two different cubics. `S5` — `P15`'s exact/WKB residual
+is a **systematic offset**, not the adiabaticity beside it. `S6` — `P03`'s ellipse eigenvalues **are**
+the Killing form's, its axis ratio the $A_2$ root/weight ratio, its shorter axis the slicing scale.
+`S7` — the signature change goes through **infinity**, so the metric never degenerates. `S9` — no APS
+term, because the leaf is **closed**.*
+
+**⚠ AND TWO CORRECTIONS TO OTHER BAKES.** *`S0′` corrected `H13`'s degeneracy — the corpus derives
+$2(n-1)(n+3)$, ten at the floor, where `H13` used the textbook $2(n^2-1)$. `S8` corrected `H14`, which
+**quoted `P16`'s caveat and stopped at the full stop** while the next sentence supplied the map.*
+⇒ ***Two of the sweep's four cross-field corrections came from this field alone.***
