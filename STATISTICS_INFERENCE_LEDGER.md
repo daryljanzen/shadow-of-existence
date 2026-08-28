@@ -334,3 +334,50 @@ for.*
 ⇒ ***THE BAKE MEETS THE BAR.*** *Four of ten fields now do. Every shortfall along the way was named
 before it was closed — `S2`'s failing receipt at r3447, the probe count at r3448, the paper reach at
 r3449 and r3450 — and none was rounded up.*
+
+---
+
+## ⛭⛭⛭ REACH CLOSE — all seventeen papers WORKED or CHECKED-NEGATIVE by name (r3516)
+
+*The r3505 overnight order raised the bar from "the bake meets the sampling bar" to the READING
+standard: every one of the seventeen paper bodies read for the vocabulary and named — WORKED where it
+carries a checkable statistics/inference claim, CHECKED-NEGATIVE where every occurrence is a homonym or
+a bare mention. Three readers swept the corpus; the roster below is the result.*
+
+| paper | status | where / why |
+|---|---|---|
+| `P01` | **CHECKED-NEGATIVE** | `BH_causality`: `significance`/`distribution` epistemic + physical; no fit, no likelihood, no count |
+| `P02` | **CHECKED-NEGATIVE** | `janzen_circle`: `variance`=*invariance* substring; `distribution` physical; no statistical claim |
+| `P03` | **CHECKED-NEGATIVE** | `SdS-slicing`: `residual` = geometric remainder; `covariance` = general covariance; homonyms only |
+| `P04` | WORKED | the CLT redshift-isotropy floor: $\sigma_{\rm path}=\sigma_{8,\rm eff}/(3\sqrt N)\approx2.8\times10^{-3}$ vs observed $\lesssim3\times10^{-6}$, differential expansion excluded (`P04_redshift_isotropy_floor`, ALL PASS) |
+| `P05` | **CHECKED-NEGATIVE** | `groupoid`: `covariance`=general covariance; `statistics`=spin-statistics; no fit/count/likelihood |
+| `P06` | WORKED | `S1` — the reference-class power calculation: ~170 (two-arm) / ~40 (matched-pair) episodes for conventional power; five paired concordant → $p=1/32$ (`S1_the_first_programme_is_a_power_calculation...`) |
+| `P07` | WORKED | `S9`/`S10` + the full-spectrum likelihood it stakes: $\chi^2=397.13$ (CR) vs $206.44$ (ΛCDM) over 215 TT bins at equal parameter count, control $0.983$/dof; DESI $\chi^2/\text{dof}\simeq1$; $P_1/P_2=2.185$ vs $2.2564\pm0.0772$ |
+| `P08` | **CHECKED-NEGATIVE** | `slicing_operator`: `covariance`=general covariance; `prior`="a prior universe"; no statistical claim |
+| `P09` | **CHECKED-NEGATIVE** | `range_paper`: `distribution`/`variance`(=invariance) homonyms; no fit/likelihood/count |
+| `P10` | **CHECKED-NEGATIVE** | `canonical_time`: `covariance`=general covariance; `prior`=temporal; homonyms only |
+| `P11` | **CHECKED-NEGATIVE** | `dynamics_paper`: `residual`=geometric; `dof`=graviton/gauge count, not a fit dof; no statistical claim |
+| `P12` | **CHECKED-NEGATIVE** | `algebroid`: `covariance`=general covariance; `prior`=temporal; no fit/count/likelihood |
+| `P13` | **CHECKED-NEGATIVE** | `boundary_paper`: `distribution`/`prior` homonyms; no statistical claim |
+| `P14` | **CHECKED-NEGATIVE** | `matter_sector`: `dof`=graviton/gauge dof; `statistics`=spin-statistics; `multiplicity`=rep multiplicity; no fit/likelihood |
+| `P15` | WORKED | the corpus's statistical paper: two-arm control $\chi^2$ (206.4/215=0.96; 103 vs 558; 23 vs 103; 22.5/dof vs 0.96); covariance-matrix height fit; lensing $\Delta\chi^2$ 1320→989→218; single fitted $z_{\rm onset}$; low-$\ell$ cosmic-variance likelihood $\Delta(-2\ln L)\approx+1.8$, $\sim3.4\sigma$ ceiling (receipts on nearly every claim) |
+| `P16` | WORKED | the abundance likelihood: D at $-0.5\sigma$, $^4$He at $+0.5\sigma$, $^7$Li at $\sim6$–$8\sigma$ at a single CMB-fixed $\eta_{10}=6.13\pm0.04$, theory errors propagated (`P16_theory_error_and_likelihood`) |
+| `p0`  | **CHECKED-NEGATIVE** | `geometric_core`: `covariance`=general covariance; `invariance`/`residual` geometric; no statistical claim |
+
+⇒ ***Seventeen of seventeen accounted for: FIVE WORKED, TWELVE CHECKED-NEGATIVE.*** *Reach $=5/17$ —
+the genuine statistical content is concentrated in the cosmology arm (P04 the isotropy floor, P06 the
+inference argument, P07/P15/P16 the CMB/BAO/BBN fits), and the twelve negatives are named so the field
+is not merely "thrown" but READ. No new receipt was needed at close: `P04_redshift_isotropy_floor` (run
+this pass, ALL PASS) already carries the one WORKED paper not already receipted under `S1`–`S10`.*
+
+**⚑ PO-13 FLAG — the sky-closure numbers surfaced by this pass (P07 l.1608, P15 §refit-bound).** *The
+statistics reading pulled the two-arm confrontation's own numbers into view, and they sharpen the
+sky-closure target: the **amplitude** ratio is already essentially met — P07 states $P_1/P_2=2.185$
+against the measured $2.2564\pm0.0772$ (≈0.9σ), "the odd/even height pattern comes out right" — while
+the **position** carries the whole residual: the asymptotic acoustic phase intercept sits $0.615\,\ell_A$
+from the sky's, ~70σ at peak-position accuracy. P15's two-arm control makes the same split quantitative:
+the construction's arm costs 5.4× its own control, "half of that cost is removable, and the removable
+half is the one that matters for the position," and the position deficit survives the one fitted
+parameter $z_{\rm onset}$. This corroborates the optics-bake flag (peaks do not move under lensing;
+residual is contrast + position, position CR-arm-specific): **the sky grind is a POSITION problem, not
+an amplitude one.***
