@@ -48,7 +48,7 @@ what the spectrum IS.***
 | `P03` *slicing curve* | **MEDIUM — CONFIRMED, worked as `S6`; the guess (cubic roots) was WRONG** | *`eigenvalue` ×4 — plausibly the cubic's roots, which would be a **different** sense* |
 | `P06` *geometric core* | **MEDIUM — CONFIRMED, worked as `S7`; the `gap` guess was WRONG (all six metaphorical)** | *`gap` ×6, `eigenvalue` ×2* |
 | `P16` *cosmogenesis* | **MEDIUM — CONFIRMED, worked as `S8`; and it CORRECTED `H14`** | *`WKB` ×2* |
-| `P12`, `P13`, `P11` | **LOW–MEDIUM** | *small counts, to be read* |
+| `P12`, `P13`, `P11` | **LOW–MEDIUM — READ r3497** | *all three carry chirality-eigenvalue and index-obstruction language already worked by `S2`, `F15`, `H16`; `P13`'s "vector-like **spectrum**" raised `S9`* |
 | `p0`, `P01`, `P02`, `P04`, `P05`, `P08` | **LOW** | ***to be read, not assumed*** |
 
 ⌗ *The "LOW" label is written knowing that on the harmonic side it turned into bites four times
@@ -73,6 +73,7 @@ are results; neither is assumed.***
 | `S6` | what are `P03`'s eigenvalues, and what do they carry? | ⛔ **BITE** r3494, **receipted** — *the **Killing form's**, and its axis ratio is the $A_2$ **root/weight ratio*** |
 | `S7` | is there a THIRD spectral gap, in `P06`? | ⛔ **NO — but a better finding** r3495, **receipted** — *the signature change goes through **infinity**, not zero* |
 | `S8` | does `P16` really lack the index-to-multipole map? | ⛔ **NO — `H14` READ ONE SENTENCE TOO FEW**, r3496 — ***`H14` corrected*** |
+| `S9` | does `P14`'s index carry an **APS boundary term**? | ⍀ **NO**, r3497, **receipted** — *the leaf is **closed**, and `F14`'s interval is a fundamental domain* |
 
 ---
 
@@ -339,3 +340,32 @@ used.** *`H14`'s receipt is corrected and reruns.*
 ⌗ ***Fourth cross-field correction of this sweep*** — *after `F17`→`H20`, `F19`→`P11`, and
 `S0′`→`H13`. **Every one found by a different field reading the same paper with a different
 question.***
+
+---
+
+## ⍀ S9 — **NO APS TERM, BECAUSE THE LEAF IS CLOSED**
+
+*`P12`, `P13` and `P11` all carry chirality-eigenvalue and index-obstruction language — objects already
+worked by `S2`, `F15` and `H16`.* ⌗ **But `P13`'s "the index makes the SPECTRUM VECTOR-LIKE" is a
+spectral-*symmetry* statement, and it raises the one question only this field asks:** ***does the index
+carry an Atiyah–Patodi–Singer boundary correction?***
+
+*For a Dirac operator **with boundary**, $\mathrm{index}=\int\hat A-(\eta+h)/2$ with $\eta$ the spectral
+asymmetry; for a **closed** manifold it is the plain Atiyah–Singer index.* ⌗ ***`Atiyah–Patodi` and
+`APS` occur ZERO times in the corpus*** — *the three `\eta` hits are the Minkowski metric symbol.*
+
+**⌘ AND THE ANSWER TURNS ON ONE WORD THE CORPUS ALREADY HAS.** *`P14`: "the **CLOSED** slicing has
+finite total length, so the leaf is compact." `P02`: the cycloid $r(z)=M(1+\cos z)$ is $2\pi$-periodic,
+read "on the circle $\mathbb R/2\pi\mathbb Z$".* ⇒ ***$r$ runs $2M\to0\to2M$ and CLOSES; the interval
+$[0,2M]$ is covered TWICE, out and back, so it is a FUNDAMENTAL DOMAIN and not the leaf.***
+
+**⚠ AND THAT MATTERS FOR `F14`.** *Its length computation was $\int_{r_b}^{r_c}\mathrm dr/\sqrt f$ — an
+**interval**, with two endpoints.* ***Were the leaf that interval it would have boundary, APS would
+apply, and an $\eta$ term would be owed. It is not: the interval is half the closed curve.***
+
+⇒ ***So the leaf is compact WITHOUT boundary, the index is the plain Atiyah–Singer one, and no
+spectral-asymmetry term arises — which is why the corpus never needs APS and never mentions it.***
+
+⍀ *A clean bounce with its reason named: **the closure `H21` established for `P02`'s cycloid is what
+keeps the boundary term out of `P14`'s count**.*
+*(receipt `storyboard_receipts/SP_S9_no_aps_term.py` — **added, runs, all asserts pass**)*
