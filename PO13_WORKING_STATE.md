@@ -1352,3 +1352,61 @@ PO-13's register row (P7 `sec:frontiers` \ref{frontier:scalar}, item 1 of three)
 cc54 does not edit protected register rows or the grain/registry machinery. This block is the ready-to-absorb entry.
 ⛔ **PO-13 IS NOT BANKED — unbanked r3526; the amplitude is OPEN and the position agrees only under
 the placeholder IC.** *`OWED` carries `597` plus PO-13's open amplitude channel.*
+
+---
+
+## ⛭⛭⛭ THE LAYER READING — r3527, from Daryl's pre-axioms draft (the reasoning that produced the LGF)
+
+⛔ ***The term-by-term clock split may be the wrong structure, and the framing was MINE.***
+
+**⌗ WHAT THE DRAFT COMMITS TO.** *Three layers, not two:* ***"the coexistence of noumenological,
+phenomenological, and local geometries."*** *With (ii) the cosmological solution **a vacuum solution**;
+(iii) real space at any instant ***diffeomorphic*** to slices of the cosmological geometry; (iv) local
+evolution by the ***full*** Einstein equations with nonzero stress-energy.*
+
+⇒ ***So there are not two dynamical systems keeping two clocks. There is one dynamical system — the
+local layer, where matter lives and the full EFE hold — and a MAP to a vacuum cosmological
+description. A diffeomorphism has a Jacobian, and that Jacobian is $\varphi=\mathrm d\eta_{\rm
+leaf}/\mathrm d\eta_{\rm stack}$. It is not a clock choice; it is the map.***
+
+⌗ *A term-by-term split writes **one equation with its terms living in two different spaces**. That is
+not a diffeomorphism. It would explain the exact pattern we could not close: **position landed**
+because a rescaled force gets the **timing** right; **amplitude never did** because amplitude is where
+an approximation to a map and the map itself differ; and **four mechanisms each moved it partway and
+none closed it**, which is the signature of a mis-structured map rather than a missing term.*
+***You cannot fix a wrong map by adding terms.***
+
+### ⛔ THE DOUBLE-COUNT, VISIBLE IN THE SOURCE
+
+| line | code | comment |
+|---|---|---|
+| 77 | `RAD_IN_RATE = False` | ***"radiation is content, not a source"*** |
+| 112 | `Hleaf = H0*sqrt(OM/a^3 + OL + OR/a^4)` | ***"radiation gravitates: L2"*** — *and the perturbations run on it by default* |
+
+⇒ ***Radiation is removed from the rate because it is content, and put back into the rate the
+perturbation sector uses.***
+
+**\u2318 THE DISTINCTION THAT RESOLVES IT.** *The draft's **threshold** result is that expansion is absolute
+**outside bound structures** and the transition is **sharp, not gradual** — "regions slightly below the
+critical density expand at the same Hubble flow as voids, with no gradual variation". **The plasma at
+$\delta\sim10^{-5}$ is not a bound structure.*** ⇒ *So the **expansion rate** it rides on is geometric
+and its own density does not set it; while the **local gravity of the perturbation** — $\Phi$, the
+driving, the growth of $\delta$ — is full-EFE. **Two different objects, and `Hleaf` conflates them by
+putting radiation into the RATE rather than into the local dynamics.***
+
+### ⌗ THE PREDICTION, WITH A NUMBER ALREADY WAITING
+
+*If the perturbations run on the **geometric** rate, that is `STACKPERT=1`, which gives
+$\ell_1/\ell_A=0.5703$. And:*
+$$0.5703\times\frac{r_{s,\rm stack}}{r_{s,\rm leaf}}=0.5703\times1.2857=0.7332\quad\text{vs sky }0.7312
+\quad(\mathbf{0.28\%}).$$
+⌗ *This was noticed at the very start of the thread, called a striking coincidence, and **dropped when
+the term-splitting story took over**. It now has a reason: **perturbations on the geometric rate, with
+the two-horizon ratio entering ONCE, at the map between layers** — where a diffeomorphism's Jacobian
+belongs.*
+
+**⛑ THE TEST — a DELETION, not an addition.** *Run `STACKPERT=1` on the current consistent instrument
+(with `HIER`), with the ratio applied at the **projection** rather than inside the equation. Report
+$\ell_1/\ell_A$, $P_1/P_2$, $P_1/P_3$, $P_1/P_4$ together.* ⇒ ***A structural fix that SIMPLIFIES the
+instrument and lands two observables at once would be a different kind of result from four knobs each
+moving things partway.***
