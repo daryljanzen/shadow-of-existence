@@ -720,3 +720,56 @@ below sky, projection and transfer exonerated by the control pin. The amplitude 
 (sky 2.217 between CR 2.013 and control 2.447; P07's construction 2.185). What remains is the (a)/(b)
 adjudication, which is physics-model, not instrument — handed to 58 with both pins and the bracket on the
 record. **Not asserting a closure that the instrument does not show.**
+
+---
+
+## ⛔ THE INSTRUMENT'S FLAG INVENTORY — r3512, *after the third miss in one arc*
+
+**⌗ THE PATTERN, NAMED.** *Three times in this arc a result was bounded by operations that were
+**already built and unrun**:*
+1. *the position fork rested on `LEAFPERT` vs `STACKPERT` while **`PHASEONLY`** sat unrun — pulling it
+   refuted the fork;*
+2. *`POLSRC` was hand-rolled from a tight-coupling steady state while **`HIER`** sat unrun — carrying
+   an evolved Π, both source terms, and its own control;*
+3. *and `HIER` itself does not know the newest operations (below).*
+
+⇒ ***The failure mode is always the same: assuming the switch you know about is the only one there is.
+Before building an operation, `grep environ` and read every flag.***
+
+### ⌗ THE FLAGS, IN FULL
+
+| group | flags |
+|---|---|
+| **arm / grid** | `ARM` `NK` `LMAXL` `LSTEP` `RTOL` `ZSTART` `ETAEND` `LATARG` `KBATCH` |
+| **clock division** | `STACKPERT` · `PHASEONLY` + `PHASEPOW` · `SRCSTACK` · `DIFFLEAF` · `GSRC` *(the constraint factor — **never run**)* |
+| **damping** | `POLC` (the 16/15) · `DAMPX` · `RD` · `NOTC` *(default 1: hierarchy damping off so $e^{-k^2/k_D^2}$ is the sole dissipation)* |
+| **hierarchy** | **`HIER`** · `LG` (depth 24) · `TCSW` (hand-over $\tau'$) · **`PISRC`** *(1 = both polarisation source terms; **0 = hierarchy kept, source dropped** — the exact subtraction)* |
+| **diagnostics** | `NODRIVE` · `QSCAN` `QTURN` `QMIN` · `KCONT` · `NOPROJ` · `NOISW` · `DSCAN` `DSAVE` · `PHISAVE` · `SAVE` · `LOS` `NLOS` |
+| **content** | `BSPLIT` `RBFAC` `CRAMP` `CRPHI` `CRXE` `DRC` `DRE` |
+
+### ⛔ THE COMPOSITION DEFECT — *checked, r3512*
+
+*`evolve_hier` and `_project` (lines 828–977) reference the clock operations **once**:
+`Jac_of(e) if LEAFPERT`. The main path references **two**.* ⇒ ***`HIER=1` does not know `SRCSTACK` or
+`DIFFLEAF`.***
+
+⛔ **So `HIER=1` composed with `SRCSTACK=vel` evolves the hierarchy with gravity on the LEAF — the very
+assignment the position result required moving to the STACK — and nothing announces it.**
+⌗ ***The ΛCDM gate cannot catch this***, *since $\varphi\equiv1$ makes every clock operation a no-op
+there. **A CR number from that composition would be two physical models in one run.***
+
+### ⌗ THE GATE ORDER THAT FOLLOWS
+
+1. **`lcdm HIER=1`** — validates Π only. Position must hold at $0.7300$; $P_1/P_2$ must move from
+   $2.447$ **toward** $2.217$, not past it.
+2. **`lcdm HIER=1 PISRC=0` vs `PISRC=1`** — the instrument's own subtraction; the difference **is** the
+   returned half. This measures the term's size against the recorded $1123$ $\chi^2$ debt.
+3. ⛔ **THE COMPOSITION FIX** — give the hierarchy's gravitational source the stacking clock and its
+   diffusion the leaf, *the same LGF assignment the main path carries*. **Without this, step 4 is void.**
+4. **CR**, reporting $\ell_1/\ell_A$, $P_1/P_2$, $P_1/P_3$, $P_1/P_4$ **together**.
+
+⌗ **THE PREDICTION THAT KEEPS IT A TEST.** *A correctly composed Π is driven by the same retimed
+$\theta_\gamma$ that produced $0.7294$, so it should arrive **weighted to high $k$** and act as a
+**shape**: $P_1/P_3$ and $P_1/P_4$ should fall further than $P_1/P_2$, and the position should move
+**back down** from $0.7560$.* ***If the position climbs instead, the hierarchy is on the wrong clock
+and step 3 was skipped.***
