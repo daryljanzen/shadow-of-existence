@@ -375,7 +375,7 @@ the Nariai double root of the discriminant, and (`P14`) the dimension-indexed co
 | `P15` | **CHECKED-NEGATIVE** | `discriminant` = a statistical discriminant of models; `absolute` = magnitude; `polar` = polarization |
 | `P16` | **CHECKED-NEGATIVE** | zero quadric-vocabulary occurrences |
 
-⇒ ***Seventeen of seventeen accounted for: ELEVEN WORKED, SIX CHECKED-NEGATIVE. Reach $=11/17$, up from 5 —
+⇒ ***Seventeen of seventeen accounted for: ELEVEN WORKED, SIX CHECKED-NEGATIVE. Reach: **17/17 ACCOUNTED FOR** — 11 **WORKED**, 6 **CHECKED-NEGATIVE by name** (the reading standard; the worked-only figure is $11/17$), up from 5 —
 the widest reach of the seven fields baked so far.*** *One new receipt: `Q7` (P02's interior conic, circle↔hyperbola
 across $s\to is$, added, runs, ALL PASS). Every other worked paper already carried one.* **Cross-field: `P09`'s
 $I^3-27J^2$ and `P14`'s reducibility overlap the conformal (Weyl invariants) and involution (the $A_2$ / real-form

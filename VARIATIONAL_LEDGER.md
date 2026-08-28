@@ -240,7 +240,7 @@ does not enter the corpus at all.***
 | `P16` | **WORKED** | Euclidean action of the imaginary segment, odd integrand, $\mp0.1443\,\alpha^2/G$ cancel (`CROSSING_no_made_asymmetry`) |
 | `p0`  | **CHECKED-NEGATIVE** | carries the only Carter-constant SYNTHESIS assertion (deferred to `P7`), no HJ/Killing-tensor working; `geodesic` = totally-geodesic submanifold; `functional` = matter-functional kernel |
 
-⇒ ***Seventeen of seventeen accounted for: NINE WORKED, EIGHT CHECKED-NEGATIVE. Reach $=9/17$, up from 4.***
+⇒ ***Seventeen of seventeen accounted for: NINE WORKED, EIGHT CHECKED-NEGATIVE. Reach: **17/17 ACCOUNTED FOR** — 9 **WORKED**, 8 **CHECKED-NEGATIVE by name** (the reading standard; the worked-only figure is $9/17$), up from 4.***
 **And the field's character is now measured, not asserted:** *the corpus carries the whole canonical/Hamiltonian
 apparatus — ADM action, constraints, deparametrisation, instanton stationary-action, on-shell reduced action,
 first/boundary variation of curvature invariants — and **never once derives a field equation by extremising a

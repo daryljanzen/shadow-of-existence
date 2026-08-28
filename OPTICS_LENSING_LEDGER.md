@@ -358,7 +358,7 @@ and that is most of them — which is why nothing here had to be revised, only a
 | `p0`  | **WORKED** | `O2` — the sightlines that touch the throat are light rays; the planar figure is the shadow of the null line (`O2_sightline_null_on_lift`) |
 
 ⇒ ***Seventeen of seventeen accounted for: SIX WORKED (`P03`,`P05`,`P07`,`P09`,`P15`,`p0`), ELEVEN
-CHECKED-NEGATIVE. Reach $=6/17$, up from the recorded 3.*** *No new receipt owed — every worked paper
+CHECKED-NEGATIVE. Reach: **17/17 ACCOUNTED FOR** — 6 **WORKED**, 11 **CHECKED-NEGATIVE by name** (the reading standard; the worked-only figure is $6/17$), up from the recorded 3.*** *No new receipt owed — every worked paper
 carries one already (`O1`–`O6`, `K45`, `I6`, `V1_carter_chain`, `P15_*lensing*`).* **Cross-field: `P09`'s
 optical shear was receipted under the general-matter-dynamics line (`I6`) and `P15`'s lensing under `P15`'s
 own appendix; both are OPTICS and are now claimed by this field — no correction to those receipts, a reach

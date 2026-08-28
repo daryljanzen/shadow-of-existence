@@ -364,7 +364,7 @@ a bare mention. Three readers swept the corpus; the roster below is the result.*
 | `P16` | WORKED | the abundance likelihood: D at $-0.5\sigma$, $^4$He at $+0.5\sigma$, $^7$Li at $\sim6$–$8\sigma$ at a single CMB-fixed $\eta_{10}=6.13\pm0.04$, theory errors propagated (`P16_theory_error_and_likelihood`) |
 | `p0`  | **CHECKED-NEGATIVE** | `geometric_core`: `covariance`=general covariance; `invariance`/`residual` geometric; no statistical claim |
 
-⇒ ***Seventeen of seventeen accounted for: FIVE WORKED, TWELVE CHECKED-NEGATIVE.*** *Reach $=5/17$ —
+⇒ ***Seventeen of seventeen accounted for: FIVE WORKED, TWELVE CHECKED-NEGATIVE.*** *Reach: **17/17 ACCOUNTED FOR** — 5 **WORKED**, 12 **CHECKED-NEGATIVE by name** (the reading standard; the worked-only figure is $5/17$) —
 the genuine statistical content is concentrated in the cosmology arm (P04 the isotropy floor, P06 the
 inference argument, P07/P15/P16 the CMB/BAO/BBN fits), and the twelve negatives are named so the field
 is not merely "thrown" but READ. No new receipt was needed at close: `P04_redshift_isotropy_floor` (run

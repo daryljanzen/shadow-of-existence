@@ -848,7 +848,7 @@ pass**)*
 | `P16` | WORKED | `C9` — Fuchsian unipotent monodromy, indicial $(0,1)$ |
 | `p0`  | WORKED | the global Wick rotation / $SO(6,\mathbb C)$ real forms; named earlier |
 
-⇒ ***Seventeen of seventeen accounted for: THIRTEEN WORKED, FOUR CHECKED-NEGATIVE.*** *Reach $=13/17$;
+⇒ ***Seventeen of seventeen accounted for: THIRTEEN WORKED, FOUR CHECKED-NEGATIVE.*** *Reach: **17/17 ACCOUNTED FOR** — 13 **WORKED**, 4 **CHECKED-NEGATIVE by name** (the reading standard; the worked-only figure is $13/17$);
 the field is at the READING standard.  New receipts this pass: `C9`, `C10`, `C11` (all run, all pass);
 `C5`–`C8` from the r3501 re-open.  Cross-field: `C11`'s group orders REFERRED to the quadric bake
 (already receipted there); no correction owed to another field's entry.*

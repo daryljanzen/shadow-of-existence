@@ -249,7 +249,7 @@ fires there is citation to `P05` or homonym.*
 | `P16` | **CHECKED-NEGATIVE** | the lone bare "morphism" (l.261, "a morphism of the description groupoid") = an attribution/instance of `K1`'s isotropy morphisms, no in-paper law; `category error`; `automorphism` = $A_2$ diagram |
 | `p0`  | **CHECKED-NEGATIVE** | `groupoid` ×many all the `P5` description (round-trip ledger citations); `faithful` = rep theory; `adjoint` = self-adjoint; `automorphism` = $\mathrm{Aut}(A_2)=D_6$ |
 
-⇒ ***Seventeen of seventeen accounted for: FIVE WORKED, TWELVE CHECKED-NEGATIVE. Reach $=5/17$, and the
+⇒ ***Seventeen of seventeen accounted for: FIVE WORKED, TWELVE CHECKED-NEGATIVE. Reach: **17/17 ACCOUNTED FOR** — 5 **WORKED**, 12 **CHECKED-NEGATIVE by name** (the reading standard; the worked-only figure is $5/17$), and the
 field is at the READING standard.*** *No new receipt owed: the reach pass found no categorical claim
 outside the five, and the twelve are citations to `P05`'s groupoid or homonyms (self-adjoint, category
 error, diff-geo pullback, rep-theory faithful, group-theory `Aut(A_2)`).* **The measured concentration IS

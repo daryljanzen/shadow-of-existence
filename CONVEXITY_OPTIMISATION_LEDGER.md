@@ -68,7 +68,7 @@ saddle; `stationary` = stationary (Killing) spacetime; `duality`/`hyperplane` (p
 | `P16` | **CHECKED-NEGATIVE** | `cosmogenesis`: `constraint algebra` (companion title); `extremum` = turning point of the collapse branch; no optimisation |
 | `p0`  | **CHECKED-NEGATIVE** | `geometric_core`: `constraint` = GR constraint algebroid (Dirac); `duality`/`hyperplane` = projective duality / polar hyperplanes (quadric field, receipted there); `minimum` = geometric throat radius, and l.1061 explicitly **disclaims** a "chosen minimum" of a potential |
 
-⇒ ***Seventeen of seventeen accounted for: ONE WORKED, SIXTEEN CHECKED-NEGATIVE.*** *Reach $=1/17$ — the
+⇒ ***Seventeen of seventeen accounted for: ONE WORKED, SIXTEEN CHECKED-NEGATIVE.*** *Reach: **17/17 ACCOUNTED FOR** — 1 **WORKED**, 16 **CHECKED-NEGATIVE by name** (the reading standard; the worked-only figure is $1/17$) — the
 lowest of any field, and the finding IS the bounce: convexity proper (`convex`/`convexity`/`KKT`/
 `epigraph`/`objective function`) is **×0 corpus-wide**, and the ×143 the order flagged is the
 Hamiltonian-constraint homonym of the "problem of time" programme. The field does not bite as an

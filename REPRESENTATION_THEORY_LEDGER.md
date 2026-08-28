@@ -358,7 +358,7 @@ $2(n-1)(n+3)$.* **A genuine rep-theory computation in the canonical-time paper, 
 | `P16` | **WORKED** (light) | colour su(3); su(3)⊄isometry algebra; $S_3$; $\gamma^5$ |
 | `p0`  | **WORKED** | smallest faithful real rep $=\mathbb R^6$; $\mathbf 3\oplus\bar{\mathbf 3}$ matter/antimatter; $A_2\subset A_3$ by node deletion (`P17_qm_S4_vs_S5`) |
 
-⇒ ***Seventeen of seventeen accounted for: FOURTEEN WORKED, THREE CHECKED-NEGATIVE. Reach $=14/17$ — the record
+⇒ ***Seventeen of seventeen accounted for: FOURTEEN WORKED, THREE CHECKED-NEGATIVE. Reach: **17/17 ACCOUNTED FOR** — 14 **WORKED**, 3 **CHECKED-NEGATIVE by name** (the reading standard; the worked-only figure is $14/17$) — the record
 "1 paper" was the r3437 throw's, not the field's, and the `R1`–`R12` probes plus this reach pass now name the
 whole $A_2$/su(3)/triality/generation structure across fourteen papers.*** *No new receipt owed — the core is
 `R1`/`R4`/`R8`-receipted and `P14`/`P12`/`p0`/`P08` carry their own; `P10`'s Peter–Weyl is receipted in the

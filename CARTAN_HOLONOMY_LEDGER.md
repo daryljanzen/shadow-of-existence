@@ -284,7 +284,7 @@ asserts pass**; verified on the U(1) contrapositive, the `P08` Z₃ branch monod
 | `P15` | **WORKED** *(Fuchsian ODE monodromy = Gauss–Manin holonomy)* | connection problem + crunch monodromy $4\pi/\rho$ scalar, $-2\pi i/\rho$ tensor (`P15_the_evenness_is_the_time_symmetry`) |
 | `P16` | **WORKED** *(Fuchsian ODE monodromy)* | unipotent monodromy off-diagonal $2\pi ip$; tensor $-2\pi i/\rho$, scalar $-4\pi i/\rho$; Wronskian preserved (`P16_the_scalar_monodromy_is_four_pi_over_rho`) |
 
-⇒ ***Seventeen of seventeen accounted for: THIRTEEN WORKED, FOUR CHECKED-NEGATIVE. Reach $=13/17$.*** *One new
+⇒ ***Seventeen of seventeen accounted for: THIRTEEN WORKED, FOUR CHECKED-NEGATIVE. Reach: **17/17 ACCOUNTED FOR** — 13 **WORKED**, 4 **CHECKED-NEGATIVE by name** (the reading standard; the worked-only figure is $13/17$).*** *One new
 receipt: `CH1` (the flatness is a theorem — the ledger's own owed probe, discharged). Every other worked
 paper carries one.* **Cross-field: the Fuchsian ODE monodromy (`P15`/`P16`) is the same object as complex
 analysis `C9`/`C10` (the branch-point unipotent monodromy) read as a flat-connection holonomy; the $V_4$/W(A₃)

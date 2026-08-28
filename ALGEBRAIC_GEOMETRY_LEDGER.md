@@ -73,7 +73,7 @@ operator's cubic) the corpus computes. Two crux findings governed the reading:*
 | `P16` | **CHECKED-NEGATIVE** | `cosmogenesis`: `singular point` = an apparent **pole** of a complex variable (no monodromy); `singular` = spacetime metric singularity; `branch point` = cosmological (the $\mathbb{Z}_3$ cube-root cover deployed physically, worked as Fuchsian-ODE monodromy, not an AG branch locus) |
 | `p0`  | **CHECKED-NEGATIVE** *(for curve-AG)* | `geometric_core`: `genus` = taxonomic; `cross-ratio` = Cayley–Klein **metric** log-cross-ratio (`Q3_cayley_klein`, quadric field); pencil-of-quadrics classification returns **null** (`D3_segre_no_pencil`); `node` = Dynkin node — substantial projective/quadric content, but no curve/variety/discriminant-of-a-cubic claim of its own |
 
-⇒ ***Seventeen of seventeen accounted for: EIGHT WORKED, NINE CHECKED-NEGATIVE.*** *Reach $=8/17$ — deep,
+⇒ ***Seventeen of seventeen accounted for: EIGHT WORKED, NINE CHECKED-NEGATIVE.*** *Reach: **17/17 ACCOUNTED FOR** — 8 **WORKED**, 9 **CHECKED-NEGATIVE by name** (the reading standard; the worked-only figure is $8/17$) — deep,
 and the genuine content is concentrated in the horizon-cubic family (P03/P05/P07/P08/P12 the discriminant,
 cover, monodromy, reducible factoring; P13/P14 restating it) plus one independent object, **P09's Petrov
 speciality discriminant $I^3-27J^2$**. **No new receipt was needed at close**: every WORKED claim already

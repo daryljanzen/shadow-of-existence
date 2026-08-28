@@ -185,7 +185,7 @@ $(+,+)\to(-,+)$ in `P03`,`P05`,`p0`,`P11`,`P02`.*
 | `P16` | **WORKED** | antilinear reality involution $K$; standing conjugation $r\mapsto-r,2M\mapsto-2M$, odd integrand $\mp0.1443\alpha^2/G$; CPT (`CROSSING_no_made_asymmetry`) |
 | `p0`  | **WORKED** | the two real forms of $\SO(6,\mathbb C)$ + global Wick (`P17_qm_S4_vs_S5`); inversion involution fixed set = substrate (`C3_inversion_extends`); $K$ fixed set = photon congruence; $[\mathfrak m,\mathfrak m]\subset\mathfrak h$ |
 
-⇒ ***Seventeen of seventeen accounted for: FIFTEEN WORKED, TWO CHECKED-NEGATIVE. Reach $=15/17$ — the deepest
+⇒ ***Seventeen of seventeen accounted for: FIFTEEN WORKED, TWO CHECKED-NEGATIVE. Reach: **17/17 ACCOUNTED FOR** — 15 **WORKED**, 2 **CHECKED-NEGATIVE by name** (the reading standard; the worked-only figure is $15/17$) — the deepest
 of the eight fields baked.*** *The field is `L-278`/`L-279` receipted (`I1`, and `S1_so42_is_not_another_real_form`)
 — so the plan's "5 probes, 0 receipts" is stale: the real-forms bite landed with receipts and `P13` was
 corrected to FIVE.*

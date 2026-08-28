@@ -323,7 +323,7 @@ it:***
 | `P16` | **CHECKED-NEGATIVE** | single "conformal" = conformal-time $\eta$ in the cycloid solution |
 | `p0`  | **WORKED** | `Q3` Cayley–Klein log-cross-ratio; `C3` throat inversion involution; the dilation generator $O(5,1)\times\mathbb R^+$ |
 
-⇒ ***Seventeen of seventeen accounted for: SEVEN WORKED, TEN CHECKED-NEGATIVE. Reach $=7/17$, up from 4 —
+⇒ ***Seventeen of seventeen accounted for: SEVEN WORKED, TEN CHECKED-NEGATIVE. Reach: **17/17 ACCOUNTED FOR** — 7 **WORKED**, 10 **CHECKED-NEGATIVE by name** (the reading standard; the worked-only figure is $7/17$), up from 4 —
 and the "REFUSED" headline is corrected to REFUSED ON THE MÖBIUS HALF, WORKED ON THE WEYL-TENSOR HALF.***
 *No new receipt owed — every worked paper carries one (`C1`–`C5`, `Q1`, `Q3`, `Q4`, `S1`, `P09_*`,
 `P11_gowdy_dS`, `P14_B2_zeromode_continuation`).* **Cross-field: `P10`'s conformal-flatness / Weyl-squared and

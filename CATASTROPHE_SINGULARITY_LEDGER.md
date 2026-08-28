@@ -80,7 +80,7 @@ and set aside: spacetime/curvature `singularity` (a physics object, not a critic
 | `P16` | WORKED | `cosmogenesis`: the double root with its full degeneracy content — isotropy jump, geometry $\mathrm{dS}_2\times S^2$ — a property of the geometry kept apart from the crossing (L138) |
 | `p0`  | WORKED | `geometric_core`: the discriminant $4-3r_0^2$-bounded **order parameter**, saturating at the Nariai double root, **explicitly contrasted with a quartic (Landau/cusp) potential** ("a quartic potential is unbounded; this order parameter is not") (`P0_the_order_parameter_is_the_offset_and_it_is_bounded_by_the_nariai_member`, L1055–1060) |
 
-⇒ ***Seventeen of seventeen accounted for: FOURTEEN WORKED, THREE CHECKED-NEGATIVE.*** *Reach $=14/17$ —
+⇒ ***Seventeen of seventeen accounted for: FOURTEEN WORKED, THREE CHECKED-NEGATIVE.*** *Reach: **17/17 ACCOUNTED FOR** — 14 **WORKED**, 3 **CHECKED-NEGATIVE by name** (the reading standard; the worked-only figure is $14/17$) —
 among the deepest of any field, because the corpus's central object IS a catastrophe (the fold). The
 three negatives are clean: `P04` has nothing; `P10`'s turning/branch points are WKB and curvature
 homonyms; `P14`'s fold/codimension/discriminant/Thom are all homonyms (generation count, Dirac

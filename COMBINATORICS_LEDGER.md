@@ -1007,7 +1007,7 @@ $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2\cong D_6$, so the reach is wide.*
 | `P16` | **CHECKED-NEGATIVE** | `cosmogenesis`: $S_3$ bare mentions ("within-state index", "$S_3$-fixed Nariai crest"); `one-cycle map`=monodromy loop; `how many passages`=rhetorical; `multiplicity`=catalogue homonym |
 | `p0`  | WORKED | the count forced to three (triple-angle $2M=\tfrac{2}{3\sqrt3}\sin3w$, three preimages); $D_6=S_3\times\mathbb{Z}_2$ with only $\mathbb{Z}_2$ an isometry; explicit 3-cycle $\mathbb{Z}_3$ + transposition $\sigma$; $D=4$ uniquely carries generation count + chirality; entropy = gauge-count squared (`P17_...`, `U3_the_residue_is_one_and_it_is_already_counted`) |
 
-⇒ ***Seventeen of seventeen accounted for: EIGHT WORKED, NINE CHECKED-NEGATIVE.*** *Reach $=8/17$ — the
+⇒ ***Seventeen of seventeen accounted for: EIGHT WORKED, NINE CHECKED-NEGATIVE.*** *Reach: **17/17 ACCOUNTED FOR** — 8 **WORKED**, 9 **CHECKED-NEGATIVE by name** (the reading standard; the worked-only figure is $8/17$) — the
 combinatorics is genuinely deep where it lives (the $A_2/S_3/D_6$ skeleton, the exterior-power channel
 count, the generation index) and genuinely absent where it does not (nine papers reduce to
 `account`/`counterpart`, partition-of-unity, catalogue-multiplicity, or bare cited mentions of the
