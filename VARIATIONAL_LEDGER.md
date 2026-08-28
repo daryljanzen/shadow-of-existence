@@ -3,7 +3,7 @@ kind: REFERENCE
 job: variational / action against CR — the field the corpus uses and never names
 name: variational-ledger
 description: R-M's sixth field bake — VARIATIONAL / ACTION, the corpus's starkest absence. Opened r1901 from the r1890 holes survey. Its opening question is whether the corpus's central claim about the Carter constant — that it EXPLAINS what GR carries as an unexplained gift — is a claim the variational apparatus supports.
-current: r2558+c54.206
+current: r3510
 ---
 
 > **▣ REFERENCE — R-M's sixth field bake, and part of the corpus.** *Variational / action — **the field
@@ -187,3 +187,64 @@ what the world requires — so it bears on dissolutions even when it promotes no
 parts · ③ the CENSUS PASS · ④ the P6 `R2` PASS — and if nothing moves, say so.**
 **⛭ AND THE RULE FROM r1900:** ***a probe that turns up a question settles it in the same turn, or the question
 does not enter the corpus at all.***
+
+
+## ⛭⛭⛭ REACH CLOSE — all seventeen papers WORKED or CHECKED-NEGATIVE by name (r3510)
+
+> ⛔ *The r3500 whole-set measurement put this field at **24%** (4 papers). Read in full this pass (three
+> sweeps across all seventeen bodies, screening the `action` substring — `interaction`, `fraction`,
+> `backreaction`, `satisfaction` — and the GROUP/GROUPOID/DECK/WEYL `action` homonym, which together
+> dominate the raw ×241). **The genuine reach is `9/17`, and the premise-corrected title is confirmed
+> hard: the corpus uses the FULL canonical apparatus and never extremises a Lagrangian.***
+
+**⌘ WHAT THE FIELD ACTUALLY REACHES — nine papers, and the two cosmology-canonical papers are the core:**
+- **`P10` (richest)** — the ADM action $S=\int(\pi^{ij}\dot h_{ij}-N\mathcal H-N^i\mathcal H_i)$, variation of $N,N^i$
+  enforcing the constraints; deparametrisation to a true Hamiltonian and $i\partial_\tau\Psi=\hat H_{\rm phys}\Psi$;
+  Hamilton's equation on-shell → Friedmann; the instanton as **stationary points of $S_E$** ($r''=+V'$);
+  on-shell reduced action $S=\int p_a\,\dd a=-0.0481\,\alpha^2/G$; the 2nd-order EH oscillator tower; the
+  **first variation** of $R$ under a TT perturbation $=0$ and the Gauss–Bonnet **boundary term**.
+  *(`LIFT_instanton_action`, `LIFT_gravitational_action`, `P10_minisuperspace_friedmann`, `P10_graviton_lift`, `Q1_...`, `S1_...`)*
+- **`P11`** — the ADM Hamiltonian+momentum constraints from the Einstein equations; canonical $\mathcal H$ →
+  evolution via Hamilton's equations → deparametrised Schrödinger; the polarised cut as a **geodesic
+  $Q=\mathrm{const}$** of the $\mathbb H^2$ wave-map target; the conserved canonical **shear charge**
+  $C_0=-\tfrac12(p_\gamma+p_\psi)$ on-shell. *(`P11_gowdy_dS`, `P11_unpolarized_gowdy_cut`, `P11_deSitter_attractor`)*
+- **`P07`** — the ADM/Lagrange-multiplier deparametrisation narrative; the instanton variational principle;
+  the odd action integrand $r[f-1]=-2M-r^3/\alpha^2$ ⇒ branches sum to zero; $S_E=-0.0481\alpha^2/G$.
+- **`P08`** — the ADM Hamiltonian constraint; the radial-geodesic first integral $(\dd r/\dd\tau)^2=E^2-f$,
+  $E{=}1\Rightarrow\sinh^{2/3}$ — **and it explicitly DECLINES the Lagrangian route** ("varying an action
+  returns an equality, and an equality has no direction", `V3`).
+- **`P15`,`P16`** — the $E{=}1$ timelike geodesic with conserved energy (P15) and the **Euclidean action of
+  the imaginary segment**, integrand odd, branch actions $\mp0.1443\,\alpha^2/G$ cancelling
+  (P16, `CROSSING_no_made_asymmetry`).
+- **`P09`,`P12`** — `V1` (the Carter chain: shear-free rulings → Goldberg–Sachs → Type D → Killing tensor →
+  the Carter constant) and `V4` (P12 RECOGNISES the Dirac/ADM hypersurface-deformation algebra, owes no
+  Legendre transform because it derives nothing).
+
+| paper | status | where / what the terms are |
+|---|---|---|
+| `P01` | **CHECKED-NEGATIVE** | `action`×6 = the substring of "inter**action**"; `stationary` = static chart; `geodesic` = causal curve |
+| `P02` | **CHECKED-NEGATIVE** | radial-geodesic cycloid $r=M(1+\cos\eta)$ falls out of $\dd s^2$, NOT extremised; `action`s are bibliography |
+| `P03` | **CHECKED-NEGATIVE** | `action` = deck/Weyl/group + "**fraction**al"; `functional` = kernel of the matter functional (a zero-set ODE, not a variation); near-miss EOM $\dd^2r/\dd\tilde\tau^2=rK_G$ |
+| `P04` | **CHECKED-NEGATIVE** | `action` = "**backreaction**/**fraction**al/**attraction**"; `canonical` = companion-paper title |
+| `P05` | **CHECKED-NEGATIVE** | `action` = action groupoid/algebroid/Weyl/deck; near-miss `V5` Killing/homothety conserved charge along a GIVEN geodesic — a conservation law, not a variation |
+| `P06` | **WORKED** *(by-citation)* | Euclidean-action sign negative (Hartle–Hawking); odd-integrand ⇒ branch cancellation; scale-factor Hamiltonian's one-parameter self-adjoint-extension family closed by $\kappa=1/\alpha$ — all checkable, functionals deferred to `P07`/`P10`/`P16` |
+| `P07` | **WORKED** | ADM deparametrisation; instanton variational principle; odd action integrand; $S_E=-0.0481\alpha^2/G$ |
+| `P08` | **WORKED** | ADM Hamiltonian constraint; $E{=}1$ geodesic first integral; `V3` (declines the Lagrangian route by choice) |
+| `P09` | **WORKED** | `V1` the Carter chain (Killing tensor → Carter constant); `V2` two PNDs (held) |
+| `P10` | **WORKED** | the full canonical program (above) — the field's richest paper |
+| `P11` | **WORKED** | ADM constraints, canonical $\mathcal H$ → Hamilton's eqns, wave-map geodesic, shear charge |
+| `P12` | **WORKED** | `V4` — recognises the Dirac/ADM constraint algebra as GR's own; owes no Legendre transform |
+| `P13` | **CHECKED-NEGATIVE** | `action` = Hopf/group action + quantum of action $\hbar$; `geodesic` = totally-geodesic submanifold; `stationary` sector |
+| `P14` | **CHECKED-NEGATIVE** | `variational principle` NAMED as an unavailable requirement (no functional written); `separability` = a locus check, not Hamilton–Jacobi; `action` = group action; **no Carter constant** |
+| `P15` | **WORKED** | $E{=}1$ timelike geodesic, conserved energy, $(\dd r/\dd\tau)^2=E^2-V_{\rm eff}$ |
+| `P16` | **WORKED** | Euclidean action of the imaginary segment, odd integrand, $\mp0.1443\,\alpha^2/G$ cancel (`CROSSING_no_made_asymmetry`) |
+| `p0`  | **CHECKED-NEGATIVE** | carries the only Carter-constant SYNTHESIS assertion (deferred to `P7`), no HJ/Killing-tensor working; `geodesic` = totally-geodesic submanifold; `functional` = matter-functional kernel |
+
+⇒ ***Seventeen of seventeen accounted for: NINE WORKED, EIGHT CHECKED-NEGATIVE. Reach $=9/17$, up from 4.***
+**And the field's character is now measured, not asserted:** *the corpus carries the whole canonical/Hamiltonian
+apparatus — ADM action, constraints, deparametrisation, instanton stationary-action, on-shell reduced action,
+first/boundary variation of curvature invariants — and **never once derives a field equation by extremising a
+Lagrangian** (`Euler-Lagrange` ×0, `Lagrangian` ×0, `Noether` ×0, `action principle` ×0). `P08` says why by
+choice: an action returns an equality and an equality has no direction (`V3`).* **No new receipt owed — every
+worked paper carries one.** *Cross-field: the Carter chain (`V1`) doubles as the optics field's Goldberg–Sachs
+result (`P09` shear-free congruence); no correction, a shared hinge.*
