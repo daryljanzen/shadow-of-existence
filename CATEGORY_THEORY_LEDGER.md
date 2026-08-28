@@ -3,7 +3,7 @@ kind: REFERENCE
 job: category theory against CR — the corpus's largest unlisted field
 name: category-theory-ledger
 description: R-M's fifth field bake — CATEGORY THEORY, the corpus's largest unlisted field. Opened r1892 after the r1890 holes survey found 363 uses and two papers named for its objects, with the field itself absent from the reach list. Its opening question is one the corpus states about itself.
-current: r2517+c54.201
+current: r3508
 ---
 
 > **▣ REFERENCE — the field the list did not carry, and part of the corpus.** *Category theory, the
@@ -204,3 +204,55 @@ space against the row count.*
 theorem*** *(which classifies exactly the reachable cuts) and* ***P12's stratification*** *(which gives the
 strata by isotropy), under the category-theoretic name.* **⇒ The queue entry asks for something two papers
 already carry, and this ledger should say so rather than hold it open.**
+
+
+## ⛭⛭⛭ REACH CLOSE — all seventeen papers WORKED or CHECKED-NEGATIVE by name (r3508)
+
+> ⛔ *The r3500 whole-set measurement put this field at **12%** — two papers named for its objects (`P5`,
+> `P12`) while the reading standard asks every paper.* **Read in full this pass (two sweeps of the field's
+> vocabulary across all seventeen bodies): the field is genuinely CONCENTRATED, and the reach is `5/17`.**
+
+**⌘ WHERE THE CATEGORY THEORY IS, AND IT IS FIVE PAPERS.** *`P05` is the home — the description groupoid
+$\mathcal G$ as a category (objects = charting vantages, morphisms = geometry-preserving vantage-changes),
+the axioms checked, $D_3\cong S_3$ relations $\sigma^2=\tau^3=(\sigma\tau)^2=\mathrm{id}$, completeness,
+the quotient's universal property (`rem:universal`), the action groupoid's isotropy.* *`P03` builds the
+same groupoid of descriptions and proves its morphisms admit no continuous family. `P08` states the
+slicing operator $\Psi$'s **functoriality** (carries objects AND arrows, compatibly with composition) and
+its fullness on strata. `P09` is $\Psi$'s **essential image** (`K2`) and its orbit-type filtration
+(`K8`). `P12` is the **action algebroid** and the $\{6,7,10\}$ symmetric-pair count.* ***All receipted
+already: `K1_action_groupoid`, `K23_functor_and_quotient`, `K45_span_and_nariai`,
+`K8_orbit_type_filtration`, `P05_dihedral_generators`, `P05_deck_group_S3`.***
+
+**⌘ AND THE OTHER TWELVE CARRY NO CATEGORICAL CLAIM OF THEIR OWN — verified, not assumed.** *The strict
+vocabulary is ABSENT corpus-wide: `functor`, `natural transformation`, `adjunction`, `monad`, `colimit`,
+`universal property`(outside `P05`), `Yoneda`, `presheaf`, `sheaf`, `topos`, `pushout`, `terminal/initial
+object`, `equivalence of categories`, `commutative diagram` — **zero occurrences in the twelve**. What
+fires there is citation to `P05` or homonym.*
+
+| paper | status | where / what the terms are |
+|---|---|---|
+| `P03` | **WORKED** | groupoid of descriptions, `prop:morphism-generation` (discrete morphisms); `K2` essential-surjectivity |
+| `P05` | **WORKED** | the groupoid home — `prop:groupoid`, `prop:relations`, `rem:universal`; `K1`,`K3`,`K5` |
+| `P08` | **WORKED** | $\Psi$ functoriality + fullness on strata; `K2`,`K6` (`K23_functor_and_quotient`, `K6_fullness`) |
+| `P09` | **WORKED** | $\Psi$'s essential image = the range; orbit-type filtration `K8` |
+| `P12` | **WORKED** | the action algebroid; $\{6,7,10\}$ symmetric-pair dims; `K1`,`K8` |
+| `P01` | **CHECKED-NEGATIVE** | `category` = "category error" (philosophy); no groupoid/morphism/functor in body |
+| `P02` | **CHECKED-NEGATIVE** | `category error`; `automorphism` = $A_2$ diagram automorphism; `groupoid` = `P5` citation |
+| `P04` | **CHECKED-NEGATIVE** | `category` ×6 all "category error"; `groupoid` citational |
+| `P06` | **CHECKED-NEGATIVE** | `adjoint` = self-adjoint; `category placement`; `groupoid` = `P5` description; `faithful` = English |
+| `P07` | **CHECKED-NEGATIVE** | "morphisms of a description groupoid" (F4) = `P5` citation; `pullback` = diff-geo; `category error` = philosophy; `self-adjoint`; `limit` = analysis |
+| `P10` | **CHECKED-NEGATIVE** | `adjoint` ×11 all **self-adjointness** (functional analysis); `groupoid` = `P5` citation; `category error` |
+| `P11` | **CHECKED-NEGATIVE** | `automorphism` = $A_2$ diagram; `groupoid` = `P5` citation |
+| `P13` | **CHECKED-NEGATIVE** | "morphism of the description groupoid" = `P5` citation; `faithful` = rep theory ($\mathbb R^6$ of $\mathfrak{su}(3)$); `Aut(A_2)` = group theory |
+| `P14` | **CHECKED-NEGATIVE** | `pullback` = diff-geo pullback of a mode (`P14_the_twist...`); `Aut(A_2)`/Galois $S_3$ = group theory/citation |
+| `P15` | **CHECKED-NEGATIVE** | `faithful` = "faithful transmission" (physics); `groupoid` = `P5` citation; `category error` |
+| `P16` | **CHECKED-NEGATIVE** | the lone bare "morphism" (l.261, "a morphism of the description groupoid") = an attribution/instance of `K1`'s isotropy morphisms, no in-paper law; `category error`; `automorphism` = $A_2$ diagram |
+| `p0`  | **CHECKED-NEGATIVE** | `groupoid` ×many all the `P5` description (round-trip ledger citations); `faithful` = rep theory; `adjoint` = self-adjoint; `automorphism` = $\mathrm{Aut}(A_2)=D_6$ |
+
+⇒ ***Seventeen of seventeen accounted for: FIVE WORKED, TWELVE CHECKED-NEGATIVE. Reach $=5/17$, and the
+field is at the READING standard.*** *No new receipt owed: the reach pass found no categorical claim
+outside the five, and the twelve are citations to `P05`'s groupoid or homonyms (self-adjoint, category
+error, diff-geo pullback, rep-theory faithful, group-theory `Aut(A_2)`).* **The measured concentration IS
+the result — the corpus names its one categorical object in `P05` and cites it; it does not scatter an
+unnamed category theory across the other twelve.** *Cross-field: none owed; every external "morphism of the
+description groupoid" (`P07` F4, `P13`, `P16`) is consistent with `P05`'s definition, no drift.*
