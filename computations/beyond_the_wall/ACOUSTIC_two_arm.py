@@ -168,6 +168,14 @@ _rt = OR / ag ** 4 + OM / ag ** 3 + OL                            # ** the STACK
 _free = OM / ag ** 3 + OL
 GSRC = os.environ.get('GSRC', '0') == '1' and not RAD_IN_RATE
 Gf_of = CubicSpline(eg, (_rt / _free) if GSRC else np.ones_like(_rt))
+# ** GSRCRAD=1 (58's r3530 diagnosis of the GSRC overshoot): apply the constraint factor _rt/_free to
+# the RADIATION source terms ONLY (Ogv*dg + Onv*dn), leaving matter/baryons at plain normalisation --
+# i.e. radiation enters Phi's source additively at full strength while the matter sector is NOT
+# rescaled.  Requires GSRC=1 (else Gf==1, no-op).  ** CAVEAT (cc54): every Omega is normalised to
+# _rt, so the matter coefficient is rho_m/rho_tot and its source is SHORT by rho_free/rho_tot too --
+# the shortfall is the Hc^2-vs-Omega mismatch, not radiation-specific.  So this UNDER-counts matter by
+# standard EFE; it lands the sky only if CR's constraint puts matter's local gravity on rho_free. **
+GSRCRAD = os.environ.get('GSRCRAD', '0') == '1'
 Og_of = CubicSpline(eg, (1 - FNU) * (OR / ag ** 4) / _rt)
 On_of = CubicSpline(eg, FNU * (OR / ag ** 4) / _rt)
 # ** THE MATTER SECTOR IS SPLIT INTO BARYONS AND CDM AT c54.178. **  Until now it was ONE fluid
@@ -483,7 +491,9 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         # BSPLIT=0 restores the pre-c54.178 behaviour -- the whole matter sector at delta_c -- so
         # that the change can be MEASURED on this instrument rather than asserted.
         _mat = (Ocv * dc + Obv * db) if BSPLIT else ((Ocv + Obv) * dc)
-        Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc * float(Gf_of(e)) / 2) * (Ogv * dg + Onv * dn + _mat)
+        _gf = float(Gf_of(e))
+        _dsrc = (_gf * (Ogv * dg + Onv * dn) + _mat) if GSRCRAD else _gf * (Ogv * dg + Onv * dn + _mat)
+        Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc / 2) * _dsrc
         # ** DR multiplies EVERY coupling to the potential, at EVERY site. **
         out = np.empty_like(y)
         out[:, 0] = -tc + DRC * 3 * Php
@@ -876,7 +886,9 @@ def evolve_hier(kk, t_eval, e_sw, yF):
         Pi = F[:, 0] + G[:, 0] + G[:, 2]
         Ps = Ph - 6 * Hc ** 2 * (Onv * sig + Ogv * sgg) / kk ** 2
         _mat = (Ocv * dc + Obv * db) if BSPLIT else ((Ocv + Obv) * dc)
-        Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc * float(Gf_of(e)) / 2) * (Ogv * dg + Onv * dn + _mat)
+        _gf = float(Gf_of(e))
+        _dsrc = (_gf * (Ogv * dg + Onv * dn) + _mat) if GSRCRAD else _gf * (Ogv * dg + Onv * dn + _mat)
+        Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc / 2) * _dsrc
         out = np.zeros_like(y)
         out[:, 0] = -tc + DRC * 3 * Php
         out[:, 1] = -Hc * tc + DRE * kk ** 2 * Ps
