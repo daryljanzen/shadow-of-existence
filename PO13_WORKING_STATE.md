@@ -685,3 +685,38 @@ Moving it toward the sky is a SOURCE-PHYSICS choice (e.g. the `LEAFPERT` vs `STA
 sec:properframe — which rate the perturbation sector sees), which is 58's "name the piece," not an
 instrument knob to flip unattended. **Compute half handed over: the deficit is isolated to the CR source
 phase and quantified (7.5%), with both pins on the record.**
+
+### ✔ THE SOURCE-PHASE-CLOCK LEVER IS BRACKETED — and neither frame reaches the sky (a real tension, named for 58)
+**Diagnostic (not an adopted frame):** ran the alternate source-phase clock `STACKPERT=1` (the perturbation
+sector sees the stacking/ruler rate, P15 sec:properframe) against the default `LEAFPERT`, to MEASURE the
+size of the frame lever on `l_1/l_A`. Same instrument, `NK=620`.
+
+| source-phase frame | `l_1/l_A` | peaks | P1/P2 | vs sky 0.7312 |
+|---|---|---|---|---|
+| `STACKPERT=1` (ruler clock) | **0.5703** | 172 / 396 / 628 / 908 | 0.965 | −22% |
+| `LEAFPERT` (leaf clock, default) | **0.6764** | 204 / 516 / 828 / 1164 | 2.013 | −7.5% |
+| — sky — | 0.7312 | 220.6 / 538.1 / 809.8 | 2.217 | — |
+
+**Result:** the two documented frames BRACKET `l_1/l_A` at 0.5703 and 0.6764, and **the sky (0.7312) sits
+ABOVE BOTH**. The default `LEAFPERT` is already the favourable frame (STACKPERT is worse on position AND
+collapses the amplitude to 0.965). So switching the source-phase clock is NOT a lever toward the sky — it
+moves the wrong way, and the frame choice already made is the better one.
+
+**The tension this isolates (for 58's adjudication).** Neither undriven-comb frame reaches the sky's
+first-peak position, and the reason is structural: the sky's `l_1/l_A=0.731` encodes the standard acoustic
+**radiation-driving** phase shift (~0.27π), while the CR comb is UNDRIVEN by the established mechanism
+(modes sub-horizon at the late onset `z_onset≈6797`, never cross while there is a plasma → the undriven
+phase, r3429/crossing census). An undriven comb's source phase sits intrinsically BELOW the driven sky
+value, in both frames. So the position residual is not a frame artifact and not a projection/transfer
+artifact (the CONTROL, same projection+transfer, lands on the sky) — **it is the undriven mechanism's own
+signature.** Two readings are open, and choosing between them is the framework node's call:
+  (a) the sky's first-peak position is NOT purely the driving phase shift, and there is a CR source-phase
+      contribution (not yet in the instrument) that lifts 0.676 → 0.731 without a driving impulse; or
+  (b) the undriven comb structurally cannot reach the sky position, and the ~7.5% (≈70σ) is a genuine,
+      standing CR-vs-sky position residual — a prediction the data does not yet confirm, to be carried as
+      OPEN rather than closed.
+**Compute disposition:** the position deficit is fully isolated — CR source phase, both frames bracketed
+below sky, projection and transfer exonerated by the control pin. The amplitude is bracketed and near
+(sky 2.217 between CR 2.013 and control 2.447; P07's construction 2.185). What remains is the (a)/(b)
+adjudication, which is physics-model, not instrument — handed to 58 with both pins and the bracket on the
+record. **Not asserting a closure that the instrument does not show.**
