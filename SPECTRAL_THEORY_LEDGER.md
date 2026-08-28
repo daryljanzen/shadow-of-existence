@@ -41,7 +41,7 @@ what the spectrum IS.***
 | paper | estimate | reason |
 |---|---|---|
 | **`P10`** *canonical time* | **HIGH — CONFIRMED, worked as `S1`** | *the deficiency-index paper. `F1`–`F3` classified the **endpoints**; **nobody has asked what the spectrum of the deparametrised Hamiltonian actually is** — discrete, continuous, or mixed* |
-| **`P14`** *matter sector* | **HIGH** | *a Dirac operator with `eigenvalue` ×7; `H11` already found its wall to be the **reflectionless Pöschl–Teller pair** — one bound state plus a reflectionless continuum, which IS a spectral statement* |
+| **`P14`** *matter sector* | **HIGH — CONFIRMED, worked as `S2`** | *a Dirac operator with `eigenvalue` ×7; `H11` already found its wall to be the **reflectionless Pöschl–Teller pair** — one bound state plus a reflectionless continuum, which IS a spectral statement* |
 | `P07` *framework* | **MEDIUM–HIGH** | *the tower's $\mu_n=\sqrt{n(n+2)-2}$ is a **spectrum**, and `H13` showed its floor at $n=2$ is forced* |
 | `P09` *range* | **MEDIUM** | *`eigenvalue` ×8 — of the structure functions or the Carter cut's separation constants; needs reading* |
 | `P15` *cosmology* | **MEDIUM** | *`WKB` ×3, `discrete spectrum` ×2 — the acoustic ladder* |
@@ -65,6 +65,7 @@ are results; neither is assumed.***
 | `S0` | baseline; which of the counts are this field's? | ⌘ **WORKED** r3487 — *`quantisation` ×66 is **canonical** quantisation, `gap` ×30 mostly physical; the field is half the size the count suggests* |
 | `S0′` | does `P10`'s degeneracy match what other bakes used? | ⛔ **NO** r3488 — *the corpus derives $2(n-1)(n+3)$; the harmonic bake's `H13` used the textbook $2(n^2-1)$. **`H13` corrected.*** |
 | `S1` | what IS the spectrum of the deparametrised Hamiltonian? | ⛔ **BITE** r3489, **receipted** |
+| `S2` | `F14` showed the wall index is well-DEFINED — is it **STABLE**? | ⛔ **BITE** r3490, **receipted** — *yes, and a **spectral gap** is why* |
 
 ---
 
@@ -98,3 +99,37 @@ one half, the vacuum energy of `P10`'s graviton tower, and neither the paper nor
 corpus computes one sum twice, for two purposes, without joining them.**
 *(receipt `storyboard_receipts/SP_S1_the_tower_spectrum_and_its_quartic.py` — **added, runs, all
 asserts pass**)*
+
+---
+
+## ⛔⛭⛭⛭ S2 — **THE WALL'S SPECTRAL GAP IS WHAT MAKES THE GENERATION COUNT STABLE**
+
+*`P14`'s `eigenvalue` ×7 turn out to be **chirality** eigenvalues — $\sigma_y$ and $\gamma^5$, both
+$\pm1$ — and one repeated monodromy eigenvalue.* ⛔ ***None is a spectral-theory eigenvalue.*** *But its
+spectral content is elsewhere and load-bearing: $\dim\ker_+=3$, $\dim\ker_-=0$, the $\gamma^5$-graded
+index that makes the generation count.*
+
+⌗ **`F14` (functional analysis) established that index is WELL DEFINED — the leaf is compact, so the
+operator is Fredholm. This field asks the next question: is it STABLE?**
+
+**⌘ THE SPECTRUM, COMPUTED.** *The wall factorises into the SUSY partners $V_\mp=m^2\mp m'$ with
+$m=\tanh x$:*
+
+| | lowest $E^2$ |
+|---|---|
+| $V_-=1-2\,\mathrm{sech}^2x$ | $-2\times10^{-6}$, $+1.00071$, $+1.00283$, $+1.00638$ |
+| $V_+=1+2\,\mathrm{sech}^2x$ | $+1.00281$, $+1.00282$, $+1.01125$ |
+
+*The asymptotic mass is $m_\infty=\tanh\infty=1$, so the continuum threshold is $E^2=1$.*
+⇒ ***ONE isolated zero mode at $E^2=0$, then nothing until $E^2=1$: the interval $(0,1)$ is EMPTY — a
+spectral gap of the full asymptotic mass, measured $1.00071$.***
+
+**⌘ AND THE GAP IS THE HALF `F14` DID NOT SUPPLY.** *Fredholmness makes the index **defined**.*
+***A gap makes it STABLE***: *an isolated eigenvalue of finite multiplicity cannot move off zero under
+a small perturbation without crossing the gap, so* ***$\dim\ker_+=3$ is robust rather than a
+coincidence of the exact profile*** — *and the gap is set by the same asymptotic mass that defines the
+wall, not by a tuned feature of it.*
+
+⇒ ***So `P14` asserts the index without stating the gap that protects it, and `F14` supplies only
+well-definedness. The two halves sit in two different bakes and in no paper.***
+*(receipt `storyboard_receipts/SP_S2_the_wall_spectral_gap.py` — **added, runs, all asserts pass**)*
