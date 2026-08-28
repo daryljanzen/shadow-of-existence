@@ -46,7 +46,7 @@ what the spectrum IS.***
 | `P09` *range* | **MEDIUM — CONFIRMED, worked as `S4`; the guess (separation constants) was WRONG** | *`eigenvalue` ×8 — of the structure functions or the Carter cut's separation constants; needs reading* |
 | `P15` *cosmology* | **MEDIUM — CONFIRMED, worked as `S5`** | *`WKB` ×3, `discrete spectrum` ×2 — the acoustic ladder* |
 | `P03` *slicing curve* | **MEDIUM — CONFIRMED, worked as `S6`; the guess (cubic roots) was WRONG** | *`eigenvalue` ×4 — plausibly the cubic's roots, which would be a **different** sense* |
-| `P06` *geometric core* | **MEDIUM** | *`gap` ×6, `eigenvalue` ×2* |
+| `P06` *geometric core* | **MEDIUM — CONFIRMED, worked as `S7`; the `gap` guess was WRONG (all six metaphorical)** | *`gap` ×6, `eigenvalue` ×2* |
 | `P16` *cosmogenesis* | **MEDIUM** | *`WKB` ×2* |
 | `P12`, `P13`, `P11` | **LOW–MEDIUM** | *small counts, to be read* |
 | `p0`, `P01`, `P02`, `P04`, `P05`, `P08` | **LOW** | ***to be read, not assumed*** |
@@ -71,6 +71,7 @@ are results; neither is assumed.***
 | `S4` | what are `P09`'s eigenvalues, and of what? | ⛔ **BITE** r3492, **receipted** — *the **self-dual Weyl operator**, and its degeneracy condition is **Nariai's own algebra*** |
 | `S5` | is `P15`'s exact/WKB residual an adiabatic error? | ⛔ **NO** r3493, **receipted** — *monotone the wrong way and **saturating***; *it is a systematic offset* |
 | `S6` | what are `P03`'s eigenvalues, and what do they carry? | ⛔ **BITE** r3494, **receipted** — *the **Killing form's**, and its axis ratio is the $A_2$ **root/weight ratio*** |
+| `S7` | is there a THIRD spectral gap, in `P06`? | ⛔ **NO — but a better finding** r3495, **receipted** — *the signature change goes through **infinity**, not zero* |
 
 ---
 
@@ -278,3 +279,36 @@ axis ratio **is** the $A_2$ root/weight length ratio.*
 ⌘ ***The $\sqrt3$ in the ellipse's shape and the $\sqrt3$ between roots and weights are ONE FACT about
 the Killing form, stated in two papers as two facts.***
 *(receipt `storyboard_receipts/SP_S6_the_ellipse_spectrum.py` — **added, runs, all asserts pass**)*
+
+---
+
+## ⛔⛭⛭ S7 — **THE SIGNATURE CHANGE IS AN EIGENVALUE PASSING THROUGH INFINITY**
+
+*Estimated **MEDIUM** hoping for a third spectral gap after `S3` found two.* ⛔ ***There is none — all
+six of `P06`'s `gap`s are metaphorical*** *("a gap awaiting work", "there was never a gap to bridge",
+"not a gap in the reading"). **The estimate's reason was wrong.***
+
+**⌘ BUT ITS `eigenvalue` OCCURRENCES ARE LOAD-BEARING.** *`P06` gives the metric's spectrum:* ***"three
+positive eigenvalues always, and a fourth eigenvalue $\lambda=\alpha^2/(\alpha^2-\mathbf x^2)$ whose
+sign is fixed by the real data."*** ⇒ **So the SIGNATURE — Lorentzian or Riemannian — is the sign of one
+eigenvalue**, *and the whole signature-change story (the Wick face, `P13`'s compact face, `F15`'s three
+compactness statuses) turns on it.*
+
+**⛔ AND HERE IS THE DISTINCTION THE TEXT DOES NOT DRAW:**
+
+| | |
+|---|---|
+| $\lambda=0$ | ***never*** — the numerator is the constant $\alpha^2$ |
+| $\lambda\to\infty$ | at $\mathbf x^2=\alpha^2$ |
+
+⇒ ***The signature change happens by the eigenvalue passing through INFINITY, not through ZERO.***
+
+*And the difference is exactly the one that matters: **through zero** the metric **degenerates**,
+$\det g=0$, the form breaks down; **through infinity** the metric stays **nondegenerate** and the
+**coordinate** degenerates. Since $\det g\sim(\text{three positives})\times\lambda$ and $\lambda$ has no
+zero,* ***$\det g$ never vanishes.***
+
+⌘ ***AND THAT IS THE SAME STATEMENT `F18` FOUND `P15` MAKING*** — *"the scale is set by $\alpha$
+everywhere, so the divergence is the areal coordinate degenerating and not a scale of the geometry".*
+**`P15` argues it; `P06`'s spectrum exhibits it; neither cites the other.**
+*(receipt `storyboard_receipts/SP_S7_signature_through_infinity.py` — **added, runs, all asserts pass**)*
