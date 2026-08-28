@@ -47,7 +47,7 @@ what the spectrum IS.***
 | `P15` *cosmology* | **MEDIUM — CONFIRMED, worked as `S5`** | *`WKB` ×3, `discrete spectrum` ×2 — the acoustic ladder* |
 | `P03` *slicing curve* | **MEDIUM — CONFIRMED, worked as `S6`; the guess (cubic roots) was WRONG** | *`eigenvalue` ×4 — plausibly the cubic's roots, which would be a **different** sense* |
 | `P06` *geometric core* | **MEDIUM — CONFIRMED, worked as `S7`; the `gap` guess was WRONG (all six metaphorical)** | *`gap` ×6, `eigenvalue` ×2* |
-| `P16` *cosmogenesis* | **MEDIUM** | *`WKB` ×2* |
+| `P16` *cosmogenesis* | **MEDIUM — CONFIRMED, worked as `S8`; and it CORRECTED `H14`** | *`WKB` ×2* |
 | `P12`, `P13`, `P11` | **LOW–MEDIUM** | *small counts, to be read* |
 | `p0`, `P01`, `P02`, `P04`, `P05`, `P08` | **LOW** | ***to be read, not assumed*** |
 
@@ -72,6 +72,7 @@ are results; neither is assumed.***
 | `S5` | is `P15`'s exact/WKB residual an adiabatic error? | ⛔ **NO** r3493, **receipted** — *monotone the wrong way and **saturating***; *it is a systematic offset* |
 | `S6` | what are `P03`'s eigenvalues, and what do they carry? | ⛔ **BITE** r3494, **receipted** — *the **Killing form's**, and its axis ratio is the $A_2$ **root/weight ratio*** |
 | `S7` | is there a THIRD spectral gap, in `P06`? | ⛔ **NO — but a better finding** r3495, **receipted** — *the signature change goes through **infinity**, not zero* |
+| `S8` | does `P16` really lack the index-to-multipole map? | ⛔ **NO — `H14` READ ONE SENTENCE TOO FEW**, r3496 — ***`H14` corrected*** |
 
 ---
 
@@ -312,3 +313,29 @@ zero,* ***$\det g$ never vanishes.***
 everywhere, so the divergence is the areal coordinate degenerating and not a scale of the geometry".*
 **`P15` argues it; `P06`'s spectrum exhibits it; neither cites the other.**
 *(receipt `storyboard_receipts/SP_S7_signature_through_infinity.py` — **added, runs, all asserts pass**)*
+
+---
+
+## ⛔ S8 — **`H14` QUOTED THE CAVEAT AND STOPPED AT THE FULL STOP**
+
+*`P16` was estimated **MEDIUM** on `WKB` ×2. Reading it found something else: **an eigenvalue passage
+that corrects the harmonic bake's `H14`.***
+
+*`H14` (r3465) quoted `P16` —* ***"on the identification of the interior's harmonic index with the
+observed multipole — an identification this paper does not establish"*** *— and concluded the corpus
+lacked the map.* ⛔ ***The very next sentence supplies it:***
+> ***"And the identification it rested on can be replaced by a map, both halves of which the corpus
+> already carried … the spatial section is $S^3$ throughout and the mode equation is diagonal in the
+> harmonic index, so that index passes the branch point unchanged — an integer eigenvalue label has
+> nothing to rescale — while on this side the companion paper's closed-$S^3$ projection sends mode $L$
+> to $\ell=\sqrt{L(L+2)}\,D_C/r_0$"***, *with its own receipt `P16_the_interior_to_observed_mode_map`.*
+
+⇒ ***So the corpus does NOT lack the map, and `H14`'s framing was wrong.*** *What survives is a
+**refinement**: `P16`'s map is $\ell=k_LD_C$ **exactly**, and `H14`'s own computation shows the actual
+projection peaks **below** it — $0.600$ of it at $\ell=3$, rising to $0.991$ by $\ell\sim1000$.*
+**Right asymptotically, forty per cent off at the lowest multipoles, which is where the bound is
+used.** *`H14`'s receipt is corrected and reruns.*
+
+⌗ ***Fourth cross-field correction of this sweep*** — *after `F17`→`H20`, `F19`→`P11`, and
+`S0′`→`H13`. **Every one found by a different field reading the same paper with a different
+question.***

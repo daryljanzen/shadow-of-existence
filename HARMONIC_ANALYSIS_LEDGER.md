@@ -353,10 +353,13 @@ if $D_C=1$ in the units used.*** ⛔ ***And the deviation is worst at LOW multip
 $\ell=3$ — which is exactly the range the corpus's low-multipole story occupies and where `P16`'s bound
 is meant to bite.***
 
-**⌗ SO THE ASSUMPTION IS NOT MERELY UNESTABLISHED.** *The corpus contains a map of the required kind;
-that map says the simplest form of the identification is wrong; and the error is largest where the
-bound is used.* ***`P16`'s caution is warranted, and it can be made specific rather than left
-general.***
+⚠ **CORRECTED r3496, by the SPECTRAL-THEORY bake reading `P16`.** *This probe quoted the caveat and
+**stopped at the full stop**. `P16`'s very next sentence supplies the map:* ***"the identification it
+rested on can be replaced by a map, both halves of which the corpus already carried … the closed-$S^3$
+projection sends mode $L$ to $\ell=\sqrt{L(L+2)}\,D_C/r_0$"***, *with its own receipt.*
+⇒ ***So the corpus does NOT lack the map. What survives is a REFINEMENT: that map is $\ell=k_LD_C$
+exactly, and the computation above shows the actual projection peaks BELOW it — $0.600$ of it at
+$\ell=3$ — so it is right asymptotically and forty per cent off where the bound is used.***
 
 **⏷ ROUTED, NOT APPLIED.** *`P16`'s sentence can name where the map lives and what it costs, instead
 of leaving the identification unattributed.*

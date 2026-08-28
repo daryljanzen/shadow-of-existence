@@ -15,6 +15,19 @@ WHY THIS PROBE.  The fourth of the reach owed after r3453.  P16 carries this fie
   ** A paper naming its own unestablished assumption is the best kind of probe, and this field owns
   the object: index-to-multipole IS the S^3-to-sky projection. **
 
+  ⛔ CORRECTED r3496, by the SPECTRAL-THEORY bake reading P16.  ** THIS PROBE QUOTED THE CLAUSE AND
+  STOPPED AT THE FULL STOP.  The VERY NEXT SENTENCE supplies the map: "And the identification it
+  rested on can be replaced by a map, both halves of which the corpus already carried ... the spatial
+  section is S^3 throughout and the mode equation is diagonal in the harmonic index, so that index
+  passes the branch point unchanged -- an integer eigenvalue label has nothing to rescale -- while on
+  this side the companion paper's closed-S^3 projection sends mode L to l = sqrt(L(L+2)) D_C / r_0",
+  with its own receipt P16_the_interior_to_observed_mode_map. **
+
+  ** So the corpus does NOT lack the map, and this probe's framing was wrong.  What survives is a
+  REFINEMENT: P16's map is l = k_L D_C exactly, and the computation below shows the actual projection
+  peaks BELOW that -- 0.600 of it at l = 3, rising to 0.991 by l ~ 1000.  The map is right
+  asymptotically and forty per cent off at the lowest multipoles, which is where the bound is used. **
+
 WHAT IS SHOWN.  P15 carries a map of exactly that kind -- the closed-S^3 source projected through the
   flat spherical Bessel functions -- and it is NOT the identity.  A single mode at wavenumber k
   projects with weight (2l+1) j_l(k D_C)^2, which peaks at
@@ -68,10 +81,12 @@ print(f"\n  ** VERDICT 2: the deviation is WORST AT LOW MULTIPOLE -- {100*(1-row
 print(f"     l = {rows[0][1]} -- which is exactly the range the corpus's low-multipole story")
 print("     occupies and where P16's bound is meant to bite. **")
 
-print("\n  ** VERDICT 3: so P16's assumption is not merely unestablished.  The corpus contains")
-print("     a map of the required kind, that map says the simplest form of the")
-print("     identification is wrong, and the error is largest where the bound is used.")
-print("     P16's caution is warranted and can be made SPECIFIC rather than general. **")
+print("\n  ** VERDICT 3 (CORRECTED r3496): P16 SUPPLIES the map in its very next sentence --")
+print("     l = sqrt(L(L+2)) D_C/r_0, with its own receipt.  This probe quoted the caveat")
+print("     and stopped at the full stop.  What survives is a REFINEMENT: that map is")
+print("     l = k_L D_C exactly, and the actual projection peaks BELOW it -- 0.600 of it")
+print("     at l = 3 -- so it is right asymptotically and 40 per cent off at the lowest")
+print("     multipoles, which is where the bound is used. **")
 
 print("\n" + "=" * 78)
 print("  ALL PASS")
