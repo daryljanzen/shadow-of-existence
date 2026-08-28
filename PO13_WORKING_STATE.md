@@ -977,3 +977,44 @@ across them. So it is fairly called a genuine open framework result, held with t
 
 Instrument: added SRCSTACK=vel/src to evolve_hier (gravity-clock split in the hierarchy path); HIER path already
 carried the evolved-Pi polarisation source. Position closed; amplitude open and characterised.
+
+### ⚠ CORRECTION + full consistent composition (58's gate order, run on the branch superset + PHASEPOW)
+**Correction of a cc54 git misread first:** I wrongly thought main r3512 had REVERTED my flags. It had not -- main
+never had them; the -89/+15 was a branch-vs-main divergence diff (PR #22 unmerged). The branch is the SUPERSET;
+main's only new piece is 58's PHASEPOW (r3511), now brought into the branch. I nearly adopted main's instrument,
+which would have deleted SRCSTACK/DIFFLEAF/POLSRC/FREEZEJAC -- caught by 58 mid-run.
+
+**Composition confirmed and the port completed:** evolve_hier carries the vel term-split (my earlier vel+HIER gave
+0.7294 != LEAFPERT+HIER 0.6764, so the hierarchy DOES see vel -- Gate 1.5 passes). DIFFLEAF modifies the
+module-level kD2inv_of, so it reaches _project's frozen envelope. Full consistent run: ARM=cr SRCSTACK=vel DIFFLEAF=1 HIER=1.
+
+**58's PISRC subtraction (the returned half), the decisive measurement:**
+
+| run | l1/lA | P1/P2 | P1/P3 |
+|---|---|---|---|
+| plain lcdm (tight-coupling + exp(-k^2/k_D^2)) | 0.7300 | 2.447 | 2.974 |
+| lcdm HIER PISRC=0 (evolved hierarchy, NO pol source) | 0.7300 | 2.265 | 2.326 |
+| lcdm HIER PISRC=1 (+ pol source) | 0.7300 | 2.254 | 2.363 |
+| CR vel+DIFFLEAF+HIER PISRC=0 | 0.7294 | 3.406 | 3.171 |
+| CR vel+DIFFLEAF+HIER PISRC=1 | 0.7294 | 3.359 | 3.219 |
+| sky | 0.7312 | 2.217 | 2.277 |
+
+**WHAT THE SUBTRACTION SHOWS (correcting my Gate-1 over-attribution).** The polarisation SOURCE's returned half is
+SMALL on BOTH arms: control 2.265 -> 2.254 (~0.5%), CR 3.406 -> 3.359. The big control recovery I credited to the
+source in Gate 1 (2.447 -> 2.254) is almost entirely the HIERARCHY's proper damping (the evolved multipoles carrying
+the pol-corrected quadrupole), NOT the two source terms. The source is a ~0.5% correction -- which is what
+polarisation physically IS. So the "1123 chi^2 debt" is recovered by the hierarchy's damping treatment; the source
+terms are the small remainder.
+
+**POSITION.** Under the FULLY consistent HIER composition (vel + DIFFLEAF + evolved multipoles doing the diffusion on
+the leaf natively), the CR position is 0.7294 (0.25% from sky), and the pol source does NOT move it (0.7294 at
+PISRC=0 and 1). This is NOT the fluid-path 0.7560 that 58 predicted: in the HIER path the diffusion is done by the
+multipoles on the leaf, not the k_D envelope, so DIFFLEAF (which only touches the 4.2% frozen envelope) barely
+moves it. **Flag for 58: the HIER-consistent position is 0.7294, differing from the fluid-DIFFLEAF 0.7560 -- the
+two solvers do the diffusion clock differently, and the hierarchy is the more complete one.**
+
+**AMPLITUDE.** CR P1/P2 stays ~3.36-3.41 (vs sky 2.217) under the complete, consistent hierarchy instrument, and
+neither the hierarchy nor the pol source closes it -- the pol source barely helps CR at all. So the amplitude residual
+PERSISTS through the fully consistent, internally-complete instrument: CR's higher peaks are too low relative to the
+first, the missing driving-amplitude boost. Held as the arc's first genuine OPEN framework result -- now on the
+fully consistent HIER composition, not the fluid path, with the pol-source contribution measured and found small.
