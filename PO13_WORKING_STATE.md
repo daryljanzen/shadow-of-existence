@@ -2872,3 +2872,15 @@ coherence are the result; the projection is not an eighth lever -- it is fixed b
 The plasma-warping build is not needed to rescue D_C: D_C is already justified. **This closes the projection
 question. cc54 owns the r3553-r3556 error: I applied the closed-Friedmann default 58 warned against, having
 read the map but not the Proposition that fixes it.**
+
+---
+
+## r3558(branch) -- HANDOFF WRITTEN. This log is superseded by PO13_HANDOFF.md for the next node.
+
+The open problem, what is eliminated, the sharp unsolved core (the L1/L2 split-rate question), the decisive
+next experiment, the instrument + discipline, the trap, and the CI/ledger hazards are assembled into a single
+readable top-level document -- **PO13_HANDOFF.md** -- so a fresh head does not have to mine this 2800-line
+append-only log to pick the problem up. This log remains the raw record; the handoff is the map. PR #22 is
+the standing result. cc54 + 58 are spent on PO-13; it is left unsolved, in the clearest shape available, for
+a fresh node to attack -- specifically the split-rate experiment (background on the geometric L1 rate, phase
+clock on the content L2 radiation-included rate), which has not been run and is where a solution, if any, lives.
