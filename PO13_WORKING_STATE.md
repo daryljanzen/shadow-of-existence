@@ -2358,3 +2358,47 @@ never reached the thing it was checking. The fix that would have surfaced it: ga
 the `.npz` exist / does the log contain the "saved … multipoles" line), not on the shell's exit code, and
 never let a trailing command mask the one that matters. Recorded so the pattern is on the ledger, not just
 worked around this once. (The heavy NK=1100 LMAXL=2000 continuum run was over the timeout; reran lighter.)
+
+---
+
+## r3547 (branch) — PLANCK COMPARISON: STOPS at step-3 calibration; instrument not fit; CR NOT regular in positions
+
+**Daryl's ordered pipeline, stopping at the first failure.** Gate 1 (Planck peak-position errors) PASSED:
+Planck 2018 TT peaks (Table 5, Planck 2018 I) l+/-sigma = 220.6+/-0.6, 538.1+/-1.3, 809.8+/-1.0,
+1147.8+/-2.3, 1446.8+/-1.6, 1779+/-3, i.e. 0.002-0.010pi per peak, ~8-40x below the 0.084pi signal.
+
+Then the three-way peak-position comparison under floated l_A (sky/control/CR), NK=620 LMAXL=2000, peaks
+sub-grid parabolic-interpolated (grid quantization ruled out). Residuals decomposed BY CONSTRUCTION into
+the parity-ALTERNATING component (projection onto (-1)^n = the compression/rarefaction physics) and the
+SMOOTH remainder, since a quadratic coefficient silently absorbs a zigzag (Daryl's catch).
+
+RAW spacings: sky [317.5,271.7,338.0,299.0,332.2] alternate; control [315.8,277.0,314.4,295.1,304.0]
+alternate WEAKER; CR [298.4,179.2,277.0,273.4,290.9] alternate with an anomalous 2nd spacing.
+
+Parity ALT amplitude (pi units): SKY 0.047+/-0.003 (q1-6) / 0.052 (q1-4); CONTROL 0.019 / 0.025;
+CR 0.058 / 0.089.
+
+**⊘ STEP-3 CALIBRATION FAILS.** The control's parity alternation (ALT ~0.02) is ~HALF the sky's (~0.05),
+a ~10 sigma gap, robust to sub-grid interpolation. The two-arm instrument's LCDM does NOT reproduce the
+sky's own peak-position alternation to Planck precision (it under-produces the high-l alternation; its peaks
+drift low, 1727 vs sky 1779 at peak 6). **By the strict rule, the instrument is not fit to compare CR to the
+sky, and nothing about CR-vs-sky follows. The Planck comparison STOPS here.** This is a fact about the
+instrument (a simplified two-arm acoustic code, not a full Boltzmann solver), not about CR.
+
+**⊘ Calibration-free survivor (CR vs control, same instrument):** CR's positional ALT (0.058-0.089) is
+LARGER than the control's (0.019-0.025), NOT smaller. The uniform-comb prediction -- "CR goes REGULAR in
+positions" -- is **REFUTED**. CR's phase incoherence shows up as AMPLIFIED position irregularity (the 179
+spacing = peak 3 pulled inward), consistent with the measured phase drift. The parity anomaly is present in
+BOTH observables: suppressed in the even-peak HEIGHTS and over-shifted in the even-peak POSITIONS -- not
+absent in one. (The SMOOTH parts -- CR 0.086 vs control 0.014 -- also differ, but that is model-internal and
+cannot be compared to the sky given the calibration failure.)
+
+**⇒ BOTTOM LINE.** The curvature/parity signature CANNOT be tested against Planck peak positions WITH THIS
+INSTRUMENT, because the instrument's own LCDM control fails to reproduce the sky's peak-position structure
+(~10 sigma). Testing it requires a full Boltzmann code (CAMB/CLASS) whose LCDM reproduces Planck's peaks to
+their error bars; then CR's composition would be run in the same code and its peak-position residual compared.
+A prediction current in-house tooling cannot test is a legitimate place for a prediction to sit -- it is not
+the same as the prediction failing. What is measured and stands: (i) the over-drive disagreement (+7%/+65%);
+(ii) the diagnosed loss of cross-scale phase coherence (5 terms eliminated, two quadratures); (iii) the
+ruler-independent smooth curvature ~0.2pi and the amplified positional parity, both model-internal. The Planck
+test is DEFERRED to a full-Boltzmann implementation, not claimed.
