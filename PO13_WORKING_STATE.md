@@ -2760,3 +2760,61 @@ reduces to, and it is 58/Daryl's, being a claim about which distance the framewo
 resolved -- a comb in the wrong place by 7-fold for a reason that has nothing to do with local warping. Fix
 the location (the D_C-vs-D_M decision) first. The hyperspherical kernel (validated, r3553) stands ready if
 the answer is D_M.**
+
+---
+
+## r3556(branch) -- THE FORK IS RESOLVED BY GEOMETRY: D_M is forced; the factor 7 is near-antipodal magnification, a HARD PREDICTION
+
+**58's ruling (accepted): D_M is not a choice.** On a closed S^3 the 2-sphere at radial coordinate chi
+has areal radius r_0 sin(chi); a ruler of physical length L there subtends L/(r_0 sin chi). ANY length->angle
+map must carry sin(chi). D_C = r_0 chi is the RADIAL (null-geodesic / light-travel) distance and is the wrong
+object for an angular projection. So the corpus's validated l = sqrt(L(L+2)) D_C/r_0 is **a flat-space formula
+applied to a closed geometry** -- and its validation (L=2 -> 7.78 on the low-l deficit) tested the *stretch*,
+not the *curvature*. The fork is not "D_C or D_M": D_M is correct. The live question is whether **chi = 2.75**
+is right, because chi alone carries the whole factor.
+
+**chi computed from CR's OWN determined quantities (from scratch, not the hardcode):**
+- D_C = integral_0^{z*} c dz/H(z), z* = 1089.8, Planck-2018 LCDM background (the rate CR shares): **13867 Mpc**
+  (corpus hardcode 13927; 0.4%). This is just the standard comoving distance to last scattering.
+- r_0 = 2^(1/3) Lambda^(-1/2) sinh^(2/3)(u), u=arcsinh sqrt(OL/Om), Lambda=3 OL (H0/c)^2: **5066 Mpc**
+  (corpus 5064). CR's S^3 areal radius, derived from Lambda and Om -- not free.
+- **chi = D_C/r_0 = 2.737 rad.** Corpus's 2.75 confirmed independently. **PAST THE POLE** (pi/2 = 1.571),
+  only **0.40 rad short of the antipode** (pi = 3.1416). Last scattering sits in the near-antipodal cap.
+
+**The magnification, and its sign (58's checks, both pass):**
+- sin(chi)/chi = **0.144**, i.e. angular scales are MAGNIFIED by **1/0.144 = 6.95x**. This IS the "factor 7".
+- SIGN: near the antipode a fixed physical sound horizon subtends a LARGER angle => peaks at LOWER l.
+  Predicted l1: 220 (flat/D_C) -> **220 x 0.144 = 32** (angular/D_M). First three: 32 / 77 / 116.
+  This MATCHES the exact hyperspherical-Bessel comb measured at r3553 (l ~ 27-93, factor-7 compression).
+  The exact closed-S^3 radial function does what the heuristic D_M says -- the calculation obeys the geometry.
+- L=2 map: corpus flat l = 7.74 (= its own 7.78); forced angular l = 1.11 (into the quadrupole floor).
+
+**⊘ THE FINDING (the most consequential of the arc, stated as such).** Taken at face value with the
+geometrically-forced angular distance D_M = r_0 sin(chi), CR's own determined inputs (D_C to LSS = 13867 Mpc,
+r_0 = 5066 Mpc from Lambda) place last scattering **near the antipode of its S^3 (chi = 2.74)**, which
+magnifies the acoustic scale by ~7 and puts the first acoustic peak at **l1 ~ 32**, a factor of 7 BELOW the
+observed 220. This is NOT a projection bug and NOT a source-term lever: it is a hard geometric prediction of
+the substrate, and it disagrees with the sky by a FACTOR, not the +7% previously reported. The seven
+eliminated source terms are downstream of this -- they were tuning a comb whose fundamental location the
+geometry already fixes seven-fold wrong.
+
+**⊘ THE ONE HONEST TENSION (routed to 58/59, not resolved here).** The corpus's low-l receipt (sec:largescale)
+VALIDATED the flat D_C map by reproducing the observed low-l suppression ell(ell+1)C_ell = 0.12/0.10/0.20/
+0.65/0.92/0.99 at ell=2..7, recovered by ell~8 -- and that fit REQUIRES L=2 -> ell~7.8, i.e. it used D_C.
+Under the forced D_M map, L=2 -> ell~1.1 and that suppression story relocates to ell~1. So the corpus already
+has a *validated-looking* result that stands only on the flat-on-closed map 58 just ruled out. Two readings:
+  (a) the low-l validation is itself the same flat-on-closed error (it fit the stretch, and "worked" because
+      the low-l deficit is broad and undiscriminating -- 58's read), or
+  (b) CR's layer diffeomorphism genuinely assigns a NON-metric angular distance to the projection (the
+      "trampoline"/plasma-warping idea), in which case D_C could be right FOR CR and the standard-FRW D_M
+      argument does not apply to the warped sheet.
+  58 has ruled D_M forced *by the S^3 metric*; reading (b) is the only escape and it requires the projection
+  to NOT be the S^3 metric's angular distance -- which is exactly the held plasma-warping object. So the
+  held build is no longer "the wrong next object": it is the ONLY thing that could rescue D_C, and the finding
+  above is what stands if it cannot.
+
+**⇒ STATUS: the arc's result is a FACTOR-7 acoustic-scale disagreement forced by near-antipodal last
+scattering on CR's derived S^3 -- stated as a hard prediction, not a percentage residual. Held for 58/59:
+(1) accept the finding as the arc's headline, and/or (2) decide whether the layer diffeomorphism carries a
+non-metric projection distance (the plasma-warping build) that could restore D_C. Nothing here is cc54's to
+decide; the measurement is done and it is unambiguous.**
