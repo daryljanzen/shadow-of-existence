@@ -23,6 +23,17 @@ WHAT IT DOES NOT DO, stated because L8.0 forbids rigging: the pencil runs over A
   L8.4's verdict on that claim stands.  What is established is weaker and better posed.
 
 VERDICTS ARE ASSERTS.
+
+COMPUTES: the pencil identity r^3 + (f-1) alpha^2 r + 2 M alpha^2 SYMBOLICALLY, in alpha and M, with
+  no numeric parameter -- so the identity, the depressed member at f=1, the symmetry of the linear
+  coefficients, and V_eff = f hold for EVERY member of the family.
+SCOPE OF THE PINNED PARAMETER: the numerical block, and its assertions, run at ONE point of the
+  family -- ** the FORCED member alpha = 3 sqrt(3) M **, which is the Nariai condition itself and is
+  the only value at which the horizon cubic carries a double root.  ** That is not a sample: it is
+  the locus the claim is about. **  The discriminant leg beside it is symbolic in alpha and M and
+  states what happens away from that point -- 4 alpha^4 (alpha^2 - 27 M^2) for f=0, strictly negative
+  for f=1 and f=2 at every alpha -- so the alpha-dependence is carried in closed form and the pinned
+  value is where it vanishes, not where it was convenient.
 """
 import sympy as sp
 
@@ -40,7 +51,15 @@ assert sp.simplify(pencil - (r**3 + (f-1)*al**2*r + 2*M*al**2)) == 0
 print("  ** = r^3 + (f-1) alpha^2 r + 2 M alpha^2 **")
 
 print("\n  the three loci are three members of it:")
-loci = [(0, 'horizon cubic'), (1, 'turnaround  (DEPRESSED: linear term vanishes)'), (2, 'Euclidean null')]
+# ⌗ NAMED IN P07'S OWN VOCABULARY r3546.  The paper's sentence at CR_framework.tex:1021 calls the
+#   three loci the SEAM, the TURNAROUND and the LIFT; this file called them the horizon cubic, the
+#   turnaround and the Euclidean null.  ** Same three objects, and check_loci was right that only
+#   one of the three names matched: a receipt that names its objects differently from the sentence
+#   citing it cannot be checked against that sentence by anything but a reader. **  Both names are
+#   kept, the paper's first, because the receipt's own names say WHICH member of the pencil each is.
+loci = [(0, 'the SEAM  --  the horizon cubic, real character'),
+        (1, 'the TURNAROUND  --  DEPRESSED: the linear term vanishes, zero character'),
+        (2, 'the LIFT  --  the Euclidean null, imaginary character')]
 for fv, lab in loci:
     m = sp.expand(pencil.subs(f, fv))
     print(f"      f={fv}:  {m} = 0    <- {lab}")

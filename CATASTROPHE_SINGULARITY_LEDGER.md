@@ -1,7 +1,7 @@
 ---
 name: catastrophe-singularity-ledger
 kind: FORWARD
-current: r3517
+current: r3546
 job: The catastrophe / singularity-theory field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the r3505 overnight order named it explicitly: catastrophe ×54). `OWED` 622.
 sources: [cowork]
 ---
@@ -21,6 +21,65 @@ sources: [cowork]
 > bare — the catastrophe-theory fold and the GR bifurcation sphere are different objects that share a
 > word, and `D4_fold_scaling` already respects that guard.*
 
+
+## ⌗ THE LANDING TABLE — where each register stands against the corpus, checked r3546
+
+> **▣ THE `\ldg` GATHER FOR THIS LEDGER.** *Live prose only, `corpus/reach_baseline.py` (comments and
+> bibliography stripped, de-macroed), and **every term searched in the CORPUS's spelling rather than
+> this ledger's** — which is the r3527 rule, and it changed two rows below.*
+
+### ★★★ THE HEADLINE IS BETTER THAN THE LEDGER'S OWN BASELINE SAYS, AND BY ITS OWN INSTRUMENT FAILURE
+
+*The baseline table above files `fold` ×35 under ***homonym-dominated***, beside `manifold`, `unfold` and
+folding-as-a-verb.* ⇒ **Two of `P07`'s four are not homonyms at all.** *`P07` says, of the horizon
+polynomial's non-vanishing second derivative with the mass entering additively at first order:*
+***"a \emph{fold}, in the standard classification of one-parameter collisions"***, *and, of the second
+derivative equal to $-2(D-1)$,* ***"which is the condition for a fold"***. ⇒ ***So the field's central
+classification is LANDED, in the paper, in the field's own word*** *— and this ledger's baseline sorted
+it into the column a reader consults to find out what is absent.*
+
+⚠ **That is the `FIGURE_THEOREM` failure of r3527 in a third field: the ledger screened its own vocabulary
+against a corpus that uses the same word for four things, and the screen threw away the one occurrence
+that was the field's.** *A word-boundary count is not a reading, and the fix is the one that keeps
+working: read the hits.*
+
+### ⌗ THE TABLE
+
+| register | its paper | disposition |
+|---|---|---|
+| **`D4` the Nariai double root is a FOLD ($A_2$): $h=h'=0$, $h''=2\sqrt3\neq0$, the mass entering additively** | `P07` | ***LANDED, and in the field's own word.*** *`P07`: "a **fold**, in the standard classification of one-parameter collisions". Only the `\ldg` marker is missing* |
+| **`D4′` the surface gravity therefore vanishes as $\kappa\propto\sqrt{2M_c-2M}$ — exponent $\tfrac12$, flat across four decades** | `P07` | ***LANDED AS AN ARGUMENT, which is stronger than landing as a number.*** *`P07` draws the exponent FROM the collision type — "the square root is therefore dimension-independent, **as an argument from the collision type ought to be**" — so the paper has the implication and not merely the value* |
+| **`P02` the cycloid's turning points are Morse-NON-degenerate ($r''=\mp M\neq0$), so the turnaround is a maximum and not a cusp** | `P02` | ***LANDED, by name.*** *`Morse` ×1 corpus-wide and it is this: "By **Morse's lemma**, both are non-degenerate critical points"* |
+| **`p0` the order parameter is bounded, and is contrasted with a quartic (Landau/cusp) potential** | `p0` | ***LANDED.*** *"a quartic potential is unbounded; this order parameter is not" — the corpus's one deliberate reach toward a higher catastrophe, made in order to decline it* |
+| ⛔ **`KT1` NO CUSP ($A_3$) IS REACHABLE FOR ANY MASS, so the classification is COMPLETE and `P02`'s "not a cusp" is corpus-wide rather than local** | — | ***SUBSTANCE OWED, and it is the field's own verdict.*** *A triple root of $r^3-r+2M$ forces the fixed linear coefficient to zero ($-3a^2=-1$, contradiction), so no mass reaches $A_3$.* ⌗ **Checked in the corpus's terms, not this ledger's: `triple root` ×0, `catastrophe` ×0, `swallowtail` ×0, `structural stability` ×0, and `cusp` ×1 — which is `P15`'s FIGURE CAPTION about a coordinate artefact ("manufactures a cusp the smooth curve does not carry"), a different cusp entirely.** ⇒ *Nothing in seventeen papers says the fold is the end of it* |
+| **`Q5` Nariai is the singular point of the discriminant locus / the bifurcation set** | `P03` | ⚠ **PREMISE WRONG IN ITS WORDING, LANDED IN ITS OBJECT.** *`discriminant locus` ×0 and `bifurcation set` ×0 corpus-wide; and `P03`'s `discriminant` is $4-3r_0^2$, **of the slicing parameter**, not the horizon cubic's $\Delta=4-27(2M)^2$.* ⇒ ***Two different discriminants, and this row names the corpus's object with a term the corpus does not use and a formula from the other one.*** *The content is `P05`'s, where $\Delta=4-27(2M)^2$ is stated and its zero IS the two Nariai values* |
+| **`O3` the depressed cubic $r^3+pr+q$ is the VERSAL UNFOLDING of the $A_2$ singularity** | `P08` | **POINTER OWED — one word, and the object is already there.** *`P08` states "in depressed form $r^3+pr+q$ with $p=(E^2-1)\alpha^2$ and $q=2M\alpha^2$", which IS the two-parameter versal unfolding; `versal` ×0, `miniversal` ×0, `normal form` ×0 corpus-wide.* ⌗ *Naming it costs a clause and buys the field's whole apparatus — that the collision structure of the family is determined, not chosen* |
+| **`B0` `singular`/`singularity` ×600+ is the SPACETIME object and not a degenerate critical point** | — | **HELD, and correctly not in a paper.** *A reading discipline for whoever throws this field next, not a claim the corpus owes. It is the reason the reach figure is 14 and not 17* |
+| **the three CHECKED-NEGATIVE readings (`P04`, `P10`, `P14`)** | — | **HELD.** *`P10`'s turning/branch points are WKB and curvature homonyms; `P14`'s fold/codimension/Thom are generation-count, Dirac-submanifold and Thomson* |
+
+### ⌗ WHAT THIS GATHER FOUND
+
+***One substance debt, one pointer, one row wrong in its wording — and the headline landed all along.***
+
+⛭ **The pattern the first nine gathers found does not hold here.** *Those found bounds going unlanded;
+this field's bound — `KT1`'s impossibility — is the ONE thing owed, and everything else in the register
+is already in the papers in the papers' own words.* ⇒ ***A field thrown late at a corpus that had been
+working its content under other names lands high, and the debt is the STATEMENT OF COMPLETENESS rather
+than any result.*** *`P07` has the fold and the exponent; `P02` has the Morse classification; `p0`
+declines the quartic. What no paper says is that the list is closed.*
+
+⌗ **AND THAT DEBT IS A FENCE THAT STRENGTHENS, which is the shape `S9` and `H19` found in other fields.**
+*Unstated, a reader may wonder what happens at higher mass or in another regime. `KT1` answers it: **for
+no mass does the family reach $A_3$**, so the fold is not the case examined, it is the only case there
+is. That converts a worked example into a classification.*
+
+⚠ **`CH1` IS NOT THIS FIELD'S TO PLACE, AND IS PLACED.** *59 asked for it to be surfaced here; the
+Cartan gather at r3537 has since sited it — "`P14`'s `sec:` is the home; one clause".* ⇒ *What this
+gather adds is the negative: **`P14` is this field's third CHECKED-NEGATIVE**, so P14 is receiving from
+Cartan and from spectral and has nothing to take from catastrophe. Three fields converge on that
+paragraph and this is not one of them.*
+
+---
 
 ## ⛭ THE BASELINE, MEASURED FIRST
 

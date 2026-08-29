@@ -1,7 +1,7 @@
 ---
 name: algebraic-geometry-ledger
 kind: FORWARD
-current: r3518
+current: r3546
 job: The algebraic-geometry field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the r3505 overnight order: algebraic geometry ×57, discriminant ×28 / genus ×21). `OWED` 622.
 sources: [cowork]
 ---
@@ -16,6 +16,64 @@ sources: [cowork]
 > content is here and is receipted, but under `quadric`, `combinatorics`, and `complex-analysis` heads,
 > not as "algebraic geometry".*
 
+
+## ⌗ THE LANDING TABLE — where each register stands against the corpus, checked r3546
+
+> **▣ THE `\ldg` GATHER FOR THIS LEDGER.** *Live prose only, `corpus/reach_baseline.py`, and every
+> term searched in the CORPUS's spelling. **The distinction this field turns on is between an OBJECT
+> being in a paper and its NAME being there**, and it is not a quibble here: this bake's own thesis is
+> that the content is worked under other fields' labels.*
+
+### ★★★ THE BOUNCE IS THE RESULT, AND IT IS A CLEAN ONE
+
+*The forward predicted it: "the content is here and is receipted, but under `quadric`, `combinatorics`
+and `complex-analysis` heads, not as algebraic geometry."* ⇒ ***Measured, that prediction holds
+exactly.*** *`algebraic variety`, `scheme`, `Zariski`, `elliptic curve`, `Riemann surface`,
+`j-invariant`, `canonical bundle`, `plane cubic`, `discriminant locus`, `branch locus` — **every one
+×0 across seventeen bodies** — while the objects those words name are computed in five papers and
+carry running receipts.*
+
+⌗ **So this field's register is almost entirely LANDED, and what it is owed is almost entirely NAMES.**
+*That is a different debt from the one the first nine gathers found, and it is a smaller one — but it
+is not nothing, because a paper that computes a discriminant locus without saying so cannot be found
+by anyone looking for one.*
+
+### ⌗ THE TABLE
+
+| register | its paper | disposition |
+|---|---|---|
+| **the horizon cubic's discriminant $\Delta=4-27(2M)^2$ and its zero-locus = the two Nariai values** | `P05`, `P12`, `P03` | ***LANDED.*** *`P05` states $\Delta$ and its simple zero; `P12` carries $-4\alpha^4(27M^2-\alpha^2)$ vanishing at $\Lambda M^2=1/9$ with the isotropy jump $4\to6$* |
+| **the reducible cubic factors as line ∪ conic, and its SINGULAR POINT is Nariai** | `P03`, `P12` | ***LANDED, and in the field's own term.*** *`singular point` ×5 corpus-wide, and `P03`'s two are this; `P12` gives the factoring $(r-r_0)(r^2+rr_0+r_0^2-1)$ with the quadratic factor the fundamental ellipse* |
+| **the 3-sheeted branched cover, monodromy $=$ Galois $=S_3$, $\Delta$ not a square** | `P05` | ***LANDED, and freshly repaired.*** *r3528–r3530 swept 21 sites in seven papers so the corpus now says ONE thing about deck-vs-monodromy; this row would have been PART-LANDED three revisions ago* |
+| **the cross-ratio of the marked points, its equianharmonic collapse, $j=0$ / CM by $\omega$ kept apart from the horizon cover** | `P05` | ***LANDED, with its fence.*** *`equianharmonic` ×6 and `complex multiplication` ×1, both `P05`'s, and the paper's own "not here shown to be one thing" bound is intact* |
+| **`P09`'s Petrov speciality discriminant $I^3-27J^2$ — a SECOND discriminant, independent of the horizon cubic's** | `P09` | ***LANDED.*** *`speciality` ×11, all `P09`'s; the object is the self-dual Weyl operator's characteristic cubic and it is genuinely not the horizon cubic* |
+| ⚠ **`SP_S4` the two discriminants are the SAME ALGEBRAIC EVENT on different cubics** | `P09` ← spectral | **NOT THIS FIELD'S ROW.** *The spectral gather at r3542 holds it as `S4`, PART-LANDED.* ⇒ *Recorded here so the two ledgers do not both claim it and neither carries it — **this bake CREDITS and EXTENDS `SP_S4`, and the extension is that the two discriminants are the field's own subject, which makes the connection an algebraic-geometry statement rather than a coincidence of formulas*** |
+| ⛔ **`L8` the family is a PENCIL of plane cubics, and its three critical loci are three of its members** | `P07` | ***POINTER OWED, and sharply.*** *`P07` cites `\rcpt{L8_the_pencil}` in its own prose — and **the word "pencil" occurs in `P07` exactly once, inside that receipt key**. `pencil` ×6 in live prose is `p0`'s five (pencils of PLANES and QUADRICS) and `P03`'s one; `plane cubic` ×0.* ⇒ ***A receipt landed in a paper that has no word for what it establishes.*** ⌗ *And `P03`'s only statement on the matter — "NOT a pencil" — is in a `%` masthead, is about the reducible-plane-cubic sense, and is invisible to every instrument that reads bodies* |
+| **`genus` is TAXONOMIC corpus-wide, never the genus of a curve** | — | ⚠ **PREMISE WRONG, LANDED ANYWAY.** *The work order counted `genus` ×21 as this field's reach; all ~21 are the genus/species metaphor, glossed by `P02` at zeroth order as "the interval". **The correction is the finding** and it belongs on the record rather than in a paper* |
+| **`P07`'s `blow-up` is a CURVATURE blow-up, not a resolution of a singularity** | — | ⚠ **PREMISE WRONG, LANDED ANYWAY.** *`blow-up` ×1 corpus-wide and it is the spacetime homonym; **no algebraic-geometry blow-up occurs anywhere**, so the field's most characteristic operation is genuinely absent* |
+| **the nine CHECKED-NEGATIVE readings** | — | **HELD.** *`P06`'s `projective type` and `moduli-free` are genuine AG language CITED to `p0` and not worked there; `P16`'s `singular point` is an apparent pole; `p0` is negative for CURVE-AG while carrying substantial quadric content* |
+
+### ⌗ WHAT THIS GATHER FOUND
+
+***One pointer owed, two premises corrected, and every object landed.*** *No substance is owed by this
+field to any paper — which, across ten gathers, makes it the first register with no substance debt at
+all, and the reason is structural rather than creditable: **the objects were landed by other fields
+before this one was thrown.***
+
+⛭ **THE POINTER THAT IS OWED IS WORTH MORE THAN IT LOOKS.** *`L8_the_pencil` was, until r3537, the
+corpus's ONE unresolvable `\rcpt{}` key — cited by `P07` and registered nowhere.* ⇒ ***So the same
+structure was missing from the index AND missing from the paper's vocabulary, and the two absences have
+the same cause: nothing in the corpus was calling it a pencil.*** *The index half is closed. The paper
+half is one clause, and it buys the thing the receipt actually proves — that the three critical loci
+are not three facts but one family read at three values of its parameter.*
+
+⌗ **AND THE FIELD'S OWN BOUNDARY, stated plainly.** *An algebraic geometer reading this corpus would
+find a cubic surface's worth of work and no variety, no scheme, no Riemann surface and no blow-up. **The
+corpus does algebraic geometry of exactly one curve, thoroughly, and no algebraic geometry at all.***
+*That is a true sentence about the boundary and it is not a debt: nothing the corpus claims needs the
+apparatus it does not have.*
+
+---
 
 ## ⛭ THE BASELINE, MEASURED FIRST
 

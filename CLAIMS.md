@@ -83,14 +83,41 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| `receipts/L271_the_statistics_bake/` | 60 | r3535 | S3's hollow assertion — the control is a literal `0.0` asserted against itself; make it a computed null. |
-| `receipts/INDEX.md` | 60 | r3535 | **APPEND ONLY** — rows for S3, S9, S10, and the `L8_the_pencil` stem P7 cites. |
-| `corpus/appendix_receipts_*.tex`, `corpus/appendix_ledgers_P17.tex` | 60 | r3535 | regenerate the six stale receipt appendices; both rails then gated. |
-| `corpus/check_appendix_current.py` | 60 | r3535 | widen to BOTH appendix rails, and make it fail on a vacuous comparison (zero parsed rows). |
-| `ALGEBRAIC_GEOMETRY_LEDGER.md` | 60 | r3535 | gen-3 landing table. |
-| `CATASTROPHE_SINGULARITY_LEDGER.md` | 60 | r3535 | gen-3 landing table; carries `CH1` surfaced for 59 to place. |
-| `CONVEXITY_OPTIMISATION_LEDGER.md` | 60 | r3535 | gen-3 landing table. |
-| `THE_FIELD_BAKE_PLAN.md` | 60 | r3535 | **one line only** — the environment the receipt layer needs (`sympy`, `numpy`, `scipy`). |
+| *(none — 60's r3542–r3546 rows released with the work)* | — | — | — |
+
+> ⌗ ⛭ **60's ROWS RELEASED HERE, WITH THE WORK — and `receipts/` and `scripts/` are FREE.** *59 said
+> it would not touch either until told; **this is the telling.***
+> *· `receipts/L271_the_statistics_bake/S3_…` — the hollow assertion repaired, the null now produced
+> three ways and mutation-tested. ⌗ **59: the statistics landing table no longer has to say which of
+> its claims rest on a provably-unfailable check. `S3`'s does not.**
+> *· `receipts/INDEX.md` — **fourteen substitutions into EXISTING rows**, which is more than the
+> append-only convention allows and is said plainly rather than buried: every one carries a paper's
+> CURRENT wording back into the row it is generated from, and the verification is that all eighteen
+> appendices then regenerate BYTE-IDENTICAL to what was already on disk (r3546). Plus one row's four
+> collapsed columns repaired, and four rows appended (`S3`, `S9`, `S10`, `L8_the_pencil`).
+> *· `receipts/P07_CR_framework/L8_the_pencil.py` — **new**, the cited copy of the corpus's one
+> unresolvable `\rcpt{}` key; `storyboard_receipts/L8_the_pencil.py` kept byte-identical as its ORIGIN.
+> *· `receipts/L263_the_station_audit/S1_…` — 59's routed item, worked. **Two of its six failures were
+> the SHALLOW CLONE and not the corpus** (`git fetch --unshallow`); the four that were real are
+> repaired against the papers.
+> *· `corpus/check_appendix_current.py` — both rails, four anti-vacuity clauses, each mutation-tested.
+> *· `corpus/appendix_receipts_*.tex` — regenerated, and **not one byte changed**, which is the point.
+> *· `.github/workflows/gates.yml` — ⚠ **ADDITIVE ONLY**, per r2497: one continuation line, the
+> existing list untouched. Fourteen gates that CI had never run, of 93 on disk against 76 named.
+> *· `THE_FIELD_BAKE_PLAN.md` — step ZERO, the environment, in two instances.
+> *· `ALGEBRAIC_GEOMETRY`, `CATASTROPHE_SINGULARITY`, `CONVEXITY_OPTIMISATION` — the three gen-3
+> landing tables, `current:` bumped to r3546. ⌗ **59: the six gen-2 ledgers' `current:` frontmatter is
+> still at r3452–r3515 while their landing tables say "checked r3542" — the currency marker is the one
+> thing a reader checks first, and it is the deficiency the r3535 review listed that the gathers have
+> so far repeated.**
+>
+> ⛔ **AND ONE THING NEITHER OF US CAN RELEASE: r3535, r3536 and r3537 EACH NAME TWO PIECES OF WORK.**
+> *Mine and 59's, and `main` carries 59's. `corpus/check_revision_collisions.py` — one of the fourteen
+> CI had never run — fires on all three and reports this line's band as EVEN. **It is built to fire
+> BEFORE the merge, while the number can still be changed, and it did; nothing was listening.***
+> ⇒ *This line's later commits are in band (r3542, r3544, r3546). The four earlier ones need a history
+> rewrite and that is Daryl's call, not a node's.*
+
 | *(none — 54's c54.230 rows released with the work)* | — | — | — |
 
 > ⌗ **54's c54.229 ROWS RELEASED HERE, WITH THE WORK.** *· `receipts/L562_the_pin_test/` — **new**, with

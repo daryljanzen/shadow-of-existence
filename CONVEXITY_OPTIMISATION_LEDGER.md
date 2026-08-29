@@ -1,7 +1,7 @@
 ---
 name: convexity-optimisation-ledger
 kind: FORWARD
-current: r3519
+current: r3546
 job: The convexity / optimisation field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the r3505 overnight order: convexity ×143, constraint ×141). `OWED` 622.
 sources: [cowork]
 ---
@@ -13,6 +13,58 @@ sources: [cowork]
 > feasible region, a Lagrangian, a KKT condition) or a homonym (the **Hamiltonian/Dirac constraint** of
 > canonical gravity, the **gauge constraint**), because the answer decides whether the field bit at all.*
 
+
+## ⌗ THE LANDING TABLE — where each register stands against the corpus, checked r3546
+
+> **▣ THE `\ldg` GATHER FOR THIS LEDGER.** *Live prose only, `corpus/reach_baseline.py`, every term in
+> the corpus's spelling. **This is the shortest register of the eighteen — one bite — so the gather is
+> about whether that one bite lands, and it does not.***
+
+### ★★★ THE FIELD PREDICTED ITS OWN BOUNCE BEFORE IT WORKED, AND THE PREDICTION WAS EXACT
+
+*The forward, written before the reading: "the expected verdict is a BOUNCE — the field's own objects
+are not in the corpus; what shares its words is canonical-constraint and stationary-action work already
+owned elsewhere."* ⇒ ***Measured: `convex`, `convexity`, `concave`, `convex hull`, `epigraph`,
+`supporting hyperplane`, `subgradient`, `KKT`, `objective function`, `Hessian`, `argmin` — every one
+×0 across seventeen bodies.***
+
+⌗ **That is a practice worth recording beside the spectral bake's.** *A forward that commits to its
+verdict before the reading cannot be tuned to what the reading finds, and this one was not. **The
+reach figure — 1 WORKED of 17 — is the lowest of any field, and it is the honest number rather than a
+short one.***
+
+### ⌗ THE TABLE
+
+| register | its paper | disposition |
+|---|---|---|
+| ⛔ **`CX1` the Hubble tension IS A CONVEXITY STATEMENT: $\Lambda$CDM's $\chi^2(H_0)$ strictly convex with a unique argmin excluding 73, CR's flat with a degenerate Hessian whose argmin is a LINE including 73 — so the tension is a statement about the Hessian's RANK, not about a value** | `P15` | ***SUBSTANCE OWED, and it is the field's only bite.*** *`P15` carries the picture — "a steep **parabola** minimized near 67 and excluding the local value" against "CR's $\chi^2$ is **flat** in $H_0$" — and **carries it in a FIGURE CAPTION**: `parabola` ×1 corpus-wide and that is it. The body never says the two objectives differ in the RANK of their curvature, and `convex`/`convexity`/`Hessian` are ×0* |
+| ⛭ **and `P15` ALREADY HAS THE WORD** | `P15` | ***which makes the debt smaller and the omission stranger.*** *`degeneracy` ×12 in `P15`, and one of them is exactly this kind of object — "the degeneracy is **exact rather than approximate**, and it is a property of the statistic rather than of the size of the data", said of a scale-invariant residual.* ⇒ ***The paper has the concept, the vocabulary, and the picture, and does not join them over its own headline result.*** *What is owed is not an import from this field but one sentence in `P15`'s own idiom: the $H_0$ tension is dissolved by a degeneracy of the objective, not by a better fit* |
+| **`constraint` ×141 is the Hamiltonian/Dirac constraint of canonical gravity, not an optimisation constraint** | — | ⚠ **PREMISE WRONG, LANDED ANYWAY.** *The work order's "convexity ×143" is ×141 `constraint` plus two strays. `P07` ×25, `P10` ×31, `P12` ×20, `P13` ×16 are the ADM/Dirac constraints and the "problem of time"; `Lagrange multiplier` ×1 is the ADM shift; `saddle` ×1 is a path-integral saddle.* ⇒ ***The field's single largest apparent reach is one homonym, and naming it is the correction*** |
+| **`M2` `P15` minimises one derived ratio in the refit-bound** | `P15` | **HELD — and deliberately NOT counted.** *A bare minimisation with no convexity content of its own; counting it would have taken this field's reach from 1 to 2 by arithmetic rather than by reading* |
+| **the sixteen CHECKED-NEGATIVE readings** | — | **HELD.** *`p0` l.1061 is the sharpest: it explicitly **disclaims** a "chosen minimum" of a potential, which is the corpus declining this field's frame in its own voice* |
+
+### ⌗ WHAT THIS GATHER FOUND
+
+***One substance debt, one premise corrected, and a boundary that is a result rather than a gap.***
+
+⛭ **THE ONE DEBT IS THE HIGHEST-VALUE SINGLE CLAUSE IN THE THREE GEN-3 REGISTERS.** *`CX1` sits on the
+Hubble tension — the corpus's most externally-legible claim — and it changes what kind of claim that is.
+**"CR fits at any $H_0$ including 73" reads as a weaker result than "$\Lambda$CDM fits only near 67";
+"CR's objective is $H_0$-degenerate and $\Lambda$CDM's is not" reads as a structural difference between
+the two models.*** *Same numbers, and the second is what the receipts actually establish.*
+
+⌗ **AND THE SHAPE IS THE ONE `KT1` AND `CH1` HAVE.** *In all three the paper does the work and leaves
+the classifying step to the reader: `P07` computes the fold and does not say the classification is
+closed; `P14` derives finiteness and does not say flatness is forced; `P15` plots the two objectives
+and does not say what distinguishes them.* ⇒ ***Three fields, three papers, one habit — the corpus
+states results and declines to state what KIND of result they are.*** *That is a single editorial fact
+about the corpus, and it is the through-line of the gen-3 set.*
+
+⚠ **WHAT IS NOT CLAIMED:** *that convexity should be imported — it should not; the corpus needs no
+convex-analysis apparatus and this field's absence is correct. `CX1` is a READING of two $\chi^2$
+curves the corpus already computes, and lands as one clause in `P15`'s own language or not at all.*
+
+---
 
 ## ⛭ THE BASELINE, MEASURED FIRST
 
