@@ -60,6 +60,9 @@ if [ "${1:-}" = "--baseline" ] && [ -n "${2:-}" ]; then
 fi
 echo
 echo "  A gate failing here is not automatically this line's: check the delta, not the count."
-echo "  ⌗ And two of the 93 are not corpus facts at all: check_compile is UNRUN without pdflatex,"
-echo "    and check_receipts_run reports the age of a CACHE.  Counting them is counting the container."
+echo "  ⌗ check_receipts_run reports the age of a CACHE, not a corpus fact -- counting it is"
+echo "    counting your own container."
+echo "  ⛔ check_compile is the OPPOSITE and r3550-r3552 had it backwards: without pdflatex it is"
+echo "    UNRUN, and UNRUN is a different thing from green AND from harmless.  With the toolchain"
+echo "    present it FAILS on main.  Install TeX or report it unmeasured; never report it benign."
 [ "$F" -eq 0 ]

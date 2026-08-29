@@ -85,7 +85,8 @@ r3164–r3176 were already thin when `622` recorded its list as "complete"; `r34
 > *With those present all 47 newest-bake receipts run and print `ALL PASS`.* ⌗ **And one gate cannot
 > run at all without a TeX toolchain: `corpus/check_compile.py` needs `pdflatex`, so on a container
 > without it that gate is UNRUN rather than green — which is a different thing and must be reported
-> as the different thing.**
+> as the different thing.** ⚠ *And UNRUN is not harmless: with the toolchain present it fails on
+> main (59, r3555). **Install TeX or report the gate as unmeasured; do not report it as benign.***
 >
 > ⚠ ***The general rule this is an instance of: an environment failure and a corpus failure are
 > indistinguishable from the exit code, and the environment is the one you can check in a second.***
@@ -129,10 +130,19 @@ r3164–r3176 were already thin when `622` recorded its list as "complete"; `r34
 > — 93, and say so
 > ```
 >
-> ⚠ ***AND TWO OF THE NINETY-THREE ARE NOT CORPUS FACTS AT ALL.*** *`check_compile` needs `pdflatex`
-> and without it is **UNRUN**, which is a different thing from green and has to be reported as the
-> different thing; `check_receipts_run` reports the age of a **cache**.* ⇒ *A sweep that counts those
-> two as failures is counting its own container.* ⌗ **This is the same rule as the two lines above it,
+> ⚠ ***ONE OF THE NINETY-THREE IS NOT A CORPUS FACT: `check_receipts_run` reports the age of a
+> CACHE***, *so it fails whenever the tree digest has moved and a sweep that counts it is counting
+> its own container.*
+>
+> ⛔⛭⛭ **AND `check_compile` IS THE OPPOSITE, WHICH I HAD BACKWARDS — corrected r3556.** *r3550 and
+> r3552 filed it beside `check_receipts_run` as "not a corpus fact", on the strength of it raising
+> `FileNotFoundError: 'pdflatex'` in this container **and in CI**.* ⇒ ***59 has `pdflatex` installed
+> and reports it a REAL failure on main.*** *So the toolchain's absence was not making the gate
+> meaningless — it was **hiding a live compile failure from two of the three places anyone looks**.*
+> **UNRUN is a different thing from green AND a different thing from harmless: it is the absence of
+> a measurement, and the measurement, once taken, came back red.** ⌗ *That is this section's own
+> rule turned around: I had been reading "the container cannot answer" as "there is nothing to
+> answer", which is the more comfortable of the two readings and was the wrong one.* ⌗ **This is the same rule as the two lines above it,
 > for the third time in one session: an environment failure and a corpus failure are indistinguishable
 > from the exit code.**
 
