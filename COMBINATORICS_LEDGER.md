@@ -67,6 +67,53 @@ sources: [cowork]
 
 # THE COMBINATORICS LEDGER — Lane 8
 
+## ⌗ THE LANDING TABLE — where each register stands against the corpus, checked r3525
+
+> **▣ THE `\ldg` GATHER FOR THIS LEDGER.** *Each register tested against the seventeen paper bodies as
+> they stand. Dispositions: **LANDED** (substance in a paper; only the `\ldg` marker is missing) ·
+> **SUBSTANCE OWED** · **META — NOT FOR A PAPER** (routed to stay here, deliberately) · **OPEN**.*
+
+### ⌗ THE HEADLINE, AND IT IS THE OPPOSITE OF THE FIGURE-THEOREM LEDGER'S
+
+***This lane's physics is landed, and landed well.*** *`L8.2`/`L8.3`'s result is `P14 sec:twofactors`,
+written for it at `r1161`; the seventh face is `p0 sec:unification`'s "one circle"; the marriage's
+**on-it versus tangent-to-it** is in P1, P3, P7 and p0; **`D₆ = S₃ × ℤ₂`** and the **gauged/global**
+arrangement run through eight papers; the `∛2` is banked in P7 with its receipt; and the two late
+additions **also** landed — `L8.4`'s null condition met exactly three times is in P7
+`sec:lift-initial-rate` **and annotated on `fig:F-triptych` panel (b)**, and `L8.5`'s third energy
+$E^2=2$ is in P7 at the same site. *Three papers already name this ledger in prose (P3, P12, P14) and p0
+now carries the first `\ldg` marker.*
+⇒ ***The debt here is pointers, not substance — which is what a completed lane should look like, and it
+is the contrast that makes the figure-theorem ledger's eleven owed registers legible as a debt rather
+than as the normal state.***
+
+### ⌗ THE TABLE
+
+| register | disposition | where it stands |
+|---|---|---|
+| **L8.2 the sorting** · **L8.3 the marriage** — two relations to one circle, on it and tangent to it; the product direct because the relations are independent | **LANDED** | `P14 sec:twofactors`, written for this lane at r1161. **Pointer owed** |
+| **the seventh face — "one circle"** | **LANDED** | `p0 sec:unification`. **Pointer owed** |
+| **$D_6=S_3\times\mathbb{Z}_2$, gauged chirality / global flavour** | **LANDED** | eight papers carry it. **Pointer owed at the sites that rest on the count** |
+| **L8.1-h the $\sqrt[3]{2}$** — one factor of two inside one cube root, exact for every $M,\alpha$; the tie to a horizon *root* Nariai-only | **LANDED** | P7, receipt `P07_cube_root_two_is_the_2M_over_M`. **Pointer owed** |
+| **L8.4 the three critical values of $f$** — the null condition $|\dd r/\dd s|=1$ met exactly three times, at two loci | **LANDED** | P7 `sec:lift-initial-rate`, and annotated on `fig:F-triptych` panel (b) with the cubic family $f(f-2)=0$ spelled out. **Pointer owed** |
+| **L8.5 the third energy** $E^2=2$ | **LANDED** | P7, same site |
+| **L8.4's own correction** — the original claim ($f\in\{0,1,2\}$ are one three) is not merely undecided but **wrong about which three the lap carries**; the turnaround is *not* among them | **META — NOT FOR A PAPER** | a paper presents one state. The corrected claim landed; the record of the correction is the ledger's and stays here |
+| **L8.0 the discriminator** · the four verdict shapes · **the indexing rule** (*the verdict is a property of the CLAIM, not of the PAIR*) | **META — NOT FOR A PAPER, by the lane's own routing** | `THE_METHOD` §7: *"which of the corpus's numbers are one number is a statement about the **corpus**, not about the world."* **This is the largest body of content in the file and it is correctly in no paper.** A zero here is a finding, not a gap |
+| **L8.1 the number audit, seventeen verdicts** — the 3, the 6, the 12, the 2, the 30/60, the $\sqrt3$, the $2\alpha$, the 2:1 lift | **META — NOT FOR A PAPER** | same routing. The individual counts are in the papers that own them; *which of them are one number* is not a paper's claim |
+| **L8.1-e the 120 — NO, proved twice over** | **META — NOT FOR A PAPER** | a proved negative that stops a false unification. It guards the corpus from the inside; it is not a result a paper delivers |
+| **⛔ THE GUARD** — naming the combinatorics must not undo P5's `rem:a2-distinct`, **in either direction**: *"not a realised colour isometry" is not "a meaningless coincidence"* | **LANDED as the guard it protects** | `rem:a2-distinct` stands open in P5, which is exactly what the guard requires. **No pointer owed — a marker here would be the marker arguing with the remark it protects** |
+| **L8.1-h(C) the UNDECIDED** | **CLOSED (r3097)**, `PO-19` struck | closed by derivation, not by shrug: both the sceptical and the credulous answer were wrong in the event |
+
+### ⌗ WHAT THIS GATHER FOUND
+
+***Nothing owed in substance.*** *Every physics register of this lane is in a paper, including both
+additions made two thousand revisions after the lane closed. The remainder is `META`, routed here on
+purpose at `r1161`, and it is the majority of the file.*
+⇒ ***So this ledger's row in the reference matrix will be short and mostly small numbers, and that is
+the honest reading of a lane whose result was placed properly the first time — not a thin bake.***
+
+
+
 > **⌗ RE-READ AGAINST c54.163 AND DECLARED CURRENT r2395.** *The fork changed **none of the four field-bake
 > archives** in the c54.153→c54.163 span, so the question was again* ***"did anything the span produced
 > bear on what this bake concluded"*** *rather than "what moved in the file". **The span produced two
