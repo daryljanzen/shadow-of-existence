@@ -2238,3 +2238,47 @@ COHERENCE ACROSS k; CR lacks it, and PO-13's even-peak/amplitude residual is its
 amounts). The diagnosis is a physical prediction: CR's acoustic peak PHASES should be k-incoherent relative
 to ΛCDM's, testable wherever the acoustic phase is measured across scales. Position +7% and the q~3 Φ turning
 point (r3532) stand as separate results. The projection-map layer is untouched.
+
+---
+
+## r3545 — THE PHASE-INCOHERENCE CURVE q=1..6: control FLAT, CR drifts to ~π (the shape, before data)
+
+**Daryl's ship:** state the shape before going looking. The signature is that the dynamical acoustic-phase
+residual (accumulated − WKB clock) is CONSTANT in k for a radiation-driven cosmology and DRIFTS with k
+without one -- a shape, not an offset, so it survives calibration the way the interior decay minimum does.
+Extend r3544's 3 points to the full range. STACKPERT=1 GSRC=1 HIER KCONT, NK=1100 LMAXL=2000, velocity
+quadrature, both arms. Amplitudes |X| at recomb healthy across all q (CR 0.25-0.68, CTL 0.60-0.93 -- NOT
+damping-tail noise, so the phase is reliably extractable to q=6).
+
+| q | CR residual/pi | CTL residual/pi | CR−CTL |
+|---|---|---|---|
+| 1 | 0.245 | 0.254 | −0.009 |
+| 2 | 0.581 | 0.196 | 0.384 |
+| 3 | 0.758 | 0.206 | 0.552 |
+| 4 | 0.858 | 0.204 | 0.655 |
+| 5 | 0.926 | 0.227 | 0.698 |
+| 6 | 0.995 | 0.235 | 0.760 |
+
+(q=1,2,3 reproduce r3544's 0.244/0.580/0.758 exactly -- consistency check passed.)
+
+**⊘ CONTROL IS FLAT.** Slope = −0.000/pi per q, spread 0.058pi across q=1..6, locked at ~0.22pi. The
+radiation-driven acoustic phase shift is constant across scales -- the textbook lock, now measured on this
+instrument over six peaks. Start phases also locked (~1.15pi all).
+
+**⊘ CR DRIFTS to a half-cycle.** Monotonic 0.245 → 0.995pi. At q=1 it MATCHES the control (−0.009pi
+difference -- starts locked); by q=6 it has drifted to ~pi, a FULL half-cycle off. The drift is CONCAVE /
+decelerating early (increments 0.336, 0.178, 0.100 for q=1→4) then settles to a slow steady climb (~0.068/pi
+per q at q=4→6). So: NOT linear (concave), and NOT a hard plateau either -- it keeps climbing slowly past
+q=4. Start phases locked at exactly 1.000pi for every mode (spread 0.000), so the drift is purely dynamical,
+confirmed across all six modes.
+
+**⇒ The shape is settled: FLAT (control) vs a CONCAVE drift reaching ~pi by q=6 (CR).** This is what to look
+for in data and it is calibration-robust: a k-DEPENDENT acoustic phase residual (drift) is the CR signature
+against a k-CONSTANT one (any radiation-driven cosmology). The even peak (q=2) sits at the steep part of the
+drift (0.58pi vs the control's locked 0.20pi, a 0.38pi departure) -- which is why the parity/even-peak
+suppression is its most visible imprint, but the prediction is the whole curve, not one peak.
+
+The measured prediction for data: **CR predicts the acoustic-peak phases DRIFT with multipole (reaching a
+half-cycle by the sixth peak) where ΛCDM holds them locked.** The place to test it is any dataset resolving
+individual acoustic-peak positions/phases across the full comb -- the peak-position residuals vs a
+radiation-driven template are the observable. r3545 gives the template to difference against.
