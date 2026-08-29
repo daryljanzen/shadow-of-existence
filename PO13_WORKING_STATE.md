@@ -2065,3 +2065,64 @@ suppression = odd-even alternation stands (r3538, a measured identity). But "= s
 WITHDRAWN as quantitatively false. Open: the actual source of the 2x effective even-peak suppression.
 Position +7% and the q~3 Phi turning point (r3532, converged, banked) stand unchanged -- the turning point
 is a separate, surviving result and is untouched by this refutation.
+
+---
+
+## r3541–r3542 — DRAG ISOLATED AND EXONERATED: the even-peak suppression is NOT in the baryon Euler equation
+
+**Daryl's ship:** "Isolate the drag. It's the only arm-difference left in the baryon Euler equation...
+this either finds it or the equation doesn't contain it." Two measurements.
+
+### Test 1 — the drag integral (r3541, po13_dragint.py, on the existing dumps)
+Integrate the oscillator friction coefficient **D = H·R/(1+R)** over the sub-horizon oscillation history
+to recombination, matched acoustic phase, q=1,2,3. R identical; the ONLY arm-difference is H -- CR's
+geometric (radiation-free) rate vs the control's radiation-included one.
+
+| peak (q) | ∫D dη CR/CTL | ⟨D⟩phase CR/CTL | ⟨D⟩eta CR/CTL | H_entry CR/CTL |
+|---|---|---|---|---|
+| 1 | 0.940 | 0.815 | 0.820 | 0.476 |
+| 2 | 0.864 | 0.824 | 0.828 | 0.247 |
+| 3 | 0.843 | 0.827 | 0.831 | 0.170 |
+
+**Drag ratio ~0.82 (<1 in every metric).** CR's geometric H is much lower early (H_entry ratio 0.48→0.17
+-- radiation is what makes H large at high z, and CR has no radiation era), so CR experiences LESS drag.
+The drag FIGHTS the even-peak suppression, it does not cause it -- exactly Daryl's prediction. (The 2x must
+therefore be even larger than measured, since the drag opposes it.)
+
+### Test 2 — the causal drag swap (r3542, DRAGLEAF flag)
+Force CR's drag/damping H onto the control's (leaf, radiation-included) rate while restoring, forcing and
+Phi's own evolution stay geometric. STACKPERT=1 GSRC=1 HIER KCONT NK=620.
+
+| config | even/odd 2P2/(P1+P3) | l₁/l_A | P1/P2 | P1/P3 |
+|---|---|---|---|---|
+| **GATE** control DRAGLEAF=0 | 0.6236 | 0.7300 | 2.254 | 2.363 |
+| **GATE** control DRAGLEAF=1 | 0.6236 | — | — | — |
+| CR DRAGLEAF=0 (geometric drag) | 0.3510 | 0.6499 | 4.094 | 2.551 |
+| CR DRAGLEAF=1 (control's H drag) | 0.3433 | 0.6499 | 4.219 | 2.627 |
+
+**GATE PASS: control DRAGLEAF 0 vs 1 byte-identical (Dl maxabsdiff = 0.0)** -- Hl_of≡Hc_of on the control,
+so the flag is a provable no-op there; the CR effect is real (P1/P2 moved 4.094→4.219, flag is active).
+
+**⊘ RESULT — DRAG EXONERATED.** Forcing the control's exact drag H into CR moves even/odd 0.3510 → 0.3433:
+−0.008, i.e. −3% of the way to the control's 0.62, and the WRONG way (slightly MORE suppressed, as more
+damping should). Position unchanged (0.6499 both -- drag doesn't set phase). CR keeps its ~0.34 even/odd
+even with the control's own drag. The drag is not the cause.
+
+### ⊘⊘ THE ELIMINATION IS COMPLETE — every term in the baryon Euler oscillator is measured out
+`S'' + (H R/(1+R)) S' + k² c_s² S = forcing`:
+- **R** — identical in both arms by construction (same Ω_b h², z_rec). Out.
+- **Φ** — well-integral offset ratio 0.77–1.10, not 2 (r3540). Out.
+- **Drag (H)** — ratio 0.82 and fighting; the control's H forced in moves even/odd 0.351→0.343, the wrong
+  way and by nothing (r3541–r3542). Out.
+
+**So the 2× even-peak suppression is NOT in the oscillator equation at all.** This is a result reached by
+DIRECT MEASUREMENT and ELIMINATION, not by guessing. It narrows the search to three places outside the
+baryon Euler equation: the **transfer**, the **projection**, or the **initial conditions** -- a much
+smaller space than the arc started in.
+
+**⇒ NEXT (Daryl's order): the initial conditions first.** CRAMP=seam (the k-dependent seam IC) was the only
+lever in the whole arc that landed P1/P3 EXACTLY (2.277 vs 2.277) while missing P1/P2 -- an IC that gets the
+odd relation right and the even one wrong points straight at this residual. ICs set each mode's starting
+phase, which decides whether it arrives at recombination in compression or rarefaction. Caution on the
+record: seam moved the POSITION last time (older composition) -- report position every run; if it lands
+even/odd but moves position off, that is the same coupled trade, a swap not a solution.
