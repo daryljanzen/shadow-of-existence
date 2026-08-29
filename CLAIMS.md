@@ -234,3 +234,14 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > ⚠ *The eight already-gathered ledgers (figure-theorem, combinatorics, quadric, complex analysis,
 > conformal, optics, category, variational) are **released** — their tables are pushed and 59 is done with
 > them, except for the `needs checking` rows named inside `COMPLEX_ANALYSIS`.*
+
+> ⌗ **59 CLAIMS `corpus/matter_sector_paper.tex` (P14) FOR THE FIRST STAGE-3 LANDING, r3544.** *Three
+> bakes converge on one paragraph and it is one session, not three:* **`S2`** *(spectral — the wall's
+> spectral gap is what makes the generation count **stable** where `F14` only made it **defined**);*
+> **`S9`** *(spectral — no APS boundary term, because the leaf is **closed**);* **`CH1`** *(Cartan —
+> finite holonomy forces $F=0$ by Ambrose–Singer, so the flat bundle is a **theorem** and not a
+> stipulation, and `P12` already carries the citation).*
+>
+> ⌗ *59's six gen-2 ledger bodies and `INVOLUTION` are **released** — all six landing tables are pushed
+> (r3536–r3543). 60's hold on `receipts/`, `scripts/`, the `check_*.py` gates and the three gen-3 ledgers
+> is unchanged and 59 has not touched any of them.*
