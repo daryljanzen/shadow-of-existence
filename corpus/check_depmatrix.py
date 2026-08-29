@@ -148,6 +148,47 @@ def main():
         print('         against a script.  Harmonise fig:dependency-structure.')
         return 1
     print('  The dependency figure matches too.')
+
+    # THE FOURTH GRAIN.  The ledger block is the same claim in two more places
+    # (P7 tab:ledger-block and the HTML companion), and all three earlier grains had
+    # drifted before this gate could see them.  Gated from the start rather than after.
+    # The counts come from depmatrix.py, the SAME generator the matrix uses -- this
+    # gate must not carry a second implementation of the count it is checking.
+    out = subprocess.run([sys.executable, '-W', 'ignore', GEN], cwd=HERE,
+                         capture_output=True, text=True).stdout
+    want = {}
+    for ln in out.split('\n'):
+        m = re.match(r'^\\textsf\{([a-z ]+)\} &(.*?)\\\\\s*$', ln)
+        if m:
+            want[m.group(1)] = [c.strip() for c in m.group(2).split('&')]
+    if not want:
+        print()
+        print('  [FAIL] the generator emitted no ledger-block rows -- it cannot be compared,')
+        print('         and a check that compares nothing is not a check.')
+        return 1
+    i = t.find('\\label{tab:ledger-block}')
+    if i < 0:
+        print()
+        print('  [FAIL] tab:ledger-block is not in P7. The block generates but does not print.')
+        return 1
+    seg = t[max(0, i - 9000):i]
+    bad = []
+    for k, w in want.items():
+        m = re.search(r'\\textsf\{' + re.escape(k) + r'\} &(.*?)\\\\', seg)
+        if not m:
+            bad.append((k, '(row absent)', ' '.join(w))); continue
+        got = [c.strip() for c in m.group(1).split('&')]
+        if got != w:
+            bad.append((k, ' '.join(got), ' '.join(w)))
+    if bad:
+        print()
+        print(f'  [FAIL] the LEDGER BLOCK disagrees with the markers in {len(bad)} row(s):')
+        for k, g, w in bad:
+            print(f'         {k}: table [{g}] vs source [{w}]')
+        print('         Re-run scripts/depmatrix.py, refresh tab:ledger-block and the HTML.')
+        return 1
+    tot = sum(int(c) for w in want.values() for c in w if c.isdigit())
+    print(f'  The ledger block matches too ({tot} markers, {len(want)} ledger rows).')
     print()
     return 0
 

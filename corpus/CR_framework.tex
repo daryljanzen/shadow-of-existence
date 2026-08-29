@@ -1431,6 +1431,42 @@ P16 \; cosmogenesis & 2 & 3 & 3 & 1 & 1 & 3 & 12 & 7 & 4 & 3 & 1 & 1 & 4 & 3 & 1
 % citation change, and harmonise fig:dependency-structure's feeds and edges to match.
 \end{table}
 
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{r|ccccccccccccccccc}
+ & \multicolumn{17}{c}{\footnotesize\emph{$\cdots$ is drawn on by (paper) $\to$}}\\[1pt]
+\footnotesize\emph{ledger} & P1 & P2 & P3 & P4 & P5 & P6 & P7 & P8 & P9 & P10 & P11 & P12 & P13 & P14 & P15 & P16 & p0\\
+\hline
+\textsf{algebraic geometry} & . & . & . & . & . & . & . & . & . & . & . & . & . & . & . & . & .\\
+\textsf{cartan holonomy} & . & . & . & . & . & . & . & . & . & . & . & 1 & . & 2 & . & . & .\\
+\textsf{catastrophe singularity} & . & . & . & . & . & . & . & . & . & . & . & . & . & . & . & . & .\\
+\textsf{category theory} & . & . & . & . & 1 & . & . & . & . & . & . & 1 & . & . & . & . & 1\\
+\textsf{combinatorics} & . & . & 1 & . & . & . & 2 & . & . & . & . & . & . & 1 & . & . & 1\\
+\textsf{complex analysis} & . & 1 & . & . & 1 & . & . & . & . & . & . & 1 & . & . & . & 1 & .\\
+\textsf{conformal geometry} & . & . & 1 & . & . & . & . & . & . & . & . & . & . & . & . & . & 1\\
+\textsf{convexity optimisation} & . & . & . & . & . & . & . & . & . & . & . & . & . & . & . & . & .\\
+\textsf{functional analysis} & 1 & . & . & . & . & . & . & . & . & 1 & . & . & . & . & . & . & .\\
+\textsf{harmonic analysis} & . & . & 1 & 1 & . & . & . & . & . & . & . & . & . & . & . & . & .\\
+\textsf{involution real forms} & . & . & . & . & . & . & . & . & . & . & . & . & 2 & . & . & . & .\\
+\textsf{optics lensing} & . & . & . & . & . & . & 2 & . & . & . & . & . & . & . & 1 & . & .\\
+\textsf{quadric geometry} & . & . & 1 & . & 1 & . & . & . & . & 1 & . & . & . & . & . & . & 2\\
+\textsf{representation theory} & . & . & 2 & . & . & . & . & . & . & . & . & . & . & 1 & . & . & .\\
+\textsf{spectral theory} & . & . & 1 & . & . & . & . & . & 1 & . & . & . & . & 2 & . & . & .\\
+\textsf{statistics inference} & . & . & . & 1 & . & . & . & . & . & . & . & . & . & . & . & . & .\\
+\textsf{variational} & . & . & . & . & . & . & . & . & 1 & 1 & . & . & . & . & . & . & .\\
+\textsf{figure theorem} & . & . & . & . & . & . & 1 & . & . & . & . & . & . & . & . & . & 3\\
+\end{tabular}}
+\caption{\emph{The worked mathematics the corpus draws on.} Rows are the programme's knowledge ledgers---seventeen field bakes and the figure--theorem bake---and entries count \ldgmarker\ markers, one per claim in that paper resting on that bake. Read beside Table~\ref{tab:dependency-matrix}, a column gives a paper's own sources and then the mathematics under them. \emph{A zero is a finding rather than a gap}: a field that legitimately gave a paper nothing must be legible as such, and each ledger's landing table carries the reason.}
+\label{tab:ledger-block}
+% MAINTENANCE: rows recomputed from source by scripts/depmatrix.py, which reads the ledger set from
+% corpus/ledgers_registry.md at run time -- never hard-code the row count, more fields are queued.
+\end{table}
+
+
 \begin{theorem}[Collapsed matter must become a universe]\label{thm:cosmogenesis}
 On the augmentation of Theorem~\ref{thm:augmentation-p7}, gravitational collapse cannot terminate; it continues as a cosmology. The limiting null direction of any collapse horizon \textup{(F1)}, reassigned on the forced foliation \textup{(F5)} by a foliation-preserving morphism \textup{(F3, F4)}, is the fundamental timelike congruence of a Schwarzschild--de~Sitter representation of the same ontological layer; its cosmological member is fixed to the Nariai configuration \textup{(F3)}, its evolution is the $\sinh^{2/3}$ law of flat $\Lambda$CDM, and the collapse horizon $\mathcal{H}^+$ and the de~Sitter cosmological horizon $\mathcal{H}_c^{+}(p)$ are one ontological layer under distinct causal assignments \textup{(Theorem~\ref{thm:null-boundary})}, the $S^3$ family of reassigned horizons being that congruence. The completion of collapse is therefore not an interior curvature singularity---which no finite cosmic layer ever reaches \textup{(F1, F2)}---but the finite-curvature cosmological seam: the future of the collapsed matter \emph{is} an expanding universe.
 \end{theorem}
