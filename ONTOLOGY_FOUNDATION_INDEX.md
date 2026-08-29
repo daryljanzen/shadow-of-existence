@@ -197,6 +197,75 @@ the ontology from the load-bearing pieces, never "because Daryl says" — is exa
 
 ---
 
+## ⌗ THE CROSS-PAPER JOINS — claims no single paper owns, added r3591 by 59 from the field-bake gathers
+
+> **▣ WHY THEY ARE HERE AND NOT IN A PAPER.** *Each of these says how two or more corpus pieces stand to one
+> another. **Both halves of every one are already in the corpus, in their own papers, correctly**; what is
+> absent is the sentence identifying them — and a paper that stated it would be claiming a relation it does
+> not own. `K4`'s span was landed here at `r1895` for exactly this reason and is the precedent.*
+> ⌗ ***The failure this prevents is specific: the r3164 Cartan bake computed one holonomy, treated holonomy
+> as one topic, and mistook a second object for an opening in the first.***
+
+### ⛭ TWO HOLONOMIES, NOT ONE — `C10`, Cartan/holonomy bake
+
+| bundle | order | group | its work |
+|---|---|---|---|
+| the **residue pairing** — `P05`, `P07` | **24** | $S_4=W(A_3)=W(\mathfrak{so}(6,\mathbb{C}))$ | closes the substrate's Weyl group |
+| the **wall monodromies** with the hinge 3-cycle — `P14` | **81** | $3^4$, a finite 3-group | supplies colour's selection rules |
+
+⇒ ***Different groups, different bases, different work, sharing only a factor of three.*** *Both are in the
+corpus and no paper says they are two. **The bake that treated them as one computed the first and read the
+second as an opening in it**, which is the concrete cost of the missing sentence.*
+
+### ⛭ THREE COMPACTNESS STATUSES ON THREE SPACES — `F15`, functional-analysis bake
+
+| space | status | why | where |
+|---|---|---|---|
+| the **substrate** $\mathrm{dS}_5=SO(5,1)/SO(4,1)$ | **not compact** | topologically $\mathbb{R}\times S^4$ | `P06` |
+| the **Wick face** | **compact** | the signature change | `P13` |
+| the **leaf** | **compact, and closed** | the slicing | `P14` |
+
+⇒ ***`P13` names the Atiyah–Hirzebruch obstruction's load-bearing hypotheses as "compactness and a continuous
+isometry", and the three spaces answer that hypothesis differently.*** *Set side by side the pattern is the
+argument: **the obstruction bites where the space is compact and the isometry continuous, and the corpus's own
+opening is exactly where one of those fails.** No paper sets them side by side.
+
+### ⛭ ONE FUNCTOR, THREE PROPERTIES, THREE PAPERS — `K2`, category bake
+
+*$\Psi$ taking a vantage to the geometry it describes is a functor, and its three functorial properties are
+not three facts about it but **three companion papers**: what it hits is `P09`'s range theorem, what it
+identifies is the quotient `P05` computes, and where it fails to be faithful is the designation freedom `P03`
+carries.* ⌗ ⚠ ***And the multiplicity is dimension-conditioned***: *"three cuts, one geometry" is a fibre
+multiplicity of $D-1$ — four-to-one at $D=5$, and **from $D=6$ not a finite multiplicity at all**, because
+there is no fold to read. **A dimension-conditioned multiplicity is new content rather than a renaming**, so
+that bake's own "census pass — zero" close is reopenable; it is recorded as reopenable and not reopened.*
+
+### ⛭ TWO SPECTRAL GAPS, TWO JOBS — `S3`, spectral bake
+
+*The tower's lowest frequency is $\mu_2=\sqrt6$ with no zero mode and no soft region, so **the infrared is
+regulated for free while the ultraviolet is untouched**: `P07`'s own words are that this construction "has no
+infrared problem to solve and an ultraviolet problem every interacting field theory has". **That IR regulation
+is a spectral gap.*** *The wall's gap — the full asymptotic mass separating its bound modes from the continuum,
+landed in `P14` at `r3545` — is a second one, doing a different job: it makes the generation count **stable**
+rather than merely defined.* ⇒ ***Two gaps, two jobs, and neither paper references the other.***
+
+### ⛭ NARIAI AND PETROV TYPE D ARE ONE ALGEBRAIC EVENT — `S4`, spectral bake
+
+*Both are a discriminant vanishing: the horizon cubic's at Nariai, and the speciality invariant $I^3-27J^2$ at
+Type D. **Two cubics, two discriminants, one kind of event** — `P09` carries the speciality invariant and
+eleven papers carry the double root, and the identification is in neither.*
+
+### ⛭ THE CYCLOID IS BAND-LIMITED, AND THAT FORCES THE CLAIM `P02` ARGUES FOR — `H21`, harmonic bake
+
+*$r(z)=M(1+\cos z)$ read on $\mathbb{R}/2\pi\mathbb{Z}$ has Fourier content of exactly two terms, a constant
+and **one** harmonic: **band-limited to $\lvert k\rvert\le1$**, the simplest non-constant periodic function
+there is. **A single harmonic has exactly two critical points and they are of identical character by
+construction** — which is `P02`'s central structural claim, reached from the other side.* ⌗ *`P02` proves it
+from $r''=-(r-M)$ and `r3583` added the Thales reading; the harmonic reading is a third route to the same
+place, and three independent routes to one claim is worth recording as such.*
+
+---
+
 ## 0. GLOSSARY — load-bearing geometric terms (hold these exactly)
 
 > **⛭ THE CORPUS-WIDE CANON — symbols as well as terms.** A symbol or term used in more than one paper is
