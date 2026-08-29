@@ -83,6 +83,14 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
+| `receipts/L271_the_statistics_bake/` | 60 | r3535 | S3's hollow assertion — the control is a literal `0.0` asserted against itself; make it a computed null. |
+| `receipts/INDEX.md` | 60 | r3535 | **APPEND ONLY** — rows for S3, S9, S10, and the `L8_the_pencil` stem P7 cites. |
+| `corpus/appendix_receipts_*.tex`, `corpus/appendix_ledgers_P17.tex` | 60 | r3535 | regenerate the six stale receipt appendices; both rails then gated. |
+| `corpus/check_appendix_current.py` | 60 | r3535 | widen to BOTH appendix rails, and make it fail on a vacuous comparison (zero parsed rows). |
+| `ALGEBRAIC_GEOMETRY_LEDGER.md` | 60 | r3535 | gen-3 landing table. |
+| `CATASTROPHE_SINGULARITY_LEDGER.md` | 60 | r3535 | gen-3 landing table; carries `CH1` surfaced for 59 to place. |
+| `CONVEXITY_OPTIMISATION_LEDGER.md` | 60 | r3535 | gen-3 landing table. |
+| `THE_FIELD_BAKE_PLAN.md` | 60 | r3535 | **one line only** — the environment the receipt layer needs (`sympy`, `numpy`, `scipy`). |
 | *(none — 54's c54.230 rows released with the work)* | — | — | — |
 
 > ⌗ **54's c54.229 ROWS RELEASED HERE, WITH THE WORK.** *· `receipts/L562_the_pin_test/` — **new**, with
