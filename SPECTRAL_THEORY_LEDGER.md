@@ -42,7 +42,7 @@ asymmetry: this one told the ledger it corrected; the functional bake did not.**
 | **`S7` the signature change is an eigenvalue passing through INFINITY, so the metric never degenerates** | — | ***LANDED r3569*** — *placed in p0, at the eigenvalue formula with its `\ldg` marker.* |
 | **`S1` the tower's spectrum is discrete modewise and its zero-point sum diverges quartically — and the quartic is one the corpus already computes** · **`S1′` `S1` overclaimed, and `P07` corrects it** | — | **PART-LANDED.** *`zero-point` ×4 in P7 and ×4 in P10, `quartic` in five papers. **The bake's own overclaim-and-correction is internal and stays here*** |
 | **`S3` the corpus relies on TWO spectral gaps doing two jobs, and neither references the other** | — | **SUBSTANCE OWED — a *connection*, and it rides with `S2`** |
-| **`S5` `P15`'s exact/WKB residual is a systematic OFFSET, not the adiabaticity beside it** | — | **SUBSTANCE OWED.** *`WKB` ×3 in P15 and ×2 in P16; the offset/error distinction at neither* |
+| **`S5`** `P15`'s exact/WKB residual is a systematic OFFSET, not the adiabaticity beside it | ***LANDED r3575*** | **P15**, at the wrong-figure-of-merit sentence: the ratio decreases monotonically with $\ell$, so the discrepancy is smallest where the parameter is $O(1)$ and largest where it is small — the opposite of an adiabatic error |
 | **`S0′`→`H13`** the degeneracy correction · **`S8`→`H14`** the caveat-and-full-stop correction | — | **BOTH PROPAGATED — see above.** *Cross-bake corrections, correctly not in any paper* |
 | **`S10` the six low papers are negative, read rather than counted** | — | **HELD** |
 
