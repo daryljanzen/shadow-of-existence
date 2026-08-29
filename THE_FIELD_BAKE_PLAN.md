@@ -118,14 +118,15 @@ r3164–r3176 were already thin when `622` recorded its list as "complete"; `r34
 > | if the sweep… | then | measured |
 > | --- | --- | --- |
 > | does not set `NODE` | `check_claims` **fails** — `rc=2`, *"NODE is not one of 54, 56, 57, cc54"* | with `NODE=ci`, `rc=0` |
-> | uses a per-gate timeout under ~2 min | `check_cross_row_dupes` **fails** with `rc=124` | it needs **>100 s**; at 420 s it passes |
+> | uses a per-gate timeout under ~2½ min | `check_cross_row_dupes` **fails** with `rc=124` | measured **128 s** wall. ⚠ *A timeout of **120 s** — the obvious round choice — misses it by eight seconds, which is exactly how it caught me* |
 > | counts `check_receipts_run` | it fails whenever the tree digest has moved | a ~9-minute re-run, not a defect |
 >
 > ⇒ ***So "n gates failing" is not a number until the sweep is specified*** *— and three of the
 > ninety-three answer to the runner rather than to the tree.* **The specification:**
 >
 > ```
-> NODE=ci ; timeout 420 per gate ; the list is `ls corpus/check_*.py` — 93, and say so
+> NODE=ci ; timeout 420 per gate (3x the slowest, measured) ; the list is `ls corpus/check_*.py`
+> — 93, and say so
 > ```
 >
 > ⚠ ***AND TWO OF THE NINETY-THREE ARE NOT CORPUS FACTS AT ALL.*** *`check_compile` needs `pdflatex`
