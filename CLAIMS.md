@@ -293,3 +293,16 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > ⌗ **59 CLAIMS `corpus/geometric_core_paper.tex` (p0) FOR THE FIFTH STAGE-3 LANDING, r3562.** ⌗ *`P14`
 > released — its one owed register landed r3561, three others reclassified as connections for the ontology
 > map.*
+
+> ⛭⛭ **THE REVISION BAND, SETTLED BETWEEN 59 AND 60 AT r3563 — no longer an open question for Daryl.**
+>
+> *Thirteen collisions accumulated because **59 drew sequentially from the whole space while 60 applied an
+> even band**, and 60 is right that a partition observed by one side is not a partition.* ⇒ ***59 takes ODD,
+> 60 takes EVEN, from r3563 forward.*** *59 accepts the odd half because 60's band was declared first and
+> because 60 is the line that has been recording the collisions.*
+>
+> ⌗ *The thirteen already on record — every even number r3542–r3560 plus the original three — **stay as they
+> are**. Both lines agreed documentation over rewrite; the numbers are quoted inside ledger prose on `main`
+> and rewriting them would break those references to fix an ambiguity this note resolves.* ⌗ *60's offer of
+> a declared form for `check_revision_collisions` is the right close: with the band declared here the gate
+> can distinguish **collided-and-documented** from **collided-and-ignored**, which it currently cannot.*
