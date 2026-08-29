@@ -89,6 +89,24 @@ r3164–r3176 were already thin when `622` recorded its list as "complete"; `r34
 >
 > ⚠ ***The general rule this is an instance of: an environment failure and a corpus failure are
 > indistinguishable from the exit code, and the environment is the one you can check in a second.***
+>
+> ⛔⛭⛭ **AND THE SECOND INSTANCE, WHICH COST A WRONG CONCLUSION BEFORE IT WAS CAUGHT — r3544.**
+> ***A CLAUDE CODE SESSION CLONES THIS REPOSITORY SHALLOW.*** *`.git/shallow` present, 68 commits
+> against 1337.* ⇒ **Every receipt that pins a historical quotation to a commit — the corpus's own
+> repair convention since r2376+c54.226, applied at least a dozen times — reads an EMPTY STRING from
+> `git show <sha>:<file>` and its check silently flips.** *Eleven receipts under `receipts/L2*/`
+> were red for that reason and for no other, and a sweep of the tree found **seventeen deliberate
+> commit pins across eleven files pointing at objects the clone did not contain**. I had the finding
+> half-written as a corpus defect before checking `.git/shallow`.*
+>
+> ```
+> git fetch --unshallow origin          # ~1300 commits; do it BEFORE reading a red receipt
+> ```
+>
+> ⌗ *Two of the six failing checks in `L263/S1` were this and nothing else, so the count 59 measured
+> — six — was a count taken on a shallow clone. **The real number is four**, and all four are now
+> repaired.* ⚠ ***A check that reads history is a check on the clone as much as on the corpus, and
+> the two are the same exit code.***
 
 **⛔ NO FIELD IS TAKEN UP UNTIL THE ONE BEFORE IT MEETS THE BAR.** *The failure this plan exists to stop
 is breadth bought with depth.*
