@@ -2008,3 +2008,60 @@ slower-decaying wells. NOT the driving (r3538). One residual, one cause, connect
 history. What remains genuinely open: whether the ~2x effective load is quantitatively the Phi-decay excess
 (a forward prediction to check), and the mild multiplier-rise (the non-baryon remainder). Position +7% and
 the q~3 Phi turning point stand as before; odd-even is no longer a separate item -- it is this.
+
+---
+
+## r3540 — THE WELL-INTEGRAL FORWARD CHECK: the wells do NOT supply the 2x effective load (REFUTED)
+
+**Daryl's ship (the decisive number):** "does the well-integral the baryons actually see predict the ~2x?
+The claim is that CR's slower-decaying wells give the same asymmetry as a doubled baryon load. That is
+currently an inference from two measurements pointing the same way. Make it a number... If it comes out near
+1, the wells are not what raises the effective load, and the ~2x has another source. Say so."
+
+**The term.** The code's photon/baryon Euler equation (`out[:,3]`, ACOUSTIC_two_arm.py:502) reduces to the
+acoustic oscillator `S'' + (H R/(1+R)) S' + k^2 c_s^2 S = forcing`, `S = delta_g/4 = Theta_0`, whose
+baryon-loaded zero-point is **S_eq = -(1+R) Psi**. The BARYON part of that offset, **-R*Psi**, is the term
+that carries R and Phi together and sets the compression/rarefaction (odd-even) asymmetry -- distinct from
+the Phi'*theta driving work already shown OUT (r3538). Integrand O(eta)=R(eta)*|Phi(eta)| (Psi~Phi),
+averaged over the sub-horizon oscillation history (k*eta>1 to recombination), on the ACOUSTIC PHASE clock
+k*rs (matched between arms for matched q). **R(a)=RB_REC*a/A_REC is IDENTICAL in both arms (same OMBH2,
+same Z_REC), so R cancels in the CR/control ratio -- what remains is purely the well history.**
+
+Config STACKPERT=1 GSRC=1 HIER KCONT, matched peak modes q=1,2,3, both arms. IC clean: |Phi|_entry ratio
+CR/CTL = 1.011/1.003/1.002 (arms start each mode at the SAME well depth -- not an IC artifact).
+
+| peak (q) | PRED mult `<R|Phi|>ph` CR/CTL | eta-avg ratio | eta-int ratio | \|Phi\|_rec CR/CTL |
+|---|---|---|---|---|
+| 1 | **1.098** | 1.099 | 1.260 | 1.210 |
+| 2 | **0.956** | 0.957 | 0.999 | 1.122 |
+| 3 | **0.775** | 0.774 | 0.785 | 0.765 |
+
+**⊘ RESULT — REFUTED. Predicted effective-load multiplier from the wells = 0.77-1.10 (~1). Measured from the
+heights = 2.00 at physical R=1.0 (r3539).** The wells supply essentially NONE of the 2x. All three metrics
+(phase-avg, eta-avg, eta-integral) agree near 1; none near 2. CR's wells are at most ~20% deeper than
+control's at recombination (q=1), CROSSING to ~25% SHALLOWER by q=3 -- a modest, sign-changing ~10-20%
+modulation, not a doubling.
+
+**⊘ The trend fails too.** The predicted ratio FALLS across modes (1.10 -> 0.96 -> 0.78) while the measured
+multiplier RISES with R (1.82 -> 2.00). So the well-integral does not account for the ~10% remainder either;
+it goes the wrong way. (It crosses 1 between q=2 and q=3, independently reproducing the r3532 Phi-decay
+crossover -- the wells ARE real and DO cross, they just don't carry the load.)
+
+**⊘ This OVERTURNS r3539's "plausibly borne out."** Direction-agreement was the trap Daryl named: both
+measurements said "CR looks like more baryons," but the NUMBER shows the potential-decay history is not the
+cause. The chain link **Phi-decay -> effective load** is broken. The even-peak suppression / odd-even
+alternation / +65% over-drive is real and it IS a baryon-like (compression/rarefaction) effect that control
+matches only at R'~2 -- but CR reaches that even/odd asymmetry with the SAME zero-point offset as control
+(~1x), NOT via a deeper well. CR suppresses its even peak some OTHER way.
+
+**⊘ Lead (NOT banked).** R and Phi both fail: R(a) identical, offset ratio ~1. The remaining arm-difference
+in the baryon Euler equation is the RATE-dependent drag/damping -- the drag coefficient H*R/(1+R) carries H,
+and CR's H is the geometric (radiation-free) rate, different from control's. The effective-load mimicry most
+likely lives in the rate-dependent drag/timing, not the potential. That is the next isolation, if 58/Daryl
+want it -- stated as a lead, not a result.
+
+**⊘ PO-13 status corrected:** amplitude residual is NOT traced end to end. The over-drive = even-peak
+suppression = odd-even alternation stands (r3538, a measured identity). But "= slower-decaying wells" is
+WITHDRAWN as quantitatively false. Open: the actual source of the 2x effective even-peak suppression.
+Position +7% and the q~3 Phi turning point (r3532, converged, banked) stand unchanged -- the turning point
+is a separate, surviving result and is untouched by this refutation.
