@@ -2323,3 +2323,23 @@ so it needs Planck's actual peak-position error bars to say whether it is detect
 
 Degeneracy settled: cc54 runs the Planck comparison next (has instrument, template, context), targeting the
 CURVATURE of peak-position residuals under a floated l_A -- not before this check, which is now done.
+
+---
+
+## ⚠ REVISION-NUMBER COLLISION (recorded, NOT renumbered — Daryl's call)
+
+The revision numbers **r3535 through r3546 are NOT unique across nodes.** They were assigned in parallel,
+without cross-node coordination, to two different bodies of work:
+
+- **main carries 59's:** r3535–r3549 on `origin/main` are 59/60's landing-table / gather work — r3535 the
+  gen-2 ledger + INVOLUTION gather (175ca8a7), r3536 the involution-ledger landing table (3e8ce8d3), r3537
+  the Cartan/holonomy landing table (8d4f9f53), continuing to r3549.
+- **this branch carries cc54's:** r3535–r3546 in this file (`PO13_WORKING_STATE.md`, branch
+  `claude/cosmological-relativity-c54-sn2msi`) are the PO-13 arc — r3535 the crossover located, r3536 the
+  HIER confirmation, r3537 the turning point survives, through r3540 (well-integral) … r3546 (degeneracy
+  killed).
+
+So a bare "r354x" is ambiguous between the two lanes. **History is deliberately NOT rewritten** — a
+rename on a live branch to fix labels is a worse trade than the ambiguity. When citing these numbers, name
+the lane: "r3544 (main, 59)" vs "r3544 (branch, PO-13)". The numbers stop being unique; the record stays
+honest and nothing is rewritten.
