@@ -129,6 +129,56 @@ right and calls it the deck; the correction is a word, and the word is this fiel
 
 # THE COMPLEX ANALYSIS AND MONODROMY LEDGER — R-M's third bake
 
+## ⌗ THE LANDING TABLE — where each register stands against the corpus, checked r3528
+
+> **▣ THE `\ldg` GATHER FOR THIS LEDGER — and it found a live paper defect, now fixed.**
+
+### ⛔⛭ THE FINDING: `FOR_54` 23 REACHED THE PROPOSITION AND NOT THE PAPER
+
+*This ledger recorded that **P5 misused this field's own central distinction**: `prop:deck` read
+*"the deck group of the three-sheeted cover is $S_3$"*, which is impossible — a deck transformation acts
+freely, so its order divides the degree, and $6\nmid3$.* ***The correction landed on `prop:deck` and
+nowhere else.*** *`prop:deck` now states it correctly — monodromy $S_3$, deck group **trivial**, the
+$S_3$ acting as a deck group on the degree-six Galois closure — while **eighteen other sites in the same
+paper still asserted what it refutes**, including two that cite `prop:deck` **by label** for the opposite
+of what it says:*
+- *`rem:equianharmonic`: "with deck group $S_3$ (Proposition~\ref{prop:deck})" — and then, four lines on,
+  a **third** answer, "the deck action is $\mathbb{Z}_3$".*
+- *`rem:galois`: "The deck group of Proposition~\ref{prop:deck} is, equivalently, the Galois group."*
+- *the abstract-level summary, the $A_2$ section, the holonomy remark, the global-not-gauged remark, the
+  algebroid-meeting paragraph, and the closing synthesis.*
+
+⇒ ***FIXED r3528 — eighteen sites, and every remaining live use of "deck" in P5 audited one by one.***
+*The three objects are now kept apart in the prose as the mathematics always kept them: the **3-sheeted
+root cover** (monodromy $S_3$, deck trivial); the **degree-six Galois closure**, the dial (deck $S_3$,
+regular); and P14's **turnaround deck $\mathbb{Z}_3$**, a different object again. The order-three
+structure `rem:equianharmonic` was reaching for is the **monodromy's cyclic subgroup**, and it now says
+so. P5 compiles, no undefined references.*
+
+⌗ ***THIS IS THE LEDGER'S OWN LESSON, PAID A SECOND TIME:*** *"a field whose whole content is a
+distinction will have that distinction collapse in the prose of papers that use it correctly in the
+mathematics." **The repair collapsed the same way the prose had** — it reached the sentence that was
+wrong and not the eighteen downstream of it.*
+
+### ⌗ THE TABLE
+
+| register | disposition | where it stands |
+|---|---|---|
+| **the deck/monodromy distinction** | **LANDED r3528** — this gather's own fix | P5 throughout. **Pointer owed at `prop:deck` and `rem:galois`** |
+| **`C3` the deck is $S_3$ on the Galois closure, not $D_6$** — a correction to this bake's own record, and it closes the tower | **LANDED** | P5's degree-six extension; the dial *is* the Galois closure |
+| **the sky cover IS the root cover** — $r=\tfrac{2}{\sqrt3}\sin w$ makes the triple-angle identity give $\tfrac{2}{3\sqrt3}\sin 3w=r-r^3$ exactly | **LANDED** | P3, P5. *With the ledger's own care kept: the $120^\circ$ shift is a symmetry of the real undercritical trivialisation, not a global automorphism over the complex $2M$-line — which is why the monodromy is $S_3$ and not $\mathbb{Z}_3$* |
+| **`C5` P2 is the corpus's analytic-continuation paper and this bake had never read it** | **the bake's own gap, closed r3501** | not a paper debt |
+| **`C6` P5's seam continuation is Möbius, and the signature flip is passage through infinity** | **needs checking against P5/P3 at stage 3** | not verified in this pass |
+| **`C7` the Euclidean action's sign is forced by the lap's closure, not chosen** | **needs checking against P7** | not verified in this pass |
+| **`C9` P16's branch-point monodromy is Fuchsian, unipotent because the indicial exponents differ by an integer** | **needs checking against P16** | receipted in the r3505 run |
+| **`C10` two monodromies at $r=0$, separable only across papers** (P8, P10, P15) · **`C11` P12's "residue pairing" IS residues, and its $V_4$ holonomy is $\sqrt\Delta$ monodromy** | **needs checking** | receipted in the r3505 run |
+
+⚠ ***THIS TABLE IS PART-DONE AND SAYS SO.*** *The `C6`–`C11` rows were not tested against the papers in
+this pass — the `FOR_54` 23 repair took the session. They are marked **needs checking** rather than left
+to read as gathered, and the gather is not complete until they are.*
+
+
+
 > **⌗ RE-READ AGAINST c54.163 AND DECLARED CURRENT r2395.** *The fork changed **none of the four field-bake
 > archives** in the c54.153→c54.163 span, so the question was again* ***"did anything the span produced
 > bear on what this bake concluded"*** *rather than "what moved in the file". **The span produced two
