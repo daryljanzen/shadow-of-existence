@@ -66,20 +66,44 @@ def main():
     print()
     print('  check_marker_buried -- is any \\ldg / \\rcpt marker inside a LaTeX comment?')
     print()
-    buried, live, scanned = [], 0, 0
+    buried, quoted, live, scanned = [], 0, 0, 0
     for f in sorted(glob.glob(os.path.join(ROOT, 'corpus', '*.tex'))):
         scanned += 1
         rel = os.path.relpath(f, ROOT)
-        for n, line in enumerate(open(f, encoding='utf-8', errors='replace'), 1):
+        lines = open(f, encoding='utf-8', errors='replace').read().split('\n')
+
+        # ⛭⛭ THE DISCRIMINATOR, ADDED r3566 AFTER THIS GATE'S SECOND FALSE POSITIVE.
+        #   P12's masthead carries `\rcpt{E1_static_gauge}` because the masthead QUOTES a body
+        #   sentence, marker and all.  When that sentence was missing the quotation was the only
+        #   copy and the marker was genuinely lost -- which is what this gate found first, and 59
+        #   has since given the receipt a live home.  ** The comment did not change.  What changed
+        #   is whether anything live points at the same key. **
+        #     ⇒ *** So "in a comment" was never the defect.  The defect is a marker that exists
+        #         ONLY in a comment: a key live nowhere in its own file.  A masthead that quotes
+        #         its own body is documentation, and a gate that fails on it punishes the act of
+        #         summarising -- r2386's rule, and the SIXTH time this session has met it. ***
+        #   ⌗ Scoped to the FILE rather than the corpus deliberately: a marker commented out in
+        #     P12 is not excused by some other paper citing the same receipt.
+        livekeys = set()
+        for line in lines:
+            c = comment_from(line)
+            for m in MARKER.finditer(line):
+                if c is None or m.start() < c:
+                    livekeys.add(m.group(2))
+
+        for n, line in enumerate(lines, 1):
             c = comment_from(line)
             for m in MARKER.finditer(line):
                 if c is not None and m.start() > c:
-                    buried.append((rel, n, m.group(2), line.strip()[:110]))
+                    if m.group(2) in livekeys:
+                        quoted += 1
+                    else:
+                        buried.append((rel, n, m.group(2), line.strip()[:110]))
                 else:
                     live += 1
 
     print(f'    {scanned} .tex file(s) scanned; {live} live marker(s); '
-          f'{len(buried)} buried')
+          f'{quoted} quoted in a comment beside a live twin; {len(buried)} buried')
     if buried:
         print()
         for rel, n, key, txt in buried[:20]:

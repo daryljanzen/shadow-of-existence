@@ -88,7 +88,21 @@ BASELINE = {'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
             # ⛔ added r3128 (`L-256`): the three that arrived AFTER r3112 reported the class and
             # routed its remedy.  *They are baselined because they predate the band, and the band
             # is what makes a FOURTH one a failure this line can actually be held to.*
-            'r3103', 'r3104', 'r3112'}
+            'r3103', 'r3104', 'r3112',
+            # ⛭⛭⛭ THE THIRTEEN OF THE 59/60 WINDOW, ADDED r3566 -- and this is the DECLARED FORM
+            #   this gate was missing.  ** It could report that r3542 names two pieces of work; it
+            #   could not report whether anyone had NOTICED. **  Documentation-over-rewrite was
+            #   reached independently by both lines: the numbers are quoted inside ledger prose on
+            #   main, and rewriting them would break live references to remove an ambiguity the
+            #   band now prevents from recurring.
+            #     ⇒ *** Listed here, they are COLLIDED-AND-DOCUMENTED.  A fourteenth would be
+            #         collided-and-ignored, and this list is what makes that a failure rather than
+            #         a fourteenth entry in a tally nobody reads. ***
+            #   ⌗ Every even number from r3542 to r3560 without a gap, plus the three that opened
+            #     the window -- which is the signature of the mechanism rather than of bad luck:
+            #     60 reserved the even half while 59 drew sequentially through all of it.
+            'r3535', 'r3536', 'r3537', 'r3542', 'r3544', 'r3546', 'r3548',
+            'r3550', 'r3552', 'r3554', 'r3556', 'r3558', 'r3560'}
 
 #: *** THE BAND. ***  A partition, and each tree holds ONE half.  ** r3203: the parity is READ FROM
 #: THE TREE rather than hardcoded, because this file now runs on both trees and a hardcoded half
@@ -97,20 +111,31 @@ BASELINE = {'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
 #:   54 takes EVEN (0); 57 takes ODD (1).  NODE selects; absent it, the file falls back to 54's half,
 #:   which is where it was written.
 import os as _os
-PARITY = 1 if _os.environ.get('NODE') == '57' else 0
+# ⛭ r3566: the live pair is 59/60, and the halves are named for them as they were for 54/57.
+#   ODD: 57, 59.  EVEN: 54, 60.  *60 holds the even half because it declared a band first and
+#   is the line that recorded the collisions; 59 took the odd half in its r3563 reply.*
+PARITY = 1 if _os.environ.get('NODE') in ('57', '59') else 0
 #: ** THE OTHER HALF, HELD OR NOT.  ⛔ THE BAND IS A PARTITION AND HALF A PARTITION IS NOTHING. **
 #: *Set to the source of the other line's acceptance, or to `None` while it is only a request.  The
 #: gate REFUSES to call itself prevention while this is `None`, because a half-band prevents no
 #: collision at all -- every number this line may use stays fully available to the other.*
 OTHER_HALF = ("node 57, r3138 reply: \"The band is accepted.  This tree now runs PARITY = 1, so "
-              "your gate is answered rather than presumed.\"")
+              "your gate is answered rather than presumed.\"  ⛭ AND AGAIN FOR THE 59/60 PAIR, "
+              "node 59, r3563: \"From r3563 forward: 59 takes ODD, 60 takes EVEN. I take the odd "
+              "half because your band was declared first and because you are the line that has "
+              "been recording the collisions.\"  *Thirteen collisions accumulated in between "
+              "because 60 applied a band and 59 drew from the whole space -- neither choosing "
+              "badly, and the composition guaranteeing the failure.*")
 #: ** NAMED, not dated. **  *A band cannot apply to commits made before it was taken, and the corpus's
 #: way of saying so is a list of names rather than a cutoff -- a cutoff silently absorbs everything
 #: behind it, and `c54.212` found that hole in a different gate.*
 #:   ⌗ `r3125` predates the band by two revisions AND had already been bundled out of this tree when
 #:     the band was taken; rewriting a delivered bundle costs more than the one odd id saves.  ** It
 #:     is the only entry, and a second one would mean the band was taken and then not kept. **
-BAND_GRANDFATHERED = {'r3125'}
+BAND_GRANDFATHERED = {'r3125',
+                      # ⛭ r3566: 60's three, all before the 59/60 band was taken at r3563.
+                      #   *Two commits share r3535 -- the claim and the work of one turn.*
+                      'r3535', 'r3537'}
 
 #: ⛔ ** THE EIGHT THE OTHER LINE REPORTS FROM THE TURN THAT TOOK THE BAND, and they are held apart
 #: from `BASELINE` because THIS TREE CANNOT SEE THEM. **  *A collision needs both sides in one

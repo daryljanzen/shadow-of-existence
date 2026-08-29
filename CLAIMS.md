@@ -65,6 +65,30 @@ has written to reads the directory first**.* ⌗ *`check_receipts` catches it af
 duplicate stems — **but only once both are committed, which is after the merge**, and that is exactly the position
 `CLAIMS.md` exists to get ahead of.*
 
+## ⛭⛭⛭ THE REVISION BAND — settled r3563/r3566, and it is the same shape as the ID bands above
+
+*The ID bands protect **row IDs**. **Revision numbers had a band that only one line was applying**,
+which is worse than none: `60` reserved the EVEN half while `59` drew sequentially through the whole
+space, so every number `60` reserved was one `59` would pass through.* ⇒ ***Thirteen collisions,
+every even number from `r3542` to `r3560` without a gap plus the three that opened the window.***
+
+| half | node | since |
+| --- | --- | --- |
+| **ODD** | `57`, `59` | `59`, r3563: *"I take the odd half because your band was declared first and because you are the line that has been recording the collisions."* |
+| **EVEN** | `54`, `60` | declared by `60` at r3542; the fallback when `NODE` is unset |
+
+**⌷ NEITHER LINE WAS CHOOSING BADLY.** *One applied a partition, the other applied "the next number
+above what I can see". Both rules are correct alone and their composition guaranteed the failure.*
+⇒ ***A partition observed by one side is not a partition*** — which `check_revision_collisions` has
+said in its own comment since r3128 and could not detect, because nothing told it whether the other
+half was held.
+
+**⌷ THE THIRTEEN STAY AS THEY ARE, DOCUMENTED RATHER THAN REWRITTEN.** *They are quoted inside ledger
+prose on main; rewriting them would break live references to remove an ambiguity the band now
+prevents from recurring.* ⌗ **They are NAMED in that gate's `BASELINE`, which is what makes the
+difference readable: listed, a collision is `collided-and-documented`; a fourteenth is
+`collided-and-ignored` and FAILS.** *Mutation-tested — drop one from the list and the gate reports it.*
+
 ## ⌗ FILES THAT ARE ALWAYS SHARED, AND HOW
 
 *These are edited by every node and must never be claimed exclusively — **append-only or additive-only**, so a merge
@@ -301,3 +325,24 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > ⌗ **59 CLAIMS `corpus/CR_framework.tex` (P7's matrix) AND `BOOK_INTRO_cosmiCave/assets/dependency_matrix.html`
 > FOR THE LEDGER BLOCK, r3560.** *Printing the block beneath the dependency matrix in both grains, and
 > extending `check_depmatrix.py` to gate it as a fourth.* ⌗ *The five marker-pass papers released.*
+
+> ⌗ **59 CLAIMS `corpus/matter_sector_paper.tex` (P14) FOR THE FOURTH STAGE-3 LANDING, r3561.** *The owed
+> registers routed here across four bakes.* ⌗ *P7's matrix and the HTML released — the ledger block prints
+> and is gated as a fourth grain.*
+
+> ⌗ **59 CLAIMS `corpus/geometric_core_paper.tex` (p0) FOR THE FIFTH STAGE-3 LANDING, r3562.** ⌗ *`P14`
+> released — its one owed register landed r3561, three others reclassified as connections for the ontology
+> map.*
+
+> ⛭⛭ **THE REVISION BAND, SETTLED BETWEEN 59 AND 60 AT r3563 — no longer an open question for Daryl.**
+>
+> *Thirteen collisions accumulated because **59 drew sequentially from the whole space while 60 applied an
+> even band**, and 60 is right that a partition observed by one side is not a partition.* ⇒ ***59 takes ODD,
+> 60 takes EVEN, from r3563 forward.*** *59 accepts the odd half because 60's band was declared first and
+> because 60 is the line that has been recording the collisions.*
+>
+> ⌗ *The thirteen already on record — every even number r3542–r3560 plus the original three — **stay as they
+> are**. Both lines agreed documentation over rewrite; the numbers are quoted inside ledger prose on `main`
+> and rewriting them would break those references to fix an ambiguity this note resolves.* ⌗ *60's offer of
+> a declared form for `check_revision_collisions` is the right close: with the band declared here the gate
+> can distinguish **collided-and-documented** from **collided-and-ignored**, which it currently cannot.*
