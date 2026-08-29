@@ -2715,3 +2715,48 @@ step: a projection map that varies with the local potential, not just the global
 exists and lands the four is the open object; it is NOT another term inside the source (all seven of those
 are eliminated). The diagnosis has moved out of the source and into the map, and the curvature-half of the
 map is done.
+
+---
+
+## r3555 (branch) — THE r_0 QUESTION PINNED: the factor 7 is D_C vs D_M (radial vs transverse comoving distance) at the near-antipode
+
+**58's ship (before any build): pin r_0, because the factor 7 is a statement about the curvature radius and nothing else.**
+
+**Required r_0 for the first peak at l=220 under hyperspherical projection** (holding chi=2.75):
+r_0 = 36,490 Mpc -- a factor **7.2** above the derived value. At the derived r_0=5064, hyper gives l_A = 41.8
+(order of magnitude below the sky's 301.6). Table: r_0=5064 -> l_A=42 ; 20000 -> 278 ; 34000 -> 293 ;
+->inf (flat) -> 301.6.
+
+**Corpus's derived r_0 = 5064-5065 Mpc** (appendix_receipts_corpus, the interior-to-observed mode map):
+r_0 = 2^(1/3) Lambda^(-1/2) sinh^(2/3)(u), u = arcsinh sqrt(Om_L/Om_m) -- physically derived, not free.
+Its S^3-to-sky map, DERIVED AND VALIDATED: **l(L) = sqrt(L(L+2)) D_C/r_0**, checked by L=2 -> l=7.78
+(vs P15's 7.8, the low-multipole deficit). Stretch = D_C/r_0 = 2.750 (the instrument's stretch).
+
+**⊘ THE FACTOR 7 IS EXACTLY D_C vs D_M.** The corpus's map uses **D_C = r_0 chi** (RADIAL comoving distance);
+standard closed-FRW projection -- and the hyperspherical Bessel -- uses **D_M = r_0 sin(chi)** (TRANSVERSE
+comoving / angular-diameter distance). In a flat universe D_C = D_M; at the near-antipode chi=2.75 they differ
+by sin(chi)/chi = 0.139 -- the factor 7.2. Nothing else is in it.
+
+**⊘ THE FORK (a framework physics decision, NOT cc54's to make):**
+- If CR's projection uses **D_C** (the corpus's own derived + low-l-validated map, l~2.75L): the FLAT
+  instrument was right all along, it lands the sky, and the hyperspherical Bessel is the WRONG kernel for CR
+  -- the projection lever is moot and the flat projection is JUSTIFIED, not merely assumed. The seven
+  eliminated source terms + the standing disagreement are the result; there is no eighth lever in the map.
+- If CR's projection uses **D_M = r_0 sin(chi)** (standard closed-FRW, the hyperspherical Bessel): then with
+  the physically-derived r_0=5064 and chi=2.75, CR's acoustic comb sits at l_A~42, a factor 7.2 below the sky
+  -- a HARD INCONSISTENCY between the substrate curvature scale (r_0, derived from Lambda and Om) and the CMB
+  acoustic scale, fixable by NO source term or map refinement. The most consequential result of the arc.
+
+**⊘ WHAT THE CORPUS HAS ALREADY COMMITTED TO.** The corpus DERIVED and VALIDATED l = sqrt(L(L+2)) D_C/r_0
+(L=2 -> 7.78) -- i.e. it has ALREADY chosen D_C (the radial comoving distance) for the S^3-to-sky map, and
+cross-validated it on the low-multipole deficit on two transfers. Standard closed-FRW physics says a closed
+slice projects with the TRANSVERSE distance D_M = r_0 sin(chi), not D_C. So the corpus's validated map either
+(a) is the correct CR projection by the layer diffeomorphism (D_C, and my hyperspherical D_M is the wrong
+kernel for this framework), or (b) made the flat-space identification D_M = D_C, valid only for chi small,
+and used it at chi=2.75 where it fails 7-fold. That is the single decision the whole projection question
+reduces to, and it is 58/Daryl's, being a claim about which distance the framework's map carries.
+
+**⇒ Held per 58: the plasma-warping (potential-dependent map) build is NOT the right next object until this is
+resolved -- a comb in the wrong place by 7-fold for a reason that has nothing to do with local warping. Fix
+the location (the D_C-vs-D_M decision) first. The hyperspherical kernel (validated, r3553) stands ready if
+the answer is D_M.**
