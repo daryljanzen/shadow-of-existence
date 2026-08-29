@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""make_ledger_appendix.py -- generate 'Appendix L -- The Knowledge Ledgers' from ledgers/INDEX.md.
+"""make_ledger_appendix.py -- generate 'Appendix L -- The Knowledge Ledgers' from corpus/ledgers_registry.md.
 
 Single source of truth: a paper's Appendix L can never drift from the index, because it is
 regenerated.  This is the make_receipt_appendix.py rail for a different artefact, and it is built
@@ -27,7 +27,7 @@ import sys, os, re, glob
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..'))
-INDEX = os.path.join(ROOT, 'ledgers', 'INDEX.md')
+INDEX = os.path.join(HERE, 'ledgers_registry.md')
 
 PAPER_FILES = {
     'P1': 'BH_causality_v2.tex', 'P2': 'janzen_circle_v3.tex',
@@ -88,7 +88,7 @@ def parse_index(path):
         key = cells[0].strip('`')
         if key in seen:
             sys.stderr.write(
-                '\n  DUPLICATE KEY %r at ledgers/INDEX.md line %d (first seen line %d).\n'
+                '\n  DUPLICATE KEY %r at corpus/ledgers_registry.md line %d (first seen line %d).\n'
                 '  A dict keyed by slug would silently keep the later row and the earlier\n'
                 '  ledger would vanish from every appendix, with file order deciding which.\n'
                 % (key, lineno, seen[key]))
@@ -104,7 +104,7 @@ def resolve(rows):
     if missing:
         sys.stderr.write('\n  REFUSING TO EMIT %d ROW(S) WHOSE LEDGER IS NOT ON DISK:\n' % len(missing))
         for r in missing:
-            sys.stderr.write('     ledgers/INDEX.md line %d: %s\n' % (r['line'], r['file']))
+            sys.stderr.write('     corpus/ledgers_registry.md line %d: %s\n' % (r['line'], r['file']))
         sys.stderr.write('     An appendix that points a reader at a file nobody has is not a\n'
                          '     reference; it is a claim of provenance the corpus cannot honour.\n\n')
         sys.exit(2)

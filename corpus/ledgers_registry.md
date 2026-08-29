@@ -1,4 +1,13 @@
-# LEDGER INDEX — the knowledge ledgers a paper may cite
+# LEDGER KEY REGISTRY — the knowledge ledgers a paper may cite with `\\ldg{}`
+> ⌗ **THIS IS NOT A DIRECTORY INDEX AND IS DELIBERATELY NOT NAMED ONE.** *The ledgers it keys are
+> **top-level documents**, listed by the corpus's own `INDEX.md` like every other; this file is the
+> `\\ldg{}` rail's key table, and it lives beside `ledgers.sty` and `make_ledger_appendix.py` because it is
+> part of that machinery.* ⚠ *It was first written as `ledgers/INDEX.md` — a directory holding nothing but
+> an index, for documents stored elsewhere, **duplicating a listing the root index already carries for all
+> thirty-seven of them**. Moved r3551. The root index's own frontmatter records why that shape is
+> dangerous here: at r2385 a 49 KB live document was deleted because a 32 KB stub shared its name in
+> `retired/`.*
+
 *Source of truth for `\\ldg{}` and Appendix L. One row per citable ledger; the description is the
 ledger's own frontmatter, so it cannot drift from the file. `make_ledger_appendix.py` reads this and
 REFUSES to emit a row whose file is absent, and FAILS on a duplicate key — the two ways the receipt
