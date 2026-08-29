@@ -97,7 +97,12 @@ RAILS = [
          #   \ldg markers and its own Appendix L -- so the rail has two artefacts and a drop
          #   back to one is now a regression this floor can see. ** That is what a ratchet is
          #   for, and it only works if it is raised when the rail grows. **
-         min_rows=15, min_files=3,   # ⛭ r3558: raised 2 -> 3; 59's marker pass reached p0 and P14
+         # ⛭ THE RATCHET, RAISED THREE TIMES IN ONE DAY AS THE RAIL GREW: 1 -> 2 (r3554,
+         #   P3 got its Appendix L) -> 3 (r3558, p0 and P14) -> 14 (r3562, the marker pass
+         #   completed at 45 markers across 14 papers). ** A floor that is not raised when
+         #   the rail grows stops being a ratchet and becomes a comment: at min_files=3 this
+         #   rail could have silently lost ELEVEN appendices and still passed. **
+         min_rows=15, min_files=14,
          fix='python3 corpus/make_ledger_appendix.py P17 corpus/appendix_ledgers_P17.tex'),
 ]
 
