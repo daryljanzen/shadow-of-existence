@@ -310,3 +310,7 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > ⌗ **59 CLAIMS `corpus/BH_causality_v2.tex` (P1) FOR THE SIXTH STAGE-3 LANDING, r3565.** *Two registers:*
 > **`F20`** *(Shale's criterion — the unnamed theorem supplying P1's own inequivalence conclusion)* *and*
 > **`⊢56`** *(the horizon real at its ends and fictional in its middle).* ⌗ *`p0` released.*
+
+> ⌗ **59 CLAIMS `corpus/cosmogenesis_paper.tex` (P16) FOR THE SEVENTH STAGE-3 LANDING, r3569.** *`S9` (the
+> shared lithium miss is the discriminating datum, not a blemish) and `S7` (signature change via infinity,
+> so the metric never degenerates).* ⌗ *`P1` released.*
