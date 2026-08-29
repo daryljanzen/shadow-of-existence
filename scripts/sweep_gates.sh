@@ -53,6 +53,13 @@ run_sweep() {
   echo "$pass|$fail|$failed|$unrun|$notrun"
 }
 
+# ⛭ r3558 (node 60), ADDITIVE -- 59's structure kept whole, one caution added that it does
+#   not carry.  ** UNRUN is a different thing from green AND a different thing from harmless. **
+#   r3550-r3552 (this line) filed check_compile as "not a corpus fact" because it raises
+#   FileNotFoundError: 'pdflatex' in this container AND in CI -- and 59, which HAS pdflatex,
+#   reports it a REAL failure on main.  ⇒ The toolchain's absence was not making the gate
+#   meaningless; it was hiding a live compile failure from two of the three places anyone looks.
+#   So an UNRUN tally is a list of QUESTIONS NOT ASKED, never a list of things that are fine.
 if [ -f .git/shallow ]; then
   echo "  [WARN] SHALLOW CLONE -- commit-pinned checks read empty and flip silently."
   echo "         Run: git fetch --unshallow   before trusting any number below."
@@ -81,4 +88,6 @@ if [ "${1:-}" = "--baseline" ] && [ -n "${2:-}" ]; then
 fi
 echo
 echo "  A gate failing here is not automatically this line's: check the delta, not the count."
+echo "  ⛔ And UNRUN is not a pass: check_compile without pdflatex is a question NOT ASKED,"
+echo "     and with the toolchain present it FAILS on main.  Install TeX or say unmeasured."
 [ "$F" -eq 0 ]

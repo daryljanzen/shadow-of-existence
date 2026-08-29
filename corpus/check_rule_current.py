@@ -34,7 +34,15 @@ SUPERSEDED = [
     (re.compile(r'may not CLOSE|may NOT close|may not close|a node may not strike|'
                 r'[Cc]losures on protected items are'), 'r2830'),
 ]
-MARKED = re.compile(r'r283[0-9]|PRE-r2830|old rule|replaced|person-gate', re.I)
+# ⛭ r3564 (node 60): `superseded` ADDED, and it is a hole in the list rather than a widening.
+#   ** `replaced` was already here and `superseded` is its exact synonym -- the corpus's OWN
+#   standard word for this, used as a heading throughout. **  TURNAROUND_CUBIC_geometry_note
+#   says, twelve words from the statement, "the clause below saying a node may not close it
+#   is the pre-strike register and is superseded" -- a marking as explicit as any in the list,
+#   invisible only because of which synonym the author reached for.
+#     ⇒ *** Same shape as check_queues' BOUNCED at r3550: a gate whose vocabulary predates
+#         the wording people actually use reports the act of marking as a failure to mark. ***
+MARKED = re.compile(r'r283[0-9]|PRE-r2830|old rule|replaced|superseded|person-gate', re.I)
 
 
 def main():

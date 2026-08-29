@@ -165,7 +165,7 @@ and **say so in the commit**. **Do not leave the contradiction for later.***
 ## ⛔ HARD RULES
 
 1. ***Never edit a paper unattended.*** *Route every consequence with the exact clause written out.*
-2. ***Never strike `OWED` 622 or any register row.*** *Daryl's call.*
+2. ***Never strike `OWED` 622 or any register row.*** *Striking is not a node's act — the row outlives the session that would strike it, and a node cannot see whether it is the last one owed.* ⌗ **Reworded r3564: this said "Daryl's call", which `check_deferrals` fails on since r1885 — *a written deferral outlives the moment and gets quoted back as authority*. The constraint is unchanged and stronger for resting on a reason rather than on a person.**
 3. ***Never mark a field done on a count.*** *Measure, and record short if short.*
 4. ***Say what was DONE, not only what was wrong*** — *when a ledger entry names a defect, the same
    entry states **that the fix landed and where**.*

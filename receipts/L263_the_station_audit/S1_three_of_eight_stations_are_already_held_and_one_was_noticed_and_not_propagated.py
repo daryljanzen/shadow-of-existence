@@ -16,11 +16,16 @@ No parameter is pinned.
 than feared."*
 
 ** ⛔⛭⛭ ⓶ AND THERE ARE THREE, NOT TWO. **  Ⓕ -- *the real forms of $SO(6,\\mathbb{C})$* -- is carried
-as ⟐ **owed** in `OWED` 609 and is in `P13` in the paper's own words: four real forms; $\\su(3)$
+as ⟐ **owed** in `OWED` 609 and is in `P13` in the paper's own words: the enumeration; $\\su(3)$
 compact of dimension eight needs a maximal compact of at least that; $\\so(4,2)$ and $\\so(3,3)$
 excluded on dimension; $\\so(5,1)$'s $\\so(5)$ too small because $\\su(3)$'s smallest faithful real
-representation is six-dimensional; *the compact form is the unique real form that admits $\\su(3)$ at
-all*.
+representation is six-dimensional.
+  ⌗ ** THE COUNT IN THAT SENTENCE WAS FOUR WHEN THIS WAS WRITTEN AND IS FIVE NOW ** -- the involution
+    bake corrected it at r3329, naming $\\SO^{*}(6)\\cong\\SU(3,1)$ as the omitted form, and the
+    "unique real form" clause went at r3414.  *The STATION is untouched by either: what `P13` holds
+    is the enumeration and the exclusions, and it holds MORE of them than it did.*  Both superseded
+    wordings are pinned at the commits where they stood (`⓵ᵉ`), so this audit's own history stays
+    checkable rather than becoming a memory.
 
 ** ⛔ ⓷ AND THE FAILURE WAS NOTICED, IN WRITING, AND DID NOT PROPAGATE. **  `THE_MATHEMATICS_REACH`'s
 own frontmatter says of Ⓕ: *"this frontmatter carried Ⓕ as owed for forty-eight revisions after its
@@ -91,19 +96,39 @@ def main():
         'Ⓓ Galois of the energy family': (
             'P05', 'the \\emph{Galois group} of the horizon cubic over the field '
                    '$\\mathbb{C}(2M)$ of the mass parameter'),
+        # ⛭⛭ RE-PINNED r3544 (node 60).  ** THE STATION IS STILL HELD; ITS WORDING MOVED TWICE. **
+        #   The r3148 quote was P13's own and is P13's no longer: the involution bake corrected the
+        #   count FOUR -> FIVE at r3329 and the "unique real form" sentence went at r3414.  ** A
+        #   station whose quote has been superseded reads exactly like a station that was never
+        #   held, and the difference is the whole point of this audit. **  So both halves are now
+        #   asserted, in the corpus's own r2376+c54.226 shape: the historical wording pinned at the
+        #   commit where it stood, the CURRENT wording asserted against the live paper.
         'Ⓕ the real forms of SO(6,C)': (
-            'P13', 'the compact form is the unique real form of $\\SO(6,\\mathbb{C})$ that admits '
-                   '$\\su(3)$ at all'),
+            'P13', 'real forms of the one complex group $\\SO(6,\\mathbb{C})$'),
     }
     for station, (paper, quote) in HELD.items():
         check(f'⓵ {station} -- held in {paper}: "{quote[:66]}..."', quote in B[paper])
-    # ** and Ⓕ's supporting argument, not just its conclusion **
     p13 = B['P13']
-    check('⓵ᵈ and Ⓕ is held with its ARGUMENT and not only its conclusion: four real forms, the '
-          'dimension-eight requirement, so(4,2) and so(3,3) excluded, and so(5,1)\'s so(5) too small '
-          'for a subalgebra whose smallest faithful real representation is six-dimensional',
-          all(s in p13 for s in ('four real forms', '\\so(4,2)', '\\so(3,3)',
+    # ** and Ⓕ's supporting argument, not just its conclusion -- as P13 CARRIES IT NOW **
+    check('⓵ᵈ and Ⓕ is held with its ARGUMENT and not only its conclusion: FIVE real forms with '
+          'SO*(6) = SU(3,1) named, so(4,2) and so(3,3) excluded on dimension, and so(5,1)\'s so(5) '
+          'too small for a subalgebra whose smallest faithful real representation is six-dimensional',
+          all(t in p13 for t in ('\\emph{five} real forms', '\\SO^{*}(6)', '\\SU(3,1)',
+                                 '\\so(4,2)', '\\so(3,3)',
                                  'smallest faithful real representation is six-dimensional')))
+    # and the SUPERSEDED wording, pinned where it stood, so the audit's own history stays checkable
+    FOUR_AT = 'aa32d936'      # r3329^ -- the last tree in which P13 said "four real forms"
+    UNIQ_AT = '2f0ebd6f'      # r3414^ -- the last tree carrying "the compact form is the unique..."
+    old13 = lambda sha: subprocess.run(['git', '-C', ROOT, 'show', f'{sha}^:corpus/boundary_paper.tex'],
+                                       capture_output=True, text=True, errors='replace').stdout
+    was_four, was_uniq = old13(FOUR_AT), old13(UNIQ_AT)
+    check(f'⓵ᵉ ⛭ and the r3148 wording is pinned, not lost: "four real forms" stood at {FOUR_AT}^ '
+          f'(r3329, where the involution bake corrected it to five) and the "unique real form" '
+          f'sentence at {UNIQ_AT}^ (r3414) -- and BOTH are gone from the live paper',
+          bool(was_four) and 'four real forms' in was_four
+          and bool(was_uniq) and 'the compact form is the unique real form' in was_uniq
+          and 'four real forms' not in p13
+          and 'the compact form is the unique real form' not in p13)
 
     # ============================================================ (2) Ⓕ was noticed and not carried
     print()
@@ -155,11 +180,28 @@ def main():
     g = {t: sum(RB.counts(t).values()) for t in
          ('Atiyah sequence', 'exact sequence', 'Chevalley', 'algebroid', 'anchor')}
     print(f'    Ⓖ Lie algebroids : {g}')
-    check('⓷ Ⓖ is genuinely owed and its baseline is the one the theatre states: the corpus holds '
-          'algebroid and anchor in quantity and carries NO Atiyah sequence, no exact sequence and '
-          'no Chevalley--Eilenberg anywhere',
-          g['algebroid'] > 100 and g['anchor'] > 20
-          and g['Atiyah sequence'] == 0 and g['exact sequence'] == 0 and g['Chevalley'] == 0)
+    # ⛭⛭ REWRITTEN r3544 (node 60).  ** THE ABSENCE THIS CHECK RECORDED IS GONE, AND THAT IS THE
+    #   STATION BEING WORKED RATHER THAN THIS RECEIPT BREAKING. **  At r3148 `Atiyah sequence` was
+    #   x0 across seventeen bodies and Ⓖ's baseline was that absence.  P12 now states the grading
+    #   IS the Atiyah sequence (x2, entered at 6c47575d, r3253) and p0 carries `exact sequence` x1.
+    #   ⇒ *** A check that keeps asserting an absence after the absence has been filled reports the
+    #   station as owed for as long as nobody re-runs it -- which is the SAME failure this receipt
+    #   was written to name, arriving in the receipt that names it. ***  So it now asserts the
+    #   baseline where it stood AND the present, in opposite directions.
+    AS_AT = '3803c725'        # r3251 -- where P12 FIRST carried the Atiyah sequence.  ⌗ r3253 was
+    #   the first candidate and it is NOT the introduction: `git log -S` lists every commit that
+    #   changes a count, and r3253 took P12 from one occurrence to two.  ** The first commit a
+    #   -S search returns is the most RECENT change, not the origin. **  Checked at both parents.
+    p12_was = subprocess.run(['git', '-C', ROOT, 'show', f'{AS_AT}^:corpus/algebroid_paper.tex'],
+                             capture_output=True, text=True, errors='replace').stdout
+    check('⓷ Ⓖ\'s baseline STOOD as the theatre states -- algebroid and anchor in quantity, and no '
+          f'Atiyah sequence anywhere -- and is pinned at {AS_AT}^ (r3251) rather than recalled',
+          g['algebroid'] > 100 and g['anchor'] > 20 and g['Chevalley'] == 0
+          and bool(p12_was) and 'Atiyah sequence' not in p12_was)
+    check('⓷ᵃ ⛭ AND IT IS NO LONGER THE BASELINE: P12 now names the Atiyah sequence and p0 an exact '
+          'sequence, so Ⓖ has been WORKED since this audit and the station is not owed as it was',
+          g['Atiyah sequence'] > 0 and g['exact sequence'] > 0
+          and RB.counts('Atiyah sequence')['P12'] > 0)
     h = {t: sum(RB.counts(t).values()) for t in
          ('Fredholm', 'limit-point', 'deficiency ind', 'Atiyah--Singer', 'graded index',
           'traced rather than computed')}
@@ -174,11 +216,30 @@ def main():
     #    57's L-265 corrected its verdict to LIMIT-CIRCLE at r3205, and P14 now carries that
     #    statement with a self-adjoint extension named as owed (OWED 622).  What the audit FOUND --
     #    that the apparatus was P10's alone and unjoined -- is what made the station worth throwing. **
-    check('⓷ᶜ ⌗ the machinery EXISTS in the corpus as P10\'s deficiency-index apparatus, and the '
-          'join to P14 -- which carries the index -- IS NOW MADE: P14 states the branch point '
-          'limit-circle and names the extension as owed',
+    # ⛔⛭⛭ CORRECTED r3544 (node 60).  ** THE r3249 AMENDMENT WAS BUILT ON A CLAIM THE CORPUS THEN
+    #   WITHDREW. **  It asserted that "P14 states the branch point limit-circle", and at r3339 the
+    #   corpus reversed that in its own words -- *"I was wrong: LIMIT-POINT stands, and the corpus
+    #   had decided it twice before I touched it"* -- and removed the sentence from P14.  So this
+    #   check has been red ever since, and reading its red as "the join was lost" would have been
+    #   exactly backwards: ** the join was never P14's to make, and the paper is RIGHT to have
+    #   dropped it. **  What survives, and is checked, is that the apparatus lives in P10 and is a
+    #   THRESHOLD statement rather than a verdict, and that P14 carries its index at traced weight.
+    L_AT = '614466b4'         # r3339 -- where P14's limit-circle sentence was withdrawn
+    p14_was = subprocess.run(['git', '-C', ROOT, 'show', f'{L_AT}^:corpus/matter_sector_paper.tex'],
+                             capture_output=True, text=True, errors='replace').stdout
+    check('⓷ᶜ ⌗ the machinery EXISTS in the corpus as P10\'s deficiency-index apparatus, and it is '
+          'a THRESHOLD statement -- gamma = 3/4 separating limit-point from limit-circle, so whether '
+          'a boundary condition must be chosen at all is decided rather than assumed',
           RB.counts('deficiency ind')['P10'] > 0
-          and RB.counts('limit-circle')['P14'] > 0)
+          and RB.counts('limit-circle')['P10'] > 0
+          and RB.counts('limit-point')['P10'] > 0)
+    check(f'⓷ᵉ ⛔ and the JOIN TO P14 IS NOT MADE, because the corpus WITHDREW it: P14 carried the '
+          f'branch-point limit-circle at {L_AT}^ and r3339 removed it ("LIMIT-POINT stands"), so '
+          f'P14 today carries neither term and marks its Atiyah--Singer statement as TRACED',
+          bool(p14_was) and 'limit-circle' in p14_was
+          and RB.counts('limit-circle')['P14'] == 0
+          and RB.counts('limit-point')['P14'] == 0
+          and 'traced' in B['P14'] and 'Atiyah--Singer' in B['P14'])
     check('⓷ᵈ and Ⓒ is not owed as a station -- the theatre records it as BIT and `L-203`/`M1` '
           'carries the finding',
           os.path.exists(os.path.join(ROOT, 'receipts', 'L203_reach_stations',
@@ -217,7 +278,10 @@ def main():
         return 1
     print('  VERDICT: ** three of the eight R-M stations are already held in the papers, not two. **')
     print('  *Ⓑ in P03\'s `rem:dimension`, Ⓓ in P05\'s `rem:galois`, and Ⓕ in P13 in the paper\'s own')
-    print('  words -- the compact form the unique real form admitting su(3).*')
+    print('  words -- the FIVE real forms of SO(6,C) enumerated, SO*(6) = SU(3,1) named, and so(4,2),')
+    print('  so(3,3) and so(5,1) each excluded by an argument the paper gives.*')
+    print('  ⌗ *Re-pinned r3544: P13 said FOUR when this was written and has said five since')
+    print('     r3329, and this audit now reads the paper rather than its memory of it.*')
     print('  ⛔ ** And Ⓕ was diagnosed in writing, where it happened. **  *The theatre\'s frontmatter')
     print('     says it carried Ⓕ as owed for forty-eight revisions after recording the answer; the')
     print('     list downstream still carried it.*  ⇒ *** A notice written where the error happened')

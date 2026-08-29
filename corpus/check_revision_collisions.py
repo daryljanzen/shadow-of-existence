@@ -88,7 +88,31 @@ BASELINE = {'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
             # ⛔ added r3128 (`L-256`): the three that arrived AFTER r3112 reported the class and
             # routed its remedy.  *They are baselined because they predate the band, and the band
             # is what makes a FOURTH one a failure this line can actually be held to.*
-            'r3103', 'r3104', 'r3112'}
+            'r3103', 'r3104', 'r3112',
+            # ⛭⛭⛭ THE THIRTEEN OF THE 59/60 WINDOW, ADDED r3566 -- and this is the DECLARED FORM
+            #   this gate was missing.  ** It could report that r3542 names two pieces of work; it
+            #   could not report whether anyone had NOTICED. **  Documentation-over-rewrite was
+            #   reached independently by both lines: the numbers are quoted inside ledger prose on
+            #   main, and rewriting them would break live references to remove an ambiguity the
+            #   band now prevents from recurring.
+            #     ⇒ *** Listed here, they are COLLIDED-AND-DOCUMENTED.  A fourteenth would be
+            #         collided-and-ignored, and this list is what makes that a failure rather than
+            #         a fourteenth entry in a tally nobody reads. ***
+            #   ⌗ Every even number from r3542 to r3560 without a gap, plus the three that opened
+            #     the window -- which is the signature of the mechanism rather than of bad luck:
+            #     60 reserved the even half while 59 drew sequentially through all of it.
+            'r3535', 'r3536', 'r3537', 'r3542', 'r3544', 'r3546', 'r3548',
+            'r3550', 'r3552', 'r3554', 'r3556', 'r3558', 'r3560',
+            # ⛭⛭ AND A FOURTEENTH, r3562 -- ADDED r3568, AND THE LIST CAUGHT IT RATHER THAN ME.
+            #   r3566 enumerated thirteen and the enumeration was complete WHEN IT WAS MADE: 59
+            #   took r3562 after I measured, so the collision did not exist at the moment I listed
+            #   the collisions.  ** A census is a list of what you read, not of what is there --
+            #   this line's own rule, arriving in the list of its own failures. **
+            #   ⇒ *** It belongs with the thirteen and not outside them: r3562 was pushed BEFORE
+            #       59's r3563 reply took the odd half, so it is the LAST of the pre-band window
+            #       rather than the first failure of the band. ***  A collision at an even number
+            #       after r3563 would be a real failure and this list would not excuse it.
+            'r3562'}
 
 #: *** THE BAND. ***  A partition, and each tree holds ONE half.  ** r3203: the parity is READ FROM
 #: THE TREE rather than hardcoded, because this file now runs on both trees and a hardcoded half
@@ -137,7 +161,10 @@ OTHER_HALF = ("node 57, r3138 reply: \"The band is accepted.  This tree now runs
 #:   ⌗ `r3125` predates the band by two revisions AND had already been bundled out of this tree when
 #:     the band was taken; rewriting a delivered bundle costs more than the one odd id saves.  ** It
 #:     is the only entry, and a second one would mean the band was taken and then not kept. **
-BAND_GRANDFATHERED = {'r3125'}
+BAND_GRANDFATHERED = {'r3125',
+                      # ⛭ r3566: 60's three, all before the 59/60 band was taken at r3563.
+                      #   *Two commits share r3535 -- the claim and the work of one turn.*
+                      'r3535', 'r3537'}
 
 #: ⛔ ** THE EIGHT THE OTHER LINE REPORTS FROM THE TURN THAT TOOK THE BAND, and they are held apart
 #: from `BASELINE` because THIS TREE CANNOT SEE THEM. **  *A collision needs both sides in one
@@ -240,6 +267,19 @@ def band_violations(root=None):
     #    own commits and steps over what a merge brought in. **
     r = subprocess.run(['git', 'log', '--first-parent', '--format=%h%x09%s', f'{UPSTREAM}..HEAD'],
                        cwd=root or ROOT, capture_output=True, text=True)
+    if PARITY is None:
+        # ⛔⛭ ** A DECLARED EXEMPTION THAT IS NOT HONOURED DOWNSTREAM IS WORSE THAN NONE -- r3576.
+        #   r3573 mapped `ci` to `None` meaning "the runner is not a line and holds no half", and
+        #   then this comparison read it as a half anyway: `n % 2 != None` is TRUE for every n, so
+        #   every revision-numbered commit came back out of band and `check_band` labelled the
+        #   verdict ODD, because `PARITY == 0` is False.  ** The map said "cannot tell" and the
+        #   check gave it a line regardless -- the exact failure r3573 was written to end, one
+        #   level further in. **
+        #   ⇒ *** Not-a-line is REPORTED, never asserted: the same treatment as a missing upstream
+        #       ref, and for the same reason -- there is no way to say whose half these commits
+        #       fall in, and a verdict about a line nobody identified is not a measurement. ***
+        #   The COLLISION half still runs; it is the half a runner can actually answer.
+        return None
     if r.returncode != 0:
         return None                       # no upstream ref here -- reported, never asserted
     out = []
@@ -257,7 +297,13 @@ def band_violations(root=None):
 def check_band():
     """*** the PREVENTION half: fail before the merge, while the number can still be changed ***"""
     v = band_violations()
-    word = 'EVEN' if PARITY == 0 else 'ODD'
+    word = 'EVEN' if PARITY == 0 else ('ODD' if PARITY == 1 else 'NO HALF')
+    if PARITY is None:
+        print(f'    ⌗ the band is NOT CHECKED this run: NODE={_NODE!r} holds no half, so there is')
+        print('      no way to say which of these commits are any line\'s own.  *Reported rather')
+        print('      than passed silently, and rather than asserted against a half nobody holds.*')
+        print()
+        return 0
     if v is None:
         print(f'    ⌗ the band ({word}) is NOT CHECKED this run: `{UPSTREAM}` is not a ref in this')
         print('      tree, so there is no way to say which commits are this line\'s own.')

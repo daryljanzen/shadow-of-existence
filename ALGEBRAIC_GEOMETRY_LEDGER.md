@@ -1,8 +1,8 @@
 ---
 name: algebraic-geometry-ledger
 kind: FORWARD
-current: r3518
-job: The algebraic-geometry field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the r3505 overnight order: algebraic geometry ×57, discriminant ×28 / genus ×21). `OWED` 622.
+current: r3546
+job: The algebraic-geometry field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the overnight order: algebraic geometry ×57, discriminant ×28 / genus ×21). `OWED` 622.
 sources: [cowork]
 ---
 
@@ -16,6 +16,65 @@ sources: [cowork]
 > content is here and is receipted, but under `quadric`, `combinatorics`, and `complex-analysis` heads,
 > not as "algebraic geometry".*
 
+
+## ⌗ THE LANDING TABLE — where each register stands against the corpus, checked r3546
+
+> **▣ THE `\ldg` GATHER FOR THIS LEDGER.** *Live prose only, `corpus/reach_baseline.py`, and every
+> term searched in the CORPUS's spelling. **The distinction this field turns on is between an OBJECT
+> being in a paper and its NAME being there**, and it is not a quibble here: this bake's own thesis is
+> that the content is worked under other fields' labels.*
+
+### ★★★ THE BOUNCE IS THE RESULT, AND IT IS A CLEAN ONE
+
+*The forward predicted it: "the content is here and is receipted, but under `quadric`, `combinatorics`
+and `complex-analysis` heads, not as algebraic geometry."* ⇒ ***Measured, that prediction holds
+exactly.*** *`algebraic variety`, `scheme`, `Zariski`, `elliptic curve`, `Riemann surface`,
+`j-invariant`, `canonical bundle`, `plane cubic`, `discriminant locus`, `branch locus` — **every one
+×0 across seventeen bodies** — while the objects those words name are computed in five papers and
+carry running receipts.*
+
+⌗ **So this field's register is almost entirely LANDED, and what it is owed is almost entirely NAMES.**
+*That is a different debt from the one the first nine gathers found, and it is a smaller one — but it
+is not nothing, because a paper that computes a discriminant locus without saying so cannot be found
+by anyone looking for one.*
+
+### ⌗ THE TABLE
+
+| register | its paper | disposition |
+|---|---|---|
+| **the horizon cubic's discriminant $\Delta=4-27(2M)^2$ and its zero-locus = the two Nariai values** | `P05`, `P12`, `P03` | ***LANDED.*** *`P05` states $\Delta$ and its simple zero; `P12` carries $-4\alpha^4(27M^2-\alpha^2)$ vanishing at $\Lambda M^2=1/9$ with the isotropy jump $4\to6$* |
+| **the reducible cubic factors as line ∪ conic, and its SINGULAR POINT is Nariai** | `P03`, `P12` | ***LANDED, and in the field's own term.*** *`singular point` ×5 corpus-wide, and `P03`'s two are this; `P12` gives the factoring $(r-r_0)(r^2+rr_0+r_0^2-1)$ with the quadratic factor the fundamental ellipse* |
+| **the 3-sheeted branched cover, monodromy $=$ Galois $=S_3$, $\Delta$ not a square** | `P05` | ***LANDED, and freshly repaired.*** *r3528–r3530 swept 21 sites in seven papers so the corpus now says ONE thing about deck-vs-monodromy; this row would have been PART-LANDED three revisions ago* |
+| **the cross-ratio of the marked points, its equianharmonic collapse, $j=0$ / CM by $\omega$ kept apart from the horizon cover** | `P05` | ***LANDED, with its fence.*** *`equianharmonic` ×6 and `complex multiplication` ×1, both `P05`'s, and the paper's own "not here shown to be one thing" bound is intact* |
+| **`P09`'s Petrov speciality discriminant $I^3-27J^2$ — a SECOND discriminant, independent of the horizon cubic's** | `P09` | ***LANDED.*** *`speciality` ×11, all `P09`'s; the object is the self-dual Weyl operator's characteristic cubic and it is genuinely not the horizon cubic* |
+| ⚠ **`SP_S4` the two discriminants are the SAME ALGEBRAIC EVENT on different cubics** | `P09` ← spectral | **NOT THIS FIELD'S ROW.** *The spectral gather at r3542 holds it as `S4`, PART-LANDED.* ⇒ *Recorded here so the two ledgers do not both claim it and neither carries it — **this bake CREDITS and EXTENDS `SP_S4`, and the extension is that the two discriminants are the field's own subject, which makes the connection an algebraic-geometry statement rather than a coincidence of formulas*** |
+| ⛔ **`L8` the family is a PENCIL of plane cubics, and its three critical loci are three of its members** | `P07` | ***POINTER OWED, and sharply.*** *`P07` cites `\rcpt{L8_the_pencil}` in its own prose — and **the word "pencil" occurs in `P07` exactly once, inside that receipt key**. `pencil` ×6 in live prose is `p0`'s five (pencils of PLANES and QUADRICS) and `P03`'s one; `plane cubic` ×0.* ⇒ ***A receipt landed in a paper that has no word for what it establishes.*** ⌗ *And `P03`'s only statement on the matter — "NOT a pencil" — is in a `%` masthead, is about the reducible-plane-cubic sense, and is invisible to every instrument that reads bodies* |
+| **`genus` is TAXONOMIC corpus-wide, never the genus of a curve** | — | ⚠ **PREMISE WRONG, LANDED ANYWAY.** *The work order counted `genus` ×21 as this field's reach; all ~21 are the genus/species metaphor, glossed by `P02` at zeroth order as "the interval". **The correction is the finding** and it belongs on the record rather than in a paper* |
+| **`P07`'s `blow-up` is a CURVATURE blow-up, not a resolution of a singularity** | — | ⚠ **PREMISE WRONG, LANDED ANYWAY.** *`blow-up` ×1 corpus-wide and it is the spacetime homonym; **no algebraic-geometry blow-up occurs anywhere**, so the field's most characteristic operation is genuinely absent* |
+| ⛭ **`AG1` the two discriminants are one classical formula apart, and `resultant` is ×0** | `P03`, `P12` | ***POINTER OWED, and it is the sharpest instance of this field's whole thesis.*** *The corpus states the reducible factoring in two papers and computes BOTH of its degenerations — the conic's own discriminant $4-3r_0^2$ (which is `P03`'s slicing discriminant) and the line-meets-conic condition $3r_0^2-1$ — and their product with the second squared IS $\mathrm{disc}(C)$, the textbook discriminant formula for a reducible plane curve.* ⇒ ***Two papers hold the two halves of a named identity and neither names it; `resultant` ×0, `discriminant locus` ×0.*** ⌗ *Found because the catastrophe gather flagged the row that conflates them and 59 then found the same conflation live in its own `P3` landing — so this is the one place where the field's missing NAME had already cost a real sentence.* ⛔ **AND THE FIELD'S OWN FIRST GLOSS OF IT WAS WRONG:** *r3556 read the resultant's zeros as a different KIND of event; they are the same event differently designated — all four zeros are Nariai, and the two factors distinguish **which root is designated at the merger**, not whether one occurs. Corrected r3560 by 59 at r3555.* `AG1`, ALL PASS |
+| **the nine CHECKED-NEGATIVE readings** | — | **HELD.** *`P06`'s `projective type` and `moduli-free` are genuine AG language CITED to `p0` and not worked there; `P16`'s `singular point` is an apparent pole; `p0` is negative for CURVE-AG while carrying substantial quadric content* |
+
+### ⌗ WHAT THIS GATHER FOUND
+
+***One pointer owed, two premises corrected, and every object landed.*** *No substance is owed by this
+field to any paper — which, across ten gathers, makes it the first register with no substance debt at
+all, and the reason is structural rather than creditable: **the objects were landed by other fields
+before this one was thrown.***
+
+⛭ **THE POINTER THAT IS OWED IS WORTH MORE THAN IT LOOKS.** *`L8_the_pencil` was, until r3537, the
+corpus's ONE unresolvable `\rcpt{}` key — cited by `P07` and registered nowhere.* ⇒ ***So the same
+structure was missing from the index AND missing from the paper's vocabulary, and the two absences have
+the same cause: nothing in the corpus was calling it a pencil.*** *The index half is closed. The paper
+half is one clause, and it buys the thing the receipt actually proves — that the three critical loci
+are not three facts but one family read at three values of its parameter.*
+
+⌗ **AND THE FIELD'S OWN BOUNDARY, stated plainly.** *An algebraic geometer reading this corpus would
+find a cubic surface's worth of work and no variety, no scheme, no Riemann surface and no blow-up. **The
+corpus does algebraic geometry of exactly one curve, thoroughly, and no algebraic geometry at all.***
+*That is a true sentence about the boundary and it is not a debt: nothing the corpus claims needs the
+apparatus it does not have.*
+
+---
 
 ## ⛭ THE BASELINE, MEASURED FIRST
 
@@ -84,3 +143,38 @@ one receipt set, four fields' vocabulary; the algebraic-geometry framing (discri
 cubic's singular point, branched cover) is the reading this bake adds by name, and it duplicates no
 receipt. The two crux corrections — `genus` taxonomic, `blow-up` a curvature homonym — are on the record.*
 
+
+---
+
+## ⛭⛭⛭ `AG1` — **THE TWO DISCRIMINANTS ARE ONE CLASSICAL FORMULA APART, AND THE CORPUS COMPUTES BOTH HALVES AND NAMES NEITHER**
+
+*Worked r3556, corrected r3560, and entered here as a register at r3568 — **because it was named in
+this ledger's landing table before it was worked in this ledger's body**, which is the fabrication
+class `check_landing_rows_trace` exists to catch. The receipt was real throughout
+(`receipts/P03_slicing_curve/AG1_the_two_discriminants_are_a_resultant_apart.py`, registered, ALL
+PASS); what was missing is the thing a landing row points AT.*
+
+**⌗ THE QUESTION.** *`P03` reads its three regimes off a discriminant $4-3r_0^2$; `P05` and `P12`
+state the horizon cubic's $\Delta$. The catastrophe gather flagged a row conflating them, and 59
+found the same conflation live in its own `P3` landing at r3547. **So: what IS the relation?***
+
+**⌗ WHAT IT IS.** *Under the corpus's own reducible factoring $(r-r_0)(r^2+rr_0+r_0^2-1)$, the two
+degenerations are different events —* ***the conic's own two roots colliding***, *whose discriminant
+in $r$ is exactly $4-3r_0^2$, and* ***the line meeting the conic***, $\mathrm{Res}=3r_0^2-1$. *And
+the whole cubic's discriminant is their product with the resultant SQUARED:*
+
+$$\mathrm{disc}(C) \;=\; \mathrm{disc}(\text{conic})\cdot\mathrm{Res}(\text{line},\text{conic})^2 \;=\; (4-3r_0^2)(3r_0^2-1)^2$$
+
+***which is the textbook discriminant formula for a reducible plane curve, instanced by the horizon
+cubic.*** ⇒ **Two papers hold the two halves of a named classical identity and neither names it;
+`resultant` ×0 and `discriminant locus` ×0 across seventeen bodies.**
+
+**⚠ AND ALL FOUR ZEROS ARE NARIAI** *— corrected by 59 at r3555 after this bake's first gloss said
+otherwise. Each of $r_0=\pm1/\sqrt3,\pm2/\sqrt3$ carries $\|2M\|=2/(3\sqrt3)$ exactly and leaves the
+cubic with a repeated root.* ⇒ ***They are the four $r_0$-DESIGNATIONS of the two Nariai
+configurations, and the two factors say which root is designated at the merger:*** *where
+$4-3r_0^2$ vanishes the conic's own roots collide and $r_0$ stands apart as the simple one; where the
+resultant vanishes $r_0$ **is** the repeated root.* **So the reason to name which discriminant is
+meant is that the slicing parameter's own misses half the designations.**
+
+⌷ `POINTER OWED` — *the paper-side repair is 59's and is done; what is owed is the NAME.*

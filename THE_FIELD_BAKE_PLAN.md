@@ -70,6 +70,128 @@ r3164–r3176 were already thin when `622` recorded its list as "complete"; `r34
 
 ## ⌗ THE PROTOCOL — one field at a time, as many turns as it takes
 
+> ### ⛭ ZERO: THE ENVIRONMENT, BEFORE ANY OF IT — *added r3542 (node 60)*
+>
+> ***A fresh container does not carry what the receipt layer needs, and a bake's receipts will fail
+> on the import line rather than on the physics.*** *Three of the newest field receipts — `KT1`,
+> `CX1`, `CH1` — failed in sequence with `ModuleNotFoundError` on a clean checkout, one module at a
+> time, each failure looking exactly like a defect in the ledger that owns them.* ⇒ **Before reading
+> a bounce as a finding, install:**
+>
+> ```
+> pip install sympy numpy scipy
+> ```
+>
+> *With those present all 47 newest-bake receipts run and print `ALL PASS`.* ⌗ **And one gate cannot
+> run at all without a TeX toolchain: `corpus/check_compile.py` needs `pdflatex`, so on a container
+> without it that gate is UNRUN rather than green — which is a different thing and must be reported
+> as the different thing.** ⚠ *And UNRUN is not harmless: with the toolchain present it fails on
+> main (59, r3555). **Install TeX or report the gate as unmeasured; do not report it as benign.***
+>
+> ⚠ ***The general rule this is an instance of: an environment failure and a corpus failure are
+> indistinguishable from the exit code, and the environment is the one you can check in a second.***
+>
+> ⛔⛭⛭ **AND THE SECOND INSTANCE, WHICH COST A WRONG CONCLUSION BEFORE IT WAS CAUGHT — r3544.**
+> ***A CLAUDE CODE SESSION CLONES THIS REPOSITORY SHALLOW.*** *`.git/shallow` present, 68 commits
+> against 1337.* ⇒ **Every receipt that pins a historical quotation to a commit — the corpus's own
+> repair convention since r2376+c54.226, applied at least a dozen times — reads an EMPTY STRING from
+> `git show <sha>:<file>` and its check silently flips.** *Eleven receipts under `receipts/L2*/`
+> were red for that reason and for no other, and a sweep of the tree found **seventeen deliberate
+> commit pins across eleven files pointing at objects the clone did not contain**. I had the finding
+> half-written as a corpus defect before checking `.git/shallow`.*
+>
+> ```
+> git fetch --unshallow origin          # ~1300 commits; do it BEFORE reading a red receipt
+> ```
+>
+> ⌗ *Two of the six failing checks in `L263/S1` were this and nothing else, so the count 59 measured
+> — six — was a count taken on a shallow clone. **The real number is four**, and all four are now
+> repaired.* ⚠ ***A check that reads history is a check on the clone as much as on the corpus, and
+> the two are the same exit code.***
+>
+> ### ⛭⛭ AND IF THE FULL GATE SWEEP BECOMES THE STANDING CHECK, ITS SETTINGS ARE PART OF IT — r3550
+>
+> *59 proposes running all **93** `corpus/check_*.py` before and after each stage-3 session, after
+> finding it had been running **three**. That is the right check and it costs about a minute.* ⇒
+> ***But the sweep is itself an instrument, and two runs of it can disagree by more than the corpus
+> does.*** *Measured here, each falsifiable in seconds:*
+>
+> | if the sweep… | then | measured |
+> | --- | --- | --- |
+> | does not set `NODE` | `check_claims` **fails** — `rc=2`, *"NODE is not one of 54, 56, 57, cc54"* | with `NODE=ci`, `rc=0` |
+> | uses a per-gate timeout under ~2½ min | `check_cross_row_dupes` **fails** with `rc=124` | measured **128 s** wall. ⚠ *A timeout of **120 s** — the obvious round choice — misses it by eight seconds, which is exactly how it caught me* |
+> | counts `check_receipts_run` | it fails whenever the tree digest has moved | a ~9-minute re-run, not a defect |
+>
+> ⇒ ***So "n gates failing" is not a number until the sweep is specified*** *— and three of the
+> ninety-three answer to the runner rather than to the tree.* **The specification:**
+>
+> ```
+> NODE=ci ; timeout 420 per gate (3x the slowest, measured) ; the list is `ls corpus/check_*.py`
+> — 93, and say so
+> ```
+>
+> ⚠ ***ONE OF THE NINETY-THREE IS NOT A CORPUS FACT: `check_receipts_run` reports the age of a
+> CACHE***, *so it fails whenever the tree digest has moved and a sweep that counts it is counting
+> its own container.*
+>
+> ⛔⛭⛭ **AND `check_compile` IS THE OPPOSITE, WHICH I HAD BACKWARDS — corrected r3556.** *r3550 and
+> r3552 filed it beside `check_receipts_run` as "not a corpus fact", on the strength of it raising
+> `FileNotFoundError: 'pdflatex'` in this container **and in CI**.* ⇒ ***59 has `pdflatex` installed
+> and reports it a REAL failure on main.*** *So the toolchain's absence was not making the gate
+> meaningless — it was **hiding a live compile failure from two of the three places anyone looks**.*
+> **UNRUN is a different thing from green AND a different thing from harmless: it is the absence of
+> a measurement, and the measurement, once taken, came back red.** ⌗ *That is this section's own
+> rule turned around: I had been reading "the container cannot answer" as "there is nothing to
+> answer", which is the more comfortable of the two readings and was the wrong one.* ⌗ **This is the same rule as the two lines above it,
+> for the third time in one session: an environment failure and a corpus failure are indistinguishable
+> from the exit code.**
+>
+> ⛭⛭ **AND THE THIRD TURN OF IT — r3572, and this one is the INSTRUMENT'S defect, not the reader's.**
+> *`check_compile` was listed in **both** CI jobs. The `compile` job installs `texlive-full` and can ask
+> the question. The `fast` job cannot — and there `subprocess.run(['pdflatex', …])` did not report a
+> missing toolchain, it **raised `FileNotFoundError` and took the whole job down**.* ⇒ ***Every push this
+> session was red on a traceback, and a real failure arriving behind it would have looked exactly the
+> same red.*** *Fixed by giving the gate a **DECLARED** exemption: with no `pdflatex` it exits **2** and
+> says install TeX, unless the caller sets `COMPILE_UNRUN_OK` naming, in writing, where the tree IS
+> compiled. `gates.yml` sets it on the fast step and names the `compile` job. **`shutil.which` is a
+> measurable discriminator; a bare `try/except FileNotFoundError` would have been the inferred kind.***
+>
+> ⛔ **AND THE EXEMPTION LEAVES A HOLE, WHICH IS WHY IT IS WRITTEN DOWN HERE AND NOT ONLY IN THE CODE.**
+> *The `compile` job is gated `main || schedule`.* ⇒ ***So a pull request's LaTeX is compiled NOWHERE:
+> a branch can go green in `fast` and break the papers, and only the merge to main finds out.*** *That is
+> exactly how 59's `pdflatex` found a failure two of three places had missed.* **Closing it costs a
+> `texlive-full` install on every PR push — a compute decision that is Daryl's, not a node's — so it is
+> recorded as a known, declared gap rather than taken.** ⌗ *The cheap half of the close, if it is wanted:
+> run the `compile` job on `pull_request` too, with the apt cache warmed.*
+>
+> ⛭ **AND TWO OF THE THREE GATES LEFT UNWIRED AT r3542 ARE NOW GREEN — one wired, one NOT, r3572.**
+> *`check_one_state` passes ("no paper narrates its own construction") and is **wired**; a gate that
+> passes and is not run is a gate that rots.* ⛔ ***`check_revision_collisions` also passes here and is
+> DELIBERATELY LEFT OUT, because wiring it would turn 59's branch red on every push.*** *`PARITY = 1 if
+> NODE in ('57','59') else 0`, and CI runs `NODE=ci` — so the runner always checks the **EVEN** half, and
+> every commit on the odd line reads as out of band.* ⇒ **The runner does not know which line it is
+> checking, and on `main` it is checking both.** *Wiring it needs that settled first — a declaration
+> mapping the branch to its node, not an inference from it — and that spans both lines, so it is 59's
+> to take or to hand back rather than mine to impose.* ⌗ *`check_glyph_coverage` stays out because it
+> still fails.*
+>
+> ⛭⛭⛭ **AND IT CAME BACK ANSWERED, AND THE ANSWER WAS HALF-APPLIED — r3573 (59) and r3576 (60).**
+> *59 took the routing and did the right thing with it: `_PARITY_BY_NODE` maps each line to its half,
+> **an unrecognised node is a REFUSAL rather than a default**, and `ci` maps explicitly to `None` —
+> "the runner is not a line and holds no half", which is a different statement from either half.*
+> ⛔ ***But `None` was never honoured downstream.*** *The band test is `n % 2 != PARITY`, and
+> `n % 2 != None` is TRUE for every n* ⇒ **every revision-numbered commit came back out of band, and
+> the verdict labelled itself `ODD` because `PARITY == 0` is False.** *So the map said "cannot tell"
+> and the check gave the runner a line regardless — **the exact failure the fix was written to end,
+> one level further in.*** ⌗ *This is the declared-exemption rule's second half, and it is the half
+> that is easy to miss: **a declaration is only worth what the code downstream of it does with the
+> value.** Declaring the exemption and then not honouring it is worse than not declaring it, because
+> the reader now has a written reason to believe the case is handled.*
+> ⇒ *Fixed by treating no-half like a missing upstream ref: **REPORTED, never asserted.** The
+> collision half still runs — it is the half a runner can actually answer — and with that,
+> `check_revision_collisions` is **WIRED**: `NODE=ci` → 0 on either line's branch, `NODE=60` → 0,
+> `NODE=59` → 1 on this branch (correctly: these commits are not 59's), `NODE=bogus` → refusal.*
+
 **⛔ NO FIELD IS TAKEN UP UNTIL THE ONE BEFORE IT MEETS THE BAR.** *The failure this plan exists to stop
 is breadth bought with depth.*
 

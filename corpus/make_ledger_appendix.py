@@ -43,6 +43,9 @@ PAPER_FILES = {
 
 LDG = re.compile(r'\\ldg\{([^}]*)\}')
 
+# an internal revision reference: r1234, optionally suffixed (r3560b), or the fork's c54.N
+REVREF = re.compile(r'\b(?:r\d{3,4}[a-z]?|c54\.\d+)\b')
+
 
 UNI = {'\u2014': '---', '\u2013': '--', '\u00d7': r'$\times$', '\u2018': '`',
        '\u2019': "'", '\u201c': '``', '\u201d': "''", '\u00f6': r'\"o',
@@ -108,6 +111,35 @@ def resolve(rows):
         sys.stderr.write('     An appendix that points a reader at a file nobody has is not a\n'
                          '     reference; it is a claim of provenance the corpus cannot honour.\n\n')
         sys.exit(2)
+
+    # ⛔⛭⛭ SCAR FOUR, ADDED r3564 (node 60), AND IT ARRIVED WITHIN A DAY OF THE RAIL SHIPPING.
+    #   This module opens by naming the receipt generator's three scars and closing them "rather
+    #   than waiting to acquire them".  It then acquired a fourth of its own, from a direction
+    #   neither generator had met: ** the descriptions are copied from each ledger's frontmatter,
+    #   and a ledger's frontmatter is written for an INTERNAL reader. **  Two of them say "thrown
+    #   r3437", "the r3453 measure", "verified at r3438" -- and the generator wrote those straight
+    #   into EIGHT published paper appendices, where check_revleak found them.
+    #     ⇒ *** A generator that spans two audiences IS a boundary, and an internal revision number
+    #         is exactly what does not survive one.  The registry's own header promises the
+    #         description "cannot drift from the file" -- which is true, and is why the leak
+    #         PROPAGATES rather than staying put. ***
+    #   ⌗ REFUSED rather than STRIPPED, deliberately and in this module's own idiom: silently
+    #     rewriting a description would make the appendix disagree with the registry it claims to
+    #     be generated from, which is scar (2) wearing different clothes.  The author rewords it.
+    leaky = [(r, sorted(set(REVREF.findall(r.get('what', '')))))
+             for r in rows if REVREF.search(r.get('what', ''))]
+    if leaky:
+        sys.stderr.write('\n  REFUSING TO EMIT %d ROW(S) WHOSE DESCRIPTION CARRIES AN INTERNAL\n'
+                         '  REVISION REFERENCE:\n' % len(leaky))
+        for r, refs in leaky:
+            sys.stderr.write('     corpus/ledgers_registry.md line %d: %s  -> %s\n'
+                             % (r['line'], r['key'], ', '.join(refs)))
+        sys.stderr.write('     These become published paper prose.  A revision number is this\n'
+                         '     corpus talking to itself, and check_revleak fails on it in any\n'
+                         '     paper body.  Reword the ledger frontmatter the registry copies --\n'
+                         '     the fact usually survives without the number ("thrown after the\n'
+                         '     Phase 4 survey").\n\n')
+        sys.exit(3)
     return rows
 
 

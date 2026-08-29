@@ -90,6 +90,21 @@ STATE = {
     'PHASE7_BUILD_LEDGER.md':                         'the Phase-7 build record — RETIRED r3127, spent planning: the build ran and its findings are banked in the papers',
     'THE_DISSOLUTION_CENSUS.md':                      'the six dissolution clusters',
     'PHYSICAL_VALUES_LEDGER.md':                      'the physical values and their provenance',
+    # ⛭ r3548 (node 60): THREE DOCUMENTS UNCLASSIFIED SINCE r3373/r3378/r3408, and `--check` has
+    #   exited 1 on every push since -- which under the `fast` job's `set -e` is the r2440 shape
+    #   exactly: the step aborts on its FIRST command, so nothing after it runs in CI. **The cost of
+    #   an unclassified document is never the document.**
+    #   Classified HERE and not annotated into the files, per this module's own FOLD52 convention:
+    #   they are another line's PO-13 working documents and a cross-line annotation is a thing to
+    #   keep alive through the next absorption. Two of the three DECLARE their kind in their own
+    #   frontmatter ("Worked state, held OUTSIDE the corpus" / "the worked state of PO-13") and are
+    #   transcribed rather than judged. ⚠ The third, the run spec, carries no frontmatter at all and
+    #   is the one placement that is a READING: it is the specification of what PO-13 runs, held
+    #   beside PO13_WORKING_STATE, so it is binned with it. **Its owning line should move it if that
+    #   is wrong -- this is a declaration made visible, not a claim to own the document.**
+    'HORIZON_TRANSIT_WORKING_STATE.md':                'where the horizon-to-branch-point transit stands -- worked state, held outside the corpus',
+    'PO13_WORKING_STATE.md':                           "PO-13's worked state, held outside the corpus",
+    'PO13_RUN_SPEC_FOR_CC54.md':                       'what PO-13 needs run, specified for a node with compute',
     'THE_RECEIPT_AUDIT.md':                           'the receipt audit',
     'THE_FERMION_SECTOR_GEOMETRY.md':                 'the fermion sector read in the geometry',
 }

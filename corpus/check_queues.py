@@ -48,8 +48,28 @@ def main():
             checked += 1
             ln_for_codes = bare
             for pid in set(PROBE.findall(ln_for_codes)):
+                # ⛭⛭ r3550 (node 60): ** THE SETTLED-WORD LIST PREDATES THE LANDING TABLES. **
+                # The gathers from r3524 on put a disposition table in every field ledger, and its
+                # vocabulary is not this list's.  `QUADRIC_GEOMETRY_LEDGER.md:66` is a landing ROW
+                # -- "| **`D3` Segre bounces, with a reason** | **BOUNCED** | ... an honest answer to
+                # the queue's own question first |" -- and it fired: the row MENTIONS a queue, names
+                # a probe recorded RUN, and says BOUNCED, which this list did not know.
+                #   ⇒ *** So the gate read a row REPORTING an adjudication as a queue entry awaiting
+                #       one -- r2386's own meta-pattern, "a gate that cannot tell a report from the
+                #       thing reported punishes the act of recording", arriving from the one
+                #       direction r2386 could not have anticipated: a table format invented later. ***
+                # ⌗ TWO WORDS ADDED AND NOT SIX, because this gate's own comment is right that a
+                #   loose exemption fails silently in the direction of passing:
+                #     · BOUNCED   -- fired; the probe RAN and the field bounced.  An adjudication.
+                #     · WITHDRAWN -- in use at COMPLEX_ANALYSIS_LEDGER.md:250.  An adjudication.
+                #   PART-LANDED and LANDED AS A BOUND need nothing: `\bLANDED\b` already matches
+                #   inside them.  ** HELD and the two OWED forms are deliberately NOT added ** --
+                #   `HELD` is ordinary English that a real queue line could carry ("held over"), and
+                #   `SUBSTANCE OWED` / `POINTER OWED` say work REMAINS, which is the state this gate
+                #   exists to look at.  Anything else declares itself with [REPORTED], as designed.
                 if pid in ran and not re.search(
-                        r'\b(RUN|LANDED|ANSWERED|SETTLED|RESOLVED|CLOSED|DONE)\b', ln, re.I):
+                        r'\b(RUN|LANDED|ANSWERED|SETTLED|RESOLVED|CLOSED|DONE|BOUNCED|WITHDRAWN)\b',
+                        ln, re.I):
                     stale.append((f, pid, ln.strip()[:90]))
     print(f"  queue-ish lines examined: {checked}")
     print()
