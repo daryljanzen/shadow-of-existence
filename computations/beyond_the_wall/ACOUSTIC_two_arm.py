@@ -1060,21 +1060,32 @@ def _phi_hyper_grid(l, beta, chi):
     Returns (n_eta, nk) to match the flat j_l grid.  Degree-L mode (beta=L+1) feeds l<=L only.
     Validated to <1e-3 against exact mpmath across (beta,l) up to (1000,500) and the flat limit."""
     a = l + 1.0
-    x = np.cos(chi); s = np.sin(chi)                 # (n_eta,)
+    x = np.cos(chi); s = np.sin(chi); nc = len(chi)  # (n_eta,)
     nmax = int(beta.max()) - 1 - l
     if nmax < 0:
-        return np.zeros((len(chi), len(beta)))
-    R = np.empty((nmax + 1, len(chi)))
-    R[0] = 1.0
+        return np.zeros((nc, len(beta)))
+    # ** rescaled log-space recurrence: at low l / high beta the prefactor exp(logpre) overflows while R
+    # underflows -- their scales do not fit in float separately.  Track log|R_n| + sign, rescaling the
+    # working R up when it underflows, and combine with logpre BEFORE the exp. **
+    logR = np.empty((nmax + 1, nc)); sgn = np.empty((nmax + 1, nc))
+    Rm2 = np.ones(nc); Rm1 = x.copy(); scale = np.zeros(nc)
+    logR[0] = 0.0; sgn[0] = 1.0
     if nmax >= 1:
-        R[1] = x
+        logR[1] = np.log(np.abs(x) + 1e-320); sgn[1] = np.sign(x)
     for n in range(2, nmax + 1):
-        R[n] = (2 * (n + a - 1) * x * R[n - 1] - (n - 1) * R[n - 2]) / (n + 2 * a - 1)
+        Rn = (2 * (n + a - 1) * x * Rm1 - (n - 1) * Rm2) / (n + 2 * a - 1)
+        logR[n] = np.log(np.abs(Rn) + 1e-320) + scale
+        sgn[n] = np.where(Rn >= 0, 1.0, -1.0)
+        Rm2, Rm1 = Rm1, Rn
+        m = np.abs(Rm1) < 1e-100
+        if m.any():
+            Rm1[m] *= 1e100; Rm2[m] *= 1e100; scale[m] -= 100 * np.log(10.0)
     nidx = (beta - 1 - l).astype(int)                # (nk,)
     logpre = l * np.log(2 * beta[:, None] * s[None, :]) + gammaln(l + 1) - gammaln(2 * l + 2)  # (nk,n_eta)
-    Phi = np.exp(logpre) * R[nidx.clip(min=0), :]    # (nk, n_eta)
+    Phi = (np.take(sgn, nidx.clip(min=0), axis=0)
+           * np.exp(logpre + np.take(logR, nidx.clip(min=0), axis=0)))   # (nk, n_eta)
     Phi[nidx < 0, :] = 0.0                            # l > beta-1: no contribution
-    return Phi.T                                     # (n_eta, nk)
+    return Phi.T                                      # (n_eta, nk)
 
 
 def _project(kb, ee, Y, ls, x0, e_sw):
