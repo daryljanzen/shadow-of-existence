@@ -2574,3 +2574,51 @@ remains to fit the sky is not the source magnitude.
 Fitting run complete: no constant source factor fits (r3550); the misses are ordered by scale (r3551),
 pointing at the source's time profile, not its magnitude, as the remaining structural freedom -- if CR has
 one at all.
+
+---
+
+## r3552 (branch) — THE THRESHOLD PRINCIPLE reduces to the GSRC ENDPOINTS: source EXHAUSTED against the framework's own rule
+
+**58's answer to cc54's question:** the framework DOES specify a time-dependent source weight -- the threshold
+principle. Local source applies where the perturbation is ABOVE the critical density (bound); below, Hubble
+flow (source off); sharp transition (draft, threshold-problem sec). Build it derived, not fitted, run all
+four observables, gate on control.
+
+Implemented as THRESH: the boost gates by the sign of the local overdensity (critical density = mean in a
+flat universe), a sharp step. Two readings of "the perturbation's density":
+
+| config | l1/lA | P1/P2 | P1/P3 | parity |
+|---|---|---|---|---|
+| THRESH total-overdensity | 0.8272 | 4.094 | 2.551 | 0.103 |
+| THRESH photon(plasma) | 0.8259 | 4.201 | 2.699 | 0.117 |
+| GSRC=1 (full boost) | 0.8272 | 4.094 | 2.551 | 0.103 |
+| GSRC=0 (no boost) | 0.7292 | 0.888 | 0.693 | 0.007 |
+| SKY | 0.7312 | 2.217 | 2.277 | 0.028 |
+
+Control gate: THRESH=1 GSRC=1 on lcdm byte-identical to plain control (Gf=1 -> no-op by construction).
+
+**⊘ BOTH readings ~= GSRC=1.** The gate weight is ~1 wherever the source matters: the total overdensity is
+CDM-dominated and monotone-positive near recombination; the photon overdensity is positive early
+(super-horizon) exactly when the radiation weight Ogv is large, its rarefaction excursions coming later when
+Ogv is already small. So "above the mean density" holds whenever it counts -> full boost -> GSRC=1. The
+threshold gate never fires OFF where it would matter.
+
+**⊘ THE SHARP THRESHOLD PRINCIPLE REDUCES TO THE GSRC ENDPOINTS.** The two computable sharp readings are the
+two endpoints already scanned: mean/critical-density -> GSRC=1 (matter makes the region "always bound", the
+source over-drives); binding/collapse threshold (delta_c ~ 1.686) -> GSRC=0 (the plasma's delta ~ 1e-3 is
+never near collapse, never bound, source off). There is NO sharp derived threshold that lands BETWEEN: the
+linear CMB plasma never sits in a partially-bound regime, so the "small-early, large-late" weight would need
+a chosen intermediate delta_c -- a FIT, and one that contradicts the draft's explicit sharpness.
+
+**⊘⊘ SOURCE EXHAUSTED AGAINST THE FRAMEWORK'S OWN RULE.** The GSRCA scan (r3550/r3551) showed no constant
+value between the endpoints fits (four observables cross the sky at four disjoint alphas, ordered by scale).
+r3552 shows the threshold principle -- the framework's own derived weight -- is not a new direction: its
+computable forms ARE those endpoints, both of which miss the sky. So the source constraint is exhausted,
+and it is exhausted against the framework's threshold principle itself, not against a constant we chose (58's
+own stated criterion for a clean negative). The +7% / +65% disagreement stands; the source is not the free
+direction that resolves it, by the framework's rule.
+
+What remains (unchanged by this): the disagreement is real and diagnosed (loss of cross-scale phase
+coherence, r3540-r3546); the calibrated q=1..3 Planck positional-parity disagreement is GSRC=1's (r3548-49);
+the source is now closed as a fitting knob (r3550-r3552). The free direction that would fit the sky, if CR
+has one, is not the source -- it is the rate split or the projection, or CR genuinely disagrees with the CMB.
