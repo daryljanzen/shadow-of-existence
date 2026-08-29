@@ -1963,3 +1963,48 @@ and located: the odd-even alternation, ~0.35 vs 0.62 even/odd, not the driving.
 (even-peak suppression, measured 0.35 vs 0.62, NOT driving work). Plus the position +7% (owed layer
 conversion + driving, a rate/source consequence). Plus the distinctive prediction (potential-decay turning
 point at q~3). The next term to chase is the even/odd compression-rarefaction asymmetry, directly.**
+
+### ⛭⛭ THE EVEN-PEAK SUPPRESSION IS A ~2x EFFECTIVE BARYON LOAD (r3539, Daryl's ship)
+**Daryl's sharpening: baryon loading is the KNOWN cause of even-peak suppression and both arms carry the
+same R, so the question is not "does it track R" but WHY CR sits at 0.35 where control sits at 0.62 AT THE
+SAME R. The decisive quantity is the effective-R MULTIPLIER (the R' at which control matches CR's value):
+constant => CR = a higher effective baryon load; varying => not a baryon effect.**
+
+Even/odd height ratio 2*P2/(P1+P3), STACKPERT=1 GSRC=1 HIER KCONT, clean regime R<=1 (P2 a real local max;
+R>=1.5 CR's even peak ceases to be a distinct peak -- itself a sign of very strong suppression -- and is not
+quoted). Gate: control R=1 = 0.624 ~ the known 0.62.
+
+| R | CR e/o | CTL e/o | GAP | eff-R (CTL=CR) | multiplier |
+|---|---|---|---|---|---|
+| 0.50 | 0.657 | 0.834 | 0.177 | 0.91 | **x1.82** |
+| 0.60 | 0.582 | 0.788 | 0.206 | 1.13 | **x1.89** |
+| 0.75 | 0.482 | 0.722 | 0.241 | 1.45 | **x1.94** |
+| 0.90 | 0.398 | 0.661 | 0.263 | 1.80 | **x2.00** |
+| 1.00 | 0.351 | 0.624 | 0.273 | ~2.0+ | **~x2.0** |
+
+**⌘ RESULT: CR carries an EFFECTIVE BARYON LOAD ~1.9x the actual.** The multiplier is ~1.8-2.0 -- close to
+constant, which by Daryl's own criterion means CR behaves like a higher-baryon-load universe: its extra
+even-peak suppression IS a baryon-like effect, NOT "something else." So the alternation is not a new
+mechanism -- it is the ordinary compression/rarefaction (baryon-loading) asymmetry, operating in CR as
+though the baryon load were doubled.
+
+⌗ **HONEST NUANCE:** the multiplier is not PERFECTLY constant -- it climbs mildly and monotonically, 1.82 ->
+2.00 over R=0.5->1.0 (~10%). So it is DOMINANTLY an effective baryon load (~2x) with a small residual
+R-dependence; not a single clean rescaling. The gap itself grows with R (0.18 -> 0.27), consistent with a
+~constant multiplicative factor on a growing base.
+
+**⇒ AND THIS CONNECTS Phi TO THE AMPLITUDE FOR THE FIRST TIME (Daryl's candidate, borne out).** The
+compression/rarefaction asymmetry comes from the baryons riding in the potential wells -- a deeper or
+longer-lasting well gives more asymmetry. CR's low-mode wells DECAY SLOWER than control's (the measured Phi
+result: per-half retention 1.26/1.09 at q=1/q=2), so at the SAME baryon load the baryons ride a
+longer-lasting well -- a deeper effective potential -- which is exactly "same R, larger effective load."
+The ~2x effective baryon load is plausibly the ~26%/9% slower well decay compounded over the oscillation
+history. The measured Phi decay and the measured amplitude residual are the same physics: the slower-decaying
+wells over-load the baryons.
+
+**⇒ PO-13, amplitude residual now TRACED end to end (not closed -- traced):** the +65% P1/P2 over-drive =
+the even-peak suppression = the odd-even alternation = a ~2x effective baryon load = CR's baryons riding its
+slower-decaying wells. NOT the driving (r3538). One residual, one cause, connected to the measured Phi
+history. What remains genuinely open: whether the ~2x effective load is quantitatively the Phi-decay excess
+(a forward prediction to check), and the mild multiplier-rise (the non-baryon remainder). Position +7% and
+the q~3 Phi turning point stand as before; odd-even is no longer a separate item -- it is this.
