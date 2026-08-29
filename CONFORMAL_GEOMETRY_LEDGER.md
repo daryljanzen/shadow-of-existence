@@ -30,6 +30,56 @@ current: r3511
 
 # THE CONFORMAL GEOMETRY LEDGER — R-M's second bake
 
+## ⌗ THE LANDING TABLE — where each register stands against the corpus, checked r3531
+
+> **▣ THE `\ldg` GATHER FOR THIS LEDGER — and it was run to test what a BOUNCE looks like in the
+> reference matrix, before fourteen more rows go in.**
+
+### ★★★ THE ANSWER: A BOUNCE IS NOT AN EMPTY ROW
+
+***This bake's central finding is landed, in the paper's own voice, with its own receipt.*** *P3
+`\rcpt{C4_gnomonic_not_conformal}` states the whole of `C4` explicitly — that the gnomonic is forced
+because a faithful planar chart must carry a straight line to a straight line, that the orthographic
+fails it, and then, **naming the criterion rather than leaving it implicit**: "the stereographic is the
+**conformal** projection of the sphere, preserving angles, and it carries great circles to circles rather
+than to lines."*
+
+⇒ ***So the field bounced and the bake did not.*** *What bounced was the **import** — Möbius geometry,
+conformal invariance as a working symmetry, conformal weight as substrate structure, conformal
+compactification as a method. What landed was the **reason**: which of the construction's own commitments
+does the refusing. **That is a result about the construction, and it is in a paper.***
+
+⌗ **THE CONSEQUENCE FOR THE MATRIX, which is what this gather was for:** *this ledger will show a **small
+but non-zero** row, concentrated in P3. **An empty row would have been the wrong reading and the table
+would have looked identical.** A bake that bounces on the import can still be load-bearing through the
+commitment that excluded it — so a low count here means "the field refused and said why", never "the
+bake gave nothing".*
+
+### ⌗ THE TABLE
+
+| register | disposition | where it stands |
+|---|---|---|
+| **`C4` the straight-line criterion forces the gnomonic and excludes the stereographic — *the conformal projection*** | **LANDED, with its receipt** | P3, `\rcpt{C4_gnomonic_not_conformal}`; `gnomonic` runs through six papers (P3 ×29). **Pointer owed, and it is this ledger's highest-value one** |
+| **`C1`/`C2` the conformal group of the absolute is $O(5,1)\times\mathbb{R}^+$; its extra generator is the dilation that moves $\alpha$** | **LANDED** | `homothet*` in P5 ×13, P3, P8; `dilation` in p0 ×3, P5 ×6, P8. **Pointer owed** |
+| **`L-99` the $\alpha$-family is a conformal orbit — the substrates of every $\alpha$ are the level sets of one quadratic form, so the family is a *foliation* and the null cone its singular $\alpha=0$ leaf** | **LANDED** | p0, `\rcpt{P17_the_alpha_family_is_a_foliation}`, and p0 draws the consequence the ledger wanted — *"the null cone is structural rather than a limiting case."* **Pointer owed** |
+| **inversion in a quadric: the inverse lies on the polar, $\eta(P,P^*)=\alpha^2$ at either signature** | **LANDED** | p0 (`inversion in` ×3, the identity ×5) |
+| **conformal compactification / $\mathcal{J}^+$ as an *imported* stability theorem, not a method the corpus builds with** | **LANDED as the bounded import it is** | P11 uses Friedrich ×6, P10 ×2 — imported and cited, exactly as the bound requires |
+| **`L-100` the corpus's relation to conformal infinity is already worked under another name** — P8 `sec:synchronous`'s two category errors (the chart's infinity for the age; $r=0$ for the source) *are* the statement that neither the seam nor $r=0$ is a conformal boundary | **LANDED — it was a cross-reference, not new work** | P8 `sec:synchronous` ×7. *The ledger's own note that this lead was given an ID and lost from the register for fifteen revisions is bookkeeping, and stays here* |
+| **⛔ the construction is NOT conformally invariant and does not want to be — it charts by straightness, and the gnomonic distorts angles** | **SUBSTANCE OWED — and it is the bounce's own sentence** | *`conformally invariant` appears **nowhere** in the corpus.* P3 supplies the mechanism (straightness over angles) and no paper draws the standing conclusion. **One clause, and its home is P3 beside the receipt that already earned it** |
+| **⛔ P14's conformal weight $a^{-3/2}$ is an imported convention — field-theory bookkeeping on a chosen chart, not a substrate structure** | **SUBSTANCE OWED** | P14 states the weight as *"the standard massless-Dirac form"*, which is the right description and stops short of the bound. **The ledger's point is that no substrate structure is being claimed** — worth a half-clause so a reader does not take the weight for geometry |
+| **⛔ the Möbius group on the celestial sphere does not import — CR uses the celestial sphere *projectively*** | **BOUNCED, correctly, and its reason is `C4`, which is landed** | `Möbius` ×0 corpus-wide, and that zero is the correct state. **No pointer owed; a marker here would assert a use the construction refuses** |
+| **⌗ what the two bakes establish TOGETHER — CR is a projective construction, not a conformal one; the causal structure is conformal, the construction over it is projective, and $\alpha$ is what the first does not fix and the second does** | **PART-LANDED** | `projective` in p0 ×9, P5 ×6, P3 ×5, P2, P6 — the projective character is throughout. **The paired statement, that the two live at different rungs, is nowhere**, and it is the joint result of this ledger and the quadric one rather than either alone. p0 `sec:unification` is its home |
+
+### ⌗ WHAT THIS GATHER FOUND
+
+*Three registers owed, all of them **clauses rather than sections**, and all three are the bake's
+**bounds** rather than its imports: the not-conformally-invariant statement, the conformal-weight
+convention, and the projective/conformal rung split.* ⇒ ***A pattern across five gathers now: what goes
+unlanded is disproportionately the BOUND — the sentence that says how far a result reaches. The results
+land; the fences around them do not.***
+
+
+
 > **⌗ RE-READ AGAINST c54.163 AND DECLARED CURRENT r2395.** *The fork changed **none of the four field-bake
 > archives** in the c54.153→c54.163 span, so the question was again* ***"did anything the span produced
 > bear on what this bake concluded"*** *rather than "what moved in the file". **The span produced two
