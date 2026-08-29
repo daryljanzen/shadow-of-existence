@@ -42,7 +42,7 @@ from scipy.integrate import solve_ivp, quad, cumulative_trapezoid
 from scipy.interpolate import CubicSpline
 from scipy.optimize import brentq
 from scipy.signal import argrelextrema
-from scipy.special import spherical_jn
+from scipy.special import spherical_jn, gammaln
 
 C = 299792.458
 ARM = os.environ.get('ARM', 'lcdm')
@@ -226,6 +226,15 @@ a_of_eta = CubicSpline(eg, ag)
 eta_rec = float(np.interp(A_REC, ag, eg))
 eta_0 = eg[-1]
 D_M = eta_0 - eta_rec
+# ** HYPER (r3553, 58/Daryl): project the CR arm's CLOSED-S^3 source with the HYPERSPHERICAL Bessel
+# Phi^beta_l(chi) instead of the flat spherical j_l(k x0).  CR's modes live on the discrete ladder
+# k_L = sqrt(L(L+2))/r_0 (beta=L+1) and the instrument has been projecting them with FLAT Bessels --
+# correct for the control, wrong for the closed CR geometry, and the ONE step never tested.  The S^3
+# areal radius is r_0 = D_M/stretch (the ladder's stretch=2.750 is exactly chi_LSS = D_M/r_0, LSS near
+# the antipode).  Flat is kept on the control (byte-identical gate).  A degree-L mode feeds only l<=L. **
+_STRETCH_S3 = 2.750
+R0_S3 = D_M / _STRETCH_S3
+HYPER = os.environ.get('HYPER', '0') == '1'
 # ** FREEZEJAC (diagnostic, 58's height-by-subtraction reference): freeze the clock ratio
 # phi = Jac = H_stack/H_leaf at its RECOMBINATION value, removing the RUNNING of phi while keeping
 # its level.  Paired with a running-phi run under SRCSTACK=vel, the per-peak HEIGHT ratio isolates
@@ -1044,6 +1053,30 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
     return ls, Dl
 
 
+def _phi_hyper_grid(l, beta, chi):
+    """closed-S^3 hyperspherical Bessel Phi^beta_l(chi), flat-normalised (-> j_l(k x0) as r0->inf).
+    Stable: normalised Gegenbauer recurrence R_n=C_n^{l+1}(cos chi)/C_n^{l+1}(1) (bounded in [-1,1]) with
+    the prefactor in log-space.  beta: integer degree labels (nk,); chi: radial angles (n_eta,).
+    Returns (n_eta, nk) to match the flat j_l grid.  Degree-L mode (beta=L+1) feeds l<=L only.
+    Validated to <1e-3 against exact mpmath across (beta,l) up to (1000,500) and the flat limit."""
+    a = l + 1.0
+    x = np.cos(chi); s = np.sin(chi)                 # (n_eta,)
+    nmax = int(beta.max()) - 1 - l
+    if nmax < 0:
+        return np.zeros((len(chi), len(beta)))
+    R = np.empty((nmax + 1, len(chi)))
+    R[0] = 1.0
+    if nmax >= 1:
+        R[1] = x
+    for n in range(2, nmax + 1):
+        R[n] = (2 * (n + a - 1) * x * R[n - 1] - (n - 1) * R[n - 2]) / (n + 2 * a - 1)
+    nidx = (beta - 1 - l).astype(int)                # (nk,)
+    logpre = l * np.log(2 * beta[:, None] * s[None, :]) + gammaln(l + 1) - gammaln(2 * l + 2)  # (nk,n_eta)
+    Phi = np.exp(logpre) * R[nidx.clip(min=0), :]    # (nk, n_eta)
+    Phi[nidx < 0, :] = 0.0                            # l > beta-1: no contribution
+    return Phi.T                                     # (n_eta, nk)
+
+
 def _project(kb, ee, Y, ls, x0, e_sw):
     """the line-of-sight integral with the POLARISATION SOURCE TERMS carried
 
@@ -1081,9 +1114,14 @@ def _project(kb, ee, Y, ls, x0, e_sw):
          / kb[None, :] ** 2)
     dk = np.gradient(kb)
     P = kb ** (0.965 - 1) / kb * dk
+    _hyper = HYPER and ARM == 'cr'
+    if _hyper:                                        # r3553: closed-S^3 projection kernel for CR
+        _beta = np.rint(np.sqrt(1.0 + (kb * R0_S3) ** 2))   # integer degree label L+1
+        _chi = x0 / R0_S3                                    # radial angle per eta (near antipode ~2.75)
     out = np.empty(len(ls))
     for j, l in enumerate(ls):
-        J = spherical_jn(int(l), kb[None, :] * x0[:, None] * PROJMAP)
+        J = (_phi_hyper_grid(int(l), _beta, _chi) if _hyper
+             else spherical_jn(int(l), kb[None, :] * x0[:, None] * PROJMAP))
         out[j] = np.sum(P * np.trapezoid(S * J, ee, axis=0) ** 2)
     return out
 
