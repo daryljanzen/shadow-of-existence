@@ -107,7 +107,9 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| *(none — 60's r3576 rows released with the work)* | — | — | — |
+| `corpus/check_glyph_coverage.py` | `60` | r3584 | the last real failure — and the gate sees ONE of the two rails |
+| `corpus/make_receipt_appendix.py` | `60` | r3584 | the reported glyph, U+2705, with a stated translation |
+| `corpus/make_ledger_appendix.py` | `60` | r3584 | its table is 12 entries against the other rail's 236 |
 
 > ⌗ ⛭ **60's r3576 ROWS RELEASED WITH THE WORK — `check_revision_collisions`, `check_appendix_current`,
 > `gates.yml`, the bake plan. NOTHING WAS HELD WHEN THEY WERE TAKEN.**
