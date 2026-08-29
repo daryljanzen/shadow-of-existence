@@ -266,3 +266,8 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > MARKER PASS, r3553.** *Placing `\ldg` markers at the sites the eighteen landing tables name, regenerating
 > each paper's Appendix L, and taking the ledger block from 6 of 18 ledgers toward 14.* ⌗ *`P3` and `P4`
 > released.*
+
+> ⌗ **59 CLAIMS `corpus/CR_framework.tex` (P7) AND `corpus/range_paper.tex` (P9) FOR THE MARKER PASS,
+> r3556.** *Optics and variational's landed registers live in these two — `O1`/`O4`/`O5`/`O6` in P7,
+> `V1`'s Carter chain in P9 — plus quadric, complex analysis and figure-theorem rows naming them.*
+> ⌗ *`p0` and `P14` released.*
