@@ -176,7 +176,18 @@ _rt = OR / ag ** 4 + OM / ag ** 3 + OL                            # ** the STACK
 # lcdm arm, where the rate already carries radiation. **
 _free = OM / ag ** 3 + OL
 GSRC = os.environ.get('GSRC', '0') == '1' and not RAD_IN_RATE
-Gf_of = CubicSpline(eg, (_rt / _free) if GSRC else np.ones_like(_rt))
+# ** GSRCA (r3550, Daryl): the CONTINUOUS source factor.  GSRC has only ever been run binary (0 or 1),
+# but GSRC=0 and GSRC=1 BRACKET the sky on position, amplitude AND positional parity from opposite sides,
+# on a term with no dial.  GSRCA=alpha interpolates the constraint factor linearly between the two:
+#   Gf = 1 + alpha*(rho_tot/rho_free - 1)   (alpha=0 -> GSRC=0 factor 1 ; alpha=1 -> GSRC=1 full ratio).
+# It asks the fitting question the binary flag never could: does ANY alpha land position, amplitude and
+# parity TOGETHER?  Identically 1 in the lcdm arm (RAD_IN_RATE, radiation already in the rate) -- no-op
+# gate.  Unset -> binary GSRC behaviour, so this is backward-compatible. **
+_GSRCA = os.environ.get('GSRCA')
+if _GSRCA is not None and not RAD_IN_RATE:
+    Gf_of = CubicSpline(eg, 1.0 + float(_GSRCA) * (_rt / _free - 1.0))
+else:
+    Gf_of = CubicSpline(eg, (_rt / _free) if GSRC else np.ones_like(_rt))
 # ** GSRCRAD=1 (58's r3530 diagnosis of the GSRC overshoot): apply the constraint factor _rt/_free to
 # the RADIATION source terms ONLY (Ogv*dg + Onv*dn), leaving matter/baryons at plain normalisation --
 # i.e. radiation enters Phi's source additively at full strength while the matter sector is NOT
