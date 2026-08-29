@@ -59,6 +59,7 @@ naming the way it can fail:
 """
 import os
 import glob
+import re
 import shutil
 import subprocess
 import sys
@@ -77,6 +78,45 @@ RECEIPT_SCOPES['appendix_receipts_corpus.tex'] = 'corpus'
 def _ledger_scope(name):
     """appendix_ledgers_P17.tex -> P17 ; appendix_ledgers_corpus.tex -> corpus"""
     return name[len('appendix_ledgers_'):-len('.tex')]
+
+
+
+#: ⛭⛭⛭ ** THE FLOOR IS DERIVED FROM THE SOURCE THAT REQUIRES THE ARTEFACT, NOT COUNTED FROM THE
+#:   ARTEFACT -- r3585, 59, at 60's routing. **
+#: *`min_files` was a hand-raised ratchet and it had been raised FOUR TIMES IN TWO DAYS: 1 -> 2 -> 3
+#: -> 14 -> 15 as the `\ldg` rail grew.  60's note is the right one: that is a hand-maintained number
+#: tracking an automatable fact, and a ratchet nobody remembers to raise silently stops ratcheting --
+#: at `min_files=3` this rail could have lost ELEVEN appendices and passed.*
+#:
+#: ⇒ *** The fix is NOT to count the appendices, which would make the floor equal whatever survived
+#:   and detect nothing. ***  *It is to count the thing that OBLIGES an appendix to exist: a paper
+#:   carrying at least one marker on that rail needs its appendix, and deleting the appendix does not
+#:   delete the markers.  So the floor rises by itself as the rail grows, and a lost artefact still
+#:   fails -- which is the whole property the hand number was there to provide.*
+#:
+#: ⌗ *The declared `min_files` is KEPT as a floor under the floor.  The derived number can only fall
+#: if the markers themselves are removed, which is a legitimate change; the declared one is what stops
+#: that being used to walk the ratchet back.  `floor = max(derived, declared)`.*
+MARKER = {'make_receipt_appendix.py': r'\\rcpt\{', 'make_ledger_appendix.py': r'\\ldg\{'}
+
+
+def derived_floor(rail):
+    """papers carrying at least one marker of this rail, plus a corpus-wide appendix if one exists"""
+    pat = MARKER.get(rail['gen'])
+    if not pat:
+        return 0
+    n = 0
+    for path in glob.glob(os.path.join(HERE, '*.tex')):
+        base = os.path.basename(path)
+        if base.startswith('appendix_'):
+            continue
+        body = open(path, encoding='utf-8', errors='replace').read()
+        body = '\n'.join(l for l in body.split('\n') if not l.lstrip().startswith('%'))
+        if re.search(pat, body):
+            n += 1
+    if os.path.exists(os.path.join(HERE, rail['pattern'].replace('*', 'corpus'))):
+        n += 1
+    return n
 
 
 RAILS = [
@@ -166,9 +206,15 @@ def main():
                              f"floor is a ratchet someone lowered")
 
             # (b) the artefacts, and there must be enough of them.
-            if len(live) < rail['min_files']:
-                fails.append(f"{rail['name']}: {len(live)} appendix file(s) on disk, below the "
-                             f"declared floor of {rail['min_files']} -- a missing appendix is a "
+            derived = derived_floor(rail)
+            floor = max(derived, rail['min_files'])
+            if len(live) < floor:
+                how = (f"derived from {derived} paper(s) carrying this rail's marker"
+                       if derived >= rail['min_files']
+                       else f"the declared floor of {rail['min_files']}")
+                fails.append(f"{rail['name']}: {len(live)} appendix file(s) on disk, below a floor "
+                             f"of {floor} -- {how}. A paper carrying markers needs its appendix, and "
+                             f"deleting the appendix does not delete the markers, so this is a "
                              f"FAILURE here and not a skip")
 
             checked, stale = 0, []
