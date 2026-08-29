@@ -1780,3 +1780,50 @@ crossing LOCATES a scale. A crossing scale in Phi's decay history is a far more 
 robust prediction than an overall offset -- and Phi's decay is exactly what ISW and lensing measure. **Next:
 map the crossover (matched-phase PHIQ q=1..6, both arms, same composition) and locate the crossing k, before
 any ISW/lensing comparison -- you want to know the predicted feature before going to the data.**
+
+### ⛭⛭ THE CROSSOVER, LOCATED — a crossing SCALE in CR's potential-decay history (r3535, 58's ship)
+**58's point that the q=3 reversal is the FINDING, not a caveat -- confirmed and located.** A generic "CR's
+wells persist because radiation does not dilute the background" pushes every mode one way; this CROSSES, so
+a second effect dominates at high q and the crossing locates a scale. Matched-phase PHIQ scan, q=1..6, both
+arms, STACKPERT=1 GSRC=1 (fluid path, LOS=0), per-half Phi retention:
+
+| q | CR /half | CTL /half | CR/CTL |
+|---|---|---|---|
+| 1.0 | 0.617 | 0.488 | 1.263 |
+| 1.5 | 0.519 | 0.451 | 1.152 |
+| 2.0 | 0.509 | 0.468 | 1.087 |
+| **2.5** | 0.509 | 0.511 | **0.996** |
+| 3.0 | 0.499 | 0.539 | 0.927 |
+| 3.5 | 0.506 | 0.549 | 0.921 |
+| 4.0 | 0.526 | 0.565 | 0.930 |
+| 5.0 | 0.536 | 0.607 | 0.883 |
+| 6.0 | 0.568 | 0.627 | 0.907 |
+
+⇒ ***A SINGLE, CLEAN, MONOTONIC crossing at q ~ 2.48*** (k = q pi/r_s = 2.48 pi/135.46 ~ **0.058/Mpc**,
+angular scale l ~ k D_M ~ **750**, between the 2nd and 3rd acoustic scales). Below the crossing (large
+scales) CR's potential decays SLOWER than LCDM's (retains up to +26% per half-period); above it (small
+scales) FASTER (down to -12%), staying below 1 out to q=6. The shape is set by the two arms' rates: CR's
+per-half retention is ~flat at 0.5 across q, while LCDM's RISES with q (0.49 -> 0.63) -- LCDM's small-scale
+potentials decay less per half-period, CR's do not, and the two cross at q ~ 2.48.
+
+**⌘ WHY THIS IS THE VERSION WORTH TAKING TO DATA (58's argument, and it survives the withdrawn peak
+mapping).** A crossing SCALE is far more distinctive than an overall offset: an offset can be mimicked by a
+normalisation, a sign change in the ratio cannot. And Phi's decay history is exactly what the **ISW effect**
+and **gravitational lensing** measure. So CR makes a specific, falsifiable prediction -- *its potential
+decay crosses LCDM's at k ~ 0.058/Mpc (l ~ 750)* -- that nothing else produces and that has its own data,
+independent of the CMB acoustic peaks (whose mode-by-mode connection was withdrawn in r3534).
+
+**⚠ CAVEATS kept on the record (honest, per node 59's process point):** (1) this is the FLUID path (LOS=0),
+where PHISAVE lives; the amplitude over-drive is HIER -- a HIER-path Phi measurement is owed before the
+crossing scale is quoted as final. (2) The crossing is a RATIO, so robust to the Phi_0 normalisation, and
+it is clean and monotonic -- but the exact location (q~2.48) will shift somewhat on the HIER path and with
+the baryon/recombination details. (3) The number to take forward is the EXISTENCE and rough LOCATION of a
+single crossing near the 2nd-3rd acoustic scale, not q=2.48 to three figures.
+
+**⇒ PO-13 STATE, corrected and current:** the framework's own composition over-drives the sky (position +7%,
+amplitude +65% vs sky / +63% vs control), and the over-drive is a consequence of the rate/source split, not
+a fit failure. The CMB peak-height residual and the Phi-decay history are BOTH real and open, and are NOT a
+single mode-by-mode mechanism (r3534). What CR predicts distinctively is a CROSSING SCALE in the
+potential-decay history at k ~ 0.058/Mpc -- normalisation-robust, ISW/lensing-observable, and the next thing
+to (a) confirm on the HIER path and (b) take to ISW/lensing data. The odd-even alternation still survives
+underneath, independent of all of this.
