@@ -168,14 +168,38 @@ wrong and not the eighteen downstream of it.*
 | **`C3` the deck is $S_3$ on the Galois closure, not $D_6$** — a correction to this bake's own record, and it closes the tower | **LANDED** | P5's degree-six extension; the dial *is* the Galois closure |
 | **the sky cover IS the root cover** — $r=\tfrac{2}{\sqrt3}\sin w$ makes the triple-angle identity give $\tfrac{2}{3\sqrt3}\sin 3w=r-r^3$ exactly | **LANDED** | P3, P5. *With the ledger's own care kept: the $120^\circ$ shift is a symmetry of the real undercritical trivialisation, not a global automorphism over the complex $2M$-line — which is why the monodromy is $S_3$ and not $\mathbb{Z}_3$* |
 | **`C5` P2 is the corpus's analytic-continuation paper and this bake had never read it** | **the bake's own gap, closed r3501** | not a paper debt |
-| **`C6` P5's seam continuation is Möbius, and the signature flip is passage through infinity** | **needs checking against P5/P3 at stage 3** | not verified in this pass |
-| **`C7` the Euclidean action's sign is forced by the lap's closure, not chosen** | **needs checking against P7** | not verified in this pass |
-| **`C9` P16's branch-point monodromy is Fuchsian, unipotent because the indicial exponents differ by an integer** | **needs checking against P16** | receipted in the r3505 run |
-| **`C10` two monodromies at $r=0$, separable only across papers** (P8, P10, P15) · **`C11` P12's "residue pairing" IS residues, and its $V_4$ holonomy is $\sqrt\Delta$ monodromy** | **needs checking** | receipted in the r3505 run |
+| **`C6` the seam continuation is Möbius, and the signature flip is passage through infinity** | **SUBSTANCE OWED** | *checked r3529 in the corpus's own terms:* **`Möbius` and `Riemann sphere` appear in no paper.** P3 and P5 carry the seam continuation and its automatic signature flip; **what it *is* as a map is nowhere**. This is `C6`'s own claim and it is the field's to give |
+| **`C7` the Euclidean action's sign is forced by the lap's closure, not chosen** | **LANDED** | P7 carries $S_E=-0.0481\,\alpha^2/G$ (×2), the Hartle–Hawking sign, and the forcing in its own words — *"obtained here from a contour the construction already possessed rather than from a boundary condition imposed on a path integral."* P10 carries the value too. **Pointer owed** |
+| **`C8` the three seam operations, separated by their route on the sphere** | **PART-LANDED** | P13 states the problem and keeps the three apart — `Wick rotation` ×10, `Weyl reflection` ×4, and *"the candidate real involution is a Weyl reflection, demonstrably not the Wick rotation."* **The separation *by route on the Riemann sphere* needs `C6`, and `C6` is not in any paper**, so this half waits on that half |
+| **`C9` P16's branch-point monodromy is Fuchsian, unipotent because the indicial exponents differ by an integer** | **LANDED in substance; the classification's NAME is owed** | P16 carries `unipotent`, `indicial` ×3, the exponent shift from $(-1,2)$ to $(0,1)$, the resonance, and the forced logarithm — *the mechanism, stated in its own terms*. What it never names is **`Fuchsian`** or **`regular singular point`** (both ×0 corpus-wide). A naming, not a content gap — low value, and recorded as low |
+| **`C10` two monodromies at $r=0$, separable only across papers** | **LANDED in the parts; the IDENTIFICATION is owed** | P8 carries $e^{4\pi i/3}$ and the $\mathbb{Z}_3$ branch monodromy; P15 the conjugate branch at phase $2\pi/3$; `conjugate branch` runs through thirteen papers. **What no paper says is that these are the same cube-root cover this ledger worked at §4a** — a cross-paper identification, and its natural home is the synthesis pole p0 |
+| **`C11` P12's "residue pairing" IS residues, and its $V_4$ holonomy is $\sqrt\Delta$ monodromy** | **LANDED in substance; two namings owed** | P12 carries the pairing, the entries $1/f'(r_i)$, signature $(2,1)$, the Klein four-group $V_4$ of even sign changes, and the per-root resolution of $\sqrt\Delta$. **Unnamed: that $1/f'(r_i)$ *is* $\operatorname{Res}_{r_i}(1/f)$ at a simple root, and that the Nariai points are the *branch points* of $\sqrt\Delta$** — so $V_4$ is that square root's monodromy. Both are one clause each |
 
-⚠ ***THIS TABLE IS PART-DONE AND SAYS SO.*** *The `C6`–`C11` rows were not tested against the papers in
-this pass — the `FOR_54` 23 repair took the session. They are marked **needs checking** rather than left
-to read as gathered, and the gather is not complete until they are.*
+### ⛔⛭⛭ AND THE `FOR_54` 23 DEFECT IS CORPUS-WIDE — 21 SITES IN SEVEN MORE PAPERS
+
+***Fixing P5 was not fixing the defect.*** *A corpus-wide read (labels and `\rcpt` keys excluded, so only
+prose counts) finds the root cover's $S_3$ called a **deck** group in seven further papers. **Most uses
+of the word corpus-wide are correct** — the turnaround's $\mathbb{Z}_3$, and P3's genuine $\mathbb{Z}_2$
+deck of the two-fold projection — which is exactly why a sweep would do more harm than the defect:*
+
+| paper | defective sites | the shape of it |
+|---|---|---|
+| **P14** matter | 5 | *"the deck symmetry, and flavour is global"; "the deck group cannot be the full symmetric group on the roots"; "the Weyl $S_3$ is the deck/monodromy symmetry"* — **and P14's turnaround-$\mathbb{Z}_3$ uses in the same paper are correct**, so this one needs the most care |
+| **P13** boundary | 5 | *"a solution-space deck symmetry"; "the $S_3$ is the deck (Weyl) symmetry"; "adjoining it to the deck symmetry"* |
+| **P3** slicing | 3 | *"the deck three-fold read as three readings"; "the deck group and monodromy of the branched cover"; "are the deck transformations of the horizon cubic's cover branched at Nariai"* — **the last is the same sentence just corrected in P5** |
+| **p0** core | 3 | *"adjoined to the deck symmetry it closes the Weyl group of $\mathfrak{so}(6,\mathbb{C})$"; "the deck symmetry of that cover, which is the Weyl $S_3$"* |
+| **P7** framework | 2 | *"whose fibre is the roots ... with deck $S_3$"* — **and the very next clause, "with deck the $\mathbb{Z}_3$" for the comoving turning, is correct**: one sentence, both objects, one right and one wrong |
+| **P12** algebroid | 2 | *"Adjoining it to the deck $S_3$"; "which the Weyl/deck symmetry"* |
+| **P11** dynamics | 1 | *"the Weyl $S_3$ is the deck symmetry of the solution space"* |
+
+⚠ ***A FIRST AUTOMATED SCREEN RETURNED 47 AND WAS WRONG.*** *It counted `\ref{prop:deck}` and
+`\rcpt{P05_deck_group_S3}` as prose and flagged fourteen sites in the paper that had just been corrected
+by hand. **The number in this table is from a read, and the screen is recorded as the unreliable
+instrument it was** — the fourth instrument failure of one kind this session.*
+
+⇒ ***THIS IS A SEVEN-PAPER CAMPAIGN, NOT A SWEEP.*** *Each paper is read where the edit lands, one
+session each, because in P7 and P14 the correct and incorrect uses sit in adjacent clauses. Registered
+here rather than half-done.*
 
 
 
