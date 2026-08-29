@@ -29,6 +29,55 @@ current: r3508
 
 # THE CATEGORY THEORY LEDGER — the field the list did not carry
 
+## ⌗ THE LANDING TABLE — where each register stands against the corpus, checked r3533
+
+> **▣ THE `\ldg` GATHER FOR THIS LEDGER — live prose only, `%` masthead stripped.**
+
+### ★★★ THE SHAPE: A BAKE THAT ADDED NO CONTENT, WHOSE NAMES LANDED ANYWAY
+
+*This bake's own close is unusually severe about itself —* ***"no new object · no adjunction · no
+2-categorical structure"***, *zero on the census pass, zero on the `R2` pass, and* ***"category theory
+could not promote anything because it had nothing to add — only names for what was there."*** ⇒ *The
+gather's question is therefore a different one from the other six: **not whether results landed, but
+whether the NAMES did** — and a name that stays in a ledger is a name the corpus does not have.*
+
+⌗ ***Three of the five landed, and landed as recognitions rather than imports.*** *`K1`'s action
+algebroid is in P12's own voice, and P12 says exactly what the bake said about it:* ***"the claim is a
+recognition rather than an addition: the algebroid was already there, in general relativity's own
+constraint algebra, waiting for the base."*** *`K3` is `P5 rem:universal`, written for it, with the
+receipt `\rcpt{K23_functor_and_quotient}` and the uniqueness clause intact —* ***"any assignment constant
+along the morphisms factors through the geometry, and uniquely"*** *— checked on the construction's own
+quantities, $\alpha$ and $2M$ constant across the three cuts and $r_0$ not.*
+
+### ⌗ THE TABLE
+
+| register | disposition | where it stands |
+|---|---|---|
+| **`K1` the algebroid is an ACTION algebroid — hence always integrable — and the relation P5 called undeveloped is ISOTROPY** | **LANDED** | P12 (`action algebroid` ×4), p0, P5; Mackenzie cited in P12 ×3 and P5 ×3. **Pointer owed** |
+| **`K3` "the single invariant is the geometry" is the UNIVERSAL PROPERTY of the quotient** | **LANDED, with its uniqueness clause** | `P5 rem:universal`, `\rcpt{K23_functor_and_quotient}`. *And P5 draws the consequence the bake wanted: rigidity is the same fact read the other way, a parameter the quotient map kills being a chart label and not a modulus* |
+| **`K2` $\Psi$ is a functor, and its three functorial properties ARE three companion papers** | **PART-LANDED — the functor lands, the three properties do not** | `functor` is live in P5 and P8. But **`essentially surjective` ×0 and `essential image` ×0 corpus-wide**, so *"P9 **is** the essential image"* is nowhere, and P9's `faithful` uses are the ordinary-language sense. **The identification of P9, and of the failure of faithfulness, with the functor's properties is owed** |
+| **`K8` the orbit-type filtration** · **`L-103` the orbit space is P9's range theorem and P12's stratification under a category-theoretic name** | **LANDED under the corpus's own names** | `stratif*` in P7 ×8, P11 ×10, P12 ×4; `reachable` in P9 ×18. *`orbit type` ×0 and `range theorem` ×0 — **and that is the correct state**: the ledger's own conclusion is that these ask for what two papers already carry, so the category name is a synonym and not a debt* |
+| **`K4` the three levels are a SPAN, L1 ← seam → L2 with L3 receiving from each; the two "quantitatively fatal" carryings are arrows the diagram does not have** | **SUBSTANCE OWED** | *`span` in the categorical sense appears nowhere — P15's and P14's uses are the ordinary word.* **This is the one register that is genuinely a new statement about corpus structure**: it says *why* the two carryings fail, and it is the diagnostic form of §1·SHADOW's collapse. Its home is the ontology map, not a paper |
+| **`K5` Nariai is ONE condition, $f=f'=0$, wearing six faces — the sixth being the isotropy jump** | **PART-LANDED** | the condition is in P7 and P3; **`six faces` ×0**, and the *enumeration* — that five separately-named loci are one condition read six ways — is not in any paper. *The corpus states the faces severally and never counts them* |
+| **⛔ no new object · no adjunction · no 2-categorical structure** | **CORRECTLY UNLANDED** | *three zeros that are the bake's honesty about itself, and none of them belongs in a paper* |
+| **⌗ the ledger's own bookkeeping failure — `L-103` given an ID at `r2376+c54.34` and never registered, found at `c54.49` by auditing the ID space against the row count, the same failure as `L-100` in the same turn** | **stays here** | not a paper debt |
+
+### ⌗ WHAT THIS GATHER FOUND — and it breaks the run
+
+***The bounds-go-unlanded pattern does NOT hold here, and the reason is instructive.*** *This bake has
+almost no bounds to lose — its whole yield is recognitions, and a recognition carries its fence inside it
+("the algebroid was already there", "a recognition rather than an addition"), so P12 and P5 could not
+land the result without landing the limit.* ⇒ ***What goes unlanded instead is the CONNECTIVE tissue:***
+*`K2`'s identification of three papers with one functor's three properties, `K4`'s span, `K5`'s count of
+six faces. **All three are statements about how corpus pieces relate — the kind of claim no single paper
+owns**, which is why no single paper carried them.*
+
+⌗ ***So seven gathers give two failure modes, not one:*** *a result's **fence** is dropped when the result
+belongs to one paper; a result's **connection** is dropped when it belongs to several. The second has no
+natural home in a paper at all, and belongs to `ONTOLOGY_FOUNDATION_INDEX` and p0.*
+
+
+
 > **⌗ RE-READ AGAINST c54.163 AND DECLARED CURRENT r2395.** *The fork changed **none of the four field-bake
 > archives** in the c54.153→c54.163 span, so the question was again* ***"did anything the span produced
 > bear on what this bake concluded"*** *rather than "what moved in the file". **The span produced two
