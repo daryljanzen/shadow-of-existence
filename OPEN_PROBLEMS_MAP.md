@@ -10,6 +10,16 @@ job: the L-space board — the work-clusters and runway of the register that clo
 **⌗ `check_grains` named this document twenty revisions behind. At item grain the reading is short and
 it is worth having explicitly rather than by silence.**
 
+
+> ⛔⛭⛭ **`PO-13` IS UNSOLVED, AND ITS FRONT DOOR IS [`PO13_HANDOFF.md`](PO13_HANDOFF.md).**
+> *Read that FIRST — not `PO13_WORKING_STATE.md`, which is a 2800-line append-only log whose revision
+> numbers collide with main's. The handoff states the open problem, the eight levers already **eliminated
+> by measurement** (do not re-run them), the sharp unsolved core, the concrete first attacks, the
+> instrument and its flag inventory, and the traps.* ⌗ ***The honest state: CR's determined composition
+> disagrees with the acoustic sky — position +7%, $P_1/P_2$ +65%, positional parity 4× over the validated
+> $q=1$–3 range — with the mechanism diagnosed and NOT cured. It is left for a fresh head; the two nodes
+> that worked it are spent and did not solve it.***
+
 - **`PO-13` REMAINS THE ONE OPEN ROW.** *`L-269` through `L-273` are corpus-integrity and field-bake
   work. **No open problem opened, closed, or changed state**, and no paper was edited in any of them.*
 - **`L-271` BEARS ON `A5.5` WITHOUT MOVING IT.** *The statistics bake costs the programme that would

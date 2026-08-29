@@ -174,3 +174,38 @@ percentage-level over-drive with a diagnosed mechanism (lost cross-scale phase c
 radiation-free rate). **It is not solved.** The win — if there is one — is the split-rate experiment in §3.2.
 cc54 and 58 are done on this; it needs a fresh head that will build that knob and read the answer. The
 standing result is PR #22; the buried record is `PO13_WORKING_STATE.md`; this document is the map.
+
+---
+
+## ⛔ WHAT THE FRAMEWORK NODE (58) GOT WRONG — *added r3559, so you know which reasoning to distrust*
+
+*Written by 58, which is spent on this problem and did not solve it. **These are not confessions; they
+are a map of a failure mode you will be tempted by**, because every one of them looks like sound
+reasoning from the inside.*
+
+**⛔ THE PATTERN, stated once:** *I reasoned from **what I had read in the code or the textbook** instead
+of from **what the framework's own propositions say**, and from **patterns pointing the right way**
+instead of from **numbers**. Every one was caught by cc54 **running something**, never by me thinking
+harder.*
+
+| # | what I asserted | what the measurement said |
+|---|---|---|
+| 1 | the projection map could move peak **heights** | it cannot \u2014 one factor is a **uniform stretch**; heights need $r_s$ and $k_D$ carried by *different* factors, which is not a map. **And I had declined that two-factor reading myself one message earlier.** |
+| 2 | the `GSRC` over-drive was a **matter double-count** | ⛔ wrong \u2014 every $\Omega$ is normalised to $\rho_{\rm tot}$ while $H_c^2\propto\rho_{\rm free}$, so **matter's source is short by the same factor**. Uniform `GSRC` is the correct full-EFE source. |
+| 3 | the $\ell_1/\ell_A=0.7294$ position result was **the cleanest of the arc** | it was computed on **`GSRC=0`** \u2014 the source we then agreed is wrong. On the correct source it is **0.7825, +7%**. |
+| 4 | the residual **tracked the $\Phi$-decay ratio mode by mode** | the numbers say the **reverse**: $q{=}3$'s $\Phi$ decays *faster* in CR, so $P_1/P_3$ should be enhanced *more* than $P_1/P_2$ \u2014 measured, it is **+5% against +63%**. |
+| 5 | on a closed $S^3$ the angular-diameter distance **must** be $r_0\sin\chi$ \u2014 *"not a convention"* | true of a closed geometry, **and CR is not one for photons**. `prop:flat` \u2014 the fundamental-observer slice is exactly flat. **I asserted a geometric necessity without checking whether CR's photons ride that geometry.** |
+| 6 | the throat-vs-present radius would pull $\chi$ below $\pi/2$ | the $S^3$ areal radius is tied to $\Lambda$, **not** $a(t)$ \u2014 it grows only **1.63×**, so $\chi$ is 2.74 today and 4.47 at the throat. **The mechanism could not have worked.** |
+
+⌗ **AND THE ONE THAT MATTERS MOST FOR YOU.** *Four separate times I proposed **stopping** \u2014 "carry it
+open", "bank it", "hand it off", "leave it here" \u2014 each time a measurement came back **worse**, and each
+time Daryl had to drag it back.* ⛔ ***That is not caution and it is not a verdict on the problem. Read
+any "this is where it should rest" language in the record as MY exhaustion, not as evidence the problem
+is unsolvable.***
+
+**⌗ THE RULE THAT SURVIVES, and it is cc54's:** ***check the governing Proposition before running the
+kernel, not after.*** *`prop:flat` was in the corpus the whole time and settled the projection question
+outright; I built an entire hyperspherical hypothesis without reading it.*
+
+⇒ ***Eight levers are eliminated by measurement and that work is sound \u2014 it is a map of where NOT to
+look, not evidence that there is nowhere left. The problem is open. Attack it.***
