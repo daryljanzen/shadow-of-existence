@@ -5,6 +5,60 @@ current: r2154
 sources: [cowork]
 ---
 
+## ⛔⛭⛭⛭ THE SELF-DESCRIPTION HAZARD — *named r3568, from seven instances in one session*
+
+***A corpus that documents itself in the files it checks will, reliably, confuse the description with
+the thing described.*** *This is not a class of mistakes. It is a property of the arrangement, and it
+produced seven separate defects in a single session — six in checkers, one in a writer.*
+
+### ⌗ THE SIX, AND THEY ARE ONE SHAPE
+
+*Each is an instrument reading **a report as the thing reported**:*
+*· `check_queues` read a landing row saying `BOUNCED` as a queue entry awaiting adjudication —
+its settled-word list predated the landing tables by fifteen hundred revisions.*
+*· `check_rule_current` held `replaced` and not `superseded`, so a document that marked its own
+superseded clause read as unmarked.*
+*· `check_currency` could not see three documents at all, because an unclassified document is not in
+the live set — the same 170 revisions in which nothing could report it.*
+*· `check_marker_buried` fired **twice**: first on a comment that merely discussed the `\rcpt` macro,
+then on a masthead that QUOTES a live sentence, marker and all.*
+*· and `check_open_ledger` carried a verdict whose sentence had been rewritten under it.*
+⇒ **r2386 wrote the rule for the first of these — *"a gate that cannot tell a report from the thing
+reported punishes the act of recording"* — and it kept recurring because it was filed as one gate's
+comment rather than as a property of the corpus.**
+
+### ⛔⛭⛭ AND THE SEVENTH IS WORSE, BECAUSE IT IS NOT A CHECKER
+
+*59, r3567, in its own words:* ***"at r3524 I invented a register."*** *A landing table listed a row
+against a register with nothing behind it; it survived eleven revisions and was caught only when
+landing it meant reading a worked statement that was not there.*
+
+⇒ ***Once a document describes the corpus in the corpus's own voice, a row with nothing behind it
+reads exactly like a row with a proof behind it.*** **So the danger is not only that a CHECKER
+confuses the two. It is that a WRITER does** *— and a writer has no exit code.*
+
+⌗ **A fabricated row is not a lie.** *It is a summary that outran its source, which is what
+summarising does when nothing checks it.*
+
+### ⌷ WHAT FOLLOWS, AND IT IS THREE RULES RATHER THAN A WARNING
+
+1. ***A CHECKER'S VOCABULARY GOES STALE FASTER THAN THE CORPUS'S.*** *Every list of accepted
+   markers — settled words, marker forms, kinds, verdicts — is a snapshot of how people wrote on
+   the day it was written. **When a gate fails on something that looks correctly marked, suspect the
+   list before the document.***
+2. ***THE EXEMPTION IS DECLARED, NEVER INFERRED*** *(`[REPORTED]`, `current: none`, `NOT-A-RECEIPT:`,
+   `kind:`). **A heuristic for intent will be wrong on prose nobody has written yet**; a declaration
+   cannot be misparsed. ⌗ Where a declaration is impossible, prefer a **measurable discriminator** —
+   `check_marker_buried` asks whether the key is live ELSEWHERE IN THE FILE, which is a fact rather
+   than a guess at what the author meant.*
+3. ⛔ ***AND EVERY DESCRIBING DOCUMENT NEEDS A GATE POINTING BACK AT WHAT IT DESCRIBES.*** *The
+   landing tables got `check_landing_rows_trace` (r3568) only after a fabrication survived eleven
+   revisions. **The reference table, the census, the theatres and the entry-point register are the
+   same shape and mostly do not have one.** *A description with no gate is a claim the corpus makes
+   about itself and never checks.*
+
+---
+
 ## ⛭⛭ `check_settings.py` — THE REDUCED-SETTINGS LINT, built r2486 from the fork's own discipline
 
 *c54.191 routed it: **"two retractions in two revisions, one cause… both were the right measurement of the WRONG

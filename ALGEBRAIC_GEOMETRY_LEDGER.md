@@ -143,3 +143,38 @@ one receipt set, four fields' vocabulary; the algebraic-geometry framing (discri
 cubic's singular point, branched cover) is the reading this bake adds by name, and it duplicates no
 receipt. The two crux corrections — `genus` taxonomic, `blow-up` a curvature homonym — are on the record.*
 
+
+---
+
+## ⛭⛭⛭ `AG1` — **THE TWO DISCRIMINANTS ARE ONE CLASSICAL FORMULA APART, AND THE CORPUS COMPUTES BOTH HALVES AND NAMES NEITHER**
+
+*Worked r3556, corrected r3560, and entered here as a register at r3568 — **because it was named in
+this ledger's landing table before it was worked in this ledger's body**, which is the fabrication
+class `check_landing_rows_trace` exists to catch. The receipt was real throughout
+(`receipts/P03_slicing_curve/AG1_the_two_discriminants_are_a_resultant_apart.py`, registered, ALL
+PASS); what was missing is the thing a landing row points AT.*
+
+**⌗ THE QUESTION.** *`P03` reads its three regimes off a discriminant $4-3r_0^2$; `P05` and `P12`
+state the horizon cubic's $\Delta$. The catastrophe gather flagged a row conflating them, and 59
+found the same conflation live in its own `P3` landing at r3547. **So: what IS the relation?***
+
+**⌗ WHAT IT IS.** *Under the corpus's own reducible factoring $(r-r_0)(r^2+rr_0+r_0^2-1)$, the two
+degenerations are different events —* ***the conic's own two roots colliding***, *whose discriminant
+in $r$ is exactly $4-3r_0^2$, and* ***the line meeting the conic***, $\mathrm{Res}=3r_0^2-1$. *And
+the whole cubic's discriminant is their product with the resultant SQUARED:*
+
+$$\mathrm{disc}(C) \;=\; \mathrm{disc}(\text{conic})\cdot\mathrm{Res}(\text{line},\text{conic})^2 \;=\; (4-3r_0^2)(3r_0^2-1)^2$$
+
+***which is the textbook discriminant formula for a reducible plane curve, instanced by the horizon
+cubic.*** ⇒ **Two papers hold the two halves of a named classical identity and neither names it;
+`resultant` ×0 and `discriminant locus` ×0 across seventeen bodies.**
+
+**⚠ AND ALL FOUR ZEROS ARE NARIAI** *— corrected by 59 at r3555 after this bake's first gloss said
+otherwise. Each of $r_0=\pm1/\sqrt3,\pm2/\sqrt3$ carries $\|2M\|=2/(3\sqrt3)$ exactly and leaves the
+cubic with a repeated root.* ⇒ ***They are the four $r_0$-DESIGNATIONS of the two Nariai
+configurations, and the two factors say which root is designated at the merger:*** *where
+$4-3r_0^2$ vanishes the conic's own roots collide and $r_0$ stands apart as the simple one; where the
+resultant vanishes $r_0$ **is** the repeated root.* **So the reason to name which discriminant is
+meant is that the slicing parameter's own misses half the designations.**
+
+⌷ `POINTER OWED` — *the paper-side repair is 59's and is done; what is owed is the NAME.*

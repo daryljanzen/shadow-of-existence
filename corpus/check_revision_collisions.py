@@ -102,7 +102,17 @@ BASELINE = {'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
             #     the window -- which is the signature of the mechanism rather than of bad luck:
             #     60 reserved the even half while 59 drew sequentially through all of it.
             'r3535', 'r3536', 'r3537', 'r3542', 'r3544', 'r3546', 'r3548',
-            'r3550', 'r3552', 'r3554', 'r3556', 'r3558', 'r3560'}
+            'r3550', 'r3552', 'r3554', 'r3556', 'r3558', 'r3560',
+            # ⛭⛭ AND A FOURTEENTH, r3562 -- ADDED r3568, AND THE LIST CAUGHT IT RATHER THAN ME.
+            #   r3566 enumerated thirteen and the enumeration was complete WHEN IT WAS MADE: 59
+            #   took r3562 after I measured, so the collision did not exist at the moment I listed
+            #   the collisions.  ** A census is a list of what you read, not of what is there --
+            #   this line's own rule, arriving in the list of its own failures. **
+            #   ⇒ *** It belongs with the thirteen and not outside them: r3562 was pushed BEFORE
+            #       59's r3563 reply took the odd half, so it is the LAST of the pre-band window
+            #       rather than the first failure of the band. ***  A collision at an even number
+            #       after r3563 would be a real failure and this list would not excuse it.
+            'r3562'}
 
 #: *** THE BAND. ***  A partition, and each tree holds ONE half.  ** r3203: the parity is READ FROM
 #: THE TREE rather than hardcoded, because this file now runs on both trees and a hardcoded half
