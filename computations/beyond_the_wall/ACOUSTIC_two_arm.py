@@ -205,6 +205,9 @@ GSRCRAD = os.environ.get('GSRCRAD', '0') == '1'
 # Requires GSRC=1 (else Gf==1, nothing to gate).  On the control Gf==1 -> gate is a no-op by construction. **
 THRESH = os.environ.get('THRESH', '0') == '1'
 THRESHK = float(os.environ.get('THRESHK', '50'))   # step sharpness in delta_s (large = sharp)
+THRESHSRC = os.environ.get('THRESHSRC', 'total')   # 'total' = full sourcing overdensity (CDM-dominated,
+#   monotone -> gate ~always on); 'photon' = the PLASMA's own contrast dg (oscillates -> gate is
+#   compression/rarefaction-selective). Two readings of "the perturbation's density vs the mean".
 Og_of = CubicSpline(eg, (1 - FNU) * (OR / ag ** 4) / _rt)
 On_of = CubicSpline(eg, FNU * (OR / ag ** 4) / _rt)
 # ** THE MATTER SECTOR IS SPLIT INTO BARYONS AND CDM AT c54.178. **  Until now it was ONE fluid
@@ -522,8 +525,8 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         _mat = (Ocv * dc + Obv * db) if BSPLIT else ((Ocv + Obv) * dc)
         _gf = float(Gf_of(e))
         if THRESH:                                   # r3552: gate the boost by local overdensity (bound vs Hubble flow)
-            _dtot = Ogv * dg + Onv * dn + Ocv * dc + Obv * db
-            _gf = 1.0 + 0.5 * (1.0 + np.tanh(THRESHK * _dtot)) * (_gf - 1.0)
+            _dth = dg if THRESHSRC == 'photon' else (Ogv * dg + Onv * dn + Ocv * dc + Obv * db)
+            _gf = 1.0 + 0.5 * (1.0 + np.tanh(THRESHK * _dth)) * (_gf - 1.0)
         _dsrc = (_gf * (Ogv * dg + Onv * dn) + _mat) if GSRCRAD else _gf * (Ogv * dg + Onv * dn + _mat)
         Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc / 2) * _dsrc
         # ** DR multiplies EVERY coupling to the potential, at EVERY site. **
@@ -921,8 +924,8 @@ def evolve_hier(kk, t_eval, e_sw, yF):
         _mat = (Ocv * dc + Obv * db) if BSPLIT else ((Ocv + Obv) * dc)
         _gf = float(Gf_of(e))
         if THRESH:                                   # r3552: gate the boost by local overdensity (bound vs Hubble flow)
-            _dtot = Ogv * dg + Onv * dn + Ocv * dc + Obv * db
-            _gf = 1.0 + 0.5 * (1.0 + np.tanh(THRESHK * _dtot)) * (_gf - 1.0)
+            _dth = dg if THRESHSRC == 'photon' else (Ogv * dg + Onv * dn + Ocv * dc + Obv * db)
+            _gf = 1.0 + 0.5 * (1.0 + np.tanh(THRESHK * _dth)) * (_gf - 1.0)
         _dsrc = (_gf * (Ogv * dg + Onv * dn) + _mat) if GSRCRAD else _gf * (Ogv * dg + Onv * dn + _mat)
         Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc / 2) * _dsrc
         out = np.zeros_like(y)
