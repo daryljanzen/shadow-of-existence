@@ -197,9 +197,23 @@ deck of the two-fold projection — which is exactly why a sweep would do more h
 by hand. **The number in this table is from a read, and the screen is recorded as the unreliable
 instrument it was** — the fourth instrument failure of one kind this session.*
 
-⇒ ***THIS IS A SEVEN-PAPER CAMPAIGN, NOT A SWEEP.*** *Each paper is read where the edit lands, one
-session each, because in P7 and P14 the correct and incorrect uses sit in adjacent clauses. Registered
-here rather than half-done.*
+⇒ ***CAMPAIGN RUN AND CLOSED r3530 — all 21 sites, all seven papers.*** *Each paper read at every site
+before editing. **P14** 5 · **P13** 5 · **P3** 4 · **p0** 3 · **P7** 2 · **P12** 2 · **P11** 1. All eight
+papers (with P5) recompile clean, no undefined control sequences; the matrix gate is green on all three
+grains and Appendix L regenerates identically.
+
+⌗ **The final audit leaves 43 live prose uses of the word corpus-wide and every one is correct**: the
+turnaround's $\mathbb{Z}_3$ (which fixes the horizon cover's base, never permutes its fibre, and is a
+genuine deck group), P3's $\mathbb{Z}_2$ deck of the regular two-fold projection, the dial's deck group
+on the degree-six Galois closure, and P5's own statements that the root cover's deck group is *trivial*.
+
+⚠ ***P3 held one site the first pass missed*** *— "casts it group-theoretically, as the deck group of the
+branched cover" — found only by re-auditing after the edits rather than trusting the census. **A census
+is a list of what one read, not of what is there.** Four sites in P3, not three.*
+
+⌗ **And P11's single site was nearly a false positive in the other direction**: *its first `deck` is
+inside a `%` comment block, and only the second is live. A screen that strips comments finds one; a
+screen that does not finds two and would have had an editor changing a comment.*
 
 
 
