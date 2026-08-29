@@ -59,7 +59,11 @@ jobs:
                    check_citations check_absorption check_receipt_exit check_receipt_asserts check_claims check_branches check_deferrals check_routed check_veins check_loaders check_computes check_provenance check_dupes check_ingestion_current check_chirality_qualifier check_absence_pinned check_rerunnable_honest check_stale_unshown check_citations_resolve check_rows_cite_receipts check_delivered_cites_source check_rows_name_the_open check_revisions_logged check_owed_rows_live check_routing_current check_rule_current check_map_overturns check_receipt_verdicts check_lead_framings check_heads_anchored check_leads_follow_rows check_strikes_reported check_cross_row_dupes check_withdrawals_propagate check_superseded_marked check_gap_is_held check_owed_are_tasks check_status_honesty check_gate_currency check_rows_outward check_arc_columns check_register_columns check_row_state check_declared_parts check_family_pointers check_no_stdlib_shadow check_kind check_silent check_withdrawals check_receipt_prefixes check_revleak check_foreign_ontology check_routed_falsehood check_open_ledger check_killrefs \
                    check_conflict_markers check_arcpins check_routed check_veins \
                    check_loci check_loaders check_computes check_provenance \
-                   check_revleak check_open_ledger check_killrefs check_compile; do
+                   check_revleak check_open_ledger check_killrefs check_compile \
+                   check_appendix_current check_currency check_deferrals_resolve check_depth \
+                   check_model_ledger check_one_value check_paper_tense check_protected_dupes \
+                   check_receipt_orphans check_receipt_tex_scope check_row_matchers \
+                   check_self_certification check_settings check_theatre_currency; do
             echo "── $g"
             # NODE=ci added r2504+c54.198 (54): check_claims no longer defaults to a REAL node,
             # because a forgetful node was silently impersonating 56 and inheriting its claims.

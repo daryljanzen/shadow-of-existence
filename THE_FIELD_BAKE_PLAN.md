@@ -70,6 +70,26 @@ r3164–r3176 were already thin when `622` recorded its list as "complete"; `r34
 
 ## ⌗ THE PROTOCOL — one field at a time, as many turns as it takes
 
+> ### ⛭ ZERO: THE ENVIRONMENT, BEFORE ANY OF IT — *added r3542 (node 60)*
+>
+> ***A fresh container does not carry what the receipt layer needs, and a bake's receipts will fail
+> on the import line rather than on the physics.*** *Three of the newest field receipts — `KT1`,
+> `CX1`, `CH1` — failed in sequence with `ModuleNotFoundError` on a clean checkout, one module at a
+> time, each failure looking exactly like a defect in the ledger that owns them.* ⇒ **Before reading
+> a bounce as a finding, install:**
+>
+> ```
+> pip install sympy numpy scipy
+> ```
+>
+> *With those present all 47 newest-bake receipts run and print `ALL PASS`.* ⌗ **And one gate cannot
+> run at all without a TeX toolchain: `corpus/check_compile.py` needs `pdflatex`, so on a container
+> without it that gate is UNRUN rather than green — which is a different thing and must be reported
+> as the different thing.**
+>
+> ⚠ ***The general rule this is an instance of: an environment failure and a corpus failure are
+> indistinguishable from the exit code, and the environment is the one you can check in a second.***
+
 **⛔ NO FIELD IS TAKEN UP UNTIL THE ONE BEFORE IT MEETS THE BAR.** *The failure this plan exists to stop
 is breadth bought with depth.*
 
