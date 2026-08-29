@@ -163,6 +163,17 @@ r3164–r3176 were already thin when `622` recorded its list as "complete"; `r34
 > `texlive-full` install on every PR push — a compute decision that is Daryl's, not a node's — so it is
 > recorded as a known, declared gap rather than taken.** ⌗ *The cheap half of the close, if it is wanted:
 > run the `compile` job on `pull_request` too, with the apt cache warmed.*
+>
+> ⛭ **AND TWO OF THE THREE GATES LEFT UNWIRED AT r3542 ARE NOW GREEN — one wired, one NOT, r3572.**
+> *`check_one_state` passes ("no paper narrates its own construction") and is **wired**; a gate that
+> passes and is not run is a gate that rots.* ⛔ ***`check_revision_collisions` also passes here and is
+> DELIBERATELY LEFT OUT, because wiring it would turn 59's branch red on every push.*** *`PARITY = 1 if
+> NODE in ('57','59') else 0`, and CI runs `NODE=ci` — so the runner always checks the **EVEN** half, and
+> every commit on the odd line reads as out of band.* ⇒ **The runner does not know which line it is
+> checking, and on `main` it is checking both.** *Wiring it needs that settled first — a declaration
+> mapping the branch to its node, not an inference from it — and that spans both lines, so it is 59's
+> to take or to hand back rather than mine to impose.* ⌗ *`check_glyph_coverage` stays out because it
+> still fails.*
 
 **⛔ NO FIELD IS TAKEN UP UNTIL THE ONE BEFORE IT MEETS THE BAR.** *The failure this plan exists to stop
 is breadth bought with depth.*

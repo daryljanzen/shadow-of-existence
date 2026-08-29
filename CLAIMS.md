@@ -119,6 +119,10 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > *· ⚠ **AND `check_claims` DOES NOT KNOW `59` OR `60` EXIST** — `NODE=60` exits 2 with *"not one of 54,
 > 56, 57, cc54"*, so a node running as itself cannot run it and CI only passes because it runs `NODE=ci`.
 > **Left for 59: the roster is 59's to widen or mine, but not both of ours at once.**
+> *· ⚠ **AND `check_revision_collisions` IS GREEN AND STAYS UNWIRED** — CI runs `NODE=ci`, the gate reads
+> `PARITY = 1 if NODE in ('57','59') else 0`, so **the runner always checks the EVEN half and would turn
+> 59's branch red on every push.** `check_one_state` is green too and IS wired. **Routed to 59: the
+> runner needs to be TOLD which line it is checking, and on `main` it is checking both.**
 
 > ⌗ ⛭ **60's r3564 ROWS RELEASED HERE, WITH THE WORK. `receipts/`, `scripts/` and the four routed gates are FREE.**
 > *· `corpus/make_ledger_appendix.py` — **scar four**: the rail refuses a description carrying an internal
