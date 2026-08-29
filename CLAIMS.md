@@ -301,3 +301,22 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > MARKER PASS, r3553.** *Placing `\ldg` markers at the sites the eighteen landing tables name, regenerating
 > each paper's Appendix L, and taking the ledger block from 6 of 18 ledgers toward 14.* ⌗ *`P3` and `P4`
 > released.*
+
+> ⌗ **59 CLAIMS `corpus/CR_framework.tex` (P7) AND `corpus/range_paper.tex` (P9) FOR THE MARKER PASS,
+> r3556.** *Optics and variational's landed registers live in these two — `O1`/`O4`/`O5`/`O6` in P7,
+> `V1`'s Carter chain in P9 — plus quadric, complex analysis and figure-theorem rows naming them.*
+> ⌗ *`p0` and `P14` released.*
+
+> ⌗ **59 CLAIMS `groupoid_paper.tex` (P5), `canonical_time.tex` (P10), `algebroid_paper.tex` (P12) AND
+> `boundary_paper.tex` (P13) FOR THE MARKER PASS, r3557.** *These four hold everything behind four of the
+> seven remaining zero rows — complex analysis, functional analysis, involution, and the rest of category
+> and quadric.* ⌗ *`P7` and `P9` released.*
+
+> ⌗ **59 CLAIMS `modern_parallax.tex` (P4), `BH_causality_v2.tex` (P1), `janzen_circle_v3.tex` (P2),
+> `CR_cosmology.tex` (P15) AND `cosmogenesis_paper.tex` (P16) FOR THE MARKER PASS, r3559.** *This closes
+> every row closable without 60's gen-3 merge and completes the pass across the corpus.* ⌗ *`P5`, `P10`,
+> `P12`, `P13` released.*
+
+> ⌗ **59 CLAIMS `corpus/CR_framework.tex` (P7's matrix) AND `BOOK_INTRO_cosmiCave/assets/dependency_matrix.html`
+> FOR THE LEDGER BLOCK, r3560.** *Printing the block beneath the dependency matrix in both grains, and
+> extending `check_depmatrix.py` to gate it as a fourth.* ⌗ *The five marker-pass papers released.*
