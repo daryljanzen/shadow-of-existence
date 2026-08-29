@@ -12,6 +12,52 @@ sources: [chat]
 
 # THE SPECTRAL-THEORY LEDGER
 
+## ⌗ THE LANDING TABLE — where each register stands against the corpus, checked r3542
+
+> **▣ THE `\ldg` GATHER FOR THIS LEDGER.** *Live prose only; every `ABSENT` re-checked in the corpus's own
+> term before it was written.*
+
+### ★★★ THIS IS THE BAKE THAT CORRECTED TWO OTHERS, AND IT RECORDED BOTH WHERE THEY BELONGED
+
+*`S0′` corrected `H13`'s degeneracy — the corpus derives $2(n-1)(n+3)$, **ten** at the floor, where the
+harmonic bake had used the textbook $2(n^2-1)$, six. `S8` corrected `H14`, which* ***"quoted `P16`'s
+caveat and stopped at the full stop"*** *while the very next sentence supplied the map.* ⇒ ***Both
+corrections were written INTO the harmonic ledger, in full and with provenance*** *— "DEGENERACY
+CORRECTED r3488, by the SPECTRAL-THEORY bake reading `P10`" and "CORRECTED r3496, by the SPECTRAL-THEORY
+bake reading `P16`".*
+
+⌗ **That is worth recording as this bake's own practice, because the sweep's third cross-field correction
+— `F17`→`H20` — was *not* propagated**, *and its silent half (a table corrected, the sentence drawn from
+it left standing) had to be repaired at r3540.* ⇒ ***The difference is between bakes, not a structural
+asymmetry: this one told the ledger it corrected; the functional bake did not.***
+
+### ⌗ THE TABLE
+
+| register | routed clause · its paper | disposition |
+|---|---|---|
+| **`S6` `P03`'s ellipse eigenvalues ARE the Killing form's; its axis ratio is the $A_2$ root/weight ratio; its shorter axis is the slicing scale** | — | ***LANDED, and completely.*** *P3 carries the whole chain in its own voice: the conic **is** the unit circle of the Killing form restricted to $\mathfrak{su}(3)$'s Cartan, the six $e_i-e_j$ each of norm exactly 1 lie **on** it, the axis ratio is $\sqrt3$, and the focal distance $\sqrt{2-2/3}=2/\sqrt3$ **is** the Nariai offset — with `\rcpt{P03_ellipse_foci}` and the explicit disclaimer "this is not a coincidence of the number". **Pointer owed, and it is the best-landed register in the gen-2 set*** |
+| **`S4` Nariai and Petrov type D are the SAME ALGEBRAIC EVENT on two different cubics** | — | **PART-LANDED — a *connection*.** *`speciality invariant` ×2 in P9 and `double root` in eleven papers; **the identification of the two as one event is in neither**. Both halves present, the join absent — the shape the category gather named* |
+| **`S2` the wall has a SPECTRAL GAP of the full asymptotic mass, and that is what makes the generation count *stable* where `F14` only made it *defined*** | — | ***SUBSTANCE OWED, and it is this ledger's sharpest claim.*** *`spectral gap` ×0 and `mass gap` ×0 corpus-wide.* ⌗ **The distinction it draws is exactly the kind the corpus loses**: *defined and stable are different guarantees, and P14's count currently rests on the weaker one* |
+| **`S9` no APS boundary term, because the leaf is CLOSED** | — | ***SUBSTANCE OWED — a fence under an index theorem.*** *`APS`, `Atiyah--Patodi`, `eta invariant`, `boundary term`, `closed leaf` — **all ×0**. P14's index runs clean **because** the leaf has no boundary, and no paper says so.* ⌗ *Directly adjacent to the Cartan gather's `CH1`, which also lands in P14's index paragraph* |
+| **`S7` the signature change is an eigenvalue passing through INFINITY, so the metric never degenerates** | — | **SUBSTANCE OWED — a fence.** *`never degenerates` ×0; P7's one `through infinity` is the lift's, not the metric's.* ⌗ **This one protects a claim from an obvious objection** — *a signature change normally means a degenerate metric somewhere, and here it does not* |
+| **`S1` the tower's spectrum is discrete modewise and its zero-point sum diverges quartically — and the quartic is one the corpus already computes** · **`S1′` `S1` overclaimed, and `P07` corrects it** | — | **PART-LANDED.** *`zero-point` ×4 in P7 and ×4 in P10, `quartic` in five papers. **The bake's own overclaim-and-correction is internal and stays here*** |
+| **`S3` the corpus relies on TWO spectral gaps doing two jobs, and neither references the other** | — | **SUBSTANCE OWED — a *connection*, and it rides with `S2`** |
+| **`S5` `P15`'s exact/WKB residual is a systematic OFFSET, not the adiabaticity beside it** | — | **SUBSTANCE OWED.** *`WKB` ×3 in P15 and ×2 in P16; the offset/error distinction at neither* |
+| **`S0′`→`H13`** the degeneracy correction · **`S8`→`H14`** the caveat-and-full-stop correction | — | **BOTH PROPAGATED — see above.** *Cross-bake corrections, correctly not in any paper* |
+| **`S10` the six low papers are negative, read rather than counted** | — | **HELD** |
+
+### ⌗ WHAT THIS GATHER FOUND
+
+***Four fences and two connections owed, and no stale row.*** *After involution's discharged clause and
+Cartan's wrong correction, this ledger's register is accurate throughout — which is consistent with it
+being the bake that went and checked two others.*
+
+⌗ **And `S2`, `S9` and `CH1` all land in the same paragraph of P14** — *the generation count's stability,
+the absent APS term, and the flatness that Ambrose–Singer forces. **Three bakes, three fields, one site.**
+That is worth knowing before stage 3 opens P14: they are one session, not three.*
+
+---
+
 ## ⌗ S0 — THE BASELINE, RUN FIRST, AND IT CUTS THE FIELD IN HALF
 
 *The gate `609` installed, and the one this sweep has been repaid by four times. **Measured before any
