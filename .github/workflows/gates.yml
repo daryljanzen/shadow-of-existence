@@ -51,6 +51,14 @@ jobs:
           done
           if [ -n "$fails" ]; then echo "⛔ FAILED:$fails"; exit 1; fi
       - name: the text gates
+        # r3572 (60): check_compile is listed in BOTH jobs and only ONE of them has a
+        # toolchain.  Here it has none, so its compile half is UNRUN -- and UNRUN is not a
+        # pass, so the skip is DECLARED here, in writing, naming where the question IS
+        # asked.  Without this line the gate exits 2 and says install TeX.  Anything that
+        # stops compiling this tree on main must delete this declaration, not keep it.
+        # ** ADDITIVE: the gate list below is untouched (CLAIMS.md, r2497). **
+        env:
+          COMPILE_UNRUN_OK: "the `compile` job below -- texlive-full, on main and on schedule"
         run: |
           fails=""
           for g in check_id_bands check_received_at_weight check_unworked_blockers check_close_names_work check_kills check_burndown check_supersession \

@@ -145,6 +145,24 @@ r3164–r3176 were already thin when `622` recorded its list as "complete"; `r34
 > answer", which is the more comfortable of the two readings and was the wrong one.* ⌗ **This is the same rule as the two lines above it,
 > for the third time in one session: an environment failure and a corpus failure are indistinguishable
 > from the exit code.**
+>
+> ⛭⛭ **AND THE THIRD TURN OF IT — r3572, and this one is the INSTRUMENT'S defect, not the reader's.**
+> *`check_compile` was listed in **both** CI jobs. The `compile` job installs `texlive-full` and can ask
+> the question. The `fast` job cannot — and there `subprocess.run(['pdflatex', …])` did not report a
+> missing toolchain, it **raised `FileNotFoundError` and took the whole job down**.* ⇒ ***Every push this
+> session was red on a traceback, and a real failure arriving behind it would have looked exactly the
+> same red.*** *Fixed by giving the gate a **DECLARED** exemption: with no `pdflatex` it exits **2** and
+> says install TeX, unless the caller sets `COMPILE_UNRUN_OK` naming, in writing, where the tree IS
+> compiled. `gates.yml` sets it on the fast step and names the `compile` job. **`shutil.which` is a
+> measurable discriminator; a bare `try/except FileNotFoundError` would have been the inferred kind.***
+>
+> ⛔ **AND THE EXEMPTION LEAVES A HOLE, WHICH IS WHY IT IS WRITTEN DOWN HERE AND NOT ONLY IN THE CODE.**
+> *The `compile` job is gated `main || schedule`.* ⇒ ***So a pull request's LaTeX is compiled NOWHERE:
+> a branch can go green in `fast` and break the papers, and only the merge to main finds out.*** *That is
+> exactly how 59's `pdflatex` found a failure two of three places had missed.* **Closing it costs a
+> `texlive-full` install on every PR push — a compute decision that is Daryl's, not a node's — so it is
+> recorded as a known, declared gap rather than taken.** ⌗ *The cheap half of the close, if it is wanted:
+> run the `compile` job on `pull_request` too, with the apt cache warmed.*
 
 **⛔ NO FIELD IS TAKEN UP UNTIL THE ONE BEFORE IT MEETS THE BAR.** *The failure this plan exists to stop
 is breadth bought with depth.*

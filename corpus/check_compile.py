@@ -5,7 +5,7 @@ checked it per turn.  144 errors were found at c54.9 by accident.  This is the f
 Compiles every paper with a \documentclass and fails on any LaTeX error, undefined citation
 or undefined reference.  Run it every turn; it is the cheapest gate the corpus has.
 """
-import glob, os, re, subprocess, sys
+import glob, os, re, shutil, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 SKIP = re.compile(r'^(RETIRED_|arp_standalone)')
 def main():
@@ -14,6 +14,31 @@ def main():
                     and '\\documentclass' in open(os.path.join(HERE, f),
                                                   encoding='utf-8', errors='replace').read())
     bad = []
+
+    # --- THE TOOLCHAIN IS NOT A CORPUS FACT (r3572, 60) --------------------------------------
+    # This gate was listed in BOTH CI jobs.  The `compile` job installs texlive-full and can
+    # ask the question.  The `fast` job cannot -- and `subprocess.run(['pdflatex', ...])` on a
+    # runner with no pdflatex does not report a missing toolchain, it raises FileNotFoundError
+    # and takes the whole fast job down.  ** So every push this session was red on a traceback,
+    # and a real failure arriving behind it would have looked exactly the same. **
+    #
+    # ⛔ AND `UNRUN` IS NOT A PASS.  The absence of a toolchain is not evidence that the corpus
+    # compiles; it is the question NOT ASKED.  So the skip is DECLARED, never inferred: the
+    # caller must name, in writing, where the question IS asked instead.  Absent that
+    # declaration -- a node's laptop, an ad-hoc run -- the missing binary is a HARD FAILURE that
+    # says install TeX.  ** The exemption is declared, not inferred (THE_ARSENAL, r3568). **
+    if shutil.which('pdflatex') is None:
+        where = os.environ.get('COMPILE_UNRUN_OK', '').strip()
+        print("\n  ⚠ pdflatex is ABSENT: the compile half of this gate CANNOT run here.")
+        if not where:
+            print("    ⛔ AND UNRUN IS NOT A PASS.  Install a TeX toolchain, or set")
+            print("       COMPILE_UNRUN_OK to the name of the place that DOES compile this tree.")
+            print("       Saying nothing and exiting green is how 144 errors accumulated (L-43).")
+            return 2
+        print(f"    [declared] the compile question is asked instead by: {where}")
+        print(f"    {len(papers)} paper(s) went UNCOMPILED here.  The static halves above DID run.")
+        return 0
+
     print(f"  compiling {len(papers)} papers")
     for f in papers:
         subprocess.run(['pdflatex', '-interaction=nonstopmode', f], cwd=HERE,

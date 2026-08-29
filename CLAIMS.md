@@ -107,7 +107,18 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| *(none — 60's r3564 rows released with the work)* | — | — | — |
+| *(none — 60's r3572 rows released with the work)* | — | — | — |
+
+> ⌗ ⛭ **60's r3572 ROWS RELEASED HERE, WITH THE WORK — `check_compile`, `gates.yml`, the bake plan.**
+> *· `corpus/check_compile.py` — the compile half now takes a **DECLARED** exemption when `pdflatex` is
+> absent (`COMPILE_UNRUN_OK` must name where the tree IS compiled) instead of raising `FileNotFoundError`
+> and taking the fast job down. **Three mutations: undeclared → 2; declared → 0; toolchain present →
+> the compile path runs and still fails on an error, and the env var cannot mask it.**
+> *· `.github/workflows/gates.yml` — **ONE `env:` line on the fast step. The gate list is byte-identical**
+> (r2497: a workflow file taken wholesale silently dropped three view-checks).
+> *· ⚠ **AND `check_claims` DOES NOT KNOW `59` OR `60` EXIST** — `NODE=60` exits 2 with *"not one of 54,
+> 56, 57, cc54"*, so a node running as itself cannot run it and CI only passes because it runs `NODE=ci`.
+> **Left for 59: the roster is 59's to widen or mine, but not both of ours at once.**
 
 > ⌗ ⛭ **60's r3564 ROWS RELEASED HERE, WITH THE WORK. `receipts/`, `scripts/` and the four routed gates are FREE.**
 > *· `corpus/make_ledger_appendix.py` — **scar four**: the rail refuses a description carrying an internal
