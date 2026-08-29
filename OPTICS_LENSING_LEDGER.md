@@ -88,6 +88,51 @@ said BEFORE the build**, against which the 331 is that expectation met.*
 
 # THE OPTICS AND LENSING LEDGER — R-P's first bake
 
+## ⌗ THE LANDING TABLE — where each register stands against the corpus, checked r3532
+
+> **▣ THE `\ldg` GATHER FOR THIS LEDGER.** *Live prose only — masthead `%` blocks stripped before
+> counting, because this ledger's headline claim turns on exactly that distinction.*
+
+### ★★★ THE HEADLINE CLAIM IS OUT OF DATE, AND IN THE GOOD DIRECTION
+
+*This ledger's `O1` heading still reads* ***"the corpus draws it without saying so,"*** *and records that
+P3's only mention of the photon sphere was* ***"a curve on a figure"*** *which* ***"never says the curve
+meets the horizon locus exactly at Nariai."*** ⇒ ***P7 now says all of it, in live prose, with the
+receipt:*** *the circular null orbit at $r=3M$ from $\dd(f/r^2)/\dd r=0$ and independent of $\alpha$; at
+$M=\alpha/3\sqrt3$ that radius is $\alpha/\sqrt3$, the merged root itself; and both $\kappa=f'(r_h)/2$
+and the Lyapunov exponent $\lambda$ vanishing there* ***by different routes*** *—* $\kappa$ *because the
+root is double,* $\lambda$ *because the orbit lies on the horizon —* ***"and both only because $3M=r_h$,
+which is the Nariai condition"*** *(`\rcpt{O5_kappa_and_lyapunov}`). P7 then carries the fold scaling too.*
+
+⚠ ***AND THE CHECK THAT MATTERED WAS COMMENT-STRIPPING.*** *A first count gave P7 `photon sphere` ×8 —
+**four of them inside a `%` masthead block** that states the finding more strongly than the paper does.
+Counting the file rather than the paper would have scored this landed for the wrong reason, and on a
+different register would have scored an unlanded claim as landed. **Live-only is the standing method for
+every remaining gather.**
+
+### ⌗ THE TABLE
+
+| register | disposition | where it stands |
+|---|---|---|
+| **`O1` the photon sphere is $\Lambda$-independent at $r=3M$ and at Nariai IS the merged horizon** | **LANDED** | P7 live, receipted. **Pointer owed** |
+| **`O5` $\kappa$ and $\lambda$ both vanish at the forced member, by different causes** | **LANDED** | P7 live, `\rcpt{O5_kappa_and_lyapunov}`, with the fold scaling `\rcpt{D4_fold_scaling}` beside it |
+| **`O1`b the trichotomy IS the photon-sphere condition read causally — a null direction tangent to a sphere of constant $r$ *is* a circular null orbit** | **LANDED** | P7 and P3, one live use each. *The two-ways-one-member identification is in the corpus* |
+| **`O4` the deflection is $\Lambda$-free in the trajectory and $\alpha$-dependent in the measurement** | **LANDED, with the field's own dispute named** | P7 live: the orbit equation, the $\alpha$ term as a constant, $\dd^2u/\dd\varphi^2=u(3Mu-1)$ with no $\Lambda$ in it, then the observed bending carrying $\sqrt f$ — `\rcpt{O4_deflection_perspectival}`, Rindler–Ishak cited (P7 ×6). **The worked instance of the corpus's central interpretive claim, in the one place the field itself argued** |
+| **`O6` the quasinormal ringdown degenerates — both parts vanish, not only the imaginary one** | **LANDED** | P7 live (`quasinormal` ×2, `ringdown` ×6) |
+| **the lensing build (c54.181–184): the fitted width bought $\Delta\chi^2=400$, so a *derived* lensing above 400 would be evidence of a hidden free parameter; the derived operator returned 331** | **LANDED in P15** | `lensing` ×15. *This ledger stood at c54.163 and knew nothing of it — its own `BROUGHT CURRENT` note calls that **a missed landing, not a stale marker**, and that self-report is accurate* |
+| **⛔ every asymptotically-flat optics formula must be re-derived on $f=1-2M/r-r^2/\alpha^2$, because this construction is never asymptotically flat** | **SUBSTANCE OWED — and it is a *bound*** | *`never asymptotically flat` and `not asymptotically flat` appear **nowhere**; `asymptotically flat` occurs only in P1 and P2, neither of them at an optics formula.* **The bake walked into this trap itself** — the Schwarzschild shadow $b=\sqrt{27}M$ gave the clean, wrong $b=\alpha$ at Nariai — *and recorded it as the field's characteristic error.* **P7 is where the optics lives and where the fence belongs** |
+| **⛔ "the shadow" is CR's word, 156 uses, all P6's perspectival sense — any optics use must say *the observed shadow*** | **HELD, and correctly invisible** | `shadow radius` ×0, `silhouette` ×0. *The collision was entered in §0 **before** the bake so the two could not blur, and the zero is that guard working* |
+| **`O2` p0's sentence put the nullity in the plane** · **`O3` "only rescales $w$" needed care — the geometry is untouched but the triple-angle *form* is lost** | **needs checking at the site** | both are corrections to *wording* rather than claims, so a count cannot settle them; deferred to p0's and P3's landing sessions |
+
+### ⌗ WHAT THIS GATHER FOUND
+
+***This bake's results are landed almost without exception — and the one thing owed is again a bound.***
+*Six gathers now, and the count is consistent: results land, fences do not. Here the fence is the one the
+bake **itself** tripped over, wrote down as the field's characteristic error, and never carried into the
+paper that would need it.*
+
+
+
 > **⌗ RE-READ AGAINST c54.163 AND DECLARED CURRENT r2396.** *Same bounded test; same result — **none of the
 > span's three results bears on this bake's verdicts**. Its five "harmonic" uses are **Fourier harmonics of
 > $2M(w)$**, not the closed-$S^3$ spatial harmonics the recursion result is about.* ***The word collides; the
