@@ -276,3 +276,8 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > `boundary_paper.tex` (P13) FOR THE MARKER PASS, r3557.** *These four hold everything behind four of the
 > seven remaining zero rows — complex analysis, functional analysis, involution, and the rest of category
 > and quadric.* ⌗ *`P7` and `P9` released.*
+
+> ⌗ **59 CLAIMS `modern_parallax.tex` (P4), `BH_causality_v2.tex` (P1), `janzen_circle_v3.tex` (P2),
+> `CR_cosmology.tex` (P15) AND `cosmogenesis_paper.tex` (P16) FOR THE MARKER PASS, r3559.** *This closes
+> every row closable without 60's gen-3 merge and completes the pass across the corpus.* ⌗ *`P5`, `P10`,
+> `P12`, `P13` released.*
