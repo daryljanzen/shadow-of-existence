@@ -386,3 +386,8 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > exact/WKB residual is a systematic offset, not the adiabaticity beside it).* ⌗ *`P16` and `p0` released.*
 
 > ⌗ **59 CLAIMS `corpus/range_paper.tex` (P9) FOR THE NINTH STAGE-3 LANDING, r3579.** ⌗ *`P7` released.*
+
+> ⌗ **59 CLAIMS `janzen_circle_v3.tex` (P2) AND `groupoid_paper.tex` (P5) FOR THE TENTH STAGE-3 LANDING,
+> r3583.** *`⊢59` (P2's cycloid circle is a Thales circle), `C6` (the seam continuation is Möbius), and the
+> `⊢14–⊢18` Thales-locus pair.* ⌗ *`P9` released. **`check_glyph_coverage` is 60's** — the last genuine
+> corpus failure, routed to it by Daryl.*
