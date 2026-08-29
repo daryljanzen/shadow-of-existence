@@ -47,8 +47,8 @@ landing.*
 | register | routed clause · its paper | disposition |
 |---|---|---|
 | **`C1`–`C3`, `C7`** the two Nariai monodromies transpose *different* pairs; they generate order 24 with kernel $V_4$; 24 selects $W(A_3)=W(D_3)$ alone among all classical and exceptional Weyl groups; the null-loop control returns the identity | — | **LANDED in substance** — P12 and P14 carry $W(A_3)$, the residue pairing, the Klein four-group and the order-24 closure. **Pointer owed** |
-| **`C4` the closure is GENERIC to depressed cubics — five families all give 24 — so "substrate-derived" is sound about the derivation and misplaces the surprise; what is *not* forced is that the substrate's Weyl group is the same group** | — | ***SUBSTANCE OWED, and it is this ledger's sharpest result.*** *`depressed cubic` ×0 and `generic to` ×0. **The bake's own weight-shift — the cubic forces 24, the coincidence with $W(\so(6,\mathbb{C}))$ is what is unforced — is in no paper**, and it is a fence around a claim the corpus does make* |
-| **`C8`/`C3` the closure is a RANK-THREE fact, holding where it holds and failing on either side — at $\so(8,\mathbb{C})$ the cubic still gives 24 and the Weyl group gives 192** | — | **SUBSTANCE OWED — a bound.** *`rank-three` is live in P13 and P14 ×6 but not at this claim, and `exceptional isomorphism` is ×0. The ledger calls this* ***"a stronger statement than the papers make, and a narrower one — which is the trade a bake is supposed to find"*** |
+| **`C4` the closure is GENERIC to depressed cubics — five families all give 24 — so "substrate-derived" is sound about the derivation and misplaces the surprise; what is *not* forced is that the substrate's Weyl group is the same group** | — | ***LANDED — CORRECTED r3545.*** *Scored `SUBSTANCE OWED` at r3537 on `depressed cubic` ×0 and `generic to` ×0.* ⛔ ***P14 carries it in its own words, with its own receipt***, *found by the mandated full read: "a group of order twenty-four with $S_3$ image and Klein four-group kernel is what **any** cubic's residue pairing returns, so the closure is **forced by the cubic and not by this one**"* `\rcpt{C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone}` *— and it draws the weight-shift explicitly: "the derivation is sound and the surprise sits elsewhere than it first appears … **what is not forced is that the substrate's Weyl group is that same group**". **Pointer owed, not substance** |
+| **`C8`/`C3` the closure is a RANK-THREE fact, holding where it holds and failing on either side — at $\so(8,\mathbb{C})$ the cubic still gives 24 and the Weyl group gives 192** | — | ***LANDED — CORRECTED r3545.*** *Also scored owed at r3537, on `rank-three` and `exceptional isomorphism` not matching at the claim.* ⛔ *P14: "that is a **rank-three coincidence**: $\lvert W(D_n)\rvert$ runs $4,24,192,1920$ and meets $24$ only at $D_3$, where $\so(6,\mathbb{C})\cong\mathfrak{sl}(4,\mathbb{C})$. **The match holds where it holds and fails immediately on either side** — at $\so(8,\mathbb{C})$ the cubic still gives $24$ and the Weyl group gives $192$." **Verbatim, numbers included** |
 | **`C5` the deck-$S_3$ generation adds nothing — P5 has it as `prop:monodromy` *with* the caveat a naive version misses** | — | **BOUNCE, correctly.** *P5 `rem:monodromy-group` carries the condition and its numerical verification* |
 | **`C9` the moduli question — order 81, finite, vanishing $H^1$, zero-dimensional moduli, subregular (dim 4) not regular (dim 6)** | *"`P14` has it, and better"* | **BOUNCE CONFIRMED.** *P14 carries every element including the $3\times4-2\times8$ arithmetic's conclusion and the "dimension is a bonus and not the argument" discount* |
 | **`C10` the corpus computes TWO holonomies — the residue pairing's $S_4$ of order 24 (P5, P7) and the wall monodromies' $3^4$ of order 81 (P14) — different groups, different bases, sharing only a factor of three** | — | **SUBSTANCE OWED — a *connection*, of the kind the category gather named.** *Both are in the corpus; **that they are two and not one is in no paper**, and the r3164 bake's own error came from treating holonomy as one topic* |
@@ -63,9 +63,15 @@ itself wrong, still marked corrected-and-receipted.* ⇒ ***A landing table for 
 adjudicate the ledger's mathematics, not only locate its claims — which is a heavier pass than gen 1
 needed, and is why these six are the ones that stayed with 59.***
 
-⌗ **And what is owed here is one fence, one connection, and one link** — `C4`'s genericity, `C10`'s
-two-holonomies, and `CH1` — *which is the two failure modes of the previous eight gathers appearing in a
-single ledger.*
+> ⛔⛭ **TWO ROWS CORRECTED r3545, BY THE READ-THROUGH THAT STAGE 3 MANDATES.** *`C4` and `C8` were both
+> scored `SUBSTANCE OWED` at r3537 and **both are in P14's abstract**, in the paper's own words and with
+> `C4`'s receipt attached. The screen searched the ledger's phrasings — `depressed cubic`, `generic to`,
+> `exceptional isomorphism` — and P14 says "any cubic", "forced by the cubic and not by this one", and
+> "a rank-three coincidence".* ⇒ ***Eighth instance this campaign, and the first caught by the
+> word-for-word read rather than by another screen — which is the argument for that read, made on
+> itself.***
+
+⌗ **And what is owed here is one connection and one link** — `C10`'s two-holonomies and `CH1` — *and `CH1` is landed in P14 at r3544.*
 
 ---
 
