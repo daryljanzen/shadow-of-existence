@@ -60,9 +60,14 @@ error in full — the bake that **found** it. The harmonic ledger, which **owns*
 carried neither the reference nor the consequence: **its table's $d=5$ entry had been silently corrected
 from 2 to 1 and the sentence drawn from it left saying "available at $d=4$ and nowhere else", so the row
 and the conclusion two lines below it disagreed.*** ⇒ *Repaired r3540, with the cross-reference entered.*
-⌗ ***So the rule is sharper than "corrections travel one way": the finder records, the owner is not told,
-and a silently-corrected number is worse than an uncorrected one — because the file now contradicts
-itself and neither ledger says why.***
+⌗ ⛔ ***AND `F17` IS THE EXCEPTION, NOT A RULE — corrected r3541.*** *The sweep's other two cross-field
+corrections both reached the ledger they corrected, marked by provenance: `H13` carries "DEGENERACY
+CORRECTED r3488, by the SPECTRAL-THEORY bake reading `P10`" and `H14` "CORRECTED r3496, by the
+SPECTRAL-THEORY bake reading `P16`".* ⇒ ***Two of three propagated, so there is no one-way asymmetry —
+the difference is between BAKES: spectral wrote its corrections into the ledger it corrected, this one
+did not.*** ⌗ *What stands unqualified is the narrower and worse fact: **a silently-corrected number is
+worse than an uncorrected one**, because `H20`'s table and the sentence two lines below it disagreed
+and neither file said why.*
 
 ⌗ **And this is the fifth gen-2 shape:** *almost nothing here is a claim for a paper to carry. It is
 **theorems the papers' own arguments already depend on**, unnamed — which is a different debt from a
