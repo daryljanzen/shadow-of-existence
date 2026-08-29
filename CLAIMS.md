@@ -317,3 +317,5 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 > ⌗ **59 CLAIMS `corpus/CR_cosmology.tex` (P15) FOR THE EIGHTH STAGE-3 LANDING, r3575.** *`S5` (the
 > exact/WKB residual is a systematic offset, not the adiabaticity beside it).* ⌗ *`P16` and `p0` released.*
+
+> ⌗ **59 CLAIMS `corpus/range_paper.tex` (P9) FOR THE NINTH STAGE-3 LANDING, r3579.** ⌗ *`P7` released.*
