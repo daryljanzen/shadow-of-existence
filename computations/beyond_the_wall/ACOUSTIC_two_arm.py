@@ -121,6 +121,15 @@ def Hleaf(a):
 # the earlier results in PO13_WORKING_STATE can be reproduced. **
 LEAFPERT = os.environ.get('STACKPERT', '0') != '1'
 Hl_of  = CubicSpline(eg, ag * Hleaf(ag) / C)                       # comoving leaf Hubble, 1/Mpc
+# ** DRAGLEAF=1: the CAUSAL DRAG TEST (r3541).  Forces the drag/damping coefficient in the baryon
+# Euler equation -- the H in H R/(1+R) (fluid) and the baryon Hubble drag -H tb (hierarchy) -- onto the
+# LEAF (radiation-included) rate, while restoring, forcing and Phi's own evolution stay on whatever rate
+# LEAFPERT selects.  Under STACKPERT=1 on the CR arm this swaps ONLY the drag from the geometric rate to
+# the control's; everything else stays geometric.  On the control arm (and under default LEAFPERT) Hl_of
+# IS the working rate, so this is a byte-identical NO-OP -- the self-check.  Isolates whether the 2x
+# effective even-peak suppression lives in the drag: if the even/odd ratio moves toward the control's
+# 0.62 it does; if it doesn't, every term in the baryon Euler equation is exonerated. **
+DRAGLEAF = os.environ.get('DRAGLEAF', '0') == '1'
 Jac_of = CubicSpline(eg, Hphys(ag) / Hleaf(ag))                    # d eta_leaf / d eta_stack
 # ** PHASEONLY=1: reckon ONLY the oscillator's phase in leaf conformal time, nothing else -- the
 # PURE-CLOCK operation, isolated from LEAFPERT's full leaf dynamics.  Scaling the photon PRESSURE
@@ -499,7 +508,8 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         out[:, 0] = -tc + DRC * 3 * Php
         out[:, 1] = -Hc * tc + DRE * kk ** 2 * Ps
         out[:, 2] = -(4 / 3) * tg + DRC * 4 * Php
-        out[:, 3] = (-(Hc * Rb / (1 + Rb)) * tg + PH2 * (kk ** 2 / (1 + Rb)) * dg / 4
+        _hdrag = float(Hl_of(e)) if DRAGLEAF else Hc            # r3541 causal drag test
+        out[:, 3] = (-(_hdrag * Rb / (1 + Rb)) * tg + PH2 * (kk ** 2 / (1 + Rb)) * dg / 4
                      + DRE * kk ** 2 * Ps - kk ** 2 * sgg / (1 + Rb) - slip * tg)
         out[:, 4] = -(4 / 3) * tn + DRC * 4 * Php
         out[:, 5] = kk ** 2 * (dn / 4 - sig) + DRE * kk ** 2 * Ps
@@ -905,7 +915,8 @@ def evolve_hier(kk, t_eval, e_sw, yF):
             out[:, 7 + i] = kk / (2 * l + 1) * (l * Fn[:, i - 1] - (l + 1) * Fn[:, i + 1])
         out[:, 7 + LN - 2] = kk * Fn[:, LN - 3] - (LN + 1) / e * Fn[:, LN - 2]
         out[:, I_DB_] = -tb + DRC * 3 * Php
-        out[:, I_TB] = -Hc * tb + DRE * kk ** 2 * Ps + tp * (tg - tb) / Rb
+        _hdrag = float(Hl_of(e)) if DRAGLEAF else Hc            # r3541 causal drag test
+        out[:, I_TB] = -_hdrag * tb + DRE * kk ** 2 * Ps + tp * (tg - tb) / Rb
         # photons: F_2 .. F_LG
         out[:, I_FG] = (8 / 15) * tg - (3 / 5) * kk * F[:, 1] - tp * (F[:, 0] - Pi / 10)
         for i in range(1, LG - 2):
