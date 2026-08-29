@@ -396,3 +396,9 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > (P6) FOR THE ELEVENTH STAGE-3 LANDING, r3587.** *`⊢63` (P4 and P6 have no geometric locus, and that is
 > load-bearing), `⊢14–⊢18` (the Thales circle is the dial), and the conformal-invariance bound.*
 > ⌗ *`P2`, `P5`, `P8` released.*
+
+> ⌗ **59 CLAIMS `ONTOLOGY_FOUNDATION_INDEX.md` FOR THE CROSS-PAPER CONNECTIONS, r3591.** *The claims no
+> single paper owns — `C10` (two holonomies), `F15` (three compactness statuses), `K2` (the functor's three
+> properties are three papers), `S3`/`S4` (two spectral gaps; Nariai and Petrov D as one algebraic event),
+> `H21` (band-limiting).* ⌗ *All paper claims released — **zero `SUBSTANCE OWED` across all eighteen
+> landing tables** as of r3589.*
