@@ -2282,3 +2282,44 @@ The measured prediction for data: **CR predicts the acoustic-peak phases DRIFT w
 half-cycle by the sixth peak) where ΛCDM holds them locked.** The place to test it is any dataset resolving
 individual acoustic-peak positions/phases across the full comb -- the peak-position residuals vs a
 radiation-driven template are the observable. r3545 gives the template to difference against.
+
+---
+
+## r3546 — DEGENERACY KILLED: most of the drift is the acoustic scale; a ~0.2π CURVATURE survives
+
+**Daryl's ship (before any data):** a phase residual roughly linear in q is degenerate with a wrong l_A --
+a uniform comb stretch reads as a linearly growing residual, i.e. the +7% position over-drive seen twice.
+Refit l_A to each arm's own comb (best linear-in-q trend) and recompute; what SURVIVES is genuine phase
+incoherence, what is ABSORBED was a wrong ruler. Control must stay flat under its own refit or the test is
+void.
+
+2-parameter linear refit r(q) = a·q + b (a = the l_A/ruler-degenerate direction; b = absolute-phase ref):
+
+| arm | raw spread | fitted slope a | spread AFTER refit | RMS after | curvature (q^2 coef) |
+|---|---|---|---|---|---|
+| CR  | 0.750π | +0.140π/q | **0.234π** | **0.084π** | −0.032π/q² (concave arch) |
+| CTL | 0.058π | −0.000π/q | 0.058π | 0.020π | +0.007π/q² |
+
+After-refit residual, CR: −0.133, 0.063, 0.101, 0.061, −0.011, −0.081 -- a clean CONCAVE ARCH (rises to
+q=3, falls after). Robust: dropping the least-certain q=1 point, the arch persists (q=2..6 spread 0.18π).
+
+**⊘ VALIDITY:** control flat under its own refit -- spread 0.058π, slope ≈ 0 -- test valid.
+
+**⊘ RESULT — the drift SURVIVES, but MOST OF IT WAS THE RULER.** The raw 0.75π "drift to π" is dominated by
+its LINEAR part, which is exactly the l_A/acoustic-scale degeneracy -- the same class as the +7% position
+over-drive, NOT independent of it. Refitting l_A absorbs it. What survives is the CURVATURE: a concave arch
+~0.234π peak-to-peak (RMS 0.084π), **4.1× the control's post-refit floor (0.020π)**. That curvature is
+ruler-independent -- no uniform stretch can produce it (a wrong l_A is purely linear in q) -- so it is a
+genuine phase incoherence.
+
+**⇒ This corrects the r3545 headline for data purposes.** The testable, l_A-independent prediction is NOT
+"peaks drift half a cycle by q=6" (that is mostly the ruler, degenerate with the position residual we already
+have). It is: **CR's acoustic-peak-position residuals carry a CONCAVE CURVATURE ~0.2π that no acoustic scale
+can absorb, where ΛCDM's are flat to ~0.02π.** The Planck observable is the CURVATURE of the peak-position
+residuals after marginalising l_A -- a much more specific and honest target than the raw drift. The +7%
+position over-drive and the linear part of the phase drift are the same thing (confirmed here); the curvature
+is the one genuinely new, ruler-independent handle -- and it is 4× the control floor, real but modest (~0.2π),
+so it needs Planck's actual peak-position error bars to say whether it is detectable.
+
+Degeneracy settled: cc54 runs the Planck comparison next (has instrument, template, context), targeting the
+CURVATURE of peak-position residuals under a floated l_A -- not before this check, which is now done.
