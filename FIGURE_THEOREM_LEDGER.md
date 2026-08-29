@@ -76,11 +76,11 @@ exemption does not cover. The banner is struck below.***
 | **⊢45** nine-point circle **is** the throat | **LANDED** | p0 (×2) and P3 `prop:twoalpha`; also P14 — **pointer owed** |
 | **⊢2 · ⊢7** the hinge at `2α`, five equivalences | **LANDED** | P3 `prop:twoalpha`; the 2-and-3 split (substrate faces vs triangle faces) is p0's |
 | **⊢4 · ⊢39** triple angle ⟹ Nariai | **LANDED** | P3, P5, P7, P13, P14, p0 all carry the triple angle |
-| **⊢46 Feuerbach degenerates** | **SUBSTANCE OWED** | **Feuerbach is absent from every paper.** p0 states the *fact* (the throat is incircle **and** nine-point circle) and never names the theorem or the reading: *two distinct classical objects forced onto each other by the one input — the same species as the Nariai double root.* That last clause is the claim, and it is nowhere |
-| **⊢14–⊢18 the Thales circle is the dial** | **SUBSTANCE OWED** | **`Thales` appears in no paper.** P3 carries the trichotomy; the identification of the *locus* — vertex on one arc, secant midpoint on the other, degenerating at Nariai into the two null rulings — is not in it |
+| **⊢46 Feuerbach degenerates** | **PARTLY LANDED — narrowed r3527** | p0 carries the degeneration **as a fact** — the throat is the hinge triangle's incircle *and* its nine-point circle, and p0 says so at two sites and works the $D$-dependence of it (*"Euler's nine-point circle is a theorem about triangles and has no analogue at a square"*). **Owed is the theorem's name and one reading**: classically the nine-point circle is *tangent* to the incircle; here they are *identical* — two distinct classical objects forced onto each other by the one input, **the same species as the Nariai double root**. That last clause is the claim, and it is nowhere |
+| **⊢14–⊢18 the Thales circle is the dial** | **SUBSTANCE OWED — confirmed r3527 against the corpus's own words** | *"the dial" is in P3 (×7) and P5 (×6) and is a **different object**: the sky-angle dial, the swing of the slicing plane about the hinge.* The Thales circle as the **locus of every cut's closest approach** — vertex on one arc, secant midpoint on the other, degenerating at Nariai into the two null rulings — is in no paper, and neither is "Thales" |
 | **⊢59** P2's cycloid circle is a Thales circle | **SUBSTANCE OWED** | absent from P2 |
-| **★★★ ⊢61** P7's central forcing **is** a tangency condition, and P1 supplies the tangency | **SUBSTANCE OWED — the largest debt in this file** | absent from P7 **and** P1. Verified two ways (`sweep4`, `sweep5`): P7's `ΛM²` against `1/9`, the horizon cubic's discriminant sign, and the vertical line's intersection count with P3's ellipse **partition the family identically**. ⇒ *Euclid's cuts/touches/misses, P3's three-horizons/Nariai/one, and P7's transverse/tangent/no-horizon are **one trichotomy in three vocabularies**, and P1 proves the tangency **without a metric** while the figure proves the equivalence **with** one.* P3 already says it in ink — *"the Nariai configurations are the vertical-tangent points of the ellipse"* |
-| **⊢62** the tangency is designation-dependent, the geometry is not | **SUBSTANCE OWED** | rides with ⊢61; it is the bound that keeps ⊢61 honest and must land in the same pass |
+| **★★★ ⊢61** P7's central forcing **is** a tangency condition, and P1 supplies the tangency | **LANDED — CORRECTED r3527, see the note below** | ***P7 carries it in its own voice, with the P1 citation attached***: *"at no finite time~\cite{JanzenBHcausality}. The limiting orientation the collapse selects is therefore a null direction **grazing** the horizon---tangent to it, never transverse,"* followed by the full trichotomy — transverse crossing at $\Lambda G^2M^2/c^4<1/9$, tangency at a merged double root, no real horizon above. **The physics is landed and was landed all along.** What is owed is narrower and belongs elsewhere: **the third vocabulary** — that Euclid's *cuts / touches / misses* is the *same* trichotomy, verified by the vertical line's intersection count with P3's fundamental ellipse partitioning the family identically. That is a figure-side identification and its home is **p0 `sec:power`**, the Euclid section, not P7 |
+| **⊢62** the tangency is designation-dependent, the geometry is not | **SUBSTANCE OWED, with ⊢61's narrowed remainder** | rides with the third-vocabulary statement and is the bound that keeps it honest; both go to p0 `sec:power` |
 | **⊢63** P4 and P6 have no geometric locus, **and that is load-bearing** | **SUBSTANCE OWED** | absent. It is the negative that says the figure programme has a boundary, which makes it worth more than most positives |
 | **⊢50 · ⊢57** the excircles; `3α` is not a third scale | **SUBSTANCE OWED** | absent. Directly relevant to p0 `sec:ledger`'s one-scale claim, which currently argues the point without this |
 | **⊢51 · ⊢54** `τ` is a light-path; `σ` is a relabelling | **SUBSTANCE OWED (τ) / LANDED (σ)** | `σ`-as-relabelling is throughout P2/P3/P5/P14/P16; **`τ` as a light-path is in no paper** |
@@ -94,6 +94,27 @@ exemption does not cover. The banner is struck below.***
 | **U2** `A = ∛2·ρ` | **RUN, exact, Nariai-only** | 2e-16, not vacuous; `lem:twoturnings` untouched — it denies identifying the two `ℤ₃` *symmetries*, this is a ratio of two *radii* |
 | **U3** the full 3D, 24 hinges both sides | **OPEN — figure work, staged** | Daryl: *"which we will get to plotting eventually, in stages, not now"* |
 | **U4 / Parts XI–XII** the Euclid question | **PARTLY LANDED** | the protocol's paying outputs are in p0 `sec:power`; the **protocol itself**, written down as a protocol rather than performed, is not. The tradition gap Daryl named — Wasan, and the Chinese/Arab/Indian sources — is still a real gap in what can be cited |
+
+### ⛔⛔ THE TABLE ABOVE WAS BUILT WITH A FAULTY INSTRUMENT, AND ONE ROW MOVED — corrected r3527
+
+***The first pass searched the LEDGER's vocabulary against the papers, and the papers use their own.***
+*Re-run against corpus-native terms, the biggest entry on the owed list changed disposition:* **⊢61 is
+landed**, *in P7's own voice and with the P1 citation attached — `grazing`, `tangent rather than
+transverse`, `merged double root`, all present. It was scored `SUBSTANCE OWED — the largest debt in this
+file` because `tangency condition` and `supplies the tangency` are the **ledger's** phrasings and appear
+nowhere.* ⇒ ***Its remainder is real but small and has a different home**: the third vocabulary, the
+Euclid identification, into p0's `sec:power` rather than into P7.*
+
+⌗ **⊢46 and ⊢14–⊢18 also narrowed** *(p0 carries Feuerbach's degeneration as a fact but not its reading;
+"the dial" in P3/P5 is a different object from the Thales locus).* ⌗ **And two ABSENTs survived a
+homonym check rather than being taken at face value:** *⊢63's `no locus` and `geometric locus` **do**
+occur in P7 — at the rate-switch and at the Hubble–Eddington radius, neither of them this claim — so
+⊢63 stands owed for the right reason.*
+
+⇒ ***THE STANDING RULE, paid for three times in one session:*** *filename search cannot see a landing;
+an escaped underscore returns a clean zero; a word list is a claim about the searcher's vocabulary.*
+***Every `ABSENT` in a landing table is now searched in the corpus's term, then homonym-checked at the
+site, before it is written.***
 
 ### ⛔ WHAT THIS GATHER DID **NOT** FIND
 
