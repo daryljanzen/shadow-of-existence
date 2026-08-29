@@ -73,6 +73,7 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{hyperref}
 \usepackage{receipts}  % in-place receipt citations -> Appendix R
+\usepackage{ledgers}      % in-place ledger citations -> Appendix L
 \usepackage{caption}
 
 \hypersetup{
@@ -435,7 +436,7 @@ r^{3}+(E^{2}-1)\alpha^{2}r+2M\alpha^{2}=0 ,
 \end{equation}
 one cubic per member, whose linear coefficient is $E^{2}-1=-k$ by \eqref{eq:Ek}. Its two ends are exactly the two turning cubics that paper keeps apart~\cite{JanzenCRframework}: the marginal member $E=1$, $k=0$, gives $r^{3}+2M\alpha^{2}=0$, whose root is the comoving turnaround of the flat leaf; and the zero-energy member $E=0$, $k=1$---whose motion is confined to the regions where $f<0$---gives $r^{3}-\alpha^{2}r+2M\alpha^{2}=0$, which is the horizon condition $f=0$ itself. The two turning conditions are therefore not two unrelated cubics but the $k=1$ and $k=0$ ends of this one family, separated by the curvature term.
 
-Read as three-sheeted covers of the mass line, the members differ further, and in a way that exchanges rather than removes structure. In depressed form $r^{3}+pr+q$ with $p=(E^{2}-1)\alpha^{2}$ and $q=2M\alpha^{2}$, the roots are equilateral exactly when $p=0$, and---since $p$ does not depend on $M$ while $q$ is linear in it---the discriminant $-4p^{3}-27q^{2}$ is a square in $M$ exactly when $p=0$ as well. The two are one condition, met at $E=1$ alone. Every member with $E<1$ therefore has colinear real roots with no symmetry as a figure but full monodromy $S_{3}$, its cover branching at the two masses where roots collide; the marginal member has the equilateral triangle, carrying $S_{3}$ as the figure's own symmetry, and monodromy only $\mathbb{Z}/3$, its cover branching at $M=0$ alone. The Weyl group is present throughout the family; what the marginal member changes is whether it is carried by the cover or by the configuration. That this exchange occurs at the flat leaf $k=0$---the member the observed cosmology selects---is recorded, with no connection claimed.\rcpt{order3_bridge}
+Read as three-sheeted covers of the mass line, the members differ further, and in a way that exchanges rather than removes structure. In depressed form $r^{3}+pr+q$ with $p=(E^{2}-1)\alpha^{2}$ and $q=2M\alpha^{2}$---which is the \emph{versal unfolding} of the $A_{2}$ singularity, $p$ and $q$ its two unfolding parameters, so that the family is not merely a convenient parametrisation but the complete one, every small deformation of the degenerate root equivalent to a member of it\ldg{catastrophe_singularity}--- the roots are equilateral exactly when $p=0$, and---since $p$ does not depend on $M$ while $q$ is linear in it---the discriminant $-4p^{3}-27q^{2}$ is a square in $M$ exactly when $p=0$ as well. The two are one condition, met at $E=1$ alone. Every member with $E<1$ therefore has colinear real roots with no symmetry as a figure but full monodromy $S_{3}$, its cover branching at the two masses where roots collide; the marginal member has the equilateral triangle, carrying $S_{3}$ as the figure's own symmetry, and monodromy only $\mathbb{Z}/3$, its cover branching at $M=0$ alone. The Weyl group is present throughout the family; what the marginal member changes is whether it is carried by the cover or by the configuration. That this exchange occurs at the flat leaf $k=0$---the member the observed cosmology selects---is recorded, with no connection claimed.\rcpt{order3_bridge}
 \end{remark}
 
 The dust is carried in each case as the bend, with no new mechanism. For a general spatial leaf the bend-density identity of Section~\ref{sec:bend} is the Hamiltonian constraint $16\pi\rho={}^{3}R+K^{2}-K_{ij}K^{ij}-2\Lambda$; for an FLRW leaf $K_{ij}=-(\dot a/a)h_{ij}$ and ${}^{3}R=6k/a^{2}$, and it reads
@@ -554,5 +555,6 @@ Rev. Mod. Phys. \textbf{21}, 357--366 (1949).
 
 
 \input{appendix_receipts_P08}
+\ldgappendix{appendix_ledgers_P8}
 
 \end{document}
