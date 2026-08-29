@@ -271,3 +271,8 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > r3556.** *Optics and variational's landed registers live in these two — `O1`/`O4`/`O5`/`O6` in P7,
 > `V1`'s Carter chain in P9 — plus quadric, complex analysis and figure-theorem rows naming them.*
 > ⌗ *`p0` and `P14` released.*
+
+> ⌗ **59 CLAIMS `groupoid_paper.tex` (P5), `canonical_time.tex` (P10), `algebroid_paper.tex` (P12) AND
+> `boundary_paper.tex` (P13) FOR THE MARKER PASS, r3557.** *These four hold everything behind four of the
+> seven remaining zero rows — complex analysis, functional analysis, involution, and the rest of category
+> and quadric.* ⌗ *`P7` and `P9` released.*
