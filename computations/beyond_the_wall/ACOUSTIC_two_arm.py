@@ -972,9 +972,10 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
         _g2 = np.linspace(e_sw, eta_rec, 300)
         _Y2 = evolve_hier(_sk, _g2, e_sw, _Y1[-1]).y.T.reshape(len(_g2), len(_sk), NVH)
         _eta = np.concatenate([_g1, _g2[1:]])
-        _phi = np.concatenate([_Y1[:, :, 6], _Y2[1:, :, 6]], axis=0).T   # (nsel, neta)
+        _sw = lambda j: np.concatenate([_Y1[:, :, j], _Y2[1:, :, j]], axis=0).T  # (nsel, neta)
+        _phi, _dg, _tg = _sw(6), _sw(2), _sw(3)   # Phi (idx6), photon density (idx2), velocity (idx3)
         _a = np.interp(_eta, eg, ag)
-        np.savez(os.environ['PHISAVE'], eta=_eta, a=_a, phi=_phi,
+        np.savez(os.environ['PHISAVE'], eta=_eta, a=_a, phi=_phi, dg=_dg, tg=_tg,
                  qpk=_sk * R_S_ / np.pi, kpk=_sk, arm=ARM, eta_rec=eta_rec, eta_s=ETA_S)
         print(f"  PHISAVE-HIER (full range): q={[round(float(k*R_S_/np.pi),2) for k in _sk]} "
               f"-> {os.environ['PHISAVE']}")

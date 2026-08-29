@@ -1923,3 +1923,43 @@ ISW/lensing-observable prediction is now stated at its strongest: **CR's potenti
 interior MINIMUM near q~3 (k~0.07/Mpc, the 3rd-acoustic scale) where LCDM's is monotonically increasing** --
 a turning point no radiation-era cosmology produces, converged above the noise floor. The odd-even
 alternation survives underneath, independent of all of it. This is the version to take to ISW and lensing.
+
+### ⛭⛭⛭ THE DRIVING-WORK INTEGRAL — the over-drive is NOT the driving; it IS the alternation (r3538)
+**Daryl's ship: compute the work the potential does on the oscillator, int(Phi' * theta) d.eta, both arms,
+matched modes q=1,2,3, this composition (STACKPERT=1 GSRC=1 HIER) -- the number that connects Phi's decay
+to the peak heights. Does the +65% amplitude excess show up as excess driving work?** Added dg (photon
+density, idx2) and tg (velocity, idx3) to the HIER-composition dump.
+
+| peak/mode | int Phi'*tg (velocity) CR/CTL | int Phi'*Theta0 (density) CR/CTL | **HEIGHT CR/CTL** |
+|---|---|---|---|
+| 1 | 0.88 | 0.69 | 0.78 |
+| 2 | 1.02 | 0.75 | **0.43** |
+| 3 | 1.08 | 0.87 | 0.73 |
+
+**ANSWER: NO -- the over-drive is not the driving work, and the diagnostic says so cleanly.** (1) Neither
+work integral is 65% in excess anywhere -- CR's driving work is within ~10-30% of control's, not 1.65x. (2)
+Decisively, **neither work integral has the DIP at peak 2 that the heights have** -- both are smooth across
+the three peaks (velocity ~1 flat; density monotone 0.69->0.87), while the heights are 0.78, **0.43**, 0.73.
+The over-drive lives entirely in peak 2, and the driving work has no peak-2 feature.
+
+**⇒ WHAT THE OVER-DRIVE ACTUALLY IS -- and it collapses two open items into one.** The peak heights are a
+BROADBAND suppression (CR ~0.75x control on P1,P3) PLUS an EXTRA suppression of the even peak (P2 at 0.43x).
+Measured directly: CR's even peak sits at **0.35** of its odd neighbours' mean, against control's **0.62**.
+That extra even-peak suppression IS the odd-even ALTERNATION -- the P1/P2 "+65% over-drive" and the
+"surviving odd-even alternation" are the SAME residual, not two. And the driving work does not produce it.
+
+⌗ *The broadband part (~0.75) roughly tracks one work variant (int Phi'*Theta0 ~0.69-0.87), so the overall
+CR suppression is plausibly driving-related; but the FEATURE that makes P1/P2 anomalous -- the even-peak
+dip -- is not in the driving work at all.*
+
+**⇒ WE WERE CHASING THE WRONG TERM, and now the target is exact.** The thing to explain is not the driving
+and not a broadband amplitude -- it is the EVEN-PEAK SUPPRESSION: why CR's rarefaction (even) peaks sit at
+0.35 of their compression (odd) neighbours where control's sit at 0.62. That is a compression/rarefaction
+(baryon-loading) asymmetry question, not a driving question -- and it is the alternation that has survived
+every rate, source and normalisation in this arc. PO-13's open amplitude residual is now ONE thing, named
+and located: the odd-even alternation, ~0.35 vs 0.62 even/odd, not the driving.
+
+**⇒ PO-13 open items, corrected count: the amplitude over-drive and the odd-even alternation are ONE
+(even-peak suppression, measured 0.35 vs 0.62, NOT driving work). Plus the position +7% (owed layer
+conversion + driving, a rate/source consequence). Plus the distinctive prediction (potential-decay turning
+point at q~3). The next term to chase is the even/odd compression-rarefaction asymmetry, directly.**
