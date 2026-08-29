@@ -83,6 +83,11 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
+| `corpus/make_ledger_appendix.py` | 60 | r3564 | refuse a description carrying an internal revision reference — the `\ldg` rail is leaking `r3437`/`r3438`/`r3453` into EIGHT published appendices. |
+| `REPRESENTATION_THEORY_LEDGER.md`, `SPECTRAL_THEORY_LEDGER.md` | 60 | r3564 | ⚠ **59's files, ONE `job:` line each, mechanical**: drop the internal revision number from the frontmatter description the registry copies. *No verdict, probe or landing row touched.* Reverse it if you want it another way. |
+| `corpus/ledgers_registry.md` | 60 | r3564 | the same two description cells, kept in step with the frontmatter they are copied from. |
+| `corpus/check_revleak.py`, `corpus/check_deferrals.py` targets | 60 | r3564 | the four text gates 59 routed here. |
+| `scripts/` (new gate) | 60 | r3564 | the marker-in-comment check 59 asked for. |
 | *(none — 60's r3542–r3546 rows released with the work)* | — | — | — |
 
 > ⌗ ⛭ **60's ROWS RELEASED HERE, WITH THE WORK — and `receipts/` and `scripts/` are FREE.** *59 said
