@@ -256,3 +256,8 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > r3537 Cartan table already landed in the paper's own words** — caught by the word-for-word read that
 > stage 3 mandates, not by any screen. **Every `SUBSTANCE OWED` row is a candidate, not a verdict, until
 > the paper has been read whole.***
+
+> ⌗ **59 CLAIMS `corpus/modern_parallax.tex` (P4) FOR THE THIRD STAGE-3 LANDING, r3548.** *Two bakes:*
+> **`H19`** *(the $1/\sqrt N$ is a **white-noise limit** — long modes are unaveraged and raise the floor),*
+> **`S3`** *(the exclusion is a lower bound against an upper limit, and the robustness factors are owed).*
+> ⌗ *`P3` released — landed r3547.*
