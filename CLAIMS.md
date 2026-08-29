@@ -306,3 +306,7 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > and rewriting them would break those references to fix an ambiguity this note resolves.* ⌗ *60's offer of
 > a declared form for `check_revision_collisions` is the right close: with the band declared here the gate
 > can distinguish **collided-and-documented** from **collided-and-ignored**, which it currently cannot.*
+
+> ⌗ **59 CLAIMS `corpus/BH_causality_v2.tex` (P1) FOR THE SIXTH STAGE-3 LANDING, r3565.** *Two registers:*
+> **`F20`** *(Shale's criterion — the unnamed theorem supplying P1's own inequivalence conclusion)* *and*
+> **`⊢56`** *(the horizon real at its ends and fictional in its middle).* ⌗ *`p0` released.*
