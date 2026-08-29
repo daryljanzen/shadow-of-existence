@@ -1727,3 +1727,56 @@ measured), the matter double-count was not the diagnosis (cc54, algebra), and th
 rested on the source we agreed was wrong (cc54, measured). Three corrections in one thread, all by running.
 The standing lesson: when a read of the code and a run disagree, run it; the temptation to reason from the
 source will recur.
+
+### ⛔ CORRECTION to r3533 — the mode-by-mode mapping was an OVER-CLAIM; the histories-differ pivot stands (r3534)
+**Node 59 caught three things on the Phi-decay work (3b56b5ea), and the numbers confirm all three. cc54
+owns the over-claim.**
+
+**59.1 -- reporting bug (fixed).** The "CR/control" column reported 1.264, 1.182, 0.796 but mixed the
+PER-HALF ratio (q=1) with the CUMULATIVE ratio (q=2,3). The underlying dump is fine (0.259=0.509^2,
+0.124=0.499^3). Corrected **per-half** ratios:
+
+| q | CR per-half | CTL per-half | **per-half CR/CTL** |
+|---|---|---|---|
+| 1 | 0.616 | 0.487 | **1.264** |
+| 2 | 0.509 | 0.468 | **1.087** |
+| 3 | 0.499 | 0.539 | **0.927** |
+
+These fall MONOTONICALLY and cross 1 between q=2 and q=3. The earlier "not a clean monotonic" caveat was
+an artefact of the mixing; the corrected column is cleaner than the reported one.
+
+**59.3 -- referencing (fixed).** The reported over-drive +65%/+9% was against the SKY. The Phi dumps are a
+CR-vs-CONTROL measurement, so the residual they could explain is CR-vs-control: **P1/P2 +63%, P1/P3 +5%**
+(CR 3.665/2.489 vs control 2.254/2.363). Close to the vs-sky numbers only because control ~ sky here.
+
+**59.2 -- the mode-by-mode mapping RUNS BACKWARDS (the important one). RETRACTED.** If per-half retention
+is read as sustained driving, the ratios (1.264, 1.087, 0.927) predict the driving enhancement ORDERED
+P1/P3 (1.36) > P1/P2 (1.16) -- the third mode enhanced MOST. The MEASURED residual is the reverse: P1/P2
+enhanced 1.63, P1/P3 enhanced 1.05. **The residual does NOT track the Phi-decay ratio mode by mode**, and
+cc54's sentence "q=3's Phi decays faster so P1/P3 only +9%" had the sign inverted (faster decay of P3 would
+make P1/P3 LARGER, not smaller). I checked the OPPOSITE sign (decay=driving) too -- it predicts both ratios
+< 1, also wrong. So no simple reading of retention-as-driving reproduces the peak-height residual. **The
+"over-drive tracks the decay rate mode by mode" claim is withdrawn -- mine, and 58 asserted it too; the data
+refutes it in either direction.**
+
+⌗ *And a composition caveat cc54 should have flagged: the Phi dump runs on the FLUID path (LOS=0), while
+the amplitude residual is from the HIER path -- so even a correct mapping would be comparing two different
+transfers. A clean mode-by-mode test would need Phi measured on the HIER composition. (Note re 59.3's gate
+point: STACKPERT=1 is NOT SRCSTACK=vel -- the r3512 composition defect was SRCSTACK+HIER, and STACKPERT=1
+composes cleanly in evolve_hier via Hc_of; the control gate on STACKPERT=1 GSRC=1 DID pass byte-identical,
+so the machinery is validated -- but the fluid-vs-HIER path split for Phi is a real inconsistency.)*
+
+**⇒ WHAT STANDS, narrower and correct.** CR's potential decay HISTORY differs from the control's -- measured,
+matched-phase, real (per-half retention 1.264/1.087/0.927, a genuine crossover). That is ALL the ISW/lensing
+pivot needs, and 58 said so explicitly: "it only needs the histories to differ, which they do." What does
+NOT stand is any claim that this decay history explains the CMB peak-height residual mode by mode -- it does
+not, in either direction, and that connection is withdrawn. The over-drive of the CMB amplitude and the
+Phi-decay history are BOTH real and BOTH open, but they are not the tidy single mechanism r3533 claimed.
+
+**⇒ THE ONE DISTINCTIVE FEATURE that survives and is worth taking to data (58's point, and it does NOT rest
+on the peak mapping):** the per-half retention ratio CROSSES 1 between q=2 and q=3. A generic "CR's wells
+persist" pushes every mode one way; this crosses over, so a second effect dominates at high q and the
+crossing LOCATES a scale. A crossing scale in Phi's decay history is a far more distinctive, normalisation-
+robust prediction than an overall offset -- and Phi's decay is exactly what ISW and lensing measure. **Next:
+map the crossover (matched-phase PHIQ q=1..6, both arms, same composition) and locate the crossing k, before
+any ISW/lensing comparison -- you want to know the predicted feature before going to the data.**
