@@ -2402,3 +2402,49 @@ the same as the prediction failing. What is measured and stands: (i) the over-dr
 (ii) the diagnosed loss of cross-scale phase coherence (5 terms eliminated, two quadratures); (iii) the
 ruler-independent smooth curvature ~0.2pi and the amplified positional parity, both model-internal. The Planck
 test is DEFERRED to a full-Boltzmann implementation, not claimed.
+
+---
+
+## r3548 (branch) — THE STOP WAS THE TAIL: calibration HOLDS over q=1..3, and CR is DISFAVOURED there (4x too much positional parity)
+
+**Daryl's catch on r3547:** the calibration failure is the damping TAIL, not the instrument. The control
+lands the sky's position to 0.16% and height alternation to 0.6% and fails ONLY on positional alternation,
+with its peaks drifting LOW at high l -- the envelope-moves-centroids effect that took 0.7294->0.7560 before.
+Test it: compute the control's ALT on q=1..3 (where it tracks the sky) and see if it matches there.
+
+**Per-peak control vs sky (raw positions, Planck-sigma):** peak1 0.0, peak2 −1.3, peak3 +3.7, peak4 **−8.7**,
+peak5 **−14.9**, peak6 **−17.3**. The instrument tracks at peaks 1–3 and BREAKS SHARPLY at peak 4 -- the
+damping tail (control peaks drift low: 1727 vs 1779 at peak 6).
+
+**Parity ALT amplitude by range (pi units):**
+| range | SKY | CONTROL | CR |
+|---|---|---|---|
+| q1–3 | 0.028±0.002 | **0.029 (0.6σ — MATCHES)** | **0.111 (4×, 47σ stat)** |
+| q1–4 | 0.052 | 0.025 (10σ) | 0.089 |
+| q1–6 | 0.047 | 0.019 (11σ) | 0.058 |
+
+**⊘ CALIBRATION HOLDS over q=1..3.** Control ALT 0.029 vs sky 0.028 = 0.6σ: the instrument reproduces the
+sky's positional parity to ~0.001 where it is resolved. The r3547 ~10σ failure was ENTIRELY q>=4 (the tail).
+**The stop applied to the TAIL, not to the comparison.** The instrument is FIT over q=1..3.
+
+**⊘⊘ RESULT over the validated range: CR is DISFAVOURED. CR's positional parity ALT (0.111) is 4x the sky's
+(0.028) and 4x the control's (0.029)** -- a difference ~80x the instrument's demonstrated accuracy on this
+range (the control, same instrument/peak-finder/sub-grid method, matches the sky to 0.001). This is NOT an
+instrument artifact: the same pipeline reproduces the sky for LCDM and produces 4x too much for CR. CR's
+even peak (peak 2) -- the one SUPPRESSED in HEIGHT -- is OVER-SHIFTED in POSITION.
+
+**⊘⊘⊘ THE DAY-ONE PO-13 CLAIM IS REFUTED BY MEASUREMENT.** The uniform-comb reading -- that CR's acoustic
+comb is REGULAR, lacking the compression/rarefaction parity -- is WRONG in the peak positions. CR's parity
+anomaly is **AMPLIFIED, not absent**: suppressed even-peak heights AND over-shifted even-peak positions, the
+SAME even peak flagged in both observables. Measured, calibrated over q=1..3, stated as plainly as the
+diagnosis: **CR does not lose the parity; it over-produces it, and that over-production disagrees with the
+sky at ~4x over the range where the instrument reproduces the sky.**
+
+**⇒ (a) vs (b), now on evidence.** A REAL calibrated comparison exists NOW over q=1..3 and CR is disfavoured
+there. A CAMB/CLASS build would EXTEND the comparison to the tail (q>=4) where this instrument's damping
+under-resolves -- it is a way to widen the test, not a precondition for having one. The Planck test is no
+longer "deferred/untestable": over the validated low-q range it is DONE and CR disagrees. What the full
+Boltzmann build buys is the tail and tighter significance, not the existence of the result.
+
+Supersedes r3547's "instrument not fit / test deferred" for q=1..3: the instrument IS fit there, and the
+result is a calibrated disagreement. r3547's tail-failure stands for q>=4.
