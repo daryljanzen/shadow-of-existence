@@ -2184,3 +2184,57 @@ r-earlier) still carries it to the sky separately and is untouched here.
 
 Every prior term stands eliminated (R, Phi, drag). This locates the even-peak suppression, by direct
 measurement, in the ARRIVAL PHASE -- a timing/IC-phase effect, not amplitude, transfer, or projection.
+
+---
+
+## r3544 — THE DRIFT IS DYNAMICAL: PO-13's residual has a name — CR lacks cross-scale phase coherence
+
+**Daryl's check (before banking the timing result):** confirm the phase drift is dynamical, not where each
+mode starts. Decompose arrival = start + accumulated; residual = accumulated − WKB clock (k∫c_s dη). One
+subtraction from the dumps on disk (po13 phase3.py, quadrature B = photon velocity, no numeric derivative).
+
+Decomposition (units of π):
+
+| arm/q | start (wrapped) | accum | WKB | **dynamical residual = accum − WKB** |
+|---|---|---|---|---|
+| CR q1 | 1.000 | 1.244 | 1.000 | **0.244** |
+| CR q2 | 1.000 | 2.580 | 1.999 | **0.580** |
+| CR q3 | 1.000 | 3.759 | 3.001 | **0.758** |
+| CTL q1 | 1.147 | 1.073 | 0.819 | 0.254 |
+| CTL q2 | 1.152 | 2.014 | 1.817 | 0.196 |
+| CTL q3 | 1.157 | 3.019 | 2.813 | 0.206 |
+
+**Coherence across the odd peaks (q1 vs q3):**
+- CTL: dynamical residual 0.254 vs 0.206 — **spread 0.048π (LOCKED)**; start 1.147 vs 1.157 — spread 0.010π.
+- CR:  dynamical residual 0.244 vs 0.758 — **spread 0.514π (DRIFTS)**; start 1.000 vs 1.000 — **spread 0.000π**.
+
+**⊘⊘ RESULT — the drift is DYNAMICAL, and an IC cannot fix it.** CR's modes START perfectly coherent
+(all three at exactly 1.000π — the adiabatic IC gives every mode the same horizon-entry phase, spread
+0.000π). The coherence is then LOST during evolution: CR's dynamical residual drifts 0.244→0.580→0.758
+(spread 0.514π across the odd modes). The control both starts coherent (~1.15π) AND stays coherent — its
+residual is LOCKED at ~0.2π across all scales (spread 0.048π). So a seam PHASE reset is useless: the modes
+already start coherent in CR and drift apart regardless, at a rate growing with k. You cannot cancel a
+dynamical drift with a one-time initial condition without a per-k fit (which is not a physical IC).
+
+Notably CR's q=1 residual (0.244) nearly MATCHES the control's locked value (~0.25) — CR starts, at low k,
+with the same acoustic phase shift as ΛCDM, then drifts away at higher k. The departure is k-dependent and
+growing — the loss of coherence, not a global offset.
+
+**⇒ PO-13's amplitude residual now has a NAME, reached by elimination + measurement.** The radiation era in
+ΛCDM does not merely SHIFT the acoustic phase by ~0.2π — it LOCKS that shift across scales (control residual
+constant ~0.2π for every mode), and that cross-scale phase coherence is what produces the clean
+compression/rarefaction parity (control odd peaks all at ~0.17π). **CR, having no radiation era to drive and
+lock the modes, has a phase shift that DRIFTS with k. The even peak (q=2) lands at residual 0.58π — far off
+the coherent value — and the even-peak suppression is the visible signature of that missing coherence.**
+
+This is not a fitting failure and not an un-found knob. It is a structural consequence of a radiation-free
+expansion, measured through FIVE eliminated possibilities — R (identical), Φ (well-integral ~1, r3540),
+drag (0.82 and fighting, r3541–42), IC amplitude (seam = a swap, r3543), IC phase (modes start coherent,
+r3544) — and two independent phase quadratures. The absence is the same one the whole arc has circled ("no
+radiation driving"), now stated precisely: the driving's role is not only the ~0.27π shift, it is PHASE
+COHERENCE ACROSS k; CR lacks it, and PO-13's even-peak/amplitude residual is its measured signature.
+
+**Status:** PO-13 amplitude residual DIAGNOSED (not closed-to-the-sky — CR still over-drives by the recorded
+amounts). The diagnosis is a physical prediction: CR's acoustic peak PHASES should be k-incoherent relative
+to ΛCDM's, testable wherever the acoustic phase is measured across scales. Position +7% and the q~3 Φ turning
+point (r3532) stand as separate results. The projection-map layer is untouched.
