@@ -2673,3 +2673,45 @@ the validated kernel.)
 Instrument: HYPER flag + _phi_hyper_grid (validated) + LMIN; po13_hyperbessel_validate.py carries the kernel
 validation. The projection is measured; it is the ruler, plus a small mixed residual -- not the free
 direction that lands the sky.
+
+---
+
+## r3554 (branch) — 58's two checks on the projection: it's a RELOCATION not a reshaping; the cutoff does not bite
+
+**58's checks alongside r3553, and they correct the premise the test rested on.**
+
+**CHECK 1 -- hyper vs flat on the SAME source (small correction or different spectrum?).** A mode of degree
+L projects to: FLAT l = k D_C (comoving) ; HYPER l ~ L sin(chi) (angular-diameter). Ratio hyper/flat per
+mode: L=71 -> 0.126, L=177 -> 0.133, L=244 -> 0.134, L=500 -> 0.136 -- nearly constant ~0.14 = sin(chi)/chi.
+**It is NOT a few-per-cent reshaping: it RELOCATES the whole comb by ~7x** (flat l=196..670 -> hyper
+l~25..90), the comoving->angular-diameter distance factor chi/sin(chi)=7.21, with an ~8% non-uniformity on
+top (0.126->0.136 across the range). Different spectrum, not a small correction.
+
+**⊘ CORRECTION TO THE PREMISE (58's own).** H14's "projection peaks below l=k D_C: 0.60 at l=3, ->1 by
+l~1000" is the FLAT spherical-Bessel kernel's own peak-below-kD_C -- computed with spherical_jn, the SAME
+for both arms -- NOT the hyperspherical correction. The projection test was motivated by H14 as "a few-%
+scale-dependent error converging across l=220-810"; that number is the flat kernel shape, not the closed
+correction. The genuine hyperspherical correction is the factor-7 distance relocation, dominantly UNIFORM.
+
+**CHECK 2 -- the cutoff's bite.** Peaks 1-3 are dominated by modes L=71, 177, 244 (beta=72,178,245). Under
+the closed cutoff a mode feeds l<=L; the hyper peaks land at l=25, 65, 90 -- all far BELOW L -- so **the
+l<=L cutoff does NOT truncate any of the three acoustic peaks.** (The real "bite" is not truncation but
+relocation: to populate the sky's l=220-810 peak range under HYPER you need L~580-2200, which are heavily
+Silk-damped -- so the comb sits at low l, where the sky has no acoustic peaks.)
+
+**⊘ GATE:** control keeps flat Bessels, HYPER=1 on lcdm byte-identical (maxdiff 0.0) -- no cross-arm leak.
+
+**⇒ THE SIGNATURE 58 ASKED FOR IS NOT SEEN.** "All four move together toward the sky" requires the map's
+effect to be observable; but the factor-7 bulk is a UNIFORM rescale absorbed by l_A (invisible to the four
+scale-invariant observables), and the ruler-independent residual (the ~8% non-uniformity) moves peaks
+DIFFERENTIALLY -- l3/l1 toward the sky, l2/l1 away (r3553) -- not together. So hyperspherical projection is
+the physical origin of the l_A degeneracy (curvature of the unperturbed slice) and does NOT land the sky.
+
+**⇒ THE TRAMPOLINE TEST, HALF DONE (Daryl's framing, 58's refinement).** Hyperspherical Bessels carry the
+CURVATURE of the unperturbed slice -- and that half is now measured: dominantly the ruler, small mixed
+residual, not the fix. What they do NOT carry is the local WARPING the plasma itself creates -- the
+perturbation's own contribution to the map (warped sheet vs merely curved one). That is the well-posed next
+step: a projection map that varies with the local potential, not just the global curvature. Whether it
+exists and lands the four is the open object; it is NOT another term inside the source (all seven of those
+are eliminated). The diagnosis has moved out of the source and into the map, and the curvature-half of the
+map is done.
