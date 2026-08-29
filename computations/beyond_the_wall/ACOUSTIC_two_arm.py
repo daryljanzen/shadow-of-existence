@@ -1029,7 +1029,7 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
         print(f"  PHISAVE-HIER (full range): q={[round(float(k*R_S_/np.pi),2) for k in _sk]} "
               f"-> {os.environ['PHISAVE']}")
         return np.array([100.0]), np.array([0.0])
-    ls = np.arange(100, int(LMAXL), int(os.environ.get('LSTEP', '8')))
+    ls = np.arange(int(os.environ.get('LMIN', '100')), int(LMAXL), int(os.environ.get('LSTEP', '8')))
     x0 = eta_0 - EE
     Cl = np.zeros(len(ls))
     nb = int(os.environ.get('KBATCH', '250'))
