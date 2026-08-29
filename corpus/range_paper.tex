@@ -74,7 +74,8 @@
 \usepackage{graphicx}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{hyperref}
-\usepackage{receipts}  % in-place receipt citations -> Appendix R
+\usepackage{receipts}
+\usepackage{ledgers}  % in-place receipt citations -> Appendix R
 \usepackage{caption}
 
 \hypersetup{
@@ -118,7 +119,7 @@ Within any reachable symmetry class the operator's four data---the leaf (the spa
 
 Rotation is located precisely: it is the shift, the off-diagonal frame-dragging that every symmetric cut so far had set to zero, and the angular momentum is the product of the mass-offset and a twist of the slicing frame ($J\propto Ma$), the twist alone returning pure de Sitter. The central theorem treats the separable (Carter) cut: requiring it to be vacuum on the substrate forces its two structure functions to be quartics whose leading coefficients are pinned to $-\Lambda/3=-1/\alpha^{2}$ by the substrate and whose remaining coefficients are the mass, the rotation, and the NUT charge (the fourth being a coordinate normalization fixed by the substrate), so the rotating vacuum kernel is the complete \emph{separable} Type-D family, Kerr--NUT--(A)dS, over the one substrate. Acceleration---the remaining Plebański--Demiański parameter---is not a vacuum parameter: a bare accelerating mass leaves an irremovable conical strut on the axis (the axis structure function carries no $\Lambda$, so the cosmological constant cannot regularise it), so acceleration enters on the matter side as a bend, the substrate's own free relative-acceleration being the de Sitter drift of the cosmological sector. The separation is not assumed beyond the separable form: the vacuum condition itself splits into a pure-$r$ piece and a pure-angle piece, so the hidden symmetry of the Type-D family---the Carter constant~\cite{Carter1968} that general relativity carries as an unexplained gift---is the substrate's maximal symmetry surfacing in that corner. 
 
-Algebraic type is shown to be no constraint on the range: the operator reaches Petrov type O~\cite{Petrov1954} (de Sitter, Friedmann--Lemaître--Robertson--Walker), type D (Schwarzschild--de Sitter, the Kerr--NUT--(A)dS family), and type I (anisotropic Bianchi cosmologies at three Killing vectors, the Zipoy--Voorhees and Weyl class at two), with the speciality invariant verified to separate them. Type D is thereby identified as the separable \emph{corner}, not the edge: the corner where the substrate symmetry surfaces as a Killing tensor~\cite{WalkerPenrose1970}, with the rest of every class generic and needing no such structure. 
+Algebraic type is shown to be no constraint on the range: the operator reaches Petrov type O~\cite{Petrov1954} (de Sitter, Friedmann--Lemaître--Robertson--Walker), type D (Schwarzschild--de Sitter, the Kerr--NUT--(A)dS family), and type I (anisotropic Bianchi cosmologies at three Killing vectors, the Zipoy--Voorhees and Weyl class at two), with the speciality invariant\ldg{spectral_theory} verified to separate them. Type D is thereby identified as the separable \emph{corner}, not the edge: the corner where the substrate symmetry surfaces as a Killing tensor~\cite{WalkerPenrose1970}, with the rest of every class generic and needing no such structure. 
 
 The mechanism is the shift--shear link. By the Goldberg--Sachs theorem an algebraically special vacuum carries a shear-free null geodesic congruence; the substrate's null rulings are shear-free, and a cut that inherits one as its principal congruence is algebraically special---this is the Type-D corner. But a cut need not inherit one: the anisotropy of Bianchi~I and of Zipoy--Voorhees \emph{is} shear, shear forbids a repeated principal null direction, and so the operator climbs past Type~D into Type~I. It survives the shift---the algebraic type is carried by the leaf, not conferred by the rotation---so what governs reachability is the count of Killing \emph{vectors}, the honest isometry, not the count of Killing \emph{tensors}. 
 
@@ -249,7 +250,7 @@ cuts should be of a type that admits such a form at all---is answered in \S\ref{
 argument, and the two join. The substrate's null rulings are shear-free; a cut that inherits one as its principal
 congruence is therefore algebraically special by the Goldberg--Sachs theorem; the speciality invariant places
 the resulting family at Type~D; a Type-D vacuum admits a Killing tensor~\cite{WalkerPenrose1970}; and the
-constant of motion that tensor carries is Carter's\rcpt{V1_carter_chain}. \emph{So the explanation does not
+constant of motion that tensor carries is Carter's\rcpt{V1_carter_chain}\ldg{variational}. \emph{So the explanation does not
 rest on the separable ansatz}: the ansatz is where the vacuum condition is checked, and the shear-free rulings
 are why a cut of that kind is what the construction produces. No conservation theorem of the usual kind is
 invoked or needed---the Carter constant is not the charge of a point symmetry, which is precisely why general
@@ -461,5 +462,6 @@ Ark. Mat. Astron. Fys. \textbf{16}, 1 (1922).
 
 
 \input{appendix_receipts_P09}
+\ldgappendix{appendix_ledgers_P9}
 
 \end{document}
