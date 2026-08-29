@@ -87,7 +87,11 @@ RAILS = [
     dict(name='ledgers   (\\ldg)', gen='make_ledger_appendix.py',
          index=os.path.join(ROOT, 'ledgers', 'INDEX.md'),
          pattern='appendix_ledgers_*.tex', scope=_ledger_scope,
-         min_rows=15, min_files=1,
+         # ⛭ r3554: RAISED 1 -> 2. 59's r3550 put the rail to work -- P3 now carries seven
+         #   \ldg markers and its own Appendix L -- so the rail has two artefacts and a drop
+         #   back to one is now a regression this floor can see. ** That is what a ratchet is
+         #   for, and it only works if it is raised when the rail grows. **
+         min_rows=15, min_files=2,
          fix='python3 corpus/make_ledger_appendix.py P17 corpus/appendix_ledgers_P17.tex'),
 ]
 
