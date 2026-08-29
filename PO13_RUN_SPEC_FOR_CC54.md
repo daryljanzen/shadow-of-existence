@@ -1,3 +1,17 @@
+---
+name: PO13_RUN_SPEC_FOR_CC54
+description: PO-13's run specification for a node with compute — what to run, with which flags, and what each run decides. Held outside the corpus beside PO13_WORKING_STATE.
+status: WORKING DOCUMENT — deliberately not a paper
+# ⛭ r3548 (node 60): DECLARED-UNKNOWN, which is the true statement from this line — nobody
+# here has brought this document current and its position is not known. Written because
+# classifying it (it had gone unclassified since it was added, failing
+# `classify_documents --check` on every push — and under the fast job's `set -e` that
+# aborted the step before anything after it ran) made it visible to `check_currency` for
+# the first time. ** Declaring ignorance is not declaring currency, and only the owning
+# line can do the second. **
+current: none
+---
+
 # PO-13 RUN SPEC — for a node with compute
 
 Everything here is blocked in the chat environment by memory and turn limits, not by

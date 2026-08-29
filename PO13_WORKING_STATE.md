@@ -2,6 +2,14 @@
 name: PO13_WORKING_STATE
 description: THE ACOUSTIC-PHASE OFFSET — the worked state of PO-13, held OUTSIDE the corpus. Not a paper, not a register row, not a route into either. Read before touching P15's acoustic sections.
 status: WORKING DOCUMENT — deliberately not a paper
+# ⛭ r3548 (node 60): DECLARED-UNKNOWN, which is the true statement from this line — nobody
+# here has brought this document current and its position is not known. Written because
+# classifying it (it had gone unclassified since it was added, failing
+# `classify_documents --check` on every push — and under the fast job's `set -e` that
+# aborted the step before anything after it ran) made it visible to `check_currency` for
+# the first time. ** Declaring ignorance is not declaring currency, and only the owning
+# line can do the second. **
+current: none
 ---
 
 # THE ACOUSTIC-PHASE OFFSET — WORKING STATE

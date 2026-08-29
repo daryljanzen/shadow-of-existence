@@ -2,6 +2,14 @@
 name: HORIZON_TRANSIT_WORKING_STATE
 description: THE HORIZON-TO-BRANCH-POINT TRANSIT — where the event horizon actually sits on the lap, and how the content crosses. Worked state, held OUTSIDE the corpus. Read before touching any horizon-location claim in P1, P7 or P16.
 status: WORKING DOCUMENT — deliberately not a paper
+# ⛭ r3548 (node 60): DECLARED-UNKNOWN, which is the true statement from this line — nobody
+# here has brought this document current and its position is not known. Written because
+# classifying it (it had gone unclassified since it was added, failing
+# `classify_documents --check` on every push — and under the fast job's `set -e` that
+# aborted the step before anything after it ran) made it visible to `check_currency` for
+# the first time. ** Declaring ignorance is not declaring currency, and only the owning
+# line can do the second. **
+current: none
 ---
 
 # THE HORIZON-TO-BRANCH-POINT TRANSIT — WORKING STATE
