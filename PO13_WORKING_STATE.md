@@ -2622,3 +2622,54 @@ What remains (unchanged by this): the disagreement is real and diagnosed (loss o
 coherence, r3540-r3546); the calibrated q=1..3 Planck positional-parity disagreement is GSRC=1's (r3548-49);
 the source is now closed as a fitting knob (r3550-r3552). The free direction that would fit the sky, if CR
 has one, is not the source -- it is the rate split or the projection, or CR genuinely disagrees with the CMB.
+
+---
+
+## r3553 (branch) — THE PROJECTION MEASURED: it IS the l_A degeneracy (angular-diameter vs comoving), residual is small and MIXED
+
+**58/Daryl's ship:** the last untested step is the k->l projection. CR's closed-S^3 source has been projected
+with FLAT spherical Bessels j_l(k x0); replace them with the hyperspherical Phi^beta_l(chi) for the closed
+geometry (CR arm only; control keeps flat = gate). If the projection is the lever, all four observables move
+together.
+
+**Built + rigorously validated** the hyperspherical Bessel (rescaled log-space normalised-Gegenbauer
+recurrence): matches exact mpmath to <2e-3 across (beta,l) up to (1000,500) incl. the 1e-23 tail, and the
+flat limit Phi->j_l. Control gate byte-identical (HYPER no-op on lcdm by construction). Two numerical
+artifacts caught and NOT reported: a kernel underflow at low-l/high-beta (fixed with the rescaled recurrence),
+and the instrument's l>=100 grid missing the (compressed) real comb (fixed with LMIN).
+
+**⊘ WHAT THE PROJECTION IS.** The closed-S^3 kernel maps a ladder mode L to **l_peak ~ L sin(chi)** (the
+angular-diameter distance D_A = r_0 sin chi), NOT the flat instrument's **L chi = 2.75 L** (comoving D_C).
+With chi_LSS = 2.75 (LSS near the antipode), that is a factor sin(chi)/chi = 0.14 -- a ~7x UNIFORM
+compression of the whole comb -- PLUS a non-uniformity: l_peak/L rises 0.3528 -> 0.3722 across L=71..290
+(the acoustic range), a **5.3% non-uniform stretch**.
+
+**⊘ THE UNIFORM PART IS THE l_A DEGENERACY -- physically identified.** A uniform l-rescale is absorbed by
+l_A and cancels in all four scale-invariant observables (r3546). So the factor-7 bulk of the projection
+correction changes NOTHING in position-ratio / heights / parity. **This is the physical origin of the l_A
+degeneracy r3546 flagged: the "wrong ruler" was the flat comoving distance standing in for the closed
+angular-diameter distance.** The projection's only observable effect is its 5.3% NON-UNIFORMITY.
+
+**⊘ THE NON-UNIFORM RESIDUAL: real but SMALL and MIXED.** Applying the validated single-mode map to CR's
+peak modes (L=71,177,244 -> hyper l=25.0,65.0,90.4):
+| ratio | flat CR | hyper CR | sky |
+|---|---|---|---|
+| l2/l1 | 2.49 | 2.60 | 2.45 |
+| l3/l1 | 3.42 | 3.61 | 3.68 |
+l3/l1 moves 3.42->3.61, TOWARD the sky's 3.68 (outer peak improves); l2/l1 moves 2.49->2.60, AWAY from the
+sky's 2.45 (inner peak worsens). **MIXED -- not "all four move together toward the sky."** The projection
+shifts the outer peak the right way and the inner peak the wrong way.
+
+**⇒ VERDICT.** The projection is a genuine, large geometric effect, correctly identified: the flat instrument
+used the comoving distance where the closed geometry demands the angular-diameter distance. But its bulk is
+the l_A ruler (absorbed, invisible to the observables), and its ruler-independent residual -- the 5.3%
+non-uniformity -- is small and moves the peaks DIFFERENTIALLY (helps l3/l1, hurts l2/l1), not uniformly
+toward the sky. So the projection does not cleanly resolve the disagreement either; it is the physical
+mechanism BEHIND the r3546 curvature, quantified. (Caveat: peak POSITIONS here are the validated single-mode
+map; peak HEIGHTS and the clean full-instrument four-observable numbers need the hyperspherical LOS integrator
+sampled correctly for the near-antipode kernel -- a further build. The position/ratio conclusion stands on
+the validated kernel.)
+
+Instrument: HYPER flag + _phi_hyper_grid (validated) + LMIN; po13_hyperbessel_validate.py carries the kernel
+validation. The projection is measured; it is the ruler, plus a small mixed residual -- not the free
+direction that lands the sky.
