@@ -46,6 +46,57 @@ compact real form. **Verified on every basis element.*** ⇒ *`P05`'s signature-
 baby universe, matched-procedure control and Ambrose–Singer.*
 
 
+## ⌗ THE LANDING TABLE — where each register stands against the corpus, checked r3536
+
+> **▣ THE `\ldg` GATHER FOR THIS LEDGER.** *Live prose only. This is the first gen-2 gather, so the table
+> carries the column the gen-1 tables did not need: **the routed clause, its paper, and whether it is
+> still owed.** *(Column shape adopted from 60's r3535 sizing.)*
+
+### ★★★ THE ROUTED CLAUSE IS DISCHARGED, AND THIS LEDGER IS TWO REVISIONS BEHIND ITS OWN PAPER
+
+*`WHAT BIT` below still quotes P13's superseded* ***"two of the four real forms"*** *and still reads*
+***`ROUTED, NOT APPLIED`***. ⇒ ***P13 applied it, and took repair (a) AND named the omitted form
+outright.*** *`sec:face-status` today reads:* **"two of the *five* real forms of the one complex group
+$\SO(6,\mathbb{C})$ — the others being $\SO(4,2)$, $\SO(3,3)$ and $\SO^{*}(6)\cong\SU(3,1)$,"** *then
+gives the three dimension exclusions the bake certified as correct, then states the thing the bake said
+no dimension argument could dodge —* **"$\so^{*}(6)$ has maximal compact $\su(3)\oplus\mathfrak{u}(1)$,
+so $\su(3)$ sits inside it outright, and no dimension argument excludes it"** *— with
+`\rcpt{I1_so6C_has_five_real_forms_and_the_omitted_one_admits_su3}*, and scopes the claim to the reached
+forms.* ⌗ *The second probe landed too: `so(4,2)` is named as the substrate's **symmetric dual**, not as
+one of the "others", with `\rcpt{S1_so42_is_not_another_real_form_it_is_the_substrates_own_dual}`.*
+
+### ⛔ AND THE REPAIR LEFT AN ARTEFACT, FIXED r3536
+
+*P13 stated the `so*(6)` fact **twice in one section**, in near-identical words, with the **same receipt
+cited both times** — once as the correction to the group-theory claim and again as the reason for the
+scoping. **A paper does not make the same point twice with the same receipt; that is a repair applied
+and then re-applied in a second sentence, with both surviving.*** ⇒ *The second is now a back-reference
+— "precisely because $\SO^{*}(6)$ is not excluded on dimension" — keeping the logic and dropping the
+restatement. P13 compiles; the receipt is cited once.*
+
+### ⌗ THE TABLE
+
+| register | routed clause · its paper | disposition |
+|---|---|---|
+| **`I1` $\so(6,\mathbb{C})$ has FIVE real forms, and the omitted $\so^{*}(6)$ admits $\su(3)$ as the semisimple part of its own maximal compact** | *"two repairs are available and the choice is the paper-holder's"* · **P13 `sec:face-status`** | **DISCHARGED — the ledger's row is stale.** P13 took (a) *and* named the form. **Pointer owed, not substance** |
+| **the three exclusions P13 *does* make are all correct** — $\so(4,2)$ at 7, $\so(3,3)$ at 6, and the careful $\so(5,1)$ argument | — | **LANDED, and certified by the bake rather than merely left standing** |
+| **`L-279` $\so(4,2)$ is not "one of the others" — it is the substrate's own *symmetric dual* $\mathfrak{h}\oplus i\mathfrak{m}$, $\mathrm{AdS}_5$ on $\SO(4,2)/\SO(4,1)$, sharing this substrate's isotropy exactly, and the duality is involutive** | — | **LANDED** with its own receipt. **Pointer owed** |
+| **neither route produces $\SO^{*}(6)$ — *"a statement about two computed routes and not a proof of unreachability"*** | — | **LANDED, fence included.** *The bound is in the paper in the bake's own careful form* |
+| **⛔ `S1` (`L263_the_station_audit`) is a stale snapshot the corpus has advanced past** | *"ROUTED to the `L263` station-audit lineage … not rewritten here"* · **`receipts/`** | ***STILL OWED, AND WORSE THAN RECORDED: the ledger says four checks fail; it now fails SIX.*** ⌗ **`receipts/` is 60's under the r3535 division — routed to 60, not taken here** |
+| **⌗ `symmetric space` ×8 across seventeen papers, against a programme whose central object *is* one** | — | **the count is now ×9 and still small** (P12 ×5, P7, P13, p0, P4). *The bake's observation stands; it was noted as the obvious next probe and thrown at r3176* |
+| **⌗ whether $\xi$ commutes with $\sigma$, and what the two generate together** | — | **OPEN, and correctly so.** *Zero corpus-wide. The ledger names it rather than half-answering it, and that is the right state* |
+| **⛔ what this bake must NOT be read as saying** — nothing here touches the substrate's own $\su(3)$ location or the fermion sector | — | **HELD.** *P13's own text confines the finding to one subsection it marks as not load-bearing* |
+
+### ⌗ WHAT THIS GATHER FOUND — the gen-2 shape is different again
+
+***A routed clause is not an unlanded one.*** *This ledger's headline register reads `ROUTED, NOT APPLIED`
+and has been applied for two revisions; a reader trusting the row would re-open a closed question, and a
+reference matrix built from the rows rather than the papers would score P13 as owing a correction it has
+already made.* ⇒ ***So for gen 2 the row's own verdict is the least reliable field in the file, and every
+`ROUTED` must be re-run against the paper before it is counted.***
+
+---
+
 ## ⛔⛔⛭ WHAT BIT — the real-form enumeration is INCOMPLETE, and the uniqueness claim fails
 
 `P13` §`sec:face-status`, in its own words:
