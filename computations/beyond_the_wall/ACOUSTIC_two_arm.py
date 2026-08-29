@@ -196,6 +196,15 @@ else:
 # the shortfall is the Hc^2-vs-Omega mismatch, not radiation-specific.  So this UNDER-counts matter by
 # standard EFE; it lands the sky only if CR's constraint puts matter's local gravity on rho_free. **
 GSRCRAD = os.environ.get('GSRCRAD', '0') == '1'
+# ** THRESH (r3552, 58's threshold principle as a DERIVED source weight): the constraint boost applies only
+# where the perturbation is ABOVE the critical density -- bound, gravitating locally -- and switches off
+# below, where the region is in the Hubble flow and expansion is absolute (draft sec: threshold problem,
+# "no gradual variation").  In a flat universe the critical density IS the mean, so "above critical" =
+# locally OVERDENSE (the sourcing contrast delta_s > 0): the boost gates ON in compression, OFF in
+# rarefaction, a SHARP step.  The weight is the sign of the sourcing overdensity -- derived, not fitted.
+# Requires GSRC=1 (else Gf==1, nothing to gate).  On the control Gf==1 -> gate is a no-op by construction. **
+THRESH = os.environ.get('THRESH', '0') == '1'
+THRESHK = float(os.environ.get('THRESHK', '50'))   # step sharpness in delta_s (large = sharp)
 Og_of = CubicSpline(eg, (1 - FNU) * (OR / ag ** 4) / _rt)
 On_of = CubicSpline(eg, FNU * (OR / ag ** 4) / _rt)
 # ** THE MATTER SECTOR IS SPLIT INTO BARYONS AND CDM AT c54.178. **  Until now it was ONE fluid
@@ -512,6 +521,9 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         # that the change can be MEASURED on this instrument rather than asserted.
         _mat = (Ocv * dc + Obv * db) if BSPLIT else ((Ocv + Obv) * dc)
         _gf = float(Gf_of(e))
+        if THRESH:                                   # r3552: gate the boost by local overdensity (bound vs Hubble flow)
+            _dtot = Ogv * dg + Onv * dn + Ocv * dc + Obv * db
+            _gf = 1.0 + 0.5 * (1.0 + np.tanh(THRESHK * _dtot)) * (_gf - 1.0)
         _dsrc = (_gf * (Ogv * dg + Onv * dn) + _mat) if GSRCRAD else _gf * (Ogv * dg + Onv * dn + _mat)
         Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc / 2) * _dsrc
         # ** DR multiplies EVERY coupling to the potential, at EVERY site. **
@@ -908,6 +920,9 @@ def evolve_hier(kk, t_eval, e_sw, yF):
         Ps = Ph - 6 * Hc ** 2 * (Onv * sig + Ogv * sgg) / kk ** 2
         _mat = (Ocv * dc + Obv * db) if BSPLIT else ((Ocv + Obv) * dc)
         _gf = float(Gf_of(e))
+        if THRESH:                                   # r3552: gate the boost by local overdensity (bound vs Hubble flow)
+            _dtot = Ogv * dg + Onv * dn + Ocv * dc + Obv * db
+            _gf = 1.0 + 0.5 * (1.0 + np.tanh(THRESHK * _dtot)) * (_gf - 1.0)
         _dsrc = (_gf * (Ogv * dg + Onv * dn) + _mat) if GSRCRAD else _gf * (Ogv * dg + Onv * dn + _mat)
         Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc / 2) * _dsrc
         out = np.zeros_like(y)
