@@ -2530,3 +2530,47 @@ no in-between value that fits (r3550). The over-drive is structural, not a norma
 direction that would fit the sky -- if one exists in CR -- is NOT the source-constraint magnitude; it is
 something else (the rate split itself, the projection, or a term not yet identified). This is the fitting
 question answered by measurement: the source factor is exhausted as a fitting knob.
+
+---
+
+## r3551 (branch) — the GSRCA disjointness is ORDERED BY SCALE: constant source eliminated, time-profile is the lever
+
+**Daryl's refinement:** report crossing alpha WITH a band (alpha range within the sky error), run the
+intermediate alpha at each crossing rather than interpolate, and order the observables by the epoch/scale
+each is set at -- because ordered, evenly-spread bands are a TREND, not four scattered disagreements, and
+rho_tot/rho_free is strongly time-varying (large early, ->1 late), so a CONSTANT alpha on it lands each
+observable at a different effective boost.
+
+9-point scan (5 coarse + 4 confirmation runs AT the crossings, not interpolated). Each confirmation lands
+ITS observable at the sky and misses the others: a=0.03 position=0.7311 (sky 0.7312); a=0.22 parity=0.0281
+(0.028); a=0.54 P1/P2=2.200 (2.217); a=0.89 P1/P3=2.262 (2.277).
+
+| observable | type | characteristic peak | alpha-band (within sky error) |
+|---|---|---|---|
+| position | phase | l1 ~221 | 0.03  [~0.00-0.06] |
+| parity | position | l2 ~538 | 0.22  [0.198, 0.241] |
+| P1/P2 | height | l2 ~538 | 0.54  [0.538, 0.551] |
+| P1/P3 | height | l3 ~810 | 0.90  [0.887, 0.904] |
+
+**⊘ ALL BANDS DISJOINT** (confirmed on 9 points, sky-error bands, not interpolation) -- no single source
+factor fits. **AND they are ORDERED BY SCALE:** alpha rises monotonically from position (first peak, largest
+scale, phase set earliest, alpha~0.03) to P1/P3 (third peak, smallest scale, deepest in the radiation-era
+history, alpha~0.90). A second axis sits inside it: at the SAME scale k2, the height observable (P1/P2,
+0.54) wants more alpha than the position observable (parity, 0.22) -- the source touches heights more than
+positions. This is a systematic TREND, not scatter.
+
+**⇒ WHAT IT MEANS.** This eliminates the CONSTANT source scaling as the free direction -- cleanly, with
+bands, the way R, Phi and drag were eliminated. But the residual is not random: the alpha each observable
+wants tracks the scale/epoch it is set at, which is exactly the fingerprint of a CONSTANT knob applied to a
+strongly TIME-VARYING factor (rho_tot/rho_free, large early -> 1 late). alpha=1 already applies the full
+time profile and OVER-drives; alpha<1 scales it down uniformly and under-drives the late/large-scale
+observables. So the structural question the trend identifies is NOT a different constant alpha -- it is
+whether the local source must carry a DIFFERENT TIME PROFILE than alpha*(rho_tot/rho_free): the physical
+question of what fraction of radiation's gravity the local layer actually sources, as a function of epoch,
+rather than a single scalar. That is checkable (a time-dependent source weight) and is the identified next
+lever. If instead one reads the bands alone: the source normalisation is eliminated, full stop, and what
+remains to fit the sky is not the source magnitude.
+
+Fitting run complete: no constant source factor fits (r3550); the misses are ordered by scale (r3551),
+pointing at the source's time profile, not its magnitude, as the remaining structural freedom -- if CR has
+one at all.

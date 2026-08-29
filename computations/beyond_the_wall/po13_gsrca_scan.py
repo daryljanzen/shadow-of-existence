@@ -63,10 +63,29 @@ def cross(key, target):
     return hits
 
 
-print("  alpha where each observable crosses the sky:")
+ERR = dict(pos=0.6/301.7, p12=2.217*np.hypot(39/5733, 23/2586),
+           p13=2.277*np.hypot(39/5733, 17/2518), parity=0.002)
+SKYV = dict(pos1=('pos', 0.7312), p12=('p12', 2.217), p13=('p13', 2.277), parity=('parity', 0.028))
+print("  alpha where each observable crosses the sky, and the alpha-BAND within the sky error bar:")
+print(f"  {'obs':9}{'a@sky':>8}{'band within sky-error':>26}")
+bands = {}
 for key, nm in (('pos1', 'position'), ('p12', 'P1/P2'), ('p13', 'P1/P3'), ('parity', 'parity')):
-    print(f"    {nm:9s} sky={SKY[{'pos1':'pos','p12':'p12','p13':'p13','parity':'parity'}[key]]}: "
-          f"crosses at alpha = {[round(x,3) for x in cross(key, SKY[{'pos1':'pos','p12':'p12','p13':'p13','parity':'parity'}[key]])]}")
+    ek, sv = SKYV[key]; e = ERR[ek]
+    c0 = cross(key, sv); clo = cross(key, sv-e); chi = cross(key, sv+e)
+    edges = sorted([x for x in (clo+chi) if x == x])
+    band = (min(edges), max(edges)) if edges else (float('nan'), float('nan'))
+    bands[nm] = band
+    print(f"  {nm:9s}{(c0[0] if c0 else float('nan')):>8.3f}   [{band[0]:.3f}, {band[1]:.3f}]")
 print()
-print("  If all four crossing-alphas coincide -> that alpha is a PREDICTION to explain.")
-print("  If position wants one value and amplitude another -> source norm is NOT the free direction.")
+# disjoint check
+names = list(bands); ov = []
+for i in range(len(names)):
+    for j in range(i+1, len(names)):
+        a, b = bands[names[i]], bands[names[j]]
+        if a[0] <= b[1] and b[0] <= a[1]:
+            ov.append((names[i], names[j]))
+if ov:
+    print(f"  OVERLAPPING bands: {ov}  -> those observables CAN be fit by one alpha")
+else:
+    print("  ALL BANDS DISJOINT -> no single source factor fits; the source normalisation is NOT the")
+    print("  free direction (measured with sky-error bands, not a point impression).")
