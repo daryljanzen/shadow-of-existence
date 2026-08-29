@@ -2,7 +2,7 @@
 name: convexity-optimisation-ledger
 kind: FORWARD
 current: r3546
-job: The convexity / optimisation field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the r3505 overnight order: convexity ×143, constraint ×141). `OWED` 622.
+job: The convexity / optimisation field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the overnight order: convexity ×143, constraint ×141). `OWED` 622.
 sources: [cowork]
 ---
 

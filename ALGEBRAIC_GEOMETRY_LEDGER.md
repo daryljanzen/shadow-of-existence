@@ -2,7 +2,7 @@
 name: algebraic-geometry-ledger
 kind: FORWARD
 current: r3546
-job: The algebraic-geometry field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the r3505 overnight order: algebraic geometry ×57, discriminant ×28 / genus ×21). `OWED` 622.
+job: The algebraic-geometry field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the overnight order: algebraic geometry ×57, discriminant ×28 / genus ×21). `OWED` 622.
 sources: [cowork]
 ---
 

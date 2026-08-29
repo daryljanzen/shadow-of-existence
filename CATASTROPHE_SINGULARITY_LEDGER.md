@@ -2,7 +2,7 @@
 name: catastrophe-singularity-ledger
 kind: FORWARD
 current: r3546
-job: The catastrophe / singularity-theory field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the r3505 overnight order named it explicitly: catastrophe ×54). `OWED` 622.
+job: The catastrophe / singularity-theory field-bake ledger — what bit, what bounced, and the boundary. One of the three fields listed but never thrown (the overnight order named it explicitly: catastrophe ×54). `OWED` 622.
 sources: [cowork]
 ---
 
