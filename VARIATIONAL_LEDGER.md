@@ -52,6 +52,57 @@ which is the ordinary thing to do.* *Receipt `V1_the_variational_ledgers_premise
 
 # THE VARIATIONAL LEDGER — ~~the field with no footprint at all~~ **the field the corpus USES and never names** *(title corrected r2558)*
 
+## ⌗ THE LANDING TABLE — where each register stands against the corpus, checked r3534
+
+> **▣ THE `\ldg` GATHER FOR THIS LEDGER — live prose only.**
+
+### ★★★ `V1` IS THE BEST-LANDED REGISTER IN ANY LEDGER GATHERED SO FAR
+
+*P9 carries `rem:carter-chain`, written for this probe, with `\rcpt{V1_carter_chain}` — and it lands the
+result, the arrow the ledger said was missing, **and the fence, in the same remark**:*
+
+> *"the substrate's null rulings are shear-free; a cut that inherits one as its principal congruence is
+> therefore algebraically special by the Goldberg–Sachs theorem; the speciality invariant places the
+> resulting family at Type D; a Type-D vacuum admits a Killing tensor; and the constant of motion that
+> tensor carries is Carter's … **No conservation theorem of the usual kind is invoked or needed — the
+> Carter constant is not the charge of a point symmetry, which is precisely why general relativity
+> carries it without explanation**, and the substrate supplies instead the geometric reason a Killing
+> tensor is there to be found."*
+
+⇒ ***That last sentence is `4b`'s "no Noether charge, and none was looked for" written into the paper.***
+*Six gathers found fences dropped; here the fence is in the corollary's own remark, and it is the
+sentence that makes the claim defensible rather than the one that would have weakened it.* ⌗ *P9 also
+opens the corollary by discounting itself — "read alone the corollary is weaker than what this paper
+has" — which is the self-discount pattern `Q4` showed in P5.*
+
+### ⌗ THE TABLE
+
+| register | disposition | where it stands |
+|---|---|---|
+| **`V1` the Carter chain, drawn: shear-free rulings → Goldberg–Sachs → Type D → Killing tensor → Carter's constant** | **LANDED, with its arrow and its fence** | `P9 rem:carter-chain` + `cor:carter`, `\rcpt{V1_carter_chain}`; Goldberg–Sachs ×3, shear-free ×10, Killing tensor ×4, Carter ×23 in P9 alone, Walker–Penrose and Carter 1968 cited. **Pointer owed, and it is this ledger's whole weight** |
+| **the corrected opening question — the corpus does NOT over-claim; P9 distinguishes Killing vectors from tensors, scopes `cor:carter` to the separable form, and supplies the shear-free route** | **LANDED; and the ledger's own retraction (*"the framing was mine"*) stays here** | the retraction is about the bake, not the physics |
+| **⛔ the premise "the field with no footprint" was FALSE — the Einstein–Hilbert action is load-bearing four times, including a *performed computation*: the second-order action in the transverse-traceless sector reducing mode by mode to a harmonic oscillator with time-dependent mass $a^3$ and frequency $\mu_n/a$** | **the COMPUTATION is landed; the NAME is not** | P10 carries it (`transverse-traceless` ×14, `harmonic oscillator` ×2, `time-dependent mass` ×1) and `Einstein--Hilbert` ×5. *But `Lagrangian`, `action principle`, `Euler--Lagrange` and `Noether` are **all zero corpus-wide**.* ⌗ **This is a missing name beside a performed computation** — and the ledger is explicit that naming it is not owed as physics: *"not claimed: that the corpus should derive its dynamics variationally"* |
+| **`V5` a homothety conserves its charge on the null cone and nowhere else — $\dd(\xi\!\cdot\!p)/\dd\tau=c\,p\!\cdot\!p$, which is `C1`'s dilation given its exact domain** | **SUBSTANCE OWED — a bound** | `homothet*` is live in P5 ×13, P3, P8, and *where the charge is conserved* is in none of them. **One clause; its home is P5 beside the homothety** |
+| **`V3` an action principle produces an EQUALITY, and an equality has no direction — so P8's leftward reading is *orthogonal* to a variational route, not in competition with it** | **SUBSTANCE OWED — a bound** | `has no direction` ×0. P8 derives the leftward reading rather than asserting it; what is missing is the statement that a variational route would not contradict it |
+| **`V2` the substrate has exactly two null rulings through each point and a Type-D cut exactly two repeated PNDs — *whether they are the same two* needs the SdS-in-$\mathrm{dS}_5$ embedding the corpus does not exhibit** | **CORRECTLY UNLANDED — it did not settle** | *and the ledger says so: it* ***"did not settle and therefore did not enter the corpus at all."*** **The right behaviour, and the zero is that discipline holding** |
+| **`V4` the Dirac algebra owes no variational derivation, because P12 inherits it as *"a recognition, not an addition"*** | **LANDED** | P12's own scope clause |
+| **⟐ whether an action exists whose variation returns the operator's four data** | **OPEN — and named as work, not a probe** | *`V3` shows nothing forbids it; nobody has tried* |
+
+### ⌗ WHAT THIS GATHER FOUND
+
+***A third shape.*** *The optics and conformal bakes dropped their fences; the category bake dropped its
+connections; **this one dropped almost nothing** — its one big register landed with arrow and fence
+together, and what remains owed are two small bounds and a name.*
+⇒ ⌗ ***And the method point this ledger already made is worth carrying into the remaining ten gathers,
+because it is the same failure I have now hit six times in this campaign:*** *this ledger's **title** was
+wrong for 657 revisions because it was written from a word count — `Lagrangian` 0, `action principle` 0,
+`Euler–Lagrange` 0 — while the corpus's variational content sat under a different name. **The r1890
+survey was not careless; it was reading the only signal it had.** *That is exactly the instrument that
+has failed on filenames, escaped underscores, ledger vocabulary, labels, and `%` comments in this
+session.*
+
+
+
 *Opened r1901. **Phase 8, seventh field**, and the second opened from a **hole**. The r1890 survey found the
 absence and Daryl adjudicated it at r1891: **"all absences so far are circumstantial"** — not a commitment, so
 the route is available and unthrown.*
