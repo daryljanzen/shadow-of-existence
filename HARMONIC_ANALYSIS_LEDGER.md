@@ -13,6 +13,58 @@ sources: [cowork]
 > live computation and it is Sturm–Liouville on a sphere.*
 
 
+## ⌗ THE LANDING TABLE — where each register stands against the corpus, checked r3539
+
+> **▣ THE `\ldg` GATHER FOR THIS LEDGER.** *Twenty-seven probes, the largest gen-2 body. Live prose only;
+> every `ABSENT` re-checked against the corpus's own term before it was written.*
+
+### ⛭ `H18` APPLIED r3539 — the one routed clause that was a single word
+
+*`P11` read* ***"the spatial leaf carries a single propagating transverse-traceless mode"***, *against
+`P10`'s TT **tower** on $S^3$ with degeneracy $2(n^2-1)$. The ledger's diagnosis is exact: `P10`'s
+degeneracy **factorises** as $(n^2-1)$ harmonics $\times$ **2 polarisations**, and polarized Gowdy
+imposes **polarisation**, not harmonic content — the field still carries a tower.* ⌗ *`P11`'s existing
+scope, "in a polarized Gowdy–de Sitter model", does not do the work, because the conflict is in the noun:
+**read as a harmonic count the sentence contradicts `P10`.***
+
+⇒ ***Applied:*** *"a single propagating transverse-traceless **polarisation** — one of general
+relativity's two, the harmonic tower on the leaf untouched". P11 compiles.* ⌗ **This is the baselines'
+homonym problem one level in — there it is vocabulary, here it is inside the physics: two papers, one
+word, two indices of the same object.**
+
+### ⌗ THE TABLE
+
+| register | routed clause · its paper | disposition |
+|---|---|---|
+| **`H18` two papers, one word, two counts** | *"a single propagating **polarisation**, or one of the two"* · **P11** | **⛭ APPLIED r3539** |
+| **`H11` `P14`'s "mode completeness" is not open — the wall is the reflectionless pair; only the JOIN is** | — | **LANDED, and narrowed exactly as the bake asked.** *P14 now scopes it: "what that supplies is the radial continuum and not the sector: the quantised field, its mode completeness, and the **join** … remain the undertaking", with the geometric half explicitly not open.* ⌗ *`reflectionless` is ×0 and that is **correct** — the paper carries the content through the superpotential and the unitary transmission across the tower, which is the corpus's own term* |
+| **`H12` `P07`'s adiabaticity is an integrated bound written as a local one — the separation is exact and the local value diverges** | *routed r3456, receipted* · **P7** | ***STILL OWED.*** *`adiabatic` is live in five papers; the local/integrated distinction is at none of them* |
+| **`H13` `P10`'s "loses control at the lowest harmonics" is FORCED, and the entailment spans two papers** | — | **needs a site read** — cross-referenced from the **spectral** ledger (×6), not from statistics |
+| **`H14` the interior index is not identifiable with the observed multipole — `P15` carries the map, it is not the identity, and it is worst at low $\ell$** | *routed r3458, receipted* · **P16** | ***STILL OWED*** — cross-referenced from **spectral** (×10) |
+| **`H19` `P04`'s $1/\sqrt N$ is the WHITE-NOISE limit — long modes are unaveraged and raise the floor** | *routed r3465* · **P4** | ***STILL OWED.*** *`white noise` ×0, `uncorrelated` ×0, and P4's own $1/\sqrt N$ stands unqualified.* ⌗ **And it is a *fence that strengthens*: the floor P4 quotes is a **lower** bound, so naming the limit makes the three-orders-of-magnitude exclusion more secure, not less** |
+| **`H20` the slicing scale $2/\sqrt3$ is FORCED, and the dimension selection is a harmonic count** | *"receipts neither"* · **P3** | **PART-LANDED.** *`residual harmonic` is live in P3 ×4, P5 ×2, P14, P6 — so the claim is in the corpus in its own words. **The derivation is not**: `Chebyshev` ×0, and P3 states the forcing without the $\sin^3=(3\sin w-\sin 3w)/4$ substitution that produces it.* ⌗ *The bake supplies it: the residual coefficient $A(3A^2+4p)/4$ vanishes at $A=2\sqrt{-p}/\sqrt3$, which at $p=-1$ is $2/\sqrt3$ exactly* |
+| **`H21` `P02`'s "identical analytic character" IS band-limiting to the first harmonic** | — | ***SUBSTANCE OWED.*** *`identical analytic character` is live in P3, P5, P2 ×3 — **the claim is everywhere and the harmonic reading of it is nowhere** (`band-limited` ×0, `first harmonic` ×0). A *connection*, in the category gather's sense* |
+| **`H22` the symmetric space's algebra ×260, its analysis ×2 — both analytic uses load-bearing and unnamed** · **`H24` one surface per point, hence no ellipsoidal harmonics, which is WHY the corpus's harmonics are leafwise** | — | **SUBSTANCE OWED.** *`ellipsoidal` ×0, `spherical harmonic` ×0; p0's `confocal` ×4 is the nearest native term and does not carry the consequence. **H24 is the better of the two: it explains a structural feature of the whole corpus from a fact about coordinate systems*** |
+| **`H23` "the failure of $U$ to be harmonic" is the OBSTRUCTION to integrating $\gamma$, not a quantity alongside it** | — | **SUBSTANCE OWED** — *`obstruction` is live in eleven papers, none at this claim* |
+| **`H1`–`H4`, `H6`–`H8`, `H16`, `H17`, `H25`, `H26`** the ladder measure, the projection's power conservation, the two-effect deficit, the plateau, the aliasing bound, `P13`'s Fourier obstruction, the finite-group harmonic analysis, `p0`'s projection criterion, `P08` negative | — | **the bake's internal work — verdicts about the corpus's own computations.** *Correctly not in papers; several are already what the papers do* |
+
+### ⌗ WHAT THIS GATHER FOUND
+
+⛔ ***A CORRECTION TO 60's r3535 SIZING, item 6.*** *It reads: "S0′→H13 and S8→H14 are marked in the
+harmonic ledger. F17→H20 is not."* ⇒ ***None of the three is marked in this ledger — `F17`, `S0`, `S8`
+and `statistics` are all ×0 here.*** *The cross-references exist, but **on the other side and in
+different ledgers**: `H13` ×6, `H14` ×10 and `H20` ×2 in **`SPECTRAL_THEORY`**, and `H20` ×7 with
+`harmonic` ×14 in **`FUNCTIONAL_ANALYSIS`**. **Statistics carries none of them.*** ⌗ *So the finding
+survives in a better form: **the corrections do travel, and they travel one way** — the importing bake
+records what it took, and the exporting bake is never told. That is a real asymmetry and it is not the
+one described.*
+
+⌗ **And the shape here is the fourth gen-2 shape**: *twenty-seven probes, most of them **the bake's own
+audit of the corpus's computations** rather than claims for papers — so what is owed is small relative to
+the body, and is again fences (`H12`, `H19`) and connections (`H21`, `H22`, `H24`).*
+
+---
+
 ## ⛭ THE BASELINE, MEASURED FIRST
 
 | present | absent across all seventeen, word-bounded |
@@ -609,10 +661,26 @@ degree $n=d-1$, and $\sin^n w$ expands into harmonics $n,n-2,\dots$:*
 | **sub-leading** | **1** | **1** | **2** | 2 | 3 |
 
 ⇒ ***One free scale kills ONE sub-leading harmonic, so a pure top harmonic is available at $d=4$ and
-nowhere else — and the sub-leading count is two or more from six dimensions upward, which is the
-corpus's sentence verbatim***, *with $d=5$ the even/parity case it flags separately. (Expansion
+$d=5$ and nowhere else — and the sub-leading count is two or more from six dimensions upward, which
+is the corpus's sentence verbatim***, *including its "and — up to a parity — in five".* (Expansion
 verified exactly at $n=3$ and $n=5$ against the binomial formula, after two simplifier routines
-silently failed to expand it — recorded because the count IS the claim.)*
+silently failed to expand it — recorded because the count IS the claim.)
+
+> ⛔⛭ **THE ROW ABOVE WAS CORRECTED AND THE SENTENCE UNDER IT WAS NOT — repaired r3540.** *The
+> functional-analysis bake's `F17` found this while reading `P03` for a different field: `P03`'s
+> `rem:dimension` says the sub-leading harmonics number* ***"exactly one at $D=4$ and $D=5$"***, *and*
+> ***`P03` is right — it counts the NONZERO harmonics, and a constant is not a harmonic.*** *The
+> table's $d=5$ entry was corrected from **2** to **1**, and the conclusion drawn from it — "available
+> at $d=4$ and nowhere else … $d=5$ the even/parity case it flags separately" — **was left standing,
+> contradicting the row two lines above it.** ⌗ `F17`'s own verdict on that gloss: it* ***"was papering
+> over a real numerical difference."***
+>
+> ⇒ ⚠ ***AND THE CROSS-REFERENCE IS ENTERED HERE BECAUSE IT WAS NOT.*** *`F17` records the correction
+> in full, on the side that **found** it. This ledger, which **owns** the corrected claim, carried
+> neither the reference nor the consequence — `F17` was ×0 in this file. **The bake that finds an
+> error records it; the bake whose claim was wrong is never told.** That asymmetry is what makes a
+> silently-corrected number worse than an uncorrected one: the row and the sentence disagree, and
+> nothing in either file says why.*
 
 ⌘ ***SO THE CORPUS'S DIMENSION SELECTION — four spacetime dimensions, not five, not six — IS A
 CHEBYSHEV COUNTING ARGUMENT, AND THIS FIELD OWNS IT.*** *It sat unreceipted in a paper this bake had

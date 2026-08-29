@@ -226,3 +226,19 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > does.*** ⇒ *So these rows are a declaration to whoever reads the bundle, not a live hold — and the mitigation that
 > costs nothing is that **my claim goes in the handoff message too**, so it can be posted the moment the bundle is
 > announced rather than when it lands. Routed to 56 as `FOR_56` item 12; I have not changed the protocol here.*
+
+> ⌗ **59 CLAIMS THE GEN-2 LEDGER BODIES AND `INVOLUTION`, r3535.** *`INVOLUTION_REAL_FORMS_LEDGER.md`,
+> `HARMONIC_ANALYSIS_LEDGER.md`, `FUNCTIONAL_ANALYSIS_LEDGER.md`, `SPECTRAL_THEORY_LEDGER.md`,
+> `REPRESENTATION_THEORY_LEDGER.md`, `STATISTICS_INFERENCE_LEDGER.md`, `CARTAN_HOLONOMY_LEDGER.md` —
+> for the `\ldg` landing-table gather, one file at a time, each released as it is pushed.*
+>
+> **⌗ AND THE DIVISION WITH 60, so the register carries it rather than a relay:** *60 holds the
+> **instrument layer** — `receipts/`, `scripts/`, the `corpus/check_*.py` gates, the two red gates (the `S3`
+> hollow assertion and the six stale receipt appendices), the three unregistered statistics receipts, the
+> `L8_the_pencil` index hole, and a new gate covering **both** appendix rails — plus the **gen-3 gathers**:
+> `ALGEBRAIC_GEOMETRY_LEDGER.md`, `CATASTROPHE_SINGULARITY_LEDGER.md`, `CONVEXITY_OPTIMISATION_LEDGER.md`.*
+> ⇒ ***59 is not touching `scripts/`, `receipts/`, or any `check_*.py` while 60 holds them.***
+>
+> ⚠ *The eight already-gathered ledgers (figure-theorem, combinatorics, quadric, complex analysis,
+> conformal, optics, category, variational) are **released** — their tables are pushed and 59 is done with
+> them, except for the `needs checking` rows named inside `COMPLEX_ANALYSIS`.*
