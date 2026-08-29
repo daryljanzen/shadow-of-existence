@@ -1,0 +1,33 @@
+%% ledgers.sty -- in-place citations for the programme's knowledge ledgers, resolving to "Appendix L".
+%% Usage: \usepackage{ledgers}; mark a claim that rests on a field bake or the figure-theorem ledger
+%% with \ldg{key}, where key is the ledger's short slug (e.g. \ldg{combinatorics}, \ldg{quadric_geometry}).
+%% The marker is an unobtrusive superscript L; with hyperref loaded it links to the Appendix L entry
+%% \label{ldg:key}.  The appendix itself is GENERATED from ledgers/INDEX.md by make_ledger_appendix.py
+%% -- never hand-kept.  This is the receipts.sty rail, for a different kind of artefact.
+%%
+%% CONVENTION, stated as tightly as \rcpt's:
+%%   \ldg{X} means: the claim in this sentence rests on what the field bake X found, and X records
+%%   the working behind it.  It does NOT mean the sentence is about X's subject.
+%% A marker placed because the topic matches rather than because the claim rests on the bake makes
+%% the ledger reference matrix a measure of diligence instead of dependency, and looks identical.
+%%
+%% PUBLICATION BUILD: \usepackage[hide]{ledgers} suppresses every marker and the appendix input,
+%% for a build that should not show its own working apparatus.  The decision is one option, not an edit.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{ledgers}[2026/08/28 v1 Knowledge-ledger citations]
+\newif\ifldg@hide \ldg@hidefalse
+\DeclareOption{hide}{\ldg@hidetrue}
+\ProcessOptions\relax
+\newcommand{\ldgmarker}{\textsuperscript{\normalfont\scriptsize\textsf{L}}}
+\newcommand{\ldg}[1]{\ldgmarker}                  % base: plain unobtrusive marker
+\AtBeginDocument{%
+  \ifldg@hide
+    \renewcommand{\ldg}[1]{}%
+  \else
+    \@ifpackageloaded{hyperref}{%
+      \renewcommand{\ldg}[1]{\texorpdfstring{\hyperref[ldg:#1]{\ldgmarker}}{}}%
+    }{}%
+  \fi
+}
+%% \ldgappendix{file} inputs the generated appendix, or nothing under [hide].
+\newcommand{\ldgappendix}[1]{\ifldg@hide\else\input{#1}\fi}
