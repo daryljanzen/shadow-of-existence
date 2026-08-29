@@ -13,6 +13,61 @@ sources: [chat]
 
 # THE REPRESENTATION-THEORY LEDGER
 
+## ⌗ THE LANDING TABLE — where each register stands against the corpus, checked r3538
+
+> **▣ THE `\ldg` GATHER FOR THIS LEDGER.** *Live prose only. Routed-clause column per the r3535 division.*
+
+### ⛔⛔ WHAT THE GATHER FOUND FIRST: THE REAL-FORM COUNT NEVER LEFT `P13`
+
+*Chasing `R11` — which turns on `rem:a2-distinct`'s shared-complexification claim — surfaced a defect
+`R11` is not about.* ***Four papers stated that the compact $\SO(6)$ and the Lorentzian $\SO(5,1)$ are*
+**the two** *real forms of $\SO(6,\mathbb{C})$.*** *There are **five** — the involution bake's `I1`,
+which P13 applied at `sec:face-status` and which reached **no other paper**:*
+
+| paper | the clause | now |
+|---|---|---|
+| **P7** | *"are **the two** real forms of the single complex $\SO(6,\mathbb{C})$"* | *"are **two of the** real forms"* |
+| **P5** `rem:a2-distinct` | *"is **one of the two** real forms of the single complex group"* | *"is **one of the** real forms"* |
+| **P2** | *"**makes the two** real forms of the single complex group"* | *"**makes two of the** real forms"* |
+| **p0** | *"These are **the two** real forms of the one complex group"* | *"These are **two of the** real forms"* |
+
+⇒ ***Fixed r3538, all four, and the enumeration claim is now zero corpus-wide. All four compile.***
+⌗ *The programme's own phrase — "the substrate's **two real forms**", meaning the two the construction
+**reaches** — is correct and untouched; it is P13's own scoped language and carries the title. **Only the
+enumeration was wrong, and only where a count of $\SO(6,\mathbb{C})$'s forms was asserted.***
+
+⚠ ***This is the third correction-reaches-one-grain failure in this campaign*** *— after the dependency
+matrix and its figure, and the deck/monodromy word across eight papers. **A correction landing in the
+paper that owns a claim does not reach the papers that quote it, and nothing in the corpus looks.***
+
+### ⌗ THE TABLE
+
+| register | routed clause · its paper | disposition |
+|---|---|---|
+| **`R1` the hexad is TWO hexads — P3's triple lies along the *weight* directions at *root* normalisation, and the ratio is exactly $\sqrt3$; P3's prose reads the six marks as $\mathbf3\oplus\bar{\mathbf3}$ (weights) while its own receipt establishes them as the differences $e_i-e_j$ (roots)** | *"the root triple $(-2,1,1)/\sqrt3$, whose directions are those of a fundamental $\mathbf3$'s weights, at root normalisation"* · **P3 `sec:cubic`** | ***STILL OWED.*** *P3 today reads exactly as quoted — "carry the root triple $(-2,1,1)/\sqrt3$---the three weights of a fundamental $\mathbf 3$" — and `root normalisation` is ×0 corpus-wide.* ⌗ **And the ledger's own note on why it is invisible is the sharp part: the $\sqrt3$ between roots and weights is the same $\sqrt3$ the seam carries at $\alpha/\sqrt3$** |
+| **`R11` the common complexification is $A_3$, not $A_2$ — colour's $A_2$ is its node-deletion subsystem, while the geometric $A_2$ is not a subsystem of it at all** | *the exact clause is written out* · **P5 `rem:a2-distinct`** | ***STILL OWED.*** *`node-deletion` and `sub-root-system` are live in P7, P12, P14 and p0 — **but not at this remark**, which still grounds the analytic connection in "that common complexification" without saying which root system it carries.* ⌗ *The ledger's own framing is right: the remark is **not wrong, it is less precise than it can be, and the precise version is stronger for its own conclusion*** |
+| **`R10` the rate's two parameters ARE the $A_2$'s two Weyl invariants, of Casimir degrees 2 and 3 — $e_2=-\alpha^2$ quadratic, $e_3=-2M\alpha^2$ cubic, $e_1=0$ the tracelessness — and the Nariai condition is the vanishing of their discriminant, the Weyl wall** | *one sentence, written out* · **P3 `sec:cubic` or P15 `sec:flatlcdm`** | ***STILL OWED, and cleanly absent:*** *`Casimir` ×0, `elementary symmetric` ×0, `Weyl wall` ×0 corpus-wide.* ⌗ **This is a *connection*: the corpus holds both halves — r3401's rate fixed by $\alpha$ and $x_0$ and nothing else, and the horizon cubic's $A_2$ — and does not join them** |
+| **`R12` the six Nariai marks are the WALL-CROSSINGS of the $A_2$ chamber structure, the six arcs its six Weyl chambers, the twelve designations its full $\mathrm{Aut}(A_2)$, and the sign of $2M$ the chamber's $\mathbb{Z}_2$ label** | *the clause is written out* · **P3 `sec:cubic`** | ***STILL OWED.*** *`Weyl chamber` ×0 and `chamber` ×0 corpus-wide; P14's two `wall-crossing`s are the chiral wall, a homonym.* ⌗ **The weight is that three facts the corpus states *separately* — six Nariai, twelve designations, and $R$ exchanging $\mathbf3/\bar{\mathbf3}$ — are ONE fact, which is why $R$ *is* the diagram automorphism rather than analogous to one** |
+| **`R2` triality is the weight-lattice quotient** · **`R3` the sum-to-zero, already in the corpus** · **`R5` the dial really does realise $\mathrm{Aut}(A_2)$** | — | **⊢ / BOUNCE, no change owed.** *P3 and P5 carry the hexad, the twelve designations and $\mathrm{Aut}(A_2)=D_6$* |
+| **`R4` the one-per-hinge condition is the singlet's antisymmetry** · **`R8` the colour obstruction is representation-theoretic** | — | **LANDED** — `singlet` ×11 and `antisymmetr*` ×4 in P14, plus P13. **Pointer owed** |
+| **`R6` the ceiling, confirmed from a second direction — the corpus needs neither Casimirs nor weight multiplicities, and its own ×33 "multiplicity" is *catalogue* multiplicity, with P14's one exception already named as undelivered** | — | **HELD, and correctly invisible** |
+
+### ⌗ WHAT THIS GATHER FOUND
+
+***Four routed clauses, all four still owed, and every one of them written out as an exact sentence by the
+bake.*** *That is the gen-2 signature the involution and Cartan gathers did not show: those two had rows
+that were **stale** — discharged, or wrongly corrected. **This one's rows are accurate and simply
+unapplied.*** ⇒ *So gen 2 has three failure modes among three ledgers — a discharged clause still marked
+routed, a correction that was itself wrong, and clauses correctly routed and never taken. **The only
+thing they share is that the row's own verdict cannot be trusted without re-running it against the
+paper.***
+
+⌗ **And `R10` and `R12` together are one object**: *the $A_2$'s invariant theory — degrees 2 and 3, the
+discriminant, the chambers — is what the horizon cubic already is, and the corpus reads the cubic
+everywhere without once naming the invariant theory it is an instance of.*
+
+---
+
 ## ⌗ THE LEAD REGISTER — *no new field while any row is unmarked (`THE_FIELD_BAKE_PLAN` r3439)*
 
 | # | lead | state |
