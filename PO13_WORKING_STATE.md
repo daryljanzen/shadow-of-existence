@@ -1827,3 +1827,57 @@ single mode-by-mode mechanism (r3534). What CR predicts distinctively is a CROSS
 potential-decay history at k ~ 0.058/Mpc -- normalisation-robust, ISW/lensing-observable, and the next thing
 to (a) confirm on the HIER path and (b) take to ISW/lensing data. The odd-even alternation still survives
 underneath, independent of all of this.
+
+### ⛭⛭ HIER-path confirmation + the SHAPE is the finding, not the crossing (r3536; 58's reframing, 59's path catch)
+**59's fluid-vs-HIER path caveat is CLOSED.** Added `PHIHIER=1`: the full-range potential Phi(eta) on the
+HIER composition (fluid ETA_S->switch, then the hierarchy switch->recomb), selected q-modes. HIER vs fluid
+per-half retention ratio, matched phase:
+
+| q | CR/CTL (fluid) | CR/CTL (HIER) |
+|---|---|---|
+| 1.0 | 1.263 | 1.263 |
+| 2.0 | 1.087 | 1.085 |
+| 2.5 | 0.996 | 0.996 |
+| 3.0 | 0.927 | 0.929 |
+| 4.0 | 0.930 | 0.926 |
+| 6.0 | 0.907 | 0.901 |
+
+⇒ ***NEARLY IDENTICAL (< 1% everywhere), crossing at the same q ~ 2.48.*** Phi's decay is fluid-dominated;
+the hierarchy's photon-quadrupole refinement does not change the potential's gross decay. The Phi-decay
+measurement does not depend on the fluid/HIER path split -- 59's caveat discharged.
+
+**58's REFRAMING accepted: the finding is the SHAPE, not the crossing.** The crossing at q~2.48 is where a
+flatter curve meets a steeper one -- a consequence, not the phenomenon. The two per-half retention curves
+(HIER path):
+
+| q | 1.0 | 1.5 | 2.0 | 2.5 | 3.0 | 3.5 | 4.0 | 5.0 | 6.0 |
+|---|---|---|---|---|---|---|---|---|---|
+| **CR** | 0.617 | 0.520 | 0.509 | 0.508 | 0.500 | 0.506 | 0.524 | 0.538 | 0.566 |
+| **CTL** | 0.488 | 0.451 | 0.469 | 0.510 | 0.538 | 0.550 | 0.566 | 0.606 | 0.628 |
+
+⇒ ***CR's potential decay is MUCH LESS SCALE-DEPENDENT than LCDM's.*** LCDM's per-half retention RISES
+steadily with q (0.45 -> 0.63) -- its small-scale wells decay less per half-period. CR's is FLAT-ish
+(mostly ~0.50). **The physical reason (58's, and it is clean):** the geometric rate has no radiation era,
+so no epoch-dependent structure for modes to sample differently -- every mode sees the same background
+history, so every well decays at nearly the same rate. LCDM's scale-dependence comes FROM the radiation
+era (modes cross the horizon at different times during radiation domination and sample different dilution);
+CR has no radiation in the rate, so it has no such scale-dependence.
+
+⌗ **HONEST NUANCE, kept on the record:** CR is FLATTER, not perfectly flat -- q=1 sits high (0.617) and
+there is a slight rise at q>=5 (0.54-0.57), so CR's range is 0.50-0.62 against LCDM's 0.45-0.63. The robust
+statement is the CONTRAST in scale-dependence: LCDM's decay rate rises monotonically with q from q~1.5;
+CR's is nearly flat across the same range. That contrast is the qualitative signature.
+
+**⇒ THE PREDICTION TO TAKE TO DATA, stated as the shape (58's point -- a shape survives calibration; a
+crossing point is one number that moves if either curve shifts):** ***CR's potential-decay rate is
+(nearly) scale-INDEPENDENT, where LCDM's rises with wavenumber.*** ISW and lensing measure Phi's decay
+across scales, so a scale-independent decay rate is a qualitative feature that NOTHING with a radiation era
+in its expansion rate produces. The crossing near the 2nd-3rd acoustic scale (q~2.48, k~0.058/Mpc) is where
+CR's flat curve meets LCDM's rising one -- report it as the location of the meeting, not as the prediction.
+
+**⇒ PO-13, current and honest.** The framework's own composition over-drives the sky (position +7%,
+amplitude +65% vs sky), a consequence of the rate/source split, not a fit failure -- CMB residual open. The
+distinctive, calibration-robust, ISW/lensing-observable prediction is the SHAPE of the potential-decay
+history: CR's decay rate is nearly scale-independent where LCDM's rises with k, crossing near the 2nd-3rd
+acoustic scale. Confirmed on both fluid and HIER paths. The odd-even alternation survives underneath,
+independent of all of it. Next, if wanted: take the scale-independence signature to ISW/lensing data.

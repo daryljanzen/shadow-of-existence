@@ -959,6 +959,26 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
           f"{frac:.1%} of 1/k_D^2 has accumulated")
     print(f"  so the envelope carries {frac:.1%} of the damping and the multipoles carry "
           f"{1-frac:.1%} of it")
+    # ** PHIHIER=1 (with PHISAVE + PHIQ): the full-range potential Phi(eta) on the HIER COMPOSITION for
+    # the selected q-modes -- fluid from ETA_S to the switch (identical to the fluid path there), then
+    # the hierarchy from the switch to recombination (the refinement the fluid path lacks).  Closes
+    # node 59's fluid-vs-HIER path split for the Phi-decay measurement.  Returns early. **
+    if os.environ.get('PHIHIER') == '1' and os.environ.get('PHISAVE'):
+        _qt = [float(x) for x in os.environ.get('PHIQ', '1,2,3').split(',')]
+        _sk = np.array([kk[int(np.argmin(np.abs(kk * R_S_ / np.pi - q)))] for q in _qt])
+        _g1 = np.linspace(ETA_S, e_sw, 300)
+        _s1, _, _NVf = evolve(_sk, t_eval=_g1, e_end=e_sw)
+        _Y1 = _s1.y.T.reshape(len(_g1), len(_sk), _NVf)
+        _g2 = np.linspace(e_sw, eta_rec, 300)
+        _Y2 = evolve_hier(_sk, _g2, e_sw, _Y1[-1]).y.T.reshape(len(_g2), len(_sk), NVH)
+        _eta = np.concatenate([_g1, _g2[1:]])
+        _phi = np.concatenate([_Y1[:, :, 6], _Y2[1:, :, 6]], axis=0).T   # (nsel, neta)
+        _a = np.interp(_eta, eg, ag)
+        np.savez(os.environ['PHISAVE'], eta=_eta, a=_a, phi=_phi,
+                 qpk=_sk * R_S_ / np.pi, kpk=_sk, arm=ARM, eta_rec=eta_rec, eta_s=ETA_S)
+        print(f"  PHISAVE-HIER (full range): q={[round(float(k*R_S_/np.pi),2) for k in _sk]} "
+              f"-> {os.environ['PHISAVE']}")
+        return np.array([100.0]), np.array([0.0])
     ls = np.arange(100, int(LMAXL), int(os.environ.get('LSTEP', '8')))
     x0 = eta_0 - EE
     Cl = np.zeros(len(ls))
