@@ -3,7 +3,7 @@ kind: REFERENCE
 job: observational optics and lensing against CR — confirmations, and the dimension clause they forced
 name: optics-lensing-ledger
 description: R-P's first field bake — observational optics and lensing thrown at CR. Opened r1857 (Phase 8, the physics half), handed to directly by the conformal bake's C4. Baseline, the O1 result (the photon sphere IS Nariai's forcing locus), probes, and the Phase 9 routing.
-current: r3509
+current: r3532
 ---
 
 > **▣ REFERENCE — R-P's first field bake, and part of the corpus.** *Observational optics and lensing.

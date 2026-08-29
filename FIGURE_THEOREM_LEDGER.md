@@ -8,8 +8,12 @@ class: forward-document
 ---
 
 > **▣ FORWARD — ahead of the corpus by construction, and exempt from the staleness test.** *Which classical
-> theorem each figure carries, with its receipts. Its own head: **"banked, not baked — nothing here has
-> gone into a paper"**, and it is declared exempt (`current: n/a`) for that reason.*
+> theorem each figure carries, with its receipts. Declared exempt (`current: n/a`) as a `FORWARD` document,
+> and that declaration stands.* ⚠ *The reason originally given — its own head's **"banked, not baked —
+> nothing here has gone into a paper"** — **is no longer true and was struck at r3524**; the exemption
+> rests on the document being ahead of the corpus by construction, not on nothing having landed. A sweep
+> at r3552 overwrote `n/a` with a revision on the strength of the landing table's "checked r3524" and was
+> reverted: **a declared-exempt marker is a statement, and a staleness sweep must not silently answer it.***
 >
 > ⛔ ***Do not date it against the corpus and do not retire it for disagreeing with one.*** *Where it
 > disagrees with a paper, **the disagreement is the work product** — a finding to work, not a defect to

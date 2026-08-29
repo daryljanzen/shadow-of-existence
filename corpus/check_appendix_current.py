@@ -85,13 +85,19 @@ RAILS = [
          pattern='appendix_receipts_*.tex', scope=RECEIPT_SCOPES.get,
          min_rows=600, min_files=18, fix='python3 corpus/make_all_appendices.py'),
     dict(name='ledgers   (\\ldg)', gen='make_ledger_appendix.py',
-         index=os.path.join(ROOT, 'ledgers', 'INDEX.md'),
+         # ⛭⛭ REPOINTED r3558: 59's r3551 moved the registry out of a directory it had no
+         #   business creating -- `ledgers/INDEX.md` -> `corpus/ledgers_registry.md`.
+         #   ** Clause (a) caught it on a REAL move rather than a mutation test: the gate said
+         #   "its index IS NOT ON DISK -- nothing to compare against, and a comparison count of
+         #   zero is not a pass". Without that clause the rail would simply have stopped being
+         #   compared, and the gate would have reported green over one rail instead of two. **
+         index=os.path.join(ROOT, 'corpus', 'ledgers_registry.md'),
          pattern='appendix_ledgers_*.tex', scope=_ledger_scope,
          # ⛭ r3554: RAISED 1 -> 2. 59's r3550 put the rail to work -- P3 now carries seven
          #   \ldg markers and its own Appendix L -- so the rail has two artefacts and a drop
          #   back to one is now a regression this floor can see. ** That is what a ratchet is
          #   for, and it only works if it is raised when the rail grows. **
-         min_rows=15, min_files=2,
+         min_rows=15, min_files=3,   # ⛭ r3558: raised 2 -> 3; 59's marker pass reached p0 and P14
          fix='python3 corpus/make_ledger_appendix.py P17 corpus/appendix_ledgers_P17.tex'),
 ]
 

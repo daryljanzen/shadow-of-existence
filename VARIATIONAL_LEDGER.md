@@ -3,7 +3,7 @@ kind: REFERENCE
 job: variational / action against CR — the field the corpus uses and never names
 name: variational-ledger
 description: R-M's sixth field bake — VARIATIONAL / ACTION, the corpus's starkest absence. Opened r1901 from the r1890 holes survey. Its opening question is whether the corpus's central claim about the Carter constant — that it EXPLAINS what GR carries as an unexplained gift — is a claim the variational apparatus supports.
-current: r3510
+current: r3534
 ---
 
 > **▣ REFERENCE — R-M's sixth field bake, and part of the corpus.** *Variational / action — **the field

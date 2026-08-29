@@ -3,7 +3,7 @@ kind: REFERENCE
 job: category theory against CR — the corpus's largest unlisted field
 name: category-theory-ledger
 description: R-M's fifth field bake — CATEGORY THEORY, the corpus's largest unlisted field. Opened r1892 after the r1890 holes survey found 363 uses and two papers named for its objects, with the field itself absent from the reach list. Its opening question is one the corpus states about itself.
-current: r3508
+current: r3533
 ---
 
 > **▣ REFERENCE — the field the list did not carry, and part of the corpus.** *Category theory, the

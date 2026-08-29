@@ -296,3 +296,8 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > **`H19`** *(the $1/\sqrt N$ is a **white-noise limit** — long modes are unaveraged and raise the floor),*
 > **`S3`** *(the exclusion is a lower bound against an upper limit, and the robustness factors are owed).*
 > ⌗ *`P3` released — landed r3547.*
+
+> ⌗ **59 CLAIMS `corpus/geometric_core_paper.tex` (p0) AND `corpus/matter_sector_paper.tex` (P14) FOR THE
+> MARKER PASS, r3553.** *Placing `\ldg` markers at the sites the eighteen landing tables name, regenerating
+> each paper's Appendix L, and taking the ledger block from 6 of 18 ledgers toward 14.* ⌗ *`P3` and `P4`
+> released.*

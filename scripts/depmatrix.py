@@ -88,7 +88,7 @@ print("foundational dep edges: P6<-P1",M['P6']['P1'],"P3<-P2",M['P3']['P2'],"P5<
 # ============================================================================
 import os as _os, re as _re
 _ROOT = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
-_IDX  = _os.path.join(_ROOT, 'ledgers', 'INDEX.md')
+_IDX  = _os.path.join(_ROOT, 'corpus', 'ledgers_registry.md')
 
 def _ledger_keys():
     keys, started = [], False
@@ -125,7 +125,7 @@ _unknown = sorted({k for (k, _l) in _C} - set(_keys))
 
 print("\n===== LEDGER BLOCK: rows = ledgers, columns = papers, entry = \\ldg markers =====")
 if _unknown:
-    print("  [FAIL] marker(s) naming a ledger absent from ledgers/INDEX.md:", ", ".join(_unknown))
+    print("  [FAIL] marker(s) naming a ledger absent from corpus/ledgers_registry.md:", ", ".join(_unknown))
 _w = max(len(k) for k in _keys)
 print(' ' * (_w + 2) + ' '.join(f'{b:>4}' for b in order))
 for k in _keys:

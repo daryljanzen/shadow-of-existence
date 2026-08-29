@@ -1,7 +1,7 @@
 ---
 name: combinatorics-ledger
 kind: FORWARD
-current: r3415
+current: r3525
 job: The combinatorics field-bake ledger — what bit, what did not, and why. Lane 8.
 sources: [cowork]
 ---

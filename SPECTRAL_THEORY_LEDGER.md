@@ -1,7 +1,7 @@
 ---
 name: spectral-theory-ledger
 kind: FORWARD
-current: r3487
+current: r3542
 job: The spectral-theory field bake — what bit, what bounced, and the boundary. Tier B's largest never-thrown field (×189 on the r3453 measure), verified at r3438 as NOT covered by the harmonic ledger, which mentions spectral, self-adjoint and deficiency zero times.
 sources: [chat]
 ---

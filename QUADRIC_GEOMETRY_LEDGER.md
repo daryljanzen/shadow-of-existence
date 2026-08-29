@@ -3,7 +3,7 @@ kind: REFERENCE
 job: projective geometry of quadrics against the CR substrate — the CK metric identification, and the ladder gap it exposes
 name: quadric-geometry-ledger
 description: R-M's first field bake — projective geometry of quadrics thrown at the CR substrate. Opened r1838 (Phase 8). What the corpus already reaches, the boundary the throat protocol states for itself, and the bites this field can take that the classical catalogue could not.
-current: r3512
+current: r3526
 ---
 
 > **▣ REFERENCE — R-M's first field bake, and part of the corpus.** *Projective geometry of quadrics

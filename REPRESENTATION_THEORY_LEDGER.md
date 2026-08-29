@@ -1,7 +1,7 @@
 ---
 name: representation-theory-ledger
 kind: FORWARD
-current: r3514
+current: r3538
 job: The representation-theory field bake — what bit, what bounced, and the boundary. The largest unbaked vocabulary in the corpus (×241 tight), thrown r3437 after the Phase 4 survey named it the standing first pick on measured usage.
 sources: [chat]
 ---

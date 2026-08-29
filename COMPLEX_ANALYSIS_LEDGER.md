@@ -3,7 +3,7 @@ kind: REFERENCE
 job: complex analysis and monodromy against CR — the field that turned practices into theorems
 name: complex-analysis-ledger
 description: R-M's third field bake — complex analysis and monodromy thrown at CR. Opened r1867 (Phase 8), handed to by the quadric bake's Q4 (equianharmonic ⟺ j=0 ⟺ CM by ω). Discharges R-M arc station Ⓒ, marked NO ENTRY since r1805. Baseline, probes, four-part close.
-current: r3507
+current: r3528
 ---
 
 > **▣ REFERENCE — R-M's third field bake, and part of the corpus.** *Complex analysis and monodromy.
