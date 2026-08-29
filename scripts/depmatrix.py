@@ -69,3 +69,74 @@ print("p0 row (cites):", {b:M['p0'][b] for b in order if M['p0'][b]})
 print("P3 column total (most-drawn-on):", sum(M[a]['P3'] for a in order))
 print("foundational feeds P7<-:", {x:M['P7'][x] for x in ['P1','P2','P3','P4','P5','P6']})
 print("foundational dep edges: P6<-P1",M['P6']['P1'],"P3<-P2",M['P3']['P2'],"P5<-P2",M['P5']['P2'],"P5<-P3",M['P5']['P3'],"P5<-P4",M['P5']['P4'],"P6<-P4",M['P6']['P4'],"P6<-P5",M['P6']['P5'])
+
+# ============================================================================
+#  THE LEDGER BLOCK -- how many times each paper cites each knowledge ledger.
+#
+#  This is the second half of the reference system: the paper-by-paper matrix
+#  above counts internal \cite edges, and this counts \ldg markers into the
+#  eighteen knowledge ledgers.  Rows are LEDGERS, columns are PAPERS, so the
+#  block sits under the matrix sharing its column headers and a column reads
+#  top-to-bottom as one paper's whole draw -- its own sources, then the worked
+#  mathematics behind them.
+#
+#  THE ROW SET IS READ FROM DISK, NEVER HARD-CODED.  Six further fields are
+#  queued, so any constant here would acquire exactly the defect the gate at
+#  r3522 was repaired for.  A zero is a finding and prints as a zero: a field
+#  that legitimately gave a paper nothing must be legible as such, and the
+#  landing tables carry the reason.
+# ============================================================================
+import os as _os, re as _re
+_ROOT = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
+_IDX  = _os.path.join(_ROOT, 'ledgers', 'INDEX.md')
+
+def _ledger_keys():
+    keys, started = [], False
+    for ln in open(_IDX, encoding='utf-8'):
+        t = ln.strip()
+        if not t.startswith('|'):
+            continue
+        if set(t) <= set('|-: '):
+            started = True; continue
+        if not started:
+            continue
+        cells = [c.strip() for c in t.strip('|').split('|')]
+        if len(cells) >= 4:
+            keys.append(cells[0].strip('`'))
+    return keys
+
+_LDG = _re.compile(r'\\ldg\{([^}]*)\}')
+
+def _ldg_counts():
+    counts = {}
+    for fn, lab in files.items():
+        path = _os.path.join(_ROOT, 'corpus', fn)
+        if not _os.path.exists(path):
+            continue
+        body = open(path, encoding='utf-8', errors='replace').read()
+        body = '\n'.join(l for l in body.split('\n') if not l.lstrip().startswith('%'))
+        for k in _LDG.findall(body):
+            counts[(k, lab)] = counts.get((k, lab), 0) + 1
+    return counts
+
+_keys = _ledger_keys()
+_C = _ldg_counts()
+_unknown = sorted({k for (k, _l) in _C} - set(_keys))
+
+print("\n===== LEDGER BLOCK: rows = ledgers, columns = papers, entry = \\ldg markers =====")
+if _unknown:
+    print("  [FAIL] marker(s) naming a ledger absent from ledgers/INDEX.md:", ", ".join(_unknown))
+_w = max(len(k) for k in _keys)
+print(' ' * (_w + 2) + ' '.join(f'{b:>4}' for b in order))
+for k in _keys:
+    row = ''.join(f'{(_C.get((k,b),0) or 0):>5}' for b in order)
+    print(f'  {k:<{_w}}{row}')
+print("  " + "-" * (_w + 5 * len(order)))
+print(f'  {"TOTAL":<{_w}}' + ''.join(f'{sum(_C.get((k,b),0) for k in _keys):>5}' for b in order))
+print(f"\n  {sum(_C.values())} marker(s) across {len({l for (_k,l) in _C})} paper(s) "
+      f"and {len({k for (k,_l) in _C})} of {len(_keys)} ledgers.")
+
+print("\n===== LEDGER BLOCK, LATEX ROWS (append under tab:dependency-matrix) =====")
+for k in _keys:
+    cells = ' & '.join(('.' if _C.get((k, b), 0) == 0 else str(_C[(k, b)])) for b in order)
+    print(f'\\textsf{{{k.replace("_", " ")}}} & {cells}\\\\')
