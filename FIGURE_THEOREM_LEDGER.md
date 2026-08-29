@@ -90,6 +90,7 @@ exemption does not cover. The banner is struck below.***
 | **⊢51 · ⊢54** `τ` is a light-path; `σ` is a relabelling | **SUBSTANCE OWED (τ) / LANDED (σ)** | `σ`-as-relabelling is throughout P2/P3/P5/P14/P16; **`τ` as a light-path is in no paper** |
 | **⊢64–⊢70 · R5 the waves** | **OPEN** | the three routes were assessed r1760–r1762 and the gap is precise: **EM content as geometry ✔** (P8 carries RN–dS, `ρ=q²/8πr⁴`, the bend of the cut), **gravitational radiation as geometry ✔** (P11), **EM *radiation* as a bend ✘**. Still ✘ on today's corpus. Not citable |
 | **⊢69 · ⊢70** no spin-2 on the figure; "not excluded" ≠ "open" | **LANDED (in substance)** | P11 carries the spin-2 count; P1 and P14 carry the not-excluded discipline. The figure-side derivations are not cited |
+| **⊢56** the horizon is real at its ends and fictional in its middle | ***LANDED r3571*** | *Struck in error at `r3565`, restored and landed the same session.* **p0**, at the bound on what classical circle geometry can say: it is now the second and sharper reason La Hire's reciprocity cannot be lifted |
 | **⚠37** face 3, imaginary `r`, **suspect by its author** *(the body carries this as a `⚠` warning, not a proved `⊢` — sigil corrected r3565)* | **BOUNCED — and still bounced** | the corpus's imaginaries are all *elsewhere*: `dη` purely imaginary on the lift (P7), `2πiα/3` along the clock (P3), `x₀` imaginary inside the waist (p0). **None of them is imaginary `r`.** c40's caution stands unrefuted after ~2400 revisions — record it as a settled bounce rather than an open question |
 | **R1** hexagon → `A₂`/su(3) | **OPEN, re-scored** | the wall stands (`su(3) ⊄ so(5,1)`); what the object reaches is p0 way 6's **gauged/global split**, not the colour group. *"Nothing here reaches it" is false as written and was corrected r1758* |
 | **R2 · R4** quark charges; the su(3) weight diagram | **DEAD, with computed cause** | recorded, never to be cited |
@@ -119,25 +120,32 @@ an escaped underscore returns a clean zero; a word list is a claim about the sea
 ***Every `ABSENT` in a landing table is now searched in the corpus's term, then homonym-checked at the
 site, before it is written.***
 
-### ⛔⛔⛔ ONE ROW OF THIS TABLE WAS FABRICATED, AND IT IS STRUCK — r3565
+### ⛔⛔⛔ A RETRACTION, RETRACTED — `⊢56` IS REAL, and this is the record of both errors — r3571
 
-*The `r3524` gather listed* ***`⊢56` — "the horizon is real at its ends and fictional in its middle",
-`SUBSTANCE OWED`, "absent, and it touches P1's own subject"***. ⛔ ***There is no `⊢56`.*** *The token
-appeared in exactly one place in the corpus — that row — and the pre-gather ledger at `95559d5` carries
-no `⊢56`, no "fictional" and no "real at its ends". The worked second-run block has `⊢49`, `⊢54`, `⊢55`,
-`⊢57` and `⊢58` **and no `⊢56`**.*
+*At `r3565` this table's `⊢56` row was struck as **fabricated**, with a note calling it the worst failure
+available in the campaign.* ⛔ ***That was wrong. `⊢ 56` is worked at line 489 of this file, receipted,
+and present in the pre-gather ledger at `95559d5`***: *the hinge's polar has its foot at $\alpha/2$,
+inside the throat where $X_0$ is `nan` and the substrate has no point, so the horizon-chord's endpoints
+are the two tangency points on the waist — real points where the light cone touches — while its interior
+runs through the hole. **Only the endpoints are points of the substrate**, and that is why La Hire cannot
+be lifted. **The struck row quoted it accurately, wording included.** Restored, credit to 60 for finding
+it.*
 
-⇒ ***A register was invented, given a plausible claim, routed to `P1`, and carried in the owed count for
-eleven revisions.*** *It was caught only because landing it meant reading its worked statement first, and
-there was none. **No gate would have found this** — the gates check that counts agree and that markers
-resolve, not that a claim exists. Had it landed, the `\ldg` marker would have lent a fabricated sentence
-the provenance of a bake that never made it.*
+⌗ ***THE CAUSE IS THE SAME ONE THE STRUCK NOTE ITSELF NAMED.*** *The body writes `⊢ 56` with a space; the
+search was for `⊢56`. **I diagnosed exactly that space-form failure in the same commit, corrected my audit
+for it, and then acted on the uncorrected first result rather than the corrected one** — the fixed audit
+reported only `⊢37` and `Q6r`, and did **not** flag `⊢56`, which was the instrument telling me the register
+existed. I struck it anyway.*
 
-⌗ ***THE STANDING RULE:*** *a landing-table row is a **quotation**, not a summary; a register's worked
-statement is read in the ledger body before it is landed, and a row with nothing behind it is struck.*
-⌗ *An audit of all sixteen tables against their bodies found this the **only** fabricated row — `⊢37` was
-flagged and is real (the body carries it as `⚠ 37`, a warning rather than a turnstile; sigil corrected
-above), and `Q6r` is in the quadric body three times.*
+⇒ ***So the rule from `r3565` stands and gains a second half.*** *A landing-table row is a quotation and is
+read in the body before it is landed —* ***and a row is not struck on a single negative search either.***
+*Absence needs the same standard as presence: a register is retracted only when the search has been run in
+the body's own form and come back empty. **A false retraction removes real worked mathematics from the
+corpus's reach, which is the same damage as a fabrication, pointing the other way.***
+
+⌗ *`⊢37`'s sigil correction stands — the body does carry it as `⚠ 37`. `⊢56`'s original verdict stands
+too: `fictional`, `real at its ends`, `horizon-chord` and `polar has its foot` are all ×0 across the
+seventeen papers, so it is **`SUBSTANCE OWED`**, and its home is `P1`.*
 
 ### ⛔ WHAT THIS GATHER DID **NOT** FIND
 

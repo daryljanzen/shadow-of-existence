@@ -42,8 +42,14 @@ SHARED = {
 }
 
 
-NODES = ('54', '56', '57', 'cc54')   # ** r3147: 57 added.  The gate predated this line and would
-                                    #    have made it impersonate another node or fail forever. **
+NODES = ('54', '56', '57', '59', '60', 'cc54')   # ** r3147: 57 added.  The gate predated this line
+                                    #    and would have made it impersonate another node or fail
+                                    #    forever. **  ** r3573: 59 and 60 added, at 60's routing --
+                                    #    both had been working for a full session while a node
+                                    #    running as itself could not run this gate at all, and it
+                                    #    passed in CI only because the runner sets NODE=ci.  A
+                                    #    roster that omits a working line does not protect it; it
+                                    #    just cannot see it. **
 CI = 'ci'   # the runner: no 'me', and rule (3) swept across ALL nodes -- see main()
 
 

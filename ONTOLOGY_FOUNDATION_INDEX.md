@@ -316,6 +316,27 @@ as $1+z$ or $z=\dots$ in a redshift relation · ③ always as $dz$ or $z^{2}$ in
 **⛭ $\mathcal{H}$'s two are disjoint by decoration** — *the superscript $+$ marks the horizon, the bare and
 subscripted forms the constraints — **and both are inherited (GR and ADM), so they fall under the $\gamma$ rule
 (r1797): recorded, not unified.***
+### ⛭ `kernel` — added r3579 by 59, from the functional-analysis bake's `F13`. **153 live occurrences, four readings, and two of them are opposite objects in the field the word belongs to.**
+
+| reading | what it names | where | count |
+|---|---|---|---|
+| `kernel` ① | **THE VACUUM KERNEL** — *the solution set of $T_{\mu\nu}=0$ for a symmetry class; the metric functions the class admits before matter bends them.* **The corpus's own coinage and its dominant sense** | **P9 ×34 · P8 ×19 · P7 ×21** | **×62** |
+| `kernel` ② | **THE KERNEL OF AN OPERATOR** — *the null space, $\ker$, in the ordinary linear-algebraic sense; `dim ker` in P14's index* | **P14 · P12 · P9** | **×13** |
+| `kernel` ③ | **AN INTEGRAL KERNEL** — *the Euclidean propagator $e^{-\hat H\lvert\Delta\eta\rvert}$ of the branch-point filter, a function of two arguments that one integrates against* | **P10 · P15 · P7** | **×6** |
+| `kernel` ④ | **loose, in prose** — *"the kernel of the argument", the ordinary English sense* | scattered | remainder |
+
+**⛭ ⛔ ① AND ② ARE OPPOSITE OBJECTS IN THIS FIELD, WHICH IS WHY THE ROW EXISTS.** *A functional analyst reads
+`kernel` as ② without hesitation — the set a map sends to zero. The corpus's ① is the set a map sends to zero
+**of a different map**: not of the slicing operator but of the Einstein tensor, so it is the operator's
+**image** that ① describes and its **kernel** only by a second construction.* ⇒ ***A reader of that field
+meeting "the vacuum kernel" in P9 will import the wrong object, and nothing in the sentence corrects them.***
+
+**⛭ AND THEY ARE NOT DISJOINT BY PAPER, WHICH IS HOW THIS DIFFERS FROM $z$.** *P9 carries ① thirty-four times
+and ② as well; P14 carries ② at `dim ker` while ① runs through the papers it cites. **The $z$ rule — "no paper
+uses two" — does not hold here**, so the disambiguation cannot be left to context and has to be the reader's
+to make.* ⌗ *Recorded, **not** unified: ① is the corpus's own and load-bearing, ② and ③ are inherited, so this
+falls under the $\gamma$ rule (r1797) exactly as $\mathcal{H}$ does.*
+
 **⌗ RELATIONS — SETTLED r1822.** ***A relation that DEFINES a symbol is part of that symbol's entry; a relation that STATES A RESULT belongs to `PHYSICAL_VALUES_LEDGER`, which holds the corpus's numbers by design.*** *So the three here stay — $2M=\alpha\sin u\cos^{2}u$ (defines $u$), $\mathrm{d}\tau=N\,\mathrm{d}t$ (defines $\tau$ against the lapse), $16\pi\rho={}^{3}R+K^{2}-K_{ij}K^{ij}-2\Lambda$ (defines $\rho$ beyond the spherical case) — **each arrived inside the row that needed it.** And $\Lambda G^{2}M^{2}/c^{4}=1/9$ stays OUT: it is a **result**, and duplicating it here would create the two-homes problem `SA-2` sweeps for.* **The line is checkable: does the row need the relation to say what the symbol IS?**
 *(Original note, kept:)* **⌗ AND A NOTE ON RELATIONS, the question r1801 raised: §0 now carries three defining identities inside its family
 rows** — $2M=\alpha\sin u\cos^{2}u$, $\mathrm{d}\tau=N\,\mathrm{d}t$, $16\pi\rho={}^{3}R+K^{2}-K_{ij}K^{ij}-2\Lambda$ —

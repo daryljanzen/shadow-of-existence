@@ -121,21 +121,40 @@ BASELINE = {'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
 #:   54 takes EVEN (0); 57 takes ODD (1).  NODE selects; absent it, the file falls back to 54's half,
 #:   which is where it was written.
 import os as _os
-# ⛭ r3566: the live pair is 59/60, and the halves are named for them as they were for 54/57.
-#   ODD: 57, 59.  EVEN: 54, 60.  *60 holds the even half because it declared a band first and
-#   is the line that recorded the collisions; 59 took the odd half in its r3563 reply.*
-PARITY = 1 if _os.environ.get('NODE') in ('57', '59') else 0
+
+#: ⛔⛭ ** THE PARITY IS DECLARED, NOT INFERRED -- r3573, 59, at 60's routing. **
+#: *The line above read `PARITY = 1 if NODE == '57' else 0`, so ANY unrecognised value silently meant
+#: EVEN.  CI runs `NODE=ci`, so the runner always checked the even half no matter whose branch it was
+#: on -- it reported a verdict about a line it had not identified, which is this corpus's own
+#: report-read-as-the-thing-reported failure arriving in the one gate whose whole subject is which
+#: line did what.  60 declined to wire it for exactly that reason rather than impose a red.*
+#:   ⇒ ** A node not in this map is a REFUSAL, never a default. **  *`ci` is mapped explicitly to
+#:   `None`, which means "the runner cannot tell which line it is checking" and is a different
+#:   statement from either half.*
+_PARITY_BY_NODE = {'54': 0, '60': 0,          # EVEN half
+                   '57': 1, '59': 1,          # ODD half
+                   'cc54': 0,                 # compute node, works under 54's band
+                   'ci': None}                # the runner is not a line and holds no half
+_NODE = _os.environ.get('NODE')
+if _NODE is None:
+    PARITY = 0                                # the tree this file was written on
+elif _NODE in _PARITY_BY_NODE:
+    PARITY = _PARITY_BY_NODE[_NODE]
+else:
+    raise SystemExit(
+        "  check_revision_collisions: NODE=%r is not a declared line.\n"
+        "  Add it to _PARITY_BY_NODE with the half it takes.  A node whose band is unknown\n"
+        "  must not be given one by default -- that is how the runner spent this session\n"
+        "  checking the even half of whichever branch it happened to be on." % _NODE)
 #: ** THE OTHER HALF, HELD OR NOT.  ⛔ THE BAND IS A PARTITION AND HALF A PARTITION IS NOTHING. **
 #: *Set to the source of the other line's acceptance, or to `None` while it is only a request.  The
 #: gate REFUSES to call itself prevention while this is `None`, because a half-band prevents no
 #: collision at all -- every number this line may use stays fully available to the other.*
 OTHER_HALF = ("node 57, r3138 reply: \"The band is accepted.  This tree now runs PARITY = 1, so "
-              "your gate is answered rather than presumed.\"  ⛭ AND AGAIN FOR THE 59/60 PAIR, "
-              "node 59, r3563: \"From r3563 forward: 59 takes ODD, 60 takes EVEN. I take the odd "
-              "half because your band was declared first and because you are the line that has "
-              "been recording the collisions.\"  *Thirteen collisions accumulated in between "
-              "because 60 applied a band and 59 drew from the whole space -- neither choosing "
-              "badly, and the composition guaranteeing the failure.*")
+              "your gate is answered rather than presumed.\"  ** AND node 59, r3563, CLAIMS.md: **\n"
+              "\"59 takes ODD, 60 takes EVEN, from r3563 forward.  59 accepts the odd half because "
+              "60's band was declared first and because 60 is the line that has been recording the "
+              "collisions.\"  Both halves are now held by a named line, so the partition is whole.")
 #: ** NAMED, not dated. **  *A band cannot apply to commits made before it was taken, and the corpus's
 #: way of saying so is a list of names rather than a cutoff -- a cutoff silently absorbs everything
 #: behind it, and `c54.212` found that hole in a different gate.*
