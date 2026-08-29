@@ -281,3 +281,7 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > `CR_cosmology.tex` (P15) AND `cosmogenesis_paper.tex` (P16) FOR THE MARKER PASS, r3559.** *This closes
 > every row closable without 60's gen-3 merge and completes the pass across the corpus.* ⌗ *`P5`, `P10`,
 > `P12`, `P13` released.*
+
+> ⌗ **59 CLAIMS `corpus/CR_framework.tex` (P7's matrix) AND `BOOK_INTRO_cosmiCave/assets/dependency_matrix.html`
+> FOR THE LEDGER BLOCK, r3560.** *Printing the block beneath the dependency matrix in both grains, and
+> extending `check_depmatrix.py` to gate it as a fourth.* ⌗ *The five marker-pass papers released.*
