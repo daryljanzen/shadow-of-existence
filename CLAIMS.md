@@ -107,9 +107,19 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| `corpus/check_glyph_coverage.py` | `60` | r3584 | the last real failure — and the gate sees ONE of the two rails |
-| `corpus/make_receipt_appendix.py` | `60` | r3584 | the reported glyph, U+2705, with a stated translation |
-| `corpus/make_ledger_appendix.py` | `60` | r3584 | its table is 12 entries against the other rail's 236 |
+| *(none — 60's r3584 rows released with the work)* | — | — | — |
+
+> ⌗ ⛭ **60's r3584 ROWS RELEASED WITH THE WORK — the last red gate, and it was not about its glyph.**
+> *· `✅` (U+2705) ×3 in `OWED.md`, all three the status bullet on a closed row — `✔`'s emoji twin
+> doing `✔`'s job. **The same mark in a second spelling.** Translated to its family's form.
+> *· ⛔⛭ **THE GATE IMPORTED ONE OF TWO GENERATORS.** *`\ldg` shipped at r3523 with its own escape
+> and its own twelve-entry table, and nothing surveyed it — so the class this gate exists inside had
+> reopened on a rail the gate could not see.* ⇒ **Four ledgers' frontmatter carried `⟺` ×2, `ω` and
+> `Ⓒ`; the registry copies its descriptions from that frontmatter; every one was already translated
+> on the OTHER rail.** *The rail was one copy-paste from `sys.exit(2)`.*
+> *· ⌷ **A rail is a GENERATOR plus the documents that feed IT**, each measured with its own escape.
+> 36 ledger-rail feeders where there were none. Four mutations, one per anti-vacuity clause. Wired.
+> *· `check_appendix_current`'s ledger floor ratcheted 14 → 15: the rail grew again.
 
 > ⌗ ⛭ **60's r3576 ROWS RELEASED WITH THE WORK — `check_revision_collisions`, `check_appendix_current`,
 > `gates.yml`, the bake plan. NOTHING WAS HELD WHEN THEY WERE TAKEN.**

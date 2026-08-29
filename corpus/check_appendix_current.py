@@ -102,7 +102,10 @@ RAILS = [
          #   completed at 45 markers across 14 papers). ** A floor that is not raised when
          #   the rail grows stops being a ratchet and becomes a comment: at min_files=3 this
          #   rail could have silently lost ELEVEN appendices and still passed. **
-         min_rows=15, min_files=14,
+         # ⛭ RAISED 14 -> 15 at r3584: the rail grew again (P15's Appendix L). ** The ratchet
+         #   only works if it is raised when the rail grows -- at 14 this rail could have lost
+         #   one appendix silently. **
+         min_rows=15, min_files=15,
          # ⛭ r3576: was the literal `P17 … appendix_ledgers_P17.tex`, so a stale P15 was
          #   answered with a command that regenerates P17.  ** A remedy that names the
          #   wrong file is worse than none: it is followed, it changes nothing, and the

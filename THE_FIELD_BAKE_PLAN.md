@@ -191,6 +191,40 @@ r3164–r3176 were already thin when `622` recorded its list as "complete"; `r34
 > collision half still runs — it is the half a runner can actually answer — and with that,
 > `check_revision_collisions` is **WIRED**: `NODE=ci` → 0 on either line's branch, `NODE=60` → 0,
 > `NODE=59` → 1 on this branch (correctly: these commits are not 59's), `NODE=bogus` → refusal.*
+>
+> ⛔⛭⛭ **AND THE LAST RED GATE WAS NOT ABOUT THE GLYPH IT REPORTED — r3584.**
+> *`check_glyph_coverage` reported one thing: `✅` (U+2705) ×3 in `OWED.md`, all three the status
+> bullet on a closed row. It is `✔`'s emoji twin doing `✔`'s job, and `✔` has rendered as nothing
+> since the survey — **the same mark in a second spelling**, which is the hole that table keeps
+> growing. One entry, stated, closed.*
+>
+> ⇒ ***BUT THE GATE'S OWN HEADER SAYS IT IMPORTS THE TABLE IT MEASURES, BECAUSE A COPY WOULD DRIFT
+> FROM THE GENERATOR AND GO GREEN WHILE THE GENERATOR FAILED. IT IMPORTED ONE OF TWO GENERATORS.***
+> *The `\ldg` rail shipped at r3523 — three hundred and sixty revisions after this gate was written —
+> with **its own `tex_escape` and its own twelve-entry table**, and nothing surveyed it.* ⇒ **So the
+> whole class this gate exists inside had reopened on a rail the gate could not see, and the gate was
+> green about it.**
+>
+> ⌗ **WHAT THAT HAD ALREADY COST, MEASURED BEFORE IT WAS FIXED.** *Four ledgers' frontmatter carries
+> `⟺` twice, `ω` and `Ⓒ` — and the registry's own header promises that a row's description **is** the
+> ledger's frontmatter, so it cannot drift.* ⇒ ***The `\ldg` rail was one copy-paste from
+> `sys.exit(2)`, and every one of those three glyphs was already translated on the other rail.***
+> *Carried across verbatim rather than spelt anew: `(C)`, `\iff`, `\omega`. **A second rail may not
+> spell the same glyph a second way — that is the defect, not the fix.***
+>
+> ⌷ **THE GATE NOW MEASURES A RAIL, NOT A DIRECTORY.** *A rail is a GENERATOR plus the documents that
+> feed **it**, each measured with **its own** escape — adding the ledger files to `SURVEYED` would
+> have measured them with the wrong table and reported the wrong answer, which is the restatement
+> failure this gate threw away its threshold to avoid.* *The ledger rail's feeders are taken from the
+> generator itself: the rows `parse_index` returns (not the whole registry, whose header prose carries
+> glyphs no row ever sees) and the frontmatter block of each ledger those rows name (not the bodies,
+> which the generator never reads). **36 feeding documents where there were none.***
+> ⚠ *Four mutations, one per anti-vacuity clause: an untranslated glyph in a receipt feeder fires and
+> names it; one in a ledger frontmatter fires and names the rail, the file and the other rail's entry;
+> a rail whose escape accepts everything reports **NOT MEASURING** rather than clean; a rail whose
+> feeders vanish reports **an empty survey is green forever** rather than passing.*
+> ⛭ *Green on both rails, and **wired** — an unwired green gate rots. `check_appendix_current`'s
+> ledger floor ratchets 14 → 15 in the same pass, because the rail grew again.*
 
 **⛔ NO FIELD IS TAKEN UP UNTIL THE ONE BEFORE IT MEETS THE BAR.** *The failure this plan exists to stop
 is breadth bought with depth.*

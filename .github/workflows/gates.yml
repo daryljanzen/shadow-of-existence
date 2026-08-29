@@ -72,7 +72,7 @@ jobs:
                    check_model_ledger check_one_value check_paper_tense check_protected_dupes \
                    check_receipt_orphans check_receipt_tex_scope check_row_matchers \
                    check_self_certification check_settings check_theatre_currency \
-                   check_marker_buried check_landing_rows_trace check_one_state check_revision_collisions; do
+                   check_marker_buried check_landing_rows_trace check_one_state check_revision_collisions check_glyph_coverage; do
             echo "── $g"
             # NODE=ci added r2504+c54.198 (54): check_claims no longer defaults to a REAL node,
             # because a forgetful node was silently impersonating 56 and inheriting its claims.
