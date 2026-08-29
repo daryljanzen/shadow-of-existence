@@ -26,7 +26,10 @@ class: forward-document
 > ⌗ **What it is NOT exempt from is the header-vs-body check**: *a forward document contradicting **itself** is
 > always a finding. Its three registers — **⊢ PROVED · ≈ RHYME · and the third** — are kept apart on purpose,
 > "because the whole value of this document is that they do not blur," and that separation is checkable.*
-     Banked, not baked: nothing here has gone into a paper. Every ⊢ is receipted. -->
+     Banked, not baked -- STRUCK r3524, see THE LANDING TABLE below: much of Parts II and XII
+     is in p0 sec:power in the paper's own voice, with its own bibliography, and P3 prop:twoalpha
+     carries the 2-alpha. What remains unlanded is named there, register by register.
+     Every ⊢ is receipted. -->
 
 > # ⛔ THE GRADIENT APPLIES · AND SO DOES THE WEIGHT RULE
 > **Three registers, kept apart on purpose, because the whole value of this document is that they
@@ -40,6 +43,67 @@ class: forward-document
 > correct the claim.* Several entries below are **his, at his weight**, and are marked so.
 
 # THE FIGURE PROGRAMME — THEOREM LEDGER (r1108)
+
+## ⌗ THE LANDING TABLE — where each register stands against the corpus, checked r3524
+
+> **▣ THIS SECTION IS THE `\ldg` GATHER FOR THIS LEDGER.** *Built by testing each register against the
+> seventeen paper bodies as they stand, **not** against this file's own claims about where things went.
+> Three dispositions, and a fourth for what was already there: **LANDED** · **POINTER OWED** (the
+> substance is in a paper and only the `\ldg` marker is missing) · **SUBSTANCE OWED** (established here,
+> verified, and absent from every paper) · **BOUNCED / OPEN** (recorded, not to be cited).*
+
+### ⛔ THE HEADER IS FALSE, AND BY A LARGE MARGIN
+
+*This file's banner says **"banked, not baked — nothing here has gone into a paper."*** ***It is wrong,
+and not by the two landings a filename search finds.*** *p0's `sec:power` carries the Euclid protocol's
+whole paying half in the paper's own voice, with its own bibliography: **Steiner's 1826 invariant**
+(`\cite{Steiner1826}`), **Euclid III.36** (`\cite{Euclid}`), the **tangent-secant/null identity**, the
+**secant-versus-tangent bound**, the **pole–polar**, the **radical axis**, the **nine-point circle**,
+and — as the honest boundary — **Ptolemy, La Hire and Casey each holding on the projection and carrying
+no height** (`\cite{CoxeterGreitzer1967,Coxeter1987b,Casey1866}`). **⊢9, ⊢10, ⊢38, ⊢40, ⊢42, ⊢44, ⊢45
+and the ⚠ secant bound are all in the corpus.** *And P3 `prop:twoalpha` carries ⊢2/⊢7/⊢45's `2α`.*
+⇒ ***A forward document contradicting itself is a finding, and this is the one check this file's
+exemption does not cover. The banner is struck below.***
+
+### ⌗ THE TABLE
+
+| register | disposition | where it stands |
+|---|---|---|
+| **⊢9 · ⊢10 · ⊢38** power = `X₀²`, tangent is null | **LANDED** | p0 `sec:power`, `prop:tangentnull`, with `Steiner1826`/`Euclid` cited — **pointer owed only** |
+| **⚠ the secant bound** (touch = null, cut ≠ null) | **LANDED** | p0 `sec:power` carries it as Euclid's own distinction |
+| **⊢40 · ⊢41 · ⊢42 · ⊢43** pole–polar, polar triangle, radical axis, inversion | **LANDED** | p0 `sec:power`'s boundary paragraph — **pointer owed** |
+| **⊢44 · ⊢58** Ptolemy, Casey, the one privileged circle | **LANDED** | p0, as the boundary where the run stopped paying — **pointer owed** |
+| **⊢45** nine-point circle **is** the throat | **LANDED** | p0 (×2) and P3 `prop:twoalpha`; also P14 — **pointer owed** |
+| **⊢2 · ⊢7** the hinge at `2α`, five equivalences | **LANDED** | P3 `prop:twoalpha`; the 2-and-3 split (substrate faces vs triangle faces) is p0's |
+| **⊢4 · ⊢39** triple angle ⟹ Nariai | **LANDED** | P3, P5, P7, P13, P14, p0 all carry the triple angle |
+| **⊢46 Feuerbach degenerates** | **SUBSTANCE OWED** | **Feuerbach is absent from every paper.** p0 states the *fact* (the throat is incircle **and** nine-point circle) and never names the theorem or the reading: *two distinct classical objects forced onto each other by the one input — the same species as the Nariai double root.* That last clause is the claim, and it is nowhere |
+| **⊢14–⊢18 the Thales circle is the dial** | **SUBSTANCE OWED** | **`Thales` appears in no paper.** P3 carries the trichotomy; the identification of the *locus* — vertex on one arc, secant midpoint on the other, degenerating at Nariai into the two null rulings — is not in it |
+| **⊢59** P2's cycloid circle is a Thales circle | **SUBSTANCE OWED** | absent from P2 |
+| **★★★ ⊢61** P7's central forcing **is** a tangency condition, and P1 supplies the tangency | **SUBSTANCE OWED — the largest debt in this file** | absent from P7 **and** P1. Verified two ways (`sweep4`, `sweep5`): P7's `ΛM²` against `1/9`, the horizon cubic's discriminant sign, and the vertical line's intersection count with P3's ellipse **partition the family identically**. ⇒ *Euclid's cuts/touches/misses, P3's three-horizons/Nariai/one, and P7's transverse/tangent/no-horizon are **one trichotomy in three vocabularies**, and P1 proves the tangency **without a metric** while the figure proves the equivalence **with** one.* P3 already says it in ink — *"the Nariai configurations are the vertical-tangent points of the ellipse"* |
+| **⊢62** the tangency is designation-dependent, the geometry is not | **SUBSTANCE OWED** | rides with ⊢61; it is the bound that keeps ⊢61 honest and must land in the same pass |
+| **⊢63** P4 and P6 have no geometric locus, **and that is load-bearing** | **SUBSTANCE OWED** | absent. It is the negative that says the figure programme has a boundary, which makes it worth more than most positives |
+| **⊢50 · ⊢57** the excircles; `3α` is not a third scale | **SUBSTANCE OWED** | absent. Directly relevant to p0 `sec:ledger`'s one-scale claim, which currently argues the point without this |
+| **⊢51 · ⊢54** `τ` is a light-path; `σ` is a relabelling | **SUBSTANCE OWED (τ) / LANDED (σ)** | `σ`-as-relabelling is throughout P2/P3/P5/P14/P16; **`τ` as a light-path is in no paper** |
+| **⊢56** the horizon is real at its ends and fictional in its middle | **SUBSTANCE OWED** | absent, and it touches P1's own subject |
+| **⊢64–⊢70 · R5 the waves** | **OPEN** | the three routes were assessed r1760–r1762 and the gap is precise: **EM content as geometry ✔** (P8 carries RN–dS, `ρ=q²/8πr⁴`, the bend of the cut), **gravitational radiation as geometry ✔** (P11), **EM *radiation* as a bend ✘**. Still ✘ on today's corpus. Not citable |
+| **⊢69 · ⊢70** no spin-2 on the figure; "not excluded" ≠ "open" | **LANDED (in substance)** | P11 carries the spin-2 count; P1 and P14 carry the not-excluded discipline. The figure-side derivations are not cited |
+| **⊢37** face 3, imaginary `r`, **suspect by its author** | **BOUNCED — and still bounced** | the corpus's imaginaries are all *elsewhere*: `dη` purely imaginary on the lift (P7), `2πiα/3` along the clock (P3), `x₀` imaginary inside the waist (p0). **None of them is imaginary `r`.** c40's caution stands unrefuted after ~2400 revisions — record it as a settled bounce rather than an open question |
+| **R1** hexagon → `A₂`/su(3) | **OPEN, re-scored** | the wall stands (`su(3) ⊄ so(5,1)`); what the object reaches is p0 way 6's **gauged/global split**, not the colour group. *"Nothing here reaches it" is false as written and was corrected r1758* |
+| **R2 · R4** quark charges; the su(3) weight diagram | **DEAD, with computed cause** | recorded, never to be cited |
+| **R3 → R3a/R3b · R3c** which `2+1` | **OPEN, and wider than when written** | a kill was written here and **retracted the same session as the cyanide face**. There are at least two `2+1`s — the **designation** one (`σ`'s own) and the **sign** one — they cut across each other, and they are different *kinds*: one a property of the geometry, one of the vantage. The row must first say **which** |
+| **U2** `A = ∛2·ρ` | **RUN, exact, Nariai-only** | 2e-16, not vacuous; `lem:twoturnings` untouched — it denies identifying the two `ℤ₃` *symmetries*, this is a ratio of two *radii* |
+| **U3** the full 3D, 24 hinges both sides | **OPEN — figure work, staged** | Daryl: *"which we will get to plotting eventually, in stages, not now"* |
+| **U4 / Parts XI–XII** the Euclid question | **PARTLY LANDED** | the protocol's paying outputs are in p0 `sec:power`; the **protocol itself**, written down as a protocol rather than performed, is not. The tradition gap Daryl named — Wasan, and the Chinese/Arab/Indian sources — is still a real gap in what can be cited |
+
+### ⛔ WHAT THIS GATHER DID **NOT** FIND
+
+***No row here was newly settled by a corpus result that post-dates it.*** *The candidate was the
+four-dimensionality result, and `r2376+c54.11` had already re-read this file against it and re-derived
+the `D`-dependent verdicts at general `D` — so the rows conditioned on `D=4` were already handled and
+this pass adds nothing to them.* ⇒ ***The debt in this file is not stale conditioning. It is landing:
+eleven registers established, verified and receipted here, and absent from every paper.***
+
+
 
 > **⌗ r2376+c54.11 — RE-READ AGAINST THE FOUR-DIMENSIONALITY RESULT.** *This bake ran against a **four-dimensional cut**, when nothing distinguished *structural* from *true at $D=4$*. The probes whose verdicts turn on a $D=4$ number were **re-derived at general $D$**, not annotated — verdicts are **at the probes themselves** (⊢8 · ⊢30 · ⊢54+R1 · ⊢59/⊢62 · R3 · the retracted row). Method and full working: `THE_DIMENSION_DEEPENING_AUDIT.md`; receipt `P03_reach_probe_deepening`.*
 
