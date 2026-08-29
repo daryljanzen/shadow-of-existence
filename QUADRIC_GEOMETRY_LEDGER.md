@@ -36,6 +36,51 @@ current: r3512
 
 # THE QUADRIC GEOMETRY LEDGER — R-M's first bake
 
+## ⌗ THE LANDING TABLE — where each register stands against the corpus, checked r3526
+
+> **▣ THE `\ldg` GATHER FOR THIS LEDGER.** *Each register tested against the seventeen paper bodies as
+> they stand. **LANDED** (substance in a paper; only the `\ldg` marker missing) · **SUBSTANCE OWED** ·
+> **BOUNDED — LANDED AS A BOUND** · **OPEN**.*
+
+### ⌗ THE SHAPE: LANDED THROUGHOUT, INCLUDING THE BOUNDS
+
+*R-M's first bake placed its results as it made them, and the pattern holds even for the parts that
+**refused**. Six probes, six landings; both late results (`L-533`, `L-543`→`L-549`) are in papers; and
+the bake's two ⛔ **non-imports** are in the corpus **as bounds**, which is the harder half to get right.*
+
+### ⌗ THE TABLE
+
+| register | disposition | where it stands |
+|---|---|---|
+| **`Q1` polarity** — ⊢58 carried from the plane to the projective setting | **LANDED** | `polar`/`pole` runs through fifteen papers; the projective extension is p0's. **Pointer owed** |
+| **`Q2` the two reguli** | **LANDED** | *and my probe's "ABSENT" was a vocabulary miss, recorded here as one*: the corpus says **rulings**, not *reguli*, in thirteen papers. The mathematics was already in P8 and P13 |
+| **`Q3` Cayley–Klein — the metric IS a CK log-cross-ratio, $k=\alpha$ exactly** | **LANDED** | p0, P5, P6. *This is the mechanism for "one scale, no free dimensionless constants," which the corpus had held by an adversarial audit returning an exhaustive zero; CK gives it structurally.* **Pointer owed, and this is the highest-value pointer in the file** |
+| **`Q4` the equianharmonic cross-ratio $e^{i\pi/3}$** | **LANDED, at the right weight** | `P5 rem:equianharmonic`, with receipt `Q4_equianharmonic_vantages` **and its own self-discount kept in the paper** — *"the content is not the value but that the vantages are so"*, and the deck $\mathbb{Z}_3$ and the $j=0$ CM by $\omega$ **not** shown to be one. A model landing: the result and its bound travelled together |
+| **`Q5` the pencil** — premise wrong, landed anyway: the locus is a **reducible cubic** whose singular points are the two Nariai | **LANDED** | P3, `prop:locus`. **Pointer owed** |
+| **`Q6` / `Q6r` the polar of a substrate point IS the $\mathrm{dS}_4$ background** | **LANDED** | p0 settles it in its own voice, receipt `Q6r_polar_is_the_background`; the totally-geodesic language is also in P8, P12, P13. *This ledger's own head records the gap it found and that p0 closed it — **and that record is accurate**, which two of the three gathers so far could not say of their own headers* |
+| **`D2` the Klein correspondence** — it explains the hexagon's **length** | **LANDED** | P3 |
+| **`L-533` the descent is a plane section, so it is scale-only** — hyperplane section of $\mathrm{dS}_D$ returns $\mathrm{dS}_{D-1}$ of radius $\sqrt{\alpha^2-c^2}$ for every admissible normal; the scale map has rank 1 over two choices | **LANDED** | p0. *A quadric fact doing ontological work — it is why `PO-9`'s ceiling is absent for a reason rather than for want of an argument* |
+| **`L-543` → `L-549` the counterterm basis collapses** — and the deficit **is** $C_{\mu\nu\rho\sigma}C^{\mu\nu\rho\sigma}$, a property of a **conformal class** rather than of a symmetry group | **LANDED** | P10, with Gauss–Bonnet and conformal flatness both in the paper. *The final form of a claim that was withdrawn and re-sited twice inside this file* |
+| **⛔ the isometry group does NOT import** — $\mathrm{PO}(5,1)$ identifies antipodes, $X\sim-X$, and CR does not | **LANDED AS A BOUND** | the antipodal distinction is in P3 (×4), P7, P13, P14. *The bake's single most important negative, and the corpus carries it* |
+| **⛔ the two reguli do NOT distinguish structure** | **LANDED AS A BOUND** | P13: every orientation-reversing isometry exchanges the rulings, so the exchange itself distinguishes nothing |
+| **`D3` Segre bounces, with a reason** | **BOUNCED** | Segre classifies a *pencil*, and the probe needed an honest answer to the queue's own question first. Recorded, not citable |
+| **the polar simplex** (three hinges and a centre) | **ANSWERED, dimension-bound** | re-run at general $D$ at c54.11: **no** |
+| **the withdrawn `L-547` scope** — *"the layer is not one of them, so this bake's reach stops at the substrate"* | **WITHDRAWN, and the withdrawal reached its successor** | false in the direction that **understates** the bake: P10's free tower slices on $a(T)=\alpha\cosh(T/\alpha)$, $R=12/\alpha^2$ constant, a member of this very family. *The rule paid here — when you withdraw a claim, withdraw what it spawned — and then applied to itself one revision later* |
+
+### ⌗ WHAT THIS GATHER FOUND
+
+***Nothing owed in substance, and the bounds landed too.*** *Three gathers, three shapes: the
+figure-theorem ledger owes eleven registers; the combinatorics ledger owes only markers and is
+majority-`META` by design; **this one owes only markers and is majority-landed including its
+negatives**.*
+⇒ ***And a third instrument failure of one kind, recorded because it is now a pattern:*** *`Q2` read
+`ABSENT` because I searched the ledger's word (`reguli`) and the corpus uses its own (`rulings`) — after
+a filename search that could not see a landing, and an escaped-underscore grep that returned a clean
+zero. **A word list is a claim about the searcher's vocabulary, never about the corpus's.** Every
+`ABSENT` in these tables is checked against the corpus's own term before it is written.*
+
+
+
 > **⌗ RE-READ AGAINST c54.163 AND DECLARED CURRENT r2396 — the deepest lag on the board (−152) and it clears.**
 > *The fork changed this file in no span; the test was the same bounded one — **did anything the c54.153→c54.163
 > span produced bear on what this bake concluded?** The span gave the **species-selection withdrawal**, the
