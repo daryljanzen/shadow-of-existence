@@ -2126,3 +2126,61 @@ odd relation right and the even one wrong points straight at this residual. ICs 
 phase, which decides whether it arrives at recombination in compression or rarefaction. Caution on the
 record: seam moved the POSITION last time (older composition) -- report position every run; if it lands
 even/odd but moves position off, that is the same coupled trade, a swap not a solution.
+
+---
+
+## r3543 — THE PARITY IS TIMING: CR's modes arrive MISTIMED; the amplitude IC is a swap, not a fix
+
+**Daryl's ship:** separate the two things the IC does -- a k-dependent amplitude envelope (cannot move a
+compression/rarefaction PARITY) vs a phase reset (can). Measure the arrival phase directly from the dumps,
+and read even/odd under CRAMP=seam with position reported every run.
+
+### Measurement 1 -- ARRIVAL PHASE at recombination (po13 phase2.py, on the existing dumps, non-circular)
+Oscillator variable X = Theta_0 + (1+R)Psi = dg/4 + (1+R)phi (oscillates about 0). Instantaneous phase
+from two INDEPENDENT quadratures -- A: (dX/deta)/(k c_s); B: the photon velocity -tg/(3 k c_s) -- read at
+eta_rec by extrapolation from accurate interior points. NOT the k*rs proxy (which mode-selection forces to
+n; and indeed k*rs/pi = 1.00/2.00/3.00 in BOTH arms).
+
+| peak (q) | CR wrapped/pi (A,B) | CTL wrapped/pi (A,B) | DIFF/pi |
+|---|---|---|---|
+| 1 | 0.250, 0.244 | 0.160, 0.220 | ~0.02–0.09 (short window, least certain) |
+| 2 | 1.586, 1.580 | 1.157, 1.165 | **0.42** |
+| 3 | 0.759, 0.759 | 0.173, 0.176 | **0.58** |
+
+**⊘ CR's modes arrive MISTIMED.** The two quadratures agree (real, not numeric). The CONTROL is internally
+clean: its odd peaks q=1,3 both sit at ~0.17pi and its even peak q=2 at ~1.16pi -- a textbook clean pi
+(compression/rarefaction) alternation. CR DRIFTS: odd peaks q=1,3 at 0.25 and 0.76pi (no longer a shared
+phase), even peak at 1.59pi -- ~0.42pi off where the control's even peak sits. The drift GROWS with q. Since
+k*rs matches (n both arms), this is a DYNAMICAL phase shift, not a clock difference: CR lacks the radiation
+driving that in LCDM locks a ~constant acoustic phase shift, so CR's phase shift drifts with k. **The
+even-peak (parity) suppression is a TIMING effect -- consistent with the whole elimination pointing OUT of
+the oscillator (R, Phi, drag all out): it is not amplitude at fixed phase, it is arrival phase.**
+
+### Measurement 2 -- CRAMP=seam even/odd, with position (STACKPERT=1 GSRC=1 HIER KCONT)
+| config | even/odd | l1/lA | P1/P2 | P1/P3 | peaks l | spacings |
+|---|---|---|---|---|---|---|
+| CR flat (baseline) | 0.351 | 0.6499 | 4.094 | 2.551 | 196,484,668 | 288,184 |
+| **CR seam** | **0.866** | 0.6499 | 1.710 | 2.857 | 196,**660**,932 | **464,272** |
+| control | 0.624 | 0.7300 | 2.254 | 2.363 | 220,532,812 | 312,280 |
+
+**⊘ Seam moves even/odd hard (0.351 -> 0.866) but it is a SWAP, not a fix.** It OVERSHOOTS the control's
+0.624, and it does so by WRECKING the comb: inspecting Dl, the flat comb's separate 2nd (484) and 3rd (668)
+peaks have MERGED into one broad bump at 660 (Dl rises monotonically 404->660 then falls -- no distinct peak
+near 484 survives). The 2nd "peak" at 660 is +24% off the control's 532 and the spacing goes irregular
+(464/272 vs the control's regular ~300). CRAMP=seam is PURELY an amplitude envelope (the code sets _That0,
+the initial AMPLITUDE, not the phase), so exactly as cc54 predicted: an amplitude lever cannot move a parity
+cleanly -- it only moves the even/odd NUMBER by reshaping/merging the comb. Daryl's position caution fired
+in full: even/odd lands (overshoots) but position/spacing is destroyed -- a swap.
+
+### ⇒ Reading (the two mechanisms separated, as designed)
+The parity asymmetry is **timing** (Measurement 1: arrival phases differ, robustly, growing with q). The
+**amplitude** IC (Measurement 2: seam) does NOT fix it -- it swaps heights for spacing. So the residual is
+in the mode **phase**, and the lever just tested (amplitude seam) is the wrong one. The untested lever is a
+PHASE reset at the seam (vs the amplitude reset seam applies) -- i.e. giving each mode the correct STARTING
+PHASE for its prior sub-horizon history, not a k-dependent amplitude. That is the narrowed target; whether
+CR even admits a well-defined per-mode seam phase (it lacks the radiation-era driving that sets LCDM's) is
+the open physics question. Position stays 0.6499 (first peak) throughout; the projection-map layer (owed,
+r-earlier) still carries it to the sky separately and is untouched here.
+
+Every prior term stands eliminated (R, Phi, drag). This locates the even-peak suppression, by direct
+measurement, in the ARRIVAL PHASE -- a timing/IC-phase effect, not amplitude, transfer, or projection.
