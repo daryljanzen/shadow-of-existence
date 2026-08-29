@@ -2818,3 +2818,57 @@ scattering on CR's derived S^3 -- stated as a hard prediction, not a percentage 
 (1) accept the finding as the arc's headline, and/or (2) decide whether the layer diffeomorphism carries a
 non-metric projection distance (the plasma-warping build) that could restore D_C. Nothing here is cc54's to
 decide; the measurement is done and it is unambiguous.**
+
+---
+
+## r3557(branch) -- RETRACTION of r3553-r3556: the projection is settled by prop:flat, NOT a D_C/D_M fork. CR's distance slicing IS flat; the hyperspherical kernel is the one CR "does not have"
+
+**I got r3556 wrong, and the corpus already says exactly why.** I read the mode-map receipt
+(l = sqrt(L(L+2)) D_C/r_0) but NOT the Proposition that governs it. CR_cosmology.tex sec:largescale:
+
+- **Proposition [prop:flat]:** in the fundamental-observer frame the constant-tau slice has induced
+  3-metric dr^2 + r^2 dOmega^2 -- Riemann vanishes identically. **CR's distance slicing is exactly flat R^3**
+  (the E=1 marginally-bound SdS congruence = flat-LCDM, k = E^2-1 = 0). Receipt verify_geometry.py.
+- **The decoupling:** the DISTANCE slicing is the flat constant-tau one (Omega_k=0, no curvature term in
+  redshift-distance); the closed S^3 is the ORTHOGONAL slicing, constant tau~=tau+chi. "A literal
+  closed-Friedmann reading would put Omega_k = -Omega_L ~ -0.685 into the distance relation and be excluded;
+  CR avoids that not by tuning but because its distance slicing is the flat one."
+- **Therefore, verbatim:** "the comoving angular-diameter distance is **D_M = D_C** ... the transfer is the
+  discrete closed-S^3 spectrum projected through the FLAT spherical Bessel j_l(k_L D_C), **not the
+  hyperspherical transfer of a literal closed universe: that transfer carries the closed distance relation,
+  which CR does not have**, and would (wrongly, here) deliver the lowest mode to the quadrupole and no deficit."
+  Receipt verify_closedS3_nonsync.py, lines 20-21: r0 = "present S^3 areal/curvature radius (sets the SOURCE
+  quantization)"; D_C = "flat comoving (= angular-diameter) distance (the PROJECTION)".
+
+**So the r3555 "fork" was a false one.** It is not D_C-or-D_M by preference, and NOT by epoch: it is settled by
+prop:flat. In CR the S^3 radius r_0 enters ONLY as the source mode-quantization scale k_L = sqrt(L(L+2))/r_0;
+it is NEVER a distance denominator in an angular map, because the distance slicing is flat and carries no
+sin(chi). The factor 7 in r3553-r3556 was the artifact of projecting through the closed DISTANCE relation
+(hyperspherical Bessel) -- exactly the kernel the corpus names as "the closed distance relation which CR does
+not have." **The hyperspherical kernel I validated at r3553 is the WRONG kernel for CR.** RETRACTED: the
+"D_M forced / factor-7 magnification / last scattering near the antipode" reading of r3556.
+
+**The two 58-questions, answered on the record (checked, not reasoned-from):**
+1. *Which epoch is r_0 = 5064?* The PRESENT epoch. Paper: "present S^3 areal radius, the Nariai amplitude
+   2^(1/3)/sqrt(Lambda) at present epoch u = arcsinh sqrt(Om_L/Om_m) ~ 1.18." Receipt comment: "present S^3
+   areal/curvature radius." My recompute: u is a today-quantity, r_0 = 5066 Mpc. NOT the throat.
+   The throat (near-horizon dS_2 x S^2) is 1/sqrt(Lambda) = 3105 Mpc. The S^3 areal radius grows only
+   **1.63x** throat->today -- it is tied to Lambda (the de Sitter radius), NOT to the cosmological scale
+   factor a(t) (~1100x since LSS). So even the epoch-mixup 58 hypothesised does not bring chi below pi/2:
+   chi(today) = 2.74, chi(throat) = 4.47, both past the pole. The rescue mechanism does not hold on its own
+   terms -- but it is moot, because r_0 is not a distance in CR's projection at all.
+2. *Daryl's structural picture -- minimal S^3 through the branch point to the seam, then cosmological
+   expansion?* Yes, the geometry has a throat (minimal S^3 at 1/sqrt(Lambda), the dS_2 x S^2 near-horizon
+   where the angular no-hair / throat tower lives) and a present S^3 (r_0). The corpus keeps them distinct and
+   explicitly warns (line 1223) that the throat-tower index is NOT the observable CMB multipole. But the
+   projection to the sky does not use either radius as a distance: prop:flat makes the photon path flat.
+
+**⇒ STANDING RESULT (reverts to pre-r3553, with the flat projection now JUSTIFIED rather than assumed).**
+CR's determined GSRC=1 composition OVER-DRIVES the sky: position +7% (l1/l_A = 0.7825 vs 0.7312), amplitude
++65% (P1/P2 = 3.665 vs 2.217), positional parity 4x -- with the FLAT projection j_l(k_L D_C) now standing on
+a Proposition (prop:flat), not on an unexamined identification. The disagreement is a percentage-level
+over-drive, NOT a factor. The seven eliminated source terms + the diagnosed loss of cross-scale phase
+coherence are the result; the projection is not an eighth lever -- it is fixed by CR's flat distance slicing.
+The plasma-warping build is not needed to rescue D_C: D_C is already justified. **This closes the projection
+question. cc54 owns the r3553-r3556 error: I applied the closed-Friedmann default 58 warned against, having
+read the map but not the Proposition that fixes it.**
