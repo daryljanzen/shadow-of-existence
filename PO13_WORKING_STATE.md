@@ -2343,3 +2343,18 @@ So a bare "r354x" is ambiguous between the two lanes. **History is deliberately 
 rename on a live branch to fix labels is a worse trade than the ambiguity. When citing these numbers, name
 the lane: "r3544 (main, 59)" vs "r3544 (branch, PO-13)". The numbers stop being unique; the record stays
 honest and nothing is rewritten.
+
+---
+
+## ⚠ SILENT-FAILURE NOTE: a run died mid-projection while the shell reported success
+
+A `timeout N python ... > log 2>&1; echo rc=$?; grep ...` compound command reported **exit code 0 even
+though python was killed by the timeout mid-projection** — because the trailing `grep` succeeded and the
+compound command's exit status is the last command's. Result: the SAVE file was never written, but the
+background wrapper announced "completed (exit code 0)". Caught only because the expected `.npz` was absent.
+
+This is the **same failure shape as the currency-gate blindness**: a check that reports PASS because it
+never reached the thing it was checking. The fix that would have surfaced it: gate on the artifact (does
+the `.npz` exist / does the log contain the "saved … multipoles" line), not on the shell's exit code, and
+never let a trailing command mask the one that matters. Recorded so the pattern is on the ledger, not just
+worked around this once. (The heavy NK=1100 LMAXL=2000 continuum run was over the timeout; reran lighter.)
