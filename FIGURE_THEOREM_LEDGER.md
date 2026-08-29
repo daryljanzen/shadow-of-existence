@@ -88,10 +88,9 @@ exemption does not cover. The banner is struck below.***
 | **⊢63** P4 and P6 have no geometric locus, **and that is load-bearing** | **SUBSTANCE OWED** | absent. It is the negative that says the figure programme has a boundary, which makes it worth more than most positives |
 | **⊢50 · ⊢57** the excircles; `3α` is not a third scale | ***LANDED r3562*** — *placed in p0 with its `\ldg` marker.* | absent. Directly relevant to p0 `sec:ledger`'s one-scale claim, which currently argues the point without this |
 | **⊢51 · ⊢54** `τ` is a light-path; `σ` is a relabelling | **SUBSTANCE OWED (τ) / LANDED (σ)** | `σ`-as-relabelling is throughout P2/P3/P5/P14/P16; **`τ` as a light-path is in no paper** |
-| **⊢56** the horizon is real at its ends and fictional in its middle | **SUBSTANCE OWED** | absent, and it touches P1's own subject |
 | **⊢64–⊢70 · R5 the waves** | **OPEN** | the three routes were assessed r1760–r1762 and the gap is precise: **EM content as geometry ✔** (P8 carries RN–dS, `ρ=q²/8πr⁴`, the bend of the cut), **gravitational radiation as geometry ✔** (P11), **EM *radiation* as a bend ✘**. Still ✘ on today's corpus. Not citable |
 | **⊢69 · ⊢70** no spin-2 on the figure; "not excluded" ≠ "open" | **LANDED (in substance)** | P11 carries the spin-2 count; P1 and P14 carry the not-excluded discipline. The figure-side derivations are not cited |
-| **⊢37** face 3, imaginary `r`, **suspect by its author** | **BOUNCED — and still bounced** | the corpus's imaginaries are all *elsewhere*: `dη` purely imaginary on the lift (P7), `2πiα/3` along the clock (P3), `x₀` imaginary inside the waist (p0). **None of them is imaginary `r`.** c40's caution stands unrefuted after ~2400 revisions — record it as a settled bounce rather than an open question |
+| **⚠37** face 3, imaginary `r`, **suspect by its author** *(the body carries this as a `⚠` warning, not a proved `⊢` — sigil corrected r3565)* | **BOUNCED — and still bounced** | the corpus's imaginaries are all *elsewhere*: `dη` purely imaginary on the lift (P7), `2πiα/3` along the clock (P3), `x₀` imaginary inside the waist (p0). **None of them is imaginary `r`.** c40's caution stands unrefuted after ~2400 revisions — record it as a settled bounce rather than an open question |
 | **R1** hexagon → `A₂`/su(3) | **OPEN, re-scored** | the wall stands (`su(3) ⊄ so(5,1)`); what the object reaches is p0 way 6's **gauged/global split**, not the colour group. *"Nothing here reaches it" is false as written and was corrected r1758* |
 | **R2 · R4** quark charges; the su(3) weight diagram | **DEAD, with computed cause** | recorded, never to be cited |
 | **R3 → R3a/R3b · R3c** which `2+1` | **OPEN, and wider than when written** | a kill was written here and **retracted the same session as the cyanide face**. There are at least two `2+1`s — the **designation** one (`σ`'s own) and the **sign** one — they cut across each other, and they are different *kinds*: one a property of the geometry, one of the vantage. The row must first say **which** |
@@ -119,6 +118,26 @@ occur in P7 — at the rate-switch and at the Hubble–Eddington radius, neither
 an escaped underscore returns a clean zero; a word list is a claim about the searcher's vocabulary.*
 ***Every `ABSENT` in a landing table is now searched in the corpus's term, then homonym-checked at the
 site, before it is written.***
+
+### ⛔⛔⛔ ONE ROW OF THIS TABLE WAS FABRICATED, AND IT IS STRUCK — r3565
+
+*The `r3524` gather listed* ***`⊢56` — "the horizon is real at its ends and fictional in its middle",
+`SUBSTANCE OWED`, "absent, and it touches P1's own subject"***. ⛔ ***There is no `⊢56`.*** *The token
+appeared in exactly one place in the corpus — that row — and the pre-gather ledger at `95559d5` carries
+no `⊢56`, no "fictional" and no "real at its ends". The worked second-run block has `⊢49`, `⊢54`, `⊢55`,
+`⊢57` and `⊢58` **and no `⊢56`**.*
+
+⇒ ***A register was invented, given a plausible claim, routed to `P1`, and carried in the owed count for
+eleven revisions.*** *It was caught only because landing it meant reading its worked statement first, and
+there was none. **No gate would have found this** — the gates check that counts agree and that markers
+resolve, not that a claim exists. Had it landed, the `\ldg` marker would have lent a fabricated sentence
+the provenance of a bake that never made it.*
+
+⌗ ***THE STANDING RULE:*** *a landing-table row is a **quotation**, not a summary; a register's worked
+statement is read in the ledger body before it is landed, and a row with nothing behind it is struck.*
+⌗ *An audit of all sixteen tables against their bodies found this the **only** fabricated row — `⊢37` was
+flagged and is real (the body carries it as `⚠ 37`, a warning rather than a turnstile; sigil corrected
+above), and `Q6r` is in the quadric body three times.*
 
 ### ⛔ WHAT THIS GATHER DID **NOT** FIND
 
