@@ -2448,3 +2448,45 @@ Boltzmann build buys is the tail and tighter significance, not the existence of 
 
 Supersedes r3547's "instrument not fit / test deferred" for q=1..3: the instrument IS fit there, and the
 result is a calibrated disagreement. r3547's tail-failure stands for q>=4.
+
+---
+
+## r3549 (branch) — THE POSITIONAL PARITY IS COMPOSITION-DEPENDENT: it is GSRC=1's, not CR's
+
+**Daryl's check before the PR (and before any Boltzmann build):** is CR's q=1..3 positional parity (0.111)
+a property of CR or of the one composition (STACKPERT=1 GSRC=1 HIER) it was measured on? The arc showed
+different compositions move the peaks substantially. Measure ALT q1..3 across the compositions on disk.
+
+| composition | q1..3 ALT | vs sky 0.028 |
+|---|---|---|
+| SKY (Planck) | 0.028±0.002 | — |
+| CONTROL (LCDM) | 0.029 | matches (0.6σ) |
+| GSRC=1 flat (main, r3548) | 0.111 | 4× (too MUCH) |
+| GSRC=1 flat, LMAXL1300 | 0.103 | 4× |
+| GSRC=1 drag-swap (DRAGLEAF=1) | 0.104 | 4× |
+| GSRC=1 seam (CRAMP=seam; comb wrecked) | 0.116 | 4× |
+| **GSRC=0** (STACKPERT=1 GSRC=0) | **0.007** | 0.25× (too LITTLE) |
+
+**⊘ IT SWINGS — with the SOURCE, not the IC.** The positional parity ALT runs 0.007 (GSRC=0, ~regular comb)
+to ~0.11 (GSRC=1, 4× sky): a 16× swing controlled by the GSRC source constraint (whether radiation
+gravitates at full strength in Phi's source). WITHIN GSRC=1 it is stable (0.103-0.116 across flat, seam,
+drag, resolution) -- the IC and drag barely move it. So the 0.111 is a property of the **GSRC=1
+composition**, not of "CR" generically.
+
+**⊘ NEITHER determined CR composition reproduces the sky.** GSRC=0 undershoots (0.007, too little parity,
+nearly a uniform comb); GSRC=1 overshoots (0.111, 4× too much). The sky's 0.028 sits BETWEEN them. GSRC is a
+binary constraint (0 or 1), not a tunable knob, so no determined CR composition lands the sky's positional
+parity -- one is too regular, the other too alternating.
+
+**⇒ THE CLAIM, RESTATED WITH SCOPE.** NOT "CR disagrees with Planck." Rather: **the framework-selected
+composition (GSRC=1, the full-EFE constraint 58 argued is the correct non-tunable source) disagrees with the
+sky's q=1..3 positional parity at 4×, over the range where the instrument reproduces the sky (control 0.6σ).
+The alternative source (GSRC=0, the under-counting one already retracted for the position) gives 0.007, too
+little. The positional parity is a probe of the SOURCE composition, and both determined choices miss the sky
+in opposite directions.** After today, this is measured, not assumed: the disagreement is the composition's,
+and its size and even its SIGN depend on GSRC.
+
+Supersedes the unscoped reading of r3548: r3548's 4× disagreement is real but belongs to GSRC=1
+specifically; it is not a composition-independent property of CR. The uniform-comb refutation ALSO scopes --
+GSRC=1 over-produces parity, but GSRC=0 is nearly a uniform comb (ALT 0.007), so "CR is/ isn't a uniform
+comb" is itself GSRC-dependent and cannot be stated of CR without naming the source.
