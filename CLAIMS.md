@@ -403,3 +403,8 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > r3583.** *`⊢59` (P2's cycloid circle is a Thales circle), `C6` (the seam continuation is Möbius), and the
 > `⊢14–⊢18` Thales-locus pair.* ⌗ *`P9` released. **`check_glyph_coverage` is 60's** — the last genuine
 > corpus failure, routed to it by Daryl.*
+
+> ⌗ **59 CLAIMS `modern_parallax.tex` (P4), `SdS-slicing-curve_v2.tex` (P3) AND `shadow_of_existence.tex`
+> (P6) FOR THE ELEVENTH STAGE-3 LANDING, r3587.** *`⊢63` (P4 and P6 have no geometric locus, and that is
+> load-bearing), `⊢14–⊢18` (the Thales circle is the dial), and the conformal-invariance bound.*
+> ⌗ *`P2`, `P5`, `P8` released.*
