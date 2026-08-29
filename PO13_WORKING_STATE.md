@@ -2490,3 +2490,43 @@ Supersedes the unscoped reading of r3548: r3548's 4× disagreement is real but b
 specifically; it is not a composition-independent property of CR. The uniform-comb refutation ALSO scopes --
 GSRC=1 over-produces parity, but GSRC=0 is nearly a uniform comb (ALT 0.007), so "CR is/ isn't a uniform
 comb" is itself GSRC-dependent and cannot be stated of CR without naming the source.
+
+---
+
+## r3550 (branch) — THE FITTING RUN: NO source factor lands position, amplitude and parity together
+
+**Daryl's ship (the fitting question the binary flag never asked):** GSRC=0 and GSRC=1 bracket the sky on
+position, amplitude AND parity from opposite sides, on a term with no dial. Scan the source factor
+continuously (GSRCA=alpha, Gf = 1 + alpha*(rho_tot/rho_free - 1); alpha=0->GSRC=0, alpha=1->GSRC=1) and
+find whether ANY value fits all three at once. Validated: GSRCA=0 reproduces GSRC=0 exactly; GSRCA=0.5 on
+the control is byte-identical to the plain control (no-op gate; also provable by construction -- the flag is
+read only under `not RAD_IN_RATE`). Position mapped by r_stack/r_leaf=1.2857 (uniform stretch; heights and
+parity are map-invariant). STACKPERT=1 HIER KCONT NK=620 LMAXL=1300.
+
+| alpha | l1/lA | P1/P2 | P1/P3 | parity |
+|---|---|---|---|---|
+| 0.00 (GSRC=0) | 0.7292 | 0.888 | 0.693 | 0.007 |
+| 0.25 | 0.7485 | 1.382 | 1.001 | 0.031 |
+| 0.50 | 0.7730 | 2.071 | 1.410 | 0.053 |
+| 0.75 | 0.7998 | 2.972 | 1.925 | 0.075 |
+| 1.00 (GSRC=1) | 0.8272 | 4.094 | 2.551 | 0.103 |
+| **SKY** | **0.7312** | **2.217** | **2.277** | **0.028** |
+
+**⊘ ANSWER: NO. Each observable crosses the sky at a DIFFERENT alpha:** position **0.03**, parity **0.22**,
+P1/P2 **0.54**, P1/P3 **0.89**. Four observables, four well-separated crossings across the whole range --
+they do not coincide. Worse than position-vs-amplitude: the two amplitude ratios themselves disagree
+(P1/P2 wants 0.54, P1/P3 wants 0.89), so the source factor cannot land the amplitude SHAPE either.
+
+**⊘ THE SOURCE NORMALISATION IS NOT THE FREE DIRECTION -- measured, not assumed.** Daryl's "right in form,
+wrong in magnitude" reading is REFUTED by this scan: a pure magnitude error would put all crossings at one
+alpha; they are spread 0.03->0.89. Position is already near-sky at alpha~0 and every increase in the source
+over-drives the amplitude faster than it moves anything else into place. There is no dial setting of the
+source constraint that fits the sky. So the framework's disagreement is NOT a mis-normalised source that a
+between-value would fix -- the source enters position, amplitude and parity at structurally different rates,
+and no single value reconciles them.
+
+**⇒ What this closes.** The binary GSRC bracketing (r3549) is not a "truth is in between" situation: there is
+no in-between value that fits (r3550). The over-drive is structural, not a normalisation size. The free
+direction that would fit the sky -- if one exists in CR -- is NOT the source-constraint magnitude; it is
+something else (the rate split itself, the projection, or a term not yet identified). This is the fitting
+question answered by measurement: the source factor is exhausted as a fitting knob.
