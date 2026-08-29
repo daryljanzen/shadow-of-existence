@@ -289,3 +289,7 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > ⌗ **59 CLAIMS `corpus/matter_sector_paper.tex` (P14) FOR THE FOURTH STAGE-3 LANDING, r3561.** *The owed
 > registers routed here across four bakes.* ⌗ *P7's matrix and the HTML released — the ledger block prints
 > and is gated as a fourth grain.*
+
+> ⌗ **59 CLAIMS `corpus/geometric_core_paper.tex` (p0) FOR THE FIFTH STAGE-3 LANDING, r3562.** ⌗ *`P14`
+> released — its one owed register landed r3561, three others reclassified as connections for the ontology
+> map.*
