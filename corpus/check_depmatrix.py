@@ -31,6 +31,9 @@ HTML = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'assets', 'dependency_matrix.h
 GEN = os.path.join(ROOT, 'scripts', 'depmatrix.py')
 GENHTML = os.path.join(ROOT, 'scripts', 'gen_matrix_html_tbody.py')
 
+ORDER = ['P1','P2','P3','P4','P5','P6','P7','P8','P9','P10','P11','P12',
+         'P13','P14','P15','P16','p0']
+
 ROW = re.compile(r'^(?:\\textbf\{)?([Pp]\d+|p0)(?: \\; [^}&]*)?\}?\s*&(.*?)\\\\\s*$', re.M)
 
 
@@ -48,11 +51,17 @@ def recomputed():
 
 def in_paper():
     t = open(PAPER, encoding='utf-8', errors='replace').read()
-    i = t.find('tab:dependency-matrix')
+    # The LABEL, not the first mention: \ref{tab:dependency-matrix} occurs ~15k
+    # characters earlier in the prose, and a backward window from THAT lands
+    # nowhere near the table.  Found r3522 -- the gate had been reading an empty
+    # slice and reporting "every row matches" over zero comparisons.
+    i = t.find('\\label{tab:dependency-matrix}')
     if i < 0:
         return None
-    seg = t[max(0, i - 8000):i]
-    return {m.group(1): norm(m.group(2)) for m in ROW.finditer(seg)}
+    j = t.rfind('\\begin{tabular}', 0, i)
+    if j < 0:
+        return None
+    return {m.group(1): norm(m.group(2)) for m in ROW.finditer(t[j:i])}
 
 
 def main():
@@ -71,6 +80,17 @@ def main():
     bad = [k for k in shared if new[k] != old[k]]
     print(f'  {len(new)} rows recomputed, {len(old)} rows in the table, {len(shared)} comparable.')
     print()
+    # A check that compares nothing must not return clean.  Before r3522 an empty
+    # `shared` made `bad` empty and the gate printed "every row matches" -- a pass
+    # that could not have been anything else.  Every recomputed row must be found.
+    missing = [k for k in new if k not in old]
+    if missing:
+        print(f'  [FAIL] {len(missing)} of {len(new)} recomputed rows were not found in the table:')
+        print(f'         {", ".join(missing)}')
+        print('         The gate cannot compare what it cannot parse, and a check that')
+        print('         compares nothing is not a check.  Repair the reader before trusting')
+        print('         any verdict from this gate.')
+        return 1
     if bad:
         print(f'  STALE ROWS: {len(bad)} of {len(shared)}')
         for k in bad[:20]:
@@ -100,6 +120,34 @@ def main():
                 print('         which is the correction-reaches-one-grain failure exactly.')
                 return 1
             print('  The HTML companion matches too.')
+
+    # The figure is the THIRD place this claim is made, and the table's own
+    # maintenance note already says to harmonise it.  Found stale in seven edge
+    # labels at r3522 while the table was being refreshed -- so it is gated now
+    # rather than left to a note.  Convention: dep/feed are `->`, so an edge
+    # X --> Y is labelled M[Y][X], the number of times Y cites X.
+    t = open(PAPER, encoding='utf-8', errors='replace').read()
+    M = {a: dict(zip(ORDER, v.split('&'))) for a, v in new.items()}
+    fig = []
+    for m in re.finditer(r'\\draw\[(?:dep|feed)\][^;]*?\((P\d+)\)[^;]*?'
+                         r'node\[wt[^\]]*\]\{(\d+)\}[^;]*?\((P\d+)\)|'
+                         r'\\draw\[(?:dep|feed)\][^;]*?\((P\d+)\)\s*--\s*\((P\d+)\)\s*'
+                         r'node\[wt[^\]]*\]\{(\d+)\}', t):
+        g = m.groups()
+        x, lab, y = (g[0], g[1], g[2]) if g[0] else (g[3], g[5], g[4])
+        want = M.get(y, {}).get(x)
+        if want is not None and want != lab:
+            fig.append((x, y, lab, want))
+    if fig:
+        print()
+        print(f'  [FAIL] the dependency FIGURE disagrees with the matrix in '
+              f'{len(fig)} edge label(s):')
+        for x, y, lab, want in fig:
+            print(f'         {x} --> {y}: figure says {lab}, matrix says {want}')
+        print('         A reader checks other things against a figure, not a figure')
+        print('         against a script.  Harmonise fig:dependency-structure.')
+        return 1
+    print('  The dependency figure matches too.')
     print()
     return 0
 

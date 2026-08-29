@@ -1371,14 +1371,14 @@ The necessity is not merely conceptual but \emph{measured}: the physical foliati
 
   % --- inter-paper dependency edges (all of them) ---
   \draw[dep] (P1) -- (P2) node[wt]{16};
-  \draw[dep] (P1) to[bend right=12] (P3) node[wt,pos=0.6]{2};
+  \draw[dep] (P1) to[bend right=12] (P3) node[wt,pos=0.6]{3};
   \draw[dep] (P1) -- (P5) node[wt,pos=0.4]{3};
-  \draw[dep] (P1) to[bend left=18] (P6) node[wt,pos=0.7]{6};
-  \draw[dep] (P2) -- (P3) node[wt]{6};
-  \draw[dep] (P2) -- (P5) node[wt,pos=0.4]{9};
-  \draw[dep] (P3) -- (P5) node[wt]{37};
+  \draw[dep] (P1) to[bend left=18] (P6) node[wt,pos=0.7]{5};
+  \draw[dep] (P2) -- (P3) node[wt]{7};
+  \draw[dep] (P2) -- (P5) node[wt,pos=0.4]{10};
+  \draw[dep] (P3) -- (P5) node[wt]{41};
   \draw[dep] (P4) to[bend right=14] (P5) node[wt,pos=0.12]{8};
-  \draw[dep] (P4) -- (P6) node[wt,pos=0.6]{4};
+  \draw[dep] (P4) -- (P6) node[wt,pos=0.6]{5};
   \draw[dep] (P5) -- (P6) node[wt]{3};
 
   % --- all six feed the framework P7 (the compounding) ---
@@ -1386,11 +1386,11 @@ The necessity is not merely conceptual but \emph{measured}: the physical foliati
   \draw[feed] (P2) to[bend right=52] node[wt]{15} (P7);
   \draw[feed] (P3) to[bend right=32] node[wt]{25} (P7);
   \draw[feed] (P5) to[bend right=8]  node[wt]{23} (P7);
-  \draw[feed] (P6) -- node[wt]{18} (P7);
+  \draw[feed] (P6) -- node[wt]{19} (P7);
   \draw[feed] (P4) to[bend left=62]  node[wt]{18} (P7);
   \node[font=\tiny,text=gray!55!black,align=center] at (3.7,-3.7) {all six\\feed P7};
 \end{tikzpicture}
-\caption{The foundational structure the central theorem rests on (edge labels are citation multiplicities, a proxy for load-bearing weight). The construction stands on \emph{two co-equal foundational forcings, neither depending on the other}: the wedge P1---a \emph{structural} forcing (the event horizon as a metric singularity, local causal structure, proven from general relativity alone)---and modern parallax P4---an \emph{empirical} forcing (the redshift-isotropy floor, precision cosmology and its structural consequences). Their cross-references are \emph{complementary, not dependent}: each cites the other precisely to record that its own result ``stands on causal structure alone and needs none of'' the other's evidence~\cite{JanzenBHcausality,JanzenModernParallax}, P4 the empirical counterpart of P1's conceptual result. From the structural root the geometry chain descends (P1$\to$P2$\to$P3$\to$P5), but the structure is a \emph{dense weave, not a chain}: most papers feed several downstream directly (P2, for instance, into P3, P5, \emph{and} P7), and \emph{all six} feed the framework P7 (F1--F6 of Theorem~\ref{thm:augmentation-p7})---the compounding that makes the corpus a convergence rather than a line. Every dependency edge is drawn; blue arrows are inter-paper dependencies, grey the six feeds into P7, the dashed link the P1--P4 complementarity. P7 leans heaviest on the structural forcing (${\times}35$, reaching P7 both through the chain and directly via the horizon's null structure the null--boundary correspondence uses), with the empirical forcing at ${\times}18$. The framework is the convergence of two independent forcings, structural and empirical, of one cosmic foliation. [Full direct feed into P7: P1~${\times}35$, P3~${\times}25$, P5~${\times}23$, P4~${\times}18$, P6~${\times}18$, P2~${\times}15$.]}
+\caption{The foundational structure the central theorem rests on (edge labels are citation multiplicities, a proxy for load-bearing weight). The construction stands on \emph{two co-equal foundational forcings, neither depending on the other}: the wedge P1---a \emph{structural} forcing (the event horizon as a metric singularity, local causal structure, proven from general relativity alone)---and modern parallax P4---an \emph{empirical} forcing (the redshift-isotropy floor, precision cosmology and its structural consequences). Their cross-references are \emph{complementary, not dependent}: each cites the other precisely to record that its own result ``stands on causal structure alone and needs none of'' the other's evidence~\cite{JanzenBHcausality,JanzenModernParallax}, P4 the empirical counterpart of P1's conceptual result. From the structural root the geometry chain descends (P1$\to$P2$\to$P3$\to$P5), but the structure is a \emph{dense weave, not a chain}: most papers feed several downstream directly (P2, for instance, into P3, P5, \emph{and} P7), and \emph{all six} feed the framework P7 (F1--F6 of Theorem~\ref{thm:augmentation-p7})---the compounding that makes the corpus a convergence rather than a line. Every dependency edge is drawn; blue arrows are inter-paper dependencies, grey the six feeds into P7, the dashed link the P1--P4 complementarity. P7 leans heaviest on the structural forcing (${\times}35$, reaching P7 both through the chain and directly via the horizon's null structure the null--boundary correspondence uses), with the empirical forcing at ${\times}18$. The framework is the convergence of two independent forcings, structural and empirical, of one cosmic foliation. [Full direct feed into P7: P1~${\times}35$, P3~${\times}25$, P5~${\times}23$, P4~${\times}18$, P6~${\times}19$, P2~${\times}15$.]}
 \label{fig:dependency-structure}
 \end{figure}
 
@@ -1410,16 +1410,16 @@ P3 \; slicing & 3 & 7 & -- & . & 15 & 2 & 20 & 3 & 4 & . & . & 4 & 11 & 24 & 2 &
 P4 \; mod.\ parallax & $\lozenge$4 & . & . & -- & . & 5 & 8 & 3 & 3 & 1 & . & . & . & . & . & 2 & 1\\
 P5 \; groupoid & 3 & 10 & 41 & 8 & -- & 3 & 20 & . & 5 & . & 1 & 6 & 7 & 5 & . & 3 & 4\\
 P6 \; shadow & 5 & 4 & 6 & 5 & 3 & -- & 11 & 1 & 1 & 3 & . & 1 & 1 & 4 & 3 & 3 & 3\\
-\textbf{P7 \; framework} & \textbf{35} & \textbf{15} & \textbf{25} & \textbf{18} & \textbf{23} & \textbf{18} & -- & \textbf{15} & \textbf{11} & \textbf{19} & \textbf{8} & \textbf{12} & \textbf{17} & \textbf{22} & \textbf{31} & \textbf{12} & \textbf{13}\\
-P8 \; operator & 2 & 6 & 8 & 1 & 2 & 4 & 15 & -- & 6 & 3 & 2 & 2 & . & 2 & 3 & 4 & 4\\
-P9 \; range & . & 1 & 3 & . & 2 & 1 & 11 & 9 & -- & . & 6 & 3 & 3 & 1 & 1 & 3 & 3\\
+\textbf{P7 \; framework} & \textbf{35} & \textbf{15} & \textbf{25} & \textbf{18} & \textbf{23} & \textbf{19} & -- & \textbf{15} & \textbf{11} & \textbf{20} & \textbf{10} & \textbf{13} & \textbf{21} & \textbf{27} & \textbf{31} & \textbf{12} & \textbf{14}\\
+P8 \; operator & 2 & 7 & 8 & 1 & 2 & 4 & 16 & -- & 6 & 3 & 2 & 2 & . & 2 & 3 & 4 & 4\\
+P9 \; range & . & 2 & 3 & . & 2 & 1 & 11 & 9 & -- & . & 6 & 3 & 3 & 1 & 2 & 3 & 3\\
 P10 \; canon.\ time & 7 & 1 & 3 & 4 & 1 & 3 & 19 & 4 & 2 & -- & 2 & 2 & 1 & . & 1 & 2 & 8\\
-P11 \; dynamics & 3 & 1 & 5 & 1 & 3 & 1 & 10 & 4 & 12 & 6 & -- & 4 & 4 & 2 & 2 & 2 & 3\\
+P11 \; dynamics & 3 & 1 & 5 & 1 & 3 & 1 & 11 & 4 & 12 & 6 & -- & 4 & 4 & 2 & 2 & 2 & 3\\
 P12 \; algebroid & 3 & . & 10 & 3 & 7 & 2 & 4 & 6 & 11 & 5 & 4 & -- & 2 & 4 & . & 2 & 7\\
-P13 \; boundary & 1 & 1 & 8 & 1 & 5 & 2 & 13 & 5 & 5 & 6 & 2 & 14 & -- & 29 & 3 & 3 & 8\\
-P14 \; matter & . & 3 & 16 & . & 4 & 3 & 10 & 3 & 1 & 1 & 2 & 8 & 21 & -- & 1 & 2 & 9\\
-P15 \; cosmology & 4 & 2 & 8 & 8 & 3 & 4 & 17 & 11 & 4 & 4 & 3 & 1 & . & 1 & -- & 16 & 4\\
-P16 \; cosmogenesis & 2 & 3 & 2 & 1 & 1 & 3 & 11 & 7 & 2 & 3 & 1 & 1 & 4 & 3 & 11 & -- & 2\\
+P13 \; boundary & 1 & 1 & 8 & 1 & 5 & 2 & 13 & 5 & 5 & 6 & 2 & 14 & -- & 30 & 3 & 3 & 9\\
+P14 \; matter & . & 3 & 16 & . & 4 & 3 & 10 & 3 & 1 & 2 & 3 & 8 & 23 & -- & 1 & 2 & 9\\
+P15 \; cosmology & 4 & 3 & 8 & 8 & 3 & 4 & 18 & 12 & 4 & 4 & 3 & 1 & . & 3 & -- & 17 & 4\\
+P16 \; cosmogenesis & 2 & 3 & 3 & 1 & 1 & 3 & 12 & 7 & 4 & 3 & 1 & 1 & 4 & 3 & 12 & -- & 2\\
 \textbf{p0 \; core} & \textbf{2} & \textbf{2} & \textbf{24} & \textbf{7} & \textbf{8} & \textbf{4} & \textbf{16} & \textbf{6} & \textbf{5} & \textbf{6} & \textbf{3} & \textbf{12} & \textbf{20} & \textbf{14} & \textbf{10} & \textbf{3} & --\\
 \end{tabular}%
 }
