@@ -107,6 +107,33 @@ r3164–r3176 were already thin when `622` recorded its list as "complete"; `r34
 > — six — was a count taken on a shallow clone. **The real number is four**, and all four are now
 > repaired.* ⚠ ***A check that reads history is a check on the clone as much as on the corpus, and
 > the two are the same exit code.***
+>
+> ### ⛭⛭ AND IF THE FULL GATE SWEEP BECOMES THE STANDING CHECK, ITS SETTINGS ARE PART OF IT — r3550
+>
+> *59 proposes running all **93** `corpus/check_*.py` before and after each stage-3 session, after
+> finding it had been running **three**. That is the right check and it costs about a minute.* ⇒
+> ***But the sweep is itself an instrument, and two runs of it can disagree by more than the corpus
+> does.*** *Measured here, each falsifiable in seconds:*
+>
+> | if the sweep… | then | measured |
+> | --- | --- | --- |
+> | does not set `NODE` | `check_claims` **fails** — `rc=2`, *"NODE is not one of 54, 56, 57, cc54"* | with `NODE=ci`, `rc=0` |
+> | uses a per-gate timeout under ~2 min | `check_cross_row_dupes` **fails** with `rc=124` | it needs **>100 s**; at 420 s it passes |
+> | counts `check_receipts_run` | it fails whenever the tree digest has moved | a ~9-minute re-run, not a defect |
+>
+> ⇒ ***So "n gates failing" is not a number until the sweep is specified*** *— and three of the
+> ninety-three answer to the runner rather than to the tree.* **The specification:**
+>
+> ```
+> NODE=ci ; timeout 420 per gate ; the list is `ls corpus/check_*.py` — 93, and say so
+> ```
+>
+> ⚠ ***AND TWO OF THE NINETY-THREE ARE NOT CORPUS FACTS AT ALL.*** *`check_compile` needs `pdflatex`
+> and without it is **UNRUN**, which is a different thing from green and has to be reported as the
+> different thing; `check_receipts_run` reports the age of a **cache**.* ⇒ *A sweep that counts those
+> two as failures is counting its own container.* ⌗ **This is the same rule as the two lines above it,
+> for the third time in one session: an environment failure and a corpus failure are indistinguishable
+> from the exit code.**
 
 **⛔ NO FIELD IS TAKEN UP UNTIL THE ONE BEFORE IT MEETS THE BAR.** *The failure this plan exists to stop
 is breadth bought with depth.*
