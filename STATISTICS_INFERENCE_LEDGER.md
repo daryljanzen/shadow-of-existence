@@ -17,6 +17,59 @@ sources: [cowork]
 > needs exactly it, sitting one document apart. Opened as `OWED` 622 when `609` discharged.*
 
 
+## ⌗ THE LANDING TABLE — where each register stands against the corpus, checked r3543
+
+> **▣ THE `\ldg` GATHER FOR THIS LEDGER.** *Live prose only. Last of the six gen-2 ledgers held by 59
+> under the r3535 division.*
+
+### ⚠ THIS LEDGER'S OWN `S10` WAS BUILT ON A FIGURE THAT WAS WRONG
+
+*`S10` tests whether `P07`'s "citation multiplicities, a proxy for load-bearing weight" is confounded by
+paper length, using the figure's six feed labels.* ⛔ ***One of those labels was wrong.*** *At `r3522` the
+dependency figure was found stale in **seven of its sixteen** edge labels and harmonised to the
+recomputed matrix; `P6`'s feed went $18\to19$.* ⇒ ***Re-run: $r=+0.181$ against the $+0.187$ recorded, and
+the Fisher-$z$ interval is unchanged to two decimals.*** *The datum is corrected in place and the verdict
+stands — **which is what an underpowered test is robust to, and the reason to say so rather than amend
+silently.***
+
+### ⛔ AND `S3`'s CONFIDENCE RESTS ON A RECEIPT THAT CANNOT FAIL
+
+*`S3` closes with* ***"the control returns $\sigma_{\rm path}=0$ exactly, so the test could have come out
+the other way."*** ⛔ *Its receipt asserts `control == 0.0` **three lines after `control = 0.0` is assigned
+as a literal** — provably unfailable, and `check_receipts.py` fails the corpus on it.* ⇒ ***So the clause
+that certifies `S3` could have returned otherwise is the one clause in it that could not.*** ⌗ **The
+finding survives on its own evidence** — *`P04`'s floor is a lower bound and every alternative choice
+**raises** it, which is structural and needs no null* — **but the sentence claiming the null discriminates
+must not be carried into a paper until the receipt does.** ⌗ *`receipts/` is 60's under the r3535
+division; this is a note, not a repair.*
+
+### ⌗ THE TABLE
+
+| register | routed clause · its paper | disposition |
+|---|---|---|
+| **`S3` `P04`'s exclusion is a LOWER BOUND against an UPPER LIMIT, so every free choice pushes the two apart and it cannot be weakened by a different estimate — only by a different physical claim** | *"name the structure, and give the robustness factor — $9\times$ to weaken it to two orders, $92\times$ to one, $923\times$ to vanish"* · **P4** | ***MOSTLY LANDED; the FACTORS are owed.*** *P4 already carries the structure in its own voice — the growth-weighting choice, "the no-correlation value is a **strict lower bound**", the $2.8\times$ and $4\times$ multipliers, and "an exclusion by three orders of magnitude". **What is absent is the robustness statement**: `923` ×0, and P4 never says how much the observed limit would have to move* |
+| **`S9` `P16`'s shared lithium miss is the DISCRIMINATING datum and is filed as a problem — a concordant success is reached many ways, a concordant failure *of a specific size* is a fingerprint** | — | ***SUBSTANCE OWED, and it is this ledger's best register.*** *P16 carries `lithium` ×21 and `shared problem` ×3 and reads the three outcomes as "two successes and one shared problem … neither better nor worse than flat $\Lambda$CDM".* ⌗ **The re-weighting is nowhere, and it is *this field's own logic turned around*: `P16`'s central claim is the IDENTITY claim "the cooling leg IS a standard BBN", and a network reproducing $D$ and $Y_p$ but NOT the standard lithium over-prediction would be evidence against it — so the shared miss confirms the paper's own thesis** |
+| **`S10` `P07`'s citation proxy survives its size confound ($r=+0.181$) but the test is UNDERPOWERED — at $n=6$ the interval runs $-0.74$ to $+0.87$ and excludes nothing; $\rho=0.5$ at 80% power needs 30 papers, the corpus has 17 and the figure draws 6** | *routed* · **P7's figure caption** | ***SUBSTANCE OWED — and it is a fence on a claim I touched at r3522.*** *The caption still says "a proxy for load-bearing weight" with no statement that the proxy is untestable at this $n$.* ⌗ **`S1`'s own result turned on the corpus itself rather than on `P06`'s reference class** |
+| **`S1` the first programme is a POWER CALCULATION and it has not been done** · **`S7` the corpus may not count its own successes, because successes are selected** | — | **LANDED as method.** *P6 carries `reference class` ×7 and `base rate` ×4 — the discipline is in the paper that owns it* |
+| **`S2` the systematics budget is absent by name and present as a MATCHED CONTROL** · **`S2′` a receipt that had been failing for 278 revisions** | — | **`S2` HELD** *(`matched control` ×0 is correct — the corpus does the thing without the term)*; **`S2′` is the bake's own repair and stays here** |
+| **`S8` `p0` refuses its own newest instance, in advance** | — | **HELD** — *a discipline claim about p0, correctly not a paper clause* |
+| **⛔ three receipts absent from `receipts/INDEX.md` — `S3`, `S9`, `S10`** | — | ***REGISTRY HOLE, 60's under the r3535 division.*** *Named here so this ledger's own rows are known to point at unregistered receipts* |
+
+### ⌗ WHAT THIS GATHER FOUND
+
+***Two of this ledger's three routed registers rest on instruments this campaign has since touched*** —
+*`S10` on a figure that was stale in seven labels, `S3` on a receipt that cannot fail.* ⇒ ***Neither
+finding falls, and that is the point: both were argued structurally and the instrument was corroboration,
+not support. But a landing table that only located claims would have carried both into a paper with their
+supports unexamined.***
+
+⌗ **And `S9` is the one to place.** *It does not add a result; it **re-weights three the paper already
+has**, and the re-weighting turns a recorded blemish into the confirmation of the paper's own identity
+claim. **That is the largest change of meaning any single owed clause in the eighteen ledgers would
+make.***
+
+---
+
 ## ⛭ THE BASELINE, MEASURED FIRST
 
 **Nothing below was called a hole before the corpus was asked what it holds.** *Seventeen paper bodies,
@@ -309,9 +362,16 @@ load-bearing weight"***. *A proxy assumption is a thing this field tests, and th
 
 | | | | | | |
 |---|---|---|---|---|---|
-| `P1` 35 cites, 12810 words | `P3` 25 / 30002 | `P5` 23 / 16913 | `P4` 18 / **6289** | `P6` 18 / 13482 | `P2` 15 / 15703 |
+| `P1` 35 cites, 12810 words | `P3` 25 / 30002 | `P5` 23 / 16913 | `P4` 18 / **6289** | `P6` **19** / 13482 | `P2` 15 / 15703 |
 
-⇒ ***The confound is not visible: $r=+0.187$.*** *The sharpest case is `P4` — **the shortest paper**,
+> ⛭ **`P6`'s FEED CORRECTED 18 → 19 AT r3522**, *when the dependency figure was found stale in seven of
+> its sixteen edge labels and harmonised to the recomputed matrix.* ⇒ ***The finding is unmoved:***
+> $r=+0.181$ *against the $+0.187$ computed here, and the Fisher-$z$ interval is unchanged to two
+> decimals.* ⌗ *Recorded rather than silently amended — **this ledger's own `S10` is a test whose datum
+> came from a figure that was wrong**, and the right response to that is to say so and re-run it, which
+> is what the underpowered verdict was always robust to.*
+
+⇒ ***The confound is not visible: $r=+0.181$.*** *The sharpest case is `P4` — **the shortest paper**,
 6289 words, carrying 18 citations against `P3`'s 25 from 30002. A size effect would have put the
 longest first and the shortest last.*
 

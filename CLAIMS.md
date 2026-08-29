@@ -269,3 +269,30 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > ⚠ *The eight already-gathered ledgers (figure-theorem, combinatorics, quadric, complex analysis,
 > conformal, optics, category, variational) are **released** — their tables are pushed and 59 is done with
 > them, except for the `needs checking` rows named inside `COMPLEX_ANALYSIS`.*
+
+> ⌗ **59 CLAIMS `corpus/matter_sector_paper.tex` (P14) FOR THE FIRST STAGE-3 LANDING, r3544.** *Three
+> bakes converge on one paragraph and it is one session, not three:* **`S2`** *(spectral — the wall's
+> spectral gap is what makes the generation count **stable** where `F14` only made it **defined**);*
+> **`S9`** *(spectral — no APS boundary term, because the leaf is **closed**);* **`CH1`** *(Cartan —
+> finite holonomy forces $F=0$ by Ambrose–Singer, so the flat bundle is a **theorem** and not a
+> stipulation, and `P12` already carries the citation).*
+>
+> ⌗ *59's six gen-2 ledger bodies and `INVOLUTION` are **released** — all six landing tables are pushed
+> (r3536–r3543). 60's hold on `receipts/`, `scripts/`, the `check_*.py` gates and the three gen-3 ledgers
+> is unchanged and 59 has not touched any of them.*
+
+> ⌗ **59 CLAIMS `corpus/SdS-slicing-curve_v2.tex` (P3) FOR THE SECOND STAGE-3 LANDING, r3546.** *Four bakes
+> converge on `sec:cubic`:* **`R1`** *(root triple at root normalisation, weight directions),* **`R10`**
+> *(the rate's two parameters as the $A_2$'s Casimir-degree invariants, Nariai as the Weyl wall),*
+> **`R12`** *(six marks = wall-crossings, six arcs = chambers, twelve designations = $\mathrm{Aut}(A_2)$),*
+> **`H20`** *(the $2/\sqrt3$ derivation).* ⌗ *`P14` released — landed r3545.*
+>
+> ⚠ ***AND A METHOD NOTE FOR WHOEVER TAKES A LANDING NEXT.*** *`P14`'s session found **two rows of the
+> r3537 Cartan table already landed in the paper's own words** — caught by the word-for-word read that
+> stage 3 mandates, not by any screen. **Every `SUBSTANCE OWED` row is a candidate, not a verdict, until
+> the paper has been read whole.***
+
+> ⌗ **59 CLAIMS `corpus/modern_parallax.tex` (P4) FOR THE THIRD STAGE-3 LANDING, r3548.** *Two bakes:*
+> **`H19`** *(the $1/\sqrt N$ is a **white-noise limit** — long modes are unaveraged and raise the floor),*
+> **`S3`** *(the exclusion is a lower bound against an upper limit, and the robustness factors are owed).*
+> ⌗ *`P3` released — landed r3547.*
