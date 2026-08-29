@@ -13,6 +13,64 @@ sources: [cowork]
 > returns the corpus's work.***
 
 
+## ⌗ THE LANDING TABLE — where each register stands against the corpus, checked r3540
+
+> **▣ THE `\ldg` GATHER FOR THIS LEDGER.** *Live prose only; every `ABSENT` re-checked in the corpus's own
+> term.*
+
+### ★★★ THE SHAPE: THIS BAKE'S YIELD IS ALMOST ENTIRELY *UNNAMED THEOREMS BESIDE HELD ARGUMENTS*
+
+*The corpus does this field's work and carries almost none of its names — `Hilbert space` ×0 over an
+argument run on $L^2$ of the half-line throughout, which the bake itself files as the **weak** form of
+the anonymity and not a hole. **Three of its bites are the strong form**: a theorem the argument's
+correctness depends on, doing the work anonymously.*
+
+| the theorem | the argument that rests on it | in the corpus |
+|---|---|---|
+| **Shale's criterion** — two Fock representations are unitarily equivalent iff $\beta$ is Hilbert–Schmidt | **P1**'s *"the permanent loss of causal contact … that renders the two vacua **inequivalent**"* | ***`Shale` ×0, `Hilbert--Schmidt` ×0, `inequivalent vacua` ×0.*** P1 carries `Bogoliubov` ×6 and the causal argument alone |
+| **von Neumann's extension theory** — deficiency $(1,1)$ gives a $U(1)$ of extensions, exactly one real parameter | **p0**'s *"the de Sitter horizon's thermal state closing the scale factor's **lone** self-adjoint-extension freedom without a free parameter … so the sector spends **no free dimensionless constant**"* | ***`von Neumann` ×0, `Reed--Simon` ×0.*** P10 computes the indices $(1,1)$; p0 spends the count and never says it is a dimension count |
+| **the limit-point/limit-circle dichotomy at the branch point** | sixteen papers carry `branch point`; **none carries a self-adjointness verdict there** | `limit-point` and `limit-circle` occur in **P10 alone** |
+
+⇒ ***That middle row is the one that matters most.*** *A von Neumann extension parameter is one of the
+terms being **counted to zero** in an argument about the constants of nature. **The bake verified the
+count is exact** — $(1,1)\Rightarrow U(1)\Rightarrow$ one real parameter — *so "lone" is not loose
+language but a dimension count, and dimension counts are checkable.* **The corpus makes the count and
+does not say what is being counted.**
+
+### ⌗ THE TABLE
+
+| register | routed clause · its paper | disposition |
+|---|---|---|
+| **`F3` no paper carries a self-adjointness verdict at the branch point** | *"at the branch point the operator is limit-point: no boundary condition is available to choose, and none is needed"* · **P10 `sec:deparam` or P16** | ***STILL OWED.*** *`limit-point` ×5 in P10 and ×1 in P7, never at the branch point; `branch point` runs through sixteen papers* |
+| **`F20` `P01`'s denied inequivalence has an exact criterion — Shale's — and the thermal case fails it at the INFRARED end, a $1/\omega$ logarithmic tail** | — | ***SUBSTANCE OWED.*** ⌗ **And it is a fence that strengthens**: P1's causal argument concludes the vacua are inequivalent, and the criterion *supplies* that conclusion rather than qualifying it — *"the thermal flux **is** that inequivalence, which is P01's own sentence, with the criterion supplied"* |
+| **`F21` "lone" is a von Neumann dimension count, and the constants argument rests on it** | — | ***SUBSTANCE OWED, and it is the highest-value clause in this ledger.*** *p0's `lone` ×1 is exactly the site* |
+| **`F1`/`F2` the two boundaries carry OPPOSITE verdicts — $a=0$ limit-circle at $\gamma=\tfrac14$, $r=0$ limit-point at $\gamma=\tfrac{15}4$** | — | **the contrast is stated in no paper** *(that is `F3`)*. P10 carries both ends' significance in its own footnote |
+| **`F13` `kernel` ×147 carries FOUR senses, two of them opposite objects in this field** | — | ***SUBSTANCE OWED — a canon row, not a paper clause.*** *`kernel` is live in **sixteen** papers (P9 ×30, P10 ×23, P7 ×20, P8 ×18, P15 ×15). **This is §0's job**, and 60's r3535 sizing names the same need* |
+| **`F15` three compactness statuses, on three spaces, in three papers, never set side by side** · **`F18`/`F19` one boundedness argument in three then four sectors, never joined** | — | **SUBSTANCE OWED — *connections*.** *`compactness` is live in P13 ×13 and P14 ×9; `bounded below` in six papers. **Every instance is present and the identification is nowhere*** |
+| **`F16` the matter functional is AFFINE, so the vacuum sector is a COSET of the kernel** | — | **needs a site read** — `affine` ×13 in P7 and `coset` ×15 in P12 are both live but in other senses |
+| **`F22` "the size of the vacuum kernel" is finite versus infinite dimension, and it joins `F16` and `H23`** | — | **SUBSTANCE OWED** — P9 carries the phrase ×1, the dimensional reading nowhere |
+| **`F14` `P14`'s leaf compactness survives the Nariai limit — and the corpus's own receipt never tested it** | — | **BOUNCE, and a *good* one: the bake tested what the receipt asserted** |
+| **`F5`–`F11` self-adjointness, Friedrichs, the Hardy bound, the coupled tower, `Hilbert space` ×0, the constraint algebra** | — | **BOUNCE throughout — P10 and P12 have all of it, including the footnote distinguishing $-\tfrac14$ from $\tfrac34$** |
+| **`F4` the criterion is not `P10`'s alone — *and this ledger said it was*** · **`F17` `P03` is negative, and reading it caught an error in `H20`** | — | **the bake's own corrections, and both are right.** *`F17`'s is repaired in the harmonic ledger at r3540, where the table had been fixed and the sentence under it left standing* |
+
+### ⌗ WHAT THIS GATHER FOUND
+
+⛭ ***THE ONE-WAY ASYMMETRY, CONFIRMED FROM THE EXPORTING END AND CORRECTED.*** *`F17` records the `H20`
+error in full — the bake that **found** it. The harmonic ledger, which **owns** the corrected claim,
+carried neither the reference nor the consequence: **its table's $d=5$ entry had been silently corrected
+from 2 to 1 and the sentence drawn from it left saying "available at $d=4$ and nowhere else", so the row
+and the conclusion two lines below it disagreed.*** ⇒ *Repaired r3540, with the cross-reference entered.*
+⌗ ***So the rule is sharper than "corrections travel one way": the finder records, the owner is not told,
+and a silently-corrected number is worse than an uncorrected one — because the file now contradicts
+itself and neither ledger says why.***
+
+⌗ **And this is the fifth gen-2 shape:** *almost nothing here is a claim for a paper to carry. It is
+**theorems the papers' own arguments already depend on**, unnamed — which is a different debt from a
+fence or a connection, and the one most likely to be read as pedantry and most costly to leave, since a
+reader asked to accept `lone` is being asked to supply von Neumann's theorem themselves.*
+
+---
+
 ## ⛭ THE BASELINE, MEASURED FIRST
 
 | present | absent across all seventeen, word-bounded |

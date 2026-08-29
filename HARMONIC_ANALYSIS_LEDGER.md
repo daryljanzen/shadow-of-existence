@@ -661,10 +661,26 @@ degree $n=d-1$, and $\sin^n w$ expands into harmonics $n,n-2,\dots$:*
 | **sub-leading** | **1** | **1** | **2** | 2 | 3 |
 
 ⇒ ***One free scale kills ONE sub-leading harmonic, so a pure top harmonic is available at $d=4$ and
-nowhere else — and the sub-leading count is two or more from six dimensions upward, which is the
-corpus's sentence verbatim***, *with $d=5$ the even/parity case it flags separately. (Expansion
+$d=5$ and nowhere else — and the sub-leading count is two or more from six dimensions upward, which
+is the corpus's sentence verbatim***, *including its "and — up to a parity — in five".* (Expansion
 verified exactly at $n=3$ and $n=5$ against the binomial formula, after two simplifier routines
-silently failed to expand it — recorded because the count IS the claim.)*
+silently failed to expand it — recorded because the count IS the claim.)
+
+> ⛔⛭ **THE ROW ABOVE WAS CORRECTED AND THE SENTENCE UNDER IT WAS NOT — repaired r3540.** *The
+> functional-analysis bake's `F17` found this while reading `P03` for a different field: `P03`'s
+> `rem:dimension` says the sub-leading harmonics number* ***"exactly one at $D=4$ and $D=5$"***, *and*
+> ***`P03` is right — it counts the NONZERO harmonics, and a constant is not a harmonic.*** *The
+> table's $d=5$ entry was corrected from **2** to **1**, and the conclusion drawn from it — "available
+> at $d=4$ and nowhere else … $d=5$ the even/parity case it flags separately" — **was left standing,
+> contradicting the row two lines above it.** ⌗ `F17`'s own verdict on that gloss: it* ***"was papering
+> over a real numerical difference."***
+>
+> ⇒ ⚠ ***AND THE CROSS-REFERENCE IS ENTERED HERE BECAUSE IT WAS NOT.*** *`F17` records the correction
+> in full, on the side that **found** it. This ledger, which **owns** the corrected claim, carried
+> neither the reference nor the consequence — `F17` was ×0 in this file. **The bake that finds an
+> error records it; the bake whose claim was wrong is never told.** That asymmetry is what makes a
+> silently-corrected number worse than an uncorrected one: the row and the sentence disagree, and
+> nothing in either file says why.*
 
 ⌘ ***SO THE CORPUS'S DIMENSION SELECTION — four spacetime dimensions, not five, not six — IS A
 CHEBYSHEV COUNTING ARGUMENT, AND THIS FIELD OWNS IT.*** *It sat unreceipted in a paper this bake had
