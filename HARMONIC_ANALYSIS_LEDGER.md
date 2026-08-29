@@ -1,7 +1,7 @@
 ---
 name: harmonic-analysis-ledger
 kind: FORWARD
-current: r3452
+current: r3539
 job: The harmonic-analysis field-bake ledger — what bit, what bounced, and the boundary. Second of the four fields `L-272`'s re-survey left outstanding. `OWED` 622.
 sources: [cowork]
 ---

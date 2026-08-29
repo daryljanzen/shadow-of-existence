@@ -1,7 +1,7 @@
 ---
 name: cartan-holonomy-ledger
 kind: FORWARD
-current: r3515
+current: r3537
 job: The Cartan / connections-and-holonomy field-bake ledger — what bit, what bounced, and the boundary. First of the four fields `L-272`'s re-survey left outstanding. `OWED` 622.
 sources: [cowork]
 ---

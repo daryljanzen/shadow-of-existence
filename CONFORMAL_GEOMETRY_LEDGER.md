@@ -3,7 +3,7 @@ kind: REFERENCE
 job: conformal / Möbius geometry against the substrate — the field that refused, and why
 name: conformal-geometry-ledger
 description: R-M's second field bake — conformal / Möbius geometry thrown at the CR substrate. Opened r1853 (Phase 8), handed to directly by the quadric bake's Cayley–Klein identification. Baseline, opening question, probes, and the Phase 9 routing.
-current: r3511
+current: r3531
 ---
 
 > **▣ REFERENCE — R-M's second field bake, and part of the corpus.** *Conformal / Möbius geometry

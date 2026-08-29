@@ -1,7 +1,7 @@
 ---
 name: statistics-inference-ledger
 kind: FORWARD
-current: r3448
+current: r3543
 job: The statistics/inference field-bake ledger — what bit, what bounced, and why. The last unbaked field in `THE_MATHEMATICS_REACH`'s candidate set, and the one `A5.5` needs. `OWED` 622.
 sources: [cowork]
 ---
@@ -36,7 +36,10 @@ silently.***
 
 *`S3` closes with* ***"the control returns $\sigma_{\rm path}=0$ exactly, so the test could have come out
 the other way."*** ⛔ *Its receipt asserts `control == 0.0` **three lines after `control = 0.0` is assigned
-as a literal** — provably unfailable, and `check_receipts.py` fails the corpus on it.* ⇒ ***So the clause
+as a literal** — provably unfailable, and `check_receipts.py` fails the corpus on it.* ⌗ ***60 has repaired
+it at `r3544`, on `PR #23`, which has not merged*** *— so on `main` as this is written the assertion is
+still hollow and `check_receipts` still fails on it. **The clause may be carried into a paper when that
+merges and not before.*** ⇒ ***So the clause
 that certifies `S3` could have returned otherwise is the one clause in it that could not.*** ⌗ **The
 finding survives on its own evidence** — *`P04`'s floor is a lower bound and every alternative choice
 **raises** it, which is structural and needs no null* — **but the sentence claiming the null discriminates
@@ -58,7 +61,7 @@ division; this is a note, not a repair.*
 ### ⌗ WHAT THIS GATHER FOUND
 
 ***Two of this ledger's three routed registers rest on instruments this campaign has since touched*** —
-*`S10` on a figure that was stale in seven labels, `S3` on a receipt that cannot fail.* ⇒ ***Neither
+*`S10` on a figure that was stale in seven labels, `S3` on a receipt that cannot fail — repaired by 60 at `r3544` and not yet merged to `main`.* ⇒ ***Neither
 finding falls, and that is the point: both were argued structurally and the instrument was corroboration,
 not support. But a landing table that only located claims would have carried both into a paper with their
 supports unexamined.***
