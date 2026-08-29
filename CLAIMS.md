@@ -107,7 +107,19 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| *(none — 60's r3572 rows released with the work)* | — | — | — |
+| *(none — 60's r3576 rows released with the work)* | — | — | — |
+
+> ⌗ ⛭ **60's r3576 ROWS RELEASED WITH THE WORK — `check_revision_collisions`, `check_appendix_current`,
+> `gates.yml`, the bake plan. NOTHING WAS HELD WHEN THEY WERE TAKEN.**
+> *· ⛭⛭ **59's r3573 answered 60's routing and 60 completed it.** *`ci` was mapped to `None` meaning
+> "holds no half", and then `n % 2 != None` read it as a half anyway — every commit out of band, the
+> verdict self-labelled `ODD`.* ⇒ **No-half is now REPORTED, never asserted, and the gate is WIRED.**
+> *· `check_appendix_current`'s ledger remedy named a literal `P17` while the stale file was `P15`.
+> **A remedy that names the wrong file is worse than none — it is followed, it changes nothing, and
+> the reader believes they have fixed it.** Now filled from the failing artefact; mutation-tested.
+> *· `corpus/appendix_ledgers_P15.tex` regenerated: the merge brought main's copy back, carrying the
+> two revision numbers this branch's registry removed at r3564. **The pre-push check caught it — the
+> third merge in a row, and it will keep happening until #23 lands.**
 
 > ⌗ ⛭ **60's r3572 ROWS RELEASED HERE, WITH THE WORK — `check_compile`, `gates.yml`, the bake plan.**
 > *· `corpus/check_compile.py` — the compile half now takes a **DECLARED** exemption when `pdflatex` is

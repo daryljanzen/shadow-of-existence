@@ -267,6 +267,19 @@ def band_violations(root=None):
     #    own commits and steps over what a merge brought in. **
     r = subprocess.run(['git', 'log', '--first-parent', '--format=%h%x09%s', f'{UPSTREAM}..HEAD'],
                        cwd=root or ROOT, capture_output=True, text=True)
+    if PARITY is None:
+        # ⛔⛭ ** A DECLARED EXEMPTION THAT IS NOT HONOURED DOWNSTREAM IS WORSE THAN NONE -- r3576.
+        #   r3573 mapped `ci` to `None` meaning "the runner is not a line and holds no half", and
+        #   then this comparison read it as a half anyway: `n % 2 != None` is TRUE for every n, so
+        #   every revision-numbered commit came back out of band and `check_band` labelled the
+        #   verdict ODD, because `PARITY == 0` is False.  ** The map said "cannot tell" and the
+        #   check gave it a line regardless -- the exact failure r3573 was written to end, one
+        #   level further in. **
+        #   ⇒ *** Not-a-line is REPORTED, never asserted: the same treatment as a missing upstream
+        #       ref, and for the same reason -- there is no way to say whose half these commits
+        #       fall in, and a verdict about a line nobody identified is not a measurement. ***
+        #   The COLLISION half still runs; it is the half a runner can actually answer.
+        return None
     if r.returncode != 0:
         return None                       # no upstream ref here -- reported, never asserted
     out = []
@@ -284,7 +297,13 @@ def band_violations(root=None):
 def check_band():
     """*** the PREVENTION half: fail before the merge, while the number can still be changed ***"""
     v = band_violations()
-    word = 'EVEN' if PARITY == 0 else 'ODD'
+    word = 'EVEN' if PARITY == 0 else ('ODD' if PARITY == 1 else 'NO HALF')
+    if PARITY is None:
+        print(f'    ⌗ the band is NOT CHECKED this run: NODE={_NODE!r} holds no half, so there is')
+        print('      no way to say which of these commits are any line\'s own.  *Reported rather')
+        print('      than passed silently, and rather than asserted against a half nobody holds.*')
+        print()
+        return 0
     if v is None:
         print(f'    ⌗ the band ({word}) is NOT CHECKED this run: `{UPSTREAM}` is not a ref in this')
         print('      tree, so there is no way to say which commits are this line\'s own.')

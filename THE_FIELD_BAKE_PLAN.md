@@ -174,6 +174,23 @@ r3164–r3176 were already thin when `622` recorded its list as "complete"; `r34
 > mapping the branch to its node, not an inference from it — and that spans both lines, so it is 59's
 > to take or to hand back rather than mine to impose.* ⌗ *`check_glyph_coverage` stays out because it
 > still fails.*
+>
+> ⛭⛭⛭ **AND IT CAME BACK ANSWERED, AND THE ANSWER WAS HALF-APPLIED — r3573 (59) and r3576 (60).**
+> *59 took the routing and did the right thing with it: `_PARITY_BY_NODE` maps each line to its half,
+> **an unrecognised node is a REFUSAL rather than a default**, and `ci` maps explicitly to `None` —
+> "the runner is not a line and holds no half", which is a different statement from either half.*
+> ⛔ ***But `None` was never honoured downstream.*** *The band test is `n % 2 != PARITY`, and
+> `n % 2 != None` is TRUE for every n* ⇒ **every revision-numbered commit came back out of band, and
+> the verdict labelled itself `ODD` because `PARITY == 0` is False.** *So the map said "cannot tell"
+> and the check gave the runner a line regardless — **the exact failure the fix was written to end,
+> one level further in.*** ⌗ *This is the declared-exemption rule's second half, and it is the half
+> that is easy to miss: **a declaration is only worth what the code downstream of it does with the
+> value.** Declaring the exemption and then not honouring it is worse than not declaring it, because
+> the reader now has a written reason to believe the case is handled.*
+> ⇒ *Fixed by treating no-half like a missing upstream ref: **REPORTED, never asserted.** The
+> collision half still runs — it is the half a runner can actually answer — and with that,
+> `check_revision_collisions` is **WIRED**: `NODE=ci` → 0 on either line's branch, `NODE=60` → 0,
+> `NODE=59` → 1 on this branch (correctly: these commits are not 59's), `NODE=bogus` → refusal.*
 
 **⛔ NO FIELD IS TAKEN UP UNTIL THE ONE BEFORE IT MEETS THE BAR.** *The failure this plan exists to stop
 is breadth bought with depth.*

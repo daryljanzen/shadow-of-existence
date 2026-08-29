@@ -103,7 +103,12 @@ RAILS = [
          #   the rail grows stops being a ratchet and becomes a comment: at min_files=3 this
          #   rail could have silently lost ELEVEN appendices and still passed. **
          min_rows=15, min_files=14,
-         fix='python3 corpus/make_ledger_appendix.py P17 corpus/appendix_ledgers_P17.tex'),
+         # ⛭ r3576: was the literal `P17 … appendix_ledgers_P17.tex`, so a stale P15 was
+         #   answered with a command that regenerates P17.  ** A remedy that names the
+         #   wrong file is worse than none: it is followed, it changes nothing, and the
+         #   stale file stays stale while the reader believes they have fixed it. **
+         #   *The placeholders are filled from the failing artefact itself.*
+         fix='python3 corpus/make_ledger_appendix.py {scope} corpus/{name}'),
 ]
 
 
@@ -195,7 +200,14 @@ def main():
             if stale:
                 for name, d in stale:
                     fails.append(f"{name} is STALE -- its index would write {d}")
-                fixes.append(rail['fix'])
+                # a rail whose remedy is per-artefact names EACH stale artefact; one whose
+                # remedy regenerates the whole rail is emitted once.
+                if '{name}' in rail['fix'] or '{scope}' in rail['fix']:
+                    for name, _ in stale:
+                        fixes.append(rail['fix'].format(name=name,
+                                                        scope=rail['scope'](name)))
+                else:
+                    fixes.append(rail['fix'])
             print(f"    {rail['name']:<20} {rows:>4} index row(s), {checked:>2} appendix/appendices "
                   f"regenerated and compared")
 
