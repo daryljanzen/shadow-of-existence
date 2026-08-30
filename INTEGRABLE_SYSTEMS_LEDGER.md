@@ -159,6 +159,42 @@ in the register below.***
 
 ---
 
+## ⛭⛭⛭ `I10` — **THE SLICING CURVE IS A ZERO-ENERGY ORBIT, AND NARIAI IS AN UNSTABLE EQUILIBRIUM** — r3628
+
+***And the locator's prediction for `P03` was WRONG, which is the first scored miss and worth more than a
+hit.*** *It named `sec:params`, `sec:throat-angle`, `sec:tour`, `sec:winding` and predicted an
+**action-angle** description, on the grounds that three coupled projections of one motion is that shape.
+**The content is in `sec:cubic`, which the abstract did not point at, and it is not action-angle.***
+⇒ *Verdict **REDIRECTED**: right paper, wrong reason and wrong address. `58` recorded that its own reasons
+were wrong about half the time and kept the fact; this is the first of ours.*
+
+### ⌗ WHAT `prop:turning` ALREADY SAYS, READ AS MECHANICS
+
+*`P03` derives $\dd^{2}r/\dd l^{2}=\tfrac12 f'\operatorname{sgn}f$ and calls the horizons turning
+points. **With $V(r)=-\lvert f(r)\rvert/2$ that formula is $-\dd V/\dd r$ exactly**, and the slicing law
+$(\dd r/\dd l)^{2}=\lvert f\rvert$ is $\tfrac12(\dd r/\dd l)^{2}+V=0$.*
+
+| the paper's object | the mechanical reading | checked |
+|---|---|---|
+| the slicing curve | **the zero-energy orbit** of a one-dimensional conservative system | ✔ |
+| the horizon cubic $f=0$ | **the turning-point condition** $V=E$ | ✔ |
+| a **simple** root, $f'\neq0$ | an ordinary turning point, reached in finite $l$ | ✔ |
+| **Nariai**, a double root | **a turning point coinciding with an equilibrium**: $V=V'=0$, and $V$ has a *maximum* at the orbit's own energy | ✔ $f''(r_N)=-6$ |
+| the degeneracy's cost | $\lvert f\rvert\simeq3(r-r_N)^{2}$, so $\int\dd r/\sqrt{\lvert f\rvert}$ **diverges logarithmically** — the merged horizon is approached and never reached | ✔ |
+| $\kappa=f'(r_h)/2=0$ at Nariai | $\kappa=-V'(r_h)$, so **vanishing surface gravity IS the equilibrium condition** | ✔ |
+
+⇒ ***That last row joins two facts the corpus states separately.*** *`P01` argues $\kappa=0$ at Nariai and
+that the thermal mechanism is absent there; `P03` derives the double root. **They are one statement about a
+potential.***
+
+⚠ ***AND A SIGN ERROR OF MINE, CAUGHT BEFORE IT LANDED.*** *My first computation used $V=-f/2$, which is
+right only where $f>0$. At Nariai $f\le0$ on both sides, so that gave $V''>0$ — a **minimum**, the opposite
+conclusion. **`P03`'s own formula carries the $\operatorname{sgn}f$ and the uniform potential is
+$-\lvert f\rvert/2$**; redone, $V$ has a maximum and the equilibrium is unstable. *The paper's own
+expression was the check.*
+
+---
+
 ## ⛭⛭⛭ THE LOCATOR — every paper, the sections named, the prediction stated — r3626
 
 > **⛔ THIS REPLACES THE HIGH/MEDIUM/LOW TABLE BELOW, WHICH WAS DOING THE WRONG JOB.** *A rank is a licence
@@ -183,7 +219,7 @@ in the register below.***
 | 2 | **`P10`** | `sec:deparam` · `sec:lock` · *the instanton paragraph* | *a deparametrised constraint is a Hamiltonian system; the TT tower is a parametric oscillator; ask after the **adiabatic invariant*** | ⛭ **CONFIRMED — `I9`, landed** |
 | 3 | **`P09`** | `sec:pd` · `sec:homog` · `sec:rotation` | *separability, Killing tensors, the Carter constant — the field's own objects, stated in its own words* | ⛭ **CONFIRMED — `I1`, landed** |
 | 4 | **`P11`** | `sec:unpolarized` · `sec:gowdy` · `sec:nonlinear` | *a wave map with a conserved twist; how many independent integrals the reduced system has* | ⛭ **CONFIRMED — two integrals; `I4` posed** |
-| 5 | **`P03`** | `sec:params` · `sec:throat-angle` · `sec:tour` · `sec:winding` | *three coupled projections of one motion is the shape of an **action-angle** description; is the sky angle an angle variable, and is $2M$ its conjugate action?* | ⟐ **owed** |
+| 5 | **`P03`** | `sec:params` · `sec:throat-angle` · `sec:tour` · `sec:winding` | *three coupled projections of one motion is the shape of an **action-angle** description; is the sky angle an angle variable, and is $2M$ its conjugate action?* | ⛭ **REDIRECTED — `I10`, landed.** *The prediction was wrong and the paper was right: the content is in **`sec:cubic`/`prop:turning`**, a section the abstract did not point at, and it is the **mechanical analogue**, not action-angle* |
 | 6 | **`P15`** | `sec:background` · `sec:transmission` · `sec:largescale` | *$\sinh^{2/3}$ is a second exactly-integrable law beside `P02`'s cycloid; the WKB/adiabaticity discussion is this field's expansion* | ⟐ **owed** |
 | 7 | **`P08`** | `sec:kernel` · `sec:trichotomy` · `sec:cosmology` | *"$T_{\mu\nu}=0$ **is** a first-order linear ODE" is a solvability claim; the three constant-curvature slicings are a classification of solvable cases* | ⟐ **owed** |
 | 8 | **`P12`** | `sec:anchor` · `sec:bracket` · `sec:strata` | *a **section selecting a flow** on a base is this field's setting; is that flow integrable, and does the stratification index its integrals?* | ⟐ **owed** |
