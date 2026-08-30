@@ -460,6 +460,35 @@ supplies the reason the index is the right instrument.*
 
 ---
 
+## ⛭⛭⛭ `I20` — **`P04`'s PATH INTEGRAL *IS* A FIRST INTEGRAL, AND ITS RESTRICTION TO THE NULL CONE IS WHY THE ARGUMENT WORKS** — r3654
+
+***`P04` came back empty on all six of 60's fields and the locator's own prediction hedged — "probably the
+whole of it". It is not empty, and the hedge was wrong.***
+
+*In conformal form $\dd s^{2}=a^{2}(\eta)(-\dd\eta^{2}+\dd\mathbf{x}^{2})$ the vector $\partial_\eta$
+is a **conformal** Killing vector, so its charge is conserved along a geodesic **only where
+$p\!\cdot\!p=0$**. On the null cone that charge is $a\omega$, and its constancy **is**
+$1+z=a_{\mathrm{obs}}/a_{\mathrm{em}}$, whose logarithm is $\int H\,\dd t$.*
+
+⇒ ***So the path integral is a conserved quantity written out — which is why the redshift is a property of
+the path and not of the source, and that is `P04`'s own central claim given its reason.***
+
+⛭ ***AND THE RESTRICTION IS LOAD-BEARING RATHER THAN INCIDENTAL.*** *For a massive carrier
+$p\!\cdot\!p=-m^{2}$, the charge is not conserved, and no line-of-sight integral of this form exists. **So
+the redshift is a statement about light and could not have been obtained from any other messenger** — a
+fence on `P04`'s method that the paper never states.*
+
+⌗ **AND IT IS THE SAME STRUCTURE AS `I5`.** *60's probe in `P05` found the homothety charge a first
+integral of the geodesic flow **restricted** to $p\!\cdot\!p=0$, with
+$\{\xi\!\cdot\!p,\,p\!\cdot\!p\}=2\,p\!\cdot\!p$. **A conformal Killing vector does the same thing
+here.** Two papers, two vectors, one restricted-first-integral structure — and `P04`'s whole measurement
+rests on it.*
+
+⌗ ⚠ *`\dd` was used in the landed clause and `P04` does not define it — the same trap as `r3549`, in the
+same paper. Caught by compiling.*
+
+---
+
 ## ⛭⛭⛭ THE LOCATOR — every paper, the sections named, the prediction stated — r3626
 
 > **⛔ THIS REPLACES THE HIGH/MEDIUM/LOW TABLE BELOW, WHICH WAS DOING THE WRONG JOB.** *A rank is a licence
@@ -495,7 +524,7 @@ supplies the reason the index is the right instrument.*
 | 13 | **`p0`** | `sec:rulings` · `sec:standard` · `sec:unification` | *the straight null rulings are geodesics of the substrate; **maximal symmetry is the largest possible algebra of first integrals*** | ⛭ **CONFIRMED, `sec:rulings`** — *`I17`, landed. The prediction was exactly right and the count is exact* |
 | 14 | **`P13`** | `sec:routes` · `sec:wall` | *the closed routes are an exhaustion argument; **does any run through a conserved quantity?*** | ⛭ **CONFIRMED, `sec:wall`** — *`I18`, landed, **and it is the obstruction's own hypothesis**. Plus a canon row* |
 | 15 | **`P14`** | `sec:chirality` · `sec:count` | *the radial Dirac superpotential is a 1-D problem with a solvable structure — **shape invariance** is this field's neighbour* | ⛭ **CONFIRMED, `sec:chirality`** — *`I19`, landed. **The prediction named the right test and the answer is NO**, which is the informative direction* |
-| 16 | **`P04`** | `sec:decomp` · `sec:floor` | *$\ln(1+z)=\int H\,\dd t$ is a quadrature and probably the whole of it* | ⟐ **owed** |
+| 16 | **`P04`** | `sec:decomp` · `sec:floor` | *$\ln(1+z)=\int H\,\dd t$ is a quadrature and **probably the whole of it*** | ⛭ **CONFIRMED, `sec:decomp`, and the hedge was WRONG** — *`I20`, landed. **`P04` is not empty for this field***, *and it had come back empty on all six of 60's* |
 | 17 | **`P06`** | `sec:rules` · `sec:least-arbitrariness` | *no dynamics; the prediction is that this is genuinely empty, and **that prediction has to be tested rather than assumed*** | ⟐ **owed** |
 
 ⌗ ***4 of 17 through pass B. Thirteen sections-named papers owed a read.*** *Nothing here is dismissed on
