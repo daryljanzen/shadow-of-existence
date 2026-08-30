@@ -95,7 +95,7 @@ FIELDS = [
     ('spectral theory / harmonic analysis', 'SPECTRAL_THEORY_LEDGER.md',
      ['spectrum', 'eigenvalue', 'self-adjoint', 'deficiency', 'Sturm', 'Fourier',
       'spherical harmonic', 'Laplacian', 'essentially self-adjoint', 'resolvent']),
-    ('integrable systems', None,
+    ('integrable systems', 'INTEGRABLE_SYSTEMS_LEDGER.md',
      ['integrable', 'Lax pair', 'conserved quantity', 'first integral', 'separability',
       'Hamilton--Jacobi', 'Killing tensor', 'Carter constant', 'action-angle']),
     ('algebraic geometry', 'ALGEBRAIC_GEOMETRY_LEDGER.md',

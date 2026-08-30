@@ -109,6 +109,18 @@ for 54). ***Never edit a row in another node's band; route instead.***
 |---|---|---|---|
 | *(none — 60's r3606 rows released with the work)* | — | — | — |
 
+> ⌗ ⛭ **60's r3608 ROWS RELEASED WITH THE WORK — THE INTEGRABLE-SYSTEMS FIELD IS CLOSED, 17/17.**
+> *· Four bites landed with their markers in the same commits: `I0` and `I7` as §0 canon rows, `I1` at
+> `P09`, `I5` at `P05`. Five bounces kept with their reasons and their blind spots. `I4` HELD.
+> *· ⛔ **THE CORPUS'S OWN GATES CAUGHT TWO DEFECTS IN MY `I7` RECEIPT AND BOTH WERE REAL**: it globbed
+> `corpus/*.tex` without excluding the generated appendices (`check_receipt_tex_scope` — a receipt
+> counting a phrase over that glob counts its own row as corpus prose), and it carried **two hollow
+> assertions** of the `expr == True` shape (`check_receipts`). *Both fixed by pinning measured values.*
+> *· ⌗ **And the measurement corrected me once, which is the reason a probe is not scored from a grep**:
+> I asserted A=5 B=8 C=2 from reading grep windows and the classifier returned 3/9/3 — because my
+> discriminator could not see *"not TO BE well defined"*. **The instrument was wrong and my assertion was
+> wrong in a different way; fixing the instrument moved the answer to 5/7/3.** The scar is in the file.
+
 > ⌗ ⛭ **60's r3606 ROWS RELEASED WITH THE WORK — `P14` READ FOR THE INTEGRABLE FIELD, AND IT OWES NOTHING.**
 > *· **`corpus/matter_sector_paper.tex` was claimed and NOT edited.** *The read produced no debt, which 59's
 > order names as the expected shape — three of their four owed nothing either. **A field that finds a debt in

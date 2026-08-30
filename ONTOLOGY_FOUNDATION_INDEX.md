@@ -385,6 +385,33 @@ as $1+z$ or $z=\dots$ in a redshift relation · ③ always as $dz$ or $z^{2}$ in
 **⛭ $\mathcal{H}$'s two are disjoint by decoration** — *the superscript $+$ marks the horizon, the bare and
 subscripted forms the constraints — **and both are inherited (GR and ADM), so they fall under the $\gamma$ rule
 (r1797): recorded, not unified.***
+### ⛭ `conserved charge` — added r3608 by 60, from the integrable-systems bake's `I7`. **×15 across nine papers, three objects — and one of them is a NEGATIVE EXISTENCE CLAIM about the other two.**
+
+| reading | what it names | where | count |
+|---|---|---|---|
+| `conserved charge` **A** | **THE ASYMPTOTIC MASS CHARGE** — *an ADM / Abbott--Deser class boundary integral at infinity.* ⛔ ***Every single occurrence is a DENIAL***: "a conserved charge in an asymptotically-de~Sitter spacetime is widely held not to be well defined" | **`P02` · `P03` · `P08` · `P10` · `P12`** | **×5** |
+| `conserved charge` **B** | **A FIRST INTEGRAL OF A FLOW, or a conserved charge of a field** — *the homothety's charge on the null cone; the twist $c$ whose sign IS the graviton's handedness; the shear charge whose decay is the no-hair law* | **`P11` ×5 · `P05` · `P07`** | **×7** |
+| `conserved charge` **C** | **A CONSERVED QUANTUM NUMBER** — *the progenitor charge a derivation of the baryon asymmetry $\eta$ would have to reach* | **`P16` ×2 · `P07`** | **×3** |
+
+**⛭ ⛔ THIS ROW CLEARS THE `integrable` BAR AND THEN EXCEEDS IT, AND THE DIFFERENCE IS THE REASON IT IS HERE.**
+*`integrable` ① and ⑥ are opposite in **consequence** — a singularity a measure survives against a system whose
+motion is solvable.* ⇒ ***`conserved charge` A and B are opposite in EXISTENCE.*** *A does not merely name a
+different object from B; **it asserts that the object B names is not well defined in this spacetime class** —
+and the corpus is asymptotically de~Sitter throughout.* ⌗ **So a reader who carries A's verdict into `P11`'s
+sentence concludes the graviton's handedness is not well defined, which is the opposite of what `P11` proves.**
+
+**⛭ AND THE COLLISION IS INSIDE ONE PAPER, which is the bar `I0` set for a row.** *`P07` carries **C** at
+character 134,508 and **B** at 307,922 — 173,414 apart in one paper, so a reader meets them separately and
+has nothing in either sentence to tell them the phrase has changed object.*
+⌗ ⚠ ***AND THE FIVE A-SITES ARE NOT A DISAGREEMENT.*** *All five papers say the same true thing, and the row
+does not ask any of them to change it. **What is missing is anywhere that says the three are three.***
+
+⇒ **THE RULE, and it is the `z` rule sharpened:** *`conserved charge` is never to be written unqualified where
+the spacetime class is in view. **A** takes "asymptotic"; **B** takes "first integral" or names its flow;
+**C** takes "quantum number". *Measured at r3608 by `\rcpt{I7_conserved_charge_carries_three_objects_and_one_denies_the_others}`, whose control runs the same
+classifier over `first integral` and gets one sense back — the line that would have caught a classifier
+inventing the split.*
+
 ### ⛭ `kernel` — added r3579 by 59, from the functional-analysis bake's `F13`. **153 live occurrences, four readings, and two of them are opposite objects in the field the word belongs to.**
 
 | reading | what it names | where | count |
