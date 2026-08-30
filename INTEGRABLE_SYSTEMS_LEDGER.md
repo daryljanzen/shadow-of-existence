@@ -195,6 +195,31 @@ expression was the check.*
 
 ---
 
+## ⛭⛭⛭ `I11` — **$E=1$ FIXES THE REST FRAME *AND* IS THE ONE NON-DEGENERATE ENERGY AT WHICH THE COSMOLOGY INTEGRATES** — r3636
+
+*`P15` step (i) is the energy first integral, step (iii) is a **quadrature** — the reduction this field's
+simplest theorem licenses: one degree of freedom, one conserved quantity, integrate. **What the paper does
+not say is why the quadrature closes.***
+
+*Writing the radial equation as $(\dd r/\dd\tau)^{2}=2GM/c^{2}r+r^{2}/\alpha^{2}-k$ with $k=1-E^{2}$:*
+
+| $k$ | the quadrature | |
+|---|---|---|
+| **$k=0$**, i.e. $E=1$ | $\tfrac{2\alpha}{3}\operatorname{arcsinh}\bigl(r^{3/2}/\sqrt{2GM\alpha^{2}/c^{2}}\bigr)$ | ⛭ **elementary**, and inverts to $\sinh^{2/3}$ |
+| $k\neq0$ | $r=u^{2}$ carries it to $\int 2u^{2}\,\dd u/\sqrt{u^{6}-ku^{2}+2M}$ | ⛔ **a sextic under the root — not elementary** |
+
+⇒ ***So the single condition $E=1$ does two jobs the paper keeps apart***: *it fixes the fundamental rest
+frame **by the field**, at the vanishing-potential locus (`r3632`), **and** it is the one non-degenerate
+energy at which the cosmology has a closed form at all.* ⌗ *The only other elementary cases are degenerate:
+$\Lambda=0$ gives the dust cycloid — **which is `P02`'s $r=M(1+\cos z)$, `I8`** — and $M=0$ gives pure de
+Sitter. **The corpus's two closed-form cosmological laws are the two degenerate corners and the one flat
+case, and there are no others.***
+
+⌗ *Address **REDIRECTED**: the locator named `sec:background`, `sec:transmission`, `sec:largescale`; the
+content is in `sec:properframe`. Second miss on address, second right on paper.*
+
+---
+
 ## ⛭⛭⛭ THE LOCATOR — every paper, the sections named, the prediction stated — r3626
 
 > **⛔ THIS REPLACES THE HIGH/MEDIUM/LOW TABLE BELOW, WHICH WAS DOING THE WRONG JOB.** *A rank is a licence
@@ -220,7 +245,7 @@ expression was the check.*
 | 3 | **`P09`** | `sec:pd` · `sec:homog` · `sec:rotation` | *separability, Killing tensors, the Carter constant — the field's own objects, stated in its own words* | ⛭ **CONFIRMED — `I1`, landed** |
 | 4 | **`P11`** | `sec:unpolarized` · `sec:gowdy` · `sec:nonlinear` | *a wave map with a conserved twist; how many independent integrals the reduced system has* | ⛭ **CONFIRMED — two integrals; `I4` posed** |
 | 5 | **`P03`** | `sec:params` · `sec:throat-angle` · `sec:tour` · `sec:winding` | *three coupled projections of one motion is the shape of an **action-angle** description; is the sky angle an angle variable, and is $2M$ its conjugate action?* | ⛭ **REDIRECTED — `I10`, landed.** *The prediction was wrong and the paper was right: the content is in **`sec:cubic`/`prop:turning`**, a section the abstract did not point at, and it is the **mechanical analogue**, not action-angle* |
-| 6 | **`P15`** | `sec:background` · `sec:transmission` · `sec:largescale` | *$\sinh^{2/3}$ is a second exactly-integrable law beside `P02`'s cycloid; the WKB/adiabaticity discussion is this field's expansion* | ⟐ **owed** |
+| 6 | **`P15`** | `sec:background` · `sec:transmission` · `sec:largescale` | *$\sinh^{2/3}$ is a second exactly-integrable law beside `P02`'s cycloid; the WKB/adiabaticity discussion is this field's expansion* | ⛭ **CONFIRMED — `I11`, landed.** *And REDIRECTED on the address: the content is in `sec:properframe`* |
 | 7 | **`P08`** | `sec:kernel` · `sec:trichotomy` · `sec:cosmology` | *"$T_{\mu\nu}=0$ **is** a first-order linear ODE" is a solvability claim; the three constant-curvature slicings are a classification of solvable cases* | ⟐ **owed** |
 | 8 | **`P12`** | `sec:anchor` · `sec:bracket` · `sec:strata` | *a **section selecting a flow** on a base is this field's setting; is that flow integrable, and does the stratification index its integrals?* | ⟐ **owed** |
 | 9 | **`P16`** | `sec:lap` · `sec:rate` · `sec:interior` | *the lap is a closed orbit; "its exact closed solution" for the progenitor interior is another integrable case* | ⟐ **owed** |
