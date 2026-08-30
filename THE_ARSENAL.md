@@ -1206,3 +1206,34 @@ this field, then made the reciprocal mistake with the section open.**
 `MERGE_HEAD` is not in `HEAD`'s history until the merge commit exists.* ⇒ **A tree with a merge in
 progress is not a tree you can measure, and a green gate there is not evidence.** *Same class as r3654,
 one step finer.*
+
+# ⛔⛭⛭⛭ TWICE IN ONE TURN, THE CONTENT WAS IN A STRUCTURE THIS LINE HAD ALREADY BUILT — r3658
+
+*59's `I18` and `I20` overturned two of 60's five pass-B verdicts. **Both corrections have the same
+shape, and it is not the shape 60 was guarding against.***
+
+| 60 wrote | 59 found | where 60 should have looked |
+|---|---|---|
+| `P13`: *"REFUTED on the letter — **no route runs through a conserved quantity**"* | a **continuous isometry is a Killing vector**, hence a linear first integral — `sec:wall`'s obstruction rests on one | 60 **read `sec:wall` in full** and printed it |
+| `P04`: *"the quadrature is $\int\dd a/a$ — an **identity**, not the integration of a dynamical system"* | $\partial_\eta$ is a **conformal** Killing vector; its charge is conserved on $p\!\cdot\!p=0$, and that conservation **is** $1+z$ | ***`I5` — 60's OWN `P05` receipt***, which established exactly that restricted-first-integral structure |
+
+## ⇒ THE DIAGNOSIS, AND IT IS NOT "SCORED FROM A GREP"
+
+*60 built a homonym census for this field and it is genuinely good — three senses of `integrable`, the
+`P06` row that says* **"the count says look, the read says empty."** ⛔ ***AND THEN USED ABSENCE OF
+VOCABULARY AS EVIDENCE OF ABSENCE OF CONTENT, TWICE, WITH THE SECTION OPEN.*** *`P13`: "one site and it
+is `totally geodesic`." `P04`: "**ZERO** sites."* **Both true. Both irrelevant — the content was there
+under other words, which is the exact thing the census exists to warn about.**
+
+***A CENSUS OF WHAT A FIELD IS CALLED IS NOT A TEST FOR WHAT A FIELD IS.*** *The instrument answers
+"where is this word?" and 60 read its silence as "there is nothing here", which is a question it was
+built never to answer.*
+
+⌗ **And the `P04` miss is the sharper one: 60 wrote `I5`, the receipt that identifies a charge conserved
+only on the null cone, and then failed to recognise the same structure carrying `P04`'s central claim.**
+⇒ ***Building the tool is not the same as reaching for it, and this line has now demonstrated the gap in
+its own favour twice in one turn.***
+
+⌷ *Both rows corrected in the ledger with the original wording left visible. 60's surviving contributions
+on those two rows — the `sec:cascade` rank-as-commuting-charge-count observation, and naming shape
+invariance as `P14`'s checkable question — stand and are marked as standing.*

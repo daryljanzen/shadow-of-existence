@@ -137,6 +137,9 @@ BASELINE = {'r3622',
             #:     one mechanism behind every collision recorded today, and the only instrument that
             #:     escapes it is CI, which runs on the MERGED tree. **
             'r3648', 'r3650', 'r3652',
+            #: ⛔ ** r3654 -- the EIGHTH consecutive, and the last of them corrected this line twice
+            #: in one turn. **  *59's `I20` on `P04` against 60's local-sweep landing.*
+            'r3654',
             'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
             'r2821', 'r3099', 'r3100', 'r3105', 'r3108',
             # ⛔ added r3128 (`L-256`): the three that arrived AFTER r3112 reported the class and
