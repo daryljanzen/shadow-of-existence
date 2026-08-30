@@ -89,7 +89,7 @@ FIELDS = [
     ('representation theory', 'REPRESENTATION_THEORY_LEDGER.md',
      ['representation', 'irreducible', 'highest weight', 'Casimir', 'character',
       'branching', 'multiplet', 'triality']),
-    ('differential topology / index theory', None,
+    ('differential topology / index theory', 'INDEX_THEORY_LEDGER.md',
      ['index theorem', 'Atiyah', 'Chern', 'characteristic class', 'cobordism', 'K-theory',
       'Euler characteristic', 'homotopy', 'homology', 'fundamental group']),
     ('spectral theory / harmonic analysis', 'SPECTRAL_THEORY_LEDGER.md',

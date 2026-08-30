@@ -385,6 +385,35 @@ as $1+z$ or $z=\dots$ in a redshift relation · ③ always as $dz$ or $z^{2}$ in
 **⛭ $\mathcal{H}$'s two are disjoint by decoration** — *the superscript $+$ marks the horizon, the bare and
 subscripted forms the constraints — **and both are inherited (GR and ADM), so they fall under the $\gamma$ rule
 (r1797): recorded, not unified.***
+### ⛭ `index` — added r3610 by 60, from the index-theory bake's `D2`. **×128 across eleven papers, three objects — and `P14` carries ALL THREE about one threeness.**
+
+| reading | what it names | where | count |
+|---|---|---|---|
+| `index` ① | **THE OPERATOR INDEX** — *$\dim\ker_+-\dim\ker_-$, the Atiyah--Singer object.* "a well-defined **analytical** index", "a $\gamma^5$-**graded** index", "the **equivariant** Dirac index", "the **bulk** index" | **`P14` · `P13` · `P11` · `P07`** | the field's own |
+| `index` ② | **A LABEL** — *in at least three surface forms: a "**within-state** index" (which of three hinges a state sits at), a "**harmonic** index" (the integer $k$ of a mode on $S^3$), a "**sheet** index in $\mathbb{Z}_3$".* ⛔ ***None is an operator invariant — they index STATES and MODES, not kernels*** | **within-state: `P14` ×7 · `P03` ×3 · `P07` ×2 · `P12` · `P16` · `p0`. harmonic: `P16` ×3 · `P10` ×2 · `P07` · `P15`** | **×22 across seven papers** |
+| `index` ③ | **THE INDEX OF A SUBGROUP** — *$[G:H]$, the group-theoretic sense: "an **index-two subgroup** of the $D_6$ the hinges carry"* | **`P14`** | **×1** |
+
+**⛭ ⛔ AND ALL THREE ARE IN `P14`, ABOUT ONE STRUCTURE, which is the bar `I0` set and more.**
+*Its **analytical** index counts three wall-bound modes; its **within-state** index is the hinge $S_3$ that
+permutes those same three walls; its **index-two** subgroup is a subgroup of the $D_6$ those hinges carry.*
+⇒ ***A reader meeting `index` three times in one paper about one threeness has nothing in any sentence
+telling them the word has changed object.***
+
+⚠ ⛔ **AND SENSE ② IS BIGGER THAN A FIRST SEARCH SHOWS, which is itself worth recording.** *A raw search of
+the LaTeX source finds "within-state index" in `P14` alone, because `P03`, `P07`, `P12`, `P16` and `p0` write
+it `\emph{within-state} index` — **with markup between the two words the search needed adjacent**.* ⇒ *De-
+emphasised, the label sense runs **×22 across seven papers**. **A markup-blind search over LaTeX is the
+`\rcpt`-buried-in-a-comment failure wearing new clothes**, and it very nearly shipped an "and nowhere else"
+into this table.*
+
+⌗ **HOW THIS DIFFERS FROM `Killing form`, which was scored and refused.** *There the qualifier is always
+present and always different — `Killing form` against `Killing vector`. **Here ① and ③ share the bare word
+and ② differs only by a hyphenated adjective a reader may take for emphasis.***
+
+⇒ **THE RULE:** *`index` unqualified is ① and nothing else. ② is always "within-state index"; ③ is always
+"index-$n$ subgroup". *Measured at r3610 by `\rcpt{D2_index_carries_three_senses_inside_one_paper}`, whose control
+runs the same discriminators over `obstruction` — the field's other heavy word, ×79 — and gets no split.*
+
 ### ⛭ `conserved charge` — added r3608 by 60, from the integrable-systems bake's `I7`. **×15 across nine papers, three objects — and one of them is a NEGATIVE EXISTENCE CLAIM about the other two.**
 
 | reading | what it names | where | count |

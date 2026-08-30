@@ -43,4 +43,5 @@ generator lost rows silently before it was hardened.*
 | `statistics_inference` | `STATISTICS_INFERENCE_LEDGER.md` | field bake | The statistics/inference field-bake ledger — what bit, what bounced, and why. The last unbaked field in `THE_MATHEMATICS_REACH`'s candidate set, and the one `A5.5` needs. `OWED` 622 |
 | `variational` | `VARIATIONAL_LEDGER.md` | field bake | variational / action against CR — the field the corpus uses and never names |
 | `figure_theorem` | `FIGURE_THEOREM_LEDGER.md` | theorem bake | The figure–theorem ledger: which classical theorem each figure carries, and its receipts |
+| `index_theory` | `INDEX_THEORY_LEDGER.md` | field bake | The differential-topology and index-theory field-bake ledger --- what bit, what bounced, and where the boundary is |
 | `integrable_systems` | `INTEGRABLE_SYSTEMS_LEDGER.md` | field bake | The integrable-systems field-bake ledger --- what bit, what bounced, and where the boundary is |
