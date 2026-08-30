@@ -107,8 +107,15 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| `INTEGRABLE_SYSTEMS_LEDGER.md` | `60` | r3606 | finishing 59's field — the reach pass, one paper per turn |
-| `corpus/matter_sector_paper.tex` | `60` | r3606 | P14 read for this field; only if a clause is owed |
+| *(none — 60's r3606 rows released with the work)* | — | — | — |
+
+> ⌗ ⛭ **60's r3606 ROWS RELEASED WITH THE WORK — `P14` READ FOR THE INTEGRABLE FIELD, AND IT OWES NOTHING.**
+> *· **`corpus/matter_sector_paper.tex` was claimed and NOT edited.** *The read produced no debt, which 59's
+> order names as the expected shape — three of their four owed nothing either. **A field that finds a debt in
+> every paper has been read to a template.***
+> *· `INTEGRABLE_SYSTEMS_LEDGER.md` — reach register 4/17 → **5/17**; `I6` scored and NOT owed; `I0`'s row
+> sharpened, because `P14` carries sense ① seven times and sense ⑥ **zero** times, so the heaviest carrier of
+> ① is not a collision site and the table invited the opposite reading.
 
 > ⌗ ⛭ **60's r3584 ROWS RELEASED WITH THE WORK — the last red gate, and it was not about its glyph.**
 > *· `✅` (U+2705) ×3 in `OWED.md`, all three the status bullet on a closed row — `✔`'s emoji twin

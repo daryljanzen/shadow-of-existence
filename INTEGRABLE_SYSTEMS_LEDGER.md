@@ -1,7 +1,7 @@
 ---
 name: integrable-systems-ledger
 kind: FIELD-BAKE
-current: r3595
+current: r3606
 job: The integrable-systems field-bake ledger — what bit, what bounced, and where the boundary is.
 sources: [chat]
 ---
@@ -119,7 +119,7 @@ files, **which is not reading and this programme's own absolute rule says so**. 
 `cor:carter` and `rem:carter-chain` in full *at the site*, which is enough to justify the clause that landed
 there and **is not a verdict on `P09` for this field**.*
 
-⇒ ***So: 4/17 papers read as of r3603 — `P09`, `P07`, `P11`, `P10`.*** *A completed bake's reach close reads, for comparison: "all seventeen papers
+⇒ ***So: 5/17 papers read as of r3606 — `P09`, `P07`, `P11`, `P10`, `P14`.*** *A completed bake's reach close reads, for comparison: "all seventeen papers
 WORKED or CHECKED-NEGATIVE **by name** … read in full this pass, three sweeps across all seventeen bodies."
 **That is the standard this ledger has not yet met and must not appear to have met.**
 
@@ -147,16 +147,17 @@ in the register below.***
 
 | # | probe | verdict |
 |---|---|---|
-| **`I0`** | `integrable` ×14, six senses, two this field's | ⛔ **BITE** — *provisional at `r3595` on being grep-scored; **`P07`'s read at `r3599` supplies a verified instance of the collision inside one paper**, which is the row's evidence. Whether the ×14 count is complete is still open on the unread fifteen* |
+| **`I0`** | `integrable` ×14, six senses, two this field's | ⛔ **BITE** — *provisional at `r3595` on being grep-scored; **`P07`'s read at `r3599` supplies a verified instance of the collision inside one paper**, which is the row's evidence. Whether the ×14 count is complete is still open on the unread twelve.* ⌗ **AND `P14`'s READ AT r3606 SHARPENS THIS ROW RATHER THAN ADDING TO IT**: *its seven are sense ① and ONLY sense ①, so the corpus's heaviest carrier of ① is **not** a collision site.* ⇒ **The row rests on `P07`, and on `P07` alone so far** — *which is what it should say, because a table listing `P14 ×7` invites the opposite reading* |
 | **`I1`** | *does the field recognise `P09`'s origin for the Carter constant?* | ⛔ **BITE** — (a) is separability returning its own equivalent; (b) is the origin. **Landed** in `P09 rem:carter-chain`. *Rests on a site read of two passages; `P09`'s reach verdict is still owed* |
 | **`I2`** | *is the corpus's separability Liouville integrability, or something weaker?* — `separable` ×23, `Liouville` ×0 | ⟐ open |
 | **`I3`** | *`P09` says reachability is governed by the count of Killing **vectors**, not tensors. Is that the field's own distinction between symmetry and hidden symmetry?* | ⟐ open |
 | **`I4`** | ***sharpened by `P11`'s read, r3601.*** *`P11` carries two conserved quantities in this field's sense — the twist $c$ and the shear charge $C_0$ — names them with two different words, and never asks whether its homogeneous sector is **integrable** in Liouville's sense. **The question the field owns is whether the number of independent commuting integrals matches the degrees of freedom**, and the corpus asks it of no sector* | ⛭ **SCOPED by `P10`'s read, r3603** — *the radial lift is $1$ DOF with $1$ integral, so trivially integrable and the question is empty there. It has content only on the layer's true $(q^A,p_A)$, which `P10`'s deparametrisation defines and does not count. **Not owed as a paper clause; recorded as where the question lives*** |
+| **`I6`** | ***does `separable`/`separability` carry two senses the way `integrable` does?*** — raised by `P14`'s read, r3606 | ⛭ **SCORED, NOT OWED — and the reasoning is recorded so it is not re-derived.** *It does carry two: this field's Hamilton--Jacobi/Carter sense, and the corpus's five-test **identity criterion** ("no quantity separates them", built `c54.24`, run in `P14`'s and `P03`'s receipts).* ⛔ ***But `I0`'s own criterion refuses the row.*** *A cross-paper split is ordinary; what misleads is one paper carrying both about one construction.* ⇒ **Measured: `P09` ×22 and `P07` ×3 are the field's sense throughout, `P14` ×1 is the identity criterion alone, and in paper PROSE the identity sense occurs exactly once in the whole corpus** — *`P03` runs the criterion in its receipt and never in its body.* **No collision inside any paper, so no canon row.** ⌗ *It becomes one the moment a paper uses both, and this row is what will say so* |
 | **`I5`** | *`V5` (variational) landed a homothety conserving its charge on the null cone only. Is that a first integral in this field's sense, and does it enter the count?* | ⟐ open |
 
 ---
 
-## ⛭ THE REACH REGISTER — one paper, one verdict, read. **4 of 17.**
+## ⛭ THE REACH REGISTER — one paper, one verdict, read. **5 of 17.**
 
 | paper | verdict | what was read, and what it holds |
 |---|---|---|
@@ -170,7 +171,10 @@ in the register below.***
 | | ⟐ **what the read produced is a sharper QUESTION, not a finding** | *see `I4` below. **`P11` names its two integrals with two different words and never asks whether the homogeneous sector is integrable in this field's sense.** Whether it is requires counting degrees of freedom against commuting integrals, which this pass has not done. ***Recorded as a probe. A read that sharpens a question rather than producing a claim is a legitimate outcome, and writing it up as a finding is how a ledger acquires a manufactured landing.*** |
 | **`P10`** | ⛭ **WORKED — nothing owed, and it SETTLES `I4`'s scope** | *`sec:deparam` and the instanton paragraph read in full.* Two genuine first integrals: the marginal congruence's $\tfrac12\dot r^{2}+V=\tfrac12$ with $V=\tfrac12 f(r)$, and its Euclidean continuation $\tfrac12 r'^{2}-V=-\tfrac12$, satisfied identically by the closed form $r(s)=-(2M\alpha^{2})^{1/3}\lvert\sin(3s/2\alpha)\rvert^{2/3}$ — *which is what makes the segment a solution of a variational principle rather than a formal device.* **Correct as it stands; no clause owed** |
 | | ⛭ **and this settles where `I4` has content** | ***The radial lift is ONE degree of freedom with ONE conserved quantity, so it is Liouville-integrable trivially — $n=1$, one integral, which is the definition.*** *So the question has no content there and the corpus loses nothing by not asking it.* ⇒ *It has content only for the **layer's true degrees of freedom**, and `P10` is exactly where they are defined: the deparametrised constraint $p_\tau+\Hphys(q^A,p_A)=0$ produces **a genuine Hamiltonian on gauge-invariant $(q^A,p_A)$**. **`P10` makes the integrability question askable for the first time in the corpus and does not count them** — and counting them is the `TT` tower's business, not this pass's* |
-| **the other thirteen** | — | **not read. No verdict.** |
+| **`P14`** | ⛭ **CHECKED-NEGATIVE — nothing owed, and it is NOT the collision site the `I0` table implies** | *Read at the site: `sec:chirality`'s two-norm passage, the wall/branch-point identity sentence, the invariants paragraph of `sec:whichthree`, and the index paragraph.* **All SEVEN of its `integrable` are sense ① and only sense ①** — the $r=0$ crossing as an integrable $\sqrt{\,}$-singularity, in the leaf measure $\dd\ell=\dd r/\sqrt{|f|}$, where the horizon turning points lie at finite proper distance. ⌗ ***It carries no instance of sense ⑥, so it is not a within-paper collision*** — which matters, because `I0`'s table lists `P14 ×7` under ① and invites exactly that reading. **The collision is `P07`'s, and `P07`'s alone so far.** |
+| | ⛔⛭ **and its one `separability` is a SEVENTH sense, which is not the `I0` word** | *`separable`/`separability` is a different word from `integrable` and was not in `I0`'s table.* **`P14`'s single use is the corpus's own five-test identity criterion** — *"the wall and the branch point being one locus with two properties rather than two loci that coincide, which is checked on locus, type, definition, equivariance and **separability**"*. ⌗ ***Verified in the receipt rather than read off the sentence***: `P14_mode_monodromy_at_the_wall.py` runs the five tests built at `c54.24`, and its `SEPARABILITY` row reads *"these are two PROPERTIES of one object, not two values of one quantity → SAME — no quantity separates them."* **That is a criterion for whether two names denote one object. It is not Hamilton--Jacobi separability and it does not enter this field's count.** ⇒ *scored as `I6`, and NOT owed* |
+| | ⌗ **and its `conserved` ×6 splits two ways, both used correctly** | ***×3 the conserved spacetime Dirac norm*** — *the tortoise measure, in which the same static mode does **not** normalize because the horizons stand infinitely far: a norm preserved under evolution, not a conserved quantity.* ***×3 the conserved twist $c$***, *which IS a first integral in this field's sense — and it is `P11`'s, obtained there by integrating the $Q$ wave-map equation once.* **`P14` states it and cites `JanzenDynamics` for it**: *"the conserved twist $c$ is odd under $\sigma$ and so separates them, and $c=0$ is the polarised cut---the two cases being one charge at two values."* ⌗ ***The same correct behaviour `P07` showed for the Carter constant***: state the result, hand the derivation to the paper that makes it. **No clause owed** |
+| **the other twelve** | — | **not read. No verdict.** |
 
 ---
 
