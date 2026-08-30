@@ -429,6 +429,37 @@ sense into the configuration sense reads "three walls" as three obstructions.***
 
 ---
 
+## ⛭⛭⛭ `I19` — **THE SUPERPOTENTIAL IS NOT SHAPE INVARIANT, SO THE EXACTNESS IS THE ZERO MODE'S AND NOT THE SPECTRUM'S** — r3652
+
+***The locator named shape invariance as the test and the answer is no — the first probe whose value is in
+a negative.***
+
+*`P14` carries $W(r)=\lambda\sqrt f/r$, a genuine supersymmetric-quantum-mechanics superpotential: it
+generates partner potentials $V_{\pm}=W^{2}\pm\dd W/\dd x$ and an exact zero mode. **Shape invariance —
+$V_{+}(\lambda)=V_{-}(\mu)+R$ with $R$ independent of $r$ — is the condition under which the SUSY ladder
+generates the whole spectrum.***
+
+| shift tried | $\partial_r\bigl(V_{+}(\lambda)-V_{-}(\mu)\bigr)=0$? | |
+|---|---|---|
+| $\mu=\lambda-1$ | ⛔ no | |
+| $\mu=\lambda+1$ | ⛔ no | |
+| $\mu=\lambda-\tfrac12$ | ⛔ no | |
+| $\mu=-\lambda$ | ⛭ yes — but $V_{+}(\lambda)-V_{-}(-\lambda)=0$ **identically**, so $R=0$ | *degenerate: the partners coincide, no energy shift to climb* |
+
+*Solving the condition for a general $\mu(\lambda)$ returns an $r$-dependent expression — **no constant
+shift exists**.*
+
+⇒ ***So the exactness available in `P14` is the zero mode's and not the spectrum's.*** *The mode is
+obtained because $W$ changes sign, which is **topological**, and not because the problem is solvable,
+**which it is not**.* ⌗ ***That is why the generation count is read from an index rather than from a list
+of levels*** *— a structural reason for a choice the paper makes and does not explain, and it sits well
+with the corpus's own Heun-type monodromy material in `P16`.*
+
+⌗ *`sec:count` needs no separate landing: `S2`, `S9` and `CH1` are already there (`r3545`), and `I13`
+supplies the reason the index is the right instrument.*
+
+---
+
 ## ⛭⛭⛭ THE LOCATOR — every paper, the sections named, the prediction stated — r3626
 
 > **⛔ THIS REPLACES THE HIGH/MEDIUM/LOW TABLE BELOW, WHICH WAS DOING THE WRONG JOB.** *A rank is a licence
@@ -463,7 +494,7 @@ sense into the configuration sense reads "three walls" as three obstructions.***
 | 12 | **`P07`** | `sec:lift-initial-rate` · `sec:sds-cosmology` | *the lift's closed form and the recovered Carter constant; states results derived elsewhere* | ⟐ **owed** |
 | 13 | **`p0`** | `sec:rulings` · `sec:standard` · `sec:unification` | *the straight null rulings are geodesics of the substrate; **maximal symmetry is the largest possible algebra of first integrals*** | ⛭ **CONFIRMED, `sec:rulings`** — *`I17`, landed. The prediction was exactly right and the count is exact* |
 | 14 | **`P13`** | `sec:routes` · `sec:wall` | *the closed routes are an exhaustion argument; **does any run through a conserved quantity?*** | ⛭ **CONFIRMED, `sec:wall`** — *`I18`, landed, **and it is the obstruction's own hypothesis**. Plus a canon row* |
-| 15 | **`P14`** | `sec:chirality` · `sec:count` | *the radial Dirac superpotential is a 1-D problem with a solvable structure — **shape invariance** is this field's neighbour* | ⟐ **owed** |
+| 15 | **`P14`** | `sec:chirality` · `sec:count` | *the radial Dirac superpotential is a 1-D problem with a solvable structure — **shape invariance** is this field's neighbour* | ⛭ **CONFIRMED, `sec:chirality`** — *`I19`, landed. **The prediction named the right test and the answer is NO**, which is the informative direction* |
 | 16 | **`P04`** | `sec:decomp` · `sec:floor` | *$\ln(1+z)=\int H\,\dd t$ is a quadrature and probably the whole of it* | ⟐ **owed** |
 | 17 | **`P06`** | `sec:rules` · `sec:least-arbitrariness` | *no dynamics; the prediction is that this is genuinely empty, and **that prediction has to be tested rather than assumed*** | ⟐ **owed** |
 
