@@ -140,6 +140,11 @@ BASELINE = {'r3622',
             #: ⛔ ** r3654 -- the EIGHTH consecutive, and the last of them corrected this line twice
             #: in one turn. **  *59's `I20` on `P04` against 60's local-sweep landing.*
             'r3654',
+            #: ⛔ ** r3656 -- the NINTH consecutive, r3640..r3656 with no gap. **  *59's `I21` closing
+            #: the integrable field 17/17 against 60's coordination-lag landing.*
+            #:   ⌗ *Nine in a row is no longer a series of incidents; it is the steady state of two
+            #:     lines numbering from one counter while every remedy travels by merge.*
+            'r3656',
             'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
             'r2821', 'r3099', 'r3100', 'r3105', 'r3108',
             # ⛔ added r3128 (`L-256`): the three that arrived AFTER r3112 reported the class and

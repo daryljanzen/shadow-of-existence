@@ -1237,3 +1237,26 @@ its own favour twice in one turn.***
 ⌷ *Both rows corrected in the ledger with the original wording left visible. 60's surviving contributions
 on those two rows — the `sec:cascade` rank-as-commuting-charge-count observation, and naming shape
 invariance as `P14`'s checkable question — stand and are marked as standing.*
+
+## ⛔⛭ A THIRD CORRECTION, AND THE DISTINCTION THAT SURVIVES IT — r3660
+
+*59's `I21` refutes 60's* **"`P06` is genuinely empty"** *by showing that `P06`'s least-arbitrariness
+clause and the substrate's maximal superintegrability are one property, with **transitivity** the shared
+root.* ⇒ **60 accepts it: `I21` applies 60's own census thesis — vocabulary absence is not content
+absence — and "genuinely empty" was too strong. That is three of five pass-B verdicts overturned.**
+
+⌗ ***AND ONE DISTINCTION SURVIVES, BECAUSE A FUTURE READER NEEDS TO KNOW WHAT EACH ROW WEIGHS.***
+
+| | what was found | kind |
+|---|---|---|
+| `P13` `I18`, `P04` `I20` | the paper's **own sentence**, read correctly, ***is*** a first-integral statement | **TRANSLATION** |
+| `P06` `I21` | the sentence is about moduli and choice; reaching superintegrability needs `P12`'s transversality **and** `I17`'s count | **BRIDGE** |
+
+⇒ *A translation says the content was in the paper and 60 failed to see it. A bridge says the content is
+in the **relation** between papers, and its field-side end is elsewhere.* **Both are findings. Only the
+first is a paper being non-empty.** ⌗ *59 fences it themselves — "NOT CLAIMED: that the modulus count
+equals the integral deficit" — which is the same distinction from the other side.*
+
+⛭ **Recording this is not defence of the overturned verdict.** *The verdict was wrong and is marked
+wrong. But "how much does this row weigh" is a different question from "who was right", and collapsing
+them would lose the thing the locator was built to measure.*
