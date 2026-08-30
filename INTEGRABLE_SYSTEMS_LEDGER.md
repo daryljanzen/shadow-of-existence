@@ -1,7 +1,7 @@
 ---
 name: integrable-systems-ledger
 kind: FIELD-BAKE
-current: r3608
+current: r3662
 job: The integrable-systems field-bake ledger — what bit, what bounced, and where the boundary is.
 sources: [chat]
 ---
@@ -142,6 +142,23 @@ asserted by an instrument that could not see the term. **`I0` is provisional on 
 in the register below.***
 
 ---
+
+
+> ⛭⛭ **THE RECEIPTS FOR THIS FIELD — named here at r3662, per `check_citation_chain`.**
+>
+> | probe | receipt | what it settles |
+> |---|---|---|
+> | **`I8`** | `receipts/P02_janzen_circle/I8_the_circle_is_a_phase_portrait_and_the_critical_points_are_turning_points.py` | *the locus **is** the orbit, the energy is $M^{2}/2$, the critical points are turning points and there are **exactly two** — with an adversarial perturbed curve that fails the identity* |
+> | **`I12`** | `receipts/P08_slicing_operator/I12_the_marginal_member_is_the_only_non_degenerate_one_that_integrates.py` | *the $E=1$ quadrature is elementary; $k\neq0$ gives a **sextic** under the root; the cycloid solves the $\Lambda=0$ law and **not** `P08`'s own* |
+> | **`I13`** | `receipts/P12_algebroid_paper/I13_the_stratification_is_a_ledger_of_first_integrals.py` | *the ladder, 15 to 1, with Kerr–dS **short by exactly one** — and the non-complementarity with the moduli count **asserted so it cannot be inferred*** |
+> | **`I5`** *(60)* | `receipts/P05_groupoid/I5_the_homothety_charge_is_a_first_integral_of_the_restricted_system.py` | *the bracket is weakly zero and not identically zero* |
+> | **`I7`** *(60)* | `receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py` | *the canon row's evidence* |
+>
+> ⚠ ***AND THE PROBES WITH NO RECEIPT ARE NAMED TOO, WITH WHY.*** *`I0`, `I18`'s canon half — **counted and
+> read, not computed**; the evidence is a census and a pair of read sites, and a receipt would only restate
+> the count. `I1`, `I9`, `I10`, `I11`, `I14`, `I15`, `I17`, `I19`, `I20`, `I21` were each **verified
+> symbolically in session**; `I12` and `I13` carry the two whose reuse is heaviest, and the rest are
+> **owed** rather than exempt. **Recorded as owed, not quietly skipped.***
 
 ## ⌗ THE PROBE REGISTER — every row marked before this field is closed
 
@@ -855,33 +872,59 @@ either.** Absence needs the same standard as presence.
 
 ## ⛭⛭⛭ THE THREE REGISTERS — kept apart, because what bit and what bounced are different facts
 
-### ⌗ WHAT BIT — three, and every one is landed
+### ⌗ WHAT BIT — fourteen, and every one is landed with its address
+
+> ⚠ **THIS REGISTER READ "three, and every one is landed" UNTIL r3662.** *It was written at `r3608`, when
+> the field had three probes and four papers read. The pass to 17/17 added eleven more and the register was
+> not rewritten — **a landing table that grows while its summary does not is the same staleness this whole
+> campaign was built to find.** Rebuilt here.*
 
 | # | what the field found | where it landed |
 |---|---|---|
-| **`I0`** | ***`integrable` carries SIX senses and two are this field's, opposite in consequence*** — an integrable **singularity** is one a measure survives, an integrable **system** is one whose motion is solvable, and `P07` carries both about one construction ~1,600 characters apart | `ONTOLOGY_FOUNDATION_INDEX` §0, canon row |
-| **`I1`** | ***`P09`'s route (a) derives a Killing tensor from a separable form, which by Carter/Benenti is deriving a thing from its own equivalent*** — so the paper's own hedge is mathematics rather than modesty, and route (b), Goldberg--Sachs through algebraic speciality, is where the independent content is | `P09` `rem:carter-chain`, `\ldg{integrable_systems}` |
-| **`I5`** | ***the homothety charge is a first integral of the RESTRICTED system*** — $p\!\cdot\!p$ is conserved, so the null cone is an invariant submanifold, and $\{\xi\!\cdot\!p,p\!\cdot\!p\}=2p\!\cdot\!p$ is weakly zero. It counts toward the null tally and no other | `P05` `sec:alpha-action`, `\ldg{integrable_systems}` |
-| **`I7`** | ***`conserved charge` ×15 names THREE objects and sense A denies the other two exist*** — five papers say no such charge is well defined in an asymptotically-de~Sitter spacetime while seven use the identical phrase for charges that plainly are, and `P07` carries two of the three | `ONTOLOGY_FOUNDATION_INDEX` §0, canon row |
+| **`I0`** | ***`integrable` carries SIX senses, two of them this field's and opposite in consequence*** — an integrable **singularity** is one a measure survives, an integrable **system** is one whose motion is solvable, and `P07` carries both about one construction ~1,600 characters apart | `ONTOLOGY_FOUNDATION_INDEX` §0 |
+| **`I1`** | *`P09`'s route (a) derives a Killing tensor from a separable form, which by Carter/Benenti is deriving a thing from its own equivalent* — the paper's own hedge is mathematics rather than modesty | `P09` `rem:carter-chain` |
+| **`I5`** *(60)* | *the homothety charge is a first integral of the **restricted** system*, $\{\xi\!\cdot\!p,p\!\cdot\!p\}=2p\!\cdot\!p$ weakly zero | `P05` `sec:alpha-action` · receipt |
+| **`I7`** *(60)* | *`conserved charge` ×15 names three objects and sense A **denies the other two exist*** | `ONTOLOGY_FOUNDATION_INDEX` §0 |
+| **`I8`** | ***`P02`'s geometric circle IS the harmonic oscillator's phase portrait*** — its "homogeneity" a level set of the conserved energy $M^{2}/2$, its two critical points the orbit's two turning points. **`P02` scores ×0 on every term in this field's vocabulary** | `P02` `sec:cycloid` · receipt |
+| **`I9`** | ***`P10` has the right computation under the wrong name*** — the adiabatic parameter $\lvert\dd\omega/\dd s\rvert/\omega^{2}\propto s^{-1/3}$ **diverges** at the branch point while $\int\omega\,\dd s$ converges; the correction is semiclassical, and `P15` names the same object correctly as WKB | `P10`, the adiabatic-correction paragraph |
+| **`I10`** | ***the slicing curve is a zero-energy orbit in $V=-\lvert f\rvert/2$, and Nariai is a turning point coinciding with an equilibrium*** — which is why it costs infinite affine parameter, and why $\kappa=0$ there **is** the equilibrium condition | `P03` `sec:cubic` |
+| **`I11`** | ***$E=1$ fixes the rest frame by the field AND is the one non-degenerate energy at which the cosmology integrates*** | `P15` `sec:properframe` |
+| **`I12`** | ***three energies are three solvability classes***, and `P08`'s "the closed member is the cycloid" is exact at $\Lambda=0$ and a small-$r$ reading otherwise | `P08` `sec:trichotomy` · receipt |
+| **`I13`** | ***the isotropy stratification is a ledger of first integrals and runs short exactly where the Carter constant is needed*** — SdS integrable on Killing vectors alone, Kerr–dS short by one | `P12` `sec:strata` |
+| **`I14`** | ***`P16`'s interior is the same oscillator as `P02`'s cycloid***, $a''+a=A/2$, and its parity-by-species split is **forced by linearity** | `P16` `sec:interior` |
+| **`I15`** | ***the horizon is a fixed point of the outgoing null flow and its eigenvalue is the surface gravity*** — $\kappa=f'(r_h)/2$ is the linearisation | `P01` `sec:3` |
+| **`I17`** | ***the substrate is maximally superintegrable***, 15 integrals for 5 degrees of freedom against the $2D-1=9$ bound; **every cut lowers the count**, and `I13`'s ladder is that descent | `p0` `sec:rulings` |
+| **`I18`** | ***the Atiyah–Hirzebruch obstruction's second hypothesis IS a first integral***, so it bites high on the ladder and **lapses where the hypothesis is unavailable rather than unused**. Plus `wall` ×509, three objects | `P13` `sec:wall` · §0 |
+| **`I19`** | ***the superpotential is NOT shape invariant***, so the exactness is the zero mode's and not the spectrum's — which is why the count is read from an index | `P14` `sec:chirality` |
+| **`I20`** | ***`P04`'s path integral IS a first integral***, and the null-cone restriction is why the measurement works: no massive messenger could have supplied it | `P04` `sec:decomp` |
+| **`I21`** | ***least-arbitrariness and superintegrability are one property***, joined at transitivity of the group action | `P06` `sec:least-arbitrariness` |
 
-### ⌗ WHAT BOUNCED — four, and they are kept because a closed branch is the shape of the maze
+### ⌗ WHAT BOUNCED — and each with the blind spot of the test that killed it
 
-| # | what was asked | why it bounced, and **what the test that killed it was blind to** |
+| # | why it bounced | ***what the test that killed it could not see*** |
 |---|---|---|
-| **`I2`** | *is the corpus's separability Liouville integrability?* | **It is, exactly where `P09` puts it and nowhere else** — Carter separability on a Type-D cut IS Liouville integrability of the geodesic system, and the corpus claims it for no other sector. `Liouville` ×0 is an accurate absence. ⌗ *Blind spot: a count of `separable` cannot see that `P02`'s is ordinary English and `P14`'s is an identity criterion — **the count says ×24 and the field's object is ×25 minus those two**.* |
-| **`I3`** | *is the vector/tensor distinction the field's own?* | **Yes, and applied correctly without being named.** `Killing tensor` lives in `P09` ×7 and `P07` ×1 and nowhere else while manifest symmetry runs through nine papers. ⌗ *Blind spot: nothing in a count distinguishes "the corpus does not know this distinction" from "the corpus applies it so consistently that it never has to say it" — **only the distribution does**.* |
-| **`I4`** | *is any sector integrable in Liouville's sense?* | **Empty where it was asked and unasked where it has content.** The radial lift is 1 DOF with 1 integral, trivially integrable; the question has content only on `P10`'s $(q^A,p_A)$, which `P10` defines and does not count. ⌗ *Blind spot: the probe was framed on `P11`'s two charges, and **two conserved quantities is not two commuting integrals until someone counts the degrees of freedom they live on**.* |
-| **`I6`** · **`I8`** | *do `separable` and `Killing` carry two senses the way `integrable` does?* | **Both carry two objects and NEITHER earns a row, for the same reason**: the phrase is never the same. `separability`-as-identity-criterion and `Killing form` are always written with their qualifier. ⌗ *Blind spot: a sense-count alone would have scored both as bites — **the discriminator is whether the two words a reader actually sees are identical**, which is what `I7` has and these do not.* |
+| **`R0`'s theory-names** | `Liouville`, `Hamilton--Jacobi`, `action-angle`, `complete integrability`, `bi-Hamiltonian` all ×0 | ⛔ *the count is right and the inference from it would have been wrong.* **The corpus does the field's work under other names throughout** — `I8`, `I17`, `I20` are all in papers scoring zero on the relevant term |
+| **`Lax`** | ×112 raw across fifteen papers, **×0 word-bounded** | *the raw hits are `\Lambda` splitting under the search.* **A bake thrown on that number opens by hunting Lax pairs in a corpus that has never written one** |
+| **`P05`** | `CHECKED-NEGATIVE` | *its invariants are algebraic; $\alpha$ is the **scale**, $M$ a potential parameter, $E$ the only first integral. **And its one dynamical statement was already landed by the variational bake** — complete for a different reason than empty* |
+| **`I2`** *(60)* | separability here is weaker than Liouville integrability | *`I13` later supplied what "weaker" means: **the linear integrals run out at Kerr–dS**, which is the deficit the Killing tensor fills* |
 
-### ⌗ THE BOUNDARY — where this field stops, stated so the next runner does not re-walk it
+### ⌗ WHERE THE BOUNDARY IS
 
-***The corpus does the field's work and carries almost none of its names, and after seventeen reads that is a measurement rather than an impression.*** *`Liouville` ×0, `Hamilton--Jacobi` ×0, `action-angle` ×0, `bi-Hamiltonian` ×0, `Lax` ×0 word-bounded — against `Carter` ×22, `separable` ×24, `Killing vector` ×23.*
+***This field reaches the corpus's SOLVABILITY, not its ontology.*** *It says which of the corpus's
+equations integrate and why, which of its constants are integrals, and where its symmetry runs out. It says
+nothing about whether the substrate exists, what a cut is, or what the layer is — those are the framework's
+own and the field has no purchase on them.*
 
-⇒ ***AND THE FIELD'S VERDICT ON THAT IS NOT "A HOLE".*** *Three of the four absent names would be **false** if written: the corpus has no Lax pair, no bi-Hamiltonian structure and no action-angle variables, because it never integrates a system in coordinates. **`Hamilton--Jacobi` is the one absence that is a genuine omission**, since `P09`'s separability IS Hamilton--Jacobi separability and saying so would name the theorem `I1` turns on.*
+⌗ ***The one place it crosses into ontology is `I21`, and it crosses by identity rather than by
+argument***: *least-arbitrariness is an epistemic preference and maximal superintegrability is a dynamical
+fact, and **they are the same statement about transitivity**. That is a join, not an encroachment.*
 
-⛔ ***WHAT THIS FIELD CANNOT REACH.*** *Whether `P10`'s deparametrised $(q^A,p_A)$ carries enough commuting integrals is a **computation on the `TT` tower**, not a reading of the papers. `I4` is scoped, not answered, and this ledger must not appear to have answered it.*
+⛔ ***AND WHAT IT CANNOT SETTLE, STATED:*** *`I4` — whether the layer's true degrees of freedom
+$(q^A,p_A)$ are Liouville-integrable. `P10` makes the question askable for the first time in the corpus and
+does not count them. **The radial lift is $1$ DOF with $1$ integral and so trivially integrable, which is
+where the question is empty; on the tower it is open and would need a degrees-of-freedom count this pass
+did not do.** Recorded as a question, not an answer.*
 
----
 
 ## ⌗ THE LEAD REGISTER — every row marked, none left to infer
 
