@@ -153,14 +153,17 @@ in the register below.***
 > | **`I13`** | `receipts/P12_algebroid_paper/I13_the_stratification_is_a_ledger_of_first_integrals.py` | *the ladder, 15 to 1, with Kerr–dS **short by exactly one** — and the non-complementarity with the moduli count **asserted so it cannot be inferred*** |
 > | **`I9`** | `receipts/P10_canonical_time/I9_the_adiabatic_parameter_diverges_where_the_action_integral_converges.py` | *the parameter diverges as $s^{-1/3}$ while the exponent converges as $S^{1/3}$ — **two powers, two questions** — with adversarial controls firing in opposite directions* |
 > | **`I19`** | `receipts/P14_matter_sector_paper/I19_the_superpotential_is_not_shape_invariant.py` | *no constant shift exists; the one that works gives $R=0$. **Carries a POSITIVE CONTROL** — Pöschl–Teller registers invariant with $R=2\lambda-1$, so the negative discriminates rather than merely failing to find* |
+> | **`I17`** | `receipts/p0_geometric_core/I17_the_substrate_is_maximally_superintegrable.py` | *the generators **counted from the embedding and rank-checked**, not quoted; 15 for $\mathrm{dS}_5$ against the $2D-1=9$ bound, with controls separating Liouville from superintegrability* |
+> | **`I20`** | `receipts/P04_modern_parallax/I20_the_redshift_is_a_conformal_killing_charge_on_the_null_cone.py` | *$\partial_\eta$ shown **conformal and not exact** by explicit Lie derivative; the massive control fails off the cone and **recovers in the massless limit*** |
 > | **`I5`** *(60)* | `receipts/P05_groupoid/I5_the_homothety_charge_is_a_first_integral_of_the_restricted_system.py` | *the bracket is weakly zero and not identically zero* |
 > | **`I7`** *(60)* | `receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py` | *the canon row's evidence* |
 >
 > ⚠ ***AND THE PROBES WITH NO RECEIPT ARE NAMED TOO, WITH WHY.*** *`I0`, `I18`'s canon half — **counted and
 > read, not computed**; the evidence is a census and a pair of read sites, and a receipt would only restate
-> the count. `I1`, `I9`, `I10`, `I11`, `I14`, `I15`, `I17`, `I19`, `I20`, `I21` were each **verified
-> symbolically in session**; `I12` and `I13` carry the two whose reuse is heaviest, and the rest are
-> **owed** rather than exempt. **Recorded as owed, not quietly skipped.***
+> the count. `I1`, `I10`, `I11`, `I14`, `I15`, `I21` were each **verified symbolically
+> in session** and are **OWED a receipt** — recorded as owed, not exempt and not quietly skipped.
+> ⛭ ***Seven are written:*** *`I8`, `I9`, `I12`, `I13`, `I17`, `I19`, `I20`, chosen because their results are reused
+> hardest — **`I13` alone is leaned on by `I17`, `I18` and `I19`**.*
 
 ## ⌗ THE PROBE REGISTER — every row marked before this field is closed
 
