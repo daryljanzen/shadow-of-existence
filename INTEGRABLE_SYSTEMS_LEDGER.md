@@ -119,7 +119,7 @@ files, **which is not reading and this programme's own absolute rule says so**. 
 `cor:carter` and `rem:carter-chain` in full *at the site*, which is enough to justify the clause that landed
 there and **is not a verdict on `P09` for this field**.*
 
-⇒ ***So: 3/17 papers read as of r3601 — `P09`, `P07`, `P11`.*** *A completed bake's reach close reads, for comparison: "all seventeen papers
+⇒ ***So: 4/17 papers read as of r3603 — `P09`, `P07`, `P11`, `P10`.*** *A completed bake's reach close reads, for comparison: "all seventeen papers
 WORKED or CHECKED-NEGATIVE **by name** … read in full this pass, three sweeps across all seventeen bodies."
 **That is the standard this ledger has not yet met and must not appear to have met.**
 
@@ -151,12 +151,12 @@ in the register below.***
 | **`I1`** | *does the field recognise `P09`'s origin for the Carter constant?* | ⛔ **BITE** — (a) is separability returning its own equivalent; (b) is the origin. **Landed** in `P09 rem:carter-chain`. *Rests on a site read of two passages; `P09`'s reach verdict is still owed* |
 | **`I2`** | *is the corpus's separability Liouville integrability, or something weaker?* — `separable` ×23, `Liouville` ×0 | ⟐ open |
 | **`I3`** | *`P09` says reachability is governed by the count of Killing **vectors**, not tensors. Is that the field's own distinction between symmetry and hidden symmetry?* | ⟐ open |
-| **`I4`** | ***sharpened by `P11`'s read, r3601.*** *`P11` carries two conserved quantities in this field's sense — the twist $c$ and the shear charge $C_0$ — names them with two different words, and never asks whether its homogeneous sector is **integrable** in Liouville's sense. **The question the field owns is whether the number of independent commuting integrals matches the degrees of freedom**, and the corpus asks it of no sector* | ⟐ **open, and now well-posed** — *settling it needs a degrees-of-freedom count this pass has not done, and must not be guessed* |
+| **`I4`** | ***sharpened by `P11`'s read, r3601.*** *`P11` carries two conserved quantities in this field's sense — the twist $c$ and the shear charge $C_0$ — names them with two different words, and never asks whether its homogeneous sector is **integrable** in Liouville's sense. **The question the field owns is whether the number of independent commuting integrals matches the degrees of freedom**, and the corpus asks it of no sector* | ⛭ **SCOPED by `P10`'s read, r3603** — *the radial lift is $1$ DOF with $1$ integral, so trivially integrable and the question is empty there. It has content only on the layer's true $(q^A,p_A)$, which `P10`'s deparametrisation defines and does not count. **Not owed as a paper clause; recorded as where the question lives*** |
 | **`I5`** | *`V5` (variational) landed a homothety conserving its charge on the null cone only. Is that a first integral in this field's sense, and does it enter the count?* | ⟐ open |
 
 ---
 
-## ⛭ THE REACH REGISTER — one paper, one verdict, read. **3 of 17.**
+## ⛭ THE REACH REGISTER — one paper, one verdict, read. **4 of 17.**
 
 | paper | verdict | what was read, and what it holds |
 |---|---|---|
@@ -168,7 +168,9 @@ in the register below.***
 | **`P11`** | ⛭ **WORKED — two genuine first integrals, and the field's own homonym** | *`sec:` on the unpolarized cut and the homogeneous sector read in full.* **Two conserved quantities in this field's sense**: the **twist** $c=R\,e^{2P}Q_t=\mathrm{const}$, obtained by integrating the $Q$ wave-map equation once and named `first integral` — *and it carries physics, since the parity acts on it as $c\mapsto-c$, so **the graviton's handedness is the sign of a conserved charge***; and the **canonical shear charge** $C_0:=R_t-2R\psi_t$, from `AREA` $-\,2\,$`WAVE` cancelling the $\Lambda$ source identically, giving $\dd s/\dd\tau=-C_0/2V$ so anisotropy decays as the inverse volume. `Killing vector` ×6 |
 | | ⌗ **and its `integrability` ×1 is sense `⑤`, not this field's** | *$\partial_t\gamma_z=\partial_z\gamma_t$, the cross-derivative condition on a first-order quadrature, holding identically on shell. **A third paper confirming `I0` from a third sense** — `P09` field, `P07` both, `P11` the PDE condition* |
 | | ⟐ **what the read produced is a sharper QUESTION, not a finding** | *see `I4` below. **`P11` names its two integrals with two different words and never asks whether the homogeneous sector is integrable in this field's sense.** Whether it is requires counting degrees of freedom against commuting integrals, which this pass has not done. ***Recorded as a probe. A read that sharpens a question rather than producing a claim is a legitimate outcome, and writing it up as a finding is how a ledger acquires a manufactured landing.*** |
-| **the other fourteen** | — | **not read. No verdict.** |
+| **`P10`** | ⛭ **WORKED — nothing owed, and it SETTLES `I4`'s scope** | *`sec:deparam` and the instanton paragraph read in full.* Two genuine first integrals: the marginal congruence's $\tfrac12\dot r^{2}+V=\tfrac12$ with $V=\tfrac12 f(r)$, and its Euclidean continuation $\tfrac12 r'^{2}-V=-\tfrac12$, satisfied identically by the closed form $r(s)=-(2M\alpha^{2})^{1/3}\lvert\sin(3s/2\alpha)\rvert^{2/3}$ — *which is what makes the segment a solution of a variational principle rather than a formal device.* **Correct as it stands; no clause owed** |
+| | ⛭ **and this settles where `I4` has content** | ***The radial lift is ONE degree of freedom with ONE conserved quantity, so it is Liouville-integrable trivially — $n=1$, one integral, which is the definition.*** *So the question has no content there and the corpus loses nothing by not asking it.* ⇒ *It has content only for the **layer's true degrees of freedom**, and `P10` is exactly where they are defined: the deparametrised constraint $p_\tau+\Hphys(q^A,p_A)=0$ produces **a genuine Hamiltonian on gauge-invariant $(q^A,p_A)$**. **`P10` makes the integrability question askable for the first time in the corpus and does not count them** — and counting them is the `TT` tower's business, not this pass's* |
+| **the other thirteen** | — | **not read. No verdict.** |
 
 ---
 
