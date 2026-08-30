@@ -49,7 +49,22 @@ REVREF = re.compile(r'\b(?:r\d{3,4}[a-z]?|c54\.\d+)\b')
 
 UNI = {'\u2014': '---', '\u2013': '--', '\u00d7': r'$\times$', '\u2018': '`',
        '\u2019': "'", '\u201c': '``', '\u201d': "''", '\u00f6': r'\"o',
-       '\u00e9': r"\'e", '\u2192': r'$\to$', '\u2317': '', '\u2026': r'\dots{}'}
+       '\u00e9': r"\'e", '\u2192': r'$\to$', '\u2317': '', '\u2026': r'\dots{}',
+       # ⛔⛭⛭ SCAR FIVE, r3584 (node 60), AND IT IS THE ONE THIS FILE'S OWN HEADER PREDICTED.
+       #   *This module opens by naming the receipt generator's scars and closing them "rather
+       #   than waiting to acquire them" -- and then kept a SECOND translation table, twelve
+       #   entries against that generator's two hundred and thirty-seven, with nothing comparing
+       #   them.*  ⇒ ** The registry is clean today.  The ledger FRONTMATTER the registry copies
+       #   its descriptions from is not: four ledgers carry `⟺` twice, `ω` and `Ⓒ`, every one of
+       #   which the OTHER rail has translated already. **  *So the rail was one copy-paste from
+       #   `sys.exit(2)`, and the survey that would have said so could not see this rail at all.*
+       #   ⌷ ** These three are NOT invented here. **  *They are the receipt rail's own entries,
+       #   `(C)`, `\iff`, `\omega`, carried across verbatim -- a second rail may not spell the
+       #   same glyph a second way, which is the defect one line up in this very table.*
+       #   ⚠ *The refusal below STAYS: a glyph nobody surveyed must still stop a build.  What
+       #   changes is that `check_glyph_coverage` now surveys THIS rail too, so the table can no
+       #   longer fall behind the documents that feed it without a gate saying so.*
+       '\u24b8': '(C)', '\u27fa': r'\ensuremath{\iff}', '\u03c9': r'\ensuremath{\omega}'}
 
 
 def tex_escape(s):

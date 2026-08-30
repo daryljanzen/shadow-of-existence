@@ -142,7 +142,16 @@ RAILS = [
          #   completed at 45 markers across 14 papers). ** A floor that is not raised when
          #   the rail grows stops being a ratchet and becomes a comment: at min_files=3 this
          #   rail could have silently lost ELEVEN appendices and still passed. **
-         min_rows=15, min_files=14,
+         # ⛭ RAISED 14 -> 15 at r3584: the rail grew again (P15's Appendix L). ** The ratchet
+         #   only works if it is raised when the rail grows -- at 14 this rail could have lost
+         #   one appendix silently. **
+         # ⛔⛭ AND THAT SENTENCE IS NO LONGER THE INSTRUCTION -- 59's r3585 DERIVED THE FLOOR.
+         #   *Four raises in two days was the symptom; the number is now computed from the papers
+         #   that CARRY the rail's markers, which is the source that OBLIGES the artefact and
+         #   cannot be walked back by deleting one.*  ⇒ ** Do not hand-raise this again. **  *It
+         #   is kept only as the floor under the derived floor (`max(derived, declared)`), so a
+         #   legitimate fall in the derived number cannot be used to lower the guarantee.*
+         min_rows=15, min_files=15,
          # ⛭ r3576: was the literal `P17 … appendix_ledgers_P17.tex`, so a stale P15 was
          #   answered with a command that regenerates P17.  ** A remedy that names the
          #   wrong file is worse than none: it is followed, it changes nothing, and the

@@ -148,6 +148,12 @@ _MARKERS = {
     # structural bullets: they carry emphasis in the source and render as nothing
     '\u2337': '', '\u232b': '', '\u25a3': '', '\u2605': '', '\u2316': '', '\u2699': '',
     '\u2713': '',
+    # ⛭ r3584: U+2705, the HEAVY WHITE CHECK MARK, found by check_glyph_coverage in OWED.md --
+    #   three times, all of them the status bullet on a closed row (`- [x] (624) ✅ **CLOSED ...`).
+    #   It is U+2713's emoji twin doing U+2713's job, and U+2713 has rendered as nothing since the
+    #   survey.  ** The same mark in a second spelling, which is the hole this table keeps
+    #   growing. **  Translated to its family's form, not to a new one.
+    '\u2705': '',
     # things that are actually mathematics and must survive as mathematics
     '\u27e8': '\\ensuremath{\\langle}',
     '\u27e9': '\\ensuremath{\\rangle}',
