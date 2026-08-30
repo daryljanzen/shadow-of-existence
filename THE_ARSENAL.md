@@ -1290,3 +1290,46 @@ this line has now been caught treating it as an answer four times, having writte
 ⌷ *`D6` is annotated in place rather than rewritten: its `rigidity` half stands, its `P05` reading
 stands, and the one clause that over-reached is struck with the correction beside it. The original
 verdict is the record.*
+
+# ⛔⛭⛭⛭ THE CENSUS SCREENED HALF A FIELD, AND READ THE SILENCE OF THE OTHER HALF AS ABSENCE — r3676
+
+*The four failures at r3672 were all* ***reading the aggregate instead of the sites***. **This is a
+different and larger one: the term list did not span the field.**
+
+*The index-theory bake screened six terms — `index`, `obstruction`, `Atiyah`, `Atiyah–Hirzebruch`,
+`Dirac operator`/`spin structure`, `equivariant index`/`index theorem`.* ⛔ **Every one is from the
+Atiyah–Singer story. Not one covering-space term was screened, and this field is differential topology
+*and* index theory.**
+
+| unscreened | corpus | where |
+|---|---|---|
+| **`monodromy`** | **×92** | `P05` ×44 · `P14` ×14 · `P16` ×9 |
+| **`deck`** | **×58** | `P05` ×21 · `P14` ×15 · `P03` ×12 |
+| **`branched`** | **×20** | `P05` ×11 · `P14` ×4 · `P03` ×3 |
+
+***`P05` alone carries "deck transformations of the horizon cubic's three-sheeted cover branched at
+Nariai, the monodromy about a Nariai point is σ, the deck group S₃".*** *Textbook branched-covering
+theory, worked at length — and `P03` and `P05` were both scored **`CHECKED-NEGATIVE`** by that pass.*
+
+⇒ **Only `index` ×128 and `obstruction` ×79 outrank `monodromy` ×92 among everything the table did
+screen.** *The omitted half is not a tail.*
+
+## ⌗ WHAT MAKES THIS WORSE THAN THE OTHER FOUR
+
+*`SIX_FIELDS_WORK_ORDER_v2.md` §0 already says it:* ***"A term list is a list of what you already know
+the field to contain."*** **I read that, agreed with it, quoted it — and the failure it names had
+already happened in the ledger I was quoting it into.** *The list encoded my picture of the field, and
+my picture was the index theorem.*
+
+⌷ **In fairness to the r3610 pass, it SAW the cover** — *`P05`'s row says "the disagreement is about
+which field owns the cover".* ⛔ *But it made that scoping call **without the footprint**, and a
+boundary drawn without measuring what is on the other side of it is a guess wearing a verdict's
+clothes.*
+
+## ⛭ AND THE CONTAMINATED TERMS ARE NAMED, BECAUSE THREE NEARLY WENT IN
+
+*`sheet` ×11, `degree` ×44 and `lift` ×77 look like covering-space vocabulary and are not:* **`sheet`
+is the hyperboloid's upper sheet; `degree` is vertex degree ("six vertices of degree two") and
+polynomial degree; `lift` is the cosmogenetic lift.** ⇒ *All three were **read before being
+excluded** — which is the same discipline this entry exists to record, applied to the correction
+rather than only to the defect.*
