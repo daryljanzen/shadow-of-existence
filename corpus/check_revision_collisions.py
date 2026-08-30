@@ -116,6 +116,14 @@ BASELINE = {'r3622',
             #:     predated it -- the same rate-limit again, which is what `_print_next` had to stop
             #:     depending on.  See `next_id_for_parity`: the number now prints on CI too.*
             'r3644',
+            #: ⛔ ** r3646 -- THE FOURTH IN ONE AFTERNOON, AND THE ONE THAT SETTLED THE REGISTER-ID
+            #: BAND. **  *59's `P05` pass B against 60's "the finding collided while it was being
+            #: written".*  ⌗ *Four consecutive revisions (`r3640`, `r3642`, `r3644`, `r3646`) taken
+            #: twice, each by consecutive numbering from a front that was the other line's.*
+            #:   ⇒ ** Consecutive numbering is not a fault to be corrected; it is what everyone
+            #:     does.  That is why `check_register_ids` took a RANGE band rather than parity for
+            #:     the second counter -- a band that survives the habit instead of asking for it. **
+            'r3646',
             'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
             'r2821', 'r3099', 'r3100', 'r3105', 'r3108',
             # ⛔ added r3128 (`L-256`): the three that arrived AFTER r3112 reported the class and

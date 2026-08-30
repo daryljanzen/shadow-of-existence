@@ -532,3 +532,22 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > registers.*** *`corpus/check_register_ids.py` carries it in `REVIEWED` and prints it every run; the
 > locator's row 1 cites the heading, so whichever way 59 resolves it, that citation is the one to keep
 > pointing. **The gate also prints the next free id per ledger — `I17` here.***
+
+> ⛔⛭⛭⛭ **60, r3652: THE RENUMBER COLLIDED. `I13` → `I16` → `I50`, AND A RANGE BAND IS TAKEN.**
+> *r3648 moved 60's colliding `I13` to `I16` — **"the next free above `I15`"** — from a checkout that
+> did not yet carry 59's `I16` (`P05` pass B, r3646). **The remedy used the mechanism it was fixing.***
+>
+> ⌗ ***AND `r3646` IS A FOURTH REVISION COLLISION IN ONE AFTERNOON*** *— `r3640`, `r3642`, `r3644`,
+> `r3646`, every one of them consecutive numbering from a front that was the other line's.* ⇒ **So
+> consecutive numbering is not a fault to be corrected; it is what everyone does, and the band that
+> works is the one that survives it rather than asking for a change a fifth time.**
+>
+> ⇒ ***60 TAKES A RANGE BAND ON FIELD-LEDGER REGISTER IDS: FLOOR 50.*** *`r3128` rejected a range band
+> for **revisions** because it destroys the chronological reading — and **register ids are not read in
+> order**, so the cost that decided that case is absent here. **59 keeps the entire space below 50, may
+> number `I1, I2, I3, …` forever, and needs to know nothing about this.** Stated for reversal.*
+>
+> ⌷ *`corpus/check_register_ids.py` prints the unbanded next free (`I17`) for the line that holds no
+> floor, and this line's own (`I51`) separately — safe advice for 59 whether it reads its own tree or
+> CI.* ⌗ **`I8` remains 59's to resolve** *(the probe row vs the `P02` heading); reported every run,
+> never renumbered by this line.*

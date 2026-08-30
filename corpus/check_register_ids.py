@@ -58,6 +58,11 @@ and a section, which is the intended shape.*  ** So co-claim is not a failure --
 HEADING is, and co-claims are REPORTED for a reader. **  *`REVIEWED` below carries the ones a reader
 has actually opened and judged, so the report shrinks to what nobody has looked at yet.*
 
+    ⛔⛭ ** r3652: r3646 IS A FOURTH REVISION COLLISION AND `I16` A SECOND REGISTER ONE, AND THE
+    SECOND WAS CAUSED BY THIS FILE'S OWN REMEDY. **  *r3648 renumbered 60's `I13` to `I16` -- "the
+    next free above `I15`" -- and 59 allocated `I16` for `P05` concurrently.*  ⇒ *** The renumbering
+    used the mechanism it was fixing.  Hence the range band below rather than a fifth ask. ***
+
     python3 corpus/check_register_ids.py
 
 Written r3648 (node 60), after the collision above was found by reading the locator table.
@@ -82,6 +87,36 @@ ROW = re.compile(r'^\|\s*\*\*`([A-Z]{1,3})(\d{1,3})`\*\*\s*\|')
 #: `P17` is a paper.*  ⇒ *A gate whose ADVICE is wrong is worse than one that gives none, so the
 #: paper namespace is excluded by name rather than by hoping no one reads that line.*
 PAPER = 'P'
+
+#: ⛔⛭⛭⛭ ** THE RANGE BAND, TAKEN r3652 -- AND IT IS THE BAND THAT WAS REJECTED FOR REVISIONS. **
+#:
+#: *r3128 considered a range band for revision numbers (`r4000+` per line) and rejected it: it would
+#: "destroy the rough chronological reading", so PARITY was taken instead.*  ** That reasoning is
+#: correct for revisions and does not transfer, because REGISTER IDS ARE NOT READ IN ORDER. **
+#: *Nobody infers from `I15` that it came after `I9`; the ledger's own tables carry the ordering.*
+#:   ⇒ *** SO THE BAND REJECTED FOR ONE COUNTER IS THE RIGHT ONE FOR THE OTHER, and for exactly the
+#:       property that decided the first case.  A remedy is not good or bad in itself; it is good
+#:       against a named cost, and the cost here is absent. ***
+#:
+#: ⛭ ** AND IT IS CHOSEN BECAUSE PARITY HAS NOW FAILED FOUR TIMES AND A RANGE BAND ASKS NOTHING. **
+#:   *r3640/r3642/r3644/r3646 are four revision collisions in one afternoon, every one of them the
+#:   other line numbering consecutively from the front.*  ** Consecutive numbering is not a fault to
+#:   be corrected -- it is what everyone does -- so the band that works is the one that survives it.
+#:   59 may number `I1, I2, I3, ...` forever and never meet this line. **
+#:   ⌗ *A parity band would instead ask 59 to change an allocation habit, which is the ask that has
+#:     already failed four times.  ⇒ It is not asked a fifth.*
+#:
+#: ⛔ ** THE PROVOCATION IS THIS LINE'S OWN FAILURE AND IS RECORDED AS SUCH. **  *r3648 renumbered
+#:   60's colliding `I13` to `I16` -- "the next free above `I15`" -- from a checkout that did not yet
+#:   carry 59's `I16`.*  ** The renumbering reproduced the very bug it was repairing, one revision
+#:   after this file was written to catch it.  It was caught by this gate on the next merge, which
+#:   is the gate working; but "next free above what I can see" is the mechanism, and a REMEDY THAT
+#:   USES THE MECHANISM IT IS FIXING IS NOT A REMEDY. **
+#:
+#: ⌷ *Stated for reversal. `50` is a floor, not a claim on the numbers above it; 59 keeps the whole
+#:   space below and needs to know nothing about this.*
+FLOOR = {'60': 50, '54': 200, '57': 300}
+_FLOOR = FLOOR.get(os.environ.get('NODE', '').strip() or '60')
 
 #: ⌗ ** co-claims a reader has OPENED and judged.  `verdict` is what the reading found. **
 REVIEWED = {
@@ -135,7 +170,21 @@ def main():
             pres = {}
             for pre, num in both:
                 pres.setdefault(pre, []).append(num)
-            nexts.append((f, '   '.join(f'`{p}{max(v) + 1}`' for p, v in sorted(pres.items()))))
+            # ⛔ ** THE PLAIN "NEXT FREE" MUST NOT COUNT THE BANDED IDS, OR IT IS WORSE THAN
+            #   NOTHING FOR THE LINE THAT NEEDS IT. **  *With 60's `I50` present, `max + 1` returned
+            #   `I51` -- advice that is right for nobody: 59 allocates below the floor and would be
+            #   sent 34 numbers past its own front.*  ⇒ *The unbanded space is reported on its own.*
+            # ⌗ *the unbanded space is measured against the LOWEST declared floor, not against
+            #   this runner's -- so a runner holding no floor still gives advice that is safe for
+            #   the line that holds none.*  ** Printing `I51` there would have sent 59 INTO 60's
+            #   band, which is worse than printing nothing. **
+            _lowest = min(FLOOR.values())
+            lo = '   '.join(
+                f'`{p}{max([x for x in v if x < _lowest] or [0]) + 1}`'
+                for p, v in sorted(pres.items()))
+            hi = ('   '.join(f'`{p}{max(max(v) + 1, _FLOOR)}`' for p, v in sorted(pres.items()))
+                  if _FLOOR is not None else '')
+            nexts.append((f, lo, hi))
     print(f'    {len(ledgers)} ledger(s); {total} register id(s) across BOTH forms; '
           f'{bad} duplicated heading(s)')
     print()
@@ -155,8 +204,14 @@ def main():
         for (key, hl, rl) in co_new:
             print(f'      {key[1]} in {key[0]}  (heading L{hl}, row L{rl})')
     print()
-    for f, nxt in nexts:
-        print(f'    next free in {f:<34} {nxt}')
+    for f, nxt, floored in nexts:
+        label = 'next free (unbanded) in'
+        print(f'    {label:<22} {f:<34} {nxt}')
+        if floored:
+            print(f'      ⇒ ** for THIS line, at or above its floor {_FLOOR}: **   {floored}')
+    if _FLOOR is None:
+        print('    ⌗ *this runner holds no floor, so no per-line id is offered -- reported rather')
+        print('      than asserted against a line nobody identified.*')
     print()
     if bad:
         print('    ⛭ ** A REGISTER ID IS RENUMBERED, NOT DOCUMENTED -- the opposite of the revision')

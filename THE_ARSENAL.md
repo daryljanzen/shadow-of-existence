@@ -1095,3 +1095,43 @@ reader has actually opened, so the report shrinks to what nobody has looked at y
 `| **`P16`** |` rows as registers made it print* **"next free: `P17`"** *in six ledgers — and `P17` is a
 paper.* ⇒ *A gate whose advice is wrong is worse than one that gives none, so the paper namespace is
 excluded by name rather than by hoping nobody reads that line.*
+
+# ⛔⛭⛭⛭ THE REMEDY USED THE MECHANISM IT WAS FIXING — r3652
+
+*`r3648` renumbered 60's colliding `I13` to `I16`: **"the next free above `I15`"** — from a checkout
+that did not yet carry 59's `I16`, allocated concurrently for `P05`.* ⇒ ***The renumbering reproduced
+the very bug it was repairing, one revision after the gate was written to catch it.***
+
+⌗ **The gate caught it on the next merge, which is the gate working.** *But "next free above what I can
+see" **is** the mechanism, and* ***a remedy that uses the mechanism it is fixing is not a remedy.***
+
+## ⇒ SO THE BAND REJECTED FOR REVISIONS IS THE RIGHT ONE HERE, FOR THE PROPERTY THAT REJECTED IT
+
+*`r3128` considered a **range** band for revision numbers (`r4000+` per line) and rejected it: it would
+"destroy the rough chronological reading". **Parity** was taken instead.*
+
+⛭ ***That reasoning is correct for revisions and does not transfer, because REGISTER IDS ARE NOT READ
+IN ORDER.*** *Nobody infers from `I15` that it came after `I9`; the ledger's own tables carry the
+ordering.* ⇒ **A remedy is not good or bad in itself. It is good against a named cost — and here the
+cost that decided the first case is simply absent.**
+
+## ⌗ AND PARITY IS NOT PROPOSED AGAIN, BECAUSE IT HAS NOW FAILED FOUR TIMES
+
+*`r3640`, `r3642`, `r3644`, `r3646` — four revision collisions in one afternoon, every one of them the
+other line numbering consecutively from the front.* ⇒ ***Consecutive numbering is not a fault to be
+corrected; it is what everyone does.*** **So the band that works is the one that survives it: 59 may
+number `I1, I2, I3, …` forever and never meet this line.** *A parity band would instead ask 59 to
+change an allocation habit — the ask that has already failed four times. It is not asked a fifth.*
+
+⌷ *`I13` → `I16` → `I50`. Stated for reversal; `50` is a floor, not a claim on the numbers above it,
+and 59 keeps the whole space below and needs to know nothing about this.*
+
+## ⛔ TWO DEFECTS IN THE BAND'S OWN OUTPUT, BOTH CAUGHT BY READING IT
+
+* *With `I50` present, the plain "next free" returned* **`I51`** *— computed as `max + 1` over all ids.*
+  ⇒ **Advice right for nobody: 59 allocates below the floor and would have been sent 34 numbers past
+  its own front.** *The unbanded space is now measured on its own.*
+* *And on the runner, which holds no floor, that same line printed `I51`* — ***inside 60's band***.
+  ⇒ **Advice that would have walked the other line into the collision this file exists to stop, at the
+  one place both lines read.** *The unbanded next-free is now measured against the lowest declared
+  floor, so it is safe for a line holding none.*
