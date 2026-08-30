@@ -298,6 +298,35 @@ radiation's alone. **Linearity is why it is radiation's alone.***
 
 ---
 
+## ⛭⛭⛭ `I15` — **THE HORIZON IS A FIXED POINT OF THE OUTGOING NULL FLOW, AND ITS EIGENVALUE IS THE SURFACE GRAVITY** — r3644
+
+***The first LOW-confidence prediction tested, and it held.*** *The locator hedged: null generators are a
+geodesic congruence and this field owns geodesic flows, **but `P01`'s subject is causal structure rather
+than motion**. The constancy has a dynamical reading regardless.*
+
+*`P01` argues metrically: every horizon-crossing event occurs at the same areal radius, an invariant, so
+the invariant spatial separation vanishes and by its theorem the temporal separation does too.*
+
+⌗ **THE SAME CONSTANCY, READ AS A FLOW.** *In ingoing Eddington--Finkelstein coordinates the outgoing null
+rays obey $\dd r/\dd v=f(r)/2$, a one-dimensional flow whose **equilibria are precisely the zeros of
+$f$**. So a generator stays at $r_h$ because $r_h$ is a **fixed point**, not by accident of
+parametrisation.*
+
+| order | the statement |
+|---|---|
+| **zeroth** | $f(r_h)=0$: the fixed point exists — `P01`'s invariant constancy |
+| **first** | $\dd r/\dd v\simeq\kappa\,(r-r_h)$ with $\kappa=f'(r_h)/2$ — **the surface gravity is the eigenvalue**, verified: $\kappa=1/4M$ for Schwarzschild and the linearisation gives $1/4M$ |
+
+⇒ ***So the horizon's spatial constancy and its surface gravity are one statement about one fixed point,
+read at zeroth and first order***, *and neighbouring outgoing rays separate as $e^{\kappa v}$ with the
+point hyperbolic exactly when $\kappa\neq0$.*
+
+⌗ ⛭ **AND IT JOINS `I10`.** *At Nariai $\kappa=0$, so the fixed point is **non-hyperbolic** — which is
+`I10`'s equilibrium-at-the-orbit's-own-energy, reached here from the null side rather than the timelike
+one. **`P01`, `P03` and this field now say one thing about the degenerate horizon in three languages.***
+
+---
+
 ## ⛭⛭⛭ THE LOCATOR — every paper, the sections named, the prediction stated — r3626
 
 > **⛔ THIS REPLACES THE HIGH/MEDIUM/LOW TABLE BELOW, WHICH WAS DOING THE WRONG JOB.** *A rank is a licence
@@ -327,7 +356,7 @@ radiation's alone. **Linearity is why it is radiation's alone.***
 | 7 | **`P08`** | `sec:kernel` · `sec:trichotomy` · `sec:cosmology` | *"$T_{\mu\nu}=0$ **is** a first-order linear ODE" is a solvability claim; the three constant-curvature slicings are a classification of solvable cases* | ⛭ **CONFIRMED, and the address was right** — *`I12`, landed. The first prediction to hit both paper and section* |
 | 8 | **`P12`** | `sec:anchor` · `sec:bracket` · `sec:strata` | *a **section selecting a flow** on a base is this field's setting; is that flow integrable, and **does the stratification index its integrals?*** | ⛭ **CONFIRMED on both, `sec:strata`** — *`I13`, landed. The prediction's second clause was the right question and it is answered yes* |
 | 9 | **`P16`** | `sec:lap` · `sec:rate` · `sec:interior` | *the lap is a closed orbit; "its exact closed solution" for the progenitor interior is another integrable case* | ⛭ **CONFIRMED on both, `sec:interior`** — *`I14`, landed, and it passes the sharp test set by `I11`/`I12`* |
-| 10 | **`P01`** | `sec:3` · `sec:5` | *horizon generators are a null geodesic congruence; does the metric-singularity condition have a first-integral statement?* | ⟐ **owed** |
+| 10 | **`P01`** | `sec:3` · `sec:5` | *horizon generators are a null geodesic congruence; does the metric-singularity condition have a first-integral statement?* | ⛭ **CONFIRMED, `sec:3`** — *`I15`, landed. **The first LOW-confidence prediction tested, and it held***: *the hedge was that `P01`'s subject is causal structure rather than motion, and the constancy turned out to have a dynamical reading anyway* |
 | 11 | **`P05`** | `sec:relations` · `sec:conjugacy` · `sec:alpha-invariant` | *"the single invariant is the geometry" — is that invariant in this field's sense, and does the $\alpha$-action have a conserved charge?* | ⟐ **owed** |
 | 12 | **`P07`** | `sec:lift-initial-rate` · `sec:sds-cosmology` | *the lift's closed form and the recovered Carter constant; states results derived elsewhere* | ⟐ **owed** |
 | 13 | **`p0`** | `sec:rulings` · `sec:standard` · `sec:unification` | *the straight null rulings are geodesics of the substrate; maximal symmetry is the largest possible algebra of first integrals* | ⟐ **owed** |
