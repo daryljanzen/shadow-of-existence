@@ -279,15 +279,73 @@ else.*
 | 10 | **`P01`** | `sec:3` · `sec:5` | *horizon generators are a null geodesic congruence; does the metric-singularity condition have a first-integral statement?* | ⟐ **owed** |
 | 11 | **`P05`** | `sec:relations` · `sec:conjugacy` · `sec:alpha-invariant` | *"the single invariant is the geometry" — is that invariant in this field's sense, and does the $\alpha$-action have a conserved charge?* | ⟐ **owed** |
 | 12 | **`P07`** | `sec:lift-initial-rate` · `sec:sds-cosmology` | *the lift's closed form and the recovered Carter constant; states results derived elsewhere* | ⟐ **owed** |
-| 13 | **`p0`** | `sec:rulings` · `sec:standard` · `sec:unification` | *the straight null rulings are geodesics of the substrate; maximal symmetry is the largest possible algebra of first integrals* | ⟐ **owed** |
-| 14 | **`P13`** | `sec:routes` · `sec:wall` | *the closed routes are an exhaustion argument; does any run through a conserved quantity?* | ⟐ **owed** |
-| 15 | **`P14`** | `sec:chirality` · `sec:count` | *the radial Dirac superpotential is a 1-D problem with a solvable structure — **shape invariance** is this field's neighbour* | ⟐ **owed** |
-| 16 | **`P04`** | `sec:decomp` · `sec:floor` | *$\ln(1+z)=\int H\,\dd t$ is a quadrature and probably the whole of it* | ⟐ **owed** |
-| 17 | **`P06`** | `sec:rules` · `sec:least-arbitrariness` | *no dynamics; the prediction is that this is genuinely empty, and **that prediction has to be tested rather than assumed*** | ⟐ **owed** |
+| 13 | **`p0`** | `sec:rulings` · `sec:standard` · `sec:unification` | *the straight null rulings are geodesics of the substrate; maximal symmetry is the largest possible algebra of first integrals* | ⛭ **REDIRECTED — `I13`, landed.** *Content real, address wrong: it is in `sec:shadows`/`sec:landing`, not the three named. **And right paper, WRONG REASON** — the prediction named "the largest algebra of first integrals"; the paper's claim is about the **Carter constant, the one integral that is NOT in that algebra**, and it holds because on a maximally symmetric space there is none to be had* |
+| 14 | **`P13`** | `sec:routes` · `sec:wall` | *the closed routes are an exhaustion argument; does any run through a conserved quantity?* | ⛭ **REFUTED on the letter, CONFIRMED on the kind.** *No route runs through a conserved quantity — the whole paper has **one** vocabulary site and it is "totally geodesic". But `sec:cascade`'s argument is a **RANK count** (SM rank 4 ⊄ SO(6) rank 3), and rank is the size of a maximal COMMUTING set — which is exactly what Liouville integrability counts. The field's counting principle, in Lie-theoretic clothes* |
+| 15 | **`P14`** | `sec:chirality` · `sec:count` | *the radial Dirac superpotential is a 1-D problem with a solvable structure — **shape invariance** is this field's neighbour* | ⛭ **CONFIRMED, and the address was right** — *`sec:chirality` writes the superpotential and both SUSY-QM partner potentials $W^2\pm\dd W/\dd\ell$ outright.* **And REDIRECTED on the object:** *the paper's actual first integral is the **conserved twist $c$** (P11's), used as the discriminant that separates the chiralities; and its real neighbour in this field is in the bibliography — **Jackiw–Rebbi**, not shape invariance* |
+| 16 | **`P04`** | `sec:decomp` · `sec:floor` | *$\ln(1+z)=\int H\,\dd t$ is a quadrature and probably the whole of it* | ⛭ **CONFIRMED — paper, address AND hedge.** *`sec:decomp` carries $\ln(1+z)=\int H\,\dd t$ verbatim, and "probably the whole of it" is right: the paper has **ZERO** sites of this field's vocabulary. ⌗ But the quadrature is $\int\dd a/a$ — an exact differential, so it is an **identity, not the integration of a dynamical system*** |
+| 17 | **`P06`** | `sec:rules` · `sec:least-arbitrariness` | *no dynamics; the prediction is that this is genuinely empty, and **that prediction has to be tested rather than assumed*** | ⛭ **CONFIRMED — and it needed the read.** *Zero sites of the field's vocabulary; the two terms a count WOULD have flagged in `sec:least-arbitrariness` are both homonyms — "Hamiltonian" is P10's self-adjoint-extension operator (functional analysis) and "invariant" is a parity-even part of a metric function. **The count says look; the read says empty.** 59 was right that this had to be tested* |
 
-⌗ ***4 of 17 through pass B. Thirteen sections-named papers owed a read.*** *Nothing here is dismissed on
-a count, and `P02` is the standing reason: it scores **zero on every term in this field's vocabulary** and
-is the field's founding example.*
+⌗ ***12 of 17 through pass B — 59 took rows 1–7 descending, 60 took rows 13–17 from the bottom, and
+rows 8–12 (`P12`, `P16`, `P01`, `P05`, `P07`) are owed.*** *Nothing here is dismissed on a count, and `P02`
+is the standing reason: it scores **zero on every term in this field's vocabulary** and is the field's
+founding example.*
+
+---
+
+## ⛔⛭⛭⛭ PASS B ON ROWS 13–17 — 60, r3642: THE FIELD'S OWN WORD OCCURS 21 TIMES AND ONCE IN ITS OWN SENSE
+
+> ⌗ ***Every site of this field's vocabulary in the five papers, read at the site rather than counted.***
+
+| paper | sites | what the word actually means there | the field's own sense? |
+|---|---|---|---|
+| **`p0`** | `integrable` ×1 (`sec:unification` L977) | *"no splitting is **integrable**" — a horizontal distribution, **FROBENIUS*** | ✗ homonym |
+| **`p0`** | `Carter` ×2 + `separable` ×1 | *"the Carter constant … the substrate's own maximal symmetry surfacing **in the separable corner**"* | ⛭ **YES — the only one** |
+| **`p0`** | `Killing` ×1, `geodesic` ×4 | *a Killing **flow's rate**; **totally** geodesic submanifolds; the **central** geodesic* | ✗ geometric, not dynamical |
+| **`P13`** | `geodesic` ×1 — *the entire paper* | *"a **totally geodesic** four-geometry"* — a submanifold, not a curve | ✗ |
+| **`P14`** | `integrable` ×8 | *"an **integrable** square-root singularity", "an integrable inverse square root" — **LEBESGUE**, the integral converges* | ✗ homonym |
+| **`P14`** | `conserved` ×5 | *"the **conserved spacetime Dirac norm**" — a normalisation, the object the paper is arguing AGAINST using* | ✗ |
+| **`P14`** | `conserved twist` ×3 | *"the conserved twist $c$ … the invariant that separates them; $c=0$ is the polarised cut"* | ⛭ **a genuine first integral, borrowed from `P11`** |
+| **`P14`** | `separability` ×1 | *"checked on locus, type, definition, equivariance and **separability**" — of two **loci*** | ✗ homonym |
+| **`P04`** | — | ***zero sites***, and the content is there anyway ($\ln(1+z)=\int H\,\dd t$) | ⌗ the `P02` shape |
+| **`P06`** | — | ***zero sites***; `Hamiltonian` ×1 and `invariant` ×1 are P10's self-adjoint operator and a parity-even part | ✗ both homonyms |
+
+⇒ ***THREE DISTINCT MEANINGS OF ONE WORD, AND THE FIELD'S OWN IS NONE OF THEM: Frobenius (`p0`),
+Lebesgue (`P14` ×8), Liouville (nowhere).*** *`P14` alone would read as this field's densest paper on a
+term count and carries **none** of it under that word.*
+
+⛭ ***AND THE TWO PAPERS THAT SCORE ZERO ARE THE TWO WHERE THE PREDICTION WAS EXACTLY RIGHT.*** *`P04`
+carries the quadrature with no vocabulary at all; `P06` is genuinely empty and only a read could say so.*
+⇒ **The vocabulary and the content are close to ANTI-correlated across these five, which is the sharpest
+form of `P02`'s lesson the corpus has yet produced.**
+
+## ⛭⛭ `I13` — **THE CARTER CONSTANT IS THE SUBSTRATE'S SYMMETRY, AND ON KERR IT IS NOT** — r3642
+
+`p0` says twice — `sec:landing` L1508, `sec:shadows` L1545 — that the Carter constant is *"the
+substrate's own maximal symmetry surfacing."* ***That is a theorem, and `p0` does not cite it.***
+
+* **On a maximally symmetric space every quadratic first integral is already a product of Killing
+  vectors.** *Measured **independently of the products** by solving $\{Q,H\}=0$ for a general
+  quadratic-in-momenta function on $S^n$:* $S^2$ **6 = 6 = 6**, $S^3$ **20 = 20 = 20** *(the third
+  number is $n(n+1)^2(n+2)/12$), flat across truncation degrees 2, 3 and 4 — so the count is the
+  geometry's, not the basis's.* ⇒ **A Carter-type constant on such a substrate carries no information
+  the symmetry did not already carry**, which is exactly the paper's sentence.
+* ⛔ **AND THE CONTROL IS WHAT MAKES IT A CLAIM.** *Kerr is not maximally symmetric: its Carter tensor
+  adds a **fifth** dimension to $\mathrm{span}\{g,\ \xi\xi,\ \xi\eta,\ \eta\eta\}$ — **irreducible**.
+  The sentence can come back false, and there it does.*
+* ⌗ **THE TEST THIS RECEIPT FIRST WROTE WAS THE WRONG ONE AND IS KEPT IN IT.** *(C) asserted the tensor
+  was Carter's **by construction**; an independence result about an unverified tensor is a result about
+  an arbitrary one. Integrating a non-equatorial Kerr geodesic fixed that — but the first drift test
+  halved `dt` expecting a fourth-order fall, and **the drift did not move (ratio 0.98)**. *The sentence
+  written before the number came back — "it falls like the step" — was false.* **What it was blind to
+  was in its own source: the force is finite-differenced, so no `dt` reaches below the derivative's
+  floor.** *Sweeping that step instead gives the textbook U — `1.1e-7 → 4.4e-12 → 2.9e-10` — bottoming
+  at $\varepsilon^{2/3}$. Q is conserved as exactly as the computation can see; a random symmetric
+  control on the same orbit moves by `4.2e-1`.*
+
+⇒ ***THE VERDICT ON ROW 13 IS `REDIRECTED` PLUS `58`'s THIRD CATEGORY — RIGHT PAPER, WRONG REASON.***
+*The prediction said maximal symmetry is "the largest possible **algebra of first integrals**". The
+paper's claim is about the **one integral that is not in that algebra**, and it is true precisely
+because on a maximally symmetric space there is no such integral to be had.*
 
 ---
 
