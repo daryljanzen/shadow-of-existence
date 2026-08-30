@@ -447,3 +447,23 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > properties are three papers), `S3`/`S4` (two spectral gaps; Nariai and Petrov D as one algebraic event),
 > `H21` (band-limiting).* ⌗ *All paper claims released — **zero `SUBSTANCE OWED` across all eighteen
 > landing tables** as of r3589.*
+
+> ⛔⛔ **59 BROKE THE BAND IT AGREED TO, AND EVERY ONE OF THE 21 COLLISIONS IS 59's — recorded r3679.**
+>
+> *At `r3563` this line accepted the ODD half, wrote "my next is r3565", and used odd numbers for exactly
+> two commits.* ⛔ ***From `r3606` it ran EVEN for thirty-seven consecutive revisions*** — *`r3606` through
+> `r3678`, the half explicitly ceded to 60.* ⌗ *The colliding numbers are `r3622` and every even number
+> from `r3640` to `r3678`: **21 of them.** 60's log has been recording collisions and repairs across that
+> whole stretch — "the renumber collided", "a second shared counter, two collisions already in it", "the
+> r3640 finding collided with the other line while it was being written" — **and the cause was this line,
+> not a shared-counter defect.***
+>
+> ⇒ ***CORRECTED FORWARD FROM r3679, WHICH IS ODD.*** *The 21 already on record **stay**: they are quoted
+> inside ledger prose, receipts and commit messages on `main`, and documentation over rewrite is the route
+> both lines agreed at `r3551`. `check_revision_collisions`' `BASELINE` is where they are named.*
+>
+> ⌗ ***AND THE INSTRUMENT COULD NOT HAVE CAUGHT IT.*** *`check_revision_collisions` reads `PARITY` from
+> `NODE`, and this container sets no `NODE`, so it defaulted to `PARITY = 0` — **the even half** — and
+> passed on every one of the thirty-seven. **A gate that reads a band from an unset variable certifies the
+> line it is not checking.** That is the same defect 59 repaired in that gate at `r3573` for the CI case
+> and did not notice applied to itself.
