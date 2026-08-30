@@ -220,7 +220,21 @@ _PARITY_BY_NODE = {'54': 0, '60': 0,          # EVEN half
                    'ci': None}                # the runner is not a line and holds no half
 _NODE = _os.environ.get('NODE')
 if _NODE is None:
-    PARITY = 0                                # the tree this file was written on
+    #: ⛔ ** AN UNSET NODE IS A REFUSAL, NOT A DEFAULT -- r3679, 59, from its own failure. **
+    #: *This read `PARITY = 0` -- the EVEN half -- so a container that sets no NODE was
+    #: checked against 60's band whatever line it was. 59 ran thirty-seven consecutive
+    #: EVEN revisions from r3606 after ceding the even half at r3563, and this gate passed
+    #: on every one of them, because it was certifying the line it was not checking.
+    #: 60's log recorded the resulting collisions for a whole stretch and attributed them
+    #: to a shared-counter defect.*
+    #:   ⇒ ** A band is a declaration. A gate that infers one from an unset variable
+    #:   silently checks the wrong half. ** *Same defect 59 repaired here at r3573 for the
+    #:   CI case, without noticing it applied to the unset case too.*
+    raise SystemExit(
+        "  check_revision_collisions: NODE is unset, so which half to check is unknown.\n"
+        "  Set NODE to a declared line (54, 56, 57, 59, 60, cc54) or to 'ci'.\n"
+        "  Defaulting would certify the band this tree is NOT on -- which is how 21\n"
+        "  collisions were passed between r3606 and r3678.")
 elif _NODE in _PARITY_BY_NODE:
     PARITY = _PARITY_BY_NODE[_NODE]
 else:
@@ -258,13 +272,20 @@ BAND_GRANDFATHERED = {'r3125',
 #:   ⌗ `report_testimony` below prints which of them this tree can now CONFIRM.  An entry that stays
 #:     unconfirmed after the merge is a baseline entry that is not an instance, which weakens the
 #:     gate -- so it is printed every run rather than settling quietly into the list.
+#: ⛔⛔ ** AND TWENTY-ONE MORE, ALL 59's, ADDED r3679. **  *59 accepted the ODD half at r3563,
+#: used it for two commits, and then ran EVEN for thirty-seven consecutive revisions from r3606 to
+#: r3678 -- the half it had ceded.  60's log records the resulting collisions across that whole
+#: stretch and attributed them to a shared-counter defect; the cause was 59.*
+#:   ⇒ *** They go in TESTIMONY and not BASELINE for the reason above: 60's side is on a branch this
+#:       tree cannot see, so these rest on a comparison made against a fetched ref and not on a
+#:       measurement in one history.  `report_testimony` will confirm them at the merge. ***
 TESTIMONY = {'r3125', 'r3126', 'r3128', 'r3130', 'r3132', 'r3134', 'r3136', 'r3138',
              # ⛔ added r3203 (node 57): three more from the same window -- 57 wrote r3140, r3142
              # and r3144 in the same turn it accepted the band, before the acceptance landed in
              # this file.  *Same ground as the eight: a band cannot bind a revision written
              # before it was answered.*  ALL ELEVEN ARE NOW CONFIRMED ON THIS TREE, which holds
              # both halves of every pair -- so none is testimony here any longer.
-             'r3140', 'r3142', 'r3144'}
+             'r3140', 'r3142', 'r3144', 'r3622', 'r3640', 'r3642', 'r3644', 'r3646', 'r3648', 'r3650', 'r3652', 'r3654', 'r3656', 'r3658', 'r3660', 'r3662', 'r3664', 'r3666', 'r3668', 'r3670', 'r3672', 'r3674', 'r3676', 'r3678'}
 TESTIMONY_SOURCE = ('node 57, r3138 reply: "we had already collided eight times before the band was '
                     'taken -- r3125, r3126, r3128, r3130, r3132, r3134, r3136, r3138 each name '
                     'different work in each line"')
