@@ -59,6 +59,7 @@ RECORD_EXACT = {'BOARD.md', 'WHATS_TEED_UP.md', 'THE_BURN_DOWN.md', 'ID_SPACE_CE
                 #    A campaign record is RECORD by kind: it is the one-state rule's other half,
                 #    holding the history of states that no paper may carry. **
                 'THE_LEDGER_CITATION_CONSOLIDATION.md',
+                'SIX_FIELDS_WORK_ORDER.md',
                 'PROGRAMME_UNFINISHEDNESS_CATALOGUE.md', 'RETIRED_PLANNING_THREADS.md',
                 # ** r2674: the two turn ledgers, built r2622 and r2624 on the observer line and
                 # never dispositioned -- which left classify_documents at UNCLASSIFIED 2 and, per
