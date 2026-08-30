@@ -1,7 +1,7 @@
 ---
 name: integrable-systems-ledger
 kind: FIELD-BAKE
-current: r3662
+current: r3676
 job: The integrable-systems field-bake ledger — what bit, what bounced, and where the boundary is.
 sources: [chat]
 ---
@@ -158,15 +158,15 @@ in the register below.***
 > | **`I10`+`I15`** | `receipts/P03_slicing_curve/I10_I15_the_horizon_is_a_turning_point_and_a_fixed_point_and_Nariai_degenerates_both.py` | *one receipt because they are **one fact from two sides**: `P03`'s formula reproduced in **both sign regions**, the null flow's eigenvalue shown to be $\kappa$, and Nariai degenerating both — against a simple-root control that **converges where Nariai diverges*** |
 > | **`I14`** | `receipts/P16_cosmogenesis/I14_the_interior_is_a_driven_oscillator_and_the_parity_split_is_forced_by_linearity.py` | *the parities **computed**, not asserted; a **nonlinear control** mixes the species, so the split is linearity's and not dust-and-radiation's* |
 > | **`I11`+`I1`** | `receipts/P15_CR_cosmology/I11_I1_one_condition_two_jobs_and_the_two_routes_are_independent.py` | *the $\sinh^{2/3}$ law leaves a residual of **exactly $+k$** off the marginal member; and `P09`'s two routes shown independent on their own hypotheses* |
+> | **`I21`** | `receipts/P06_shadow_of_existence/I21_least_arbitrariness_and_superintegrability_join_at_transitivity.py` | *the join checked at the **one arithmetic fact** that carries it — $\dim\mathrm{UTB}=2D-1$ is the superintegrability bound — with the converse and the deficit-count relation **explicitly not claimed*** |
 > | **`I5`** *(60)* | `receipts/P05_groupoid/I5_the_homothety_charge_is_a_first_integral_of_the_restricted_system.py` | *the bracket is weakly zero and not identically zero* |
 > | **`I7`** *(60)* | `receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py` | *the canon row's evidence* |
 >
 > ⚠ ***AND THE PROBES WITH NO RECEIPT ARE NAMED TOO, WITH WHY.*** *`I0`, `I18`'s canon half — **counted and
 > read, not computed**; the evidence is a census and a pair of read sites, and a receipt would only restate
-> the count. `I21` was **verified symbolically
-> in session** and is **OWED a receipt** — recorded as owed, not exempt and not quietly skipped.
-> ⛭ ***Twelve are written:*** *`I1`, `I8`, `I9`, `I10`+`I15`, `I11`, `I12`, `I13`, `I14`, `I17`, `I19`, `I20`, chosen because their results are reused
-> hardest — **`I13` alone is leaned on by `I17`, `I18` and `I19`**.*
+> the count. ⛭ ***AND EVERY OTHER PROBE NOW HAS ONE — thirteen receipts for thirteen
+> computational probes, closed at r3674.*** *`I0` and `I18`'s canon half remain the only two without,
+> and they are **counted and read rather than computed**: a receipt would restate a census.*
 
 ## ⌗ THE PROBE REGISTER — every row marked before this field is closed
 
@@ -538,6 +538,60 @@ drops the integrals $15\to4$ and raises the moduli $0\to1$; there is no simple c
 asserting one would be an overclaim.*
 
 ---
+
+## ⛭⛭⛭ THE REACH CLOSE — 17 of 17 by name, and the bar MEASURED — r3676
+
+***The field is closed.*** *Every paper read and scored by name; every probe marked; every computational
+probe receipted; every landing carrying its marker and its address.*
+
+### ⌗ THE SEVENTEEN, BY NAME
+
+| verdict | papers | |
+|---|---|---|
+| ⛭ **WORKED — a landing** | **`p0` · `P01` · `P02` · `P03` · `P04` · `P08` · `P09` · `P10` · `P11` · `P12` · `P13` · `P14` · `P15` · `P16` · `P06`** | **15** |
+| ⛭ **WORKED — by citation, nothing owed** | `P07` *(states the Carter recovery, hands the derivation to `P09`)* | 1 |
+| ⛭ **CHECKED-NEGATIVE, with the reason** | `P05` *(invariants algebraic; its one dynamical statement already landed by the variational bake)* | 1 |
+
+⇒ ***16 papers carry something for this field and one does not.*** *`P05` is the single negative, and it
+is negative because a neighbouring field reached it first — **a different fact from empty, and the row says
+which.*** ⌗ *`P06` sits among the landings because the locator's prediction that it was empty was
+**refuted**; it carries `I21`.*
+
+### ⌗ THE BAR, MEASURED
+
+| | |
+|---|---|
+| papers **read** and scored by name | **17 of 17** |
+| probes scored | **22** |
+| receipts written, run, registered, and **named in this ledger** | **13** |
+| probes with no receipt | **2** — `I0` and `I18`'s canon half, *counted and read rather than computed* |
+| `\ldg{integrable_systems}` markers in papers | **15**, across **15 papers** |
+| canon rows routed to `ONTOLOGY_FOUNDATION_INDEX` §0 | **3** — `integrable` (six senses), `wall` (three objects), `conserved charge` (three, one denying the others) |
+| ledger length | 869 lines |
+
+⛔ ***AND WHAT IS SHORT IS SAID SHORT.*** *`I4` is **not settled**: whether the layer's true degrees of
+freedom $(q^A,p_A)$ are Liouville-integrable. `P10` makes the question askable for the first time in the
+corpus and does not count them; the radial lift is $1$ DOF with $1$ integral and so trivially integrable,
+which is where the question is **empty**, and on the tower it is **open**. **Recorded as a question. Not
+rounded up.***
+
+### ⌗ WHAT THE FIELD CHANGED, IN ONE LINE EACH
+
+*`P02` gained a phase portrait. `P03` gained a potential and an unstable equilibrium. `P04` gained the
+reason its integral is a property of the path. `P08` gained a solvability boundary and a qualifier. `P09`
+gained the reason its own hedge is mathematics. `P10` gained the right name for its correction. `P12`
+gained the reason `P09`'s tensor is needed where it is. `P13` gained the reason its obstruction lapses.
+`P14` gained the reason its count is an index. `P15` gained the second job its own condition does. `P16`
+gained the reason its parity split is forced. `p0` gained the top of the ladder. `P06` gained a dynamical
+reading of its own ontological argument.*
+
+⌗ ***Every one of those is a REASON attached to a result the paper already had.*** *The field added no new
+physics and was never going to: **it says which of the corpus's equations integrate and why, which of its
+constants are integrals, and where its symmetry runs out.** That is the boundary recorded above, and this
+close respects it.*
+
+---
+
 
 ## ⛭⛭⛭ THE LOCATOR, SCORED — 17 of 17 through pass B
 
