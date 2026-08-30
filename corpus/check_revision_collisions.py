@@ -158,6 +158,12 @@ BASELINE = {'r3622',
             #: ⛔ ** r3664 -- the THIRTEENTH consecutive, r3640..r3664. **  *59's pass-C receipts against
             #: 60's index-theory rows 2/17 and the `D6` correction.*
             'r3664',
+            #: ⛔ ** r3666, r3668 -- the FOURTEENTH and FIFTEENTH consecutive, r3640..r3668 with no
+            #: gap. **  *59's owed-receipt correction and two discriminated receipts against 60's
+            #: index-theory rows 13 and 8.*
+            #:   ⌗ *Fifteen consecutive is no longer a count worth narrating each time; the run
+            #:     length is the measurement and `report_runs` prints it.*
+            'r3666', 'r3668',
             'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
             'r2821', 'r3099', 'r3100', 'r3105', 'r3108',
             # ⛔ added r3128 (`L-256`): the three that arrived AFTER r3112 reported the class and

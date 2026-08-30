@@ -1333,3 +1333,30 @@ is the hyperboloid's upper sheet; `degree` is vertex degree ("six vertices of de
 polynomial degree; `lift` is the cosmogenetic lift.** ⇒ *All three were **read before being
 excluded** — which is the same discipline this entry exists to record, applied to the correction
 rather than only to the defect.*
+
+## ⛔⛭⛭ AND r3676 OVER-CLAIMED: AN UNSCREENED FOOTPRINT IS NOT UNWORKED CONTENT — r3678
+
+*r3676 measured that the index-theory census screened six index-theorem terms and no covering-space
+terms, with `monodromy` ×92 and `deck` ×58 unscreened.* **That measurement stands.** ⛔ *What it
+inferred does not:* it framed `P03` and `P05` as scored `CHECKED-NEGATIVE` **by** that blind spot,
+implying content went unworked.
+
+***IT DID NOT.*** *`P05` `sec:deck` is landed — a full branched-cover treatment with `prop:monodromy`
+and `prop:deck`, distinguishing monodromy group $S_3$ from a **trivial** deck group — in
+`COMPLEX_ANALYSIS_LEDGER.md`, whose job line is* **"complex analysis AND MONODROMY against CR"**, *with
+two receipts (`P05_deck_group_S3.py`, `X5_monodromy_group.py`). The r3610 scoping call — "the
+disagreement is about which field owns the cover" — was **right in outcome**.*
+
+⇒ ***AN UNSCREENED FOOTPRINT IS NOT UNWORKED CONTENT.*** **In a corpus with eighteen field bakes, a
+term missing from one field's screen says nothing about coverage until the neighbours are checked.**
+*The measurement was right; the inference from it was not.*
+
+⌗ **And this is the same error shape a sixth time, one level up.** *r3672: "reading the aggregate
+instead of the sites." r3676: reading one field's blind spot instead of the corpus's coverage.* ***Both
+are inferring from a measurement without going to look*** — *and r3676 was written as the entry warning
+against exactly that.*
+
+⛭ *The complex-analysis ledger had already posted the sign:* **"a monodromy argument is easy to
+re-derive because it is short."** *Landing one in index theory would have been the rediscovery that
+ledger named as its lane's own hazard.* ⌷ *r3676 is corrected here rather than rewritten; the
+instrument defect it found is real and its consequence claim is struck.*
