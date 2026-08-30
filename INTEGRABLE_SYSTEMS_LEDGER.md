@@ -111,16 +111,59 @@ fence, so this is the paragraph that holds fences for this corollary.*
 
 ---
 
+## ⛔⛔ WHAT THIS LEDGER HAS AND HAS NOT DONE — stated at r3597, before anything reads as surveyed
+
+***No paper has been read. The reach pass has not started.*** *`R0` is a **measurement** — counts,
+word-bounded and de-macroed, with a homonym screen. `I0` was scored from grep windows across seventeen
+files, **which is not reading and this programme's own absolute rule says so**. `I1` rests on reading
+`cor:carter` and `rem:carter-chain` in full *at the site*, which is enough to justify the clause that landed
+there and **is not a verdict on `P09` for this field**.*
+
+⇒ ***So: 1/17 papers read as of r3597 — `P09`.*** *A completed bake's reach close reads, for comparison: "all seventeen papers
+WORKED or CHECKED-NEGATIVE **by name** … read in full this pass, three sweeps across all seventeen bodies."
+**That is the standard this ledger has not yet met and must not appear to have met.**
+
+### ⌗ WHAT THE INFRASTRUCTURE ACTUALLY CHANGED, AND WHERE IT DID NOT
+
+| removed | how |
+|---|---|
+| **the baseline measurement** | `corpus/reach_baseline.py` — instant, word-bounded, de-macroed. *This is where the earlier bakes lost time to false openings, and it caught `Lax` ×112 → ×0 on the first pass* |
+| **the landing lag** | the `\ldg` rail did not exist when the six earlier fields were thrown; they produced ledgers and the corpus needed a **separate eighteen-ledger gather campaign** to find out what had landed. A finding now lands in the same commit |
+| **drift** | the fourth grain of `check_depmatrix`, the derived appendix floor, `check_landing_rows_trace` |
+
+⛔ ***NOT REMOVED: THE READING.*** *Scoring a field against seventeen papers is seventeen papers, one per
+turn, exactly as this was run before. **The tooling made the measurement and the landing cheap; it made the
+reading no cheaper at all.***
+
+⌗ ***AND THE DANGER IS SPECIFIC, WHICH IS WHY IT IS WRITTEN HERE RATHER THAN LEFT IMPLICIT.*** *A protocol
+that lets a probe be scored from a grep, run at scale, produces exactly the ledgers whose repair took this
+campaign twenty turns: rows routed to the wrong paper, registers scored against the wrong test, and absences
+asserted by an instrument that could not see the term. **`I0` is provisional on that ground and is marked so
+in the register below.***
+
+---
+
 ## ⌗ THE PROBE REGISTER — every row marked before this field is closed
 
 | # | probe | verdict |
 |---|---|---|
-| **`I0`** | `integrable` ×14, six senses, two this field's | ⛔ **BITE** — canon row, routed to §0 |
-| **`I1`** | *does the field recognise `P09`'s origin for the Carter constant?* | ⛔ **BITE** — (a) is separability returning its own equivalent; (b) is the origin. Routed to `P09 rem:carter-chain` |
+| **`I0`** | `integrable` ×14, six senses, two this field's | ⛔ **BITE, PROVISIONAL** — scored from grep windows, not from a read. The six senses are each verified at a site; **whether the count is complete is not** |
+| **`I1`** | *does the field recognise `P09`'s origin for the Carter constant?* | ⛔ **BITE** — (a) is separability returning its own equivalent; (b) is the origin. **Landed** in `P09 rem:carter-chain`. *Rests on a site read of two passages; `P09`'s reach verdict is still owed* |
 | **`I2`** | *is the corpus's separability Liouville integrability, or something weaker?* — `separable` ×23, `Liouville` ×0 | ⟐ open |
 | **`I3`** | *`P09` says reachability is governed by the count of Killing **vectors**, not tensors. Is that the field's own distinction between symmetry and hidden symmetry?* | ⟐ open |
 | **`I4`** | *the corpus has `first integral` ×4 and `constant of motion` ×2 and no statement of how many a geodesic has* | ⟐ open |
 | **`I5`** | *`V5` (variational) landed a homothety conserving its charge on the null cone only. Is that a first integral in this field's sense, and does it enter the count?* | ⟐ open |
+
+---
+
+## ⛭ THE REACH REGISTER — one paper, one verdict, read. **1 of 17.**
+
+| paper | verdict | what was read, and what it holds |
+|---|---|---|
+| **`P09`** | ⛭ **WORKED — the field's home paper** | *`sec:pd` read in full.* It carries the separable (Carter) cut with the additive form $\Sigma=r^{2}+p^{2}$ and the two Killing fibres; `thm:pd` proving the structure functions are quartics with $-\Lambda/3$ pinned by the substrate, so the rotating vacuum kernel is the complete separable Type-D vacuum-$\Lambda$ family, Kerr--NUT--(A)dS; `cor:carter`; and `rem:carter-chain`. **`Carter` ×17, `separable` ×18, `Killing tensor` ×7, `Killing vector` ×9 — the field's objects are concentrated here.** |
+| | ⌗ **and it uses the field's own distinctions correctly** | *the theorem is scoped to **additive** separability, and acceleration is excluded because the Plebański--Demiański members "live in the **conformally separable** form and are not vacuum". **That is Carter's own classification of separable systems, used to do real work** — it is what keeps acceleration out of the kernel — and it is used right.* |
+| | ⌗ **the one thing owed here is landed** | `I1`, at `rem:carter-chain`, `r3595` |
+| **the other sixteen** | — | **not read. No verdict.** |
 
 ---
 
