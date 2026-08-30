@@ -229,6 +229,49 @@ side, and it is the only step that could have found this one.*
 
 ---
 
+## ⛭⛭⛭ `I9` — **`adiabatic` ×35 IN FIVE PAPERS; `adiabatic invariant` ×0. AND ONE PAPER HAS THE WRONG NAME FOR IT** — r3622
+
+***Estimate rated `P10` HIGH from contents: a deparametrised constraint is a Hamiltonian system, which is
+the only setting in which this field's central theorem can be stated. What the read found is sharper than
+that.***
+
+*`P10` reduces the transverse-traceless sector, mode by mode, to **a harmonic oscillator with
+time-dependent mass $a^{3}$ and frequency $\mu_n/a$** — a tower of parametric oscillators. **That is one
+of this field's two founding objects**, and its first question about any such tower is whether the
+**adiabatic invariant** $J=E/\omega$ — the action variable — survives.*
+
+⌗ **`adiabatic` is live ×35 across `P15`, `P16`, `P10`, `P07`, `P03`. `adiabatic invariant`, `action
+variable`, `action-angle` and `invariant of the motion` are all ×0.** *The corpus computes with the
+approximation and never names the conserved quantity that is its whole content.*
+
+### ⛔ AND THE TWO QUESTIONS ARE NOT THE SAME, WHICH IS WHERE THE BITE IS
+
+*`P10` writes: the kernel projects exactly only if $\hat{\Hphys}$ is constant along the segment and it is
+not, so "the projection is **adiabatic** rather than exact", and asks **whether $\int\omega_n\,\dd s$
+converges**. It does.* ***That is the right computation under the wrong name.***
+
+| question | what controls it | on this segment | verdict |
+|---|---|---|---|
+| *is the expansion **adiabatic**?* | $\lvert\dd\omega/\dd s\rvert/\omega^{2}$ | $\propto s^{-1/3}$, **diverges** at the branch point | ⛔ **no** — the adiabatic invariant $E/\omega$ is **not** conserved through it |
+| *is the suppression **finite**?* | the action integral $\int\omega_n\,\dd s$ | $=3\mu S^{1/3}/A$, **converges**, since $\omega\propto s^{-2/3}$ is integrable | ⛭ **yes** — `P10`'s own check, and it stands |
+
+*Both computed symbolically from `P10`'s own $\lvert r\rvert\propto s^{2/3}$.* ⇒ ***The correction is
+semiclassical, not adiabatic: the exponent is an action integral, which is a statement about integrability
+of $\omega$ and not about slow variation.***
+
+⌘ **AND THE CORPUS ALREADY HAS THE RIGHT NAME, IN THE OTHER PAPER.** *`P15` writes of the **same object**:
+"the exponential-of-an-integral form $e^{-\int\omega\,\dd\eta}$ is a **WKB approximation whose
+adiabaticity parameter is of order unity**". **`P15` is correct and `P10` is loose about the same kernel.**
+⇒ *Landed in `P10` with the distinction drawn and `P15` cited.*
+
+⌗ ⛭ **AND IT CONFIRMS `S5` FROM THE FIELD'S SIDE.** *`S5` (spectral, landed `r3575`) found `P15`'s
+exact/WKB residual **grows as the adiabaticity parameter shrinks**, which is the opposite of an adiabatic
+error and so a systematic offset. **This field says the same thing from the other end**: the deviation an
+adiabatic expansion controls is governed by a parameter that behaves oppositely here, so an adiabatic
+origin was never available. *Two bakes, two directions, one conclusion.*
+
+---
+
 ## ⛭ THE REACH REGISTER — one paper, one verdict, read. **17 of 17.**
 
 | paper | verdict | what was read, and what it holds |
