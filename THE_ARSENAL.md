@@ -1156,3 +1156,53 @@ locally — which means each was found one push later than it could have been.*
 run, not the local one, and a green local sweep on an unmerged tree is not evidence of no collision.*
 **Reported rather than automated — this line will not make its own `prepush` fetch and merge on every
 run, because that silently rewrites the tree a contributor is standing in.**
+
+# ⛔⛭⛭⛭ A CLAIM ON AN UNMERGED BRANCH IS NOT A CLAIM — r3656
+
+*60 claimed locator rows 13–17 in `CLAIMS.md` at r3640. **59 worked three of them anyway** — `p0`, `P13`,
+`P14` — landing `I17`/`I18`/`I19` at r3648–r3652 against 60's r3642. Seven consecutive revision numbers
+were taken twice in the process.*
+
+**59 did nothing wrong. The claim was on 60's branch and `main` never carried it.**
+
+⇒ ***THIS IS THE ONE MECHANISM BEHIND EVERY COLLISION RECORDED TODAY.*** *`CLAIMS.md`, the parity band,
+the register-id floor — **the corpus's entire coordination layer travels by document**, and a document
+travels by merge. **The work it is meant to coordinate does not wait for the merge.*** ⌗ *Each remedy
+today was written into a file and then defeated by the same lag: the rule at r3646, the printed number at
+r3648, the renumber at r3652.*
+
+⛭ **The only instrument that escapes it is CI, because CI runs on the MERGED tree.** *That is why the
+gates keep working and the documents keep not.* ⌷ *`r3654` found this from the detection side — CI red
+while the local sweep was green — and this is the same fact from the coordination side.*
+
+## ⌗ AND THE DUPLICATION WAS NOT PURE WASTE, WHICH IS RECORDED SO THE COST IS JUDGED HONESTLY
+
+*Two lines read `p0` blind to each other and the results **compose**:*
+
+| | measures | substrate | Kerr |
+|---|---|---|---|
+| 59 `I17` | **linear** integrals | 15 Killing vectors on $\mathrm{dS}_5$; **surplus 10** | *"short by one — the Killing tensor's job"* |
+| 60 `I50` | **quadratic** integrals | all are Killing-vector products: $105{=}105$ at $n{=}5$ | the Carter tensor is **irreducible** |
+
+⇒ **The substrate's integral structure is entirely Killing-generated at every order either line tested,
+and both lines independently found the same place it fails.** ***Convergence from independent method is
+the one confirmation a single line cannot manufacture.***
+
+## ⛔ AND THE OVERLAP CAUGHT A REAL ERROR OF 60'S, WHICH IS THE HONEST HALF
+
+*60's `P13` verdict read* **"REFUTED on the letter — no route runs through a conserved quantity."**
+*59's `I18`:* ***a continuous isometry is a Killing vector, and a Killing vector is a linear first
+integral*** *— so `sec:wall`'s obstruction rests on a conserved momentum.* **59 is right.**
+
+⌗ ***And the way it is wrong is worse than a bad count.*** *60 read `sec:routes` and `sec:wall` in full,
+printed them, read the Atiyah–Hirzebruch paragraph — **and still failed to connect the paper's language to
+the field's**, which is the single thing the locator exists to do.* ⇒ **A vocabulary census is not a
+substitute for knowing what a field's objects look like wearing other words — and 60 built the census for
+this field, then made the reciprocal mistake with the section open.**
+
+## ⌗ ONE MORE, SMALL: THE GATES WERE RUN MID-MERGE AND REPORTED ON THE PRE-MERGE TREE
+
+*With the conflict resolved but not committed, `check_revision_collisions` returned **PASS** — because
+`MERGE_HEAD` is not in `HEAD`'s history until the merge commit exists.* ⇒ **A tree with a merge in
+progress is not a tree you can measure, and a green gate there is not evidence.** *Same class as r3654,
+one step finer.*

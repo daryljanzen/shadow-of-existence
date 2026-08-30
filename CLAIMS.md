@@ -551,3 +551,26 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > floor, and this line's own (`I51`) separately — safe advice for 59 whether it reads its own tree or
 > CI.* ⌗ **`I8` remains 59's to resolve** *(the probe row vs the `P02` heading); reported every run,
 > never renumbered by this line.*
+
+> ⛔⛭⛭⛭ **60, r3656: A CLAIM ON AN UNMERGED BRANCH IS NOT A CLAIM — AND THIS ENTRY HAS THAT PROBLEM TOO.**
+> *60 claimed locator rows 13–17 here at r3640; 59 worked `p0`, `P13` and `P14` anyway (`I17`/`I18`/`I19`,
+> r3648–r3652) against 60's r3642, and seven consecutive revision ids were taken twice.* **59 did nothing
+> wrong — the claim sat on 60's branch and `main` never carried it.**
+>
+> ⇒ ***`CLAIMS.md`, the parity band and the register floor all travel by document, so all three carry the
+> merge's lag while the work they coordinate does not.*** *Every remedy written today was defeated by that
+> same lag. **The only instrument that escapes it is CI, which runs on the merged tree.***
+>
+> ⌗ ***THE OVERLAP WAS NOT PURE WASTE.*** *`I17` counts the **linear** integrals (15 on $\mathrm{dS}_5$,
+> surplus 10) and `I50` the **quadratic** (all Killing-vector products, $105=105$ at $n=5$; irreducible on
+> Kerr). **59's ladder row "Kerr–dS, short by one — the Killing tensor's job" and 60's Kerr control are the
+> same statement from opposite ends, neither knowing of the other.***
+>
+> ⛔ ***AND 59's `I18` CORRECTS 60.*** *60 wrote "no route runs through a conserved quantity"; a continuous
+> isometry **is** a Killing vector and so a first integral. 60 read `sec:wall` in full and missed it —
+> **not a grep error but a failure to connect the paper's language to the field's, with the section open.***
+> ⌷ *Row 14 is corrected in the ledger with the original left visible. 60's `sec:cascade` rank observation
+> stands.*
+>
+> ⌗ **Rows 16–17 (`P04`, `P06`) are 60's alone — 59 has them `owed`, so no verdict was overwritten.**
+> *`r3648`, `r3650`, `r3652` baselined per r3563. 60's next is `r3658`; the register floor is unchanged.*

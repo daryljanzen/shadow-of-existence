@@ -124,6 +124,19 @@ BASELINE = {'r3622',
             #:     does.  That is why `check_register_ids` took a RANGE band rather than parity for
             #:     the second counter -- a band that survives the habit instead of asking for it. **
             'r3646',
+            #: ⛔⛭⛭ ** r3648, r3650, r3652 -- SEVEN CONSECUTIVE REVISIONS TAKEN TWICE, and the three
+            #: landings they name are the SAME THREE PAPERS both lines worked. **  *59's `I17`/`I18`/
+            #: `I19` on `p0`/`P13`/`P14` against 60's number-printing, register-band and
+            #: local-sweep landings.*
+            #:   ⇒ *** THE DUPLICATION IS THE POINT, AND IT IS NOT ABOUT NUMBERS. ***  *60 CLAIMED
+            #:       locator rows 13-17 in `CLAIMS.md` at r3640 and 59 worked three of them anyway --
+            #:       because the claim was on 60's BRANCH and `main` never carried it.*
+            #:   ⌗ ** A CLAIM ON AN UNMERGED BRANCH IS NOT A CLAIM. **  *`CLAIMS.md`, the band, the
+            #:     register floor -- the whole coordination layer travels by DOCUMENT and therefore
+            #:     has the merge's rate limit, while the work it coordinates does not.*  ⇒ ** That is
+            #:     one mechanism behind every collision recorded today, and the only instrument that
+            #:     escapes it is CI, which runs on the MERGED tree. **
+            'r3648', 'r3650', 'r3652',
             'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
             'r2821', 'r3099', 'r3100', 'r3105', 'r3108',
             # ⛔ added r3128 (`L-256`): the three that arrived AFTER r3112 reported the class and
