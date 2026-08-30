@@ -1135,3 +1135,24 @@ and 59 keeps the whole space below and needs to know nothing about this.*
   ⇒ **Advice that would have walked the other line into the collision this file exists to stop, at the
   one place both lines read.** *The unbanded next-free is now measured against the lowest declared
   floor, so it is safe for a line holding none.*
+
+## ⛔⛭⛭ MY LOCAL SWEEP SAID 94/0/2 WHILE CI SAID RED ON THE SAME COMMIT, AND CI WAS RIGHT — r3654
+
+*At `a28ee242` (r3650) this line's tree swept* **94 pass / 0 fail** *and was `behind main: 1`. CI on the
+same commit failed* **`check_revision_collisions check_register_ids`** *— the `r3646` and `I16`
+collisions, neither of which this tree could see.*
+
+⇒ ***A GATE WHOSE SUBJECT IS A TWO-LINE COLLISION IS MEASURED ON THE MERGED TREE. A LOCAL RUN ON AN
+UNMERGED TREE IS STRUCTURALLY BLIND TO THE THING IT CHECKS*** — *it can only see collisions that have
+already merged, which is to say the ones that are already old.* **CI runs the gates on the PR merged
+into `main`, so it sees a collision the moment EITHER side lands.**
+
+⌗ **This corrects the posture these landings were written under.** *`r3648` framed CI's value as
+`REACHING` the other line with the printed number. That is real, but secondary: the larger value is
+that* ***CI DETECTS FIRST.*** *Four of the six collisions here were found by merging main and re-running
+locally — which means each was found one push later than it could have been.*
+
+⌷ *The operational consequence, and it is small: on a collision-class gate the honest sweep is the CI
+run, not the local one, and a green local sweep on an unmerged tree is not evidence of no collision.*
+**Reported rather than automated — this line will not make its own `prepush` fetch and merge on every
+run, because that silently rewrites the tree a contributor is standing in.**
