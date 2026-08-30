@@ -5,7 +5,49 @@ current: r2154
 sources: [cowork]
 ---
 
-## ⛔⛭⛭⛭ THE SELF-DESCRIPTION HAZARD — *named r3568, from seven instances in one session*
+## ⛔⛭⛭⛭ THE SURVEY MEASURES SPELLING; ONLY READING MEASURES SENSE — the six-field tally, r3618
+
+*Six fields were thrown at the corpus below the ×40 candidate floor. **In five of the six, the field's
+largest apparent footprint was a word from another subject**, and the correction was not a small one:*
+
+| field | its largest apparent footprint | what the word actually was | caught by |
+|---|---|---|---|
+| integrable systems | `Lax` **×112** | `\Lambda` splitting under the search | **the word boundary** |
+| information theory | `bit` **×255** | `orbit`, `arbitrary`, `bitangent` | **the word boundary** |
+| number theory | `congruence` **×155** | a **geodesic** congruence | ⛔ **reading only** |
+| numerical analysis | `resolution` ×39, `convergence` ×15 | resolving a paradox; **epistemic** convergence | ⛔ **reading only** |
+| probability | `Gaussian` ×20, `covariance` ×25 | Gaussian **curvature**; **general** covariance | ⛔ **reading only** |
+
+⇒ ***THE DIVIDING LINE IS SHARP AND IT IS NOT ABOUT SIZE.*** *`Lax` and `bit` are caught by a word
+boundary because the field's word is not really there — it is a substring. **`congruence`, `resolution`,
+`convergence`, `Gaussian` and `covariance` pass every mechanical screen intact**, because they are real
+words, spelt in full, carrying another field's meaning.*
+
+⛔ ***SO A GATE CANNOT DO THIS, AND SAYING SO IS THE RULE.*** *No word-boundary check, no de-macroing,
+no stop-list separates `Gaussian curvature` from a Gaussian distribution. **What separates them is the
+next word, and knowing which field owns it.***
+⌷ **THE OPERATIONAL FORM:** *before a field is thrown, take its three heaviest terms and read one
+occurrence of each. **If the reading is skipped the bake will open on the wrong subject**, and a bake
+that opens on the wrong subject produces findings it owns.*
+
+---
+
+# ⛔⛭⛭ A GATE THAT CATCHES YOU FIVE TIMES IS NOT A GATE THAT IS TOO STRICT — r3618
+
+*`lint_assertions.py` / `check_receipts` flagged a hollow `expr == True` assertion in **one receipt of
+every field bake**, five fields running: r3608, r3610, r3614, r3616, r3618.*
+
+⇒ ***FIVE CATCHES, FIVE FIELDS, ONE GATE, ONE AUTHOR.*** *Each was fixed by pinning a measured value.
+**The instructive part is not the defect — it is that a careful reader who had been told about it four
+times reproduced it a fifth**, and an automatic check caught every single instance.*
+
+⌗ ***THE RULE THIS SHARPENS.*** *A gate's value is not measured by how often it fires on OTHERS. **A
+gate that keeps catching the person who knows about it is doing the work that person cannot do**, and
+the temptation to read its fifth firing as pedantry is exactly the disposition it exists to overrule.*
+
+---
+
+# ⛔⛭⛭⛭ THE SELF-DESCRIPTION HAZARD — *named r3568, from seven instances in one session*
 
 ***A corpus that documents itself in the files it checks will, reliably, confuse the description with
 the thing described.*** *This is not a class of mistakes. It is a property of the arrangement, and it

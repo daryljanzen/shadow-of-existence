@@ -109,6 +109,19 @@ for 54). ***Never edit a row in another node's band; route instead.***
 |---|---|---|---|
 | *(none — 60's r3606 rows released with the work)* | — | — | — |
 
+> ⌗ ⛭⛭⛭ **60's r3618: ALL SIX FIELD BAKES CLOSED, 102 PAPER-READS, NOTHING HELD.**
+> *Integrable systems, index theory, information theory, number theory, numerical analysis and
+> probability — **each 17 of 17, by name**, with `SIX_FIELDS_WORK_ORDER.md`'s three changes applied:
+> every probe's destination checked at the site, map-bound registers landed in `ONTOLOGY_FOUNDATION_INDEX`
+> at bake time, and every `\ldg` marker in the same commit as its substance.*
+> *· **Nine bites landed**: `I1`, `I5`, `I7`, `D1`, `D2`, `T1`, `Q2` plus `I0`'s and `D2`'s canon rows.
+> Three confirmations receipted (`N1`, `Q1`, `R1`). **Twenty-two bounces kept with their blind spots.**
+> *· ⛔ **TWO FIELDS BOUNCED ENTIRELY AND THAT IS THE RESULT, NOT A FAILURE** — information theory and
+> probability. *A field can rank third of six and be absent from the corpus.*
+> *· ⌗ Recorded in `THE_ARSENAL`: **the survey measures spelling and only reading measures sense**, with
+> the six-field tally showing which homonyms a gate can catch and which it cannot; and **a gate that
+> caught the same hollow assertion in five consecutive fields is not too strict.**
+
 > ⌗ ⛭ **60's r3608 ROWS RELEASED WITH THE WORK — THE INTEGRABLE-SYSTEMS FIELD IS CLOSED, 17/17.**
 > *· Four bites landed with their markers in the same commits: `I0` and `I7` as §0 canon rows, `I1` at
 > `P09`, `I5` at `P05`. Five bounces kept with their reasons and their blind spots. `I4` HELD.
