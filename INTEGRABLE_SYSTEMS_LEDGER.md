@@ -158,15 +158,15 @@ in the register below.***
 > | **`I10`+`I15`** | `receipts/P03_slicing_curve/I10_I15_the_horizon_is_a_turning_point_and_a_fixed_point_and_Nariai_degenerates_both.py` | *one receipt because they are **one fact from two sides**: `P03`'s formula reproduced in **both sign regions**, the null flow's eigenvalue shown to be $\kappa$, and Nariai degenerating both — against a simple-root control that **converges where Nariai diverges*** |
 > | **`I14`** | `receipts/P16_cosmogenesis/I14_the_interior_is_a_driven_oscillator_and_the_parity_split_is_forced_by_linearity.py` | *the parities **computed**, not asserted; a **nonlinear control** mixes the species, so the split is linearity's and not dust-and-radiation's* |
 > | **`I11`+`I1`** | `receipts/P15_CR_cosmology/I11_I1_one_condition_two_jobs_and_the_two_routes_are_independent.py` | *the $\sinh^{2/3}$ law leaves a residual of **exactly $+k$** off the marginal member; and `P09`'s two routes shown independent on their own hypotheses* |
+> | **`I21`** | `receipts/P06_shadow_of_existence/I21_least_arbitrariness_and_superintegrability_join_at_transitivity.py` | *the join checked at the **one arithmetic fact** that carries it — $\dim\mathrm{UTB}=2D-1$ is the superintegrability bound — with the converse and the deficit-count relation **explicitly not claimed*** |
 > | **`I5`** *(60)* | `receipts/P05_groupoid/I5_the_homothety_charge_is_a_first_integral_of_the_restricted_system.py` | *the bracket is weakly zero and not identically zero* |
 > | **`I7`** *(60)* | `receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py` | *the canon row's evidence* |
 >
 > ⚠ ***AND THE PROBES WITH NO RECEIPT ARE NAMED TOO, WITH WHY.*** *`I0`, `I18`'s canon half — **counted and
 > read, not computed**; the evidence is a census and a pair of read sites, and a receipt would only restate
-> the count. `I21` was **verified symbolically
-> in session** and is **OWED a receipt** — recorded as owed, not exempt and not quietly skipped.
-> ⛭ ***Twelve are written:*** *`I1`, `I8`, `I9`, `I10`+`I15`, `I11`, `I12`, `I13`, `I14`, `I17`, `I19`, `I20`, chosen because their results are reused
-> hardest — **`I13` alone is leaned on by `I17`, `I18` and `I19`**.*
+> the count. ⛭ ***AND EVERY OTHER PROBE NOW HAS ONE — thirteen receipts for thirteen
+> computational probes, closed at r3674.*** *`I0` and `I18`'s canon half remain the only two without,
+> and they are **counted and read rather than computed**: a receipt would restate a census.*
 
 ## ⌗ THE PROBE REGISTER — every row marked before this field is closed
 
