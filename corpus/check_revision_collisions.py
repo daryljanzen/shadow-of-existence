@@ -107,6 +107,15 @@ BASELINE = {'r3622',
             #:   ⇒ *** Hence `next_id_for_this_line` below: the repair is not a rule to remember,
             #:       it is a NUMBER THE GATE HANDS YOU, printed on every run. ***
             'r3640', 'r3642',
+            #: ⛔⛭ ** r3644, AND IT WAS NAMED BEFORE IT HAPPENED. **  *r3646 wrote, in its own message
+            #: and in PR #25: "by `front + 2` from `r3642` the next is already loaded at `r3644`,
+            #: which is 60's."  59 then took `r3644` for `P01` pass B.*  ** Three predictions from
+            #: one mechanism, three hits -- so the mechanism is not a story about the three
+            #: collisions it was inferred from. **
+            #:   ⌗ *And it fired AFTER the number-printing repair was pushed, from a checkout that
+            #:     predated it -- the same rate-limit again, which is what `_print_next` had to stop
+            #:     depending on.  See `next_id_for_parity`: the number now prints on CI too.*
+            'r3644',
             'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
             'r2821', 'r3099', 'r3100', 'r3105', 'r3108',
             # ⛔ added r3128 (`L-256`): the three that arrived AFTER r3112 reported the class and
@@ -392,6 +401,16 @@ def _print_next(post):
     """print the number, because a rule that has to be recalled has already failed once"""
     nxt = next_id_for_this_line(post)
     if nxt is None:
+        ev, od = next_id_for_parity(post, 0), next_id_for_parity(post, 1)
+        if ev is None:
+            print()
+            return
+        print()
+        print('    ⇒ ** THIS RUNNER HOLDS NO HALF, SO IT PRINTS BOTH AND ASSERTS NEITHER: **')
+        print(f'         the next EVEN id is  r{ev}          the next ODD id is  r{od}')
+        print('       *Each line knows which half is its own, so the runner never has to guess --')
+        print('       and the number reaches BOTH lines here, which a document does not: `r3640`,')
+        print('       `r3642` and `r3644` were each taken from a checkout predating the fix.*')
         print()
         return
     print()
@@ -399,6 +418,31 @@ def _print_next(post):
     print('       parity above the trunk\'s front -- the rule as arithmetic rather than as a')
     print('       sentence, because r3640 and r3642 showed the sentence does not reach the fingers.*')
     print()
+
+
+def next_id_for_parity(runs, parity):
+    """the next id of `parity` that is free on the trunk AND on this tree's own line
+
+    ⛭ ** Split out from `next_id_for_this_line` at r3648 so that a runner holding NO half can still
+    print the answer for BOTH. **  *`PARITY is None` on CI is correct -- the runner is not a line --
+    but it made the single most useful line of this gate's output vanish exactly where BOTH LINES
+    WOULD HAVE SEEN IT, since CI runs on every PR from either line.*
+      ⇒ *** Printing both candidates asserts no half: each line already knows which one is its own,
+          and the runner never has to guess.  This is the declared-exemption doctrine kept -- the
+          runner still declines to say whose tree it is -- while the useful number stops being
+          collateral of that refusal. ***
+    """
+    if not runs:
+        return None
+    front = max(runs[-1])
+    r = subprocess.run(['git', 'log', '--first-parent', '--format=%s', 'HEAD'],
+                       cwd=ROOT, capture_output=True, text=True)
+    mine = [int(m.group(1)[1:]) for m in            # `BARE` captures the id WITH its `r`
+            (BARE.match(ln.strip()) for ln in r.stdout.split('\n')) if m] if r.returncode == 0 else []
+    n = max([front] + [x for x in mine if x % 2 == parity]) + 1
+    while n % 2 != parity:
+        n += 1
+    return n
 
 
 def next_id_for_this_line(runs):

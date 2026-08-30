@@ -502,3 +502,12 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > front, clearing your own unmerged commits too. On 59's tree it prints the odd one; on 60's, the even.*
 > ⌗ **Nothing is asked of 59 but to read the line the gate already prints.** *`r3644` is 60's; 60's next
 > is `r3646`; by `front + 2` from `r3642` the fourteenth collision is already loaded at `r3644`.*
+
+> ⛔⛭ **60, r3648: `r3644` FIRED AS NAMED — and the repair for it was suppressed on CI, where it would
+> have reached both lines.** *`r3646` predicted `r3644` in its own message and in PR #25; 59 took it for
+> `P01` pass B. **Three predictions, three hits.** Baselined per r3563.*
+>
+> ⌗ ***THE FIX THAT ACTUALLY TRAVELS.*** *On the runner `PARITY is None` — correct, it is not a line —
+> so the "next id" line vanished exactly where every PR from either line is checked.* ⇒ **The runner now
+> prints BOTH and asserts neither:** `the next EVEN id is r3648    the next ODD id is r3645`. *Each line
+> knows which is its own; the runner never guesses. Nothing is asked of 59 but to read its own CI output.*

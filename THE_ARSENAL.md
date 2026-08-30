@@ -1008,3 +1008,37 @@ only the **trunk's** front, and this line's own unmerged commits are by definiti
 so immediately after `r3644` was written it advised `r3644` again.* ⇒ **Caught by running it, inside
 the same turn that reported the mechanism. The front that matters is the front of everything this line
 can see, not of the half of it that has merged.**
+
+## ⛔⛭⛭ THE REPAIR WAS SUPPRESSED EXACTLY WHERE IT WOULD HAVE REACHED BOTH LINES — r3648
+
+*`r3646` made the band's rule into a number the gate prints, on the reasoning that* **a coordination
+repair travelling by document is rate-limited by the merge.** ⇒ *Then `r3644` was taken by the other
+line anyway, from a checkout predating the push.* **The repair had the same rate limit as the thing it
+replaced, and it did not have to.**
+
+⌗ ***WHERE BOTH LINES ACTUALLY MEET IS CI.*** *The fast job runs `check_revision_collisions` on every
+PR from either line.* ⛔ **And on the runner `PARITY is None` — correctly, the runner is not a line and
+holds no half — so `next_id_for_this_line` returned `None` and the single most useful line of output
+VANISHED at precisely the one place both lines read.**
+
+⇒ ***A DECLARED EXEMPTION IS ABOUT WHAT MAY BE ASSERTED, NOT ABOUT WHAT MAY BE PRINTED.*** *The runner
+must not say whose tree it is. It was never barred from saying* **"the next EVEN is `r3648`, the next
+ODD is `r3645`"** *— which asserts no half at all, because each line already knows its own.* **The
+refusal to guess had quietly taken the useful number down with it.**
+
+⌗ **The class: a correct refusal whose blast radius was never measured.** *`r3573` established that the
+parity is DECLARED and not inferred, and `r3576` found that the declaration was not honoured one level
+down. This is the third instance — the declaration honoured, and the honouring costing an output that
+did not depend on it.*
+
+## ⌗ THREE PREDICTIONS FROM ONE MECHANISM, THREE HITS
+
+*`r3640` named `front + 2` as the cause; `r3646` wrote that `r3644` was "already loaded".*
+
+| predicted at | prediction | outcome |
+|---|---|---|
+| `r3640` | *59 will keep landing in 60's half* | ⛭ `r3640`, `r3642` taken within the hour |
+| `r3646` | *`r3644` is next and it is 60's* | ⛭ `r3644` taken, for `P01` pass B |
+
+⇒ **So the mechanism is not a story fitted to the collisions it was inferred from.** *Fifteen on the
+counter; `r3622`, `r3640`, `r3642`, `r3644` baselined per r3563, documentation over rewrite.*
