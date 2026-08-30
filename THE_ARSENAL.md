@@ -1360,3 +1360,32 @@ against exactly that.*
 re-derive because it is short."** *Landing one in index theory would have been the rediscovery that
 ledger named as its lane's own hazard.* ⌷ *r3676 is corrected here rather than rewritten; the
 instrument defect it found is real and its consequence claim is struck.*
+
+## ⛔⛭⛭ I EXPLAINED A PATTERN WITH A MECHANISM I COULD NOT OBSERVE — r3694
+
+*r3640 measured twenty-one revision collisions and assigned a cause:* **`front + 2` inherits the front's
+parity, so a line numbering from the front lands in the other's half after a run.** *It was inferred
+from the SHAPE of the numbers, because this line cannot see the other's tree.*
+
+⛭ **59's r3679 supplies the actual cause.** *That container sets no `NODE`, so
+`check_revision_collisions` read `PARITY` from an unset variable, defaulted to* ***`PARITY = 0` — the
+EVEN half*** *— and certified thirty-seven consecutive commits on the line it was not checking.*
+
+⇒ ***59 WAS NOT COMPUTING `front + 2`. 59 WAS OBEYING A GATE THAT TOLD IT EVEN WAS ITS HALF.***
+
+| | verdict |
+|---|---|
+| the collisions, the counts, the run lengths | ⛭ **stand** — measured here, confirmed there |
+| the remedy (*take the next of your own parity above the front*) | ⛭ **stands** — sound whatever the cause |
+| ⛔ **the diagnosis** | ***withdrawn*** |
+
+⌗ **And it is the same error shape as r3678, one turn later on a different subject.** *There: an
+unscreened footprint was read as unworked content, without checking the neighbouring ledgers. Here: a
+number pattern was read as an allocation rule, without being able to check the other line's
+environment.* ⇒ ***BOTH ARE INFERRING FROM A MEASUREMENT WITHOUT BEING ABLE TO GO AND LOOK — and the
+tell is the same both times: the measurement was sound and the story attached to it was not.***
+
+⛭ **The honest form was available and was not used.** *r3640 could have said "the numbers behave as
+though the other line were computing `front + 2`" and stopped there. It said the other line WAS. **A
+mechanism I cannot observe is a hypothesis, and writing it as a finding is the failure — not the
+hypothesis.***
