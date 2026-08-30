@@ -325,9 +325,12 @@ substrate's own maximal symmetry surfacing."* ***That is a theorem, and `p0` doe
 
 * **On a maximally symmetric space every quadratic first integral is already a product of Killing
   vectors.** *Measured **independently of the products** by solving $\{Q,H\}=0$ for a general
-  quadratic-in-momenta function on $S^n$:* $S^2$ **6 = 6 = 6**, $S^3$ **20 = 20 = 20** *(the third
-  number is $n(n+1)^2(n+2)/12$), flat across truncation degrees 2, 3 and 4 — so the count is the
-  geometry's, not the basis's.* ⇒ **A Carter-type constant on such a substrate carries no information
+  quadratic-in-momenta function on $S^n$:* **6 = 6 = 6**, **20 = 20 = 20**, **50 = 50 = 50**, and — at
+  $n=5$, ***the substrate's own dimension*** — **105 = 105 = 105** *(the third number in each is the
+  closed form $n(n+1)^2(n+2)/12$), flat across truncation degrees 2, 3 and 4, so the count is the
+  geometry's and not the basis's.* ⌗ *The scope header first declared $n\ge4$ out of reach on an
+  SVD-tolerance argument written **without trying it**; $n=5$ takes 48 seconds, so the caveat was
+  struck and the case that matters is measured rather than extrapolated to.* ⇒ **A Carter-type constant on such a substrate carries no information
   the symmetry did not already carry**, which is exactly the paper's sentence.
 * ⛔ **AND THE CONTROL IS WHAT MAKES IT A CLAIM.** *Kerr is not maximally symmetric: its Carter tensor
   adds a **fifth** dimension to $\mathrm{span}\{g,\ \xi\xi,\ \xi\eta,\ \eta\eta\}$ — **irreducible**.

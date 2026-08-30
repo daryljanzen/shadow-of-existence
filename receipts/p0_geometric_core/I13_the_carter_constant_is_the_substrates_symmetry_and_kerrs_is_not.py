@@ -32,7 +32,8 @@ COUNTEREXAMPLE: not maximally symmetric, two Killing vectors, and a Carter tenso
 OUTSIDE their span.*  ⇒ *The sentence is a claim about the substrate, and it can come back false.*
 
 WHAT IS MEASURED HERE, all three parts pinned to numbers rather than to `True`:
-  (A) on the maximally symmetric S^n, the quadratic first integrals of the geodesic flow are counted
+  (A) on the maximally symmetric S^n -- n = 2, 3, 4 and 5, the last being the SUBSTRATE'S OWN
+      dimension -- the quadratic first integrals of the geodesic flow are counted
       by SOLVING {Q,H}=0 in a truncated basis -- an INDEPENDENT count, not the products' own span --
       and compared against dim span{l_ij l_kl} and against n(n+1)^2(n+2)/12.
   (B) the truncation degree is raised as a CONTROL: a count that grows with the basis is an artefact
@@ -41,6 +42,27 @@ WHAT IS MEASURED HERE, all three parts pinned to numbers rather than to `True`:
       which is the statement that it is irreducible -- the negative that makes (A) informative.
 
 Written r3642 by node 60, pass B on row 13 of 59's integrable-systems locator (`p0`).
+
+COMPUTES: scope -- WHAT THE PINNED NUMBERS DO AND DO NOT BOUND.
+  * `M = 1.0`, `a = 0.7` (Kerr).  ** The control's conclusion is a RANK, and a rank is not a number
+    that a parameter choice tunes: `K_Carter` adds a dimension for every `a != 0`, and at `a = 0`
+    Kerr is Schwarzschild, where the geometry gains symmetry and the tensor becomes reducible.  So
+    `a = 0.7` stands for "rotating", and the only value it must avoid is `a = 0`. **  *`M = 1.0` is
+    the unit of length and scopes nothing.*
+  * `dt`, `nsteps`, `fd` (the geodesic integration).  ** These bound the PRECISION of the
+    conservation statement and nothing else, and they are swept rather than trusted: `dt` is halved
+    (no change -- so the drift is not the integrator's) and `fd` is swept over six decades, giving
+    the central difference's U with its floor at `eps^(2/3)`. **
+  * `deg`, `n_samples` (the S^n integral count).  ** `deg` is the truncation and is the control in
+    part (B): 2, 3 and 4 all return 6, so the count is not the basis's. **  *`n_samples` only has
+    to exceed the number of unknowns for the nullspace to be determined; it is not a scope.*
+  ⌗ ** THIS HEADER FIRST SAID THE THEOREM WAS VERIFIED AT n = 2 AND n = 3 ONLY, "the linear system
+    at n = 4 being large enough that the SVD tolerance rather than the geometry would set the rank",
+    and that n = 5 -- THE SUBSTRATE'S OWN DIMENSION -- was therefore out of reach. **  *That was
+    written without trying it.  n = 4 takes 16 s and n = 5 takes 48 s, and both return the closed
+    form exactly.*  ⇒ *** So the caveat is struck and the case that matters is MEASURED: on dS_5's
+    dimension the count is 105 = 105 = 105, and the claim about the substrate is made about the
+    substrate rather than extrapolated to it. ***
 """
 import itertools
 import numpy as np
@@ -322,10 +344,10 @@ if __name__ == '__main__':
     print(f"  {'n':>3} {'formula':>9} {'from {Q,H}=0':>13} {'KV products':>12}   verdict")
     formula = {}
     measured = {}
-    for n in (2, 3):
+    for n in (2, 3, 4, 5):
         f = n * (n + 1) ** 2 * (n + 2) // 12
-        q = sphere_integrals_dimension(n, deg=2)
-        k = killing_vector_product_span(n)
+        q = sphere_integrals_dimension(n, deg=2, n_samples=2500 if n > 3 else 900)
+        k = killing_vector_product_span(n, n_samples=2000 if n > 3 else 600)
         formula[n], measured[n] = f, (q, k)
         ok = 'ALL REDUCIBLE' if q == k else '*** AN IRREDUCIBLE ONE EXISTS ***'
         print(f'  {n:>3} {f:>9} {q:>13} {k:>12}   {ok}')
@@ -391,9 +413,9 @@ if __name__ == '__main__':
     # ⛔⛭ ** THE ASSERTIONS PIN MEASURED NUMBERS.  ** *This line has caught itself six times writing
     #   `assert expr == True`, which passes on anything truthy and measures nothing -- recorded in
     #   THE_ARSENAL as a habit rather than an accident.  Every value below is the value observed.*
-    assert formula[2] == 6 and formula[3] == 20, formula
-    assert measured[2] == (6, 6), measured[2]
-    assert measured[3] == (20, 20), measured[3]
+    assert [formula[n] for n in (2, 3, 4, 5)] == [6, 20, 50, 105], formula
+    for n in (2, 3, 4, 5):
+        assert measured[n] == (formula[n], formula[n]), (n, measured[n])
     assert (r4, r5) == (4, 5), (r4, r5)
     # ⌗ *pinned to the integrator's own floor, not to a round number chosen afterwards*
     assert drift < 1e-8 and ctrl > 1e-2, (drift, ctrl)
