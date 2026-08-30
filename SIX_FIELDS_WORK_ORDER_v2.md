@@ -1,7 +1,7 @@
 ---
 name: six-fields-work-order-v2
 kind: METHOD
-current: r3658
+current: r3678
 job: The field-bake procedure, rewritten after running integrable systems end to end at 17/17. Supersedes SIX_FIELDS_WORK_ORDER.md, which was written before the method was known.
 sources: [chat]
 ---
@@ -102,28 +102,53 @@ empty is the one to read hardest.**
 
 ---
 
-## 4. ⛔⛔ RECEIPTS — THE REQUIREMENT I FAILED, WRITTEN AS A GATE ON YOURSELF
+## 4. ⛔⛔ RECEIPTS — WRITTEN AS A CONFESSION AT r3658, REWRITTEN AT r3678 WITH THIRTEEN WORKED EXAMPLES
 
-***I landed fourteen probes in this field and wrote zero receipts.*** *Every verification was symbolic,
-correct, and run in-session — and it is **gone**. Not reproducible, not checkable by you, not runnable by
-any gate. **You wrote and registered receipts for your six fields and I did not for mine; do not copy my
-practice.***
+***When this order was first written I had landed fourteen probes in that field and written ZERO receipts.
+The debt is now closed — thirteen receipts for thirteen computational probes, all running, all registered,
+all named in the ledger — so this section can give you the pattern rather than just the rule.***
 
-**PER FIELD, NOT NEGOTIABLE:**
+**THE RULE.** *One receipt per computational claim, not two per field. Real asserts. Registered in the same
+commit. Run, and printing `ALL PASS`.*
 
-- ***Every landed probe that asserts a computation gets a receipt.*** *Not two per field — **one per
-  computational claim**. If the clause you land says a thing is identical, divergent, elementary, short by
-  one, or not shape-invariant, that is a receipt.*
-- **Real asserts, and the receipt must be able to fail.** *`lint_assertions` catches `expr == True`; it
-  caught one in a receipt of **every single one of your six fields**. Pin a measured value.*
-- **Register it in `receipts/INDEX.md` in the same commit.** *An unregistered receipt is invisible to the
-  appendix rails and to `check_receipt_orphans`.*
-- **Run it. It must print `ALL PASS`.**
+### ⌗ THE PATTERN THAT MAKES A RECEIPT WORTH WRITING — a control that could have gone the other way
 
-⌗ *Backfilling mine is `59`'s job and is being done in pass C of this field; the five fields ahead of you
-should not need backfilling.*
+***A receipt that only confirms the case it was written for is a print statement with asserts in it.***
+*Each of the thirteen carries something that could have failed and did not, and in four cases the control
+is the whole value:*
 
----
+| receipt | the control, and why it is the point |
+|---|---|
+| `I19` shape invariance | ***a POSITIVE control.*** *Establishing that `P14`'s superpotential is **not** shape invariant is a negative, and a negative from a test that cannot detect the positive is worthless. So Pöschl–Teller is run through the same machinery and **registers invariant, with $R=2\lambda-1$ nonzero**. The negative becomes a discrimination* |
+| `I14` parity split | ***a NONLINEAR control.*** *`P16` reports its parity-by-species split as a fact about dust and radiation. Add a quadratic term and **the species mix** — so the split is a property of a second-order LINEAR equation, which is what the claim actually is* |
+| `I20` the redshift | ***a MASSIVE control.*** *The claim that the null-cone restriction is load-bearing is empty if the test cannot show the charge **failing** off the cone. It fails for $m\neq0$ and **recovers in the massless limit*** |
+| `I10`+`I15` the horizon | ***a NON-DEGENERATE control.*** *At a simple root $\kappa\neq0$ and the approach integral converges to $2\sqrt2 M$, where Nariai's diverges. A test that diverged at both would be computing an integral, not detecting degeneracy* |
+
+⌗ **AND `I17` SHOWS THE OTHER HALF OF IT:** *the $\mathfrak{so}(D,1)$ generators are **constructed and
+rank-checked**, not quoted from $D(D+1)/2$. Writing the formula and checking $15\ge9$ would have been a
+receipt for arithmetic.*
+
+### ⌗ FOUR THINGS THE REGISTRY WILL REJECT, EACH OF WHICH REJECTED ME
+
+1. *The registry table has **eight cells** with the path in **column four**. Three cells puts the row in a
+   different table and `check_receipt_orphans` fails.*
+2. *A receipt pinning **any** concrete parameter needs a `COMPUTES:` line **in its docstring** — the INDEX
+   row is not where `check_computes` reads it.*
+3. *A `|` anywhere in the prose is read as a column separator. `|r|` gave a fourteen-cell row and the
+   appendix generator **silently drops** those. Write `abs(r)`.*
+4. *New receipts need their appendix rows: `python3 corpus/make_all_appendices.py`, then compile.*
+
+### ⛔ AND THE ONE I DID THREE TIMES AFTER WRITING THIS SECTION
+
+***`check(..., True, ...)` is a hollow assertion — a record dressed as a verdict, whose PASS certifies
+nothing.*** *The lint caught `1 == 1 + 0` in `I13`; I caught two more in `I21` before it had to. **If a line
+is a record and not a computation, `print` it.** `I21` now prints two non-claims rather than asserting them,
+and asserts only the one that is real arithmetic.*
+
+⌗ ***State what you are NOT claiming, and assert it where it is checkable.*** *`I13` and `I21` both assert
+that the modulus count is **not** the integral deficit — $15\to4$ against $0\to1$ — so a later reader
+cannot infer a relation the run does not support.*
+
 
 ## 5. VERIFICATION — three rules, each from an error
 
@@ -139,11 +164,31 @@ should not need backfilling.*
 
 ---
 
+## 5b. THE REACH CLOSE — the template, which did not exist when this order was first written
+
+*Close each field with these four blocks. `INTEGRABLE_SYSTEMS_LEDGER.md` carries a worked one at r3676.*
+
+1. **THE SEVENTEEN, BY NAME**, in a table of verdicts — *landing · worked-by-citation · checked-negative*.
+   ⌗ ***And a `CHECKED-NEGATIVE` row must say WHICH KIND.*** *`P05` was negative because a neighbouring
+   field had already landed its one dynamical statement — **complete for a different reason than empty**,
+   and the row says so.*
+2. **THE BAR, MEASURED** — papers read, probes scored, receipts written and named, markers and how many
+   papers carry them, canon rows routed, ledger length. ⛔ ***Measured, never asserted. Record SHORT if
+   short.***
+3. **WHAT IS STILL OPEN, SAID SHORT.** *`I4` is not settled and the close says so in its own block rather
+   than in a footnote.*
+4. **WHAT THE FIELD CHANGED, ONE LINE PER PAPER** — *and read that list before you write the summary. Mine
+   said, in every line, that a **reason** had been attached to a result the paper already had. **The field
+   added no new physics and was never going to**, and the close is the place to notice that rather than
+   inflate past it.*
+
+---
+
 ## 6. THE ORDER, AND WHAT IS ALREADY DONE
 
 | # | field | state |
 |---|---|---|
-| 1 | **integrable systems** | ⛭ **17/17 pass B, 14 probes, `59`. Receipts in progress.** Do not re-run |
+| 1 | **integrable systems** | ⛭ **CLOSED r3676 — 17/17 by name, 22 probes, 13 receipts, 15 markers, 3 canon rows.** Do not re-run. *Its reach close is your template* |
 | 2 | **differential topology / index theory** | ⟐ **YOURS, and first.** `Atiyah` ×17; `P13`'s obstruction and `P14`'s leaf index, which its own text marks *traced rather than computed* — the most load-bearing untested step in the matter sector |
 | 3 | **information theory** | ⟐ screen `entropy` hard; horizon thermodynamic entropy is a homonym for this field's object |
 | 4 | **number theory** | ⟐ screen `zeta` |
