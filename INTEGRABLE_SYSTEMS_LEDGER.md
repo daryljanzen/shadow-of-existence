@@ -395,6 +395,40 @@ at `P12`, closing the arc `I13` began.*
 
 ---
 
+## ⛭⛭⛭ `I18` — **THE OBSTRUCTION'S SECOND HYPOTHESIS *IS* A FIRST INTEGRAL, SO THE WALL SITS ON `I13`'s LADDER** — r3650
+
+*`P13` names the Atiyah--Hirzebruch obstruction's load-bearing hypotheses as **compactness and a
+continuous isometry**. **A continuous isometry is a Killing vector, and a Killing vector is a linear first
+integral of the geodesic flow** — so the second hypothesis says the flow on the face carries a conserved
+momentum.*
+
+| stratum | linear integrals | does the hypothesis hold? |
+|---|---|---|
+| $\mathrm{dS}_5$ substrate | 15 | ✔ amply |
+| Type D, SdS | 4 | ✔ |
+| Type D, Kerr–dS | 3 | ✔ |
+| **Type N, the range edge** | **0** | ⛔ **unavailable** |
+
+⇒ ***The obstruction bites highest up the ladder and lapses at the bottom***, *and the opening `P13` turns
+to — the substrate's discrete orientation structure — is on the side of the wall where the hypothesis is
+**unavailable rather than merely unused**. That is a stronger statement than "the theorem does not apply",
+and it is `F15`'s three-compactness-statuses finding reached from the isometry side.*
+
+### ⛔ AND `wall` IS A CANON ROW — 509 OCCURRENCES, THREE OBJECTS
+
+| | | |
+|---|---|---|
+| ① **the chirality wall** — an **obstruction**, a theorem that forbids | `P13`, `P14` | ×171 |
+| ② **the range wall** — a **locus**, the Type-N edge where continuous symmetry is lost | `P09`, `P11`, `P12` | ×57 |
+| ③ **a domain wall** — a **solution** of a field equation, the three carrying the generations | `P14` | ×47 |
+
+⛭ ***`P14` carries ① and ③ within one section***: *`sec:chirality` opens on "this sector's **chiral
+wall**", and the count reads "all three **walls** at one chirality". **A reader carrying the obstruction
+sense into the configuration sense reads "three walls" as three obstructions.*** ⇒ *Routed to
+`ONTOLOGY_FOUNDATION_INDEX` §0 beside `kernel` and `integrable`, and recorded there.*
+
+---
+
 ## ⛭⛭⛭ THE LOCATOR — every paper, the sections named, the prediction stated — r3626
 
 > **⛔ THIS REPLACES THE HIGH/MEDIUM/LOW TABLE BELOW, WHICH WAS DOING THE WRONG JOB.** *A rank is a licence
@@ -428,7 +462,7 @@ at `P12`, closing the arc `I13` began.*
 | 11 | **`P05`** | `sec:relations` · `sec:conjugacy` · `sec:alpha-invariant` | *"the single invariant is the geometry" — is that invariant in this field's sense, and does the $\alpha$-action have a conserved charge?* | ⛭ **CHECKED-NEGATIVE, and the question is ANSWERED — `I16`.** *`sec:alpha-invariant` and `sec:relations` read in full; **the dynamical statement is already landed there by 60's `I5`, and nothing further is owed*** |
 | 12 | **`P07`** | `sec:lift-initial-rate` · `sec:sds-cosmology` | *the lift's closed form and the recovered Carter constant; states results derived elsewhere* | ⟐ **owed** |
 | 13 | **`p0`** | `sec:rulings` · `sec:standard` · `sec:unification` | *the straight null rulings are geodesics of the substrate; **maximal symmetry is the largest possible algebra of first integrals*** | ⛭ **CONFIRMED, `sec:rulings`** — *`I17`, landed. The prediction was exactly right and the count is exact* |
-| 14 | **`P13`** | `sec:routes` · `sec:wall` | *the closed routes are an exhaustion argument; does any run through a conserved quantity?* | ⟐ **owed** |
+| 14 | **`P13`** | `sec:routes` · `sec:wall` | *the closed routes are an exhaustion argument; **does any run through a conserved quantity?*** | ⛭ **CONFIRMED, `sec:wall`** — *`I18`, landed, **and it is the obstruction's own hypothesis**. Plus a canon row* |
 | 15 | **`P14`** | `sec:chirality` · `sec:count` | *the radial Dirac superpotential is a 1-D problem with a solvable structure — **shape invariance** is this field's neighbour* | ⟐ **owed** |
 | 16 | **`P04`** | `sec:decomp` · `sec:floor` | *$\ln(1+z)=\int H\,\dd t$ is a quadrature and probably the whole of it* | ⟐ **owed** |
 | 17 | **`P06`** | `sec:rules` · `sec:least-arbitrariness` | *no dynamics; the prediction is that this is genuinely empty, and **that prediction has to be tested rather than assumed*** | ⟐ **owed** |
