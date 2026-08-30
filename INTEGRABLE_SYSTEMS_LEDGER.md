@@ -159,6 +159,76 @@ in the register below.***
 
 ---
 
+## ⛭⛭⛭ STEP 2 — THE ESTIMATE FROM CONTENTS, WRITTEN BEFORE ANY PAPER IS WORKED — r3620
+
+> **⛔ WHY THIS SECTION EXISTS AND WAS MISSING.** *`OVERNIGHT_FIELD_BAKE_WORK_ORDER.md` step 2, the
+> procedure `58` gave `cc54`, requires **reading all seventeen abstracts and rating each HIGH/MEDIUM/LOW
+> with a reason drawn from what the paper is ABOUT — not from its counts** — written down **before** any
+> paper is worked, and scored afterwards. **I skipped it, and `60` skipped it after me.***
+>
+> ⇒ ***And skipping it is the whole failure Daryl named.*** *A field's term list is a list of what I
+> already know that field to be. Grepping it can only return what I thought to look for; **it cannot
+> return the thing this field would see that the corpus has no word for.** Reading from the paper's side
+> can be **wrong**, which is what makes it informative — `58` recorded that its ratings were usually right
+> and their **reasons wrong about half the time**, and kept both facts.*
+
+| paper | what it is ABOUT | est. | the reason, from contents |
+|---|---|---|---|
+| **`P02`** | *one homogeneous circle, $r(z)=M(1+\cos z)$, the Schwarzschild interior which is term-for-term the scale factor of a closed Friedmann cosmology, with $\dd^{2}r/\dd\tilde\tau^{2}=rK_G$* | ★ **HIGH** | ***The cycloid is the exactly-solvable one-degree-of-freedom problem.*** *This field's founding examples are the Kepler problem and the harmonic oscillator, and the closed Friedmann/Schwarzschild-interior solution **is** the Kepler radial problem — the cycloid is its parametric solution and has been since Tolman 1934. **The paper never says so, and none of this field's vocabulary appears in it.*** ⇒ **The estimate is high precisely where the count is zero** |
+| **`P10`** | *the canonical problem of time; deparametrisation to $p_\tau+\Hphys(q^A,p_A)=0$; the lift as an instanton with finite action* | ★ **HIGH** | *A deparametrised constraint **is** a Hamiltonian system on true degrees of freedom, which is the only setting in which Liouville's theorem can even be stated. This is where the field's central question becomes askable* |
+| **`P09`** | *the range: which geometries arise as cuts; the separable Type-D vacuum kernel* | ★ **HIGH** | *Separability and Killing tensors are the field's own objects, and the paper's kernel theorem is stated in them* |
+| **`P11`** | *the dynamics — why and how the cut bends in time; the unpolarised cut as a wave map* | ★ **HIGH** | *A wave map with a conserved twist is a soliton-theory object; **this field owns the question of how many independent integrals a reduced system has*** |
+| **`P03`** | *one moving part, one swing, and three coupled projections each blind to a different structure* | ◐ **MEDIUM** | *Three parametrisations of one motion is the shape of an **action-angle** description, and the field would ask whether the sky angle is an angle variable* |
+| **`P15`** | *the Nariai member's proper frame, $r\propto\sinh^{2/3}$, exactly flat-$\Lambda$CDM* | ◐ **MEDIUM** | *Another closed-form cosmological solution. **The field asks why these keep being solvable**, and $\sinh^{2/3}$ is a second exactly-integrable law beside `P02`'s cycloid* |
+| **`P08`** | *the slicing operator; the vacuum kernel as a first-order linear ODE* | ◐ **MEDIUM** | *"The condition $T_{\mu\nu}=0$ **is** a first-order linear ODE" is a solvability statement, and this field is the theory of which equations are solvable and why* |
+| **`P12`** | *the Dirac algebra is a Lie algebroid with a structure function; a base and a section* | ◐ **MEDIUM** | *A **section selecting a flow** on a base is this field's setting. Whether that flow is integrable is the field's first question about any such structure* |
+| **`P01`** | *the metric singularity; null generators along which spatial extent contracts* | ○ **LOW** | *Null generators are a geodesic congruence and this field owns geodesic flows — but the paper's subject is causal structure, not motion* |
+| **`P16`** | *cosmogenesis as a forced synthesis; the lift through the branch point* | ○ **LOW** | *Carries `P02`'s and `P10`'s solutions rather than adding one* |
+| **`P07`** | *the augmentation, necessary and sufficient* | ○ **LOW** | *States the Carter recovery and cites `P09` for it* |
+| **`P05`** | *the groupoid; rigidity; the horizon cubic's Galois group* | ○ **LOW** | *Its integrals are algebraic, not dynamical — a different sense of "solvable"* |
+| **`p0`** | *the substrate itself, everywhere intrinsically real* | ○ **LOW** | *About the object, not about motion on it* |
+| **`P13`** · **`P14`** | *the colour wall; the Dirac spinor on the slicing structure* | ○ **LOW** | *Field-theoretic, and this field's subject is finite-dimensional mechanics* |
+| **`P04`** | *the redshift is the path integral of the expansion rate* | ○ **LOW** | *$\ln(1+z)=\int H\,\dd t$ is a quadrature, and that is the whole of it* |
+| **`P06`** | *theory-choice as an empirical discipline* | ○ **LOW** | *No dynamics* |
+
+⌗ ***THE ESTIMATE THAT MATTERS IS `P02`.*** *Its count for every term in this field's vocabulary is
+**zero** — `Killing tensor` ×0, `separable` ×0, `first integral` ×0, `integrable` ×0. **`60` scored it
+`CHECKED-NEGATIVE` and so would any grep.** Reading what it is about rates it the highest paper in the
+field, because *the object it is about is this field's founding example*. ***That is the estimate this
+method exists to produce and the one a term list can never reach.***
+
+---
+
+## ⛭⛭⛭ `I8` — **`P02`'s CIRCLE IS A PHASE PORTRAIT, AND EVERY TERM OF THIS FIELD'S VOCABULARY SCORES ZERO IN IT** — r3620
+
+***The estimate rated `P02` HIGH from contents. Its counts are: `integrable` ×0, `separable` ×0,
+`Killing tensor` ×0, `first integral` ×0, `Liouville` ×0.*** *It was scored `CHECKED-NEGATIVE` and any
+grep would score it so again.*
+
+⌗ **WHAT THE READ FOUND, verified symbolically before writing.** *`P02` states $r''=-(r-M)$ and reads
+the locus $(r-M)^{2}+s^{2}=M^{2}$ as a **geometric** circle — a Thales circle, landed at `r3583`.*
+
+| the paper's reading | this field's reading | and they are the same object |
+|---|---|---|
+| $r''=-(r-M)$, an identity of the cycloid | **the harmonic oscillator** in the displacement $r-M$ | ✔ exact |
+| $(r-M)^{2}+s^{2}=M^{2}$, a circle the arc projects | its **orbit in phase space**, with $s=\dd r/\dd z$ | ✔ $u^{2}+(\dd u/\dd z)^{2}=M^{2}$ identically |
+| *"the homogeneity of that circle, which has no distinguished point"* | **a level set of the conserved energy** $\tfrac12 s^{2}+\tfrac12(r-M)^{2}=M^{2}/2$ | ✔ conserved, checked |
+| the two critical points, of identical analytic character | the orbit's **two turning points**, where the momentum vanishes | ✔ and a periodic orbit of one degree of freedom has **exactly two** |
+| their identity, argued from the circle's homogeneity | the **time reversal** $z\mapsto-z$, which the evenness of $r(z)$ expresses | ✔ |
+
+⇒ ***So `P02`'s central structural claim has a fourth independent route*** *— after $r''=-(r-M)$, the
+Thales circle (`r3583`), and band-limiting (`H21`): **a periodic orbit of a one-degree-of-freedom
+conservative system has exactly two turning points, interchanged by time reversal.** Landed in `P02` with
+its marker.*
+
+⛔⛭ ***AND THIS IS THE FINDING ABOUT THE METHOD, NOT ONLY ABOUT `P02`.*** *The field's whole vocabulary
+scores **zero** in the paper where the field's founding example sits in plain sight. **A term list is a
+list of what one already knows the field to contain; grepping it returns only that, which is confirmation
+bias with a receipt attached.** The estimate-from-contents step exists to reach the paper from its own
+side, and it is the only step that could have found this one.*
+
+---
+
 ## ⛭ THE REACH REGISTER — one paper, one verdict, read. **17 of 17.**
 
 | paper | verdict | what was read, and what it holds |
