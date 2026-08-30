@@ -110,7 +110,7 @@ FIELDS = [
     ('numerical analysis', None,
      ['convergence', 'truncation error', 'discretisation', 'discretization', 'stiff',
       'step size', 'quadrature', 'interpolation', 'conditioning', 'round-off']),
-    ('information theory', None,
+    ('information theory', 'INFORMATION_THEORY_LEDGER.md',
      ['entropy', 'mutual information', 'channel capacity', 'Shannon', 'coarse-grain',
       'bit', 'compression']),
     ('probability / stochastic processes', None,
