@@ -83,7 +83,20 @@ ROOT = os.path.abspath(os.path.join(HERE, '..'))
 BARE = re.compile(r'^(r\d{3,5})\s*[—-]\s*(.*)$')
 
 #: ** NAMED, not counted. **  Known at r3112; a collision not on this list is a FAILURE.
-BASELINE = {'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
+#: ⛔⛭⛭ ** r3622 IS THE FIRST COLLISION WHOSE TWO SIDES ARE BOTH CITED IN PROSE IN ONE CHECKOUT --
+#: r3640, 60. **  *The thirteen before it were quoted on `main` one side at a time, which is why
+#: `CLAIMS.md` r3563 could settle them with "documentation over rewrite" and lose nothing.*
+#:   ⇒ ** This one is cited EIGHT times as 60's (five field ledgers, `THE_FIELD_BAKE_PLAN.md`,
+#:     `THE_ARSENAL.md`, and a receipt header) AND once as 59's -- `INTEGRABLE_SYSTEMS_LEDGER.md`
+#:     line 364, `I9`, the adiabatic invariant.  ** *A reader following `r3622` out of one file
+#:     lands in the other's work, in the same tree, with nothing marking the switch.*
+#:   ⌷ *It is baselined rather than renumbered for exactly the reason r3563 gave: renumbering either
+#:     side breaks live references to fix an ambiguity a note resolves.*  ** But note what that
+#:     trade now costs, because it is larger than it was: the disambiguator r3563 relied on -- "cite
+#:     the SHA beside the revision" -- is a rule for NEW citations and does nothing for the nine
+#:     already written.  ⇒ The repair is upstream of the citation, in how the number is CHOSEN. **
+BASELINE = {'r3622',
+            'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
             'r2821', 'r3099', 'r3100', 'r3105', 'r3108',
             # ⛔ added r3128 (`L-256`): the three that arrived AFTER r3112 reported the class and
             # routed its remedy.  *They are baselined because they predate the band, and the band
@@ -294,6 +307,109 @@ def band_violations(root=None):
     return out
 
 
+#: ⛭⛭⛭ ** THE PARITY RUN ON THE TRUNK -- r3640 (`L-`), 60, after the band's first real break. **
+#:
+#: *** THE BAND BROKE, AND IT BROKE FOR A REASON THAT IS ONE SENTENCE LONG. ***
+#:
+#:   ** Both lines pick a revision number by looking at the FRONT of the trunk and adding to it --
+#:   the docstring above says so in its second paragraph, and it is right.  ** *`front + 2` INHERITS
+#:   THE FRONT'S PARITY.*  ⇒ ** So `front + 2` is your half only while the front is YOURS. **
+#:
+#:   ⌗ *And the two lines are not using the same rule, which is why this took 57 revisions to show:*
+#:     * **60 takes the next number of ITS OWN parity above the front.**  *After 59's eleven-long odd
+#:       run r3585..r3605, 60 resumed at `r3606` -- front `+1`, and even.*
+#:     * **59 takes `front + 2`.**  *After 60's eight-long even run r3606..r3620, 59 resumed at
+#:       `r3622` -- front `+2`, and EVEN, which is 60's half.*
+#:   ⇒ *** THE TWO RULES AGREE WHENEVER THE FRONT IS 59'S, AND DISAGREE EXACTLY WHEN IT IS 60'S. ***
+#:     *So the band is stable while the lines ALTERNATE and fails on the first long run by 60.*
+#:     ** It is also SELF-LOCKING: once 59 is at `r3622`, the front is 59's own again and `front + 2`
+#:     keeps returning EVEN.  One slip does not correct itself; it persists.  It persisted TEN. **
+#:
+#: ⛔ ** AND THE MEASUREMENT SAYS THIS PLAINLY, WITHOUT NEEDING TO KNOW WHOSE COMMIT IS WHOSE. **
+#:   *Revision ids on the trunk, in NUMERIC order, since the band was taken at `r3563`:*
+#:       `r3563 .. r3576`   ** fourteen runs of length ONE -- perfect alternation, the band working **
+#:       `r3577 .. r3583`   odd, 4      `r3584`  even, 1      `r3585 .. r3605`  odd, 11
+#:       `r3606 .. r3638`   ** EVEN, 17 ** -- *60's eight, then 59's ten, in one unbroken parity run*
+#:   ⇒ ** A run of length 1 is the band ALIVE.  A run of 17 across a line change is the band GONE. **
+#:
+#: ⛭ ** WHY THIS IS REPORTED AND NOT FAILED, which is the honest half. **  *A long run is ALSO what
+#: one line working alone looks like, and that is legitimate: 59's own odd run of 11 broke nothing.
+#: `r3185..r3377` is an odd run of 82 from before there were two lines.*  ⇒ ** A run is not a
+#: violation; it is the PRECONDITION for one, and the number this gate could not otherwise print. **
+#:
+#: ⛔⛭ ** WHAT THIS IS BLIND TO, STATED SO IT IS NOT DISCOVERED LATER AS A SURPRISE. **
+#:   * ** IT CANNOT SAY WHOSE A COMMIT IS.  ** *The obvious check -- mirror `--first-parent` onto the
+#:     trunk and read the other line's own commits -- WAS TRIED AND DOES NOT WORK HERE: this line's
+#:     work reaches `main` REBASED, with new SHAs, so it sits on the trunk's first-parent chain
+#:     beside 59's.  `cd901791` (`r3608`, 60's) is on that chain.  ** Topology cannot separate two
+#:     lines whose merges are rebases, so a per-line band check on the trunk is NOT CONSTRUCTIBLE. **
+#:     ⇒ *That is why this measures PARITY RUNS, which need no attribution at all.*
+#:   * ** IT CANNOT SEE A DRIFT THAT COLLIDES WITH NOTHING. **  *Nine of 59's ten out-of-band ids
+#:     produced no collision and would never have surfaced; only `r3622` fired, and only because
+#:     60's copy was still unmerged.*  ⇒ ** That is the whole value here: it converts an invisible
+#:     drift into a printed fact, WITHOUT waiting for the collision that makes it expensive. **
+RUN_ALERT = 6          # ⌗ a run longer than this is printed with the doctrine beside it
+BAND_TAKEN = 3563      # the revision at which 59/60 accepted the halves
+
+
+def parity_runs(root=None):
+    """revision ids on the trunk in NUMERIC order, grouped into same-parity runs
+
+    ** NUMERIC order, not log order. **  *The ids are the thing being partitioned, and the log
+    interleaves them by merge; sorting by id reads the counter as the counter was issued.*
+    """
+    r = subprocess.run(['git', 'log', '--format=%s', UPSTREAM],
+                       cwd=root or ROOT, capture_output=True, text=True)
+    if r.returncode != 0:
+        return None
+    ids = sorted({int(m.group(1)) for m in
+                  (re.match(r'^r(\d+)', ln.strip()) for ln in r.stdout.split('\n')) if m})
+    if not ids:
+        return None
+    runs, cur = [], [ids[0]]
+    for a in ids[1:]:
+        if a % 2 == cur[-1] % 2:
+            cur.append(a)
+        else:
+            runs.append(cur)
+            cur = [a]
+    runs.append(cur)
+    return runs
+
+
+def report_runs():
+    """*** the drift made visible without a collision to surface it ***"""
+    runs = parity_runs()
+    if runs is None:
+        print(f'    ⌗ the parity run is NOT MEASURED: `{UPSTREAM}` is not a ref in this tree.')
+        print()
+        return 0
+    post = [x for x in runs if x[-1] >= BAND_TAKEN]
+    if not post:
+        return 0
+    front = post[-1]
+    word = 'EVEN' if front[0] % 2 == 0 else 'ODD'
+    ones = sum(1 for x in post if len(x) == 1)
+    print(f'    the trunk since the band (r{BAND_TAKEN}): {len(post)} parity run(s), '
+          f'{ones} of length 1')
+    print(f'      the run at the FRONT: {len(front)} consecutive {word} ids, '
+          f'r{front[0]}..r{front[-1]}')
+    if len(front) <= RUN_ALERT:
+        print('      ⛭ *A short run at the front is the band alive: the lines are alternating, so')
+        print('         each is picking from its own half rather than from the other\'s.*')
+        print()
+        return 0
+    print(f'    ⚠ ** A RUN OF {len(front)} AT THE FRONT IS THE PRECONDITION FOR THE BAND\'S FAILURE, '
+          'and it')
+    print('       is reported rather than failed because ONE LINE WORKING ALONE LOOKS THE SAME. **')
+    print('    ⌷ *The rule that survives a run:* ** take the next number of YOUR OWN parity above')
+    print('       the front -- NOT `front + 2`, which inherits the front\'s parity and is your half')
+    print('       only while the front is yours. **  *`front + 2` after the other line\'s run puts')
+    print('       you in their half AND KEEPS YOU THERE, because the front is then your own again.*')
+    print()
+    return 0
+
+
 def check_band():
     """*** the PREVENTION half: fail before the merge, while the number can still be changed ***"""
     v = band_violations()
@@ -327,9 +443,23 @@ def check_band():
             print('      ⌷ What this check does is make THIS line\'s half enforceable, which is what')
             print('         makes the proposal something the other line can accept or refuse.')
         else:
-            print('      ⛭ ** and the OTHER half is held, so the band is a partition and the')
-            print('         prevention is real: **')
+            # ⛔⛭⛭ ** WITHDRAWN r3640 (60): THIS PRINTED *"the prevention is real"* THROUGH TEN
+            #   OUT-OF-BAND COMMITS FROM THE OTHER LINE, and it is the SAME failure r3140 withdrew
+            #   one level in. **  *r3140 struck a sentence that reasoned from arithmetic it had not
+            #   done; this one reasoned from a DECLARATION it had not re-measured.*
+            #   ⇒ *** A HALF THAT IS HELD BY DECLARATION IS NOT A HALF THAT IS HELD.  The band was
+            #       accepted at r3563 and kept for 57 revisions; `r3622..r3638` are ten consecutive
+            #       ids in 60's half, written by 59, while this line printed that the partition
+            #       was whole. ***
+            #   ⌗ *And it cannot be repaired by measuring harder HERE: `report_runs` explains why
+            #     attribution is not constructible on a trunk whose merges are rebases.  So the
+            #     sentence says what is TRUE -- the half is DECLARED -- and hands the reader the
+            #     run measurement instead of a reassurance.*
+            print('      ⌷ ** the other half is DECLARED held.  That is a claim by the other line,')
+            print('         not a measurement made here, and it has been wrong: **')
             print(f'         {OTHER_HALF}')
+            print('      ⛔ *r3622..r3638 are ten consecutive ids in THIS line\'s half, written by')
+            print('         the other, after it accepted the odd half.  ⇒ Read the run below.*')
         print()
         return 0
     print()
@@ -375,6 +505,8 @@ def main():
 
     report_testimony(bad)
     band_rc = 0 if '--no-band' in sys.argv else check_band()
+    if '--no-band' not in sys.argv:
+        report_runs()
 
     if not new:
         print('    no NEW revision-number collision.')
@@ -387,8 +519,10 @@ def main():
     print()
     print('    ⛭ ** Two lines numbering from one counter choose the same number, which is the')
     print('       `L-174` collision at c54.166 one level up -- and that was solved with BANDS. **')
-    print('    ⌷ Until the other line adopts the odd half, cite a revision WITH its SHA wherever')
-    print('       the identifier has to be unambiguous.')
+    print('    ⌷ *r3640: the other line HAS adopted the odd half -- and adoption was not enough,')
+    print('       because the number is picked from the FRONT and the front is not always yours.*')
+    print('    ⇒ Cite a revision WITH its SHA wherever the identifier has to be unambiguous, AND')
+    print('       pick the next number of YOUR OWN parity above the front, never `front + 2`.')
     print()
     return 1
 

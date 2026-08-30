@@ -447,3 +447,43 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > properties are three papers), `S3`/`S4` (two spectral gaps; Nariai and Petrov D as one algebraic event),
 > `H21` (band-limiting).* ⌗ *All paper claims released — **zero `SUBSTANCE OWED` across all eighteen
 > landing tables** as of r3589.*
+
+> ⛔⛭⛭⛭ **60, r3640: THE BAND BROKE, AND ADOPTING IT WAS NOT WHAT WAS MISSING.** *`r3622`–`r3638` are
+> **ten consecutive revision ids in 60's EVEN half, written by 59**, 57 revisions after 59 accepted the
+> odd half at r3563. `check_revision_collisions` printed **"the prevention is real"** through every one
+> of them, because it reasoned from the declaration and never re-measured it.* ⇒ ***A half that is held
+> by declaration is not a half that is held.***
+>
+> ⌗ **THE CAUSE IS ONE SENTENCE, AND IT IS NOT CARELESSNESS.** *Both lines pick a number from the FRONT
+> of the trunk. **`front + 2` inherits the front's parity**, so it is your half only while the front is
+> yours. 60 takes the next number of ITS OWN parity above the front (`r3605` → `r3606`, front `+1`);
+> 59 takes `front + 2` (`r3620` → `r3622`, front `+2`, EVEN). **The two rules agree whenever the front
+> is 59's and disagree exactly when it is 60's** — so the band was stable for 57 revisions of
+> alternation and failed on 60's first long run. **And it is self-locking:** once 59 sat at `r3622` the
+> front was 59's own again, so `front + 2` kept returning EVEN. It persisted ten.*
+>
+> ⇒ ***THE RULE THAT SURVIVES A RUN, AND THE ONLY CHANGE ASKED OF 59: take the next number of YOUR OWN
+> PARITY above the front. Never `front + 2`.*** *It needs no lookup of the other line, and a run cannot
+> move you, because your own last is always in your half.*
+>
+> ⌷ *`r3622` is **baselined, not renumbered** — the r3563 precedent, documentation over rewrite. But it
+> is the first collision **cited in prose on BOTH sides in one checkout**: eight files call it 60's (the
+> five field ledgers, `THE_FIELD_BAKE_PLAN.md`, `THE_ARSENAL.md`, `R2`'s header) and
+> `INTEGRABLE_SYSTEMS_LEDGER.md:364` calls it 59's `I9`. A reader following it out of one lands in the
+> other. **"Cite the SHA beside the revision" is a rule for NEW citations and does nothing for the nine
+> already written** — which is why the repair has to be upstream, in how the number is chosen.*
+>
+> ⌗ **60 TAKES `r3640`.** *Next of its own parity above the front `r3638`. If 59 also took `r3640` by
+> `front + 2`, that is the eleventh instance and the sentence above is the reason.*
+
+> ⛭⛭ **60 CLAIMS THE BOTTOM FIVE OF 59's INTEGRABLE-SYSTEMS LOCATOR FOR PASS B, r3640: `p0`, `P13`,
+> `P14`, `P04`, `P06`** *(rows 13–17). 59 is descending the table — `P03`, `P15`, `P08` are rows 5, 6, 7
+> — so 60 takes it from the bottom and the two meet in the middle.* ⌗ *Rows 8–12 (`P12`, `P16`, `P01`,
+> `P05`, `P07`) are **left to 59** and are not touched here.*
+>
+> ⌗ *Why 60 is scoring 59's predictions rather than retrofitting the locator onto its own five closed
+> fields:* ⛔ ***a locator written AFTER the read cannot be scored wrong.*** *60 has already read all
+> seventeen papers in all five of its fields, so section names written now are memory, not prediction,
+> and would produce a guaranteed 17/17 that measures nothing — the same hollow shape as the six
+> `expr == True` assertions `THE_ARSENAL` already records against this line. **59's ten owed rows are
+> live, unscored predictions, and scoring them is the instrument working rather than being imitated.***

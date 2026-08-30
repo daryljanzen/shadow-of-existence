@@ -920,3 +920,64 @@ trust it until executed. **MODE (standing, refined r1322 with Daryl):** the thre
 - **L13 · jargon** (forced-within-CR → ledger) — ✔ WORKED (r1320).
 - **L14 · map-card numbering** — ✔ WORKED (r1334). Swept ALL live docs for current-tense stale (pre-r845) numbering, not just the masthead (fixed r1316). Found ONE live instance: README's spine line ("fifteen-paper spine P1–P15", matter=P15, current-label p0/16) — FIXED to sixteen papers P1–P16 (+p0/17), matter=P14 (complement of boundary P13), core label p0/17. Verified all other stale-numbering hits are genuinely DATED records, correctly preserved as history: THE_SYNTHESIS (dated core-completion body + current r927 header), THE_NEXT_ARC (dated r805 plan, correct for its date), THE_ARC_PLAN (dated r747), OPEN_PROBLEMS_MAP Cluster I (struck-through ✓COMPLETED record), THE_ARSENAL (renumber-describing + dated meta-flag). The map cards proper (ONTOLOGY_FOUNDATION_INDEX, THE_EVOLUTION_MAP) already on the current scheme.
 - **MAP-LIVE:** family 6/7 propagation is an OUTPUT of working L1–L3 (the γ⁵-continuation claim); the r1320 over-propagation corrected r1321 (ledger); re-propagated as lines close.
+
+# ⛔⛭⛭ A PARTITION IS DEFEATED BY A RUN, AND THE RULE THAT DEFEATS IT IS THE ONE IN THE FINGERS — r3640
+
+***Two lines agreed to split the revision counter by parity. It held for 57 revisions and then failed
+completely rather than partially, and the reason is worth more than the band is.***
+
+**Both lines pick a number the same way: look at the front of the trunk, add to it.** `front + 2`
+**inherits the front's parity** — so it is your half only while the front is *yours*. The two lines
+were not using the same rule and had no way to notice:
+
+| line | rule actually used | after 59's odd run `r3585..r3605` | after 60's even run `r3606..r3620` |
+|---|---|---|---|
+| **60** | *next of MY parity above the front* | `r3606` — front `+1`, EVEN ✓ | *(would be `r3640`)* |
+| **59** | `front + 2` | `r3607`.. ODD ✓ *(agreed by luck)* | ⛔ `r3622` — EVEN, **60's half** |
+
+⇒ ***THE RULES AGREE WHENEVER THE FRONT BELONGS TO THE LINE USING `front + 2`, AND DISAGREE EXACTLY
+WHEN IT DOES NOT.*** So the band is stable under **alternation** and fails on the first long **run** by
+the other line — and the corpus had run-free alternation for fourteen revisions straight, which is
+precisely the condition under which the defect is invisible.
+
+⛔ **AND IT IS SELF-LOCKING, WHICH IS WHY IT WAS TEN AND NOT ONE.** *Once 59 sat at `r3622`, the front
+was 59's own again, so `front + 2` kept returning EVEN.* **A rule that reads only the front cannot
+recover from one excursion; it ratifies it.**
+
+## ⌗ THE MEASUREMENT THAT SEES IT WITHOUT KNOWING WHOSE COMMIT IS WHOSE
+
+*Revision ids on the trunk in **numeric** order, grouped into same-parity runs, since the band:*
+
+    r3563 .. r3576   ⛭ fourteen runs of length ONE — perfect alternation, the band ALIVE
+    r3577 .. r3583   odd, 4        r3584  even, 1        r3585 .. r3605  odd, 11
+    r3606 .. r3638   ⛔ EVEN, 17   — 60's eight, then 59's ten, in ONE unbroken parity run
+
+***A run of length 1 is the band alive. A run of 17 spanning a change of line is the band gone.***
+And it needs no attribution — which matters, because **attribution is not available here**.
+
+## ⛔ WHAT THE OBVIOUS CHECK WOULD HAVE BEEN, AND WHY IT DOES NOT EXIST
+
+*The gate already walks `--first-parent` to read this line's own commits and step over what a merge
+brought in. **The obvious mirror — walk `--first-parent` on the trunk and read the other line's own
+commits — was tried and does not work.*** *This line's work reaches `main` **rebased, with new SHAs**,
+so it sits on the trunk's first-parent chain beside 59's; `cd901791` (`r3608`, 60's) is on that chain.
+⇒ **Topology cannot separate two lines whose merges are rebases**, so a per-line band check on the
+trunk is not constructible at all. That is a negative, and it is the reason the run measurement is the
+instrument rather than a second choice.*
+
+## ⛔⛭ AND THE GATE PRINTED THAT THE PARTITION WAS WHOLE THROUGH EVERY ONE OF THEM
+
+*`check_revision_collisions` printed **"the OTHER half is held, so the band is a partition and the
+prevention is real"** across all ten. It was reasoning from 59's **declaration** at r3563, never
+re-measured.* ⇒ ***A HALF THAT IS HELD BY DECLARATION IS NOT A HALF THAT IS HELD.***
+
+⌗ **This is `r3140`'s failure one level in, and that is the part worth keeping.** *`r3140` withdrew the
+sentence "this half removes the collisions this line can cause and no others" because it reasoned from
+arithmetic it had not done. Its replacement reasoned from a claim it had not re-checked.* ⇒ **The
+class is not "false sentence beside a green gate" but *a green gate whose reassurance rests on
+something outside the measurement* — and the fix is the same both times: say what is true (the half is
+DECLARED) and hand the reader the number instead of the comfort.**
+
+⌷ *Nine of the ten produced **no collision at all** and would never have surfaced; only `r3622` fired,
+and only because 60's copy happened to still be unmerged.* ⇒ **The run report earns its place by
+converting an invisible drift into a printed fact before the collision that makes it expensive.**
