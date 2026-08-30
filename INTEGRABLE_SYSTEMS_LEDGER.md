@@ -327,6 +327,39 @@ one. **`P01`, `P03` and this field now say one thing about the degenerate horizo
 
 ---
 
+## ⛭ `I16` — **`P05` IS CHECKED-NEGATIVE, AND THE REASON IS A FIELD BOUNDARY WORTH RECORDING** — r3646
+
+***The prediction's question is answerable and the answer is no, twice over.***
+
+| what `P05` calls invariant | is it a first integral? | |
+|---|---|---|
+| **$\alpha$**, "the unique chart-invariant quantity" | ⛔ **no** — it is the **substrate's scale**, fixed across the whole family; in this field's terms a **parameter labelling which system is being solved**, not a constant of a given motion | |
+| **$M$** | ⛔ **no** — a parameter of the potential $V=-\lvert f\rvert/2$ (`I10`), and `P12` independently calls it *a modulus transverse to the orbits* | |
+| **$E$** | ⛭ **yes** — and it is the only one of the three | `I11`, `I12` |
+
+⇒ *So of the constants running through the construction, exactly one is a first integral, one is a
+potential parameter, and one is the scale. **`P05` is careful about this and does not conflate them**, so
+there is nothing to correct.*
+
+⌗ **AND `sec:relations` IS ALGEBRA, NOT DYNAMICS.** *$\sigma^{2}=\tau^{3}=(\sigma\tau)^{2}=\mathrm{id}$
+generating $D_{3}\cong S_{3}$ is the Weyl group of $A_{2}$, which the representation and quadric bakes
+already own. $\sigma$ and $\tau$ act **at fixed $M$**, permuting the turning points of one potential — a
+discrete symmetry of a fixed system rather than a flow.*
+
+⛭ ***AND THE ONE DYNAMICAL STATEMENT `P05` DOES OWE THIS FIELD IS ALREADY LANDED THERE — by 60, as
+`I5`.*** *The $\alpha$-action is a homothety, whose charge $\xi\!\cdot\!p$ is a first integral of the
+geodesic flow **restricted** to the invariant submanifold $p\!\cdot\!p=0$:
+$\{\xi\!\cdot\!p,\,p\!\cdot\!p\}=2\,p\!\cdot\!p$, weakly zero on the constraint surface and not
+identically zero. It counts toward the null subsystem's tally and toward no other. **Receipt run and
+passing.**
+
+⌗ ***So the verdict is CHECKED-NEGATIVE with the boundary named***: *`P05`'s invariants are algebraic and
+group-theoretic; its one dynamical invariant is the variational bake's homothety, and this field's reading
+of it was already placed. **A paper can be complete for a field because a neighbouring field got there
+first, and that is a different thing from being empty.***
+
+---
+
 ## ⛭⛭⛭ THE LOCATOR — every paper, the sections named, the prediction stated — r3626
 
 > **⛔ THIS REPLACES THE HIGH/MEDIUM/LOW TABLE BELOW, WHICH WAS DOING THE WRONG JOB.** *A rank is a licence
@@ -357,7 +390,7 @@ one. **`P01`, `P03` and this field now say one thing about the degenerate horizo
 | 8 | **`P12`** | `sec:anchor` · `sec:bracket` · `sec:strata` | *a **section selecting a flow** on a base is this field's setting; is that flow integrable, and **does the stratification index its integrals?*** | ⛭ **CONFIRMED on both, `sec:strata`** — *`I13`, landed. The prediction's second clause was the right question and it is answered yes* |
 | 9 | **`P16`** | `sec:lap` · `sec:rate` · `sec:interior` | *the lap is a closed orbit; "its exact closed solution" for the progenitor interior is another integrable case* | ⛭ **CONFIRMED on both, `sec:interior`** — *`I14`, landed, and it passes the sharp test set by `I11`/`I12`* |
 | 10 | **`P01`** | `sec:3` · `sec:5` | *horizon generators are a null geodesic congruence; does the metric-singularity condition have a first-integral statement?* | ⛭ **CONFIRMED, `sec:3`** — *`I15`, landed. **The first LOW-confidence prediction tested, and it held***: *the hedge was that `P01`'s subject is causal structure rather than motion, and the constancy turned out to have a dynamical reading anyway* |
-| 11 | **`P05`** | `sec:relations` · `sec:conjugacy` · `sec:alpha-invariant` | *"the single invariant is the geometry" — is that invariant in this field's sense, and does the $\alpha$-action have a conserved charge?* | ⟐ **owed** |
+| 11 | **`P05`** | `sec:relations` · `sec:conjugacy` · `sec:alpha-invariant` | *"the single invariant is the geometry" — is that invariant in this field's sense, and does the $\alpha$-action have a conserved charge?* | ⛭ **CHECKED-NEGATIVE, and the question is ANSWERED — `I16`.** *`sec:alpha-invariant` and `sec:relations` read in full; **the dynamical statement is already landed there by 60's `I5`, and nothing further is owed*** |
 | 12 | **`P07`** | `sec:lift-initial-rate` · `sec:sds-cosmology` | *the lift's closed form and the recovered Carter constant; states results derived elsewhere* | ⟐ **owed** |
 | 13 | **`p0`** | `sec:rulings` · `sec:standard` · `sec:unification` | *the straight null rulings are geodesics of the substrate; maximal symmetry is the largest possible algebra of first integrals* | ⟐ **owed** |
 | 14 | **`P13`** | `sec:routes` · `sec:wall` | *the closed routes are an exhaustion argument; does any run through a conserved quantity?* | ⟐ **owed** |
