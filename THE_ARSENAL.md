@@ -981,3 +981,30 @@ DECLARED) and hand the reader the number instead of the comfort.**
 ⌷ *Nine of the ten produced **no collision at all** and would never have surfaced; only `r3622` fired,
 and only because 60's copy happened to still be unmerged.* ⇒ **The run report earns its place by
 converting an invisible drift into a printed fact before the collision that makes it expensive.**
+
+## ⛔⛭⛭ THE FINDING COLLIDED WITH THE OTHER LINE WHILE IT WAS BEING WRITTEN — r3646
+
+*`r3640` is the commit that diagnosed the parity band's failure, named `front + 2` as the cause, and
+wrote the rule that fixes it into `CLAIMS.md` and into the gate.* ***Within the hour 59 took `r3640`
+and `r3642` — by `front + 2` from `r3638` — for `P12` and `P16` pass B.*** **The commit that said "this
+will keep happening" collided at its own number.**
+
+⇒ *As confirmation of a mechanism this is as direct as it gets.* **But the useful half is the other
+one: a rule written in a file the other line has not merged yet cannot reach the fingers that pick the
+number.** *59 was not ignoring the rule; 59 could not see it. The fix landed at 17:5x and the
+collisions were made at 18:0x, from a checkout that predated it.*
+
+***A COORDINATION REPAIR THAT TRAVELS BY DOCUMENT IS RATE-LIMITED BY THE MERGE, AND THE THING IT IS
+TRYING TO PREVENT IS NOT.***
+
+⌗ **So the repair was rewritten as a number rather than a rule.** *`check_revision_collisions` now
+prints* **`THE NEXT REVISION ID FOR THIS LINE IS rNNNN`** *on every run — the next id of this line's
+own parity above the front. It costs nothing to obey and is right by construction rather than by
+recall, and it is correct on each line's own tree the moment that tree runs the gate, with no
+agreement to remember.*
+
+⛔ **AND THE FIRST VERSION OF THAT FUNCTION WAS A COLLISION GENERATOR POINTED THE OTHER WAY.** *It read
+only the **trunk's** front, and this line's own unmerged commits are by definition not on the trunk —
+so immediately after `r3644` was written it advised `r3644` again.* ⇒ **Caught by running it, inside
+the same turn that reported the mechanism. The front that matters is the front of everything this line
+can see, not of the half of it that has merged.**

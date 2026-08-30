@@ -96,6 +96,17 @@ BARE = re.compile(r'^(r\d{3,5})\s*[—-]\s*(.*)$')
 #:     the SHA beside the revision" -- is a rule for NEW citations and does nothing for the nine
 #:     already written.  ⇒ The repair is upstream of the citation, in how the number is CHOSEN. **
 BASELINE = {'r3622',
+            #: ⛔⛭⛭⛭ ** r3640 AND r3642, AND THE FIRST OF THEM IS THE COMMIT THAT DIAGNOSED THE
+            #: MECHANISM. **  *r3640 (60) is "the parity band broke, and adopting it was not what was
+            #: missing: `front + 2` inherits the front's parity", and it names `r3644` as what 59
+            #: would take next by that rule.  ** Within the hour 59 took `r3640` and `r3642`, by
+            #: `front + 2` from `r3638`, for `P12` and `P16` pass B. **  *The finding collided with
+            #: the other line WHILE BEING WRITTEN, which is as direct a confirmation as a claim
+            #: about a mechanism can get -- and as complete a demonstration that A RULE IN A FILE
+            #: THE OTHER LINE HAS NOT MERGED YET CANNOT REACH THE FINGERS THAT PICK THE NUMBER.*
+            #:   ⇒ *** Hence `next_id_for_this_line` below: the repair is not a rule to remember,
+            #:       it is a NUMBER THE GATE HANDS YOU, printed on every run. ***
+            'r3640', 'r3642',
             'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
             'r2821', 'r3099', 'r3100', 'r3105', 'r3108',
             # ⛔ added r3128 (`L-256`): the three that arrived AFTER r3112 reported the class and
@@ -377,6 +388,50 @@ def parity_runs(root=None):
     return runs
 
 
+def _print_next(post):
+    """print the number, because a rule that has to be recalled has already failed once"""
+    nxt = next_id_for_this_line(post)
+    if nxt is None:
+        print()
+        return
+    print()
+    print(f'    ⇒ ** THE NEXT REVISION ID FOR THIS LINE IS  r{nxt}.  **  *Next of this line\'s own')
+    print('       parity above the trunk\'s front -- the rule as arithmetic rather than as a')
+    print('       sentence, because r3640 and r3642 showed the sentence does not reach the fingers.*')
+    print()
+
+
+def next_id_for_this_line(runs):
+    r"""*** THE REPAIR THAT DOES NOT DEPEND ON ANYONE REMEMBERING A RULE ***
+
+    ** `front + 2` is in the fingers, and r3640/r3642 showed a written rule does not displace it:
+    the commit that diagnosed the mechanism collided at its own number, because the other line had
+    not merged the file the rule was written in. **
+      ⇒ *A gate that PRINTS THE NEXT NUMBER costs the reader nothing to obey, and it is right by
+        construction rather than by recall.*
+
+    The number is the next id of THIS line's parity strictly above the trunk's front -- which is the
+    rule stated as arithmetic instead of as a sentence.
+    """
+    if PARITY is None or not runs:
+        return None
+    front = max(runs[-1])
+    # ⛔ ** THE FIRST VERSION OF THIS FUNCTION HANDED BACK A NUMBER THIS LINE HAD ALREADY USED. **
+    #   *It read only the TRUNK's front, and this line's own unmerged commits are by definition not
+    #   on the trunk -- so immediately after writing `r3644` it advised `r3644` again.*
+    #   ⇒ *** A collision generator pointed the other way, in the function written to stop them,
+    #       inside the same run that reported the mechanism.  The front that matters is the front of
+    #       EVERYTHING this line can see, not of the half of it that has merged. ***
+    r = subprocess.run(['git', 'log', '--first-parent', '--format=%s', 'HEAD'],
+                       cwd=ROOT, capture_output=True, text=True)
+    mine = [int(m.group(1)[1:]) for m in            # `BARE` captures the id WITH its `r`
+            (BARE.match(ln.strip()) for ln in r.stdout.split('\n')) if m] if r.returncode == 0 else []
+    n = max([front] + [x for x in mine if x % 2 == PARITY]) + 1
+    while n % 2 != PARITY:
+        n += 1
+    return n
+
+
 def report_runs():
     """*** the drift made visible without a collision to surface it ***"""
     runs = parity_runs()
@@ -397,7 +452,7 @@ def report_runs():
     if len(front) <= RUN_ALERT:
         print('      ⛭ *A short run at the front is the band alive: the lines are alternating, so')
         print('         each is picking from its own half rather than from the other\'s.*')
-        print()
+        _print_next(post)
         return 0
     print(f'    ⚠ ** A RUN OF {len(front)} AT THE FRONT IS THE PRECONDITION FOR THE BAND\'S FAILURE, '
           'and it')
@@ -406,7 +461,7 @@ def report_runs():
     print('       the front -- NOT `front + 2`, which inherits the front\'s parity and is your half')
     print('       only while the front is yours. **  *`front + 2` after the other line\'s run puts')
     print('       you in their half AND KEEPS YOU THERE, because the front is then your own again.*')
-    print()
+    _print_next(post)
     return 0
 
 
