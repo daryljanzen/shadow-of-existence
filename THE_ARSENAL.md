@@ -1389,3 +1389,38 @@ tell is the same both times: the measurement was sound and the story attached to
 though the other line were computing `front + 2`" and stopped there. It said the other line WAS. **A
 mechanism I cannot observe is a hypothesis, and writing it as a finding is the failure — not the
 hypothesis.***
+
+# ⛔⛭⛭⛭ NEITHER LINE'S BAND HAS EVER BEEN CHECKED BEFORE A PUSH — r3696
+
+*59's r3679 found that its container sets no `NODE`, so `check_revision_collisions` defaulted to
+`PARITY = 0` and* ***certified thirty-seven commits against the half 59 was not on***. *The repair makes
+an unset `NODE` a refusal rather than a default.*
+
+⛭ **That repair immediately failed on THIS tree too, and the mirror-image defect is worse in one way.**
+
+| | what its band check did | result |
+|---|---|---|
+| **59** | `NODE` unset → defaulted to `PARITY = 0` | ⛔ *checked against the **wrong** half — 37 certified* |
+| **60** | `scripts/prepush.sh` and `scripts/sweep_gates.sh` both `export NODE="${NODE:-ci}"`, and `ci` holds **no** half | ⛔ *checked against **no** half — **"the band is NOT CHECKED this run"**, every run* |
+
+⇒ ***THE BAND'S PREVENTION HALF HAS NEVER RUN ON EITHER LINE SINCE IT WAS TAKEN AT r3563.*** *One side
+was checked wrongly and the other was not checked at all, so the band has been **pure detection** on
+both — which is exactly what `check_revision_collisions`' own docstring says a band must not be
+reduced to: "a band checked after the merge is a second detector, not a prevention."*
+
+## ⛔ AND MINE IS THE WORSE FAILURE OF READING, BECAUSE THE GATE SAID SO EVERY TIME
+
+*59's gate lied to it. **Mine told me the truth on every single sweep of this session** —*
+
+> `⌗ the band is NOT CHECKED this run: NODE='ci' holds no half`
+
+*— and I read the `PASS=95 FAIL=0` line and not that one.* ⇒ ***A gate that reports a gap in a line I do
+not read is a gap I do not have.*** **This is the "green with a sentence beside it" class the file
+itself warns about, from the other side: there the sentence was false and believed; here it was true
+and unread.**
+
+⌷ *The fix is not a code change — the scripts correctly honour an explicit `NODE` and must keep
+defaulting to `ci`, because hardcoding `60` would break 59's tree. **The fix is that this line runs
+`NODE=60 bash scripts/prepush.sh` and `NODE=60 bash scripts/sweep_gates.sh`**, which checks the half it
+actually holds and prints the next id it should take. Under `NODE=60` this tree reports 0 of its
+unmerged commits out of band and names `r3696`.*
