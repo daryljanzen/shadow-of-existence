@@ -489,6 +489,54 @@ same paper. Caught by compiling.*
 
 ---
 
+## ⛭⛭⛭ `I21` — **LEAST-ARBITRARINESS AND SUPERINTEGRABILITY ARE ONE PROPERTY, READ TWO WAYS** — r3656 · **AND THE PASS IS COMPLETE, 17/17**
+
+***The only prediction of emptiness in the table, flagged at the time as needing a test rather than an
+assumption. It is REFUTED.***
+
+*`P06`'s ontological argument turns on a clause about a group action:* **"every less symmetric structure
+requires a choice of how to break the symmetry, and that choice is a modulus, whereas maximal symmetry
+leaves nothing to choose."**
+
+| reading | statement | source |
+|---|---|---|
+| **epistemic** | maximal symmetry carries **no modulus**, so it is a world rather than a family | `P06` |
+| **structural** | a modulus is a coordinate **transverse to the orbits**, so one exists precisely when the action is **non-transitive** | `P12`, in its own words |
+| **dynamical** | the isometry group acts transitively on the **unit tangent bundle** ($15\ge2\cdot5-1$), so every geodesic is every other seen from another vantage — **maximal superintegrability** | `I17` |
+
+⇒ ***Transitivity is the shared root.*** *Least-arbitrariness and superintegrability are one property read
+epistemically and dynamically, and **a modulus appearing is the same event as the action ceasing to be
+transitive.** Landed in `sec:least-arbitrariness`.*
+
+⚠ ***NOT CLAIMED***: *that the modulus count equals the integral deficit. Cutting $\mathrm{dS}_5$ to SdS
+drops the integrals $15\to4$ and raises the moduli $0\to1$; there is no simple complementarity and
+asserting one would be an overclaim.*
+
+---
+
+## ⛭⛭⛭ THE LOCATOR, SCORED — 17 of 17 through pass B
+
+| | count |
+|---|---|
+| right on **paper** | **16 of 17** |
+| right on **address** (section named held) | **14 of 17** |
+| **REDIRECTED** — right paper, wrong section | 2 — `P03` (predicted action-angle in `sec:params`; found the mechanical analogue in `sec:cubic`), `P15` (found in `sec:properframe`) |
+| **REFUTED** | **1 — `P06`**, the only prediction of emptiness |
+| **CHECKED-NEGATIVE** | 1 — `P05`, and because a neighbouring field got there first |
+| hedge refuted | 1 — `P04`'s *"probably the whole of it"* |
+
+⌗ ***WHAT THE SCORE SAYS.*** *The abstract identifies the **paper** reliably and the **section** about four
+times in five. **Every one of the four papers a vocabulary screen would have scored empty — `P02`, `P04`,
+`P06`, and `P01` — carried something**, and three of those four carried a finding that changed how another
+paper reads. `58`'s own record was that the ratings were usually right and the reasons wrong about half the
+time; ours are right more often than that, and the two misses are both **address** misses, which is the
+error the pass is designed to absorb.*
+
+⛔ ***AND THE ONE PREDICTION OF EMPTINESS WAS THE ONE THAT WAS WRONG.*** *That is the result to carry into
+the next field.*
+
+---
+
 ## ⛭⛭⛭ THE LOCATOR — every paper, the sections named, the prediction stated — r3626
 
 > **⛔ THIS REPLACES THE HIGH/MEDIUM/LOW TABLE BELOW, WHICH WAS DOING THE WRONG JOB.** *A rank is a licence
@@ -525,7 +573,7 @@ same paper. Caught by compiling.*
 | 14 | **`P13`** | `sec:routes` · `sec:wall` | *the closed routes are an exhaustion argument; **does any run through a conserved quantity?*** | ⛭ **CONFIRMED, `sec:wall`** — *`I18`, landed, **and it is the obstruction's own hypothesis**. Plus a canon row* |
 | 15 | **`P14`** | `sec:chirality` · `sec:count` | *the radial Dirac superpotential is a 1-D problem with a solvable structure — **shape invariance** is this field's neighbour* | ⛭ **CONFIRMED, `sec:chirality`** — *`I19`, landed. **The prediction named the right test and the answer is NO**, which is the informative direction* |
 | 16 | **`P04`** | `sec:decomp` · `sec:floor` | *$\ln(1+z)=\int H\,\dd t$ is a quadrature and **probably the whole of it*** | ⛭ **CONFIRMED, `sec:decomp`, and the hedge was WRONG** — *`I20`, landed. **`P04` is not empty for this field***, *and it had come back empty on all six of 60's* |
-| 17 | **`P06`** | `sec:rules` · `sec:least-arbitrariness` | *no dynamics; the prediction is that this is genuinely empty, and **that prediction has to be tested rather than assumed*** | ⟐ **owed** |
+| 17 | **`P06`** | `sec:rules` · `sec:least-arbitrariness` | *no dynamics; the prediction is that this is genuinely empty, and **that prediction has to be tested rather than assumed*** | ⛔ **REFUTED, `sec:least-arbitrariness`** — *`I21`, landed. **The prediction of emptiness was wrong**, and it was the one flagged as needing a test* |
 
 ⌗ ***4 of 17 through pass B. Thirteen sections-named papers owed a read.*** *Nothing here is dismissed on
 a count, and `P02` is the standing reason: it scores **zero on every term in this field's vocabulary** and
