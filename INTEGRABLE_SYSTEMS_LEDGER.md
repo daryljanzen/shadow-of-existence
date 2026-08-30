@@ -159,6 +159,50 @@ in the register below.***
 
 ---
 
+## ⛭⛭⛭ THE LOCATOR — every paper, the sections named, the prediction stated — r3626
+
+> **⛔ THIS REPLACES THE HIGH/MEDIUM/LOW TABLE BELOW, WHICH WAS DOING THE WRONG JOB.** *A rank is a licence
+> to skip: I rated four papers `HIGH` and wrote the other thirteen off in one-line rows. `58`'s step 3 says
+> **work EVERY paper, highest estimate first** — first, not only. **And a rank against no scale is a feeling
+> with a symbol beside it.** What the abstract is for is not ranking but **LOCATING**: naming, from what the
+> paper is about, the sections where this field's content would live, as a prediction that can be scored
+> WRONG.*
+>
+> ⌗ ***THE THREE PASSES, and no paper leaves pass B unread.***
+> **A · LOCATE** — *from the abstract, name the `\label`ed sections and say what would be there.*
+> **B · READ** — *open every named section and read it. Verdict: **CONFIRMED**, **REFUTED**, or
+> **REDIRECTED** (the content is there and in a section I did not name — the informative case, because it
+> says the abstract mislocated it).*
+> **C · WORK** — *where B finds a checkable claim: verify, receipt, land, marker.*
+> ⇒ *Scored at the end: how many predictions right, how many wrong, and — `58`'s own measure — **how many
+> had the right paper and the wrong reason**.*
+
+| # | paper | sections named from the abstract | what would be there if this field is relevant | B |
+|---|---|---|---|---|
+| 1 | **`P02`** | `sec:cycloid` · `sec:continuation` · `sec:ring` | *the cycloid is the exactly-solvable 1-DOF problem; $r''=-(r-M)$ is an oscillator; the projected circle should be its phase orbit* | ⛭ **CONFIRMED — `I8`, landed** |
+| 2 | **`P10`** | `sec:deparam` · `sec:lock` · *the instanton paragraph* | *a deparametrised constraint is a Hamiltonian system; the TT tower is a parametric oscillator; ask after the **adiabatic invariant*** | ⛭ **CONFIRMED — `I9`, landed** |
+| 3 | **`P09`** | `sec:pd` · `sec:homog` · `sec:rotation` | *separability, Killing tensors, the Carter constant — the field's own objects, stated in its own words* | ⛭ **CONFIRMED — `I1`, landed** |
+| 4 | **`P11`** | `sec:unpolarized` · `sec:gowdy` · `sec:nonlinear` | *a wave map with a conserved twist; how many independent integrals the reduced system has* | ⛭ **CONFIRMED — two integrals; `I4` posed** |
+| 5 | **`P03`** | `sec:params` · `sec:throat-angle` · `sec:tour` · `sec:winding` | *three coupled projections of one motion is the shape of an **action-angle** description; is the sky angle an angle variable, and is $2M$ its conjugate action?* | ⟐ **owed** |
+| 6 | **`P15`** | `sec:background` · `sec:transmission` · `sec:largescale` | *$\sinh^{2/3}$ is a second exactly-integrable law beside `P02`'s cycloid; the WKB/adiabaticity discussion is this field's expansion* | ⟐ **owed** |
+| 7 | **`P08`** | `sec:kernel` · `sec:trichotomy` · `sec:cosmology` | *"$T_{\mu\nu}=0$ **is** a first-order linear ODE" is a solvability claim; the three constant-curvature slicings are a classification of solvable cases* | ⟐ **owed** |
+| 8 | **`P12`** | `sec:anchor` · `sec:bracket` · `sec:strata` | *a **section selecting a flow** on a base is this field's setting; is that flow integrable, and does the stratification index its integrals?* | ⟐ **owed** |
+| 9 | **`P16`** | `sec:lap` · `sec:rate` · `sec:interior` | *the lap is a closed orbit; "its exact closed solution" for the progenitor interior is another integrable case* | ⟐ **owed** |
+| 10 | **`P01`** | `sec:3` · `sec:5` | *horizon generators are a null geodesic congruence; does the metric-singularity condition have a first-integral statement?* | ⟐ **owed** |
+| 11 | **`P05`** | `sec:relations` · `sec:conjugacy` · `sec:alpha-invariant` | *"the single invariant is the geometry" — is that invariant in this field's sense, and does the $\alpha$-action have a conserved charge?* | ⟐ **owed** |
+| 12 | **`P07`** | `sec:lift-initial-rate` · `sec:sds-cosmology` | *the lift's closed form and the recovered Carter constant; states results derived elsewhere* | ⟐ **owed** |
+| 13 | **`p0`** | `sec:rulings` · `sec:standard` · `sec:unification` | *the straight null rulings are geodesics of the substrate; maximal symmetry is the largest possible algebra of first integrals* | ⟐ **owed** |
+| 14 | **`P13`** | `sec:routes` · `sec:wall` | *the closed routes are an exhaustion argument; does any run through a conserved quantity?* | ⟐ **owed** |
+| 15 | **`P14`** | `sec:chirality` · `sec:count` | *the radial Dirac superpotential is a 1-D problem with a solvable structure — **shape invariance** is this field's neighbour* | ⟐ **owed** |
+| 16 | **`P04`** | `sec:decomp` · `sec:floor` | *$\ln(1+z)=\int H\,\dd t$ is a quadrature and probably the whole of it* | ⟐ **owed** |
+| 17 | **`P06`** | `sec:rules` · `sec:least-arbitrariness` | *no dynamics; the prediction is that this is genuinely empty, and **that prediction has to be tested rather than assumed*** | ⟐ **owed** |
+
+⌗ ***4 of 17 through pass B. Thirteen sections-named papers owed a read.*** *Nothing here is dismissed on
+a count, and `P02` is the standing reason: it scores **zero on every term in this field's vocabulary** and
+is the field's founding example.*
+
+---
+
 ## ⛭⛭⛭ STEP 2 — THE ESTIMATE FROM CONTENTS, WRITTEN BEFORE ANY PAPER IS WORKED — r3620
 
 > **⛔ WHY THIS SECTION EXISTS AND WAS MISSING.** *`OVERNIGHT_FIELD_BAKE_WORK_ORDER.md` step 2, the
