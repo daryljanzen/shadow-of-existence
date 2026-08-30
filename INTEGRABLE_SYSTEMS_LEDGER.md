@@ -360,6 +360,106 @@ first, and that is a different thing from being empty.***
 
 ---
 
+## ⛭⛭⛭ `I17` — **THE SUBSTRATE IS MAXIMALLY SUPERINTEGRABLE, AND `I13`'s LADDER RUNS FROM HERE TO THE WALL** — r3648
+
+***The locator's prediction was exactly right, and the count closes the ladder `I13` opened from the other
+end.***
+
+*A maximally symmetric $D$-manifold carries the largest isometry algebra any $D$-manifold admits,
+$D(D+1)/2$, and each Killing vector gives one linear first integral of the geodesic flow.*
+
+| | Killing vectors | DOF | Liouville needs | max. superintegrability needs $2D-1$ | |
+|---|---|---|---|---|---|
+| **$\mathrm{dS}_5$ substrate** | **15** | 5 | 5 | 9 | ⛭ **met with a surplus of 10** |
+| **$\mathrm{dS}_4$ background** | **10** | 4 | 4 | 7 | ⛭ met with a surplus of 6 |
+
+⇒ ***So the substrate's geodesic flow is not merely integrable but MAXIMALLY SUPERINTEGRABLE***, *which is
+the dynamical face of the corpus's own claim that the substrate has no distinguished point or direction:
+the isometry group acts transitively on the unit tangent bundle, so **all geodesics are one geodesic seen
+from different vantages** — which is `p0`'s thesis in this field's words.*
+
+### ⌗ AND THE LADDER IS NOW COMPLETE, TOP TO BOTTOM
+
+| | integrals | |
+|---|---|---|
+| $\mathrm{dS}_5$ substrate, uncut | **15** | superintegrable, surplus 10 |
+| Type O, de Sitter | 10 | over-determined |
+| Type D, SdS | 4 | integrable on Killing vectors alone |
+| Type D, Kerr–dS | 3 | **short by one — the Killing tensor's job** (`I13`) |
+| the wall, Type N | 1 | the norm alone |
+
+⇒ ***Every cut lowers the count, and the construction is a controlled descent from superintegrable to
+non-integrable.*** *`p0` has the top, `P12` has the strata, `P09` supplies the tensor where the linear
+integrals run out — and **the descent itself is what none of the three states.** Landed in `p0` pointing
+at `P12`, closing the arc `I13` began.*
+
+---
+
+## ⛭⛭⛭ `I18` — **THE OBSTRUCTION'S SECOND HYPOTHESIS *IS* A FIRST INTEGRAL, SO THE WALL SITS ON `I13`'s LADDER** — r3650
+
+*`P13` names the Atiyah--Hirzebruch obstruction's load-bearing hypotheses as **compactness and a
+continuous isometry**. **A continuous isometry is a Killing vector, and a Killing vector is a linear first
+integral of the geodesic flow** — so the second hypothesis says the flow on the face carries a conserved
+momentum.*
+
+| stratum | linear integrals | does the hypothesis hold? |
+|---|---|---|
+| $\mathrm{dS}_5$ substrate | 15 | ✔ amply |
+| Type D, SdS | 4 | ✔ |
+| Type D, Kerr–dS | 3 | ✔ |
+| **Type N, the range edge** | **0** | ⛔ **unavailable** |
+
+⇒ ***The obstruction bites highest up the ladder and lapses at the bottom***, *and the opening `P13` turns
+to — the substrate's discrete orientation structure — is on the side of the wall where the hypothesis is
+**unavailable rather than merely unused**. That is a stronger statement than "the theorem does not apply",
+and it is `F15`'s three-compactness-statuses finding reached from the isometry side.*
+
+### ⛔ AND `wall` IS A CANON ROW — 509 OCCURRENCES, THREE OBJECTS
+
+| | | |
+|---|---|---|
+| ① **the chirality wall** — an **obstruction**, a theorem that forbids | `P13`, `P14` | ×171 |
+| ② **the range wall** — a **locus**, the Type-N edge where continuous symmetry is lost | `P09`, `P11`, `P12` | ×57 |
+| ③ **a domain wall** — a **solution** of a field equation, the three carrying the generations | `P14` | ×47 |
+
+⛭ ***`P14` carries ① and ③ within one section***: *`sec:chirality` opens on "this sector's **chiral
+wall**", and the count reads "all three **walls** at one chirality". **A reader carrying the obstruction
+sense into the configuration sense reads "three walls" as three obstructions.*** ⇒ *Routed to
+`ONTOLOGY_FOUNDATION_INDEX` §0 beside `kernel` and `integrable`, and recorded there.*
+
+---
+
+## ⛭⛭⛭ `I19` — **THE SUPERPOTENTIAL IS NOT SHAPE INVARIANT, SO THE EXACTNESS IS THE ZERO MODE'S AND NOT THE SPECTRUM'S** — r3652
+
+***The locator named shape invariance as the test and the answer is no — the first probe whose value is in
+a negative.***
+
+*`P14` carries $W(r)=\lambda\sqrt f/r$, a genuine supersymmetric-quantum-mechanics superpotential: it
+generates partner potentials $V_{\pm}=W^{2}\pm\dd W/\dd x$ and an exact zero mode. **Shape invariance —
+$V_{+}(\lambda)=V_{-}(\mu)+R$ with $R$ independent of $r$ — is the condition under which the SUSY ladder
+generates the whole spectrum.***
+
+| shift tried | $\partial_r\bigl(V_{+}(\lambda)-V_{-}(\mu)\bigr)=0$? | |
+|---|---|---|
+| $\mu=\lambda-1$ | ⛔ no | |
+| $\mu=\lambda+1$ | ⛔ no | |
+| $\mu=\lambda-\tfrac12$ | ⛔ no | |
+| $\mu=-\lambda$ | ⛭ yes — but $V_{+}(\lambda)-V_{-}(-\lambda)=0$ **identically**, so $R=0$ | *degenerate: the partners coincide, no energy shift to climb* |
+
+*Solving the condition for a general $\mu(\lambda)$ returns an $r$-dependent expression — **no constant
+shift exists**.*
+
+⇒ ***So the exactness available in `P14` is the zero mode's and not the spectrum's.*** *The mode is
+obtained because $W$ changes sign, which is **topological**, and not because the problem is solvable,
+**which it is not**.* ⌗ ***That is why the generation count is read from an index rather than from a list
+of levels*** *— a structural reason for a choice the paper makes and does not explain, and it sits well
+with the corpus's own Heun-type monodromy material in `P16`.*
+
+⌗ *`sec:count` needs no separate landing: `S2`, `S9` and `CH1` are already there (`r3545`), and `I13`
+supplies the reason the index is the right instrument.*
+
+---
+
 ## ⛭⛭⛭ THE LOCATOR — every paper, the sections named, the prediction stated — r3626
 
 > **⛔ THIS REPLACES THE HIGH/MEDIUM/LOW TABLE BELOW, WHICH WAS DOING THE WRONG JOB.** *A rank is a licence
@@ -392,9 +492,9 @@ first, and that is a different thing from being empty.***
 | 10 | **`P01`** | `sec:3` · `sec:5` | *horizon generators are a null geodesic congruence; does the metric-singularity condition have a first-integral statement?* | ⛭ **CONFIRMED, `sec:3`** — *`I15`, landed. **The first LOW-confidence prediction tested, and it held***: *the hedge was that `P01`'s subject is causal structure rather than motion, and the constancy turned out to have a dynamical reading anyway* |
 | 11 | **`P05`** | `sec:relations` · `sec:conjugacy` · `sec:alpha-invariant` | *"the single invariant is the geometry" — is that invariant in this field's sense, and does the $\alpha$-action have a conserved charge?* | ⛭ **CHECKED-NEGATIVE, and the question is ANSWERED — `I16`.** *`sec:alpha-invariant` and `sec:relations` read in full; **the dynamical statement is already landed there by 60's `I5`, and nothing further is owed*** |
 | 12 | **`P07`** | `sec:lift-initial-rate` · `sec:sds-cosmology` | *the lift's closed form and the recovered Carter constant; states results derived elsewhere* | ⟐ **owed** |
-| 13 | **`p0`** | `sec:rulings` · `sec:standard` · `sec:unification` | *the straight null rulings are geodesics of the substrate; maximal symmetry is the largest possible algebra of first integrals* | ⛭ **REDIRECTED — `I50`, landed.** *Content real, address wrong: it is in `sec:shadows`/`sec:landing`, not the three named. **And right paper, WRONG REASON** — the prediction named "the largest algebra of first integrals"; the paper's claim is about the **Carter constant, the one integral that is NOT in that algebra**, and it holds because on a maximally symmetric space there is none to be had* |
-| 14 | **`P13`** | `sec:routes` · `sec:wall` | *the closed routes are an exhaustion argument; does any run through a conserved quantity?* | ⛭ **REFUTED on the letter, CONFIRMED on the kind.** *No route runs through a conserved quantity — the whole paper has **one** vocabulary site and it is "totally geodesic". But `sec:cascade`'s argument is a **RANK count** (SM rank 4 ⊄ SO(6) rank 3), and rank is the size of a maximal COMMUTING set — which is exactly what Liouville integrability counts. The field's counting principle, in Lie-theoretic clothes* |
-| 15 | **`P14`** | `sec:chirality` · `sec:count` | *the radial Dirac superpotential is a 1-D problem with a solvable structure — **shape invariance** is this field's neighbour* | ⛭ **CONFIRMED, and the address was right** — *`sec:chirality` writes the superpotential and both SUSY-QM partner potentials $W^2\pm\dd W/\dd\ell$ outright.* **And REDIRECTED on the object:** *the paper's actual first integral is the **conserved twist $c$** (P11's), used as the discriminant that separates the chiralities; and its real neighbour in this field is in the bibliography — **Jackiw–Rebbi**, not shape invariance* |
+| 13 | **`p0`** | `sec:rulings` · `sec:standard` · `sec:unification` | *the straight null rulings are geodesics of the substrate; **maximal symmetry is the largest possible algebra of first integrals*** | ⛭ **CONFIRMED, `sec:rulings`** — *`I17`, landed. The prediction was exactly right and the count is exact* <br> ⛭ **AND 60, `I50`: REDIRECTED on the OTHER half.** *The two answer different halves of one prediction and **compose**: 59 counts the LINEAR integrals (15 on $\mathrm{dS}_5$, maximally superintegrable); 60 shows the QUADRATIC ones are already Killing-vector products (105 = 105 at $n=5$), and are NOT on Kerr. ⇒ **The substrate's integral structure is entirely Killing-generated at every order tested — and 59's ladder row "Kerr–dS, short by one, the Killing tensor's job" IS 60's Kerr control, reached independently.*** |
+| 14 | **`P13`** | `sec:routes` · `sec:wall` | *the closed routes are an exhaustion argument; **does any run through a conserved quantity?*** | ⛭ **CONFIRMED, `sec:wall`** — *`I18`, landed, **and it is the obstruction's own hypothesis**. Plus a canon row* <br> ⛔ **AND THIS CORRECTS 60's r3642 VERDICT, WHICH READ "REFUTED on the letter — no route runs through a conserved quantity."** *That is **wrong**: `sec:wall`'s obstruction rests on a continuous isometry, which **is** a Killing vector and so a linear first integral. 60 read that section in full and did not connect the paper's language to the field's — which is the one thing the locator exists to do.* ⌗ *60's `sec:cascade` observation stands beside it and is untouched: the rank count (SM rank 4 ⊄ $\mathrm{SO}(6)$ rank 3) is a **commuting-charge** count, this field's own counting principle in Lie-theoretic clothes.* |
+| 15 | **`P14`** | `sec:chirality` · `sec:count` | *the radial Dirac superpotential is a 1-D problem with a solvable structure — **shape invariance** is this field's neighbour* | ⛭ **CONFIRMED, `sec:chirality`** — *`I19`, landed. **The prediction named the right test and the answer is NO**, which is the informative direction* <br> ⛭ **AND 60 agrees on the address** — *`sec:chirality` writes $W$ and both partner potentials outright. 60 named shape invariance as the checkable question and **did not compute it**; `I19` does, and the answer is NO.* ⌗ *60 adds the object: the paper's actual first integral is the **conserved twist $c$** (`P11`'s), and its real neighbour here is in the bibliography — **Jackiw–Rebbi**.* |
 | 16 | **`P04`** | `sec:decomp` · `sec:floor` | *$\ln(1+z)=\int H\,\dd t$ is a quadrature and probably the whole of it* | ⛭ **CONFIRMED — paper, address AND hedge.** *`sec:decomp` carries $\ln(1+z)=\int H\,\dd t$ verbatim, and "probably the whole of it" is right: the paper has **ZERO** sites of this field's vocabulary. ⌗ But the quadrature is $\int\dd a/a$ — an exact differential, so it is an **identity, not the integration of a dynamical system*** |
 | 17 | **`P06`** | `sec:rules` · `sec:least-arbitrariness` | *no dynamics; the prediction is that this is genuinely empty, and **that prediction has to be tested rather than assumed*** | ⛭ **CONFIRMED — and it needed the read.** *Zero sites of the field's vocabulary; the two terms a count WOULD have flagged in `sec:least-arbitrariness` are both homonyms — "Hamiltonian" is P10's self-adjoint-extension operator (functional analysis) and "invariant" is a parity-even part of a metric function. **The count says look; the read says empty.** 59 was right that this had to be tested* |
 
@@ -430,6 +530,46 @@ term count and carries **none** of it under that word.*
 carries the quadrature with no vocabulary at all; `P06` is genuinely empty and only a read could say so.*
 ⇒ **The vocabulary and the content are close to ANTI-correlated across these five, which is the sharpest
 form of `P02`'s lesson the corpus has yet produced.**
+
+## ⛔⛭⛭⛭ BOTH LINES WORKED ROWS 13–15 INDEPENDENTLY — ONE CORRECTION AND ONE CONVERGENCE — r3656
+
+*59 landed `I17`/`I18`/`I19` (r3648–r3652) on `p0`, `P13`, `P14`; 60 had landed the same three rows at
+r3642. **The overlap is the cost of two lines claiming from one table** — 60 claimed rows 13–17 at r3640
+and 59 worked them anyway — but the two reads are worth more than the duplication cost, and here is why.*
+
+### ⛔ THE CORRECTION: 60's `P13` VERDICT WAS WRONG, AND NOT FROM A COUNT
+
+*60 wrote:* **"REFUTED on the letter — no route runs through a conserved quantity."**
+*59's `I18`:* ***a continuous isometry is a Killing vector, and a Killing vector is a linear first
+integral*** *— so `sec:wall`'s obstruction rests on a conserved momentum, and the wall sits on the ladder.*
+
+⇒ **59 is right and 60 is wrong.** ⌗ *And the way it is wrong matters: **60 read `sec:routes` and
+`sec:wall` in full**, printed them, read the Atiyah–Hirzebruch paragraph — and still did not connect the
+paper's language to the field's.* ***That is not scoring from a grep; it is the failure the locator exists
+to prevent, committed with the section open.*** *A vocabulary census is the tool 60 built for this field
+and it is not a substitute for knowing what the field's objects look like when they are wearing other
+words.* ⌷ *60's `sec:cascade` rank observation stands and is untouched.*
+
+### ⛭ THE CONVERGENCE: THE TWO `p0` READS ARE ONE RESULT FROM TWO SIDES
+
+| | measures | on the substrate | on Kerr |
+|---|---|---|---|
+| **59 `I17`** | the **LINEAR** integrals — Killing vectors | $15$ on $\mathrm{dS}_5$; Liouville needs 5, max. superintegrability 9 ⇒ **surplus 10** | ladder row: *"Kerr–dS, 3 — **short by one — the Killing tensor's job**"* |
+| **60 `I50`** | the **QUADRATIC** integrals | every one is already a Killing-vector product: $6{=}6$, $20{=}20$, $50{=}50$, $105{=}105$ at $n{=}5$ | ⛔ the Carter tensor adds a **fifth** dimension — **irreducible** |
+
+⇒ ***THE SUBSTRATE'S INTEGRAL STRUCTURE IS ENTIRELY KILLING-GENERATED AT EVERY ORDER EITHER LINE TESTED,
+AND BOTH LINES FOUND THE SAME PLACE IT FAILS.*** *59's ladder row "short by one — the Killing tensor's
+job" and 60's Kerr control are **the same statement**, arrived at from opposite ends and neither knowing
+of the other.* ⌗ *Convergence from independent method is the one form of confirmation a single line cannot
+manufacture, and it is worth more than the duplicated effort cost.*
+
+### ⌗ AND 59 COMPUTED THE ONE THING 60 NAMED AND LEFT
+
+*60's `P14` row named **shape invariance** as the checkable question and did not compute it. `I19` does:
+the answer is **NO** for every shift tried, so the exactness is the zero mode's and not the spectrum's.*
+⇒ **A question is not a finding, and 60's row said so without closing it. 59 closed it.**
+
+---
 
 ## ⛭⛭ `I50` — **THE CARTER CONSTANT IS THE SUBSTRATE'S SYMMETRY, AND ON KERR IT IS NOT** — r3642; `I13` → `I16` at r3648, → `I50` at r3652 when the renumber itself collided
 

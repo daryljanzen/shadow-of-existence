@@ -441,6 +441,28 @@ the spacetime class is in view. **A** takes "asymptotic"; **B** takes "first int
 classifier over `first integral` and gets one sense back — the line that would have caught a classifier
 inventing the split.*
 
+### ⛭ `wall` — added r3650 by 59, from the integrable-systems bake's `I18`. **509 live occurrences, three objects.**
+
+| reading | what it names | where | count |
+|---|---|---|---|
+| `wall` ① | **THE CHIRALITY WALL** — *an **obstruction**: the Atiyah–Hirzebruch index argument closing the geometric route to chiral matter, whose load-bearing hypotheses are compactness and a continuous isometry* | **`P13` · `P14`** | **×171** |
+| `wall` ② | **THE RANGE WALL** — *a **boundary of the construction**: the Type-N edge of the stratification, where continuous symmetry is lost and free gravitational radiation begins* | **`P09` · `P11` · `P12`** | **×57** |
+| `wall` ③ | **A DOMAIN WALL** — *a **field configuration**: the three walls carrying the generations, with $\sigma_y$ eigenvalues for chiralities* | **`P14`** | **×47** |
+| — | *ordinary prose, figure captions, and compounds* | scattered | remainder |
+
+**⛭ ⛔ THEY ARE THREE KINDS OF THING, NOT THREE INSTANCES OF ONE.** *① is a **theorem** that forbids;
+② is a **locus** in a parameter space; ③ is a **solution** of a field equation. **The corpus's own
+sentences distinguish them and the word does not.***
+
+**⛭ AND `P14` CARRIES ① AND ③ WITHIN ONE SECTION.** *`sec:chirality` opens "on the slicing curve … this
+sector's **chiral wall**" (①) and the same paper's count section reads "that holonomy acts on the
+**walls'** chiralities … all three **walls** at one chirality" (③). ⇒ ***A reader who carries the
+obstruction sense into the configuration sense reads "three walls" as three obstructions.*** *That is the
+`kernel` shape again (§0, `r3579`), and the `z` rule does not save it: **`P14` uses two.***
+
+⌗ *Recorded, **not** unified. All three are load-bearing and each is standard in its own literature, so
+this falls under the $\gamma$ rule (r1797) exactly as `kernel` and $\mathcal{H}$ do.*
+
 ### ⛭ `kernel` — added r3579 by 59, from the functional-analysis bake's `F13`. **153 live occurrences, four readings, and two of them are opposite objects in the field the word belongs to.**
 
 | reading | what it names | where | count |
