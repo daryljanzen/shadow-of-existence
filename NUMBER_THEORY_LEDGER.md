@@ -109,3 +109,49 @@ irrational and whose masses are arbitrary reals. *Noted so it is not mistaken fo
 
 ⌗ ***DEPTH BESIDE COVERAGE.*** **Coverage: 17 of 17 read, by name.**
 **Depth: 1 bite, 4 bounces, 1 held — SIXTEEN of the seventeen papers owed nothing.**
+---
+
+## ⛭⛭⛭ THE ESTIMATE FROM CONTENTS — **the step this bake SKIPPED, run at r3622**
+
+> ⛔ ***`OVERNIGHT_FIELD_BAKE_WORK_ORDER.md` STEP 2 requires all seventeen ABSTRACTS read and rated
+> HIGH/MEDIUM/LOW from what each paper is ABOUT, written into the ledger BEFORE any paper is worked.***
+> *59 skipped it; I skipped it after them. **Skipping it is the whole failure: a field's term list is a
+> list of what I already know the field to contain, so grepping it returns only that.** It cannot return
+> the thing the field would see that the corpus has no word for.*
+> ⌗ *Written here **after** the term-side pass rather than before it, which is the honest order to record
+> and the wrong order to have worked in. **Where the estimate and the term pass disagree, the disagreement
+> is kept in the table rather than resolved silently.***
+
+| paper | estimate | reason, from subject matter — **not from counts** |
+|---|---|---|
+| **`P05`** | **HIGH** | *the horizon cubic's Galois group, the discriminant, and a degree-six closure* |
+| **`P03`** | HIGH | *a cubic, its discriminant, its roots and their exchange* |
+| **`P14`** | MEDIUM | *$\mathbb{Z}_3$, $\mathbb{Z}_6$, $D_6$ and a subgroup index — group arithmetic, if not number theory* |
+| **`P02`** | MEDIUM | *one curve with two critical points; the cycloid is transcendental and its rationality is never asked* |
+| **`P16`** | MEDIUM | *abundances, ratios and $\eta$ — a dimensionless number the paper cannot derive* |
+| **`P15`** | MEDIUM | *$\zeta_3$ enters the photon density; peak spacings are integers* |
+| **`p0`** | MEDIUM | *a single dimensionless ledger and the $10^{122}$* |
+| **`P12`** | LOW | *an algebroid* |
+| **`P09`** | LOW | *a range theorem* |
+| **`P13`** | LOW | *a gauge boundary* |
+| **`P01`** | LOW | *causal structure* |
+| **`P04`** | LOW | *a path integral* |
+| **`P06`** | LOW | *epistemology* |
+| **`P07`** | LOW | *synthesis* |
+| **`P08`** | LOW | *an operator* |
+| **`P10`** | LOW | *constraints* |
+| **`P11`** | LOW | *dynamics* |
+
+⌗ **2 rated HIGH from contents.** *Scored against the term-side pass below.*
+
+### ⛭ SCORING THE ESTIMATE AGAINST THE TERM-SIDE PASS
+
+| | estimate | term-side verdict | outcome |
+|---|---|---|---|
+| `P05` | **HIGH** | WORKED — `T1` landed | agreed, and it was the field's one bite |
+| **`P03`** | **HIGH** | ⛔ **CHECKED-NEGATIVE** | ⚠ ***DISAGREES*** — *it carries the cubic, its discriminant and its roots* |
+| the other fifteen | MEDIUM / LOW | CHECKED-NEGATIVE | agreed |
+
+⇒ *`P03`'s disagreement is real but it is **the same cubic `P05` carries**, and `T1`'s fence — that the $S_3$
+inference needs irreducibility — is stated where the inference is made. **Landing it twice would be landing it
+once**.* ⌗ *Recorded rather than acted on, which is what the estimate table is for.*

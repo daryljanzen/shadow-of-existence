@@ -163,3 +163,56 @@ in the first field taken up after it was written.*
 ⌗ ***DEPTH BESIDE COVERAGE.*** **Coverage: 17 of 17 read, by name.**
 **Depth: 2 bites, 4 bounces, 1 held — and FIFTEEN of the seventeen papers owed nothing.**
 *`P04` returns zero on both screens for the second field running, which is now a fact about `P04` rather than about either field.*
+---
+
+## ⛭⛭⛭ THE ESTIMATE FROM CONTENTS — **the step this bake SKIPPED, run at r3622**
+
+> ⛔ ***`OVERNIGHT_FIELD_BAKE_WORK_ORDER.md` STEP 2 requires all seventeen ABSTRACTS read and rated
+> HIGH/MEDIUM/LOW from what each paper is ABOUT, written into the ledger BEFORE any paper is worked.***
+> *59 skipped it; I skipped it after them. **Skipping it is the whole failure: a field's term list is a
+> list of what I already know the field to contain, so grepping it returns only that.** It cannot return
+> the thing the field would see that the corpus has no word for.*
+> ⌗ *Written here **after** the term-side pass rather than before it, which is the honest order to record
+> and the wrong order to have worked in. **Where the estimate and the term pass disagree, the disagreement
+> is kept in the table rather than resolved silently.***
+
+| paper | estimate | reason, from subject matter — **not from counts** |
+|---|---|---|
+| **`P14`** | **HIGH** | *a zero-mode count on a compact leaf, stated as an index* |
+| **`P13`** | **HIGH** | *the Atiyah--Hirzebruch obstruction is the whole mechanism of its wall* |
+| **`P02`** | **HIGH** | *⛔ ***two non-degenerate critical points on a smooth circle*** — that is Morse theory, and the paper's vocabulary for this field is zero* |
+| **`P03`** | **HIGH** | *critical points of identical analytic character, a three-sheeted branched cover, monodromy* |
+| **`P05`** | HIGH | *a branched cover with deck and monodromy groups — covering-space topology* |
+| **`P10`** | MEDIUM | *⛔ **AND THIS ROW WAS WRONG WHEN FIRST WRITTEN AND IS CORRECTED IN PLACE.** I rated it HIGH for *"the bundle carries no flat connection"* — **that sentence is `P12`'s, not `P10`'s**, and `P10` contains the word `connection` **zero times**. *An estimate from contents can misattribute, which is exactly what makes it informative rather than safe.* What `P10` genuinely carries is a one-parameter family of self-adjoint extensions, already `\ldg{functional_analysis}`'s* |
+| **`P11`** | HIGH | *chirality and helicity, settled by a parity that no connected action reaches* |
+| **`P12`** | HIGH | *a Lie algebroid and the Atiyah sequence of a principal bundle* |
+| **`P07`** | MEDIUM | *it gathers P13's wall as an established rung* |
+| **`P09`** | MEDIUM | *a range bounded by symmetry; Petrov classification is algebraic rather than topological* |
+| **`p0`** | MEDIUM | *the ladder and the substrate's global structure* |
+| **`P16`** | MEDIUM | *a branch point crossed by a reassignment — a global-structure question* |
+| **`P08`** | MEDIUM | *the kernel of a matter functional* |
+| **`P01`** | MEDIUM | *a null hypersurface whose induced metric degenerates* |
+| **`P15`** | LOW | *a cosmology and its perturbations* |
+| **`P06`** | LOW | *epistemology* |
+| **`P04`** | LOW | *a redshift path integral* |
+
+⌗ **8 rated HIGH from contents.** *Scored against the term-side pass below.*
+
+### ⛔⛭⛭ SCORING THE ESTIMATE AGAINST THE TERM-SIDE PASS — three disagreements, and one of them is `P02`
+
+| | estimate | term-side verdict | outcome |
+|---|---|---|---|
+| `P14` · `P13` · `P11` · `P12` | HIGH | WORKED / CHECKED-NEGATIVE with reasons | agreed |
+| **`P02`** | **HIGH** | ⛔ **CHECKED-NEGATIVE** | ⚠ ***DISAGREES — and this is the paper 59's r3620 used to prove the step matters*** |
+| **`P03`** | **HIGH** | ⛔ **CHECKED-NEGATIVE** (*"`index` ×8 is a label"* — itself corrected once already) | ⚠ ***DISAGREES*** |
+| `P05` | HIGH | CHECKED-NEGATIVE (`Atiyah` ×4 is the Atiyah *sequence*) | agreed — the disagreement is about which field owns the cover |
+| `P10` | ~~HIGH~~ MEDIUM | CHECKED-NEGATIVE | **the estimate was WRONG and is corrected above** |
+
+⇒ ***`P02` AND `P03` CARRY TWO NON-DEGENERATE CRITICAL POINTS ON A SMOOTH CIRCLE, WHICH IS MORSE THEORY***,
+*and this field's vocabulary in both is zero.* ⛔ **AND THE FINDING IS ALREADY LANDED — by 59 at r3620, from
+the integrable side**: the circle is the harmonic oscillator's phase orbit and a periodic orbit of one degree
+of freedom has exactly two turning points.
+⌗ ***So the honest outcome is: the estimate would have found it, the term pass could not, and another line got
+there first from a different field. The row is recorded as a MISS rather than converted into a fifth route*** —
+*a Morse-theoretic lower bound on a claim already established four ways is a landing this ledger wants and the
+corpus does not.*

@@ -32,14 +32,14 @@ that opens on the wrong subject produces findings it owns.*
 
 ---
 
-# ⛔⛭⛭ A GATE THAT CATCHES YOU FIVE TIMES IS NOT A GATE THAT IS TOO STRICT — r3618
+# ⛔⛭⛭ A GATE THAT CATCHES YOU SIX TIMES IS NOT A GATE THAT IS TOO STRICT — r3618, updated r3622
 
-*`lint_assertions.py` / `check_receipts` flagged a hollow `expr == True` assertion in **one receipt of
-every field bake**, five fields running: r3608, r3610, r3614, r3616, r3618.*
+*`lint_assertions.py` / `check_receipts` flagged a hollow assertion in **one receipt of every field bake**,
+SIX bakes running: r3608, r3610, r3614, r3616, r3618, and again at r3622 when the campaign was reopened.*
 
 ⇒ ***FIVE CATCHES, FIVE FIELDS, ONE GATE, ONE AUTHOR.*** *Each was fixed by pinning a measured value.
 **The instructive part is not the defect — it is that a careful reader who had been told about it four
-times reproduced it a fifth**, and an automatic check caught every single instance.*
+times reproduced it a sixth**, and an automatic check caught every single instance.*
 
 ⌗ ***THE RULE THIS SHARPENS.*** *A gate's value is not measured by how often it fires on OTHERS. **A
 gate that keeps catching the person who knows about it is doing the work that person cannot do**, and

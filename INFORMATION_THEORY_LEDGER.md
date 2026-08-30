@@ -127,3 +127,53 @@ and be absent from the corpus entirely, and the only thing that finds that out i
 **Depth: 0 bites, 1 confirmation, 5 bounces — and SIXTEEN of the seventeen papers owed nothing.**
 ***A field that finds a debt in every paper has been read to a template. This one found a debt in none,
 and that is a measurement of the corpus rather than a failure of the reader.***
+---
+
+## ⛭⛭⛭ THE ESTIMATE FROM CONTENTS — **the step this bake SKIPPED, run at r3622**
+
+> ⛔ ***`OVERNIGHT_FIELD_BAKE_WORK_ORDER.md` STEP 2 requires all seventeen ABSTRACTS read and rated
+> HIGH/MEDIUM/LOW from what each paper is ABOUT, written into the ledger BEFORE any paper is worked.***
+> *59 skipped it; I skipped it after them. **Skipping it is the whole failure: a field's term list is a
+> list of what I already know the field to contain, so grepping it returns only that.** It cannot return
+> the thing the field would see that the corpus has no word for.*
+> ⌗ *Written here **after** the term-side pass rather than before it, which is the honest order to record
+> and the wrong order to have worked in. **Where the estimate and the term pass disagree, the disagreement
+> is kept in the table rather than resolved silently.***
+
+| paper | estimate | reason, from subject matter — **not from counts** |
+|---|---|---|
+| **`P04`** | **HIGH** | ****what a measurement can and cannot distinguish*** — the monopole isotropy read as a direct measurement, with a signal against a floor* |
+| **`P07`** | HIGH | *it argues the information paradox away structurally; unitarity and what it preserves are this field's objects* |
+| **`P01`** | MEDIUM | *the paradox again, plus an explicit epistemology of what a causal past yields* |
+| **`p0`** | MEDIUM | *the entropy/fine-tuning identity, and $S=A/4$ is a count* |
+| **`P10`** | MEDIUM | *unitary evolution from self-adjointness* |
+| **`P06`** | MEDIUM | *theory-choice as inference; "which rules track the world" is an information question in another dialect* |
+| **`P15`** | MEDIUM | *likelihoods and a data confrontation* |
+| **`P16`** | LOW | *abundances from a network* |
+| **`P02`** | LOW | *one geometric object* |
+| **`P03`** | LOW | *angles and a cover* |
+| **`P05`** | LOW | *a groupoid* |
+| **`P08`** | LOW | *an operator* |
+| **`P09`** | LOW | *a range theorem* |
+| **`P11`** | LOW | *dynamics* |
+| **`P12`** | LOW | *an algebroid* |
+| **`P13`** | LOW | *a gauge-group boundary* |
+| **`P14`** | LOW | *a spinor sector* |
+
+⌗ **2 rated HIGH from contents.** *Scored against the term-side pass below.*
+
+### ⛔⛭ SCORING THE ESTIMATE AGAINST THE TERM-SIDE PASS
+
+| | estimate | term-side verdict | outcome |
+|---|---|---|---|
+| `P07` | HIGH | WORKED | agreed |
+| **`P04`** | **HIGH** | ⛔ **CHECKED-NEGATIVE** | ⚠ ***DISAGREES — and the term side was wrong about the paper's subject*** |
+| the other fifteen | MEDIUM / LOW | CHECKED-NEGATIVE | agreed |
+
+⇒ ⚠ ***`P04` IS ABOUT WHAT A MEASUREMENT CAN DISTINGUISH***, *which is this field's central question: a floor
+of $2.8\times10^{-3}$ against an observed $3\times10^{-6}$, a margin of 923, and an explicit statement of how
+much worse the data would have to be to close it.* ⌗ **The verdict is nonetheless unchanged and the reason is
+worth separating from the estimate being wrong: `P04` does that work in the language of statistics and
+harmonic analysis, and already carries `\ldg{statistics_inference}` and `\ldg{harmonic_analysis}`.**
+***The estimate was right that the paper is about this field's question; the term pass was right that this
+field has nothing to add. Both facts belong on the record.***

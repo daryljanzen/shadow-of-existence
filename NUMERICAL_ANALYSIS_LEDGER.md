@@ -114,3 +114,51 @@ larger instrument than a field bake should ship. Recorded with the shape of the 
 
 ⌗ ***DEPTH BESIDE COVERAGE.*** **Coverage: 17 of 17 papers by name, and 658 receipt files as a population.**
 **Depth: 1 bite, 1 confirmation, 2 bounces, 1 held — sixteen of seventeen papers owed nothing.**
+---
+
+## ⛭⛭⛭ THE ESTIMATE FROM CONTENTS — **the step this bake SKIPPED, run at r3622**
+
+> ⛔ ***`OVERNIGHT_FIELD_BAKE_WORK_ORDER.md` STEP 2 requires all seventeen ABSTRACTS read and rated
+> HIGH/MEDIUM/LOW from what each paper is ABOUT, written into the ledger BEFORE any paper is worked.***
+> *59 skipped it; I skipped it after them. **Skipping it is the whole failure: a field's term list is a
+> list of what I already know the field to contain, so grepping it returns only that.** It cannot return
+> the thing the field would see that the corpus has no word for.*
+> ⌗ *Written here **after** the term-side pass rather than before it, which is the honest order to record
+> and the wrong order to have worked in. **Where the estimate and the term pass disagree, the disagreement
+> is kept in the table rather than resolved silently.***
+
+| paper | estimate | reason, from subject matter — **not from counts** |
+|---|---|---|
+| **`P15`** | **HIGH** | *a full perturbation sector confronted with data — Boltzmann integration, a reference-code comparison, banked spectra* |
+| **`P16`** | **HIGH** | *a nucleosynthesis network integrated to relic abundances; every number is computed* |
+| **`P04`** | MEDIUM | *a floor computed from an integral over the path* |
+| **`P11`** | MEDIUM | *a Cauchy problem and a propagating mode* |
+| **`P14`** | MEDIUM | *a bound-state spectrum and a threshold* |
+| **`P10`** | MEDIUM | *self-adjoint extensions and a spectral condition* |
+| **`P03`** | MEDIUM | *angles and roots computed in closed form* |
+| **`P09`** | LOW | *a range theorem* |
+| **`P05`** | LOW | *a groupoid* |
+| **`P02`** | LOW | *one curve* |
+| **`P01`** | LOW | *a theorem* |
+| **`P06`** | LOW | *epistemology* |
+| **`P07`** | LOW | *synthesis* |
+| **`P08`** | LOW | *an operator, derived not integrated* |
+| **`P12`** | LOW | *an algebroid* |
+| **`P13`** | LOW | *a boundary argument* |
+| **`p0`** | LOW | *the substrate* |
+
+⌗ **2 rated HIGH from contents.** *Scored against the term-side pass below.*
+
+### ⛭ SCORING THE ESTIMATE AGAINST THE TERM-SIDE PASS
+
+| | estimate | term-side verdict | outcome |
+|---|---|---|---|
+| `P15` | **HIGH** | WORKED — `Q2` landed | agreed |
+| **`P16`** | **HIGH** | ⛔ **CHECKED-NEGATIVE** on the prose | ⚠ ***DISAGREES on the prose and AGREES on the substance*** |
+| the other fifteen | MEDIUM / LOW | CHECKED-NEGATIVE | agreed |
+
+⇒ *`P16` integrates a nucleosynthesis network to relic abundances, so from contents it is as high as `P15`.*
+⌗ ***And it was in fact read — as one of the 658 receipt files***, where `bbn_network.py` is one of the four
+receipts in the whole corpus carrying a convergence check. **The term-side prose verdict and the population
+read disagreed, and the population read was the right one.** *That is an argument for this field's target
+being the receipts, made by the estimate rather than by me.*
