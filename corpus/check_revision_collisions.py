@@ -163,7 +163,7 @@ BASELINE = {'r3622',
             #: index-theory rows 13 and 8.*
             #:   ⌗ *Fifteen consecutive is no longer a count worth narrating each time; the run
             #:     length is the measurement and `report_runs` prints it.*
-            'r3666', 'r3668', 'r3670',
+            'r3666', 'r3668', 'r3670', 'r3672',
             'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
             'r2821', 'r3099', 'r3100', 'r3105', 'r3108',
             # ⛔ added r3128 (`L-256`): the three that arrived AFTER r3112 reported the class and

@@ -10,6 +10,46 @@ sources: [chat]
 
 # THE INFORMATION THEORY LEDGER — the field whose whole footprint was an artefact
 
+## ⛭⛭⛭ PASS A — THE LOCATOR, WRITTEN BEFORE ANY PAPER IS WORKED — r3682 (v2 method)
+
+> ⛔ ***THIS DOES NOT STRIKE THE TERM-SIDE PASS BELOW.*** *That pass read sites and named homonyms and its
+> rows stand. **It asked what this field is CALLED. This asks what the papers are ABOUT** — v2 §0, "a term
+> list is a list of what you already know the field to contain."*
+>
+> ⌗ **THE TERM LIST, SPANNING BOTH HALVES THIS TIME — the r3676 lesson, paid for in index theory.**
+> *Shannon side:* `entropy` ×23 · `information` ×45 · `channel` ×7 · `compression` ×14 · `code` ×15 ·
+> `transmission` ×54 · `signal` ×7 · `correlation` ×4 · `noise` ×2 — *and* ⛔ ***`Shannon` ×0,
+> `mutual information` ×0, `capacity` ×0, `bit` ×0, `Kolmogorov` ×0, `redundancy` ×0.***
+> ⇒ **The field's own name appears nowhere. Every word that IS present is a candidate homonym, which is
+> exactly the condition under which a count decides nothing.**
+
+| # | paper | sections named from the abstract | what would be there if this field is relevant | B |
+|---|---|---|---|---|
+| 1 | **`P16`** | `sec:peak` · `sec:interior` · `sec:network` | ⛭ ***ERASURE.*** *"The peak **erases** the composition and the cooling leg remakes it." **An erasure channel's output is exactly its conserved quantities** — the paper says $\eta$ crosses because baryon number is conserved and the composition does not because binding is not. **Prediction: what survives the peak IS the list of conserved charges, and the paper has that list without calling it a channel*** | ⟐ **owed** |
+| 2 | **`P15`** | `sec:transmission` · `sec:what-crosses` · `sec:coherence` | ⛭ ***A TRANSMISSION DICHOTOMY IS A CHANNEL.*** *"A non-degenerate horizon's exponential approach imprints a scale-invariant spectrum; the degenerate member's power-law imprints none." **Prediction: this is a statement about what the progenitor can send through — fidelity, not capacity — and the paper computes a transfer without naming a channel*** | ⟐ **owed** |
+| 3 | **`P06`** | `sec:rules` · `sec:engine` · `sec:least-arbitrariness` | ⛔ ***RULE 3 IS A COMPRESSION CRITERION AND RULE 2 IS A LIKELIHOOD.*** *"Prefer the world that **unifies many phenomena under one structure**" is minimum description length in words; "prefer the world that **requires** the phenomena over the world that **permits** them through adjustable parameters" is the ratio of a prediction's support to its parameter volume.* **Prediction: P06's epistemology IS this field's, unnamed — and the term pass scored it negative on `evidence` ×28** | ⟐ **owed** |
+| 4 | **`P07`** | `sec:CR-information` · `sec:CR-hawking` · `sec:CR-hole` | *the framework has a section **named for this field**. **Prediction: it dissolves the black-hole information problem rather than solving it — no interior, so no loss — and states-and-cites rather than computing anything*** | ⟐ **owed** |
+| 5 | **`P01`** | `sec:3` · `sec:5` · `sec:problems` | *the metric singularity removes the interior. **Prediction: the information problem is a consequence, and `information` ×10 being "the paradox as a proper noun" is the term pass's correct reading of a real structural claim*** | ⟐ **owed** |
+| 6 | **`p0`** | `sec:ledger` · `sec:unification` | ⛭ ***A LEDGER OF CONSTANTS IS A DESCRIPTION LENGTH.*** *`p0` counts how many independent numbers the world needs and answers **one**. **Prediction: "one scale, the constants are gauges" is a parameter count, and the shortest description is the point of the paper without the phrase*** | ⟐ **owed** |
+| 7 | **`P10`** | `sec:deparam` · `sec:lock` · `sec:dissolution` | *unitary evolution preserves the inner product, hence distinguishability. **Prediction: the term pass is right that `unitary` ×12 is Stone's theorem — but whether the deparametrised tower's unitarity is used AS information conservation is the question, and it must be read rather than assumed*** | ⟐ **owed** |
+| 8 | **`P04`** | `sec:decomp` · `sec:floor` | *a floor against a measured isotropy is a **signal-against-noise** statement, and the $1/\sqrt N$ is a variance. **Prediction: this is statistics, already `\ldg{probability}`'s, and NOT this field — but `P04` has come back non-empty twice after being called empty, so it is read and not assumed*** | ⟐ **owed** |
+| 9 | **`P14`** | `sec:count` · `sec:family` | *"$\lambda$ fixes a **grading** and not a **content**… supplies no multiplet structure." **Prediction: that is the distinction between a label and a message — an index that carries no information — and the paper states it as an honest negative*** | ⟐ **owed** |
+| 10 | **`P13`** | `sec:wall` · `sec:face-status` | *a vanishing index is a **degenerate channel**: the equivariant index zero means the spectrum carries no chirality. **Prediction: thin — the obstruction is topological and the paper never frames it as content*** | ⟐ **owed** |
+| 11 | **`P02`** | `sec:cycloid` · `sec:ontology` | ⛔ ***THE STANDING WARNING.*** *`P02` scores zero on every field's vocabulary and has been the founding example twice. **Prediction: the black-hole interior being ONE curve with a closed universe is a statement that two descriptions carry the same content — and that must be tested, not assumed empty*** | ⟐ **owed** |
+| 12 | **`P12`** | `sec:strata` · `sec:bracket` | *a stratification is a partition, and a partition has an entropy. **Prediction: the isotropy strata are a classification with no measure on them, so no entropy is defined — thin*** | ⟐ **owed** |
+| 13 | **`P11`** | `sec:gowdy` · `sec:chirality` | *free gravitational radiation past the wall is where **degrees of freedom** become available. **Prediction: `degrees of freedom` ×13 corpus-wide is a dynamical count, not a channel capacity — thin, and the distinction is the finding if it holds*** | ⟐ **owed** |
+| 14 | **`P08`** | `sec:kernel` · `sec:bend` | *the matter functional is a map with a one-dimensional kernel. **Prediction: a kernel is what a channel LOSES, so the index-1 reading has an information dual — but `P08` never speaks of content, so thin*** | ⟐ **owed** |
+| 15 | **`P03`** | `sec:tour` · `sec:winding` | *three coupled projections "each parametrisation **blind to a different structure**". **Prediction: that is a statement that no single chart carries all the content — a covering-by-charts, and whether it is more than a metaphor is the test*** | ⟐ **owed** |
+| 16 | **`P05`** | `sec:rigidity` · `sec:dim-collapse` | *"the slicing family **collapses onto its single invariant**". **Prediction: a collapse onto one invariant is a lossless reduction — the description shrinks and nothing is lost — and whether the paper says what is preserved is the question*** | ⟐ **owed** |
+| 17 | **`P09`** | `sec:bound` · `sec:surj` | *bounding a reachable class above and showing it filled. **Prediction: genuinely empty for this field — and after `P06`, "thinnest" is not a licence*** | ⟐ **owed** |
+
+⌗ ***THE PREDICTIONS THAT CAN BE SCORED WRONG:*** *`P16`'s "what survives the peak is exactly the conserved
+charges" · `P06`'s two rules being MDL and a likelihood ratio · `p0`'s ledger answering **one** ·
+`P15`'s dichotomy being fidelity rather than capacity · `P14`'s grading-not-content.*
+**Each is a claim the paper either makes or does not.**
+
+---
+
 > **▣ THIS FIELD BOUNCED, AND THAT IS THE RESULT RATHER THAN A FAILURE TO FIND ONE.** *It was ranked
 > ×32 and third of six. **After seventeen reads the honest count of this field's presence in the corpus
 > is approximately zero**, and every step of getting to that number was a homonym being stripped.*
