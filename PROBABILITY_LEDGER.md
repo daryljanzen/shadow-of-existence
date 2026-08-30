@@ -8,6 +8,8 @@ sources: [chat]
 
 > ⛭ **`R1`'s RECEIPT — named here at r3660, because it was named nowhere.** *`receipts/L_probability/R1_the_whole_footprint_is_three_geometry_words.py`* — *the whole footprint is three geometry words — `Gaussian` curvature, general `covariance`, and the string inside `invariance`.* ⌗ *It ran and was registered; **the ledger whose probe it settles did not name it**, so the computation had no argument attached. `check_citation_chain` now fails on that.*
 
+> ⛭ **`R2`'s RECEIPT — named here at r3668, and it is 60's own break that 59's new gate found.** *`receipts/P04_modern_parallax/R2_the_papers_correlation_figures_are_the_ones_nothing_checked.py`* — *`P04`'s correlation figures are correct, and the receipt that was supposed to check them checked a **placeholder** instead.* ⌗ *`check_citation_chain` (59, r3660) reported it: **on disk, registered, and named by no ledger** — so the computation had no argument attached. 59 fixed `R1`'s break in the same pass and left this one, which is 60's.* ⇒ ***A receipt that runs and is registered is a LINK; a receipt a ledger names is a CHAIN. This one was a link for two revisions.***
+
 # THE PROBABILITY LEDGER — the sixth field, and the cleanest bounce of the six
 
 > **▣ THE ORDER SAID: *"thinnest. A bounce here is a result."*** *It is a bounce. This ledger's job
@@ -99,7 +101,7 @@ last of six on ×7 and still have its ×7 be **entirely a curvature, an invarian
 | register | verdict | destination | state |
 |---|---|---|---|
 | `R1` | BOUNCED — three geometry words, measured with a control | the receipt | **CHECKED-NEGATIVE** |
-| `R2` | BOUNCED — another bake's language | — | **CHECKED-NEGATIVE** |
+| `R2` | BOUNCED — another bake's language, **and one BITE inside it: `P04`** | `receipts/P04_modern_parallax/R2_the_papers_correlation_figures_are_the_ones_nothing_checked.py` | **CHECKED-NEGATIVE on the probe, `P04` WORKED** |
 | `R3` | BOUNCED — right and attributed | — | **CHECKED-NEGATIVE** |
 
 ⌗ ***DEPTH BESIDE COVERAGE.*** **Coverage: 17 of 17 read, by name.**

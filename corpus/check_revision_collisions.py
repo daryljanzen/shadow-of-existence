@@ -148,6 +148,9 @@ BASELINE = {'r3622',
             #: ⛔ ** r3658 -- the TENTH consecutive, r3640..r3658. **  *59's v2 work order against 60's
             #: "twice in one turn the content was in a structure this line had already built".*
             'r3658',
+            #: ⛔ ** r3660 -- the ELEVENTH consecutive, r3640..r3660 unbroken. **  *59's citation-chain
+            #: gate against 60's third-correction landing.*
+            'r3660',
             'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
             'r2821', 'r3099', 'r3100', 'r3105', 'r3108',
             # ⛔ added r3128 (`L-256`): the three that arrived AFTER r3112 reported the class and
