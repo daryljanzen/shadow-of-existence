@@ -42,7 +42,7 @@ from scipy.integrate import solve_ivp, quad, cumulative_trapezoid
 from scipy.interpolate import CubicSpline
 from scipy.optimize import brentq
 from scipy.signal import argrelextrema
-from scipy.special import spherical_jn
+from scipy.special import spherical_jn, gammaln
 
 C = 299792.458
 ARM = os.environ.get('ARM', 'lcdm')
@@ -121,6 +121,15 @@ def Hleaf(a):
 # the earlier results in PO13_WORKING_STATE can be reproduced. **
 LEAFPERT = os.environ.get('STACKPERT', '0') != '1'
 Hl_of  = CubicSpline(eg, ag * Hleaf(ag) / C)                       # comoving leaf Hubble, 1/Mpc
+# ** DRAGLEAF=1: the CAUSAL DRAG TEST (r3541).  Forces the drag/damping coefficient in the baryon
+# Euler equation -- the H in H R/(1+R) (fluid) and the baryon Hubble drag -H tb (hierarchy) -- onto the
+# LEAF (radiation-included) rate, while restoring, forcing and Phi's own evolution stay on whatever rate
+# LEAFPERT selects.  Under STACKPERT=1 on the CR arm this swaps ONLY the drag from the geometric rate to
+# the control's; everything else stays geometric.  On the control arm (and under default LEAFPERT) Hl_of
+# IS the working rate, so this is a byte-identical NO-OP -- the self-check.  Isolates whether the 2x
+# effective even-peak suppression lives in the drag: if the even/odd ratio moves toward the control's
+# 0.62 it does; if it doesn't, every term in the baryon Euler equation is exonerated. **
+DRAGLEAF = os.environ.get('DRAGLEAF', '0') == '1'
 Jac_of = CubicSpline(eg, Hphys(ag) / Hleaf(ag))                    # d eta_leaf / d eta_stack
 # ** PHASEONLY=1: reckon ONLY the oscillator's phase in leaf conformal time, nothing else -- the
 # PURE-CLOCK operation, isolated from LEAFPERT's full leaf dynamics.  Scaling the photon PRESSURE
@@ -132,12 +141,31 @@ PHASEONLY = os.environ.get('PHASEONLY', '0') == '1'
 # ** PHASEPOW: the POWER of the clock factor phi = H_stack/H_leaf carried by the restoring term.
 # The default 2 is the frequency reading -- the pressure term goes as k^2 c_s^2, so a clock on the
 # frequency enters squared.  PHASEPOW=1 is the SOUND-SPEED reading: the clock enters c_s once, not
-# k c_s twice.  Added r3511 as a DIAGNOSTIC to bracket the two readings, after PHASEONLY=1 (phi^2)
+# k c_s twice.  Added r3511 (58) as a DIAGNOSTIC to bracket the two readings, after PHASEONLY=1 (phi^2)
 # was found to OVERSHOOT the sky (l_1/l_A = 0.8090 against 0.7312) where LEAFPERT undershoots
 # (0.6764) -- so the sky lies BETWEEN the two operations and the physical question is which power
 # the restoring term carries.  Identically 1 in the lcdm arm for any power, so still a no-op there. **
 PHASEPOW = float(os.environ.get('PHASEPOW', '2'))
 Phi2_of = CubicSpline(eg, (Hphys(ag) / Hleaf(ag)) ** PHASEPOW if PHASEONLY else np.ones_like(ag))
+# ** SRCSTACK (diagnostic, requires LEAFPERT): the layered-ontology division of the ONE perturbation
+# equation between the two clocks.  L1 (stacking/geometry) is the gravitational potential Phi; L2
+# (leaf/content) is the plasma.  LEAFPERT puts the WHOLE equation on the leaf and undershoots the
+# position (source drags the phase); PHASEONLY puts ONLY the frequency on the leaf and overshoots
+# (source+friction on stack under-damp).  SRCSTACK keeps the GEOMETRIC POTENTIAL sector on the stack
+# clock while frequency/friction/diffusion (the content) stay on the leaf:
+#   SRCSTACK=phi  -- only Phi's own evolution (out[:,6]=Php) on the stack (cleanest L1/L2 split).
+#   SRCSTACK=src  -- Phi's evolution AND every potential coupling (the Php/Ps source terms) on stack.
+# Identically LEAFPERT in the lcdm arm (Jac==1), a provable no-op.  A DIAGNOSTIC to let position and
+# amplitude pin which terms are L1; NOT a committed frame. **
+SRCSTACK = os.environ.get('SRCSTACK', '')
+# ** PROJMAP (58's r3527 layer reading): the two-horizon ratio r_stack/r_leaf applied ONCE at the
+# PROJECTION -- the content sound-horizon mapped onto the phenomenological ruler (the layer
+# diffeomorphism's Jacobian), NOT a post-hoc relabel of the output peaks.  It multiplies the distance
+# x0 in the k->l Bessel relation, so a source feature at k appears at l = k*x0*PROJMAP.  A single
+# factor on the k->l relation is UNIFORM in l (comb and damping, both baked into S(kb), stretch
+# together), so this is expected to move POSITION and leave HEIGHT ratios fixed -- run to MEASURE
+# that, not assume it.  Default 1.0 = no-op. **
+PROJMAP = float(os.environ.get('PROJMAP', '1'))
 _rt = OR / ag ** 4 + OM / ag ** 3 + OL                            # ** the STACK, both arms **
 # ** GSRC=1: THE CONSTRAINT FACTOR.  The G^0_0 equation is k^2 Phi + 3H(Phi'+H Psi) = -4 pi G a^2
 # drho.  Writing the source as (3/2) H^2 sum(Om_i d_i) uses H^2 = (8 pi G/3) a^2 rho_tot -- the
@@ -148,7 +176,38 @@ _rt = OR / ag ** 4 + OM / ag ** 3 + OL                            # ** the STACK
 # lcdm arm, where the rate already carries radiation. **
 _free = OM / ag ** 3 + OL
 GSRC = os.environ.get('GSRC', '0') == '1' and not RAD_IN_RATE
-Gf_of = CubicSpline(eg, (_rt / _free) if GSRC else np.ones_like(_rt))
+# ** GSRCA (r3550, Daryl): the CONTINUOUS source factor.  GSRC has only ever been run binary (0 or 1),
+# but GSRC=0 and GSRC=1 BRACKET the sky on position, amplitude AND positional parity from opposite sides,
+# on a term with no dial.  GSRCA=alpha interpolates the constraint factor linearly between the two:
+#   Gf = 1 + alpha*(rho_tot/rho_free - 1)   (alpha=0 -> GSRC=0 factor 1 ; alpha=1 -> GSRC=1 full ratio).
+# It asks the fitting question the binary flag never could: does ANY alpha land position, amplitude and
+# parity TOGETHER?  Identically 1 in the lcdm arm (RAD_IN_RATE, radiation already in the rate) -- no-op
+# gate.  Unset -> binary GSRC behaviour, so this is backward-compatible. **
+_GSRCA = os.environ.get('GSRCA')
+if _GSRCA is not None and not RAD_IN_RATE:
+    Gf_of = CubicSpline(eg, 1.0 + float(_GSRCA) * (_rt / _free - 1.0))
+else:
+    Gf_of = CubicSpline(eg, (_rt / _free) if GSRC else np.ones_like(_rt))
+# ** GSRCRAD=1 (58's r3530 diagnosis of the GSRC overshoot): apply the constraint factor _rt/_free to
+# the RADIATION source terms ONLY (Ogv*dg + Onv*dn), leaving matter/baryons at plain normalisation --
+# i.e. radiation enters Phi's source additively at full strength while the matter sector is NOT
+# rescaled.  Requires GSRC=1 (else Gf==1, no-op).  ** CAVEAT (cc54): every Omega is normalised to
+# _rt, so the matter coefficient is rho_m/rho_tot and its source is SHORT by rho_free/rho_tot too --
+# the shortfall is the Hc^2-vs-Omega mismatch, not radiation-specific.  So this UNDER-counts matter by
+# standard EFE; it lands the sky only if CR's constraint puts matter's local gravity on rho_free. **
+GSRCRAD = os.environ.get('GSRCRAD', '0') == '1'
+# ** THRESH (r3552, 58's threshold principle as a DERIVED source weight): the constraint boost applies only
+# where the perturbation is ABOVE the critical density -- bound, gravitating locally -- and switches off
+# below, where the region is in the Hubble flow and expansion is absolute (draft sec: threshold problem,
+# "no gradual variation").  In a flat universe the critical density IS the mean, so "above critical" =
+# locally OVERDENSE (the sourcing contrast delta_s > 0): the boost gates ON in compression, OFF in
+# rarefaction, a SHARP step.  The weight is the sign of the sourcing overdensity -- derived, not fitted.
+# Requires GSRC=1 (else Gf==1, nothing to gate).  On the control Gf==1 -> gate is a no-op by construction. **
+THRESH = os.environ.get('THRESH', '0') == '1'
+THRESHK = float(os.environ.get('THRESHK', '50'))   # step sharpness in delta_s (large = sharp)
+THRESHSRC = os.environ.get('THRESHSRC', 'total')   # 'total' = full sourcing overdensity (CDM-dominated,
+#   monotone -> gate ~always on); 'photon' = the PLASMA's own contrast dg (oscillates -> gate is
+#   compression/rarefaction-selective). Two readings of "the perturbation's density vs the mean".
 Og_of = CubicSpline(eg, (1 - FNU) * (OR / ag ** 4) / _rt)
 On_of = CubicSpline(eg, FNU * (OR / ag ** 4) / _rt)
 # ** THE MATTER SECTOR IS SPLIT INTO BARYONS AND CDM AT c54.178. **  Until now it was ONE fluid
@@ -167,6 +226,24 @@ a_of_eta = CubicSpline(eg, ag)
 eta_rec = float(np.interp(A_REC, ag, eg))
 eta_0 = eg[-1]
 D_M = eta_0 - eta_rec
+# ** HYPER (r3553, 58/Daryl): project the CR arm's CLOSED-S^3 source with the HYPERSPHERICAL Bessel
+# Phi^beta_l(chi) instead of the flat spherical j_l(k x0).  CR's modes live on the discrete ladder
+# k_L = sqrt(L(L+2))/r_0 (beta=L+1) and the instrument has been projecting them with FLAT Bessels --
+# correct for the control, wrong for the closed CR geometry, and the ONE step never tested.  The S^3
+# areal radius is r_0 = D_M/stretch (the ladder's stretch=2.750 is exactly chi_LSS = D_M/r_0, LSS near
+# the antipode).  Flat is kept on the control (byte-identical gate).  A degree-L mode feeds only l<=L. **
+_STRETCH_S3 = 2.750
+R0_S3 = D_M / _STRETCH_S3
+HYPER = os.environ.get('HYPER', '0') == '1'
+# ** FREEZEJAC (diagnostic, 58's height-by-subtraction reference): freeze the clock ratio
+# phi = Jac = H_stack/H_leaf at its RECOMBINATION value, removing the RUNNING of phi while keeping
+# its level.  Paired with a running-phi run under SRCSTACK=vel, the per-peak HEIGHT ratio isolates
+# the boost the RUNNING clock supplies -- CR's structural analogue of radiation driving.  phi == 1
+# for all eta on the control arm (H_leaf == H_stack), so this is a provable no-op there. **
+if os.environ.get('FREEZEJAC', '0') == '1':
+    _phi_rec = float(Jac_of(eta_rec))
+    Jac_of = (lambda v: (lambda e: v))(_phi_rec)
+    print(f"  FREEZEJAC: clock ratio phi frozen at its recombination value phi_rec = {_phi_rec:.5f}")
 
 
 def rs_from(z_lo):
@@ -286,6 +363,16 @@ _int = (_Rg ** 2 / (1 + _Rg) + _POLC) / (6.0 * (1 + _Rg) * np.maximum(_tp, 1e-30
 # is the shape of the envelope rather than its scale.  Default 1.0; any run that reports physics
 # must leave it there.
 _DAMPX = float(os.environ.get('DAMPX', 1.0))
+# ** DIFFLEAF (LGF, pairs with SRCSTACK=vel): Silk diffusion is a CONTENT process on a layer, so by the
+# LGF axiom it keeps the LEAF clock -- like c_s and recombination -- not the stacking clock the setup
+# integral above uses.  The random walk accumulates over eta_leaf with opacity tau'_leaf = tau'_stack/Jac:
+#   r_D^2_leaf = INT (A/tau'_stack) Jac^2 d(eta_stack),  i.e. the integrand gains a factor phi^2 = Jac^2.
+# Since phi<1 early (radiation era), this REDUCES the damping at high k -- exactly where vel over-damps.
+# It is the same axiom that fixed the position, applied to the one remaining content term; NOT a knob.
+# phi==1 on the control, so this is a provable no-op there (byte-identical). **
+if os.environ.get('DIFFLEAF', '0') == '1':
+    _int = _int * np.asarray(Jac_of(_egrid), dtype=float) ** 2
+    print("  DIFFLEAF: k_D integral moved to the LEAF clock (integrand x phi^2); diffusion is content (LGF)")
 _kD2inv = np.concatenate([[0.0], np.cumsum(0.5 * (_int[1:] + _int[:-1]) * np.diff(_egrid))])
 kD2inv_of = CubicSpline(_egrid, _kD2inv)
 _rD = float(np.sqrt(_kD2inv[_gi]))
@@ -445,13 +532,19 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         # BSPLIT=0 restores the pre-c54.178 behaviour -- the whole matter sector at delta_c -- so
         # that the change can be MEASURED on this instrument rather than asserted.
         _mat = (Ocv * dc + Obv * db) if BSPLIT else ((Ocv + Obv) * dc)
-        Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc * float(Gf_of(e)) / 2) * (Ogv * dg + Onv * dn + _mat)
+        _gf = float(Gf_of(e))
+        if THRESH:                                   # r3552: gate the boost by local overdensity (bound vs Hubble flow)
+            _dth = dg if THRESHSRC == 'photon' else (Ogv * dg + Onv * dn + Ocv * dc + Obv * db)
+            _gf = 1.0 + 0.5 * (1.0 + np.tanh(THRESHK * _dth)) * (_gf - 1.0)
+        _dsrc = (_gf * (Ogv * dg + Onv * dn) + _mat) if GSRCRAD else _gf * (Ogv * dg + Onv * dn + _mat)
+        Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc / 2) * _dsrc
         # ** DR multiplies EVERY coupling to the potential, at EVERY site. **
         out = np.empty_like(y)
         out[:, 0] = -tc + DRC * 3 * Php
         out[:, 1] = -Hc * tc + DRE * kk ** 2 * Ps
         out[:, 2] = -(4 / 3) * tg + DRC * 4 * Php
-        out[:, 3] = (-(Hc * Rb / (1 + Rb)) * tg + PH2 * (kk ** 2 / (1 + Rb)) * dg / 4
+        _hdrag = float(Hl_of(e)) if DRAGLEAF else Hc            # r3541 causal drag test
+        out[:, 3] = (-(_hdrag * Rb / (1 + Rb)) * tg + PH2 * (kk ** 2 / (1 + Rb)) * dg / 4
                      + DRE * kk ** 2 * Ps - kk ** 2 * sgg / (1 + Rb) - slip * tg)
         out[:, 4] = -(4 / 3) * tn + DRC * 4 * Php
         out[:, 5] = kk ** 2 * (dn / 4 - sig) + DRE * kk ** 2 * Ps
@@ -464,7 +557,26 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         # ** the baryon continuity equation, on the baryon velocity.  In this branch the baryons are
         # tightly coupled and tg IS their velocity; the hierarchy branch gives them their own. **
         out[:, I_DB] = -tg + DRC * 3 * Php
-        return out.ravel() * (float(Jac_of(e)) if LEAFPERT else 1.0)
+        jac = float(Jac_of(e)) if LEAFPERT else 1.0
+        if SRCSTACK and LEAFPERT:
+            # split the GEOMETRIC POTENTIAL sector back onto the stack clock (x1); content stays on leaf
+            src = np.zeros_like(out)
+            if SRCSTACK in ('phi', 'src'):
+                src[:, 6] = Php                               # Phi's own evolution (L1)
+            if SRCSTACK in ('src', 'cpl'):                    # the potential's couplings INTO the plasma
+                src[:, 0] = DRC * 3 * Php
+                src[:, 1] = DRE * kk ** 2 * Ps
+                src[:, 2] = DRC * 4 * Php
+                src[:, 3] = DRE * kk ** 2 * Ps
+                src[:, 4] = DRC * 4 * Php
+                src[:, 5] = DRE * kk ** 2 * Ps
+                src[:, I_DB] = DRC * 3 * Php
+            if SRCSTACK == 'vel':                             # ONLY the velocity-source Ps (the phase driver)
+                src[:, 1] = DRE * kk ** 2 * Ps
+                src[:, 3] = DRE * kk ** 2 * Ps
+                src[:, 5] = DRE * kk ** 2 * Ps
+            return ((out - src) * jac + src).ravel()
+        return out.ravel() * jac
 
     if y_init is not None:
         y0 = y_init
@@ -625,13 +737,29 @@ def los_spectrum(kk, ee, Y, L_A, D_M, R_S):
     x0 = eta_0 - ee
     ls = np.arange(100, int(LMAXL), int(os.environ.get('LSTEP', '8')))
 
+    # ** POLSRC (consistency repair, both arms): the instrument already takes polarisation's contribution
+    # to the DAMPING (the 16/15 coefficient in k_D) but drops its contribution to the SOURCE -- half of
+    # one physical effect, the half that removes power (the recorded 1123-chi^2 debt on the control).
+    # Restore the two polarisation source terms  g*Pi/4  and  (3/4k^2) d^2(g*Pi)/deta^2.  In the polarised
+    # tight-coupling limit of the L171w hierarchy (F_2'=(8/15)tg-tau'(F_2-Pi/10), G_0=Pi/2, G_2=Pi/10):
+    #   Pi = (5/2) F_2,  F_2 = (32/45)(tg/tau'),  so  Pi = (16/9)(tg/tau')  -- tg = photon velocity Y[:,3].
+    # NOT a CR knob: symmetric across arms, no free parameter, completion of a half-present term. **
+    _POLSRC = os.environ.get('POLSRC', '0') == '1'
+
     def source(dampx):
         # ** the damping multiplies the PHOTON perturbations and not the potentials. **  Theta_0 and
         # the baryon velocity diffuse; Psi and the ISW do not.
         Dmp = np.exp(-dampx * (kk[None, :] ** 2) * kD2inv_of(ee)[:, None])
-        return (g_ * (Y[:, :, 2] / 4 * Dmp + Ps)
-                + et * (np.gradient(Ph, ee, axis=0) + np.gradient(Ps, ee, axis=0))
-                + np.gradient(g_ * Y[:, :, 3] * Dmp, ee, axis=0) / kk[None, :] ** 2)
+        S = (g_ * (Y[:, :, 2] / 4 * Dmp + Ps)
+             + et * (np.gradient(Ph, ee, axis=0) + np.gradient(Ps, ee, axis=0))
+             + np.gradient(g_ * Y[:, :, 3] * Dmp, ee, axis=0) / kk[None, :] ** 2)
+        if _POLSRC:
+            # g*Pi = (tau' e^-tau)(16/9 tg/tau') = (16/9) e^-tau tg -- the tau' CANCELS, so g*Pi is finite
+            # through last scattering (the tight-coupling Pi diverges but g vanishes at the same rate).
+            gPi = (16.0 / 9.0) * et * Y[:, :, 3] * Dmp                   # a photon perturbation: it diffuses
+            S = S + gPi / 4.0 + (3.0 / (4.0 * kk[None, :] ** 2)) * \
+                np.gradient(np.gradient(gPi, ee, axis=0), ee, axis=0)
+        return S
 
     def spectra(dampx_list):
         """** THE BESSEL PROJECTION IS PAID ONCE FOR THE WHOLE SCAN, NOT ONCE PER POINT. **
@@ -644,7 +772,7 @@ def los_spectrum(kk, ee, Y, L_A, D_M, R_S):
         Ss = [source(x) for x in dampx_list]
         Cl = np.zeros((len(dampx_list), len(ls)))
         for j_, l in enumerate(ls):
-            J = spherical_jn(int(l), kk[None, :] * x0[:, None])
+            J = spherical_jn(int(l), kk[None, :] * x0[:, None] * PROJMAP)
             for i_, S in enumerate(Ss):
                 Cl[i_, j_] = np.sum(P * np.trapezoid(S * J, ee, axis=0) ** 2)
         return Cl * (ls * (ls + 1))[None, :]
@@ -803,7 +931,12 @@ def evolve_hier(kk, t_eval, e_sw, yF):
         Pi = F[:, 0] + G[:, 0] + G[:, 2]
         Ps = Ph - 6 * Hc ** 2 * (Onv * sig + Ogv * sgg) / kk ** 2
         _mat = (Ocv * dc + Obv * db) if BSPLIT else ((Ocv + Obv) * dc)
-        Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc * float(Gf_of(e)) / 2) * (Ogv * dg + Onv * dn + _mat)
+        _gf = float(Gf_of(e))
+        if THRESH:                                   # r3552: gate the boost by local overdensity (bound vs Hubble flow)
+            _dth = dg if THRESHSRC == 'photon' else (Ogv * dg + Onv * dn + Ocv * dc + Obv * db)
+            _gf = 1.0 + 0.5 * (1.0 + np.tanh(THRESHK * _dth)) * (_gf - 1.0)
+        _dsrc = (_gf * (Ogv * dg + Onv * dn) + _mat) if GSRCRAD else _gf * (Ogv * dg + Onv * dn + _mat)
+        Php = -Hc * Ps - kk ** 2 * Ph / (3 * Hc) - (Hc / 2) * _dsrc
         out = np.zeros_like(y)
         out[:, 0] = -tc + DRC * 3 * Php
         out[:, 1] = -Hc * tc + DRE * kk ** 2 * Ps
@@ -820,7 +953,8 @@ def evolve_hier(kk, t_eval, e_sw, yF):
             out[:, 7 + i] = kk / (2 * l + 1) * (l * Fn[:, i - 1] - (l + 1) * Fn[:, i + 1])
         out[:, 7 + LN - 2] = kk * Fn[:, LN - 3] - (LN + 1) / e * Fn[:, LN - 2]
         out[:, I_DB_] = -tb + DRC * 3 * Php
-        out[:, I_TB] = -Hc * tb + DRE * kk ** 2 * Ps + tp * (tg - tb) / Rb
+        _hdrag = float(Hl_of(e)) if DRAGLEAF else Hc            # r3541 causal drag test
+        out[:, I_TB] = -_hdrag * tb + DRE * kk ** 2 * Ps + tp * (tg - tb) / Rb
         # photons: F_2 .. F_LG
         out[:, I_FG] = (8 / 15) * tg - (3 / 5) * kk * F[:, 1] - tp * (F[:, 0] - Pi / 10)
         for i in range(1, LG - 2):
@@ -836,7 +970,22 @@ def evolve_hier(kk, t_eval, e_sw, yF):
             out[:, I_GG + l] = (kk / (2 * l + 1) * (l * G[:, l - 1] - (l + 1) * G[:, l + 1])
                                 - tp * G[:, l])
         out[:, I_GG + LG] = kk * G[:, LG - 1] - (LG + 1) / e * G[:, LG] - tp * G[:, LG]
-        return out.ravel() * (float(Jac_of(e)) if LEAFPERT else 1.0)
+        jac = float(Jac_of(e)) if LEAFPERT else 1.0
+        if SRCSTACK in ('vel', 'src') and LEAFPERT:
+            # the gravity velocity-source (DRE k^2 Ps, = grad Phi) on the STACK clock; content on leaf
+            src = np.zeros_like(out)
+            src[:, 1] = DRE * kk ** 2 * Ps
+            src[:, 3] = DRE * kk ** 2 * Ps
+            src[:, 5] = DRE * kk ** 2 * Ps
+            src[:, I_TB] = DRE * kk ** 2 * Ps
+            if SRCSTACK == 'src':                       # the whole geometry sector on stack: + Phi's own evolution
+                src[:, 6] = Php
+                src[:, 0] = DRC * 3 * Php
+                src[:, 2] = DRC * 4 * Php
+                src[:, 4] = DRC * 4 * Php
+                src[:, I_DB_] = DRC * 3 * Php
+            return ((out - src) * jac + src).ravel()
+        return out.ravel() * jac
 
     sol = solve_ivp(rhs, [e_sw, ETA_END], y0.ravel(), method='RK45', rtol=RTOL, atol=1e-12,
                     t_eval=t_eval, max_step=(ETA_END - e_sw) / 200)
@@ -859,7 +1008,28 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
           f"{frac:.1%} of 1/k_D^2 has accumulated")
     print(f"  so the envelope carries {frac:.1%} of the damping and the multipoles carry "
           f"{1-frac:.1%} of it")
-    ls = np.arange(100, int(LMAXL), int(os.environ.get('LSTEP', '8')))
+    # ** PHIHIER=1 (with PHISAVE + PHIQ): the full-range potential Phi(eta) on the HIER COMPOSITION for
+    # the selected q-modes -- fluid from ETA_S to the switch (identical to the fluid path there), then
+    # the hierarchy from the switch to recombination (the refinement the fluid path lacks).  Closes
+    # node 59's fluid-vs-HIER path split for the Phi-decay measurement.  Returns early. **
+    if os.environ.get('PHIHIER') == '1' and os.environ.get('PHISAVE'):
+        _qt = [float(x) for x in os.environ.get('PHIQ', '1,2,3').split(',')]
+        _sk = np.array([kk[int(np.argmin(np.abs(kk * R_S_ / np.pi - q)))] for q in _qt])
+        _g1 = np.linspace(ETA_S, e_sw, 300)
+        _s1, _, _NVf = evolve(_sk, t_eval=_g1, e_end=e_sw)
+        _Y1 = _s1.y.T.reshape(len(_g1), len(_sk), _NVf)
+        _g2 = np.linspace(e_sw, eta_rec, 300)
+        _Y2 = evolve_hier(_sk, _g2, e_sw, _Y1[-1]).y.T.reshape(len(_g2), len(_sk), NVH)
+        _eta = np.concatenate([_g1, _g2[1:]])
+        _sw = lambda j: np.concatenate([_Y1[:, :, j], _Y2[1:, :, j]], axis=0).T  # (nsel, neta)
+        _phi, _dg, _tg = _sw(6), _sw(2), _sw(3)   # Phi (idx6), photon density (idx2), velocity (idx3)
+        _a = np.interp(_eta, eg, ag)
+        np.savez(os.environ['PHISAVE'], eta=_eta, a=_a, phi=_phi, dg=_dg, tg=_tg,
+                 qpk=_sk * R_S_ / np.pi, kpk=_sk, arm=ARM, eta_rec=eta_rec, eta_s=ETA_S)
+        print(f"  PHISAVE-HIER (full range): q={[round(float(k*R_S_/np.pi),2) for k in _sk]} "
+              f"-> {os.environ['PHISAVE']}")
+        return np.array([100.0]), np.array([0.0])
+    ls = np.arange(int(os.environ.get('LMIN', '100')), int(LMAXL), int(os.environ.get('LSTEP', '8')))
     x0 = eta_0 - EE
     Cl = np.zeros(len(ls))
     nb = int(os.environ.get('KBATCH', '250'))
@@ -881,6 +1051,41 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
         print(f"    modes {i0}-{i0+nk} done", flush=True)
     Dl = Cl * ls * (ls + 1)
     return ls, Dl
+
+
+def _phi_hyper_grid(l, beta, chi):
+    """closed-S^3 hyperspherical Bessel Phi^beta_l(chi), flat-normalised (-> j_l(k x0) as r0->inf).
+    Stable: normalised Gegenbauer recurrence R_n=C_n^{l+1}(cos chi)/C_n^{l+1}(1) (bounded in [-1,1]) with
+    the prefactor in log-space.  beta: integer degree labels (nk,); chi: radial angles (n_eta,).
+    Returns (n_eta, nk) to match the flat j_l grid.  Degree-L mode (beta=L+1) feeds l<=L only.
+    Validated to <1e-3 against exact mpmath across (beta,l) up to (1000,500) and the flat limit."""
+    a = l + 1.0
+    x = np.cos(chi); s = np.sin(chi); nc = len(chi)  # (n_eta,)
+    nmax = int(beta.max()) - 1 - l
+    if nmax < 0:
+        return np.zeros((nc, len(beta)))
+    # ** rescaled log-space recurrence: at low l / high beta the prefactor exp(logpre) overflows while R
+    # underflows -- their scales do not fit in float separately.  Track log|R_n| + sign, rescaling the
+    # working R up when it underflows, and combine with logpre BEFORE the exp. **
+    logR = np.empty((nmax + 1, nc)); sgn = np.empty((nmax + 1, nc))
+    Rm2 = np.ones(nc); Rm1 = x.copy(); scale = np.zeros(nc)
+    logR[0] = 0.0; sgn[0] = 1.0
+    if nmax >= 1:
+        logR[1] = np.log(np.abs(x) + 1e-320); sgn[1] = np.sign(x)
+    for n in range(2, nmax + 1):
+        Rn = (2 * (n + a - 1) * x * Rm1 - (n - 1) * Rm2) / (n + 2 * a - 1)
+        logR[n] = np.log(np.abs(Rn) + 1e-320) + scale
+        sgn[n] = np.where(Rn >= 0, 1.0, -1.0)
+        Rm2, Rm1 = Rm1, Rn
+        m = np.abs(Rm1) < 1e-100
+        if m.any():
+            Rm1[m] *= 1e100; Rm2[m] *= 1e100; scale[m] -= 100 * np.log(10.0)
+    nidx = (beta - 1 - l).astype(int)                # (nk,)
+    logpre = l * np.log(2 * beta[:, None] * s[None, :]) + gammaln(l + 1) - gammaln(2 * l + 2)  # (nk,n_eta)
+    Phi = (np.take(sgn, nidx.clip(min=0), axis=0)
+           * np.exp(logpre + np.take(logR, nidx.clip(min=0), axis=0)))   # (nk, n_eta)
+    Phi[nidx < 0, :] = 0.0                            # l > beta-1: no contribution
+    return Phi.T                                      # (n_eta, nk)
 
 
 def _project(kb, ee, Y, ls, x0, e_sw):
@@ -920,9 +1125,14 @@ def _project(kb, ee, Y, ls, x0, e_sw):
          / kb[None, :] ** 2)
     dk = np.gradient(kb)
     P = kb ** (0.965 - 1) / kb * dk
+    _hyper = HYPER and ARM == 'cr'
+    if _hyper:                                        # r3553: closed-S^3 projection kernel for CR
+        _beta = np.rint(np.sqrt(1.0 + (kb * R0_S3) ** 2))   # integer degree label L+1
+        _chi = x0 / R0_S3                                    # radial angle per eta (near antipode ~2.75)
     out = np.empty(len(ls))
     for j, l in enumerate(ls):
-        J = spherical_jn(int(l), kb[None, :] * x0[:, None])
+        J = (_phi_hyper_grid(int(l), _beta, _chi) if _hyper
+             else spherical_jn(int(l), kb[None, :] * x0[:, None] * PROJMAP))
         out[j] = np.sum(P * np.trapezoid(S * J, ee, axis=0) ** 2)
     return out
 
@@ -1000,11 +1210,22 @@ def main():
     # of branch C).  Does the potential decay with the k-dependent phase that produces the odd-even
     # alternation, or smoothly?  A field the ODE already carries (state index 6), no new run. **
     if os.environ.get('PHISAVE'):
-        _pk = argrelextrema(np.abs(TH0), np.greater, order=4)[0]
-        _pk = _pk[(kk[_pk] * R_S / np.pi < 4)][:3]        # first three peak modes
+        # ** PHIQ=1,2,3 selects modes at FIXED acoustic phase q = k r_s/pi (same number of
+        # half-periods by recombination on BOTH arms) so Phi's decay-per-half-period is a MATCHED
+        # comparison; without it, the arm's own peak modes are used (which differ in k between arms). **
+        _phiq = os.environ.get('PHIQ')
+        if _phiq:
+            _qt = [float(x) for x in _phiq.split(',')]
+            _pk = np.array([int(np.argmin(np.abs(kk * R_S / np.pi - q))) for q in _qt])
+        else:
+            _pk = argrelextrema(np.abs(TH0), np.greater, order=4)[0]
+            _pk = _pk[(kk[_pk] * R_S / np.pi < 5)][:4]    # first four peak modes
         _etg = np.linspace(ETA_S, eta_rec, 500)
         _Yg = sol.sol(_etg).reshape(nk, NV, len(_etg))    # (nk, NV, neta)
-        np.savez(os.environ['PHISAVE'], eta=_etg, phi=_Yg[_pk, 6, :], dg=_Yg[_pk, 2, :],
+        _clock = np.asarray(Jac_of(_etg), dtype=float) + np.zeros_like(_etg)  # phi(eta)=Jac (const if frozen)
+        _ag = np.interp(_etg, eg, ag)                     # scale factor a(eta) -- common variable across arms
+        np.savez(os.environ['PHISAVE'], eta=_etg, a=_ag, phi=_Yg[_pk, 6, :], dg=_Yg[_pk, 2, :],
+                 tg=_Yg[_pk, 3, :], clock=_clock,
                  qpk=kk[_pk] * R_S / np.pi, kpk=kk[_pk], arm=ARM, eta_rec=eta_rec, eta_s=ETA_S)
         print(f"  PHISAVE: Phi(eta) for peak modes q={[round(float(kk[j]*R_S/np.pi),2) for j in _pk]} "
               f"-> {os.environ['PHISAVE']}")

@@ -253,7 +253,7 @@ integrates a nuclear network on — adiabatic compression → peak → turnaroun
 So the high-ℓ transfer is not a separate machine: **evolve the acoustic-mode potential driving through P16's
 collapse-excursion history.** 5's open core is an L2 collapse-excursion computation coupled to 1, not a
 stand-alone transfer — reshaping the "closable four" grouping below.
-HOME: P7 `sec:frontiers` \ref{frontier:scalar} — *'The scalar perturbation sector, to a verdict'*, **item 1 of P7's three, and register row `PO-13`**. ⌗ *`E·1` = `L-146` and `E·3` = `L-148` are STRUCK; what remains of this family is `E·2` = `L-147`, the full-spectrum likelihood alone.* P15 §326,§329,§coherence; CR_framework §coherence-of-driving + the L1/L2/L3 rate rule (P15 §tensions
+HOME: P7 `sec:frontiers` \ref{frontier:scalar} — *'The scalar perturbation sector, to a verdict'*, **item 1 of P7's three, and register row `PO-13`**. ⛔ ***FRONT DOOR: [`PO13_HANDOFF.md`](PO13_HANDOFF.md) — read it before `PO13_WORKING_STATE.md`. Eight levers eliminated by measurement; the disagreement stands and is UNSOLVED.*** ⌗ *`E·1` = `L-146` and `E·3` = `L-148` are STRUCK; what remains of this family is `E·2` = `L-147`, the full-spectrum likelihood alone.* P15 §326,§329,§coherence; CR_framework §coherence-of-driving + the L1/L2/L3 rate rule (P15 §tensions
 / P7 lapse-shift-bend remark). ~~CLUE-MAP: CR_cosmology(14), cosmogenesis(3 — +the cooling-leg excursion the~~  ⌫ **RETIRED c54.119 — see the banner at the head of this section.**
 driving rides), CR_framework(2 — +collapse-side driving, the three-level rate rule), geometric_core(2).
 **Coupled → item 1; rides P16's cooling-leg model.**
@@ -816,7 +816,7 @@ integrates a nuclear network on — adiabatic compression → peak → turnaroun
 So the high-ℓ transfer is not a separate machine: **evolve the acoustic-mode potential driving through P16's
 collapse-excursion history.** 5's open core is an L2 collapse-excursion computation coupled to 1, not a
 stand-alone transfer — reshaping the "closable four" grouping below.
-HOME: P7 `sec:frontiers` \ref{frontier:scalar} — *'The scalar perturbation sector, to a verdict'*, **item 1 of P7's three, and register row `PO-13`**. ⌗ *`E·1` = `L-146` and `E·3` = `L-148` are STRUCK; what remains of this family is `E·2` = `L-147`, the full-spectrum likelihood alone.* P15 §326,§329,§coherence; CR_framework §coherence-of-driving + the L1/L2/L3 rate rule (P15 §tensions
+HOME: P7 `sec:frontiers` \ref{frontier:scalar} — *'The scalar perturbation sector, to a verdict'*, **item 1 of P7's three, and register row `PO-13`**. ⛔ ***FRONT DOOR: [`PO13_HANDOFF.md`](PO13_HANDOFF.md) — read it before `PO13_WORKING_STATE.md`. Eight levers eliminated by measurement; the disagreement stands and is UNSOLVED.*** ⌗ *`E·1` = `L-146` and `E·3` = `L-148` are STRUCK; what remains of this family is `E·2` = `L-147`, the full-spectrum likelihood alone.* P15 §326,§329,§coherence; CR_framework §coherence-of-driving + the L1/L2/L3 rate rule (P15 §tensions
 / P7 lapse-shift-bend remark). ~~CLUE-MAP: CR_cosmology(14), cosmogenesis(3 — +the cooling-leg excursion the~~  ⌫ **RETIRED c54.119 — see the banner at the head of this section.**
 driving rides), CR_framework(2 — +collapse-side driving, the three-level rate rule), geometric_core(2).
 **Coupled → item 1; rides P16's cooling-leg model.**

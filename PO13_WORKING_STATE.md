@@ -731,7 +731,14 @@ record. **Not asserting a closure that the instrument does not show.**
 
 ---
 
-## ⛔ THE INSTRUMENT'S FLAG INVENTORY — r3512, *after the third miss in one arc*
+## ⛔ THE INSTRUMENT'S FLAG INVENTORY — r3512 (58), *after the third miss in one arc*
+
+> ⌗ **KEPT AS THE "HOW IT WAS FOUND" RECORD (merged from main r3512, r3527).** *This diagnosis was
+> written from **main**, which lacked the branch's fix. The composition defect it describes below was
+> **already repaired on this branch** — `evolve_hier` carries the `SRCSTACK=vel` split and `DIFFLEAF`
+> reaches `_project`, and the entire seam / KCONT / RBFAC arc ran on the fixed instrument. So the
+> fix **predated** the diagnosis; the section stands as the record of how the defect was named, not as
+> an open defect.*
 
 **⌗ THE PATTERN, NAMED.** *Three times in this arc a result was bounded by operations that were
 **already built and unrun**:*
@@ -739,7 +746,7 @@ record. **Not asserting a closure that the instrument does not show.**
    refuted the fork;*
 2. *`POLSRC` was hand-rolled from a tight-coupling steady state while **`HIER`** sat unrun — carrying
    an evolved Π, both source terms, and its own control;*
-3. *and `HIER` itself does not know the newest operations (below).*
+3. *and `HIER` itself did not know the newest operations (below).*
 
 ⇒ ***The failure mode is always the same: assuming the switch you know about is the only one there is.
 Before building an operation, `grep environ` and read every flag.***
@@ -755,29 +762,2133 @@ Before building an operation, `grep environ` and read every flag.***
 | **diagnostics** | `NODRIVE` · `QSCAN` `QTURN` `QMIN` · `KCONT` · `NOPROJ` · `NOISW` · `DSCAN` `DSAVE` · `PHISAVE` · `SAVE` · `LOS` `NLOS` |
 | **content** | `BSPLIT` `RBFAC` `CRAMP` `CRPHI` `CRXE` `DRC` `DRE` |
 
-### ⛔ THE COMPOSITION DEFECT — *checked, r3512*
+### ⛔ THE COMPOSITION DEFECT — *checked, r3512; **fixed on this branch before the diagnosis was written***
 
-*`evolve_hier` and `_project` (lines 828–977) reference the clock operations **once**:
-`Jac_of(e) if LEAFPERT`. The main path references **two**.* ⇒ ***`HIER=1` does not know `SRCSTACK` or
-`DIFFLEAF`.***
+*`evolve_hier` and `_project` referenced the clock operations **once** on main
+(`Jac_of(e) if LEAFPERT`), where the main path references **two**.* ⇒ ***On main, `HIER=1` did not
+know `SRCSTACK` or `DIFFLEAF`.***
 
-⛔ **So `HIER=1` composed with `SRCSTACK=vel` evolves the hierarchy with gravity on the LEAF — the very
-assignment the position result required moving to the STACK — and nothing announces it.**
-⌗ ***The ΛCDM gate cannot catch this***, *since $\varphi\equiv1$ makes every clock operation a no-op
-there. **A CR number from that composition would be two physical models in one run.***
+⛔ **So on main, `HIER=1` composed with `SRCSTACK=vel` would evolve the hierarchy with gravity on the
+LEAF — the very assignment the position result required moving to the STACK — and nothing would
+announce it.** ⌗ ***The ΛCDM gate cannot catch this***, *since $\varphi\equiv1$ makes every clock
+operation a no-op there. **A CR number from that composition would be two physical models in one run.***
+✔ **On this branch the split was added to `evolve_hier` (gravitational velocity-source on the stack)
+and `DIFFLEAF` was made to reach `_project`'s frozen envelope — so the CR runs of this arc are single
+physical models, not two in one.**
 
-### ⌗ THE GATE ORDER THAT FOLLOWS
+### ⌗ THE GATE ORDER THAT FOLLOWED
 
-1. **`lcdm HIER=1`** — validates Π only. Position must hold at $0.7300$; $P_1/P_2$ must move from
-   $2.447$ **toward** $2.217$, not past it.
+1. **`lcdm HIER=1`** — validates Π only. Position holds at $0.7300$; $P_1/P_2$ moves from $2.447$
+   **toward** $2.217$, not past it. *(Ran: control HIER 0.7300 / 2.254 / 2.363.)*
 2. **`lcdm HIER=1 PISRC=0` vs `PISRC=1`** — the instrument's own subtraction; the difference **is** the
-   returned half. This measures the term's size against the recorded $1123$ $\chi^2$ debt.
-3. ⛔ **THE COMPOSITION FIX** — give the hierarchy's gravitational source the stacking clock and its
-   diffusion the leaf, *the same LGF assignment the main path carries*. **Without this, step 4 is void.**
-4. **CR**, reporting $\ell_1/\ell_A$, $P_1/P_2$, $P_1/P_3$, $P_1/P_4$ **together**.
+   returned half. *(Ran: the source returns ~0.5%, 2.265→2.254 — the recovery is the hierarchy's proper
+   damping, not the source.)*
+3. ⛔ **THE COMPOSITION FIX** — the hierarchy's gravitational source on the stacking clock, its
+   diffusion on the leaf, *the same LGF assignment the main path carries*. **Done on this branch.**
+4. **CR**, reporting $\ell_1/\ell_A$, $P_1/P_2$, $P_1/P_3$, $P_1/P_4$ **together**. *(Ran across the
+   seam / KCONT / RBFAC arc.)*
 
-⌗ **THE PREDICTION THAT KEEPS IT A TEST.** *A correctly composed Π is driven by the same retimed
+⌗ **THE PREDICTION THAT KEPT IT A TEST.** *A correctly composed Π is driven by the same retimed
 $\theta_\gamma$ that produced $0.7294$, so it should arrive **weighted to high $k$** and act as a
-**shape**: $P_1/P_3$ and $P_1/P_4$ should fall further than $P_1/P_2$, and the position should move
-**back down** from $0.7560$.* ***If the position climbs instead, the hierarchy is on the wrong clock
-and step 3 was skipped.***
+**shape**: $P_1/P_3$ and $P_1/P_4$ should fall further than $P_1/P_2$.* ⌗ *Borne out in part — under
+`seam`, $P_1/P_3$ landed exactly on the sky while $P_1/P_2$ stayed high (the even-peak deficit); the
+position moved **up** to $0.7560$ under `seam`, which the later analysis showed is an **envelope rung**
+(centroid, not phase), KCONT-verified as not aliasing — not the "wrong clock" the prediction feared,
+since the composition was fixed. **The amplitude, however, closed under no IC — see the UNBANKED
+record below.***
+
+### ✔✔ THE POSITION IS CLOSED — the two-horizon clock division, not a driving impulse (supersedes the (a)/(b) hand-off above)
+**cc54 was wrong above, and 58/Daryl were right.** I took "an undriven comb's source phase sits intrinsically
+below the driven sky value" as DERIVED when it was an assertion about ONE route (the LEAFPERT operation). The
+instrument documents a THIRD pure operation (PHASEONLY) aimed at exactly this, and it was never run. Running it,
+and then the layered-ontology division, closes the position.
+
+**The verified operation table (CR arm, NK=620, same projection/transfer as the control that lands on sky):**
+
+| operation (which terms see the leaf/content clock) | l1/lA | vs sky | P1/P2 |
+|---|---|---|---|
+| STACKPERT — nothing (all on the stack ruler) | 0.5703 | −22% | 0.965 |
+| LEAFPERT — whole equation on leaf | 0.6764 | −7.5% | 2.013 |
+| SRCSTACK=phi — only Phi-evolution on stack | 0.6499 | −11% | 2.435 |
+| **sky** | **0.7312** | — | **2.217** |
+| SRCSTACK=src — Phi + all potential couplings on stack | 0.7294 | **−0.25%** | 3.879 |
+| SRCSTACK=vel — ONLY the velocity-source Ps on stack | 0.7294 | **−0.25%** | 3.745 |
+| SRCSTACK=cpl — couplings on stack, Phi-evolution on leaf | 0.7560 | +3.4% | 2.946 |
+| PHASEONLY — only the sound frequency on leaf | 0.8090 | +10.6% | 5.218 |
+
+**THE MECHANISM (principled, not a fit).** The ONE perturbation equation splits between the two clocks by the
+layered ontology: **gravity is L1 (stacking/geometric clock); pressure is L2 (leaf/content clock).**
+  - The gravitational force driving the plasma velocity (the `DRE k^2 Ps` term in the Euler equation, ∇Phi) runs
+    on the STACKING clock — it is geometry. This sets the ruler r_stack and the phase.
+  - The pressure restoring, baryon friction, and Silk diffusion run on the LEAF clock — they are content. This
+    sets the sound crossing r_leaf.
+  The first-peak position is the competition of the two: gravity-driving on r_stack against pressure on r_leaf,
+  so l1/lA carries the ratio r_stack/r_leaf = 1.2857 — which IS the size of the shift (sky/STACKPERT = 1.2821,
+  0.28%). SRCSTACK=vel (velocity-source on the geometric clock, everything else on the leaf) lands the position
+  at 0.7294 vs sky 0.7312 — **0.25%, no radiation-driving impulse anywhere.**
+
+**(b) IS REFUTED.** An undriven comb reaches the sky position (SRCSTACK=vel) and, with the wrong division,
+overshoots it (PHASEONLY 0.809). The "driving phase shift ~0.27π" that LCDM manufactures from radiation driving
+is, in CR, the two-horizon ratio of its own layered ontology. Same position, two origins — the corpus's
+signature dissolution.
+
+**WHAT REMAINS: the amplitude, and it is the SOFT/SEPARABLE knob.** With the position pinned (Ps on the geometric
+clock), P1/P2 = 3.7–3.9, above the sky's 2.217. But the sky amplitude is BRACKETED (LEAFPERT 2.013 < sky 2.217 <
+cpl 2.946 < vel 3.745) and — per P15's residual decomposition (`P15_derived_lensing_on_the_lcdm_arm`,
+`P15_the_residual_is_contrast_and_the_lensing_potential_is_derived`) — the peak-trough CONTRAST/height is
+controllable by the damping tail, polarization (POLC), and lensing WITHOUT moving the peak positions. So the
+amplitude residual does not threaten the closed position; it is the next, softer determination.
+
+**DISPOSITION:** the position — the hard ~70σ residual I nearly mis-called a falsification — is CLOSED by the
+layered clock division (0.25%), a principled two-horizon mechanism, no driving impulse. The exact sub-division
+that also lands the amplitude (and the height machinery that does it without moving peaks) is the next step, now
+bracketed in both observables. Instrument change: added the `SRCSTACK` DIAGNOSTIC flag (off by default, provable
+no-op on the control since Jac=1); NOT a committed frame — the frame choice is 58's to name.
+
+### ✔ 58's HEIGHT-BY-SUBTRACTION COMPUTATION — carried out: the running of phi IS the position, and is NOT the amplitude
+**Shipped by 58:** does the running of the clock ratio phi(eta)=H_stack/H_leaf supply CR's height boost the
+way it supplied the phase? Measured by subtraction (running phi vs phi frozen at its recombination value),
+gated on the control, at fixed position. Instrument: added `FREEZEJAC` (freeze Jac=phi at eta_rec; provable
+no-op on control where phi==1), extended PHISAVE to record phi(eta). Runs at NK=620, SRCSTACK=vel.
+
+**GATE (control, phi==1):** lcdm vel and lcdm vel+FREEZEJAC are BYTE-IDENTICAL — [220,532,812,1116],
+l1/lA=0.7300, P1/P2=2.447 both. phi_rec=1.00000. Self-check passes; the CR differences below are real.
+
+| CR arm | l1/lA | P1/P2 | P1/P3 | P1/P4 |
+|---|---|---|---|---|
+| B: phi FROZEN at phi_rec=0.885 | 0.6764 | 4.009 | 3.005 | 6.442 |
+| A: phi RUNNING (0.607 -> 0.885) | 0.7294 | 3.745 | 4.531 | 14.944 |
+| sky | 0.7312 | 2.217 | 2.277 | — |
+
+**(1) POSITION — the running of phi IS the mechanism, decisively.** Freezing phi collapses the position to
+0.6764 (= LEAFPERT); the RUNNING of phi carries it to 0.7294 (= sky, 0.25%). The clock-ratio running supplies
+the FULL position shift — CR's structural analogue of the acoustic phase shift, confirmed by subtraction and
+gated. This is the strong, positive result and it nails down WHY vel closes the position.
+
+**(2) AMPLITUDE — the running of phi is NOT the radiation-driving analogue.** The hypothesis was that the
+running weights higher-k modes (which oscillate earlier, at smaller phi) and boosts the high peaks the way RD
+does. The measurement refutes that specific form: the running moves P1/P2 only 4.009 -> 3.745 (right direction,
+but ~15% of the way to 2.217) AND it WORSENS the higher ratios (P1/P3 3.005 -> 4.531, P1/P4 6.4 -> 14.9). So
+the running SUPPRESSES the high peaks relative to the first, the OPPOSITE of radiation driving. The two-clock
+running delivers the position in full and does NOT deliver the amplitude.
+
+**DISPOSITION (honest, per 58's own rule "the shortfall is measured rather than argued").** The running of the
+clock ratio is confirmed as the position mechanism and measured OUT as the amplitude mechanism. The amplitude
+boost RD supplies in LambdaCDM is not reproduced by the two-clock running here. So the amplitude needs a
+different route than the clock split — most likely P15's height/contrast machinery (damping tail, polarization
+POLC, lensing), which P15 already shows moves the peak-trough contrast WITHOUT moving the peaks, i.e. at the
+fixed 0.7294 position vel now delivers. A clean next discriminator: separate the high-peak change into driving
+vs Silk-damping (the running also retimes when high-k modes oscillate, hence their diffusion) via NODRIVE / the
+diffusion knob, to confirm the suppression is damping-mediated rather than an anti-driving. Instrument: `FREEZEJAC`
+diagnostic added (no-op on control), PHISAVE extended with phi(eta); not committed frames.
+
+### ✔ 58's DIFFUSION-CLOCK DISCRIMINATOR — over-damping CONFIRMED; the diffusion clock is a real amplitude lever, but couples to position
+**58's diagnosis:** the amplitude failure shape (P1/P3, P1/P4 worse with k) is OVER-DAMPING, not anti-driving,
+and by LGF Silk diffusion is a content process -> leaf clock. Shipped: report which clock the k_D integral
+keeps, and run it on the leaf.
+
+**ITEM 2 (which clock), answered by reading the code:** the k_D integral (`1/k_D^2 = INT A/tau' d(eta)`) is a
+SETUP quantity computed once on `_egrid` with `d(_egrid)` -- the STACK conformal-time grid, phi-INDEPENDENT.
+So the diffusion kept the STACK clock while `vel` put the oscillation on the LEAF. The mismatch is real and
+visible. **The LGF fix (`DIFFLEAF`):** diffusion accrues over eta_leaf with tau'_leaf = tau'_stack/Jac, so
+r_D^2_leaf = INT (A/tau'_stack) Jac^2 d(eta_stack) -- the integrand gains phi^2=Jac^2 (derived, not fitted).
+phi<1 early -> LESS damping at high k. Provable no-op on control (phi==1).
+
+**GATE (control, phi==1):** lcdm vel+DIFFLEAF is BYTE-IDENTICAL to plain lcdm ([220,532,812,1116], 0.7300,
+2.447, 2.974). Self-check passes.
+
+| CR arm | l1/lA | P1/P2 | P1/P3 | r_D |
+|---|---|---|---|---|
+| vel (diffusion on STACK, the mismatch) | 0.7294 | 3.745 | 4.531 | 7.64 |
+| vel + DIFFLEAF (diffusion on LEAF, LGF) | 0.7560 | 3.503 | 3.780 | 6.57 |
+| sky | 0.7312 | 2.217 | 2.277 | — |
+
+**RESULT.** (1) 58's OVER-DAMPING diagnosis is CONFIRMED: moving the damping to the consistent leaf clock
+brings peaks 3-4 UP (P1/P3 4.531 -> 3.780, P1/P2 3.745 -> 3.503) -- the suppression WAS damping-retiming.
+(2) The diffusion clock is a genuine amplitude lever in the right direction, and it is LGF-forced, not a knob.
+(3) BUT it moves the position 0.7294 -> 0.7560 (reduced high-k damping shifts peak centroids right), so the
+fully-LGF-consistent operation (gravity on stack; pressure, friction, diffusion on leaf) OVERSHOOTS position
+and still leaves the amplitude at ~3.5 vs sky 2.2. So the diffusion clock is confirmed as a real lever and a
+FORCED assignment, but it does not close the amplitude alone and it disturbs the position.
+
+**THE REMAINING TERM, named by the instrument itself.** The code's diffusion block (c54.176-178) already
+records what it is MISSING: the POLARISATION SOURCE terms. It takes the polarisation's contribution to the
+DAMPING (the 16/15 coefficient) WITHOUT its contribution to the SOURCE (g*Pi/4 and (3/4k^2)d^2(g*Pi)/deta^2)
+-- "half of one physical effect, and the half taken is the half that removes power" -- recorded as the 1123
+chi^2 units the instrument is missing. The missing polarisation SOURCE ADDS power at the peaks (a source, not
+a damping-scale change), so it lowers P1/P2, P1/P3 WITHOUT the damping-scale position shift. That is the
+natural next term -- and unlike the clock assignments it is a genuine physics addition (deliberately left out
+with a recorded reason), so it is 58's to specify, not mine to add unattended. Instrument: `DIFFLEAF` diagnostic
+added (LGF diffusion->leaf, no-op on control); not a committed frame.
+
+**CALIBRATION (the decisive one): the diffusion-clock change is SCALE-equivalent, so the residual is the ENVELOPE SHAPE.**
+Ran vel + DAMPX=0.739 (the diagnostic that slides the damping SCALE without the leaf-clock shape, matched to
+DIFFLEAF's r_D drop 7.64->6.57):
+
+| CR arm | l1/lA | P1/P2 | P1/P3 |
+|---|---|---|---|
+| vel + DIFFLEAF (leaf-clock diffusion, LGF) | 0.7560 | 3.503 | 3.780 |
+| vel + DAMPX=0.739 (pure damping SCALE) | 0.7560 | 3.499 | 3.755 |
+
+They are the SAME. So the diffusion-clock assignment acts as a pure damping-SCALE reduction -- its leaf-clock
+shape (Jac^2) adds nothing beyond an overall scale. Two consequences, both from the instrument's own DAMPX logic
+("if the two ratios select different DAMPX, no coefficient can fix the heights, and the residual is the SHAPE of
+the envelope rather than its scale"): (i) one scale cannot close both ratios -- 3.50/2.22=1.58 vs 3.76/2.28=1.65
+-- so the amplitude residual is the ENVELOPE SHAPE, NOT the diffusion scale/clock; (ii) the scale reduction MOVES
+the position (0.7294->0.7560), so it is disqualified as an amplitude-only fix by 58's own criterion.
+
+**HONEST NET STATE (correcting any over-clean reading of the earlier position closure):** the gravity-clock
+assignment closes the position AT THE vel LEVEL (0.7294, diffusion still on stack). Making the diffusion clock
+LGF-consistent is FORCED, helps the amplitude, but is scale-equivalent -- it moves the position to 0.7560 and
+cannot close both ratios. So position and amplitude are COUPLED through the damping, and the diffusion clock is
+NOT the amplitude closer. The residual is the envelope SHAPE -> the POLARISATION SOURCE terms the instrument
+already names as its missing 1123-chi^2 piece (a source that adds power AT the peaks, changing the shape, not a
+scale that shifts position). The full LGF-consistent CR prediction -- gravity on stack, pressure/friction/diffusion
+on leaf, AND the polarisation source restored -- is the object to compare to the sky in BOTH position and amplitude,
+and it is NOT yet computed. That is the determinate next ship, and it is a genuine physics term (58's to specify),
+not a clock assignment.
+
+### ✗ POLARISATION SOURCE via tight-coupling Pi reconstruction — FAILS the control gate (implementation inadequate; physics term still right)
+**58's ship:** restore the polarisation source terms g*Pi/4 and (3/4k^2)d^2(g*Pi)/deta^2 in both arms; the control
+gate is that LambdaCDM must recover the recorded 1123 chi^2 and NOT degrade 0.7300/2.447. I reconstructed Pi from
+the L171w polarised tight-coupling closure: Pi=(5/2)F_2, F_2=(32/45)(tg/tau') => Pi=(16/9)(tg/tau'), with g*Pi
+computed directly as (16/9)e^-tau*tg (the tau' cancels, finite through last scattering).
+
+| run | l1/lA | P1/P2 | P1/P3 |
+|---|---|---|---|
+| CR vel+DIFFLEAF, POLSRC OFF (baseline) | 0.7560 | 3.503 | 3.780 |
+| CR vel+DIFFLEAF, POLSRC ON | 0.9151 | 2.127 | 2.533 |
+| **control (lcdm) POLSRC ON -- THE GATE** | **0.8627** | **1.806** | 2.329 |
+| control plain (POLSRC OFF) | 0.7300 | 2.447 | 2.974 |
+| sky | 0.7312 | 2.217 | 2.277 |
+
+**GATE FAILED.** The control's first peak moved 220 -> 260 (l1/lA 0.7300 -> 0.8627) and P1/P2 overshot to 1.806.
+A correct polarisation source CANNOT move LambdaCDM's peak (measured at 220.6). So the tight-coupling Pi is WRONG.
+
+**DIAGNOSIS (honest).** The amplitude ratios moved in the RIGHT direction (P1/P2, P1/P3 down toward sky) -- the
+term IS the missing shape, as 58 diagnosed -- but the magnitude is far too large and it shifts the peaks. Cause:
+the tight-coupling steady state Pi=(16/9)(tg/tau') assumes tau' LARGE (F_2'~0), which is INVALID near last
+scattering where tau' -> small (k/tau' ~ 0.6 at the visibility peak, not << 1). Extrapolating the tight-coupling
+formula into the last-scattering regime oversizes Pi, adding a velocity-scale source (comparable to the Doppler)
+that both over-corrects the amplitude and drags the peaks right. Tuning the (16/9) coefficient to pass the gate
+would be a FIT, which 58 explicitly forbade ("no free parameter anywhere"), so I did not.
+
+**THE CORRECT FIX (structural, 58's architectural call).** Pi must be got from the EVOLVED polarisation hierarchy
+(G_0, G_2 alongside the photon F_2, as L171w does: F_2'=(8/15)tg-(3/5)kF_3-tau'(F_2-Pi/10), G_0'=-kG_1+tau'(-G_0+Pi/2),
+G_2'=(k/5)(2G_1-3G_3)+tau'(-G_2+Pi/10)), so Pi SATURATES physically through last scattering instead of diverging.
+But the main ACOUSTIC instrument deliberately carries NO photon multipoles -- it is tight-coupling + the derived
+exp(-k^2/k_D^2) damping factor -- so adding an evolved photon+polarisation hierarchy is a re-architecture, and it
+must be reconciled with the damping factor to avoid DOUBLE-COUNTING the quadrupole's dissipation (the k_D integral
+already encodes it). That reconciliation -- evolve the multipoles OR keep the damping factor, not both -- is the
+architectural decision, and it is 58's to make, not a source-function patch. Instrument: POLSRC flag left in place
+but DOCUMENTED AS GATE-FAILING (off by default, no effect on other runs); not a result.
+
+**NET.** The polarisation source is confirmed as the right missing SHAPE term (it moves the amplitude the right
+way), but it cannot be restored by extrapolating tight coupling into last scattering -- that fails the control
+gate. The honest state: the amplitude closure awaits a physical Pi from an evolved polarisation hierarchy, which
+is a structural change to the tight-coupling instrument.
+
+### ✔✔ GATE 1 PASSES — the polarisation source is ALREADY in the instrument (HIER path), evolved-Pi, and it holds the control position while recovering the amplitude
+**Discovery:** the instrument already carries the correct implementation. `HIER=1` (`evolve_hier`, `_project`) evolves
+the FULL photon+polarisation hierarchy by L171w's equations (F_2..F_LG, G_0..G_LG, Pi=F_2+G_0+G_2 from the evolved
+variables) and `_project` already carries the polarisation SOURCE terms g(Theta_0+Psi+Pi/4) + (3/4k^2)d^2(g Pi)/deta^2
+-- with the double-count avoided exactly as 58 described: the exp(-k^2/k_D^2) envelope is FROZEN AT THE SWITCH
+(tau'=3, eta=138, carrying 4.2% of the damping) and the multipoles carry the other 95.8%, disjoint supports. My
+hand-rolled POLSRC (tight-coupling steady-state Pi) was reinventing this badly and failed; the evolved Pi is right.
+
+**GATE 1 (control, evolved-Pi polarisation source):**
+
+| control | l1/lA | P1/P2 | P1/P3 |
+|---|---|---|---|
+| plain lcdm | 0.7300 | 2.447 | 2.974 |
+| lcdm HIER=1 (evolved-Pi source) | **0.7300** | **2.254** | **2.363** |
+| sky | 0.7312 | 2.217 | 2.277 |
+
+**PASSES.** Position HELD at 0.7300 (the peak did NOT move -- the critical requirement) and both ratios moved from
+(2.447, 2.974) toward the sky (2.217, 2.277), landing at (2.254, 2.363) -- PARTWAY, not past, exactly as 58
+predicted a physical (saturating) Pi would. That is the recovery of the ~1123 chi^2 debt, and it confirms the term
+at the right SIZE, not merely the right sign. The failing tight-coupling attempt was a REGIME error (Pi extrapolated
+into last scattering where tight coupling breaks), not a missing physics -- as diagnosed.
+
+**FOR THE CR RUN:** added the SRCSTACK=vel split to `evolve_hier` (gravity velocity-source DRE k^2 Ps on the stack
+clock; content on leaf). In the HIER path the diffusion is done by the EVOLVED MULTIPOLES on the leaf clock (via the
+x Jac in evolve_hier), not the k_D factor -- so the leaf-clock diffusion is NATIVE and DIFFLEAF is not needed. The
+full LGF-complete CR prediction is `ARM=cr SRCSTACK=vel HIER=1`: gravity on stack, pressure+diffusion+polarisation
+all on the leaf. [running]
+
+### ✔ THE FULL LGF-COMPLETE PREDICTION — position CLOSED, amplitude a GENUINE framework residual (58's "open" outcome)
+With the evolved polarisation source validated on the control (Gate 1), the full LGF-complete CR prediction:
+
+| CR, evolved polarisation source (HIER) | l1/lA | P1/P2 | P1/P3 |
+|---|---|---|---|
+| vel + HIER  (gravity velocity-source on stack) | 0.7294 | 3.382 | 3.270 |
+| src + HIER  (whole geometry sector on stack: +Phi evolution) | 0.7294 | 3.492 | 3.091 |
+| LEAFPERT + HIER (everything on leaf) | 0.6764 | 1.802 | 1.746 |
+| control lcdm HIER (the gate, PASSES) | 0.7300 | 2.254 | 2.363 |
+| sky | 0.7312 | 2.217 | 2.277 |
+
+**POSITION: CLOSED.** 0.7294 vs sky 0.7312 (0.25%), ROBUST across vel and src (the Phi-clock choice does not move
+it) -- the two-horizon clock division, no driving impulse. Settled.
+
+**AMPLITUDE: a genuine framework residual.** The control gate PASSES -- LambdaCDM through the same complete
+instrument recovers to P1/P2=2.254 near the sky's 2.217, holding position. So the instrument is internally
+consistent and complete. Yet CR's P1/P2 stays at ~3.4-3.5 (vs sky 2.217, ~55% high), ROBUST to the gravity-clock
+(vel 3.382, src 3.492) and to the polarisation source (which helped: vel-alone was 3.745). CR's higher peaks are
+too low relative to the first, and it PERSISTS through the fully LGF-consistent, gate-passing instrument.
+
+**WHAT IT IS.** The residual is the DRIVING-AMPLITUDE BOOST. LambdaCDM's radiation driving does two things: a PHASE
+shift (position) and an AMPLITUDE enhancement of the higher peaks (crossing-during-plasma boosts high-k). CR's
+two-horizon structure supplies a substitute for the PHASE shift (the position closes), but there is NO two-horizon
+substitute for the higher-peak AMPLITUDE boost -- and the running-of-phi does not supply it (measured out earlier),
+nor does the (correct, gate-passing) polarisation source fully. So the amplitude residual is the same
+absence -- no crossing during plasma, hence no driving boost -- that PO-13 identified at the start, now shown to
+SURVIVE the complete, consistent instrument. It is the first result in this arc that deserves to be carried as OPEN:
+a standing CR-vs-sky prediction (higher peaks ~55% low in the ratio), measured against a validated instrument,
+rather than a gap in the machinery.
+
+**CAVEAT (honest).** The perturbation sector's term-by-term clock assignment is not provably exhausted; a term still
+unassigned could yet move the amplitude. But the main levers (gravity-clock vel/src, diffusion via the evolved
+multipoles on the leaf, the polarisation source) are all assigned and gate-passing, and the residual is robust
+across them. So it is fairly called a genuine open framework result, held with that caveat -- not closed, not a bug.
+
+Instrument: added SRCSTACK=vel/src to evolve_hier (gravity-clock split in the hierarchy path); HIER path already
+carried the evolved-Pi polarisation source. Position closed; amplitude open and characterised.
+
+### ⚠ CORRECTION + full consistent composition (58's gate order, run on the branch superset + PHASEPOW)
+**Correction of a cc54 git misread first:** I wrongly thought main r3512 had REVERTED my flags. It had not -- main
+never had them; the -89/+15 was a branch-vs-main divergence diff (PR #22 unmerged). The branch is the SUPERSET;
+main's only new piece is 58's PHASEPOW (r3511), now brought into the branch. I nearly adopted main's instrument,
+which would have deleted SRCSTACK/DIFFLEAF/POLSRC/FREEZEJAC -- caught by 58 mid-run.
+
+**Composition confirmed and the port completed:** evolve_hier carries the vel term-split (my earlier vel+HIER gave
+0.7294 != LEAFPERT+HIER 0.6764, so the hierarchy DOES see vel -- Gate 1.5 passes). DIFFLEAF modifies the
+module-level kD2inv_of, so it reaches _project's frozen envelope. Full consistent run: ARM=cr SRCSTACK=vel DIFFLEAF=1 HIER=1.
+
+**58's PISRC subtraction (the returned half), the decisive measurement:**
+
+| run | l1/lA | P1/P2 | P1/P3 |
+|---|---|---|---|
+| plain lcdm (tight-coupling + exp(-k^2/k_D^2)) | 0.7300 | 2.447 | 2.974 |
+| lcdm HIER PISRC=0 (evolved hierarchy, NO pol source) | 0.7300 | 2.265 | 2.326 |
+| lcdm HIER PISRC=1 (+ pol source) | 0.7300 | 2.254 | 2.363 |
+| CR vel+DIFFLEAF+HIER PISRC=0 | 0.7294 | 3.406 | 3.171 |
+| CR vel+DIFFLEAF+HIER PISRC=1 | 0.7294 | 3.359 | 3.219 |
+| sky | 0.7312 | 2.217 | 2.277 |
+
+**WHAT THE SUBTRACTION SHOWS (correcting my Gate-1 over-attribution).** The polarisation SOURCE's returned half is
+SMALL on BOTH arms: control 2.265 -> 2.254 (~0.5%), CR 3.406 -> 3.359. The big control recovery I credited to the
+source in Gate 1 (2.447 -> 2.254) is almost entirely the HIERARCHY's proper damping (the evolved multipoles carrying
+the pol-corrected quadrupole), NOT the two source terms. The source is a ~0.5% correction -- which is what
+polarisation physically IS. So the "1123 chi^2 debt" is recovered by the hierarchy's damping treatment; the source
+terms are the small remainder.
+
+**POSITION.** Under the FULLY consistent HIER composition (vel + DIFFLEAF + evolved multipoles doing the diffusion on
+the leaf natively), the CR position is 0.7294 (0.25% from sky), and the pol source does NOT move it (0.7294 at
+PISRC=0 and 1). This is NOT the fluid-path 0.7560 that 58 predicted: in the HIER path the diffusion is done by the
+multipoles on the leaf, not the k_D envelope, so DIFFLEAF (which only touches the 4.2% frozen envelope) barely
+moves it. **Flag for 58: the HIER-consistent position is 0.7294, differing from the fluid-DIFFLEAF 0.7560 -- the
+two solvers do the diffusion clock differently, and the hierarchy is the more complete one.**
+
+**AMPLITUDE.** CR P1/P2 stays ~3.36-3.41 (vs sky 2.217) under the complete, consistent hierarchy instrument, and
+neither the hierarchy nor the pol source closes it -- the pol source barely helps CR at all. So the amplitude residual
+PERSISTS through the fully consistent, internally-complete instrument: CR's higher peaks are too low relative to the
+first, the missing driving-amplitude boost. Held as the arc's first genuine OPEN framework result -- now on the
+fully consistent HIER composition, not the fluid path, with the pol-source contribution measured and found small.
+
+### ✔ CRAMP=seam — 58's amplitude lever, and it lands P1/P3 EXACTLY; the residual narrows to the even (2nd) peak
+**58's ship:** CRAMP=seam is a k-dependent INITIAL amplitude (Theta-hat_0 = -T(k c_s eta_S)/2), acting on what the
+modes START with, not the evolution -- the one place the clock division, diffusion clock and polarisation source
+could not reach. Principled: 'flat' assumes the seam is a blank initial surface; CR's seam is a branch point in an
+existing de Sitter geometry, so each mode arrives with its own accumulated sound-crossing phase. Run on the full
+consistent composition (vel+DIFFLEAF+HIER), gated on the control.
+
+**GATE:** lcdm HIER CRAMP=seam = 0.7300 / 2.254 / 2.363 -- BYTE-IDENTICAL to lcdm HIER. CRAMP is CR-only, a clean
+no-op on the control. The CR shifts below are real physics.
+
+| CR (vel+DIFFLEAF+HIER) | l1/lA | P1/P2 | P1/P3 |
+|---|---|---|---|
+| CRAMP=flat  PISRC=1 | 0.7294 | 3.359 | 3.219 |
+| CRAMP=seam  PISRC=1 | 0.7560 | 2.727 | **2.277** |
+| CRAMP=seam  PISRC=0 | 0.7560 | 2.771 | 2.244 |
+| sky | 0.7312 | 2.217 | **2.277** |
+
+**RESULT.** The seam IC is a LARGE, genuine amplitude lever: P1/P3 falls 3.219 -> **2.277, exactly the sky's 2.277**,
+and P1/P2 falls 3.359 -> 2.727. But it also MOVES the position 0.7294 -> 0.7560 (+3.4%), which by 58's own criterion
+means the IC is touching the phase, not a clean shape-at-fixed-position lever. So amplitude and position COUPLE
+through the IC -- the same bracketing seen across the clock: flat holds the position and misses the amplitude, seam
+lands the amplitude (P1/P3 exact) and overshoots the position. Neither closes both.
+
+**THE RESIDUAL, NARROWED AND NAMED.** Under the fully principled instrument (LGF clocks, evolved hierarchy,
+polarisation source, seam IC -- every assignment made, no free parameter): position 0.7560 (+3.4%), P1/P2 2.727
+(+23%), P1/P3 2.277 (EXACT). The tell is that P1/P3 is exact while P1/P2 is high: the ODD-odd ratio is right and it
+is the EVEN (second) peak that is too low. That is the ODD-EVEN ALTERNATION deficit -- the compression (even) peaks
+under-boosted -- which is the SAME absence PO-13 identified at the very start: no crossing during plasma, hence no
+driving enhancement of the compression peaks. The position residual (+3.4%) likely rides the same second-peak
+displacement. So the fully assembled framework reproduces the sky EXCEPT for the odd-even alternation, and that
+deficit is the driving-compression boost CR structurally lacks -- coherent with the undriven-comb result from day one.
+
+**Flag for 58 (adjudication, not a cc54 conclusion):** (a) which IC is right -- flat (position 0.7294, amplitude wrong)
+or seam (P1/P3 exact, position 0.7560); (b) whether the position moving under the principled seam IC means 0.7560 is
+the true consistent position or the IC over-corrects; (c) the residual is now specifically the 2nd/even peak (P1/P2
+high, P1/P3 exact) -- the alternation, not a broadband shape. Every principled lever is now exercised and the residual
+is isolated to one feature.
+
+### ✔ KCONT=1 under seam + the odd-even HEIGHT-alternation measurement (58's two checks, r3523)
+**58's correction accepted first:** the falsification criterion "if the position moves, the IC touches the phase" was
+WRONG -- the projected peak position is a CENTROID of the k-envelope, not the oscillation phase, so any
+amplitude-envelope change reweights k and moves the centroid with the phase untouched. DAMPX (pure damping scale, zero
+phase content) moved 0.7294->0.7560 identically to DIFFLEAF: proof. And 220 vs 228 are ONE comb-rung apart -- three
+unrelated operations (DIFFLEAF, DAMPX, seam) all land 228, flat lands 220 -- so there is no continuous +3.4% residual,
+only a rung question. Honest position report from here on: *"l_1 = 220 or 228 depending on the high-k envelope; sky
+220.6; rung spacing ~8,"* NOT "closed at 0.7294/0.7560."
+
+**CHECK 1 -- KCONT=1 (does the position depend on the discreteness of CR's ladder?).** Runs on the full seam
+composition (`ARM=cr SRCSTACK=vel DIFFLEAF=1 HIER=1 CRAMP=seam PISRC=1 NK=620`):
+
+| CR seam | l_1 | l_1/l_A | P1/P2 | P1/P3 | modes |
+|---|---|---|---|---|---|
+| discrete ladder | 228 | 0.7560 | 2.727 | 2.277 | (sqrt(L(L+2)) ladder) |
+| KCONT=1 continuum | 228 | 0.7560 | 2.726 | 2.277 | 1860 dense |
+
+**IDENTICAL to four digits.** The discrete ladder is NOT what puts the peak at 228 -- dense continuum sampling lands
+the same place. So 228 is a physical envelope centroid, not an aliasing/discreteness artifact; the corpus's KCONT
+guard (l.1014) passes under seam. The 228-vs-220 choice is set by the high-k ENVELOPE (flat->220, seam/damping->228),
+not by the comb's coarseness.
+
+**CHECK 2 -- odd-even HEIGHT alternation, CR vs control vs sky, all under seam.** Metric A2 = height of the odd
+(P1-P3) envelope interpolated to the 2nd-peak position, divided by the actual 2nd-peak height. A=1 -> even peak sits ON
+the odd trend (NO alternation, uniform comb); A>1 -> even peak depressed by (A-1). Same metric on all three arms:
+
+| arm | A2 (2nd pk) | A4 (4th pk) | P1/P2 | P1/P3 |
+|---|---|---|---|---|
+| sky (Planck ratios) | **1.423** | -- | 2.217 | 2.277 |
+| CONTROL seam (driven) | **1.432** | 1.935 | 2.254 | 2.363 |
+| CR seam (undriven) | **1.741** | 2.312 | 2.727 | 2.277 |
+| CR seam KCONT | 1.740 | 2.312 | 2.726 | 2.277 |
+
+**TWO findings, one a correction of my own framing:**
+
+1. **The control REPRODUCES the sky's height alternation: A2 = 1.432 vs sky 1.423 (0.6%).** The two-arm machinery is
+   now validated on the HEIGHT observable, not only position -- a clean gate pass. (The raw ratios agree less well --
+   control P1/P3=2.363 vs 2.277, 3.8% -- because A2 divides out the common damping envelope that the raw ratio carries.)
+
+2. **CR does NOT under-alternate -- it OVER-alternates.** A2 = 1.74 vs sky 1.42: CR's 2nd peak is ~23% TOO LOW, not too
+   high. So the surface phrasing "CR is a uniform comb where the sky alternates" is CORRECT for SPACING (CR's comb is
+   unshifted/uniform, the sky's is driving-shifted) but WRONG for HEIGHTS -- in heights CR is MORE depressed at the
+   even peaks, not flat. Robust to discreteness (KCONT A2 1.740 vs 1.741).
+
+**THE READING (why this is still "one claim," correctly stated).** A smooth-in-k amplitude lever -- the seam IC, or any
+envelope reweighting -- is MONOTONIC in k, so it can lift the odd peaks OR the even peaks onto the sky but NOT both,
+because the sky's peak heights ALTERNATE (P2 low, P3 up, P4 low...) and a smooth mechanism cannot manufacture
+alternation. Under seam the smooth lift is tuned to the odd peaks (P1/P3 = 2.277 exact); the even peaks then come out
+where the smooth lift leaves them -- ~23% below the sky. So *the residual after any smooth lever is exactly the
+non-smooth (alternating) part*, and that alternating part IS the radiation driving. CR lacks the driving, so it lacks
+BOTH driving signatures: the comb-shift in spacing (CR uniform, sky shifted) AND the even-peak boost in height (CR
+over-depressed, sky/control at A2~1.42). Two signatures, one absence -- but they point OPPOSITE ways (less structure in
+spacing, more depression in height), which is why "uniform in both" was the wrong way to say it. The control carrying
+the driving reproduces the sky in BOTH channels; CR carrying no driving departs in BOTH. That is PO-13's day-one claim,
+now confirmed in a second independent observable (heights) with a validated control -- and the confirmation is that the
+alternation is precisely what no smooth CR lever can supply, not that CR's heights are flat.
+
+**Flag for 58:** (a) the phrasing correction is on the record -- CR over-alternates in height, it is not flat; the
+"one claim" stands as *"the alternation is the driving, and no smooth CR lever supplies it"* rather than *"CR is uniform
+in both."* (b) Control now validated on heights (A2 0.6% from sky), so the CR even-peak deficit is a genuine
+arm-difference, not machinery. (c) Position: 220 or 228 is a rung, set by envelope, not discreteness (KCONT identical);
+stop quoting either as "closed." (d) Next natural check, if you want it: does the even-peak deficit scale with the
+baryon load R (the alternation's amplitude) the way a missing driving-times-baryon-loading term would -- an RBFAC scan,
+CR and control, reading A2 vs R -- which would pin the deficit to the driving-baryon product quantitatively.
+
+### ✔ RBFAC SCAN — the A2(R) GAP measures (b) missing-driving over (a) baryon-error, decisively (r3524)
+**58's mechanism separation (accepted, and it rescues the physics):** odd-even height alternation is BARYON LOADING,
+not driving -- R_b depresses the even (rarefaction) peaks vs the odd (compression) ones, and that sets A2. Driving is
+NOT differential odd/even; it boosts peaks 2+ as a GROUP, and because peak 2 is one of the depressed ones, the group
+boost partially OFFSETS the baryon depression there. So an undriven comb doesn't lose alternation -- it loses the
+OFFSET, and its even peak sits too low. A2 too high is exactly what missing driving predicts; my 1.741 vs 1.423
+pointed the right way. Two hypotheses to separate: **(a)** CR's deficit is a baryon-loading error -> some R brings CR's
+A2(R) onto the CONTROL's curve (gap vanishes / curves coincide); **(b)** it's the missing driving offset -> the
+CR-minus-control GAP persists at every R (a term CR lacks at any baryon load).
+
+**Design (58's, made decisive not descriptive):** scan RBFAC on BOTH arms, same grid, seam composition
+(`SRCSTACK=vel DIFFLEAF=1 HIER=1 CRAMP=seam PISRC=1 NK=620`); report the GAP as the primary quantity, and l_1/l_A next
+to every A2. **Gate: control at R=1 must return 1.432.**
+
+| R (RBFAC) | CR A2 | ctl A2 | **GAP=CR-ctl** | CR l_1/l_A | ctl l_1/l_A | CR P1/P2 | ctl P1/P2 |
+|---|---|---|---|---|---|---|---|
+| 0.50 | 1.205 | 1.137 | **0.069** | 0.729 | 0.741 | 1.429 | 1.553 |
+| 0.75 | 1.463 | 1.276 | **0.187** | 0.756 | 0.749 | 1.979 | 1.871 |
+| **1.00** | 1.741 | **1.432** | **0.308** | 0.756 | 0.730 | 2.727 | 2.254 |
+| 1.50 | 2.386 | 1.769 | **0.618** | 0.783 | 0.723 | 4.864 | 3.211 |
+| 2.00 | 3.075 | 2.160 | **0.915** | 0.836 | 0.719 | 7.867 | 4.440 |
+
+*(sky: A2 = 1.423, l_1/l_A = 0.7312. GATE PASSES: control R=1 -> A2 = 1.4323.)*
+
+**RESULT -- (b), unambiguously.** The GAP is POSITIVE at every R, NEVER vanishes (min 0.069 at R=0.5), and SCALES
+~linearly with R (fit GAP ~ 0.571*R - 0.237; no zero crossing in [0.5, 2.0]). Both diagnostics 58 named for (b) hold:
+the gap does not vanish at any R, and it scales with R. Hypothesis (a) is excluded three ways: (i) the gap never
+reaches zero; (ii) CR's A2(R) curve does NOT lie on control's -- e.g. CR@R=1.0 (1.741) equals control only near
+R~1.45, CR@R=0.5 (1.205) equals control near R~0.6, so the "effective-R" multiplier a baryon error would need is NOT
+constant (1.2 -> 1.45, it grows); (iii) a pure baryon rescaling is multiplicative and constant, but the deficit is an
+ADDITIVE offset that grows with R. **The even-peak deficit is a term CR structurally lacks at every baryon load --
+the missing driving offset -- and its growth with R is exactly the driving x baryon-loading product 58 predicted:
+the driving boost acts on the baryon-depressed (R-proportional) even peak, so the MISSING boost is R-proportional too.**
+
+**What is MEASURED vs INTERPRETED (kept apart, honestly):** MEASURED -- (1) gate: control reproduces the sky's height
+alternation to 0.6% (A2 1.432 vs 1.423), a second independent validation of the two-arm instrument after position;
+(2) the CR-control gap is positive, non-vanishing, and R-scaling across a 4x baryon range. That measures (b) over (a).
+INTERPRETED (natural, not proven) -- that the R-proportionality identifies the missing term specifically as
+driving x baryon-loading; what is proven is that it is an additive term absent at all R, i.e. not a baryon error.
+
+**⇒ PO-13, both channels now MEASURED.** Spacing: CR's comb is undriven (uniform, at the integers; the NODRIVE guard
+and the ~70sigma phase intercept). Height: CR's even-peak deficit is the missing driving offset, measured over a baryon
+scan against a control that lands the sky. The framework's departure from the sky is ONE absence -- the radiation
+driving CR structurally lacks -- now carrying TWO measured signatures with a validated control, not one measured and
+one argued. The l_1/l_A column also answers the rung question quantitatively: control's position is R-STABLE
+(0.741 -> 0.719), CR's rises with R (0.729 -> 0.836) -- the envelope centroid responds to baryon loading on the
+undriven arm, as an envelope-set (not phase-set) position should.
+
+---
+
+## ⛔⛔ PO-13 — **UNBANKED r3526 (58). THE AMPLITUDE IS OPEN, NOT BANKED.**
+
+> ⛔ ***THE "BANKED" FRAMING BELOW WAS MINE AND IT WAS WRONG. It is kept, struck, as the record of the
+> error — not as a verdict.***
+
+**⌘ WHAT THE SKY COMPARISON ACTUALLY SHOWS.** *It was run; every table carries a sky row.* ⛔ ***Nothing
+closed.***
+
+| | CR `flat` | CR `seam` | **sky** |
+|---|---|---|---|
+| $\ell_1/\ell_A$ | 0.7294 | 0.7560 | **0.7312** |
+| $P_1/P_2$ | 3.359 | 2.727 | **2.217** |
+| $P_1/P_3$ | 3.219 | **2.277** | **2.277** |
+| $A_2$ | — | 1.741 | **1.423** |
+
+⇒ ***Position agrees under `flat` (0.25%) and not under `seam` (+3.4%) — and `flat` is the IC we agreed
+is the placeholder. The amplitude agrees under NEITHER: $P_1/P_2$ off by 23%, the alternation by 22%.***
+*Four mechanisms were tried and each moved it partway: the clock running gave ~15%, the diffusion clock
+was scale-equivalent to `DAMPX`, the polarisation source ~0.5%, and `seam` hit $P_1/P_3$ exactly while
+missing $P_1/P_2$ and shifting the position.*
+
+**⛔ HOW IT GOT SWEPT.** *The `RBFAC` scan **characterised** the gap; it did not close it. I then
+instructed that it be written up as "a falsifiable prediction with three measured signatures, not
+closed-with-a-residual."* ***That was my call and it was wrong.*** *Daryl's rule — never frame a CR
+result as falling short — says do not score a result as a failure to deliver.* ⛔ ***It does not say
+relabel an unexplained empirical disagreement as a prediction.*** *Three mismatches became "three
+signatures" and the open problem disappeared into a banked entry. **That is the rug, and I put it
+there.***
+
+### ⌘ WHAT IS GENUINELY ESTABLISHED — *narrower, and worth keeping*
+
+1. ***The instrument is validated on BOTH observables***: the control reproduces the sky on **position
+   to 0.16%** and on **height alternation to 0.6%**, through CR's own machinery, on an observable it
+   was never tuned against.
+2. ***The CR−control gap is additive and $R$-scaling, not a baryon-loading error.*** *The refutation
+   stands on **functional form** — a baryon error is a fixed multiplier and CR's required multiplier
+   runs $1.2\to1.45$ — which holds independently of the scanned range.*
+3. *The `KCONT` check: $\ell_1=228$ is an **envelope** rung, not aliasing (discrete = 1860-mode
+   continuum to four digits).*
+
+### ⛑ WHAT IS OPEN
+
+⛔ ***No mechanism has been found that brings CR's peak heights to the sky.*** *And the position agrees
+only under the IC we do not think is the principled one.* ***Both stay OPEN, in those words.***
+
+⌗ *The three-channel structure below is a real and useful **characterisation of the gap**, and reads
+correctly as that. It is not a closure and must not be absorbed into a register row as one.*
+
+---
+
+## ~~⛭⛭⛭ PO-13 — BANKED (r3525, cc54; 58's three corrections applied)~~ — **STRUCK, kept as record**
+
+**The framing, corrected — NOT "closed-with-a-residual."** Scoring CR against LambdaCDM's route reads as a shortfall,
+and that is not what the measurement says. What it says:
+
+> **CR's onset lies below every acoustic re-entry redshift, so no mode crosses while a plasma exists, so the comb is
+> UNDRIVEN. That single structural fact now carries THREE measured signatures — uniform spacing where the sky's is
+> shifted; an over-depressed even peak whose gap scales with baryon load; and a peak position that tracks R where the
+> driven arm's does not — each with a control that lands the sky on the same instrument.**
+
+A falsifiable prediction with three independent handles, not a discrepancy. The absence is DERIVED, the signatures are
+MEASURED, and the control validates the machinery on every one. Where it connects to standard physics is named
+precisely: radiation driving is what a cosmology needs *if its plasma epoch overlaps horizon crossing*, and CR's does
+not.
+
+### The three measured channels (each with a sky-landing control on the same instrument)
+
+**Channel 1 — SPACING (phase).** CR's source comb is undriven: extrema at the integers q_n = n (the NODRIVE guard), no
+driving phase shift, where the sky's comb is driving-shifted. Position, recorded honestly and never as one closed
+number: **l_1 = 220 or 228 by envelope choice (flat -> 220; damping/DIFFLEAF/DAMPX/seam -> 228); sky l_1 = 220.6;
+rung spacing ~8; KCONT-verified as NOT aliasing** (CR discrete 228 = CR continuum 1860-mode 228 to four digits, so the
+ladder's discreteness is not what sets it — the high-k envelope is).
+
+**Channel 2 — HEIGHT (even-peak offset).** A2 = even-peak depression below the odd (P1-P3) trend. Control reproduces
+the sky's alternation to 0.6% (A2 = 1.432 vs sky 1.423) on an observable it was never tuned against — the second
+independent validation of the two-arm instrument after position. CR over-depresses (A2 = 1.741): its even peak is
+~23% too low, because the driving GROUP-boost of peaks 2+ that offsets the baryon depression at peak 2 is exactly what
+CR lacks. **The RBFAC scan measures (b) missing-driving over (a) baryon-error:**
+
+| R | CR A2 | ctl A2 | GAP | CR l_1/l_A | ctl l_1/l_A |
+|---|---|---|---|---|---|
+| 0.50 | 1.205 | 1.137 | 0.069 | 0.729 | 0.741 |
+| 0.75 | 1.463 | 1.276 | 0.187 | 0.756 | 0.749 |
+| 1.00 | 1.741 | 1.432 | 0.308 | 0.756 | 0.730 |
+| 1.50 | 2.386 | 1.769 | 0.618 | 0.783 | 0.723 |
+| 2.00 | 3.075 | 2.160 | 0.915 | 0.836 | 0.719 |
+
+*Gate: control R=1 -> A2 = 1.4323 (= 1.432).* **Tightened gap statement (58's correction):** the gap does not vanish
+over the scanned 4x range and the fitted line's zero (R ~ 0.42, from GAP ~ 0.571R - 0.237) lies BELOW the scan floor
+— so "does not vanish over the scanned range" is the claim the data support, NOT "never vanishes." **The argument that
+kills (a) outright is functional-form, not range:** a baryon error is a FIXED multiplier, but the effective-R multiplier
+CR would need runs 1.2 -> 1.45 across the scan. That refutation stands on its own; the deficit is an ADDITIVE term
+absent at all R (the missing driving offset), R-proportional as a driving x baryon-loading product.
+
+**Channel 3 — POSITION TRACKING (promoted out of the footnote; 58's correction).** Control's peak position is R-STABLE
+(l_1/l_A 0.741 -> 0.719 across a 4x baryon change) while CR's CLIMBS with R (0.729 -> 0.836). This is the same absence
+a third time: a DRIVEN comb's peak is phase-set, so baryon loading barely moves it; an UNDRIVEN comb's peak is
+envelope-set, so it tracks R. It is the cleanest of the three in one respect — a purely DIFFERENTIAL prediction between
+the arms, needing no absolute calibration at all.
+
+### What is MEASURED vs INTERPRETED (kept apart)
+- **MEASURED:** the three signatures above; the control landing the sky on each (position 0.16% floor historically;
+  height alternation 0.6%; position-tracking a differential the control holds still on).
+- **INTERPRETED (natural, not proven):** that the R-proportionality of the height gap names the missing term
+  specifically as driving x baryon-loading. What is PROVEN is that it is an additive term absent at all baryon loads —
+  i.e. not a baryon error.
+
+### Ledger note
+PO-13's register row (P7 `sec:frontiers` \ref{frontier:scalar}, item 1 of three) is the framework node's to update —
+cc54 does not edit protected register rows or the grain/registry machinery. This block is the ready-to-absorb entry.
+⛔ **PO-13 IS NOT BANKED — unbanked r3526; the amplitude is OPEN and the position agrees only under
+the placeholder IC.** *`OWED` carries `597` plus PO-13's open amplitude channel.*
+
+---
+
+## ⛭⛭⛭ THE LAYER READING — r3527, from Daryl's pre-axioms draft (the reasoning that produced the LGF)
+
+⛔ ***The term-by-term clock split may be the wrong structure, and the framing was MINE.***
+
+**⌗ WHAT THE DRAFT COMMITS TO.** *Three layers, not two:* ***"the coexistence of noumenological,
+phenomenological, and local geometries."*** *With (ii) the cosmological solution **a vacuum solution**;
+(iii) real space at any instant ***diffeomorphic*** to slices of the cosmological geometry; (iv) local
+evolution by the ***full*** Einstein equations with nonzero stress-energy.*
+
+⇒ ***So there are not two dynamical systems keeping two clocks. There is one dynamical system — the
+local layer, where matter lives and the full EFE hold — and a MAP to a vacuum cosmological
+description. A diffeomorphism has a Jacobian, and that Jacobian is $\varphi=\mathrm d\eta_{\rm
+leaf}/\mathrm d\eta_{\rm stack}$. It is not a clock choice; it is the map.***
+
+⌗ *A term-by-term split writes **one equation with its terms living in two different spaces**. That is
+not a diffeomorphism. It would explain the exact pattern we could not close: **position landed**
+because a rescaled force gets the **timing** right; **amplitude never did** because amplitude is where
+an approximation to a map and the map itself differ; and **four mechanisms each moved it partway and
+none closed it**, which is the signature of a mis-structured map rather than a missing term.*
+***You cannot fix a wrong map by adding terms.***
+
+### ⛔ THE DOUBLE-COUNT, VISIBLE IN THE SOURCE
+
+| line | code | comment |
+|---|---|---|
+| 77 | `RAD_IN_RATE = False` | ***"radiation is content, not a source"*** |
+| 112 | `Hleaf = H0*sqrt(OM/a^3 + OL + OR/a^4)` | ***"radiation gravitates: L2"*** — *and the perturbations run on it by default* |
+
+⇒ ***Radiation is removed from the rate because it is content, and put back into the rate the
+perturbation sector uses.***
+
+**\u2318 THE DISTINCTION THAT RESOLVES IT.** *The draft's **threshold** result is that expansion is absolute
+**outside bound structures** and the transition is **sharp, not gradual** — "regions slightly below the
+critical density expand at the same Hubble flow as voids, with no gradual variation". **The plasma at
+$\delta\sim10^{-5}$ is not a bound structure.*** ⇒ *So the **expansion rate** it rides on is geometric
+and its own density does not set it; while the **local gravity of the perturbation** — $\Phi$, the
+driving, the growth of $\delta$ — is full-EFE. **Two different objects, and `Hleaf` conflates them by
+putting radiation into the RATE rather than into the local dynamics.***
+
+### ⌗ THE PREDICTION, WITH A NUMBER ALREADY WAITING
+
+*If the perturbations run on the **geometric** rate, that is `STACKPERT=1`, which gives
+$\ell_1/\ell_A=0.5703$. And:*
+$$0.5703\times\frac{r_{s,\rm stack}}{r_{s,\rm leaf}}=0.5703\times1.2857=0.7332\quad\text{vs sky }0.7312
+\quad(\mathbf{0.28\%}).$$
+⌗ *This was noticed at the very start of the thread, called a striking coincidence, and **dropped when
+the term-splitting story took over**. It now has a reason: **perturbations on the geometric rate, with
+the two-horizon ratio entering ONCE, at the map between layers** — where a diffeomorphism's Jacobian
+belongs.*
+
+**⛑ THE TEST — a DELETION, not an addition.** *Run `STACKPERT=1` on the current consistent instrument
+(with `HIER`), with the ratio applied at the **projection** rather than inside the equation. Report
+$\ell_1/\ell_A$, $P_1/P_2$, $P_1/P_3$, $P_1/P_4$ together.* ⇒ ***A structural fix that SIMPLIFIES the
+instrument and lands two observables at once would be a different kind of result from four knobs each
+moving things partway.***
+
+### ✔ THE LAYER READING TESTED — STACKPERT=1 + HIER + ratio-at-projection (r3528, cc54)
+**58's r3527 test, run as specified.** Perturbations on the geometric (stack) rate (`STACKPERT=1` = a
+DELETION of the Hleaf radiation double-count, LEAFPERT off, no SRCSTACK/DIFFLEAF/CRAMP), evolved
+hierarchy (`HIER=1`), and the two-horizon ratio r_stack/r_leaf = 135.46/105.36 = 1.2857 applied ONCE at
+the projection (content sound-horizon -> phenomenological ruler), not inside the equation. Map form taken
+from Daryl's draft (main_3.tex sec:cosmo_synth + empirical-tests): radiation is content -- it sets the
+sound horizon and photon-baryon dynamics (local, r_leaf) but NOT the global expansion rate (geometric,
+r_stack); "transformations between the noumenological expansion and the flat-LCDM phenomenological
+expansion necessitate adjustments to the sound horizon's mapping onto BAO scales."
+
+**GATE.** control STACKPERT=1 HIER = 0.7300 / 2.254 / 2.363 -- BYTE-IDENTICAL to control HIER. STACKPERT
+is a clean no-op on the control (Hleaf==Hstack, r_leaf==r_stack, map trivial -- as a layer diffeomorphism
+should be where the layers coincide). CR shifts are real physics.
+
+| CR STACKPERT=1 HIER | l_1 | l_1/l_A | P1/P2 | P1/P3 | P1/P4 |
+|---|---|---|---|---|---|
+| raw | 172 | 0.5703 | 0.889 | 0.693 | 1.210 |
+| **mapped (x1.2857)** | **221.1** | **0.7332** | 0.889 | 0.693 | 1.210 |
+| sky | 220.6 | 0.7312 | 2.217 | 2.277 | -- |
+
+**SPLIT VERDICT -- position lands, amplitude does NOT.**
+- ✔ **POSITION LANDS, and it is the cleanest position result of the arc.** Mapped l_1/l_A = 0.7332 vs
+  sky 0.7312 (**+0.28%**), from a DELETION (perturbations on the geometric rate) plus ONE projection map
+  (r_stack/r_leaf), with NO per-term freedom -- no SRCSTACK, no clock split inside the equation. The map
+  is the layer diffeomorphism's Jacobian applied once, exactly where the draft puts it.
+- ⛔ **AMPLITUDE DOES NOT LAND -- it INVERTS.** P1/P2 = 0.889 (-60%), P1/P3 = 0.693 (-70%): the first
+  peak is SUPPRESSED below peaks 2 and 3 (heights 0.178, 0.200, 0.257 rising to peak 3). This is worse
+  than, and opposite to, the leaf-rate runs (P1/P2 = 2.7-3.4, first peak too HIGH). **The sky's P1/P2 =
+  2.217 sits BETWEEN the two rates**: geometric undershoots (peak 1 too low), leaf overshoots (peak 1 too
+  high). Neither rate lands amplitude.
+- ⌗ **The mapped comb is UNIFORM** (spacings 298, 298, 360 vs sky's alternating 318, 272, 316) -- the
+  undriven signature again.
+
+**⌘ THE HONEST READING.** 58's structural prediction was "position and amplitude move together toward the
+sky." **Position moves to the sky; amplitude moves AWAY from it.** They do not move together. The layer
+reading is a genuine and elegant win on POSITION -- it derives the first-peak position from the layer
+diffeomorphism with no fitted term-split, the cleanest such result -- but it does NOT dissolve the
+amplitude problem. On the geometric rate (the layer-correct rate) the first peak loses its driving boost
+entirely (no radiation era -> no potential-decay driving -> peak 1 suppressed), so the amplitude carries
+the FULL undriven signature. The layer reading SHARPENS PO-13 rather than closing it: position derived
+cleanly, amplitude confirmed as the genuine open residual, and now bracketed (sky between geometric and
+leaf rates).
+
+**⚠ ONE OPEN DEGREE OF FREEDOM IN THE MAP'S FORM, flagged not assumed.** The map I applied is a uniform
+angular rescale (r_stack/r_leaf on the positions), which by construction cannot change height ratios -- so
+the amplitude reported IS the raw STACKPERT=1 HIER dynamics. A DIFFERENT reading of "the map at the
+projection" -- the sound-horizon (comb) mapping to r_leaf while the SILK DAMPING keeps its OWN content
+scale (the two are different content objects, need not map by the same factor) -- would move the higher
+peaks to higher k against a fixed damping envelope, damping them MORE, which would raise P1/P2 and P1/P3
+TOWARD the sky. Whether that is the correct map form is a physics question for the draft/58, not a knob to
+turn: it requires re-projecting with the comb and damping scales separated. **Flagged for 58 to settle
+from the draft; not run unprompted.** If the draft's map carries the sound horizon and the diffusion scale
+by the SAME factor, amplitude stays inverted and the residual is genuinely the missing driving; if by
+DIFFERENT factors, the amplitude test is not yet complete.
+
+### ⛭⛭ STRUCTURAL RESULT — the layer map fixes POSITION and cannot in principle touch AMPLITUDE (r3529)
+**58 concedes cc54's projection argument, and it CLOSES a branch rather than leaving one open.** Both the
+comb (in Y, oscillating in k_b, scale r_s) and the damping (D = exp(-k_b^2 kD2inv), scale k_D) live in the
+SAME source S(k_b), as functions of the same k_b. The only projection-side lever is the distance x0.
+Scaling x0 by f gives C_l(l) -> C_l(l/f): a UNIFORM stretch -- every peak moves by f, every height ratio
+preserved. For the damping to bite differently RELATIVE to the comb, the map would have to carry r_s and
+k_D by DIFFERENT factors -- which is the two-factor reading declined one step earlier on structural
+grounds (a diffeomorphism carries every content length by ONE Jacobian; two factors are not a map). **One
+factor cannot move heights; two factors are not a map.** So the layer map fixes position and CANNOT reach
+amplitude. The amplitude residual is not a projection question -- it is dynamics, and no reading of the map
+reaches it. **Branch closed.**
+
+**MEASUREMENT that settles the aliasing question (58's request before we stop).** PROJMAP implemented as a
+genuine re-projection (x0*PROJMAP inside the Bessel, both HIER and fluid paths), CR only (trivial on
+control):
+
+| CR STACKPERT=1 HIER | sampling | l_1/l_A | P1/P2 | P1/P3 | peaks |
+|---|---|---|---|---|---|
+| raw (no map, discrete ladder) | ok | 0.5703 | 0.889 | 0.693 | [172,404,636,916] |
+| PROJMAP=1.2857, discrete ladder | **2.3 pts/period -> ALIASED** | 0.7560 | 1.247 | 1.369 | [228,**316,348**,532] |
+| **PROJMAP=1.2857, KCONT (clean)** | **9.1 pts/period** | **0.7294** | **0.807** | **0.680** | [220,532,820,1180] |
+| sky | -- | 0.7312 | 2.217 | 2.277 | 220.6/538.1/809.8 |
+
+⇒ *The aliased height change (1.247) was an ARTIFACT (spurious 316/348 peaks from under-sampling the
+enlarged effective distance). Properly sampled (KCONT), the map moves POSITION to 0.7294 (**-0.25%** from
+sky) and leaves the heights INVERTED (0.807/0.680, ~unchanged from 0.889/0.693). Confirmed: the map lands
+position, not amplitude.*
+
+**⇒ WHAT STANDS — ~~the cleanest result of the arc~~ — STRUCK/CORRECTED r3532 (see the correction block
+at the end): this 0.7294 was computed on GSRC=0, the source that UNDER-counts radiation's gravity. On the
+CORRECT full-EFE source the driven position is 0.7825 (+7%). The "cleanest result of the arc" framing was
+mine and it is retracted; the position was clean but computed on the wrong source.** ~~The
+first-peak POSITION, from a DELETION (perturbations on the geometric rate, STACKPERT=1) plus ONE derived
+factor (r_stack/r_leaf at the projection), lands at 0.7294 vs sky 0.7312 (-0.25%), with NOTHING tuned
+and a control on which the map is PROVABLY trivial (r_leaf==r_stack there). Position is derived, not fitted.~~
+
+**⇒ WHAT IS OPEN — sharply, and it is a DYNAMICS question, not ours to search.** The amplitude BRACKETS
+the sky between the two rates:
+
+| | P1/P2 | P1/P3 |
+|---|---|---|
+| geometric rate (STACKPERT) | 0.807-0.889 | 0.680-0.693 |
+| **sky** | **2.217** | **2.277** |
+| leaf rate (LEAFPERT) | 2.7-3.4 | -- |
+
+*The two rates differ by EXACTLY the radiation term. The POSITION says the rate is geometric
+(unambiguous). The AMPLITUDE says neither "radiation out of the rate" nor "radiation in the rate"
+describes the perturbation DYNAMICS -- the sky sits between them.*
+
+**⚑ 58's OPEN QUESTION for Daryl (not a cc54 search).** The instrument has only two settings: radiation IN
+the rate (Hleaf) or OUT of the rate (Hphys/Hc). It has NO way to express the draft's THIRD thing:
+**geometric expansion rate AND radiation's LOCAL gravity (the full-EFE local layer where the plasma's own
+gravity acts).** The draft says these are different objects -- the expansion is geometric (radiation does
+not set it, threshold principle) while the perturbation's local dynamics obey the full EFE with radiation
+gravitating as content. If that composition is what CR actually asserts, then NEITHER bracket endpoint is
+CR, and the amplitude has never been computed for the framework as written. This is Daryl's to direct.
+
+### ✔ THE THIRD COMPOSITION — geometric rate + radiation FULL in Phi's source (STACKPERT=1 + GSRC=1, r3530)
+**58/Daryl's ship, and the composition needed NO new edit -- it was the never-run GSRC flag.** The
+instrument already separates the rate's Omega set from the source's: the density fractions (Og_of, On_of,
+Ob_of, Oc_of) are normalised to `_rt` (the FULL stack, radiation included) while CR's rate `Hphys` drops
+radiation (RAD_IN_RATE=False). The consequence, stated in the flag's own comment: the source is SHORT by
+rho_tot(full)/rho_tot(free), because Hc^2 carries rho_free but the Omega_i carry rho_tot. `GSRC=1`
+(`Gf_of=_rt/_free`) supplies exactly that factor -- restoring EVERY species' gravity (matter, baryon,
+radiation) to full strength while the rate stays geometric. So **STACKPERT=1 + GSRC=1 = "radiation out of
+the rate, into the source at full strength"**, the framework's own composition, nothing added, nothing free.
+
+**GATE.** control STACKPERT=1 GSRC=1 HIER KCONT = 0.7300 / 2.254 / 2.363 -- byte-identical to control HIER
+(GSRC auto-off where RAD_IN_RATE=True; STACKPERT no-op where Hleaf==Hstack). Clean. CR is real physics.
+
+| CR (geometric rate) | l_1/l_A | P1/P2 | P1/P3 | P1/P4 | peaks (heights) |
+|---|---|---|---|---|---|
+| GSRC=0 (source short) | 0.7294 | 0.807 | 0.680 | 1.21 | P1 SUPPRESSED below P2,P3 |
+| **GSRC=1 (source full)** | **0.7825** | **3.665** | **2.489** | 4.02 | [236,628,868,1220] = [.396,.108,.159,.098] |
+| sky | 0.7312 | 2.217 | 2.277 | -- | -- |
+
+**RESULT -- it OVERSHOOTS, both observables, and that is the honest verdict.** Restoring radiation's full
+gravity to the source FLIPS the first peak from suppressed (0.807, below P2/P3) to DOMINANT (3.665, far
+above) -- radiation's local gravity is unmistakably the right LEVER: it moves P1/P2 the right direction and
+THROUGH the sky. But at full strength it OVERSHOOTS: P1/P2 = 3.665 vs sky 2.217 (+65%), P1/P3 = 2.489 vs
+2.277 (+9%). And the POSITION moves with it, 0.7294 -> 0.7825 (+7%), because radiation's source gravity is
+DRIVING -- it boosts amplitude AND shifts the acoustic phase (the raw comb shifts 0.5703 -> 0.6086 before
+the map). So GSRC is not an amplitude-only knob; the full composition couples position and amplitude, and
+both overshoot. Per 58's own criterion, overshoot = the composition is off in the other direction -- but
+GSRC is NOT tunable (it is the determined _rt/_free), so this is a framework PREDICTION, not a mis-set knob.
+
+**⌘ THE SKY IS NOW BRACKETED ON AMPLITUDE, and by the SAME term.** GSRC=0 undershoots (P1/P2 = 0.807),
+GSRC=1 overshoots (3.665), sky between (2.217). The two differ by exactly how much of radiation's gravity
+sits in the source. So the mechanism is settled -- radiation's LOCAL gravity is what boosts the first peak
+-- and what is unresolved is the AMOUNT: the framework's full-strength value over-drives. ⚑ *And the
+odd-even signature persists inside the overshoot: P1/P3 (2.489) nearly lands the sky (2.277, +9%) while
+P1/P2 (3.665) badly overshoots -- the ODD peak (P3) is close, the EVEN peak (P2) is too low (heights P2=.108
+< P3=.159). The alternation is still there even with the first peak over-boosted.*
+
+**⇒ FIRST AMPLITUDE COMPUTED FOR CR AS WRITTEN.** Every prior number was from a composition CR does not
+assert (radiation in the rate = leaf, or radiation in neither = bare stack). This is the first run of the
+framework's OWN composition -- geometric rate, radiation gravitating locally at full strength -- and it
+OVERSHOOTS the sky on both observables. That is a real result, honestly open: not "we ran out of ideas,"
+but "the framework's own composition was computed and it over-drives." What is open, now sharply: WHY the
+full local gravity over-drives -- whether CR's radiation gravitates at less than full stress-energy in the
+local layer, or whether the position coupling means the driving phase and the amplitude cannot both be read
+off this composition. Daryl's to interpret; not a cc54 search.
+
+### ⛭ GSRC OVERSHOOT — the algebra settled, and a decomposition that revises the position claim (r3531)
+**58 accepts cc54's algebra: GSRC=1 uniform is the CORRECT full-EFE source, so the overshoot is PHYSICS,
+not artifact.** Every Omega is normalised by `_rt` (full stack) while `Hc^2` goes as rho_free, so matter's
+source term is `4 pi G rho_m (rho_free/rho_tot)` -- short by the SAME factor as radiation. The shortfall is
+the Hc^2-vs-Omega mismatch, not species-specific; the constraint `k^2 Phi = -4 pi G a^2 sum(rho_i d_i)`
+refers to ACTUAL perturbed densities, so every species belongs at rho_i/rho_free, which is what the uniform
+factor delivers. So the framework's OWN composition, computed on a determined quantity (GSRC = rho_tot/rho_free,
+nothing tunable), over-drives the sky. That is a stronger, cleaner position than a normalisation artifact.
+
+**The radiation-only run (GSRCRAD=1) is now a DIAGNOSTIC, not a candidate** -- it under-counts matter by
+standard EFE and is NOT a correct composition; it measures WHERE the over-drive lives. Gate clean
+(control 0.7300/2.254, GSRC auto-off there so GSRCRAD is a no-op).
+
+| composition | l_1/l_A | P1/P2 | P1/P3 | what gravitates in the source |
+|---|---|---|---|---|
+| GSRC=0 | 0.7294 | 0.807 | 0.680 | matter+radiation BOTH short (rho_free/rho_tot) |
+| GSRCRAD=1 | **0.7825** | 1.873 | 1.667 | radiation FULL, matter short |
+| GSRC=1 | **0.7825** | 3.665 | 2.489 | both FULL (the correct EFE source) |
+| sky | 0.7312 | 2.217 | 2.277 | -- |
+
+**⌘ THE DECOMPOSITION -- radiation DRIVES (phase+amplitude), matter is PURE AMPLITUDE.**
+- *Amplitude P1/P2:* 0.807 (both short) -> 1.873 (radiation boost) -> 3.665 (matter boost on top). The
+  radiation boost supplies 0.807->1.873; the matter boost supplies 1.873->3.665. Sky (2.217) sits BETWEEN
+  radiation-full and both-full, so the excess over-drive is substantially MATTER'S share of the source --
+  but matter's boost is REQUIRED by full EFE, so this is a handle on where the excess lives, NOT a fix.
+- *Position:* 0.7294 (radiation short) -> **0.7825 (radiation full)**, and matter's boost does NOT move it
+  (GSRCRAD and GSRC=1 both 0.7825). So restoring radiation's source gravity SHIFTS THE POSITION while
+  matter's gravity is pure amplitude. Radiation drives (resonant, phase-shifting); matter is a slow
+  potential well (amplitude, no oscillation phase).
+
+**⛔ THE REVISION cc54 OWES -- the position "landing at 0.7294" was on the SHORT source.** The clean
+position result (0.7294, -0.25%) was computed under GSRC=0, i.e. with radiation's source gravity
+UNDER-counted. Restore it to full strength (the correct EFE), and the position moves to 0.7825 (+7% over
+sky) -- because radiation's restored gravity is DRIVING, and driving shifts the acoustic phase. So under
+CR's CORRECT composition (GSRC=1), BOTH observables over-shoot: position 0.7825 (+7%), P1/P2 3.665 (+65%).
+Position is NOT independent of the source, and the earlier "position derived, lands, nothing tuned" holds
+only for the radiation-under-counted source. **This connects straight to PO-13's day-one claim** -- "the
+driving phase shift LCDM manufactures from radiation driving is, in CR, the two-horizon ratio." The layer
+MAP already supplies that phase shift geometrically; restoring radiation's full source gravity supplies it
+AGAIN, dynamically, as driving -- so the position over-shoots because the geometric map and the radiation
+driving BOTH contribute the phase shift. That looks like a DOUBLE-COUNT of the phase: the map replaces
+driving in the position story, but the full source re-adds the driving. **Crux for 58/Daryl.**
+
+**⚑ THE ODD-EVEN SIGNATURE SURVIVES, independent of all of this.** In every run the even peak sits below
+the odd (GSRCRAD heights P2=0.185 < P3=0.208; GSRC=1 P2=0.108 < P3=0.159). Getting the source amplitude
+right does not touch it -- it is a separate signature, the alternation, and it stays open on its own.
+
+**⇒ PO-13, honestly, now TWO measured open items (not one), plus a crux:** (1) the framework's correct
+full-EFE source over-drives the AMPLITUDE by +65% on P1/P2 (with the excess located substantially in
+matter's share, though matter's boost is EFE-required); (2) the same restored source over-drives the
+POSITION to 0.7825 via radiation's driving, which appears to double-count the phase shift the geometric map
+already supplies -- so the clean 0.7294 position holds only on the under-counted source; (3) beneath both,
+the odd-even alternation survives independent of normalisation. All measured on determined quantities, none
+tuned. The crux for 58/Daryl: whether CR's radiation should DRIVE at all (double-count with the map) or
+whether the geometric map should REPLACE the driving phase in the source too.
+
+### ⛭⛭ THE MAP IS OWED, NOT A DOUBLE-COUNT — decisive test + record correction (r3532)
+**58's reframing, and it is right: "should radiation drive?" is the wrong question.** Driving is not
+optional -- a perturbed radiation density gravitates, Phi responds, the oscillator feels it; that is the
+full EFE on the local layer and CR asserts it (draft commitment iv). And the two-horizon ratio was never a
+phase shift: it is the MAP between the content sound horizon and the phenomenological ruler -- a units
+conversion between layers, owed regardless of the source. It only LOOKED like a driving phase shift because
+we applied it to a source with radiation's gravity under-counted (GSRC=0): the undriven comb at 0.5703
+times 1.286 landed near the sky, so the conversion appeared to supply the driving. It didn't; the driving
+was simply absent and the two numbers happened to be close.
+
+**THE DECISIVE TEST -- GSRC=1 HIER KCONT, NO projection map (the raw driven position).** Gate: control
+unchanged (GSRC auto-off there). 58's discriminant: if the map is a genuine layer conversion it is owed
+regardless of the source, so removing it should make the position WORSE (raw driven comb below sky, map
+carries it up); if instead the raw driven position lands NEAR the sky on its own, map and driving supply
+the same thing and one is spurious.
+
+| CR STACKPERT=1 GSRC=1 | l_1/l_A | P1/P2 | P1/P3 |
+|---|---|---|---|
+| raw, NO map | **0.6499** | 4.094 | 2.551 |
+| WITH map (x1.286) | 0.7825 | 3.665 | 2.489 |
+| sky | 0.7312 | 2.217 | 2.277 |
+| *(for contrast: GSRC=0 raw 0.5703 -> mapped 0.7294)* | | | |
+
+⇒ ***The raw driven position is 0.6499 -- BELOW the sky by -11%, NOT near it.*** So the map is **OWED**:
+the driven comb sits below the sky and the ruler conversion carries it up past. **It is NOT a double-count.**
+The framework's actual prediction is driven dynamics (raw 0.6499) converted to the observer's ruler
+(x1.286) = 0.7825, and that is **+7% high**. Radiation's driving alone moves the raw comb 0.5703 -> 0.6499
+(partway to the sky, a real phase shift); the map carries the rest and overshoots. Both are owed, neither
+is spurious, and the framework's composition lands 7% high on position -- a far cleaner statement than
+"one effect applied twice."
+
+**⛔ RECORD CORRECTION (cc54, propagated).** Three earlier "cleanest result of the arc / cleanest position
+result" framings (this file, the layer-reading and structural-result blocks) are RETRACTED. That framing
+was mine. The 0.7294 position was clean but computed on **GSRC=0 -- the source we now agree under-counts
+radiation's gravity**. On the correct full-EFE source the position is **0.7825, +7%**. The position result
+must be read as GSRC=0-dependent everywhere it appears above; the struck marker at "WHAT STANDS" points
+here.
+
+**⇒ PO-13, corrected and honest, on the framework's OWN composition (geometric rate + full-EFE local
+source, GSRC=1, all determined):**
+1. **Position: 0.7825, +7% high** -- driven dynamics + owed ruler conversion, nothing tuned. (The earlier
+   -0.25% was on the under-counted source.)
+2. **Amplitude: over-driven, P1/P2 ~3.7-4.1 (+65-85%)** -- the correct full source over-boosts the first
+   peak; the excess sits substantially in matter's EFE-required share.
+3. **Odd-even alternation: surviving underneath, untouched by any normalisation** -- P2 < P3 in every run;
+   the one signature independent of the source question, and the last thing standing when it is settled.
+
+All three measured on determined quantities, none tuned. The framework as written reproduces the sky's
+STRUCTURE (peaks in the right places to ~7%, first peak dominant) but OVER-DRIVES both position and
+amplitude, with a residual odd-even alternation beneath. That is the honest state: not closed, not a
+fitting failure -- the framework's own composition computed and found 7-65% high, carried open on its merits.
+
+### ⛭⛭ THE OVER-DRIVE MECHANISM, MEASURED — CR's Φ decays SLOWER, mode by mode (r3533)
+**Daryl's push against "carry it open": the residual has a SHAPE and it was glossed.** +7% on position,
++65% on amplitude -- an order of magnitude apart. A uniformly-too-strong source scales both together; this
+over-supplies AMPLITUDE while barely touching PHASE, which is the signature of a potential that decays too
+SLOWLY (keeps driving through the oscillation, pumping amplitude, while the phase shift saturates early).
+Structural expectation: CR's radiation gravitates locally but does NOT set the expansion (threshold), so
+the well is as deep as LCDM's while the background is not diluted at the radiation-era rate -> Phi persists
+longer relative to the oscillation.
+
+**MEASURED (PHISAVE, matched acoustic phase PHIQ=1,2,3 -- same # half-periods by recomb on both arms;
+STACKPERT=1 GSRC=1; gate: no-op on control).** Phi normalised to its super-horizon value; decay per
+half-period below:
+
+| q (peak) | CR retains Phi_rec/Phi_0 | CR /half | control retains | control /half | **CR/control** |
+|---|---|---|---|---|---|
+| 1 | 0.616 | 0.616 | 0.487 | 0.487 | **1.264** |
+| 2 | 0.259 | 0.509 | 0.219 | 0.468 | **1.182** |
+| 3 | 0.124 | 0.499 | 0.156 | 0.539 | 0.796 |
+
+*(r3431 baseline, on the LEAF composition: ~0.6 per half-period, BOTH arms. This is the FIRST measurement
+on the geometric-rate + full-source composition.)*
+
+**⌘ THE MECHANISM IS CONFIRMED, and it maps onto the over-drive mode by mode.** For the modes that set the
+amplitude over-drive, CR's Phi decays SLOWER than the control's: q=1 retains +26% more per half-period,
+q=2 +18%. And the ENHANCEMENT is largest at q=1 (1.264) and falls with q (1.182, then 0.796 at q=3) -- so
+the FIRST peak's driving is sustained most, which is exactly why P1 is over-boosted most and P1/P2
+over-drives (+65%), while P1/P3 is only mildly over (+9%) and q=3's Phi actually decays FASTER in CR. The
+over-drive is NOT uniform; it tracks the Phi-decay rate mode by mode -- the slower-decaying potential Daryl
+predicted, resolving the +7%/+65% asymmetry: sustained driving pumps amplitude (first peak most) while the
+phase shift saturates.
+
+**⇒ THIS CHANGES WHAT PO-13 IS.** The over-drive is not a defect in the source and not a fitting failure --
+it is a CONSEQUENCE of the rate/source split the framework asserts: radiation gravitates locally (deep
+well) but does not set the expansion (no radiation-era dilution), so the well persists and over-drives. And
+that is a SEPARATELY OBSERVABLE prediction: Phi's decay history is exactly what the **ISW effect** and
+**gravitational lensing** measure. So PO-13's amplitude residual converts from "the model is 65% high" into
+"CR predicts a specific potential-decay history -- measurably slower than LCDM for the low modes -- and that
+history is independently testable against ISW and lensing." That is a different and better problem than a
+fitting miss. **The honest open item is now: what does CR predict for Phi(eta)/Phi(a) across scales, and
+does the ISW/lensing data bear out the slower low-mode decay this composition shows?**
+
+**⚑ The odd-even alternation still sits underneath, untouched by any of this** -- P2 < P3 at every
+normalisation; the one signature independent of the source and the decay question both.
+
+**⌗ PROCESS NOTE (for the next node, at 58's request).** On this branch 58 reasoned from the code as read
+and cc54 ran it; where they disagreed, the RUN won every time -- the map could not move heights (cc54,
+measured), the matter double-count was not the diagnosis (cc54, algebra), and the "cleanest position result"
+rested on the source we agreed was wrong (cc54, measured). Three corrections in one thread, all by running.
+The standing lesson: when a read of the code and a run disagree, run it; the temptation to reason from the
+source will recur.
+
+### ⛔ CORRECTION to r3533 — the mode-by-mode mapping was an OVER-CLAIM; the histories-differ pivot stands (r3534)
+**Node 59 caught three things on the Phi-decay work (3b56b5ea), and the numbers confirm all three. cc54
+owns the over-claim.**
+
+**59.1 -- reporting bug (fixed).** The "CR/control" column reported 1.264, 1.182, 0.796 but mixed the
+PER-HALF ratio (q=1) with the CUMULATIVE ratio (q=2,3). The underlying dump is fine (0.259=0.509^2,
+0.124=0.499^3). Corrected **per-half** ratios:
+
+| q | CR per-half | CTL per-half | **per-half CR/CTL** |
+|---|---|---|---|
+| 1 | 0.616 | 0.487 | **1.264** |
+| 2 | 0.509 | 0.468 | **1.087** |
+| 3 | 0.499 | 0.539 | **0.927** |
+
+These fall MONOTONICALLY and cross 1 between q=2 and q=3. The earlier "not a clean monotonic" caveat was
+an artefact of the mixing; the corrected column is cleaner than the reported one.
+
+**59.3 -- referencing (fixed).** The reported over-drive +65%/+9% was against the SKY. The Phi dumps are a
+CR-vs-CONTROL measurement, so the residual they could explain is CR-vs-control: **P1/P2 +63%, P1/P3 +5%**
+(CR 3.665/2.489 vs control 2.254/2.363). Close to the vs-sky numbers only because control ~ sky here.
+
+**59.2 -- the mode-by-mode mapping RUNS BACKWARDS (the important one). RETRACTED.** If per-half retention
+is read as sustained driving, the ratios (1.264, 1.087, 0.927) predict the driving enhancement ORDERED
+P1/P3 (1.36) > P1/P2 (1.16) -- the third mode enhanced MOST. The MEASURED residual is the reverse: P1/P2
+enhanced 1.63, P1/P3 enhanced 1.05. **The residual does NOT track the Phi-decay ratio mode by mode**, and
+cc54's sentence "q=3's Phi decays faster so P1/P3 only +9%" had the sign inverted (faster decay of P3 would
+make P1/P3 LARGER, not smaller). I checked the OPPOSITE sign (decay=driving) too -- it predicts both ratios
+< 1, also wrong. So no simple reading of retention-as-driving reproduces the peak-height residual. **The
+"over-drive tracks the decay rate mode by mode" claim is withdrawn -- mine, and 58 asserted it too; the data
+refutes it in either direction.**
+
+⌗ *And a composition caveat cc54 should have flagged: the Phi dump runs on the FLUID path (LOS=0), while
+the amplitude residual is from the HIER path -- so even a correct mapping would be comparing two different
+transfers. A clean mode-by-mode test would need Phi measured on the HIER composition. (Note re 59.3's gate
+point: STACKPERT=1 is NOT SRCSTACK=vel -- the r3512 composition defect was SRCSTACK+HIER, and STACKPERT=1
+composes cleanly in evolve_hier via Hc_of; the control gate on STACKPERT=1 GSRC=1 DID pass byte-identical,
+so the machinery is validated -- but the fluid-vs-HIER path split for Phi is a real inconsistency.)*
+
+**⇒ WHAT STANDS, narrower and correct.** CR's potential decay HISTORY differs from the control's -- measured,
+matched-phase, real (per-half retention 1.264/1.087/0.927, a genuine crossover). That is ALL the ISW/lensing
+pivot needs, and 58 said so explicitly: "it only needs the histories to differ, which they do." What does
+NOT stand is any claim that this decay history explains the CMB peak-height residual mode by mode -- it does
+not, in either direction, and that connection is withdrawn. The over-drive of the CMB amplitude and the
+Phi-decay history are BOTH real and BOTH open, but they are not the tidy single mechanism r3533 claimed.
+
+**⇒ THE ONE DISTINCTIVE FEATURE that survives and is worth taking to data (58's point, and it does NOT rest
+on the peak mapping):** the per-half retention ratio CROSSES 1 between q=2 and q=3. A generic "CR's wells
+persist" pushes every mode one way; this crosses over, so a second effect dominates at high q and the
+crossing LOCATES a scale. A crossing scale in Phi's decay history is a far more distinctive, normalisation-
+robust prediction than an overall offset -- and Phi's decay is exactly what ISW and lensing measure. **Next:
+map the crossover (matched-phase PHIQ q=1..6, both arms, same composition) and locate the crossing k, before
+any ISW/lensing comparison -- you want to know the predicted feature before going to the data.**
+
+### ⛭⛭ THE CROSSOVER, LOCATED — a crossing SCALE in CR's potential-decay history (r3535, 58's ship)
+**58's point that the q=3 reversal is the FINDING, not a caveat -- confirmed and located.** A generic "CR's
+wells persist because radiation does not dilute the background" pushes every mode one way; this CROSSES, so
+a second effect dominates at high q and the crossing locates a scale. Matched-phase PHIQ scan, q=1..6, both
+arms, STACKPERT=1 GSRC=1 (fluid path, LOS=0), per-half Phi retention:
+
+| q | CR /half | CTL /half | CR/CTL |
+|---|---|---|---|
+| 1.0 | 0.617 | 0.488 | 1.263 |
+| 1.5 | 0.519 | 0.451 | 1.152 |
+| 2.0 | 0.509 | 0.468 | 1.087 |
+| **2.5** | 0.509 | 0.511 | **0.996** |
+| 3.0 | 0.499 | 0.539 | 0.927 |
+| 3.5 | 0.506 | 0.549 | 0.921 |
+| 4.0 | 0.526 | 0.565 | 0.930 |
+| 5.0 | 0.536 | 0.607 | 0.883 |
+| 6.0 | 0.568 | 0.627 | 0.907 |
+
+⇒ ***A SINGLE, CLEAN, MONOTONIC crossing at q ~ 2.48*** (k = q pi/r_s = 2.48 pi/135.46 ~ **0.058/Mpc**,
+angular scale l ~ k D_M ~ **750**, between the 2nd and 3rd acoustic scales). Below the crossing (large
+scales) CR's potential decays SLOWER than LCDM's (retains up to +26% per half-period); above it (small
+scales) FASTER (down to -12%), staying below 1 out to q=6. The shape is set by the two arms' rates: CR's
+per-half retention is ~flat at 0.5 across q, while LCDM's RISES with q (0.49 -> 0.63) -- LCDM's small-scale
+potentials decay less per half-period, CR's do not, and the two cross at q ~ 2.48.
+
+**⌘ WHY THIS IS THE VERSION WORTH TAKING TO DATA (58's argument, and it survives the withdrawn peak
+mapping).** A crossing SCALE is far more distinctive than an overall offset: an offset can be mimicked by a
+normalisation, a sign change in the ratio cannot. And Phi's decay history is exactly what the **ISW effect**
+and **gravitational lensing** measure. So CR makes a specific, falsifiable prediction -- *its potential
+decay crosses LCDM's at k ~ 0.058/Mpc (l ~ 750)* -- that nothing else produces and that has its own data,
+independent of the CMB acoustic peaks (whose mode-by-mode connection was withdrawn in r3534).
+
+**⚠ CAVEATS kept on the record (honest, per node 59's process point):** (1) this is the FLUID path (LOS=0),
+where PHISAVE lives; the amplitude over-drive is HIER -- a HIER-path Phi measurement is owed before the
+crossing scale is quoted as final. (2) The crossing is a RATIO, so robust to the Phi_0 normalisation, and
+it is clean and monotonic -- but the exact location (q~2.48) will shift somewhat on the HIER path and with
+the baryon/recombination details. (3) The number to take forward is the EXISTENCE and rough LOCATION of a
+single crossing near the 2nd-3rd acoustic scale, not q=2.48 to three figures.
+
+**⇒ PO-13 STATE, corrected and current:** the framework's own composition over-drives the sky (position +7%,
+amplitude +65% vs sky / +63% vs control), and the over-drive is a consequence of the rate/source split, not
+a fit failure. The CMB peak-height residual and the Phi-decay history are BOTH real and open, and are NOT a
+single mode-by-mode mechanism (r3534). What CR predicts distinctively is a CROSSING SCALE in the
+potential-decay history at k ~ 0.058/Mpc -- normalisation-robust, ISW/lensing-observable, and the next thing
+to (a) confirm on the HIER path and (b) take to ISW/lensing data. The odd-even alternation still survives
+underneath, independent of all of this.
+
+### ⛭⛭ HIER-path confirmation + the SHAPE is the finding, not the crossing (r3536; 58's reframing, 59's path catch)
+**59's fluid-vs-HIER path caveat is CLOSED.** Added `PHIHIER=1`: the full-range potential Phi(eta) on the
+HIER composition (fluid ETA_S->switch, then the hierarchy switch->recomb), selected q-modes. HIER vs fluid
+per-half retention ratio, matched phase:
+
+| q | CR/CTL (fluid) | CR/CTL (HIER) |
+|---|---|---|
+| 1.0 | 1.263 | 1.263 |
+| 2.0 | 1.087 | 1.085 |
+| 2.5 | 0.996 | 0.996 |
+| 3.0 | 0.927 | 0.929 |
+| 4.0 | 0.930 | 0.926 |
+| 6.0 | 0.907 | 0.901 |
+
+⇒ ***NEARLY IDENTICAL (< 1% everywhere), crossing at the same q ~ 2.48.*** Phi's decay is fluid-dominated;
+the hierarchy's photon-quadrupole refinement does not change the potential's gross decay. The Phi-decay
+measurement does not depend on the fluid/HIER path split -- 59's caveat discharged.
+
+**58's REFRAMING accepted: the finding is the SHAPE, not the crossing.** The crossing at q~2.48 is where a
+flatter curve meets a steeper one -- a consequence, not the phenomenon. The two per-half retention curves
+(HIER path):
+
+| q | 1.0 | 1.5 | 2.0 | 2.5 | 3.0 | 3.5 | 4.0 | 5.0 | 6.0 |
+|---|---|---|---|---|---|---|---|---|---|
+| **CR** | 0.617 | 0.520 | 0.509 | 0.508 | 0.500 | 0.506 | 0.524 | 0.538 | 0.566 |
+| **CTL** | 0.488 | 0.451 | 0.469 | 0.510 | 0.538 | 0.550 | 0.566 | 0.606 | 0.628 |
+
+⇒ ***CR's potential decay is MUCH LESS SCALE-DEPENDENT than LCDM's.*** LCDM's per-half retention RISES
+steadily with q (0.45 -> 0.63) -- its small-scale wells decay less per half-period. CR's is FLAT-ish
+(mostly ~0.50). **The physical reason (58's, and it is clean):** the geometric rate has no radiation era,
+so no epoch-dependent structure for modes to sample differently -- every mode sees the same background
+history, so every well decays at nearly the same rate. LCDM's scale-dependence comes FROM the radiation
+era (modes cross the horizon at different times during radiation domination and sample different dilution);
+CR has no radiation in the rate, so it has no such scale-dependence.
+
+⌗ **HONEST NUANCE, kept on the record:** CR is FLATTER, not perfectly flat -- q=1 sits high (0.617) and
+there is a slight rise at q>=5 (0.54-0.57), so CR's range is 0.50-0.62 against LCDM's 0.45-0.63. The robust
+statement is the CONTRAST in scale-dependence: LCDM's decay rate rises monotonically with q from q~1.5;
+CR's is nearly flat across the same range. That contrast is the qualitative signature.
+
+**⇒ THE PREDICTION TO TAKE TO DATA, stated as the shape (58's point -- a shape survives calibration; a
+crossing point is one number that moves if either curve shifts):** ***CR's potential-decay rate is
+(nearly) scale-INDEPENDENT, where LCDM's rises with wavenumber.*** ISW and lensing measure Phi's decay
+across scales, so a scale-independent decay rate is a qualitative feature that NOTHING with a radiation era
+in its expansion rate produces. The crossing near the 2nd-3rd acoustic scale (q~2.48, k~0.058/Mpc) is where
+CR's flat curve meets LCDM's rising one -- report it as the location of the meeting, not as the prediction.
+
+**⇒ PO-13, current and honest.** The framework's own composition over-drives the sky (position +7%,
+amplitude +65% vs sky), a consequence of the rate/source split, not a fit failure -- CMB residual open. The
+distinctive, calibration-robust, ISW/lensing-observable prediction is the SHAPE of the potential-decay
+history: CR's decay rate is nearly scale-independent where LCDM's rises with k, crossing near the 2nd-3rd
+acoustic scale. Confirmed on both fluid and HIER paths. The odd-even alternation survives underneath,
+independent of all of it. Next, if wanted: take the scale-independence signature to ISW/lensing data.
+
+### ⛭⛭⛭ THE TURNING POINT SURVIVES — CR's potential decay has an interior MINIMUM; LCDM has none (r3537)
+**58's sharpening: the robust claim is MONOTONICITY, not flatness -- a turning point cannot be produced by
+rescaling a monotonic curve, so it survives calibration where a shallow slope does not. And 58's demand,
+correct after two retractions this thread: measure the NOISE FLOOR before quoting a turning point.**
+
+**NOISE FLOOR (control before the claim).** CR HIER-path per-half retention, re-run at RTOL 1e-9 (vs 1e-7)
+and ETAEND=6000, and resolved with intermediate q (2.25, 2.75, 3.25):
+
+| q | 1.0 | 1.5 | 2.0 | 2.25 | 2.5 | 2.75 | **3.0** | 3.25 | 3.5 | 4.0 | 5.0 | 6.0 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **CR** | 0.617 | 0.520 | 0.509 | 0.510 | 0.508 | 0.504 | **0.500** | 0.501 | 0.506 | 0.524 | 0.538 | 0.566 |
+| **CTL** | 0.487 | 0.450 | 0.469 | 0.490 | 0.511 | 0.527 | 0.538 | 0.545 | 0.550 | 0.566 | 0.606 | 0.628 |
+
+***Max drift across RTOL 1e-7 / RTOL 1e-9 / ETAEND=6000 = 0.0000 (4 d.p.).*** The solver noise floor is
+**below 1e-4**; the dip (q=1.5 -> q=3, 0.520 -> 0.500, ~4%) is **~40x the noise floor**. The turning point
+is REAL, not solver noise. It is not a third retraction.
+
+**⇒ THE RESULT.** From q=1.5 onward, **LCDM's per-half retention rises MONOTONICALLY** (0.450 -> 0.628,
+eleven points, no interior extremum). **CR's has an interior MINIMUM at q ~ 3.0** (a broad basin ~0.500-0.508
+over q~2.5-3.25), descending from q=1.5 and turning back up by q=4. A turning point that LCDM lacks in this
+range. Because a monotonic curve cannot be rescaled into a curve with an interior extremum, this survives
+calibration, normalisation and overall-amplitude shifts in a way "CR is flatter" does not.
+
+**Physical reading (58's, sharpened):** LCDM's retention rises with q because small-scale modes cross the
+horizon deep in radiation domination and sample more of the radiation-era dilution -- a monotone
+scale-dependence inherited FROM the radiation era. CR's rate has no radiation era to inherit that from, so
+instead of a monotone rise it shows an interior minimum near q~3 set by its own (matter+Lambda) horizon-
+crossing structure. The minimum's LOCATION is a scale CR predicts and LCDM cannot reproduce.
+
+⌗ **HONEST notes kept on the record:** (1) both arms turn UP at q=1 vs q=1.5 (the super-horizon large-scale
+regime), so the clean distinction is the INTERIOR extremum for q>=1.5: LCDM monotone-increasing there, CR
+with a minimum at q~3. (2) The CR basin is broad and shallow (0.500-0.510 over q~2-3.25); the located
+feature is "an interior minimum near q~3", not q=3.00 to three figures. (3) Confirmed on the HIER path,
+converged in RTOL and ETAEND, resolved by intermediate q -- 58's two checks both passed.
+
+**⇒ PO-13, current and sharpest.** The framework's own composition over-drives the sky (position +7%,
+amplitude +65% -- open, a consequence of the rate/source split). Its distinctive, calibration-robust,
+ISW/lensing-observable prediction is now stated at its strongest: **CR's potential-decay rate has an
+interior MINIMUM near q~3 (k~0.07/Mpc, the 3rd-acoustic scale) where LCDM's is monotonically increasing** --
+a turning point no radiation-era cosmology produces, converged above the noise floor. The odd-even
+alternation survives underneath, independent of all of it. This is the version to take to ISW and lensing.
+
+### ⛭⛭⛭ THE DRIVING-WORK INTEGRAL — the over-drive is NOT the driving; it IS the alternation (r3538)
+**Daryl's ship: compute the work the potential does on the oscillator, int(Phi' * theta) d.eta, both arms,
+matched modes q=1,2,3, this composition (STACKPERT=1 GSRC=1 HIER) -- the number that connects Phi's decay
+to the peak heights. Does the +65% amplitude excess show up as excess driving work?** Added dg (photon
+density, idx2) and tg (velocity, idx3) to the HIER-composition dump.
+
+| peak/mode | int Phi'*tg (velocity) CR/CTL | int Phi'*Theta0 (density) CR/CTL | **HEIGHT CR/CTL** |
+|---|---|---|---|
+| 1 | 0.88 | 0.69 | 0.78 |
+| 2 | 1.02 | 0.75 | **0.43** |
+| 3 | 1.08 | 0.87 | 0.73 |
+
+**ANSWER: NO -- the over-drive is not the driving work, and the diagnostic says so cleanly.** (1) Neither
+work integral is 65% in excess anywhere -- CR's driving work is within ~10-30% of control's, not 1.65x. (2)
+Decisively, **neither work integral has the DIP at peak 2 that the heights have** -- both are smooth across
+the three peaks (velocity ~1 flat; density monotone 0.69->0.87), while the heights are 0.78, **0.43**, 0.73.
+The over-drive lives entirely in peak 2, and the driving work has no peak-2 feature.
+
+**⇒ WHAT THE OVER-DRIVE ACTUALLY IS -- and it collapses two open items into one.** The peak heights are a
+BROADBAND suppression (CR ~0.75x control on P1,P3) PLUS an EXTRA suppression of the even peak (P2 at 0.43x).
+Measured directly: CR's even peak sits at **0.35** of its odd neighbours' mean, against control's **0.62**.
+That extra even-peak suppression IS the odd-even ALTERNATION -- the P1/P2 "+65% over-drive" and the
+"surviving odd-even alternation" are the SAME residual, not two. And the driving work does not produce it.
+
+⌗ *The broadband part (~0.75) roughly tracks one work variant (int Phi'*Theta0 ~0.69-0.87), so the overall
+CR suppression is plausibly driving-related; but the FEATURE that makes P1/P2 anomalous -- the even-peak
+dip -- is not in the driving work at all.*
+
+**⇒ WE WERE CHASING THE WRONG TERM, and now the target is exact.** The thing to explain is not the driving
+and not a broadband amplitude -- it is the EVEN-PEAK SUPPRESSION: why CR's rarefaction (even) peaks sit at
+0.35 of their compression (odd) neighbours where control's sit at 0.62. That is a compression/rarefaction
+(baryon-loading) asymmetry question, not a driving question -- and it is the alternation that has survived
+every rate, source and normalisation in this arc. PO-13's open amplitude residual is now ONE thing, named
+and located: the odd-even alternation, ~0.35 vs 0.62 even/odd, not the driving.
+
+**⇒ PO-13 open items, corrected count: the amplitude over-drive and the odd-even alternation are ONE
+(even-peak suppression, measured 0.35 vs 0.62, NOT driving work). Plus the position +7% (owed layer
+conversion + driving, a rate/source consequence). Plus the distinctive prediction (potential-decay turning
+point at q~3). The next term to chase is the even/odd compression-rarefaction asymmetry, directly.**
+
+### ⛭⛭ THE EVEN-PEAK SUPPRESSION IS A ~2x EFFECTIVE BARYON LOAD (r3539, Daryl's ship)
+**Daryl's sharpening: baryon loading is the KNOWN cause of even-peak suppression and both arms carry the
+same R, so the question is not "does it track R" but WHY CR sits at 0.35 where control sits at 0.62 AT THE
+SAME R. The decisive quantity is the effective-R MULTIPLIER (the R' at which control matches CR's value):
+constant => CR = a higher effective baryon load; varying => not a baryon effect.**
+
+Even/odd height ratio 2*P2/(P1+P3), STACKPERT=1 GSRC=1 HIER KCONT, clean regime R<=1 (P2 a real local max;
+R>=1.5 CR's even peak ceases to be a distinct peak -- itself a sign of very strong suppression -- and is not
+quoted). Gate: control R=1 = 0.624 ~ the known 0.62.
+
+| R | CR e/o | CTL e/o | GAP | eff-R (CTL=CR) | multiplier |
+|---|---|---|---|---|---|
+| 0.50 | 0.657 | 0.834 | 0.177 | 0.91 | **x1.82** |
+| 0.60 | 0.582 | 0.788 | 0.206 | 1.13 | **x1.89** |
+| 0.75 | 0.482 | 0.722 | 0.241 | 1.45 | **x1.94** |
+| 0.90 | 0.398 | 0.661 | 0.263 | 1.80 | **x2.00** |
+| 1.00 | 0.351 | 0.624 | 0.273 | ~2.0+ | **~x2.0** |
+
+**⌘ RESULT: CR carries an EFFECTIVE BARYON LOAD ~1.9x the actual.** The multiplier is ~1.8-2.0 -- close to
+constant, which by Daryl's own criterion means CR behaves like a higher-baryon-load universe: its extra
+even-peak suppression IS a baryon-like effect, NOT "something else." So the alternation is not a new
+mechanism -- it is the ordinary compression/rarefaction (baryon-loading) asymmetry, operating in CR as
+though the baryon load were doubled.
+
+⌗ **HONEST NUANCE:** the multiplier is not PERFECTLY constant -- it climbs mildly and monotonically, 1.82 ->
+2.00 over R=0.5->1.0 (~10%). So it is DOMINANTLY an effective baryon load (~2x) with a small residual
+R-dependence; not a single clean rescaling. The gap itself grows with R (0.18 -> 0.27), consistent with a
+~constant multiplicative factor on a growing base.
+
+**⇒ AND THIS CONNECTS Phi TO THE AMPLITUDE FOR THE FIRST TIME (Daryl's candidate, borne out).** The
+compression/rarefaction asymmetry comes from the baryons riding in the potential wells -- a deeper or
+longer-lasting well gives more asymmetry. CR's low-mode wells DECAY SLOWER than control's (the measured Phi
+result: per-half retention 1.26/1.09 at q=1/q=2), so at the SAME baryon load the baryons ride a
+longer-lasting well -- a deeper effective potential -- which is exactly "same R, larger effective load."
+The ~2x effective baryon load is plausibly the ~26%/9% slower well decay compounded over the oscillation
+history. The measured Phi decay and the measured amplitude residual are the same physics: the slower-decaying
+wells over-load the baryons.
+
+**⇒ PO-13, amplitude residual now TRACED end to end (not closed -- traced):** the +65% P1/P2 over-drive =
+the even-peak suppression = the odd-even alternation = a ~2x effective baryon load = CR's baryons riding its
+slower-decaying wells. NOT the driving (r3538). One residual, one cause, connected to the measured Phi
+history. What remains genuinely open: whether the ~2x effective load is quantitatively the Phi-decay excess
+(a forward prediction to check), and the mild multiplier-rise (the non-baryon remainder). Position +7% and
+the q~3 Phi turning point stand as before; odd-even is no longer a separate item -- it is this.
+
+---
+
+## r3540 — THE WELL-INTEGRAL FORWARD CHECK: the wells do NOT supply the 2x effective load (REFUTED)
+
+**Daryl's ship (the decisive number):** "does the well-integral the baryons actually see predict the ~2x?
+The claim is that CR's slower-decaying wells give the same asymmetry as a doubled baryon load. That is
+currently an inference from two measurements pointing the same way. Make it a number... If it comes out near
+1, the wells are not what raises the effective load, and the ~2x has another source. Say so."
+
+**The term.** The code's photon/baryon Euler equation (`out[:,3]`, ACOUSTIC_two_arm.py:502) reduces to the
+acoustic oscillator `S'' + (H R/(1+R)) S' + k^2 c_s^2 S = forcing`, `S = delta_g/4 = Theta_0`, whose
+baryon-loaded zero-point is **S_eq = -(1+R) Psi**. The BARYON part of that offset, **-R*Psi**, is the term
+that carries R and Phi together and sets the compression/rarefaction (odd-even) asymmetry -- distinct from
+the Phi'*theta driving work already shown OUT (r3538). Integrand O(eta)=R(eta)*|Phi(eta)| (Psi~Phi),
+averaged over the sub-horizon oscillation history (k*eta>1 to recombination), on the ACOUSTIC PHASE clock
+k*rs (matched between arms for matched q). **R(a)=RB_REC*a/A_REC is IDENTICAL in both arms (same OMBH2,
+same Z_REC), so R cancels in the CR/control ratio -- what remains is purely the well history.**
+
+Config STACKPERT=1 GSRC=1 HIER KCONT, matched peak modes q=1,2,3, both arms. IC clean: |Phi|_entry ratio
+CR/CTL = 1.011/1.003/1.002 (arms start each mode at the SAME well depth -- not an IC artifact).
+
+| peak (q) | PRED mult `<R|Phi|>ph` CR/CTL | eta-avg ratio | eta-int ratio | \|Phi\|_rec CR/CTL |
+|---|---|---|---|---|
+| 1 | **1.098** | 1.099 | 1.260 | 1.210 |
+| 2 | **0.956** | 0.957 | 0.999 | 1.122 |
+| 3 | **0.775** | 0.774 | 0.785 | 0.765 |
+
+**⊘ RESULT — REFUTED. Predicted effective-load multiplier from the wells = 0.77-1.10 (~1). Measured from the
+heights = 2.00 at physical R=1.0 (r3539).** The wells supply essentially NONE of the 2x. All three metrics
+(phase-avg, eta-avg, eta-integral) agree near 1; none near 2. CR's wells are at most ~20% deeper than
+control's at recombination (q=1), CROSSING to ~25% SHALLOWER by q=3 -- a modest, sign-changing ~10-20%
+modulation, not a doubling.
+
+**⊘ The trend fails too.** The predicted ratio FALLS across modes (1.10 -> 0.96 -> 0.78) while the measured
+multiplier RISES with R (1.82 -> 2.00). So the well-integral does not account for the ~10% remainder either;
+it goes the wrong way. (It crosses 1 between q=2 and q=3, independently reproducing the r3532 Phi-decay
+crossover -- the wells ARE real and DO cross, they just don't carry the load.)
+
+**⊘ This OVERTURNS r3539's "plausibly borne out."** Direction-agreement was the trap Daryl named: both
+measurements said "CR looks like more baryons," but the NUMBER shows the potential-decay history is not the
+cause. The chain link **Phi-decay -> effective load** is broken. The even-peak suppression / odd-even
+alternation / +65% over-drive is real and it IS a baryon-like (compression/rarefaction) effect that control
+matches only at R'~2 -- but CR reaches that even/odd asymmetry with the SAME zero-point offset as control
+(~1x), NOT via a deeper well. CR suppresses its even peak some OTHER way.
+
+**⊘ Lead (NOT banked).** R and Phi both fail: R(a) identical, offset ratio ~1. The remaining arm-difference
+in the baryon Euler equation is the RATE-dependent drag/damping -- the drag coefficient H*R/(1+R) carries H,
+and CR's H is the geometric (radiation-free) rate, different from control's. The effective-load mimicry most
+likely lives in the rate-dependent drag/timing, not the potential. That is the next isolation, if 58/Daryl
+want it -- stated as a lead, not a result.
+
+**⊘ PO-13 status corrected:** amplitude residual is NOT traced end to end. The over-drive = even-peak
+suppression = odd-even alternation stands (r3538, a measured identity). But "= slower-decaying wells" is
+WITHDRAWN as quantitatively false. Open: the actual source of the 2x effective even-peak suppression.
+Position +7% and the q~3 Phi turning point (r3532, converged, banked) stand unchanged -- the turning point
+is a separate, surviving result and is untouched by this refutation.
+
+---
+
+## r3541–r3542 — DRAG ISOLATED AND EXONERATED: the even-peak suppression is NOT in the baryon Euler equation
+
+**Daryl's ship:** "Isolate the drag. It's the only arm-difference left in the baryon Euler equation...
+this either finds it or the equation doesn't contain it." Two measurements.
+
+### Test 1 — the drag integral (r3541, po13_dragint.py, on the existing dumps)
+Integrate the oscillator friction coefficient **D = H·R/(1+R)** over the sub-horizon oscillation history
+to recombination, matched acoustic phase, q=1,2,3. R identical; the ONLY arm-difference is H -- CR's
+geometric (radiation-free) rate vs the control's radiation-included one.
+
+| peak (q) | ∫D dη CR/CTL | ⟨D⟩phase CR/CTL | ⟨D⟩eta CR/CTL | H_entry CR/CTL |
+|---|---|---|---|---|
+| 1 | 0.940 | 0.815 | 0.820 | 0.476 |
+| 2 | 0.864 | 0.824 | 0.828 | 0.247 |
+| 3 | 0.843 | 0.827 | 0.831 | 0.170 |
+
+**Drag ratio ~0.82 (<1 in every metric).** CR's geometric H is much lower early (H_entry ratio 0.48→0.17
+-- radiation is what makes H large at high z, and CR has no radiation era), so CR experiences LESS drag.
+The drag FIGHTS the even-peak suppression, it does not cause it -- exactly Daryl's prediction. (The 2x must
+therefore be even larger than measured, since the drag opposes it.)
+
+### Test 2 — the causal drag swap (r3542, DRAGLEAF flag)
+Force CR's drag/damping H onto the control's (leaf, radiation-included) rate while restoring, forcing and
+Phi's own evolution stay geometric. STACKPERT=1 GSRC=1 HIER KCONT NK=620.
+
+| config | even/odd 2P2/(P1+P3) | l₁/l_A | P1/P2 | P1/P3 |
+|---|---|---|---|---|
+| **GATE** control DRAGLEAF=0 | 0.6236 | 0.7300 | 2.254 | 2.363 |
+| **GATE** control DRAGLEAF=1 | 0.6236 | — | — | — |
+| CR DRAGLEAF=0 (geometric drag) | 0.3510 | 0.6499 | 4.094 | 2.551 |
+| CR DRAGLEAF=1 (control's H drag) | 0.3433 | 0.6499 | 4.219 | 2.627 |
+
+**GATE PASS: control DRAGLEAF 0 vs 1 byte-identical (Dl maxabsdiff = 0.0)** -- Hl_of≡Hc_of on the control,
+so the flag is a provable no-op there; the CR effect is real (P1/P2 moved 4.094→4.219, flag is active).
+
+**⊘ RESULT — DRAG EXONERATED.** Forcing the control's exact drag H into CR moves even/odd 0.3510 → 0.3433:
+−0.008, i.e. −3% of the way to the control's 0.62, and the WRONG way (slightly MORE suppressed, as more
+damping should). Position unchanged (0.6499 both -- drag doesn't set phase). CR keeps its ~0.34 even/odd
+even with the control's own drag. The drag is not the cause.
+
+### ⊘⊘ THE ELIMINATION IS COMPLETE — every term in the baryon Euler oscillator is measured out
+`S'' + (H R/(1+R)) S' + k² c_s² S = forcing`:
+- **R** — identical in both arms by construction (same Ω_b h², z_rec). Out.
+- **Φ** — well-integral offset ratio 0.77–1.10, not 2 (r3540). Out.
+- **Drag (H)** — ratio 0.82 and fighting; the control's H forced in moves even/odd 0.351→0.343, the wrong
+  way and by nothing (r3541–r3542). Out.
+
+**So the 2× even-peak suppression is NOT in the oscillator equation at all.** This is a result reached by
+DIRECT MEASUREMENT and ELIMINATION, not by guessing. It narrows the search to three places outside the
+baryon Euler equation: the **transfer**, the **projection**, or the **initial conditions** -- a much
+smaller space than the arc started in.
+
+**⇒ NEXT (Daryl's order): the initial conditions first.** CRAMP=seam (the k-dependent seam IC) was the only
+lever in the whole arc that landed P1/P3 EXACTLY (2.277 vs 2.277) while missing P1/P2 -- an IC that gets the
+odd relation right and the even one wrong points straight at this residual. ICs set each mode's starting
+phase, which decides whether it arrives at recombination in compression or rarefaction. Caution on the
+record: seam moved the POSITION last time (older composition) -- report position every run; if it lands
+even/odd but moves position off, that is the same coupled trade, a swap not a solution.
+
+---
+
+## r3543 — THE PARITY IS TIMING: CR's modes arrive MISTIMED; the amplitude IC is a swap, not a fix
+
+**Daryl's ship:** separate the two things the IC does -- a k-dependent amplitude envelope (cannot move a
+compression/rarefaction PARITY) vs a phase reset (can). Measure the arrival phase directly from the dumps,
+and read even/odd under CRAMP=seam with position reported every run.
+
+### Measurement 1 -- ARRIVAL PHASE at recombination (po13 phase2.py, on the existing dumps, non-circular)
+Oscillator variable X = Theta_0 + (1+R)Psi = dg/4 + (1+R)phi (oscillates about 0). Instantaneous phase
+from two INDEPENDENT quadratures -- A: (dX/deta)/(k c_s); B: the photon velocity -tg/(3 k c_s) -- read at
+eta_rec by extrapolation from accurate interior points. NOT the k*rs proxy (which mode-selection forces to
+n; and indeed k*rs/pi = 1.00/2.00/3.00 in BOTH arms).
+
+| peak (q) | CR wrapped/pi (A,B) | CTL wrapped/pi (A,B) | DIFF/pi |
+|---|---|---|---|
+| 1 | 0.250, 0.244 | 0.160, 0.220 | ~0.02–0.09 (short window, least certain) |
+| 2 | 1.586, 1.580 | 1.157, 1.165 | **0.42** |
+| 3 | 0.759, 0.759 | 0.173, 0.176 | **0.58** |
+
+**⊘ CR's modes arrive MISTIMED.** The two quadratures agree (real, not numeric). The CONTROL is internally
+clean: its odd peaks q=1,3 both sit at ~0.17pi and its even peak q=2 at ~1.16pi -- a textbook clean pi
+(compression/rarefaction) alternation. CR DRIFTS: odd peaks q=1,3 at 0.25 and 0.76pi (no longer a shared
+phase), even peak at 1.59pi -- ~0.42pi off where the control's even peak sits. The drift GROWS with q. Since
+k*rs matches (n both arms), this is a DYNAMICAL phase shift, not a clock difference: CR lacks the radiation
+driving that in LCDM locks a ~constant acoustic phase shift, so CR's phase shift drifts with k. **The
+even-peak (parity) suppression is a TIMING effect -- consistent with the whole elimination pointing OUT of
+the oscillator (R, Phi, drag all out): it is not amplitude at fixed phase, it is arrival phase.**
+
+### Measurement 2 -- CRAMP=seam even/odd, with position (STACKPERT=1 GSRC=1 HIER KCONT)
+| config | even/odd | l1/lA | P1/P2 | P1/P3 | peaks l | spacings |
+|---|---|---|---|---|---|---|
+| CR flat (baseline) | 0.351 | 0.6499 | 4.094 | 2.551 | 196,484,668 | 288,184 |
+| **CR seam** | **0.866** | 0.6499 | 1.710 | 2.857 | 196,**660**,932 | **464,272** |
+| control | 0.624 | 0.7300 | 2.254 | 2.363 | 220,532,812 | 312,280 |
+
+**⊘ Seam moves even/odd hard (0.351 -> 0.866) but it is a SWAP, not a fix.** It OVERSHOOTS the control's
+0.624, and it does so by WRECKING the comb: inspecting Dl, the flat comb's separate 2nd (484) and 3rd (668)
+peaks have MERGED into one broad bump at 660 (Dl rises monotonically 404->660 then falls -- no distinct peak
+near 484 survives). The 2nd "peak" at 660 is +24% off the control's 532 and the spacing goes irregular
+(464/272 vs the control's regular ~300). CRAMP=seam is PURELY an amplitude envelope (the code sets _That0,
+the initial AMPLITUDE, not the phase), so exactly as cc54 predicted: an amplitude lever cannot move a parity
+cleanly -- it only moves the even/odd NUMBER by reshaping/merging the comb. Daryl's position caution fired
+in full: even/odd lands (overshoots) but position/spacing is destroyed -- a swap.
+
+### ⇒ Reading (the two mechanisms separated, as designed)
+The parity asymmetry is **timing** (Measurement 1: arrival phases differ, robustly, growing with q). The
+**amplitude** IC (Measurement 2: seam) does NOT fix it -- it swaps heights for spacing. So the residual is
+in the mode **phase**, and the lever just tested (amplitude seam) is the wrong one. The untested lever is a
+PHASE reset at the seam (vs the amplitude reset seam applies) -- i.e. giving each mode the correct STARTING
+PHASE for its prior sub-horizon history, not a k-dependent amplitude. That is the narrowed target; whether
+CR even admits a well-defined per-mode seam phase (it lacks the radiation-era driving that sets LCDM's) is
+the open physics question. Position stays 0.6499 (first peak) throughout; the projection-map layer (owed,
+r-earlier) still carries it to the sky separately and is untouched here.
+
+Every prior term stands eliminated (R, Phi, drag). This locates the even-peak suppression, by direct
+measurement, in the ARRIVAL PHASE -- a timing/IC-phase effect, not amplitude, transfer, or projection.
+
+---
+
+## r3544 — THE DRIFT IS DYNAMICAL: PO-13's residual has a name — CR lacks cross-scale phase coherence
+
+**Daryl's check (before banking the timing result):** confirm the phase drift is dynamical, not where each
+mode starts. Decompose arrival = start + accumulated; residual = accumulated − WKB clock (k∫c_s dη). One
+subtraction from the dumps on disk (po13 phase3.py, quadrature B = photon velocity, no numeric derivative).
+
+Decomposition (units of π):
+
+| arm/q | start (wrapped) | accum | WKB | **dynamical residual = accum − WKB** |
+|---|---|---|---|---|
+| CR q1 | 1.000 | 1.244 | 1.000 | **0.244** |
+| CR q2 | 1.000 | 2.580 | 1.999 | **0.580** |
+| CR q3 | 1.000 | 3.759 | 3.001 | **0.758** |
+| CTL q1 | 1.147 | 1.073 | 0.819 | 0.254 |
+| CTL q2 | 1.152 | 2.014 | 1.817 | 0.196 |
+| CTL q3 | 1.157 | 3.019 | 2.813 | 0.206 |
+
+**Coherence across the odd peaks (q1 vs q3):**
+- CTL: dynamical residual 0.254 vs 0.206 — **spread 0.048π (LOCKED)**; start 1.147 vs 1.157 — spread 0.010π.
+- CR:  dynamical residual 0.244 vs 0.758 — **spread 0.514π (DRIFTS)**; start 1.000 vs 1.000 — **spread 0.000π**.
+
+**⊘⊘ RESULT — the drift is DYNAMICAL, and an IC cannot fix it.** CR's modes START perfectly coherent
+(all three at exactly 1.000π — the adiabatic IC gives every mode the same horizon-entry phase, spread
+0.000π). The coherence is then LOST during evolution: CR's dynamical residual drifts 0.244→0.580→0.758
+(spread 0.514π across the odd modes). The control both starts coherent (~1.15π) AND stays coherent — its
+residual is LOCKED at ~0.2π across all scales (spread 0.048π). So a seam PHASE reset is useless: the modes
+already start coherent in CR and drift apart regardless, at a rate growing with k. You cannot cancel a
+dynamical drift with a one-time initial condition without a per-k fit (which is not a physical IC).
+
+Notably CR's q=1 residual (0.244) nearly MATCHES the control's locked value (~0.25) — CR starts, at low k,
+with the same acoustic phase shift as ΛCDM, then drifts away at higher k. The departure is k-dependent and
+growing — the loss of coherence, not a global offset.
+
+**⇒ PO-13's amplitude residual now has a NAME, reached by elimination + measurement.** The radiation era in
+ΛCDM does not merely SHIFT the acoustic phase by ~0.2π — it LOCKS that shift across scales (control residual
+constant ~0.2π for every mode), and that cross-scale phase coherence is what produces the clean
+compression/rarefaction parity (control odd peaks all at ~0.17π). **CR, having no radiation era to drive and
+lock the modes, has a phase shift that DRIFTS with k. The even peak (q=2) lands at residual 0.58π — far off
+the coherent value — and the even-peak suppression is the visible signature of that missing coherence.**
+
+This is not a fitting failure and not an un-found knob. It is a structural consequence of a radiation-free
+expansion, measured through FIVE eliminated possibilities — R (identical), Φ (well-integral ~1, r3540),
+drag (0.82 and fighting, r3541–42), IC amplitude (seam = a swap, r3543), IC phase (modes start coherent,
+r3544) — and two independent phase quadratures. The absence is the same one the whole arc has circled ("no
+radiation driving"), now stated precisely: the driving's role is not only the ~0.27π shift, it is PHASE
+COHERENCE ACROSS k; CR lacks it, and PO-13's even-peak/amplitude residual is its measured signature.
+
+**Status:** PO-13 amplitude residual DIAGNOSED (not closed-to-the-sky — CR still over-drives by the recorded
+amounts). The diagnosis is a physical prediction: CR's acoustic peak PHASES should be k-incoherent relative
+to ΛCDM's, testable wherever the acoustic phase is measured across scales. Position +7% and the q~3 Φ turning
+point (r3532) stand as separate results. The projection-map layer is untouched.
+
+---
+
+## r3545 — THE PHASE-INCOHERENCE CURVE q=1..6: control FLAT, CR drifts to ~π (the shape, before data)
+
+**Daryl's ship:** state the shape before going looking. The signature is that the dynamical acoustic-phase
+residual (accumulated − WKB clock) is CONSTANT in k for a radiation-driven cosmology and DRIFTS with k
+without one -- a shape, not an offset, so it survives calibration the way the interior decay minimum does.
+Extend r3544's 3 points to the full range. STACKPERT=1 GSRC=1 HIER KCONT, NK=1100 LMAXL=2000, velocity
+quadrature, both arms. Amplitudes |X| at recomb healthy across all q (CR 0.25-0.68, CTL 0.60-0.93 -- NOT
+damping-tail noise, so the phase is reliably extractable to q=6).
+
+| q | CR residual/pi | CTL residual/pi | CR−CTL |
+|---|---|---|---|
+| 1 | 0.245 | 0.254 | −0.009 |
+| 2 | 0.581 | 0.196 | 0.384 |
+| 3 | 0.758 | 0.206 | 0.552 |
+| 4 | 0.858 | 0.204 | 0.655 |
+| 5 | 0.926 | 0.227 | 0.698 |
+| 6 | 0.995 | 0.235 | 0.760 |
+
+(q=1,2,3 reproduce r3544's 0.244/0.580/0.758 exactly -- consistency check passed.)
+
+**⊘ CONTROL IS FLAT.** Slope = −0.000/pi per q, spread 0.058pi across q=1..6, locked at ~0.22pi. The
+radiation-driven acoustic phase shift is constant across scales -- the textbook lock, now measured on this
+instrument over six peaks. Start phases also locked (~1.15pi all).
+
+**⊘ CR DRIFTS to a half-cycle.** Monotonic 0.245 → 0.995pi. At q=1 it MATCHES the control (−0.009pi
+difference -- starts locked); by q=6 it has drifted to ~pi, a FULL half-cycle off. The drift is CONCAVE /
+decelerating early (increments 0.336, 0.178, 0.100 for q=1→4) then settles to a slow steady climb (~0.068/pi
+per q at q=4→6). So: NOT linear (concave), and NOT a hard plateau either -- it keeps climbing slowly past
+q=4. Start phases locked at exactly 1.000pi for every mode (spread 0.000), so the drift is purely dynamical,
+confirmed across all six modes.
+
+**⇒ The shape is settled: FLAT (control) vs a CONCAVE drift reaching ~pi by q=6 (CR).** This is what to look
+for in data and it is calibration-robust: a k-DEPENDENT acoustic phase residual (drift) is the CR signature
+against a k-CONSTANT one (any radiation-driven cosmology). The even peak (q=2) sits at the steep part of the
+drift (0.58pi vs the control's locked 0.20pi, a 0.38pi departure) -- which is why the parity/even-peak
+suppression is its most visible imprint, but the prediction is the whole curve, not one peak.
+
+The measured prediction for data: **CR predicts the acoustic-peak phases DRIFT with multipole (reaching a
+half-cycle by the sixth peak) where ΛCDM holds them locked.** The place to test it is any dataset resolving
+individual acoustic-peak positions/phases across the full comb -- the peak-position residuals vs a
+radiation-driven template are the observable. r3545 gives the template to difference against.
+
+---
+
+## r3546 — DEGENERACY KILLED: most of the drift is the acoustic scale; a ~0.2π CURVATURE survives
+
+**Daryl's ship (before any data):** a phase residual roughly linear in q is degenerate with a wrong l_A --
+a uniform comb stretch reads as a linearly growing residual, i.e. the +7% position over-drive seen twice.
+Refit l_A to each arm's own comb (best linear-in-q trend) and recompute; what SURVIVES is genuine phase
+incoherence, what is ABSORBED was a wrong ruler. Control must stay flat under its own refit or the test is
+void.
+
+2-parameter linear refit r(q) = a·q + b (a = the l_A/ruler-degenerate direction; b = absolute-phase ref):
+
+| arm | raw spread | fitted slope a | spread AFTER refit | RMS after | curvature (q^2 coef) |
+|---|---|---|---|---|---|
+| CR  | 0.750π | +0.140π/q | **0.234π** | **0.084π** | −0.032π/q² (concave arch) |
+| CTL | 0.058π | −0.000π/q | 0.058π | 0.020π | +0.007π/q² |
+
+After-refit residual, CR: −0.133, 0.063, 0.101, 0.061, −0.011, −0.081 -- a clean CONCAVE ARCH (rises to
+q=3, falls after). Robust: dropping the least-certain q=1 point, the arch persists (q=2..6 spread 0.18π).
+
+**⊘ VALIDITY:** control flat under its own refit -- spread 0.058π, slope ≈ 0 -- test valid.
+
+**⊘ RESULT — the drift SURVIVES, but MOST OF IT WAS THE RULER.** The raw 0.75π "drift to π" is dominated by
+its LINEAR part, which is exactly the l_A/acoustic-scale degeneracy -- the same class as the +7% position
+over-drive, NOT independent of it. Refitting l_A absorbs it. What survives is the CURVATURE: a concave arch
+~0.234π peak-to-peak (RMS 0.084π), **4.1× the control's post-refit floor (0.020π)**. That curvature is
+ruler-independent -- no uniform stretch can produce it (a wrong l_A is purely linear in q) -- so it is a
+genuine phase incoherence.
+
+**⇒ This corrects the r3545 headline for data purposes.** The testable, l_A-independent prediction is NOT
+"peaks drift half a cycle by q=6" (that is mostly the ruler, degenerate with the position residual we already
+have). It is: **CR's acoustic-peak-position residuals carry a CONCAVE CURVATURE ~0.2π that no acoustic scale
+can absorb, where ΛCDM's are flat to ~0.02π.** The Planck observable is the CURVATURE of the peak-position
+residuals after marginalising l_A -- a much more specific and honest target than the raw drift. The +7%
+position over-drive and the linear part of the phase drift are the same thing (confirmed here); the curvature
+is the one genuinely new, ruler-independent handle -- and it is 4× the control floor, real but modest (~0.2π),
+so it needs Planck's actual peak-position error bars to say whether it is detectable.
+
+Degeneracy settled: cc54 runs the Planck comparison next (has instrument, template, context), targeting the
+CURVATURE of peak-position residuals under a floated l_A -- not before this check, which is now done.
+
+---
+
+## ⚠ REVISION-NUMBER COLLISION (recorded, NOT renumbered — Daryl's call)
+
+The revision numbers **r3535 through r3546 are NOT unique across nodes.** They were assigned in parallel,
+without cross-node coordination, to two different bodies of work:
+
+- **main carries 59's:** r3535–r3549 on `origin/main` are 59/60's landing-table / gather work — r3535 the
+  gen-2 ledger + INVOLUTION gather (175ca8a7), r3536 the involution-ledger landing table (3e8ce8d3), r3537
+  the Cartan/holonomy landing table (8d4f9f53), continuing to r3549.
+- **this branch carries cc54's:** r3535–r3546 in this file (`PO13_WORKING_STATE.md`, branch
+  `claude/cosmological-relativity-c54-sn2msi`) are the PO-13 arc — r3535 the crossover located, r3536 the
+  HIER confirmation, r3537 the turning point survives, through r3540 (well-integral) … r3546 (degeneracy
+  killed).
+
+So a bare "r354x" is ambiguous between the two lanes. **History is deliberately NOT rewritten** — a
+rename on a live branch to fix labels is a worse trade than the ambiguity. When citing these numbers, name
+the lane: "r3544 (main, 59)" vs "r3544 (branch, PO-13)". The numbers stop being unique; the record stays
+honest and nothing is rewritten.
+
+---
+
+## ⚠ SILENT-FAILURE NOTE: a run died mid-projection while the shell reported success
+
+A `timeout N python ... > log 2>&1; echo rc=$?; grep ...` compound command reported **exit code 0 even
+though python was killed by the timeout mid-projection** — because the trailing `grep` succeeded and the
+compound command's exit status is the last command's. Result: the SAVE file was never written, but the
+background wrapper announced "completed (exit code 0)". Caught only because the expected `.npz` was absent.
+
+This is the **same failure shape as the currency-gate blindness**: a check that reports PASS because it
+never reached the thing it was checking. The fix that would have surfaced it: gate on the artifact (does
+the `.npz` exist / does the log contain the "saved … multipoles" line), not on the shell's exit code, and
+never let a trailing command mask the one that matters. Recorded so the pattern is on the ledger, not just
+worked around this once. (The heavy NK=1100 LMAXL=2000 continuum run was over the timeout; reran lighter.)
+
+---
+
+## r3547 (branch) — PLANCK COMPARISON: STOPS at step-3 calibration; instrument not fit; CR NOT regular in positions
+
+**Daryl's ordered pipeline, stopping at the first failure.** Gate 1 (Planck peak-position errors) PASSED:
+Planck 2018 TT peaks (Table 5, Planck 2018 I) l+/-sigma = 220.6+/-0.6, 538.1+/-1.3, 809.8+/-1.0,
+1147.8+/-2.3, 1446.8+/-1.6, 1779+/-3, i.e. 0.002-0.010pi per peak, ~8-40x below the 0.084pi signal.
+
+Then the three-way peak-position comparison under floated l_A (sky/control/CR), NK=620 LMAXL=2000, peaks
+sub-grid parabolic-interpolated (grid quantization ruled out). Residuals decomposed BY CONSTRUCTION into
+the parity-ALTERNATING component (projection onto (-1)^n = the compression/rarefaction physics) and the
+SMOOTH remainder, since a quadratic coefficient silently absorbs a zigzag (Daryl's catch).
+
+RAW spacings: sky [317.5,271.7,338.0,299.0,332.2] alternate; control [315.8,277.0,314.4,295.1,304.0]
+alternate WEAKER; CR [298.4,179.2,277.0,273.4,290.9] alternate with an anomalous 2nd spacing.
+
+Parity ALT amplitude (pi units): SKY 0.047+/-0.003 (q1-6) / 0.052 (q1-4); CONTROL 0.019 / 0.025;
+CR 0.058 / 0.089.
+
+**⊘ STEP-3 CALIBRATION FAILS.** The control's parity alternation (ALT ~0.02) is ~HALF the sky's (~0.05),
+a ~10 sigma gap, robust to sub-grid interpolation. The two-arm instrument's LCDM does NOT reproduce the
+sky's own peak-position alternation to Planck precision (it under-produces the high-l alternation; its peaks
+drift low, 1727 vs sky 1779 at peak 6). **By the strict rule, the instrument is not fit to compare CR to the
+sky, and nothing about CR-vs-sky follows. The Planck comparison STOPS here.** This is a fact about the
+instrument (a simplified two-arm acoustic code, not a full Boltzmann solver), not about CR.
+
+**⊘ Calibration-free survivor (CR vs control, same instrument):** CR's positional ALT (0.058-0.089) is
+LARGER than the control's (0.019-0.025), NOT smaller. The uniform-comb prediction -- "CR goes REGULAR in
+positions" -- is **REFUTED**. CR's phase incoherence shows up as AMPLIFIED position irregularity (the 179
+spacing = peak 3 pulled inward), consistent with the measured phase drift. The parity anomaly is present in
+BOTH observables: suppressed in the even-peak HEIGHTS and over-shifted in the even-peak POSITIONS -- not
+absent in one. (The SMOOTH parts -- CR 0.086 vs control 0.014 -- also differ, but that is model-internal and
+cannot be compared to the sky given the calibration failure.)
+
+**⇒ BOTTOM LINE.** The curvature/parity signature CANNOT be tested against Planck peak positions WITH THIS
+INSTRUMENT, because the instrument's own LCDM control fails to reproduce the sky's peak-position structure
+(~10 sigma). Testing it requires a full Boltzmann code (CAMB/CLASS) whose LCDM reproduces Planck's peaks to
+their error bars; then CR's composition would be run in the same code and its peak-position residual compared.
+A prediction current in-house tooling cannot test is a legitimate place for a prediction to sit -- it is not
+the same as the prediction failing. What is measured and stands: (i) the over-drive disagreement (+7%/+65%);
+(ii) the diagnosed loss of cross-scale phase coherence (5 terms eliminated, two quadratures); (iii) the
+ruler-independent smooth curvature ~0.2pi and the amplified positional parity, both model-internal. The Planck
+test is DEFERRED to a full-Boltzmann implementation, not claimed.
+
+---
+
+## r3548 (branch) — THE STOP WAS THE TAIL: calibration HOLDS over q=1..3, and CR is DISFAVOURED there (4x too much positional parity)
+
+**Daryl's catch on r3547:** the calibration failure is the damping TAIL, not the instrument. The control
+lands the sky's position to 0.16% and height alternation to 0.6% and fails ONLY on positional alternation,
+with its peaks drifting LOW at high l -- the envelope-moves-centroids effect that took 0.7294->0.7560 before.
+Test it: compute the control's ALT on q=1..3 (where it tracks the sky) and see if it matches there.
+
+**Per-peak control vs sky (raw positions, Planck-sigma):** peak1 0.0, peak2 −1.3, peak3 +3.7, peak4 **−8.7**,
+peak5 **−14.9**, peak6 **−17.3**. The instrument tracks at peaks 1–3 and BREAKS SHARPLY at peak 4 -- the
+damping tail (control peaks drift low: 1727 vs 1779 at peak 6).
+
+**Parity ALT amplitude by range (pi units):**
+| range | SKY | CONTROL | CR |
+|---|---|---|---|
+| q1–3 | 0.028±0.002 | **0.029 (0.6σ — MATCHES)** | **0.111 (4×, 47σ stat)** |
+| q1–4 | 0.052 | 0.025 (10σ) | 0.089 |
+| q1–6 | 0.047 | 0.019 (11σ) | 0.058 |
+
+**⊘ CALIBRATION HOLDS over q=1..3.** Control ALT 0.029 vs sky 0.028 = 0.6σ: the instrument reproduces the
+sky's positional parity to ~0.001 where it is resolved. The r3547 ~10σ failure was ENTIRELY q>=4 (the tail).
+**The stop applied to the TAIL, not to the comparison.** The instrument is FIT over q=1..3.
+
+**⊘⊘ RESULT over the validated range: CR is DISFAVOURED. CR's positional parity ALT (0.111) is 4x the sky's
+(0.028) and 4x the control's (0.029)** -- a difference ~80x the instrument's demonstrated accuracy on this
+range (the control, same instrument/peak-finder/sub-grid method, matches the sky to 0.001). This is NOT an
+instrument artifact: the same pipeline reproduces the sky for LCDM and produces 4x too much for CR. CR's
+even peak (peak 2) -- the one SUPPRESSED in HEIGHT -- is OVER-SHIFTED in POSITION.
+
+**⊘⊘⊘ THE DAY-ONE PO-13 CLAIM IS REFUTED BY MEASUREMENT.** The uniform-comb reading -- that CR's acoustic
+comb is REGULAR, lacking the compression/rarefaction parity -- is WRONG in the peak positions. CR's parity
+anomaly is **AMPLIFIED, not absent**: suppressed even-peak heights AND over-shifted even-peak positions, the
+SAME even peak flagged in both observables. Measured, calibrated over q=1..3, stated as plainly as the
+diagnosis: **CR does not lose the parity; it over-produces it, and that over-production disagrees with the
+sky at ~4x over the range where the instrument reproduces the sky.**
+
+**⇒ (a) vs (b), now on evidence.** A REAL calibrated comparison exists NOW over q=1..3 and CR is disfavoured
+there. A CAMB/CLASS build would EXTEND the comparison to the tail (q>=4) where this instrument's damping
+under-resolves -- it is a way to widen the test, not a precondition for having one. The Planck test is no
+longer "deferred/untestable": over the validated low-q range it is DONE and CR disagrees. What the full
+Boltzmann build buys is the tail and tighter significance, not the existence of the result.
+
+Supersedes r3547's "instrument not fit / test deferred" for q=1..3: the instrument IS fit there, and the
+result is a calibrated disagreement. r3547's tail-failure stands for q>=4.
+
+---
+
+## r3549 (branch) — THE POSITIONAL PARITY IS COMPOSITION-DEPENDENT: it is GSRC=1's, not CR's
+
+**Daryl's check before the PR (and before any Boltzmann build):** is CR's q=1..3 positional parity (0.111)
+a property of CR or of the one composition (STACKPERT=1 GSRC=1 HIER) it was measured on? The arc showed
+different compositions move the peaks substantially. Measure ALT q1..3 across the compositions on disk.
+
+| composition | q1..3 ALT | vs sky 0.028 |
+|---|---|---|
+| SKY (Planck) | 0.028±0.002 | — |
+| CONTROL (LCDM) | 0.029 | matches (0.6σ) |
+| GSRC=1 flat (main, r3548) | 0.111 | 4× (too MUCH) |
+| GSRC=1 flat, LMAXL1300 | 0.103 | 4× |
+| GSRC=1 drag-swap (DRAGLEAF=1) | 0.104 | 4× |
+| GSRC=1 seam (CRAMP=seam; comb wrecked) | 0.116 | 4× |
+| **GSRC=0** (STACKPERT=1 GSRC=0) | **0.007** | 0.25× (too LITTLE) |
+
+**⊘ IT SWINGS — with the SOURCE, not the IC.** The positional parity ALT runs 0.007 (GSRC=0, ~regular comb)
+to ~0.11 (GSRC=1, 4× sky): a 16× swing controlled by the GSRC source constraint (whether radiation
+gravitates at full strength in Phi's source). WITHIN GSRC=1 it is stable (0.103-0.116 across flat, seam,
+drag, resolution) -- the IC and drag barely move it. So the 0.111 is a property of the **GSRC=1
+composition**, not of "CR" generically.
+
+**⊘ NEITHER determined CR composition reproduces the sky.** GSRC=0 undershoots (0.007, too little parity,
+nearly a uniform comb); GSRC=1 overshoots (0.111, 4× too much). The sky's 0.028 sits BETWEEN them. GSRC is a
+binary constraint (0 or 1), not a tunable knob, so no determined CR composition lands the sky's positional
+parity -- one is too regular, the other too alternating.
+
+**⇒ THE CLAIM, RESTATED WITH SCOPE.** NOT "CR disagrees with Planck." Rather: **the framework-selected
+composition (GSRC=1, the full-EFE constraint 58 argued is the correct non-tunable source) disagrees with the
+sky's q=1..3 positional parity at 4×, over the range where the instrument reproduces the sky (control 0.6σ).
+The alternative source (GSRC=0, the under-counting one already retracted for the position) gives 0.007, too
+little. The positional parity is a probe of the SOURCE composition, and both determined choices miss the sky
+in opposite directions.** After today, this is measured, not assumed: the disagreement is the composition's,
+and its size and even its SIGN depend on GSRC.
+
+Supersedes the unscoped reading of r3548: r3548's 4× disagreement is real but belongs to GSRC=1
+specifically; it is not a composition-independent property of CR. The uniform-comb refutation ALSO scopes --
+GSRC=1 over-produces parity, but GSRC=0 is nearly a uniform comb (ALT 0.007), so "CR is/ isn't a uniform
+comb" is itself GSRC-dependent and cannot be stated of CR without naming the source.
+
+---
+
+## r3550 (branch) — THE FITTING RUN: NO source factor lands position, amplitude and parity together
+
+**Daryl's ship (the fitting question the binary flag never asked):** GSRC=0 and GSRC=1 bracket the sky on
+position, amplitude AND parity from opposite sides, on a term with no dial. Scan the source factor
+continuously (GSRCA=alpha, Gf = 1 + alpha*(rho_tot/rho_free - 1); alpha=0->GSRC=0, alpha=1->GSRC=1) and
+find whether ANY value fits all three at once. Validated: GSRCA=0 reproduces GSRC=0 exactly; GSRCA=0.5 on
+the control is byte-identical to the plain control (no-op gate; also provable by construction -- the flag is
+read only under `not RAD_IN_RATE`). Position mapped by r_stack/r_leaf=1.2857 (uniform stretch; heights and
+parity are map-invariant). STACKPERT=1 HIER KCONT NK=620 LMAXL=1300.
+
+| alpha | l1/lA | P1/P2 | P1/P3 | parity |
+|---|---|---|---|---|
+| 0.00 (GSRC=0) | 0.7292 | 0.888 | 0.693 | 0.007 |
+| 0.25 | 0.7485 | 1.382 | 1.001 | 0.031 |
+| 0.50 | 0.7730 | 2.071 | 1.410 | 0.053 |
+| 0.75 | 0.7998 | 2.972 | 1.925 | 0.075 |
+| 1.00 (GSRC=1) | 0.8272 | 4.094 | 2.551 | 0.103 |
+| **SKY** | **0.7312** | **2.217** | **2.277** | **0.028** |
+
+**⊘ ANSWER: NO. Each observable crosses the sky at a DIFFERENT alpha:** position **0.03**, parity **0.22**,
+P1/P2 **0.54**, P1/P3 **0.89**. Four observables, four well-separated crossings across the whole range --
+they do not coincide. Worse than position-vs-amplitude: the two amplitude ratios themselves disagree
+(P1/P2 wants 0.54, P1/P3 wants 0.89), so the source factor cannot land the amplitude SHAPE either.
+
+**⊘ THE SOURCE NORMALISATION IS NOT THE FREE DIRECTION -- measured, not assumed.** Daryl's "right in form,
+wrong in magnitude" reading is REFUTED by this scan: a pure magnitude error would put all crossings at one
+alpha; they are spread 0.03->0.89. Position is already near-sky at alpha~0 and every increase in the source
+over-drives the amplitude faster than it moves anything else into place. There is no dial setting of the
+source constraint that fits the sky. So the framework's disagreement is NOT a mis-normalised source that a
+between-value would fix -- the source enters position, amplitude and parity at structurally different rates,
+and no single value reconciles them.
+
+**⇒ What this closes.** The binary GSRC bracketing (r3549) is not a "truth is in between" situation: there is
+no in-between value that fits (r3550). The over-drive is structural, not a normalisation size. The free
+direction that would fit the sky -- if one exists in CR -- is NOT the source-constraint magnitude; it is
+something else (the rate split itself, the projection, or a term not yet identified). This is the fitting
+question answered by measurement: the source factor is exhausted as a fitting knob.
+
+---
+
+## r3551 (branch) — the GSRCA disjointness is ORDERED BY SCALE: constant source eliminated, time-profile is the lever
+
+**Daryl's refinement:** report crossing alpha WITH a band (alpha range within the sky error), run the
+intermediate alpha at each crossing rather than interpolate, and order the observables by the epoch/scale
+each is set at -- because ordered, evenly-spread bands are a TREND, not four scattered disagreements, and
+rho_tot/rho_free is strongly time-varying (large early, ->1 late), so a CONSTANT alpha on it lands each
+observable at a different effective boost.
+
+9-point scan (5 coarse + 4 confirmation runs AT the crossings, not interpolated). Each confirmation lands
+ITS observable at the sky and misses the others: a=0.03 position=0.7311 (sky 0.7312); a=0.22 parity=0.0281
+(0.028); a=0.54 P1/P2=2.200 (2.217); a=0.89 P1/P3=2.262 (2.277).
+
+| observable | type | characteristic peak | alpha-band (within sky error) |
+|---|---|---|---|
+| position | phase | l1 ~221 | 0.03  [~0.00-0.06] |
+| parity | position | l2 ~538 | 0.22  [0.198, 0.241] |
+| P1/P2 | height | l2 ~538 | 0.54  [0.538, 0.551] |
+| P1/P3 | height | l3 ~810 | 0.90  [0.887, 0.904] |
+
+**⊘ ALL BANDS DISJOINT** (confirmed on 9 points, sky-error bands, not interpolation) -- no single source
+factor fits. **AND they are ORDERED BY SCALE:** alpha rises monotonically from position (first peak, largest
+scale, phase set earliest, alpha~0.03) to P1/P3 (third peak, smallest scale, deepest in the radiation-era
+history, alpha~0.90). A second axis sits inside it: at the SAME scale k2, the height observable (P1/P2,
+0.54) wants more alpha than the position observable (parity, 0.22) -- the source touches heights more than
+positions. This is a systematic TREND, not scatter.
+
+**⇒ WHAT IT MEANS.** This eliminates the CONSTANT source scaling as the free direction -- cleanly, with
+bands, the way R, Phi and drag were eliminated. But the residual is not random: the alpha each observable
+wants tracks the scale/epoch it is set at, which is exactly the fingerprint of a CONSTANT knob applied to a
+strongly TIME-VARYING factor (rho_tot/rho_free, large early -> 1 late). alpha=1 already applies the full
+time profile and OVER-drives; alpha<1 scales it down uniformly and under-drives the late/large-scale
+observables. So the structural question the trend identifies is NOT a different constant alpha -- it is
+whether the local source must carry a DIFFERENT TIME PROFILE than alpha*(rho_tot/rho_free): the physical
+question of what fraction of radiation's gravity the local layer actually sources, as a function of epoch,
+rather than a single scalar. That is checkable (a time-dependent source weight) and is the identified next
+lever. If instead one reads the bands alone: the source normalisation is eliminated, full stop, and what
+remains to fit the sky is not the source magnitude.
+
+Fitting run complete: no constant source factor fits (r3550); the misses are ordered by scale (r3551),
+pointing at the source's time profile, not its magnitude, as the remaining structural freedom -- if CR has
+one at all.
+
+---
+
+## r3552 (branch) — THE THRESHOLD PRINCIPLE reduces to the GSRC ENDPOINTS: source EXHAUSTED against the framework's own rule
+
+**58's answer to cc54's question:** the framework DOES specify a time-dependent source weight -- the threshold
+principle. Local source applies where the perturbation is ABOVE the critical density (bound); below, Hubble
+flow (source off); sharp transition (draft, threshold-problem sec). Build it derived, not fitted, run all
+four observables, gate on control.
+
+Implemented as THRESH: the boost gates by the sign of the local overdensity (critical density = mean in a
+flat universe), a sharp step. Two readings of "the perturbation's density":
+
+| config | l1/lA | P1/P2 | P1/P3 | parity |
+|---|---|---|---|---|
+| THRESH total-overdensity | 0.8272 | 4.094 | 2.551 | 0.103 |
+| THRESH photon(plasma) | 0.8259 | 4.201 | 2.699 | 0.117 |
+| GSRC=1 (full boost) | 0.8272 | 4.094 | 2.551 | 0.103 |
+| GSRC=0 (no boost) | 0.7292 | 0.888 | 0.693 | 0.007 |
+| SKY | 0.7312 | 2.217 | 2.277 | 0.028 |
+
+Control gate: THRESH=1 GSRC=1 on lcdm byte-identical to plain control (Gf=1 -> no-op by construction).
+
+**⊘ BOTH readings ~= GSRC=1.** The gate weight is ~1 wherever the source matters: the total overdensity is
+CDM-dominated and monotone-positive near recombination; the photon overdensity is positive early
+(super-horizon) exactly when the radiation weight Ogv is large, its rarefaction excursions coming later when
+Ogv is already small. So "above the mean density" holds whenever it counts -> full boost -> GSRC=1. The
+threshold gate never fires OFF where it would matter.
+
+**⊘ THE SHARP THRESHOLD PRINCIPLE REDUCES TO THE GSRC ENDPOINTS.** The two computable sharp readings are the
+two endpoints already scanned: mean/critical-density -> GSRC=1 (matter makes the region "always bound", the
+source over-drives); binding/collapse threshold (delta_c ~ 1.686) -> GSRC=0 (the plasma's delta ~ 1e-3 is
+never near collapse, never bound, source off). There is NO sharp derived threshold that lands BETWEEN: the
+linear CMB plasma never sits in a partially-bound regime, so the "small-early, large-late" weight would need
+a chosen intermediate delta_c -- a FIT, and one that contradicts the draft's explicit sharpness.
+
+**⊘⊘ SOURCE EXHAUSTED AGAINST THE FRAMEWORK'S OWN RULE.** The GSRCA scan (r3550/r3551) showed no constant
+value between the endpoints fits (four observables cross the sky at four disjoint alphas, ordered by scale).
+r3552 shows the threshold principle -- the framework's own derived weight -- is not a new direction: its
+computable forms ARE those endpoints, both of which miss the sky. So the source constraint is exhausted,
+and it is exhausted against the framework's threshold principle itself, not against a constant we chose (58's
+own stated criterion for a clean negative). The +7% / +65% disagreement stands; the source is not the free
+direction that resolves it, by the framework's rule.
+
+What remains (unchanged by this): the disagreement is real and diagnosed (loss of cross-scale phase
+coherence, r3540-r3546); the calibrated q=1..3 Planck positional-parity disagreement is GSRC=1's (r3548-49);
+the source is now closed as a fitting knob (r3550-r3552). The free direction that would fit the sky, if CR
+has one, is not the source -- it is the rate split or the projection, or CR genuinely disagrees with the CMB.
+
+---
+
+## r3553 (branch) — THE PROJECTION MEASURED: it IS the l_A degeneracy (angular-diameter vs comoving), residual is small and MIXED
+
+**58/Daryl's ship:** the last untested step is the k->l projection. CR's closed-S^3 source has been projected
+with FLAT spherical Bessels j_l(k x0); replace them with the hyperspherical Phi^beta_l(chi) for the closed
+geometry (CR arm only; control keeps flat = gate). If the projection is the lever, all four observables move
+together.
+
+**Built + rigorously validated** the hyperspherical Bessel (rescaled log-space normalised-Gegenbauer
+recurrence): matches exact mpmath to <2e-3 across (beta,l) up to (1000,500) incl. the 1e-23 tail, and the
+flat limit Phi->j_l. Control gate byte-identical (HYPER no-op on lcdm by construction). Two numerical
+artifacts caught and NOT reported: a kernel underflow at low-l/high-beta (fixed with the rescaled recurrence),
+and the instrument's l>=100 grid missing the (compressed) real comb (fixed with LMIN).
+
+**⊘ WHAT THE PROJECTION IS.** The closed-S^3 kernel maps a ladder mode L to **l_peak ~ L sin(chi)** (the
+angular-diameter distance D_A = r_0 sin chi), NOT the flat instrument's **L chi = 2.75 L** (comoving D_C).
+With chi_LSS = 2.75 (LSS near the antipode), that is a factor sin(chi)/chi = 0.14 -- a ~7x UNIFORM
+compression of the whole comb -- PLUS a non-uniformity: l_peak/L rises 0.3528 -> 0.3722 across L=71..290
+(the acoustic range), a **5.3% non-uniform stretch**.
+
+**⊘ THE UNIFORM PART IS THE l_A DEGENERACY -- physically identified.** A uniform l-rescale is absorbed by
+l_A and cancels in all four scale-invariant observables (r3546). So the factor-7 bulk of the projection
+correction changes NOTHING in position-ratio / heights / parity. **This is the physical origin of the l_A
+degeneracy r3546 flagged: the "wrong ruler" was the flat comoving distance standing in for the closed
+angular-diameter distance.** The projection's only observable effect is its 5.3% NON-UNIFORMITY.
+
+**⊘ THE NON-UNIFORM RESIDUAL: real but SMALL and MIXED.** Applying the validated single-mode map to CR's
+peak modes (L=71,177,244 -> hyper l=25.0,65.0,90.4):
+| ratio | flat CR | hyper CR | sky |
+|---|---|---|---|
+| l2/l1 | 2.49 | 2.60 | 2.45 |
+| l3/l1 | 3.42 | 3.61 | 3.68 |
+l3/l1 moves 3.42->3.61, TOWARD the sky's 3.68 (outer peak improves); l2/l1 moves 2.49->2.60, AWAY from the
+sky's 2.45 (inner peak worsens). **MIXED -- not "all four move together toward the sky."** The projection
+shifts the outer peak the right way and the inner peak the wrong way.
+
+**⇒ VERDICT.** The projection is a genuine, large geometric effect, correctly identified: the flat instrument
+used the comoving distance where the closed geometry demands the angular-diameter distance. But its bulk is
+the l_A ruler (absorbed, invisible to the observables), and its ruler-independent residual -- the 5.3%
+non-uniformity -- is small and moves the peaks DIFFERENTIALLY (helps l3/l1, hurts l2/l1), not uniformly
+toward the sky. So the projection does not cleanly resolve the disagreement either; it is the physical
+mechanism BEHIND the r3546 curvature, quantified. (Caveat: peak POSITIONS here are the validated single-mode
+map; peak HEIGHTS and the clean full-instrument four-observable numbers need the hyperspherical LOS integrator
+sampled correctly for the near-antipode kernel -- a further build. The position/ratio conclusion stands on
+the validated kernel.)
+
+Instrument: HYPER flag + _phi_hyper_grid (validated) + LMIN; po13_hyperbessel_validate.py carries the kernel
+validation. The projection is measured; it is the ruler, plus a small mixed residual -- not the free
+direction that lands the sky.
+
+---
+
+## r3554 (branch) — 58's two checks on the projection: it's a RELOCATION not a reshaping; the cutoff does not bite
+
+**58's checks alongside r3553, and they correct the premise the test rested on.**
+
+**CHECK 1 -- hyper vs flat on the SAME source (small correction or different spectrum?).** A mode of degree
+L projects to: FLAT l = k D_C (comoving) ; HYPER l ~ L sin(chi) (angular-diameter). Ratio hyper/flat per
+mode: L=71 -> 0.126, L=177 -> 0.133, L=244 -> 0.134, L=500 -> 0.136 -- nearly constant ~0.14 = sin(chi)/chi.
+**It is NOT a few-per-cent reshaping: it RELOCATES the whole comb by ~7x** (flat l=196..670 -> hyper
+l~25..90), the comoving->angular-diameter distance factor chi/sin(chi)=7.21, with an ~8% non-uniformity on
+top (0.126->0.136 across the range). Different spectrum, not a small correction.
+
+**⊘ CORRECTION TO THE PREMISE (58's own).** H14's "projection peaks below l=k D_C: 0.60 at l=3, ->1 by
+l~1000" is the FLAT spherical-Bessel kernel's own peak-below-kD_C -- computed with spherical_jn, the SAME
+for both arms -- NOT the hyperspherical correction. The projection test was motivated by H14 as "a few-%
+scale-dependent error converging across l=220-810"; that number is the flat kernel shape, not the closed
+correction. The genuine hyperspherical correction is the factor-7 distance relocation, dominantly UNIFORM.
+
+**CHECK 2 -- the cutoff's bite.** Peaks 1-3 are dominated by modes L=71, 177, 244 (beta=72,178,245). Under
+the closed cutoff a mode feeds l<=L; the hyper peaks land at l=25, 65, 90 -- all far BELOW L -- so **the
+l<=L cutoff does NOT truncate any of the three acoustic peaks.** (The real "bite" is not truncation but
+relocation: to populate the sky's l=220-810 peak range under HYPER you need L~580-2200, which are heavily
+Silk-damped -- so the comb sits at low l, where the sky has no acoustic peaks.)
+
+**⊘ GATE:** control keeps flat Bessels, HYPER=1 on lcdm byte-identical (maxdiff 0.0) -- no cross-arm leak.
+
+**⇒ THE SIGNATURE 58 ASKED FOR IS NOT SEEN.** "All four move together toward the sky" requires the map's
+effect to be observable; but the factor-7 bulk is a UNIFORM rescale absorbed by l_A (invisible to the four
+scale-invariant observables), and the ruler-independent residual (the ~8% non-uniformity) moves peaks
+DIFFERENTIALLY -- l3/l1 toward the sky, l2/l1 away (r3553) -- not together. So hyperspherical projection is
+the physical origin of the l_A degeneracy (curvature of the unperturbed slice) and does NOT land the sky.
+
+**⇒ THE TRAMPOLINE TEST, HALF DONE (Daryl's framing, 58's refinement).** Hyperspherical Bessels carry the
+CURVATURE of the unperturbed slice -- and that half is now measured: dominantly the ruler, small mixed
+residual, not the fix. What they do NOT carry is the local WARPING the plasma itself creates -- the
+perturbation's own contribution to the map (warped sheet vs merely curved one). That is the well-posed next
+step: a projection map that varies with the local potential, not just the global curvature. Whether it
+exists and lands the four is the open object; it is NOT another term inside the source (all seven of those
+are eliminated). The diagnosis has moved out of the source and into the map, and the curvature-half of the
+map is done.
+
+---
+
+## r3555 (branch) — THE r_0 QUESTION PINNED: the factor 7 is D_C vs D_M (radial vs transverse comoving distance) at the near-antipode
+
+**58's ship (before any build): pin r_0, because the factor 7 is a statement about the curvature radius and nothing else.**
+
+**Required r_0 for the first peak at l=220 under hyperspherical projection** (holding chi=2.75):
+r_0 = 36,490 Mpc -- a factor **7.2** above the derived value. At the derived r_0=5064, hyper gives l_A = 41.8
+(order of magnitude below the sky's 301.6). Table: r_0=5064 -> l_A=42 ; 20000 -> 278 ; 34000 -> 293 ;
+->inf (flat) -> 301.6.
+
+**Corpus's derived r_0 = 5064-5065 Mpc** (appendix_receipts_corpus, the interior-to-observed mode map):
+r_0 = 2^(1/3) Lambda^(-1/2) sinh^(2/3)(u), u = arcsinh sqrt(Om_L/Om_m) -- physically derived, not free.
+Its S^3-to-sky map, DERIVED AND VALIDATED: **l(L) = sqrt(L(L+2)) D_C/r_0**, checked by L=2 -> l=7.78
+(vs P15's 7.8, the low-multipole deficit). Stretch = D_C/r_0 = 2.750 (the instrument's stretch).
+
+**⊘ THE FACTOR 7 IS EXACTLY D_C vs D_M.** The corpus's map uses **D_C = r_0 chi** (RADIAL comoving distance);
+standard closed-FRW projection -- and the hyperspherical Bessel -- uses **D_M = r_0 sin(chi)** (TRANSVERSE
+comoving / angular-diameter distance). In a flat universe D_C = D_M; at the near-antipode chi=2.75 they differ
+by sin(chi)/chi = 0.139 -- the factor 7.2. Nothing else is in it.
+
+**⊘ THE FORK (a framework physics decision, NOT cc54's to make):**
+- If CR's projection uses **D_C** (the corpus's own derived + low-l-validated map, l~2.75L): the FLAT
+  instrument was right all along, it lands the sky, and the hyperspherical Bessel is the WRONG kernel for CR
+  -- the projection lever is moot and the flat projection is JUSTIFIED, not merely assumed. The seven
+  eliminated source terms + the standing disagreement are the result; there is no eighth lever in the map.
+- If CR's projection uses **D_M = r_0 sin(chi)** (standard closed-FRW, the hyperspherical Bessel): then with
+  the physically-derived r_0=5064 and chi=2.75, CR's acoustic comb sits at l_A~42, a factor 7.2 below the sky
+  -- a HARD INCONSISTENCY between the substrate curvature scale (r_0, derived from Lambda and Om) and the CMB
+  acoustic scale, fixable by NO source term or map refinement. The most consequential result of the arc.
+
+**⊘ WHAT THE CORPUS HAS ALREADY COMMITTED TO.** The corpus DERIVED and VALIDATED l = sqrt(L(L+2)) D_C/r_0
+(L=2 -> 7.78) -- i.e. it has ALREADY chosen D_C (the radial comoving distance) for the S^3-to-sky map, and
+cross-validated it on the low-multipole deficit on two transfers. Standard closed-FRW physics says a closed
+slice projects with the TRANSVERSE distance D_M = r_0 sin(chi), not D_C. So the corpus's validated map either
+(a) is the correct CR projection by the layer diffeomorphism (D_C, and my hyperspherical D_M is the wrong
+kernel for this framework), or (b) made the flat-space identification D_M = D_C, valid only for chi small,
+and used it at chi=2.75 where it fails 7-fold. That is the single decision the whole projection question
+reduces to, and it is 58/Daryl's, being a claim about which distance the framework's map carries.
+
+**⇒ Held per 58: the plasma-warping (potential-dependent map) build is NOT the right next object until this is
+resolved -- a comb in the wrong place by 7-fold for a reason that has nothing to do with local warping. Fix
+the location (the D_C-vs-D_M decision) first. The hyperspherical kernel (validated, r3553) stands ready if
+the answer is D_M.**
+
+---
+
+## r3556(branch) -- THE FORK IS RESOLVED BY GEOMETRY: D_M is forced; the factor 7 is near-antipodal magnification, a HARD PREDICTION
+
+**58's ruling (accepted): D_M is not a choice.** On a closed S^3 the 2-sphere at radial coordinate chi
+has areal radius r_0 sin(chi); a ruler of physical length L there subtends L/(r_0 sin chi). ANY length->angle
+map must carry sin(chi). D_C = r_0 chi is the RADIAL (null-geodesic / light-travel) distance and is the wrong
+object for an angular projection. So the corpus's validated l = sqrt(L(L+2)) D_C/r_0 is **a flat-space formula
+applied to a closed geometry** -- and its validation (L=2 -> 7.78 on the low-l deficit) tested the *stretch*,
+not the *curvature*. The fork is not "D_C or D_M": D_M is correct. The live question is whether **chi = 2.75**
+is right, because chi alone carries the whole factor.
+
+**chi computed from CR's OWN determined quantities (from scratch, not the hardcode):**
+- D_C = integral_0^{z*} c dz/H(z), z* = 1089.8, Planck-2018 LCDM background (the rate CR shares): **13867 Mpc**
+  (corpus hardcode 13927; 0.4%). This is just the standard comoving distance to last scattering.
+- r_0 = 2^(1/3) Lambda^(-1/2) sinh^(2/3)(u), u=arcsinh sqrt(OL/Om), Lambda=3 OL (H0/c)^2: **5066 Mpc**
+  (corpus 5064). CR's S^3 areal radius, derived from Lambda and Om -- not free.
+- **chi = D_C/r_0 = 2.737 rad.** Corpus's 2.75 confirmed independently. **PAST THE POLE** (pi/2 = 1.571),
+  only **0.40 rad short of the antipode** (pi = 3.1416). Last scattering sits in the near-antipodal cap.
+
+**The magnification, and its sign (58's checks, both pass):**
+- sin(chi)/chi = **0.144**, i.e. angular scales are MAGNIFIED by **1/0.144 = 6.95x**. This IS the "factor 7".
+- SIGN: near the antipode a fixed physical sound horizon subtends a LARGER angle => peaks at LOWER l.
+  Predicted l1: 220 (flat/D_C) -> **220 x 0.144 = 32** (angular/D_M). First three: 32 / 77 / 116.
+  This MATCHES the exact hyperspherical-Bessel comb measured at r3553 (l ~ 27-93, factor-7 compression).
+  The exact closed-S^3 radial function does what the heuristic D_M says -- the calculation obeys the geometry.
+- L=2 map: corpus flat l = 7.74 (= its own 7.78); forced angular l = 1.11 (into the quadrupole floor).
+
+**⊘ THE FINDING (the most consequential of the arc, stated as such).** Taken at face value with the
+geometrically-forced angular distance D_M = r_0 sin(chi), CR's own determined inputs (D_C to LSS = 13867 Mpc,
+r_0 = 5066 Mpc from Lambda) place last scattering **near the antipode of its S^3 (chi = 2.74)**, which
+magnifies the acoustic scale by ~7 and puts the first acoustic peak at **l1 ~ 32**, a factor of 7 BELOW the
+observed 220. This is NOT a projection bug and NOT a source-term lever: it is a hard geometric prediction of
+the substrate, and it disagrees with the sky by a FACTOR, not the +7% previously reported. The seven
+eliminated source terms are downstream of this -- they were tuning a comb whose fundamental location the
+geometry already fixes seven-fold wrong.
+
+**⊘ THE ONE HONEST TENSION (routed to 58/59, not resolved here).** The corpus's low-l receipt (sec:largescale)
+VALIDATED the flat D_C map by reproducing the observed low-l suppression ell(ell+1)C_ell = 0.12/0.10/0.20/
+0.65/0.92/0.99 at ell=2..7, recovered by ell~8 -- and that fit REQUIRES L=2 -> ell~7.8, i.e. it used D_C.
+Under the forced D_M map, L=2 -> ell~1.1 and that suppression story relocates to ell~1. So the corpus already
+has a *validated-looking* result that stands only on the flat-on-closed map 58 just ruled out. Two readings:
+  (a) the low-l validation is itself the same flat-on-closed error (it fit the stretch, and "worked" because
+      the low-l deficit is broad and undiscriminating -- 58's read), or
+  (b) CR's layer diffeomorphism genuinely assigns a NON-metric angular distance to the projection (the
+      "trampoline"/plasma-warping idea), in which case D_C could be right FOR CR and the standard-FRW D_M
+      argument does not apply to the warped sheet.
+  58 has ruled D_M forced *by the S^3 metric*; reading (b) is the only escape and it requires the projection
+  to NOT be the S^3 metric's angular distance -- which is exactly the held plasma-warping object. So the
+  held build is no longer "the wrong next object": it is the ONLY thing that could rescue D_C, and the finding
+  above is what stands if it cannot.
+
+**⇒ STATUS: the arc's result is a FACTOR-7 acoustic-scale disagreement forced by near-antipodal last
+scattering on CR's derived S^3 -- stated as a hard prediction, not a percentage residual. Held for 58/59:
+(1) accept the finding as the arc's headline, and/or (2) decide whether the layer diffeomorphism carries a
+non-metric projection distance (the plasma-warping build) that could restore D_C. Nothing here is cc54's to
+decide; the measurement is done and it is unambiguous.**
+
+---
+
+## r3557(branch) -- RETRACTION of r3553-r3556: the projection is settled by prop:flat, NOT a D_C/D_M fork. CR's distance slicing IS flat; the hyperspherical kernel is the one CR "does not have"
+
+**I got r3556 wrong, and the corpus already says exactly why.** I read the mode-map receipt
+(l = sqrt(L(L+2)) D_C/r_0) but NOT the Proposition that governs it. CR_cosmology.tex sec:largescale:
+
+- **Proposition [prop:flat]:** in the fundamental-observer frame the constant-tau slice has induced
+  3-metric dr^2 + r^2 dOmega^2 -- Riemann vanishes identically. **CR's distance slicing is exactly flat R^3**
+  (the E=1 marginally-bound SdS congruence = flat-LCDM, k = E^2-1 = 0). Receipt verify_geometry.py.
+- **The decoupling:** the DISTANCE slicing is the flat constant-tau one (Omega_k=0, no curvature term in
+  redshift-distance); the closed S^3 is the ORTHOGONAL slicing, constant tau~=tau+chi. "A literal
+  closed-Friedmann reading would put Omega_k = -Omega_L ~ -0.685 into the distance relation and be excluded;
+  CR avoids that not by tuning but because its distance slicing is the flat one."
+- **Therefore, verbatim:** "the comoving angular-diameter distance is **D_M = D_C** ... the transfer is the
+  discrete closed-S^3 spectrum projected through the FLAT spherical Bessel j_l(k_L D_C), **not the
+  hyperspherical transfer of a literal closed universe: that transfer carries the closed distance relation,
+  which CR does not have**, and would (wrongly, here) deliver the lowest mode to the quadrupole and no deficit."
+  Receipt verify_closedS3_nonsync.py, lines 20-21: r0 = "present S^3 areal/curvature radius (sets the SOURCE
+  quantization)"; D_C = "flat comoving (= angular-diameter) distance (the PROJECTION)".
+
+**So the r3555 "fork" was a false one.** It is not D_C-or-D_M by preference, and NOT by epoch: it is settled by
+prop:flat. In CR the S^3 radius r_0 enters ONLY as the source mode-quantization scale k_L = sqrt(L(L+2))/r_0;
+it is NEVER a distance denominator in an angular map, because the distance slicing is flat and carries no
+sin(chi). The factor 7 in r3553-r3556 was the artifact of projecting through the closed DISTANCE relation
+(hyperspherical Bessel) -- exactly the kernel the corpus names as "the closed distance relation which CR does
+not have." **The hyperspherical kernel I validated at r3553 is the WRONG kernel for CR.** RETRACTED: the
+"D_M forced / factor-7 magnification / last scattering near the antipode" reading of r3556.
+
+**The two 58-questions, answered on the record (checked, not reasoned-from):**
+1. *Which epoch is r_0 = 5064?* The PRESENT epoch. Paper: "present S^3 areal radius, the Nariai amplitude
+   2^(1/3)/sqrt(Lambda) at present epoch u = arcsinh sqrt(Om_L/Om_m) ~ 1.18." Receipt comment: "present S^3
+   areal/curvature radius." My recompute: u is a today-quantity, r_0 = 5066 Mpc. NOT the throat.
+   The throat (near-horizon dS_2 x S^2) is 1/sqrt(Lambda) = 3105 Mpc. The S^3 areal radius grows only
+   **1.63x** throat->today -- it is tied to Lambda (the de Sitter radius), NOT to the cosmological scale
+   factor a(t) (~1100x since LSS). So even the epoch-mixup 58 hypothesised does not bring chi below pi/2:
+   chi(today) = 2.74, chi(throat) = 4.47, both past the pole. The rescue mechanism does not hold on its own
+   terms -- but it is moot, because r_0 is not a distance in CR's projection at all.
+2. *Daryl's structural picture -- minimal S^3 through the branch point to the seam, then cosmological
+   expansion?* Yes, the geometry has a throat (minimal S^3 at 1/sqrt(Lambda), the dS_2 x S^2 near-horizon
+   where the angular no-hair / throat tower lives) and a present S^3 (r_0). The corpus keeps them distinct and
+   explicitly warns (line 1223) that the throat-tower index is NOT the observable CMB multipole. But the
+   projection to the sky does not use either radius as a distance: prop:flat makes the photon path flat.
+
+**⇒ STANDING RESULT (reverts to pre-r3553, with the flat projection now JUSTIFIED rather than assumed).**
+CR's determined GSRC=1 composition OVER-DRIVES the sky: position +7% (l1/l_A = 0.7825 vs 0.7312), amplitude
++65% (P1/P2 = 3.665 vs 2.217), positional parity 4x -- with the FLAT projection j_l(k_L D_C) now standing on
+a Proposition (prop:flat), not on an unexamined identification. The disagreement is a percentage-level
+over-drive, NOT a factor. The seven eliminated source terms + the diagnosed loss of cross-scale phase
+coherence are the result; the projection is not an eighth lever -- it is fixed by CR's flat distance slicing.
+The plasma-warping build is not needed to rescue D_C: D_C is already justified. **This closes the projection
+question. cc54 owns the r3553-r3556 error: I applied the closed-Friedmann default 58 warned against, having
+read the map but not the Proposition that fixes it.**
+
+---
+
+## r3558(branch) -- HANDOFF WRITTEN. This log is superseded by PO13_HANDOFF.md for the next node.
+
+The open problem, what is eliminated, the sharp unsolved core (the L1/L2 split-rate question), the decisive
+next experiment, the instrument + discipline, the trap, and the CI/ledger hazards are assembled into a single
+readable top-level document -- **PO13_HANDOFF.md** -- so a fresh head does not have to mine this 2800-line
+append-only log to pick the problem up. This log remains the raw record; the handoff is the map. PR #22 is
+the standing result. cc54 + 58 are spent on PO-13; it is left unsolved, in the clearest shape available, for
+a fresh node to attack -- specifically the split-rate experiment (background on the geometric L1 rate, phase
+clock on the content L2 radiation-included rate), which has not been run and is where a solution, if any, lives.
