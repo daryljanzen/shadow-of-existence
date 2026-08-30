@@ -247,6 +247,32 @@ else.*
 
 ---
 
+## ⛭⛭⛭ `I13` — **THE ISOTROPY STRATIFICATION IS A LEDGER OF FIRST INTEGRALS, AND IT RUNS SHORT EXACTLY WHERE THE CARTER CONSTANT IS NEEDED** — r3640
+
+*A Killing vector contributes one **linear** first integral of the geodesic flow; the isometry algebra's
+Casimir contributes a quadratic one built from those same vectors and needs no new tensor. Against the
+**four** integrals in involution a four-dimensional geodesic flow requires:*
+
+| stratum | isotropy | in involution | count | |
+|---|---|---|---|---|
+| Type O, de Sitter | 10 | norm, $E$, $L^{2}$, $L_z$, and more | ≥4 | over-determined |
+| **Type D, SdS** $\mathbb{R}_t\times SO(3)$ | **4** | norm, $E$, $L^{2}$, $L_z$ | **4** | ⛭ integrable **on Killing vectors alone** |
+| **Type D, Kerr–de Sitter** | **2** | norm, $E$, $L_z$ | **3** | ⛔ **short by one** |
+| Type I, Zipoy–Voorhees | 2 | norm, $E$, $L_z$ | 3 | ⛔ short by one |
+| the wall, Type N | 0 | norm only | 1 | no linear integrals at all |
+
+⇒ ***The drop in isotropy dimension across the Type-D stratum is the precise place at which a hidden
+symmetry stops being a redundancy and becomes a requirement***, *and the deficit is exactly what `P09`'s
+Killing tensor makes up. **`P12` lists the dimensions and `P09` supplies the tensor, and neither says the
+first is the reason for the second.** Landed in `sec:strata`.*
+
+⌗ *`sec:bracket` also confirms the setting half of the prediction: $[\fh,\fh]\subset\fh$,
+$[\fh,\fm]\subset\fm$, $[\fm,\fm]\subset\fh$ is the symmetric-space grading, which is the structure
+this field's separability theory is built on — that half is already `K1`'s recognition and owes nothing
+further.*
+
+---
+
 ## ⛭⛭⛭ THE LOCATOR — every paper, the sections named, the prediction stated — r3626
 
 > **⛔ THIS REPLACES THE HIGH/MEDIUM/LOW TABLE BELOW, WHICH WAS DOING THE WRONG JOB.** *A rank is a licence
@@ -274,7 +300,7 @@ else.*
 | 5 | **`P03`** | `sec:params` · `sec:throat-angle` · `sec:tour` · `sec:winding` | *three coupled projections of one motion is the shape of an **action-angle** description; is the sky angle an angle variable, and is $2M$ its conjugate action?* | ⛭ **REDIRECTED — `I10`, landed.** *The prediction was wrong and the paper was right: the content is in **`sec:cubic`/`prop:turning`**, a section the abstract did not point at, and it is the **mechanical analogue**, not action-angle* |
 | 6 | **`P15`** | `sec:background` · `sec:transmission` · `sec:largescale` | *$\sinh^{2/3}$ is a second exactly-integrable law beside `P02`'s cycloid; the WKB/adiabaticity discussion is this field's expansion* | ⛭ **CONFIRMED — `I11`, landed.** *And REDIRECTED on the address: the content is in `sec:properframe`* |
 | 7 | **`P08`** | `sec:kernel` · `sec:trichotomy` · `sec:cosmology` | *"$T_{\mu\nu}=0$ **is** a first-order linear ODE" is a solvability claim; the three constant-curvature slicings are a classification of solvable cases* | ⛭ **CONFIRMED, and the address was right** — *`I12`, landed. The first prediction to hit both paper and section* |
-| 8 | **`P12`** | `sec:anchor` · `sec:bracket` · `sec:strata` | *a **section selecting a flow** on a base is this field's setting; is that flow integrable, and does the stratification index its integrals?* | ⟐ **owed** |
+| 8 | **`P12`** | `sec:anchor` · `sec:bracket` · `sec:strata` | *a **section selecting a flow** on a base is this field's setting; is that flow integrable, and **does the stratification index its integrals?*** | ⛭ **CONFIRMED on both, `sec:strata`** — *`I13`, landed. The prediction's second clause was the right question and it is answered yes* |
 | 9 | **`P16`** | `sec:lap` · `sec:rate` · `sec:interior` | *the lap is a closed orbit; "its exact closed solution" for the progenitor interior is another integrable case* | ⟐ **owed** |
 | 10 | **`P01`** | `sec:3` · `sec:5` | *horizon generators are a null geodesic congruence; does the metric-singularity condition have a first-integral statement?* | ⟐ **owed** |
 | 11 | **`P05`** | `sec:relations` · `sec:conjugacy` · `sec:alpha-invariant` | *"the single invariant is the geometry" — is that invariant in this field's sense, and does the $\alpha$-action have a conserved charge?* | ⟐ **owed** |
