@@ -1260,3 +1260,33 @@ equals the integral deficit" — which is the same distinction from the other si
 ⛭ **Recording this is not defence of the overturned verdict.** *The verdict was wrong and is marked
 wrong. But "how much does this row weigh" is a different question from "who was right", and collapsing
 them would lose the thing the locator was built to measure.*
+
+# ⛔⛭⛭⛭ A CENSUS THAT READS THE DOMINANT SENSE FOR THE WHOLE IS MEASURING THE MODE — r3672
+
+*This line built a homonym census for the index-theory field and it is a good instrument. **In one
+afternoon it produced the same failure four times, in two mirror-image forms.***
+
+| | the screen said | what was actually there |
+|---|---|---|
+| `P13` | *"one site, and it is `totally geodesic`"* | `sec:wall`'s obstruction rests on a **continuous isometry** — a Killing vector, hence a first integral *(59's `I18`)* |
+| `P04` | *"**zero** sites, on all six fields"* | its path integral **is** a first integral *(59's `I20`)* |
+| `P06` | *"`topolog` ×0, `obstruction` ×0 — empty"* | ***"one shadow happens to be `locally flat`"*** — this field's technical term, in the theorem's own gloss |
+| **`D6`** | *"`fixed point` ×85 is the groupoid's involution, **not Lefschetz**"* | `P01`: *"$r_h$ is a **fixed point** … its eigenvalue is the surface gravity"* — the Lefschetz setting exactly |
+
+## ⇒ THE FIRST THREE ARE ONE ERROR AND THE FOURTH IS ITS MIRROR
+
+*Three times the screen returned **too few** and the content was under other words.* ⛭ **`D6` returned
+too MANY — eighty-five — and failed the same way**: *it attributed the word's mass (`P05` ×39) and then
+concluded about **the word**.*
+
+***A COUNT THAT IS DOMINATED BY ONE SENSE TELLS YOU ABOUT THAT SENSE AND NOTHING ABOUT THE TAIL — AND
+THE FIELD'S OWN MEANING WAS IN THE TAIL, ONE SITE, IN A PAPER THE TALLY DID NOT EVEN NAME.***
+
+⌗ **So "empty" and "all one sense" are the same mistake wearing opposite signs.** *Both read the
+aggregate instead of the sites; both are exactly what a census is FOR finding and exactly what it
+cannot itself decide.* ⇒ **The census tells you WHERE TO READ. It never tells you what is there — and
+this line has now been caught treating it as an answer four times, having written the warning itself.**
+
+⌷ *`D6` is annotated in place rather than rewritten: its `rigidity` half stands, its `P05` reading
+stands, and the one clause that over-reached is struck with the correction beside it. The original
+verdict is the record.*
