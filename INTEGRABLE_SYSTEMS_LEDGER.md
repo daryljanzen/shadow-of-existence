@@ -119,7 +119,7 @@ files, **which is not reading and this programme's own absolute rule says so**. 
 `cor:carter` and `rem:carter-chain` in full *at the site*, which is enough to justify the clause that landed
 there and **is not a verdict on `P09` for this field**.*
 
-⇒ ***So: 2/17 papers read as of r3599 — `P09`, `P07`.*** *A completed bake's reach close reads, for comparison: "all seventeen papers
+⇒ ***So: 3/17 papers read as of r3601 — `P09`, `P07`, `P11`.*** *A completed bake's reach close reads, for comparison: "all seventeen papers
 WORKED or CHECKED-NEGATIVE **by name** … read in full this pass, three sweeps across all seventeen bodies."
 **That is the standard this ledger has not yet met and must not appear to have met.**
 
@@ -151,12 +151,12 @@ in the register below.***
 | **`I1`** | *does the field recognise `P09`'s origin for the Carter constant?* | ⛔ **BITE** — (a) is separability returning its own equivalent; (b) is the origin. **Landed** in `P09 rem:carter-chain`. *Rests on a site read of two passages; `P09`'s reach verdict is still owed* |
 | **`I2`** | *is the corpus's separability Liouville integrability, or something weaker?* — `separable` ×23, `Liouville` ×0 | ⟐ open |
 | **`I3`** | *`P09` says reachability is governed by the count of Killing **vectors**, not tensors. Is that the field's own distinction between symmetry and hidden symmetry?* | ⟐ open |
-| **`I4`** | *the corpus has `first integral` ×4 and `constant of motion` ×2 and no statement of how many a geodesic has* | ⟐ open |
+| **`I4`** | ***sharpened by `P11`'s read, r3601.*** *`P11` carries two conserved quantities in this field's sense — the twist $c$ and the shear charge $C_0$ — names them with two different words, and never asks whether its homogeneous sector is **integrable** in Liouville's sense. **The question the field owns is whether the number of independent commuting integrals matches the degrees of freedom**, and the corpus asks it of no sector* | ⟐ **open, and now well-posed** — *settling it needs a degrees-of-freedom count this pass has not done, and must not be guessed* |
 | **`I5`** | *`V5` (variational) landed a homothety conserving its charge on the null cone only. Is that a first integral in this field's sense, and does it enter the count?* | ⟐ open |
 
 ---
 
-## ⛭ THE REACH REGISTER — one paper, one verdict, read. **2 of 17.**
+## ⛭ THE REACH REGISTER — one paper, one verdict, read. **3 of 17.**
 
 | paper | verdict | what was read, and what it holds |
 |---|---|---|
@@ -165,7 +165,10 @@ in the register below.***
 | | ⌗ **the one thing owed here is landed** | `I1`, at `rem:carter-chain`, `r3595` |
 | **`P07`** | ⛭ **WORKED, by citation — and no change owed** | *Its `sec:` on standing features recovered read in full.* The field's claim appears **once**, as one of three standing features of general relativity recovered as consequences rather than inputs: *"the hidden symmetry of the Type-D family---the Killing tensor and Carter constant that render Kerr geodesics integrable, which general relativity carries without explanation---is the substrate's own maximal symmetry surfacing in the **separable corner**"*, citing `P09`. ⌗ **That is correct behaviour**: `P07` states the recovery and hands the derivation to the paper that makes it, which is where `I1`'s clause went. `Killing tensor` ×1, `Carter` ×7, `separable` ×3 — a statement of result, not a working site |
 | | ⛔⛭ **AND `P07` VERIFIES `I0`'s COLLISION INSIDE ONE PAPER** | *the two senses sit ~1600 characters apart: `⑥` **"render Kerr geodesics integrable"**, and `①` **"the $r=0$ crossing is integrable"** — the second in the norm discussion, about the same construction. ***This is the collision the canon row exists for, demonstrated rather than inferred from a cross-paper count.*** `I0` was provisional on being grep-scored; **this instance is read, and it is the strongest single piece of evidence for the row*** |
-| **the other fifteen** | — | **not read. No verdict.** |
+| **`P11`** | ⛭ **WORKED — two genuine first integrals, and the field's own homonym** | *`sec:` on the unpolarized cut and the homogeneous sector read in full.* **Two conserved quantities in this field's sense**: the **twist** $c=R\,e^{2P}Q_t=\mathrm{const}$, obtained by integrating the $Q$ wave-map equation once and named `first integral` — *and it carries physics, since the parity acts on it as $c\mapsto-c$, so **the graviton's handedness is the sign of a conserved charge***; and the **canonical shear charge** $C_0:=R_t-2R\psi_t$, from `AREA` $-\,2\,$`WAVE` cancelling the $\Lambda$ source identically, giving $\dd s/\dd\tau=-C_0/2V$ so anisotropy decays as the inverse volume. `Killing vector` ×6 |
+| | ⌗ **and its `integrability` ×1 is sense `⑤`, not this field's** | *$\partial_t\gamma_z=\partial_z\gamma_t$, the cross-derivative condition on a first-order quadrature, holding identically on shell. **A third paper confirming `I0` from a third sense** — `P09` field, `P07` both, `P11` the PDE condition* |
+| | ⟐ **what the read produced is a sharper QUESTION, not a finding** | *see `I4` below. **`P11` names its two integrals with two different words and never asks whether the homogeneous sector is integrable in this field's sense.** Whether it is requires counting degrees of freedom against commuting integrals, which this pass has not done. ***Recorded as a probe. A read that sharpens a question rather than producing a claim is a legitimate outcome, and writing it up as a finding is how a ledger acquires a manufactured landing.*** |
+| **the other fourteen** | — | **not read. No verdict.** |
 
 ---
 
