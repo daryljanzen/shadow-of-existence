@@ -93,7 +93,7 @@ than as the normal state.***
 |---|---|---|
 | **L8.2 the sorting** · **L8.3 the marriage** — two relations to one circle, on it and tangent to it; the product direct because the relations are independent | **LANDED** | `P14 sec:twofactors`, written for this lane at r1161. **Pointer owed** |
 | **the seventh face — "one circle"** | **LANDED** | `p0 sec:unification`. **Pointer owed** |
-| **$D_6=S_3\times\mathbb{Z}_2$, gauged chirality / global flavour** | **LANDED** | eight papers carry it. **Pointer owed at the sites that rest on the count** |
+| **$D_6=S_3\times\mathbb{Z}_2$, gauged chirality / global flavour** | **LANDED** | *eight papers carry it, and the address is now given rather than the count*: **`P07` `sec:general-reach`, `P03` `sec:hinge-geometry`, `P12` `sec:discrete`, `p0` `sec:shadows`, `P14`; the chirality/flavour reading in `P11` `sec:chirality`, `P05` `sec:deck`, `P13` `sec:open`, `P02` `sec:r0-tee`**. **Pointer owed at the sites that rest on the count** *(addresses supplied r3660)* |
 | **L8.1-h the $\sqrt[3]{2}$** — one factor of two inside one cube root, exact for every $M,\alpha$; the tie to a horizon *root* Nariai-only | **LANDED** | P7, receipt `P07_cube_root_two_is_the_2M_over_M`. **Pointer owed** |
 | **L8.4 the three critical values of $f$** — the null condition $|\dd r/\dd s|=1$ met exactly three times, at two loci | **LANDED** | P7 `sec:lift-initial-rate`, and annotated on `fig:F-triptych` panel (b) with the cubic family $f(f-2)=0$ spelled out. **Pointer owed** |
 | **L8.5 the third energy** $E^2=2$ | **LANDED** | P7, same site |

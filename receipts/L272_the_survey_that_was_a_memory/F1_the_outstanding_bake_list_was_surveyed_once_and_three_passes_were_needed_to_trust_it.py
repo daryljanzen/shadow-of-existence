@@ -54,6 +54,10 @@ are ORDERED READING, and the bake that follows is what decides.
     python3 receipts/L272_the_survey_that_was_a_memory/F1_the_outstanding_bake_list_was_surveyed_once_and_three_passes_were_needed_to_trust_it.py
 
 Written r3162, `L-272`.  Stated for reversal.
+
+NOT-A-FIELD-BAKE-RECEIPT: an audit of the programme's own records, not a probe of any field: it mentions
+field bakes as its subject matter rather than settling a field's probe, so no ledger
+names it and none should.  Declared at r3660 rather than inferred.
 """
 import os
 import re

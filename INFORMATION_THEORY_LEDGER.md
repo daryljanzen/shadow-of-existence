@@ -6,6 +6,8 @@ job: The information-theory field-bake ledger — what bit, what bounced, and wh
 sources: [chat]
 ---
 
+> ⛭ **`N1`'s RECEIPT — named here at r3660, because it was named nowhere.** *`receipts/p0_geometric_core/N1_the_entropy_and_the_fine_tuning_factor_are_one_number.py`* — *`p0`'s identity checked: the de Sitter entropy and the cosmological-constant factor are **one number**.* ⌗ *It ran, it was registered, and a paper cited it; **the ledger whose probe it settles did not name it**, so the computation had no argument attached. `check_citation_chain` now fails on that.*
+
 # THE INFORMATION THEORY LEDGER — the field whose whole footprint was an artefact
 
 > **▣ THIS FIELD BOUNCED, AND THAT IS THE RESULT RATHER THAN A FAILURE TO FIND ONE.** *It was ranked
