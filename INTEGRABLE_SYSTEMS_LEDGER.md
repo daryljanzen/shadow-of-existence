@@ -119,7 +119,7 @@ files, **which is not reading and this programme's own absolute rule says so**. 
 `cor:carter` and `rem:carter-chain` in full *at the site*, which is enough to justify the clause that landed
 there and **is not a verdict on `P09` for this field**.*
 
-⇒ ***So: 1/17 papers read as of r3597 — `P09`.*** *A completed bake's reach close reads, for comparison: "all seventeen papers
+⇒ ***So: 2/17 papers read as of r3599 — `P09`, `P07`.*** *A completed bake's reach close reads, for comparison: "all seventeen papers
 WORKED or CHECKED-NEGATIVE **by name** … read in full this pass, three sweeps across all seventeen bodies."
 **That is the standard this ledger has not yet met and must not appear to have met.**
 
@@ -147,7 +147,7 @@ in the register below.***
 
 | # | probe | verdict |
 |---|---|---|
-| **`I0`** | `integrable` ×14, six senses, two this field's | ⛔ **BITE, PROVISIONAL** — scored from grep windows, not from a read. The six senses are each verified at a site; **whether the count is complete is not** |
+| **`I0`** | `integrable` ×14, six senses, two this field's | ⛔ **BITE** — *provisional at `r3595` on being grep-scored; **`P07`'s read at `r3599` supplies a verified instance of the collision inside one paper**, which is the row's evidence. Whether the ×14 count is complete is still open on the unread fifteen* |
 | **`I1`** | *does the field recognise `P09`'s origin for the Carter constant?* | ⛔ **BITE** — (a) is separability returning its own equivalent; (b) is the origin. **Landed** in `P09 rem:carter-chain`. *Rests on a site read of two passages; `P09`'s reach verdict is still owed* |
 | **`I2`** | *is the corpus's separability Liouville integrability, or something weaker?* — `separable` ×23, `Liouville` ×0 | ⟐ open |
 | **`I3`** | *`P09` says reachability is governed by the count of Killing **vectors**, not tensors. Is that the field's own distinction between symmetry and hidden symmetry?* | ⟐ open |
@@ -156,14 +156,16 @@ in the register below.***
 
 ---
 
-## ⛭ THE REACH REGISTER — one paper, one verdict, read. **1 of 17.**
+## ⛭ THE REACH REGISTER — one paper, one verdict, read. **2 of 17.**
 
 | paper | verdict | what was read, and what it holds |
 |---|---|---|
 | **`P09`** | ⛭ **WORKED — the field's home paper** | *`sec:pd` read in full.* It carries the separable (Carter) cut with the additive form $\Sigma=r^{2}+p^{2}$ and the two Killing fibres; `thm:pd` proving the structure functions are quartics with $-\Lambda/3$ pinned by the substrate, so the rotating vacuum kernel is the complete separable Type-D vacuum-$\Lambda$ family, Kerr--NUT--(A)dS; `cor:carter`; and `rem:carter-chain`. **`Carter` ×17, `separable` ×18, `Killing tensor` ×7, `Killing vector` ×9 — the field's objects are concentrated here.** |
 | | ⌗ **and it uses the field's own distinctions correctly** | *the theorem is scoped to **additive** separability, and acceleration is excluded because the Plebański--Demiański members "live in the **conformally separable** form and are not vacuum". **That is Carter's own classification of separable systems, used to do real work** — it is what keeps acceleration out of the kernel — and it is used right.* |
 | | ⌗ **the one thing owed here is landed** | `I1`, at `rem:carter-chain`, `r3595` |
-| **the other sixteen** | — | **not read. No verdict.** |
+| **`P07`** | ⛭ **WORKED, by citation — and no change owed** | *Its `sec:` on standing features recovered read in full.* The field's claim appears **once**, as one of three standing features of general relativity recovered as consequences rather than inputs: *"the hidden symmetry of the Type-D family---the Killing tensor and Carter constant that render Kerr geodesics integrable, which general relativity carries without explanation---is the substrate's own maximal symmetry surfacing in the **separable corner**"*, citing `P09`. ⌗ **That is correct behaviour**: `P07` states the recovery and hands the derivation to the paper that makes it, which is where `I1`'s clause went. `Killing tensor` ×1, `Carter` ×7, `separable` ×3 — a statement of result, not a working site |
+| | ⛔⛭ **AND `P07` VERIFIES `I0`'s COLLISION INSIDE ONE PAPER** | *the two senses sit ~1600 characters apart: `⑥` **"render Kerr geodesics integrable"**, and `①` **"the $r=0$ crossing is integrable"** — the second in the norm discussion, about the same construction. ***This is the collision the canon row exists for, demonstrated rather than inferred from a cross-paper count.*** `I0` was provisional on being grep-scored; **this instance is read, and it is the strongest single piece of evidence for the row*** |
+| **the other fifteen** | — | **not read. No verdict.** |
 
 ---
 
