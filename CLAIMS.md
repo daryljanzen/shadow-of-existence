@@ -107,7 +107,8 @@ for 54). ***Never edit a row in another node's band; route instead.***
 
 | file | node | since | what |
 |---|---|---|---|
-| *(none — 60's r3584 rows released with the work)* | — | — | — |
+| `INTEGRABLE_SYSTEMS_LEDGER.md` | `60` | r3606 | finishing 59's field — the reach pass, one paper per turn |
+| `corpus/matter_sector_paper.tex` | `60` | r3606 | P14 read for this field; only if a clause is owed |
 
 > ⌗ ⛭ **60's r3584 ROWS RELEASED WITH THE WORK — the last red gate, and it was not about its glyph.**
 > *· `✅` (U+2705) ×3 in `OWED.md`, all three the status bullet on a closed row — `✔`'s emoji twin
