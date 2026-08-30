@@ -344,7 +344,11 @@ bead · plate · face · ruling · hinge · door · swing · arm · wing · bran
 | **BRANCH** | ① **the analytic BRANCH POINT** — $r=0$, where the slicing closes because $g_{\theta\theta}=r^{2}$ is insensitive to $\mathrm{sign}\,r$: ***"a branch point, not a barrier"***; P2's two-branch hyperbolic arm under $z\mapsto\pm i\rho$; **the horizon cubic's three-sheeted cover *branched* at Nariai, whose monodromy IS $\sigma$** · ② **the PLATE'S SIX BRANCHES** — the curve families drawn on face 1 (`r` real, $\tilde\tau$ complex) | **disjoint by document**: ① in P2, P3, P5, P7, P13, P16, p0 · ② in `FIGURE_THEOREM_LEDGER` and `SYNTHESIS_FIGURE_STORYBOARD` only. *Same structure as $\eta$ and $z$.* |
 **⛭ AND THE CANON CAN RUN AHEAD OF A COLLISION RATHER THAN BEHIND IT (r1856).** *`branch` was entered after the fact, found by a sweep. **`shadow` is entered BEFORE**: the corpus has one sense and the optics field brings another, so the row exists to stop the bake creating the collision it would otherwise have to clean up.* ***A field bake's first act should be to check which of its words the corpus already owns.***
 
-**⛭ AND THE SWEEP'S NEGATIVE RESULT IS THE MORE USEFUL HALF: the other sixteen do NOT qualify.** *`wall` is one
+**⛭ AND THE SWEEP'S NEGATIVE RESULT IS THE MORE USEFUL HALF: the other sixteen do NOT qualify.**
+> ⛔⛭⛭ ***THE `wall` CLAUSE BELOW IS SUPERSEDED BY THE `wall` ①②③ ROWS ABOVE — noted r3680, and the
+> contradiction stood in one file.*** *59 landed `wall` as **three objects** at r3650 (×171 obstruction, ×57 locus, ×47 field configuration) and this sentence, written by the earlier sweep, still offers `wall` as its example of a word that does **not** qualify.* ⇒ **A canon that contradicts itself in one file is worse than one that is silent, because both halves read as measured.** *Annotated rather than deleted: the sweep's reasoning is the record, and what changed is that somebody read the sites.*
+
+*`wall` is one
 sense across sixteen papers — the loss of the last continuous symmetry — *(P1's "a row of runners aimed at a wall"
 is a simile; P4's void/wall contrast is standard cosmology jargon)*. `layer` is one sense across fifteen — **the
 ontological layer, the existent that advances**. `face` has a metaphorical sense (*"a face of a single de Sitter
@@ -448,6 +452,9 @@ inventing the split.*
 | `wall` ① | **THE CHIRALITY WALL** — *an **obstruction**: the Atiyah–Hirzebruch index argument closing the geometric route to chiral matter, whose load-bearing hypotheses are compactness and a continuous isometry* | **`P13` · `P14`** | **×171** |
 | `wall` ② | **THE RANGE WALL** — *a **boundary of the construction**: the Type-N edge of the stratification, where continuous symmetry is lost and free gravitational radiation begins* | **`P09` · `P11` · `P12`** | **×57** |
 | `wall` ③ | **A DOMAIN WALL** — *a **field configuration**: the three walls carrying the generations, with $\sigma_y$ eigenvalues for chiralities* | **`P14`** | **×47** |
+| `monodromy` ① ⚑ ***entered r3680, from the index-theory v2 pass*** | **THE COVERING-SPACE MONODROMY** — *a **permutation of roots**: the horizon cubic's three sheets over the $2M$-plane, branched at Nariai, monodromy group $S_3$ and **deck group trivial**; a finite group acting on a fibre* | **`P05` ×44** · `P07` ×5 · `P03` | **×92 total** |
+| `monodromy` ② | **THE LINEAR-ODE (FUCHSIAN) MONODROMY** — *a **matrix of analytic continuation**: the perturbation equation's solution carried around a regular singular point, **unipotent** with off-diagonal $2\pi ip$, the scalar's $-4\pi i/\rho$ twice the tensor's; an infinite-order matrix, not a permutation* | **`P16` ×9** | ⌗ *and `P14`'s mode monodromy at the $r=0$ wall is of this kind* |
+| ⛔ **AND `P14` CARRIES BOTH** | *① at L82/L189 — "the Weyl $S_3$ is the deck/monodromy symmetry of the solution space", used to make flavour **global** — and ② at L176, `P14_mode_monodromy_at_the_wall`, the spinor mode's single-valuedness around a loop.* ⇒ ***One paper, one word, two objects: a finite permutation group and a unipotent matrix, which are not the same mathematics.*** | **`P14` ×14** | ⌗ *both senses landed in `COMPLEX_ANALYSIS_LEDGER`; neither was distinguished from the other* |
 | — | *ordinary prose, figure captions, and compounds* | scattered | remainder |
 
 **⛭ ⛔ THEY ARE THREE KINDS OF THING, NOT THREE INSTANCES OF ONE.** *① is a **theorem** that forbids;
