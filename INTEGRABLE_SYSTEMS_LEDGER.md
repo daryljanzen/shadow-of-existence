@@ -460,6 +460,35 @@ supplies the reason the index is the right instrument.*
 
 ---
 
+## ⛭⛭⛭ `I20` — **`P04`'s PATH INTEGRAL *IS* A FIRST INTEGRAL, AND ITS RESTRICTION TO THE NULL CONE IS WHY THE ARGUMENT WORKS** — r3654
+
+***`P04` came back empty on all six of 60's fields and the locator's own prediction hedged — "probably the
+whole of it". It is not empty, and the hedge was wrong.***
+
+*In conformal form $\dd s^{2}=a^{2}(\eta)(-\dd\eta^{2}+\dd\mathbf{x}^{2})$ the vector $\partial_\eta$
+is a **conformal** Killing vector, so its charge is conserved along a geodesic **only where
+$p\!\cdot\!p=0$**. On the null cone that charge is $a\omega$, and its constancy **is**
+$1+z=a_{\mathrm{obs}}/a_{\mathrm{em}}$, whose logarithm is $\int H\,\dd t$.*
+
+⇒ ***So the path integral is a conserved quantity written out — which is why the redshift is a property of
+the path and not of the source, and that is `P04`'s own central claim given its reason.***
+
+⛭ ***AND THE RESTRICTION IS LOAD-BEARING RATHER THAN INCIDENTAL.*** *For a massive carrier
+$p\!\cdot\!p=-m^{2}$, the charge is not conserved, and no line-of-sight integral of this form exists. **So
+the redshift is a statement about light and could not have been obtained from any other messenger** — a
+fence on `P04`'s method that the paper never states.*
+
+⌗ **AND IT IS THE SAME STRUCTURE AS `I5`.** *60's probe in `P05` found the homothety charge a first
+integral of the geodesic flow **restricted** to $p\!\cdot\!p=0$, with
+$\{\xi\!\cdot\!p,\,p\!\cdot\!p\}=2\,p\!\cdot\!p$. **A conformal Killing vector does the same thing
+here.** Two papers, two vectors, one restricted-first-integral structure — and `P04`'s whole measurement
+rests on it.*
+
+⌗ ⚠ *`\dd` was used in the landed clause and `P04` does not define it — the same trap as `r3549`, in the
+same paper. Caught by compiling.*
+
+---
+
 ## ⛭⛭⛭ THE LOCATOR — every paper, the sections named, the prediction stated — r3626
 
 > **⛔ THIS REPLACES THE HIGH/MEDIUM/LOW TABLE BELOW, WHICH WAS DOING THE WRONG JOB.** *A rank is a licence
@@ -495,7 +524,7 @@ supplies the reason the index is the right instrument.*
 | 13 | **`p0`** | `sec:rulings` · `sec:standard` · `sec:unification` | *the straight null rulings are geodesics of the substrate; **maximal symmetry is the largest possible algebra of first integrals*** | ⛭ **CONFIRMED, `sec:rulings`** — *`I17`, landed. The prediction was exactly right and the count is exact* <br> ⛭ **AND 60, `I50`: REDIRECTED on the OTHER half.** *The two answer different halves of one prediction and **compose**: 59 counts the LINEAR integrals (15 on $\mathrm{dS}_5$, maximally superintegrable); 60 shows the QUADRATIC ones are already Killing-vector products (105 = 105 at $n=5$), and are NOT on Kerr. ⇒ **The substrate's integral structure is entirely Killing-generated at every order tested — and 59's ladder row "Kerr–dS, short by one, the Killing tensor's job" IS 60's Kerr control, reached independently.*** |
 | 14 | **`P13`** | `sec:routes` · `sec:wall` | *the closed routes are an exhaustion argument; **does any run through a conserved quantity?*** | ⛭ **CONFIRMED, `sec:wall`** — *`I18`, landed, **and it is the obstruction's own hypothesis**. Plus a canon row* <br> ⛔ **AND THIS CORRECTS 60's r3642 VERDICT, WHICH READ "REFUTED on the letter — no route runs through a conserved quantity."** *That is **wrong**: `sec:wall`'s obstruction rests on a continuous isometry, which **is** a Killing vector and so a linear first integral. 60 read that section in full and did not connect the paper's language to the field's — which is the one thing the locator exists to do.* ⌗ *60's `sec:cascade` observation stands beside it and is untouched: the rank count (SM rank 4 ⊄ $\mathrm{SO}(6)$ rank 3) is a **commuting-charge** count, this field's own counting principle in Lie-theoretic clothes.* |
 | 15 | **`P14`** | `sec:chirality` · `sec:count` | *the radial Dirac superpotential is a 1-D problem with a solvable structure — **shape invariance** is this field's neighbour* | ⛭ **CONFIRMED, `sec:chirality`** — *`I19`, landed. **The prediction named the right test and the answer is NO**, which is the informative direction* <br> ⛭ **AND 60 agrees on the address** — *`sec:chirality` writes $W$ and both partner potentials outright. 60 named shape invariance as the checkable question and **did not compute it**; `I19` does, and the answer is NO.* ⌗ *60 adds the object: the paper's actual first integral is the **conserved twist $c$** (`P11`'s), and its real neighbour here is in the bibliography — **Jackiw–Rebbi**.* |
-| 16 | **`P04`** | `sec:decomp` · `sec:floor` | *$\ln(1+z)=\int H\,\dd t$ is a quadrature and probably the whole of it* | ⛭ **CONFIRMED — paper, address AND hedge.** *`sec:decomp` carries $\ln(1+z)=\int H\,\dd t$ verbatim, and "probably the whole of it" is right: the paper has **ZERO** sites of this field's vocabulary. ⌗ But the quadrature is $\int\dd a/a$ — an exact differential, so it is an **identity, not the integration of a dynamical system*** |
+| 16 | **`P04`** | `sec:decomp` · `sec:floor` | *$\ln(1+z)=\int H\,\dd t$ is a quadrature and **probably the whole of it*** | ⛭ **CONFIRMED, `sec:decomp`, and the hedge was WRONG** — *`I20`, landed. **`P04` is not empty for this field***, *and it had come back empty on all six of 60's* <br> ⛔ **AND 60's r3642 VERDICT WAS WRONG — IT READ "CONFIRMED — paper, address AND hedge", with *"the quadrature is $\int\dd a/a$, an exact differential, so it is an IDENTITY, not the integration of a dynamical system."*** *It is not an identity: $\partial_\eta$ is a **conformal** Killing vector whose charge $a\omega$ is conserved **on $p\!\cdot\!p=0$**, and that conservation **is** $1+z$.* ⌗ ***AND 60 HAD ALREADY BUILT THE INSTRUMENT THAT SEES THIS:*** *`I5`, 60's own `P05` receipt, established exactly this restricted-first-integral structure — $\{\xi\!\cdot\!p,\,p\!\cdot\!p\}=2\,p\!\cdot\!p$, conserved on the null cone alone. **60 wrote the tool and did not reach for it.*** |
 | 17 | **`P06`** | `sec:rules` · `sec:least-arbitrariness` | *no dynamics; the prediction is that this is genuinely empty, and **that prediction has to be tested rather than assumed*** | ⛭ **CONFIRMED — and it needed the read.** *Zero sites of the field's vocabulary; the two terms a count WOULD have flagged in `sec:least-arbitrariness` are both homonyms — "Hamiltonian" is P10's self-adjoint-extension operator (functional analysis) and "invariant" is a parity-even part of a metric function. **The count says look; the read says empty.** 59 was right that this had to be tested* |
 
 ⌗ ***12 of 17 through pass B — 59 took rows 1–7 descending, 60 took rows 13–17 from the bottom, and
