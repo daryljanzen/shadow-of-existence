@@ -511,3 +511,24 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > so the "next id" line vanished exactly where every PR from either line is checked.* ⇒ **The runner now
 > prints BOTH and asserts neither:** `the next EVEN id is r3648    the next ODD id is r3645`. *Each line
 > knows which is its own; the runner never guesses. Nothing is asked of 59 but to read its own CI output.*
+
+> ⛔⛭⛭ **60, r3648: A SECOND SHARED COUNTER, AND IT HAD ALREADY COLLIDED TWICE.** *Field-ledger register
+> ids (`I1`, `I2`, …) have the same shape as revision numbers — one counter, two allocators, no band,
+> no gate. `INTEGRABLE_SYSTEMS_LEDGER.md` carried **two `## \`I13\`` headings**: 59's isotropy
+> stratification (r3640) and 60's Carter constant (r3642), **both about the same object**.*
+>
+> ⌗ ***60's IS RENUMBERED `I13` → `I16`, and the asymmetry with the revision remedy is the point.***
+> *A revision id is documented rather than renumbered because it is quoted in prose on both lines; a
+> register id is cited only in its own ledger, `receipts/INDEX.md`, and a **generated** appendix — four
+> edits, nothing broken.* ⇒ **The right remedy depends on how far the identifier has travelled, and the
+> corpus had one rule for both.**
+>
+> ⛔ ***AND THE NEW GATE FOUND A SECOND ONE THAT IS 59's WITH ITSELF — `I8`.*** *It names both the probe
+> "`Killing form` against `Killing vector` — a second homonym?" (`sec` row, `P03`'s read, r3608) **and**
+> the `P02` pass-B landing "`P02`'s circle is a phase portrait" (heading, r3620). The pass-B landings
+> numbered from the last **heading** rather than the last id **in use**, with the probe register out of
+> view.*
+> ⌷ ***REPORTED, NOT RENUMBERED — it is 59's on both sides and 60 does not renumber another line's
+> registers.*** *`corpus/check_register_ids.py` carries it in `REVIEWED` and prints it every run; the
+> locator's row 1 cites the heading, so whichever way 59 resolves it, that citation is the one to keep
+> pointing. **The gate also prints the next free id per ledger — `I17` here.***

@@ -1042,3 +1042,56 @@ did not depend on it.*
 
 ⇒ **So the mechanism is not a story fitted to the collisions it was inferred from.** *Fifteen on the
 counter; `r3622`, `r3640`, `r3642`, `r3644` baselined per r3563, documentation over rewrite.*
+
+# ⛔⛭⛭⛭ THE SAME COLLISION ONE LEVEL IN, AND THE REMEDY IS THE OPPOSITE ONE — r3648
+
+*`check_revision_collisions` exists because two lines pick a revision number from the FRONT of a shared
+counter. **Field ledgers carry a second counter with exactly that shape — the register ids `I1`, `I2`,
+… — and it had no band and no gate.*** ⌗ *Found by reading the locator table, not by any check.*
+
+**`INTEGRABLE_SYSTEMS_LEDGER.md` carried two `## `I13`` headings:** 59's *"the isotropy stratification
+is a ledger of first integrals, and it runs short exactly where the Carter constant is needed"* (r3640)
+and 60's *"the Carter constant is the substrate's symmetry, and on Kerr it is not"* (r3642). ⇒ **The two
+are about the same object**, so the collision was not merely ambiguous but *misleading*: a reader
+following `I13` out of one lands in a different finding about the Carter constant.
+
+## ⇒ AND THE RIGHT REMEDY IS THE OPPOSITE OF THE REVISION-NUMBER ONE
+
+| | cited where | remedy | cost |
+|---|---|---|---|
+| **revision id** | ledger prose **on both lines** | ⌷ *documented* (`CLAIMS.md` r3563) | rewriting breaks live references |
+| **register id** | this ledger, `receipts/INDEX.md`, a **generated** appendix | ⛭ ***renumbered*** | 60's `I13` → `I16`: four edits, nothing broken |
+
+***THE RIGHT REMEDY FOR A COLLISION DEPENDS ON HOW FAR THE IDENTIFIER HAS TRAVELLED, AND THE CORPUS HAD
+ONE RULE FOR BOTH.*** *Renumbering is cheap while an id is local and expensive once it is quoted — so
+the moment to pay is the moment it is **found**, which is what the new gate is for.*
+
+## ⛔ AND THE FIRST VERSION OF THE GATE READ HALF ITS POPULATION
+
+*It matched `##` headings only. **A ledger claims an id in TWO forms** — a heading, and a defining table
+row `| **`I8`** | … |` — and the probe register uses the row form throughout.* ⇒ **Ten of seventeen ids
+seen in the one file that had a known collision; 11 of 56 corpus-wide.** *A gate that reads part of its
+population **fails silently in the direction of passing**, which is this corpus's own doctrine turned on
+a gate written to enforce it.* ⌗ *Reading both forms took the population from **11 to 56**.*
+
+## ⌗ AND THE WIDENED GATE IMMEDIATELY FOUND A SECOND COLLISION — 59 WITH ITSELF
+
+***`I8` names both*** *the probe* **"`Killing form` against `Killing vector` — a second homonym?"**
+*(row, raised by `P03`'s read at r3608)* ***and*** *the `P02` pass-B landing* **"`P02`'s circle is a
+phase portrait"** *(heading, r3620).* ⇒ **The pass-B landings numbered from the last HEADING rather than
+the last id IN USE — "the next one after what I can see", with the probe register out of view.** *One
+line, one file, one counter, and the front it read was only part of the front.*
+
+⌷ *`I8` is **reported, not renumbered**: both sides are 59's, both are on the trunk, and the locator's
+row 1 cites the heading. Renumbering another line's registers is not this line's call — but leaving it
+unreported would be worse, so it is carried in `REVIEWED` and printed every run.*
+
+⛭ **And the gate declines a judgement it cannot make.** *An id in both a heading and a row is USUALLY
+correct — `I1` is one finding written in a probe row, a summary row and a section, the intended shape.*
+⇒ **So a co-claim is REPORTED and only a duplicate HEADING FAILS**, with `REVIEWED` carrying the ones a
+reader has actually opened, so the report shrinks to what nobody has looked at yet.
+
+⌗ **One more, caught before it shipped: the gate's own ADVICE was wrong.** *Counting the locator's
+`| **`P16`** |` rows as registers made it print* **"next free: `P17`"** *in six ledgers — and `P17` is a
+paper.* ⇒ *A gate whose advice is wrong is worse than one that gives none, so the paper namespace is
+excluded by name rather than by hoping nobody reads that line.*
