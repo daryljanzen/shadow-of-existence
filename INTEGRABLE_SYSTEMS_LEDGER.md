@@ -220,6 +220,33 @@ content is in `sec:properframe`. Second miss on address, second right on paper.*
 
 ---
 
+## ⛭⛭⛭ `I12` — **THE THREE ENERGIES ARE THREE SOLVABILITY CLASSES, AND ONLY ONE OF THEM INTEGRATES** — r3638
+
+***The prediction hit paper and section together, the first to do so.*** *`P08`'s `sec:trichotomy` is a
+classification of solvable cases, and it says so in its own words — **"the three slicings are one
+congruence at three energies"**, with $-k=E^{2}-1$ so that $E<1$ is closed, $E=1$ flat, $E>1$ open.*
+
+⛔ ***AND ONE IDENTIFICATION IN IT IS EXACT ONLY IN A LIMIT IT DOES NOT NAME.*** *`P08` writes that "run
+inward, the closed member is the cycloid $r=M(1+\cos\eta)$".*
+
+| | |
+|---|---|
+| the cycloid solves | $(\dd r/\dd\tau)^{2}=2M/r-1$ — **verified identically**, $\Lambda=0$ |
+| the closed member of `P08`'s family obeys | $(\dd r/\dd\tau)^{2}=2M/r+r^{2}/\alpha^{2}-1$ |
+| the omitted term's weight | $r^{3}/2M\alpha^{2}$ — $10^{-5}$ at $r/\alpha=0.01$, $0.27$ at $r/\alpha=0.3$ |
+
+⇒ ***Exact in the dust limit, a small-$r$ reading otherwise, and the distinction is not cosmetic***: *with
+$\Lambda$ present **neither the closed nor the open member has an elementary closed form** — `I11`'s
+sextic — so the marginal member is the only non-degenerate one that integrates, and the cycloid and
+$\tau^{2/3}$ are the two forms the family takes when $\Lambda$ is switched off. Qualifier landed in `P08`.*
+
+⌗ ***`I8`, `I11` and `I12` are one statement in three papers.*** *`P02` carries the cycloid, `P15` the
+$\sinh^{2/3}$, `P08` the family joining them — and the field's contribution is the **solvability
+boundary** running through it: three energies, one elementary member, two degenerate corners, nothing
+else.*
+
+---
+
 ## ⛭⛭⛭ THE LOCATOR — every paper, the sections named, the prediction stated — r3626
 
 > **⛔ THIS REPLACES THE HIGH/MEDIUM/LOW TABLE BELOW, WHICH WAS DOING THE WRONG JOB.** *A rank is a licence
@@ -246,7 +273,7 @@ content is in `sec:properframe`. Second miss on address, second right on paper.*
 | 4 | **`P11`** | `sec:unpolarized` · `sec:gowdy` · `sec:nonlinear` | *a wave map with a conserved twist; how many independent integrals the reduced system has* | ⛭ **CONFIRMED — two integrals; `I4` posed** |
 | 5 | **`P03`** | `sec:params` · `sec:throat-angle` · `sec:tour` · `sec:winding` | *three coupled projections of one motion is the shape of an **action-angle** description; is the sky angle an angle variable, and is $2M$ its conjugate action?* | ⛭ **REDIRECTED — `I10`, landed.** *The prediction was wrong and the paper was right: the content is in **`sec:cubic`/`prop:turning`**, a section the abstract did not point at, and it is the **mechanical analogue**, not action-angle* |
 | 6 | **`P15`** | `sec:background` · `sec:transmission` · `sec:largescale` | *$\sinh^{2/3}$ is a second exactly-integrable law beside `P02`'s cycloid; the WKB/adiabaticity discussion is this field's expansion* | ⛭ **CONFIRMED — `I11`, landed.** *And REDIRECTED on the address: the content is in `sec:properframe`* |
-| 7 | **`P08`** | `sec:kernel` · `sec:trichotomy` · `sec:cosmology` | *"$T_{\mu\nu}=0$ **is** a first-order linear ODE" is a solvability claim; the three constant-curvature slicings are a classification of solvable cases* | ⟐ **owed** |
+| 7 | **`P08`** | `sec:kernel` · `sec:trichotomy` · `sec:cosmology` | *"$T_{\mu\nu}=0$ **is** a first-order linear ODE" is a solvability claim; the three constant-curvature slicings are a classification of solvable cases* | ⛭ **CONFIRMED, and the address was right** — *`I12`, landed. The first prediction to hit both paper and section* |
 | 8 | **`P12`** | `sec:anchor` · `sec:bracket` · `sec:strata` | *a **section selecting a flow** on a base is this field's setting; is that flow integrable, and does the stratification index its integrals?* | ⟐ **owed** |
 | 9 | **`P16`** | `sec:lap` · `sec:rate` · `sec:interior` | *the lap is a closed orbit; "its exact closed solution" for the progenitor interior is another integrable case* | ⟐ **owed** |
 | 10 | **`P01`** | `sec:3` · `sec:5` | *horizon generators are a null geodesic congruence; does the metric-singularity condition have a first-integral statement?* | ⟐ **owed** |
