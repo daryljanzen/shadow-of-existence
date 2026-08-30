@@ -159,6 +159,138 @@ in the register below.***
 
 ---
 
+## ⛭⛭⛭ `I10` — **THE SLICING CURVE IS A ZERO-ENERGY ORBIT, AND NARIAI IS AN UNSTABLE EQUILIBRIUM** — r3628
+
+***And the locator's prediction for `P03` was WRONG, which is the first scored miss and worth more than a
+hit.*** *It named `sec:params`, `sec:throat-angle`, `sec:tour`, `sec:winding` and predicted an
+**action-angle** description, on the grounds that three coupled projections of one motion is that shape.
+**The content is in `sec:cubic`, which the abstract did not point at, and it is not action-angle.***
+⇒ *Verdict **REDIRECTED**: right paper, wrong reason and wrong address. `58` recorded that its own reasons
+were wrong about half the time and kept the fact; this is the first of ours.*
+
+### ⌗ WHAT `prop:turning` ALREADY SAYS, READ AS MECHANICS
+
+*`P03` derives $\dd^{2}r/\dd l^{2}=\tfrac12 f'\operatorname{sgn}f$ and calls the horizons turning
+points. **With $V(r)=-\lvert f(r)\rvert/2$ that formula is $-\dd V/\dd r$ exactly**, and the slicing law
+$(\dd r/\dd l)^{2}=\lvert f\rvert$ is $\tfrac12(\dd r/\dd l)^{2}+V=0$.*
+
+| the paper's object | the mechanical reading | checked |
+|---|---|---|
+| the slicing curve | **the zero-energy orbit** of a one-dimensional conservative system | ✔ |
+| the horizon cubic $f=0$ | **the turning-point condition** $V=E$ | ✔ |
+| a **simple** root, $f'\neq0$ | an ordinary turning point, reached in finite $l$ | ✔ |
+| **Nariai**, a double root | **a turning point coinciding with an equilibrium**: $V=V'=0$, and $V$ has a *maximum* at the orbit's own energy | ✔ $f''(r_N)=-6$ |
+| the degeneracy's cost | $\lvert f\rvert\simeq3(r-r_N)^{2}$, so $\int\dd r/\sqrt{\lvert f\rvert}$ **diverges logarithmically** — the merged horizon is approached and never reached | ✔ |
+| $\kappa=f'(r_h)/2=0$ at Nariai | $\kappa=-V'(r_h)$, so **vanishing surface gravity IS the equilibrium condition** | ✔ |
+
+⇒ ***That last row joins two facts the corpus states separately.*** *`P01` argues $\kappa=0$ at Nariai and
+that the thermal mechanism is absent there; `P03` derives the double root. **They are one statement about a
+potential.***
+
+⚠ ***AND A SIGN ERROR OF MINE, CAUGHT BEFORE IT LANDED.*** *My first computation used $V=-f/2$, which is
+right only where $f>0$. At Nariai $f\le0$ on both sides, so that gave $V''>0$ — a **minimum**, the opposite
+conclusion. **`P03`'s own formula carries the $\operatorname{sgn}f$ and the uniform potential is
+$-\lvert f\rvert/2$**; redone, $V$ has a maximum and the equilibrium is unstable. *The paper's own
+expression was the check.*
+
+---
+
+## ⛭⛭⛭ `I11` — **$E=1$ FIXES THE REST FRAME *AND* IS THE ONE NON-DEGENERATE ENERGY AT WHICH THE COSMOLOGY INTEGRATES** — r3636
+
+*`P15` step (i) is the energy first integral, step (iii) is a **quadrature** — the reduction this field's
+simplest theorem licenses: one degree of freedom, one conserved quantity, integrate. **What the paper does
+not say is why the quadrature closes.***
+
+*Writing the radial equation as $(\dd r/\dd\tau)^{2}=2GM/c^{2}r+r^{2}/\alpha^{2}-k$ with $k=1-E^{2}$:*
+
+| $k$ | the quadrature | |
+|---|---|---|
+| **$k=0$**, i.e. $E=1$ | $\tfrac{2\alpha}{3}\operatorname{arcsinh}\bigl(r^{3/2}/\sqrt{2GM\alpha^{2}/c^{2}}\bigr)$ | ⛭ **elementary**, and inverts to $\sinh^{2/3}$ |
+| $k\neq0$ | $r=u^{2}$ carries it to $\int 2u^{2}\,\dd u/\sqrt{u^{6}-ku^{2}+2M}$ | ⛔ **a sextic under the root — not elementary** |
+
+⇒ ***So the single condition $E=1$ does two jobs the paper keeps apart***: *it fixes the fundamental rest
+frame **by the field**, at the vanishing-potential locus (`r3632`), **and** it is the one non-degenerate
+energy at which the cosmology has a closed form at all.* ⌗ *The only other elementary cases are degenerate:
+$\Lambda=0$ gives the dust cycloid — **which is `P02`'s $r=M(1+\cos z)$, `I8`** — and $M=0$ gives pure de
+Sitter. **The corpus's two closed-form cosmological laws are the two degenerate corners and the one flat
+case, and there are no others.***
+
+⌗ *Address **REDIRECTED**: the locator named `sec:background`, `sec:transmission`, `sec:largescale`; the
+content is in `sec:properframe`. Second miss on address, second right on paper.*
+
+---
+
+## ⛭⛭⛭ `I12` — **THE THREE ENERGIES ARE THREE SOLVABILITY CLASSES, AND ONLY ONE OF THEM INTEGRATES** — r3638
+
+***The prediction hit paper and section together, the first to do so.*** *`P08`'s `sec:trichotomy` is a
+classification of solvable cases, and it says so in its own words — **"the three slicings are one
+congruence at three energies"**, with $-k=E^{2}-1$ so that $E<1$ is closed, $E=1$ flat, $E>1$ open.*
+
+⛔ ***AND ONE IDENTIFICATION IN IT IS EXACT ONLY IN A LIMIT IT DOES NOT NAME.*** *`P08` writes that "run
+inward, the closed member is the cycloid $r=M(1+\cos\eta)$".*
+
+| | |
+|---|---|
+| the cycloid solves | $(\dd r/\dd\tau)^{2}=2M/r-1$ — **verified identically**, $\Lambda=0$ |
+| the closed member of `P08`'s family obeys | $(\dd r/\dd\tau)^{2}=2M/r+r^{2}/\alpha^{2}-1$ |
+| the omitted term's weight | $r^{3}/2M\alpha^{2}$ — $10^{-5}$ at $r/\alpha=0.01$, $0.27$ at $r/\alpha=0.3$ |
+
+⇒ ***Exact in the dust limit, a small-$r$ reading otherwise, and the distinction is not cosmetic***: *with
+$\Lambda$ present **neither the closed nor the open member has an elementary closed form** — `I11`'s
+sextic — so the marginal member is the only non-degenerate one that integrates, and the cycloid and
+$\tau^{2/3}$ are the two forms the family takes when $\Lambda$ is switched off. Qualifier landed in `P08`.*
+
+⌗ ***`I8`, `I11` and `I12` are one statement in three papers.*** *`P02` carries the cycloid, `P15` the
+$\sinh^{2/3}$, `P08` the family joining them — and the field's contribution is the **solvability
+boundary** running through it: three energies, one elementary member, two degenerate corners, nothing
+else.*
+
+---
+
+## ⛭⛭⛭ THE LOCATOR — every paper, the sections named, the prediction stated — r3626
+
+> **⛔ THIS REPLACES THE HIGH/MEDIUM/LOW TABLE BELOW, WHICH WAS DOING THE WRONG JOB.** *A rank is a licence
+> to skip: I rated four papers `HIGH` and wrote the other thirteen off in one-line rows. `58`'s step 3 says
+> **work EVERY paper, highest estimate first** — first, not only. **And a rank against no scale is a feeling
+> with a symbol beside it.** What the abstract is for is not ranking but **LOCATING**: naming, from what the
+> paper is about, the sections where this field's content would live, as a prediction that can be scored
+> WRONG.*
+>
+> ⌗ ***THE THREE PASSES, and no paper leaves pass B unread.***
+> **A · LOCATE** — *from the abstract, name the `\label`ed sections and say what would be there.*
+> **B · READ** — *open every named section and read it. Verdict: **CONFIRMED**, **REFUTED**, or
+> **REDIRECTED** (the content is there and in a section I did not name — the informative case, because it
+> says the abstract mislocated it).*
+> **C · WORK** — *where B finds a checkable claim: verify, receipt, land, marker.*
+> ⇒ *Scored at the end: how many predictions right, how many wrong, and — `58`'s own measure — **how many
+> had the right paper and the wrong reason**.*
+
+| # | paper | sections named from the abstract | what would be there if this field is relevant | B |
+|---|---|---|---|---|
+| 1 | **`P02`** | `sec:cycloid` · `sec:continuation` · `sec:ring` | *the cycloid is the exactly-solvable 1-DOF problem; $r''=-(r-M)$ is an oscillator; the projected circle should be its phase orbit* | ⛭ **CONFIRMED — `I8`, landed** |
+| 2 | **`P10`** | `sec:deparam` · `sec:lock` · *the instanton paragraph* | *a deparametrised constraint is a Hamiltonian system; the TT tower is a parametric oscillator; ask after the **adiabatic invariant*** | ⛭ **CONFIRMED — `I9`, landed** |
+| 3 | **`P09`** | `sec:pd` · `sec:homog` · `sec:rotation` | *separability, Killing tensors, the Carter constant — the field's own objects, stated in its own words* | ⛭ **CONFIRMED — `I1`, landed** |
+| 4 | **`P11`** | `sec:unpolarized` · `sec:gowdy` · `sec:nonlinear` | *a wave map with a conserved twist; how many independent integrals the reduced system has* | ⛭ **CONFIRMED — two integrals; `I4` posed** |
+| 5 | **`P03`** | `sec:params` · `sec:throat-angle` · `sec:tour` · `sec:winding` | *three coupled projections of one motion is the shape of an **action-angle** description; is the sky angle an angle variable, and is $2M$ its conjugate action?* | ⛭ **REDIRECTED — `I10`, landed.** *The prediction was wrong and the paper was right: the content is in **`sec:cubic`/`prop:turning`**, a section the abstract did not point at, and it is the **mechanical analogue**, not action-angle* |
+| 6 | **`P15`** | `sec:background` · `sec:transmission` · `sec:largescale` | *$\sinh^{2/3}$ is a second exactly-integrable law beside `P02`'s cycloid; the WKB/adiabaticity discussion is this field's expansion* | ⛭ **CONFIRMED — `I11`, landed.** *And REDIRECTED on the address: the content is in `sec:properframe`* |
+| 7 | **`P08`** | `sec:kernel` · `sec:trichotomy` · `sec:cosmology` | *"$T_{\mu\nu}=0$ **is** a first-order linear ODE" is a solvability claim; the three constant-curvature slicings are a classification of solvable cases* | ⛭ **CONFIRMED, and the address was right** — *`I12`, landed. The first prediction to hit both paper and section* |
+| 8 | **`P12`** | `sec:anchor` · `sec:bracket` · `sec:strata` | *a **section selecting a flow** on a base is this field's setting; is that flow integrable, and does the stratification index its integrals?* | ⟐ **owed** |
+| 9 | **`P16`** | `sec:lap` · `sec:rate` · `sec:interior` | *the lap is a closed orbit; "its exact closed solution" for the progenitor interior is another integrable case* | ⟐ **owed** |
+| 10 | **`P01`** | `sec:3` · `sec:5` | *horizon generators are a null geodesic congruence; does the metric-singularity condition have a first-integral statement?* | ⟐ **owed** |
+| 11 | **`P05`** | `sec:relations` · `sec:conjugacy` · `sec:alpha-invariant` | *"the single invariant is the geometry" — is that invariant in this field's sense, and does the $\alpha$-action have a conserved charge?* | ⟐ **owed** |
+| 12 | **`P07`** | `sec:lift-initial-rate` · `sec:sds-cosmology` | *the lift's closed form and the recovered Carter constant; states results derived elsewhere* | ⟐ **owed** |
+| 13 | **`p0`** | `sec:rulings` · `sec:standard` · `sec:unification` | *the straight null rulings are geodesics of the substrate; maximal symmetry is the largest possible algebra of first integrals* | ⟐ **owed** |
+| 14 | **`P13`** | `sec:routes` · `sec:wall` | *the closed routes are an exhaustion argument; does any run through a conserved quantity?* | ⟐ **owed** |
+| 15 | **`P14`** | `sec:chirality` · `sec:count` | *the radial Dirac superpotential is a 1-D problem with a solvable structure — **shape invariance** is this field's neighbour* | ⟐ **owed** |
+| 16 | **`P04`** | `sec:decomp` · `sec:floor` | *$\ln(1+z)=\int H\,\dd t$ is a quadrature and probably the whole of it* | ⟐ **owed** |
+| 17 | **`P06`** | `sec:rules` · `sec:least-arbitrariness` | *no dynamics; the prediction is that this is genuinely empty, and **that prediction has to be tested rather than assumed*** | ⟐ **owed** |
+
+⌗ ***4 of 17 through pass B. Thirteen sections-named papers owed a read.*** *Nothing here is dismissed on
+a count, and `P02` is the standing reason: it scores **zero on every term in this field's vocabulary** and
+is the field's founding example.*
+
+---
+
 ## ⛭⛭⛭ STEP 2 — THE ESTIMATE FROM CONTENTS, WRITTEN BEFORE ANY PAPER IS WORKED — r3620
 
 > **⛔ WHY THIS SECTION EXISTS AND WAS MISSING.** *`OVERNIGHT_FIELD_BAKE_WORK_ORDER.md` step 2, the
@@ -226,6 +358,49 @@ scores **zero** in the paper where the field's founding example sits in plain si
 list of what one already knows the field to contain; grepping it returns only that, which is confirmation
 bias with a receipt attached.** The estimate-from-contents step exists to reach the paper from its own
 side, and it is the only step that could have found this one.*
+
+---
+
+## ⛭⛭⛭ `I9` — **`adiabatic` ×35 IN FIVE PAPERS; `adiabatic invariant` ×0. AND ONE PAPER HAS THE WRONG NAME FOR IT** — r3622
+
+***Estimate rated `P10` HIGH from contents: a deparametrised constraint is a Hamiltonian system, which is
+the only setting in which this field's central theorem can be stated. What the read found is sharper than
+that.***
+
+*`P10` reduces the transverse-traceless sector, mode by mode, to **a harmonic oscillator with
+time-dependent mass $a^{3}$ and frequency $\mu_n/a$** — a tower of parametric oscillators. **That is one
+of this field's two founding objects**, and its first question about any such tower is whether the
+**adiabatic invariant** $J=E/\omega$ — the action variable — survives.*
+
+⌗ **`adiabatic` is live ×35 across `P15`, `P16`, `P10`, `P07`, `P03`. `adiabatic invariant`, `action
+variable`, `action-angle` and `invariant of the motion` are all ×0.** *The corpus computes with the
+approximation and never names the conserved quantity that is its whole content.*
+
+### ⛔ AND THE TWO QUESTIONS ARE NOT THE SAME, WHICH IS WHERE THE BITE IS
+
+*`P10` writes: the kernel projects exactly only if $\hat{\Hphys}$ is constant along the segment and it is
+not, so "the projection is **adiabatic** rather than exact", and asks **whether $\int\omega_n\,\dd s$
+converges**. It does.* ***That is the right computation under the wrong name.***
+
+| question | what controls it | on this segment | verdict |
+|---|---|---|---|
+| *is the expansion **adiabatic**?* | $\lvert\dd\omega/\dd s\rvert/\omega^{2}$ | $\propto s^{-1/3}$, **diverges** at the branch point | ⛔ **no** — the adiabatic invariant $E/\omega$ is **not** conserved through it |
+| *is the suppression **finite**?* | the action integral $\int\omega_n\,\dd s$ | $=3\mu S^{1/3}/A$, **converges**, since $\omega\propto s^{-2/3}$ is integrable | ⛭ **yes** — `P10`'s own check, and it stands |
+
+*Both computed symbolically from `P10`'s own $\lvert r\rvert\propto s^{2/3}$.* ⇒ ***The correction is
+semiclassical, not adiabatic: the exponent is an action integral, which is a statement about integrability
+of $\omega$ and not about slow variation.***
+
+⌘ **AND THE CORPUS ALREADY HAS THE RIGHT NAME, IN THE OTHER PAPER.** *`P15` writes of the **same object**:
+"the exponential-of-an-integral form $e^{-\int\omega\,\dd\eta}$ is a **WKB approximation whose
+adiabaticity parameter is of order unity**". **`P15` is correct and `P10` is loose about the same kernel.**
+⇒ *Landed in `P10` with the distinction drawn and `P15` cited.*
+
+⌗ ⛭ **AND IT CONFIRMS `S5` FROM THE FIELD'S SIDE.** *`S5` (spectral, landed `r3575`) found `P15`'s
+exact/WKB residual **grows as the adiabaticity parameter shrinks**, which is the opposite of an adiabatic
+error and so a systematic offset. **This field says the same thing from the other end**: the deviation an
+adiabatic expansion controls is governed by a parameter that behaves oppositely here, so an adiabatic
+origin was never available. *Two bakes, two directions, one conclusion.*
 
 ---
 
