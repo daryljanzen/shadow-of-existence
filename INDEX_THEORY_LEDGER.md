@@ -165,6 +165,49 @@ in the first field taken up after it was written.*
 *`P04` returns zero on both screens for the second field running, which is now a fact about `P04` rather than about either field.*
 ---
 
+## ⛭⛭⛭ PASS A — THE LOCATOR, WRITTEN BEFORE ANY PAPER IS WORKED — r3662 (v2 method)
+
+> ⛔ ***THIS IS THE `SIX_FIELDS_WORK_ORDER_v2.md` PASS, AND IT SUPERSEDES THE HIGH/MEDIUM/LOW TABLE BELOW
+> WITHOUT STRIKING IT.*** *v2 §6: "Your six ledgers are merged and nothing in them is struck. Where a v2
+> pass finds more, the row is **updated**, not replaced — and where your reach table scored nine papers in
+> one row on a screen, that row is where a v2 pass starts."*
+>
+> ⌗ **The rows this field screened in bulk, named so they are not lost:** *`P05`·`P08`·`P06` were **three
+> papers in one `CHECKED-NEGATIVE` row**, and `P15`·`P16` were two in another. **Those five get the
+> hardest reads**, together with `P04` — which v2 §2 records as having come back "empty on all six of
+> 60's fields" and then carrying a first integral after all.*
+>
+> ⇒ ***v2 §2, AND IT IS WHY THIS TABLE EXISTS: A PREDICTION OF EMPTINESS GETS MORE SCRUTINY, NOT LESS.***
+> *Of seventeen locator rows in the integrable run, the single **REFUTED** one was the single prediction
+> of emptiness.*
+
+| # | paper | sections named from the abstract | what would be there if this field is relevant | B |
+|---|---|---|---|---|
+| 1 | **`P14`** | `sec:chirality` · `sec:count` · `sec:family` | *the zero-mode count **is** an analytical index $\dim\ker D^{+}-\dim\ker D^{-}$. **The paper's own text marks the leaf index "traced rather than computed"** — so the prediction is that the ANALYTIC side is present and the TOPOLOGICAL side (an Atiyah–Singer/APS integral) is asserted, never integrated* | ⟐ **owed** |
+| 2 | **`P13`** | `sec:wall` · `sec:a2` · `sec:face-status` | *the Atiyah–Hirzebruch obstruction is the paper's whole mechanism: equivariant index vanishing, hypotheses compactness + a **connected** group, and the discrete orientation parity as the component no circle action reaches* | ⟐ **owed** |
+| 3 | **`P02`** | `sec:critical` · `sec:cycloid` · `sec:ring` | ⛔ ***MORSE THEORY, and the paper's vocabulary for this field is ZERO.*** *"Two **non-degenerate critical points of identical analytic character** on a smooth manifold" is a Morse function. **Falsifiable and sharp: on a circle $\chi(S^1)=0$ forces the two to have OPPOSITE Morse index** — so "identical analytic character" is either not the Morse index, or the manifold is not the circle* | ⟐ **owed** |
+| 4 | **`P10`** | `sec:deparam` · `sec:lock` · `sec:dissolution` | ⛭ ***DEFICIENCY INDICES ARE AN INDEX.*** *P10 carries "a genuine one-parameter family of self-adjoint extensions". von Neumann: extensions exist iff $n_{+}=n_{-}$ and are parametrised by $U(n)$ — **so a one-parameter family predicts deficiency indices exactly $(1,1)$**, a number the paper should have and probably never names* | ⟐ **owed** |
+| 5 | **`P08`** | `sec:kernel` · `sec:trichotomy` | ⛭ ***A KERNEL IS HALF AN INDEX.*** *"The vacuum sector is exactly the **kernel** of the matter functional", $\dim\ker=1$ (the single constant $M$). **The prediction is that the COKERNEL is never mentioned** — the other half, without which "kernel" is not yet an index* | ⟐ **owed** |
+| 6 | **`P01`** | `sec:3` · `sec:4` · `sec:5` | ⛭ ***A FIXED POINT WITH AN EIGENVALUE IS ATIYAH–BOTT.*** *59's integrable pass found `P01`'s horizon a **fixed point of the outgoing null flow with the surface gravity as its eigenvalue**. A Lefschetz/Atiyah–Bott formula eats exactly that. **Prediction: the non-degeneracy the theorem needs is $\kappa\neq0$, so the EXTREMAL horizon is precisely where it fails*** | ⟐ **owed** |
+| 7 | **`P05`** | `sec:deck` · `sec:autA2` · `sec:nariai-fixed` | *covering-space topology: $D_3\cong S_3$ from an order-2 involution and order-3 periodicity with $(\sigma\tau)^2=\mathrm{id}$ is a **deck group**, and `sec:nariai-fixed` names a fixed point. **Whether the cover is branched, and where, is the checkable question*** | ⟐ **owed** |
+| 8 | **`P03`** | `sec:cubic` · `sec:winding` · `sec:projection` · `sec:seam` | *the sky-angle-to-horizon-angle **triple-angle** map is a degree-3 branched cover of the circle. **Prediction: `sec:winding` carries a winding number, and Riemann–Hurwitz fixes the branch points from the degree*** | ⟐ **owed** |
+| 9 | **`P12`** | `sec:anchor` · `sec:bracket` · `sec:strata` · `sec:weyl-a3` | *the **Atiyah sequence** of a principal bundle, and a splitting of it is a connection. **Prediction: the obstruction to a FLAT connection is a characteristic class the paper does not name*** | ⟐ **owed** |
+| 10 | **`P11`** | `sec:chirality` · `sec:discrete` · `sec:strata` | *helicity as a $\mathbb{Z}_2$; the graviton's two helicities as $\pm1$. **Prediction: the "un-undoable" turning of the polarisation plane is a HOLONOMY, and whether it is a monodromy of the strata is the test*** | ⟐ **owed** |
+| 11 | **`p0`** | `sec:unification` · `sec:shadows` · `sec:ledger` | *the substrate $\mathrm{dS}_5\simeq\mathbb{R}\times S^4$ is **contractible in the factor that matters and has no interesting characteristic classes**. **Prediction: every index in the corpus enters through the CUT and never through the substrate — and `p0` gathers this without stating it*** | ⟐ **owed** |
+| 12 | **`P09`** | `sec:petrov` · `sec:pd` · `sec:wall` | *the Petrov types are a **stratification**, and the wall is where a stratum drops dimension. **Prediction: the stratification is by algebraic type, carries no index, and the wall is a codimension statement rather than a topological one*** | ⟐ **owed** |
+| 13 | **`P06`** | `sec:least-arbitrariness` · `sec:ordering` · `sec:boundary` | ⛔ ***THE EMPTINESS PREDICTION, AND v2 §2 SAYS IT GETS THE HARDEST READ.*** *"An admissible world must **exhibit the projection** under which the appearances arise" is a statement about a map and its fibres. **Prediction to be tested rather than assumed: least-arbitrariness is the fibre being a point, and the modal fallacy is a local-section-that-does-not-globalise — which is obstruction theory in words*** | ⟐ **owed** |
+| 14 | **`P16`** | `sec:lap` · `sec:interior` · `sec:trev` | *a branch point crossed by a reassignment is a **global-structure** question. **Prediction: whether the crossing reverses ORIENTATION is the $\mathbb{Z}_2$ this field asks about, and the paper settles it by continuity rather than by a class*** | ⟐ **owed** |
+| 15 | **`P07`** | `sec:applications-synthesis` · `sec:CR-hawking` · `sec:null-boundary-correspondence` | *gathers `P13`'s wall as an established rung. **Prediction: statement-and-citation throughout, with the null-boundary correspondence a generator-COUNTING statement rather than an index*** | ⟐ **owed** |
+| 16 | **`P15`** | `sec:background` · `sec:properframe` · `sec:throat` | *the branch point $r=0$ is singular for the $r$-chart and smooth on the substrate. **Prediction: that is a chart statement, not a topological branch point, and the paper says so — so this field is thin here*** | ⟐ **owed** |
+| 17 | **`P04`** | `sec:decomp` · `sec:floor` | ⛔ *`P04` "came back empty on all **six** of 60's fields" and then carried a first integral (`I20`). **So the honest prediction is still emptiness — the anisotropy split is a decomposition into spherical harmonics, which is representation theory and not this field — and it MUST be read rather than assumed*** | ⟐ **owed** |
+
+⌗ ***THE PREDICTIONS THAT CAN BE SCORED WRONG, listed so the scoring is not retrofitted:*** *`P02`'s
+opposite-Morse-index forcing · `P10`'s deficiency indices $(1,1)$ · `P08`'s missing cokernel · `P01`'s
+$\kappa\neq0$ non-degeneracy · `P03`'s winding number 3 · `P12`'s unnamed characteristic class.*
+**Each is a number or a name the paper either has or does not.**
+
+---
+
 ## ⛭⛭⛭ THE ESTIMATE FROM CONTENTS — **the step this bake SKIPPED, run at r3622**
 
 > ⛔ ***`OVERNIGHT_FIELD_BAKE_WORK_ORDER.md` STEP 2 requires all seventeen ABSTRACTS read and rated
