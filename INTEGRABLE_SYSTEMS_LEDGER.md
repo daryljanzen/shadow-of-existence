@@ -489,6 +489,54 @@ same paper. Caught by compiling.*
 
 ---
 
+## ⛭⛭⛭ `I21` — **LEAST-ARBITRARINESS AND SUPERINTEGRABILITY ARE ONE PROPERTY, READ TWO WAYS** — r3656 · **AND THE PASS IS COMPLETE, 17/17**
+
+***The only prediction of emptiness in the table, flagged at the time as needing a test rather than an
+assumption. It is REFUTED.***
+
+*`P06`'s ontological argument turns on a clause about a group action:* **"every less symmetric structure
+requires a choice of how to break the symmetry, and that choice is a modulus, whereas maximal symmetry
+leaves nothing to choose."**
+
+| reading | statement | source |
+|---|---|---|
+| **epistemic** | maximal symmetry carries **no modulus**, so it is a world rather than a family | `P06` |
+| **structural** | a modulus is a coordinate **transverse to the orbits**, so one exists precisely when the action is **non-transitive** | `P12`, in its own words |
+| **dynamical** | the isometry group acts transitively on the **unit tangent bundle** ($15\ge2\cdot5-1$), so every geodesic is every other seen from another vantage — **maximal superintegrability** | `I17` |
+
+⇒ ***Transitivity is the shared root.*** *Least-arbitrariness and superintegrability are one property read
+epistemically and dynamically, and **a modulus appearing is the same event as the action ceasing to be
+transitive.** Landed in `sec:least-arbitrariness`.*
+
+⚠ ***NOT CLAIMED***: *that the modulus count equals the integral deficit. Cutting $\mathrm{dS}_5$ to SdS
+drops the integrals $15\to4$ and raises the moduli $0\to1$; there is no simple complementarity and
+asserting one would be an overclaim.*
+
+---
+
+## ⛭⛭⛭ THE LOCATOR, SCORED — 17 of 17 through pass B
+
+| | count |
+|---|---|
+| right on **paper** | **16 of 17** |
+| right on **address** (section named held) | **14 of 17** |
+| **REDIRECTED** — right paper, wrong section | 2 — `P03` (predicted action-angle in `sec:params`; found the mechanical analogue in `sec:cubic`), `P15` (found in `sec:properframe`) |
+| **REFUTED** | **1 — `P06`**, the only prediction of emptiness |
+| **CHECKED-NEGATIVE** | 1 — `P05`, and because a neighbouring field got there first |
+| hedge refuted | 1 — `P04`'s *"probably the whole of it"* |
+
+⌗ ***WHAT THE SCORE SAYS.*** *The abstract identifies the **paper** reliably and the **section** about four
+times in five. **Every one of the four papers a vocabulary screen would have scored empty — `P02`, `P04`,
+`P06`, and `P01` — carried something**, and three of those four carried a finding that changed how another
+paper reads. `58`'s own record was that the ratings were usually right and the reasons wrong about half the
+time; ours are right more often than that, and the two misses are both **address** misses, which is the
+error the pass is designed to absorb.*
+
+⛔ ***AND THE ONE PREDICTION OF EMPTINESS WAS THE ONE THAT WAS WRONG.*** *That is the result to carry into
+the next field.*
+
+---
+
 ## ⛭⛭⛭ THE LOCATOR — every paper, the sections named, the prediction stated — r3626
 
 > **⛔ THIS REPLACES THE HIGH/MEDIUM/LOW TABLE BELOW, WHICH WAS DOING THE WRONG JOB.** *A rank is a licence
@@ -525,7 +573,7 @@ same paper. Caught by compiling.*
 | 14 | **`P13`** | `sec:routes` · `sec:wall` | *the closed routes are an exhaustion argument; **does any run through a conserved quantity?*** | ⛭ **CONFIRMED, `sec:wall`** — *`I18`, landed, **and it is the obstruction's own hypothesis**. Plus a canon row* <br> ⛔ **AND THIS CORRECTS 60's r3642 VERDICT, WHICH READ "REFUTED on the letter — no route runs through a conserved quantity."** *That is **wrong**: `sec:wall`'s obstruction rests on a continuous isometry, which **is** a Killing vector and so a linear first integral. 60 read that section in full and did not connect the paper's language to the field's — which is the one thing the locator exists to do.* ⌗ *60's `sec:cascade` observation stands beside it and is untouched: the rank count (SM rank 4 ⊄ $\mathrm{SO}(6)$ rank 3) is a **commuting-charge** count, this field's own counting principle in Lie-theoretic clothes.* |
 | 15 | **`P14`** | `sec:chirality` · `sec:count` | *the radial Dirac superpotential is a 1-D problem with a solvable structure — **shape invariance** is this field's neighbour* | ⛭ **CONFIRMED, `sec:chirality`** — *`I19`, landed. **The prediction named the right test and the answer is NO**, which is the informative direction* <br> ⛭ **AND 60 agrees on the address** — *`sec:chirality` writes $W$ and both partner potentials outright. 60 named shape invariance as the checkable question and **did not compute it**; `I19` does, and the answer is NO.* ⌗ *60 adds the object: the paper's actual first integral is the **conserved twist $c$** (`P11`'s), and its real neighbour here is in the bibliography — **Jackiw–Rebbi**.* |
 | 16 | **`P04`** | `sec:decomp` · `sec:floor` | *$\ln(1+z)=\int H\,\dd t$ is a quadrature and **probably the whole of it*** | ⛭ **CONFIRMED, `sec:decomp`, and the hedge was WRONG** — *`I20`, landed. **`P04` is not empty for this field***, *and it had come back empty on all six of 60's* <br> ⛔ **AND 60's r3642 VERDICT WAS WRONG — IT READ "CONFIRMED — paper, address AND hedge", with *"the quadrature is $\int\dd a/a$, an exact differential, so it is an IDENTITY, not the integration of a dynamical system."*** *It is not an identity: $\partial_\eta$ is a **conformal** Killing vector whose charge $a\omega$ is conserved **on $p\!\cdot\!p=0$**, and that conservation **is** $1+z$.* ⌗ ***AND 60 HAD ALREADY BUILT THE INSTRUMENT THAT SEES THIS:*** *`I5`, 60's own `P05` receipt, established exactly this restricted-first-integral structure — $\{\xi\!\cdot\!p,\,p\!\cdot\!p\}=2\,p\!\cdot\!p$, conserved on the null cone alone. **60 wrote the tool and did not reach for it.*** |
-| 17 | **`P06`** | `sec:rules` · `sec:least-arbitrariness` | *no dynamics; the prediction is that this is genuinely empty, and **that prediction has to be tested rather than assumed*** | ⛭ **CONFIRMED — and it needed the read.** *Zero sites of the field's vocabulary; the two terms a count WOULD have flagged in `sec:least-arbitrariness` are both homonyms — "Hamiltonian" is P10's self-adjoint-extension operator (functional analysis) and "invariant" is a parity-even part of a metric function. **The count says look; the read says empty.** 59 was right that this had to be tested* |
+| 17 | **`P06`** | `sec:rules` · `sec:least-arbitrariness` | *no dynamics; the prediction is that this is genuinely empty, and **that prediction has to be tested rather than assumed*** | ⛔ **REFUTED, `sec:least-arbitrariness`** — *`I21`, landed. **The prediction of emptiness was wrong**, and it was the one flagged as needing a test* <br> ⛭ **60 ACCEPTS THE FINDING AND MARKS ONE DISTINCTION.** *`I21` applies 60's own census thesis correctly — vocabulary absence is not content absence — and 60's "genuinely empty" was too strong. ⌗ But this row differs in KIND from `I18` and `I20`, and a future reader needs to know which weight it carries:* **in `P13` and `P04` the paper's OWN sentence, read correctly, *is* a first-integral statement — a TRANSLATION.** *In `P06` the sentence is about moduli and choice; reaching superintegrability needs `P12`'s transversality and `I17`'s count — **a BRIDGE, whose field-side end is in those two and not in `P06`.*** ⇒ *Real, and 59 fences it themselves ("NOT CLAIMED: that the modulus count equals the integral deficit"). **`P06` carries no object of this field; what it carries is a claim this field can translate.*** |
 
 ⌗ ***12 of 17 through pass B — 59 took rows 1–7 descending, 60 took rows 13–17 from the bottom, and
 rows 8–12 (`P12`, `P16`, `P01`, `P05`, `P07`) are owed.*** *Nothing here is dismissed on a count, and `P02`
