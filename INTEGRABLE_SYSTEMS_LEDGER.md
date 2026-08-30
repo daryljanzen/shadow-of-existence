@@ -360,6 +360,41 @@ first, and that is a different thing from being empty.***
 
 ---
 
+## ⛭⛭⛭ `I17` — **THE SUBSTRATE IS MAXIMALLY SUPERINTEGRABLE, AND `I13`'s LADDER RUNS FROM HERE TO THE WALL** — r3648
+
+***The locator's prediction was exactly right, and the count closes the ladder `I13` opened from the other
+end.***
+
+*A maximally symmetric $D$-manifold carries the largest isometry algebra any $D$-manifold admits,
+$D(D+1)/2$, and each Killing vector gives one linear first integral of the geodesic flow.*
+
+| | Killing vectors | DOF | Liouville needs | max. superintegrability needs $2D-1$ | |
+|---|---|---|---|---|---|
+| **$\mathrm{dS}_5$ substrate** | **15** | 5 | 5 | 9 | ⛭ **met with a surplus of 10** |
+| **$\mathrm{dS}_4$ background** | **10** | 4 | 4 | 7 | ⛭ met with a surplus of 6 |
+
+⇒ ***So the substrate's geodesic flow is not merely integrable but MAXIMALLY SUPERINTEGRABLE***, *which is
+the dynamical face of the corpus's own claim that the substrate has no distinguished point or direction:
+the isometry group acts transitively on the unit tangent bundle, so **all geodesics are one geodesic seen
+from different vantages** — which is `p0`'s thesis in this field's words.*
+
+### ⌗ AND THE LADDER IS NOW COMPLETE, TOP TO BOTTOM
+
+| | integrals | |
+|---|---|---|
+| $\mathrm{dS}_5$ substrate, uncut | **15** | superintegrable, surplus 10 |
+| Type O, de Sitter | 10 | over-determined |
+| Type D, SdS | 4 | integrable on Killing vectors alone |
+| Type D, Kerr–dS | 3 | **short by one — the Killing tensor's job** (`I13`) |
+| the wall, Type N | 1 | the norm alone |
+
+⇒ ***Every cut lowers the count, and the construction is a controlled descent from superintegrable to
+non-integrable.*** *`p0` has the top, `P12` has the strata, `P09` supplies the tensor where the linear
+integrals run out — and **the descent itself is what none of the three states.** Landed in `p0` pointing
+at `P12`, closing the arc `I13` began.*
+
+---
+
 ## ⛭⛭⛭ THE LOCATOR — every paper, the sections named, the prediction stated — r3626
 
 > **⛔ THIS REPLACES THE HIGH/MEDIUM/LOW TABLE BELOW, WHICH WAS DOING THE WRONG JOB.** *A rank is a licence
@@ -392,7 +427,7 @@ first, and that is a different thing from being empty.***
 | 10 | **`P01`** | `sec:3` · `sec:5` | *horizon generators are a null geodesic congruence; does the metric-singularity condition have a first-integral statement?* | ⛭ **CONFIRMED, `sec:3`** — *`I15`, landed. **The first LOW-confidence prediction tested, and it held***: *the hedge was that `P01`'s subject is causal structure rather than motion, and the constancy turned out to have a dynamical reading anyway* |
 | 11 | **`P05`** | `sec:relations` · `sec:conjugacy` · `sec:alpha-invariant` | *"the single invariant is the geometry" — is that invariant in this field's sense, and does the $\alpha$-action have a conserved charge?* | ⛭ **CHECKED-NEGATIVE, and the question is ANSWERED — `I16`.** *`sec:alpha-invariant` and `sec:relations` read in full; **the dynamical statement is already landed there by 60's `I5`, and nothing further is owed*** |
 | 12 | **`P07`** | `sec:lift-initial-rate` · `sec:sds-cosmology` | *the lift's closed form and the recovered Carter constant; states results derived elsewhere* | ⟐ **owed** |
-| 13 | **`p0`** | `sec:rulings` · `sec:standard` · `sec:unification` | *the straight null rulings are geodesics of the substrate; maximal symmetry is the largest possible algebra of first integrals* | ⟐ **owed** |
+| 13 | **`p0`** | `sec:rulings` · `sec:standard` · `sec:unification` | *the straight null rulings are geodesics of the substrate; **maximal symmetry is the largest possible algebra of first integrals*** | ⛭ **CONFIRMED, `sec:rulings`** — *`I17`, landed. The prediction was exactly right and the count is exact* |
 | 14 | **`P13`** | `sec:routes` · `sec:wall` | *the closed routes are an exhaustion argument; does any run through a conserved quantity?* | ⟐ **owed** |
 | 15 | **`P14`** | `sec:chirality` · `sec:count` | *the radial Dirac superpotential is a 1-D problem with a solvable structure — **shape invariance** is this field's neighbour* | ⟐ **owed** |
 | 16 | **`P04`** | `sec:decomp` · `sec:floor` | *$\ln(1+z)=\int H\,\dd t$ is a quadrature and probably the whole of it* | ⟐ **owed** |
