@@ -158,9 +158,10 @@ in the register below.***
 >
 > ⚠ ***AND THE PROBES WITH NO RECEIPT ARE NAMED TOO, WITH WHY.*** *`I0`, `I18`'s canon half — **counted and
 > read, not computed**; the evidence is a census and a pair of read sites, and a receipt would only restate
-> the count. `I1`, `I9`, `I10`, `I11`, `I14`, `I15`, `I17`, `I19`, `I20`, `I21` were each **verified
-> symbolically in session**; `I12` and `I13` carry the two whose reuse is heaviest, and the rest are
-> **owed** rather than exempt. **Recorded as owed, not quietly skipped.***
+> the count. `I1`, `I10`, `I11`, `I14`, `I15`, `I17`, `I20`, `I21` were each **verified symbolically
+> in session** and are **OWED a receipt** — recorded as owed, not exempt and not quietly skipped.
+> ⛭ ***Five are written:*** *`I8`, `I9`, `I12`, `I13`, `I19`, chosen because their results are reused
+> hardest — **`I13` alone is leaned on by `I17`, `I18` and `I19`**.*
 
 ## ⌗ THE PROBE REGISTER — every row marked before this field is closed
 
