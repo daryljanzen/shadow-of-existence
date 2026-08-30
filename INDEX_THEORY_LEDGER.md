@@ -6,6 +6,10 @@ job: The differential-topology and index-theory field-bake ledger — what bit, 
 sources: [chat]
 ---
 
+> ⛭ **`D2`'s RECEIPT — named here at r3660, because it was named nowhere.** *`receipts/P14_matter_sector_paper/D2_index_carries_three_senses_inside_one_paper.py`* — *`index` runs ×116 word-bounded across twelve papers and is **not one object**; `P14` carries all three senses, which is the evidence for the §0 canon row.* ⌗ *It ran and was registered; **the ledger whose probe it settles did not name it**, so the computation had no argument attached. `check_citation_chain` now fails on that.*
+
+> ⛭ **`D1`'s RECEIPT — named here at r3660, because it was named nowhere.** *`receipts/P14_matter_sector_paper/D1_the_traced_half_is_the_theorem_and_the_computed_half_is_not.py`* — *which half of the index theorem `P14` uses and which half its own text marks as **traced rather than computed**.* ⌗ *It ran and was registered; **the ledger whose probe it settles did not name it**, so the computation had no argument attached. `check_citation_chain` now fails on that.*
+
 # THE INDEX THEORY LEDGER — second of the six, and second by weight rather than by count
 
 > **▣ WHY THIS FIELD IS SECOND DESPITE RANKING BELOW THREE OTHERS.** *`corpus/field_survey.py` ranks it ×24

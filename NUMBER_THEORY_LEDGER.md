@@ -6,6 +6,8 @@ job: The number-theory field-bake ledger — what bit, what bounced, and where t
 sources: [chat]
 ---
 
+> ⛭ **`T1`'s RECEIPT — named here at r3660, because it was named nowhere.** *`receipts/P05_groupoid/T1_the_galois_inference_needs_irreducibility_and_it_holds.py`* — *P05's `rem:galois` infers $S_3$ from the discriminant not being a square, which is invalid without irreducibility; the conclusion holds because the horizon cubic **is** irreducible over $\\mathbb{C}(M)$, and the control $r^3-r^2+r-1$ (discriminant $-16$, not a square, Galois group $\\mathbb{Z}_2$) shows the inference genuinely fails without it.* ⌗ *It ran, it was registered, and a paper cited it; **the ledger whose probe it settles did not name it**, so the computation had no argument attached. `check_citation_chain` now fails on that.*
+
 # THE NUMBER THEORY LEDGER — one bite, and it is a missing hypothesis three earlier bakes built on
 
 > **▣ RANKED ×31, FOURTH OF SIX, AND THE RANK WAS BUILT ALMOST ENTIRELY ON HOMONYMS.** *After

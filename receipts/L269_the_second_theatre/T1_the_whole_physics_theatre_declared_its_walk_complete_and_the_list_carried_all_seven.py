@@ -57,6 +57,10 @@ strike from; what this adds is that the instruction named two stations and the f
     python3 receipts/L269_the_second_theatre/T1_the_whole_physics_theatre_declared_its_walk_complete_and_the_list_carried_all_seven.py
 
 Written r3158, `L-269`.  Stated for reversal.
+
+NOT-A-FIELD-BAKE-RECEIPT: an audit of the programme's own records, not a probe of any field: it mentions
+field bakes as its subject matter rather than settling a field's probe, so no ledger
+names it and none should.  Declared at r3660 rather than inferred.
 """
 import importlib.util
 import os

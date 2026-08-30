@@ -6,6 +6,8 @@ job: The numerical-analysis field-bake ledger — what bit, what bounced, and wh
 sources: [chat]
 ---
 
+> ⛭ **`Q1`'s RECEIPT — named here at r3660, because it was named nowhere.** *`receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py`* — *a stated tolerance is a request and the corpus answers it.* ⌗ *It ran and was registered; **the ledger whose probe it settles did not name it**, so the computation had no argument attached. `check_citation_chain` now fails on that.*
+
 # THE NUMERICAL ANALYSIS LEDGER — the field aimed at the computational layer, not the papers
 
 > **▣ THE ORDER SAID SO IN ADVANCE AND IT WAS RIGHT.** *"Screen `convergence`; causal convergence

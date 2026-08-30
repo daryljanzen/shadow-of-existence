@@ -6,6 +6,8 @@ job: The probability and stochastic-processes field-bake ledger — the sixth an
 sources: [chat]
 ---
 
+> ⛭ **`R1`'s RECEIPT — named here at r3660, because it was named nowhere.** *`receipts/L_probability/R1_the_whole_footprint_is_three_geometry_words.py`* — *the whole footprint is three geometry words — `Gaussian` curvature, general `covariance`, and the string inside `invariance`.* ⌗ *It ran and was registered; **the ledger whose probe it settles did not name it**, so the computation had no argument attached. `check_citation_chain` now fails on that.*
+
 # THE PROBABILITY LEDGER — the sixth field, and the cleanest bounce of the six
 
 > **▣ THE ORDER SAID: *"thinnest. A bounce here is a result."*** *It is a bounce. This ledger's job
