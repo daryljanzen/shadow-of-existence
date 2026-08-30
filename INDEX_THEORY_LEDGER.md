@@ -226,6 +226,83 @@ $\kappa\neq0$ non-degeneracy · `P03`'s winding number 3 · `P12`'s unnamed char
 
 ---
 
+## ⛭⛭⛭ THE REACH CLOSE — §5b's four blocks — r3688
+
+*`SIX_FIELDS_WORK_ORDER_v2.md` §5b was written at r3678, **after** this field's locator was already
+scored. The close is rebuilt to it here.*
+
+### 1 · THE SEVENTEEN, BY NAME
+
+| paper | verdict | ⌗ and a CHECKED-NEGATIVE row says WHICH KIND |
+|---|---|---|
+| **`P14`** | ⛭ **LANDING** — `I51`, the $D{=}5$ monodromy bound is **attained** (order exactly 8) | *the prediction itself was already landed by this line's own `D1` at r3614* |
+| **`P08`** | ⛭ **LANDING** — `I52`, the vacuum theorem is an **index-1** statement and the index is the mass | |
+| **`P01`** | ⛭ **LANDING** — `I53`, the two horizons are a **repeller/attractor pair**, indices summing to zero | |
+| **`P06`** | ⛭ **LANDING** — `I54`, `thm:modal` **is** local-triviality-without-global-triviality | |
+| **`P12`** | ⛭ **LANDING** — `I55`, the Atiyah sequence verified; the class route **unavailable**, not merely unnamed | |
+| **`P13`** | ⌗ **WORKED BY CITATION** — the obstruction's home; probe `D3` at r3610 | |
+| **`P07`** | ⌗ **WORKED BY CITATION** — gathers `P05`'s cover with sources named | |
+| **`P11`** | ⌗ **WORKED BY CITATION** — the obstruction's **complement**, correctly applied | |
+| **`P05`** | ∅ **CHECKED-NEGATIVE** | ***COMPLETE ELSEWHERE, not empty*** — *`sec:deck` is a full branched-cover treatment, landed in `COMPLEX_ANALYSIS_LEDGER` with two receipts* |
+| **`P03`** | ∅ **CHECKED-NEGATIVE** | ***COMPLETE ELSEWHERE*** — *`sec:winding`'s thirds are real; the cover is complex analysis's* |
+| **`P16`** | ∅ **CHECKED-NEGATIVE** | ***COMPLETE ELSEWHERE*** — *`monodromy` ×9 is Fuchsian, receipted in complex analysis* |
+| **`P02`** | ∅ **CHECKED-NEGATIVE** | ***COMPLETE ELSEWHERE*** — *Morse landed by name in the catastrophe ledger, and again by 59 from the integrable side* |
+| **`P10`** | ∅ **CHECKED-NEGATIVE** | ***COMPLETE IN THE PAPER*** — *deficiency indices $(1,1)$ named ×8 and receipted; nothing was missing to add* |
+| **`p0`** | ∅ **CHECKED-NEGATIVE** | ***GENUINELY EMPTY, and it gathers*** — *`Atiyah`/`obstruction`/`spin structure` all cite `P13`/`P14`; no working site* |
+| **`P09`** | ∅ **CHECKED-NEGATIVE** | ***GENUINELY EMPTY*** — *thinnest on both halves of the corrected term list* |
+| **`P15`** | ∅ **CHECKED-NEGATIVE** | ***GENUINELY EMPTY*** — *`branch point` ×97 is a locus, canon'd as `BRANCH` ① long before this bake* |
+| **`P04`** | ∅ **CHECKED-NEGATIVE** | ***GENUINELY EMPTY*** — *and read for three fields now: two hits, this one miss* |
+
+### 2 · THE BAR, MEASURED — AND IT IS SHORT IN ONE PLACE
+
+| | |
+|---|---|
+| papers read | **17 of 17** |
+| probes scored | **12** (`D1`–`D6`, r3610) **+ 17** locator rows |
+| receipts written | **5** — `I51`, `I52`, `I53`, `I54`, `I55` |
+| receipts named by this ledger | **5 of 5** |
+| canon rows routed | **1** — `monodromy` ①② to `ONTOLOGY_FOUNDATION_INDEX` §0 |
+| ledger length | **396 lines** |
+| ⛔ **`\ldg{index_theory}` markers in papers** | ***ONE paper — `P14`, and it predates this pass (r3614).*** |
+| ⛔ **paper clauses landed by the v2 pass** | ***ZERO*** |
+
+⛔ ***THAT LAST PAIR IS THE SHORTFALL AND IT IS RECORDED RATHER THAN ROUNDED.*** *JOB 2's habit is four
+things in one commit — clause, marker, receipt, named. **This pass delivered the last two and not the
+first two.** Five computations are registered, run and named, and **none of them is cited from the paper
+whose claim it settles.*** ⌗ *59's field landed 13 receipts and **15 markers across nine papers**. The
+comparison is the point of measuring.*
+
+### 3 · WHAT IS STILL OPEN
+
+* ***THE FIVE CLAUSES ARE UNLANDED.*** *`I51`–`I55` each support a sentence a paper could carry — the
+  bound is attained; the vacuum theorem is index-1 and the index is the mass; the horizons are a
+  repeller/attractor pair; `thm:modal` is local flatness; the class route is unavailable. **None is
+  written into a paper and none has a marker.** That is the field's open work, not its polish.*
+* **`P08`'s cokernel is zero on a finite interval away from $r=0$.** *`I52` says so in its own scope
+  block: the singular endpoint where $2M/r$ blows up is **excluded**, and the index there is not
+  addressed.*
+* **`P12`'s base has no topology.** *`I55` shows a characteristic class is uncomputable because $\C$'s
+  homotopy type is never fixed. **Whether it can be fixed is a question this field cannot answer alone.***
+
+### 4 · WHAT THE FIELD CHANGED, ONE LINE PER PAPER
+
+| | |
+|---|---|
+| `P14` | *a bound became a value — order 8 **attained**, so the pair structure is real and not vacuous* |
+| `P08` | *two numbers it already had were named as one: $\dim\ker=1$ and onto **are** an index, and it is the mass* |
+| `P01` | *one fixed point became two, and the relation between them is forced rather than computed* |
+| `P06` | *a philosophical theorem was shown to be a mathematical one **in the paper's own words*** |
+| `P12` | *a route it did not take was shown to be **unavailable** rather than merely unchosen* |
+| the other twelve | *nothing — and eight of those were **already complete**, four elsewhere and one in the paper itself* |
+
+⇒ ***READING THAT LIST BEFORE WRITING THE SUMMARY, AS §5b SAYS TO:*** **every line attaches a REASON to a
+result the paper already had, or names a boundary it had already reached.** *No line adds physics. `I53`
+comes closest — the repeller/attractor pair is a relation the corpus had not stated — and even that is a
+property of a function the corpus has had since `P01`.* ⛭ **The field's honest yield is five reasons and
+one canon row, against a marker count of zero. That is the close, not a preface to one.**
+
+---
+
 ## ⛭⛭⛭ THE LOCATOR, SCORED — 17 OF 17 THROUGH PASS B — r3680
 
 *v2 §7: **score the locator at the end**, and a locator that never misses is not locating anything.*
