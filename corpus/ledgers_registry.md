@@ -44,5 +44,6 @@ generator lost rows silently before it was hardened.*
 | `variational` | `VARIATIONAL_LEDGER.md` | field bake | variational / action against CR — the field the corpus uses and never names |
 | `figure_theorem` | `FIGURE_THEOREM_LEDGER.md` | theorem bake | The figure–theorem ledger: which classical theorem each figure carries, and its receipts |
 | `information_theory` | `INFORMATION_THEORY_LEDGER.md` | field bake | The information-theory field-bake ledger --- what bit, what bounced, and where the boundary is |
+| `number_theory` | `NUMBER_THEORY_LEDGER.md` | field bake | The number-theory field-bake ledger --- what bit, what bounced, and where the boundary is |
 | `index_theory` | `INDEX_THEORY_LEDGER.md` | field bake | The differential-topology and index-theory field-bake ledger --- what bit, what bounced, and where the boundary is |
 | `integrable_systems` | `INTEGRABLE_SYSTEMS_LEDGER.md` | field bake | The integrable-systems field-bake ledger --- what bit, what bounced, and where the boundary is |
