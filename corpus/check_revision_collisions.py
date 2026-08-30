@@ -155,6 +155,9 @@ BASELINE = {'r3622',
             #: 60's index-theory locator.*  ⌗ *Twelve in a row across an afternoon is the steady state
             #: this file now measures rather than reports as incidents.*
             'r3662',
+            #: ⛔ ** r3664 -- the THIRTEENTH consecutive, r3640..r3664. **  *59's pass-C receipts against
+            #: 60's index-theory rows 2/17 and the `D6` correction.*
+            'r3664',
             'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
             'r2821', 'r3099', 'r3100', 'r3105', 'r3108',
             # ⛔ added r3128 (`L-256`): the three that arrived AFTER r3112 reported the class and
