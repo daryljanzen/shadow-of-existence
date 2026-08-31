@@ -65,6 +65,51 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⛭⛭⛭ r3723 — **THE ACOUSTIC SCALE, EACH QUANTITY IN ITS OWN METRIC: $1.8\sigma$, AND $H_0$-FREE**
+
+***The calculation PO-13 had never run. Nothing mixed, nothing fitted beyond the onset already in the
+model.***
+
+| | |
+|---|---|
+| $\rs$ **LEAF** — the phase accumulator, the metric the plasma lives in | **105.36 Mpc** |
+| $\rs$ **STACK** — the comoving ruler, the vacuum metric | **135.46 Mpc** |
+| ⛭ ratio | **1.2857** — *and the instrument's undocumented constant is $1.286$. **Derived, not stipulated.*** |
+| $D_M$, read across leaves → stack | 13,005 Mpc |
+| ⛭ $100\,\theta_*=100\,\rs^{\rm stack}/D_M$ | **1.04164** against the sky's $1.04109\pm0.00030$ |
+
+### ⛭ AND IT IS $H_0$-FREE, WHICH WAS THE WHOLE POINT
+
+| $H_0$ | 67.0 | 70.0 | 73.0 | 76.0 |
+|---|---|---|---|---|
+| $100\,\theta_*$ | 1.04164 | 1.04164 | 1.04164 | 1.04164 |
+
+⇒ ***Identical to five decimals. The CMB acoustic angle places NO constraint on $H_0$ in this model — it
+constrains $x_0$ alone, and $H_0$ comes from the local measurement unopposed.***
+
+### ⌗ THE THREE ATTEMPTS, SIDE BY SIDE
+
+| | $100\theta_*$ | miss | |
+|---|---|---|---|
+| mixed metrics, from $a\to0$ | 1.07458 | $+3.22\%$ | $111\sigma$ |
+| mixed metrics, from the Rydberg | 1.03959 | $-0.144\%$ | $5\sigma$ |
+| ⛭ **correct metrics, from the onset** | **1.04164** | **$+0.053\%$** | **$1.8\sigma$** |
+
+⛭ ***THE TENSION RESOLVES TRIVIALLY, EXACTLY AS DARYL SAID IT MUST*** — *one geometric rate, two
+parameters $(x_0,\alpha)$, and a ruler that is not radiation-pinned. **Nothing was adjusted to make it
+happen; the mixing was removed and it fell out.***
+
+### ⛔ AND WHAT REMAINS IS NOW A SINGLE, DIFFERENT PROBLEM
+
+***The SCALE is right to $1.8\sigma$. The PEAK POSITIONS within it are not:*** *the instrument gives
+$204/508/804$ against $220.6/538.1/809.8$, i.e. $\ell_1/\ell_A=0.6764$ against the sky's $0.7312$.*
+
+⇒ ***That is the DRIVING, not the scale*** — *`r3683` measured it tracking the start redshift, and `r3685`
+showed the branch-point datum brings CR's driven $Q$ to the control's to three decimals. **Those two have
+never been run together with the metrics assigned correctly, and that is the next calculation.***
+
+---
+
 ## ⛭⛭⛭ r3721 — THE RATE QUESTION SETTLED FROM DARYL'S PRE-BST PAPER: THE TWO HORIZONS ARE TWO METRICS, NOT TWO CONVENTIONS
 
 ***The layered-geometry hypothesis states the leaf/stack distinction directly, years before either word
