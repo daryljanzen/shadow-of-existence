@@ -1,7 +1,7 @@
 ---
 name: numerical-analysis-ledger
 kind: FIELD-BAKE
-current: r3714
+current: r3724
 job: The numerical-analysis field-bake ledger — what bit, what bounced, and where the boundary is. The one field whose target was the receipts rather than the prose.
 sources: [chat]
 ---
@@ -304,19 +304,27 @@ each — **1076 subprocess runs**, against the v1 pass's four.*
 | papers read, by name | **17 of 17** |
 | receipt files run | **269**, in four modes each |
 | Pass A predictions written **before** any work | **19** (17 papers + `R1` + `R2`), committed at **r3712** |
-| receipts written by THIS pass | **1** — `Q50` |
+| receipts written by THIS pass | **2** — `Q50` and `Q51` |
 | instruments built | **1** — `scripts/tolerance_audit.py`, with five controls of its own |
-| clauses landed | **1** — `P15`, with its `\rcpt`, its `\ldg`, and its naming here |
-| `\ldg{numerical_analysis}` markers in papers | **2** — both `P15` |
+| clauses landed | **2** — `P15` and `P05`, each with its `\rcpt`, its `\ldg`, and its naming here |
+| `\ldg{numerical_analysis}` markers in papers | **3** — `P15` ×2 and `P05` (r3724) |
 | ⛔ **locator predictions REFUTED** | **1** — `R1`'s "a measurable fraction are insensitive" |
 | ⌗ **harness defects found by the harness's own output** | **2** — *the docstring displacement, and the one-sided mutation* |
 
 ### 3 · WHAT IS STILL OPEN, SAID SHORT
 
-* ⟐ ***`P05`'s MONODROMY CONTINUATION IS UNSWEPT.*** *The $S_3$ that three papers build on is
-  established by a numerical continuation at one step size and one loop radius. **The check it
-  wants is a refinement sweep**, and it is small — this ledger names it rather than does it,
-  because it belongs to the paper's own receipt and not to a tolerance audit.*
+* ~~⟐ ***`P05`'s MONODROMY CONTINUATION IS UNSWEPT.***~~ ⛭⛭ ***DONE at r3724, `Q51`.***
+  *This block said the check was small and named it rather than doing it. **It was small — and
+  scoping it out was the wrong call, so the sentence is kept and the work is done.*** The sweep is
+  8 step counts × 6 radii at both branch points: **one transposition each, $(1\,2)$ and $(0\,1)$,
+  differing, generating $S_3$** — so `prop:monodromy` stands and now stands on a sweep.
+  ⛔ ***And it found two preconditions the sentence does not state, both of which fail SILENTLY:***
+  *a loop wider than the branch-point separation $4/(3\sqrt3)=0.7698$ returns the **3-cycle** — the
+  product of the two, a correct monodromy of a different loop; and a two-sample loop at large radius
+  returns the **identity**, which would make the deck structure vacuous.* **Neither raises an error,
+  because nearest-neighbour matching always succeeds — correctly or not.**
+  ⌗ *`receipts/L_numerics/Q51_the_monodromy_continuation_is_stable_and_it_has_two_preconditions_neither_stated.py`,
+  landed in `P05` `prop:monodromy`.*
 * ⟐ ***`P15`'s VALIDATION IS A POINT CHECK.*** *One reference code, one parameter point. `Q2` fixed
   what the word "validated" carries; **what it ranges over is still one point.***
 * ⟐ ***THE 54 OVER-TOLERANCE SITES WERE SAMPLED, NOT ENUMERATED.*** *Four were read and all four
