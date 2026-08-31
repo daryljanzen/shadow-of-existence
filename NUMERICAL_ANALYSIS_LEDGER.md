@@ -1,7 +1,7 @@
 ---
 name: numerical-analysis-ledger
 kind: FIELD-BAKE
-current: r3712
+current: r3714
 job: The numerical-analysis field-bake ledger — what bit, what bounced, and where the boundary is. The one field whose target was the receipts rather than the prose.
 sources: [chat]
 ---
@@ -221,3 +221,133 @@ numbers know what they are worth.*
 ⌗ ***THE LOCATOR PREDICTS: one paper carrying a genuine open numerical question (`P05`), two
 carrying stated-but-unswept approximations (`P15`, `P16`), and fourteen empty on the prose side —
 with the field's actual content in `R1`.*** *Scored at the close either way.*
+
+---
+
+## ⌗ PASS B / PASS C — `Q5` IS CLOSED, AND THE QUESTION IT ASKED HAD A FALSE PREMISE
+
+### ⛭⛭⛭ `Q50` — **THE MUTATION HARNESS, BUILT — `scripts/tolerance_audit.py`**
+
+| | |
+|---|---|
+| **row** | **R1** and **R2** of the locator |
+| **verdict** | ⛭⛭ **CONFIRMED on enforcement — and `R1`'s "a measurable fraction are insensitive" is REFUTED, which the row said in advance was the outcome to want** |
+| **landed** | `P15` `sec:diffusion-scale`, extending `Q2`'s own sentence — `\ldg{numerical_analysis}` |
+| **the receipt** | `receipts/L_numerics/Q50_the_tolerance_comparisons_gate_the_verdict_and_a_third_of_them_are_not_tolerances.py` |
+| **the instrument** | `scripts/tolerance_audit.py` — three AST rewrites, five controls of its own |
+
+**THE HARNESS.** *Three AST rewrites of every `abs(E) < T` site, each run from the receipt's own
+directory exactly as `run_all_receipts.py` does:* **MARGIN** *(semantics-preserving; records
+$\lvert E\rvert/T$)*, **MUTATE-UP** *(`abs(E+3T) < T`; catches the assert shape)*, **MUTATE-DOWN**
+*(`abs(E)\*0 < T`; catches the guard shape, where the failure lives on the `<` branch)*.
+
+| the measurement | over **269 files** and **1116 static sites** |
+|---|---|
+| ⛭ **faithfulness, first** | *the margin transform reproduces the baseline verdict on **269 of 269 files** — the whole population run twice, not a synthetic control* |
+| ⛭⛭ **enforcement** | **245 files pass at baseline; 243 of them (99.2%) have at least one tolerance comparison that GATES THE EXIT** |
+| ⌗ **the two that do not** | ***both correct***: `P14_lambda_spectrum`'s `abs(lv) <= 4` is a **display filter**; `L562/P1` **skips with a printed reason** — its banked logs are not on this tree — and names `L-830` as the gated self-contained substitute |
+| ⛔ **and the premise fails** | *of the **918 sites that execute**: **210 (22.9%) sit at exactly zero**, 82 more at ulp level, 422 in the accuracy band, 150 load-bearing within one order, and **54 (5.9%) sit AT OR OVER their own tolerance** — real-root counters, degeneracy guards, `"NULL" if abs(fv)<1e-12 else "spacelike"` classifiers* |
+
+⇒ ***`Q5` ASKED WHETHER THE TOLERANCES ARE "LOOSE ENOUGH TO PASS ANYTHING", AND THAT QUESTION
+PRESUPPOSES EVERY `abs(E) < T` IS AN ACCURACY ASSERTION. MEASURED, A THIRD OF THEM ARE NOT.***
+*Two of the five bands are working exactly as intended **by being nowhere near their tolerance**.
+A single verdict over 1116 sites would have been meaningless because the sites are not one kind of
+thing — and only the measurement could have shown that.*
+
+⛔⛭⛭ ***THE HARNESS'S FIRST PASS REPORTED FOUR DEFECTS AND ALL FOUR WERE ITS OWN BLIND SPOTS.***
+*Up-mutation alone left four files exiting 0. **Read one at a time rather than counted**: `L265`'s
+`abs(lv) < 3/4` is a threshold predicate on an **integer**; `P14_lambda_spectrum`'s is a display
+filter; and `P15_which_coupling`'s two are **guards** whose failure branch is the `<` side, which an
+upward kick can only silence.* ⇒ ***A one-sided mutation cannot test a two-sided guard, and
+`abs(E) < T` is not always a tolerance. Publishing the four would have been the instrument
+reporting its own limits as the corpus's.*** *The down-kick was built from those four and recovers
+two of them; `INVARIANT 4` of the receipt fires if anyone removes it.*
+
+⌗ ***AND THE HARNESS BROKE THE FILES IT WAS MEASURING, ONCE.*** *The margin preamble was first
+prepended as **text**, which displaced each module's docstring and set `__doc__` to `None`; eleven
+receipts that print and split their own docstring died with `AttributeError` and the harness
+reported that as **their** result.* ⇒ ***The baseline mode exists because of that: a verdict about
+a mutated run is worth nothing without the un-mutated one beside it.***
+
+### ⌗ THE PROSE SIDE — the seventeen locator rows, scored
+
+| # | paper | verdict |
+|---|---|---|
+| 1 | **`P05`** | ⛭⛭ ***CONFIRMED, AND IT IS THIS FIELD'S ONE REMAINING OPEN QUESTION.*** *`prop:monodromy` is "verified numerically by continuation in the complex $2M$-plane" and `rem:monodromy-group` says the generation claim **is a computation** whose alternative was real. **No step-size or loop-radius sweep appears**, so the two transpositions are established at one discretisation. `X5_monodromy_group` is registered and gated; what is not shown is stability under refinement.* ⌗ *Named as open rather than worked: it is a probe with a real failure mode and it wants its own receipt* |
+| 2 | **`P15`** | ⛭ **CONFIRMED** — *the CAMB comparison is a **point check**: one reference, one parameter point. `Q2` landed the margin; the range is still one point* |
+| 3 | **`P16`** | ⛭ **CONFIRMED** — *`bbn_network.py`'s convergence language is on the **integration**; the species/reaction truncation is the uncontrolled approximation and is not swept* |
+| 4 | **`P03`** | ⛭⛭ **CONFIRMED, AND IT WAS THE HARNESS'S CONTROL BEFORE THE HARNESS EXISTED** — *the "machine precision" agreements are exact identities in floating point, and the margin run puts **210 sites at exactly zero and 82 more at ulp level**. Written into the locator at Pass A, measured at Pass C* |
+| 5–14 | **`P02` `P11` `P10` `P14` `P04` `p0` `P08` `P12` `P13` `P09`** | ⛭ **CHECKED-NEGATIVE on the prose, ten times** — *and each is now **measured** on the receipts side rather than screened: every one of their receipt files appears in the 269 and in the enforcement count* |
+| 15–17 | **`P01` `P06` `P07`** | ⛭ **CHECKED-NEGATIVE** — *`P06` got the hard read the rule requires: **no historiographic claim carries a quantity a computation would have to support**, and the paper argues explicitly against reliability estimates built from one's own successes, so a number there would have been self-undercutting. There is none* |
+
+---
+
+## ⛭⛭⛭ THE REACH CLOSE — the v2 §5b template, four blocks
+
+### 1 · THE SEVENTEEN, BY NAME — *and the population beside them*
+
+| verdict | papers | count |
+|---|---|---|
+| ⛭ **LANDING** | `P15` — `Q50`'s clause in `sec:diffusion-scale`, extending `Q2`'s own sentence | **1** |
+| ⛭ **WORKED, EARLIER** | `P15` — `Q2`, from the v1 pass, in the same sentence | **—** |
+| ⛭ **CONFIRMED, NOTHING OWED** | `P16` *(truncation not swept, and it is honest about it)* · `P03` *(the exactness class, and it became the harness's control)* | **2** |
+| ⟐ **OPEN, WITH ITS CHECK NAMED** | `P05` — *the monodromy continuation is unswept in step size and radius* | **1** |
+| ⛭ **CHECKED-NEGATIVE on the prose, each measured on the receipts side** | the other thirteen | **13** |
+
+⌗ ***AND THE POPULATION IS THE ROW THAT MATTERS***: *269 receipt files, 1116 sites, run four times
+each — **1076 subprocess runs**, against the v1 pass's four.*
+
+### 2 · THE BAR, MEASURED
+
+| | |
+|---|---|
+| papers read, by name | **17 of 17** |
+| receipt files run | **269**, in four modes each |
+| Pass A predictions written **before** any work | **19** (17 papers + `R1` + `R2`), committed at **r3712** |
+| receipts written by THIS pass | **1** — `Q50` |
+| instruments built | **1** — `scripts/tolerance_audit.py`, with five controls of its own |
+| clauses landed | **1** — `P15`, with its `\rcpt`, its `\ldg`, and its naming here |
+| `\ldg{numerical_analysis}` markers in papers | **2** — both `P15` |
+| ⛔ **locator predictions REFUTED** | **1** — `R1`'s "a measurable fraction are insensitive" |
+| ⌗ **harness defects found by the harness's own output** | **2** — *the docstring displacement, and the one-sided mutation* |
+
+### 3 · WHAT IS STILL OPEN, SAID SHORT
+
+* ⟐ ***`P05`'s MONODROMY CONTINUATION IS UNSWEPT.*** *The $S_3$ that three papers build on is
+  established by a numerical continuation at one step size and one loop radius. **The check it
+  wants is a refinement sweep**, and it is small — this ledger names it rather than does it,
+  because it belongs to the paper's own receipt and not to a tolerance audit.*
+* ⟐ ***`P15`'s VALIDATION IS A POINT CHECK.*** *One reference code, one parameter point. `Q2` fixed
+  what the word "validated" carries; **what it ranges over is still one point.***
+* ⟐ ***THE 54 OVER-TOLERANCE SITES WERE SAMPLED, NOT ENUMERATED.*** *Four were read and all four
+  are classifiers. **The other fifty are inferred to be the same kind and that inference is not a
+  measurement** — said here rather than left for a later reader to discover.*
+
+### 4 · WHAT THE FIELD CHANGED, ONE LINE PER PAPER
+
+| paper | what changed |
+|---|---|
+| **`P15`** | *gained the second half of the sentence `Q2` started: **what a stated tolerance carries anywhere in this corpus is now measured rather than assumed*** |
+| **`P05`** | *nothing landed — and it acquired a **named open numerical question** where it had none* |
+| **`P03`** | *nothing owed — and it supplied the class that kept the harness honest* |
+| **the other fourteen** | *nothing owed on the prose, **and every one of them is now inside a measured population** rather than inside a screened row* |
+
+⇒ ⛔ ***READ AS A LIST: THIS FIELD DID NOT FIND A DEFECT, TWICE.*** *`Q1` confirmed the tolerances
+are honest; `Q50` confirms they are enforced. **Both times the field went looking for a failure and
+measured a success instead**, and both times the measurement was worth more than the suspicion —
+because before them, "the corpus's numerics are careful" was a thing nobody had checked.*
+⌗ ***The two defects this pass DID find were in the instrument.***
+
+---
+
+## ⛭ THE BOUNDARY, RE-STATED — the v1 block stands and gains one line
+
+> *v1: **the papers contain no numerical analysis and the receipts contain a great deal of it, done
+> well**, and a field bake reading only the seventeen bodies would have reported the field absent.*
+
+⛭⛭ ***AND THE v2 PASS ADDS WHAT THAT ASYMMETRY COSTS: the computational layer is where the
+corpus's care lives and it is the layer with no reviewer.*** *A paper's claim is read by whoever
+reads the paper. **A receipt's `abs(x-y) < 1e-9` is read by nobody, and until this pass nothing had
+ever established that it could fail.*** ⇒ *That is why the field's two findings are both
+confirmations and why both were worth the run: **an unexamined success is not the same thing as a
+success**, and the difference is exactly one instrument.*

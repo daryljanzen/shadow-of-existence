@@ -1465,3 +1465,36 @@ reading cost, not what it produced.***
 ⌗ ***AND A ROW CAN BE EMPTY OF A FIELD'S CONTENT AND STILL BE WHERE THE FIELD'S FINDING STARTS.***
 *`P07` scored `CHECKED-NEGATIVE` on content and supplied the theorem's NAME. A verdict table that
 records only what a paper owes cannot record that, and this ledger's close says it in words instead.*
+
+---
+
+### ⛭⛭⛭ **r3714 — AN INSTRUMENT'S FIRST FINDINGS ARE ITS OWN BLIND SPOTS, AND READING THEM ONE AT A TIME IS THE DIFFERENCE**
+
+*`scripts/tolerance_audit.py` mutates every `abs(E) < T` site in the receipts and asks whether the
+comparison gates the verdict. **Its first full pass reported four files where no tolerance
+comparison gates anything.** Four defects, in a corpus that prides itself on this exact discipline —
+a publishable number.*
+
+⛔ ***ALL FOUR WERE THE HARNESS.*** *`abs(lv) < 3/4` on an **integer** parameter is a threshold
+predicate. `abs(lv) <= 4` is a **display filter**. And two were **guards** — `if abs(E) < T:
+fail.append(...)` — where the failure lives on the `<` branch, so an upward kick can only silence
+them. **A one-sided mutation cannot test a two-sided guard, and `abs(E) < T` is not always a
+tolerance.***
+
+⇒ ***THE COUNT WAS AVAILABLE AND THE READING WAS NOT. Four is a finding; four read individually is
+four corrections to the instrument.*** *After the down-kick was added, 243 of 245 passing receipts
+are gated and the two that remain are correct — a display filter and a skip that prints its own
+reason.*
+
+⌗ ***AND THE SAME HARNESS BROKE THE FILES IT WAS MEASURING FIRST.*** *Its probe preamble was
+prepended as text, which displaced each module's docstring; eleven receipts that print and split
+`__doc__` died with `AttributeError` and **the harness reported that as their result**. ⇒ **The
+baseline mode exists because of it: a verdict about a mutated run is worth nothing without the
+un-mutated one beside it**, and running the population twice unmutated is what proved the transform
+faithful — 269 of 269, which no synthetic control could have established.*
+
+⛭ ***AND THE MEASUREMENT REFUTED THE QUESTION.*** *`Q5` asked whether the corpus's tolerances are
+"loose enough to pass anything" — presupposing they are all accuracy assertions. **Of 918 executing
+sites, 210 sit at exactly zero and 54 at or over their tolerance.** Two of five bands are working
+as intended by being nowhere near their tolerance. ⇒ **A single verdict over 1116 sites would have
+been meaningless, and only the measurement could have shown that.***
