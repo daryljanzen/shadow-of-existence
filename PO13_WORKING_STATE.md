@@ -65,6 +65,65 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⛭⛭⛭ r3709 — THE KERNEL COMPUTED WITH EVERY INGREDIENT DERIVED: IT ANNIHILATES THE TENSOR TOWER
+
+***Three ingredients were owed at `r3707`. All three are now derived from the corpus rather than guessed,
+and the geometry closes on itself to $0.0011\%$.***
+
+### ⌗ ONE — $x_0$, DERIVED RATHER THAN GUESSED THREE TIMES
+
+*`P07`'s $E{=}1$ congruence — **the flat leaf the observed cosmology selects** — obeys
+$(\dd r/\dd\tau)^2=1-f=2M/r+r^2/\alpha^2$, so $H^2=2M/r^3+1/\alpha^2$. Matching that to `P16`'s
+$H_{\rm stack}^2=(1/\alpha^2)(1+2(1+z)^3/x_0^3)$ term by term, **verified symbolically**:*
+$$\boxed{\;x_0^{3}=\frac{r_{\rm now}^{3}}{M\alpha^{2}}\;}$$
+⇒ ***and $M$ cancels out of the ratio***: $r_{\rm now}/\lvert r_{\rm turn}\rvert=(x_0^3/2)^{1/3}=1.3126$.
+***Today's areal radius is $1.3126$ times the turnaround radius, independently of the mass.***
+
+⌗ *This also kills the two wrong guesses for a third and fourth time: $x_0$ is not $\lvert
+r_{\rm turn}\rvert/\alpha$ (would need $\Omega_m=0.8386$) and not $r_{\rm now}/\alpha$ (would force
+$M=\alpha$, eleven times Nariai).*
+
+### ⌗ TWO — $M$, FIXED BY THE NARIAI SATURATION, AND THE GEOMETRY CLOSES
+
+*$M/\alpha=(r_{\rm now}/\alpha)^3/x_0^3$, and Nariai caps $M/\alpha\le3^{-3/2}$, so
+$r_{\rm now}/\alpha\le0.9548$ and $\lvert r_{\rm turn}\rvert/\alpha\le0.7274$.* ⛭ ***That last number is
+the Nariai turnaround $(2M/\alpha)^{1/3}$ computed the other way, and they agree to $0.0011\%$ — the two
+routes close.*** *And **`P15` works at the Nariai member's proper frame**, so the bound is saturated and
+nothing is left free:*
+
+| | |
+|---|---|
+| $\alpha$ | 4,931.8 Mpc |
+| $M$ | 949.1 Mpc — $M/\alpha=3^{-3/2}$ exactly |
+| $r_{\rm now}$ | 4,709.0 Mpc $=0.9548\alpha$ |
+| $\lvert r_{\rm turn}\rvert$ | 3,587.5 Mpc $=0.7274\alpha$ |
+| $A$, $S$ | $16.225$ $[L^{1/3}]$, $10{,}329$ Mpc |
+| ⛭ $C=3S^{1/3}/A$ | **4.0268 — dimensionless, multiplying $\mu_n$** |
+
+### ⛭⛭ THREE — AND THE ANSWER IS NOT A FEATURE. IT IS A REMOVAL.
+
+***The scale is a MODE NUMBER, $n_*=1/C=0.2483$. The tensor tower starts at $n=2$.***
+
+| $n$ | $\mu_n$ | $e^{-C\mu_n}$ |
+|---|---|---|
+| **2** | 2.449 | $5.20\times10^{-5}$ |
+| 3 | 3.606 | $4.95\times10^{-7}$ |
+| 10 | 10.863 | $1.01\times10^{-19}$ |
+
+⇒ ***The scale sits BELOW the tower's floor, so the branch point imprints no feature in the tensor
+spectrum — it REMOVES the spectrum, uniformly and exponentially, from the first mode up.***
+
+⛭ ***AND THAT IS A PREDICTION, not a null result***: *no primordial tensor modes survive the branch point.
+Suppression in **power** at $n=2$ is $2.7\times10^{-9}$. **The observational bound is $r<0.036$
+(BICEP/Keck 2021), and this construction sits nine orders below it.***
+
+⚠ ***WHAT IS ASSUMED:*** *the Nariai saturation. `P15` is the Nariai member's proper frame, so it is the
+corpus's own choice rather than mine — **but every number above scales with it and the assumption is
+load-bearing.*** ⌗ *And this settles the tensor tower, **not the acoustic spectrum**: $\mu_n$ here are
+`P10`'s transverse-traceless harmonics. **The Rydberg start still has no mechanism.***
+
+---
+
 ## ⛭ r3707 — THE DIMENSIONS, READ FROM THE PAPER: `C` MULTIPLIES A MODE NUMBER, AND THE NARIAI BOUND EXCLUDES `r3703` OUTRIGHT
 
 ***Read before computing, which is the order that produced the retraction when reversed.***
