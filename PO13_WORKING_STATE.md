@@ -65,6 +65,56 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⛔⛔ r3717 — THE CONTRADICTION AT THE ROOT OF THIS WHOLE THREAD: WHICH RATE THE SOUND HORIZON TAKES
+
+***Three atomic corrections tested and all fail by orders of magnitude, which sent me to ask where
+$\Omega_m=0.3066$ comes from. Reading `P15` `sec:tensions` answered that and exposed something larger.***
+
+| candidate for the $2.2\%$ | size | |
+|---|---|---|
+| reduced mass ($\mathrm{Ry}_H$ vs $\mathrm{Ry}_\infty$) | $-0.027\%$ in velocity | ⛔ **wrong sign**, and $80\times$ too small |
+| Lamb shift (1s) | $6\times10^{-5}\%$ | ⛔ five orders too small |
+| Debye screening at $n_e=4.2\times10^{7}$ cm$^{-3}$ | $3\times10^{-6}\%$ | ⛔ eight orders too small — $a_0/\lambda_D=1.7\times10^{-8}$ |
+
+### ⛔ AND THE ROOT PROBLEM, WHICH IS NOT ABOUT ATOMS AT ALL
+
+*`P15` `sec:tensions` states the $H_0$ claim exactly:* **"$\rs$ and $D_M$ carry the stacking rate's common
+$H_0$, which therefore scales out of their ratio, so $\theta_*$ is fixed by the offset $x_0$ alone… and the
+same $z_{\rm onset}$ meets the scale at every $H_0$ across the range."**
+
+***Measured:***
+
+| $H_0$ | $\theta_*$, $\rs$ on the STACKING rate | $\theta_*$, $\rs$ on the LEAF |
+|---|---|---|
+| 67.0 | 1.82756 | 1.02986 |
+| 73.0 | 1.82756 | 1.07458 |
+| 76.0 | 1.82756 | 1.09523 |
+| **variation** | ⛭ **0.0000% — $H_0$ scales out** | ⛔ **6.35% — it does not** |
+
+⇒ ***`P15`'s $H_0$-independence REQUIRES the sound horizon on the STACKING rate. `P07`'s and `P15`'s own
+kinematic rule puts it on the LEAF*** — *"the plasma's **sound horizon**, its diffusion length,
+recombination, the perturbations — takes the leaf's".* **Radiation carries $\Omega_r=4.15\times10^{-5}/h^2$,
+so $h$ does not cancel. The two statements cannot both hold.**
+
+⌗ ***AND THE WHOLE $H_0$-TENSION CLAIM RESTS ON THE FIRST.*** *That is the claim `sec:tensions` makes —
+the geometric rate fits DESI DR2 at $\chi^2/\mathrm{dof}\simeq1.0$ **at any $H_0$ including the local 73**,
+where $\Lambda$CDM is tied to one $H_0$ and breaks at 73 with $\chi^2/\mathrm{dof}\simeq15$.*
+
+### ⌗ AND IT EXPLAINS EVERY NUMBER IN THIS THREAD
+
+*My whole PO-13 computation put $\rs$ on the leaf, per the rate rule. **That is why $\theta_*$ came out
+$H_0$-dependent, why it needed an early cut-off at all, and why the required start moved with every
+parameter I touched.*** ⛭ *On the stacking rate $\theta_*=1.82756$ from $a\to0$ with no cut-off — and the
+$z_{\rm onset}$ machinery exists precisely to bring that to the sky's $1.04109$. **`sec:tensions` says so
+outright: the onset is "fitted to the acoustic angle at the directly measured $H_0$".***
+
+⚠ ***SO THE RYDBERG THREAD MAY BE ANSWERING A QUESTION THE CORPUS DOES NOT ASK.*** *It is the right
+question only if $\rs$ takes the leaf. **Which rate the sound horizon takes is now the prior question, and
+it is not mine to settle by preference** — it is a contradiction between two statements the corpus makes,
+and one of them has to give.*
+
+---
+
 ## ⌗ r3715 — THE TARGET CHARACTERISED IN LEAF-LOCAL TERMS, SO A MECHANISM CAN BE RECOGNISED RATHER THAN GUESSED
 
 ***Three guesses have now failed. This turn lays the target out instead — every local quantity on the leaf
