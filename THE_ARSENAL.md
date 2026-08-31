@@ -1424,3 +1424,21 @@ defaulting to `ci`, because hardcoding `60` would break 59's tree. **The fix is 
 `NODE=60 bash scripts/prepush.sh` and `NODE=60 bash scripts/sweep_gates.sh`**, which checks the half it
 actually holds and prints the next id it should take. Under `NODE=60` this tree reports 0 of its
 unmerged commits out of band and names `r3696`.*
+
+---
+
+### ⛔ **r3708 — THE HOLLOW-ASSERTION LINT READS `args[-1]`, AND A `check(name, got, want)` HELPER PUTS A LITERAL THERE**
+
+*`SIX_FIELDS_WORK_ORDER_v2.md` §4 lists **four** things the registry rejects. There is a fifth, and it
+cost a sweep: `lint_assertions.py` classifies a `check`-ish call by its **last positional argument**, so
+a helper written `check(label, computed, expected)` presents a bare `True` to the gate and **seven real
+computations were flagged HOLLOW at once**.*
+
+⇒ ***THE GATE WAS RIGHT AND THE HELPER WAS WRONG.*** *A reader of `check(..., x, True)` cannot tell
+whether `x` is a computation or a constant without following it — which is the exact defect the lint
+exists to catch, wearing the shape of a convenience. **The fix is not an exemption: the condition goes
+last, and the computed values are printed into the label instead.***
+
+⌗ ***AND THE TEMPTING WRONG FIX IS WORTH NAMING.*** *Passing a `note` string as a fourth argument makes
+the finding disappear — `args[-1]` is then a long string and no rule fires. **That would have silenced
+the gate without changing anything it was pointing at**, and it was available in one keystroke.*

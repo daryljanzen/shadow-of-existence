@@ -1,7 +1,7 @@
 ---
 name: number-theory-ledger
 kind: FIELD-BAKE
-current: r3706
+current: r3708
 job: The number-theory field-bake ledger — what bit, what bounced, and where the boundary is.
 sources: [chat]
 ---
@@ -205,3 +205,42 @@ live and states what would be there, in a form that can be scored **wrong**.*
 **Where they disagree, the disagreement is the finding**, and it is scored at the close either way.*
 
 ⛔ ***AND THE PREDICTION MOST LIKELY TO BE WRONG IS WRITTEN AS ROW 8 ON PURPOSE.***
+
+---
+
+## ⌗ PASS B — THE READS, AND THE FIRST IS A LANDING
+
+### ⛭⛭⛭ `T50` — **ROWS 1 AND 2 ARE ONE FINDING, AND IT IS A THEOREM THE CORPUS NAMES WITHOUT STATING**
+
+| | |
+|---|---|
+| **rows** | 1 (`p0` `sec:imaginary`) and 2 (`P03` `sec:throat-angle`) |
+| **verdict** | ⛭⛭ **CONFIRMED on row 1, and row 2 CONFIRMED-BUT-ALREADY-THERE** |
+| **landed** | `p0` `sec:imaginary`, a fourth paragraph — `\rcpt{T50_...}` `\ldg{number_theory}` |
+
+⌗ ***ROW 2 SCORED FIRST, AND IT SCORED AGAINST ME.*** *The prediction was that `P03`'s triple-angle
+IS Viète's trigonometric solution of the cubic. **It is, and `P03` proves it** — `prop:triple`
+derives $2M=\tfrac{2}{3\sqrt3}\sin 3w$, the proof runs through $\sin^{3}w=\tfrac14(3\sin w-\sin3w)$,
+and the text says outright that "the three roots of the horizon cubic are the three preimages $w$,
+$\tfrac{\pi}{3}-w$, $-\tfrac{\pi}{3}-w$ of $3w$ under the sine".* ⇒ **The prediction was right about
+the mathematics and wrong about the corpus: there was nothing to add.**
+
+⛔ ***AND THAT IS WHAT MADE ROW 1 FINDABLE.*** *`P03` has the trigonometric solution and never says
+why a trigonometric solution is the only one available. `P05` `sec:deck` computes the Galois group
+— **over $\mathbb{C}(2M)$**, which is the right base for a monodromy and the wrong one for this.
+`P07` names the configuration "casus irreducibilis", twice, correctly, **as the name of a case**.*
+⇒ ***THE CORPUS CARRIES THE THEOREM'S NAME, ITS TWO HYPOTHESES AND ITS OBJECT, AND NOWHERE ITS
+CONCLUSION*** — *that over $\mathbb{Q}(2M)$ **no horizon radius lies in a real radical extension**,
+so the imaginary route to them is forced.*
+
+| | |
+|---|---|
+| **why it is worth landing** | *`sec:imaginary`'s three instances are all places the corpus **chooses** the imaginary, and a reader may answer "then do not". **The horizon radii are a fourth where that answer does not exist** — and the roots are real, which is the section's own law, met where it could not have been arranged* |
+| **the hypothesis is `T1`'s** | ⛭ ***The same missing irreducibility step, load-bearing a second time, for a second theorem, in a second paper.*** *`T1` audited it for the $S_3$ inference; the casus needs the identical hypothesis, and `P05`'s Gauss's-lemma argument supplies it over the real base unchanged* |
+| ⛔ **the control that killed the prettier story** | *$M=0$ and Nariai — the two members the corpus distinguishes — are **both** masses where the specialised cubic goes reducible with real-radical roots. **It selects nothing.** $2M=3/8$ is an undistinguished under-critical mass that does the same, and every rational $r_{0}$ gives one through $2M=r_{0}-r_{0}^{3}$: the reducible masses are **dense**. The receipt asserts the counterexample beside the coincidence so the first cannot be taken without the second* |
+| ⛔ **the control the receipt found by FAILING** | *`M_SAMPLES` was written with $2M=2/5$ in it as under-critical. It is **over**-critical ($2\sqrt3/9\approx0.3849$) and three asserts fired at once. **Kept and promoted to `CONTROL 0`**, because the regime is the control the receipt most needed: over-critical SdS has one real horizon whose radical expression **is** real. ⇒ *And that is `P05` `prop:deck`'s own asymmetry — "in the over-critical regime only the order-two subgroup is realised on the real structure" — reached from solvability instead of monodromy* |
+
+⌗ ***WHAT IS NOT CLAIMED.*** *Not that `P05`'s $\mathbb{C}(2M)$ computation is wrong. Not that the
+$M=0$/Nariai reducibility means anything. Not that `P03` chose the sky angle for this reason — it
+derives it gnomonically, and the finding is only that the derivation could not have come out
+otherwise.*
