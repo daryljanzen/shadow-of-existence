@@ -65,6 +65,46 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⌗ r3715 — THE TARGET CHARACTERISED IN LEAF-LOCAL TERMS, SO A MECHANISM CAN BE RECOGNISED RATHER THAN GUESSED
+
+***Three guesses have now failed. This turn lays the target out instead — every local quantity on the leaf
+at the required start — so the next candidate is checked against a list rather than proposed against a
+feeling.***
+
+**At $z=60{,}500$, the centre of the window the sky requires:**
+
+| | |
+|---|---|
+| photon temperature | $kT=14.210$ eV, $T=164{,}895$ K |
+| **age of the universe** | $2.87\times10^{8}$ s $=$ **9.1 years** |
+| $\rho_r/\rho_m$ | 15.37 |
+| $\rho_\gamma/\rho_b$ | 66.7 |
+| baryon loading $R$ | 0.01124 |
+| sound speed | $c_s/c=0.574132$, against $1/\sqrt3=0.577350$ — **$0.56\%$ below the ultrarelativistic value** |
+| comoving horizon | 7 Mpc |
+| **electron thermal speed** | $v_{\rm th}/\alpha c=\mathbf{1.02195}$ |
+| $r_s$ from there | 135.39 Mpc — the sky's value, by construction |
+
+### ⛭ THE ONE NUMBER THAT TIES THE THREAD TOGETHER
+
+***$v_{\rm th}=1.022\,\alpha c$.*** *The Rydberg locus is where $v_{\rm th}=\alpha c$ exactly, so it is
+**$2.2\%$ low in VELOCITY** — which is $4.5\%$ in temperature and $3.5\%$ in $z$, ***exactly the miss
+measured at `r3713`.*** *So the whole discrepancy is one statement: **the sky wants the electrons a couple
+of per cent faster than the Bohr speed, not exactly at it.***
+
+⌗ *Checked and rejected as the source of that $2.2\%$: the RMS speed $\sqrt{3kT/m}=\alpha c$ gives
+$kT=9.07$ eV ($z=38{,}600$) and the mean speed $\sqrt{8kT/\pi m}=\alpha c$ gives $kT=10.68$ eV
+($z=45{,}470$). **Both are further away than $\sqrt{2kT/m}$, so the choice of thermal average does not
+supply it** — it makes it worse.*
+
+⚠ ***NO MECHANISM IS IDENTIFIED AND NONE IS CLAIMED.*** *`P16` `sec:peak` supplies the leaf-local
+principle — **the compression is adiabatic and $T\propto\rho^{1/3}$, "justified, not assumed"** — and a
+mass-independent recollapse threshold that is *identically the Nariai parameter*, recovered from the ball's
+turnaround with no step in common with the horizon cubic. **But it names no $14$ eV scale**, and neither
+does anything else read so far.*
+
+---
+
 ## ⛔ r3713 — THE COINCIDENCE MEASURED AGAINST THE RIGHT YARDSTICK: IT IS SHARP, AND THE RYDBERG MISSES IT
 
 ***Three candidate mechanisms tested and none lands. Then the test I should have run first.***
