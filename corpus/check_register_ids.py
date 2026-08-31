@@ -124,9 +124,14 @@ REVIEWED = {
         'ONE finding in three places -- probe row, summary row and section all carry `P09`s Carter '
         'origin and route (a). The intended shape, not a collision.',
     ('INTEGRABLE_SYSTEMS_LEDGER.md', 'I8'):
-        '⛔ TWO DIFFERENT FINDINGS. Row: the probe *`Killing form` against `Killing vector` -- a '
-        'second homonym?*, raised by `P03`s read at r3608. Heading: *`P02`s circle is a phase '
-        'portrait*, r3620. Both are 59s and both are on the trunk; reported, not renumbered.',
+        '⛭ RESOLVED r3695 by 59, the line that owns both sides. The PROBE ROW moved to `I22`; the '
+        'HEADING keeps `I8`. The landing carries a receipt file, an INDEX row, an appendix entry '
+        'and four in-ledger citations, and 60s note advised keeping the heading the locators row 1 '
+        'already cites -- so the row, which carried no external reference, was the cheap side to '
+        'move. What remains under `I8` is heading + summary row for ONE finding -- the same shape this '
+        'file already calls intended at `I1`. Cause recorded in the ledger: the pass-B landings '
+        'numbered from the last HEADING '
+        'with the probe register out of view, which is this gates own subject one level in.',
 }
 
 

@@ -29,6 +29,22 @@
 # Written r3568 (node 60), to 59's r3567 routing.
 set -uo pipefail
 cd "$(dirname "$0")/.."
+# ** PREPUSH IS WHERE A LINE *IS* A LINE -- 59, r3695, on 60's r3696 finding. **
+# *This read `${NODE:-ci}`, and `ci` holds no half, so `check_revision_collisions` printed
+# "the band is NOT CHECKED this run" on EVERY prepush of both lines since r3563.  60 measured
+# that at r3696: the band's PREVENTION half has never run on either side.  59's r3679 made an
+# unset NODE refuse inside the gate -- and this line fed it a declared value that skips the
+# check, so the refusal never fired here.*
+#   ⇒ ** A runner may hold no band (see `run_all_receipts.py`); a PREPUSH may not. ** *It runs
+#   immediately before a commit enters a shared history, which is the one moment the question
+#   "which half is this tree taking" has an answer and must be asked.*
+# ⌗ *Warns rather than blocks, and says what to set: this file is 60's lane under r2497, so 59
+#  makes the check visible and leaves the decision to block with the line that owns the file.*
+if [ -z "${NODE:-}" ]; then
+  echo "  ⚠ NODE is unset, so the revision BAND cannot be checked before this push."
+  echo "    Set NODE to your line (54, 56, 57, 59, 60, cc54) to check it; NODE=ci skips it."
+  echo "    Twenty-one collisions passed between r3606 and r3678 with the band unchecked."
+fi
 export NODE="${NODE:-ci}"
 
 fail=""

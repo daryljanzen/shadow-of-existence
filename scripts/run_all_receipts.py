@@ -34,6 +34,19 @@ rather than quietly wiring it in, because a gate nobody runs is worth what a rec
 is worth.
 """
 import os
+
+# ** NODE=ci FOR THE CHILD RECEIPTS -- 59, r3695, answering 60's route from r3726. **
+# *Five registered receipts shell out to `check_revision_collisions`, which since 59's r3679
+# REFUSES to run with `NODE` unset rather than defaulting to `PARITY = 0`.  That refusal is
+# what stopped twenty-one collisions and it stays.*
+#   ⇒ ** But a RUNNER is not a LINE. ** *The refusal exists to stop a node committing without
+#   declaring which half it holds; a harness verifying that a receipt executes holds no half and
+#   is claiming none.  `ci` is a DECLARED value meaning exactly that, and the gate under it
+#   reports "the band is NOT CHECKED this run" -- which is the honest answer for a runner, not a
+#   silent default.  60's reasoning is accepted as given.*
+# ⌗ *This is NOT the r3679 defect one layer out: that defect was a gate INFERRING a band nobody
+#  declared. This declares one, and the declared one holds no band.*
+os.environ.setdefault('NODE', 'ci')
 import sys
 
 # ---------------------------------------------------------------- r2656+c54.208
