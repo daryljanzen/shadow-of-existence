@@ -484,3 +484,32 @@ kept as the depth measure.*
 
 ⇒ ***Fourteen ledgers read. None inflated; three corrected existing work — two of them upward, one an
 over-broad headline. The strike stands.***
+
+---
+
+## ⛔⛭⛭⛭ THE STEP THE SIX-FIELD CAMPAIGN SKIPPED, AND WHAT SKIPPING IT COST — r3620 (59), r3622 (60)
+
+***`OVERNIGHT_FIELD_BAKE_WORK_ORDER.md` STEP 2: read all seventeen ABSTRACTS, rate each HIGH/MEDIUM/LOW
+with a reason drawn from what the paper is ABOUT, and write the table into the ledger BEFORE working any
+paper.*** *59 skipped it, wrote `SIX_FIELDS_WORK_ORDER.md` without it, and I skipped it after them across
+all six fields.*
+
+⇒ ***THE MECHANISM, WHICH IS THE WHOLE REASON THE STEP EXISTS: a field's term list is a list of what you
+already know the field to contain, so grepping it returns only that. It cannot return the thing the field
+would see that the corpus has no word for.***
+
+**IT COST A VERDICT IN EACH LINE'S WORK, and the two failures are the same failure:**
+
+| | the paper | its vocabulary for the field | what it actually is |
+|---|---|---|---|
+| **59, integrable systems** | `P02` | `integrable` ×0, `separable` ×0, `Killing tensor` ×0, `first integral` ×0, `Liouville` ×0 | ***the field's founding example*** — the Schwarzschild interior is term for term the closed Friedmann scale factor |
+| **60, probability** | `P04` | `probability` ×0, `stochastic` ×0, `random` ×0, `variance` ×2 | ***the standard deviation of a path-averaged random field***, with a central-limit $1/\sqrt N$, a correlation caveat and a Fourier window |
+
+⛔ ***AND IN BOTH CASES EVERY SCREEN SCORED THE PAPER NEGATIVE AND WOULD SCORE IT NEGATIVE AGAIN.***
+*No word boundary, no de-macroing, no homonym screen reaches a paper that does a field's work in another
+field's words. **The estimate from contents is the only instrument that does, and it works precisely
+because it can be WRONG** — mine misattributed `P10`'s flat-connection claim, which is `P12`'s, and the
+misattribution is kept in the table.*
+
+⌷ **THE ORDER FOR ANY FIELD FROM HERE:** *abstracts first, table written, THEN the terms. **The estimate
+is cheap, it is fallible, and it is the only step that can see past the vocabulary you brought.***

@@ -14,6 +14,11 @@
 \emph{Computes:} analytic continuation of cubic roots around each Nariai branch (loop from common base) = distinct transpositions -> S3; discriminant not a square -> Galois S3; S3xZ2=D6 order 12; control: generic loop trivial
  \emph{Bound:} ---
 \ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/P05\_deck\_group\_S3.py}
+\item[\label{rcpt:Q51_the_monodromy_continuation_is_stable_and_it_has_two_preconditions_neither_stated}\texttt{Q51\_the\_monodromy\_continuation\_is\_stable\_and\_it\_has\_two\_preconditions\_neither\_stated}]\hfill\textsf{[OK]}\\
+\textit{sec:deck (prop:monodromy, rem:monodromy-group)} \ (prop:monodromy is verified by numerical continuation in the complex 2M-plane at one step count and one radius, and rem:monodromy-group says the generation claim IS a computation whose alternative was real; a continuation that steps too coarsely mislabels sheets). 
+\emph{Computes:} sweeps 8 step counts against 6 radii at both branch points: ONE transposition at each, (1 2) and (0 1), differing, generating a group of order 6; then the two controls -- a loop of radius 0.8 encloses both branch points (separation 0.7698) and returns the 3-cycle, exactly the product of the two, and a 2-step loop at large radius returns the IDENTITY, which would make the deck structure vacuous. Neither raises an error
+ \emph{Bound:} SUPPORTS P05 -- prop:monodromy stands and now stands on a sweep. NOT CLAIMED: anything about the Galois group over a field (that is T1's and T50's); and X5\_monodromy\_group is not faulted, it established the permutations and that is what it was written to do
+\ \emph{Run:} \texttt{python3 receipts/L\_numerics/Q51\_the\_monodromy\_continuation\_is\_stable\_and\_it\_has\_two\_preconditions\_neither\_stated.py}
 \item[\label{rcpt:P05_dihedral_generators}\texttt{P05\_dihedral\_generators}]\hfill\textsf{[OK]}\\
 \textit{prop:relations/completeness} \ (within-single-geometry morphism group = dihedral sigma,tau on the sky-angle circle: sigma\textasciicircum{}2=tau\textasciicircum{}3=(sigma tau)\textasciicircum{}2=id, <sigma,tau> order 6 = D3\textasciitilde{}S3, all 6 preserve sin 3w). 
 \emph{Computes:} builds generators, checks relations + order 6 + sin3w-invariance

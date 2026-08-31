@@ -32,14 +32,14 @@ that opens on the wrong subject produces findings it owns.*
 
 ---
 
-# ⛔⛭⛭ A GATE THAT CATCHES YOU FIVE TIMES IS NOT A GATE THAT IS TOO STRICT — r3618
+# ⛔⛭⛭ A GATE THAT CATCHES YOU SIX TIMES IS NOT A GATE THAT IS TOO STRICT — r3618, updated r3622
 
-*`lint_assertions.py` / `check_receipts` flagged a hollow `expr == True` assertion in **one receipt of
-every field bake**, five fields running: r3608, r3610, r3614, r3616, r3618.*
+*`lint_assertions.py` / `check_receipts` flagged a hollow assertion in **one receipt of every field bake**,
+SIX bakes running: r3608, r3610, r3614, r3616, r3618, and again at r3622 when the campaign was reopened.*
 
 ⇒ ***FIVE CATCHES, FIVE FIELDS, ONE GATE, ONE AUTHOR.*** *Each was fixed by pinning a measured value.
 **The instructive part is not the defect — it is that a careful reader who had been told about it four
-times reproduced it a fifth**, and an automatic check caught every single instance.*
+times reproduced it a sixth**, and an automatic check caught every single instance.*
 
 ⌗ ***THE RULE THIS SHARPENS.*** *A gate's value is not measured by how often it fires on OTHERS. **A
 gate that keeps catching the person who knows about it is doing the work that person cannot do**, and
@@ -920,3 +920,644 @@ trust it until executed. **MODE (standing, refined r1322 with Daryl):** the thre
 - **L13 · jargon** (forced-within-CR → ledger) — ✔ WORKED (r1320).
 - **L14 · map-card numbering** — ✔ WORKED (r1334). Swept ALL live docs for current-tense stale (pre-r845) numbering, not just the masthead (fixed r1316). Found ONE live instance: README's spine line ("fifteen-paper spine P1–P15", matter=P15, current-label p0/16) — FIXED to sixteen papers P1–P16 (+p0/17), matter=P14 (complement of boundary P13), core label p0/17. Verified all other stale-numbering hits are genuinely DATED records, correctly preserved as history: THE_SYNTHESIS (dated core-completion body + current r927 header), THE_NEXT_ARC (dated r805 plan, correct for its date), THE_ARC_PLAN (dated r747), OPEN_PROBLEMS_MAP Cluster I (struck-through ✓COMPLETED record), THE_ARSENAL (renumber-describing + dated meta-flag). The map cards proper (ONTOLOGY_FOUNDATION_INDEX, THE_EVOLUTION_MAP) already on the current scheme.
 - **MAP-LIVE:** family 6/7 propagation is an OUTPUT of working L1–L3 (the γ⁵-continuation claim); the r1320 over-propagation corrected r1321 (ledger); re-propagated as lines close.
+
+# ⛔⛭⛭ A PARTITION IS DEFEATED BY A RUN, AND THE RULE THAT DEFEATS IT IS THE ONE IN THE FINGERS — r3640
+
+***Two lines agreed to split the revision counter by parity. It held for 57 revisions and then failed
+completely rather than partially, and the reason is worth more than the band is.***
+
+**Both lines pick a number the same way: look at the front of the trunk, add to it.** `front + 2`
+**inherits the front's parity** — so it is your half only while the front is *yours*. The two lines
+were not using the same rule and had no way to notice:
+
+| line | rule actually used | after 59's odd run `r3585..r3605` | after 60's even run `r3606..r3620` |
+|---|---|---|---|
+| **60** | *next of MY parity above the front* | `r3606` — front `+1`, EVEN ✓ | *(would be `r3640`)* |
+| **59** | `front + 2` | `r3607`.. ODD ✓ *(agreed by luck)* | ⛔ `r3622` — EVEN, **60's half** |
+
+⇒ ***THE RULES AGREE WHENEVER THE FRONT BELONGS TO THE LINE USING `front + 2`, AND DISAGREE EXACTLY
+WHEN IT DOES NOT.*** So the band is stable under **alternation** and fails on the first long **run** by
+the other line — and the corpus had run-free alternation for fourteen revisions straight, which is
+precisely the condition under which the defect is invisible.
+
+⛔ **AND IT IS SELF-LOCKING, WHICH IS WHY IT WAS TEN AND NOT ONE.** *Once 59 sat at `r3622`, the front
+was 59's own again, so `front + 2` kept returning EVEN.* **A rule that reads only the front cannot
+recover from one excursion; it ratifies it.**
+
+## ⌗ THE MEASUREMENT THAT SEES IT WITHOUT KNOWING WHOSE COMMIT IS WHOSE
+
+*Revision ids on the trunk in **numeric** order, grouped into same-parity runs, since the band:*
+
+    r3563 .. r3576   ⛭ fourteen runs of length ONE — perfect alternation, the band ALIVE
+    r3577 .. r3583   odd, 4        r3584  even, 1        r3585 .. r3605  odd, 11
+    r3606 .. r3638   ⛔ EVEN, 17   — 60's eight, then 59's ten, in ONE unbroken parity run
+
+***A run of length 1 is the band alive. A run of 17 spanning a change of line is the band gone.***
+And it needs no attribution — which matters, because **attribution is not available here**.
+
+## ⛔ WHAT THE OBVIOUS CHECK WOULD HAVE BEEN, AND WHY IT DOES NOT EXIST
+
+*The gate already walks `--first-parent` to read this line's own commits and step over what a merge
+brought in. **The obvious mirror — walk `--first-parent` on the trunk and read the other line's own
+commits — was tried and does not work.*** *This line's work reaches `main` **rebased, with new SHAs**,
+so it sits on the trunk's first-parent chain beside 59's; `cd901791` (`r3608`, 60's) is on that chain.
+⇒ **Topology cannot separate two lines whose merges are rebases**, so a per-line band check on the
+trunk is not constructible at all. That is a negative, and it is the reason the run measurement is the
+instrument rather than a second choice.*
+
+## ⛔⛭ AND THE GATE PRINTED THAT THE PARTITION WAS WHOLE THROUGH EVERY ONE OF THEM
+
+*`check_revision_collisions` printed **"the OTHER half is held, so the band is a partition and the
+prevention is real"** across all ten. It was reasoning from 59's **declaration** at r3563, never
+re-measured.* ⇒ ***A HALF THAT IS HELD BY DECLARATION IS NOT A HALF THAT IS HELD.***
+
+⌗ **This is `r3140`'s failure one level in, and that is the part worth keeping.** *`r3140` withdrew the
+sentence "this half removes the collisions this line can cause and no others" because it reasoned from
+arithmetic it had not done. Its replacement reasoned from a claim it had not re-checked.* ⇒ **The
+class is not "false sentence beside a green gate" but *a green gate whose reassurance rests on
+something outside the measurement* — and the fix is the same both times: say what is true (the half is
+DECLARED) and hand the reader the number instead of the comfort.**
+
+⌷ *Nine of the ten produced **no collision at all** and would never have surfaced; only `r3622` fired,
+and only because 60's copy happened to still be unmerged.* ⇒ **The run report earns its place by
+converting an invisible drift into a printed fact before the collision that makes it expensive.**
+
+## ⛔⛭⛭ THE FINDING COLLIDED WITH THE OTHER LINE WHILE IT WAS BEING WRITTEN — r3646
+
+*`r3640` is the commit that diagnosed the parity band's failure, named `front + 2` as the cause, and
+wrote the rule that fixes it into `CLAIMS.md` and into the gate.* ***Within the hour 59 took `r3640`
+and `r3642` — by `front + 2` from `r3638` — for `P12` and `P16` pass B.*** **The commit that said "this
+will keep happening" collided at its own number.**
+
+⇒ *As confirmation of a mechanism this is as direct as it gets.* **But the useful half is the other
+one: a rule written in a file the other line has not merged yet cannot reach the fingers that pick the
+number.** *59 was not ignoring the rule; 59 could not see it. The fix landed at 17:5x and the
+collisions were made at 18:0x, from a checkout that predated it.*
+
+***A COORDINATION REPAIR THAT TRAVELS BY DOCUMENT IS RATE-LIMITED BY THE MERGE, AND THE THING IT IS
+TRYING TO PREVENT IS NOT.***
+
+⌗ **So the repair was rewritten as a number rather than a rule.** *`check_revision_collisions` now
+prints* **`THE NEXT REVISION ID FOR THIS LINE IS rNNNN`** *on every run — the next id of this line's
+own parity above the front. It costs nothing to obey and is right by construction rather than by
+recall, and it is correct on each line's own tree the moment that tree runs the gate, with no
+agreement to remember.*
+
+⛔ **AND THE FIRST VERSION OF THAT FUNCTION WAS A COLLISION GENERATOR POINTED THE OTHER WAY.** *It read
+only the **trunk's** front, and this line's own unmerged commits are by definition not on the trunk —
+so immediately after `r3644` was written it advised `r3644` again.* ⇒ **Caught by running it, inside
+the same turn that reported the mechanism. The front that matters is the front of everything this line
+can see, not of the half of it that has merged.**
+
+## ⛔⛭⛭ THE REPAIR WAS SUPPRESSED EXACTLY WHERE IT WOULD HAVE REACHED BOTH LINES — r3648
+
+*`r3646` made the band's rule into a number the gate prints, on the reasoning that* **a coordination
+repair travelling by document is rate-limited by the merge.** ⇒ *Then `r3644` was taken by the other
+line anyway, from a checkout predating the push.* **The repair had the same rate limit as the thing it
+replaced, and it did not have to.**
+
+⌗ ***WHERE BOTH LINES ACTUALLY MEET IS CI.*** *The fast job runs `check_revision_collisions` on every
+PR from either line.* ⛔ **And on the runner `PARITY is None` — correctly, the runner is not a line and
+holds no half — so `next_id_for_this_line` returned `None` and the single most useful line of output
+VANISHED at precisely the one place both lines read.**
+
+⇒ ***A DECLARED EXEMPTION IS ABOUT WHAT MAY BE ASSERTED, NOT ABOUT WHAT MAY BE PRINTED.*** *The runner
+must not say whose tree it is. It was never barred from saying* **"the next EVEN is `r3648`, the next
+ODD is `r3645`"** *— which asserts no half at all, because each line already knows its own.* **The
+refusal to guess had quietly taken the useful number down with it.**
+
+⌗ **The class: a correct refusal whose blast radius was never measured.** *`r3573` established that the
+parity is DECLARED and not inferred, and `r3576` found that the declaration was not honoured one level
+down. This is the third instance — the declaration honoured, and the honouring costing an output that
+did not depend on it.*
+
+## ⌗ THREE PREDICTIONS FROM ONE MECHANISM, THREE HITS
+
+*`r3640` named `front + 2` as the cause; `r3646` wrote that `r3644` was "already loaded".*
+
+| predicted at | prediction | outcome |
+|---|---|---|
+| `r3640` | *59 will keep landing in 60's half* | ⛭ `r3640`, `r3642` taken within the hour |
+| `r3646` | *`r3644` is next and it is 60's* | ⛭ `r3644` taken, for `P01` pass B |
+
+⇒ **So the mechanism is not a story fitted to the collisions it was inferred from.** *Fifteen on the
+counter; `r3622`, `r3640`, `r3642`, `r3644` baselined per r3563, documentation over rewrite.*
+
+# ⛔⛭⛭⛭ THE SAME COLLISION ONE LEVEL IN, AND THE REMEDY IS THE OPPOSITE ONE — r3648
+
+*`check_revision_collisions` exists because two lines pick a revision number from the FRONT of a shared
+counter. **Field ledgers carry a second counter with exactly that shape — the register ids `I1`, `I2`,
+… — and it had no band and no gate.*** ⌗ *Found by reading the locator table, not by any check.*
+
+**`INTEGRABLE_SYSTEMS_LEDGER.md` carried two `## `I13`` headings:** 59's *"the isotropy stratification
+is a ledger of first integrals, and it runs short exactly where the Carter constant is needed"* (r3640)
+and 60's *"the Carter constant is the substrate's symmetry, and on Kerr it is not"* (r3642). ⇒ **The two
+are about the same object**, so the collision was not merely ambiguous but *misleading*: a reader
+following `I13` out of one lands in a different finding about the Carter constant.
+
+## ⇒ AND THE RIGHT REMEDY IS THE OPPOSITE OF THE REVISION-NUMBER ONE
+
+| | cited where | remedy | cost |
+|---|---|---|---|
+| **revision id** | ledger prose **on both lines** | ⌷ *documented* (`CLAIMS.md` r3563) | rewriting breaks live references |
+| **register id** | this ledger, `receipts/INDEX.md`, a **generated** appendix | ⛭ ***renumbered*** | 60's `I13` → `I16`: four edits, nothing broken |
+
+***THE RIGHT REMEDY FOR A COLLISION DEPENDS ON HOW FAR THE IDENTIFIER HAS TRAVELLED, AND THE CORPUS HAD
+ONE RULE FOR BOTH.*** *Renumbering is cheap while an id is local and expensive once it is quoted — so
+the moment to pay is the moment it is **found**, which is what the new gate is for.*
+
+## ⛔ AND THE FIRST VERSION OF THE GATE READ HALF ITS POPULATION
+
+*It matched `##` headings only. **A ledger claims an id in TWO forms** — a heading, and a defining table
+row `| **`I8`** | … |` — and the probe register uses the row form throughout.* ⇒ **Ten of seventeen ids
+seen in the one file that had a known collision; 11 of 56 corpus-wide.** *A gate that reads part of its
+population **fails silently in the direction of passing**, which is this corpus's own doctrine turned on
+a gate written to enforce it.* ⌗ *Reading both forms took the population from **11 to 56**.*
+
+## ⌗ AND THE WIDENED GATE IMMEDIATELY FOUND A SECOND COLLISION — 59 WITH ITSELF
+
+***`I8` names both*** *the probe* **"`Killing form` against `Killing vector` — a second homonym?"**
+*(row, raised by `P03`'s read at r3608)* ***and*** *the `P02` pass-B landing* **"`P02`'s circle is a
+phase portrait"** *(heading, r3620).* ⇒ **The pass-B landings numbered from the last HEADING rather than
+the last id IN USE — "the next one after what I can see", with the probe register out of view.** *One
+line, one file, one counter, and the front it read was only part of the front.*
+
+⌷ *`I8` is **reported, not renumbered**: both sides are 59's, both are on the trunk, and the locator's
+row 1 cites the heading. Renumbering another line's registers is not this line's call — but leaving it
+unreported would be worse, so it is carried in `REVIEWED` and printed every run.*
+
+⛭ **And the gate declines a judgement it cannot make.** *An id in both a heading and a row is USUALLY
+correct — `I1` is one finding written in a probe row, a summary row and a section, the intended shape.*
+⇒ **So a co-claim is REPORTED and only a duplicate HEADING FAILS**, with `REVIEWED` carrying the ones a
+reader has actually opened, so the report shrinks to what nobody has looked at yet.
+
+⌗ **One more, caught before it shipped: the gate's own ADVICE was wrong.** *Counting the locator's
+`| **`P16`** |` rows as registers made it print* **"next free: `P17`"** *in six ledgers — and `P17` is a
+paper.* ⇒ *A gate whose advice is wrong is worse than one that gives none, so the paper namespace is
+excluded by name rather than by hoping nobody reads that line.*
+
+# ⛔⛭⛭⛭ THE REMEDY USED THE MECHANISM IT WAS FIXING — r3652
+
+*`r3648` renumbered 60's colliding `I13` to `I16`: **"the next free above `I15`"** — from a checkout
+that did not yet carry 59's `I16`, allocated concurrently for `P05`.* ⇒ ***The renumbering reproduced
+the very bug it was repairing, one revision after the gate was written to catch it.***
+
+⌗ **The gate caught it on the next merge, which is the gate working.** *But "next free above what I can
+see" **is** the mechanism, and* ***a remedy that uses the mechanism it is fixing is not a remedy.***
+
+## ⇒ SO THE BAND REJECTED FOR REVISIONS IS THE RIGHT ONE HERE, FOR THE PROPERTY THAT REJECTED IT
+
+*`r3128` considered a **range** band for revision numbers (`r4000+` per line) and rejected it: it would
+"destroy the rough chronological reading". **Parity** was taken instead.*
+
+⛭ ***That reasoning is correct for revisions and does not transfer, because REGISTER IDS ARE NOT READ
+IN ORDER.*** *Nobody infers from `I15` that it came after `I9`; the ledger's own tables carry the
+ordering.* ⇒ **A remedy is not good or bad in itself. It is good against a named cost — and here the
+cost that decided the first case is simply absent.**
+
+## ⌗ AND PARITY IS NOT PROPOSED AGAIN, BECAUSE IT HAS NOW FAILED FOUR TIMES
+
+*`r3640`, `r3642`, `r3644`, `r3646` — four revision collisions in one afternoon, every one of them the
+other line numbering consecutively from the front.* ⇒ ***Consecutive numbering is not a fault to be
+corrected; it is what everyone does.*** **So the band that works is the one that survives it: 59 may
+number `I1, I2, I3, …` forever and never meet this line.** *A parity band would instead ask 59 to
+change an allocation habit — the ask that has already failed four times. It is not asked a fifth.*
+
+⌷ *`I13` → `I16` → `I50`. Stated for reversal; `50` is a floor, not a claim on the numbers above it,
+and 59 keeps the whole space below and needs to know nothing about this.*
+
+## ⛔ TWO DEFECTS IN THE BAND'S OWN OUTPUT, BOTH CAUGHT BY READING IT
+
+* *With `I50` present, the plain "next free" returned* **`I51`** *— computed as `max + 1` over all ids.*
+  ⇒ **Advice right for nobody: 59 allocates below the floor and would have been sent 34 numbers past
+  its own front.** *The unbanded space is now measured on its own.*
+* *And on the runner, which holds no floor, that same line printed `I51`* — ***inside 60's band***.
+  ⇒ **Advice that would have walked the other line into the collision this file exists to stop, at the
+  one place both lines read.** *The unbanded next-free is now measured against the lowest declared
+  floor, so it is safe for a line holding none.*
+
+## ⛔⛭⛭ MY LOCAL SWEEP SAID 94/0/2 WHILE CI SAID RED ON THE SAME COMMIT, AND CI WAS RIGHT — r3654
+
+*At `a28ee242` (r3650) this line's tree swept* **94 pass / 0 fail** *and was `behind main: 1`. CI on the
+same commit failed* **`check_revision_collisions check_register_ids`** *— the `r3646` and `I16`
+collisions, neither of which this tree could see.*
+
+⇒ ***A GATE WHOSE SUBJECT IS A TWO-LINE COLLISION IS MEASURED ON THE MERGED TREE. A LOCAL RUN ON AN
+UNMERGED TREE IS STRUCTURALLY BLIND TO THE THING IT CHECKS*** — *it can only see collisions that have
+already merged, which is to say the ones that are already old.* **CI runs the gates on the PR merged
+into `main`, so it sees a collision the moment EITHER side lands.**
+
+⌗ **This corrects the posture these landings were written under.** *`r3648` framed CI's value as
+`REACHING` the other line with the printed number. That is real, but secondary: the larger value is
+that* ***CI DETECTS FIRST.*** *Four of the six collisions here were found by merging main and re-running
+locally — which means each was found one push later than it could have been.*
+
+⌷ *The operational consequence, and it is small: on a collision-class gate the honest sweep is the CI
+run, not the local one, and a green local sweep on an unmerged tree is not evidence of no collision.*
+**Reported rather than automated — this line will not make its own `prepush` fetch and merge on every
+run, because that silently rewrites the tree a contributor is standing in.**
+
+# ⛔⛭⛭⛭ A CLAIM ON AN UNMERGED BRANCH IS NOT A CLAIM — r3656
+
+*60 claimed locator rows 13–17 in `CLAIMS.md` at r3640. **59 worked three of them anyway** — `p0`, `P13`,
+`P14` — landing `I17`/`I18`/`I19` at r3648–r3652 against 60's r3642. Seven consecutive revision numbers
+were taken twice in the process.*
+
+**59 did nothing wrong. The claim was on 60's branch and `main` never carried it.**
+
+⇒ ***THIS IS THE ONE MECHANISM BEHIND EVERY COLLISION RECORDED TODAY.*** *`CLAIMS.md`, the parity band,
+the register-id floor — **the corpus's entire coordination layer travels by document**, and a document
+travels by merge. **The work it is meant to coordinate does not wait for the merge.*** ⌗ *Each remedy
+today was written into a file and then defeated by the same lag: the rule at r3646, the printed number at
+r3648, the renumber at r3652.*
+
+⛭ **The only instrument that escapes it is CI, because CI runs on the MERGED tree.** *That is why the
+gates keep working and the documents keep not.* ⌷ *`r3654` found this from the detection side — CI red
+while the local sweep was green — and this is the same fact from the coordination side.*
+
+## ⌗ AND THE DUPLICATION WAS NOT PURE WASTE, WHICH IS RECORDED SO THE COST IS JUDGED HONESTLY
+
+*Two lines read `p0` blind to each other and the results **compose**:*
+
+| | measures | substrate | Kerr |
+|---|---|---|---|
+| 59 `I17` | **linear** integrals | 15 Killing vectors on $\mathrm{dS}_5$; **surplus 10** | *"short by one — the Killing tensor's job"* |
+| 60 `I50` | **quadratic** integrals | all are Killing-vector products: $105{=}105$ at $n{=}5$ | the Carter tensor is **irreducible** |
+
+⇒ **The substrate's integral structure is entirely Killing-generated at every order either line tested,
+and both lines independently found the same place it fails.** ***Convergence from independent method is
+the one confirmation a single line cannot manufacture.***
+
+## ⛔ AND THE OVERLAP CAUGHT A REAL ERROR OF 60'S, WHICH IS THE HONEST HALF
+
+*60's `P13` verdict read* **"REFUTED on the letter — no route runs through a conserved quantity."**
+*59's `I18`:* ***a continuous isometry is a Killing vector, and a Killing vector is a linear first
+integral*** *— so `sec:wall`'s obstruction rests on a conserved momentum.* **59 is right.**
+
+⌗ ***And the way it is wrong is worse than a bad count.*** *60 read `sec:routes` and `sec:wall` in full,
+printed them, read the Atiyah–Hirzebruch paragraph — **and still failed to connect the paper's language to
+the field's**, which is the single thing the locator exists to do.* ⇒ **A vocabulary census is not a
+substitute for knowing what a field's objects look like wearing other words — and 60 built the census for
+this field, then made the reciprocal mistake with the section open.**
+
+## ⌗ ONE MORE, SMALL: THE GATES WERE RUN MID-MERGE AND REPORTED ON THE PRE-MERGE TREE
+
+*With the conflict resolved but not committed, `check_revision_collisions` returned **PASS** — because
+`MERGE_HEAD` is not in `HEAD`'s history until the merge commit exists.* ⇒ **A tree with a merge in
+progress is not a tree you can measure, and a green gate there is not evidence.** *Same class as r3654,
+one step finer.*
+
+# ⛔⛭⛭⛭ TWICE IN ONE TURN, THE CONTENT WAS IN A STRUCTURE THIS LINE HAD ALREADY BUILT — r3658
+
+*59's `I18` and `I20` overturned two of 60's five pass-B verdicts. **Both corrections have the same
+shape, and it is not the shape 60 was guarding against.***
+
+| 60 wrote | 59 found | where 60 should have looked |
+|---|---|---|
+| `P13`: *"REFUTED on the letter — **no route runs through a conserved quantity**"* | a **continuous isometry is a Killing vector**, hence a linear first integral — `sec:wall`'s obstruction rests on one | 60 **read `sec:wall` in full** and printed it |
+| `P04`: *"the quadrature is $\int\dd a/a$ — an **identity**, not the integration of a dynamical system"* | $\partial_\eta$ is a **conformal** Killing vector; its charge is conserved on $p\!\cdot\!p=0$, and that conservation **is** $1+z$ | ***`I5` — 60's OWN `P05` receipt***, which established exactly that restricted-first-integral structure |
+
+## ⇒ THE DIAGNOSIS, AND IT IS NOT "SCORED FROM A GREP"
+
+*60 built a homonym census for this field and it is genuinely good — three senses of `integrable`, the
+`P06` row that says* **"the count says look, the read says empty."** ⛔ ***AND THEN USED ABSENCE OF
+VOCABULARY AS EVIDENCE OF ABSENCE OF CONTENT, TWICE, WITH THE SECTION OPEN.*** *`P13`: "one site and it
+is `totally geodesic`." `P04`: "**ZERO** sites."* **Both true. Both irrelevant — the content was there
+under other words, which is the exact thing the census exists to warn about.**
+
+***A CENSUS OF WHAT A FIELD IS CALLED IS NOT A TEST FOR WHAT A FIELD IS.*** *The instrument answers
+"where is this word?" and 60 read its silence as "there is nothing here", which is a question it was
+built never to answer.*
+
+⌗ **And the `P04` miss is the sharper one: 60 wrote `I5`, the receipt that identifies a charge conserved
+only on the null cone, and then failed to recognise the same structure carrying `P04`'s central claim.**
+⇒ ***Building the tool is not the same as reaching for it, and this line has now demonstrated the gap in
+its own favour twice in one turn.***
+
+⌷ *Both rows corrected in the ledger with the original wording left visible. 60's surviving contributions
+on those two rows — the `sec:cascade` rank-as-commuting-charge-count observation, and naming shape
+invariance as `P14`'s checkable question — stand and are marked as standing.*
+
+## ⛔⛭ A THIRD CORRECTION, AND THE DISTINCTION THAT SURVIVES IT — r3660
+
+*59's `I21` refutes 60's* **"`P06` is genuinely empty"** *by showing that `P06`'s least-arbitrariness
+clause and the substrate's maximal superintegrability are one property, with **transitivity** the shared
+root.* ⇒ **60 accepts it: `I21` applies 60's own census thesis — vocabulary absence is not content
+absence — and "genuinely empty" was too strong. That is three of five pass-B verdicts overturned.**
+
+⌗ ***AND ONE DISTINCTION SURVIVES, BECAUSE A FUTURE READER NEEDS TO KNOW WHAT EACH ROW WEIGHS.***
+
+| | what was found | kind |
+|---|---|---|
+| `P13` `I18`, `P04` `I20` | the paper's **own sentence**, read correctly, ***is*** a first-integral statement | **TRANSLATION** |
+| `P06` `I21` | the sentence is about moduli and choice; reaching superintegrability needs `P12`'s transversality **and** `I17`'s count | **BRIDGE** |
+
+⇒ *A translation says the content was in the paper and 60 failed to see it. A bridge says the content is
+in the **relation** between papers, and its field-side end is elsewhere.* **Both are findings. Only the
+first is a paper being non-empty.** ⌗ *59 fences it themselves — "NOT CLAIMED: that the modulus count
+equals the integral deficit" — which is the same distinction from the other side.*
+
+⛭ **Recording this is not defence of the overturned verdict.** *The verdict was wrong and is marked
+wrong. But "how much does this row weigh" is a different question from "who was right", and collapsing
+them would lose the thing the locator was built to measure.*
+
+# ⛔⛭⛭⛭ A CENSUS THAT READS THE DOMINANT SENSE FOR THE WHOLE IS MEASURING THE MODE — r3672
+
+*This line built a homonym census for the index-theory field and it is a good instrument. **In one
+afternoon it produced the same failure four times, in two mirror-image forms.***
+
+| | the screen said | what was actually there |
+|---|---|---|
+| `P13` | *"one site, and it is `totally geodesic`"* | `sec:wall`'s obstruction rests on a **continuous isometry** — a Killing vector, hence a first integral *(59's `I18`)* |
+| `P04` | *"**zero** sites, on all six fields"* | its path integral **is** a first integral *(59's `I20`)* |
+| `P06` | *"`topolog` ×0, `obstruction` ×0 — empty"* | ***"one shadow happens to be `locally flat`"*** — this field's technical term, in the theorem's own gloss |
+| **`D6`** | *"`fixed point` ×85 is the groupoid's involution, **not Lefschetz**"* | `P01`: *"$r_h$ is a **fixed point** … its eigenvalue is the surface gravity"* — the Lefschetz setting exactly |
+
+## ⇒ THE FIRST THREE ARE ONE ERROR AND THE FOURTH IS ITS MIRROR
+
+*Three times the screen returned **too few** and the content was under other words.* ⛭ **`D6` returned
+too MANY — eighty-five — and failed the same way**: *it attributed the word's mass (`P05` ×39) and then
+concluded about **the word**.*
+
+***A COUNT THAT IS DOMINATED BY ONE SENSE TELLS YOU ABOUT THAT SENSE AND NOTHING ABOUT THE TAIL — AND
+THE FIELD'S OWN MEANING WAS IN THE TAIL, ONE SITE, IN A PAPER THE TALLY DID NOT EVEN NAME.***
+
+⌗ **So "empty" and "all one sense" are the same mistake wearing opposite signs.** *Both read the
+aggregate instead of the sites; both are exactly what a census is FOR finding and exactly what it
+cannot itself decide.* ⇒ **The census tells you WHERE TO READ. It never tells you what is there — and
+this line has now been caught treating it as an answer four times, having written the warning itself.**
+
+⌷ *`D6` is annotated in place rather than rewritten: its `rigidity` half stands, its `P05` reading
+stands, and the one clause that over-reached is struck with the correction beside it. The original
+verdict is the record.*
+
+# ⛔⛭⛭⛭ THE CENSUS SCREENED HALF A FIELD, AND READ THE SILENCE OF THE OTHER HALF AS ABSENCE — r3676
+
+*The four failures at r3672 were all* ***reading the aggregate instead of the sites***. **This is a
+different and larger one: the term list did not span the field.**
+
+*The index-theory bake screened six terms — `index`, `obstruction`, `Atiyah`, `Atiyah–Hirzebruch`,
+`Dirac operator`/`spin structure`, `equivariant index`/`index theorem`.* ⛔ **Every one is from the
+Atiyah–Singer story. Not one covering-space term was screened, and this field is differential topology
+*and* index theory.**
+
+| unscreened | corpus | where |
+|---|---|---|
+| **`monodromy`** | **×92** | `P05` ×44 · `P14` ×14 · `P16` ×9 |
+| **`deck`** | **×58** | `P05` ×21 · `P14` ×15 · `P03` ×12 |
+| **`branched`** | **×20** | `P05` ×11 · `P14` ×4 · `P03` ×3 |
+
+***`P05` alone carries "deck transformations of the horizon cubic's three-sheeted cover branched at
+Nariai, the monodromy about a Nariai point is σ, the deck group S₃".*** *Textbook branched-covering
+theory, worked at length — and `P03` and `P05` were both scored **`CHECKED-NEGATIVE`** by that pass.*
+
+⇒ **Only `index` ×128 and `obstruction` ×79 outrank `monodromy` ×92 among everything the table did
+screen.** *The omitted half is not a tail.*
+
+## ⌗ WHAT MAKES THIS WORSE THAN THE OTHER FOUR
+
+*`SIX_FIELDS_WORK_ORDER_v2.md` §0 already says it:* ***"A term list is a list of what you already know
+the field to contain."*** **I read that, agreed with it, quoted it — and the failure it names had
+already happened in the ledger I was quoting it into.** *The list encoded my picture of the field, and
+my picture was the index theorem.*
+
+⌷ **In fairness to the r3610 pass, it SAW the cover** — *`P05`'s row says "the disagreement is about
+which field owns the cover".* ⛔ *But it made that scoping call **without the footprint**, and a
+boundary drawn without measuring what is on the other side of it is a guess wearing a verdict's
+clothes.*
+
+## ⛭ AND THE CONTAMINATED TERMS ARE NAMED, BECAUSE THREE NEARLY WENT IN
+
+*`sheet` ×11, `degree` ×44 and `lift` ×77 look like covering-space vocabulary and are not:* **`sheet`
+is the hyperboloid's upper sheet; `degree` is vertex degree ("six vertices of degree two") and
+polynomial degree; `lift` is the cosmogenetic lift.** ⇒ *All three were **read before being
+excluded** — which is the same discipline this entry exists to record, applied to the correction
+rather than only to the defect.*
+
+## ⛔⛭⛭ AND r3676 OVER-CLAIMED: AN UNSCREENED FOOTPRINT IS NOT UNWORKED CONTENT — r3678
+
+*r3676 measured that the index-theory census screened six index-theorem terms and no covering-space
+terms, with `monodromy` ×92 and `deck` ×58 unscreened.* **That measurement stands.** ⛔ *What it
+inferred does not:* it framed `P03` and `P05` as scored `CHECKED-NEGATIVE` **by** that blind spot,
+implying content went unworked.
+
+***IT DID NOT.*** *`P05` `sec:deck` is landed — a full branched-cover treatment with `prop:monodromy`
+and `prop:deck`, distinguishing monodromy group $S_3$ from a **trivial** deck group — in
+`COMPLEX_ANALYSIS_LEDGER.md`, whose job line is* **"complex analysis AND MONODROMY against CR"**, *with
+two receipts (`P05_deck_group_S3.py`, `X5_monodromy_group.py`). The r3610 scoping call — "the
+disagreement is about which field owns the cover" — was **right in outcome**.*
+
+⇒ ***AN UNSCREENED FOOTPRINT IS NOT UNWORKED CONTENT.*** **In a corpus with eighteen field bakes, a
+term missing from one field's screen says nothing about coverage until the neighbours are checked.**
+*The measurement was right; the inference from it was not.*
+
+⌗ **And this is the same error shape a sixth time, one level up.** *r3672: "reading the aggregate
+instead of the sites." r3676: reading one field's blind spot instead of the corpus's coverage.* ***Both
+are inferring from a measurement without going to look*** — *and r3676 was written as the entry warning
+against exactly that.*
+
+⛭ *The complex-analysis ledger had already posted the sign:* **"a monodromy argument is easy to
+re-derive because it is short."** *Landing one in index theory would have been the rediscovery that
+ledger named as its lane's own hazard.* ⌷ *r3676 is corrected here rather than rewritten; the
+instrument defect it found is real and its consequence claim is struck.*
+
+## ⛔⛭⛭ I EXPLAINED A PATTERN WITH A MECHANISM I COULD NOT OBSERVE — r3694
+
+*r3640 measured twenty-one revision collisions and assigned a cause:* **`front + 2` inherits the front's
+parity, so a line numbering from the front lands in the other's half after a run.** *It was inferred
+from the SHAPE of the numbers, because this line cannot see the other's tree.*
+
+⛭ **59's r3679 supplies the actual cause.** *That container sets no `NODE`, so
+`check_revision_collisions` read `PARITY` from an unset variable, defaulted to* ***`PARITY = 0` — the
+EVEN half*** *— and certified thirty-seven consecutive commits on the line it was not checking.*
+
+⇒ ***59 WAS NOT COMPUTING `front + 2`. 59 WAS OBEYING A GATE THAT TOLD IT EVEN WAS ITS HALF.***
+
+| | verdict |
+|---|---|
+| the collisions, the counts, the run lengths | ⛭ **stand** — measured here, confirmed there |
+| the remedy (*take the next of your own parity above the front*) | ⛭ **stands** — sound whatever the cause |
+| ⛔ **the diagnosis** | ***withdrawn*** |
+
+⌗ **And it is the same error shape as r3678, one turn later on a different subject.** *There: an
+unscreened footprint was read as unworked content, without checking the neighbouring ledgers. Here: a
+number pattern was read as an allocation rule, without being able to check the other line's
+environment.* ⇒ ***BOTH ARE INFERRING FROM A MEASUREMENT WITHOUT BEING ABLE TO GO AND LOOK — and the
+tell is the same both times: the measurement was sound and the story attached to it was not.***
+
+⛭ **The honest form was available and was not used.** *r3640 could have said "the numbers behave as
+though the other line were computing `front + 2`" and stopped there. It said the other line WAS. **A
+mechanism I cannot observe is a hypothesis, and writing it as a finding is the failure — not the
+hypothesis.***
+
+# ⛔⛭⛭⛭ NEITHER LINE'S BAND HAS EVER BEEN CHECKED BEFORE A PUSH — r3696
+
+*59's r3679 found that its container sets no `NODE`, so `check_revision_collisions` defaulted to
+`PARITY = 0` and* ***certified thirty-seven commits against the half 59 was not on***. *The repair makes
+an unset `NODE` a refusal rather than a default.*
+
+⛭ **That repair immediately failed on THIS tree too, and the mirror-image defect is worse in one way.**
+
+| | what its band check did | result |
+|---|---|---|
+| **59** | `NODE` unset → defaulted to `PARITY = 0` | ⛔ *checked against the **wrong** half — 37 certified* |
+| **60** | `scripts/prepush.sh` and `scripts/sweep_gates.sh` both `export NODE="${NODE:-ci}"`, and `ci` holds **no** half | ⛔ *checked against **no** half — **"the band is NOT CHECKED this run"**, every run* |
+
+⇒ ***THE BAND'S PREVENTION HALF HAS NEVER RUN ON EITHER LINE SINCE IT WAS TAKEN AT r3563.*** *One side
+was checked wrongly and the other was not checked at all, so the band has been **pure detection** on
+both — which is exactly what `check_revision_collisions`' own docstring says a band must not be
+reduced to: "a band checked after the merge is a second detector, not a prevention."*
+
+## ⛔ AND MINE IS THE WORSE FAILURE OF READING, BECAUSE THE GATE SAID SO EVERY TIME
+
+*59's gate lied to it. **Mine told me the truth on every single sweep of this session** —*
+
+> `⌗ the band is NOT CHECKED this run: NODE='ci' holds no half`
+
+*— and I read the `PASS=95 FAIL=0` line and not that one.* ⇒ ***A gate that reports a gap in a line I do
+not read is a gap I do not have.*** **This is the "green with a sentence beside it" class the file
+itself warns about, from the other side: there the sentence was false and believed; here it was true
+and unread.**
+
+⌷ *The fix is not a code change — the scripts correctly honour an explicit `NODE` and must keep
+defaulting to `ci`, because hardcoding `60` would break 59's tree. **The fix is that this line runs
+`NODE=60 bash scripts/prepush.sh` and `NODE=60 bash scripts/sweep_gates.sh`**, which checks the half it
+actually holds and prints the next id it should take. Under `NODE=60` this tree reports 0 of its
+unmerged commits out of band and names `r3696`.*
+
+---
+
+### ⛔ **r3708 — THE HOLLOW-ASSERTION LINT READS `args[-1]`, AND A `check(name, got, want)` HELPER PUTS A LITERAL THERE**
+
+*`SIX_FIELDS_WORK_ORDER_v2.md` §4 lists **four** things the registry rejects. There is a fifth, and it
+cost a sweep: `lint_assertions.py` classifies a `check`-ish call by its **last positional argument**, so
+a helper written `check(label, computed, expected)` presents a bare `True` to the gate and **seven real
+computations were flagged HOLLOW at once**.*
+
+⇒ ***THE GATE WAS RIGHT AND THE HELPER WAS WRONG.*** *A reader of `check(..., x, True)` cannot tell
+whether `x` is a computation or a constant without following it — which is the exact defect the lint
+exists to catch, wearing the shape of a convenience. **The fix is not an exemption: the condition goes
+last, and the computed values are printed into the label instead.***
+
+⌗ ***AND THE TEMPTING WRONG FIX IS WORTH NAMING.*** *Passing a `note` string as a fourth argument makes
+the finding disappear — `args[-1]` is then a long string and no rule fires. **That would have silenced
+the gate without changing anything it was pointing at**, and it was available in one keystroke.*
+
+---
+
+### ⛔ **r3710 — §2 IS A STANDARD OF EVIDENCE, NOT A PRIOR ON THE ANSWER, AND THE NUMBER-THEORY SCORE PROVES IT**
+
+*`SIX_FIELDS_WORK_ORDER_v2.md` §2 says **"a prediction of emptiness gets MORE scrutiny, not less"**,
+earned from the integrable-systems run where the single emptiness prediction was the single REFUTED
+one. **Read as a prior, it says emptiness predictions are usually wrong.** This pass read it that
+way and wrote a locator predicting **seven** papers carrying against the v1 pass's **one**.*
+
+⇒ ***THE V1 PASS WAS RIGHT AND THE V2 LOCATOR WAS WRONG BY SIX. Sixteen emptiness predictions,
+tested rather than screened, HELD.***
+
+⛭ ***AND THE RULE STILL EARNED ITS KEEP, BY A ROUTE THE PRIOR READING WOULD HAVE MISSED.*** *The
+pass's one finding is in `p0`, which the v1 pass had inside an **eight-papers-in-one-row** screened
+verdict and never opened; and it was reachable only because `P03`, `P05` and `P07` were each read in
+full and their three pieces — the trigonometric solution, the Galois group over $\mathbb{C}(2M)$,
+and the phrase "casus irreducibilis" — put together. **The six wrong predictions are what the
+reading cost, not what it produced.***
+
+⌗ ***AND A ROW CAN BE EMPTY OF A FIELD'S CONTENT AND STILL BE WHERE THE FIELD'S FINDING STARTS.***
+*`P07` scored `CHECKED-NEGATIVE` on content and supplied the theorem's NAME. A verdict table that
+records only what a paper owes cannot record that, and this ledger's close says it in words instead.*
+
+---
+
+### ⛭⛭⛭ **r3714 — AN INSTRUMENT'S FIRST FINDINGS ARE ITS OWN BLIND SPOTS, AND READING THEM ONE AT A TIME IS THE DIFFERENCE**
+
+*`scripts/tolerance_audit.py` mutates every `abs(E) < T` site in the receipts and asks whether the
+comparison gates the verdict. **Its first full pass reported four files where no tolerance
+comparison gates anything.** Four defects, in a corpus that prides itself on this exact discipline —
+a publishable number.*
+
+⛔ ***ALL FOUR WERE THE HARNESS.*** *`abs(lv) < 3/4` on an **integer** parameter is a threshold
+predicate. `abs(lv) <= 4` is a **display filter**. And two were **guards** — `if abs(E) < T:
+fail.append(...)` — where the failure lives on the `<` branch, so an upward kick can only silence
+them. **A one-sided mutation cannot test a two-sided guard, and `abs(E) < T` is not always a
+tolerance.***
+
+⇒ ***THE COUNT WAS AVAILABLE AND THE READING WAS NOT. Four is a finding; four read individually is
+four corrections to the instrument.*** *After the down-kick was added, 243 of 245 passing receipts
+are gated and the two that remain are correct — a display filter and a skip that prints its own
+reason.*
+
+⌗ ***AND THE SAME HARNESS BROKE THE FILES IT WAS MEASURING FIRST.*** *Its probe preamble was
+prepended as text, which displaced each module's docstring; eleven receipts that print and split
+`__doc__` died with `AttributeError` and **the harness reported that as their result**. ⇒ **The
+baseline mode exists because of it: a verdict about a mutated run is worth nothing without the
+un-mutated one beside it**, and running the population twice unmutated is what proved the transform
+faithful — 269 of 269, which no synthetic control could have established.*
+
+⛭ ***AND THE MEASUREMENT REFUTED THE QUESTION.*** *`Q5` asked whether the corpus's tolerances are
+"loose enough to pass anything" — presupposing they are all accuracy assertions. **Of 918 executing
+sites, 210 sit at exactly zero and 54 at or over their tolerance.** Two of five bands are working
+as intended by being nowhere near their tolerance. ⇒ **A single verdict over 1116 sites would have
+been meaningless, and only the measurement could have shown that.***
+
+---
+
+### ⛭⛭⛭ **r3718 — THE SIX FIELDS ARE CLOSED, AND THE THINNEST ONE LANDED IN THE PAPER EVERY SCREEN GOT WRONG**
+
+*`P04` was scored `CHECKED-NEGATIVE` by every vocabulary screen the probability bake ever ran — its
+`probability`, `stochastic` and `random` counts are all zero — and **its entire argument is the
+standard deviation of a path-averaged random field**. The v1 pass found that by reading the abstract
+and said so. The v2 pass found a second thing in the same section, by reading the argument.*
+
+⛭ ***THE SECOND ONE IS A DIRECTION, NOT A NUMBER.*** *`P04` lists five reasons its floor is a
+**lower** bound. The fifth invokes the single-path Fourier window $\mathrm{sinc}^{2}(kL/2)$ — but the
+bounded quantity is an **anisotropy**, and every sightline is cast from the same observer, so a mode
+longer than the observable region **is a monopole**. Measured: the across-sky scatter tracks the
+single-path variance to 1% at $kL\gg1$ and falls to $2\times10^{-4}$ of it at $kL\ll1$.* ⇒ **The
+bullet's stated direction reverses in that corner, and the corner carries $3\times10^{-6}$ of the
+variance against a margin of 923. One clause, not a retraction.**
+
+⛔ ***AND A ROW REFUTED BY A WARNING IT CARRIED IN ADVANCE.*** *The locator's `p0` row predicted a
+probability-register sharpening of the fine-tuning dissolution, and wrote into itself: "**wrong if
+the sharpening is the number-theory finding in another register — the same move twice is one
+finding, not two**". It was. ⇒ **A prediction that names its own failure mode can be scored honestly
+without the scorer having to be honest twice.***
+
+⌗ ***AND THE FIELD'S CLOSE INVERTS ITS OWN SCREEN.*** *`P06` scores ×0 on every probability term and
+carries survivorship, the base rate, the reference class **and the censoring of unresolved
+episodes** — correctly, in prose, applied to the programme's own five instances and refusing to
+count them. **A vocabulary screen scored the corpus's most probabilistically literate paper at
+zero.***
+
+---
+
+### ⛔⛭⛭ **r3726 — THE ELEVENTH GATE IS NOT IN THE STANDING TEN, SO A RECEIPT OF MINE WAS BROKEN FOR AS LONG AS NOBODY RAN IT**
+
+*After landing six index-theory clauses I ran `scripts/run_all_receipts.py` — the gate that runs
+every registered receipt **from its own directory** — because I had just added five receipts and an
+instrument that rewrites receipts, and confirming the population still runs is the check that
+matters.*
+
+⛔ ***`I55` FAILED, AND IT WAS MINE.*** *It reads `open('corpus/algebroid_paper.tex')` — a
+**repository-relative** path. It passes from the root and fails from its own directory, which is
+exactly the second half of that gate's stated purpose: **"a receipt that only runs from somewhere
+else is not runnable where it is registered."** Every assertion in it was right; it simply could not
+reach its own paper from where it lives.*
+
+⌗ ***AND IT IS THE ONLY ONE IN THE TREE.*** *Measured statically across all 694 registered receipts:
+one file opens a repo-relative path, and it is that one. **The class is closed rather than
+sampled.***
+
+⇒ ***THE LESSON IS ABOUT WHICH GATES GET RUN.*** *`run_all_receipts` costs wall clock the standing
+ten do not, so it runs "at a juncture". **A defect that only that gate can see therefore survives
+exactly as long as nobody reaches a juncture** — and this one survived the whole session that wrote
+it, through eleven green sweeps.*
+
+⌗ ***AND THE RUN REPORTED MORE THAN MY OWN DEFECT — 627 pass, 65 fail, 2 over timeout, 734s.***
+*Of the 65: **19 are `ModuleNotFoundError`** for `camb`, `pynucastro` and `matplotlib`, which are
+absent in this container and are not code defects; **5 are receipts that shell out to
+`check_revision_collisions`**, which since 59's r3679 refuses to run with `NODE` unset — and the
+runner does not pass `NODE` through, so those five now fail under the runner and pass by hand.
+⇒ **That is 59's hardening working correctly and the runner not knowing about it; routed rather
+than changed, because changing it would touch the semantics that stopped twenty-one collisions.**
+The remainder are audit receipts asserting a state of the tree that has since moved — pre-existing,
+and not this session's to rewrite.*

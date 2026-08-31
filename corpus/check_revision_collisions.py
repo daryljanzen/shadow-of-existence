@@ -83,7 +83,90 @@ ROOT = os.path.abspath(os.path.join(HERE, '..'))
 BARE = re.compile(r'^(r\d{3,5})\s*[—-]\s*(.*)$')
 
 #: ** NAMED, not counted. **  Known at r3112; a collision not on this list is a FAILURE.
-BASELINE = {'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
+#: ⛔⛭⛭ ** r3622 IS THE FIRST COLLISION WHOSE TWO SIDES ARE BOTH CITED IN PROSE IN ONE CHECKOUT --
+#: r3640, 60. **  *The thirteen before it were quoted on `main` one side at a time, which is why
+#: `CLAIMS.md` r3563 could settle them with "documentation over rewrite" and lose nothing.*
+#:   ⇒ ** This one is cited EIGHT times as 60's (five field ledgers, `THE_FIELD_BAKE_PLAN.md`,
+#:     `THE_ARSENAL.md`, and a receipt header) AND once as 59's -- `INTEGRABLE_SYSTEMS_LEDGER.md`
+#:     line 364, `I9`, the adiabatic invariant.  ** *A reader following `r3622` out of one file
+#:     lands in the other's work, in the same tree, with nothing marking the switch.*
+#:   ⌷ *It is baselined rather than renumbered for exactly the reason r3563 gave: renumbering either
+#:     side breaks live references to fix an ambiguity a note resolves.*  ** But note what that
+#:     trade now costs, because it is larger than it was: the disambiguator r3563 relied on -- "cite
+#:     the SHA beside the revision" -- is a rule for NEW citations and does nothing for the nine
+#:     already written.  ⇒ The repair is upstream of the citation, in how the number is CHOSEN. **
+BASELINE = {'r3622',
+            #: ⛔⛭⛭⛭ ** r3640 AND r3642, AND THE FIRST OF THEM IS THE COMMIT THAT DIAGNOSED THE
+            #: MECHANISM. **  *r3640 (60) is "the parity band broke, and adopting it was not what was
+            #: missing: `front + 2` inherits the front's parity", and it names `r3644` as what 59
+            #: would take next by that rule.  ** Within the hour 59 took `r3640` and `r3642`, by
+            #: `front + 2` from `r3638`, for `P12` and `P16` pass B. **  *The finding collided with
+            #: the other line WHILE BEING WRITTEN, which is as direct a confirmation as a claim
+            #: about a mechanism can get -- and as complete a demonstration that A RULE IN A FILE
+            #: THE OTHER LINE HAS NOT MERGED YET CANNOT REACH THE FINGERS THAT PICK THE NUMBER.*
+            #:   ⇒ *** Hence `next_id_for_this_line` below: the repair is not a rule to remember,
+            #:       it is a NUMBER THE GATE HANDS YOU, printed on every run. ***
+            'r3640', 'r3642',
+            #: ⛔⛭ ** r3644, AND IT WAS NAMED BEFORE IT HAPPENED. **  *r3646 wrote, in its own message
+            #: and in PR #25: "by `front + 2` from `r3642` the next is already loaded at `r3644`,
+            #: which is 60's."  59 then took `r3644` for `P01` pass B.*  ** Three predictions from
+            #: one mechanism, three hits -- so the mechanism is not a story about the three
+            #: collisions it was inferred from. **
+            #:   ⌗ *And it fired AFTER the number-printing repair was pushed, from a checkout that
+            #:     predated it -- the same rate-limit again, which is what `_print_next` had to stop
+            #:     depending on.  See `next_id_for_parity`: the number now prints on CI too.*
+            'r3644',
+            #: ⛔ ** r3646 -- THE FOURTH IN ONE AFTERNOON, AND THE ONE THAT SETTLED THE REGISTER-ID
+            #: BAND. **  *59's `P05` pass B against 60's "the finding collided while it was being
+            #: written".*  ⌗ *Four consecutive revisions (`r3640`, `r3642`, `r3644`, `r3646`) taken
+            #: twice, each by consecutive numbering from a front that was the other line's.*
+            #:   ⇒ ** Consecutive numbering is not a fault to be corrected; it is what everyone
+            #:     does.  That is why `check_register_ids` took a RANGE band rather than parity for
+            #:     the second counter -- a band that survives the habit instead of asking for it. **
+            'r3646',
+            #: ⛔⛭⛭ ** r3648, r3650, r3652 -- SEVEN CONSECUTIVE REVISIONS TAKEN TWICE, and the three
+            #: landings they name are the SAME THREE PAPERS both lines worked. **  *59's `I17`/`I18`/
+            #: `I19` on `p0`/`P13`/`P14` against 60's number-printing, register-band and
+            #: local-sweep landings.*
+            #:   ⇒ *** THE DUPLICATION IS THE POINT, AND IT IS NOT ABOUT NUMBERS. ***  *60 CLAIMED
+            #:       locator rows 13-17 in `CLAIMS.md` at r3640 and 59 worked three of them anyway --
+            #:       because the claim was on 60's BRANCH and `main` never carried it.*
+            #:   ⌗ ** A CLAIM ON AN UNMERGED BRANCH IS NOT A CLAIM. **  *`CLAIMS.md`, the band, the
+            #:     register floor -- the whole coordination layer travels by DOCUMENT and therefore
+            #:     has the merge's rate limit, while the work it coordinates does not.*  ⇒ ** That is
+            #:     one mechanism behind every collision recorded today, and the only instrument that
+            #:     escapes it is CI, which runs on the MERGED tree. **
+            'r3648', 'r3650', 'r3652',
+            #: ⛔ ** r3654 -- the EIGHTH consecutive, and the last of them corrected this line twice
+            #: in one turn. **  *59's `I20` on `P04` against 60's local-sweep landing.*
+            'r3654',
+            #: ⛔ ** r3656 -- the NINTH consecutive, r3640..r3656 with no gap. **  *59's `I21` closing
+            #: the integrable field 17/17 against 60's coordination-lag landing.*
+            #:   ⌗ *Nine in a row is no longer a series of incidents; it is the steady state of two
+            #:     lines numbering from one counter while every remedy travels by merge.*
+            'r3656',
+            #: ⛔ ** r3658 -- the TENTH consecutive, r3640..r3658. **  *59's v2 work order against 60's
+            #: "twice in one turn the content was in a structure this line had already built".*
+            'r3658',
+            #: ⛔ ** r3660 -- the ELEVENTH consecutive, r3640..r3660 unbroken. **  *59's citation-chain
+            #: gate against 60's third-correction landing.*
+            'r3660',
+            #: ⛔ ** r3662 -- the TWELFTH consecutive, r3640..r3662 unbroken. **  *59's pass C against
+            #: 60's index-theory locator.*  ⌗ *Twelve in a row across an afternoon is the steady state
+            #: this file now measures rather than reports as incidents.*
+            'r3662',
+            #: ⛔ ** r3664 -- the THIRTEENTH consecutive, r3640..r3664. **  *59's pass-C receipts against
+            #: 60's index-theory rows 2/17 and the `D6` correction.*
+            'r3664',
+            #: ⛔ ** r3666, r3668 -- the FOURTEENTH and FIFTEENTH consecutive, r3640..r3668 with no
+            #: gap. **  *59's owed-receipt correction and two discriminated receipts against 60's
+            #: index-theory rows 13 and 8.*
+            #:   ⌗ *Fifteen consecutive is no longer a count worth narrating each time; the run
+            #:     length is the measurement and `report_runs` prints it.*
+            'r3666', 'r3668', 'r3670', 'r3672', 'r3674', 'r3676', 'r3678',
+            #: ⌗ ** r3640..r3676 is NINETEEN consecutive revision numbers taken twice. **  *`report_runs`
+            #: prints the run length; the list above is the register and no longer the narration.*
+            'r2502', 'r2670', 'r2674', 'r2802', 'r2803', 'r2808', 'r2812',
             'r2821', 'r3099', 'r3100', 'r3105', 'r3108',
             # ⛔ added r3128 (`L-256`): the three that arrived AFTER r3112 reported the class and
             # routed its remedy.  *They are baselined because they predate the band, and the band
@@ -315,6 +398,188 @@ def band_violations(root=None):
     return out
 
 
+#: ⛭⛭⛭ ** THE PARITY RUN ON THE TRUNK -- r3640 (`L-`), 60, after the band's first real break. **
+#:
+#: *** THE BAND BROKE, AND IT BROKE FOR A REASON THAT IS ONE SENTENCE LONG. ***
+#:
+#:   ** Both lines pick a revision number by looking at the FRONT of the trunk and adding to it --
+#:   the docstring above says so in its second paragraph, and it is right.  ** *`front + 2` INHERITS
+#:   THE FRONT'S PARITY.*  ⇒ ** So `front + 2` is your half only while the front is YOURS. **
+#:
+#:   ⌗ *And the two lines are not using the same rule, which is why this took 57 revisions to show:*
+#:     * **60 takes the next number of ITS OWN parity above the front.**  *After 59's eleven-long odd
+#:       run r3585..r3605, 60 resumed at `r3606` -- front `+1`, and even.*
+#:     * **59 takes `front + 2`.**  *After 60's eight-long even run r3606..r3620, 59 resumed at
+#:       `r3622` -- front `+2`, and EVEN, which is 60's half.*
+#:   ⇒ *** THE TWO RULES AGREE WHENEVER THE FRONT IS 59'S, AND DISAGREE EXACTLY WHEN IT IS 60'S. ***
+#:     *So the band is stable while the lines ALTERNATE and fails on the first long run by 60.*
+#:     ** It is also SELF-LOCKING: once 59 is at `r3622`, the front is 59's own again and `front + 2`
+#:     keeps returning EVEN.  One slip does not correct itself; it persists.  It persisted TEN. **
+#:
+#: ⛔ ** AND THE MEASUREMENT SAYS THIS PLAINLY, WITHOUT NEEDING TO KNOW WHOSE COMMIT IS WHOSE. **
+#:   *Revision ids on the trunk, in NUMERIC order, since the band was taken at `r3563`:*
+#:       `r3563 .. r3576`   ** fourteen runs of length ONE -- perfect alternation, the band working **
+#:       `r3577 .. r3583`   odd, 4      `r3584`  even, 1      `r3585 .. r3605`  odd, 11
+#:       `r3606 .. r3638`   ** EVEN, 17 ** -- *60's eight, then 59's ten, in one unbroken parity run*
+#:   ⇒ ** A run of length 1 is the band ALIVE.  A run of 17 across a line change is the band GONE. **
+#:
+#: ⛭ ** WHY THIS IS REPORTED AND NOT FAILED, which is the honest half. **  *A long run is ALSO what
+#: one line working alone looks like, and that is legitimate: 59's own odd run of 11 broke nothing.
+#: `r3185..r3377` is an odd run of 82 from before there were two lines.*  ⇒ ** A run is not a
+#: violation; it is the PRECONDITION for one, and the number this gate could not otherwise print. **
+#:
+#: ⛔⛭ ** WHAT THIS IS BLIND TO, STATED SO IT IS NOT DISCOVERED LATER AS A SURPRISE. **
+#:   * ** IT CANNOT SAY WHOSE A COMMIT IS.  ** *The obvious check -- mirror `--first-parent` onto the
+#:     trunk and read the other line's own commits -- WAS TRIED AND DOES NOT WORK HERE: this line's
+#:     work reaches `main` REBASED, with new SHAs, so it sits on the trunk's first-parent chain
+#:     beside 59's.  `cd901791` (`r3608`, 60's) is on that chain.  ** Topology cannot separate two
+#:     lines whose merges are rebases, so a per-line band check on the trunk is NOT CONSTRUCTIBLE. **
+#:     ⇒ *That is why this measures PARITY RUNS, which need no attribution at all.*
+#:   * ** IT CANNOT SEE A DRIFT THAT COLLIDES WITH NOTHING. **  *Nine of 59's ten out-of-band ids
+#:     produced no collision and would never have surfaced; only `r3622` fired, and only because
+#:     60's copy was still unmerged.*  ⇒ ** That is the whole value here: it converts an invisible
+#:     drift into a printed fact, WITHOUT waiting for the collision that makes it expensive. **
+RUN_ALERT = 6          # ⌗ a run longer than this is printed with the doctrine beside it
+BAND_TAKEN = 3563      # the revision at which 59/60 accepted the halves
+
+
+def parity_runs(root=None):
+    """revision ids on the trunk in NUMERIC order, grouped into same-parity runs
+
+    ** NUMERIC order, not log order. **  *The ids are the thing being partitioned, and the log
+    interleaves them by merge; sorting by id reads the counter as the counter was issued.*
+    """
+    r = subprocess.run(['git', 'log', '--format=%s', UPSTREAM],
+                       cwd=root or ROOT, capture_output=True, text=True)
+    if r.returncode != 0:
+        return None
+    ids = sorted({int(m.group(1)) for m in
+                  (re.match(r'^r(\d+)', ln.strip()) for ln in r.stdout.split('\n')) if m})
+    if not ids:
+        return None
+    runs, cur = [], [ids[0]]
+    for a in ids[1:]:
+        if a % 2 == cur[-1] % 2:
+            cur.append(a)
+        else:
+            runs.append(cur)
+            cur = [a]
+    runs.append(cur)
+    return runs
+
+
+def _print_next(post):
+    """print the number, because a rule that has to be recalled has already failed once"""
+    nxt = next_id_for_this_line(post)
+    if nxt is None:
+        ev, od = next_id_for_parity(post, 0), next_id_for_parity(post, 1)
+        if ev is None:
+            print()
+            return
+        print()
+        print('    ⇒ ** THIS RUNNER HOLDS NO HALF, SO IT PRINTS BOTH AND ASSERTS NEITHER: **')
+        print(f'         the next EVEN id is  r{ev}          the next ODD id is  r{od}')
+        print('       *Each line knows which half is its own, so the runner never has to guess --')
+        print('       and the number reaches BOTH lines here, which a document does not: `r3640`,')
+        print('       `r3642` and `r3644` were each taken from a checkout predating the fix.*')
+        print()
+        return
+    print()
+    print(f'    ⇒ ** THE NEXT REVISION ID FOR THIS LINE IS  r{nxt}.  **  *Next of this line\'s own')
+    print('       parity above the trunk\'s front -- the rule as arithmetic rather than as a')
+    print('       sentence, because r3640 and r3642 showed the sentence does not reach the fingers.*')
+    print()
+
+
+def next_id_for_parity(runs, parity):
+    """the next id of `parity` that is free on the trunk AND on this tree's own line
+
+    ⛭ ** Split out from `next_id_for_this_line` at r3648 so that a runner holding NO half can still
+    print the answer for BOTH. **  *`PARITY is None` on CI is correct -- the runner is not a line --
+    but it made the single most useful line of this gate's output vanish exactly where BOTH LINES
+    WOULD HAVE SEEN IT, since CI runs on every PR from either line.*
+      ⇒ *** Printing both candidates asserts no half: each line already knows which one is its own,
+          and the runner never has to guess.  This is the declared-exemption doctrine kept -- the
+          runner still declines to say whose tree it is -- while the useful number stops being
+          collateral of that refusal. ***
+    """
+    if not runs:
+        return None
+    front = max(runs[-1])
+    r = subprocess.run(['git', 'log', '--first-parent', '--format=%s', 'HEAD'],
+                       cwd=ROOT, capture_output=True, text=True)
+    mine = [int(m.group(1)[1:]) for m in            # `BARE` captures the id WITH its `r`
+            (BARE.match(ln.strip()) for ln in r.stdout.split('\n')) if m] if r.returncode == 0 else []
+    n = max([front] + [x for x in mine if x % 2 == parity]) + 1
+    while n % 2 != parity:
+        n += 1
+    return n
+
+
+def next_id_for_this_line(runs):
+    r"""*** THE REPAIR THAT DOES NOT DEPEND ON ANYONE REMEMBERING A RULE ***
+
+    ** `front + 2` is in the fingers, and r3640/r3642 showed a written rule does not displace it:
+    the commit that diagnosed the mechanism collided at its own number, because the other line had
+    not merged the file the rule was written in. **
+      ⇒ *A gate that PRINTS THE NEXT NUMBER costs the reader nothing to obey, and it is right by
+        construction rather than by recall.*
+
+    The number is the next id of THIS line's parity strictly above the trunk's front -- which is the
+    rule stated as arithmetic instead of as a sentence.
+    """
+    if PARITY is None or not runs:
+        return None
+    front = max(runs[-1])
+    # ⛔ ** THE FIRST VERSION OF THIS FUNCTION HANDED BACK A NUMBER THIS LINE HAD ALREADY USED. **
+    #   *It read only the TRUNK's front, and this line's own unmerged commits are by definition not
+    #   on the trunk -- so immediately after writing `r3644` it advised `r3644` again.*
+    #   ⇒ *** A collision generator pointed the other way, in the function written to stop them,
+    #       inside the same run that reported the mechanism.  The front that matters is the front of
+    #       EVERYTHING this line can see, not of the half of it that has merged. ***
+    r = subprocess.run(['git', 'log', '--first-parent', '--format=%s', 'HEAD'],
+                       cwd=ROOT, capture_output=True, text=True)
+    mine = [int(m.group(1)[1:]) for m in            # `BARE` captures the id WITH its `r`
+            (BARE.match(ln.strip()) for ln in r.stdout.split('\n')) if m] if r.returncode == 0 else []
+    n = max([front] + [x for x in mine if x % 2 == PARITY]) + 1
+    while n % 2 != PARITY:
+        n += 1
+    return n
+
+
+def report_runs():
+    """*** the drift made visible without a collision to surface it ***"""
+    runs = parity_runs()
+    if runs is None:
+        print(f'    ⌗ the parity run is NOT MEASURED: `{UPSTREAM}` is not a ref in this tree.')
+        print()
+        return 0
+    post = [x for x in runs if x[-1] >= BAND_TAKEN]
+    if not post:
+        return 0
+    front = post[-1]
+    word = 'EVEN' if front[0] % 2 == 0 else 'ODD'
+    ones = sum(1 for x in post if len(x) == 1)
+    print(f'    the trunk since the band (r{BAND_TAKEN}): {len(post)} parity run(s), '
+          f'{ones} of length 1')
+    print(f'      the run at the FRONT: {len(front)} consecutive {word} ids, '
+          f'r{front[0]}..r{front[-1]}')
+    if len(front) <= RUN_ALERT:
+        print('      ⛭ *A short run at the front is the band alive: the lines are alternating, so')
+        print('         each is picking from its own half rather than from the other\'s.*')
+        _print_next(post)
+        return 0
+    print(f'    ⚠ ** A RUN OF {len(front)} AT THE FRONT IS THE PRECONDITION FOR THE BAND\'S FAILURE, '
+          'and it')
+    print('       is reported rather than failed because ONE LINE WORKING ALONE LOOKS THE SAME. **')
+    print('    ⌷ *The rule that survives a run:* ** take the next number of YOUR OWN parity above')
+    print('       the front -- NOT `front + 2`, which inherits the front\'s parity and is your half')
+    print('       only while the front is yours. **  *`front + 2` after the other line\'s run puts')
+    print('       you in their half AND KEEPS YOU THERE, because the front is then your own again.*')
+    _print_next(post)
+    return 0
+
+
 def check_band():
     """*** the PREVENTION half: fail before the merge, while the number can still be changed ***"""
     v = band_violations()
@@ -348,9 +613,23 @@ def check_band():
             print('      ⌷ What this check does is make THIS line\'s half enforceable, which is what')
             print('         makes the proposal something the other line can accept or refuse.')
         else:
-            print('      ⛭ ** and the OTHER half is held, so the band is a partition and the')
-            print('         prevention is real: **')
+            # ⛔⛭⛭ ** WITHDRAWN r3640 (60): THIS PRINTED *"the prevention is real"* THROUGH TEN
+            #   OUT-OF-BAND COMMITS FROM THE OTHER LINE, and it is the SAME failure r3140 withdrew
+            #   one level in. **  *r3140 struck a sentence that reasoned from arithmetic it had not
+            #   done; this one reasoned from a DECLARATION it had not re-measured.*
+            #   ⇒ *** A HALF THAT IS HELD BY DECLARATION IS NOT A HALF THAT IS HELD.  The band was
+            #       accepted at r3563 and kept for 57 revisions; `r3622..r3638` are ten consecutive
+            #       ids in 60's half, written by 59, while this line printed that the partition
+            #       was whole. ***
+            #   ⌗ *And it cannot be repaired by measuring harder HERE: `report_runs` explains why
+            #     attribution is not constructible on a trunk whose merges are rebases.  So the
+            #     sentence says what is TRUE -- the half is DECLARED -- and hands the reader the
+            #     run measurement instead of a reassurance.*
+            print('      ⌷ ** the other half is DECLARED held.  That is a claim by the other line,')
+            print('         not a measurement made here, and it has been wrong: **')
             print(f'         {OTHER_HALF}')
+            print('      ⛔ *r3622..r3638 are ten consecutive ids in THIS line\'s half, written by')
+            print('         the other, after it accepted the odd half.  ⇒ Read the run below.*')
         print()
         return 0
     print()
@@ -396,6 +675,8 @@ def main():
 
     report_testimony(bad)
     band_rc = 0 if '--no-band' in sys.argv else check_band()
+    if '--no-band' not in sys.argv:
+        report_runs()
 
     if not new:
         print('    no NEW revision-number collision.')
@@ -408,8 +689,10 @@ def main():
     print()
     print('    ⛭ ** Two lines numbering from one counter choose the same number, which is the')
     print('       `L-174` collision at c54.166 one level up -- and that was solved with BANDS. **')
-    print('    ⌷ Until the other line adopts the odd half, cite a revision WITH its SHA wherever')
-    print('       the identifier has to be unambiguous.')
+    print('    ⌷ *r3640: the other line HAS adopted the odd half -- and adoption was not enough,')
+    print('       because the number is picked from the FRONT and the front is not always yours.*')
+    print('    ⇒ Cite a revision WITH its SHA wherever the identifier has to be unambiguous, AND')
+    print('       pick the next number of YOUR OWN parity above the front, never `front + 2`.')
     print()
     return 1
 
