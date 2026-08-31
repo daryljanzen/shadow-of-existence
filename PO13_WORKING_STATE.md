@@ -30,6 +30,49 @@ of the seam treatment, of the transfer, or of the geometry the transfer runs on?
 
 ---
 
+## ⛔⛭ r3687 — THE ACOUSTIC SCALE AT $H_0=73$ IS CLOSED TO EVERY CONTENT PARAMETER
+
+***With the driving solved (`r3685`), the whole residual is one number, and this pass measures every lever
+that could move it. All three are excluded.***
+
+| lever | what the sky needs | the bound | |
+|---|---|---|---|
+| $\Omega_m$ | — | 0.25–0.75 scanned | ⛔ ***no root at all***: $\theta_*$ moves the WRONG WAY, $1.0604$ at $0.28$ rising to $1.1824$ at $0.70$ |
+| radiation | $1.137\times$ standard, $N_{\rm eff}=4.07$ | BBN + CMB: $3.0\pm0.3$ | ⛔ excluded |
+| baryons | $\omega_b=0.0302$ | BBN + CMB: $0.0224\pm0.0005$ | ⛔ excluded at $1.35\times$ |
+| $z_{\rm rec}$ | — | Hu–Sugiyama at CR's $\omega_m$ | ⌗ *real but tiny*: $1093.6$ against Planck's $1091.9$, **$0.16\%$**, worth $\sim0.1\%$ in $r_s$ |
+
+⇒ ***So at the measured $H_0$, with the content BBN fixes, $\theta_*$ cannot be met by any content
+parameter.*** *That is a real, falsifiable corner and it is recorded as one.*
+
+### ⛭ AND IT SAYS EXACTLY WHAT MUST GIVE
+
+*$D_M=13005$ Mpc on the stacking rate, so the sky's $\theta_*$ requires $r_s=135.39$ Mpc. The leaf integral
+from $a\to0$ gives $139.74$. **The excess is $4.36$ Mpc and it must come off the EARLY end.***
+
+$$\boxed{\text{the sound horizon must begin at } z \simeq 60{,}550}$$
+
+*and there $\rho_r/\rho_m=15.4$ and $T=1.65\times10^{5}\,$K $=14.22$ eV.*
+
+⚠ ***A near-coincidence, stated as near and NOT as a match.*** *Hydrogen's binding energy is $13.6$ eV,
+which is $4.6\%$ away. **That is not agreement** and it is written here only so the next pass does not
+re-derive it and mistake it for one. `r3685` recorded the cost of printing a conclusion before computing
+it; this is the same guard.*
+
+### ⌗ WHERE TO LOOK NEXT, AND WHY IT IS THE RIGHT PLACE
+
+***The plasma that oscillates is OURS, and in this construction it arrives through the branch point.***
+*Nothing requires its sound horizon to run from $a\to0$: before the arrival the content was the
+progenitor's. **If our acoustic era begins when the transmitted content becomes an oscillating plasma
+rather than whatever crossed, then $z\simeq60{,}550$ is a transmission scale and not a free number.***
+
+⇒ *`P15`'s Euclidean kernel $e^{-\int\omega\,\dd s}$ carries a scale, and `I9` (`r3622`) established its
+exponent is an **action integral** converging as $S^{1/3}$, with the adiabatic parameter diverging at the
+branch point. **That kernel has never been asked what redshift it corresponds to.*** *It is the one object
+in the construction that sets an early scale and is not borrowed from $\Lambda$CDM.*
+
+---
+
 ## ⛭⛭⛭ r3685 — THE DRIVING IS EXACTLY RIGHT WHEN THE DATUM SITS AT A LOCUS THE CONSTRUCTION OWNS
 
 ***`P15` states the frozen-mode condition AT THE BRANCH POINT. The instrument imposed it at the onset. At
