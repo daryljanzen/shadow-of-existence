@@ -17,8 +17,8 @@ sources: [chat]
 
 | paper | verdict | ⌗ and a CHECKED-NEGATIVE row says WHICH KIND |
 |---|---|---|
-| **`P16`** | ⛭ **LANDING** — `N7`, the peak is an erasure channel; 0 bits of 2.58, charge lossless | |
-| **`P15`** | ⛭ **LANDING** — `N8`, the transmission dichotomy is a capacity dichotomy | |
+| **`P16`** | ⛭ **LANDING** — `N7`, the peak is an erasure channel; 0 bits of 2.58, charge lossless | ⛭ **clause landed `sec:peak`, r3704** |
+| **`P15`** | ⛭ **LANDING** — `N8`, the transmission dichotomy is a capacity dichotomy | ⛭ **clause landed `sec:transmission`, r3704** |
 | **`P05`** | ⛭ **LANDING (no receipt owed)** — `prop:dim-collapse` is a zero-capacity channel, proved by the paper | |
 | **`P09`** | ⛭ **LANDING (no receipt owed)** — `sec:wall` is a capacity bound; the sweep carries its invariants | |
 | **`P02`** | ⛭ **LANDING (no receipt owed)** — two readings, identical observable content; the chart is in the kernel | |
@@ -43,8 +43,8 @@ sources: [chat]
 | receipts written and named | **2** — `N7`, `N8` |
 | landings with **no receipt owed**, and the judgement stated | **3** — `P05`, `P09`, `P02` |
 | canon rows routed | **0** |
-| `\ldg{information_theory}` markers in papers | **ONE** — `p0`, and it is from the **r3612** pass |
-| ⛔ **clauses landed by THIS (v2) pass** | ***ZERO*** |
+| `\ldg{information_theory}` markers in papers | **THREE** — `p0` (r3612), and `P16`, `P15` at **r3704** |
+| ⛭ **clauses landed by THIS (v2) pass** | ***TWO*** — `P16` and `P15`, at **r3704**, *after this block first read ZERO* |
 
 ⛭ ***AND THE ONE MARKER IS JOB 2's FULL HABIT, DONE CORRECTLY, AT r3612 — which is why the shortfall
 below is a statement about the v2 passes and not about this line's practice.*** *`p0` carries the
@@ -52,16 +52,28 @@ clause ("the two differ by $3/8$ and by nothing else"), the receipt
 (`\rcpt{N1_the_entropy_and_the_fine_tuning_factor_are_one_number}`), the marker
 (`\ldg{information_theory}`) and the naming in this ledger. **Four things, one landing.**
 
-⛔ ***THE SHORTFALL, STATED EXACTLY: across index theory and this field, the v2 passes wrote seven
-receipts and NOT ONE clause into a paper.*** *`N7` and `N8` are registered, run and named, and neither
-is cited from `P16` or `P15`. **That is the half of JOB 2's habit the v2 passes have not done, twice.**
+⛔ ***THE SHORTFALL, STATED EXACTLY AS IT STOOD WHEN THE FIELD CLOSED: across index theory and this
+field, the v2 passes wrote seven receipts and NOT ONE clause into a paper.*** *`N7` and `N8` were
+registered, run and named, and neither was cited from `P16` or `P15`. **That is the half of JOB 2's
+habit the v2 passes had not done, twice.**
 ⌗ *This block first read "markers: ZERO", which was wrong — the count was written before it was
 checked and corrected before it was committed.*
 
+⛭ ***CLOSED FOR THIS FIELD AT r3704, AND THE SENTENCE ABOVE IS KEPT BECAUSE IT IS THE REASON THE
+WORK HAPPENED.*** *`P16` `sec:peak` now carries the erasure clause and `P15` `sec:transmission` the
+capacity clause, each with its `\rcpt{}`, its `\ldg{information_theory}`, and its naming here —
+**four things, one commit, twice.** ⌗ *The shortfall was found by writing the close, not by being
+told: a §5b block that only totals what went right cannot find the half that did not happen.*
+⛔ ***INDEX THEORY'S HALF IS STILL OPEN:*** *`I51`–`I55` are five receipts with no clause. **This
+field closing its half does not close that one, and the count there is still FIVE.***
+
 ### 3 · WHAT IS STILL OPEN
 
-* ***THE CLAUSES.*** *`N7` and `N8` each support a sentence `P16` and `P15` could carry, and `P16`
-  **asks for it in its own text** — "a question this paper answers in effect but does not state".*
+* ~~***THE CLAUSES.***~~ ⛭ ***DONE at r3704.*** *`N7` and `N8` each supported a sentence `P16` and
+  `P15` could carry, and `P16` **asked for it in its own text** — "a question this paper answers in
+  effect but does not state". **Both are now written into the papers; `P16`'s own question is
+  answered in `P16`.** The item stays visible rather than deleted, because an open item that
+  disappears when it is done leaves no evidence it was ever owed.*
 * ***THE SYNTHESIS IS FOUR-FOR-FIVE AND THE FIFTH IS NOT EXPLAINED.*** *`P08`'s kernel is an
   integration constant no invariance protects. **Why that map differs is not settled here.***
 * *`P06`'s bridge is unbuilt by choice: formalising Rules 2 and 3 as an Occam factor and an MDL would
