@@ -65,6 +65,50 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⛔ r3703 — THE BRANCH POINT'S SCALE IS COMPUTED, AND IT IS NOT THE RYDBERG. HYPOTHESIS FALSIFIED.
+
+***The run owed since `r3693`, carried to a number. It misses.***
+
+⚠ ***AND r3699 BELOW USED THE WRONG FUNCTIONAL FORM.*** *`I9` gives $\int\omega\,\dd s=3S^{1/3}\mu/A$ —
+**linear in $\mu$ and so in $k$**, with the $S^{1/3}$ being the SEGMENT LENGTH's dependence. I read
+"converges as $S^{1/3}$" and carried the $\tfrac13$ power onto $k$, testing $e^{-Ck^{1/3}}$. **The kernel
+is $e^{-Ck}$.** *Redone: the scale-freedom verdict **strengthens** — spread $1.08\to10.8$ growing linearly
+with $C$, against the front seam's $3\times10^{-16}$ — so `r3699`'s conclusion survives its own error, and
+the error is recorded because the NUMBER does not.*
+
+### ⌗ THE COMPUTATION, IN PHYSICAL UNITS
+
+| | |
+|---|---|
+| $\alpha=c/(H_0\sqrt{\Omega_\Lambda})$ | 4,931.8 Mpc |
+| $x_0=(2\Omega_\Lambda/\Omega_m)^{1/3}$, and $2M/\alpha=x_0^3$ | 1.6538, so $2M=22{,}307$ Mpc |
+| ⌗ *sanity* | $M=2.33\times10^{23}\,M_\odot$ — **the right order for the observable universe's mass** |
+| $A$ from $\lvert r\rvert=(2M\alpha^2)^{1/3}(3/2\alpha)^{2/3}s^{2/3}$ | 36.887 |
+| $S=2\pi\alpha/3$, the segment zero-to-zero | 10,329 Mpc |
+| $C=3S^{1/3}/A$ | **1.771 Mpc** |
+| ⛭ **the scale** $k_*=1/C$ | **0.5646 / Mpc** |
+
+⛔ ***AND THE RYDBERG LOCUS NEEDS $k=0.1286$ /Mpc, at $z=57{,}898$.*** *The kernel gives
+$z=260{,}781$ — **$4.4\times$ too large in $k$, $4.5\times$ too high in $z$.** ***The branch point does not
+supply the acoustic start.***
+
+### ⛭ AND THE RESIDUE IS WORTH KEEPING
+
+*$k_*=0.5646$ /Mpc lands at $\ell\sim k_*D_M=7{,}342$ — **the acoustic peaks are at $220$–$810$ and Silk
+damping has killed the spectrum by $\ell\sim2{,}000$.*** ⇒ ***So the branch point's scale exists, is
+computed, and sits $3.7\times$ beyond the damping tail, where nothing can see it.***
+
+⌗ ***That is consistent with `P15`'s conclusion — the tilt is the progenitor's — reached by a route
+`P15` does not take.*** *`P15` gets there by asserting neither locus carries a scale, which `r3699` showed
+is false for the branch point. **The branch point carries one; it is simply unobservable.** A stronger
+statement than the paper's, and it needs the paper's sentence scoped rather than repaired.*
+
+⚠ ***SO THE RYDBERG START REMAINS A MEASURED FIT WITH NO MECHANISM.*** *The one candidate the
+construction offered has been computed and rejected. **That is what the hypothesis being falsifiable
+looks like, and it is recorded as a rejection rather than left as an open lead.***
+
+---
+
 ## ⛭ r3699 — THE BRANCH POINT CARRIES A SCALE. THE FRONT SEAM DOES NOT. THEY ARE NOT THE SAME OBJECT.
 
 ***Run on 60's `N8` test, which is the instrument this question needed and which arrived in the six-field
