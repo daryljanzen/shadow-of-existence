@@ -30,6 +30,41 @@ of the seam treatment, of the transfer, or of the geometry the transfer runs on?
 
 ---
 
+## ⛔⛭ r3693 — THE KERNEL ROUTE IS REFUTED BY THE CORPUS, AND THE REFUTATION ARGUES *FOR* THE RYDBERG
+
+***`r3689` proposed that `P15`'s Euclidean transmission would supply $z\simeq58{,}000$ and so turn the
+Rydberg start from a fit into a consequence. It cannot, and `P15` proves it cannot — on two independent
+routes, neither of which I had read before proposing the route.***
+
+| | `P15` `prop:transmission` and `rem:transmission-leg` |
+|---|---|
+| **the branch point** | a **degenerate** horizon: $f\sim-\Lambda(r-r_N)^2$, $\kappa=0$, so the tortoise integral is $r_*\sim1/[\Lambda(r-r_N)]$ and the approach **power-law rather than exponential**. ⛔ ***"A degenerate horizon carries no scale, so it cannot imprint one."*** |
+| **the collapse leg** | horizon entry at $x=k\eta/\sqrt3=1/\sqrt3$ ***for every $k$*** — the radiation era's own scale invariance — so every mode leaves carrying the same $0.4835\,\Psi_i$, **a single $k$-independent number** |
+
+⇒ ***"Neither carries a scale, and a spectrum can only be tilted by something that does."*** *So the
+transmission cannot deliver $58{,}000$ or any other redshift. **The prediction is refuted, and by the
+corpus rather than by a computation of mine.***
+
+### ⛭⛭ AND THAT INVERTS THE ARGUMENT RATHER THAN ENDING IT
+
+***If the geometry provably carries NO scale, then any scale appearing in the acoustic era must be the
+CONTENT's own.*** *And the content's own scale is atomic:*
+$$1+z=\frac{13.5984\ \mathrm{eV}}{k_B\times2.7255\ \mathrm{K}}=57{,}899,$$
+*built from the Rydberg and the measured CMB temperature, **carrying no cosmological parameter** — which is
+exactly what a content scale looks like and exactly what a geometric one could not be.*
+
+⌗ ***So the two findings are consistent in a way I did not expect when I proposed the test.*** *`P15` says
+the geometry is scale-free; the acoustic scale nonetheless needs a scale; the only place left is the
+content; and the number that works is the content's binding energy. **That is an argument, not a
+derivation** — nothing here shows why the acoustic era should begin at ionisation rather than at any other
+content scale — but the elimination is now the corpus's own and not a guess.*
+
+⌗ *`P15`'s prose called the branch point "the seam" in `rem:transmission-leg` and in a label. **Corrected
+here**, since the front seam is $r=+\alpha/\sqrt3$, the double root, and the two loci are precisely the two
+this proposition distinguishes — a degenerate horizon against a non-degenerate one. Paper recompiles clean.*
+
+---
+
 ## ⛭⛭⛭ r3691 — THE ACOUSTIC ROOT AND THE GROWTH NORMALISATION ARE THE SAME MEMBER OF ONE FAMILY
 
 ***Two calculations sharing no input beyond the flat form land on the same $\Omega_m$.***

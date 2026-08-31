@@ -1310,7 +1310,7 @@ of order three, remains unaccounted for. The low-multipole prediction of this se
 
 \section{What the progenitor supplies: the transmission proof}\label{sec:transmission}
 
-The decomposition's decisive proof is here: \emph{why} the substrate transmits the spectral shape rather than imprinting one of its own. It turns on the degeneracy of the branch point horizon.
+The decomposition's decisive proof is here: \emph{why} the substrate transmits the spectral shape rather than imprinting one of its own. It turns on the degeneracy of the \emph{Nariai double root}---the front seam at $r=+\alpha/\sqrt3$, where $f$ and $f'$ vanish together so that $\kappa=0$. \emph{That locus is not the branch point}: the branch point sits at $r=0$, carries no surface gravity because $f$ diverges there rather than vanishing, and is not a Killing horizon at all.
 
 \begin{proposition}[Transmission dichotomy]\label{prop:transmission}
 For a mode approaching a horizon where the metric function behaves as $f\sim(r-r_h)^p$, the tortoise coordinate $r_*=\int dr/f$ controls the approach. At a non-degenerate horizon ($p=1$, $f\sim2\kappa(r-r_h)$, surface gravity $\kappa>0$) the integral is logarithmic and the approach exponential, $(r-r_h)\sim e^{2\kappa r_*}$. At the degenerate Nariai double root ($p=2$, $f\sim-\Lambda(r-r_{N})^2$, $\kappa=0$) the integral is $r_*\sim+1/[\Lambda(r-r_{N})]$ and the approach power-law, $(r-r_{N})\sim+1/(\Lambda r_*)$.
@@ -1319,7 +1319,7 @@ For a mode approaching a horizon where the metric function behaves as $f\sim(r-r
 \noindent\emph{Argument.} The two tortoise integrals directly (receipts: \texttt{verify\_geometry.py}, anchor~4\rcpt{P15_verify_geometry}). $\qquad\square$
 
 \begin{remark}[The leg does not tilt it either]\label{rem:transmission-leg}
-The proposition argues from the branch point: a degenerate horizon carries no scale, so it cannot imprint one. The
+The proposition argues from the \emph{front seam}: a degenerate Killing horizon carries no scale, so it cannot imprint one. The
 collapse leg supplies the other half of the same conclusion, by an independent route. Horizon entry on that leg
 occurs at $x=k\eta/\sqrt3=1/\sqrt3$ \emph{for every $k$}---the radiation era's own scale invariance, which
 \S\ref{sec:envelope} recovers from the substrate geometry---so every mode leaves the leg carrying the same
@@ -1328,7 +1328,7 @@ number\rcpt{AS_amplitude_leftward}. \emph{So the leg multiplies the spectrum by 
 imprints nothing}: neither carries a scale, and a spectrum can only be tilted by something that does. The tilt
 observed is therefore the progenitor's, established now from both sides of the branch point rather than one.
 
-\begin{remark}[What the branch point does not fix]\label{rem:seam-not-a-condition}
+\begin{remark}[What the branch point does not fix]\label{rem:branchpoint-not-a-condition}
 Both halves of the dichotomy are statements about the spectrum's \emph{shape}: a degenerate horizon carries no
 scale, and neither does horizon entry on the leg, so neither can tilt what passes. \emph{Neither is a pointwise
 condition on the perturbation state at the branch point}, and the distinction matters for anyone computing the
