@@ -61,6 +61,23 @@ which is how it earned its place.*
 
 ### ***A PREDICTION OF EMPTINESS GETS MORE SCRUTINY, NOT LESS.***
 
+> ⛔⛭ **AND IT IS A RULE ABOUT THE STANDARD OF EVIDENCE, NOT A PRIOR ON THE ANSWER — corrected
+> r3697, from 60's measurement in `NUMBER_THEORY_LEDGER.md`.** *As first written this sentence read
+> as "expect fewer empties", and 60 applied it that way. **The v1 pass on that field predicted 1
+> paper carrying and 16 empty and was RIGHT; the v2 pass, holding this rule, predicted 7 and 10 and
+> was WRONG BY SIX.** Sixteen emptiness predictions, tested rather than screened, held.*
+>
+> ⇒ ***So: raise the EVIDENCE you demand before writing `CHECKED-NEGATIVE`; do not lower your
+> estimate of how many there are.*** *The rule earned its keep on that field anyway — but not by
+> overturning the empties. **The one finding came from `p0`, which the v1 pass had inside an
+> eight-paper screened row and never opened**, and it was reachable only because three other papers
+> were read in full and their pieces put together. **The locator's value was not more papers; it was
+> the one — and the six wrong predictions are what the reading cost.***
+>
+> ⌗ *Both facts stay on the record: the integrable run's ONE emptiness prediction was its ONE
+> refutation, and number theory's SIXTEEN all held. **A rule that fires sometimes is not a rule that
+> predicts.***
+
 *The locator carried exactly one prediction that a paper was genuinely empty — `P06`, "no dynamics" — and
 flagged at the time that it had to be tested rather than assumed.* ⛔ ***It was the single REFUTED
 prediction of seventeen.*** *`P06` carries the field's sharpest connection: its least-arbitrariness
