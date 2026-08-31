@@ -179,7 +179,13 @@ def rs_from(z_lo):
 
 
 if ARM == 'lcdm':
-    Z_START = 3.0e7                                      # deep in radiation domination
+    # ** LZSTART: the CONTROL'S start, exposed r3683 so the late-start counterfactual can be run
+    # SYMMETRICALLY.  The CR arm's onset is z ~ 6.8e3 and the control's is 3e7, and every Q
+    # comparison between the arms has confounded the RATE with the START.  With this the control can
+    # be started late on its own physics: if LambdaCDM at z = 6761 also gives a driven Q that falls
+    # as k^-1, the k-dependence is an artefact of starting inside the horizon and NOT a fact about
+    # CR's driving.  Default 3e7 = byte-identical; nothing moves unless set. **
+    Z_START = float(os.environ.get('LZSTART', '3.0e7'))  # deep in radiation domination
     R_S = rs_from(1e8)                                   # from a ~ 0, the standard sound horizon
 else:
     # ** LATARG IS THE CORPUS'S ONE FITTED NUMBER, MADE VISIBLE, AND r2441+c54.189 IS WHY. **

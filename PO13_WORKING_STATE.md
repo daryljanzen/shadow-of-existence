@@ -30,6 +30,62 @@ of the seam treatment, of the transfer, or of the geometry the transfer runs on?
 
 ---
 
+## ⛭⛭⛭ r3683 — THE HEADLINE BELOW IS SUPERSEDED. THE DEFICIT TRACKS THE ONSET, NOT THE RATE.
+
+***Measured on the instrument's own Q-scan, whose undriven column is a MEASURED calibration and not an
+assumption.*** *Every row below holds the calibration: CR's undriven Q spans $0.9984$–$1.0004$ against the
+exact $1$ at every start tested.*
+
+| configuration | $Q$ @ $k{=}0.03$ | $Q$ @ $k{=}0.12$ | variation |
+|---|---|---|---|
+| **CR, $z_{\rm onset}=6{,}761$** — the fitted onset | 0.454 | 0.178 | **2.55×** |
+| CR, $z=15{,}000$ | 0.646 | 0.264 | 2.45× |
+| CR, $z=30{,}000$ | 0.736 | 0.420 | 1.75× |
+| **$\Lambda$CDM, $z=3\times10^{7}$** — the control | **0.814** | **0.776** | **1.05×** |
+
+⇒ ***CR's driven $Q$ converges monotonically to the control's as the onset moves back, in value AND in
+$k$-dependence.*** *The control's driving costs a nearly constant $0.22$ of a half-period; CR's at the
+fitted onset costs $0.55$ rising to $0.82$. **That is a difference in functional form, and it tracks the
+START REDSHIFT rather than the rate.***
+
+### ⛔ WHY THE OBVIOUS CONTROL CANNOT BE RUN, AND WHAT THAT ITSELF SHOWS
+
+*The symmetric test — run $\Lambda$CDM late, at CR's onset — was set up at `r3683` by exposing `LZSTART`.*
+**It breaks the calibration: undriven $Q$ comes out $0.20$–$0.43$ where it must be $1.0000$.** *The
+control's data are super-horizon adiabatic, and applying them to modes already inside the horizon is not a
+valid start. **The two arms' initial data are therefore NOT interchangeable, and the gate detects it
+immediately** — which is the gate working, and is why the comparison must be made along CR's own
+$z_{\rm onset}$ ladder instead.*
+
+⌗ *Instrument limit found and recorded: at $z_{\rm start}\gtrsim6\times10^{4}$ the first-extremum detector
+returns $\sim10^{-4}$ for low $k$ — a detection failure, not a physical collapse. **The ladder above stops
+at $30{,}000$ for that reason and no physics is read past it.***
+
+### ⌗ WHAT THIS DOES AND DOES NOT SETTLE
+
+⛭ **It relocates the defect.** *Not the seam treatment, not the transfer, not the geometry — and **not the
+rate**. Under `LEAFPERT` the perturbations already run on $H_{\rm leaf}=H_0\sqrt{\Omega_m a^{-3}+\Omega_\Lambda+\Omega_r a^{-4}}$,
+**which is the $\Lambda$CDM rate**, differing from the control only in $H_0$ and $\Omega_m$. Same equations,
+same rate form, same calibration. **The $2.55\times$ against $1.05\times$ cannot come from the rate.***
+
+⛔ **It does NOT supply a fix.** *$z_{\rm onset}$ is fitted to `LATARG`; moving it back breaks the acoustic-scale
+fit that motivated it. **This is a diagnosis of where the deficit lives, not a demonstration that it can be
+removed.*** ⌗ *And the corpus already says what the onset is: the instrument's own comment records that it
+is **"not a locus of the construction at all but the redshift solved so that $\ell_A$ hits LATARG"**. A mode
+with $k/\mathcal{H}>1$ there entered the horizon at $z\simeq15{,}700$ and has been oscillating since; it is
+handed a datum that ignores that history.*
+
+⌗ **Three candidates tested and eliminated this pass:** *`GSRC=1` (the constraint factor) makes $Q$
+non-monotonic and erratic — confirming `r3400`'s "settles nothing"; `CRPHI=entryleaf` moves the peaks DOWN
+to $196/476/756$ and takes $P_1/P_2$ to $4.5$ against the sky's $2.2$; and the leaf rate is already the
+default.*
+
+⌗ ⚠ **The figures in the section below are the PRE-`r3409` stacking-rate run.** *On the leaf default the
+instrument gives peaks at $204/508/804$ against the sky's $220.6/538.1/809.8$ — the third within $0.7\%$ —
+and $P_1/P_2=2.238$ against $2.217$. **The "$\ell_1=176$, first gap $248$" below is stale.***
+
+---
+
 ## THE ANSWER AS IT NOW STANDS
 
 ⇒⇒ ***NONE OF THE THREE.  The offset is a consequence of the radiation-free rate, and the mechanism
