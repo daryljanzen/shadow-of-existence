@@ -1,7 +1,7 @@
 ---
 name: probability-ledger
 kind: FIELD-BAKE
-current: r3716
+current: r3718
 job: The probability and stochastic-processes field-bake ledger — the sixth and last. It bounced completely, and the bounce is measured rather than asserted.
 sources: [chat]
 ---
@@ -215,3 +215,133 @@ meaning to.***
 ⛔ ***AND ROW 2 CARRIES ITS OWN WARNING: if the `p0` sharpening turns out to be the number-theory
 finding in another register, it is ONE finding and this ledger says so rather than counting it
 twice.***
+
+---
+
+## ⌗ PASS B — THE SEVENTEEN, SCORED
+
+### ⛭⛭⛭ `R50` — **ROW 1: `P04`'s FIFTH BULLET REVERSES DIRECTION FOR THE OBSERVABLE**
+
+| | |
+|---|---|
+| **verdict** | ⛭⛭ **CONFIRMED — the prediction was right, and the paper is more careful than it assumed** |
+| **landed** | `P04` `sec:floor`, the fifth bullet — `\ldg{probability}` |
+| **the receipt** | `receipts/P04_modern_parallax/R50_the_long_wavelength_bullet_reverses_for_the_observable_and_the_corner_is_three_parts_per_million.py` |
+
+⌗ ***WHAT THE LOCATOR GOT WRONG FIRST.*** *Row 1 predicted the correlation caveat treats correlation
+**along** a path and not **between** paths.* **The paper treats both, and one of them as a theorem**:
+*the along-path variance $(\sigma^{2}/N)(1+(N-1)\bar\rho)$ exceeds the independent value for every
+$\bar\rho>0$ (`R2`), and the window bullet is explicitly about coherence across the whole path.*
+
+⇒ ***BUT THE FIFTH BULLET IDENTIFIES TWO QUANTITIES THAT DIFFER AT $k\to0$.*** *$\mathrm{sinc}^{2}(kL/2)$
+is the window for the variance of **one path**. The bounded quantity is an **anisotropy**, and every
+sightline is cast from the same observer — so a mode much longer than the observable region takes one
+value over the whole of it, lands on every direction alike, and **is removed with the monopole**.*
+**The coherence the bullet invokes adds to the scatter for $kL\gtrsim1$ and cancels out of it below.**
+
+| measured | |
+|---|---|
+| across-sky scatter ÷ single-path variance, $kL\in[100,1000]$ | **0.990** — *the two agree; the paper's identification is exact where the variance lives* |
+| the same ratio at $kL\in[0.01,0.1]$ | ⛔ **$2.0\times10^{-4}$** — *complete cancellation* |
+| monotone between | *0.990 > 0.977 > 0.445 > 0.020 > 0.0002* |
+| fraction of a BBKS CDM path-mean variance below $k=1/L$ | ⛭ **$3.1\times10^{-6}$** |
+| where the variance actually lives | *$kL$ from **73** (5%) to **870** (95%)* |
+
+⇒ ***THE BULLET NEEDS ONE CLAUSE, NOT A RETRACTION*** — *three parts per million against a margin of
+**923**. **The floor is untouched and the sentence is not**, and the clause makes the paper's own
+statement true rather than nearly true.*
+
+⛔ ***THE TWO CONTROLS, AND THE FIRST IS WHAT STOPS THIS BEING A MEASUREMENT OF THE GEOMETRY.***
+*If the ratio fell in the **white-noise** band too, the cancellation would be an artefact of casting
+rays from a common origin and nothing to do with wavelength — it does not (0.990). And in the long
+band $V_{\rm path}$ must stay **large** while $V_{\rm sky}$ collapses, or the field would simply be
+absent and the ratio would be $0/0$ wearing a verdict — it is larger than in the white-noise band.*
+⌗ *Both hold under halving the modes, doubling the sightlines, and a different seed.*
+
+### ⌗ THE OTHER SIXTEEN
+
+| # | paper | verdict |
+|---|---|---|
+| 2 | **`p0`** | ⛔⛭ ***REFUTED — BY THE ROW'S OWN WARNING, WHICH IS WHY THE WARNING WAS WRITTEN BEFORE THE READ.*** *`sec:ledger` dissolves the coincidence problem with **"the framework has one timescale, and any observer observes at a time of its order"** — which is where cosmology normally puts a **typicality** argument, and it is not one: it is a **dimensional** argument, and it is stronger because it needs no measure. The probability register's version — no dimensionless parameter, so no random variable, so the value is not improbable but not a variate — **is the number-theory pass's finding in other words.*** ⇒ **ONE finding, not two, and this ledger says so rather than counting it twice** |
+| 3 | **`P06`** | ⛭⛭ ***CONFIRMED — AND IT IS THE STRONGEST NEGATIVE IN SIX FIELDS.*** *The hard read the rule demands, run on `sec:engine` and `sec:boundary`. **`P06` carries this field's entire apparatus explicitly and in words**: survivorship (*"a reliability estimate built only from successes is survivorship, not measurement"*), the **base rate** (*"until such cases are sampled alongside the successes and a base rate computed"*), the **reference class**, and — the subtlety a probabilist would look for last — **censoring** (*"a reference class assembled only from episodes that reached a verdict will not contain this case"*). It even applies the discipline to itself: *"the five that come to mind are the celebrated ones, and a base rate computed from remembered successes is what survivorship means."*** ⇒ ***NOTHING OWED, and the reason is not absence*** |
+| 4 | **`P11`** | ⛔ **REFUTED ON ADDRESS** — *"randomises" is in **`P03`**, not `P11`, and it reads "randomises is not a split the symmetry determines": a **symmetry** statement, not a variance claim. The locator named the wrong paper and the phrase carries nothing either way* |
+| 5 | **`P10`** | ⛭ **CHECKED-NEGATIVE — the named test, run** | 
+| 6 | **`P15`** | ⛭⛭ **CHECKED-NEGATIVE — and the named test is answered in the paper's own words.** *The test was whether any low-$\ell$ statement is a claim about a **single realisation** dressed as a claim about an **ensemble**. `sec:largescale`: "Coherence shown is not correspondence earned … **against the large cosmic variance of the lowest multipoles** … the honest verdict is a **wash**." **The confusion the row named is the one the paper explicitly refuses*** |
+| 7 | **`P16`** | ⛭ **CHECKED-NEGATIVE** — *rate uncertainties and the abundance likelihood are the statistics-inference bake's and are receipted there* |
+| 8 | **`P03`** | ⛭ **CHECKED-NEGATIVE — AND HANDED ON.** *"600 random points" is a **spot check**, and "is 600 enough" is a **sampling-adequacy** question, which is numerical analysis's. **Handed there rather than claimed here — the mirror of number theory handing `P04` to this bake*** |
+| 9–17 | **`P01` `P02` `P05` `P07` `P08` `P09` `P12` `P13` `P14`** | ⛭ **CHECKED-NEGATIVE, all nine — and the GENERICITY TEST was run across the whole corpus rather than per paper.** ⛭⛭ ***Ninety-six uses of "generic" in the seventeen bodies, and NOT ONE means "with probability one".*** *Every one is the algebraic sense — "three distinct eigenvalues", "the ratio varying point to point", "off the degenerate locus", "in each of which the Weyl invariants are not both zero". The single "measure zero" in the corpus sits inside a receipt's own text and is quoted into a generated appendix.* ⌗ *Row 17's test — **is least-arbitrariness ever argued as "most probable"?** — is answered outright by `P06`: a structure with a free modulus is **"inadmissible as it stands, not merely disfavoured"**. An exclusion, explicitly not a weighting* |
+
+⌗ *Row 5's test in full: $\langle\hat\pi_n^2\rangle\sim n$ in the instantaneous ground state is an
+**operator expectation** feeding a degeneracy-weighted mode sum. No step treats it as a distribution
+over outcomes, and nothing is owed.*
+
+---
+
+## ⛭⛭⛭ THE REACH CLOSE — the v2 §5b template, four blocks
+
+### 1 · THE SEVENTEEN, BY NAME
+
+| verdict | papers | count |
+|---|---|---|
+| ⛭ **LANDING** | `P04` — `R50`'s clause in `sec:floor` | **1** |
+| ⛭ **WORKED, EARLIER** | `P04` — `R2`, same section, from the v1 pass | **—** |
+| ⛔ **REFUTED** | `p0` *(row 2, by its own warning)* · `P11` *(row 4, wrong address)* | **2** |
+| ⛭ **CHECKED-NEGATIVE, each with the kind stated** | `P06` *(the apparatus is there, in words, correctly — including censoring)* · `P15` *(the single-realisation confusion is the one the paper refuses)* · `P03` *(a sampling question, handed to numerical analysis)* · `P10` *(an operator expectation)* · `P16` *(the statistics bake's)* · and the nine on which the genericity test was run | **15** |
+
+### 2 · THE BAR, MEASURED
+
+| | |
+|---|---|
+| papers read, by name | **17 of 17** |
+| Pass A predictions written **before** any paper was opened | **17**, committed at **r3716** |
+| receipts written by this pass | **1** — `R50` |
+| clauses landed | **1** — `P04` `sec:floor`, with its `\rcpt`, its `\ldg`, and its naming here |
+| `\ldg{probability}` markers in papers | **2** — both `P04` |
+| corpus-wide tests run rather than per-paper screens | **1** — *the genericity test, 96 uses, zero probabilistic* |
+| material handed to another field | **1** — `P03`'s 600-point spot check, to numerical analysis |
+| material received from another field | **1** — `P04`'s $\sqrt N$, from number theory (r3710) — ⛭ **a convergence: it landed at a bake that already had it** |
+| ⛔ **locator predictions REFUTED** | **2 of 17** |
+
+### 3 · WHAT IS STILL OPEN, SAID SHORT
+
+* ⟐ ***THE $kL\sim1$ CROSSOVER IS MEASURED IN BANDS, NOT DERIVED.*** *`R50` measures the ratio at five
+  bands and shows it monotone. **A closed form for the between-path window is not given**, and the
+  clause landed in `P04` quotes the measurement rather than a formula.*
+* ⟐ ***`P03`'s 600-POINT SPOT CHECK IS OWED TO THE NUMERICAL-ANALYSIS BAKE***, and this ledger has not
+  done that field's work for it.
+
+### 4 · WHAT THE FIELD CHANGED, ONE LINE PER PAPER
+
+| paper | what changed |
+|---|---|
+| **`P04`** | *its fifth "biases downward" bullet gained the boundary it needed — **and the boundary costs three parts per million*** |
+| **`P06`** | *nothing owed, and the read established the reason: **this corpus's most careful probabilistic reasoning is in the paper with no numbers in it*** |
+| **`p0`** | *nothing owed — and the row that predicted otherwise was **refuted by a warning it carried in advance*** |
+| **the other fourteen** | *nothing owed, and the nine thinnest were settled by **one corpus-wide test** rather than fourteen screens* |
+
+⇒ ⛔ ***READ AS A LIST: THE THINNEST FIELD OF SIX PRODUCED ONE CLAUSE IN THE PAPER ITS OWN v1 SCREEN
+GOT WRONG.*** *`P04` was scored CHECKED-NEGATIVE by every term screen this bake ever ran, twice —
+once in v1 and once by the number-theory pass, which caught it and handed it here. **Both landings
+this field has ever made are in that paper**, and neither was reachable from a word count.*
+
+---
+
+## ⛭ THE BOUNDARY, RE-STATED — the v1 block stands and gains its sharpest line
+
+> *v1: **this corpus does no probability, and where it does statistics it does them under another
+> bake's names.** The one genuine stochastic object — photon diffusion as a random walk — is named,
+> cited and correct.*
+
+⛭⛭ ***AND THE v2 PASS ADDS WHERE THE FIELD'S REASONING ACTUALLY IS: in `P06`, which contains no
+numbers at all.*** *Survivorship, the base rate, the reference class and the censoring of
+unresolved episodes are all there, correctly, in prose — and the paper applies the discipline to
+its own five instances and refuses to count them.* ⇒ ***A vocabulary screen scored `P06` ×0 and it
+is the corpus's most probabilistically literate paper.***
+
+⛭ ***AND WHERE THE LITERATURE REACHES FOR A MEASURE, THIS CORPUS DOES NOT NEED ONE.*** *The
+coincidence problem is standardly handled with typicality and an observer measure; `p0` dissolves it
+with **one timescale and a dimensional argument**. The fine-tuning problem is standardly a
+probability over parameter space; the one-scale result removes the parameter.* ⇒ ***The corpus
+does not decline probability out of neglect. It reaches conclusions that would need a measure, by
+routes that do not have one*** — *which is why sixteen of seventeen papers owe this field nothing
+and why that is a result rather than a shrug.*

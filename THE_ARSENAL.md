@@ -1498,3 +1498,32 @@ faithful — 269 of 269, which no synthetic control could have established.*
 sites, 210 sit at exactly zero and 54 at or over their tolerance.** Two of five bands are working
 as intended by being nowhere near their tolerance. ⇒ **A single verdict over 1116 sites would have
 been meaningless, and only the measurement could have shown that.***
+
+---
+
+### ⛭⛭⛭ **r3718 — THE SIX FIELDS ARE CLOSED, AND THE THINNEST ONE LANDED IN THE PAPER EVERY SCREEN GOT WRONG**
+
+*`P04` was scored `CHECKED-NEGATIVE` by every vocabulary screen the probability bake ever ran — its
+`probability`, `stochastic` and `random` counts are all zero — and **its entire argument is the
+standard deviation of a path-averaged random field**. The v1 pass found that by reading the abstract
+and said so. The v2 pass found a second thing in the same section, by reading the argument.*
+
+⛭ ***THE SECOND ONE IS A DIRECTION, NOT A NUMBER.*** *`P04` lists five reasons its floor is a
+**lower** bound. The fifth invokes the single-path Fourier window $\mathrm{sinc}^{2}(kL/2)$ — but the
+bounded quantity is an **anisotropy**, and every sightline is cast from the same observer, so a mode
+longer than the observable region **is a monopole**. Measured: the across-sky scatter tracks the
+single-path variance to 1% at $kL\gg1$ and falls to $2\times10^{-4}$ of it at $kL\ll1$.* ⇒ **The
+bullet's stated direction reverses in that corner, and the corner carries $3\times10^{-6}$ of the
+variance against a margin of 923. One clause, not a retraction.**
+
+⛔ ***AND A ROW REFUTED BY A WARNING IT CARRIED IN ADVANCE.*** *The locator's `p0` row predicted a
+probability-register sharpening of the fine-tuning dissolution, and wrote into itself: "**wrong if
+the sharpening is the number-theory finding in another register — the same move twice is one
+finding, not two**". It was. ⇒ **A prediction that names its own failure mode can be scored honestly
+without the scorer having to be honest twice.***
+
+⌗ ***AND THE FIELD'S CLOSE INVERTS ITS OWN SCREEN.*** *`P06` scores ×0 on every probability term and
+carries survivorship, the base rate, the reference class **and the censoring of unresolved
+episodes** — correctly, in prose, applied to the programme's own five instances and refusing to
+count them. **A vocabulary screen scored the corpus's most probabilistically literate paper at
+zero.***
