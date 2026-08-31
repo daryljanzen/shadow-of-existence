@@ -1,7 +1,7 @@
 ---
 name: probability-ledger
 kind: FIELD-BAKE
-current: r3618
+current: r3716
 job: The probability and stochastic-processes field-bake ledger — the sixth and last. It bounced completely, and the bounce is measured rather than asserted.
 sources: [chat]
 ---
@@ -163,3 +163,55 @@ paper in the field: **its entire argument is the standard deviation of a path-av
 receipt checks the correlation caveat with a placeholder `N/4` = 293 giving $2\times$ — **the direction, never
 the stated magnitude.*** ⇒ *Landed in `P04` with the equicorrelated variance identity that turns "can only
 increase" from a caution into a theorem.*
+
+---
+---
+
+# ⛭⛭⛭ THE v2 PASS — r3716, THE SIXTH AND LAST FIELD, AND "THINNEST" IS NOT A LICENCE
+
+> ⛔ ***`SIX_FIELDS_WORK_ORDER_v2.md` §6, on this field: "thinnest — **and after `P06`, 'thinnest'
+> is not a licence**."*** *And §2: **a prediction of emptiness gets MORE scrutiny, not less.***
+>
+> ⌗ ***THIS LEDGER ALREADY KNOWS WHAT THAT COSTS.*** *Its own most important row records that the
+> term side scored `P04` CHECKED-NEGATIVE and wrote "`P04` returned empty on all six fields", and
+> that **both halves were wrong** — the paper's entire argument is the standard deviation of a
+> path-averaged random field, and every screen this bake ran scored it negative and would again.*
+> ⇒ **So the v2 pass does not repeat the screen. It opens on the paper the screen got wrong.**
+>
+> ⛭ *And it arrives carrying one item: the number-theory v2 pass (r3710) read `P04` `sec:floor`,
+> found the $\sqrt N$ argument, ruled it not its own, and **handed it to this field**. It lands at a
+> bake that already has it — `R2` is landed — which is a **convergence** and is recorded as one.*
+>
+> ⌗ *Nothing below is struck. `R1`–`R3` stand.*
+
+## ⌗ PASS A — THE LOCATOR. **Written from the seventeen abstracts and section lists, before any
+paper was opened for this pass.**
+
+| # | paper | sections named | ⌗ **the prediction — falsifiable** |
+|---|---|---|---|
+| 1 | **`P04`** | `sec:floor` · `sec:decomp` | ⛭⛭ ***THE SKY-SCATTER OF A PATH-INTEGRATED RANDOM FIELD IS NOT $\sigma_{\rm cell}/\sqrt N$, BECAUSE NEARBY SIGHTLINES SHARE THEIR NEAR-OBSERVER CELLS AND THE SHARED PART IS A MONOPOLE.*** *`P04` measures an **anisotropy** — scatter **across** directions — and estimates it from the variance **along** one path with a central-limit $1/\sqrt N$ over $N\approx1174$ cells and an explicit correlation caveat with its own $N_{\rm eff}$.* **Prediction: the caveat treats correlation ALONG a path and not correlation BETWEEN paths, and the between-path term is the one that acts on the observable.** ⛔ *The paper's own guard is "every choice in the estimate biases it downward, so the number is a floor". **The falsifiable question is whether the between-path correlation is one of those choices and whether it biases downward.** If it does, the row is a confirmation and the paper is stronger than it claims; if it does not, the floor wants a qualifier* |
+| 2 | **`p0`** | `sec:ledger` | ⛭ ***A FINE-TUNING PROBLEM IS A PROBABILITY CLAIM AND IT NEEDS A SAMPLE SPACE.*** *"How unlikely is this value" presupposes a measure on a parameter space. `p0` says the one scale **dissolves** the two deepest fine-tuning problems. **Prediction: what it removes is the PARAMETER, and this field's register says the consequence is sharper — with no dimensionless parameter there is no random variable, so the value is not improbable, it is not a variate at all.*** ⛔ *Wrong if `p0` already puts it in measure terms, or if the sharpening is a restatement of the number-theory finding rather than a second one — **that risk is named here in advance because the same move twice is one finding, not two*** |
+| 3 | **`P06`** | `sec:engine` · `sec:reflexive` · `sec:boundary` | ⛔ ***THE HARDEST READ, BY RULE AND BY THIS CORPUS'S OWN PRECEDENT.*** *`P06`'s engine is historiography and its data are episodes; a **base rate over a family of episodes is a probability claim**. The paper argues explicitly against reliability estimates built from one's own successes — *"five applications of a criterion within a single programme, by the same hand, are five bets outstanding and not five confirmations"*. **Prediction: that IS the selection-effect argument, correctly made in words, and nothing is owed** — the read must establish it rather than assume it* |
+| 4 | **`P11`** | `sec:nonlinear` · `sec:gowdy` | *"Randomised phases wash out" is a **variance** claim: a sum of $N$ random phases does not vanish, it grows like $\sqrt N$, and "washes out" is a statement about a RATIO. **Prediction: the phrase is used where the ratio is the right one and the paper does not need the estimate** — the test is whether any conclusion turns on the size of the residual rather than on its sign* |
+| 5 | **`P10`** | `sec:lock` | *$\langle\hat\pi_n^2\rangle\sim n$ in the instantaneous ground state is a **quantum expectation**, not a classical variance. **Prediction: used correctly as an operator expectation, and nothing is owed** — the test is whether any step treats it as a probability distribution over outcomes* |
+| 6 | **`P15`** | `sec:largescale` · `sec:isw` · `sec:instrument` | *`cosmic variance` ×24 and `likelihood` ×26 are the **statistics-inference** bake's object and it has them. **Prediction: nothing owed here either** — and the test is specific: **is any low-$\ell$ statement a claim about a SINGLE realisation dressed as a claim about an ensemble?** A low-multipole deficit is exactly where that confusion lives* |
+| 7 | **`P16`** | `sec:network` · `sec:verdict` | *Reaction rates carry experimental uncertainties and `P16_theory_error_and_likelihood` is registered. **Prediction: the error propagation is the statistics bake's and is done; nothing owed*** |
+| 8 | **`P03`** | `sec:tour` · `rem:dimension` | *"600 random points" is a **spot check**. **Prediction: the question "is 600 enough" is NUMERICAL ANALYSIS's sampling-adequacy question and not this field's**, and this row hands it there rather than claiming it — the mirror of what number theory did with `P04`* |
+| 9 | **`P01`** | `sec:1` · `sec:5` | *Predict EMPTY. Test named: the shrinking-Andromeda limit is a **sequence**, not a sample; is any step an averaging argument?* |
+| 10 | **`P02`** | `sec:kretschmann` | *Predict EMPTY. Test: the chain-rule artefact is deterministic analysis throughout* |
+| 11 | **`P05`** | `sec:deck` | *Predict EMPTY. Test: the monodromy continuation is a **deterministic** path in a parameter plane; "generic vantage" is a genericity claim, and **the test is whether "generic" anywhere means "with probability one" rather than "off a lower-dimensional set"*** |
+| 12 | **`P07`** | `sec:frontiers` | *Predict EMPTY. Test: does any dissolution argument rest on a likelihood or a typicality claim?* |
+| 13 | **`P08`** | `sec:kernel` | *Predict EMPTY — and its **title** is the `covariance` homonym, already scored* |
+| 14 | **`P09`** | `sec:bound` · `sec:surj` | *Predict EMPTY. Test: "the bound is attained" is a **measure-zero-free** statement; is any stratum argument a genericity-with-probability claim?* |
+| 15 | **`P12`** | `sec:strata` | *Predict EMPTY. Test: the isotropy stratification's "generic class" — same genericity test as row 11* |
+| 16 | **`P13`** | `sec:cascade` | *Predict EMPTY. Test: rank counting, no measure* |
+| 17 | **`P14`** | `sec:count` · `sec:inflow` | *Predict EMPTY. Test: the three-wall count is forced by a symmetry principle; **is "least-arbitrariness" ever argued as "most probable"?** If it were, that would be a category slip worth finding* |
+
+⌗ ***THE LOCATOR PREDICTS: one paper carrying a genuine open question (`P04`), one carrying a
+sharpening (`p0`), and fifteen empty — with three of the fifteen carrying a NAMED GENERICITY TEST,
+because "generic" is where a deterministic corpus most easily says something probabilistic without
+meaning to.***
+
+⛔ ***AND ROW 2 CARRIES ITS OWN WARNING: if the `p0` sharpening turns out to be the number-theory
+finding in another register, it is ONE finding and this ledger says so rather than counting it
+twice.***
