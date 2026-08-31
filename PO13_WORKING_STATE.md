@@ -65,6 +65,48 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⛔⛔ r3705 — **`r3703` IS RETRACTED. THE NUMBER IS NOT TRUSTWORTHY AND THE FALSIFICATION DOES NOT STAND.**
+
+***Daryl flagged the chain as doubtful — "too many things that seem like red flags, like basing it on
+effective parameters like $M$, which in SdS is a mass parameter derived from $\alpha$ alone". Checked, and
+BOTH flags are real defects.***
+
+### ⛔ DEFECT ONE — A DIMENSIONAL INCONSISTENCY, AND IT IS FATAL
+
+*An exponent must be dimensionless, and `I9`'s is, under the reading where $a$ is the **dimensionless scale
+factor**: $[A]=L^{-2/3}$, so $3S^{1/3}\mu/A$ has dimension $L^{1/3}\cdot L^{-1}\cdot L^{2/3}=L^{0}$. ✔*
+
+⛔ ***But `r3703` took $A$ from the AREAL RADIUS***, $\lvert r\rvert=(2M\alpha^{2})^{1/3}(3/2\alpha)^{2/3}s^{2/3}$,
+*which makes $[A]=L^{1/3}$ — so its $C=3S^{1/3}/A$ is a **pure number**.* ⇒ ***It then called that
+"$1.771$ Mpc" and read $1/C$ as a comoving wavenumber. $1/C$ is dimensionless. It is not $0.5646$ /Mpc,
+and $z=260{,}781$ follows from nothing.***
+
+### ⛔ DEFECT TWO — AN IDENTIFICATION ADOPTED TO FIX A SIGN, NEVER DERIVED
+
+*The chain first tried $2M=r_0-r_0^{3}$ with $x_0=1.6538$ and got a **negative mass**. It then switched to
+$2M/\alpha=x_0^{3}$ — **and that switch was a guess made to make the sign come out**, not a derivation.*
+⌗ *The corpus calls $x_0$ "the offset, set by $\alpha$" (`P16` line 17): a geometric quantity of the Nariai
+proper frame. **$M$ in this construction is not an independent input**, which is exactly Daryl's objection,
+and the sanity check that reassured me — $M=2.33\times10^{23}M_\odot$ — checks an order of magnitude and
+cannot detect a wrong identification that happens to land in range.*
+
+### ⌗ WHAT SURVIVES AND WHAT DOES NOT
+
+| | |
+|---|---|
+| ⛭ **survives** | **the branch point carries a scale and the front seam does not** — `r3699`'s `N8` verdict, and it is *stronger* under the corrected $e^{-Ck}$ form: spread $1.08\to10.8$ against $3\times10^{-16}$ |
+| ⛭ **survives** | the two loci are different objects and `prop:transmission` reaches only the front seam (`r3693`) |
+| ⛔ **retracted** | $k_*=0.5646$ /Mpc, $z=260{,}781$, the $4.4\times$ miss, and the $\ell\sim7{,}342$ residue — **all of it** |
+| ⟐ **restored to open** | ***what the branch point's scale actually is.*** The hypothesis is neither confirmed nor falsified |
+
+⚠ ***AND A PATTERN IN MY OWN WORK, NAMED BECAUSE IT IS TWICE IN ONE SESSION.*** *`r3687` computed a
+required redshift and I compared the wrong quantity, nearly discarding the Rydberg. `r3703` chained an
+underived identification into a dimensionally inconsistent conversion and reported a falsification.
+**Both were caught by Daryl, not by me, and neither would have been caught by a gate** — a number with the
+wrong units passes every check the corpus has.*
+
+---
+
 ## ⛔ r3703 — THE BRANCH POINT'S SCALE IS COMPUTED, AND IT IS NOT THE RYDBERG. HYPOTHESIS FALSIFIED.
 
 ***The run owed since `r3693`, carried to a number. It misses.***
