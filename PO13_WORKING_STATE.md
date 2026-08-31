@@ -30,6 +30,52 @@ of the seam treatment, of the transfer, or of the geometry the transfer runs on?
 
 ---
 
+## ⛭⛭⛭ r3691 — THE ACOUSTIC ROOT AND THE GROWTH NORMALISATION ARE THE SAME MEMBER OF ONE FAMILY
+
+***Two calculations sharing no input beyond the flat form land on the same $\Omega_m$.***
+
+| | $\Omega_m$ | |
+|---|---|---|
+| $J(\Omega_m)=1$ — the growth normalisation of the RNAAS note, **pure mathematics of the flat form** | **0.315162424** | |
+| CR's acoustic scale, **Rydberg start**, $H_0=73$ measured, meeting $100\theta_*=1.04109$ | **0.315846** | |
+| the concordance value | $0.315\pm0.007$ | |
+
+⇒ ***0.217% apart, and $J$ evaluated at the acoustic root is 0.99833.***
+
+### ⌗ THE FAMILY, AND IT HAS REAL STRUCTURE
+
+$$I(n,p;\Omega_m)\;\equiv\;\int_1^{\infty}\frac{u^{n}\,\dd u}{\bigl(\Omega_m u^{3}+1-\Omega_m\bigr)^{p}},
+\qquad u=1+z,$$
+*over the **stacking rate**, which is the rate `P16` `sec:scoping` assigns to separations read across leaves.*
+
+⛭ ***The $n=2$ row is ELEMENTARY.*** *Substituting $w=\Omega_m u^{3}+1-\Omega_m$ gives*
+$$I(2,p)=\frac{1}{3\Omega_m(p-1)}\qquad\Longrightarrow\qquad I=1 \text{ at } \Omega_m=\frac{1}{3(p-1)},$$
+*so its unity roots are **exactly rational** — $2/3$, $1/3$, $2/9$, $1/6$ at $p=\tfrac32,2,\tfrac52,3$, each
+confirmed numerically to nine figures.*
+
+⛭ ***The $n=1$ row is NOT.*** *With $y\equiv\Omega_\Lambda/\Omega_m$,*
+$$J=(1+y)^{3/2}\cdot\tfrac{2}{5}\,{}_2F_1\!\left(\tfrac56,\tfrac32;\tfrac{11}{6};-y\right),
+\qquad J=1 \text{ at } y_*=2.172967096.$$
+*No elementary form; $y_*$ matches none of $2\pi/3$, $e-\tfrac12$, $\sqrt2+\tfrac34$, $\varphi^{3/2}$ to
+better than $0.4\%$. **The root is genuinely transcendental as far as this pass can tell.***
+
+### ⛭⛭ AND THE ACOUSTIC CONDITION SITS AT $p=3/2$
+
+***Solving for the exponent whose $n=1$ unity root IS the acoustic $\Omega_m$:***
+$$p_{\rm acoustic}=1.498484 \qquad\text{against}\qquad p_J=\tfrac32=1.5 \qquad (0.101\%)$$
+
+⇒ ***So CR's acoustic scale and the linear growth normalisation are, to a tenth of a per cent, the SAME
+member of this family.*** *That is a measured relation between an integral over the stacking rate and an
+observable computed from $r_s$ on the leaf against $D_M$ on the stack.*
+
+⚠ ***STATED AS MEASURED AND NOT AS DERIVED.*** *Nothing here shows WHY the acoustic condition should land
+on $p=3/2$, and $\theta_*=1.04109$ is an observational input while $J=1$ is not. **The agreement of three
+numbers to $0.2\%$ is a fact; a mechanism is not claimed.*** ⌗ *What makes it worth pursuing rather than
+filing as numerology is that the family demonstrably HAS structure — the $n=2$ row is exactly solvable with
+rational roots — so "which member does the sky pick" is a well-posed question and not a fishing expedition.*
+
+---
+
 ## ⛭⛭⛭ r3689 — THE SOUND HORIZON STARTING AT THE HYDROGEN IONISATION THRESHOLD
 
 ***`r3687` measured that from $a\to0$ the acoustic scale has NO ROOT in $\Omega_m$ anywhere in $0.25$–$0.75$.
