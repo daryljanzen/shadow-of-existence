@@ -65,6 +65,47 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⛔⛭ r3711 — THE ATOM-FORMATION READING OF THE RYDBERG LOCUS IS TESTED AND FAILS. THE LOCUS IS A VELOCITY.
+
+***Daryl proposed the mechanism: when the temperature drops below the hydrogen binding energy, atoms can
+combine for the first time — long before recombination — and that starts the plasma phase. Tested by Saha
+rather than argued about.***
+
+| $z$ | $kT$ [eV] | $x_e$ | **ionising photons per baryon** |
+|---|---|---|---|
+| 200,000 | 46.97 | 1.00000 | $1.61\times10^{9}$ |
+| **57,898 — the Rydberg locus** | **13.598** | **1.00000** | **$1.40\times10^{9}$** |
+| 6,000 | 1.409 | 1.00000 | $5.03\times10^{6}$ |
+| 1,500 | 0.353 | 0.93389 | $1.89\times10^{-5}$ |
+| 1,090 | 0.256 | 0.00328 | $1.79\times10^{-11}$ |
+
+⛔ ***At the Rydberg locus there are $1.4\times10^{9}$ ionising photons per baryon, and $x_e=1.00000$ to
+five decimals on both sides.*** *Any atom that forms is destroyed by one of a billion available photons;
+Saha shows **no feature whatever** there. Recombination waits until that count falls through **one**, at
+$kT\simeq0.3$ eV, which is why it sits at $z\simeq1100$. ***The atom-formation reading does not survive.***
+
+### ⛭ BUT THE TEMPERATURE IS NOT PRIMARILY AN ATOMIC NUMBER — IT IS A VELOCITY
+
+$$\mathrm{Ry}=\tfrac12 m_e c^{2}\alpha_{\rm fs}^{2}\qquad\Longrightarrow\qquad
+kT=\mathrm{Ry}\ \Longleftrightarrow\ v_{\rm thermal}=\alpha_{\rm fs}\,c$$
+
+*Checked: at $kT=13.5984$ eV, $\sqrt{2kT/m_ec^2}=7.2954\times10^{-3}$ against
+$\alpha_{\rm fs}=7.2974\times10^{-3}$ — **agreeing to $0.027\%$.***
+
+⇒ ***So the locus is where the ELECTRONS' THERMAL SPEED FALLS THROUGH $\alpha c$ — the orbital speed of a
+bound electron. That is a statement about the PLASMA, and it holds whether or not any atom ever forms.***
+
+⌗ ***Which is why the Saha result does not kill the coincidence.*** *`r3689` stands unchanged: starting the
+sound horizon there gives $100\theta_*$ to $0.145\%$ and a root at $\Omega_m=0.3158$. **What has been
+eliminated is one candidate mechanism, and what has been gained is that the scale is
+$m_e\alpha_{\rm fs}^{2}$ — built from the electron mass and the fine-structure constant, with no
+cosmological parameter and no atom required.***
+
+⚠ ***AND NOTHING YET SAYS WHY A SOUND HORIZON SHOULD BEGIN WHERE $v_e=\alpha c$.*** *That is the question,
+restated in the terms the number is actually made of rather than the terms it is usually named in.*
+
+---
+
 ## ⛭⛭⛭ r3709 — THE KERNEL COMPUTED WITH EVERY INGREDIENT DERIVED: IT ANNIHILATES THE TENSOR TOWER
 
 ***Three ingredients were owed at `r3707`. All three are now derived from the corpus rather than guessed,
