@@ -1,7 +1,7 @@
 ---
 name: number-theory-ledger
 kind: FIELD-BAKE
-current: r3614
+current: r3706
 job: The number-theory field-bake ledger — what bit, what bounced, and where the boundary is.
 sources: [chat]
 ---
@@ -157,3 +157,51 @@ irrational and whose masses are arbitrary reals. *Noted so it is not mistaken fo
 ⇒ *`P03`'s disagreement is real but it is **the same cubic `P05` carries**, and `T1`'s fence — that the $S_3$
 inference needs irreducibility — is stated where the inference is made. **Landing it twice would be landing it
 once**.* ⌗ *Recorded rather than acted on, which is what the estimate table is for.*
+
+---
+---
+
+# ⛭⛭⛭ THE v2 PASS — r3706, AND IT OPENS ON THE ROW THE v1 PASS SCORED EIGHT PAPERS IN
+
+> ⛔ ***`SIX_FIELDS_WORK_ORDER_v2.md` §6: "where your reach table scored nine papers in one row on a
+> screen, that row is where a v2 pass starts."*** *This ledger's reach register has such a row —
+> **`P02` · `P06` · `P09` · `P10` · `P11` · `P12` · `P13` · `p0`, eight papers, one verdict, one
+> sentence**, and the sentence is a list of the terms that were screened. §0 says exactly what that
+> is: **a term list is a list of what you already know the field to contain.***
+>
+> ⛔⛭ ***AND THIS FIELD PREDICTS EMPTINESS SIXTEEN TIMES OUT OF SEVENTEEN — THE LARGEST EMPTINESS
+> PREDICTION IN THE CORPUS.*** *§2 is the rule that governs this whole pass: **a prediction of
+> emptiness gets MORE scrutiny, not less.** The one such prediction in the integrable-systems run
+> was the one REFUTED prediction of seventeen. Here there are sixteen.
+>
+> ⌗ *Nothing below is struck. The v1 verdicts stand as the record of what a term screen returns;
+> where the v2 pass finds more, the row is **updated** and the disagreement is kept.*
+
+## ⌗ PASS A — THE LOCATOR. **Written from the seventeen abstracts and section lists, before any paper
+was opened.** *No ranking: each row names the `\label`ed sections where this field's content would
+live and states what would be there, in a form that can be scored **wrong**.*
+
+| # | paper | sections named | ⌗ **the prediction — falsifiable** |
+|---|---|---|---|
+| 1 | **`p0`** | `sec:imaginary` · `sec:ledger` · `sec:power` | ⛭ ***"Reached through the imaginary, real everywhere it lands" is the geometric face of CASUS IRREDUCIBILIS***: an irreducible cubic with three real roots is **not** solvable in real radicals, so its real roots are reachable only through $\mathbb{C}$. **The corpus's horizon cubic in the under-critical regime is exactly that cubic.** *Prediction: `p0` states the slogan and cites no theorem, and the theorem is this field's.* ⛔ *Wrong if the corpus's continuation is not into the roots' own expression — if the imaginary excursion and the root triple are unrelated objects, this is a pun.* ⌗ *`sec:ledger`'s one-scale argument is the opposite kind of row: predict it **forecloses** numerology, so the field's honest verdict there is that the door is already shut and receipted* |
+| 2 | **`P03`** | `sec:throat-angle` · `sec:winding` · `sec:ellipse` · `sec:tour` | ⛭ ***THE TRIPLE-ANGLE IS VIÈTE'S TRIGONOMETRIC SOLUTION OF THE CUBIC.*** *$4\cos^3\theta-3\cos\theta=\cos3\theta$ is the identity that solves a three-real-root cubic without radicals — it is the standard way round `casus irreducibilis`. **Prediction: `P03`'s "sky angle $w$, throat angle $u$, horizon angle $3w$ — three projections of one object" IS that identity, so the paper's three coupled parametrisations are the cubic's three roots in trigonometric normal form.*** ⛔ *Wrong if the triple-angle enters independently of the roots and is never used to express them.* ⌗ *And `sec:winding`, "the thirds that closure forces", predicts a **rationality condition on a rotation number** — closure iff rational — which is this field's, not geometry's* |
+| 3 | **`P05`** | `sec:deck` · `sec:autA2` · `sec:conjugacy` · `sec:classification` | *Beyond `T1`: predict the degree-six closure and $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2$ are a **LATTICE** statement and not only a group one — $A_2$ is the hexagonal lattice, which is the **ring of Eisenstein integers** $\mathbb{Z}[\omega]$, whose unit group is $\mathbb{Z}_6$ and whose ring automorphisms are complex conjugation.* ⛔ *Wrong if `P05` already reads the deck group as a lattice, or if the Eisenstein reading adds no relation the paper lacks* |
+| 4 | **`P13`** | `sec:sigma` · `sec:a2` · `sec:synthesis` | ⛭ ***"A REAL INVOLUTION IS NOT THE WICK ROTATION" IS A GALOIS-COHOMOLOGICAL STATEMENT.*** *Real forms of a complex group are classified by $H^1(\mathrm{Gal}(\mathbb{C}/\mathbb{R}),\mathrm{Aut})$; the Wick rotation **is** the nontrivial Galois element and a Weyl reflection is **inner**. **Prediction: `P13`'s three converging routes are three faces of the one fact that an inner automorphism cannot carry a nontrivial Galois class.*** ⛔ *Wrong if `P13` already says this, or if the cohomological reading fails to reproduce the paper's conclusion* |
+| 5 | **`P02`** | `sec:ring` · `sec:continuation` · `sec:kretschmann` | *`sec:ring` — "the single horizon as the $\Lambda\to0$ limit of a root triple" — is a **DEGENERATION OF THE CUBIC**. Predict the paper tracks the collision without writing the **discriminant**, and that the $\Lambda\to0$ asymptotics of the three roots (two escaping, one staying at $2M$) are read off the cubic's **Newton polygon** in the parameter — valuation theory, and this field's.* ⛔ *Wrong if the discriminant is written and the limit taken through it* |
+| 6 | **`P12`** | `sec:weyl-a3` · `sec:strata` · `sec:discrete` | ⌗ ***A WEYL GROUP IS A GROUP; A ROOT LATTICE IS A $\mathbb{Z}$-MODULE WITH AN INTEGRAL QUADRATIC FORM,*** *and an integral quadratic form is this field's object outright. **Prediction: `P12` uses the group and never the form** — so its $A_3$ appears without its Gram matrix, its discriminant $4$, or its dual $A_3^{*}$.* ⛔ *Wrong if any lattice-level fact is load-bearing there* |
+| 7 | **`P14`** | `sec:count` · `sec:whichthree` · `sec:twofactors` · `sec:family` | *`sec:whichthree` distinguishes **two different three-element sets** and says the generations sit on one and not the other. Predict the distinguishing invariant is the $A_2$ configuration's two orbits — the three points **on** the circle against the lines **tangent** to it — and that in the Eisenstein reading these are two different arithmetic objects. ⛔ Wrong if the distinction is made on physical grounds with no invariant, in which case the row is a **scoped question**, not a claim* |
+| 8 | **`P06`** | `sec:least-arbitrariness` · `sec:register-boundary` · `sec:modal` | ⛔⛭ ***THIS ROW GETS THE HARDEST READ OF THE SEVENTEEN, BY RULE.*** *§2: the integrable-systems run's ONE emptiness prediction was `P06`, and it was the ONE prediction REFUTED. **Predict: least-arbitrariness — "a structure carrying an unforced modulus is not a single world but a family" — has a rigidity reading in this field, and it is an ANALOGY rather than content.*** *That prediction is written in the form most likely to be wrong on purpose, and the read that scores it must be a read of `sec:least-arbitrariness` in full* |
+| 9 | **`P10`** | `sec:lock` | *The closed-$S^3$ graviton tower is a **spectrum indexed by integers with arithmetic multiplicities** ($\ell(\ell+2)$, degeneracy of square type). Predict the paper uses the tower's **discreteness** and never its **multiplicity arithmetic** — so the field's content here is a scoped question and not a claim* |
+| 10 | **`P15`** | `sec:largescale` · `sec:transmission` · `sec:tensions` | *Beyond `T3`'s $\zeta_3$: predict `sec:largescale`'s "flat/discrete decoupling and the low-multipole floor" is **the same $S^3$-integrality question as `P10`'s**, seen from the observational side — so the two papers share ONE question and neither asks it* |
+| 11 | **`P08`** | `sec:trichotomy` · `sec:kernel` | *Predict EMPTY, and the test is named: `sec:trichotomy`'s three constant-curvature slicings — **is that a SIGN trichotomy (Sylvester, not this field's) or a DISCRIMINANT trichotomy (`P03`'s $4-3r_0^{2}$, which is)?*** ⛔ *If it is the second, the row is not empty* |
+| 12 | **`P01`** | `sec:2` · `sec:3` · `sec:problems` | *Predict EMPTY, and the test is named: **`sec:2`'s "two of the three separations vanishing forces the third" is a counting statement**, and the read must establish it is a rank/degeneracy argument and not a parity argument. `zeta` ×8 here is the Killing vector, already scored* |
+| 13 | **`P04`** | `sec:floor` · `sec:decomp` | *Predict EMPTY — **a FIFTH consecutive empty for `P04`**, and §2 makes that the reason to read it rather than the reason not to. Test: the $\sqrt N$ accumulation in `sec:floor` is a random-walk count. **If it is any field's it is probability's, and this pass must hand it over rather than claim it*** |
+| 14 | **`P07`** | `sec:CR-mechanics` · `sec:CR-hawking` · `sec:frontiers` | *Predict EMPTY. Test: do the black-hole mechanics sections carry an **integrality** claim — area quantisation, an integer entropy, a discrete spectrum? If yes the row is not empty; `congruence` ×77 here is already scored geodesic* |
+| 15 | **`P09`** | `sec:pd` · `sec:bound` | *Predict EMPTY. Test: `sec:pd`'s Kerr--NUT--(A)dS separability turns on separation constants; **is any admissibility condition a COMMENSURABILITY condition** — a ratio required rational? Predict no* |
+| 16 | **`P11`** | `sec:discrete` · `sec:chirality` | *Predict EMPTY. Test named: **is any "discrete marker" a residue class that does arithmetic — that ADDS — or only a label that distinguishes?*** A $\mathbb{Z}_2$ handedness that never composes is a sign, not a modulus |
+| 17 | **`P16`** | `sec:interior` · `sec:network` · `sec:peak` | *Predict EMPTY beyond `T3`'s $\zeta_3$. Test: the abundance network's integer charges and mass numbers are **conservation labels**; and `sec:interior`'s "parity, monodromy" is $\mathbb{Z}_2$ — predict both are labels, and read to check neither is a modulus* |
+
+⌗ ***THE LOCATOR PREDICTS: 7 papers carrying something, 10 empty.*** *The v1 pass predicted 1 and 16.
+**Where they disagree, the disagreement is the finding**, and it is scored at the close either way.*
+
+⛔ ***AND THE PREDICTION MOST LIKELY TO BE WRONG IS WRITTEN AS ROW 8 ON PURPOSE.***
