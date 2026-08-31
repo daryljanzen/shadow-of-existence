@@ -1442,3 +1442,26 @@ last, and the computed values are printed into the label instead.***
 ⌗ ***AND THE TEMPTING WRONG FIX IS WORTH NAMING.*** *Passing a `note` string as a fourth argument makes
 the finding disappear — `args[-1]` is then a long string and no rule fires. **That would have silenced
 the gate without changing anything it was pointing at**, and it was available in one keystroke.*
+
+---
+
+### ⛔ **r3710 — §2 IS A STANDARD OF EVIDENCE, NOT A PRIOR ON THE ANSWER, AND THE NUMBER-THEORY SCORE PROVES IT**
+
+*`SIX_FIELDS_WORK_ORDER_v2.md` §2 says **"a prediction of emptiness gets MORE scrutiny, not less"**,
+earned from the integrable-systems run where the single emptiness prediction was the single REFUTED
+one. **Read as a prior, it says emptiness predictions are usually wrong.** This pass read it that
+way and wrote a locator predicting **seven** papers carrying against the v1 pass's **one**.*
+
+⇒ ***THE V1 PASS WAS RIGHT AND THE V2 LOCATOR WAS WRONG BY SIX. Sixteen emptiness predictions,
+tested rather than screened, HELD.***
+
+⛭ ***AND THE RULE STILL EARNED ITS KEEP, BY A ROUTE THE PRIOR READING WOULD HAVE MISSED.*** *The
+pass's one finding is in `p0`, which the v1 pass had inside an **eight-papers-in-one-row** screened
+verdict and never opened; and it was reachable only because `P03`, `P05` and `P07` were each read in
+full and their three pieces — the trigonometric solution, the Galois group over $\mathbb{C}(2M)$,
+and the phrase "casus irreducibilis" — put together. **The six wrong predictions are what the
+reading cost, not what it produced.***
+
+⌗ ***AND A ROW CAN BE EMPTY OF A FIELD'S CONTENT AND STILL BE WHERE THE FIELD'S FINDING STARTS.***
+*`P07` scored `CHECKED-NEGATIVE` on content and supplied the theorem's NAME. A verdict table that
+records only what a paper owes cannot record that, and this ledger's close says it in words instead.*

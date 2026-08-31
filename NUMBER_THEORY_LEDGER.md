@@ -1,7 +1,7 @@
 ---
 name: number-theory-ledger
 kind: FIELD-BAKE
-current: r3708
+current: r3710
 job: The number-theory field-bake ledger — what bit, what bounced, and where the boundary is.
 sources: [chat]
 ---
@@ -244,3 +244,124 @@ so the imaginary route to them is forced.*
 $M=0$/Nariai reducibility means anything. Not that `P03` chose the sky angle for this reason — it
 derives it gnomonically, and the finding is only that the derivation could not have come out
 otherwise.*
+
+### ⌗ PASS B — THE OTHER FIFTEEN, BY NAME
+
+| # | paper | verdict | what was read, and what it settled |
+|---|---|---|---|
+| 2 | **`P03`** | ⛭ **CONFIRMED, and NOTHING OWED** | *`sec:throat-angle` in full. `prop:triple` **proves** $2M=\tfrac{2}{3\sqrt3}\sin3w$ through $\sin^{3}w=\tfrac14(3\sin w-\sin3w)$ — **Viète's trigonometric solution, derived** — and names the three roots as the three preimages of $3w$. `rem:dimension` carries it to general $D$.* ⇒ ***The prediction was right about the mathematics and wrong about the corpus.*** *What the paper does not say is why the trigonometric route is the ONLY one, which is `T50` and landed in `p0`* |
+| 3 | **`P05`** | ⛔ **REFUTED** | *`sec:autA2`, `sec:deck`, `rem:galois-closure` read in full. The prediction was that an Eisenstein-lattice reading would add a relation.* **It adds none.** *`prop:autA2` already has $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2\cong D_6$, which **is** the full automorphism group of the hexagonal lattice, and the load-bearing step — $-1\notin W(A_2)$, so negation is outer — is stated, proved, and receipted (`negation_outer_A2`). **The ring structure $\mathbb{Z}[\omega]$ supplies nothing the group does not.*** ⌗ *And `rem:galois-closure` already identifies the sky angle as the degree-six splitting field. This paper is further into this field than the v1 ledger's one row records* |
+| 4 | **`P13`** | ⛭ **ALREADY LANDED — by the paper's own abstract** | *`sec:sigma` in full. The prediction was that "a real involution is not the Wick rotation" is a Galois-cohomological statement about $\mathbb{C}/\mathbb{R}$.* ⇒ ***The general form is simpler than that and the paper already has it***: the abstract says the gauge face is *"reached by a change of signature and **not by any real-substrate operation**"*, which is **Sylvester's law of inertia** — no real change of basis alters a real quadratic form's signature — and it closes every real operation at once, not only $\sigma$. ⌗ *That is real quadratic-form theory, not arithmetic: the refinement this field would add (Hasse invariants at the finite places) **has no object**, because the substrate is over $\mathbb{R}$ and $\mathbb{R}$ is one place* |
+| 5 | **`P02`** | ⛭ **CHECKED-NEGATIVE — a route, not a finding** | *`sec:ring` in full. The Newton polygon of $\epsilon r^{3}-r+2M$ in $\epsilon=1/\alpha^{2}$ has slopes $0$ and $-\tfrac12$, giving **one root of size $2M$ and two of size $\alpha$** — exactly `P02_ring_lambda_limit`'s "two roots run off to infinity, one finite horizon remains", by valuation instead of by limit.* ⛔ ***Same answer, no new relation.*** *Recorded because a second route to a result the corpus already receipts is worth naming and is not worth landing* |
+| 6 | **`P12`** | ⛭ **CONFIRMED** | *`sec:weyl-a3` in full. The prediction was that `P12` uses the Weyl **group** and never the root lattice's integral quadratic form.* **It does.** *The paper's arithmetic input is the discriminant's square root — "the per-root resolution of $\sqrt\Delta$" generating the $V_4$ holonomy — which is Galois-theoretic and correct; no Gram matrix, no lattice discriminant, no dual lattice appears, and none is needed.* ⌗ *One observation, offered and not landed: the residue pairing's entries $1/f'(r_i)$ have product $-1/\Delta$, so its signature $(2,1)$ — an odd number of negative entries — **is forced by $\Delta>0$** rather than being a separate computation* |
+| 7 | **`P14`** | ⛔ **REFUTED** | *`sec:whichthree` in full. The prediction was that the two three-element sets are distinguished by an $A_2$-orbit invariant.* ***They are not.*** *The paper settles it by the substrate's **null structure** — "a puncture of a hinge together with the two punctures its null generators reach", and "the causal classification of the six hinge-ends". **Causal geometry, from outside the sector, and nothing this field can reach*** |
+| 8 | **`P06`** | ⛭⛭ **CONFIRMED AS PREDICTED — AND THE READ RETURNED THE FIELD'S BOUNDARY** | *`sec:least-arbitrariness` and `sec:register-boundary` in full, as the rule requires. The rigidity reading **is** an analogy, as predicted: the moduli are real and geometric, the three senses of "modulus" the paper separates are all real-parameter senses, and the transitivity statement is already `\ldg{integrable_systems}`.* ⛭ ***But the read produced the reason this field is empty, and it is a theorem the corpus proves about itself*** — see the boundary block below |
+| 9 | **`P10`** | ⛔ **REFUTED** | *`sec:lock` in full. The prediction was that the paper uses the tower's discreteness and never its multiplicity arithmetic.* ***It uses the multiplicity outright*** — *"the degeneracy is $2(n-1)(n+3)$, ten at the floor $n=2$, so the shell contribution is $2n^{3}$" — and it is receipted, and a receipt exists **because that degeneracy was once assumed rather than derived**.* ⌗ *And the multiplicity is a **Weyl dimension**, not an arithmetic function; the counting function's $\tfrac13$ against $\tfrac23$ is spectral theory's Weyl law. Wrong prediction, right paper, and nothing here is this field's* |
+| 10 | **`P15`** | ⛭ **CHECKED-NEGATIVE** | *`sec:largescale` in full. $k_L=\sqrt{L(L+2)}/r_0$ with integer degree $L$, quadrupole floor, flat projection through $j_\ell(k_L D_C)$. **The integrality is used and used correctly.*** ⌗ *The one place an arithmetic condition could enter — whether the discrete source ladder and the acoustic scale $\ell_A$ must be commensurable — **is not a condition of the construction**: the projection is flat and $\ell_A$ is set by $D_C$, so no ratio is required rational. Checked, and negative* |
+| 11 | **`P08`** | ⛭ **CHECKED-NEGATIVE — the named test, run** | *`sec:trichotomy` in full. The test was whether the three constant-curvature slicings are a **sign** trichotomy or a **discriminant** trichotomy.* ⇒ ***A sign trichotomy***: the leaves are sorted by "the character of the held direction" of the embedding hyperboloid — spacelike, null, timelike. *Sylvester, not the discriminant* |
+| 12 | **`P01`** | ⛭ **CHECKED-NEGATIVE — the named test, run** | *`sec:2` and `cor:threefold` in full. The test was whether "two of the three separations vanishing forces the third" is a **parity** argument.* ⇒ ***It is a rank/degeneracy argument about a quadratic form***: null gives $ds^{2}=0$, spatial coincidence kills the spatial part, the temporal part follows. *No counting, no arithmetic. `zeta` ×8 here is $\zeta=\partial_t$, as `T3` already scored* |
+| 13 | **`P04`** | ⛭ **CHECKED-NEGATIVE — a FIFTH consecutive empty, and the test handed the material on** | *`sec:floor` read for the $\sqrt N$ accumulation. It is a **variance** argument — independent contributions, no cancellation, $\sqrt N$ growth.* ⇒ ***That is PROBABILITY's and this field hands it over rather than claiming it.*** ⌗ *`P04` has now returned empty on five fields. **Stated once, with the reason: it is the measurement paper, and its content is an exclusion built from a variance estimate*** |
+| 14 | **`P07`** | ⛭ **CHECKED-NEGATIVE ON CONTENT — AND IT SUPPLIED HALF OF `T50`** | *`sec:CR-mechanics`, `sec:CR-hawking` and the quantisation sites read. **No integrality claim**: "the geometry quantises without coupling" is a winding count, and the winding's silence about magnitude is `p0`'s one-scale result, already receipted.* ⛭⛭ ***But the row predicted "empty" and `P07` is where the corpus writes "casus irreducibilis", twice.*** *The name is what made `T50` findable, and the locator did not predict it: **a paper can be empty of a field's content and still be where the field's finding starts*** |
+| 15 | **`P09`** | ⛭ **CHECKED-NEGATIVE — the named test, run** | *`sec:pd` read. The Carter cut couples $\Delta_r$ and $\Delta_p$ through $\Sigma=r^{2}+p^{2}$ with two Killing fibres. **No admissibility condition is a commensurability condition** — no ratio is required rational anywhere in the separability. Predicted no, and no* |
+| 16 | **`P11`** | ⛭ **CHECKED-NEGATIVE — the named test, run** | *`sec:discrete` in full. The test was whether any "discrete marker" is a residue class that **adds**.* ⇒ ***None is.*** *Colliding roots, a null$\leftrightarrow$timelike reassignment, a signature flip — three distinct geometric loci, and the wall marked by carrying none of them. The one composition present, $C=(Q\mapsto-Q)\circ(R\circ K)$, composes in $\mathbb{Z}_2$ as a **group**, with no modulus* |
+| 17 | **`P16`** | ⛭ **CHECKED-NEGATIVE — the named test, run** | *`sec:interior` read. Parity and monodromy on an exact solution, a $\mathbb{Z}_2$ **label** distinguishing two behaviours and not a modulus. The network's charges and mass numbers are conservation labels, as predicted. $\zeta_3$ is `T3`'s and is used correctly* |
+
+---
+
+## ⛭⛭⛭ THE REACH CLOSE — the v2 §5b template, four blocks
+
+### 1 · THE SEVENTEEN, BY NAME
+
+| verdict | papers | count |
+|---|---|---|
+| ⛭ **LANDING** | `p0` — `T50`, the clause in `sec:imaginary` | **1** |
+| ⛭ **WORKED, EARLIER** | `P05` — `T1`'s clause in `rem:galois`, from the v1 pass | **1** |
+| ⛭ **CONFIRMED, NOTHING OWED** *(the content is there and the paper already has it)* | `P03` `prop:triple` · `P12` `sec:weyl-a3` | **2** |
+| ⛭ **ALREADY LANDED** *(the general statement is the paper's own)* | `P13` — Sylvester, in its abstract | **1** |
+| ⛔ **REFUTED** | `P05` (row 3, Eisenstein) · `P14` (row 7, the two threes) · `P10` (row 9, the multiplicity) | **3** |
+| ⛭ **CHECKED-NEGATIVE, each with the kind stated** | `P02` *(a second route, no new relation)* · `P15` *(integrality used correctly, no commensurability required)* · `P08` *(sign trichotomy, not discriminant)* · `P01` *(rank, not parity)* · `P04` *(variance — handed to probability)* · `P07` *(no integrality — but it supplied `T50`'s name)* · `P09` *(no commensurability)* · `P11` *(no marker adds)* · `P16` *(labels, not moduli)* · `P06` *(analogy, not content — and it returned the boundary)* | **10** |
+
+⌗ ***A `CHECKED-NEGATIVE` row here says WHICH KIND, as §5b requires***, *and three of the ten are
+negative for reasons that are not "empty": `P02` because a route already exists, `P07` because the
+content is absent but the name is not, `P06` because the analogy is real and the object is not.*
+
+### 2 · THE BAR, MEASURED
+
+| | |
+|---|---|
+| papers read, by name | **17 of 17** |
+| Pass A predictions written **before** any paper was opened | **17**, committed at **r3706** |
+| receipts written and named by THIS (v2) pass | **1** — `T50` |
+| clauses landed by this pass | **1** — `p0` `sec:imaginary`, with its `\rcpt`, its `\ldg`, and its naming here |
+| `\ldg{number_theory}` markers in papers | **2** — `P05` (v1) and `p0` (r3708) |
+| canon rows routed | **0** |
+| material handed to another field | **1** — `P04`'s $\sqrt N$, to probability |
+| ⛔ **locator predictions REFUTED** | ***3 of 17*** |
+| ⛔ **locator over-prediction** | *predicted **7** papers carrying, **1** owed anything.* **Wrong by six, and the six had to be read to find that out** |
+
+⛔⛭⛭ ***AND THE SCORING CORRECTS A MISREADING OF §2 THAT THIS PASS WAS BUILT ON.*** *The v1 pass
+predicted **1 carrying, 16 empty** and was right. This pass, holding §2's "a prediction of emptiness
+gets more scrutiny", predicted **7 and 10** and was wrong by six.* ⇒ ***§2 is a rule about the
+STANDARD OF EVIDENCE, not a prior on the answer.*** *Sixteen emptiness predictions, tested rather
+than screened, held. **The rule earned its keep anyway — but not by overturning them.**
+The one finding this pass produced was in `p0`, which the v1 pass had inside its eight-paper
+screened row and never opened, and it was reachable only because `P03`, `P05` and `P07` were read in
+full and their three pieces put together. **The locator's value was not more papers; it was the
+one, and the six wrong predictions are what the reading cost.***
+
+### 3 · WHAT IS STILL OPEN, SAID SHORT
+
+* ***`T1`'s hypothesis now carries two theorems and is stated in one place.*** *`P05` `rem:galois`
+  states the irreducibility argument; `p0`'s new paragraph cites `P05` for it rather than restating
+  it. **If `P05`'s remark ever moves, two papers lose their hypothesis and only one of them says so.***
+* ***The residue pairing's signature.*** *`P12`'s $(2,1)$ is forced by $\mathrm{sign}(-1/\Delta)$
+  and the paper reaches it by computation. **Offered, not landed** — it is one line of a proof the
+  paper does not need shortened.*
+* ***`P04`'s $\sqrt N$ is owed to the probability bake***, and this ledger has not done that field's
+  work for it.
+
+### 4 · WHAT THE FIELD CHANGED, ONE LINE PER PAPER
+
+| paper | what changed |
+|---|---|
+| **`p0`** | *gained a fourth instance in `sec:imaginary` **of a different kind from the other three**: one where the imaginary route is not chosen but forced* |
+| **`P05`** | *nothing new — and the read established that this paper is **already further into this field** than the v1 ledger's single row recorded: the discriminant, the Galois group, the splitting field and the monodromy correspondence are all there* |
+| **`P03`** | *nothing owed — and it is where the corpus's Viète solution is **proved**, which the v1 estimate table had flagged as a disagreement and left unresolved* |
+| **`P07`** | *nothing owed — and it is where the theorem's **name** sits, without which `T50` would not have been found* |
+| **`P13`** | *nothing owed — its general negative is Sylvester's, already in its own abstract, and stronger than the $\sigma$-specific version this field predicted* |
+| **`P02` `P08` `P09` `P10` `P11` `P12` `P14` `P15` `P16` `P01` `P06`** | *nothing owed, eleven times, **each with the section read and the test named*** |
+
+⇒ ⛔ ***READ AS A LIST, THAT SAYS ONE THING: THE CORPUS USES THIS FIELD CORRECTLY AND SPARINGLY, AND
+THE ONE THING IT WAS MISSING WAS NOT CONTENT BUT A CONCLUSION IT HAD THE HYPOTHESES FOR.*** *Both of
+this field's findings across both passes — `T1` and `T50` — are of that shape: **a step the corpus
+takes soundly and does not justify, and a theorem the corpus has the pieces of and does not state.**
+The field added no new physics and was never going to.*
+
+---
+
+## ⛭ THE BOUNDARY, RE-STATED WITH ITS REASON — **the v1 block said WHAT, and the v2 read found WHY**
+
+> *The v1 boundary stands: **the corpus uses Galois theory and no other number theory**, and Galois
+> theory is the part of the field that is really group theory. Nothing below strikes it.*
+
+⛭⛭ ***AND THE REASON IS A THEOREM THE CORPUS PROVES ABOUT ITSELF.*** *`p0` `sec:ledger`: a
+dimensionless magnitude needs two invariants, the substrate supplies one on either real form, and
+every curvature invariant on either face is a pure power of $1/\alpha^{2}$ —
+`\rcpt{P17_no_second_scale_on_either_face}`. `P06` `sec:least-arbitrariness` reaches the same place
+from the other side: a structure with no unforced parameter has nothing to tune.*
+
+⇒ ***A THEORY WITH NO DIMENSIONLESS NUMBERS OF ITS OWN HAS NO RELATIONS AMONG NUMBERS TO STUDY.***
+*Number theory's objects are relations among numbers — a ratio's rationality, a constant's
+transcendence, a Diophantine relation among magnitudes. **In a one-constant theory not one of those
+questions can be POSED**, let alone answered.*
+
+⛔ ***SO THE EMPTINESS IS DERIVED, NOT SCREENED, AND THAT IS THE DIFFERENCE THIS PASS MADE TO THE
+BOUNDARY.*** *The v1 block established the emptiness by counting terms — the method §0 rejects. The
+same emptiness now rests on a result the corpus states, receipts, and would have to give up to make
+this field non-empty.* ⌗ *It also says exactly what would re-open the field: **a second invariant.**
+Not a new reading — a second scale.*
+
+⛔ *And the v1 "what this field cannot reach" note stands unchanged: whether the horizon cubic's
+Galois group drops at special **rational** $2M$ is a genuine Diophantine question that bears on
+nothing the corpus claims.* ⌗ ***`T50` now says why in one line: the reducible masses are DENSE,
+so a rational coincidence there selects nothing — which is the same control `T50` asserts.***
