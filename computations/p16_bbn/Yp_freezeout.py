@@ -1,7 +1,7 @@
 """
 He-4 (Y_p) from n<->p freeze-out, integrated from first principles on the STANDARD FRIEDMANN
 window rate H = 1.66 sqrt(g*) T^2 / M_Pl -- which P16 Sec:rate/Sec:scoping establishes IS the
-effective nuclear-window rate (the observable radiation-free rate carried into the window is
+effective nuclear-window rate (the observable geometric stacking rate carried into the window is
 ~294x too slow = fatal; the window rate is the LOCAL standard one). Born weak rates, Fermi-Dirac
 leptons/nu, no Pauli/Coulomb/radiative corrections (~1% level), finite m_e, normalized to tau_n.
 

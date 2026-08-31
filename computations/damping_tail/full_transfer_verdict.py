@@ -3,7 +3,7 @@
 This script is NOT a verdict. It computes the high-l TT deficit CONDITIONAL ON assumption (A) --
 that CR's high-l acoustic peaks equal flat-LCDM's. That assumption is EXACTLY the unbuilt part
 (the peaks-match is verified only through P3, l<=800); it may NOT be imported for free, because
-the same radiation-free rate that enlarges r_D also reshapes the high-l driving envelope. Reading
+the same geometric stacking rate that enlarges r_D also reshapes the high-l driving envelope. Reading
 the number below as a "near-refutation" was an over-reach (Daryl caught it): it dressed an open
 assumption as a result. The honest status is: a computed, non-reabsorbable ~8% CR-specific effect
 in the diffusion SCALE, whose OBSERVABLE high-l consequence is entangled with the unbuilt high-l
@@ -18,7 +18,7 @@ The corpus's two stated commitments, taken together, fix CR's predicted high-l T
       radiation-comparable COLLAPSE phase, whose potential evolution is the time-reverse of an
       expanding radiation era, so |Psi~(w=1)| = LCDM's (P15 sec:coherence, cr_collapse_driving.py;
       verified digit-by-digit for P1/P2/P3, camb_reference.py -- i.e. at l<1000).
-  (B) DIFFUSION damping runs on the post-seam radiation-free L1 rate -> r_D is +8.9% larger than
+  (B) DIFFUSION damping runs on the post-seam geometric stacking L1 rate -> r_D is +8.9% larger than
       LCDM's (damping_ratio_clean.py, damping_reabsorption.py), NON-reabsorbable.
 
 Under (A)+(B), CR's TT spectrum is LCDM's peak structure times CR's own (stronger) damping:
@@ -116,7 +116,7 @@ for band in [(1000,2500),(1500,2500),(1000,2000)]:
 
 print("\n"+"="*76)
 print("""VERDICT (the sign, computed at semi-analytic level under the corpus's OWN physics):
-  IF the peaks match LCDM (commitment A) AND the diffusion is radiation-free (commitment B),
+  IF the peaks match LCDM (commitment A) AND the diffusion is geometric stacking (commitment B),
   the +8.9% larger Silk scale suppresses the high-l TT by TENS OF PERCENT (l=2000-2500), a
   many-sigma deficit against Planck -- NOT a mild edge but a SEVERE tension, near-refutation.
   The damping tail's exponential sensitivity to r_D is what converts the 'modest 8%' into a

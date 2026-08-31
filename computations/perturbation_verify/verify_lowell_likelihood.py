@@ -104,6 +104,6 @@ if __name__ == "__main__":
     print("   -- so the eyeball '<3sigma' was right that it is not decisive, but the proper instrument")
     print("   shows the octopole carries MORE weight than the quadrupole, and the data uncertainty")
     print("   (not cosmic variance alone) is what keeps it from a verdict.")
-    print(" - Decisiveness must come from OUTSIDE the low-ell sector: the radiation-free rate")
+    print(" - Decisiveness must come from OUTSIDE the low-ell sector: the geometric stacking rate")
     print("   discriminator and the full spectrum -- the low multipoles are a genuine but blunt test.")
     print("="*74)

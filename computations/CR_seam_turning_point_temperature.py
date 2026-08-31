@@ -29,7 +29,7 @@
 #
 # THE INCOMPATIBILITY (why this is a definite tension, not an open temperature):
 #       A turning point hot enough for BBN (T~1 MeV, z~4e9) would, through the
-#       same radiation-free rate, send the sound-horizon lower limit deep and
+#       same geometric stacking rate, send the sound-horizon lower limit deep and
 #       give ell_A ~ 172, not the observed 301.  Acoustic scale and a
 #       nucleosynthesis-capable beginning demand OPPOSITE turning-point temps.
 #

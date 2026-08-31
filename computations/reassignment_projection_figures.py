@@ -9,7 +9,7 @@ Three panels, all from the corpus's own analytic apparatus:
      (CR_cosmology eq:scalefac; slicing_operator eq:scalefactor).  The seam
      tilde-tau=0 is a branch point, not an r=0 wall.  The collapse excursion
      (tilde-tau<0, leaf-level, radiation-INCLUDED, BBN) and our expanding
-     cosmology (tilde-tau>0, foliation-level, radiation-FREE, recombination)
+     cosmology (tilde-tau>0, foliation-level, GEOMETRIC, recombination)
      are the two legs of the ONE curve.  This renders the P16 sec:scoping
      decision rule directly on the analytic object.
 
@@ -19,7 +19,7 @@ Three panels, all from the corpus's own analytic apparatus:
        - CLOSED slices  X0=const  -> the round S^3 ONTOLOGICAL layer (the existent);
        - FLAT slices  eta(X,B)=const, normal to the past null ruling B
          -> the flat-LCDM OBSERVED shadow the E=1 projection reads.
-     The seam is the past null ruling B (the common asymptote / big bang /
+     The past null ruling B is (the common asymptote / big bang /
      antecedent collapse horizon).  This IS the reassignment: not two
      spacetimes, one geometry re-synchronized from the timelike vertical to
      the null ruling.
@@ -65,7 +65,7 @@ axA.text(-1.55, 2.35, "LEAF-LEVEL\nlocal Friedmann,  radiation-INCLUDED\n"
                       "self-gravitating; BBN window runs here",
          fontsize=7.8, ha="center", va="center", color="#a01c34",
          bbox=dict(boxstyle="round,pad=0.4", fc="#fdeef1", ec="#d1495b", lw=1))
-axA.text(1.5, 2.35, "FOLIATION-LEVEL\nstacking rate,  radiation-FREE\n"
+axA.text(1.5, 2.35, "FOLIATION-LEVEL\nstacking rate,  GEOMETRIC\n"
                     "$H^2=\\frac{\\Lambda c^2}{3}\\coth^2(\\cdots)$  ($\\sinh^{2/3}$)\n"
                     "content read off the clock; recomb, $r_s$, $r_D$ here",
          fontsize=7.8, ha="center", va="center", color="#134a9c",
@@ -120,11 +120,11 @@ for cval in (-0.9, 0.0, 0.9):
 axB.plot([], [], [], color="#b8860b", lw=2.0,
          label="FLAT slicing  $\\eta(X,B){=}$const  →  observed flat-$\\Lambda$CDM shadow")
 
-# the past null ruling B (the seam / common asymptote): a straight generator
+# the past null ruling B (the common asymptote): a straight generator
 sline = np.linspace(-1.75, 1.75, 50)
 axB.plot(np.ones_like(sline), sline, sline, color="black", lw=3.2, zorder=9)
 axB.plot([], [], [], color="black", lw=3.2,
-         label="null ruling $B$  =  the seam the flat slicing synchronizes to")
+         label="null ruling $B$  =  the null ruling the flat slicing synchronizes to")
 
 axB.set_title("(B)  the MAP: ONE hyperboloid, two synchronizations of one congruence\n"
               "the reassignment re-synchronizes the flat slicing to the null ruling $B$",

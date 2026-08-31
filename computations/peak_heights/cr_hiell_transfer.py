@@ -4,7 +4,7 @@ CR HIGH-ELL ACOUSTIC TRANSFER (the deciding computation for the damping-tail sig
 The question the damping-tail verdict hinges on: at high ell, do CR's acoustic PEAK HEIGHTS track
 flat-LCDM's, or not? The corpus claims they do (collapse-phase driving = LCDM's radiation driving by
 time-reversal), but that was verified only through P3. If they match, CR's larger Silk scale makes a
-high-ell deficit; if the radiation-free rate changes the driving envelope, the picture differs.
+high-ell deficit; if the geometric stacking rate changes the driving envelope, the picture differs.
 
 DISCIPLINE (r966, after the near-refutation over-reach): VALIDATION GATE FIRST. The semi-analytic
 driven-oscillator must reproduce CAMB's LCDM peak-height envelope across the WHOLE tail (P1..P6,
@@ -17,7 +17,7 @@ The RADIATION DRIVING is the decay of the gravitational potential after horizon 
 LCDM potential decays for modes entering in radiation domination (the well-known boost). We model
 Phi(k,eta) with the standard large-/small-scale transfer and drive the oscillator, then
   C_l ~ [ (Theta0+Psi)^2 + Doppler^2 ] * Damp(l) * primordial(k) ,  l = k D_M.
-LCDM: potential decays (radiation driving on). CR: on the radiation-free post-seam rate the potential
+LCDM: potential decays (radiation driving on). CR: on the geometric stacking post-seam rate the potential
 is matter-dominated (no decay) -- so CR's driving is whatever the COLLAPSE phase transmitted at the
 seam; we compute BOTH bracketing readings and report the range, not a single verdict.
 """
@@ -97,10 +97,10 @@ magnitude too low. It cannot reproduce flat-LCDM's OWN peak-height tail, so it c
 cannot resolve an ~8% CR modification on top of it.
 
 HONEST CONCLUSION: the damping-tail SIGN is NOT settleable with a semi-analytic model. The
-deciding computation -- CR's high-ell acoustic transfer on the radiation-free background --
+deciding computation -- CR's high-ell acoustic transfer on the geometric stacking background --
 requires a real Boltzmann-level transfer (the coupled photon-baryon-metric hierarchy solved
 mode by mode through recombination), and CAMB cannot supply it because it cannot decouple the
-radiation-free BACKGROUND from radiation-gravitating PERTURBATIONS the way CR's ontology asks.
+geometric stacking BACKGROUND from radiation-gravitating PERTURBATIONS the way CR's ontology asks.
 So this is a genuine BUILD (a CR-specific Boltzmann sector), quite possibly gated on CR's
 perturbation dynamics being more fully specified -- i.e. Bucket B (frontier), NOT a tractable
 shortcut. My earlier 'partially tractable approximate bound' over-stated it, and the

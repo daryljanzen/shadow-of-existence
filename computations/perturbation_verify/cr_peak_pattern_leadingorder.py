@@ -16,7 +16,7 @@ def pattern(a,label,kD=0.098):
 print(f"c_s={cs:.3f}, R={R}. Observed: P2/P1~0.46 P3/P1~0.46 P1/P2~2.2\n")
 print("VALIDATE on LCDM (radiation driving -> a~3):")
 for a in (2.6,3.0,3.4): pattern(a,"  LCDM driven")
-print("\nCR: radiation-free rate -> little driving -> a near adiabatic:")
+print("\nCR: geometric stacking rate -> little driving -> a near adiabatic:")
 a_ad=0.5+R
 for a in (a_ad,1.5,2.0,2.6,3.0):
     lab="  CR undriven adiabatic" if abs(a-a_ad)<1e-9 else "  CR if handover -> a="

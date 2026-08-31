@@ -103,7 +103,7 @@ MPl=1.22091e22;
 def gstar(TMeV): return 10.75 if TMeV>0.1 else 3.36
 def H_std(TMeV):    # standard local Friedmann, radiation-included (== window rate, sec:rate)
     return 1.66*np.sqrt(gstar(TMeV))*(TMeV)**2/MPl * (1/6.582e-22)   # 1/s
-def H_stack(TMeV):  # WRONG: the radiation-free stacking law carried into the window
+def H_stack(TMeV):  # WRONG: the geometric stacking stacking law carried into the window
     z=TMeV/T0-1
     return H0_si*np.sqrt(Om*(1+z)**3)
 TD=0.07

@@ -10,12 +10,12 @@
 #   (1) standard LambdaCDM  -- radiation IN the expansion rate; the sound horizon
 #       r_s integrates to the beginning a->0, so r_s is PINNED (~144.6 Mpc).
 #   (2) CR  -- radiation carries NO term in the rate (H = sinh^{2/3} law, dust+Lambda);
-#       the beginning is the finite-curvature seam (r488), not a->0, so the lower
+#       the beginning is the onset (r488), not a->0, so the lower
 #       integration limit is a finite plasma-onset redshift z_onset: ONE early-universe
 #       parameter rather than a pinned value.
 # The sound speed in BOTH is the ordinary baryon-loaded fluid value
 #       c_s = c / sqrt(3(1+R)),  R = 3 rho_b/4 rho_gamma  (NOT a geometric sqrt3;
-#       that path was tested and closed -- the seam metric does not set c_s).
+#       that path was tested and closed -- the onset metric does not set c_s).
 #
 # SCOPE -- read before using:
 #   * This is the sound-horizon / acoustic-scale leg, which is exactly where the
@@ -42,7 +42,7 @@
 #      (Planck 2018: r_s=144.4 Mpc, ell_A~301). Pipeline trusted.
 #   2. TENSION (LambdaCDM): r_s is pinned by radiation; matching ell_A forces
 #      H0=67.4. Forcing the local H0=73 misses the measured acoustic scale.
-#   3. DISSOLUTION (CR): with the radiation-free rate, ell_A is matched at the
+#   3. DISSOLUTION (CR): on the geometric stacking rate, ell_A is matched at the
 #      LOCAL H0=73 by the single onset parameter z_onset. There is no second H0.
 #      The pinned onset lands at rho_r/rho_m ~ 2 (near twice matter-radiation
 #      equality), stable (1.90-1.99) across H0 -- a robust physical epoch.
@@ -101,8 +101,8 @@ if __name__ == "__main__":
     print("   -> r_s is the same ~144.6 Mpc either way; matching the measured ell_A=301")
     print("      FORCES H0=67.4.  The local H0=73 misses it.  That pinning is the tension.\n")
 
-    # ---- 3. DISSOLUTION : CR, radiation-free rate, z_onset the one parameter ----
-    print("CR  (radiation-free rate; beginning = finite seam; onset z_onset free):")
+    # ---- 3. DISSOLUTION : CR, geometric stacking rate, z_onset the one parameter ----
+    print("CR  (geometric stacking rate; beginning = onset; onset z_onset free):")
     for H0 in (67.4, 73.0):
         _, Hcr = models(H0)
         z_onset = brentq(lambda z: ell_A(Hcr, z) - ELL_A_OBS, 1300, 1e8)

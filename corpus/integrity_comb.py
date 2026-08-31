@@ -114,9 +114,18 @@ def is_record(p):
 
 
 def docs():
+    #: ⛔ ** THE INSTRUMENTS WERE NEVER IN SCOPE -- widened r3681. **  *The r3433 sweep declared
+    #: NAMED-BY-ABSENCE "worked to exhaustion" over `*.md`, `corpus/*.tex` and `capstones/*.md`.
+    #: It never scanned a `.py`, so `computations/` kept the retired phrasing in **seventy** places
+    #: -- including `ACOUSTIC_two_arm.py`, which PRINTED "rate: radiation-FREE" on every run, and
+    #: two figure scripts whose LABELS ship inside the papers.*
+    #:   ⇒ ** A term retired in the prose and left live in the instrument is not retired. ** *The
+    #:   banner is what a node reads first, and it re-taught the wrong framing to every line that
+    #:   ran the file -- which is how it reached this one.*
     out = []
-    for pat in ('*.md', 'corpus/*.tex', 'capstones/*.md'):
-        out += sorted(glob.glob(os.path.join(ROOT, pat)))
+    for pat in ('*.md', 'corpus/*.tex', 'capstones/*.md',
+                'computations/**/*.py', 'corpus/*.py', 'scripts/*.py'):
+        out += sorted(glob.glob(os.path.join(ROOT, pat), recursive=True))
     return [p for p in out if '.git' not in p and not is_record(p)]
 
 

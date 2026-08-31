@@ -15,7 +15,7 @@ THREE THINGS ON ONE SET OF EQUATIONS, so that nothing is a difference of machine
              radiation domination.  ** This must land near the sky's 220.6 or the instrument is not
              an arbiter of anything, and that is the first thing the receipt asserts. **
   ARM=cr     the L1 rate -- radiation is CONTENT, not a source -- started at the onset.  The density
-             fractions are normalised to the STACK while the rate is radiation-free: both at once,
+             fractions are normalised to the STACK while the rate is geometric stacking: both at once,
              which is the assignment the corpus's own decision rule forces.
   NODRIVE=1  ** every coupling to the potential removed, at every site: the 4 Phi' in the photon,
              neutrino and CDM continuity equations AND the k^2 Psi in the photon/baryon and neutrino
@@ -950,7 +950,7 @@ def main():
     print("=" * 78)
     print(f"  ACOUSTIC TWO-ARM INSTRUMENT — ARM={ARM}   DRIVING={'OFF (guard)' if NODRIVE else 'ON'}")
     print("=" * 78)
-    print(f"  rate: {'radiation-INCLUDED' if RAD_IN_RATE else 'radiation-FREE (L1)'}   "
+    print(f"  rate: {'radiation-INCLUDED' if RAD_IN_RATE else 'GEOMETRIC (L1)'}   "
           f"H0={H0}  Om={OM}")
     print(f"  z_start = {Z_START:.4g}   eta_start = {ETA_S:.3f}   eta_rec = {eta_rec:.1f}   "
           f"eta_end = {ETA_END:.0f}")

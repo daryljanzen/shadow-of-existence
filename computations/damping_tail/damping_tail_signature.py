@@ -2,7 +2,7 @@
 A2.3-damping (tractability sweep item 2): quantify the CR-specific damping-tail signature.
 
 CLAIM under test (P15 abstract, held do-not-assert): because CR's *observable* expansion rate is
-radiation-free (H = H0 sqrt(Omega_m (1+z)^3 + Omega_Lambda), no (1+z)^4 term), the recombination-era
+geometric stacking (H = H0 sqrt(Omega_m (1+z)^3 + Omega_Lambda), no (1+z)^4 term), the recombination-era
 Hubble rate is LOWER than LCDM's (which carries Omega_r (1+z)^4, ~ order-unity of matter at z~1090).
 A lower H lengthens BOTH the comoving sound horizon r_s = int c_s/H dz AND the Silk diffusion scale
 r_D ~ 1/k_D with 1/k_D^2 = int (dz/H)/(6(1+R) tau') [R^2/(1+R)+8/9] -- but r_s scales ~ int(1/H) while
@@ -12,7 +12,7 @@ METHOD (clean isolation). The recombination *thermodynamics* is atomic physics (
 the baryon density) -- it does NOT depend on the expansion rate history. So we take x_e(z), the Thomson
 opacity tau'(z)=a n_e sigma_T, R(z), z_* ALL FIXED from a standard CAMB run, and re-integrate r_s and
 1/k_D^2 over TWO different H(z): (i) LCDM's radiation-full H (validation vs CAMB's thetastar/thetad),
-(ii) CR's radiation-free H. The only thing that changes between the two integrals is H(z). The
+(ii) CR's geometric stacking H. The only thing that changes between the two integrals is H(z). The
 convention constant in r_D = C/k_D cancels in the fractional change, so the signature is convention-free.
 """
 import numpy as np
@@ -30,7 +30,7 @@ res = camb.get_background(pars)
 d = res.get_derived_params()
 zstar = d['zstar']
 print("="*74)
-print("A2.3-damping :: CR radiation-free damping-tail signature")
+print("A2.3-damping :: CR geometric stacking damping-tail signature")
 print("="*74)
 print(f"CAMB derived:  z* = {zstar:.2f}   100*theta* = {d['thetastar']:.5f}   "
       f"100*theta_D = {d['thetad']:.5f}")
@@ -42,12 +42,12 @@ og = 2.47282e-5 / h**2                           # Omega_gamma (CMB photons)
 Om = (ombh2 + omch2 + (mnu/93.14)) / h**2        # matter (incl. massive-nu approx)
 Or = og + 3.046*(7./8.)*(4./11.)**(4./3.)*og     # photons + 3.046 massless-nu species
 OL = 1.0 - Om - Or                               # LCDM dark energy (flat)
-OL_CR = 1.0 - Om                                 # CR: radiation-free, flat
+OL_CR = 1.0 - Om                                 # CR: geometric stacking, flat
 
 def H_of_z(z, radiation):
     if radiation:
         return H0*np.sqrt(Om*(1+z)**3 + Or*(1+z)**4 + OL)   # radiation-full (= CAMB)
-    return H0*np.sqrt(Om*(1+z)**3 + OL_CR)                  # radiation-FREE (CR observable rate)
+    return H0*np.sqrt(Om*(1+z)**3 + OL_CR)                  # GEOMETRIC (CR observable rate)
 
 def R_of_z(z):
     return (3.0/4.0) * (ombh2/2.47282e-5) / (1.0 + z)       # 3 rho_b / 4 rho_gamma
@@ -99,7 +99,7 @@ print(f"   r_s = {rs_L:.2f} Mpc  vs CAMB r* = {d['rstar']:.2f} Mpc  ({100*(rs_L-
 print(f"   theta_D/theta_* pipeline calibrates to CAMB {d['thetad']/d['thetastar']:.5f} (C={Ccal:.3f})")
 print("="*74)
 print("""READING (do-not-assert on the VERDICT; the quantification is what is tractable):
- * The radiation-free rate lowers H through recombination (no (1+z)^4 term), lengthening the
+ * The geometric stacking rate lowers H through recombination (no (1+z)^4 term), lengthening the
    photon diffusion length by ~+9% -- the CR-specific damping-tail signature P15 named ~8%,
    now COMPUTED at the recombination epoch where the physics is unambiguous (the integrand
    converges near z*, so no dependence on CR's early pre-seam history).

@@ -101,7 +101,7 @@ axE.plot(sd,env,color=SPH,lw=2.6); axE.plot(sd,-env,color=SPH,lw=2.6); axE.fill_
 axE.axvline(0,color='0.4',lw=0.9,ls=(0,(3,3))); axE.plot(0,0,'o',color='k',ms=6,zorder=6)
 axE.annotate('seam',xy=(0,0),xytext=(-0.9,2.3),fontsize=7.4,ha='center',arrowprops=dict(arrowstyle='->',lw=0.6))
 axE.text(-1.15,-2.75,'INWARD (collapse)\nleaf local rate\n$-$ radiation gravitates',color='#1a5276',fontsize=7.4,ha='center',va='top')
-axE.text(1.2,-2.75,'OUTWARD (expansion)\nfoliation stacking rate\n$-$ radiation-free',color='#922b21',fontsize=7.4,ha='center',va='top')
+axE.text(1.2,-2.75,'OUTWARD (expansion)\nfoliation stacking rate\n$-$ geometric stacking',color='#922b21',fontsize=7.4,ha='center',va='top')
 axE.text(0.06,1.25,'deposits: $\\rho_r/\\rho_m\\approx2$ (acoustic scale)\n$\\eta$ (composition)',fontsize=7.2,ha='left',bbox=dict(boxstyle='round,pad=0.3',fc='#fdf6e3',ec='0.7',lw=0.6))
 axE.annotate('cooling leg = BBN',xy=(0.55,0.55),xytext=(0.8,-0.15),fontsize=7.0,color='#922b21',ha='left',arrowprops=dict(arrowstyle='->',color='#922b21',lw=0.5))
 axE.set_xlabel(r'cosmic proper time $\tilde\tau$',fontsize=8.5); axE.set_ylabel(r'areal radius $\pm r(\tilde\tau)$ ($S^3$ layers)',fontsize=8.5)

@@ -1,18 +1,18 @@
 """
 P15-1 flagship: the damping ratio r_D/r_s at recombination, computed cleanly on
-BOTH the radiation-included (LCDM) rate and the radiation-free (CR observable) rate,
+BOTH the radiation-included (LCDM) rate and the geometric stacking (CR observable) rate,
 using CAMB's exact ionization history x_e(z) and validated against CAMB's own
 theta_star and theta_D.
 
 The whole oscillation lived in a hand-estimated sign/magnitude for this ratio.
 This ends it with one validated number. The GATE: my radiation-included r_D/r_s
-must reproduce CAMB's theta_D/theta_* to a few %.  Only then is the radiation-free
+must reproduce CAMB's theta_D/theta_* to a few %.  Only then is the geometric stacking
 number trustworthy.
 
 ONTOLOGY (corrected — this is NOT "one rate before z_onset, another after"):
   There is ONE ontological geometric rate: the sinh^{2/3} areal-radius expansion of
   the leaf (P15 eq:rate; P3/P8: one analytic curve r(tilde-tau), tilde-tau from
-  -inf to +inf through the seam). It is radiation-free by CR's core commitment
+  -inf to +inf through the seam). It is geometric stacking by CR's core commitment
   (P15 sec:flatlcdm: radiation is inherited content read off the clock, NOT a term
   that sources the rate; the "must gravitate" objection is the named category error).
   The EXPANDING cosmology is the tilde-tau>0 branch; it BEGINS at the finite-curvature
@@ -20,7 +20,7 @@ ONTOLOGY (corrected — this is NOT "one rate before z_onset, another after"):
 
   The "two rates" of the corpus are this ONE geometric rate and its SHADOW (the E=1
   projection onto the reassigned spacetime — distances/redshift as observed). They are
-  NOT radiation-free-vs-radiation-included segments of one expansion history.
+  NOT geometric stacking-vs-radiation-included segments of one expansion history.
 
   The radiation-INCLUDED standard-Friedmann rate is a THIRD, different object: the
   progenitor's own local collapse/bounce dynamics (the nuclear window where BBN runs),
@@ -31,21 +31,21 @@ ONTOLOGY (corrected — this is NOT "one rate before z_onset, another after"):
    - Sound horizon: the acoustic phase is set coherently at the null seam (sec:coherence,
      modes sub-horizon at seam), so it accumulates from the seam to recombination:
      r_s = int_{z_rec}^{z_onset} c_s/H_free dz.  z_onset is an INTEGRATION LIMIT (the
-     clock starts at the seam), NOT a rate switch.  On the ONE radiation-free rate.
+     clock starts at the seam), NOT a rate switch.  On the ONE geometric stacking rate.
    - Diffusion: photon random-walk near recombination (z~1090, deep in the expanding
-     cosmology) accumulates against the leaf's actual (radiation-free) expansion.  Same
-     radiation-free rate.  This is the ONTOLOGICAL geometric rate, not a shadow read.
+     cosmology) accumulates against the leaf's actual (geometric stacking) expansion.  Same
+     geometric stacking rate.  This is the ONTOLOGICAL geometric rate, not a shadow read.
    - Both are then projected to angles by the SAME D_M, so theta_D/theta_* = r_D/r_s
      is projection-independent.
 
-  KEY LOCK: the radiation-free rate at recombination is the SAME commitment that gives
+  KEY LOCK: the geometric stacking rate at recombination is the SAME commitment that gives
   the Hubble resolution (r_s and D_M both ~1/H0 -> theta_* H0-independent).  You cannot
-  take radiation-free for the Hubble resolution and radiation-included for the diffusion
+  take geometric stacking for the Hubble resolution and radiation-included for the diffusion
   — it is one rate.  So the damping shift is the inescapable partner of the Hubble
   resolution: they stand or fall together.
 
 The GATE: my radiation-included r_D/r_s must reproduce CAMB's theta_D/theta_* to a few
-%. Only then is the radiation-free number trustworthy.
+%. Only then is the geometric stacking number trustworthy.
 """
 import numpy as np
 import camb
@@ -80,7 +80,7 @@ OL = 1.0 - Om - Orad
 def H_radincl(z):
     return H0*np.sqrt(Om*(1+z)**3 + Orad*(1+z)**4 + OL)   # Mpc^-1 units after /c below
 def H_radfree(z):
-    # radiation-free sinh^{2/3}: matter + Lambda only, radiation NOT sourcing the rate
+    # geometric stacking sinh^{2/3}: matter + Lambda only, radiation NOT sourcing the rate
     OmF = Om; OLF = 1.0 - OmF
     return H0*np.sqrt(OmF*(1+z)**3 + OLF)
 
@@ -134,10 +134,10 @@ def r_diff(Hfunc):
 def scales(Hfunc):
     return r_sound(Hfunc), r_diff(Hfunc)
 
-# NOTE: an earlier version defined an "onset-split" rate (radiation-free below
+# NOTE: an earlier version defined an "onset-split" rate (geometric stacking below
 # z_onset, radiation-included above).  That was a MISREADING of the ontology — it
 # treats the cosmological expansion as switching character at the seam.  There is
-# no such split: the expanding cosmology runs on the ONE radiation-free geometric
+# no such split: the expanding cosmology runs on the ONE geometric stacking geometric
 # rate throughout (see header).  Removed.
 
 # comoving distance to z_star (the projection D_M) on a given rate
@@ -156,8 +156,8 @@ print(f"  D_M = {DM_i:.1f} Mpc  (CAMB DAstar {dp['DAstar']:.1f})")
 print(f"  100 theta_* = {100*rs_i/DM_i:.4f}  (CAMB {dp['thetastar']:.4f})")
 print(f"  100 theta_D = {100*rD_i/DM_i:.4f}  (CAMB thetad {dp['thetad']:.4f})")
 
-print("\n=== THE ARTIFACT (do NOT use): radiation-free rate, r_s integrated to high z ===")
-print("    (the standard radiation-governed r_s laid on the radiation-free rate — P15")
+print("\n=== THE ARTIFACT (do NOT use): geometric stacking rate, r_s integrated to high z ===")
+print("    (the standard radiation-governed r_s laid on the geometric stacking rate — P15")
 print("     sec:intro names this 'a calculation belonging to neither framework'; shown")
 print("     only to expose it — note the 100 theta_* miss below)")
 rs_f, rD_f = scales(H_radfree)
@@ -169,9 +169,9 @@ print(f"  D_M = {DM_f:.1f} Mpc")
 print(f"  100 theta_* = {100*rs_f/DM_f:.4f}   (MISSES observed 1.0411 badly -> this is the artifact)")
 print(f"  100 theta_D = {100*rD_f/DM_f:.4f}")
 
-print("\n=== CR (faithful): ONE radiation-free geometric rate; r_s clock starts at seam ===")
+print("\n=== CR (faithful): ONE geometric stacking geometric rate; r_s clock starts at seam ===")
 rs_cr = r_sound(H_radfree, z_top=z_onset)   # CR sound horizon (onset cutoff)
-rD_cr = r_diff(H_radfree)                    # CR diffusion (near recomb, radiation-free)
+rD_cr = r_diff(H_radfree)                    # CR diffusion (near recomb, geometric stacking)
 DM_cr = D_M(H_radfree)
 print(f"  r_s (radfree, cut at z_onset={z_onset:.0f}) = {rs_cr:.2f} Mpc   (target ~144, acoustic match)")
 print(f"  r_D (radfree)                        = {rD_cr:.2f} Mpc")
@@ -204,17 +204,17 @@ print(f"  theta_* radfree/radincl (projection-indep test): "
 # pinned too, because that is the acoustic match the whole construction is calibrated on.
 assert abs(rs_i - 144.01) < 0.10, f"radincl r_s = {rs_i}"                    # paper: 144.0
 assert abs(dp['rstar'] - 144.44) < 0.05, f"CAMB rstar = {dp['rstar']}"       # paper: CAMB 144.4
-assert abs(rs_cr - 145.10) < 0.10, f"CR r_s cut at the seam = {rs_cr}"
+assert abs(rs_cr - 145.10) < 0.10, f"CR r_s cut at the onset = {rs_cr}"
 assert abs(rD_cr/rD_i - 1.0897) < 0.002, f"r_D ratio CR/LCDM = {rD_cr/rD_i}"  # paper: ~9% longer
 assert abs((rD_cr/rs_cr)/(rD_i/rs_i) - 1.0816) < 0.002, \
     f"theta_D/theta_* CR/LCDM = {(rD_cr/rs_cr)/(rD_i/rs_i)}"                  # paper: ~1.08
 assert abs(100*rs_cr/DM_cr - 1.0410) < 0.0010, f"CR 100 theta_* = {100*rs_cr/DM_cr}"  # observed 1.0411
 assert abs(rs_f - 245.20) < 0.50, f"the exposed artifact r_s = {rs_f}"       # the spurious 245
 
-# Hubble resolution check: radiation-free rate at FIXED Omega_m (paper's claim:
+# Hubble resolution check: geometric stacking rate at FIXED Omega_m (paper's claim:
 # both r_s and D_M carry the common 1/H0, so theta_* is H0-independent), r_s
 # truncated at z_onset.
-print("\n=== Hubble resolution check (radiation-free, FIXED Omega_m=0.315, r_s cut at z_onset) ===")
+print("\n=== Hubble resolution check (geometric stacking, FIXED Omega_m=0.315, r_s cut at z_onset) ===")
 Om_fix = 0.315
 for H0v in (67.36, 70.0, 73.0):
     Hf = lambda z,H0v=H0v: H0v*np.sqrt(Om_fix*(1+z)**3 + (1-Om_fix))
@@ -224,6 +224,6 @@ for H0v in (67.36, 70.0, 73.0):
     DMv = trapezoid(c_km/Hf(zz), zz)
     print(f"  H0={H0v:5.1f}: r_s={rsv:6.2f}  D_M={DMv:7.1f}  100 theta_*={100*rsv/DMv:.4f}")
     # r2376+c54.160: THE HUBBLE CHECK IS A CLAIM, SO IT IS ASSERTED.  The paper's resolution turns
-    # on theta_* being H0-independent on the radiation-free rate; here it must come back at the
+    # on theta_* being H0-independent on the geometric stacking rate; here it must come back at the
     # observed 1.0411 at 67.36, 70 and 73 alike, while r_s itself moves by ~8% across that range.
     assert abs(100*rsv/DMv - 1.0411) < 0.0010, f"100 theta_* at H0={H0v} = {100*rsv/DMv}"

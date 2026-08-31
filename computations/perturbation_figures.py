@@ -7,7 +7,7 @@ Three figures, each tied to a load-bearing claim, all grounded in the cold
 verification (computations/perturbation_verify/) and the paper's propositions:
 
   fig:seam-merger        -- the SdS metric function f(r) and the Nariai merger:
-                            the cosmogenesis seam is the DEGENERATE double root
+                            the cosmogenesis onset is the DEGENERATE double root
                             (kappa = 0), the geometry the transmission proof rests on
                             [Prop. throat]
   fig:transmission       -- the transmission dichotomy: a non-degenerate horizon's
@@ -89,7 +89,7 @@ def fig_seam_merger():
     ax.set_xlim(0, 1.25)
     ax.set_ylim(-0.7, 0.55)
     ax.legend(loc="lower left")
-    ax.set_title(r"The cosmogenesis seam is the degenerate Nariai double root",
+    ax.set_title(r"The cosmogenesis onset is the degenerate Nariai double root",
                  fontsize=11)
     fig.savefig(os.path.join(OUT, "seam-merger.png"))
     plt.close(fig)

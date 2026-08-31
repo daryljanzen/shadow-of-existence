@@ -323,7 +323,7 @@ print("  ⌗ g_* is taken at 10.75, its value AT the MeV threshold this bound is
 print("    at the bound itself T_eq sits in the keV range where g_* ~ 3.4, which moves")
 print("    T_eq by a factor 1.3 and the threshold not at all.")
 print(f"  ** the vacuum needs                                   rho  = {rho_need:.2e} **")
-print(f"  ** i.e. {rho_bbn/rho_need:.1e} times more radiation-free than the leg's own BBN permits. **")
+print(f"  ** i.e. {rho_bbn/rho_need:.1e} times more geometric stacking than the leg's own BBN permits. **")
 assert rho_need < rho_bbn
 print()
 for s in [

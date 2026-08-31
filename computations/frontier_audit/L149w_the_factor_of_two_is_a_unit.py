@@ -96,7 +96,7 @@ print()
 print("=" * 78)
 print("PART 2 — THE KNOB-FREE HALF, CONFIRMED FROM THE RATE ITSELF")
 print("=" * 78)
-print(f"  the radiation-free rate: H(z) = H_0 sqrt(Om (1+z)^3 + 1 - Om), Om = {Om}")
+print(f"  the geometric stacking rate: H(z) = H_0 sqrt(Om (1+z)^3 + 1 - Om), Om = {Om}")
 print(f"  {'H_0':>8} {'z_onset from the measured angle':>34} {'100 theta_* there':>20}")
 zs = []
 for H0 in (67.4, 70.0, 73.0, 74.0):

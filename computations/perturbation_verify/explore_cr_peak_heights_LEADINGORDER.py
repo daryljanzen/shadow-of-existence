@@ -9,7 +9,7 @@ z_eq = (1.0+z_onset)/2.0 - 1.0            # ρ_r/ρ_m=2 at seam, ∝(1+z) -> =1 
 Rls  = 0.6       # baryon loading R=3ρ_b/4ρ_γ at LS (Ω_b h²≈0.022): standard value
 print(f"CR density-equality z_eq = {z_eq:.0f} (ρ_r=ρ_m); seam z={z_onset:.0f}, ρ_r/ρ_m=2 there")
 print(f"note: this is the standard z_eq≈3400 — CR's radiation DENSITY tracks standard,")
-print(f"      but the radiation-free RATE means no radiation-dominated EXPANSION epoch.\n")
+print(f"      but the geometric stacking RATE means no radiation-dominated EXPANSION epoch.\n")
 
 ell = np.arange(2,1600); k = ell/D_C
 
@@ -27,7 +27,7 @@ D = np.exp(-(k/kD)**2)
 keq = 0.073 * (z_eq/3400.0)            # ~standard k_eq ≈ 0.073/Mpc for z_eq≈3400
 def driving(kk, strength):
     # strength=1 : full ΛCDM-like driving (radiation gravitates normally at k>>k_eq)
-    # strength=0 : NO driving (matter-like potential, Ψ const, the radiation-free-rate extreme)
+    # strength=0 : NO driving (matter-like potential, Ψ const, the geometric stacking-rate extreme)
     boost_full = 1.0 + 4.0*(1.0 - 1.0/(1.0+(kk/keq)**2))   # ->1 at k<<keq, ->5 at k>>keq (HS ~5x)
     return 1.0 + strength*(boost_full-1.0)
 
@@ -57,7 +57,7 @@ def peak_heights(strength):
     return heights
 
 for strength,label in [(1.0,"FULL driving (radiation gravitates normally)"),
-                       (0.0,"NO driving (matter-like potential — radiation-free-rate extreme)")]:
+                       (0.0,"NO driving (matter-like potential — geometric stacking-rate extreme)")]:
     h = peak_heights(strength)
     print(f"{label}")
     print(f"   peak heights / SW plateau:  P1={h[0]:.1f}  P2={h[1]:.1f}  P3={h[2]:.1f}   (P1/P2={h[0]/h[1]:.2f})")

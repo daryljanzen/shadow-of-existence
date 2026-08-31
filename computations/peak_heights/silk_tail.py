@@ -3,7 +3,7 @@ Size the CR-specific Silk-damping deviation. Diffusion scale r_D = 1/k_D from
   1/k_D^2 = INT deta /(6(1+R) a n_e sigT) [16/15 + R^2/(1+R)]
 computed with the SAME recombination x_e(z) (from CAMB) but two expansion rates:
   LCDM  H = H0 sqrt(Om(1+z)^3 + OL + Or(1+z)^4)   (radiation in rate)
-  CR    H = H0 sqrt(Om(1+z)^3 + OL)               (radiation-free, every epoch)
+  CR    H = H0 sqrt(Om(1+z)^3 + OL)               (geometric stacking, every epoch)
 Validate the LCDM integral against CAMB's own theta_D, then read the CR/LCDM damping difference.
 """
 import numpy as np, camb

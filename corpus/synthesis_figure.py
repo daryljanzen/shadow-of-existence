@@ -142,7 +142,7 @@ axF.annotate('the lift\n($\\mathrm{Re}\\,\\tilde\\tau{=}0$; unfurled in (F))',xy
 axF.annotate('',xy=(_tSm,2.35),xytext=(_tSp,2.35),arrowprops=dict(arrowstyle='<->',color='0.45',lw=0.9))
 axF.text((_tSm+_tSp)/2,2.45,'the lap',fontsize=AN-2,color='0.3',ha='center')
 axF.text(-1.15,-2.35,'INWARD (collapse)\nleaf local rate\n$-$ radiation gravitates',color='0.25',fontsize=AN,ha='center',va='top')
-axF.text(1.2,-2.35,'OUTWARD (expansion)\nfoliation stacking rate\n$-$ radiation-free',color='0.25',fontsize=AN,ha='center',va='top')
+axF.text(1.2,-2.35,'OUTWARD (expansion)\nfoliation stacking rate\n(geometric: $\\Lambda$ + offset)',color='0.25',fontsize=AN,ha='center',va='top')
 axF.text(-0.4,1.32,'deposits: $\\rho_r/\\rho_m\\approx2$ (acoustic scale)\n$\\eta$ (composition)',fontsize=AN,ha='left',bbox=dict(boxstyle='round,pad=0.35',fc='#f4f4f4',ec='0.7',lw=0.7))
 axF.annotate('cooling leg = BBN',xy=(0.55,0.55),xytext=(0.85,-0.15),fontsize=AN,color='0.3',ha='left',arrowprops=dict(arrowstyle='->',color='0.4',lw=0.7))
 axF.set_xlabel(r'$\mathrm{Re}\,\tilde\tau/\alpha$',fontsize=AX); axF.set_ylabel(r'$r/\alpha$',fontsize=AX)

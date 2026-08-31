@@ -1,7 +1,7 @@
-"""Panel D - the layered handoff at the seam (P15-16 payload).
+"""Panel D - the layered handoff at the onset (P15-16 payload).
 Areal radius |r(tau)| as a waist pinching at the seam; the fundamental congruence as worldlines.
  INWARD (tau<0, collapse): the LEAF's local rate governs -> radiation gravitates.
- OUTWARD (tau>0, expansion): the FOLIATION stacking rate governs -> radiation-free sinh^{2/3}.
+ OUTWARD (tau>0, expansion): the FOLIATION stacking rate governs -> geometric stacking sinh^{2/3}.
  At the seam the handover deposits the two inherited data: rho_r/rho_m ~ 2 (acoustic scale) and eta (composition);
  infall heats ABOVE the deuterium bottleneck, the cooling expansion leg is the standard BBN run."""
 import numpy as np, matplotlib
@@ -23,7 +23,7 @@ ax.annotate('seam ($\\tilde\\tau=0$): Nariai\nfinite-curvature branch point',xy=
             fontsize=8.2,ha='center',arrowprops=dict(arrowstyle='->',lw=0.7))
 # regime labels
 ax.text(-1.15,-2.7,'INWARD (collapse)\nleaf\'s local rate governs\n$-$ radiation gravitates',color='#1a5276',fontsize=8.4,ha='center',va='top')
-ax.text(1.2,-2.7,'OUTWARD (expansion)\nfoliation stacking rate governs\n$-$ radiation-free  $\\sinh^{2/3}$',color='#922b21',fontsize=8.4,ha='center',va='top')
+ax.text(1.2,-2.7,'OUTWARD (expansion)\nfoliation stacking rate governs\n$-$ geometric stacking  $\\sinh^{2/3}$',color='#922b21',fontsize=8.4,ha='center',va='top')
 # deposited data at seam
 ax.text(0.08,1.15,'handover deposits:\n$\\rho_r/\\rho_m\\approx2$  (sets acoustic scale)\n$\\eta$  (sets composition)',fontsize=8.0,ha='left',
         bbox=dict(boxstyle='round,pad=0.35',fc='#fdf6e3',ec='0.7',lw=0.6))

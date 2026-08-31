@@ -4,9 +4,9 @@ means a mistake in MY computation, not a refutation of a construction with CR's 
 broad correspondence. Hunt the wire in the load-bearing number: theta_D/theta_* = r_D/r_s.
 
 The asymmetry I glossed: r_D (diffusion) is dominated at recombination (z~z*); r_s (sound horizon)
-samples z* all the way back. The radiation-free rate lowers H MOST at high z (rho_r/rho_m grows
-with z: ~0.3 at z*, =2 at the seam z_onset). So radiation-free enhances r_s MORE than r_D --
-UNLESS r_s is cut at the seam, which removes exactly the high-z region where the enhancement is
+samples z* all the way back. The geometric stacking rate lowers H MOST at high z (rho_r/rho_m grows
+with z: ~0.3 at z*, =2 at the onset z_onset). So geometric stacking enhances r_s MORE than r_D --
+UNLESS r_s is cut at the onset, which removes exactly the high-z region where the enhancement is
 biggest. Whether that cut is legitimate is the whole question. Compute EVERY piece transparently.
 """
 import numpy as np, camb
@@ -43,8 +43,8 @@ print(f"{'':22s}{'r_s':>10s}{'r_D':>10s}{'r_D/r_s':>12s}")
 rows=[]
 for label, radfree, ztop in [
     ("LCDM radfull -> inf", False, 1e6),
-    ("LCDM radfull -> seam", False, z_onset),
-    ("CR radfree -> seam", True, z_onset),
+    ("LCDM radfull -> onset", False, z_onset),
+    ("CR radfree -> onset", True, z_onset),
     ("CR radfree -> inf*", True, 1e6),   # * unphysical (no radiation cap) -- shown to expose the tail
 ]:
     rs=r_s(radfree,ztop); rd=r_D(radfree,ztop); rows.append((label,rs,rd,rd/rs))
@@ -57,7 +57,7 @@ lcdm=rows[0]; lcdm_seam=rows[1]; cr_seam=rows[2]
 print(f" theta_D/theta_* :  LCDM(radfull,inf) = {lcdm[3]:.5f}")
 print(f"                    CR  (radfree,seam) = {cr_seam[3]:.5f}   "
       f"({100*(cr_seam[3]-lcdm[3])/lcdm[3]:+.1f}% vs LCDM-inf)  <- the corpus's +8%")
-print(f"   BUT the FAIR (same-limit) comparison, both cut at the seam:")
+print(f"   BUT the FAIR (same-limit) comparison, both cut at the onset:")
 print(f"                    LCDM(radfull,seam) = {lcdm_seam[3]:.5f}")
 print(f"                    CR  (radfree,seam) = {cr_seam[3]:.5f}   "
       f"({100*(cr_seam[3]-lcdm_seam[3])/lcdm_seam[3]:+.1f}% vs LCDM-seam)")
@@ -65,7 +65,7 @@ print(f"\n r_s enhancement CR/LCDM at the seam limit: "
       f"{cr_seam[1]/lcdm_seam[1]:.3f}   r_D enhancement: {cr_seam[2]/lcdm_seam[2]:.3f}")
 print("""
 READING: if r_s and r_D are computed on the SAME footing (same rate difference, same limits),
-the radiation-free rate enhances BOTH -- and the question is whether it enhances r_s and r_D by
+the geometric stacking rate enhances BOTH -- and the question is whether it enhances r_s and r_D by
 DIFFERENT factors (a real theta_D/theta_* shift) or nearly the SAME factor (no shift, the +8%
 being an artifact of comparing CR's seam-cut r_s against LCDM's to-infinity r_s). The numbers
 above decide it. If r_D/r_s(CR,seam) ~ r_D/r_s(LCDM,seam), the tail 'tension' is a crossed wire:
