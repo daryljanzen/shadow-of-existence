@@ -65,6 +65,51 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⛭⛭ r3725 — ONE DEFECT, TWO SYMPTOMS: THE COMB'S PHASE DOES NOT ALTERNATE, AND THAT IS MISSING $\Psi$
+
+***With the scale settled at `r3723`, the peaks are the whole problem. This turn reads them rather than
+re-fitting them.***
+
+### ⌗ FIRST, A MEASUREMENT THAT RULES OUT THE RULER
+
+| $z_{\rm start}$ | $\rs^{\rm stack}$ | $\ell_A$ | peaks |
+|---|---|---|---|
+| 6,761 | 135.46 | **301.6** | 204 / 508 / 804 |
+| 12,000 | 160.48 | **254.6** | 204 / 508 / 780 |
+| 25,000 | 184.02 | **222.0** | 212 / 508 / 772 |
+
+⇒ ***$\ell_A$ swings by $36\%$ and the comb barely moves. The peak positions are NOT following the ruler***
+— *so no choice of $\rs$ or start redshift is going to place them, and the residual is dynamical.*
+
+### ⛭ THE PHASE STRUCTURE, WHICH NAMES THE DEFECT
+
+| $m$ | CR $\ell_m$ | $\phi_{\rm CR}$ | sky $\ell_m$ | $\phi_{\rm sky}$ |
+|---|---|---|---|---|
+| 1 | 204 | 0.324 | 220.6 | **0.269** |
+| 2 | 508 | 0.316 | 538.1 | **0.217** |
+| 3 | 804 | 0.334 | 809.8 | **0.317** |
+
+⇒ ***CR's phase is FLAT. The sky's ALTERNATES — odd, even, odd.*** *That alternation is **baryon
+loading**: the oscillation is offset from zero, so compression and rarefaction peaks shift differently.*
+
+### ⛭ AND THE EQUATION SAYS WHICH INGREDIENT IS MISSING
+
+*From the instrument's own velocity equation, which is **correct** — $\Psi$ enters undivided while the
+pressure carries $1/(1+R)$, standard tight coupling:*
+$$\Theta_0''+\frac{\mathcal{H}R}{1+R}\Theta_0'+k^{2}c_s^{2}\Theta_0=-\tfrac13k^{2}\Psi
+\qquad\Longrightarrow\qquad \Theta_0\big|_{\rm eq}=-(1+R)\Psi$$
+
+⇒ ***The offset is proportional to $R\Psi$, and it needs BOTH. $R$ is right in the code. $\Psi$ is not
+there — a mode starting ALREADY SUB-HORIZON begins after $\Psi$ has decayed, so the offset is absent and
+the comb has no odd/even structure.***
+
+⛭ ***SAME ROOT CAUSE AS THE DRIVING DEFICIT.*** *`r3683` measured the driving tracking the start redshift;
+this is that same fact read in the peak **phases** instead of in $Q$. **One defect, two symptoms — and the
+height ratios go with it**, which is why $P_1/P_3=3.90$ against the sky's $2.28$ while $P_1/P_2=2.238$
+against $2.217$ is nearly perfect: the odd/even structure is exactly what is absent.*
+
+---
+
 ## ⛭⛭⛭ r3723 — **THE ACOUSTIC SCALE, EACH QUANTITY IN ITS OWN METRIC: $1.8\sigma$, AND $H_0$-FREE**
 
 ***The calculation PO-13 had never run. Nothing mixed, nothing fitted beyond the onset already in the
