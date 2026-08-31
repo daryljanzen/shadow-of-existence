@@ -65,6 +65,43 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⛭ r3699 — THE BRANCH POINT CARRIES A SCALE. THE FRONT SEAM DOES NOT. THEY ARE NOT THE SAME OBJECT.
+
+***Run on 60's `N8` test, which is the instrument this question needed and which arrived in the six-field
+merge.*** *`N8` gives "carries a scale" an operational form: **a kernel carries one exactly when the tilt
+you fit to it depends on which band you fit.** Controls reproduced here before use.*
+
+| kernel | band tilts | spread |
+|---|---|---|
+| $p{=}1$ non-degenerate, $\kappa=0.2$ | $[-1.01,-1.09,-2.21,-18.0]$ | 17.0 |
+| $p{=}1$, $\kappa=2.0$ | $[-1.00,-1.01,-1.09,-2.21]$ | 1.21 |
+| **$p{=}2$ degenerate — THE FRONT SEAM** | $[-1,-1,-1,-1]$ | **$3\times10^{-16}$** |
+| **the BRANCH POINT**, $e^{-Ck^{1/3}}$, $C=1$ | $[-0.050,-0.107,-0.231,-0.497]$ | **0.45** |
+| the same with a cutoff inserted by hand | $[-0.050,-0.110,-0.483,-2.24]$ | 2.20 |
+
+⇒ ***The branch-point spread grows with $C$ — $0.22$, $0.45$, $1.34$ — so it tracks the kernel's own scale
+exactly as `N8`'s $\kappa$-sweep does for $p{=}1$. **It is not scale-free.***
+
+⌗ *The exponent is `I9`'s (`r3622`): at the branch point $\omega\propto s^{-2/3}$ on `P10`'s own
+$\lvert r\rvert\propto s^{2/3}$, so the action integral converges as $S^{1/3}$ — **a third structure,
+neither a simple nor a double root of $f$.***
+
+### ⛔ AND THIS SCOPES A SENTENCE IN `P15`
+
+*`P15` reads: "the leg multiplies the spectrum by a constant and the branch point imprints nothing:
+**neither carries a scale**, and a spectrum can only be tilted by something that does."* ⌗ *Its proof,
+`prop:transmission`, is a dichotomy between a **simple** and a **double root of $f$** — both at $f=0$, and
+the degenerate one is the **front seam** (`r3693`). **The branch point sits at $r=0$ where $f$ diverges and
+is not a Killing horizon at all, so the proposition does not reach it.***
+
+⚠ ***WHAT IS MEASURED AND WHAT IS NOT.*** *Measured: the functional form $e^{-Ck^{1/3}}$ fails `N8`'s
+scale-freedom test decisively. **NOT established** — (i) that this kernel is what acts on the ACOUSTIC
+spectrum, since `I9` measured $\omega(s)$ for `P10`'s transverse-traceless tower and not for the
+photon-baryon modes; (ii) the value of $C$ in physical units; (iii) that the scale it sets is anywhere near
+$z\simeq58{,}000$. ***Each is a separate computation and none is done here.***
+
+---
+
 ## ⛭⛭⛭ r3691 — THE ACOUSTIC ROOT AND THE GROWTH NORMALISATION ARE THE SAME MEMBER OF ONE FAMILY
 
 ***Two calculations sharing no input beyond the flat form land on the same $\Omega_m$.***
