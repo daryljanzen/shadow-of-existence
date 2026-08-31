@@ -65,6 +65,47 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⛔ r3713 — THE COINCIDENCE MEASURED AGAINST THE RIGHT YARDSTICK: IT IS SHARP, AND THE RYDBERG MISSES IT
+
+***Three candidate mechanisms tested and none lands. Then the test I should have run first.***
+
+| candidate | result |
+|---|---|
+| **atom formation** (`r3711`) | Saha shows no feature; $1.4\times10^{9}$ ionising photons per baryon |
+| **Thomson coupling** | $\Gamma_T/H$ runs $3.6\times10^{4}\to1.0\times10^{4}\to3.3\times10^{3}$ — **smooth through the locus** |
+| **Massey adiabaticity** | the right KIND of object — $\xi=\alpha c/2v$, sudden above, adiabatic below — but its boundary is $v=\alpha c/2$, $kT=B/4$, **$z=14{,}474$**, a factor 4 away in temperature |
+
+### ⛔ AND THE SHARPNESS TEST, WHICH SETTLES HOW MUCH THE FIT WAS EVER WORTH
+
+| $z_{\rm start}$ | $kT$ | $100\theta_*$ | miss |
+|---|---|---|---|
+| 40,000 | 9.39 | 1.02435 | $-1.61\%$ |
+| **57,898 — the Rydberg** | **13.60** | **1.03959** | **$-0.144\%$** |
+| 80,000 | 18.79 | 1.04912 | $+0.77\%$ |
+| 400,000 | 93.95 | 1.06943 | $+2.72\%$ |
+
+***The window inside Planck's $\pm0.00030$ is $z=60{,}001$ to $61{,}106$ — a factor $1.02$ wide. The
+Rydberg locus is NOT in it.***
+
+⛔ ***So the $0.144\%$ I have been calling remarkable is $5\sigma$ against a $0.029\%$ measurement.*** *I
+quoted it against no yardstick for four revisions. **Against $a\to0$'s $+3.22\%$ it is twenty-two times
+better and still excluded.***
+
+### ⌗ WHAT SURVIVES, AND IT IS THE STRUCTURAL HALF RATHER THAN THE NUMERICAL ONE
+
+⛭ *From $a\to0$ there is **no root in $\Omega_m$ anywhere** in $0.25$–$0.75$; from the Rydberg there is one,
+at $\Omega_m=0.3158$ — **inside $1\sigma$ of Planck's $0.315\pm0.007$.*** ⇒ ***That is the real content and
+it is unaffected by the sharpness test: an early cut-off makes the acoustic scale REACHABLE at a
+concordance matter density, and no cut-off does not.*** *The particular locus is then a $\sim2\%$ question
+in $z$, not a $\sim0.1\%$ one, and the Rydberg is $3.5\%$ low.*
+
+⚠ ***AND THE HONEST READING OF THE WHOLE THREAD:*** *what the sky requires is a start in a narrow window
+near $z\simeq60{,}500$. **The Rydberg is the only unfitted candidate that has come near it, and it is
+near, not on.** Whether that is a $3.5\%$ correction waiting to be found or a coincidence at the level a
+$2\%$-wide window makes cheap is **not settled by anything computed here**.*
+
+---
+
 ## ⛔⛭ r3711 — THE ATOM-FORMATION READING OF THE RYDBERG LOCUS IS TESTED AND FAILS. THE LOCUS IS A VELOCITY.
 
 ***Daryl proposed the mechanism: when the temperature drops below the hydrogen binding energy, atoms can
