@@ -1,7 +1,7 @@
 ---
 name: numerical-analysis-ledger
 kind: FIELD-BAKE
-current: r3616
+current: r3712
 job: The numerical-analysis field-bake ledger — what bit, what bounced, and where the boundary is. The one field whose target was the receipts rather than the prose.
 sources: [chat]
 ---
@@ -164,3 +164,60 @@ larger instrument than a field bake should ship. Recorded with the shape of the 
 receipts in the whole corpus carrying a convergence check. **The term-side prose verdict and the population
 read disagreed, and the population read was the right one.** *That is an argument for this field's target
 being the receipts, made by the estimate rather than by me.*
+
+---
+---
+
+# ⛭⛭⛭ THE v2 PASS — r3712, AND IT OPENS ON THE ITEM THE v1 PASS DECLARED TOO BIG TO SHIP
+
+> ⛭ ***THE v1 PASS OF THIS FIELD IS THE STRONGEST OF THE SIX AND ITS REACH TABLE IS NOT WHERE THIS
+> ONE STARTS.*** *It read the receipts as a **population** — every ODE call located, every
+> float-equality site read individually, four whole receipts re-run under a patched solver — which
+> is the method §0 asks for, applied to the right layer, before the order said to.*
+>
+> ⛔ ***SO THE v2 PASS STARTS AT `Q5`, WHICH IS OPEN AND WHICH THE v1 CLOSE DECLINED WITH A REASON:***
+> *"688 sites in 210 files is beyond what this pass can read, and a sampling verdict would be a
+> census that is not one … **that needs a mutation harness, not a reading**, and building one is a
+> larger instrument than a field bake should ship."*
+> ⇒ ***THE ITEM IS SPECIFIED — "mutate the asserted quantity by the tolerance and require the
+> assertion to fail" — AND THE ONLY REASON GIVEN FOR NOT DOING IT IS SIZE.*** *That is not a
+> boundary; it is a cost. **The v2 pass pays it.**  ⌗ And the stake is exact: 688 assertions none of
+> which has ever been shown able to fail is the receipt layer's own `check(..., True, ...)`.*
+>
+> ⌗ *Nothing below is struck. `Q1`–`Q4` stand.*
+
+## ⌗ PASS A — THE LOCATOR. **Written from the seventeen abstracts and section lists, before any
+paper or receipt was opened for this pass.** *For this field a row must name where a **computed
+number** lives, because the question is not whether the field's words are present but whether the
+numbers know what they are worth.*
+
+| # | paper | sections named | ⌗ **the prediction — falsifiable** |
+|---|---|---|---|
+| 1 | **`P05`** | `sec:deck` (`prop:monodromy`, `rem:monodromy-group`) | ⛭⛭ ***A CONTINUATION THAT STEPS TOO COARSELY MISLABELS SHEETS, AND THIS ONE IS THE COMPUTATION THE WHOLE $S_3$ RESTS ON.*** *`prop:monodromy` says "(Verified numerically by continuation in the complex $2M$-plane)" and `rem:monodromy-group` says outright that the generation claim **"is a computation"** whose alternative was real — had the same pair collided at both points, the group would be $\mathbb{Z}_2$. **Prediction: the continuation's STEP SIZE and its LOOP RADIUS are not swept, so the two transpositions are asserted at one discretisation and never shown stable under refinement.*** ⛔ *Wrong if a refinement or radius sweep is in the receipt* |
+| 2 | **`P15`** | `sec:instrument` · `sec:diffusion-scale` · `sec:residual-decomposition` | *`Q2` landed the margin. **Prediction: the remaining exposure is that the validation is a POINT CHECK** — one reference code, one parameter point — so what is established is agreement THERE and not a convergence or a parameter-range statement.* ⛔ *Wrong if the comparison sweeps cosmological parameters* |
+| 3 | **`P16`** | `sec:network` | *`bbn_network.py` is one of only four receipts in the corpus carrying convergence language. **Prediction: the convergence check is on the INTEGRATION and not on the NETWORK TRUNCATION** — how many species and reactions are carried — so the controlled error is the solver's and the uncontrolled one is the model's.* ⛔ *Wrong if species count is swept* |
+| 4 | **`P03`** | `sec:tour` · `rem:dimension` | ⛭ ***THIS ROW IS THE HARNESS'S OWN CONTROL, AND IT IS WRITTEN BEFORE THE HARNESS.*** *`rem:dimension` reports the dial positions and the quartic's roots "agreeing to machine precision". **Prediction: these are EXACT identities evaluated in floating point, so their assertions are correctly insensitive** — mutating them by many tolerances still passes, and a mutation harness that calls that a defect is measuring its own arithmetic.* ⛔ *If `Q5` finds these flagged, the harness is wrong and not the receipt* |
+| 5 | **`P02`** | `sec:ring` · `sec:kretschmann` | *`P02_ring_lambda_limit` takes a $\Lambda\to0$ limit. **Prediction: it samples a decreasing sequence and asserts the endpoint, with no Richardson or order check** — so the limit is exhibited rather than measured* |
+| 6 | **`P11`** | `sec:gowdy` · `sec:nonlinear` | *A Cauchy evolution is where step size bites. **Prediction: stated `rtol`/`atol` (as `Q1` found for all 24) and NO grid-refinement check on the spatial discretisation*** |
+| 7 | **`P10`** | `sec:lock` | *The paper says the ultraviolet definition of the tower sums is the open frontier. **Prediction: any numerical tower sum uses a mode cutoff whose dependence is not swept**, which is the honest state of an open frontier and not a defect — the row exists to check that it is SAID* |
+| 8 | **`P14`** | `sec:chirality` · `sec:count` | *The zero-mode is "an exact solution, not an assertion". **Prediction: its receipts nevertheless carry `abs(...) < tol` on quantities that are exact** — the harmless end of `Q5`, and the second control the harness needs* |
+| 9 | **`P04`** | `sec:floor` | *The $10^{-3}$ against $3\times10^{-6}$ is called a **floor**, and every choice biases it downward. **Prediction: its assertion is a deliberately WIDE inequality** — insensitive by design and correct practice. **A harness that cannot tell this from a loose tolerance is not measuring anything*** |
+| 10 | **`p0`** | `sec:ledger` · `sec:power` | *The constant ledger is powers of $1/\alpha^{2}$. **Prediction: exact/symbolic, no tolerance**, and `P17_no_second_scale_on_either_face` is an algebraic statement rather than a numerical one* |
+| 11 | **`P08`** | `sec:kernel` · `sec:bend` | *The vacuum kernel is a first-order linear ODE solved in closed form. **Prediction: symbolic, tolerance-free**, and any float there is a display* |
+| 12 | **`P12`** | `sec:bracket` · `sec:weyl-a3` | *`GROUP_full_order48` and `EMBEDDING_is_Td_equals_WA3` are finite-group computations. **Prediction: exact integer arithmetic throughout, zero tolerances** — and if a tolerance appears in a finite-group receipt it is a finding* |
+| 13 | **`P13`** | `sec:cascade` · `sec:a2` | *Rank counts and subalgebra inclusions. **Prediction: exact integers**, and the one place a float could enter — a numerical check that $\su(3)\not\subset\so(5,1)$ — would be the wrong instrument for the claim* |
+| 14 | **`P09`** | `sec:pd` · `sec:surj` | *Separability and a surjectivity argument. **Prediction: symbolic verification, and the tolerances present are on the residuals of symbolic substitutions** — i.e. exactly the correctly-insensitive class again* |
+| 15 | **`P01`** | `sec:3` · `sec:5` | *Predict NO computation of this field's kind. Test named: **whether the asymptotic-alignment claim is supported by a limit taken numerically**, in which case its rate matters* |
+| 16 | **`P06`** | `sec:engine` · `sec:reflexive` | ⛔ ***AND THIS ROW GETS THE HARDEST READ, BY RULE AND BY PRECEDENT.*** *§2, and `P06` was the one REFUTED prediction of the integrable-systems seventeen. **Predict: no number of this field's kind anywhere.** The test is specific: **does any historiographic claim carry a quantity — a count of episodes, a base rate, a reliability estimate — that a computation would have to support?** The paper argues against reliability estimates built from one's own successes, so a number there would be self-undercutting and worth finding* |
+| 17 | **`P07`** | `sec:frontiers` · `sec:applications-synthesis` | *A synthesis quotes its companions' numbers. **Prediction: every number in `P07` traces to a companion's receipt, and the test is whether any does not*** |
+
+### ⌗ AND THE ROWS THAT ARE NOT PAPERS — **the receipts population, which is this field's real target**
+
+| # | target | ⌗ **the prediction — falsifiable** |
+|---|---|---|
+| **R1** | ***`Q5`: the 688 `abs(...) < tol` assertions*** | ⛭⛭ ***PREDICTION: A MEASURABLE FRACTION ARE INSENSITIVE — the assertion still passes when the asserted quantity is moved by several times its own tolerance — and the insensitive ones split into TWO KINDS that must not be confused: **EXACT** comparisons (rows 4, 8, 9, 12, 14 above: correctly insensitive, and flagging them is the harness's error) and **LOOSE** ones (a tolerance far wider than the quantity's actual accuracy, which is the real gap).*** ⛔ *Wrong if essentially every assertion is sensitive, in which case `Q5` closes as a CONFIRMATION exactly as `Q1` did — **and that is the outcome this pass should most want, not least*** |
+| **R2** | ***the harness itself*** | *A mutation harness is an instrument and instruments are where this line's errors live. **Prediction: it will need two controls before any verdict it prints can be believed — a deliberately loosened assertion it MUST flag, and a deliberately exact one it MUST NOT.*** ⛔ *If it cannot be made to do both, its output is a census that is not one and the honest close is to say so and leave `Q5` open* |
+
+⌗ ***THE LOCATOR PREDICTS: one paper carrying a genuine open numerical question (`P05`), two
+carrying stated-but-unswept approximations (`P15`, `P16`), and fourteen empty on the prose side —
+with the field's actual content in `R1`.*** *Scored at the close either way.*
