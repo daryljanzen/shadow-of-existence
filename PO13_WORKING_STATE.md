@@ -30,6 +30,50 @@ of the seam treatment, of the transfer, or of the geometry the transfer runs on?
 
 ---
 
+## ⛭⛭⛭ r3689 — THE SOUND HORIZON STARTING AT THE HYDROGEN IONISATION THRESHOLD
+
+***`r3687` measured that from $a\to0$ the acoustic scale has NO ROOT in $\Omega_m$ anywhere in $0.25$–$0.75$.
+Starting the integral at $kT_\gamma=13.5984$ eV — the Rydberg — it has one, at the measured $H_0$.***
+
+| where the sound horizon begins | $z$ | $100\,\theta_*$ at $\Omega_m=0.3066$ | miss |
+|---|---|---|---|
+| $a\to0$ | ∞ | 1.0746 | **$+3.22\%$** |
+| **$kT_\gamma=13.5984$ eV, the Rydberg** | **57,898** | **1.0372** | **$-0.37\%$** |
+
+**And the root, which did not exist before:**
+
+| $H_0$ | $\Omega_m$ meeting $100\,\theta_*=1.04109$ | $\Omega_m h^2$ |
+|---|---|---|
+| 70.0 | 0.3665 | 0.1796 |
+| **73.0** — the measured value | **0.3158** | 0.1683 |
+| 76.0 | 0.2738 | 0.1582 |
+
+⇒ ***At $H_0=73$ the sky's acoustic scale is met at $\Omega_m=0.3158$, against Planck's $0.3150$.***
+
+### ⌗ WHY THIS IS NOT A FITTED START
+
+***The locus is fixed by atomic physics and the measured CMB temperature and carries NO cosmological
+parameter***: $1+z = 13.5984\,\mathrm{eV}/(k_B\times2.7255\,\mathrm{K})$. *It does not move when $H_0$,
+$\Omega_m$, $\omega_b$ or $N_{\rm eff}$ move. **It is the one candidate scale in this problem that is not
+borrowed from $\Lambda$CDM and not tuned.***
+
+⌗ *And the sensitivity is diagnostic rather than decorative: the Lyman-$\alpha$ threshold ($10.199$ eV,
+$z=43{,}424$) gives $1.0282$ and the $n{=}2$ level ($3.400$ eV) gives $0.9419$. **The Rydberg is picked out;
+its neighbours are not.***
+
+⚠ ***WHAT IS NOT YET EXPLAINED, and it is the whole of what remains.*** *Why the photon-baryon plasma's
+acoustic era should begin where the photon bath can no longer keep ANY hydrogen bound. **A start at that
+threshold is stated here as a measured fit to the sky and NOT as a derivation** — the construction has not
+yet been asked to produce it. ⌗ *That question is now sharp and local: `P15`'s Euclidean transmission is the
+one object in the construction carrying an early scale, and what redshift it corresponds to has never been
+computed.*
+
+⌗ *And with CR's own $z_{\rm rec}=1093.6$ (Hu--Sugiyama at $\Omega_m h^2=0.1634$) rather than Planck's
+hardcoded $1089.9$, the miss at $\Omega_m=0.3066$ widens to $-0.373\%$. **The better ingredient moves it
+away, which is recorded rather than quietly dropped.***
+
+---
+
 ## ⛔⛭ r3687 — THE ACOUSTIC SCALE AT $H_0=73$ IS CLOSED TO EVERY CONTENT PARAMETER
 
 ***With the driving solved (`r3685`), the whole residual is one number, and this pass measures every lever
