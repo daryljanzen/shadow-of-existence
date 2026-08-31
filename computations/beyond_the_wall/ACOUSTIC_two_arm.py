@@ -316,7 +316,22 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
     e_end = ETA_END if e_end is None else float(e_end)
     y0 = np.zeros((nk, NV))
 
-    if ARM == 'lcdm':
+    # ** CRIC=branchpoint -- THE DATUM AT A LOCUS THE CONSTRUCTION OWNS, r3685. **
+    # *P15 states the frozen-mode condition AT THE BRANCH POINT.  The instrument imposes it at the
+    # ONSET, which its own comment calls "not a locus of the construction at all but the redshift
+    # solved so that l_A hits LATARG".  At the branch point a -> 0 and EVERY mode is OUTSIDE the
+    # horizon, so the datum there is the super-horizon adiabatic growing mode -- the same physical
+    # statement the control uses, because it is the same physical situation, not because the control
+    # is being copied.*
+    #   ⇒ ** The sub-horizon handover datum (density extremum, zero velocity, Theta-hat flat in k)
+    #   is a SUB-HORIZON statement and is the correct datum only where the modes really are frozen,
+    #   which r3359 measured as l < 150. **  Applying it above that hands an oscillating mode a
+    #   datum that ignores its history; applying the super-horizon datum LATE breaks the calibration
+    #   outright, measured at r3683 (undriven Q = 0.20-0.43 against the exact 1).  The two data are
+    #   each correct in their own regime and neither is correct in the other's.
+    # *Set with ZSTART pushed back to the branch point.  Default unset = byte-identical.*
+    _cric = os.environ.get('CRIC', '')
+    if ARM == 'lcdm' or _cric == 'branchpoint':
         # ** ADIABATIC SUPER-HORIZON DATA, derived from this code's OWN constraint rather than
         #    quoted.  With Phi' = 0, k^2 Phi/(3H) negligible and Om_r -> 1, the Phi equation
         #    0 = -H Psi - (H/2)(Og dg + On dn + Oc dc) with adiabaticity dc = (3/4) dg gives

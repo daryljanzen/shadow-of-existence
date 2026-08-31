@@ -30,6 +30,57 @@ of the seam treatment, of the transfer, or of the geometry the transfer runs on?
 
 ---
 
+## ⛭⛭⛭ r3685 — THE DRIVING IS EXACTLY RIGHT WHEN THE DATUM SITS AT A LOCUS THE CONSTRUCTION OWNS
+
+***`P15` states the frozen-mode condition AT THE BRANCH POINT. The instrument imposed it at the onset. At
+the branch point $a\to0$ and every mode is OUTSIDE the horizon, so the datum there is the super-horizon
+adiabatic growing mode — the same physical statement the control uses because it is the same physical
+situation.*** *Exposed as `CRIC=branchpoint`, a verified no-op unset.*
+
+### ⛭ THE DRIVING THEN MATCHES THE CONTROL TO THREE DECIMALS
+
+| $k$ | CR, datum at the branch point | $\Lambda$CDM control |
+|---|---|---|
+| 0.020 | **0.8753** | 0.8641 |
+| 0.030 | **0.8156** | 0.8135 |
+| 0.045 | **0.7928** | 0.7925 |
+| 0.065 | **0.7835** | 0.7829 |
+| 0.090 | **0.7802** | 0.7786 |
+
+⇒ ***The $4\times$ $k$-dependence is GONE and CR's driving is the control's.*** *So the driving machinery
+was never the defect: **the datum was, and it was imposed at a redshift rather than at a locus.***
+
+### ⌗ AND THE RESIDUAL IS A SCALE, NOT A SHAPE
+
+*Peaks at $212/508/780$ against $220.6/538.1/809.8$ — errors $-3.9\%$, $-5.6\%$, $-3.7\%$. **Near-uniform**,
+where the onset datum gave $-7.5\%$, $-5.6\%$, $-0.7\%$. A uniform deficit is one number.*
+
+**And that number is the acoustic scale.** *With $r_s$ on the leaf from $a\to0$ (139.74 Mpc, as `P07` and
+`P15` assign it) and $D_M$ on the stacking rate (13005 Mpc, likewise):*
+$$100\,\theta_* = 1.0746 \quad\text{against the sky's}\quad 1.04109 \qquad (3.22\%)$$
+
+⛔ ***AND IT IS NOT REACHABLE BY $\Omega_m$.*** *$\theta_*$ moves the WRONG WAY with $\Omega_m$ — $1.0604$ at
+$0.28$ rising to $1.1824$ at $0.70$ — **with no root anywhere in $0.25$–$0.75$.** In $\Lambda$CDM $\theta_*$
+is fitted; here $H_0$ is measured and the two rates are different objects, so $\theta_*$ is a **prediction**,
+and this is it.*
+
+⌗ *It IS reachable at $1.137\times$ the standard radiation, $N_{\rm eff}=4.07$ — **which BBN and the CMB
+exclude at $3.0\pm0.3$.** Recorded as measured and rejected.*
+
+### ⛭ THE ONE NUMBER TO CHASE
+
+***The $r_s$ that would meet the sky is $135.4$ Mpc. The instrument's fitted-onset $r_s$ is $135.46$ Mpc.
+Those agree to $0.04\%$.*** *So `LATARG` is doing exactly the work of setting the sound horizon to the value
+the sky wants, and the question is what physically sets it there.*
+
+⚠ ***AND A HOPE OF MINE THAT FAILED, RECORDED BECAUSE IT WOULD OTHERWISE BE RE-TRIED.*** *I expected the
+onset to coincide with the stated condition $\rho_r/\rho_m=2$. **It does not.** At CR's own parameters
+($\Omega_m=0.3066$, $H_0=73$) equality is at $z_{\rm eq}=3936$, so that condition sits at $z=7871$ against
+the fitted onset's $6761$ — **$16.4\%$ apart, not the sub-per-cent I asserted before computing it.** The
+instrument's comment quotes $z_{\rm eq}\simeq3402$, which is *Planck's* $\Omega_m h^2$ and not CR's.
+
+---
+
 ## ⛭⛭⛭ r3683 — THE HEADLINE BELOW IS SUPERSEDED. THE DEFICIT TRACKS THE ONSET, NOT THE RATE.
 
 ***Measured on the instrument's own Q-scan, whose undriven column is a MEASURED calibration and not an
