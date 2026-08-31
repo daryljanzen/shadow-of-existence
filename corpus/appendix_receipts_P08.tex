@@ -84,4 +84,9 @@
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P05\_groupoid/K23\_functor\_and\_quotient.py}
+\item[\label{rcpt:I52_the_vacuum_theorem_is_an_index_one_statement_and_the_index_is_the_mass}\texttt{I52\_the\_vacuum\_theorem\_is\_an\_index\_one\_statement\_and\_the\_index\_is\_the\_mass}]\hfill\textsf{[OK]}\\
+\textit{sec:kernel, sec:bend} \ (P08 states dim ker = 1 ("the single constant of integration -2M") and proves the matter functional onto ("matter is bend": any density is realised by some cut), and never assembles them: `kernel` x14, `onto` x18, `surjectiv` x3, `cokernel` x0, `Fredholm` x0. Those two numbers ARE a Fredholm index, 1 - 0 = 1, and the one dimension of kernel IS the mass [borrowed from P08]). 
+\emph{Computes:} kernel dimension by INTEGRATION (solutions from independent initial data, rank of the sampled matrix) returns 1, with f''=0 as the operator-varying control returning 2; cokernel exhibited empty by CONSTRUCTING a preimage f=(1/r)int g for 40 random forcings, worst residual 3.4e-06
+ \emph{Bound:} SUPPORTS P08 and names what it has --- an index is deformation-stable, so this is stronger than the theorem's "this ODE has a one-parameter solution set"
+\ \emph{Run:} \texttt{python3 receipts/P08\_slicing\_operator/I52\_the\_vacuum\_theorem\_is\_an\_index\_one\_statement\_and\_the\_index\_is\_the\_mass.py}
 \end{description}\endgroup

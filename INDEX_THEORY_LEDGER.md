@@ -1,7 +1,7 @@
 ---
 name: index-theory-ledger
 kind: FIELD-BAKE
-current: r3610
+current: r3722
 job: The differential-topology and index-theory field-bake ledger — what bit, what bounced, and where the boundary is.
 sources: [chat]
 ---
@@ -259,25 +259,38 @@ scored. The close is rebuilt to it here.*
 |---|---|
 | papers read | **17 of 17** |
 | probes scored | **12** (`D1`–`D6`, r3610) **+ 17** locator rows |
-| receipts written | **5** — `I51`, `I52`, `I53`, `I54`, `I55` |
-| receipts named by this ledger | **5 of 5** |
+| receipts written | **6** — `I50`, `I51`, `I52`, `I53`, `I54`, `I55` |
+| receipts named by this ledger | **6 of 6** |
 | canon rows routed | **1** — `monodromy` ①② to `ONTOLOGY_FOUNDATION_INDEX` §0 |
 | ledger length | **396 lines** |
-| ⛔ **`\ldg{index_theory}` markers in papers** | ***ONE paper — `P14`, and it predates this pass (r3614).*** |
-| ⛔ **paper clauses landed by the v2 pass** | ***ZERO*** |
+| **`\ldg{index_theory}` markers in papers** | ***SEVEN papers*** — `P14` (×2, one from r3614), `P01`, `P06`, `P08`, `P12`, `p0`, and the r3614 marker |
+| ⛭ **paper clauses landed by this field** | ***SIX*** — `I50`–`I55`, all at **r3722**, *after this block read ZERO for twelve revisions* |
 
-⛔ ***THAT LAST PAIR IS THE SHORTFALL AND IT IS RECORDED RATHER THAN ROUNDED.*** *JOB 2's habit is four
-things in one commit — clause, marker, receipt, named. **This pass delivered the last two and not the
-first two.** Five computations are registered, run and named, and **none of them is cited from the paper
-whose claim it settles.*** ⌗ *59's field landed 13 receipts and **15 markers across nine papers**. The
-comparison is the point of measuring.*
+⛔ ***THAT LAST PAIR WAS THE SHORTFALL AND THE SENTENCE THAT NAMED IT IS KEPT, because it is why the
+work happened.*** *As written at the close: JOB 2's habit is four things in one commit — clause,
+marker, receipt, named — and **this pass delivered the last two and not the first two.** Five
+computations were registered, run and named, and none was cited from the paper whose claim it
+settled.* ⌗ *59's field landed 13 receipts and **15 markers across nine papers**. The comparison is
+the point of measuring.*
+
+⛭⛭ ***CLOSED AT r3722, AND IT TOOK THE INFORMATION-THEORY CLOSE TO SAY IT TWICE.*** *That field's
+close named the shared shortfall — "across index theory and this field, the v2 passes wrote seven
+receipts and NOT ONE clause into a paper" — closed its own half at r3704, and left this one open in
+writing. **This is that half**: `I50` into `p0` `sec:imaginary`'s neighbourhood, `I51` into `P14`,
+`I52` into `P08` `sec:kernel`, `I53` into `P01`, `I54` into `P06` `thm:modal`'s gloss, `I55` into
+`P12` `sec:anchor`. ⌗ *`I50` was not in the "five": the close counted `I51`–`I55` and `I50` was
+uncited too, so the shortfall was **six**, not five — found by checking rather than by trusting the
+number this ledger had written.**
 
 ### 3 · WHAT IS STILL OPEN
 
-* ***THE FIVE CLAUSES ARE UNLANDED.*** *`I51`–`I55` each support a sentence a paper could carry — the
-  bound is attained; the vacuum theorem is index-1 and the index is the mass; the horizons are a
-  repeller/attractor pair; `thm:modal` is local flatness; the class route is unavailable. **None is
-  written into a paper and none has a marker.** That is the field's open work, not its polish.*
+* ~~***THE FIVE CLAUSES ARE UNLANDED.***~~ ⛭ ***DONE at r3722, and there were SIX.*** *`I50`–`I55`
+  each supported a sentence a paper could carry — the Carter constant's reason and why Kerr's is the
+  opposite case; the bound is attained; the vacuum theorem is index-1 and the index is the mass; the
+  horizons are a repeller/attractor pair; `thm:modal` is local flatness; the class route is
+  unavailable. **All six are now written into their papers with markers.** The item stays visible
+  rather than deleted, because an open item that disappears when it is done leaves no evidence it was
+  ever owed.*
 * **`P08`'s cokernel is zero on a finite interval away from $r=0$.** *`I52` says so in its own scope
   block: the singular endpoint where $2M/r$ blows up is **excluded**, and the index there is not
   addressed.*

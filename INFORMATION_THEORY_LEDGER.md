@@ -64,8 +64,11 @@ WORK HAPPENED.*** *`P16` `sec:peak` now carries the erasure clause and `P15` `se
 capacity clause, each with its `\rcpt{}`, its `\ldg{information_theory}`, and its naming here —
 **four things, one commit, twice.** ⌗ *The shortfall was found by writing the close, not by being
 told: a §5b block that only totals what went right cannot find the half that did not happen.*
-⛔ ***INDEX THEORY'S HALF IS STILL OPEN:*** *`I51`–`I55` are five receipts with no clause. **This
-field closing its half does not close that one, and the count there is still FIVE.***
+⛔ ~~***INDEX THEORY'S HALF IS STILL OPEN:*** *`I51`–`I55` are five receipts with no clause. **This
+field closing its half does not close that one, and the count there is still FIVE.***~~
+⛭⛭ ***CLOSED AT r3722, AND THE COUNT WAS SIX.*** *Checking rather than trusting the number found
+`I50` uncited as well — so this sentence was right that the half was open and **wrong by one about
+how open**. All six are landed with markers; the sentence is kept because it is what sent the work.*
 
 ### 3 · WHAT IS STILL OPEN
 
