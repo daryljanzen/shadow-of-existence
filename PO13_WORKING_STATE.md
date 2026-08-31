@@ -65,6 +65,49 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⛭ r3707 — THE DIMENSIONS, READ FROM THE PAPER: `C` MULTIPLIES A MODE NUMBER, AND THE NARIAI BOUND EXCLUDES `r3703` OUTRIGHT
+
+***Read before computing, which is the order that produced the retraction when reversed.***
+
+### ⌗ `P10` SETTLES THE DIMENSIONS, AND NEITHER OF MY TWO READINGS WAS RIGHT
+
+| from `eq:tt-action` verbatim | |
+|---|---|
+| $a(T)=\alpha\cosh(T/\alpha)$ | **a LENGTH** — the round three-sphere's radius |
+| $\mu_n^{2}=n(n+2)-2,\ n\ge2$ | **DIMENSIONLESS** — unit-sphere Laplace eigenvalues |
+| $\omega=\mu_n/a$ | $[\omega]=L^{-1}$ ✔, so $\int\omega\,\dd T$ is dimensionless ✔ |
+
+⇒ *With $a=As^{2/3}$ and $a$ a length, $[A]=L^{1/3}$ and $3S^{1/3}\mu/A$ is dimensionless.* ⛭ ***So
+`r3703`'s $A$ was right in kind — and `r3705`'s audit was ALSO wrong***, *having asserted "$a$ is the
+dimensionless scale factor" as the consistent reading. **The paper says neither of my two.***
+
+⛔ ***AND THE REAL ERROR IS SHARPER THAN THE ONE I RETRACTED FOR.*** *$C=3S^{1/3}/A$ is dimensionless and
+it multiplies $\mu_n$ — **a MODE NUMBER on the three-sphere, not a comoving wavenumber.** The kernel is
+$e^{-C\mu_n}$ and its scale is $n_*=1/C$, a mode number. Converting that to $k$ requires $k=\mu_n/a$ at a
+**stated epoch**, which `r3703` never supplied. **The retraction stands; its stated reason was wrong.***
+
+### ⛔⛭ AND A ONE-LINE CHECK THAT WAS AVAILABLE THE WHOLE TIME WOULD HAVE STOPPED IT
+
+*`P07` fixes the family: the comoving-turnaround cubic $r^{3}+2M\alpha^{2}=0$ at $E=1$ — **the flat leaf
+the observed cosmology selects** — the horizon cubic at $E=0$, and $\Delta(E)=4\alpha^{4}(\alpha^{2}(1-E^{2})^{3}-27M^{2})$
+vanishing at $1-E^{2}=3(M/\alpha)^{2/3}$.*
+
+⇒ ***The Nariai mass is where that crossing reaches $E=0$:*** $M/\alpha=3^{-3/2}=0.19245$, ***so
+$2M/\alpha\le0.3849$ for any sub-Nariai mass — a HARD BOUND.***
+
+| | |
+|---|---|
+| `r3703` set $2M/\alpha=x_0^{3}=2\Omega_\Lambda/\Omega_m$ | **4.5232** |
+| the corpus's Nariai bound | **0.3849** |
+| ⛔ | ***larger by $11.8\times$*** |
+
+***So the retracted identification is excluded by the construction's own bound, independently of any
+dimensional argument.*** *One comparison, available from the start, would have stopped the whole chain
+before it ran. **The sanity check I did run — $M\sim10^{23}M_\odot$ — tests an order of magnitude against
+astronomy; this one tests the number against the geometry that defines it, and only the second could fire.***
+
+---
+
 ## ⛔⛔ r3705 — **`r3703` IS RETRACTED. THE NUMBER IS NOT TRUSTWORTHY AND THE FALSIFICATION DOES NOT STAND.**
 
 ***Daryl flagged the chain as doubtful — "too many things that seem like red flags, like basing it on
