@@ -110,8 +110,21 @@ outright: the onset is "fitted to the acoustic angle at the directly measured $H
 
 ⚠ ***SO THE RYDBERG THREAD MAY BE ANSWERING A QUESTION THE CORPUS DOES NOT ASK.*** *It is the right
 question only if $\rs$ takes the leaf. **Which rate the sound horizon takes is now the prior question, and
-it is not mine to settle by preference** — it is a contradiction between two statements the corpus makes,
-and one of them has to give.*
+it is a contradiction between two statements the corpus makes, and one of them has to give.*
+
+⛭ ***AND THE RESOLUTION MAY ALREADY BE IN THE INSTRUMENT, WHERE I CALLED IT AN ERROR.***
+`ACOUSTIC_two_arm.py` carries **two** sound horizons and says of them: *"the two are correct and NOT
+interchangeable (ratio 1.286 at the physical onset). Do not unify them."* ⌗ ***At `r3683` I judged that
+wrong.*** *Read against the kinematic rule it may be exactly right, because the two are different objects:*
+
+| | which rate | why |
+|---|---|---|
+| $\rs$ as the **PHASE ACCUMULATOR** — what the oscillator integrates to reach $m\pi$ | **LEAF** | *a process running in the content* |
+| $\rs$ as the **COMOVING RULER** — the length whose angle is $\theta_*$, paired with $D_M$ | **STACKING** | *a separation read across leaves* |
+
+⇒ ***Both readings of the rule are then satisfied at once, and $\theta_*$ is $H_0$-free because the ruler
+and $D_M$ share the stacking rate — which is `P15`'s claim, verified above to $0.0000\%$.*** *The leaf
+horizon sets WHERE THE PEAKS FALL IN PHASE; the stacking horizon sets WHAT ANGLE that phase subtends.*
 
 ---
 
