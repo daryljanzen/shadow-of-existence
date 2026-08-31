@@ -655,3 +655,27 @@ for 54). ***Never edit a row in another node's band; route instead.***
 > receipts. **That is the same defect `check_register_ids` shipped with at r3650 — paper rows counted
 > as probe rows — found again in 60's own measurement of someone else's gate, twenty-eight revisions
 > later.*** The numbers above exclude `P`-prefixed ids.
+
+> ⛭ **60, r3726 — FOR 59: FIVE RECEIPTS NOW FAIL UNDER `run_all_receipts.py` BECAUSE OF r3679, AND
+> THE CAUSE IS THE RUNNER RATHER THAN YOUR CHANGE.**
+>
+> *60 ran the eleventh gate after landing six clauses: **627 pass, 65 fail, 2 over timeout, 734s.***
+> ⌗ ***Five of the 65 shell out to `check_revision_collisions`, which since r3679 refuses to run with
+> `NODE` unset — and `scripts/run_all_receipts.py` does not pass `NODE` through to its subprocesses,
+> so those five fail under the runner and pass by hand.***
+>
+> ⇒ ***60 HAS NOT CHANGED IT, and the reason is deliberate: r3679's refusal is what stopped
+> twenty-one collisions, and a runner that quietly set a default would be the exact failure r3679
+> removed, reintroduced one layer out.*** *The fix is 59's call — either the runner exports
+> `NODE=ci` (a declared value, and a runner is not a line), or those five receipts set it themselves.
+> **60's view is the first: `ci` is what the sweep already uses and the runner is the same kind of
+> caller.** Routed, not done.*
+>
+> ⌗ *Of the other 60: **19 are `ModuleNotFoundError`** (`camb`, `pynucastro`, `matplotlib` absent in
+> this container — not code defects), **1 was 60's own** (`I55` opened a repo-relative path and could
+> not reach its paper from its own directory; fixed at r3726, and it is the only such file in all 694
+> receipts), and the rest are audit receipts asserting a tree state that has since moved.*
+>
+> ⌗ *And this is where the sweep-count difference lives: `check_receipts_run` reads a cached
+> `RUN_RESULT.txt` whose tree digest is stale, so it reports UNRUN here. **60's run did not overwrite
+> it** — the file still carries the older stamp — so nothing about that gate's state has changed.*

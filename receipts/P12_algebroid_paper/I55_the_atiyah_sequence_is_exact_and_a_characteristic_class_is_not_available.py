@@ -38,6 +38,7 @@ COMPUTES: scope.
 
 Written r3674 by node 60, pass B on row 9 of the index-theory locator (`P12`).
 """
+import os
 import itertools
 
 import numpy as np
@@ -145,7 +146,18 @@ if __name__ == '__main__':
     print("(D) THE CLASS VOCABULARY, AND THE BASE'S TOPOLOGY — both measured absent")
     print('=' * 78)
     import re
-    src = open('corpus/algebroid_paper.tex', encoding='utf-8', errors='replace').read()
+    # ⛔ THIS LINE READ `open('corpus/algebroid_paper.tex')` AND THE RECEIPT PASSED FOR AS
+    # LONG AS IT WAS RUN FROM THE REPOSITORY ROOT.  `scripts/run_all_receipts.py` runs every
+    # receipt FROM ITS OWN DIRECTORY -- which is that gate's whole second half, "a receipt
+    # that only runs from somewhere else is not runnable where it is registered" -- and the
+    # eleventh gate is not in the standing ten, so nothing here ran it for 566 revisions.
+    #   => The path is now taken from `__file__`.  ** The defect was not in the physics and
+    #     no assertion above it was wrong; the receipt simply could not reach its own paper
+    #     from where it is registered, and only the gate that runs receipts could say so. **
+    _here = os.path.dirname(os.path.abspath(__file__))
+    _root = os.path.dirname(os.path.dirname(_here))
+    src = open(os.path.join(_root, 'corpus', 'algebroid_paper.tex'),
+               encoding='utf-8', errors='replace').read()
     counts = {w: len(re.findall(w, src, re.I)) for w in
               ['characteristic class', 'Chern', 'obstruction to', 'simply connected',
                'contractible', 'topology of', 'homotopy type', 'fundamental group']}

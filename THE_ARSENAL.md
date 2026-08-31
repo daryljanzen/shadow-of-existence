@@ -1527,3 +1527,37 @@ carries survivorship, the base rate, the reference class **and the censoring of 
 episodes** — correctly, in prose, applied to the programme's own five instances and refusing to
 count them. **A vocabulary screen scored the corpus's most probabilistically literate paper at
 zero.***
+
+---
+
+### ⛔⛭⛭ **r3726 — THE ELEVENTH GATE IS NOT IN THE STANDING TEN, SO A RECEIPT OF MINE WAS BROKEN FOR AS LONG AS NOBODY RAN IT**
+
+*After landing six index-theory clauses I ran `scripts/run_all_receipts.py` — the gate that runs
+every registered receipt **from its own directory** — because I had just added five receipts and an
+instrument that rewrites receipts, and confirming the population still runs is the check that
+matters.*
+
+⛔ ***`I55` FAILED, AND IT WAS MINE.*** *It reads `open('corpus/algebroid_paper.tex')` — a
+**repository-relative** path. It passes from the root and fails from its own directory, which is
+exactly the second half of that gate's stated purpose: **"a receipt that only runs from somewhere
+else is not runnable where it is registered."** Every assertion in it was right; it simply could not
+reach its own paper from where it lives.*
+
+⌗ ***AND IT IS THE ONLY ONE IN THE TREE.*** *Measured statically across all 694 registered receipts:
+one file opens a repo-relative path, and it is that one. **The class is closed rather than
+sampled.***
+
+⇒ ***THE LESSON IS ABOUT WHICH GATES GET RUN.*** *`run_all_receipts` costs wall clock the standing
+ten do not, so it runs "at a juncture". **A defect that only that gate can see therefore survives
+exactly as long as nobody reaches a juncture** — and this one survived the whole session that wrote
+it, through eleven green sweeps.*
+
+⌗ ***AND THE RUN REPORTED MORE THAN MY OWN DEFECT — 627 pass, 65 fail, 2 over timeout, 734s.***
+*Of the 65: **19 are `ModuleNotFoundError`** for `camb`, `pynucastro` and `matplotlib`, which are
+absent in this container and are not code defects; **5 are receipts that shell out to
+`check_revision_collisions`**, which since 59's r3679 refuses to run with `NODE` unset — and the
+runner does not pass `NODE` through, so those five now fail under the runner and pass by hand.
+⇒ **That is 59's hardening working correctly and the runner not knowing about it; routed rather
+than changed, because changing it would touch the semantics that stopped twenty-one collisions.**
+The remainder are audit receipts asserting a state of the tree that has since moved — pre-existing,
+and not this session's to rewrite.*
