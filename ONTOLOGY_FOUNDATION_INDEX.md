@@ -206,6 +206,32 @@ the ontology from the load-bearing pieces, never "because Daryl says" — is exa
 > ⌗ ***The failure this prevents is specific: the r3164 Cartan bake computed one holonomy, treated holonomy
 > as one topic, and mistook a second object for an opening in the first.***
 
+### ⛔⛭ A THEOREM USED WITHOUT ITS HYPOTHESES AUDITED — added r3701 by 59, from 60's v2 field passes
+
+***Two independent v2 passes, in different fields, found the same shape: a result the corpus states
+CORRECTLY, resting on a named theorem whose HYPOTHESES the corpus never checks. In both, the conclusion
+holds — and in both, the check was cheap and nobody had run it.***
+
+| where | the theorem | the hypothesis nobody audited | the finding |
+|---|---|---|---|
+| **`P05` `rem:galois`** — number theory, `T1` | *a cubic's Galois group is $S_3$ when its discriminant is not a square* | ***irreducibility*** | *the inference is **invalid** without it. Control: $r^3-r^2+r-1$ factors as $(r-1)(r^2+1)$, discriminant $-16$, not a square, Galois group $\mathbb{Z}_2$. **The horizon cubic IS irreducible over $\mathbb{C}(M)$, so the conclusion stands*** |
+| **`P05` `prop:monodromy`** — numerical analysis, `Q51` | *the two branch-point transpositions differ and generate $S_3$* | ***the loop's radius*** | *two preconditions the sentence does not state, **both failing SILENTLY**: a loop wider than the branch-point separation $4/(3\sqrt3)=0.7698$ returns the **3-cycle** — a correct monodromy of a different loop* |
+
+⇒ ***AND THE CONSEQUENCE IS THE SAME IN BOTH: a downstream reader cannot tell a load-bearing citation from
+an ornamental one.*** *`T1` matters because **three earlier bakes — algebraic geometry, combinatorics,
+complex analysis — all USE the $S_3$ result and none audits it.** `Q51` matters because the failure is
+silent: the wrong loop returns a valid-looking answer.*
+
+⌗ ***BOTH ARE IN `P05`, WHICH IS NOT A COINCIDENCE WORTH INFLATING BUT IS WORTH RECORDING***: *that paper
+carries the corpus's densest concentration of imported theorems, so it is where the class is most likely to
+recur. **Neither finding is a defect in `P05`'s results** — both conclusions hold. The absence is a stated
+hypothesis, in a paper whose other arguments state theirs.*
+
+⌗ *Related in kind and already held elsewhere: `D1` (index theory) found `P14`'s Atiyah--Singer citation
+**doing no work in the count** — the analytical index is computed by definition and the theorem supplies
+only deformation invariance. **That is the same question asked of a citation rather than of a hypothesis,
+and it came out the other way: honest, not load-bearing.***
+
 ### ⛭ TWO HOLONOMIES, NOT ONE — `C10`, Cartan/holonomy bake
 
 | bundle | order | group | its work |
