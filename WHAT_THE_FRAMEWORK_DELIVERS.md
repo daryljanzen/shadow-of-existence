@@ -257,6 +257,29 @@ hundred-odd dissolutions" invites reading 182 word-hits as 182 findings.*
   a gap**: the harmonic bake adjudicated it in as many words, "the corpus performs the Chebyshev expansion
   without naming Chebyshev", and `prop:triple`'s proof carries the $\sin^3w=\tfrac14(3\sin w-\sin3w)$
   substitution in full.*
+- ⛭⛭⛭ **OUR UNIVERSE ISSUED FROM AN ANTIMATTER BLACK HOLE — and the two branches carry EQUAL AND
+  OPPOSITE ACTION.** *`P07` `thm:antimatter-progenitor`, which the theorem table carried as a title:
+  the conjugate ($r<0$) branch is the areal reflection $r\mapsto-r$ of the expansion leg, and under the
+  mass-reflection $R=\gamma^5$ — **the $A_2$ diagram automorphism, $2M\mapsto-2M$** — it is the
+  **antifundamental $\bar{\mathbf 3}=R(\mathbf 3)$** of the matter branch.*
+  ⇒ ***"The black hole from which our universe issued is the antifundamental of our matter — an antimatter
+  black hole."*** *Equivalently our matter and the progenitor's are **the two ends of one $R=\gamma^5$
+  conjugation across the $r=0$ branch point**, and ⛭ *"by the discrete CPT structure of the substrate
+  **this is the same statement its own observers would make of us**."*
+  - ⌗ ***Scoped exactly, in the theorem itself***: *"antimatter" is meant at the level the substrate
+    carries it — geometric in **representation, chirality and mass-sign** on both branches, with the
+    charge **field-level** on both — ⛔ **and not as a claim of a geometric charge conjugation, which is
+    antilinear and closes from the matter field.***
+  - ⛭⛭ ***AND THE RECIPROCITY IS STRENGTHENED FROM REPRESENTATIONAL TO DYNAMICAL.*** *The segment along
+    which the conjugate branch is reached solves a variational principle, and its action integrand
+    $r[f(r)-1]=-2M-r^{3}/\alpha^{2}$ is **ODD** under the same reflection $R$ — which acts on the offset
+    and the mass **together** — so **the two branches carry equal and opposite action, summing to zero
+    identically.*** ⇒ *"Neither branch is therefore weighted above the other by the geometry that joins
+    them."*
+  - ⛭ ***And the paper says why that is the stronger claim***: *"a construction could make each branch
+    call the other antimatter while still preferring one dynamically, **and this one does not**." **The
+    labels being relational is the weak version; the actions cancelling identically is the strong one.***
+
 - ⛭⛭⛭ **GENERAL RELATIVITY'S COVARIANCE LIFTED ONE LEVEL — one substrate under change of GEOMETRY.**
   *`P07` `sec:general-reach`: **"What general relativity holds as a catalogue of separate exact solutions
   is, in this reading, the family of cuts of one de~Sitter substrate whose only scale is the throat radius
