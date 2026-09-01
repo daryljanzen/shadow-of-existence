@@ -252,10 +252,11 @@ hundred-odd dissolutions" invites reading 182 word-hits as 182 findings.*
   the metric (`P01`, `I53`).
 - **Dimension selection is a multiple-angle count**: the slicing scale $2/\sqrt3$ is *forced* as the unique
   value removing the residual harmonic, and a pure multiple-angle exists at $D=4$ and $D=5$ and **nowhere
-  above** (`P03` `rem:dimension`, `HARMONIC_ANALYSIS H20`). ⛔ *r3560 called this "a Chebyshev count".
-  **`Chebyshev` is ×0 in the corpus** — the bake's own reading is that "the corpus performs the Chebyshev
-  expansion without naming Chebyshev", so the name is the **field bake's**, not the papers'. Attributing
-  it to the corpus would credit it with a vocabulary it does not use.*
+  above** (`P03` `rem:dimension`, `HARMONIC_ANALYSIS H20`). ⌗ *r3560 called this "a Chebyshev count".
+  `Chebyshev` is ×0 in the corpus and the name is the **field bake's**, not the papers' — **and that is not
+  a gap**: the harmonic bake adjudicated it in as many words, "the corpus performs the Chebyshev expansion
+  without naming Chebyshev", and `prop:triple`'s proof carries the $\sin^3w=\tfrac14(3\sin w-\sin3w)$
+  substitution in full.*
 - ⛭⛭ **AND THE EUCLIDEAN LAYER IS FORTY-FOUR PROVED IDENTITIES, NOT THREE.** *`FIGURE_THEOREM_LEDGER`
   carries **44 distinct `⊢ PROVED` entries**, each an identity, definition or verified computation with
   its receipt named, kept in three registers that **do not blur** — `⊢ PROVED` · `≈ RHYME` (asserted
@@ -315,11 +316,17 @@ included, which is why the instrument is worth anything.*
 ⛭⛭ **AND THE BAKES FOUND A CLASS OF DEBT THAT MAKES THE CORPUS LOOK THINNER THAN IT IS: THE NAMING DEBT.**
 *`THE_OPEN_PROBLEMS_LEDGER` carries it **five deep across families** — the **Atiyah sequence**,
 **$N_{\rm eff}$**, the **baby universe**, **matched-procedure systematics control**, and
-**Ambrose–Singer** — *"each a method the corpus uses correctly and names nowhere"*. **Chebyshev is a
-sixth.*** ⇒ *This is a **presentational** debt and not a scientific one, and it cuts against the
-programme in exactly one direction: **a reader searching for the standard name finds ×0 and concludes the
-method is absent, when it is present and correct.** The ledger notes it "does not yet carry that as a
-family in its own right."*
+**Ambrose–Singer** — *"each a method the corpus uses correctly and names nowhere"*. ⇒ *A **presentational**
+debt, not a scientific one, cutting in exactly one direction: **a reader searching for the standard name
+finds ×0 and concludes the method is absent, when it is present and correct.***
+⛭⛭ ***RE-MEASURED r3750, AND FOUR OF THE FIVE WERE ALREADY CLOSED:*** *the **Atiyah sequence** (×2 in
+`P12`), **$N_{\rm eff}$** (×5, in `P15`/`P16`), the **baby universe** (`P07`) and **Ambrose–Singer** (×3
+with its citation and marker) are all named now. **Only matched-procedure differencing was genuinely open
+— `P15` runs its control through the identical extraction so the procedure's own bias cancels in the
+difference — and it is named at r3750.***
+⌗ ***The class closes silently***, *which is why the ledgers had gone stale on it: someone writes the name
+while doing something else and nothing tells the register. **A naming row wants re-measuring, not
+re-reading** — a one-line grep that had not been run in some 590 revisions.*
 
 ⛭ **AND ONE BAKE CORRECTED ANOTHER, which is the strongest evidence the instrument works.** *Spectral
 theory asked whether `P10`'s mode degeneracy matched what other bakes had used, and found that **the
