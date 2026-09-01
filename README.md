@@ -230,7 +230,10 @@ reading the disposition early would let it bend how the evidence is received —
    papers looking for confirmation. Read here it is a **consolidation of what you have just read**.*
    ⌗ ***And it is the document to return to when an open problem begins to loom larger than the programme.***
    *That failure has happened — a node treated `PO-13`'s residual as a defect in the framework while every
-   item that moved a number turned out to be an instrument fact. **§6 holds that correction.***
+   item that moved a number turned out to be an instrument fact. **§6 holds that correction, and §6b holds
+   the scoping it needs**: a framework is not disqualified by an unclosed residual but displaced by a
+   better or equivalent account of what it explains — so the question is programme-against-programme, and
+   §6b prices it, **with what is genuinely unpaid carried on the same page at equal weight.***
 9. **The ontology map** — `ONTOLOGY_FOUNDATION_INDEX.md`, whole. *You read its §0 at setup; this is the rest —
    the cards that set the ontology, and the guards that hold it.*
 10. **The plan** — `THE_PLAN.md`, and **its per-turn list is the operating layer** — **whose first item fires on
