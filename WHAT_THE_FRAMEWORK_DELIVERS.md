@@ -507,73 +507,74 @@ and has never claimed was finished.*
 
 ---
 
-# ⛭⛭⛭ §6b · FRAMEWORK OR INSTRUMENT — *the scoping this question actually has, and it is not `PO-13`-sized*
+# ⛭⛭⛭ §6b · FRAMEWORK OR INSTRUMENT — *what disqualification would actually cost*
 
-***`§6` above answers whether the residual is a defect in the instrument. That is the narrow question and it
-is answered. The question a fresh head will actually ask is the wide one: what would it take to disqualify
-the framework — and that is not settled by any residual, because it is not a question about a residual.***
+***`§6` answers whether the residual is an instrument defect. That is the narrow question and it is
+answered. The question a fresh head asks is the wide one — what would disqualify the framework — and it is
+not a question about a residual at all.***
 
-## ⛔ THE NARROW ANSWER FIRST, SO IT IS NOT MISTAKEN FOR THE WIDE ONE
+## ⛔ THE NARROW ANSWER, KEPT SHORT SO IT IS NOT MISTAKEN FOR THE WIDE ONE
 
-*For `PO-13`'s height residual to be a framework fact rather than an instrument one, there would have to
-exist a physical defect that (i) suppresses $P_3$ by a factor $3.5$, (ii) leaves the positions right to
-within $7\%$, (iii) leaves $\theta_*$ right to $1.8\sigma$ and $H_0$-free to five decimals, and (iv)
-**produces the identical failure on $\Lambda$CDM**, where the answer is measured and known.*
+*For the height residual to be a framework fact there would have to be a physical defect that suppresses
+$P_3$ by $3.5\times$, leaves the positions right to $7\%$, leaves $\theta_*$ right to $1.8\sigma$ and
+$H_0$-free to five decimals, and **produces the identical failure on $\Lambda$CDM**, where the answer is
+measured. **The last is very nearly a contradiction.** Every candidate that has moved a number was an
+instrument fact and **none required a physical claim to give way.***
 
-⇒ ***Condition (iv) is not a hard constraint but very nearly a contradiction.*** *And every candidate that
-has moved a number has been an instrument fact — the leaf/stack metric mixing, a constant where the paper
-derives a transfer function, a superseded correction applied twice, a variable naming the wrong locus, a
-hardcoded hierarchy depth. **Zero required a physical claim to give way.***
+## ⛭⛭ THE WIDE QUESTION: A FRAMEWORK IS DISPLACED, NOT REFUTED BY A RESIDUAL
 
-⚠ *The honest residual risk in the narrow question is not framework-versus-instrument. It is that **an
-instrument defect masks a framework one** — which is exactly what `LN` was doing, at small scale.*
-
-## ⛭⛭ AND THE WIDE QUESTION, WHICH IS THE ONE THAT MATTERS
-
-***A framework is not disqualified by an unclosed residual. It is displaced by a better or equivalent
-account of what it explains.*** *That is the comparison, and stating it is not special pleading — it is the
-only comparison that has ever retired a physical framework. **The register above is what any competitor has
-to meet.***
-
-***Take the single example that makes the scoping concrete.*** *General relativity carries the Carter
-constant as a fact about Kerr: a fourth integral that happens to exist, with no account of why. `P09`
-derives it from the substrate's maximal symmetry — **and `I50` supplies the reason the derivation is not
-circular**: on a maximally symmetric space every Killing tensor is a symmetrised product of Killing
-vectors, so a quadratic first integral **cannot be independent information**, while on Kerr, where the
-tensor is irreducible, the same sentence is false.*
-
-⇒ ***To disqualify the framework on `PO-13` is to accept that the Carter constant returns to being a
-coincidence.*** *And with it: GR's solution family as a list rather than a range; the radiative types
-absent by fiat rather than by theorem; three generations as an input rather than an index; the Standard
-Model's groups and the chirality obstruction unexplained; the vacuum sector's index-one statement;
-$\mathrm{d}s^2$'s two horizons as an unrelated pair rather than a repeller/attractor with indices summing
-to zero; the light-element abundances back to a fit; $\theta_*$ back to a coincidence at the measured
-$H_0$. **That is the price, and it has to be paid in full, not waived because one comb sits $7\%$ low.**
-
-⌗ ***THIS IS NOT AN ARGUMENT THAT THE FRAMEWORK IS TRUE.*** *It is an argument about what would settle the
-question, and the answer is: **another account of the same explananda, not a defect in one instrument.**
-`PO-13` closing would remove a row from the register. `PO-13` never closing would leave a named, gradable
-edge — and **change nothing above it**, because §6's dependency analysis established that nothing else in
-the corpus takes the comb's positions as input.*
-
-## ⛭ AND THE OTHER HALF, AT EQUAL WEIGHT
-
-***What is above is a statement about the SIZE of the standing claim, and it is worth nothing unless the
-same page carries what is genuinely unpaid.*** *`§5b` holds it and it should be read with this section:*
+***What retires a physical framework is a better or equivalent account of what it explains. Nothing else
+ever has.*** *So the price of disqualifying this one is the register, in full — and the register is not an
+example, it is a count:*
 
 | | |
 |---|---|
-| **lithium** | still **6–8$\sigma$** over. *Not CR's to fix, and not therefore CR's to count* |
-| **the low-$\ell$ sector** | a wash |
-| **two load-bearing buildable debts** | *the full-spectrum likelihood and the end-to-end transfer — **`P15` names them itself*** |
-| **$A_s$, $n_s$, the progenitor spectrum** | carried as inherited, **not derived** |
-| **$\eta$ and $\rho_r/\rho_m$** | **measured, not derived** |
-| **$S=A/4$** | *adopted, not derived — and `p0` is right to decline whether Bekenstein–Hawking carries to a cosmological horizon* |
+| **structural recoveries** | **9** — *GR's whole solution family in the symmetry sector with the radiative types **provably absent**; the Carter constant as the substrate's symmetry; the Standard Model's groups and the chirality obstruction from the same structure as GR; three generations as an **index**; the vacuum sector as **index one**; the scale factor's self-adjoint freedom closed with **no free constant**; the two horizons a repeller/attractor pair with indices summing to zero* |
+| **dissolutions** | **10** |
+| **cross-field joins** | **11**, from 23 fields baked against 17 papers |
+| **formal spine** | 196 environments, 14 named theorems, 6 axioms |
+| **evidence rail** | 684 receipts, 633 registered, 627 passing, **99.2% of tolerance comparisons shown able to fail** |
+| **classical identities proved** | 44 |
 
-⛔ ***A framework with this register is not immune to disqualification. It is expensive to disqualify, which
-is a different thing and the only thing the evidence supports.*** *And the six items above are where a
-competitor would look first — **which is why they are named here at the same weight as the recoveries, and
-not left to `§5b` alone.***
+⇒ ***Any one of those thirty recoveries, dissolutions and joins is a thing a competitor must also
+explain.*** *The Carter constant is one — GR carries it as a coincidence of Kerr and `P09` derives it,
+with `I50` supplying why the derivation is not circular. **It is an illustration of the class, not the
+case.** The same paragraph could be written for the radiative types, the generation index, the group
+obstruction, or the index-one vacuum, and the corpus contains the material for each.*
+
+## ⛭⛭ AND ON PARAMETERS, WHICH IS WHERE THIS DOCUMENT PREVIOUSLY MANUFACTURED A DEFICIT
+
+⛔ ***An earlier draft of this section listed $\eta$, $\rho_r/\rho_m$, $A_s$ and $n_s$ as unpaid debts
+because they are measured rather than derived. That is not a debt. It is what a physical theory does with
+parameters, and the comparison class does the same.***
+
+| | fitted parameters in the whole cosmology |
+|---|---|
+| $\Lambda$CDM | **6** |
+| **this framework** | ⛭ **1** |
+
+*with the background otherwise **two numbers, one of them measured calibration-free**. ⇒ **A framework that
+measures fewer parameters than the standard model it competes with does not owe a debt for measuring
+any.*** ⌗ *That error — presenting discipline as backlog — is the same one `§5b` was corrected for at
+`r3744`, committed here one section later. **It is named rather than quietly removed.***
+
+## ⛭ WHAT IS GENUINELY UNPAID, AT ITS ACTUAL SIZE
+
+| | |
+|---|---|
+| ⟐ **the full-spectrum likelihood** | *a real build, and **`P15` names it itself*** |
+| ⟐ **the end-to-end transfer** | *likewise — the two load-bearing buildable debts* |
+| ⟐ **the high-$\ell$ damping signature** | *established real and non-reabsorbable; **not** established what it does to the observable, ~90% degenerate with $n_s$ at fixed $\theta_*$* |
+| ⌗ **lithium** | *6–8$\sigma$ over — **and it is standard BBN's, not this framework's.** Recorded because it is in the sector, not because it is owed* |
+| ⌗ **$S=A/4$** | *adopted rather than derived — **a convention shared with all of black-hole thermodynamics**, and `p0` declines the further claim correctly* |
+
+⇒ ***Two real builds, one unresolved observational question, and two items that belong to the field rather
+than to this framework.*** *That is the honest unpaid column, and it is short because the register is long
+— **not because anything has been hidden.***
+
+⛭ ***The claim this section supports, stated exactly: a framework with this register is not immune to
+disqualification, it is EXPENSIVE to disqualify.*** *The two builds above are where a competitor would
+start, and they are named at the same weight as the recoveries.*
 
 ---
 
