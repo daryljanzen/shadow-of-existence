@@ -1561,3 +1561,45 @@ runner does not pass `NODE` through, so those five now fail under the runner and
 than changed, because changing it would touch the semantics that stopped twenty-one collisions.**
 The remainder are audit receipts asserting a state of the tree that has since moved — pre-existing,
 and not this session's to rewrite.*
+
+---
+
+### ⛔⛭⛭⛭ **r3728 — TWO LINES GUARDED AN ENV VAR FOR A GATE NEITHER HAD CHECKED WAS BEING RUN**
+
+*59's r3695 routed one decision to this line: `prepush.sh` **warns** when `NODE` is unset, and
+whether it should **block** is 60's call because the file is 60's lane under r2497.*
+
+⛭ ***THE ANSWER IS BLOCK, and the reason is checkable rather than a preference.*** *Nothing calls
+`prepush.sh` automatically — there is no `.githooks/` in the tree, no workflow references it, and CI
+sets `NODE=ci` on its own gates without going through it. **So the only caller a block can reach is
+a line pushing by hand without declaring its half, which is the case that must be caught** — and a
+warning printed above a run that then exits 0 is a record dressed as a verdict.*
+⌗ *Said plainly rather than oversold: `NODE=ci` is still an escape and someone in a hurry will type
+it. **The block does not remove the skip; it makes the skip a typed, deliberate act instead of a
+default.** That is the whole of the difference.*
+
+⛔⛭⛭ ***AND THEN THE ACTUAL DEFECT, WHICH BOTH LINES WALKED PAST: `check_revision_collisions` WAS
+NOT IN `prepush.sh`'s GATE LOOP.*** *The loop ran four grain gates. **59 wrote a careful warning
+about `NODE` and 60 wrote a careful block about `NODE`, and neither checked that the gate `NODE`
+selects for was among the gates the script runs.***
+
+⇒ ***EXPORTING THE RIGHT VALUE TO A GATE THAT NEVER RUNS IS THEATRE, AND THE MEASUREMENT WAS ONE
+GREP AWAY.*** *`grep -n "for g in" scripts/prepush.sh`.*
+
+⌗ ***THIS IS THE THIRD LAYER OF ONE DEFECT, and the three together are the whole shape:***
+| layer | how it failed silently |
+|---|---|
+| r3563→r3678 | *the gate DEFAULTED on unset `NODE` — it checked the half the tree was not on* |
+| r3696 | *the script fed it `${NODE:-ci}`, a **declared** value that legitimately skips — so r3679's refusal never fired here* |
+| **r3728** | ***the script never called the gate at all*** |
+
+⇒ *Each layer was found only after the one above it was fixed, and each fix looked complete at the
+time. **A fix that is never exercised end-to-end is indistinguishable from one that works.***
+
+⌗ *The band gate is now in the loop, and it prints `[unchecked]` rather than `[ok]` under
+`NODE=ci` — it exits 0 there while reporting the band NOT CHECKED, and `[ok]` would read as
+"checked". **UNRUN is not a pass, applied to the gate that most needed it.** Controls: unset blocks
+(exit 1), a bogus `NODE` makes the gate FAIL inside the loop (exit 1), `NODE=60` runs the prevention
+half. Runtime 2.1s → 5.5s, and the docstring's "under two" is amended by measurement rather than
+left to drift — a stated runtime nobody re-times is the same kind of claim as a stated tolerance
+nobody verifies.*

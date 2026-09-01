@@ -9,6 +9,11 @@
 \emph{Computes:} Einstein tensor computed; E\_xx=WAVE x factor, E\_tz=MOM/R, E\_tt+E\_zz=EN/R, E\_yy=(WAVE-AREA) x factor; Lambda=0 control
  \emph{Bound:} the confined bend = consistent nonlinear GW
 \ \emph{Run:} \texttt{python3 receipts/P11\_dynamics\_paper/P11\_gowdy\_dS.py}
+\item[\label{rcpt:F50_the_a_minus_two_belongs_to_W_and_Q_is_bounded_by_going_constant}\texttt{F50\_the\_a\_minus\_two\_belongs\_to\_W\_and\_Q\_is\_bounded\_by\_going\_constant}]\hfill\textsf{[OK]}\\
+\textit{sec:gowdy} \ (P11 says the gauge-invariant perturbation Q is bounded, DECAYING AS a\textasciicircum{}-2. Q is bounded and the a\textasciicircum{}-2 is not its: on the paper's own convention Q = W/a the two super-horizon branches go as a\textasciicircum{}-3 and as a constant, and the a\textasciicircum{}-2 belongs to W, the rescaled variable the equation is written in). 
+\emph{Computes:} solves the paper's own W'' + (k\textasciicircum{}2 - 2/eta\textasciicircum{}2)W = 0 super-horizon, gets p(p-1)=2 so p in \{-1,2\}, maps via a = -1/(H eta), and reads both variables' exponents: W gives \{-2,+1\} and Q gives \{-3,0\}. The CONTROL discriminates the convention rather than the arithmetic -- the claim is FALSE under the paper's Q=W/a and TRUE under Q=W, and the two must disagree or the test is measuring arithmetic
+ \emph{Bound:} SUPPORTS P11 -- and the paper's conclusion (bounded, no ghost, no tachyon, no runaway) STANDS ENTIRE: no Q exponent is positive. NOT CLAIMED: any defect in P11's equation, its zero effective mass, or its admissibility argument -- P11\_mukhanov covers those and they hold. Only the variable one decay exponent is attached to
+\ \emph{Run:} \texttt{python3 receipts/P11\_dynamics\_paper/F50\_the\_a\_minus\_two\_belongs\_to\_W\_and\_Q\_is\_bounded\_by\_going\_constant.py}
 \item[\label{rcpt:P11_twoKV}\texttt{P11\_twoKV}]\hfill\textsf{[OK]}\\
 \textit{prop:twoKV} \ (Gowdy-dS metric with generic psi(t,z) admits exactly two Killing vectors d\_x, d\_y (Type-I edge)). 
 \emph{Computes:} covariant Killing eqn=0 for d\_x,d\_y; d\_z,d\_t not Killing (generic psi); g\_xx!=g\_yy blocks rotation; flat-profile control

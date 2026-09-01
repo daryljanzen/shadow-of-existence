@@ -196,13 +196,23 @@ work of a method present and correct under no name:*
 
 | | the thing | where |
 | --- | --- | --- |
-| 1 | the Atiyah sequence is not missing from `P12` — it is `P12`'s object under four other names | `L-265`, r3152 |
-| 2 | the sector rests on $N_{\rm eff}$ at both ends and names it in no paper — *"one missing NAME, not a missing sector"* | `R-P` ⑨, r2544 |
-| 3 | the information-paradox resolution is the baby-universe one, never named | `R-P` ⑩, r2540 |
-| 4 | the systematics budget is taken by matched-procedure differencing, never named | `L-271` `S2`, r3160 |
+| 1 | the Atiyah sequence is not missing from `P12` — it is `P12`'s object under four other names | `L-265`, r3152 — ⛭ **CLOSED**: `P12` names *"the Atiyah sequence of the principal bundle"* ×2, and `I55` verified its three assertions on explicit matrices (r3722) |
+| 2 | the sector rests on $N_{\rm eff}$ at both ends and names it in no paper — *"one missing NAME, not a missing sector"* | `R-P` ⑨, r2544 — ⛭ **CLOSED**: $N_{\mathrm{eff}}$ ×5, in `P15` and `P16`, which is the sector |
+| 3 | the information-paradox resolution is the baby-universe one, never named | `R-P` ⑩, r2540 — ⛭ **CLOSED**: named in `P07`, which is where the resolution is |
+| 4 | the systematics budget is taken by matched-procedure differencing, never named | `L-271` `S2`, r3160 — ⛭ **CLOSED r3750 by 60**: named in `P15` `sec:instrument`, beside the quantification the paper already carried, with the reason the naming matters — *the control is passed through the identical extraction so the procedure's own bias cancels in the difference* |
+| — | ⌗ *`Ambrose–Singer`, added to this list by the Cartan bake at r3164* | ⛭ **CLOSED**: named ×3 in `P12`/`P14` with `\cite{AmbroseSinger1953}` and an `\ldg{cartan_holonomy}` marker |
+| — | ⌗ *`Chebyshev`, which a reader might add as a sixth* | ⛔ **NOT A DEBT** — *the harmonic bake adjudicated it: **"`Chebyshev` ×0 is correct and not a gap: the corpus performs the Chebyshev expansion without naming Chebyshev"**, and `prop:triple`'s proof carries the substitution in full* |
 
 ⇒ **A bake's third product, after the bites and the bounces, is the recurrence no single field sees —
 and this is one.**
+
+> ⛭⛭ ***SWEPT r3750 BY 60, AND FOUR OF THE FIVE WERE ALREADY CLOSED.*** *This table, and the "naming
+> debt is now five deep" note the Cartan and involution bakes carry, had gone stale: the Atiyah
+> sequence, $N_{m eff}$, the baby universe and Ambrose–Singer are all named in the papers now.*
+> ⛔ ***Only matched-procedure differencing was genuinely open, and it is closed at r3750.***
+> ⌗ *The lesson is the class's own: **a naming debt closes silently** — someone writes the name while
+> doing something else, and nothing tells the ledger. So this kind of row needs re-measuring rather
+> than re-reading, which is a one-line grep and had not been run in ~590 revisions.*
 
 
 ## ⌗ THE BOUNDARY — WHAT THIS BAKE DID NOT REACH
