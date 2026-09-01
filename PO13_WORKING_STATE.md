@@ -65,6 +65,36 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⌗ r3741 — WORKING THE HEIGHT DEFECT ON THE CONTROL: THREE CANDIDATES ELIMINATED, THE DEFICIT IS IN THE SOURCE
+
+***`r3739` put the height residual on the control, where the target is known. This turn eliminates the
+three things that most often account for a factor like this.***
+
+| candidate | verdict |
+|---|---|
+| **is it $C_\ell$ rather than $D_\ell$?** | ⛔ **no** — line 737 returns `Cl * (ls*(ls+1))`, so it is $D_\ell$, matching the sky's convention |
+| **is the primordial tilt missing?** | ⛔ **no** — line 711, `P = kk**(0.965-1)/kk*dk`, $n_s=0.965$ is there |
+| **can diffusion damping account for it?** | ⛔ **no** — see below |
+
+*The control reports $\ell_D=1952$, so $e^{-2(\ell/\ell_D)^2}$ suppresses $P_3/P_1$ by $0.727$ and
+$P_2/P_1$ by $0.881$. **Removing damping ENTIRELY** gives $P_1/P_3=3.268$ and $P_1/P_2=2.398$ against the
+sky's $2.277$ and $2.217$.*
+
+⇒ ***Even with the damping switched off completely, the control's third peak is $44\%$ too weak.
+Diffusion cannot account for it, and the deficit is in the SOURCE.***
+
+⌗ *Lensing is eliminated too, and in the informative direction: the sky's ratios are **lensed** and the
+instrument's are not, and lensing SMOOTHS peaks — reducing $P_3$ more than $P_1$, which raises $P_1/P_3$.
+**It would make the discrepancy worse, not better.***
+
+⚠ ***WHAT THIS LOCALISES.*** *A third-peak deficit that survives damping removal, at the right positions,
+with $D_\ell$ and the tilt both correct, is the classic signature of **the potential's behaviour through
+the radiation-matter transition** — the term that boosts $P_3$ in $\Lambda$CDM and is what makes $P_3/P_1$
+a measurement of $\Omega_c$. **That is the same $\Psi$-through-recombination the `r3737` diagnosis
+reached from the other side, now reached on the arm where the answer is known.***
+
+---
+
 ## ⛔⛭⛭ r3739 — **THE CONTROL FAILS THE HEIGHTS TOO. THE HEIGHT RESIDUAL IS NOT A CR DEFECT.**
 
 ***The check that should have come first. The height machinery is SHARED by the two arms, so run the arm
