@@ -65,6 +65,50 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⛭⛭ r3733 — `prop:subhorizon` IS COMPUTED ON THE STACKING RATE, AND ON THE LEAF ITS MARGIN GOES
+
+***`prop:subhorizon` is the proposition that decides which handover datum is right, so its number matters.
+It reproduces on one rate and not the other.***
+
+| $k_{\rm hor}$(onset) at $z=6797$ | value | ratio to $\pi/\rs$ |
+|---|---|---|
+| **STACK** — geometric, no radiation | **0.01112** /Mpc | **2.09** |
+| **LEAF** — content gravitates | 0.01836 /Mpc | 1.26 |
+| *the paper states* | *$\sim0.010$* | *$\gtrsim2$* |
+
+⇒ ***So the proposition is computed on the STACKING rate.*** *And the perturbations run on the **LEAF** —
+`LEAFPERT`, default since `r3409`, and the rate rule's own assignment — so the horizon they are inside or
+outside of is the leaf's.*
+
+| $\ell$ | $k$ | $k/k_{\rm hor}$ STACK | $k/k_{\rm hor}$ LEAF |
+|---|---|---|---|
+| **220** | 0.01692 | 1.52 | ⛔ **0.92 — OUTSIDE** |
+| 538 | 0.04137 | 3.72 | 2.25 |
+| 810 | 0.06228 | 5.60 | 3.39 |
+
+⛔ ***On the leaf the FIRST-PEAK MODE IS MARGINALLY OUTSIDE THE HORIZON at the onset.*** *The proposition's
+"inside by a factor $\gtrsim2$" becomes "$1.26$, and the mode that matters most is at $0.92$".*
+
+### ⛭ AND THAT IS EXACTLY THE FORK BETWEEN THE TWO DATA
+
+*A mode **inside** the horizon at the onset has been oscillating and arrives with **its own accumulated
+phase** — the $k$-dependent reading, `CRAMP=onset`. A mode **outside** has not, and arrives with the
+super-horizon amplitude — the $k$-independent reading, `CRAMP=flat`.*
+
+⇒ ***The two readings are not two conventions. They are the two sides of `prop:subhorizon`, and which one
+holds depends on the rate the proposition is evaluated on.*** *On the stacking rate every acoustic mode is
+inside and `CRAMP=onset` follows. On the leaf the low-$k$ end straddles the boundary, so **neither reading
+is right across the whole band** — which is precisely the shape of the residual: `CRAMP=onset` fixes
+$P_1/P_3$ (high $k$, firmly inside on both rates) and breaks $P_1/P_2$ (lower $k$, where the two rates
+disagree).*
+
+⚠ ***AND THE PROPOSITION'S OWN QUALIFIER SURVIVES THIS.*** *`P15` already records that completeness holds
+"for the modes whose entry precedes the horizon maximum… **the low-$k$ end is where it would bite**". **The
+low-$k$ end is where it bites.** The paper flagged the right edge and the instrument was run as though the
+flag did not apply.*
+
+---
+
 ## ⛭⛭ r3729 — RUN: `CRPSI` REFUTED BY THE PAPER'S OWN WARNING, AND `CRAMP=seam` GIVES THE BEST COMB YET
 
 | configuration | $\ell_1$ | $\ell_2$ | $\ell_3$ | $P_1/P_2$ | $P_1/P_3$ |
