@@ -257,6 +257,44 @@ hundred-odd dissolutions" invites reading 182 word-hits as 182 findings.*
   a gap**: the harmonic bake adjudicated it in as many words, "the corpus performs the Chebyshev expansion
   without naming Chebyshev", and `prop:triple`'s proof carries the $\sin^3w=\tfrac14(3\sin w-\sin3w)$
   substitution in full.*
+- ⛭⛭⛭ **"SINGULARITY" IS TWO INDEPENDENT CONDITIONS, AND THE CONSTRUCTION REALISES EACH WITHOUT THE
+  OTHER.** *`P07` `sec:two-boundaries`, and it is not visible from any single result: the construction
+  crosses two boundaries where the standard reading stops, **and it crosses them for opposite reasons.***
+
+  | boundary | curvature | tortoise measure $r_*=\int\dd r/f$ | why crossable |
+  |---|---|---|---|
+  | **the event horizon** | **finite** | ⛔ **diverges** ($f\to0$) | *the geometry is regular there — a **metric** singularity, the spatial measure collapsing while the curvature does not* |
+  | **the branch point** | ⛔ **diverges** | **converges** ($f\to-2M/r$) | *the crossing **carries no scale**, over a finite imaginary interval* |
+
+  ⇒ ***"Singularity is habitually read as a single condition, with curvature blow-up and geodesic
+  incompleteness treated as two faces of one fact. They are independent."*** *The singularity theorems'
+  criterion is **the second** — incompleteness in an affine measure — *"and it is the one the horizon
+  fails to meet while the branch point meets it **in a form that continues rather than terminates**."**
+  ⌗ ***"A boundary is passable if either failure is absent, and the two failures do not coincide anywhere
+  in this construction."***
+  ⌗ *That is also what makes the imaginary-time segment **a well-posed object rather than a formal
+  manoeuvre**: it terminates where the curvature diverges but is crossed over a finite interval with $r_*$
+  finite, **so the divergence obstructs nothing**. ⛭ **"The same complementarity that lets the collapse be
+  read as a cosmology lets the beginning be read as a continuation."***
+
+- ⛭⛭ **THE LOCAL/COSMIC BOUNDARY IS A PER-STRUCTURE GEOMETRIC LOCUS — one substrate $\Lambda$ read at two
+  ranges.** *`P07`, third consequence of the closure: **"the single scale reaches down as well as out"** —
+  the same $\Lambda$ that sets the expansion sets, **for every mass**, the local boundary at which a
+  structure's gravitational hold gives way to the cosmic flow: the **Hubble--Eddington radius**
+  $r_{\rm HE}=(M\alpha^2)^{1/3}$, *"which the slicing geometry reads as the flat locus of the existent
+  slice, **the local bend of the cut cancelling the substrate's cosmological curvature**."*
+  ⇒ ***"The long-standing local--cosmic boundary — whether and where structure partakes in the expansion —
+  is thereby a per-structure geometric locus."*** ⌗ *And `P06` records that **the same radius is described
+  in seven independent idioms** by papers written for unrelated ends, with no single paper listing them
+  all — one of which locates it as **the exact radius at which the areal acceleration changes sign**. On
+  the forced Nariai member it is $\alpha/\sqrt3$, the front seam.*
+
+- ⌗ **AND TWO FURTHER CONSEQUENCES RECORDED THERE.** *Because **no finite ontological layer contains a
+  point-mass configuration**, density remains finite on every finite cosmic slice. And because the SdS
+  expansion is **observationally indistinguishable from flat $\Lambda$CDM at late times but differs at
+  early times**, the framework offers empirical discriminators **while retaining full agreement with the
+  tested predictions of general relativity**.*
+
 - ⛭⛭⛭ **AN EPISTEMOLOGY OF THEORY-CHOICE AS A SCIENCE, WITH HISTORIOGRAPHY AS ITS EMPIRICAL ENGINE.**
   *`P06` argues that treating theory-choice criteria as philosophy standing above science is **a category
   placement, and the wrong one**: the epistemology is a discipline **of the same kind as the sciences it
