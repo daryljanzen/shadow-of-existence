@@ -430,7 +430,29 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         else:
             raise SystemExit(f"CRAMP={_amp} is not a reading this instrument knows (flat|seam)")
         A_flat = -(3 * (np.sin(xe) - xe * np.cos(xe)) / xe ** 3) / 2
-        Ph0 = -np.ones(nk)
+        # ** CRPSI: THE HANDOVER POTENTIAL, WHICH sec:envelope DERIVES AND THIS LINE IGNORED.
+        # -- 59, r3729. **
+        # *`CRAMP` above opens the k-dependence of the AMPLITUDE and both its branches then set
+        # `Ph0 = -1`, flat in k, for every mode.  But `P15` `sec:envelope` derives the potential on
+        # the collapse leg in closed form -- Psi'' + (4/eta)Psi' + (k^2/3)Psi = 0, regular solution
+        # Psi = 3 Psi_i (sin x - x cos x)/x^3 = Psi_i T(x) -- which is the SAME `_T` already coded
+        # here, and `rem:branchpoint-not-a-condition` says outright that sec:envelope "supplies it in
+        # closed form: the potential from the leg's own equation".*
+        #   ⇒ ** The amplitude was given the transfer function and the potential was not. **
+        #   Across the observed comb the derived datum runs -0.92 at l=220 to -0.001 at l=1120 and
+        #   CHANGES SIGN near l~1400, against a coded -1 throughout.  The zero-point offset that
+        #   makes odd and even peaks shift differently is proportional to R*Psi: R is right in this
+        #   file and Psi was a constant.
+        #   CRPSI=flat      Ph0 = -1, k-independent          [the instrument as coded, DEFAULT]
+        #   CRPSI=envelope  Ph0 = -T(k c_s eta_S), the leg's own solution at the mode's own phase
+        # *No-op at its default; nothing moves unless set.*
+        _psi = os.environ.get('CRPSI', 'flat')
+        if _psi == 'envelope':
+            Ph0 = -_T(kk * _cs * ETA_S)
+        elif _psi == 'flat':
+            Ph0 = -np.ones(nk)
+        else:
+            raise SystemExit(f"CRPSI={_psi} is not a reading this instrument knows (flat|envelope)")
         That = _That0
         dg0 = 4.0 * (That - Ph0) * np.cos(_phi)
         th0 = 0.75 * (4.0 * (That + 1.0)) * kk * _cs * np.sin(_phi)

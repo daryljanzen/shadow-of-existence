@@ -65,6 +65,50 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⛭⛭ r3729 — RUN: `CRPSI` REFUTED BY THE PAPER'S OWN WARNING, AND `CRAMP=seam` GIVES THE BEST COMB YET
+
+| configuration | $\ell_1$ | $\ell_2$ | $\ell_3$ | $P_1/P_2$ | $P_1/P_3$ |
+|---|---|---|---|---|---|
+| coded default (`CRAMP=flat`) | 204 | 508 | 804 | 2.238 | **3.901** |
+| ⛭ **`CRAMP=seam`** | **212** | 508 | 796 | 1.672 | ⛭ **2.403** |
+| ⛔ `CRPSI=envelope` | 164 | 580 | 756 | 14.48 | 9.21 |
+| ⛔ both | 172 | 628 | 780 | **452.5** | 385.0 |
+| **THE SKY** | **220.6** | **538.1** | **809.8** | **2.217** | **2.277** |
+
+### ⛔ MY REMEDY WAS WRONG AND `P15` SAYS WHY, IN THE REMARK I QUOTED
+
+*I set $\Psi$ from the leg's closed form independently. **Both variants destroy the comb** — $P_1/P_2$
+reaches $452$.* ⌗ *`rem:branchpoint-not-a-condition`, the same remark that pointed me at `sec:envelope`,
+warns against exactly this: **"The Hamiltonian constraint is not an additional condition to impose there…
+Imposing it at the branch point alongside the leg's own solution therefore OVER-DETERMINES the
+handover."** The leg supplies the potential, the effective temperature **and the density contrast as their
+difference** — three quantities, one solution. **Setting one of them by hand breaks the other two**, and
+that is what $\Theta_0=\hat\Theta-\Psi$ changing sign across the band is.*
+
+⇒ ***The `r3727` diagnosis was half right: $\Psi$ IS flat where the paper derives a $k$-dependence. The
+remedy is not to impose it — it is to let the datum carry it where the freedom actually lives.***
+
+### ⛭ AND THAT IS `CRAMP=seam`, WHICH THE CORPUS ALREADY OFFERS
+
+*It reads the **same** closed form $T(x)$ at each mode's own phase at the seam rather than at a single
+argument — a reading the instrument's own comment calls "defensible" and "not invented here".*
+
+| | coded | `CRAMP=seam` | sky | |
+|---|---|---|---|---|
+| $\ell_1$ | 204 | **212** | 220.6 | *closer* |
+| $P_1/P_3$ | 3.901 | **2.403** | 2.277 | ⛭ ***from $71\%$ off to $5.5\%$ off*** |
+| $P_1/P_2$ | 2.238 | 1.672 | 2.217 | ⛔ *from $0.9\%$ to $25\%$ — the other way* |
+
+⇒ ***The height ratio that has been the corpus's worst failure moves almost onto the sky, and the one that
+was already right moves off it.*** *One knob, opposite effects on the two ratios — **which is the odd/even
+signature `r3725` predicted would be the thing in play**, now moving under a datum change rather than
+staying flat.*
+
+⚠ ***NOT A FIT.*** *`CRAMP` has two readings and both were in the file before this pass; neither was
+tuned. **What is new is that the second one was never run against the heights.***
+
+---
+
 ## ⛭⛭⛭ r3727 — **THE HANDOVER POTENTIAL IS DERIVED IN THE PAPER AND THE INSTRUMENT HANDS OVER A CONSTANT**
 
 ***`r3725` said the missing ingredient is $\Psi$. `P15` `sec:envelope` supplies it in closed form, and
