@@ -257,6 +257,37 @@ hundred-odd dissolutions" invites reading 182 word-hits as 182 findings.*
   a gap**: the harmonic bake adjudicated it in as many words, "the corpus performs the Chebyshev expansion
   without naming Chebyshev", and `prop:triple`'s proof carries the $\sin^3w=\tfrac14(3\sin w-\sin3w)$
   substitution in full.*
+- ⛭⛭⛭ **THE DIRAC CONSTRAINT ALGEBRA IS THE SUBSTRATE'S SYMMETRIC-SPACE GRADING, TERM FOR TERM.**
+  *`P07` "Standing features of general relativity, recovered". The algebra is **famously not a Lie
+  algebra** — its normal--normal bracket closes on the tangential generators with the inverse spatial
+  metric appearing as a **structure FUNCTION** rather than a constant.*
+  ⇒ ***On the symmetry-reducible sector it is the symmetric-space grading of $SO(5,1)/SO(4,1)$ term for
+  term***: *identify the **cut-deforming coset directions** with the Hamiltonian constraint and the
+  **cut-fixing isotropy** with the momentum constraint, and $[\mathfrak{m},\mathfrak{m}]\subset\mathfrak{h}$
+  **is the hypersurface-deformation bracket**.*
+  - ⛭ ***"The structure function is the substrate's own coset metric, and its base-variation across the
+    cuts is the canonical root of the problem of time."*** *The thing that makes the algebra not-a-Lie-algebra
+    is **identified**, not worked around.*
+  - ⌗ *And the dynamics follows: **a true-Hamiltonian flow through the strata of the sector, and ordinary
+    Einstein evolution beyond its boundary** — the wall being the regular, radiative generative boundary
+    at which generation-by-symmetry hands off, **distinct from the cosmogenesis branch point and no
+    singularity of either species itself**.*
+
+- ⛭⛭ **THE PROBLEM OF TIME AS ONE CONTENT UNDER TWO READINGS.** *`P07`: the frozen Hamiltonian constraint
+  is **"not a defect awaiting a technical repair but the canonical face of reading the four-dimensional
+  manifold as the existent"**; on the empirically forced cosmic foliation **the same constraint
+  deparametrizes to a true Hamiltonian generating the layer's advance**, ⇒ ***"the two being one content
+  under two readings, so the problem is dissolved rather than solved."***
+
+- ⛭⛭ **AND CHARGE CONJUGATION AND THE COSMOLOGY ARE ONE STRUCTURE.** *Closing the two-sided result:
+  **"the vertex on which charge conjugation's kinematic face turns is the very seam that completes
+  collapse into our expansion … the discrete residue of matter and the conjugation of charge two faces of
+  a single object."*** ⌗ *And it is **realised, not only exhibited**: "the built fermion sector realises
+  that face on its actual zero-modes, $R$ carrying each generation's wall-mode to its bound
+  opposite-chirality antimatter partner."* ⛔ *What it leaves open is stated and is **narrow and the matter
+  sector's rather than the framework's**: the identification of a wing with a **specific** charged
+  particle, the full antilinear $C$, and the world-correspondence of the reading.*
+
 - ⛭⛭⛭ **CHARGE CONJUGATION FACTORISES, AND THE SUBSTRATE SUPPLIES EVERY KINEMATIC DATUM OF IT.**
   *`P07` `sec:two-sided-closure`, set down **"as the result it is rather than deferred as a frontier"**:*
   $$C=(Q\mapsto-Q)_{\rm field}\circ(R\circ K)_{\rm geometric}$$
