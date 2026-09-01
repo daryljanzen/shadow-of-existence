@@ -257,6 +257,38 @@ hundred-odd dissolutions" invites reading 182 word-hits as 182 findings.*
   a gap**: the harmonic bake adjudicated it in as many words, "the corpus performs the Chebyshev expansion
   without naming Chebyshev", and `prop:triple`'s proof carries the $\sin^3w=\tfrac14(3\sin w-\sin3w)$
   substitution in full.*
+- ⛭⛭⛭ **GENERAL RELATIVITY'S COVARIANCE LIFTED ONE LEVEL — one substrate under change of GEOMETRY.**
+  *`P07` `sec:general-reach`: **"What general relativity holds as a catalogue of separate exact solutions
+  is, in this reading, the family of cuts of one de~Sitter substrate whose only scale is the throat radius
+  $\alpha=\sqrt{3/\Lambda}$: general relativity's own covariance — one geometry under change of chart —
+  lifted one level, to one substrate under change of geometry, with the slicing curve the gauge
+  object."***
+
+- ⛭⛭⛭ **AND IT ANSWERS THE CLASSIFICATION QUESTION: HOW MUCH OF THE CATALOGUE IS REAL MULTIPLICITY AND
+  HOW MUCH IS VANTAGE.** *The apparent multiplicity decomposes on **three orthogonal axes**:*
+
+  | axis | what it is | contents |
+  |---|---|---|
+  | ⛭ **VANTAGE** | *a **finite groupoid of causal readings of ONE fixed cut** — each changing **the reading, not the geometry**, organised as the discrete symmetry of the solution space* | *the backward-radial reflection $r\mapsto-r$ exchanging **de~Sitter and Schwarzschild**; the orientation parity $\pm M$ exchanging **black-hole and naked**; the slicing reassignment relating **Kantowski--Sachs and flat-FLRW readings of ONE SdS geometry**, differing by the rest-energy term alone; the null$\leftrightarrow$timelike reassignment relating **the collapse interior to the expanding cosmology*** |
+  | **GEOMETRIC** | *the moduli of genuinely distinct vacuum cuts* | *the one-parameter SdS family, the separable Type-D Kerr--NUT--(A)dS, the functional Weyl class, the homogeneous Bianchi families — **with mass, rotation and NUT charge the moduli transverse to the substrate's orbits*** |
+  | **MATTER** | *a third axis orthogonal to both* | ***charge and acceleration are not vacuum cuts but bends off the kernel*** |
+
+  ⇒ ***"The reducible catalogue is therefore ONE SUBSTRATE READ THROUGH A FINITE VANTAGE GROUPOID, OVER A
+  MODULI FAMILY OF VACUUM CUTS, WITH MATTER THE BEND."*** *Algebraic type is **no constraint on the reach**
+  — types O, D and I all filled — and **Type D is the separable corner where the substrate's symmetry
+  surfaces as the Carter constant rather than the edge.***
+
+- ⛭⛭ **THE FRIEDMANN INITIAL SINGULARITY, RECLASSIFIED.** *On that classification it is **the cosmogenesis
+  branch point OF the degenerate Nariai member of the homogeneous kernel** — **"a boundary of the cut, not
+  a breakdown of the geometry, its curvature divergent but its tortoise measure finite, which is why the
+  crossing carries no scale."*** ⌗ *And the paper states the distinction this session has been correcting
+  in the instruments: **"the branch point and the Nariai member are not the same locus"** — $r=0$ against
+  $\alpha/\sqrt3$ — **"and this paper elsewhere lists those as quantities never to be conflated."***
+
+- ⌗ **AND WHAT THE REDUCIBLE CLASSIFICATION LEAVES OPEN, NAMED BY THE PAPER ITSELF:** *the **irreducible
+  interior remainder** — the Kerr-inner and Reissner--Nordström-interior reassignments, which tie to the
+  matter side and lie in the interior geometry the reducible classification does not reach.*
+
 - ⛭⛭⛭ **"SINGULARITY" IS TWO INDEPENDENT CONDITIONS, AND THE CONSTRUCTION REALISES EACH WITHOUT THE
   OTHER.** *`P07` `sec:two-boundaries`, and it is not visible from any single result: the construction
   crosses two boundaries where the standard reading stops, **and it crosses them for opposite reasons.***
