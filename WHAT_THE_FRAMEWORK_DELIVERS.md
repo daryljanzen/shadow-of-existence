@@ -257,6 +257,18 @@ hundred-odd dissolutions" invites reading 182 word-hits as 182 findings.*
   a gap**: the harmonic bake adjudicated it in as many words, "the corpus performs the Chebyshev expansion
   without naming Chebyshev", and `prop:triple`'s proof carries the $\sin^3w=\tfrac14(3\sin w-\sin3w)$
   substitution in full.*
+- ⛭⛭⛭ **THE COSMOLOGICAL-CONSTANT PROBLEM LOSES ITS SUBJECT.** *`p0`, verbatim: the standard problem
+  needs **"a bare $\Lambda$ and a matter vacuum energy [as] distinct quantities whose sum must be finely
+  cancelled"**. Here $\Lambda$ is **the geometrically primary substrate curvature — the maximally
+  symmetric ground state's own scale, the single scale of the ledger** — and a constant vacuum energy is
+  **not a source held against a bare $\Lambda$** but is absorbed into that one observed curvature: a
+  constant density gravitates as a curvature scale, entering the profile's $\Lambda r^2/3$ term rather
+  than as a $2m/r$ bend.* ⇒ ***"There is no bare-$\Lambda$-versus-vacuum-energy split for the $10^{122}$
+  cancellation to act on — the substrate carries only the total."*** ⌗ *This is `P06`'s
+  **least-arbitrariness** move exactly: **a quantity is denied a referent**, and the fine-tuning has
+  nothing left to tune. ⛔ **`dark energy` and `dark matter` are $\times0$ in the corpus bodies, and that
+  absence is the result, not an omission**: $\Lambda$ is a curvature scale and the matter term is the
+  cut's offset, so neither is a substance whose density wants explaining.*
 - ⛭⛭⛭ **COSMIC EXPANSION ITSELF — and it answers an objection standing since 1933.** *`P06`:
   **"the initial expansion rate of the universe, which Eddington objected in 1933 was POSTULATED rather
   than explained — an unforced modulus — is supplied by the companion framework as a continuous process
