@@ -60,7 +60,14 @@ DRE = float(os.environ.get('DRE', DR))
 NK = int(os.environ.get('NK', '260'))
 LMAXL = float(os.environ.get('LMAXL', '1300'))
 RTOL = float(os.environ.get('RTOL', '1e-7'))
-LN = 12                                        # neutrino hierarchy depth
+# ** LN EXPOSED, r3745. **  *The free-streaming neutrino hierarchy is truncated at l_max = LN-2,
+# and a mode is resolved only while k*eta stays below that.  At recombination on the control arm
+# (eta_rec = 280.7, D_M = 13865): P1 sits at k*eta = 4.5, P2 at 10.9 and P3 at 16.4, against a
+# truncation at 10.  So the FIRST peak is resolved, the second is marginal and the THIRD IS ABOVE
+# THE TRUNCATION -- which is a defect that grows with l and does not move the comb, exactly the
+# shape of the height residual r3739 found on this arm.*
+#   ⇒ ** It was a hardcoded constant with no override, so it had never been varied. **
+LN = int(os.environ.get('LN', '12'))           # neutrino hierarchy depth
 BSPLIT = os.environ.get('BSPLIT', '1') != '0'  # baryons at their OWN contrast (c54.178)
 
 # ---- the two backgrounds -----------------------------------------------------------------------

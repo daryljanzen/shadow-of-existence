@@ -65,6 +65,47 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⛔ r3745 — `DRE` IS LOAD-BEARING, `LN` WAS UNDER-RESOLVED, AND RESOLVING IT MAKES THE DEFICIT **LARGER**
+
+### ⌗ `DRE` — the other half of the driving, and it cannot be scanned
+
+*`DRE=0` on the control destroys the comb outright: **two peaks, at 340 and 628**, where there should be
+three. The $k^2\Psi$ in the Euler equations is load-bearing, not a knob.* ⇒ ***With `r3743`'s result that
+`DRC`'s default is already its optimum, the driving is fully exonerated.***
+
+### ⛔ `LN` — a hardcoded constant that had never been varied
+
+*The free-streaming hierarchy truncates at $\ell_{\max}=LN-2=10$, and a mode is resolved only while
+$k\eta$ stays below that. On the control at recombination:*
+
+| peak | $\ell$ | $k\eta_{\rm rec}$ | vs truncation |
+|---|---|---|---|
+| $P_1$ | 220 | 4.5 | ⛭ resolved |
+| $P_2$ | 538 | 10.9 | ⛔ **under-resolved** |
+| $P_3$ | 810 | **16.4** | ⛔ **well above it** |
+
+*A defect that grows with $\ell$ and does not move the comb — **exactly the shape of the residual**. So it
+looked like the answer.*
+
+| `LN` | $\ell_1$ | $\ell_3$ | $P_1/P_2$ | $P_1/P_3$ | |
+|---|---|---|---|---|---|
+| 12 (default) | 220 | 804 | 2.721 | 4.496 | *P2, P3 under-resolved* |
+| **25** | 220 | 772 | 2.901 | ⛔ **8.009** | *resolved past $P_3$* |
+| **THE SKY** | 220.6 | 809.8 | **2.217** | **2.277** | |
+
+⛔ ***Resolving the hierarchy makes $P_3$ WEAKER, not stronger. The truncation was UNDER-DAMPING the
+high-$\ell$ modes and MASKING the deficit.***
+
+⇒ ***So `LN` is eliminated — and the true deficit is a factor $3.5$, not the $2.0$ `r3739` measured
+against an unconverged default.*** *Every height number in this thread was taken at `LN=12` and is
+therefore optimistic. **That is an instrument finding in its own right, independent of the height
+question: the high-$\ell$ output is not converged in the hierarchy depth, and the constant had no
+override, so nobody had checked.***
+
+⌗ *Exposed as `LN`, default `12`, verified a no-op.*
+
+---
+
 ## ⌗ r3743 — `DRC` SCANNED ON THE CONTROL: THE DEFAULT IS ITS OPTIMUM, SO THE DRIVING IS NOT THE KNOB
 
 | `DRC` | $\ell_1$ | $P_1/P_2$ | $P_1/P_3$ |
