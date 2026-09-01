@@ -243,6 +243,38 @@ and it came out the other way: honest, not load-bearing.***
 corpus and no paper says they are two. **The bake that treated them as one computed the first and read the
 second as an opening in it**, which is the concrete cost of the missing sentence.*
 
+### ⛭⛭ ONE BOUNDEDNESS ARGUMENT, FOUR SECTORS — `F18`/`F19`, functional-analysis bake; joined r3746 by 60
+
+> ⌗ *The `F15` row below was landed at r3591; **this one was recorded in the same ledger row as landed and
+> was not** — the row named both and only the compactness join reached the map. Placed here now, on the
+> same rule: **a claim about how corpus pieces relate is owned by the map, not by a paper.***
+
+| sector | the risk | what the construction supplies | what survives |
+|---|---|---|---|
+| **quantum** — `P10`, the Euclidean kernel | an unbounded-below Hamiltonian makes $K=e^{-\hat H\lvert\Delta\eta\rvert}$ **diverge** | *"mode by mode a harmonic oscillator, whose Hamiltonian is **bounded below**"* — no runaway direction to diverge along | **the kernel exists** |
+| **cosmological** — `P15`, the onset datum | *"a beginning at genuinely **unbounded** curvature places no finite floor under $z_{\rm onset}$ … and the single datum ceases to be a datum at all"* | the scale is set by $\alpha$ everywhere, so the divergence is **the areal coordinate degenerating** and not a scale of the geometry | **$\rho_r/\rho_m$ stays a DATUM** |
+| **fermionic** — `P14`, the Dirac index *(via `F14`)* | infinite leaf length $\Rightarrow$ not Fredholm $\Rightarrow$ **index undefined** | **finite** proper length in $\dd\ell=\dd r/\sqrt{\lvert f\rvert}$, through the Nariai limit | **the index equals THREE** |
+| **radiative** — `P11`, the TT oscillator | ghost, tachyon or **runaway** in the propagating mode | $Q$ bounded: its super-horizon branches go as $a^{-3}$ and as a **constant** | **a healthy massless de Sitter scalar** |
+
+⇒ ***ONE FORM, FOUR TIMES: an unbounded or infinite structure would destroy a well-defined quantity; the
+construction supplies the bound; the quantity survives.***
+
+⛭⛭ ***AND THE SAME SCALE DOES THE BOUNDING IN ALL FOUR.*** *$\alpha$ bounds the substrate's curvature
+(`P15`, explicitly), fixes the interval the areal radius runs on (`P10`), makes $f$'s zeros simple on a
+bounded interval (`P14`/`F14`), and sets the de Sitter rate whose $a$ the `P11` branches are read against.*
+⇒ **Not merely analogous — the same scale discharging the same duty in four sectors.**
+
+⛔ ***AND NO PAPER JOINS THEM.*** *`P10` argues its boundedness against the conformal-factor problem, `P15`
+against the $z_{\rm onset}$ limit, `P14`'s is established only through `F14`, and `P11` states its own in
+its own words with `bounded below` ×0.* ⌗ *Each is correct where it stands; what is absent is the sentence
+identifying them — which is why it is here and not in one of the four.*
+
+⌗ ***THE FOURTH INSTANCE ALSO CARRIED A MISATTRIBUTION, NOW CORRECTED IN THE PAPER.*** *`P11` said $Q$
+decays as $a^{-2}$; the $a^{-2}$ belongs to $W=a\,\delta\psi$, the rescaled variable the equation is
+written in. **The paper's conclusion was unaffected** — $Q$ is bounded either way — and the sentence is
+fixed at r3746 with its own receipt. *That is what a join is worth: setting four instances side by side is
+what exposed the one that was stated wrong.**
+
 ### ⛭ THREE COMPACTNESS STATUSES ON THREE SPACES — `F15`, functional-analysis bake
 
 | space | status | why | where |
