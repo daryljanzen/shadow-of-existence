@@ -257,6 +257,37 @@ hundred-odd dissolutions" invites reading 182 word-hits as 182 findings.*
   a gap**: the harmonic bake adjudicated it in as many words, "the corpus performs the Chebyshev expansion
   without naming Chebyshev", and `prop:triple`'s proof carries the $\sin^3w=\tfrac14(3\sin w-\sin3w)$
   substitution in full.*
+- ⛭⛭⛭ **NOT THREE UNIFICATIONS OWED BUT ONE OBJECT READ THREE WAYS.** *`P07` `sec:unification-scope`,
+  stated plainly **"for the scope is easily lost in the care of the parts"**. Three structures standard
+  physics assigns to **separate theories**:*
+
+  | what standard physics carries separately | what it is here |
+  |---|---|
+  | **GR's vacuum solution space** — its catalogue of exact geometries, carried as independent solutions | *the **symmetry-reducible cut-family** of the de~Sitter substrate* |
+  | **the discrete $CPT$ and charge-conjugation structure** — which QFT carries **with no tie to gravitation** | *the substrate's own $R\circ K$, **turning on the cosmogenesis bead's $r=0$ crossing*** |
+  | **$\mathfrak{su}(3)$ and the quantum of action** — colour and $\hbar$, carried as **data external to spacetime** | *borne on the substrate's **conjugate (Euclidean) real form** — the compact face of the one complex $\mathrm{SO}(6,\mathbb{C})$ **whose Lorentzian face carries the gravitational physics*** |
+
+  ⇒ ***"Not three unifications owed but ONE MAXIMALLY SYMMETRIC OBJECT READ THREE WAYS — on its cuts, on
+  its discrete residue, and on its two real forms."***
+
+  - ⌗ ***And $\mathfrak{su}(3)$ has TWO independent routes, which is where the honesty sits.*** *The
+    matter sector reaches the same algebra on the **real Lorentzian** side and **with no isometry at
+    all**: no bundle of the substrate can carry it, every candidate being real; **the module is the
+    branching itself**; the three wall monodromies with the hinge $3$-cycle **generate $SU(3)$**; and
+    second quantisation on the wall kernel **returns the hadron channels and selects the configuration
+    group uniquely**.*
+  - ⛔ ***"The two routes deliver different things and the difference is the honest part":*** *the compact
+    face is where a continuous algebra **with a curvature** could sit, while the Lorentzian route gives a
+    **FLAT** bundle — exact selection rules, the discrete content of colour, **and no force**.* ⇒ ***"The
+    unification's third leg is a delivery of colour's STRUCTURE and not of its COUPLING, and the geometry
+    quantises without coupling."***
+
+- ⛭⛭⛭ **AND RECOVERING GR's SECTOR IS NOT INHERITING ITS TROUBLES — the family `P06` points at, named.**
+  *`P07`: the black-hole singularity and **the whole family resting on a completed horizon — cosmic
+  censorship, the information paradox, the laws of black-hole mechanics, the horizon-induced Hawking
+  flux** — together with **closed timelike curves, the problem of time, and the hole argument**, are on
+  the layered reading ***"not inherited but dissolved: each is the shadow of one category error."***
+
 - ⛭⛭⛭ **THE DIRAC CONSTRAINT ALGEBRA IS THE SUBSTRATE'S SYMMETRIC-SPACE GRADING, TERM FOR TERM.**
   *`P07` "Standing features of general relativity, recovered". The algebra is **famously not a Lie
   algebra** — its normal--normal bracket closes on the tangential generators with the inverse spatial
