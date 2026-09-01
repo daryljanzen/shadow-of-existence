@@ -339,6 +339,13 @@ a measurement, and four of the six most recent bakes bounced.***
 ***A balance document that counts only what is delivered is the same failure as one that counts only what
 is open.*** *Measured in the bodies:*
 
+> ⛔⛭⛭ ***AND THE FIRST THING TO SAY ABOUT THIS TABLE IS THAT IT IS NOT A BACKLOG.*** *`do-not-assert`,
+> `not claimed` and `[reach]` are **DISCIPLINE, not debt** — verified by reading them: they decline the
+> **world-correspondence**, the **mass hierarchy's values**, the **propagating spinor sector**, the
+> content-level reading of a parity. **Those declines are correct as they stand and most of them SHOULD
+> remain declined**; "closing" one means doing the physics, not the paperwork. ⇒ **The ~64 items in the
+> first three rows are the corpus's scope discipline working. Only the fourth and fifth rows are owed.***
+
 | | count |
 |---|---|
 | **`do-not-assert`** markers | **38** |
