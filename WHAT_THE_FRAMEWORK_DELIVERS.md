@@ -257,6 +257,29 @@ hundred-odd dissolutions" invites reading 182 word-hits as 182 findings.*
   a gap**: the harmonic bake adjudicated it in as many words, "the corpus performs the Chebyshev expansion
   without naming Chebyshev", and `prop:triple`'s proof carries the $\sin^3w=\tfrac14(3\sin w-\sin3w)$
   substitution in full.*
+- ⛭⛭⛭ **CHARGE CONJUGATION FACTORISES, AND THE SUBSTRATE SUPPLIES EVERY KINEMATIC DATUM OF IT.**
+  *`P07` `sec:two-sided-closure`, set down **"as the result it is rather than deferred as a frontier"**:*
+  $$C=(Q\mapsto-Q)_{\rm field}\circ(R\circ K)_{\rm geometric}$$
+  | face | what it is | what it fixes / swaps |
+  |---|---|---|
+  | **$R$ — linear** | *the mass-reflection $r\mapsto-r$, $2M\mapsto-2M$; the $\mathbb{Z}_2$ of $\mathrm{Aut}(A_2)=D_6$* | *a linear isometry whose **sole fixed point is the bead's own $r=0$ crossing**, exchanging the species-regions $r>0$ and $r<0$ bijectively* |
+  | **$K$ — antilinear** | *the reality involution $\tilde\tau\mapsto\bar{\tilde\tau}$ on complexified cosmic time — **complex-analytic and geometric*** | *fixes the neutral real axis and **the self-conjugate photon congruence**, and swaps the two conjugate wings of the lap* |
+
+  ⛭⛭ ***AND THE TWO ARE THE TWO AXIS-SYMMETRIES OF ONE ANALYTIC OBJECT*** — *the plate
+  $\mathbb{C}_r\times\mathbb{C}_{\tilde\tau}$: the $r$-axis carrying $R$ with the $A_2$ hexad and **the
+  substrate's two rulings**, the $\tilde\tau$-axis carrying $K$ with **the lap's two wings**.* ⇒ ***"The
+  substrate's two rulings and the lap's two wings are therefore NOT two candidates awaiting a single
+  assignment but the linear and antilinear faces of that one plate"*** — *meeting at the $r=0$ crossing
+  that is $R$'s fixed point **and** the branch point the cosmogenesis completes.*
+
+  ⇒ ***$R\circ K$ is an antilinear involution reproducing $C$'s action on species, on $|2M|$, on the
+  mass-sign, and on the Feynman--Stückelberg particle$\leftrightarrow$antiparticle wing structure, while
+  being blind to the electric-charge sign — the metric carrying charge only through $Q^2$.*** *So **the
+  substrate supplies every kinematic ($CPT$/Feynman--Stückelberg) datum of $C$, and only the
+  electric-charge sign closes from the matter field.***
+  ⌗ ⛭ ***And the geometric factor's fixed point IS the bead's $r=0$ crossing — so the vertex on which
+  charge conjugation's kinematic face turns is the locus at which the cosmogenesis completes.***
+
 - ⛭⛭⛭ **OUR UNIVERSE ISSUED FROM AN ANTIMATTER BLACK HOLE — and the two branches carry EQUAL AND
   OPPOSITE ACTION.** *`P07` `thm:antimatter-progenitor`, which the theorem table carried as a title:
   the conjugate ($r<0$) branch is the areal reflection $r\mapsto-r$ of the expansion leg, and under the
