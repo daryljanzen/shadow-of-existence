@@ -257,6 +257,57 @@ hundred-odd dissolutions" invites reading 182 word-hits as 182 findings.*
   a gap**: the harmonic bake adjudicated it in as many words, "the corpus performs the Chebyshev expansion
   without naming Chebyshev", and `prop:triple`'s proof carries the $\sin^3w=\tfrac14(3\sin w-\sin3w)$
   substitution in full.*
+- ⛭⛭⛭ **THE AUGMENTATION OF GENERAL RELATIVITY — necessary AND sufficient, with no equation changed,
+  and the necessary half MEASURED.** *`P04` `thm:augmentation`, read in full rather than counted:
+  augmenting GR by **fixing a physical foliation and reading it ontologically** — the lapse the objective
+  rate of advance of the existent layer, the shift the relativity of synchrony — is **both necessary and
+  sufficient** for a coherent formal description of an existing, evolving world.*
+  - ***Necessary***: *the two parts are the pried-apart forms of the existence/occurrence and
+    synchrony/simultaneity distinctions, and **a description lacking the lapse part collapses existence
+    into occurrence** — the block reading, incoherent as a basic description.*
+  - ***Sufficient***: *they close **the only coherent escapes** — the "events exist" horn to the
+    existence/occurrence correction as a **category error**, the "no objective present" horn to the
+    synchrony/simultaneity correction as a **modal fallacy**, the latter **falsified outright by the
+    measured isotropy** — leaving no surviving alternative.*
+  - ⛭ ***"The augmentation alters none of general relativity's equations; it fixes which of the foliations
+    they admit is physical and reads that one as the existent."*** *And the measurement is what turns it
+    from a coherent option into a forced one: **the lapse the theorem requires is not posited but
+    measured.***
+
+- ⛭⛭⛭ **AND THE MEASUREMENT ITSELF IS A SEPARATE RESULT OF THE SAME PAPER, EXCLUDING A PROGRAMME BY THREE
+  ORDERS OF MAGNITUDE.** *Because $\ln(1+z)=\int H\,\dd t$, the CMB anisotropy separates **exactly** into a
+  source term fixed at last scattering and a cumulative term set by the integrated expansion along each
+  line of sight.* ⇒ ***So the observed isotropy of the monopole is a DIRECT MEASUREMENT of uniform
+  expansion, and "the common supposition that the isotropy is supplied by homogeneity at decoupling is a
+  CATEGORY ERROR."***
+  - *Quantified: a rate tracking the matter region by region would scatter $\sim10^{-3}$ across the sky
+    against an observed $\lesssim3\times10^{-6}$ — **and every choice in the estimate biases it downward,
+    so the number is a FLOOR.***
+  - ⛭ ***Distinct from Sachs--Wolfe and not a re-derivation of it***: *lumpiness on a single background
+    **telescopes** — the descent into a well undone climbing out, no $\sqrt N$ accumulation — while a
+    genuine differential expansion **accumulates, because there is nothing to cancel against.** **The
+    isotropy selects the telescoping picture over the accumulating one.***
+  - ⛭ ***The escape is closed rather than left open***: *a differential programme evades only by requiring
+    local rates to average to a common value in every direction, **which is itself a global uniform
+    expansion in a cosmic time — the very structure such programmes set out to dispense with.** The
+    observer-centred escape is closed by Copernican plus the independently measured isotropy of the
+    expansion history.*
+  - ⌗ *What is excluded is the expansion **rate**'s inhomogeneity. **The matter lumpiness is untouched** —
+    the density being the bend of the spatial cut — so uniform expansion and lumpy matter are consistent.*
+  - ⇒ ***One datum establishes, from the bottom up, the cosmic time, the uniformity of its advance, and —
+    within the observable region under Copernican — the MAXIMAL SYMMETRY OF ITS SLICES***, *all of it
+    **logically prior** to the notions of space, isotropy and homogeneity the standard model assumes.*
+
+- ⛭⛭ **AND THE HISTORY THE MEASUREMENT CLOSES.** *`P04` sets it down: Einstein posited the structure in
+  **February 1917**, explicitly "against the spirit of relativity", on the empirical ground that stellar
+  proper motions are small compared with $c$; de~Sitter countered a month later, placing the choice among
+  candidate universes **outside physical argument altogether** and objecting that in Einstein's solution
+  "time has a separate position"; Eddington defended it in 1920 on geometric grounds, in the declared
+  absence of any experimental knowledge on cosmical scales.* ⛭ ***"Einstein then went nearly silent on
+  cosmology for the rest of his life", and never addressed how the cosmic time his own assumption
+  distinguished stands to the relativity of simultaneity. The assumption was correct*** — *and the
+  objection correct as a description of the structure, though not as a reason to reject it.*
+
 - ⛭⛭⛭ **THE COSMOLOGICAL-CONSTANT PROBLEM LOSES ITS SUBJECT.** *`p0`, verbatim: the standard problem
   needs **"a bare $\Lambda$ and a matter vacuum energy [as] distinct quantities whose sum must be finely
   cancelled"**. Here $\Lambda$ is **the geometrically primary substrate curvature — the maximally
