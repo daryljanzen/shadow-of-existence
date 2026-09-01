@@ -257,6 +257,62 @@ hundred-odd dissolutions" invites reading 182 word-hits as 182 findings.*
   a gap**: the harmonic bake adjudicated it in as many words, "the corpus performs the Chebyshev expansion
   without naming Chebyshev", and `prop:triple`'s proof carries the $\sin^3w=\tfrac14(3\sin w-\sin3w)$
   substitution in full.*
+- ⛭⛭⛭ **AN EPISTEMOLOGY OF THEORY-CHOICE AS A SCIENCE, WITH HISTORIOGRAPHY AS ITS EMPIRICAL ENGINE.**
+  *`P06` argues that treating theory-choice criteria as philosophy standing above science is **a category
+  placement, and the wrong one**: the epistemology is a discipline **of the same kind as the sciences it
+  grounds, with the same object and the same method** — it reads the structure behind appearances (which
+  inference rules track the world) **by the science's own procedure, off the science's own record**.*
+  ⇒ ***Its data are episodes in which a structure favoured by the criteria AHEAD of a decisive non-local
+  measurement was then vindicated by it.*** *Four components made explicit: the **inference rule** (ask
+  what world must exist for the appearances to arise), its **operable form** (four rules of reasoning),
+  its **dual** (the modal fallacy), and its **constructive ordering** — ontology from evidence, kinematics
+  from ontology, coordinates from kinematics.*
+
+- ⛭⛭⛭ **THE MODAL FALLACY, AND ITS NAME IS EXACT RATHER THAN FIGURATIVE.** *`thm:modal`: **"From the
+  premise that the appearances contain no local discriminator between two candidate worlds, it does not
+  follow that the worlds are identical, nor that the structure distinguishing them does not exist. The
+  absence of a local test is not the absence of the fact."*** *It is the exact dual of the imperative —
+  the imperative infers a structure that must exist to cast the shadows; the fallacy denies the structure
+  because one shadow happens to be locally flat.*
+  ⌗ ⛭ ***AND THE EXACTNESS IS THE THEOREM.*** *"Locally flat" is **the technical condition** that every
+  point of an embedding has a neighbourhood in which it is standard — and **the whole subject of
+  high-dimensional topology turns on locally flat against wild embeddings precisely because local
+  standardness leaves the global invariant free**: a submanifold can be locally indistinguishable from the
+  trivial one at every point and globally knotted. **The metaphor is a theorem of topology.***
+
+- ⛭⛭ **THE EXPLANATION CONSTRAINT — an admissible world must EXHIBIT THE PROJECTION.** *Not discard the
+  perspectival appearances, and **not merely reproduce them**: exhibit the projection under which they
+  arise. ⌗ That is the constraint the whole reclassification move answers to, and it is what makes
+  "merely permits" a defect rather than a preference.*
+
+- ⛭⛭ **LEAST-ARBITRARINESS — AND ITS BOUNDARY, DRAWN IN THE SAME BREATH.** *A structure carrying an
+  unforced modulus **is not a single world but a family**, and is inadmissible on that ground; the
+  maximally symmetric structure is the unique one that **requires its own configuration**.*
+  ⛔ ***AND `P06` DRAWS THE LIMIT ITSELF, on the stated ground that "a criterion claimed to apply
+  everywhere is as suspect as one that applies only where it was formulated."*** *A modulus fixes how a
+  symmetry is **broken**, so an unforced choice that leaves the symmetry **maximal** lies OUTSIDE the
+  register — **and the dimension of a maximally symmetric substrate is the programme's first such case.**
+  "Where form is silent content may still decide." ⌗ **A criterion that declines its own strongest
+  available application is the opposite of a self-serving one.***
+
+- ⛭⛭ **THE VINDICATION LEMMA, STATED IN FALSIFIABLE FORM — AND GUARDED AGAINST SURVIVORSHIP.**
+  *`lem:vindication`: in the recorded episodes, when a direct non-local discriminator becomes available
+  **it confirms the structure already selected by the rules ahead of it**; selection by the rules is, on
+  that record, reliable. **"It is what converts the four rules from a creed into an instrument with a
+  track record."***
+  ⌗ ***And the honesty structure carried with it, at equal weight***: *the reflexive closure is stated and
+  then **immediately limited — "a reflexive closure is not soundness: a method can be coherently,
+  reflexively wrong"** — and the sampling that would test the lemma, **successes and failures alike,
+  together with the episodes in which the criterion was applied in print and disregarded**, is set out as
+  the discipline's first programme, ***"on the reasoning that a reliability estimate built from one's own
+  successes is survivorship and not measurement."***
+
+- ⌗ **AND THE FORWARD EVIDENCE IS A FAMILY, NOT AN EPISODE.** *`P06`: the cosmic rest frame vindicated by
+  the redshift-isotropy floor; a redshift-free expansion rate resolving the $H_0$ tension **without a
+  tuned background**; primordial abundances following from ordinary nuclear physics **on a hot dense
+  history the construction already possessed**. ⌗ *With the backward case held to the same standard: **"the
+  received narrative must itself be shadow-read before it can serve as evidence."***
+
 - ⛭⛭⛭ **THE AUGMENTATION OF GENERAL RELATIVITY — necessary AND sufficient, with no equation changed,
   and the necessary half MEASURED.** *`P04` `thm:augmentation`, read in full rather than counted:
   augmenting GR by **fixing a physical foliation and reading it ontologically** — the lapse the objective
