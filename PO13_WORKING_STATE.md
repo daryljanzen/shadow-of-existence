@@ -65,6 +65,39 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⌗ r3743 — `DRC` SCANNED ON THE CONTROL: THE DEFAULT IS ITS OPTIMUM, SO THE DRIVING IS NOT THE KNOB
+
+| `DRC` | $\ell_1$ | $P_1/P_2$ | $P_1/P_3$ |
+|---|---|---|---|
+| 0.0 — driving off | 204 | 4.216 | 11.625 |
+| ⛭ **1.0 — the default** | **220** | 2.721 | ⛭ **4.496** |
+| 1.5 | 228 | 2.567 | 7.495 |
+| **THE SKY** | **220.6** | **2.217** | **2.277** |
+
+⇒ ***$P_1/P_3$ is NON-MONOTONIC in `DRC`, with its MINIMUM at the default*** — *and $\ell_1=220$ against
+the sky's $220.6$ sits at the same value. **The continuity driving is correctly set, and its best possible
+value still leaves $P_1/P_3$ at $4.496$ against $2.277$.***
+
+⌗ ***So `DRC` is eliminated as well, and eliminated the strong way***: *not "it does not help" but **"it is
+already at its optimum and its optimum is not enough"**. A scan that had come out monotonic would have
+left a fitted value to argue about; this one does not.*
+
+### ⌗ THE ELIMINATION LIST FOR THE HEIGHT DEFECT, ON THE CONTROL
+
+| | |
+|---|---|
+| $C_\ell$ vs $D_\ell$ | ⛔ correct as coded |
+| primordial tilt $n_s$ | ⛔ present, $0.965$ |
+| diffusion damping | ⛔ **44% remains with it entirely removed** |
+| lensing | ⛔ would make it **worse** |
+| continuity driving `DRC` | ⛔ **already at its optimum** |
+
+⚠ ***AND THE POSITIONS ARE RIGHT THROUGHOUT.*** *At `DRC=1` the control gives $\ell_1=220$ against
+$220.6$. **Whatever is missing suppresses the third peak without moving the comb** — which is a narrow
+class of thing, and narrower now by five.*
+
+---
+
 ## ⌗ r3741 — WORKING THE HEIGHT DEFECT ON THE CONTROL: THREE CANDIDATES ELIMINATED, THE DEFICIT IS IN THE SOURCE
 
 ***`r3739` put the height residual on the control, where the target is known. This turn eliminates the
