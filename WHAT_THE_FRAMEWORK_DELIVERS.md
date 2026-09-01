@@ -420,6 +420,21 @@ control — validated against CAMB for its transfer —*
 ⇒ ***A DEFECT THAT SHOWS ON ΛCDM, WHERE THE ANSWER IS KNOWN, IS NOT A CR DEFECT.*** *And **CR beats the
 control on both ratios** — 12.7 and 13.2 against 22.7 and 97.5.*
 
+> ⛔⛭ **AND THE CONTROL'S FIGURES ABOVE ARE OPTIMISTIC — `r3745`, after this section was written.**
+> *`LN`, the free-streaming hierarchy depth, was a hardcoded `12` with no override, truncating at
+> $\ell_{\max}=10$. On the control at recombination $P_1$ sits at $k\eta=4.5$ and is resolved, $P_2$ at
+> $10.9$ is not, and $P_3$ at $16.4$ is **well above the truncation**.* ⇒ ***Resolved at `LN=25` the
+> control gives $P_1/P_3=8.009$, not $4.496$: the truncation was UNDER-DAMPING the high-$\ell$ modes and
+> MASKING the deficit, which is a factor $3.5$ rather than $2.0$.*** *Every height number in this section
+> was taken at `LN=12`. **The conclusion is unchanged and strengthened** — it is the CONTROL that grows
+> worse — but the high-$\ell$ output is not converged in hierarchy depth and the figures want re-running,
+> not re-quoting.*
+>
+> ⌗ *Seven candidates have now been eliminated on the control: $C_\ell$ vs $D_\ell$, the tilt, diffusion
+> damping (**44% remains with it entirely removed**), lensing (**would make it worse**), `DRC` (**already
+> at its optimum**), `DRE` (**load-bearing — zeroing it destroys the comb**), and `LN`. **The positions
+> stay right throughout**, so whatever is missing suppresses $P_3$ without moving the comb.*
+
 ⌗ *The path there is itself the argument. r3735 replaced a coded flag with a **derived** datum — $T$
 evaluated at the phase each mode has actually accrued since **its own** leaf-horizon entry, each mode's
 entry solved from the file's own grid rather than chosen. The combined error went **72.3% → 25.9%**, and
