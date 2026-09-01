@@ -65,6 +65,50 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⛭⛭⛭ r3727 — **THE HANDOVER POTENTIAL IS DERIVED IN THE PAPER AND THE INSTRUMENT HANDS OVER A CONSTANT**
+
+***`r3725` said the missing ingredient is $\Psi$. `P15` `sec:envelope` supplies it in closed form, and
+`rem:branchpoint-not-a-condition` says so outright: "the state itself is whatever the leg's evolution
+produces, and \S\ref{sec:envelope} supplies it in closed form: **the potential from the leg's own
+equation**, the effective temperature oscillating freely from horizon entry, and the density contrast as
+their difference."***
+
+*On the radiation-dominated collapse leg $\Psi''+(4/\eta)\Psi'+(k^2/3)\Psi=0$, whose regular solution is
+elementary and **even in $x$**, so the contracting leg carries it pointwise:*
+$$\Psi=3\Psi_i\frac{\sin x-x\cos x}{x^{3}},\qquad x=\frac{k\eta}{\sqrt3}$$
+*and $\hat\Theta=\Theta_0+\Psi$ removes the source exactly, $\hat\Theta''+(k^2/3)\hat\Theta=0$.*
+
+### ⛔ WHAT THE INSTRUMENT ACTUALLY HANDS OVER
+
+```
+Ph0 = -np.ones(nk)          # lines 339 and 433
+```
+
+***A constant. Flat in $k$, for every mode.***
+
+| $\ell$ | $k/\mathcal{H}$ | $x$ | $\Psi$ coded | $\Psi$ derived |
+|---|---|---|---|---|
+| **220** | 1.53 | 0.881 | $-1.000$ | $\mathbf{-0.9245}$ |
+| 538 | 3.73 | 2.154 | $-1.000$ | $\mathbf{-0.6065}$ |
+| 810 | 5.62 | 3.243 | $-1.000$ | $\mathbf{-0.2747}$ |
+| 1120 | 7.77 | 4.485 | $-1.000$ | $\mathbf{-0.0013}$ |
+| 1450 | 10.06 | 5.806 | $-1.000$ | $\mathbf{+0.0861}$ — *sign reversed* |
+
+⇒ ***The derived datum falls from $0.92$ to zero across the observed comb and CHANGES SIGN near
+$\ell\simeq1400$. The coded one is $1$ throughout.*** *That is a strong, monotone $k$-dependence imposed on
+the driving term at the handover — **exactly where `r3683` measured the driving failing as $k^{-1}$.***
+
+⌗ ***AND IT IS THE SAME INGREDIENT `r3725` NAMED.*** *The zero-point offset is $\propto R\Psi$; $R$ is
+right in the code and $\Psi$ is a constant where it should be the transfer function. **One wrong line
+accounts for the flat phase, the absent odd/even alternation, the $k^{-1}$ driving, and the height ratios
+that go with them.***
+
+⚠ ***NOT YET RUN.*** *This is a diagnosis from reading the paper against the code. **Whether replacing the
+constant with the closed form moves the comb onto the sky is the next calculation and it has not been
+done.***
+
+---
+
 ## ⛭⛭ r3725 — ONE DEFECT, TWO SYMPTOMS: THE COMB'S PHASE DOES NOT ALTERNATE, AND THAT IS MISSING $\Psi$
 
 ***With the scale settled at `r3723`, the peaks are the whole problem. This turn reads them rather than
