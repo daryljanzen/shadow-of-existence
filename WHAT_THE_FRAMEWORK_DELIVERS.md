@@ -279,6 +279,26 @@ hundred-odd dissolutions" invites reading 182 word-hits as 182 findings.*
   - ⛭ ***And the paper says why that is the stronger claim***: *"a construction could make each branch
     call the other antimatter while still preferring one dynamically, **and this one does not**." **The
     labels being relational is the weak version; the actions cancelling identically is the strong one.***
+  - ⛭ ***AND IT IS ROBUST BY CONSTRUCTION, NOT BY LUCK***: *"the oddness doing the work is **the same
+    oddness that fixes the chirality parity and the progenitor's identity**, so the balance cannot be
+    lifted by refining the crossing — **what would have to fail is the relation that makes the progenitor
+    antimatter in the first place**."*
+  - ⛔ ***AND THE LIMIT DECLARED IN THE SAME BREATH***: *"any observed asymmetry accordingly enters through
+    the **charge sign carried by the matter field, which the geometry does not supply**." **The
+    baryon-asymmetry question is handed to the field level explicitly, not absorbed.***
+  - ⛔ ***AND IT MAKES NO BARYOGENESIS CLAIM, said outright***: *"the matter/antimatter relation it fixes
+    is the $R$-conjugation of the two branches across the bead, **a relational fact between the progenitor
+    cosmos and ours, not an asymmetry generated at either seam**."*
+  - ⛭⛭ ***AND OUT OF THE SAME STRUCTURE, A GEOMETRIC FACTORISATION OF CHARGE CONJUGATION.*** *The standing
+    $R$-conjugation is the **linear** face; composed with the reality involution
+    $\tilde\tau\mapsto\bar{\tilde\tau}$ — **the antilinear geometric face** — it *"reproduces charge
+    conjugation's kinematic (Feynman--Stückelberg) content, only the electric-charge sign closing from the
+    field"*. ⇒ ***So the cosmogenetic bead's own $r=0$ crossing carries $C$'s kinematic face***, *and $C$
+    is exhibited as a composite of two geometric involutions rather than imposed.*
+  - ⌗ *Proved from **three established facts sharing one object**: the conjugate branch is the
+    antifundamental under $R$; the bead **closes through $r=0$** ($g_{\theta\theta}=r^2$ sign-insensitive,
+    the substrate $C^\infty$ across it, the radial null congruence continuous across it); and collapse
+    cannot terminate but continues as a cosmology.*
 
 - ⛭⛭⛭ **GENERAL RELATIVITY'S COVARIANCE LIFTED ONE LEVEL — one substrate under change of GEOMETRY.**
   *`P07` `sec:general-reach`: **"What general relativity holds as a catalogue of separate exact solutions
