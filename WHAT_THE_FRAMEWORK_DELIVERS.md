@@ -257,6 +257,26 @@ hundred-odd dissolutions" invites reading 182 word-hits as 182 findings.*
   a gap**: the harmonic bake adjudicated it in as many words, "the corpus performs the Chebyshev expansion
   without naming Chebyshev", and `prop:triple`'s proof carries the $\sin^3w=\tfrac14(3\sin w-\sin3w)$
   substitution in full.*
+- ⛭⛭⛭ **COSMIC EXPANSION ITSELF — and it answers an objection standing since 1933.** *`P06`:
+  **"the initial expansion rate of the universe, which Eddington objected in 1933 was POSTULATED rather
+  than explained — an unforced modulus — is supplied by the companion framework as a continuous process
+  occupying no cosmic time, with the divergent rate and deceleration exhibited as EFFECTIVE, perspectival
+  consequences of parametric motion rather than dynamical causes."*** ⌗ *And `P06` adds the datum about
+  the datum: **that the criterion identified the shape of that answer ninety years before the means
+  existed to compute it.***
+- ⛭⛭⛭ **THE BOUND/EXPANSION BOUNDARY IN SEVEN INDEPENDENT IDIOMS.** *`P06`: "one observed boundary — **the
+  radius at which a bound structure's hold gives way to the cosmic expansion** — is described in **seven
+  independent idioms by papers written for unrelated ends**, six geometric or structural and one
+  dynamical, the last locating it as the exact radius at which the **areal acceleration changes sign**,
+  and **no single paper of the programme listing them all**."* ⇒ ***That radius is $r_{\rm HE}=(M\alpha^2)^{1/3}$,
+  and on the forced Nariai member $\alpha=3\sqrt3M$ it is $3M=\alpha/\sqrt3$ — **the front seam.** A
+  dynamical scale and a geometric one at the same locus, so `P08`'s handover and `P07`'s causal
+  reassignment are **one thing at one radius**.*
+- ⛭⛭ **A FAMILY OF GR's STANDING PROBLEMS DISSOLVING TOGETHER UNDER ONE DISTINCTION** — *`P06`, with
+  **each standard patch identified as a device that merely permits a resolution.*** ⌗ *And the correction
+  `P06` makes to the programme's own self-account: **the dissolutions are not one move recurring but TWO**
+  — reclassification, which exhibits a projection, and least-arbitrariness, which denies a quantity a
+  referent.*
 - ⛭⛭ **AND THE EUCLIDEAN LAYER IS FORTY-FOUR PROVED IDENTITIES, NOT THREE.** *`FIGURE_THEOREM_LEDGER`
   carries **44 distinct `⊢ PROVED` entries**, each an identity, definition or verified computation with
   its receipt named, kept in three registers that **do not blur** — `⊢ PROVED` · `≈ RHYME` (asserted
