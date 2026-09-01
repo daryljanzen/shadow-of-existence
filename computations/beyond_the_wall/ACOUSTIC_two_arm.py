@@ -209,7 +209,14 @@ else:
         brentq(lambda z: np.pi * D_M / rs_from(z) - _latarg, 1500., 60000.)
     R_S = rs_from(Z_START)
 A_START = 1.0 / (1.0 + Z_START)
-ETA_S = float(np.interp(A_START, ag, eg))
+# ** RENAMED ETA_S -> ETA_ON, r3731. **  *This is the conformal time at the ONSET, A_START --
+# z ~ 6.8e3, the perturbation datum.  It was called ETA_S for "seam", and the FRONT SEAM is
+# r = +alpha/sqrt3, the Nariai double root where f and f' vanish together: a different locus
+# with nothing to do with the acoustic spectrum.  r3681 corrected sixteen such comments across
+# computations/ and missed the VARIABLE NAME and the FLAG VALUE in this file, so a result was
+# reported at r3729 as holding "at the seam" when it holds at the onset.*
+#   ⇒ ** This is a branch-point/onset problem throughout. The front seam does not enter it. **
+ETA_ON = float(np.interp(A_START, ag, eg))
 ETA_END = float(os.environ.get('ETAEND', 0)) or float(np.interp(min(20 * A_REC, 1.0), ag, eg))
 L_A = np.pi * D_M / R_S
 
@@ -339,7 +346,7 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         Ph0 = -np.ones(nk)
         dg0 = -2.0 * Ph0
         dc0 = 0.75 * dg0
-        th0 = 0.5 * kk ** 2 * ETA_S * Ph0
+        th0 = 0.5 * kk ** 2 * ETA_ON * Ph0
         y0[:, 0], y0[:, 1] = dc0, th0
         y0[:, 2], y0[:, 3] = dg0, th0
         y0[:, 4], y0[:, 5] = dg0, th0
@@ -360,7 +367,7 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         # invariance of the transfer and says nothing about the datum.  *CRPHI = 0 is the choice as
         # coded and is the default; nothing moves unless it is set.*
         #
-        # For a mode already sub-horizon at the seam, delta_g = D cos(k c_s (eta - eta_S) + phi),
+        # For a mode already sub-horizon at the onset, delta_g = D cos(k c_s (eta - eta_S) + phi),
         # and the code's own continuity equation d(delta_g)/deta = -(4/3) theta_g gives
         # theta_g = (3/4) D k c_s sin(phi).  phi = 0 is a density extremum with theta = 0.
         # ** CRPHI=entry -- THE FROZEN-MODE CONDITION CARRIED FORWARD, r3369 (node 57). **
@@ -380,7 +387,7 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         #   SPACING correction and not only an offset.  ** Default unchanged; nothing moves unless set. **
         _phi_mode = os.environ.get('CRPHI', '0.0')
         if _phi_mode in ('entry', 'entryleaf'):
-            # ** entryleaf: the seam IC reckoned on the LEAF clock (58's start-time test).  Horizon
+            # ** entryleaf: the ONSET IC reckoned on the LEAF clock (58's start-time test).  Horizon
             # entry is detected with the leaf comoving Hubble, and the pre-onset acoustic phase is
             # integrated in eta_leaf (d eta_leaf = Jac * d eta_stack).  'entry' keeps the stack clock
             # (node 57 r3369).  Diagnostic of whether the under-produced odd-even alternation is the
@@ -396,7 +403,7 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
                 _e_in = float(np.interp(ag[_in[0]], ag, eg))
                 _phi[_j] = _k * quad(
                     lambda e: (float(Jac_of(e)) if _leaf else 1.0)
-                    / np.sqrt(3.0 * (1.0 + float(Rb_of(e)))), _e_in, ETA_S, limit=200)[0]
+                    / np.sqrt(3.0 * (1.0 + float(Rb_of(e)))), _e_in, ETA_ON, limit=200)[0]
             print(f"    CRPHI={_phi_mode}: phi(k) spans {_phi.min():.4f} to {_phi.max():.4f} rad "
                   f"({_phi.max()/np.pi:.3f} pi); {int((_phi == 0).sum())} of {nk} modes still frozen")
         else:
@@ -415,20 +422,20 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         # at a SINGLE argument xe = 1/sqrt(3) for every mode -- which is that shape read at each
         # mode's OWN horizon crossing (x = k c_s eta with k eta = 1), a self-similar reading and a
         # defensible one.  ** The alternative reading evaluates the SAME shape at each mode's own
-        # phase AT THE SEAM, x = k c_s eta_S, so modes that crossed earlier get a smaller amplitude.
+        # phase AT THE ONSET, x = k c_s eta_ON, so modes that crossed earlier get a smaller amplitude.
         # Both are readings of "one datum per mode"; neither is invented here. **
         #   CRAMP=flat  Theta-hat = T(xe), k-independent          [the instrument as coded, default]
-        #   CRAMP=seam  Theta-hat = T(k c_s eta_S), k-dependent
+        #   CRAMP=onset Theta-hat = T(k c_s eta_ON), k-dependent   ['seam' accepted, deprecated]
         # *A scan that moves the SPACING is the one that would matter -- the phase moved only the
         # position.  This knob is a no-op at its default and nothing moves unless it is set.*
-        _cs = 1.0 / np.sqrt(3.0 * (1.0 + float(Rb_of(ETA_S))))
+        _cs = 1.0 / np.sqrt(3.0 * (1.0 + float(Rb_of(ETA_ON))))
         _amp = os.environ.get('CRAMP', 'flat')
-        if _amp == 'seam':
-            _That0 = -_T(kk * _cs * ETA_S) / 2.0
+        if _amp in ('onset', 'seam'):
+            _That0 = -_T(kk * _cs * ETA_ON) / 2.0
         elif _amp == 'flat':
             _That0 = (-_T(xe) / 2.0) * np.ones(nk)
         else:
-            raise SystemExit(f"CRAMP={_amp} is not a reading this instrument knows (flat|seam)")
+            raise SystemExit(f"CRAMP={_amp} is not a reading this instrument knows (flat|onset)")
         A_flat = -(3 * (np.sin(xe) - xe * np.cos(xe)) / xe ** 3) / 2
         # ** CRPSI: THE HANDOVER POTENTIAL, WHICH sec:envelope DERIVES AND THIS LINE IGNORED.
         # -- 59, r3729. **
@@ -448,7 +455,7 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         # *No-op at its default; nothing moves unless set.*
         _psi = os.environ.get('CRPSI', 'flat')
         if _psi == 'envelope':
-            Ph0 = -_T(kk * _cs * ETA_S)
+            Ph0 = -_T(kk * _cs * ETA_ON)
         elif _psi == 'flat':
             Ph0 = -np.ones(nk)
         else:
@@ -511,9 +518,9 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
 
     if y_init is not None:
         y0 = y_init
-    sol = solve_ivp(rhs, [ETA_S, e_end], y0.ravel(), method='RK45', rtol=RTOL, atol=1e-12,
+    sol = solve_ivp(rhs, [ETA_ON, e_end], y0.ravel(), method='RK45', rtol=RTOL, atol=1e-12,
                     dense_output=(t_eval is None), t_eval=t_eval,
-                    max_step=(e_end - ETA_S) / 200)
+                    max_step=(e_end - ETA_ON) / 200)
     return sol, nk, NV
 
 
@@ -568,7 +575,7 @@ def qscan():
     for tag, dc, de in CONFIGS:
         DRC, DRE = dc, de
         sol, nk, NV = evolve(KS)
-        ee = np.linspace(ETA_S + 1e-6, eta_rec, 4000)
+        ee = np.linspace(ETA_ON + 1e-6, eta_rec, 4000)
         Y = np.array([sol.sol(e).reshape(nk, NV) for e in ee])
         # ** Theta_0 = delta_gamma/4, THE SAME VARIABLE IN BOTH COLUMNS. **  The first draft used
         # Theta-hat = Theta_0 + Psi, and Psi is NOT switched off by DR -- only its couplings INTO
@@ -606,7 +613,7 @@ def qscan():
             # takes the acoustic turnover, not the transient.  Default 0 = unchanged; the undriven
             # column (no transient) is unaffected at any QMIN < 1. **
             _qmin = float(os.environ.get('QMIN', '0'))
-            _cand = [(t, KS[i] * sound_phase(ETA_S, ee[t + 1]) / np.pi) for t in turn]
+            _cand = [(t, KS[i] * sound_phase(ETA_ON, ee[t + 1]) / np.pi) for t in turn]
             _cand = [(t, qv) for t, qv in _cand if qv > _qmin]
             if not _cand:
                 q.append(np.nan); continue
@@ -780,7 +787,7 @@ def alias_gate(kk):
 # envelope carries only the deep tail where it is most accurate. **  That number is printed, and it
 # is the justification for the split rather than a hope about it.
 #
-#   segment 1   the fluid, exactly as before, from ETA_S to eta_sw
+#   segment 1   the fluid, exactly as before, from ETA_ON to eta_sw
 #   segment 2   the hierarchy from eta_sw, initialised on the TIGHT-COUPLING values of F_2, G_0, G_2
 #               so that no relaxation transient is charged to the physics
 #
@@ -995,7 +1002,7 @@ def main():
     print("=" * 78)
     print(f"  rate: {'radiation-INCLUDED' if RAD_IN_RATE else 'GEOMETRIC (L1)'}   "
           f"H0={H0}  Om={OM}")
-    print(f"  z_start = {Z_START:.4g}   eta_start = {ETA_S:.3f}   eta_rec = {eta_rec:.1f}   "
+    print(f"  z_start = {Z_START:.4g}   eta_start = {ETA_ON:.3f}   eta_rec = {eta_rec:.1f}   "
           f"eta_end = {ETA_END:.0f}")
     print(f"  D_M = {D_M:.0f} Mpc   r_s = {R_S:.2f} Mpc   l_A = pi D/r_s = {L_A:.1f}   "
           f"modes = {len(kk)}")
@@ -1007,7 +1014,7 @@ def main():
         # points; past it only the ISW survives and it is smooth. **  A single uniform grid over
         # eta = 54-4000 spent most of its samples where the source is identically zero.
         n_los = int(os.environ.get('NLOS', '560'))
-        e_lo = max(ETA_S + 1e-6, ETA_LS - 6.0 * ETA_LS_W)
+        e_lo = max(ETA_ON + 1e-6, ETA_LS - 6.0 * ETA_LS_W)
         e_hi = ETA_LS + 6.0 * ETA_LS_W
         EE = np.concatenate([np.linspace(e_lo, e_hi, int(0.75 * n_los), endpoint=False),
                              np.linspace(e_hi, ETA_END, n_los - int(0.75 * n_los))])
@@ -1045,10 +1052,10 @@ def main():
     if os.environ.get('PHISAVE'):
         _pk = argrelextrema(np.abs(TH0), np.greater, order=4)[0]
         _pk = _pk[(kk[_pk] * R_S / np.pi < 4)][:3]        # first three peak modes
-        _etg = np.linspace(ETA_S, eta_rec, 500)
+        _etg = np.linspace(ETA_ON, eta_rec, 500)
         _Yg = sol.sol(_etg).reshape(nk, NV, len(_etg))    # (nk, NV, neta)
         np.savez(os.environ['PHISAVE'], eta=_etg, phi=_Yg[_pk, 6, :], dg=_Yg[_pk, 2, :],
-                 qpk=kk[_pk] * R_S / np.pi, kpk=kk[_pk], arm=ARM, eta_rec=eta_rec, eta_s=ETA_S)
+                 qpk=kk[_pk] * R_S / np.pi, kpk=kk[_pk], arm=ARM, eta_rec=eta_rec, eta_s=ETA_ON)
         print(f"  PHISAVE: Phi(eta) for peak modes q={[round(float(kk[j]*R_S/np.pi),2) for j in _pk]} "
               f"-> {os.environ['PHISAVE']}")
 
