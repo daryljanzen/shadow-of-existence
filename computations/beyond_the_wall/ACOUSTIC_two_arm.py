@@ -430,12 +430,34 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         # position.  This knob is a no-op at its default and nothing moves unless it is set.*
         _cs = 1.0 / np.sqrt(3.0 * (1.0 + float(Rb_of(ETA_ON))))
         _amp = os.environ.get('CRAMP', 'flat')
-        if _amp in ('onset', 'seam'):
+        if _amp == 'entry':
+            # ** CRAMP=entry -- THE PHASE EACH MODE HAS ACTUALLY ACCUMULATED, r3735. **
+            # *`prop:subhorizon` decides between the two readings below, and r3733 measured that it
+            # is computed on the STACKING rate: k_hor(onset) = 0.01112 /Mpc there against 0.01836 on
+            # the LEAF, which is the rate the perturbations run on.  On the leaf the l=220 mode sits
+            # at k/k_hor = 0.92 -- OUTSIDE -- so neither reading holds across the band, and P15's
+            # own qualifier says so: completeness holds "for the modes whose entry precedes the
+            # horizon maximum ... the low-k end is where it would bite".*
+            #   ⇒ ** So evaluate T at the phase each mode has ACTUALLY accrued since ITS OWN leaf
+            #   horizon entry: x = k c_s (eta_on - eta_entry), and x = 0 for a mode still outside,
+            #   where T -> 1 is the super-horizon value. **  One function, no flag, and it reduces
+            #   to `flat` at the bottom of the band and to `onset` well above it.
+            _m = eg <= ETA_ON                            # the leg up to the onset
+            _eg_l, _ke_l = eg[_m], np.asarray(Hl_of(eg[_m]), float)   # comoving leaf Hubble, 1/Mpc
+            _o = np.argsort(_ke_l)                       # k_hor RISES backwards in eta
+            _xin = np.zeros(nk)
+            for _i, _kv in enumerate(kk):
+                if _kv >= _ke_l[_o][0] and _kv <= _ke_l[_o][-1]:
+                    _ee = float(np.interp(_kv, _ke_l[_o], _eg_l[_o]))
+                    _xin[_i] = max(_kv * _cs * (ETA_ON - _ee), 0.0)
+                # else: never entered by the onset -> x = 0, T -> 1, the super-horizon value
+            _That0 = -_T(_xin) / 2.0
+        elif _amp in ('onset', 'seam'):
             _That0 = -_T(kk * _cs * ETA_ON) / 2.0
         elif _amp == 'flat':
             _That0 = (-_T(xe) / 2.0) * np.ones(nk)
         else:
-            raise SystemExit(f"CRAMP={_amp} is not a reading this instrument knows (flat|onset)")
+            raise SystemExit(f"CRAMP={_amp} is not a reading this instrument knows (flat|onset|entry)")
         A_flat = -(3 * (np.sin(xe) - xe * np.cos(xe)) / xe ** 3) / 2
         # ** CRPSI: THE HANDOVER POTENTIAL, WHICH sec:envelope DERIVES AND THIS LINE IGNORED.
         # -- 59, r3729. **

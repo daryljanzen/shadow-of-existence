@@ -65,6 +65,46 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⛭⛭⛭ r3735 — `CRAMP=entry`: THE DERIVED DATUM BEATS BOTH FLAGS, AND THE ODD/EVEN IMBALANCE IS GONE
+
+***One function, no flag. `r3733` showed neither coded reading holds across the band on the leaf, so the
+datum is $T$ evaluated at the phase each mode has ACTUALLY accrued since ITS OWN leaf horizon entry:
+$x=k c_s(\eta_{\rm on}-\eta_{\rm entry})$, and $x=0$ for a mode still outside, where $T\to1$ is the
+super-horizon value.***
+
+*Computed rather than chosen — each mode's entry solved from $k=aH_{\rm leaf}$ on the file's own grid:*
+
+| $\ell$ | $z_{\rm entry}$ | $x$ | $T(x)$ |
+|---|---|---|---|
+| **220** | ***never enters*** | 0.000 | **1.0000** |
+| 538 | 17,383 | 0.842 | 0.9308 |
+| 810 | 27,082 | 1.585 | 0.7704 |
+| 1450 | 49,954 | 3.317 | 0.2541 |
+
+*against the coded reading's $T(1/\sqrt3)=0.9671$ for **every** mode.*
+
+### ⛭ THE RESULT
+
+| reading | $P_1/P_2$ | err | $P_1/P_3$ | err | combined |
+|---|---|---|---|---|---|
+| `flat` (coded) | 2.238 | $0.9\%$ | 3.901 | $71.3\%$ | $72.3\%$ |
+| `onset` | 1.672 | $24.6\%$ | 2.403 | $5.5\%$ | $30.1\%$ |
+| ⛭ **`entry` (derived)** | **1.935** | $12.7\%$ | **2.578** | $13.2\%$ | ⛭ **$25.9\%$** |
+| **THE SKY** | **2.217** | | **2.277** | | |
+
+⇒ ***The derived datum is the best combined — and the error CHANGES CHARACTER, which matters more than
+the number.*** *`flat` has one ratio near-perfect and the other $71\%$ off; `onset` has that imbalance
+reversed. **`entry` has both off by $\sim13\%$ in the SAME direction, both low.***
+
+⛭ ***THE ODD/EVEN IMBALANCE IS GONE.*** *That was the defect `r3725` named from the phase structure and
+`r3729` saw moving under a datum change. **It is no longer there — what remains is a uniform
+normalisation**, which is a different and simpler problem than the one this thread started with.*
+
+⚠ ***THE POSITIONS DID NOT MOVE:*** *$204/508/804$, identical to the coded default. **The datum fixes the
+heights and not the comb**, so the position deficit is a separate residual and is not addressed here.*
+
+---
+
 ## ⛭⛭ r3733 — `prop:subhorizon` IS COMPUTED ON THE STACKING RATE, AND ON THE LEAF ITS MARGIN GOES
 
 ***`prop:subhorizon` is the proposition that decides which handover datum is right, so its number matters.
