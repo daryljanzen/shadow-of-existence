@@ -5,6 +5,11 @@ current: r2160
 job: Where the closure self-check is DEFINED, with its four verdicts: OPENED · WORKED-SHUT · SURFACED · CODA-FIX.
 sources: [cowork]
 ---
+> ⌗ **COMPANION — [`WHAT_THE_FRAMEWORK_DELIVERS.md`](WHAT_THE_FRAMEWORK_DELIVERS.md)**, *the inventory of
+> delivered results counted from the papers: 188 formal environments, the fourteen theorems by name, the
+> empirical correspondences, and the one open residual at its true relative size. **Read it when weighing
+> the programme as a whole, or when an open problem has begun to loom larger than it is.***
+
 
 # THE CLOSURE LEDGER — the fifth axis's eradication face (Face B)
 

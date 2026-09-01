@@ -216,6 +216,16 @@ reading the disposition early would let it bend how the evidence is received —
    never before it).
    *Taking the why-layer in early bends how the evidence is received, which is why the engine, the
    portrait and the wisdom ledger sit here as capstones read last, and not at setup.*
+8c. **What the corpus delivers, counted** — `WHAT_THE_FRAMEWORK_DELIVERS.md`. *The inventory of the
+   programme's results — **counted from the papers, not recalled**: 188 formal environments, the fourteen
+   theorems by name, the empirical correspondences against what is measured, the dissolutions, the
+   structural recoveries, the cross-field joins, and the one open residual **at its true relative size**.*
+   *It sits **here**, after the bodies and the coda and before the map, for the same reason the coda does:
+   read earlier it would bend how the evidence lands, and a node that knows the score in advance reads the
+   papers looking for confirmation. Read here it is a **consolidation of what you have just read**.*
+   ⌗ ***And it is the document to return to when an open problem begins to loom larger than the programme.***
+   *That failure has happened — a node treated `PO-13`'s residual as a defect in the framework while every
+   item that moved a number turned out to be an instrument fact. **§6 holds that correction.***
 9. **The ontology map** — `ONTOLOGY_FOUNDATION_INDEX.md`, whole. *You read its §0 at setup; this is the rest —
    the cards that set the ontology, and the guards that hold it.*
 10. **The plan** — `THE_PLAN.md`, and **its per-turn list is the operating layer** — **whose first item fires on

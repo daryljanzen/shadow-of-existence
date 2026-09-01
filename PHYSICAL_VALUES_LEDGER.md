@@ -6,7 +6,12 @@ class: whole-corpus-instrument
 current: r2671+c54.210
 ---
 
-> **▣ REFERENCE — §1w, the physical values, and part of the corpus.** *Where the programme's numbers are
+> **▣ REFERENCE — §1w, the physical values, and part of the corpus.**
+> ⌗ **COMPANION — [`WHAT_THE_FRAMEWORK_DELIVERS.md`](WHAT_THE_FRAMEWORK_DELIVERS.md)**, *the inventory of
+> delivered results counted from the papers: 188 formal environments, the fourteen theorems by name, the
+> empirical correspondences, and the one open residual at its true relative size. **Read it when weighing
+> the programme as a whole, or when an open problem has begun to loom larger than it is.***
+ *Where the programme's numbers are
 > held against what determines them.*
 
 
