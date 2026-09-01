@@ -372,6 +372,18 @@ is open.*** *Measured in the bodies:*
 5. **The progenitor spectrum.**
 6. **Recombination and the present epoch as *layer* history** rather than as law-phases.
 
+> ⛭⛭ ***AND WHEN THE OWED ROWS WERE WORKED AT r3746–r3752, MOST WERE ALREADY PAID.*** *Twelve items
+> were triaged from this document and taken to source. **Four were genuinely open and are closed**: the
+> four-sector boundedness join (`F18`/`F19`, landed in the map), a misattributed decay exponent in `P11`
+> corrected in the paper, `P14`'s leaf-compactness tested at the Nariai member its own receipt had never
+> reached, and `matched-procedure differencing` named in `P15`. **Seven were already closed and their
+> registers had gone stale** — the Atiyah sequence, $N_{\rm eff}$, the baby universe, Ambrose–Singer,
+> `S3`'s two-gaps join, `⊢56` and `⊢61`'s remainder. **One was never a debt at all.***
+> ⇒ ⛔ ***THE LESSON IS THE MEASUREMENT'S, NOT THE PROGRAMME'S: an open-item register decays in the
+> direction of OVERSTATING what is owed***, *because work closes items quietly and nothing tells the
+> register. **A debt list wants re-measuring, not re-reading** — and this one had rows unchecked for some
+> 590 revisions.*
+
 ⌗ ***AND `P15` SORTS ITS OWN GAPS BY A CRITERION, WHICH IS THE MODEL FOR HOW TO READ ALL OF THEM.***
 *"A structure is credited for **requiring** a phenomenon, not for **permitting** a value that fits it." A
 gap that is **buildable** is a **debt owed** — to be built before the claim it bears on is a proof rather

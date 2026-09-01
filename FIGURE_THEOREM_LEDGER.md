@@ -151,9 +151,23 @@ read in the body before it is landed —* ***and a row is not struck on a single
 the body's own form and come back empty. **A false retraction removes real worked mathematics from the
 corpus's reach, which is the same damage as a fabrication, pointing the other way.***
 
-⌗ *`⊢37`'s sigil correction stands — the body does carry it as `⚠ 37`. `⊢56`'s original verdict stands
-too: `fictional`, `real at its ends`, `horizon-chord` and `polar has its foot` are all ×0 across the
-seventeen papers, so it is **`SUBSTANCE OWED`**, and its home is `P1`.*
+⌗ *`⊢37`'s sigil correction stands — the body does carry it as `⚠ 37`.*
+
+> ⛔⛭⛭ ***AND THE SENTENCE THAT STOOD HERE ABOUT `⊢56` WAS SUPERSEDED BY THIS FILE'S OWN NEXT SECTION AND
+> WAS NEVER UPDATED — struck r3752 by 60.*** *It read:* "`⊢56`'s original verdict stands too: `fictional`,
+> `real at its ends`, `horizon-chord` and `polar has its foot` are all ×0 across the seventeen papers, so
+> it is **`SUBSTANCE OWED`**, and its home is `P1`."
+> ⇒ ***`⊢56` IS LANDED, in `p0` and not `P1`***, *as the landing table's own row says and as the
+> retraction-retracted section above records.* **Verified in the body at r3752**: p0 carries *"the hinge's
+> polar has its foot at $\alpha^{2}/2\alpha=\alpha/2$, **inside** the throat … So the horizon-chord is
+> real only at its ends … **Only the endpoints are points of the substrate; the chord joining them is a
+> line in the projection and not in the manifold**"* — the substance, in the paper's own voice, with the
+> La Hire consequence attached.
+> ⌗ ***THIS IS THE ONE CHECK THIS FILE'S EXEMPTION DOES NOT COVER, AND IT CAUGHT ITSELF.*** *The banner
+> says a comparison to the corpus is not fair game but **"a header-versus-body contradiction inside it is
+> still fair game"**. The landing table said LANDED and a paragraph forty lines later said OWED. **A
+> correction that lands in one place and leaves its predecessor standing in another is the same defect the
+> corpus keeps recording**, here inside the instrument that records it.*
 
 ### ⛔ WHAT THIS GATHER DID **NOT** FIND
 
