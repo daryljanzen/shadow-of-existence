@@ -147,7 +147,22 @@ _rt = OR / ag ** 4 + OM / ag ** 3 + OL                            # ** the STACK
 # source is short by rho_tot(full)/rho_tot(free).  This factor supplies it.  Identically 1 in the
 # lcdm arm, where the rate already carries radiation. **
 _free = OM / ag ** 3 + OL
+# ⛔⛔ ** AND ITS PREMISE IS FALSE UNDER LEAFPERT -- 59, r3737. **
+# *The paragraph above was written at r3400, BEFORE LEAFPERT became the default at r3409.  It is
+# gated on `not RAD_IN_RATE`, which is the STACKING rate's flag -- but the perturbation equations
+# take `Hc = Hl_of(e) if LEAFPERT else Hc_of(e)`, and `Hl_of` is built from `Hleaf`, which CARRIES
+# the radiation term.  So under LEAFPERT the Friedmann constraint already holds with the full
+# rho_tot, the source is NOT short, and Gf should be 1.*
+#   ⇒ ** GSRC=1 together with LEAFPERT applies the SAME correction twice. **  *Gf reaches 2.73 at
+#   the onset and 1.28 at recombination.  Measured: l_1 goes 204 -> 244 where the sky wants 220.6,
+#   an overshoot of 2.4x the needed move, and the height ratios go to 6.7 and 14.6.*
+# *Left settable rather than removed, because it is the CORRECT correction under STACKPERT=1, where
+#  Hc really is the radiation-free rate.  The gate below now says so.*
 GSRC = os.environ.get('GSRC', '0') == '1' and not RAD_IN_RATE
+if GSRC and LEAFPERT:
+    print("  ** GSRC=1 with LEAFPERT double-counts the radiation in the Poisson source: the leaf")
+    print("     rate already carries it. This is the r3400 correction applied on top of the r3409")
+    print("     default that superseded it. Set STACKPERT=1 if the radiation-free source is meant. **")
 Gf_of = CubicSpline(eg, (_rt / _free) if GSRC else np.ones_like(_rt))
 Og_of = CubicSpline(eg, (1 - FNU) * (OR / ag ** 4) / _rt)
 On_of = CubicSpline(eg, FNU * (OR / ag ** 4) / _rt)

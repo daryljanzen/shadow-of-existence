@@ -65,6 +65,49 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⛔⛭ r3737 — TWO CORRECTIONS: MY OWN SIGN ERROR, AND `GSRC`'s PREMISE IS FALSE UNDER `LEAFPERT`
+
+### ⛔ FIRST, MINE
+
+*`r3735` reported the two height errors as "both off by $\sim13\%$ in the same direction, both low". **They
+have OPPOSITE SIGNS**: $P_1/P_2$ is $-12.7\%$ and $P_1/P_3$ is $+13.2\%$. I read magnitudes and did not
+check direction.*
+
+| | CR | sky | the peak itself |
+|---|---|---|---|
+| $P_2/P_1$ | 0.5168 | 0.4511 | ⛔ $P_2$ is **$+14.6\%$ TOO STRONG** |
+| $P_3/P_1$ | 0.3879 | 0.4392 | ⛔ $P_3$ is **$-11.7\%$ TOO WEAK** |
+
+⇒ ***Even peak too strong, odd peak too weak. That IS the odd/even signature — REDUCED from
+$+0.9/+71.3$ to a symmetric $\pm13\%$, and NOT gone.*** *And a uniform normalisation was never a
+candidate: **it cancels in a ratio**, so both ratios moving is itself proof the residual is not an
+amplitude.*
+
+⌗ *Odd peaks are **compressions**, boosted by the baryon offset; even peaks are **rarefactions**,
+suppressed by it. $P_3$ weak and $P_2$ strong says **the offset $\propto R\Psi$ is too small**, and $R$ is
+already verified right (`r3725`) — so it is $\Psi$ **through recombination**, not the datum $\Psi$ that
+`entry` now sets.*
+
+### ⛔ SECOND, THE INSTRUMENT'S
+
+*`GSRC` supplies exactly that missing $\Psi$ — the radiation the source omits. **Run with the derived
+datum it moves $\ell_1$ from 204 to 244 where the sky wants 220.6: the right direction, overshooting by
+$2.4\times$**, and takes the ratios to 6.7 and 14.6.*
+
+***Its own justification says why: "the CR arm's Hc is the L1 rate, built from $\rho_{\rm tot}$ WITHOUT
+radiation".*** ⛔ *That was written at `r3400`. **`LEAFPERT` became the default at `r3409`, and under it
+`Hc = Hl_of(e)`, built from `Hleaf`, which CARRIES the radiation term.** The Friedmann constraint already
+holds with the full $\rho_{\rm tot}$; the source is not short; $G_f$ should be 1.*
+
+⇒ ***`GSRC=1` with `LEAFPERT` applies the same correction twice*** — $G_f=2.73$ at the onset, $1.28$ at
+recombination. *Left settable, because it IS correct under `STACKPERT=1` where $H_c$ really is the
+radiation-free rate, and the file now warns when the two are combined.*
+
+⚠ ***SO THE OFFSET IS STILL TOO SMALL AND `GSRC` IS NOT THE WAY TO SUPPLY IT.*** *The one place $\Psi$
+through recombination can legitimately grow has been checked and it was already counted.*
+
+---
+
 ## ⛭⛭⛭ r3735 — `CRAMP=entry`: THE DERIVED DATUM BEATS BOTH FLAGS, AND THE ODD/EVEN IMBALANCE IS GONE
 
 ***One function, no flag. `r3733` showed neither coded reading holds across the band on the leaf, so the
@@ -96,9 +139,13 @@ super-horizon value.***
 the number.*** *`flat` has one ratio near-perfect and the other $71\%$ off; `onset` has that imbalance
 reversed. **`entry` has both off by $\sim13\%$ in the SAME direction, both low.***
 
-⛭ ***THE ODD/EVEN IMBALANCE IS GONE.*** *That was the defect `r3725` named from the phase structure and
-`r3729` saw moving under a datum change. **It is no longer there — what remains is a uniform
-normalisation**, which is a different and simpler problem than the one this thread started with.*
+⛔ ***CORRECTED AT r3737 — THE ABOVE READ MAGNITUDES AND NOT SIGNS.*** *The two errors are
+$-12.7\%$ and $+13.2\%$: **OPPOSITE**, not "both low". In the peaks themselves, relative to $P_1$:
+**$P_2$ is $+14.6\%$ TOO STRONG and $P_3$ is $-11.7\%$ TOO WEAK.** That is the odd/even signature, still
+present — **REDUCED from $+0.9/+71.3$ to a symmetric $\pm13\%$, and not gone.***
+
+⌗ ***And a uniform normalisation was never a candidate: it CANCELS in a ratio.*** *Both ratios moving is
+by itself proof the residual is not an amplitude.*
 
 ⚠ ***THE POSITIONS DID NOT MOVE:*** *$204/508/804$, identical to the coded default. **The datum fixes the
 heights and not the comb**, so the position deficit is a separate residual and is not addressed here.*
