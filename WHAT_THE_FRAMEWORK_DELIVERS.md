@@ -257,6 +257,32 @@ hundred-odd dissolutions" invites reading 182 word-hits as 182 findings.*
   a gap**: the harmonic bake adjudicated it in as many words, "the corpus performs the Chebyshev expansion
   without naming Chebyshev", and `prop:triple`'s proof carries the $\sin^3w=\tfrac14(3\sin w-\sin3w)$
   substitution in full.*
+- ⛭⛭⛭ **NO FREE DIMENSIONLESS CONSTANT IN THE GRAVITATIONAL–COSMOLOGICAL–QUANTUM SECTOR — and the ledger
+  says where each one went.** *`P07`: the maximal symmetry that leaves the substrate the single scale
+  $\Lambda$ leaves that sector **no free dimensionless constant**; the fundamental constants enter as
+  **unit gauges over that one scale**, each fixed to a feature of the determined geometry **rather than
+  dialed**.*
+
+  | constant | where it goes |
+  |---|---|
+  | **$c$** | *the **null-ruling slope** — the equilateral condition making the substrate's asymptotic cone the null light-cone — meeting $\Lambda$'s inverse-area in the rate $H=c\sqrt{\Lambda/3}$ **and in no dimensionless relation*** |
+  | **$G$** | *enters **only** as the gravitational radius $GM/c^2$, a mass$\leftrightarrow$length gauge **on a mass that is itself the perspectival offset of the cut*** |
+  | ⛭ **$\hbar$ — "the sharpest instance"** | *the **lone place a free quantum parameter could sit** — the self-adjoint-extension freedom of the scale-factor Hamiltonian — is closed **WITHOUT a free parameter** by the de~Sitter horizon's own Gibbons--Hawking thermal state, $\hbar$ entering **scaled by $\Lambda$ alone and at every order of the coupling*** |
+  | **$k_B$** | *the temperature gauge of that same state* |
+
+  ⇒ ***"So the substrate is not only maximally unifying but maximally UNFORCED — one real scale, every
+  place a free constant could have hidden either a unit gauge or locked by the geometry's own
+  symmetry."***
+
+- ⛭⛭ **AND THE CONSOLIDATION IS TWOFOLD — the second half being why it is not a repair.** *`P07`: areas
+  held apart are brought onto one substrate, **and the pathologies those areas carry fall away with the
+  manifold-reading that bred them***. ⇒ ***"The unification reached not by adding structure to repair the
+  troubles but by the reading under which they do not arise."***
+  ⌗ *And the substrate is **causally clean** as a consequence rather than a stipulation: **every finite
+  layer is smooth, carrying no completed horizon and no realised singularity**, and its order on the
+  layers is **chronological by construction** — so a chronology-violating solution **represents no layered
+  world**.*
+
 - ⛭⛭⛭ **NOT THREE UNIFICATIONS OWED BUT ONE OBJECT READ THREE WAYS.** *`P07` `sec:unification-scope`,
   stated plainly **"for the scope is easily lost in the care of the parts"**. Three structures standard
   physics assigns to **separate theories**:*
