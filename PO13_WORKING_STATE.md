@@ -65,6 +65,41 @@ this proposition distinguishes — a degenerate horizon against a non-degenerate
 
 ---
 
+## ⛔⛭⛭ r3739 — **THE CONTROL FAILS THE HEIGHTS TOO. THE HEIGHT RESIDUAL IS NOT A CR DEFECT.**
+
+***The check that should have come first. The height machinery is SHARED by the two arms, so run the arm
+whose answer is known.***
+
+| arm | $\ell_1$ | $\ell_2$ | $\ell_3$ | $P_1/P_2$ | err | $P_1/P_3$ | err |
+|---|---|---|---|---|---|---|---|
+| **$\Lambda$CDM control**, validated | **220** | 524 | 804 | 2.721 | $22.7\%$ | 4.496 | ⛔ **$97.5\%$** |
+| CR, `CRAMP=flat` (coded) | 204 | 508 | 804 | 2.238 | $0.9\%$ | 3.901 | $71.3\%$ |
+| ⛭ CR, `CRAMP=entry` (derived) | 204 | 508 | 804 | **1.935** | $12.7\%$ | **2.578** | $13.2\%$ |
+| **THE SKY** | 220.6 | 538.1 | 809.8 | **2.217** | | **2.277** | |
+
+⇒ ***The control gets the POSITIONS right — $\ell_1=220$ against $220.6$ — and the HEIGHTS wrong by
+$23\%$ and $97.5\%$.*** *On $\Lambda$CDM, where the answer is known and the arm is validated against CAMB
+for its transfer.* ⛔ ***A defect that shows there is not a CR defect.***
+
+⛭ ***AND CR WITH THE DERIVED DATUM BEATS THE CONTROL ON BOTH RATIOS*** — *$12.7\%$ and $13.2\%$ against
+$22.7\%$ and $97.5\%$. **The datum work of `r3735` was real; the residual it was measured against is the
+instrument's, shared.***
+
+### ⌗ AND A GUARD I HAD BEEN RUNNING PAST
+
+*The control refused to report at `NK=90`: **"UNDER-SAMPLED — raise NK; the projected peaks would be
+aliasing, and the source comb would stay correct while they did it."** Every CR run in this thread used
+`NK=90`.* ⌗ ***Re-run at `NK=220`: `204/508/804`, $P_1/P_2=1.935$, $P_1/P_3=2.578$ — identical. The CR
+runs were not aliased.*** *But that was luck, not care: the guard fires on $D_M$, and CR's is $13{,}005$
+against the control's $13{,}865$, which is the only reason $90$ sufficed on one arm and not the other.*
+
+⚠ ***SO THE LAST THREE REVISIONS WERE CHASING A SHARED INSTRUMENT DEFECT.*** *The baryon-offset diagnosis
+at `r3737` — even peak too strong, odd too weak, offset $\propto R\Psi$ too small — **is a correct reading
+of a spectrum the control produces too.** It is a statement about the height machinery, not about CR's
+physics, and the place to work it is the arm where the target is known.*
+
+---
+
 ## ⛔⛭ r3737 — TWO CORRECTIONS: MY OWN SIGN ERROR, AND `GSRC`'s PREMISE IS FALSE UNDER `LEAFPERT`
 
 ### ⛔ FIRST, MINE
