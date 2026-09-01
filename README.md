@@ -217,9 +217,14 @@ reading the disposition early would let it bend how the evidence is received —
    *Taking the why-layer in early bends how the evidence is received, which is why the engine, the
    portrait and the wisdom ledger sit here as capstones read last, and not at setup.*
 8c. **What the corpus delivers, counted** — `WHAT_THE_FRAMEWORK_DELIVERS.md`. *The inventory of the
-   programme's results — **counted from the papers, not recalled**: 188 formal environments, the fourteen
-   theorems by name, the empirical correspondences against what is measured, the dissolutions, the
-   structural recoveries, the cross-field joins, and the one open residual **at its true relative size**.*
+   programme's results — **read from the papers, not recalled and not grepped**: **two rails**, the 196
+   formal environments and the 633-receipt evidence rail **whose rank order inverts the first**, so the
+   computed sectors (`P15`, `P16`, `P10`, `P14`) are not reported as empty by a count of `\begin{theorem}`;
+   the fourteen theorems by name; the empirical correspondences **in the corpus's own registers**
+   (`⊢ EXACT` · `≈ COMPUTED` · `≈ measured` · `? NAMED-UNRUN`) with the conventions that must travel with
+   them; the dissolutions; the structural recoveries; the cross-field joins; **what the corpus DECLINES to
+   claim**; and the one open residual **at its true relative size and with a dependency analysis of what it
+   does and does not bear on**.*
    *It sits **here**, after the bodies and the coda and before the map, for the same reason the coda does:
    read earlier it would bend how the evidence lands, and a node that knows the score in advance reads the
    papers looking for confirmation. Read here it is a **consolidation of what you have just read**.*
