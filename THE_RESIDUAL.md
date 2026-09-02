@@ -80,7 +80,7 @@ propagating sector, and the compact face is where a construction of it would act
 was mis-bucketed by the trigger.***
 *· `CR_cosmology`: **"a computation this sequence owes and has not yet run"** — the bespoke transfer.*
 
-⇒ ***So the genuinely unbuilt is TWO: the propagating spinor sector, and the bespoke transfer.*** *Plus one
+⇒ ***So the genuinely unbuilt is now ONE: the bespoke transfer. The propagating spinor sector was built at r3802.*** *Plus one
 `PRECISION` item (light-nuclide rates' last percent) and three `OPEN-DOWNSTREAM` (the exact regulated peak, twice,
 and one scalar-spectrum consequence behind it).*
 

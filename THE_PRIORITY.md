@@ -37,7 +37,7 @@ research question.***
 ## ⓶ THE AXIS IT WAS MISSING — **REACH: what would a result BUY?**
 
 *· **3 — a sector.** *Closing it delivers physics the corpus does not currently have.* `PO-11` (the
-propagating spinor sector), `PO-5` (the bridge from a grading to a field).*
+propagating spinor sector — ⛭ **built at `r3802`**), `PO-5` (the bridge from a grading to a field).*
 *· **2 — a claim.** *It converts an open question into a stated result.* `PO-9`, `PO-7`, `PO-10`, `PO-12`.*
 *· **1 — a precision or a scope.** *It sharpens something already claimed.* the `PRECISION` and
 `OPEN-DOWNSTREAM` ledger entries.*
@@ -88,7 +88,7 @@ below everything that can be picked up.*
 | **3** | `PO-6`(c) the Nariai series | **grounded 2** — the expansion parameter is named ($\epsilon\propto\sqrt{M_N-M}$) and $f''(r_n)=-6/\alpha^2$ is computed |
 | **4** | `PO-10`'s two runs | **reach 2, grounded 1** — both specified in P7's own words; instrument work on a built instrument |
 | **5** | `PO-9`'s three unreproduced links | its kill receipt names them exactly: **the maximal-symmetry step, the plane-section reduction, the rank-1 scale map** |
-| **6** | ***`PO-11` the propagating spinor sector*** | ***reach 3 — the largest thing here*** — but **grounded 1**, and *`boundary_paper` calls its construction "the major undertaking"* |
+| ~~6~~ | ⛭ ***`PO-11` the propagating spinor sector — BUILT `r3802`: it propagates*** | ***reach 3 — the largest thing here*** — but **grounded 1**, and *`boundary_paper` calls its construction "the major undertaking"* |
 | **7** | `PO-12` the bespoke transfer | reach 2, and `CR_cosmology` says what it would expose |
 | **8** | the $\{0,1,2\}$ derivation | **the corpus's one `DISCOVERABLE-PROOF`** — and the corpus says exactly what it would have to produce |
 | — | `PO-2` `PO-3` `PO-4` | open physics with no current handle; **mapped, and that is the most that can be true of them** |

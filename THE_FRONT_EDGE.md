@@ -116,7 +116,7 @@ recording them.*
 **"the gate is open and has been walked"** uses *open* to mean **available**, not unresolved. *Loosening `OPENWORD`
 to dodge it would blind the check to real cases.* *(rewritten out of the paper at `r3797`; kept here as the example that shaped the rule.)*
 
-**⓷ GIVE THE TWO GENUINELY UNBUILT THINGS REGISTER ROWS.** *The **propagating spinor sector** (p0 and
+**⓷ GIVE THE TWO GENUINELY UNBUILT THINGS REGISTER ROWS.** *The **propagating spinor sector** — ⛭ **built at `r3802`** — (p0 and
 `boundary_paper`, one object) and the **bespoke transfer** (`CR_cosmology`). ***Neither is on
 `PROTECTED_OPEN` and both should be.***
 

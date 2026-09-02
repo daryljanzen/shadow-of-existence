@@ -764,7 +764,7 @@ is open.*** *Measured in the bodies:*
 
 > ⛔⛭⛭ ***AND THE FIRST THING TO SAY ABOUT THIS TABLE IS THAT IT IS NOT A BACKLOG.*** *`not claimed`,
 > `not claimed` and `conjecture` are **DISCIPLINE, not debt** — verified by reading them: they decline the
-> **world-correspondence**, the **mass hierarchy's values**, the **propagating spinor sector**, the
+> **world-correspondence**, the **mass hierarchy's values**, the **propagating spinor sector** (⛭ *built at `r3802`*), the
 > content-level reading of a parity. **Those declines are correct as they stand and most of them SHOULD
 > remain declined**; "closing" one means doing the physics, not the paperwork. ⇒ **The ~64 items in the
 > first three rows are the corpus's scope discipline working. Only the fourth and fifth rows are owed.***

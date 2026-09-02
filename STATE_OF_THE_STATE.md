@@ -97,7 +97,7 @@ unworked physics in the register.*
     PO-7   the first acoustic peak -- the spacing deficit is structural (0.856, pin-invariant)
     PO-10  the scalar remainder -- half 2 closed; half 1's specification dead, and the live
            question (what comparison imports no foreign parameter vector?) is asked nowhere
-    PO-11  the propagating spinor sector -- operator settled (analytic sqrt f); the omega!=0
+    PO-11  the propagating spinor sector -- BUILT r3802, it propagates; the omega!=0
            continuum, the transmission amplitude, and P14's real +/- lambda all open
 
     STRUCK  PO-3 (r2832) · PO-4 · PO-9 (r2832) · PO-12
