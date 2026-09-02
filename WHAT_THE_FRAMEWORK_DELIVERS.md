@@ -257,6 +257,44 @@ hundred-odd dissolutions" invites reading 182 word-hits as 182 findings.*
   a gap**: the harmonic bake adjudicated it in as many words, "the corpus performs the Chebyshev expansion
   without naming Chebyshev", and `prop:triple`'s proof carries the $\sin^3w=\tfrac14(3\sin w-\sin3w)$
   substitution in full.*
+- ⛔⛭⛭ **AND `P07` HOLDS ITS OWN REACH DOWN, IN THREE PLACES — this belongs beside the results, not after
+  them.**
+  - ⛔ ***"The data axis is not in play here, and no credit is claimed on it."*** *The recovery programme
+    **alters no equation of general relativity and makes no prediction it does not already make**, so the
+    sector's empirical content **is** general relativity's, preserved exactly. ⇒ **"The framework's own
+    empirical claim is its cosmology, made in one place only."***
+  - ⛔ ***THE SCOPE OF THE ALGEBROID AND DEPARAMETRIZATION RESULTS, which qualifies what is recorded above.***
+    *The slicing operator, the range, the deparametrization and the algebroid closure are established on
+    the **symmetry-reducible sector — finite-dimensional, $\mathfrak{so}(5,1)$, NOT the full
+    infinite-dimensional Dirac algebra**. And: **"the covariance-of-geometries reading is what these
+    theorems GROUND, not a corollary they entail, and it is adopted at that weight."***
+  - ⛔ ***THE ROOT-SHARING IS ANALYTIC AND NOT A SUBSTRATE SYMMETRY.*** *The $A_2$ skeleton is **"the
+    established skeleton and no more"**: a continuous $\mathfrak{su}(3)$ isometry **does not embed in the
+    Lorentzian substrate**, and the framework **asserts neither that nor any rise in its dimension**. The
+    continuous $\mathfrak{su}(3)$ lives on the **conjugate real form** — $\mathfrak{su}(3)\subset\mathfrak{so}(6)$
+    but $\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$ — so skeleton and colour **"share their roots
+    ANALYTICALLY, across the two real forms, and not by accident of abstract type … off the real Lorentzian
+    substrate, and no substrate symmetry."***
+
+- ⛔⛭⛭ **"SECOND, AND MOST IMPORTANTLY, THE REACH IS A COHERENCE AND NOT YET A CORRESPONDENCE."** *`P07`'s
+  own emphasis. That GR's solution space closes cleanly on one substrate with its puzzles dissolving is
+  **"a strong structural fact about the framework's internal economy; it is not, and is not offered as,
+  evidence that the world is so built."***
+  ⌗ *The correspondence is left to **two places held open to the world**: the **structural** test of the
+  metric-singularity result — **that closed trapped surfaces do not form and gravitational collapse does
+  not complete in finite cosmic time** — and the **empirical** test of the cosmology.*
+  ⛭ *And the paper marks where that has begun to return: the geometric rate's resolution of the $H_0$
+  tension **confirmed across the baryon-acoustic distance ladder at the directly measured $H_0$**, and the
+  forced hot dense era producing the light elements **within $1\sigma$** — *"so the cosmology's
+  correspondence, once wholly open, is being earned on the data, even as the structural reach above
+  remains coherence pending its own test."**
+  ⇒ ***"Self-consistency is not soundness … the framework establishes what it IS and what it COHERES, and
+  holds apart the question of whether the fixed point on which it closes is the world's — while marking,
+  honestly, where the world has begun to answer."***
+  ⌗ *And the same standard is run **one level up**: whether the discipline's rules of theory-choice
+  **track truth** is itself an empirical hypothesis, held to the historical record — **"one family of
+  empirical debt read at two levels."***
+
 - ⛭⛭⛭ **NO FREE DIMENSIONLESS CONSTANT IN THE GRAVITATIONAL–COSMOLOGICAL–QUANTUM SECTOR — and the ledger
   says where each one went.** *`P07`: the maximal symmetry that leaves the substrate the single scale
   $\Lambda$ leaves that sector **no free dimensionless constant**; the fundamental constants enter as
