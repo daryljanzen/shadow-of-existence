@@ -84,6 +84,7 @@ STATE = {
     'FORK_c54.md':                                    "the c54 fork's own record",
     'OPEN_PROBLEMS_MAP.md':                           'the work-clusters and the runway',
     'THE_OPEN_PROBLEMS_LEDGER.md':                    'the seven families and their clue-maps',
+    'WHAT_IS_UNFINISHED.md':                          'the one list -- every unfinished item, unfiltered',
     'THE_BURN_DOWN.md':                               "the register's accounting",
     'THE_WEAVE.md':                                   'the per-paper orchestration grid',
     'ENTRY_POINT_REGISTER.md':                        'what the corpus advertises',

@@ -1,0 +1,172 @@
+---
+name: what-is-unfinished
+kind: REFERENCE
+current: r3789
+job: The one list -- every unfinished item in the corpus, from every register, with nothing filtered out and no verdict attached.
+sources: [chat]
+---
+
+# ⛔ WHY THIS FILE EXISTS — *built r3789*
+
+***Because there was no single place that answered "what is not finished", and every attempt to ask
+produced a different partial answer.*** *`THE_OPEN_PROBLEMS_LEDGER` is 1845 lines of history and its live
+count sits inside a parenthetical in a section heading. `corpus/open_ledger.txt` carries 113 qualifications
+with verdicts that shrink the list by judgement. `THE_FRONTIER`, `OPEN_PROBLEMS_MAP`, `PROTECTED_OPEN` and
+seven papers' frontier sections each carry a slice.*
+
+⇒ ***This file carries every item from all of them, with no verdict of mine attached and nothing struck for
+being "not really a debt". If an item is finished it gets marked finished HERE, by the work being done, and
+not by being reclassified.***
+
+---
+
+# ⛭ A · THE EIGHT FAMILIES — *the corpus's own top-level list, from `THE_OPEN_PROBLEMS_LEDGER`*
+
+*Family 2 is killed (r1280). The other seven are live as of that ledger's own count.*
+
+| # | the item |
+|---|---|
+| **1** | **Matter branch-point crossing** — worldline-and-field dynamics |
+| ~~2~~ | ~~sheet-to-ruling assignment~~ — **KILLED r1280**, resolved dead |
+| **3** | **Inherited datum** — $n_s$, $A_s$, and the branch-point radiation $\rho_r/\rho_m\approx2$ |
+| **4** | **Irreducible interior reassignments** — Kerr-inner, Reissner--Nordström-interior |
+| **5** | **Scalar-perturbation sector to a verdict** — *this is where `PO-13` lives* |
+| **6** | **Propagating fermion sector** — with the compact-face gauge sector and the mass hierarchy |
+| **7** | **World-correspondence and the empirical grounding of the discipline** — empirical, standing |
+| **8** | **The interacting quantum tower** — its definition as a consistent theory |
+
+---
+
+# ⛭ B · THE THREE NAMED-UNBUILT — *`corpus/open_ledger.txt`'s own hardest verdict: "a real construction, named and not built"*
+
+***Four rows carry this verdict, not three.***
+
+| paper | the construction named and not built |
+|---|---|
+| **`CR_framework`** | *The framework's own matter is the bend of the cut rather than a spinor field, and on top of that a sector of \emph{bound} modes on the existent leaf is built~\cite{JanzenMatter}; w ## the descent onto a PROPAGATING spinor sector, and coherence with the empirical Standard Model. ⌗ TWINNED with `2d7ea* |
+| **`CR_framework`** | *\emph{So of the three items named above, only the ultraviolet definition of the mode sums remains open here.}} This is the same wall any interacting quantum field theory meets, and ## the interacting tower as a DEFINED theory -- named, not built. ** NOT `STANDARD-PHYSICS`: the paper explicitly refus* |
+| **`canonical_time`** | *What remains open at this paragraph's end is accordingly not the floor but the straddle itself as a computed fact---whether the spectrum does occupy both sides of $\tfrac34$, which ## the straddle AS A COMPUTED FACT -- whether the spectrum occupies both sides of 3/4 -- named and not computed. ⌗ AND * |
+
+---
+
+# ⛭ C · EVERY REMAINING QUALIFICATION IN THE PAPERS
+
+***106 rows. Every one, with no verdict column — the verdict is what gets decided by working
+them, not what excuses them from the list.***
+
+| # | paper | the qualification, as the paper states it |
+|---|---|---|
+| 1 | `BH_causality_v2` | *\emph{It is not, and this paper does not say it is.} Whether that regime is benign, and what a treatment of it would have to supply, is not settled here and is not claimed; the com ## declines the UV claim and NAMES WHERE THE QUES* |
+| 2 | `BH_causality_v2` | *The Bekenstein--Hawking entropy~\cite{Bekenstein1973}, in the reading on which it is the entropy \emph{of} that horizon, shares their status; what content survives for a perpetuall* |
+| 3 | `BH_causality_v2` | *\begin{remark} It is common in the literature, going back to the defining papers~\cite{hawking1971,Penrose1969}, to refer to compact objects that will develop event horizons as ``c* |
+| 4 | `CR_cosmology` | *It is a debt owed and named as such: not a missing idea but a computation this sequence owes and has not yet run, and the paper's own open edge rather than another's. ## 'not a missing idea but a computation this sequence owes and* |
+| 5 | `CR_cosmology` | *Like $\eta$, the inherited radiation amplitude may remain a measured boundary condition indefinitely without cost to the \emph{dissolution}---which settles what the dissolution dep ## 'deriving it from the progenitor's determined * |
+| 6 | `CR_cosmology` | *What remains open is the \emph{detailed} worldline and field dynamics of the crossing for a concrete matter model~\cite{JanzenCRframework,JanzenOperator}---the deferred depth, now* |
+| 7 | `CR_cosmology` | *\emph{A likelihood-level comparison can then be attempted, and the result is that it cannot yet be made} . ## VERDICT CORRECTED r2596: this is the FULL-SPECTRUM likelihood against the banked chi2=206.4 over 215 bins -- PO-10a, gen* |
+| 8 | `CR_cosmology` | *A theory that fits is not a theory confirmed, and that confirmation is not yet in hand; but the data axis is not even, and the framework has staked falsifiable commitments---no sca* |
+| 9 | `CR_cosmology` | *None of these unsettles the result obtained: the branch point's null geometry decomposes the primordial scalar spectrum into a substrate-determined structure and a progenitor-suppl ## RECLASSIFIED r2639. The bucket was defined as * |
+| 10 | `CR_cosmology` | *\emph{Carried to four phases at the depth the fit requires, the asymptotic phase spans $0.891$ in $\phi/\pi$, and the control's $0.263$ lies inside that span.} \emph{But a span of* |
+| 11 | `CR_cosmology` | *\emph{We record what that agreement is and is not}: the figure it matches is recalled rather than derived here, so what is established is internal consistency between the growth, t ## 'corroboration at the strength of a memory' --* |
+| 12 | `CR_cosmology` | *\emph{We state it at that strength and no higher, and the paragraphs below lower it further}: the first peak's position on this rate is not an artefact of how last scattering was m ## 'We state it at that strength and no higher, a* |
+| 13 | `CR_framework` | *Its one remaining structural step is the descent onto a \emph{propagating} spinor sector, held do-not-assert---what is built is a sector of bound modes of the existent leaf.* |
+| 14 | `CR_framework` | *The approach this leaves has a known shape, held do-not-assert.* |
+| 15 | `CR_framework` | *This concerns the relation between these two three-folds and says nothing about the separate question, walled elsewhere, of a realised colour isometry on the Lorentzian substrate,* |
+| 16 | `CR_framework` | *The reach established in this paper and its companions is gravitational and cosmological---the symmetry-reducible vacuum sector of general relativity read as causal reassignments o ## 'the framework's present boundaries ... are se* |
+| 17 | `CR_framework` | *What the framework does not yet build is set out as its open problems at the close (\S\ref{sec:frontiers}): foremost the Standard-Model matter sector, whose \emph{discrete flavour ## a pointer to sec:frontiers, not a claim* |
+| 18 | `CR_framework` | *\emph{So the alternation and the resolution of the Hubble tension are one fact}, and what remains open is what the driving does on this rate---the potential's own evolution, derived rather than read off its fingerprint.* |
+| 19 | `CR_framework` | *What the framework does not yet build is set out as its open problems---foremost the Standard-Model matter sector: its \emph{discrete flavour skeleton}---three chiral generations, ## 'so that a full propagating [spinor sector]' --* |
+| 20 | `CR_framework` | *\emph{So the composition frontier and the fermion-sector frontier are one frontier read at two ends.} The matter sector supplies the number of generations, their chirality and the ## 'the composition frontier and the fermion-secto* |
+| 21 | `CR_framework` | *\emph{That undelivered content is exactly what stands between the two composition data.} A derivation of either therefore waits on the same thing, and the appearance of two indepen* |
+| 22 | `CR_framework` | *\emph{We claim no derivation here and record only the identification}: the eager target of this item and the walled route of the matter sector are not separate debts.* |
+| 23 | `CR_framework` | *First, the constructions carry their own scope: the slicing operator, the range, the deparametrization, and the algebroid closure are established on the symmetry-reducible sector--* |
+| 24 | `CR_framework` | *The augmentation's necessity is a structural result with its necessary half \emph{measured}; what stays open to the world is whether the observed cosmos realizes the CR cosmology i ## 'whether the observed cosmos realizes the CR c* |
+| 25 | `CR_framework` | *What content survives for a perpetually collapsing ultra-compact body---as with the local particle production of the preceding subsections---is not settled by the horizon-thermodyn* |
+| 26 | `CR_framework` | *\emph{The crossing itself is not among it}---the matter branch-point crossing is settled on the field side and on the worldline side, and the two halves answer each other, as the f ## the sentence closes itself: the matter branch-* |
+| 27 | `SdS-slicing-curve_v2` | *\section{What is established, and what is open} \paragraph{Established.} The slicing curve $r(l)$, $dr/dl=\sqrt{|f|}$, with $f=1-2M/r-r^{2}/\alpha^{2}$, is a single construction at ## a section heading plus its 'Established' roll-* |
+| 28 | `SdS-slicing-curve_v2` | *Whether the continuous $\mathrm{SU}(3)$ whose fundamental and antifundamental share this abstract root system is the physical colour is the residual question: the geometric-isometr ## 'whether the continuous SU(3) ... is the physi* |
+| 29 | `SdS-slicing-curve_v2` | *\emph{What is not claimed: nothing here bears on \emph{why} the cosmological reassignment selects the degenerate member---that selection is the framework paper's trichotomy and sta* |
+| 30 | `SdS-slicing-curve_v2` | *\paragraph{Open.} The account is, at its stated scope, complete; what remains open is named below and lies outside that scope by design.* |
+| 31 | `SdS-slicing-curve_v2` | *Its bearing on the discrete \emph{flavour} structure---three chiral generations related by the family symmetry $S_{3}$ and graded by the chirality parity---is built on the matter s ## 'is built on the matter sector, forced within * |
+| 32 | `SdS-slicing-curve_v2` | *Read on a fermion sector this three-fold is the generation multiplicity---forced to three by the single triple-angle at the gnomonic-fixed scale, not fitted, the three hinged vanta ## 'forced to three by the single triple-angle at* |
+| 33 | `algebroid_paper` | *\section{Scope and what is open}\label{sec:scope} The verification above is, throughout, on the \emph{symmetry-reducible sector}. ## P12's scope section; its three items are Computed / the handoff / the sector itself -- all scope-* |
+| 34 | `boundary_paper` | *And a Clifford identity contains no charge, so this is the \emph{operator} half alone: whether the two frequency wings are a \emph{particle/antiparticle} pair (the species half) is* |
+| 35 | `boundary_paper` | *One coherence-suggestive structure stands there, developed here as the boundary paper's forward-look and \emph{built} in the fermion-sector paper~\cite{JanzenMatter}; what follows* |
+| 36 | `boundary_paper` | *One structural feature sharpens what such a construction would look like, recorded do-not-assert.* |
+| 37 | `boundary_paper` | *That is a definite but clean structure to satisfy, and the reason the lead is held do-not-assert rather than asserted or dismissed.* |
+| 38 | `boundary_paper` | *The orbifold-type route, by contrast, reads \emph{more openly} than a first pass had it: because the parity acts as $\gamma^5$---a chirality projector---a discrete projection by it ## the orbifold-type route 'reads more openly tha* |
+| 39 | `boundary_paper` | *What remains a named, unbuilt lead is the \emph{mass} structure---whether a fermion mass, being the $R$-odd departure the same substrate structure governs, inherits that cubic's th* |
+| 40 | `boundary_paper` | *What stays do-not-assert is only its identification with the physics---whether that geometric $2{+}1$ is the Standard Model's generation hierarchy, or the hierarchy is the ordinary* |
+| 41 | `boundary_paper` | *The compact-face fermion sector the obstruction would act on remains unbuilt, and its construction is the major undertaking any geometric \emph{gauge}-matter route would first have ## RESTORED r2621 -- r2618's dedupe was WRONG. bo* |
+| 42 | `boundary_paper` | *The descent onto a spinor sector is built as bound leaf-modes~\cite{JanzenMatter}: it delivers the count, the chirality, and the family within CR (the propagating sector the orbifo ## RECLASSIFIED r2618: 'the descent onto a spinor* |
+| 43 | `boundary_paper` | *A first structural result of that sector, at the level of its bilinears, follows---grounded on the parity's action, do-not-assert on the content.* |
+| 44 | `boundary_paper` | *Second, coherence with the empirical Standard Model as an \emph{independent} ground: the Standard Model is itself a century-constrained body of fact, and whether that fact---read a ## 'read as an external constraint rather than de* |
+| 45 | `boundary_paper` | *\emph{So the undelivered content is bounded from two directions at once}: a proved structural result fixing where an admissible mechanism may live, and measured ratios fixing what ## 'Neither is a construction, and this paper offe* |
+| 46 | `boundary_paper` | *\section{What stays open}\label{sec:open} Two things sit deliberately outside the boundary of Proposition~\ref{prop:boundary}, and naming them is part of stating the result honestl* |
+| 47 | `boundary_paper` | *But the offset-to-mass map is no mere labelling: it is a \emph{cubic}, $2M=\alpha\bigl((r_0/\alpha)-(r_0/\alpha)^3\bigr)$~\cite{JanzenOperator}, whose three zero-sum roots are the ## 'the geometry DOES carry a genuine three-fold R* |
+| 48 | `boundary_paper` | *That exhaustion is one face of the substrate's maximal symmetry read across the corpus~\cite{JanzenGeometricCore}: the same completeness that locks the cosmological constants and f ## 'the same completeness that locks the cosmolog* |
+| 49 | `boundary_paper` | *This whole reading---the forced multiplicity, the kind of each symmetry, and the family as three hinged vantages---is drawn together in the geometric-core paper~\cite{JanzenGeometr ## 'its one open step, the descent, IS BUILT' -- * |
+| 50 | `boundary_paper` | *\emph{So the gate is open and has been walked}---and what came through it is what this paper says the geometry supplies: three chiral generations and a grading operator, and not th ## 'the gate is open and HAS BEEN WALKED' -- thre* |
+| 51 | `canonical_time` | *The self-adjoint condition on the sub-threshold subspace is therefore the de~Sitter horizon's thermal state at every order of the coupling, exactly as in the free sector; what rema ## same narrowing as ec404eb23d: the self-adjoint* |
+| 52 | `canonical_time` | *With the tower coupled, the boundary coefficient is promoted to an operator straddling the threshold and the same thermal regularity supplies the condition fibre by fibre, so that ## 'what remains open is not the boundary conditio* |
+| 53 | `canonical_time` | *\emph{What remains open should be stated at its true size, which is smaller than it was.} The kernel's frequency is not constant along the segment---the layer's scale varies with t ## VERDICT CORRECTED r2597 by the backlog gate: t* |
+| 54 | `canonical_time` | *We claim no novelty in the mechanism.* |
+| 55 | `canonical_time` | *We do not claim these programmes are internally flawed.* |
+| 56 | `cosmogenesis_paper` | *And the eager target, held here do-not-assert, is the derivation---as against the inheritance---of that datum and of the progenitor spectrum: the baryogenesis-analogue of the hando* |
+| 57 | `cosmogenesis_paper` | *The exact regulated peak---how deep the compression runs on the smooth substrate through the branch point---remains open, and is downstream-irrelevant here: once dissociation is to ## RECLASSIFIED r2639. The bucket was defined as * |
+| 58 | `cosmogenesis_paper` | *The peak is drawn at its $M$-independent infall-scale lower bound (Sec~\ref{sec:peak}); its exact regulated value is open and downstream-irrelevant. ## RECLASSIFIED r2639. The bucket was defined as 'downstream of something else th* |
+| 59 | `cosmogenesis_paper` | *What remains open is not the computation but its last-percent precision: the specially-evaluated (as against REACLIB) light-nuclide rates and the likelihood against the measured ab ## RECLASSIFIED r2639. P16 marks it 'a data-confr* |
+| 60 | `dynamics_paper` | *(The detailed development belongs to the algebroid construction~\cite{JanzenAlgebroid} and is summarized here only to place the dynamics.) \section{Scope and what remains open}\lab* |
+| 61 | `geometric_core_paper` | *How the phase structure at the seam reads against trajectories is not settled here, and we do not claim it: the geometry is established and that reading remains open.* |
+| 62 | `geometric_core_paper` | *The orientation-parity $\mathbb{Z}_2$ of \S\ref{sec:shadows} is realised here as the central inversion / double-ruling swap, and the su(3)-wall carried at its careful do-not-assert* |
+| 63 | `geometric_core_paper` | *\paragraph{The generation conjecture, and the within-CR result it became.} One reach on that residue is worth stating whole, as the conjecture it is.* |
+| 64 | `geometric_core_paper` | *\textbf{Conjecture \textnormal{(do-not-assert).}} \emph{The Standard Model's three fermion generations are the substrate's own three-fold slicing structure, read on a spinor sector* |
+| 65 | `geometric_core_paper` | *\textbf{[the crystallisation of \S\ref{sec:shadows} at its sharpest; the parts are established across the corpus~\cite{JanzenSlicing,JanzenGroupoid,JanzenOperator,JanzenDynamics},* |
+| 66 | `geometric_core_paper` | *What this section will contain is not yet fully known; that it will be filled by the two-way grind, and reveal structure the current corpus does not name, is the working hypothesis ## 'What this section will contain is not yet ful* |
+| 67 | `geometric_core_paper` | *\item \textbf{P5, the description groupoid~\cite{JanzenGroupoid}} --- \emph{round complete, both ways.} Forward: P5's \texttt{rem:orientation} now reads its orientation-parity $\ma* |
+| 68 | `geometric_core_paper` | *\textbf{[the identifications of $c,\Lambda,G$ and the register split are established at the cited sources; reading them as one partition is the consolidation, at that weight.]} Thi* |
+| 69 | `geometric_core_paper` | *\textbf{[the ledger, the register split and the Planck-value reframe are established above; $S=\pi(\alpha/\ell_P)^2=3\pi/(\Lambda\ell_P^2)$ and its coincidence with the cosmologica ## a bracketed provenance note listing what is es* |
+| 70 | `geometric_core_paper` | *What stays open beyond the discrete skeleton is the full \emph{propagating} spinor field sector (the built modes being leaf-bound, not the propagating theory); what stays the ordin ## 'the full propagating spinor field sector (the* |
+| 71 | `geometric_core_paper` | *One candidate centrepiece stands here: the residue's full automorphism $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2\cong D_6$, read on a fermion sector, carries the shape $3\times2$---* |
+| 72 | `groupoid_paper` | *What remains walled is only the \emph{realised colour isometry} on the Lorentzian substrate; what remains do-not-assert is only the world-correspondence---that this located $\mathf* |
+| 73 | `groupoid_paper` | *\subsection{What is open}\label{sec:open} This paper's relational programme leaves no open direction of its own. ## VERDICT CORRECTED r2597 by the backlog gate: the hit is the SECTION HEADING 'What is open', not a claim. The secti* |
+| 74 | `groupoid_paper` | *The discrete skeleton this grades---the generation count, the chirality $\gamma^5$, and the family symmetry $S_3$---is built as bound-state zero-modes of the existent leaf, forced ## RECLASSIFIED r2618: this is p0's 'full propagat* |
+| 75 | `groupoid_paper` | *We close with what remains open and what the present construction enables: the overcritical continuation, here identified as the real trace of that monodromy crossing the Nariai br ## the overcritical continuation and the sweep di* |
+| 76 | `groupoid_paper` | *\emph{This does not settle the attribution}: the term is $-M/r^{3}$ on either reading, and whether it belongs to the forced pivot or to the mass is untouched by giving it a dynamic ## 'whether it belongs to the forced pivot or to * |
+| 77 | `janzen_circle_v3` | *The further question the circle frames---whether the smooth $z$-curve should be elevated to the status of \emph{the} fundamental object, or treated as one privileged description am ## 'is not settled by the circle alone, and the c* |
+| 78 | `janzen_circle_v3` | *What is not settled by this bookkeeping is the ontological reading of that real divergence---whether it is taken as a feature of the geometry, the perspectival metric being fundame* |
+| 79 | `janzen_circle_v3` | *Read on a fermion sector its three roots are three chiral generations, built on the matter sector and \emph{forced within} CR~\cite{JanzenMatter}, so the generation multiplicity is ## 'built on the matter sector and forced within * |
+| 80 | `janzen_circle_v3` | *\emph{Whether the two triples are one structure in the sense the programme's number audit certifies is not claimed here}: no derivation producing $\{0,1,2\}$ from a single conditio ## DISCHARGED r2631, NEGATIVELY. The ROOT triple * |
+| 81 | `matter_sector_paper` | *Index-theoretic stability under deformations preserving the three-wall structure is the expected behaviour of such a graded count and is traced rather than computed here ( establis ## r2608: the parity is COMPUTED (orbit of (+,+,+* |
+| 82 | `matter_sector_paper` | *Its stability under deformations preserving the three-wall structure is the expected behaviour of such a count and is stated here at traced weight: the receipt establishes the mech ## DEDUPED r2618: the same traced claim as 5098af* |
+| 83 | `matter_sector_paper` | *\emph{Passing between them requires knowing which fermions the handover delivers, in what numbers and at what masses}---which is this section's undelivered content, approached from ## 'not a separate gap' -- explicitly identifies * |
+| 84 | `matter_sector_paper` | *\emph{So the question the undelivered content amounts to is a question about the bundle}: what does the operator act on, and what fixes it? On the ordinary route the bundle is impo ## 'what does the operator act on, and what fixes* |
+| 85 | `matter_sector_paper` | *\emph{So the undelivered content is two items and not three.} What remains genuinely outstanding is the gauge group and the multiplet structure; \emph{hypercharge follows from them ## 'the undelivered content is TWO items and not * |
+| 86 | `matter_sector_paper` | *\emph{That undelivered content is owed elsewhere in the programme too, and the two debts are one.} The cosmological companion inherits two composition data across the branch point: ## 'the two debts are one' -- the composition/fer* |
+| 87 | `matter_sector_paper` | *\emph{What is not excluded here is a mechanism that is neither holonomy nor isometry; the isometry route is walled separately, and the honest statement is that no third mechanism h ## PO-5's residue, and the row carries it. ## BOU* |
+| 88 | `matter_sector_paper` | *So the position is not that the coupling is unbuilt but that a coupling is not the kind of thing a holonomy supplies, which is the same verdict the winding received one level up an ## 'not that the coupling is unbuilt but that a c* |
+| 89 | `matter_sector_paper` | *The operator half is explicit and grounded---the reality-involution lift $S=\gamma^{0}\gamma^{1}\gamma^{3}$ gives $\gamma^{5}S=-\mathrm{i}\gamma^{2}=-(C\gamma^{0\top})$, implementi ## 'The operator half is explicit and grounded' w* |
+| 90 | `matter_sector_paper` | *\emph{The hypercharges are therefore not independently undelivered and not independently delivered: they are the composition of the two, and this construction's half of it is the c ## the hypercharges are the composition of a cons* |
+| 91 | `matter_sector_paper` | *\emph{We claim no construction here.} We record that the sector's undelivered content is not unconstrained: it is constrained by a proved structural result and by measured ratios, ## 'We claim no construction here ... a well-posed* |
+| 92 | `matter_sector_paper` | *\emph{We have not examined whether any of these has the rank and the structure the Standard Model's content requires beyond what the preceding paragraph settles}, and we do not cla ## 'We have not examined whether any of these has* |
+| 93 | `matter_sector_paper` | *\emph{What remains is then not a defect but a description.} All of this is holonomy---a flat bundle and exact selection rules---so the construction supplies the discrete content of ## 'What remains is then not a defect but a descr* |
+| 94 | `matter_sector_paper` | *Within CR, and at that weight, the observed flavour skeleton is not merely consistent with four dimensions but selects them. ## 'the observed flavour skeleton is not merely consistent with four dimensions but SELECTS them' -- the * |
+| 95 | `matter_sector_paper` | *\emph{It is a condition the geometry supplies rather than one imposed to make a model work}, and it is the first of the undelivered items on which this sector says anything at all. ## 'a condition the geometry SUPPLIES rather than* |
+| 96 | `matter_sector_paper` | *\emph{The condition has a further consequence, which reduces the count of what this sector leaves undelivered.} Section~\ref{sec:correspondence} lists three items---colour, weak is ## 'reduces the count of what this sector leaves * |
+| 97 | `matter_sector_paper` | *\emph{The hypercharges are not a third undelivered item}: given those two, they follow from the per-wall anomaly conditions of \S\ref{sec:inflow} together with the existence of the ## 'The hypercharges are NOT a third undelivered * |
+| 98 | `matter_sector_paper` | *\emph{Two items it does bear on}: the wall structure requires each generation's content to be anomaly-free on its own---there being no bulk gauge field for inflow to come from---an ## 'the observed content MEETS that condition on * |
+| 99 | `shadow_of_existence` | *These rules license judgement precisely when rival frameworks fit the same data and the decisive evidence is not yet in hand---the situation in which theory-choice actually occurs. ## p0's theory-choice rules and their structural * |
+| 100 | `shadow_of_existence` | *The episode is instructive for the sampling programme precisely because it is not a vindication and not yet a refutation. ## 'not a vindication and not yet a refutation ... it was not developed, and the objection was retired with * |
+| 101 | `slicing_operator` | *The reading this paper adopts of its own results is the programme's covariance-of-geometries reading, formalized as the substrate's action Lie algebroid in a companion~\cite{Janzen ## 'we state it at the outset so the later sectio* |
+| 102 | `slicing_operator` | *What is open is narrower than that framing suggests, and the boundary is sharp. ## VERDICT CORRECTED r2600 by the backlog gate: 'What is OPEN is narrower' still names something open -- it NARROWS to the same half as 11b0140039 (a * |
+| 103 | `slicing_operator` | *\emph{What remains open here} is therefore not the emergence of the bend as such, but the matter content's own generative law where the construction does not supply one: a dynamics ## 'the matter content's own generative law ... a* |
+| 104 | `slicing_operator` | *The discipline is the programme's, in the sense the foundation makes explicit~\cite{JanzenShadowExistence}: the results below ground the structural reading; they do not entail it a* |
+| 105 | `slicing_operator` | *We close by naming what this does not yet settle. ## 'We close by naming what this does not yet settle' -- the scope section's own opening; its items are separately verdicted* |
+| 106 | `slicing_operator` | *Whether the operator reaches the rest of general relativity is posed here as the principal open problem (Section~\ref{sec:open}) and is answered in the companion range paper~\cite{ ## 'is answered in the companion range paper: the* |
+
+---
+
+# ⛔ WHAT THIS FILE IS NOT
+
+*It is not a triage. It is not a ranking. **Nothing on it is here because I judged it worth listing, and
+nothing has been left off because I judged it unworthy.** Items leave this list one way: the work is done
+and the row says where.*
