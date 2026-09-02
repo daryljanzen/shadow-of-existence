@@ -133,7 +133,7 @@ c7404d6da7 | boundary_paper | DO-NOT-ASSERT | A first structural result of that 
 fadc1e0d62 | CR_framework | DO-NOT-ASSERT | \emph{That the two are one structure is not claimed}: no derivation producing $\{0,1,2\}$ from a
 1e2552ace7 | SdS-slicing-curve_v2 | DO-NOT-ASSERT | That this is the right shape for such a distinction is noted and not claimed; testing it is not this paper|s work.
 
-27255439dd | CR_framework | NAMED-UNBUILT | A propagating fermion sector is now built on the framework's own chiral member~\cite{JanzenDynam
+27255439dd | CR_framework | REGISTERED | A propagating fermion sector is now built on the framework's own chiral member~\cite{JanzenDynam ## the sector is BUILT (r3802); what the sentence still names as unbuilt is the GAUGE GROUP and multiplet structure, which is family 6
 45d67de07f | boundary_paper | SCOPE-BY-DESIGN | So the index question stays open, and on a sharper thing than it was: not on there being no ferm
 
 7732ae80f2 | range_paper | REGISTERED | The vantage changes this range does \emph{not} classify are the irreducible ones: the interior c ## PO-25

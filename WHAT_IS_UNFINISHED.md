@@ -160,6 +160,28 @@ work uncited here.***
 
 ---
 
+# ⛭ A0 · THE OPEN PROBLEMS, AS THE REGISTER NOW HOLDS THEM — *r3831*
+
+***`THE_FRONTIER` read `1 OPEN` when this pass began. It reads `4 OPEN` now, and the three added were not
+created — they were carried in prose with no register row, which is why nobody could work them.***
+
+| | | |
+|---|---|---|
+| **`PO-13`** | **the misplaced phase** — what the driving does on the geometric rate | *was the only one showing* |
+| **`PO-23`** | **the ultraviolet definition of the mode sums** — opened `r3809` | *`P07` names three parts to "the definition of the interacting tower" and two are settled; this is the third, and it had never been attempted* |
+| **`PO-24`** | **the bespoke transfer** — opened `r3815` | *`PO-12` was struck as discharged, and the strike discharged the COMPONENTS; `C22` states that between low-$\ell$ and high-$\ell$ — **the acoustic peaks** — the chain does not reach* |
+| **`PO-25`** | **the charged bead** — opened `r3825`, reframed `r3827` | *under charge $r=0$ is a timelike singularity rather than the branch point, so the loop has nothing to close through; **hands off to `PO-13`** on whether a charged collapse forms the Cauchy horizon at all* |
+
+⌗ ***And `PO-25` and `PO-13` are worked together***, *on Daryl's reading: `PO-25`'s question is what
+happens to the bead under charge, and `PO-13`'s object is the bead.*
+
+### ⛭ THE BUILDS, FOR COMPARISON — **3 → 1**
+
+*The propagating spinor sector, **built** by 60 at `r3802`. The straddle, **computed** at `r3803` — it was
+a receipt, not a construction. And the third is now `PO-23`.*
+
+---
+
 # ⌗ C0 · THE SET SIZED — *r3813, all 99 rows read rather than sampled*
 
 ***Sized by what each row ASKS FOR, not by its verdict label. The labels were assigned when the rows
