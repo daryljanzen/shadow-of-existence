@@ -98,7 +98,7 @@ print("""
   - HIGH k: x_seam is large, many oscillations, and |Psi| has fallen as 1/x^2 to nothing -- so the
     mode arrives as a pure free oscillation of amplitude Psi(1/sqrt3)/2 = 0.4835 Psi_i.
   *** THE BOOST IS PRESENT, IT IS k-DEPENDENT, AND IT SATURATES. ***
-  This is the radiation-driving boost -- the very thing P15 said the radiation-free rate REMOVES.
+  This is the radiation-driving boost -- the very thing P15 said the geometric stacking rate REMOVES.
   It is not removed on L2.  It is removed on L1, WHICH IS THE READOUT AND NOT THE DRIVING.
 """)
 print("  *** SO THE ANSWER TO 'WHAT STANDS IN PLACE OF THE BOOST' IS: THE BOOST ITSELF, EARNED ON THE")
@@ -110,7 +110,7 @@ print("\n" + "="*80)
 print("STEP 6 — DOES THIS CONTRADICT P15?  Read the sentence again, exactly.")
 print("="*80)
 print("""
-  P15: 'the same radiation-free rate that enlarges r_D also reshapes the high-ell driving envelope
+  P15: 'the same geometric stacking rate that enlarges r_D also reshapes the high-ell driving envelope
         (REMOVING THE RADIATION-DRIVING BOOST THAT SETS THE LambdaCDM PEAKS), so CR's high-ell
         spectrum is governed by SHORT-WAVELENGTH COLLAPSE-PHASE DRIVING THAT HAS NOT BEEN COMPUTED.'
 

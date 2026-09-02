@@ -7,7 +7,7 @@ $\\ell_D$ -- and named the middle as unreached: "** the acoustic peaks, where $\
 order two and the decay is $k$-dependent through $k^2/(3\\mathcal H)$ **".
 
 ** ⓵ AND THE RATE THAT DRIVES IT IS BUILT FROM THE THING THAT DIFFERS. **  P15 names the rate as
-$k^2/(3\\mathcal H)$, and separately: "** the radiation-free rate near recombination is $13\\%$ below the
+$k^2/(3\\mathcal H)$, and separately: "** the geometric stacking rate near recombination is $13\\%$ below the
 radiation-included one there **".
 
   ⇒ *** So the decay is not common to the two cosmologies.  At fixed $k$, CR's driving rate is larger by
@@ -77,9 +77,9 @@ def main():
     check('⓵ the rate is the paper\'s: "the rate responsible is $k^{2}/(3\\mathcal{H})$, which grows with '
           '$k$"',
           'the rate responsible is' in p15 and '3\\mathcal{H}' in p15)
-    check('and the rate difference is the paper\'s: "the radiation-free rate near recombination is '
+    check('and the rate difference is the paper\'s: "the geometric stacking rate near recombination is '
           '$13\\%$ below the radiation-included one there"',
-          'the radiation-free rate near recombination is' in p15 and '13\\%$ below' in p15)
+          'the geometric stacking rate near recombination is' in p15 and '13\\%$ below' in p15)
     check('and the decay size is the paper\'s: "by a factor of order two across the first few peaks"',
           'by a factor of order two across the first few peaks' in p15)
 
@@ -120,7 +120,7 @@ def main():
         return 1
     print('  VERDICT: ** the gap is ~19% down at the peaks -- an ESTIMATE, with its model stated. **')
     print('  ⓵ ** The rate that drives the decay is built from the thing that differs: ** the paper gives')
-    print('     k²/(3ℋ) as the rate and ** "the radiation-free rate near recombination is 13% below the')
+    print('     k²/(3ℋ) as the rate and ** "the geometric stacking rate near recombination is 13% below the')
     print('     radiation-included one" ** as the difference.')
     print('     ⇒ ** So the decay is NOT common to the two cosmologies. **  At fixed k, CR decays ~15%')
     print('       faster.')

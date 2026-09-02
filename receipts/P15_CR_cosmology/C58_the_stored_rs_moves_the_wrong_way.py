@@ -6,7 +6,7 @@ with the corpus's own comment calling $z_{\\rm onset}$ **"the one fitted number"
 moves it: `LATARG` $280\\to r_s=145.91$, $301.6\\to135.46$ (banked), $320\\to127.67$.
   ⇒ ** Disagreeing with a from-$a{\\sim}0$ integral is what a fitted value DOES.  There is no
   bookkeeping error and nothing for cc54 to trace. **
-  ⌗ *What survives: the DIRECTION arithmetic is correct at both limits (radiation-free exceeds
+  ⌗ *What survives: the DIRECTION arithmetic is correct at both limits (geometric stacking exceeds
   radiation-included from-onset as well as from $a{\\sim}0$), and the peak-spacing deficit r2789
   measured is untouched -- **whether THAT follows the pin is the live question**.* ***
 
@@ -29,7 +29,7 @@ time accrues before recombination and the sound horizon is ** LARGER **.  Integr
       *** radiation INCLUDED   r_s = 146.52 Mpc
           radiation FREE       r_s = 245.16 Mpc ***
 
-  ⇒ *** A radiation-free arm must have a LARGER $r_s$ than $\\Lambda$CDM. ***
+  ⇒ *** A geometric stacking arm must have a LARGER $r_s$ than $\\Lambda$CDM. ***
 
 ** ⛔ ⓷ THE STORED VALUES GO THE OTHER WAY. **
 
@@ -40,7 +40,7 @@ time accrues before recombination and the sound horizon is ** LARGER **.  Integr
       physics requires. **  Two independent arguments agree against the stored value. ***
 
 ** ⓸ SO THE ANSWER TO r2789's THREE-WAY IS $r_s$, AND THE CASE IS NOT ONLY ARITHMETIC. **  *** The
-transfer's own peaks say $r_s\\approx158$; the radiation-free integral says $r_s$ must exceed
+transfer's own peaks say $r_s\\approx158$; the geometric stacking integral says $r_s$ must exceed
 $\\Lambda$CDM's $144.53$; the stored value is $135.46$.  ** The spectrum and the physics agree with each
 other and disagree with the ledger entry. ** ***
   ⌗ ** Which is why $\\ell_A$ looked fine: ** *** $\\pi D_M/r_s$ with BOTH stored values reproduces
@@ -49,7 +49,7 @@ other and disagree with the ledger entry. ** ***
 
 WHAT IS NOT CLAIMED.  ** Not that $158.35$ or $245.16$ is the right value ** -- *** the first is what the
 peak spacing implies at the stored $D_M$; the second is a bare integral with a fixed $x_e$ and no seam
-treatment, and the corpus's radiation-free construction is not this integral.  ** What is established is
+treatment, and the corpus's geometric stacking construction is not this integral.  ** What is established is
 the DIRECTION and that the stored value has the wrong sign of deviation. ** ***  ** Not that $D_M$ is
 cleared ** -- *** it is not independently checked; what is shown is that $r_s$ has an independent
 argument against it and $D_M$ does not. ***  ** Not that the CR arm's physics is wrong ** -- *** a ledger

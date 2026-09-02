@@ -1,5 +1,5 @@
 r"""L-272 -- PO-13 answered: the misplaced phase is not a defect of the seam, the transfer, or the
-geometry.  It is the radiation-free rate, and it is the same fact that dissolves the Hubble tension.
+geometry.  It is the geometric stacking rate, and it is the same fact that dissolves the Hubble tension.
 
 ** WHAT PO-13 ASKED. ** *** "The construction reproduces the acoustic scale, the peak spacing, the
 damping physics and the height pattern, and puts the first-peak phase intercept 0.615 l_A from the sky
@@ -52,7 +52,7 @@ error, stated with what distinguishes them. ***
 ** WHY THE CONTROL'S IS FLAT, AND WHY THAT MAKES THIS NOT A DEFECT. **  *** LambdaCDM's two couplings
 are EACH flat in k and they OPPOSE -- continuity later than a free half-period, gradient earlier -- so
 the universality of the standard driving shift is a CANCELLATION BETWEEN TWO FLAT TERMS rather than
-the signature of one.  On the radiation-free rate there is no cancellation left: both are earlier, so
+the signature of one.  On the geometric stacking rate there is no cancellation left: both are earlier, so
 they ADD, and the k-dependence sits in the GRADIENT channel and not the continuity one. ***
 
   ⇒ ** The standard driving shift is universal BECAUSE every mode crosses during radiation domination
@@ -81,7 +81,7 @@ def check(label, ok):
         FAILED.append(label)
 
 print()
-print('  L-272 -- PO-13: the misplaced phase is the radiation-free rate')
+print('  L-272 -- PO-13: the misplaced phase is the geometric stacking rate')
 print()
 
 DISC = 0.615
@@ -137,7 +137,7 @@ cont_l, grad_l = (1.23, 1.28), (0.73, 0.87)
 cont_c, grad_c = (0.11, 0.18), (0.06, 0.57)
 check('⓺ LambdaCDM: continuity LATER than a free half-period, gradient EARLIER -- they oppose',
       min(cont_l) > 1 and max(grad_l) < 1)
-check('⓺ᵇ radiation-free: BOTH earlier -- they add, with no cancellation left',
+check('⓺ᵇ geometric stacking: BOTH earlier -- they add, with no cancellation left',
       max(cont_c) < 1 and max(grad_c) < 1)
 check('⓺ᶜ and the k-dependence sits in the GRADIENT (k^-1.04), not the continuity (k^-0.17)',
       abs(-1.04) > abs(-0.17))
@@ -154,8 +154,8 @@ if FAILED:
     sys.exit(1)
 print('  ⇒ ** ALL CHECKS PASS. **')
 print()
-print('  ⛭ ** PO-13 IS ANSWERED: NONE OF THE THREE LAYERS.  The offset is the radiation-free rate\'s')
+print('  ⛭ ** PO-13 IS ANSWERED: NONE OF THE THREE LAYERS.  The offset is the geometric stacking rate\'s')
 print('     own consequence -- the standard driving shift is universal because every mode crosses')
-print('     during radiation domination, and a radiation-free rate has no such crossing.  The Hubble')
+print('     during radiation domination, and a geometric stacking rate has no such crossing.  The Hubble')
 print('     resolution and the phase offset are ONE FACT. **')
 sys.exit(0)

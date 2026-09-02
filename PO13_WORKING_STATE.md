@@ -9,8 +9,39 @@ status: WORKING DOCUMENT — deliberately not a paper
 # aborted the step before anything after it ran) made it visible to `check_currency` for
 # the first time. ** Declaring ignorance is not declaring currency, and only the owning
 # line can do the second. **
-current: none
+current: r3841
 ---
+
+# ⛭⛭⛭ r3841 — **THE FLAT COMB IS EXPLAINED IN `P07`, AND HAS BEEN ALL ALONG**
+
+***`r3725` measured that CR's peak phase is flat ($0.324,0.316,0.334$) where the sky's alternates
+($0.269,0.217,0.317$), and four revisions were spent hunting the mechanism. `P07` `sec:frontiers` states
+it.***
+
+> *"That alternation is the compression--rarefaction asymmetry, and where it is fixed is the **driving
+> history**: the standard shift that carries it is universal only where **every mode crosses the horizon
+> while there is a plasma to be driven**, and on this rate the acoustic modes **re-enter above the
+> onset**, so none of them does. The uniform comb follows from that ordering, and **the ordering is not
+> adjustable** --- the nucleosynthesis plasma is the progenitor's, on the transit's cooling leg, complete
+> before the branch point."*
+
+⇒ ***And `r3733` measured the same fact from the other side without recognising it***: *on the leaf the
+$\ell=220$ mode sits at $k/k_{\rm hor}=0.92$ --- **outside the horizon at the onset**. That is "the
+acoustic modes re-enter above the onset", measured.*
+
+⛭ ***So the alternation and the resolution of the Hubble tension are one fact***, *and it is a prediction
+with its calibration attached: raising the onset past the re-entry redshifts restores the alternation and
+saturates at the comparison's own value --- in two observables, since the same mechanism is read in the
+accumulated sound phase at first turnover.*
+
+⌗ ***`D1` states the verdict this document was hunting***: *"PO-13 is answered: NONE OF THE THREE LAYERS.
+The offset is the geometric rate's own consequence." **The DIAGNOSIS is closed.** What remains is the
+derivation --- the potential's own evolution on the EXPANDING leg, `P15` having derived it in closed form
+on the collapse leg. `PO-13`'s register row is narrowed to that.*
+
+⚠ ***AND THE LESSON.*** *Four revisions went to a mechanism the corpus already carried, because the hunt
+ran inside the instrument and never returned to the frontier section that names the item.*
+
 
 # THE ACOUSTIC-PHASE OFFSET — WORKING STATE
 

@@ -14,7 +14,7 @@ parameters FIXED, while half ① is a refit -- and the two arms do not have the 
 
 ** ⛭⛭ ⓶ AND P7's PHRASE CARRIES AN ASSUMPTION THE ARMS DO NOT SHARE. **  "A parameter refit" presumes
 both arms have parameters to refit.  ** P15 states what CR has: **
-  * "the radiation-free rate carries $H_0$ out of both $r_s$ and $D_M$, so ** $\\theta_*$ is fixed by
+  * "the geometric stacking rate carries $H_0$ out of both $r_s$ and $D_M$, so ** $\\theta_*$ is fixed by
     $\\Omega_m$ alone ** and ** the same $z_{\\rm onset}$ meets the scale at every $H_0$ across the
     range---it does not move between them **";
   * the DESI confrontation runs "at $\\chi^2/{\\rm dof}\\simeq1$ with the ** single CMB-calibrated

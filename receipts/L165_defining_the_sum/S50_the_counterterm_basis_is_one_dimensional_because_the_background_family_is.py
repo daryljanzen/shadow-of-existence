@@ -85,7 +85,7 @@ are distinguished by how they respond to VARYING the background; on a one-parame
 cannot be told apart, and that is exactly why one suffices there.
 
   ⇒ ⛔ ** THE TOWER DOES NOT LIVE ON THE SUBSTRATE.  IT LIVES ON THE LAYER **, whose observable rate
-    P15 gives as the radiation-free $\sinh^{2/3}$.  PART 4 computes its Ricci scalar: ** it runs from
+    P15 gives as the geometric stacking $\sinh^{2/3}$.  PART 4 computes its Ricci scalar: ** it runs from
     divergent at early times to $12H^2$ asymptotically -- NOT constant. **
   ⇒⇒ *** SO THE DEGENERACY IS THE SUBSTRATE'S AND THE LAYER IS WHERE IT WOULD LIFT.  `PO-6`'s dark
       half becomes determinate: DOES THE ONE-DIMENSIONAL COUNTERTERM BASIS SURVIVE ON A BACKGROUND

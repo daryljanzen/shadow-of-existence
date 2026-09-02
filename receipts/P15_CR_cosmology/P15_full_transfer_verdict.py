@@ -6,7 +6,7 @@ P15_full_transfer_verdict.py -- verifies the P15 sec:coherence claim that the le
   CR/LCDM = 0.979, 0.920, 0.829, 0.717, 0.594 at l=500,1000,1500,2000,2500 (tens of % suppression).
   HONEST SCOPING (the receipt's own r966 correction banner): this is NOT a verdict on CR -- the peaks-match
   assumption (A) is exactly the unbuilt part (verified only l<1000 via camb_reference), and the same
-  radiation-free rate that enlarges r_D also reshapes the high-ell driving envelope, so (A) may be wrong at
+  geometric stacking rate that enlarges r_D also reshapes the high-ell driving envelope, so (A) may be wrong at
   high ell in CR's favour. The conditional chi^2 is huge, but conditional. The paper takes ONLY the conditional
   ('the shortcut gives a large deficit, and that is why the shortcut is illegitimate') and leaves the observable
   high-ell consequence open. Receipt and paper both scope it correctly -- no overclaim.
@@ -103,7 +103,7 @@ for band in [(1000,2500),(1500,2500),(1000,2000)]:
 
 print("\n"+"="*76)
 print("""VERDICT (the sign, computed at semi-analytic level under the corpus's OWN physics):
-  IF the peaks match LCDM (commitment A) AND the diffusion is radiation-free (commitment B),
+  IF the peaks match LCDM (commitment A) AND the diffusion is geometric stacking (commitment B),
   the +8.9% larger Silk scale suppresses the high-l TT by TENS OF PERCENT (l=2000-2500), a
   many-sigma deficit against Planck -- NOT a mild edge but a SEVERE tension, near-refutation.
   The damping tail's exponential sensitivity to r_D is what converts the 'modest 8%' into a

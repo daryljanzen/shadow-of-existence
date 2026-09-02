@@ -59,7 +59,7 @@ print("""
     (a) 'its driving does not live on an expanding radiation era... it lives on the CONTRACTING side
          --- the progenitor's radiation-comparable collapse phase, whose potential evolution is the
          Friedmann TIME-REVERSE of an expanding radiation era'  -- and
-    (b) 'the same radiation-free rate that enlarges r_D also reshapes the high-ell driving envelope
+    (b) 'the same geometric stacking rate that enlarges r_D also reshapes the high-ell driving envelope
          (removing the radiation-driving boost that sets the LambdaCDM peaks), so CR's high-ell
          spectrum is governed by SHORT-WAVELENGTH COLLAPSE-PHASE DRIVING THAT HAS NOT BEEN COMPUTED.'
 

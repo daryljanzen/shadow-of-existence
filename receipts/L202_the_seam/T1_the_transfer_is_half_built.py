@@ -7,17 +7,17 @@ idea but a computation this sequence owes and has not yet run **, and the paper'
 than another's."
 
 ** ⓵ AND THE PAPER STATES THE DEBT AS TWO STEPS, NOT ONE. **  "This is a genuine build, not a plug-in:
-it requires ** FIRST specifying how the fluctuations gravitate on the radiation-free background ** ---the
+it requires ** FIRST specifying how the fluctuations gravitate on the geometric stacking background ** ---the
 piece that sets the high-$\\ell$ driving envelope, and which the standard Boltzmann codes cannot supply
 because they tie radiation's gravity to its presence and so cannot represent the content-not-rate split
 the layered rate rests on---** AND THEN a bespoke transfer against that specification **."
 
-  ⇒ ** ① the specification (how fluctuations gravitate on the radiation-free background); ② the transfer
+  ⇒ ** ① the specification (how fluctuations gravitate on the geometric stacking background); ② the transfer
     run against it. **
 
 ** ⛭⛭ ⓶ AND STEP ① IS BUILT.  THE PAPER SAYS SO TWICE, IN AN EARLIER SECTION. **
 
-  "the same radiation-free rate that enlarges $r_D$ also governs the high-$\\ell$ driving envelope, so
+  "the same geometric stacking rate that enlarges $r_D$ also governs the high-$\\ell$ driving envelope, so
    CR's high-$\\ell$ spectrum rests on short-wavelength collapse-phase driving rather than on the boost an
    expanding radiation era supplies.  ** That driving is computed below (\\S\\ref{sec:envelope}), and the
    calculation removes the licence the shortcut lacked: the envelope is DERIVED ON THE COLLAPSE LEG
@@ -78,10 +78,10 @@ def main():
 
     # ⓵ two steps
     check('⓵ the paper states the debt as TWO steps: "it requires first specifying how the fluctuations '
-          'gravitate on the radiation-free background ... and then a bespoke transfer against that '
+          'gravitate on the geometric stacking background ... and then a bespoke transfer against that '
           'specification"',
           'it requires first \\emph{specifying how the fluctuations gravitate on the '
-          'radiation-free background}' in p15
+          'geometric stacking background}' in p15
           and 'and then a bespoke transfer against that specification' in p15)
     check('and names step ① as what sets the envelope: "the piece that sets the high-$\\ell$ driving '
           'envelope"',
@@ -96,7 +96,7 @@ def main():
           'leg rather than imported."',
           'That driving is computed below' in p15
           and 'the envelope is derived on the collapse leg rather than imported' in p15)
-    check('with the same object named: "the same radiation-free rate that enlarges $r_{D}$ also governs '
+    check('with the same object named: "the same geometric stacking rate that enlarges $r_{D}$ also governs '
           'the high-$\\ell$ driving envelope"',
           'also governs the high-$\\ell$ driving envelope' in p15)
 
@@ -121,7 +121,7 @@ def main():
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
     print('  VERDICT: ** PO-12 is HALF BUILT, and the paper says so two sections earlier. **')
-    print('  ⓵ ** The debt is TWO steps: ** ① specify how fluctuations gravitate on the radiation-free')
+    print('  ⓵ ** The debt is TWO steps: ** ① specify how fluctuations gravitate on the geometric stacking')
     print('     background -- the piece that sets the high-ℓ driving envelope, which no standard')
     print('     Boltzmann code can supply -- and ② a bespoke transfer against that specification.')
     print('  ⛭⛭ ⓶ ** And ① IS BUILT: ** "That driving is computed below (sec:envelope) ... ** the envelope')

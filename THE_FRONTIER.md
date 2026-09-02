@@ -41,7 +41,7 @@ sources: [chat]
 
 | id | what it is | steps | was | turns/step | kind | cites | gate | runway |
 |---|---|---|---|---|---|---|---|---|
-| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 1 | — | r3092: the phase reset is justified by an UNBOUNDED tortoise phase that r2154 (1) showed is FINITE (0.2247 alpha). Wired PHZ; the comb moves hard. A carrier, not yet a fit |
+| **PO-13** | the misplaced phase — WHY the propagated comb runs short | **1** | 1 | 3 | READ | 0 | — | r3092: the phase reset is justified by an UNBOUNDED tortoise phase that r2154 (1) showed is FINITE (0.2247 alpha). Wired PHZ; the comb moves hard. A carrier, not yet a fit |
 | **PO-24** | the bespoke transfer -- REACH THE ACOUSTIC PEAKS | **1** | 1 | 6 ⚠ | ? | 0 | — | r3815: PO-12 was struck at r2702 as discharged, and the strike discharged the COMPONENTS -- driving in closed form, source removal, the branch-point join, the super-horizon transfer, the onset shown spent. P15 asks for what they do not add up to: the end-to-end transfer that confirms the height pattern digit by digit. C22 names the gap itself -- it reaches low-ell (7.5% deficit, absent early ISW) and high-ell (0.843 at l_D to 0.459 at 2 l_D) and states that BETWEEN them, the acoustic peaks, the chain does not reach, Phi decaying by order two with k-dependence k^2/3H. AND THE TWO INSTRUMENTS MUST NOT BE CONFUSED: PO-10s strike got LCDM P1/P2 = 2.200 and CR 2.185 THROUGH CAMB with a suppression factor on the CR arm, a legitimate comparison and not a bespoke transfer; ACOUSTIC_two_arm, which IS the attempt at one, gets LCDM 2.721 and P1/P3 4.496 rising to 8.009 with the neutrino hierarchy resolved (r3745). |
 
 ### E · the substrate geometry

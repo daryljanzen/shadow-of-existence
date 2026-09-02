@@ -6,7 +6,7 @@ equation contains no $k$, and the residue P15 names is `PO-7`'s question, not th
 recombination is what the instrument already runs; ** joining the two as a single calculation is unrun
 **."  *** This row has carried that sentence for forty revisions. ***
 
-** ⛭⛭ ⓵ AND P15 ANSWERS IT IN ITS OWN VOICE. **  "On the radiation-free rate the crossing occurs under
+** ⛭⛭ ⓵ AND P15 ANSWERS IT IN ITS OWN VOICE. **  "On the geometric stacking rate the crossing occurs under
 pressureless matter to better than a part in $10^4$, and the potential equation for a pressureless
 component, $\\Phi''+3\\mathcal H(1+w)\\Phi'+[2\\mathcal H'+(1+3w)\\mathcal H^2]\\Phi+wk^2\\Phi=0$, ** contains
 no $k$ at all once $w=0$ **---the wavenumber enters only through the pressure term."

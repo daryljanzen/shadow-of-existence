@@ -12,7 +12,7 @@ carried by $H(a)$ **".
 
 ** ⛭⛭ ⓵ THE TWO RATIOS DIFFER IN WHAT IS HELD FIXED, AND THAT IS THE WHOLE OF IT. **
   * ** The corpus's ratio ** compares ** the SAME quantity on TWO RATES ** -- the diffusion length on the
-    radiation-free rate against the radiation-included one.  *** The microphysics is identical on both
+    geometric stacking rate against the radiation-included one.  *** The microphysics is identical on both
     sides, so it cancels identically, and $H(a)$ is the only thing that differs. ***
   * ** An odd/even ratio ** compares ** DIFFERENT MULTIPOLES on ONE rate ** -- peak $n$ against peak
     $n+1$.  *** The transfer envelope is not the same at $\\ell_n$ and $\\ell_{n+1}$, so nothing cancels
@@ -81,9 +81,9 @@ def main():
           'history cancel identically and the whole difference is carried by $H(a)$"',
           'the Thomson physics and the ionisation history cancel identically' in p15
           and 'carried by $H(a)$' in p15)
-    check('and it is between two RATES: "on the inherited datum the radiation-free rate gives a '
+    check('and it is between two RATES: "on the inherited datum the geometric stacking rate gives a '
           'diffusion length $10.8\\%$ longer"',
-          'the radiation-free rate gives a diffusion length' in p15 and '10.8' in p15)
+          'the geometric stacking rate gives a diffusion length' in p15 and '10.8' in p15)
     check('with the sound horizon computed the same way: "$r_{s}=146.4$~Mpc against $145.4$ on the '
           'radiation-included"',
           '146.4' in p15 and '145.4' in p15)

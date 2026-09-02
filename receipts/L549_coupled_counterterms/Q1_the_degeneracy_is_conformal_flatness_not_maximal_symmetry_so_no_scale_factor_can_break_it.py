@@ -37,7 +37,7 @@ one dimension -- span a ONE-DIMENSIONAL space for every scale factor. ***
 On a maximally symmetric background $R$ is constant, so $\\int\\!\\sqrt g$, $\\int\\!\\sqrt g\\,R$ and
 $\\int\\!\\sqrt g\\,R^{2}$ -- terms of DIFFERENT dimension -- are proportional too, and the basis is
 one-dimensional at every order.  *That is the part maximal symmetry buys, and it is lost the moment
-$a$ is not the de Sitter $\\cosh$.*  Shown on P15's own radiation-free layer $a=\\sinh^{2/3}(3Ht/2)$:
+$a$ is not the de Sitter $\\cosh$.*  Shown on P15's own geometric stacking layer $a=\\sinh^{2/3}(3Ht/2)$:
 $R$ RUNS from $\\infty$ to $12H^{2}$, so $R^{2}$ is $t$-dependent and the different-dimension terms
 part company -- *** while the quadratic identity holds on that same running layer EXACTLY (symbolic
 zero). ***

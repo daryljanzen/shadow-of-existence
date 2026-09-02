@@ -3,14 +3,14 @@
 the branch point, and the paper's own consistency rule forbids mixing them.
 
 ** THE QUESTION LEFT BY r2659. **  The debt is now "the background the instrument runs on" -- the
-instrument is "the full ** flat-projection ** transfer" and the debt names "the ** radiation-free **
+instrument is "the full ** flat-projection ** transfer" and the debt names "the ** geometric stacking **
 background", with "** the whole difference is carried by $H(a)$ **".  ⇒ ** Does that $H(a)$-only
 difference hold for every source term, or only for the diffusion length where it was established? **
 
 ** ⚠ ⓵ AND THE FIRST ANSWER LOOKED LIKE A CONTRADICTION AND WAS NOT. **  `sec:envelope`'s driving is
 $\\Phi''+(4/\\eta)\\Phi'+(k^2/3)\\Phi=0$, and $4/\\eta$ is the ** radiation-dominated ** friction
 ($a\\sim\\eta$); on a matter-dominated background it would be $8/\\eta$.  *** So the perturbation sector
-appeared to assume radiation while the debt asks for a radiation-free background. ***
+appeared to assume radiation while the debt asks for a geometric stacking background. ***
   ⇒ ** It does not.  The paper scopes it in the same sentence: ** "** On the radiation-dominated collapse
     leg ** the potential obeys ..."  *** The collapse leg IS radiation-dominated -- it is the prior
     universe's contraction, heating into the hot handover. ***
@@ -20,11 +20,11 @@ excursion sets ** the L2 rate radiation is included in **, here ** the diffuse p
 foliation radiation is excluded from **."
 
   ⇒⇒ *** So the transfer is not one background with a modified $H(a)$.  It is TWO: a radiation-dominated
-      collapse leg supplying the driving in closed form, joined at the branch point to a radiation-free
+      collapse leg supplying the driving in closed form, joined at the branch point to a geometric stacking
       expansion leg carrying the observable history.  THAT is what "bespoke" names. ***
 
 ** ⛭ ⓷ AND THE PAPER STATES THE CONSISTENCY RULE THE TRANSFER MUST OBEY. **  "This is forced: it is the
-same L1 rate that dissolves the Hubble tension, and ** one may not take the rate radiation-free for the
+same L1 rate that dissolves the Hubble tension, and ** one may not take the rate geometric stacking for the
 peak spacing and radiation-included for the diffusion **."
   ⌗ *** That is a constraint ON the transfer, stated before the transfer exists: whatever it computes, the
       rate must be the SAME rate for every observable on the expansion leg.  A flat-projection instrument
@@ -34,7 +34,7 @@ peak spacing and radiation-included for the diffusion **."
 Not "swap $H(a)$" -- that understates it.  It is: run the existing hierarchy across a TWO-LEG background
 joined at the branch point, with the L1 rate on the expansion leg for every observable at once. ***
   ⌗ ** And the pieces for both legs are separately in hand: ** the closed-form driving on the collapse leg
-  (`sec:envelope`, verified r2658), the radiation-free rate and its consequences on the expansion leg
+  (`sec:envelope`, verified r2658), the geometric stacking rate and its consequences on the expansion leg
   ($r_s$, the diffusion length, $\\ell_*$).
 
 WHAT IS NOT CLAIMED.  ** Not that the join is straightforward ** -- *** the matching at the branch point
@@ -97,8 +97,8 @@ def main():
 
     # ⓷ the consistency rule
     check('⛭ ⓷ and the paper states the rule the transfer must obey: "one may not take the rate '
-          'radiation-free for the peak spacing and radiation-included for the diffusion"',
-          'one may not take the rate radiation-free for the peak spacing and radiation-included for the '
+          'geometric stacking for the peak spacing and radiation-included for the diffusion"',
+          'one may not take the rate geometric stacking for the peak spacing and radiation-included for the '
           'diffusion' in p15)
     check('calling it forced: "This is forced: it is the same L1 rate that dissolves the Hubble tension"',
           'This is forced: it is the same L1 rate that dissolves the Hubble tension' in p15)
@@ -114,13 +114,13 @@ def main():
     print('  VERDICT: ** "bespoke" means TWO backgrounds joined at the branch point. **')
     print('  ⚠ ⓵ ** The driving\'s 4/eta friction is the RADIATION-dominated coefficient ** (8/eta for')
     print('     matter) -- ** which looked like the perturbation sector assuming radiation while the debt')
-    print('     asks for a radiation-free background. **  *** It is not: the paper scopes it in the same')
+    print('     asks for a geometric stacking background. **  *** It is not: the paper scopes it in the same')
     print('     sentence -- "ON THE RADIATION-DOMINATED COLLAPSE LEG". ***')
     print('  ⛭⛭ ⓶ ** The two legs carry different content BY CONSTRUCTION: ** "the self-gravitating')
     print('     excursion sets the L2 rate ** radiation is included in **" against "the diffuse plasma')
     print('     rides the L1 foliation ** radiation is excluded from **".')
     print('  ⛭ ⓷ ** And the paper states the rule a transfer must obey, before the transfer exists: **')
-    print('     "** one may not take the rate radiation-free for the peak spacing and radiation-included')
+    print('     "** one may not take the rate geometric stacking for the peak spacing and radiation-included')
     print('     for the diffusion **" -- called ** forced **.')
     print('  ⇒⇒ ⓸ ** SO THE DEBT AT ITS SHARPEST: ** not "build a transfer" (one exists, validated), not')
     print('     "swap H(a)" (understates it), but ** run the existing hierarchy across a TWO-LEG')

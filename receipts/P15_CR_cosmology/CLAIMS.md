@@ -9,7 +9,7 @@ null-and-degenerate geometry assigns each its job. Maturity marks in prose: esta
 - **sec:background** — causal reassignment selects Nariai (ΛG²M²/c⁴=1/9); proper-frame cosmology derived
   (5 steps, E=1 congruence) → r(τ̃)=(2^{1/3}/√Λ)sinh^{2/3}; exact flat-ΛCDM recovery, amplitude a Λ-length;
   Friedmann H²=(Λc²/3)coth²; Ω_m/Ω_Λ=csch² (density = clock); three-level rule L1(foliation stacking,
-  radiation-free)/L2(leaf local, radiation gravitates)/L3(E=1 projection); Hubble tension dissolved +
+  geometric stacking)/L2(leaf local, radiation gravitates)/L3(E=1 projection); Hubble tension dissolved +
   acoustic scale a one-parameter accommodation on ρ_r/ρ_m≈2; BAO ladder (SDSS DR12 χ²≈1.7 vs 49; DESI DR2
   χ²/dof≈1.0 vs 14).
 - **perturbation sector** — prop:subhorizon (modes sub-horizon at seam); sec:coherence (null seam →

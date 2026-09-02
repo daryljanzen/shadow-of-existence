@@ -7,7 +7,7 @@ P15_damping_reabsorption.py -- verifies the P15 sec:coherence claim that the ~9%
   The CR shift is +8.9%; cancelling it needs omega_b +29% (or omega_c +30%), vs the ~1%/~2% BBN+peak-height
   priors allow -> NOT reabsorbable (29x/20x the allowed range); a 1% omega_b shifts r_D ~0.3%, well under a %.
   Irreducible residual ~8.2%. The receipt's own broader verdict (a conditional multi-sigma tension IF the CR
-  spectrum is otherwise LCDM's) is honestly conditional -- its anti-panic audit notes the same radiation-free
+  spectrum is otherwise LCDM's) is honestly conditional -- its anti-panic audit notes the same geometric stacking
   rate also reshapes the high-ell driving, so the 'IF' is unbuilt; the paper takes only the SETTLED part
   (non-reabsorbable r_D) and flags the observable consequence as open. No overclaim.
 STATUS: ✔✔ (r_D ~ omega_b^{-0.305} = paper's -0.31; non-reabsorbable within priors; conditional tension honestly flagged)
@@ -23,7 +23,7 @@ Z_ONSET = 6803.0   # CR cosmogenesis seam: rho_r/rho_m=2 -> z_onset=2*z_eq-1 (z_
                    # starts at the seam (P15 sec:tensions / damping_ratio_clean.py), NOT at z=inf.
 def scales(ombh2, omch2, rate_radfree, H0=67.36, mnu=0.06, tau=0.0544):
     """r_s (Mpc) and Silk 1/k_D (Mpc) with CAMB thermodynamics for these densities,
-    integrated over the chosen expansion rate. For CR (radiation-free) the sound-horizon clock
+    integrated over the chosen expansion rate. For CR (geometric stacking) the sound-horizon clock
     starts at the finite-curvature seam z_onset (anchored to the observed acoustic scale), not
     at z=inf -- CR has no radiation era to cap the integral, so integrating to inf is spurious."""
     pars = camb.CAMBparams()
@@ -36,7 +36,7 @@ def scales(ombh2, omch2, rate_radfree, H0=67.36, mnu=0.06, tau=0.0544):
     Or = og + 3.046*(7./8.)*(4./11.)**(4./3.)*og
     OL = 1.0-Om-Or; OL_cr = 1.0-Om
     def H(z):
-        if rate_radfree: return H0*np.sqrt(Om*(1+z)**3 + OL_cr)      # radiation-FREE (CR)
+        if rate_radfree: return H0*np.sqrt(Om*(1+z)**3 + OL_cr)      # GEOMETRIC (CR)
         return H0*np.sqrt(Om*(1+z)**3 + Or*(1+z)**4 + OL)           # radiation-full (LCDM)
     def R(z): return 0.75*(ombh2/2.47282e-5)/(1+z)
     # sound horizon: LCDM to high z (radiation era converges); CR from seam z_onset (anchored)
@@ -60,7 +60,7 @@ print("="*76)
 # BOTH frameworks (CR via the inherited datum, LCDM via the radiation-era ruler), so it is the
 # common anchor and CANCELS: the CR shift in the observable is the pure diffusion-length ratio.
 rsL, rDL, zsL = scales(ob0, oc0, False)      # LCDM: r_D on the radiation-full rate
-rsC, rDC, zsC = scales(ob0, oc0, True)       # CR:   r_D on the radiation-free rate
+rsC, rDC, zsC = scales(ob0, oc0, True)       # CR:   r_D on the geometric stacking rate
 shift = 100*(rDC-rDL)/rDL                     # r_s common -> observable shift = r_D ratio
 print(f"\n[fiducial Planck omega_b={ob0}, omega_c={oc0};  r_s matched to observed acoustic scale]")
 print(f"  Silk length r_D : LCDM(rad) = {rDL:.4f}   CR(rad-free) = {rDC:.4f} Mpc")
@@ -133,13 +133,13 @@ print("""
 """)
 print("="*76)
 print("""ANTI-PANIC AUDIT (before calling this a refutation -- the r959 face):
- The large residual is real ONLY IF CR is truly committed to the radiation-free rate through
+ The large residual is real ONLY IF CR is truly committed to the geometric stacking rate through
  recombination. Audit the imported assumptions:
-  (1) Is r_D genuinely radiation-free in CR?  YES -- P15 sec:coherence commits it: recombination
+  (1) Is r_D genuinely geometric stacking in CR?  YES -- P15 sec:coherence commits it: recombination
       is observable cosmology from the seam outward, an L1 quantity; 'one may not take the rate
-      radiation-free for the peak spacing and radiation-included for the diffusion.'  So the
+      geometric stacking for the peak spacing and radiation-included for the diffusion.'  So the
       shift is a genuine CR prediction, not an artifact -- it does NOT dissolve on audit.
-  (2) Does the same radiation-free rate shift the PEAK HEIGHTS too (not just theta_D)?  If the
+  (2) Does the same geometric stacking rate shift the PEAK HEIGHTS too (not just theta_D)?  If the
       early-ISW / potential-envelope also moves, the whole high-l fit shifts and the heights-
       match claim (P15: 'Argued', digit-level confirmation OPEN) is where the real test lives.
       This is the honest locus: the damping tail is one facet of a full-transfer question the

@@ -13,7 +13,7 @@ CONFIRMATION 4: the object.  Silk damping is a diffusion length built from the T
 the expansion.  The standard definition (Kaiser 1983; Hu-Sugiyama), in the Rb -> 0 limit:
       1/k_D^2 = INT d eta . (1/(6 tau_dot)) . (8/9),      tau_dot = n_e sigma_T a
 P15 fixes the level: recombination is observable cosmology from the seam OUTWARD, so the expansion
-in this integral is L1 -- the radiation-free rate -- while the Thomson microphysics is ordinary.
+in this integral is L1 -- the geometric stacking rate -- while the Thomson microphysics is ordinary.
 ORIGIN: storyboard_receipts/C8_diffusion_length.py -- registered r2376 (c54); edit the origin, not this copy."""
 import sympy as sp, numpy as np
 a,Om,Or,OL=sp.symbols('a Omega_m Omega_r Omega_Lambda', positive=True)
@@ -31,7 +31,7 @@ STEP 1 — REDUCE IT TO ONE INTEGRAL OVER THE SCALE FACTOR.
 print("STEP 2 — THE TWO RATES, AND ONLY ONE TERM DIFFERS.")
 H_CR = sp.sqrt(Om/a**3 + OL)
 H_LC = sp.sqrt(Or/a**4 + Om/a**3 + OL)
-print(f"   CR  (L1, radiation-free):  H/H0 = {H_CR}")
+print(f"   CR  (L1, geometric stacking):  H/H0 = {H_CR}")
 print(f"   LCDM (radiation-included): H/H0 = {H_LC}")
 print("\nSTEP 3 — DO THE CR INTEGRAL IN CLOSED FORM.  Near recombination Omega_L a^3 << Omega_m:")
 I_CR=sp.integrate(1/sp.sqrt(Om/a**3), a)
@@ -84,7 +84,7 @@ def g(a):
 def integ(a, withrad):
     H=np.sqrt(ORv/a**4*withrad + Omv/a**3 + OLv)
     return g(a)/H
-for lab,wr in [("CR  (radiation-free)",0.0),("LambdaCDM (rad-included)",1.0)]:
+for lab,wr in [("CR  (geometric stacking)",0.0),("LambdaCDM (rad-included)",1.0)]:
     I,_=quad(lambda a: integ(a,wr), 1e-6, a_rec, limit=200)
     globals()['I_'+('CR' if wr==0 else 'LC')]=I
     print(f"   {lab:26s} INT = {I:.6e}")
@@ -103,7 +103,7 @@ print("    - the exact rho_r/rho_m carried to recombination (I take the corpus's
 print("    - x_e treated as a sharp cut at a_rec rather than through the recombination history;")
 print("    - the 8/9 coefficient against the 16/15 polarization-corrected one.")
 print("="*80)
-print("RESULT C8: r_D on the radiation-free L1 rate is longer than on the radiation-included one by")
+print("RESULT C8: r_D on the geometric stacking L1 rate is longer than on the radiation-included one by")
 print(f"  {pct:+.1f}%, DERIVED HERE from the corpus's inherited datum, with the Thomson microphysics")
 print("  cancelling identically in the ratio and the entire difference carried by H(a).")
 print("  *** THE ~9% IS NO LONGER A NUMBER FROM A FILE. IT IS A RESULT OF THIS CONSTRUCTION. ***")
@@ -112,14 +112,14 @@ print("="*80)
 # ============================================================================================
 # GATE — r2376+c54.160.  This receipt derived the diffusion-length ratio in two forms and then
 # only PRINTED both.  CR_cosmology.tex sec:envelope-consequence cites it for one figure: "on the
-# inherited datum the radiation-free rate gives a diffusion length 10.8% LONGER".  That figure,
+# inherited datum the geometric stacking rate gives a diffusion length 10.8% LONGER".  That figure,
 # and the intermediate numbers it is built from, are pinned here.
 #   (1) the inherited datum carried to recombination -- rho_r/rho_m = 0.3239, the "~0.3" the
 #       paper and STEP 5 both quote, and the Omega_r it implies;
 #   (2) the Rb -> 0 ratio of STEP 5, +10.68%;
 #   (3) the baryon-weighted ratio of STEP 6, +10.83% -- THE PAPER'S 10.8%, pinned to a tenth of
 #       a per cent so that a retune of z_onset or the seam ratio fails the gate here;
-#   (4) the sense of the effect: r_D is LONGER on the radiation-free rate, not shorter, which is
+#   (4) the sense of the effect: r_D is LONGER on the geometric stacking rate, not shorter, which is
 #       the whole signature.
 # ============================================================================================
 assert abs(ratio_rec - 0.323919) < 1.0e-6, \
@@ -134,7 +134,7 @@ assert abs(pct - 10.83) < 0.01, \
 assert abs(pct - 10.8) < 0.1, \
     "the paper's 10.8% and this derivation have diverged by more than a tenth of a per cent"
 assert rat > 1.0 and I_CR > I_LC, \
-    "r_D is no longer LONGER on the radiation-free rate -- the signature has reversed sign"
+    "r_D is no longer LONGER on the geometric stacking rate -- the signature has reversed sign"
 assert abs(I_CR - 2.150070e-09) < 1.0e-15, f"CR integral = {I_CR:.6e}, expected 2.150070e-09"
 assert abs(I_LC - 1.750386e-09) < 1.0e-15, f"LCDM integral = {I_LC:.6e}, expected 1.750386e-09"
 print(f"GATE C8 (r2376+c54.160): rho_r/rho_m|_rec = {ratio_rec:.4f}, r_D(CR)/r_D(LCDM) = "

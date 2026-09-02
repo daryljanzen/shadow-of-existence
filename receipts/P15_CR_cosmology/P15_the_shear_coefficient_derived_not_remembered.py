@@ -47,7 +47,7 @@ of the object -- the WKB damping formula is a statement about the FREE oscillato
           a gain: the 1123 was never an argument about a coefficient, and now that the coefficient
           is settled it is a measurement of what the instrument is missing. **
   PART 6  ** AND NOTHING DOWNSTREAM MOVES. **  The one figure the corpus quotes from this integral
-          -- `sec:envelope-consequence`'s "10.8% longer diffusion length on the radiation-free rate"
+          -- `sec:envelope-consequence`'s "10.8% longer diffusion length on the geometric stacking rate"
           -- goes from +10.83% to +10.87%.  The coefficient very nearly cancels in a ratio of two
           rates, which is why C8 could name the ambiguity and still be quoted.
 

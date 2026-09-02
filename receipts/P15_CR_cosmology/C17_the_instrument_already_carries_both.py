@@ -33,7 +33,7 @@ transfer **" -- *** and the debt names the other thing: "specifying how the fluc
 RADIATION-FREE background ... and then a bespoke transfer against that specification." ***
 
   ⇒⇒ *** The instrument is a full standard hierarchy; the bespoke transfer would be that instrument run
-      on the radiation-free background.  And the corpus states exactly what would differ: "in the ratio
+      on the geometric stacking background.  And the corpus states exactly what would differ: "in the ratio
       the Thomson physics and the ionisation history cancel identically and ** the whole difference is
       carried by $H(a)$ **." ***
   ⌗ ** That is a much smaller debt than "a genuine build": ** *** the machinery exists, is validated, and
@@ -42,7 +42,7 @@ RADIATION-FREE background ... and then a bespoke transfer against that specifica
 WHAT IS NOT CLAIMED.  ** Not that swapping $H(a)$ is the whole of it ** -- *** the cancellation quoted is
 established for the DIFFUSION-LENGTH ratio (r2647), and whether it extends to every source term in the
 hierarchy is not shown here and is the natural next question. ***  ** Not that the instrument already
-runs radiation-free ** -- the paper calls it flat-projection and the debt stands.  ** Not that r2658's
+runs geometric stacking ** -- the paper calls it flat-projection and the debt stands.  ** Not that r2658's
 other six findings are affected ** -- they are verified independently and stand.
 
 Written r2659.  Stated for reversal.
@@ -102,8 +102,8 @@ def main():
           'estimate and sharpens it into a prediction"',
           'The full flat-projection transfer confirms the estimate' in p15)
     check("while the debt names the other background: \"specifying how the fluctuations gravitate on the "
-          'radiation-free background\"',
-          'specifying how the fluctuations gravitate on the radiation-free background' in p15)
+          'geometric stacking background\"',
+          'specifying how the fluctuations gravitate on the geometric stacking background' in p15)
     check('and the corpus states what would differ: "the whole difference is carried by $H(a)$"',
           'the whole difference is carried by $H(a)$' in p15)
 
@@ -122,7 +122,7 @@ def main():
     print('  ⓶ ** And it is validated number by number: ** peaks to 0.5%, x_e and its derivative to ±1%')
     print('     ** through the visibility peak **, equality to 0.02%, transfer to <1% below k=0.02/Mpc.')
     print('  ⛭⛭ ⓷ ** So PO-12\'s debt is what the instrument RUNS ON. **  The paper calls this "the full')
-    print('     ** flat-projection ** transfer"; the debt names "the ** radiation-free ** background".')
+    print('     ** flat-projection ** transfer"; the debt names "the ** geometric stacking ** background".')
     print('     ⇒⇒ *** The machinery exists and is validated, and the corpus says exactly what would')
     print('       differ: "the whole difference is carried by H(a)".  That is far smaller than "a genuine')
     print('       build". ***')

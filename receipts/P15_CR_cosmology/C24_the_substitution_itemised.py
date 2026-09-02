@@ -7,7 +7,7 @@ TWO-LEG background joined at the branch point, with the L1 rate on the expansion
 at once **".  ⇒ ** So the substitution is what must be itemised: which of the instrument's quantities
 carry $H$, and how. **
 
-** ⓵ THE RATE DIFFERENCE, RECONSTRUCTED. **  P15: "the radiation-free rate near recombination is
+** ⓵ THE RATE DIFFERENCE, RECONSTRUCTED. **  P15: "the geometric stacking rate near recombination is
 ** $13\\%$ below ** the radiation-included one there ($\\rho_r/\\rho_m\\approx0.3$)".  At fixed
 $\\rho_m$:
 
@@ -100,9 +100,9 @@ def main():
     p15 = re.sub(r'\s+', ' ', body(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')))
 
     # ⓵ the rate difference reconstructed
-    check('⓵ P15 states the rate difference: "the radiation-free rate near recombination is $13\\%$ '
+    check('⓵ P15 states the rate difference: "the geometric stacking rate near recombination is $13\\%$ '
           'below the radiation-included one there"',
-          'the radiation-free rate near recombination is' in p15 and '13\\%$ below' in p15)
+          'the geometric stacking rate near recombination is' in p15 and '13\\%$ below' in p15)
     h = 1 / np.sqrt(1 + 0.3)
     check(f'and at $\\rho_r/\\rho_m=0.3$ it reconstructs: $1/\\sqrt{{1.3}}={h:.4f}$, i.e. '
           f'{100*(1-h):.1f}% below',

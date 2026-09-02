@@ -1,6 +1,6 @@
 """
 P15_hubble_expansion_confrontation_v2.py -- verifies the P15 sec:tensions SDSS DR12 BAO flagship. CR's
-  radiation-free rate factors H0 out of D_M, D_H and r_d alike, so the BAO ratios D_M/r_d, D_H/r_d are
+  geometric stacking rate factors H0 out of D_M, D_H and r_d alike, so the BAO ratios D_M/r_d, D_H/r_d are
   H0-INDEPENDENT (fixed by Omega_m alone). DECISIVE CHECK: the ratios are identical at H0=67 and 73 (verified
   to numerical precision). chi^2 vs SDSS DR12 (6 pts): CR (Om=0.31, any H0 incl. 73) = 1.71 (paper 1.7);
   LCDM(67.4)=4.37; LCDM(73)=49.45 (paper 49) -- the tension. Cosmic chronometers consistent with H0=73.
@@ -27,7 +27,7 @@ R0=3*wb/(4*wg)
 def cs(z): return c/np.sqrt(3*(1+R0/(1+z)))
 zrec=1090.0; z_drag=1059.94
 
-# --- CR: Om is the CMB-fixed (H0-independent) quantity; radiation-free rate ---
+# --- CR: Om is the CMB-fixed (H0-independent) quantity; geometric stacking rate ---
 def E_cr(z,Om): return np.sqrt(Om*(1+z)**3+(1-Om))
 def Hcr(z,H0,Om): return H0*E_cr(z,Om)
 def DM(z,H0,Om,n=6000):
@@ -96,7 +96,7 @@ print(f"       ladder (H0=73.0+/-1.0) CR sits at Om=0.31, H0=73 with NO tension.
 
 print("\n"+"="*76)
 print("CORRECTED VERDICT:  The v1 'failure' was the FLRW invariant wm imported into CR. CR fixes Om.")
-print("Because the radiation-free rate factors H0 out of every distance and the ruler alike, the BAO")
+print("Because the geometric stacking rate factors H0 out of every distance and the ruler alike, the BAO")
 print("ratios are H0-INDEPENDENT: BAO fixes Om, the distance ladder fixes H0=73, and they do not")
 print("collide.  LCDM's radiation-pinned physical r_d forces H0=67 from the same BAO -- that is the")
 print("tension. CR resolves it across the FULL expansion history, not just ell_A, and D1 already")

@@ -15,7 +15,7 @@ ratios follow from the displaced zero point: with $R_b=0.60$ they give
   ⇒ ** But those are $\\Lambda$CDM peak-height formulae. **  *** They assume a transfer from the primordial
       spectrum to the observed $C_\\ell$ -- and `CR_cosmology` states that transfer is exactly what this
       cosmology does not have: "a genuine build, not a plug-in ... it requires first specifying how the
-      fluctuations gravitate on the radiation-free background ... and then a bespoke transfer against that
+      fluctuations gravitate on the geometric stacking background ... and then a bespoke transfer against that
       specification". ***
   ⌗ ** So producing the pattern by the standard formula would answer `PO-10` by assuming `PO-12`. **
 
@@ -81,11 +81,11 @@ def main():
 
     # ⓶ the transfer is not built
     check('⛔ ⓶ and P15 says the transfer is not built: "This is a genuine build, not a plug-in: it '
-          'requires first \\emph{specifying how the fluctuations gravitate on the radiation-free '
+          'requires first \\emph{specifying how the fluctuations gravitate on the geometric stacking '
           'background}"',
           'This is a genuine build, not a plug-in' in p15
           and 'it requires first \\emph{specifying how the fluctuations gravitate on the '
-              'radiation-free background}' in p15)
+              'geometric stacking background}' in p15)
     check('"and then a bespoke transfer against that specification"',
           'and then a bespoke transfer against that specification' in p15)
 

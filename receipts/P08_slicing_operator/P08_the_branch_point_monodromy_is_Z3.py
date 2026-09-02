@@ -252,7 +252,7 @@ V = [
   "is unnecessary, and there are no branching probabilities because only two sheets carry real "
   "geometry."),
  ("J·10", "two-horn / electroweak-ring / geometric optics",
-  "SUPERSEDED, as the register already records: the Hubble knot is the radiation-free rate and the "
+  "SUPERSEDED, as the register already records: the Hubble knot is the geometric stacking rate and the "
   "low-l structure is the closed-S^3 deficit."),
 ]
 print(f"  {'item':>6} {'germ':>46}")

@@ -60,14 +60,14 @@ u=np.arcsinh(np.sqrt(OL/Om))                           # sinh(u)=sqrt(OL/Om)
 # current cosmological S^3 areal radius r_0 = (2^{1/3}/sqrt(Lam)) sinh^{2/3}(u)   (Nariai amplitude, P9 eq:nariai-amplitude + eq:r-SdS-solution)
 inv_sqrtLam=DH/np.sqrt(3*OL)                            # 1/sqrt(Lam) in Mpc = c/(H0 sqrt(3 OL))
 r0=(2**(1/3))*inv_sqrtLam*np.sinh(u)**(2/3)            # Mpc
-# comoving distance to last scattering (flat-LCDM, robust per P9; radiation-free integrand to z_rec)
+# comoving distance to last scattering (flat-LCDM, robust per P9; geometric stacking integrand to z_rec)
 zrec=1089.0
-Ez=lambda z: np.sqrt(Om*(1+z)**3+OL)                   # CR radiation-free rate
+Ez=lambda z: np.sqrt(Om*(1+z)**3+OL)                   # CR geometric stacking rate
 DC=DH*quad(lambda z:1/Ez(z),0,zrec)[0]                 # Mpc
 print(f"  present-epoch u=asinh(sqrt(OL/Om))     = {u:.3f}")
 print(f"  1/sqrt(Lambda)                          = {inv_sqrtLam:.0f} Mpc")
 print(f"  current S^3 areal radius r_0            = {r0:.0f} Mpc")
-print(f"  comoving distance to last scattering D_C= {DC:.0f} Mpc  (flat-LCDM, radiation-free integrand)")
+print(f"  comoving distance to last scattering D_C= {DC:.0f} Mpc  (flat-LCDM, geometric stacking integrand)")
 for L in [1,2,3,4,5,10,20]:
     ell=np.sqrt(L*(L+2))*DC/r0
     print(f"    L={L:2d} -> ell ~ {ell:5.1f}")
@@ -81,7 +81,7 @@ print("="*68)
 print("ANCHOR 7 — acoustic modes are SUB-HORIZON at the plasma onset   [E]")
 print("-"*68)
 z_onset=6797.0   # r2366: fitted to the measured 100theta_*=1.04109 (was 6850, +0.28%, ~10sigma)
-# comoving Hubble wavenumber at onset (CR radiation-free rate): k_hor = a H / c = H0 E(z) / ((1+z) c)  [1/Mpc]
+# comoving Hubble wavenumber at onset (CR geometric stacking rate): k_hor = a H / c = H0 E(z) / ((1+z) c)  [1/Mpc]
 k_hor_onset=H0_kms*Ez(z_onset)/((1+z_onset)*c)
 rs=145.0                                                # acoustic sound horizon (banked scale, P9 sec687-691), Mpc
 k_peak1=np.pi/rs                                        # first acoustic peak comoving wavenumber, 1/Mpc

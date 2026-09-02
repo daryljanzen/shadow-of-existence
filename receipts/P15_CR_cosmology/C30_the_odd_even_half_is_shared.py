@@ -23,7 +23,7 @@ $-R\\Phi$, so compressions are enhanced against rarefactions:
   physics" asserts.
 
 ** ⛭ ⓷ AND THAT IS WHY THE HALF CARRIES NO DISCRIMINATING SIGNAL. **  $R=3\\rho_b/4\\rho_\\gamma$ is a
-ratio of CONTENTS.  *** The radiation-free rate changes $H(a)$ and therefore every LENGTH -- the sound
+ratio of CONTENTS.  *** The geometric stacking rate changes $H(a)$ and therefore every LENGTH -- the sound
 horizon, the diffusion scale, the comoving horizon (r2686) -- but it does not change a ratio of densities
 at fixed content.  So both arms carry the SAME $R$ at the same redshift, and the same odd/even
 pattern. ***
@@ -118,7 +118,7 @@ def main():
     print('     with the asymmetry imprinted "** on the expansion side at R ≈ 0.6 **".')
     print(f'  ⓷ ** The pattern is then arithmetic: ** 1+3R = {odd:.2f} against |1−3R| = {even:.2f}, ratio')
     print(f'     {odd/even:.2f} — fixed by R alone, with no further calculation.')
-    print('  ⛭ ⓸ *** And R = 3ρ_b/4ρ_γ is a ratio of CONTENTS.  The radiation-free rate changes H(a) and')
+    print('  ⛭ ⓸ *** And R = 3ρ_b/4ρ_γ is a ratio of CONTENTS.  The geometric stacking rate changes H(a) and')
     print('     therefore every LENGTH — sound horizon, diffusion scale, comoving horizon — but it does')
     print('     NOT change a ratio of densities at fixed content.  Both arms carry the same R at the same')
     print('     redshift, and the same odd/even pattern. ***')

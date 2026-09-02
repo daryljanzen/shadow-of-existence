@@ -104,7 +104,7 @@ print(f"  and it advances Re(tau) by EXACTLY 0. *The collapse-to-expansion hando
 print(f"  cosmic time at all.* It is a stretch of the contour, not of time.")
 print()
 print(f"  present epoch check against flat-LCDM's age formula (they must agree, since the")
-print(f"  radiation-free law IS the flat-LCDM scale factor):")
+print(f"  geometric stacking law IS the flat-LCDM scale factor):")
 t0_lcdm = (2/(3*H0*OL**0.5))*w0
 print(f"     tau_0 (this receipt) = {w0*T/yr/1e9:.4f} Gyr")
 print(f"     t_0  (2/3H0 sqrtOL) arcsinh sqrt(OL/Om) = {t0_lcdm/yr/1e9:.4f} Gyr")

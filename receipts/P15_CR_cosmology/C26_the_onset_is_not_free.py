@@ -12,7 +12,7 @@ REDSHIFT from the construction, which turns a one-parameter family of answers in
   * ** `sec:tensions`: ** "** It is fitted to the acoustic angle at the directly measured $H_0$ ** and
     lands at $z_{\\rm onset}\\simeq6.8\\times10^3$, $T_{\\rm onset}\\simeq1.6$ eV, near
     $\\rho_r/\\rho_m\\simeq2$."
-  ⌗ ** And it is not a knob: ** "** It is not a knob for the $H_0$ tension: the radiation-free rate
+  ⌗ ** And it is not a knob: ** "** It is not a knob for the $H_0$ tension: the geometric stacking rate
     carries $H_0$ out of both $r_s$ and $D_M$, so $\\theta_*$ is fixed by $\\Omega_m$ alone and THE SAME
     $z_{\\rm onset}$ MEETS THE SCALE AT EVERY $H_0$ across the range **."
 

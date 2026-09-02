@@ -31,7 +31,7 @@ def cs(z): return c/np.sqrt(3*(1+R0/(1+z)))
 zrec=1090.0; z_drag=1059.94
 THETA_OBS=0.0104085   # Planck acoustic scale (100 theta_* = 1.04109)
 
-# ---- CR: radiation-free rate, Om the CMB-fixed dimensionless quantity ----
+# ---- CR: geometric stacking rate, Om the CMB-fixed dimensionless quantity ----
 def E_cr(z,Om): return np.sqrt(Om*(1+z)**3+(1-Om))
 def Hcr(z,H0,Om): return H0*E_cr(z,Om)
 def DM(z,H0,Om,n=4000):
@@ -80,7 +80,7 @@ def chi2_lcdm(H0,wm):
     return x2
 
 print("="*78)
-print("A1.4-ext :: CR (radiation-free, 1 param Om) vs DESI DR2 BAO  [13 measurements, 7 z]")
+print("A1.4-ext :: CR (geometric stacking, 1 param Om) vs DESI DR2 BAO  [13 measurements, 7 z]")
 print("="*78)
 # CR best-fit Om (one parameter), sound horizon CMB-calibrated
 res=minimize_scalar(chi2_cr, bounds=(0.25,0.38), method='bounded')
@@ -89,7 +89,7 @@ zo=z_onset_of(Om_best)
 print(f"\nCR best-fit:  Omega_m = {Om_best:.4f}   (z_onset={zo:.0f}, rho_r/rho_m~{(1+zo)/3402:.1f})")
 print(f"   chi^2 = {x2_cr:.2f} / {NDATA-1} dof = {x2_cr/(NDATA-1):.2f}   -- at ANY H0 incl. local 73")
 # --- r2376+c54.160: PIN THE FIT.  The paper (sec:tensions) quotes this receipt for "with a single
-# free parameter Omega_m the radiation-free rate fits at chi2/dof ~ 1.0, at Omega_m = 0.3066 (where
+# free parameter Omega_m the geometric stacking rate fits at chi2/dof ~ 1.0, at Omega_m = 0.3066 (where
 # the inherited datum sits at rho_r/rho_m ~ 2.0)".  Note the paper's own correction at c54.155:
 # Omega_m here is FIT to these data by minimize_scalar, not imported.  Pinned to what it returns.
 assert abs(Om_best - 0.3066) < 0.0015, f"CR best-fit Omega_m = {Om_best}"
@@ -128,7 +128,7 @@ for H0 in (67.4,70.0,73.0):
 
 print("\n"+"="*78)
 print("VERDICT: CR fits DESI DR2 with ONE CMB-calibrated parameter (Omega_m) at the local")
-print("H0=73, because the radiation-free rate makes every BAO ratio H0-independent. LCDM, with")
+print("H0=73, because the geometric stacking rate makes every BAO ratio H0-independent. LCDM, with")
 print("its radiation-pinned physical sound horizon, is forced to H0~67.4 and breaks at H0=73 --")
 print("the Hubble tension, now confronted against the full DESI DR2 dataset, not just DR12.")
 print("="*78)

@@ -13,7 +13,7 @@ determine. **
 
 WHAT SURVIVES AND WHAT DOES NOT.
   ✔ ** KNOB-FREENESS, the load-bearing claim: $z_{\mathrm{onset}}$ does not move with $H_0$ at all **
-    -- recomputed here from the radiation-free rate rather than trusted: 6747.3 at $H_0=67.4$, 70.0,
+    -- recomputed here from the geometric stacking rate rather than trusted: 6747.3 at $H_0=67.4$, 70.0,
     73.0 and 74.0, to the digit, because $H_0$ is a common factor in $\rs$ and $D_M$ and cancels
     from $\theta_*$.  A quantity that does not move between the two values of $H_0$ the tension is
     between cannot be absorbing it.
@@ -86,7 +86,7 @@ print()
 print("=" * 78)
 print("PART 2 — THE KNOB-FREE HALF, CONFIRMED FROM THE RATE ITSELF")
 print("=" * 78)
-print(f"  the radiation-free rate: H(z) = H_0 sqrt(Om (1+z)^3 + 1 - Om), Om = {Om}")
+print(f"  the geometric stacking rate: H(z) = H_0 sqrt(Om (1+z)^3 + 1 - Om), Om = {Om}")
 print(f"  {'H_0':>8} {'z_onset from the measured angle':>34} {'100 theta_* there':>20}")
 zs = []
 for H0 in (67.4, 70.0, 73.0, 74.0):

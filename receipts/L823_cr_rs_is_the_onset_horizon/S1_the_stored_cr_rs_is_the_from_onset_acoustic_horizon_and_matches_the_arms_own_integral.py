@@ -22,13 +22,13 @@ oscillations START LATER, which is the framework's design, not a code error.
 
 ** THE NUMBERS. **
     stored CR r_s (rs_from(Z_START))          = 135.46   -> l_A = pi D_M/r_s = 301.6 (the fit target)
-    CR from a~0 (rs_from(1e8), radiation-free) = 237      <- r2790's "direction" value (larger), but NOT
+    CR from a~0 (rs_from(1e8), geometric stacking) = 237      <- r2790's "direction" value (larger), but NOT
                                                             the acoustic horizon: pre-onset is pressureless
     arm's peaks, first-4-gap mean             -> r_s ~ 165  <- the transient (near r2790's 158.35)
     arm's peaks, high-n gaps                   -> r_s ~ 139  <- the asymptote, bracketing 135.46
     LCDM r_s                                   = 144.53
 
-COMPUTES: rs_from with the CR arm's constants (H0=73, OM=0.3066, radiation-free) from a~0 and from the
+COMPUTES: rs_from with the CR arm's constants (H0=73, OM=0.3066, geometric stacking) from a~0 and from the
 fitted onset, the fitted Z_START, and the CR arm's peak spacings by ell-range. ** The constants are the
 CR arm's as coded; the from-a~0 and from-onset values are the two horizons r2790 and the framework name, not
 a pinned working point. **
@@ -41,7 +41,7 @@ a pinned working point. **
      the first-four-gap mean implies r_s ~ 165 (near r2790's 158.35) while the high-n gaps imply r_s ~ 139,
      bracketing the stored 135.46 -- so the asymptotic acoustic scale matches the ledger and 158 is the
      low-ell transient (the pressureless-onset seam physics, PO-7's).
-  3. THE "DIRECTION" USES THE WRONG HORIZON: the radiation-free from-a~0 horizon (237) is larger than LCDM
+  3. THE "DIRECTION" USES THE WRONG HORIZON: the geometric stacking from-a~0 horizon (237) is larger than LCDM
      (144.53), as r2790 says -- but CR's oscillations do not run from a~0; the pre-onset is pressureless
      (L-815), so the acoustic horizon is from the onset (135.46), smaller because CR starts oscillating
      later. Smaller is the framework's design (the fitted onset), not a wrong direction.
@@ -126,7 +126,7 @@ def main():
     # 3. the direction uses the from-a~0 horizon, not the acoustic one
     cr_a0 = rs_from_arm(73.0, 0.3066, 0.0224, False, 1e8)
     lcdm = rs_from_arm(67.40, 0.3150, 0.0224, True, 1e8)
-    check(f'THE DIRECTION USES THE WRONG HORIZON: the radiation-free from-a~0 horizon ({cr_a0:.0f}) is '
+    check(f'THE DIRECTION USES THE WRONG HORIZON: the geometric stacking from-a~0 horizon ({cr_a0:.0f}) is '
           f'larger than LCDM ({lcdm:.1f}) as r2790 says -- but CR does not oscillate from a~0; the '
           'pre-onset is pressureless (L-815), so the acoustic horizon is from the onset (135.46), smaller '
           'because CR starts later (the framework\'s fitted-onset design, not a wrong direction)',

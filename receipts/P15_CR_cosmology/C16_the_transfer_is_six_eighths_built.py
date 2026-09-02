@@ -3,7 +3,7 @@
 the projection is calibrated, and a $C_\\ell$ RATIO with no free parameter is already in the paper.
 
 ** THE DEBT AS FRAMED. **  `CR_cosmology`: "This is ** a genuine build, not a plug-in **: it requires first
-*specifying how the fluctuations gravitate on the radiation-free background* ... and then ** a bespoke
+*specifying how the fluctuations gravitate on the geometric stacking background* ... and then ** a bespoke
 transfer against that specification **."  r2623 found step ① built (`sec:envelope`); r2646 found step ②
 gates BOTH of `PO-10`'s runs.
 
@@ -13,7 +13,7 @@ gates BOTH of `PO-10`'s runs.
           ✔ source removal                  Theta'' + (k^2/3)Theta = 0, exactly
           ✔ amplitude at horizon entry      "fixed by the construction rather than fitted"
           ✔ the sound horizon               r_s = 146.4 Mpc
-          ✔ the diffusion scale             10.8% longer on the radiation-free rate
+          ✔ the diffusion scale             10.8% longer on the geometric stacking rate
           ✔ the baryon loading              R_b = 0.60 at recombination
           ⛔ the visibility function         not located
           ⛔ the k -> l projection           -- SEE (2) *** 

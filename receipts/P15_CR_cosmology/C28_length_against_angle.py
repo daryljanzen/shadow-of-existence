@@ -8,7 +8,7 @@ integrated across onsets (r2687), $+13.1\\%$ at the true onset (r2688), brackete
 *** Every one of those computed a ratio of LENGTHS. ***
 
 ** ⛭⛭ ⓵ AND P15 STATES BOTH QUANTITIES, TWO HUNDRED WORDS APART. **
-  * ** the LENGTH: ** "on the inherited datum the radiation-free rate gives ** a diffusion length
+  * ** the LENGTH: ** "on the inherited datum the geometric stacking rate gives ** a diffusion length
     $10.8\\%$ longer **" `\\rcpt{C8_diffusion_length}`.
   * ** the ANGLE: ** "The observable, in which the common distance cancels, is then ** $\\theta_D/\\theta_*$
     larger by $9.4\\%$ **" `\\rcpt{C10_highl_ratio}`.
@@ -96,7 +96,7 @@ def main():
                encoding='utf-8', errors='replace').read()
 
     # ⓵ both quantities are stated
-    check('⛭⛭ ⓵ the LENGTH: "the radiation-free rate gives a diffusion length $10.8\\%$ longer"',
+    check('⛭⛭ ⓵ the LENGTH: "the geometric stacking rate gives a diffusion length $10.8\\%$ longer"',
           'a diffusion length' in p15 and '10.8' in p15)
     check('the ANGLE: "The observable, in which the common distance cancels, is then '
           '$\\theta_{D}/\\theta_{*}$ larger by $9.4\\%$"',

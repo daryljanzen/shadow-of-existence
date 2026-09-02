@@ -34,7 +34,7 @@ for CR: the stored quantities are consistent with each other and not with the co
     not the stored value. ***
 
 WHAT IS NOT CLAIMED.  ** Not that the CR arm is wrong ** -- *** a $0.855$ ratio could be a real feature
-of a radiation-free transfer; what is established is that the STORED $\\ell_A$ does not describe the
+of a geometric stacking transfer; what is established is that the STORED $\\ell_A$ does not describe the
 spectrum, not which of them is right. ***  ** Not that peak-finding is exact ** -- *** prominence
 threshold $2\\%$ of range, five peaks found in each arm; the conclusion rests on a $14.5\\%$ gap, not on
 peak positions to the bin. ***  ** Not that amplitude is now excluded ** -- *** it was not tested, because
